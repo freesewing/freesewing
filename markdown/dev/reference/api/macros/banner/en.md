@@ -5,21 +5,43 @@ title: banner
 The `banner` macro allows you to add repeating text along a path.
 It is provided by the [banner plugin](/reference/plugins/banner).
 
-<Example part="plugin_banner">Example of the banner macro</Example>
+## Signature
 
 ```js
-points.from = new Point(0,0)
-points.to = new Point(320,0)
-
-paths.banner = new Path()
-  .move(points.from)
-  .line(points.to)
-
 macro('banner', {
-  path: paths.banner,
-  text: 'banner plugin',
+  Path path,
+  String text,
+  Number dy=1,
+  Number spaces=12,
+  Number repeat=10,
 })
 ```
+  
+## Example
+
+<Example caption="Example of the banner macro">
+```js
+({ Point, points, Path, paths, macro, part }) => {
+
+  points.from = new Point(0,0)
+  points.to = new Point(320,0)
+  
+  paths.banner = new Path()
+    .move(points.from)
+    .line(points.to)
+    .move(new Point(0,-10)) // Prevent clipping
+  
+  macro('banner', {
+    path: paths.banner,
+    text: 'banner',
+  })
+
+  return part
+}
+```
+</Example>
+
+## Configuration
 
 | Property     | Default    | Type       | Description |
 |-------------:|------------|------------|-------------|

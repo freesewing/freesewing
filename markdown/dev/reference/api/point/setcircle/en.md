@@ -2,14 +2,17 @@
 title: Point.setCircle()
 ---
 
-Sets a circle to a Point. Behaves the same as [addCircle](/reference/api/points/addcircle) but
-the different is that it will overwrite any previous circle set.
+The `Point.setCircle()` method adds a circle to a Point. It yields similar
+results as the [`Point.addCircle()`](/reference/api/points/addcircle) method,
+the different is that `Point.setCircle()` will overwrite any previous circle
+set.
 
 Essentially, it mimics the difference between adding vs setting an attribute.
 
-Refer to [Drawing circles](/howtos/code/drawing-circles) for more details on how circles are handled.
+Refer to [Drawing circles](/howtos/code/drawing-circles) for more details on
+how circles are handled.
 
-## Point.setCircle() signature
+## Signature
 
 ```js
 Point point.setCircle(
@@ -18,14 +21,14 @@ Point point.setCircle(
 )
 ```
 
-## Point.setCircle() example
+<Tip compact>This method is chainable as it returns the `Point` object</Tip>
 
-<Example part="point_setcircle">
-Examples of Point.setCircle(), compare this to [Point.addCircle](/reference/api/point/addcircle)
-</Example>
+## Example
 
+<Example caption="Examples of Point.setCircle(), compare this to [Point.addCircle](/reference/api/point/addcircle)">
 ```js
 ({ Point, points, part }) => {
+
   points.a = new Point(30, 10)
     .setCircle(3, 'lining dashed')
     .setCircle(7, 'mark dashed')
@@ -44,4 +47,6 @@ Examples of Point.setCircle(), compare this to [Point.addCircle](/reference/api/
   return part
 }
 ```
+</Example>
+
 

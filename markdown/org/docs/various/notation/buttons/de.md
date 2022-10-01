@@ -2,11 +2,11 @@
 title: Knöpfe, Knopflöcher und Druckknöpfe
 ---
 
-Buttons and buttonholes may come in different sizes, but always have the same shape that represents how they look in real life:
+Knöpfe und Knopflöcher können in verschiedenen Größen auftreten, haben aber immer dieselbe Form, die repräsentiert, wie sie in Wirklichkeit aussehen:
 
 <Legend part="buttons">
 
-A button is shown on the left, and a buttonhole on the right
+Links ein Knopf, rechts ein Knopfloch
 
 </Legend>
 

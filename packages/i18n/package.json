@@ -38,7 +38,10 @@
     "lint": "npx eslint 'src/**' 'tests/*.mjs'",
     "prebuild": "node scripts/prebuilder.mjs",
     "precibuild_step7": "node scripts/prebuilder.mjs",
-    "cibuild_step7": "node build.mjs"
+    "prewbuild": "node scripts/prebuilder.mjs",
+    "cibuild_step7": "node build.mjs",
+    "wbuild": "node build.mjs",
+    "wcibuild_step7": "node build.mjs"
   },
   "peerDependencies": {
     "@freesewing/pattern-info": "^3.0.0-alpha.0"

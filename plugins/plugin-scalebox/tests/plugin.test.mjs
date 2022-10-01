@@ -8,17 +8,20 @@ describe('Scalebox Plugin Tests', () => {
   it('Should run the default scalebox macro', () => {
     const part = {
       name: 'test',
-      draft: ({ points, Point, macro }) => {
+      draft: ({ points, Point, macro, part }) => {
         points.anchor = new Point(100, 200)
         macro('scalebox', {
           at: points.anchor,
         })
+
+        return part
       },
+      plugins: [plugin],
     }
-    const Pattern = new Design({ parts: [part], plugins: [plugin] })
+    const Pattern = new Design({ parts: [part] })
     const pattern = new Pattern()
     pattern.draft()
-    let p = pattern.parts.test.points
+    let p = pattern.parts[0].test.points
     expect(p.__scaleboxMetricTopLeft.x).to.equal(50)
     expect(p.__scaleboxMetricTopLeft.y).to.equal(175)
     expect(p.__scaleboxMetricTopRight.x).to.equal(150)
@@ -47,7 +50,7 @@ describe('Scalebox Plugin Tests', () => {
     expect(p.__scaleboxMetric.y).to.equal(220)
     expect(p.__scaleboxImperial.x).to.equal(100)
     expect(p.__scaleboxImperial.y).to.equal(224)
-    p = pattern.parts.test.paths.__scaleboxMetric
+    p = pattern.parts[0].test.paths.__scaleboxMetric
     expect(p.ops[0].type).to.equal('move')
     expect(p.ops[1].type).to.equal('line')
     expect(p.ops[2].type).to.equal('line')
@@ -61,7 +64,7 @@ describe('Scalebox Plugin Tests', () => {
     expect(p.ops[2].to.y).to.equal(225)
     expect(p.ops[3].to.x).to.equal(150)
     expect(p.ops[3].to.y).to.equal(175)
-    p = pattern.parts.test.paths.__scaleboxImperial
+    p = pattern.parts[0].test.paths.__scaleboxImperial
     expect(p.ops[0].type).to.equal('move')
     expect(p.ops[1].type).to.equal('line')
     expect(p.ops[2].type).to.equal('line')
@@ -87,11 +90,12 @@ describe('Scalebox Plugin Tests', () => {
           rotate: 90,
         })
       },
+      plugins: [plugin],
     }
-    const Pattern = new Design({ parts: [part], plugins: [plugin] })
+    const Pattern = new Design({ parts: [part] })
     const pattern = new Pattern()
     pattern.draft()
-    const p = pattern.parts.test.points
+    const p = pattern.parts[0].test.points
     expect(round(p.__scaleboxMetricTopLeft.x)).to.equal(75)
     expect(round(p.__scaleboxMetricTopLeft.y)).to.equal(250)
     expect(round(p.__scaleboxMetricTopRight.x)).to.equal(75)
@@ -125,27 +129,29 @@ describe('Scalebox Plugin Tests', () => {
   it('Should run the scalebox macro with default text', () => {
     const part = {
       name: 'test',
-      draft: ({ points, Point, macro }) => {
+      draft: ({ points, Point, macro, part }) => {
         points.anchor = new Point(100, 200)
         macro('scalebox', {
           at: points.anchor,
         })
+
+        return part
       },
+      plugins: [plugin],
     }
     const Pattern = new Design({
       parts: [part],
-      plugins: [plugin],
       data: { name: 'test', version: '1.2.3' },
     })
     const pattern = new Pattern()
     pattern.draft()
-    let p = pattern.parts.test.points.__scaleboxLead.attributes
+    let p = pattern.parts[0].test.points.__scaleboxLead.attributes
     expect(p.get('data-text')).to.equal('FreeSewing')
     expect(p.get('data-text-class')).to.equal('text-sm')
-    p = pattern.parts.test.points.__scaleboxTitle.attributes
+    p = pattern.parts[0].test.points.__scaleboxTitle.attributes
     expect(p.get('data-text')).to.equal('test v1.2.3')
     expect(p.get('data-text-class')).to.equal('text-lg')
-    p = pattern.parts.test.points.__scaleboxText.attributes
+    p = pattern.parts[0].test.points.__scaleboxText.attributes
     expect(p.get('data-text-class')).to.equal('text-xs')
     expect(p.get('data-text-lineheight')).to.equal('4')
     expect(p.list['data-text'][0]).to.equal('supportFreesewingBecomeAPatron')
@@ -154,7 +160,7 @@ describe('Scalebox Plugin Tests', () => {
   it('Should run the scalebox macro with custom text', () => {
     const part = {
       name: 'test',
-      draft: ({ points, Point, macro }) => {
+      draft: ({ points, Point, macro, part }) => {
         points.anchor = new Point(100, 200)
         macro('scalebox', {
           at: points.anchor,
@@ -162,22 +168,24 @@ describe('Scalebox Plugin Tests', () => {
           title: 'theTitle',
           text: 'theText',
         })
+
+        return part
       },
+      plugins: [plugin],
     }
     const Pattern = new Design({
       parts: [part],
-      plugins: [plugin],
       data: { name: 'test', version: '1.2.3' },
     })
     const pattern = new Pattern()
     pattern.draft()
-    let p = pattern.parts.test.points.__scaleboxLead.attributes
+    let p = pattern.parts[0].test.points.__scaleboxLead.attributes
     expect(p.get('data-text')).to.equal('theLead')
     expect(p.get('data-text-class')).to.equal('text-sm')
-    p = pattern.parts.test.points.__scaleboxTitle.attributes
+    p = pattern.parts[0].test.points.__scaleboxTitle.attributes
     expect(p.get('data-text')).to.equal('theTitle')
     expect(p.get('data-text-class')).to.equal('text-lg')
-    p = pattern.parts.test.points.__scaleboxText.attributes
+    p = pattern.parts[0].test.points.__scaleboxText.attributes
     expect(p.get('data-text')).to.equal('theText')
     expect(p.get('data-text-class')).to.equal('text-xs')
     expect(p.get('data-text-lineheight')).to.equal('4')
@@ -186,7 +194,7 @@ describe('Scalebox Plugin Tests', () => {
   it('Should apply scale to the scalebox macro', () => {
     const part = {
       name: 'test',
-      draft: ({ points, Point, macro }) => {
+      draft: ({ points, Point, macro, part }) => {
         points.anchor = new Point(100, 200)
         macro('scalebox', {
           at: points.anchor,
@@ -194,7 +202,10 @@ describe('Scalebox Plugin Tests', () => {
           title: 'theTitle',
           text: 'theText',
         })
+
+        return part
       },
+      plugins: [plugin],
     }
     const Pattern = new Design({
       parts: [part],
@@ -203,7 +214,7 @@ describe('Scalebox Plugin Tests', () => {
     })
     const pattern = new Pattern({ scale: 0.5 })
     pattern.draft()
-    let p = pattern.parts.test.points
+    let p = pattern.parts[0].test.points
     expect(p.__scaleboxMetricTopLeft.x).to.equal(75)
     expect(p.__scaleboxMetricTopLeft.y).to.equal(187.5)
     expect(p.__scaleboxMetricTopRight.x).to.equal(125)
@@ -231,12 +242,15 @@ describe('Scalebox Plugin Tests', () => {
   it('Should apply scale to the miniscale macro', () => {
     const part = {
       name: 'test',
-      draft: ({ points, Point, macro }) => {
+      draft: ({ points, Point, macro, part }) => {
         points.anchor = new Point(100, 200)
         macro('miniscale', {
           at: points.anchor,
         })
+
+        return part
       },
+      plugins: [plugin],
     }
     const Pattern = new Design({
       parts: [part],
@@ -245,7 +259,7 @@ describe('Scalebox Plugin Tests', () => {
     })
     const pattern = new Pattern({ scale: 0.5 })
     pattern.draft()
-    let p = pattern.parts.test.points
+    let p = pattern.parts[0].test.points
     expect(p.__miniscaleMetricTopLeft.x).to.equal(92)
     expect(p.__miniscaleMetricTopLeft.y).to.equal(192)
     expect(p.__miniscaleMetricTopRight.x).to.equal(108)

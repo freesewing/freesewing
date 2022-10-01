@@ -2,21 +2,44 @@
 title: gore
 ---
 
-The `gore` macro facilitates the drafting of [gores][1] which are typically used in hats.
+The `gore` macro facilitates the drafting of [gores][1] which are typically
+used in hats.
 It is provided by the [gore plugin](/reference/plugins/grainline/).
 
-<Example part="plugin_gore">Example of a gore as drafted by this macro</Example>
+## Signature
 
 ```js
-macro("gore", {
-  from: points.anchor,
-  radius: measurements.head,
-  gores: 6,
-  extraLength: 20,
-  render: true,
-  class: 'fabric',
-})
+macro('gore', { 
+  Point from,
+  Number radius,
+  Number gores,
+  Number extraLength,
+  Boolean hidden=true,
+  String class='',
+)
 ```
+
+## Example
+
+<Example caption="Example of the gore macro">
+```js
+({ Point, macro, part }) => {
+
+  macro('gore', { 
+    from: new Point(0,0),
+    radius: 100,
+    gores: 6,
+    extraLength: 20,
+    hidden: false,
+    class: 'fabric',
+  })
+  
+  return part
+}
+```
+</Example>
+
+## Configuration
 
 | Property      | Default | Type       | Description                                  |
 |--------------:|---------|------------|----------------------------------------------|
@@ -24,7 +47,7 @@ macro("gore", {
 | `radius`      |         | number     | The radius of the sphere the gores should cover |
 | `gores`       |         | number     | The text to put on the _grainline_ indicator |
 | `extraLength` |         | number     | The length of the straight section after a complete semisphere |
-| `render`      | `false` | boolean    | Whether or not to render the generated path |
+| `hidden`      | `true`  | boolean    | Whether or not to hide the generated path |
 | `class`       |         | boolean    | Any classes to add to the generated path |
 
 [1]: https://en.wikipedia.org/wiki/Gore_\(segment\)

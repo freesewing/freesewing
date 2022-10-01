@@ -7,22 +7,42 @@ It is provided by the [dimension plugin](/reference/plugins/dimension/).
 
 To be able to use this plugin, you need to give your dimension an id:
 
+## Signature
+
 ```js
-macro('ld', {
-  from: points.from,
-  to: points.to,
-  d: 0,
-  id: 'example'
+macro('rmd', { 
+  String id
 })
 ```
 
-Now you can remove it as such:
+## Example
 
+<Example caption="An example of the rmd macro">
 ```js
-macro('rmd', {
-  id: 'example'
-})
+({ Point, macro, part }) => {
+
+  macro('ld', {
+    from: new Point(10, 0),
+    to: new Point(40, 0),
+    d: 5,
+    id: 'da',
+  })
+
+  macro('ld', {
+    from: new Point(10, 20),
+    to: new Point(80, 20),
+    d: 5,
+    id: 'db',
+  })
+
+  macro('rmd', { id: 'db' })
+
+  return part
+}
 ```
+</Example>
+
+## Configuration
 
 | Property | Default | Type     | Description |
 |----------|---------|----------|-------------|

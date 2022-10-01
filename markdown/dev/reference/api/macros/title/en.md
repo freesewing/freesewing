@@ -5,7 +5,47 @@ title: title
 The `title` macro adds a title to a pattern part.  
 It is provided by the [title plugin](/reference/plugins/title).
 
-<Example part="plugin_title">Example of a title added by this macro</Example>
+## Signature
+
+```js
+macro('title', {
+  Boolean append,
+  Point at,
+  String nr,
+  String prefix,
+  Number rotation,
+  Number scale,
+  String title,
+})
+```
+
+## Example
+
+<Example caption="An example of the title macro">
+```js
+({ Point, Path, paths, macro, store, part }) => {
+
+  // This is where name/version is supposed to be stored
+  store.set('data.version', 3)
+  store.set('data.name', 'Example')
+
+  macro('title', {
+    nr: 9,
+    title: 'The title',
+    at: new Point(0,0)
+  })
+
+  // Prevent clipping
+  paths.diag = new Path()
+    .move(new Point(0,-50))
+    .move(new Point(80,20))
+
+  return part
+}
+```
+</Example>
+
+## Configuration
 
 | Property   | Default | Type                | Description |
 | ----------:| :-----: | ------------------- | ----------- |

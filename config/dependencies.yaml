@@ -52,10 +52,10 @@ charlie:
     '@freesewing/titan': *freesewing
 core:
   _:
-    'bezier-js': '^4.1.1'
+    'bezier-js': '^6.1.0'
     'bin-pack': '^1.0.2'
     'hooks': '^0.3.2'
-    'lodash.get' : '^4.4.2'
+    'lodash.get': '^4.4.2'
     'lodash.set': '^4.3.2'
     'lodash.unset': '^4.5.2'
   dev:
@@ -65,10 +65,6 @@ diana:
   peer:
     '@freesewing/brian': *freesewing
     '@freesewing/plugin-bust': *freesewing
-examples:
-  peer:
-    '@freesewing/plugin-mirror': *freesewing
-    '@freesewing/plugin-gore': *freesewing
 holmes:
   _:
     '@freesewing/plugin-gore': *freesewing
@@ -98,13 +94,13 @@ models:
     '@freesewing/utils': *freesewing
 new-design:
   _:
-    "axios": "^0.27.2"
-    "chalk": "^5.0.1"
-    "execa": "^6.1.0"
-    "mustache": "^4.2.0"
-    "ora": "^6.1.0"
-    "prompts": "^2.4.2"
-    "recursive-readdir": "^2.2.2"
+    'axios': '^0.27.2'
+    'chalk': '^5.0.1'
+    'execa': '^6.1.0'
+    'mustache': '^4.2.0'
+    'ora': '^6.1.0'
+    'prompts': '^2.4.2'
+    'recursive-readdir': '^2.2.2'
 noble:
   peer:
     '@freesewing/bella': *freesewing
@@ -184,4 +180,3 @@ yuri:
   peer:
     '@freesewing/brian': *freesewing
     '@freesewing/plugin-bust': *freesewing
-

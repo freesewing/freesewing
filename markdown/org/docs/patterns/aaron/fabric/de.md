@@ -1,10 +1,10 @@
 - - -
-title: "Aaron A-Shirt: Fabric Options"
+title: "Aaron A-Shirt: Stoffoptionen"
 - - -
 
-An A-shirt is essentially underwear. And in that capacity, you want something that is comfortable, feels nice on your skin and breaths.
+Ein A-Shirt ist im Wesentlichen Unterwäsche. Und in dieser Hinsicht willst du etwas Bequemes, das sich auf der Haut gut anfühlt und atmungsaktiv ist.
 
-Cotton with a hint of something stretchy, maybe rayon, or a fine knit. I suggest you go to the fabric store and feel around a bit.
+Baumwolle mit einem Hauch von etwas dehnbaren, vielleicht Viskose oder feiner Strick. Ich schlage vor, Sie gehen in den Stoffladen und fühlen sich um ein wenig.
 
 <Note>
 

@@ -5,17 +5,38 @@ title: ld
 The `ld` macro adds a _linear dimension_ to your pattern.  
 It is provided by the [dimension plugin](/reference/plugins/dimension/).
 
-<Example part="point_dist">
-An example of a linear dimension
-</Example>
+## Signature
 
 ```js
 macro('ld', {
-  from: points.from,
-  to: points.to,
-  d: 0
+  Number d,
+  String id,
+  Point from,
+  Boolean noEndtMarker,
+  Boolean noStartMarker,
+  String text,
+  Point to,
 })
 ```
+
+## Example
+
+<Example caption="An example of a linear dimension with the ld macro">
+```js
+({ Point, macro, part }) => {
+
+  macro('ld', {
+    from: new Point(0,0),
+    to: new Point(100,20),
+    d:15,
+  })
+
+  return part
+}
+```
+</Example>
+
+## Configuration
 
 | Property        | Default | Type                | Description |
 |-----------------|---------|---------------------|-------------|
@@ -27,11 +48,9 @@ macro('ld', {
 | `noStartMarker` | `false` | Boolean             | Whether to not draw a start marker |
 | `noEndMarker`  | `false` | Boolean             | Whether to not draw an end marker |
 
-<Note>
+## Notes
 
 Setting a custom ID will:
 
 - Allow removal of the dimension with [the `rmd` macro](/reference/macros/rmd)
 - Prevent removal of the dimension with [the `rmad` macro](/reference/macros/rmad/)
-
-</Note>

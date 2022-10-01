@@ -9,8 +9,9 @@ const part = {
   draft: ({ Point, snippets, Snippet }) => {
     snippets.button = new Snippet('notch', new Point(10, 20))
   },
+  plugins: [plugin],
 }
-const Pattern = new Design({ plugins: [plugin], parts: [part] })
+const Pattern = new Design({ parts: [part] })
 const pattern = new Pattern()
 pattern.draft().render()
 
@@ -26,11 +27,14 @@ describe('Notches Plugin Test', () => {
   it('Draws a notch on an anchor point', () => {
     const part = {
       name: 'test',
-      draft: ({ Point, snippets, Snippet }) => {
+      draft: ({ Point, snippets, Snippet, part }) => {
         snippets.button = new Snippet('notch', new Point(10, 20))
+
+        return part
       },
+      plugins: [plugin],
     }
-    const Pattern = new Design({ plugins: [plugin], parts: [part] })
+    const Pattern = new Design({ parts: [part] })
     const pattern = new Pattern()
     pattern.draft().render()
     const c = pattern.svg

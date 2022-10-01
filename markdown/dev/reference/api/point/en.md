@@ -1,9 +1,21 @@
 ---
 title: Point
-order: 25
 ---
 
 A Point object represents a point on a 2D plane with an X and Y axis.
+
+## Signature
+
+```js
+Point new Point(Number x, Number y)
+```
+
+The point constructor takes two arguments:
+
+- `x` : The X-coordinate of the point
+- `y` : The Y-coordinate of the point
+
+## Attributes
 
 Point objects come with the following properties:
 
@@ -11,15 +23,21 @@ Point objects come with the following properties:
 - `y` : The Y-coordinate of the point
 - `attributes` : An [Attributes](../attributes) instance holding the point's attributes
 
-The point constructor takes two arguments:
+## Example
 
-- `x` : The X-coordinate of the point
-- `y` : The Y-coordinate of the point
-
+<Example caption="Example of the Point constructor">
 ```js
-Point new Point(x, y);
-```
+({ Point, points, part }) => {
+  points.example = new Point(0,0)
+    .addCircle(10)
 
-In addition, a Point object exposes the following methods:
+  return part
+}
+```
+</Example>
+
+## Methods
+
+A Point object exposes the following methods:
 
 <ReadMore list />

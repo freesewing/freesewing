@@ -2,36 +2,52 @@
 title: mirror
 ---
 
-The `mirror` macro allows you to mirror points and/or paths around a mirror line.
-It is provided by the [mirror plugin](/reference/plugins/mirror/).
+The `mirror` macro allows you to mirror points and/or paths around a mirror
+line. It is provided by the [mirror plugin](/reference/plugins/mirror/).
 
-<Example part="plugin_mirror">
-Example of the mirror plugin
-</Example>
+## Signature
 
 ```js
-points.a = new Point(5,5)
-points.b = new Point(45,30)
-points.c = new Point(5,30)
-points.d = new Point(45,5)
-points.mid = new Point(25,15)
-
-
-paths.a = new Path()
-  .move(points.a)
-  .curve(points.b, points.c, points.d)
-
 macro('mirror', {
-  mirror: [points.b, points.d],
-  points: [points.mid],
-  paths: [paths.a]
-})
-
-macro('sprinkle', {
-  snippet: 'notch',
-  on: ['mid', 'mirroredMid']
+  Boolean clone,
+  Array mirror,
+  Function nameFormat,
+  Array paths,
+  Array points,
+  String prefix,
 })
 ```
+
+## Example
+
+<Example caption="An example of the mirror macro">
+```js
+({ Point, points, Path, paths, macro, part }) => {
+
+  points.from = new Point(0,0)
+  points.cp1 = new Point(10,20)
+  points.cp2 = new Point(60,20)
+  points.to = new Point(70,0)
+  paths.example = new Path()
+    .move(points.from)
+    .curve(points.cp1, points.cp2, points.to)
+  
+  macro('mirror', {
+    clone: true,
+    mirror: [
+      new Point(20,10),
+      new Point(20,20),
+    ],
+    paths: Object.values(paths),
+    points: Object.values(points),
+  })
+
+  return part
+}
+```
+</Example>
+
+## Configuration
 
 | Property     | Default    | Type       | Description |
 |-------------:|------------|------------|-------------|

@@ -37,7 +37,8 @@ const repo = {
     changelog: readTemplateFile('changelog.dflt.md'),
     readme: readTemplateFile('readme.dflt.md'),
     build: readTemplateFile('build.dflt.mjs'),
-    eslint: readTemplateFile('eslintrc.yml'),
+    // Removed in favor of central config file. Keeping just in case
+    //eslint: readTemplateFile('eslintrc.yml'),
     pluginTests: readTemplateFile('plugin.test.mjs'),
     designTests: readTemplateFile('design.test.mjs.mustache'),
     data: readTemplateFile('data.dflt.mjs.mustache'),
@@ -89,10 +90,10 @@ for (const pkg of Object.values(software)) {
       repo.templates.build
     )
   }
-  fs.writeFileSync(
-    path.join(cwd, pkg.folder, pkg.name, '.eslintrc.yml'),
-    repo.templates.eslint
-  )
+  //fs.writeFileSync(
+  //  path.join(cwd, pkg.folder, pkg.name, '.eslintrc.yml'),
+  //  repo.templates.eslint
+  //)
   fs.writeFileSync(
     path.join(cwd, pkg.folder, pkg.name, 'CHANGELOG.md'),
     changelog(pkg)
@@ -112,6 +113,7 @@ const buildSteps = buildOrder.map((step, i) => `lerna run cibuild_step${i}`);
 const buildAllCommand = buildSteps.join(' && ');
 const newRootPkgJson = {...rootPackageJson};
 newRootPkgJson.scripts.buildall = buildAllCommand;
+newRootPkgJson.scripts.wbuildall = buildAllCommand.replace(/cibuild/g, 'wcibuild')
 fs.writeFileSync(
   path.join(repo.path, 'package.json'),
   JSON.stringify(newRootPkgJson, null, 2) + '\n'
@@ -228,8 +230,18 @@ function scripts(pkg) {
   // Enforce build order by generating the cibuild_stepX scrips
   for (let step=0; step < buildOrder.length; step++) {
     if (buildOrder[step].indexOf(pkg.name) !== -1) {
-      if (runScripts.prebuild) runScripts[`precibuild_step${step}`] = runScripts.prebuild
-      if (runScripts.build) runScripts[`cibuild_step${step}`] = runScripts.build
+      if (runScripts.prebuild) {
+        runScripts[`precibuild_step${step}`] = runScripts.prebuild
+        if (!runScripts.prewbuild) runScripts.prewbuild = runScripts.prebuild
+      }
+      if (runScripts.build) {
+        runScripts[`cibuild_step${step}`] = runScripts.build
+
+        // add windows scripts
+        if (!runScripts.wbuild) runScripts.wbuild = runScripts.build
+
+        runScripts[`wcibuild_step${step}`] = runScripts.wbuild
+      }
     }
   }
 

@@ -23,26 +23,26 @@ Diese 6-Episoden-Serie zeigt dir, wie du deine Hoodie zum Ende bringen kannst:
 
 ## Konstruktion
 
-### Schritt 1: Bereiten Sie die Tasche vor
+### Schritt 1: Bereiten die Tasche vor
 
-- Platzieren Sie die Pocket Facing Stücke zusammen mit den Kanten des Pocket Stücks, gute Seiten zusammen.
-- Nähen Sie die Gesichtsstücke mit einem Abstand von 1cm an die Tasche an.  Nähen Sie sowohl den langen Rand als auch den kürzeren Rand am unteren Rand der Tasche.
-- Die Nahtzuweisung auf die Seitenteile sorgfältig abschneiden.
-- Drehen und drehen Sie die Gesichtsstücke gute Seiten aus.  Dann Handwalzen und drücken Sie die Nähte.
+- Platzieren Sie die das Taschenfutter (pocket facing) rechts auf rechts auf das Taschenteil (pocket piece).
+- Nähe die Futterteile mit einer Nahtzugabe von 1cm auf das Taschenteil.  Nähen Sie sowohl den langen Rand als auch den kürzeren Rand am unteren Rand der Tasche.
+- Die Nahtzugaben am Futterteil vorsichtig einkürzen.
+- Die Tasche wenden, sodass die rechte Seite außen ist.  Dann Handwalzen und drücken Sie die Nähte.
 - Steppe mit Abstand von 0,5 cm zur Kante die obere und untere Seite der Tasche. Damit wird das Futter und die Nahtzugabe fixiert
 - Topstitch another line 0.5 cm from the inside upper edge of the facing on each side of the pocket.  Diese Stichlinie endet an der unteren Kantenstichlinie.
 - Abschneiden Sie den Überschuss an der Innenseite der Tasche.
-- Drücke die Kanten.
+- Bügeln Sie die Kanten gut aus.
 
 ### Schritt 2: Befestige die Tasche
 
 - Passen Sie die Pocket auf die Vorderseite, gute Seiten zusammen.
-- Die obere Taschennahtlinie ist mit Noten am Muster gekennzeichnet.  Die Unterkante der Tasche sollte auf die Halslinie zeigen.  Die Kanten der Tasche horizontal mit den Noten am Muster ausrichten. Überlappen Sie die Oberseite der Tasche über der Nahtlinie um etwas weniger als 1 cm Nahtzugabe.
+- Die obere Taschennahtlinie ist mit Knipsen am Schnittmuster gekennzeichnet.  Die Unterkante der Tasche sollte auf die Halslinie zeigen.  Die Kanten der Tasche horizontal mit den Noten am Muster ausrichten. Überlappen Sie die Oberseite der Tasche über der Nahtlinie um etwas weniger als 1 cm Nahtzugabe.
 - Nähen Sie die obere Naht der Tasche an die Shirt Front.
 - Drehen Sie die Tasche über die Nahtlinie, so dass die Unterseite nun mit der Kante an der Taille nach oben zieht.
-- Mit einem langen Baststich (4mm oder länger) die Tasche in der Taille mit einer Naht von ½ cm in die Tasche legen.  Dies ist optional, hält aber die Tasche fest während Sie am Rest des Hemdes arbeiten.
+- Mit einem langen Heftstich (4mm oder länger) die Tasche in der Taille mit einer Nahtzugabe von ½ cm fixieren.  Dies ist optional, hält aber die Tasche fest während Sie am Rest des Hemdes arbeiten.
 
-### Schritt 3: Hänge die Ärmel an
+### Schritt 3: Annähen der Ärmel
 
 - Die Seite des Ärmels mit der höheren/spitzeren Kante oben ist die Rückseite des Ärmels.  Sie ist auch durch einen doppelten Knips auf dem Schnittmuster gekennzeichnet.
 
@@ -51,16 +51,16 @@ Diese 6-Episoden-Serie zeigt dir, wie du deine Hoodie zum Ende bringen kannst:
 - Um die Naht zu beenden, können Sie eine dieser Methoden verwenden:
 
   - Verwenden Sie einen Serger, um die Naht in einem Schritt zu nähen und zu beenden.  Dies ist schnell und komfortabel, erzeugt aber ein weniger raffiniertes Aussehen.
-  - Wenn Sie keinen Serger haben oder einen raffinierteren Look wünschen, nähen Sie eine Naht mit einer geraden Naht auf Ihrer herkömmlichen Maschine. Drücken Sie die Nahtzuschläge auf der falschen Seite auseinander.  Dann auf beiden Seiten der Naht auf der rechten Seite.  Schließen Sie die überschüssige Nahtzuweisung ab.  Dies erzeugt ein raffiniertes Aussehen, aber dauert länger.
-  - Eine weitere serger-freie Option ist das Nähen der Naht mit einem geraden Stich. Dann die Nahtzuschläge mit einer zusätzlichen Zick-Zack-Linie neben der geraden Nähte zusammennähen.  Schließen Sie die überschüssige Nahtzuweisung ab.  Dies simuliert, was ein Serger tun würde, und ist schneller als die Option (2).
+  - Wenn Sie keinen Serger haben oder einen raffinierteren Look wünschen, nähen Sie eine Naht mit einer geraden Naht auf Ihrer herkömmlichen Maschine. Bügeln Sie die Nahtzugabe auf der linken Seite auseinander.  Dann auf beiden Seiten der Naht auf der rechten Seite knappkantig absteppen.  Kürze die Nahtzugabe ein.  Dies erzeugt ein raffiniertes Aussehen, aber dauert länger.
+  - Eine weitere serger-freie Option ist das Nähen der Naht mit einem geraden Stich. Dann die Nahtzugaben mit einer zusätzlichen Zick-Zack-Linie neben der geraden Naht zusammennähen.  Nahtzugabe einkürzen.  Dies simuliert, was ein Serger tun würde, und ist schneller als die Option (2).
 
-- Passen Sie die guten Seiten des Ärmels den guten Seiten des Rückens an passend zum Doppelbett auf der Rückseite zum Doppelbett auf der Ärmelnaht.  Nähen Sie die Naht ab und beenden Sie die Nähte wie für die Vorderseite.
+- Lege die Hinterseite des Ärmels rechts auf rechts auf das Rückenteil. Die doppelten Knipse treffen aufeinander.  Nähen Sie die Naht ab und beenden Sie die Nähte wie für die Vorderseite.
 
 ### Schritt 4: Seiten schließen
 
-- Passen Sie die guten Seiten an Seiten und Ärmeln an.
+- Ärmel- und Seitennaht passgenau aufeinander legen.
 - Nähen Sie die Seitennaht und die Ärmel in einer langen Naht zusammen von der Taille bis zum Ende des Ärmels.  Sie können an der Unterarm Punkt stoppen, um die Farben für den Ärmel zu ändern, wenn Ihr Design dies erfordert.
-- Beenden Sie die Nahtzuschläge wie Sie es in Schritt 2 getan haben.  Wenn Sie die Ärmel mit der Edgestitch Methode beenden, müssen Sie langsam vorgehen, um die Ärmelnaht zu beenden, wie Sie es sein werden. ewing im Tunnel..
+- Drücken Sie die Nahtzuschläge und beenden Sie sie wie in Schritt 2.  Schneiden Sie die Nahtzuschläge ab.
 
 ### Schritt 5: Füge eine Zeichenfolge zur Kapuze hinzu (Optional)
 
@@ -72,15 +72,15 @@ Diese 6-Episoden-Serie zeigt dir, wie du deine Hoodie zum Ende bringen kannst:
 - Schneiden Sie ein Loch an den von Ihnen markierten Punkten.
 - Nachdem die Kapuze vorbereitet ist, können Sie eine Schnur um die Vorderkante der Kapuze laufen.  Sneaker Schuhe funktionieren dafür gut.
 
-### Schritt 6: Bereiten Sie Innen- und Außenkapuze vor
+### Schritt 6: Bereite Innen- und Außenkapuze vor
 
 > Folgen Sie diesem Satz von Schritten zweimal, einmal für die äußere Kapuze und wieder für die Innenhaube.
 
-- Führen Sie ein Mitte-Panel-Stück um einen äußeren Rand der Kapuzenseite, gute Seiten zusammen, und Pin an der Stelle.  Näht.
-- Das Mitte-Panel-Stück um den restlichen äußeren Rand der Kapuze anpinnen, gute Seiten zusammen. Näht.
-- Drücken Sie die Nahtzuschläge und beenden Sie sie wie in Schritt 2.  Schneiden Sie die Nahtzuschläge ab.
+- Führen Sie ein Mitte-Panel-Stück um einen äußeren Rand der Kapuzenseite, gute Seiten zusammen, und Pin an der Stelle.  Nähen.
+- Das Mitte-Panel-Stück um den restlichen äußeren Rand der Kapuze anpinnen, gute Seiten zusammen. Nähen.
+- Beenden Sie die Nahtzuschläge wie Sie es in Schritt 2 getan haben.  Schneiden Sie die Nahtzuschläge ab.
 
-### Schritt 7: Schließe dich Innen- und Außenkapuze an
+### Schritt 7: Innen- und Außenkapuze zusammenbringen
 
 - Mit beiden Kapuzen innen drinnen, legen Sie sie aufeinander hin, gute Seiten zusammen.
 - Legen Sie die Nähte und den Pin in der Mitte an.

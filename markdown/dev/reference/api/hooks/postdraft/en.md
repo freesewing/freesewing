@@ -2,12 +2,22 @@
 title: postDraft
 ---
 
-The `postDraft` hook runs just after your pattern is drafted.
+The `postDraft` lifecycle hook runs just after your pattern is drafted.
 
-Your plugin will receive the Pattern object.
+## Signature
 
-<Note>
+```js
+null hook(Pattern pattern)
+```
 
-The `postDraft` hook is rarely used.
+## Example
 
-</Note>
+```js
+pattern.on('postDraft', pattern => {
+  // Mutate the pattern object here
+}
+```
+
+## Notes
+
+The `postDraft` hook is rarely used, but it's there if you need it.

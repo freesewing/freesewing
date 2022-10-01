@@ -1,79 +1,79 @@
 - - -
-title: "Aaron A-Shirt: Sewing Instructions"
+title: "Майка Аарон: Інструкція з пошиття"
 - - -
 
-## Step 1: Close seams
+## Крок 1: З'єднайте деталі
 
 ![Close the side and shoulder seams](step01.png)
 
-Put front and back on top of each other with _good sides together_. Sew the side seams and the short seams at the shoulder straps. If you have a serger, this is a good moment to use it. If not, finish your seams otherwise.
+Покладіть передню деталь на задню _лицьовими сторонами одна на одну_. Зшийте бокові та плечові шви. Якщо у Вас є машина-оверлок, саме час скористатися нею. Якщо у Вас її немає, обробіть припуски на шви іншим способом.
 
-## Step 2: Finish hem
+## Крок 2: Обробіть край
 
 ![Finish the hem](step02.png)
 
-Fold the hem upwards, and sew it down. If you have a coverlock, use it. If not, use a _twin needle_ or _zig-zag stitch_ to keep the seam stretchable.
+Заверніть край доверху та прошийте його. Якщо у вас є коверлок, то використовуйте її. Якщо ні, скористайтеся _подвійною гілкою_ або _стібком "Зіг-заг"_, щоб край міг розтягуватися.
 
 <Note>
 
-##### Fold only once, to avoid bulk
+##### Заверніть край тільки один раз, щоб уникнути непотрібного нашарування
 
-Knitwear doesn't ravel, so you can simply fold this over once and sew it down, then neatly trim back the fabric.
+Трикотажна тканина не розпадається по краях, тому рекомендовано зігнути край один раз та пришити його. Після цього пришитий край можна акуратно підрівняти ножицями.
 
 </Note>
 
-## Step 3: Sew knit binding to the front
+## Крок 3: Пришийте трикотажну бейку до переднього краю
 
 <Note>
 
-##### About knit binding
+### # Про обробку трикотажними бейками
 
-If you are new to [knit binding](/docs/sewing/knit-binding), you might read [this page on the subject](/docs/sewing/knit-binding).
+Якщо Ви не працювали з [трикотажною бейкою](/docs/sewing/knit-binding), Ви можете почитати [цю сторінку з теми](/docs/sewing/knit-binding).
 
-###### Repeat steps 3 and 4 for both armholes and the neck opening
+##### Повторіть кроки 3 та 4 для пройм та горловини
 
-The procedure outlined below applies to both of the armholes as well as the neck opening. In other words, you'll have to do this three times.
+Процедура, описана нижче, застосовується і до пройм, і до горловини. Іншими словами, треба буде робити це тричі.
 
-###### Start with the simplest opening
+###### Почніть з найпростішого.
 
-I would advise you to start with whatever opening has the most uniform curvature. By default, those are the arm holes, but if you changed the pattern options (think racerback) that might not be the case.
+Краще розпочати з краю, який має найрівнішу криву. За замовчуванням - це пройми, але якщо Ви змінили налаштування викрійки (наприклад, зі спортивним типом спини), це можуть бути і не пройми.
 
-Either way, the less sharp bends you have, the easier it will be. So start with that to warm up before you do the trickier bends.
+У будь-якому випадку, чим пряміший край, тим легше. Тому ми рекомендуємо "розігрітися", перш ніж робити складніші шви.
 
 </Note>
 
-We are going to finish the arm and neck hole with [knit binding](/docs/sewing/knit-binding) (note: not a knit band. There's a difference, and it's explained [here](/docs/sewing/knit-binding)).
+Зараз ми будемо закривати пройми та горловину [трикотажною бейкою](/docs/sewing/knit-binding) (Не рібаною. Між ними є різниця, і це пояснюється [тут](/docs/sewing/knit-binding)).
 
 <Note>
 
-This is the only part of making this A-shirt that requires a bit of practice. Don't worry, all you need to do is make a couple of these and you'll be a pro in no time.
+Це єдиний крок у виготовленні майки, який потребує практики. Не хвилюйтеся - пару таких завершених пройм і Ви станете профі.
 
 </Note>
 
-### Pick your spot
+### Оберіть точку старту
 
 ![Applying knit binding](step03a.png)
 
-The first thing we need to do is decide where we are going to start/stop our binding. Here's what I suggest:
+Перше, що Вам необхідно зробити, це вирішити, де Ви почнете/зупините обробку. Ось, що ми пропонуємо:
 
-- For the armholes: at the side seam. This will hide our seam under the arm
-- For the neck opening: the center back of the neck. You might want to mark this with a pin
+- Для пройми: біля бокового шва. Це сховає шов під рукою
+- Для горловини: на центрі шиї ззаду. Ви можете відмітити точку початку булавкою
 
-### Place (the start of) your binding
+### Розмістіть (початок) бейки
 
 ![Place (the start of) your binding](step03b.png)
 
-Put your A-shirt down with the good side up, and place your binding strip on top of it with the good side down (as in, good sides together).
+Покладіть майку лицьовою стороною доверху і покладіть бейку лицьовою стороною донизу (щоб чистові сторони торкалися одна одної).
 
-Align the long edge of your strip with the edge of your fabric so the strip lies on top of the fabric (not in the opening). Place the corner on your starting point.
+Вирівняйте край бейки з краєм тканини так, щоб бейка лежала на тканині (не в проймі/горловині). Зрівняйте кут бейки з початковою точкою.
 
 Now shift your binding strip 1cm beyond your starting point. This little extra will guarantee we can join the two ends later.
 
-### Make sure you know where to sew
+### Налаштуйте правильний припуск
 
 ![Make sure you know where to sew](step03c.png)
 
-We are going to sew 1.5cm from the edge. So be careful because this is not the standard seam allowance.
+Бейку варто пришити 1.5 від краю. Це не є стандартним припуском на шов, тому зверніть на це увагу.
 
 <Tip>
 
@@ -85,11 +85,11 @@ Then all you need to do is keep the edge of your fabric aligned with that line.
 
 Also, we are not starting at our start point, but we skip the first 3cm. We'll need this wiggle room later to join the ends of our binding.
 
-### Sew binding in place
+### Пришийте бейку
 
 ![Sew binding in place](step03d.png)
 
-Sew your binding in place while gently stretching the binding, but not the fabric. Make sure not to sew the last 3cm but leave them, just as you did at the start.
+Легко розтягуючи бейку, пришийте її до тканини. Тканину розтягувати не треба. Не забудьте залишити останні 3 см не пришитими, так як і на початку.
 
 You might need to practice a bit to get the hang of it.
 

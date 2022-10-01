@@ -17,24 +17,24 @@ Path path._curve(Point cp2, Point to)
 
 ## Example
 
-<TabbedExample part="path__curve" caption="Example of the Path.\_curve() method">
+<Example caption="Example of the Path.\_curve() method">
 ```js
 ({ Point, points, Path, paths, part }) => {
 
-  points.from = new Point(5, 20);
-  points.cp2 = new Point(60, 30);
-  points.to = new Point(90, 20);
+  points.from = new Point(5, 20)
+  points.cp2 = new Point(60, 50)
+  points.to = new Point(90, 20)
 
   paths.line = new Path()
     .move(points.from)
     ._curve(points.cp2, points.to)
-    .attr("data-text", "Path._curve()")
-    .attr("data-text-class", "text-sm center fill-note");
+    .setText("Path._curve()", "text-sm center fill-note")
+    .attr("data-text-dy", -1)
 
   return part
 }
 ```
-</TabbedExample>
+</Example>
 
 
 ## Notes

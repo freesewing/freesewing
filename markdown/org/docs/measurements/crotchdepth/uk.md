@@ -1,7 +1,7 @@
 ---
-title: Crotch depth
+title: Висота сидіння
 ---
 
-The **crotch depth** measurement is the height your waist rises from the surface you are sitting on.
+**Висота сидіння** — це відстань від талії до поверхні, на якій Ви сидите.
 
-To measure your crotch depth, sit straight on a flat chair or table, and measure from waist line down to the chair/table.
+Для зняття висоти сидіння, сядьте прямо на пласку поверхню як стілець чи стіл та виміряйте від переднього центру лінії талії до цієї поверхні.

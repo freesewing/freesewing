@@ -57,7 +57,7 @@ export const LogGroup = ({ type = 'info', logs = [], units = 'metric' }) =>
           {logs.map((log, i) => (
             <tr key={i} className="leading-1 hover:bg-base-200 hover:bg-opacity-40">
               <td className="text-right p-1 pr-4 font-bold opacity-80 text-accent">{i}</td>
-              <td className="p-1 pl-4">
+              <td className="p-1 pl-4 whitespace-pre-wrap">
                 <Log log={log} units={units} />
               </td>
             </tr>
@@ -96,12 +96,16 @@ const StoreLogs = ({ logs, units }) => (
   </div>
 )
 
-const Logs = (props) => (
-  <Tabs tabs={['Pattern', ...props.draft.setStores.map((store, i) => `Set ${i}`)].join(',')}>
-    {[props.draft.store, ...props.draft.setStores].map((store, i) => (
-      <Tab key={i}><StoreLogs logs={store.logs} units={props.gist.units} /></Tab>
-    ))}
-  </Tabs>
-)
+const Logs = (props) => {
+  const renderProps = props.draft.getRenderProps()
+
+  return (
+    <Tabs tabs={['Pattern', ...props.draft.setStores.map((store, i) => `Set ${i}`)].join(',')}>
+      {[props.draft.store, ...props.draft.setStores].map((store, i) => (
+        <Tab key={i}><StoreLogs logs={store.logs} units={props.gist.units} /></Tab>
+      ))}
+    </Tabs>
+  )
+}
 
 export default Logs

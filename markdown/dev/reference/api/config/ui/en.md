@@ -1,6 +1,5 @@
 ---
 title: UI configuration
-order: 100
 ---
 
 Patterns also take these configuration options to facilitate UI integration:

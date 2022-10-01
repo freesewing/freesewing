@@ -184,8 +184,8 @@ describe('Path', () => {
     const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft().render()
-    expect(round(pattern.parts[0].test.paths.offset.bottomRight.x)).to.equal(119.26)
-    expect(round(pattern.parts[0].test.paths.offset.bottomRight.y)).to.equal(43.27)
+    expect(round(pattern.parts[0].test.paths.offset.bottomRight.x)).to.equal(119.86)
+    expect(round(pattern.parts[0].test.paths.offset.bottomRight.y)).to.equal(43.49)
   })
 
   it('Should return the length of a line', () => {

@@ -1,37 +1,33 @@
 ---
-title: hide()
+title: Path.hide()
 ---
 
+The `Path.hide()` hides the path so it does not appear in the output. 
+
+## Signature
+
 ```js
-Path path.attr(
-  string name, 
-  mixed value, 
-  bool overwrite = false
-)
+Path path.hide()
 ```
 
-This `Path.attr()` method calls `this.attributes.add()` under the hood, but returns the Path object.
+<Tip compact>This method is chainable as it returns the `Path` object</Tip>
 
-This allows you to chain different calls together as in the example below.
+## Example
 
-If the third parameter is set to `true` it will call `this.attributes.set()` instead, thereby overwriting the value of the attribute.
+<Example caption="Example of the Path.hide() method">
+```js
+({ Point, points, Path, paths, part }) => {
 
-<Example part="path_attr">
-Example of the Path.attr() method
+  points.top = new Point(50, 0)
+  points.left = new Point (20,50)
+  points.right = new Point (80,50)
+  
+  paths.a = new Path().move(points.top).line(points.right).setText('a')
+  paths.b = new Path().move(points.right).line(points.left).setText('b').hide()
+  paths.c = new Path().move(points.left).line(points.top).setText('c')
+  
+  return part
+}
+```
 </Example>
 
-```js
-let { Point, points, Path, paths } = part.shorthand();
-
-points.B = new Point(10, 50);
-points.BCp2 = new Point(40, 10);
-points.C = new Point(90, 30);
-points.CCp1 = new Point(50, 90);
-
-paths.example = new Path()
-  .move(points.B)
-  .curve(points.BCp2, points.CCp1, points.C)
-  .attr("class", "canvas")
-  .attr("data-text", "freesewingIsMadeByJoostDeCockAndContributors")
-  .attr("data-text-class", "text-xs center");
-```

@@ -18,9 +18,7 @@ function hugoBack({
   part,
 }) {
   // Remove clutter
-  let seam = paths.seam
-  paths = {}
-  paths.seam = seam
+  for (const i in paths) delete paths[i]
 
   // Remove notch inherited from Brian
   delete snippets.armholePitchNotch

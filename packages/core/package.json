@@ -44,11 +44,13 @@
     "testci": "mocha tests/*.test.mjs",
     "prettier": "npx prettier --write 'src/*.mjs' 'tests/*.mjs'",
     "jsdoc": "jsdoc -c jsdoc.json -r src",
-    "cibuild_step0": "node build.mjs"
+    "cibuild_step0": "node build.mjs",
+    "wbuild": "node build.mjs",
+    "wcibuild_step0": "node build.mjs"
   },
   "peerDependencies": {},
   "dependencies": {
-    "bezier-js": "^4.1.1",
+    "bezier-js": "^6.1.0",
     "bin-pack": "^1.0.2",
     "hooks": "^0.3.2",
     "lodash.get": "^4.4.2",

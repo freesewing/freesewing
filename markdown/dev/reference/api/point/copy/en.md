@@ -2,37 +2,43 @@
 title: Point.copy()
 ---
 
-A point's `copy()` method returns a new point with the same coordinates as the original point.
-This method does _not_ copy any attributes the original point may have.
+The `Point.copy()` method returns a new point with the same coordinates as the
+original point.  This method does _not_ copy any attributes the original point
+may have.
 
-## Point.copy() signature
+## Signature
 
 ```js
 Point point.copy()
 ```
 
-<Note>
-
-###### Copy vs clone
-
-this `Point.copy()` method will only copy the point's coordinates.
-To also copy the attributes, use [`Point.clone()`](/reference/api/point/clone/) instead.
-
-</Note>
 
 ## Point.copy() example
 
-<Example part="point_copy">
-An example of the Point.copy() method
+<Example caption="An example of the Point.copy() method">
+```js
+({ Point, points, Path, paths, Snippet, snippets, part }) => {
+
+  points.A = new Point(25, 25)
+    .setText("Point A", "text-xl")
+    .attr("data-text-fill-opacity", "0.5")
+  points.B = points.A.clone().setText("Point B")
+
+  snippets.x = new Snippet("notch", points.A)
+
+  // Avoid the text getting cropped
+  paths.hidden = new Path()
+    .move(new Point(20,10))
+    .move(new Point(75,30))
+    .addClass('hidden')
+
+  return part
+}
+```
 </Example>
 
-```js
-let { Point, points, Snippet, snippets } = part.shorthand();
 
-points.A = new Point(50, 25)
-  .attr("data-text", "Point A")
-  .attr("data-text-class", "text-xl");
-points.B = points.A.copy().attr("data-text", "Point B");
+## Notes
 
-snippets.x = new Snippet("notch", points.A);
-```
+The `Point.copy()` method will only copy the point's coordinates.
+To also copy the attributes, use [`Point.clone()`](/reference/api/point/clone/) instead.

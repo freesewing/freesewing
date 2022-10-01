@@ -8,7 +8,7 @@ armWidth:
   title: Arm width
   description: Controls the width of the arms
 armLength:
-  title: Arm width
+  title: Arm length
   description: Controls the length of the arms
 neckWidth:
   title: Neck width

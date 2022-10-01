@@ -1,34 +1,43 @@
 ---
-title: insertText
+title: insertText 
 ---
 
-The `insertText` hook is called when text is about to be inserted during rendering.
+The `insertText` lifecycle hook is called when text is about to be inserted
+during rendering.
 
-Methods attached to the `insertText` hook will receive 2 parameters:
-
-- `locale` : The language code of the language requested by the user (defaults to `en`)
-- `text`: The text to be inserted
-
-Unlike most hooks that receive an object that you can make changes to,
-for this hook you need to return a string.
-
-This hook is typically used for translation, as is the case
+It is typically used for translation, as is the case
 in [our i18n plugin](/reference/plugins/i18n/).
 
-## Understanding the insertText hook
+## Signature
+
+```js
+string hook(string locale='en', string text)
+```
+
+## Example
+
+```js
+// Let' get LOUD by turning everything into UPPERCASE
+pattern.on(
+  'insertText', 
+  (locale, text) => text.toUpperCase()
+)
+```
+
+## Notes
 
 When we say that _this hook is called when text is about to be inserted_, that is a simplified view.
 In reality, this hook is called:
 
-- For every value set on data-text
+- For every string of text added to a given Point or Path
 - For the combined result of these values, joined together with spaces
 
 Let's use an example to clarify things:
 
 ```js
 points.example
-  .attr('data-text', "seamAllowance")
-  .attr('data-text', ": 1cm")
+  .addText("seamAllowance")
+  .addText(": 1cm")
 ```
 
 For the example point above, the `insertText` hook will end up being called 3 times:

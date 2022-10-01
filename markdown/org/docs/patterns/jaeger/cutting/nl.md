@@ -20,14 +20,14 @@ title: "Jaeger jacket: Cutting Instructions"
   - Knip **2 zijpanden** (deel 3)
   - Knip **2 bovenmouwen** (deel 4) Opmerking: sommige mensen gebruiken graag een aparte voering voor de mouwen
   - Knip **2 ondermouwen** (deel 5) Opmerking: sommige mensen gebruiken graag een aparte voering voor de mouwen
-  - Knip **2 zakdelen borstzak** (deel 11)
+  - Cut **2 chest pocket bags** (part 11)
   - Knip **2 biezen binnenzak**
   - Knip **2 zakdelen binnenzak** (deel 13)
 - **Haardoek**
   - Knip **2 voorpanden** schuin van draad (deel 1) Opmerking: voeg geen naadwaarde toe
   - Knip **2 borststukken** schuin van draad. Kijk naar de markering op het voorpand. Opmerking: voeg geen naadwaarde toe
 - **Stof voor de onderkraag**
-  - Knip **1 onderkraag** (deel 7)
+  - Cut **2 undercollars** (part 7)
 
 <Note>
 
@@ -46,7 +46,7 @@ Als je alles apart uitknipt, onthou dan dat de delen gespiegeld moeten zijn. Dus
 
 - The chest piece is marked on the front.
 - Voeg geen naadwaarde toe als je haardoek uitknipt, en knip schuin van draad.
-- Het beleg vooraan en de voering van het voorpand zijn aangegeven op het patroondeel van het voorpand. Deze lijn splitst het patroondeel in twee. Je kan het patroondeel in twee knippen nadat je het voorpand uit je buitenstof geknipt hebt. De binnenzakextensie voor het beleg is apart geprint, en je kan dit terug op z'n plaats kleven nadat je het patroondeel uitgeknipt hebt. **Vergeet niet naadwaarde toe te voegen aan zowel het beleg als de voering van deze naad**.
+- Het beleg vooraan en de voering van het voorpand zijn aangegeven op het patroondeel van het voorpand. Deze lijn splitst het patroondeel in twee. Je kan het patroondeel in twee knippen nadat je het voorpand uit je buitenstof geknipt hebt. The inner pocket extension for the facing is printed separately, and you can tape it back in its place after cutting the pattern piece. **Vergeet niet naadwaarde toe te voegen aan zowel het beleg als de voering van deze naad**.
 
 ![Volg het beleg aan de voorkant en de voering vanaf het voorpand](cuttingCaveat.svg)
 

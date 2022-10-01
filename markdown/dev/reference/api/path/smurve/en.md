@@ -1,37 +1,41 @@
 ---
-title: smurve()
+title: Path.smurve()
 ---
 
+The `Path.smurve()` method draws a smooth curve from the current point via a control point to an endpoint.
+A smooth curve means it will use the reflection of the end control point of the previous curve.
+
+## Signature
+
 ```js
-Path path.attr(
-  string name, 
-  mixed value, 
-  bool overwrite = false
-)
+Path path.smurve(Point cp2, Point end)
 ```
 
-This `Path.attr()` method calls `this.attributes.add()` under the hood, but returns the Path object.
+<Tip compact>This method is chainable as it returns the `Path` object</Tip>
 
-This allows you to chain different calls together as in the example below.
+## Example
 
-If the third parameter is set to `true` it will call `this.attributes.set()` instead, thereby overwriting the value of the attribute.
+<Example caption="Example of the Path.smurve() method">
+```js
+({ Point, points, Path, paths, part }) => {
 
-<Example part="path_attr">
-Example of the Path.attr() method
+  points.aFrom = new Point(10, 10)
+  points.aCp1 = new Point(40, 40)
+  points.aCp2 = new Point(70, -20)
+  points.aTo = new Point(100, 10)
+
+  points.bCp2 = new Point(50,50)
+  points.bTo = new Point(10,50)
+  
+  paths.smurve = new Path()
+    .move(points.aFrom)
+    .curve(points.aCp1, points.aCp2,points.aTo)
+    .smurve(points.bCp2, points.bTo)
+    .reverse() // Puts text at the end
+    .setText('Path.smurve()')
+
+  return part
+}
+```
 </Example>
 
-```js
-let { Point, points, Path, paths } = part.shorthand();
-
-points.B = new Point(10, 50);
-points.BCp2 = new Point(40, 10);
-points.C = new Point(90, 30);
-points.CCp1 = new Point(50, 90);
-
-paths.example = new Path()
-  .move(points.B)
-  .curve(points.BCp2, points.CCp1, points.C)
-  .attr("class", "canvas")
-  .attr("data-text", "freesewingIsMadeByJoostDeCockAndContributors")
-  .attr("data-text-class", "text-xs center");
-```

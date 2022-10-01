@@ -2,25 +2,40 @@
 title: rmad
 ---
 
-The `rmad` macro removes all dimensions with the exception of those that were created with a custom ID.
-It is provided by the [dimension plugin](/reference/plugins/dimension/).
+The `rmad` macro removes all dimensions with the exception of those that were
+created with a custom ID.  It is provided by the [dimension
+plugin](/reference/plugins/dimension/).
 
-To be able to use this plugin, you need to give your dimension an id:
+## Signature
 
 ```js
-// This will be removed
-macro('ld', {
-  from: points.from,
-  to: points.to,
-  d: 0,
-})
-// This will not removed
-macro('ld', {
-  from: points.from,
-  to: points.to,
-  d: 0,
-  id: 'example' // custom ID
-})
-
 macro('rmad')
 ```
+
+## Example
+
+<Example caption="An example of the rmad macro">
+```js
+({ Point, macro, part }) => {
+
+  // This will be removed
+  macro('ld', {
+    from: new Point(10, 0),
+    to: new Point(40, 0),
+    d: 5,
+  })
+
+  // This will not removed
+  macro('ld', {
+    from: new Point(10, 20),
+    to: new Point(80, 20),
+    d: 5,
+    id: 'example' // custom ID
+  })
+
+  macro('rmad')
+
+  return part
+}
+```
+</Example>

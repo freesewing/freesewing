@@ -1,15 +1,13 @@
-import { version } from '../package.json' assert { type: 'json' }
+import pkg from '../package.json' assert { type: 'json' }
 import { config as titanConfig } from '@freesewing/titan'
 
 export default {
   name: '{{name}}',
-  version,
+  version: pkg.version,
   optionGroups: {
     ...titanConfig.optionGroups,
   },
-  measurements: [
-    ...titanConfig.measurements,
-  ],
+  measurements: [...titanConfig.measurements],
   dependencies: {
     titanFront: 'titanBack',
   },
@@ -17,12 +15,8 @@ export default {
     front: 'titanFront',
     back: 'titanBack',
   },
-  hide: [
-    'titanFront',
-    'titanBack',
-  ],
+  hide: ['titanFront', 'titanBack'],
   options: {
     ...titanConfig.options,
   },
 }
-

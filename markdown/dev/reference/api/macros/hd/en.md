@@ -2,20 +2,41 @@
 title: hd
 ---
 
-The `hd` macro adds a _horizontal dimension_ to your pattern.  
+The `hd` macro adds a _horizontal dimension_ to your pattern.
 It is provided by the [dimension plugin](/reference/plugins/dimension/).
 
-<Example part="point_dx">
-An example of a horizontal dimension
-</Example>
+## Signature
 
 ```js
 macro('hd', {
-  from: points.from,
-  to: points.to,
-  y: 25
+  String id,
+  Point from,
+  Boolean noEndtMarker,
+  Boolean noStartMarker,
+  String text,
+  Point to,
+  Number y,
 })
 ```
+
+## Example
+
+<Example caption="An example of a horizontal dimension with the hd macro">
+```js
+({ Point, macro, part }) => {
+
+  macro('hd', {
+    from: new Point(0,0),
+    to: new Point(100,0),
+    y:15,
+  })
+
+  return part
+}
+```
+</Example>
+
+## Configuration
 
 | Property        | Default  | Type                | Description |
 |----------------:|----------|---------------------|-------------|
@@ -27,11 +48,10 @@ macro('hd', {
 | `noStartMarker` | `false`  | Boolean             | Whether to not draw a start marker |
 | `noEndMarker`  | `false`  | Boolean             | Whether to not draw an end marker |
 
-<Note>
+## Notes
 
 Setting a custom ID will:
 
 - Allow removal of the dimension with [the `rmd` macro](/reference/macros/rmd)
 - Prevent removal of the dimension with [the `rmad` macro](/reference/macros/rmad/)
 
-</Note>

@@ -18,6 +18,6 @@ Wir wollen keine Person ausschließen und wir sind der Überzeugung, dass _Körp
 
 Jede/r Nutzer/in kann jedes Schnittmuster auf unserer Seite erstellen, sofern die benötigten Maße bereitgestellt werden. Einige Schnitte enthalten Maße, die nur relevant sind, wenn eine Person Brüste hat.
 
-##### Binding betreffend
+##### Und wenn ich einen Binder trage?
 
-Falls du einen Binder trägst, verwende die Schnittmuster für **ohne Brüste** und trage beim [Brustumfang](/docs/measurements/chest/) das Maß deiner gebundenen Brust ein.
+Falls du einen Binder trägst, verwende die Schnittmuster für **ohne Brüste** und trage beim [Brustumfang](/docs/measurements/chest/) das Maß deiner gebundenen Brust ein

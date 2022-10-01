@@ -1,20 +1,23 @@
 ---
-title: getAsArray()
+title: Attributes.getAsArray()
 ---
+
+The `Attributes.getAsArray()` method will return an array with the value of
+attribute stored under `key`, or `false` if it's not set.
+
+## Signature
 
 ```js
 array attributes.getAsArray(string key)
 ```
 
-Will return an array with the value of attribute stored under `key`, or `false` if it's not set.
+## Example
 
 ```js
-let { Path, paths } = part.shorthand();
+const attr = new Attributes()
+  .add('class', 'classA')
+  .add('class', 'classB')
 
-paths.demo = new Path()
-  .attr('class', 'classA')
-  .attr('class', 'classB');
-
-let class = paths.demo.attributes.getAsArray('class'); 
-// class now holds: ["classA", "classB"]
+const class = attr.getAsArray('class')
+// class now holds: [ "classA", "classB" ]
 ```

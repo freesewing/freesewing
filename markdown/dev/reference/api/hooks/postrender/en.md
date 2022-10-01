@@ -2,12 +2,18 @@
 title: postRender
 ---
 
-The `postRender` hook is triggered after the SVG is rendered.
+The `postRender` lifecycle hook is triggered after the SVG is rendered.
+It will only fire when `Pattern.render()` is called.
 
-Like the `preRender` hook, it receives [the SVG object](/api/svg) as its first parameter.
+## Signature
 
-<Note>
+```js
+null hook(Svg svg)
+```
 
-The `postRender` hooks is rarely used.
+## Notes
 
-</Note>
+The `postRender` hook is rarely used, but it's there if you need it.
+
+Like the `preRender` hook, it receives [the SVG object](/api/svg) as its first
+parameter.

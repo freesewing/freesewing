@@ -16,6 +16,11 @@ import {
   buttons,
   waistEase,
   hipsEase,
+  armholeDepthFactor,
+  chestEase,
+  lengthBonus,
+  acrossBackFactor,
+  frontArmholeDeeper,
 } from './options.mjs'
 
 function wahidFront({
@@ -506,6 +511,11 @@ export const front = {
     buttons,
     waistEase,
     hipsEase,
+    armholeDepthFactor,
+    chestEase,
+    lengthBonus,
+    acrossBackFactor,
+    frontArmholeDeeper,
   },
   draft: wahidFront,
 }

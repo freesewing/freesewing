@@ -1,21 +1,15 @@
-name: ESLint
+name: ESLint All Files
 
 on:
   push:
     branches:
       - develop
-    paths:
-      - '**'
-      - '!**/README.md'
   pull_request:
     branches:
       - develop
-    paths:
-      - '**'
-      - '!**/README.md'
 
 jobs:
-  test:
+  lint:
 
     runs-on: ubuntu-latest
 

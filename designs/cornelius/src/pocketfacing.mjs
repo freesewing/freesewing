@@ -50,7 +50,6 @@ function draftCorneliusPocketFacing({
     .join(paths.facingInside)
     .join(paths.sideSeam)
     .close()
-    .hide()
     .attr('class', 'fabric')
 
   if (complete) {

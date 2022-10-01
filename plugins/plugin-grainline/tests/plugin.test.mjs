@@ -8,19 +8,22 @@ describe('Grainline Plugin Tests', () => {
   it('Should run the default grainline macro', () => {
     const part = {
       name: 'test',
-      draft: ({ points, Point, macro }) => {
+      draft: ({ points, Point, macro, part }) => {
         points.from = new Point(10, 20)
         points.to = new Point(10, 230)
         macro('grainline', {
           from: points.from,
           to: points.to,
         })
+
+        return part
       },
+      plugins: [plugin],
     }
-    const Pattern = new Design({ plugins: [plugin], parts: [part] })
+    const Pattern = new Design({ parts: [part] })
     const pattern = new Pattern()
     pattern.draft()
-    const c = pattern.parts.test.paths.grainline
+    const c = pattern.parts[0].test.paths.grainline
     expect(c.attributes.get('class')).to.equal('note')
     expect(c.attributes.get('marker-start')).to.equal('url(#grainlineFrom)')
     expect(c.attributes.get('marker-end')).to.equal('url(#grainlineTo)')

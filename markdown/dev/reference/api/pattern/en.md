@@ -1,6 +1,5 @@
 ---
 title: Pattern
-order: 20
 ---
 
 The `Pattern` object in FreeSewing's core library holds all data and logic of a pattern.
