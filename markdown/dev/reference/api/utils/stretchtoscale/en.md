@@ -21,5 +21,5 @@ In code and on our patterns, that means we need to scale things by 80%.
 This function does that by returning:
 
 ```js
-1 / (1 + parseFloat(stretch));
+1 / (1 + parseFloat(stretch))
 ```
