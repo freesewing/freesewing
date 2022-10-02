@@ -5,11 +5,21 @@ title: snap-stud
 The `snap-stud` snippet is used to mark the stud part of a snap button.
 
 It is provided by [plugin-buttons](/reference/plugins/buttons/).
+## Example
 
+<Example caption="An example of the snap-stud snippet">
 ```js
-snippets.demo = new Snippet('snap-stud', points.anchor)
-```
+({ Point, Path, paths, Snippet, snippets, part }) => {
 
-<Example part="snippets_snapstud">
-An example of the snap-stud snippet
+  snippets.demo = new Snippet('snap-stud', new Point(0,0))
+
+  // Prevent clipping
+  paths.diag = new Path()
+    .move(new Point(-50,-4))
+    .move(new Point(50,4))
+
+  return part
+}
+```
 </Example>
+

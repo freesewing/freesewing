@@ -2,13 +2,25 @@
 title: logo
 ---
 
-The `logo` snippet inserts the FreeSewing logo. It is
-provided by [plugin-logo](/reference/plugins/logo/).
+The `logo` snippet inserts the FreeSewing logo.
 
+It is provided by [plugin-logo](/reference/plugins/logo/).
+
+## Example
+
+<Example caption="An example of the logo snippet">
 ```js
-snippets.demo = new Snippet('logo', points.anchor)
-```
+({ Point, Path, paths, Snippet, snippets, part }) => {
 
-<Example part="snippets_logo">
-An example of the logo snippet
+  snippets.demo = new Snippet('logo', new Point(0,0))
+
+  // Prevent clipping
+  paths.diag = new Path()
+    .move(new Point(-100,-40))
+    .move(new Point(100,20))
+
+  return part
+}
+```
 </Example>
+

@@ -1,9 +1,8 @@
 ---
 title: Snippets
-for: developers
-about: Complete list of all the available snippets
 ---
 
-Snippets are provided by plugins. Follow the links below for more info on and an example of a specific snippet:
+A Snippet is a reuseable bit of markup for your pattern. They are provided by
+plugins. Below is an overview of all the different snippets we maintain.
 
 <ReadMore list />

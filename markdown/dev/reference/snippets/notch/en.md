@@ -2,13 +2,25 @@
 title: notch
 ---
 
-The `notch` snippet is intended for notches and is
-provided by [plugin-notches](/reference/plugins/notches/).
+The `notch` snippet is intended for notches.
 
+It is provided by [plugin-notches](/reference/plugins/notches/).
+
+## Example
+
+<Example caption="An example of the notch snippet">
 ```js
-snippets.demo = new Snippet('bnotch', points.anchor)
-```
+({ Point, Path, paths, Snippet, snippets, part }) => {
 
-<Example part="snippets_notch">
-An example of the notch snippet
+  snippets.demo = new Snippet('notch', new Point(0,0))
+
+  // Prevent clipping
+  paths.diag = new Path()
+    .move(new Point(-50,-4))
+    .move(new Point(50,4))
+
+  return part
+}
+```
 </Example>
+
