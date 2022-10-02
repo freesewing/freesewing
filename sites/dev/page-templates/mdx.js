@@ -70,9 +70,10 @@ export default MdxPage
  *
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
-export async function getStaticProps({ params, locale }) {
+export async function getStaticProps() {
 
-  const { mdx, intro, toc } = await mdxLoader('en', 'dev', params.mdxslug.join('/'), jargon)
+  const slug = "{{{ slug }}}"
+  const { mdx, intro, toc } = await mdxLoader('en', 'dev', slug, jargon)
 
   return {
     props: {
@@ -80,32 +81,13 @@ export async function getStaticProps({ params, locale }) {
       toc,
       intro: intro.join(' '),
       page: {
-        slug: params.mdxslug.join('/'),
-        path: '/' + params.mdxslug.join('/'),
-        slugArray: params.mdxslug,
-        ...mdxMeta[params.mdxslug.join('/')],
+        slug: slug,
+        path: '/' + slug,
+        slugArray: slug.split('/'),
+        ...mdxMeta[slug],
       },
-      params,
       ...(await serverSideTranslations('en')),
     }
-  }
-}
-
-/*
- * getStaticPaths() is used to specify for which routes (think URLs)
- * this page should be used to generate the result.
- *
- * On this page, it is returning a list of routes (think URLs) for all
- * the mdx (markdown) content.
- * That list comes from mdxMeta, which is build in the prebuild step
- * and contains paths, titles, and intro for all markdown.
- *
- * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
- */
-export async function getStaticPaths() {
-  return {
-    paths: Object.keys(mdxMeta).map(slug => '/'+slug),
-    fallback: false
   }
 }
 
