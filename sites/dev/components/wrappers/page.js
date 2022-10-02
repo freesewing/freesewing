@@ -5,25 +5,22 @@ import { useHotkeys } from 'react-hotkeys-hook'
 // Layouts components
 import LayoutWrapper from 'site/components/wrappers/layout'
 import Docs from 'site/components/layouts/docs'
-// Add feeds
-import Feeds from 'site/components/feeds.js'
 // Modal
 import Modal from 'shared/components/modal'
 
 /* This component should wrap all page content */
-const PageWrapper= ({
-  title="FIXME: No title set",
-  noSearch=false,
-  app=false,
-  layout=Docs,
-  crumbs=false,
-  children=[]
+const PageWrapper = ({
+  title = 'FIXME: No title set',
+  noSearch = false,
+  app = false,
+  layout = Docs,
+  crumbs = false,
+  children = [],
 }) => {
-
   const swipeHandlers = useSwipeable({
-    onSwipedLeft: evt => (app.primaryMenu) ? app.setPrimaryMenu(false) : null,
-    onSwipedRight: evt => (app.primaryMenu) ? null : app.setPrimaryMenu(true),
-    trackMouse: true
+    onSwipedLeft: () => (app.primaryMenu ? app.setPrimaryMenu(false) : null),
+    onSwipedRight: () => (app.primaryMenu ? null : app.setPrimaryMenu(true)),
+    trackMouse: true,
   })
 
   const router = useRouter()
@@ -43,7 +40,9 @@ const PageWrapper= ({
     app: app,
     title: title,
     crumbs: crumbs,
-    search, setSearch, toggleSearch: () => setSearch(!search),
+    search,
+    setSearch,
+    toggleSearch: () => setSearch(!search),
     noSearch: noSearch,
   }
 
@@ -56,12 +55,8 @@ const PageWrapper= ({
       data-theme={app.theme}
       key={app.theme} // This forces the data-theme update
     >
-      <Feeds lang={app.locale} />
       <LayoutWrapper {...childProps}>
-        {Layout
-          ? <Layout {...childProps}>{children}</Layout>
-          : children
-        }
+        {Layout ? <Layout {...childProps}>{children}</Layout> : children}
       </LayoutWrapper>
       {app.popup && <Modal cancel={() => app.setPopup(false)}>{app.popup}</Modal>}
     </div>
@@ -69,4 +64,3 @@ const PageWrapper= ({
 }
 
 export default PageWrapper
-

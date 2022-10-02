@@ -9,13 +9,15 @@ import { prebuildLab } from './lab.mjs'
 const SITE = process.env.SITE || 'lab'
 
 const run = async () => {
-  if (SITE !== 'lab') {
+  if (SITE === 'org') {
     const mdxPages = await prebuildMdx(SITE)
-    const [posts, authors] = await prebuildStrapi(SITE)
+    const [posts] = await prebuildStrapi(SITE)
     prebuildNavigation(mdxPages, posts, SITE)
-  } else {
-    await prebuildLab()
-  }
+  } else if (SITE === 'dev') {
+    const mdxPages = await prebuildMdx(SITE)
+    prebuildNavigation(mdxPages, false, SITE)
+  } else await prebuildLab()
+
   await prebuildI18n(SITE)
   await prebuildContributors(SITE)
   await prebuildPatrons(SITE)
