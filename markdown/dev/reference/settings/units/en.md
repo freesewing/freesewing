@@ -5,13 +5,25 @@ title: units
 The `units` setting controls the units used on the pattern.
 It can be either `metric` (the default) or `imperial`.
 
-Note that this is only used to format the output.
-Freesewing expects mm as input.
+## Signature
 
 ```js
-import Brian from "@freesewing/brian";
+const settings = {
+  String units='metric'
+}
+```
 
-const pattern = new Brian({
-  units: "imperial"
+## Example
+
+```js
+import { Aaron } from "@freesewing/aaron"
+
+const pattern = new Aaron({
+  units: 'imperial'
 })
 ```
+
+## Notes
+
+This setting only applies to formatting of the output.
+Freesewing expects all input to be in millimeter.

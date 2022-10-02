@@ -2,9 +2,8 @@
 title: embed
 ---
 
-The `embed` setting controls the properties of the SVG document. Set it to
-`true` to make SVG output suitable for embedding in a web page by omitting the
-`height` and `width` properties.
+The `embed` setting controls whether to generate an SVG document suitable for
+printing, or for embedding on a web page.
 
 ## Signature
 
@@ -24,13 +23,9 @@ scale.
 ## Example
 
 ```js
-import Aaron from "@freesewing/aaron"
+import { Aaron } from "@freesewing/aaron"
 
 const pattern = new Aaron({
   embed: true
 })
 ```
-
-## Notes
-
-Do **not** use this for SVGs you want to print.

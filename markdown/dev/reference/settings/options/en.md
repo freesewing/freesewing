@@ -5,20 +5,34 @@ title: options
 The `options` setting allows you to specify values for the pattern-specific
 options that have been implemented by the pattern designer.
 
-The available options are listed in the pattern configuration.
-Refer to the [the options section in the pattern configuration file][1] for
-all details about using options in FreeSewing.
-
-[1]: /reference/api/config/options
+## Signature
 
 ```js
-import Brian from "@freesewing/brian";
+const settings = {
+  Object options={}
+}
+```
 
-const pattern = new Brian({
+## Example
+
+```js
+import { Aaron } from "@freesewing/aaron"
+
+const pattern = new Aaron({
   options: {
-    chestEase: 120
+    chestEase: 0.065,
+    necklineDrop: 0.17,
   }
 })
 ```
 
-<Note>Unlike measurements, options come with defaults.</Note>
+## Notes
+
+Unlike measurements, options come with defaults.
+
+The available options are listed in the part configuration.
+Refer to the [the options section in the part configuration][1] for
+all details about using options in FreeSewing.
+
+[1]: /reference/api/part/config/options
+

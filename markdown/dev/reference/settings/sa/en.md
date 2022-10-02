@@ -2,24 +2,35 @@
 title: sa
 ---
 
-The `sa` setting controls the seam allowance. It expects a value in mm
-or `false` or `0` to disable seam allowance altogether.
+The `sa` setting controls the seam allowance. Either provide value in
+millimeter or set it to `false` or `0` to disable seam allowance altogether.
+
+## Signature
 
 ```js
-import Brian from "@freesewing/brian";
+const settings = {
+  Number|Boolean sa=false
+}
+```
 
-const pattern = new Brian({
+By default, the `sa` setting is `false` and seam allowance is no included.
+
+## Example
+
+```js
+import { Aaron } from "@freesewing/aaron"
+
+const pattern = new Aaron({
   sa: 10
 })
 ```
 
-<Note>
+## Notes
 
 This is ignored if [settings.complete](/reference/api/settings/complete) is `false`
 
 <Comment by="joost">
-Is it though?
-I suspect this is not clearly enforced and we should clarify that.
+This is not strictly enforced and left of to the designer, so different designs
+may behave differently with regards to including seam allowance when `complete` is
+set to `false`.
 </Comment>
-
-</Note>
