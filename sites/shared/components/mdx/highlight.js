@@ -1,5 +1,5 @@
 import CopyToClipboard from 'shared/components/copy-to-clipboard'
-import Dot from './dot.js'
+//import Dot from './dot.js'
 
 const names = {
   js: 'javascript',
@@ -16,7 +16,7 @@ const Highlight = (props) => {
   if (props.children?.props?.className) {
     language = props.children.props.className.split('-').pop()
   }
-  if (language === 'dot') return <Dot>{props.children}</Dot>
+  //if (language === 'dot') return <Dot>{props.children}</Dot>
 
   const preProps = {
     className: `language-${language} hljs text-base lg:text-lg whitespace-pre overflow-scroll pr-4`
