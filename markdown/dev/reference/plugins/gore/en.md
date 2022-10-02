@@ -1,5 +1,5 @@
 ---
-title: "@freesewing/plugin-gore"
+title: plugin-gore
 ---
 
 Published as [@freesewing/plugin-gore][1], this plugin provides [the gore

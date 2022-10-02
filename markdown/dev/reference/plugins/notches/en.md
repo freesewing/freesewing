@@ -1,5 +1,5 @@
 ---
-title: "@freesewing/plugin-notches"
+title: plugin-notches
 ---
 
 Published as [@freesewing/plugin-notches][1], this plugin provides the

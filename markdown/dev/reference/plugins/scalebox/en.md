@@ -1,5 +1,5 @@
 ---
-title: "@freesewing/plugin-scalebox"
+title: plugin-scalebox
 ---
 
 Published as [@freesewing/plugin-scalebox][1], this plugin provides the
