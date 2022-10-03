@@ -9,9 +9,8 @@ import Popout from 'shared/components/popout'
 import WebLink from 'shared/components/web-link'
 import Code from 'shared/components/code'
 import PageLink from 'shared/components/page-link'
-import Link from 'next/link'
 
-const HomePage = (props) => {
+const HomePage = () => {
   const app = useApp()
   return (
     <Page app={app} title="Welcome to FreeSewing.dev" layout={Layout}>
@@ -223,7 +222,7 @@ const HomePage = (props) => {
 
 export default HomePage
 
-export async function getStaticProps({ locale }) {
+export async function getStaticProps() {
   return {
     props: {
       ...(await serverSideTranslations('en')),

@@ -72,7 +72,7 @@ export default MdxPage
  *
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
-export async function getStaticProps({ params, locale }) {
+export async function getStaticProps({ params }) {
   const { mdx, intro, toc } = await mdxLoader('en', 'dev', params.mdxslug.join('/'), jargon)
 
   return {

@@ -11,9 +11,8 @@ const config = {
     externalDir: true,
   },
   i18n: i18nConfig.i18n,
-  pageExtensions: [ 'js', 'mjs' ],
-  webpack: (config, options) => {
-
+  pageExtensions: ['js', 'mjs'],
+  webpack: (config) => {
     // JSON support
     //config.module.rules.push({
     //  test: /\.json$/,
@@ -25,14 +24,12 @@ const config = {
     config.module.rules.push({
       test: /\.ya?ml$/,
       type: 'json',
-      use: 'yaml-loader'
+      use: 'yaml-loader',
     })
 
     // Suppress warnings about importing version from package.json
     // We'll deal with it in v3 of FreeSewing
-    config.ignoreWarnings = [
-      /only default export is available soon/
-    ]
+    config.ignoreWarnings = [/only default export is available soon/]
 
     // Aliases
     config.resolve.alias.shared = path.resolve('../shared/')
@@ -44,16 +41,22 @@ const config = {
     config.resolve.alias.pkgs = path.resolve('../../packages/')
 
     // Load designs from source, rather than compiled package
-    for (const design in designs) {
-      config.resolve.alias[`@freesewing/${design}$`] = path.resolve(`../../designs/${design}/src/index.mjs`)
+    for (const design of designs) {
+      config.resolve.alias[`@freesewing/${design}$`] = path.resolve(
+        `../../designs/${design}/src/index.mjs`
+      )
     }
     // Load plugins from source, rather than compiled package
-    for (const plugin in plugins) {
-      config.resolve.alias[`@freesewing/${plugin}$`] = path.resolve(`../../plugins/${plugin}/src/index.mjs`)
+    for (const plugin of plugins) {
+      config.resolve.alias[`@freesewing/${plugin}$`] = path.resolve(
+        `../../plugins/${plugin}/src/index.mjs`
+      )
     }
     // Load these from source, rather than compiled package
-    for (const pkg of ['core', 'i18n', 'models']) {
-      config.resolve.alias[`@freesewing/${pkg}$`] = path.resolve(`../../packages/${pkg}/src/index.mjs`)
+    for (const pkg of ['core', 'i18n', 'models', 'snapseries']) {
+      config.resolve.alias[`@freesewing/${pkg}$`] = path.resolve(
+        `../../packages/${pkg}/src/index.mjs`
+      )
     }
 
     if (!greeting) {
@@ -62,6 +65,7 @@ const config = {
     }
 
     return config
-  }
+  },
 }
+
 export default config
