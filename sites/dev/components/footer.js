@@ -5,6 +5,7 @@ import CcByLogo from 'shared/components/logos/cc-by.js'
 import { useTranslation } from 'next-i18next'
 import Ribbon from 'shared/components/ribbon.js'
 import Link from 'next/link'
+import { WordMark } from 'site/components/header.js'
 
 import DiscordIcon from 'shared/components/icons/discord.js'
 import FacebookIcon from 'shared/components/icons/facebook.js'
@@ -48,7 +49,7 @@ const translations = {
   ),
 }
 
-const icon = { className: 'w-20 h-20' }
+const icon = { className: 'w-12 h-12' }
 const social = {
   Discord: {
     icon: <DiscordIcon {...icon} />,
@@ -82,26 +83,26 @@ const Footer = ({ app }) => {
   return (
     <footer className="bg-neutral">
       <Ribbon loading={app.loading} theme={app.theme} />
-      <div className="px-8 py-20 2xl:py-40 flex flex-row gap-8 flex-wrap 2xl:flex-nowrap justify-around text-neutral-content">
+      <div className="grid grid-cols-4 py-12 2xl:py-20 text-neutral-content">
         {/* First col - CC & MIT */}
-        <div className="max-w-md mb-20 order-1 mt-20 2xl:mt-0">
+        <div className="mb-20 order-1 mt-20 2xl:mt-0 2xl:mb-0">
           <div className="max-w-md m-auto">
             <div>
-              <CreativeCommonsLogo className="w-80 m-auto" />
+              <CreativeCommonsLogo className="w-64 m-auto" />
             </div>
             <div className="flex flex-row gap-2 justify-center items-center mt-8">
-              <CcByLogo className="w-16" />
+              <CcByLogo className="w-12" />
               <p className="text-neutral-content text-right basis-3/4">{translations.cc}</p>
             </div>
             <div className="flex flex-row gap-2 justify-center items-center mt-4">
-              <OsiLogo className="w-16" />
+              <OsiLogo className="w-12" />
               <p className="text-neutral-content text-right basis-3/4">{translations.mit}</p>
             </div>
           </div>
         </div>
 
         {/* Second col - Social & Sponsors */}
-        <div className="w-full 2xl:w-fit -order-2 2xl:order-2">
+        <div className="col-span-2 -order-2 2xl:order-2">
           {/* Social icons */}
           <div className="w-full sm:w-auto flex flex-row flex-wrap gap-8 items-center justify-center">
             {Object.keys(social).map((item) => (
@@ -118,39 +119,37 @@ const Footer = ({ app }) => {
               {translations.sponsors}
               <br />
             </p>
-            <div className="p-4 flex flex-row gap-4 xl:gap-8 flex-wrap justify-center items-center text-neutral-content shrink">
+            <div className="py-4 flex flex-row gap-8 flex-wrap 2xl:flex-nowrap justify-around text-neutral-content">
               <a title="Search powered by Algolia" href="https://www.algolia.com/">
-                <img src="/brands/algolia.svg" className="w-64" alt="Search powered by Algolia" />
+                <img src="/brands/algolia.svg" className="h-12" alt="Search powered by Algolia" />
               </a>
               <a title="Error handling by Bugsnag" href="https://www.bugsnag.com/">
-                <img src="/brands/bugsnag.svg" className="h-32" alt="Error handling by bugsnag" />
+                <img src="/brands/bugsnag.svg" className="h-12" alt="Error handling by bugsnag" />
               </a>
               <a title="Translation powered by Crowdin" href="https://www.crowdin.com/">
                 <img
                   src="/brands/crowdin.svg"
-                  className="w-64"
                   alt="Translation powered by Crowdin"
+                  className="h-12"
                 />
               </a>
               <a
                 title="Builds & hosting by Vercel"
                 href="https://www.vercel.com/?utm_source=freesewing&utm_campaign=oss"
               >
-                <img
-                  src="/brands/vercel.svg"
-                  className="w-64 shadow-lg shadow-white/20"
-                  alt="Builds & Hosting by Vercel"
-                />
+                <img src="/brands/vercel.svg" alt="Builds & Hosting by Vercel" className="h-12" />
               </a>
             </div>
           </div>
         </div>
 
         {/* Col 3 - Logo & Slogan */}
-        <div className="w-full 4xl:w-auto xl:max-w-md mb-20 text-center order-3 mt-20 2xl:mt-0">
+        <div className="w-full 4xl:w-auto xl:max-w-md mb-20 text-center order-3 mt-20 2xl:mt-0 2xl:mb-0">
           <div className="max-w-md m-auto">
             <Logo stroke="none" size={164} className="w-40 lg:w-64 m-auto m-auto" />
-            <h5 className="text-neutral-content lg:text-3xl mt-4">FreeSewing</h5>
+            <h5 className="lg:text-3xl mt-4">
+              <WordMark />
+            </h5>
             <p className="bold text-neutral-content text-normal lg:text-xl">
               {t('sloganCome')}
               <br />

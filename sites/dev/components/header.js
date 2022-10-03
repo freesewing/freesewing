@@ -7,7 +7,7 @@ import MenuIcon from 'shared/components/icons/menu.js'
 import SearchIcon from 'shared/components/icons/search.js'
 import Ribbon from 'shared/components/ribbon.js'
 
-const WordMark = () => (
+export const WordMark = () => (
   <Link href="/">
     <a
       role="button"
