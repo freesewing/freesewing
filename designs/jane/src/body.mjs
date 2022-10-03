@@ -1,4 +1,25 @@
-function draftJaneBody (part) {
+function draftJaneBody (part) 
+
+export const body = {
+    name: 'jane.body',
+    draft: draftJaneBody,
+    measurements: [
+      'chest', 
+      'hips', 
+      'hpsToWaistBack',
+      'waistToKnee', 
+      'shoulderToShoulder', 
+      'neck',     
+      'hpsToBust', 
+      'waistToFloor'],
+    options: {
+        bodyEase: {pct: 21, min: 21, max: 50},
+        neckDepthFront: {pct: 31, min: 25, max: 50},
+        neckDepthBack: {pct: 18, min: 15, max: 50},
+        neckWidth: {pct: 71, min: 65, max: 85},
+        shiftLength: {pct:2, min: 0, max: 20}},
+  }
+{
   let {
     options,
     Point,
@@ -191,16 +212,3 @@ function draftJaneBody (part) {
   return part
 }
 
-export const body = {
-  name: 'jane.body',
-  draft: draftJaneBody,
-  measurements: [
-    'chest', 
-    'hips', 
-    'hpsToWaistBack',
-    'waistToKnee', 
-    'shoulderToShoulder', 
-    'neck',     
-    'hpsToBust', 
-    'waistToFloor'],
-}

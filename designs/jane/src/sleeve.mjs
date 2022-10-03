@@ -1,4 +1,19 @@
-function draftJaneSleeve (part) {
+function draftJaneSleeve (part)
+
+export const sleeve = {
+  name: 'jane.sleeve',
+  draft: draftJaneSleeve, 
+  measurements:[
+  'biceps', 
+  'shoulderToElbow'],
+  options:{
+  bicepsEase: {pct: 18, min: 18, max: 51},
+  sleeveBonus: {pct: 80, min: 60, max: 100},
+  }
+
+}
+
+{
     let {
       options,
       Point,
@@ -76,11 +91,4 @@ paths.sleeve = new Path()
   return part
 }
 
-export const sleeve = {
-  name: 'jane.sleeve',
-  draft: draftJaneSleeve, 
-  measurements:[
-  'biceps', 
-  'shoulderToElbow'],
 
-}

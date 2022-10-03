@@ -74,4 +74,7 @@ export const gusset = {
   measurements:[
     'biceps', 
     'shoulderToElbow'],
+  options:{
+    gussetSize: {pct:44, min: 44, max: 50},
+      }
 }
