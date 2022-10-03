@@ -7,14 +7,15 @@ let config = configBuilder('dev')
 config.i18n = i18nConfig.i18n
 
 // Say hi
-console.log(banner+"\n")
+console.log(banner + '\n')
 
 config.eslint = {
   // Ignore linter for now
-  ignoreDuringBuilds: true
+  ignoreDuringBuilds: true,
 }
 
-config = withBundleAnalyzer(config)(config)
-console.log(config)
+// To run the bundle analyzer, run:
+// ANALYZE=true yarn build
+if (process.env.ANALYZE) config = withBundleAnalyzer(config)(config)
 
 export default config
