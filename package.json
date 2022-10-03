@@ -55,8 +55,7 @@
   "prettier": "@freesewing/prettier-config",
   "lint-staged": {
     "*": [
-      "npx prettier --write",
-      "npx eslint"
+      "npx prettier --write"
     ]
   },
   "devDependencies": {
