@@ -5,7 +5,7 @@ import { useTranslation } from 'next-i18next'
 import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
-const ThemePicker = ({ app, className, iconOnly=false }) => {
+const ThemePicker = ({ app, className, iconOnly = false }) => {
   const { t } = useTranslation(['themes', 'common'])
 
   return (
@@ -13,10 +13,10 @@ const ThemePicker = ({ app, className, iconOnly=false }) => {
       {() => (
         <>
           <Popover.Button
-            className={`group inline-flex items-center px-3 py-2 text-base font-medium text-neural-content hover:bg-neutral-focus rounded-lg px-4`}
+            className={`group inline-flex items-center px-3 py-2 text-base font-medium text-neural-content rounded-lg px-4 hover:text-secondary-focus`}
           >
             <ThemeIcon />
-            <span className="ml-4 font-bold text-lg capitalize">{t(`common:theme`)}</span>
+            {!iconOnly && <span className="ml-4 font-medium capitalize">{t(`common:theme`)}</span>}
             <ChevronDownIcon className={`ml-2 h-5 w-5`} aria-hidden="true" />
           </Popover.Button>
           <Transition
@@ -31,7 +31,7 @@ const ThemePicker = ({ app, className, iconOnly=false }) => {
             <Popover.Panel className="absolute z-10 mt-3 w-screen max-w-sm transform px-4 sm:px-0 lg:max-w-xl right-0">
               <div className="overflow-hidden rounded-lg shadow-lg">
                 <div className="relative grid gap-8 bg-base-100 p-7 lg:grid-cols-1">
-                  {Object.keys(themes).map(theme => (
+                  {Object.keys(themes).map((theme) => (
                     <button
                       key={theme}
                       onClick={() => app.setTheme(theme)}
@@ -39,7 +39,9 @@ const ThemePicker = ({ app, className, iconOnly=false }) => {
                       className="-m-3 flex rounded-lg p-2 transition duration-150 ease-in-out-50 hover:translate-x-2 hover:cursor-pointer"
                     >
                       <div className="ml-4">
-                        <p className="text-lg font-medium text-base text-left">{t(`${theme}Theme`)}</p>
+                        <p className="text-lg font-medium text-base text-left">
+                          {t(`${theme}Theme`)}
+                        </p>
                         <p className="text-base left -mt-4">
                           {t('common:sloganCome')}
                           <span className="px-2">|</span>

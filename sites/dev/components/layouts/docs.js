@@ -10,18 +10,16 @@ const DefaultLayout = ({ app, title = false, crumbs = false, children = [] }) =>
   const breadcrumbs = crumbs ? crumbs : getCrumbs(app, slug, title)
 
   return (
-    <div className="m-auto flex flex-row justify-center">
+    <div className="grid grid-cols-4 m-auto justify-center place-items-stretch">
       <Aside app={app} slug={slug} />
-      <section className="py-28 md:py-36 max-w-7xl px-6 xl:pl-8 2xl:pl-16">
-        <div>
-          {title && (
-            <>
-              <Breadcrumbs title={title} crumbs={breadcrumbs} />
-              <h1>{title}</h1>
-            </>
-          )}
-          {children}
-        </div>
+      <section className="col-span-4 lg:col-span-3 py-24 px-4 lg:pl-8 bg-base-50">
+        {title && (
+          <div className="xl:pl-4">
+            <Breadcrumbs title={title} crumbs={breadcrumbs} />
+            <h1>{title}</h1>
+          </div>
+        )}
+        {children}
       </section>
     </div>
   )

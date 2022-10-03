@@ -42,9 +42,9 @@ const HomePage = (props) => {
           backgroundSize: 'cover',
           backgroundPosition: '40% 50%',
         }}
-        className="m-0 p-0 shadow drop-shadow-lg w-full mb-8"
+        className="m-0 p-0 shadow drop-shadow-lg w-full h-screen"
       >
-        <div className="mx-auto px-8 flex flex-col items-center justify-center min-h-screen lg:min-h-0 lg:py-96">
+        <div className="mx-auto px-8 flex flex-col items-center justify-center lg:min-h-0 lg:py-64">
           <div className="flex flex-col items-end max-w-4xl">
             <h1
               className={`
@@ -64,20 +64,23 @@ const HomePage = (props) => {
                   text-right text-2xl mr-0
                   sm:text-3xl
                   md:text-4xl
-                  lg:max-w-1/2 lg:text-4xl xl:pr-0 `}
+                  xl:pr-0 border-0`}
               style={{ textShadow: '1px 1px 3px #000', color: 'white' }}
             >
-              Documentation for FreeSewing contributors & developers
+              Documentation for contributors & developers
             </h2>
           </div>
           <Icons
             app={app}
             active="/"
-            ulClasses="flex flex-row flex-wrap mt-8 justify-around w-full max-w-6xl"
-            liClasses="text-neutral-content w-1/3 my-4 lg:mx-2 lg:w-24"
+            ulClasses="grid grid-cols-4 gap-2 lg:gap-8 mt-8 max-w-6xl"
+            liClasses=""
             linkClasses={`
-                text-lg lg:text-xl py-1 text-secondary
-                hover:text-secondary sm:hover:text-secondary-focus hover:cursor-pointer
+                bg-neutral bg-opacity-80 py-4 px-8 lg:px-12 rounded-lg
+                border-4 border-secondary
+                hover:bg-secondary hover:text-base-100
+                text-lg lg:text-2xl text-secondary-content
+                hover:text-secondary-focus hover:cursor-pointer
                 flex flex-col items-center capitalize`}
           />
           <p className="text-neutral-content text-center mt-8">

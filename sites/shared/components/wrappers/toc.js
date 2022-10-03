@@ -9,11 +9,7 @@ import { useState, useEffect, Fragment } from 'react'
 import { run } from '@mdx-js/mdx'
 import * as runtime from 'react/jsx-runtime.js'
 
-// Components that are available in all MDX
-import customComponents from 'shared/components/mdx'
-
-const TocWrapper = ({toc, app}) => {
-
+const TocWrapper = ({ toc, app }) => {
   const [mdxModule, setMdxModule] = useState()
 
   useEffect(() => {
@@ -24,19 +20,20 @@ const TocWrapper = ({toc, app}) => {
 
   // React component for MDX content
   const MdxContent = mdxModule ? mdxModule.default : Fragment
+  // Don't render an empty toc
+  const children = typeof MdxContent === 'function' ? MdxContent().props.children : false
 
-  return (
-    <div className={`
+  return children ? (
+    <div
+      className={`
       mdx mdx-toc text-base-content text-lg lg:text-xl
       sticky top-8 max-h-screen overflow-y-auto
-      max-w-prose
-      md:border-l-4 md:pl-4 md:mb-8 md:border-base-200
+      border-2 bg-base-200 bg-opacity-30 p-4 rounded-lg border-base-200
     `}
     >
-      {mdxModule && <MdxContent components={customComponents(app)}/>}
+      {mdxModule && <MdxContent components={{}} />}
     </div>
-  )
+  ) : null
 }
 
 export default TocWrapper
-

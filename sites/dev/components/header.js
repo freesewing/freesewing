@@ -7,6 +7,26 @@ import MenuIcon from 'shared/components/icons/menu.js'
 import SearchIcon from 'shared/components/icons/search.js'
 import Ribbon from 'shared/components/ribbon.js'
 
+const WordMark = () => (
+  <Link href="/">
+    <a
+      role="button"
+      className="btn btn-ghost btn-sm normal-case text-2xl hover:bg-transparent font-bold"
+    >
+      <span className="text-red-400">F</span>
+      <span className="text-orange-400">r</span>
+      <span className="text-yellow-400">e</span>
+      <span className="text-lime-400">e</span>
+      <span className="text-green-400">S</span>
+      <span className="text-cyan-400">e</span>
+      <span className="text-blue-400">w</span>
+      <span className="text-indigo-400">i</span>
+      <span className="text-violet-400">n</span>
+      <span className="text-purple-400">g</span>
+    </a>
+  </Link>
+)
+
 const Right = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -61,85 +81,55 @@ const Header = ({ app, setSearch }) => {
   return (
     <header
       className={`
-        fixed top-0 left-0
-        bg-neutral
-        w-full
-        z-30
-        transition-transform
-        ${show ? '' : 'fixed top-0 left-0 -translate-y-20'}
-        drop-shadow-xl
-      `}
+      fixed top-0 left-0
+      bg-neutral
+      w-full
+      z-30
+      transition-transform
+      ${show ? '' : 'fixed top-0 left-0 -translate-y-20'}
+      drop-shadow-xl
+    `}
     >
-      <div className="max-w-6xl m-auto">
+      <div>
         <div className="p-2 flex flex-row gap-2 justify-between text-neutral-content">
-          <button
-            className={`
-                btn btn-sm
-                text-neutral-content bg-transparent
-                border border-transparent
-                hover:bg-transparent hover:border-base-100
-                md:hidden
-                h-12
-              `}
-            onClick={app.togglePrimaryMenu}
-          >
-            {app.primaryMenu ? (
-              <>
-                <CloseIcon />
-                <span className="opacity-50 pl-2 flex flex-row items-center gap-1">
-                  <Left />
-                  swipe
-                </span>
-              </>
-            ) : (
-              <>
-                <MenuIcon />
-                <span className="opacity-50 pl-2 flex flex-row items-center gap-1">
-                  <Right />
-                  swipe
-                </span>
-              </>
-            )}
-          </button>
-          <div className="flex flex-row items-center md:hidden pr-4">
-            <button onClick={() => setSearch(true)} className="btn btn-sm">
+          <div className="flex flex-row items-center">
+            <button
+              className={`
+                  btn btn-sm btn-ghost
+                  text-neutral-content bg-transparent
+                  hover:text-secondary-focus
+                  lg:hidden
+                `}
+              onClick={app.togglePrimaryMenu}
+            >
+              {app.primaryMenu ? <CloseIcon /> : <MenuIcon />}
+            </button>
+            <WordMark />
+          </div>
+          <div className="flex flex-row items-center lg:hidden pr-4">
+            <button
+              onClick={() => setSearch(true)}
+              className="btn btn-sm btn-ghost hover:text-secondary-focus"
+            >
               <SearchIcon />
             </button>
             <ThemePicker app={app} iconOnly />
           </div>
-          <button
-            className={`
-              btn btn-sm h-12
-              hidden md:flex
-              flex-row gap-1 mr-4 w-64 px-2
-              bg-base-100 text-base-content
-              hover:bg-base-100 hover:text-base-content
-              justify-between
-            `}
-            onClick={() => setSearch(true)}
-          >
-            <div className="flex flex-row items-center gap-2">
+          <div className="hidden lg:flex flex-row items-center">
+            <button
+              className={`
+                btn btn-ghost btn-sm h-12
+                hidden lg:flex
+                flex-row gap-4
+                justify-between
+                hover:text-secondary-focus
+                hover:bg-transparent
+              `}
+              onClick={() => setSearch(true)}
+            >
               <SearchIcon />
-              <span className="normal-case font-normal">Quick Search...</span>
-            </div>
-            <span className="normal-case">Ctrl K</span>
-          </button>
-          <div className="hidden md:flex md:flex-row gap-2">
-            <Link href="/">
-              <a className="flex flex-column items-center">
-                <FreeSewingIcon className="h-10 w-10" />
-              </a>
-            </Link>
-            <Link href="/">
-              <a
-                role="button"
-                className="btn btn-link btn-sm text-neutral-content h-12 font-normal lowercase text-2xl"
-              >
-                <span className="font-black px-1 normal-case">FreeSewing</span>.dev
-              </a>
-            </Link>
-          </div>
-          <div className="hidden md:flex flex-row items-center">
+              <span className="normal-case text-base font-medium">Ctrl K</span>
+            </button>
             <ThemePicker app={app} />
           </div>
         </div>
