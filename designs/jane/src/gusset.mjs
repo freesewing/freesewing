@@ -1,5 +1,18 @@
 
-function draftJaneGusset (part) {
+function draftJaneGusset (part)
+
+export const gusset = {
+  name: 'jane.gusset',
+  draft: draftJaneGusset,
+  measurements:[
+    'biceps', 
+    'shoulderToElbow'],
+  options:{
+    gussetSize: {pct:44, min: 44, max: 50},
+      }
+}
+
+{
     let {
       options,
       Point,
@@ -68,13 +81,3 @@ macro("title", {
   return part
 }
 
-export const gusset = {
-  name: 'jane.gusset',
-  draft: draftJaneGusset,
-  measurements:[
-    'biceps', 
-    'shoulderToElbow'],
-  options:{
-    gussetSize: {pct:44, min: 44, max: 50},
-      }
-}
