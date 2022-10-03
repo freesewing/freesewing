@@ -1,4 +1,4 @@
-export default function (part) {
+function draftJaneSleeve (part) {
     let {
       options,
       Point,
@@ -74,4 +74,9 @@ paths.sleeve = new Path()
   }
 
   return part
+}
+
+export const sleeve = {
+  name: 'jane.sleeve',
+  draft: draftJaneSleeve
 }

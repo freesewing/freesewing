@@ -1,5 +1,5 @@
 
-export default function (part) {
+function draftJaneGusset (part) {
     let {
       options,
       Point,
@@ -66,4 +66,9 @@ macro("title", {
   }
 
   return part
+}
+
+export const gusset = {
+  name: 'jane.gusset',
+  draft: draftJaneGusset
 }

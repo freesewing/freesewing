@@ -1,4 +1,4 @@
-export default function (part) {
+function draftJaneBody (part) {
   let {
     options,
     Point,
@@ -189,4 +189,9 @@ export default function (part) {
 
 
   return part
+}
+
+export const body = {
+  name: 'jane.body',
+  draft: draftJaneBody
 }
