@@ -3,7 +3,6 @@ import Highlight from './highlight.js'
 import YouTube from './youtube.js'
 import Figure from './figure.js'
 import ReadMore from './read-more.js'
-//import Dot from './dot.js'
 import { Tab, Tabs } from './tabs.js'
 import Example from './example/index.js'
 
@@ -20,7 +19,6 @@ const mdxCustomComponents = (app = false) => ({
   YouTube,
   pre: (props) => <Highlight {...props} />,
   img: Figure,
-  //Dot,
   table: (props) => (
     <table {...props} className="mdx-table table-auto w-full">
       {props.children}
