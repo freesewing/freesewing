@@ -193,5 +193,14 @@ function draftJaneBody (part) {
 
 export const body = {
   name: 'jane.body',
-  draft: draftJaneBody
+  draft: draftJaneBody,
+  measurements: [
+    'chest', 
+    'hips', 
+    'hpsToWaistBack',
+    'waistToKnee', 
+    'shoulderToShoulder', 
+    'neck',     
+    'hpsToBust', 
+    'waistToFloor'],
 }

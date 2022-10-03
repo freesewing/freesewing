@@ -70,5 +70,8 @@ macro("title", {
 
 export const gusset = {
   name: 'jane.gusset',
-  draft: draftJaneGusset
+  draft: draftJaneGusset,
+  measurements:[
+    'biceps', 
+    'shoulderToElbow'],
 }

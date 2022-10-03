@@ -78,5 +78,9 @@ paths.sleeve = new Path()
 
 export const sleeve = {
   name: 'jane.sleeve',
-  draft: draftJaneSleeve
+  draft: draftJaneSleeve, 
+  measurements:[
+  'biceps', 
+  'shoulderToElbow'],
+
 }
