@@ -97,7 +97,8 @@ export const front = {
     */
     let apronWidth = measurements.waist * (1 - options.backOpening)
     let strapWidth = (measurements.hpsToWaistBack * options.strapWidth) / 8
-    let hemWidth = 3 * sa
+    let hemWidth = strapWidth
+    let sideHemWidth = Math.max(sa, hemWidth / 4)
     let pocketSize = apronLength / 4
 
     points.topLeft = new Point(0, 0)
@@ -152,7 +153,7 @@ export const front = {
       .attr('data-text', 'pocket')
       .attr('data-text-class', 'text-xs center')
 
-    paths.right = paths.rightHem.offset(sa)
+    paths.right = paths.rightHem.offset(sideHemWidth)
 
     paths.seam = new Path()
       .move(points.bottomLeft)
