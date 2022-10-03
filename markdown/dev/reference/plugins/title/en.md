@@ -1,36 +1,25 @@
 ---
-title: "@freesewing/plugin-title"
+title: plugin-title
 ---
 
-The **@freesewing/plugin-title** plugin provides [the
-title macro](/reference/api/macros/title/) which facilitates adding part titles
-to your designs.
-
-<Example part="plugin_title">An example of the title macro</Example>
-
-<Tip>
-
-The title plugin is part of our [plugin-bundle](/reference/plugins/bundle)
-
-</Tip>
+Published as [@freesewing/plugin-title][1], this plugin provides [the title
+macro](/reference/api/macros/title) which facilitates adding part titles to
+your designs.
 
 ## Installation
 
-```bash
+```sh
 npm install @freesewing/plugin-title
 ```
 
 ## Usage
 
-Like all [build-time plugins](/guides/plugins/types-of-plugins#build-time-plugins), you
-load them by passing them to the [freesewing.Design](/reference/api/design) super-constructor:
+Either [add it as a part plugins](/reference/api/part/config/plugins) in your
+design, or [add it to a pattern instance with
+Pattern.use()](/reference/api/pattern/use).
 
-```js
-import freesewing from "@freesewing/core";
-import title from "@freesewing/plugin-title";
-import config from "../config";
+## Notes
 
-const Pattern = new freesewing.Design(config, title);
-```
+The title plugin is part of our [plugin-bundle](/reference/plugins/bundle)
 
-Now you can use the [title](/reference/api/macros/title/) macro in your parts.
+[1]: https://www.npmjs.com/package/@freesewing/plugin-title

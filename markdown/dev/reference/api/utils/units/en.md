@@ -1,18 +1,19 @@
 ---
-title: units()
+title: utils.units()
 ---
+
+The `utils.units()` function converts the units `value` you pass it into a
+formatted string for the `format` you pass it.
+
+## Signature
 
 ```js
 string utils.units(float value, string format = 'metric')
 ```
 
-Converts the units `value` you pass it into a formatted string for the `format` you pass it.
-
 Format must be either `imperial` or `metric` (the default).
 
-<Tip>
+## Notes
 
-The [Part.shorthand](/reference/api/part/shorthand/) call provides a context-aware
-`unit()` method that will call this method and pass it the units requested by the user.
-
-</Tip>
+A [part's `draft()` function](/reference/api/part/draft) receives a context-aware
+`unit()` function that will call this function and pass it the units requested by the user.

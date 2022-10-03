@@ -1,36 +1,26 @@
 ---
-title: "@freesewing/plugin-grainline"
+title: plugin-grainline
 ---
 
-The **@freesewing/plugin-grainline** plugin provides [the grainline
-macro](/reference/macros/grainline/) which adds a _grainline_ indicator
-to your design.
-
-<Example part="plugin_grainline">An example of the grainline macro</Example>
-
-<Tip>
-
-The grainline plugin is part of our [plugin-bundle](/reference/plugins/bundle)
-
-</Tip>
+Published as [@freesewing/plugin-grainline][1], this plugin provides [the
+grainline macro](/reference/api/macros/grainline) which adds a _grainline_
+indicator to your design.
 
 ## Installation
 
-```bash
+```sh
 npm install @freesewing/plugin-grainline
 ```
 
 ## Usage
 
-Like all [build-time plugins](/guides/plugins/types-of-plugins#build-time-plugins), you
-load them by passing them to the [freesewing.Design](/reference/api/design) super-constructor:
+Either [add it as a part plugins](/reference/api/part/config/plugins) in your
+design, or [add it to a pattern instance with
+Pattern.use()](/reference/api/pattern/use).
 
-```js
-import freesewing from "@freesewing/core";
-import grainline from "@freesewing/plugin-grainline";
-import config from "../config";
+## Notes
 
-const Pattern = new freesewing.Design(config, grainline);
-```
+The grainline plugin is part of our [plugin-bundle](/reference/plugins/bundle)
 
-Now you can use [the grainline macro](/reference/api/macros/grainline) in your parts.
+[1]: https://www.npmjs.com/package/@freesewing/plugin-grainline
+

@@ -1,37 +1,26 @@
 ---
-title: "@freesewing/plugin-sprinkle"
+title: plugin-sprinkle
 ---
 
-The **@freesewing/plugin-sprinkle** plugin provides [the
-sprinkle macro](/reference/api/macros/sprinkle/) which is a faster way
-to add several of the same snippets to your designs (think of it as
-_sprinkling_ them onto your parts).
-
-<Example part="plugin_sprinkle">An example of the sprinkle macro</Example>
-
-<Tip>
-
-The sprinkle plugin is part of our [plugin-bundle](/reference/plugins/bundle)
-
-</Tip>
+Published as [@freesewing/plugin-sprinkle][1], this plugin provides [the
+sprinkle macro](/reference/api/macros/sprinkle) which is a faster way to add
+several of the same snippets to your designs (think of it as _sprinkling_ them
+onto your design).
 
 ## Installation
 
-```bash
+```sh
 npm install @freesewing/plugin-sprinkle
 ```
 
 ## Usage
 
-Like all [build-time plugins](/guides/plugins/types-of-plugins#build-time-plugins), you
-load them by passing them to the [freesewing.Design](/reference/api/design) super-constructor:
+Either [add it as a part plugins](/reference/api/part/config/plugins) in your
+design, or [add it to a pattern instance with
+Pattern.use()](/reference/api/pattern/use).
 
-```js
-import freesewing from "@freesewing/core";
-import sprinkle from "@freesewing/plugin-sprinkle";
-import config from "../config";
+## Notes
 
-const Pattern = new freesewing.Design(config, sprinkle);
-```
+The sprinkle plugin is part of our [plugin-bundle](/reference/plugins/bundle)
 
-Now you can use the [sprinkle](/reference/api/macros/sprinkle) macro in your parts.
+[1]: https://www.npmjs.com/package/@freesewing/plugin-sprinkle

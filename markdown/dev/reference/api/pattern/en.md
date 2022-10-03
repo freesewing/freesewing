@@ -67,6 +67,13 @@ It just so happens that in most cases, there will be only one settings object in
 
 </Note>
 
+## Pattern attributes
+
+- `Pattern.designConfig`: Holds the design's configuration
+- `Pattern.patternConfig`: Holds the pattern's configuration
+- `Pattern.store`: Holds the pattern-wide Store
+- `Pattern.setStores`: Holds an array of stores, one for each set of settings.
+
 ## Pattern methods
 
 <ReadMore list />

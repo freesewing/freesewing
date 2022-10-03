@@ -1,5 +1,5 @@
 ---
-title: "@freesewing/core API"
+title: Core API
 ---
 
 This is the documentation for FreeSewing's core library, published as `@freesewing/core` on NPM.

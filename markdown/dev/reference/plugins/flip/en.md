@@ -1,30 +1,23 @@
 ---
-title: "@freesewing/plugin-flip"
+title: plugin-flip
 ---
 
-The **@freesewing/plugin-flip** plugin provides [the flip
-macro](/reference/apis/macros/flip/) which flips (mirrors)
-an entire part vertically around the Y-axis.
-It's typically used to create a right and left pattern part from
-the same basis.
+Published as [@freesewing/plugin-flip][1], this plugin provides [the flip
+macro](/reference/api/macros/flip) which flips (mirrors) an entire part
+vertically around the Y-axis.  It's typically used to create a right and left
+pattern part from the same basis.
 
 ## Installation
 
-```bash
+```sh
 npm install @freesewing/plugin-flip
 ```
 
 ## Usage
 
-Like all [build-time plugins](/guides/plugins/types-of-plugins#build-time-plugins), you
-load them by passing them to the [freesewing.Design](/reference/api/design) super-constructor:
+Either [add it as a part plugins](/reference/api/part/config/plugins) in your
+design, or [add it to a pattern instance with
+Pattern.use()](/reference/api/pattern/use).
 
-```js
-import freesewing from "@freesewing/core";
-import flip from "@freesewing/plugin-flip";
-import config from "../config";
+[1]: https://www.npmjs.com/package/@freesewing/plugin-flip
 
-const Pattern = new freesewing.Design(config, flip);
-```
-
-Now you can use [the flip macro](/reference/api/macros/flip) in your parts.

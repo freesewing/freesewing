@@ -1,9 +1,11 @@
 ---
-title: layout
+title: Svg.layout
 ---
 
-An object that holds rendered SVG for all parts, and a list of their transforms.
-It is structured as follows:
+The `Svg.layout` property holds an object that holds rendered SVG for all
+parts, and a list of their transforms.
+
+## Signature
 
 ```js
 {

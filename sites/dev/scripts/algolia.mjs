@@ -22,7 +22,6 @@ import remarkRehype from 'remark-rehype'
 import rehypeSanitize from 'rehype-sanitize'
 import rehypeStringify from 'rehype-stringify'
 import yaml from 'yaml'
-import { getPosts } from '../../shared/prebuild/strapi.mjs'
 import { getMdxFileList } from '../../shared/prebuild/mdx.mjs'
 import config from '../algolia.config.mjs'
 dotenv.config()
@@ -30,70 +29,13 @@ dotenv.config()
 /*
  * Initialize Algolia client
  */
-const client = algoliasearch(
-  config.algolia.app,
-  process.env.ALGOLIA_API_WRITE_KEY
-)
+const client = algoliasearch(config.algolia.app, process.env.ALGOLIA_API_WRITE_KEY)
 const index = client.initIndex(config.algolia.index)
-
-/*
- * Turn a Strapi blog post into an object ready for indexing
- */
-const transformBlogpost = post => ({
-  objectID: `/blog/${post.slug}`,
-  page: `/blog/${post.slug}`,
-  title: post.title,
-  date: post.date,
-  slug: post.slug,
-  body: post.body,
-  author: post.author,
-  caption: post.caption,
-  type: 'blog',
-})
-
-/*
- * Turn a Strapi author into an object ready for indexing
- */
-const transformAuthor = author => ({
-  objectID: `/blog/authors/${author.name}`,
-  page: `/blog/authors/${author.name}`,
-  name: author.name,
-  displayname: author.displayname,
-  about: author.about,
-})
-
-/*
- * Get and index blog posts and author info from Strapi
- */
-const indexStrapiContent = async () => {
-
-  // Say hi
-  console.log(`🗂️  Indexing Strapi content to Algolia`)
-
-  const authors = {}
-  const rawPosts = await getPosts('blog', 'dev', 'en')
-  // Extract list of authors
-  for (const [slug, post] of Object.entries(rawPosts)) {
-    authors[post.author.slug] = transformAuthor(post.author)
-    rawPosts[slug].author = post.author.slug
-  }
-  // Index posts to Algolia
-  index
-    .saveObjects(Object.values(rawPosts).map(post => transformBlogpost(post)))
-    .then(({ objectIDs }) => null)
-    .catch(err => console.log(err))
-  // Index authors to Algolia
-  index
-    .saveObjects(Object.values(authors))
-    .then(({ objectIDs }) => null)
-    .catch(err => console.log(err))
-}
 
 /*
  * Loads markdown from disk and compiles it into HTML for indexing
  */
-const markdownLoader = async file => {
-
+const markdownLoader = async (file) => {
   const md = await fs.promises.readFile(file, 'utf-8')
 
   const page = await unified()
@@ -124,12 +66,10 @@ const clearIndex = async () => {
   await index.clearObjects()
 }
 
-
 /*
  * Get and index markdown content
  */
 const indexMarkdownContent = async () => {
-
   // Say hi
   console.log(`🗂️  Indexing Markdown content to Algolia`)
 
@@ -145,19 +85,15 @@ const indexMarkdownContent = async () => {
   await index.clearObjects()
   await index
     .saveObjects(pages)
-    .then(({ objectIDs }) => null)
-    .catch(err => console.log(err))
+    .then(() => null)
+    .catch((err) => console.log(err))
 }
 
 const run = async () => {
-  if (
-    process.env.VERCEL_ENV === 'production' ||
-    process.env.FORCE_ALGOLIA
-  ) {
+  if (process.env.VERCEL_ENV === 'production' || process.env.FORCE_ALGOLIA) {
     console.log()
     await clearIndex()
     await indexMarkdownContent()
-    await indexStrapiContent()
     console.log()
   } else {
     console.log()
@@ -168,4 +104,3 @@ const run = async () => {
 }
 
 run()
-
