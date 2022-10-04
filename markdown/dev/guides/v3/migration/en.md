@@ -3,18 +3,19 @@ title: V3 migration guide
 ---
 
 This guide covers the migration from FreeSewing version 2 (v2) to FreeSewing
-version 3 (v3).  It is intended for pattern designers and developers using our
+version 3 (v3). It is intended for pattern designers and developers using our
 core library. But it is also a good source of information for anybody who wants
 to learn more about what's changed between v2 and v3 of FreeSewing.
 
-The focus on this guide is on our core library, our designs, our monorepo, and other topics of interest to developers.
-It does not cover any changes to our website(s) or other more user-facing aspects.
+The focus on this guide is on our core library, our designs, our monorepo, and
+other topics of interest to developers.  It does not cover any changes to our
+website(s) or other more user-facing aspects.
 
 <Fixme compact>This guide is a work in process</Fixme>
 
 ## Breaking changes
 
-### EMS only
+### ESM only
 
 FreeSewing is now ESM only. We no longer publish CJS modules.
 
@@ -22,36 +23,37 @@ To make this explicit, we now use `.mjs` as file extention for our source code.
 
 ### Named exports only
 
-All our published packages now have only named exports, and no longer any default exports.
+All our published packages now have only named exports, and no longer any
+default exports.
 
-Please refer to [the reference documentation](/reference/api/core) to see what named exports are available.
+Please refer to [the reference documentation](/reference/api/core) to see what
+named exports are available.
 
 ### NodeJS 16 or more recent
 
 FreeSewing now requires NodeJS version 16 or more recent.
 
-<Note compact>This does not apply if you're using FreeSewing exclusively in the browser.</Note>
-
 ### Removed packages
 
 The following packages have been removed in v3:
 
-- @freesewing/pattern-info
-- gatsby-remark-jargon: We no longer use gatsby
-- remark-jargon: Use rehype-jargon instead
-- @freesewing/mui-theme: We no longer use Material-UI
-- @freesewing/css-theme: We now use TailwindCSS
-- @freesewing/components: These were depending on Material-UI and we no longer use it
-- @freesewing/utils: We no longer use these, or they are included elsewhere
-- @freesewing/plugin-export-dxf: DXF is kinda garbage, you deserve better
-- @freesewing/plugin-validate
+- **@freesewing/pattern-info**
+- **gatsby-remark-jargon**: We no longer use gatsby
+- **remark-jargon**: Use rehype-jargon instead
+- **@freesewing/mui-theme**: We no longer use Material-UI
+- **@freesewing/css-theme**: We now use TailwindCSS
+- **@freesewing/components**: These were depending on Material-UI and we no longer use it
+- **@freesewing/utils**: We no longer use these, or they are included elsewhere
+- **@freesewing/plugin-export-dxf**: DXF is kinda garbage, you deserve better
+- **@freesewing/plugin-validate**
 
 ## Migrating designs
 
 ### Design configuration
 
-In v2, a design had its own confifuration which contained all the info about the design.
-In v3, all of that is migrated to the part level. A design is now merely a container of parts, but also allows you to pass in additional data:
+In v2, a design had its own confifuration which contained all the info about
+the design.  In v3, all of that is migrated to the part level. A design is now
+merely a container of parts, but also allows you to pass in additional data:
 
 ```js
 import { Design } from '@freesewing/core' // Note: named export
@@ -68,10 +70,14 @@ export const MyDesign = new Design({
 })
 ```
 
-You pass the Design contructor a single object where the only required property is the `parts` key that holds an array of part objects.
-The `data` property is optional, and allows you to add data/information to the design that you can use to facilitate frontend integration or a host of other things. Anything under `data` will be made available in the pattern store.
+You pass the Design contructor a single object where the only required property
+is the `parts` key that holds an array of part objects.  The `data` property is
+optional, and allows you to add data/information to the design that you can use
+to facilitate frontend integration or a host of other things. Anything under
+`data` will be made available in the pattern store.
 
-Obviously, we still need to know what measurements the design requires, what plugins it uses, what options it offers, and so on.
+Obviously, we still need to know what measurements the design requires, what
+plugins it uses, what options it offers, and so on.
 
 All of that is now configured at the part level.
 
@@ -79,7 +85,8 @@ All of that is now configured at the part level.
 
 In v3 of FreeSewing __all__ configuration happens at the part level.
 
-Refer to [the part configuration docs](/reference/api/part/config) for details on configuring parts.
+Refer to [the part configuration docs](/reference/api/part/config) for details
+on configuring parts.
 
 Apart from being attached at the part level, changes in comparison to v2 include:
 
