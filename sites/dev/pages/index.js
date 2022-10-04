@@ -76,7 +76,8 @@ const HomePage = () => {
             liClasses=""
             linkClasses={`
                 bg-neutral bg-opacity-80 py-4 px-8 lg:px-12 rounded-lg
-                text-lg lg:text-2xl text-secondary-content
+                text-lg lg:text-2xl
+                text-secondary
                 hover:text-secondary-focus hover:cursor-pointer
                 flex flex-col items-center capitalize`}
           />
@@ -175,28 +176,30 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-7xl m-auto lg:my-32">
+        <div className="w-full m-auto lg:my-32">
           <div
-            className="bg-cover bg-neutral w-full bg-center shadow p-4 "
+            className="bg-cover bg-neutral w-full bg-center shadow p-4 py-12"
             style={{ backgroundImage: 'url(/support.jpg)' }}
           >
-            <h2 className="text-neutral-content p-4 text-4xl font-bold sm:font-light sm:text-6xl drop-shadow">
-              Support FreeSewing
-            </h2>
-            <p className="text-neutral-content p-4 font-bold max-w-md text-lg">
-              FreeSewing is fuelled by a voluntary subscription model
-            </p>
-            <p className="text-neutral-content p-4 font-bold max-w-md text-lg">
-              If you think what we do is worthwhile, and if you can spare a few coins each month
-              without hardship, please support our work
-            </p>
-            <a
-              role="button"
-              className="btn btn-accent btn-wide ml-4 mb-8"
-              href="https://freesewing.org/patrons/join"
-            >
-              Become a Patron
-            </a>
+            <div className="max-w-6xl m-auto">
+              <h2 className="text-neutral-content p-4 text-4xl font-bold sm:font-light sm:text-6xl drop-shadow">
+                Support FreeSewing
+              </h2>
+              <p className="text-neutral-content p-4 font-bold max-w-md text-lg">
+                FreeSewing is fuelled by a voluntary subscription model
+              </p>
+              <p className="text-neutral-content p-4 font-bold max-w-md text-lg">
+                If you think what we do is worthwhile, and if you can spare a few coins each month
+                without hardship, please support our work
+              </p>
+              <a
+                role="button"
+                className="btn btn-accent btn-wide ml-4 mb-8"
+                href="https://freesewing.org/patrons/join"
+              >
+                Become a Patron
+              </a>
+            </div>
           </div>
         </div>
         <div className="max-w-7xl m-auto my-8 lg:my-32">
