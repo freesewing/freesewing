@@ -1,131 +1,135 @@
-function draftJaneBody (part) 
-
 export const body = {
-    name: 'jane.body',
-    draft: draftJaneBody,
-    measurements: [
-      'chest', 
-      'hips', 
-      'hpsToWaistBack',
-      'waistToKnee', 
-      'shoulderToShoulder', 
-      'neck',     
-      'hpsToBust', 
-      'waistToFloor'],
-    options: {
-        bodyEase: {pct: 21, min: 21, max: 50},
-        neckDepthFront: {pct: 31, min: 25, max: 50},
-        neckDepthBack: {pct: 18, min: 15, max: 50},
-        neckWidth: {pct: 71, min: 65, max: 85},
-        shiftLength: {pct:2, min: 0, max: 20}},
-  }
-{
-  let {
-    options,
-    Point,
-    Path,
-    points,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    sa,
-    paperless,
-    macro,
-    measurements,
+  name: 'jane.body',
+  measurements: [
+    'chest',
+    'hips',
+    'hpsToWaistBack',
+    'waistToKnee',
+    'shoulderToShoulder',
+    'neck',
+    'hpsToBust',
+    'waistToFloor',
+  ],
+  options: {
+    bodyEase: { pct: 21, min: 21, max: 50 },
+    neckDepthFront: { pct: 31, min: 25, max: 50 },
+    neckDepthBack: { pct: 18, min: 15, max: 50 },
+    neckWidth: { pct: 71, min: 65, max: 85 },
+    shiftLength: { pct: 2, min: 0, max: 20 },
+  },
 
-  } = part.shorthand()
+  draft: function (shorthand) {
+    let {
+      options,
+      Point,
+      Path,
+      points,
+      paths,
+      Snippet,
+      snippets,
+      complete,
+      sa,
+      paperless,
+      macro,
+      measurements,
+    } = shorthand
 
-  //design pattern here
-  //body
-  const lengthBody = (measurements.waistToKnee + measurements.hpsToWaistBack) * (1 + options.shiftLength)
-          let workingHip 
-      if (measurements.chest > measurements.hips) workingHip = measurements.chest / 2
-      else workingHip = measurements.hips / 2
-    
+    //design pattern here
+    //body
+    const lengthBody =
+      (measurements.waistToKnee + measurements.hpsToWaistBack) * (1 + options.shiftLength)
+    let workingHip
+    if (measurements.chest > measurements.hips) workingHip = measurements.chest / 2
+    else workingHip = measurements.hips / 2
+
     const widthBody = workingHip * (1 + options.bodyEase)
 
-  const maxLength = ( lengthBody > (measurements.waistToFloor + measurements.hpsToWaistBack))
-    ? measurements.waistToFloor + measurements.hpsToWaistBack
-    : lengthBody
+    const maxLength =
+      lengthBody > measurements.waistToFloor + measurements.hpsToWaistBack
+        ? measurements.waistToFloor + measurements.hpsToWaistBack
+        : lengthBody
 
-  points.topLeft = new Point(0,0)
-  points.topRight = new Point(widthBody, 0)
-  points.bottomLeft = new Point(0, lengthBody)
-  points.bottomRight = new Point(widthBody, lengthBody)
+    points.topLeft = new Point(0, 0)
+    points.topRight = new Point(widthBody, 0)
+    points.bottomLeft = new Point(0, lengthBody)
+    points.bottomRight = new Point(widthBody, lengthBody)
 
-  points.gorestartLeft = points.bottomLeft.shiftTowards(points.topLeft, lengthBody / 2)
-  points.gorestartRight = points.bottomRight.shiftTowards(points.topRight, lengthBody / 2)
+    points.gorestartLeft = points.bottomLeft.shiftTowards(points.topLeft, lengthBody / 2)
+    points.gorestartRight = points.bottomRight.shiftTowards(points.topRight, lengthBody / 2)
 
-  points.middle = points.topLeft.shiftTowards(points.topRight, widthBody / 2)
-  points.leftShoulder = points.middle.shiftTowards(points.topLeft, measurements.shoulderToShoulder / 2)
-  points.rightShoulder = points.middle.shiftTowards(points.topRight, measurements.shoulderToShoulder / 2)
+    points.middle = points.topLeft.shiftTowards(points.topRight, widthBody / 2)
+    points.leftShoulder = points.middle.shiftTowards(
+      points.topLeft,
+      measurements.shoulderToShoulder / 2
+    )
+    points.rightShoulder = points.middle.shiftTowards(
+      points.topRight,
+      measurements.shoulderToShoulder / 2
+    )
 
-  paths.sideseam = new Path()
-    .move(points.topRight)
-    .line(points.topLeft)
-    .line(points.bottomLeft)
-    .line(points.bottomRight)
-    .line(points.topRight)
-    .close();
+    paths.sideseam = new Path()
+      .move(points.topRight)
+      .line(points.topLeft)
+      .line(points.bottomLeft)
+      .line(points.bottomRight)
+      .line(points.topRight)
+      .close()
 
-  paths.leftGore = new Path()
-    .move(points.leftShoulder)
-    .line(points.leftShoulder)
-    .line(points.gorestartLeft)
-    .attr("class", "fabric dashed")
-    .close();
+    paths.leftGore = new Path()
+      .move(points.leftShoulder)
+      .line(points.leftShoulder)
+      .line(points.gorestartLeft)
+      .attr('class', 'fabric dashed')
+      .close()
 
+    paths.rightGore = new Path()
+      .move(points.rightShoulder)
+      .line(points.gorestartRight)
+      .line(points.rightShoulder)
+      .attr('class', 'fabric dashed')
+      .close()
 
-  paths.rightGore = new Path()
-    .move(points.rightShoulder)
-    .line(points.gorestartRight)
-    .line(points.rightShoulder)
-    .attr("class", "fabric dashed")
-    .close();
+    //neckline
 
+    const neckWidth = measurements.neck * options.neckWidth
 
- //neckline
+    points.neckLeft = points.middle.shiftTowards(points.leftShoulder, neckWidth / 2)
+    points.neckRight = points.middle.shiftTowards(points.rightShoulder, neckWidth / 2)
 
- const neckWidth = measurements.neck * options.neckWidth
+    const neckDepthFront = measurements.hpsToBust * options.neckDepthFront
 
- points.neckLeft = points.middle.shiftTowards(points.leftShoulder, neckWidth /2)
- points.neckRight = points.middle.shiftTowards(points.rightShoulder, neckWidth /2)
+    points.middleHem = points.bottomLeft.shiftTowards(points.bottomRight, widthBody / 2)
 
-  const neckDepthFront = measurements.hpsToBust * options.neckDepthFront
+    points.neckFront = points.middle
+      .shiftTowards(points.middleHem, neckDepthFront)
+      .attr('data-text', 'Front Neckline')
+      .attr('data-text-class', 'center')
 
-  points.middleHem = points.bottomLeft.shiftTowards(points.bottomRight, widthBody /2)
-
-  points.neckFront = points.middle.shiftTowards(points.middleHem, neckDepthFront)
-    .attr("data-text", "Front Neckline")
-    .attr("data-text-class", "center");
-
-  points.neckCp1 = points.neckRight.shift(90, (points.neckFront.dy(points.neckRight) * 0.8))
-  points.neckCp2 = points.neckFront.shift(180, (points.neckFront.dy(points.neckRight) * 0.8))
+    points.neckCp1 = points.neckRight.shift(90, points.neckFront.dy(points.neckRight) * 0.8)
+    points.neckCp2 = points.neckFront.shift(180, points.neckFront.dy(points.neckRight) * 0.8)
 
     paths.neckLine = new Path()
       .move(points.neckRight)
       .curve(points.neckCp1, points.neckCp2, points.neckFront)
 
-
-  points.neckCp3 = points.neckLeft.shift(90, (points.neckFront.dy(points.neckLeft) * 0.8))
-  points.neckCp4 = points.neckFront.shift(360, (points.neckFront.dy(points.neckLeft) * 0.8))
+    points.neckCp3 = points.neckLeft.shift(90, points.neckFront.dy(points.neckLeft) * 0.8)
+    points.neckCp4 = points.neckFront.shift(360, points.neckFront.dy(points.neckLeft) * 0.8)
 
     paths.neckLine2 = new Path()
       .move(points.neckFront)
       .curve(points.neckCp4, points.neckCp3, points.neckLeft)
 
+    const neckDepthBack = measurements.hpsToBust * options.neckDepthBack
 
-  const neckDepthBack = measurements.hpsToBust * options.neckDepthBack
+    points.neckBack = points.middle
+      .shiftTowards(points.neckFront, neckDepthBack)
+      .attr('data-text', 'Back Neckline')
+      .attr('data-text-class', 'center')
 
-  points.neckBack = points.middle.shiftTowards(points.neckFront, neckDepthBack)
-    .attr("data-text", "Back Neckline")
-    .attr("data-text-class", "center");
-
-  points.neckBackCp1 = points.neckBack.shift(360, (points.neckFront.dy(points.neckLeft) * 0.8))
-  points.neckBackCp2 = points.neckBack.shift(180, (points.neckFront.dy(points.neckRight) * 0.8))
-  points.neckBackCp3 = points.neckLeft.shift(90, (points.neckBack.dy(points.neckLeft) * 0.8))
-  points.neckBackCp4 = points.neckRight.shift(90, (points.neckBack.dy(points.neckRight)* 0.8))
+    points.neckBackCp1 = points.neckBack.shift(360, points.neckFront.dy(points.neckLeft) * 0.8)
+    points.neckBackCp2 = points.neckBack.shift(180, points.neckFront.dy(points.neckRight) * 0.8)
+    points.neckBackCp3 = points.neckLeft.shift(90, points.neckBack.dy(points.neckLeft) * 0.8)
+    points.neckBackCp4 = points.neckRight.shift(90, points.neckBack.dy(points.neckRight) * 0.8)
 
     paths.NecklineBack1 = new Path()
       .move(points.neckRight)
@@ -135,80 +139,74 @@ export const body = {
       .move(points.neckBack)
       .curve(points.neckBackCp1, points.neckBackCp3, points.neckLeft)
 
+    // Complete?
+    if (complete) {
+      points.logo = points.middle.shiftTowards(points.middleHem, lengthBody / 4)
+      snippets.logo = new Snippet('logo', points.logo)
 
-
-
-  // Complete?
-  if (complete) {
-    points.logo = points.middle.shiftTowards(points.middleHem, lengthBody / 4)
-    snippets.logo = new Snippet("logo", points.logo)
-
-    points.title = points.logo.shiftTowards(points.middle, lengthBody / 12)
-    macro("title", {
-      at: points.title,
-      nr: 1,
-      title: "Body"
+      points.title = points.logo.shiftTowards(points.middle, lengthBody / 12)
+      macro('title', {
+        at: points.title,
+        nr: 1,
+        title: 'Body',
       })
 
+      if (sa) {
+        paths.sa = paths.sideseam.offset(sa).attr('class', 'fabric sa')
+      }
 
-    if (sa) {
-      paths.sa = paths.sideseam.offset(sa).attr('class', 'fabric sa')
+      macro('cutonfold', {
+        from: points.topLeft,
+        to: points.topRight,
+        grainline: true,
+      })
     }
 
-    macro('cutonfold', {
-      from: points.topLeft,
-      to: points.topRight,
-      grainline: true
-    })
-  }
+    // Paperless?
+    if (paperless) {
+      macro('hd', {
+        from: points.topLeft,
+        to: points.topRight,
+        x: points.topLeft.x + sa + 30,
+      })
 
-  // Paperless?
-  if (paperless) {
-    macro('hd', {
-      from: points.topLeft,
-      to: points.topRight,
-      x: points.topLeft.x + sa + 30
-    })
+      macro('vd', {
+        from: points.topLeft,
+        to: points.bottomLeft,
+        x: points.topLeft.y + sa + 30,
+      })
 
-    macro('vd', {
-      from: points.topLeft,
-      to: points.bottomLeft,
-      x: points.topLeft.y + sa + 30
-    })
+      macro('vd', {
+        from: points.topLeft,
+        to: points.gorestartLeft,
+        x: points.topLeft.y + sa + 40,
+      })
 
-    macro('vd', {
-      from: points.topLeft,
-      to: points.gorestartLeft,
-      x: points.topLeft.y + sa + 40
-    })
+      macro('hd', {
+        from: points.rightShoulder,
+        to: points.topRight,
+        x: points.rightShoulder.x + sa + 30,
+      })
 
-    macro('hd', {
-      from: points.rightShoulder,
-      to: points.topRight,
-      x: points.rightShoulder.x + sa + 30
-    })
+      macro('hd', {
+        from: points.middle,
+        to: points.neckBack,
+        x: points.middle.y + sa + 15,
+      })
 
-    
-  macro('hd', {
-    from: points.middle,
-    to: points.neckBack,
-    x: points.middle.y + sa + 15
-  })
+      macro('hd', {
+        from: points.middle,
+        to: points.neckFront,
+        x: points.middle.y + sa + 25,
+      })
 
-  macro('hd', {
-    from: points.middle,
-    to: points.neckFront,
-    x: points.middle.y + sa + 25
-  })
+      macro('hd', {
+        from: points.middle,
+        to: points.neckLeft,
+        x: points.leftShoulder.x + sa + 30,
+      })
+    }
 
-  macro('hd', {
-    from: points.middle,
-    to: points.neckLeft,
-    x: points.leftShoulder.x + sa + 30
-  })
-  }
-
-
-  return part
+    return part
+  },
 }
-

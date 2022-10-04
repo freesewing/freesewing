@@ -29,14 +29,15 @@ packageJson:
     author: AlfaLyr (https://github.com/alfalyr)
   i18n:
     private: true
-  lucy:
+  lucy: &SeaZeeZee
     author: SeaZeeZee (https://github.com/SeaZeeZee)
+  jane: *SeaZeeZee
   lunetius: &starf
     author: Starfetch (https://github.com/starfetch)
   new-design:
     exports: '!'
     bin:
-      new-design: './index.mjs'
+      new-design: 'dist/index.js'
     files:
       - README.md
       - package.json

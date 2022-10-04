@@ -1,8 +1,8 @@
 {
   "name": "@freesewing/jane",
-  "version": "2.21.0-rc.0",
-  "description": "FIXME: A FreeSewing pattern that needs a description",
-  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
+  "version": "3.0.0-alpha.0",
+  "description": "A FreeSewing pattern for a 1790's shift",
+  "author": "SeaZeeZee (https://github.com/SeaZeeZee)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
   "license": "MIT",
@@ -24,42 +24,47 @@
     "sewing",
     "sewing pattern"
   ],
-  "main": "dist/index.js",
+  "type": "module",
   "module": "dist/index.mjs",
+  "exports": {
+    ".": "./dist/index.mjs"
+  },
   "scripts": {
-    "build": "node build.js",
+    "build": "node build.mjs",
     "clean": "rimraf dist",
-    "mbuild": "NO_MINIFY=1 node build.js",
+    "mbuild": "NO_MINIFY=1 node build.mjs",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "test": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register",
-    "vbuild": "VERBOSE=1 node build.js",
+    "test": "npx mocha tests/*.test.mjs",
+    "vbuild": "VERBOSE=1 node build.mjs",
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
-    "prettier": "npx prettier --write 'src/*.js' 'config/*.js'",
-    "testci": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register --reporter ../../tests/reporters/terse.js",
-    "cibuild_step5": "node build.js"
+    "lint": "npx eslint 'src/**' 'tests/*.mjs'",
+    "prettier": "npx prettier --write 'src/*.mjs' 'tests/*.mjs'",
+    "testci": "npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js",
+    "cibuild_step5": "node build.mjs",
+    "wbuild": "node build.mjs",
+    "wcibuild_step5": "node build.mjs"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.21.0-rc.0",
-    "@freesewing/plugin-bundle": "^2.21.0-rc.0",
-    "@freesewing/config-helpers": "^2.21.0-rc.0"
+    "@freesewing/core": "^3.0.0-alpha.0",
+    "@freesewing/plugin-bundle": "^3.0.0-alpha.0",
+    "@freesewing/config-helpers": "^3.0.0-alpha.0"
   },
   "dependencies": {},
   "devDependencies": {
-    "mocha": "^9.1.1",
+    "mocha": "^10.0.0",
     "chai": "^4.2.0"
   },
   "files": [
     "dist/*",
-    "README.md",
-    "package.json"
+    "README.md"
   ],
   "publishConfig": {
     "access": "public",
     "tag": "next"
   },
   "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=6"
+    "node": ">=16.0.0",
+    "npm": ">=8"
   }
 }
