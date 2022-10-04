@@ -93,7 +93,7 @@ const HomePage = () => {
         </div>
       </section>
       <div>
-        <div className="max-w-7xl m-auto my-32">
+        <div className="max-w-7xl m-auto my-12 lg:my-32 px-4">
           <h2>FreeSewing 3</h2>
           <div className="flex flex-row flex-wrap gap-4 justify-between">
             <div className="max-w-xl">
@@ -118,7 +118,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-7xl m-auto my-32">
+        <div className="max-w-7xl m-auto lg:my-32 px-4">
           <h2>TL;DR</h2>
           <div className="flex flex-row flex-wrap gap-4 justify-between">
             <div className="max-w-xl">
@@ -175,9 +175,9 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-7xl m-auto my-32">
+        <div className="max-w-7xl m-auto lg:my-32">
           <div
-            className="bg-cover bg-neutral w-full bg-center rounded-lg shadow p-4 "
+            className="bg-cover bg-neutral w-full bg-center shadow p-4 "
             style={{ backgroundImage: 'url(/support.jpg)' }}
           >
             <h2 className="text-neutral-content p-4 text-4xl font-bold sm:font-light sm:text-6xl drop-shadow">
@@ -199,13 +199,13 @@ const HomePage = () => {
             </a>
           </div>
         </div>
-        <div className="max-w-7xl m-auto my-32">
+        <div className="max-w-7xl m-auto my-8 lg:my-32">
           <div className="px-8 text-base-content">
             <Icons
               app={app}
               active="/"
-              ulClasses="flex flex-row flex-wrap mt-8 justify-around w-full max-w-6xl"
-              liClasses="w-1/3 my-4 lg:mx-2 lg:w-24"
+              ulClasses="grid grid-cols-2 gap-4 w-full lg:grid-cols-4 lg:gap-8 mt-8 max-w-6xl"
+              liClasses=""
               linkClasses={`
               text-lg lg:text-xl py-1 text-base-content
               hover:text-secondary sm:hover:text-secondary-focus hover:cursor-pointer
