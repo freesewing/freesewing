@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import Head from 'next/head'
 import Header from 'site/components/header'
 import Footer from 'site/components/footer'
 import Search from 'site/components/search'
@@ -24,6 +25,9 @@ const LayoutWrapper = ({ app, children = [], search, setSearch, noSearch = false
     bg-base-100
     `}
     >
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <Header app={app} setSearch={setSearch} />
       <main className="grow">{children}</main>
       {!noSearch && search && (
