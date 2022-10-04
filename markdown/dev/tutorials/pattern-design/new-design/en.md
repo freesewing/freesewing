@@ -5,7 +5,7 @@ order: 100
 
 Open a terminal and enter the following command:
 
-```bash
+```sh
 npx @freesewing/new-design
 ```
 
@@ -25,14 +25,14 @@ This will take a few minutes because we're loading some software for your develo
 
 When it's ready, enter the `bib` directory that was just created and run `npm run dev`:
 
-```bash
+```sh
 cd bib
 npm run dev
 ```
 
 Or if you chose to use Yarn as package manager:
 
-```bash
+```sh
 cd bib
 yarn dev
 ```
@@ -47,7 +47,7 @@ If all goes well, you should see this landing page:
 
 ###### Need help?
 
-If you run into any issues, join [our chatroom](https://discord.freesewing.org/) and
-we'll figure it out together.
+If you run into any issues, [join our **#development-help** chat room on on
+Discord](https://discord.freesewing.org/) and we'll figure it out together.
 
 </Note>
