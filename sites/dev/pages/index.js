@@ -81,7 +81,7 @@ const HomePage = () => {
                 hover:text-secondary-focus hover:cursor-pointer
                 flex flex-col items-center capitalize`}
           />
-          <p className="text-neutral-content text-center mt-8">
+          <p className="text-neutral-content text-center my-8">
             To learn more about FreeSewing and try our platform go to{' '}
             <a
               href="https://freesewing.org/"
