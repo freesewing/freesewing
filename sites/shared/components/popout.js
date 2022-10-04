@@ -43,7 +43,7 @@ const Popout = (props) => {
     </div>
   ) : (
     <div
-      className={`relative my-8 bg-${color} bg-opacity-5 -ml-6 -mr-6 sm:ml-0 sm:mr-0 ${className}`}
+      className={`relative my-8 bg-${color} bg-opacity-5 -ml-4 -mr-4 sm:ml-0 sm:mr-0 ${className}`}
     >
       <div
         className={`
