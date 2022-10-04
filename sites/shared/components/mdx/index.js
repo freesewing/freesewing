@@ -4,7 +4,8 @@ import YouTube from './youtube.js'
 import Figure from './figure.js'
 import ReadMore from './read-more.js'
 import { Tab, Tabs } from './tabs.js'
-import Example from './example/index.js'
+import Example from './example.js'
+import Examples from './examples.js'
 
 const mdxCustomComponents = (app = false) => ({
   // Custom components
@@ -27,6 +28,7 @@ const mdxCustomComponents = (app = false) => ({
   Tab,
   Tabs,
   Example: (props) => <Example {...props} app={app} />,
+  Examples: (props) => <Examples {...props} app={app} />,
 })
 
 export default mdxCustomComponents
