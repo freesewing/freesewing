@@ -69,6 +69,9 @@ It just so happens that in most cases, there will be only one settings object in
 
 ## Pattern attributes
 
+- `Pattern.activePart`: Holds the id of the active part (while drafting)
+- `Pattern.activeSet`: Holds the id of the active set (while drafting)
+- `Pattern.designConfig`: Holds the design's configuration
 - `Pattern.designConfig`: Holds the design's configuration
 - `Pattern.patternConfig`: Holds the pattern's configuration
 - `Pattern.store`: Holds the pattern-wide Store
