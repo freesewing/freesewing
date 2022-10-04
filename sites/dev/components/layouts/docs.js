@@ -16,7 +16,7 @@ const DefaultLayout = ({ app, title = false, crumbs = false, children = [] }) =>
         {title && (
           <div className="xl:pl-4">
             <Breadcrumbs title={title} crumbs={breadcrumbs} />
-            <h1>{title}</h1>
+            <h1 className="break-words">{title}</h1>
           </div>
         )}
         {children}
