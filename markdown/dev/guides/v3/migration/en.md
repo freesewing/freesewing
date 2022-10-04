@@ -10,6 +10,8 @@ to learn more about what's changed between v2 and v3 of FreeSewing.
 The focus on this guide is on our core library, our designs, our monorepo, and other topics of interest to developers.
 It does not cover any changes to our website(s) or other more user-facing aspects.
 
+<Fixme compact>This guide is a work in process</Fixme>
+
 ## Breaking changes
 
 ### EMS only
@@ -91,6 +93,4 @@ Apart from being attached at the part level, changes in comparison to v2 include
 
 - We no longer use a `config` folder, instead keep the config next to the parts.
 - We use `.mjs` extentions rather than `.js`
-
-<Fixme compact>This guide is a work in process</Fixme>
 
