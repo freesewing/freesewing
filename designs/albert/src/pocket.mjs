@@ -22,7 +22,7 @@ export const pocket = {
       measurements.hpsToWaistBack * options.bibLength +
       measurements.waistToKnee * (1 + options.lengthBonus)
     let pocketSize = apronLength / 4
-    let hemWidth = 3 * sa
+    let hemWidth = (measurements.hpsToWaistBack * options.strapWidth) / 8
 
     points.topLeft = new Point(0, 0)
     points.topRight = new Point(pocketSize, 0)

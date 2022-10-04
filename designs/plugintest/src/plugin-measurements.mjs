@@ -28,6 +28,7 @@ const pluginMeasurements = ({ points, Point, paths, Path, measurements, options,
 
 export const measurements = {
   name: 'plugintest.measurements',
+  measurements: ['seat', 'seatBack', 'waist', 'waistBack', 'crossSeam', 'crossSeamFront'],
   plugins: measurementsPlugin,
   draft: pluginMeasurements,
 }

@@ -1,7 +1,19 @@
-export default function (part) {
-  const { options, Point, Path, points, paths, Snippet, snippets, complete, sa, paperless, macro } =
-    part.shorthand()
+import { pluginBundle } from '@freesewing/plugin-bundle'
 
+function draftBox({
+  options,
+  Point,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  sa,
+  paperless,
+  macro,
+  part,
+}) {
   const w = 500 * options.size
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(w, 0)
@@ -46,4 +58,13 @@ export default function (part) {
   }
 
   return part
+}
+
+export const box = {
+  name: 'box',
+  options: {
+    size: { pct: 50, min: 10, max: 100, menu: 'fit' },
+  },
+  plugins: [pluginBundle],
+  draft: draftBox,
 }
