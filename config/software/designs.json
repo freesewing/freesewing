@@ -63,14 +63,7 @@
       "difficulty": 2,
       "tags": ["accessories", "historical", "bags"]
     },
-    "jane": {
-      "description": "A FreeSewing pattern for a 1790's shift",
-      "code": "SeaZeeZee",
-      "design": "SeaZeeZee",
-      "difficulty": 3,
-      "tags": ["accessories", "historical", "underwear"]
-    },
-    "octoplushy": {
+      "octoplushy": {
       "description": "A FreeSewing pattern for an octopus plushy toy",
       "code": "Wouter Van Wageningen",
       "design": "Wouter Van Wageningen",
@@ -212,7 +205,14 @@
       "code": "Joost De Cock",
       "design": "Joost De Cock",
       "difficulty": 5,
-      "tags": ["tops", "coats"]
+      "tags": ["tops", "coats"]      
+    },
+      "jane": {
+      "description": "A FreeSewing pattern for a 1790's shift",
+      "code": "SeaZeeZee",
+      "design": "SeaZeeZee",
+      "difficulty": 3,
+      "tags": ["accessories", "historical", "underwear"]
     },
     "lunetius": {
       "description": "A FreeSewing pattern for a lacerna, a historical Roman cloak",
