@@ -3,7 +3,7 @@ import themes from 'shared/themes/index.js'
 import ThemeIcon from 'shared/components/icons/theme.js'
 import { useTranslation } from 'next-i18next'
 import { Popover, Transition } from '@headlessui/react'
-import Down from 'shared/components/icons/down'
+import DownIcon from 'shared/components/icons/down'
 
 const ThemePicker = ({ app, className, iconOnly = false }) => {
   const { t } = useTranslation(['themes', 'common'])
