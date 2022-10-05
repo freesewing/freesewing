@@ -2,8 +2,8 @@ export const sleeve = {
   name: 'jane.sleeve',
   measurements: ['biceps', 'shoulderToElbow'],
   options: {
-    bicepsEase: { pct: 18, min: 18, max: 51 },
-    sleeveBonus: { pct: 80, min: 60, max: 100 },
+    bicepsEase: { pct: 18, min: 18, max: 51, menu: 'fit' },
+    sleeveBonus: { pct: 80, min: 60, max: 100, menu: 'style' },
   },
 
   draft: function (shorthand) {

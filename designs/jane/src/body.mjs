@@ -1,5 +1,7 @@
+import { pluginBundle } from '@freesewing/plugin-bundle'
 export const body = {
   name: 'jane.body',
+  plugins: [pluginBundle],
   measurements: [
     'chest',
     'hips',
@@ -11,11 +13,11 @@ export const body = {
     'waistToFloor',
   ],
   options: {
-    bodyEase: { pct: 21, min: 21, max: 50 },
-    neckDepthFront: { pct: 31, min: 25, max: 50 },
-    neckDepthBack: { pct: 18, min: 15, max: 50 },
-    neckWidth: { pct: 71, min: 65, max: 85 },
-    shiftLength: { pct: 2, min: 0, max: 20 },
+    bodyEase: { pct: 21, min: 21, max: 50, menu: 'fit' },
+    neckDepthFront: { pct: 31, min: 25, max: 50, menu: 'style' },
+    neckDepthBack: { pct: 18, min: 15, max: 50, menu: 'style' },
+    neckWidth: { pct: 71, min: 65, max: 85, menu: 'style' },
+    shiftLength: { pct: 2, min: 0, max: 20, menu: 'style' },
   },
 
   draft: function (shorthand) {

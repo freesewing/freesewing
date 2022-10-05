@@ -2,7 +2,7 @@ export const gusset = {
   name: 'jane.gusset',
   measurements: ['biceps', 'shoulderToElbow'],
   options: {
-    gussetSize: { pct: 44, min: 44, max: 50 },
+    gussetSize: { pct: 44, min: 44, max: 50, menu: 'fit' },
   },
 
   draft: function (shorthand) {
