@@ -30,7 +30,6 @@ const Example = ({ app, draft, xray = false }) => {
     gist.margin = 20
   }
   const patternProps = draft.draft().getRenderProps()
-  console.log(draft)
   if (draft.store.logs.error.length > 0 || draft.setStores[0].logs.error.length > 0)
     return (
       <div className="max-w-full p-4">

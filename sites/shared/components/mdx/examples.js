@@ -23,8 +23,6 @@ const ExamplesComponent = ({ app, part, xray = false }) => {
     measurements,
   })
   const patternProps = draft.draft().getRenderProps()
-  console.log(draft)
-  console.log(patternProps)
   if (draft.store.logs.error.length > 0 || draft.setStores[0].logs.error.length > 0)
     return (
       <div className="max-w-full p-4">

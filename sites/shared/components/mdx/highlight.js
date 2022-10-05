@@ -9,7 +9,6 @@ const names = {
 }
 
 const Highlight = (props) => {
-  console.log(props)
   let language = 'txt'
   if (props.language) language = props.language
   if (props.children?.props?.className) {
