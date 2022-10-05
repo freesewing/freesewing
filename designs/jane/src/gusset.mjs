@@ -25,7 +25,7 @@ export const gusset = {
     //design pattern here
 
     const fullArmhole = measurements.biceps * (1 + 0.85)
-    const gussetMeasure = (fullArmhole / 2) * 0.44
+    const gussetMeasure = (fullArmhole / 2) * options.gusset
 
     points.gussetLeft = new Point(0, 0)
     points.gussetRight = new Point(gussetMeasure, 0)
