@@ -21,7 +21,7 @@ export const gusset = {
       paperless,
       macro,
       measurements,
-    } = part.shorthand()
+    } = shorthand
     //design pattern here
 
     const fullArmhole = measurements.biceps * (1 + 0.85)
