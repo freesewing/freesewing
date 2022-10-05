@@ -3,10 +3,10 @@ import LocaleIcon from 'shared/components/icons/i18n.js'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 import { Popover, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import DownIcon from 'shared/components/icons/down'
 import Link from 'next/link'
 
-const LocalePicker = ({ app, iconOnly=false }) => {
+const LocalePicker = ({ app, iconOnly = false }) => {
   const { t } = useTranslation(['locales'])
   const router = useRouter()
 
@@ -15,7 +15,7 @@ const LocalePicker = ({ app, iconOnly=false }) => {
     nl: 'FreeSewing in het Nederlands',
     fr: 'FreeSewing en français',
     de: 'FreeSewing auf Deutsch',
-    es: 'FreeSewing en español'
+    es: 'FreeSewing en español',
   }
 
   return (
@@ -27,7 +27,7 @@ const LocalePicker = ({ app, iconOnly=false }) => {
           >
             <LocaleIcon />
             <span className="ml-4 font-bold text-lg capitalize">{t(`common:language`)}</span>
-            <ChevronDownIcon className={`ml-2 h-5 w-5`} aria-hidden="true" />
+            <DownIcon className={`ml-2 h-5 w-5`} aria-hidden="true" />
           </Popover.Button>
           <Transition
             as={Fragment}
@@ -41,16 +41,14 @@ const LocalePicker = ({ app, iconOnly=false }) => {
             <Popover.Panel className="absolute z-10 mt-3 w-screen max-w-sm transform px-4 sm:px-0 lg:max-w-xl right-0">
               <div className="overflow-hidden rounded-lg shadow-lg">
                 <div className="relative grid gap-8 bg-base-100 p-7 lg:grid-cols-1">
-                  {router.locales.map(locale => (
+                  {router.locales.map((locale) => (
                     <Link href={`${locale}/${router.asPath}`} key={locale}>
-                    <a className="-m-3 flex rounded-lg p-2 transition duration-150 ease-in-out-50 hover:translate-x-2 hover:cursor-pointer" >
-                      <div className="ml-4">
-                        <p className="text-lg font-medium text-base text-left">{t(locale)}</p>
-                        <p className="text-base left -mt-4">
-                          {text[locale]}
-                        </p>
-                      </div>
-                    </a>
+                      <a className="-m-3 flex rounded-lg p-2 transition duration-150 ease-in-out-50 hover:translate-x-2 hover:cursor-pointer">
+                        <div className="ml-4">
+                          <p className="text-lg font-medium text-base text-left">{t(locale)}</p>
+                          <p className="text-base left -mt-4">{text[locale]}</p>
+                        </div>
+                      </a>
                     </Link>
                   ))}
                 </div>

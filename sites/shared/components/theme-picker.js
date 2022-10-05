@@ -3,7 +3,7 @@ import themes from 'shared/themes/index.js'
 import ThemeIcon from 'shared/components/icons/theme.js'
 import { useTranslation } from 'next-i18next'
 import { Popover, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import Down from 'shared/components/icons/down'
 
 const ThemePicker = ({ app, className, iconOnly = false }) => {
   const { t } = useTranslation(['themes', 'common'])
@@ -17,7 +17,7 @@ const ThemePicker = ({ app, className, iconOnly = false }) => {
           >
             <ThemeIcon />
             {!iconOnly && <span className="ml-4 font-medium capitalize">{t(`common:theme`)}</span>}
-            <ChevronDownIcon className={`ml-2 h-5 w-5`} aria-hidden="true" />
+            <DownIcon className={`ml-2 h-5 w-5`} aria-hidden="true" />
           </Popover.Button>
           <Transition
             as={Fragment}

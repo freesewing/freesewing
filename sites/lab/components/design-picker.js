@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import DesignIcon from 'shared/components/icons/design'
 import { useTranslation } from 'next-i18next'
 import { Popover, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import DownIcon from 'shared/components/icons/down'
 import Link from 'next/link'
 
 const PatternPicker = ({ app }) => {
@@ -20,7 +20,7 @@ const PatternPicker = ({ app }) => {
           >
             <DesignIcon />
             <span className="ml-4 font-bold text-lg">{t('Designs')}</span>
-            <ChevronDownIcon className={`ml-2 h-5 w-5`} aria-hidden="true" />
+            <DownIcon className={`ml-2 h-5 w-5`} aria-hidden="true" />
           </Popover.Button>
           <Transition
             as={Fragment}
