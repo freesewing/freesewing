@@ -10,7 +10,7 @@ import { capitalize } from 'shared/utils.mjs'
 import useTheme from 'shared/hooks/useTheme'
 
 // Initial navigation
-const initialNavigation = t => {
+const initialNavigation = (t) => {
   const base = {
     accessories: {
       __title: t('accessoryDesigns'),
@@ -33,7 +33,7 @@ const initialNavigation = t => {
     for (const design in designsByType[type]) {
       base[type][design] = {
         __title: capitalize(design),
-        __slug: design
+        __slug: design,
       }
     }
   }
@@ -54,14 +54,13 @@ for (const type in designsByType) {
 }
 
 function useApp(full = true) {
-
   // Load translation method
   const locale = useRouter().locale
   const { t } = useTranslation(['app'])
 
   // Persistent state
   const [account, setAccount] = useLocalStorage('account', { username: false })
-  const [theme, setTheme] = useTheme();
+  const [theme, setTheme] = useTheme()
 
   // React State
   const [primaryMenu, setPrimaryMenu] = useState(false)
@@ -96,13 +95,18 @@ function useApp(full = true) {
     setPrimaryMenu,
     setSlug,
     setTheme,
-    startLoading: () => { setLoading(true); setPrimaryMenu(false) }, // Always close menu when navigating
+    startLoading: () => {
+      setLoading(true)
+      setPrimaryMenu(false)
+    }, // Always close menu when navigating
     stopLoading: () => setLoading(false),
 
     // State handlers
     togglePrimaryMenu,
+
+    // Standalone is for dev env
+    standalone: false,
   }
 }
 
 export default useApp
-

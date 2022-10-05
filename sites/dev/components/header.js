@@ -5,60 +5,10 @@ import ThemePicker from 'shared/components/theme-picker.js'
 import CloseIcon from 'shared/components/icons/close.js'
 import MenuIcon from 'shared/components/icons/menu.js'
 import SearchIcon from 'shared/components/icons/search.js'
+import SwipeRightIcon from 'shared/components/icons/swiperight.js'
+import SwipeLeftIcon from 'shared/components/icons/swipeleft.js'
 import Ribbon from 'shared/components/ribbon.js'
-
-export const WordMark = () => (
-  <Link href="/">
-    <a
-      role="button"
-      className="btn btn-ghost btn-sm normal-case text-2xl hover:bg-transparent font-bold"
-    >
-      <span className="text-red-400">F</span>
-      <span className="text-orange-400">r</span>
-      <span className="text-yellow-400">e</span>
-      <span className="text-lime-400">e</span>
-      <span className="text-green-400">S</span>
-      <span className="text-cyan-400">e</span>
-      <span className="text-blue-400">w</span>
-      <span className="text-indigo-400">i</span>
-      <span className="text-violet-400">n</span>
-      <span className="text-purple-400">g</span>
-    </a>
-  </Link>
-)
-
-const Right = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    className="h-6 w-6"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M17 8l4 4m0 0l-4 4m4-4H3"
-    />
-  </svg>
-)
-const Left = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    className="h-6 w-6"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M10 19l-7-7m0 0l7-7m-7 7h18"
-    />
-  </svg>
-)
+import { WordMark } from 'shared/components/wordmark.js'
 
 const Header = ({ app, setSearch }) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0)

@@ -5,7 +5,7 @@ import CcByLogo from 'shared/components/logos/cc-by.js'
 import { useTranslation } from 'next-i18next'
 import Ribbon from 'shared/components/ribbon.js'
 import Link from 'next/link'
-import { WordMark } from 'site/components/header.js'
+import { WordMark } from 'shared/components/wordmark.js'
 
 import DiscordIcon from 'shared/components/icons/discord.js'
 import FacebookIcon from 'shared/components/icons/facebook.js'
@@ -92,11 +92,15 @@ const Footer = ({ app }) => {
             </div>
             <div className="flex flex-row gap-2 justify-center items-center mt-8">
               <CcByLogo className="w-8 lg:w-12" />
-              <p className="text-neutral-content text-right basis-4/5 lg:basis-3/4 leading-5">{translations.cc}</p>
+              <p className="text-neutral-content text-right basis-4/5 lg:basis-3/4 leading-5">
+                {translations.cc}
+              </p>
             </div>
             <div className="flex flex-row gap-2 justify-center items-center mt-4">
               <OsiLogo className="w-8 lg:w-12" />
-              <p className="text-neutral-content text-right basis-4/5 lg:basis-3/4 leading-5">{translations.mit}</p>
+              <p className="text-neutral-content text-right basis-4/5 lg:basis-3/4 leading-5">
+                {translations.mit}
+              </p>
             </div>
           </div>
         </div>
@@ -121,7 +125,11 @@ const Footer = ({ app }) => {
             </p>
             <div className="py-4 flex flex-row gap-8 flex-wrap 2xl:flex-nowrap justify-around text-neutral-content">
               <a title="Search powered by Algolia" href="https://www.algolia.com/">
-                <img src="/brands/algolia.svg" className="h-12 aspect-auto" alt="Search powered by Algolia" />
+                <img
+                  src="/brands/algolia.svg"
+                  className="h-12 aspect-auto"
+                  alt="Search powered by Algolia"
+                />
               </a>
               <a title="Error handling by Bugsnag" href="https://www.bugsnag.com/">
                 <img src="/brands/bugsnag.svg" className="h-12" alt="Error handling by bugsnag" />

@@ -6,6 +6,7 @@ import DesignPicker from 'site/components/design-picker.js'
 import CloseIcon from 'shared/components/icons/close.js'
 import MenuIcon from 'shared/components/icons/menu.js'
 import Ribbon from 'shared/components/ribbon.js'
+import { WordMark } from 'shared/components/wordmark.js'
 
 const Right = () => (
   <svg
@@ -69,50 +70,27 @@ const Header = ({ app }) => {
         ${show ? '' : 'fixed top-0 left-0 -translate-y-20'}
       `}
     >
-      <div className="max-w-6xl m-auto">
-        <div className="p-2 flex flex-row gap-2 justify-between text-neutral-content">
-          <button
-            className={`
-                btn btn-sm
-                text-neutral-content bg-transparent
-                border border-transparent
-                hover:bg-transparent hover:border-base-100
-                md:hidden
-                h-12
-              `}
-            onClick={app.togglePrimaryMenu}
-          >
-            {app.primaryMenu ? (
-              <>
-                <CloseIcon />
-                <span className="opacity-50 pl-2 flex flex-row items-center gap-1">
-                  <Left />
-                  swipe
-                </span>
-              </>
-            ) : (
-              <>
-                <MenuIcon />
-                <span className="opacity-50 pl-2 flex flex-row items-center gap-1">
-                  <Right />
-                  swipe
-                </span>
-              </>
-            )}
-          </button>
-          <div className="hidden md:flex flex-row items-center gap-2">
-            <DesignPicker app={app} />
+      <div>
+        <div className="p-2 flex flex-row justify-between text-neutral-content">
+          <div className="flex flex-row items-center">
+            <button
+              className={`
+                  btn btn-sm btn-ghost
+                  text-neutral-content bg-transparent
+                  hover:text-secondary-focus
+                  lg:hidden
+                `}
+              onClick={app.togglePrimaryMenu}
+            >
+              {app.primaryMenu ? <CloseIcon /> : <MenuIcon />}
+            </button>
+            <WordMark />
           </div>
-          <div className="hidden md:flex md:flex-row gap-2">
-            <Link href="/">
-              <a
-                role="button"
-                className="btn btn-link btn-sm text-neutral-content h-12 font-normal lowercase text-2xl"
-              >
-                lab.<span className="font-black px-1 normal-case">FreeSewing</span>.dev
-              </a>
-            </Link>
-          </div>
+          {!app.standalone && (
+            <div className="hidden md:flex flex-row items-center gap-2 grow">
+              <DesignPicker app={app} />
+            </div>
+          )}
           <div className="hidden md:flex flex-row items-center gap-2">
             <ThemePicker app={app} />
             <LocalePicker app={app} />

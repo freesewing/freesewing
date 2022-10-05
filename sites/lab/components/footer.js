@@ -5,6 +5,7 @@ import CcByLogo from 'shared/components/logos/cc-by.js'
 import { useTranslation } from 'next-i18next'
 import Ribbon from 'shared/components/ribbon.js'
 import Link from 'next/link'
+import { WordMark } from 'shared/components/wordmark.js'
 
 import DiscordIcon from 'shared/components/icons/discord.js'
 import FacebookIcon from 'shared/components/icons/facebook.js'
@@ -15,117 +16,40 @@ import TwitterIcon from 'shared/components/icons/twitter.js'
 
 // Classes
 const link = 'text-secondary font-bold hover:pointer hover:underline px-1'
+const accent = 'text-accent font-bold text-lg px-1 block sm:inline'
+const freesewing = 'px-1 text-lg font-bold block sm:inline'
 
 // Keep these translations in the component because they're only used here
 const translations = {
-  cc: {
-    en: (
-      <span>
-        Content on FreeSewing.org is available under{' '}
-        <a className={link} href="https://creativecommons.org/licenses/by/4.0/">
-          a Creative Commons license
-        </a>
-      </span>
-    ),
-    de: (
-      <span>
-        Inhalte auf FreeSewing.org sind unter einer{' '}
-        <a className={link} href="https://creativecommons.org/licenses/by/4.0/deed.de">
-          Creative Commons-Lizenz
-        </a>{' '}
-        verfügbar
-      </span>
-    ),
-    es: (
-      <span>
-        El contenido de FreeSewing.org está disponible bajo{' '}
-        <a className={link} href="https://creativecommons.org/licenses/by/4.0/deed.es">
-          una licencia Creative Commons
-        </a>
-      </span>
-    ),
-    fr: (
-      <span>
-        Le contenu de FreeSewing.org est sous
-        <a className={link} href="https://creativecommons.org/licenses/by/4.0/deed.fr">
-          licence Creative Commons
-        </a>
-      </span>
-    ),
-    nl: (
-      <span>
-        De inhoud op FreeSewing.org is beschikbaar onder
-        <a className={link} href="https://creativecommons.org/licenses/by/4.0/deed.nl">
-          een Creative Commons licentie
-        </a>
-      </span>
-    ),
-  },
-  mit: {
-    en: (
-      <span>
-        The FreeSewing source code is{' '}
-        <a href="https://github.com/freesewing/freesewing" className={link}>
-          available on Github
-        </a>{' '}
-        under{' '}
-        <a href="https://opensource.org/licenses/MIT" className={link}>
-          the MIT license
-        </a>
-      </span>
-    ),
-    de: (
-      <span>
-        Der FreeSewing-Quellcode ist{' '}
-        <a href="https://github.com/freesewing/freesewing" className={link}>
-          auf Github verfügbar
-        </a>{' '}
-        unter{' '}
-        <a href="https://opensource.org/licenses/MIT" className={link}>
-          der MIT-Lizenz
-        </a>
-      </span>
-    ),
-    es: (
-      <span>
-        El código fuente de FreeSewing está{' '}
-        <a href="https://github.com/freesewing/freesewing" className={link}>
-          disponible en Github
-        </a>{' '}
-        bajo{' '}
-        <a href="https://opensource.org/licenses/MIT" className={link}>
-          la licencia MIT
-        </a>
-      </span>
-    ),
-    fr: (
-      <span>
-        Le code source de FreeSewing est{' '}
-        <a href="https://github.com/freesewing/freesewing" className={link}>
-          disponible sur Github
-        </a>{' '}
-        sous{' '}
-        <a href="https://opensource.org/licenses/MIT" className={link}>
-          la licence MIT
-        </a>
-      </span>
-    ),
-    nl: (
-      <span>
-        De FreeSewing broncode is{' '}
-        <a href="https://github.com/freesewing/freesewing" className={link}>
-          beschikbaar op Github
-        </a>{' '}
-        onder{' '}
-        <a href="https://opensource.org/licenses/MIT" className={link}>
-          de MIT licentie
-        </a>
-      </span>
-    ),
-  },
+  cc: (
+    <span>
+      Content on FreeSewing.org is available under{' '}
+      <a className={link} href="https://creativecommons.org/licenses/by/4.0/">
+        a Creative Commons license
+      </a>
+    </span>
+  ),
+  mit: (
+    <span>
+      The FreeSewing source code is{' '}
+      <a href="https://github.com/freesewing/freesewing" className={link}>
+        available on Github
+      </a>{' '}
+      under{' '}
+      <a href="https://opensource.org/licenses/MIT" className={link}>
+        the MIT license
+      </a>
+    </span>
+  ),
+  sponsors: (
+    <>
+      <span className={freesewing}>FreeSewing</span> is sponsored by these{' '}
+      <span className={accent}>awesome companies</span>
+    </>
+  ),
 }
 
-const icon = { className: 'w-20 h-20' }
+const icon = { className: 'w-8 lg:w-12 h-8 lg:h-12' }
 const social = {
   Discord: {
     icon: <DiscordIcon {...icon} />,
@@ -159,48 +83,82 @@ const Footer = ({ app }) => {
   return (
     <footer className="bg-neutral">
       <Ribbon loading={app.loading} theme={app.theme} />
-      <div className="px-8 py-20 2xl:py-40 flex flex-row gap-8 flex-wrap 2xl:flex-nowrap justify-around text-neutral-content">
+      <div className="grid grid-cols-1 lg:grid-cols-4 py-12 2xl:py-20 text-neutral-content px-4">
         {/* First col - CC & MIT */}
-        <div className="max-w-md mb-20 order-1 mt-20 2xl:mt-0">
+        <div className="mb-20 order-1 mt-20 2xl:mt-0 2xl:mb-0">
           <div className="max-w-md m-auto">
             <div>
-              <CreativeCommonsLogo className="w-64 sm:w-80 m-auto" />
+              <CreativeCommonsLogo className="w-64 m-auto" />
             </div>
             <div className="flex flex-row gap-2 justify-center items-center mt-8">
-              <CcByLogo className="w-12 sm:w-16" />
-              <p className="text-neutral-content text-right basis-3/4">
-                {translations.cc[app.locale]}
+              <CcByLogo className="w-8 lg:w-12" />
+              <p className="text-neutral-content text-right basis-4/5 lg:basis-3/4 leading-5">
+                {translations.cc}
               </p>
             </div>
             <div className="flex flex-row gap-2 justify-center items-center mt-4">
-              <OsiLogo className="w-12 sm:w-16" />
-              <p className="text-neutral-content text-right basis-3/4">
-                {translations.mit[app.locale]}
+              <OsiLogo className="w-8 lg:w-12" />
+              <p className="text-neutral-content text-right basis-4/5 lg:basis-3/4 leading-5">
+                {translations.mit}
               </p>
             </div>
           </div>
         </div>
 
-        {/* Second col - Social */}
-        <div className="w-full 2xl:w-fit -order-2 2xl:order-2">
+        {/* Second col - Social & Sponsors */}
+        <div className="lg:col-span-2 -order-2 2xl:order-2 px-4 lg:px-0">
           {/* Social icons */}
-          <div className="w-full sm:w-auto flex flex-row flex-wrap gap-8 items-center justify-center">
+          <div className="w-full sm:w-auto flex flex-row flex-wrap gap-4 lg:gap-8 items-center justify-center">
             {Object.keys(social).map((item) => (
               <Link key={item} href={social[item].href}>
-                <a className="hover:text-secondary-focus hover:-mt-2 transition-all" title={item}>
+                <a className="hover:text-secondary hover:-mt-2 transition-all" title={item}>
                   {social[item].icon}
                 </a>
               </Link>
             ))}
           </div>
+          {/* Sponsors */}
+          <div className="border rounded-xl p-8 border-dashed border-base-100/25 mt-20">
+            <p className="text-center text-neutral-content leading-5">
+              {translations.sponsors}
+              <br />
+            </p>
+            <div className="py-4 flex flex-row gap-8 flex-wrap 2xl:flex-nowrap justify-around text-neutral-content">
+              <a title="Search powered by Algolia" href="https://www.algolia.com/">
+                <img
+                  src="/brands/algolia.svg"
+                  className="h-12 aspect-auto"
+                  alt="Search powered by Algolia"
+                />
+              </a>
+              <a title="Error handling by Bugsnag" href="https://www.bugsnag.com/">
+                <img src="/brands/bugsnag.svg" className="h-12" alt="Error handling by bugsnag" />
+              </a>
+              <a title="Translation powered by Crowdin" href="https://www.crowdin.com/">
+                <img
+                  src="/brands/crowdin.svg"
+                  alt="Translation powered by Crowdin"
+                  className="h-12"
+                />
+              </a>
+              <a
+                title="Builds & hosting by Vercel"
+                href="https://www.vercel.com/?utm_source=freesewing&utm_campaign=oss"
+              >
+                <img src="/brands/vercel.svg" alt="Builds & Hosting by Vercel" className="h-12" />
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* Col 3 - Logo & Slogan */}
-        <div className="w-full 4xl:w-auto xl:max-w-md mb-20 text-center order-3 mt-20 2xl:mt-0">
+        <div className="w-full 4xl:w-auto xl:max-w-md mb-8 text-center order-3 mt-0 lg:mt-20 2xl:mt-0 2xl:mb-0">
           <div className="max-w-md m-auto">
             <Logo stroke="none" size={164} className="w-40 lg:w-64 m-auto m-auto" />
-            <h5 className="text-neutral-content lg:text-3xl mt-4">FreeSewing</h5>
-            <p className="bold text-neutral-content text-normal lg:text-xl">
+            <h5 className="lg:text-3xl mt-4">
+              <WordMark />
+            </h5>
+            <p className="bold text-neutral-content text-normal lg:text-xl leading-5">
               {t('sloganCome')}
               <br />
               {t('sloganStay')}
