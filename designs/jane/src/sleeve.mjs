@@ -53,6 +53,21 @@ export const sleeve = {
       })
 
       points.notch = new Point(0, sleeveWidth / 2)
+        .attr('data-text', 'Shoulder')
+        .attr('data-text-class', 'center')
+
+      points.text1 = new Point(sleeveLength / 2, 10)
+        .attr('data-text', 'Seam')
+        .attr('data-text-class', 'center')
+
+      points.text2 = new Point(sleeveLength / 2, sleeveWidth)
+        .attr('data-text', 'Seam')
+        .attr('data-text-class', 'center')
+
+      points.text3 = points.sleeveRight
+        .shiftTowards(points.sleeveBottomRight, sleeveWidth / 2)
+        .attr('data-text', 'Hem')
+        .attr('data-text-class', 'center')
 
       macro('sprinkle', {
         snippet: 'notch',
@@ -75,7 +90,7 @@ export const sleeve = {
       macro('hd', {
         from: points.sleeveLeft,
         to: points.sleeveRight,
-        x: points.sleeveLeft.y + sa + 30,
+        y: points.sleeveLeft.y + sa + 30,
       })
     }
 
