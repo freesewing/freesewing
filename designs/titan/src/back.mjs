@@ -242,9 +242,12 @@ function titanBack({
       points.hipsInTarget = points.waistIn
         .shiftTowards(points.waistOut, measurements.waistToHips)
         .rotate(-90, points.waistIn)
-      points.hipsOutTarget = points.waistOut
-        .shiftTowards(points.waistIn, measurements.waistToHips)
-        .rotate(90, points.waistOut)
+      points.hipsOutTarget = points.hipsInTarget.shiftOutwards(
+        points.waistOut
+          .shiftTowards(points.waistIn, measurements.waistToHips)
+          .rotate(90, points.waistOut),
+        measurements.waist
+      )
       points.hipsIn = utils.beamsIntersect(
         points.hipsOutTarget,
         points.hipsInTarget,
@@ -278,7 +281,7 @@ function titanBack({
         if (points.waistOut.x > points.seatOut.x) {
           points.hipsOut = utils.lineIntersectsCurve(
             points.hipsOutTarget,
-            points.hipsIn.rotate(180, points.hipsOutTarget),
+            points.hipsIn,
             points.kneeOut,
             points.kneeOutCp2,
             points.seatOut,
@@ -295,7 +298,7 @@ function titanBack({
         } else {
           points.hipsOut = utils.lineIntersectsCurve(
             points.hipsOutTarget,
-            points.hipsIn.rotate(180, points.hipsOutTarget),
+            points.hipsIn,
             points.seatOut,
             points.seatOutCp2,
             points.waistOut,
@@ -309,7 +312,7 @@ function titanBack({
         if (points.waistOut.x > points.seatOut.x) {
           points.hipsOut = utils.lineIntersectsCurve(
             points.hipsOutTarget,
-            points.hipsIn.rotate(180, points.hipsOutTarget),
+            points.hipsIn,
             points.floorOut,
             points.kneeOutCp2,
             points.seatOut,
@@ -334,7 +337,7 @@ function titanBack({
         } else {
           points.hipsOut = utils.lineIntersectsCurve(
             points.hipsOutTarget,
-            points.hipsIn.rotate(180, points.hipsOutTarget),
+            points.hipsIn,
             points.seatOut,
             points.seatOutCp2,
             points.waistOut,
@@ -518,7 +521,6 @@ export const back = {
     fitCrossSeam: true,
     fitCrossSeamFront: true,
     fitCrossSeamBack: true,
-    fitGuides: true,
     // Fit
     waistEase: { pct: 2, min: 0, max: 10, menu: 'fit' },
     seatEase: { pct: 2, min: 0, max: 10, menu: 'fit' },
@@ -546,6 +548,7 @@ export const back = {
       ...pctBasedOn('waistToFloor'),
       menu: 'advanced',
     },
+    fitGuides: { bool: true, menu: 'advanced' },
   },
   draft: titanBack,
 }

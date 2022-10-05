@@ -314,9 +314,12 @@ function titanFront({
       points.hipsInTarget = points.waistIn
         .shiftTowards(points.waistOut, measurements.waistToHips)
         .rotate(90, points.waistIn)
-      points.hipsOutTarget = points.waistOut
-        .shiftTowards(points.waistIn, measurements.waistToHips)
-        .rotate(-90, points.waistOut)
+      points.hipsOutTarget = points.hipsInTarget.shiftOutwards(
+        points.waistOut
+          .shiftTowards(points.waistIn, measurements.waistToHips)
+          .rotate(-90, points.waistOut),
+        measurements.waist
+      )
       points.hipsIn = utils.beamsIntersect(
         points.hipsOutTarget,
         points.hipsInTarget,
@@ -350,7 +353,7 @@ function titanFront({
         if (points.waistOut.x < points.seatOut.x) {
           points.hipsOut = utils.lineIntersectsCurve(
             points.hipsOutTarget,
-            points.hipsIn.rotate(180, points.hipsOutTarget),
+            points.hipsIn,
             points.waistOut,
             points.seatOut,
             points.kneeOutCp1,
@@ -367,7 +370,7 @@ function titanFront({
         } else {
           points.hipsOut = utils.lineIntersectsCurve(
             points.hipsOutTarget,
-            points.hipsIn.rotate(180, points.hipsOutTarget),
+            points.hipsIn,
             points.waistOut,
             points.waistOut,
             points.seatOutCp1,
@@ -381,7 +384,7 @@ function titanFront({
         if (points.waistOut.x < points.seatOut.x) {
           points.hipsOut = utils.lineIntersectsCurve(
             points.hipsOutTarget,
-            points.hipsIn.rotate(180, points.hipsOutTarget),
+            points.hipsIn,
             points.waistOut,
             points.seatOut,
             points.kneeOutCp1,
@@ -406,7 +409,7 @@ function titanFront({
         } else {
           points.hipsOut = utils.lineIntersectsCurve(
             points.hipsOutTarget,
-            points.hipsIn.rotate(180, points.hipsOutTarget),
+            points.hipsIn,
             points.waistOut,
             points.waistOut,
             points.seatOutCp1,
