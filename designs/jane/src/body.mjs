@@ -142,6 +142,17 @@ export const body = {
       .move(points.neckBack)
       .curve(points.neckBackCp1, points.neckBackCp3, points.neckLeft)
 
+    points.topTopLeft = points.topLeft.shift(90, 20)
+    points.topTopRight = points.topRight.shift(90, 20)
+    paths.extraBoundary = new Path()
+      .move(points.topLeft)
+      .line(points.topRight)
+      .line(points.topTopRight)
+      .line(points.topTopLeft)
+      .line(points.topLeft)
+      .close()
+      .setClass('hidden')
+
     // Complete?
     if (complete) {
       points.logo = points.middle.shiftTowards(points.middleHem, lengthBody / 4)
