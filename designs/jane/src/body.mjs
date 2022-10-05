@@ -181,7 +181,7 @@ export const body = {
       macro('hd', {
         from: points.topLeft,
         to: points.topRight,
-        x: points.topLeft.x + sa + 30,
+        y: points.topLeft.y + sa + 10,
       })
 
       macro('vd', {
@@ -199,7 +199,7 @@ export const body = {
       macro('hd', {
         from: points.rightShoulder,
         to: points.topRight,
-        x: points.rightShoulder.x + sa + 30,
+        y: points.rightShoulder.y + sa + 20,
       })
 
       macro('vd', {
@@ -217,7 +217,7 @@ export const body = {
       macro('hd', {
         from: points.neckLeft,
         to: points.middle,
-        x: points.leftShoulder.y + sa + 40,
+        y: points.leftShoulder.y + sa + 30,
       })
     }
 
