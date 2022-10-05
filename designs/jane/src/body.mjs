@@ -34,6 +34,7 @@ export const body = {
       paperless,
       macro,
       measurements,
+      part,
     } = shorthand
 
     //design pattern here
@@ -203,9 +204,9 @@ export const body = {
       })
 
       macro('hd', {
-        from: points.middle,
-        to: points.neckLeft,
-        x: points.leftShoulder.x + sa + 30,
+        from: points.neckLeft,
+        to: points.middle,
+        x: points.leftShoulder.y + sa + 40,
       })
     }
 

@@ -21,11 +21,12 @@ export const gusset = {
       paperless,
       macro,
       measurements,
+      part,
     } = shorthand
     //design pattern here
 
     const fullArmhole = measurements.biceps * (1 + 0.85)
-    const gussetMeasure = (fullArmhole / 2) * options.gusset
+    const gussetMeasure = (fullArmhole / 2) * options.gussetSize
 
     points.gussetLeft = new Point(0, 0)
     points.gussetRight = new Point(gussetMeasure, 0)
@@ -62,7 +63,7 @@ export const gusset = {
         x: points.gussetLeft.x + sa + 30,
       })
 
-      macro('hd', {
+      macro('vd', {
         from: points.gussetLeft,
         to: points.gussetBottomLeft,
         x: points.gussetLeft.x + sa + 30,

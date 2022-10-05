@@ -22,6 +22,7 @@ export const sleeve = {
       paperless,
       macro,
       measurements,
+      part,
     } = shorthand
     //design pattern here
 
@@ -65,13 +66,13 @@ export const sleeve = {
 
     // Paperless?
     if (paperless) {
-      macro('hd', {
+      macro('vd', {
         from: points.sleeveLeft,
         to: points.sleeveBottomLeft,
         x: points.sleeveLeft.x + sa + 30,
       })
 
-      macro('vd', {
+      macro('hd', {
         from: points.sleeveLeft,
         to: points.sleeveRight,
         x: points.sleeveLeft.y + sa + 30,
