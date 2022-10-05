@@ -41,7 +41,6 @@ const jargonTransform = (term, html) => `<details class="inline jargon-details">
   ${html}</div></details>`
 
 const mdxLoader = async (language, site, slug, jargon) => {
-
   // TODO: Will this work on Windows?
   const md = await fs.promises.readFile(
     path.resolve(`../../markdown/${site}/${slug}/${language}.md`),
@@ -61,21 +60,30 @@ const mdxLoader = async (language, site, slug, jargon) => {
             destinationDir: path.resolve(`../${site}/public/mdx`),
             sourceDir: path.resolve(`../../markdown/${site}/${slug}`),
             staticPath: '/mdx/',
-          }
+          },
         ],
-        [
-          remarkIntroPlugin,
-          { intro }
-        ]
+        [remarkIntroPlugin, { intro }],
       ],
       rehypePlugins: [
         [rehypeJargon, { jargon, transform: jargonTransform }],
-        [rehypeHighlight, { plainText: ['dot', 'http'] }],
+        [
+          rehypeHighlight,
+          {
+            plainText: ['dot', 'http'],
+            aliases: {
+              javascript: ['index.mjs', 'part.mjs', 'bib.mjs'],
+              markdown: ['en.md'],
+            },
+          },
+        ],
         rehypeSlug,
-        [rehypeAutolinkHeadings, {
-          behavior: 'wrap',
-          properties: { className: 'heading-autolink' }
-        }],
+        [
+          rehypeAutolinkHeadings,
+          {
+            behavior: 'wrap',
+            properties: { className: 'heading-autolink' },
+          },
+        ],
       ],
     })
   )
@@ -85,18 +93,8 @@ const mdxLoader = async (language, site, slug, jargon) => {
   const toc = String(
     await compile(md, {
       outputFormat: 'function-body',
-      remarkPlugins: [
-        remarkFrontmatter,
-        remarkGfm,
-        smartypants,
-        [
-          mdxPluginToc,
-          { language }
-        ]
-      ],
-      rehypePlugins: [
-        rehypeSlug,
-      ],
+      remarkPlugins: [remarkFrontmatter, remarkGfm, smartypants, [mdxPluginToc, { language }]],
+      rehypePlugins: [rehypeSlug],
     })
   )
 

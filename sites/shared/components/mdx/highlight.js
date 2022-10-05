@@ -1,14 +1,15 @@
 import CopyToClipboard from 'shared/components/copy-to-clipboard'
 
 const names = {
-  js: 'javascript',
-  bash: 'bash',
-  sh: 'shell',
-  json: 'JSON',
-  yaml: 'YAML',
+  js: 'Javascript',
+  bash: 'Bash prompt',
+  sh: 'Shell prompt',
+  json: 'file.json',
+  yaml: 'file.yaml',
 }
 
 const Highlight = (props) => {
+  console.log(props)
   let language = 'txt'
   if (props.language) language = props.language
   if (props.children?.props?.className) {
@@ -25,12 +26,11 @@ const Highlight = (props) => {
       <div
         className={`
         flex flex-row justify-between
-        text-xs uppercase font-bold text-neutral-content
+        text-xs font-medium text-warning
         mt-1 border-b border-neutral-content border-opacity-25
-        py-1 mb-2 lg:text-sm
+        px-4 py-1 mb-2 lg:text-sm
       `}
       >
-        <span>&nbsp;</span>
         <span>{names[language] ? names[language] : language}</span>
         <CopyToClipboard content={props.children} />
       </div>
