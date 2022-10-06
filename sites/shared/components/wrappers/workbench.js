@@ -57,7 +57,7 @@ const doPreload = async (preload, from, design, gist, setGist, setPreloaded) => 
 const WorkbenchWrapper = ({ app, design, preload = false, from = false, layout = false }) => {
   // State for gist
   const { gist, setGist, unsetGist, updateGist, gistReady, undoGist, resetGist } = useGist(
-    design,
+    design.designConfig?.data?.name,
     app
   )
   const [messages, setMessages] = useState([])
