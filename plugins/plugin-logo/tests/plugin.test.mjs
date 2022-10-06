@@ -10,7 +10,7 @@ describe('Logo Plugin Tests', () => {
     const pattern = new Pattern().use(plugin)
     pattern.draft().render()
     expect(pattern.svg.defs).to.contain(
-      '<g id="logo" transform="translate(-23 -36)"><path class="logo"'
+      '<g id="logo" transform="scale(1) translate(-23 -36)"><path class="logo"'
     )
   })
 })
