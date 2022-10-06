@@ -1,4 +1,6 @@
 export const config = {
+  // Whether we're publishing next or latest tags
+  tag: 'next',
   // Minimum node version
   node: 16,
   // Site to download from

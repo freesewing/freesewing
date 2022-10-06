@@ -33,17 +33,14 @@
     "vbuild": "VERBOSE=1 node build.js"
   },
   "dependencies": {
-    "@freesewing/core": "latest",
-    "@freesewing/titan": "next",
-    "@freesewing/plugin-bundle": "latest",
-    "@freesewing/config-helpers": "next"
+    "@freesewing/core": "{{ tag }}",
+    "@freesewing/titan": "{{ tag }}"
   },
   "devDependencies": {
-    "@freesewing/plugin-svgattr": "latest",
-    "@freesewing/plugin-theme": "latest",
-    "@freesewing/plugin-i18n": "latest",
-    "@freesewing/utils": "latest",
-    "@freesewing/models": "latest",
+    "@freesewing/plugin-svgattr": "{{ tag }}",
+    "@freesewing/plugin-theme": "{{ tag }}",
+    "@freesewing/plugin-i18n": "{{ tag }}",
+    "@freesewing/models": "{{ tag }}",
     "@headlessui/react": "^1.6.5",
     "js-yaml": "^4.1.0",
     "file-saver": "^2.0.5",
