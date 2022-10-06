@@ -231,6 +231,7 @@ function titanBack({
       title: 'back',
       at: points.titleAnchor,
     })
+    /*
     //notches
     if (options.fitGuides) {
       points.waistMid = points.waistOut.shiftFractionTowards(points.waistIn, 0.5)
@@ -387,6 +388,7 @@ function titanBack({
           .attr('data-text-class', 'center')
       }
     }
+    */
     if (sa) {
       paths.saBase = drawOutseam()
         .join(

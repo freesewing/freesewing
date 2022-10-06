@@ -303,6 +303,7 @@ function titanFront({
       title: 'front',
       at: points.titleAnchor,
     })
+    /*
     //notches
     if (options.fitGuides) {
       points.waistMid = points.waistOut.shiftFractionTowards(points.waistIn, 0.5)
@@ -457,6 +458,7 @@ function titanFront({
           .attr('data-text-class', 'center')
       }
     }
+    */
     if (sa) {
       paths.saBase = drawInseam()
         .join(
