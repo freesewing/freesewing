@@ -540,8 +540,20 @@ Path.prototype.noop = function (id = false) {
  * @return {object} this - The Path instance
  */
 Path.prototype.offset = function (distance) {
-  if (typeof distance !== 'number')
-    this.log.error('Called `Path.offset(distance)` but `distance` is not a number')
+  if (typeof distance !== 'number') {
+    if (typeof distance === 'string') {
+      this.log.error(
+        'Called `Path.offset(distance)` but `distance` is not a number. Will attempt to cast to Number'
+      )
+      try {
+        distance = Number(distance)
+      } catch {
+        this.log.error(
+          'Called `Path.offset(distance)` but `distance` is not a number nor can it be cast to one'
+        )
+      }
+    } else this.log.error('Called `Path.offset(distance)` but `distance` is not a number')
+  }
   return __pathOffset(this, distance, this.log)
 }
 
