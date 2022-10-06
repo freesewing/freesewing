@@ -58,6 +58,8 @@ A FreeSewing pattern for a wappenrock (tabard&#x2F;surcoat), a historical Europe
 > We are working on a new major version (v3) but it is not ready for prime-time.
 > For production use, please refer to our v2 packages (the `latest` on NPM) 
 > or [the `v2` branch in our monorepo](https://github.com/freesewing/freesewing/tree/v2).
+>
+> We the `main` branch and `next` packages on NPM holds v3 code. But it's alpha for now.
 
 ## What am I looking at? 🤔
 
