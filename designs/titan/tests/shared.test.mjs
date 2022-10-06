@@ -13,4 +13,4 @@ testPatternConfig(Titan)
 testPatternDrafting(Titan, false)
 
 // Test sampling - Change the second parameter to `true` to log errors
-testPatternSampling(Titan, 1)
+testPatternSampling(Titan, false)
