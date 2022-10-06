@@ -10,6 +10,7 @@ function draftCharlieFront({
   options,
   complete,
   paperless,
+  measurements,
   store,
   macro,
   utils,
@@ -231,12 +232,15 @@ function draftCharlieFront({
       length: sa ? sa / 2 : 5,
       suffix: 'slantBottom',
     })
-    macro('bartackFractionAlong', {
-      path: Jseam.reverse(),
-      start: 0,
-      end: 0.1,
-      suffix: 'stom',
-    })
+    // This is too small to do on doll-sized patterns
+    if (measurements.waist > 200) {
+      macro('bartackFractionAlong', {
+        path: Jseam.reverse(),
+        start: 0,
+        end: 0.1,
+        suffix: 'stom',
+      })
+    }
 
     if (sa) {
       paths.sa = drawPath()
