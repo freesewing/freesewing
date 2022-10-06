@@ -22,7 +22,7 @@ const nl = '\n'
 const tab = '  '
 const nlt = nl + tab
 
-// Checks for node 14 or higher
+// Checks for node 16 or higher
 export const checkNodeVersion = () => {
   const node_version = process.version.slice(1).split('.')[0]
   if (parseInt(node_version) < config.node) {
@@ -134,25 +134,12 @@ const copyTemplate = async (config, choices) => {
 
   // Template files
   for (const from of config.files.template) {
-    /*
-     * We can't include a package.json file in the templates
-     * because doing so will prevent NPM from including those folders
-     * in our package. So we use _package.json, and if we see that we
-     * rename it here to package.json
-     */
     let to = join(config.dest, from.slice(config.source.template.length - 7))
-    if (to.slice(-13) === '_package.json') {
-      to = to.slice(0, -13) + 'package.json'
-    }
+    if (to.slice(-9) === '.mustache') to = to.slice(0, -9)
     if (!dirs[to]) await ensureDir(to)
-    if (['config.js', 'kage.json'].indexOf(from.slice(-9)) !== -1) {
-      // Template out file rather than coy it
-      const src = await readFile(from, 'utf-8')
-      promises.push(writeFile(to, mustache.render(src, { name: choices.name })))
-    } else {
-      // Just copy the file
-      promises.push(copyFile(from, to))
-    }
+    // Template out file
+    const src = await readFile(from, 'utf-8')
+    promises.push(writeFile(to, mustache.render(src, { name: choices.name })))
   }
 
   await Promise.all(promises)

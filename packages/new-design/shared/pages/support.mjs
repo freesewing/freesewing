@@ -32,7 +32,7 @@ const translations = {
         ongoing issues, future plans, and news big and small about FreeSewing and its community.`,
     nl: `Elke twee weken is er de FreeSewing contributor call (Engelstalig), waar de FreeSewing
          vrijwilligers de lopende zaken bespreken. Ook de plannen voor de toekomst en groot en klein
-         nieuws over FreeSewing en de gemeenschap komen aan bod.`
+         nieuws over FreeSewing en de gemeenschap komen aan bod.`,
   },
   docs: {
     en: `Our documentation for developers hosted on ${fsd}. You can find guides and how-to's
@@ -52,67 +52,70 @@ const SupportPage = (props) => {
   const { t } = useTranslation(['common', 'patrons'])
   return (
     <Page app={app} title={t('support')} layout={Layout}>
-
-      <h2>Discord</h2>
+      <h2 className="border-0">Discord</h2>
       <div className="flex flex-row flex-wrap gap-2">
-        <p className="max-w-3xl">
-          {translations.discord[app.locale]}
-        </p>
-        <a className="btn btn-primary btn-lg w-96"
-          href="https://discord.freesewing.org/">
+        <p className="max-w-3xl">{translations.discord[app.locale]}</p>
+        <a className="btn btn-primary btn-lg w-96" href="https://discord.freesewing.org/">
           <DiscordIcon />
           <span className="ml-4">discord.freesewing.org</span>
         </a>
       </div>
 
-      <h2>Github</h2>
+      <h2 className="border-0">Github</h2>
       <div className="flex flex-row flex-wrap gap-2">
-        <p className="max-w-3xl"
-          dangerouslySetInnerHTML={{__html: translations.github[app.locale]}}/>
-        <a className="btn btn-primary btn-outline btn-lg w-96"
-          href="https://github.com/freesewing/freesewing">
+        <p
+          className="max-w-3xl"
+          dangerouslySetInnerHTML={{ __html: translations.github[app.locale] }}
+        />
+        <a
+          className="btn btn-primary btn-outline btn-lg w-96"
+          href="https://github.com/freesewing/freesewing"
+        >
           <GithubIcon />
           <span className="ml-4">github.com/freesewing</span>
         </a>
       </div>
 
-      <h2>{t('docs')}</h2>
+      <h2 className="border-0">{t('docs')}</h2>
       <div className="flex flex-row flex-wrap gap-2">
-        <p className="max-w-3xl"
-          dangerouslySetInnerHTML={{__html: translations.docs[app.locale]}}/>
-        <a className="btn btn-primary btn-outline btn-lg w-96"
-          href="https://freesewing.dev/">
+        <p
+          className="max-w-3xl"
+          dangerouslySetInnerHTML={{ __html: translations.docs[app.locale] }}
+        />
+        <a className="btn btn-primary btn-outline btn-lg w-96" href="https://freesewing.dev/">
           <DocsIcon />
           <span className="ml-4">www.FreeSewing.dev</span>
         </a>
       </div>
 
-      <h2>Contributor Calls</h2>
+      <h2 className="border-0">Contributor Calls</h2>
       <div className="flex flex-row flex-wrap gap-2">
-        <p className="max-w-3xl"
-          dangerouslySetInnerHTML={{__html: translations.cc[app.locale]}}/>
-        <a className="btn btn-primary btn-outline btn-lg w-96"
-          href="https://github.com/freesewing/freesewing/discussions?discussions_q=label%3A%22%3Atv%3A+fscc%22">
+        <p
+          className="max-w-3xl"
+          dangerouslySetInnerHTML={{ __html: translations.cc[app.locale] }}
+        />
+        <a
+          className="btn btn-primary btn-outline btn-lg w-96"
+          href="https://github.com/freesewing/freesewing/discussions?discussions_q=label%3A%22%3Atv%3A+fscc%22"
+        >
           <CcIcon />
           <span className="ml-4">Contributor Calls</span>
         </a>
       </div>
 
-
       <div className="py-20">
-        <h2>{t('patrons:supportFreesewing')}</h2>
+        <h2 className="border-0">{t('patrons:supportFreesewing')}</h2>
         <div className="flex flex-row flex-wrap gap-2">
           <div>
             <p className="max-w-3xl">{t('patrons:patronLead')}</p>
             <p className="max-w-3xl">{t('patrons:patronPitch')}</p>
           </div>
           <a className="btn btn-accent btn-lg w-96">
-            <HeartIcon className="fill-accent-content stroke-accent-content w-6 h-6"/>
+            <HeartIcon className="fill-accent-content stroke-accent-content w-6 h-6" />
             <span className="ml-4">{t('patrons:becomeAPatron')}</span>
           </a>
         </div>
       </div>
-
     </Page>
   )
 }
@@ -123,9 +126,6 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale)),
-    }
+    },
   }
 }
-
-
-

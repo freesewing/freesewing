@@ -6,13 +6,12 @@ import { useRouter } from 'next/router'
 import useTheme from 'shared/hooks/useTheme'
 
 function useApp(full = true) {
-
   // Load translation method
   const locale = useRouter().locale
 
   // Persistent state
   const [account, setAccount] = useLocalStorage('account', { username: false })
-  const [theme, setTheme] = useTheme();
+  const [theme, setTheme] = useTheme()
 
   // React State
   const [primaryMenu, setPrimaryMenu] = useState(false)
@@ -43,13 +42,18 @@ function useApp(full = true) {
     setPrimaryMenu,
     setSlug,
     setTheme,
-    startLoading: () => { setLoading(true); setPrimaryMenu(false) }, // Always close menu when navigating
+    startLoading: () => {
+      setLoading(true)
+      setPrimaryMenu(false)
+    }, // Always close menu when navigating
     stopLoading: () => setLoading(false),
 
     // State handlers
     togglePrimaryMenu,
+
+    // Standalone is for the development environment
+    standalone: true,
   }
 }
 
 export default useApp
-
