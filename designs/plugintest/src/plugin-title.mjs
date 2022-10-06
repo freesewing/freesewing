@@ -3,8 +3,8 @@ import { base } from './base.mjs'
 
 const pluginTitle = ({ points, Point, paths, Path, macro, options, store, part }) => {
   if (['title', 'all'].indexOf(options.plugin) !== -1) {
-    if (options.titleMeta) store.data.for = 'Some user'
-    else delete store.data.for
+    if (options.titleMeta) store.set('data.for', 'Some user')
+    else store.unset('data.for')
     points.a = new Point(20, 0)
     macro('title', {
       at: points.a,
