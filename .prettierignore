@@ -3,6 +3,7 @@
 # So let's not
 *.yml
 *.md
+*.mustache
 yarn.lock
 .husky/pre-commit
 .prettierignore
