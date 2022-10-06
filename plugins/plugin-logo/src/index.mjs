@@ -8,7 +8,6 @@ export const plugin = {
   version,
   hooks: {
     preRender: (svg) => {
-      console.log(svg.pattern.settings[0].scale)
       if (svg.defs.indexOf('id="logo"') === -1) svg.defs += logo(svg.pattern.settings[0].scale)
     },
   },
