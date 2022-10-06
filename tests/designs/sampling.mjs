@@ -1,4 +1,5 @@
 import { adult, doll, giant } from '@freesewing/models'
+import { getFamily, getShortName } from './config.mjs'
 import chai from 'chai'
 
 const expect = chai.expect
@@ -13,24 +14,37 @@ const deprecated = ['theo']
  * @param object Pattern: Pattern constructor
  * @param boolean log: Set to true to log errors
  */
-export const testPatternSampling = (Pattern, log=false) => {
-
+export const testPatternSampling = (Pattern, log = false) => {
   const pattern = new Pattern()
-  const config = pattern.getConfig()
-  const design = pattern.config.data.name
-  //const family = getFamily(design)
+  const config = Pattern.patternConfig
+  const design = getShortName(Pattern.designConfig.data.name)
   //const parts = pattern.getPartList()
 
   // Helper method to try/catch pattern sampling
-  const doesItSample = (pattern, log=false) => {
+  const doesItSample = (pattern, log = false) => {
     try {
-      pattern.sample()
-      if (pattern.events.error.length < 1) return true
-      if (log) console.log(pattern.events.error)
+      pattern.sample().render()
+      if (log === 'always') {
+        console.log(pattern.store.logs)
+        console.log(pattern.setStores[0].logs)
+      }
+      if (pattern.store.logs.error.length < 1 && pattern.setStores[0].logs.error.length < 1) {
+        return true
+      }
+      if (log && log !== 'always') {
+        console.log(pattern.store.logs)
+        console.log(pattern.setStores[0].logs)
+      }
+
       return false
-    }
-    catch (err) {
-      if (log) console.log(err)
+    } catch (err) {
+      if (log && log !== 'always') {
+        console.log(pattern.settings[0])
+        console.log(err)
+        console.log(pattern.store.logs)
+        console.log(pattern.setStores[0].logs)
+      }
+
       return false
     }
   }
@@ -39,16 +53,21 @@ export const testPatternSampling = (Pattern, log=false) => {
     /*
      * Sample different measurements
      */
-    describe('Sample measurements:' , () => {
+    describe('Sample measurements:', () => {
       for (const measurement of config.measurements || []) {
-        it(`  Sample ${measurement}:` , () => {
-          expect(doesItSample(new Pattern({
-            sample: {
-              type: 'measurement',
-              measurement
-            },
-            measurements: adult.cisFemale["36"]
-          }), log)).to.equal(true)
+        it(`  Sample ${measurement}:`, () => {
+          expect(
+            doesItSample(
+              new Pattern({
+                sample: {
+                  type: 'measurement',
+                  measurement,
+                },
+                measurements: adult.cisFemale['36'],
+              }),
+              log
+            )
+          ).to.equal(true)
         })
       }
     })
@@ -58,18 +77,23 @@ export const testPatternSampling = (Pattern, log=false) => {
     /*
      * Sample different options
      */
-    describe('Sample options:' , () => {
-      for (const option in Pattern.config.options) {
-        if (typeof Pattern.config.options[option] === 'object') {
-        it(`  Sample ${option}:` , () => {
-          expect(doesItSample(new Pattern({
-            sample: {
-              type: 'option',
-              option
-            },
-            measurements: adult.cisFemale["36"]
-          }), log)).to.equal(true)
-        })
+    describe('Sample options:', () => {
+      for (const option in config.options) {
+        if (typeof config.options[option] === 'object') {
+          it(`  Sample ${option}:`, () => {
+            expect(
+              doesItSample(
+                new Pattern({
+                  sample: {
+                    type: 'option',
+                    option,
+                  },
+                  measurements: adult.cisFemale['36'],
+                }),
+                log
+              )
+            ).to.equal(true)
+          })
         }
       }
     })
@@ -79,15 +103,20 @@ export const testPatternSampling = (Pattern, log=false) => {
     /*
      * Sample pattern for different models
      */
-    describe(`Sample human measurements:` , () => {
+    describe(`Sample human measurements:`, () => {
       for (const type of ['cisFemale', 'cisMale']) {
-        it(`Sample pattern for adult ${type} size range:` , () => {
-          expect(doesItSample(new Pattern({
-            sample: {
-              type: 'models',
-              models: adult[type],
-            },
-          }), log)).to.equal(true)
+        it(`Sample pattern for adult ${type} size range:`, () => {
+          expect(
+            doesItSample(
+              new Pattern({
+                sample: {
+                  type: 'models',
+                  models: adult[type],
+                },
+              }),
+              log
+            )
+          ).to.equal(true)
         })
       }
     })
@@ -99,17 +128,20 @@ export const testPatternSampling = (Pattern, log=false) => {
        * Sample pattern for doll & giant
        */
       for (const family of ['doll', 'giant']) {
-        describe(`Sample ${family} measurements:` , () => {
+        describe(`Sample ${family} measurements:`, () => {
           for (const type of ['cisFemale', 'cisMale']) {
-            it(`Sample pattern for ${family} ${type} size range:` , () => {
-              expect(doesItSample(new Pattern({
-                sample: {
-                  type: 'models',
-                  models: family === 'doll'
-                    ? doll[type]
-                    : giant[type]
-                },
-              }), log)).to.equal(true)
+            it(`Sample pattern for ${family} ${type} size range:`, () => {
+              expect(
+                doesItSample(
+                  new Pattern({
+                    sample: {
+                      type: 'models',
+                      models: family === 'doll' ? doll[type] : giant[type],
+                    },
+                  }),
+                  log
+                )
+              ).to.equal(true)
             })
           }
         })
@@ -117,4 +149,3 @@ export const testPatternSampling = (Pattern, log=false) => {
     }
   }
 }
-

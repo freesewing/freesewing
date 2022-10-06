@@ -309,6 +309,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center"><a href="https://github.com/cloutiy"><img src="https://avatars.githubusercontent.com/u/8433147?v=4?s=100" width="100px;" alt="yc"/><br /><sub><b>yc</b></sub></a><br /><a href="#translation-cloutiy" title="Translation">🌍</a></td>
     </tr>
   </tbody>
+  <tfoot>
+    
+  </tfoot>
 </table>
 
 <!-- markdownlint-restore -->
