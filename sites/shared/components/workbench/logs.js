@@ -100,9 +100,16 @@ const Logs = (props) => {
   const renderProps = props.draft.getRenderProps()
 
   return (
-    <Tabs tabs={['Pattern', ...props.draft.setStores.map((store, i) => `Set ${i}`)].join(',')}>
-      {[props.draft.store, ...props.draft.setStores].map((store, i) => (
-        <Tab key={i}><StoreLogs logs={store.logs} units={props.gist.units} /></Tab>
+    <Tabs
+      tabs={[
+        ...props.draft.setStores.map((store, i) => `Draft logs [set ${i}]`),
+        'Pattern Logs',
+      ].join(',')}
+    >
+      {[...props.draft.setStores, props.draft.store].map((store, i) => (
+        <Tab key={i}>
+          <StoreLogs logs={store.logs} units={props.gist.units} />
+        </Tab>
       ))}
     </Tabs>
   )

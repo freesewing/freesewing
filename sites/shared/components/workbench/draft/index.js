@@ -25,7 +25,14 @@ const LabDraft = (props) => {
     patternProps = draft.getRenderProps()
   } catch (error) {
     console.log('Failed to get render props for design', error)
-    return <Error error={error} {...props} />
+    return (
+      <Error
+        error={error}
+        patternLogs={pattern.store.logs}
+        setLogs={pattern.setStores[0].logs}
+        updateGist={updateGist}
+      />
+    )
   }
 
   const errors = []
@@ -37,7 +44,15 @@ const LabDraft = (props) => {
   return (
     <>
       {!patternProps || errors.length > 0 ? (
-        <Error {...{ draft, patternProps, updateGist }} />
+        <Error
+          {...{
+            draft,
+            patternProps,
+            updateGist,
+            patternLogs: draft.store.logs,
+            setLogs: draft.setStores[0].logs,
+          }}
+        />
       ) : null}
       <SvgWrapper
         {...{ draft, patternProps, gist, updateGist, unsetGist, showInfo, app, feedback }}

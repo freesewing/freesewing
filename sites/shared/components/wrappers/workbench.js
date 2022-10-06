@@ -127,7 +127,6 @@ const WorkbenchWrapper = ({ app, design, preload = false, from = false, layout =
     try {
       if (['draft', 'logs'].indexOf(gist._state.view) > -1) draft.draft()
     } catch (error) {
-      console.log('Failed to draft design', error)
       return <DraftError error={error} app={app} draft={draft} at={'draft'} />
     }
   }
