@@ -79,8 +79,8 @@ export const front = {
   /*
    * from: Holds the part you want to extend.
    *
-   * Since you opted to extend brian, and this is the front part,
-   * we're extending brian's front part here.
+   * Since you opted to extend Brian, and this is the front part,
+   * we're extending Brian's front part here.
    * It was imported at the top of this file from @freesewing/brian
    *
    * Documentation: https://freesewing.dev/reference/api/part/config/dependencies
@@ -152,4 +152,18 @@ export const front = {
      * Documentation: https://freesewing.dev/reference/api/part/config/measurements
      */
   ],
+  plugins: [
+    /*
+     * plugins: Holds a list of plugins this part relies on.
+     *
+     * Add all the plugins here that you need in this part.
+     * You only need to add additional plugins.
+     * All plugins coming from Brian's front part are already loaded.
+     *
+     * If you don't have any plugins to add,
+     * you can remove this plugins key entirely.
+     *
+     * Documentation: https://freesewing.dev/reference/api/part/config/plugins
+     */
+  ]
 }
