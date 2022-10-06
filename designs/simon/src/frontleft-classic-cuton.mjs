@@ -7,6 +7,7 @@ export const draftFrontLeftClassicCuton = ({
   points,
   Path,
   paths,
+  Snippet,
   snippets,
   complete,
   paperless,
@@ -96,12 +97,12 @@ export const draftFrontLeftClassicCuton = ({
         'placketBottomOuterEdgeFold',
         'placketBottomOuterEdgeOver',
         'placketBottomOuterEdgeUnder',
-        'cfBust',
       ],
     })
     delete snippets['cfWaist-notch']
     delete snippets['cfHips-notch']
     delete snippets['cfArmhole-notch']
+    if (points.cfBust) snippets['cfBust-notch'] = new Snippet('notch', points.cfBust)
     // Buttons
     addButtonHoles(part, 'placketCfNeck')
 
