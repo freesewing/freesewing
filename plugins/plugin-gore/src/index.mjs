@@ -6,10 +6,10 @@ export const plugin = {
   macros: {
     gore: function (so, { points, paths, Path }) {
       const from = so.from
-      const gores = so.gores
-      const radius = so.radius //radius of the sphere
+      const gores = Number(so.gores)
+      const radius = Number(so.radius) //radius of the sphere
       const prefix = so.prefix
-      const extraLength = so.extraLength //the length of the straight section after a complete semisphere
+      const extraLength = Number(so.extraLength) //the length of the straight section after a complete semisphere
 
       points[prefix + 'p1'] = from.shift(0, (radius * Math.PI) / 2 + extraLength)
       points[prefix + 'Cp1'] = points[prefix + 'p1'].shift(
