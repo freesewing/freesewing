@@ -10,6 +10,7 @@ import {
   curveEdge,
   round,
   __addNonEnumProp,
+  __asNumber,
 } from './utils.mjs'
 
 //////////////////////////////////////////////
@@ -540,20 +541,8 @@ Path.prototype.noop = function (id = false) {
  * @return {object} this - The Path instance
  */
 Path.prototype.offset = function (distance) {
-  if (typeof distance !== 'number') {
-    if (typeof distance === 'string') {
-      this.log.error(
-        'Called `Path.offset(distance)` but `distance` is not a number. Will attempt to cast to Number'
-      )
-      try {
-        distance = Number(distance)
-      } catch {
-        this.log.error(
-          'Called `Path.offset(distance)` but `distance` is not a number nor can it be cast to one'
-        )
-      }
-    } else this.log.error('Called `Path.offset(distance)` but `distance` is not a number')
-  }
+  distance = __asNumber(distance, 'distance', 'Path.offset', this.log)
+
   return __pathOffset(this, distance, this.log)
 }
 
@@ -661,8 +650,7 @@ Path.prototype.setText = function (text = '', className = false) {
  * @return {Point} point - The point that lies distance along this Path
  */
 Path.prototype.shiftAlong = function (distance, stepsPerMm = 10) {
-  if (typeof distance !== 'number')
-    this.log.error('Called `Path.shiftAlong(distance)` but `distance` is not a number')
+  distance = __asNumber(distance, 'distance', 'Path.shiftAlong', this.log)
   let len = 0
   let current
   for (let i in this.ops) {

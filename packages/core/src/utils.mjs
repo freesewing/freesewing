@@ -288,7 +288,14 @@ export function deg2rad(degrees) {
  * @param {Stack} stack - The Stack instance
  * @return {string} transform - The SVG transform value
  */
-export const generateStackTransform = (x=0, y=0, rotate=0, flipX=false, flipY=false, stack) => {
+export const generateStackTransform = (
+  x = 0,
+  y = 0,
+  rotate = 0,
+  flipX = false,
+  flipY = false,
+  stack
+) => {
   const transforms = []
   let xTotal = x || 0
   let yTotal = y || 0
@@ -601,6 +608,36 @@ export function __addNonEnumProp(obj, name, value) {
   })
 
   return obj
+}
+
+/**
+ * Makes sure a passed argument is a number if it can be cast
+ * Will log warnings/errors accordingly
+ *
+ * @private
+ * @param {mixed} value - The value to check
+ * @param {string} param - The name of the parameter to use in the logs
+ * @param {string} method - The name of the method to use in the logs
+ * @param {object} log - A logging object
+ * @return {bool} result - True if it is a valid coordinate, false when  not
+ */
+export function __asNumber(value, param, method, log) {
+  if (typeof value === 'number') return value
+  if (typeof value === 'string') {
+    log.warning(
+      `Called \`${method}(${param})\` but \`${param}\` is not a number. Will attempt to cast to Number`
+    )
+    try {
+      value = Number(value)
+      return value
+    } catch {
+      this.log.error(
+        `Called \`${method}(${param})\` but \`${param}\` is not a number nor can it be cast to one`
+      )
+    }
+  } else log.error(`Called \`${method}(${param})\` but \`${param}\` is not a number`)
+
+  return value
 }
 
 /**

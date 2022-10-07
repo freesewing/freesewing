@@ -1,5 +1,5 @@
 import { Attributes } from './attributes.mjs'
-import { __isCoord, rad2deg, deg2rad } from './utils.mjs'
+import { __asNumber, __isCoord, rad2deg, deg2rad } from './utils.mjs'
 
 //////////////////////////////////////////////
 //               CONSTRUCTOR                //
@@ -224,9 +224,8 @@ Point.prototype.setText = function (text = '', className = false) {
  * @return {Point} shifted - The new shifted Point instance
  */
 Point.prototype.shift = function (deg, dist) {
-  if (typeof deg !== 'number') this.log.warning('Called `Point.shift` but `deg` is not a number')
-  if (typeof dist !== 'number')
-    this.log.warning('Called `Point.shift` but `distance` is not a number')
+  deg = __asNumber(deg, 'deg', 'Point.shift', this.log)
+  dist = __asNumber(dist, 'dist', 'Point.shift', this.log)
   let p = this.__check().copy()
   p.x += dist
 
@@ -259,12 +258,11 @@ Point.prototype.shiftFractionTowards = function (that, fraction) {
  * @return {Point} shifted - The new shifted Point instance
  */
 Point.prototype.shiftOutwards = function (that, distance) {
+  distance = __asNumber(distance, 'distance', 'Point.shiftOutwards', this.log)
   if (that instanceof Point !== true)
     this.log.warning(
       'Called `Point.shiftOutwards(that, distance)` but `that` is not a `Point` object'
     )
-  if (typeof distance !== 'number')
-    this.log.warning('Called `Point.shiftOutwards(that, distance)` but `distance` is not a number')
   this.__check()
   that.__check()
 
@@ -279,8 +277,7 @@ Point.prototype.shiftOutwards = function (that, distance) {
  * @return {Point} shifted - The new shifted Point instance
  */
 Point.prototype.shiftTowards = function (that, dist) {
-  if (typeof dist !== 'number')
-    this.log.warning('Called `Point.shiftTowards` but `distance` is not a number')
+  dist = __asNumber(dist, 'dist', 'Point.shiftTowards', this.log)
   if (that instanceof Point !== true)
     this.log.warning(
       'Called `Point.shiftTowards(that, distance)` but `that` is not a `Point` object'
