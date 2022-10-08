@@ -19,8 +19,8 @@ packageJson:
       all: yes
       extension: mjs
       exclude:
-        - "node_modules/*"
-        - "tests"
+        - 'node_modules/*'
+        - 'tests'
   hi:
     author: woutervdub (https://github.com/woutervdub)
   holmes:
@@ -32,12 +32,12 @@ packageJson:
   lunetius: &starf
     author: Starfetch (https://github.com/starfetch)
   new-design:
+    exports: '!'
     bin:
-      new-design: "dist/index.js"
+      new-design: './index.mjs'
     files:
       - README.md
       - package.json
-      - dist/*
       - lib/**/*
       - shared/**/*
       - templates/**/*
@@ -51,8 +51,8 @@ packageJson:
   plugin-gore:
     author: AlfaLyr (https://github.com/alfalyr)
   prettier-config:
-    type: "module"
-    exports: { .: "./index.json" }
+    type: 'module'
+    exports: { .: './index.json' }
     scripts: { build: 'echo "prettier-config: No build required" && exit 0' }
     keywords:
       - prettier
@@ -70,5 +70,4 @@ packageJson:
     author: woutervdub (https://github.com/woutervdub)
   walburga: *starf
   yuri:
-    author:  biou (https://github.com/biou)
-
+    author: biou (https://github.com/biou)

@@ -1,26 +1,16 @@
 {
-  "version": "3.0.0-alpha.0",
+  "version": "3.0.0-alpha.1",
   "npmClient": "yarn",
   "command": {
     "publish": {
-      "ignoreChanges": [
-        "ignored-file",
-        "*.md"
-      ],
+      "ignoreChanges": ["ignored-file", "*.md"],
       "message": "release: Publish %s"
     },
     "bootstrap": {
       "ignore": "component-*",
-      "npmClientArgs": [
-        "--no-package-lock"
-      ]
+      "npmClientArgs": ["--no-package-lock"]
     }
   },
-  "packages": [
-    "designs/*",
-    "packages/*",
-    "plugins/*",
-    "sites/*"
-  ],
+  "packages": ["designs/*", "packages/*", "plugins/*", "sites/*"],
   "useWorkspaces": true
 }

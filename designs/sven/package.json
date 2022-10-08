@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/sven",
-  "version": "3.0.0-alpha.0",
+  "version": "3.0.0-alpha.1",
   "description": "A FreeSewing pattern for a straightforward sweater",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -46,11 +46,11 @@
     "wcibuild_step5": "node build.mjs"
   },
   "peerDependencies": {
-    "@freesewing/core": "^3.0.0-alpha.0",
-    "@freesewing/plugin-bundle": "^3.0.0-alpha.0",
-    "@freesewing/config-helpers": "^3.0.0-alpha.0",
-    "@freesewing/brian": "^3.0.0-alpha.0",
-    "@freesewing/plugin-bust": "^3.0.0-alpha.0"
+    "@freesewing/core": "^3.0.0-alpha.1",
+    "@freesewing/plugin-bundle": "^3.0.0-alpha.1",
+    "@freesewing/config-helpers": "^3.0.0-alpha.1",
+    "@freesewing/brian": "^3.0.0-alpha.1",
+    "@freesewing/plugin-bust": "^3.0.0-alpha.1"
   },
   "dependencies": {},
   "devDependencies": {

@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/backend",
-  "version": "3.0.0-alpha.0",
+  "version": "3.0.0-alpha.1",
   "description": "The freesewing.org backend",
   "private": true,
   "main": "build/main.js",
@@ -52,7 +52,7 @@
     ]
   },
   "dependencies": {
-    "@freesewing/i18n": "^3.0.0-alpha.0",
+    "@freesewing/i18n": "^3.0.0-alpha.1",
     "axios": "0.27.2",
     "body-parser": "1.20.0",
     "chai": "^4.3.4",

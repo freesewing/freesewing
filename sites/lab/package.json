@@ -1,6 +1,6 @@
 {
   "name": "freesewing.lab",
-  "version": "3.0.0-alpha.0",
+  "version": "3.0.0-alpha.1",
   "private": true,
   "scripts": {
     "dev": "node --experimental-json-modules ../../node_modules/next/dist/bin/next dev -p 8000",

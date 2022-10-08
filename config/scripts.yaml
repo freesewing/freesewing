@@ -23,15 +23,15 @@ core:
   testci: 'mocha tests/*.test.mjs'
   prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
   lint: "npx eslint 'src/*.mjs' 'tests/*.mjs'"
-  jsdoc: "jsdoc -c jsdoc.json -r src"
+  jsdoc: 'jsdoc -c jsdoc.json -r src'
 i18n:
   prebuild: 'node scripts/prebuilder.mjs'
 models:
   test: 'npx mocha tests/*.test.mjs'
 new-design:
-  i18n-only: "node ../../sites/shared/prebuild/i18n-only.mjs"
-  build: "SITE=new-design/shared yarn i18n-only && cp ../../scripts/banner.mjs ./lib && node build.mjs"
-  wbuild: "set SITE=new-design/shared&& yarn i18n-only && copy ..\\..\\scripts\\banner.mjs .\\lib\\banner.mjs /Y && node build.mjs && set SITE="
+  i18n-only: 'node ../../sites/shared/prebuild/i18n-only.mjs'
+  build: '!'
+  wbuild: '!'
   lint: "npx eslint 'lib/*.mjs'"
   mbuild: '!'
   test: '!'
