@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/huey",
-  "version": "3.0.0-alpha.1",
+  "version": "3.0.0-alpha.2",
   "description": "A FreeSewing pattern for a zip-up hoodie",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -46,11 +46,11 @@
     "wcibuild_step5": "node build.mjs"
   },
   "peerDependencies": {
-    "@freesewing/core": "^3.0.0-alpha.1",
-    "@freesewing/plugin-bundle": "^3.0.0-alpha.1",
-    "@freesewing/config-helpers": "^3.0.0-alpha.1",
-    "@freesewing/brian": "^3.0.0-alpha.1",
-    "@freesewing/plugin-bust": "^3.0.0-alpha.1"
+    "@freesewing/core": "^3.0.0-alpha.2",
+    "@freesewing/plugin-bundle": "^3.0.0-alpha.2",
+    "@freesewing/config-helpers": "^3.0.0-alpha.2",
+    "@freesewing/brian": "^3.0.0-alpha.2",
+    "@freesewing/plugin-bust": "^3.0.0-alpha.2"
   },
   "dependencies": {},
   "devDependencies": {
