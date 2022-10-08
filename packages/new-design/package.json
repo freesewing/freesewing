@@ -28,7 +28,7 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "axios": "^0.27.2",
+    "axios": "^1.1.2",
     "chalk": "^5.0.1",
     "execa": "^6.1.0",
     "mustache": "^4.2.0",
