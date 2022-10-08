@@ -3,7 +3,7 @@ import DefaultErrorView from 'shared/components/error/view'
 const Error = (props) => {
   const errors = {
     pattern: 0,
-    set: 0,
+    sets: 0,
   }
   const warnings = {
     pattern: 0,
@@ -14,8 +14,8 @@ const Error = (props) => {
     warnings.pattern += props.patternLogs.warning.length
   }
   if (props.setLogs) {
-    errors.pattern += props.setLogs.error.length
-    warnings.pattern += props.setLogs.warning.length
+    errors.sets += props.setLogs.error.length
+    warnings.sets += props.setLogs.warning.length
   }
 
   const logInfo = []
@@ -25,10 +25,10 @@ const Error = (props) => {
         There are <strong>{errors.pattern} errors</strong> in the pattern logs
       </li>
     )
-  if (errors.set > 0)
+  if (errors.sets > 0)
     logInfo.push(
       <li>
-        There are <strong>{errors.set} errors</strong> in the draft logs
+        There are <strong>{errors.sets} errors</strong> in the draft logs
       </li>
     )
   if (warnings.pattern > 0)
@@ -37,10 +37,10 @@ const Error = (props) => {
         There are <strong>{warnings.pattern} warnings</strong> in the pattern logs
       </li>
     )
-  if (warnings.set > 0)
+  if (warnings.sets > 0)
     logInfo.push(
       <li>
-        There are <strong>{warnings.set} warnings</strong> in the draft logs
+        There are <strong>{warnings.sets} warnings</strong> in the draft logs
       </li>
     )
   const ic = (
