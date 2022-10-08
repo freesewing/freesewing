@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/new-design",
-  "version": "3.0.0-alpha.0",
+  "version": "3.0.0-alpha.1",
   "description": "Initializer package for a new FreeSewing design: npx @freesewing/new-design",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -18,20 +18,13 @@
     "freesewing"
   ],
   "type": "module",
-  "exports": {
-    ".": "./dist/index.mjs"
-  },
   "scripts": {
-    "build": "SITE=new-design/shared yarn i18n-only && cp ../../scripts/banner.mjs ./lib && node build.mjs",
     "clean": "rimraf dist",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
     "lint": "npx eslint 'lib/*.mjs'",
-    "i18n-only": "node ../../sites/shared/prebuild/i18n-only.mjs",
-    "wbuild": "set SITE=new-design/shared&& yarn i18n-only && copy ..\\..\\scripts\\banner.mjs .\\lib\\banner.mjs /Y && node build.mjs && set SITE=",
-    "cibuild_step6": "SITE=new-design/shared yarn i18n-only && cp ../../scripts/banner.mjs ./lib && node build.mjs",
-    "wcibuild_step6": "set SITE=new-design/shared&& yarn i18n-only && copy ..\\..\\scripts\\banner.mjs .\\lib\\banner.mjs /Y && node build.mjs && set SITE="
+    "i18n-only": "node ../../sites/shared/prebuild/i18n-only.mjs"
   },
   "peerDependencies": {},
   "dependencies": {
@@ -47,7 +40,6 @@
   "files": [
     "README.md",
     "package.json",
-    "dist/*",
     "lib/**/*",
     "shared/**/*",
     "templates/**/*",
@@ -63,6 +55,6 @@
     "npm": ">=8"
   },
   "bin": {
-    "new-design": "dist/index.js"
+    "new-design": "./index.mjs"
   }
 }
