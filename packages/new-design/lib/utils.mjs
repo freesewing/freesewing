@@ -139,7 +139,7 @@ const copyTemplate = async (config, choices) => {
     if (!dirs[to]) await ensureDir(to)
     // Template out file
     const src = await readFile(from, 'utf-8')
-    promises.push(writeFile(to, mustache.render(src, { name: choices.name })))
+    promises.push(writeFile(to, mustache.render(src, { name: choices.name, tag: config.tag })))
   }
 
   await Promise.all(promises)
