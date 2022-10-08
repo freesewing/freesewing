@@ -34,9 +34,9 @@ const views = {
 }
 
 const hasRequiredMeasurementsMethod = (design, gist) => {
-  if (design.patternConfig.measurements.length && !gist.measurements) return false
+  if (design.patternConfig?.measurements?.length > 0 && !gist.measurements) return false
 
-  for (const m of design.patternConfig.measurements || []) {
+  for (const m of design.patternConfig?.measurements || []) {
     if (!gist.measurements[m]) return false
   }
 
@@ -118,7 +118,8 @@ const WorkbenchWrapper = ({ app, design, preload = false, from = false, layout =
     gist.layout = gist.layouts?.[gist._state.view] || gist.layout || true
     // hand it separately to the design
     draft = new design(gist)
-    draft.__init()
+    console.log({ draft, design })
+    //draft.__init()
 
     // add theme to svg renderer
     if (gist.renderer === 'svg') draft.use(theme)
