@@ -40,9 +40,7 @@
     "wbuild": "node build.mjs",
     "wcibuild_step6": "node build.mjs"
   },
-  "peerDependencies": {
-    "@freesewing/utils": "^3.0.0-alpha.2"
-  },
+  "peerDependencies": {},
   "dependencies": {},
   "devDependencies": {},
   "files": [
