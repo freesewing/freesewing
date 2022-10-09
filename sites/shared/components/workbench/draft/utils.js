@@ -23,7 +23,7 @@ export const getProps = (obj) => {
   let rename = {
     class: 'className',
     'marker-start': 'markerStart',
-    'marker-end': 'markerEnd'
+    'marker-end': 'markerEnd',
   }
   let props = {}
   for (let key in obj.attributes.list) {
@@ -37,10 +37,17 @@ export const getProps = (obj) => {
 
 export const dx = (pointA, pointB) => pointB.x - pointA.x
 export const dy = (pointA, pointB) => pointB.y - pointA.y
-export const rad2deg = radians => radians * 57.29577951308232
+export const rad2deg = (radians) => radians * 57.29577951308232
 export const angle = (pointA, pointB) => {
   let rad = Math.atan2(-1 * dy(pointA, pointB), dx(pointA, pointB))
   while (rad < 0) rad += 2 * Math.PI
 
   return rad2deg(rad)
 }
+export const withinPartBounds = (point, part) =>
+  point.x >= part.topLeft.x &&
+  point.x <= part.bottomRight.x &&
+  point.y >= part.topLeft.y &&
+  point.y <= part.bottomRight.y
+    ? true
+    : false

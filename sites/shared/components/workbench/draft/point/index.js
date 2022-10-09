@@ -1,31 +1,31 @@
 import Text from '../text'
 import Circle from '../circle'
 import { Tr, KeyTd, ValTd, Attributes, pointCoords } from '../path/index'
+import { withinPartBounds } from '../utils.js'
 
-const RevealPoint = props => {
+const RevealPoint = (props) => {
   const r = 15 * props.gist.scale
   const { x, y } = props.point
   const { topLeft, bottomRight } = props.part
-  const i = Object.keys(props.gist._state.xray.reveal[props.partName].points).indexOf(props.pointName)%10
+  const i =
+    Object.keys(props.gist._state.xray.reveal[props.partName].points).indexOf(props.pointName) % 10
   const classes = `stroke-sm stroke-color-${i} stroke-dashed`
   return (
     <g>
-      <circle
-        cx={x}
-        cy={y}
-        r={r}
-        className={classes}
-    />
-    <path d={`
+      <circle cx={x} cy={y} r={r} className={classes} />
+      <path
+        d={`
       M ${x} ${topLeft.y} L ${x} ${y - r}
-      m 0 ${2*r} L ${x} ${bottomRight.y}
+      m 0 ${2 * r} L ${x} ${bottomRight.y}
       M ${topLeft.x} ${y} L ${x - r} ${y}
-      m ${2*r} 0 L ${bottomRight.x} ${y}`} className={classes} />
+      m ${2 * r} 0 L ${bottomRight.x} ${y}`}
+        className={classes}
+      />
     </g>
   )
 }
-const pointInfo = (props) => props.point
-  ? (
+const pointInfo = (props) =>
+  props.point ? (
     <div className="p-4 border bg-neutral bg-opacity-60 shadow rounded-lg">
       <h5 className="text-neutral-content text-center pb-4">Point info</h5>
       <table className="border-collapse h-fit">
@@ -44,30 +44,31 @@ const pointInfo = (props) => props.point
           </Tr>
           <Tr>
             <KeyTd>Attributes</KeyTd>
-            <ValTd><Attributes list={props.point.attributes.list} /></ValTd>
+            <ValTd>
+              <Attributes list={props.point.attributes.list} />
+            </ValTd>
           </Tr>
         </tbody>
       </table>
       <div className="flex flex-col flex-wrap gap-2 mt-4">
-        <button
-          className="btn btn-success"
-          onClick={() => console.log(props.point)}
-        >console.log(point)</button>
-        <button
-          className="btn btn-success"
-          onClick={() => console.table(props.point)}
-        >console.table(point)</button>
+        <button className="btn btn-success" onClick={() => console.log(props.point)}>
+          console.log(point)
+        </button>
+        <button className="btn btn-success" onClick={() => console.table(props.point)}>
+          console.table(point)
+        </button>
       </div>
     </div>
   ) : null
 
-const XrayPoint = props => (
+const XrayPoint = (props) => (
   <g>
     <circle
       cx={props.point.x}
       cy={props.point.y}
       r={2 * props.gist.scale}
-      className="stroke-sm stroke-lining fill-lining fill-opacity-25" />
+      className="stroke-sm stroke-lining fill-lining fill-opacity-25"
+    />
     <circle
       cx={props.point.x}
       cy={props.point.y}
@@ -75,15 +76,16 @@ const XrayPoint = props => (
       className="opacity-0 stroke-lining fill-lining hover:opacity-25 hover:cursor-pointer"
       onClick={(evt) => {
         props.showInfo(pointInfo(props))
-        evt.stopPropagation();
+        evt.stopPropagation()
       }}
     />
   </g>
 )
 
-
-const Point = props => {
-  const { point, pointName, partName, gist } = props
+const Point = (props) => {
+  const { point, pointName, partName, gist, part } = props
+  // Don't include parts outside the part bounding box
+  if (!withinPartBounds(point, part)) return null
   const output = []
   if (gist._state?.xray?.enabled) {
     // Xray for points
