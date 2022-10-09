@@ -65,6 +65,10 @@ diana:
   peer:
     '@freesewing/brian': *freesewing
     '@freesewing/plugin-bust': *freesewing
+examples:
+  peer:
+    '@freesewing/plugin-mirror': *freesewing
+    '@freesewing/plugin-gore': *freesewing
 holmes:
   _:
     '@freesewing/plugin-gore': *freesewing

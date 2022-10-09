@@ -24,6 +24,10 @@ design:
   - pattern
   - sewing
   - sewing pattern
+examples:
+  - documentation
+  - example
+  - parametric design
 i18n:
   - i18n
   - internationalisation

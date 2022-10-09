@@ -689,6 +689,12 @@
 
  - Migrated from Rollup to Esbuild for all builds
 
+### examples
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
 ### legend
 
 #### Changed
@@ -1271,6 +1277,16 @@
  - Switched to default import for version from package.json
 
 ### yuri
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### examples
+
+#### Added
+
+ - Added plugin_gore example
 
 #### Changed
 
@@ -2526,6 +2542,13 @@
  - Extended range and inreased default of the healEase option
  - Added the (disabled) waistbandHeight option from Titan
  - Changed to Titan's waistbandWidth option
+
+### examples
+
+#### Added
+
+ - Added examples for bartack plugin
+ - Added examples for new buttonhole-start/end snippets
 
 ### plugin-buttons
 
@@ -4011,6 +4034,12 @@
  - Initial release
 
 ### wahid
+
+#### Added
+
+ - Initial release
+
+### examples
 
 #### Added
 
