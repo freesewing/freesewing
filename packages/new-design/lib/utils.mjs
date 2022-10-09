@@ -58,6 +58,7 @@ export const getChoices = async () => {
     name: 'template',
     message: 'What template would you like to use? 📑',
     choices: [
+      { title: 'Tutorial', value: 'tutorial', description: 'Setup the pattern design tutorial' },
       { title: 'From Scratch', value: 'scratch', description: 'Create a design from scratch' },
       {
         title: 'Extend Brian',
@@ -88,17 +89,20 @@ export const getChoices = async () => {
     initial: 0,
   })
 
-  const { name } = await prompts({
-    type: 'text',
-    name: 'name',
-    message: 'What name would you like the design to have? 🏷️ ([a-z] only)',
-    validate: validateDesignName,
-  })
+  const { name } =
+    template === 'tutorial'
+      ? { name: 'tutorial' }
+      : await prompts({
+          type: 'text',
+          name: 'name',
+          message: 'What name would you like the design to have? 🏷️ ([a-z] only)',
+          validate: validateDesignName,
+        })
 
   const { manager } = await prompts({
     type: 'select',
     name: 'manager',
-    message: 'Last but not least, what package manager do you use? 📦',
+    message: 'What package manager should we use? 📦',
     choices: [
       { title: 'yarn', value: 'yarn', description: 'Yarn - Nice if you have it' },
       { title: 'npm', value: 'npm', description: 'NPM - Comes with NodeJS' },
@@ -193,7 +197,7 @@ const initGitRepo = async (config, choices) => {
 }
 
 // Tips
-const showTips = (config, choices) =>
+const showTips = (config, choices) => {
   console.log(`
   All done 🤓 Your new design ${chalk.yellow.bold(
     choices.name
@@ -211,7 +215,29 @@ const showTips = (config, choices) =>
     3) Now open your browser and navigate to ${chalk.green('http://localhost:8000/')}
 
   ${chalk.bold.yellow('🤔 More info & help')}
-  ${chalk.gray('≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡')}
+  ${chalk.gray('≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡')}`)
+
+  if (choices.template === 'tutorial')
+    console.log(`
+  Our pattern design tutorial is available at: ${chalk.green(
+    'https://freesewing.dev/tutorials/pattern-design'
+  )}
+
+  It will walk your through the process step by step.
+  If you get stuck, reach out to our community on Discord: ${chalk.green(
+    'https://discord.freesewing.dev/'
+  )}
+  The ${chalk.bold('development-help')} channel is a good place to ask questions
+
+  Don't be shy to reach out. If something is not clear, that's on us, not on you.
+  So your feedback really helps us improve our tutorial/documentation.
+
+  Thanks for giving FreeSewing a shot. We hope you'll 💜 it.
+
+  Have fun 🤓
+  `)
+  else
+    console.log(`
 
   FreeSewing's documentation for developers is available at: ${chalk.green(
     'https://freesewing.dev/'
@@ -220,9 +246,9 @@ const showTips = (config, choices) =>
   Our community is on Discord: ${chalk.green('https://discord.freesewing.dev/')}
   The ${chalk.bold('development-help')} channel is a good place to ask for help if you get stuck
 
-
   Happy hacking 🤓
-`)
+  `)
+}
 
 // Creates the environment based on the user's choices
 export const createEnvironment = async (choices) => {
