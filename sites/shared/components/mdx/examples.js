@@ -3,13 +3,14 @@ import Svg from '../workbench/draft/svg'
 import Defs from '../workbench/draft/defs'
 import Stack from '../workbench/draft/stack'
 import { useGist } from 'shared/hooks/useGist'
+import Md from 'react-markdown'
 
 const measurementSets = {
   tutorial: {
     head: 320,
   },
 }
-const ExamplesComponent = ({ app, part, xray = false }) => {
+const ExamplesComponent = ({ app, part, caption = false, xray = false }) => {
   // State for gist
   const { gist, unsetGist, updateGist } = useGist('examples-mdx', app)
 
@@ -32,21 +33,28 @@ const ExamplesComponent = ({ app, part, xray = false }) => {
     )
 
   return (
-    <Svg {...patternProps} embed={true}>
-      <Defs {...patternProps} />
-      <style>{`:root { --pattern-scale: 1} ${patternProps.svg.style}`}</style>
-      <g>
-        {Object.keys(patternProps.stacks).map((stackName) => (
-          <Stack
-            {...{ app, gist, updateGist, unsetGist, patternProps }}
-            showInfo={app.setPopup}
-            key={stackName}
-            stackName={stackName}
-            stack={patternProps.stacks[stackName]}
-          />
-        ))}
-      </g>
-    </Svg>
+    <div className="my-8">
+      <Svg {...patternProps} embed={true}>
+        <Defs {...patternProps} />
+        <style>{`:root { --pattern-scale: 1} ${patternProps.svg.style}`}</style>
+        <g>
+          {Object.keys(patternProps.stacks).map((stackName) => (
+            <Stack
+              {...{ app, gist, updateGist, unsetGist, patternProps }}
+              showInfo={app.setPopup}
+              key={stackName}
+              stackName={stackName}
+              stack={patternProps.stacks[stackName]}
+            />
+          ))}
+        </g>
+      </Svg>
+      {caption && (
+        <div className="text-center italic -mt-4">
+          <Md>{caption}</Md>
+        </div>
+      )}
+    </div>
   )
 }
 

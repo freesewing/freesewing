@@ -71,7 +71,13 @@ const mdxLoader = async (language, site, slug, jargon) => {
           {
             plainText: ['dot', 'http'],
             aliases: {
-              javascript: ['index.mjs', 'part.mjs', 'bib.mjs'],
+              javascript: [
+                'design/src/index.mjs',
+                'design/src/bib.mjs',
+                'index.mjs',
+                'part.mjs',
+                'bib.mjs',
+              ],
               markdown: ['en.md'],
             },
           },
