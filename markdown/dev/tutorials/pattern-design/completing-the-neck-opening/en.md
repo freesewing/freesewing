@@ -64,6 +64,6 @@ paths.neck = new Path()
   .close()
 ```
 
-<Example pattern="tutorial" part="step4">
-And now you have a complete neck opening
-</Example>
+<Examples pattern="tutorial" part="tutorial.step4" />
+
+_And now you have a complete neck opening._

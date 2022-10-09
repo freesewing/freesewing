@@ -45,9 +45,9 @@ Click on any of the options we've added to our pattern, and your bib will be dra
 
 The `lengthRatio` option controls the length of our bib. Testing it confirms that it only influences the length:
 
-<Example sample part="bib" pattern="tutorial" settings={{ sample: { type: "option", option: "lengthRatio" } }}>
-Your bib with the lengthRatio option sampled
-</Example>
+<Examples sample part="tutorial.bib" pattern="tutorial" settings={{ sample: { type: "option", option: "lengthRatio" } }} />
+
+_Your bib with the lengthRatio option sampled._
 
 ### neckRatio
 
@@ -58,9 +58,9 @@ neck opening.
 Testing it confirms this. We can also see that as the neck opening gets smaller, we will rotate the straps
 further out of the way to avoid overlap:
 
-<Example sample part="bib" pattern="tutorial" settings={{ sample: { type: "option", option: "neckRatio" } }} >
-Your bib with the neckRatio option sampled
-</Example>
+<Examples sample part="tutorial.bib" pattern="tutorial" settings={{ sample: { type: "option", option: "neckRatio" } }} />
+
+_Your bib with the neckRatio option sampled._
 
 ### widthRatio
 
@@ -81,9 +81,9 @@ covered in this tutorial. It is left _as an exercise to the reader_.
 
 </Note>
 
-<Example sample part="bib" pattern="tutorial" settings={{ sample: { type: "option", option: "widthRatio" } }}>
-Your bib with the widthRatio option sampled
-</Example>
+<Examples sample part="tutorial.bib" pattern="tutorial" settings={{ sample: { type: "option", option: "widthRatio" } }} />
+
+_Your bib with the widthRatio option sampled._
 
 ## Testing measurements
 
@@ -92,9 +92,9 @@ This gives you the option to determine how any given measurement is influencing 
 
 For our bib, we only use one measurement, so it influences the entire pattern:
 
-<Example sample part="bib" pattern="tutorial" settings={{ sample: { type: "measurement", measurement: "head" } }}>
-Your bib with the head circumference measurement sampled
-</Example>
+<Examples sample part="tutorial.bib" pattern="tutorial" settings={{ sample: { type: "measurement", measurement: "head" } }} />
+
+_Your bib with the head circumference measurement sampled._
 
 ## Testing models
 
@@ -108,9 +108,9 @@ set of measurements.
 But most patterns use multiple measurements, and you'll find this test gives you insight into how your
 pattern will adapt to differently sized bodies.
 
-<Example sample pattern="tutorial" part="bib" settings={{ sample: { type: "models", models: { baby1: { head: 340 }, baby2: { head: 350 }, baby3: { head: 360 }, baby4: { head: 370 }, baby5: { head: 380 }, baby6: { head: 390 }, baby7: { head: 400 }, baby8: { head: 410 }, baby9: { head: 420 } } } }}>
-Your bib sampled for a range of baby sizes
-</Example>
+<Examples sample pattern="tutorial" part="tutorial.bib" settings={{ sample: { type: "models", models: { baby1: { head: 340 }, baby2: { head: 350 }, baby3: { head: 360 }, baby4: { head: 370 }, baby5: { head: 380 }, baby6: { head: 390 }, baby7: { head: 400 }, baby8: { head: 410 }, baby9: { head: 420 } } } }} />
+
+_Your bib sampled for a range of baby sizes._
 
 ## The antperson test
 
@@ -128,8 +128,8 @@ don't scale, and you should avoid them.
 
 The best patterns will pass the antperson test with 2 patterns exactly the same, where one will simply be 1/10th the scale of the other.
 
-<Example sample pattern="tutorial" part="bib" settings={{ sample: { type: "models", models: { ant: { head: 39 }, man: { head: 390 }, } } }}>
-Congratulations, your bib passes the antperson test
-</Example>
+<Examples sample pattern="tutorial" part="tutorial.bib" settings={{ sample: { type: "models", models: { ant: { head: 39 }, man: { head: 390 }, } } }} />
+
+_Congratulations, your bib passes the antperson test!_
 
 When you're happy with how your pattern passes these tests, it's time to complete it.

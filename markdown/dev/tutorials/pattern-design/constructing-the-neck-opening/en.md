@@ -100,7 +100,9 @@ From there, we drew a Bezier curve to our `bottom` point by using `rightCp1` and
 
 When all is said and done, we now have a quarter of our neck opening:
 
-<Example pattern="tutorial" part="step2">You have drawn your first path</Example>
+<Examples pattern="tutorial" part="tutorial.step2" />
+
+_You have drawn your first path._
 
 The only problem is, we have no guarantee whatsoever that this opening is the correct size.
 

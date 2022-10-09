@@ -81,8 +81,8 @@ This will help with debugging when the error is reported coming from the `draftB
 Congratulations, your pattern now has a `bib` part, rather than a `box` part.
 It still looks the same though:
 
-<Example pattern="tutorial" part="step1">
-Our bib part, which is the renamed box part
-</Example>
+<Examples pattern="tutorial" part="tutorial.step1" />
+
+_Our bib part, which is the renamed box part._
 
 This `bib` part is where we'll do some real work. But first, we have some more configuration to do.

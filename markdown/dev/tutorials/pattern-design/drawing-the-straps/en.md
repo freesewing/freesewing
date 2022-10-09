@@ -113,9 +113,9 @@ You can also remove the `hide` lines completely. More on this in the next sectio
 
 With that out of the way, our bib now looks like this:
 
-<Example pattern="tutorial" part="step9">
-That is looking a lot like a bib
-</Example>
+<Examples pattern="tutorial" part="tutorial.step9" />
+
+_That is looking a lot like a bib._
 
 <Note> 
 

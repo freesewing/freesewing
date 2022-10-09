@@ -84,9 +84,9 @@ if (paperless) {
 
 There's a lot going on, but it's mostly repetition. To see what that did to your pattern, you have to enable _paperless mode_ in your developing environment; you can find the option under _Pattern options_ on the right. Let's look at the end result, and discuss:
 
-<Example pattern="tutorial" part="bib" settings_paperless="true">
-Your paperless bib
-</Example>
+<Examples pattern="tutorial" part="tutorial.bib" settings_paperless="true" />
+
+_Your paperless bib._
 
 We used the `hd` macro to add two horizontal dimensions:
 

@@ -41,4 +41,6 @@ For example `38` as 38cm is a realistic head circumference measurement for a bab
 Enter `38` in the box, and click on **Draft Design** in the sidebar under the **View** heading.
 This brings you back to our work in progress:
 
-<Example pattern="tutorial" part="step1">Nothing has changed, yet</Example>
+<Examples pattern="tutorial" part="tutorial.step1" />
+
+_Nothing has changed, yet._

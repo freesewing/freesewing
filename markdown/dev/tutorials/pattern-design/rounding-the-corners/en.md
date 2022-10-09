@@ -71,6 +71,6 @@ and keep the rest of the path as it was.
 
 The shape our bib is now completed:
 
-<Example pattern="tutorial" part="step10">
-That is looking a lot like a bib
-</Example>
+<Examples pattern="tutorial" part="tutorial.step10" />
+
+_That is looking a lot like a bib._

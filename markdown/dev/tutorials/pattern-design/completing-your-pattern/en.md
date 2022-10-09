@@ -193,8 +193,8 @@ macro("scalebox", { at: points.scalebox })
 
 And with that, our pattern is now _complete_:
 
-<Example pattern="tutorial" part="step11">
-We used attributes to add color, dashes, text on a path and even opacity
-</Example>
+<Examples pattern="tutorial" part="tutorial.step11" />
+
+_We used attributes to add color, dashes, text on a path and even opacity._
 
 We're not done yet though. There's one more thing the user can ask for: a _paperless_ pattern.
