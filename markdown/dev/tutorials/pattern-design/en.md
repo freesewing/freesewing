@@ -11,7 +11,7 @@ translate your designs into code.
 
 At the end of this tutorial, you will have created this pattern:
 
-<Examples part="tutorial.step11">Your end result</Examples>
+<Examples part="tutorial.step11" caption="Your end result" />
 
 Before we can get started, let's make sure you have the required software
 installed on your computer:

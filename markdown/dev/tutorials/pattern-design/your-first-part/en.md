@@ -4,74 +4,137 @@ order: 120
 ---
 
 Much like garments themselves, patterns are made up of _parts_.
+Most patterns will have multiple parts. A sleeve, a back part, the collar, and
+so on. Our pattern is very simple, and only has one part: the bib.
 
-Most patterns will have multiple parts. A sleeve, a back part, the collar, and so on.
-Our pattern is very simple, and only has one part: the bib.
+It's a good idea to keep each part in its own file. You don't *have to* do
+this, but it's a good habit to get into. When you create more elaborate designs
+with multiple parts, keeping each in its own file makes for a more tidy
+and approachable code base.  
 
-The pattern that's been created for us also just has one part to get you started.
-It's called **box** and it draws a box. If you click on the **To your design**
-button in your browser, you'll get to see it:
+## bib.mjs
 
-![The default pattern with its box part](./step1.png)
+The previous step has already set everything up for us. Our design's main file
+lives in `design/src/index.mjs`, and our part lives in `design/src/bib.mjs`.
 
-Since we only need one part, we'll rename this _box_ part, and call it _bib_.
+This `bib.mjs` is where we'll do all our work. It currently looks like this:
 
-## Rename the box part to bib
+```design/src/bib.mjs
+function draftBib({ part }) {
 
-First, update the configuration file in `design/config.js`.
-Update the **parts** array with `bib`, rather than `box`:
+  return part
+}
 
-```js
-parts: ['bib'],
+export const bib = {
+  name: 'tutorial.bib',
+  draft: draftBib,
+}
 ```
 
-<Note>
+### The part object
 
-##### Don't worry about the big red error
+Each part in FreeSewing is an object that describes everything there is to know about the part.
 
-This will (temporarily) cause en error to appear in your development environment, because the rest of the code is still expecting to find a part named `box`, but we will fix this in the next steps.
+The only mandatory keys on a part object are `name` and `draft`.
 
-</Note>
+<Related>
+Refer to [the part reference documentation](/reference/api/part) for 
+all details about configuring the part object 
+</Related>
 
-When that's done, rename the `design/src/box.js` file into `design/src/bib.js`.
+#### The part name
 
-Then, in the `design/src/index.js` file, change the import accordingly:
-
-```js
-// Change this line
-//import draftBox from "./box"
-
-// Into this
-import draftBib from "./bib"
+```design/src/bib.mjs
+  name: 'tutorial.bib',
 ```
 
-Finally, still in the `design/src/index.js` file, update the draft method:
+A part's `name` should be unique in a pattern. Apart from that, anything goes.
+Although you probably want to give it a sensible name.
 
-```js
-// Change this line
-//Design.prototype.draftBox = draftBox
-
-// Into this
-Design.prototype.draftBib = draftBib
-```
+As you can see in the example above, we're using `tutorial.bib` as the name.
 
 <Tip>
-
-###### Always use draftPartname
-
-FreeSewing will expect for each part to find a method named Draft\_Partname\_.
-
-If you have a part named `sleeve` you should have a method called `draftSleeve()` that drafts that part.
-
-In our case, we have a part named `bib` so we're using `draftBib()` as the method that drafts it.
-
+We **strongly** recommend to follow this `design.part` naming scheme to avoid
+naming conflicts when mixing parts from various designs to create new designs.
 </Tip>
 
-Congratulations, your pattern now has a `bib` part, rather than a `box` part.
-It still looks the same though:
+#### The part's draft method
 
-<Example pattern="tutorial" part="step1">
-Our bib part, which is the renamed box part
-</Example>
+```design/src/bib.mjs
+  draft: draftBib,
+```
 
-This `bib` part is where we'll do some real work. But first, we have some more configuration to do.
+The second mandatory key on the part object is `draft` which should hold the method that drafts the part.
+
+In our example above, it refers to the `draftBib` function we defined at the top of the file.
+For now this function doesn't do much, but that will change soon enough.
+
+<Note> 
+This structure of putting the draft method at the top of the file and
+the part object at the bottom is a bit of a convention in FreeSewing. 
+</Note>
+
+## index.mjs
+
+<Tip>
+Feel free to skip to [Adding
+measurements](/tutorials/pattern-design/adding-measurements) if you're itching
+to get started.  Or, read on for an explanation of what's going on in the
+`index.mjs` file.
+</Tip>
+
+The `index.mjs` file is already complete and we won't be making any changes to
+it.  But for those who are curious about what's going on inside `index.mjs`,
+we're including a version with comments below:
+
+```design/src/index.mjs
+/*
+ * Import the `Design` constructor 
+ * from the FreeSewing core library
+ *
+ * This Design constructor is a method 
+ * (also known as a function) 
+ * that creates a new Design
+ */
+import { Design } from '@freesewing/core'
+/*
+ * Import the `bib` part from the bib.mjs file
+ * in the same folder as this index.mjs file
+ *
+ * This is the part we'll be working on 
+ * in this tutorial
+ */
+import { bib } from './bib.mjs'
+
+/*
+ * Create a new Pattern by passing 
+ * a configuration object
+ * to the Design contructor
+ */
+const Pattern = new Design({
+  /*
+   * This `data` key is optional, but we 
+   * typically add a name and version here
+   */
+  data: {
+    version: "0.0.1",
+    name: "Tutorial",
+  },
+  /*
+   * This `parts` key is the most important thing
+   * It holds a list of `parts` for our Design.
+   * A Pattern/Design is in the end not much more 
+   * than a collection of parts. 
+   */
+  parts: [ bib ],
+})
+
+/*
+ * We are exporting our Pattern
+ * (so others can use it)
+ * but we also (re-)export our bib part
+ * this allows others to re-use it 
+ * in their own designs
+ */
+export { bib, Pattern }
+```

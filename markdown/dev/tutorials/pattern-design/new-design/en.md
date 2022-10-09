@@ -6,14 +6,15 @@ order: 100
 Open a terminal and enter the following command:
 
 ```sh
-npx @freesewing/new-design
+npx @freesewing/new-design@next
 ```
+<Fixme compact>Remove `@next` suffix once v3 is in production</Fixme>
 
-You'll be asked some questions, use these answers:
+You'll be asked some questions. 
+All the defaults will do, but here are the details:
 
-- **What template would you like to use?**: Pick the default `From scratch`
-- **What name would you like the design to have**: Enter `bib`
-- **What package manager do you use?**: Pick `npm` unless you are certain you have `yarn` installed
+- *What template would you like to use?* — Pick the default: **Tutorial**
+- *What package manager should we use?* — Pick the default: **npm**, unless you are certain you have **yarn** installed
 
 After you've answered these questions, files will be copied, dependencies installed, and components downloaded.
 
@@ -23,17 +24,17 @@ This will take a few minutes because we're loading some software for your develo
 
 </Note>
 
-When it's ready, enter the `bib` directory that was just created and run `npm run dev`:
+When it's ready, enter the `tutorial` directory that was just created and run `npm run dev`:
 
 ```sh
-cd bib
+cd tutorial
 npm run dev
 ```
 
-Or if you chose to use Yarn as package manager:
+Or if you chose to use yarn as package manager:
 
 ```sh
-cd bib
+cd tutorial
 yarn dev
 ```
 
@@ -43,11 +44,9 @@ If all goes well, you should see this landing page:
 
 ![The FreeSewing development environment](./nd.png)
 
-<Note>
+## Notes
 
-###### Need help?
+### Need help?
 
 If you run into any issues, [join our **#development-help** chat room on on
 Discord](https://discord.freesewing.org/) and we'll figure it out together.
-
-</Note>
