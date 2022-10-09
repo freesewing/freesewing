@@ -26,7 +26,8 @@ const part = {
     plugin1, 
     plugin1, 
     [ plugin3, dataForPlugin3 ],
-  ]
+  ],
+  draft: ({ part }) => part
 }
 ```
 
