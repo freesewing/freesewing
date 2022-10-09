@@ -6,8 +6,18 @@ order: 260
 When we started out, we said a good part boilerplate looks like this:
 
 ```js
-export default function(part) {
-  const { Point, points, Path, paths, complete, sa, paperless } = part.shorthand()
+import { pluginBundle } from '@freesewing/plugin-bundle'
+
+function draftBib({
+  Point,
+  points,
+  Path,
+  paths,
+  complete,
+  sa,
+  paperless,
+  part,
+}) {
   // Design pattern here
 
   // Complete?
@@ -19,6 +29,17 @@ export default function(part) {
     }
   }
   return part
+}
+
+export const bib = {
+  name: 'bib.bib',
+  measurements: [ 'head' ],
+  options: {
+    neckRatio: { pct: 80, min: 70, max: 90, menu: 'fit' },
+    widthRatio: { pct: 45, min: 35, max: 55, menu: 'fit' },
+    lengthRatio: { pct: 75, min: 55, max: 85, menu: 'fit' },
+  }
+  plugins: [ pluginBundle, ],
 }
 ```
 
@@ -37,12 +58,12 @@ This has different uses, such as generating patterns to be cut out with a laser 
 </Note>
 
 The `complete` setting is `true` by default, but the user can change it.
-To access the setting, we merely have to tell `part.shorthand()` that we'd like to access it.
+To access the setting, we merely have to pass it into the draft method so we can use it.
 
 While we're at it, also add `snippets` and `Snippet`, like this:
 
 ```js
-const {
+function draftBib({
   Point,
   points,
   Path,
@@ -53,10 +74,10 @@ const {
   measurements,
   options,
   macro,
-  complete,
   snippets,
-  Snippet
-} = part.shorthand()
+  Snippet,
+  part,
+}) {
 ```
 
 ## Adding snippets

@@ -17,10 +17,10 @@ To accomplish this, update the code and add this one line:
 paths.quarterNeck = new Path()
 	  .move(points.right)
 	  .curve(points.rightCp1, points.bottomCp2, points.bottom)
-    .setRender(false) // <== Add this line
+    .hidden(true) // <== Add this line
 ```
 
-We're saying: don't render this path. In other words, don't show it.
+We're saying: hide or don't show this path. In other words, don't render it.
 The path is now known, and we can still use it to calculate the length of the neck opening.
 But it won't show up on screen or on the page.
 

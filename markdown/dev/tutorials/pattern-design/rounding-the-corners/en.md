@@ -26,21 +26,21 @@ But there's still something to be learned here. If you look at our earlier use o
 you'll notice that we used this line in the beginning:
 
 ```js
-  render: true,
+  hide: false,
 ```
 
 This instructs the `round` macro create a path that draws the rounded corner.
-Whereas by default, it merely constructs the points required to round the corner.
+Whereas by default, it merely constructs the points required to round the corner but does not draw the actual corner.
 
 Typically, your rounded corner will be part of a larger path and so you don't want the macro
-to draw it. That's why the `round` macro's `render` property defaults to `false`.
+to draw it. That's why the `round` macro's `hide` property defaults to `true`.
 
 We've left it out here, and you should also remove it from your earlier use of the `round` macro.
-We merely set `render` to `true` and then `false` at that time so you could see what the macro was doing.
+We merely set `hide` to `false` and then `true` at that time so you could see what the macro was doing.
 
 <Note>
 
-There is no need to explicitly specify a default value. While writing `render: false,` also works, it clutters up your code a bit.
+There is no need to explicitly specify a default value. While writing `hide: true,` also works, it clutters up your code a bit.
 
   </Note>
 

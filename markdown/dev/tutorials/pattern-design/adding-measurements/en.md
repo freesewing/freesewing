@@ -15,10 +15,10 @@ So let's add it as a required measurement.
 
 ## Add required measurements
 
-Open the config file at `design/config.js` and update the `measurements` array with the name of our required measurement:
+Open the part file at `design/src/bib.mjs` and update the `measurements` array with the name of our required measurement:
 
 ```js
-measurements: ["head"],
+measurements: ['head'],
 ```
 
 <Tip>

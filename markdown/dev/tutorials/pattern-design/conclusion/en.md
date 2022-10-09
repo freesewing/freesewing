@@ -19,7 +19,7 @@ you have learned a bunch of things along the way. Let's list some of the things 
 - You learned [how to offset a path](/tutorials/pattern-design/completing-your-pattern#seam-allowance) to create seam allowance, or in our case, mark the bias tape line
 - You learned how to create a [paperless pattern](/tutorials/pattern-design/paperless-bib) by adding dimensions
 
-You can find the complete code of the tutorial pattern [here on GitHub](https://github.com/freesewing/freesewing/blob/develop/designs/tutorial/src/bib.js).
+You can find the complete code of the tutorial pattern [here on GitHub](https://github.com/freesewing/freesewing/blob/develop/designs/tutorial/src/bib.mjs).
 
 ## More reading material
 

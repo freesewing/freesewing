@@ -93,21 +93,21 @@ macro("round", {
   to: points.tipRight,
   via: points.tipRightTop,
   prefix: "tipRightTop",
-  render: false // set this from true to false
+  hide: true // set this from false to true
 })
 macro("round", {
   from: points.tipRight,
   to: points.top,
   via: points.tipRightBottom,
   prefix: "tipRightBottom",
-  render: false // set this from true to false
+  hide: true // set this from false to true
 })
 
 ```
 
 <Note>
 
-You can also remove the `render` line completely. More on this in the next section.
+You can also remove the `hide` lines completely. More on this in the next section.
 
 </Note>
 

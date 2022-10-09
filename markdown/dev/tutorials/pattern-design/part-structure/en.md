@@ -4,11 +4,21 @@ order: 150
 ---
 
 Let's get rid of the example box first.
-Open `design/src/bib.js` and make sure it looks like this:
+Open `design/src/bib.mjs` and edit the file so it looks like this:
 
 ```js
-export default function(part) {
-  const { Point, points, Path, paths, complete, sa, paperless } = part.shorthand()
+import { pluginBundle } from '@freesewing/plugin-bundle'
+
+function draftBib({
+  Point,
+  points,
+  Path,
+  paths,
+  complete,
+  sa,
+  paperless,
+  part,
+}) {
   // Design pattern here
 
   // Complete?
@@ -21,6 +31,17 @@ export default function(part) {
   }
   return part
 }
+
+export const bib = {
+  name: 'bib.bib',
+  measurements: [ 'head' ],
+  options: {
+    neckRatio: { pct: 80, min: 70, max: 90, menu: 'fit' },
+    widthRatio: { pct: 45, min: 35, max: 55, menu: 'fit' },
+    lengthRatio: { pct: 75, min: 55, max: 85, menu: 'fit' },
+  }
+  plugins: [ pluginBundle, ],
+}
 ```
 
 This is an empty skeleton for a pattern part. Anytime you want to create a new part,
@@ -32,8 +53,16 @@ Even if there's not much going on yet, it's always good to understand what's goi
 ## The draft method
 
 ```js
-export default function(part) {
-
+function draftBib({
+  Point,
+  points,
+  Path,
+  paths,
+  complete,
+  sa,
+  paperless,
+  part,
+}) {
   // ...
   
   return part
@@ -41,7 +70,7 @@ export default function(part) {
 
 ```
 
-This is the boilerplate of our `draftBib` method. It takes the part as an argument, and returns it.
+This is the boilerplate of our `draftBib` method. It takes a number of Part shorthand objects and the part as arguments, and returns the part.
 
 <Note>
 
@@ -49,19 +78,22 @@ If you're new to JavaScript, and don't intuitively _get this_, stick with it. It
 
 </Note>
 
-## Using shorthand
+## Using shorthand objects
 
 ```js
-let {
+function draftBib({
   Point,
   points,
   Path,
   paths,
-} = part.shorthand()
+  complete,
+  sa,
+  paperless,
+  part,
+}) {
 ```
 
-This is FreeSewing's **shorthand** method. It returns an object with a bunch of handy helpers
-and you use JavaScript's _object destructuring_ to only get what you need.
+These helper objects like `Path', `points`, and `measurements` are handy helpers provided by Javascripts _object destructuring_ of FreeSewing's Part **shorthand**. You only need to include the ones that you need for the part's draft method.
 
 The example above makes the following variables available:
 
@@ -70,16 +102,18 @@ The example above makes the following variables available:
 - `Path`: The Path constructor
 - `paths`: A reference to the part's paths
 
-These will make it possible for you to draw points and paths easily.
+These will make it possible for you to create, draw, and reference points and paths easily.
 
 The following three variables are also needed to create a full-fledged FreeSewing pattern; their function and usage will
-be covered in detail [later on in this tutorial](/tutorials/pattern-design/completing-your-pattern/):
+be covered in detail [later on in this tutorial](/tutorials/pattern-design/completing-your-pattern/). For now, we only need these so that the pattern skeleton compiles properly:
 
 - `complete`: create a _complete_ pattern (or not)
 - `sa`: include _seam allowance_ (or not)
 - `paperless`: allow the pattern to be _paperless_
 
-For now, we only need these so that the pattern skeleton compiles properly.
+Finally, we include the part itself so it can be returned by the draft function.
+
+- `part`: The actual part itself
 
 <Note>
 

@@ -18,52 +18,63 @@ Since we only need one part, we'll rename this _box_ part, and call it _bib_.
 
 ## Rename the box part to bib
 
-First, update the configuration file in `design/config.js`.
+First, update the index file in `design/src/index.mjs`.
+
+Update the **import** statement with `bib` and `bib.mjs`, rather than `box` and `box.mjs`.
+
+```js
+import { bib } from './bib.mjs'
+```
+
 Update the **parts** array with `bib`, rather than `box`:
 
 ```js
-parts: ['bib'],
+parts: [ bib ],
+```
+
+Update the **export** statement with `bib`, rather than `box`:
+
+```js
+export { bib, Pattern }
 ```
 
 <Note>
 
 ##### Don't worry about the big red error
 
-This will (temporarily) cause en error to appear in your development environment, because the rest of the code is still expecting to find a part named `box`, but we will fix this in the next steps.
+This will (temporarily) cause en error to appear in your development environment, because the rest of the code is expecting to find a part named `bib`, but we will fix this in the next steps.
 
 </Note>
 
-When that's done, rename the `design/src/box.js` file into `design/src/bib.js`.
+When that's done, rename the `design/src/box.mjs` file to `design/src/bib.mjs`.
 
-Then, in the `design/src/index.js` file, change the import accordingly:
-
-```js
-// Change this line
-//import draftBox from "./box"
-
-// Into this
-import draftBib from "./bib"
+```sh
+mv box.mjs bib.mjs
 ```
 
-Finally, still in the `design/src/index.js` file, update the draft method:
+Finally, in the `design/src/bib.mjs` file, update the draft method name from `draftBox` to `draftBib` and the part name from `bib.box` to `bib.bib`.:
 
 ```js
-// Change this line
-//Design.prototype.draftBox = draftBox
+function draftBib({
+```
 
-// Into this
-Design.prototype.draftBib = draftBib
+```js
+name: 'bib.bib',
+```
+
+```js
+draft: draftBib,
 ```
 
 <Tip>
 
 ###### Always use draftPartname
 
-FreeSewing will expect for each part to find a method named Draft\_Partname\_.
-
 If you have a part named `sleeve` you should have a method called `draftSleeve()` that drafts that part.
 
 In our case, we have a part named `bib` so we're using `draftBib()` as the method that drafts it.
+
+This will help with debugging when the error is reported coming from the `draftBib()` method (as opposed to a generic `draft()` method from an unknown part).
 
 </Tip>
 

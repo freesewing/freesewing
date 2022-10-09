@@ -20,14 +20,14 @@ flexible and let the user decide. All you have to do is add options to your patt
 The first option we're going to add controls the ratio between the neck opening
 and the head circumference. Let's call it `neckRatio`.
 
-Open the config file at `design/config.js` and add this to the options:
+Open the part file at `design/src/bib.mjs` and add this to the options:
 
 ```js
   options: {
     // Remove this size option
-    //size: { pct: 50, min: 10, max: 100 }
+    //size: { pct: 50, min: 10, max: 100, menu: 'size' }
     // And add the neckRatio options
-    neckRatio: { pct: 80, min: 70, max: 90 }, 
+    neckRatio: { pct: 80, min: 70, max: 90, menu: 'fit' },
   }
 ```
 
@@ -37,6 +37,7 @@ Can you guess what it means?
 - Its minimum value is 70%
 - Its maximum value is 90%
 - Its default value is 80%
+- It will be listed under the 'Fit' Design Options menu.
 
 <Note>
 
@@ -49,35 +50,23 @@ Let's do something similar for the width and length of our bib:
 
 ```js
 options: {
-  neckRatio: { pct: 80, min: 70, max: 90 }, 
-  widthRatio: { pct: 45, min: 35, max: 55 }, 
-  lengthRatio: { pct: 75, min: 55, max: 85 }, 
+  neckRatio: { pct: 80, min: 70, max: 90, menu: 'fit' },
+  widthRatio: { pct: 45, min: 35, max: 55, menu: 'fit' },
+  lengthRatio: { pct: 75, min: 55, max: 85, menu: 'fit' },
 }
 ```
 
 - You've added `widthRatio` and `lengthRatio` options
 - You've given all options sensible defaults
 - You've given all options sensible maximum and minimum boundaries
+- All of these options will be listed under the 'Fit' menu.
 
 <Note>
 
 Later, you'll test-drive your pattern to see how it behaves when you adapt the options
 between their minimum and maximum values. At that time, you can still tweak these values.
 
-</Note>
-
-Before you close the `design/config.js` file, make sure to update the `optionGroups` entry as follows:
-
-```js
-optionGroups: {
-  fit: ["neckRatio", "widthRatio", "lengthRatio"]
-},
-```
-
-<Note>
-
-The `optionGroups` entry does not do anything for your pattern as such.
-Instead it signals to the frontend that this is how options should be grouped together and presented to the user.
+Options and option menus will be listed in alphabetical order, except for the 'Advanced' menu which will be listed last.
 
 </Note>
 

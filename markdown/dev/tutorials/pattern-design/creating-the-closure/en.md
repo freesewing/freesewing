@@ -16,7 +16,7 @@ Before we can use it, we have to update our `part.shorthand()` call to indicate 
 also like to make use of macros. Simply add `macro` at the end:
 
 ```js
-const {
+function draftBib({
   Point,
   points,
   Path,
@@ -26,8 +26,9 @@ const {
   paperless,
   measurements,
   options,
-  macro
-} = part.shorthand()
+  macro,
+  part,
+}) {
 ```
 
 We need a half circle here, but the `round` macro works on 90° angles, so you'll use it twice.
@@ -46,14 +47,14 @@ macro("round", {
   to: points.tipRight,
   via: points.tipRightTop,
   prefix: "tipRightTop",
-  render: true
+  hide: false,
 })
 macro("round", {
   from: points.tipRight,
   to: points.top,
   via: points.tipRightBottom,
   prefix: "tipRightBottom",
-  render: true
+  hide: false,
 })
 ```
 

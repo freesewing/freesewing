@@ -5,11 +5,11 @@ order:  270
 
 Users can request paperless patterns by setting the `paperless` setting to `true`.
 
-We can get that value of the setting from the `part.shorthand()` method.
+We can get that value of the setting from the `paperless` object passed into the draft funciton.
 It will be the last shorthand we will put to use:
 
 ```js
-const {
+function draftBib({
   Point,
   points,
   Path,
@@ -21,8 +21,9 @@ const {
   options,
   macro,
   snippets,
-  Snippet
-} = part.shorthand()
+  Snippet,
+  part,
+}) {
 ```
 
 The idea behind _paperless patterns_ is that users don't need to print your

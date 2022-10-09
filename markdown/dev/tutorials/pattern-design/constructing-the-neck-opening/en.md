@@ -14,7 +14,7 @@ to our measurements and options to do so. For this, you first update the shortha
 to indicate you also want access to `measurements` and `options`:
 
 ```js
-const {
+function draftBib({
   Point,
   points,
   Path,
@@ -23,8 +23,9 @@ const {
   sa,
   paperless,
   measurements,
-  options
-} = part.shorthand()
+  options,
+  part,
+}) {
 ```
 
 Great. Now let's get to work:
