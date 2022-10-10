@@ -21,9 +21,10 @@ function draftBib({
   Point, 
   paths, 
   points, 
-  // Add the following two lines:
+  // highlight-start
   measurements,
   options
+  // highlight-end
   part,
 }) {
 
@@ -49,6 +50,7 @@ function draftBib({
   part,
 }) {
 
+  // highlight-start
   // Construct the quarter neck opening
   points.right = new Point(measurements.head / 10, 0)
   points.bottom = new Point(0, measurements.head / 12)
@@ -61,6 +63,7 @@ function draftBib({
   paths.quarterNeck = new Path()
     .move(points.right)
     .curve(points.rightCp1, points.bottomCp2, points.bottom)
+  // highlight-end
 
   return part
 }

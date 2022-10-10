@@ -15,7 +15,8 @@ As always, [the API docs](/reference/api/point/) have all the details.
 
 </Note>
 
-<Example tutorial caption="Pretty good, but how are we going to fit it over the baby's head?">
+
+<Example tutorial caption="All of a sudden, things are starting to look like a bib">
 ```js
 function draftBib({ 
   Path, 
@@ -88,6 +89,7 @@ function draftBib({
     .close()
     .addClass('fabric')
 
+  // highlight-start
   // Shape the straps
   points.edgeLeft = new Point(points.topLeft.x, points.left.y)
   points.edgeRight = new Point(points.topRight.x, points.right.y)
@@ -110,12 +112,10 @@ function draftBib({
     .line(points.edgeRight)
     .curve(points.edgeRightCp, points.edgeTopRightCp, points.edgeTop)
     .close()
+  // highlight-end
 
   return part
 }
 ```
 </Example>
-
-
-All of a sudden, things are starting to look like a bib.
 

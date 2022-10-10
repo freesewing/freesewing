@@ -39,7 +39,9 @@ function draftBib({
   	paths.quarterNeck = new Path()
   	  .move(points.right)
   	  .curve(points.rightCp1, points.bottomCp2, points.bottom)
-      .hide() // Add this line
+      // highlight-start
+      .hide()
+      // highlight-end
   
   	delta = paths.quarterNeck.length() - target
     if (delta > 0) tweak = tweak * 0.99
@@ -91,13 +93,14 @@ function draftBib({
   	paths.quarterNeck = new Path()
   	  .move(points.right)
   	  .curve(points.rightCp1, points.bottomCp2, points.bottom)
-      .hide() // Add this line
+      .hide()
   
   	delta = paths.quarterNeck.length() - target
     if (delta > 0) tweak = tweak * 0.99
     else tweak = tweak * 1.02
   } while (Math.abs(delta) > 1)
 
+  // highlight-start
   // Construct the complete neck opening
   points.rightCp2 = points.rightCp1.flipY()
   points.bottomCp1 = points.bottomCp2.flipX()
@@ -116,6 +119,7 @@ function draftBib({
     .curve(points.rightCp2, points.topCp1, points.top)
     .close()
     .addClass('fabric')
+  // highlight-end
 
   return part
 }

@@ -32,8 +32,9 @@ function draftBib({ part }) {
 export const bib = {
   name: 'tutorial.bib',
   draft: draftBib,
-  // Add this line:
+  // highlight-start
   measurements: ['head'],
+  // highlight-end
 }
 ```
 

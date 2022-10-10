@@ -32,10 +32,11 @@ export const bib = {
   name: 'tutorial.bib',
   draft: draftBib,
   measurements: ['head'],
-  // Add these 3 lines:
+  // highlight-start
   options: {
     neckRatio: { pct: 80, min: 70, max: 90, menu: 'fit' }, 
   },
+  // highlight-end
 }
 ```
 
