@@ -151,6 +151,9 @@ rehype-jargon:
   _:
     'unist-util-visit': '^4.1.0'
     'hast-util-from-html': '^1.0.0'
+rehype-highlight-lines:
+  _:
+    'unist-util-remove': '^3.1.0'
 simon:
   peer:
     '@freesewing/brian': *freesewing

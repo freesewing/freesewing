@@ -1,11 +1,13 @@
 noNamespace:
   - rehype-jargon
+  - rehype-highlight-lines
 customBuild:
   - i18n
   - new-design
   - prettier-config
   - plugin-bundle
   - rehype-jargon
+  - rehype-highlight-lines
 skipTests:
   - theo
 packageJson:
@@ -59,6 +61,8 @@ packageJson:
     files:
       - index.json
       - package.json
+  rehype-hightlight-lines:
+    private: true
   sandy:
     author: AlfaLyr (https://github.com/alfalyr)
   tiberius: *starf

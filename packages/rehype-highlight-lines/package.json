@@ -1,5 +1,5 @@
 {
-  "name": "@freesewing/rehype-highlight-lines",
+  "name": "rehype-highlight-lines",
   "version": "3.0.0-alpha.2",
   "description": "A Rehype plugin to add highlighted lines to code blocks",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",

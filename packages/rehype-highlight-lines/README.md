@@ -1,13 +1,13 @@
 ![FreeSewing](https://static.freesewing.org/banner.png)
 <p align='center'><a
-  href="https://www.npmjs.com/package/@freesewing/rehype-highlight-lines"
-  title="@freesewing/rehype-highlight-lines on NPM"
-  ><img src="https://img.shields.io/npm/v/@freesewing/rehype-highlight-lines.svg"
-  alt="@freesewing/rehype-highlight-lines on NPM"/>
+  href="https://www.npmjs.com/package/rehype-highlight-lines"
+  title="rehype-highlight-lines on NPM"
+  ><img src="https://img.shields.io/npm/v/rehype-highlight-lines.svg"
+  alt="rehype-highlight-lines on NPM"/>
   </a><a
   href="https://opensource.org/licenses/MIT"
   title="License: MIT"
-  ><img src="https://img.shields.io/npm/l/@freesewing/rehype-highlight-lines.svg?label=License"
+  ><img src="https://img.shields.io/npm/l/rehype-highlight-lines.svg?label=License"
   alt="License: MIT"/>
   </a><a
   href="https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256"
@@ -46,7 +46,7 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-# @freesewing/rehype-highlight-lines
+# rehype-highlight-lines
 
 A Rehype plugin to add highlighted lines to code blocks
 
@@ -65,7 +65,7 @@ A Rehype plugin to add highlighted lines to code blocks
 
 This repository is our *monorepo* holding all our NPM designs, plugins, other NPM packages, and (web)sites.
 
-This folder holds: @freesewing/rehype-highlight-lines
+This folder holds: rehype-highlight-lines
 
 If you're not entirely sure what to do or how to start, type this command:
 

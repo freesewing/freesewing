@@ -1,4 +1,4 @@
-# Change log for: @freesewing/rehype-highlight-lines
+# Change log for: rehype-highlight-lines
 
 
 
