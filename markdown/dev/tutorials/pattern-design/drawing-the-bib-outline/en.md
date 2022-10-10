@@ -3,35 +3,92 @@ title: Drawing the bib outline
 order: 190
 ---
 
-With our neck opening in place, let's draw the basic outline of our bib:
+With our neck opening in place, let us draw the basic outline of our bib.
 
+<Example tutorial caption="Note how the neck opening is the same distance from the left, right, and top edge">
 ```js
-let width = measurements.head * options.widthRatio
-let length = measurements.head * options.lengthRatio
+function draftBib({ 
+  Path, 
+  Point, 
+  paths, 
+  points, 
+  measurements,
+  options,
+  part,
+}) {
 
-points.topLeft = new Point(
-  width / -2,
-  points.top.y - (width / 2 - points.right.x)
-);
-points.topRight = points.topLeft.shift(0, width)
-points.bottomLeft = points.topLeft.shift(-90, length)
-points.bottomRight = points.topRight.shift(-90, length)
+  // Construct the quarter neck opening
+  let tweak = 1
+  let target = (measurements.head * options.neckRatio) /4
+  let delta
+  do {
+  	points.right = new Point(tweak * measurements.head / 10, 0)
+  	points.bottom = new Point(0, tweak * measurements.head / 12)
+  
+  	points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right)/2)
+  	points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right)/2)
+  
+  	paths.quarterNeck = new Path()
+  	  .move(points.right)
+  	  .curve(points.rightCp1, points.bottomCp2, points.bottom)
+      .hide() // Add this line
+  
+  	delta = paths.quarterNeck.length() - target
+    if (delta > 0) tweak = tweak * 0.99
+    else tweak = tweak * 1.02
+  } while (Math.abs(delta) > 1)
 
-paths.rect = new Path()
-  .move(points.topLeft)
-  .line(points.bottomLeft)
-  .line(points.bottomRight)
-  .line(points.topRight)
-  .line(points.topLeft)
-  .close()
+  // Construct the complete neck opening
+  points.rightCp2 = points.rightCp1.flipY()
+  points.bottomCp1 = points.bottomCp2.flipX()
+  points.left = points.right.flipX()
+  points.leftCp1 = points.rightCp2.flipX()
+  points.leftCp2 = points.rightCp1.flipX()
+  points.top = points.bottom.flipY()
+  points.topCp1 = points.bottomCp2.flipY()
+  points.topCp2 = points.bottomCp1.flipY()
+
+  paths.neck = new Path()
+    .move(points.top)
+    .curve(points.topCp2, points.leftCp1, points.left)
+    .curve(points.leftCp2, points.bottomCp1, points.bottom)
+    .curve(points.bottomCp2, points.rightCp1, points.right)
+    .curve(points.rightCp2, points.topCp1, points.top)
+    .close()
+    .addClass('fabric')
+
+  // Drawing the bib outline 
+  const width = measurements.head * options.widthRatio
+  const length = measurements.head * options.lengthRatio
+  
+  points.topLeft = new Point(
+    width / -2,
+    points.top.y - (width / 2 - points.right.x)
+  )
+  points.topRight = points.topLeft.shift(0, width)
+  points.bottomLeft = points.topLeft.shift(-90, length)
+  points.bottomRight = points.topRight.shift(-90, length)
+  
+  paths.rect = new Path()
+    .move(points.topLeft)
+    .line(points.bottomLeft)
+    .line(points.bottomRight)
+    .line(points.topRight)
+    .line(points.topLeft)
+    .close()
+    .addClass('fabric')
+
+  return part
+}
 ```
+</Example>
 
 First thing we did was create the `width` and `length` variables to
 save ourselves some typing:
 
 ```js
-let width = measurements.head * options.widthRatio
-let length = measurements.head * options.lengthRatio
+const width = measurements.head * options.widthRatio
+const length = measurements.head * options.lengthRatio
 ```
 
 Both the length and width of your bib are a factor of the head circumference.
@@ -56,13 +113,11 @@ paths.rect = new Path()
   .line(points.topRight)
   .line(points.topLeft)
   .close()
+  .addClass('fabric')
 ```
 
 We're calculating the `topLeft` point so that the top edge of our bib
 and the sides are equidistant from the neck neck opening.
 
-You didn't have to do that. But it looks nicely balanced this way:
+We didn't have to do that. But it looks nicely balanced this way.
 
-<Example pattern="tutorial" part="step5">
-Note how the neck opening is the same distance from the left, right, and top edge
-</Example>

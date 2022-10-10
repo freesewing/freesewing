@@ -28,6 +28,16 @@ need to draft your method.  Destructuring is a way to *pull things out of the
 object into their own variable*. It saves us a bunch of typing as these two are
 equivalent:
 
+<Tabs tabs="Without destructuring, With destructuring">
+<Tab>
+```design/src/bib.mjs
+function draftBib({ part }) {
+
+  return part
+}
+```
+</Tab>
+<Tab>
 ```design/src/bib.mjs
 function draftBib(props) {
 
@@ -35,13 +45,8 @@ function draftBib(props) {
 
 }
 ```
-
-```design/src/bib.mjs
-function draftBib({ part }) {
-
-  return part
-}
-```
+</Tab>
+</Tabs>
 
 As we'll make our way through this tutorial, we'll need more and more stuff, so
 we'll be pulling it out of the object passed to the draft method via

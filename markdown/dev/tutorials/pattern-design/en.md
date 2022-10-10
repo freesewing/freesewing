@@ -5,6 +5,14 @@ title: Pattern design tutorial
 Welcome to the FreeSewing pattern design tutorial, where you'll learn how to
 design a made-to-measure sewing pattern, start to finish.
 
+<Tip>
+##### Before you start
+
+If you haven't done so yet, read the [Before you start 
+guide](/guides/prerequisites). It's very short, but covers some basic 
+terminology and concepts that we'll use throughout this guide.
+</Tip>
+
 You will be designing a pattern for a baby bib. It's a very simple pattern, but
 that's the point.  Your focus today is on learning FreeSewing and how to
 translate your designs into code.
