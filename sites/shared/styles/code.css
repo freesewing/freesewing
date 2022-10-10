@@ -10,7 +10,7 @@ div.hljs {
   border-color: var(--code-border-color);
   border-width: var(--code-border-width);
   border-style: var(--code-border-style);
-  padding: var(--code-outer-padding);
+  padding: 0;
   color: var(--code-color);
   border-radius: var(--code-border-radius);
 }
@@ -28,7 +28,29 @@ div.hljs > pre {
  * adds padding to code that makes it look like there's a
  * extra space on the first line
  */
-div.hljs > pre > code { padding: 0; }
+div.hljs > pre > code {
+  padding: 0;
+}
+
+/*
+ * Higlight lines within a highlighted code block
+ */
+div.hljs > pre > code > section {
+  padding-left: calc(1rem - 4px);
+  padding-right: 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-left: 0.35rem solid transparent;
+  border-color: rgb(130, 203, 21);
+}
+div.hljs > pre > code > section.strikeout-lines {
+  border-color: rgb(255, 75, 57);
+}
+div.hljs > pre > code > section > span.code-line-break:last-child {
+  display: none;
+}
 
 /*
  * CSS for highlighted code: keyword
