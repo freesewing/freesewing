@@ -21,7 +21,7 @@ export const asText = (reactEl) => {
 }
 
 // The actual example
-const Example = ({ app, draft, xray = false }) => {
+const Example = ({ app, draft, tutorial = false, xray = false }) => {
   // State for gist
   const { gist, unsetGist, updateGist } = useGist('example-mdx', app)
 
@@ -58,21 +58,55 @@ const Example = ({ app, draft, xray = false }) => {
 }
 
 // Returns a FreeSewing draft based on code in children
-const buildExample = (children, settings = { margin: 10 }) => {
-  const code = asText(children)
-  const draft = eval(code)
+const buildExample = (children, settings = { margin: 10 }, tutorial = false) => {
+  let code = asText(children)
+  // FIXME: Refactor to not use eval
+  let draft
+  if (code.split('\n')[0].includes('function')) {
+    code = '(' + code.split('(').slice(1).join('(')
+    code = code.split(')')
+    code = code[0] + ') => ' + code.slice(1).join(')')
+  }
+  draft = eval(code)
   const part = {
-    draft,
-    measurements: [],
+    draft: draft,
+    measurements: tutorial ? [] : ['head'],
+    options: tutorial
+      ? {
+          neckRatio: { pct: 80, min: 70, max: 90, menu: 'fit' },
+          widthRatio: { pct: 45, min: 35, max: 55, menu: 'style' },
+          lengthRatio: { pct: 75, min: 55, max: 85, menu: 'style' },
+        }
+      : {},
     plugins: [pluginBundle, pluginFlip, pluginGore],
   }
   const design = new Design({ parts: [part] })
+  if (tutorial) settings.measurements = { head: 380 }
   return new design(settings)
 }
 
 // Wrapper component dealing with the tabs and code view
-const TabbedExample = ({ app, children, caption }) => {
-  const draft = buildExample(children)
+const TabbedExample = ({ app, children, caption, tutorial = false }) => {
+  const draft = buildExample(children, {}, tutorial)
+  if (tutorial)
+    return (
+      <div className="my-8">
+        <Tabs tabs="Code, Preview, X-Ray">
+          <Tab>{children}</Tab>
+          <Tab>
+            <Example draft={draft} tutorial={tutorial} app={app} />
+          </Tab>
+          <Tab>
+            <Example draft={draft} app={app} xray={true} />
+          </Tab>
+        </Tabs>
+        {caption && (
+          <div className="text-center italic -mt-4">
+            <Md>{caption}</Md>
+          </div>
+        )}
+      </div>
+    )
 
   return (
     <div className="my-8">
