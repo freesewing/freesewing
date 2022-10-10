@@ -4,6 +4,7 @@
 *.yml
 *.md
 *.mustache
+*.png
 yarn.lock
 .husky/pre-commit
 .prettierignore
