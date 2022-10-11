@@ -8,6 +8,7 @@ import Svg from '../workbench/draft/svg'
 import Defs from '../workbench/draft/defs'
 import Stack from '../workbench/draft/stack'
 import { useGist } from 'shared/hooks/useGist'
+import yaml from 'js-yaml'
 
 // Get code from children
 export const asText = (reactEl) => {
@@ -21,7 +22,7 @@ export const asText = (reactEl) => {
 }
 
 // The actual example
-const Example = ({ app, draft, tutorial = false, xray = false }) => {
+const Example = ({ app, draft, settings, xray = false }) => {
   // State for gist
   const { gist, unsetGist, updateGist } = useGist('example-mdx', app)
 
@@ -29,7 +30,11 @@ const Example = ({ app, draft, tutorial = false, xray = false }) => {
     gist._state.xray = { enabled: true }
     gist.margin = 20
   }
-  const patternProps = draft.draft().getRenderProps()
+  console.log(draft.draft, draft.sample, settings)
+  if (!draft.sample) return null
+  const patternProps = settings.sample
+    ? draft.sample().getRenderProps()
+    : draft.draft().getRenderProps()
   if (draft.store.logs.error.length > 0 || draft.setStores[0].logs.error.length > 0)
     return (
       <div className="max-w-full p-4">
@@ -58,7 +63,7 @@ const Example = ({ app, draft, tutorial = false, xray = false }) => {
 }
 
 // Returns a FreeSewing draft based on code in children
-const buildExample = (children, settings = { margin: 10 }, tutorial = false, paperless = false) => {
+const buildExample = (children, settings = { margin: 5 }, tutorial = false, paperless = false) => {
   let code = asText(children)
   // FIXME: Refactor to not use eval
   let draft
@@ -86,24 +91,30 @@ const buildExample = (children, settings = { margin: 10 }, tutorial = false, pap
   })
   if (tutorial) settings.measurements = { head: 380 }
   if (paperless) settings.paperless = true
-  console.log(settings, paperless)
 
   return new design(settings)
 }
 
 // Wrapper component dealing with the tabs and code view
-const TabbedExample = ({ app, children, caption, tutorial = false, paperless = false }) => {
-  const draft = buildExample(children, {}, tutorial, paperless)
+const TabbedExample = ({ app, children, caption, tutorial, withHead, paperless, settings }) => {
+  if (settings)
+    settings = {
+      margin: 5,
+      ...yaml.load(settings),
+    }
+  else settings = { margin: 5 }
+  if (withHead) settings.measurements = { head: 300 }
+  const draft = buildExample(children, settings, tutorial, paperless)
   if (tutorial)
     return (
       <div className="my-8">
         <Tabs tabs="Code, Preview, X-Ray">
           <Tab>{children}</Tab>
           <Tab>
-            <Example {...{ draft, tutorial, paperless, app }} />
+            <Example {...{ draft, tutorial, paperless, settings, app }} />
           </Tab>
           <Tab>
-            <Example {...{ draft, tutorial, paperless, app }} xray={true} />
+            <Example {...{ draft, tutorial, paperless, settings, app }} xray={true} />
           </Tab>
         </Tabs>
         {caption && (
@@ -118,11 +129,11 @@ const TabbedExample = ({ app, children, caption, tutorial = false, paperless = f
     <div className="my-8">
       <Tabs tabs="Preview, Code, X-Ray">
         <Tab>
-          <Example {...{ draft, tutorial, paperless, app }} />
+          <Example {...{ draft, tutorial, paperless, settings, app }} />
         </Tab>
         <Tab>{children}</Tab>
         <Tab>
-          <Example {...{ draft, tutorial, paperless, app }} xray={true} />
+          <Example {...{ draft, tutorial, paperless, settings, app }} xray={true} />
         </Tab>
       </Tabs>
       {caption && (
