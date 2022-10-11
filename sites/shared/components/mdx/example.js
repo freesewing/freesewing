@@ -58,7 +58,7 @@ const Example = ({ app, draft, tutorial = false, xray = false }) => {
 }
 
 // Returns a FreeSewing draft based on code in children
-const buildExample = (children, settings = { margin: 10 }, tutorial = false) => {
+const buildExample = (children, settings = { margin: 10 }, tutorial = false, paperless = false) => {
   let code = asText(children)
   // FIXME: Refactor to not use eval
   let draft
@@ -80,24 +80,30 @@ const buildExample = (children, settings = { margin: 10 }, tutorial = false) => 
       : {},
     plugins: [pluginBundle, pluginFlip, pluginGore],
   }
-  const design = new Design({ parts: [part] })
+  const design = new Design({
+    parts: [part],
+    data: tutorial ? { name: 'Tutorial', version: '0.0.1' } : {},
+  })
   if (tutorial) settings.measurements = { head: 380 }
+  if (paperless) settings.paperless = true
+  console.log(settings, paperless)
+
   return new design(settings)
 }
 
 // Wrapper component dealing with the tabs and code view
-const TabbedExample = ({ app, children, caption, tutorial = false }) => {
-  const draft = buildExample(children, {}, tutorial)
+const TabbedExample = ({ app, children, caption, tutorial = false, paperless = false }) => {
+  const draft = buildExample(children, {}, tutorial, paperless)
   if (tutorial)
     return (
       <div className="my-8">
         <Tabs tabs="Code, Preview, X-Ray">
           <Tab>{children}</Tab>
           <Tab>
-            <Example draft={draft} tutorial={tutorial} app={app} />
+            <Example {...{ draft, tutorial, paperless, app }} />
           </Tab>
           <Tab>
-            <Example draft={draft} app={app} xray={true} />
+            <Example {...{ draft, tutorial, paperless, app }} xray={true} />
           </Tab>
         </Tabs>
         {caption && (
@@ -112,11 +118,11 @@ const TabbedExample = ({ app, children, caption, tutorial = false }) => {
     <div className="my-8">
       <Tabs tabs="Preview, Code, X-Ray">
         <Tab>
-          <Example draft={draft} app={app} />
+          <Example {...{ draft, tutorial, paperless, app }} />
         </Tab>
         <Tab>{children}</Tab>
         <Tab>
-          <Example draft={draft} app={app} xray={true} />
+          <Example {...{ draft, tutorial, paperless, app }} xray={true} />
         </Tab>
       </Tabs>
       {caption && (
