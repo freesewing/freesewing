@@ -156,15 +156,7 @@ function draftBib({
   while (points.tipRightBottomStart.x > -1) {
     for (const p of rotateThese) points[p] = points[p].rotate(1, points.edgeLeft)
   }
-
-  /*
-   * While we're at it, 
-   * let's add a point where 
-   * the closure's snap should go.
-   */
-  points.snapLeft = points.top.shiftFractionTowards(points.edgeTop, 0.5)
   // highlight-end
-
 
   // highlight-start
   /*

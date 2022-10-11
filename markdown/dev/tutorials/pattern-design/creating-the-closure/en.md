@@ -4,7 +4,8 @@ order: 210
 ---
 
 Things are starting to look good, but we can't fit the bib over the baby's head like this.
-So we must create a closure. We'll let the straps overlap at the end, and put in a snap.
+So we must create a closure. We'll let the straps overlap at the end, and put in a snap 
+later.
 
 ## Using macros
 

@@ -163,12 +163,6 @@ function draftBib({
     for (const p of rotateThese) points[p] = points[p].rotate(1, points.edgeLeft)
   }
   
-  // highlight-start
-  // Snap anchor
-  // highlight-end
-  points.snapLeft = points.top.shiftFractionTowards(points.edgeTop, 0.5)
-
-
   // strikeout-start
   /* Remove this repetition
   macro("round", {
@@ -211,7 +205,6 @@ function draftBib({
   points.tipLeftBottomCp1 = points.tipRightBottomCp1.flipX()
   points.tipLeftBottomCp2 = points.tipRightBottomCp2.flipX()
   points.tipLeftBottomEnd = points.tipRightBottomEnd.flipX()
-  points.snapRight = points.snapLeft.flipX()
 
   // Create one path for the bib outline
   paths.seam = new Path()

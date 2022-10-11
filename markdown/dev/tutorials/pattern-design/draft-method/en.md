@@ -1,5 +1,5 @@
 ---
-title: Structure of a draft method
+title: A part's draft method
 order: 150
 ---
 

@@ -92,60 +92,13 @@ snippet.
 You can find all possible snippets in [our documentation](/reference/api/snippet/).
 </Note>
 
+## The completed design
+
+Let's put this and few other things together to complete our design:
 
 
-We won't be adding seam allowance, but we will be doing something that is essentially the same.
-Rather than draw an outline outside our bib to indicate the seam allowance, we'll draw one within
-our bib to mark the bias tape:
 
-```js
-paths.bias = paths.seam
-  .offset(-5)
-  .attr("class", "various dashed")
-  .attr("data-text", "finishWithBiasTape")
-  .attr("data-text-class", "center fill-various")
-```
-
-The `path.offset()` method makes it trivial to add seam allowance, since it will contruct
-a path parallel to the given path at the distance you pass it. 9 times out of 10, you'll be using it as `path.offset(sa)`.
-
-Note that we're also using the attributes again, to change the look of the line, and add text to it,
-as explained in [Adding text](/howtos/code/adding-text).
-
-## Scalebox and title
-
-Two more macros and we're done.
-
-The `title` macro adds a title to our part.
-It's not that big a deal here since we only have one part in our pattern.
-But patterns typically have many different parts, some of them which might look rather similar.
-That's why you should number your parts and give them a name.
-
-The `title` macro can help you with that:
-
-```js
-points.title = points.bottom.shift(-90, 45)
-macro("title", {
-  at: points.title,
-  nr: 1,
-  title: "bib"
-})
-```
-
-The `scalebox` macro prints a box of an exact size.
-It is used by people who print the pattern to make sure their print is correctly scaled.
-
-```js
-points.scalebox = points.title.shift(-90, 55)
-macro("scalebox", { at: points.scalebox })
-```
-
-And with that, our pattern is now _complete_:
-
-We're not done yet though. There's one more thing the user can ask for: a _paperless_ pattern.
-
-
-<Example tutorial caption="The shape our bib is now completed">
+<Example tutorial caption="Almost done. But there's one more thing the user can ask for: a **paperless** pattern">
 ```js
 function draftBib({ 
   Path, 
@@ -275,7 +228,6 @@ function draftBib({
   points.tipLeftBottomEnd = points.tipRightBottomEnd.flipX()
   points.snapRight = points.snapLeft.flipX()
 
-  // highlight-start
   // Round the bottom corners
   macro("round", {
     from: points.topLeft,
@@ -291,24 +243,14 @@ function draftBib({
     radius: points.bottomRight.x / 4,
     prefix: "bottomRight"
   })
-  // highlight-end
 
   // Create one path for the bib outline
   paths.seam = new Path()
     .move(points.edgeLeft)
-    // strikeout-start
-    /* We only need to replace the start
-     * with the new lines below
-    .line(points.bottomLeft)
-    .line(points.bottomRight)
-    */
-    // strikeout-end
-    // highlight-start
     .line(points.bottomLeftStart)
     .curve(points.bottomLeftCp1, points.bottomLeftCp2, points.bottomLeftEnd)
     .line(points.bottomRightStart)
     .curve(points.bottomRightCp1, points.bottomRightCp2, points.bottomRightEnd)
-    // highlight-end
     .line(points.edgeRight)
     .curve(
       points.edgeRightCp, 
@@ -363,31 +305,95 @@ function draftBib({
     .close()
     .addClass("fabric")
 
+  // highlight-start
+  if (complete) {
+    /*
+     * Let's add the points where 
+     * the closure's snaps should go.
+     */
+    // Add snaps
+    points.snapLeft = points.top
+      .shiftFractionTowards(points.edgeTop, 0.5)
+    points.snapRight = points.snapLeft
+      .flipX()
+
+    /*
+     * Now, let's use our newfound snippet powers
+     * to add the snaps to these points.
+     * First the left snap (the stud part)
+     */
+    snippets.snapStud = new Snippet(
+      'snap-stud', 
+      points.snapLeft
+    )
+
+    /*
+     * The right snap (the socket part)
+     * should go on the back of the fabric.
+     * To try to make that more obvious to the user
+     * let's set its `opacity` attribute to 0.5
+     * this way it will be semi-transparent.
+     */
+    snippets.snapSocket = new Snippet(
+      'snap-socket', 
+      points.snapRight
+    ).attr('opacity', 0.5)
+
+    /*
+     * Another snippet we should add is our logo.
+     * A logo is not required, but we love skully.
+     */
+    // Add a logo
+    points.logo = new Point(0, 0)
+    snippets.logo = new Snippet(
+      "logo", 
+      points.logo
+    )
+
+    /*
+     * We already know how to use macros
+     * This one adds a title to our part
+     */
+    // Add a title
+    points.title = points.bottom
+      .shift(-90, 45)
+    macro("title", {
+      at: points.title,
+      nr: 1,
+      title: "bib",
+      scale: 0.7
+    })
+
+    /*
+     * This macro adds a scalebox to our part
+     */
+    // Add a scalbox
+    points.scalebox = points.title
+      .shift(-90, 55)
+    macro(
+      "scalebox", 
+      { at: points.scalebox }
+    )
+
+    /*
+     * Our bib should be finished with bias tape.
+     * To add it, we're using Path.offset()
+     * You will learn to LOVE this methid
+     * when designing pattern with seam allowance
+     * as it draws a path parallel to another one
+     */
+    paths.bias = paths.seam
+      .offset(-5)
+      .addClass("various dashed")
+      .addText(
+        "finishWithBiasTape", 
+        "center fill-various"
+      )
+
+  }
+  // highlight-end
 
   return part
 }
 ```
 </Example>
-
-
-
-We've added a `snap-stud` and `snap-socket` snippet to the points we had foreseen for that.
-
-Because the socket snippet is at the back of the fabric, we've made it semi-transparent by
-setting the `opacity` attribute to `0.5`. Yes, you can do that.
-
-<Tip>
-
-Any attributes you set will be added to the SVG output.
-
-</Tip>
-
-Since we're adding snippets, let's throw a logo on there too:
-
-```js
-points.logo = new Point(0, 0)
-snippets.logo = new Snippet("logo", points.logo)
-```
-
-
-
