@@ -35,7 +35,7 @@ div.hljs > pre > code {
 /*
  * Higlight lines within a highlighted code block
  */
-div.hljs > pre > code > section {
+div.hljs > pre > code section {
   padding-left: calc(1rem - 4px);
   padding-right: 1rem;
   margin-left: -1rem;
@@ -45,10 +45,10 @@ div.hljs > pre > code > section {
   border-left: 0.35rem solid transparent;
   border-color: rgb(130, 203, 21);
 }
-div.hljs > pre > code > section.strikeout-lines {
+div.hljs > pre > code section.strikeout-lines {
   border-color: rgb(255, 75, 57);
 }
-div.hljs > pre > code > section > span.code-line-break:last-child {
+div.hljs > pre > code section > span.code-line-break:last-child {
   display: none;
 }
 

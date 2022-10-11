@@ -21,6 +21,25 @@ export default (userOptions = {}) => {
     ...userOptions,
   }
 
+  const splitParams = (node, i, parent) => {
+    if (node.children.length === 1 && node.children[0].type === 'text') {
+      const content = node.children[0].value.split('\n')
+      console.log(content)
+      node.children = content.map((value) =>
+        value.includes('//')
+          ? {
+              type: 'element',
+              tagName: 'span',
+              properties: {
+                className: options.commentClass,
+              },
+              children: [{ type: 'text', value }],
+            }
+          : { type: 'text', value: value + '\n' }
+      )
+    }
+  }
+
   // Keep track of whether we've opened a highlight block
   let isOpen = false
   let children = {}
@@ -76,7 +95,13 @@ export default (userOptions = {}) => {
         children = {}
       }
     } else if (isOpen) {
-      if (parent.tagName === 'code') {
+      if (
+        parent.tagName === 'code' ||
+        (parent.tagName === 'span' &&
+          parent.properties?.className &&
+          parent.properties.className.includes('hljs-params'))
+      ) {
+        console.log(parent)
         if (node.type === 'text' && node.value === '\n') {
           // Linebreak
           node.type = 'element'
@@ -101,7 +126,11 @@ export default (userOptions = {}) => {
     }
   }
 
+  const isParamsNode = (node) =>
+    node?.properties?.className && node.properties.className.includes('hljs-params')
+
   const transform = (tree) => {
+    visit(tree, (node) => isParamsNode(node), splitParams)
     visit(tree, () => true, visitor)
     remove(tree, (node) => node.__remove_dupes === true)
   }
