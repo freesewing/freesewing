@@ -17,7 +17,7 @@ tedious. There are macros to add titles to your pattern, or grainline
 indicators, a scalebox, and there's a macro to round corners. The `round`
 macro.
 
-<Note> You can find more information on the `round` macro in [the macros docs](/reference/api/macros/round/).</Note>
+<Note> You can find more information on the `round` macro in [the macros docs](/reference/macros/round/).</Note>
 
 We need a half circle here, but the `round` macro works on 90° angles, so
 you'll use it twice.  As such, we'll add some points to guide the macro, and

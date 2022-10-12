@@ -3,7 +3,7 @@ title: plugin-logo
 ---
 
 Published as [@freesewing/plugin-logo][1], this plugin provides [the logo
-macro](/reference/api/macros/logo) which adds FreeSewing's logo to your
+macro](/reference/macros/logo) which adds FreeSewing's logo to your
 design.
 
 ## Installation

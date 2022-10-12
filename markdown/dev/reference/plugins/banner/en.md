@@ -3,7 +3,7 @@ title: plugin-banner
 ---
 
 Published as [@freesewing/plugin-banner][1], this plugin provides [the banner
-macro](/reference/api/macros/banner) which allows you to add repeating text
+macro](/reference/macros/banner) which allows you to add repeating text
 along a path.
 
 ## Installation

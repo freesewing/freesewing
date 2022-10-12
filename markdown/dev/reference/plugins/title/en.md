@@ -3,7 +3,7 @@ title: plugin-title
 ---
 
 Published as [@freesewing/plugin-title][1], this plugin provides [the title
-macro](/reference/api/macros/title) which facilitates adding part titles to
+macro](/reference/macros/title) which facilitates adding part titles to
 your designs.
 
 ## Installation

@@ -5,12 +5,12 @@ title: plugin-dimension
 Published as [@freesewing/plugin-dimension][1], this plugin provides the
 following macros:
 
-- [hd](/reference/api/macros/hd) : Adds a horizontal dimension
-- [vd](/reference/api/macros/vd) : Adds a vertical dimension
-- [ld](/reference/api/macros/ld) : Adds a linear dimension
-- [pd](/reference/api/macros/pd) : Adds a dimension along a path
-- [rmd](/reference/api/macros/rmd) : Removes a dimension
-- [rmad](/reference/api/macros/rmad) : Removes all dimensions with a default prefix
+- [hd](/reference/macros/hd) : Adds a horizontal dimension
+- [vd](/reference/macros/vd) : Adds a vertical dimension
+- [ld](/reference/macros/ld) : Adds a linear dimension
+- [pd](/reference/macros/pd) : Adds a dimension along a path
+- [rmd](/reference/macros/rmd) : Removes a dimension
+- [rmad](/reference/macros/rmad) : Removes all dimensions with a default prefix
 
 ## Installation
 

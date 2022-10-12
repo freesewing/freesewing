@@ -3,7 +3,7 @@ title: plugin-round
 ---
 
 Published as [@freesewing/plugin-round][1], this plugin provides [the round
-macro](/reference/api/macros/round) which helps you round corners on your
+macro](/reference/macros/round) which helps you round corners on your
 designs.
 
 ## Installation

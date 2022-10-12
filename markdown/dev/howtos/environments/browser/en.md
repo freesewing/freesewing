@@ -61,7 +61,7 @@ Below is a complete example.
       const svg = new Aaron({ 
         sa: 10, // Seam allowance
         paperless: true, // Enable paperless mode
-        // More settings, see: https://FreeSewing.dev/reference/api/settings
+        // More settings, see: https://FreeSewing.dev/reference/settings
         measurements: { // Pass in measurements
           biceps: 387,
           chest: 1105,

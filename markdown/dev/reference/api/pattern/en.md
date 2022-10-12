@@ -16,7 +16,7 @@ import { Florence } from "@freesewing/florence"
 const pattern = new Florence()
 ```
 
-You probably want to create a pattern using your own [settings](/reference/api/settings):
+You probably want to create a pattern using your own [settings](/reference/settings):
 
 ```js
 import { Florence } from "@freesewing/florence"

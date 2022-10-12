@@ -3,8 +3,8 @@ title: plugin-scalebox
 ---
 
 Published as [@freesewing/plugin-scalebox][1], this plugin provides the
-[scalebox](/reference/api/macros/scalebox) and
-[miniscale](/reference/api/macros/miniscale) macros which add a (mini) scalebox
+[scalebox](/reference/macros/scalebox) and
+[miniscale](/reference/macros/miniscale) macros which add a (mini) scalebox
 to your design, so users can verify that the pattern is printed at the correct
 scale.
 
