@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router'
 import Aside from 'shared/components/navigation/aside'
-import ThemePicker from 'shared/components/theme-picker'
 
 const DefaultLayout = ({ app, children = [] }) => {
   const router = useRouter()
@@ -8,7 +7,7 @@ const DefaultLayout = ({ app, children = [] }) => {
 
   return (
     <>
-      <Aside app={app} slug={slug} before={<ThemePicker app={app} />} mobileOnly />
+      <Aside app={app} slug={slug} mobileOnly />
       {children}
     </>
   )
