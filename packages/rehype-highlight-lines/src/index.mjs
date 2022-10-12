@@ -80,7 +80,7 @@ export default (userOptions = {}) => {
         // Deal with extra linebreaks in the element before the start
         const prev = parent.children[i - 1]
         if (prev.type === 'text' && prev.value.includes('\n'))
-          prev.value = prev.value.replace(/\n/g, '')
+          prev.value = prev.value.replace(/\n/g, '') + '\n'
 
         if (options.swallow) node.__remove_dupes = true
       } else if (type === 'closing') {
