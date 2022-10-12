@@ -37,4 +37,5 @@ the heck Node JS is and why you should care.
 Few people straddle both worlds, so as you start using FreeSewing, chances are
 you'll learn a few new things along the way.
 
+Our [chatrooms on Discord](https://discord.freesewing.org/) are the best place to ask questions you might have.
 </Note>
