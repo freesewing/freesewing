@@ -1,5 +1,5 @@
 import React from 'react'
-import { path } from '../icons/freesewing.js'
+import { path } from 'shared/components/icons/freesewing.js'
 import colors from 'tailwindcss/colors'
 
 const strokes = {
@@ -11,19 +11,24 @@ const strokes = {
 }
 let step = 0
 
-const Logo = ({ className='w-20 h-20', theme='light', stroke=false }) => {
+const Logo = ({ className = 'w-20 h-20', theme = 'light', stroke = false }) => {
   const svgProps = {
     xmlns: 'http://www.w3.org/2000/svg',
     viewBox: '1 0 25 25',
-    className: className
+    className: className,
   }
   return (
     <svg {...svgProps}>
       <defs>
         <path id="react-logo" d={path} />
       </defs>
-      <use xlinkHref="#react-logo" fill="none" stroke={stroke || strokes[theme]} strokeWidth="0.5"/>
-      <use xlinkHref="#react-logo" fill="currentColor" stroke="none"/>
+      <use
+        xlinkHref="#react-logo"
+        fill="none"
+        stroke={stroke || strokes[theme]}
+        strokeWidth="0.5"
+      />
+      <use xlinkHref="#react-logo" fill="currentColor" stroke="none" />
     </svg>
   )
 }
