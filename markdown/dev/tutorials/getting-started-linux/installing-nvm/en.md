@@ -17,19 +17,7 @@ the node.js website, or from a package provided by your linux distribution:
 To setup nvm, [follow the install instructions in the nvm
 README](https://github.com/nvm-sh/nvm#installing-and-updating).
 
-The TL;DR: is to run the following command in a terminal:
-
-```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-```
-
-If you don't have `curl` on your system, here's an alternative approach using `wget`:
-
-```bash
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-```
-
-After the script is completed, try running the following command:
+After installation is completed, try running the following command:
 
 ```bash
 nvm
