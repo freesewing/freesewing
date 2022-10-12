@@ -96,7 +96,16 @@ const buildExample = (children, settings = { margin: 5 }, tutorial = false, pape
 }
 
 // Wrapper component dealing with the tabs and code view
-const TabbedExample = ({ app, children, caption, tutorial, withHead, paperless, settings }) => {
+const TabbedExample = ({
+  app,
+  children,
+  caption,
+  tutorial,
+  previewFirst,
+  withHead,
+  paperless,
+  settings,
+}) => {
   if (settings)
     settings = {
       margin: 5,
@@ -105,7 +114,7 @@ const TabbedExample = ({ app, children, caption, tutorial, withHead, paperless, 
   else settings = { margin: 5 }
   if (withHead) settings.measurements = { head: 300 }
   const draft = buildExample(children, settings, tutorial, paperless)
-  if (tutorial)
+  if (tutorial && !previewFirst)
     return (
       <div className="my-8">
         <Tabs tabs="Code, Preview, X-Ray">
