@@ -1,18 +1,22 @@
 ---
 title: Accessing measurements
-for: developers
-about: Shows you how to access user measurements from inside your pattern
 ---
 
-Measurements are stored in `pattern.settings.measurements`.
+Measurements are available on the `measurements` key of from the object passed
+to your part's draft method. You can destructure them for easy access.
 
-You can pull them out of there with
-the [shorthand](/howtos/code/shorthand/) call:
+```design/src/part.mjs
+function draftPart = ({ 
+  // highlight-start
+  measurements, 
+  // highlight-end
+  part 
+}) {
 
-```js
-const  { measurements, options } = part.shorthand()
+  // Do something here 
 
-let sleeveBonus = measurements.shoulderToWrist * (1 + options.sleeveLengthBonus);
+  return part
+}
 ```
 
 <Note>

@@ -1,33 +1,49 @@
 ---
 title: Sharing data between parts
-for: developers
-about: Shows how you use the pattern store to share data between parts
 ---
 
-Sometimes, you'll want to access data from one part into another part.
-For example, you may store the length of the armhole in your front and back parts,
-and then read that value when drafting the sleeve so you can verify the sleeve fits the armhole.
+Sometimes, you'll want to access data from one part into another part. For
+example, you may store the length of the armhole in your front and back parts,
+and then read that value when drafting the sleeve so you can verify the sleeve
+fits the armhole.
 
-For this, you should use the [Store](/reference/api/store/), which is available via
-the [shorthand](/howtos/code/shorthand/) call:
+For this, you should use the [Store](/reference/api/store/), which is available
+via _destructuring_ in your part's draft method.
 
-```js
-export default function(part) {
-  let { store } = part.shorthand();
-  store.set('hello', 'world');
+Setting a value in one part:
 
-  return part();
+```mjs
+function draftPartA({
+  // highlight-start
+  store,
+  // highlight-end
+  part,
+}) {
+  // highlight-start
+  store.set('hello', 'world')
+  // highlight-end
+
+  return part()
 }
 ```
 
-```js
-export default function(part) {
-  let { store } = part.shorthand();
-  store.get('hello'); // Returns 'world'
+Reading a value in another part:
 
-  return part();
+```mjs
+function draftPartB({
+  // highlight-start
+  store,
+  // highlight-end
+  part,
+}) {
+  // highlight-start
+  const value = store.get('hello')
+  // value now contains 'world'
+  // highlight-end
+
+  return part()
 }
 ```
 
 In a case like this, the order in which parts are drafted becomes important, so you
-should reflect that in the [pattern configuration](/reference/api/config/).
+should reflect that in the [part dependencies](/howtos/code/after).

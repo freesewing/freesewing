@@ -74,6 +74,7 @@ const mdxLoader = async (language, site, slug, jargon) => {
             aliases: {
               javascript: [
                 'design/src/index.mjs',
+                'design/src/part.mjs',
                 'design/src/bib.mjs',
                 'index.mjs',
                 'part.mjs',

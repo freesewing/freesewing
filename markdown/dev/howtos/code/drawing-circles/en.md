@@ -2,20 +2,43 @@
 title: Drawing circles
 ---
 
-Real circles are rarely used in pattern design, and they are not part of the SVG path specification,
-but rather a different SVG element.
+Real circles are rarely used in pattern design, and they are not part of the
+SVG path specification, but rather a different SVG element.
 
-Still, if you want a circle, you can draw one by setting a Point's `data-circle` attribute
-to the radius of the circle you want to draw.
+Still, if you want a circle, you can draw one by calling
+[`Point.addCircle()`](/reference/api/point/addcircle):
 
-In addition, all attributes that have a `data-circle-` prefix will apply to the circle, rather than the point.
+<Example caption="An example of adding a path" tutorial>
+```design/src/part.mjs
+function draftPart = ({ 
+  Point,
+  points,
+  Path,
+  paths,
+  part 
+}) {
 
-Practically, you will probably want to use
-the [Point.addCircle()](/reference/api/point/adcircle) which does all of this for you behind the scenes:
+  points.anchor = new Point(0,0)
+  // highlight-start
+    .addCircle(5, 'lining dotted')
+    .addCircle(10, 'note dashed ')
+    .addCircle(15, 'facing lashed')
+    .addCircle(20, 'interfacing')
+  // highlight-end
 
-<Example part="point_addcircle">
-Examples of circles drawn on a pattern
+  // Prevent clipping
+  paths.demo = new Path()
+    .move(new Point(-20,-20))
+    .move(new Point(20,20))
+
+  return part
+}
+```
 </Example>
+
+<Warning>
+Circles are not taken into account when calculating the part's boundary.
+</Warning>
 
 <Comment by="joost">
 ##### How multiple circles are implemented
@@ -45,3 +68,4 @@ While this is probably what you'd intuitively expect, it is somewhat inconsisten
 other attributes are rendered, so I felt it was best to point it out explicitly.
 
 </Comment>
+
