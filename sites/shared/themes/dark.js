@@ -37,11 +37,16 @@ module.exports = {
 
   '--theme-gradient': `repeating-linear-gradient(
     90deg,
-    ${colors.violet[900]},
-    ${colors.violet[900]} 40%,
-    ${colors.pink[700]} 65%,
-    ${colors.violet[600]} 90%,
-    ${colors.violet[900]} 100%
+    ${colors.red[600]} 0,
+    ${colors.orange[600]} 11%,
+    ${colors.yellow[600]} 22%,
+    ${colors.lime[600]} 33%,
+    ${colors.green[600]} 44%,
+    ${colors.cyan[600]} 55%,
+    ${colors.blue[600]} 66%,
+    ${colors.indigo[600]} 77%,
+    ${colors.violet[600]} 88%,
+    ${colors.purple[600]} 100%
   )`,
 
   '--code-background-color': '#111',
