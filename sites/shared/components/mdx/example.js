@@ -30,7 +30,6 @@ const Example = ({ app, draft, settings, xray = false }) => {
     gist._state.xray = { enabled: true }
     gist.margin = 20
   }
-  console.log(draft.draft, draft.sample, settings)
   if (!draft.sample) return null
   const patternProps = settings.sample
     ? draft.sample().getRenderProps()
@@ -72,7 +71,11 @@ const buildExample = (children, settings = { margin: 5 }, tutorial = false, pape
     code = code.split(')')
     code = code[0] + ') => ' + code.slice(1).join(')')
   }
-  draft = eval(code)
+  try {
+    draft = eval(code)
+  } catch (err) {
+    console.log(err, code)
+  }
   const part = {
     draft: draft,
     measurements: tutorial ? [] : ['head'],

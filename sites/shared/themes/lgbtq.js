@@ -1,32 +1,33 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  'fontFamily': '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+  fontFamily:
+    '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
 
   'base-100': colors.fuchsia['50'],
   'base-200': colors.neutral['200'],
   'base-300': colors.neutral['400'],
   'base-content': colors.neutral['700'],
 
-  'primary': colors.sky['500'],
+  primary: colors.sky['500'],
   'primary-focus': colors.sky['400'],
   'primary-content': colors.sky['50'],
-  'secondary': colors.violet['500'],
+  secondary: colors.violet['500'],
   'secondary-focus': colors.violet['400'],
   'secondary-content': colors.violet['50'],
 
-  'accent': colors.fuchsia['500'],
+  accent: colors.fuchsia['500'],
   'accent-focus': colors.fuchsia['400'],
   'accent-content': colors.neutral['50'],
 
-  'neutral': colors.neutral['900'],
+  neutral: colors.neutral['900'],
   'neutral-focus': colors.neutral['700'],
   'neutral-content': colors.yellow['50'],
 
-  'info': colors.pink['400'],
-  'success': colors.green['600'],
-  'warning': colors.amber['500'],
-  'error': colors.red['600'],
+  info: colors.pink['400'],
+  success: colors.green['600'],
+  warning: colors.amber['500'],
+  error: colors.red['600'],
 
   '--theme-gradient': `repeating-linear-gradient(
      90deg,
@@ -45,6 +46,7 @@ module.exports = {
   )`,
 
   '--code-background-color': colors.neutral['800'],
+  '--code-background-highlight-color': '#313131',
   '--code-border-color': colors.neutral['900'],
   '--code-color': colors.neutral['100'],
   '--code-font-family': `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`,
@@ -108,13 +110,12 @@ module.exports = {
   '--pattern-text-4xl': '3rem',
 
   '--pattern-scale': '1',
-  '--pattern-stroke-xs': "0.2px",
-  '--pattern-stroke-sm': "0.4px",
-  '--pattern-stroke': "0.7px",
-  '--pattern-stroke-lg': "1.3px",
-  '--pattern-stroke-xl': "2px",
-  '--pattern-stroke-2xl': "4px",
-  '--pattern-stroke-3xl': "6px",
-  '--pattern-stroke-4xl': "8px",
+  '--pattern-stroke-xs': '0.2px',
+  '--pattern-stroke-sm': '0.4px',
+  '--pattern-stroke': '0.7px',
+  '--pattern-stroke-lg': '1.3px',
+  '--pattern-stroke-xl': '2px',
+  '--pattern-stroke-2xl': '4px',
+  '--pattern-stroke-3xl': '6px',
+  '--pattern-stroke-4xl': '8px',
 }
-

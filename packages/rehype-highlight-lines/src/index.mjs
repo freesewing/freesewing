@@ -99,7 +99,16 @@ export default (userOptions = {}) => {
               ? options[`${variant}Class`]
               : [options[`${variant}Class`]],
           },
-          children: [...Object.values(children)],
+          children: [
+            {
+              type: 'element',
+              tagName: 'div',
+              properties: {
+                className: ['code-section-inner'],
+              },
+              children: [...Object.values(children)],
+            },
+          ],
         }
 
         if (!options.swallow) parent[i].children.push(curNode)

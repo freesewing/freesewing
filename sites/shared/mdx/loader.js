@@ -87,7 +87,7 @@ const mdxLoader = async (language, site, slug, jargon) => {
         [
           rehypeHighlightLines,
           {
-            highlightClass: ['highlight-lines', 'bg-yellow-300', 'bg-opacity-5', 'border-l-4'],
+            highlightClass: ['highlight-lines', 'border-l-4'],
             strikeoutClass: [
               'strikeout-lines',
               'bg-orange-300',

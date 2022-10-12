@@ -1,33 +1,34 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  'fontFamily': '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+  fontFamily:
+    '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
 
   'base-100': colors.neutral['900'],
   'base-200': colors.neutral['700'],
   'base-300': colors.neutral['600'],
   'base-content': colors.neutral['300'],
 
-  'primary': colors.violet['700'],
+  primary: colors.violet['700'],
   'primary-focus': colors.violet['600'],
   'primary-content': colors.violet['50'],
 
-  'secondary': colors.sky['500'],
+  secondary: colors.sky['500'],
   'secondary-focus': colors.sky['400'],
   'secondary-content': colors.sky['50'],
 
-  'accent': colors.pink['500'],
+  accent: colors.pink['500'],
   'accent-focus': colors.pink['400'],
   'accent-content': colors.pink['50'],
 
-  'neutral': '#000000', // Dark as my soul
+  neutral: '#000000', // Dark as my soul
   'neutral-focus': colors.neutral['800'],
   'neutral-content': colors.neutral['50'],
 
-  'info': colors.indigo['700'],
-  'success': colors.green['700'],
-  'warning': colors.orange['500'],
-  'error': colors.red['700'],
+  info: colors.indigo['700'],
+  success: colors.green['700'],
+  warning: colors.orange['500'],
+  error: colors.red['700'],
 
   '--btn-info-content': colors.neutral[50],
   '--btn-success-content': colors.neutral[50],
@@ -44,6 +45,7 @@ module.exports = {
   )`,
 
   '--code-background-color': '#111',
+  '--code-background-highlight-color': '#191919',
   '--code-border-color': colors.neutral['800'],
   '--code-color': colors.neutral['300'],
   '--code-font-family': `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`,
@@ -60,7 +62,7 @@ module.exports = {
   '--code-color-string': colors.sky['300'],
   '--code-font-style-string': 'italic',
   '--code-color-variable': colors.indigo['300'],
-  '--code-color-comment': colors.neutral['600'],
+  '--code-color-comment': colors.neutral['400'],
   '--code-color-tag': colors.green['600'],
   '--code-color-property': colors.yellow['200'],
   '--code-font-weight-property': 'bold',
