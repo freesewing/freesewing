@@ -24,7 +24,6 @@ export default (userOptions = {}) => {
   const splitParams = (node, i, parent) => {
     if (node.children.length === 1 && node.children[0].type === 'text') {
       const content = node.children[0].value.split('\n')
-      console.log(content)
       node.children = content.map((value) =>
         value.includes('//')
           ? {
@@ -35,13 +34,13 @@ export default (userOptions = {}) => {
               },
               children: [{ type: 'text', value }],
             }
-          : { type: 'text', value: value + '\n' }
+          : { type: 'text', value: value + '\n', isParamLine: true }
       )
     }
   }
 
   // Keep track of whether we've opened a highlight block
-  let isOpen = false
+  let isOpen = 0
   let children = {}
   let variant
 
@@ -76,10 +75,21 @@ export default (userOptions = {}) => {
     const [type, variant] = isOpeningOrClosingComment(node)
     if (type) {
       if (type === 'opening') {
-        isOpen = true
+        isOpen = 1
+
+        // Deal with extra linebreaks in the element before the start
+        const prev = parent.children[i - 1]
+        if (prev.type === 'text' && prev.value.includes('\n'))
+          prev.value = prev.value.replace(/\n/g, '')
+
         if (options.swallow) node.__remove_dupes = true
       } else if (type === 'closing') {
-        isOpen = false
+        // Deal with extra linebreaks in the element before the end
+        const prev = children[i - 1]
+        if (prev.type === 'text' && prev.value.includes('\n') && !node.isParamLine)
+          prev.value = prev.value.trimEnd()
+
+        isOpen = 0
         const curNode = { ...node }
         parent.children[i] = {
           type: 'element',
@@ -91,6 +101,7 @@ export default (userOptions = {}) => {
           },
           children: [...Object.values(children)],
         }
+
         if (!options.swallow) parent[i].children.push(curNode)
         children = {}
       }
@@ -101,7 +112,6 @@ export default (userOptions = {}) => {
           parent.properties?.className &&
           parent.properties.className.includes('hljs-params'))
       ) {
-        console.log(parent)
         if (node.type === 'text' && node.value === '\n') {
           // Linebreak
           node.type = 'element'
@@ -120,7 +130,11 @@ export default (userOptions = {}) => {
             },
           ]
         }
+        // On the first highlighted line, trim the previous linebreak (not for param lines)
+        if (isOpen === 1 && node?.type === 'text' && !node.isParamLine)
+          node.value = node.value.replace('\n', '')
         children[i] = { ...node }
+        isOpen++
         node.__remove_dupes = true
       }
     }

@@ -36,12 +36,8 @@ div.hljs > pre > code {
  * Higlight lines within a highlighted code block
  */
 div.hljs > pre > code section {
-  padding-left: calc(1rem - 4px);
-  padding-right: 1rem;
-  margin-left: -1rem;
-  margin-right: -1rem;
-  padding-top: 0;
-  padding-bottom: 0;
+  margin: 0 -1rem;
+  padding: 0.25rem 1rem 0.25rem calc(1rem - 4px);
   border-left: 0.35rem solid transparent;
   border-color: rgb(130, 203, 21);
 }
