@@ -188,10 +188,13 @@ function createDesign(name, type) {
   mkdir([...design, 'tests'])
 
   // Create package.json
-  templateOut([...template, 'package.json'], [...design, 'package.json'], { name, description })
+  templateOut([...template, 'package.json.mustache'], [...design, 'package.json'], {
+    name,
+    description,
+  })
 
   // Create index.mjs
-  templateOut([...template, 'src', 'index.mjs'], [...design, 'src', 'index.mjs'], {
+  templateOut([...template, 'src', 'index.mjs.mustache'], [...design, 'src', 'index.mjs'], {
     capitalized_name,
   })
 

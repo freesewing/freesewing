@@ -1,6 +1,4 @@
 module.exports = {
-  models: {
-  },
-  only: {
-  }
+  models: {},
+  only: {},
 }

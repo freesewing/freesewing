@@ -17,7 +17,7 @@ const options = {
   entryPoints: ['src/index.mjs'],
   format: 'esm',
   outfile: 'dist/index.mjs',
-  external: ["@freesewing"],
+  external: ['@freesewing'],
   metafile: process.env.VERBOSE ? true : false,
   minify: process.env.NO_MINIFY ? false : true,
   sourcemap: true,
@@ -25,12 +25,11 @@ const options = {
 
 // Let esbuild generate the build
 let result
-(async () => {
+;(async () => {
   result = await esbuild.build(options).catch(() => process.exit(1))
 
   if (process.env.VERBOSE) {
     const info = await esbuild.analyzeMetafile(result.metafile)
     console.log(info)
   }
-
 })()

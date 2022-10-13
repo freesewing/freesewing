@@ -59,7 +59,7 @@ describe('Store', () => {
     }
     const part = {
       name: 'example.part',
-      plugins: [ plugin ],
+      plugins: [plugin],
       draft: ({ store, part }) => {
         store.test.example.warning('hello warning')
         store.test.example.info('hello info')
@@ -95,7 +95,7 @@ describe('Store', () => {
     }
     const part = {
       name: 'example_part',
-      plugins: [ plugin ],
+      plugins: [plugin],
       draft: ({ methodA, methodB, part }) => {
         methodA('hello A')
         methodB('hello B')
@@ -129,9 +129,11 @@ describe('Store', () => {
 
   it('Should log a warning when pushing to a non-array key', () => {
     const store = new Store()
-    store.push('test',1)
+    store.push('test', 1)
     expect(store.logs.warning.length).to.equal(1)
-    expect(store.logs.warning[0]).to.equal('Store.push(value) on key `test`, but key does not hold an array')
+    expect(store.logs.warning[0]).to.equal(
+      'Store.push(value) on key `test`, but key does not hold an array'
+    )
   })
 
   it('Should log a warning when setting an undefined value with set()', () => {
@@ -145,7 +147,9 @@ describe('Store', () => {
     const store = new Store()
     store.setIfUnset('test')
     expect(store.logs.warning.length).to.equal(1)
-    expect(store.logs.warning[0]).to.equal('Store.setIfUnset(value) on key `test`, but value is undefined')
+    expect(store.logs.warning[0]).to.equal(
+      'Store.setIfUnset(value) on key `test`, but value is undefined'
+    )
   })
 
   it('Should unset a value', () => {
