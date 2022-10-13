@@ -42,7 +42,7 @@ const ThemePicker = ({ app, className, iconOnly = false }) => {
                         <p className="text-lg font-medium text-base text-left">
                           {t(`${theme}Theme`)}
                         </p>
-                        <p className="text-base left -mt-4">
+                        <p className="text-base text-left -mt-4 shadow">
                           {t('common:sloganCome')}
                           <span className="px-2">|</span>
                           {t('common:sloganStay')}
