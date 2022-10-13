@@ -9,6 +9,7 @@ function draftCharlieWaistbandCurved({
   paths,
   Path,
   options,
+  absoluteOptions,
   complete,
   paperless,
   store,
@@ -24,6 +25,7 @@ function draftCharlieWaistbandCurved({
     return part
   }
 
+  store.set('waistbandWidth', absoluteOptions.waistbandWidth)
   const fullWaist = 2 * (store.get('waistbandBack') + store.get('waistbandFront'))
   const sideSeamFraction =
     (0.5 * store.get('waistbandFront')) / (store.get('waistbandBack') + store.get('waistbandFront'))
