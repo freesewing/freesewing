@@ -1,13 +1,19 @@
+//{{!
+//    Change the Mustache delimiter from double curly braces to double dollar signs.
+//    Dollar signs are allowed in EcmaScript identifier names,
+//    which is helpful when running unrendered Mustache templates through eslint.
+//}}{{=$$ $$=}}
+
 import { Design } from '@freesewing/core'
 import { data } from '../data.mjs'
 // Parts
 import { box } from './box.mjs'
 
 // Create new design
-const {{capitalized_name}} = new Design({
+const $$capitalized_name$$ = new Design({
   data,
-  parts: [ box, ],
+  parts: [box],
 })
 
 // Named exports
-export { box, {{capitalized_name}} }
+export { box, $$capitalized_name$$ }
