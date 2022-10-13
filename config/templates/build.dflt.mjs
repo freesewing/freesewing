@@ -24,8 +24,7 @@ const options = {
 }
 
 // Let esbuild generate the build
-let result
-;(async () => {
+let result = null(async () => {
   result = await esbuild.build(options).catch(() => process.exit(1))
 
   if (process.env.VERBOSE) {
