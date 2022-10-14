@@ -1,6 +1,6 @@
 import { config } from './config.mjs'
 import { mkdir, readFile, writeFile, copyFile } from 'node:fs/promises'
-import { join, dirname } from 'path'
+import { join, dirname, relative } from 'path'
 import mustache from 'mustache'
 import rdir from 'recursive-readdir'
 import chalk from 'chalk'
@@ -11,12 +11,13 @@ import axios from 'axios'
 import { fileURLToPath } from 'url'
 
 // Current working directory
-let cwd
+let filename
 try {
-  cwd = __dirname
+  filename = __filename
 } catch {
-  cwd = dirname(fileURLToPath(import.meta.url))
+  filename = fileURLToPath(import.meta.url)
 }
+const newDesignDir = join(filename, '../..')
 
 const nl = '\n'
 const tab = '  '
@@ -114,41 +115,49 @@ export const getChoices = async () => {
 }
 
 // Keep track of directories that need to be created
-const dirs = {}
+const dirPromises = {}
 const ensureDir = async (file, suppress = false) => {
   const dir = suppress ? dirname(file.replace(suppress)) : dirname(file)
-  if (!dirs[dir]) {
-    await mkdir(dir, { recursive: true })
-    dirs[dir] = true
+  if (!dirPromises[dir]) {
+    dirPromises[dir] = mkdir(dir, { recursive: true })
+  }
+  await dirPromises[dir]
+}
+
+// Helper method to copy template files
+const copyFileOrTemplate = async (fromRoot, toRoot, relativeFile, templateVars) => {
+  const from = join(fromRoot, relativeFile)
+  const to = join(
+    toRoot,
+    relativeFile.endsWith('.mustache') ? relativeFile.slice(0, -9) : relativeFile
+  )
+
+  await ensureDir(to)
+
+  if (relativeFile.endsWith('.mustache')) {
+    const template = await readFile(from, 'utf-8')
+    const rendered = mustache.render(template, templateVars)
+    await writeFile(to, rendered)
+  } else {
+    await copyFile(from, to)
   }
 }
 
 // Helper method to copy template files
-const copyTemplate = async (config, choices) => {
-  // Copy files in parallel rather than using await
-  const promises = []
-
+const copyAll = async (config, templateVars) => {
   // Copy shared files
-  for (const from of config.files.shared) {
-    // FIXME: Explain the -7
-    const to = join(config.dest, from.slice(config.source.shared.length - 7))
-    if (!dirs[to]) await ensureDir(to)
-    promises.push(copyFile(from, to))
-  }
+  await Promise.all(
+    config.relativeFiles.shared.map((from) => {
+      copyFileOrTemplate(config.source.shared, config.dest, from, templateVars)
+    })
+  )
 
   // Template files
-  for (const from of config.files.template) {
-    let to = join(config.dest, from.slice(config.source.template.length - 7))
-    if (to.slice(-9) === '.mustache') to = to.slice(0, -9)
-    if (!dirs[to]) await ensureDir(to)
-    // Template out file
-    const src = await readFile(from, 'utf-8')
-    promises.push(writeFile(to, mustache.render(src, { name: choices.name, tag: config.tag })))
-  }
-
-  await Promise.all(promises)
-
-  return
+  await Promise.all(
+    config.relativeFiles.template.map((from) => {
+      copyFileOrTemplate(config.source.template, config.dest, from, templateVars)
+    })
+  )
 }
 
 // Helper method to run [yarn|npm] install
@@ -162,25 +171,25 @@ const installDependencies = async (config, choices) =>
 const downloadLabFiles = async (config) => {
   const promises = []
   for (const dir in config.fetch) {
-    for (const file of config.fetch[dir]) {
-      const to = typeof file === 'string' ? join(config.dest, file) : join(config.dest, file.to)
-      if (!dirs[to]) await ensureDir(to)
-      promises.push(
-        axios
-          .get(
+    promises.push(
+      ...config.fetch[dir].map(async (file) => {
+        const to = typeof file === 'string' ? join(config.dest, file) : join(config.dest, file.to)
+        await ensureDir(to)
+        try {
+          const res = await axios.get(
             `${config.fileUri}/${config.repo}/${config.branch}/${dir}/${
               typeof file === 'string' ? file : file.from
             }`
           )
-          .catch((err) => console.log(err))
-          .then((res) => promises.push(writeFile(to, res.data)))
-      )
-    }
+          await writeFile(to, res.data)
+        } catch (err) {
+          console.log(err)
+        }
+      })
+    )
   }
 
-  await Promise.all(promises)
-
-  return
+  return Promise.all(promises)
 }
 
 // Helper method to initialize a git repository
@@ -253,21 +262,21 @@ const showTips = (config, choices) => {
 // Creates the environment based on the user's choices
 export const createEnvironment = async (choices) => {
   // Store directories for re-use
-  ;(config.cwd = cwd),
-    (config.source = {
-      root: cwd,
-      template: cwd + `/../templates/from-${choices.template}`,
-      shared: cwd + `/../shared`,
-    })
+  config.source = {
+    template: `${newDesignDir}/templates/from-${choices.template}`,
+    shared: `${newDesignDir}/shared`,
+  }
   config.dest = join(process.cwd(), choices.name)
 
   // Create target directory
   await mkdir(config.dest, { recursive: true })
 
   // Find files
-  config.files = {
-    template: await rdir(config.source.template),
-    shared: await rdir(config.source.shared),
+  config.relativeFiles = {
+    template: (await rdir(config.source.template)).map((file) =>
+      relative(config.source.template, file)
+    ),
+    shared: (await rdir(config.source.shared)).map((file) => relative(config.source.shared, file)),
   }
 
   // Output a linebreak
@@ -275,7 +284,12 @@ export const createEnvironment = async (choices) => {
 
   // Copy/Template files
   try {
-    await oraPromise(copyTemplate(config, choices), {
+    const templateVars = {
+      template: choices.template,
+      name: choices.name,
+      tag: config.tag,
+    }
+    await oraPromise(copyAll(config, templateVars), {
       text:
         chalk.white.bold('🟨⬜⬜⬜  Copying template files') +
         chalk.white.dim('   |  Just a moment'),
