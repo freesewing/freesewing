@@ -35,6 +35,9 @@
   "dependencies": {
     "@freesewing/core": "{{ tag }}",
     "@freesewing/plugin-bundle": "{{ tag }}"
+    {{# block }}
+    , "@freesewing/{{ block }}": "{{ tag }}"
+    {{/ block }}
   },
   "devDependencies": {
     "@freesewing/plugin-svgattr": "{{ tag }}",

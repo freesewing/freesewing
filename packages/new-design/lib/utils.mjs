@@ -1,5 +1,5 @@
 import { config } from './config.mjs'
-import { mkdir, readFile, writeFile, copyFile } from 'node:fs/promises'
+import { mkdir, readFile, writeFile, copyFile, stat } from 'node:fs/promises'
 import { join, dirname, relative } from 'path'
 import mustache from 'mustache'
 import rdir from 'recursive-readdir'
@@ -18,6 +18,7 @@ try {
   filename = fileURLToPath(import.meta.url)
 }
 const newDesignDir = join(filename, '../..')
+const monorepoDesignsDir = join(newDesignDir, '../../designs')
 
 const nl = '\n'
 const tab = '  '
@@ -285,10 +286,19 @@ export const createEnvironment = async (choices) => {
   // Copy/Template files
   try {
     const templateVars = {
-      template: choices.template,
       name: choices.name,
       tag: config.tag,
     }
+
+    try {
+      await stat(join(monorepoDesignsDir, choices.template))
+      if (choices.template !== 'tutorial') {
+        templateVars.block = choices.template
+      }
+    } catch (err) {
+      // fs.stat throws an error if no such file or directory exists
+    }
+
     await oraPromise(copyAll(config, templateVars), {
       text:
         chalk.white.bold('🟨⬜⬜⬜  Copying template files') +
