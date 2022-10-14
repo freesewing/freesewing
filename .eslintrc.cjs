@@ -5,6 +5,7 @@ const nodeFiles = [
   `**/build.dflt.${jsSuffixes}`,
   `**/build.${jsSuffixes}`,
   `**/config/**/*.${jsSuffixes}`,
+  `**/*.config.${jsSuffixes}`,
   `**/prebuild.${jsSuffixes}`,
   `**/prebuild/**/*.${jsSuffixes}`,
   `**/scripts/**/*.${jsSuffixes}`,
@@ -83,7 +84,11 @@ module.exports = {
     },
     // Additional globals for JavaScript files that happen to contain Mocha tests
     {
-      files: [`**/tests/**/*.${jsSuffixes}`, `**/*.test.${jsSuffixes}`],
+      files: [
+        `**/tests/**/*.${jsSuffixes}`,
+        `**/*.test.${jsSuffixes}`,
+        'scripts/test-failure-collector.js',
+      ],
       env: {
         mocha: true,
       },

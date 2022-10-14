@@ -1,5 +1,7 @@
 import { name, version } from '../data.mjs'
 
+/* eslint-disable no-undef */
+
 const now = () => {
   if (typeof window !== 'undefined') return window.performance.now() // Browser
   if (typeof process !== 'undefined') return process.hrtime.bigint() // NodeJS
@@ -11,6 +13,8 @@ const delta = (start) => {
   if (typeof process !== 'undefined') return (process.hrtime.bigint() - start) / BigInt(1000) // NodeJS
   return false
 }
+
+/* eslint-enable no-undef */
 
 export const plugin = {
   name,
