@@ -37,13 +37,12 @@ export const body = {
       part,
     } = shorthand
 
-    //design pattern here
     //body
     const lengthBody =
       (measurements.waistToKnee + measurements.hpsToWaistBack) * (1 + options.shiftLength)
-    let workingHip
-    if (measurements.chest > measurements.hips) workingHip = measurements.chest / 2
-    else workingHip = measurements.hips / 2
+
+    const workingHip =
+      measurements.chest > measurements.hips ? measurements.chest / 2 : measurements.hips / 2
 
     const widthBody = workingHip * (1 + options.bodyEase)
 
@@ -82,14 +81,14 @@ export const body = {
       .move(points.leftShoulder)
       .line(points.leftShoulder)
       .line(points.gorestartLeft)
-      .attr('class', 'fabric dashed')
+      .addClass('fabric dashed')
       .close()
 
     paths.rightGore = new Path()
       .move(points.rightShoulder)
       .line(points.gorestartRight)
       .line(points.rightShoulder)
-      .attr('class', 'fabric dashed')
+      .addClass('fabric dashed')
       .close()
 
     //neckline
@@ -116,7 +115,7 @@ export const body = {
       .curve(points.neckCp1, points.neckCp2, points.neckFront)
 
     points.neckCp3 = points.neckLeft.shift(90, points.neckFront.dy(points.neckLeft) * 0.8)
-    points.neckCp4 = points.neckFront.shift(360, points.neckFront.dy(points.neckLeft) * 0.8)
+    points.neckCp4 = points.neckFront.shift(0, points.neckFront.dy(points.neckLeft) * 0.8)
 
     paths.neckLine2 = new Path()
       .move(points.neckFront)
@@ -129,7 +128,7 @@ export const body = {
       .attr('data-text', 'Back Neckline')
       .attr('data-text-class', 'center')
 
-    points.neckBackCp1 = points.neckBack.shift(360, points.neckFront.dy(points.neckLeft) * 0.8)
+    points.neckBackCp1 = points.neckBack.shift(0, points.neckFront.dy(points.neckLeft) * 0.8)
     points.neckBackCp2 = points.neckBack.shift(180, points.neckFront.dy(points.neckRight) * 0.8)
     points.neckBackCp3 = points.neckLeft.shift(90, points.neckBack.dy(points.neckLeft) * 0.8)
     points.neckBackCp4 = points.neckRight.shift(90, points.neckBack.dy(points.neckRight) * 0.8)
@@ -146,12 +145,11 @@ export const body = {
     points.topTopRight = points.topRight.shift(90, 20)
     paths.extraBoundary = new Path()
       .move(points.topLeft)
-      .line(points.topRight)
-      .line(points.topTopRight)
-      .line(points.topTopLeft)
-      .line(points.topLeft)
+      .move(points.topRight)
+      .move(points.topTopRight)
+      .move(points.topTopLeft)
+      .move(points.topLeft)
       .close()
-      .setClass('hidden')
 
     // Complete?
     if (complete) {
@@ -166,7 +164,7 @@ export const body = {
       })
 
       if (sa) {
-        paths.sa = paths.sideseam.offset(sa).attr('class', 'fabric sa')
+        paths.sa = paths.sideseam.offset(sa).setClass('fabric sa')
       }
 
       macro('cutonfold', {
