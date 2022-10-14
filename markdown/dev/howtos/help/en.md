@@ -1,12 +1,5 @@
 ---
 title: Where to get help
-for: contributors
-icons: 
-  - help
-  - discord
-about: |
-  Our [chatrooms on Discord](https://discord.freesewing.org/) are the best place to 
-  ask questions or share your feedback
 ---
 
 Our [chatrooms on Discord](https://discord.freesewing.org/) are the best place to

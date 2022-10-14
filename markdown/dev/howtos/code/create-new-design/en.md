@@ -1,13 +1,10 @@
 ---
 title: Creating a new pattern design
-for: developers
-about: Shows you how to create a new design
 ---
 
-When creating a new design, you have two options:
-
-- Create it in a stand-along development environment
-- Create it inside (your fork of ) the FreeSewing monorepo
+When creating a new design, you have two options. You can create it in a
+stand-along development environment. Or you can create it inside (your fork of)
+the FreeSewing monorepo.
 
 If you are unsure what to pick, go with the standalong development environment.
 It is the best choice for people new to FreeSewing.
