@@ -1,4 +1,10 @@
-import { Pattern } from 'design/src/index.mjs'
+//{{!
+//    Change the Mustache delimiter from double curly braces to double dollar signs.
+//    Dollar signs are allowed in EcmaScript identifier names,
+//    which is helpful when running unrendered Mustache templates through eslint.
+//}}{{=$$ $$=}}
+
+import { $$Name$$ } from 'design/src/index.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 import Page from 'site/components/wrappers/page.js'
@@ -11,7 +17,7 @@ const WorkbenchPage = (props) => {
 
   return (
     <Page app={app}>
-      <WorkbenchWrapper {...{ app, design: Pattern, layout: Layout }} />
+      <WorkbenchWrapper {...{ app, design: $$Name$$, layout: Layout }} />
     </Page>
   )
 }

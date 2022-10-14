@@ -9,6 +9,7 @@ import { oraPromise } from 'ora'
 import { execa } from 'execa'
 import axios from 'axios'
 import { fileURLToPath } from 'url'
+import { capitalize } from '@freesewing/core'
 
 // Current working directory
 let filename
@@ -286,6 +287,7 @@ export const createEnvironment = async (choices) => {
   // Copy/Template files
   try {
     const templateVars = {
+      Name: capitalize(choices.name),
       name: choices.name,
       tag: config.tag,
     }

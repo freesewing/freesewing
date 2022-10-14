@@ -1,12 +1,18 @@
+//{{!
+//    Change the Mustache delimiter from double curly braces to double dollar signs.
+//    Dollar signs are allowed in EcmaScript identifier names,
+//    which is helpful when running unrendered Mustache templates through eslint.
+//}}{{=$$ $$=}}
+
 import { Design } from '@freesewing/core'
 import { bib } from './bib.mjs'
 
-const Pattern = new Design({
+const $$Name$$ = new Design({
   data: {
-    version: "0.0.1",
-    name: "Tutorial",
+    version: '0.0.1',
+    name: '$$ name $$',
   },
   parts: [ bib ],
 })
 
-export { bib, Pattern }
+export { bib, $$Name$$ }

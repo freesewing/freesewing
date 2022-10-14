@@ -1,10 +1,16 @@
+//{{!
+//    Change the Mustache delimiter from double curly braces to double dollar signs.
+//    Dollar signs are allowed in EcmaScript identifier names,
+//    which is helpful when running unrendered Mustache templates through eslint.
+//}}{{=$$ $$=}}
+
 // Import Design constructor
 import { Design } from '@freesewing/core'
 // Import parts
 import { box } from './box.mjs'
 
 // Create the new design
-const Pattern = new Design({
+const $$Name$$ = new Design({
   data: {
     /*
      * If you like, you can add any data you want to your design.
@@ -13,7 +19,7 @@ const Pattern = new Design({
      * If you don't use this,
      * you can remove this data key enterely.
      */
-    name: "{{ name }}",
+    name: "$$ name $$",
   },
   // A list of parts is all that is required.
   parts: [ box ],
@@ -25,5 +31,5 @@ const Pattern = new Design({
  * We export the design itself as well as each part individually.
  * This allows us to re-use these parts in other designs.
  */
-export { box, Pattern }
+export { box, $$Name$$ }
 
