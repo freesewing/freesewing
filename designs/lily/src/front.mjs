@@ -1,5 +1,6 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { front as titanFront } from '@freesewing/titan'
+import { back } from './back.mjs'
 
 function draftLilyFront({
   points,
@@ -18,10 +19,10 @@ function draftLilyFront({
   sa,
   absoluteOptions,
   part,
+  log,
 }) {
   
   //TODO: update back so that matching to inseamBack and outseamBack works normally
-  //TODO: update drawOutseam
   //TODO: implement stretch setting to replace ease
   
   /*
@@ -37,17 +38,19 @@ function draftLilyFront({
    */
   const drawOutseam = () => {
     let waistOut = points.styleWaistOut || points.waistOut
-      if (points.waistOut.x < points.seatOut.x)
+      if (points.waistOut.x < points.seatOut.x) {
         return new Path()
           .move(waistOut)
           .curve(points.seatOut, points.kneeOutCp1, points.kneeOut)
-          .line(points.floorOut)
-      else
+          .curve(points.kneeOutCp2, points.floorOutCp2, points.floorOut)
+      } else {
+        log.info('waistOut larger')
         return new Path()
           .move(waistOut)
           ._curve(points.seatOutCp1, points.seatOut)
           .curve(points.seatOutCp2, points.kneeOutCp1, points.kneeOut)
-          .line(points.floorOut)
+          .curve(points.kneeOutCp2, points.floorOutCp2, points.floorOut)
+      }
   }
 
   /*
@@ -205,15 +208,19 @@ function draftLilyFront({
   console.log('test2')
 
   // shape at the ankle (unlike titan)
-  let halfAnkle = measurements.ankle / 4
+  let halfAnkle = store.get('halfAnkle')
+  // let halfAnkle = store.get('kneeFront') / 2
+                                                             
   points.floorOut = points.floor.shift(180, halfAnkle)
   points.floorIn = points.floorOut.flipX(points.floor)
   
   console.log('ankle')
 
-  // Control points to shape the legs towards the seat
+  // Control points between knee and ankle
   points.floorInCp2 = points.floorIn.shift(90,points.knee.dy(points.floor) / 3)
   points.kneeInCp1 = points.kneeIn.shift(90, -points.knee.dy(points.floor) / 3)
+  points.floorOutCp2 = points.floorOut.shift(90,points.knee.dy(points.floor) / 3)
+  points.kneeOutCp2 = points.kneeOut.shift(90, -points.knee.dy(points.floor) / 3)
   
   // other control points have already been calculated in titan
 /*   points.kneeInCp2 = points.kneeIn.shift(90, points.fork.dy(points.knee) / 3)
@@ -575,11 +582,6 @@ function draftLilyFront({
 export const front = {
   name: 'lily.front',
   from: titanFront,
-  measurements: [
-    'ankle',
-  ],
-  options: {
-    fitGuides: true,
-  },
+  after: back,
   draft: draftLilyFront,
 }
