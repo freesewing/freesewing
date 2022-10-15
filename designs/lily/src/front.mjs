@@ -112,12 +112,16 @@ function draftLilyFront({
    */
   const adaptInseamAndOutseam = () => {
     let shift = [
+      'kneeInCp1',
       'kneeInCp2',
       'kneeOutCp1',
+      'kneeOutCp2',
       'kneeIn',
       'kneeOut',
       'knee',
+      'floorInCp2',
       'floorIn',
+      'floorOutCp2',
       'floorOut',
       'floor',
       'grainlineBottom',
