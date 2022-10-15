@@ -23,7 +23,6 @@ export const gusset = {
       measurements,
       part,
     } = shorthand
-    //design pattern here
 
     const fullArmhole = measurements.biceps * (1 + 0.85)
     const gussetMeasure = (fullArmhole / 2) * options.gussetSize
@@ -47,11 +46,11 @@ export const gusset = {
       macro('title', {
         at: points.title,
         nr: 3,
-        title: 'Sleeve Gusset',
+        title: 'sleeveGusset',
       })
 
       if (sa) {
-        paths.sa = paths.gusset.offset(sa).attr('class', 'fabric sa')
+        paths.sa = paths.gusset.offset(sa).setClass('fabric sa')
       }
     }
 

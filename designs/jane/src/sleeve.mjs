@@ -49,25 +49,18 @@ export const sleeve = {
       macro('title', {
         at: points.title,
         nr: 2,
-        title: 'Sleeve',
+        title: 'sleeve',
       })
 
-      points.notch = new Point(0, sleeveWidth / 2)
-        .attr('data-text', 'Shoulder')
-        .attr('data-text-class', 'center')
+      points.notch = new Point(0, sleeveWidth / 2).addTetxt('shoulder', 'center')
 
-      points.text1 = new Point(sleeveLength / 2, 10)
-        .attr('data-text', 'Seam')
-        .attr('data-text-class', 'center')
+      points.text1 = new Point(sleeveLength / 2, 10).addText('seam', 'center')
 
-      points.text2 = new Point(sleeveLength / 2, sleeveWidth)
-        .attr('data-text', 'Seam')
-        .attr('data-text-class', 'center')
+      points.text2 = new Point(sleeveLength / 2, sleeveWidth).addText('seam', 'center')
 
       points.text3 = points.sleeveRight
         .shiftTowards(points.sleeveBottomRight, sleeveWidth / 2)
-        .attr('data-text', 'Hem')
-        .attr('data-text-class', 'center')
+        .addText('hem', 'center')
 
       macro('sprinkle', {
         snippet: 'notch',
@@ -75,7 +68,7 @@ export const sleeve = {
       })
 
       if (sa) {
-        paths.sa = paths.sleeve.offset(sa).attr('class', 'fabric sa')
+        paths.sa = paths.sleeve.offset(sa).setClass('fabric sa')
       }
     }
 

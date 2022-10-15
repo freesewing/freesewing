@@ -160,7 +160,7 @@ export const body = {
       macro('title', {
         at: points.title,
         nr: 1,
-        title: 'Body',
+        title: 'body',
       })
 
       if (sa) {
