@@ -111,6 +111,7 @@ sites/*/out
 sites/*/public/mdx
 sites/*/prebuild
 !sites/shared/prebuild
+sites/dev/public/og
 
 # misc
 .DS_Store

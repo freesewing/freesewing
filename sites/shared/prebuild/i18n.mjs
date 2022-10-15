@@ -3,27 +3,20 @@ import { denyList } from '../../../packages/i18n/scripts/prebuilder.mjs'
 import fs from 'fs'
 import path from 'path'
 
-const writeJson = async (site, locale, namespace, content) => fs.writeFileSync(
-   path.resolve(
-     '..',
-     site,
-     'public',
-     'locales',
-     locale,
-     `${namespace}.json`
-   ),
-   JSON.stringify(content)
- )
+const writeJson = async (site, locale, namespace, content) =>
+  fs.writeFileSync(
+    path.resolve('..', site, 'public', 'locales', locale, `${namespace}.json`),
+    JSON.stringify(content)
+  )
 
-export const prebuildI18n = async (site, only=false) => {
-
-  const filter = site === 'dev' ? (loc => loc === 'en') : (loc => denyList.indexOf(loc) === -1)
+export const prebuildI18n = async (site, only = false) => {
+  const filter = site === 'dev' ? (loc) => loc === 'en' : (loc) => denyList.indexOf(loc) === -1
   const locales = await build(filter, only)
 
-  console.log (`copying them to ${site}`, Object.keys(locales))
+  console.log(`copying them to ${site}`, Object.keys(locales))
 
   const languages = {}
-  Object.keys(locales).forEach(l => languages[l] = locales[l].i18n[l])
+  Object.keys(locales).forEach((l) => (languages[l] = locales[l].i18n[l]))
   for (const locale in locales) {
     // Only English for dev site
     const loc = locales[locale]

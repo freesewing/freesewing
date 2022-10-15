@@ -5,6 +5,7 @@
 *.md
 *.mustache
 *.png
+*.svg
 yarn.lock
 .husky/pre-commit
 .prettierignore
