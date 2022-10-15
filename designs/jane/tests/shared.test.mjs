@@ -13,4 +13,4 @@ testPatternConfig(Jane)
 testPatternDrafting(Jane, false)
 
 // Test sampling - Change the second parameter to `true` to log errors
-//testPatternSampling(Jane, false)
+testPatternSampling(Jane, false)
