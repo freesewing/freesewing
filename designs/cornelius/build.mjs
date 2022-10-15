@@ -24,8 +24,8 @@ const options = {
 }
 
 // Let esbuild generate the build
-let result = null(async () => {
-  result = await esbuild.build(options).catch(() => process.exit(1))
+;(async () => {
+  const result = await esbuild.build(options).catch(() => process.exit(1))
 
   if (process.env.VERBOSE) {
     const info = await esbuild.analyzeMetafile(result.metafile)

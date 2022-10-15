@@ -17,16 +17,15 @@ const options = {
   entryPoints: ['src/index.mjs'],
   format: 'esm',
   outfile: 'dist/index.mjs',
-  external: [ 'unist-util-visit', 'hast-util-from-html' ],
+  external: ['unist-util-visit', 'hast-util-from-html'],
   metafile: process.env.VERBOSE ? true : false,
   minify: process.env.NO_MINIFY ? false : true,
   sourcemap: true,
 }
 
 // Let esbuild generate the build
-let result
-(async () => {
-  result = await esbuild.build(options).catch(() => process.exit(1))
+;(async () => {
+  const result = await esbuild.build(options).catch(() => process.exit(1))
 
   if (process.env.VERBOSE) {
     const info = await esbuild.analyzeMetafile(result.metafile)
@@ -36,14 +35,12 @@ let result
   // Also build a version that has all dependencies bundled
   // This makes it easy to run tests
   await esbuild
-  .build({
-    ...options,
-    minify: false,
-    sourcemap: false,
-    outfile: 'tests/dist/index.mjs',
-    external: [],
-  })
-  .catch(() => process.exit(1))
-
+    .build({
+      ...options,
+      minify: false,
+      sourcemap: false,
+      outfile: 'tests/dist/index.mjs',
+      external: [],
+    })
+    .catch(() => process.exit(1))
 })()
-
