@@ -38,7 +38,8 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "unist-util-remove": "^3.1.0"
+    "unist-util-remove": "^3.1.0",
+    "unist-util-visit": "^4.1.0"
   },
   "devDependencies": {},
   "files": [
