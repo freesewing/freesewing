@@ -7,23 +7,21 @@ export const gusset = {
     gussetSize: { pct: 44, min: 44, max: 50, menu: 'fit' },
   },
 
-  draft: function (shorthand) {
-    let {
-      options,
-      Point,
-      Path,
-      points,
-      paths,
-      Snippet,
-      snippets,
-      complete,
-      sa,
-      paperless,
-      macro,
-      measurements,
-      part,
-    } = shorthand
-
+  draft: function draftJaneGusset({
+    options,
+    Point,
+    Path,
+    points,
+    paths,
+    Snippet,
+    snippets,
+    complete,
+    sa,
+    paperless,
+    macro,
+    measurements,
+    part,
+  }) {
     const fullArmhole = measurements.biceps * (1 + 0.85)
     const gussetMeasure = (fullArmhole / 2) * options.gussetSize
 

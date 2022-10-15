@@ -8,24 +8,21 @@ export const sleeve = {
     sleeveBonus: { pct: 80, min: 60, max: 100, menu: 'style' },
   },
 
-  draft: function (shorthand) {
-    let {
-      options,
-      Point,
-      Path,
-      points,
-      paths,
-      Snippet,
-      snippets,
-      complete,
-      sa,
-      paperless,
-      macro,
-      measurements,
-      part,
-    } = shorthand
-    //design pattern here
-
+  draft: function draftJaneSleeve({
+    options,
+    Point,
+    Path,
+    points,
+    paths,
+    Snippet,
+    snippets,
+    complete,
+    sa,
+    paperless,
+    macro,
+    measurements,
+    part,
+  }) {
     const sleeveWidth = measurements.biceps * (1 + options.bicepsEase)
 
     const sleeveLength = measurements.shoulderToElbow * options.sleeveBonus

@@ -20,23 +20,21 @@ export const body = {
     shiftLength: { pct: 2, min: 0, max: 20, menu: 'style' },
   },
 
-  draft: function (shorthand) {
-    let {
-      options,
-      Point,
-      Path,
-      points,
-      paths,
-      Snippet,
-      snippets,
-      complete,
-      sa,
-      paperless,
-      macro,
-      measurements,
-      part,
-    } = shorthand
-
+  draft: function draftJaneBody({
+    options,
+    Point,
+    Path,
+    points,
+    paths,
+    Snippet,
+    snippets,
+    complete,
+    sa,
+    paperless,
+    macro,
+    measurements,
+    part,
+  }) {
     //body
     const lengthBody =
       (measurements.waistToKnee + measurements.hpsToWaistBack) * (1 + options.shiftLength)
