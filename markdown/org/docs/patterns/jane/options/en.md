@@ -1,5 +1,5 @@
 ---
-title: "Jane Shift: Options"
+title: "Jane Shift: Design Options"
 ---
 
 <PatternOptions pattern='jane' />

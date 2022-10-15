@@ -1,5 +1,5 @@
 ---
-title: "Jane Shift: Needs"
+title: "Jane Shift: What you need"
 ---
 
 To determine how much fabric you need for Jane you take:
