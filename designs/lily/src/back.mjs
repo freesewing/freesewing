@@ -231,7 +231,7 @@ function draftLilyBack({
       title: 'back',
       at: points.titleAnchor,
     })
-    /*
+    
     //notches
     if (options.fitGuides) {
       points.waistMid = points.waistOut.shiftFractionTowards(points.waistIn, 0.5)
@@ -388,7 +388,7 @@ function draftLilyBack({
           .attr('data-text-class', 'center')
       }
     }
-    */
+   
     if (sa) {
       paths.saBase = drawOutseam()
         .join(
@@ -513,5 +513,6 @@ export const back = {
     seatEase: -4, // -fabricStretch/10,
     kneeEase: -4, // -fabricStretch/10,
     },
+  hideDependencies: true,
   draft: draftLilyBack,
 }

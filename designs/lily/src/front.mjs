@@ -22,7 +22,6 @@ function draftLilyFront({
   log,
 }) {
   
-  //TODO: update back so that matching to inseamBack and outseamBack works normally
   //TODO: implement stretch setting to replace ease
   
   /*
@@ -37,8 +36,9 @@ function draftLilyFront({
    * Helper method to draw the outseam path
    */
   const drawOutseam = () => {
-    let waistOut = points.styleWaistOut || points.waistOut
+    let waistOut = points.styleWaistOutLily || points.waistOut
       if (points.waistOut.x < points.seatOut.x) {
+        log.info('waistOut smaller')
         return new Path()
           .move(waistOut)
           .curve(points.seatOut, points.kneeOutCp1, points.kneeOut)
@@ -57,8 +57,8 @@ function draftLilyFront({
    * Helper method to draw the outline path
    */
   const drawPath = () => {
-    let waistIn = points.styleWaistIn || points.waistIn
-    let waistOut = points.styleWaistOut || points.waistOut
+    let waistIn = points.styleWaistInLily || points.waistIn
+    let waistOut = points.styleWaistOutLily || points.waistOut
     return drawOutseam()
       .line(points.floorIn)
       .join(drawInseam())
@@ -169,7 +169,9 @@ function draftLilyFront({
         )
       run++
       delta = deltaMethod()
+      console.log('delta',delta)
     } while (Math.abs(delta) > 1 && run < 20)
+    console.log('run',run)
   }
   const adaptOutseam = () => adaptSeam('out')
   const adaptInseam = () => adaptSeam('in')
@@ -263,51 +265,92 @@ function draftLilyFront({
       drawCrotchSeam()
       delta = crotchSeamDelta()
       // Uncomment the line below this to see all iterations
-      // paths[`try${run}`] = drawPath().attr('class', 'dotted')
+      //paths[`try${run}`] = drawPath().attr('class', 'dotted')
     } while (Math.abs(delta) > 1 && run < 15)
   }
 
   // Uncomment this to see the outline prior to fitting the inseam & outseam
-  paths.seam2 = drawPath().attr('class', 'dotted interfacing')
-
+  //paths.seam2 = drawPath().attr('class', 'dotted interfacing')
+  
   /*
    * With the cross seams matched back and front,
    * all that's left is to match the inseam and outseam
    */
+   
+/*   points.cfSeatInitial = points.cfSeat.clone()
+  points.waistInInitial = points.waistIn.clone()
+  points.waistOutInitial = points.waistOut.clone()
+  points.crotchSeamCurveStartInitial = points.crotchSeamCurveStart.clone()
+  points.forkInitial = points.fork.clone();
+  points.seatOutInitial = points.seatOut.clone();
+  
+  paths.tempInitial = new Path()
+    .move(points.forkInitial)
+    .line(points.cfSeatInitial)
+    .line(points.crotchSeamCurveStartInitial)
+    .line(points.waistInInitial)
+    .line(points.waistOutInitial)
+    .line(points.seatOutInitial) */
 
   // When both are too short/long, adapt the leg length
   if ((inseamDelta() < 0 && outseamDelta() < 0) || (inseamDelta() > 0 && outseamDelta() > 0))
     adaptInseamAndOutseam()
+  
+/*   points.cfSeatIntermediate = points.cfSeat.clone()
+  points.waistInIntermediate = points.waistIn.clone()
+  points.waistOutIntermediate = points.waistOut.clone()  
+  
+  paths.tempIntermediate = new Path()
+  .move(points.cfSeatIntermediate)
+  .line(points.waistInIntermediate)
+  .line(points.waistOutIntermediate) */
 
   // Now one is ok, the other will be adapted
   adaptOutseam()
   adaptInseam()
+  
+/*   points.cfSeatIntermediate2 = points.cfSeat.clone()
+  points.waistInIntermediate2 = points.waistIn.clone()
+  points.waistOutIntermediate2 = points.waistOut.clone()
+  points.crotchSeamCurveStartIntermediate2 = points.crotchSeamCurveStart.clone()
+  points.forkIntermediate2 = points.fork.clone();
+  points.seatOutIntermediate2 = points.seatOut.clone();
+  
+  paths.tempIntermediate2 = new Path()
+    .move(points.forkIntermediate2)
+    .line(points.cfSeatIntermediate2)
+    .line(points.crotchSeamCurveStartIntermediate2)
+    .line(points.waistInIntermediate2)
+    .line(points.waistOutIntermediate2)
+    .line(points.seatOutIntermediate2) */
 
   // Changing one will ever so slightly impact the other, so let's run both again to be sure
   adaptOutseam()
   adaptInseam()
 
   // Only now style the waist lower if requested
+  // Note: redo this for lily even though it was already done for titan;
+  //  calculation for titan happened using its own seam lengths
   if (options.waistHeight < 1 || absoluteOptions.waistbandWidth > 0) {
-    points.styleWaistOut = drawOutseam().shiftAlong(
+    points.styleWaistOutLily = drawOutseam().shiftAlong(
       measurements.waistToHips * (1 - options.waistHeight) + absoluteOptions.waistbandWidth
     )
-    points.styleWaistIn = utils.beamsIntersect(
-      points.styleWaistOut,
-      points.styleWaistOut.shift(points.waistOut.angle(points.waistIn), 10),
+    points.styleWaistInLily = utils.beamsIntersect(
+      points.styleWaistOutLily,
+      points.styleWaistOutLily.shift(points.waistOut.angle(points.waistIn), 10),
       points.waistIn,
       points.crotchSeamCurveStart
     )
   } else {
-    points.styleWaistIn = points.waistIn.clone()
-    points.styleWaistOut = points.waistOut.clone()
+    points.styleWaistInLily = points.waistIn.clone()
+    points.styleWaistOutLily = points.waistOut.clone()
   }
 
   // Seamline
   paths.seam = drawPath().attr('class', 'fabric')
 
   if (complete) {
-    points.grainlineTop.y = points.styleWaistIn.y
+    points.grainlineTop.y = points.styleWaistInLily.y
     macro('grainline', {
       from: points.grainlineTop,
       to: points.grainlineBottom,
@@ -320,7 +363,7 @@ function draftLilyFront({
       title: 'front',
       at: points.titleAnchor,
     })
-    /*
+    
     //notches
     if (options.fitGuides) {
       points.waistMid = points.waistOut.shiftFractionTowards(points.waistIn, 0.5)
@@ -475,7 +518,7 @@ function draftLilyFront({
           .attr('data-text-class', 'center')
       }
     }
-    */
+   
     if (sa) {
       paths.saBase = drawInseam()
         .join(
@@ -486,8 +529,8 @@ function draftLilyFront({
               points.crotchSeamCurveCp2,
               points.crotchSeamCurveStart
             )
-            .line(points.styleWaistIn)
-            .line(points.styleWaistOut)
+            .line(points.styleWaistInLily)
+            .line(points.styleWaistOutLily)
         )
         .join(drawOutseam())
       paths.hemBase = new Path().move(points.floorOut).line(points.floorIn)
@@ -529,53 +572,53 @@ function draftLilyFront({
       })
       macro('vd', {
         from: points.fork,
-        to: points.styleWaistIn,
+        to: points.styleWaistInLily,
         x: points.fork.x + sa + 15,
       })
       macro('vd', {
         from: points.floorIn,
-        to: points.styleWaistOut,
+        to: points.styleWaistOutLily,
         x:
-          (points.seatOut.x < points.styleWaistOut.x ? points.seatOut.x : points.styleWaistOut.x) -
+          (points.seatOut.x < points.styleWaistOutLily.x ? points.seatOut.x : points.styleWaistOutLily.x) -
           sa -
           15,
       })
       macro('vd', {
         from: points.crotchSeamCurveStart,
-        to: points.styleWaistIn,
+        to: points.styleWaistInLily,
         x: points.crotchSeamCurveStart.x + sa + 15,
       })
       macro('hd', {
         from: points.seatOut,
         to: points.grainlineTop,
-        y: points.styleWaistIn.y - sa - 15,
+        y: points.styleWaistInLily.y - sa - 15,
       })
-      if (points.styleWaistOut.x < points.seatOut.x) {
+      if (points.styleWaistOutLily.x < points.seatOut.x) {
         macro('hd', {
-          from: points.styleWaistOut,
+          from: points.styleWaistOutLily,
           to: points.grainlineTop,
-          y: points.styleWaistIn.y - sa - 30,
+          y: points.styleWaistInLily.y - sa - 30,
         })
       }
       macro('hd', {
         from: points.grainlineTop,
-        to: points.styleWaistIn,
-        y: points.styleWaistIn.y - sa - 15,
+        to: points.styleWaistInLily,
+        y: points.styleWaistInLily.y - sa - 15,
       })
       macro('hd', {
         from: points.grainlineTop,
         to: points.crotchSeamCurveStart,
-        y: points.styleWaistIn.y - sa - 30,
+        y: points.styleWaistInLily.y - sa - 30,
       })
       macro('hd', {
         from: points.grainlineTop,
         to: points.crotchSeamCurveMax,
-        y: points.styleWaistIn.y - sa - 45,
+        y: points.styleWaistInLily.y - sa - 45,
       })
       macro('hd', {
         from: points.grainlineTop,
         to: points.fork,
-        y: points.styleWaistIn.y - sa - 60,
+        y: points.styleWaistInLily.y - sa - 60,
       })
     }
   }
@@ -587,5 +630,6 @@ export const front = {
   name: 'lily.front',
   from: titanFront,
   after: back,
+  hideDependencies: true,
   draft: draftLilyFront,
 }
