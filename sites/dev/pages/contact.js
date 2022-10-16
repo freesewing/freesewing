@@ -38,7 +38,7 @@ const ContactPage = (props) => {
         <meta property="og:locale" content="en_US" key="locale" />
         <meta property="og:site_name" content="freesewing.dev" key="site" />
       </Head>
-      <div className="grid grid-cols-3 lg:gap-4">
+      <div className="grid grid-cols-3 lg:gap-4 text-xl">
         <div className="mb-8 w-full col-span-3 row-start-1 col-start-1 xl:col-span-1 xl:col-start-3">
           <div
             className={`
@@ -84,22 +84,22 @@ const ContactPage = (props) => {
             </li>
           </ul>
           <Popout tip>
-            <p>
+            <p className="text-xl">
               To help you make your choice, we have ranked the different communication channels
               according to the following parameters:
             </p>
             <h5>Does it scale?</h5>
-            <p className="pt-0">
+            <p className="pt-0 text-xl">
               Are you reaching out to the community, or can only one or a handful of people respond.
             </p>
             <h5>Is it time-zone independent?</h5>
-            <p className="pt-0">
+            <p className="pt-0 text-xl">
               Are people all over the world available, or only in certain time zones?
             </p>
             <h5>Is it private?</h5>
-            <p className="pt-0">Is it a private communication channel, or a public one?</p>
+            <p className="pt-0 text-xl">Is it a private communication channel, or a public one?</p>
             <h5>Will the answer be authoritative?</h5>
-            <p className="pt-0">Are the answers vetted or provided by experts?</p>
+            <p className="pt-0 text-xl">Are the answers vetted or provided by experts?</p>
           </Popout>
           <h2 id="freesewing-on-discord">
             <a className="heading-autolink" href="#freesewing-on-discord">
@@ -187,7 +187,7 @@ const ContactPage = (props) => {
             Joost De Cock is the FreeSewing maintainer. You you can contact them via email at{' '}
             <a href="mailto:joost@freesewing.org">joost@freesewing.org</a>.
           </p>
-          <ul className="text-lg">
+          <ul className="text-xl">
             <li className="list-none">
               <No /> Does it scale?
             </li>
