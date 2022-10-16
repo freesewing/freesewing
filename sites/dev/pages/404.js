@@ -2,7 +2,6 @@ import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import Layout from 'site/components/layouts/bare'
 import Head from 'next/head'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Robot from 'shared/components/robot'
 import Popout from 'shared/components/popout'
 import PageLink from 'shared/components/page-link'
@@ -29,10 +28,10 @@ const Page404 = (props) => {
         <meta property="og:locale" content="en_US" key="locale" />
         <meta property="og:site_name" content="freesewing.dev" key="site" />
       </Head>
-      <div className="flex flex-col gap-4 mt-32 text-center">
+      <div className="flex flex-col gap-4 mt-16 lg:mt-32 text-center">
         <h1>404: Page not found</h1>
-        <div className="m-auto max-w-3xl">
-          <div className="max-w-md m-auto">
+        <div className="m-auto max-w-3xl px-4">
+          <div className="max-w-md m-auto px-12 mb-4">
             <Robot embed pose="fail" />
           </div>
           <h2>We could not find what you are looking for</h2>
@@ -53,11 +52,3 @@ const Page404 = (props) => {
 }
 
 export default Page404
-
-export async function getStaticProps() {
-  return {
-    props: {
-      ...(await serverSideTranslations('en')),
-    },
-  }
-}
