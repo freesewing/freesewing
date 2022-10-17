@@ -3,6 +3,7 @@ import useApp from 'site/hooks/useApp.js'
 import Head from 'next/head'
 import WebLink from 'shared/components/web-link'
 import Popout from 'shared/components/popout'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const Yes = () => (
   <span role="img" className="pr-4">
@@ -208,3 +209,11 @@ const ContactPage = (props) => {
 }
 
 export default ContactPage
+
+export async function getStaticProps() {
+  return {
+    props: {
+      ...(await serverSideTranslations('en')),
+    },
+  }
+}
