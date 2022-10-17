@@ -6,6 +6,7 @@ import Ribbon from 'shared/components/ribbon.js'
 import Link from 'next/link'
 import { WordMark } from 'shared/components/wordmark.js'
 
+import HelpIcon from 'shared/components/icons/help.js'
 import DiscordIcon from 'shared/components/icons/discord.js'
 import FacebookIcon from 'shared/components/icons/facebook.js'
 import GithubIcon from 'shared/components/icons/github.js'
@@ -106,6 +107,14 @@ const Footer = ({ app }) => {
         <div className="lg:col-span-2 -order-2 2xl:order-2 px-4 lg:px-0">
           {/* Social icons */}
           <div className="w-full sm:w-auto flex flex-row flex-wrap gap-4 lg:gap-8 items-center justify-center">
+            <Link href="/contact">
+              <a
+                className="hover:text-secondary hover:-mt-2 transition-all"
+                title="Contact information"
+              >
+                <HelpIcon {...icon} />
+              </a>
+            </Link>
             {Object.keys(social).map((item) => (
               <Link key={item} href={social[item].href}>
                 <a className="hover:text-secondary hover:-mt-2 transition-all" title={item}>
