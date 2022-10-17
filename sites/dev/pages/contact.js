@@ -175,7 +175,7 @@ const ContactPage = (props) => {
               <Yes /> Is it private?
             </li>
             <li className="list-none">
-              <Yes /> Will the answer be authoritative? (because since{' '}
+              <Yes /> Will the answer be authoritative? (
               <a href="https://twitter.com/j__st">joost</a> runs the Twitter account)
             </li>
           </ul>
