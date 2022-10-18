@@ -20,7 +20,7 @@ const Page404 = (props) => {
           key="description"
         />
         <meta property="og:article:author" content="Joost De Cock" key="author" />
-        <meta property="og:image" content={`/og/404/og.png`} key="image" />
+        <meta property="og:image" content={`https://freesewing.dev/og/404/og.png`} key="image" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
