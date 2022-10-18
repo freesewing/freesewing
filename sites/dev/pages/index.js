@@ -98,7 +98,7 @@ const HomePage = () => {
                 <h3>We&apos;re working on it 🤓</h3>
                 <p>
                   The upcoming version 3 of FreeSewing is currently under development. Our core
-                  library has stabilized and we have updating our documentation for FreeSewing
+                  library has stabilized and we have updated our documentation for FreeSewing
                   version 3.
                 </p>
                 <Popout note>
