@@ -32,15 +32,16 @@ access the following properties:
 | `sa`              | Access to `settings.sa` |
 | `scale`           | Access to `settings.scale` |
 || **_Access to utilities_**   |
-| `getId`           | See [the getId documentation](/refence/api/part/draft/getid) |
-| `hide`            | See [the hide documentation](/refence/api/part/draft/hide) |
-| `log`             | See [the logging documentation](referenec/api/store/logs) |
+| `getId`           | See [the getId documentation](/reference/api/part/getid) |
+| `hide`            | See [the hide documentation](/reference/api/part/hide) |
+| `log`             | See [the logging documentation](reference/api/store/logs) |
 | `macro`           | See [the macros documentation](/reference/macros/) |
-| `setHidden`       | See [the setHidden documentation](/refence/api/part/draft/sethidden) |
+| `setHidden`       | See [the setHidden documentation](/reference/api/part/sethidden) |
 | `store`           | See [the store documentation](/reference/api/store) |
-| `unhide`          | See [the unhide documentation](/refence/api/part/draft/unhide) |
-| `units`           | See [the units documentation](/refence/api/part/draft/units) |
+| `unhide`          | See [the unhide documentation](/reference/api/part/unhide) |
+| `units`           | A version of [`utils.units()`](/reference/api/utils/units) that is preconfigured with the user's chosenunits |
 | `utils`           | See [the utils documentation](/reference/api/utils) |
 || **_Return value_**   |
 | `part`            | Your draft method **must** return this |
+
 

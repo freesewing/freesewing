@@ -65,12 +65,10 @@ The following named exports are **uitility methods**:
 | `beamsIntersect`          | See the [beamsIntersect](/reference/api/utils/beamsintersect) documentation |
 | `capitalize`              | See the [capitalize](/reference/api/utils/capitalize) documentation |
 | `circlesIntersect`        | See the [circlesIntersect](/reference/api/utils/circlesintersect) documentation |
-| `curveEdge`               | See the [curveEdge](/reference/api/utils/curveedge) documentation |
 | `curveIntersectsX`        | See the [curveIntersectsX](/reference/api/utils/curveintersectsx) documentation |
 | `curveIntersectsY`        | See the [curveIntersectsY](/reference/api/utils/curveintersectsy) documentation |
 | `curvesIntersect`         | See the [curvesIntersect](/reference/api/utils/curvesintersect) documentation |
 | `deg2rad`                 | See the [deg2rad](/reference/api/utils/deg2rad) documentation |
-| `generateStackTransform`  | see the [generateStackTransform](/reference/api/utils/generateStackTransform) documentation |
 | `lineIntersectsCircle`    | See the [lineIntersectsCircle](/reference/api/utils/lineintersectscircle) documentation |
 | `lineIntersectsCurve`     | See the [lineIntersectsCurve](/reference/api/utils/lineintersectscurve) documentation |
 | `linesIntersect`          | See the [linesIntersect](/reference/api/utils/linesintersect) documentation |
