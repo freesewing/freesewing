@@ -28,7 +28,7 @@ const mdxCustomComponents = (app = false) => ({
   Tab,
   Tabs,
   Example: (props) => <Example {...props} app={app} />,
-  Examples: (props, flops) => <Examples {...props} app={app} />,
+  Examples: (props) => <Examples {...props} app={app} />,
 })
 
 export default mdxCustomComponents

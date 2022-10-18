@@ -3,9 +3,9 @@ title: plugin-bartack
 ---
 
 Published as [@freesewing/plugin-bartack][1], this plugin provides 
-the [bartack](/reference/api/macros/bartack),
-[bartackAlong](/reference/api/macros/bartackalong), and
-the [bartackFractionAlong](/reference/api/macros/bartack) macros
+the [bartack](/reference/macros/bartack),
+[bartackAlong](/reference/macros/bartackalong), and
+the [bartackFractionAlong](/reference/macros/bartack) macros
 which allows you to add bartacks — a set
 of tight zig-zag stitches used to enforce a seam — to your design.
 

@@ -37,6 +37,10 @@ new-design:
   test: '!'
   testci: '!'
   vbuild: '!'
+rehype-highlight-lines:
+  build: '!'
+  mbuild: '!'
+  vbuild: '!'
 rehype-jargon:
   lint: "npx eslint 'src/*.mjs'"
 snapseries:

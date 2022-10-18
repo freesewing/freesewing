@@ -2,34 +2,34 @@ const colors = require('tailwindcss/colors')
 
 const bg = '#002808'
 
-module.exports =  {
-  'fontFamily': `ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;`,
+module.exports = {
+  fontFamily: `ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;`,
 
   'base-100': bg,
   'base-200': colors.lime['900'],
   'base-300': colors.lime['800'],
   'base-content': colors.lime['500'],
 
-  'primary': colors.lime['700'],
+  primary: colors.lime['700'],
   'primary-focus': colors.lime['600'],
   'primary-content': colors.lime['50'],
 
-  'secondary': colors.lime['400'],
+  secondary: colors.lime['400'],
   'secondary-focus': colors.lime['500'],
   'secondary-content': bg,
 
-  'accent': colors.lime['700'],
+  accent: colors.lime['700'],
   'accent-focus': colors.lime['600'],
   'accent-content': colors.yellow['200'],
 
-  'neutral': '#001c06', // Even darker
+  neutral: '#001c06', // Even darker
   'neutral-focus': colors.lime['600'],
   'neutral-content': colors.lime['200'],
 
-  'info': colors.lime['700'],
-  'success': colors.lime['700'],
-  'warning': colors.lime['700'],
-  'error': colors.lime['700'],
+  info: colors.lime['700'],
+  success: colors.lime['700'],
+  warning: colors.lime['700'],
+  error: colors.lime['700'],
 
   '--btn-info-content': colors.teal[300],
   '--btn-success-content': colors.green[300],
@@ -44,6 +44,7 @@ module.exports =  {
   )`,
 
   '--code-background-color': '#002407',
+  '--code-background-highlight-color': '#191919',
   '--code-border-color': colors.lime['900'],
   '--code-color': colors.lime['600'],
   '--code-font-family': `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`,
@@ -60,7 +61,7 @@ module.exports =  {
   '--code-color-string': colors.lime['200'],
   '--code-font-style-string': 'italic',
   '--code-color-variable': colors.lime['400'],
-  '--code-color-comment': colors.lime['600'],
+  '--code-color-comment': colors.lime['700'],
   '--code-color-tag': colors.lime['400'],
   '--code-color-property': colors.lime['200'],
   '--code-font-weight-property': 'bold',
@@ -106,12 +107,12 @@ module.exports =  {
   '--pattern-text-4xl': '3rem',
 
   '--pattern-scale': '1',
-  '--pattern-stroke-xs': "0.2px",
-  '--pattern-stroke-sm': "0.4px",
-  '--pattern-stroke': "0.7px",
-  '--pattern-stroke-lg': "1.3px",
-  '--pattern-stroke-xl': "2px",
-  '--pattern-stroke-2xl': "4px",
-  '--pattern-stroke-3xl': "6px",
-  '--pattern-stroke-4xl': "8px",
+  '--pattern-stroke-xs': '0.2px',
+  '--pattern-stroke-sm': '0.4px',
+  '--pattern-stroke': '0.7px',
+  '--pattern-stroke-lg': '1.3px',
+  '--pattern-stroke-xl': '2px',
+  '--pattern-stroke-2xl': '4px',
+  '--pattern-stroke-3xl': '6px',
+  '--pattern-stroke-4xl': '8px',
 }

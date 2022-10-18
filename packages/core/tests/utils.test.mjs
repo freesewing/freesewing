@@ -484,9 +484,9 @@ describe('Utils', () => {
         points.to = new Point(19, 76)
         paths.test = new Path().move(points.from).line(points.to)
         return part
-      }
+      },
     }
-    const design = new Design({ parts: [ test ]})
+    const design = new Design({ parts: [test] })
     const pattern = new design()
     const props = pattern.draft().getRenderProps()
     const transform = generateStackTransform(30, 60, 90, true, true, props.stacks.test)

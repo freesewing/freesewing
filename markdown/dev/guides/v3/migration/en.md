@@ -47,6 +47,24 @@ The following packages have been removed in v3:
 - **@freesewing/plugin-export-dxf**: DXF is kinda garbage, you deserve better
 - **@freesewing/plugin-validate**
 
+### API changes
+
+#### Use log instead of raise
+
+The `raise` object that held methods for logging has been replaced by log:
+
+```mjs
+// strikeout-start
+raise.warning('This raise object no longer exists')
+// strikeout-end
+// highlight-start
+raise.info('Use the log object instead')
+// highlight-end
+```
+
+Note that `log` can be destructured in your draft method.
+Refer to [the `Store.log` documentation](/reference/api/store/log) for all details.
+
 ## Migrating designs
 
 ### Design configuration

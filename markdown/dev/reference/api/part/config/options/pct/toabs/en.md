@@ -24,7 +24,7 @@ function toAbs(percentage, settings) {
 
 The first parameter is the percentage value provided by the user (for example
 `0.5` for `50%`).
-The second parameter holds the pattern's [settings](/reference/api/settings) object
+The second parameter holds the pattern's [settings](/reference/settings) object
 which holds -- among other things -- the measurements provided by the user.
 
 ## Example

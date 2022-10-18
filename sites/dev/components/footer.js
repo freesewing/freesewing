@@ -2,11 +2,11 @@ import Logo from 'shared/components/logos/freesewing.js'
 import OsiLogo from 'shared/components/logos/osi.js'
 import CreativeCommonsLogo from 'shared/components/logos/cc.js'
 import CcByLogo from 'shared/components/logos/cc-by.js'
-import { useTranslation } from 'next-i18next'
 import Ribbon from 'shared/components/ribbon.js'
 import Link from 'next/link'
 import { WordMark } from 'shared/components/wordmark.js'
 
+import HelpIcon from 'shared/components/icons/help.js'
 import DiscordIcon from 'shared/components/icons/discord.js'
 import FacebookIcon from 'shared/components/icons/facebook.js'
 import GithubIcon from 'shared/components/icons/github.js'
@@ -78,8 +78,6 @@ const social = {
 }
 
 const Footer = ({ app }) => {
-  const { t } = useTranslation(['common', 'patrons'])
-
   return (
     <footer className="bg-neutral">
       <Ribbon loading={app.loading} theme={app.theme} />
@@ -109,6 +107,14 @@ const Footer = ({ app }) => {
         <div className="lg:col-span-2 -order-2 2xl:order-2 px-4 lg:px-0">
           {/* Social icons */}
           <div className="w-full sm:w-auto flex flex-row flex-wrap gap-4 lg:gap-8 items-center justify-center">
+            <Link href="/contact">
+              <a
+                className="hover:text-secondary hover:-mt-2 transition-all"
+                title="Contact information"
+              >
+                <HelpIcon {...icon} />
+              </a>
+            </Link>
             {Object.keys(social).map((item) => (
               <Link key={item} href={social[item].href}>
                 <a className="hover:text-secondary hover:-mt-2 transition-all" title={item}>
@@ -159,9 +165,9 @@ const Footer = ({ app }) => {
               <WordMark />
             </h5>
             <p className="bold text-neutral-content text-normal lg:text-xl leading-5">
-              {t('sloganCome')}
+              Come for the sewing patterns
               <br />
-              {t('sloganStay')}
+              Stay for the community
             </p>
           </div>
         </div>

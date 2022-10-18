@@ -17,8 +17,23 @@ In FreeSewing, we use so-called cubic Bézier curves which have:
 - A second control point that’s linked to the end point
 - An end point
 
-<Example settings_complete="0" part="path_curve">
-An example of a Bézier curve drawn by the Path.curve() method
+<Example caption="An example of a Bézier curve drawn by the Path.curve() method" settings="margin: 20">
+```js
+({ Point, points, Path, paths, part }) => {
+
+  points.from = new Point(10, 20)
+  points.cp1 = new Point(40, 0)
+  points.cp2 = new Point(60, 40)
+  points.to = new Point(90, 20)
+  
+  paths.line = new Path()
+    .move(points.from)
+    .curve(points.cp1, points.cp2, points.to)
+    .setText("Path.curve()", "text-sm center fill-note")
+
+  return part
+}
+```
 </Example>
 
 Bézier curves and their _handles_ or _control points_ are surprisingly intuitive.

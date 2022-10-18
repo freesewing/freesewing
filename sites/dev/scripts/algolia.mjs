@@ -14,6 +14,8 @@ import fs from 'fs'
 import path from 'path'
 import algoliasearch from 'algoliasearch'
 import { unified } from 'unified'
+import { remark } from 'remark'
+import { visit } from 'unist-util-visit'
 import remarkParser from 'remark-parse'
 import remarkCompiler from 'remark-stringify'
 import remarkFrontmatter from 'remark-frontmatter'
@@ -43,6 +45,7 @@ const markdownLoader = async (file) => {
     .use(remarkCompiler)
     .use(remarkFrontmatter)
     .use(remarkFrontmatterExtractor, { yaml: yaml.parse })
+    .use(scrubMarkdownForSearch)
     .use(remarkRehype)
     .use(rehypeSanitize)
     .use(rehypeStringify)
@@ -52,8 +55,8 @@ const markdownLoader = async (file) => {
   return {
     objectID: id,
     page: id,
-    title: page.data.title,
-    body: page.value,
+    title: page.data.title.trim(),
+    body: page.value.trim(),
     type: 'docs',
   }
 }
@@ -80,7 +83,10 @@ const indexMarkdownContent = async () => {
   const list = await getMdxFileList(mdxRoot, 'en')
   const pages = []
 
-  for (const file of list) pages.push(await markdownLoader(file))
+  for (const file of list) {
+    const content = await markdownLoader(file)
+    pages.push(content)
+  }
   // Index markdown to Algolia
   await index.clearObjects()
   await index
@@ -92,7 +98,7 @@ const indexMarkdownContent = async () => {
 const run = async () => {
   if (process.env.VERCEL_ENV === 'production' || process.env.FORCE_ALGOLIA) {
     console.log()
-    await clearIndex()
+    //await clearIndex()
     await indexMarkdownContent()
     console.log()
   } else {
@@ -104,3 +110,57 @@ const run = async () => {
 }
 
 run()
+
+// Strip YAML frontmatter from body
+const noYaml = (children) => {
+  if (!children || !children.length) return []
+  let start = false
+  let end = false
+  for (const i in children) {
+    const child = children[i]
+    if (child.type === 'yaml') children[i] = { type: 'text', value: '' }
+  }
+
+  return children
+}
+
+// Strip examples from body
+const noExamples = (children) => {
+  if (!children || !children.length) return []
+  let start = false
+  let end = false
+  for (const i in children) {
+    const child = children[i]
+    if (!start && child.type === 'html' && child.value.includes('<Example')) start = i
+    if (!end && child.value && child.value.includes('/Example>')) end = i
+  }
+
+  return end ? [...children.slice(0, start), ...children.slice(end + 1)] : children
+}
+
+// scrubs markdown and removed content irrelevant for search
+// such as inline code examples and frontmatter.
+function scrubMarkdownForSearch() {
+  // Tree visitor
+  const visitor = (node) => {
+    if (node.type === 'root') {
+      if (!node.children || !node.children.length) return
+      let pre = node.children.length
+      let post = 0
+      let children = noExamples(noYaml(node.children))
+      while (pre > post) {
+        pre = children.length
+        children = noExamples(children)
+        post = children.length
+      }
+      node.children = children
+    }
+  }
+
+  // Transformer method using the visitor pattern
+  const transform = (tree) => {
+    visit(tree, 'root', visitor)
+  }
+
+  return transform
+}

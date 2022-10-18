@@ -3,8 +3,6 @@
 @tailwind utilities;
 
 @import './code.css';
-/* import for dot graphs */
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat+Alternates:ital,wght@1,900&display=swap');
 
 @layer components {
   /* Applied styles for common HTML tags */

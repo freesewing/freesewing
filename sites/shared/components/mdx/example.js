@@ -8,6 +8,7 @@ import Svg from '../workbench/draft/svg'
 import Defs from '../workbench/draft/defs'
 import Stack from '../workbench/draft/stack'
 import { useGist } from 'shared/hooks/useGist'
+import yaml from 'js-yaml'
 
 // Get code from children
 export const asText = (reactEl) => {
@@ -21,7 +22,7 @@ export const asText = (reactEl) => {
 }
 
 // The actual example
-const Example = ({ app, draft, tutorial = false, xray = false }) => {
+const Example = ({ app, draft, settings, xray = false }) => {
   // State for gist
   const { gist, unsetGist, updateGist } = useGist('example-mdx', app)
 
@@ -29,7 +30,10 @@ const Example = ({ app, draft, tutorial = false, xray = false }) => {
     gist._state.xray = { enabled: true }
     gist.margin = 20
   }
-  const patternProps = draft.draft().getRenderProps()
+  if (!draft.sample) return null
+  const patternProps = settings.sample
+    ? draft.sample().getRenderProps()
+    : draft.draft().getRenderProps()
   if (draft.store.logs.error.length > 0 || draft.setStores[0].logs.error.length > 0)
     return (
       <div className="max-w-full p-4">
@@ -58,7 +62,7 @@ const Example = ({ app, draft, tutorial = false, xray = false }) => {
 }
 
 // Returns a FreeSewing draft based on code in children
-const buildExample = (children, settings = { margin: 10 }, tutorial = false) => {
+const buildExample = (children, settings = { margin: 5 }, tutorial = false, paperless = false) => {
   let code = asText(children)
   // FIXME: Refactor to not use eval
   let draft
@@ -67,7 +71,11 @@ const buildExample = (children, settings = { margin: 10 }, tutorial = false) => 
     code = code.split(')')
     code = code[0] + ') => ' + code.slice(1).join(')')
   }
-  draft = eval(code)
+  try {
+    draft = eval(code)
+  } catch (err) {
+    console.log(err, code)
+  }
   const part = {
     draft: draft,
     measurements: tutorial ? [] : ['head'],
@@ -80,24 +88,45 @@ const buildExample = (children, settings = { margin: 10 }, tutorial = false) => 
       : {},
     plugins: [pluginBundle, pluginFlip, pluginGore],
   }
-  const design = new Design({ parts: [part] })
+  const design = new Design({
+    parts: [part],
+    data: tutorial ? { name: 'Tutorial', version: '0.0.1' } : {},
+  })
   if (tutorial) settings.measurements = { head: 380 }
+  if (paperless) settings.paperless = true
+
   return new design(settings)
 }
 
 // Wrapper component dealing with the tabs and code view
-const TabbedExample = ({ app, children, caption, tutorial = false }) => {
-  const draft = buildExample(children, {}, tutorial)
-  if (tutorial)
+const TabbedExample = ({
+  app,
+  children,
+  caption,
+  tutorial,
+  previewFirst,
+  withHead,
+  paperless,
+  settings,
+}) => {
+  if (settings)
+    settings = {
+      margin: 5,
+      ...yaml.load(settings),
+    }
+  else settings = { margin: 5 }
+  if (withHead) settings.measurements = { head: 300 }
+  const draft = buildExample(children, settings, tutorial, paperless)
+  if (tutorial && !previewFirst)
     return (
       <div className="my-8">
         <Tabs tabs="Code, Preview, X-Ray">
           <Tab>{children}</Tab>
           <Tab>
-            <Example draft={draft} tutorial={tutorial} app={app} />
+            <Example {...{ draft, tutorial, paperless, settings, app }} />
           </Tab>
           <Tab>
-            <Example draft={draft} app={app} xray={true} />
+            <Example {...{ draft, tutorial, paperless, settings, app }} xray={true} />
           </Tab>
         </Tabs>
         {caption && (
@@ -112,11 +141,11 @@ const TabbedExample = ({ app, children, caption, tutorial = false }) => {
     <div className="my-8">
       <Tabs tabs="Preview, Code, X-Ray">
         <Tab>
-          <Example draft={draft} app={app} />
+          <Example {...{ draft, tutorial, paperless, settings, app }} />
         </Tab>
         <Tab>{children}</Tab>
         <Tab>
-          <Example draft={draft} app={app} xray={true} />
+          <Example {...{ draft, tutorial, paperless, settings, app }} xray={true} />
         </Tab>
       </Tabs>
       {caption && (

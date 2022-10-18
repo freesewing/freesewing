@@ -7,8 +7,8 @@
     "url": "https://github.com/freesewing/freesewing/issues"
   },
   "funding": {
-    "type" : "individual",
-    "url" : "https://freesewing.org/patrons/join"
+    "type": "individual",
+    "url": "https://freesewing.org/patrons/join"
   },
   "keywords": ["freesewing"],
   "type": "module",

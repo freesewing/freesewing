@@ -75,7 +75,7 @@ const next = (app) => {
 const renderPrevious = (node) =>
   node ? (
     <div className="flex flex-row gap-2 items-center">
-      <LeftIcon className="w-8 h-8" />
+      <LeftIcon className="w-6 h-6" />
       <Link href={'/' + node.__slug}>
         <a className="text-secondary break-words">{node.__linktitle}</a>
       </Link>
@@ -86,11 +86,11 @@ const renderPrevious = (node) =>
 
 const renderNext = (node) =>
   node ? (
-    <div className="flex flex-row gap-2 items-center">
+    <div className="flex flex-row gap-2 items-center justify-end">
       <Link href={'/' + node.__slug}>
         <a className="text-right break-words">{node.__linktitle}</a>
       </Link>
-      <RightIcon className="w-8 h-8" />
+      <RightIcon className="w-6 h-6" />
     </div>
   ) : (
     <span></span>
@@ -98,7 +98,7 @@ const renderNext = (node) =>
 
 const PrevNext = ({ app }) => {
   return (
-    <div className="grid grid-cols-2 gap-2 border-t mt-12 py-2 gap-8">
+    <div className="grid grid-cols-2 gap-4 border-t mt-12 py-2">
       {renderPrevious(previous(app))}
       {renderNext(next(app))}
     </div>

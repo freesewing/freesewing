@@ -27,7 +27,7 @@ const pattern = new Aaron({
 
 ## Notes
 
-This is ignored if [settings.complete](/reference/api/settings/complete) is `false`
+This is ignored if [settings.complete](/reference/settings/complete) is `false`
 
 <Comment by="joost">
 This is not strictly enforced and left of to the designer, so different designs

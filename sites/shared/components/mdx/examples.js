@@ -1,16 +1,17 @@
 import { Tutorial } from '@freesewing/tutorial'
+import { Examples } from '@freesewing/examples'
 import Svg from '../workbench/draft/svg'
 import Defs from '../workbench/draft/defs'
 import Stack from '../workbench/draft/stack'
 import { useGist } from 'shared/hooks/useGist'
 import Md from 'react-markdown'
 
-const measurementSets = {
-  tutorial: {
-    head: 320,
-  },
-}
-const ExamplesComponent = ({ app, part, caption = false, xray = false }) => {
+//const measurementSets = {
+//  tutorial: {
+//    head: 320,
+//  },
+//}
+const ExamplesComponent = ({ app, part, caption, xray }) => {
   // State for gist
   const { gist, unsetGist, updateGist } = useGist('examples-mdx', app)
 
@@ -18,12 +19,15 @@ const ExamplesComponent = ({ app, part, caption = false, xray = false }) => {
     gist._state.xray = { enabled: true }
     gist.margin = 20
   }
-  const measurements = part.includes('tutorial') ? measurementSets.tutorial : {}
-  const draft = new Tutorial({
-    only: [part],
-    measurements,
+
+  //const measurements = part.includes('tutorial') ? measurementSets.tutorial : {}
+  const pattern = Examples
+  const draft = new pattern({
+    only: [`examples.${part}`],
+    measurements: {},
   })
   const patternProps = draft.draft().getRenderProps()
+  console.log(patternProps)
   if (draft.store.logs.error.length > 0 || draft.setStores[0].logs.error.length > 0)
     return (
       <div className="max-w-full p-4">

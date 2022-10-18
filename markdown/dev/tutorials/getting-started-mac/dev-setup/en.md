@@ -3,16 +3,21 @@ title: Setting up the FreeSewing development environment
 order: 40
 ---
 
-FreeSewing provides a development environment to help you design and develop patterns.
+FreeSewing provides a development environment to help you design and develop
+patterns.
 
 There are two ways to run this development environment:
 
-- [**Monorepo development**](#monorepo-development): Use this if you intend to contribute your work to FreeSewing
-- [**Stand-alone development**](#stand-alone-development): Use this if you want to do your own thing, and not contribute to FreeSewing
+- [**Monorepo development**](#monorepo-development): Use this if you intend to
+  contribute your work to FreeSewing
+- [**Stand-alone development**](#stand-alone-development): Use this if you want
+  to do your own thing, and not contribute to FreeSewing
 
 ## Monorepo development
 
-<Note compact>This is the recommended way for (aspiring) FreeSewing contributors</Note>
+<Note compact>
+This is the recommended way for (aspiring) FreeSewing contributors
+</Note>
 
 ### TL;DR
 
@@ -23,21 +28,34 @@ yarn kickstart
 ```
 
 <Tip>
-Even better: [clone your own fork](https://github.com/freesewing/freesewing/fork)
+Even better: [clone your own
+fork](https://github.com/freesewing/freesewing/fork)
 
 ```bash
 git clone https://github.com/your-username/freesewing
 cd freesewing
 yarn kickstart
 ```
-
 </Tip>
+
+This sets up the monorepo. If you would like to create a new design, run the
+following command:
+
+```sh
+yarn new design
+```
+
+If you'd like to create a new plugin, run this variant instead:
+
+```sh
+yarn new plugin
+```
 
 ### Step by step
 
 <Comment by="joost">
 These docs assume you have git installed. 
-But if you're running macOS, you have git, right?
+But if you're running Linux, you have git, right?
 </Comment>
 
 #### Install yarn
@@ -75,24 +93,45 @@ cd freesewing
 yarn kickstart
 ```
 
-Now you're ready to [start the development environment](/tutorials/getting-started-mac/dev-start).
+Now you're ready to [start the development environment](/tutorials/getting-started-linux/dev-start).
+
+## Creating a new design
+
+If you would like to create a new design, run the following command:
+
+```sh
+yarn new design
+```
+
+## Creating a new plugin
+
+If you'd like to create a new plugin, run the following comand:
+
+```sh
+yarn new plugin
+```
 
 ## Stand-alone development
 
-With NodeJS installed, all you need to do to setup the stand-along development environment is run this command:
+With NodeJS installed, all you need to do to setup the stand-alone development environment is run this command:
 
 ```bash
-npx @freesewing/new-design
+npx @freesewing/new-design@next
 ```
 
-After you've answered [some questions](#questions), it will take a while to set everything up.
-When it's done, you will have a new folder with the development environment inside.
+<Fixme>Remove `@next` tag when v3 is released</Fixme>
 
-Now you're ready to [start the development environment](/tutorials/getting-started-mac/dev-start).
+After you've answered [some questions](#questions), it will take a while to set
+everything up.  When it's done, you will have a new folder with the development
+environment inside.
+
+Now you're ready to [start the development
+environment](/tutorials/getting-started-linux/dev-start).
 
 <Tip compact>The folder will have the name you chose above.</Tip>
 
 <Note>
+
 ### Questions
 
 #### What template to use

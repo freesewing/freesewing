@@ -8,6 +8,8 @@ import remarkFrontmatter from 'remark-frontmatter'
 import remarkFrontmatterExtractor from 'remark-extract-frontmatter'
 import { readSync } from 'to-vfile'
 import yaml from 'js-yaml'
+import { mdIntro } from './md-intro.mjs'
+import { generateOgImage } from './og/index.mjs'
 
 /*
  * There's an issue in crowdin where it changes the frontmatter marker:
@@ -17,8 +19,8 @@ import yaml from 'js-yaml'
  * which breaks stuff. So this method takes the input and replaces all
  * - - - with ---
  */
-export const fixCrowdinBugs = md => {
-  md.value = md.value.split("- - -\n").join("---\n")
+export const fixCrowdinBugs = (md) => {
+  md.value = md.value.split('- - -\n').join('---\n')
   return md
 }
 
@@ -37,8 +39,7 @@ export const getMdxFileList = async (folder, lang) => {
   let allFiles
   try {
     allFiles = await rdir(folder)
-  }
-  catch (err) {
+  } catch (err) {
     console.log(err)
     return false
   }
@@ -51,7 +52,8 @@ export const getMdxFileList = async (folder, lang) => {
       file.slice(-5) === `${lang}.md` &&
       file.indexOf('/ui/') === -1 &&
       file.indexOf('/uimd/') === -1
-    ) files.push(file)
+    )
+      files.push(file)
   }
 
   return files.sort()
@@ -60,9 +62,8 @@ export const getMdxFileList = async (folder, lang) => {
 /*
  * Helper method to get the website slug (path) from the file path
  */
-export const fileToSlug = (file, site, lang) => (file.slice(-6) === `/${lang}.md`)
-  ? file.split(`/markdown/${site}/`).pop().slice(0, -6)
-  : false
+export const fileToSlug = (file, site, lang) =>
+  file.slice(-6) === `/${lang}.md` ? file.split(`/markdown/${site}/`).pop().slice(0, -6) : false
 
 /*
  * Helper method to get the title and meta data from an MDX file
@@ -71,7 +72,7 @@ export const fileToSlug = (file, site, lang) => (file.slice(-6) === `/${lang}.md
  *
  *  - file: the full path to the file
  */
-const mdxMetaInfo = async file => {
+const mdxMetaInfo = async (file) => {
   let result
   try {
     result = await unified()
@@ -80,8 +81,7 @@ const mdxMetaInfo = async file => {
       .use(remarkFrontmatter)
       .use(remarkFrontmatterExtractor, { yaml: yaml.load })
       .process(fixCrowdinBugs(readSync(file, { encoding: 'utf-8' })))
-  }
-  catch (err) {
+  } catch (err) {
     console.log(err)
   }
 
@@ -91,8 +91,7 @@ const mdxMetaInfo = async file => {
 /*
  * Main method that does what needs doing
  */
-export const prebuildMdx = async(site) => {
-
+export const prebuildMdx = async (site) => {
   // Say hi
   console.log()
   console.log(`Prebuilding MDX for freesewing.${site}`)
@@ -100,10 +99,17 @@ export const prebuildMdx = async(site) => {
   // Setup MDX root path
   const mdxRoot = path.resolve('..', '..', 'markdown', site)
 
+  // Inform if we're also generating OG images
+  if (process.env.GENERATE_OG_IMAGES) {
+    console.log('⚙ Also generating Open Graph images (this takes a while)')
+    console.log('    Unset the GENERATE_OG_IMAGES env var to skip this step)')
+  } else {
+    console.log('⏩ Not generating Open Graph images as it takes a while')
+    console.log('    Set GENERATE_OG_IMAGES env var to include this step')
+  }
   // Loop over locales
   const pages = {}
-  for (const lang of (site === 'dev' ? ['en'] : ['en', 'fr', 'es', 'nl', 'de'])) {
-
+  for (const lang of site === 'dev' ? ['en'] : ['en', 'fr', 'es', 'nl', 'de']) {
     console.log(`  - Language: ${lang}`)
 
     // Get list of filenames
@@ -119,9 +125,7 @@ export const prebuildMdx = async(site) => {
           pages[lang][slug] = {
             title: meta.data.title,
             slug,
-            order: meta.data.order
-              ? `${meta.data.order}${meta.data.title}`
-              : meta.data.title
+            order: meta.data.order ? `${meta.data.order}${meta.data.title}` : meta.data.title,
           }
         } else {
           if (pages.en[slug]) {
@@ -132,21 +136,25 @@ export const prebuildMdx = async(site) => {
             if (meta.messages.length > 0) console.log(meta.messages)
           }
         }
+        if (process.env.GENERATE_OG_IMAGES) {
+          // Create og image
+          const intro = await mdIntro(lang, site, slug)
+          const img = await generateOgImage({ lang, site, slug, title: meta.data.title, intro })
+        }
       }
     }
 
     fs.writeFileSync(
       path.resolve('..', site, 'prebuild', `mdx.${lang}.js`),
-      `export default ${JSON.stringify(pages[lang], null ,2)}`
+      `export default ${JSON.stringify(pages[lang], null, 2)}`
     )
   }
 
   // Write list of all MDX paths (in one language)
   fs.writeFileSync(
     path.resolve('..', site, 'prebuild', `mdx.paths.js`),
-    `export default ${JSON.stringify(Object.keys(pages.en), null ,2)}`
+    `export default ${JSON.stringify(Object.keys(pages.en), null, 2)}`
   )
 
   return pages
 }
-

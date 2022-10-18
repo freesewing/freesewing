@@ -31,7 +31,7 @@ const MdxPage = (props) => {
         <meta property="og:article:author" content="Joost De Cock" key="author" />
         <meta
           property="og:image"
-          content={`https://canary.backend.freesewing.org/og-img/en/dev/${props.page.slug}`}
+          content={`https://freesewing.dev/og/${props.page.slug}/og.png`}
           key="image"
         />
         <meta property="og:image:type" content="image/png" />

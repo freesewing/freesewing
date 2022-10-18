@@ -1,18 +1,5 @@
 ---
 title: Before you start
-order: 100
-for: developers
-icons: 
-  - start
-  - pattern
-about: |
-  A guide to go over a few things you should know when you start working with our core library
-goals:
-  - Understand that FreeSewing provides parametric pattern design
-  - Understand that FreeSewing uses SVG
-  - Understand the coordinate system
-  - Learn that we use millimeter internally
-  - Learn about Bézier curves
 ---
 
 Drawing lines and curves on paper is a skill most people have been practicing since kindergarten.
@@ -37,4 +24,5 @@ the heck Node JS is and why you should care.
 Few people straddle both worlds, so as you start using FreeSewing, chances are
 you'll learn a few new things along the way.
 
+And if you get stuck [our chatrooms on Discord](https://discord.freesewing.org/) are the best place to get help.
 </Note>

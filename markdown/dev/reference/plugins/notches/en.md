@@ -3,8 +3,8 @@ title: plugin-notches
 ---
 
 Published as [@freesewing/plugin-notches][1], this plugin provides the
-[notch](/reference/api/snippets/notch) and
-[bnotch](/reference/api/snippets/bnotch) snippets.
+[notch](/reference/snippets/notch) and
+[bnotch](/reference/snippets/bnotch) snippets.
 
 ## Installation
 

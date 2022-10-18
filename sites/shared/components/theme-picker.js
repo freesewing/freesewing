@@ -38,15 +38,18 @@ const ThemePicker = ({ app, className, iconOnly = false }) => {
                       data-theme={theme}
                       className="-m-3 flex rounded-lg p-2 transition duration-150 ease-in-out-50 hover:translate-x-2 hover:cursor-pointer"
                     >
-                      <div className="ml-4">
-                        <p className="text-lg font-medium text-base text-left">
-                          {t(`${theme}Theme`)}
-                        </p>
-                        <p className="text-base left -mt-4">
-                          {t('common:sloganCome')}
-                          <span className="px-2">|</span>
-                          {t('common:sloganStay')}
-                        </p>
+                      <div className="w-full">
+                        <div className="px-2">
+                          <p className="text-xl font-medium text-base text-left mb-0 pb-0">
+                            {t(`${theme}Theme`)}
+                          </p>
+                          <div className="theme-gradient h-1 w-full mb-2"></div>
+                          <p className="text-base text-left -mt-4 shadow">
+                            {t('common:sloganCome')}
+                            <span className="px-2">|</span>
+                            {t('common:sloganStay')}
+                          </p>
+                        </div>
                       </div>
                     </button>
                   ))}

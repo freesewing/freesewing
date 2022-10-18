@@ -18,9 +18,9 @@ describe('Snapped options', () => {
       draft: ({ part, absoluteOptions }) => {
         abs = absoluteOptions
         return part
-      }
+      },
     }
-    const design = new Design({ parts: [ part] })
+    const design = new Design({ parts: [part] })
     new design({ options: { test: 0.13 }, measurements, idPrefix: 'A' }).draft()
     expect(abs.test).to.equal(60)
     new design({ options: { test: 0.27 }, measurements, idPrefix: 'B' }).draft()

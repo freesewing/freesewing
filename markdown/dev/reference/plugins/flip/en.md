@@ -3,7 +3,7 @@ title: plugin-flip
 ---
 
 Published as [@freesewing/plugin-flip][1], this plugin provides [the flip
-macro](/reference/api/macros/flip) which flips (mirrors) an entire part
+macro](/reference/macros/flip) which flips (mirrors) an entire part
 vertically around the Y-axis.  It's typically used to create a right and left
 pattern part from the same basis.
 

@@ -3,25 +3,21 @@ title: Store
 order: 60
 ---
 
-<Example part="docs_overview" options_focus="Store">
-The store provides pattern-wide key/value storage
-</Example>
-
-The store provides key-value storage that is shared across your pattern.
-
+The store in a FreeSewing pattern provides shared key-value storage.
 If you have some information in one part that you want to make available
 outside that part (in another part) you can save it to the store.
 
-A **Store** object holds a simple key/value store with methods for storing and retrieving information.  
+There are two types of stores:
 
+- A pattern-wide store that
+- A store per set that is shared across parts in that set
 
-## Note
+When you interact with a store in your part code, it is almost certainly the
+so-called setStore, the store that is shared accross parts in the set.
 
+The pattern-wide store is used for pattern initialization and storing logs and
+other data in the early stages of the pattern lifecycle.
 
-A store is typically used to share information between parts. For example
-the length of the neck opening in one part can be used to calculate the
-length for the collar in another part.
-All patterns have access to 
 
 <Example caption="An overview of different stores within a pattern">
 ```js

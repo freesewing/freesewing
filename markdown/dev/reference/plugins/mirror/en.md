@@ -3,7 +3,7 @@ title: plugin-mirror
 ---
 
 Published as [@freesewing/plugin-mirror][1], this plugin provides [the mirror
-macro](/reference/api/macros/mirror) which facilitates mirroring a number of
+macro](/reference/macros/mirror) which facilitates mirroring a number of
 points and/or paths around a given mirror line.
 
 ## Installation

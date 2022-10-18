@@ -3,7 +3,7 @@ title: plugin-grainline
 ---
 
 Published as [@freesewing/plugin-grainline][1], this plugin provides [the
-grainline macro](/reference/api/macros/grainline) which adds a _grainline_
+grainline macro](/reference/macros/grainline) which adds a _grainline_
 indicator to your design.
 
 ## Installation

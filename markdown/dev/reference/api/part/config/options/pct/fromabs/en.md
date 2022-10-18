@@ -34,7 +34,7 @@ function fromAbs(millimeter, settings) {
 
 The first parameter is the desired value in millimeter (for example
 `130` for `13cm`).
-The second parameter is the pattern's [settings](/reference/api/settings) object
+The second parameter is the pattern's [settings](/reference/settings) object
 which holds -- among other things -- the measurements provided by the user.
 
 ## Example

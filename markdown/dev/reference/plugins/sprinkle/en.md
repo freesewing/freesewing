@@ -3,7 +3,7 @@ title: plugin-sprinkle
 ---
 
 Published as [@freesewing/plugin-sprinkle][1], this plugin provides [the
-sprinkle macro](/reference/api/macros/sprinkle) which is a faster way to add
+sprinkle macro](/reference/macros/sprinkle) which is a faster way to add
 several of the same snippets to your designs (think of it as _sprinkling_ them
 onto your design).
 

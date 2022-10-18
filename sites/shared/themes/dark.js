@@ -1,33 +1,34 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  'fontFamily': '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+  fontFamily:
+    '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
 
   'base-100': colors.neutral['900'],
   'base-200': colors.neutral['700'],
   'base-300': colors.neutral['600'],
   'base-content': colors.neutral['300'],
 
-  'primary': colors.violet['700'],
+  primary: colors.violet['700'],
   'primary-focus': colors.violet['600'],
   'primary-content': colors.violet['50'],
 
-  'secondary': colors.sky['500'],
+  secondary: colors.sky['500'],
   'secondary-focus': colors.sky['400'],
   'secondary-content': colors.sky['50'],
 
-  'accent': colors.pink['500'],
+  accent: colors.pink['500'],
   'accent-focus': colors.pink['400'],
   'accent-content': colors.pink['50'],
 
-  'neutral': '#000000', // Dark as my soul
+  neutral: '#000000', // Dark as my soul
   'neutral-focus': colors.neutral['800'],
   'neutral-content': colors.neutral['50'],
 
-  'info': colors.indigo['700'],
-  'success': colors.green['700'],
-  'warning': colors.orange['500'],
-  'error': colors.red['700'],
+  info: colors.indigo['700'],
+  success: colors.green['700'],
+  warning: colors.orange['500'],
+  error: colors.red['700'],
 
   '--btn-info-content': colors.neutral[50],
   '--btn-success-content': colors.neutral[50],
@@ -36,14 +37,20 @@ module.exports = {
 
   '--theme-gradient': `repeating-linear-gradient(
     90deg,
-    ${colors.violet[900]},
-    ${colors.violet[900]} 40%,
-    ${colors.pink[700]} 65%,
-    ${colors.violet[600]} 90%,
-    ${colors.violet[900]} 100%
+    ${colors.red[600]} 0,
+    ${colors.orange[600]} 11%,
+    ${colors.yellow[600]} 22%,
+    ${colors.lime[600]} 33%,
+    ${colors.green[600]} 44%,
+    ${colors.cyan[600]} 55%,
+    ${colors.blue[600]} 66%,
+    ${colors.indigo[600]} 77%,
+    ${colors.violet[600]} 88%,
+    ${colors.purple[600]} 100%
   )`,
 
   '--code-background-color': '#111',
+  '--code-background-highlight-color': '#191919',
   '--code-border-color': colors.neutral['800'],
   '--code-color': colors.neutral['300'],
   '--code-font-family': `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`,
@@ -60,7 +67,7 @@ module.exports = {
   '--code-color-string': colors.sky['300'],
   '--code-font-style-string': 'italic',
   '--code-color-variable': colors.indigo['300'],
-  '--code-color-comment': colors.neutral['600'],
+  '--code-color-comment': colors.neutral['400'],
   '--code-color-tag': colors.green['600'],
   '--code-color-property': colors.yellow['200'],
   '--code-font-weight-property': 'bold',

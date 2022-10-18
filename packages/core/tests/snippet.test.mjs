@@ -43,5 +43,4 @@ describe('Snippet', () => {
     pattern.draft()
     expect(result).to.equal(':)')
   })
-
 })

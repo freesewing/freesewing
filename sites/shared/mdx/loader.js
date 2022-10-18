@@ -17,6 +17,7 @@ import rehypeHighlight from 'rehype-highlight'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeSlug from 'rehype-slug'
 import rehypeJargon from 'pkgs/rehype-jargon/src/index.mjs'
+import rehypeHighlightLines from 'pkgs/rehype-highlight-lines/src/index.mjs'
 // Simple frontmatter extractor
 import frontmatter from 'front-matter'
 /*
@@ -73,6 +74,7 @@ const mdxLoader = async (language, site, slug, jargon) => {
             aliases: {
               javascript: [
                 'design/src/index.mjs',
+                'design/src/part.mjs',
                 'design/src/bib.mjs',
                 'index.mjs',
                 'part.mjs',
@@ -80,6 +82,21 @@ const mdxLoader = async (language, site, slug, jargon) => {
               ],
               markdown: ['en.md'],
             },
+          },
+        ],
+        [
+          rehypeHighlightLines,
+          {
+            highlightClass: ['highlight-lines', 'border-l-4'],
+            strikeoutClass: [
+              'strikeout-lines',
+              'bg-orange-300',
+              'bg-opacity-5',
+              'border-l-4',
+              'opacity-80',
+              'line-through',
+              'decoration-orange-500',
+            ],
           },
         ],
         rehypeSlug,

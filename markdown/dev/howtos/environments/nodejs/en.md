@@ -65,7 +65,7 @@ console.log(svg)
 ##### Remarks on the example code
 
 - We are using `@freesewing/aaron` as the design, but you could use any design
-- You probably want to [use your own measurements](/reference/api/settings/measurements)
+- You probably want to [use your own measurements](/reference/settings/measurements)
   or you could use `@freesewing/models` to load measurements from [our sizing grid](https://freesewing.org/sizes/)
 - We are using `@freesewing/plugin-theme` to theme our SVG, but you
   could [pass in your own CSS](/guides/plugins/using-hooks-without-plugin)

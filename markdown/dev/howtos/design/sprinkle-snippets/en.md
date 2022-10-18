@@ -1,20 +1,9 @@
 ---
 title: Add several of the same snippets with the sprinkle macro
-for: developers
-about: Adding multiple snippets doesn't need to be a chore with this handy macro
 ---
 
-<Note>
-
-##### See this example in our source code
-
-- [designs/jaeger/src/front.js](https://github.com/freesewing/freesewing/blob/3ca5d0edfe54c7ac20aaf3af2f3544aee72f9b99/designs/jaeger/src/front.js#L381)
-
-</Note>
-
 Adding multiple snippets at the same time results in a lot of repetitive code.
-
-Better to use the `sprinkle` macro instead:
+It is better to use the `sprinkle` macro instead:
 
 ```js
 macro('sprinkle', {
@@ -40,7 +29,7 @@ macro('sprinkle', {
 
 <Tip>
 
-Refer to [the sprinkle macro documentation](/reference/api/macros/sprinkle) for details on how
+Refer to [the sprinkle macro documentation](/reference/macros/sprinkle) for details on how
 to use this macro
 
 </Tip>
