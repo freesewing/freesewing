@@ -1,5 +1,5 @@
 ---
-title: Hide ore remove paths from an inherited part
+title: Hide or remove paths from an inherited part
 ---
 
 To hide remove paths from an inherited part, iterate over the `paths` object
