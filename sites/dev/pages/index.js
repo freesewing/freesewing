@@ -19,15 +19,11 @@ const HomePage = () => {
         <meta property="og:type" content="article" key="type" />
         <meta
           property="og:description"
-          content="Documentation and tutorials for FreeSewing developers and contributors. Plus our Developers Blog"
+          content="Documentation and tutorials for FreeSewing developers and contributors"
           key="description"
         />
         <meta property="og:article:author" content="Joost De Cock" key="author" />
-        <meta
-          property="og:image"
-          content="https://canary.backend.freesewing.org/og-img/en/dev/"
-          key="image"
-        />
+        <meta property="og:image" content="/og/og.png" key="image" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
