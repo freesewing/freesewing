@@ -12,7 +12,7 @@ If you're looking for a more hands-on list of changes between v2 and v3, please
 refer to [the v3 migration guide](/guides/v3/migration).
 
 Once v3 is in production, these guides will become less relevant. For now,
-short of reading the code itself, they are your best source for the incide
+short of reading the code itself, they are your best source for the inside
 scoop on v3, unless you want to read the source code of course.
 
 ## Why a version 3 in the first place?
@@ -51,7 +51,7 @@ people to combine parts from different designs in a seamless way.
 
 Design inheritance was already possible in v2, but because the configuration
 was handled on the design level, it required careful re-confiruration of
-(required) measuremetns, options, part dependencies, and so on. It was
+(required) measurements, options, part dependencies, and so on. It was
 possible, but came with a lot of friction. 
 
 So in v3, all configuration is moved to the part level, and a design is now not
@@ -66,12 +66,12 @@ This migration of the configuration from the design level to the part level is
 the biggest and most fundamental change between v2 and v3. It is also where
 most of the work needs to be done to port existing designs from v2 to v3.
 
-### Improved developer experience.
+### Improved developer experience
 
 The effort to improve the developer experience started already in v2. We've
 shipped a new development environment based on NextJS (previously we used
 Create React App) and have designing patterns more frictionless both for
-stand-along development, as well as for people working with(in) [our
+stand-alone development, as well as for people working with(in) [our
 monorepo](https://github.com/freesewing/freesewing).
 
 We've also switched from Rollup to Esbuild as our bundler, and in the process
@@ -104,7 +104,7 @@ v2 this was bolted on as an afterthought, and as such implemented in a somewhat
 hackish way.
 
 In v2, only paths are sampled and you can't compare list options among other
-restrictions.  Improving this and making sampling a cover the entire spectrum
+restrictions.  Improving this and making sampling cover the entire spectrum
 of what goes in a design has been on our roadmap for a while, but we were not
 able to do much without introducing breaking changes.
 
@@ -122,10 +122,9 @@ like layers.
 
 These two new features not only make sampling a lot more straight-forward, they
 also allow other possibilities such as drafting a pattern for two sets of
-measurements when dealing with an assymetric body.
+measurements when dealing with an asymmetric body.
 
-### Provide more generic extending capabilities, rather than tight-coupling
-with our frontend
+### Provide more generic extending capabilities, rather than tight-coupling with our frontend
 
 This is something that works on two different levels.
 
@@ -143,7 +142,7 @@ extend the software with the features they need for frontend integration.
 
 Removing the FreeSewing.org specific stuff means that designs now no longer
 ship with any FreeSewing.org specific info.  Instead, plugins can now further
-extend core with *store methods*, and we allow passing in any data into the
+extend core with *store methods*, and we allow passing any data into the
 design that you can then access on the pattern object.
 
 You can also add additional data to your part's options to further facilitate
@@ -181,16 +180,16 @@ The following methods have been added to the core API in v3:
 #### On the `Attributes` object
 
 - [Attributes.addClass](/reference/api/attributes/addclass)
-- [Attributes.asPropIfPrefixIs](/reference/api/attributes/aspropifprefixis)
+- [Attributes.asPropsIfPrefixIs](/reference/api/attributes/aspropsifprefixis)
 - [Attributes.render](/reference/api/attributes/render)
 - [Attributes.renderAsCss](/reference/api/attributes/renderascss)
 - [Attributes.renderIfPrefixIs](/reference/api/attributes/renderifprefixis)
 
 #### On the `Part` object
 
-- [Part.hide](/reference/api/part/hide)
-- [Part.setHidden](/reference/api/part/sethidden)
-- [Part.unhide](/reference/api/part/unhide)
+- [Part.hide](/reference/api/part/draft/hide)
+- [Part.setHidden](/reference/api/part/draft/sethidden)
+- [Part.unhide](/reference/api/part/draft/unhide)
 
 #### On the `Path` object
 
@@ -206,8 +205,8 @@ The following methods have been added to the core API in v3:
 
 #### On the `Pattern` object
 
-- [Pattern.addPart](/reference/api/pattern/addPart)
-- [Pattern.getConfig](/reference/api/pattern/getConfig)
+- [Pattern.addPart](/reference/api/pattern/addpart)
+- [Pattern.getConfig](/reference/api/pattern/getconfig)
 
 
 #### On the `Point` object
