@@ -113,7 +113,7 @@ const HomePage = () => {
                 <h3>What&apos;s changed?</h3>
                 <p>
                   Check{' '}
-                  <PageLink href="/guides/v3/new" txt="the FreeSewing version 3 migration guide" />{' '}
+                  <PageLink href="/guides/v3/migration" txt="the FreeSewing version 3 migration guide" />{' '}
                   to learn about what is new in version 3 of FreeSewing, and what changes you should
                   make in your own designs to port them to version 3.
                 </p>
