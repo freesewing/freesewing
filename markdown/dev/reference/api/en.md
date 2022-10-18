@@ -11,7 +11,7 @@ sewing patterns, but can be utilized for a variety of similar 2D design tasks.
 ##### Looking to get started?
 
 You are currently browsing the reference documentation. 
-Please refer to [the quick start guide](/guides/quick) to get started.
+Please refer to our [tutorials](/tutorials) to get started.
 
 </Tip>
 
