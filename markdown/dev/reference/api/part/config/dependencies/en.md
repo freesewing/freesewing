@@ -70,7 +70,7 @@ const part = {
 
 <Warning>
 
-Unlike `after`, `front` only ever takes one part since you can only extend one part.
+Unlike `after`, `from` only ever takes one part since you can only extend one part.
 
 </Warning>
 
