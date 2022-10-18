@@ -245,37 +245,55 @@ export const MainSections = ({ app, active }) => {
   let last
   for (const page of order(app.navigation)) {
     const act = isActive(page.__slug, active)
+    const txt = (
+      <>
+        {icons[page.__slug] ? (
+          icons[page.__slug](`w-8 h-8 ${act ? 'text-accent' : ''}`)
+        ) : (
+          <HelpIcon />
+        )}
+        <span className={`font-bold ${act ? 'text-accent' : ''}`}>{page.__title}</span>
+      </>
+    )
+
     const item = (
-      <li key={page.__slug} className={act ? 'mt-4 uppercase' : ''}>
-        <Link href={`${page.__slug}`}>
-          <a
+      <li key={page.__slug}>
+        {act ? (
+          <span
             className={`${linkClasses}
-            flex flex-row gap-4 items-center
-            hover:bg-secondary hover:bg-opacity-10
-            p-2 rounded
-          `}
+                flex flex-row gap-4 items-center
+                text-accent
+                hover:text-base-content
+                p-2 rounded
+              `}
             title={page.__title}
           >
-            {icons[page.__slug] ? (
-              icons[page.__slug](`w-8 h-8 ${act ? 'text-accent' : ''}`)
-            ) : (
-              <HelpIcon />
-            )}
-            <span className="font-bold">{page.__title}</span>
-          </a>
-        </Link>
+            {txt}
+          </span>
+        ) : (
+          <Link href={`${page.__slug}`}>
+            <a
+              className={`${linkClasses}
+                flex flex-row gap-4 items-center
+                hover:bg-secondary hover:bg-opacity-10
+                p-2 rounded
+              `}
+              title={page.__title}
+            >
+              {txt}
+            </a>
+          </Link>
+        )}
       </li>
     )
-    if (act) last = item
-    else output.push(item)
+    output.push(item)
   }
-  output.push(last)
 
   return <ul>{output}</ul>
 }
 
 export const ActiveSection = ({ app, active }) => (
-  <div className="-ml-5 mt-2">
+  <div className="-ml-5 mt-4 pt-4 border-t-2">
     <SubLevel
       hasChildren={1}
       nav={app.navigation}

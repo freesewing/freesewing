@@ -58,7 +58,7 @@ const introAsLines = (intro) => {
 }
 
 // Get title and intro
-const getMetaData = async ({ slug, title, intro, site }) => {
+const getMetaData = async ({ slug, title, intro, site, lead = false }) => {
   const chunks = slug.split('/')
   if (site === 'dev') {
     // Home page
@@ -75,7 +75,7 @@ const getMetaData = async ({ slug, title, intro, site }) => {
         title: titleAsLines(title),
         intro: introAsLines(intro),
         sub: ['https://freesewing.dev/', slug],
-        lead: capitalize(chunks[0]),
+        lead: lead || capitalize(chunks[0]),
       }
     }
   } else {
