@@ -15,7 +15,7 @@ account](https://github.com/signup?user_email=\&source=form-home-signup)
 (they are free).
 
 <Note>
-I is also possible to make changes using the GitHub desktop
+It is also possible to make changes using the GitHub desktop
 application and/or your computer's command line; these advanced topics are
 beyond the scope of this 'How to'.
 </Note>
