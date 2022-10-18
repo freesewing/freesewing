@@ -180,16 +180,16 @@ The following methods have been added to the core API in v3:
 #### On the `Attributes` object
 
 - [Attributes.addClass](/reference/api/attributes/addclass)
-- [Attributes.asPropIfPrefixIs](/reference/api/attributes/aspropifprefixis)
+- [Attributes.asPropsIfPrefixIs](/reference/api/attributes/aspropsifprefixis)
 - [Attributes.render](/reference/api/attributes/render)
 - [Attributes.renderAsCss](/reference/api/attributes/renderascss)
 - [Attributes.renderIfPrefixIs](/reference/api/attributes/renderifprefixis)
 
 #### On the `Part` object
 
-- [Part.hide](/reference/api/part/hide)
-- [Part.setHidden](/reference/api/part/sethidden)
-- [Part.unhide](/reference/api/part/unhide)
+- [Part.hide](/reference/api/part/draft/hide)
+- [Part.setHidden](/reference/api/part/draft/sethidden)
+- [Part.unhide](/reference/api/part/draft/unhide)
 
 #### On the `Path` object
 
@@ -205,8 +205,8 @@ The following methods have been added to the core API in v3:
 
 #### On the `Pattern` object
 
-- [Pattern.addPart](/reference/api/pattern/addPart)
-- [Pattern.getConfig](/reference/api/pattern/getConfig)
+- [Pattern.addPart](/reference/api/pattern/addpart)
+- [Pattern.getConfig](/reference/api/pattern/getconfig)
 
 
 #### On the `Point` object
