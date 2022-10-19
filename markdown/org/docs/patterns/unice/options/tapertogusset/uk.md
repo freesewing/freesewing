@@ -1,5 +1,5 @@
 ---
-title: "Taper to gusset"
+title: "Front Exposure"
 ---
 
 Controls how much the front will curve inwards to meet the gusset.
