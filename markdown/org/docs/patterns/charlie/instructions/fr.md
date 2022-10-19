@@ -1,14 +1,14 @@
 - - -
-title: "Charlie chinos: Sewing Instructions"
+title: "Charlie chinos: Instructions de couture"
 - - -
 
 ## Étape 1 : Fermer la dart arrière
 
-First thing we're going to do is close the waist dart on the back panel.
+La première chose que nous allons faire est de fermer la pince sur le panneau arrière.
 
-To do so, fold the back panel double with _good sides together_ making sure to match both sides of the dart on top of each other.
+Pour cela, pliez le panneau arrière double _endroit contre endroit_ en s'assurant de faire correspondre les deux côtés de la pince.
 
-Now sew the dart close, making sure to use a small stitch length, and to sew all the way to the end of the dart, even a couple of stitches off the fabric.
+Maintenant coudre la pince, assurez-vous d'utiliser un point court, et de coudre jusqu'à la fin de la pince, même quelques points en dehors du tissu.
 
 ![Closed darts](step01.svg)
 
@@ -20,31 +20,30 @@ Vos fléchettes du dos doivent avoir la même longueur. Assurez-vous de les coud
 
 ## Étape 2 : Construire les poches arrière
 
-Follow [our double welt pocket instructions](/docs/sewing/double-welt-pockets/) to create the back welt pockets.
+Suivez [nos instructions](/docs/sewing/double-welt-pockets/) pour créer les poches passepoilées.
 
 <Note>
 
 Comme il s'agit de chinos, vous pouvez/devriez edgestitch autour de l'ouverture.
-It's not strictly required for welt pockets, and typically not done on classic trousers (and thus not shown in
-the instructions) but it's a very typical finish for chinos, and makes it easier to keep everything in place.
+Ce n'est pas strictement nécessaire pour les poches passepoilées, et généralement pas fait sur un pantalon classique (et donc ne devrait pas dans les instructions) mais c'est une fin très typique pour les chinos, et facilite le maintien de tout en place.
 
 </Note>
 
 ### Attacher la poche arrière face au sac de poche
 
-Join the back pocket facing to the pocket bag by placing them with _good sides together_ and sewing along the longest of the non-curved seams of the facing.
+Joignez la poche arrière face au fond de poche en les plaçant _endroit contre endroit_ et en cousant le long des coutures les plus longues de la face non incurvée.
 
-When you're done, press the seam allowance to the side of the pocket bag.
+Lorsque vous avez terminé, pressez sur le côté du fond de poche.
 
 ### Attacher le sac de poche arrière
 
-Sew the bottom of the pocket bag to the bottom welt. Press it down when done.
+Coudre le bas du fond de poche au rabat du bas. Pressez dessus lorsque vous avez terminé.
 
-Now align the top of the pocket bag with the waist and sew it down in the waist's seam allowance.
+Alignez maintenant le dessus du fond de poche avec la taille et cousez-le dans la marge de couture de la taille.
 
 ### Fermer le dos de poche
 
-Fold the leg panel out of the way so you can close both sides of the pocket bag.
+Repliez le panneau de la jambe hors du champ pour pouvoir fermer les deux côtés du sac de poche.
 
 <Note>
 
@@ -52,7 +51,7 @@ Assurez-vous également de coudre la poche sur le sac de poche
 
 </Note>
 
-You should overlock/serge the sides of the pocketbag so they don't ravel.
+Vous devriez surjeter les côtés du fond de poche pour qu'ils ne s'effilochent pas.
 
 <Tip>
 
@@ -62,9 +61,9 @@ Si vous n'avez pas de _serger_, vous pouvez toujours utiliser un point zig-zag �
 
 ## Étape 3 : Surverrouillez les bords avant et arrière
 
-Before we go any further, we'll overlock/serge the edges of the front and back panels of the legs. Make sure to also catch the top of the pocket bag when doing the back panels.
+Avant d'aller plus loin, nous surjeter les bords des panneaux avant et arrière des jambes. Assurez-vous également de prendre le dessus du fond de poche lorsque vous faites les panneaux arrière.
 
-What we want to to prevent these edges from ravelling after we've completed our trousers, and now is the best time to do so.
+Ce que nous voulons empêcher ces bords de s'effilocher une fois que nous avons terminé notre pantalon, et maintenant c'est le meilleur moment pour le faire.
 
 ![Overlocked leg panels](step03.svg)
 
