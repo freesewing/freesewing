@@ -1,5 +1,12 @@
 // This file is auto-generated | Any changes you make will be overwritten.
-import { {{Name}} } from '../src/index.mjs'
+
+//{{!
+//    Change the Mustache delimiter from double curly braces to double dollar signs.
+//    Dollar signs are allowed in EcmaScript identifier names,
+//    which is helpful when running unrendered Mustache templates through eslint.
+//}}{{=$$ $$=}}
+
+import { $$Name$$ } from '../src/index.mjs'
 
 // Shared tests
 import { testPatternConfig } from '../../../tests/designs/config.mjs'
@@ -7,10 +14,10 @@ import { testPatternDrafting } from '../../../tests/designs/drafting.mjs'
 import { testPatternSampling } from '../../../tests/designs/sampling.mjs'
 
 // Test config
-testPatternConfig({{Name}})
+testPatternConfig($$Name$$)
 
 // Test drafting - Change the second parameter to `true` to log errors
-testPatternDrafting({{Name}}, false)
+testPatternDrafting($$Name$$, false)
 
 // Test sampling - Change the second parameter to `true` to log errors
-testPatternSampling({{Name}}, false)
+testPatternSampling($$Name$$, false)
