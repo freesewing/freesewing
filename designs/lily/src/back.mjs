@@ -306,59 +306,6 @@ function draftLilyBack({
         }
         points.kneeOutNotch = points.kneeOut
         points.kneeInNotch = points.kneeIn
-      } else {
-        if (points.waistOut.x > points.seatOut.x) {
-          points.hipsOut = utils.lineIntersectsCurve(
-            points.hipsOutTarget,
-            points.hipsIn.rotate(180, points.hipsOutTarget),
-            points.floorOut,
-            points.kneeOutCp2,
-            points.seatOut,
-            points.waistOut
-          )
-          points.seatOutNotch = utils.lineIntersectsCurve(
-            points.seatMid,
-            points.seatOutTarget,
-            points.floorOut,
-            points.kneeOutCp2,
-            points.seatOut,
-            points.waistOut
-          )
-          points.kneeOutNotch = utils.lineIntersectsCurve(
-            points.kneeOut,
-            points.kneeIn.rotate(180, points.kneeOut),
-            points.floorOut,
-            points.kneeOutCp2,
-            points.seatOut,
-            points.waistOut
-          )
-        } else {
-          points.hipsOut = utils.lineIntersectsCurve(
-            points.hipsOutTarget,
-            points.hipsIn.rotate(180, points.hipsOutTarget),
-            points.seatOut,
-            points.seatOutCp2,
-            points.waistOut,
-            points.waistOut
-          )
-          points.seatOutNotch = points.seatOut
-          points.kneeOutNotch = utils.lineIntersectsCurve(
-            points.kneeOut,
-            points.kneeIn.rotate(180, points.kneeOut),
-            points.floorOut,
-            points.kneeOutCp2,
-            points.seatOutCp1,
-            points.seatOut
-          )
-        }
-        points.kneeInNotch = utils.lineIntersectsCurve(
-          points.kneeIn,
-          points.kneeOut.rotate(180, points.kneeIn),
-          points.fork,
-          points.forkCp2,
-          points.kneeInCp1,
-          points.floorIn
-        )
       }
       macro('sprinkle', {
         snippet: 'notch',

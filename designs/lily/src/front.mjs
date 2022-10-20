@@ -366,6 +366,7 @@ function draftLilyFront({
     
     //notches
     if (options.fitGuides) {
+      log.info('a')
       points.waistMid = points.waistOut.shiftFractionTowards(points.waistIn, 0.5)
       points.seatMid = points.waistMid
         .shiftTowards(points.waistOut, measurements.waistToSeat)
@@ -391,6 +392,7 @@ function draftLilyFront({
         points.seatMid
       )
       if (points.seatMid.y > points.crotchSeamCurveStartMid.y) {
+        log.info('b')
         points.seatIn = utils.lineIntersectsCurve(
           points.seatMid,
           points.seatInTarget,
@@ -400,6 +402,7 @@ function draftLilyFront({
           points.crotchSeamCurveStart
         )
       } else {
+        log.info('c')
         points.seatIn = utils.beamsIntersect(
           points.seatMid,
           points.seatInTarget,
@@ -407,8 +410,8 @@ function draftLilyFront({
           points.waistIn
         )
       }
-      if (options.fitKnee) {
         if (points.waistOut.x < points.seatOut.x) {
+          log.info('d')
           points.hipsOut = utils.lineIntersectsCurve(
             points.hipsOutTarget,
             points.hipsIn.rotate(180, points.hipsOutTarget),
@@ -426,6 +429,7 @@ function draftLilyFront({
             points.kneeOut
           )
         } else {
+          log.info('e')
           points.hipsOut = utils.lineIntersectsCurve(
             points.hipsOutTarget,
             points.hipsIn.rotate(180, points.hipsOutTarget),
@@ -438,60 +442,6 @@ function draftLilyFront({
         }
         points.kneeOutNotch = points.kneeOut
         points.kneeInNotch = points.kneeIn
-      } else {
-        if (points.waistOut.x < points.seatOut.x) {
-          points.hipsOut = utils.lineIntersectsCurve(
-            points.hipsOutTarget,
-            points.hipsIn.rotate(180, points.hipsOutTarget),
-            points.waistOut,
-            points.seatOut,
-            points.kneeOutCp1,
-            points.floorOut
-          )
-          points.seatOutNotch = utils.lineIntersectsCurve(
-            points.seatMid,
-            points.seatOutTarget,
-            points.waistOut,
-            points.seatOut,
-            points.kneeOutCp1,
-            points.floorOut
-          )
-          points.kneeOutNotch = utils.lineIntersectsCurve(
-            points.kneeOut,
-            points.kneeIn.rotate(180, points.kneeOut),
-            points.waistOut,
-            points.seatOut,
-            points.kneeOutCp1,
-            points.floorOut
-          )
-        } else {
-          points.hipsOut = utils.lineIntersectsCurve(
-            points.hipsOutTarget,
-            points.hipsIn.rotate(180, points.hipsOutTarget),
-            points.waistOut,
-            points.waistOut,
-            points.seatOutCp1,
-            points.seatOut
-          )
-          points.seatOutNotch = points.seatOut
-          points.kneeOutNotch = utils.lineIntersectsCurve(
-            points.kneeOut,
-            points.kneeIn.rotate(180, points.kneeOut),
-            points.seatOut,
-            points.seatOutCp2,
-            points.kneeOutCp1,
-            points.floorOut
-          )
-        }
-        points.kneeInNotch = utils.lineIntersectsCurve(
-          points.kneeIn,
-          points.kneeOut.rotate(180, points.kneeIn),
-          points.floorIn,
-          points.kneeInCp2,
-          points.forkCp1,
-          points.fork
-        )
-      }
       macro('sprinkle', {
         snippet: 'notch',
         on: ['crotchSeamCurveStart', 'seatIn', 'seatOutNotch', 'kneeInNotch', 'kneeOutNotch'],
