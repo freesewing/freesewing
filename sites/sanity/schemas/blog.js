@@ -17,6 +17,9 @@ export const blogSchemaBuilder = (lang) => ({
       name: 'slug',
       type: 'slug',
       title: 'Slug',
+      options: {
+        source: 'title',
+      }
     },
     {
       name: 'date',
@@ -34,10 +37,14 @@ export const blogSchemaBuilder = (lang) => ({
       title: 'Caption',
     },
     {
+      name: 'intro',
+      title: 'Intro',
+      type: 'text',
+    },
+    {
       name: 'body',
       title: 'Body',
-      type: 'array',
-      of: [{type: 'block'}]
+      type: 'markdown',
     },
     {
       name: 'author',

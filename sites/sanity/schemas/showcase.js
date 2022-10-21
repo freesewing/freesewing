@@ -12,6 +12,9 @@ export const showcaseSchemaBuilder = (lang) => ({
       name: 'slug',
       type: 'slug',
       title: 'Slug',
+      options: {
+        source: 'title',
+      }
     },
     {
       name: 'date',
@@ -19,10 +22,14 @@ export const showcaseSchemaBuilder = (lang) => ({
       title: 'Date',
     },
     {
+      name: 'intro',
+      title: 'Intro',
+      type: 'text',
+    },
+    {
       name: 'body',
       title: 'Body',
-      type: 'array',
-      of: [{type: 'block'}]
+      type: 'markdown',
     },
     {
       name: 'image',
