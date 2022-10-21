@@ -16,7 +16,7 @@ how circles are handled.
 
 ```js
 Point point.setCircle(
-  string text, 
+  number radius, 
   string className
 )
 ```
