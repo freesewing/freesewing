@@ -14,10 +14,14 @@ export const newsletter = {
       title: 'Slug',
     },
     {
+      name: 'intro',
+      title: 'Intro',
+      type: 'text',
+    },
+    {
       name: 'body',
       title: 'Body',
-      type: 'array',
-      of: [{type: 'block'}]
+      type: 'markdown',
     },
   ]
 }

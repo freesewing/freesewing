@@ -9,3 +9,4 @@ sanity dataset import ./export/showcasees.ndjson production --replace
 sanity dataset import ./export/showcasede.ndjson production --replace
 sanity dataset import ./export/showcasenl.ndjson production --replace
 sanity dataset import ./export/showcasefr.ndjson production --replace
+sanity dataset import ./export/newsletter.ndjson production --replace

@@ -29,9 +29,11 @@ const postIntro = async markdown => await unified()
 /*
  * Helper method to create the API url for retrieval of Strapi posts
  */
-const buildUrl = (type, site, lang) => (type === 'blog')
-  ?  `${strapiHost}/blogposts?_locale=${lang}&_sort=date:ASC&dev_${site === 'dev' ? 'eq' : 'ne'}=true`
-  :  `${strapiHost}/showcaseposts?_locale=${lang}&_sort=date:ASC`
+const buildUrl = (type, site, lang) => {
+  if (type === 'blog') return `${strapiHost}/blogposts?_locale=${lang}&_sort=date:ASC&dev_${site === 'dev' ? 'eq' : 'ne'}=true`
+  if (type === 'showcase') return `${strapiHost}/showcaseposts?_locale=${lang}&_sort=date:ASC`
+  if (type === 'newsletter') return `${strapiHost}/newsletters?_sort=date:ASC`
+}
 
 /*
  * Helper method to load posts from Strapi
@@ -137,6 +139,42 @@ const exportShowcasePosts = async (lang) => {
   )
 }
 
+/*
+ * Transforms a newsletter post from strapi to sanity
+ */
+const transformNewsletterPost = async (p) => {
+  const asIs = ['title', 'body']
+
+  const post = {
+    _id: `newsletter.${p.slug}`,
+    _type: 'newsletter',
+  }
+  for (const field of asIs) post[field] = p[field]
+  post.intro = p.intro || p.title
+  post.slug = {
+    _type: 'slug',
+    current: p.slug
+  }
+
+  return post
+}
+
+/*
+ * Exports newsletter posts
+ */
+const exportNewsletterPosts = async (lang) => {
+  const posts = []
+  const strapiPosts = await getPosts('newsletter', 'en')
+  for (const post of Object.values(strapiPosts)) {
+    posts.push((await transformNewsletterPost(post, lang)))
+  }
+  fs.writeFileSync(
+    `./export/newsletter.ndjson`,
+    posts.map(post => JSON.stringify(post)).join("\n")
+  )
+}
+
+
 
 /*
  * Main method that does what needs doing
@@ -147,12 +185,13 @@ const exportStrapi = async () => {
   console.log()
   console.log(`Exporting content from Strapi`)
 
-  for (const lang of ['en', 'es', 'fr', 'de', 'nl']) {
-    console.log(`  - Blog ${lang.toUpperCase()}`)
-    await exportBlogPosts(lang)
-    console.log(`  - Showcase ${lang.toUpperCase()}`)
-    await exportShowcasePosts(lang)
-  }
+  //for (const lang of ['en', 'es', 'fr', 'de', 'nl']) {
+  //  console.log(`  - Blog ${lang.toUpperCase()}`)
+  //  await exportBlogPosts(lang)
+  //  console.log(`  - Showcase ${lang.toUpperCase()}`)
+  //  await exportShowcasePosts(lang)
+  //}
+  await exportNewsletterPosts()
 }
 
 

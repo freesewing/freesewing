@@ -9,3 +9,4 @@ sanity dataset import ./export/showcasees.ndjson production
 sanity dataset import ./export/showcasede.ndjson production
 sanity dataset import ./export/showcasenl.ndjson production
 sanity dataset import ./export/showcasefr.ndjson production
+sanity dataset import ./export/newsletter.ndjson production
