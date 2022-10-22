@@ -23,6 +23,7 @@ function draftLilyFront({
 }) {
   
   //TODO: implement stretch setting to replace ease
+  //TODO: rework length bonus (Titan assumes knee-to-ankle section is straight)
   
   /*
    * Helper method to draw the inseam path
@@ -239,12 +240,12 @@ function draftLilyFront({
   
   console.log('control points')
 
-  // Balance the waist
+/*   // Balance the waist
   let delta = points.waistX.dx(points.cfSeat)
   let width = points.waistX.x
   points.waistOut = new Point(delta * options.waistBalance, 0)
   points.waistIn = points.waistOut.shift(0, width)
-  points.cfWaist = points.waistIn
+  points.cfWaist = points.waistIn */
 
   // Draw initial crotch seam
   drawCrotchSeam()
@@ -366,7 +367,6 @@ function draftLilyFront({
     
     //notches
     if (options.fitGuides) {
-      log.info('a')
       points.waistMid = points.waistOut.shiftFractionTowards(points.waistIn, 0.5)
       points.seatMid = points.waistMid
         .shiftTowards(points.waistOut, measurements.waistToSeat)
@@ -385,14 +385,25 @@ function draftLilyFront({
         points.waistIn,
         points.crotchSeamCurveStart
       )
+      // intersection between the vertical line from waistMid to seatMid and a line parallel to waistIn-waistOut that goes through crotchSeamCurveStart
       points.crotchSeamCurveStartMid = utils.beamsIntersect(
         points.crotchSeamCurveStart,
         points.crotchSeamCurveStart.shift(points.waistIn.angle(points.waistOut), 1),
         points.waistMid,
         points.seatMid
       )
-      if (points.seatMid.y > points.crotchSeamCurveStartMid.y) {
-        log.info('b')
+      // check whether intersection occurs above or below crotch seam curve start
+      points.seatInTemp = utils.beamsIntersect(
+        points.seatMid,
+        points.seatInTarget,
+        points.crotchSeamCurveStart,
+        points.waistIn
+      ) // NOTE: guaranteed to return a Point since the lines cannot be parallel
+      if (points.seatInTemp.y <= points.crotchSeamCurveStartMid.y) {
+        // intersection is above the crotch seam curve start, so on the line segment
+        points.seatIn = points.seatInTemp.clone()
+      } else {
+        // use the intersection with the curved part instead
         points.seatIn = utils.lineIntersectsCurve(
           points.seatMid,
           points.seatInTarget,
@@ -401,17 +412,9 @@ function draftLilyFront({
           points.crotchSeamCurveCp2,
           points.crotchSeamCurveStart
         )
-      } else {
-        log.info('c')
-        points.seatIn = utils.beamsIntersect(
-          points.seatMid,
-          points.seatInTarget,
-          points.crotchSeamCurveStart,
-          points.waistIn
-        )
       }
         if (points.waistOut.x < points.seatOut.x) {
-          log.info('d')
+          log.info('waist to the left of seat')
           points.hipsOut = utils.lineIntersectsCurve(
             points.hipsOutTarget,
             points.hipsIn.rotate(180, points.hipsOutTarget),
@@ -429,7 +432,7 @@ function draftLilyFront({
             points.kneeOut
           )
         } else {
-          log.info('e')
+          log.info('waist to the right of seat')
           points.hipsOut = utils.lineIntersectsCurve(
             points.hipsOutTarget,
             points.hipsIn.rotate(180, points.hipsOutTarget),

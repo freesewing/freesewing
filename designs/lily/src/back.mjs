@@ -1,5 +1,6 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { back as titanBack } from '@freesewing/titan'
+//import { front as titanFront } from '@freesewing/titan'
 
 function draftLilyBack({
   points,
@@ -20,6 +21,8 @@ function draftLilyBack({
   part,
 }) {
   
+  console.log('option test has value:',options.test)
+  
   /*
    * Helper method to draw the inseam path
    */
@@ -32,7 +35,7 @@ function draftLilyBack({
    * Helper method to draw the outseam path
    */
   const drawOutseam = () => {
-    let waistOut = points.styleWaistOut || points.waistOut
+    let waistOut = points.styleWaistOutLily || points.waistOut
       if (points.waistOut.x > points.seatOut.x)
         return new Path()
           .move(points.floorOut)
@@ -49,7 +52,7 @@ function draftLilyBack({
    * Helper method to draw the outline path
    */
   const drawPath = () => {
-    let waistIn = points.styleWaistIn || points.waistIn
+    let waistIn = points.styleWaistInLily || points.waistIn
     return drawInseam()
       .line(points.floorOut)
       .join(drawOutseam())
@@ -156,13 +159,13 @@ function draftLilyBack({
   points.seatOutCp1 = points.seatOut.shift(-90, points.seatOut.dy(points.knee) / 3)
   points.seatOutCp2 = points.seatOut.shift(90, points.seatOut.y / 2) */
 
-  // Balance the waist
+/*   // Balance the waist
   if (points.cbSeat.x < points.waistX.x) {
     let delta = points.cbSeat.dx(points.waistX)
     points.waistIn = points.waistX.shift(180, delta * (1 - options.waistBalance))
   } else points.waistIn = points.waistX
   let width = points.waistX.x
-  points.waistOut = points.waistIn.shift(180, width)
+  points.waistOut = points.waistIn.shift(180, width) */
 
   // Cross seam
   drawCrossSeam()
@@ -194,30 +197,32 @@ function draftLilyBack({
   store.set('outseamBack', drawOutseam().length())
 
   // Only now style the waist lower if requested
+  // Note: redo this for lily even though it was already done for titan;
+  //  calculation for titan happened using its own seam lengths                                                                       
   if (options.waistHeight < 1 || absoluteOptions.waistbandWidth > 0) {
-    points.styleWaistOut = drawOutseam()
+    points.styleWaistOutLily = drawOutseam()
       .reverse()
       .shiftAlong(
         measurements.waistToHips * (1 - options.waistHeight) + absoluteOptions.waistbandWidth
       )
-    points.styleWaistIn = utils.beamsIntersect(
-      points.styleWaistOut,
-      points.styleWaistOut.shift(points.waistOut.angle(points.waistIn), 10),
+    points.styleWaistInLily = utils.beamsIntersect(
+      points.styleWaistOutLily,
+      points.styleWaistOutLily.shift(points.waistOut.angle(points.waistIn), 10),
       points.waistIn,
       points.crossSeamCurveStart
     )
   } else {
-    points.styleWaistIn = points.waistIn.clone()
-    points.styleWaistOut = points.waistOut.clone()
+    points.styleWaistInLily = points.waistIn.clone()
+    points.styleWaistOutLily = points.waistOut.clone()
   }
   // Adapt the vertical placement of the seat control point to the lowered waist
-  points.seatOutCp2.y = points.seatOut.y - points.styleWaistOut.dy(points.seatOut) / 2
+  points.seatOutCp2.y = points.seatOut.y - points.styleWaistOutLily.dy(points.seatOut) / 2
 
   // Paths
   paths.seam = drawPath().attr('class', 'fabric')
 
   if (complete) {
-    points.grainlineTop.y = points.styleWaistOut.y
+    points.grainlineTop.y = points.styleWaistOutLily.y
     macro('grainline', {
       from: points.grainlineTop,
       to: points.grainlineBottom,
@@ -233,13 +238,16 @@ function draftLilyBack({
     })
     
     //notches
-    if (options.fitGuides) {
+    //if (options.fitGuides) {
+    if (true) {
       points.waistMid = points.waistOut.shiftFractionTowards(points.waistIn, 0.5)
+      // shift + rotate (below) is equivalent to shifting measurements.waistToSeat perpendicular to the waistIn-waistMid line
       points.seatMid = points.waistMid
         .shiftTowards(points.waistIn, measurements.waistToSeat)
-        .rotate(90, points.waistMid)
+        .rotate(90, points.waistMid) 
       points.seatInTarget = points.seatOut.shiftOutwards(points.seatMid, measurements.seat / 4)
       points.seatOutTarget = points.seatMid.shiftTowards(points.seatOut, measurements.seat / 4)
+      // shift + rotate (below) is equivalent to shifting measurements.waistToHips perpendicular to the waistIn-waistOut line
       points.hipsInTarget = points.waistIn
         .shiftTowards(points.waistOut, measurements.waistToHips)
         .rotate(-90, points.waistIn)
@@ -275,7 +283,6 @@ function draftLilyBack({
           points.crossSeamCurveStart
         )
       }
-      if (options.fitKnee) {
         if (points.waistOut.x > points.seatOut.x) {
           points.hipsOut = utils.lineIntersectsCurve(
             points.hipsOutTarget,
@@ -306,7 +313,6 @@ function draftLilyBack({
         }
         points.kneeOutNotch = points.kneeOut
         points.kneeInNotch = points.kneeIn
-      }
       macro('sprinkle', {
         snippet: 'notch',
         on: ['seatOutNotch', 'kneeInNotch', 'kneeOutNotch'],
@@ -340,8 +346,8 @@ function draftLilyBack({
       paths.saBase = drawOutseam()
         .join(
           new Path()
-            .move(points.styleWaistOut)
-            .line(points.styleWaistIn)
+            .move(points.styleWaistOutLily)
+            .line(points.styleWaistInLily)
             .line(points.crossSeamCurveStart)
             .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
         )
@@ -380,9 +386,9 @@ function draftLilyBack({
       })
       macro('vd', {
         from: points.floorOut,
-        to: points.styleWaistOut,
+        to: points.styleWaistOutLily,
         x:
-          (points.seatOut.x > points.styleWaistOut.x ? points.seatOut.x : points.styleWaistOut.x) +
+          (points.seatOut.x > points.styleWaistOutLily.x ? points.seatOut.x : points.styleWaistOutLily.x) +
           sa +
           15,
       })
@@ -393,49 +399,49 @@ function draftLilyBack({
       })
       macro('vd', {
         from: points.fork,
-        to: points.styleWaistIn,
+        to: points.styleWaistInLily,
         x: points.fork.x - sa - 15,
       })
       macro('vd', {
         from: points.floorIn,
-        to: points.styleWaistIn,
+        to: points.styleWaistInLily,
         x: points.fork.x - sa - 30,
       })
       macro('vd', {
         from: points.crossSeamCurveStart,
-        to: points.styleWaistIn,
+        to: points.styleWaistInLily,
         x: points.crossSeamCurveStart.x - sa - 15,
       })
       macro('hd', {
-        from: points.styleWaistIn,
+        from: points.styleWaistInLily,
         to: points.grainlineTop,
-        y: points.styleWaistIn.y - sa - 15,
+        y: points.styleWaistInLily.y - sa - 15,
       })
       macro('hd', {
         from: points.crossSeamCurveStart,
         to: points.grainlineTop,
-        y: points.styleWaistIn.y - sa - 30,
+        y: points.styleWaistInLily.y - sa - 30,
       })
       macro('hd', {
         from: points.crossSeamCurveMax,
         to: points.grainlineTop,
-        y: points.styleWaistIn.y - sa - 45,
+        y: points.styleWaistInLily.y - sa - 45,
       })
       macro('hd', {
         from: points.fork,
         to: points.grainlineTop,
-        y: points.styleWaistIn.y - sa - 60,
+        y: points.styleWaistInLily.y - sa - 60,
       })
       macro('hd', {
         from: points.grainlineTop,
-        to: points.styleWaistOut,
-        y: points.styleWaistIn.y - sa - 15,
+        to: points.styleWaistOutLily,
+        y: points.styleWaistInLily.y - sa - 15,
       })
-      if (points.seatOut.x > points.styleWaistOut.x) {
+      if (points.seatOut.x > points.styleWaistOutLily.x) {
         macro('hd', {
           from: points.grainlineTop,
           to: points.seatOut,
-          y: points.styleWaistIn.y - sa - 30,
+          y: points.styleWaistInLily.y - sa - 30,
         })
       }
     }
@@ -447,18 +453,20 @@ function draftLilyBack({
 export const back = {
   name: 'lily.back',
   from: titanBack,
+  //after: titanFront,
   measurements: [
     'ankle',
   ],
   options: {
-    fitGuides: true,
-    fitKnee: true,
+    fitGuides: {bool: true, menu: undefined},
+    fitKnee: {bool: true, menu: undefined},
     legBalance: 0.5, // between back and front parts
     waistBalance: 0.5,
     fabricStretch: { pct: 40, min: 0, max: 50, menu: 'fit' },
-    waistEase: -4, // -fabricStretch/10,
-    seatEase: -4, // -fabricStretch/10,
-    kneeEase: -4, // -fabricStretch/10,
+    waistEase: {pct: -4,  menu: undefined}, // -fabricStretch/10,
+    seatEase: {pct: -4, menu: undefined}, // -fabricStretch/10,
+    kneeEase: {pct: -4, menu: undefined}, // -fabricStretch/10,
+    test: {pct: ({ options }) => (options.fabricStretch/2)}
     },
   hideDependencies: true,
   draft: draftLilyBack,
