@@ -1,7 +1,7 @@
 {
   "root": true,
   "project": {
-    "name": "white-opossum"
+    "name": "FreeSewing CMS"
   },
   "api": {
     "projectId": "hl5bw8cj",
@@ -16,9 +16,7 @@
   ],
   "env": {
     "development": {
-      "plugins": [
-        "@sanity/vision"
-      ]
+      "plugins": ["@sanity/vision"]
     }
   },
   "parts": [
@@ -29,6 +27,10 @@
     {
       "implements": "part:@sanity/base/root",
       "path": "plugins/sanity-plugin-tutorial/CustomDefaultLayout"
+    },
+    {
+      "implements": "part:@sanity/base/brand-logo",
+      "path": "./custom/logo.js"
     }
   ]
 }
