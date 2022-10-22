@@ -15,7 +15,7 @@ account](https://github.com/signup?user_email=\&source=form-home-signup)
 (they are free).
 
 <Note>
-I is also possible to make changes using the GitHub desktop
+It is also possible to make changes using the GitHub desktop
 application and/or your computer's command line; these advanced topics are
 beyond the scope of this 'How to'.
 </Note>
@@ -61,8 +61,11 @@ contains several files, one for each language.
 - Select on the file you want to update. 
 
 <Warning>
+  
 Please only edit the English language files (called `en.md`), 
-our translation software will handle the other languages.
+our translation software will handle the other languages. 
+Read more about translations in our [translation guide](/guides/translation).
+  
 </Warning>
 - Click on the **Edit** button.
 ![edit button image](edit-button.png)

@@ -86,6 +86,8 @@ Unreleased:
   Fixed:
     albert:
       - Workaround for not finding a suitable legband radius
+    unice:
+      - Fixed bug which prevented parts from being generated as intended
     waralee:
       - Fixed crotch depth issue
       - Fixed pocket size issue
@@ -94,6 +96,12 @@ Unreleased:
   Changed:
     plugin-title:
       - Use localized date format
+    unice:
+      - Updated gusset to always curve inward
+      
+  Added:
+    unice:
+      - Added new Front Curve and Back Curve style options
 
   Added:
     waralee:

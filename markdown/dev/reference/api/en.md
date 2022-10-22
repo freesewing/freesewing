@@ -11,7 +11,7 @@ sewing patterns, but can be utilized for a variety of similar 2D design tasks.
 ##### Looking to get started?
 
 You are currently browsing the reference documentation. 
-Please refer to [the quick start guide](/guides/quick) to get started.
+Please refer to our [tutorials](/tutorials) to get started.
 
 </Tip>
 
@@ -59,20 +59,18 @@ The following named exports are **uitility methods**:
 
 | Named export | Description |
 | ------------ | ------------|
-| `beamIntersectsCircle`    | See the [beamIntersectsCircle](/reference/api/utils/beamintersectsCircle) documentation |
-| `beamIntersectsX`         | See the [beamIntersectsX](/reference/api/utils/beamintersectsX) documentation |
-| `beamIntersectsY`         | See the [beamIntersectsY](/reference/api/utils/) documentation |
+| `beamIntersectsCircle`    | See the [beamIntersectsCircle](/reference/api/utils/beamintersectscircle) documentation |
+| `beamIntersectsX`         | See the [beamIntersectsX](/reference/api/utils/beamintersectsx) documentation |
+| `beamIntersectsY`         | See the [beamIntersectsY](/reference/api/utils//beamintersectsy) documentation |
 | `beamsIntersect`          | See the [beamsIntersect](/reference/api/utils/beamsintersect) documentation |
 | `capitalize`              | See the [capitalize](/reference/api/utils/capitalize) documentation |
 | `circlesIntersect`        | See the [circlesIntersect](/reference/api/utils/circlesintersect) documentation |
-| `curveEdge`               | See the [curveEdge](/reference/api/utils/curveedge) documentation |
-| `curveIntersectsX`        | See the [curveIntersectsX](/reference/api/utils/curveintersectsX) documentation |
-| `curveIntersectsY`        | See the [curveIntersectsY](/reference/api/utils/curveintersectsY) documentation |
+| `curveIntersectsX`        | See the [curveIntersectsX](/reference/api/utils/curveintersectsx) documentation |
+| `curveIntersectsY`        | See the [curveIntersectsY](/reference/api/utils/curveintersectsy) documentation |
 | `curvesIntersect`         | See the [curvesIntersect](/reference/api/utils/curvesintersect) documentation |
 | `deg2rad`                 | See the [deg2rad](/reference/api/utils/deg2rad) documentation |
-| `generateStackTransform`  | see the [generateStackTransform](/reference/api/utils/generateStackTransform) documentation |
-| `lineIntersectsCircle`    | See the [lineIntersectsCircle](/reference/api/utils/lineintersectsCircle) documentation |
-| `lineIntersectsCurve`     | See the [lineIntersectsCurve](/reference/api/utils/lineintersectsCurve) documentation |
+| `lineIntersectsCircle`    | See the [lineIntersectsCircle](/reference/api/utils/lineintersectscircle) documentation |
+| `lineIntersectsCurve`     | See the [lineIntersectsCurve](/reference/api/utils/lineintersectscurve) documentation |
 | `linesIntersect`          | See the [linesIntersect](/reference/api/utils/linesintersect) documentation |
 | `pctBasedOn`              | See the [pctBasedOn](/reference/api/utils/pctbasedon) documentation |
 | `pointOnBeam`             | See the [pointOnBeam](/reference/api/utils/pointonbeam) documentation |

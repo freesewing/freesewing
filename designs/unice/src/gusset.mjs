@@ -8,7 +8,6 @@ export const gusset = {
     gussetShift: 0.015, // fraction of seat circumference - could be an advanced option?
     gussetWidth: { pct: 7.2, min: 2, max: 12, menu: 'fit' }, // Gusset width in relation to waist-to-upperleg
     gussetLength: { pct: 12.7, min: 10, max: 16, menu: 'fit' }, // Gusset length in relation to seat
-    fabricStretch: { pct: 15, min: 0, max: 100, menu: 'fit' }, // used in Ursula
     fabricStretchX: { pct: 15, min: 0, max: 100, menu: 'fit' }, // horizontal stretch (range set wide for beta testing)
     fabricStretchY: { pct: 0, min: 0, max: 100, menu: 'fit' }, // vertical stretch (range set wide for beta testing)
     rise: { pct: 60, min: 30, max: 100, menu: 'style' }, // extending rise beyond 100% would require adapting paths.sideLeft!
@@ -37,22 +36,42 @@ export const gusset = {
     var yScaleDoubleLayer
     yScaleDoubleLayer = (1 + store.get('yScale')) / 2 // double layer of fabric stretches half as much
 
+    let actualGussetLength
+    actualGussetLength = measurements.seat * options.gussetLength * yScaleDoubleLayer
+
     // Create points
     points.frontGussetLeft = new Point(store.get('frontGussetLeft').x, 0)
-    points.backGussetLeft = new Point(
-      store.get('backGussetLeft').x,
-      measurements.seat * options.gussetLength * yScaleDoubleLayer
-    )
+    points.backGussetLeft = new Point(store.get('backGussetLeft').x, actualGussetLength)
     points.frontGussetRight = new Point(store.get('frontGussetRight').x, 0)
-    points.backGussetRight = new Point(
-      store.get('backGussetRight').x,
-      measurements.seat * options.gussetLength * yScaleDoubleLayer
-    )
+    points.backGussetRight = new Point(store.get('backGussetRight').x, actualGussetLength)
+
+    let gussetWidthFront
+    gussetWidthFront = points.frontGussetRight.x - points.frontGussetLeft.x
+
+    let backExposureThreshold = 0.45 // where the gusset becomes triangular
 
     // Create control points
-    points.gussetCp1 = points.frontGussetLeft
-      .shiftFractionTowards(points.backGussetLeft, 0.5)
-      .shift(180, points.frontGussetRight.x / -15)
+    if (options.backExposure > backExposureThreshold) {
+      // gusset is roughly triangular
+      points.gussetCp1 = points.frontGussetLeft
+        .shiftFractionTowards(points.backGussetLeft, 0.3)
+        .shift(0, (0.1 * gussetWidthFront) / options.backExposure)
+    } else {
+      // ensure that gusset has a 'waist' at ~25% of the way from front to back
+      let horShift
+      horShift =
+        actualGussetLength / gussetWidthFront > 1.5
+          ? (0.1 * gussetWidthFront) / backExposureThreshold
+          : (0.1 * actualGussetLength) / (1.5 * backExposureThreshold)
+
+      points.gussetCp1 = points.frontGussetLeft
+        .shift(270, 0.3 * actualGussetLength) // shift to same height as for high back exposure
+        .shift(0, horShift)
+      points.gussetCp1 = points.gussetCp1.shiftFractionTowards(
+        points.frontGussetLeft,
+        Math.max(0, options.backExposure) - backExposureThreshold
+      )
+    }
 
     // Flip points to right side
     points.gussetCp2 = points.gussetCp1.flipX(store.get('frontGussetMid'))
@@ -104,7 +123,7 @@ export const gusset = {
       macro('vd', {
         from: points.frontGussetRight,
         to: points.backGussetRight,
-        x: points.frontGussetRight.x + sa + 15,
+        x: points.backGussetRight.x + sa + 15,
       })
     }
 

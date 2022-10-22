@@ -1,21 +1,25 @@
+const jsSuffixes = '{js,mjs,cjs,jsx}'
+
+const mongoFiles = [`ansible/playbooks/files/migrate_data.${jsSuffixes}`]
 const nodeFiles = [
-  '**/build.dflt.{js,mjs,cjs}',
-  '**/build.{js,mjs,cjs}',
-  '**/config/**',
-  '**/prebuild.{js,mjs,cjs}',
-  '**/prebuild/**',
-  '**/scripts/**',
-  'packages/new-design/lib/**',
-  'sites/backend/**',
-  'sites/*/mdx/**',
-  'sites/*/themes/**',
+  `**/build.dflt.${jsSuffixes}`,
+  `**/build.${jsSuffixes}`,
+  `**/config/**/*.${jsSuffixes}`,
+  `**/*.config.${jsSuffixes}`,
+  `**/prebuild.${jsSuffixes}`,
+  `**/prebuild/**/*.${jsSuffixes}`,
+  `**/scripts/**/*.${jsSuffixes}`,
+  `packages/new-design/lib/**/*.${jsSuffixes}`,
+  `sites/backend/**/*.${jsSuffixes}`,
+  `sites/*/mdx/**/*.${jsSuffixes}`,
+  `sites/*/themes/**/*.${jsSuffixes}`,
 ]
 const frontendFiles = [
-  '**/components/**',
-  '**/hooks/**',
-  '**/pages/**',
-  '**/page-templates/**',
-  'packages/i18n/**/*.md/*.js',
+  `**/components/**/*.${jsSuffixes}`,
+  `**/hooks/**/*.${jsSuffixes}`,
+  `**/pages/**/*.${jsSuffixes}`,
+  `**/page-templates/**/*.${jsSuffixes}`,
+  `packages/i18n/**/*.md/*.${jsSuffixes}`,
 ]
 
 module.exports = {
@@ -38,6 +42,13 @@ module.exports = {
   overrides: [
     // Partitioned JavaScript files
     {
+      files: mongoFiles,
+      plugins: ['mongo'],
+      env: {
+        'mongo/shell': true,
+      },
+    },
+    {
       files: nodeFiles,
       env: {
         node: true,
@@ -56,8 +67,8 @@ module.exports = {
       },
     },
     {
-      files: ['**'],
-      excludedFiles: [].concat(nodeFiles, frontendFiles),
+      files: [`**/*.${jsSuffixes}{,.mustache}`],
+      excludedFiles: [].concat(mongoFiles, nodeFiles, frontendFiles),
       env: {
         'shared-node-browser': true,
       },
@@ -73,7 +84,11 @@ module.exports = {
     },
     // Additional globals for JavaScript files that happen to contain Mocha tests
     {
-      files: ['**/tests/**', '**/*.test.mjs'],
+      files: [
+        `**/tests/**/*.${jsSuffixes}`,
+        `**/*.test.${jsSuffixes}`,
+        'scripts/test-failure-collector.js',
+      ],
       env: {
         mocha: true,
       },
@@ -81,7 +96,7 @@ module.exports = {
 
     // JSON files
     {
-      files: ['*.json', '*.json5', '*.jsonc'],
+      files: ['**/*.{json,json5,jsonc}{,.mustache}'],
       extends: ['plugin:jsonc/recommended-with-jsonc'],
       parser: 'jsonc-eslint-parser',
     },

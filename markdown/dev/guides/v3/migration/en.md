@@ -26,7 +26,7 @@ To make this explicit, we now use `.mjs` as file extention for our source code.
 All our published packages now have only named exports, and no longer any
 default exports.
 
-Please refer to [the reference documentation](/reference/api/core) to see what
+Please refer to [the reference documentation](/reference/api#named-exports) to see what
 named exports are available.
 
 ### NodeJS 16 or more recent

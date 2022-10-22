@@ -13,6 +13,7 @@ export const front = {
     rise: { pct: 60, min: 30, max: 100, menu: 'style' }, // extending rise beyond 100% would require adapting paths.sideLeft!
     legOpening: { pct: 45, min: 5, max: 85, menu: 'style' },
     frontDip: { pct: 5.0, min: -5, max: 15, menu: 'style' },
+    frontCurve: { pct: 0, min: 0, max: 25, menu: 'style' },
     taperToGusset: { pct: 70, min: 5, max: 100, menu: 'style' },
     // booleans
     useCrossSeam: { bool: true, menu: 'fit' },
@@ -33,6 +34,8 @@ export const front = {
     paperless,
     macro,
     part,
+    log,
+    units,
   }) => {
     // Stretch utility method
 
@@ -81,11 +84,7 @@ export const front = {
       )
     }
 
-    // // temporarily overrule yScale and yScaleReduced
-    // store.set('yScale',1)
-    // store.set('yScaleReduced',1)
-
-    // // Part definition starts here
+    // // Design pattern here
 
     // determine height of front part: use cross seam (and cross seam front) if selected and available
     // NOTE: neither crossSeam not frontHeight are adjusted for (vertical) stretch
@@ -115,6 +114,22 @@ export const front = {
         (store.get('crossSeam') - options.gussetLength * measurements.seat) /
           (1 + options.backToFrontLength)
       )
+    }
+
+    // front curve and/or front dip
+    // front curve and front dip accomplish the same goal in two different ways:
+    // goal: reduce front height at the center
+    // front dip: curve waist band (pattern part is smile-shaped)
+    // front curve: start by curving the waist band, then straigthten the part (top of pattern part is roughly horizontal)
+    // if combined: apply front curve first, then front dip
+
+    let frontDipOrCurve1, frontDipOrCurve2
+    if (options.frontCurve > 0) {
+      frontDipOrCurve1 = options.frontCurve
+      frontDipOrCurve2 = options.frontDip
+    } else {
+      frontDipOrCurve1 = options.frontDip
+      frontDipOrCurve2 = 0
     }
 
     // Create points
@@ -148,20 +163,23 @@ export const front = {
 
     /* Waist band is somewhere on the sideLeft path */
     points.frontWaistBandLeft = paths.sideLeft.shiftFractionAlong(options.rise)
-    points.frontWaistBandRight = points.frontWaistBandLeft.flipX(points.frontWaistMid)
+    points.frontWaistBandRight = points.frontWaistBandLeft.flipX(points.frontWaistMid) // will be recalculated later if options.frontCurve is used
     points.frontWaistBandMid = points.frontWaistBandLeft
       .shiftFractionTowards(points.frontWaistBandRight, 0.5)
-      .shift(270, measurements.waistToUpperLeg * options.frontDip) /* Waist band dip */
+      .shift(
+        270,
+        measurements.waistToUpperLeg * frontDipOrCurve1 * store.get('yScaleReduced')
+      ) /* Waist band dip (or curve)*/
 
     /* Leg opening is also on the sideLeft path, and cannot be higher than rise */
     /* Minimum side seam length is defined as 3.5% of the sideLeft path (which is at least waistToUpperLeg long) */
     store.set('adjustedLegOpening', Math.min(options.legOpening, options.rise - 0.035)) // TODO: account for rise having a different domain
 
     points.frontLegOpeningLeft = paths.sideLeft.shiftFractionAlong(store.get('adjustedLegOpening'))
-    points.frontLegOpeningRight = points.frontLegOpeningLeft.flipX(points.frontWaistMid) // Waist band low point
 
     // calculate the actual front height, using yScale above and yScaleReduced below leg opening
     store.set('frontHeightAbove', points.frontWaistLeft.dy(points.frontLegOpeningLeft))
+    // NOTE: if options.frontCurve > 0, this ought to be adjusted further later on
 
     var frontHeightBelow
     frontHeightBelow =
@@ -174,21 +192,23 @@ export const front = {
     // gusset width uses modified xScale (barely stretches) and depends on waistToUpperLeg - least sensitive to girth
     points.frontGussetLeft = new Point(
       measurements.seat / 4 -
-        measurements.waistToSeat * options.gussetWidth * store.get('xScaleReduced') * 2.2,
+        measurements.waistToUpperLeg * options.gussetWidth * store.get('xScaleReduced') * 1.9,
       frontHeightReduced
     )
     points.frontGussetMid = new Point(measurements.seat / 4, frontHeightReduced)
 
-    /* Flip points to right side */
-    points.frontGussetRight = points.frontGussetLeft.flipX(points.frontWaistMid)
-    points.frontHipRight = points.frontSeatLeft.flipX(points.frontWaistMid)
-    points.frontWaistRight = points.frontWaistLeft.flipX(points.frontWaistMid)
+    // Store points for use in other parts
 
-    /* Middle point for label */
-    points.frontMidMid = points.frontLegOpeningLeft.shiftFractionTowards(
-      points.frontLegOpeningRight,
-      0.5
-    )
+    /* Store side seam points for use in back */
+    // NOTE: do this *before* converting the dip to a curve
+
+    store.set('sideSeamWaist', points.frontWaistBandLeft)
+    store.set('sideSeamHip', points.frontLegOpeningLeft)
+
+    /* Store gusset points for use in gusset */
+
+    store.set('frontGussetLeft', points.frontGussetLeft)
+    store.set('frontGussetMid', points.frontGussetMid)
 
     // Create control points
 
@@ -210,16 +230,77 @@ export const front = {
       )
     )
 
-    /* Control point for waistband dip */
+    // straighten the part (if needed)
+    let curveAsAngle
+    if (options.frontCurve > 0) {
+      // create copies of the original points
+      points.frontWaistBandLeftPreCurve = points.frontWaistBandLeft.clone()
+      points.frontLegOpeningLeftPreCurve = points.frontLegOpeningLeft.clone()
+      points.frontLegOpeningLeftCp1PreCurve = points.frontLegOpeningLeftCp1.clone()
+
+      // convert the dip to a curve
+      curveAsAngle = points.frontWaistBandLeft.angle(points.frontWaistBandMid)
+      points.frontWaistBandLeft = points.frontWaistBandLeft.rotate(
+        -curveAsAngle,
+        points.frontWaistBandMid
+      )
+      points.frontLegOpeningLeft = points.frontLegOpeningLeft.rotate(
+        -curveAsAngle,
+        points.frontWaistBandMid
+      )
+      points.frontLegOpeningLeftCp1 = points.frontLegOpeningLeftCp1.rotate(
+        -curveAsAngle,
+        points.frontWaistBandMid
+      )
+
+      // (ignore these two TODOs for now)
+      // TODO: recalculate the front height and portions 'above' and 'below'
+      // TODO: adjust the height of the 'below' part
+    } else {
+      curveAsAngle = 0
+    }
+
+    console.log('store', store)
+
+    // recalculate frontWaistBandRight
+    points.frontWaistBandRight = points.frontWaistBandLeft.flipX(points.frontWaistMid)
+
+    // if front is both curved and dipped, apply the dip
+    // frontDipOrCurve2 is zero if this isn't needed, so apply regardless of value
+    points.frontWaistBandMid = points.frontWaistBandMid.shift(
+      270,
+      measurements.waistToUpperLeg * frontDipOrCurve2 * store.get('yScaleReduced')
+    )
+
+    // Control point for waistband dip
     points.frontWaistBandLeftCp1 = points.frontWaistBandMid.shift(
       0,
       points.frontWaistBandMid.dx(points.frontWaistBandLeft) / 3
     )
 
-    /* Flip control points to right side */
+    // report the expected 'drop' in waist band from side to center (when worn)
+    log.info([
+      'expectedDropFromWaistToCenterFront',
+      units(measurements.waistToUpperLeg * (options.frontCurve + options.frontDip)),
+    ])
+
+    // Flip points to right side
+    points.frontLegOpeningRight = points.frontLegOpeningLeft.flipX(points.frontWaistMid)
+    points.frontGussetRight = points.frontGussetLeft.flipX(points.frontWaistMid)
+    points.frontHipRight = points.frontSeatLeft.flipX(points.frontWaistMid)
+    points.frontWaistRight = points.frontWaistLeft.flipX(points.frontWaistMid)
     points.frontGussetRightCp1 = points.frontGussetLeftCp1.flipX(points.frontWaistMid)
     points.frontLegOpeningRightCp1 = points.frontLegOpeningLeftCp1.flipX(points.frontWaistMid)
     points.frontWaistBandRightCp1 = points.frontWaistBandLeftCp1.flipX(points.frontWaistMid)
+
+    // store frontGussetRight
+    store.set('frontGussetRight', points.frontGussetRight)
+
+    // Middle point for label
+    points.frontMidMid = points.frontLegOpeningLeft.shiftFractionTowards(
+      points.frontLegOpeningRight,
+      0.5
+    )
 
     // Draw paths
 
@@ -239,19 +320,6 @@ export const front = {
       .curve(points.frontWaistBandRight, points.frontWaistBandRightCp1, points.frontWaistBandMid) // Waist band dip
       .close()
       .attr('class', 'fabric')
-
-    // Store points for use in other parts
-
-    /* Store side seam points for use in back */
-
-    store.set('sideSeamWaist', points.frontWaistBandLeft)
-    store.set('sideSeamHip', points.frontLegOpeningLeft)
-
-    /* Store gusset points for use in gusset */
-
-    store.set('frontGussetLeft', points.frontGussetLeft)
-    store.set('frontGussetRight', points.frontGussetRight)
-    store.set('frontGussetMid', points.frontGussetMid)
 
     /* Store lengths for use in elastic */
 
@@ -292,13 +360,13 @@ export const front = {
     // Paperless?
     if (paperless) {
       macro('hd', {
-        from: points.frontWaistBandRight,
-        to: points.frontWaistBandLeft,
+        from: points.frontWaistBandLeft,
+        to: points.frontWaistBandRight,
         y: points.frontWaistBandRight.y + sa - 15,
       })
       macro('hd', {
-        from: points.frontLegOpeningRight,
-        to: points.frontLegOpeningLeft,
+        from: points.frontLegOpeningLeft,
+        to: points.frontLegOpeningRight,
         y: points.frontLegOpeningRight.y + sa - 15,
       })
       macro('hd', {
@@ -314,7 +382,7 @@ export const front = {
       macro('ld', {
         from: points.frontWaistBandLeft,
         to: points.frontLegOpeningLeft,
-        d: points.frontWaistBandLeft.y + sa - 15,
+        d: sa - 15,
       })
       macro('pd', {
         path: new Path()
