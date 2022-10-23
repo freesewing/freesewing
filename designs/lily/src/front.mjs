@@ -24,6 +24,7 @@ function draftLilyFront({
   
   //TODO: implement stretch setting to replace ease
   //TODO: rework length bonus (Titan assumes knee-to-ankle section is straight)
+  //TODO: use heel circumference as secondary measurement
   
   /*
    * Helper method to draw the inseam path
@@ -346,6 +347,9 @@ function draftLilyFront({
     points.styleWaistInLily = points.waistIn.clone()
     points.styleWaistOutLily = points.waistOut.clone()
   }
+  let test = points.styleWaistInLily.dist(points.styleWaistOutLily)
+  console.log('front waist length',test)
+  store.set('frontWaist', points.styleWaistInLily.dist(points.styleWaistOutLily))
 
   // Seamline
   paths.seam = drawPath().attr('class', 'fabric')

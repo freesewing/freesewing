@@ -21,7 +21,7 @@ function draftLilyBack({
   part,
 }) {
   
-  console.log('option test has value:',options.test)
+  //console.log('option test has value:',units(options.test))
   
   /*
    * Helper method to draw the inseam path
@@ -82,7 +82,7 @@ function draftLilyBack({
       points.waistIn,
       points.cbSeat,
       points.fork,
-      points.fork.shift(0, 666)
+      points.fork.shift(0, 1) // beams have infinite length anyway
     )
     points.crossSeamCurveCp1 = points.crossSeamCurveStart.shiftFractionTowards(
       points.crossSeamCurveMax,
@@ -198,7 +198,8 @@ function draftLilyBack({
 
   // Only now style the waist lower if requested
   // Note: redo this for lily even though it was already done for titan;
-  //  calculation for titan happened using its own seam lengths                                                                       
+  //  calculation for titan happened using its own seam lengths              
+  store.set('waistbandWidth', absoluteOptions.waistbandWidth) // used in lilyWaistband
   if (options.waistHeight < 1 || absoluteOptions.waistbandWidth > 0) {
     points.styleWaistOutLily = drawOutseam()
       .reverse()
@@ -217,6 +218,9 @@ function draftLilyBack({
   }
   // Adapt the vertical placement of the seat control point to the lowered waist
   points.seatOutCp2.y = points.seatOut.y - points.styleWaistOutLily.dy(points.seatOut) / 2
+  let test = points.styleWaistInLily.dist(points.styleWaistOutLily)
+  console.log('back waist length',test)
+  store.set('backWaist', points.styleWaistInLily.dist(points.styleWaistOutLily))
 
   // Paths
   paths.seam = drawPath().attr('class', 'fabric')
