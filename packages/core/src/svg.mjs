@@ -142,7 +142,7 @@ Svg.prototype.__insertText = function (text) {
   if (this.hooks.insertText.length > 0) {
     for (let hook of this.hooks.insertText)
       text = hook.method(
-        this.pattern.settings[this.activeStackIndex].locale || 'en',
+        this.pattern.settings[this.pattern.activeSet].locale || 'en',
         text,
         hook.data
       )

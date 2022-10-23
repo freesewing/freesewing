@@ -1,8 +1,8 @@
-import Worker from 'web-worker';
+import Worker from 'web-worker'
 import fileSaver from 'file-saver'
 import { themePlugin } from '@freesewing/plugin-theme'
 import { pagesPlugin } from '../layout/print/plugin'
-import {utils} from '@freesewing/core'
+import { capitalize } from 'shared/utils'
 
 export const exportTypes = {
   exportForPrinting: ['a4', 'a3', 'a2', 'a1', 'a0', 'letter', 'tabloid'],
@@ -14,7 +14,7 @@ export const defaultPdfSettings = {
   size: 'a4',
   orientation: 'portrait',
   margin: 10,
-  coverPage: true
+  coverPage: true,
 }
 
 /**
@@ -27,15 +27,15 @@ export const defaultPdfSettings = {
  * onComplete: business to perform after a successful export
  * onError: business to perform on error
  * */
-export const handleExport = async(format, gist, design, t, app, onComplete, onError) => {
+export const handleExport = async (format, gist, design, t, app, onComplete, onError) => {
   // start the loading indicator
-  app.startLoading();
+  app.startLoading()
 
   // get a worker going
-  const worker = new Worker(new URL('./export-worker.js', import.meta.url), {type: module});
+  const worker = new Worker(new URL('./export-worker.js', import.meta.url), { type: module })
 
   // listen for the worker's message back
-  worker.addEventListener('message', e => {
+  worker.addEventListener('message', (e) => {
     // on success
     if (e.data.success) {
       // save it out
@@ -60,27 +60,30 @@ export const handleExport = async(format, gist, design, t, app, onComplete, onEr
   // pdf settings
   const settings = {
     ...defaultPdfSettings,
-    ...(gist._state.layout?.forPrinting?.page || {})
+    ...(gist._state.layout?.forPrinting?.page || {}),
   }
 
   // arguments to pass to the worker
-  const workerArgs = {format, gist, settings}
+  const workerArgs = { format, gist, settings }
 
   // data passed to the worker must be JSON serializable, so we can't pass functions or prototypes
   // that means if it's not a data export there's more work to do before we can hand off to the worker
   if (exportTypes.exportAsData.indexOf(format) === -1) {
-    gist.embed=false
+    gist.embed = false
     // make a pattern instance for export rendering
     const layout = gist.layouts?.printingLayout || gist.layout || true
-    let pattern = new design({...gist, layout})
+    let pattern = new design({ ...gist, layout })
 
     // add the theme and translation to the pattern
-    pattern.use(themePlugin, {stripped: format !== 'svg'})
-    pattern.use({
-      hooks: {
-        insertText: (locale, text, {t}) => t(text)
-      }
-    },{t})
+    pattern.use(themePlugin, { stripped: format !== 'svg' })
+    pattern.use(
+      {
+        hooks: {
+          insertText: (locale, text, { t }) => t(text),
+        },
+      },
+      { t }
+    )
 
     // a specified size should override the gist one
     if (format !== 'pdf') {
@@ -90,23 +93,25 @@ export const handleExport = async(format, gist, design, t, app, onComplete, onEr
     try {
       // add pages to pdf exports
       if (format !== 'svg') {
-        pattern.use(pagesPlugin({
-          ...settings,
-          printStyle: true,
-          renderBlanks: false,
-          setPatternSize: true
-        }))
+        pattern.use(
+          pagesPlugin({
+            ...settings,
+            printStyle: true,
+            renderBlanks: false,
+            setPatternSize: true,
+          })
+        )
 
         // add the strings that are used on the cover page
         workerArgs.strings = {
-          design: utils.capitalize(gist.design),
+          design: capitalize(gist.design),
           tagline: t('common:sloganCome') + '. ' + t('common:sloganStay'),
-          url: window.location.href
+          url: window.location.href,
         }
       }
 
       // draft and render the pattern
-      pattern.draft();
+      pattern.draft()
       svg = pattern.render()
 
       // add the svg and pages data to the worker args
@@ -114,12 +119,11 @@ export const handleExport = async(format, gist, design, t, app, onComplete, onEr
       if (pattern.parts.pages) {
         workerArgs.pages = pattern.parts.pages.pages
       }
-    } catch(err) {
+    } catch (err) {
       console.log(err)
-      app.stopLoading();
+      app.stopLoading()
       onError && onError(err)
     }
-
   }
 
   // post a message to the worker with all needed data
