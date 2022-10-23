@@ -491,7 +491,7 @@ function getPluginName(plugin) {
     if (plugin[0].plugin.name) return plugin[0].plugin.name
   } else {
     if (plugin.name) return plugin.name
-    if (plugin.plugin.name) return plugin.plugin.name
+    if (plugin.plugin?.name) return plugin.plugin.name
   }
 
   return false
