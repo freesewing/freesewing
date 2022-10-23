@@ -22,6 +22,10 @@ function draftLilyBack({
 }) {
   
   //console.log('option test has value:',units(options.test))
+  // work-around: have user set ease values based on fabric stretch
+  let stretchAsEase = -options.fabricStretch/10
+  //log.info("set waist ease, seat ease and knee ease to " + stretchAsEase)
+  //log.info(`string text ${5} string text`)
   
   /*
    * Helper method to draw the inseam path
@@ -142,6 +146,16 @@ function draftLilyBack({
    */
   // shape at the ankle (unlike titan)
   let halfAnkle = (1 - options.fabricStretch/10) * (measurements.ankle / 4)
+/*   // shape at the ankle (unlike titan)
+  if (measurements.ankle * (1 + options.fabricStretch) > measurements.heel) {
+    //let halfAnkle = (1 + stretchAsEase) * (measurements.ankle / 4)
+    let halfAnkle = (1 + -options.fabricStretch/10) * (measurements.ankle / 4)
+  } else {
+    // ensure that stretched fabric will accommodate ankle
+    info.log('overriding ankle measurement to accommodate heel (lower leg is broader now)')
+    let halfAnkle = (measurements.heel / 4) / (1 + options.fabricStretch)
+  } */
+    
   points.floorOut = points.floor.shift(0, halfAnkle)
   points.floorIn = points.floorOut.flipX(points.floor)   
   
@@ -460,6 +474,7 @@ export const back = {
   //after: titanFront,
   measurements: [
     'ankle',
+    'heel', // secondary measurement, used instead of ankle
   ],
   options: {
     fitGuides: {bool: true, menu: undefined},
