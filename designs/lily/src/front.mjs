@@ -22,10 +22,7 @@ function draftLilyFront({
   log,
 }) {
   
-  //TODO: implement stretch setting to replace ease
-  //TODO: rework length bonus (Titan assumes knee-to-ankle section is straight)
-  //TODO: use heel circumference as secondary measurement
-  
+ 
   /*
    * Helper method to draw the inseam path
    */

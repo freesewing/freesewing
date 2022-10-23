@@ -21,10 +21,15 @@ function draftLilyBack({
   part,
 }) {
   
+  //TODO: implement stretch setting to replace ease
+  //TODO: rework length bonus (Titan assumes knee-to-ankle section is straight)
+  
+  
   //console.log('option test has value:',units(options.test))
   // work-around: have user set ease values based on fabric stretch
   let stretchAsEase = -options.fabricStretch/10
   //log.info("set waist ease, seat ease and knee ease to " + stretchAsEase)
+  //log.info("set waist ease, seat ease and knee ease to " + -0.04)
   //log.info(`string text ${5} string text`)
   
   /*
@@ -140,21 +145,17 @@ function draftLilyBack({
   points.kneeOut = points.knee.shift(0, halfKnee)
   points.kneeIn = points.kneeOut.flipX(points.knee) */
 
-  /*
-   * Not shaping the ankle as that's a style choice.
-   * As this is a block, just go straight down from the knee.
-   */
   // shape at the ankle (unlike titan)
-  let halfAnkle = (1 - options.fabricStretch/10) * (measurements.ankle / 4)
-/*   // shape at the ankle (unlike titan)
+  let halfAnkle
   if (measurements.ankle * (1 + options.fabricStretch) > measurements.heel) {
+    console.log('using ankle measurement')
     //let halfAnkle = (1 + stretchAsEase) * (measurements.ankle / 4)
-    let halfAnkle = (1 + -options.fabricStretch/10) * (measurements.ankle / 4)
+    halfAnkle = (1 - options.fabricStretch/10) * (measurements.ankle / 4)
   } else {
     // ensure that stretched fabric will accommodate ankle
-    info.log('overriding ankle measurement to accommodate heel (lower leg is broader now)')
-    let halfAnkle = (measurements.heel / 4) / (1 + options.fabricStretch)
-  } */
+    console.log('overriding ankle measurement to accommodate heel (lower leg is broader now)')
+    halfAnkle = (measurements.heel / 4) / (1 + options.fabricStretch)
+  }
     
   points.floorOut = points.floor.shift(0, halfAnkle)
   points.floorIn = points.floorOut.flipX(points.floor)   
