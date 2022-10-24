@@ -19,20 +19,22 @@ To make Jaeger, you will need the following:
 
 ###### Where to get all this stuff
 
-Making Jaeger is a fun and rewarning project, but getting all the required bits and pieces can be challenging.
+Making Jaeger is a fun and rewarning project, but getting all the required bits
+and pieces can be challenging.
 
-Das liegt daran, dass ein solches Projekt etwas ehrgeiziger ist als das typische Heim Nähprojekt.
-und als Ergebnis ist es unwahrscheinlich, dass deine lokale Haberdashery all diese Dinge lagern wird.
+That is because this kind of project is somewhat more ambitious than the
+typical home sewing project, and as a result, your local haberdashery is
+unlikely to stock all of these things.
 
-Wenn Sie wissen, wo sie zu bekommen, großartig. If not, you can get a **Jacket trim pack** from
-[Kenton Trimmings](http://kentontrimmings.co.uk/shop/) in London, they ship to international customers.
+Wenn Sie wissen, wo sie zu bekommen, großartig. If not, some (quality) suppliers
+sometimes sell a **Jacket trim pack** that includes everything you need.
 
-It's a shop for professionals (they're not even open on Saturdays) but they don't require you to be a business
-to place an order.
+Below is a list of suppliers we are aware of where you can get this.
+We have no affiliation with these suppliers.
 
-I have no affiliation with these guys, but it's the only place I know of that will sell you a kit of
-professional trimmings to make a jacket.
+- [B. Black & Sons](https://www.bblackandsons.com/) is based in the US
+- [Kenton Trimmings](http://kentontrimmings.co.uk/shop/) in based in the UK
 
-Wenn Sie einen anderen Ort kennen, der dieses Zeug trägt, lassen Sie es uns bitte wissen.
+If you know of other places that carries this stuff, please let us know.
 
 </Note>
