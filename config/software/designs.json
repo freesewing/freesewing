@@ -207,6 +207,13 @@
       "difficulty": 5,
       "tags": ["tops", "coats"]
     },
+    "lily": {
+      "description": "A FreeSewing pattern for leggings",
+      "code": "Anna Puk",
+      "design": "Anna Puk",
+      "difficulty": 1,
+      "tags": ["bottoms"]
+    },
     "lunetius": {
       "description": "A FreeSewing pattern for a lacerna, a historical Roman cloak",
       "code": "Rika Tamaike",
