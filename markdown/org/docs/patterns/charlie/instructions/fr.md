@@ -190,22 +190,22 @@ Lorsque vous avez terminé, ouvrez la couture au fer.
 
 Make sure one leg is turned with the good side out, and the other has the good side in.
 
-Now tuck the leg with the good side out inside the leg that has the good side in. This way, they have their good sides against each other.
+Maintenant passez la jambe avec l'endroit à l'intérieur de la jambe qui a l'endroit dedans. De cette façon, elles sont endroit contre endroit.
 
-Align the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. Stop at the lowest fly notch.
+Alignez la couture de fourche, à partir de la taille arrière, en fixant les deux moitiés ensemble pendant que vous vous dirigez vers la braguette. Arrêtez au cran de braguette la plus bas.
 
-When you're done. Do it again. Always sew the cross seam twice. It's one of those best practices you ignore at your own peril.
+Quand vous avez terminé. Faites-le à nouveau. Coudre toujours la couture de fourche deux fois. C'est l'une de ces bonnes pratiques que vous ignorerez à vos propres risques.
 
 <Tip>
 
-Faites très attention à aligner soigneusement les coutures où les deux jambes ont leur dos et les panneaux avant unis.
-Ce faisant, vous assurerez que vos résultats de couture croisée seront parfaitement alignés avec une _croix_ où 4 parties de motif se rencontreront en un seul point.
+Faites très attention à aligner soigneusement les coutures entre les panneaux arrières et les avants.
+Ce faisant, vous assurerez que vos résultats de couture de fourche sont parfaitement alignés avec une _croix_ où 4 parties du patron se rencontreront en un seul point.
 
-Une de ces choses que vous finirez par chérir chaque fois que vous les porterez.
+C'est une de ces choses que vous finirez par adorer chaque fois que vous les porterez.
 
 </Tip>
 
-## Étape 10: Construire la mouche
+## Étape 10: Construire la braguette
 
 ### Extension "Fermer la mouche"
 
