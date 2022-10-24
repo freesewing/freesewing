@@ -2,7 +2,7 @@
 title: "Charlie chinos: Instructions de couture"
 - - -
 
-## Étape 1 : Fermer la dart arrière
+## Étape 1 : Fermer les pinces du dos
 
 La première chose que nous allons faire est de fermer la pince sur le panneau arrière.
 
@@ -14,7 +14,7 @@ Maintenant coudre la pince, assurez-vous d'utiliser un point court, et de coudre
 
 <Note>
 
-Vos fléchettes du dos doivent avoir la même longueur. Assurez-vous de les coudre avec précision.
+Vos pinces de dos doivent avoir la même longueur. Assurez-vous de les coudre avec précision.
 
 </Note>
 
@@ -24,46 +24,46 @@ Suivez [nos instructions](/docs/sewing/double-welt-pockets/) pour créer les poc
 
 <Note>
 
-Comme il s'agit de chinos, vous pouvez/devriez edgestitch autour de l'ouverture.
+Comme il s'agit de chinos, vous pouvez/devriez surpiquer autour de l'ouverture.
 Ce n'est pas strictement nécessaire pour les poches passepoilées, et généralement pas fait sur un pantalon classique (et donc ne devrait pas dans les instructions) mais c'est une fin très typique pour les chinos, et facilite le maintien de tout en place.
 
 </Note>
 
-### Attacher la poche arrière face au sac de poche
+### Attacher la poche arrière face au fond de poche
 
 Joignez la poche arrière face au fond de poche en les plaçant _endroit contre endroit_ et en cousant le long des coutures les plus longues de la face non incurvée.
 
 Lorsque vous avez terminé, pressez sur le côté du fond de poche.
 
-### Attacher le sac de poche arrière
+### Attacher le fond de poche arrière
 
 Coudre le bas du fond de poche au rabat du bas. Pressez dessus lorsque vous avez terminé.
 
 Alignez maintenant le dessus du fond de poche avec la taille et cousez-le dans la marge de couture de la taille.
 
-### Fermer le dos de poche
+### Fermer l'arriere de poche
 
-Repliez le panneau de la jambe hors du champ pour pouvoir fermer les deux côtés du sac de poche.
+Repliez le panneau de la jambe hors du chemin de couture pour pouvoir fermer les deux côtés du fond de poche.
 
 <Note>
 
-Assurez-vous également de coudre la poche sur le sac de poche
+Assurez-vous également de coudre la poche sur le fond de poche
 
 </Note>
 
-Vous devriez surjeter les côtés du fond de poche pour qu'ils ne s'effilochent pas.
+Vous devriez surjeter les côtés du fond de poche pour qu'ils ne s'effilochentpas.
 
 <Tip>
 
-Si vous n'avez pas de _serger_, vous pouvez toujours utiliser un point zig-zag à la place.
+Si vous n'avez pas de surjeteuse vous pouvez toujours utiliser un point zig-zag à la place.
 
 </Tip>
 
-## Étape 3 : Surverrouillez les bords avant et arrière
+## Étape 3 : Surjetez les bords avant et arrière
 
 Avant d'aller plus loin, nous surjeter les bords des panneaux avant et arrière des jambes. Assurez-vous également de prendre le dessus du fond de poche lorsque vous faites les panneaux arrière.
 
-Ce que nous voulons empêcher ces bords de s'effilocher une fois que nous avons terminé notre pantalon, et maintenant c'est le meilleur moment pour le faire.
+Ce que nous voulons empêcher ces bords de s'effilocher une fois que nous avons terminé notre pantalon. Maintenant c'est le meilleur moment pour le faire.
 
 ![Overlocked leg panels](step03.svg)
 
