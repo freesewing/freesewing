@@ -19,18 +19,16 @@ function draftLilyBack({
   sa,
   absoluteOptions,
   part,
+  log,
 }) {
   
   //TODO: implement stretch setting to replace ease
-  //TODO: rework length bonus (Titan assumes knee-to-ankle section is straight)
-  
-  
-  //console.log('option test has value:',units(options.test))
   // work-around: have user set ease values based on fabric stretch
   let stretchAsEase = -options.fabricStretch/10
-  //log.info("set waist ease, seat ease and knee ease to " + stretchAsEase)
-  //log.info("set waist ease, seat ease and knee ease to " + -0.04)
-  //log.info(`string text ${5} string text`)
+  log.info(`under 'Fit', set waist ease, seat ease and knee ease to ${100*stretchAsEase}%`)
+  //TODO: remove lines below once overriding of options works properly
+  log.info("under 'Style', set crotch drop and length bonus to zero, and enable fit knee")
+  log.info("under 'Advanced', set leg balance and waist balance to 50%")
   
   /*
    * Helper method to draw the inseam path
@@ -153,9 +151,9 @@ function draftLilyBack({
     halfAnkle = (1 - options.fabricStretch/10) * (measurements.ankle / 4)
   } else {
     // ensure that stretched fabric will accommodate ankle
-    console.log('overriding ankle measurement to accommodate heel (lower leg is broader now)')
+    log.info('overriding ankle measurement to accommodate heel (lower leg is broader now)')
     halfAnkle = (measurements.heel / 4) / (1 + options.fabricStretch)
-  }
+  } // NOTE: for shortened leggings, this may not have been necessary...
     
   points.floorOut = points.floor.shift(0, halfAnkle)
   points.floorIn = points.floorOut.flipX(points.floor)   
@@ -237,9 +235,81 @@ function draftLilyBack({
   console.log('back waist length',test)
   store.set('backWaist', points.styleWaistInLily.dist(points.styleWaistOutLily))
 
+
   // Paths
   paths.seam = drawPath().attr('class', 'fabric')
-
+  
+  // adjust the length (at the bottom)
+  if (options.lengthReduction > 0) {
+    let requestedLength = (1 - options.lengthReduction)*measurements.waistToFloor
+    // leggings must reach to fork at least, so define a minimum
+    let waistToFork = points.waistX.dy(points.fork)
+    if (waistToFork > requestedLength) {
+      log.warning('length reduction capped; cutting off at fork')
+    // add one percent to waistToFork to ensure that path length is nonzero
+      requestedLength = waistToFork*1.01
+    }    
+    
+    points.bottom = points.waistX.shift(270,requestedLength)
+    let upperPoint, upperCp
+    if (requestedLength < measurements.waistToKnee) {    
+      // 'cut' between fork and knee
+      if (points.waistOut.x > points.seatOut.x) {
+        upperPoint = points.styleWaistOutLily
+        upperCp = points.seatOut
+      } else {
+        upperPoint = points.seatOut
+        upperCp = points.seatOutCp1
+      }
+       points.bottomOut = utils.lineIntersectsCurve(
+          points.bottom.shift(0,999),
+          points.bottom.shift(180,999),
+          points.kneeOut,
+          points.kneeOutCp2,
+          upperCp,
+          upperPoint)
+          
+        points.bottomIn = utils.lineIntersectsCurve(
+          points.bottom.shift(0,999),
+          points.bottom.shift(180,999),
+          points.kneeIn,
+          points.kneeInCp1,
+          points.forkCp2,
+          points.fork)     
+    } else {
+      // 'cut' between knee and 'floor'      
+      points.bottomOut = utils.lineIntersectsCurve(
+        points.bottom.shift(0,999),
+        points.bottom.shift(180,999),
+        points.kneeOut,
+        points.kneeOutCp1,
+        points.floorOutCp2,
+        points.floorOut)
+        
+      points.bottomIn = utils.lineIntersectsCurve(
+        points.bottom.shift(0,999),
+        points.bottom.shift(180,999),
+        points.kneeIn,
+        points.kneeInCp2,
+        points.floorInCp2,
+        points.floorIn)     
+    }
+    paths.bottom = new Path ()
+      .move(points.bottomIn)
+      .line(points.bottomOut)
+      
+    let halves = paths.seam.split(points.bottomIn)
+    let upperInseam = halves[0]
+    let halves2 = halves[1].split(points.bottomOut)
+    let upperOutseam = halves2[1]
+    
+    paths.seam = upperInseam.join(paths.bottom)
+      .join(upperOutseam)
+    
+    // store requestedLength for use in front part
+    store.set('requestedLength',requestedLength)    
+  }
+  
   if (complete) {
     points.grainlineTop.y = points.styleWaistOutLily.y
     macro('grainline', {
@@ -486,7 +556,10 @@ export const back = {
     waistEase: {pct: -4,  menu: undefined}, // -fabricStretch/10,
     seatEase: {pct: -4, menu: undefined}, // -fabricStretch/10,
     kneeEase: {pct: -4, menu: undefined}, // -fabricStretch/10,
-    test: {pct: ({ options }) => (options.fabricStretch/2)}
+    test: {pct: ({ options }) => (options.fabricStretch/2)},
+    lengthBonus: 0,
+    lengthReduction: { pct: 0, min: 0, max: 100, menu: 'style'},
+    //waistbandWidth: { ...titanBack,options.waistbandWidth, menu: 'style' },
     },
   hideDependencies: true,
   draft: draftLilyBack,

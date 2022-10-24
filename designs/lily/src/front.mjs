@@ -350,6 +350,74 @@ function draftLilyFront({
 
   // Seamline
   paths.seam = drawPath().attr('class', 'fabric')
+  
+  // adjust the length (at the bottom)
+  if (options.lengthReduction > 0) {
+    let requestedLength = store.get('requestedLength')
+    // leggings must reach to fork at least, so define a minimum
+    let waistToFork = points.waistX.dy(points.fork)
+    if (waistToFork > requestedLength) {
+      //log.warning('length reduction capped; cutting off at fork') // log only for back part
+    // add one percent to waistToFork to ensure that path length is nonzero
+      requestedLength = waistToFork*1.01
+    }    
+    
+    points.bottom = points.waistX.shift(270,requestedLength)
+    let upperPoint, upperCp
+    if (requestedLength < measurements.waistToKnee) {    
+      // 'cut' between fork and knee
+      if (points.waistOut.x < points.seatOut.x) {
+        upperPoint = points.styleWaistOutLily
+        upperCp = points.seatOut
+      } else {
+        upperPoint = points.seatOut
+        upperCp = points.seatOutCp2
+      }
+       points.bottomOut = utils.lineIntersectsCurve(
+          points.bottom.shift(0,999),
+          points.bottom.shift(180,999),
+          points.kneeOut,
+          points.kneeOutCp1,
+          upperCp,
+          upperPoint)
+          
+        points.bottomIn = utils.lineIntersectsCurve(
+          points.bottom.shift(0,999),
+          points.bottom.shift(180,999),
+          points.kneeIn,
+          points.kneeInCp2,
+          points.forkCp1,
+          points.fork)     
+    } else {
+      // 'cut' between knee and 'floor'      
+      points.bottomOut = utils.lineIntersectsCurve(
+        points.bottom.shift(0,999),
+        points.bottom.shift(180,999),
+        points.kneeOut,
+        points.kneeOutCp2,
+        points.floorOutCp2,
+        points.floorOut)
+        
+      points.bottomIn = utils.lineIntersectsCurve(
+        points.bottom.shift(0,999),
+        points.bottom.shift(180,999),
+        points.kneeIn,
+        points.kneeInCp1,
+        points.floorInCp2,
+        points.floorIn)     
+    }
+    paths.bottom = new Path ()
+      .move(points.bottomOut)
+      .line(points.bottomIn)
+      
+    let halves = paths.seam.split(points.bottomOut)
+    let upperOutseam = halves[0]
+    let halves2 = halves[1].split(points.bottomIn)
+    let upperInseam = halves2[1]
+      
+    paths.seam = upperOutseam.join(paths.bottom)
+      .join(upperInseam)    
+  }  
 
   if (complete) {
     points.grainlineTop.y = points.styleWaistInLily.y
