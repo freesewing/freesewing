@@ -53,7 +53,7 @@ Dies ist der einzige Teil, um dieses A-Shirt zu machen, das ein bisschen Praxis 
 
 ![Einfassung annähen](step03a.png)
 
-The first thing we need to do is decide where we are going to start/stop our binding. Ich schlage folgendes vor:
+The first thing we need to do is decide where we are going to start/stop our binding. Ich schlage Folgendes vor:
 
 - Für die Armlöcher: an der Seitennaht. Dies wird unsere Naht unter dem Arm verbergen
 - Für die Halsöffnung: die Mitte des Halsrückens. Möglicherweise möchten Sie dies mit einem Pin markieren
