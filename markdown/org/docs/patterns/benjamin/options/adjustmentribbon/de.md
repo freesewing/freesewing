@@ -4,7 +4,7 @@ title: "Adjustment ribbon"
 
 ![Traditional or adjustable](adjustmentribbon.svg)
 
-With Benjamin, you can make a traditional fixed size bow tie. And you can make one that incorporates an adjustment ribbon. These are ribbons and pieces of hardware that allow you to change the neck size of the bow tie. Very handy when you have shirts with different neck sizes, or if you have different ease in the collar for some.
+With Benjamin, you can make a traditional fixed size bow tie. Und du kannst eine erstellen, die ein Einstellband integriert hat. Das sind Bänder und Zubehörteile, die dafür da sind, um die Halsgröße/Kragenweite der Fliege zu verstellen. Sehr praktisch, wenn du Hemden mit verschiedenen Kragenweiten hast, oder manche mit unterschiedlichen Zugaben im Kragen.
 
 <Tip>
 
