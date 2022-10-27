@@ -34,7 +34,7 @@ Geld zu sammeln, indem ich etwas tue, das ich liebe, und es dann an die Wohltät
 
 Ich könnte freiwillig in einer Suppenküche arbeiten oder unterprivilegierten Kindern beibringen, wie man programmiert. Stattdessen arbeite ich an FreeSewing.
 
-Darum gehen alle Einnahmen und Spenden, die ich durch FreeSewing erziele, an eine wohltätige Organisation. So macht dieses Projekt nicht nur Spaß, sondern ist auch sozial verantwortlich. And I need that to convince myself that yes, it's OK to spend all my time doing this, because FreeSewing is a force for good.
+Darum gehen alle Einnahmen und Spenden, die ich durch FreeSewing erziele, an eine wohltätige Organisation. So macht dieses Projekt nicht nur Spaß, sondern ist auch sozial verantwortlich. Und das brauche ich, um mich davon zu überzeugen, dass es tatsächlich in Ordnung ist meine ganze Zeit darauf zu verwenden dies zu tun, weil Freesewing eine Kraft zum Guten ist.
 
 ##### Gemeinnützigkeit ist nicht sexy
 
@@ -42,7 +42,7 @@ Hier ist der heikle Teil: Menschen geben weniger, wenn sie wissen, dass das Geld
 
 Daher präsentieren wir [unsere Abonnementoptionen](/community/join) wie man sie auf einer gewinnorientierten Website sehen würde. Es scheint auf diese Weise intuitiver und funktioniert auch einfach besser.
 
-Yes, everything is free, and the money doesn't actually go to paying the server bills (because I choose to pay them out of my pocket for reasons outlined above). But that doesn't mean that these contributions are not crucial to the well-being of the project, or at the very least its maintainer (that would be me).
+Ja, alles ist kostenlos, und das Geld geht nicht wirklich zur Bezahlung der Serverrechnungen (weil ich sie aus den oben genannten Gründen aus eigener Tasche bezahle). Aber das bedeutet nicht, dass diese Beiträge nicht entscheidend für das Wohlergehen des Projekts sind, oder zumindest seines Maintainers (das wäre ich).
 
 ##### Warum MSF die Wohltätigkeitsorganisation meiner Wahl ist
 
