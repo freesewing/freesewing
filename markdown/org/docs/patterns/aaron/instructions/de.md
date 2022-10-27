@@ -16,8 +16,9 @@ Falte den Saum nach oben und nähe ihn fest. Wenn du eine Coverlock hast, verwen
 
 <Note>
 
-Nur einmal falten, um dicke Stellen zu vermeiden.
-Jersey franst nicht aus, deshalb kann man ihen einfach umklappen und festnähen, danach die Nahtzugabe zurückschneiden.
+##### Nur einmal falten, um dicke Stellen zu vermeiden
+
+Maschenware franst nicht aus, deshalb kann man es nur einfach umklappen und festnähen, danach die Nahtzugabe zurückschneiden.
 
 </Note>
 
@@ -66,7 +67,7 @@ Put your A-shirt down with the good side up, and place your binding strip on top
 
 Align the long edge of your strip with the edge of your fabric so the strip lies on top of the fabric (not in the opening). Place the corner on your starting point.
 
-Schieben Sie nun das Einfassband 1cm über dan Anfangspunkt zurück. Dieser Zentimeter macht das spätere Zusammennähen der beiden Enden möglich.
+Schiebe nun das Einfassband 1cm über den Anfangspunkt hinweg. Dieser Zentimeter macht das spätere Zusammennähen der beiden Enden möglich.
 
 ### Vergewissern Sie sich, dass Sie wissen, wo Sie nähen sollen
 
