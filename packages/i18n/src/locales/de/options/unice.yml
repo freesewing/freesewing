@@ -5,7 +5,7 @@ fabricStretchY:
   title: Fabric stretch (vertical)
   description: Passe dies für mehr oder weniger dehnbaren Stoff an
 adjustStretch:
-  title: Adjust stretch
+  title: Dehnbarkeit anpassen
   description: This option allows you to put in the maximum stretch that the fabric will allow in both horizontal and vertical directions; When disabled, the stretch values are used as-is
 useCrossSeam:
   title: Use crossseam
