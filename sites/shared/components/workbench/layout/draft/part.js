@@ -43,25 +43,24 @@
  *  I've sort of left it at this because I'm starting to wonder if we should perhaps re-think
  *  how custom layouts are supported in the core. And I would like to discuss this with the core team.
  */
-import {PartInner} from '../../draft/part'
-import { generatePartTransform } from '@freesewing/core'
+import Part from '../../draft/part'
+import { generateStackTransform } from '@freesewing/core'
 import { getProps, angle } from '../../draft/utils'
 import { drag } from 'd3-drag'
 import { select } from 'd3-selection'
-import { useRef, useState, useEffect} from 'react'
+import { useRef, useState, useEffect } from 'react'
 import Buttons from './buttons'
 
+const Stack = (props) => {
+  const { layout, stack, stackName, gist } = props
 
-const Part = props => {
-  const { layout, part, partName} = props
+  const stackLayout = layout.stacks?.[stackName]
 
-  const partLayout = layout.parts?.[partName]
-
-  // Don't just assume this makes sense
-  if (typeof partLayout?.move?.x === 'undefined') return null
+  // // Don't just assume this makes sense
+  if (typeof stackLayout?.move?.x === 'undefined') return null
 
   // Use a ref for direct DOM manipulation
-  const partRef = useRef(null)
+  const stackRef = useRef(null)
   const centerRef = useRef(null)
   const innerRef = useRef(null)
 
@@ -71,81 +70,81 @@ const Part = props => {
   // update the layout on mount
   useEffect(() => {
     // only update if there's a rendered part and it's not the pages or fabric part
-    if (partRef.current && !props.isLayoutPart) {
+    if (stackRef.current && !props.isLayoutPart) {
       updateLayout(false)
     }
-  }, [partRef, partLayout])
+  }, [stackRef, stackLayout])
 
   // Initialize drag handler
   useEffect(() => {
     // don't drag the pages
     if (props.isLayoutPart) return
-    handleDrag(select(partRef.current))
-  }, [rotate, partRef, partLayout])
+    handleDrag(select(stackRef.current))
+  }, [rotate, stackRef, stackLayout])
 
   // These are kept as vars because re-rendering on drag would kill performance
   // Managing the difference between re-render and direct DOM updates makes this
   // whole thing a bit tricky to wrap your head around
-  let translateX = partLayout.move.x
-  let translateY = partLayout.move.y
-  let partRotation = partLayout.rotate || 0;
-  let rotation = partRotation;
-  let flipX = !!partLayout.flipX
-  let flipY = !!partLayout.flipY
+  let translateX = stackLayout.move.x
+  let translateY = stackLayout.move.y
+  let stackRotation = stackLayout.rotate || 0
+  let rotation = stackRotation
+  let flipX = !!stackLayout.flipX
+  let flipY = !!stackLayout.flipY
 
   const center = {
-    x: part.topLeft.x + (part.bottomRight.x - part.topLeft.x)/2,
-    y: part.topLeft.y + (part.bottomRight.y - part.topLeft.y)/2,
+    x: stack.topLeft.x + (stack.bottomRight.x - stack.topLeft.x) / 2,
+    y: stack.topLeft.y + (stack.bottomRight.y - stack.topLeft.y) / 2,
   }
 
   /** get the delta rotation from the start of the drag event to now */
-  const getRotation = (event) => angle(center, event.subject) - angle(center, { x:event.x, y: event.y });
+  const getRotation = (event) =>
+    angle(center, event.subject) - angle(center, { x: event.x, y: event.y })
 
   const setTransforms = () => {
     // get the transform attributes
-    const transforms = generatePartTransform(translateX, translateY, rotation, flipX, flipY, part);
+    const transforms = generateStackTransform(translateX, translateY, rotation, flipX, flipY, stack)
 
-    const me = select(partRef.current);
+    const me = select(stackRef.current)
     for (var t in transforms) {
       me.attr(t, transforms[t])
     }
   }
 
-  let didDrag = false;
+  let didDrag = false
   const handleDrag = drag()
     // subject allows us to save data from the start of the event to use throughout event handing
-    .subject(function(event) {
-      return rotate ?
-      // if we're rotating, the subject is the mouse position
-      { x: event.x, y: event.y } :
-      // if we're moving, the subject is the part's x,y coordinates
-      {x: translateX, y: translateY}
+    .subject(function (event) {
+      return rotate
+        ? // if we're rotating, the subject is the mouse position
+          { x: event.x, y: event.y }
+        : // if we're moving, the subject is the part's x,y coordinates
+          { x: translateX, y: translateY }
     })
-    .on('drag', function(event) {
+    .on('drag', function (event) {
       if (!event.dx && !event.dy) return
 
       if (rotate) {
-        let newRotation = getRotation(event);
+        let newRotation = getRotation(event)
         // shift key to snap the rotation
         if (event.sourceEvent.shiftKey) {
-          newRotation = Math.ceil(newRotation/15) * 15
+          newRotation = Math.ceil(newRotation / 15) * 15
         }
         // reverse the rotation direction one time per flip. if we're flipped both directions, rotation will be positive again
         if (flipX) newRotation *= -1
         if (flipY) newRotation *= -1
 
-        rotation = partRotation + newRotation
-      }
-      else {
+        rotation = stackRotation + newRotation
+      } else {
         translateX = event.x
         translateY = event.y
       }
 
       // a drag happened, so we should update the layout when we're done
-      didDrag = true;
+      didDrag = true
       setTransforms()
     })
-    .on('end', function(event) {
+    .on('end', function (event) {
       // save to gist if anything actually changed
       if (didDrag) updateLayout()
 
@@ -163,49 +162,55 @@ const Part = props => {
   /** toggle between dragging and rotating */
   const toggleDragRotate = () => {
     // only respond if the part should be able to drag/rotate
-    if (!partRef.current || props.isLayoutPart) {return}
+    if (!stackRef.current || props.isLayoutPart) {
+      return
+    }
 
     setRotate(!rotate)
   }
 
   /** update the layout either locally or in the gist */
-  const updateLayout = (history=true) => {
+  const updateLayout = (history = true) => {
     /** don't mess with what we don't lay out */
-    if (!partRef.current || props.isLayoutPart) return
+    if (!stackRef.current || props.isLayoutPart) return
 
     // set the transforms on the part in order to calculate from the latest position
     setTransforms()
 
     // get the bounding box and the svg's current transform matrix
-    const partRect = innerRef.current.getBoundingClientRect();
-    const matrix = innerRef.current.ownerSVGElement.getScreenCTM().inverse();
+    const stackRect = innerRef.current.getBoundingClientRect()
+    const matrix = innerRef.current.ownerSVGElement.getScreenCTM().inverse()
 
     // a function to convert dom space to svg space
     const domToSvg = (point) => {
-      const {x, y} = DOMPointReadOnly.fromPoint(point).matrixTransform(matrix)
-      return {x, y}
+      const { x, y } = DOMPointReadOnly.fromPoint(point).matrixTransform(matrix)
+      return { x, y }
     }
 
     // include the new top left and bottom right to ease calculating the pattern width and height
-    const tl = domToSvg({x: partRect.left, y: partRect.top});
-    const br = domToSvg({x: partRect.right, y: props.isLayoutPart ? 0 : partRect.bottom});
+    const tl = domToSvg({ x: stackRect.left, y: stackRect.top })
+    const br = domToSvg({ x: stackRect.right, y: props.isLayoutPart ? 0 : stackRect.bottom })
 
     // update it on the draft component
-    props.updateLayout(partName, {
-      move: {
-        x: translateX,
-        y: translateY,
+    props.updateLayout(
+      stackName,
+      {
+        move: {
+          x: translateX,
+          y: translateY,
+        },
+        rotate: rotation % 360,
+        flipX,
+        flipY,
+        tl,
+        br,
       },
-      rotate: rotation % 360,
-      flipX,
-      flipY,
-      tl,
-      br
-    }, history)
+      history
+    )
   }
 
   /** Method to flip (mirror) the part along the X or Y axis */
-  const flip = axis => {
+  const flip = (axis) => {
     if (axis === 'x') flipX = !flipX
     else flipY = !flipY
     updateLayout()
@@ -222,39 +227,42 @@ const Part = props => {
   }
 
   // don't render if the part is empty
-  if (Object.keys(part.snippets).length === 0 && Object.keys(part.paths).length === 0) return null;
+  // if (Object.keys(part.snippets).length === 0 && Object.keys(part.paths).length === 0) return null;
 
   return (
-    <g
-      id={`part-${partName}`}
-      ref={partRef}
-      {...getProps(part)}
-    >
-      <PartInner {...props} ref={innerRef}/>
-      {!props.isLayoutPart && <>
-      <text x={center.x} y={center.y} ref={centerRef} />
-      <rect
-        ref={partRef}
-        x={part.topLeft.x}
-        y={part.topLeft.y}
-        width={part.width}
-        height={part.height}
-        className={`layout-rect ${rotate ? 'rotate' : 'move'}`}
-        id={`${partName}-layout-rect`}
-        onClick={toggleDragRotate}
-      />
-      <Buttons
-        transform={`translate(${center.x}, ${center.y}) rotate(${-rotation}) scale(${flipX ? -1 : 1},${flipY ? -1 : 1})`}
-        flip={flip}
-        rotate={rotate}
-        setRotate={setRotate}
-        resetPart={resetPart}
-        rotate90={rotate90}
-        partName={partName}
-       />
-      </>}
+    <g id={`stack-${stackName}`} {...getProps(stack)} ref={stackRef}>
+      <g id={`stack-inner-${stackName}`} ref={innerRef}>
+        {stack.parts.map((part) => (
+          <Part {...{ part, partName: part.name, gist }} key={part.name}></Part>
+        ))}
+      </g>
+      {!props.isLayoutPart && (
+        <>
+          <text x={center.x} y={center.y} ref={centerRef} />
+          <rect
+            x={stack.topLeft.x}
+            y={stack.topLeft.y}
+            width={stack.width}
+            height={stack.height}
+            className={`layout-rect ${rotate ? 'rotate' : 'move'}`}
+            id={`${stackName}-layout-rect`}
+            onClick={toggleDragRotate}
+          />
+          <Buttons
+            transform={`translate(${center.x}, ${center.y}) rotate(${-rotation}) scale(${
+              flipX ? -1 : 1
+            },${flipY ? -1 : 1})`}
+            flip={flip}
+            rotate={rotate}
+            setRotate={setRotate}
+            resetPart={resetPart}
+            rotate90={rotate90}
+            partName={stackName}
+          />
+        </>
+      )}
     </g>
   )
 }
 
-export default Part
+export default Stack
