@@ -15,8 +15,8 @@ Ich weiß nicht, ob du mit dem Satz **Noblesse oblige** vertraut bist, aber das 
 
 Ich bin privilegiert, und damit habe ich Verantwortung. Ich habe das große Glück, in Westeuropa geboren zu sein, einen guten Job und ein Dach über dem Kopf zu haben.
 
-Könnte ich das Geld gebrauchen? Yes I could.  
-Do I need the money? Nein, tue ich nicht.
+Könnte ich das Geld gebrauchen? Ja, könnte ich.  
+Brauche ich das Geld? Nein, tue ich nicht.
 
 ##### Der Wert deiner Unterstützung
 
@@ -28,7 +28,7 @@ Wenn du ein/e FreeSewing-Unterstützer/in wirst, gibst du mehr als nur Geld. Fü
 
 ##### Der Wert deines Geldes
 
-It is not _just_ about the money. Aber das bedeutet nicht, dass das Geld nicht wichtig ist. Ganz im Gegenteil.
+Es geht nicht _nur_ ums Geld. Aber das bedeutet nicht, dass das Geld nicht wichtig ist. Ganz im Gegenteil.
 
 Geld zu sammeln, indem ich etwas tue, das ich liebe, und es dann an die Wohltätigkeitsorganisation weiterzugeben, erlaubt es mir, nachts zu schlafen.
 
@@ -50,12 +50,12 @@ Es gibt eine Menge Elend in der Welt. Wenn ich mir Nachrichten anschaue, fühöe
 
 Aber dennoch gibt es überall dort, wo Krisen zuschlagen, ein vertrautes Banner, das Hoffnung und Hilfe bietet. Es ist weder die Flagge der Vereinten Nationen, noch das sternengeschmückte Banner, noch das Blau und Gold der Europäischen Union.
 
-The one thing that always reminds me that humanity has not completely forsaken these people is to see the banner of Médecins Sans Frontières/Doctors Without Borders fly. Manchmal prekär, unter den Trümmern ihrer bombardierten Krankenhäuser, aber immer da.
+Das einzige, was mich immer daran erinnert, dass die Menschheit diese Personen nicht vollständig aufgegeben hat, ist das Banner von Médecins Sans Frontières/Ärzte ohne Grenzen fliegen zu sehen. Manchmal prekär, unter den Trümmern ihrer bombardierten Krankenhäuser, aber immer da.
 
 Ich kann mir kein einziges Symbol vorstellen, das uns daran erinnert, dass nicht alles verloren ist und es immer noch gute Leute da draußen gibt.
 
 Es ist auch eine der wenigen Organisationen, die die globale Reichweite haben um dorthin zu gelangen, wo es am meisten gebraucht wird. Wir sind daran gewöhnt, sie in armutsgebeutelten Regionen arbeiten zu sehen, aber als die COVID-19-Pandemie unsere Gesundheitssysteme außeinandergerissen hat, ist _MSF_ auf den Plan getreten und hat Teams in Westeuropa, in den USA und überall dort eingesetzt, wo der Bedarf am nötigsten war.
 
-I hope that this explains the choice of Médecins Sans Frontières/Doctors Without Borders as FreeSewing's charity of choice. Und ich hoffe, du wirst dich uns darin anschließen, die Welt etwas besser zu machen.
+Ich hoffe, dass dies die Wahl von Médecins Sans Frontières/Ärzte ohne Grenzen als Wohltätigkeitsorganisation der Wahl von FreeSewing erklärt. Und ich hoffe, du wirst dich uns darin anschließen, die Welt etwas besser zu machen.
 
 Also freue ich mich, [diese Zusage](/docs/various/pledge/) zu machen.
