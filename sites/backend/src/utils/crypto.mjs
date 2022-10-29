@@ -33,13 +33,13 @@ export const encryption = (stringKey, salt = 'FreeSewing') => {
       /*
        * This will encrypt almost anything, but undefined we cannot encrypt.
        * We could side-step this by assigning a default to data, but that would
-       * lead to confusing bugs when people thing they pass in data and instead
+       * lead to confusing bugs when people think they pass in data and instead
        * get an encrypted default. So instead, let's bail out loudly
        */
       if (typeof data === 'undefined') throw 'Undefined cannot be uncrypted'
 
       /*
-       * With undefined out of the way, there's still thing we cannot encrypt.
+       * With undefined out of the way, there's still some things we cannot encrypt.
        * Essentially, anything that can't be serialized to JSON, such as functions.
        * So let's catch the JSON.stringify() call and once again bail out if things
        * go off the rails here.
@@ -51,17 +51,19 @@ export const encryption = (stringKey, salt = 'FreeSewing') => {
       }
 
       /*
-       * Even with the same salt, this initialization vector avoid that two
-       * identical input strings would generate the same cyphertext
+       * Even with the same salt, this initialization vector avoids that
+       * two identical input strings would generate the same ciphertext
        */
       const iv = randomBytes(16)
 
       /*
-       * The thing that does the thing
+       * The thing that does the encrypting
        */
       const cipher = createCipheriv(algorithm, key, iv)
 
-      // Always return a string so we can store this in SQLite no problemo
+      /*
+       * Always return a string so we can store this in SQLite no problemo
+       */
       return JSON.stringify({
         iv: iv.toString('hex'),
         encrypted: Buffer.concat([cipher.update(data), cipher.final()]).toString('hex'),
@@ -69,7 +71,7 @@ export const encryption = (stringKey, salt = 'FreeSewing') => {
     },
     decrypt: (data) => {
       /*
-       * Don't blindly assume this data is properly formatted cyphertext
+       * Don't blindly assume this data is properly formatted ciphertext
        */
       try {
         data = JSON.parse(data)
@@ -81,11 +83,14 @@ export const encryption = (stringKey, salt = 'FreeSewing') => {
       }
 
       /*
-       * The thing that does the thing
+       * The thing that does the decrypting
        */
       const decipher = createDecipheriv(algorithm, key, Buffer.from(data.iv, 'hex'))
 
-      // Parse this string as JSON so we return what was passed to encrypt()
+      /*
+       * Parse this string as JSON
+       * so we return the same type as what was passed to encrypt()
+       */
       return JSON.parse(
         Buffer.concat([
           decipher.update(Buffer.from(data.encrypted, 'hex')),
