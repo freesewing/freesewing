@@ -7,7 +7,8 @@
     "test": "npx mocha tests/*.test.mjs",
     "initdb": "npx prisma db push",
     "newdb": "node ./scripts/newdb.mjs",
-    "rmdb": "node ./scripts/rmdb.mjs"
+    "rmdb": "node ./scripts/rmdb.mjs",
+    "prettier": "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
   },
   "dependencies": {
     "@prisma/client": "4.5.0",

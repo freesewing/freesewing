@@ -30,8 +30,7 @@ const config = {
     expiresIn: process.env.API_JWT_EXPIRY || '36 days',
   },
   languages: ['en', 'de', 'es', 'fr', 'nl'],
-  ses: {
-  },
+  ses: {},
   oauth: {
     github: {
       clientId: process.env.API_GITHUB_CLIENT_ID,
@@ -165,16 +164,27 @@ export function verifyConfig() {
   }
 
   if (process.env.API_DUMP_CONFIG_AT_STARTUP) {
-    console.log("Dumping configuration:", JSON.stringify({
-      ...config,
-      encryption: {
-        ...config.encryption,
-        key: config.encryption.key.slice(0, 4) + '[ REDACTED ]' + config.encryption.key.slice(-4),
-      },
-      jwt: {
-        secretOrKey: config.jwt.secretOrKey.slice(0, 4) + '[ REDACTED ]' + config.jwt.secretOrKey.slice(-4),
-      }
-    }, null, 2))
+    console.log(
+      'Dumping configuration:',
+      JSON.stringify(
+        {
+          ...config,
+          encryption: {
+            ...config.encryption,
+            key:
+              config.encryption.key.slice(0, 4) + '[ REDACTED ]' + config.encryption.key.slice(-4),
+          },
+          jwt: {
+            secretOrKey:
+              config.jwt.secretOrKey.slice(0, 4) +
+              '[ REDACTED ]' +
+              config.jwt.secretOrKey.slice(-4),
+          },
+        },
+        null,
+        2
+      )
+    )
   }
 
   return config
