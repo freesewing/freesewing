@@ -22,7 +22,4 @@ function loadPassportMiddleware(passport, config) {
   )
 }
 
-export {
-  loadExpressMiddleware,
-  loadPassportMiddleware,
-}
+export { loadExpressMiddleware, loadPassportMiddleware }

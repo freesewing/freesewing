@@ -29,7 +29,7 @@ const params = {
   app,
   passport,
   ...encryption(config.encryption.key),
-  config
+  config,
 }
 // Load routes
 for (const type in routes) routes[type](params)

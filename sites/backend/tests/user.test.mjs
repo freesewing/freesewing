@@ -7,7 +7,6 @@ const expect = chai.expect
 chai.use(http)
 
 describe('Non language-specific User controller signup routes', () => {
-
   it('Should return 400 on signup without body', (done) => {
     chai
       .request(config.api)
@@ -23,14 +22,20 @@ describe('Non language-specific User controller signup routes', () => {
   let data = {
     email: 'test@freesewing.org',
     language: 'en',
-    password: 'one two one two, this is just a test'
+    password: 'one two one two, this is just a test',
   }
-  Object.keys(data).map(key => {
+  Object.keys(data).map((key) => {
     it(`Should not create signup without ${key}`, (done) => {
       chai
         .request(config.api)
         .post('/signup')
-        .send(Object.fromEntries(Object.keys(data).filter(name => name !== key).map(name => [name, data[name]])))
+        .send(
+          Object.fromEntries(
+            Object.keys(data)
+              .filter((name) => name !== key)
+              .map((name) => [name, data[name]])
+          )
+        )
         .end((err, res) => {
           expect(err === null).to.equal(true)
           expect(res.status).to.equal(400)
@@ -50,7 +55,7 @@ describe('Non language-specific User controller signup routes', () => {
         done()
       })
   })
-/*
+  /*
 
   it('should not create signup without language', (done) => {
     chai
