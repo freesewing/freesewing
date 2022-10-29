@@ -4,7 +4,7 @@ title: "Bow length"
 
 ![Bow length](bowlength.svg)
 
-You can make wide bow ties, or narrow ones. This option allows you to change the horizontal size of the bows. Make them larger to be more flamboyant, or small for a more subdued style.
+You can make wide bow ties, or narrow ones. This option allows you to change the horizontal size of the bows. Mach sie größer, um flamboyanter zu sein, oder kleiner für einen etwas gedämpfteren Stil.
 
 ## Effekt dieser Option auf das Schnittmuster
 

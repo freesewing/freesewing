@@ -1,5 +1,5 @@
 dartPosition:
-  description: Controls whether to split at the shoulder or armhole
+  description: Steuert, ob an der Schulter oder am Armloch geteilt werden soll
   title: Position Abnäher
 chestEase:
   description: Controls the amount of ease at the chest
@@ -9,16 +9,16 @@ waistEase:
   title: Taillenzugabe
 bustSpanEase:
   description: Controls the amount of ease along the bust span
-  title: Bust span ease
+  title: Zugabe im Abstand der Brustpunkte
 backDartHeight:
-  description: Back dart height
-  title: Controls the height of the back dart
+  description: Höhe Rückenabnäher
+  title: Steuert die Höhe des Rückenabnähers
 waistDartLength:
-  description: Controls the length of the waist dart
-  title: Waist dart length
+  description: Steuert die Länge des Taillenabnähers
+  title: Länge des Taillenabnähers
 shoulderDartPosition:
-  description: Controls the position of the shoulder dart
-  title: Shoulder dart position
+  description: Steuert die Position der Schulternaht
+  title: Position der Schulterabnäher
 upperDartLength:
   description: Controls the length of the upper dart
   title: Upper dart length
@@ -26,8 +26,8 @@ armholeDartPosition:
   description: Controls the position of the armhole dart
   title: Armhole dart position
 armholeDepth:
-  description: Controls the depth of the armhole
-  title: Armhole depth
+  description: Steuert die Tiefe des Armloches
+  title: Armlochtiefe
 backArmholeSlant:
   description: Controls the slant of the armhole at the back
   title: Back armhole slant

@@ -35,7 +35,7 @@ If you wish to make an embroidered eye we recommended to make it an embroidery p
 
 - Using topstiching thread (thick thread), go back and forth several times along the gill lines of the body pieces.
 - _Edgestitch_ the eyes to the bodys, matching the thread colour of the outer bar tacks.
-- Sew the darts on the front of the body closed. Trim away any excess fabric.
+- Sew the darts on the front of the bodys closed. Trim away any excess fabric.
 - With _good sides together_ sew the tail pieces to the bodys, matching notches.
 - With _good sides together_ sew the topFin pieces to the bodys.
 - With _good sides together_ sew the bodys together along the front, top, around the tail and below the tail, leaving a gap open below the tail for turning and stuffing the shark later.
@@ -43,7 +43,7 @@ If you wish to make an embroidered eye we recommended to make it an embroidery p
 ## Step 3: The Belly
 
 - With _good sides together_ sew the two aboveMouth pieces together along the larger straight edge.
-- Sew the teeth to the mouth, matching notches. These will now be treated as one.
+- Sew the teeth pieces to the mouth, matching notches and making sure the teeth face towards the centre of the mouth. These will now be treated as one.
 - Sew the darts on the belly, trim away any excess fabric.
 - With _good sides together_ sew the aboveMouth pieces to the mouth, matching notches, being careful not to catch the teeth in the seam allowances.
 - With _good sides together_ sew the joined mouth and aboveMouth to the belly piece, matching notches.
@@ -56,7 +56,7 @@ If you wish to make an embroidered eye we recommended to make it an embroidery p
 
 ## Step 5: Stuffing
 
-- Fill the plush toy with stuffing through the opening you left in the tail. Make sure to fill the tail and fins well before adding too much stuffing in the body itself.
+- Fill the plush toy with stuffing through the opening you left below the tail, making sure to fill the tail and fins well before adding too much stuffing in the body itself.
 - _Slipsticth_ or _whipstitch_ the opening closed.
 
 ## Step 6: Enjoy!

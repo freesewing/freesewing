@@ -1,7 +1,7 @@
 ---
-title: "Octoplushy, the plushy octopus: Required Measurements"
+title: "Octoplushy, der plüschige Oktopus: Erforderliche Maße"
 ---
 
 <Note>
-Octoplushy does not require any measurements
+Octoplushy benötigt keine Maße
 </Note>

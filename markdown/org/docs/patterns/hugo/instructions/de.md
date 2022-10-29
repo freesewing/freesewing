@@ -87,7 +87,7 @@ Diese 6-Episoden-Serie zeigt dir, wie du deine Hoodie zum Ende bringen kannst:
 - Näht am äußeren Rand der Kapuze mit einer Kante von 1cm.  Schneiden Sie nicht die Nahtzugabe.
 - Drehen Sie die Kapuzenteile nach rechts und drücken Sie dann die Außenkante flach.
 - Topstitch am Rand der Kapuze, ca. 1,5-2 cm von der Kante.  Vergewissern Sie sich, dass Sie über die Nahtzuweisung hinausgehen und dass sie nicht in dieser Linie der Heftung gefangen wird. Dies erzeugt einen dekorativen Felgen.  Die beigefügte Nahtmenge trägt dazu bei, die Felge ein bisschen poofy zu machen.
-- Um die Kapuze zu schließen, werden die unteren Schichten entlang der Halslinie zusammengeführt.  Wenn Sie keinen Serger haben, verwenden Sie eine Zick-Zack-Nähte.
+- Um die Kapuze zu schließen, werden die unteren Schichten entlang der Halslinie zusammengeführt.  Wenn du keine/n Overlock/Serger hast, verwende eine Zick-Zack-Naht.
 - (Optional) Wenn Sie Löcher für eine Zeichenkette hinzugefügt haben, können Sie die Zeichenkette jetzt einbinden.
 
 ### Step 8: Preparing a Neckband and Attaching the Hood
