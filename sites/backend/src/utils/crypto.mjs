@@ -9,7 +9,9 @@ export const clean = (email) => {
   return email.toLowerCase().trim()
 }
 
-// Hashes an email address
+/*
+ * Hashes an email address (or other string)
+ */
 export const ehash = (email) => createHash('sha256').update(clean(email)).digest('hex')
 
 /*
