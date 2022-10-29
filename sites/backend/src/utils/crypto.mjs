@@ -1,12 +1,10 @@
 import { createHash, createCipheriv, createDecipheriv, scryptSync, randomBytes } from 'crypto'
-import dotenv from 'dotenv'
-dotenv.config()
 
 /*
  * Cleans a string (typically email) for hashing
  */
 export const clean = (email) => {
-  if (typeof email !== 'string') throw("clean() only takes a string as input")
+  if (typeof email !== 'string') throw 'clean() only takes a string as input'
 
   return email.toLowerCase().trim()
 }
@@ -21,8 +19,7 @@ export const ehash = (email) => createHash('sha256').update(clean(email)).digest
  * which makes things easier to read/understand for contributors, as well
  * as allowing scrutiny of the implementation in a single file.
  */
-export const encryption = (stringKey, salt='FreeSewing') => {
-
+export const encryption = (stringKey, salt = 'FreeSewing') => {
   // Shout-out to the OG crypto bros Joan and Vincent
   const algorithm = 'aes-256-cbc'
 
@@ -31,14 +28,13 @@ export const encryption = (stringKey, salt='FreeSewing') => {
 
   return {
     encrypt: (data) => {
-
       /*
        * This will encrypt almost anything, but undefined we cannot encrypt.
        * We could side-step this by assigning a default to data, but that would
        * lead to confusing bugs when people thing they pass in data and instead
        * get an encrypted default. So instead, let's bail out loudly
        */
-      if (typeof data === 'undefined') throw("Undefined cannot be uncrypted")
+      if (typeof data === 'undefined') throw 'Undefined cannot be uncrypted'
 
       /*
        * With undefined out of the way, there's still thing we cannot encrypt.
@@ -48,9 +44,8 @@ export const encryption = (stringKey, salt='FreeSewing') => {
        */
       try {
         data = JSON.stringify(data)
-      }
-      catch (err) {
-        throw('Could not parse input to encrypt() call', err)
+      } catch (err) {
+        throw ('Could not parse input to encrypt() call', err)
       }
 
       /*
@@ -76,12 +71,11 @@ export const encryption = (stringKey, salt='FreeSewing') => {
        */
       try {
         data = JSON.parse(data)
-      }
-      catch (err) {
-        throw('Could not parse encrypted data in decrypt() call', err)
+      } catch (err) {
+        throw ('Could not parse encrypted data in decrypt() call', err)
       }
       if (!data.iv || typeof data.encrypted === 'undefined') {
-        throw('Encrypted data passed to decrypt() was malformed')
+        throw 'Encrypted data passed to decrypt() was malformed'
       }
 
       /*
@@ -93,9 +87,9 @@ export const encryption = (stringKey, salt='FreeSewing') => {
       return JSON.parse(
         Buffer.concat([
           decipher.update(Buffer.from(data.encrypted, 'hex')),
-          decipher.final()
+          decipher.final(),
         ]).toString('utf-8')
       )
-    }
+    },
   }
 }
