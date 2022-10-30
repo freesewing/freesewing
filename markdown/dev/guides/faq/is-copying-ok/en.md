@@ -1,5 +1,5 @@
 ---
-title: What goes in pattern design
+title: Can I copy an existing design?
 ---
 
 This questions comes up in various forms, but it boils down to: How much am I
