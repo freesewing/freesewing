@@ -24,6 +24,7 @@ describe('Non language-specific User controller signup routes', () => {
     language: 'en',
     password: 'one two one two, this is just a test',
   }
+
   Object.keys(data).map((key) => {
     it(`Should not create signup without ${key}`, (done) => {
       chai

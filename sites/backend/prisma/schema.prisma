@@ -15,7 +15,7 @@ model Confirmation {
   updatedAt DateTime @updatedAt
 }
 
-model NewsletterSubscriber {
+model Subscriber {
   id        String   @id @default(uuid())
   createdAt DateTime @default(now())
   data      String
@@ -26,23 +26,22 @@ model NewsletterSubscriber {
 
 model User {
   id         Int       @id @default(autoincrement())
-  bio        String    @default("")
   consent    Int       @default(0)
+  createdAt  DateTime  @default(now())
   data       String    @default("{}")
   ehash      String    @unique
   email      String
   ihash      String
   initial    String
-  lastlogin  DateTime
+  lastlogin  DateTime?
   newsletter Boolean   @default(false)
   password   String
   patron     Int       @default(0)
   people     Person[]
   patterns   Pattern[]
-  picture    String
   role       String    @default("user")
   status     Int       @default(0)
-  units      Boolean   @default(false)
+  updatedAt  DateTime? @updatedAt
   username   String    @unique
 
   @@index([ihash])
@@ -52,9 +51,6 @@ model Pattern {
   id        Int      @id @default(autoincrement())
   createdAt DateTime @default(now())
   data      String?
-  design    String?
-  name      String
-  notes     String?
   person    Person?  @relation(fields: [personId], references: [id])
   personId  Int?
   user      User     @relation(fields: [userId], references: [id])
@@ -68,12 +64,8 @@ model Person {
   id        Int       @id @default(autoincrement())
   createdAt DateTime  @default(now())
   data      String?
-  notes     String?
   user      User      @relation(fields: [userId], references: [id])
   userId    Int
-  name      String
-  picture   String
-  units     Boolean   @default(false)
   measies   String    @default("{}")
   Pattern   Pattern[]
 

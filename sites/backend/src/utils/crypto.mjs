@@ -3,16 +3,16 @@ import { createHash, createCipheriv, createDecipheriv, scryptSync, randomBytes }
 /*
  * Cleans a string (typically email) for hashing
  */
-export const clean = (email) => {
-  if (typeof email !== 'string') throw 'clean() only takes a string as input'
+export const clean = (string) => {
+  if (typeof string !== 'string') throw 'clean() only takes a string as input'
 
-  return email.toLowerCase().trim()
+  return string.toLowerCase().trim()
 }
 
 /*
  * Hashes an email address (or other string)
  */
-export const ehash = (email) => createHash('sha256').update(clean(email)).digest('hex')
+export const hash = (string) => createHash('sha256').update(string).digest('hex')
 
 /*
  * Returns an object holding encrypt() and decrypt() methods

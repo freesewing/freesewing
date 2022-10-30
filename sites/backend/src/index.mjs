@@ -28,6 +28,7 @@ loadPassportMiddleware(passport, config)
 const params = {
   app,
   passport,
+  prisma,
   ...encryption(config.encryption.key),
   config,
 }

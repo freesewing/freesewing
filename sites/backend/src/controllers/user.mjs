@@ -16,53 +16,27 @@ UserController.prototype.signup = async (req, res, tools) => {
   if (!req.body.language) return res.status(400).send('languageMissing')
 
   // Requests looks ok - does the user exist?
-  const ehash = ehash(req.body.email)
+  const hash = ehash(req.body.email)
 
   // Destructure what we need from tools
   const { prisma, config, encrypt } = tools
-  if ((await prisma.user.findUnique({ where: { ehash } }))) return res.status(400).send('emailExists')
+  if ((await prisma.user.findUnique({ where: { ehash: hash } }))) return res.status(400).send('emailExists')
 
   // It does not. Creating user entry
-  /*
-  const user = await.prisma.user.create({
-    ehash,
-    email
 
-  const handle = uniqueHandle()
-        let handle = uniqueHandle()
-        let username = 'temporary-username-' + time() + req.body.email,
-        let user = new User({
-          email: req.body.email,
-          initial: req.body.email,
-          ehash: ehash(req.body.email),
-          handle,
-          username,
-          password: req.body.password,
-          settings: { language: req.body.language },
-          status: 'pending',
-          picture: handle + '.svg',
-          time: {
-            created: new Date(),
-          },
-        })
-  ehash      String    @unique
-  email      String
-  handle     String    @unique
-  ihash      String
-  initial    String
-  lastlogin  DateTime
-  newsletter Boolean   @default(false)
+  const username = `user-${hash.slice(0,6)}-${time().slice(-6)}` // Temporary username
+  //const user = await.prisma.user.create({
+  //  ehash: hash, // Hash of the email to search on
+  //  ihash: hash, // Hash of the (initial) email to search on
+  //  email: encrypt(clean(req.body.email)), // Encrypt email at rest
+  //  initial: encrypt(clean(req.body.email)), // Encrypt initial email at rest
+  //  username: username, // User will be suggested to change this
+  //  settings: JSON.stringify({ language: req.body.language }), // Set languuge in settings
+  //})
+  /*
   password   String
-  patron     Int       @default(0)
-  people     Person[]
-  patterns   Pattern[]
-  picture    String
-  role       String    @default("user")
-  status     Int       @default(0)
-  units      Boolean   @default(false)
-  username   String    @unique
 */
-  return res.status(200).send(exists)
+  return res.status(200).send({})
     /*
     (err, user) => {
       if (err) return res.sendStatus(500)
