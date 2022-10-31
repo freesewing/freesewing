@@ -1,6 +1,7 @@
 import chai from 'chai'
 import http from 'chai-http'
 import { verifyConfig } from '../src/config.mjs'
+import { randomString } from '../src/utils/crypto.mjs'
 
 const config = verifyConfig()
 const expect = chai.expect
@@ -20,9 +21,9 @@ describe('Non language-specific User controller signup routes', () => {
   })
 
   let data = {
-    email: 'test@freesewing.org',
+    email: '__test__@freesewing.dev',
     language: 'en',
-    password: 'one two one two, this is just a test',
+    password: 'One two one two, this is just a test',
   }
 
   Object.keys(data).map((key) => {
@@ -40,39 +41,46 @@ describe('Non language-specific User controller signup routes', () => {
         .end((err, res) => {
           expect(err === null).to.equal(true)
           expect(res.status).to.equal(400)
-          expect(res.text).to.equal(`${key}Missing`)
+          expect(res.type).to.equal('application/json')
+          expect(res.charset).to.equal('utf-8')
+          expect(res.body.error).to.equal(`${key}Missing`)
           done()
         })
     })
   })
 
-  it('should not create signup without password', (done) => {
+  it('should fail to signup an existing email address', (done) => {
+    chai
+      .request(config.api)
+      .post('/signup')
+      .send({
+        ...data,
+        email: 'nidhubhs@gmail.com',
+      })
+      .end((err, res) => {
+        expect(res.status).to.equal(400)
+        expect(res.type).to.equal('application/json')
+        expect(res.charset).to.equal('utf-8')
+        expect(res.body.error).to.equal('emailExists')
+        done()
+      })
+  })
+
+  it('should signup a new user', (done) => {
     chai
       .request(config.api)
       .post('/signup')
       .send(data)
       .end((err, res) => {
         expect(res.status).to.equal(400)
+        expect(res.type).to.equal('application/json')
+        expect(res.charset).to.equal('utf-8')
+        expect(res.body.error).to.equal('emailExists')
         done()
       })
   })
   /*
 
-  it('should not create signup without language', (done) => {
-    chai
-      .request(config.backend)
-      .post('/signup')
-      .send({
-        email: config.user.email,
-        password: config.user.password,
-      })
-      .end((err, res) => {
-        res.should.have.status(400)
-        res.text.should.equal('languageMissing')
-        done()
-      })
-  })
-})
 
 describe('Login/Logout and session handling', () => {
   it('should login with the username', (done) => {

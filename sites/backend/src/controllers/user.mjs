@@ -4,68 +4,94 @@ import jwt from 'jsonwebtoken'
 //import fs from 'fs'
 import Zip from 'jszip'
 //import rimraf from 'rimraf'
-import { clean, hash } from '../utils/crypto.mjs'
+import { hash, hashPassword, randomString } from '../utils/crypto.mjs'
+import { clean, asJson } from '../utils/index.mjs'
+import { log } from '../utils/log.mjs'
+
+/*
+ * Prisma is not an ORM and we can't attach methods to the model
+ * So here's a bunch of helper methods that expect a user object
+ * as input
+ */
+const asAccount = user => {
+  return user
+}
 
 export function UserController() {}
 
 // Signup
 UserController.prototype.signup = async (req, res, tools) => {
   if (!req.body) return res.sendStatus(400)
-  if (!req.body.email) return res.status(400).send('emailMissing')
-  if (!req.body.password) return res.status(400).send('passwordMissing')
-  if (!req.body.language) return res.status(400).send('languageMissing')
-
-  // Requests looks ok - does the user exist?
-  const emailhash = hash(clean(req.body.email))
+  if (!req.body.email) return res.status(400).json({ error: 'emailMissing'})
+  if (!req.body.password) return res.status(400).json({ error: 'passwordMissing'})
+  if (!req.body.language) return res.status(400).json({ error: 'languageMissing'})
 
   // Destructure what we need from tools
   const { prisma, config, encrypt } = tools
-  if (await prisma.user.findUnique({ where: { ehash: emailhash } }))
-    return res.status(400).send('emailExists')
 
+  // Requests looks ok - does the user exist?
+  const emailhash = hash(clean(req.body.email))
+  if (await prisma.user.findUnique({ where: { ehash: emailhash } })) {
+    return res.status(400).json({ error: 'emailExists'})
+  }
   // It does not. Creating user entry
+  let record
+  try {
+    record = await prisma.user.create({
+      data: {
+        data: asJson({ settings: { language: req.body.language } }),
+        ehash: emailhash,
+        email: encrypt(clean(req.body.email)),
+        ihash: emailhash,
+        initial: encrypt(clean(req.body.email)),
+        password: asJson(hashPassword(req.body.password)),
+        username: randomString() // Temporary username,
+      },
+    })
+  } catch (err) {
+    log.warn(err, 'Could not create user record')
+    return res.status(500).send({error: 'createAccountFailed'})
+  }
+  // Now set username to user-ID
+  let updated
+  console.log({record})
+  try {
+    updated = await prisma.user.update({
+      where: { id: record.id },
+      data: {
+        username: `user-${record.id}`
+      }
+    })
+  } catch (err) {
+    log.warn(err, 'Could not update username on created user record')
+    return res.status(500).send({error: 'updateCreatedAccountUsernameFailed'})
+  }
+  log.info({ user: updated.id }, 'Account created')
 
-  const username = `user-${hash.slice(0, 6)}-${time().slice(-6)}` // Temporary username
-  //const user = await.prisma.user.create({
-  //  ehash: hash, // Hash of the email to search on
-  //  ihash: hash, // Hash of the (initial) email to search on
-  //  email: encrypt(clean(req.body.email)), // Encrypt email at rest
-  //  initial: encrypt(clean(req.body.email)), // Encrypt initial email at rest
-  //  username: username, // User will be suggested to change this
-  //  settings: JSON.stringify({ language: req.body.language }), // Set languuge in settings
-  //})
-  /*
-  password   String
-*/
-  return res.status(200).send({})
-  /*
-    (err, user) => {
-      if (err) return res.sendStatus(500)
-      if (user !== null) return res.status(400).send('userExists')
-      else {
-        let handle = uniqueHandle()
-        let username = 'user-' + handle
-        let user = new User({
+  // Create confirmation
+  let confirmation
+  try {
+    confirmation = await prisma.confirmation.create({
+      data: {
+        type: 'signup',
+        data: encrypt({
+          language: req.body.language,
           email: req.body.email,
-          initial: req.body.email,
-          ehash: ehash(req.body.email),
-          handle,
-          username,
-          password: req.body.password,
-          settings: { language: req.body.language },
-          status: 'pending',
-          picture: handle + '.svg',
-          time: {
-            created: new Date(),
-          },
+          id: record.id,
+          ehash: emailhash
         })
-        user.save(function (err) {
-          if (err) {
-            log.error('accountCreationFailed', user)
-            console.log(err)
-            return res.sendStatus(500)
-          }
-          log.info('accountCreated', { handle: user.handle })
+      }
+    })
+  }
+  catch(err) {
+    log.warn(err, 'Unable to create confirmation at signup')
+    return res.status(500).send({error: 'updateCreatedAccountUsernameFailed'})
+  }
+  // TODO: Send email with confirmation UUID and ehash
+  console.log({confirmation})
+
+  return res.status(200).send(asAccount(updated))
+  /*
           user.createAvatar(handle)
           let confirmation = new Confirmation({
             type: 'signup',
@@ -477,7 +503,7 @@ UserController.prototype.export = (req, res) => {
     let dir = createTempDir()
     if (!dir) return res.sendStatus(500)
     let zip = new Zip()
-    zip.file('account.json', JSON.stringify(user.export(), null, 2))
+    zip.file('account.json', asJson(user.export(), null, 2))
     loadAvatar(user).then((avatar) => {
       if (avatar) zip.file(user.picture, data)
       zip

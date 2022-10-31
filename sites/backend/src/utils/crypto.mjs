@@ -1,20 +1,20 @@
 import bcrypt from 'bcryptjs' // Required for legacy password hashes
 import { createHash, createCipheriv, createDecipheriv, scryptSync, randomBytes } from 'crypto'
 import { log } from './log.mjs'
-
-/*
- * Cleans a string (typically email) for hashing
- */
-export const clean = (string) => {
-  if (typeof string !== 'string') throw 'clean() only takes a string as input'
-
-  return string.toLowerCase().trim()
-}
+import { asJson, clean } from './index.mjs'
 
 /*
  * Hashes an email address (or other string)
  */
 export const hash = (string) => createHash('sha256').update(string).digest('hex')
+
+/*
+ * Generates a random string
+ *
+ * This is not used in anything cryptographic. It is only used as a temporary
+ * username to avoid username collisions
+ */
+export const randomString = (bytes=8) => randomBytes(bytes).toString('hex')
 
 /*
  * Returns an object holding encrypt() and decrypt() methods
@@ -43,11 +43,11 @@ export const encryption = (stringKey, salt = 'FreeSewing') => {
       /*
        * With undefined out of the way, there's still some things we cannot encrypt.
        * Essentially, anything that can't be serialized to JSON, such as functions.
-       * So let's catch the JSON.stringify() call and once again bail out if things
+       * So let's catch the asJson() call and once again bail out if things
        * go off the rails here.
        */
       try {
-        data = JSON.stringify(data)
+        data = asJson(data)
       } catch (err) {
         throw ('Could not parse input to encrypt() call', err)
       }
@@ -66,7 +66,7 @@ export const encryption = (stringKey, salt = 'FreeSewing') => {
       /*
        * Always return a string so we can store this in SQLite no problemo
        */
-      return JSON.stringify({
+      return asJson({
         iv: iv.toString('hex'),
         encrypted: Buffer.concat([cipher.update(data), cipher.final()]).toString('hex'),
       })
@@ -106,12 +106,13 @@ export const encryption = (stringKey, salt = 'FreeSewing') => {
 /*
  * Salts and hashes a password
  */
-function hashPassword(input, salt = false) {
+export function hashPassword(input, salt = false) {
   if (salt === false) salt = Buffer.from(randomBytes(16))
   else salt = Buffer.from(salt, 'hex')
   const hash = scryptSync(input, salt, 64)
 
   return {
+    type: 'v3',
     hash: hash.toString('hex'),
     salt: salt.toString('hex'),
   }
@@ -150,7 +151,7 @@ export function verifyPassword(input, passwordField) {
        * Correct password for legacy password field.
        * Re-hash and return updated password field value.
        */
-      return [true, JSON.stringify(hashPassword(input))]
+      return [true, asJson(hashPassword(input))]
     }
   } else if (data.type === 'v3') {
     if (data.hash && data.salt) {

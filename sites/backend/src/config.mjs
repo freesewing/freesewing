@@ -1,6 +1,7 @@
 import chalk from 'chalk'
 // Load environment variables
 import dotenv from 'dotenv'
+import { asJson } from './utils/index.mjs'
 dotenv.config()
 
 const port = process.env.API_PORT || 3000
@@ -166,7 +167,7 @@ export function verifyConfig() {
   if (process.env.API_DUMP_CONFIG_AT_STARTUP) {
     console.log(
       'Dumping configuration:',
-      JSON.stringify(
+      asJson(
         {
           ...config,
           encryption: {

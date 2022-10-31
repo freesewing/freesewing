@@ -2,6 +2,7 @@ import path from 'path'
 import fs from 'fs'
 import { PrismaClient } from '@prisma/client'
 import { clean, hash, encryption } from '../src/utils/crypto.mjs'
+import { clean } from '../src/utils/index.mjs'
 import { verifyConfig } from '../src/config.mjs'
 
 const prisma = new PrismaClient()

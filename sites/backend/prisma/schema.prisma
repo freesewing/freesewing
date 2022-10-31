@@ -11,8 +11,7 @@ model Confirmation {
   id        String   @id @default(uuid())
   createdAt DateTime @default(now())
   data      String
-  type      Int
-  updatedAt DateTime @updatedAt
+  type      String
 }
 
 model Subscriber {

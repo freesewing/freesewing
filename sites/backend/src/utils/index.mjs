@@ -2,9 +2,17 @@ import { createHash } from 'node:crypto'
 import dotenv from 'dotenv'
 dotenv.config()
 
-// Cleans an email for hashing
-export const clean = (string) => string.toLowerCase().trim()
+/*
+ * Cleans a string (typically email) for hashing
+ */
+export const clean = (string) => {
+  if (typeof string !== 'string') throw 'clean() only takes a string as input'
 
-// Hashes a (cleaned) string
-export const hash = (string) => createHash('sha256').update(clean(string)).digest('hex')
+  return string.toLowerCase().trim()
+}
 
+/*
+ * I find JSON.stringify to long to type, and prone to errors
+ * So I make an alias here: asJson
+ */
+export const asJson = JSON.stringify
