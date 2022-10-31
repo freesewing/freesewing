@@ -1,4 +1,6 @@
+import bcrypt from 'bcryptjs' // Required for legacy password hashes
 import { createHash, createCipheriv, createDecipheriv, scryptSync, randomBytes } from 'crypto'
+import { log } from './log.mjs'
 
 /*
  * Cleans a string (typically email) for hashing
@@ -99,4 +101,83 @@ export const encryption = (stringKey, salt = 'FreeSewing') => {
       )
     },
   }
+}
+
+/*
+ * Salts and hashes a password
+ */
+function hashPassword(input, salt = false) {
+  if (salt === false) salt = Buffer.from(randomBytes(16))
+  else salt = Buffer.from(salt, 'hex')
+  const hash = scryptSync(input, salt, 64)
+
+  return {
+    hash: hash.toString('hex'),
+    salt: salt.toString('hex'),
+  }
+}
+
+/*
+ * Verifies a (user-provided) password against the stored hash + salt
+ *
+ * Note that:
+ * - For legacy password hashes, the password field will hold serialized
+ *   JSON with a 'type' field set to 'v2' and a 'data' field holding the
+ *   legacy hash info to pass to the verifyLegacyPassword() method below.
+ * - For new password hashes, the password field will hold  serialized
+ *   JSON with a 'type' field set to 'v3' and a 'hash' and 'salt' field.
+ * - When legacy passwords are confirmed, they will be re-hashed and
+ *   updated in the database. The database update is not handled here but
+ *   prepared, by returning the new value for the password field as the
+ *   second element in the returned array.
+ */
+export function verifyPassword(input, passwordField) {
+  let data
+  try {
+    data = JSON.parse(passwordField)
+  } catch {
+    /*
+     * This should not happen. Let's just log a warning and return false
+     */
+    log.warn(passwordField, 'Unable to parse JSON in password field')
+    return [false, false]
+  }
+  // Is this a legacy password field?
+  if (data.type === 'v2') {
+    const result = verifyLegacyPassword(input, data.data)
+    if (result) {
+      // Correct password for legacy password. Re-hash and return.
+      return [true, hashPassword(input)]
+    }
+  } else if (data.type === 'v3') {
+    if (data.hash && data.salt) {
+      const verify = hashPassword(input, data.salt)
+      if (data.hash === verify.hash && data.salt === verify.salt) {
+        // Son of a bitch, you're in
+        return [true, false]
+      }
+    }
+  }
+
+  return [false, false]
+}
+
+/*
+ * Verifies a legacy password hash
+ *
+ * Legacy means that an account was imported from the v2 FreeSewing backend
+ * which used MongoDB as a database with Mongoose as an ORM.
+ * Passwords were handles with the mongoose-bcrypt plugin and have been
+ * imported from a database dump.
+ *
+ * So to verify these passwords, we need to verify the original logic of
+ * the mongoose plugin which uses the bcryptjs library.
+ *
+ * Each time a user with a legacy password field logs in with the correct
+ * password, we re-hash the password field with the new (crypto) hasing method.
+ * This way, in a while all users will be migrated, and we can drop this method
+ * and the cryptojs dependency
+ */
+function verifyLegacyPassword(password, hash) {
+  return bcrypt.compareSync(password, hash)
 }

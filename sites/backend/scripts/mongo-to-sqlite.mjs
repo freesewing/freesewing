@@ -27,7 +27,7 @@ if (filter) {
   // Dump filtered data from raw data
   const file = 'freesewing-dump.json'
   data = filterData(JSON.parse(fs.readFileSync(path.resolve(dir, file), { encoding: 'utf-8' })))
-  console.log(JSON.stringify(data, null ,2))
+  console.log(JSON.stringify(data, null, 2))
 } else {
   // Load filtered data for migration
   const file = 'freesewing-filtered.json'
@@ -47,12 +47,35 @@ if (filter) {
   console.log()
   await migratePatterns(data.patterns)
   console.log()
+  await migrateSubscribers(data.subscribers)
+  console.log()
 }
 
 function progress(text) {
   process.stdout.clearLine()
   process.stdout.cursorTo(0)
   process.stdout.write(text)
+}
+
+async function migrateSubscribers(subscribers) {
+  const total = subscribers.length
+  let i = 0
+  for (const sub of subscribers) {
+    i++
+    progress(`  📰  subscriber ${i}/${total}`)
+    await createSubscriber(sub)
+  }
+}
+
+async function createSubscriber(sub) {
+  const record = await prisma.subscriber.create({
+    data: {
+      createdAt: sub.createdAt,
+      data: JSON.stringify({}),
+      ehash: hash(clean(sub.email)),
+      email: encrypt(clean(sub.email)),
+    },
+  })
 }
 
 async function migratePatterns(patterns) {
@@ -109,7 +132,7 @@ async function migrateUsers(users) {
 }
 
 async function createUser(user) {
-  const ehash = hash(user.email)
+  const ehash = hash(clean(user.email))
   const record = await prisma.user.create({
     data: {
       consent: user.consent,
@@ -122,7 +145,7 @@ async function createUser(user) {
       newsletter: user.newsletter,
       password: JSON.stringify({
         type: 'v2',
-        data: user.password
+        data: user.password,
       }),
       patron: user.patron,
       role: user.role,
@@ -133,13 +156,12 @@ async function createUser(user) {
   data.userhandles[user.handle] = record.id
 }
 
-
 /*
  * Only migrate user data if the user was active in the last 6 months
  * Unless they are patrons. Keep patrons regardless coz patrons rock.
  */
 function filterData(data) {
-  let i=0
+  let i = 0
   const filtered = {
     users: {},
     people: {},
@@ -171,9 +193,9 @@ function filterData(data) {
  * Migrates role field
  */
 function getRole(entry) {
-  if (entry.handle === 'joost') return "admin"
-  if (entry.patron > 0) return "patron"
-  return "user"
+  if (entry.handle === 'joost') return 'admin'
+  if (entry.patron > 0) return 'patron'
+  return 'user'
 }
 
 /*
@@ -225,6 +247,6 @@ function migratePattern(entry) {
 function migrateSubscriber(entry) {
   return {
     createdAt: entry.created,
-    email: entry.email
+    email: entry.email,
   }
 }

@@ -12,7 +12,7 @@ import { verifyConfig } from './config.mjs'
 // Middleware
 import { loadExpressMiddleware, loadPassportMiddleware } from './middleware.mjs'
 // Encryption
-import { ehash, encryption } from './utils/crypto.mjs'
+import { encryption } from './utils/crypto.mjs'
 
 // Bootstrap
 const config = verifyConfig()

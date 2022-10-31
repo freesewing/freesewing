@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken'
 //import fs from 'fs'
 import Zip from 'jszip'
 //import rimraf from 'rimraf'
-import { ehash } from '../utils/crypto.mjs'
+import { clean, hash } from '../utils/crypto.mjs'
 
 export function UserController() {}
 
@@ -16,15 +16,16 @@ UserController.prototype.signup = async (req, res, tools) => {
   if (!req.body.language) return res.status(400).send('languageMissing')
 
   // Requests looks ok - does the user exist?
-  const hash = ehash(req.body.email)
+  const emailhash = hash(clean(req.body.email))
 
   // Destructure what we need from tools
   const { prisma, config, encrypt } = tools
-  if ((await prisma.user.findUnique({ where: { ehash: hash } }))) return res.status(400).send('emailExists')
+  if (await prisma.user.findUnique({ where: { ehash: emailhash } }))
+    return res.status(400).send('emailExists')
 
   // It does not. Creating user entry
 
-  const username = `user-${hash.slice(0,6)}-${time().slice(-6)}` // Temporary username
+  const username = `user-${hash.slice(0, 6)}-${time().slice(-6)}` // Temporary username
   //const user = await.prisma.user.create({
   //  ehash: hash, // Hash of the email to search on
   //  ihash: hash, // Hash of the (initial) email to search on
@@ -37,7 +38,7 @@ UserController.prototype.signup = async (req, res, tools) => {
   password   String
 */
   return res.status(200).send({})
-    /*
+  /*
     (err, user) => {
       if (err) return res.sendStatus(500)
       if (user !== null) return res.status(400).send('userExists')
