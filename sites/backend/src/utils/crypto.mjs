@@ -146,8 +146,11 @@ export function verifyPassword(input, passwordField) {
   if (data.type === 'v2') {
     const result = verifyLegacyPassword(input, data.data)
     if (result) {
-      // Correct password for legacy password. Re-hash and return.
-      return [true, hashPassword(input)]
+      /*
+       * Correct password for legacy password field.
+       * Re-hash and return updated password field value.
+       */
+      return [true, JSON.stringify(hashPassword(input))]
     }
   } else if (data.type === 'v3') {
     if (data.hash && data.salt) {
