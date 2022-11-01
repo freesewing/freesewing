@@ -1,6 +1,4 @@
-import { createHash } from 'node:crypto'
-import dotenv from 'dotenv'
-dotenv.config()
+import { api } from '../config.mjs'
 
 /*
  * Cleans a string (typically email) for hashing
@@ -16,3 +14,13 @@ export const clean = (string) => {
  * So I make an alias here: asJson
  */
 export const asJson = JSON.stringify
+
+/*
+ * Builds a url using the correct scheme, language and domain
+ */
+export const i18nUrl = (lang, path) => {
+  let url = api
+  if (lang !== 'en') url += `/${lang}`
+
+  return url + path
+}

@@ -7,6 +7,9 @@ const config = verifyConfig()
 const expect = chai.expect
 chai.use(http)
 
+const email = `test_${randomString()}@mailtrap.freesewing.dev`
+const store = {}
+
 describe('Non language-specific User controller signup routes', () => {
   it('Should return 400 on signup without body', (done) => {
     chai
@@ -16,12 +19,14 @@ describe('Non language-specific User controller signup routes', () => {
       .end((err, res) => {
         expect(err === null).to.equal(true)
         expect(res.status).to.equal(400)
+        expect(res.body.result).to.equal(`error`)
+        expect(res.body.error).to.equal(`postBodyMissing`)
         done()
       })
   })
 
-  let data = {
-    email: '__test__@freesewing.dev',
+  const data = {
+    email,
     language: 'en',
     password: 'One two one two, this is just a test',
   }
@@ -43,30 +48,49 @@ describe('Non language-specific User controller signup routes', () => {
           expect(res.status).to.equal(400)
           expect(res.type).to.equal('application/json')
           expect(res.charset).to.equal('utf-8')
+          expect(res.body.result).to.equal(`error`)
           expect(res.body.error).to.equal(`${key}Missing`)
           done()
         })
     })
   })
 
-  it('should fail to signup an existing email address', (done) => {
+  step(`should signup a new user (${email})`, (done) => {
     chai
       .request(config.api)
       .post('/signup')
       .send({
         ...data,
-        email: 'nidhubhs@gmail.com',
+        unittest: true
       })
       .end((err, res) => {
-        expect(res.status).to.equal(400)
+        expect(res.status).to.equal(201)
         expect(res.type).to.equal('application/json')
         expect(res.charset).to.equal('utf-8')
-        expect(res.body.error).to.equal('emailExists')
+        expect(res.body.result).to.equal(`success`)
+        expect(res.body.email).to.equal(email)
+        console.log(res.body)
+        store.confirmation = res.body.confirmation
+        done()
+      })
+  })
+  step(`should confirm a new user (${email})`, (done) => {
+    chai
+      .request(config.api)
+      .post(`/confirm/signup/${store.confirmation}`)
+      .send({ consent: 1 })
+      .end((err, res) => {
+        console.log(res)
+        expect(res.status).to.equal(200)
+        expect(res.type).to.equal('application/json')
+        expect(res.charset).to.equal('utf-8')
+        expect(res.body.result).to.equal(`success`)
+        console.log(res)
         done()
       })
   })
 
-  it('should signup a new user', (done) => {
+  it('should fail to signup an existing email address', (done) => {
     chai
       .request(config.api)
       .post('/signup')
@@ -75,10 +99,12 @@ describe('Non language-specific User controller signup routes', () => {
         expect(res.status).to.equal(400)
         expect(res.type).to.equal('application/json')
         expect(res.charset).to.equal('utf-8')
+        expect(res.body.result).to.equal(`error`)
         expect(res.body.error).to.equal('emailExists')
         done()
       })
   })
+
   /*
 
 

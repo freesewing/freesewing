@@ -13,6 +13,8 @@ import { verifyConfig } from './config.mjs'
 import { loadExpressMiddleware, loadPassportMiddleware } from './middleware.mjs'
 // Encryption
 import { encryption } from './utils/crypto.mjs'
+// Email
+import { mailer } from './utils/email.mjs'
 
 // Bootstrap
 const config = verifyConfig()
@@ -30,6 +32,7 @@ const params = {
   passport,
   prisma,
   ...encryption(config.encryption.key),
+  ...mailer(config),
   config,
 }
 // Load routes

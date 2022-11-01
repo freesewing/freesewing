@@ -4,14 +4,27 @@ const User = new UserController()
 const jwt = ['jwt', { session: false }]
 
 
-export function userRoutes(params) {
-  const { app, passport } = params
-  // Create account
+export function userRoutes(tools) {
+  const { app, passport } = tools
+  // Sign up
   app.post(
-    '/account',
-    (req, res) => User.create(req, res, params)
+    '/signup',
+    (req, res) => User.signup(req, res, tools)
   )
 
+  // Confirm account
+  app.post(
+    '/confirm/signup/:id',
+    (req, res) => User.confirm(req, res, tools)
+  )
+
+  // Create account
+  //app.post(
+  //  '/account',
+  //  (req, res) => User.create(req, res, tools)
+  //)
+
+  /*
   // Read account (own data)
   app.get(
     '/account',
@@ -60,12 +73,6 @@ export function userRoutes(params) {
     (req, res) => User.confirmChangedEmail(req, res, params)
   )
 
-  // Sign up
-  app.post(
-    '/signup',
-    (req, res) => User.signup(req, res, params)
-  )
-
   // Re-send account confirmation
   app.post(
     '/resend',
@@ -76,12 +83,6 @@ export function userRoutes(params) {
   app.post(
     '/login',
     (req, res) => User.login(req, res, params)
-  )
-
-  // Account confirmation
-  app.post(
-    '/confirm/login',
-    (req, res) => User.confirmationLogin(req, res, params)
   )
 
   // Get list of patrons
@@ -102,5 +103,6 @@ export function userRoutes(params) {
     passport.authenticate('jwt', { session: false }),
     (req, res) => User.isUsernameAvailable(req, res, params)
   )
+  */
 }
 

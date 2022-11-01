@@ -1,62 +1,29 @@
-import config from '../../config'
-import { strings as i18n } from '@freesewing/i18n'
-import templates from '../../templates'
-import { createUrl } from '../'
-import sendEmailWith from './relays'
+import axios from 'axios'
+import { templates } from '../templates/email.mjs'
+// FIXME: Update this after we re-structure the i18n package
+import en from '../../../../packages/i18n/dist/en/email.mjs'
+import nl from '../../../../packages/i18n/dist/en/email.mjs'
+import fr from '../../../../packages/i18n/dist/en/email.mjs'
+import es from '../../../../packages/i18n/dist/en/email.mjs'
+import de from '../../../../packages/i18n/dist/en/email.mjs'
+import { i18nUrl } from './index.mjs'
+import { SESv2Client, SendEmailCommand } from "@aws-sdk/client-sesv2"
 
-const deliver = sendEmailWith(config.sendEmailWith)
-const email = {}
+const i18n = { en, nl, fr, es, de }
 
-const loadTemplate = (type, format, language = 'en') => {
-  let template = templates.header[format] + templates[type][format] + templates.footer[format]
-  let toTranslate = templates[type].i18n.concat(templates.footer.i18n)
-  let from = []
-  let to = []
-  for (let key of toTranslate) {
-    from.push(`__${key}__`)
-    to.push(i18n[language]['email.' + key] || key)
-  }
-  for (let i = 0; i < from.length; i++) template = template.replace(from[i], to[i])
-
-  return template
-}
-
-const replace = (text, from, to) => {
-  for (let id = 0; id < from.length; id++) text = text.split(from[id]).join(to[id] || from[id])
-
-  return text
-}
-
-email.signup = (recipient, language, id) => {
-  let html = loadTemplate('signup', 'html', language)
-  let text = loadTemplate('signup', 'text', language)
-  let from = ['__signupActionLink__', '__headerOpeningLine__', '__hiddenIntro__', '__footerWhy__']
-  let link = createUrl(language, `/confirm/signup/${id}`)
-  let to = [
-    link,
-    i18n[language]['email.signupHeaderOpeningLine'],
-    i18n[language]['email.signupHiddenIntro'],
-    i18n[language]['email.signupWhy'],
+export const emailTemplate = {
+  signup: (to, language, uuid) => [
+    i18n[language].signupTitle,
+    templates.signup(
+      i18n[language],
+      to,
+      i18nUrl(language, `/confirm/signup/${uuid}`)
+    )],
+  emailChange: (to, cc, language, uuid) => [
   ]
-  html = replace(html, from, to)
-  text = replace(text, from, to)
-  let options = {
-    from: `"${i18n[language]['email.joostFromFreesewing']}" <info@freesewing.org>`,
-    to: recipient,
-    subject: i18n[language]['email.signupSubject'],
-    headers: {
-      'X-Freesewing-Confirmation-ID': '' + id,
-    },
-    text,
-    html,
-  }
-  deliver(options, (error, info) => {
-    if (error) return console.log(error)
-    console.log('Message sent', info)
-  })
 }
 
-email.emailchange = (newAddress, currentAddress, language, id) => {
+emailTemplate.emailchange = (newAddress, currentAddress, language, id) => {
   let html = loadTemplate('emailchange', 'html', language)
   let text = loadTemplate('emailchange', 'text', language)
   let from = [
@@ -101,7 +68,7 @@ email.emailchange = (newAddress, currentAddress, language, id) => {
   })
 }
 
-email.passwordreset = (recipient, language, id) => {
+emailTemplate.passwordreset = (recipient, language, id) => {
   let html = loadTemplate('passwordreset', 'html', language)
   let text = loadTemplate('passwordreset', 'text', language)
   let from = [
@@ -135,7 +102,7 @@ email.passwordreset = (recipient, language, id) => {
   })
 }
 
-email.goodbye = async (recipient, language) => {
+emailTemplate.goodbye = async (recipient, language) => {
   let html = loadTemplate('goodbye', 'html', language)
   let text = loadTemplate('goodbye', 'text', language)
   let from = ['__headerOpeningLine__', '__hiddenIntro__', '__footerWhy__']
@@ -160,7 +127,7 @@ email.goodbye = async (recipient, language) => {
   })
 }
 
-email.subscribe = async (recipient, token) => {
+emailTemplate.subscribe = async (recipient, token) => {
   let html = loadTemplate('newsletterSubscribe', 'html', 'en')
   let text = loadTemplate('newsletterSubscribe', 'text', 'en')
   let from = [
@@ -191,7 +158,7 @@ email.subscribe = async (recipient, token) => {
   })
 }
 
-email.newsletterWelcome = async (recipient, ehash) => {
+emailTemplate.newsletterWelcome = async (recipient, ehash) => {
   let html = loadTemplate('newsletterWelcome', 'html', 'en')
   let text = loadTemplate('newsletterWelcome', 'text', 'en')
   let from = [
@@ -222,4 +189,49 @@ email.newsletterWelcome = async (recipient, ehash) => {
   })
 }
 
-export default email
+
+/*
+ * Exporting this closure that makes sure we have access to the
+ * instantiated config
+ */
+export const mailer = (config) => ({
+  email: {
+    send: (...params) => sendEmailViaAwsSes(config, ...params),
+  }
+})
+
+/*
+ * The code below handles delivery via AWS SES
+ *
+ * If you want to use another way to send email, change the mailer
+ * assignment above to point to another method to deliver email
+ */
+async function sendEmailViaAwsSes(config, to, subject, text) {
+  // IMHO the AWS apis are a complete clusterfuck
+  // can't even use them without their garbage SDK
+  const Charset = 'utf-8'
+  const client = new SESv2Client({ region: config.aws.ses.region })
+  const command = new SendEmailCommand({
+    ConfigurationSetName: 'backend',
+    Content: {
+      Simple: {
+        Body: {
+          Text: { Charset, Data: text },
+        },
+        Subject: { Charset, Data: subject },
+      },
+    },
+    Destination: {
+      ToAddresses: [ to ],
+      BccAddresses: [ 'tracking@freesewing.org' ],
+    },
+    FeedbackForwardingEmailAddress: 'bounce@freesewing.org',
+    FromEmailAddress: 'info@freesewing.org',
+    ReplyToAddresses: [ 'info@freesewing.org' ],
+  })
+  const result = await client.send(command)
+
+  return (result['$metadata']?.httpStatusCode === 200)
+}
+
+

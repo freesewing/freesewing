@@ -4,11 +4,14 @@ import dotenv from 'dotenv'
 import { asJson } from './utils/index.mjs'
 dotenv.config()
 
-const port = process.env.API_PORT || 3000
+// Allow these 2 to be imported
+export const port = process.env.API_PORT || 3000
+export const api = process.env.API_URL || `http://localhost:${port}`
+
 // Construct config object
 const config = {
+  api,
   port,
-  api: process.env.API_URL || `http://localhost:${port}`,
   website: {
     domain: process.env.API_WEBSITE_DOMAIN || 'freesewing.org',
     scheme: process.env.API_WEBSITE_SCHEME || 'https',
@@ -31,7 +34,11 @@ const config = {
     expiresIn: process.env.API_JWT_EXPIRY || '36 days',
   },
   languages: ['en', 'de', 'es', 'fr', 'nl'],
-  ses: {},
+  aws: {
+    ses: {
+      region: 'us-east-1',
+    },
+  },
   oauth: {
     github: {
       clientId: process.env.API_GITHUB_CLIENT_ID,
