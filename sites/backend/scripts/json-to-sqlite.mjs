@@ -1,7 +1,7 @@
 import path from 'path'
 import fs from 'fs'
 import { PrismaClient } from '@prisma/client'
-import { clean, hash, encryption } from '../src/utils/crypto.mjs'
+import { hash, encryption } from '../src/utils/crypto.mjs'
 import { clean } from '../src/utils/index.mjs'
 import { verifyConfig } from '../src/config.mjs'
 
@@ -22,35 +22,26 @@ const { encrypt, decrypt } = encryption(config.encryption.key)
 // Dumped data folder
 const dir = '/home/joost/'
 
-const filter = false
-let data
-if (filter) {
-  // Dump filtered data from raw data
-  const file = 'freesewing-dump.json'
-  data = filterData(JSON.parse(fs.readFileSync(path.resolve(dir, file), { encoding: 'utf-8' })))
-  console.log(JSON.stringify(data, null, 2))
-} else {
-  // Load filtered data for migration
-  const file = 'freesewing-filtered.json'
-  data = JSON.parse(fs.readFileSync(path.resolve(dir, file), { encoding: 'utf-8' }))
-  console.log()
-  console.log('Migrating:')
-  console.log('  🧑 ', Object.keys(data.users).length, 'users')
-  console.log('  🕺 ', Object.keys(data.people).length, 'people')
-  console.log('  👕 ', Object.keys(data.patterns).length, 'patterns')
-  console.log('  📰 ', data.subscribers.length, 'subscribers')
-  console.log()
-  data.userhandles = {}
-  await migrateUsers(data.users)
-  console.log()
-  data.peoplehandles = {}
-  await migratePeople(data.people)
-  console.log()
-  await migratePatterns(data.patterns)
-  console.log()
-  await migrateSubscribers(data.subscribers)
-  console.log()
-}
+// Load filtered data for migration
+const file = 'freesewing-filtered.json'
+const data = JSON.parse(fs.readFileSync(path.resolve(dir, file), { encoding: 'utf-8' }))
+console.log()
+console.log('Migrating:')
+console.log('  🧑 ', Object.keys(data.users).length, 'users')
+console.log('  🕺 ', Object.keys(data.people).length, 'people')
+console.log('  👕 ', Object.keys(data.patterns).length, 'patterns')
+console.log('  📰 ', data.subscribers.length, 'subscribers')
+console.log()
+data.userhandles = {}
+await migrateUsers(data.users)
+console.log()
+data.peoplehandles = {}
+await migratePeople(data.people)
+console.log()
+await migratePatterns(data.patterns)
+console.log()
+await migrateSubscribers(data.subscribers)
+console.log()
 
 function progress(text) {
   process.stdout.clearLine()
@@ -158,7 +149,7 @@ async function createUser(user) {
 }
 
 /*
- * Only migrate user data if the user was active in the last 6 months
+ * Only migrate user data if the user was active in the last 12 months
  * Unless they are patrons. Keep patrons regardless coz patrons rock.
  */
 function filterData(data) {
