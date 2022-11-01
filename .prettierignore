@@ -6,6 +6,7 @@
 *.mustache
 *.png
 *.svg
+*.prisma
 yarn.lock
 .husky/pre-commit
 .prettierignore

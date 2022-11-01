@@ -61,7 +61,7 @@ describe('Non language-specific User controller signup routes', () => {
       .post('/signup')
       .send({
         ...data,
-        unittest: true
+        unittest: true,
       })
       .end((err, res) => {
         expect(res.status).to.equal(201)
@@ -69,28 +69,29 @@ describe('Non language-specific User controller signup routes', () => {
         expect(res.charset).to.equal('utf-8')
         expect(res.body.result).to.equal(`success`)
         expect(res.body.email).to.equal(email)
-        console.log(res.body)
         store.confirmation = res.body.confirmation
         done()
       })
   })
+
   step(`should confirm a new user (${email})`, (done) => {
     chai
       .request(config.api)
       .post(`/confirm/signup/${store.confirmation}`)
       .send({ consent: 1 })
       .end((err, res) => {
-        console.log(res)
         expect(res.status).to.equal(200)
         expect(res.type).to.equal('application/json')
         expect(res.charset).to.equal('utf-8')
         expect(res.body.result).to.equal(`success`)
-        console.log(res)
+        expect(typeof res.body.token).to.equal(`string`)
+        expect(typeof res.body.account.id).to.equal(`number`)
+        store.token = res.body.token
         done()
       })
   })
 
-  it('should fail to signup an existing email address', (done) => {
+  step('should fail to signup an existing email address', (done) => {
     chai
       .request(config.api)
       .post('/signup')

@@ -31,7 +31,7 @@ const config = {
     secretOrKey: process.env.API_ENC_KEY,
     issuer: process.env.API_JWT_ISSUER,
     audience: process.env.API_JWT_ISSUER,
-    expiresIn: process.env.API_JWT_EXPIRY || '36 days',
+    expiresIn: process.env.API_JWT_EXPIRY || '7d',
   },
   languages: ['en', 'de', 'es', 'fr', 'nl'],
   aws: {

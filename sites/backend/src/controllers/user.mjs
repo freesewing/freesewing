@@ -14,9 +14,35 @@ import { emailTemplate } from '../utils/email.mjs'
  * So here's a bunch of helper methods that expect a user object
  * as input
  */
-const asAccount = user => {
-  return user
-}
+const asAccount = (user, decrypt) => ({
+  id: user.id,
+  consent: user.consent,
+  createdAt: user.createdAt,
+  data: user.data,
+  email: decrypt(user.email),
+  initial: decrypt(user.initial),
+  lastLogin: user.lastLogin,
+  newsletter: user.newsletter,
+  patron: user.patron,
+  role: user.role,
+  status: user.status,
+  updatedAt: user.updatedAt,
+  username: user.username,
+})
+
+const getToken = (user, config) =>
+  jwt.sign(
+    {
+      _id: user.id,
+      username: user.username,
+      role: user.role,
+      status: user.status,
+      aud: config.jwt.audience,
+      iss: config.jwt.issuer,
+    },
+    config.jwt.secretOrKey,
+    { expiresIn: config.jwt.expiresIn }
+  )
 
 // We'll send this result unless it goes ok
 const result = 'error'
@@ -30,10 +56,10 @@ export function UserController() {}
  * See: https://freesewing.dev/reference/backend/api
  */
 UserController.prototype.signup = async (req, res, tools) => {
-  if (Object.keys(req.body) < 1) return res.status(400).json({ error: 'postBodyMissing', result})
-  if (!req.body.email) return res.status(400).json({ error: 'emailMissing', result})
-  if (!req.body.password) return res.status(400).json({ error: 'passwordMissing', result})
-  if (!req.body.language) return res.status(400).json({ error: 'languageMissing', result})
+  if (Object.keys(req.body) < 1) return res.status(400).json({ error: 'postBodyMissing', result })
+  if (!req.body.email) return res.status(400).json({ error: 'emailMissing', result })
+  if (!req.body.password) return res.status(400).json({ error: 'passwordMissing', result })
+  if (!req.body.language) return res.status(400).json({ error: 'languageMissing', result })
 
   // Destructure what we need from tools
   const { prisma, config, encrypt, email } = tools
@@ -41,7 +67,7 @@ UserController.prototype.signup = async (req, res, tools) => {
   // Requests looks ok - does the user exist?
   const emailhash = hash(clean(req.body.email))
   if (await prisma.user.findUnique({ where: { ehash: emailhash } })) {
-    return res.status(400).json({ error: 'emailExists', result})
+    return res.status(400).json({ error: 'emailExists', result })
   }
   // It does not. Creating user entry
   let record
@@ -54,12 +80,12 @@ UserController.prototype.signup = async (req, res, tools) => {
         ihash: emailhash,
         initial: encrypt(clean(req.body.email)),
         password: asJson(hashPassword(req.body.password)),
-        username: randomString() // Temporary username,
+        username: randomString(), // Temporary username,
       },
     })
   } catch (err) {
     log.warn(err, 'Could not create user record')
-    return res.status(500).send({ error: 'createAccountFailed', result})
+    return res.status(500).send({ error: 'createAccountFailed', result })
   }
   // Now set username to user-ID
   let updated
@@ -67,12 +93,12 @@ UserController.prototype.signup = async (req, res, tools) => {
     updated = await prisma.user.update({
       where: { id: record.id },
       data: {
-        username: `user-${record.id}`
-      }
+        username: `user-${record.id}`,
+      },
     })
   } catch (err) {
     log.warn(err, 'Could not update username on created user record')
-    return res.status(500).send({result: 'error', error: 'updateCreatedAccountUsernameFailed'})
+    return res.status(500).send({ result: 'error', error: 'updateCreatedAccountUsernameFailed' })
   }
   log.info({ user: updated.id }, 'Account created')
 
@@ -86,14 +112,13 @@ UserController.prototype.signup = async (req, res, tools) => {
           language: req.body.language,
           email: req.body.email,
           id: record.id,
-          ehash: emailhash
-        })
-      }
+          ehash: emailhash,
+        }),
+      },
     })
-  }
-  catch(err) {
+  } catch (err) {
     log.warn(err, 'Unable to create confirmation at signup')
-    return res.status(500).send({ result: 'error', error: 'updateCreatedAccountUsernameFailed'})
+    return res.status(500).send({ result: 'error', error: 'updateCreatedAccountUsernameFailed' })
   }
 
   // Send out signup email
@@ -103,10 +128,9 @@ UserController.prototype.signup = async (req, res, tools) => {
       req.body.to,
       ...emailTemplate.signup(req.body.email, req.body.language, confirmation.id)
     )
-  }
-  catch(err) {
+  } catch (err) {
     log.warn(err, 'Unable to send email')
-    return res.status(500).send({ error: 'failedToSendSignupEmail', result})
+    return res.status(500).send({ error: 'failedToSendSignupEmail', result })
   }
 
   if (req.body.unittest && req.body.email.split('@').pop() === 'mailtrap.freesewing.dev') {
@@ -115,7 +139,7 @@ UserController.prototype.signup = async (req, res, tools) => {
       result: 'success',
       status: 'created',
       email: req.body.email,
-      confirmation: confirmation.id
+      confirmation: confirmation.id,
     })
   }
 
@@ -123,7 +147,6 @@ UserController.prototype.signup = async (req, res, tools) => {
     ? res.status(201).send({ result: 'success', status: 'created', email: req.body.email })
     : res.status(500).send({ error: 'unableToSendSignupEmail', result })
 }
-
 
 /*
  * Confirm account (after signup)
@@ -133,50 +156,78 @@ UserController.prototype.signup = async (req, res, tools) => {
  */
 UserController.prototype.confirm = async (req, res, tools) => {
   if (!req.params.id) return res.status(404).send({ error: 'missingConfirmationId', result })
-  if (Object.keys(req.body) < 1) return res.status(400).json({ error: 'postBodyMissing', result})
-  if (!req.body.consent || req.body.consent < 1) return res.status(400).send({ error: 'consentRequired', result })
+  if (Object.keys(req.body) < 1) return res.status(400).json({ error: 'postBodyMissing', result })
+  if (!req.body.consent || req.body.consent < 1)
+    return res.status(400).send({ error: 'consentRequired', result })
 
   // Destructure what we need from tools
-  const { prisma, config, encrypt } = tools
+  const { prisma, config, decrypt } = tools
 
   // Retrieve confirmation record
   let confirmation
   try {
     confirmation = await prisma.confirmation.findUnique({
       where: {
-        id: req.params.id
-      }
+        id: req.params.id,
+      },
     })
   } catch (err) {
-    log.warn(err, `Could not find confirmation id ${req.params.id}`)
-    return res.status(404).send({ error: 'failedToRetrieveConfirmationId', result})
+    log.warn(err, `Could not lookup confirmation id ${req.params.id}`)
+    return res.status(404).send({ error: 'failedToRetrieveConfirmationId', result })
   }
-  console.log({confirmation, id: req.params})
-  return res.status(200).send({})
+  if (!confirmation) {
+    log.warn(err, `Could not find confirmation id ${req.params.id}`)
+    return res.status(404).send({ error: 'failedToFindConfirmationId', result })
+  }
+  if (confirmation.type !== 'signup') {
+    log.warn(err, `Confirmation mismatch; ${req.params.id} is not a signup id`)
+    return res.status(404).send({ error: 'confirmationIdTypeMismatch', result })
+  }
+  const data = decrypt(confirmation.data)
 
-  /*
-  Confirmation.findById(req.body.id, (err, confirmation) => {
-    if (err) return res.sendStatus(400)
-    if (confirmation === null) return res.sendStatus(401)
-    User.findOne({ handle: confirmation.data.handle }, (err, user) => {
-      if (err) return res.sendStatus(400)
-      if (user === null) return res.sendStatus(401)
-      user.status = 'active'
-      user.consent = req.body.consent
-      user.time.login = new Date()
-      log.info('accountActivated', { handle: user.handle })
-      let account = user.account()
-      let token = getToken(account)
-      user.save(function (err) {
-        if (err) return res.sendStatus(400)
-        Confirmation.findByIdAndDelete(req.body.id, (err, confirmation) => {
-          return res.send({ account, people: {}, patterns: {}, token })
-        })
-      })
+  // Retrieve user account
+  let account
+  try {
+    account = await prisma.user.findUnique({
+      where: {
+        id: data.id,
+      },
     })
+  } catch (err) {
+    log.warn(err, `Could not lookup user id ${data.id} from confirmation data`)
+    return res.status(404).send({ error: 'failedToRetrieveUserIdFromConfirmationData', result })
+  }
+  if (!account) {
+    log.warn(err, `Could not find user id ${data.id} from confirmation data`)
+    return res.status(404).send({ error: 'failedToLoadUserFromConfirmationData', result })
+  }
+
+  // Update user consent and status
+  let updateUser
+  try {
+    updateUser = prisma.user.update({
+      where: {
+        id: data.id,
+      },
+      data: {
+        status: 1,
+        consent: req.body.consent,
+        lastLogin: 'CURRENT_TIMESTAMP',
+      },
+    })
+  } catch (err) {
+    log.warn(err, `Could not update user id ${data.id} after confirmation`)
+    return res.status(404).send({ error: 'failedToUpdateUserAfterConfirmation', result })
+  }
+
+  // Account is now active, let's return a passwordless login
+  return res.status(200).send({
+    result: 'success',
+    token: getToken(account, config),
+    account: asAccount({ ...account, status: 1, consent: req.body.consent }, decrypt),
   })
-  */
 }
+
 /*
 UserController.prototype.login = function (req, res, prisma, config) {
   if (!req.body || !req.body.username) return res.sendStatus(400)

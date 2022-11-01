@@ -32,7 +32,7 @@ model User {
   email      String
   ihash      String
   initial    String
-  lastlogin  DateTime?
+  lastLogin  DateTime?
   newsletter Boolean   @default(false)
   password   String
   patron     Int       @default(0)
