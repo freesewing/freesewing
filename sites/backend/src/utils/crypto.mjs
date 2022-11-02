@@ -1,7 +1,7 @@
 import bcrypt from 'bcryptjs' // Required for legacy password hashes
 import { createHash, createCipheriv, createDecipheriv, scryptSync, randomBytes } from 'crypto'
 import { log } from './log.mjs'
-import { asJson, clean } from './index.mjs'
+import { asJson } from './index.mjs'
 
 /*
  * Hashes an email address (or other string)
@@ -14,7 +14,7 @@ export const hash = (string) => createHash('sha256').update(string).digest('hex'
  * This is not used in anything cryptographic. It is only used as a temporary
  * username to avoid username collisions
  */
-export const randomString = (bytes=8) => randomBytes(bytes).toString('hex')
+export const randomString = (bytes = 8) => randomBytes(bytes).toString('hex')
 
 /*
  * Returns an object holding encrypt() and decrypt() methods

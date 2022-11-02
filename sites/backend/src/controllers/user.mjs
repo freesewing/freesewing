@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken'
 //import fs from 'fs'
 import Zip from 'jszip'
 //import rimraf from 'rimraf'
-import { hash, hashPassword, randomString } from '../utils/crypto.mjs'
+import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
 import { clean, asJson } from '../utils/index.mjs'
 import { log } from '../utils/log.mjs'
 import { emailTemplate } from '../utils/email.mjs'
@@ -260,15 +260,41 @@ UserController.prototype.login = async function (req, res, tools) {
     })
   } catch (err) {
     log.warn(err, `Error while trying to find username: ${req.body.username}`)
-    return res.status(401).send({ error: 'logingFailed', result })
+    return res.status(401).send({ error: 'loginFailed', result })
   }
   if (!account) {
     log.warn(`Login attempt for non-existing user: ${req.body.username} from ${req.ip}`)
-    return res.status(401).send({ error: 'logingFailed', result })
+    return res.status(401).send({ error: 'loginFailed', result })
+  }
+
+  // Account found, check password
+  const [valid, updatedPasswordField] = verifyPassword(req.body.password, account.password)
+  if (!valid) {
+    log.warn(`Wrong password for existing user: ${req.body.username} from ${req.ip}`)
+    return res.status(401).send({ error: 'loginFailed', result })
   }
 
   // Login success
   log.info(`Login by user ${account.id} (${account.username})`)
+  if (updatedPasswordField) {
+    // Update the password field with a v3 hash
+    let updateUser
+    try {
+      updateUser = await prisma.user.update({
+        where: {
+          id: account.id,
+        },
+        data: {
+          password: updatedPasswordField,
+        },
+      })
+    } catch (err) {
+      log.warn(
+        err,
+        `Could not update password field with v3 hash for user id ${account.id} (${account.username})`
+      )
+    }
+  }
 
   return res.status(200).send({
     result: 'success',

@@ -87,6 +87,7 @@ describe(`${user} Signup flow and authentication`, () => {
         expect(typeof res.body.account.id).to.equal(`number`)
         store.token = res.body.token
         store.username = res.body.account.username
+        store.userid = res.body.account.id
         done()
       })
   })
@@ -106,7 +107,141 @@ describe(`${user} Signup flow and authentication`, () => {
       })
   })
 
+  step(`${user} Should not login with the wrong password`, (done) => {
+    chai
+      .request(config.api)
+      .post('/login')
+      .send({
+        username: store.username,
+        password: store.username,
+      })
+      .end((err, res) => {
+        expect(res.status).to.equal(401)
+        expect(res.type).to.equal('application/json')
+        expect(res.charset).to.equal('utf-8')
+        expect(res.body.result).to.equal(`error`)
+        expect(res.body.error).to.equal(`loginFailed`)
+        done()
+      })
+  })
+
   step(`${user} Should login with username and password`, (done) => {
+    chai
+      .request(config.api)
+      .post('/login')
+      .send({
+        username: store.username,
+        password: data.password,
+      })
+      .end((err, res) => {
+        expect(res.status).to.equal(200)
+        expect(res.type).to.equal('application/json')
+        expect(res.charset).to.equal('utf-8')
+        expect(res.body.result).to.equal(`success`)
+        expect(res.body.account.email).to.equal(data.email)
+        expect(res.body.account.username).to.equal(store.username)
+        expect(res.body.account.lusername).to.equal(store.username.toLowerCase())
+        expect(typeof res.body.token).to.equal(`string`)
+        expect(typeof res.body.account.id).to.equal(`number`)
+        store.token = res.body.token
+        done()
+      })
+  })
+
+  step(`${user} Should login with USERNAME and password`, (done) => {
+    chai
+      .request(config.api)
+      .post('/login')
+      .send({
+        username: store.username.toUpperCase(),
+        password: data.password,
+      })
+      .end((err, res) => {
+        expect(res.status).to.equal(200)
+        expect(res.type).to.equal('application/json')
+        expect(res.charset).to.equal('utf-8')
+        expect(res.body.result).to.equal(`success`)
+        expect(res.body.account.email).to.equal(data.email)
+        expect(res.body.account.username).to.equal(store.username)
+        expect(res.body.account.lusername).to.equal(store.username.toLowerCase())
+        expect(typeof res.body.token).to.equal(`string`)
+        expect(typeof res.body.account.id).to.equal(`number`)
+        store.token = res.body.token
+        done()
+      })
+  })
+
+  step(`${user} Should login with email and password`, (done) => {
+    chai
+      .request(config.api)
+      .post('/login')
+      .send({
+        username: data.email,
+        password: data.password,
+      })
+      .end((err, res) => {
+        expect(res.status).to.equal(200)
+        expect(res.type).to.equal('application/json')
+        expect(res.charset).to.equal('utf-8')
+        expect(res.body.result).to.equal(`success`)
+        expect(res.body.account.email).to.equal(data.email)
+        expect(res.body.account.username).to.equal(store.username)
+        expect(res.body.account.lusername).to.equal(store.username.toLowerCase())
+        expect(typeof res.body.token).to.equal(`string`)
+        expect(typeof res.body.account.id).to.equal(`number`)
+        store.token = res.body.token
+        done()
+      })
+  })
+
+  step(`${user} Should login with EMAIL and password`, (done) => {
+    chai
+      .request(config.api)
+      .post('/login')
+      .send({
+        username: data.email.toUpperCase(),
+        password: data.password,
+      })
+      .end((err, res) => {
+        expect(res.status).to.equal(200)
+        expect(res.type).to.equal('application/json')
+        expect(res.charset).to.equal('utf-8')
+        expect(res.body.result).to.equal(`success`)
+        expect(res.body.account.email).to.equal(data.email)
+        expect(res.body.account.username).to.equal(store.username)
+        expect(res.body.account.lusername).to.equal(store.username.toLowerCase())
+        expect(typeof res.body.token).to.equal(`string`)
+        expect(typeof res.body.account.id).to.equal(`number`)
+        store.token = res.body.token
+        done()
+      })
+  })
+
+  step(`${user} Should login with userid and password`, (done) => {
+    chai
+      .request(config.api)
+      .post('/login')
+      .send({
+        username: store.userid,
+        password: data.password,
+      })
+      .end((err, res) => {
+        expect(res.status).to.equal(200)
+        expect(res.type).to.equal('application/json')
+        expect(res.charset).to.equal('utf-8')
+        expect(res.body.result).to.equal(`success`)
+        expect(res.body.account.email).to.equal(data.email)
+        expect(res.body.account.username).to.equal(store.username)
+        expect(res.body.account.lusername).to.equal(store.username.toLowerCase())
+        expect(typeof res.body.token).to.equal(`string`)
+        expect(typeof res.body.account.id).to.equal(`number`)
+        store.token = res.body.token
+        done()
+      })
+  })
+
+  /*
+  step(`${user} Should login with email address and password`, (done) => {
     chai
       .request(config.api)
       .post('/login')
@@ -129,27 +264,9 @@ describe(`${user} Signup flow and authentication`, () => {
       })
   })
 
-  /*
 
 
 describe('Login/Logout and session handling', () => {
-  it('should login with the username', (done) => {
-    chai
-      .request(config.backend)
-      .post('/login')
-      .send({
-        username: config.user.username,
-        password: config.user.password,
-      })
-      .end((err, res) => {
-        res.should.have.status(200)
-        let data = JSON.parse(res.text)
-        data.account.username.should.equal(config.user.username)
-        data.token.should.be.a('string')
-        config.user.token = data.token
-        done()
-      })
-  })
 
   it('should login with the email address', (done) => {
     chai

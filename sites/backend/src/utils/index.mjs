@@ -4,7 +4,8 @@ import { api } from '../config.mjs'
  * Cleans a string (typically email) for hashing
  */
 export const clean = (string) => {
-  if (typeof string !== 'string') throw 'clean() only takes a string as input'
+  if (typeof string === 'number') string = string.toString()
+  if (typeof string !== 'string') throw 'clean() only takes a string or number as input'
 
   return string.toLowerCase().trim()
 }
