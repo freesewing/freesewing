@@ -1,7 +1,7 @@
-export const avatar = {
-  name: `avatar`,
+export const userimg = {
+  name: `userimg`,
   type: 'document',
-  title: `User Avatar`,
+  title: `User Image`,
   fields: [
     {
       name: 'userid',
@@ -9,7 +9,24 @@ export const avatar = {
       title: 'User ID',
     },
     {
-      name: 'image',
+      name: 'img',
+      type: 'image',
+      title: 'Image',
+    },
+  ],
+}
+export const personimg = {
+  name: `personimg`,
+  type: 'document',
+  title: `Person Image`,
+  fields: [
+    {
+      name: 'personid',
+      type: 'number',
+      title: 'Person ID',
+    },
+    {
+      name: 'img',
       type: 'image',
       title: 'Image',
     },

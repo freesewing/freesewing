@@ -3,7 +3,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import { blogSchemaBuilder } from './blog.js'
 import { showcaseSchemaBuilder } from './showcase.js'
 import { newsletter } from './newsletter.js'
-import { avatar } from './avatar.js'
+import { userimg, personimg } from './avatar.js'
 
 const languages = ['en', 'nl', 'de', 'es', 'fr']
 
@@ -13,6 +13,7 @@ export default createSchema({
     ...languages.map((lang) => blogSchemaBuilder(lang)),
     ...languages.map((lang) => showcaseSchemaBuilder(lang)),
     newsletter,
-    avatar,
+    userimg,
+    personimg,
   ]),
 })
