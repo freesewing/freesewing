@@ -1,4 +1,4 @@
-import { api } from '../config.mjs'
+import { website } from '../config.mjs'
 
 /*
  * Cleans a string (typically email) for hashing
@@ -20,7 +20,7 @@ export const asJson = JSON.stringify
  * Builds a url using the correct scheme, language and domain
  */
 export const i18nUrl = (lang, path) => {
-  let url = api
+  let url = `${website.scheme}://${website.domain}`
   if (lang !== 'en') url += `/${lang}`
 
   return url + path

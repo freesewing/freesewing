@@ -1,11 +1,13 @@
 //import { log, email, ehash, newHandle, uniqueHandle } from '../utils'
 import jwt from 'jsonwebtoken'
+import axios from 'axios'
 //import path from 'path'
 //import fs from 'fs'
 import Zip from 'jszip'
 //import rimraf from 'rimraf'
 import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
 import { clean, asJson } from '../utils/index.mjs'
+import { getUserAvatar } from '../utils/sanity.mjs'
 import { log } from '../utils/log.mjs'
 import { emailTemplate } from '../utils/email.mjs'
 
@@ -333,78 +335,37 @@ UserController.prototype.readAccount = async (req, res, tools) => {
   })
 }
 
-/*
+UserController.prototype.update = async (req, res, tools) => {
+  if (!req.user?._id) return res.status(400).send({ error: 'bearerMissing', result })
 
-// For people who have forgotten their password, or password-less logins
-UserController.prototype.confirmationLogin = function (req, res) {
-  if (!req.body || !req.body.id) return res.sendStatus(400)
-  Confirmation.findById(req.body.id, (err, confirmation) => {
-    if (err) return res.sendStatus(400)
-    if (confirmation === null) return res.sendStatus(401)
-    User.findOne({ handle: confirmation.data.handle }, (err, user) => {
-      if (err) return res.sendStatus(400)
-      if (user === null) {
-        return res.sendStatus(401)
-      }
-      if (user.status !== 'active') return res.sendStatus(403)
-      else {
-        log.info('confirmationLogin', { user, req })
-        let account = user.account()
-        let token = getToken(account)
-        let people = {}
-        Person.find({ user: user.handle }, (err, personList) => {
-          if (err) return res.sendStatus(400)
-          for (let person of personList) people[person.handle] = person.info()
-          let patterns = {}
-          Pattern.find({ user: user.handle }, (err, patternList) => {
-            if (err) return res.sendStatus(400)
-            for (let pattern of patternList) patterns[pattern.handle] = pattern
-            return user.updateLoginTime(() => res.send({ account, people, patterns, token }))
-          })
-        })
-      }
+  // Destructure what we need from tools
+  const { prisma, decrypt } = tools
+
+  // Retrieve user account
+  let account
+  try {
+    account = await prisma.user.findUnique({
+      where: {
+        id: req.user._id,
+      },
     })
-  })
-}
+  } catch (err) {
+    log.warn(err, `Could not lookup user id ${req.user._id} from token data`)
+    return res.status(404).send({ error: 'failedToRetrieveUserIdFromTokenData', result })
+  }
+  if (!account) {
+    log.warn(err, `Could not find user id ${req.user._id} from token data`)
+    return res.status(404).send({ error: 'failedToLoadUserFromTokenData', result })
+  }
 
-// CRUD basics
-
-// Note that the user is already crearted (in signup)
-// we just need to active the account
-UserController.prototype.create = (req, res) => {
-  if (!req.body) return res.sendStatus(400)
-  if (!req.body.consent || !req.body.consent.profile) return res.status(400).send('consentRequired')
-  Confirmation.findById(req.body.id, (err, confirmation) => {
-    if (err) return res.sendStatus(400)
-    if (confirmation === null) return res.sendStatus(401)
-    User.findOne({ handle: confirmation.data.handle }, (err, user) => {
-      if (err) return res.sendStatus(400)
-      if (user === null) return res.sendStatus(401)
-      user.status = 'active'
-      user.consent = req.body.consent
-      user.time.login = new Date()
-      log.info('accountActivated', { handle: user.handle })
-      let account = user.account()
-      let token = getToken(account)
-      user.save(function (err) {
-        if (err) return res.sendStatus(400)
-        Confirmation.findByIdAndDelete(req.body.id, (err, confirmation) => {
-          return res.send({ account, people: {}, patterns: {}, token })
-        })
-      })
-    })
-  })
-}
-
-UserController.prototype.readProfile = (req, res) => {
-  User.findOne({ username: req.params.username }, (err, user) => {
-    if (err) return res.sendStatus(404)
-    if (user === null) return res.sendStatus(404)
-    else res.send(user.profile())
-  })
-}
-
-UserController.prototype.update = (req, res) => {
+  // Account loaded - Handle various updates
+  const data = req.body
+  if (typeof data.avatar !== 'undefined') {
+    // Catch people submitting without uploading an avatar
+    if (data.avatar) user.saveAvatar(data.avatar)
+    return saveAndReturnAccount(res, user)
+  }
+  /*
   var async = 0
   if (!req.user._id) return res.sendStatus(400)
   User.findById(req.user._id, async (err, user) => {
@@ -490,6 +451,79 @@ UserController.prototype.update = (req, res) => {
         })
       }
     }
+  })
+  */
+  return res.status(200).send({})
+}
+
+/*
+
+// For people who have forgotten their password, or password-less logins
+UserController.prototype.confirmationLogin = function (req, res) {
+  if (!req.body || !req.body.id) return res.sendStatus(400)
+  Confirmation.findById(req.body.id, (err, confirmation) => {
+    if (err) return res.sendStatus(400)
+    if (confirmation === null) return res.sendStatus(401)
+    User.findOne({ handle: confirmation.data.handle }, (err, user) => {
+      if (err) return res.sendStatus(400)
+      if (user === null) {
+        return res.sendStatus(401)
+      }
+      if (user.status !== 'active') return res.sendStatus(403)
+      else {
+        log.info('confirmationLogin', { user, req })
+        let account = user.account()
+        let token = getToken(account)
+        let people = {}
+        Person.find({ user: user.handle }, (err, personList) => {
+          if (err) return res.sendStatus(400)
+          for (let person of personList) people[person.handle] = person.info()
+          let patterns = {}
+          Pattern.find({ user: user.handle }, (err, patternList) => {
+            if (err) return res.sendStatus(400)
+            for (let pattern of patternList) patterns[pattern.handle] = pattern
+            return user.updateLoginTime(() => res.send({ account, people, patterns, token }))
+          })
+        })
+      }
+    })
+  })
+}
+
+// CRUD basics
+
+// Note that the user is already crearted (in signup)
+// we just need to active the account
+UserController.prototype.create = (req, res) => {
+  if (!req.body) return res.sendStatus(400)
+  if (!req.body.consent || !req.body.consent.profile) return res.status(400).send('consentRequired')
+  Confirmation.findById(req.body.id, (err, confirmation) => {
+    if (err) return res.sendStatus(400)
+    if (confirmation === null) return res.sendStatus(401)
+    User.findOne({ handle: confirmation.data.handle }, (err, user) => {
+      if (err) return res.sendStatus(400)
+      if (user === null) return res.sendStatus(401)
+      user.status = 'active'
+      user.consent = req.body.consent
+      user.time.login = new Date()
+      log.info('accountActivated', { handle: user.handle })
+      let account = user.account()
+      let token = getToken(account)
+      user.save(function (err) {
+        if (err) return res.sendStatus(400)
+        Confirmation.findByIdAndDelete(req.body.id, (err, confirmation) => {
+          return res.send({ account, people: {}, patterns: {}, token })
+        })
+      })
+    })
+  })
+}
+
+UserController.prototype.readProfile = (req, res) => {
+  User.findOne({ username: req.params.username }, (err, user) => {
+    if (err) return res.sendStatus(404)
+    if (user === null) return res.sendStatus(404)
+    else res.send(user.profile())
   })
 }
 

@@ -39,6 +39,15 @@ const config = {
       region: 'us-east-1',
     },
   },
+  sanity: {
+    project: process.env.SANITY_PROJECT,
+    dataset: 'production',
+    token: process.env.SANITY_TOKEN,
+    version: process.env.SANITY_VERSION || 'v2022-10-31',
+    api: `https://${process.env.SANITY_PROJECT || 'missing-project-id'}.api.sanity.io/${
+      process.env.SANITY_VERSION || 'v2022-10-31'
+    }`,
+  },
   oauth: {
     github: {
       clientId: process.env.API_GITHUB_CLIENT_ID,
@@ -85,6 +94,10 @@ const config = {
     },
   },
 }
+
+// Stand-alone config
+export const sanity = config.sanity
+export const website = config.website
 
 /*
  * This method is how you load the config.

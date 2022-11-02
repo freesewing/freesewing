@@ -19,20 +19,10 @@ export function userRoutes(tools) {
     User.readAccount(req, res, tools)
   )
 
-  // Create account
-  //app.post(
-  //  '/account',
-  //  (req, res) => User.create(req, res, tools)
-  //)
+  // Update account
+  app.put('/account', passport.authenticate(...jwt), (req, res) => User.update(req, res, tools))
 
   /*
-
-  // Update account
-  app.put(
-    '/account',
-    passport.authenticate(...jwt),
-    (req, res) => User.update(req, res, params)
-  )
 
   // Remove account
   app.delete(

@@ -257,8 +257,31 @@ describe(`${user} Signup flow and authentication`, () => {
         done()
       })
   })
+})
 
+describe(`${user} Account management`, () => {
   /*
+  step(`${user} Should update the account avatar`, (done) => {
+    chai
+      .request(config.api)
+      .put('/account')
+      .set('Authorization', 'Bearer ' + store.token)
+      .send({
+        avatar: data.avatar,
+      })
+      .end((err, res) => {
+        console.log(res)
+        expect(res.status).to.equal(200)
+        expect(res.type).to.equal('application/json')
+        expect(res.charset).to.equal('utf-8')
+        expect(res.body.result).to.equal(`success`)
+        done()
+      })
+  })
+  */
+})
+
+/*
 
 
 describe('Account management', () => {
@@ -507,4 +530,3 @@ describe('Other user endpoints', () => {
       })
   })
   */
-})
