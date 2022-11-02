@@ -4,7 +4,7 @@ export const userimg = {
   title: `User Image`,
   fields: [
     {
-      name: 'userid',
+      name: 'recordid',
       type: 'number',
       title: 'User ID',
     },
@@ -21,7 +21,7 @@ export const personimg = {
   title: `Person Image`,
   fields: [
     {
-      name: 'personid',
+      name: 'recordid',
       type: 'number',
       title: 'Person ID',
     },
