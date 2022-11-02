@@ -240,15 +240,11 @@ describe(`${user} Signup flow and authentication`, () => {
       })
   })
 
-  /*
-  step(`${user} Should login with email address and password`, (done) => {
+  step(`${user} Should load account with JWT`, (done) => {
     chai
       .request(config.api)
-      .post('/login')
-      .send({
-        username: store.username,
-        password: data.email,
-      })
+      .get('/account')
+      .set('Authorization', 'Bearer ' + store.token)
       .end((err, res) => {
         expect(res.status).to.equal(200)
         expect(res.type).to.equal('application/json')
@@ -257,51 +253,13 @@ describe(`${user} Signup flow and authentication`, () => {
         expect(res.body.account.email).to.equal(data.email)
         expect(res.body.account.username).to.equal(store.username)
         expect(res.body.account.lusername).to.equal(store.username.toLowerCase())
-        expect(typeof res.body.token).to.equal(`string`)
         expect(typeof res.body.account.id).to.equal(`number`)
-        store.token = res.body.token
         done()
       })
   })
 
+  /*
 
-
-describe('Login/Logout and session handling', () => {
-
-  it('should login with the email address', (done) => {
-    chai
-      .request(config.backend)
-      .post('/login')
-      .send({
-        username: config.user.email,
-        password: config.user.password,
-      })
-      .end((err, res) => {
-        res.should.have.status(200)
-        let data = JSON.parse(res.text)
-        data.account.username.should.equal(config.user.username)
-        data.token.should.be.a('string')
-        done()
-      })
-  })
-
-  it('should load account with JSON Web Token', (done) => {
-    chai
-      .request(config.backend)
-      .get('/account')
-      .set('Authorization', 'Bearer ' + config.user.token)
-      .end((err, res) => {
-        if (err) console.log(err)
-        let data = JSON.parse(res.text)
-        res.should.have.status(200)
-        data.account.username.should.equal(config.user.username)
-        // Enable this once cleanup is implemented
-        //Object.keys(data.recipes).length.should.equal(0)
-        //Object.keys(data.people).length.should.equal(0)
-        done()
-      })
-  })
-})
 
 describe('Account management', () => {
   it('should update the account avatar', (done) => {

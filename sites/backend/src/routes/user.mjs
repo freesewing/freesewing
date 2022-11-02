@@ -14,6 +14,11 @@ export function userRoutes(tools) {
   // Login
   app.post('/login', (req, res) => User.login(req, res, tools))
 
+  // Read account (own data)
+  app.get('/account', passport.authenticate(...jwt), (req, res) =>
+    User.readAccount(req, res, tools)
+  )
+
   // Create account
   //app.post(
   //  '/account',
@@ -21,12 +26,6 @@ export function userRoutes(tools) {
   //)
 
   /*
-  // Read account (own data)
-  app.get(
-    '/account',
-    passport.authenticate(...jwt),
-    (req, res) => User.readAccount(req, res, params)
-  )
 
   // Update account
   app.put(

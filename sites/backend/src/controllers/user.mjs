@@ -209,14 +209,14 @@ UserController.prototype.confirm = async (req, res, tools) => {
   // Update user consent and status
   let updateUser
   try {
-    updateUser = prisma.user.update({
+    updateUser = await prisma.user.update({
       where: {
-        id: data.id,
+        id: account.id,
       },
       data: {
         status: 1,
         consent: req.body.consent,
-        lastLogin: 'CURRENT_TIMESTAMP',
+        lastLogin: new Date(),
       },
     })
   } catch (err) {
@@ -302,6 +302,37 @@ UserController.prototype.login = async function (req, res, tools) {
     account: asAccount({ ...account }, decrypt),
   })
 }
+
+UserController.prototype.readAccount = async (req, res, tools) => {
+  if (!req.user?._id) return res.status(400).send({ error: 'bearerMissing', result })
+
+  // Destructure what we need from tools
+  const { prisma, decrypt } = tools
+
+  // Retrieve user account
+  let account
+  try {
+    account = await prisma.user.findUnique({
+      where: {
+        id: req.user._id,
+      },
+    })
+  } catch (err) {
+    log.warn(err, `Could not lookup user id ${req.user._id} from token data`)
+    return res.status(404).send({ error: 'failedToRetrieveUserIdFromTokenData', result })
+  }
+  if (!account) {
+    log.warn(err, `Could not find user id ${req.user._id} from token data`)
+    return res.status(404).send({ error: 'failedToLoadUserFromTokenData', result })
+  }
+
+  // Return account data
+  return res.status(200).send({
+    result: 'success',
+    account: asAccount({ ...account }, decrypt),
+  })
+}
+
 /*
 
 // For people who have forgotten their password, or password-less logins
@@ -362,28 +393,6 @@ UserController.prototype.create = (req, res) => {
         })
       })
     })
-  })
-}
-
-UserController.prototype.readAccount = (req, res) => {
-  if (!req.user._id) return res.sendStatus(400)
-  User.findById(req.user._id, (err, user) => {
-    if (user !== null) {
-      log.info('ping', { user, req })
-      const people = {}
-      Person.find({ user: user.handle }, (err, personList) => {
-        if (err) return res.sendStatus(400)
-        for (let person of personList) people[person.handle] = person.info()
-        const patterns = {}
-        Pattern.find({ user: user.handle }, (err, patternList) => {
-          if (err) return res.sendStatus(400)
-          for (let pattern of patternList) patterns[pattern.handle] = pattern.export()
-          return res.send({ account: user.account(), people, patterns })
-        })
-      })
-    } else {
-      return res.sendStatus(400)
-    }
   })
 }
 

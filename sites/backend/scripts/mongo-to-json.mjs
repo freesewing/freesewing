@@ -116,6 +116,7 @@ function migrateUser(entry) {
     initial: entry.initial,
     newsletter: entry.newsletter,
     img: entry.img,
+    lastLogin,
   }
 }
 
