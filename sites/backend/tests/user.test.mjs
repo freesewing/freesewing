@@ -6,12 +6,17 @@ import { randomString } from '../src/utils/crypto.mjs'
 const config = verifyConfig()
 const expect = chai.expect
 chai.use(http)
+const user = '🧑'
 
-const email = `test_${randomString()}@mailtrap.freesewing.dev`
 const store = {}
+const data = {
+  email: `test_${randomString()}@mailtrap.freesewing.dev`,
+  language: 'en',
+  password: 'One two one two, this is just a test',
+}
 
-describe('Non language-specific User controller signup routes', () => {
-  it('Should return 400 on signup without body', (done) => {
+describe(`${user} Signup flow and authentication`, () => {
+  it(`${user} Should return 400 on signup without body`, (done) => {
     chai
       .request(config.api)
       .post('/signup')
@@ -25,14 +30,8 @@ describe('Non language-specific User controller signup routes', () => {
       })
   })
 
-  const data = {
-    email,
-    language: 'en',
-    password: 'One two one two, this is just a test',
-  }
-
   Object.keys(data).map((key) => {
-    it(`Should not create signup without ${key}`, (done) => {
+    it(`${user} Should not allow signup without ${key}`, (done) => {
       chai
         .request(config.api)
         .post('/signup')
@@ -55,7 +54,7 @@ describe('Non language-specific User controller signup routes', () => {
     })
   })
 
-  step(`should signup a new user (${email})`, (done) => {
+  step(`${user} Should signup new user ${data.email}`, (done) => {
     chai
       .request(config.api)
       .post('/signup')
@@ -68,13 +67,13 @@ describe('Non language-specific User controller signup routes', () => {
         expect(res.type).to.equal('application/json')
         expect(res.charset).to.equal('utf-8')
         expect(res.body.result).to.equal(`success`)
-        expect(res.body.email).to.equal(email)
+        expect(res.body.email).to.equal(data.email)
         store.confirmation = res.body.confirmation
         done()
       })
   })
 
-  step(`should confirm a new user (${email})`, (done) => {
+  step(`${user} Should confirm new user (${data.email})`, (done) => {
     chai
       .request(config.api)
       .post(`/confirm/signup/${store.confirmation}`)
@@ -87,11 +86,12 @@ describe('Non language-specific User controller signup routes', () => {
         expect(typeof res.body.token).to.equal(`string`)
         expect(typeof res.body.account.id).to.equal(`number`)
         store.token = res.body.token
+        store.username = res.body.account.username
         done()
       })
   })
 
-  step('should fail to signup an existing email address', (done) => {
+  step(`${user} Should fail to signup an existing email address`, (done) => {
     chai
       .request(config.api)
       .post('/signup')
@@ -102,6 +102,29 @@ describe('Non language-specific User controller signup routes', () => {
         expect(res.charset).to.equal('utf-8')
         expect(res.body.result).to.equal(`error`)
         expect(res.body.error).to.equal('emailExists')
+        done()
+      })
+  })
+
+  step(`${user} Should login with username and password`, (done) => {
+    chai
+      .request(config.api)
+      .post('/login')
+      .send({
+        username: store.username,
+        password: data.email,
+      })
+      .end((err, res) => {
+        expect(res.status).to.equal(200)
+        expect(res.type).to.equal('application/json')
+        expect(res.charset).to.equal('utf-8')
+        expect(res.body.result).to.equal(`success`)
+        expect(res.body.account.email).to.equal(data.email)
+        expect(res.body.account.username).to.equal(store.username)
+        expect(res.body.account.lusername).to.equal(store.username.toLowerCase())
+        expect(typeof res.body.token).to.equal(`string`)
+        expect(typeof res.body.account.id).to.equal(`number`)
+        store.token = res.body.token
         done()
       })
   })

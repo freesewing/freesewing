@@ -41,7 +41,8 @@ model User {
   role       String    @default("user")
   status     Int       @default(0)
   updatedAt  DateTime? @updatedAt
-  username   String    @unique
+  username   String
+  lusername  String    @unique
 
   @@index([ihash])
 }

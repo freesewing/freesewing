@@ -3,20 +3,16 @@ import { UserController } from '../controllers/user.mjs'
 const User = new UserController()
 const jwt = ['jwt', { session: false }]
 
-
 export function userRoutes(tools) {
   const { app, passport } = tools
   // Sign up
-  app.post(
-    '/signup',
-    (req, res) => User.signup(req, res, tools)
-  )
+  app.post('/signup', (req, res) => User.signup(req, res, tools))
 
   // Confirm account
-  app.post(
-    '/confirm/signup/:id',
-    (req, res) => User.confirm(req, res, tools)
-  )
+  app.post('/confirm/signup/:id', (req, res) => User.confirm(req, res, tools))
+
+  // Login
+  app.post('/login', (req, res) => User.login(req, res, tools))
 
   // Create account
   //app.post(
@@ -79,11 +75,6 @@ export function userRoutes(tools) {
     (req, res) => User.resend(req, res, params)
   )
 
-  // Login
-  app.post(
-    '/login',
-    (req, res) => User.login(req, res, params)
-  )
 
   // Get list of patrons
   app.get(
@@ -105,4 +96,3 @@ export function userRoutes(tools) {
   )
   */
 }
-

@@ -28,6 +28,7 @@ const asAccount = (user, decrypt) => ({
   status: user.status,
   updatedAt: user.updatedAt,
   username: user.username,
+  lusername: user.lusername,
 })
 
 const getToken = (user, config) =>
@@ -72,6 +73,7 @@ UserController.prototype.signup = async (req, res, tools) => {
   // It does not. Creating user entry
   let record
   try {
+    const username = clean(randomString()) // Temporary username,
     record = await prisma.user.create({
       data: {
         data: asJson({ settings: { language: req.body.language } }),
@@ -80,7 +82,8 @@ UserController.prototype.signup = async (req, res, tools) => {
         ihash: emailhash,
         initial: encrypt(clean(req.body.email)),
         password: asJson(hashPassword(req.body.password)),
-        username: randomString(), // Temporary username,
+        username,
+        lusername: username.toLowerCase(),
       },
     })
   } catch (err) {
@@ -94,6 +97,7 @@ UserController.prototype.signup = async (req, res, tools) => {
       where: { id: record.id },
       data: {
         username: `user-${record.id}`,
+        lusername: `user-${record.id}`,
       },
     })
   } catch (err) {
@@ -229,47 +233,50 @@ UserController.prototype.confirm = async (req, res, tools) => {
 }
 
 /*
-UserController.prototype.login = function (req, res, prisma, config) {
-  if (!req.body || !req.body.username) return res.sendStatus(400)
-  User.findOne(
-    {
-      $or: [
-        { username: req.body.username.toLowerCase().trim() },
-        { username: req.body.username.trim() },
-        { ehash: ehash(req.body.username) },
-      ],
-    },
-    (err, user) => {
-      if (err) return res.sendStatus(400)
-      if (user === null) return res.sendStatus(401)
-      user.verifyPassword(req.body.password, (err, valid) => {
-        if (err) return res.sendStatus(400)
-        else if (valid) {
-          if (user.status !== 'active') return res.sendStatus(403)
-          else {
-            log.info('login', { user, req })
-            let account = user.account()
-            let token = getToken(account)
-            let people = {}
-            Person.find({ user: user.handle }, (err, personList) => {
-              if (err) return res.sendStatus(400)
-              for (let person of personList) people[person.handle] = person.info()
-              let patterns = {}
-              Pattern.find({ user: user.handle }, (err, patternList) => {
-                if (err) return res.sendStatus(400)
-                for (let pattern of patternList) patterns[pattern.handle] = pattern
-                return user.updateLoginTime(() => res.send({ account, people, patterns, token }))
-              })
-            })
-          }
-        } else {
-          log.warning('wrongPassword', { user, req })
-          return res.sendStatus(401)
-        }
-      })
-    }
-  )
+ * Login (with username and password)
+ *
+ * This is the endpoint that provides traditional username/password login
+ * See: https://freesewing.dev/reference/backend/api
+ */
+UserController.prototype.login = async function (req, res, tools) {
+  if (Object.keys(req.body) < 1) return res.status(400).json({ error: 'postBodyMissing', result })
+  if (!req.body.username) return res.status(400).json({ error: 'usernameMissing', result })
+  if (!req.body.password) return res.status(400).json({ error: 'passwordMissing', result })
+
+  // Destructure what we need from tools
+  const { prisma, config, decrypt } = tools
+
+  // Retrieve user account
+  let account
+  try {
+    account = await prisma.user.findFirst({
+      where: {
+        OR: [
+          { lusername: { equals: clean(req.body.username) } },
+          { ehash: { equals: hash(clean(req.body.username)) } },
+          { id: { equals: parseInt(req.body.username) || -1 } },
+        ],
+      },
+    })
+  } catch (err) {
+    log.warn(err, `Error while trying to find username: ${req.body.username}`)
+    return res.status(401).send({ error: 'logingFailed', result })
+  }
+  if (!account) {
+    log.warn(`Login attempt for non-existing user: ${req.body.username} from ${req.ip}`)
+    return res.status(401).send({ error: 'logingFailed', result })
+  }
+
+  // Login success
+  log.info(`Login by user ${account.id} (${account.username})`)
+
+  return res.status(200).send({
+    result: 'success',
+    token: getToken(account, config),
+    account: asAccount({ ...account }, decrypt),
+  })
 }
+/*
 
 // For people who have forgotten their password, or password-less logins
 UserController.prototype.confirmationLogin = function (req, res) {

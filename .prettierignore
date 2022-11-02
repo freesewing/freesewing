@@ -7,6 +7,7 @@
 *.png
 *.svg
 *.prisma
+*.sqlite
 yarn.lock
 .husky/pre-commit
 .prettierignore

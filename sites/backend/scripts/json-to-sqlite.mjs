@@ -32,6 +32,7 @@ console.log('  🕺 ', Object.keys(data.people).length, 'people')
 console.log('  👕 ', Object.keys(data.patterns).length, 'patterns')
 console.log('  📰 ', data.subscribers.length, 'subscribers')
 console.log()
+data.lusernames = {}
 data.userhandles = {}
 await migrateUsers(data.users)
 console.log()
@@ -125,27 +126,35 @@ async function migrateUsers(users) {
 
 async function createUser(user) {
   const ehash = hash(clean(user.email))
-  const record = await prisma.user.create({
-    data: {
-      consent: user.consent,
-      createdAt: user.createdAt,
-      data: JSON.stringify(user.data),
-      ehash,
-      email: encrypt(clean(user.email)),
-      ihash: ehash,
-      initial: encrypt(clean(user.email)),
-      newsletter: user.newsletter,
-      password: JSON.stringify({
-        type: 'v2',
-        data: user.password,
-      }),
-      patron: user.patron,
-      role: user.role,
-      status: user.status,
-      username: user.username,
-    },
-  })
+  let record
+  try {
+    record = await prisma.user.create({
+      data: {
+        consent: user.consent,
+        createdAt: user.createdAt,
+        data: JSON.stringify(user.data),
+        ehash,
+        email: encrypt(clean(user.email)),
+        ihash: ehash,
+        initial: encrypt(clean(user.email)),
+        newsletter: user.newsletter,
+        password: JSON.stringify({
+          type: 'v2',
+          data: user.password,
+        }),
+        patron: user.patron,
+        role: user.role,
+        status: user.status,
+        username: user.username,
+        lusername: user.username.toLowerCase(),
+      },
+    })
+  } catch (err) {
+    console.log(user, err, data.lusernames[user.username.toLowerCase()])
+    process.exit()
+  }
   data.userhandles[user.handle] = record.id
+  data.lusernames[record.lusername] = user
 }
 
 /*
