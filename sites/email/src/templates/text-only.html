@@ -1,0 +1,54 @@
+---
+title: "A Responsive Email Template"
+preheader: "Entice the open with some amazing preheader text. Use a little mystery and get those subscribers to read through..."
+---
+
+<extends src="src/layouts/main.html">
+  <block name="template">
+    <table class="w-full all:font-sans">
+      <tr>
+        <td align="center" class="p-[15px] sm:py-[50px] sm:px-[15px] bg-white">
+          <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+              <tr>
+                <td align="center" valign="top" width="500">
+                  <![endif]-->
+                  <table class="w-full max-w-[500px] sm:max-w-full">
+                    <tr>
+                      <td>
+                        <table class="w-full">
+                          <tr>
+                            <td>
+                              <!-- COPY -->
+                              <table class="w-full">
+                                <tr>
+                                  <td align="left" class="pt-[5px] sm:p-[15px]">
+                                    <p class="m-0 text-base leading-[25px] text-neutral-800">
+                                      Yo,
+                                      <br><br>
+                                      Message goes here dog.
+                                      <br><br>
+                                      Cheers,
+                                      <br>
+                                      The Team
+                                    </p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!--[if (gte mso 9)|(IE)]>
+                </td>
+              </tr>
+            </table>
+          <![endif]-->
+        </td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </table>
+  </block>
+</extends>

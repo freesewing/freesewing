@@ -8,6 +8,8 @@
 *.svg
 *.prisma
 *.sqlite
+*.html
+LICENSE
 yarn.lock
 .husky/pre-commit
 .prettierignore
