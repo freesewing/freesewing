@@ -19,11 +19,11 @@ const config = {
   db: {
     url: process.env.API_DB_URL,
   },
+  tests: {
+    domain: process.env.TESTDOMAIN || 'mailtrap.freesewing.dev',
+  },
   static: process.env.API_STATIC,
   storage: process.env.API_STORAGE,
-  hashing: {
-    saltRounds: 10,
-  },
   encryption: {
     key: process.env.API_ENC_KEY,
   },
@@ -37,6 +37,11 @@ const config = {
   aws: {
     ses: {
       region: 'us-east-1',
+      from: 'FreeSewing <info@freesewing.org>',
+      replyTo: ['FreeSewing <info@freesewing.org>'],
+      feedback: 'bounce@freesewing.org',
+      cc: [],
+      bcc: ['records@freesewing.org'],
     },
   },
   sanity: {

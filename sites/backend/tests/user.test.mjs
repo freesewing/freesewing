@@ -260,7 +260,7 @@ describe(`${user} Signup flow and authentication`, () => {
 })
 
 describe(`${user} Account management`, () => {
-  /*
+  /* TODO: Need to do this once we have a UI to kick the tires
   step(`${user} Should update the account avatar`, (done) => {
     chai
       .request(config.api)
@@ -275,6 +275,27 @@ describe(`${user} Account management`, () => {
         expect(res.type).to.equal('application/json')
         expect(res.charset).to.equal('utf-8')
         expect(res.body.result).to.equal(`success`)
+        done()
+      })
+  })
+
+  it(`${user} Should update the account username`, (done) => {
+    chai
+      .request(config.api)
+      .put('/account')
+      .set('Authorization', 'Bearer ' + store.token)
+      .send({
+        username: data..username + '_updated',
+      })
+      .end((err, res) => {
+        expect(res.status).to.equal(200)
+        expect(res.type).to.equal('application/json')
+        expect(res.charset).to.equal('utf-8')
+        expect(res.body.result).to.equal(`success`)
+        expect(res.body.account.email).to.equal(data.email)
+        expect(res.body.account.username).to.equal(store.username+'_updated')
+        expect(res.body.account.lusername).to.equal(store.username.toLowerCase()+'_updated')
+        expect(typeof res.body.account.id).to.equal(`number`)
         done()
       })
   })

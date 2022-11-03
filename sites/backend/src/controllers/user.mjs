@@ -10,6 +10,8 @@ import { clean, asJson } from '../utils/index.mjs'
 import { getUserAvatar } from '../utils/sanity.mjs'
 import { log } from '../utils/log.mjs'
 import { emailTemplate } from '../utils/email.mjs'
+import set from 'lodash.set'
+import { UserModel } from '../models/user.mjs'
 
 /*
  * Prisma is not an ORM and we can't attach methods to the model
@@ -47,6 +49,17 @@ const getToken = (user, config) =>
     { expiresIn: config.jwt.expiresIn }
   )
 
+const isUsernameAvailable = async (username, prisma) => {
+  const user = await prisme.user.findUnique({
+    where: {
+      lusername: username.toLowerCase(),
+    },
+  })
+
+  if (user === null) return true
+  return false
+}
+
 // We'll send this result unless it goes ok
 const result = 'error'
 
@@ -59,99 +72,10 @@ export function UserController() {}
  * See: https://freesewing.dev/reference/backend/api
  */
 UserController.prototype.signup = async (req, res, tools) => {
-  if (Object.keys(req.body) < 1) return res.status(400).json({ error: 'postBodyMissing', result })
-  if (!req.body.email) return res.status(400).json({ error: 'emailMissing', result })
-  if (!req.body.password) return res.status(400).json({ error: 'passwordMissing', result })
-  if (!req.body.language) return res.status(400).json({ error: 'languageMissing', result })
+  const User = new UserModel(tools)
+  await User.create(req.body)
 
-  // Destructure what we need from tools
-  const { prisma, config, encrypt, email } = tools
-
-  // Requests looks ok - does the user exist?
-  const emailhash = hash(clean(req.body.email))
-  if (await prisma.user.findUnique({ where: { ehash: emailhash } })) {
-    return res.status(400).json({ error: 'emailExists', result })
-  }
-  // It does not. Creating user entry
-  let record
-  try {
-    const username = clean(randomString()) // Temporary username,
-    record = await prisma.user.create({
-      data: {
-        data: asJson({ settings: { language: req.body.language } }),
-        ehash: emailhash,
-        email: encrypt(clean(req.body.email)),
-        ihash: emailhash,
-        initial: encrypt(clean(req.body.email)),
-        password: asJson(hashPassword(req.body.password)),
-        username,
-        lusername: username.toLowerCase(),
-      },
-    })
-  } catch (err) {
-    log.warn(err, 'Could not create user record')
-    return res.status(500).send({ error: 'createAccountFailed', result })
-  }
-  // Now set username to user-ID
-  let updated
-  try {
-    updated = await prisma.user.update({
-      where: { id: record.id },
-      data: {
-        username: `user-${record.id}`,
-        lusername: `user-${record.id}`,
-      },
-    })
-  } catch (err) {
-    log.warn(err, 'Could not update username on created user record')
-    return res.status(500).send({ result: 'error', error: 'updateCreatedAccountUsernameFailed' })
-  }
-  log.info({ user: updated.id }, 'Account created')
-
-  // Create confirmation
-  let confirmation
-  try {
-    confirmation = await prisma.confirmation.create({
-      data: {
-        type: 'signup',
-        data: encrypt({
-          language: req.body.language,
-          email: req.body.email,
-          id: record.id,
-          ehash: emailhash,
-        }),
-      },
-    })
-  } catch (err) {
-    log.warn(err, 'Unable to create confirmation at signup')
-    return res.status(500).send({ result: 'error', error: 'updateCreatedAccountUsernameFailed' })
-  }
-
-  // Send out signup email
-  let sent
-  try {
-    sent = await email.send(
-      req.body.to,
-      ...emailTemplate.signup(req.body.email, req.body.language, confirmation.id)
-    )
-  } catch (err) {
-    log.warn(err, 'Unable to send email')
-    return res.status(500).send({ error: 'failedToSendSignupEmail', result })
-  }
-
-  if (req.body.unittest && req.body.email.split('@').pop() === 'mailtrap.freesewing.dev') {
-    // Unit test, return confirmation code in response
-    return res.status(201).send({
-      result: 'success',
-      status: 'created',
-      email: req.body.email,
-      confirmation: confirmation.id,
-    })
-  }
-
-  return result
-    ? res.status(201).send({ result: 'success', status: 'created', email: req.body.email })
-    : res.status(500).send({ error: 'unableToSendSignupEmail', result })
+  return User.sendResponse(res)
 }
 
 /*
@@ -359,64 +283,105 @@ UserController.prototype.update = async (req, res, tools) => {
   }
 
   // Account loaded - Handle various updates
-  const data = req.body
-  if (typeof data.avatar !== 'undefined') {
-    // Catch people submitting without uploading an avatar
-    if (data.avatar) user.saveAvatar(data.avatar)
-    return saveAndReturnAccount(res, user)
+  const data = {}
+  // Username
+  if (req.body.username) {
+    if (!isUsernameAvailable(req.body.username, prisma)) {
+      return res.status(400).send({ error: 'usernameTaken', result })
+    }
+    data.username = req.body.username
+    data.lusername = data.username.toLowerCase()
   }
-  /*
-  var async = 0
-  if (!req.user._id) return res.sendStatus(400)
-  User.findById(req.user._id, async (err, user) => {
-    if (err || user === null) {
-      return res.sendStatus(400)
-    }
-    let data = req.body
+  // Newsletter
+  if (req.body.newsletter === false) data.newsletter = false
+  if (req.body.newsletter === true) data.newsletter = true
+  // Consent
+  if (typeof req.body.consent !== 'undefined') data.consent = req.body.consent
+  // Bio
+  if (typeof req.body.bio === 'string') userData.bio = req.body.bio
+  // Password
+  if (typeof req.body.password === 'string')
+    userData.password = asJson(hashPassword(req.body.password))
+  // Data
+  const userData = JSON.parse(account.data)
+  const uhash = hash(account.data)
+  if (typeof req.body.language === 'string') set(userData, 'settings.language', req.body.language)
+  if (typeof req.body.units === 'string') set(userData, 'settings.units', req.body.units)
+  if (typeof req.body.github === 'string') set(userData, 'settings.social.github', req.body.github)
+  if (typeof req.body.twitter === 'string')
+    set(userData, 'settings.social.twitter', req.body.twitter)
+  if (typeof req.body.instagram === 'string')
+    set(userData, 'settings.social.instagram', req.body.instagram)
+  // Did data change?
+  if (uhash !== hash(userData)) data.data = JSON.stringify(userData)
 
-    if (typeof data.settings !== 'undefined') {
-      user.settings = {
-        ...user.settings,
-        ...data.settings,
-      }
-      return saveAndReturnAccount(res, user)
-    } else if (data.newsletter === true || data.newsletter === false) {
-      user.newsletter = data.newsletter
-      if (data.newsletter === true) email.newsletterWelcome(user.email, user.ehash)
+  // Commit
+  prisma.user.update({
+    where: { id: account.id },
+    data,
+  })
 
-      return saveAndReturnAccount(res, user)
-    } else if (typeof data.bio === 'string') {
-      user.bio = data.bio
-      return saveAndReturnAccount(res, user)
-    } else if (typeof data.social === 'object') {
-      if (typeof data.social.github === 'string') user.social.github = data.social.github
-      if (typeof data.social.twitter === 'string') user.social.twitter = data.social.twitter
-      if (typeof data.social.instagram === 'string') user.social.instagram = data.social.instagram
-      return saveAndReturnAccount(res, user)
-    } else if (typeof data.consent === 'object') {
-      user.consent = {
-        ...user.consent,
-        ...data.consent,
-      }
-      return saveAndReturnAccount(res, user)
-    } else if (typeof data.avatar !== 'undefined') {
-      // Catch people submitting without uploading an avatar
-      if (data.avatar) user.saveAvatar(data.avatar)
-      return saveAndReturnAccount(res, user)
-    } else if (typeof data.password === 'string') {
-      user.password = data.password
-      return saveAndReturnAccount(res, user)
-    } else if (typeof data.username === 'string') {
-      User.findOne({ username: data.username }, (err, userExists) => {
-        if (userExists !== null && data.username !== user.username)
-          return res.status(400).send('usernameTaken')
-        else {
-          user.username = data.username
-          return saveAndReturnAccount(res, user)
+  // Email change requires confirmation
+  if (typeof req.body.email === 'string') {
+    const currentEmail = decrypt(account.email)
+    if (req.body.email !== currentEmail) {
+      if (req.body.confirmation) {
+        // Find confirmation
+        let confirmation
+        try {
+          prisma.confirmation.findUnique({
+            where: { id: req.body.confirmation },
+          })
+        } catch (err) {
+          log.warn(err, `Failed to find confirmation for email change`)
+          return res.status(500).send({ error: 'failedToFindEmailChangeConfirmation', result })
         }
-      })
+        if (!confirmation) {
+          log.warn(err, `Missing confirmation for email change`)
+          return res.status(400).send({ error: 'missingEmailChangeConfirmation', result })
+        }
+      } else {
+        // Create confirmation
+        let confirmation
+        try {
+          confirmation = prisma.confirmation.create({
+            data: {
+              type: 'emailchange',
+              data: encrypt({
+                language: userData.settings.language || 'en',
+                email: {
+                  new: req.body.email,
+                  current: currentEmail,
+                },
+              }),
+            },
+          })
+        } catch (err) {
+          log.warn(err, `Failed to create confirmation for email change`)
+          return res.status(500).send({ error: 'failedToCreateEmailChangeConfirmation', result })
+        }
+        // Send out confirmation email
+        let sent
+        try {
+          sent = await email.send(
+            req.body.email,
+            currentEmail,
+            ...emailTemplate.emailchange(
+              req.body.email,
+              currentEmail,
+              userData.settings.language,
+              confirmation.id
+            )
+          )
+        } catch (err) {
+          log.warn(err, 'Unable to send email')
+          return res.status(500).send({ error: 'failedToSendEmailChangeConfirmationEmail', result })
+        }
+      }
     }
-    // Email change requires confirmation
+  }
+  // Now handle the
+  /*
     else if (typeof data.email === 'string' && data.email !== user.email) {
       if (typeof data.confirmation === 'string') {
         Confirmation.findById(req.body.confirmation, (err, confirmation) => {

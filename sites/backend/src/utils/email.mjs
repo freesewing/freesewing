@@ -7,20 +7,15 @@ import fr from '../../../../packages/i18n/dist/en/email.mjs'
 import es from '../../../../packages/i18n/dist/en/email.mjs'
 import de from '../../../../packages/i18n/dist/en/email.mjs'
 import { i18nUrl } from './index.mjs'
-import { SESv2Client, SendEmailCommand } from "@aws-sdk/client-sesv2"
+import { SESv2Client, SendEmailCommand } from '@aws-sdk/client-sesv2'
 
 const i18n = { en, nl, fr, es, de }
 
 export const emailTemplate = {
   signup: (to, language, uuid) => [
     i18n[language].signupTitle,
-    templates.signup(
-      i18n[language],
-      to,
-      i18nUrl(language, `/confirm/signup/${uuid}`)
-    )],
-  emailChange: (to, cc, language, uuid) => [
-  ]
+    templates.signup(i18n[language], to, i18nUrl(language, `/confirm/signup/${uuid}`)),
+  ],
 }
 
 emailTemplate.emailchange = (newAddress, currentAddress, language, id) => {
@@ -189,7 +184,6 @@ emailTemplate.newsletterWelcome = async (recipient, ehash) => {
   })
 }
 
-
 /*
  * Exporting this closure that makes sure we have access to the
  * instantiated config
@@ -197,7 +191,7 @@ emailTemplate.newsletterWelcome = async (recipient, ehash) => {
 export const mailer = (config) => ({
   email: {
     send: (...params) => sendEmailViaAwsSes(config, ...params),
-  }
+  },
 })
 
 /*
@@ -222,16 +216,15 @@ async function sendEmailViaAwsSes(config, to, subject, text) {
       },
     },
     Destination: {
-      ToAddresses: [ to ],
-      BccAddresses: [ 'tracking@freesewing.org' ],
+      ToAddresses: [to],
+      CcAddresses: config.aws.ses.cc || [],
+      BccAddresses: config.aws.ses.bcc || [],
     },
-    FeedbackForwardingEmailAddress: 'bounce@freesewing.org',
-    FromEmailAddress: 'info@freesewing.org',
-    ReplyToAddresses: [ 'info@freesewing.org' ],
+    FeedbackForwardingEmailAddress: config.aws.ses.feedback,
+    FromEmailAddress: config.aws.ses.from,
+    ReplyToAddresses: config.aws.ses.replyTo || [],
   })
   const result = await client.send(command)
 
-  return (result['$metadata']?.httpStatusCode === 200)
+  return result['$metadata']?.httpStatusCode === 200
 }
-
-
