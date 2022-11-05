@@ -1,8 +1,8 @@
+import jwt from 'jsonwebtoken'
 import { log } from '../utils/log.mjs'
 import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
-import { clean, asJson } from '../utils/index.mjs'
+import { clean, asJson, i18nUrl } from '../utils/index.mjs'
 import { ConfirmationModel } from './confirmation.mjs'
-import { emailTemplate } from '../utils/email.mjs'
 
 export function UserModel(tools) {
   this.config = tools.config
@@ -20,9 +20,10 @@ export function UserModel(tools) {
  *
  * Stores result in this.record
  */
-UserModel.prototype.load = async function (where) {
+UserModel.prototype.read = async function (where) {
   this.record = await this.prisma.user.findUnique({ where })
   if (this.record?.email) this.email = this.decrypt(this.record.email)
+  if (this.record?.initial) this.initial = this.decrypt(this.record.initial)
 
   return this.setExists()
 }
@@ -60,14 +61,14 @@ UserModel.prototype.setExists = function () {
 /*
  * Creates a user+confirmation and sends out signup email
  */
-UserModel.prototype.create = async function (body) {
+UserModel.prototype.create = async function ({ body }) {
   if (Object.keys(body) < 1) return this.setResponse(400, 'postBodyMissing')
   if (!body.email) return this.setResponse(400, 'emailMissing')
   if (!body.password) return this.setResponse(400, 'passwordMissing')
   if (!body.language) return this.setResponse(400, 'languageMissing')
 
   const ehash = hash(clean(body.email))
-  await this.load({ ehash })
+  await this.read({ ehash })
   if (this.exists) return this.setResponse(400, 'emailExists')
 
   try {
@@ -100,9 +101,8 @@ UserModel.prototype.create = async function (body) {
     })
   } catch (err) {
     log.warn(err, 'Could not update username after user creation')
-    return this.setResponse(500, 'error', 'usernameUpdateAfterUserCreationFailed')
+    return this.setResponse(500, 'usernameUpdateAfterUserCreationFailed')
   }
-  log.info({ user: this.record.id }, 'Account created')
 
   // Create confirmation
   this.confirmation = await this.Confirmation.create({
@@ -113,10 +113,20 @@ UserModel.prototype.create = async function (body) {
       id: this.record.id,
       ehash: ehash,
     }),
+    userId: this.record.id,
   })
 
   // Send signup email
-  //await this.sendSignupEmail()
+  await this.mailer.send({
+    template: 'signup',
+    language: this.language,
+    to: 'joost@decock.org', // this.email,
+    replacements: {
+      actionUrl: i18nUrl(this.language, `/confirm/signup/${this.Confirmation.record.id}`),
+      whyUrl: i18nUrl(this.language, `/docs/faq/email/why-signup`),
+      supportUrl: i18nUrl(this.language, `/patrons/join`),
+    },
+  })
 
   return body.unittest && this.email.split('@').pop() === this.config.tests.domain
     ? this.setResponse(201, false, { email: this.email, confirmation: this.confirmation.record.id })
@@ -124,21 +134,52 @@ UserModel.prototype.create = async function (body) {
 }
 
 /*
- * Sends out signup email
- * FIXME: Move to utils
+ * Confirms a user account
  */
-UserModel.prototype.sendSignupEmail = async function () {
-  try {
-    this.confirmationSent = await this.mailer.send(
-      this.email,
-      ...emailTemplate.signup(this.email, this.language, this.confirmation)
-    )
-  } catch (err) {
-    log.warn(err, 'Unable to send signup email')
-    return this.setResponse(500, 'error', 'unableToSendSignupEmail')
+UserModel.prototype.confirm = async function ({ body, params }) {
+  if (!params.id) return this.setReponse(404, 'missingConfirmationId')
+  if (Object.keys(body) < 1) return this.setResponse(400, 'postBodyMissing')
+  if (!body.consent || typeof body.consent !== 'number' || body.consent < 1)
+    return this.setResponse(400, 'consentRequired')
+
+  // Retrieve confirmation record
+  await this.Confirmation.read({ id: params.id })
+
+  if (!this.Confirmation.exists) {
+    log.warn(err, `Could not find confirmation id ${params.id}`)
+    return this.setResponse(404, 'failedToFindConfirmationId')
   }
 
-  return this.setResponse(200)
+  if (this.Confirmation.record.type !== 'signup') {
+    log.warn(err, `Confirmation mismatch; ${params.id} is not a signup id`)
+    return this.setResponse(404, 'confirmationIdTypeMismatch')
+  }
+
+  if (this.error) return this
+  const data = await this.decrypt(this.Confirmation.record.data)
+  if (data.ehash !== this.Confirmation.record.user.ehash)
+    return this.setResponse(404, 'confirmationEhashMismatch')
+  if (data.id !== this.Confirmation.record.user.id)
+    return this.setResponse(404, 'confirmationUserIdMismatch')
+
+  // Load user
+  await this.read({ id: this.Confirmation.record.user.id })
+  if (this.error) return this
+
+  // Update user status, consent, and last login
+  await this.update({
+    //data: this.encrypt({...this.decrypt(this.record.data), status: 1}),
+    consent: body.consent,
+    lastLogin: new Date(),
+  })
+  if (this.error) return this
+
+  // Account is now active, let's return a passwordless login
+  return this.setResponse(200, false, {
+    result: 'success',
+    token: this.getToken(),
+    account: this.asAccount(),
+  })
 }
 
 /*
@@ -153,10 +194,50 @@ UserModel.prototype.update = async function (data) {
   } catch (err) {
     log.warn(err, 'Could not update user record')
     process.exit()
-    return this.setResponse(500, 'error', 'updateUserFailed')
+    return this.setResponse(500, 'updateUserFailed')
   }
 
   return this.setResponse(200)
+}
+
+/*
+ * Returns account data
+ */
+UserModel.prototype.asAccount = function () {
+  return {
+    id: this.record.id,
+    consent: this.record.consent,
+    createdAt: this.record.createdAt,
+    data: this.record.data,
+    email: this.email,
+    initial: this.initial,
+    lastLogin: this.record.lastLogin,
+    newsletter: this.record.newsletter,
+    patron: this.record.patron,
+    role: this.record.role,
+    status: this.record.status,
+    updatedAt: this.record.updatedAt,
+    username: this.record.username,
+    lusername: this.record.lusername,
+  }
+}
+
+/*
+ * Returns a JSON Web Token (jwt)
+ */
+UserModel.prototype.getToken = function () {
+  return jwt.sign(
+    {
+      _id: this.record.id,
+      username: this.record.username,
+      role: this.record.role,
+      status: this.record.status,
+      aud: this.config.jwt.audience,
+      iss: this.config.jwt.issuer,
+    },
+    this.config.jwt.secretOrKey,
+    { expiresIn: this.config.jwt.expiresIn }
+  )
 }
 
 /*

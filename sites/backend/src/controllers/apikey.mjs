@@ -32,7 +32,7 @@ ApikeyController.prototype.whoami = async (req, res, tools) => {
   // Load user making the call
   await User.loadAuthenticatedUser(req.user)
 
-  const key = User.user.apikeys.filter((key) => key.id === req.user.id)
+  const key = User.authenticatedUser.apikeys.filter((key) => key.id === req.user.id)
 
   if (key.length === 1)
     Apikey.setResponse(200, 'success', {

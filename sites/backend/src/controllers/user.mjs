@@ -4,7 +4,6 @@ import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypt
 import { clean, asJson } from '../utils/index.mjs'
 import { getUserAvatar } from '../utils/sanity.mjs'
 import { log } from '../utils/log.mjs'
-import { emailTemplate } from '../utils/email.mjs'
 import set from 'lodash.set'
 import { UserModel } from '../models/user.mjs'
 
@@ -68,7 +67,7 @@ export function UserController() {}
  */
 UserController.prototype.signup = async (req, res, tools) => {
   const User = new UserModel(tools)
-  await User.create(req.body)
+  await User.create(req)
 
   return User.sendResponse(res)
 }
@@ -80,77 +79,10 @@ UserController.prototype.signup = async (req, res, tools) => {
  * See: https://freesewing.dev/reference/backend/api
  */
 UserController.prototype.confirm = async (req, res, tools) => {
-  if (!req.params.id) return res.status(404).send({ error: 'missingConfirmationId', result })
-  if (Object.keys(req.body) < 1) return res.status(400).json({ error: 'postBodyMissing', result })
-  if (!req.body.consent || req.body.consent < 1)
-    return res.status(400).send({ error: 'consentRequired', result })
+  const User = new UserModel(tools)
+  await User.confirm(req)
 
-  // Destructure what we need from tools
-  const { prisma, config, decrypt } = tools
-
-  // Retrieve confirmation record
-  let confirmation
-  try {
-    confirmation = await prisma.confirmation.findUnique({
-      where: {
-        id: req.params.id,
-      },
-    })
-  } catch (err) {
-    log.warn(err, `Could not lookup confirmation id ${req.params.id}`)
-    return res.status(404).send({ error: 'failedToRetrieveConfirmationId', result })
-  }
-  if (!confirmation) {
-    log.warn(err, `Could not find confirmation id ${req.params.id}`)
-    return res.status(404).send({ error: 'failedToFindConfirmationId', result })
-  }
-  if (confirmation.type !== 'signup') {
-    log.warn(err, `Confirmation mismatch; ${req.params.id} is not a signup id`)
-    return res.status(404).send({ error: 'confirmationIdTypeMismatch', result })
-  }
-  const data = decrypt(confirmation.data)
-
-  // Retrieve user account
-  let account
-  try {
-    account = await prisma.user.findUnique({
-      where: {
-        id: data.id,
-      },
-    })
-  } catch (err) {
-    log.warn(err, `Could not lookup user id ${data.id} from confirmation data`)
-    return res.status(404).send({ error: 'failedToRetrieveUserIdFromConfirmationData', result })
-  }
-  if (!account) {
-    log.warn(err, `Could not find user id ${data.id} from confirmation data`)
-    return res.status(404).send({ error: 'failedToLoadUserFromConfirmationData', result })
-  }
-
-  // Update user consent and status
-  let updateUser
-  try {
-    updateUser = await prisma.user.update({
-      where: {
-        id: account.id,
-      },
-      data: {
-        status: 1,
-        consent: req.body.consent,
-        lastLogin: new Date(),
-      },
-    })
-  } catch (err) {
-    log.warn(err, `Could not update user id ${data.id} after confirmation`)
-    return res.status(404).send({ error: 'failedToUpdateUserAfterConfirmation', result })
-  }
-
-  // Account is now active, let's return a passwordless login
-  return res.status(200).send({
-    result: 'success',
-    token: getToken(account, config),
-    account: asAccount({ ...account, status: 1, consent: req.body.consent }, decrypt),
-  })
+  return User.sendResponse(res)
 }
 
 /*

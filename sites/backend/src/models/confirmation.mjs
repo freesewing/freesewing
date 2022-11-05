@@ -8,8 +8,13 @@ export function ConfirmationModel(tools) {
   return this
 }
 
-ConfirmationModel.prototype.load = async function (where) {
-  this.record = await this.prisma.confirmation.findUnique({ where })
+ConfirmationModel.prototype.read = async function (where) {
+  this.record = await this.prisma.confirmation.findUnique({
+    where,
+    include: {
+      user: true,
+    },
+  })
 
   return this.setExists()
 }

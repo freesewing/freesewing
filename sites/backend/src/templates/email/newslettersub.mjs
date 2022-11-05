@@ -1,4 +1,5 @@
 import { buttonRow, closingRow, headingRow, lead1Row, wrap } from './blocks.mjs'
+import { translations as sharedTranslations } from './blocks.mjs'
 
 /*
  * Used the following replacements:
@@ -26,3 +27,5 @@ ${buttonRow.text}
 ${closingRow.text}
 `),
 }
+
+export const translations = {}

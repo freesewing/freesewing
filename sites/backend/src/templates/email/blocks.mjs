@@ -1,8 +1,3 @@
-/*
- * buttonRow uses the following replacements:
- *   - actionUrl
- *   - button
- */
 export const buttonRow = {
   html: `
   <tr>
@@ -16,25 +11,17 @@ export const buttonRow = {
       </table>
     </td>
   </tr>`,
-  text: `{{ actionUrl }}`,
+  text: `{{{ actionUrl }}}`,
 }
 
-/*
- * closingRow uses the following replacements:
- *   - closing
- *   - greeting
- *   - ps-pre-link
- *   - ps-link
- *   - ps-post-link
- */
 export const closingRow = {
   html: `
   <tr>
     <td align="left" class="sm-p-15px" style="padding-top: 30px">
       <p style="margin: 0; font-size: 16px; line-height: 25px; color: #262626">
-        {{ closing }}.
+        {{ closing }}
         <br><br>
-        {{ greeting }},
+        {{ greeting }}
         <br>
         joost
         <br><br>
@@ -42,7 +29,7 @@ export const closingRow = {
           PS: {{ ps-pre-link}}
           <a href="{{ supportUrl }}" target="_blank" style="text-decoration: none; color: #262626">
             <b>{{ ps-link}}</b>
-          </a> {{ ps-post-link }}.
+          </a> {{ ps-post-link }}
         </small>
       </p>
     </td>
@@ -53,14 +40,9 @@ export const closingRow = {
 {{ greeting }}
 joost
 
-PS: {{ text-ps }} : {{ text-ps-link }}`,
+PS: {{ text-ps }} : {{{ text-ps-link }}}`,
 }
 
-/*
- * headingRow uses the following replacements:
- *   - actionUrl
- *   - heading
- */
 export const headingRow = {
   html: `
   <tr>
@@ -77,11 +59,6 @@ export const headingRow = {
 `,
 }
 
-/*
- * lead1Row uses the following replacements:
- *   - actionUrl
- *   - lead
- */
 export const lead1Row = {
   html: `
   <tr>
@@ -94,20 +71,10 @@ export const lead1Row = {
     </td>
   </tr>`,
   text: `{{ textLead }}
-  {{ actionUrl }}
+  {{{ actionUrl }}}
   `,
 }
 
-/*
- * Helper methods to wrap the body with all it takes
- * Uses the following replacements:
- *   - title
- *   - intro
- *   - body
- *   - urlWebsite
- *   - urlWhy
- *   - whyDidIGetThis
- */
 export const wrap = {
   html: (body) => `<!DOCTYPE html>
 <html lang="en" xmlns:v="urn:schemas-microsoft-com:vml">
@@ -260,10 +227,33 @@ Plantin en Moretuslei 69
 Antwerp
 Belgium
 
-{{ website }} : {{ urlWebsite }}
-Github : https://github.com/fresewing/freesewing
+{{ website }} : {{{ urlWebsite }}}
+Github : https://github.com/freesewing/freesewing
 Discord : https://discord.freesewing.org/
 Twitter : https://twitter.com/freesewing_org
-{{ whyDidIGetThis }} : {{ urlWhy }}
+{{ whyDidIGetThis }} : {{{ whyUrl }}}
 `,
+}
+
+export const translations = {
+  en: {
+    whyDidIGetThis: 'Why did I get this email?',
+    website: 'freesewing.org',
+  },
+  de: {
+    whyDidIGetThis: 'Why did I get this?', // FIXME: Provide German translation
+    website: 'freesewing.org/de',
+  },
+  es: {
+    whyDidIGetThis: 'Why did I get this?', // FIXME: Provide Spanish translation
+    website: 'freesewing.org/es',
+  },
+  fr: {
+    whyDidIGetThis: 'Why did I get this?', // FIXME: Provide French translation
+    website: 'freesewing.org/fr',
+  },
+  nl: {
+    whyDidIGetThis: 'Waarom kreeg ik deze email?',
+    website: 'freesewing.org/nl',
+  },
 }
