@@ -65,7 +65,7 @@ ApikeyModel.prototype.create = async function ({ body, user }) {
 
   // Load user making the call
   await this.User.loadAuthenticatedUser(user)
-  if (body.level > this.config.roles.levels[this.User.user.role])
+  if (body.level > this.config.roles.levels[this.User.authenticatedUser.role])
     return this.setResponse(400, 'keyLevelExceedsRoleLevel')
 
   // Generate api secret
@@ -103,7 +103,7 @@ ApikeyModel.prototype.___read = async function ({ user, params }) {
   // Load user making the call
   await this.User.loadAuthenticatedUser(user)
 
-  const key = this.User.user.apikeys.filter((key) => key.id === params.id)
+  const key = this.User.authenticatedUser.apikeys.filter((key) => key.id === params.id)
 
   return key.length === 1
     ? this.setResponse(200, 'success', {

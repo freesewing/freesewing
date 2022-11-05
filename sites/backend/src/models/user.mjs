@@ -1,15 +1,8 @@
-//import jwt from 'jsonwebtoken'
-//import axios from 'axios'
-//import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
-//import { clean, asJson } from '../utils/index.mjs'
-//import { getUserAvatar } from '../utils/sanity.mjs'
 import { log } from '../utils/log.mjs'
 import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
 import { clean, asJson } from '../utils/index.mjs'
 import { ConfirmationModel } from './confirmation.mjs'
 import { emailTemplate } from '../utils/email.mjs'
-//  import { emailTemplate } from '../utils/email.mjs'
-//import set from 'lodash.set'
 
 export function UserModel(tools) {
   this.config = tools.config
@@ -22,6 +15,11 @@ export function UserModel(tools) {
   return this
 }
 
+/*
+ * Loads a user from the database based on the where clause you pass it
+ *
+ * Stores result in this.record
+ */
 UserModel.prototype.load = async function (where) {
   this.record = await this.prisma.user.findUnique({ where })
   if (this.record?.email) this.email = this.decrypt(this.record.email)
@@ -29,10 +27,15 @@ UserModel.prototype.load = async function (where) {
   return this.setExists()
 }
 
+/*
+ * Loads the user that is making the API request
+ *
+ * Stores result in this.authenticatedUser
+ */
 UserModel.prototype.loadAuthenticatedUser = async function (user) {
   if (!user) return this
   const where = user?.apikey ? { id: user.userId } : { id: user._id }
-  this.user = await this.prisma.user.findUnique({
+  this.authenticatedUser = await this.prisma.user.findUnique({
     where,
     include: {
       apikeys: true,
@@ -42,29 +45,21 @@ UserModel.prototype.loadAuthenticatedUser = async function (user) {
   return this
 }
 
+/*
+ * Checks this.record and sets a boolean to indicate whether
+ * the user exists or not
+ *
+ * Stores result in this.exists
+ */
 UserModel.prototype.setExists = function () {
   this.exists = this.record ? true : false
 
   return this
 }
 
-UserModel.prototype.setResponse = function (status = 200, error = false, data = {}) {
-  this.response = {
-    status,
-    body: {
-      result: 'success',
-      ...data,
-    },
-  }
-  if (status > 201) {
-    this.response.body.error = error
-    this.response.body.result = 'error'
-    this.error = true
-  } else this.error = false
-
-  return this.setExists()
-}
-
+/*
+ * Creates a user+confirmation and sends out signup email
+ */
 UserModel.prototype.create = async function (body) {
   if (Object.keys(body) < 1) return this.setResponse(400, 'postBodyMissing')
   if (!body.email) return this.setResponse(400, 'emailMissing')
@@ -128,6 +123,10 @@ UserModel.prototype.create = async function (body) {
     : this.setResponse(201, false, { email: this.email })
 }
 
+/*
+ * Sends out signup email
+ * FIXME: Move to utils
+ */
 UserModel.prototype.sendSignupEmail = async function () {
   try {
     this.confirmationSent = await this.mailer.send(
@@ -142,6 +141,9 @@ UserModel.prototype.sendSignupEmail = async function () {
   return this.setResponse(200)
 }
 
+/*
+ * Updates the user data
+ */
 UserModel.prototype.update = async function (data) {
   try {
     this.record = await this.prisma.user.update({
@@ -157,53 +159,31 @@ UserModel.prototype.update = async function (data) {
   return this.setResponse(200)
 }
 
-UserModel.prototype.sendResponse = async function (res) {
-  return res.status(this.response.status).send(this.response.body)
+/*
+ * Helper method to set the response code, result, and body
+ *
+ * Will be used by this.sendResponse()
+ */
+UserModel.prototype.setResponse = function (status = 200, error = false, data = {}) {
+  this.response = {
+    status,
+    body: {
+      result: 'success',
+      ...data,
+    },
+  }
+  if (status > 201) {
+    this.response.body.error = error
+    this.response.body.result = 'error'
+    this.error = true
+  } else this.error = false
+
+  return this.setExists()
 }
 
-UserModel.prototype.createApikey = async function ({ body, user }) {
-  if (Object.keys(body) < 1) return this.setResponse(400, 'postBodyMissing')
-  if (!body.name) return this.setResponse(400, 'nameMissing')
-  if (!body.level) return this.setResponse(400, 'levelMissing')
-  if (typeof body.level !== 'number') return this.setResponse(400, 'levelNotNumeric')
-  if (!this.config.apikeys.levels.includes(body.level)) return this.setResponse(400, 'invalidLevel')
-  if (!body.expiresIn) return this.setResponse(400, 'expiresInMissing')
-  if (typeof body.expiresIn !== 'number') return this.setResponse(400, 'expiresInNotNumeric')
-  if (body.expiresIn > this.config.apikeys.maxExpirySeconds)
-    return this.setResponse(400, 'expiresInHigherThanMaximum')
-
-  // Load user making the call
-  await this.loadAuthenticatedUser(user)
-  if (body.level > this.config.roles.levels[this.user.role])
-    return this.setResponse(400, 'keyLevelExceedsRoleLevel')
-
-  // Generate api secret
-  const secret = randomString(32)
-  const expiresAt = new Date(Date.now() + body.expiresIn * 1000)
-
-  try {
-    this.record = await this.prisma.apikey.create({
-      data: {
-        expiresAt,
-        name: body.name,
-        level: body.level,
-        secret: asJson(hashPassword(secret)),
-        userId: user._id,
-      },
-    })
-  } catch (err) {
-    log.warn(err, 'Could not create apikey')
-    return this.setResponse(500, 'createApikeyFailed')
-  }
-
-  return this.setResponse(200, 'success', {
-    apikey: {
-      key: this.record.id,
-      secret,
-      level: this.record.level,
-      expiresAt: this.record.expiresAt,
-      name: this.record.name,
-      userId: this.record.userId,
-    },
-  })
+/*
+ * Helper method to send response
+ */
+UserModel.prototype.sendResponse = async function (res) {
+  return res.status(this.response.status).send(this.response.body)
 }
