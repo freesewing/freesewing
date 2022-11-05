@@ -12,7 +12,7 @@ export const hash = (string) => createHash('sha256').update(string).digest('hex'
  * Generates a random string
  *
  * This is not used in anything cryptographic. It is only used as a temporary
- * username to avoid username collisions
+ * username to avoid username collisions or to generate (long) API key secrets
  */
 export const randomString = (bytes = 8) => randomBytes(bytes).toString('hex')
 

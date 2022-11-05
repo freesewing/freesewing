@@ -23,11 +23,7 @@ const app = express()
 app.use(express.json())
 app.use(express.static('public'))
 
-// Load middleware
-loadExpressMiddleware(app)
-loadPassportMiddleware(passport, config)
-
-const params = {
+const tools = {
   app,
   passport,
   prisma,
@@ -35,8 +31,13 @@ const params = {
   ...mailer(config),
   config,
 }
+
+// Load middleware
+loadExpressMiddleware(app)
+loadPassportMiddleware(passport, tools)
+
 // Load routes
-for (const type in routes) routes[type](params)
+for (const type in routes) routes[type](tools)
 
 // Catch-all route (Load index.html once instead of at every request)
 const index = fs.readFileSync(path.resolve('.', 'src', 'landing', 'index.html'))

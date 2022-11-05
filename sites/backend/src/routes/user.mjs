@@ -2,9 +2,11 @@ import { UserController } from '../controllers/user.mjs'
 
 const User = new UserController()
 const jwt = ['jwt', { session: false }]
+const bsc = ['basic', { session: false }]
 
 export function userRoutes(tools) {
   const { app, passport } = tools
+
   // Sign up
   app.post('/signup', (req, res) => User.signup(req, res, tools))
 
@@ -14,13 +16,15 @@ export function userRoutes(tools) {
   // Login
   app.post('/login', (req, res) => User.login(req, res, tools))
 
-  // Read account (own data)
-  app.get('/account', passport.authenticate(...jwt), (req, res) =>
-    User.readAccount(req, res, tools)
-  )
+  // Read current jwt
+
+  app.get('/whoami/jwt', passport.authenticate(...jwt), (req, res) => User.whoami(req, res, tools))
+  app.get('/account/jwt', passport.authenticate(...jwt), (req, res) => User.whoami(req, res, tools))
+  app.get('/account/key', passport.authenticate(...bsc), (req, res) => User.whoami(req, res, tools))
 
   // Update account
-  app.put('/account', passport.authenticate(...jwt), (req, res) => User.update(req, res, tools))
+  app.put('/account/jwt', passport.authenticate(...jwt), (req, res) => User.update(req, res, tools))
+  app.put('/account/key', passport.authenticate(...jwt), (req, res) => User.update(req, res, tools))
 
   /*
 

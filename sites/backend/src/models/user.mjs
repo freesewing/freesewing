@@ -29,6 +29,19 @@ UserModel.prototype.load = async function (where) {
   return this.setExists()
 }
 
+UserModel.prototype.loadAuthenticatedUser = async function (user) {
+  if (!user) return this
+  const where = user?.apikey ? { id: user.userId } : { id: user._id }
+  this.user = await this.prisma.user.findUnique({
+    where,
+    include: {
+      apikeys: true,
+    },
+  })
+
+  return this
+}
+
 UserModel.prototype.setExists = function () {
   this.exists = this.record ? true : false
 
@@ -108,7 +121,7 @@ UserModel.prototype.create = async function (body) {
   })
 
   // Send signup email
-  await this.sendSignupEmail()
+  //await this.sendSignupEmail()
 
   return body.unittest && this.email.split('@').pop() === this.config.tests.domain
     ? this.setResponse(201, false, { email: this.email, confirmation: this.confirmation.record.id })
@@ -146,4 +159,51 @@ UserModel.prototype.update = async function (data) {
 
 UserModel.prototype.sendResponse = async function (res) {
   return res.status(this.response.status).send(this.response.body)
+}
+
+UserModel.prototype.createApikey = async function ({ body, user }) {
+  if (Object.keys(body) < 1) return this.setResponse(400, 'postBodyMissing')
+  if (!body.name) return this.setResponse(400, 'nameMissing')
+  if (!body.level) return this.setResponse(400, 'levelMissing')
+  if (typeof body.level !== 'number') return this.setResponse(400, 'levelNotNumeric')
+  if (!this.config.apikeys.levels.includes(body.level)) return this.setResponse(400, 'invalidLevel')
+  if (!body.expiresIn) return this.setResponse(400, 'expiresInMissing')
+  if (typeof body.expiresIn !== 'number') return this.setResponse(400, 'expiresInNotNumeric')
+  if (body.expiresIn > this.config.apikeys.maxExpirySeconds)
+    return this.setResponse(400, 'expiresInHigherThanMaximum')
+
+  // Load user making the call
+  await this.loadAuthenticatedUser(user)
+  if (body.level > this.config.roles.levels[this.user.role])
+    return this.setResponse(400, 'keyLevelExceedsRoleLevel')
+
+  // Generate api secret
+  const secret = randomString(32)
+  const expiresAt = new Date(Date.now() + body.expiresIn * 1000)
+
+  try {
+    this.record = await this.prisma.apikey.create({
+      data: {
+        expiresAt,
+        name: body.name,
+        level: body.level,
+        secret: asJson(hashPassword(secret)),
+        userId: user._id,
+      },
+    })
+  } catch (err) {
+    log.warn(err, 'Could not create apikey')
+    return this.setResponse(500, 'createApikeyFailed')
+  }
+
+  return this.setResponse(200, 'success', {
+    apikey: {
+      key: this.record.id,
+      secret,
+      level: this.record.level,
+      expiresAt: this.record.expiresAt,
+      name: this.record.name,
+      userId: this.record.userId,
+    },
+  })
 }

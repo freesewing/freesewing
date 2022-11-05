@@ -7,6 +7,18 @@ datasource db {
   url      = env("API_DB_URL")
 }
 
+model Apikey {
+  id            String    @id @default(uuid())
+  createdAt     DateTime  @default(now())
+  expiresAt     DateTime
+  name          String    @default("")
+  level         Int       @default(0)
+  role          String    @default("user")
+  secret        String
+  user          User     @relation(fields: [userId], references: [id])
+  userId        Int
+}
+
 model Confirmation {
   id        String   @id @default(uuid())
   createdAt DateTime @default(now())
@@ -36,6 +48,7 @@ model User {
   newsletter Boolean   @default(false)
   password   String
   patron     Int       @default(0)
+  apikeys    Apikey[]
   people     Person[]
   patterns   Pattern[]
   role       String    @default("user")

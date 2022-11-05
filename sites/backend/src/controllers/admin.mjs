@@ -229,7 +229,7 @@ UserController.prototype.login = async function (req, res, tools) {
   })
 }
 
-UserController.prototype.whoami = async (req, res, tools) => {
+UserController.prototype.readAccount = async (req, res, tools) => {
   if (!req.user?._id) return res.status(400).send({ error: 'bearerMissing', result })
 
   // Destructure what we need from tools

@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { templates } from '../templates/email.mjs'
+import { templates } from '../templates/email/index.mjs'
 // FIXME: Update this after we re-structure the i18n package
 import en from '../../../../packages/i18n/dist/en/email.mjs'
 import nl from '../../../../packages/i18n/dist/en/email.mjs'

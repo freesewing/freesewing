@@ -33,6 +33,19 @@ const config = {
     audience: process.env.API_JWT_ISSUER,
     expiresIn: process.env.API_JWT_EXPIRY || '7d',
   },
+  apikeys: {
+    levels: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+    expiryMaxSeconds: 365 * 24 * 3600,
+  },
+  roles: {
+    levels: {
+      user: 4,
+      bughunter: 5,
+      support: 7,
+      admin: 8,
+    },
+    base: 'user',
+  },
   languages: ['en', 'de', 'es', 'fr', 'nl'],
   aws: {
     ses: {
