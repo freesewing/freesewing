@@ -16,6 +16,9 @@ use our backend as a service to build your own projects.
 
 ## Changes for developers
 
+We've made a number of changes to make it easier for external developers and
+contributors to work with our backend.
+
 ### Authentication with JWT and API keys
 
 Before version 3, the backend only supported authentication via JSON Web
@@ -27,9 +30,6 @@ allow any FreeSewing user to generate their own API keys.
 
 In other words, if you want to connect to our backend API, you don't need to
 ask us. You can generate your own API key and start right away.
-
-We've made a number of changes to make it easier for external developers and
-contributors to work with our backend.
 
 ### Sqlite instead of MongoDB
 
