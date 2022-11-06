@@ -10,7 +10,7 @@ export function ApikeyController() {}
  * Create API key
  *
  * This is the endpoint that handles creation of API keys/tokens
- * See: https://freesewing.dev/reference/backend/api
+ * See: https://freesewing.dev/reference/backend/api/apikey
  */
 ApikeyController.prototype.create = async (req, res, tools) => {
   const Apikey = new ApikeyModel(tools)
@@ -22,8 +22,22 @@ ApikeyController.prototype.create = async (req, res, tools) => {
 /*
  * Read API key
  *
- * This is the endpoint that handles reading of API keys/tokens
- * See: https://freesewing.dev/reference/backend/api
+ * This is the endpoint that handles creation of API keys/tokens
+ * See: https://freesewing.dev/reference/backend/api/apikey
+ */
+ApikeyController.prototype.read = async (req, res, tools) => {
+  const Apikey = new ApikeyModel(tools)
+  await Apikey.readIfAllowed({ id: req.params.id }, req.user)
+
+  return Apikey.sendResponse(res)
+}
+
+/*
+ * Read current API key (whoami)
+ *
+ * This is the endpoint that handles reading of the API keys/token used in this
+ * request
+ * See: https://freesewing.dev/reference/backend/api/apikey
  */
 ApikeyController.prototype.whoami = async (req, res, tools) => {
   const User = new UserModel(tools)

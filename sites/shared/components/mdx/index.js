@@ -32,3 +32,5 @@ const mdxCustomComponents = (app = false) => ({
 })
 
 export default mdxCustomComponents
+
+//<span className="bg-secondary px-2 mx-1 rounded text-primary-content bg-opacity-80">{children}</span>

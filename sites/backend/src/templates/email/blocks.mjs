@@ -35,12 +35,12 @@ export const closingRow = {
     </td>
   </tr>`,
   text: `
-{{ closing }}
+{{{ closing }}}
 
-{{ greeting }}
+{{{ greeting }}}
 joost
 
-PS: {{ text-ps }} : {{{ text-ps-link }}}`,
+PS: {{{ text-ps }}} : {{{ supportUrl }}}`,
 }
 
 export const headingRow = {
@@ -70,7 +70,7 @@ export const lead1Row = {
       </p>
     </td>
   </tr>`,
-  text: `{{ textLead }}
+  text: `{{{ text-lead }}}
   {{{ actionUrl }}}
   `,
 }

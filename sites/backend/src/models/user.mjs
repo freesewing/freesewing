@@ -120,7 +120,7 @@ UserModel.prototype.create = async function ({ body }) {
   await this.mailer.send({
     template: 'signup',
     language: this.language,
-    to: 'joost@decock.org', // this.email,
+    to: this.email,
     replacements: {
       actionUrl: i18nUrl(this.language, `/confirm/signup/${this.Confirmation.record.id}`),
       whyUrl: i18nUrl(this.language, `/docs/faq/email/why-signup`),

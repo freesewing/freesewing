@@ -46,6 +46,28 @@ ApikeyModel.prototype.verify = async function (key, secret) {
   return this
 }
 
+ApikeyModel.prototype.readIfAllowed = async function (where, user) {
+  if (!this.User.authenticatedUser) await this.User.loadAuthenticatedUser(user)
+  await this.read(where)
+  if (!this.record) return this.setResponse(404, 'apikeyNotFound')
+  if (this.record.userId !== this.User.authenticatedUser.id) {
+    // Not own key - only admin can do that
+    if (this.User.authenticatedUser.role !== 'admin') {
+      return this.setResponse(400, 'permissionLackingToLoadOtherApiKey')
+    }
+  }
+
+  return this.setResponse(200, 'success', {
+    apikey: {
+      key: this.record.id,
+      level: this.record.level,
+      expiresAt: this.record.expiresAt,
+      name: this.record.name,
+      userId: this.record.userId,
+    },
+  })
+}
+
 ApikeyModel.prototype.read = async function (where) {
   this.record = await this.prisma.apikey.findUnique({ where })
 
@@ -59,9 +81,9 @@ ApikeyModel.prototype.create = async function ({ body, user }) {
   if (typeof body.level !== 'number') return this.setResponse(400, 'levelNotNumeric')
   if (!this.config.apikeys.levels.includes(body.level)) return this.setResponse(400, 'invalidLevel')
   if (!body.expiresIn) return this.setResponse(400, 'expiresInMissing')
-  if (typeof body.expiresIn !== 'number') return this.setResponse(400, 'expiresInNotNumeric')
+  if (typeof body.expiresIn !== 'number') return this.setResponse(400, 'expiresIsNotNumeric')
   if (body.expiresIn > this.config.apikeys.maxExpirySeconds)
-    return this.setResponse(400, 'expiresInHigherThanMaximum')
+    return this.setResponse(400, 'expiresIsHigherThanMaximum')
 
   // Load user making the call
   await this.User.loadAuthenticatedUser(user)

@@ -300,11 +300,43 @@ describe(`${user} Signup flow and authentication`, () => {
       })
   })
 
-  step(`${user} Read API Key with api key (whoami)`, (done) => {
+  step(`${user} Read API Key with KEY (whoami)`, (done) => {
     chai
       .request(config.api)
       .get(`/whoami/key`)
       .auth(store.apikey.key, store.apikey.secret)
+      .end((err, res) => {
+        expect(res.status).to.equal(200)
+        expect(res.type).to.equal('application/json')
+        expect(res.charset).to.equal('utf-8')
+        expect(res.body.result).to.equal(`success`)
+        const checks = ['key', 'level', 'expiresAt', 'name', 'userId']
+        checks.forEach((i) => expect(res.body.apikey[i]).to.equal(store.apikey[i]))
+        done()
+      })
+  })
+
+  step(`${user} Read API Key with KEY`, (done) => {
+    chai
+      .request(config.api)
+      .get(`/apikey/${store.apikey.key}/key`)
+      .auth(store.apikey.key, store.apikey.secret)
+      .end((err, res) => {
+        expect(res.status).to.equal(200)
+        expect(res.type).to.equal('application/json')
+        expect(res.charset).to.equal('utf-8')
+        expect(res.body.result).to.equal(`success`)
+        const checks = ['key', 'level', 'expiresAt', 'name', 'userId']
+        checks.forEach((i) => expect(res.body.apikey[i]).to.equal(store.apikey[i]))
+        done()
+      })
+  })
+
+  step(`${user} Read API Key with JWT`, (done) => {
+    chai
+      .request(config.api)
+      .get(`/apikey/${store.apikey.key}/jwt`)
+      .set('Authorization', 'Bearer ' + store.token)
       .end((err, res) => {
         expect(res.status).to.equal(200)
         expect(res.type).to.equal('application/json')
