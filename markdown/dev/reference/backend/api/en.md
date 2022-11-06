@@ -1,5 +1,6 @@
 ---
-title: REST API
+title: Backend REST API
+linktitle: REST API
 ---
 
 This is the reference documentation for the FreeSewing backend REST API.
@@ -19,30 +20,35 @@ automation tasks such as creating issues on Github.
 
 ## Authentication
 
-This API is not accessible without authentication.
+Apart from a handlful of API endpoints that are accessible without
+authentication (typically the ones dealing with the signup flow or password
+recovery), this API requires authentication.
 
-The FreeSewing backend API allows two types of authentication:
+Two different types of authentication are supports:
 
-- JSON Web Tokens (jwt): This is typically used to authenticate humans in a
+- **JSON Web Tokens** (jwt): This is typically used to authenticate humans in a
   browser session.
-- API Keys (key): This is typically used to interact with the API in an
-  automated way. Like in a script, or a CI/CD context.
+- **API Keys** (key): This is typically used to interact with the API in an
+  automated way. Like in a script, a CI/CD context, a serverless runner, and so
+  on.
 
-Apart from the handlful of API endpoints that are accessible without
-authentication (typically the ones dealing with the signup flow), this API has
-a variant for each route depending on what authentication you want to use:
+For each endpoint, the API has a variant depending on what authentication you 
+want to use:
 
 - `/some/route/jwt` : Authenticate with JWT
 - `/some/route/key` : Authenticate with an API key and secret
 
 ### JWT authentication
 
-The use of JSON Web Tokens ([jwt](https://jwt.io)) is typically used in a browser context where we want to establish a *session*.
+The use of JSON Web Tokens ([jwt](https://jwt.io)) is typically used in a
+browser context where we want to establish a *session*.
 
-To get a token, you must first authenticate at the `/login` endpoint with username and password.
-You will receive a token in the response.
+To get a token, you must first authenticate at the `/login` endpoint with
+username and password.  You will receive a JSON Web Token (jwt) as part of the
+response.
 
-In subsequent API calls, you must then include this token in the `Authorization` header prefixed by `Bearer`. Liek his:
+In subsequent API calls, you must then include this token in the
+`Authorization` header prefixed by `Bearer`. Like his:
 
 ```js
 const account = await axios.get(
@@ -57,11 +63,18 @@ const account = await axios.get(
 
 ### API key authentication
 
-The combination API key & secret serves as a username & password for HTTP basic authentication.
-In basic authentication, the password is sent unencrypted, but since the FreeSewing backend is only reachable over a TLS encrypted connection, this is not a problem.
+The combination of API key & secret serves as a username & password for [HTTP
+basic authentication](https://en.wikipedia.org/wiki/Basic_access_authentication).
 
-On the plus side, sending a username and password with a request is supported pretty much everywhere.
-In addition, there is no need to establish a session first, so this make the entire transation stateless.
+<Note>
+In basic authentication, the password is sent
+unencrypted. To guard against this, this API should only be served over a 
+connectin encrypted with TLS. (a url starting with `https://`).
+</Note>
+
+Sending a username and password with a request like this is supported
+pretty much everywhere. In addition, there is no need to establish a session
+first, so this make the entire transation stateless.
 
 Below is an example using curl:
 
@@ -96,8 +109,8 @@ The table below lists the priviledge of all levels as well as their correspondin
 | `4`    | **write all** account data                            | ✅ | ✅ | ✅ | ✅ |
 | `5`    | **read** measurements or patterns of **other users**  | ❌ | ✅ | ✅ | ✅ | 
 | `6`    | **read all** account data of **other users**          | ❌ | ❌ | ✅ | ✅ | 
-| `7`    | **write** access through **specific support methods** | ❌ | ❌ | ✅ | ✅ | 
-| `8`    | impersonate other user, full write access             | ❌ | ❌ | ❌ | ✅ |
+| `7`    | **write** account data of **other users** through **specific support methods** | ❌ | ❌ | ✅ | ✅ | 
+| `8`    | impersonate other users, **full write access**        | ❌ | ❌ | ❌ | ✅ |
 
 ## API Routes
 

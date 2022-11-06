@@ -62,3 +62,16 @@ ApikeyController.prototype.whoami = async (req, res, tools) => {
 
   return Apikey.sendResponse(res)
 }
+
+/*
+ * Remove API key
+ *
+ * This is the endpoint that handles removal of API keys/tokens
+ * See: https://freesewing.dev/reference/backend/api/apikey
+ */
+ApikeyController.prototype.delete = async (req, res, tools) => {
+  const Apikey = new ApikeyModel(tools)
+  await Apikey.removeIfAllowed({ id: req.params.id }, req.user)
+
+  return Apikey.sendResponse(res)
+}

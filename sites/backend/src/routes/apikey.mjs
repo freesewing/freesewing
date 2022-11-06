@@ -27,4 +27,12 @@ export function apikeyRoutes(tools) {
   app.get('/whoami/key', passport.authenticate(...bsc), (req, res) =>
     Apikey.whoami(req, res, tools)
   )
+
+  // Remove Apikey
+  app.delete('/apikey/:id/jwt', passport.authenticate(...jwt), (req, res) =>
+    Apikey.delete(req, res, tools)
+  )
+  app.delete('/apikey/:id/key', passport.authenticate(...bsc), (req, res) =>
+    Apikey.delete(req, res, tools)
+  )
 }

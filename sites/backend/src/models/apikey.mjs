@@ -25,7 +25,8 @@ ApikeyModel.prototype.setResponse = function (status = 200, error = false, data 
       ...data,
     },
   }
-  if (status > 201) {
+  if (status === 201) this.response.body.result = 'created'
+  else if (status > 201) {
     this.response.body.error = error
     this.response.body.result = 'error'
     this.error = true
@@ -68,8 +69,30 @@ ApikeyModel.prototype.readIfAllowed = async function (where, user) {
   })
 }
 
+ApikeyModel.prototype.removeIfAllowed = async function (where, user) {
+  if (!this.User.authenticatedUser) await this.User.loadAuthenticatedUser(user)
+  await this.read(where)
+  if (!this.record) return this.setResponse(404, 'apikeyNotFound')
+  if (this.record.userId !== this.User.authenticatedUser.id) {
+    // Not own key - only admin can do that
+    if (this.User.authenticatedUser.role !== 'admin') {
+      return this.setResponse(400, 'permissionLackingToRemoveOtherApiKey')
+    }
+  }
+  await this.remove(where)
+
+  return this.setResponse(204)
+}
+
 ApikeyModel.prototype.read = async function (where) {
   this.record = await this.prisma.apikey.findUnique({ where })
+
+  return this
+}
+
+ApikeyModel.prototype.remove = async function (where) {
+  await this.prisma.apikey.delete({ where })
+  this.record = false
 
   return this
 }
@@ -101,7 +124,7 @@ ApikeyModel.prototype.create = async function ({ body, user }) {
         name: body.name,
         level: body.level,
         secret: asJson(hashPassword(secret)),
-        userId: user._id,
+        userId: user._id || user.userId,
       },
     })
   } catch (err) {
@@ -109,7 +132,7 @@ ApikeyModel.prototype.create = async function ({ body, user }) {
     return this.setResponse(500, 'createApikeyFailed')
   }
 
-  return this.setResponse(200, 'success', {
+  return this.setResponse(201, 'created', {
     apikey: {
       key: this.record.id,
       secret,

@@ -287,15 +287,39 @@ describe(`${user} Signup flow and authentication`, () => {
         expiresIn: 60,
       })
       .end((err, res) => {
-        expect(res.status).to.equal(200)
+        expect(res.status).to.equal(201)
         expect(res.type).to.equal('application/json')
         expect(res.charset).to.equal('utf-8')
-        expect(res.body.result).to.equal(`success`)
+        expect(res.body.result).to.equal(`created`)
         expect(typeof res.body.apikey.key).to.equal('string')
         expect(typeof res.body.apikey.secret).to.equal('string')
         expect(typeof res.body.apikey.expiresAt).to.equal('string')
         expect(res.body.apikey.level).to.equal(4)
         store.apikey = res.body.apikey
+        done()
+      })
+  })
+
+  step(`${user} Create API Key with KEY`, (done) => {
+    chai
+      .request(config.api)
+      .post('/apikey/key')
+      .auth(store.apikey.key, store.apikey.secret)
+      .send({
+        name: 'Test API key with key',
+        level: 4,
+        expiresIn: 60,
+      })
+      .end((err, res) => {
+        expect(res.status).to.equal(201)
+        expect(res.type).to.equal('application/json')
+        expect(res.charset).to.equal('utf-8')
+        expect(res.body.result).to.equal(`created`)
+        expect(typeof res.body.apikey.key).to.equal('string')
+        expect(typeof res.body.apikey.secret).to.equal('string')
+        expect(typeof res.body.apikey.expiresAt).to.equal('string')
+        expect(res.body.apikey.level).to.equal(4)
+        store.apikeykey = res.body.apikey
         done()
       })
   })
@@ -320,7 +344,7 @@ describe(`${user} Signup flow and authentication`, () => {
     chai
       .request(config.api)
       .get(`/apikey/${store.apikey.key}/key`)
-      .auth(store.apikey.key, store.apikey.secret)
+      .auth(store.apikeykey.key, store.apikeykey.secret)
       .end((err, res) => {
         expect(res.status).to.equal(200)
         expect(res.type).to.equal('application/json')
@@ -335,7 +359,7 @@ describe(`${user} Signup flow and authentication`, () => {
   step(`${user} Read API Key with JWT`, (done) => {
     chai
       .request(config.api)
-      .get(`/apikey/${store.apikey.key}/jwt`)
+      .get(`/apikey/${store.apikeykey.key}/jwt`)
       .set('Authorization', 'Bearer ' + store.token)
       .end((err, res) => {
         expect(res.status).to.equal(200)
@@ -343,7 +367,18 @@ describe(`${user} Signup flow and authentication`, () => {
         expect(res.charset).to.equal('utf-8')
         expect(res.body.result).to.equal(`success`)
         const checks = ['key', 'level', 'expiresAt', 'name', 'userId']
-        checks.forEach((i) => expect(res.body.apikey[i]).to.equal(store.apikey[i]))
+        checks.forEach((i) => expect(res.body.apikey[i]).to.equal(store.apikeykey[i]))
+        done()
+      })
+  })
+
+  step(`${user} Remove API Key with KEY`, (done) => {
+    chai
+      .request(config.api)
+      .delete(`/apikey/${store.apikeykey.key}/key`)
+      .auth(store.apikeykey.key, store.apikeykey.secret)
+      .end((err, res) => {
+        expect(res.status).to.equal(204)
         done()
       })
   })
