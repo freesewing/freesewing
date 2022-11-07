@@ -26,7 +26,7 @@ ApikeyModel.prototype.setResponse = function (status = 200, error = false, data 
     },
   }
   if (status === 201) this.response.body.result = 'created'
-  else if (status > 201) {
+  else if (status > 204) {
     this.response.body.error = error
     this.response.body.result = 'error'
     this.error = true
@@ -80,6 +80,7 @@ ApikeyModel.prototype.removeIfAllowed = async function (where, user) {
     }
   }
   await this.remove(where)
+  this.setResponse(204)
 
   return this.setResponse(204)
 }

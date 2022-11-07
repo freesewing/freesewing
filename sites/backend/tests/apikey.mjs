@@ -1,9 +1,8 @@
 export const apikeyTests = async (config, store, chai) => {
   const expect = chai.expect
-  const icon = '🎟️ '
 
-  describe(`${icon} API Key create/read/delete`, () => {
-    step(`${icon} Create API Key`, (done) => {
+  describe(`${store.icon('key')} API Key create/read/delete`, () => {
+    step(`${store.icon('key', 'jwt')} Create API Key (jwt)`, (done) => {
       chai
         .request(config.api)
         .post('/apikey/jwt')
@@ -27,7 +26,7 @@ export const apikeyTests = async (config, store, chai) => {
         })
     })
 
-    step(`${icon} Create API Key with KEY`, (done) => {
+    step(`${store.icon('key', 'key')} Create API Key (key)`, (done) => {
       chai
         .request(config.api)
         .post('/apikey/key')
@@ -51,7 +50,7 @@ export const apikeyTests = async (config, store, chai) => {
         })
     })
 
-    step(`${icon} Read API Key with KEY (whoami)`, (done) => {
+    step(`${store.icon('key', 'key')} Read API key via whoami (key)`, (done) => {
       chai
         .request(config.api)
         .get(`/whoami/key`)
@@ -67,7 +66,7 @@ export const apikeyTests = async (config, store, chai) => {
         })
     })
 
-    step(`${icon} Read API Key with KEY`, (done) => {
+    step(`${store.icon('key', 'key')} Read API key (key)`, (done) => {
       chai
         .request(config.api)
         .get(`/apikey/${store.apikey1.key}/key`)
@@ -83,11 +82,11 @@ export const apikeyTests = async (config, store, chai) => {
         })
     })
 
-    step(`${icon} Read API Key with JWT`, (done) => {
+    step(`${store.icon('key', 'jwt')} Read API key (jwt)`, (done) => {
       chai
         .request(config.api)
         .get(`/apikey/${store.apikey2.key}/jwt`)
-        .set('Authorization', 'Bearer ' + store.token)
+        .set('Authorization', 'Bearer ' + store.account.token)
         .end((err, res) => {
           expect(res.status).to.equal(200)
           expect(res.type).to.equal('application/json')
@@ -99,11 +98,22 @@ export const apikeyTests = async (config, store, chai) => {
         })
     })
 
-    step(`${icon} Remove API Key with KEY`, (done) => {
+    step(`${store.icon('key', 'key')} Remove API key (key)`, (done) => {
       chai
         .request(config.api)
         .delete(`/apikey/${store.apikey2.key}/key`)
         .auth(store.apikey2.key, store.apikey2.secret)
+        .end((err, res) => {
+          expect(res.status).to.equal(204)
+          done()
+        })
+    })
+
+    step(`${store.icon('key', 'jwt')} Remove API key (jwt)`, (done) => {
+      chai
+        .request(config.api)
+        .delete(`/apikey/${store.apikey1.key}/jwt`)
+        .set('Authorization', 'Bearer ' + store.account.token)
         .end((err, res) => {
           expect(res.status).to.equal(204)
           done()

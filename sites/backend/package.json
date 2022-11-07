@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/index.mjs",
-    "test": "npx mocha --require mocha-steps tests/*.test.mjs",
+    "test": "npx mocha --require mocha-steps tests/index.mjs",
     "initdb": "npx prisma db push",
     "newdb": "node ./scripts/newdb.mjs",
     "rmdb": "node ./scripts/rmdb.mjs",

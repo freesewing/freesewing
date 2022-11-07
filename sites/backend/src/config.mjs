@@ -20,7 +20,9 @@ const config = {
     url: process.env.API_DB_URL,
   },
   tests: {
-    domain: process.env.TESTDOMAIN || 'mailtrap.freesewing.dev',
+    allow: process.env.ALLOW_UNITTESTS || false,
+    domain: process.env.TESTDOMAIN || 'freesewing.dev',
+    sendEmail: process.env.SEND_UNITTEST_EMAILS || false,
   },
   static: process.env.API_STATIC,
   storage: process.env.API_STORAGE,

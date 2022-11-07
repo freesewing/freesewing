@@ -20,12 +20,18 @@ const store = {
     language: 'en',
     password: randomString(),
   },
+  icons: {
+    user: '🧑 ',
+    jwt: '🎫 ',
+    key: '🎟️ ',
+  },
 }
+store.icon = (icon1, icon2 = false) => store.icons[icon1] + (icon2 ? store.icons[icon2] : '')
 
 // Run tests
 const runTests = async (config, store, chai) => {
   await setup(config, store, chai)
-  await userTests(config, store, chai)
+  //await userTests(config, store, chai)
   await apikeyTests(config, store, chai)
 }
 

@@ -1,9 +1,8 @@
 export const userTests = async (config, store, chai) => {
   const expect = chai.expect
-  const icon = '🧑'
 
-  describe(`${icon} Signup flow and authentication`, async function () {
-    it(`${icon} Should return 400 on signup without body`, function (done) {
+  describe(`${store.icon('user')} Signup flow and authentication`, async function () {
+    it(`${store.icon('user')} Should return 400 on signup without body`, function (done) {
       this.store = store
       chai
         .request(config.api)
@@ -24,7 +23,7 @@ export const userTests = async (config, store, chai) => {
       language: 'fr',
     }
     Object.keys(fields).map((key) => {
-      it(`${icon} Should not allow signup without ${key}`, (done) => {
+      it(`${store.icon('user')} Should not allow signup without ${key}`, (done) => {
         chai
           .request(config.api)
           .post('/signup')
@@ -47,7 +46,7 @@ export const userTests = async (config, store, chai) => {
       })
     })
 
-    step(`${icon} Should fail to signup an existing email address`, (done) => {
+    step(`${store.icon('user')} Should fail to signup an existing email address`, (done) => {
       chai
         .request(config.api)
         .post('/signup')
@@ -62,7 +61,7 @@ export const userTests = async (config, store, chai) => {
         })
     })
 
-    step(`${icon} Should not login with the wrong password`, (done) => {
+    step(`${store.icon('user')} Should not login with the wrong password`, (done) => {
       chai
         .request(config.api)
         .post('/login')
@@ -80,7 +79,7 @@ export const userTests = async (config, store, chai) => {
         })
     })
 
-    step(`${icon} Should login with username and password`, (done) => {
+    step(`${store.icon('user')} Should login with username and password`, (done) => {
       chai
         .request(config.api)
         .post('/login')
@@ -103,7 +102,7 @@ export const userTests = async (config, store, chai) => {
         })
     })
 
-    step(`${icon} Should login with USERNAME and password`, (done) => {
+    step(`${store.icon('user')} Should login with USERNAME and password`, (done) => {
       chai
         .request(config.api)
         .post('/login')
@@ -126,7 +125,7 @@ export const userTests = async (config, store, chai) => {
         })
     })
 
-    step(`${icon} Should login with email and password`, (done) => {
+    step(`${store.icon('user')} Should login with email and password`, (done) => {
       chai
         .request(config.api)
         .post('/login')
@@ -149,7 +148,7 @@ export const userTests = async (config, store, chai) => {
         })
     })
 
-    step(`${icon} Should login with EMAIL and password`, (done) => {
+    step(`${store.icon('user')} Should login with EMAIL and password`, (done) => {
       chai
         .request(config.api)
         .post('/login')
@@ -172,7 +171,7 @@ export const userTests = async (config, store, chai) => {
         })
     })
 
-    step(`${icon} Should login with userid and password`, (done) => {
+    step(`${store.icon('user')} Should login with userid and password`, (done) => {
       chai
         .request(config.api)
         .post('/login')
@@ -195,7 +194,7 @@ export const userTests = async (config, store, chai) => {
         })
     })
 
-    step(`${icon} Should load account with JWT`, (done) => {
+    step(`${store.icon('user', 'jwt')} Should load account (jwt)`, (done) => {
       chai
         .request(config.api)
         .get('/account/jwt')
@@ -213,7 +212,7 @@ export const userTests = async (config, store, chai) => {
         })
     })
 
-    step(`${icon} Should load account with JWT (whoami)`, (done) => {
+    step(`${store.icon('user', 'jwt')} Should load account via whoami (jwt)`, (done) => {
       chai
         .request(config.api)
         .get('/whoami/jwt')

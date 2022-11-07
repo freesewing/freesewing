@@ -117,18 +117,19 @@ UserModel.prototype.create = async function ({ body }) {
   })
 
   // Send signup email
-  await this.mailer.send({
-    template: 'signup',
-    language: this.language,
-    to: this.email,
-    replacements: {
-      actionUrl: i18nUrl(this.language, `/confirm/signup/${this.Confirmation.record.id}`),
-      whyUrl: i18nUrl(this.language, `/docs/faq/email/why-signup`),
-      supportUrl: i18nUrl(this.language, `/patrons/join`),
-    },
-  })
+  if (!this.isUnitTest(body) || this.config.tests.sendEmail)
+    await this.mailer.send({
+      template: 'signup',
+      language: this.language,
+      to: this.email,
+      replacements: {
+        actionUrl: i18nUrl(this.language, `/confirm/signup/${this.Confirmation.record.id}`),
+        whyUrl: i18nUrl(this.language, `/docs/faq/email/why-signup`),
+        supportUrl: i18nUrl(this.language, `/patrons/join`),
+      },
+    })
 
-  return body.unittest && this.email.split('@').pop() === this.config.tests.domain
+  return this.isUnitTest(body)
     ? this.setResponse(201, false, { email: this.email, confirmation: this.confirmation.record.id })
     : this.setResponse(201, false, { email: this.email })
 }
@@ -267,4 +268,12 @@ UserModel.prototype.setResponse = function (status = 200, error = false, data = 
  */
 UserModel.prototype.sendResponse = async function (res) {
   return res.status(this.response.status).send(this.response.body)
+}
+
+/*
+ * Update method to determine whether this request is
+ * part of a unit test
+ */
+UserModel.prototype.isUnitTest = function (body) {
+  return body.unittest && this.email.split('@').pop() === this.config.tests.domain
 }
