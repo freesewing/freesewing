@@ -92,68 +92,10 @@ UserController.prototype.confirm = async (req, res, tools) => {
  * See: https://freesewing.dev/reference/backend/api
  */
 UserController.prototype.login = async function (req, res, tools) {
-  if (Object.keys(req.body) < 1) return res.status(400).json({ error: 'postBodyMissing', result })
-  if (!req.body.username) return res.status(400).json({ error: 'usernameMissing', result })
-  if (!req.body.password) return res.status(400).json({ error: 'passwordMissing', result })
+  const User = new UserModel(tools)
+  await User.passwordLogin(req)
 
-  // Destructure what we need from tools
-  const { prisma, config, decrypt } = tools
-
-  // Retrieve user account
-  let account
-  try {
-    account = await prisma.user.findFirst({
-      where: {
-        OR: [
-          { lusername: { equals: clean(req.body.username) } },
-          { ehash: { equals: hash(clean(req.body.username)) } },
-          { id: { equals: parseInt(req.body.username) || -1 } },
-        ],
-      },
-    })
-  } catch (err) {
-    log.warn(err, `Error while trying to find username: ${req.body.username}`)
-    return res.status(401).send({ error: 'loginFailed', result })
-  }
-  if (!account) {
-    log.warn(`Login attempt for non-existing user: ${req.body.username} from ${req.ip}`)
-    return res.status(401).send({ error: 'loginFailed', result })
-  }
-
-  // Account found, check password
-  const [valid, updatedPasswordField] = verifyPassword(req.body.password, account.password)
-  if (!valid) {
-    log.warn(`Wrong password for existing user: ${req.body.username} from ${req.ip}`)
-    return res.status(401).send({ error: 'loginFailed', result })
-  }
-
-  // Login success
-  log.info(`Login by user ${account.id} (${account.username})`)
-  if (updatedPasswordField) {
-    // Update the password field with a v3 hash
-    let updateUser
-    try {
-      updateUser = await prisma.user.update({
-        where: {
-          id: account.id,
-        },
-        data: {
-          password: updatedPasswordField,
-        },
-      })
-    } catch (err) {
-      log.warn(
-        err,
-        `Could not update password field with v3 hash for user id ${account.id} (${account.username})`
-      )
-    }
-  }
-
-  return res.status(200).send({
-    result: 'success',
-    token: getToken(account, config),
-    account: asAccount({ ...account }, decrypt),
-  })
+  return User.sendResponse(res)
 }
 
 UserController.prototype.whoami = async (req, res, tools) => {
@@ -187,7 +129,7 @@ UserController.prototype.whoami = async (req, res, tools) => {
 }
 
 UserController.prototype.update = async (req, res, tools) => {
-  if (!req.user?._id) return res.status(400).send({ error: 'bearerMissing', result })
+  console.log('update please')
 
   // Destructure what we need from tools
   const { prisma, decrypt } = tools

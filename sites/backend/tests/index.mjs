@@ -4,6 +4,7 @@ import http from 'chai-http'
 import { verifyConfig } from '../src/config.mjs'
 import { randomString } from '../src/utils/crypto.mjs'
 import { userTests } from './user.mjs'
+import { accountTests } from './account.mjs'
 import { apikeyTests } from './apikey.mjs'
 import { setup } from './shared.mjs'
 
@@ -31,8 +32,9 @@ store.icon = (icon1, icon2 = false) => store.icons[icon1] + (icon2 ? store.icons
 // Run tests
 const runTests = async (config, store, chai) => {
   await setup(config, store, chai)
-  //await userTests(config, store, chai)
-  await apikeyTests(config, store, chai)
+  await userTests(config, store, chai)
+  //await apikeyTests(config, store, chai)
+  //await accountTests(config, store, chai)
 }
 
 // Do the work

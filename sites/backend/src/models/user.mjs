@@ -21,9 +21,40 @@ export function UserModel(tools) {
  * Stores result in this.record
  */
 UserModel.prototype.read = async function (where) {
-  this.record = await this.prisma.user.findUnique({ where })
+  try {
+    this.record = await this.prisma.user.findUnique({ where })
+  } catch (err) {
+    log.warn({ err, where }, 'Could not read user')
+  }
+
   if (this.record?.email) this.email = this.decrypt(this.record.email)
   if (this.record?.initial) this.initial = this.decrypt(this.record.initial)
+
+  return this.setExists()
+}
+
+/*
+ * Finds a user based on one of the accepted unique fields which are:
+ *   - lusername (lowercase username)
+ *   - ehash
+ *   - id
+ *
+ * Stores result in this.record
+ */
+UserModel.prototype.find = async function (body) {
+  try {
+    this.record = await this.prisma.user.findFirst({
+      where: {
+        OR: [
+          { lusername: { equals: clean(body.username) } },
+          { ehash: { equals: hash(clean(body.username)) } },
+          { id: { equals: parseInt(body.username) || -1 } },
+        ],
+      },
+    })
+  } catch (err) {
+    log.warn({ err, body }, `Error while trying to find user: ${body.username}`)
+  }
 
   return this.setExists()
 }
@@ -84,7 +115,7 @@ UserModel.prototype.create = async function ({ body }) {
         initial: email,
         username,
         lusername: username,
-        data: asJson({ settings: { language: this.language } }),
+        data: this.encrypt(asJson({ settings: { language: this.language } })),
         password: asJson(hashPassword(body.password)),
       },
     })
@@ -135,6 +166,38 @@ UserModel.prototype.create = async function ({ body }) {
 }
 
 /*
+ * Login based on username + password
+ */
+UserModel.prototype.passwordLogin = async function (req) {
+  if (Object.keys(req.body) < 1) return this.setReponse(400, 'postBodyMissing')
+  if (!req.body.username) return this.setReponse(400, 'usernameMissing')
+  if (!req.body.password) return this.setReponse(400, 'passwordMissing')
+
+  await this.find(req.body)
+  if (!this.exists) {
+    log.warn(`Login attempt for non-existing user: ${req.body.username} from ${req.ip}`)
+    return this.setResponse(401, 'loginFailed')
+  }
+
+  // Account found, check password
+  const [valid, updatedPasswordField] = verifyPassword(req.body.password, this.record.password)
+  if (!valid) {
+    log.warn(`Wrong password for existing user: ${req.body.username} from ${req.ip}`)
+    return this.setResponse(401, 'loginFailed')
+  }
+
+  log.info(`Login by user ${this.record.id} (${this.record.username})`)
+
+  // Login success
+  if (updatedPasswordField) {
+    // Update the password field with a v3 hash
+    await this.update({ password: updatedPasswordField })
+  }
+
+  return this.isOk() ? this.loginOk() : this.setResponse(401, 'loginFailed')
+}
+
+/*
  * Confirms a user account
  */
 UserModel.prototype.confirm = async function ({ body, params }) {
@@ -169,18 +232,14 @@ UserModel.prototype.confirm = async function ({ body, params }) {
 
   // Update user status, consent, and last login
   await this.update({
-    //data: this.encrypt({...this.decrypt(this.record.data), status: 1}),
+    status: 1,
     consent: body.consent,
     lastLogin: new Date(),
   })
   if (this.error) return this
 
   // Account is now active, let's return a passwordless login
-  return this.setResponse(200, false, {
-    result: 'success',
-    token: this.getToken(),
-    account: this.asAccount(),
-  })
+  return this.loginOk()
 }
 
 /*
@@ -209,9 +268,9 @@ UserModel.prototype.asAccount = function () {
     id: this.record.id,
     consent: this.record.consent,
     createdAt: this.record.createdAt,
-    data: this.record.data,
-    email: this.email,
-    initial: this.initial,
+    data: JSON.parse(this.decrypt(this.record.data)),
+    email: this.decrypt(this.record.email),
+    initial: this.decrypt(this.record.initial),
     lastLogin: this.record.lastLogin,
     newsletter: this.record.newsletter,
     patron: this.record.patron,
@@ -276,4 +335,32 @@ UserModel.prototype.sendResponse = async function (res) {
  */
 UserModel.prototype.isUnitTest = function (body) {
   return body.unittest && this.email.split('@').pop() === this.config.tests.domain
+}
+
+/*
+ * Helper method to check an account is ok
+ */
+UserModel.prototype.isOk = function () {
+  if (
+    this.exists &&
+    this.record &&
+    this.record.status > 0 &&
+    this.record.consent > 0 &&
+    this.record.role &&
+    this.record.role !== 'blocked'
+  )
+    return true
+
+  return false
+}
+
+/*
+ * Helper method to return from successful login
+ */
+UserModel.prototype.loginOk = function () {
+  return this.setResponse(200, false, {
+    result: 'success',
+    token: this.getToken(),
+    account: this.asAccount(),
+  })
 }
