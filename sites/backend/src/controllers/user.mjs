@@ -7,42 +7,6 @@ import { log } from '../utils/log.mjs'
 import set from 'lodash.set'
 import { UserModel } from '../models/user.mjs'
 
-/*
- * Prisma is not an ORM and we can't attach methods to the model
- * So here's a bunch of helper methods that expect a user object
- * as input
- */
-const asAccount = (user, decrypt) => ({
-  id: user.id,
-  consent: user.consent,
-  createdAt: user.createdAt,
-  data: user.data,
-  email: decrypt(user.email),
-  initial: decrypt(user.initial),
-  lastLogin: user.lastLogin,
-  newsletter: user.newsletter,
-  patron: user.patron,
-  role: user.role,
-  status: user.status,
-  updatedAt: user.updatedAt,
-  username: user.username,
-  lusername: user.lusername,
-})
-
-const getToken = (user, config) =>
-  jwt.sign(
-    {
-      _id: user.id,
-      username: user.username,
-      role: user.role,
-      status: user.status,
-      aud: config.jwt.audience,
-      iss: config.jwt.issuer,
-    },
-    config.jwt.secretOrKey,
-    { expiresIn: config.jwt.expiresIn }
-  )
-
 const isUsernameAvailable = async (username, prisma) => {
   const user = await prisme.user.findUnique({
     where: {
@@ -99,98 +63,20 @@ UserController.prototype.login = async function (req, res, tools) {
 }
 
 UserController.prototype.whoami = async (req, res, tools) => {
-  if (!req.user?._id) return res.status(400).send({ error: 'bearerMissing', result })
+  const User = new UserModel(tools)
+  await User.readAsAccount({ id: req.user.uid })
 
-  // Destructure what we need from tools
-  const { prisma, decrypt } = tools
-
-  // Retrieve user account
-  let account
-  try {
-    account = await prisma.user.findUnique({
-      where: {
-        id: req.user._id,
-      },
-    })
-  } catch (err) {
-    log.warn(err, `Could not lookup user id ${req.user._id} from token data`)
-    return res.status(404).send({ error: 'failedToRetrieveUserIdFromTokenData', result })
-  }
-  if (!account) {
-    log.warn(err, `Could not find user id ${req.user._id} from token data`)
-    return res.status(404).send({ error: 'failedToLoadUserFromTokenData', result })
-  }
-
-  // Return account data
-  return res.status(200).send({
-    result: 'success',
-    account: asAccount({ ...account }, decrypt),
-  })
+  return User.sendResponse(res)
 }
 
 UserController.prototype.update = async (req, res, tools) => {
-  console.log('update please')
-
-  // Destructure what we need from tools
-  const { prisma, decrypt } = tools
-
-  // Retrieve user account
-  let account
-  try {
-    account = await prisma.user.findUnique({
-      where: {
-        id: req.user._id,
-      },
-    })
-  } catch (err) {
-    log.warn(err, `Could not lookup user id ${req.user._id} from token data`)
-    return res.status(404).send({ error: 'failedToRetrieveUserIdFromTokenData', result })
-  }
-  if (!account) {
-    log.warn(err, `Could not find user id ${req.user._id} from token data`)
-    return res.status(404).send({ error: 'failedToLoadUserFromTokenData', result })
-  }
-
-  // Account loaded - Handle various updates
-  const data = {}
-  // Username
-  if (req.body.username) {
-    if (!isUsernameAvailable(req.body.username, prisma)) {
-      return res.status(400).send({ error: 'usernameTaken', result })
-    }
-    data.username = req.body.username
-    data.lusername = data.username.toLowerCase()
-  }
-  // Newsletter
-  if (req.body.newsletter === false) data.newsletter = false
-  if (req.body.newsletter === true) data.newsletter = true
-  // Consent
-  if (typeof req.body.consent !== 'undefined') data.consent = req.body.consent
-  // Bio
-  if (typeof req.body.bio === 'string') userData.bio = req.body.bio
-  // Password
-  if (typeof req.body.password === 'string')
-    userData.password = asJson(hashPassword(req.body.password))
-  // Data
-  const userData = JSON.parse(account.data)
-  const uhash = hash(account.data)
-  if (typeof req.body.language === 'string') set(userData, 'settings.language', req.body.language)
-  if (typeof req.body.units === 'string') set(userData, 'settings.units', req.body.units)
-  if (typeof req.body.github === 'string') set(userData, 'settings.social.github', req.body.github)
-  if (typeof req.body.twitter === 'string')
-    set(userData, 'settings.social.twitter', req.body.twitter)
-  if (typeof req.body.instagram === 'string')
-    set(userData, 'settings.social.instagram', req.body.instagram)
-  // Did data change?
-  if (uhash !== hash(userData)) data.data = JSON.stringify(userData)
+  const User = new UserModel(tools)
+  await User.read({ id: req.user.uid })
 
   // Commit
-  prisma.user.update({
-    where: { id: account.id },
-    data,
-  })
-
+  //await User.update({ id: req.user.uid }, req.body)
   // Email change requires confirmation
+  /*
   if (typeof req.body.email === 'string') {
     const currentEmail = decrypt(account.email)
     if (req.body.email !== currentEmail) {
@@ -249,6 +135,7 @@ UserController.prototype.update = async (req, res, tools) => {
       }
     }
   }
+  */
   // Now handle the
   /*
     else if (typeof data.email === 'string' && data.email !== user.email) {

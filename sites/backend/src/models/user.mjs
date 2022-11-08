@@ -11,6 +11,7 @@ export function UserModel(tools) {
   this.encrypt = tools.encrypt
   this.mailer = tools.email
   this.Confirmation = new ConfirmationModel(tools)
+  this.clear = {} // For holding decrypted data
 
   return this
 }
@@ -27,10 +28,38 @@ UserModel.prototype.read = async function (where) {
     log.warn({ err, where }, 'Could not read user')
   }
 
-  if (this.record?.email) this.email = this.decrypt(this.record.email)
-  if (this.record?.initial) this.initial = this.decrypt(this.record.initial)
+  this.reveal()
 
   return this.setExists()
+}
+
+/*
+ * Helper method to decrypt at-rest data
+ */
+UserModel.prototype.reveal = async function (where) {
+  this.clear = {}
+  if (this.record) {
+    this.clear.data = JSON.parse(this.decrypt(this.record.data))
+    this.clear.email = this.decrypt(this.record.email)
+    this.clear.initial = this.decrypt(this.record.initial)
+  }
+
+  return this
+}
+
+/*
+ * Loads a user from the database based on the where clause you pass it
+ * In addition prepares it for returning the account data
+ *
+ * Stores result in this.record
+ */
+UserModel.prototype.readAsAccount = async function (where) {
+  await this.read(where)
+
+  return this.setResponse(200, false, {
+    result: 'success',
+    account: this.asAccount(),
+  })
 }
 
 /*
@@ -56,6 +85,8 @@ UserModel.prototype.find = async function (body) {
     log.warn({ err, body }, `Error while trying to find user: ${body.username}`)
   }
 
+  this.reveal()
+
   return this.setExists()
 }
 
@@ -66,9 +97,8 @@ UserModel.prototype.find = async function (body) {
  */
 UserModel.prototype.loadAuthenticatedUser = async function (user) {
   if (!user) return this
-  const where = user?.apikey ? { id: user.userId } : { id: user._id }
   this.authenticatedUser = await this.prisma.user.findUnique({
-    where,
+    where: { id: user.uid },
     include: {
       apikeys: true,
     },
@@ -103,22 +133,22 @@ UserModel.prototype.create = async function ({ body }) {
   if (this.exists) return this.setResponse(400, 'emailExists')
 
   try {
-    this.email = clean(body.email)
+    this.clear.email = clean(body.email)
+    this.clear.initial = this.clear.email
     this.language = body.language
-    const email = this.encrypt(this.email)
+    const email = this.encrypt(this.clear.email)
     const username = clean(randomString()) // Temporary username
-    this.record = await this.prisma.user.create({
-      data: {
-        ehash,
-        ihash: ehash,
-        email,
-        initial: email,
-        username,
-        lusername: username,
-        data: this.encrypt(asJson({ settings: { language: this.language } })),
-        password: asJson(hashPassword(body.password)),
-      },
-    })
+    const data = {
+      ehash,
+      ihash: ehash,
+      email,
+      initial: email,
+      username,
+      lusername: username,
+      data: this.encrypt(asJson({ settings: { language: this.language } })),
+      password: asJson(hashPassword(body.password)),
+    }
+    this.record = await this.prisma.user.create({ data })
   } catch (err) {
     log.warn(err, 'Could not create user record')
     return this.setResponse(500, 'createAccountFailed')
@@ -126,7 +156,7 @@ UserModel.prototype.create = async function ({ body }) {
 
   // Update username
   try {
-    await this.update({
+    await this.safeUpdate({
       username: `user-${this.record.id}`,
       lusername: `user-${this.record.id}`,
     })
@@ -138,12 +168,12 @@ UserModel.prototype.create = async function ({ body }) {
   // Create confirmation
   this.confirmation = await this.Confirmation.create({
     type: 'signup',
-    data: this.encrypt({
+    data: {
       language: this.language,
-      email: this.email,
+      email: this.clear.email,
       id: this.record.id,
       ehash: ehash,
-    }),
+    },
     userId: this.record.id,
   })
 
@@ -152,7 +182,7 @@ UserModel.prototype.create = async function ({ body }) {
     await this.mailer.send({
       template: 'signup',
       language: this.language,
-      to: this.email,
+      to: this.clear.email,
       replacements: {
         actionUrl: i18nUrl(this.language, `/confirm/signup/${this.Confirmation.record.id}`),
         whyUrl: i18nUrl(this.language, `/docs/faq/email/why-signup`),
@@ -161,8 +191,11 @@ UserModel.prototype.create = async function ({ body }) {
     })
 
   return this.isUnitTest(body)
-    ? this.setResponse(201, false, { email: this.email, confirmation: this.confirmation.record.id })
-    : this.setResponse(201, false, { email: this.email })
+    ? this.setResponse(201, false, {
+        email: this.clear.email,
+        confirmation: this.confirmation.record.id,
+      })
+    : this.setResponse(201, false, { email: this.clear.email })
 }
 
 /*
@@ -191,7 +224,7 @@ UserModel.prototype.passwordLogin = async function (req) {
   // Login success
   if (updatedPasswordField) {
     // Update the password field with a v3 hash
-    await this.update({ password: updatedPasswordField })
+    await this.safeUpdate({ password: updatedPasswordField })
   }
 
   return this.isOk() ? this.loginOk() : this.setResponse(401, 'loginFailed')
@@ -220,7 +253,7 @@ UserModel.prototype.confirm = async function ({ body, params }) {
   }
 
   if (this.error) return this
-  const data = await this.decrypt(this.Confirmation.record.data)
+  const data = this.Confirmation.clear.data
   if (data.ehash !== this.Confirmation.record.user.ehash)
     return this.setResponse(404, 'confirmationEhashMismatch')
   if (data.id !== this.Confirmation.record.user.id)
@@ -231,7 +264,7 @@ UserModel.prototype.confirm = async function ({ body, params }) {
   if (this.error) return this
 
   // Update user status, consent, and last login
-  await this.update({
+  await this.safeUpdate({
     status: 1,
     consent: body.consent,
     lastLogin: new Date(),
@@ -243,14 +276,58 @@ UserModel.prototype.confirm = async function ({ body, params }) {
 }
 
 /*
- * Updates the user data
+ * Updates the user data - Used when we create the data ourselves
+ * so we know it's safe
  */
-UserModel.prototype.update = async function (data) {
+UserModel.prototype.safeUpdate = async function (data) {
   try {
     this.record = await this.prisma.user.update({
       where: { id: this.record.id },
       data,
     })
+  } catch (err) {
+    log.warn(err, 'Could not update user record')
+    process.exit()
+    return this.setResponse(500, 'updateUserFailed')
+  }
+
+  return this.setResponse(200)
+}
+
+/*
+ * Updates the user data - Used when we pass through user-provided data
+ * so we can't be certain it's safe
+ */
+UserModel.prototype.unsafeUpdate = async function (body) {
+  const data = {}
+  // Update consent
+  if ([0, 1, 2, 3].includes(body.consent)) data.consent = body.consent
+  // Update newsletter
+  if ([true, false].includes(body.newsletter)) data.newsletter = body.newsletter
+  // Update username
+  if (typeof body.username === 'string') {
+    if (await this.isAvailableUsername(body.username)) {
+      data.username = body.username.trim()
+      data.lusername = clean(body.username)
+    }
+  }
+  // Update password
+  if (typeof body.password === 'string') {
+    data.password = asJson(hashPassword(body.password))
+  }
+  // Update data
+  if (typeof body.data === 'object') {
+    data.data = { ...this.record.data }
+  }
+
+  /*
+  data          String    @default("{}")
+  ehash         String    @unique
+  email         String
+  */
+
+  try {
+    this.record = await this.prisma.user.update({ where, data })
   } catch (err) {
     log.warn(err, 'Could not update user record')
     process.exit()
@@ -268,9 +345,9 @@ UserModel.prototype.asAccount = function () {
     id: this.record.id,
     consent: this.record.consent,
     createdAt: this.record.createdAt,
-    data: JSON.parse(this.decrypt(this.record.data)),
-    email: this.decrypt(this.record.email),
-    initial: this.decrypt(this.record.initial),
+    data: this.clear.data,
+    email: this.clear.email,
+    initial: this.clear.initial,
     lastLogin: this.record.lastLogin,
     newsletter: this.record.newsletter,
     patron: this.record.patron,
@@ -334,7 +411,7 @@ UserModel.prototype.sendResponse = async function (res) {
  * part of a unit test
  */
 UserModel.prototype.isUnitTest = function (body) {
-  return body.unittest && this.email.split('@').pop() === this.config.tests.domain
+  return body.unittest && this.clear.email.split('@').pop() === this.config.tests.domain
 }
 
 /*

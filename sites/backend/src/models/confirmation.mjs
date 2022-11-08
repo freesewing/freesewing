@@ -4,6 +4,9 @@ import { hash } from '../utils/crypto.mjs'
 export function ConfirmationModel(tools) {
   this.config = tools.config
   this.prisma = tools.prisma
+  this.decrypt = tools.decrypt
+  this.encrypt = tools.encrypt
+  this.clear = {}
 
   return this
 }
@@ -15,6 +18,7 @@ ConfirmationModel.prototype.read = async function (where) {
       user: true,
     },
   })
+  this.clear.data = this.record?.data ? this.decrypt(this.record.data) : {}
 
   return this.setExists()
 }
@@ -63,7 +67,9 @@ ConfirmationModel.prototype.setResponse = function (
 
 ConfirmationModel.prototype.create = async function (data = {}) {
   try {
-    this.record = await this.prisma.confirmation.create({ data })
+    this.record = await this.prisma.confirmation.create({
+      data: { ...data, data: this.encrypt(data.data) },
+    })
   } catch (err) {
     log.warn(err, 'Could not create confirmation record')
     return this.setResponse(500, 'createConfirmationFailed')

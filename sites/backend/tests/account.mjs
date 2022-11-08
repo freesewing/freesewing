@@ -18,7 +18,15 @@ export const accountTests = async (config, store, chai) => {
         .request(config.api)
         .put('/account/jwt')
         .set('Authorization', 'Bearer ' + store.account.token)
-        .send({ consent: 3 })
+        .send({
+          consent: 3,
+          data: {
+            banana: 'Sure',
+          },
+          newsletter: true,
+          password: 'Something new',
+          username: 'new',
+        })
         .end((err, res) => {
           expect(err === null).to.equal(true)
           expect(res.status).to.equal(200)

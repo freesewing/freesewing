@@ -125,7 +125,7 @@ ApikeyModel.prototype.create = async function ({ body, user }) {
         name: body.name,
         level: body.level,
         secret: asJson(hashPassword(secret)),
-        userId: user._id || user.userId,
+        userId: user.uid,
       },
     })
   } catch (err) {

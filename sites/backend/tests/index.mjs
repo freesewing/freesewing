@@ -33,7 +33,7 @@ store.icon = (icon1, icon2 = false) => store.icons[icon1] + (icon2 ? store.icons
 const runTests = async (config, store, chai) => {
   await setup(config, store, chai)
   await userTests(config, store, chai)
-  //await apikeyTests(config, store, chai)
+  await apikeyTests(config, store, chai)
   //await accountTests(config, store, chai)
 }
 

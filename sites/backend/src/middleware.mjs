@@ -15,7 +15,9 @@ function loadPassportMiddleware(passport, tools) {
     new http.BasicStrategy(async (key, secret, done) => {
       const Apikey = new ApikeyModel(tools)
       await Apikey.verify(key, secret)
-      return Apikey.verified ? done(null, { ...Apikey.record, apikey: true }) : done(false)
+      return Apikey.verified
+        ? done(null, { ...Apikey.record, apikey: true, uid: Apikey.record.userId })
+        : done(false)
     })
   )
   passport.use(
@@ -25,7 +27,7 @@ function loadPassportMiddleware(passport, tools) {
         ...tools.config.jwt,
       },
       (jwt_payload, done) => {
-        return done(null, jwt_payload)
+        return done(null, { ...jwt_payload, uid: jwt_payload._id })
       }
     )
   )
