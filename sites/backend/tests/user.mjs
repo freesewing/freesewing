@@ -19,7 +19,6 @@ export const userTests = async (config, store, chai) => {
 
     const fields = {
       email: 'test@freesewing.dev',
-      password: 'test',
       language: 'fr',
     }
     Object.keys(fields).map((key) => {
@@ -193,7 +192,6 @@ export const userTests = async (config, store, chai) => {
           done()
         })
     })
-
     step(`${store.icon('user', 'jwt')} Should load account (jwt)`, (done) => {
       chai
         .request(config.api)

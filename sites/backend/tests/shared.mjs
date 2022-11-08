@@ -9,7 +9,8 @@ export const setup = async function (config, store, chai) {
         .request(config.api)
         .post('/signup')
         .send({
-          ...store.account,
+          email: store.account.email,
+          language: store.account.language,
           unittest: true,
         })
         .end((err, res) => {
@@ -62,6 +63,28 @@ export const setup = async function (config, store, chai) {
           expect(typeof res.body.apikey.expiresAt).to.equal('string')
           expect(res.body.apikey.level).to.equal(4)
           store.apikey = res.body.apikey
+          done()
+        })
+    })
+
+    step(`${store.icon('user')} Should set the initial password`, (done) => {
+      chai
+        .request(config.api)
+        .put('/account/jwt')
+        .set('Authorization', 'Bearer ' + store.account.token)
+        .send({
+          password: store.account.password,
+        })
+        .end((err, res) => {
+          expect(res.status).to.equal(200)
+          expect(res.type).to.equal('application/json')
+          expect(res.charset).to.equal('utf-8')
+          expect(res.body.result).to.equal(`success`)
+          expect(res.body.account.email).to.equal(store.account.email)
+          expect(res.body.account.username).to.equal(store.account.username)
+          expect(res.body.account.lusername).to.equal(store.account.username.toLowerCase())
+          expect(typeof res.body.account.id).to.equal(`number`)
+          store.token = res.body.token
           done()
         })
     })

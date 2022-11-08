@@ -39,27 +39,29 @@ model Subscriber {
 
 model User {
   id            Int       @id @default(autoincrement())
+  apikeys       Apikey[]
+  bio           String    @default("")
+  confirmations Confirmation[]
   consent       Int       @default(0)
   createdAt     DateTime  @default(now())
-  data          String    @default("{}")
   ehash         String    @unique
   email         String
+  github        String    @default("")
   ihash         String
   initial       String
+  imperial      Boolean   @default(false)
+  language      String    @default("en")
   lastLogin     DateTime?
+  lusername     String    @unique
   newsletter    Boolean   @default(false)
   password      String
   patron        Int       @default(0)
-  apikeys       Apikey[]
-  confirmations Confirmation[]
-  people        Person[]
   patterns      Pattern[]
+  people        Person[]
   role          String    @default("user")
   status        Int       @default(0)
   updatedAt     DateTime? @updatedAt
   username      String
-  lusername     String    @unique
-
   @@index([ihash])
 }
 

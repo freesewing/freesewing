@@ -39,12 +39,25 @@ UserModel.prototype.read = async function (where) {
 UserModel.prototype.reveal = async function (where) {
   this.clear = {}
   if (this.record) {
-    this.clear.data = JSON.parse(this.decrypt(this.record.data))
+    this.clear.bio = this.decrypt(this.record.bio)
+    this.clear.github = this.decrypt(this.record.github)
     this.clear.email = this.decrypt(this.record.email)
     this.clear.initial = this.decrypt(this.record.initial)
   }
 
   return this
+}
+
+/*
+ * Helper method to encrypt at-rest data
+ */
+UserModel.prototype.cloak = function (data) {
+  for (const field of ['bio', 'github', 'email']) {
+    if (typeof data[field] !== 'undefined') data[field] = this.encrypt(data[field])
+  }
+  if (typeof data.password === 'string') data.password = asJson(hashPassword(data.password))
+
+  return data
 }
 
 /*
@@ -125,8 +138,9 @@ UserModel.prototype.setExists = function () {
 UserModel.prototype.create = async function ({ body }) {
   if (Object.keys(body) < 1) return this.setResponse(400, 'postBodyMissing')
   if (!body.email) return this.setResponse(400, 'emailMissing')
-  if (!body.password) return this.setResponse(400, 'passwordMissing')
   if (!body.language) return this.setResponse(400, 'languageMissing')
+  if (!this.config.languages.includes(body.language))
+    return this.setResponse(400, 'unsupportedLanguage')
 
   const ehash = hash(clean(body.email))
   await this.read({ ehash })
@@ -145,8 +159,10 @@ UserModel.prototype.create = async function ({ body }) {
       initial: email,
       username,
       lusername: username,
-      data: this.encrypt(asJson({ settings: { language: this.language } })),
-      password: asJson(hashPassword(body.password)),
+      language: body.language,
+      password: asJson(hashPassword(randomString())), // We'll change this later
+      github: this.encrypt(''),
+      bio: this.encrypt(''),
     }
     this.record = await this.prisma.user.create({ data })
   } catch (err) {
@@ -300,41 +316,92 @@ UserModel.prototype.safeUpdate = async function (data) {
  */
 UserModel.prototype.unsafeUpdate = async function (body) {
   const data = {}
-  // Update consent
+  const notes = []
+  // Bio
+  if (typeof body.bio === 'string') data.bio = body.bio
+  // Consent
   if ([0, 1, 2, 3].includes(body.consent)) data.consent = body.consent
-  // Update newsletter
+  // Github
+  if (typeof body.github === 'string') data.github = body.github.split('@').pop()
+  // Imperial
+  if ([true, false].includes(body.imperial)) data.imperial = body.imperial
+  // Language
+  if (this.config.languages.includes(body.language)) data.language = body.language
+  // Newsletter
   if ([true, false].includes(body.newsletter)) data.newsletter = body.newsletter
-  // Update username
+  // Password
+  if (typeof body.password === 'string') data.password = body.password // Will be cloaked below
+  // Patron
+  if ([0, 2, 4, 8].includes(body.patron)) data.patron = body.patron
+  // Username
   if (typeof body.username === 'string') {
-    if (await this.isAvailableUsername(body.username)) {
+    const available = await this.isLusernameAvailable(body.username)
+    if (available) {
       data.username = body.username.trim()
       data.lusername = clean(body.username)
+    } else {
+      log.info(`Rejected user name change from ${data.username} to ${body.username.trim()}`)
+      notes.push('usernameChangeRejected')
     }
   }
-  // Update password
-  if (typeof body.password === 'string') {
-    data.password = asJson(hashPassword(body.password))
-  }
-  // Update data
-  if (typeof body.data === 'object') {
-    data.data = { ...this.record.data }
+
+  // Now update the record
+  await this.safeUpdate(this.cloak(data))
+
+  // Email change requires confirmation
+  if (typeof body.email === 'string' && this.clear.email !== clean(body.email)) {
+    if (typeof body.confirmation === 'string') {
+      // Retrieve confirmation record
+      await this.Confirmation.read({ id: body.confirmation })
+
+      if (!this.Confirmation.exists) {
+        log.warn(err, `Could not find confirmation id ${params.id}`)
+        return this.setResponse(404, 'failedToFindConfirmationId')
+      }
+
+      if (this.Confirmation.record.type !== 'emailchange') {
+        log.warn(err, `Confirmation mismatch; ${params.id} is not an emailchange id`)
+        return this.setResponse(404, 'confirmationIdTypeMismatch')
+      }
+
+      const data = this.Confirmation.clear.data
+      if (data.email.current === this.clear.email && typeof data.email.new === 'string') {
+        await this.saveUpdate({
+          email: this.encrypt(data.email),
+        })
+      }
+    } else {
+      // Create confirmation for email change
+      this.confirmation = await this.Confirmation.create({
+        type: 'emailchange',
+        data: {
+          language: this.record.language,
+          email: {
+            current: this.clear.email,
+            new: body.email,
+          },
+        },
+        userId: this.record.id,
+      })
+      // Send confirmation email
+      await this.mailer.send({
+        template: 'emailchange',
+        language: this.record.language,
+        to: body.email,
+        cc: this.clear.email,
+        replacements: {
+          actionUrl: i18nUrl(this.language, `/confirm/emailchange/${this.Confirmation.record.id}`),
+          whyUrl: i18nUrl(this.language, `/docs/faq/email/why-emailchange`),
+          supportUrl: i18nUrl(this.language, `/patrons/join`),
+        },
+      })
+    }
   }
 
-  /*
-  data          String    @default("{}")
-  ehash         String    @unique
-  email         String
-  */
-
-  try {
-    this.record = await this.prisma.user.update({ where, data })
-  } catch (err) {
-    log.warn(err, 'Could not update user record')
-    process.exit()
-    return this.setResponse(500, 'updateUserFailed')
-  }
-
-  return this.setResponse(200)
+  return this.setResponse(200, false, {
+    result: 'success',
+    account: this.asAccount(),
+  })
 }
 
 /*
@@ -440,4 +507,22 @@ UserModel.prototype.loginOk = function () {
     token: this.getToken(),
     account: this.asAccount(),
   })
+}
+
+/*
+ * Check to see if a (lowercase) username is available
+ * as well as making sure username is not something we
+ * do not allow
+ */
+UserModel.prototype.isLusernameAvailable = async function (lusername) {
+  if (lusername.length < 2) return false
+  if (lusername.slice(0, 5) === 'user-') return false
+  let found
+  try {
+    found = await this.prisma.user.findUnique({ where: { lusername } })
+  } catch (err) {
+    log.warn({ err, where }, 'Could not search for free username')
+  }
+
+  return true
 }
