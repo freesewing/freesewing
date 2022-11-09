@@ -98,12 +98,10 @@ Unreleased:
       - Use localized date format
     unice:
       - Updated gusset to always curve inward
-      
+
   Added:
     unice:
       - Added new Front Curve and Back Curve style options
-
-  Added:
     waralee:
       - Added *mini* version of main pants part
       - Added new pocket options

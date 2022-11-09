@@ -16,8 +16,9 @@ Falte den Saum nach oben und nähe ihn fest. Wenn du eine Coverlock hast, verwen
 
 <Note>
 
-Nur einmal falten, um dicke Stellen zu vermeiden.
-Jersey franst nicht aus, deshalb kann man ihen einfach umklappen und festnähen, danach die Nahtzugabe zurückschneiden.
+##### Nur einmal falten, um dicke Stellen zu vermeiden
+
+Maschenware franst nicht aus, deshalb kann man es nur einfach umklappen und festnähen, danach die Nahtzugabe zurückschneiden.
 
 </Note>
 
@@ -31,11 +32,11 @@ Wenn du neu bist [binden](/docs/sewing/knit-binding), kannst du [diese Seite auf
 
 ###### Wiederholen Sie die Schritte 3 und 4 für die Armlöcher und die Halsöffnung
 
-und das unten beschriebene Verfahren gilt sowohl für die Armlöcher als auch für die Halsöffnung. Mit anderen Worten: Sie müssen das dreimal tun.
+und das unten beschriebene Verfahren gilt sowohl für die Armlöcher als auch für die Halsöffnung. Mit anderen Worten: Du musst das dreimal machen.
 
 ###### Beginnen Sie mit der einfachsten Öffnung
 
-Ich würde Ihnen raten, mit jeder Öffnung zu beginnen, die die einheitlichste Krümmung hat. Standardmäßig sind dies die Armlöcher, aber wenn Sie die Musteroptionen (denken Sie an Rennen) geändert haben, ist dies möglicherweise nicht der Fall.
+Ich würde Ihnen raten, mit jeder Öffnung zu beginnen, die die einheitlichste Krümmung hat. Standardmäßig sind dies die Armlöcher, aber wenn Sie die Musteroptionen geändert haben (denken Sie an Racerback), ist dies möglicherweise nicht der Fall.
 
 So oder so, je weniger scharfe Kurven Sie haben, desto einfacher wird es sein. Also beginnen Sie mit dem Aufwärmen, bevor Sie die dreckigen Kurven machen.
 
@@ -53,7 +54,7 @@ Dies ist der einzige Teil, um dieses A-Shirt zu machen, das ein bisschen Praxis 
 
 ![Einfassung annähen](step03a.png)
 
-The first thing we need to do is decide where we are going to start/stop our binding. Ich schlage folgendes vor:
+The first thing we need to do is decide where we are going to start/stop our binding. Ich schlage Folgendes vor:
 
 - Für die Armlöcher: an der Seitennaht. Dies wird unsere Naht unter dem Arm verbergen
 - Für die Halsöffnung: die Mitte des Halsrückens. Möglicherweise möchten Sie dies mit einem Pin markieren
@@ -66,7 +67,7 @@ Put your A-shirt down with the good side up, and place your binding strip on top
 
 Align the long edge of your strip with the edge of your fabric so the strip lies on top of the fabric (not in the opening). Place the corner on your starting point.
 
-Schieben Sie nun das Einfassband 1cm über dan Anfangspunkt zurück. Dieser Zentimeter macht das spätere Zusammennähen der beiden Enden möglich.
+Schiebe nun das Einfassband 1cm über den Anfangspunkt hinweg. Dieser Zentimeter macht das spätere Zusammennähen der beiden Enden möglich.
 
 ### Vergewissern Sie sich, dass Sie wissen, wo Sie nähen sollen
 
@@ -120,7 +121,7 @@ Falte dein A-Shirt so, dass es am einfachsten ist die guten Enden des Einfassban
 
 Now that your binding ends are joined together, it's time to finish the last 6cm of binding. Sew it down, staying 1.5cm from the edge as you did before.
 
-## Schritt 4: Strickbinder an den Rücken falten und nach unten nähen
+## Schritt 4: Falte den Einfassstreifen nach hinten und nähe ihn fest.
 
 ### Falte deine Bindung über die Stoffkante auf die Rückseite
 
@@ -166,7 +167,7 @@ Schneide deine Einfassung auf der Innenseite deines A-Shirts entlang der Naht zu
 
 <Note>
 
-Achten Sie darauf, nicht ein Loch in Ihr A-Shirt zu schneiden. Im Ernst, das ist mir mehr als einmal passiert.
+Achte darauf, kein Loch in dein A-Shirt zu schneiden. Im Ernst, das ist mir mehr als einmal passiert.
 
 </Note>
 

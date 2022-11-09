@@ -1,5 +1,5 @@
 ---
-title: "Octoplushy, the plushy octopus: Design Options"
+title: "Octoplushy, der plüschige Oktopus: Schnittmusteroptionen"
 ---
 
 <PatternOptions pattern='octoplushy' />

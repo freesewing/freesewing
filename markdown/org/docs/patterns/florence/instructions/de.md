@@ -29,11 +29,11 @@ As this is a curved seam, it won't lay flat. But you can approach it with your i
 
 ![Join the inner to the outer fabric](step3.svg)
 
-Now we will sew the inner (lining) fabric to the outer (main) fabric, and attach the ribbons all in one step.
+Nun werden wir den inneren (Futter) an den äußeren (Haupt) Stoff nähen und die Bänder in einem Schritt anbringen.
 
 - Lege deinen Futterstoff mit der guten Seite nach oben vor dich hin.
 - Lege dann zwei Bänder an den Ecken einer Seite (in unserem Beispiel rechts) so an, dass sie ein wenig aus der Maske herausragen, das Band aber nach innen verläuft.
-- Lege nun den Hauptstoff mit der guten Seiten nach unten darauf. You should now have both layers of your mask on top of each other with _good sides together_ and two ribbons sandwiched between them
+- Lege nun den Hauptstoff mit der guten Seiten nach unten darauf. Du solltest nun beide Schichten deiner Maske übereinander haben mit den _rechten Seiten zusammen_ und zwei Bänder, die zwischen ihnen eingeklemmt sind
 - Pinne alle Schichten und Bänder aneinander, um sie an Ort und Stelle zu halten
 - Jetzt mache das Gleiche auf der anderen Seite
 
@@ -67,7 +67,7 @@ Wenn dir das also nicht allzu viel ausmacht, kannst du es gerne überspringen.
 
 </Note>
 
-Now that the mask is as it should be, it's time to press it. Before doing so, make sure to fold the seam allowance of the side we left open inwards, so that we press it flat as if it was sewn.
+Now that the mask is as it should be, it's time to press it. Bevor du dies tust, stelle sicher, dass du die Nahtzugabe der Seite faltest, die wir nach innen offen gelassen haben, so dass wir sie flach drücken, als ob sie genäht wäre.
 
 ### Schritt 6: Schließe die offene Seite der Maske und nähe an der Kante um den Rand herum
 
@@ -75,7 +75,7 @@ Now that the mask is as it should be, it's time to press it. Before doing so, ma
 
 Now it's time to close the side of our mask the we left open to turn it inside out.
 
-We are not merely going to close the opening, but also edge-stitch around the entire mask to give our mask some extra stability, and keep the lining at the back.
+Wir werden nicht nur die Öffnung verschließen, sondern auch die gesamte Maske mit Kantenstichen versehen, um unserer Maske eine zusätzliche Stabilität zu verleihen und das Futter im hinteren Bereich zu erhalten.
 
 Make sure the open side is folded neatly inside, then edge-stitch around the entire mask.
 

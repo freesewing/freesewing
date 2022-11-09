@@ -4,7 +4,7 @@ title: "Collar ease"
 
 ![How much ease do you use for your collar?](collarease.svg)
 
-Using the neck circumference is one part of getting a well-fitting bow tie. The other is how much collar ease you normally use for your shirts. Together they dictate how long the bow tie becomes.
+Using the neck circumference is one part of getting a well-fitting bow tie. Dazu kommt, wie viel Zugabe du normalerweise am Kragen deiner Hemden verwendest. Together they dictate how long the bow tie becomes.
 
 > #### Wird nicht angewandt bei der Option mit Einstellband
 > 
