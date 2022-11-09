@@ -552,6 +552,7 @@ export const back = {
     fitKnee: {bool: true, menu: undefined},
     legBalance: 0.5, // between back and front parts
     waistBalance: 0.5,
+    waistHeight: { ...titanBack.options.waistHeight, pct: 50 }, // halfway between waist and hips
     fabricStretch: { pct: 40, min: 0, max: 50, menu: 'fit' },
     waistEase: {pct: -4,  menu: undefined}, // -fabricStretch/10,
     seatEase: {pct: -4, menu: undefined}, // -fabricStretch/10,
