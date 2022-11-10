@@ -1,6 +1,4 @@
-export const accountTests = async (config, store, chai) => {
-  const expect = chai.expect
-
+export const accountTests = async (chai, config, expect, store) => {
   /*
   consent       Int       @default(0)
   data          String    @default("{}")

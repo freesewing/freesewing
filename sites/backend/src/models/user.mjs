@@ -306,6 +306,7 @@ UserModel.prototype.safeUpdate = async function (data) {
     process.exit()
     return this.setResponse(500, 'updateUserFailed')
   }
+  await this.reveal()
 
   return this.setResponse(200)
 }
@@ -331,8 +332,6 @@ UserModel.prototype.unsafeUpdate = async function (body) {
   if ([true, false].includes(body.newsletter)) data.newsletter = body.newsletter
   // Password
   if (typeof body.password === 'string') data.password = body.password // Will be cloaked below
-  // Patron
-  if ([0, 2, 4, 8].includes(body.patron)) data.patron = body.patron
   // Username
   if (typeof body.username === 'string') {
     const available = await this.isLusernameAvailable(body.username)
@@ -410,11 +409,15 @@ UserModel.prototype.unsafeUpdate = async function (body) {
 UserModel.prototype.asAccount = function () {
   return {
     id: this.record.id,
+    bio: this.clear.bio,
     consent: this.record.consent,
     createdAt: this.record.createdAt,
     data: this.clear.data,
     email: this.clear.email,
+    github: this.clear.github,
+    imperial: this.record.imperial,
     initial: this.clear.initial,
+    language: this.record.language,
     lastLogin: this.record.lastLogin,
     newsletter: this.record.newsletter,
     patron: this.record.patron,
