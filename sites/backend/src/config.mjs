@@ -8,6 +8,13 @@ dotenv.config()
 export const port = process.env.API_PORT || 3000
 export const api = process.env.API_URL || `http://localhost:${port}`
 
+// All environment variables are strings
+// This is a helper method to turn them into a boolean
+const envToBool = (input = 'no') => {
+  if (['yes', '1', 'true'].includes(input.toLowerCase())) return true
+  return false
+}
+
 // Construct config object
 const config = {
   api,
@@ -20,9 +27,10 @@ const config = {
     url: process.env.API_DB_URL,
   },
   tests: {
-    allow: process.env.ALLOW_UNITTESTS || false,
+    allow: envToBool(process.env.ALLOW_UNITTESTS),
     domain: process.env.TESTDOMAIN || 'freesewing.dev',
-    sendEmail: process.env.SEND_UNITTEST_EMAILS || false,
+    sendEmail: envToBool(process.env.SEND_UNITTEST_EMAILS),
+    includeSanity: envToBool(process.env.INCLUDE_SANITY_TESTS),
   },
   static: process.env.API_STATIC,
   storage: process.env.API_STORAGE,

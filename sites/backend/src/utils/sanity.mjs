@@ -91,5 +91,5 @@ function b64ToBinaryWithType(dataUri) {
   else if (start.includes('image/jpg')) type = 'image/jpeg'
   else if (start.includes('image/jpeg')) type = 'image/jpeg'
 
-  return [type, new Buffer(data, 'base64')]
+  return [type, new Buffer.from(data, 'base64')]
 }

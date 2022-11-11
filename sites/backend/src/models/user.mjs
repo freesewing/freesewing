@@ -1,6 +1,7 @@
 import jwt from 'jsonwebtoken'
 import { log } from '../utils/log.mjs'
 import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
+import { setPersonAvatar } from '../utils/sanity.mjs'
 import { clean, asJson, i18nUrl } from '../utils/index.mjs'
 import { ConfirmationModel } from './confirmation.mjs'
 
@@ -343,45 +344,31 @@ UserModel.prototype.unsafeUpdate = async function (body) {
       notes.push('usernameChangeRejected')
     }
   }
+  // Image (img)
+  if (typeof body.img === 'string') {
+    const img = await setPersonAvatar(this.record.id, body.img)
+    data.img = img.url
+  }
 
   // Now update the record
   await this.safeUpdate(this.cloak(data))
 
-  // Email change requires confirmation
+  const isUnitTest = this.isUnitTest(body)
   if (typeof body.email === 'string' && this.clear.email !== clean(body.email)) {
-    if (typeof body.confirmation === 'string') {
-      // Retrieve confirmation record
-      await this.Confirmation.read({ id: body.confirmation })
-
-      if (!this.Confirmation.exists) {
-        log.warn(err, `Could not find confirmation id ${params.id}`)
-        return this.setResponse(404, 'failedToFindConfirmationId')
-      }
-
-      if (this.Confirmation.record.type !== 'emailchange') {
-        log.warn(err, `Confirmation mismatch; ${params.id} is not an emailchange id`)
-        return this.setResponse(404, 'confirmationIdTypeMismatch')
-      }
-
-      const data = this.Confirmation.clear.data
-      if (data.email.current === this.clear.email && typeof data.email.new === 'string') {
-        await this.saveUpdate({
-          email: this.encrypt(data.email),
-        })
-      }
-    } else {
-      // Create confirmation for email change
-      this.confirmation = await this.Confirmation.create({
-        type: 'emailchange',
-        data: {
-          language: this.record.language,
-          email: {
-            current: this.clear.email,
-            new: body.email,
-          },
+    // Email change (requires confirmation)
+    this.confirmation = await this.Confirmation.create({
+      type: 'emailchange',
+      data: {
+        language: this.record.language,
+        email: {
+          current: this.clear.email,
+          new: body.email,
         },
-        userId: this.record.id,
-      })
+      },
+      userId: this.record.id,
+    })
+    console.log(this.config.tests)
+    if (!isUnitTest || this.config.tests.sendEmail) {
       // Send confirmation email
       await this.mailer.send({
         template: 'emailchange',
@@ -395,12 +382,36 @@ UserModel.prototype.unsafeUpdate = async function (body) {
         },
       })
     }
+  } else if (typeof body.confirmation === 'string' && body.confirm === 'emailchange') {
+    // Handle email change confirmation
+    await this.Confirmation.read({ id: body.confirmation })
+
+    if (!this.Confirmation.exists) {
+      log.warn(err, `Could not find confirmation id ${params.id}`)
+      return this.setResponse(404, 'failedToFindConfirmationId')
+    }
+
+    if (this.Confirmation.record.type !== 'emailchange') {
+      log.warn(err, `Confirmation mismatch; ${params.id} is not an emailchange id`)
+      return this.setResponse(404, 'confirmationIdTypeMismatch')
+    }
+
+    const data = this.Confirmation.clear.data
+    if (data.email.current === this.clear.email && typeof data.email.new === 'string') {
+      await this.safeUpdate({
+        email: this.encrypt(data.email.new),
+        ehash: hash(clean(data.email.new)),
+      })
+    }
   }
 
-  return this.setResponse(200, false, {
+  const returnData = {
     result: 'success',
     account: this.asAccount(),
-  })
+  }
+  if (isUnitTest) returnData.confirmation = this.Confirmation.record.id
+
+  return this.setResponse(200, false, returnData)
 }
 
 /*
@@ -415,6 +426,7 @@ UserModel.prototype.asAccount = function () {
     data: this.clear.data,
     email: this.clear.email,
     github: this.clear.github,
+    img: this.record.img,
     imperial: this.record.imperial,
     initial: this.clear.initial,
     language: this.record.language,
@@ -481,7 +493,11 @@ UserModel.prototype.sendResponse = async function (res) {
  * part of a unit test
  */
 UserModel.prototype.isUnitTest = function (body) {
-  return body.unittest && this.clear.email.split('@').pop() === this.config.tests.domain
+  if (!body.unittest) return false
+  if (!this.clear.email.split('@').pop() === this.config.tests.domain) return false
+  if (body.email && !body.email.split('@').pop() === this.config.tests.domain) return false
+
+  return true
 }
 
 /*
@@ -519,7 +535,6 @@ UserModel.prototype.loginOk = function () {
  */
 UserModel.prototype.isLusernameAvailable = async function (lusername) {
   if (lusername.length < 2) return false
-  if (lusername.slice(0, 5) === 'user-') return false
   let found
   try {
     found = await this.prisma.user.findUnique({ where: { lusername } })

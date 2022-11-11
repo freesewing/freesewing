@@ -25,8 +25,9 @@ export const setup = async () => {
     icons: {
       user: '🧑 ',
       jwt: '🎫 ',
-      key: '🎟️ ',
+      key: '🎟️  ',
     },
+    randomString,
   }
   store.icon = (icon1, icon2 = false) => store.icons[icon1] + (icon2 ? store.icons[icon2] : '')
 
