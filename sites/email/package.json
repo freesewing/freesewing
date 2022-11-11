@@ -1,4 +1,5 @@
 {
+  "name": "freesewing.email",
   "private": true,
   "scripts": {
     "dev": "maizzle serve",
