@@ -1,9 +1,6 @@
-export const userTests = async (config, store, chai) => {
-  const expect = chai.expect
-
-  describe(`${store.icon('user')} Signup flow and authentication`, async function () {
-    it(`${store.icon('user')} Should return 400 on signup without body`, function (done) {
-      this.store = store
+export const userTests = async (chai, config, expect, store) => {
+  describe(`${store.icon('user')} Signup flow and authentication`, () => {
+    it(`${store.icon('user')} Should return 400 on signup without body`, (done) => {
       chai
         .request(config.api)
         .post('/signup')
@@ -74,6 +71,23 @@ export const userTests = async (config, store, chai) => {
           expect(res.charset).to.equal('utf-8')
           expect(res.body.result).to.equal(`error`)
           expect(res.body.error).to.equal(`loginFailed`)
+          done()
+        })
+    })
+
+    // Note that password was not set at account creation
+    step(`${store.icon('user')} Should set the password`, (done) => {
+      chai
+        .request(config.api)
+        .put('/account/jwt')
+        .set('Authorization', 'Bearer ' + store.account.token)
+        .send({
+          password: store.account.password,
+        })
+        .end((err, res) => {
+          expect(res.status).to.equal(200)
+          expect(res.type).to.equal('application/json')
+          expect(res.charset).to.equal('utf-8')
           done()
         })
     })
@@ -192,6 +206,7 @@ export const userTests = async (config, store, chai) => {
           done()
         })
     })
+
     step(`${store.icon('user', 'jwt')} Should load account (jwt)`, (done) => {
       chai
         .request(config.api)

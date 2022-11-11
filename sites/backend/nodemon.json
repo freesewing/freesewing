@@ -1,4 +1,5 @@
 {
   "verbose": true,
-  "ignore": ["tests/**.test.mjs"]
+  "ignore": ["tests/**.test.mjs"],
+  "watch": ["src/**"]
 }

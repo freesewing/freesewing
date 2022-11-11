@@ -1,6 +1,4 @@
-export const apikeyTests = async (config, store, chai) => {
-  const expect = chai.expect
-
+export const apikeyTests = async (chai, config, expect, store) => {
   describe(`${store.icon('key')} API Key create/read/delete`, () => {
     step(`${store.icon('key', 'jwt')} Create API Key (jwt)`, (done) => {
       chai

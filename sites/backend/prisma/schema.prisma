@@ -48,6 +48,7 @@ model User {
   email         String
   github        String    @default("")
   ihash         String
+  img           String    @default("https://freesewing.org/avatar.svg")
   initial       String
   imperial      Boolean   @default(false)
   language      String    @default("en")
