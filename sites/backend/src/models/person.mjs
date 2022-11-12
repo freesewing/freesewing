@@ -6,6 +6,7 @@ export function PersonModel(tools) {
   this.prisma = tools.prisma
   this.decrypt = tools.decrypt
   this.encrypt = tools.encrypt
+  this.encryptedFields = ['measies', 'img', 'name', 'notes']
   this.clear = {} // For holding decrypted data
 
   return this
@@ -20,23 +21,29 @@ PersonModel.prototype.create = async function ({ body, user }) {
   const data = { name: body.name }
   if (body.notes || typeof body.notes === 'string') data.notes = body.notes
   if (body.public === true) data.public = true
-  if (body.measies) data.measies = this.encrypt(this.sanitizeMeasurements(body.measies))
+  if (body.measies) data.measies = this.sanitizeMeasurements(body.measies)
   data.userId = user.uid
 
   // Create record
   try {
-    this.record = await this.prisma.person.create({ data })
+    this.record = await this.prisma.person.create({ data: this.cloak(data) })
   } catch (err) {
     log.warn(err, 'Could not create person')
     return this.setResponse(500, 'createPersonFailed')
   }
 
-  return this.setResponse(201, 'created', {
-    person: {
-      ...this.record,
-      measies: this.decrypt(this.record.measies),
-    },
-  })
+  // Update img?  (now that we have the ID)
+  const img =
+    this.config.use.sanity &&
+    typeof body.img === 'string' &&
+    (!body.unittest || (body.unittest && this.config.use.tests?.sanity))
+      ? await setPersonAvatar(this.record.id, body.img)
+      : false
+
+  if (img) await this.safeUpdate(this.cloak({ img: img.url }))
+  else await this.read({ id: this.record.id })
+
+  return this.setResponse(201, 'created', { person: this.asPerson() })
 }
 
 /*
@@ -59,29 +66,30 @@ PersonModel.prototype.read = async function (where) {
 /*
  * Helper method to decrypt at-rest data
  */
-//PersonModel.prototype.reveal = async function (where) {
-//  this.clear = {}
-//  if (this.record) {
-//    this.clear.bio = this.decrypt(this.record.bio)
-//    this.clear.github = this.decrypt(this.record.github)
-//    this.clear.email = this.decrypt(this.record.email)
-//    this.clear.initial = this.decrypt(this.record.initial)
-//  }
-//
-//  return this
-//}
+PersonModel.prototype.reveal = async function () {
+  this.clear = {}
+  if (this.record) {
+    for (const field of this.encryptedFields) {
+      // Default avatar is not encrypted
+      if (field === 'img' && this.record.img.slice(0, 4) === 'http')
+        this.clear.img = this.record.img
+      else this.clear[field] = this.decrypt(this.record[field])
+    }
+  } else console.log('no record')
+
+  return this
+}
 
 /*
  * Helper method to encrypt at-rest data
  */
-//UserModel.prototype.cloak = function (data) {
-//  for (const field of ['bio', 'github', 'email']) {
-//    if (typeof data[field] !== 'undefined') data[field] = this.encrypt(data[field])
-//  }
-//  if (typeof data.password === 'string') data.password = asJson(hashPassword(data.password))
-//
-//  return data
-//}
+PersonModel.prototype.cloak = function (data) {
+  for (const field of this.encryptedFields) {
+    if (typeof data[field] !== 'undefined') data[field] = this.encrypt(data[field])
+  }
+
+  return data
+}
 
 /*
  * Loads a user from the database based on the where clause you pass it
@@ -139,24 +147,24 @@ PersonModel.prototype.setExists = function () {
 }
 
 /*
- * Updates the user data - Used when we create the data ourselves
+ * Updates the person data - Used when we create the data ourselves
  * so we know it's safe
  */
-//UserModel.prototype.safeUpdate = async function (data) {
-//  try {
-//    this.record = await this.prisma.user.update({
-//      where: { id: this.record.id },
-//      data,
-//    })
-//  } catch (err) {
-//    log.warn(err, 'Could not update user record')
-//    process.exit()
-//    return this.setResponse(500, 'updateUserFailed')
-//  }
-//  await this.reveal()
-//
-//  return this.setResponse(200)
-//}
+PersonModel.prototype.safeUpdate = async function (data) {
+  try {
+    this.record = await this.prisma.person.update({
+      where: { id: this.record.id },
+      data,
+    })
+  } catch (err) {
+    log.warn(err, 'Could not update person record')
+    process.exit()
+    return this.setResponse(500, 'updatePersonFailed')
+  }
+  await this.reveal()
+
+  return this.setResponse(200)
+}
 
 /*
  * Updates the user data - Used when we pass through user-provided data
@@ -263,7 +271,10 @@ PersonModel.prototype.setExists = function () {
  * Returns record data
  */
 PersonModel.prototype.asPerson = function () {
-  return this.reveal()
+  return {
+    ...this.record,
+    ...this.clear,
+  }
 }
 
 /*

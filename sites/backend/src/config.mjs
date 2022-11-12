@@ -18,20 +18,29 @@ const envToBool = (input = 'no') => {
 
 // Construct config object
 const config = {
+  // Feature flags
+  use: {
+    github: envToBool(process.env.BACKEND_ENABLE_GITHUB),
+    oauth: {
+      github: envToBool(process.env.BACKEND_ENABLE_OAUTH_GITHUB),
+      google: envToBool(process.env.BACKEND_ENABLE_OAUTH_GOOGLE),
+    },
+    sanity: envToBool(process.env.BACKEND_ENABLE_SANITY),
+    ses: envToBool(process.env.BACKEND_ENABLE_AWS_SES),
+    tests: {
+      base: envToBool(process.env.BACKEND_ENABLE_TESTS),
+      email: envToBool(process.env.BACKEND_ENABLE_TESTS_EMAIL),
+      sanity: envToBool(process.env.BACKEND_ENABLE_TESTS_SANITY),
+    },
+  },
+  // Config
   api,
-  port,
-  website: {
-    domain: process.env.BACKEND_WEBSITE_DOMAIN || 'freesewing.org',
-    scheme: process.env.BACKEND_WEBSITE_SCHEME || 'https',
+  apikeys: {
+    levels: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+    expiryMaxSeconds: 365 * 24 * 3600,
   },
   db: {
     url: process.env.BACKEND_DB_URL,
-  },
-  tests: {
-    allow: envToBool(process.env.BACKEND_TEST_ALLOW),
-    domain: process.env.BACKEND_TEST_DOMAIN || 'freesewing.dev',
-    sendEmail: envToBool(process.env.BACKEND_TEST_SEND_EMAIL),
-    includeSanity: envToBool(process.env.BACKEND_TEST_SANITY),
   },
   encryption: {
     key: process.env.BACKEND_ENC_KEY,
@@ -42,10 +51,9 @@ const config = {
     audience: process.env.BACKEND_JWT_ISSUER || 'freesewing.org',
     expiresIn: process.env.BACKEND_JWT_EXPIRY || '7d',
   },
-  apikeys: {
-    levels: [0, 1, 2, 3, 4, 5, 6, 7, 8],
-    expiryMaxSeconds: 365 * 24 * 3600,
-  },
+  languages: ['en', 'de', 'es', 'fr', 'nl'],
+  measies: measurements,
+  port,
   roles: {
     levels: {
       user: 4,
@@ -55,49 +63,21 @@ const config = {
     },
     base: 'user',
   },
-  languages: ['en', 'de', 'es', 'fr', 'nl'],
-  measies: measurements,
-  aws: {
-    ses: {
-      region: process.env.BACKEND_AWS_SES_REGION || 'us-east-1',
-      from: process.env.BACKEND_AWS_SES_FROM || 'FreeSewing <info@freesewing.org>',
-      replyTo: process.env.BACKEND_AWS_SES_REPLY_TO
-        ? JSON.parse(process.env.BACKEND_AWS_SES_REPLY_TO)
-        : ['FreeSewing <info@freesewing.org>'],
-      feedback: process.env.BACKEND_AWS_SES_FEEDBACK,
-      cc: process.env.BACKEND_AWS_SES_CC ? JSON.parse(process.env.BACKEND_AWS_SES_CC) : [],
-      bcc: process.env.BACKEND_AWS_SES_BCC
-        ? JSON.parse(process.env.BACKEND_AWS_SES_BCC)
-        : ['FreeSewing records <records@freesewing.org>'],
-    },
+  website: {
+    domain: process.env.BACKEND_WEBSITE_DOMAIN || 'freesewing.org',
+    scheme: process.env.BACKEND_WEBSITE_SCHEME || 'https',
   },
-  sanity: {
-    use: process.env.BACKEND_USE_SANITY || false,
-    project: process.env.SANITY_PROJECT,
-    dataset: process.env.SANITY_DATASET || 'production',
-    token: process.env.SANITY_TOKEN,
-    version: process.env.SANITY_VERSION || 'v2022-10-31',
-    api: `https://${process.env.SANITY_PROJECT || 'missing-project-id'}.api.sanity.io/${
-      process.env.SANITY_VERSION || 'v2022-10-31'
-    }`,
-  },
-  oauth: {
-    github: {
-      clientId: process.env.BACKEND_OAUTH_GITHUB_CLIENT_ID,
-      clientSecret: process.env.BACKEND_OAUTH_GITHUB_CLIENT_SECRET,
-      tokenUri: 'https://github.com/login/oauth/access_token',
-      dataUri: 'https://api.github.com/user',
-      emailUri: 'https://api.github.com/user/emails',
-    },
-    google: {
-      clientId: process.env.BACKEND_OAUTH_GOOGLE_CLIENT_ID,
-      clientSecret: process.env.BACKEND_OAUTH_GOOGLE_CLIENT_SECRET,
-      tokenUri: 'https://oauth2.googleapis.com/token',
-      dataUri:
-        'https://people.googleapis.com/v1/people/me?personFields=emailAddresses,names,photos',
-    },
-  },
-  github: {
+  oauth: {},
+  github: {},
+}
+
+/*
+ * Config behind feature flags
+ */
+
+// Github config
+if (config.use.github)
+  config.github = {
     token: process.env.BACKEND_GITHUB_TOKEN,
     api: 'https://api.github.com',
     bot: {
@@ -125,11 +105,64 @@ const config = {
       },
       dflt: [process.env.BACKEND_GITHUB_NOTIFY_DEFAULT_USER || 'joostdecock'],
     },
-  },
-}
+  }
 
-// Stand-alone config
-export const sanity = config.sanity
+// Unit test config
+if (config.use.tests.base)
+  config.tests = {
+    domain: process.env.BACKEND_TEST_DOMAIN || 'freesewing.dev',
+  }
+
+// Sanity config
+if (config.use.sanity)
+  config.sanity = {
+    project: process.env.SANITY_PROJECT,
+    dataset: process.env.SANITY_DATASET || 'production',
+    token: process.env.SANITY_TOKEN,
+    version: process.env.SANITY_VERSION || 'v2022-10-31',
+    api: `https://${process.env.SANITY_PROJECT || 'missing-project-id'}.api.sanity.io/${
+      process.env.SANITY_VERSION || 'v2022-10-31'
+    }`,
+  }
+
+// AWS SES config (for sending out emails)
+if (config.use.ses)
+  config.aws = {
+    ses: {
+      region: process.env.BACKEND_AWS_SES_REGION || 'us-east-1',
+      from: process.env.BACKEND_AWS_SES_FROM || 'FreeSewing <info@freesewing.org>',
+      replyTo: process.env.BACKEND_AWS_SES_REPLY_TO
+        ? JSON.parse(process.env.BACKEND_AWS_SES_REPLY_TO)
+        : ['FreeSewing <info@freesewing.org>'],
+      feedback: process.env.BACKEND_AWS_SES_FEEDBACK,
+      cc: process.env.BACKEND_AWS_SES_CC ? JSON.parse(process.env.BACKEND_AWS_SES_CC) : [],
+      bcc: process.env.BACKEND_AWS_SES_BCC
+        ? JSON.parse(process.env.BACKEND_AWS_SES_BCC)
+        : ['FreeSewing records <records@freesewing.org>'],
+    },
+  }
+
+// Oauth config for Github as a provider
+if (config.use.oauth?.github)
+  config.oauth.github = {
+    clientId: process.env.BACKEND_OAUTH_GITHUB_CLIENT_ID,
+    clientSecret: process.env.BACKEND_OAUTH_GITHUB_CLIENT_SECRET,
+    tokenUri: 'https://github.com/login/oauth/access_token',
+    dataUri: 'https://api.github.com/user',
+    emailUri: 'https://api.github.com/user/emails',
+  }
+
+// Oauth config for Google as a provider
+if (config.use.oauth?.google)
+  config.oauth.google = {
+    clientId: process.env.BACKEND_OAUTH_GOOGLE_CLIENT_ID,
+    clientSecret: process.env.BACKEND_OAUTH_GOOGLE_CLIENT_SECRET,
+    tokenUri: 'https://oauth2.googleapis.com/token',
+    dataUri: 'https://people.googleapis.com/v1/people/me?personFields=emailAddresses,names,photos',
+  }
+
+// Exporting this stand-alone config
+export const sanity = config.sanity || {}
 export const website = config.website
 
 const vars = {

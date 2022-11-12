@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken'
 import { log } from '../utils/log.mjs'
 import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
-import { setPersonAvatar } from '../utils/sanity.mjs'
+import { setUserAvatar } from '../utils/sanity.mjs'
 import { clean, asJson, i18nUrl } from '../utils/index.mjs'
 import { ConfirmationModel } from './confirmation.mjs'
 
@@ -346,7 +346,7 @@ UserModel.prototype.unsafeUpdate = async function (body) {
   }
   // Image (img)
   if (typeof body.img === 'string') {
-    const img = await setPersonAvatar(this.record.id, body.img)
+    const img = await setUserAvatar(this.record.id, body.img)
     data.img = img.url
   }
 

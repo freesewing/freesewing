@@ -82,6 +82,7 @@ model Pattern {
 model Person {
   id        Int       @id @default(autoincrement())
   createdAt DateTime  @default(now())
+  img       String    @default("https://freesewing.org/avatar.svg")
   name      String    @default("")
   notes     String    @default("")
   user      User      @relation(fields: [userId], references: [id])

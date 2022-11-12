@@ -1,3 +1,4 @@
+import { cat } from './cat.mjs'
 /*
   id        Int       @id @default(autoincrement())
   createdAt DateTime  @default(now())
@@ -20,6 +21,7 @@ export const personTests = async (chai, config, expect, store) => {
         neck: 420,
       },
       public: true,
+      unittest: true,
     },
     key: {
       name: 'Sorcha',
@@ -29,6 +31,8 @@ export const personTests = async (chai, config, expect, store) => {
         neck: 360,
       },
       public: false,
+      img: cat,
+      unittest: true,
     },
   }
 
@@ -49,12 +53,12 @@ export const personTests = async (chai, config, expect, store) => {
           )
           .send(data[auth])
           .end((err, res) => {
-            console.log(res.body)
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(201)
             expect(res.body.result).to.equal(`success`)
             for (const [key, val] of Object.entries(data[auth])) {
-              expect(res.body.person[key]).to.equal(val)
+              if (!['measies', 'img', 'unittest'].includes(key))
+                expect(res.body.person[key]).to.equal(val)
             }
             done()
           })
