@@ -1,7 +1,20 @@
 {
+  "private": true,
   "name": "backend.freesewing.org",
   "version": "0.0.1",
   "license": "MIT",
+  "description": "The FreeSewing backend REST API",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://freesewing.org/patrons/join"
+  },
   "scripts": {
     "dev": "nodemon src/index.mjs",
     "test": "npx mocha --require mocha-steps tests/index.mjs",

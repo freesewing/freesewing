@@ -20,28 +20,27 @@ const config = {
   api,
   port,
   website: {
-    domain: process.env.API_WEBSITE_DOMAIN || 'freesewing.org',
-    scheme: process.env.API_WEBSITE_SCHEME || 'https',
+    domain: process.env.BACKEND_WEBSITE_DOMAIN || 'freesewing.org',
+    scheme: process.env.BACKEND_WEBSITE_SCHEME || 'https',
   },
   db: {
-    url: process.env.API_DB_URL,
+    url: process.env.BACKEND_DB_URL,
   },
   tests: {
-    allow: envToBool(process.env.ALLOW_UNITTESTS),
-    domain: process.env.TESTDOMAIN || 'freesewing.dev',
-    sendEmail: envToBool(process.env.SEND_UNITTEST_EMAILS),
-    includeSanity: envToBool(process.env.INCLUDE_SANITY_TESTS),
+    allow: envToBool(process.env.BACKEND_TEST_ALLOW),
+    domain: process.env.BACKEND_TEST_DOMAIN || 'freesewing.dev',
+    sendEmail: envToBool(process.env.BACKEND_TEST_SEND_EMAIL),
+    includeSanity: envToBool(process.env.BACKEND_TEST_SANITY),
   },
-  static: process.env.API_STATIC,
-  storage: process.env.API_STORAGE,
+  static: process.env.BACKEND_STATIC_PATH,
   encryption: {
-    key: process.env.API_ENC_KEY,
+    key: process.env.BACKEND_ENC_KEY,
   },
   jwt: {
-    secretOrKey: process.env.API_ENC_KEY,
-    issuer: process.env.API_JWT_ISSUER,
-    audience: process.env.API_JWT_ISSUER,
-    expiresIn: process.env.API_JWT_EXPIRY || '7d',
+    secretOrKey: process.env.BACKEND_ENC_KEY,
+    issuer: process.env.BACKEND_JWT_ISSUER,
+    audience: process.env.BACKEND_JWT_ISSUER,
+    expiresIn: process.env.BACKEND_JWT_EXPIRY || '7d',
   },
   apikeys: {
     levels: [0, 1, 2, 3, 4, 5, 6, 7, 8],
@@ -59,12 +58,16 @@ const config = {
   languages: ['en', 'de', 'es', 'fr', 'nl'],
   aws: {
     ses: {
-      region: 'us-east-1',
-      from: 'FreeSewing <info@freesewing.org>',
-      replyTo: ['FreeSewing <info@freesewing.org>'],
-      feedback: 'bounce@freesewing.org',
-      cc: [],
-      bcc: ['records@freesewing.org'],
+      region: process.env.BACKEND_AWS_SES_REGION || 'us-east-1',
+      from: process.env.BACKEND_AWS_SES_FROM || 'FreeSewing <info@freesewing.org>',
+      replyTo: process.env.BACKEND_AWS_SES_REPLY_TO
+        ? JSON.parse(process.env.BACKEND_AWS_SES_REPLY_TO)
+        : ['FreeSewing <info@freesewing.org>'],
+      feedback: process.env.BACKEND_AWS_SES_FEEDBACK,
+      cc: process.env.BACKEND_AWS_SES_CC ? JSON.parse(process.env.BACKEND_AWS_SES_CC) : [],
+      bcc: process.env.BACKEND_AWS_SES_BCC
+        ? JSON.parse(process.env.BACKEND_AWS_SES_BCC)
+        : ['FreeSewing records <records@freesewing.org>'],
     },
   },
   sanity: {
@@ -78,27 +81,27 @@ const config = {
   },
   oauth: {
     github: {
-      clientId: process.env.API_GITHUB_CLIENT_ID,
-      clientSecret: process.env.API_GITHUB_CLIENT_SECRET,
+      clientId: process.env.BACKEND_GITHUB_CLIENT_ID,
+      clientSecret: process.env.BACKEND_GITHUB_CLIENT_SECRET,
       tokenUri: 'https://github.com/login/oauth/access_token',
       dataUri: 'https://api.github.com/user',
       emailUri: 'https://api.github.com/user/emails',
     },
     google: {
-      clientId: process.env.API_GOOGLE_CLIENT_ID,
-      clientSecret: process.env.API_GOOGLE_CLIENT_SECRET,
+      clientId: process.env.BACKEND_GOOGLE_CLIENT_ID,
+      clientSecret: process.env.BACKEND_GOOGLE_CLIENT_SECRET,
       tokenUri: 'https://oauth2.googleapis.com/token',
       dataUri:
         'https://people.googleapis.com/v1/people/me?personFields=emailAddresses,names,photos',
     },
   },
   github: {
-    token: process.env.API_GITHUB_TOKEN,
+    token: process.env.BACKEND_GITHUB_TOKEN,
     api: 'https://api.github.com',
     bot: {
-      user: process.env.API_GITHUB_USER || 'freesewing-robot',
-      name: process.env.API_GITHUB_USER_NAME || 'Freesewing bot',
-      email: process.env.API_GITHUB_USER_EMAIL || 'bot@freesewing.org',
+      user: process.env.BACKEND_GITHUB_USER || 'freesewing-robot',
+      name: process.env.BACKEND_GITHUB_USER_NAME || 'Freesewing bot',
+      email: process.env.BACKEND_GITHUB_USER_EMAIL || 'bot@freesewing.org',
     },
     notify: {
       specific: {
@@ -118,7 +121,7 @@ const config = {
         walburga: ['starfetch'],
         waralee: ['woutervdub'],
       },
-      dflt: [process.env.API_GITHUB_NOTIFY_DEFAULT_USER || 'joostdecock'],
+      dflt: [process.env.BACKEND_GITHUB_NOTIFY_DEFAULT_USER || 'joostdecock'],
     },
   },
 }
