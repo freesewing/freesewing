@@ -7,7 +7,6 @@
       "message": "release: Publish %s"
     },
     "bootstrap": {
-      "ignore": "component-*",
       "npmClientArgs": ["--no-package-lock"]
     }
   },
