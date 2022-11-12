@@ -1,15 +1,4 @@
 import { cat } from './cat.mjs'
-/*
-  id        Int       @id @default(autoincrement())
-  createdAt DateTime  @default(now())
-  name      String    @default("")
-  notes     String    @default("")
-  user      User      @relation(fields: [userId], references: [id])
-  userId    Int
-  measies   String    @default("{}")
-  Pattern   Pattern[]
-  public    Boolean   @default(false)
-*/
 
 export const personTests = async (chai, config, expect, store) => {
   const data = {
@@ -69,10 +58,10 @@ export const personTests = async (chai, config, expect, store) => {
             store.person[auth] = res.body.person
             done()
           })
-      })
+      }).timeout(5000)
 
       for (const field of ['name', 'notes']) {
-        it(`${store.icon('person', auth)} Should update the ${field} (${auth})`, (done) => {
+        it(`${store.icon('person', auth)} Should update the ${field} field (${auth})`, (done) => {
           const data = {}
           const val = store.person[auth][field] + '_updated'
           data[field] = val
@@ -98,6 +87,72 @@ export const personTests = async (chai, config, expect, store) => {
             })
         })
       }
+
+      for (const field of ['imperial', 'public']) {
+        it(`${store.icon('person', auth)} Should update the ${field} field (${auth})`, (done) => {
+          const data = {}
+          const val = false
+          data[field] = val
+          chai
+            .request(config.api)
+            .put(`/people/${store.person[auth].id}/${auth}`)
+            .set(
+              'Authorization',
+              auth === 'jwt'
+                ? 'Bearer ' + store.account.token
+                : 'Basic ' +
+                    new Buffer(
+                      `${store.account.apikey.key}:${store.account.apikey.secret}`
+                    ).toString('base64')
+            )
+            .send(data)
+            .end((err, res) => {
+              expect(err === null).to.equal(true)
+              expect(res.status).to.equal(200)
+              expect(res.body.result).to.equal(`success`)
+              expect(res.body.person[field]).to.equal(val)
+              done()
+            })
+        })
+      }
+
+      for (const field of ['chest', 'neck', 'ankle']) {
+        it(`${store.icon(
+          'person',
+          auth
+        )} Should update the ${field} measurement (${auth})`, (done) => {
+          const data = { measies: {} }
+          const val = Math.ceil(Math.random() * 1000)
+          data.measies[field] = val
+          chai
+            .request(config.api)
+            .put(`/people/${store.person[auth].id}/${auth}`)
+            .set(
+              'Authorization',
+              auth === 'jwt'
+                ? 'Bearer ' + store.account.token
+                : 'Basic ' +
+                    new Buffer(
+                      `${store.account.apikey.key}:${store.account.apikey.secret}`
+                    ).toString('base64')
+            )
+            .send(data)
+            .end((err, res) => {
+              expect(err === null).to.equal(true)
+              expect(res.status).to.equal(200)
+              expect(res.body.result).to.equal(`success`)
+              expect(res.body.person.measies[field]).to.equal(val)
+              done()
+            })
+        })
+      }
     })
+
+    // TODO:
+    // - Add non-existing measurement
+    // - Clear measurement
+    // - List/get person
+    // - Clone person
+    // - Clone person accross accounts of they are public
   }
 }

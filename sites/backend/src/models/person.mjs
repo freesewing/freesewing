@@ -175,10 +175,8 @@ PersonModel.prototype.unsafeUpdate = async function ({ params, body, user }) {
   await this.read({ id: parseInt(params.id) })
   if (user.uid !== this.record.userId) return this.setResponse(403, 'accessDenied')
   const data = {}
-  const notes = []
   /*
   img       String?
-  public    Boolean   @default(false)
   */
   // Imperial
   if (body.imperial === true || body.imperial === false) data.imperial = body.imperial
@@ -191,11 +189,11 @@ PersonModel.prototype.unsafeUpdate = async function ({ params, body, user }) {
   // Measurements
   const measies = {}
   if (typeof body.measies === 'object') {
-    for (const [key, val] of body.measies) {
+    for (const [key, val] of Object.entries(body.measies)) {
       if (this.config.measies.includes(key) && typeof val === 'number' && val > 0)
         measies[key] = val
     }
-    data.measies = { ...this.record.measies, ...measies }
+    data.measies = { ...this.clear.measies, ...measies }
   }
 
   // Image (img)

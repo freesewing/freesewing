@@ -319,8 +319,8 @@ UserModel.prototype.safeUpdate = async function (data) {
  * so we can't be certain it's safe
  */
 UserModel.prototype.unsafeUpdate = async function (body) {
+  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
   const data = {}
-  const notes = []
   // Bio
   if (typeof body.bio === 'string') data.bio = body.bio
   // Consent
