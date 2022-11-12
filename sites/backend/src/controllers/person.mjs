@@ -31,9 +31,10 @@ PersonController.prototype.read = async (req, res, tools) => {
  * See: https://freesewing.dev/reference/backend/api
  */
 PersonController.prototype.update = async (req, res, tools) => {
-  //const Person = new PersonModel(tools)
-  //await Person.update(req)
-  //return Person.sendResponse(res)
+  const Person = new PersonModel(tools)
+  await Person.unsafeUpdate(req)
+
+  return Person.sendResponse(res)
 }
 
 /*

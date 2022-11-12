@@ -167,105 +167,48 @@ PersonModel.prototype.safeUpdate = async function (data) {
 }
 
 /*
- * Updates the user data - Used when we pass through user-provided data
+ * Updates the person data - Used when we pass through user-provided data
  * so we can't be certain it's safe
  */
-//UserModel.prototype.unsafeUpdate = async function (body) {
-//  const data = {}
-//  const notes = []
-//  // Bio
-//  if (typeof body.bio === 'string') data.bio = body.bio
-//  // Consent
-//  if ([0, 1, 2, 3].includes(body.consent)) data.consent = body.consent
-//  // Github
-//  if (typeof body.github === 'string') data.github = body.github.split('@').pop()
-//  // Imperial
-//  if ([true, false].includes(body.imperial)) data.imperial = body.imperial
-//  // Language
-//  if (this.config.languages.includes(body.language)) data.language = body.language
-//  // Newsletter
-//  if ([true, false].includes(body.newsletter)) data.newsletter = body.newsletter
-//  // Password
-//  if (typeof body.password === 'string') data.password = body.password // Will be cloaked below
-//  // Username
-//  if (typeof body.username === 'string') {
-//    const available = await this.isLusernameAvailable(body.username)
-//    if (available) {
-//      data.username = body.username.trim()
-//      data.lusername = clean(body.username)
-//    } else {
-//      log.info(`Rejected user name change from ${data.username} to ${body.username.trim()}`)
-//      notes.push('usernameChangeRejected')
-//    }
-//  }
-//  // Image (img)
-//  if (typeof body.img === 'string') {
-//    const img = await setPersonAvatar(this.record.id, body.img)
-//    data.img = img.url
-//  }
-//
-//  // Now update the record
-//  await this.safeUpdate(this.cloak(data))
-//
-//  const isUnitTest = this.isUnitTest(body)
-//  if (typeof body.email === 'string' && this.clear.email !== clean(body.email)) {
-//    // Email change (requires confirmation)
-//    this.confirmation = await this.Confirmation.create({
-//      type: 'emailchange',
-//      data: {
-//        language: this.record.language,
-//        email: {
-//          current: this.clear.email,
-//          new: body.email,
-//        },
-//      },
-//      userId: this.record.id,
-//    })
-//    if (!isUnitTest || this.config.tests.sendEmail) {
-//      // Send confirmation email
-//      await this.mailer.send({
-//        template: 'emailchange',
-//        language: this.record.language,
-//        to: body.email,
-//        cc: this.clear.email,
-//        replacements: {
-//          actionUrl: i18nUrl(this.language, `/confirm/emailchange/${this.Confirmation.record.id}`),
-//          whyUrl: i18nUrl(this.language, `/docs/faq/email/why-emailchange`),
-//          supportUrl: i18nUrl(this.language, `/patrons/join`),
-//        },
-//      })
-//    }
-//  } else if (typeof body.confirmation === 'string' && body.confirm === 'emailchange') {
-//    // Handle email change confirmation
-//    await this.Confirmation.read({ id: body.confirmation })
-//
-//    if (!this.Confirmation.exists) {
-//      log.warn(err, `Could not find confirmation id ${params.id}`)
-//      return this.setResponse(404, 'failedToFindConfirmationId')
-//    }
-//
-//    if (this.Confirmation.record.type !== 'emailchange') {
-//      log.warn(err, `Confirmation mismatch; ${params.id} is not an emailchange id`)
-//      return this.setResponse(404, 'confirmationIdTypeMismatch')
-//    }
-//
-//    const data = this.Confirmation.clear.data
-//    if (data.email.current === this.clear.email && typeof data.email.new === 'string') {
-//      await this.safeUpdate({
-//        email: this.encrypt(data.email.new),
-//        ehash: hash(clean(data.email.new)),
-//      })
-//    }
-//  }
-//
-//  const returnData = {
-//    result: 'success',
-//    account: this.asAccount(),
-//  }
-//  if (isUnitTest) returnData.confirmation = this.Confirmation.record.id
-//
-//  return this.setResponse(200, false, returnData)
-//}
+PersonModel.prototype.unsafeUpdate = async function ({ params, body, user }) {
+  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  await this.read({ id: parseInt(params.id) })
+  if (user.uid !== this.record.userId) return this.setResponse(403, 'accessDenied')
+  const data = {}
+  const notes = []
+  /*
+  img       String?
+  public    Boolean   @default(false)
+  */
+  // Imperial
+  if (body.imperial === true || body.imperial === false) data.imperial = body.imperial
+  // Name
+  if (typeof body.name === 'string') data.name = body.name
+  // Notes
+  if (typeof body.notes === 'string') data.notes = body.notes
+  // Public
+  if (body.public === true || body.public === false) data.public = body.public
+  // Measurements
+  const measies = {}
+  if (typeof body.measies === 'object') {
+    for (const [key, val] of body.measies) {
+      if (this.config.measies.includes(key) && typeof val === 'number' && val > 0)
+        measies[key] = val
+    }
+    data.measies = { ...this.record.measies, ...measies }
+  }
+
+  // Image (img)
+  if (typeof body.img === 'string') {
+    const img = await setPersonAvatar(params.id, body.img)
+    data.img = img.url
+  }
+
+  // Now update the record
+  await this.safeUpdate(this.cloak(data))
+
+  return this.setResponse(200, false, { person: this.asPerson() })
+}
 
 /*
  * Returns record data

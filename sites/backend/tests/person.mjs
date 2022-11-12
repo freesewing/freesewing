@@ -37,10 +37,14 @@ export const personTests = async (chai, config, expect, store) => {
       imperial: false,
     },
   }
+  store.person = {
+    jwt: {},
+    key: {},
+  }
 
   for (const auth of ['jwt', 'key']) {
     describe(`${store.icon('person', auth)} Person tests (${auth})`, () => {
-      it(`${store.icon('person', auth)} Should create a new person (${auth})`, (done) => {
+      step(`${store.icon('person', auth)} Should create a new person (${auth})`, (done) => {
         chai
           .request(config.api)
           .post(`/people/${auth}`)
@@ -62,9 +66,38 @@ export const personTests = async (chai, config, expect, store) => {
               if (!['measies', 'img', 'unittest'].includes(key))
                 expect(res.body.person[key]).to.equal(val)
             }
+            store.person[auth] = res.body.person
             done()
           })
       })
+
+      for (const field of ['name', 'notes']) {
+        it(`${store.icon('person', auth)} Should update the ${field} (${auth})`, (done) => {
+          const data = {}
+          const val = store.person[auth][field] + '_updated'
+          data[field] = val
+          chai
+            .request(config.api)
+            .put(`/people/${store.person[auth].id}/${auth}`)
+            .set(
+              'Authorization',
+              auth === 'jwt'
+                ? 'Bearer ' + store.account.token
+                : 'Basic ' +
+                    new Buffer(
+                      `${store.account.apikey.key}:${store.account.apikey.secret}`
+                    ).toString('base64')
+            )
+            .send(data)
+            .end((err, res) => {
+              expect(err === null).to.equal(true)
+              expect(res.status).to.equal(200)
+              expect(res.body.result).to.equal(`success`)
+              expect(res.body.person[field]).to.equal(val)
+              done()
+            })
+        })
+      }
     })
   }
 }

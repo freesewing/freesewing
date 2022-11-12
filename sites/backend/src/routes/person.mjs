@@ -16,26 +16,26 @@ export function personRoutes(tools) {
   )
 
   // Read person
-  app.get('/people/:handle/jwt', passport.authenticate(...jwt), (req, res) =>
+  app.get('/people/:id/jwt', passport.authenticate(...jwt), (req, res) =>
     Person.read(req, res, tools)
   )
-  app.get('/people/:handle/jwt', passport.authenticate(...bsc), (req, res) =>
+  app.get('/people/:id/key', passport.authenticate(...bsc), (req, res) =>
     Person.read(req, res, tools)
   )
 
   // Update person
-  app.put('/people/:handle/jwt', passport.authenticate(...jwt), (req, res) =>
+  app.put('/people/:id/jwt', passport.authenticate(...jwt), (req, res) =>
     Person.update(req, res, tools)
   )
-  app.put('/people/:handle/key', passport.authenticate(...bsc), (req, res) =>
+  app.put('/people/:id/key', passport.authenticate(...bsc), (req, res) =>
     Person.update(req, res, tools)
   )
 
   // Delete person
-  app.delete('/people/:handle/jwt', passport.authenticate(...jwt), (req, res) =>
+  app.delete('/people/:id/jwt', passport.authenticate(...jwt), (req, res) =>
     Person.delete(req, res, tools)
   )
-  app.delete('/people/:handle/key', passport.authenticate(...bsc), (req, res) =>
+  app.delete('/people/:id/key', passport.authenticate(...bsc), (req, res) =>
     Person.delete(req, res, tools)
   )
 }
