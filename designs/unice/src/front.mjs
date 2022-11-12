@@ -48,7 +48,7 @@ export const front = {
     if (options.adjustStretch) {
       // roughly 15% of stretch is reserved for comfort
       // horizontal: first, 'regular' stretch (for parts that go across the body)
-      if (options.fabricStretchX < 0.30) {
+      if (options.fabricStretchX < 0.3) {
         // subtract 15, but never go below 0
         store.set('xScale', utils.stretchToScale(Math.max(0, options.fabricStretchX - 0.15)))
       } else {
@@ -59,7 +59,7 @@ export const front = {
       store.set('xScaleReduced', (1 + store.get('xScale')) / 2)
 
       // vertical:
-      if (options.fabricStretchY < 0.30) {
+      if (options.fabricStretchY < 0.3) {
         // subtract 15, but never go below 0
         store.set('yScale', utils.stretchToScale(Math.max(0, options.fabricStretchY - 0.15)))
       } else {
@@ -73,7 +73,7 @@ export const front = {
       store.set('xScaleReduced', utils.stretchToScale(options.fabricStretchX / 2))
       store.set('yScale', utils.stretchToScale(options.fabricStretchY))
     }
-    if (options.fabricStretchY < 0.20) {
+    if (options.fabricStretchY < 0.2) {
       store.set('yScaleReduced', 1)
     } else {
       // reduced yScale gradually increases from equivalent of stretch 0 to 5%, then cuts off (uses third-order polynomial)
@@ -259,8 +259,6 @@ export const front = {
     } else {
       curveAsAngle = 0
     }
-
-    console.log('store', store)
 
     // recalculate frontWaistBandRight
     points.frontWaistBandRight = points.frontWaistBandLeft.flipX(points.frontWaistMid)
