@@ -1256,6 +1256,7 @@ function __pathOffset(path, distance, log) {
   let current
   let start = false
   let closed = false
+  const BEZIER_OFFSET_DEBUG = false
   for (let i in path.ops) {
     let op = path.ops[i]
     if (op.type === 'line') {
@@ -1279,7 +1280,46 @@ function __pathOffset(path, distance, log) {
         { x: cp2.x, y: cp2.y },
         { x: op.to.x, y: op.to.y }
       )
-      for (let bezier of b.offset(distance)) offset.push(__asPath(bezier, path.log))
+      if (BEZIER_OFFSET_DEBUG) log.debug('Array of Beziers returned for an offset curve:')
+      for (let bezier of b.offset(distance)) {
+        // The array of Bezier curves returned by Bezier.offset() sometimes
+        // includes noop curves (consisting of 4 effectively-identical
+        // points) in its returned array. This can cause spurious lines
+        // if we later try to join them to a Path. The workaround is to
+        // ignore these noop curves.
+        let debug_message =
+          '(' +
+          Math.round(bezier.points[0].x) +
+          ',' +
+          Math.round(bezier.points[0].y) +
+          ', ' +
+          Math.round(bezier.points[1].x) +
+          ',' +
+          Math.round(bezier.points[1].y) +
+          ', ' +
+          Math.round(bezier.points[2].x) +
+          ',' +
+          Math.round(bezier.points[2].y) +
+          ', ' +
+          Math.round(bezier.points[3].x) +
+          ',' +
+          Math.round(bezier.points[3].y) +
+          ')'
+        if (
+          Math.round(bezier.points[0].x) === Math.round(bezier.points[1].x) &&
+          Math.round(bezier.points[0].x) === Math.round(bezier.points[2].x) &&
+          Math.round(bezier.points[0].x) === Math.round(bezier.points[3].x) &&
+          Math.round(bezier.points[0].y) === Math.round(bezier.points[1].y) &&
+          Math.round(bezier.points[0].y) === Math.round(bezier.points[2].y) &&
+          Math.round(bezier.points[0].y) === Math.round(bezier.points[3].y)
+        ) {
+          debug_message += ' (dropped)'
+          if (BEZIER_OFFSET_DEBUG) log.debug(debug_message)
+          continue
+        }
+        if (BEZIER_OFFSET_DEBUG) log.debug(debug_message)
+        offset.push(__asPath(bezier, path.log))
+      }
     } else if (op.type === 'close') closed = true
     if (op.to) current = op.to
     if (!start) start = current
