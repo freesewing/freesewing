@@ -48,7 +48,7 @@ model User {
   email         String
   github        String    @default("")
   ihash         String
-  img           String    @default("https://freesewing.org/avatar.svg")
+  img           String?
   initial       String
   imperial      Boolean   @default(false)
   language      String    @default("en")
@@ -70,6 +70,7 @@ model Pattern {
   id        Int      @id @default(autoincrement())
   createdAt DateTime @default(now())
   data      String?
+  img       String?
   person    Person?  @relation(fields: [personId], references: [id])
   personId  Int?
   user      User     @relation(fields: [userId], references: [id])
@@ -82,7 +83,8 @@ model Pattern {
 model Person {
   id        Int       @id @default(autoincrement())
   createdAt DateTime  @default(now())
-  img       String    @default("https://freesewing.org/avatar.svg")
+  img       String?
+  imperial  Boolean   @default(false)
   name      String    @default("")
   notes     String    @default("")
   user      User      @relation(fields: [userId], references: [id])

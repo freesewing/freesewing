@@ -12,6 +12,7 @@ export function UserModel(tools) {
   this.encrypt = tools.encrypt
   this.mailer = tools.email
   this.Confirmation = new ConfirmationModel(tools)
+  this.encryptedFields = ['bio', 'github', 'email', 'initial', 'img']
   this.clear = {} // For holding decrypted data
 
   return this
@@ -40,10 +41,9 @@ UserModel.prototype.read = async function (where) {
 UserModel.prototype.reveal = async function (where) {
   this.clear = {}
   if (this.record) {
-    this.clear.bio = this.decrypt(this.record.bio)
-    this.clear.github = this.decrypt(this.record.github)
-    this.clear.email = this.decrypt(this.record.email)
-    this.clear.initial = this.decrypt(this.record.initial)
+    for (const field of this.encryptedFields) {
+      this.clear[field] = this.decrypt(this.record[field])
+    }
   }
 
   return this
@@ -53,7 +53,7 @@ UserModel.prototype.reveal = async function (where) {
  * Helper method to encrypt at-rest data
  */
 UserModel.prototype.cloak = function (data) {
-  for (const field of ['bio', 'github', 'email']) {
+  for (const field of this.encryptedFields) {
     if (typeof data[field] !== 'undefined') data[field] = this.encrypt(data[field])
   }
   if (typeof data.password === 'string') data.password = asJson(hashPassword(data.password))
@@ -164,6 +164,8 @@ UserModel.prototype.create = async function ({ body }) {
       password: asJson(hashPassword(randomString())), // We'll change this later
       github: this.encrypt(''),
       bio: this.encrypt(''),
+      // Set this one initially as we need the ID to create a custom img via Sanity
+      img: this.encrypt(this.config.avatars.user),
     }
     this.record = await this.prisma.user.create({ data })
   } catch (err) {

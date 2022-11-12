@@ -22,7 +22,10 @@ PersonModel.prototype.create = async function ({ body, user }) {
   if (body.notes || typeof body.notes === 'string') data.notes = body.notes
   if (body.public === true) data.public = true
   if (body.measies) data.measies = this.sanitizeMeasurements(body.measies)
+  data.imperial = body.imperial === true ? true : false
   data.userId = user.uid
+  // Set this one initially as we need the ID to create a custom img via Sanity
+  data.img = this.encrypt(this.config.avatars.person)
 
   // Create record
   try {
@@ -32,7 +35,7 @@ PersonModel.prototype.create = async function ({ body, user }) {
     return this.setResponse(500, 'createPersonFailed')
   }
 
-  // Update img?  (now that we have the ID)
+  // Update img? (now that we have the ID)
   const img =
     this.config.use.sanity &&
     typeof body.img === 'string' &&
@@ -70,12 +73,9 @@ PersonModel.prototype.reveal = async function () {
   this.clear = {}
   if (this.record) {
     for (const field of this.encryptedFields) {
-      // Default avatar is not encrypted
-      if (field === 'img' && this.record.img.slice(0, 4) === 'http')
-        this.clear.img = this.record.img
-      else this.clear[field] = this.decrypt(this.record[field])
+      this.clear[field] = this.decrypt(this.record[field])
     }
-  } else console.log('no record')
+  }
 
   return this
 }

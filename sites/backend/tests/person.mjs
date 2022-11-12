@@ -22,6 +22,7 @@ export const personTests = async (chai, config, expect, store) => {
       },
       public: true,
       unittest: true,
+      imperial: true,
     },
     key: {
       name: 'Sorcha',
@@ -33,6 +34,7 @@ export const personTests = async (chai, config, expect, store) => {
       public: false,
       img: cat,
       unittest: true,
+      imperial: false,
     },
   }
 

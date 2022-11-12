@@ -67,8 +67,10 @@ export const encryption = (stringKey, salt = 'FreeSewing') => {
        * Always return a string so we can store this in SQLite no problemo
        */
       return asJson({
+        // iv = Initialization Vector
         iv: iv.toString('hex'),
-        encrypted: Buffer.concat([cipher.update(data), cipher.final()]).toString('hex'),
+        // ct = CipherText
+        ct: Buffer.concat([cipher.update(data), cipher.final()]).toString('hex'),
       })
     },
     decrypt: (data) => {
@@ -80,7 +82,7 @@ export const encryption = (stringKey, salt = 'FreeSewing') => {
       } catch (err) {
         throw ('Could not parse encrypted data in decrypt() call', err)
       }
-      if (!data.iv || typeof data.encrypted === 'undefined') {
+      if (!data.iv || typeof data.ct === 'undefined') {
         throw 'Encrypted data passed to decrypt() was malformed'
       }
 
@@ -94,10 +96,9 @@ export const encryption = (stringKey, salt = 'FreeSewing') => {
        * so we return the same type as what was passed to encrypt()
        */
       return JSON.parse(
-        Buffer.concat([
-          decipher.update(Buffer.from(data.encrypted, 'hex')),
-          decipher.final(),
-        ]).toString('utf-8')
+        Buffer.concat([decipher.update(Buffer.from(data.ct, 'hex')), decipher.final()]).toString(
+          'utf-8'
+        )
       )
     },
   }

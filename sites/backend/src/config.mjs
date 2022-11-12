@@ -39,6 +39,11 @@ const config = {
     levels: [0, 1, 2, 3, 4, 5, 6, 7, 8],
     expiryMaxSeconds: 365 * 24 * 3600,
   },
+  avatars: {
+    user: process.env.BACKEND_AVATAR_USER || 'https://freesewing.org/avatar.svg',
+    person: process.env.BACKEND_AVATAR_PERSON || 'https://freesewing.org/avatar.svg',
+    pattern: process.env.BACKEND_AVATAR_PATTERN || 'https://freesewing.org/avatar.svg',
+  },
   db: {
     url: process.env.BACKEND_DB_URL,
   },
