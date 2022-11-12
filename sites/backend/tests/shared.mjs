@@ -7,7 +7,7 @@ import { randomString } from '../src/utils/crypto.mjs'
 
 dotenv.config()
 
-const config = verifyConfig()
+const config = verifyConfig(true)
 const expect = chai.expect
 chai.use(http)
 
@@ -26,6 +26,7 @@ export const setup = async () => {
       user: '🧑 ',
       jwt: '🎫 ',
       key: '🎟️  ',
+      person: '🧕 ',
     },
     randomString,
   }

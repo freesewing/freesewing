@@ -2,6 +2,7 @@ import chalk from 'chalk'
 // Load environment variables
 import dotenv from 'dotenv'
 import { asJson } from './utils/index.mjs'
+import { measurements } from '../../../config/measurements.mjs'
 dotenv.config()
 
 // Allow these 2 to be imported
@@ -55,6 +56,7 @@ const config = {
     base: 'user',
   },
   languages: ['en', 'de', 'es', 'fr', 'nl'],
+  measies: measurements,
   aws: {
     ses: {
       region: process.env.BACKEND_AWS_SES_REGION || 'us-east-1',
@@ -197,7 +199,7 @@ if (envToBool(process.env.BACKEND_ENABLE_TESTS)) {
  * which is not a given since there's a number of environment
  * variables that need to be set for this backend to function.
  */
-export function verifyConfig() {
+export function verifyConfig(silent = false) {
   const emptyString = (input) => {
     if (typeof input === 'string' && input.length > 0) return false
     return true
@@ -219,19 +221,20 @@ export function verifyConfig() {
     }
   }
 
-  for (const o of ok) console.log(o)
-
-  for (const e of errors) {
-    console.log(
-      chalk.redBright('Error:'),
-      'Required environment variable',
-      chalk.redBright(e),
-      "is missing. The backend won't start without it.",
-      '\n',
-      chalk.yellow('See: '),
-      chalk.yellow.bold('https://freesewing.dev/reference/backend'),
-      '\n'
-    )
+  if (!silent) {
+    for (const o of ok) console.log(o)
+    for (const e of errors) {
+      console.log(
+        chalk.redBright('Error:'),
+        'Required environment variable',
+        chalk.redBright(e),
+        "is missing. The backend won't start without it.",
+        '\n',
+        chalk.yellow('See: '),
+        chalk.yellow.bold('https://freesewing.dev/reference/backend'),
+        '\n'
+      )
+    }
   }
 
   if (errors.length > 0) {

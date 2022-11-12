@@ -367,7 +367,6 @@ UserModel.prototype.unsafeUpdate = async function (body) {
       },
       userId: this.record.id,
     })
-    console.log(this.config.tests)
     if (!isUnitTest || this.config.tests.sendEmail) {
       // Send confirmation email
       await this.mailer.send({

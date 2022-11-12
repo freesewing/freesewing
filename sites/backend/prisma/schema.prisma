@@ -82,11 +82,13 @@ model Pattern {
 model Person {
   id        Int       @id @default(autoincrement())
   createdAt DateTime  @default(now())
-  data      String?
+  name      String    @default("")
+  notes     String    @default("")
   user      User      @relation(fields: [userId], references: [id])
   userId    Int
   measies   String    @default("{}")
   Pattern   Pattern[]
+  public    Boolean   @default(false)
 
   @@index([userId])
 }
