@@ -67,7 +67,7 @@ UserModel.prototype.cloak = function (data) {
  *
  * Stores result in this.record
  */
-UserModel.prototype.readForReturn = async function (where) {
+UserModel.prototype.guardedRead = async function (where) {
   await this.read(where)
 
   return this.setResponse(200, false, {
@@ -136,7 +136,7 @@ UserModel.prototype.setExists = function () {
 /*
  * Creates a user+confirmation and sends out signup email
  */
-UserModel.prototype.create = async function ({ body }) {
+UserModel.prototype.guardedCreate = async function ({ body }) {
   if (Object.keys(body) < 1) return this.setResponse(400, 'postBodyMissing')
   if (!body.email) return this.setResponse(400, 'emailMissing')
   if (!body.language) return this.setResponse(400, 'languageMissing')

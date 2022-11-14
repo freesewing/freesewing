@@ -95,7 +95,7 @@ export const personTests = async (chai, config, expect, store) => {
       for (const field of ['imperial', 'public']) {
         it(`${store.icon('person', auth)} Should update the ${field} field (${auth})`, (done) => {
           const data = {}
-          const val = false
+          const val = !store.person[auth][field]
           data[field] = val
           chai
             .request(config.api)
@@ -115,6 +115,7 @@ export const personTests = async (chai, config, expect, store) => {
               expect(res.status).to.equal(200)
               expect(res.body.result).to.equal(`success`)
               expect(res.body.person[field]).to.equal(val)
+              store.person[auth][field] = val
               done()
             })
         })
@@ -306,6 +307,65 @@ export const personTests = async (chai, config, expect, store) => {
             expect(res.status).to.equal(403)
             expect(res.body.result).to.equal(`error`)
             expect(res.body.error).to.equal(`insufficientAccessLevel`)
+            done()
+          })
+      })
+
+      //it(`${store.icon(
+      //  'person',
+      //  auth
+      //)} Should clone a person (${auth})`, (done) => {
+      //  chai
+      //    .request(config.api)
+      //    .post(`/people/${store.person[auth].id}/clone/${auth}`)
+      //    .set(
+      //      'Authorization',
+      //      auth === 'jwt'
+      //        ? 'Bearer ' + store.account.token
+      //        : 'Basic ' +
+      //            new Buffer(
+      //              `${store.account.apikey.key}:${store.account.apikey.secret}`
+      //            ).toString('base64')
+      //    )
+      //    .end((err, res) => {
+      //      expect(err === null).to.equal(true)
+      //      expect(res.status).to.equal(200)
+      //      expect(res.body.result).to.equal(`success`)
+      //      expect(typeof res.body.error).to.equal(`undefined`)
+      //      expect(typeof res.body.person.id).to.equal(`number`)
+      //      done()
+      //    })
+      //})
+
+      it(`${store.icon(
+        'person',
+        auth
+      )} Should (not) clone a public person across accounts (${auth})`, (done) => {
+        chai
+          .request(config.api)
+          .post(`/people/${store.person[auth].id}/clone/${auth}`)
+          .set(
+            'Authorization',
+            auth === 'jwt'
+              ? 'Bearer ' + store.altaccount.token
+              : 'Basic ' +
+                  new Buffer(
+                    `${store.altaccount.apikey.key}:${store.altaccount.apikey.secret}`
+                  ).toString('base64')
+          )
+          .end((err, res) => {
+            if (store.person[auth].public) {
+              expect(err === null).to.equal(true)
+              expect(res.status).to.equal(200)
+              expect(res.body.result).to.equal(`success`)
+              expect(typeof res.body.error).to.equal(`undefined`)
+              expect(typeof res.body.person.id).to.equal(`number`)
+            } else {
+              expect(err === null).to.equal(true)
+              expect(res.status).to.equal(403)
+              expect(res.body.result).to.equal(`error`)
+              expect(res.body.error).to.equal(`insufficientAccessLevel`)
+            }
             done()
           })
       })

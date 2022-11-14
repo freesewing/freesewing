@@ -15,6 +15,14 @@ export function personRoutes(tools) {
     Person.create(req, res, tools)
   )
 
+  // Clone person
+  app.post('/people/:id/clone/jwt', passport.authenticate(...jwt), (req, res) =>
+    Person.clone(req, res, tools)
+  )
+  app.post('/people/:id/clone/key', passport.authenticate(...bsc), (req, res) =>
+    Person.clone(req, res, tools)
+  )
+
   // Read person
   app.get('/people/:id/jwt', passport.authenticate(...jwt), (req, res) =>
     Person.read(req, res, tools)
@@ -29,14 +37,6 @@ export function personRoutes(tools) {
   )
   app.put('/people/:id/key', passport.authenticate(...bsc), (req, res) =>
     Person.update(req, res, tools)
-  )
-
-  // Clone person
-  app.put('/people/:id/clone/jwt', passport.authenticate(...jwt), (req, res) =>
-    Person.clone(req, res, tools)
-  )
-  app.put('/people/:id/clone/key', passport.authenticate(...bsc), (req, res) =>
-    Person.clone(req, res, tools)
   )
 
   // Delete person

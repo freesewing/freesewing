@@ -10,7 +10,7 @@ export function UserController() {}
  */
 UserController.prototype.signup = async (req, res, tools) => {
   const User = new UserModel(tools)
-  await User.create(req)
+  await User.guardedCreate(req)
 
   return User.sendResponse(res)
 }
@@ -48,7 +48,7 @@ UserController.prototype.login = async function (req, res, tools) {
  */
 UserController.prototype.whoami = async (req, res, tools) => {
   const User = new UserModel(tools)
-  await User.readForReturn({ id: req.user.uid })
+  await User.guardedRead({ id: req.user.uid })
 
   return User.sendResponse(res)
 }

@@ -8,7 +8,7 @@ export function PersonController() {}
  */
 PersonController.prototype.create = async (req, res, tools) => {
   const Person = new PersonModel(tools)
-  await Person.create(req)
+  await Person.guardedCreate(req)
 
   return Person.sendResponse(res)
 }
@@ -19,7 +19,7 @@ PersonController.prototype.create = async (req, res, tools) => {
  */
 PersonController.prototype.read = async (req, res, tools) => {
   const Person = new PersonModel(tools)
-  await Person.readForReturn({ id: parseInt(req.params.id) }, req.user)
+  await Person.guardedRead(req)
 
   return Person.sendResponse(res)
 }
@@ -50,9 +50,9 @@ PersonController.prototype.delete = async (req, res, tools) => {
  * Clone a person
  * See: https://freesewing.dev/reference/backend/api
  */
-//PersonController.prototype.clone = async (req, res, tools) => {
-//  const Person = new PersonModel(tools)
-//  await Person.unsafeUpdate(req)
-//
-//  return Person.sendResponse(res)
-//}
+PersonController.prototype.clone = async (req, res, tools) => {
+  const Person = new PersonModel(tools)
+  await Person.guardedClone(req)
+
+  return Person.sendResponse(res)
+}

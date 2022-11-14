@@ -12,7 +12,7 @@ export function PersonModel(tools) {
   return this
 }
 
-PersonModel.prototype.create = async function ({ body, user }) {
+PersonModel.prototype.guardedCreate = async function ({ body, user }) {
   if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
   if (Object.keys(body) < 1) return this.setResponse(400, 'postBodyMissing')
   if (!body.name || typeof body.name !== 'string') return this.setResponse(400, 'nameMissing')
@@ -28,12 +28,7 @@ PersonModel.prototype.create = async function ({ body, user }) {
   data.img = this.config.avatars.person
 
   // Create record
-  try {
-    this.record = await this.prisma.person.create({ data: this.cloak(data) })
-  } catch (err) {
-    log.warn(err, 'Could not create person')
-    return this.setResponse(500, 'createPersonFailed')
-  }
+  await this.unguardedCreate(data)
 
   // Update img? (now that we have the ID)
   const img =
@@ -47,6 +42,17 @@ PersonModel.prototype.create = async function ({ body, user }) {
   else await this.read({ id: this.record.id })
 
   return this.setResponse(201, 'created', { person: this.asPerson() })
+}
+
+PersonModel.prototype.unguardedCreate = async function (data) {
+  try {
+    this.record = await this.prisma.person.create({ data: this.cloak(data) })
+  } catch (err) {
+    log.warn(err, 'Could not create person')
+    return this.setResponse(500, 'createPersonFailed')
+  }
+
+  return this
 }
 
 /*
@@ -72,14 +78,45 @@ PersonModel.prototype.read = async function (where) {
  *
  * Stores result in this.record
  */
-PersonModel.prototype.readForReturn = async function (where, user) {
+PersonModel.prototype.guardedRead = async function ({ params, user }) {
   if (user.level < 1) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
-  await this.read(where)
+  await this.read({ id: parseInt(params.id) })
   if (this.record.userId !== user.uid && user.level < 5) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
+
+  return this.setResponse(200, false, {
+    result: 'success',
+    person: this.asPerson(),
+  })
+}
+
+/*
+ * Clones a person
+ * In addition prepares it for returning the person data
+ *
+ * Stores result in this.record
+ */
+PersonModel.prototype.guardedClone = async function ({ params, user }) {
+  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
+
+  await this.read({ id: parseInt(params.id) })
+  if (this.record.userId !== user.uid && !this.record.public && user.level < 5) {
+    return this.setResponse(403, 'insufficientAccessLevel')
+  }
+
+  // Clone person
+  const data = this.asPerson()
+  delete data.id
+  data.name += ` (cloned from #${this.record.id})`
+  data.notes += ` (Note: This person was cloned from person #${this.record.id})`
+  await this.unguardedCreate(data)
+
+  // Update unencrypted data
+  this.reveal()
 
   return this.setResponse(200, false, {
     result: 'success',
