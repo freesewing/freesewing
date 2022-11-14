@@ -56,9 +56,6 @@ const Stack = (props) => {
 
   const stackLayout = layout.stacks?.[stackName]
 
-  // // Don't just assume this makes sense
-  if (typeof stackLayout?.move?.x === 'undefined') return null
-
   // Use a ref for direct DOM manipulation
   const stackRef = useRef(null)
   const centerRef = useRef(null)
@@ -81,6 +78,9 @@ const Stack = (props) => {
     if (props.isLayoutPart) return
     handleDrag(select(stackRef.current))
   }, [rotate, stackRef, stackLayout])
+
+  // // Don't just assume this makes sense
+  if (typeof stackLayout?.move?.x === 'undefined') return null
 
   // These are kept as vars because re-rendering on drag would kill performance
   // Managing the difference between re-render and direct DOM updates makes this
@@ -144,7 +144,7 @@ const Stack = (props) => {
       didDrag = true
       setTransforms()
     })
-    .on('end', function (event) {
+    .on('end', function () {
       // save to gist if anything actually changed
       if (didDrag) updateLayout()
 
@@ -152,7 +152,7 @@ const Stack = (props) => {
     })
 
   /** reset the part's transforms */
-  const resetPart = (event) => {
+  const resetPart = () => {
     rotation = 0
     flipX = 0
     flipY = 0

@@ -96,7 +96,7 @@ const doScanForBlanks = (stacks, layout, x, y, w, h) => {
 const basePlugin = ({
   sheetWidth,
   sheetHeight,
-  boundary = false,
+  // boundary = false,
   partName = 'pages',
   responsiveColumns = true,
   printStyle = false,

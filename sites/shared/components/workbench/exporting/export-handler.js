@@ -32,7 +32,7 @@ export const handleExport = async (format, gist, design, t, app, onComplete, onE
   app.startLoading()
 
   // get a worker going
-  const worker = new Worker(new URL('./export-worker.js', import.meta.url), { type: module })
+  const worker = new Worker(new URL('./export-worker.js', import.meta.url), { type: 'module' })
 
   // listen for the worker's message back
   worker.addEventListener('message', (e) => {
@@ -56,7 +56,6 @@ export const handleExport = async (format, gist, design, t, app, onComplete, onE
     app.stopLoading()
   })
 
-  let svg = ''
   // pdf settings
   const settings = {
     ...defaultPdfSettings,

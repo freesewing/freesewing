@@ -13,7 +13,7 @@ const PrintLayout = (props) => {
   // disable xray
   useEffect(() => {
     if (props.gist?._state?.xray?.enabled) props.updateGist(['_state', 'xray', 'enabled'], false)
-  }, [])
+  })
 
   const { t } = useTranslation(['workbench'])
   const [error, setError] = useState(false)
@@ -45,8 +45,8 @@ const PrintLayout = (props) => {
       props.design,
       t,
       props.app,
-      (e) => setError(false),
-      (e) => setError(true)
+      () => setError(false),
+      () => setError(true)
     )
   }
 

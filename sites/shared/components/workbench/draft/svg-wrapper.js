@@ -67,4 +67,6 @@ const SvgWrapper = forwardRef((props, ref) => {
   )
 })
 
+SvgWrapper.displayName = 'SvgWrapper'
+
 export default SvgWrapper

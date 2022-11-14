@@ -7,10 +7,10 @@ import ExportIcon from 'shared/components/icons/export'
 import { useTranslation } from 'next-i18next'
 
 const PrintLayoutSettings = (props) => {
+  const { t } = useTranslation(['workbench'])
   let pages = props.draft?.setStores[0].get('pages')
   if (!pages) return null
   const { cols, rows, count } = pages
-  const { t } = useTranslation(['workbench'])
 
   const setMargin = (evt) => {
     props.updateGist(
