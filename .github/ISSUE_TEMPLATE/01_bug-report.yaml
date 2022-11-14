@@ -51,6 +51,7 @@ body:
         - designs/lucy
         - designs/lunetius
         - designs/noble
+        - designs/octoplushy
         - designs/paco
         - designs/penelope
         - designs/plugintest
@@ -62,7 +63,6 @@ body:
         - designs/sven
         - designs/tamiko
         - designs/teagan
-        - designs/theo
         - designs/tiberius
         - designs/titan
         - designs/trayvon
@@ -78,9 +78,9 @@ body:
         - plugins/plugin-bundle
         - plugins/plugin-bust
         - plugins/plugin-buttons
+        - plugins/plugin-cutlist
         - plugins/plugin-cutonfold
         - plugins/plugin-dimension
-        - plugins/plugin-export-dxf
         - plugins/plugin-flip
         - plugins/plugin-gore
         - plugins/plugin-grainline
@@ -94,23 +94,17 @@ body:
         - plugins/plugin-sprinkle
         - plugins/plugin-svgattr
         - plugins/plugin-theme
+        - plugins/plugin-timing
         - plugins/plugin-title
-        - plugins/plugin-validate
         - plugins/plugin-versionfree-svg
-        - packages/components
         - packages/core
-        - packages/css-theme
-        - packages/gatsby-remark-jargon
         - packages/i18n
         - packages/models
-        - packages/mui-theme
         - packages/new-design
-        - packages/pattern-info
         - packages/prettier-config
+        - packages/rehype-highlight-lines
         - packages/rehype-jargon
-        - packages/remark-jargon
         - packages/snapseries
-        - packages/utils
   - type: dropdown
     id: patron
     attributes:
