@@ -6,6 +6,11 @@
 *.mustache
 *.png
 *.svg
+*.prisma
+*.sqlite
+*.html
+*.env
+LICENSE
 yarn.lock
 .husky/pre-commit
 .prettierignore

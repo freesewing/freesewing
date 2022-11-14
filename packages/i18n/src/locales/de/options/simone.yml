@@ -1,6 +1,6 @@
 ---
 bustAlignedButtons:
-  title: Auf brusthöhe ausgerichtete Knöpfe
+  title: Auf Brusthöhe ausgerichtete Knöpfe
   description: Optionale Positionierung der Knöpfe, um sicherzugehen, einen Knopf auf Brusthöhe zu platzieren
   options:
     even: Gleichmäßiger Abstand

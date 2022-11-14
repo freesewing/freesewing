@@ -5,7 +5,7 @@ title: "Lunetius, die Lacerna: Zuschnitt"
 - Schneide **1 Lacerna**-Teil im Stoffbruch
 - oder Schneide **2 Lacerna**-Teile
 
-Wie du Lunetius zuschneidest, hängt davon ab, welchen Stoff du gewählt hast. If you don’t, you can cut two halves and later sew them together. To not have to later finish the centre back edge you can cut with the centre back edge on the selvage. If you have enough fabric width you can cut it _on the fold_.
+Wie du Lunetius zuschneidest, hängt davon ab, welchen Stoff du gewählt hast. If you have enough fabric width you can cut it _on the fold_. If you don’t, you can cut two halves and later sew them together. To not have to later finish the centre back edge you can cut with the centre back edge on the selvage.
 
 In der Römerzeit wurden viele Kleidungsstücke in Form gewoben, daher ist dies eine Stelle, wo du dir um historische Genauigkeit keine Sorgen machen musst (es sei denn, du willst Lunetius auch in Form weben).
 

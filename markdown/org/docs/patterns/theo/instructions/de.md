@@ -312,7 +312,7 @@ When you are done, remove your earlier perpendicular pins.
 
 ### Schritt 21: Über Fliegenschild falten und nach unten anpinnen
 
-![FOld over fly shield and pin down](step21a.png) ![FOld over fly shield and pin down](step21b.png)
+![Fold over fly shield and pin down](step21a.png) ![Fold over fly shield and pin down](step21b.png)
 
 Flip everything over so that your fly shield lies at the bottom.
 

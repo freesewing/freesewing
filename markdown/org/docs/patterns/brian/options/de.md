@@ -6,7 +6,7 @@ title: "Brian body block: Design Options"
 
 ## Die Ärmel verstehen
 
-In version 2 of FreeSewing, the sleevecap of Brian was redesigned to be more adaptable to different types of sleeves and garments. As a result, the sleevecap alone now has 20 options to control its shape. Whereas that may seem a bit overwhelming at first, understanding how the sleevecap is drafted makes it easy to understand what all the individual options do.
+In version 2 of FreeSewing, the sleevecap of Brian was redesigned to be more adaptable to different types of sleeves and garments. Das Ergebnis ist, dass die Ärmelkugel allein über 20 Optionen zur Kontrolle der Form hat. Whereas that may seem a bit overwhelming at first, understanding how the sleevecap is drafted makes it easy to understand what all the individual options do.
 
 ### Die Begrenzungsbox
 

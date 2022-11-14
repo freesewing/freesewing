@@ -1,0 +1,100 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("BACKEND_DB_URL")
+}
+
+model Apikey {
+  id            String    @id @default(uuid())
+  createdAt     DateTime  @default(now())
+  expiresAt     DateTime
+  name          String    @default("")
+  level         Int       @default(0)
+  role          String    @default("user")
+  secret        String
+  user          User     @relation(fields: [userId], references: [id])
+  userId        Int
+}
+
+model Confirmation {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+  data      String
+  type      String
+  user      User     @relation(fields: [userId], references: [id])
+  userId    Int
+}
+
+model Subscriber {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+  data      String
+  ehash     String   @unique
+  email     String
+  updatedAt DateTime @updatedAt
+}
+
+model User {
+  id            Int       @id @default(autoincrement())
+  apikeys       Apikey[]
+  bio           String    @default("")
+  confirmations Confirmation[]
+  consent       Int       @default(0)
+  control       Int       @default(1)
+  createdAt     DateTime  @default(now())
+  ehash         String    @unique
+  email         String
+  github        String    @default("")
+  ihash         String
+  img           String?
+  initial       String
+  imperial      Boolean   @default(false)
+  language      String    @default("en")
+  lastLogin     DateTime?
+  lusername     String    @unique
+  newsletter    Boolean   @default(false)
+  password      String
+  patron        Int       @default(0)
+  patterns      Pattern[]
+  people        Person[]
+  role          String    @default("user")
+  status        Int       @default(0)
+  updatedAt     DateTime? @updatedAt
+  username      String
+  @@index([ihash])
+}
+
+model Pattern {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  data      String
+  design    String
+  img       String?
+  person    Person?  @relation(fields: [personId], references: [id])
+  personId  Int?
+  notes     String
+  user      User     @relation(fields: [userId], references: [id])
+  userId    Int
+  updatedAt DateTime @updatedAt
+
+  @@index([userId, personId])
+}
+
+model Person {
+  id        Int       @id @default(autoincrement())
+  createdAt DateTime  @default(now())
+  img       String?
+  imperial  Boolean   @default(false)
+  name      String    @default("")
+  notes     String    @default("")
+  user      User      @relation(fields: [userId], references: [id])
+  userId    Int
+  measies   String    @default("{}")
+  Pattern   Pattern[]
+  public    Boolean   @default(false)
+
+  @@index([userId])
+}

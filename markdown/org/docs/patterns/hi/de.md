@@ -1,5 +1,5 @@
 ---
-title: Hi shark plush toy
+title: Hi, der Hai
 ---
 
 <PatternDocs pattern='hi' />

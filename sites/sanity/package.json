@@ -1,8 +1,19 @@
 {
-  "name": "FreeSewing",
   "private": true,
+  "name": "FreeSewing",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sanity config and instance hosted on cms.FreeSewing.org",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://freesewing.org/patrons/join"
+  },
   "main": "package.json",
   "author": "Joost De Cock <joost@joost.at>",
   "license": "UNLICENSED",
