@@ -67,7 +67,9 @@ UserModel.prototype.cloak = function (data) {
  *
  * Stores result in this.record
  */
-UserModel.prototype.guardedRead = async function (where) {
+UserModel.prototype.guardedRead = async function (where, { user }) {
+  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
   await this.read(where)
 
   return this.setResponse(200, false, {
@@ -318,8 +320,9 @@ UserModel.prototype.unguardedUpdate = async function (data) {
  * Updates the user data - Used when we pass through user-provided data
  * so we can't be certain it's safe
  */
-UserModel.prototype.guardedUpdate = async function (body, user) {
+UserModel.prototype.guardedUpdate = async function ({ body, user }) {
   if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
   const data = {}
   // Bio
   if (typeof body.bio === 'string') data.bio = body.bio
