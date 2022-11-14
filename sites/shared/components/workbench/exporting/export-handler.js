@@ -104,7 +104,7 @@ export const handleExport = async (format, gist, design, t, app, onComplete, onE
 
         // add the strings that are used on the cover page
         workerArgs.strings = {
-          design: capitalize(gist.design),
+          design: capitalize(pattern.designConfig.data.name.replace('@freesewing/', '')),
           tagline: t('common:sloganCome') + '. ' + t('common:sloganStay'),
           url: window.location.href,
         }
@@ -112,13 +112,10 @@ export const handleExport = async (format, gist, design, t, app, onComplete, onE
 
       // draft and render the pattern
       pattern.draft()
-      svg = pattern.render()
+      workerArgs.svg = pattern.render()
 
       // add the svg and pages data to the worker args
-      workerArgs.svg = svg
-      if (pattern.parts.pages) {
-        workerArgs.pages = pattern.parts.pages.pages
-      }
+      workerArgs.pages = pattern.setStores[pattern.activeSet].get('pages')
     } catch (err) {
       console.log(err)
       app.stopLoading()

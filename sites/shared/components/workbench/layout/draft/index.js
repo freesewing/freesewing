@@ -4,6 +4,7 @@ import Defs from '../../draft/defs'
 import Stack from './part'
 import SvgWrapper from '../../draft/svg-wrapper'
 import { getProps } from '../../draft/utils'
+import { PartInner } from '../../draft/part'
 
 const Draft = (props) => {
   const {
@@ -69,8 +70,16 @@ const Draft = (props) => {
     ? `${layout.topLeft.x} ${layout.topLeft.y} ${layout.width} ${layout.height}`
     : false
 
-  const stacks = []
+  const stacks = [
+    <PartInner
+      {...{ part: patternProps.parts[0][props.layoutPart], partName: props.layoutPart, gist }}
+      key={props.layoutPart}
+    />,
+  ]
   for (var stackName in patternProps.stacks) {
+    if (stackName === props.layoutPart) {
+      continue
+    }
     let stack = patternProps.stacks[stackName]
 
     const stackPart = (
@@ -88,7 +97,7 @@ const Draft = (props) => {
       />
     )
 
-    stacks[stack === props.layoutPart ? 'unshift' : 'push'](stackPart)
+    stacks.push(stackPart)
   }
 
   return (

@@ -32,7 +32,6 @@ const PrintLayout = (props) => {
     // draft the pattern
     draft.draft()
     patternProps = draft.getRenderProps()
-    console.log(patternProps)
   } catch (err) {
     console.log(err, props.gist)
   }
