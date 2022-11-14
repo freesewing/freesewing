@@ -8,13 +8,6 @@ core:
   - patterns
   - sewing
   - sewing patterns
-components:
-  - react
-css-theme:
-  - css
-  - scss
-  - sass
-  - theme
 design:
   - design
   - diy
@@ -40,10 +33,6 @@ models:
   - fashion
   - measurements
   - sizes
-mui-theme:
-  - material-ui
-  - react
-  - theme
 other:
   - design
   - diy
