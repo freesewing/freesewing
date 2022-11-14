@@ -33,7 +33,7 @@ const Draft = (props) => {
     // Pattern topLeft and bottomRight
     let topLeft = { x: 0, y: 0 }
     let bottomRight = { x: 0, y: 0 }
-    for (const [pname, part] of Object.entries(patternProps.stacks)) {
+    for (const pname in patternProps.stacks) {
       if (pname == props.layoutPart && !fitLayoutPart) continue
       let partLayout = newLayout.stacks[pname]
 
