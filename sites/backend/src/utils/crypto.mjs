@@ -85,7 +85,6 @@ export const encryption = (stringKey, salt = 'FreeSewing') => {
       if (!data.iv || typeof data.ct === 'undefined') {
         throw 'Encrypted data passed to decrypt() was malformed'
       }
-
       /*
        * The thing that does the decrypting
        */

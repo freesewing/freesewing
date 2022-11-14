@@ -31,6 +31,14 @@ export function personRoutes(tools) {
     Person.update(req, res, tools)
   )
 
+  // Clone person
+  app.put('/people/:id/clone/jwt', passport.authenticate(...jwt), (req, res) =>
+    Person.clone(req, res, tools)
+  )
+  app.put('/people/:id/clone/key', passport.authenticate(...bsc), (req, res) =>
+    Person.clone(req, res, tools)
+  )
+
   // Delete person
   app.delete('/people/:id/jwt', passport.authenticate(...jwt), (req, res) =>
     Person.delete(req, res, tools)

@@ -67,7 +67,7 @@ UserModel.prototype.cloak = function (data) {
  *
  * Stores result in this.record
  */
-UserModel.prototype.readAsAccount = async function (where) {
+UserModel.prototype.readForReturn = async function (where) {
   await this.read(where)
 
   return this.setResponse(200, false, {
@@ -175,7 +175,7 @@ UserModel.prototype.create = async function ({ body }) {
 
   // Update username
   try {
-    await this.safeUpdate({
+    await this.unguardedUpdate({
       username: `user-${this.record.id}`,
       lusername: `user-${this.record.id}`,
     })
@@ -243,7 +243,7 @@ UserModel.prototype.passwordLogin = async function (req) {
   // Login success
   if (updatedPasswordField) {
     // Update the password field with a v3 hash
-    await this.safeUpdate({ password: updatedPasswordField })
+    await this.unguardedUpdate({ password: updatedPasswordField })
   }
 
   return this.isOk() ? this.loginOk() : this.setResponse(401, 'loginFailed')
@@ -283,7 +283,7 @@ UserModel.prototype.confirm = async function ({ body, params }) {
   if (this.error) return this
 
   // Update user status, consent, and last login
-  await this.safeUpdate({
+  await this.unguardedUpdate({
     status: 1,
     consent: body.consent,
     lastLogin: new Date(),
@@ -298,7 +298,7 @@ UserModel.prototype.confirm = async function ({ body, params }) {
  * Updates the user data - Used when we create the data ourselves
  * so we know it's safe
  */
-UserModel.prototype.safeUpdate = async function (data) {
+UserModel.prototype.unguardedUpdate = async function (data) {
   try {
     this.record = await this.prisma.user.update({
       where: { id: this.record.id },
@@ -318,7 +318,7 @@ UserModel.prototype.safeUpdate = async function (data) {
  * Updates the user data - Used when we pass through user-provided data
  * so we can't be certain it's safe
  */
-UserModel.prototype.unsafeUpdate = async function (body) {
+UserModel.prototype.guardedUpdate = async function (body, user) {
   if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
   const data = {}
   // Bio
@@ -353,7 +353,7 @@ UserModel.prototype.unsafeUpdate = async function (body) {
   }
 
   // Now update the record
-  await this.safeUpdate(this.cloak(data))
+  await this.unguardedUpdate(this.cloak(data))
 
   const isUnitTest = this.isUnitTest(body)
   if (typeof body.email === 'string' && this.clear.email !== clean(body.email)) {
@@ -399,7 +399,7 @@ UserModel.prototype.unsafeUpdate = async function (body) {
 
     const data = this.Confirmation.clear.data
     if (data.email.current === this.clear.email && typeof data.email.new === 'string') {
-      await this.safeUpdate({
+      await this.unguardedUpdate({
         email: this.encrypt(data.email.new),
         ehash: hash(clean(data.email.new)),
       })

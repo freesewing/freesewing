@@ -22,6 +22,11 @@ export const setup = async () => {
       language: 'en',
       password: randomString(),
     },
+    altaccount: {
+      email: `test_${randomString()}@${config.tests.domain}`,
+      language: 'en',
+      password: randomString(),
+    },
     icons: {
       user: '🧑 ',
       jwt: '🎫 ',
@@ -32,53 +37,55 @@ export const setup = async () => {
   }
   store.icon = (icon1, icon2 = false) => store.icons[icon1] + (icon2 ? store.icons[icon2] : '')
 
-  // Get confirmation ID
-  let result
-  try {
-    result = await axios.post(`${store.config.api}/signup`, {
-      email: store.account.email,
-      language: store.account.language,
-      unittest: true,
-    })
-  } catch (err) {
-    console.log('Failed at first setup request', err)
-    process.exit()
-  }
-  store.account.confirmation = result.data.confirmation
+  for (const acc of ['account', 'altaccount']) {
+    // Get confirmation ID
+    let result
+    try {
+      result = await axios.post(`${store.config.api}/signup`, {
+        email: store[acc].email,
+        language: store[acc].language,
+        unittest: true,
+      })
+    } catch (err) {
+      console.log('Failed at first setup request', err)
+      process.exit()
+    }
+    store[acc].confirmation = result.data.confirmation
 
-  // Confirm account
-  try {
-    result = await axios.post(`${store.config.api}/confirm/signup/${store.account.confirmation}`, {
-      consent: 1,
-    })
-  } catch (err) {
-    console.log('Failed at account confirmation request', err)
-    process.exit()
-  }
-  store.account.token = result.data.token
-  store.account.username = result.data.account.username
-  store.account.userid = result.data.account.id
+    // Confirm account
+    try {
+      result = await axios.post(`${store.config.api}/confirm/signup/${store[acc].confirmation}`, {
+        consent: 1,
+      })
+    } catch (err) {
+      console.log('Failed at account confirmation request', err)
+      process.exit()
+    }
+    store[acc].token = result.data.token
+    store[acc].username = result.data.account.username
+    store[acc].userid = result.data.account.id
 
-  // Create API key
-  try {
-    result = await axios.post(
-      `${store.config.api}/apikey/jwt`,
-      {
-        name: 'Test API key',
-        level: 4,
-        expiresIn: 60,
-      },
-      {
-        headers: {
-          authorization: `Bearer ${store.account.token}`,
+    // Create API key
+    try {
+      result = await axios.post(
+        `${store.config.api}/apikey/jwt`,
+        {
+          name: 'Test API key',
+          level: 4,
+          expiresIn: 60,
         },
-      }
-    )
-  } catch (err) {
-    console.log('Failed at API key creation request', err)
-    process.exit()
+        {
+          headers: {
+            authorization: `Bearer ${store[acc].token}`,
+          },
+        }
+      )
+    } catch (err) {
+      console.log('Failed at API key creation request', err)
+      process.exit()
+    }
+    store[acc].apikey = result.data.apikey
   }
-  store.account.apikey = result.data.apikey
 
   return { chai, config, expect, store }
 }

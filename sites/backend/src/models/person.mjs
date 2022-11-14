@@ -25,7 +25,7 @@ PersonModel.prototype.create = async function ({ body, user }) {
   data.imperial = body.imperial === true ? true : false
   data.userId = user.uid
   // Set this one initially as we need the ID to create a custom img via Sanity
-  data.img = this.encrypt(this.config.avatars.person)
+  data.img = this.config.avatars.person
 
   // Create record
   try {
@@ -43,7 +43,7 @@ PersonModel.prototype.create = async function ({ body, user }) {
       ? await setPersonAvatar(this.record.id, body.img)
       : false
 
-  if (img) await this.safeUpdate(this.cloak({ img: img.url }))
+  if (img) await this.unguardedUpdate(this.cloak({ img: img.url }))
   else await this.read({ id: this.record.id })
 
   return this.setResponse(201, 'created', { person: this.asPerson() })
@@ -67,6 +67,27 @@ PersonModel.prototype.read = async function (where) {
 }
 
 /*
+ * Loads a person from the database based on the where clause you pass it
+ * In addition prepares it for returning the person data
+ *
+ * Stores result in this.record
+ */
+PersonModel.prototype.readForReturn = async function (where, user) {
+  if (user.level < 1) return this.setResponse(403, 'insufficientAccessLevel')
+  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
+
+  await this.read(where)
+  if (this.record.userId !== user.uid && user.level < 5) {
+    return this.setResponse(403, 'insufficientAccessLevel')
+  }
+
+  return this.setResponse(200, false, {
+    result: 'success',
+    person: this.asPerson(),
+  })
+}
+
+/*
  * Helper method to decrypt at-rest data
  */
 PersonModel.prototype.reveal = async function () {
@@ -85,54 +106,13 @@ PersonModel.prototype.reveal = async function () {
  */
 PersonModel.prototype.cloak = function (data) {
   for (const field of this.encryptedFields) {
-    if (typeof data[field] !== 'undefined') data[field] = this.encrypt(data[field])
+    if (typeof data[field] !== 'undefined') {
+      data[field] = this.encrypt(data[field])
+    }
   }
 
   return data
 }
-
-/*
- * Loads a user from the database based on the where clause you pass it
- * In addition prepares it for returning the account data
- *
- * Stores result in this.record
- */
-//UserModel.prototype.readAsAccount = async function (where) {
-//  await this.read(where)
-//
-//  return this.setResponse(200, false, {
-//    result: 'success',
-//    account: this.asAccount(),
-//  })
-//}
-
-/*
- * Finds a user based on one of the accepted unique fields which are:
- *   - lusername (lowercase username)
- *   - ehash
- *   - id
- *
- * Stores result in this.record
- */
-//UserModel.prototype.find = async function (body) {
-//  try {
-//    this.record = await this.prisma.user.findFirst({
-//      where: {
-//        OR: [
-//          { lusername: { equals: clean(body.username) } },
-//          { ehash: { equals: hash(clean(body.username)) } },
-//          { id: { equals: parseInt(body.username) || -1 } },
-//        ],
-//      },
-//    })
-//  } catch (err) {
-//    log.warn({ err, body }, `Error while trying to find user: ${body.username}`)
-//  }
-//
-//  this.reveal()
-//
-//  return this.setExists()
-//}
 
 /*
  * Checks this.record and sets a boolean to indicate whether
@@ -150,7 +130,7 @@ PersonModel.prototype.setExists = function () {
  * Updates the person data - Used when we create the data ourselves
  * so we know it's safe
  */
-PersonModel.prototype.safeUpdate = async function (data) {
+PersonModel.prototype.unguardedUpdate = async function (data) {
   try {
     this.record = await this.prisma.person.update({
       where: { id: this.record.id },
@@ -170,14 +150,14 @@ PersonModel.prototype.safeUpdate = async function (data) {
  * Updates the person data - Used when we pass through user-provided data
  * so we can't be certain it's safe
  */
-PersonModel.prototype.unsafeUpdate = async function ({ params, body, user }) {
+PersonModel.prototype.guardedUpdate = async function ({ params, body, user }) {
   if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
   await this.read({ id: parseInt(params.id) })
-  if (user.uid !== this.record.userId) return this.setResponse(403, 'accessDenied')
+  if (this.record.userId !== user.uid && user.level < 8) {
+    return this.setResponse(403, 'insufficientAccessLevel')
+  }
   const data = {}
-  /*
-  img       String?
-  */
   // Imperial
   if (body.imperial === true || body.imperial === false) data.imperial = body.imperial
   // Name
@@ -189,11 +169,15 @@ PersonModel.prototype.unsafeUpdate = async function ({ params, body, user }) {
   // Measurements
   const measies = {}
   if (typeof body.measies === 'object') {
+    const remove = []
     for (const [key, val] of Object.entries(body.measies)) {
-      if (this.config.measies.includes(key) && typeof val === 'number' && val > 0)
-        measies[key] = val
+      if (this.config.measies.includes(key)) {
+        if (val === null) remove.push(key)
+        else if (typeof val == 'number' && val > 0) measies[key] = val
+      }
     }
     data.measies = { ...this.clear.measies, ...measies }
+    for (const key of remove) delete data.measies[key]
   }
 
   // Image (img)
@@ -203,9 +187,37 @@ PersonModel.prototype.unsafeUpdate = async function ({ params, body, user }) {
   }
 
   // Now update the record
-  await this.safeUpdate(this.cloak(data))
+  await this.unguardedUpdate(this.cloak(data))
 
   return this.setResponse(200, false, { person: this.asPerson() })
+}
+
+/*
+ * Removes the person - No questions asked
+ */
+PersonModel.prototype.unguardedDelete = async function () {
+  await this.prisma.person.delete({ here: { id: this.record.id } })
+  this.record = null
+  this.clear = null
+
+  return this.setExists()
+}
+
+/*
+ * Removes the person - Checks permissions
+ */
+PersonModel.prototype.guardedDelete = async function ({ params, body, user }) {
+  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
+
+  await this.read({ id: parseInt(params.id) })
+  if (this.record.userId !== user.uid && user.level < 8) {
+    return this.setResponse(403, 'insufficientAccessLevel')
+  }
+
+  await this.unguardedDelete()
+
+  return this.setResponse(204, false)
 }
 
 /*

@@ -30,6 +30,10 @@ export const personTests = async (chai, config, expect, store) => {
     jwt: {},
     key: {},
   }
+  store.altperson = {
+    jwt: {},
+    key: {},
+  }
 
   for (const auth of ['jwt', 'key']) {
     describe(`${store.icon('person', auth)} Person tests (${auth})`, () => {
@@ -146,13 +150,169 @@ export const personTests = async (chai, config, expect, store) => {
             })
         })
       }
-    })
 
-    // TODO:
-    // - Add non-existing measurement
-    // - Clear measurement
-    // - List/get person
-    // - Clone person
-    // - Clone person accross accounts of they are public
+      it(`${store.icon(
+        'person',
+        auth
+      )} Should not set an non-existing measurement (${auth})`, (done) => {
+        chai
+          .request(config.api)
+          .put(`/people/${store.person[auth].id}/${auth}`)
+          .set(
+            'Authorization',
+            auth === 'jwt'
+              ? 'Bearer ' + store.account.token
+              : 'Basic ' +
+                  new Buffer(`${store.account.apikey.key}:${store.account.apikey.secret}`).toString(
+                    'base64'
+                  )
+          )
+          .send({
+            measies: {
+              ankle: 320,
+              potatoe: 12,
+            },
+          })
+          .end((err, res) => {
+            expect(err === null).to.equal(true)
+            expect(res.status).to.equal(200)
+            expect(res.body.result).to.equal(`success`)
+            expect(res.body.person.measies.ankle).to.equal(320)
+            expect(typeof res.body.person.measies.potatoe).to.equal('undefined')
+            done()
+          })
+      })
+
+      it(`${store.icon('person', auth)} Should clear a measurement (${auth})`, (done) => {
+        chai
+          .request(config.api)
+          .put(`/people/${store.person[auth].id}/${auth}`)
+          .set(
+            'Authorization',
+            auth === 'jwt'
+              ? 'Bearer ' + store.account.token
+              : 'Basic ' +
+                  new Buffer(`${store.account.apikey.key}:${store.account.apikey.secret}`).toString(
+                    'base64'
+                  )
+          )
+          .send({
+            measies: {
+              chest: null,
+            },
+          })
+          .end((err, res) => {
+            expect(err === null).to.equal(true)
+            expect(res.status).to.equal(200)
+            expect(res.body.result).to.equal(`success`)
+            expect(typeof res.body.person.measies.chest).to.equal('undefined')
+            done()
+          })
+      })
+
+      it(`${store.icon('person', auth)} Should read a person (${auth})`, (done) => {
+        chai
+          .request(config.api)
+          .get(`/people/${store.person[auth].id}/${auth}`)
+          .set(
+            'Authorization',
+            auth === 'jwt'
+              ? 'Bearer ' + store.account.token
+              : 'Basic ' +
+                  new Buffer(`${store.account.apikey.key}:${store.account.apikey.secret}`).toString(
+                    'base64'
+                  )
+          )
+          .end((err, res) => {
+            expect(err === null).to.equal(true)
+            expect(res.status).to.equal(200)
+            expect(res.body.result).to.equal(`success`)
+            expect(typeof res.body.person.measies).to.equal('object')
+            done()
+          })
+      })
+
+      it(`${store.icon(
+        'person',
+        auth
+      )} Should not allow reading another user's person (${auth})`, (done) => {
+        chai
+          .request(config.api)
+          .get(`/people/${store.person[auth].id}/${auth}`)
+          .set(
+            'Authorization',
+            auth === 'jwt'
+              ? 'Bearer ' + store.altaccount.token
+              : 'Basic ' +
+                  new Buffer(
+                    `${store.altaccount.apikey.key}:${store.altaccount.apikey.secret}`
+                  ).toString('base64')
+          )
+          .end((err, res) => {
+            expect(err === null).to.equal(true)
+            expect(res.status).to.equal(403)
+            expect(res.body.result).to.equal(`error`)
+            expect(res.body.error).to.equal(`insufficientAccessLevel`)
+            done()
+          })
+      })
+
+      it(`${store.icon(
+        'person',
+        auth
+      )} Should not allow updating another user's person (${auth})`, (done) => {
+        chai
+          .request(config.api)
+          .put(`/people/${store.person[auth].id}/${auth}`)
+          .set(
+            'Authorization',
+            auth === 'jwt'
+              ? 'Bearer ' + store.altaccount.token
+              : 'Basic ' +
+                  new Buffer(
+                    `${store.altaccount.apikey.key}:${store.altaccount.apikey.secret}`
+                  ).toString('base64')
+          )
+          .send({
+            bio: 'I have been taken over',
+          })
+          .end((err, res) => {
+            expect(err === null).to.equal(true)
+            expect(res.status).to.equal(403)
+            expect(res.body.result).to.equal(`error`)
+            expect(res.body.error).to.equal(`insufficientAccessLevel`)
+            done()
+          })
+      })
+
+      it(`${store.icon(
+        'person',
+        auth
+      )} Should not allow removing another user's person (${auth})`, (done) => {
+        chai
+          .request(config.api)
+          .delete(`/people/${store.person[auth].id}/${auth}`)
+          .set(
+            'Authorization',
+            auth === 'jwt'
+              ? 'Bearer ' + store.altaccount.token
+              : 'Basic ' +
+                  new Buffer(
+                    `${store.altaccount.apikey.key}:${store.altaccount.apikey.secret}`
+                  ).toString('base64')
+          )
+          .end((err, res) => {
+            expect(err === null).to.equal(true)
+            expect(res.status).to.equal(403)
+            expect(res.body.result).to.equal(`error`)
+            expect(res.body.error).to.equal(`insufficientAccessLevel`)
+            done()
+          })
+      })
+
+      // TODO:
+      // - Clone person
+      // - Clone person accross accounts of they are public
+    })
   }
 }

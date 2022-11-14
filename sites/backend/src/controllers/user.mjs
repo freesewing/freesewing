@@ -48,7 +48,7 @@ UserController.prototype.login = async function (req, res, tools) {
  */
 UserController.prototype.whoami = async (req, res, tools) => {
   const User = new UserModel(tools)
-  await User.readAsAccount({ id: req.user.uid })
+  await User.readForReturn({ id: req.user.uid })
 
   return User.sendResponse(res)
 }
@@ -61,7 +61,7 @@ UserController.prototype.whoami = async (req, res, tools) => {
 UserController.prototype.update = async (req, res, tools) => {
   const User = new UserModel(tools)
   await User.read({ id: req.user.uid })
-  await User.unsafeUpdate(req.body)
+  await User.guardedUpdate(req.body, req.user)
 
   return User.sendResponse(res)
 }
