@@ -140,11 +140,7 @@ Pattern.prototype.createPartForSet = function (partName, set = 0) {
   if (this.__needs(partName, set)) {
     // Draft part
     const result = this.draftPartForSet(partName, set)
-    if (typeof result === 'undefined') {
-      this.setStores[set].log.error(
-        `Result of drafting part ${partName} was undefined. Did you forget to return the part?`
-      )
-    } else this.parts[set][partName] = result
+    if (typeof result !== 'undefined') this.parts[set][partName] = result
     // FIXME: THis won't work not that this is immutable
     // But is it still needed?
     // this.parts[set][partName].hidden === true ? true : !this.__wants(partName, set)
@@ -163,6 +159,11 @@ Pattern.prototype.draftPartForSet = function (partName, set) {
       this.__runHooks('prePartDraft')
       const result = this.__designParts[partName].draft(this.parts[set][partName].shorthand())
       this.__runHooks('postPartDraft')
+      if (typeof result === 'undefined') {
+        this.setStores[set].log.error(
+          `Result of drafting part ${partName} was undefined. Did you forget to return the part?`
+        )
+      }
       return result
     } catch (err) {
       this.setStores[set].log.error([`Unable to draft part \`${partName}\` (set ${set})`, err])
