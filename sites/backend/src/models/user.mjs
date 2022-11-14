@@ -328,6 +328,8 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
   if (typeof body.bio === 'string') data.bio = body.bio
   // Consent
   if ([0, 1, 2, 3].includes(body.consent)) data.consent = body.consent
+  // Consent
+  if ([1, 2, 3, 4, 5].includes(body.control)) data.control = body.control
   // Github
   if (typeof body.github === 'string') data.github = body.github.split('@').pop()
   // Imperial
@@ -426,6 +428,7 @@ UserModel.prototype.asAccount = function () {
     id: this.record.id,
     bio: this.clear.bio,
     consent: this.record.consent,
+    control: this.record.control,
     createdAt: this.record.createdAt,
     data: this.clear.data,
     email: this.clear.email,

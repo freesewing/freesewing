@@ -311,31 +311,28 @@ export const personTests = async (chai, config, expect, store) => {
           })
       })
 
-      //it(`${store.icon(
-      //  'person',
-      //  auth
-      //)} Should clone a person (${auth})`, (done) => {
-      //  chai
-      //    .request(config.api)
-      //    .post(`/people/${store.person[auth].id}/clone/${auth}`)
-      //    .set(
-      //      'Authorization',
-      //      auth === 'jwt'
-      //        ? 'Bearer ' + store.account.token
-      //        : 'Basic ' +
-      //            new Buffer(
-      //              `${store.account.apikey.key}:${store.account.apikey.secret}`
-      //            ).toString('base64')
-      //    )
-      //    .end((err, res) => {
-      //      expect(err === null).to.equal(true)
-      //      expect(res.status).to.equal(200)
-      //      expect(res.body.result).to.equal(`success`)
-      //      expect(typeof res.body.error).to.equal(`undefined`)
-      //      expect(typeof res.body.person.id).to.equal(`number`)
-      //      done()
-      //    })
-      //})
+      it(`${store.icon('person', auth)} Should clone a person (${auth})`, (done) => {
+        chai
+          .request(config.api)
+          .post(`/people/${store.person[auth].id}/clone/${auth}`)
+          .set(
+            'Authorization',
+            auth === 'jwt'
+              ? 'Bearer ' + store.account.token
+              : 'Basic ' +
+                  new Buffer(`${store.account.apikey.key}:${store.account.apikey.secret}`).toString(
+                    'base64'
+                  )
+          )
+          .end((err, res) => {
+            expect(err === null).to.equal(true)
+            expect(res.status).to.equal(200)
+            expect(res.body.result).to.equal(`success`)
+            expect(typeof res.body.error).to.equal(`undefined`)
+            expect(typeof res.body.person.id).to.equal(`number`)
+            done()
+          })
+      })
 
       it(`${store.icon(
         'person',

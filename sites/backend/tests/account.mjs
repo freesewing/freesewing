@@ -5,6 +5,7 @@ export const accountTests = async (chai, config, expect, store) => {
     jwt: {
       bio: "I know it sounds funny but I just can't stand the pain",
       consent: 1,
+      control: 4,
       github: 'sorchanidhubhghaill',
       imperial: true,
       language: 'es',
@@ -13,6 +14,7 @@ export const accountTests = async (chai, config, expect, store) => {
     key: {
       bio: "It's a long way to the top, if you wanna rock & roll",
       consent: 2,
+      control: 3,
       github: 'joostdecock',
       imperial: true,
       language: 'de',

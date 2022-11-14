@@ -43,6 +43,7 @@ model User {
   bio           String    @default("")
   confirmations Confirmation[]
   consent       Int       @default(0)
+  control       Int       @default(1)
   createdAt     DateTime  @default(now())
   ehash         String    @unique
   email         String
@@ -69,10 +70,12 @@ model User {
 model Pattern {
   id        Int      @id @default(autoincrement())
   createdAt DateTime @default(now())
-  data      String?
+  data      String
+  design    String
   img       String?
   person    Person?  @relation(fields: [personId], references: [id])
   personId  Int?
+  notes     String
   user      User     @relation(fields: [userId], references: [id])
   userId    Int
   updatedAt DateTime @updatedAt
