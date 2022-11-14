@@ -27,7 +27,7 @@ ApikeyController.prototype.create = async (req, res, tools) => {
  */
 ApikeyController.prototype.read = async (req, res, tools) => {
   const Apikey = new ApikeyModel(tools)
-  await Apikey.readIfAllowed({ id: req.params.id }, req.user)
+  await Apikey.guardedRead(req)
 
   return Apikey.sendResponse(res)
 }
@@ -71,7 +71,7 @@ ApikeyController.prototype.whoami = async (req, res, tools) => {
  */
 ApikeyController.prototype.delete = async (req, res, tools) => {
   const Apikey = new ApikeyModel(tools)
-  await Apikey.removeIfAllowed({ id: req.params.id }, req.user)
+  await Apikey.guardedDelete(req)
 
   return Apikey.sendResponse(res)
 }
