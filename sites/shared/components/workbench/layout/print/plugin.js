@@ -168,10 +168,10 @@ const basePlugin = ({
       const [h, w] = so.size
       const cols = Math.ceil(so.width / w)
       const rows = Math.ceil(so.height / h)
-      const { points, Point, paths, Path, macro } = shorthand
+      const { points, Point, paths, Path, part, macro, store } = shorthand
       let count = 0
       let withContent = {}
-      shorthand.part.topLeft = so.layout.topLeft || { x: 0, y: 0 }
+      part.topLeft = so.layout.topLeft || { x: 0, y: 0 }
 
       // get the layout from the pattern
       const { layout } = so
@@ -212,9 +212,9 @@ const basePlugin = ({
 
           if (col === cols - 1 && row === rows - 1) {
             const br = points[`${pageName}-br`]
-            shorthand.part.width = br.x
-            shorthand.part.height = br.y
-            shorthand.part.bottomRight = { x: br.x, y: br.y }
+            part.width = br.x
+            part.height = br.y
+            part.bottomRight = { x: br.x, y: br.y }
           }
 
           if (!printStyle) {
@@ -227,14 +227,14 @@ const basePlugin = ({
           } else {
             paths[pageName].attr('class', 'interfacing stroke-xs')
             // add markers and rulers
-            shorthand.macro('addPageMarkers', { row, col, pageName, withContent }, shorthand)
-            shorthand.macro('addRuler', { xAxis: true, pageName }, shorthand)
-            shorthand.macro('addRuler', { xAxis: false, pageName }, shorthand)
+            macro('addPageMarkers', { row, col, pageName, withContent }, shorthand)
+            macro('addRuler', { xAxis: true, pageName }, shorthand)
+            macro('addRuler', { xAxis: false, pageName }, shorthand)
           }
         }
       }
       // Store page count in part
-      shorthand.store.set(partName, { cols, rows, count, withContent, width: w, height: h })
+      store.set(partName, { cols, rows, count, withContent, width: w, height: h })
     },
     /** add a ruler to the top left corner of the page */
     addRuler({ xAxis, pageName }, shorthand) {

@@ -1,9 +1,6 @@
 import { useRef } from 'react'
-import Svg from '../../draft/svg'
-import Defs from '../../draft/defs'
 import Stack from './part'
 import SvgWrapper from '../../draft/svg-wrapper'
-import { getProps } from '../../draft/utils'
 import { PartInner } from '../../draft/part'
 
 const Draft = (props) => {
