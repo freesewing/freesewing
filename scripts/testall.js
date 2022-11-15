@@ -19,7 +19,7 @@ spawn(
     '--no-bail',
     'testci',
     '--stream',
-    '--parallel',
+    // '--parallel',
     '--loglevel',
     'error',
     '--',
