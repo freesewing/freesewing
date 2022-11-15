@@ -4,7 +4,7 @@ import chai from 'chai'
 import { timingPlugin } from '@freesewing/plugin-timing'
 
 const expect = chai.expect
-const ciTimeout = 60000
+const ciTimeout = 10000
 
 /*
  * This runs unit tests for pattern drafting
