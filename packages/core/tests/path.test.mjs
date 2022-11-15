@@ -1,5 +1,5 @@
 import chai from 'chai'
-import { round, Path, Point, Design } from '../src/index.mjs'
+import { round, Path, Point } from '../src/index.mjs'
 import { pathsProxy } from '../src/path.mjs'
 
 const expect = chai.expect
@@ -48,10 +48,9 @@ describe('Path', () => {
       points.cp2 = new Point(60, 30)
       points.to = new Point(90, 20)
 
-      let invalid = false
       const messages = []
       const log = { warning: (msg) => messages.push(msg) }
-      const test = new Path()
+      new Path()
         .__withLog(log)
         .move(points.from)
         .curve(points.cp1, points.cp2, points.to)
@@ -62,12 +61,12 @@ describe('Path', () => {
     })
 
     it('Should log a warning when passing a non-Point to smurve_()', () => {
-      let invalid = false
       const messages = []
       const log = { warning: (msg) => messages.push(msg) }
       try {
-        const test = new Path().__withLog(log).smurve_('hi')
-      } catch {
+        new Path().__withLog(log).smurve_('hi')
+      } catch (e) {
+        expect('' + e).to.contain("TypeError: Cannot read properties of undefined (reading 'cp2')")
       } finally {
         expect(messages.length).to.equal(1)
         expect(messages[0]).to.equal('Called `Path.smurve_(to)` but `to` is not a `Point` object')
@@ -76,7 +75,6 @@ describe('Path', () => {
   })
 
   it('Should log a warning when passing a non-Path to the paths proxy', () => {
-    let invalid = false
     const messages = []
     const log = { warning: (msg) => messages.push(msg) }
     const pathsObj = {}
@@ -949,7 +947,7 @@ describe('Path', () => {
     const pointA = new Point(0, 0).__withLog(pointLog)
     const pointB = new Point(0, 40).__withLog(pointLog)
     const a = new Path().__withLog(log).move(pointA).line(pointB)
-    const b = a.offset()
+    a.offset()
     expect(invalid).to.equal(true)
   })
 
@@ -964,7 +962,8 @@ describe('Path', () => {
 
     try {
       line.join()
-    } catch {
+    } catch (e) {
+      expect('' + e).to.contain("TypeError: Cannot read properties of undefined (reading 'ops')")
     } finally {
       expect(invalid).to.equal(true)
     }
@@ -1003,11 +1002,7 @@ describe('Path', () => {
   it('Should log an error when calling shiftFractionalong but fraction is not a number', () => {
     let invalid = false
     const log = { error: () => (invalid = true) }
-    const a = new Path()
-      .__withLog(log)
-      .move(new Point(0, 0))
-      .line(new Point(0, 40))
-      .shiftFractionAlong()
+    new Path().__withLog(log).move(new Point(0, 0)).line(new Point(0, 40)).shiftFractionAlong()
     expect(invalid).to.equal(true)
   })
 
