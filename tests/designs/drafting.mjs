@@ -20,8 +20,7 @@ export const testPatternDrafting = (Pattern, log = false) => {
   // Helper method to try/catch pattern drafting
   const doesItDraftAndRender = (pattern, log = false) => {
     try {
-      pattern.draft()
-      // .render()
+      pattern.draft().render()
       if (log) {
         console.log(pattern.store.logs)
         console.log(pattern.setStores[0].logs)
