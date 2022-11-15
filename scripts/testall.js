@@ -19,14 +19,13 @@ spawn(
     '--no-bail',
     'testci',
     '--stream',
-    // '--parallel',
+    '--parallel',
     '--loglevel',
     'error',
     '--',
     '--file',
     `${collectorScript}`,
     '--no-warnings',
-    '--timeout=15000',
   ],
   { stdio: 'inherit' }
 ).on('exit', function (code) {
