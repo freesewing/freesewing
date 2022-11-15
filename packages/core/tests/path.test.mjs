@@ -1009,9 +1009,17 @@ describe('Path', () => {
   it('Should log an error when splitting a path on a non-point', () => {
     let invalid = false
     const log = { error: () => (invalid = true) }
+    const pointLog = { warning: () => {} }
     try {
-      const a = new Path().__withLog(log).move(new Point(0, 0)).line(new Point(0, 40)).split()
-    } catch {
+      new Path()
+        .__withLog(log)
+        .move(new Point(0, 0).__withLog(pointLog))
+        .line(new Point(0, 40).__withLog(pointLog))
+        .split()
+    } catch (e) {
+      expect(e.toString()).to.include(
+        "TypeError: Cannot read properties of undefined (reading '__check')"
+      )
     } finally {
       expect(invalid).to.equal(true)
     }
