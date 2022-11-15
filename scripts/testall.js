@@ -26,7 +26,7 @@ spawn(
     '--file',
     `${collectorScript}`,
     '--no-warnings',
-    '--timeout=10000',
+    '--timeout=15000',
   ],
   { stdio: 'inherit' }
 ).on('exit', function (code) {
