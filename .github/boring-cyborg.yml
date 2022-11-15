@@ -2,7 +2,6 @@
 labelPRBasedOnFilePath:
   # "label": [ folder or subfolders ]
   ":package: components": [ packages/components/* ]
-  ":package: config-helpers": [ packages/config-helpers/* ]
   ":package: core": [ packages/core/* ]
   ":package: create-freesewing-pattern": [ packages/create-freesewing-pattern/* ]
   ":package: css-theme": [ packages/css-theme/* ]
@@ -15,6 +14,7 @@ labelPRBasedOnFilePath:
   ":package: prettier-config": [ packages/prettier-config/* ]
   ":package: rehype-jargon": [ packages/rehype-jargon/* ]
   ":package: remark-jargon": [ packages/remark-jargon/* ]
+  ":package: snapseries": [ packages/snapseries/* ]
   ":package: utils": [ packages/utils/* ]
   ":electric_plug: plugin-banner": [ plugins/plugin-banner/* ]
   ":electric_plug: plugin-bartack": [ plugins/plugin-bartack/* ]
