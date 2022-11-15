@@ -27,7 +27,7 @@ spawn(
     `${collectorScript}`,
     '--no-warnings',
     '--timeout',
-    '5000',
+    '15000',
   ],
   { stdio: 'inherit' }
 ).on('exit', function (code) {
