@@ -17,7 +17,7 @@ spawn(
   [
     'run',
     '--no-bail',
-    'testci',
+    'test',
     '--stream',
     '--parallel',
     '--loglevel',
@@ -25,7 +25,7 @@ spawn(
     '--',
     '--file',
     `${collectorScript}`,
-    '--trace-warnings',
+    '--no-warnings',
     '--timeout=15000',
   ],
   { stdio: 'inherit' }
