@@ -155,7 +155,7 @@ describe('Utils', () => {
   })
 
   describe('curvesIntersect', function () {
-    this.timeout(15000)
+    this.timeout(20000)
     it('Should find 9 intersections between two curves', () => {
       let A = new Point(10, 10)
       let Acp = new Point(310, 40)
