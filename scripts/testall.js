@@ -20,13 +20,13 @@ spawn(
     'testci',
     '--stream',
     '--parallel',
-    // '--loglevel',
-    // 'error',
+    '--loglevel',
+    'error',
     '--',
     '--file',
     `${collectorScript}`,
-    // '--no-warnings',
-    '--timeout=10000',
+    '--no-warnings',
+    '--timeout=15000',
   ],
   { stdio: 'inherit' }
 ).on('exit', function (code) {
