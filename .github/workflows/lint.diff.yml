@@ -19,15 +19,15 @@ jobs:
 
     steps:
       - name: Fetch PR base ref
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: ${{ github.base_ref }}
       - name: Checkout PR merge ref
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: ${{ github.ref }}
       - name: Setup Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install dependencies
