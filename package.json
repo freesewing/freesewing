@@ -26,7 +26,7 @@
     "buildall": "lerna run cibuild_step0 && lerna run cibuild_step1 && lerna run cibuild_step2 && lerna run cibuild_step3 && lerna run cibuild_step4 && lerna run cibuild_step5 && lerna run cibuild_step6 && lerna run cibuild_step7",
     "build": "yarn buildall",
     "wbuild": "yarn wbuildall",
-    "testall": "node scripts/testall.js",
+    "testall": "node --trace-warnings scripts/testall.js",
     "lint": "lerna run lint -- ",
     "qa": "yarn qa:prettier && yarn qa:lint",
     "qa:prettier": "npx prettier",

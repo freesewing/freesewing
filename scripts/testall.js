@@ -25,7 +25,7 @@ spawn(
     '--',
     '--file',
     `${collectorScript}`,
-    '--no-warnings',
+    '--trace-warnings',
     '--timeout=15000',
   ],
   { stdio: 'inherit' }
