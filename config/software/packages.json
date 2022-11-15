@@ -1,5 +1,4 @@
 {
-  "snapseries": "A FreeSewing package to facilitate snapped percentage options in designs",
   "core": "A library for creating made-to-measure sewing patterns",
   "i18n": "Translations for the FreeSewing project",
   "models": "Body measurements data for a range of default sizes",
