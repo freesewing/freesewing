@@ -132,26 +132,30 @@ describe('Point', () => {
     expect(round(ss.shiftTowards(se, 200).y)).to.equal(-18.42)
   })
 
-  it('Should shift a point a fraction towards another', () => {
-    let origin = new Point(0, 0)
-    let n = new Point(0, -10)
-    let e = new Point(10, 0)
-    let s = new Point(0, 10)
-    let w = new Point(-10, 0)
-    let sn = origin.shiftFractionTowards(n, 1.5)
-    let se = origin.shiftFractionTowards(e, 1.5)
-    let ss = origin.shiftFractionTowards(s, 0.5)
-    let sw = origin.shiftFractionTowards(w, 2.5)
-    expect(round(sn.x)).to.equal(0)
-    expect(round(sn.y)).to.equal(-15)
-    expect(round(se.x)).to.equal(15)
-    expect(round(se.y)).to.equal(0)
-    expect(round(ss.x)).to.equal(0)
-    expect(round(ss.y)).to.equal(5)
-    expect(round(sw.x)).to.equal(-25)
-    expect(round(sw.y)).to.equal(0)
-    expect(round(sw.shiftFractionTowards(sn, 100).x)).to.equal(2475)
-    expect(round(ss.shiftFractionTowards(se, 200).y)).to.equal(-995)
+  describe('shiftFractionTowards', () => {
+    it('Should shift a point a fraction towards another', () => {
+      let origin = new Point(0, 0)
+      let s = new Point(0, 10)
+      let ss = origin.shiftFractionTowards(s, 0.5)
+      expect(round(ss.x)).to.equal(0)
+      expect(round(ss.y)).to.equal(5)
+    })
+
+    it('Should shift a point a fraction beyond another if the fraction is > 1', () => {
+      let origin = new Point(0, 0)
+      let n = new Point(0, -10)
+      let sn = origin.shiftFractionTowards(n, 1.5)
+      expect(round(sn.x)).to.equal(0)
+      expect(round(sn.y)).to.equal(-15)
+    })
+
+    it('Should shift a point a fraction away from another if the fraction is < 0', () => {
+      let origin = new Point(0, 0)
+      let n = new Point(0, -10)
+      let sn = origin.shiftFractionTowards(n, -0.5)
+      expect(round(sn.x)).to.equal(0)
+      expect(round(sn.y)).to.equal(5)
+    })
   })
 
   it('Should shift a point beyond another', () => {
