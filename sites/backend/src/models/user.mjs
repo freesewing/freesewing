@@ -223,9 +223,9 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
  * Login based on username + password
  */
 UserModel.prototype.passwordLogin = async function (req) {
-  if (Object.keys(req.body) < 1) return this.setReponse(400, 'postBodyMissing')
-  if (!req.body.username) return this.setReponse(400, 'usernameMissing')
-  if (!req.body.password) return this.setReponse(400, 'passwordMissing')
+  if (Object.keys(req.body) < 1) return this.setResponse(400, 'postBodyMissing')
+  if (!req.body.username) return this.setResponse(400, 'usernameMissing')
+  if (!req.body.password) return this.setResponse(400, 'passwordMissing')
 
   await this.find(req.body)
   if (!this.exists) {
@@ -255,7 +255,7 @@ UserModel.prototype.passwordLogin = async function (req) {
  * Confirms a user account
  */
 UserModel.prototype.confirm = async function ({ body, params }) {
-  if (!params.id) return this.setReponse(404, 'missingConfirmationId')
+  if (!params.id) return this.setResponse(404, 'missingConfirmationId')
   if (Object.keys(body) < 1) return this.setResponse(400, 'postBodyMissing')
   if (!body.consent || typeof body.consent !== 'number' || body.consent < 1)
     return this.setResponse(400, 'consentRequired')
