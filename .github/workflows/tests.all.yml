@@ -47,4 +47,4 @@ jobs:
           files: ./packages/core/coverage/lcov.info
           flags: core
           name: codecov-core
-          fail_ci_if_error: true
+          fail_ci_if_error: false
