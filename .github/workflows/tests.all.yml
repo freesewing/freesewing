@@ -34,7 +34,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
       - name: Install dependencies
-        run: npx lerna bootstrap --use-workspaces
+        run: npx lerna bootstrap
         env:
           CI: true
       - name: Build all
