@@ -25,6 +25,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install dependencies
-        run: npm i -g lerna eslint
+        run: npx lerna bootstrap
+        env:
+          CI: true
       - name: Run eslint
         run: npm run lint
