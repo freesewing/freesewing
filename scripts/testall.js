@@ -4,7 +4,7 @@ const spawn = require('child_process').spawn
 
 const projectRoot = path.normalize(path.join(__dirname, '..'))
 const outputLog = path.join(projectRoot, '.test-failures.log')
-const collectorScript = path.join(projectRoot, 'scripts', 'test-failure-collector.js')
+const collectorScript = path.join(projectRoot, 'tests', 'reporters', 'terser.js')
 
 // Start with a fresh output log on each run.
 if (fs.existsSync(outputLog)) {
@@ -21,8 +21,10 @@ spawn(
     '--loglevel',
     'error',
     '--',
-    '--file',
-    `${collectorScript}`,
+    // '--reporter',
+    // 'min'
+    // '--reporter',
+    // `${collectorScript}`,
     '--no-warnings',
   ],
   { stdio: 'inherit' }
