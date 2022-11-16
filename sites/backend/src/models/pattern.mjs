@@ -1,36 +1,63 @@
 import { log } from '../utils/log.mjs'
-import { setPersonAvatar } from '../utils/sanity.mjs'
+import { setPatternAvatar } from '../utils/sanity.mjs'
 
-export function PersonModel(tools) {
+export function PatternModel(tools) {
   this.config = tools.config
   this.prisma = tools.prisma
   this.decrypt = tools.decrypt
   this.encrypt = tools.encrypt
-  this.encryptedFields = ['measies', 'img', 'name', 'notes']
+  this.encryptedFields = ['data', 'img', 'name', 'notes', 'settings']
   this.clear = {} // For holding decrypted data
 
   return this
 }
+/*
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  data      String
+  design    String
+  img       String?
+  person    Person?  @relation(fields: [personId], references: [id])
+  personId  Int?
+  name      String   @default("")
+  notes     String
+  public
+  settings  String
+  user      User     @relation(fields: [userId], references: [id])
+  userId    Int
+  updatedAt DateTime @updatedAt
+  */
 
-PersonModel.prototype.guardedCreate = async function ({ body, user }) {
+PatternModel.prototype.guardedCreate = async function ({ body, user }) {
   if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
-  if (Object.keys(body) < 1) return this.setResponse(400, 'postBodyMissing')
-  if (!body.name || typeof body.name !== 'string') return this.setResponse(400, 'nameMissing')
+  if (Object.keys(body) < 2) return this.setResponse(400, 'postBodyMissing')
+  if (!body.person) return this.setResponse(400, 'personMissing')
+  if (typeof body.person !== 'number') return this.setResponse(400, 'personNotNumeric')
+  if (typeof body.settings !== 'object') return this.setResponse(400, 'settingsNotAnObject')
+  if (body.data && typeof body.data !== 'object') return this.setResponse(400, 'dataNotAnObject')
+  if (!body.design && !body.data?.design) return this.setResponse(400, 'designMissing')
+  if (typeof body.design !== 'string') return this.setResponse(400, 'designNotStringy')
 
   // Prepare data
-  const data = { name: body.name }
+  const data = {
+    design: body.design,
+    personId: body.person,
+    settings: body.settings,
+  }
+  // Data (will be encrypted, so always set _some_ value)
+  if (typeof body.data === 'object') data.data = body.data
+  else data.data = {}
   // Name (will be encrypted, so always set _some_ value)
-  if (typeof body.name === 'string') data.name = body.name
+  if (typeof body.name === 'string' && body.name.length > 0) data.name = body.name
   else data.name = '--'
   // Notes (will be encrypted, so always set _some_ value)
-  if (body.notes || typeof body.notes === 'string') data.notes = body.notes
+  if (typeof body.notes === 'string' && body.notes.length > 0) data.notes = body.notes
   else data.notes = '--'
+  // Public
   if (body.public === true) data.public = true
-  if (body.measies) data.measies = this.sanitizeMeasurements(body.measies)
-  data.imperial = body.imperial === true ? true : false
   data.userId = user.uid
   // Set this one initially as we need the ID to create a custom img via Sanity
-  data.img = this.config.avatars.person
+  data.img = this.config.avatars.pattern
 
   // Create record
   await this.unguardedCreate(data)
@@ -40,36 +67,36 @@ PersonModel.prototype.guardedCreate = async function ({ body, user }) {
     this.config.use.sanity &&
     typeof body.img === 'string' &&
     (!body.unittest || (body.unittest && this.config.use.tests?.sanity))
-      ? await setPersonAvatar(this.record.id, body.img)
+      ? await setPatternAvatar(this.record.id, body.img)
       : false
 
   if (img) await this.unguardedUpdate(this.cloak({ img: img.url }))
   else await this.read({ id: this.record.id })
 
-  return this.setResponse(201, 'created', { person: this.asPerson() })
+  return this.setResponse(201, 'created', { pattern: this.asPattern() })
 }
 
-PersonModel.prototype.unguardedCreate = async function (data) {
+PatternModel.prototype.unguardedCreate = async function (data) {
   try {
-    this.record = await this.prisma.person.create({ data: this.cloak(data) })
+    this.record = await this.prisma.pattern.create({ data: this.cloak(data) })
   } catch (err) {
-    log.warn(err, 'Could not create person')
-    return this.setResponse(500, 'createPersonFailed')
+    log.warn(err, 'Could not create pattern')
+    return this.setResponse(500, 'createPatternFailed')
   }
 
   return this
 }
 
 /*
- * Loads a person from the database based on the where clause you pass it
+ * Loads a pattern from the database based on the where clause you pass it
  *
  * Stores result in this.record
  */
-PersonModel.prototype.read = async function (where) {
+PatternModel.prototype.read = async function (where) {
   try {
-    this.record = await this.prisma.person.findUnique({ where })
+    this.record = await this.prisma.pattern.findUnique({ where })
   } catch (err) {
-    log.warn({ err, where }, 'Could not read person')
+    log.warn({ err, where }, 'Could not read pattern')
   }
 
   this.reveal()
@@ -78,12 +105,12 @@ PersonModel.prototype.read = async function (where) {
 }
 
 /*
- * Loads a person from the database based on the where clause you pass it
- * In addition prepares it for returning the person data
+ * Loads a pattern from the database based on the where clause you pass it
+ * In addition prepares it for returning the pattern data
  *
  * Stores result in this.record
  */
-PersonModel.prototype.guardedRead = async function ({ params, user }) {
+PatternModel.prototype.guardedRead = async function ({ params, user }) {
   if (user.level < 1) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
@@ -94,17 +121,17 @@ PersonModel.prototype.guardedRead = async function ({ params, user }) {
 
   return this.setResponse(200, false, {
     result: 'success',
-    person: this.asPerson(),
+    pattern: this.asPattern(),
   })
 }
 
 /*
- * Clones a person
- * In addition prepares it for returning the person data
+ * Clones a pattern
+ * In addition prepares it for returning the pattern data
  *
  * Stores result in this.record
  */
-PersonModel.prototype.guardedClone = async function ({ params, user }) {
+PatternModel.prototype.guardedClone = async function ({ params, user }) {
   if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
@@ -113,11 +140,11 @@ PersonModel.prototype.guardedClone = async function ({ params, user }) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
 
-  // Clone person
-  const data = this.asPerson()
+  // Clone pattern
+  const data = this.asPattern()
   delete data.id
   data.name += ` (cloned from #${this.record.id})`
-  data.notes += ` (Note: This person was cloned from person #${this.record.id})`
+  data.notes += ` (Note: This pattern was cloned from pattern #${this.record.id})`
   await this.unguardedCreate(data)
 
   // Update unencrypted data
@@ -125,14 +152,14 @@ PersonModel.prototype.guardedClone = async function ({ params, user }) {
 
   return this.setResponse(200, false, {
     result: 'success',
-    person: this.asPerson(),
+    pattern: this.asPattern(),
   })
 }
 
 /*
  * Helper method to decrypt at-rest data
  */
-PersonModel.prototype.reveal = async function () {
+PatternModel.prototype.reveal = async function () {
   this.clear = {}
   if (this.record) {
     for (const field of this.encryptedFields) {
@@ -146,7 +173,7 @@ PersonModel.prototype.reveal = async function () {
 /*
  * Helper method to encrypt at-rest data
  */
-PersonModel.prototype.cloak = function (data) {
+PatternModel.prototype.cloak = function (data) {
   for (const field of this.encryptedFields) {
     if (typeof data[field] !== 'undefined') {
       data[field] = this.encrypt(data[field])
@@ -158,30 +185,30 @@ PersonModel.prototype.cloak = function (data) {
 
 /*
  * Checks this.record and sets a boolean to indicate whether
- * the user exists or not
+ * the pattern exists or not
  *
  * Stores result in this.exists
  */
-PersonModel.prototype.setExists = function () {
+PatternModel.prototype.setExists = function () {
   this.exists = this.record ? true : false
 
   return this
 }
 
 /*
- * Updates the person data - Used when we create the data ourselves
+ * Updates the pattern data - Used when we create the data ourselves
  * so we know it's safe
  */
-PersonModel.prototype.unguardedUpdate = async function (data) {
+PatternModel.prototype.unguardedUpdate = async function (data) {
   try {
-    this.record = await this.prisma.person.update({
+    this.record = await this.prisma.pattern.update({
       where: { id: this.record.id },
       data,
     })
   } catch (err) {
-    log.warn(err, 'Could not update person record')
+    log.warn(err, 'Could not update pattern record')
     process.exit()
-    return this.setResponse(500, 'updatePersonFailed')
+    return this.setResponse(500, 'updatePatternFailed')
   }
   await this.reveal()
 
@@ -189,10 +216,10 @@ PersonModel.prototype.unguardedUpdate = async function (data) {
 }
 
 /*
- * Updates the person data - Used when we pass through user-provided data
+ * Updates the pattern data - Used when we pass through user-provided data
  * so we can't be certain it's safe
  */
-PersonModel.prototype.guardedUpdate = async function ({ params, body, user }) {
+PatternModel.prototype.guardedUpdate = async function ({ params, body, user }) {
   if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
   await this.read({ id: parseInt(params.id) })
@@ -200,45 +227,33 @@ PersonModel.prototype.guardedUpdate = async function ({ params, body, user }) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
   const data = {}
-  // Imperial
-  if (body.imperial === true || body.imperial === false) data.imperial = body.imperial
   // Name
   if (typeof body.name === 'string') data.name = body.name
   // Notes
   if (typeof body.notes === 'string') data.notes = body.notes
   // Public
   if (body.public === true || body.public === false) data.public = body.public
-  // Measurements
-  const measies = {}
-  if (typeof body.measies === 'object') {
-    const remove = []
-    for (const [key, val] of Object.entries(body.measies)) {
-      if (this.config.measies.includes(key)) {
-        if (val === null) remove.push(key)
-        else if (typeof val == 'number' && val > 0) measies[key] = val
-      }
-    }
-    data.measies = { ...this.clear.measies, ...measies }
-    for (const key of remove) delete data.measies[key]
-  }
-
+  // Data
+  if (typeof body.data === 'object') data.data = body.data
+  // Settings
+  if (typeof body.settings === 'object') data.settings = body.settings
   // Image (img)
   if (typeof body.img === 'string') {
-    const img = await setPersonAvatar(params.id, body.img)
+    const img = await setPatternAvatar(params.id, body.img)
     data.img = img.url
   }
 
   // Now update the record
   await this.unguardedUpdate(this.cloak(data))
 
-  return this.setResponse(200, false, { person: this.asPerson() })
+  return this.setResponse(200, false, { pattern: this.asPattern() })
 }
 
 /*
- * Removes the person - No questions asked
+ * Removes the pattern - No questions asked
  */
-PersonModel.prototype.unguardedDelete = async function () {
-  await this.prisma.person.delete({ here: { id: this.record.id } })
+PatternModel.prototype.unguardedDelete = async function () {
+  await this.prisma.pattern.delete({ here: { id: this.record.id } })
   this.record = null
   this.clear = null
 
@@ -246,9 +261,9 @@ PersonModel.prototype.unguardedDelete = async function () {
 }
 
 /*
- * Removes the person - Checks permissions
+ * Removes the pattern - Checks permissions
  */
-PersonModel.prototype.guardedDelete = async function ({ params, body, user }) {
+PatternModel.prototype.guardedDelete = async function ({ params, body, user }) {
   if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
@@ -265,7 +280,7 @@ PersonModel.prototype.guardedDelete = async function ({ params, body, user }) {
 /*
  * Returns record data
  */
-PersonModel.prototype.asPerson = function () {
+PatternModel.prototype.asPattern = function () {
   return {
     ...this.record,
     ...this.clear,
@@ -277,7 +292,7 @@ PersonModel.prototype.asPerson = function () {
  *
  * Will be used by this.sendResponse()
  */
-PersonModel.prototype.setResponse = function (status = 200, error = false, data = {}) {
+PatternModel.prototype.setResponse = function (status = 200, error = false, data = {}) {
   this.response = {
     status,
     body: {
@@ -297,46 +312,6 @@ PersonModel.prototype.setResponse = function (status = 200, error = false, data 
 /*
  * Helper method to send response
  */
-PersonModel.prototype.sendResponse = async function (res) {
+PatternModel.prototype.sendResponse = async function (res) {
   return res.status(this.response.status).send(this.response.body)
-}
-
-/*
- * Update method to determine whether this request is
- * part of a unit test
- */
-//UserModel.prototype.isUnitTest = function (body) {
-//  if (!body.unittest) return false
-//  if (!this.clear.email.split('@').pop() === this.config.tests.domain) return false
-//  if (body.email && !body.email.split('@').pop() === this.config.tests.domain) return false
-//
-//  return true
-//}
-
-/*
- * Helper method to check an account is ok
- */
-//UserModel.prototype.isOk = function () {
-//  if (
-//    this.exists &&
-//    this.record &&
-//    this.record.status > 0 &&
-//    this.record.consent > 0 &&
-//    this.record.role &&
-//    this.record.role !== 'blocked'
-//  )
-//    return true
-//
-//  return false
-//}
-
-/* Helper method to parse user-supplied measurements */
-PersonModel.prototype.sanitizeMeasurements = function (input) {
-  const measies = {}
-  if (typeof input !== 'object') return measies
-  for (const [m, val] of Object.entries(input)) {
-    if (this.config.measies.includes(m) && typeof val === 'number' && val > 0) measies[m] = val
-  }
-
-  return measies
 }

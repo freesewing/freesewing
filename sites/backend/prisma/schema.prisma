@@ -73,9 +73,12 @@ model Pattern {
   data      String
   design    String
   img       String?
+  name      String   @default("")
+  notes     String
   person    Person?  @relation(fields: [personId], references: [id])
   personId  Int?
-  notes     String
+  public    Boolean  @default(false)
+  settings  String
   user      User     @relation(fields: [userId], references: [id])
   userId    Int
   updatedAt DateTime @updatedAt

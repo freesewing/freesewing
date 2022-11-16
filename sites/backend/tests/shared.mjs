@@ -4,12 +4,17 @@ import chai from 'chai'
 import http from 'chai-http'
 import { verifyConfig } from '../src/config.mjs'
 import { randomString } from '../src/utils/crypto.mjs'
+import {
+  cisFemaleAdult34 as her,
+  cisMaleAdult42 as him,
+} from '../../../packages/models/src/index.mjs'
 
 dotenv.config()
 
 const config = verifyConfig(true)
 const expect = chai.expect
 chai.use(http)
+const people = { her, him }
 
 export const setup = async () => {
   // Initial store contents
@@ -21,17 +26,20 @@ export const setup = async () => {
       email: `test_${randomString()}@${config.tests.domain}`,
       language: 'en',
       password: randomString(),
+      people: {},
     },
     altaccount: {
       email: `test_${randomString()}@${config.tests.domain}`,
       language: 'en',
       password: randomString(),
+      people: {},
     },
     icons: {
       user: '🧑 ',
       jwt: '🎫 ',
       key: '🎟️  ',
       person: '🧕 ',
+      pattern: '👕 ',
     },
     randomString,
   }
@@ -63,12 +71,12 @@ export const setup = async () => {
     }
     store[acc].token = result.data.token
     store[acc].username = result.data.account.username
-    store[acc].userid = result.data.account.id
+    store[acc].id = result.data.account.id
 
     // Create API key
     try {
       result = await axios.post(
-        `${store.config.api}/apikey/jwt`,
+        `${store.config.api}/apikeys/jwt`,
         {
           name: 'Test API key',
           level: 4,
@@ -85,6 +93,29 @@ export const setup = async () => {
       process.exit()
     }
     store[acc].apikey = result.data.apikey
+
+    // Create people key
+    for (const name in people) {
+      try {
+        result = await axios.post(
+          `${store.config.api}/people/jwt`,
+          {
+            name: `This is ${name} name`,
+            name: `These are ${name} notes`,
+            measies: people[name],
+          },
+          {
+            headers: {
+              authorization: `Bearer ${store[acc].token}`,
+            },
+          }
+        )
+      } catch (err) {
+        console.log('Failed at API key creation request', err)
+        process.exit()
+      }
+      store[acc].people[name] = result.data.person
+    }
   }
 
   return { chai, config, expect, store }
