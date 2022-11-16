@@ -35,7 +35,7 @@ jobs:
         env:
           CI: true
       - name: Prebuild Packages
-        run: npx lerna prebuild
+        run: npx lerna run prebuild
       - name: Run eslint
         run: |
           changed_files="$(git diff --name-only origin/${{ github.base_ref }})"

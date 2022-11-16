@@ -29,6 +29,6 @@ jobs:
         env:
           CI: true
       - name: Prebuild Packages
-        run: npx lerna prebuild
+        run: npx lerna run prebuild
       - name: Run eslint
         run: npm run lint
