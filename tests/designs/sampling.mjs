@@ -1,5 +1,5 @@
 import { adult, doll, giant } from '@freesewing/models'
-import { getFamily, getShortName } from './config.mjs'
+import { getShortName } from './config.mjs'
 import chai from 'chai'
 
 const expect = chai.expect
@@ -15,7 +15,6 @@ const deprecated = ['theo']
  * @param boolean log: Set to true to log errors
  */
 export const testPatternSampling = (Pattern, log = false) => {
-  const pattern = new Pattern()
   const config = Pattern.patternConfig
   const design = getShortName(Pattern.designConfig.data.name)
   //const parts = pattern.getPartList()

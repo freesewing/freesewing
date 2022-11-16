@@ -13,4 +13,4 @@ testPatternConfig(Jaeger)
 testPatternDrafting(Jaeger, false)
 
 // Test sampling - Change the second parameter to `true` to log errors
-testPatternSampling(Jaeger, true)
+testPatternSampling(Jaeger, false)
