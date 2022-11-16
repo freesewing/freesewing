@@ -28,6 +28,7 @@ class TerseReporter {
       console.log(`FAIL: ${test.fullTitle()}`)
       console.log(err)
 
+      // save for adding to an output file
       failuresPerFile[this.currentTest.file] = failuresPerFile[this.currentTest.file] || []
       failuresPerFile[this.currentTest.file].push(this.currentTest)
     })
@@ -50,7 +51,7 @@ class TerseReporter {
         // Print each failure.
         failures.forEach(function (failure, i) {
           const stack = failure.err.stack.split('\n')
-          writeLine(`${file}:  ${i + 1}\) ${failure.title}:`)
+          writeLine(`${file}:  ${i + 1}) ${failure.title}:`)
           writeLine(`${file}:`)
           writeLine(`${file}:      ${red(stack[0].trim())}`)
           writeLine(`${file}:      ${green('+ expected')} ${red('- actual')}`)
