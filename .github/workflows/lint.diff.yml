@@ -31,11 +31,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install dependencies
-        run: npx lerna bootstrap
-        env:
-          CI: true
-      - name: Build all
-        run: npm run buildall
+        run: npm i -g lerna eslint
       - name: Run eslint
         run: |
           changed_files="$(git diff --name-only origin/${{ github.base_ref }})"
