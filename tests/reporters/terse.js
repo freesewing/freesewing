@@ -1,5 +1,5 @@
 const Mocha = require('mocha')
-const { EVENT_TEST_FAIL, EVENT_TEST_END } = Mocha.Runner.constants
+const { EVENT_TEST_FAIL, EVENT_RUN_END } = Mocha.Runner.constants
 
 const path = require('path')
 const projectRoot = path.normalize(path.join(__dirname, '..'))
@@ -32,7 +32,7 @@ class TerseReporter {
       failuresPerFile[this.currentTest.file].push(this.currentTest)
     })
 
-    runner.on(EVENT_TEST_END, () => {
+    runner.on(EVENT_RUN_END, () => {
       if (Object.keys(failuresPerFile).length === 0) return
 
       const fs = require('fs')
