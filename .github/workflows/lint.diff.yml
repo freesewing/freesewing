@@ -18,10 +18,10 @@ jobs:
         node-version: [16.x]
 
     steps:
-      # - name: Fetch PR base ref
-      #   uses: actions/checkout@v3
-      #   with:
-      #     ref: ${{ github.base_ref }}
+      - name: Fetch PR base ref
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.base_ref }}
       - name: Checkout PR merge ref
         uses: actions/checkout@v3
         with:
