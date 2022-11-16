@@ -28,5 +28,7 @@ jobs:
         run: npx lerna bootstrap
         env:
           CI: true
+      - name: Prebuild Packages
+        run: npx lerna prebuild
       - name: Run eslint
         run: npm run lint
