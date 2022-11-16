@@ -631,7 +631,7 @@ export function __asNumber(value, param, method, log) {
       value = Number(value)
       return value
     } catch {
-      this.log.error(
+      log.error(
         `Called \`${method}(${param})\` but \`${param}\` is not a number nor can it be cast to one`
       )
     }

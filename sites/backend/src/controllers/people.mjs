@@ -1,12 +1,12 @@
 import { PersonModel } from '../models/person.mjs'
 
-export function PersonController() {}
+export function PeopleController() {}
 
 /*
  * Create a person for the authenticated user
  * See: https://freesewing.dev/reference/backend/api
  */
-PersonController.prototype.create = async (req, res, tools) => {
+PeopleController.prototype.create = async (req, res, tools) => {
   const Person = new PersonModel(tools)
   await Person.guardedCreate(req)
 
@@ -17,7 +17,7 @@ PersonController.prototype.create = async (req, res, tools) => {
  * Read a person
  * See: https://freesewing.dev/reference/backend/api
  */
-PersonController.prototype.read = async (req, res, tools) => {
+PeopleController.prototype.read = async (req, res, tools) => {
   const Person = new PersonModel(tools)
   await Person.guardedRead(req)
 
@@ -28,7 +28,7 @@ PersonController.prototype.read = async (req, res, tools) => {
  * Update a person
  * See: https://freesewing.dev/reference/backend/api
  */
-PersonController.prototype.update = async (req, res, tools) => {
+PeopleController.prototype.update = async (req, res, tools) => {
   const Person = new PersonModel(tools)
   await Person.guardedUpdate(req)
 
@@ -39,7 +39,7 @@ PersonController.prototype.update = async (req, res, tools) => {
  * Remove a person
  * See: https://freesewing.dev/reference/backend/api
  */
-PersonController.prototype.delete = async (req, res, tools) => {
+PeopleController.prototype.delete = async (req, res, tools) => {
   const Person = new PersonModel(tools)
   await Person.guardedDelete(req)
 
@@ -50,7 +50,7 @@ PersonController.prototype.delete = async (req, res, tools) => {
  * Clone a person
  * See: https://freesewing.dev/reference/backend/api
  */
-PersonController.prototype.clone = async (req, res, tools) => {
+PeopleController.prototype.clone = async (req, res, tools) => {
   const Person = new PersonModel(tools)
   await Person.guardedClone(req)
 

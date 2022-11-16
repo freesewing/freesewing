@@ -4,7 +4,7 @@ import { log } from '../utils/log.mjs'
 import { ApikeyModel } from '../models/apikey.mjs'
 import { UserModel } from '../models/user.mjs'
 
-export function ApikeyController() {}
+export function ApikeysController() {}
 
 /*
  * Create API key
@@ -12,7 +12,7 @@ export function ApikeyController() {}
  * This is the endpoint that handles creation of API keys/tokens
  * See: https://freesewing.dev/reference/backend/api/apikey
  */
-ApikeyController.prototype.create = async (req, res, tools) => {
+ApikeysController.prototype.create = async (req, res, tools) => {
   const Apikey = new ApikeyModel(tools)
   await Apikey.create(req)
 
@@ -25,7 +25,7 @@ ApikeyController.prototype.create = async (req, res, tools) => {
  * This is the endpoint that handles creation of API keys/tokens
  * See: https://freesewing.dev/reference/backend/api/apikey
  */
-ApikeyController.prototype.read = async (req, res, tools) => {
+ApikeysController.prototype.read = async (req, res, tools) => {
   const Apikey = new ApikeyModel(tools)
   await Apikey.guardedRead(req)
 
@@ -39,7 +39,7 @@ ApikeyController.prototype.read = async (req, res, tools) => {
  * request
  * See: https://freesewing.dev/reference/backend/api/apikey
  */
-ApikeyController.prototype.whoami = async (req, res, tools) => {
+ApikeysController.prototype.whoami = async (req, res, tools) => {
   const User = new UserModel(tools)
   const Apikey = new ApikeyModel(tools)
 
@@ -69,7 +69,7 @@ ApikeyController.prototype.whoami = async (req, res, tools) => {
  * This is the endpoint that handles removal of API keys/tokens
  * See: https://freesewing.dev/reference/backend/api/apikey
  */
-ApikeyController.prototype.delete = async (req, res, tools) => {
+ApikeysController.prototype.delete = async (req, res, tools) => {
   const Apikey = new ApikeyModel(tools)
   await Apikey.guardedDelete(req)
 

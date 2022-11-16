@@ -184,12 +184,12 @@ export const userTests = async (chai, config, expect, store) => {
         })
     })
 
-    step(`${store.icon('user')} Should login with userid and password`, (done) => {
+    step(`${store.icon('user')} Should login with id and password`, (done) => {
       chai
         .request(config.api)
         .post('/login')
         .send({
-          username: store.account.userid,
+          username: store.account.id,
           password: store.account.password,
         })
         .end((err, res) => {

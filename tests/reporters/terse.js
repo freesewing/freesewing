@@ -6,6 +6,7 @@ class TerseReporter {
   constructor(runner) {
     runner.on(EVENT_TEST_FAIL, (test, err) => {
       console.log(` FAIL: ${test.fullTitle()}`)
+      console.log(err)
     })
   }
 }

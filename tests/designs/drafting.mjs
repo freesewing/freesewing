@@ -4,6 +4,7 @@ import chai from 'chai'
 import { timingPlugin } from '@freesewing/plugin-timing'
 
 const expect = chai.expect
+const ciTimeout = 10000
 
 /*
  * This runs unit tests for pattern drafting
@@ -39,7 +40,7 @@ export const testPatternDrafting = (Pattern, log = false) => {
    */
   if (family !== 'utilities') {
     describe('Draft for humans:', function () {
-      this.timeout(5000)
+      this.timeout(ciTimeout)
       for (const type of ['cisFemale', 'cisMale']) {
         describe(type, () => {
           for (const size in adult[type]) {
@@ -62,7 +63,7 @@ export const testPatternDrafting = (Pattern, log = false) => {
     const fams = { doll, giant }
     for (const family of ['doll', 'giant']) {
       describe(`Draft for ${family}:`, function () {
-        this.timeout(5000)
+        this.timeout(ciTimeout)
         for (const type of ['cisFemale', 'cisMale']) {
           describe(type, () => {
             for (const size in fams[family][type]) {
