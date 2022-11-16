@@ -63,7 +63,6 @@ describe('Part', () => {
     const part = {
       name: 'test',
       draft: ({ getId, part }) => {
-        console.log(getId)
         id = getId()
         id = getId()
         id = getId()
