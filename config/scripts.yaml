@@ -20,7 +20,7 @@ _types:
 core:
   report: 'c8 report'
   test: 'c8 mocha tests/*.test.mjs'
-  testci: 'mocha tests/*.test.mjs'
+  testci: 'c8 mocha tests/*.test.mjs'
   prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
   lint: "npx eslint 'src/*.mjs' 'tests/*.mjs'"
   jsdoc: 'jsdoc -c jsdoc.json -r src'
@@ -41,6 +41,7 @@ rehype-highlight-lines:
   build: '!'
   mbuild: '!'
   vbuild: '!'
+  lint: "npx eslint 'src/*.mjs'"
 rehype-jargon:
   lint: "npx eslint 'src/*.mjs'"
 snapseries:
