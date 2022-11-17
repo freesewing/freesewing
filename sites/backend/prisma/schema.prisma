@@ -55,6 +55,8 @@ model User {
   language      String    @default("en")
   lastLogin     DateTime?
   lusername     String    @unique
+  mfaSecret     String    @default("")
+  mfaEnabled    Boolean   @default(false)
   newsletter    Boolean   @default(false)
   password      String
   patron        Int       @default(0)

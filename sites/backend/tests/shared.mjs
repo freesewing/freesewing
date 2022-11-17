@@ -36,6 +36,7 @@ export const setup = async () => {
     },
     icons: {
       user: '🧑 ',
+      mfa: '🔒 ',
       jwt: '🎫 ',
       key: '🎟️  ',
       person: '🧕 ',

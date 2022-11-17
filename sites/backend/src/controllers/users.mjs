@@ -65,3 +65,16 @@ UsersController.prototype.update = async (req, res, tools) => {
 
   return User.sendResponse(res)
 }
+
+/*
+ * Updates the MFA setting of the authenticated user
+ *
+ * See: https://freesewing.dev/reference/backend/api
+ */
+UsersController.prototype.updateMfa = async (req, res, tools) => {
+  const User = new UserModel(tools)
+  await User.guardedRead({ id: req.user.uid }, req)
+  await User.guardedMfaUpdate(req)
+
+  return User.sendResponse(res)
+}

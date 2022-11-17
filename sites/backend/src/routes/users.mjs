@@ -17,7 +17,6 @@ export function usersRoutes(tools) {
   app.post('/login', (req, res) => Users.login(req, res, tools))
 
   // Read current jwt
-
   app.get('/whoami/jwt', passport.authenticate(...jwt), (req, res) => Users.whoami(req, res, tools))
   app.get('/account/jwt', passport.authenticate(...jwt), (req, res) =>
     Users.whoami(req, res, tools)
@@ -34,6 +33,13 @@ export function usersRoutes(tools) {
     Users.update(req, res, tools)
   )
 
+  // Enable MFA (totp)
+  app.post('/account/mfa/jwt', passport.authenticate(...jwt), (req, res) =>
+    Users.updateMfa(req, res, tools)
+  )
+  app.post('/account/mfa/key', passport.authenticate(...bsc), (req, res) =>
+    Users.updateMfa(req, res, tools)
+  )
   /*
 
   // Remove account
