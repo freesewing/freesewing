@@ -132,25 +132,85 @@ export const mfaTests = async (chai, config, expect, store) => {
             done()
           })
       })
+
+      it(`${store.icon('mfa', auth)} Should not login with username/password only`, (done) => {
+        chai
+          .request(config.api)
+          .post('/login')
+          .send({
+            username: secret[auth].username,
+            password: secret[auth].password,
+          })
+          .end((err, res) => {
+            expect(err === null).to.equal(true)
+            expect(res.status).to.equal(403)
+            expect(res.body.result).to.equal('error')
+            expect(res.body.error).to.equal('mfaTokenRequired')
+            done()
+          })
+      })
+
+      it(`${store.icon('mfa')} Should login with username/password/token`, (done) => {
+        chai
+          .request(config.api)
+          .post('/login')
+          .send({
+            username: secret[auth].username,
+            password: secret[auth].password,
+            token: authenticator.generate(secret[auth].mfaSecret),
+          })
+          .end((err, res) => {
+            expect(err === null).to.equal(true)
+            expect(res.status).to.equal(200)
+            expect(res.body.result).to.equal('success')
+            //expect(res.body.account.mfaEnabled).to.equal(true)
+            done()
+          })
+      })
+
+      it(`${store.icon('mfa')} Should not login with a wrong token`, (done) => {
+        chai
+          .request(config.api)
+          .post('/login')
+          .send({
+            username: secret[auth].username,
+            password: secret[auth].password,
+            token: '1234',
+          })
+          .end((err, res) => {
+            expect(err === null).to.equal(true)
+            expect(res.status).to.equal(401)
+            expect(res.body.result).to.equal('error')
+            expect(res.body.error).to.equal('loginFailed')
+            done()
+          })
+      })
+
+      it(`${store.icon('mfa', auth)} Should disable MFA`, (done) => {
+        chai
+          .request(config.api)
+          .post(`/account/mfa/${auth}`)
+          .set(
+            'Authorization',
+            auth === 'jwt'
+              ? 'Bearer ' + secret[auth].token
+              : 'Basic ' +
+                  new Buffer(`${secret[auth].apikey.key}:${secret[auth].apikey.secret}`).toString(
+                    'base64'
+                  )
+          )
+          .send({
+            mfa: false,
+            password: secret[auth].password,
+            token: authenticator.generate(secret[auth].mfaSecret),
+          })
+          .end((err, res) => {
+            expect(err === null).to.equal(true)
+            expect(res.status).to.equal(200)
+            expect(res.body.result).to.equal(`success`)
+            done()
+          })
+      })
     })
   }
-
-  describe(`${store.icon('mfa')} Multi-Factor Authentication (MFA) login flow`, () => {
-    it(`${store.icon('mfa')} Should not login with username/password only`, (done) => {
-      chai
-        .request(config.api)
-        .post('/login')
-        .send({
-          username: store.account.username,
-          password: store.account.password,
-        })
-        .end((err, res) => {
-          expect(err === null).to.equal(true)
-          expect(res.status).to.equal(200)
-          expect(res.body.result).to.equal('success')
-          expect(res.body.note).to.equal('mfaTokenRequired')
-          done()
-        })
-    })
-  })
 }

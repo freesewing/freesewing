@@ -245,7 +245,7 @@ UserModel.prototype.passwordLogin = async function (req) {
 
   // Check for MFA
   if (this.record.mfaEnabled) {
-    if (!req.body.token) return this.setResponse(200, false, { note: 'mfaTokenRequired' })
+    if (!req.body.token) return this.setResponse(403, 'mfaTokenRequired')
     else if (!this.mfa.verify(req.body.token, this.clear.mfaSecret)) {
       return this.setResponse(401, 'loginFailed')
     }
@@ -434,7 +434,7 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
  * Enables/Disables MFA on the account - Used when we pass through
  * user-provided data so we can't be certain it's safe
  */
-UserModel.prototype.guardedMfaUpdate = async function ({ body, user }) {
+UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
   if (user.level < 4) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
   if (body.mfa === true && this.record.mfaEnabled === true)
@@ -442,6 +442,29 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user }) {
 
   // Disable
   if (body.mfa === false) {
+    if (!body.token) return this.setResponse(400, 'mfaTokenRequired')
+    if (!body.password) return this.setResponse(400, 'passwordRequired')
+    // Check password
+    const [valid] = verifyPassword(body.password, this.record.password)
+    if (!valid) {
+      console.log('password check failed')
+      log.warn(`Wrong password for existing user while disabling MFA: ${user.uid} from ${ip}`)
+      return this.setResponse(401, 'authenticationFailed')
+    }
+    // Check MFA token
+    if (this.mfa.verify(body.token, this.clear.mfaSecret)) {
+      // Looks good. Disable MFA
+      try {
+        await this.unguardedUpdate({ mfaEnabled: false })
+      } catch (err) {
+        log.warn(err, 'Could not disable MFA after token check')
+        return this.setResponse(500, 'mfaDeactivationFailed')
+      }
+      return this.setResponse(200, false, {})
+    } else {
+      console.log('token check failed')
+      return this.setResponse(401, 'authenticationFailed')
+    }
   }
   // Confirm
   else if (body.mfa === true && body.token && body.secret) {
@@ -493,7 +516,6 @@ UserModel.prototype.asAccount = function () {
     consent: this.record.consent,
     control: this.record.control,
     createdAt: this.record.createdAt,
-    data: this.clear.data,
     email: this.clear.email,
     github: this.clear.github,
     img: this.record.img,
@@ -501,6 +523,7 @@ UserModel.prototype.asAccount = function () {
     initial: this.clear.initial,
     language: this.record.language,
     lastLogin: this.record.lastLogin,
+    mfaEnabled: this.record.mfaEnabled,
     newsletter: this.record.newsletter,
     patron: this.record.patron,
     role: this.record.role,
