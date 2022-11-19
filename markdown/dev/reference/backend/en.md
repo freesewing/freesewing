@@ -1,5 +1,5 @@
 ---
-title: FreeSewing backend
+title: FreeSewing Backend
 ---
 
 The FreeSewing backend handles all user data. Prior to version 3 of FreeSewing,
@@ -14,37 +14,14 @@ environments and so on.
 In other words, we no longer merely provide our own frontend, you can now also 
 use our backend as a service to build your own projects.
 
-## Changes for developers
+## Under the hood
 
-We've made a number of changes to make it easier for external developers and
-contributors to work with our backend.
-
-### Authentication with JWT and API keys
-
-Before version 3, the backend only supported authentication via JSON Web
-Tokens.  That's fine for a browser session, but not very handy if you want to
-talk to the API directly.
-
-Since version 3, we support authentication with API keys.  Furthermore, we
-allow any FreeSewing user to generate their own API keys. 
-
-In other words, if you want to connect to our backend API, you don't need to
-ask us. You can generate your own API key and start right away.
-
-### Sqlite instead of MongoDB
-
-Our backend used to use MongoDB for storage.  Since version 3, we've moved to
-Sqlite which is a file-based database making local development a breeze since
-you don't need to run a local database server.
-
-### Sanity instead of local storage
-
-We now use Sanity and the Sanity API to stored images for users (avatars for
-user accounts and people).  Furthermore, we also generate PDFs in the browser
-now so we also don't need storage for that.
-
-As a result, our backend does not need any storage, only access to the Sqlite
-file.  This also makes it easier to work with the backend as a developer.
+The FreeSewing backend is written in [NodeJS](https://nodejs.org/en/) on top of
+[Express](https://expressjs.com/). It uses [Prisma](https://www.prisma.io/) to
+interface with a [Sqlite database](https://www.sqlite.org/) database,
+[Sanity](https://www.sanity.io/) to store images, [AWS SES](
+https://aws.amazon.com/ses/) to send out emails, and
+[pino](https://github.com/pinojs/pino) for logging.
 
 ## Use, don't abuse
 

@@ -1,6 +1,5 @@
 ---
-title: Backend REST API
-linktitle: REST API
+title: REST API
 ---
 
 This is the reference documentation for the FreeSewing backend REST API.
