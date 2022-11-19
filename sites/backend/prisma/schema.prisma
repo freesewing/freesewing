@@ -13,7 +13,6 @@ model Apikey {
   expiresAt     DateTime
   name          String    @default("")
   level         Int       @default(0)
-  role          String    @default("user")
   secret        String
   user          User     @relation(fields: [userId], references: [id])
   userId        Int
@@ -98,8 +97,9 @@ model Person {
   user      User      @relation(fields: [userId], references: [id])
   userId    Int
   measies   String    @default("{}")
-  Pattern   Pattern[]
+  patterns  Pattern[]
   public    Boolean   @default(false)
+  updatedAt DateTime @updatedAt
 
   @@index([userId])
 }

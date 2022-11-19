@@ -19,10 +19,20 @@ export const patternTests = async (chai, config, expect, store) => {
           )
           .send({
             design: 'aaron',
-            settings: {},
+            settings: {
+              sa: 5,
+            },
+            name: 'Just a test',
+            notes: 'These are my notes',
+            public: true,
             person: store.account.people.her.id,
+            data: {
+              some: 'value',
+            },
+            img: cat,
           })
           .end((err, res) => {
+            console.log(JSON.stringify(res.body, null, 2))
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(201)
             expect(res.body.result).to.equal(`success`)
