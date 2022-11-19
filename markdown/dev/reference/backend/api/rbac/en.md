@@ -30,13 +30,13 @@ corresponding <small><small><b>`role`</b></small></small>
 
 | Level  | Abilities | <small><small>`user`</small></small> | <small><small>`bughunter`</small></small> | <small><small>`support`</small></small> | <small><small>`admin`</small></small> |
 | --: | -- | :--: | :--: | :--: | :--: |
-| `0`    | authenticate                                          | ✅ | ✅ | ✅ | ✅ |
-| `1`    | **read** measurements and patterns                    | ✅ | ✅ | ✅ | ✅ |
-| `2`    | **read all** account data                             | ✅ | ✅ | ✅ | ✅ |
-| `3`    | **write** measurements or patterns                    | ✅ | ✅ | ✅ | ✅ |
-| `4`    | **write all** account data                            | ✅ | ✅ | ✅ | ✅ |
-| `5`    | **read** measurements or patterns of **other users**  | ❌ | ✅ | ✅ | ✅ | 
-| `6`    | **read all** account data of **other users**          | ❌ | ❌ | ✅ | ✅ | 
+| `0`    | authenticate                                     | ✅ | ✅ | ✅ | ✅ |
+| `1`    | **read** people and patterns                     | ✅ | ✅ | ✅ | ✅ |
+| `2`    | **read all** account data                        | ✅ | ✅ | ✅ | ✅ |
+| `3`    | **write** people or patterns                     | ✅ | ✅ | ✅ | ✅ |
+| `4`    | **write all** account data                       | ✅ | ✅ | ✅ | ✅ |
+| `5`    | **read** people or patterns of **other users**   | ❌ | ✅ | ✅ | ✅ | 
+| `6`    | **read all** account data of **other users**     | ❌ | ❌ | ✅ | ✅ | 
 | `7`    | **write** account data of **other users** through **specific support methods** | ❌ | ❌ | ✅ | ✅ | 
-| `8`    | impersonate other users, **full write access**        | ❌ | ❌ | ❌ | ✅ |
+| `8`    | impersonate other users, **full write access**   | ❌ | ❌ | ❌ | ✅ |
 

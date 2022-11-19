@@ -16,7 +16,7 @@ The details are outlined in the table below:
 
 |                  | Public Patterns | Non-Public Patterns |
 | ---------------: | :-------------: | :-----------------: |
-| **Your own**     | `0` or higher   | `4` or higher       |
+| **Your own**     | `0` or higher   | `1` or higher       |
 | **Other user's** | `0` or higher   | `5` or higher       |
 
 ## Endpoints

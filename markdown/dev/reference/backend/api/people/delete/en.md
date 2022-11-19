@@ -1,26 +1,26 @@
 ---
-title: Delete a Pattern
+title: Delete a Person
 ---
 
-Deletes an existing Pattern.
+Deletes an existing Person.
 
 ## Access control
 
-- [Permission level](/reference/backend/api/rbac) `3` or higher is required to delete a Pattern
-- [Permission level](/reference/backend/api/rbac) `8` is required to delete **another user's** Pattern
+- [Permission level](/reference/backend/api/rbac) `3` or higher is required to delete a Person
+- [Permission level](/reference/backend/api/rbac) `8` is required to delete **another user's** Person
 
 ## Endpoints
 
-Deleting a Pattern is possible via these endpoints:
+Deleting a Person is possible via these endpoints:
 
 | Method    | Path | Authentication |
 | --------: | :--- | :------------- |
-| <Method delete /> | `/patterns/:id/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
-| <Method delete /> | `/patterns/:id/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
+| <Method delete /> | `/people/:id/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
+| <Method delete /> | `/people/:id/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
 
 ## Request url
 
-The url should contain the ID of the Pattern you wish to remove.
+The url should contain the ID of the Person you wish to remove.
 It replaces the `:id` placeholder in the [endpoints listed above](#endpoints).
 
 ## Response status codes
@@ -39,7 +39,7 @@ Possible status codes for these endpoints are:
 
 ```js
 await axios.delete(
-  'https://backend.freesewing.org/patterns/10/jwt',
+  'https://backend.freesewing.org/people/27/jwt',
   {
     headers: {
       Authorization: `Bearer ${token}`

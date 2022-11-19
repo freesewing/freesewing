@@ -6,7 +6,7 @@ Creates a new Pattern. This is typically used when users choose to save a patter
 
 ## Access control
 
-- [Permission level](/reference/backend/api/rbac) `4` or higher is required to create a Pattern
+- [Permission level](/reference/backend/api/rbac) `3` or higher is required to create a Pattern
 
 ## Endpoints
 
@@ -36,14 +36,14 @@ Possible status codes for these endpoints are:
 
 | Status code | Description |
 | ----------: | :---------- |
-| <StatusCode status="200"/> | success |
+| <StatusCode status="201"/> | success |
 | <StatusCode status="400"/> | the request was malformed |
 | <StatusCode status="401"/> | the request lacks authentication |
 | <StatusCode status="403"/> | authentication failed |
 | <StatusCode status="500"/> | server error |
 
 <Note>
-If the status code is not <StatusCode status="200" /> the `error` property
+If the status code is not <StatusCode status="201" /> the `error` property
 in the response body should indicate the nature of the problem.
 </Note>
 
@@ -94,7 +94,7 @@ const pattern = await axios.post(
 ```
 
 ## Example response
-```200.json
+```201.json
 {
   "result": "success",
   "pattern": {

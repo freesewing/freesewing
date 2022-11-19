@@ -3,11 +3,10 @@ title: Update a Pattern
 ---
 
 Updates an existing Pattern.
-This is typically used when users choose to save/overwrite a pattern.
 
 ## Access control
 
-- [Permission level](/reference/backend/api/rbac) `4` or higher is required to update a Pattern
+- [Permission level](/reference/backend/api/rbac) `3` or higher is required to update a Pattern
 - [Permission level](/reference/backend/api/rbac) `8` is required to update **another user's** Pattern
 
 ## Endpoints

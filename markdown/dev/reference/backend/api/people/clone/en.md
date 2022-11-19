@@ -1,15 +1,15 @@
 ---
-title: Clone a Pattern
+title: Clone a Person
 ---
 
-Create a new Pattern by cloning an existing one.
+Create a new Person by cloning an existing one.
 
 ## Access control
 
 The [Permission level](/reference/backend/api/rbac) required to clone a
-Pattern depends on:
+Person depends on:
 
-- Whether the Pattern is `public`
+- Whether the Person is `public`
 - Who created the Pattern
 
 The details are outlined in the table below:
@@ -25,12 +25,12 @@ Creating a new Person is possible via these endpoints:
 
 | Method    | Path | Authentication |
 | --------: | :--- | :------------- |
-| <Method post /> | `/patterns/:id/clone/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
-| <Method post /> | `/patterns/:id/clone/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
+| <Method post /> | `/people/:id/clone/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
+| <Method post /> | `/people/:id/clone/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
 
 ## Request url
 
-The url should contain the ID of the Pattern you wish to remove.
+The url should contain the ID of the Person you wish to remove.
 It replaces the `:id` placeholder in the [endpoints listed above](#endpoints).
 
 ## Response status codes
@@ -56,24 +56,21 @@ in the response body should indicate the nature of the problem.
 | ------------------- | -------- | ----------- |
 | `result`            | String | Either `success` or `error` |
 | `error`             | String | Will give info on the nature of the error. Only set if an error occured. |
-| `pattern.id`        | Number | The ID of the Pattern |
-| `pattern.createdAt` | String | Date string indicating the moment the pattern was created |
-| `pattern.data`      | Object | Any additional data that was stored with Pattern data |
-| `pattern.design`    | String | The name of the design of which this Pattern is an instance |
-| `pattern.img`       | String | The URL to the image stored with this Pattern |
-| `pattern.name`      | String | The name of the Pattern |
-| `pattern.notes`     | String | The notes stored with the Pattern |
-| `pattern.personId`  | Number | The ID of the Person for whom the Pattern was created |
-| `pattern.public`    | Boolean| Indicates whether the Pattern is publicly accessible or not |
-| `pattern.settings`  | Object | The settings used to (re-)create the Pattern |
-| `pattern.userId`    | Number | The ID of the user who created the Pattern |
-| `pattern.updatedAt` | String | Date string indicating the last time the pattern was updated |
+| `person.id`         | Number | The ID of the Person |
+| `person.createdAt`  | String | Date string indicating the moment the Person was created |
+| `person.img`        | String | The URL to the image stored with this Person |
+| `person.name`       | String | The name of the Person |
+| `person.notes`      | String | The notes stored with the Person |
+| `person.userId`     | Number | The ID of the user who created the Person |
+| `person.measies`    | Object | The measurements of the Person |
+| `person.public`     | Boolean| Indicates whether the Person is publicly accessible or not |
+| `person.updatedAt`  | String | Date string indicating the last time the Person was updated |
 
 ## Example request
 
 ```js
 const clone = axios.post(
-  'https://backend.freesewing.org/patterns/10/clone/jwt',
+  'https://backend.freesewing.org/people/27/clone/jwt',
   null,
   {
     headers: {
@@ -87,23 +84,20 @@ const clone = axios.post(
 ```200.json
 {
   "result": "success",
-  "pattern": {
-    "id": 19,
-    "createdAt": "2022-11-19T16:29:33.346Z",
-    "data": {
-      "some": "value"
-    },
-    "design": "aaron",
+  "person": {
+    "id": 32,
+    "createdAt": "2022-11-19T17:36:41.342Z",
     "img": "https://cdn.sanity.io/images/hl5bw8cj/production/a1565c8c6c70cfe7ea0fdf5c65501cd885adbe78-200x187.png",
-    "name": "Just a test",
-    "notes": "These are my notes",
-    "personId": 17,
-    "public": true,
-    "settings": {
-      "sa": 5
+    "imperial": false,
+    "name": "Someone",
+    "notes": "These are some notes",
+    "userId": 12,
+    "measies": {
+      "chest": 930,
+      "neck": 360
     },
-    "userId": 10,
-    "updatedAt": "2022-11-19T16:29:33.346Z"
+    "public": true,
+    "updatedAt": "2022-11-19T17:36:41.342Z"
   }
 }
 ```
