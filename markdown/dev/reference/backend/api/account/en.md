@@ -1,8 +1,12 @@
 ---
-title: Users
+title: Account
 ---
 
-A User holds the account data for a FreeSewing user.
+From an end-user's point of view, their account holds all of their data. From
+an API point of view, these endpoints deal with data in the User table.
+
+As the endpoints typically use `/account` we tend to use _account_ more often
+than _user_.
 
 ## Endpoints
 

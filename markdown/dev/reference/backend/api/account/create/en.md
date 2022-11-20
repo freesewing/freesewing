@@ -1,13 +1,13 @@
 ---
-title: Create a User
+title: Create an account
 ---
 
-Creates a new User. The User account will remain inactive 
-until [it is confirmed](/reference/backend/api/users/confirm).
+Creates a new User account. The User account will remain inactive 
+until [it is confirmed](/reference/backend/api/account/confirm).
 
 ## Endpoints
 
-Creating a new User is possible via this endpoint:
+Creating a new User account is possible via this endpoint:
 
 | Method    | Path | Authentication |
 | --------: | :--- | :------------- |

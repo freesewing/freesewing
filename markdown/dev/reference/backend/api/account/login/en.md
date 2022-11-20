@@ -1,31 +1,28 @@
 ---
-title: Confirm a User
+title: Login
 ---
 
-Confirms a newly created User.
-If confirmation is successful this will also result in a (passwordless) login.
+Login as a User with username and password, and optional MFA token.
 
 ## Endpoints
 
-Confirming a new User is possible via this endpoint:
+Password-based login is possible via this endpoint:
 
 | Method    | Path | Authentication |
 | --------: | :--- | :------------- |
-| <Method post /> | `/confirm/signup/:id` | None |
+| <Method post /> | `/login` | None |
 
 <Note compact>This endpoint requires no authentication</Note>
-
-## Request url
-
-The url should contain the confirmation ID that was E-mailed to the E-mail
-address used for the signup.  It replaces the `:id` placeholder in the
-[endpoint listed above](#endpoints).
 
 ## Request body
 
 | Property    | Type     | Description |
 | ----------: | :------- | :---------- |
-| `consent`   | Number   | An integer representing the consent given by the user to process their data |
+| `username`  | `string` | The E-mail address of the User |
+| `password`  | `boolean`| The language code for the User |
+| `token`     | `boolean`| The MFA token |
+
+<Note compact>An MFA token is required (only) when the User enabled MFA</Note>
 
 ## Response status codes
 
@@ -33,9 +30,10 @@ Possible status codes for these endpoints are:
 
 | Status code | Description |
 | ----------: | :---------- |
-| <StatusCode status="200"/> | success |
+| <StatusCode status="201"/> | success |
 | <StatusCode status="400"/> | the request was malformed |
-| <StatusCode status="404"/> | the confirmation was not found |
+| <StatusCode status="401"/> | authentication failed |
+| <StatusCode status="403"/> | MFA token missing |
 | <StatusCode status="500"/> | server error |
 
 <Note>
@@ -74,9 +72,13 @@ in the response body should indicate the nature of the problem.
 ## Example request
 
 ```js
-const confirm = await axios.post(
-  'https://backend.freesewing.org/confirm/signup/3985f312-e407-458a-a78c-4596c361d284',
-  { consent: 2 },
+const signup = await axios.post(
+  'https://backend.freesewing.org/signup',
+  {
+    username: "jimmy",
+    language: "I like big bewbs and I just can't lie",
+    token: 231586
+  }
 )
 ```
 
@@ -104,10 +106,8 @@ const confirm = await axios.post(
     "role": "user",
     "status": 1,
     "updatedAt": "2022-11-19T18:15:22.668Z",
-    "username": "user-14",
-    "lusername": "user-14"
+    "username": "jimmy",
+    "lusername": "jimmy"
   }
 }
 ```
-
-[duri]: https://en.wikipedia.org/wiki/Data_URI_scheme
