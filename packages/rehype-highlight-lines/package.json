@@ -28,7 +28,7 @@
     "test": "echo \"rehype-highlight-lines: No tests configured. Perhaps you could write some?\" && exit 0",
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
-    "lint": "npx eslint 'src/**' 'tests/*.mjs'"
+    "lint": "npx eslint 'src/*.mjs'"
   },
   "peerDependencies": {},
   "dependencies": {

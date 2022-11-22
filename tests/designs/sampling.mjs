@@ -1,5 +1,5 @@
 import { adult, doll, giant } from '@freesewing/models'
-import { getFamily, getShortName } from './config.mjs'
+import { getShortName } from './config.mjs'
 import chai from 'chai'
 
 const expect = chai.expect
@@ -15,7 +15,6 @@ const deprecated = ['theo']
  * @param boolean log: Set to true to log errors
  */
 export const testPatternSampling = (Pattern, log = false) => {
-  const pattern = new Pattern()
   const config = Pattern.patternConfig
   const design = getShortName(Pattern.designConfig.data.name)
   //const parts = pattern.getPartList()
@@ -26,23 +25,27 @@ export const testPatternSampling = (Pattern, log = false) => {
       pattern.sample().render()
       if (log === 'always') {
         console.log(pattern.store.logs)
-        console.log(pattern.setStores[0].logs)
+        console.log(pattern.setStores[pattern.activeSet].logs)
       }
-      if (pattern.store.logs.error.length < 1 && pattern.setStores[0].logs.error.length < 1) {
+      if (
+        pattern.store.logs.error.length < 1 &&
+        pattern.setStores[pattern.activeSet].logs.error.length < 1
+      ) {
         return true
       }
       if (log && log !== 'always') {
+        console.log(pattern.settings[pattern.activeSet])
         console.log(pattern.store.logs)
-        console.log(pattern.setStores[0].logs)
+        console.log(pattern.setStores[pattern.activeSet].logs)
       }
 
       return false
     } catch (err) {
       if (log && log !== 'always') {
-        console.log(pattern.settings[0])
+        console.log(pattern.settings[pattern.activeSet])
         console.log(err)
         console.log(pattern.store.logs)
-        console.log(pattern.setStores[0].logs)
+        console.log(pattern.setStores[pattern.activeSet].logs)
       }
 
       return false
