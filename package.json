@@ -78,7 +78,7 @@
     "esbuild": "^0.15.3",
     "esbuild-plugin-yaml": "^0.0.1",
     "eslint": "^8.23.1",
-    "eslint-config-next": "^12.3.1",
+    "eslint-config-next": "^13.0.5",
     "eslint-plugin-jsonc": "^2.4.0",
     "eslint-plugin-markdown": "^3.0.0",
     "eslint-plugin-mongo": "^1.0.5",
