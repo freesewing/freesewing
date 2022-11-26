@@ -2,7 +2,7 @@
 title: Create an account
 ---
 
-Creates a new User account. The User account will remain inactive 
+Creates a new User account. The User account will remain inactive
 until [it is confirmed](/reference/backend/api/account/confirm).
 
 ## Endpoints
@@ -42,7 +42,7 @@ in the response body should indicate the nature of the problem.
 | Value               | Type     | Description |
 | ------------------- | -------- | ----------- |
 | `result`            | String | Either `success` or `error` |
-| `error`             | String | Will give info on the nature of the error. Only set if an error occured. |
+| `error`             | String | Will give info on the nature of the error. Only set if an error occurred. |
 | `email`             | String | The E-mail address where the confirmation email was sent to |
 
 ## Example request

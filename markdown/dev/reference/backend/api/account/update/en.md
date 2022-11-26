@@ -25,7 +25,7 @@ Updating an existing User account is possible via these endpoints:
 | `bio`       | `string` | The User's bio |
 | `consent`   | `string` | A number that indicates [the consent given by the user](/reference/backend/api/account#the-consent-field-is-about-data-protection) |
 | `control`   | `string` | A number that indicates [the level of control the user prefers](/reference/backend/api/account#the-control-field-is-about-keeping-it-simple) |
-| `github`    | `string` | The User's username on Github |
+| `github`    | `string` | The User's username on GitHub |
 | `imperial`  | `boolean`| Whether or not the User prefers imperial units |
 | `newsletter`| `boolean`| Whether this Person prefers imperial measurements (`true`) or not (`false`) |
 | `img`       | `string` | An image [data-uri][duri] to store with this Person |
@@ -54,14 +54,14 @@ in the response body should indicate the nature of the problem.
 | Value               | Type     | Description |
 | ------------------- | -------- | ----------- |
 | `result`            | String | Either `success` or `error` |
-| `error`             | String | Will give info on the nature of the error. Only set if an error occured. |
+| `error`             | String | Will give info on the nature of the error. Only set if an error occurred. |
 | `account.id`        | Number | The ID of the User |
 | `account.bio`       | String | The bio of the User |
 | `account.consent`   | Number | The consent given by the User |
 | `account.control`   | Number | The control desired by the User |
 | `account.createdAt` | String | Date string indicating the moment the User was created |
 | `account.email`     | String | The E-mail address currently tied to the User |
-| `account.github`    | String | The Github username of the User |
+| `account.github`    | String | The GitHub username of the User |
 | `account.img`       | String | The URL to the image stored with this User |
 | `account.imperial`  | Boolean| Whether or not the User prefers imperial units |
 | `account.initial`   | String | The E-mail address that the User was created with |
