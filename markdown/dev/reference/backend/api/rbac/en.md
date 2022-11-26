@@ -18,14 +18,14 @@ The available roles and their privilege levels are:
 
 We offer more fine-grained control over the permission level when
 authenticating with API keys.  When you create an API key, you can choose any
-permissing level that is equal or lower than your own role's permission level.
+permissioning level that is equal or lower than your own role's permission level.
 
 This allows you to -- for example -- generate an API key that only have read
 access to your data.
 
 ## Permission levels
 
-The table below lists the priviledge of all levels as well as their
+The table below lists the privilege of all levels as well as their
 corresponding <small><small><b>`role`</b></small></small>
 
 | Level  | Abilities | <small><small>`user`</small></small> | <small><small>`bughunter`</small></small> | <small><small>`support`</small></small> | <small><small>`admin`</small></small> |
