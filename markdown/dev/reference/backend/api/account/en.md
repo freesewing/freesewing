@@ -59,7 +59,7 @@ hash the email provided to us, and search the hash instead.
 The `ehash` and `ihash` fields hold the hash for the `email` and `initial`
 fields.
 
-### The `imperial` property is a boolean
+### The `imperial` property is a Boolean
 
 If the `imperial` property is `false`, the user wants metric units.
 
@@ -78,10 +78,10 @@ associated with the account was changed.
 
 For the backend users `Joost` and `joost` are -- strictly speaking -- two
 different users.  This tends to lead to confusion and possible impersonation.
-So we enforce uniquness on the `lusername` field which holds a lowercased
+So we enforce uniqueness on the `lusername` field which holds a lowercased
 version of the `username` field..
 
-In other words, lowercased usernamed must be uique.
+In other words, lowercased username must be unique.
 
 ### The `status` field holds the account status
 
