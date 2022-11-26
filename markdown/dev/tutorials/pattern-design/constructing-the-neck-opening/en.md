@@ -6,8 +6,8 @@ order: 160
 Your goal is to construct a slightly oval neck opening that has a circumference that is
 the `head` measurements multiplied by the `neckRatio` option.
 
-That might involve some trial and error. But since the neck opening will be symetric 
-both horizontal and vertical, you only need to construct one quadrant. 
+That might involve some trial and error. But since the neck opening will be symmetric 
+both horizontal and vertical, you only need to construct one quadrant.
 
 We'll be adding some points to our pattern to do just that. But we want to have access
 to our measurements and options to do so. For this, you first update the shorthand call
@@ -70,12 +70,12 @@ points.rightCp1 = points.right
  - The `Point.dy()` method returns the delta along the Y axis between the point you call it on and the point you pass it
  - We shift half of the Y-delta
 
-The next point is very similar again, except that this time we're shifting to the right (0 degrees) for half of 
+The next point is very similar again, except that this time we're shifting to the right (0 degrees) for half of
 the X-delta between points `bottom` and `right`.
 
 <Tip>
 
-Points come with a bunch of these methods. 
+Points come with a bunch of these methods.
 You can find them all in [the Point API docs](/reference/api/point/).
 
 </Tip>
@@ -105,4 +105,3 @@ When all is said and done, we now have a quarter of our neck opening:
 The only problem is, we have no guarantee whatsoever that this opening is the correct size.
 
 Rather than hope it is the correct size, you'll make sure it is next.
-

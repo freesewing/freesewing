@@ -3,7 +3,7 @@ title: Adding measurements
 order: 130
 ---
 
-FreeSewing is all about *made-to-measure* sewing patterns; 
+FreeSewing is all about *made-to-measure* sewing patterns;
 we are going to draft our pattern according to the measurements provided to us.
 
 Which begs the question, which measurements?
@@ -33,9 +33,9 @@ Now everybody knows your pattern requires the `head` measurement.
 
 This change will also get picked up by the development environment, and you'll now see this screen:
 
-![This screen tells you you are missing some required measurements](./required-measurements.png)
+![This screen tells you are missing some required measurements](./required-measurements.png)
 
-Since it's just one measurement, let's simply enter a value by hand. 
+Since it's just one measurement, let's simply enter a value by hand.
 For example `38` as 38cm is a realistic head circumference measurement for a baby.
 
 Enter `38` in the box, and click on **Draft your pattern** in the top navigation bar to get back to your draft,

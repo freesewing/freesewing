@@ -22,8 +22,8 @@ export default function(part) {
 }
 ```
 
-So far, we've kept to the *// Design pattern here* area, but now we're going to work on 
-the area under *// Complete?* 
+So far, we've kept to the *// Design pattern here* area, but now we're going to work on
+the area under *// Complete?*
 
 <Note>
 
@@ -100,7 +100,7 @@ snippets.logo = new Snippet("logo", points.logo)
 <Note>
 
   You can find all possible snippets in [our documentation](/reference/snippets/).
-  
+
 </Note>
 
 ## Seam allowance
@@ -118,9 +118,9 @@ if (sa) {
 Our bib does not use seam allowance. Instead we'll finish it with bias tape.
 So you can simply remove that condition.
 
-However, for future refefence, `sa` is a variable that you can get from `part.shorthand()`
+However, for future reference, `sa` is a variable that you can get from `part.shorthand()`
 just like `complete`. But instead of `true` or `false` it will hold the amount of seam allowance
-in mm. 
+in mm.
 
 Note that you can still do `if (sa)` because zero is *falsy*.
 
@@ -136,7 +136,7 @@ paths.bias = paths.seam
   .attr("data-text-class", "center fill-various")
 ```
 
-The `path.offset()` method makes it trivial to add seam allowance, since it will contruct
+The `path.offset()` method makes it trivial to add seam allowance, since it will construct
 a path parallel to the given path at the distance you pass it. 9 times out of 10, you'll be using it as `path.offset(sa)`.
 
 Note that we're also using the attributes again, to change the look of the line, and add text to it,
@@ -144,12 +144,12 @@ as explained in [Adding text](/concepts/adding-text).
 
 ## Scalebox and title
 
-Two more macros and we're done. 
+Two more macros and we're done.
 
 The `title` macro adds a title to our part.
 It's not that big a deal here since we only have one part in our pattern.
 But patterns typically have many different parts, some of them which might look rather similar.
-That's why you should number your parts and give them a name. 
+That's why you should number your parts and give them a name.
 
 The `title` macro can help you with that:
 
@@ -175,4 +175,3 @@ And with that, our pattern is now *complete*:
 <Example pattern="tutorial" part="step11" caption="We used attributes to add color, dashes, text on a path and even opacity" />
 
 We're not done yet though. There's one more thing the user can ask for: a *paperless* pattern.
-
