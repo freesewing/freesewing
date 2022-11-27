@@ -6,7 +6,7 @@ import { Popover, Transition } from '@headlessui/react'
 import DownIcon from 'shared/components/icons/down'
 import Link from 'next/link'
 
-const LocalePicker = ({ app, iconOnly = false }) => {
+const LocalePicker = ({ app, iconOnly = false, bottom = false }) => {
   const { t } = useTranslation(['locales'])
   const router = useRouter()
 
@@ -23,11 +23,13 @@ const LocalePicker = ({ app, iconOnly = false }) => {
       {() => (
         <>
           <Popover.Button
-            className={`group inline-flex items-center px-3 py-2 text-base font-medium text-neural-content hover:bg-neutral-focus rounded-lg px-4`}
+            className={`group border-0 inline-flex items-center px-3 py-2 text-base font-medium text-neural-content rounded-lg px-4 hover:text-secondary-focus`}
           >
             <LocaleIcon />
-            <span className="ml-4 font-bold text-lg capitalize">{t(`common:language`)}</span>
-            <DownIcon className={`ml-2 h-5 w-5`} aria-hidden="true" />
+            {!iconOnly && (
+              <span className="ml-4 font-medium capitalize">{t(`common:language`)}</span>
+            )}
+            <DownIcon className={`ml-2 h-5 w-5 ${bottom ? 'rotate-180' : ''}`} aria-hidden="true" />
           </Popover.Button>
           <Transition
             as={Fragment}
@@ -38,17 +40,16 @@ const LocalePicker = ({ app, iconOnly = false }) => {
             leaveFrom="opacity-100 translate-y-0"
             leaveTo="opacity-0 translate-y-1"
           >
-            <Popover.Panel className="absolute z-10 mt-3 w-screen max-w-sm transform px-4 sm:px-0 lg:max-w-xl right-0">
+            <Popover.Panel
+              className={`absolute z-10 mb-3 w-64 transform px-4 sm:px-0 lg:max-w-xl right-0 ${
+                iconOnly ? 'translate-x-4' : ''
+              } ${bottom ? 'bottom-10' : 'top-12'}`}
+            >
               <div className="overflow-hidden rounded-lg shadow-lg">
-                <div className="relative grid gap-8 bg-base-100 p-7 lg:grid-cols-1">
+                <div className="relative grid gap-2 bg-base-100 p-4 grid-cols-1">
                   {router.locales.map((locale) => (
                     <Link href={`${locale}/${router.asPath}`} key={locale}>
-                      <a className="-m-3 flex rounded-lg p-2 transition duration-150 ease-in-out-50 hover:translate-x-2 hover:cursor-pointer">
-                        <div className="ml-4">
-                          <p className="text-lg font-medium text-base text-left">{t(locale)}</p>
-                          <p className="text-base left -mt-4">{text[locale]}</p>
-                        </div>
-                      </a>
+                      <a className="btn btn-primary">{t(locale)}</a>
                     </Link>
                   ))}
                 </div>

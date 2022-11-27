@@ -3,7 +3,7 @@ export const apikeyTests = async (chai, config, expect, store) => {
     step(`${store.icon('key', 'jwt')} Create API Key (jwt)`, (done) => {
       chai
         .request(config.api)
-        .post('/apikey/jwt')
+        .post('/apikeys/jwt')
         .set('Authorization', 'Bearer ' + store.account.token)
         .send({
           name: 'Test API key',
@@ -27,7 +27,7 @@ export const apikeyTests = async (chai, config, expect, store) => {
     step(`${store.icon('key', 'key')} Create API Key (key)`, (done) => {
       chai
         .request(config.api)
-        .post('/apikey/key')
+        .post('/apikeys/key')
         .auth(store.apikey1.key, store.apikey1.secret)
         .send({
           name: 'Test API key with key',
@@ -67,7 +67,7 @@ export const apikeyTests = async (chai, config, expect, store) => {
     step(`${store.icon('key', 'key')} Read API key (key)`, (done) => {
       chai
         .request(config.api)
-        .get(`/apikey/${store.apikey1.key}/key`)
+        .get(`/apikeys/${store.apikey1.key}/key`)
         .auth(store.apikey2.key, store.apikey2.secret)
         .end((err, res) => {
           expect(res.status).to.equal(200)
@@ -83,7 +83,7 @@ export const apikeyTests = async (chai, config, expect, store) => {
     step(`${store.icon('key', 'jwt')} Read API key (jwt)`, (done) => {
       chai
         .request(config.api)
-        .get(`/apikey/${store.apikey2.key}/jwt`)
+        .get(`/apikeys/${store.apikey2.key}/jwt`)
         .set('Authorization', 'Bearer ' + store.account.token)
         .end((err, res) => {
           expect(res.status).to.equal(200)
@@ -99,7 +99,7 @@ export const apikeyTests = async (chai, config, expect, store) => {
     step(`${store.icon('key', 'key')} Remove API key (key)`, (done) => {
       chai
         .request(config.api)
-        .delete(`/apikey/${store.apikey2.key}/key`)
+        .delete(`/apikeys/${store.apikey2.key}/key`)
         .auth(store.apikey2.key, store.apikey2.secret)
         .end((err, res) => {
           expect(res.status).to.equal(204)
@@ -110,7 +110,7 @@ export const apikeyTests = async (chai, config, expect, store) => {
     step(`${store.icon('key', 'jwt')} Remove API key (jwt)`, (done) => {
       chai
         .request(config.api)
-        .delete(`/apikey/${store.apikey1.key}/jwt`)
+        .delete(`/apikeys/${store.apikey1.key}/jwt`)
         .set('Authorization', 'Bearer ' + store.account.token)
         .end((err, res) => {
           expect(res.status).to.equal(204)

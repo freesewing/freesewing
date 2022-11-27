@@ -19,23 +19,23 @@ jobs:
 
     steps:
       - name: Fetch PR base ref
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: ${{ github.base_ref }}
       - name: Checkout PR merge ref
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: ${{ github.ref }}
       - name: Setup Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install dependencies
         run: npx lerna bootstrap
         env:
           CI: true
-      - name: Build all
-        run: npm run buildall
+      - name: Prebuild Packages
+        run: npx lerna run prebuild
       - name: Run eslint
         run: |
           changed_files="$(git diff --name-only origin/${{ github.base_ref }})"

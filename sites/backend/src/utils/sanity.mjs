@@ -33,6 +33,7 @@ async function getAvatar(type, id) {
  */
 export const setUserAvatar = async (id, data) => setAvatar('user', id, data)
 export const setPersonAvatar = async (id, data) => setAvatar('person', id, data)
+export const setPatternAvatar = async (id, data) => setAvatar('pattern', id, data)
 export async function setAvatar(type, id, data) {
   // Step 1: Upload the image as asset
   const [contentType, binary] = b64ToBinaryWithType(data)
@@ -91,5 +92,5 @@ function b64ToBinaryWithType(dataUri) {
   else if (start.includes('image/jpg')) type = 'image/jpeg'
   else if (start.includes('image/jpeg')) type = 'image/jpeg'
 
-  return [type, new Buffer(data, 'base64')]
+  return [type, new Buffer.from(data, 'base64')]
 }

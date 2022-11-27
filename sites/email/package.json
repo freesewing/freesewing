@@ -1,5 +1,20 @@
 {
+  "name": "freesewing.email",
   "private": true,
+  "version": "3.0.0-alpha.2",
+  "name": "email",
+  "description": "Holds a maizzle instance for generating FreeSewing's email templates",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://freesewing.org/patrons/join"
+  },
   "scripts": {
     "dev": "maizzle serve",
     "build": "maizzle build production"

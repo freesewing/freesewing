@@ -40,22 +40,23 @@ ApikeyModel.prototype.sendResponse = async function (res) {
 }
 
 ApikeyModel.prototype.verify = async function (key, secret) {
-  await this.read({ id: key })
+  await this.unguardedRead({ id: key })
   const [valid] = await verifyPassword(secret, this.record.secret)
   this.verified = valid
 
   return this
 }
 
-ApikeyModel.prototype.readIfAllowed = async function (where, user) {
-  if (!this.User.authenticatedUser) await this.User.loadAuthenticatedUser(user)
-  await this.read(where)
+ApikeyModel.prototype.guardedRead = async function ({ params, user }) {
+  if (user.level < 1) return this.setResponse(403, 'insufficientAccessLevel')
+  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
+
+  await this.unguardedRead({ id: params.id })
   if (!this.record) return this.setResponse(404, 'apikeyNotFound')
-  if (this.record.userId !== this.User.authenticatedUser.id) {
+
+  if (this.record.userId !== user.uid) {
     // Not own key - only admin can do that
-    if (this.User.authenticatedUser.role !== 'admin') {
-      return this.setResponse(400, 'permissionLackingToLoadOtherApiKey')
-    }
+    if (user.level < 8) return this.setResponse(403, 'insufficientAccessLevel')
   }
 
   return this.setResponse(200, 'success', {
@@ -69,33 +70,35 @@ ApikeyModel.prototype.readIfAllowed = async function (where, user) {
   })
 }
 
-ApikeyModel.prototype.removeIfAllowed = async function (where, user) {
-  if (!this.User.authenticatedUser) await this.User.loadAuthenticatedUser(user)
-  await this.read(where)
+ApikeyModel.prototype.guardedDelete = async function ({ params, user }) {
+  if (user.level < 4) return this.setResponse(403, 'insufficientAccessLevel')
+  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
+
+  await this.unguardedRead({ id: params.id })
   if (!this.record) return this.setResponse(404, 'apikeyNotFound')
-  if (this.record.userId !== this.User.authenticatedUser.id) {
+
+  if (this.record.userId !== user.uid) {
     // Not own key - only admin can do that
-    if (this.User.authenticatedUser.role !== 'admin') {
-      return this.setResponse(400, 'permissionLackingToRemoveOtherApiKey')
-    }
+    if (user.level < 8) return this.setResponse(403, 'insufficientAccessLevel')
   }
-  await this.remove(where)
-  this.setResponse(204)
+
+  await this.unguardedDelete()
 
   return this.setResponse(204)
 }
 
-ApikeyModel.prototype.read = async function (where) {
+ApikeyModel.prototype.unguardedRead = async function (where) {
   this.record = await this.prisma.apikey.findUnique({ where })
 
   return this
 }
 
-ApikeyModel.prototype.remove = async function (where) {
-  await this.prisma.apikey.delete({ where })
-  this.record = false
+ApikeyModel.prototype.unguardedDelete = async function () {
+  await this.prisma.apikey.delete({ where: { id: this.record.id } })
+  this.record = null
+  this.clear = null
 
-  return this
+  return this.setExists()
 }
 
 ApikeyModel.prototype.create = async function ({ body, user }) {
@@ -143,23 +146,4 @@ ApikeyModel.prototype.create = async function ({ body, user }) {
       userId: this.record.userId,
     },
   })
-}
-
-ApikeyModel.prototype.___read = async function ({ user, params }) {
-  // Load user making the call
-  await this.User.loadAuthenticatedUser(user)
-
-  const key = this.User.authenticatedUser.apikeys.filter((key) => key.id === params.id)
-
-  return key.length === 1
-    ? this.setResponse(200, 'success', {
-        apikey: {
-          key: key[0].id,
-          level: key[0].level,
-          expiresAt: key[0].expiresAt,
-          name: key[0].name,
-          userId: key[0].userId,
-        },
-      })
-    : this.setResponse(404, 'notFound')
 }

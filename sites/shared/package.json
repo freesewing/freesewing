@@ -1,7 +1,19 @@
 {
+  "private": true,
   "name": "freesewing.shared",
   "version": "3.0.0-alpha.2",
-  "private": true,
+  "description": "Shared code for various FreeSewing web projects",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://freesewing.org/patrons/join"
+  },
   "scripts": {
     "dev": "next dev -p 3002",
     "develop": "next dev -p 3002",

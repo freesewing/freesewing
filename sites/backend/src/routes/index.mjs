@@ -1,7 +1,11 @@
-import { apikeyRoutes } from './apikey.mjs'
-import { userRoutes } from './user.mjs'
+import { apikeysRoutes } from './apikeys.mjs'
+import { usersRoutes } from './users.mjs'
+import { peopleRoutes } from './people.mjs'
+import { patternsRoutes } from './patterns.mjs'
 
 export const routes = {
-  apikeyRoutes,
-  userRoutes,
+  apikeysRoutes,
+  usersRoutes,
+  peopleRoutes,
+  patternsRoutes,
 }

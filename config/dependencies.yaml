@@ -3,7 +3,6 @@ _types:
     peer:
       '@freesewing/core': &freesewing '^{{version}}'
       '@freesewing/plugin-bundle': *freesewing
-      '@freesewing/config-helpers': *freesewing
     dev:
       'mocha': &mocha '^10.0.0'
       'chai': &chai '^4.2.0'
@@ -50,6 +49,7 @@ charlie:
     '@freesewing/plugin-bartack': *freesewing
     '@freesewing/plugin-mirror': *freesewing
     '@freesewing/titan': *freesewing
+    '@freesewing/snapseries': *freesewing
 core:
   _:
     'bezier-js': '^6.1.0'
@@ -114,6 +114,7 @@ legend:
 paco:
   peer:
     '@freesewing/titan': *freesewing
+    '@freesewing/snapseries': *freesewing
 plugin-bundle:
   dev:
     '@freesewing/plugin-banner': *freesewing
@@ -157,6 +158,10 @@ rehype-jargon:
 rehype-highlight-lines:
   _:
     'unist-util-remove': '^3.1.0'
+sandy:
+  '@freesewing/snapseries': *freesewing
+shin:
+  '@freesewing/snapseries': *freesewing
 simon:
   peer:
     '@freesewing/brian': *freesewing
@@ -179,6 +184,10 @@ teagan:
   peer:
     '@freesewing/brian': *freesewing
     '@freesewing/plugin-bust': *freesewing
+titan:
+  '@freesewing/snapseries': *freesewing
+trayvon:
+  '@freesewing/snapseries': *freesewing
 wahid:
   peer:
     '@freesewing/brian': *freesewing

@@ -91,6 +91,21 @@ export const userTests = async (chai, config, expect, store) => {
           done()
         })
     })
+    step(`${store.icon('user')} Should set the password (altaccount)`, (done) => {
+      chai
+        .request(config.api)
+        .put('/account/jwt')
+        .set('Authorization', 'Bearer ' + store.altaccount.token)
+        .send({
+          password: store.altaccount.password,
+        })
+        .end((err, res) => {
+          expect(res.status).to.equal(200)
+          expect(res.type).to.equal('application/json')
+          expect(res.charset).to.equal('utf-8')
+          done()
+        })
+    })
 
     step(`${store.icon('user')} Should login with username and password`, (done) => {
       chai
@@ -184,12 +199,12 @@ export const userTests = async (chai, config, expect, store) => {
         })
     })
 
-    step(`${store.icon('user')} Should login with userid and password`, (done) => {
+    step(`${store.icon('user')} Should login with id and password`, (done) => {
       chai
         .request(config.api)
         .post('/login')
         .send({
-          username: store.account.userid,
+          username: store.account.id,
           password: store.account.password,
         })
         .end((err, res) => {

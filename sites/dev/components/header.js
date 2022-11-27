@@ -31,16 +31,16 @@ const Header = ({ app, setSearch }) => {
   return (
     <header
       className={`
-      fixed top-0 left-0
+      fixed bottom-0 lg:bottom-auto lg:top-0 left-0
       bg-neutral
       w-full
       z-30
       transition-transform
-      ${show ? '' : 'fixed top-0 left-0 -translate-y-20'}
+      ${show ? '' : 'fixed bottom-0 lg:top-0 left-0 translate-y-20 lg:-translate-y-20'}
       drop-shadow-xl
     `}
     >
-      <div>
+      <div className="m-auto" style={{ maxWidth: '1800px' }}>
         <div className="p-2 flex flex-row gap-2 justify-between text-neutral-content">
           <div className="flex flex-row items-center">
             <button
@@ -54,16 +54,20 @@ const Header = ({ app, setSearch }) => {
             >
               {app.primaryMenu ? <CloseIcon /> : <MenuIcon />}
             </button>
+            <div className="hidden lg:block">
+              <WordMark />
+            </div>
+          </div>
+          <div className="flex flex-row items-center lg:hidden">
             <WordMark />
           </div>
-          <div className="flex flex-row items-center lg:hidden pr-4">
+          <div className="flex flex-row items-center lg:hidden pr-2">
             <button
               onClick={() => setSearch(true)}
               className="btn btn-sm btn-ghost hover:text-secondary-focus"
             >
               <SearchIcon />
             </button>
-            <ThemePicker app={app} iconOnly />
           </div>
           <div className="hidden lg:flex flex-row items-center">
             <button

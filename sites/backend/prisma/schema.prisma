@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "sqlite"
-  url      = env("API_DB_URL")
+  url      = env("BACKEND_DB_URL")
 }
 
 model Apikey {
@@ -13,7 +13,6 @@ model Apikey {
   expiresAt     DateTime
   name          String    @default("")
   level         Int       @default(0)
-  role          String    @default("user")
   secret        String
   user          User     @relation(fields: [userId], references: [id])
   userId        Int
@@ -43,17 +42,20 @@ model User {
   bio           String    @default("")
   confirmations Confirmation[]
   consent       Int       @default(0)
+  control       Int       @default(1)
   createdAt     DateTime  @default(now())
   ehash         String    @unique
   email         String
   github        String    @default("")
   ihash         String
-  img           String    @default("https://freesewing.org/avatar.svg")
+  img           String?
   initial       String
   imperial      Boolean   @default(false)
   language      String    @default("en")
   lastLogin     DateTime?
   lusername     String    @unique
+  mfaSecret     String    @default("")
+  mfaEnabled    Boolean   @default(false)
   newsletter    Boolean   @default(false)
   password      String
   patron        Int       @default(0)
@@ -69,9 +71,15 @@ model User {
 model Pattern {
   id        Int      @id @default(autoincrement())
   createdAt DateTime @default(now())
-  data      String?
+  data      String
+  design    String
+  img       String?
+  name      String   @default("")
+  notes     String
   person    Person?  @relation(fields: [personId], references: [id])
   personId  Int?
+  public    Boolean  @default(false)
+  settings  String
   user      User     @relation(fields: [userId], references: [id])
   userId    Int
   updatedAt DateTime @updatedAt
@@ -82,11 +90,16 @@ model Pattern {
 model Person {
   id        Int       @id @default(autoincrement())
   createdAt DateTime  @default(now())
-  data      String?
+  img       String?
+  imperial  Boolean   @default(false)
+  name      String    @default("")
+  notes     String    @default("")
   user      User      @relation(fields: [userId], references: [id])
   userId    Int
   measies   String    @default("{}")
-  Pattern   Pattern[]
+  patterns  Pattern[]
+  public    Boolean   @default(false)
+  updatedAt DateTime @updatedAt
 
   @@index([userId])
 }

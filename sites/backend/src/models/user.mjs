@@ -1,6 +1,7 @@
 import jwt from 'jsonwebtoken'
 import { log } from '../utils/log.mjs'
 import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
+import { setUserAvatar } from '../utils/sanity.mjs'
 import { clean, asJson, i18nUrl } from '../utils/index.mjs'
 import { ConfirmationModel } from './confirmation.mjs'
 
@@ -9,8 +10,10 @@ export function UserModel(tools) {
   this.prisma = tools.prisma
   this.decrypt = tools.decrypt
   this.encrypt = tools.encrypt
+  this.mfa = tools.mfa
   this.mailer = tools.email
   this.Confirmation = new ConfirmationModel(tools)
+  this.encryptedFields = ['bio', 'github', 'email', 'initial', 'img', 'mfaSecret']
   this.clear = {} // For holding decrypted data
 
   return this
@@ -39,10 +42,9 @@ UserModel.prototype.read = async function (where) {
 UserModel.prototype.reveal = async function (where) {
   this.clear = {}
   if (this.record) {
-    this.clear.bio = this.decrypt(this.record.bio)
-    this.clear.github = this.decrypt(this.record.github)
-    this.clear.email = this.decrypt(this.record.email)
-    this.clear.initial = this.decrypt(this.record.initial)
+    for (const field of this.encryptedFields) {
+      this.clear[field] = this.decrypt(this.record[field])
+    }
   }
 
   return this
@@ -52,7 +54,7 @@ UserModel.prototype.reveal = async function (where) {
  * Helper method to encrypt at-rest data
  */
 UserModel.prototype.cloak = function (data) {
-  for (const field of ['bio', 'github', 'email']) {
+  for (const field of this.encryptedFields) {
     if (typeof data[field] !== 'undefined') data[field] = this.encrypt(data[field])
   }
   if (typeof data.password === 'string') data.password = asJson(hashPassword(data.password))
@@ -66,7 +68,9 @@ UserModel.prototype.cloak = function (data) {
  *
  * Stores result in this.record
  */
-UserModel.prototype.readAsAccount = async function (where) {
+UserModel.prototype.guardedRead = async function (where, { user }) {
+  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
   await this.read(where)
 
   return this.setResponse(200, false, {
@@ -135,7 +139,7 @@ UserModel.prototype.setExists = function () {
 /*
  * Creates a user+confirmation and sends out signup email
  */
-UserModel.prototype.create = async function ({ body }) {
+UserModel.prototype.guardedCreate = async function ({ body }) {
   if (Object.keys(body) < 1) return this.setResponse(400, 'postBodyMissing')
   if (!body.email) return this.setResponse(400, 'emailMissing')
   if (!body.language) return this.setResponse(400, 'languageMissing')
@@ -160,9 +164,13 @@ UserModel.prototype.create = async function ({ body }) {
       username,
       lusername: username,
       language: body.language,
+      mfaEnabled: false,
+      mfaSecret: this.encrypt(''),
       password: asJson(hashPassword(randomString())), // We'll change this later
       github: this.encrypt(''),
       bio: this.encrypt(''),
+      // Set this one initially as we need the ID to create a custom img via Sanity
+      img: this.encrypt(this.config.avatars.user),
     }
     this.record = await this.prisma.user.create({ data })
   } catch (err) {
@@ -172,7 +180,7 @@ UserModel.prototype.create = async function ({ body }) {
 
   // Update username
   try {
-    await this.safeUpdate({
+    await this.unguardedUpdate({
       username: `user-${this.record.id}`,
       lusername: `user-${this.record.id}`,
     })
@@ -218,9 +226,9 @@ UserModel.prototype.create = async function ({ body }) {
  * Login based on username + password
  */
 UserModel.prototype.passwordLogin = async function (req) {
-  if (Object.keys(req.body) < 1) return this.setReponse(400, 'postBodyMissing')
-  if (!req.body.username) return this.setReponse(400, 'usernameMissing')
-  if (!req.body.password) return this.setReponse(400, 'passwordMissing')
+  if (Object.keys(req.body) < 1) return this.setResponse(400, 'postBodyMissing')
+  if (!req.body.username) return this.setResponse(400, 'usernameMissing')
+  if (!req.body.password) return this.setResponse(400, 'passwordMissing')
 
   await this.find(req.body)
   if (!this.exists) {
@@ -235,12 +243,19 @@ UserModel.prototype.passwordLogin = async function (req) {
     return this.setResponse(401, 'loginFailed')
   }
 
-  log.info(`Login by user ${this.record.id} (${this.record.username})`)
+  // Check for MFA
+  if (this.record.mfaEnabled) {
+    if (!req.body.token) return this.setResponse(403, 'mfaTokenRequired')
+    else if (!this.mfa.verify(req.body.token, this.clear.mfaSecret)) {
+      return this.setResponse(401, 'loginFailed')
+    }
+  }
 
   // Login success
+  log.info(`Login by user ${this.record.id} (${this.record.username})`)
   if (updatedPasswordField) {
     // Update the password field with a v3 hash
-    await this.safeUpdate({ password: updatedPasswordField })
+    await this.unguardedUpdate({ password: updatedPasswordField })
   }
 
   return this.isOk() ? this.loginOk() : this.setResponse(401, 'loginFailed')
@@ -250,7 +265,7 @@ UserModel.prototype.passwordLogin = async function (req) {
  * Confirms a user account
  */
 UserModel.prototype.confirm = async function ({ body, params }) {
-  if (!params.id) return this.setReponse(404, 'missingConfirmationId')
+  if (!params.id) return this.setResponse(404, 'missingConfirmationId')
   if (Object.keys(body) < 1) return this.setResponse(400, 'postBodyMissing')
   if (!body.consent || typeof body.consent !== 'number' || body.consent < 1)
     return this.setResponse(400, 'consentRequired')
@@ -280,7 +295,7 @@ UserModel.prototype.confirm = async function ({ body, params }) {
   if (this.error) return this
 
   // Update user status, consent, and last login
-  await this.safeUpdate({
+  await this.unguardedUpdate({
     status: 1,
     consent: body.consent,
     lastLogin: new Date(),
@@ -295,7 +310,7 @@ UserModel.prototype.confirm = async function ({ body, params }) {
  * Updates the user data - Used when we create the data ourselves
  * so we know it's safe
  */
-UserModel.prototype.safeUpdate = async function (data) {
+UserModel.prototype.unguardedUpdate = async function (data) {
   try {
     this.record = await this.prisma.user.update({
       where: { id: this.record.id },
@@ -315,13 +330,16 @@ UserModel.prototype.safeUpdate = async function (data) {
  * Updates the user data - Used when we pass through user-provided data
  * so we can't be certain it's safe
  */
-UserModel.prototype.unsafeUpdate = async function (body) {
+UserModel.prototype.guardedUpdate = async function ({ body, user }) {
+  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
   const data = {}
-  const notes = []
   // Bio
   if (typeof body.bio === 'string') data.bio = body.bio
   // Consent
   if ([0, 1, 2, 3].includes(body.consent)) data.consent = body.consent
+  // Consent
+  if ([1, 2, 3, 4, 5].includes(body.control)) data.control = body.control
   // Github
   if (typeof body.github === 'string') data.github = body.github.split('@').pop()
   // Imperial
@@ -343,45 +361,30 @@ UserModel.prototype.unsafeUpdate = async function (body) {
       notes.push('usernameChangeRejected')
     }
   }
+  // Image (img)
+  if (typeof body.img === 'string') {
+    const img = await setUserAvatar(this.record.id, body.img)
+    data.img = img.url
+  }
 
   // Now update the record
-  await this.safeUpdate(this.cloak(data))
+  await this.unguardedUpdate(this.cloak(data))
 
-  // Email change requires confirmation
+  const isUnitTest = this.isUnitTest(body)
   if (typeof body.email === 'string' && this.clear.email !== clean(body.email)) {
-    if (typeof body.confirmation === 'string') {
-      // Retrieve confirmation record
-      await this.Confirmation.read({ id: body.confirmation })
-
-      if (!this.Confirmation.exists) {
-        log.warn(err, `Could not find confirmation id ${params.id}`)
-        return this.setResponse(404, 'failedToFindConfirmationId')
-      }
-
-      if (this.Confirmation.record.type !== 'emailchange') {
-        log.warn(err, `Confirmation mismatch; ${params.id} is not an emailchange id`)
-        return this.setResponse(404, 'confirmationIdTypeMismatch')
-      }
-
-      const data = this.Confirmation.clear.data
-      if (data.email.current === this.clear.email && typeof data.email.new === 'string') {
-        await this.saveUpdate({
-          email: this.encrypt(data.email),
-        })
-      }
-    } else {
-      // Create confirmation for email change
-      this.confirmation = await this.Confirmation.create({
-        type: 'emailchange',
-        data: {
-          language: this.record.language,
-          email: {
-            current: this.clear.email,
-            new: body.email,
-          },
+    // Email change (requires confirmation)
+    this.confirmation = await this.Confirmation.create({
+      type: 'emailchange',
+      data: {
+        language: this.record.language,
+        email: {
+          current: this.clear.email,
+          new: body.email,
         },
-        userId: this.record.id,
-      })
+      },
+      userId: this.record.id,
+    })
+    if (!isUnitTest || this.config.tests.sendEmail) {
       // Send confirmation email
       await this.mailer.send({
         template: 'emailchange',
@@ -395,12 +398,112 @@ UserModel.prototype.unsafeUpdate = async function (body) {
         },
       })
     }
+  } else if (typeof body.confirmation === 'string' && body.confirm === 'emailchange') {
+    // Handle email change confirmation
+    await this.Confirmation.read({ id: body.confirmation })
+
+    if (!this.Confirmation.exists) {
+      log.warn(err, `Could not find confirmation id ${params.id}`)
+      return this.setResponse(404, 'failedToFindConfirmationId')
+    }
+
+    if (this.Confirmation.record.type !== 'emailchange') {
+      log.warn(err, `Confirmation mismatch; ${params.id} is not an emailchange id`)
+      return this.setResponse(404, 'confirmationIdTypeMismatch')
+    }
+
+    const data = this.Confirmation.clear.data
+    if (data.email.current === this.clear.email && typeof data.email.new === 'string') {
+      await this.unguardedUpdate({
+        email: this.encrypt(data.email.new),
+        ehash: hash(clean(data.email.new)),
+      })
+    }
   }
 
-  return this.setResponse(200, false, {
+  const returnData = {
     result: 'success',
     account: this.asAccount(),
-  })
+  }
+  if (isUnitTest) returnData.confirmation = this.Confirmation.record.id
+
+  return this.setResponse(200, false, returnData)
+}
+
+/*
+ * Enables/Disables MFA on the account - Used when we pass through
+ * user-provided data so we can't be certain it's safe
+ */
+UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
+  if (user.level < 4) return this.setResponse(403, 'insufficientAccessLevel')
+  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
+  if (body.mfa === true && this.record.mfaEnabled === true)
+    return this.setResponse(400, 'mfaActive')
+
+  // Disable
+  if (body.mfa === false) {
+    if (!body.token) return this.setResponse(400, 'mfaTokenRequired')
+    if (!body.password) return this.setResponse(400, 'passwordRequired')
+    // Check password
+    const [valid] = verifyPassword(body.password, this.record.password)
+    if (!valid) {
+      console.log('password check failed')
+      log.warn(`Wrong password for existing user while disabling MFA: ${user.uid} from ${ip}`)
+      return this.setResponse(401, 'authenticationFailed')
+    }
+    // Check MFA token
+    if (this.mfa.verify(body.token, this.clear.mfaSecret)) {
+      // Looks good. Disable MFA
+      try {
+        await this.unguardedUpdate({ mfaEnabled: false })
+      } catch (err) {
+        log.warn(err, 'Could not disable MFA after token check')
+        return this.setResponse(500, 'mfaDeactivationFailed')
+      }
+      return this.setResponse(200, false, {})
+    } else {
+      console.log('token check failed')
+      return this.setResponse(401, 'authenticationFailed')
+    }
+  }
+  // Confirm
+  else if (body.mfa === true && body.token && body.secret) {
+    if (body.secret === this.clear.mfaSecret && this.mfa.verify(body.token, this.clear.mfaSecret)) {
+      // Looks good. Enable MFA
+      try {
+        await this.unguardedUpdate({
+          mfaEnabled: true,
+        })
+      } catch (err) {
+        log.warn(err, 'Could not enable MFA after token check')
+        return this.setResponse(500, 'mfaActivationFailed')
+      }
+      return this.setResponse(200, false, {})
+    } else return this.setResponse(403, 'mfaTokenInvalid')
+  }
+  // Enroll
+  else if (body.mfa === true && this.record.mfaEnabled === false) {
+    let mfa
+    try {
+      mfa = await this.mfa.enroll(this.record.username)
+    } catch (err) {
+      log.warn(err, 'Failed to enroll MFA')
+    }
+
+    // Update mfaSecret
+    try {
+      await this.unguardedUpdate({
+        mfaSecret: this.encrypt(mfa.secret),
+      })
+    } catch (err) {
+      log.warn(err, 'Could not update username after user creation')
+      return this.setResponse(500, 'usernameUpdateAfterUserCreationFailed')
+    }
+
+    return this.setResponse(200, false, { mfa })
+  }
+
+  return this.setResponse(400, 'invalidMfaSetting')
 }
 
 /*
@@ -411,14 +514,16 @@ UserModel.prototype.asAccount = function () {
     id: this.record.id,
     bio: this.clear.bio,
     consent: this.record.consent,
+    control: this.record.control,
     createdAt: this.record.createdAt,
-    data: this.clear.data,
     email: this.clear.email,
     github: this.clear.github,
+    img: this.record.img,
     imperial: this.record.imperial,
     initial: this.clear.initial,
     language: this.record.language,
     lastLogin: this.record.lastLogin,
+    mfaEnabled: this.record.mfaEnabled,
     newsletter: this.record.newsletter,
     patron: this.record.patron,
     role: this.record.role,
@@ -481,7 +586,11 @@ UserModel.prototype.sendResponse = async function (res) {
  * part of a unit test
  */
 UserModel.prototype.isUnitTest = function (body) {
-  return body.unittest && this.clear.email.split('@').pop() === this.config.tests.domain
+  if (!body.unittest) return false
+  if (!this.clear.email.split('@').pop() === this.config.tests.domain) return false
+  if (body.email && !body.email.split('@').pop() === this.config.tests.domain) return false
+
+  return true
 }
 
 /*
@@ -519,7 +628,6 @@ UserModel.prototype.loginOk = function () {
  */
 UserModel.prototype.isLusernameAvailable = async function (lusername) {
   if (lusername.length < 2) return false
-  if (lusername.slice(0, 5) === 'user-') return false
   let found
   try {
     found = await this.prisma.user.findUnique({ where: { lusername } })

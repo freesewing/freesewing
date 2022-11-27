@@ -27,11 +27,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Setup Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+          cache: 'yarn'
       - name: Install dependencies
         run: npx lerna bootstrap
         env:
@@ -43,7 +44,7 @@ jobs:
       - name: Upload to codecov.io
         uses: codecov/codecov-action@v3
         with:
-          files: ./packages/core/coverage/coverage-final.json
+          files: ./packages/core/coverage/lcov.info
           flags: core
           name: codecov-core
-          fail_ci_if_error: true
+          fail_ci_if_error: false

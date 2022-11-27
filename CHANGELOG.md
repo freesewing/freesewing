@@ -25,6 +25,20 @@
 
  - Workaround for not finding a suitable legband radius
 
+### unice
+
+#### Added
+
+ - Added new Front Curve and Back Curve style options
+
+#### Changed
+
+ - Updated gusset to always curve inward
+
+#### Fixed
+
+ - Fixed bug which prevented parts from being generated as intended
+
 ### waralee
 
 #### Added

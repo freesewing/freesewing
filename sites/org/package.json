@@ -1,10 +1,22 @@
 {
+  "private": true,
   "name": "freesewing.org",
   "version": "3.0.0-alpha.2",
-  "private": true,
+  "description": "Source code for the FreeSewing.org website",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://freesewing.org/patrons/join"
+  },
   "scripts": {
     "dev": "SITE=org node --experimental-json-modules ./node_modules/.bin/next dev -p 8000",
-    "prebuild": "SITE=org node ../freesewing.shared/prebuild/index.mjs",
+    "prebuild": "SITE=org node ../shared/prebuild/index.mjs",
     "i18n": "SITE=org node ../freesewing.shared/prebuild/i18n-only.mjs",
     "build": "next build",
     "cibuild": "yarn prebuild && node --experimental-json-modules ./node_modules/.bin/next build",
