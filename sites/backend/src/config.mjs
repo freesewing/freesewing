@@ -58,6 +58,9 @@ const config = {
   },
   languages: ['en', 'de', 'es', 'fr', 'nl'],
   measies: measurements,
+  mfa: {
+    service: process.env.BACKEND_MFA_SERVICE || 'FreeSewing',
+  },
   port,
   roles: {
     levels: {

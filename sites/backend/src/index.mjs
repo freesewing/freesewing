@@ -13,6 +13,8 @@ import { verifyConfig } from './config.mjs'
 import { loadExpressMiddleware, loadPassportMiddleware } from './middleware.mjs'
 // Encryption
 import { encryption } from './utils/crypto.mjs'
+// Multi-Factor Authentication (MFA)
+import { mfa } from './utils/mfa.mjs'
 // Email
 import { mailer } from './utils/email.mjs'
 
@@ -28,6 +30,7 @@ const tools = {
   passport,
   prisma,
   ...encryption(config.encryption.key),
+  ...mfa(config.mfa),
   ...mailer(config),
   config,
 }

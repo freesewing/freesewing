@@ -10,9 +10,10 @@ export function UserModel(tools) {
   this.prisma = tools.prisma
   this.decrypt = tools.decrypt
   this.encrypt = tools.encrypt
+  this.mfa = tools.mfa
   this.mailer = tools.email
   this.Confirmation = new ConfirmationModel(tools)
-  this.encryptedFields = ['bio', 'github', 'email', 'initial', 'img']
+  this.encryptedFields = ['bio', 'github', 'email', 'initial', 'img', 'mfaSecret']
   this.clear = {} // For holding decrypted data
 
   return this
@@ -163,6 +164,8 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
       username,
       lusername: username,
       language: body.language,
+      mfaEnabled: false,
+      mfaSecret: this.encrypt(''),
       password: asJson(hashPassword(randomString())), // We'll change this later
       github: this.encrypt(''),
       bio: this.encrypt(''),
@@ -240,9 +243,16 @@ UserModel.prototype.passwordLogin = async function (req) {
     return this.setResponse(401, 'loginFailed')
   }
 
-  log.info(`Login by user ${this.record.id} (${this.record.username})`)
+  // Check for MFA
+  if (this.record.mfaEnabled) {
+    if (!req.body.token) return this.setResponse(403, 'mfaTokenRequired')
+    else if (!this.mfa.verify(req.body.token, this.clear.mfaSecret)) {
+      return this.setResponse(401, 'loginFailed')
+    }
+  }
 
   // Login success
+  log.info(`Login by user ${this.record.id} (${this.record.username})`)
   if (updatedPasswordField) {
     // Update the password field with a v3 hash
     await this.unguardedUpdate({ password: updatedPasswordField })
@@ -421,6 +431,82 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
 }
 
 /*
+ * Enables/Disables MFA on the account - Used when we pass through
+ * user-provided data so we can't be certain it's safe
+ */
+UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
+  if (user.level < 4) return this.setResponse(403, 'insufficientAccessLevel')
+  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
+  if (body.mfa === true && this.record.mfaEnabled === true)
+    return this.setResponse(400, 'mfaActive')
+
+  // Disable
+  if (body.mfa === false) {
+    if (!body.token) return this.setResponse(400, 'mfaTokenRequired')
+    if (!body.password) return this.setResponse(400, 'passwordRequired')
+    // Check password
+    const [valid] = verifyPassword(body.password, this.record.password)
+    if (!valid) {
+      console.log('password check failed')
+      log.warn(`Wrong password for existing user while disabling MFA: ${user.uid} from ${ip}`)
+      return this.setResponse(401, 'authenticationFailed')
+    }
+    // Check MFA token
+    if (this.mfa.verify(body.token, this.clear.mfaSecret)) {
+      // Looks good. Disable MFA
+      try {
+        await this.unguardedUpdate({ mfaEnabled: false })
+      } catch (err) {
+        log.warn(err, 'Could not disable MFA after token check')
+        return this.setResponse(500, 'mfaDeactivationFailed')
+      }
+      return this.setResponse(200, false, {})
+    } else {
+      console.log('token check failed')
+      return this.setResponse(401, 'authenticationFailed')
+    }
+  }
+  // Confirm
+  else if (body.mfa === true && body.token && body.secret) {
+    if (body.secret === this.clear.mfaSecret && this.mfa.verify(body.token, this.clear.mfaSecret)) {
+      // Looks good. Enable MFA
+      try {
+        await this.unguardedUpdate({
+          mfaEnabled: true,
+        })
+      } catch (err) {
+        log.warn(err, 'Could not enable MFA after token check')
+        return this.setResponse(500, 'mfaActivationFailed')
+      }
+      return this.setResponse(200, false, {})
+    } else return this.setResponse(403, 'mfaTokenInvalid')
+  }
+  // Enroll
+  else if (body.mfa === true && this.record.mfaEnabled === false) {
+    let mfa
+    try {
+      mfa = await this.mfa.enroll(this.record.username)
+    } catch (err) {
+      log.warn(err, 'Failed to enroll MFA')
+    }
+
+    // Update mfaSecret
+    try {
+      await this.unguardedUpdate({
+        mfaSecret: this.encrypt(mfa.secret),
+      })
+    } catch (err) {
+      log.warn(err, 'Could not update username after user creation')
+      return this.setResponse(500, 'usernameUpdateAfterUserCreationFailed')
+    }
+
+    return this.setResponse(200, false, { mfa })
+  }
+
+  return this.setResponse(400, 'invalidMfaSetting')
+}
+
+/*
  * Returns account data
  */
 UserModel.prototype.asAccount = function () {
@@ -430,7 +516,6 @@ UserModel.prototype.asAccount = function () {
     consent: this.record.consent,
     control: this.record.control,
     createdAt: this.record.createdAt,
-    data: this.clear.data,
     email: this.clear.email,
     github: this.clear.github,
     img: this.record.img,
@@ -438,6 +523,7 @@ UserModel.prototype.asAccount = function () {
     initial: this.clear.initial,
     language: this.record.language,
     lastLogin: this.record.lastLogin,
+    mfaEnabled: this.record.mfaEnabled,
     newsletter: this.record.newsletter,
     patron: this.record.patron,
     role: this.record.role,

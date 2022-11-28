@@ -1,18 +1,23 @@
 import CopyToClipboard from 'shared/components/copy-to-clipboard'
+import StatusCode from './status-code.js'
 
 const names = {
   js: 'Javascript',
   bash: 'Bash prompt',
   sh: 'Shell prompt',
-  json: 'file.json',
+  json: 'JSON',
   yaml: 'file.yaml',
 }
 
 const Highlight = (props) => {
   let language = 'txt'
+  let status = false
   if (props.language) language = props.language
   if (props.children?.props?.className) {
     language = props.children.props.className.split('-').pop()
+    if (language.indexOf('.') !== -1) {
+      ;[status, language] = language.split('.')
+    }
   }
 
   const preProps = {
@@ -24,14 +29,14 @@ const Highlight = (props) => {
     <div className="hljs my-4">
       <div
         className={`
-        flex flex-row justify-between
+        flex flex-row justify-between items-center
         text-xs font-medium text-warning
         mt-1 border-b border-neutral-content border-opacity-25
         px-4 py-1 mb-2 lg:text-sm
       `}
       >
         <span>{names[language] ? names[language] : language}</span>
-        <CopyToClipboard content={props.children} />
+        {status ? <StatusCode status={status} /> : <CopyToClipboard content={props.children} />}
       </div>
       <pre {...preProps}>{props.children}</pre>
     </div>

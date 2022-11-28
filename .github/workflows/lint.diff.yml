@@ -34,8 +34,8 @@ jobs:
         run: npx lerna bootstrap
         env:
           CI: true
-      - name: Build all
-        run: npm run buildall
+      - name: Prebuild Packages
+        run: npx lerna run prebuild
       - name: Run eslint
         run: |
           changed_files="$(git diff --name-only origin/${{ github.base_ref }})"

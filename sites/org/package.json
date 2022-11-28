@@ -16,7 +16,7 @@
   },
   "scripts": {
     "dev": "SITE=org node --experimental-json-modules ./node_modules/.bin/next dev -p 8000",
-    "prebuild": "SITE=org node ../freesewing.shared/prebuild/index.mjs",
+    "prebuild": "SITE=org node ../shared/prebuild/index.mjs",
     "i18n": "SITE=org node ../freesewing.shared/prebuild/i18n-only.mjs",
     "build": "next build",
     "cibuild": "yarn prebuild && node --experimental-json-modules ./node_modules/.bin/next build",
