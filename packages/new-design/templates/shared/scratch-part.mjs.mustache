@@ -1,28 +1,30 @@
-import { {{part}} as {{baseName}}{{partUpcase}} } from '@freesewing/{{baseName}}'
+{{#pluginBundle}}
+import { pluginBundle } from '@freesewing/plugin-bundle'
+{{/pluginBundle}}
 
-function draft{{partUpcase}} ({
+function draft{{partUpcase}}({
   // Uncomment below to destructure what you need
   /*
    * Content constructors
    */
-  //Path,	   // A Path constructor to create new paths
-  //Point,   // A Point constructor to create new points
-  //Snippet, // A Snippet constructor to create new snippets
+  Path,	   // A Path constructor to create new paths
+  Point,   // A Point constructor to create new points
+  Snippet, // A Snippet constructor to create new snippets
   /*
    * Content constainers
    */
-  //paths,    // Add a Path to your part by adding it to this object
-  //points,   // Add a Points to your part by adding it to this object
-  //snippets, // Add a Snippet to your part by adding it to this object
+  paths,    // Add a Path to your part by adding it to this object
+  points,   // Add a Points to your part by adding it to this object
+  snippets, // Add a Snippet to your part by adding it to this object
   /*
    * Access to settings
    */
   //absoluteOptions, // Access to settings.absoluteOptions
-  //complete,        // Access to settings.complete
+  complete,        // Access to settings.complete
   //measurements,    // Access to settings.measurements
-  //options,         // Access to settings.options
-  //paperless,       // Access to settings.paperless
-  //sa,              // Access to settings.sa
+  options,         // Access to settings.options
+  paperless,       // Access to settings.paperless
+  sa,              // Access to settings.sa
   //scale,           // Access to settings.scale
   /*
    * Access to utilities
@@ -30,7 +32,7 @@ function draft{{partUpcase}} ({
   //getId,     //See the getId documentation
   //hide,      //See the hide documentation
   //log,       //See the logging documentation
-  //macro,     //See the macros documentation
+  macro,     //See the macros documentation
   //setHidden, //See the setHidden documentation
   //store,     //See the store documentation
   //unhide,    //See the unhide documentation
@@ -42,7 +44,53 @@ function draft{{partUpcase}} ({
   part, // Your draft method must return this
 }) {
 
-  // Work your magic here
+  // Add points to make a box
+  const w = 500 * options.size
+  points.topLeft = new Point(0, 0)
+  points.topRight = new Point(w, 0)
+  points.bottomLeft = new Point(0, w / 2)
+  points.bottomRight = new Point(w, w / 2)
+
+  // Create a path for the box outline
+  paths.seam = new Path()
+    .move(points.topLeft)
+    .line(points.bottomLeft)
+    .line(points.bottomRight)
+    .line(points.topRight)
+    .line(points.topLeft)
+    .close()
+    .setClass('fabric')
+
+  // Complete?
+  if (complete) {
+    // Add a logo
+    points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
+    snippets.logo = new Snippet('logo', points.logo)
+
+    // Add some text
+    points.text = points.logo
+      .shift(-90, w / 8)
+      .addText('FreeSewing', 'center')
+
+    if (sa) {
+      // Add seam allowance
+      paths.sa = paths.seam.offset(sa).setClass('fabric sa')
+    }
+  }
+
+  // Add dimensions for paperless mode
+  if (paperless) {
+    macro('hd', {
+      from: points.bottomLeft,
+      to: points.bottomRight,
+      y: points.bottomLeft.y + sa + 15,
+    })
+    macro('vd', {
+      from: points.bottomRight,
+      to: points.topRight,
+      x: points.topRight.x + sa + 15,
+    })
+  }
 
   return part
 }
@@ -79,13 +127,14 @@ export const {{part}} = {
   /*
    * from: Holds the part you want to extend.
    *
-   * Since you opted to extend {{baseNameUpcase}}, and this is the {{part}} part,
-   * we're extending {{baseNameUpcase}}'s {{part}} part here.
-   * It was imported at the top of this file from @freesewing/{{baseNameUpcase}}
+   * Since we're not extending anything here we set it to false.
+   *
+   * In a situation like this where you are not extending a part
+   * you can remove the from key entirely.
    *
    * Documentation: https://freesewing.dev/reference/api/part/config/dependencies
    */
-  from: {{baseName}}{{partUpcase}},
+  from: false,
   /*
    * hide: Set this to true to hide a part.
    *
@@ -97,11 +146,10 @@ export const {{part}} = {
   /*
    * hideDependecies: Set this to true to hide a part's dependencies.
    *
-   * We've set this to true here since you're extending {{baseNameUpcase}}'s {{part}} part.
    * I you don't want to hide this part's dependencies,
    * you can remove the hideDependencies key entirely.
    */
-  hideDependencies: true,
+  hideDependencies: false,
   /*
    * hideAll: Set this to true to hide both the part and its dependencies.
    *
@@ -117,22 +165,21 @@ export const {{part}} = {
      * options: Holds (the configuration of) options for this part
      *
      * Declare options used in this part here.
-     * You only need to add additional options.
-     * All options coming from {{baseNameUpcase}}'s {{part}} part are already loaded.
      *
      * If you don't have any options to add,
      * you can remove this options key entirely.
      *
      * Documentation: https://freesewing.dev/reference/api/part/config/options
      */
+    {{#options}}
+    {{.}},
+    {{/options}}
   },
   measurements: [
     /*
      * measurements: Holds a list of measurements required by this part.
      *
      * Declare measurements required by this part here.
-     * You only need to add additional measurements.
-     * All measurements coming from {{baseNameUpcase}}'s {{part}} part are already loaded.
      *
      * If you don't have any required measurements to add,
      * you can remove this measurements key entirely.
@@ -157,13 +204,14 @@ export const {{part}} = {
      * plugins: Holds a list of plugins this part relies on.
      *
      * Add all the plugins here that you need in this part.
-     * You only need to add additional plugins.
-     * All plugins coming from {{baseNameUpcase}}'s {{part}} part are already loaded.
      *
      * If you don't have any plugins to add,
      * you can remove this plugins key entirely.
      *
      * Documentation: https://freesewing.dev/reference/api/part/config/plugins
      */
+    {{#pluginBundle}}
+    pluginBundle,
+    {{/pluginBundle}}
   ]
 }

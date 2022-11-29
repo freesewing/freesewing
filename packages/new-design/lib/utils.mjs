@@ -156,45 +156,50 @@ const copyTemplate = async (config, choices) => {
   const designSrcDir = join(config.dest, 'design/src')
 
   // Template the index file
+  const complexParts = typeof config.templateData.parts[0] === 'object'
   const indexTemplate = await readFile(config.files.templates['index'], 'utf-8')
   const indexTo = join(designSrcDir, 'index.mjs')
+  const partNames = complexParts
+    ? config.templateData.parts.map((p) => p.part)
+    : config.templateData.parts
   promises.push(
     writeTemplateFile(indexTo, indexTemplate, {
       name: choices.name,
-      parts: config.templateData.parts,
+      parts: partNames,
     })
   )
 
   // Template the parts
-  if (choices.template !== 'scratch') {
-    const partTemplate = await readFile(config.files.templates['inherited-part'], 'utf-8')
-    const baseConfig = {
-      baseName: choices.template,
-      baseNameUpcase: choices.template[0].toUpperCase() + choices.template.slice(1),
-      name: choices.name,
-    }
-
-    config.templateData.parts.forEach(async (p) => {
-      const to = join(designSrcDir, `${p}.mjs`)
-      promises.push(
-        writeTemplateFile(to, partTemplate, {
-          part: p,
-          partUpcase: p[0].toUpperCase() + p.slice(1),
-          ...baseConfig,
-        })
-      )
-    })
+  const doesInherit = !config.templateData.noInheritance
+  const partTemplate = await readFile(config.files.templates.part, 'utf-8')
+  const baseConfig = {
+    name: choices.name,
+    doesInherit,
   }
 
-  // // Template files
-  // for (const from of config.files.template) {
-  //   let to = join(config.dest, from.slice(config.source.template.length - 7))
-  //   if (to.slice(-9) === '.mustache') to = to.slice(0, -9)
-  //   if (!dirs[to]) await ensureDir(to)
-  //   // Template out file
-  //   const src = await readFile(from, 'utf-8')
-  //   promises.push(writeFile(to, mustache.render(src, { name: choices.name, tag: config.tag })))
-  // }
+  if (doesInherit) {
+    baseConfig.baseName = choices.template
+    baseConfig.baseNameUpcase = choices.template[0].toUpperCase() + choices.template.slice(1)
+  }
+
+  config.templateData.parts.forEach((p) => {
+    const templateArgs = doesInherit
+      ? {
+          ...baseConfig,
+          draftUses: {},
+          part: p,
+        }
+      : {
+          ...baseConfig,
+          draftUses: {},
+          ...p,
+        }
+
+    templateArgs.partUpcase = templateArgs.part[0].toUpperCase() + templateArgs.part.slice(1)
+
+    const to = join(designSrcDir, `${templateArgs.part}.mjs`)
+    promises.push(writeTemplateFile(to, partTemplate, templateArgs))
+  })
 
   await Promise.all(promises)
 

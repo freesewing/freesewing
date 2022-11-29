@@ -24,7 +24,7 @@
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
     "lint": "npx eslint 'lib/*.mjs'",
-    "i18n-only": "node ../../sites/shared/prebuild/i18n-only.mjs"
+    "i18n-only": "SITE=\"new-design/shared\" node ../../sites/shared/prebuild/i18n-only.mjs"
   },
   "peerDependencies": {},
   "dependencies": {
