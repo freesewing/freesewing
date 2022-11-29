@@ -1,9 +1,9 @@
 // Import Design constructor
 import { Design } from '@freesewing/core'
 // Import parts
-import { back } from './back'
-import { front } from './front'
-import { sleeve } from './sleeve'
+{{#parts}}
+import { {{.}} } from './{{.}}.mjs'
+{{/parts}}
 
 // Create the new design
 const Pattern = new Design({
@@ -18,7 +18,7 @@ const Pattern = new Design({
     name: "{{ name }}",
   },
   // A list of parts is all that is required.
-  parts: [ back, front, sleeve ],
+  parts: [ {{parts}} ],
 })
 
 /*
@@ -27,5 +27,5 @@ const Pattern = new Design({
  * We export the design itself as well as each part individually.
  * This allows us to re-use these parts in other designs.
  */
-export { back, front, sleeve, Pattern }
+export { {{#parts}}{{.}}, {{/parts}}Pattern }
 

@@ -123,11 +123,17 @@ const ensureDir = async (file, suppress = false) => {
   }
 }
 
+const writeTemplateFile = async (to, template, args) => {
+  if (!dirs[to]) await ensureDir(to)
+
+  return writeFile(to, mustache.render(template, args))
+}
 // Helper method to copy template files
 const copyTemplate = async (config, choices) => {
   // Copy files in parallel rather than using await
   const promises = []
 
+  // const templateConfig
   // Copy shared files
   for (const from of config.files.shared) {
     // FIXME: Explain the -7
@@ -136,15 +142,59 @@ const copyTemplate = async (config, choices) => {
     promises.push(copyFile(from, to))
   }
 
-  // Template files
-  for (const from of config.files.template) {
-    let to = join(config.dest, from.slice(config.source.template.length - 7))
-    if (to.slice(-9) === '.mustache') to = to.slice(0, -9)
-    if (!dirs[to]) await ensureDir(to)
-    // Template out file
-    const src = await readFile(from, 'utf-8')
-    promises.push(writeFile(to, mustache.render(src, { name: choices.name, tag: config.tag })))
+  // Template the package.json
+  const packageJsonTemplate = await readFile(config.files.templates['package.json'], 'utf-8')
+  const packageJsonTo = join(config.dest, 'package.json')
+  promises.push(
+    writeTemplateFile(packageJsonTo, packageJsonTemplate, {
+      name: choices.name,
+      tag: config.tag,
+      dependencies: config.templateData.dependencies,
+    })
+  )
+
+  const designSrcDir = join(config.dest, 'design/src')
+
+  // Template the index file
+  const indexTemplate = await readFile(config.files.templates['index'], 'utf-8')
+  const indexTo = join(designSrcDir, 'index.mjs')
+  promises.push(
+    writeTemplateFile(indexTo, indexTemplate, {
+      name: choices.name,
+      parts: config.templateData.parts,
+    })
+  )
+
+  // Template the parts
+  if (choices.template !== 'scratch') {
+    const partTemplate = await readFile(config.files.templates['inherited-part'], 'utf-8')
+    const baseConfig = {
+      baseName: choices.template,
+      baseNameUpcase: choices.template[0].toUpperCase() + choices.template.slice(1),
+      name: choices.name,
+    }
+
+    config.templateData.parts.forEach(async (p) => {
+      const to = join(designSrcDir, `${p}.mjs`)
+      promises.push(
+        writeTemplateFile(to, partTemplate, {
+          part: p,
+          partUpcase: p[0].toUpperCase() + p.slice(1),
+          ...baseConfig,
+        })
+      )
+    })
   }
+
+  // // Template files
+  // for (const from of config.files.template) {
+  //   let to = join(config.dest, from.slice(config.source.template.length - 7))
+  //   if (to.slice(-9) === '.mustache') to = to.slice(0, -9)
+  //   if (!dirs[to]) await ensureDir(to)
+  //   // Template out file
+  //   const src = await readFile(from, 'utf-8')
+  //   promises.push(writeFile(to, mustache.render(src, { name: choices.name, tag: config.tag })))
+  // }
 
   await Promise.all(promises)
 
@@ -256,7 +306,8 @@ export const createEnvironment = async (choices) => {
   ;(config.cwd = cwd),
     (config.source = {
       root: cwd,
-      template: cwd + `/../templates/from-${choices.template}`,
+      templateData: cwd + `/../templates/from-${choices.template}.mjs`,
+      templates: join(cwd, `/../templates/shared`),
       shared: cwd + `/../shared`,
     })
   config.dest = join(process.cwd(), choices.name)
@@ -264,11 +315,21 @@ export const createEnvironment = async (choices) => {
   // Create target directory
   await mkdir(config.dest, { recursive: true })
 
+  const templateFiles = await rdir(config.source.templates)
+  const templates = {}
+  templateFiles.forEach(
+    (f) =>
+      (templates[f.replace(`${config.source.templates}/`, '').replace(/(\.mjs)*\.mustache/, '')] =
+        f)
+  )
+
   // Find files
   config.files = {
-    template: await rdir(config.source.template),
+    templates,
     shared: await rdir(config.source.shared),
   }
+
+  config.templateData = await import(config.source.templateData)
 
   // Output a linebreak
   console.log()
@@ -285,7 +346,7 @@ export const createEnvironment = async (choices) => {
       ),
     })
   } catch (err) {
-    /* no feedback here */
+    console.log(err)
   }
 
   // Install dependencies
