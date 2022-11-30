@@ -1,9 +1,8 @@
-//{{!
+{{!
 //    Change the Mustache delimiter from double curly braces to double dollar signs.
 //    Dollar signs are allowed in EcmaScript identifier names,
 //    which is helpful when running unrendered Mustache templates through eslint.
 //}}{{=$$ $$=}}
-
 // Import Design constructor
 import { Design } from '@freesewing/core'
 // Import parts
@@ -35,5 +34,5 @@ const Pattern = $$Name$$
  * This allows us to re-use these parts in other designs.
  */
 
-export { $$#parts$$ $$.$$ , $$/parts$$ $$Name$$, Pattern }
+export {$$#parts$$ $$.$$,$$/parts$$ $$Name$$, Pattern }
 

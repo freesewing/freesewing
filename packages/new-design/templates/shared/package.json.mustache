@@ -1,5 +1,10 @@
+{{!
+//    Change the Mustache delimiter from double curly braces to double dollar signs.
+//    Dollar signs are allowed in EcmaScript identifier names,
+//    which is helpful when running unrendered Mustache templates through eslint.
+//}}{{=$$ $$=}}
 {
-  "name": "@freesewing/{{name}}",
+  "name": "@freesewing/$$ name $$",
   "version": "0.0.1",
   "description": "A new FreeSewing design",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
@@ -33,17 +38,17 @@
     "vbuild": "VERBOSE=1 node build.js"
   },
   "dependencies": {
-    "@freesewing/core": "{{ tag }}",
-    {{#dependencies}}
-    "{{{.}}}": "{{tag}}",
-    {{/dependencies}}
-    "@freesewing/plugin-bundle": "{{ tag }}"
+    "@freesewing/core": "$$ tag $$",
+    $$ #dependencies $$
+    "$$& . $$": "$$ tag $$",
+    $$ /dependencies $$
+    "@freesewing/plugin-bundle": "$$ tag $$"
   },
   "devDependencies": {
-    "@freesewing/plugin-svgattr": "{{ tag }}",
-    "@freesewing/plugin-theme": "{{ tag }}",
-    "@freesewing/plugin-i18n": "{{ tag }}",
-    "@freesewing/models": "{{ tag }}",
+    "@freesewing/plugin-svgattr": "$$ tag $$",
+    "@freesewing/plugin-theme": "$$ tag $$",
+    "@freesewing/plugin-i18n": "$$ tag $$",
+    "@freesewing/models": "$$ tag $$",
     "@headlessui/react": "^1.6.5",
     "js-yaml": "^4.1.0",
     "file-saver": "^2.0.5",
