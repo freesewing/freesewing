@@ -123,11 +123,13 @@ const ensureDir = async (file, suppress = false) => {
   }
 }
 
+/** ensure a template file has a directory, then use mustache to render and save it */
 const writeTemplateFile = async (to, template, args) => {
   if (!dirs[to]) await ensureDir(to)
 
   return writeFile(to, mustache.render(template, args))
 }
+
 // Helper method to copy template files
 const copyTemplate = async (config, choices) => {
   // Copy files in parallel rather than using await
@@ -153,15 +155,20 @@ const copyTemplate = async (config, choices) => {
     })
   )
 
+  // design files go here
   const designSrcDir = join(config.dest, 'design/src')
 
   // Template the index file
-  const complexParts = typeof config.templateData.parts[0] === 'object'
   const indexTemplate = await readFile(config.files.templates['index'], 'utf-8')
   const indexTo = join(designSrcDir, 'index.mjs')
+
+  // does this base have parts with a lot of attending config?
+  const complexParts = typeof config.templateData.parts[0] === 'object'
+  // get the part names based on how they are given in the configuration
   const partNames = complexParts
     ? config.templateData.parts.map((p) => p.part)
     : config.templateData.parts
+  // write the file
   promises.push(
     writeTemplateFile(indexTo, indexTemplate, {
       name: choices.name,
@@ -170,33 +177,40 @@ const copyTemplate = async (config, choices) => {
   )
 
   // Template the parts
-  const doesInherit = !config.templateData.noInheritance
   const partTemplate = await readFile(config.files.templates.part, 'utf-8')
+  // does this design inherit from another?
+  const doesInherit = !config.templateData.noInheritance
+
+  // all part templates need these arguments
   const baseConfig = {
-    name: choices.name,
-    doesInherit,
+    name: choices.name, // the name of the design
+    doesInherit, // whether it's an inherited design
+    draftUses: {}, // what parameters need to be uncommented in the draft method (default none because part is always uncommented)
   }
 
+  // if it inherits, we also need the name of the design it inherits from
   if (doesInherit) {
     baseConfig.baseName = choices.template
     baseConfig.baseNameUpcase = choices.template[0].toUpperCase() + choices.template.slice(1)
   }
 
+  // for each part
   config.templateData.parts.forEach((p) => {
-    const templateArgs = doesInherit
+    // set up the arguments based on what's in the part's config
+    const templateArgs = complexParts
       ? {
           ...baseConfig,
-          draftUses: {},
           part: p,
         }
       : {
           ...baseConfig,
-          draftUses: {},
           ...p,
         }
 
+    // add an uppercase version of the partName
     templateArgs.partUpcase = templateArgs.part[0].toUpperCase() + templateArgs.part.slice(1)
 
+    // write the part file
     const to = join(designSrcDir, `${templateArgs.part}.mjs`)
     promises.push(writeTemplateFile(to, partTemplate, templateArgs))
   })

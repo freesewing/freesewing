@@ -2,8 +2,11 @@ export const noInheritance = true
 export const parts = [
   {
     part: 'box',
+    // this part uses the pluginBundle
     pluginBundle: true,
+    // options needs to be a string of the internals of the options object
     options: `size: { pct: 50, min: 10, max: 100 }`,
+    // the draft method needs all of these parameters uncommented
     draftUses: {
       options: true,
       points: true,
@@ -17,6 +20,7 @@ export const parts = [
       Snippet: true,
       macro: true,
     },
+    // the draft method
     draft: `// Add points to make a box
   const w = 500 * options.size
   points.topLeft = new Point(0, 0)
