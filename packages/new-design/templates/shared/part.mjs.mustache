@@ -1,11 +1,11 @@
 {{#doesInherit}}
-import { {{part}} as {{baseName}}{{partUpcase}} } from '@freesewing/{{baseName}}'
+import { {{part}} as {{baseName}}{{Part}} } from '@freesewing/{{baseName}}'
 {{/doesInherit}}
 {{#pluginBundle}}
 import { pluginBundle } from '@freesewing/plugin-bundle'
 {{/pluginBundle}}
 
-function draft{{partUpcase}} ({
+function draft{{Part}} ({
   // Uncomment below to destructure what you need
   /*
    * Content constructors
@@ -71,7 +71,7 @@ export const {{part}} = {
    *
    * Documentation: https://freesewing.dev/reference/api/part/draft
    */
-  draft: draft{{partUpcase}},
+  draft: draft{{Part}},
   after: [
     /*
      * after: Holds a list of parts that should be drafted prior to this part.
@@ -87,14 +87,16 @@ export const {{part}} = {
   /*
    * from: Holds the part you want to extend.
    *
-   * Since you opted to extend {{baseNameUpcase}}, and this is the {{part}} part,
-   * we're extending {{baseNameUpcase}}'s {{part}} part here.
-   * It was imported at the top of this file from @freesewing/{{baseNameUpcase}}
+   {{#doesInherit}}
+   * Since you opted to extend {{BaseName}}, and this is the {{part}} part,
+   * we're extending {{BaseName}}'s {{part}} part here.
+   * It was imported at the top of this file from @freesewing/{{BaseName}}
    *
+   {{/doesInherit}}
    * Documentation: https://freesewing.dev/reference/api/part/config/dependencies
    */
   {{#doesInherit}}
-  from: {{baseName}}{{partUpcase}},
+  from: {{baseName}}{{Part}},
   {{/doesInherit}}
   {{^doesInherit}}
   from: false,
@@ -103,15 +105,17 @@ export const {{part}} = {
    * hide: Set this to true to hide a part.
    *
    * We've set this to false here to clarify its use.
-   * I you don't want to hide this part,
+   * If you don't want to hide this part,
    * you can remove the hide key entirely.
    */
   hide: false,
   /*
    * hideDependecies: Set this to true to hide a part's dependencies.
    *
-   * We've set this to true here since you're extending {{baseNameUpcase}}'s {{part}} part.
-   * I you don't want to hide this part's dependencies,
+   {{#doesInherit}}
+   * We've set this to true here since you're extending {{BaseName}}'s {{part}} part.
+   {{/doesInherit}}
+   * If you don't want to hide this part's dependencies,
    * you can remove the hideDependencies key entirely.
    */
   hideDependencies: {{doesInherit}},
@@ -120,8 +124,8 @@ export const {{part}} = {
    *
    * This is a combination of the hide and hideDependencies keys in case
    * you want to both hide this part and its dependencies.
-   * We've included it here with a value of false to its use.
-   * I you don't want to hide this a part and its dependencies,
+   * We've included it here with a value of false.
+   * If you don't want to hide this a part and its dependencies,
    * you can remove the hideAll key entirely.
    */
   hideAll: false,
@@ -132,7 +136,7 @@ export const {{part}} = {
      * Declare options used in this part here.
      {{#doesInherit}}
      * You only need to add additional options.
-     * All options coming from {{baseNameUpcase}}'s {{part}} part are already loaded.
+     * All options coming from {{BaseName}}'s {{part}} part are already loaded.
      {{/doesInherit}}
      *
      * If you don't have any options to add,
@@ -149,7 +153,7 @@ export const {{part}} = {
      * Declare measurements required by this part here.
      {{#doesInherit}}
      * You only need to add additional measurements.
-     * All measurements coming from {{baseNameUpcase}}'s {{part}} part are already loaded.
+     * All measurements coming from {{BaseName}}'s {{part}} part are already loaded.
      {{/doesInherit}}
      *
      * If you don't have any required measurements to add,
@@ -177,7 +181,7 @@ export const {{part}} = {
      * Add all the plugins here that you need in this part.
      {{#doesInherit}}
      * You only need to add additional plugins.
-     * All plugins coming from {{baseNameUpcase}}'s {{part}} part are already loaded.
+     * All plugins coming from {{BaseName}}'s {{part}} part are already loaded.
      {{/doesInherit}}
      *
      * If you don't have any plugins to add,
