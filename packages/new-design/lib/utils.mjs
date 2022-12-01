@@ -19,12 +19,11 @@ try {
   filename = fileURLToPath(import.meta.url)
 }
 const newDesignDir = join(filename, '../..')
-const monorepoDesignsDir = join(newDesignDir, '../../designs')
+const designSrcDir = 'design/src'
 
 const nl = '\n'
 const tab = '  '
 const nlt = nl + tab
-const designSrcDir = 'design/src'
 
 // Checks for node 16 or higher
 export const checkNodeVersion = () => {
@@ -372,15 +371,6 @@ export const createEnvironment = async (choices) => {
 
   // Copy/Template files
   try {
-    try {
-      await stat(join(monorepoDesignsDir, choices.template))
-      if (choices.template !== 'tutorial') {
-        templateVars.block = choices.template
-      }
-    } catch (err) {
-      // fs.stat throws an error if no such file or directory exists
-    }
-
     await oraPromise(copyAll(config, choices), {
       text:
         chalk.white.bold('🟨⬜⬜⬜  Copying template files') +
