@@ -1,5 +1,5 @@
 import { config } from './config.mjs'
-import { mkdir, readFile, writeFile, copyFile, stat } from 'node:fs/promises'
+import { mkdir, readFile, writeFile, copyFile } from 'node:fs/promises'
 import { join, dirname, relative } from 'path'
 import mustache from 'mustache'
 import rdir from 'recursive-readdir'
