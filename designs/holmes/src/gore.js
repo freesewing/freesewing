@@ -30,12 +30,11 @@ export default function (part) {
     prefix: 'gore_',
     render: true,
   })
-
-  // Complete?
-  if (complete) {
+  
     store.set('circumference', points.gore_p3.dist(points.p0) * 2 * options.gores)
     store.set('goreLength', points.p0.dist(points.gore_p1))
-
+  // Complete?
+  if (complete) {
     points.title = new Point(points.gore_p1.x / 10, points.gore_p2.y / 1.8)
     macro('title', { at: points.title, nr: 1, title: 'crown', scale: 0.5 })
 
