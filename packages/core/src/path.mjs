@@ -167,6 +167,34 @@ Path.prototype.bbox = function () {
 }
 
 /**
+ * Returns this after cleaning out in-place path operations
+ *
+ * Cleaned means that any in-place ops will be removed
+ * An in-place op is when a drawing operation doesn't draw anything
+ * like a line from the point to the same point
+ *
+ * @return {Path} this - This, but cleaned
+ */
+Path.prototype.clean = function () {
+  const ops = []
+  for (const i in this.ops) {
+    const op = this.ops[i]
+    if (['move', 'close', 'noop'].includes(op.type)) ops.push(op)
+    else if (op.type === 'line') {
+      if (!op.to.sitsRoughlyOn(cur)) ops.push(op)
+    } else if (op.type === 'curve') {
+      if (!(op.cp1.sitsRoughlyOn(cur) && op.cp2.sitsRoughlyOn(cur) && op.to.sitsRoughlyOn(cur)))
+        ops.push(ops)
+    }
+    const cur = op?.to
+  }
+
+  if (ops.length < this.ops.length) this.ops = ops
+
+  return this
+}
+
+/**
  * Returns a deep copy of this path
  *
  * @return {Path} clone - A clone of this Path instance
@@ -1117,6 +1145,7 @@ function __asPath(bezier, log = false) {
       new Point(bezier.points[2].x, bezier.points[2].y),
       new Point(bezier.points[3].x, bezier.points[3].y)
     )
+    .clean()
 }
 
 /**
