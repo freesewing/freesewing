@@ -22,30 +22,32 @@ const translations = {
   },
 }
 
-const CommunityPage = (props) => {
+const CommunityPage = () => {
   const app = useApp()
 
-
   return (
-    <Page app={app} title='Community'>
+    <Page app={app} title="Community">
       <div className="max-w-7xl text-base-content text-lg lg:text-xl">
-
         <h2>{translations.contributors[app.locale]}</h2>
         <div className="p-4 pb-16 flex flex-row -mt-2 z-0 gap-1 lg:gap-2 flex-wrap justify-around lg:px-24">
-          <Worm list={contributors.map(item => ({
-            img: item.avatar_url,
-            title: item.name,
-            href: item.profile
-          }))} />
+          <Worm
+            list={contributors.map((item) => ({
+              img: item.avatar_url,
+              title: item.name,
+              href: item.profile,
+            }))}
+          />
         </div>
 
         <h2>{translations.patrons[app.locale]}</h2>
         <div className="p-4 pb-16 flex flex-row -mt-2 z-0 gap-1 lg:gap-2 flex-wrap justify-around text-neutral-content lg:px-24">
-          <Worm list={patrons.map(item => ({
-            img: item.img,
-            title: item.name,
-            slug: `/users/${item.username}`
-          }))} />
+          <Worm
+            list={patrons.map((item) => ({
+              img: item.img,
+              title: item.name,
+              slug: `/users/${item.username}`,
+            }))}
+          />
         </div>
       </div>
     </Page>
@@ -53,4 +55,3 @@ const CommunityPage = (props) => {
 }
 
 export default CommunityPage
-

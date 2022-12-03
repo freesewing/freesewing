@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import Link from 'next/link'
 import ThemePicker from 'shared/components/theme-picker.js'
 import LocalePicker from 'shared/components/locale-picker.js'
 import CloseIcon from 'shared/components/icons/close.js'

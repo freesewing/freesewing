@@ -9,21 +9,17 @@ import Design from 'site/components/design.js'
 // Don't bother with utilities
 delete designs.utilities
 
-const DesignsPage = (props) => {
+const DesignsPage = () => {
   const app = useApp()
   const { t } = useTranslation()
 
-  const allDesigns = [
-    ...designs.accessories,
-    ...designs.blocks,
-    ...designs.garments,
-  ].sort()
+  const allDesigns = [...designs.accessories, ...designs.blocks, ...designs.garments].sort()
 
   return (
     <Page app={app} title={t('designs')}>
       <div className="max-w-4xl m-auto text-center">
         <ul className="flex flex-row flex-wrap gap-4 items-center justify-center leading-tight text-xl">
-          {allDesigns.map(design => (
+          {allDesigns.map((design) => (
             <li key={design}>
               <PageLink href={`/designs/${design}`} txt={design} className="capitalize" />
             </li>
@@ -31,7 +27,9 @@ const DesignsPage = (props) => {
         </ul>
       </div>
       <div className="flex flex-row flex-wrap justify-around px-8 lg:gap-4">
-        {allDesigns.map(design => <Design key={design} design={design} />)}
+        {allDesigns.map((design) => (
+          <Design key={design} design={design} />
+        ))}
       </div>
     </Page>
   )
@@ -43,7 +41,6 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale)),
-    }
+    },
   }
 }
-

@@ -18,7 +18,7 @@ const PreviewTile = ({ img, slug, title }) => (
     `}
   >
     <Link href={`/showcase/${slug}`}>
-      <a className="w-36 h-36 block" title={title}/>
+      <a className="w-36 h-36 block" title={title} />
     </Link>
   </div>
 )
@@ -26,21 +26,25 @@ const PreviewTile = ({ img, slug, title }) => (
 const DesignPosts = ({ design, posts }) => {
   const { t } = useTranslation(['patterns'])
   return (
-    <div className='py-8'>
+    <div className="py-8">
       <h2 className="bg-clip-text bg-success m-0">
         <PageLink href={`/showcase/designs/${design}`} txt={t(`${design}.t`)} />
       </h2>
-      <div className={`
+      <div
+        className={`
         flex flex-row overflow-visible
         -mr-8 pl-8
         md:-mr-12 md:pl-12
-      `}>
-      {posts.slice(0, 10).map(post => <PreviewTile
-        img={`${strapiHost}${post.image?.sizes?.medium?.url}`}
-        slug={post.slug}
-        title={post.title}
-        key={post.slug}
-      />)}
+      `}
+      >
+        {posts.slice(0, 10).map((post) => (
+          <PreviewTile
+            img={`${strapiHost}${post.image?.sizes?.medium?.url}`}
+            slug={post.slug}
+            title={post.title}
+            key={post.slug}
+          />
+        ))}
       </div>
     </div>
   )
@@ -58,17 +62,22 @@ const ShowcaseIndexPage = (props) => {
   }
 
   return (
-    <Page app={app} title={t('showcase')} slug='showcase'>
-      <div className={`
+    <Page app={app} title={t('showcase')} slug="showcase">
+      <div
+        className={`
         px-8 2xl:pl-16 overflow-visible overscroll-x-hidden
         max-w-sm
         md:max-w-md
         lg:max-w-lg
         xl:max-w-3xl
         2xl:max-w-7xl
-      `}>
-        {Object.keys(designs).sort().map(design => <DesignPosts
-          key={design} design={design} posts={designs[design]} />)}
+      `}
+      >
+        {Object.keys(designs)
+          .sort()
+          .map((design) => (
+            <DesignPosts key={design} design={design} posts={designs[design]} />
+          ))}
       </div>
     </Page>
   )
@@ -86,18 +95,17 @@ export default ShowcaseIndexPage
  *
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
-export async function getStaticProps({ params, locale }) {
-
+export async function getStaticProps({ locale }) {
   const posts = await fetch(
     `${strapiHost}/showcaseposts?_locale=${locale}&_sort=date:DESC&_limit=-1`
   )
-  .then(response => response.json())
-  .then(data => data)
-  .catch(err => console.log(err))
+    .then((response) => response.json())
+    .then((data) => data)
+    .catch((err) => console.log(err))
 
   return {
     props: {
-      posts: posts.map(post => {
+      posts: posts.map((post) => {
         const designs = [post.design1]
         if (post.design2 && post.design2.length > 2) designs.push(post.design2)
         if (post.design3 && post.design3.length > 2) designs.push(post.design3)
@@ -107,11 +115,10 @@ export async function getStaticProps({ params, locale }) {
           date: post.date,
           maker: post.maker.displayname,
           image: strapiImage(post.image, ['medium']),
-          designs
+          designs,
         }
       }),
       ...(await serverSideTranslations(locale)),
-    }
+    },
   }
 }
-

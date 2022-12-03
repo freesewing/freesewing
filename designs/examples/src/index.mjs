@@ -3,9 +3,6 @@ import { pluginBundle } from '@freesewing/plugin-bundle'
 import { gorePlugin } from '@freesewing/plugin-gore'
 import { data } from '../data.mjs'
 
-// Snippet API
-import { snippet, snippet_attr, snippet_clone } from './snippet.mjs'
-
 // Stacks
 import {
   stacks_top,
