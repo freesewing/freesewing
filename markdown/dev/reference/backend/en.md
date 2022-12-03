@@ -18,7 +18,7 @@ use our backend as a service to build your own projects.
 
 The FreeSewing backend is written in [NodeJS](https://nodejs.org/en/) on top of
 [Express](https://expressjs.com/). It uses [Prisma](https://www.prisma.io/) to
-interface with a [Sqlite database](https://www.sqlite.org/) database,
+interface with a [SQLite database](https://www.sqlite.org/) database,
 [Sanity](https://www.sanity.io/) to store images, [AWS SES](
 https://aws.amazon.com/ses/) to send out emails, and
 [pino](https://github.com/pinojs/pino) for logging.
