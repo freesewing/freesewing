@@ -24,11 +24,10 @@ Keep in mind that:
 - The `notes` property is intended to be used by the user to add notes about
   their pattern. It will only accept data of type `string`.
 - The `data` property is intended to allow frontend developers to store
-  additional data about the pattern. It wil only accept data of type `object`.
+  additional data about the pattern. It will only accept data of type `object`.
 
 ### The `settings` property should hold the pattern settings
 
 The `settings` property should hold [a settings object](/reference/settings)
 that can be passed to [the Pattern
 constructor](/reference/api/pattern#creating-a-pattern).
-

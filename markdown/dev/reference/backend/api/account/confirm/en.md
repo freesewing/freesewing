@@ -15,9 +15,9 @@ Confirming a new User account is possible via this endpoint:
 
 <Note compact>This endpoint requires no authentication</Note>
 
-## Request url
+## Request URL
 
-The url should contain the confirmation ID that was E-mailed to the E-mail
+The URL should contain the confirmation ID that was E-mailed to the E-mail
 address used for the signup. It replaces the `:id` placeholder in the
 [endpoint listed above](#endpoints).
 
@@ -56,7 +56,7 @@ in the response body should indicate the nature of the problem.
 | `account.control`   | Number | The control desired by the User |
 | `account.createdAt` | String | Date string indicating the moment the User was created |
 | `account.email`     | String | The E-mail address currently tied to the User |
-| `account.github`    | String | The Github username of the User |
+| `account.github`    | String | The GitHub username of the User |
 | `account.img`       | String | The URL to the image stored with this User |
 | `account.imperial`  | Boolean| Whether or not the User prefers imperial units |
 | `account.initial`   | String | The E-mail address that the User was created with |
