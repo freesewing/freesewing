@@ -119,7 +119,7 @@ paths.rect = new Path()
 ```
 
 We're calculating the `topLeft` point so that the top edge of our bib
-and the sides are equidistant from the neck neck opening.
+and the sides are equidistant from the neck opening.
 
 We didn't have to do that. But it looks nicely balanced this way.
 

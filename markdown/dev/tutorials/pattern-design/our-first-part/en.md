@@ -109,7 +109,7 @@ import { bib } from './bib.mjs'
 /*
  * Create a new Pattern by passing 
  * a configuration object
- * to the Design contructor
+ * to the Design constructor
  */
 const Pattern = new Design({
   /*
