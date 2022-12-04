@@ -28,11 +28,11 @@
     "serve": "pm2 start npm --name 'freesewing.org' -- run start"
   },
   "dependencies": {
-    "@heroicons/react": "^2.0.1",
-    "@mdx-js/loader": "^2.0.0-rc.2",
-    "@mdx-js/mdx": "^2.0.0-rc.2",
-    "@mdx-js/react": "^2.0.0-rc.2",
-    "@mdx-js/runtime": "next",
+    "@heroicons/react": "latest",
+    "@mdx-js/loader": "latest",
+    "@mdx-js/mdx": "latest",
+    "@mdx-js/react": "latest",
+    "@mdx-js/runtime": "latest",
     "@tailwindcss/typography": "^0.5.0",
     "algoliasearch": "^4.11.0",
     "daisyui": "^2.0.6",
