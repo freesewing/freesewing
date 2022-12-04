@@ -313,6 +313,7 @@ export const back = {
   name: 'paco.back',
   from: titanBack,
   hideDependencies: true,
+  measurements: ['heel'],
   options: {
     // Constants
     titanPaperless: false,
