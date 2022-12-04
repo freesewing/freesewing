@@ -12,7 +12,7 @@ const runTests = async (...params) => {
   //await apikeyTests(...params)
   //await accountTests(...params)
   //await personTests(...params)
-  await patternTests(...params)
+  //await patternTests(...params)
 }
 
 // Load initial data required for tests

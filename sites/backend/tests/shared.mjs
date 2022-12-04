@@ -70,6 +70,7 @@ export const setup = async () => {
       console.log('Failed at account confirmation request', err)
       process.exit()
     }
+    console.log(JSON.stringify(result.data, null ,2))
     store[acc].token = result.data.token
     store[acc].username = result.data.account.username
     store[acc].id = result.data.account.id

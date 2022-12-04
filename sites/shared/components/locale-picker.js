@@ -48,8 +48,12 @@ const LocalePicker = ({ app, iconOnly = false, bottom = false }) => {
               <div className="overflow-hidden rounded-lg shadow-lg">
                 <div className="relative grid gap-2 bg-base-100 p-4 grid-cols-1">
                   {router.locales.map((locale) => (
-                    <Link href={`${locale}/${router.asPath}`} key={locale}>
-                      <a className="btn btn-primary">{t(locale)}</a>
+                    <Link
+                      href={`${locale}/${router.asPath}`}
+                      key={locale}
+                      className="btn btn-primary"
+                    >
+                      {t(locale)}
                     </Link>
                   ))}
                 </div>

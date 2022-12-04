@@ -16,12 +16,11 @@ export const InnerWordMark = () => (
 )
 
 export const WordMark = () => (
-  <Link href="/">
-    <a
-      role="button"
-      className="btn btn-ghost btn-sm normal-case text-2xl hover:bg-transparent font-bold px-0 -mt-1"
-    >
-      <InnerWordMark />
-    </a>
+  <Link
+    href="/"
+    role="button"
+    className="btn btn-ghost btn-sm normal-case text-2xl hover:bg-transparent font-bold px-0 -mt-1"
+  >
+    <InnerWordMark />
   </Link>
 )

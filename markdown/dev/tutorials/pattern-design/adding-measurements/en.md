@@ -42,7 +42,7 @@ Now everybody knows this part requires the `head` measurement.
 
 This change will also get picked up by the development environment, and you'll now see this screen:
 
-![This screen tells you you are missing some required measurements](./required-measurements.png)
+![This screen tells you that you are missing some required measurements](./required-measurements.png)
 
 Since it's just one measurement, let's simply enter a value by hand.
 For example `38` as 38cm is a realistic head circumference measurement for a baby.
