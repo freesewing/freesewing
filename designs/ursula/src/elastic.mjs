@@ -1,19 +1,6 @@
 import { gusset } from './gusset.mjs'
 
-function ursulaElastic({
-  options,
-  Point,
-  points,
-  Path,
-  paths,
-  store,
-  utils,
-  units,
-  sa,
-  paperless,
-  macro,
-  part,
-}) {
+function ursulaElastic({ options, Point, points, Path, paths, store, utils, units, sa, part }) {
   // Stretch utility method
   store.set('elasticScale', utils.stretchToScale(options.elasticStretch))
 
@@ -35,10 +22,10 @@ function ursulaElastic({
 
   // Draw a box around the text, so the part shows up correctly.
   paths.box = new Path()
-    .move(new Point(-10,-10))
-    .line(new Point(-10,15))
-    .line(new Point(200,15))
-    .line(new Point(200,-10))
+    .move(new Point(-10, -10))
+    .line(new Point(-10, 15))
+    .line(new Point(200, 15))
+    .line(new Point(200, -10))
     .close()
     .setClass('hidden')
 

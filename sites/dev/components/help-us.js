@@ -1,6 +1,6 @@
 import Popout from 'shared/components/popout.js'
 
-const HelpUs = ({ mdx = false, slug = '/' }) => (
+const HelpUs = ({ slug = '/' }) => (
   <details className="mt-4">
     <summary>Click here to learn how you can help us improve this page</summary>
     <Popout tip className="max-w-prose">

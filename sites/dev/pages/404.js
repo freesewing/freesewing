@@ -6,7 +6,7 @@ import Robot from 'shared/components/robot'
 import Popout from 'shared/components/popout'
 import PageLink from 'shared/components/page-link'
 
-const Page404 = (props) => {
+const Page404 = () => {
   const app = useApp()
 
   return (

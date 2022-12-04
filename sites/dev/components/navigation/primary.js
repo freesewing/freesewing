@@ -153,9 +153,7 @@ const SubLevel = ({ nodes = {}, active }) => (
 
 export const Icons = ({
   app,
-  active,
   ulClasses = '',
-  liClasses = '',
   linkClasses = `grow text-lg lg:text-xl py-1 text-base-content sm:text-base-content
   hover:text-secondary sm:hover:text-secondary hover:cursor-pointer
   flex flex-col items-center`,
@@ -180,7 +178,6 @@ export const Icons = ({
 export const MainSections = ({ app, active }) => {
   if (!app.navigation) return null
   const output = []
-  let last
   for (const page of order(app.navigation)) {
     const act = isActive(page.__slug, active)
     const txt = (
