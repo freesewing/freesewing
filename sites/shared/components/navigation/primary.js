@@ -87,8 +87,7 @@ const SubLevel = ({ nodes={}, active }) => (
               hover:cursor-row-resize
               items-center
             `}>
-              <Link href={`${child.__slug}`}>
-                <a title={child.__title} className={`
+              <Link href={`${child.__slug}`} title={child.__title} className={`
                   grow pl-2 border-l-2
                   ${linkClasses}
                   hover:cursor-pointer
@@ -111,7 +110,6 @@ const SubLevel = ({ nodes={}, active }) => (
                   <span className={child.__slug === active ? 'font-bold' : ''}>
                     { child.__linktitle || child.__title }
                   </span>
-                </a>
               </Link>
               <Chevron w={6} m={3}/>
             </summary>
@@ -120,8 +118,7 @@ const SubLevel = ({ nodes={}, active }) => (
         </li>
       ) : (
         <li className='pl-2 flex flex-row items-center' key={child.__slug}>
-          <Link href={`${child.__slug}`} title={child.__title}>
-            <a className={`
+          <Link href={`${child.__slug}`} title={child.__title} className={`
               pl-2 border-l-2
               grow
               ${linkClasses}
@@ -144,7 +141,6 @@ const SubLevel = ({ nodes={}, active }) => (
               <span className={child.__slug === active ? 'font-bold' : ''}>
                 {child.__linktitle || child.__title}
               </span>
-            </a>
           </Link>
         </li>
       )
@@ -165,8 +161,7 @@ const TopLevel = ({ icon, title, nav, current, slug, hasChildren=false, active }
       items-center
     `}>
       <span className="text-secondary">{icon}</span>
-      <Link href={`${slug}`}>
-        <a className={`
+      <Link href={`${slug}`} className={`
           grow ${linkClasses} hover:cursor-pointer
           ${slug === active
             ? 'text-secondary sm:text-secondary'
@@ -174,7 +169,6 @@ const TopLevel = ({ icon, title, nav, current, slug, hasChildren=false, active }
           }`}
         >
           {title}
-        </a>
       </Link>
     {hasChildren && <Chevron />}
     </summary>
@@ -216,14 +210,12 @@ export const Icons = ({
   for (const page of order(app.navigation)) {
     output.push(
       <li key={page.__slug} className={liClasses}>
-        <Link href={`${page.__slug}`}>
-          <a className={linkClasses} title={page.__title} style={linkStyle}>
+        <Link href={`${page.__slug}`} className={linkClasses} title={page.__title} style={linkStyle}>
             {icons[page.__slug]
               ? icons[page.__slug]('w-14 h-14')
               : <HelpIcon />
             }
             <span className='font-bold'>{page.__title}</span>
-          </a>
         </Link>
       </li>
     )

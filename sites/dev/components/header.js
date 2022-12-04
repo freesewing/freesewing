@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import FreeSewingIcon from 'shared/components/icons/freesewing.js'
-import Link from 'next/link'
 import ThemePicker from 'shared/components/theme-picker.js'
 import CloseIcon from 'shared/components/icons/close.js'
 import MenuIcon from 'shared/components/icons/menu.js'
