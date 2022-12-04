@@ -33,7 +33,6 @@ describe('Pattern', () => {
       expect(count).to.equal(2)
     })
   })
-
   it('Should check whether a part is needed', () => {
     const partA = {
       name: 'test.partA',
@@ -131,7 +130,38 @@ describe('Pattern', () => {
     expect(pattern.__wants('test.partB')).to.equal(true)
     expect(pattern.__wants('test.partC')).to.equal(false)
   })
+  it('should log an error if it fails to inject a part into another', () => {
+    const otherPart = {
+      name: 'otherPart',
+      draft: function ({ part, points }) {
+        points.oops = {
+          clone: () => {
+            throw new Error('something bad happened')
+          },
+        }
+        return part
+      },
+    }
+    const front = {
+      name: 'front',
+      from: otherPart,
+      draft: function (part) {
+        return part
+      },
+    }
+    const Test = new Design({
+      name: 'test',
+      parts: [front, otherPart],
+    })
 
+    const pattern = new Test()
+    pattern.draft()
+
+    console.log(pattern.setStores[pattern.activeSet].logs.error[0])
+    expect(pattern.setStores[pattern.activeSet].logs.error[0]).to.include(
+      'Could not inject part `otherPart` into part `front`'
+    )
+  })
   /*
 
   it('Should return all render props', () => {
