@@ -49,7 +49,6 @@ export default {
     fitCrossSeam: true,
     fitCrossSeamFront: true,
     fitCrossSeamBack: true,
-    fitGuides: true,
 
     // Fit
     waistEase: { pct: 2, min: 0, max: 10 },
