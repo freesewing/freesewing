@@ -48,9 +48,9 @@ const PatternPicker = ({ app }) => {
                             {sectionPatterns(section).map((pattern) => (
                               <li key={pattern}>
                                 <Link href={app.navigation[section][pattern].__slug}>
-                                  <a className="capitalize pr-4 text-secondary hover:text-secondary-focus hover:underline">
+                                  <span className="capitalize pr-4 text-secondary hover:text-secondary-focus hover:underline">
                                     {pattern}
-                                  </a>
+                                  </span>
                                 </Link>
                               </li>
                             ))}
