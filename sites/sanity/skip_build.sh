@@ -21,8 +21,6 @@ fi
 
 check=( \
   "." \
-  "../../markdown/dev" \
-  "../freesewing.shared" \
 )
 build=0
 for d in ${check[@]}; do

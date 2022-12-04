@@ -21,7 +21,7 @@ fi
 
 check=( \
   "." \
-  "../../markdown/dev" \
+  "../../markdown/org" \
   "../freesewing.shared" \
 )
 build=0
