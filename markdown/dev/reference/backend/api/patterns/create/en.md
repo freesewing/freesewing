@@ -52,7 +52,7 @@ in the response body should indicate the nature of the problem.
 | Value               | Type     | Description |
 | ------------------- | -------- | ----------- |
 | `result`            | String | Either `success` or `error` |
-| `error`             | String | Will give info on the nature of the error. Only set if an error occured. |
+| `error`             | String | Will give info on the nature of the error. Only set if an error occurred. |
 | `pattern.id`        | Number | The ID of the Pattern |
 | `pattern.createdAt` | String | Date string indicating the moment the pattern was created |
 | `pattern.data`      | Object | Any additional data that was stored with Pattern data |

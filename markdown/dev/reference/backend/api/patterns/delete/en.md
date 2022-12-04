@@ -18,9 +18,9 @@ Deleting a Pattern is possible via these endpoints:
 | <Method delete /> | `/patterns/:id/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
 | <Method delete /> | `/patterns/:id/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
 
-## Request url
+## Request URL
 
-The url should contain the ID of the Pattern you wish to remove.
+The URL should contain the ID of the Pattern you wish to remove.
 It replaces the `:id` placeholder in the [endpoints listed above](#endpoints).
 
 ## Response status codes
@@ -56,4 +56,3 @@ await axios.delete(
 These endpoints return status code <StatusCode status="204"/> (no content) on
 success, with no response body.
 </Note>
-

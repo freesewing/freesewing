@@ -34,7 +34,7 @@ some of the things we've learned:
 [new-design]: /tutorials/pattern-design/new-design
 [structure]: /tutorials/pattern-design/new-design
 [our-first-part]: /tutorials/pattern-design/our-first-part
-[adding-measurements]: /tutorials/pattern-design/adding-measurments
+[adding-measurements]: /tutorials/pattern-design/adding-measurements
 [adding-options]: /tutorials/pattern-design/adding-options
 [draft-method]: /tutorials/pattern-design/draft-method
 [constructing-the-neck-opening]: /tutorials/pattern-design/constructing-the-neck-opening

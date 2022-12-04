@@ -7,7 +7,6 @@ import { Icons } from 'shared/components/navigation/primary'
 import Highlight from 'shared/components/mdx/highlight'
 import Popout from 'shared/components/popout'
 import WebLink from 'shared/components/web-link'
-import Code from 'shared/components/code'
 import PageLink from 'shared/components/page-link'
 
 const HomePage = () => {
@@ -113,7 +112,10 @@ const HomePage = () => {
                 <h3>What&apos;s changed?</h3>
                 <p>
                   Check{' '}
-                  <PageLink href="/guides/v3/migration" txt="the FreeSewing version 3 migration guide" />{' '}
+                  <PageLink
+                    href="/guides/v3/migration"
+                    txt="the FreeSewing version 3 migration guide"
+                  />{' '}
                   to learn about what is new in version 3 of FreeSewing, and what changes you should
                   make in your own designs to port them to version 3.
                 </p>

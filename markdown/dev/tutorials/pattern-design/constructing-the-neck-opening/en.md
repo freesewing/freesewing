@@ -6,7 +6,7 @@ order: 160
 Our goal is to construct an oval neck opening that has a circumference
 that is the `head` measurements multiplied by the `neckRatio` option.
 
-That might involve some trial and error. But since the neck opening will be symetric
+That might involve some trial and error. But since the neck opening will be symmetric
 both horizontal and vertical, we only need to construct one quadrant.
 
 ## Desructuring measurements and options

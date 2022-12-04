@@ -1,6 +1,6 @@
 import { config } from './config.mjs'
 import { mkdir, readFile, writeFile, copyFile } from 'node:fs/promises'
-import { join, dirname } from 'path'
+import { join, dirname, relative } from 'path'
 import mustache from 'mustache'
 import rdir from 'recursive-readdir'
 import chalk from 'chalk'
@@ -9,14 +9,17 @@ import { oraPromise } from 'ora'
 import { execa } from 'execa'
 import axios from 'axios'
 import { fileURLToPath } from 'url'
+import { capitalize } from '@freesewing/core'
 
 // Current working directory
-let cwd
+let filename
 try {
-  cwd = __dirname
+  filename = __filename
 } catch {
-  cwd = dirname(fileURLToPath(import.meta.url))
+  filename = fileURLToPath(import.meta.url)
 }
+const newDesignDir = join(filename, '../..')
+const designSrcDir = 'design/src'
 
 const nl = '\n'
 const tab = '  '
@@ -114,41 +117,123 @@ export const getChoices = async () => {
 }
 
 // Keep track of directories that need to be created
-const dirs = {}
+const dirPromises = {}
 const ensureDir = async (file, suppress = false) => {
   const dir = suppress ? dirname(file.replace(suppress)) : dirname(file)
-  if (!dirs[dir]) {
-    await mkdir(dir, { recursive: true })
-    dirs[dir] = true
+  if (!dirPromises[dir]) {
+    dirPromises[dir] = mkdir(dir, { recursive: true })
   }
+  await dirPromises[dir]
 }
 
 // Helper method to copy template files
-const copyTemplate = async (config, choices) => {
-  // Copy files in parallel rather than using await
-  const promises = []
+const copyFileOrTemplate = async (fromRootOrTemplate, toRoot, relativeDest, templateVars) => {
+  const to = join(toRoot, relativeDest)
+
+  await ensureDir(to)
+
+  if (templateVars) {
+    const rendered = mustache.render(fromRootOrTemplate, templateVars)
+    await writeFile(to, rendered)
+  } else {
+    const from = join(fromRootOrTemplate, relativeDest)
+    await copyFile(from, to)
+  }
+}
+
+// Template the package.json
+const copyPackageJson = async (config, choices) => {
+  const packageJsonTemplate = await readFile(
+    config.relativeFiles.templates['package.json'],
+    'utf-8'
+  )
+  await copyFileOrTemplate(packageJsonTemplate, config.dest, 'package.json', {
+    name: choices.name,
+    tag: config.tag,
+    dependencies: config.templateData.dependencies,
+  })
+}
+
+// Template the design index file
+const copyIndexFile = async (config, choices) => {
+  // Template the index file
+  const indexTemplate = await readFile(config.relativeFiles.templates['index'], 'utf-8')
+
+  // get the part names based on how they are given in the configuration
+  const partNames = config.complexParts
+    ? config.templateData.parts.map((p) => p.part)
+    : config.templateData.parts
+  // write the file
+  await copyFileOrTemplate(indexTemplate, config.dest, `${designSrcDir}/index.mjs`, {
+    name: choices.name,
+    Name: capitalize(choices.name),
+    parts: partNames,
+  })
+}
+
+// Template the part files
+const copyPartFiles = async (config, choices) => {
+  // Template the parts
+  const partTemplate = await readFile(config.relativeFiles.templates.part, 'utf-8')
+  // does this design inherit from another?
+  const doesInherit = !config.templateData.noInheritance
+
+  // all part templates need these arguments
+  const baseConfig = {
+    name: choices.name, // the name of the design
+    doesInherit, // whether it's an inherited design
+    draftUses: {}, // what parameters need to be uncommented in the draft method (default none because part is always uncommented)
+  }
+
+  // if it inherits, we also need the name of the design it inherits from
+  if (doesInherit) {
+    baseConfig.baseName = choices.template
+    baseConfig.BaseName = capitalize(choices.template)
+  }
+
+  // for each part
+  return config.templateData.parts.map((p) => {
+    // set up the arguments based on what's in the part's config
+    const templateArgs = config.complexParts
+      ? {
+          ...baseConfig,
+          ...p,
+        }
+      : {
+          ...baseConfig,
+          part: p,
+        }
+
+    // add an uppercase version of the partName
+    templateArgs.Part = capitalize(templateArgs.part)
+
+    // write the part file
+    return copyFileOrTemplate(
+      partTemplate,
+      config.dest,
+      `${designSrcDir}/${templateArgs.part}.mjs`,
+      templateArgs
+    )
+  })
+}
+
+// Helper method to copy template files
+const copyAll = async (config, choices) => {
+  let promises = []
 
   // Copy shared files
-  for (const from of config.files.shared) {
-    // FIXME: Explain the -7
-    const to = join(config.dest, from.slice(config.source.shared.length - 7))
-    if (!dirs[to]) await ensureDir(to)
-    promises.push(copyFile(from, to))
-  }
+  promises = promises.concat(
+    config.relativeFiles.shared.map((from) => {
+      copyFileOrTemplate(config.source.shared, config.dest, from)
+    })
+  )
 
-  // Template files
-  for (const from of config.files.template) {
-    let to = join(config.dest, from.slice(config.source.template.length - 7))
-    if (to.slice(-9) === '.mustache') to = to.slice(0, -9)
-    if (!dirs[to]) await ensureDir(to)
-    // Template out file
-    const src = await readFile(from, 'utf-8')
-    promises.push(writeFile(to, mustache.render(src, { name: choices.name, tag: config.tag })))
-  }
+  // template design files
+  promises.push(copyPackageJson(config, choices))
+  promises.push(copyIndexFile(config, choices))
+  promises = promises.concat(copyPartFiles(config, choices))
 
   await Promise.all(promises)
-
-  return
 }
 
 // Helper method to run [yarn|npm] install
@@ -162,25 +247,25 @@ const installDependencies = async (config, choices) =>
 const downloadLabFiles = async (config) => {
   const promises = []
   for (const dir in config.fetch) {
-    for (const file of config.fetch[dir]) {
-      const to = typeof file === 'string' ? join(config.dest, file) : join(config.dest, file.to)
-      if (!dirs[to]) await ensureDir(to)
-      promises.push(
-        axios
-          .get(
+    promises.push(
+      ...config.fetch[dir].map(async (file) => {
+        const to = typeof file === 'string' ? join(config.dest, file) : join(config.dest, file.to)
+        await ensureDir(to)
+        try {
+          const res = await axios.get(
             `${config.fileUri}/${config.repo}/${config.branch}/${dir}/${
               typeof file === 'string' ? file : file.from
             }`
           )
-          .catch((err) => console.log(err))
-          .then((res) => promises.push(writeFile(to, res.data)))
-      )
-    }
+          await writeFile(to, res.data)
+        } catch (err) {
+          console.log(err)
+        }
+      })
+    )
   }
 
-  await Promise.all(promises)
-
-  return
+  return Promise.all(promises)
 }
 
 // Helper method to initialize a git repository
@@ -253,29 +338,40 @@ const showTips = (config, choices) => {
 // Creates the environment based on the user's choices
 export const createEnvironment = async (choices) => {
   // Store directories for re-use
-  ;(config.cwd = cwd),
-    (config.source = {
-      root: cwd,
-      template: cwd + `/../templates/from-${choices.template}`,
-      shared: cwd + `/../shared`,
-    })
+  config.source = {
+    templateData: join(newDesignDir, `templates/from-${choices.template}.mjs`),
+    templates: join(newDesignDir, `templates/shared`),
+    shared: join(newDesignDir, `shared`),
+  }
+
   config.dest = join(process.cwd(), choices.name)
 
   // Create target directory
   await mkdir(config.dest, { recursive: true })
 
-  // Find files
-  config.files = {
-    template: await rdir(config.source.template),
-    shared: await rdir(config.source.shared),
+  // get the template files in a dictionary
+  const templates = {}
+  const templateFiles = await rdir(config.source.templates)
+  templateFiles.forEach((file) => {
+    const relativeName = relative(config.source.templates, file).replace(/(\.mjs)*\.mustache/, '')
+    templates[relativeName] = file
+  })
+
+  config.relativeFiles = {
+    templates,
+    shared: (await rdir(config.source.shared)).map((file) => relative(config.source.shared, file)),
   }
+
+  config.templateData = await import(config.source.templateData)
+  // does this base have parts with a lot of attending config?
+  config.complexParts = typeof config.templateData.parts[0] === 'object'
 
   // Output a linebreak
   console.log()
 
   // Copy/Template files
   try {
-    await oraPromise(copyTemplate(config, choices), {
+    await oraPromise(copyAll(config, choices), {
       text:
         chalk.white.bold('🟨⬜⬜⬜  Copying template files') +
         chalk.white.dim('   |  Just a moment'),
@@ -285,7 +381,7 @@ export const createEnvironment = async (choices) => {
       ),
     })
   } catch (err) {
-    /* no feedback here */
+    console.log(err)
   }
 
   // Install dependencies

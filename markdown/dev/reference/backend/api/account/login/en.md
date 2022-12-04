@@ -46,7 +46,7 @@ in the response body should indicate the nature of the problem.
 | Value               | Type     | Description |
 | ------------------- | -------- | ----------- |
 | `result`            | String | Either `success` or `error` |
-| `error`             | String | Will give info on the nature of the error. Only set if an error occured. |
+| `error`             | String | Will give info on the nature of the error. Only set if an error occurred. |
 | `token`             | String | A JSON web token (JWT) token to authenticate with |
 | `account.id`        | Number | The ID of the User |
 | `account.bio`       | String | The bio of the User |
@@ -54,7 +54,7 @@ in the response body should indicate the nature of the problem.
 | `account.control`   | Number | The control desired by the User |
 | `account.createdAt` | String | Date string indicating the moment the User was created |
 | `account.email`     | String | The E-mail address currently tied to the User |
-| `account.github`    | String | The Github username of the User |
+| `account.github`    | String | The GitHub username of the User |
 | `account.img`       | String | The URL to the image stored with this User |
 | `account.imperial`  | Boolean| Whether or not the User prefers imperial units |
 | `account.initial`   | String | The E-mail address that the User was created with |

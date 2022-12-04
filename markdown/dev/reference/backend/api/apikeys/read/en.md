@@ -18,9 +18,9 @@ Reading an API key is possible via these endpoints:
 | <Method get /> | `/apikeys/:id/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
 | <Method get /> | `/apikeys/:id/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
 
-## Request url
+## Request URL
 
-The url should contain the ID of the API key you wish to remove.
+The URL should contain the ID of the API key you wish to remove.
 It replaces the `:id` placeholder in the [endpoints listed above](#endpoints).
 
 ## Response status codes

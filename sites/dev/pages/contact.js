@@ -16,7 +16,7 @@ const No = () => (
   </span>
 )
 
-const ContactPage = (props) => {
+const ContactPage = () => {
   const app = useApp()
   const title = 'Contact information'
 

@@ -129,6 +129,7 @@ yarn-error.log*
       'shared/components/mdx/index.js',
       'shared/components/mdx/prev-next.js',
       'shared/components/mdx/read-more.js',
+      'shared/components/mdx/status-code.js',
       'shared/components/mdx/tabs.js',
       'shared/components/mdx/youtube.js',
       'shared/components/navigation/aside.js',

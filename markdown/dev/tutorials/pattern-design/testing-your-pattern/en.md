@@ -109,7 +109,7 @@ For our bib, we only use one measurement, so it influences the entire pattern.
 ## Testing models
 
 Whereas testing a measurement will only vary one individual measurement,
-testing models will draft your pattern for different sets of measurments, which
+testing models will draft your pattern for different sets of measurements, which
 we refer to as _models_.
 
 On the surface, the result below is the same as our measurement test. But that

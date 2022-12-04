@@ -1,5 +1,10 @@
+{{!
+//    Change the Mustache delimiter from double curly braces to double dollar signs.
+//    Dollar signs are allowed in EcmaScript identifier names,
+//    which is helpful when running unrendered Mustache templates through eslint.
+//}}{{=$$ $$=}}
 {
-  "name": "@freesewing/{{name}}",
+  "name": "@freesewing/$$ name $$",
   "version": "0.0.1",
   "description": "A new FreeSewing design",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
@@ -25,7 +30,7 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
-    "dev": "node --experimental-json-modules ./node_modules/.bin/next dev -p 8000",
+    "dev": "next dev -p 8000",
     "build": "node build.js",
     "clean": "rimraf dist",
     "mbuild": "NO_MINIFY=1 node build.js",
@@ -33,23 +38,23 @@
     "vbuild": "VERBOSE=1 node build.js"
   },
   "dependencies": {
-    "@freesewing/core": "{{ tag }}",
-    "@freesewing/breanna": "{{ tag }}",
-    "@freesewing/plugin-bundle": "{{ tag }}"
+    "@freesewing/core": "$$ tag $$",
+    $$ #dependencies $$
+    "$$& . $$": "$$ tag $$",
+    $$ /dependencies $$
+    "@freesewing/plugin-bundle": "$$ tag $$"
   },
   "devDependencies": {
-    "@freesewing/plugin-svgattr": "{{ tag }}",
-    "@freesewing/plugin-theme": "{{ tag }}",
-    "@freesewing/plugin-i18n": "{{ tag }}",
-    "@freesewing/models": "{{ tag }}",
+    "@freesewing/plugin-svgattr": "$$ tag $$",
+    "@freesewing/plugin-theme": "$$ tag $$",
+    "@freesewing/plugin-i18n": "$$ tag $$",
+    "@freesewing/models": "$$ tag $$",
     "@headlessui/react": "^1.6.5",
     "js-yaml": "^4.1.0",
     "file-saver": "^2.0.5",
     "axios": "^0.27.2",
-    "pdfkit": "^0.13.0",
-    "svg-to-pdfkit": "^0.1.8",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-sizeme": "^3.0.2",
     "react-zoom-pan-pinch": "^2.1.3",
     "react-markdown": "^8.0.3",
@@ -64,8 +69,9 @@
     "lodash.set": "^4.3.2",
     "lodash.unset": "^4.5.2",
     "lodash.clonedeep": "^4.5.0",
-    "next": "^12.3.2",
+    "next": "^13",
     "next-i18next": "^11.0.0",
+    "pdfkit": "^0.13.0",
     "react-copy-to-clipboard": "^5.0.4",
     "react-hotkeys-hook": "^3.4.4",
     "react-swipeable": "^6.2.0",
@@ -78,6 +84,7 @@
     "js-yaml": "^4.1.0",
     "postcss": "^8.4.14",
     "postcss-for": "^2.1.1",
+    "svg-to-pdfkit": "^0.1.8",
     "tailwindcss": "^3.1.3",
     "tailwindcss-open-variant": "^1.0.0",
     "web-worker": "^1.2.0"

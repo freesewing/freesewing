@@ -2,7 +2,7 @@
 title: Authentication
 ---
 
-The FreeSewing backend API requires authentication for all but a handfull of
+The FreeSewing backend API requires authentication for all but a handful of
 endpoints.
 
 The API supports two different types of authentication:
@@ -48,17 +48,17 @@ basic authentication](https://en.wikipedia.org/wiki/Basic_access_authentication)
 
 <Note>
 In basic authentication, the password is sent
-unencrypted. To guard against this, this API should only be served over a 
-connection that is encrypted with TLS. (a url starting with `https://`).
+unencrypted. To guard against this, this API should only be served over a
+connection that is encrypted with TLS. (a URL starting with `https://`).
 </Note>
 
 Sending a username and password with a request like this is supported
 pretty much everywhere. In addition, there is no need to establish a session
-first, so this make the entire transation stateless.
+first, so this make the entire transaction stateless.
 
 Below is an example using curl:
 
 ```sh
-curl -u api-key-here:api-secret-here \ 
+curl -u api-key-here:api-secret-here \
   https://backend.freesewing.org/account/key
 ```
