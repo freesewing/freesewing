@@ -28,6 +28,8 @@ Due to seamless and closure Sandy's needing different constructions we have sepa
 
 Pockets are not included in Sandy as it has one seam by default, if you cut the skirt pattern piece into multiple pieces rather than a single one you can easily add pockets. Cutting it into thirds will give you two sideseams for two pockets, just don't forget to add seam allowance to the slashed seams.
 
+If you can't be bothered with creating seams to add inseam pockets but still wish to have some you can always use Patch Pockets or if you are feeling brave Welt Pockets.
+
 </Note>
 
 ### Step 2: Prep the opening
