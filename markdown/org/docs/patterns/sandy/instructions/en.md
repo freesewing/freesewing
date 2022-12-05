@@ -61,8 +61,7 @@ If not lining you should face the skirt when hemming later.
 
 ### Step 4: The waistband
 
-- Face half the waistbands parts lengthwise.
-- With _good sides together_ sew the waistbands together along one of the short edges.
+- Face half the waistband part lengthwise.
 - Press under the seam allowance on the long edge of the waistband that is not faced.
 - Attach the faced side of the waistband, _good sides together_ to the skirt. There will be some overhang, the side you wish not to overlap should be overhang by your seam allowance. The side intended to overlap will have a greater overhang. Trim seam.
 - Press the waistband and seam allowance up and away from the skirt.
