@@ -84,27 +84,39 @@ export function getDartLocationsAsNumbers(options) {
   else return [loc1, loc2]
 }
 
-export const getDartPaths = (Path, points) => [
-  new Path()
-    .line(points.primaryBustDart1)
-    .line(points.primaryBustDartTip)
-    .line(points.primaryBustDart2),
-  new Path()
-    .line(points.secondaryBustDart1)
-    .line(points.secondaryBustDartTip)
-    .line(points.secondaryBustDart2),
-]
+export const getDartPaths = (Path, points) => {
+  let dart_paths = [
+    new Path()
+      .line(points.primaryBustDart1)
+      .line(points.primaryBustDartTip)
+      .line(points.primaryBustDart2),
+  ]
+  if ('secondaryBustDart1' in points)
+    dart_paths.push(
+      new Path()
+        .line(points.secondaryBustDart1)
+        .line(points.secondaryBustDartTip)
+        .line(points.secondaryBustDart2)
+    )
+  return dart_paths
+}
 
-export const getSaDartPaths = (Path, points) => [
-  new Path()
-    .line(points.primaryBustDart1)
-    .line(points.primaryBustDartEdge)
-    .line(points.primaryBustDart2),
-  new Path()
-    .line(points.secondaryBustDart1)
-    .line(points.secondaryBustDartEdge)
-    .line(points.secondaryBustDart2),
-]
+export const getSaDartPaths = (Path, points) => {
+  let dart_paths = [
+    new Path()
+      .line(points.primaryBustDart1)
+      .line(points.primaryBustDartEdge)
+      .line(points.primaryBustDart2),
+  ]
+  if ('secondaryBustDart1' in points)
+    dart_paths.push(
+      new Path()
+        .line(points.secondaryBustDart1)
+        .line(points.secondaryBustDartEdge)
+        .line(points.secondaryBustDart2)
+    )
+  return dart_paths
+}
 
 /*
  * Once the front is constructed with the theorethical bust darts, we
