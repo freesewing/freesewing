@@ -3187,12 +3187,12 @@
     update-notifier "^5.0.1"
 
 "@maizzle/framework@latest":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@maizzle/framework/-/framework-4.3.0.tgz#f3cd93af129129f801a6447379e2d62182264bfe"
-  integrity sha512-hHSvJjCa8xGU4wGgdVTiR5wMepYHIqUNI2l0n2Bm1vc4y/OjqiB42EV8PCrqSSe58iFk6XKKNhAhwS7eOdW+Lg==
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/@maizzle/framework/-/framework-4.3.1.tgz#4c3eb29f01e675e33814c6773f6607c555502629"
+  integrity sha512-irizMJTNHiKSgsLaWbpi5h6VmfSXpYN2jW8kFrs1L9az1B/iEV3UgHkMQL0hJQgMVgZWYR6L4zozUMU2BnRkCQ==
   dependencies:
     "@maizzle/cli" "^1.5.1"
-    autoprefixer "^10.4.0"
+    autoprefixer "^10.4.13"
     browser-sync "^2.26.13"
     color-shorthand-hex-to-six-digit "^3.0.2"
     email-comb "^5.2.0"
@@ -3204,9 +3204,9 @@
     juice "^8.0.0"
     lodash "^4.17.20"
     ora "^5.1.0"
-    postcss "^8.4.18"
+    postcss "^8.4.19"
     postcss-import "^15.0.0"
-    postcss-merge-longhand "^5.0.1"
+    postcss-merge-longhand "^5.1.7"
     posthtml "^0.16.6"
     posthtml-attrs-parser "^0.1.1"
     posthtml-base-url "^1.0.1"
@@ -3226,7 +3226,7 @@
     query-string "^7.1.0"
     string-remove-widows "^2.1.0"
     string-strip-html "^8.2.0"
-    tailwindcss "^3.2.0"
+    tailwindcss "^3.2.4"
 
 "@mdx-js/loader@^2.0.0-rc.2", "@mdx-js/loader@latest":
   version "2.1.5"
@@ -6227,7 +6227,7 @@ attr-accept@^1.1.0:
   dependencies:
     core-js "^2.5.0"
 
-autoprefixer@^10.4.0:
+autoprefixer@^10.4.0, autoprefixer@^10.4.13:
   version "10.4.13"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.4.13.tgz#b5136b59930209a321e9fa3dca2e7c4d223e83a8"
   integrity sha512-49vKpMqcZYsJjwotvt4+h/BCjJVnhGwcLpDt5xkcaOG3eLrG/HUYLagrihYsQ+qrIBgIzX1Rw7a6L8I/ZA1Atg==
@@ -18448,7 +18448,7 @@ postcss-merge-longhand@^4.0.11:
     postcss-value-parser "^3.0.0"
     stylehacks "^4.0.0"
 
-postcss-merge-longhand@^5.0.1:
+postcss-merge-longhand@^5.1.7:
   version "5.1.7"
   resolved "https://registry.yarnpkg.com/postcss-merge-longhand/-/postcss-merge-longhand-5.1.7.tgz#24a1bdf402d9ef0e70f568f39bdc0344d568fb16"
   integrity sha512-YCI9gZB+PLNskrK0BB3/2OzPnGhPkBEwmwhfYk1ilBHYVAZB7/tkTHFBAnCrvBBOmeYyMYw3DMjT55SyxMBzjQ==
@@ -18837,7 +18837,7 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.2, postcss@^7.0.27:
     picocolors "^0.2.1"
     source-map "^0.6.1"
 
-postcss@^8.1.10, postcss@^8.2.0, postcss@^8.4.18, postcss@^8.4.4, postcss@^8.4.5, postcss@^8.4.6:
+postcss@^8.1.10, postcss@^8.2.0, postcss@^8.4.18, postcss@^8.4.19, postcss@^8.4.4, postcss@^8.4.5, postcss@^8.4.6:
   version "8.4.19"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.19.tgz#61178e2add236b17351897c8bcc0b4c8ecab56fc"
   integrity sha512-h+pbPsyhlYj6N2ozBmHhHrs9DzGmbaarbLvWipMRO7RLS+v4onj26MPFXA5OBYFxyqYhUJK456SwDcY9H2/zsA==
@@ -22621,7 +22621,7 @@ tailwindcss-open-variant@^1.0.0:
   resolved "https://registry.yarnpkg.com/tailwindcss-open-variant/-/tailwindcss-open-variant-1.0.0.tgz#e4555c0a0ec2a82801e563ed36b1b23e4dd04a3b"
   integrity sha512-XKw7rXUWvMKDKC62+V1z/kS0hVtTzWk6ALrOoGXC8MGAyetXIiRu/npnLGGHT1kL59Y2RZHT7Dq1C3moeTeptQ==
 
-tailwindcss@^3, tailwindcss@^3.0.1, tailwindcss@^3.0.7, tailwindcss@^3.2.0:
+tailwindcss@^3, tailwindcss@^3.0.1, tailwindcss@^3.0.7, tailwindcss@^3.2.4:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.2.4.tgz#afe3477e7a19f3ceafb48e4b083e292ce0dc0250"
   integrity sha512-AhwtHCKMtR71JgeYDaswmZXhPcW9iuI9Sp2LvZPo9upDZ7231ZJ7eA9RaURbhpXGVlrjX4cFNlB4ieTetEb7hQ==
