@@ -26,7 +26,7 @@ Due to seamless and closure Sandy's needing different constructions we have sepa
 
 <Note>
 
-Pockets are not included in Sandy as it has one seam by default, if you cut multiple skirt pieces instead of a single one you and easily add pockets.
+Pockets are not included in Sandy as it has one seam by default, if you cut the skirt pattern piece into multiple pieces rather than a single one you can easily add pockets. Cutting it into thirds will give you two sideseams for two pockets, just don't forget to add seam allowance to the slashed seams.
 
 </Note>
 
