@@ -4366,11 +4366,11 @@
     rxjs "^6.5.3"
 
 "@sanity/default-login@^2.35.0":
-  version "2.35.0"
-  resolved "https://registry.npmjs.org/@sanity/default-login/-/default-login-2.35.0.tgz#6f8e5b7871cc9076523895a1252d4151a0a7a61e"
-  integrity sha512-VlAgpeqST68AF0CcbILZwAgMb+wMVNU1npA4zN/3cpi/ogZuqL728vLZQiT+dKwl+mbtL77/e/jl3sVSgzrbMA==
+  version "2.35.2"
+  resolved "https://registry.yarnpkg.com/@sanity/default-login/-/default-login-2.35.2.tgz#a8780b179da05778c51da924245d5cdeeac4d928"
+  integrity sha512-6htf+LoQzqvQHjyZ5aweVfA/ZAPLQqzSl0ffIGfe08nCfPR7QxKU+NVRi+IJjWhWzlYKZLO+INhB4NpNxV6PzA==
   dependencies:
-    "@sanity/base" "2.35.0"
+    "@sanity/base" "2.35.2"
     "@sanity/client" "^3.3.3"
     "@sanity/generate-help-url" "^3.0.0"
     "@sanity/logos" "^1.1.15"
@@ -21316,14 +21316,7 @@ rxjs@^6.0.0, rxjs@^6.3.3, rxjs@^6.4.0, rxjs@^6.5.3, rxjs@^6.6.0, rxjs@^6.6.3:
   dependencies:
     tslib "^1.9.0"
 
-rxjs@^7.5.5:
-  version "7.5.6"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.5.6.tgz#0446577557862afd6903517ce7cae79ecb9662bc"
-  integrity sha512-dnyv2/YsXhnm461G+R/Pe5bWP41Nm6LBXEYWI6eiFP4fiwx6WRI/CD0zbdVAudd9xwLEF2IDcKXLHit0FYjUzw==
-  dependencies:
-    tslib "^2.1.0"
-
-rxjs@^7.5.7:
+rxjs@^7.5.5, rxjs@^7.5.7:
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.6.0.tgz#361da5362b6ddaa691a2de0b4f2d32028f1eb5a2"
   integrity sha512-DDa7d8TFNUalGC9VqXvQ1euWNN7sc63TrUCuM9J998+ViviahMIjKSOU7rfcgFOF+FCD71BhDRv4hrFz+ImDLQ==
