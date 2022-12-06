@@ -2,7 +2,7 @@
 title: utils.curveIntersectsY()
 ---
 
-The `utils.curveIntersectsX()` function finds the point(s) where a curve
+The `utils.curveIntersectsY()` function finds the point(s) where a curve
 intersects a given Y-value.
 
 ## Signature
