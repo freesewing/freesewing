@@ -55,7 +55,7 @@ facilitate unit testing and other specific use cases.
 | `Store`      | The [Store](/reference/api/store) constructor |
 
 
-The following named exports are **uitility methods**:
+The following named exports are **utility methods**:
 
 | Named export | Description |
 | ------------ | ------------|
@@ -77,6 +77,7 @@ The following named exports are **uitility methods**:
 | `pointOnCurve`            | See the [pointOnCurve](/reference/api/utils/pointoncurve) documentation |
 | `pointOnLine`             | See the [pointOnLine](/reference/api/utils/pointonline) documentation |
 | `rad2deg`                 | See the [rad2deg](/reference/api/utils/rad2deg) documentation |
+| `round`                   | See the [round](/reference/api/utils/round) documentation |
 | `splitCurve`              | See the [splitCurve](/reference/api/utils/splitcurve) documentation |
 | `stretchToScale`          | See the [stretchToScale](/reference/api/utils/stretchtoscale) documentation |
 | `units`                   | See the [units](/reference/api/utils/units) documentation |
