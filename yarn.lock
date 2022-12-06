@@ -4379,19 +4379,19 @@
     rxjs "^6.5.3"
 
 "@sanity/desk-tool@^2.35.0":
-  version "2.35.1"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-2.35.1.tgz#6d81966f4b2453ef125a5c993c944d13c34dee66"
-  integrity sha512-Y+pYHIjO2BYfV0PCYxjqVWRKS9qUAGuaUA5GT4hR/YsnG05lQrlssLS0cV+rKwldRpu27ThMUR3BpcWf2D+iyg==
+  version "2.35.2"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-2.35.2.tgz#71943c07526becf68a13dbe901e9fd57e3a663a5"
+  integrity sha512-YHhl0UZNVHg7oGff4udMIeZuQfTEzjn4d/4nGDfUy8ZN3ienjUkNzmgSu2a3L+XdzKP5CvXcFvP2dJwss6eODQ==
   dependencies:
     "@reach/auto-id" "^0.13.2"
     "@sanity/client" "^3.3.3"
     "@sanity/data-aspects" "2.33.2"
     "@sanity/diff" "2.33.2"
-    "@sanity/field" "2.35.1"
-    "@sanity/form-builder" "2.35.0"
+    "@sanity/field" "2.35.2"
+    "@sanity/form-builder" "2.35.2"
     "@sanity/generate-help-url" "^3.0.0"
     "@sanity/icons" "^1.3.4"
-    "@sanity/react-hooks" "2.35.1"
+    "@sanity/react-hooks" "2.35.2"
     "@sanity/structure" "2.35.0"
     "@sanity/types" "2.35.0"
     "@sanity/ui" "^0.37.22"
@@ -4465,19 +4465,19 @@
     p-queue "^2.3.0"
     split2 "^3.2.2"
 
-"@sanity/field@2.35.1":
-  version "2.35.1"
-  resolved "https://registry.yarnpkg.com/@sanity/field/-/field-2.35.1.tgz#5f41cabaab35ac18bbe6337806f3e193f6e37ab6"
-  integrity sha512-MfZ5dhHq//nFyfC7PJ9Xp3cxyucpNCfv7ta/0VcAjmaR6R/nA601cvEwdRRUsShfF1gvfK5wYWaRAho4uzxPLg==
+"@sanity/field@2.35.2":
+  version "2.35.2"
+  resolved "https://registry.yarnpkg.com/@sanity/field/-/field-2.35.2.tgz#e198abb926e8f5061e8356aa04997a666d0b2024"
+  integrity sha512-4IHDWKh3+uz6+ESN5TqJwrGl1Qr8DND+ep18+inNUR1Sb/1RaRMuJazHWqm4nV77dA063JlMdeyEyxyYUa63nw==
   dependencies:
     "@sanity/asset-utils" "^1.2.5"
-    "@sanity/base" "2.35.0"
+    "@sanity/base" "2.35.2"
     "@sanity/client" "^3.3.3"
     "@sanity/color" "^2.1.14"
     "@sanity/diff" "2.33.2"
     "@sanity/icons" "^1.3.4"
     "@sanity/image-url" "^1.0.1"
-    "@sanity/react-hooks" "2.35.1"
+    "@sanity/react-hooks" "2.35.2"
     "@sanity/types" "2.35.0"
     "@sanity/ui" "^0.37.22"
     "@sanity/util" "2.35.0"
@@ -4485,14 +4485,14 @@
     lodash "^4.17.15"
     sanity-diff-patch "^1.0.9"
 
-"@sanity/form-builder@2.35.0":
-  version "2.35.0"
-  resolved "https://registry.npmjs.org/@sanity/form-builder/-/form-builder-2.35.0.tgz#87068880153c20fb12acb64bc4e8887f3e7753ae"
-  integrity sha512-wwtWRwuQxLGUJ0WJSZ5mZLLhpm3/6qMvex29NtYPBM7oWPE+559CTjzwfTODLJzVKj+S5CE8XwXop7tHd5ojng==
+"@sanity/form-builder@2.35.2":
+  version "2.35.2"
+  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-2.35.2.tgz#294e5e125f2131a8abf5b5c24683dc283321c81e"
+  integrity sha512-IkigHMWjCEg7a8SCSfMeeprjVdmrGBUtDYIysL9KLgXQ8ae1Cd/cjBBSM4YtFge8WpPxPqTJK7vHoZjMbczRyQ==
   dependencies:
     "@reach/auto-id" "^0.13.2"
     "@sanity/asset-utils" "^1.2.5"
-    "@sanity/base" "2.35.0"
+    "@sanity/base" "2.35.2"
     "@sanity/block-tools" "2.35.0"
     "@sanity/client" "^3.3.3"
     "@sanity/color" "^2.1.14"
@@ -4542,15 +4542,10 @@
     prop-types "^15.6.2"
     scheduler "^0.19.1"
 
-"@sanity/icons@^1.3":
+"@sanity/icons@^1.3", "@sanity/icons@^1.3.1", "@sanity/icons@^1.3.4":
   version "1.3.10"
   resolved "https://registry.yarnpkg.com/@sanity/icons/-/icons-1.3.10.tgz#df934a94ae6669fe6b15515d800afb221cba0498"
   integrity sha512-5wVG/vIiGuGrSmq+Bl3PY7XDgQrGv0fyHdJI64FSulnr2wH3NMqZ6C59UFxnrZ93sr7kOt0zQFoNv2lkPBi0Cg==
-
-"@sanity/icons@^1.3.1", "@sanity/icons@^1.3.4":
-  version "1.3.6"
-  resolved "https://registry.npmjs.org/@sanity/icons/-/icons-1.3.6.tgz#4de4848304bf8487e1c08188decbb0ba5e86a158"
-  integrity sha512-/GeFmwHMQVTCBvo4qAQgZJHKB1UzU8u42gnjs6696PWh626G4xbElb3/YJ9sM1PwTc0OaYrvIDes8qUTvrlhrA==
 
 "@sanity/icons@^2.0.0":
   version "2.1.0"
@@ -4656,10 +4651,10 @@
     lodash "^4.17.21"
     slate "0.81.1"
 
-"@sanity/react-hooks@2.35.1":
-  version "2.35.1"
-  resolved "https://registry.yarnpkg.com/@sanity/react-hooks/-/react-hooks-2.35.1.tgz#24c6338567b5e3fb0d327c0403b5aeaf1ab230a8"
-  integrity sha512-6yNMicuVjHiY8jHqhHNSlSA0aD2fkjCJyYU9/nsMWWSizluw7s8L4MZv0ba2ybZTiC/GbFtFMhI8YFy440DvuQ==
+"@sanity/react-hooks@2.35.2":
+  version "2.35.2"
+  resolved "https://registry.yarnpkg.com/@sanity/react-hooks/-/react-hooks-2.35.2.tgz#3fc0491ad3c7e5a29d1ea8370cd3d8df4e756cd5"
+  integrity sha512-PZ2JUdifGrvqsS1T3clKx+ouXFzU6nC2kmKZH5N9yjNedlNmNYR/5mdxXEc8ACCXVc1UyTWoNNWmYN63ko97KA==
   dependencies:
     "@sanity/types" "2.35.0"
     react-rx "^1.0.0-beta.6"
@@ -21316,14 +21311,7 @@ rxjs@^6.0.0, rxjs@^6.3.3, rxjs@^6.4.0, rxjs@^6.5.3, rxjs@^6.6.0, rxjs@^6.6.3:
   dependencies:
     tslib "^1.9.0"
 
-rxjs@^7.5.5:
-  version "7.5.6"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.5.6.tgz#0446577557862afd6903517ce7cae79ecb9662bc"
-  integrity sha512-dnyv2/YsXhnm461G+R/Pe5bWP41Nm6LBXEYWI6eiFP4fiwx6WRI/CD0zbdVAudd9xwLEF2IDcKXLHit0FYjUzw==
-  dependencies:
-    tslib "^2.1.0"
-
-rxjs@^7.5.7:
+rxjs@^7.5.5, rxjs@^7.5.7:
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.6.0.tgz#361da5362b6ddaa691a2de0b4f2d32028f1eb5a2"
   integrity sha512-DDa7d8TFNUalGC9VqXvQ1euWNN7sc63TrUCuM9J998+ViviahMIjKSOU7rfcgFOF+FCD71BhDRv4hrFz+ImDLQ==
