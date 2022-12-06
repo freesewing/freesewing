@@ -45,7 +45,7 @@
     "lodash.orderby": "^4.6.0",
     "lodash.set": "^4.3.2",
     "next": "latest",
-    "next-i18next": "^12.0.0",
+    "next-i18next": "^13.0.0",
     "react-copy-to-clipboard": "^5.0.4",
     "react-hotkeys-hook": "^4.0.4",
     "react-instantsearch-dom": "^6.18.0",
