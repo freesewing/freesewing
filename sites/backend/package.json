@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-sesv2": "^3.200.0",
-    "@prisma/client": "4.5.0",
+    "@prisma/client": "4.7.1",
     "bcryptjs": "^2.4.3",
     "crypto": "^1.0.1",
     "express": "4.18.2",
