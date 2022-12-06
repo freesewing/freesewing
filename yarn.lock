@@ -4871,9 +4871,9 @@
     rxjs "^6.5.3"
 
 "@sanity/vision@^2.35.0":
-  version "2.35.0"
-  resolved "https://registry.npmjs.org/@sanity/vision/-/vision-2.35.0.tgz#24bbcd46c1b3bb9618cedc067b32e6ba32b9e268"
-  integrity sha512-VEX+EBgCJPZPU1esOF9a/FldYXxj+9L3GMfqZgw6iUFI23x4/jVAbY/7eXJZ0u9MBYox4IZv5kypwoqSj/5GkA==
+  version "2.35.2"
+  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-2.35.2.tgz#74d58f3148369a3f6114587c7b9422229f28112a"
+  integrity sha512-3bNsqCpY8yFX3Tcjuq7exSip5g0V76agOgFhLZ3cPNwuN298JNuirXXXSNd7rBaILYBPgYXSQHZHT4abbpNh3A==
   dependencies:
     "@juggle/resize-observer" "^3.3.1"
     "@sanity/icons" "^1.3.4"
