@@ -10,7 +10,7 @@ Counters are for integers only. Things like number of buttons and so on.
 Your counter option should be a plain object with these properties:
 
 - `count` : The default integer value
-- `min` : The minimal integer value that's allowed
+- `min` : The minimum integer value that's allowed
 - `max` : The maximum integer value that's allowed
 
 <Tip>

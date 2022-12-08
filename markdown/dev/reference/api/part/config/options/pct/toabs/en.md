@@ -81,4 +81,4 @@ also add a `fromAbs()` method that does the inverse: return the percentage of
 any millimeter value passed into it.
 
 See [Setting a value in millimeter as a
-percentage option](/api/config/options/pct/fromabs) for details.
+percentage option](/reference/api/part/config/options/pct/fromabs) for details.

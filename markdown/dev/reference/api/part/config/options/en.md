@@ -9,7 +9,7 @@ list the part's options:
 const part = {
   name: 'example.front',
   options: {
-    chestEase: { pct: 12, min: 0, max: 25 },
+    chestEase: { pct: 12, min: 0, max: 25, menu: 'fit' },
   },
   draft: ({ part }) => part
 }
@@ -61,6 +61,14 @@ percentage options][snapped] instead.
 
 </Warning>
 
+## Specifying the menu
+
+The `menu` property is used to specify what menu name the option should be listed under in the Design Options section.
+- Any arbitrary string can be used, and these names are used to organize options into logical sections. Examples of menu names that might be used include `fit`, `style`, and `advanced`.
+- The menu property is optional. An option without a menu property will still exist but be hidden, not shown or accessible to the user in Design Options.
+- Additional levels of submenus can be specified by using a menu name with text separated by "`.`" period characters. For example, `style.sleeves` can be used to have the option appear in the "Sleeves" submenu under the "Style" menu.
+- Menus and options will be appear to the user in alphabetical order. The exception is the `advanced` menu which, if present, will be displayed at the end of all other menus.
+
 [bool]: /reference/api/part/config/options/bool
 [const]: /reference/api/part/config/options/const
 [count]: /reference/api/part/config/options/counter
@@ -68,4 +76,4 @@ percentage options][snapped] instead.
 [list]: /reference/api/part/config/options/list
 [pct]: /reference/api/part/config/options/pct
 [snapped]: /reference/api/part/config/options/pct/snap
-[mm]: /reference/api/part/config/options/pct/mm
+[mm]: /reference/api/part/config/options/mm

@@ -91,4 +91,4 @@ it will also add a `toAbs()` method that does the inverse: return the
 value in millimeter of whatever percentage the option is set to.
 
 See [Reporting a percentage option value in
-millimeter](/reference/api/config/options/pct/toabs) for details.
+millimeter](/reference/api/part/config/options/pct/toabs) for details.

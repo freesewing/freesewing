@@ -30,12 +30,13 @@ options: {
     dflt: "angledBarrelCuff",
     list: [
       "roundedBarrelCuff",
-      "angledBarrelCuff"
-      "straightBarrelCuff"
-      "roundedFrenchCuff"
-      "angledFrenchCuff"
+      "angledBarrelCuff",
+      "straightBarrelCuff",
+      "roundedFrenchCuff",
+      "angledFrenchCuff",
       "straightFrenchCuff"
-    ]
+    ],
+    menu: 'style'
   }
 }
 ```
