@@ -44,7 +44,7 @@ export function beamIntersectsCircle(c, r, p1, p2, sort = 'x') {
 }
 
 /**
- * Finds qhere an endless line intersects with a given X-value
+ * Finds where an endless line intersects with a given X-value
  *
  * @param {Point} from - First Point on the line
  * @param {Point} to - Second Point on the line
@@ -60,7 +60,7 @@ export function beamIntersectsX(from, to, x) {
 }
 
 /**
- * Finds qhere an endless line intersects with a given Y-value
+ * Finds where an endless line intersects with a given Y-value
  *
  * @param {Point} from - First Point 1 on the line
  * @param {Point} to - Second Point on the line
@@ -109,6 +109,20 @@ export function beamsIntersect(a1, a2, b1, b2) {
 
     return new Point(x, y)
   }
+}
+
+/**
+ * Constructs and returns a BezierJs instance curve
+ *
+ * @param {Point} from - The starting point
+ * @param {Point} cp1 - The first control point
+ * @param {Point} cp2 - The second control point
+ * @param {Point} to - The end point
+ * @return {BezierJs} bezier - The Bezier curve
+ */
+export function bezier(from, cp1, cp2, to) {
+  const bezier = new Bezier(from, cp1, cp2, to)
+  return bezier
 }
 
 /**
