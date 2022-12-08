@@ -15,12 +15,12 @@
     "url": "https://freesewing.org/patrons/join"
   },
   "scripts": {
-    "dev": "node --experimental-json-modules ./node_modules/.bin/next dev -p 8000",
+    "dev": "node --experimental-json-modules ../../node_modules/next/dist/bin/next dev -p 8000",
     "develop": "next dev -p 3002",
     "prebuild": "SITE=dev node --experimental-json-modules ../shared/prebuild/index.mjs",
-    "build": "node --experimental-json-modules ./node_modules/.bin/next build",
-    "cibuild": "yarn prebuild && node --experimental-json-modules ./node_modules/.bin/next build && node scripts/algolia.mjs",
-    "start": "yarn prebuild && node --experimental-json-modules ./node_modules/.bin/next dev -p 8000",
+    "build": "node --experimental-json-modules ../../node_modules/next/dist/bin/next build",
+    "cibuild": "yarn prebuild && node --experimental-json-modules ../../node_modules/next/dist/bin/next build && node scripts/algolia.mjs",
+    "start": "yarn prebuild && node --experimental-json-modules ../../node_modules/next/dist/bin/next dev -p 8000",
     "lint": "next lint",
     "serve": "pm2 start npm --name 'dev' -- run start"
   },
@@ -57,8 +57,10 @@
   "devDependencies": {
     "autoprefixer": "^10.4.0",
     "eslint-config-next": "13.0.6",
+    "i18next": "^22.1.4",
     "js-yaml": "^4.1.0",
     "postcss": "^8.4.4",
+    "react-i18next": "^12.1.1",
     "tailwindcss": "^3.0.1",
     "yaml-loader": "^0.8.0"
   }
