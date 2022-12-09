@@ -32,7 +32,7 @@ will run `myCustomMethod()`.
 
 ## Methods
 
-A Store object exposes the following methods:
+A Store object exposes the following methods and properties:
 
 <ReadMore list />
 
@@ -42,4 +42,6 @@ A store is typically used to share information between parts. For example
 the length of the neck opening in one part can be used to calculate the
 length for the collar in another part.
 
-<Fixme compact>Include link to guide</Fixme>
+Click below to learn more about:
+
+- [How Stores work](/guides/patterns/store)
