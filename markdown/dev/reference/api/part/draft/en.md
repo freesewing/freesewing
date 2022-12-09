@@ -34,7 +34,7 @@ access the following properties:
 || **_Access to utilities_**   |
 | `getId`           | See [the getId documentation](/reference/api/part/getid) |
 | `hide`            | See [the hide documentation](/reference/api/part/hide) |
-| `log`             | See [the logging documentation](reference/api/store/logs) |
+| `log`             | See [the logging documentation](/reference/api/store/log) |
 | `macro`           | See [the macros documentation](/reference/macros/) |
 | `setHidden`       | See [the setHidden documentation](/reference/api/part/sethidden) |
 | `store`           | See [the store documentation](/reference/api/store) |
