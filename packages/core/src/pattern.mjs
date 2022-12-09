@@ -767,17 +767,18 @@ Pattern.prototype.__isStackHidden = function (stackName) {
 }
 
 /**
- * Generates an array of settings.options objects for sampling a list option
+ * Generates an array of settings.options objects for sampling a list or boolean option
  *
  * @private
  * @param {string} optionName - Name of the option to sample
  * @return {Array} sets - The list of settings objects
  */
-Pattern.prototype.__listOptionSets = function (optionName) {
+Pattern.prototype.__listBoolOptionSets = function (optionName) {
   let option = this.config.options[optionName]
   const base = this.__setBase()
   const sets = []
   let run = 1
+  if (typeof option.bool !== 'undefined') option = { list: [false, true] }
   for (const choice of option.list) {
     const settings = {
       ...base,
@@ -1080,11 +1081,15 @@ Pattern.prototype.__needs = function (partName, set = 0) {
  * @return {Array} sets - The list of settings objects
  */
 Pattern.prototype.__optionSets = function (optionName) {
-  let option = this.config.options[optionName]
-  if (typeof option?.list === 'object') return this.__listOptionSets(optionName)
   const sets = []
+  if (!(optionName in this.config.options)) return sets
+  let option = this.config.options[optionName]
+  if (typeof option.list === 'object' || typeof option.bool !== 'undefined')
+    return this.__listBoolOptionSets(optionName)
   let factor = 1
   let step, val
+  let numberRuns = 10
+  let stepFactor = numberRuns - 1
   if (typeof option.min === 'undefined' || typeof option.max === 'undefined') {
     const min = option * 0.9
     const max = option * 1.1
@@ -1092,9 +1097,16 @@ Pattern.prototype.__optionSets = function (optionName) {
   }
   if (typeof option.pct !== 'undefined') factor = 100
   val = option.min / factor
-  step = (option.max / factor - val) / 9
+  if (typeof option.count !== 'undefined' || typeof option.mm !== 'undefined') {
+    const numberOfCounts = option.max - option.min + 1
+    if (numberOfCounts < 10) {
+      numberRuns = numberOfCounts
+      stepFactor = Math.max(numberRuns - 1, 1)
+    }
+  }
+  step = (option.max / factor - val) / stepFactor
   const base = this.__setBase()
-  for (let run = 1; run < 11; run++) {
+  for (let run = 1; run <= numberRuns; run++) {
     const settings = {
       ...base,
       options: {
@@ -1106,6 +1118,8 @@ Pattern.prototype.__optionSets = function (optionName) {
     settings.options[optionName] = val
     sets.push(settings)
     val += step
+    if (typeof option.count !== 'undefined' || typeof option.mm !== 'undefined')
+      val = Math.round(val)
   }
 
   return sets
