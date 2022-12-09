@@ -122,7 +122,7 @@ Pattern.prototype.draft = function () {
 
 Pattern.prototype.createPartForSet = function (partName, set = 0) {
   // gotta protect against attacks
-  if (typeof set === '__proto__') {
+  if (set === '__proto__') {
     throw new Error('malicious attempt at altering Object.prototype. Stopping action')
   }
   // Create parts
