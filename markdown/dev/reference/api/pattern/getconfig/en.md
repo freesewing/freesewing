@@ -10,7 +10,7 @@ housekeeping tasks that are typically done behind the scenes when you call
 return a Pattern's internal configuration.
 
 You can use this to see what options a pattern provides, what
-measurments it requires, and so on.
+measurements it requires, and so on.
 
 ## Pattern.getConfig() signature
 
