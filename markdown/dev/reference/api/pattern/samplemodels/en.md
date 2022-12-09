@@ -57,5 +57,5 @@ import { cisFemaleAdult } from "@freesewing/models"
 
 const Aaron = new Aaron()
 
-const svg = aaron.sampleModels(cisFemaleAdult, "34').render()
+const svg = aaron.sampleModels(cisFemaleAdult, "34").render()
 ```
