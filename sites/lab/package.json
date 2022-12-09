@@ -31,7 +31,7 @@
   "dependencies": {
     "@headlessui/react": "^1.6.6",
     "i18next": "^22.1.4",
-    "next": "13.0.5",
+    "next": "^13.0.6",
     "next-i18next": "^13.0.0",
     "react": "^18.2.0",
     "react-i18next": "^12.1.1",
