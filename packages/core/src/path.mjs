@@ -177,6 +177,7 @@ Path.prototype.bbox = function () {
  */
 Path.prototype.clean = function () {
   const ops = []
+  let cur
   for (const i in this.ops) {
     const op = this.ops[i]
     if (['move', 'close', 'noop'].includes(op.type)) ops.push(op)
@@ -186,7 +187,7 @@ Path.prototype.clean = function () {
       if (!(op.cp1.sitsRoughlyOn(cur) && op.cp2.sitsRoughlyOn(cur) && op.to.sitsRoughlyOn(cur)))
         ops.push(ops)
     }
-    const cur = op?.to
+    cur = op?.to
   }
 
   if (ops.length < this.ops.length) this.ops = ops

@@ -41,7 +41,7 @@ The file consists of key/value pairs where:
 The key in the jargon file should always be lowercase. That's because we
 lowercase the term before matching it.
 
-So in your text, you can use `ESM`, `ems`, or even `eSm`, but the key in
+So in your text, you can use `ESM`, `esm`, or even `eSm`, but the key in
 the jargon file should be `esm`.
 
 ### Tips for jargon values
