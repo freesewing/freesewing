@@ -121,6 +121,10 @@ Pattern.prototype.draft = function () {
 }
 
 Pattern.prototype.createPartForSet = function (partName, set = 0) {
+  // gotta protect against attacks
+  if (typeof set === '__proto__') {
+    throw new Error('malicious attempt at altering Object.prototype. Stopping action')
+  }
   // Create parts
   this.setStores[set].log.debug(`📦 Creating part \`${partName}\` (set ${set})`)
   this.parts[set][partName] = this.__createPartWithContext(partName, set)
