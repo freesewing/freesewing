@@ -21,7 +21,7 @@ Point objects come with the following properties:
 
 - `x` : The X-coordinate of the point
 - `y` : The Y-coordinate of the point
-- `attributes` : An [Attributes](../attributes) instance holding the point's attributes
+- `attributes` : An [Attributes](/reference/api/attributes) instance holding the point's attributes
 
 ## Example
 
