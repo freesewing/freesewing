@@ -22,13 +22,18 @@ macro('cutonfold', {
 
 <Example caption="Example of the cut on fold indicator added by this macro">
 ```js
-({ Point, macro, part }) => {
+({ Point, macro, Path, paths, part }) => {
 
   macro('cutonfold', {
     from: new Point(0,0),
     to: new Point(100,0),
     grainline: true
   })
+
+  // Prevent clipping
+  paths.diag = new Path()
+    .move(new Point(-10,-20))
+    .move(new Point(110,0))
 
   return part
 }
@@ -43,7 +48,18 @@ macro('cutonfold', {
 | `to`        |         | [Point](/reference/api/point) | The endpoint of the _cut on fold_ indicator |
 | `margin`    | 5       | [Point](/reference/api/point) | The distance in % to keep from the start/end edge |
 | `offset`    | 15      | Number              | The distance in mm to offset from the line from start to end |
+| `prefix`    |         | String              | A prefix to apply to the names of the generated path and points |
 | `grainline` | `false` | Boolean             | Whether this cutonfold indicator is also the grainline |
+
+## Result
+
+| Generated Element | Description |
+|------|-------------|
+| `paths.cutonfold${prefix}` | The Path for the _cut on fold_ indicator |
+| `points.cutonfoldFrom${prefix}` | Point used to create the path |
+| `points.cutonfoldVia1${prefix}` | Point used to create the path |
+| `points.cutonfoldVia2${prefix}` | Point used to create the path |
+| `points.cutonfoldTo${prefix}` | Point used to create the path |
 
 ## Notes
 
