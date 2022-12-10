@@ -35,8 +35,7 @@ options: {
       "roundedFrenchCuff",
       "angledFrenchCuff",
       "straightFrenchCuff"
-    ],
-    menu: 'style'
+    ]
   }
 }
 ```

@@ -31,7 +31,6 @@ options: {
     deg:  85,
     min:  60,
     max: 130,
-    menu: 'fit'
   }
 }
 ```
