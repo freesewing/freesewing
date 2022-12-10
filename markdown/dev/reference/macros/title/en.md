@@ -2,7 +2,7 @@
 title: title
 ---
 
-The `title` macro adds a title to a pattern part.  
+The `title` macro adds a title to a pattern part.
 It is provided by the [title plugin](/reference/plugins/title).
 
 ## Signature
@@ -25,9 +25,10 @@ macro('title', {
 ```js
 ({ Point, Path, paths, macro, store, part }) => {
 
-  // This is where name/version is supposed to be stored
+  // This is where name/version/etc. is supposed to be stored
   store.set('data.version', 3)
   store.set('data.name', 'Example')
+  store.set('data.for', 'Person')
 
   macro('title', {
     nr: 9,
@@ -37,8 +38,8 @@ macro('title', {
 
   // Prevent clipping
   paths.diag = new Path()
-    .move(new Point(0,-50))
-    .move(new Point(80,20))
+    .move(new Point(-20,-50))
+    .move(new Point(80,35))
 
   return part
 }
@@ -56,3 +57,13 @@ macro('title', {
 | `append`   | `false` | Boolean             | Set this to `true` to append the `nr` to any text already set in Point `at`'s attributes, rather than overwrite it |
 | `rotation` | 0       | Number | An optional rotation in degrees |
 | `scale`    | 1       | Number | An optional scaling factor |
+
+## Result
+
+| Generated Element | Description |
+|-------------------|-------------|
+| `points._${prefix}_titleNr` | Point anchoring the part number text |
+| `points._${prefix}_titleName` | Point anchoring the part name text |
+| `points._${prefix}_titlePattern` | Point anchoring the pattern name text |
+| `points._${prefix}_titleFor` | Point anchoring the name of the person for whom the pattern was made, if that information exists |
+| `points._${prefix}_exportDate` | Point anchoring the pattern export date |

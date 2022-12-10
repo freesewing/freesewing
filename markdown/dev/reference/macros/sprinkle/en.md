@@ -2,8 +2,8 @@
 title: sprinkle
 ---
 
-The `sprinkle` macro facilitates adding snippets to your pattern in bulk.  
-It is by the [sprinkle plugin](/reference/plugins/sprinkle).
+The `sprinkle` macro facilitates adding snippets to your pattern in bulk.
+It is provided by the [sprinkle plugin](/reference/plugins/sprinkle).
 
 ## Signature
 
@@ -38,7 +38,7 @@ macro('sprinkle', {
   // Prevent clipping
   paths.diag = new Path()
     .move(points.a)
-    .move(points.g)
+    .move(new Point(points.g.x, points.g.y + 5))
 
   return part
 }
@@ -49,7 +49,13 @@ macro('sprinkle', {
 
 | Property    | Default | Type             | Description |
 |------------:|---------|------------------|-------------|
-| `snippet`   |         | String           | Name of the snippet to sprinkle |
-| `on`        | `[]`    | Array of strings | An array with **the names** of points to add the snippet on |
-| `scale`     | 1       | number           | Scale for the individual snippets |
-| `rotate`    | 0       | number           | Rotation for the individual snippets |
+| `snippet`   |         | String           | Name of the Snippet to sprinkle |
+| `on`        | `[]`    | Array of strings | Array of pointnames, the names of Points in the `points` array to add the Snippets on |
+| `scale`     | 1       | number           | Scale for the individual Snippets |
+| `rotate`    | 0       | number           | Rotation for the individual Snippets |
+
+## Result
+
+| Generated Element | Description |
+|-------------------|-------------|
+| `snippets.${pointname}-${snippet}` | The Snippet(s) created |

@@ -2,7 +2,7 @@
 title: ld
 ---
 
-The `ld` macro adds a _linear dimension_ to your pattern.  
+The `ld` macro adds a _linear dimension_ to your pattern.
 It is provided by the [dimension plugin](/reference/plugins/dimension/).
 
 ## Signature
@@ -12,7 +12,7 @@ macro('ld', {
   Number d,
   String id,
   Point from,
-  Boolean noEndtMarker,
+  Boolean noEndMarker,
   Boolean noStartMarker,
   String text,
   Point to,
@@ -39,14 +39,22 @@ macro('ld', {
 ## Configuration
 
 | Property        | Default | Type                | Description |
-|-----------------|---------|---------------------|-------------|
+|----------------:|---------|---------------------|-------------|
 | `from`          |         | [Point](/reference/api/point) | The startpoint of the dimension |
 | `to`            |         | [Point](/reference/api/point) | The endpoint of the dimension |
 | `d`             | 0       | Number              | The offset at which to draw the dimension |
-| `id`            | auto-assigned | String | A custom ID under wich paths and points will be created |
+| `id`            | auto-assigned | String | A custom ID under which paths and points will be created |
 | `text`          | Linear distance   | Number    | The text to go on the dimension if not the from-to linear distance |
 | `noStartMarker` | `false` | Boolean             | Whether to not draw a start marker |
-| `noEndMarker`  | `false` | Boolean             | Whether to not draw an end marker |
+| `noEndMarker`   | `false` | Boolean             | Whether to not draw an end marker |
+
+## Result
+
+| Generated Element | Description |
+|-------------------|-------------|
+| `paths.${id}` | Path for the span of the dimension |
+| `paths.${id}_ls` | Path for the leader to the start of the dimension |
+| `paths.${id}_le` | Path for the leader to the end of the dimension |
 
 ## Notes
 
