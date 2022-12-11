@@ -4,6 +4,8 @@ title: miniscale
 
 The `miniscale` macro adds a mini _scale box_ to your pattern. This box allows
 users to verify their pattern is printed to scale.
+The white inside of the box provides a metric scale, and the black outside
+of the box provides an imperial scale.
 
 The `miniscale` macro is provided by the [scalebox plugin](/reference/plugins/scalebox).
 It is the mini version of [the scalebox macro](/reference/macros/scalebox/).
@@ -35,9 +37,19 @@ macro('miniscale', {
 ## Configuration
 
 | Property    | Default | Type                | Description |
-|-------------|---------|---------------------|-------------|
+|------------:|---------|---------------------|-------------|
 | `at`        |         | [Point](/reference/api/point) | The point to anchor the _scale box_ on |
 | `rotate`    | 0       | Number              | Rotation in degrees |
+
+## Result
+
+| Generated Element | Description |
+|-------------------|-------------|
+| `paths.__miniscaleImperial` | Path of the imperial, outer box |
+| `paths.__miniscaleMetric` | Path of the metric, inner box |
+| `points.__miniscaleImperial` | Point anchoring the imperial text |
+| `points.__miniscaleMetric` | Point anchoring the metric text |
+| `points.__miniscale[Metric/Imperial][Top/Bottom][Left/Right]` | Points for the corners of the boxes |
 
 ## Notes
 

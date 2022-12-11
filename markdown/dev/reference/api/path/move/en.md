@@ -22,6 +22,11 @@ Path path.move(Point to)
   
   paths.noline = new Path().move(points.to)
 
+  // Prevents clipping
+  paths.diag = new Path()
+    .move(new Point(40,19))
+    .move(new Point(70,21))
+
   return part
 }
 ```

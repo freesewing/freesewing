@@ -15,5 +15,5 @@ null hook(Svg svg)
 
 The `postRender` hook is rarely used, but it's there if you need it.
 
-Like the `preRender` hook, it receives [the SVG object](/api/svg) as its first
+Like the `preRender` hook, it receives [the SVG object](/reference/api/svg) as its first
 parameter.

@@ -9,9 +9,9 @@ top of each other.
 <Note>This method is chainable as it returns the Pattern object</Note>
 
 Under the hood, this method will call one of
-[Pattern.sampleOption()](/reference/apu/pattern/sampleoption),
-[Pattern.sampleMeasurement()](/reference/apu/pattern/sampleoption), or
-[Pattern.sampleModels()](/reference/apu/pattern/sampleoption) to sample
+[Pattern.sampleOption()](/reference/api/pattern/sampleoption),
+[Pattern.sampleMeasurement()](/reference/api/pattern/samplemeasurement), or
+[Pattern.sampleModels()](/reference/api/pattern/samplemodels) to sample
 an option, a measurement, or different models respectively.
 
 Unlike those three methods where you pass the relevant info to to the method,
@@ -27,9 +27,9 @@ The `settings.sample` object can hold the following properties:
 
 See the specific sample methods below for more details:
 
-- [Pattern.sampleOption()](/reference/apu/pattern/sampleoption)
-- [Pattern.sampleMeasurement()](/reference/apu/pattern/sampleoption)
-- [Pattern.sampleModels()](/reference/apu/pattern/sampleoption)
+- [Pattern.sampleOption()](/reference/api/pattern/sampleoption)
+- [Pattern.sampleMeasurement()](/reference/api/pattern/samplemeasurement)
+- [Pattern.sampleModels()](/reference/api/pattern/samplemodels)
 
 ## Pattern.sample() signature
 

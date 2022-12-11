@@ -2,7 +2,7 @@
 title: round
 ---
 
-The `round` macro rounds a corner. It is provided by the [round
+The `round` macro creates a rounded corner. It is provided by the [round
 plugin](/reference/plugins/round/).
 
 ## Signature
@@ -44,11 +44,21 @@ macro('round', {
 |------------:|---------|---------------------|-------------|
 | `from`      |         | [Point](/reference/api/point) | The startpoint towards the corner to round |
 | `to`        |         | [Point](/reference/api/point) | The endpoint away from the corner to round |
-| `via`       |         | [Point](/reference/api/point) | The corner to round |
-| `radius`    | Maximum | Number              | The radius in mm in not the maximum |
+| `via`       |         | [Point](/reference/api/point) | The cornerpoint to round |
+| `radius`    | Maximum | Number              | The radius in mm if not the maximum possible |
 | `prefix`    |         | String              | A prefix to give to the points and paths created by this macro |
 | `hide`      | `true`  | Boolean             | Whether to hide the path created by this macro |
 | `class`     |         | String              | Class(es) to assign to the path created by this macro |
+
+## Result
+
+| Generated Element | Description |
+|-------------------|-------------|
+| `paths.${prefix}Rounded` | Path for the rounded corner |
+| `points.${prefix}Start` | Point for the start of the rounded corner |
+| `points.${prefix}End` | Point for the end of the rounded corner |
+| `points.${prefix}Cp1` | Control Point used to create the curved path |
+| `points.${prefix}Cp2` | Control Point used to create the curved path |
 
 ## Notes
 

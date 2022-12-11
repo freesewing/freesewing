@@ -25,7 +25,7 @@ Point point.setCircle(
 
 ## Example
 
-<Example caption="Examples of Point.setCircle(), compare this to [Point.addCircle](/reference/api/point/addcircle)">
+<Example caption="Examples of Point.setCircle(), compare this to [Point.addCircle()](/reference/api/point/addcircle)">
 ```js
 ({ Point, points, part }) => {
 

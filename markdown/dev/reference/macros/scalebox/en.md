@@ -4,6 +4,8 @@ title: scalebox
 
 The `scalebox` macro adds a _scale box_ to your pattern. This box allows users
 to verify their pattern is printed to scale.
+The white inside of the box provides a metric scale, and the black outside
+of the box provides an imperial scale.
 
 The `scalebox` macro is provided by the [scalebox
 plugin](/reference/plugins/scalebox).
@@ -40,7 +42,7 @@ macro('scalebox', {
 ## Configuration
 
 | Property    | Default | Type                | Description |
-|-------------|---------|---------------------|-------------|
+|------------:|---------|---------------------|-------------|
 | `at`        |         | [Point](/reference/api/point) | The point to anchor the _scale box_ on |
 | `lead`      | FreeSewing | String           | The lead text above the title |
 | `title`     | _pattern name + version_ | String | The title text |
@@ -48,6 +50,19 @@ macro('scalebox', {
 | `rotate`    | 0       | Number              | Rotation in degrees |
 
 (\*) `freesewingIsMadeByJoostDeCockAndContributors \n withTheFinancialSupportOfOurPatrons`
+
+## Result
+
+| Generated Element | Description |
+|-------------------|-------------|
+| `paths.__scaleboxImperial` | Path of the imperial, outer box |
+| `paths.__scaleboxMetric` | Path of the metric, inner box |
+| `points.__scaleboxLead` | Point anchoring the lead text above the title |
+| `points.__scaleboxTitle` | Point anchoring the title text |
+| `points.__scaleboxTitle` | Point anchoring the text below the title |
+| `points.__scaleboxImperial` | Point anchoring the imperial text |
+| `points.__scaleboxMetric` | Point anchoring the metric text |
+| `points.__scalebox[Metric/Imperial][Top/Bottom][Left/Right]` | Points for the corners of the boxes |
 
 ## Notes
 

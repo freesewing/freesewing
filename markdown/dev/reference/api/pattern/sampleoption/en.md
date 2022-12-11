@@ -7,13 +7,13 @@ to draft multiple variants of the same pattern, and stack them on
 top of each other.
 
 In this particular case, the variants it drafts depend
- on [the type of option](/config/options/):
+ on [the type of option](/reference/api/part/config/options/):
 
-- For options that are an object with a **min** and **max** property, 10 steps will be sampled, between min and max
-- For options that are a numeric value (**constants**), 10 steps will be sampled between 90% and 110% of the value
-- For options with a **list** of options, each option in the list will be sampled
-
-<Fixme>Handle other option types</Fixme>
+- For a Percentage or Degree option, 10 steps will be sampled, between min and max
+- For a Counter or Millimeter option, a maximum of 10 steps will be sampled, between min and max
+- For a Constant numeric option, 10 steps will be sampled between 90% and 110% of the value
+- For a List option, each option in the list will be sampled
+- For a Boolean option, both `false` and `true` will be sampled
 
 <Tip>
 The goal of option sampling is to verify the impact of an option on the pattern, and verify that
@@ -38,5 +38,5 @@ const pattern = new Aaron({
   measurements: cisFemaleAdult34
 })
 
-const svg = pattern.draft().sampleMeasurement('chest')
+const svg = pattern.draft().sampleOption('backlineBend')
 ```

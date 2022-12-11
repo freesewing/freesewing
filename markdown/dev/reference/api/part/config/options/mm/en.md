@@ -2,16 +2,20 @@
 title: Millimeter options
 ---
 
+<Warning>
+
 While FreeSewing supports millimeter options, we recommend
 using [percentage options][1] and will not accept
 contributions that use millimeter options.
+
+</Warning>
 
 ## Structure
 
 A millimeter option should be a plain object with these properties:
 
-- `mm` : The default value in millimeter
-- `min` : The minimul that's allowed
+- `mm` : The default value in millimeters
+- `min` : The minimum that's allowed
 - `max` : The maximum that's allowed
 
 ## Example

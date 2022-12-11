@@ -54,8 +54,8 @@ You can see this in practice in our [Carlita][2] pattern, which extends the
 menswear [Carlton][3] pattern.
 
 <Related compact>
-To learn more about extending a pattern, see [Design
-inheritance](/howtos/code/inheritance/)
+To learn more about extending a pattern, see [Part
+inheritance](/howtos/code/from/)
 </Related>
 
 ### Use when creating gender-neutral patterns
@@ -65,17 +65,17 @@ if they are present — you can use this plugin, but you'll also need a few othe
 things:
 
 - You'll need to mark the breast measurements as [optional
-  measurements](/reference/api/config/optionalmeasurements)
+  measurements](/reference/api/part/config/measurements#optionalmeasurements)
 - You'll need to [conditionally load this
-  plugin](/guides/plugins/conditionally-loading-build-time-plugins)
+  plugin](/reference/api/part/config/plugins#conditional-plugins)
 
 You can see an example of this in [our Teagan design][4].
 
 [1]: https://www.npmjs.com/package/@freesewing/plugin-banner
 
-[2]: https://github.com/freesewing/freesewing/blob/develop/designs/carlita/src/index.js#L12
+[2]: https://github.com/freesewing/freesewing/blob/develop/designs/carlita/src/index.mjs#L25
 
 [3]: https://github.com/freesewing/freesewing/blob/develop/designs/carlton
 
-[4]: https://github.com/freesewing/freesewing/blob/develop/designs/teagan/src/index.js
+[4]: https://github.com/freesewing/freesewing/blob/develop/designs/teagan/src/index.mjs
 
