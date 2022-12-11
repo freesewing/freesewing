@@ -37,13 +37,13 @@ function draftLilyFront({
   const drawOutseam = () => {
     let waistOut = points.styleWaistOutLily || points.waistOut
       if (points.waistOut.x < points.seatOut.x) {
-        log.info('waistOut smaller')
+        //log.info('waistOut smaller')
         return new Path()
           .move(waistOut)
           .curve(points.seatOut, points.kneeOutCp1, points.kneeOut)
           .curve(points.kneeOutCp2, points.floorOutCp2, points.floorOut)
       } else {
-        log.info('waistOut larger')
+        //log.info('waistOut larger')
         return new Path()
           .move(waistOut)
           ._curve(points.seatOutCp1, points.seatOut)
@@ -388,6 +388,10 @@ function draftLilyFront({
           points.kneeInCp2,
           points.forkCp1,
           points.fork)     
+    } else if (0.999 < requestedLength/measurements.waistToKnee && requestedLength/measurements.waistToKnee < 1.001) {
+      // TODO: find a solution that actually works
+      points.bottomOut = points.kneeOut.clone()
+      points.bottomIn = points.kneeIn.clone()
     } else {
       // 'cut' between knee and 'floor'      
       points.bottomOut = utils.lineIntersectsCurve(
@@ -471,19 +475,34 @@ function draftLilyFront({
       if (points.seatInTemp.y <= points.crotchSeamCurveStartMid.y) {
         // intersection is above the crotch seam curve start, so on the line segment
         points.seatIn = points.seatInTemp.clone()
+      } else if (points.seatInTemp.y > points.fork) {
+        // seat appears to be below crotch
+        //log.warning('seat estimated to be below crotch; this is probably not accurate')
+        // points.seatIn = utils.lineIntersectsCurve(
+          // points.seatMid,
+          // points.seatInTarget,
+          // points.fork,
+          // points.forkCp2,
+          // points.points.KneeInCp1,
+          // points.kneeIn
+        // )   
+          // TODO: fix this
+          points.seatIn = points.fork.clone()   
       } else {
         // use the intersection with the curved part instead
-        points.seatIn = utils.lineIntersectsCurve(
-          points.seatMid,
-          points.seatInTarget,
-          points.fork,
-          points.crotchSeamCurveCp1,
-          points.crotchSeamCurveCp2,
-          points.crotchSeamCurveStart
-        )
+        // points.seatIn = utils.lineIntersectsCurve(
+          // points.seatMid,
+          // points.seatInTarget,
+          // points.fork,
+          // points.crotchSeamCurveCp1,
+          // points.crotchSeamCurveCp2,
+          // points.crotchSeamCurveStart
+        // )
+          // TODO: fix this
+          points.seatIn = points.fork.clone() 
       }
         if (points.waistOut.x < points.seatOut.x) {
-          log.info('waist to the left of seat')
+          //log.info('waist to the left of seat')
           points.hipsOut = utils.lineIntersectsCurve(
             points.hipsOutTarget,
             points.hipsIn.rotate(180, points.hipsOutTarget),
@@ -501,7 +520,7 @@ function draftLilyFront({
             points.kneeOut
           )
         } else {
-          log.info('waist to the right of seat')
+          //log.info('waist to the right of seat')
           points.hipsOut = utils.lineIntersectsCurve(
             points.hipsOutTarget,
             points.hipsIn.rotate(180, points.hipsOutTarget),

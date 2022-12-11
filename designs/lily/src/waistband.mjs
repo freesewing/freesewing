@@ -17,8 +17,6 @@ function lilyWaistband({
   part,
 }) {
 // code copied from pacoWaistband, but without eyelets
-
-  console.log('store',store)
   
   points.topLeft = new Point(0, 0)
   points.midLeft = new Point(0, store.get('waistbandWidth'))
@@ -103,6 +101,6 @@ function lilyWaistband({
 
 export const waistband = {
   name: 'lily.waistband',
-  after: back, front,
+  after: [back, front],
   draft: lilyWaistband,
 }

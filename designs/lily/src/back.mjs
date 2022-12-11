@@ -244,7 +244,7 @@ function draftLilyBack({
     let requestedLength = (1 - options.lengthReduction)*measurements.waistToFloor
     // leggings must reach to fork at least, so define a minimum
     let waistToFork = points.waistX.dy(points.fork)
-    if (waistToFork > requestedLength) {
+    if (waistToFork >= requestedLength) {
       log.warning('length reduction capped; cutting off at fork')
     // add one percent to waistToFork to ensure that path length is nonzero
       requestedLength = waistToFork*1.01
@@ -276,6 +276,10 @@ function draftLilyBack({
           points.kneeInCp1,
           points.forkCp2,
           points.fork)     
+    } else if (0.999 < requestedLength/measurements.waistToKnee && requestedLength/measurements.waistToKnee < 1.001) {
+      // TODO: find a solution that actually works
+      points.bottomOut = points.kneeOut.clone()
+      points.bottomIn = points.kneeIn.clone()
     } else {
       // 'cut' between knee and 'floor'      
       points.bottomOut = utils.lineIntersectsCurve(
@@ -311,6 +315,7 @@ function draftLilyBack({
   }
   
   if (complete) {
+    // TODO: fix position of grainline so it doesn't extend below the pattern
     points.grainlineTop.y = points.styleWaistOutLily.y
     macro('grainline', {
       from: points.grainlineTop,
@@ -552,15 +557,16 @@ export const back = {
     fitKnee: {bool: true, menu: undefined},
     legBalance: 0.5, // between back and front parts
     waistBalance: 0.5,
+    crotchDrop: { pct: 0, min: 0, max: 15, menu: 'advanced' }, // 'downgrade' to advanced menu
     waistHeight: { ...titanBack.options.waistHeight, pct: 50 }, // halfway between waist and hips
     fabricStretch: { pct: 40, min: 0, max: 50, menu: 'fit' },
-    waistEase: {pct: -4,  menu: undefined}, // -fabricStretch/10,
-    seatEase: {pct: -4, menu: undefined}, // -fabricStretch/10,
-    kneeEase: {pct: -4, menu: undefined}, // -fabricStretch/10,
-    test: {pct: ({ options }) => (options.fabricStretch/2)},
+    waistEase: {pct: -4, min: 0, max: 50, menu: 'fit' }, // -fabricStretch/10,
+    seatEase: {pct: -4, min: 0, max: 50, menu: 'fit' }, // -fabricStretch/10,
+    kneeEase: {pct: -4, min: 0, max: 50, menu: 'fit' }, // -fabricStretch/10,
+    //test: {pct: back.options.fabricStretch/2, min: 0, max: 50, menu: 'fit'},
     lengthBonus: 0,
     lengthReduction: { pct: 0, min: 0, max: 100, menu: 'style'},
-    //waistbandWidth: { ...titanBack,options.waistbandWidth, menu: 'style' },
+    waistbandWidth: { ...titanBack.options.waistbandWidth, menu: 'style' },
     },
   hideDependencies: true,
   draft: draftLilyBack,
