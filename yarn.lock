@@ -2484,7 +2484,7 @@
   dependencies:
     client-only "^0.0.1"
 
-"@heroicons/react@latest":
+"@heroicons/react@^2.0.1", "@heroicons/react@latest":
   version "2.0.13"
   resolved "https://registry.yarnpkg.com/@heroicons/react/-/react-2.0.13.tgz#9b1cc54ff77d6625c9565efdce0054a4bcd9074c"
   integrity sha512-iSN5XwmagrnirWlYEWNPdCDj9aRYVD/lnK3JlsC9/+fqGF80k8C7rl+1HCvBX0dBoagKqOFBs6fMhJJ1hOg1EQ==
@@ -3344,7 +3344,7 @@
     string-strip-html "^8.2.0"
     tailwindcss "^3.2.4"
 
-"@mdx-js/loader@latest":
+"@mdx-js/loader@^2.0.0-rc.2", "@mdx-js/loader@latest":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-2.1.5.tgz#4e764c65333530fd786dfe4f36e918dfeac0200b"
   integrity sha512-oXjfTa/iAcMmW8DdQ+hQFodPCLqw5VKT2yoZkLwrZfPVVpUgKrI+5/ZePYq328xxtAUStZmR3ed0PWJrwd5Pkg==
@@ -3377,7 +3377,26 @@
     unist-builder "2.0.3"
     unist-util-visit "2.0.3"
 
-"@mdx-js/mdx@^2.0.0", "@mdx-js/mdx@latest":
+"@mdx-js/mdx@2.0.0-next.9":
+  version "2.0.0-next.9"
+  resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-2.0.0-next.9.tgz#6af5bf5d975ceccd11d31b4b7f180b2205c7bcfa"
+  integrity sha512-6i7iLIPApiCdvp4T6n3dI5IqDOvcNx4M3DUJ+AG6xj/NTssJcf5r3Gl4i3Q2tqJp0JAj6bWQ3IOLAefF18Y48g==
+  dependencies:
+    "@mdx-js/util" "2.0.0-next.1"
+    astring "^1.4.0"
+    detab "^2.0.0"
+    estree-walker "^2.0.0"
+    hast-util-to-estree "^1.1.0"
+    mdast-util-to-hast "^10.1.0"
+    periscopic "^2.0.0"
+    rehype-minify-whitespace "^4.0.0"
+    remark-mdx "2.0.0-next.9"
+    remark-parse "^9.0.0"
+    remark-squeeze-paragraphs "^4.0.0"
+    unified "^9.2.0"
+    unist-builder "^2.0.0"
+
+"@mdx-js/mdx@^2.0.0", "@mdx-js/mdx@^2.0.0-rc.2", "@mdx-js/mdx@latest":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-2.1.5.tgz#577937349fd555154382c2f805f5f52834a64903"
   integrity sha512-zEG0lt+Bl/r5U6e0TOS7qDbsXICtemfAPquxWFsMbdzrvlWaqMGemLl+sjVpqlyaaiCiGVQBSGdCk0t1qXjkQg==
@@ -3405,7 +3424,12 @@
   resolved "https://registry.yarnpkg.com/@mdx-js/react/-/react-1.6.22.tgz#ae09b4744fddc74714ee9f9d6f17a66e77c43573"
   integrity sha512-TDoPum4SHdfPiGSAaRBw7ECyI8VaHpK8GJugbJIJuqyh6kzw9ZLJZW3HGL3NNrJGxcAixUvqROm+YuQOo5eXtg==
 
-"@mdx-js/react@latest":
+"@mdx-js/react@2.0.0-next.9":
+  version "2.0.0-next.9"
+  resolved "https://registry.yarnpkg.com/@mdx-js/react/-/react-2.0.0-next.9.tgz#a269c2e2ecd86490e664fef789ae0d795e6ee509"
+  integrity sha512-ZHEwW79zXQrII6ZSaIDgxd80IDRB6Zg/2N1IivQ62j4qlAZd78rbbAc0BQKwADYpuFg96g0pFbuZ7/+vl1gR6A==
+
+"@mdx-js/react@^2.0.0-rc.2", "@mdx-js/react@latest":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@mdx-js/react/-/react-2.1.5.tgz#8225a867dae6f845ae5b0ec15bb454c23be3f576"
   integrity sha512-3Az1I6SAWA9R38rYjz5rXBrGKeZhq96CSSyQtqY+maPj8stBsoUH5pNcmIixuGkufYsh8F5+ka2CVPo2fycWZw==
@@ -3422,10 +3446,24 @@
     "@mdx-js/react" "1.6.22"
     buble-jsx-only "^0.19.8"
 
+"@mdx-js/runtime@next":
+  version "2.0.0-next.9"
+  resolved "https://registry.yarnpkg.com/@mdx-js/runtime/-/runtime-2.0.0-next.9.tgz#9acea9d10f225ded9ef4175c9b9a5c6f6c48620b"
+  integrity sha512-a4vhOaq74T0ZZyAsENj1oNAvAZr1hg11QkTogFG40H9vVvehfTDM2/zOt5/zHegP6inWIngUZbI1YWyoM07H3w==
+  dependencies:
+    "@mdx-js/mdx" "2.0.0-next.9"
+    "@mdx-js/react" "2.0.0-next.9"
+    buble-jsx-only "^0.19.8"
+
 "@mdx-js/util@1.6.22":
   version "1.6.22"
   resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-1.6.22.tgz#219dfd89ae5b97a8801f015323ffa4b62f45718b"
   integrity sha512-H1rQc1ZOHANWBvPcW+JpGwr+juXSxM8Q8YCkm3GhZd8REu1fHR3z99CErO1p9pkcfcxZnMdIZdIsXkOHY0NilA==
+
+"@mdx-js/util@2.0.0-next.1":
+  version "2.0.0-next.1"
+  resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-2.0.0-next.1.tgz#b17a046ed5cb1b13e75b29740504ec53a7e0b016"
+  integrity sha512-F36kWTFdFXrbNIsM77dhVwYZsZonUIKHkYyYgnuw1NWskBfEn1ET5B5Z5mm58ckKNf7SimchnxR9sKCCtH38WA==
 
 "@motionone/animation@^10.13.1":
   version "10.14.0"
@@ -6212,7 +6250,7 @@ astral-regex@^2.0.0:
   resolved "https://registry.yarnpkg.com/astral-regex/-/astral-regex-2.0.0.tgz#483143c567aeed4785759c0865786dc77d7d2e31"
   integrity sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==
 
-astring@^1.8.0:
+astring@^1.4.0, astring@^1.8.0:
   version "1.8.3"
   resolved "https://registry.yarnpkg.com/astring/-/astring-1.8.3.tgz#1a0ae738c7cc558f8e5ddc8e3120636f5cebcb85"
   integrity sha512-sRpyiNrx2dEYIMmUXprS8nlpRg2Drs8m9ElX9vVEXaCB4XEAJhKfs7IcX0IwShjuOAjLR6wzIrgoptz1n19i1A==
@@ -7377,6 +7415,11 @@ chalk@^5.0.0, chalk@^5.0.1, chalk@^5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-5.1.2.tgz#d957f370038b75ac572471e83be4c5ca9f8e8c45"
   integrity sha512-E5CkT4jWURs1Vy5qGJye+XwCkNj7Od3Af7CP6SujMetSMkLs8Do2RWJK5yx1wamHV/op8Rz+9rltjaTQWDnEFQ==
+
+character-entities-html4@^1.0.0:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/character-entities-html4/-/character-entities-html4-1.1.4.tgz#0e64b0a3753ddbf1fdc044c5fd01d0199a02e125"
+  integrity sha512-HRcDxZuZqMx3/a+qrzxdBKBPUpxWEq9xw2OPZ3a/174ihfrQKVsFhqtthBInFy1zZ9GgZyFXOatNujm8M+El3g==
 
 character-entities-html4@^2.0.0:
   version "2.1.0"
@@ -9109,7 +9152,7 @@ destroy@~1.0.4:
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
   integrity sha512-3NdhDuEXnfun/z7x9GOElY49LoqVHoGScmOKwmxhsS8N5Y+Z8KyPPDnaSzqWgYt/ji4mqwfTS34Htrk0zPIXVg==
 
-detab@2.0.4:
+detab@2.0.4, detab@^2.0.0:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/detab/-/detab-2.0.4.tgz#b927892069aff405fbb9a186fe97a44a92a94b43"
   integrity sha512-8zdsQA5bIkoRECvCrNKPla84lyoR7DSAyf7p0YgXzBO9PDJx8KntPUay7NS6yp+KdxdVtiE5SpHKtbp2ZQyA9g==
@@ -10255,6 +10298,11 @@ estraverse@^5.1.0, estraverse@^5.2.0, estraverse@^5.3.0:
   resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-5.3.0.tgz#2eea5290702f26ab8fe5370370ff86c965d21123"
   integrity sha512-MMdARuVEQziNTeJD8DgMqmhwR11BRQ/cBP+pLtYdSTnf3MIO8fFeiINEbX36ZdNlfU/7A9f3gUw49B3oQsvwBA==
 
+estree-util-attach-comments@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/estree-util-attach-comments/-/estree-util-attach-comments-1.0.0.tgz#51d280e458ce85dec0b813bd96d2ce98eae8a3f2"
+  integrity sha512-sL7dTwFGqzelPlB56lRZY1CC/yDxCe365WQpxNd49ispL40Yv8Tv4SmteGbvZeFwShOOVKfMlo4jrVvwoaMosA==
+
 estree-util-attach-comments@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/estree-util-attach-comments/-/estree-util-attach-comments-2.0.1.tgz#57dd0ae170ce2a6d9170ad69e6a45c87bcb52d81"
@@ -10270,6 +10318,11 @@ estree-util-build-jsx@^2.0.0:
     "@types/estree-jsx" "^0.0.1"
     estree-util-is-identifier-name "^2.0.0"
     estree-walker "^3.0.0"
+
+estree-util-is-identifier-name@^1.0.0, estree-util-is-identifier-name@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/estree-util-is-identifier-name/-/estree-util-is-identifier-name-1.1.0.tgz#2e3488ea06d9ea2face116058864f6370b37456d"
+  integrity sha512-OVJZ3fGGt9By77Ix9NhaRbzfbDV/2rx9EP7YIDJTmsZSEc5kYn2vWcNccYyahJL2uAQZK2a5Or2i0wtIKTPoRQ==
 
 estree-util-is-identifier-name@^2.0.0:
   version "2.0.1"
@@ -10292,6 +10345,11 @@ estree-util-visit@^1.0.0:
   dependencies:
     "@types/estree-jsx" "^0.0.1"
     "@types/unist" "^2.0.0"
+
+estree-walker@^2.0.0, estree-walker@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-2.0.2.tgz#52f010178c2a4c117a7757cfe942adb7d2da4cac"
+  integrity sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==
 
 estree-walker@^3.0.0:
   version "3.0.1"
@@ -11928,6 +11986,13 @@ hast-to-hyperscript@^9.0.0:
     unist-util-is "^4.0.0"
     web-namespaces "^1.0.0"
 
+hast-util-embedded@^1.0.0:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/hast-util-embedded/-/hast-util-embedded-1.0.6.tgz#ea7007323351cc43e19e1d6256b7cde66ad1aa03"
+  integrity sha512-JQMW+TJe0UAIXZMjCJ4Wf6ayDV9Yv3PBDPsHD4ExBpAspJ6MOcCX+nzVF+UJVv7OqPcg852WEMSHQPoRA+FVSw==
+  dependencies:
+    hast-util-is-element "^1.1.0"
+
 hast-util-embedded@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/hast-util-embedded/-/hast-util-embedded-2.0.0.tgz#877f4261044854743fc2621f728930ca61c8376f"
@@ -11991,6 +12056,11 @@ hast-util-is-body-ok-link@^2.0.0:
     "@types/hast" "^2.0.0"
     hast-util-has-property "^2.0.0"
     hast-util-is-element "^2.0.0"
+
+hast-util-is-element@^1.0.0, hast-util-is-element@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/hast-util-is-element/-/hast-util-is-element-1.1.0.tgz#3b3ed5159a2707c6137b48637fbfe068e175a425"
+  integrity sha512-oUmNua0bFbdrD/ELDSSEadRVtWZOf3iF6Lbv81naqsIV99RnSCieTbWuWCY8BAeEfKJTKl0gRdokv+dELutHGQ==
 
 hast-util-is-element@^2.0.0:
   version "2.1.2"
@@ -12084,6 +12154,21 @@ hast-util-select@~5.0.1:
     unist-util-visit "^4.0.0"
     zwitch "^2.0.0"
 
+hast-util-to-estree@^1.1.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/hast-util-to-estree/-/hast-util-to-estree-1.4.0.tgz#896ef9150a3f5cfbaff37334f75f31d6a324bab6"
+  integrity sha512-CiOAIESUKkSOcYbvTth9+yM28z5ArpsYqxWc7LWJxOx975WRUBDjvVuuzZR2o09BNlkf7bp8G2GlOHepBRKJ8Q==
+  dependencies:
+    comma-separated-tokens "^1.0.0"
+    estree-util-attach-comments "^1.0.0"
+    estree-util-is-identifier-name "^1.1.0"
+    hast-util-whitespace "^1.0.0"
+    property-information "^5.0.0"
+    space-separated-tokens "^1.0.0"
+    style-to-object "^0.3.0"
+    unist-util-position "^3.1.0"
+    zwitch "^1.0.0"
+
 hast-util-to-estree@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/hast-util-to-estree/-/hast-util-to-estree-2.0.2.tgz#79c5bf588915610b3f0d47ca83a74dc0269c7dc2"
@@ -12158,6 +12243,11 @@ hast-util-to-text@^3.0.0:
     "@types/hast" "^2.0.0"
     hast-util-is-element "^2.0.0"
     unist-util-find-after "^4.0.0"
+
+hast-util-whitespace@^1.0.0, hast-util-whitespace@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/hast-util-whitespace/-/hast-util-whitespace-1.0.4.tgz#e4fe77c4a9ae1cb2e6c25e02df0043d0164f6e41"
+  integrity sha512-I5GTdSfhYfAPNztx2xJRQpG8cuDSNt599/7YUn7Gx/WxNMsG+a835k97TDkFgk123cwjfwINaZknkKkphx/f2A==
 
 hast-util-whitespace@^2.0.0:
   version "2.0.0"
@@ -12508,10 +12598,10 @@ i18next-fs-backend@^2.0.0:
   resolved "https://registry.yarnpkg.com/i18next-fs-backend/-/i18next-fs-backend-2.0.1.tgz#5e33f28565257617682d622f6ce2c672d3f0ccc5"
   integrity sha512-fzeiFOXqsMiFAFUnNyC4buERI11vTAuf7JIDWqaiPgBK3R+XJQMSY1LyoXaWspBEFaAkXH/0uMbOv7nttBFztg==
 
-i18next@^22.1.4:
-  version "22.1.4"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-22.1.4.tgz#907a4e710889ae23fb92f3510a0f7147823f92ff"
-  integrity sha512-MCDtNRyovLY22rgLoZdCzg2QIza1V1A/3Hxb99akJzTDjcqCRWEsglTpFUt0vUjOxSxz+WmxmFETLHORRS+n6Q==
+i18next@^22.4.0:
+  version "22.4.0"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-22.4.0.tgz#fd79558f3d7855589c1fe447a5e10c0550f41195"
+  integrity sha512-1P6s/V/phMB1uQzV3EIaD/BJimz1d0P6sLZmfcMFbsfyfQ/2NiKcPyxP84aIrobhK2rMpkcOVAdneuH/NI/wBg==
   dependencies:
     "@babel/runtime" "^7.20.6"
 
@@ -13309,6 +13399,13 @@ is-promise@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/is-promise/-/is-promise-4.0.0.tgz#42ff9f84206c1991d26debf520dd5c01042dd2f3"
   integrity sha512-hvpoI6korhJMnej285dSg6nu1+e6uxs7zG3BYAm5byqDsgJNWwxzM6z6iZiAgQR4TJ30JmBTOwqZUw3WlyH3AQ==
+
+is-reference@^1.1.4:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/is-reference/-/is-reference-1.2.1.tgz#8b2dac0b371f4bc994fdeaba9eb542d03002d0b7"
+  integrity sha512-U82MsXXiFIrjCK4otLT+o2NA2Cd2g5MLoOVXUZjIOhLurrRxpEXzI8O0KZHr3IjLvlAH1kTPYSuqer5T9ZVBKQ==
+  dependencies:
+    "@types/estree" "*"
 
 is-reference@^3.0.0:
   version "3.0.0"
@@ -14735,6 +14832,11 @@ loglevelnext@^1.0.1:
     es6-symbol "^3.1.1"
     object.assign "^4.1.0"
 
+longest-streak@^2.0.0:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/longest-streak/-/longest-streak-2.0.4.tgz#b8599957da5b5dab64dee3fe316fa774597d90e4"
+  integrity sha512-vM6rUVCVUJJt33bnmHiZEvr7wPT78ztX7rojL+LW51bHtLh6HTjx84LA5W4+oa6aKEJA7jJu5LR6vQRBpA5DVg==
+
 longest-streak@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/longest-streak/-/longest-streak-3.0.1.tgz#c97315b7afa0e7d9525db9a5a2953651432bdc5d"
@@ -14989,7 +15091,7 @@ mdast-util-find-and-replace@^2.0.0:
     unist-util-is "^5.0.0"
     unist-util-visit-parents "^5.0.0"
 
-mdast-util-from-markdown@^0.8.5:
+mdast-util-from-markdown@^0.8.0, mdast-util-from-markdown@^0.8.5:
   version "0.8.5"
   resolved "https://registry.yarnpkg.com/mdast-util-from-markdown/-/mdast-util-from-markdown-0.8.5.tgz#d1ef2ca42bc377ecb0463a987910dae89bd9a28c"
   integrity sha512-2hkTXtYYnr+NubD/g6KGBS/0mFmBcifAsI0yIWRiRo0PjVs6SSOSOdtzbp6kSGnShDN6G5aWZpKQ2lWRy27mWQ==
@@ -15100,6 +15202,13 @@ mdast-util-mdx-expression@^1.0.0, mdast-util-mdx-expression@^1.1.0:
     mdast-util-from-markdown "^1.0.0"
     mdast-util-to-markdown "^1.0.0"
 
+mdast-util-mdx-expression@~0.1.0:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/mdast-util-mdx-expression/-/mdast-util-mdx-expression-0.1.1.tgz#fa1a04a5ea6777b0e8db6c120adf03088595df95"
+  integrity sha512-SoO8y1B9NjMOYlNdwXMchuTVvqSTlUmXm1P5QvZNPv7OH7aa8qJV+3aA+vl1DHK9Vk1uZAlgwokjvDQhS6bINA==
+  dependencies:
+    strip-indent "^3.0.0"
+
 mdast-util-mdx-jsx@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/mdast-util-mdx-jsx/-/mdast-util-mdx-jsx-2.0.2.tgz#087448dc29f6df9b9d9951132f82c20bd378bb68"
@@ -15115,6 +15224,28 @@ mdast-util-mdx-jsx@^2.0.0:
     unist-util-remove-position "^4.0.0"
     unist-util-stringify-position "^3.0.0"
     vfile-message "^3.0.0"
+
+mdast-util-mdx-jsx@~0.1.0:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/mdast-util-mdx-jsx/-/mdast-util-mdx-jsx-0.1.4.tgz#868371b90b17337b4f072a07021f7ce19612cf34"
+  integrity sha512-67KOAvCmypBSpr+AJEAVQg1Obig5Wnguo4ETTxASe5WVP4TLt57bZjDX/9EW5sWYQsO4gPqLxkUOlypVn5rkhg==
+  dependencies:
+    mdast-util-to-markdown "^0.6.0"
+    parse-entities "^2.0.0"
+    stringify-entities "^3.1.0"
+    unist-util-remove-position "^3.0.0"
+    unist-util-stringify-position "^2.0.0"
+    vfile-message "^2.0.0"
+
+mdast-util-mdx@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/mdast-util-mdx/-/mdast-util-mdx-0.1.1.tgz#16acbc6cabe33f4cebeb63fa9cf8be5da1d56fbf"
+  integrity sha512-9nncdnHNYSb4HNxY3AwE6gU632jhbXsDGXe9PkkJoEawYWJ8tTwmEOHGlGa2TCRidtkd6FF5I8ogDU9pTDlQyA==
+  dependencies:
+    mdast-util-mdx-expression "~0.1.0"
+    mdast-util-mdx-jsx "~0.1.0"
+    mdast-util-mdxjs-esm "~0.1.0"
+    mdast-util-to-markdown "^0.6.1"
 
 mdast-util-mdx@^2.0.0:
   version "2.0.0"
@@ -15136,10 +15267,29 @@ mdast-util-mdxjs-esm@^1.0.0:
     mdast-util-from-markdown "^1.0.0"
     mdast-util-to-markdown "^1.0.0"
 
+mdast-util-mdxjs-esm@~0.1.0:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/mdast-util-mdxjs-esm/-/mdast-util-mdxjs-esm-0.1.1.tgz#69134a0dad71a59a9e0e9cfdc0633dde31dff69a"
+  integrity sha512-kBiYeashz+nuhfv+712nc4THQhzXIH2gBFUDbuLxuDCqU/fZeg+9FAcdRBx9E13dkpk1p2Xwufzs3wsGJ+mISQ==
+
 mdast-util-to-hast@10.0.1:
   version "10.0.1"
   resolved "https://registry.yarnpkg.com/mdast-util-to-hast/-/mdast-util-to-hast-10.0.1.tgz#0cfc82089494c52d46eb0e3edb7a4eb2aea021eb"
   integrity sha512-BW3LM9SEMnjf4HXXVApZMt8gLQWVNXc3jryK0nJu/rOXPOnlkUjmdkDlmxMirpbU9ILncGFIwLH/ubnWBbcdgA==
+  dependencies:
+    "@types/mdast" "^3.0.0"
+    "@types/unist" "^2.0.0"
+    mdast-util-definitions "^4.0.0"
+    mdurl "^1.0.0"
+    unist-builder "^2.0.0"
+    unist-util-generated "^1.0.0"
+    unist-util-position "^3.0.0"
+    unist-util-visit "^2.0.0"
+
+mdast-util-to-hast@^10.1.0:
+  version "10.2.0"
+  resolved "https://registry.yarnpkg.com/mdast-util-to-hast/-/mdast-util-to-hast-10.2.0.tgz#61875526a017d8857b71abc9333942700b2d3604"
+  integrity sha512-JoPBfJ3gBnHZ18icCwHR50orC9kNH81tiR1gs01D8Q5YpV6adHNO9nKNuFBCJQ941/32PT1a63UF/DitmS3amQ==
   dependencies:
     "@types/mdast" "^3.0.0"
     "@types/unist" "^2.0.0"
@@ -15166,6 +15316,18 @@ mdast-util-to-hast@^12.0.0, mdast-util-to-hast@^12.1.0:
     unist-util-generated "^2.0.0"
     unist-util-position "^4.0.0"
     unist-util-visit "^4.0.0"
+
+mdast-util-to-markdown@^0.6.0, mdast-util-to-markdown@^0.6.1:
+  version "0.6.5"
+  resolved "https://registry.yarnpkg.com/mdast-util-to-markdown/-/mdast-util-to-markdown-0.6.5.tgz#b33f67ca820d69e6cc527a93d4039249b504bebe"
+  integrity sha512-XeV9sDE7ZlOQvs45C9UKMtfTcctcaj/pGwH8YLbMHoMOXNNCn2LsqVQOqrF1+/NU8lKDAqozme9SCXWyo9oAcQ==
+  dependencies:
+    "@types/unist" "^2.0.0"
+    longest-streak "^2.0.0"
+    mdast-util-to-string "^2.0.0"
+    parse-entities "^2.0.0"
+    repeat-string "^1.0.0"
+    zwitch "^1.0.0"
 
 mdast-util-to-markdown@^1.0.0, mdast-util-to-markdown@^1.3.0:
   version "1.3.0"
@@ -15415,6 +15577,14 @@ micromark-extension-gfm@^2.0.0:
     micromark-util-combine-extensions "^1.0.0"
     micromark-util-types "^1.0.0"
 
+micromark-extension-mdx-expression@^0.3.0, micromark-extension-mdx-expression@^0.3.2, micromark-extension-mdx-expression@~0.3.0:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/micromark-extension-mdx-expression/-/micromark-extension-mdx-expression-0.3.2.tgz#827592af50116110dc9ee27201a73c037e61aa27"
+  integrity sha512-Sh8YHLSAlbm/7TZkVKEC4wDcJE8XhVpZ9hUXBue1TcAicrrzs/oXu7PHH3NcyMemjGyMkiVS34Y0AHC5KG3y4A==
+  dependencies:
+    micromark "~2.11.0"
+    vfile-message "^2.0.0"
+
 micromark-extension-mdx-expression@^1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/micromark-extension-mdx-expression/-/micromark-extension-mdx-expression-1.0.3.tgz#cd3843573921bf55afcfff4ae0cd2e857a16dcfa"
@@ -15443,12 +15613,37 @@ micromark-extension-mdx-jsx@^1.0.0:
     uvu "^0.5.0"
     vfile-message "^3.0.0"
 
+micromark-extension-mdx-jsx@~0.3.0:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/micromark-extension-mdx-jsx/-/micromark-extension-mdx-jsx-0.3.3.tgz#68e8e700f2860e32e96ff48e44afb7465d462e21"
+  integrity sha512-kG3VwaJlzAPdtIVDznfDfBfNGMTIzsHqKpTmMlew/iPnUCDRNkX+48ElpaOzXAtK5axtpFKE3Hu3VBriZDnRTQ==
+  dependencies:
+    estree-util-is-identifier-name "^1.0.0"
+    micromark "~2.11.0"
+    micromark-extension-mdx-expression "^0.3.2"
+    vfile-message "^2.0.0"
+
 micromark-extension-mdx-md@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/micromark-extension-mdx-md/-/micromark-extension-mdx-md-1.0.0.tgz#382f5df9ee3706dd120b51782a211f31f4760d22"
   integrity sha512-xaRAMoSkKdqZXDAoSgp20Azm0aRQKGOl0RrS81yGu8Hr/JhMsBmfs4wR7m9kgVUIO36cMUQjNyiyDKPrsv8gOw==
   dependencies:
     micromark-util-types "^1.0.0"
+
+micromark-extension-mdx-md@~0.1.0:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/micromark-extension-mdx-md/-/micromark-extension-mdx-md-0.1.1.tgz#277b4e82ada37bfdf222f6c3530e20563d73e064"
+  integrity sha512-emlFQEyfx/2aPhwyEqeNDfKE6jPH1cvLTb5ANRo4qZBjaUObnzjLRdzK8RJ4Xc8+/dOmKN8TTRxFnOYF5/EAwQ==
+
+micromark-extension-mdx@^0.2.0:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/micromark-extension-mdx/-/micromark-extension-mdx-0.2.1.tgz#074b85013909481d23f382f17dced7b4cd173c0a"
+  integrity sha512-J+nZegf1ExPz1Ft6shxu8M9WfRom1gwRIx6gpJK1SEEqKzY5LjOR1d/WHRtjwV4KoMXrL53+PoN7T1Rw1euJew==
+  dependencies:
+    micromark "~2.11.0"
+    micromark-extension-mdx-expression "~0.3.0"
+    micromark-extension-mdx-jsx "~0.3.0"
+    micromark-extension-mdx-md "~0.1.0"
 
 micromark-extension-mdxjs-esm@^1.0.0:
   version "1.0.3"
@@ -15463,6 +15658,28 @@ micromark-extension-mdxjs-esm@^1.0.0:
     unist-util-position-from-estree "^1.1.0"
     uvu "^0.5.0"
     vfile-message "^3.0.0"
+
+micromark-extension-mdxjs-esm@~0.3.0:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/micromark-extension-mdxjs-esm/-/micromark-extension-mdxjs-esm-0.3.1.tgz#40a710fe145b381e39a2930db2813f3efaa014ac"
+  integrity sha512-tuLgcELrgY1a5tPxjk+MrI3BdYtwW67UaHZdzKiDYD8loNbxwIscfdagI6A2BKuAkrfeyHF6FW3B8KuDK3ZMXw==
+  dependencies:
+    micromark "~2.11.0"
+    micromark-extension-mdx-expression "^0.3.0"
+    vfile-message "^2.0.0"
+
+micromark-extension-mdxjs@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/micromark-extension-mdxjs/-/micromark-extension-mdxjs-0.3.0.tgz#35ecebaf14b8377b6046b659780fd3111196eccd"
+  integrity sha512-NQuiYA0lw+eFDtSG4+c7ao3RG9dM4P0Kx/sn8OLyPhxtIc6k+9n14k5VfLxRKfAxYRTo8c5PLZPaRNmslGWxJw==
+  dependencies:
+    acorn "^8.0.0"
+    acorn-jsx "^5.0.0"
+    micromark "~2.11.0"
+    micromark-extension-mdx-expression "~0.3.0"
+    micromark-extension-mdx-jsx "~0.3.0"
+    micromark-extension-mdx-md "~0.1.0"
+    micromark-extension-mdxjs-esm "~0.3.0"
 
 micromark-extension-mdxjs@^1.0.0:
   version "1.0.0"
@@ -16179,7 +16396,7 @@ next-tick@^1.1.0:
   resolved "https://registry.npmjs.org/next-tick/-/next-tick-1.1.0.tgz#1836ee30ad56d67ef281b22bd199f709449b35eb"
   integrity sha512-CXdUiJembsNjuToQvxayPZF9Vqht7hewsvy2sOWafLvi2awflj9mOC6bHIg50orX8IJvWKY9wYQ/zB2kogPslQ==
 
-next@^13.0.6:
+next@^13.0.0:
   version "13.0.6"
   resolved "https://registry.yarnpkg.com/next/-/next-13.0.6.tgz#f9a2e9e2df9ad60e1b6b716488c9ad501a383621"
   integrity sha512-COvigvms2LRt1rrzfBQcMQ2GZd86Mvk1z+LOLY5pniFtL4VrTmhZ9salrbKfSiXbhsD01TrDdD68ec3ABDyscA==
@@ -17630,6 +17847,14 @@ performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha512-7EAHlyLHI56VEIdK57uwHdHKIaAGbnXPiw0yWbarQZOKaKpvUIgW0jWRVLiatnM+XXlSwsanIBH/hzGMJulMow==
+
+periscopic@^2.0.0:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/periscopic/-/periscopic-2.0.3.tgz#326e16c46068172ca9a9d20af1a684cd0796fa99"
+  integrity sha512-FuCZe61mWxQOJAQFEfmt9FjzebRlcpFz8sFPbyaCKtdusPkMEbA9ey0eARnRav5zAhmXznhaQkKGFAPn7X9NUw==
+  dependencies:
+    estree-walker "^2.0.2"
+    is-reference "^1.1.4"
 
 periscopic@^3.0.0:
   version "3.0.4"
@@ -19956,6 +20181,16 @@ rehype-ignore@^1.0.1:
     unified "~10.1.2"
     unist-util-visit "~4.1.0"
 
+rehype-minify-whitespace@^4.0.0:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/rehype-minify-whitespace/-/rehype-minify-whitespace-4.0.5.tgz#5b4781786116216f6d5d7ceadf84e2489dd7b3cd"
+  integrity sha512-QC3Z+bZ5wbv+jGYQewpAAYhXhzuH/TVRx7z08rurBmh9AbG8Nu8oJnvs9LWj43Fd/C7UIhXoQ7Wddgt+ThWK5g==
+  dependencies:
+    hast-util-embedded "^1.0.0"
+    hast-util-is-element "^1.0.0"
+    hast-util-whitespace "^1.0.4"
+    unist-util-is "^4.0.0"
+
 rehype-minify-whitespace@^5.0.0:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/rehype-minify-whitespace/-/rehype-minify-whitespace-5.0.1.tgz#79729a0146aa97a9d43e1eb4b5884974e2f37e77"
@@ -20439,6 +20674,15 @@ remark-mdx@1.6.22:
     remark-parse "8.0.3"
     unified "9.2.0"
 
+remark-mdx@2.0.0-next.9:
+  version "2.0.0-next.9"
+  resolved "https://registry.yarnpkg.com/remark-mdx/-/remark-mdx-2.0.0-next.9.tgz#3e2088550ddd4264ce48bca15fb297569d369e65"
+  integrity sha512-I5dCKP5VE18SMd5ycIeeEk8Hl6oaldUY6PIvjrfm65l7d0QRnLqknb62O2g3QEmOxCswcHTtwITtz6rfUIVs+A==
+  dependencies:
+    mdast-util-mdx "^0.1.1"
+    micromark-extension-mdx "^0.2.0"
+    micromark-extension-mdxjs "^0.3.0"
+
 remark-mdx@^2.0.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/remark-mdx/-/remark-mdx-2.1.2.tgz#eea2784fa5697e14f6e0686700077986b88b8078"
@@ -20488,6 +20732,13 @@ remark-parse@^10.0.0:
     "@types/mdast" "^3.0.0"
     mdast-util-from-markdown "^1.0.0"
     unified "^10.0.0"
+
+remark-parse@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/remark-parse/-/remark-parse-9.0.0.tgz#4d20a299665880e4f4af5d90b7c7b8a935853640"
+  integrity sha512-geKatMwSzEXKHuzBNU1z676sGcDcFoChMK38TgdHJNAYfFtsfHDQG7MoJAjs6sgYMqyLduCYWDIWZIxiPeafEw==
+  dependencies:
+    mdast-util-from-markdown "^0.8.0"
 
 remark-preset-lint-consistent@^5.1.1:
   version "5.1.1"
@@ -20552,7 +20803,7 @@ remark-smartypants@^2.0.0:
     retext-smartypants "^5.1.0"
     unist-util-visit "^4.1.0"
 
-remark-squeeze-paragraphs@4.0.0:
+remark-squeeze-paragraphs@4.0.0, remark-squeeze-paragraphs@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/remark-squeeze-paragraphs/-/remark-squeeze-paragraphs-4.0.0.tgz#76eb0e085295131c84748c8e43810159c5653ead"
   integrity sha512-8qRqmL9F4nuLPIgl92XUuxI3pFxize+F1H0e/W3llTk0UsjJaj01+RrirkMw7P21RKe4X6goQhYRSvNWX+70Rw==
@@ -20588,7 +20839,7 @@ repeat-element@^1.1.2:
   resolved "https://registry.yarnpkg.com/repeat-element/-/repeat-element-1.1.4.tgz#be681520847ab58c7568ac75fbfad28ed42d39e9"
   integrity sha512-LFiNfRcSu7KK3evMyYOuCzv3L10TW7yC1G2/+StMjK8Y6Vqd2MG7r/Qjw4ghtuCOjFvlnms/iMmLqpvW/ES/WQ==
 
-repeat-string@^1.5.2, repeat-string@^1.5.4, repeat-string@^1.6.1:
+repeat-string@^1.0.0, repeat-string@^1.5.2, repeat-string@^1.5.4, repeat-string@^1.6.1:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/repeat-string/-/repeat-string-1.6.1.tgz#8dcae470e1c88abc2d600fff4a776286da75e637"
   integrity sha512-PV0dzCYDNfRi1jCDbJzpW7jNNDRuCOG/jI5ctQcGKt/clZD+YcPS3yIlWuTJMmESC8aevCFmWJy5wjAFgNqN6w==
@@ -22019,6 +22270,15 @@ string_decoder@~1.1.1:
   dependencies:
     safe-buffer "~5.1.0"
 
+stringify-entities@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/stringify-entities/-/stringify-entities-3.1.0.tgz#b8d3feac256d9ffcc9fa1fefdcf3ca70576ee903"
+  integrity sha512-3FP+jGMmMV/ffZs86MoghGqAoqXAdxLrJP4GUdrDN1aIScYih5tuIO3eF4To5AJZ79KDZ8Fpdy7QJnK8SsL1Vg==
+  dependencies:
+    character-entities-html4 "^1.0.0"
+    character-entities-legacy "^1.0.0"
+    xtend "^4.0.0"
+
 stringify-entities@^4.0.0, stringify-entities@^4.0.2:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/stringify-entities/-/stringify-entities-4.0.3.tgz#cfabd7039d22ad30f3cc435b0ca2c1574fc88ef8"
@@ -23159,6 +23419,18 @@ unified@^10.0.0, unified@^10.1.0, unified@~10.1.1, unified@~10.1.2:
     trough "^2.0.0"
     vfile "^5.0.0"
 
+unified@^9.2.0:
+  version "9.2.2"
+  resolved "https://registry.yarnpkg.com/unified/-/unified-9.2.2.tgz#67649a1abfc3ab85d2969502902775eb03146975"
+  integrity sha512-Sg7j110mtefBD+qunSLO1lqOEKdrwBFBrR6Qd8f4uwkhWNlbkaqwHse6e7QvD3AP/MNoJdEDLaf8OxYyoWgorQ==
+  dependencies:
+    bail "^1.0.0"
+    extend "^3.0.0"
+    is-buffer "^2.0.0"
+    is-plain-obj "^2.0.0"
+    trough "^1.0.0"
+    vfile "^4.0.0"
+
 union-value@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/union-value/-/union-value-1.0.1.tgz#0b6fe7b835aecda61c6ea4d4f02c14221e109847"
@@ -23284,7 +23556,7 @@ unist-util-position-from-estree@^1.0.0, unist-util-position-from-estree@^1.1.0:
   dependencies:
     "@types/unist" "^2.0.0"
 
-unist-util-position@^3.0.0:
+unist-util-position@^3.0.0, unist-util-position@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/unist-util-position/-/unist-util-position-3.1.0.tgz#1c42ee6301f8d52f47d14f62bbdb796571fa2d47"
   integrity sha512-w+PkwCbYSFw8vpgWD0v7zRCl1FpY3fjDSQ3/N/wNd9Ffa4gPi8+4keqt99N3XW6F99t/mUzp2xAhNmfKWp95QA==
@@ -23300,6 +23572,13 @@ unist-util-remove-position@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/unist-util-remove-position/-/unist-util-remove-position-2.0.1.tgz#5d19ca79fdba712301999b2b73553ca8f3b352cc"
   integrity sha512-fDZsLYIe2uT+oGFnuZmy73K6ZxOPG/Qcm+w7jbEjaFcJgbQ6cqjs/eSPzXhsmGpAsWPkqZM9pYjww5QTn3LHMA==
+  dependencies:
+    unist-util-visit "^2.0.0"
+
+unist-util-remove-position@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/unist-util-remove-position/-/unist-util-remove-position-3.0.0.tgz#4cd19e82c8e665f462b6acfcfd0a8353235a88e9"
+  integrity sha512-17kIOuolVuK16LMb9KyMJlqdfCtlfQY5FjY3Sdo9iC7F5wqdXhNjMq0PBvMpkVNNnAmHxXssUW+rZ9T2zbP0Rg==
   dependencies:
     unist-util-visit "^2.0.0"
 
