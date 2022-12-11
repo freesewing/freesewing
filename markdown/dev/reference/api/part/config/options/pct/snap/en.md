@@ -90,7 +90,7 @@ of numbers.
 The difference is that this allows you to supply a different list of snap values
 for users using metric or imperial units.
 
-In the example below, the value of [settings.units](/api/settings/units) will
+In the example below, the value of [settings.units](/reference/settings/units) will
 determine which list of snap values gets used.
 
 Then, if the absolute value returned by `toAbs()` is in the
