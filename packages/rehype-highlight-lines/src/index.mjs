@@ -21,7 +21,7 @@ export default (userOptions = {}) => {
     ...userOptions,
   }
 
-  const splitParams = (node, i, parent) => {
+  const splitParams = (node) => {
     if (node.children.length === 1 && node.children[0].type === 'text') {
       const content = node.children[0].value.split('\n')
       node.children = content.map((value) =>
@@ -42,7 +42,6 @@ export default (userOptions = {}) => {
   // Keep track of whether we've opened a highlight block
   let isOpen = 0
   let children = {}
-  let variant
 
   // Detect opening or closing comment
   const isOpeningOrClosingComment = (node) => {
@@ -63,12 +62,6 @@ export default (userOptions = {}) => {
 
     return [false, 'highlight']
   }
-
-  // Detect opening comment
-  const isOpeningComment = (node) =>
-    node.tagName === options.commentTag && node.properties?.className === options.commentClass
-      ? true
-      : false
 
   // Visitor method
   const visitor = (node, i, parent) => {

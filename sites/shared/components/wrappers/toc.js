@@ -7,7 +7,7 @@ import { useState, useEffect, Fragment } from 'react'
 
 // See: https://mdxjs.com/guides/mdx-on-demand/
 import { run } from '@mdx-js/mdx'
-import * as runtime from 'react/jsx-runtime.js'
+import * as runtime from 'react/jsx-runtime'
 
 const TocWrapper = ({ toc, app }) => {
   const [mdxModule, setMdxModule] = useState()

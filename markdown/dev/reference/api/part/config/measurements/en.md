@@ -10,7 +10,7 @@ measurements respectively.
 
 ## measurements
 
-The `measurements` property should hold the (named of the) measurements
+The `measurements` property should hold the names of the measurements
 that are required to draft the current part.
 
 ```js
@@ -23,7 +23,7 @@ const part = {
 
 ## optionalMeasurements
 
-The `optionalMeasurements` property should hold the (named of the) measurements
+The `optionalMeasurements` property should hold the names of the measurements
 that are optional to draft the current part.
 
 ```js

@@ -20,39 +20,38 @@ export const PageTitle = ({ app, slug, title }) => {
   return <h1>FIXME: This page has no title</h1>
 }
 
-const Breadcrumbs = ({ app, slug=false, title }) => {
+const Breadcrumbs = ({ app, slug = false, title }) => {
   if (!slug) return null
   const crumbs = []
   const chunks = slug.split('/')
   for (const i in chunks) {
-    const j = parseInt(i)+parseInt(1)
-    const page = get(app.navigation, chunks.slice(0,j))
-    if (page) crumbs.push([page.__linktitle, '/'+chunks.slice(0,j).join('/'), (j < chunks.length)])
+    const j = parseInt(i) + parseInt(1)
+    const page = get(app.navigation, chunks.slice(0, j))
+    if (page) crumbs.push([page.__linktitle, '/' + chunks.slice(0, j).join('/'), j < chunks.length])
   }
 
   return (
     <ul className="flex flex-row flex-wrap gap-2 font-bold">
       <li>
-        <Link href="/">
-          <a title="To the homepage" className="text-base-content">
-            <Logo size={24} fill="currentColor" stroke={false}/>
-          </a>
+        <Link href="/" title="To the homepage" className="text-base-content">
+          <Logo size={24} fill="currentColor" stroke={false} />
         </Link>
       </li>
-      {crumbs.map(crumb => (
+      {crumbs.map((crumb) => (
         <React.Fragment key={crumb[1]}>
           <li className="text-base-content">&raquo;</li>
           <li>
-            {crumb[2]
-              ?  (
-                <Link href={crumb[1]}>
-                  <a title={crumb[0]} className="text-secondary hover:text-secondary-focus">
-                    {crumb[0]}
-                  </a>
-                </Link>
-              )
-              : <span className="text-base-content">{crumb[0]}</span>
-            }
+            {crumb[2] ? (
+              <Link
+                href={crumb[1]}
+                title={crumb[0]}
+                className="text-secondary hover:text-secondary-focus"
+              >
+                {crumb[0]}
+              </Link>
+            ) : (
+              <span className="text-base-content">{crumb[0]}</span>
+            )}
           </li>
         </React.Fragment>
       ))}
@@ -78,16 +77,15 @@ const asideClasses = `
   xl:w-1/4
 `
 
-
 const DefaultLayout = ({
   app,
-  title=false,
-  children=[],
+  title = false,
+  children = [],
   search,
   setSearch,
-  noSearch=false,
-  workbench=false,
-  AltMenu=null,
+  noSearch = false,
+  workbench = false,
+  AltMenu = null,
 }) => {
   const startNavigation = () => {
     app.startLoading()
@@ -105,50 +103,58 @@ const DefaultLayout = ({
   const [collapseAltMenu, setCollapseAltMenu] = useState(false)
 
   return (
-    <div className={`
+    <div
+      className={`
     flex flex-col justify-between
     min-h-screen
     bg-base-100
-    `}>
+    `}
+    >
       <Header app={app} setSearch={setSearch} />
       <main className="grow bg-base-100">
         <div className="m-auto flex flex-row justify-center">
-
-          <aside className={`
+          <aside
+            className={`
             ${asideClasses}
             ${app.primaryMenu ? '' : 'translate-x-[-100%]'} transition-transform
             sm:flex-row-reverse
-            ${workbench && collapsePrimaryNav
-              ? 'sm:px-0 sm:w-16'
-              : 'sm:px-1 md:px-4 lg:px-8'
-            }
+            ${workbench && collapsePrimaryNav ? 'sm:px-0 sm:w-16' : 'sm:px-1 md:px-4 lg:px-8'}
             w-96
-          `}>
+          `}
+          >
             {workbench && (
               <div className={`hidden sm:flex`}>
                 <button
                   className="text-secondary-focus h-full px-2 pl-4 hover:animate-pulse"
                   onClick={() => setCollapsePrimaryNav(!collapsePrimaryNav)}
                 >
-                  {collapsePrimaryNav
-                    ? <><Right /><Right /><Right /></>
-                    : <><Left /><Left /><Left /></>
-                  }
+                  {collapsePrimaryNav ? (
+                    <>
+                      <Right />
+                      <Right />
+                      <Right />
+                    </>
+                  ) : (
+                    <>
+                      <Left />
+                      <Left />
+                      <Left />
+                    </>
+                  )}
                 </button>
               </div>
             )}
-            <PrimaryNavigation app={app} active={slug}/>
+            <PrimaryNavigation app={app} active={slug} />
           </aside>
 
           <div className="p-0 m-0 bg-base-100">
-            <section className={`
+            <section
+              className={`
               p-4 pt-24 sm:pt-28
               sm:px-1 md:px-4 lg:px-8
-              ${workbench && collapsePrimaryNav
-                ? ''
-                : 'max-w-7xl'
-              }
-            `}>
+              ${workbench && collapsePrimaryNav ? '' : 'max-w-7xl'}
+            `}
+            >
               <div>
                 {title && (
                   <>
@@ -160,28 +166,35 @@ const DefaultLayout = ({
               </div>
             </section>
           </div>
-
         </div>
 
         {workbench && AltMenu && (
-          <aside className={`
+          <aside
+            className={`
             ${asideClasses}
             ${app.primaryMenu ? '' : 'translate-x-[-100%]'} transition-transform
             sm:flex-row
-            ${collapseAltMenu
-              ? 'sm:px-0 sm:w-16'
-              : 'sm:px-1 md:px-4 lg:px-8 sm:w-[38.2%]'
-            }
-          `}>
+            ${collapseAltMenu ? 'sm:px-0 sm:w-16' : 'sm:px-1 md:px-4 lg:px-8 sm:w-[38.2%]'}
+          `}
+          >
             <div className={`hidden sm:flex`}>
               <button
                 className="text-secondary-focus h-full px-2 pr-4 hover:animate-pulse"
                 onClick={() => setCollapseAltMenu(!collapseAltMenu)}
               >
-                {collapseAltMenu
-                  ? <><Left /><Left /><Left /></>
-                  : <><Right /><Right /><Right /></>
-                }
+                {collapseAltMenu ? (
+                  <>
+                    <Left />
+                    <Left />
+                    <Left />
+                  </>
+                ) : (
+                  <>
+                    <Right />
+                    <Right />
+                    <Right />
+                  </>
+                )}
               </button>
             </div>
             {AltMenu}
@@ -190,16 +203,18 @@ const DefaultLayout = ({
       </main>
       {!noSearch && search && (
         <>
-        <div className={`
+          <div
+            className={`
           fixed w-full max-h-screen bg-base-100 top-0 z-30 pt-0 pb-16 px-8
           sm:rounded-lg sm:top-24
           sm:max-w-xl sm:m-auto sm:inset-x-12
           md:max-w-2xl
           lg:max-w-4xl
-        `}>
-          <Search app={app} search={search} setSearch={setSearch}/>
-        </div>
-        <div className="fixed top-0 left-0 w-full min-h-screen bg-neutral z-20 bg-opacity-70"></div>
+        `}
+          >
+            <Search app={app} search={search} setSearch={setSearch} />
+          </div>
+          <div className="fixed top-0 left-0 w-full min-h-screen bg-neutral z-20 bg-opacity-70"></div>
         </>
       )}
       <Footer app={app} />

@@ -2,7 +2,7 @@
 title: Create a Person
 ---
 
-Creates a new Person. 
+Creates a new Person.
 
 ## Access control
 
@@ -50,7 +50,7 @@ in the response body should indicate the nature of the problem.
 | Value               | Type     | Description |
 | ------------------- | -------- | ----------- |
 | `result`            | String | Either `success` or `error` |
-| `error`             | String | Will give info on the nature of the error. Only set if an error occured. |
+| `error`             | String | Will give info on the nature of the error. Only set if an error occurred. |
 | `person.id`         | Number | The ID of the Person |
 | `person.createdAt`  | String | Date string indicating the moment the Person was created |
 | `person.img`        | String | The URL to the image stored with this Person |

@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import Aside from 'shared/components/navigation/aside'
 import ThemePicker from 'shared/components/theme-picker'
 
-const DefaultLayout = ({ app, title=false, children=[] }) => {
+const DefaultLayout = ({ app, children = [] }) => {
   const router = useRouter()
   const slug = router.asPath.slice(1)
 

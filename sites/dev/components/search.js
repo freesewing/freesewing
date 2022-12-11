@@ -67,32 +67,26 @@ const Hit = (props) => (
       ${props.index === props.active ? 'bg-secondary bg-opacity-30' : 'bg-base-300 bg-opacity-10'}
     `}
   >
-    <Link href={props.hit.page}>
-      <a href={props.hit.page} className="flex flex-row justify-between gap-2">
-        <span className="text-base sm:text-xl font-bold leading-5">
-          {props.hit._highlightResult?.title ? (
-            <CustomHighlight hit={props.hit} attribute="title" />
-          ) : (
-            props.hit.title
-          )}
-        </span>
-        <span className="text-xs pt-0.5 sm:text-base sm:pt-1 font-bold uppercase">
-          {props.hit.page.split('/')[1]}
-        </span>
-      </a>
+    <Link href={props.hit.page} className="flex flex-row justify-between gap-2">
+      <span className="text-base sm:text-xl font-bold leading-5">
+        {props.hit._highlightResult?.title ? (
+          <CustomHighlight hit={props.hit} attribute="title" />
+        ) : (
+          props.hit.title
+        )}
+      </span>
+      <span className="text-xs pt-0.5 sm:text-base sm:pt-1 font-bold uppercase">
+        {props.hit.page.split('/')[1]}
+      </span>
     </Link>
     {props.hit._snippetResult?.body && (
-      <Link href={props.hit.page}>
-        <a href={props.hit.page} className="text-sm sm:text-base block py-1">
-          <CustomHighlight hit={props.hit} attribute="body" snippet />
-        </a>
+      <Link href={props.hit.page} className="text-sm sm:text-base block py-1">
+        <CustomHighlight hit={props.hit} attribute="body" snippet />
       </Link>
     )}
     {props.hit?._highlightResult?.page && (
-      <Link href={props.hit.page}>
-        <a href={props.hit.page} className="text-xs sm:text-sm block opacity-70">
-          <CustomHighlight hit={props.hit} attribute="page" />
-        </a>
+      <Link href={props.hit.page} className="text-xs sm:text-sm block opacity-70">
+        <CustomHighlight hit={props.hit} attribute="page" />
       </Link>
     )}
   </div>

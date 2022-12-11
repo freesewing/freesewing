@@ -1,12 +1,8 @@
 import { useState, useEffect } from 'react'
-import FreeSewingIcon from 'shared/components/icons/freesewing.js'
-import Link from 'next/link'
 import ThemePicker from 'shared/components/theme-picker.js'
 import CloseIcon from 'shared/components/icons/close.js'
 import MenuIcon from 'shared/components/icons/menu.js'
 import SearchIcon from 'shared/components/icons/search.js'
-import SwipeRightIcon from 'shared/components/icons/swiperight.js'
-import SwipeLeftIcon from 'shared/components/icons/swipeleft.js'
 import Ribbon from 'shared/components/ribbon.js'
 import { WordMark } from 'shared/components/wordmark.js'
 

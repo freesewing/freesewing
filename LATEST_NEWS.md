@@ -1,14 +1,10 @@
-##### Next contributor call on 3 September
+##### New release: v2.22.2
 
-[The next contributor call][1] is on **03 September 2022**.
-Lexander and Karen will host it.
+This is a bugfix release addressing come issues in the Titan and Paco design.
 
-The call is on [discord.freesewing.org](https://discord.freesewing.org/).
-Check the meetings voice/video channel.
+##### We're working on v3
 
-##### New design: Octoplushy
-
-Check the new design: [Octoplushy](/designs/octoplushy)
+We are working hard on the next major version of FreeSewing, which will be released in 2023.
 
 ##### Check out where FreeSewing is heading
 

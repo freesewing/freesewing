@@ -25,7 +25,7 @@ const PreviewTile = ({ img, slug, title, href=false, fixed=false }) => (
   >
     {href
       ? <a href={href} title={title} className={linkClasses(fixed)}/>
-      : <Link href={slug}><a title={title} className={linkClasses(fixed)}/></Link>
+      : <Link href={slug} title={title} className={linkClasses(fixed)}></Link>
     }
   </div>
 )

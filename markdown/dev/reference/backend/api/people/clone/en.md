@@ -28,9 +28,9 @@ Creating a new Person is possible via these endpoints:
 | <Method post /> | `/people/:id/clone/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
 | <Method post /> | `/people/:id/clone/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
 
-## Request url
+## Request URL
 
-The url should contain the ID of the Person you wish to remove.
+The URL should contain the ID of the Person you wish to remove.
 It replaces the `:id` placeholder in the [endpoints listed above](#endpoints).
 
 ## Response status codes
@@ -55,7 +55,7 @@ in the response body should indicate the nature of the problem.
 | Value               | Type     | Description |
 | ------------------- | -------- | ----------- |
 | `result`            | String | Either `success` or `error` |
-| `error`             | String | Will give info on the nature of the error. Only set if an error occured. |
+| `error`             | String | Will give info on the nature of the error. Only set if an error occurred. |
 | `person.id`         | Number | The ID of the Person |
 | `person.createdAt`  | String | Date string indicating the moment the Person was created |
 | `person.img`        | String | The URL to the image stored with this Person |
@@ -101,4 +101,3 @@ const clone = axios.post(
   }
 }
 ```
-

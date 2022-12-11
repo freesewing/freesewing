@@ -18,12 +18,8 @@ const DefaultLayout = ({ app, title = false, crumbs = false, children = [] }) =>
         app={app}
         slug={slug}
         before={[
-          <div className="flex flex-row items-center justify-between border-b mb-4">
-            <Link href="/">
-              <a>
-                <HomeIcon />
-              </a>
-            </Link>
+          <div className="flex flex-row items-center justify-between border-b mb-4" key="home-key">
+            <Link href="/"><HomeIcon /></Link>
             <ThemePicker app={app} />
           </div>,
         ]}

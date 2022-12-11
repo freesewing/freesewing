@@ -16,5 +16,5 @@ null hook(Svg svg)
 The `preRender` hook is typically used to change the result of the render, for
 example by adding CSS to the SVG output.
 
-Like the `postRender` hook, it receives [the SVG object](/api/svg) as its first
+Like the `postRender` hook, it receives [the SVG object](/reference/api/svg) as its first
 parameter.

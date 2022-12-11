@@ -44,7 +44,7 @@ export function beamIntersectsCircle(c, r, p1, p2, sort = 'x') {
 }
 
 /**
- * Finds qhere an endless line intersects with a given X-value
+ * Finds where an endless line intersects with a given X-value
  *
  * @param {Point} from - First Point on the line
  * @param {Point} to - Second Point on the line
@@ -60,7 +60,7 @@ export function beamIntersectsX(from, to, x) {
 }
 
 /**
- * Finds qhere an endless line intersects with a given Y-value
+ * Finds where an endless line intersects with a given Y-value
  *
  * @param {Point} from - First Point 1 on the line
  * @param {Point} to - Second Point on the line
@@ -162,7 +162,7 @@ export function circlesIntersect(c1, r1, c2, r2, sort = 'x') {
  * @param {BezierJs} curve - A BezierJs curve instance
  * @param {string} edge - The edge to find: top, bottom, right, or left
  * @param {int} steps - The number of steps to divide the curve in while walking it
- * @return {Array} intersecions - An Array of Point objects of all intersections
+ * @return {Point} edgepoint - A Point object located on the edge of the curve. Returns the first point found, if more than one lies on the edge.
  */
 export function curveEdge(curve, edge, steps = 500) {
   let x = Infinity
@@ -194,7 +194,7 @@ export function curveEdge(curve, edge, steps = 500) {
  * @param {Point} cp2 - Control Point at the end of the curve
  * @param {Point} to - End Point of the curve
  * @param {float} x - X-value to check for intersections
- * @return {Array} intersecions - An Array of Point objects of all intersections
+ * @return {Array} intersections - An Array of Point objects of all intersections
  */
 export function curveIntersectsX(from, cp1, cp2, to, x) {
   let start = new Point(x, -10000)
@@ -210,7 +210,7 @@ export function curveIntersectsX(from, cp1, cp2, to, x) {
  * @param {Point} cp2 - Control Point at the end of the curve
  * @param {Point} to - End Point of the curve
  * @param {float} y - Y-value to check for intersections
- * @return {Array} intersecions - An Array of Point objects of all intersections
+ * @return {Array} intersections - An Array of Point objects of all intersections
  */
 export function curveIntersectsY(from, cp1, cp2, to, y) {
   let start = new Point(-10000, y)
@@ -229,7 +229,7 @@ export function curveIntersectsY(from, cp1, cp2, to, y) {
  * @param {Point} cp1B - Control Point at the start of the second curve
  * @param {Point} cp2B - Control Point at the end of the second curve
  * @param {Point} toB - End Point of the fsecond curve
- * @return {Array} intersecions - An Array of Point objects of all intersections between the curves
+ * @return {Array} intersections - An Array of Point objects of all intersections between the curves
  */
 export function curvesIntersect(fromA, cp1A, cp2A, toA, fromB, cp1B, cp2B, toB) {
   let precision = 0.005 // See https://github.com/Pomax/bezierjs/issues/99

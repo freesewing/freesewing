@@ -9,25 +9,24 @@ import Docs from 'site/components/layouts/docs'
 import Feeds from 'site/components/feeds.js'
 
 /* This component should wrap all page content */
-const PageWrapper= ({
-  title="FIXME: No title set",
-  noSearch=false,
-  app=false,
-  layout=Docs,
-  crumbs=false,
-  children=[]
+const PageWrapper = ({
+  title = 'FIXME: No title set',
+  noSearch = false,
+  app = false,
+  layout = Docs,
+  crumbs = false,
+  children = [],
 }) => {
-
   const swipeHandlers = useSwipeable({
-    onSwipedLeft: evt => (app.primaryMenu) ? app.setPrimaryMenu(false) : null,
-    onSwipedRight: evt => (app.primaryMenu) ? null : app.setPrimaryMenu(true),
-    trackMouse: true
+    onSwipedLeft: () => (app.primaryMenu ? app.setPrimaryMenu(false) : null),
+    onSwipedRight: () => (app.primaryMenu ? null : app.setPrimaryMenu(true)),
+    trackMouse: true,
   })
 
   const router = useRouter()
   const slug = router.asPath.slice(1)
 
-  useEffect(() => app.setSlug(slug), [slug])
+  useEffect(() => app.setSlug(slug), [slug, app])
 
   // Trigger search with Ctrl+k
   useHotkeys('ctrl+k', (evt) => {
@@ -41,7 +40,9 @@ const PageWrapper= ({
     app: app,
     title: title,
     crumbs: crumbs,
-    search, setSearch, toggleSearch: () => setSearch(!search),
+    search,
+    setSearch,
+    toggleSearch: () => setSearch(!search),
     noSearch: noSearch,
   }
 
@@ -56,14 +57,10 @@ const PageWrapper= ({
     >
       <Feeds lang={app.locale} />
       <LayoutWrapper {...childProps}>
-        {Layout
-          ? <Layout {...childProps}>{children}</Layout>
-          : children
-        }
+        {Layout ? <Layout {...childProps}>{children}</Layout> : children}
       </LayoutWrapper>
     </div>
   )
 }
 
 export default PageWrapper
-

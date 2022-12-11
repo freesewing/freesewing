@@ -94,7 +94,7 @@ function pacoBack({
     let outseam = drawOutseam(true).reverse()
     points.pocketFlapTopIn = outseam.shiftAlong(absoluteOptions.frontPocketFlapSize)
     points.pocketFlapBottomIn = outseam.shiftAlong(
-      options.frontPocketFlapSize + measurements.heel * options.frontPocketHeelRatio
+      absoluteOptions.frontPocketFlapSize + measurements.heel * options.frontPocketHeelRatio
     )
     points.pocketFlapTopOut = points.pocketFlapTopIn
       .shiftTowards(points.pocketFlapBottomIn, absoluteOptions.frontPocketFlapSize)
@@ -313,6 +313,7 @@ export const back = {
   name: 'paco.back',
   from: titanBack,
   hideDependencies: true,
+  measurements: ['heel'],
   options: {
     // Constants
     titanPaperless: false,

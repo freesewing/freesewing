@@ -76,8 +76,8 @@ const renderPrevious = (node) =>
   node ? (
     <div className="flex flex-row gap-2 items-center">
       <LeftIcon className="w-6 h-6" />
-      <Link href={'/' + node.__slug}>
-        <a className="text-secondary break-words">{node.__linktitle}</a>
+      <Link href={'/' + node.__slug} className="text-secondary break-words">
+        {node.__linktitle}
       </Link>
     </div>
   ) : (
@@ -87,8 +87,8 @@ const renderPrevious = (node) =>
 const renderNext = (node) =>
   node ? (
     <div className="flex flex-row gap-2 items-center justify-end">
-      <Link href={'/' + node.__slug}>
-        <a className="text-right break-words">{node.__linktitle}</a>
+      <Link href={'/' + node.__slug} className="text-right break-words">
+        {node.__linktitle}
       </Link>
       <RightIcon className="w-6 h-6" />
     </div>

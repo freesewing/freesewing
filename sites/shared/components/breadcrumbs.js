@@ -6,10 +6,8 @@ const Breadcrumbs = ({ crumbs = [], title }) =>
   crumbs ? (
     <ul className="flex flex-row flex-wrap gap-2 font-bold">
       <li>
-        <Link href="/">
-          <a title="FreeSewing" className="text-base-content">
-            <FreeSewingIcon />
-          </a>
+        <Link href="/" title="FreeSewing" className="text-base-content">
+          <FreeSewingIcon />
         </Link>
       </li>
       {crumbs.map((crumb) => (
@@ -17,10 +15,12 @@ const Breadcrumbs = ({ crumbs = [], title }) =>
           <li className="text-base-content px-2">&raquo;</li>
           <li>
             {crumb[1] ? (
-              <Link href={crumb[1]}>
-                <a title={crumb[0]} className="text-secondary hover:text-secondary-focus">
-                  {crumb[0]}
-                </a>
+              <Link
+                href={crumb[1]}
+                title={crumb[0]}
+                className="text-secondary hover:text-secondary-focus"
+              >
+                {crumb[0]}
               </Link>
             ) : (
               <span className="text-base-content">{crumb[0]}</span>

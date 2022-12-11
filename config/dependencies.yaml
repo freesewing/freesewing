@@ -105,6 +105,8 @@ new-design:
     'ora': '^6.1.0'
     'prompts': '^2.4.2'
     'recursive-readdir': '^2.2.2'
+  peer:
+    '@freesewing/core': *freesewing
 noble:
   peer:
     '@freesewing/bella': *freesewing

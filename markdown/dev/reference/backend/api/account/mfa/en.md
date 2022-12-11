@@ -47,10 +47,10 @@ in the response body should indicate the nature of the problem.
 | Value               | Type     | Description |
 | -------------- | -------- | ----------- |
 | `result`       | String | Either `success` or `error` |
-| `error`        | String | Will give info on the nature of the error. Only set if an error occured. |
+| `error`        | String | Will give info on the nature of the error. Only set if an error occurred. |
 | `mfa.secret`   | String | The shared secret for generating one-time password (OTP) tokens |
-| `mfa.otpauth`  | String | The OTP Auth uri that is encoded in the QR code |
-| `mfa.qrcode`   | String | SVG to display a QR code with the otpauth uri encoded |
+| `mfa.otpauth`  | String | The OTP Auth URI that is encoded in the QR code |
+| `mfa.qrcode`   | String | SVG to display a QR code with the otpauth URI encoded |
 
 <Tip>
 ##### Styling the SVG
@@ -119,7 +119,7 @@ in the response body should indicate the nature of the problem.
 | Value               | Type     | Description |
 | -------------- | -------- | ----------- |
 | `result`       | String | Either `success` or `error` |
-| `error`        | String | Will give info on the nature of the error. Only set if an error occured. |
+| `error`        | String | Will give info on the nature of the error. Only set if an error occurred. |
 
 ### Example request
 
@@ -128,7 +128,7 @@ import { authenticator } from '@otplib/preset-default'
 
 const confirm = await axios.post(
   'https://backend.freesewing.org/account/mfa/jwt',
-  { 
+  {
     mfa: true,
     secret: mfa.secret,
     token: authenticator.generate(mfa.secret)
@@ -182,7 +182,7 @@ in the response body should indicate the nature of the problem.
 | Value               | Type     | Description |
 | -------------- | -------- | ----------- |
 | `result`       | String | Either `success` or `error` |
-| `error`        | String | Will give info on the nature of the error. Only set if an error occured. |
+| `error`        | String | Will give info on the nature of the error. Only set if an error occurred. |
 
 ### Example request
 
@@ -191,7 +191,7 @@ import { authenticator } from '@otplib/preset-default'
 
 const confirm = await axios.post(
   'https://backend.freesewing.org/account/mfa/jwt',
-  { 
+  {
     mfa: false,
     password: "I like big bewbs and I just can't lie",
     token: authenticator.generate(mfa.secret)
@@ -211,4 +211,3 @@ const confirm = await axios.post(
   "result": "success",
 }
 ```
-
