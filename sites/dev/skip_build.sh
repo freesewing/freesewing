@@ -1,19 +1,19 @@
 #!/bin/bash
-check=( \
-  "." \
-  "../../markdown/dev" \
-  "../freesewing.shared" \
-)
-build=0
-for d in ${check[@]}; do
-  if `git diff HEAD^ HEAD --quiet $d`; then
-    # We have changes, go ahead and build
-    echo "✅ - Changed detected in $d, let's build this thing"
-    exit 1;
-  fi
-done
 
-# No changes, do not waste time building this commit
-echo "🛑 - No changes detected; Let's just not"
+# Don't block production builds
+if [[ "$VERCEL_ENV" == "production" ]] ; then
+  echo "VERCEL_ENV: $VERCEL_ENV"
+  echo "✅ - Production build - Proceed to build"
+  exit 1;
+fi
+
+# Do not build dependabot PRs
+if [[ "$VERCEL_GIT_COMMIT_REF" == "v2" ]] ; then
+  echo "✅ - V2 branch build - Proceed to build"
+  exit 1;
+fi
+
+# Do not waste time building this commit
+echo "🛑 - Not production and not v2 - Do not build"
 exit 0;
 
