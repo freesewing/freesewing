@@ -17,7 +17,7 @@ Point utils.curveEdge(
 
 <Example caption="A Utils.curveEdge() example">
 ```js
-({ Point, points, Path, paths, Snippet, snippets, utils, part }) => {
+({ Point, points, Path, paths, Snippet, snippets, utils, Bezier, part }) => {
 
   points.A = new Point(20, 10)
   points.Acp = new Point(310, 40)
@@ -28,15 +28,12 @@ Point utils.curveEdge(
     .move(points.A)
     .curve(points.Acp, points.Bcp, points.B)
 
-/*
-  let curveA = new Bezier(
+  const curveA = new Bezier(
     { x: points.A.x, y: points.A.y },
     { x: points.Acp.x, y: points.Acp.y },
     { x: points.Bcp.x, y: points.Bcp.y },
     { x: points.B.x, y: points.B.y }
   )
-  */
-  let curveA = utils.bezier(points.A, points.Acp, points.Bcp, points.B)
 
   points.edge = utils.curveEdge(curveA, "left")
   snippets.edge = new Snippet("notch", points.edge)

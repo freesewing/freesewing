@@ -1,3 +1,4 @@
+import { Bezier } from 'bezier-js'
 import { Attributes } from './attributes.mjs'
 import * as utils from './utils.mjs'
 import { Point, pointsProxy } from './point.mjs'
@@ -122,6 +123,7 @@ Part.prototype.shorthand = function () {
     store: this.context.store,
     units: this.__unitsClosure(),
     utils: utils,
+    Bezier: Bezier,
   }
   // Add top-level store methods and add a part name parameter
   const partName = this.name
