@@ -11,6 +11,7 @@ import { Store } from './store.mjs'
 import { Hooks } from './hooks.mjs'
 import { version } from '../data.mjs'
 import { __loadPatternDefaults } from './config.mjs'
+import cloneDeep from 'lodash.clonedeep'
 
 const DISTANCE_DEBUG = false
 
@@ -55,7 +56,7 @@ export function Pattern(designConfig) {
   __addNonEnumProp(this, '__hide', {})
 
   // Enumerable properties
-  this.designConfig = designConfig // The design configuration (unresolved)
+  this.designConfig = cloneDeep(designConfig) // The design configuration (unresolved)
   this.config = {} // Will hold the resolved pattern after calling __init()
   this.store = new Store() // Pattern-wide store
   this.setStores = [] // Per-set stores
@@ -110,62 +111,73 @@ Pattern.prototype.draft = function () {
     this.__loadAbsoluteOptionsSet(set)
 
     for (const partName of this.config.draftOrder) {
-      // Create parts
-      this.setStores[set].log.debug(`📦 Creating part \`${partName}\` (set ${set})`)
-      this.parts[set][partName] = this.__createPartWithContext(partName, set)
-
-      // Handle inject/inheritance
-      if (typeof this.__inject[partName] === 'string') {
-        this.setStores[set].log.debug(
-          `Creating part \`${partName}\` from part \`${this.__inject[partName]}\``
-        )
-        try {
-          this.parts[set][partName].__inject(this.parts[set][this.__inject[partName]])
-        } catch (err) {
-          this.setStores[set].log.error([
-            `Could not inject part \`${this.__inject[partName]}\` into part \`${partName}\``,
-            err,
-          ])
-        }
-      }
-      if (this.__needs(partName, set)) {
-        // Draft part
-        if (typeof this.__designParts?.[partName]?.draft === 'function') {
-          this.activePart = partName
-          try {
-            this.__runHooks('prePartDraft')
-            const result = this.__designParts[partName].draft(this.parts[set][partName].shorthand())
-            this.__runHooks('postPartDraft')
-            if (typeof result === 'undefined') {
-              this.setStores[set].log.error(
-                `Result of drafting part ${partName} was undefined. Did you forget to return the part?`
-              )
-            } else this.parts[set][partName] = result
-          } catch (err) {
-            this.setStores[set].log.error([
-              `Unable to draft part \`${partName}\` (set ${set})`,
-              err,
-            ])
-          }
-        } else
-          this.setStores[set].log.error(
-            `Unable to draft pattern part __${partName}__. Part.draft() is not callable`
-          )
-        // FIXME: THis won't work not that this is immutable
-        // But is it still needed?
-        // this.parts[set][partName].hidden === true ? true : !this.__wants(partName, set)
-      } else {
-        this.setStores[set].log.debug(
-          `Part \`${partName}\` is not needed. Skipping draft and setting hidden to \`true\``
-        )
-        this.parts[set][partName].hidden = true
-      }
+      this.createPartForSet(partName, set)
     }
     this.__runHooks('postSetDraft')
   }
   this.__runHooks('postDraft')
 
   return this
+}
+
+Pattern.prototype.createPartForSet = function (partName, set = 0) {
+  // gotta protect against attacks
+  if (set === '__proto__') {
+    throw new Error('malicious attempt at altering Object.prototype. Stopping action')
+  }
+  // Create parts
+  this.setStores[set].log.debug(`📦 Creating part \`${partName}\` (set ${set})`)
+  this.parts[set][partName] = this.__createPartWithContext(partName, set)
+
+  // Handle inject/inheritance
+  if (typeof this.__inject[partName] === 'string') {
+    this.setStores[set].log.debug(
+      `Creating part \`${partName}\` from part \`${this.__inject[partName]}\``
+    )
+    try {
+      this.parts[set][partName].__inject(this.parts[set][this.__inject[partName]])
+    } catch (err) {
+      this.setStores[set].log.error([
+        `Could not inject part \`${this.__inject[partName]}\` into part \`${partName}\``,
+        err,
+      ])
+    }
+  }
+  if (this.__needs(partName, set)) {
+    // Draft part
+    const result = this.draftPartForSet(partName, set)
+    if (typeof result !== 'undefined') this.parts[set][partName] = result
+    // FIXME: THis won't work not that this is immutable
+    // But is it still needed?
+    // this.parts[set][partName].hidden === true ? true : !this.__wants(partName, set)
+  } else {
+    this.setStores[set].log.debug(
+      `Part \`${partName}\` is not needed. Skipping draft and setting hidden to \`true\``
+    )
+    this.parts[set][partName].hidden = true
+  }
+}
+
+Pattern.prototype.draftPartForSet = function (partName, set) {
+  if (typeof this.__designParts?.[partName]?.draft === 'function') {
+    this.activePart = partName
+    try {
+      this.__runHooks('prePartDraft')
+      const result = this.__designParts[partName].draft(this.parts[set][partName].shorthand())
+      this.__runHooks('postPartDraft')
+      if (typeof result === 'undefined') {
+        this.setStores[set].log.error(
+          `Result of drafting part ${partName} was undefined. Did you forget to return the part?`
+        )
+      }
+      return result
+    } catch (err) {
+      this.setStores[set].log.error([`Unable to draft part \`${partName}\` (set ${set})`, err])
+    }
+  } else
+    this.setStores[set].log.error(
+      `Unable to draft pattern part __${partName}__. Part.draft() is not callable`
+    )
 }
 
 /**
@@ -187,11 +199,10 @@ Pattern.prototype.getRenderProps = function () {
   // Run pre-render hook
   let svg = new Svg(this)
   svg.hooks = this.hooks
-  svg.__runHooks('preRender')
 
   this.__pack()
-  // Run post-layout hook
-  this.__runHooks('postLayout')
+  svg.__runHooks('preRender')
+
   let props = { svg }
   props.width = this.width
   props.height = this.height
@@ -1132,6 +1143,7 @@ Pattern.prototype.__optionSets = function (optionName) {
  * @return {Pattern} this - The Pattern instance
  */
 Pattern.prototype.__pack = function () {
+  this.__runHooks('preLayout')
   for (const set in this.settings) {
     if (this.setStores[set].logs.error.length > 0) {
       this.setStores[set].log.warning(`One or more errors occured. Not packing pattern parts`)
@@ -1192,6 +1204,7 @@ Pattern.prototype.__pack = function () {
     }
   }
 
+  this.__runHooks('postLayout')
   return this
 }
 

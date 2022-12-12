@@ -65,8 +65,8 @@ export default class PdfMaker {
     this.rows = pages.rows
 
     // calculate the width of the svg in points
-    this.svgWidth = this.columns * pages.width * mmToPoints
-    this.svgHeight = this.rows * pages.height * mmToPoints
+    this.svgWidth = this.columns * this.pageWidth
+    this.svgHeight = this.rows * this.pageHeight
   }
 
   /** create the pdf document */
@@ -179,7 +179,7 @@ export default class PdfMaker {
       preserveAspectRatio: 'xMinYMin slice',
     }
 
-    // everything is offset by half a margin so that it's centered on the page
+    // everything is offset by a margin so that it's centered on the page
     const startMargin = this.margin
     for (var h = 0; h < this.rows; h++) {
       for (var w = 0; w < this.columns; w++) {

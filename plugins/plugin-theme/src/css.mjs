@@ -53,7 +53,7 @@ const colors = {
  * scale: the scale of the markings
  * stripped: should nested declarations be stripped out? Necessary for svgToPdfkit
  * */
-export const buildStylesheet = (scale, stripped) => `
+export const buildStylesheet = (scale = 1, stripped) => `
   ${!stripped ? '/* Reset */' : ''}
   ${!stripped ? 'svg.freesewing ' : ''}path,
   ${!stripped ? 'svg.freesewing ' : ''}circle,

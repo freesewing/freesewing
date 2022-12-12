@@ -1,8 +1,9 @@
 import { SizeMe } from 'react-sizeme'
-import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch"
+import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch'
 import Svg from './svg'
 import Defs from './defs'
 import Stack from './stack'
+import { forwardRef } from 'react'
 
 /* What's with all the wrapping?
  *
@@ -25,37 +26,46 @@ import Stack from './stack'
  * Also still to see how this will work with SSR
  */
 
-const SvgWrapper = props => {
-  const { patternProps=false, gist, app, updateGist, unsetGist, showInfo } = props
+const SvgWrapper = forwardRef((props, ref) => {
+  const { patternProps = false, gist, updateGist, unsetGist, showInfo, viewBox } = props
 
   if (!patternProps) return null
 
-  return <SizeMe>{({ size }) => (
-    <TransformWrapper
-      minScale={0.1}
-      centerZoomedOut={true}
-      wheel={{ activationKeys: ['Control'] }}
-    >
-      <TransformComponent>
-        <div style={{ width: size.width+'px', }}>
-          <Svg {...patternProps} embed={gist.embed}>
-            <Defs {...patternProps} />
-            <style>{`:root { --pattern-scale: ${gist.scale || 1}} ${patternProps.svg.style}`}</style>
-            <g>
-              {Object.keys(patternProps.stacks).map((stackName) => (
-                <Stack {...{ app, gist, updateGist, unsetGist, showInfo, patternProps }}
-                  key={stackName}
-                  stackName={stackName}
-                  stack={patternProps.stacks[stackName]}
-                />
-              ))}
-            </g>
-          </Svg>
-        </div>
-      </TransformComponent>
-    </TransformWrapper>
-  )}</SizeMe>
-}
+  return (
+    <SizeMe>
+      {({ size }) => (
+        <TransformWrapper
+          minScale={0.1}
+          centerZoomedOut={true}
+          wheel={{ activationKeys: ['Control'] }}
+        >
+          <TransformComponent>
+            <div style={{ width: size.width + 'px' }}>
+              <Svg {...patternProps} viewBox={viewBox} embed={gist.embed} ref={ref}>
+                <Defs {...patternProps} />
+                <style>{`:root { --pattern-scale: ${gist.scale || 1}} ${
+                  patternProps.svg.style
+                }`}</style>
+                <g>
+                  {props.children ||
+                    Object.keys(patternProps.stacks).map((stackName) => (
+                      <Stack
+                        {...{ gist, updateGist, unsetGist, showInfo, patternProps }}
+                        key={stackName}
+                        stackName={stackName}
+                        stack={patternProps.stacks[stackName]}
+                      />
+                    ))}
+                </g>
+              </Svg>
+            </div>
+          </TransformComponent>
+        </TransformWrapper>
+      )}
+    </SizeMe>
+  )
+})
+
+SvgWrapper.displayName = 'SvgWrapper'
 
 export default SvgWrapper
-

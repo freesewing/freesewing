@@ -3,7 +3,7 @@ import { useGist } from 'shared/hooks/useGist'
 import Layout from 'shared/components/layouts/default'
 import Menu from 'shared/components/workbench/menu/index.js'
 import DraftError from 'shared/components/workbench/draft/error.js'
-import theme from '@freesewing/plugin-theme'
+import { pluginTheme } from '@freesewing/plugin-theme'
 import preloaders from 'shared/components/workbench/preload.js'
 import Modal from 'shared/components/modal'
 
@@ -115,14 +115,13 @@ const WorkbenchWrapper = ({ app, design, preload = false, from = false, layout =
   if (['draft', 'logs', 'test', 'printingLayout'].indexOf(gist._state?.view) !== -1) {
     gist.embed = true
     // get the appropriate layout for the view
-    gist.layout = gist.layouts?.[gist._state.view] || gist.layout || true
+    const layout = gist.layouts?.[gist._state.view] || gist.layout || true
     // hand it separately to the design
-    draft = new design(gist)
-    console.log({ draft, design })
+    draft = new design({ ...gist, layout })
     //draft.__init()
 
     // add theme to svg renderer
-    if (gist.renderer === 'svg') draft.use(theme)
+    if (gist.renderer === 'svg') draft.use(pluginTheme)
 
     // draft it for draft and event views. Other views may add plugins, etc and we don't want to draft twice
     try {
