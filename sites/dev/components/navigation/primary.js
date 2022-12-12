@@ -90,20 +90,22 @@ const SubLevel = ({ nodes = {}, active }) => (
                 }
               `}
               >
-                <span
-                  className={`
-                  text-3xl mr-2 inline-block p-0 leading-3
-                  ${
-                    child.__slug === active
-                      ? 'text-secondary sm:text-secondary translate-y-1'
-                      : 'translate-y-3'
-                  }
-                `}
-                >
-                  {child.__slug === active ? <>&bull;</> : <>&deg;</>}
-                </span>
-                <span className={child.__slug === active ? 'font-bold' : ''}>
-                  {child.__linktitle || child.__title}
+                <span className={`${linkClasses} grow hover:cursor-pointer`}>
+                  <span
+                    className={`
+                    text-3xl mr-2 inline-block p-0 leading-3
+                    ${
+                      child.__slug === active
+                        ? 'text-secondary sm:text-secondary translate-y-1'
+                        : 'translate-y-3'
+                    }
+                  `}
+                  >
+                    {child.__slug === active ? <>&bull;</> : <>&deg;</>}
+                  </span>
+                  <span className={child.__slug === active ? 'font-bold' : ''}>
+                    {child.__linktitle || child.__title}
+                  </span>
                 </span>
               </Link>
               <Chevron w={6} m={3} />
@@ -129,20 +131,22 @@ const SubLevel = ({ nodes = {}, active }) => (
                 : 'text-base-content sm:text-base-content'
             }`}
           >
-            <span
-              className={`
-              text-3xl mr-2 inline-block p-0 leading-3
-              ${
-                child.__slug === active
-                  ? 'text-secondary sm:text-secondary translate-y-1'
-                  : 'translate-y-3'
-              }
-            `}
-            >
-              {child.__slug === active ? <>&bull;</> : <>&deg;</>}
-            </span>
-            <span className={child.__slug === active ? 'font-bold' : ''}>
-              {child.__linktitle || child.__title}
+            <span className={`${linkClasses} hover:cursor-pointer`}>
+              <span
+                className={`
+                text-3xl mr-2 inline-block p-0 leading-3
+                ${
+                  child.__slug === active
+                    ? 'text-secondary sm:text-secondary translate-y-1'
+                    : 'translate-y-3'
+                }
+              `}
+              >
+                {child.__slug === active ? <>&bull;</> : <>&deg;</>}
+              </span>
+              <span className={child.__slug === active ? 'font-bold' : ''}>
+                {child.__linktitle || child.__title}
+              </span>
             </span>
           </Link>
         </li>
@@ -164,7 +168,12 @@ export const Icons = ({
   for (const page of order(app.navigation)) {
     output.push(
       <li key={page.__slug}>
-        <Link href={`${page.__slug}`} className={linkClasses} title={page.__title} style={linkStyle}>
+        <Link
+          href={`${page.__slug}`}
+          className={linkClasses}
+          title={page.__title}
+          style={linkStyle}
+        >
           {icons[page.__slug] ? icons[page.__slug]('w-14 h-14') : <HelpIcon />}
           <span className="font-bold">{page.__title}</span>
         </Link>
@@ -195,11 +204,12 @@ export const MainSections = ({ app, active }) => {
       <li key={page.__slug}>
         {act ? (
           <span
-            className={`${linkClasses}
+            className={`
                 flex flex-row gap-4 items-center
                 text-accent
                 hover:text-base-content
                 p-2 rounded
+                bg-base-200
               `}
             title={page.__title}
           >
@@ -207,10 +217,10 @@ export const MainSections = ({ app, active }) => {
           </span>
         ) : (
           <Link
-            href={`${page.__slug}`}
-            className={`${linkClasses}
+            href={`/${page.__slug}`}
+            className={`
               flex flex-row gap-4 items-center
-              hover:bg-secondary hover:bg-opacity-10
+              hover:bg-secondary hover:bg-opacity-10 hover:cursor-pointer
               p-2 rounded
             `}
             title={page.__title}
