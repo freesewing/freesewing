@@ -46,4 +46,4 @@ Under the hood, this macro will:
 - Go through all Points in your Part, and multiply their (X or Y)-coordinate by -1
 - Go through all the Paths in your Part, and for each drawing operation will multiply the (X or Y)-coordinare by -1
 - Go through all the Snippets in your Part and multiply the (X or Y)-coordinate of the anchor point by -1
-
+- Add a 'flipped` Attribute to Points and Paths to keep track of the number of times they have been flipped (to avoid issues when multiple flips are performed)

@@ -64,9 +64,9 @@ You can unlock those features by adding the following properties to your option:
 - `toAbs`: A method to [return the option value in millimeter][toabs]
 - `snap`: The configuration to control [snapping of percentage options][snap]
 
-[fromabs]: /reference/api/config/options/pct/fromabs
-[toabs]: /reference/api/config/options/pct/toabs
-[snap]: /reference/api/config/options/pct/snap
+[fromabs]: /reference/api/part/config/options/pct/fromabs
+[toabs]: /reference/api/part/config/options/pct/toabs
+[snap]: /reference/api/part/config/options/pct/snap
 
 Refer to the relevant documentation for more details:
 

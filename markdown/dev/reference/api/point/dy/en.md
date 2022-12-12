@@ -26,6 +26,11 @@ float point.dy(Point point)
     .setClass("dotted")
     .setText(units(points.from.dy(points.to)), 'center')
 
+  // Prevents clipping
+  paths.diag = new Path()
+    .move(new Point(-10,40))
+    .move(new Point(60,10))
+
   return part
 }
 ```

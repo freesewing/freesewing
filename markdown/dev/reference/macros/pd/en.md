@@ -13,7 +13,7 @@ macro('pd', {
   Number d,
   String id,
   Path path,
-  Boolean noEndtMarker,
+  Boolean noEndMarker,
   Boolean noStartMarker,
   String text,
 })
@@ -44,11 +44,19 @@ macro('pd', {
 | Property        | Default | Type                | Description |
 |----------------:|---------|---------------------|-------------|
 | `path`          |         | [Path](/reference/api/path)   | The path to draw the dimension along |
-| `d`             | 0       | Number              | The offset at which to draw the dimension |
+| `d`             | 10      | Number              | The offset at which to draw the dimension |
 | `text`          | Path length | Number          | The text to go on the dimension if not the length of the path |
-| `id`            | auto-assigned | String | A custom ID under wich paths and points will be created |
+| `id`            | auto-assigned | String | A custom ID under which paths and points will be created |
 | `noStartMarker` | `false` | Boolean             | Whether to not draw a start marker |
 | `noEndMarker`   | `false` | Boolean             | Whether to not draw an end marker |
+
+## Result
+
+| Generated Element | Description |
+|-------------------|-------------|
+| `paths.${id}` | Path for the span of the dimension |
+| `paths.${id}_ls` | Path for the leader to the start of the dimension |
+| `paths.${id}_le` | Path for the leader to the end of the dimension |
 
 ## Notes
 

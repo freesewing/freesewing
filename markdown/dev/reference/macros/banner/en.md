@@ -50,3 +50,9 @@ macro('banner', {
 | `dy`         | `1`        | `number`   | Controls how far the text will be located above the path |
 | `spaces`     | `12`       | `number`   | The number of spaces to place between repetitions |
 | `repeat`     | `10`       | `number`   | The number of repetitions |
+
+## Notes
+
+Under the hood, this macro will:
+
+- Add `data-text`, `data-text-dy`, and `data-text-class` Attributes to the path to generate the text.

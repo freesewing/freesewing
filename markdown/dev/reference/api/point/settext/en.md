@@ -19,7 +19,7 @@ Point point.setText(
 
 ## Example
 
-<Example caption="Examples of Point.setText(), compare this to [Point.setText](/reference/api/point/settext)">
+<Example caption="Examples of Point.setText(), compare this to [Point.setText()](/reference/api/point/settext)">
 ```js
 ({ Point, points, Path, paths, part }) => {
 

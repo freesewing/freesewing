@@ -320,7 +320,7 @@ Point.prototype.sitsRoughlyOn = function (that) {
  * Returns slope of a line made by this Point and that Point
  *
  * @param {Point} that - The Point that forms the line together with this Point
- * @return {float} slote - The slope of the line made by this Point and that Point
+ * @return {float} slope - The slope of the line made by this Point and that Point
  */
 Point.prototype.slope = function (that) {
   return (that.__check().y - this.__check().y) / (that.x - this.x)
