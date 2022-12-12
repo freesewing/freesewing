@@ -63,7 +63,7 @@ they are derived from are provided:
 | `waistFrontArc` | Half of `waistFront` | `waist`, `waistBack` |
 | `crossSeamBack` | Back portion of `crossSeam` | `crossSeam`,  `crossSeamFront` |
 
-## Measurements from plugin-measurements
+## Measurements from plugin-bust
 
 In addition, the [@freesewing/plugin-bust](/reference/plugins/bust)
 plugin will add and modify the following measurements.
