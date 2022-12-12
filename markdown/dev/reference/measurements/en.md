@@ -66,13 +66,12 @@ they are derived from are provided:
 ## Measurements from pluginBust
 
 In addition, the [pluginBust](/reference/plugins/bust) plugin from
-`@freesewing/plugin-bust` will add and modify the following measurements
-if the `underbust` measurement is provided:
+`@freesewing/plugin-bust` will add and modify the following measurements.
 
-| Measurement | Description | Required Measurements |
-|-------------|-------------|-----------|
-| `bust` | The original `chest` circumference is copied to `bust` and is used as the bust circumference | `underbust` |
-| `chest` | `chest` is changed to the value of `highbust` | `underbust` |
+| Measurement | Description |
+|-------------|-------------|
+| `bust` | Bust circumference (`bust` is set to the value of `chest`) |
+| `chest` | (`chest` is changed to the value of `highBust`) |
 
 <Tip>
 
