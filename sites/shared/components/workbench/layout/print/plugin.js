@@ -50,6 +50,7 @@ export const pagesPlugin = ({ size = 'a4', ...settings }) => {
   return basePlugin({ ...settings, sheetWidth, sheetHeight })
 }
 
+/** check if there is anything to render on the given section of the svg so that we can skip empty pages */
 const doScanForBlanks = (stacks, layout, x, y, w, h) => {
   let hasContent = false
   for (var s in stacks) {
@@ -113,6 +114,7 @@ const basePlugin = ({
         name: partName,
         draft: (shorthand) => {
           const layoutData = shorthand.store.get('layoutData')
+          // only actually draft the part if layout data has been set
           if (layoutData) {
             shorthand.macro('addPages', layoutData, shorthand)
             shorthand.part.unhide()
@@ -122,22 +124,29 @@ const basePlugin = ({
           return shorthand.part
         },
       })
+
+      // Re-calculate the pattern's config
       pattern.getConfig()
+      // create the part so that a stack gets made for it during packing
+      // but don't draft it so that it doesn't have a size
       pattern.createPartForSet(partName, pattern.activeSet)
     },
     postLayout: function (pattern) {
       let { height, width, stacks } = pattern
       if (!responsiveColumns) width = sheetWidth
+      // get the layout
       const layout =
         typeof pattern.settings[0].layout === 'object'
           ? pattern.settings[0].layout
           : pattern.autoLayout
 
+      // if the layout doesn't start at 0,0 we want to account for that in our height and width
       if (layout?.topLeft) {
         height += layout.topLeft.y
         responsiveColumns && (width += layout.topLeft.x)
       }
 
+      // store the layout data so the part can use it during drafting
       pattern.setStores[pattern.activeSet].set('layoutData', {
         size: [sheetHeight, sheetWidth],
         height,
@@ -145,16 +154,11 @@ const basePlugin = ({
         layout,
         stacks,
       })
-      // But add the part to the autoLayout property
-      // pattern.autoLayout.parts[partName] = {
-      //   move: { x: 0, y: 0 }
-      // }
 
-      // TODO migrate this to v3 parts adding
-      // Add pages
-      // const { macro } = pattern.config.parts[partName].shorthand()
+      // draft the part
       pattern.draftPartForSet(partName, pattern.activeSet)
 
+      // if the pattern size is supposed to be re-set to the full width and height of all pages, do that
       if (setPatternSize) {
         const generatedPageData = pattern.setStores[pattern.activeSet].get('pages')
         pattern.width = sheetWidth * generatedPageData.cols

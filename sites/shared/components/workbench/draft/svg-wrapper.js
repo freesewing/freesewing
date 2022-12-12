@@ -30,7 +30,6 @@ const SvgWrapper = forwardRef((props, ref) => {
   const { patternProps = false, gist, updateGist, unsetGist, showInfo, viewBox } = props
 
   if (!patternProps) return null
-  console.log(props.children)
 
   return (
     <SizeMe>

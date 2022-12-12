@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import Stack from './part'
+import Stack from './stack'
 import SvgWrapper from '../../draft/svg-wrapper'
 import { PartInner } from '../../draft/part'
 
@@ -60,19 +60,21 @@ const Draft = (props) => {
     }
   }
 
-  // We need to make sure the `pages` part is at the bottom of the pile
-  // so we can drag-drop all parts on top of it.
-  // Bottom in SVG means we need to draw it first
   const viewBox = layout.topLeft
     ? `${layout.topLeft.x} ${layout.topLeft.y} ${layout.width} ${layout.height}`
     : false
 
+  // We need to make sure the `pages` part is at the bottom of the pile
+  // so we can drag-drop all parts on top of it.
+  // Bottom in SVG means we need to draw it first
   const stacks = [
     <PartInner
       {...{ part: patternProps.parts[0][props.layoutPart], partName: props.layoutPart, gist }}
       key={props.layoutPart}
     />,
   ]
+
+  // then make a stack component for each remaining stack
   for (var stackName in patternProps.stacks) {
     if (stackName === props.layoutPart) {
       continue

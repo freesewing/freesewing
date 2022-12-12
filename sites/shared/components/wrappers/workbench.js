@@ -118,7 +118,6 @@ const WorkbenchWrapper = ({ app, design, preload = false, from = false, layout =
     const layout = gist.layouts?.[gist._state.view] || gist.layout || true
     // hand it separately to the design
     draft = new design({ ...gist, layout })
-    console.log({ draft, design, gist })
     //draft.__init()
 
     // add theme to svg renderer
