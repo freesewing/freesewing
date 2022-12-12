@@ -47,9 +47,9 @@ currently used by the designs we maintain:
 
 [hps]: https://freesewing.org/docs/measurements/hps/
 
-## Measurements from pluginMeasurements
+## Measurements from measurementsPlugin
 
-In addition, the [pluginMeasurements](/reference/plugins/measurements) plugin from `@freesewing/plugin-measurements`
+In addition, [measurementsPlugin](/reference/plugins/measurements) from `@freesewing/plugin-measurements`
 will add the following measurements if the required measurements
 they are derived from are provided:
 
@@ -63,9 +63,9 @@ they are derived from are provided:
 | `waistFrontArc` | Half of `waistFront` | `waist`, `waistBack` |
 | `crossSeamBack` | Back portion of `crossSeam` | `crossSeam`,  `crossSeamFront` |
 
-## Measurements from pluginBust
+## Measurements from bustPlugin
 
-In addition, the [pluginBust](/reference/plugins/bust) plugin from
+In addition, [bustPlugin](/reference/plugins/bust) from
 `@freesewing/plugin-bust` will add and modify the following measurements.
 
 | Measurement | Description |
