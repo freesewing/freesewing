@@ -69,7 +69,12 @@ const Draft = (props) => {
   // Bottom in SVG means we need to draw it first
   const stacks = [
     <PartInner
-      {...{ part: patternProps.parts[0][props.layoutPart], partName: props.layoutPart, gist }}
+      {...{
+        part: patternProps.parts[0][props.layoutPart],
+        partName: props.layoutPart,
+        gist,
+        skipGrid: true,
+      }}
       key={props.layoutPart}
     />,
   ]

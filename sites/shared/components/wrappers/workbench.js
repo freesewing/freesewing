@@ -121,7 +121,7 @@ const WorkbenchWrapper = ({ app, design, preload = false, from = false, layout =
     //draft.__init()
 
     // add theme to svg renderer
-    if (gist.renderer === 'svg') draft.use(pluginTheme)
+    if (gist.renderer === 'svg') draft.use(pluginTheme, { skipGrid: ['pages'] })
 
     // draft it for draft and event views. Other views may add plugins, etc and we don't want to draft twice
     try {

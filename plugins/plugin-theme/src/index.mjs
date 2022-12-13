@@ -28,8 +28,8 @@ export const plugin = {
       const current = svg.attributes.get('class')
       if (!current || current.indexOf('freesewing') !== -1) {
         svg.attributes.set('class', 'freesewing')
-        svg.style += sampleStyle
-        svg.style += paperlessStyle
+        svg.style += sampleStyle(data.stripped)
+        svg.style += paperlessStyle(data.stripped)
         svg.style += buildStylesheet(svg.pattern.settings.scale, data.stripped)
         let paperless = false
         for (const set of svg.pattern.settings) {
@@ -40,10 +40,10 @@ export const plugin = {
             ? (svg.defs += grid.imperial)
             : (svg.defs += grid.metric)
           const parts = svg.pattern.parts[svg.pattern.activeSet]
-          const skip = data.skipGrid || []
+          const skipGrid = data.skipGrid || []
           for (const key in parts) {
             const part = parts[key]
-            if (!part.hidden && !data.skipGrid.includes(key) && svg.pattern.__needs(key)) {
+            if (!part.hidden && !skipGrid.includes(key) && svg.pattern.__needs(key)) {
               const { Path, paths, getId, Point, points } = part.shorthand()
               let anchor = new Point(0, 0)
               if (typeof points.gridAnchor !== 'undefined') anchor = part.points.gridAnchor

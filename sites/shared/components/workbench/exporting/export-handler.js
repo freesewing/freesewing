@@ -74,7 +74,7 @@ export const handleExport = async (format, gist, design, t, app, onComplete, onE
     let pattern = new design({ ...gist, layout })
 
     // add the theme and translation to the pattern
-    pattern.use(themePlugin, { stripped: format !== 'svg' })
+    pattern.use(themePlugin, { stripped: format !== 'svg', skipGrid: ['pages'] })
     pattern.use(
       {
         hooks: {
@@ -115,13 +115,13 @@ export const handleExport = async (format, gist, design, t, app, onComplete, onE
 
       // add the svg and pages data to the worker args
       workerArgs.pages = pattern.setStores[pattern.activeSet].get('pages')
+
+      // post a message to the worker with all needed data
+      worker.postMessage(workerArgs)
     } catch (err) {
       console.log(err)
       app.stopLoading()
       onError && onError(err)
     }
   }
-
-  // post a message to the worker with all needed data
-  worker.postMessage(workerArgs)
 }
