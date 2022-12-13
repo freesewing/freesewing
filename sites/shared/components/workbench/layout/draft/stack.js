@@ -55,6 +55,7 @@ const Stack = (props) => {
   const { layout, stack, stackName, gist } = props
 
   const stackLayout = layout.stacks?.[stackName]
+  const stackExists = typeof stackLayout?.move?.x !== 'undefined'
 
   // Use a ref for direct DOM manipulation
   const stackRef = useRef(null)
@@ -75,12 +76,12 @@ const Stack = (props) => {
   // Initialize drag handler
   useEffect(() => {
     // don't drag the pages
-    if (props.isLayoutPart) return
+    if (props.isLayoutPart || !stackExists) return
     handleDrag(select(stackRef.current))
   }, [rotate, stackRef, stackLayout])
 
   // // Don't just assume this makes sense
-  if (typeof stackLayout?.move?.x === 'undefined') return null
+  if (!stackExists) return null
 
   // These are kept as vars because re-rendering on drag would kill performance
   // Managing the difference between re-render and direct DOM updates makes this

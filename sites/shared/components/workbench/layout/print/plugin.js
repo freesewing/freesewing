@@ -165,6 +165,22 @@ const basePlugin = ({
         pattern.height = sheetHeight * generatedPageData.rows
       }
     },
+    preRender: function (svg) {
+      const pattern = svg.pattern
+      const only = pattern.settings[pattern.activeStack || 0].only
+      // add the layout part to the include list if there is one so that it gets rendered
+      if (Array.isArray(only) && !only.includes(partName)) {
+        pattern.settings[pattern.activeStack || 0].only.push(partName)
+      }
+    },
+    postRender: function (svg) {
+      const pattern = svg.pattern
+      const only = pattern.settings[pattern.activeStack || 0].only
+      // remove the layout part from the include list if there is one so that we don't pollute the settings
+      if (Array.isArray(only) && only.includes(partName)) {
+        pattern.settings[pattern.activeStack || 0].only.splice(only.indexOf(partName), 1)
+      }
+    },
   },
   macros: {
     /** draft the pages */

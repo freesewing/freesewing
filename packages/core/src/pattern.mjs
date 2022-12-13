@@ -241,6 +241,7 @@ Pattern.prototype.getRenderProps = function () {
     })),
   }
 
+  svg.__runHooks('postRender')
   return props
 }
 
