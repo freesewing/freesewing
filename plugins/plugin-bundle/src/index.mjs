@@ -5,13 +5,13 @@ import { cutonfoldPlugin } from '../../plugin-cutonfold/src/index.mjs'
 import { dimensionPlugin } from '../../plugin-dimension/src/index.mjs'
 import { grainlinePlugin } from '../../plugin-grainline/src/index.mjs'
 import { logoPlugin } from '../../plugin-logo/src/index.mjs'
+import { measurementsPlugin } from '../../plugin-measurements/src/index.mjs'
 import { mirrorPlugin } from '../../plugin-mirror/src/index.mjs'
 import { notchesPlugin } from '../../plugin-notches/src/index.mjs'
-import { titlePlugin } from '../../plugin-title/src/index.mjs'
-import { scaleboxPlugin } from '../../plugin-scalebox/src/index.mjs'
 import { roundPlugin } from '../../plugin-round/src/index.mjs'
+import { scaleboxPlugin } from '../../plugin-scalebox/src/index.mjs'
 import { sprinklePlugin } from '../../plugin-sprinkle/src/index.mjs'
-import { measurementsPlugin } from '../../plugin-measurements/src/index.mjs'
+import { titlePlugin } from '../../plugin-title/src/index.mjs'
 import { name, version } from '../data.mjs'
 
 const bundledPlugins = [
@@ -22,13 +22,13 @@ const bundledPlugins = [
   dimensionPlugin,
   grainlinePlugin,
   logoPlugin,
+  measurementsPlugin,
   mirrorPlugin,
   notchesPlugin,
-  titlePlugin,
-  scaleboxPlugin,
   roundPlugin,
+  scaleboxPlugin,
   sprinklePlugin,
-  measurementsPlugin,
+  titlePlugin,
 ]
 
 function bundleHooks() {
