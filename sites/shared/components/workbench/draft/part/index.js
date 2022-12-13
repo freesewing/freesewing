@@ -140,6 +140,8 @@ export const PartInner = forwardRef((props, ref) => {
   )
 })
 
+PartInner.displayName = 'PartInner'
+
 const Part = (props) => {
   const { partName, part } = props
 
