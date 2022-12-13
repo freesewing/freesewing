@@ -41,6 +41,7 @@ access the following properties:
 | `unhide`          | See [the unhide documentation](/reference/api/part/unhide) |
 | `units`           | A version of [`utils.units()`](/reference/api/utils/units) that is preconfigured with the user's chosenunits |
 | `utils`           | See [the utils documentation](/reference/api/utils) |
+| `Bezier`          | The [bezier-js](https://pomax.github.io/bezierjs/) library's `Bezier` named export |
 || **_Return value_**   |
 | `part`            | Your draft method **must** return this |
 
