@@ -1,3 +1,5 @@
+import process from 'node:process'
+
 // For now, never build org
 process.exit(0)
 

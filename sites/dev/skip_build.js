@@ -1,3 +1,5 @@
+import process from 'node:process'
+
 // Do not block production builds
 if (process.env.VERCEL_ENV === 'production') {
   console.log('✅ - Production build - Proceed to build')
