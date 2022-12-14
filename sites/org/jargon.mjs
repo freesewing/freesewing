@@ -1,3 +1,3 @@
-const jargon = {}
+const jargon = { }
 
 export default jargon
