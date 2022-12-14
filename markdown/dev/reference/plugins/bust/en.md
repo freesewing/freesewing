@@ -5,7 +5,7 @@ title: plugin-bust
 Published as [@freesewing/plugin-bust][1], this plugin helps you adapt menswear
 patterns for people with breasts.  If you are designing a womenswear pattern,
 you won't need this plugin. But if you're adapting a menswear pattern for
-breasts or merely want to accomodate both people with and without breasts,
+breasts or merely want to accommodate both people with and without breasts,
 this plugin can help you accomplish that.
 
 ## Installation
@@ -58,7 +58,7 @@ pattern.  In this case, the plugin will always be loaded since the pattern
 assumes breasts will be present.
 
 This way you can extend a menswear pattern and have it drafted with the high
-bust measurement as chest measurment, after which you can create room for the
+bust measurement as chest measurement, after which you can create room for the
 breasts.
 
 You can see this in practice in our [Carlita][2] design, which extends the

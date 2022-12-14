@@ -38,7 +38,7 @@ in the response body should indicate the nature of the problem.
 | Value               | Type     | Description |
 | ------------------- | -------- | ----------- |
 | `result`            | `string` | `success` on success, and `error` on error |
-| `error`             | `string` | Will give info on the nature of the error. Only set if an error occured. |
+| `error`             | `string` | Will give info on the nature of the error. Only set if an error occurred. |
 | `apikey.key`        | `string` | The API key |
 | `apikey.level`      | `number` | The privilege level of the API key |
 | `apikey.expiresAt`  | `string` | A string representation of the moment the API key expires |

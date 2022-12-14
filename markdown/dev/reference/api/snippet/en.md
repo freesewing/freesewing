@@ -2,7 +2,7 @@
 title: Snippet
 ---
 
-A Snippet is a reuseable bit of markup for your pattern. They are added to the
+A Snippet is a reusable bit of markup for your pattern. They are added to the
 SVG `defs` section, and rendered with the SVG `use` tag.
 
 ## Signature
