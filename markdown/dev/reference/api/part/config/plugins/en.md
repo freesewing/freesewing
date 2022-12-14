@@ -57,7 +57,7 @@ const myConditionalPlugin = {
 }
 ```
 
-Where `myPlugin` is the plugin itself, and `condition` is the method
+Where `myPlugin` is the plugin itself, and `condition` is a method
 that returns `true` if the plugin should be loaded.
 
 <Related>
