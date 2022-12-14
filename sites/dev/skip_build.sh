@@ -1,4 +1,5 @@
 #!/bin/bash
+echo $VERCEL_GIT_COMMIT_REF
 
 # Don't block production builds
 if [[ "$VERCEL_ENV" == "production" ]] ; then
