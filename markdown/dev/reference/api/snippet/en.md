@@ -13,8 +13,7 @@ Snippet new Snippet(String def, Point anchor);
 
 The snippet constructor takes two arguments:
 
-- `def` : The `xlink:href` id that links to the relevant entry in the SVG `defs` section.
-This is also the common name of the snippet (`logo`, `notch`, `button`, etc.)
+- `def` : The `xlink:href` id that links to the relevant entry in the SVG `defs` section. This is also the common name of the snippet (`logo`, `notch`, `button`, etc.)
 - `anchor` : A [`Point`](/reference/api/point) on which to anchor the snippet
 
 ## Properties
