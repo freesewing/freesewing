@@ -2,8 +2,8 @@
 title: units
 ---
 
-The `units` setting controls the units used on the pattern.
-It can be either `metric` (the default) or `imperial`.
+The `units` setting controls the units of length used on the pattern.
+It can be either `metric` (millimeters, the default) or `imperial` (inches).
 
 ## Signature
 
@@ -26,4 +26,4 @@ const pattern = new Aaron({
 ## Notes
 
 This setting only applies to formatting of the output.
-Freesewing expects all input to be in millimeter.
+FreeSewing expects all input to be in millimeter.

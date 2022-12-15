@@ -2,7 +2,7 @@
 title: measurements
 ---
 
-The `measurements` settings should hold and object with the
+The `measurements` settings should hold an object with the
 measurements to draft the pattern for.
 
 ## Signature
