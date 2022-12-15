@@ -88,8 +88,9 @@ The custom attributes that can be added to Points:
 | Attribute | Description |
 |----------:|-------------|
 | `data-text` | Text to display at the point |
-| `data-text-class` | CSS class to apply to the text to provide styling |
-| `data-circle` | 'Radius of the circle to display at the point |
+| `data-text-class` | [CSS classes](/reference/css) to apply to the text to provide styling |
+| `data-text-lineheight` | Line height for the text, in mm |
+| `data-circle` | Radius of the circle to display at the point |
 | `data-circle-class` | [CSS classes](/reference/css) to apply to the circle to provide styling |
 
 <Related>
@@ -106,7 +107,7 @@ The custom attributes that can be added to Paths:
 
 | Attribute | Description |
 |----------:|-------------|
-| `data-text` | Text to display at the point |
+| `data-text` | Text to display along the path |
 | `data-text-class` | [CSS classes](/reference/css) to apply to the text to provide styling |
 
 <Related>
@@ -121,7 +122,7 @@ The custom attributes that can be added to Snippets:
 | Attribute | Description |
 |----------:|-------------|
 | `data-rotate` | Number of degrees to rotate the snippet |
-| `data-scale` | Scaling factor to apply to the snippet |
+| `data-scale` | Scaling factor to apply to the snippet. Either a single number or an array of 2 numbers for separate X and Y scaling factors |
 
 <Tip>
 
