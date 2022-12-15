@@ -46,9 +46,11 @@ Path path.attr(
 ## Notes
 
 Methods like 
-[`Path.addClass`](/reference/api/path/addclass), 
-[`Path.setClass`](/reference/api/path/setclass), 
-[`Path.adddText`](/reference/api/path/addtext), and 
+[`Path.addClass`](/reference/api/path/addclass),
+[`Path.setClass`](/reference/api/path/setclass),
+[`Path.addText`](/reference/api/path/addtext), and
 [`Path.setText`](/reference/api/path/settext)
 all call this method under the hood.
 
+See [Using Attributes](/howtos/code/attributes)
+for information about custom Attributes that can be used with Paths.

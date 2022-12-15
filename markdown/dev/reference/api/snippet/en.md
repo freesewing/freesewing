@@ -2,27 +2,32 @@
 title: Snippet
 ---
 
-A Snippet is a reuseable bit of markup for your pattern. They are added to the
+A Snippet is a reusable bit of markup for your pattern. Snippets are added to the
 SVG `defs` section, and rendered with the SVG `use` tag.
 
 ## Signature
 
 ```js
-Snippet new Snippet(def, Point);
+Snippet new Snippet(String def, Point anchor);
 ```
 
 The snippet constructor takes two arguments:
 
-- `def` : The `xlink:href` id that links to the relevant entry in the SVG `defs` section
+- `def` : The `xlink:href` id that links to the relevant entry in the SVG `defs` section. This is also the common name of the snippet (`logo`, `notch`, `button`, etc.)
 - `anchor` : A [`Point`](/reference/api/point) on which to anchor the snippet
 
-## Attributes
+## Properties
 
 A Snippet object comes with the following properties:
 
 - `def` : The `xlink:href` id that links to the relevant entry in the SVG `defs` section
 - `anchor` : A [`Point`](/reference/api/point) on which to anchor the snippet
 - `attributes` : An [`Attributes`](/reference/api/attributes) instance holding the snippet's attributes
+
+<Related>
+See [Using Attributes](/howtos/code/attributes)
+for information about custom Attributes that can be used with Snippets.
+</Related>
 
 ## Example
 
