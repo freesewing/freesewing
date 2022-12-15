@@ -15,13 +15,18 @@ The point constructor takes two arguments:
 - `x` : The X-coordinate of the point
 - `y` : The Y-coordinate of the point
 
-## Attributes
+## Properties
 
 Point objects come with the following properties:
 
 - `x` : The X-coordinate of the point
 - `y` : The Y-coordinate of the point
 - `attributes` : An [Attributes](/reference/api/attributes) instance holding the point's attributes
+
+<Related>
+See [Using Attributes](/howtos/code/attributes)
+for information about custom Attributes that can be used with Points.
+</Related>
 
 ## Example
 

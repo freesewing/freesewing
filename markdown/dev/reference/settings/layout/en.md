@@ -3,7 +3,7 @@ title: layout
 ---
 
 The `layout` setting allows you to control the way pattern parts are
-layed out on the pattern. Either automatic, explicit, or not at all.
+laid out on the pattern. Either automatic, explicit, or not at all.
 
 ## Signature
 
