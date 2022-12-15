@@ -3357,9 +3357,9 @@
     tailwindcss "^3.2.4"
 
 "@mdx-js/loader@^2.0.0-rc.2", "@mdx-js/loader@latest":
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-2.1.5.tgz#4e764c65333530fd786dfe4f36e918dfeac0200b"
-  integrity sha512-oXjfTa/iAcMmW8DdQ+hQFodPCLqw5VKT2yoZkLwrZfPVVpUgKrI+5/ZePYq328xxtAUStZmR3ed0PWJrwd5Pkg==
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-2.2.1.tgz#71634e87659cd29240933d174a151a4d4ab3b70c"
+  integrity sha512-J4E8A5H+xtk4otZiEZ5AXl61Tj04Avm5MqLQazITdI3+puVXVnTTuZUKM1oNHTtfDIfOl0uMt+o/Ij+x6Fvf+g==
   dependencies:
     "@mdx-js/mdx" "^2.0.0"
     source-map "^0.7.0"
