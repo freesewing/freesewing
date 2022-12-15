@@ -10,19 +10,23 @@ settings are the measurements, but there's other settings too.
 
 ```js
 Object settings = {
+  Object absoluteOptions,
   Boolean complete=true,
+  Boolean debug=false,
   Boolean embed=false,
-  Boolean idPrefix='fs-',
-  Object|Boolean layout=false
+  String idPrefix='fs-',
+  Object|Boolean layout=true,
   String locale='en',
   Number margin=2,
-  Object measurements
-  Array only,
+  Object measurements,
+  String|Array|Boolean only=false,
   Object options,
-  Boolean paperless=false
-  Boolean sa=false
-  Number scale=1
-  String units='metric'
+  Boolean paperless=false,
+  Number|Boolean sa=false,
+  Object sample,
+  Number scale=1,
+  String stackPrefix='',
+  String units='metric',
 }
 ```
 
