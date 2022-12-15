@@ -42,3 +42,7 @@ If the third parameter is set to `true` it will call [`this.attributes.set()`](/
 ```
 </Example>
 
+## Notes
+
+See [Using Attributes](/howtos/code/attributes)
+for information about custom Attributes that can be used with Points.
