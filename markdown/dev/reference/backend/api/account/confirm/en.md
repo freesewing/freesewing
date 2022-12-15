@@ -48,7 +48,7 @@ in the response body should indicate the nature of the problem.
 | Value               | Type     | Description |
 | ------------------- | -------- | ----------- |
 | `result`            | String | Either `success` or `error` |
-| `error`             | String | Will give info on the nature of the error. Only set if an error occured. |
+| `error`             | String | Will give info on the nature of the error. Only set if an error occurred. |
 | `token`             | String | A JSON web token (JWT) token to authenticate with |
 | `account.id`        | Number | The ID of the User |
 | `account.bio`       | String | The bio of the User |

@@ -11,7 +11,7 @@ The `Attributes.get()` method will return the value of attribute stored under
 string attributes.get(string key)
 ```
 
-If key has multiple values, they will be joined together in a string, seperated by spaces.
+If key has multiple values, they will be joined together in a string, separated by spaces.
 
 ## Example
 

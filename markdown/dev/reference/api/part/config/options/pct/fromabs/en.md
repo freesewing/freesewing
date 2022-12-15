@@ -2,7 +2,7 @@
 title: Setting a value in millimeter as a percentage option
 ---
 
-Percentage options are great for parametric desing, but not always
+Percentage options are great for parametric design, but not always
 very intuitive for the user. For example: A user may desire 13
 centimeters (5 inches) of chest ease. But what percentage should
 they set the `chestEase` option to to accomplish this?
