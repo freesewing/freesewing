@@ -1,9 +1,7 @@
 import yaml from 'js-yaml'
-import hljs from 'highlight.js/lib/common'
 import defaultSettings from './default-settings'
 import validateGist from './gist-validator'
 import { useEffect, useState, useRef } from 'react'
-import Json from 'shared/components/json-highlight.js'
 import Popout from 'shared/components/popout.js'
 import { useTranslation } from 'next-i18next'
 import { capitalize } from '@freesewing/core'
@@ -20,7 +18,7 @@ const Edit = (props) => {
   const [gistAsYaml, setGistAsYaml] = useState(null)
   // the number of lines in the yaml
   const [numLines, setNumLines] = useState(0)
-  // any errors, parsed by hljs
+  // any errors as a json string
   const [error, setError] = useState(null)
   // success notifier
   const [success, setSuccess] = useState(null)
@@ -31,7 +29,7 @@ const Edit = (props) => {
   useEffect(() => {
     if (gistReady) {
       // get everything but the design because it's a function and can't be serialized
-      const { design, ...gistRest } = gist
+      const { _design, ...gistRest } = gist
       setGistAsYaml(yaml.dump(gistRest))
     }
   }, [gist, gistReady])
@@ -70,7 +68,6 @@ const Edit = (props) => {
       // if it's not valid, show a warning about errors
       if (!validation.valid) {
         const newError = JSON.stringify(validation.errors, null, 2)
-        const newErrorHighlight = hljs.highlight(newError, { language: 'json' })
         setError(newError)
       }
 
