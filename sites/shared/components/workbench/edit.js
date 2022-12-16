@@ -6,6 +6,7 @@ import { useEffect, useState, useRef } from 'react'
 import Json from 'shared/components/json-highlight.js'
 import Popout from 'shared/components/popout.js'
 import { useTranslation } from 'next-i18next'
+import { capitalize } from '@freesewing/core'
 
 /** count the number of lines in some text */
 const countLines = (txt) => txt.split('\n').length
@@ -87,9 +88,10 @@ const Edit = (props) => {
     setSuccess(false)
   }
 
+  const designName = capitalize(props.design.designConfig.data.name.replace('@freesewing/', ''))
   return (
     <div className="max-w-screen-xl m-auto h-screen form-control">
-      <h2>Edit Pattern Configuration</h2>
+      <h2>{t('workbench:editThingTitle', { thing: designName })}</h2>
 
       {error ? (
         <Popout warning className="mb-4">

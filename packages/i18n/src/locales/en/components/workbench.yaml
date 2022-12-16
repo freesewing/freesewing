@@ -5,3 +5,4 @@ layoutThing: 'Layout {thing}'
 pageSize: Page size
 startBySelectingAThing: 'Start by selecting a {thing}'
 testThing: 'Test {thing}'
+editThingTitle: 'Edit Pattern Configuration for {thing}'
