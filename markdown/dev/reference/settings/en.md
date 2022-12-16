@@ -12,7 +12,6 @@ settings are the measurements, but there's other settings too.
 Object settings = {
   Object absoluteOptions,
   Boolean complete=true,
-  Boolean debug=false,
   Boolean embed=false,
   String idPrefix='fs-',
   Object|Boolean layout=true,
