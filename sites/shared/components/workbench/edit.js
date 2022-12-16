@@ -29,6 +29,7 @@ const Edit = (props) => {
   useEffect(() => {
     if (gistReady) {
       // get everything but the design because it's a function and can't be serialized
+      // eslint-disable-next-line no-unused-vars
       const { _design, ...gistRest } = gist
       setGistAsYaml(yaml.dump(gistRest))
     }
