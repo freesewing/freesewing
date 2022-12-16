@@ -96,7 +96,7 @@ const Edit = (props) => {
       {error ? (
         <Popout warning className="mb-4">
           <h3> {t('editError')} </h3>
-          <p> {t('editErrorDesc')}: </p>
+          {success ? <p> {t('editErrorDesc')}: </p> : null}
           <pre
             className="language-json hljs text-base lg:text-lg whitespace-pre overflow-scroll pr-4"
             dangerouslySetInnerHTML={{ __html: error }}
