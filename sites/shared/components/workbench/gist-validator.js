@@ -1,4 +1,4 @@
-import defaultSettings from './default-settings'
+import defaultSettings from './default-settings.js'
 
 class GistValidator {
   givenGist
@@ -13,7 +13,7 @@ class GistValidator {
   }
 
   validateSettings() {
-    for (var key in defaultSettings) {
+    for (const key in defaultSettings) {
       if (typeof this.givenGist[key] !== typeof defaultSettings[key]) {
         this.errors[key] = 'TypeError'
         this.valid = false
@@ -35,7 +35,43 @@ class GistValidator {
   }
 
   validateOptions() {
-    console.log(this.design.patternConfig)
+    this.errors.options = {}
+    const configOpts = this.design.patternConfig.options
+    const gistOpts = this.givenGist.options
+    for (const o in gistOpts) {
+      const configOpt = configOpts[o]
+      const gistOpt = gistOpts[o]
+      // if the option doesn't exist on the pattern, mark it unknown
+      if (!configOpt) {
+        this.errors.options[o] = 'UnknownOption'
+      }
+      // if it's a constant option, mark that it can't be overwritten
+      else if (typeof configOpt !== 'object') {
+        this.errors.options[o] = 'ConstantOption'
+      }
+      // if it's a list option but the selection isn't in the list, mark it an unknown selection
+      else if (configOpt.list !== undefined) {
+        if (!configOpt.list.includes(gistOpt) && gistOpt != configOpt.dflt)
+          this.error.options[o] = 'UnknownOptionSelection'
+      }
+      // if it's a boolean option but the gist value isn't a boolean. mark a type error
+      else if (configOpts[o].bool !== undefined) {
+        if (typeof gistOpt !== 'boolean') this.errors.options[o] = 'TypeError'
+      }
+      // all other options are numbers, so check it's a number
+      else if (isNaN(gistOpt)) {
+        this.errors.options[o] = 'TypeError'
+      }
+      // if still no error, check the bounds
+      else {
+        const checkNum = configOpt.pct ? gistOpt * 100 : gistOpt
+        if (checkNum < configOpt.min || checkNum > configOpt.max) {
+          this.errors.options[o] = 'RangeError'
+        }
+      }
+
+      if (this.errors.options[o]) this.valid = false
+    }
   }
 
   validate() {
