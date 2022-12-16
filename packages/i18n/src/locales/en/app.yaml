@@ -345,3 +345,5 @@ accessoryDesigns: Accessory Designs
 blockDesigns: Block/Sloper Designs
 garmentDesigns: Garment Designs
 utilityDesigns: Utility Designs
+editError: Issues with YAML
+editErrorDesc: We saved your input, but it might not work for the following reasons

@@ -1,5 +1,6 @@
 import defaultSettings from './default-settings.js'
 
+/** A utility for validating a gist against a design */
 class GistValidator {
   givenGist
   design
@@ -12,16 +13,27 @@ class GistValidator {
     this.errors = {}
   }
 
+  /** check that the settings all exist and are all of the right type */
   validateSettings() {
     for (const key in defaultSettings) {
-      if (typeof this.givenGist[key] !== typeof defaultSettings[key]) {
+      if (this.givenGist[key] === undefined) {
+        this.errors[key] = 'MissingSetting'
+        this.valid = false
+      } else if (typeof this.givenGist[key] !== typeof defaultSettings[key]) {
         this.errors[key] = 'TypeError'
         this.valid = false
       }
     }
   }
 
+  /** check that the required measurements are all there and the correct type */
   validateMeasurements() {
+    if (!this.givenGist.measurements) {
+      this.errors.measurements = 'MissingMeasurements'
+      this.valid = false
+      return
+    }
+
     this.errors.measurements = {}
     for (const m of this.design.patternConfig.measurements || []) {
       if (this.givenGist.measurements[m] === undefined) {
@@ -34,6 +46,7 @@ class GistValidator {
     }
   }
 
+  /** check validit of any options that are included */
   validateOptions() {
     this.errors.options = {}
     const configOpts = this.design.patternConfig.options
@@ -41,7 +54,7 @@ class GistValidator {
     for (const o in gistOpts) {
       const configOpt = configOpts[o]
       const gistOpt = gistOpts[o]
-      // if the option doesn't exist on the pattern, mark it unknown
+      // if the option doesn't exist on the pattern
       if (!configOpt) {
         this.errors.options[o] = 'UnknownOption'
       }
@@ -74,6 +87,7 @@ class GistValidator {
     }
   }
 
+  /** run all validations */
   validate() {
     this.validateSettings()
     this.validateMeasurements()
@@ -83,6 +97,7 @@ class GistValidator {
   }
 }
 
+/** make and run a gist validator */
 export default function validateGist(givenGist, design) {
   const validator = new GistValidator(givenGist, design)
   return validator.validate()
