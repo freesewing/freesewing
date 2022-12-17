@@ -22,4 +22,6 @@ if (process.env.VERCEL_GIT_COMMIT_REF === 'develop') {
 }
 
 console.log('🛑 - Unhandled case - Do not build')
+console.log(`  VERCEL_GIT_COMMIT_AUTHOR_LOGIN: ${process.env.VERCEL_GIT_COMMIT_AUTHOR_LOGIN}`)
+console.log(`  VERCEL_GIT_COMMIT_REF: ${process.env.VERCEL_GIT_COMMIT_REF}`)
 process.exit(0)
