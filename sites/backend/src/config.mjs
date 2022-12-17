@@ -2,7 +2,7 @@ import chalk from 'chalk'
 // Load environment variables
 import dotenv from 'dotenv'
 import { asJson } from './utils/index.mjs'
-import { measurements } from '../../../config/measurements.mjs'
+import { measurements } from './measurements.mjs'
 dotenv.config()
 
 // Allow these 2 to be imported

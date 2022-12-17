@@ -16,6 +16,7 @@
   },
   "scripts": {
     "dev": "nodemon src/index.mjs",
+    "build": "node --experimental-json-modules build.mjs",
     "test": "npx mocha --require mocha-steps tests/index.mjs",
     "initdb": "npx prisma db push",
     "newdb": "node ./scripts/newdb.mjs",
@@ -27,6 +28,7 @@
     "@prisma/client": "4.7.1",
     "bcryptjs": "^2.4.3",
     "crypto": "^1.0.1",
+    "esbuild": "^0.16.8",
     "express": "4.18.2",
     "mustache": "^4.2.0",
     "otplib": "^12.0.1",
@@ -34,11 +36,13 @@
     "passport-http": "^0.3.0",
     "passport-jwt": "^4.0.0",
     "pino": "^8.7.0",
-    "qrcode": "^1.5.1"
+    "qrcode": "^1.5.1",
+    "cors": "latest"
   },
   "devDependencies": {
     "chai-http": "^4.3.0",
     "mocha": "^10.1.0",
+    "dotenv": "latest",
     "mocha-steps": "^1.3.0",
     "prisma": "4.7.1"
   },
