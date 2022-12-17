@@ -992,6 +992,12 @@
 
  - Fix bug in Svg.escapeText() that only escaped the first quote
 
+### backend
+
+#### Fixed
+
+ - Mitigate risk of denial-of-service attacks in catch-all route
+
 
 ## 2.20.4 (2022-01-28)
 

@@ -46,5 +46,52 @@ rehype-jargon:
   lint: "npx eslint 'src/*.mjs'"
 snapseries:
   lint: "npx eslint 'src/*.mjs'"
+
+# Sites go here
 backend:
-  lint: '!'
+  dev: 'nodemon src/index.mjs'
+  initdb: 'npx prisma db push'
+  newdb: 'node ./scripts/newdb.mjs'
+  prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
+  rmdb: 'node ./scripts/rmdb.mjs'
+  test: 'npx mocha --require mocha-steps tests/index.mjs'
+
+dev:
+  build: &nextBuild 'node --experimental-json-modules ../../node_modules/next/dist/bin/next build'
+  cibuild: 'yarn build && node scripts/algolia.mjs'
+  dev: &nextDev 'node --experimental-json-modules ../../node_modules/next/dist/bin/next dev -p 8000'
+  develop: *nextDev
+  lint: &nextLint '../../node_modules/next/dist/bin/next lint'
+  prebuild: 'SITE=dev node --experimental-json-modules ../shared/prebuild/index.mjs'
+  serve: "pm2 start npm --name 'dev' -- run start"
+  start: &nextStart 'yarn prebuild && yarn dev'
+
+email:
+  build: 'maizzle build production'
+  dev: 'maizzle serve'
+
+lab:
+  build: *nextBuild
+  cibuild: 'yarn build'
+  clean: 'rimraf pages/*.mjs && rimraf pages/*/*.mjs && rimraf pages/v/*/*.mjs'
+  dev: *nextDev
+  develop: *nextDev
+  lint: *nextLint
+  prebuild: 'SITE=lab node --experimental-json-modules ../shared/prebuild/index.mjs'
+  start: *nextStart
+
+org:
+  build: *nextBuild
+  cibuild: 'yarn build'
+  clean: 'rimraf pages/*.mjs && rimraf pages/*/*.mjs && rimraf pages/v/*/*.mjs'
+  dev: *nextDev
+  develop: *nextDev
+  i18n: 'SITE=org node ../shared/prebuild/i18n-only.mjs'
+  lint: *nextLint
+  prebuild: 'SITE=org node --experimental-json-modules ../shared/prebuild/index.mjs'
+  start: *nextStart
+
+sanity:
+  start: 'sanity start'
+  test: 'sanity check'
+  build: 'sanity build -y'

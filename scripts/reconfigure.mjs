@@ -7,7 +7,7 @@ import mustache from 'mustache'
 import conf from '../lerna.json' assert { type: 'json' }
 const { version } = conf
 import {
-  publishedSoftware as software,
+  software as software,
   publishedTypes as types,
   designs,
   plugins,
@@ -73,15 +73,17 @@ for (const pkg of Object.values(software)) {
     path.join(cwd, pkg.folder, pkg.name, 'package.json'),
     JSON.stringify(packageJson(pkg), null, 2) + '\n'
   )
-  fs.writeFileSync(
-    path.join(cwd, pkg.folder, pkg.name, 'data.mjs'),
-    mustache.render(repo.templates.data, { name: fullName(pkg.name), version })
-  )
-  fs.writeFileSync(path.join(cwd, pkg.folder, pkg.name, 'README.md'), readme(pkg))
-  if (repo.exceptions.customBuild.indexOf(pkg.name) === -1) {
-    fs.writeFileSync(path.join(cwd, pkg.folder, pkg.name, 'build.mjs'), repo.templates.build)
+  if (pkg.type !== 'site') {
+    fs.writeFileSync(
+      path.join(cwd, pkg.folder, pkg.name, 'data.mjs'),
+      mustache.render(repo.templates.data, { name: fullName(pkg.name), version })
+    )
+    fs.writeFileSync(path.join(cwd, pkg.folder, pkg.name, 'README.md'), readme(pkg))
+    if (repo.exceptions.customBuild.indexOf(pkg.name) === -1) {
+      fs.writeFileSync(path.join(cwd, pkg.folder, pkg.name, 'build.mjs'), repo.templates.build)
+    }
+    fs.writeFileSync(path.join(cwd, pkg.folder, pkg.name, 'CHANGELOG.md'), changelog(pkg))
   }
-  fs.writeFileSync(path.join(cwd, pkg.folder, pkg.name, 'CHANGELOG.md'), changelog(pkg))
 }
 log.write(chalk.green(' Done\n'))
 
@@ -168,6 +170,7 @@ function readInfoFile(pkg) {
  * Returns an array of keywords for a package
  */
 function keywords(pkg) {
+  if (pkg.type === 'site') return []
   if (typeof repo.keywords[pkg.name] !== 'undefined') return repo.keywords[pkg.name]
   if (typeof repo.keywords[pkg.type] !== 'undefined') return repo.keywords[pkg.type]
   else {
@@ -184,10 +187,12 @@ function keywords(pkg) {
  */
 function scripts(pkg) {
   let runScripts = {}
-  for (const key of Object.keys(repo.scripts._)) {
-    runScripts[key] = mustache.render(repo.scripts._[key], {
-      name: pkg.name,
-    })
+  if (pkg.type !== 'site') {
+    for (const key of Object.keys(repo.scripts._)) {
+      runScripts[key] = mustache.render(repo.scripts._[key], {
+        name: pkg.name,
+      })
+    }
   }
   if (typeof repo.scripts._types[pkg.type] !== 'undefined') {
     for (const key of Object.keys(repo.scripts._types[pkg.type])) {
@@ -280,6 +285,16 @@ function packageJson(pkg) {
     for (let key of Object.keys(repo.exceptions.packageJson[pkg.name])) {
       if (repo.exceptions.packageJson[pkg.name][key] === '!') delete pkgConf[key]
     }
+  }
+
+  if (pkg.type === 'site') {
+    delete pkgConf.keywords
+    delete pkgConf.type
+    delete pkgConf.module
+    delete pkgConf.exports
+    delete pkgConf.files
+    delete pkgConf.publishConfig
+    pkgConf.private = true
   }
 
   return pkgConf

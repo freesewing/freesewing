@@ -1,8 +1,7 @@
 {
-  "private": true,
-  "name": "FreeSewing",
-  "version": "1.0.0",
-  "description": "Sanity config and instance hosted on cms.FreeSewing.org",
+  "name": "@freesewing/sanity",
+  "version": "3.0.0-alpha.2",
+  "description": "Code for the sanity.io CMS",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
@@ -14,33 +13,33 @@
     "type": "individual",
     "url": "https://freesewing.org/patrons/join"
   },
-  "main": "package.json",
-  "author": "Joost De Cock <joost@joost.at>",
-  "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",
     "test": "sanity check",
     "build": "sanity build -y"
   },
-  "keywords": [
-    "sanity"
-  ],
+  "peerDependencies": {},
   "dependencies": {
-    "@sanity/base": "^2.35.0",
-    "@sanity/core": "^2.35.0",
-    "@sanity/default-layout": "^2.35.0",
-    "@sanity/default-login": "^2.35.0",
-    "@sanity/desk-tool": "^2.35.0",
-    "@sanity/eslint-config-studio": "^2.0.0",
-    "@sanity/vision": "^2.35.0",
-    "eslint": "^8.6.0",
-    "prop-types": "^15.7",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "sanity-plugin-markdown": "^3.0.1",
-    "styled-components": "^5.2.0"
+    "@sanity/base": "2.35.0",
+    "@sanity/core": "2.35.0",
+    "@sanity/default-layout": "2.35.0",
+    "@sanity/default-login": "2.35.0",
+    "@sanity/desk-tool": "2.35.0",
+    "@sanity/eslint-config-studio": "2.0.0",
+    "@sanity/vision": "2.35.0",
+    "eslint": "8.6.0",
+    "prop-types": "15.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sanity-plugin-markdown": "3.0.1",
+    "styled-components": "5.2.0"
   },
   "devDependencies": {
-    "@sanity/cli": "^2.35.0"
-  }
+    "@sanity/cli": "2.35.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8"
+  },
+  "private": true
 }
