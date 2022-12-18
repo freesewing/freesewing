@@ -5,7 +5,7 @@ order: 350
 
 Une fois que vous avez un compte, vous pouvez commencer à ajouter des mesures. Mais cela soulève rapidement la question suivante : que faire si vous voulez un patron pour vous, mais aussi pour votre partenaire ?
 
-That's why we have _people_.
+C'est pourquoi nous avons l'space _personnes_.
 
 Vous créez une personne et ajoutez des mesures à cette personne. Maintenant, vous pouvez générer des patrons pour cette personne, en fonction de ses mesures.
 
