@@ -9,7 +9,6 @@ COPY package* ./
 COPY prisma .
 RUN apt-get update && apt-get install -y openssl
 RUN npm install pm2 && npm ci
-RUN ls -l /backend/node_modules/prisma/libquery_engine-debian-openssl-1.1.x.so.node
 RUN npx prisma generate
 
 ## Build app
@@ -37,7 +36,7 @@ RUN mkdir -p /backend/src/landing
 COPY --from=builder /backend/src/landing/* /backend/src/landing/
 
 ## Add a user to run the app
-RUN useradd --home-dir /backend --comment FreeSewing --no-create-home --uid 20000 freesewing
+RUN useradd --home-dir /backend --comment FreeSewing --no-create-home --uid 2000 freesewing
 RUN chown -R freesewing /backend
 
 ## Drop privleges and run app
