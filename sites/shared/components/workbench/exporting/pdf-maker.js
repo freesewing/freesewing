@@ -3,9 +3,9 @@ import SVGtoPDF from 'svg-to-pdfkit'
 import { path as logoPath } from 'shared/components/icons/freesewing.js'
 
 /** an svg of the logo to put on the cover page */
-const logoSvg = `<svg viewBox="-22 -36 46 50">
-	<style> path {fill: none; stroke: #555555; stroke-width: 0.5} </style>
-  <path d=${logoPath} />
+const logoSvg = `<svg viewBox="0 0 25 25">
+	<style> path {fill: none; stroke: #555555; stroke-width: 0.25} </style>
+  <path d="${logoPath}" />
 </svg>`
 
 /**

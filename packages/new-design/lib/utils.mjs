@@ -9,7 +9,6 @@ import { oraPromise } from 'ora'
 import { execa } from 'execa'
 import axios from 'axios'
 import { fileURLToPath } from 'url'
-import { capitalize } from '@freesewing/core'
 
 // Current working directory
 let filename
@@ -115,6 +114,8 @@ export const getChoices = async () => {
 
   return { template, name, manager }
 }
+
+const capitalize = (string) => string.charAt(0).toUpperCase() + string.slice(1)
 
 // Keep track of directories that need to be created
 const dirPromises = {}

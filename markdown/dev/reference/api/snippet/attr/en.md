@@ -41,3 +41,7 @@ Snippet snippet.attr(
 ```
 </Example>
 
+<Related>
+See [Using Attributes](/howtos/code/attributes)
+for information about what Attributes can be used with Snippets.
+</Related>

@@ -39,4 +39,4 @@ the following properties:
 | `settings` | The (sets of) settings used to draft the pattern |
 | `stacks` | A plain object holding the drafted stacks |
 | `svg` | An [Svg Object](/reference/api/svg/) object with the `preRender` hook applied |
-| `width` | Widht of the drafted pattern in `mm` |
+| `width` | Width of the drafted pattern in `mm` |

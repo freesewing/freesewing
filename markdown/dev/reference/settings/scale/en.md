@@ -2,7 +2,7 @@
 title: scale
 ---
 
-The `scale` setting is an overal factor that will influence a variety of
+The `scale` setting is an overall scaling factor that will influence a variety of
 factors to better support very large or very small patterns.
 
 To be clear, `scale` does not change the size of the pattern itself.

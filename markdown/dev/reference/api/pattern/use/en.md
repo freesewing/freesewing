@@ -12,6 +12,8 @@ For more details, refer to [the plugin guide](/guides/plugins/).
 
 ```js
 Pattern pattern.use(object plugin)
+// or
+Pattern pattern.use(object plugin, object plugin_data)
 ```
 
 See [the plugin guide](/guides/plugins/) for details on how to structure

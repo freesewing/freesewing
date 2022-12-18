@@ -3,7 +3,7 @@ title: Attributes.renderAsCss()
 ---
 
 The `Attributes.renderAsCss()` method will render attributes as a string
-suitable for inclusion in a CSS defninition.
+suitable for inclusion in a CSS definition.
 
 ## Signature
 

@@ -17,7 +17,7 @@ const part = {
 ```
 <Tip>
 
-You should only list the plugins that required by the part itself, 
+You should only list the plugins that are required by the part itself,
 not those required by its dependencies
 
 </Tip>
@@ -44,20 +44,21 @@ const part = {
 
 ## Conditional plugins
 
-A conditional plugin is loaded conditionally. It should be provided
-as an object with the following structure:
+A conditional plugin is loaded only when a condition is met.
+The plugin and condition should be provided as an `Object`
+with the following structure:
 
 ```js
 import myPlugin from './my-plugin.mjs'
 
-const plugin = {
-  plugin,
+const myConditionalPlugin = {
+  myPlugin,
   condition,
 }
 ```
 
-Where `plugin` is the plugin itself, and `condition` is the 
-method to determing whether or not to load it.
+Where `myPlugin` is the plugin itself, and `condition` is a method
+that returns `true` if the plugin should be loaded.
 
 <Related>
 

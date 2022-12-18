@@ -3,7 +3,7 @@ title: Attributes.asPropsIfPrefixIs()
 ---
 
 The `Attributes.asPropsIfPrefixIs()` method will return attribute values as a
-props object (a plain Javascript object) but only for those keys who start with
+props object (a plain JavaScript object) but only for those keys who start with
 `prefix`.
 
 ## Signature

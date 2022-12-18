@@ -30,6 +30,6 @@ const options = {
 ## Notes
 
 This will return an object with `toAbs` and `fromAbs` properties that calculate
-the option's absolute and relative values based on a measurment. Refer to
+the option's absolute and relative values based on a measurement. Refer to
 [snapped percentage options](/reference/api/part/config/options/pct/snap) for
 more details.

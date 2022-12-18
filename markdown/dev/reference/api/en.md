@@ -65,6 +65,7 @@ The following named exports are **utility methods**:
 | `beamsIntersect`          | See the [beamsIntersect](/reference/api/utils/beamsintersect) documentation |
 | `capitalize`              | See the [capitalize](/reference/api/utils/capitalize) documentation |
 | `circlesIntersect`        | See the [circlesIntersect](/reference/api/utils/circlesintersect) documentation |
+| `curveEdge`               | See the [curveEdge](/reference/api/utils/curveedge) documentation |
 | `curveIntersectsX`        | See the [curveIntersectsX](/reference/api/utils/curveintersectsx) documentation |
 | `curveIntersectsY`        | See the [curveIntersectsY](/reference/api/utils/curveintersectsy) documentation |
 | `curvesIntersect`         | See the [curvesIntersect](/reference/api/utils/curvesintersect) documentation |

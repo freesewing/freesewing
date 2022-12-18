@@ -2,7 +2,7 @@
 title: Reporting a percentage option value in millimeter
 ---
 
-Percentage options are great for parametric desing, but not always
+Percentage options are great for parametric design, but not always
 very intuitive for the user. For example: Setting the `chestEase`
 option to `9%` is not very meaningful unless you happen to know
 what that percentage is based on.

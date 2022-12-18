@@ -41,7 +41,7 @@ macro('banner', {
 |-------------:|------------|------------|-------------|
 | `anchor`     |            | `Point`    | The point to start the bartack from |
 | `angle`      | `0`        | `number`   | The angle under which to draw the bartack |
-| `density`    | `3`        | `number`   | Controls how close the stitches are togeter |
+| `density`    | `3`        | `number`   | Controls how close the stitches are together |
 | `length`     | `15`       | `number`   | Length of the bartack |
 | `prefix`     |            | `string`   | A prefix to apply to the name of the generated path |
 | `suffix`     |            | `string`   | A suffix to apply to the name of the generated path |
