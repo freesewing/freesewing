@@ -257,7 +257,6 @@ export function verifyConfig(silent = false) {
     if (typeof input === 'string' && input.length > 0) return false
     return true
   }
-  const warnings = []
   const errors = []
   const ok = []
 
