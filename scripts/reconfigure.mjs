@@ -398,7 +398,6 @@ function globalChangelog() {
  * Generates the changelog data for a package
  */
 function packageChangelog(pkgName) {
-  let log = {}
   let version
   let markup = ''
   for (let v in repo.changelog) {
