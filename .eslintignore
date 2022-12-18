@@ -3,6 +3,8 @@
 *.jpeg
 *.png
 *.sh
+*.md
+Dockerfile
 .git
 coverage
 dist
