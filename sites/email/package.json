@@ -1,9 +1,7 @@
 {
-  "name": "freesewing.email",
-  "private": true,
+  "name": "@freesewing/email",
   "version": "3.0.0-alpha.2",
-  "name": "email",
-  "description": "Holds a maizzle instance for generating FreeSewing's email templates",
+  "description": "Holds maizzle instance to generate the FreeSewing email templates",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
@@ -16,13 +14,20 @@
     "url": "https://freesewing.org/patrons/join"
   },
   "scripts": {
-    "dev": "maizzle serve",
-    "build": "maizzle build production"
+    "build": "maizzle build production",
+    "dev": "maizzle serve"
   },
+  "peerDependencies": {},
   "dependencies": {
-    "@maizzle/framework": "latest",
+    "@maizzle/framework": "4.3.1",
     "tailwindcss-box-shadow": "^1.0.0",
     "tailwindcss-email-variants": "^1.0.0",
     "tailwindcss-mso": "^1.2.0"
-  }
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8"
+  },
+  "private": true
 }
