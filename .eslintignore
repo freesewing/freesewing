@@ -4,6 +4,7 @@
 *.png
 *.sh
 *.md
+*.prisma
 Dockerfile
 .git
 coverage
