@@ -4,7 +4,7 @@ title: Part
 
 A `Part` in FreeSewing holds all data, logic, and configuration of a Design.
 Parts truly are the building blocks of FreeSewing as they not only provide
-the configurarion, but also a `draft()` method that does the actual work
+the configuration, but also a `draft()` method that does the actual work
 of drafting a parametric design.
 
 ## Example

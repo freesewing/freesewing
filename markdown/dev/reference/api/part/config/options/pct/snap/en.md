@@ -22,10 +22,10 @@ Your snapped percentage option should be a plain object with these properties:
 ##### Values for snapped percentage options are available through `absoluteOptions`
 
 Your draft method can not only destructure the `options` property to get access to options,
-it can also desctructure the `absoluteOptions` property to get access to the values 
+it can also destructure the `absoluteOptions` property to get access to the values
 for those options with snaps configured.
 
-See [the part `draft()` method](/reference/api/part/draft) for mor details.
+See [the part `draft()` method](/reference/api/part/draft) for more details.
 
 </Tip>
 
@@ -90,7 +90,7 @@ of numbers.
 The difference is that this allows you to supply a different list of snap values
 for users using metric or imperial units.
 
-In the example below, the value of [settings.units](/api/settings/units) will
+In the example below, the value of [settings.units](/reference/settings/units) will
 determine which list of snap values gets used.
 
 Then, if the absolute value returned by `toAbs()` is in the
@@ -179,7 +179,7 @@ under the hood, let's first agree on terminology:
   Its value always represents a percentage. For example `0.5` for 50%.
 - The **millimeter value** is the result of feeding the **percentage value** to
   the `toAbs()` method. Its value always represents millimeters. For example `12mm`.
-- The **snap values** are the values provided by the snap confguration.
+- The **snap values** are the values provided by the snap configuration.
   Each of the values always represents millimeters (even for imperial users).
 
 Under the hood, and snapped percentage option will:

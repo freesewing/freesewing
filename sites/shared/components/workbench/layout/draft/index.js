@@ -1,35 +1,41 @@
-import { useRef} from 'react'
-import Svg from '../../draft/svg'
-import Defs from '../../draft/defs'
-import Part from './part'
-import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch"
+import { useRef } from 'react'
+import Stack from './stack'
+import SvgWrapper from '../../draft/svg-wrapper'
+import { PartInner } from '../../draft/part'
 
-const Draft = props => {
-  const { draft, patternProps, gist, updateGist, app, bgProps={}, fitLayoutPart = false, layoutType="printingLayout"} = props
+const Draft = (props) => {
+  const {
+    draft,
+    patternProps,
+    gist,
+    updateGist,
+    app,
+    bgProps = {},
+    fitLayoutPart = false,
+    layoutType = 'printingLayout',
+  } = props
 
-  const svgRef = useRef(null);
+  const svgRef = useRef(null)
   if (!patternProps) return null
   // keep a fresh copy of the layout because we might manipulate it without saving to the gist
-  let layout = draft.settings.layout === true ? {
-      ...patternProps.autoLayout,
-      width: patternProps.width,
-      height: patternProps.height
-    } : {...draft.settings.layout}
-
-
+  let layout = draft.settings[0].layouts?.printingLayout || {
+    ...patternProps.autoLayout,
+    width: patternProps.width,
+    height: patternProps.height,
+  }
 
   // Helper method to update part layout and re-calculate width * height
-  const updateLayout = (name, config, history=true) => {
+  const updateLayout = (name, config, history = true) => {
     // Start creating new layout
-    const newLayout = {...layout}
-    newLayout.parts[name] = config
+    const newLayout = { ...layout }
+    newLayout.stacks[name] = config
 
     // Pattern topLeft and bottomRight
-    let topLeft = {x: 0, y: 0}
-    let bottomRight = {x: 0, y: 0}
-    for (const [pname, part] of Object.entries(patternProps.parts)) {
+    let topLeft = { x: 0, y: 0 }
+    let bottomRight = { x: 0, y: 0 }
+    for (const pname in patternProps.stacks) {
       if (pname == props.layoutPart && !fitLayoutPart) continue
-      let partLayout = newLayout.parts[pname];
+      let partLayout = newLayout.stacks[pname]
 
       // Pages part does not have its topLeft and bottomRight set by core since it's added post-draft
       if (partLayout?.tl) {
@@ -37,7 +43,7 @@ const Draft = props => {
         topLeft.x = Math.min(topLeft.x, partLayout.tl.x)
         topLeft.y = Math.min(topLeft.y, partLayout.tl.y)
         bottomRight.x = Math.max(bottomRight.x, partLayout.br.x)
-        bottomRight.y = Math.max(bottomRight.y, partLayout.br.y);
+        bottomRight.y = Math.max(bottomRight.y, partLayout.br.y)
       }
     }
 
@@ -54,52 +60,56 @@ const Draft = props => {
     }
   }
 
+  const viewBox = layout.topLeft
+    ? `${layout.topLeft.x} ${layout.topLeft.y} ${layout.width} ${layout.height}`
+    : false
 
   // We need to make sure the `pages` part is at the bottom of the pile
   // so we can drag-drop all parts on top of it.
   // Bottom in SVG means we need to draw it first
-  const partList = Object.keys(patternProps.parts)
+  const stacks = [
+    <PartInner
+      {...{
+        part: patternProps.parts[0][props.layoutPart],
+        partName: props.layoutPart,
+        gist,
+        skipGrid: true,
+      }}
+      key={props.layoutPart}
+    />,
+  ]
+
+  // then make a stack component for each remaining stack
+  for (var stackName in patternProps.stacks) {
+    if (stackName === props.layoutPart) {
+      continue
+    }
+    let stack = patternProps.stacks[stackName]
+
+    const stackPart = (
+      <Stack
+        {...{
+          key: stackName,
+          stackName,
+          stack,
+          layout,
+          app,
+          gist,
+          updateLayout,
+          isLayoutPart: stackName === props.layoutPart,
+        }}
+      />
+    )
+
+    stacks.push(stackPart)
+  }
 
   return (
-    <div className="my-8 w-11/12 m-auto border-2 border-dotted border-base-content shadow">
-    <TransformWrapper
-      minScale={0.1}
-      centerZoomedOut={true}
-      wheel={{ activationKeys: ['Control'] }}
-    >
-      <TransformComponent>
-      <Svg {...patternProps}
-        embed={gist.embed}
-        ref={svgRef}
-        viewBox={layout.topLeft ? `${layout.topLeft.x} ${layout.topLeft.y} ${layout.width} ${layout.height}` :  false}
-        style={{height: '90vh'}}
-      >
-        <Defs {...patternProps} />
-        <style>{`:root { --pattern-scale: ${gist.scale || 1}}`}</style>
-        <g>
-          <rect x="0" y="0" width={layout.width} height={layout.height} {...bgProps} />
-          {[
-            partList.filter(name => name === props.layoutPart),
-            partList.filter(name => name !== props.layoutPart),
-          ].map(list => list.map(name => (
-            <Part {...{
-              key:name,
-              partName: name,
-              part: patternProps.parts[name],
-              layout,
-              app,
-              gist,
-              updateLayout,
-              isLayoutPart: name === props.layoutPart
-            }}/>
-          )))}
-        </g>
-      </Svg>
-      </TransformComponent>
-    </TransformWrapper>
-    </div>
+    <SvgWrapper {...{ patternProps, gist, viewBox }} ref={svgRef}>
+      <rect x="0" y="0" width={layout.width} height={layout.height} {...bgProps} />
+      {stacks}
+    </SvgWrapper>
   )
 }
 
 export default Draft
-

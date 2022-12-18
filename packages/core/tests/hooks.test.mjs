@@ -19,6 +19,7 @@ describe('Hooks', () => {
       preSample: [],
       postSample: [],
       preRender: [],
+      preLayout: [],
       postLayout: [],
       postRender: [],
       insertText: [],

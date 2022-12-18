@@ -53,7 +53,7 @@ The response body is the only time the API key's secret will be revealed.
 | Value               | Type     | Description |
 | ------------------- | -------- | ----------- |
 | `result`            | `string` | Either `success` or `error` |
-| `error`             | `string` | Will give info on the nature of the error. Only set if an error occured. |
+| `error`             | `string` | Will give info on the nature of the error. Only set if an error occurred. |
 | `apikey.key`        | `string` | The API key |
 | `apikey.secret`     | `string` | The API secret |
 | `apikey.level`      | `number` | The privilege level of the API key |

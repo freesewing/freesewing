@@ -2,7 +2,7 @@
 title: Part.getId()
 ---
 
-The `Part.getId()` methid will return an integer the can be used as an
+The `Part.getId()` method will return an integer the can be used as an
 for ID Points/Paths/Snippets. This method will ensure the ID is unique by
 keeping an internal incremental counter of the IDs that have been used.
 It is typically used when programatically adding points, paths, or snippets.
@@ -19,7 +19,7 @@ in [a part's draft method](/reference/api/part/draft).
 int|string getId(prefix='')
 ```
 
-This methiod takes an optional parameter that will be used as a prefix for the ID.
+This method takes an optional parameter that will be used as a prefix for the ID.
 
 ## Part.getId() example
 

@@ -1,37 +1,41 @@
-export const paperlessStyle = `
-/* Paperless grid */
-svg.freesewing path.grid {
-  fill: none;
+export const paperlessStyle = (stripped) => `
+${!stripped ? '/* Paperless grid */' : ''}
+${!stripped ? 'svg.freesewing ' : ''}path.grid {
   stroke: #555;
   stroke-width: 0.3;
 }
-svg.freesewing path.gridline {
+${!stripped ? 'svg.freesewing ' : ''}path.gridline {
   stroke: #555;
   stroke-width: 0.2;
+  fill: none;
 }
-svg.freesewing path.gridline-lg {
+${!stripped ? 'svg.freesewing ' : ''}path.gridline-lg {
   stroke: #777;
   stroke-width: 0.2;
   stroke-dasharray: 1.5,1.5;
+  fill: none;
 }
-svg.freesewing path.gridline-sm {
+${!stripped ? 'svg.freesewing ' : ''}path.gridline-sm {
   stroke: #999;
   stroke-width: 0.1;
+  fill: none;
 }
-svg.freesewing path.gridline-xs {
+${!stripped ? 'svg.freesewing ' : ''}path.gridline-xs {
   stroke: #999;
   stroke-width: 0.1;
   stroke-dasharray: 0.5,0.5;
+  fill: none;
 }
-svg.freesewing path.gridbox {
+${!stripped ? 'svg.freesewing ' : ''}path.gridbox {
   fill: url(#grid);
 }`
-export const sampleStyle = `
-/* Sample classes */
-svg.freesewing path.sample {
+
+export const sampleStyle = (stripped) => `
+${!stripped ? '/* Sample classes */' : ''}
+${!stripped ? 'svg.freesewing ' : ''}path.sample {
   stroke-width: 0.75
 }
-svg.freesewing path.sample-focus {
+${!stripped ? 'svg.freesewing ' : ''}path.sample-focus {
   stroke-width: 1.5; fill: rgba(0,0,0,0.1)
 }`
 
@@ -53,7 +57,7 @@ const colors = {
  * scale: the scale of the markings
  * stripped: should nested declarations be stripped out? Necessary for svgToPdfkit
  * */
-export const buildStylesheet = (scale, stripped) => `
+export const buildStylesheet = (scale = 1, stripped) => `
   ${!stripped ? '/* Reset */' : ''}
   ${!stripped ? 'svg.freesewing ' : ''}path,
   ${!stripped ? 'svg.freesewing ' : ''}circle,

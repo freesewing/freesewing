@@ -11,6 +11,8 @@ customBuild:
 skipTests:
   - theo
 packageJson:
+  backend:
+    name: backend.freesewing.org
   bee:
     author: bobgeorgethe3rd (https://github.com/bobgeorgethe3rd)
   benjamin:

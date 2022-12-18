@@ -32,6 +32,7 @@ access the following properties:
 | `sa`              | Access to `settings.sa` |
 | `scale`           | Access to `settings.scale` |
 || **_Access to utilities_**   |
+| `context`         | The pattern context |
 | `getId`           | See [the getId documentation](/reference/api/part/getid) |
 | `hide`            | See [the hide documentation](/reference/api/part/hide) |
 | `log`             | See [the logging documentation](/reference/api/store/log) |
@@ -41,6 +42,7 @@ access the following properties:
 | `unhide`          | See [the unhide documentation](/reference/api/part/unhide) |
 | `units`           | A version of [`utils.units()`](/reference/api/utils/units) that is preconfigured with the user's chosenunits |
 | `utils`           | See [the utils documentation](/reference/api/utils) |
+| `Bezier`          | The [bezier-js](https://pomax.github.io/bezierjs/) library's `Bezier` named export |
 || **_Return value_**   |
 | `part`            | Your draft method **must** return this |
 

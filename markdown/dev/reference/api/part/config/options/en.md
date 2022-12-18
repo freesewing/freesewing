@@ -68,4 +68,4 @@ percentage options][snapped] instead.
 [list]: /reference/api/part/config/options/list
 [pct]: /reference/api/part/config/options/pct
 [snapped]: /reference/api/part/config/options/pct/snap
-[mm]: /reference/api/part/config/options/pct/mm
+[mm]: /reference/api/part/config/options/mm

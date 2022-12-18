@@ -7,10 +7,10 @@ import mustache from 'mustache'
 import conf from '../lerna.json' assert { type: 'json' }
 const { version } = conf
 import {
-  publishedSoftware as software,
+  software as software,
   publishedTypes as types,
   designs,
-  plugins
+  plugins,
 } from '../config/software/index.mjs'
 import { buildOrder } from '../config/build-order.mjs'
 import rootPackageJson from '../package.json' assert { type: 'json' }
@@ -37,8 +37,6 @@ const repo = {
     changelog: readTemplateFile('changelog.dflt.md'),
     readme: readTemplateFile('readme.dflt.md'),
     build: readTemplateFile('build.dflt.mjs'),
-    // Removed in favor of central config file. Keeping just in case
-    //eslint: readTemplateFile('eslintrc.yml'),
     pluginTests: readTemplateFile('plugin.test.mjs'),
     designTests: readTemplateFile('design.test.mjs.mustache'),
     data: readTemplateFile('data.dflt.mjs.mustache'),
@@ -62,12 +60,11 @@ fs.writeFileSync(
     { allcontributors: repo.ac.contributors.length }
   ) + repo.contributors
 )
-log.write(chalk.green(" Done\n"))
+log.write(chalk.green(' Done\n'))
 
 // Step 2: Validate package configuration
 log.write(chalk.blueBright('Validating configuration...'))
-if (validate()) log.write(chalk.green(" Done\n"))
-
+if (validate()) log.write(chalk.green(' Done\n'))
 
 // Step 3: Generate package.json, pkg.mjs, README, and CHANGELOG
 log.write(chalk.blueBright('Generating package-specific files...'))
@@ -76,49 +73,35 @@ for (const pkg of Object.values(software)) {
     path.join(cwd, pkg.folder, pkg.name, 'package.json'),
     JSON.stringify(packageJson(pkg), null, 2) + '\n'
   )
-  fs.writeFileSync(
-    path.join(cwd, pkg.folder, pkg.name, 'data.mjs'),
-    mustache.render(repo.templates.data, { name: fullName(pkg.name), version })
-  )
-  fs.writeFileSync(
-    path.join(cwd, pkg.folder, pkg.name, 'README.md'),
-    readme(pkg)
-  )
-  if (repo.exceptions.customBuild.indexOf(pkg.name) === -1) {
+  if (pkg.type !== 'site') {
     fs.writeFileSync(
-      path.join(cwd, pkg.folder, pkg.name, 'build.mjs'),
-      repo.templates.build
+      path.join(cwd, pkg.folder, pkg.name, 'data.mjs'),
+      mustache.render(repo.templates.data, { name: fullName(pkg.name), version })
     )
+    fs.writeFileSync(path.join(cwd, pkg.folder, pkg.name, 'README.md'), readme(pkg))
+    if (repo.exceptions.customBuild.indexOf(pkg.name) === -1) {
+      fs.writeFileSync(path.join(cwd, pkg.folder, pkg.name, 'build.mjs'), repo.templates.build)
+    }
+    fs.writeFileSync(path.join(cwd, pkg.folder, pkg.name, 'CHANGELOG.md'), changelog(pkg))
   }
-  //fs.writeFileSync(
-  //  path.join(cwd, pkg.folder, pkg.name, '.eslintrc.yml'),
-  //  repo.templates.eslint
-  //)
-  fs.writeFileSync(
-    path.join(cwd, pkg.folder, pkg.name, 'CHANGELOG.md'),
-    changelog(pkg)
-  )
 }
-log.write(chalk.green(" Done\n"))
+log.write(chalk.green(' Done\n'))
 
 // Step 4: Generate overall CHANGELOG.md
-fs.writeFileSync(
-  path.join(repo.path, 'CHANGELOG.md'),
-  changelog('global')
-)
+fs.writeFileSync(path.join(repo.path, 'CHANGELOG.md'), changelog('global'))
 
 // Step 5: Generate build script for published software
 log.write(chalk.blueBright('Generating buildall node script...'))
-const buildSteps = buildOrder.map((step, i) => `lerna run cibuild_step${i}`);
-const buildAllCommand = buildSteps.join(' && ');
-const newRootPkgJson = {...rootPackageJson};
-newRootPkgJson.scripts.buildall = buildAllCommand;
+const buildSteps = buildOrder.map((step, i) => `lerna run cibuild_step${i}`)
+const buildAllCommand = buildSteps.join(' && ')
+const newRootPkgJson = { ...rootPackageJson }
+newRootPkgJson.scripts.buildall = buildAllCommand
 newRootPkgJson.scripts.wbuildall = buildAllCommand.replace(/cibuild/g, 'wcibuild')
 fs.writeFileSync(
   path.join(repo.path, 'package.json'),
   JSON.stringify(newRootPkgJson, null, 2) + '\n'
 )
-log.write(chalk.green(" Done\n"))
+log.write(chalk.green(' Done\n'))
 
 // Step 6: Generate tests for designs and plugins
 for (const design in designs) {
@@ -130,14 +113,12 @@ for (const design in designs) {
 for (const plugin in plugins) {
   fs.writeFileSync(
     path.join(repo.path, 'plugins', plugin, 'tests', 'shared.test.mjs'),
-    repo.templates.pluginTests,
+    repo.templates.pluginTests
   )
 }
 
-
-
 // All done
-log.write(chalk.green(" All done\n"))
+log.write(chalk.green(' All done\n'))
 process.exit()
 
 /*
@@ -189,6 +170,7 @@ function readInfoFile(pkg) {
  * Returns an array of keywords for a package
  */
 function keywords(pkg) {
+  if (pkg.type === 'site') return []
   if (typeof repo.keywords[pkg.name] !== 'undefined') return repo.keywords[pkg.name]
   if (typeof repo.keywords[pkg.type] !== 'undefined') return repo.keywords[pkg.type]
   else {
@@ -205,15 +187,17 @@ function keywords(pkg) {
  */
 function scripts(pkg) {
   let runScripts = {}
-  for (const key of Object.keys(repo.scripts._)) {
-    runScripts[key] = mustache.render(repo.scripts._[key], {
-      name: pkg.name
-    })
+  if (pkg.type !== 'site') {
+    for (const key of Object.keys(repo.scripts._)) {
+      runScripts[key] = mustache.render(repo.scripts._[key], {
+        name: pkg.name,
+      })
+    }
   }
   if (typeof repo.scripts._types[pkg.type] !== 'undefined') {
     for (const key of Object.keys(repo.scripts._types[pkg.type])) {
       runScripts[key] = mustache.render(repo.scripts._types[pkg.type][key], {
-        name: pkg.name
+        name: pkg.name,
       })
     }
   }
@@ -222,13 +206,13 @@ function scripts(pkg) {
       if (repo.scripts[pkg.name][key] === '!') delete runScripts[key]
       else
         runScripts[key] = mustache.render(repo.scripts[pkg.name][key], {
-          name: pkg.name
+          name: pkg.name,
         })
     }
   }
 
   // Enforce build order by generating the cibuild_stepX scrips
-  for (let step=0; step < buildOrder.length; step++) {
+  for (let step = 0; step < buildOrder.length; step++) {
     if (buildOrder[step].indexOf(pkg.name) !== -1) {
       if (runScripts.prebuild) {
         runScripts[`precibuild_step${step}`] = runScripts.prebuild
@@ -282,7 +266,7 @@ function packageJson(pkg) {
   pkgConf.description = pkg.description
   pkgConf = {
     ...pkgConf,
-    ...JSON.parse(mustache.render(repo.templates.pkg, { name: pkg.name }))
+    ...JSON.parse(mustache.render(repo.templates.pkg, { name: pkg.name })),
   }
   pkgConf.keywords = pkgConf.keywords.concat(keywords(pkg))
   pkgConf.scripts = scripts(pkg)
@@ -296,11 +280,21 @@ function packageJson(pkg) {
   if (typeof repo.exceptions.packageJson[pkg.name] !== 'undefined') {
     pkgConf = {
       ...pkgConf,
-      ...repo.exceptions.packageJson[pkg.name]
+      ...repo.exceptions.packageJson[pkg.name],
     }
     for (let key of Object.keys(repo.exceptions.packageJson[pkg.name])) {
       if (repo.exceptions.packageJson[pkg.name][key] === '!') delete pkgConf[key]
     }
+  }
+
+  if (pkg.type === 'site') {
+    delete pkgConf.keywords
+    delete pkgConf.type
+    delete pkgConf.module
+    delete pkgConf.exports
+    delete pkgConf.files
+    delete pkgConf.publishConfig
+    pkgConf.private = true
   }
 
   return pkgConf
@@ -314,9 +308,7 @@ function badges(pkgName) {
   for (let group of ['_all', '_social']) {
     markup += "<p align='center'>"
     for (let key of Object.keys(repo.badges[group])) {
-      const name = (key === 'contributors')
-        ? repo.ac.contributors.length
-        : pkgName
+      const name = key === 'contributors' ? repo.ac.contributors.length : pkgName
       markup += formatBadge(repo.badges[group][key], name, fullName(pkgName))
     }
     markup += '</p>'
@@ -353,7 +345,7 @@ function readme(pkg) {
     description: pkg.description,
     badges: badges(pkg.name),
     info: readInfoFile(pkg),
-    contributors: repo.contributors
+    contributors: repo.contributors,
   })
 
   return markup
@@ -365,7 +357,7 @@ function readme(pkg) {
 function changelog(pkg) {
   let markup = mustache.render(repo.templates.changelog, {
     fullname: pkg === 'global' ? 'FreeSewing (global)' : fullName(pkg.name),
-    changelog: pkg === 'global' ? globalChangelog() : packageChangelog(pkg.name)
+    changelog: pkg === 'global' ? globalChangelog() : packageChangelog(pkg.name),
   })
 
   return markup
@@ -406,7 +398,6 @@ function globalChangelog() {
  * Generates the changelog data for a package
  */
 function packageChangelog(pkgName) {
-  let log = {}
   let version
   let markup = ''
   for (let v in repo.changelog) {
@@ -414,7 +405,10 @@ function packageChangelog(pkgName) {
     let changes = repo.changelog[v]
     let changed = false
     for (let type of repo.changetypes) {
-      if (changes[type] && (Array.isArray(changes[type][pkgName]) || Array.isArray(changes[type].all))) {
+      if (
+        changes[type] &&
+        (Array.isArray(changes[type][pkgName]) || Array.isArray(changes[type].all))
+      ) {
         if (!changed) changed = ''
         changed += '\n### ' + type + '\n\n'
         if (Array.isArray(changes[type][pkgName])) {
@@ -462,9 +456,7 @@ function validate() {
   for (const type in repo.dirs) {
     for (const dir of repo.dirs[type]) {
       if (typeof software[dir] === 'undefined' || typeof software[dir].description !== 'string') {
-        log.write(
-          chalk.redBright(` No description for package ${type}/${dir}`+"\n")
-        )
+        log.write(chalk.redBright(` No description for package ${type}/${dir}` + '\n'))
         return false
       }
     }
@@ -472,4 +464,3 @@ function validate() {
 
   return true
 }
-

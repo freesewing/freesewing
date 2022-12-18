@@ -9,7 +9,7 @@ For angles, use a degree option.
 Your degree option should be a plain object with these properties:
 
 - `deg` : The default value in degrees
-- `min` : The minimul that's allowed
+- `min` : The minimum that's allowed
 - `max` : The maximum that's allowed
 
 <Tip>
@@ -28,9 +28,9 @@ more details.
 ```js
 options: {
   collarAngle: { 
-    deg:  85, 
-    min:  60 
-    max: 130 
+    deg:  85,
+    min:  60,
+    max: 130,
   }
 }
 ```

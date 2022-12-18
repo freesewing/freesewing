@@ -46,7 +46,7 @@ macro('banner', {
 | Property     | Default    | Type       | Description |
 |-------------:|------------|------------|-------------|
 | `angle`      | `0`        | `number`   | The angle under which to draw the bartack |
-| `density`    | `3`        | `number`   | Controls how close the stitches are togeter |
+| `density`    | `3`        | `number`   | Controls how close the stitches are together |
 | `length`     | `15`       | `number`   | Length of the bartack |
 | `path`       |            | `Path`     | The path the bartack should follow |
 | `prefix`     |            | `string`   | A prefix to apply to the name of the generated path |

@@ -17,6 +17,7 @@ export function Hooks() {
     preSample: [],
     postSample: [],
     preRender: [],
+    preLayout: [],
     postLayout: [],
     postRender: [],
     insertText: [],
