@@ -12,12 +12,23 @@ const banner = `/**
 
 // Shared esbuild options
 const options = {
-  banner: { js: banner },
+  banner: {
+    js: `// See: https://github.com/evanw/esbuild/issues/1921
+import { createRequire } from 'module';
+import path from 'path';
+import { fileURLToPath } from 'url';
+const require = createRequire(import.meta.url);
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+${banner}
+`,
+  },
   bundle: true,
   entryPoints: ['src/index.mjs'],
   format: 'esm',
   outfile: 'dist/index.mjs',
-  external: [],
+  external: ['./local-config.mjs'],
   metafile: process.env.VERBOSE ? true : false,
   minify: process.env.NO_MINIFY ? false : true,
   sourcemap: true,
