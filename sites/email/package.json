@@ -20,7 +20,7 @@
   "peerDependencies": {},
   "dependencies": {
     "@maizzle/framework": "4.3.1",
-    "tailwindcss-box-shadow": "^1.0.0",
+    "tailwindcss-box-shadow": "^2.0.0",
     "tailwindcss-email-variants": "^1.0.0",
     "tailwindcss-mso": "^1.2.0"
   },
