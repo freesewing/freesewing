@@ -32,7 +32,7 @@ access the following properties:
 | `sa`              | Access to `settings.sa` |
 | `scale`           | Access to `settings.scale` |
 || **_Access to utilities_**   |
-| `context`         | The pattern context |
+| `context`         | Allows access to the pattern object and other things higher in the tree |
 | `getId`           | See [the getId documentation](/reference/api/part/getid) |
 | `hide`            | See [the hide documentation](/reference/api/part/hide) |
 | `log`             | See [the logging documentation](/reference/api/store/log) |
