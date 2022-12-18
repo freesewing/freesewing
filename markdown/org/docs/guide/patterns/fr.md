@@ -6,7 +6,7 @@ order: 400
 Lorsque vous générez un patron sur mesure, vous pouvez le modifier sans fin, et l'exporter vers une variété de formats, y compris au format PDF.  
 Mais il reste éphémère jusqu'à ce que vous l'enregistriez sur votre compte, ainsi il devient alors un de **vos patrons**.
 
-Saving your pattern is optional, but it allows you to re-visit the pattern later, make further tweaks to it or simply download the PDF again.
+L'enregistrement de votre patron est optionnel, mais il vous permet de re-consulter le patron plus tard, apporter d'autres améliorations ou télécharger le PDF à nouveau.
 
 Vous pouvez enregistrer autant de patrons que vous le souhaitez.
 
