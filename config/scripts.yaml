@@ -49,12 +49,16 @@ snapseries:
 
 # Sites go here
 backend:
+  build: 'node build.mjs'
+  clean: 'rimraf dist'
   dev: 'nodemon src/index.mjs'
   initdb: 'npx prisma db push'
+  mbuild: 'NO_MINIFY=1 node build.mjs'
   newdb: 'node ./scripts/newdb.mjs'
   prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
   rmdb: 'node ./scripts/rmdb.mjs'
   test: 'npx mocha --require mocha-steps tests/index.mjs'
+  vbuild: 'VERBOSE=1 node build.mjs'
 
 dev:
   build: &nextBuild 'node --experimental-json-modules ../../node_modules/next/dist/bin/next build'
