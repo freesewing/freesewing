@@ -44,7 +44,7 @@
     "rehype-highlight": "6.0.0",
     "remark-smartypants": "^2.0.0",
     "sharp": "^0.31.1",
-    "svg-to-pdfkit": "https://github.com/eriese/SVG-to-PDFKit",
+    "svg-to-pdfkit": "^0.1.8",
     "to-vfile": "^7.2.2",
     "unist-util-visit": "^4.1.0",
     "web-worker": "^1.2.0"
