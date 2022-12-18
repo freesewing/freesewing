@@ -23,14 +23,34 @@ function teaganFront({
   for (let key of Object.keys(paths)) paths[key].hide()
 
   // Adapt fit to waist
-  let width
-  if (measurements.waist > measurements.hips)
-    width = (measurements.waist * (1 + options.hipsEase)) / 4
-  else width = (measurements.hips * (1 + options.hipsEase)) / 4
-  points.hem.x = width
-  points.hips.x = width
-  points.waist.x = width
-  points.waistCp2 = points.waist.shift(90, points.armhole.dy(points.waist) / 3)
+  if (options.curveToWaist) {
+    let midWidth, lowerWidth
+    
+    midWidth = measurements.waist * (1 + options.waistEase)/4
+    lowerWidth = measurements.hips * (1 + options.hipsEase)/4
+    points.hem.x = lowerWidth
+    points.hips.x = lowerWidth
+    points.waist.x = midWidth
+    
+    // control points should be somewhat evenly spaced around waist
+    let cpAbove, cpBelow
+    cpAbove = points.armhole.dy(points.waist) * 0.6
+    cpBelow = points.hips.dy(points.waist) * 0.25
+    points.waistCp1 = points.waist.shift(90, cpBelow*2/3 - cpAbove/3)
+    points.waistCp2 = points.waist.shift(90, cpAbove*2/3 - cpBelow/3)
+    points.hipsCp2 = points.hips.shift(90,points.waist.dy(points.hips) * 0.45)
+  } else {
+    let width
+    if (measurements.waist > measurements.hips)
+      width = (measurements.waist * (1 + options.hipsEase)) / 4
+    else width = (measurements.hips * (1 + options.hipsEase)) / 4
+    points.hem.x = width
+    points.hips.x = width
+    points.waist.x = width
+    points.waistCp2 = points.waist.shift(90, points.armhole.dy(points.waist) / 3)
+  }
+  
+  
 
   // Clone cb (center back) into cf (center front)
   for (let key of ['Neck', 'Shoulder', 'Armhole', 'Hips', 'Hem']) {
@@ -62,9 +82,20 @@ function teaganFront({
 
   // Draw seamline
   paths.hemBase = new Path().move(points.cfHem).line(points.hem).hide()
+  if (options.curveToWaist) {
+    paths.sideSeam = new Path()
+      .move(points.hem)
+      .curve(points.hipsCp2,points.waistCp1, points.waist)
+      .curve_(points.waistCp2,points.armhole)
+      .hide()
+  } else {
+    paths.sideSeam = new Path()
+      .move(points.hem)
+      .curve_(points.waistCp2,points.armhole)
+      .hide()
+  }
   paths.saBase = new Path()
-    .move(points.hem)
-    .curve_(points.waistCp2, points.armhole)
+    .move(points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.shoulderCp1, points.shoulder)
     .line(points.neck)
@@ -73,6 +104,7 @@ function teaganFront({
   paths.seam = new Path()
     .move(points.cfHem)
     .join(paths.hemBase)
+    .join(paths.sideSeam)
     .join(paths.saBase)
     .line(points.cfHem)
     .close()
@@ -181,6 +213,8 @@ export const front = {
     backNeckCutout: { pct: 8, min: 4, max: 12, menu: 'fit' },
     // Teagan specific
     draftForHighBust: { bool: false, menu: 'fit' },
+    curveToWaist: { bool: false, menu: 'fit' },
+    waistEase: { pct: 15, min: 8, max: 30, menu: 'fit' },
     hipsEase: { pct: 18, min: 8, max: 30, menu: 'fit' },
     necklineDepth: { pct: 25, min: 20, max: 40, menu: 'style' },
     necklineWidth: { pct: 30, min: 10, max: 50, menu: 'style' },
