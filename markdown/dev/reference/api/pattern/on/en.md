@@ -18,7 +18,7 @@ Pattern pattern.on(string hook, function method)
 <Tip>
 
 Refer to [the Lifecycle hooks documentation](/reference/hooks/) for a list
-of all availalble lifecycle hooks, as well as the signature of the function you
+of all available lifecycle hooks, as well as the signature of the function you
 should pass it.
 
 </Tip>

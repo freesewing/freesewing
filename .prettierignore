@@ -10,6 +10,8 @@
 *.sqlite
 *.html
 *.env
+*.sh
+Dockerfile
 LICENSE
 yarn.lock
 .husky/pre-commit

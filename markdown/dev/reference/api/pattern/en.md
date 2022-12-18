@@ -53,7 +53,7 @@ const pattern = new Florence([
 We refer to these *multiple sets of settings* as **multisets**.
 It is what powers FreeSewing's [sampling capabilities](/reference/api/pattern/sample) but
 it also allows you to draft some pattern parts with one set of measurements, and other parts
-with another set. For example if you have an asymetric model to fit.
+with another set. For example if you have an asymmetric model to fit.
 
 <Note>
 

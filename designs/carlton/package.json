@@ -48,7 +48,6 @@
   "peerDependencies": {
     "@freesewing/core": "^3.0.0-alpha.2",
     "@freesewing/plugin-bundle": "^3.0.0-alpha.2",
-    "@freesewing/config-helpers": "^3.0.0-alpha.2",
     "@freesewing/brian": "^3.0.0-alpha.2",
     "@freesewing/bent": "^3.0.0-alpha.2",
     "@freesewing/plugin-mirror": "^3.0.0-alpha.2",

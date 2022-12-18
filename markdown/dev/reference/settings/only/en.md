@@ -5,14 +5,13 @@ title: only
 The `only` setting allows you to specify one or more parts to
 draft, rather than the entire pattern.
 
-It accepts either a single part name as a string, or an array of
-one or more part names.
+It accepts a single part name as a string, an array of one or more part names, or it can be set to `false`.
 
 ## Signature
 
 ```js
 const settings = {
-  Array|Boolean only=false
+  String|Array|Boolean only=false
 }
 ```
 

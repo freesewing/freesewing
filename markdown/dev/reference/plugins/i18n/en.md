@@ -2,7 +2,7 @@
 title: plugin-i18n
 ---
 
-Published as [@freesewing/plugin-i18n][1], this plugin faciliates
+Published as [@freesewing/plugin-i18n][1], this plugin facilitates
 translation of your designs by allowing you to provide your own
 language translations.
 

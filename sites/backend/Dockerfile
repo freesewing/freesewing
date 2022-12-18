@@ -25,7 +25,7 @@ WORKDIR /backend
 
 ## Copy built node modules and binaries without including the toolchain
 COPY --from=builder /backend/node_modules/ /backend/node_modules/
-COPY --from=builder /backend/dist/ /backend/dist/
+COPY --from=builder /backend/build/ /backend/build/
 COPY --from=builder /backend/package.json /backend/package.json
 
 ## Add a user to run the app

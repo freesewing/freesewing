@@ -44,7 +44,7 @@ could hold `modelName2` for example.
 
 By passing this second parameter, you can put the _focus_ on one of the models,
 which will influence the render style, and make it
-easier to see a comparison between a given set of measrurements, and the rest.
+easier to see a comparison between a given set of measurements, and the rest.
 
 Alternatively, you can use the `Pattern.sample()` method and set `settings.sample.focus` to the key
 identifying your model in the models object.

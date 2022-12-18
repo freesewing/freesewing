@@ -5,6 +5,10 @@ title: sa
 The `sa` setting controls the seam allowance. Either provide value in
 millimeter or set it to `false` or `0` to disable seam allowance altogether.
 
+Setting a seam allowance causes the pattern to be generated with
+additional lines so pattern pieces can be cut out with the correct
+seam allowance included.
+
 ## Signature
 
 ```js
@@ -13,7 +17,7 @@ const settings = {
 }
 ```
 
-By default, the `sa` setting is `false` and seam allowance is no included.
+By default, the `sa` setting is `false` and seam allowance is not included.
 
 ## Example
 
@@ -27,10 +31,11 @@ const pattern = new Aaron({
 
 ## Notes
 
-This is ignored if [settings.complete](/reference/settings/complete) is `false`
+The `sa` setting does not automatically cause seam allowances to
+be displayed on a pattern.
+Instead, it is up to the pattern designer to have the design check
+for the `sa` setting and include the appropriate seam allowance lines
+on the pattern when `sa` is set to a non-zero numeric value.
 
-<Comment by="joost">
-This is not strictly enforced and left of to the designer, so different designs
-may behave differently with regards to including seam allowance when `complete` is
-set to `false`.
-</Comment>
+The `sa` setting is automatically set to `0` to disable seam allowance if
+[settings.complete](/reference/settings/complete) is `false`.

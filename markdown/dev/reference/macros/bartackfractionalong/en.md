@@ -50,7 +50,7 @@ macro('banner', {
 | Property     | Default    | Type       | Description |
 |-------------:|------------|------------|-------------|
 | `angle`      | `0`        | `number`   | The angle under which to draw the bartack |
-| `density`    | `3`        | `number`   | Controls how close the stitches are togeter |
+| `density`    | `3`        | `number`   | Controls how close the stitches are together |
 | `end`        | `1`        | `number`   | At which fraction of the path length (from `0` to `1`) should the bartack end |
 | `length`     | `15`       | `number`   | Length of the bartack |
 | `path`       |            | `Path`     | The path the bartack should follow |
