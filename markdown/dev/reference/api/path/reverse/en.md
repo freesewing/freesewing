@@ -13,7 +13,7 @@ Path path.reverse(bool cloneAttributes=false)
 
 If you pass a truthy value to this method, it will return a deep clone of the
 path, including its attributes. By default, it will return a shallow
-copy, whithout the attributes.
+copy, without the attributes.
 
 ## Example
 

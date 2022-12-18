@@ -2,7 +2,7 @@
 title: Design 
 ---
 
-The `Design` named export in FreeSewing's core library is a contructor that
+The `Design` named export in FreeSewing's core library is a constructor that
 creates new pattern designs.
 
 ## Signature
@@ -39,7 +39,7 @@ const Sorcha = new Design({
 
 <Tip>A Design in FreeSewing is little more than a container for various Parts</Tip>
 
-Optionally, you can also pass it a `data` attrbute 
+Optionally, you can also pass it a `data` attribute
 to hold any custom data you'd like to add to your Design.
 
 Any `data` you add to the Design constructor will be added

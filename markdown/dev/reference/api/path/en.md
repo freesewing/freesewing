@@ -12,7 +12,7 @@ Path new Path()
 
 The Path constructor takes no arguments.
 
-## Attributes
+## Properties
 
 A Path objects comes with the following properties:
 
@@ -24,6 +24,10 @@ A Path objects comes with the following properties:
   [Path.setHidden()](/reference/api/path/sethidden) for various methods that
   allow setting this in a chainable way.
 
+<Related>
+See [Using Attributes](/howtos/code/attributes)
+for information about custom Attributes that can be used with Paths.
+</Related>
 ## Example
 
 <Example caption="Example of the Path contructor">
