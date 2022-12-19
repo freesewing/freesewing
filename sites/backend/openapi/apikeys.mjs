@@ -1,48 +1,103 @@
-const tags = ['API Keys']
-const jwt = [{ jwt: [] }]
-const key = [{ key: [] }]
-
-const fields = {
-  level: {
-    description: `
-One of the [API permission
-levels](https://freesewing.dev/reference/backend/api/rbac#permission-levels) which
-is an integer between (and including) \`0\` and \`8\`.`,
-    type: 'number',
-    example: 5,
-  },
-  name: {
-    description: `
-The name of the API key exists solely to help you differentiate between your API keys.`,
-    type: 'string',
-    example: 'My first API key',
-  },
-}
+import { jwt, key, fields, parameters, responseObjects } from './lib.mjs'
 
 export const apikeys = {}
 
-// Create API key - JWT
+const common = {
+  tags: ['API keys'],
+  security: [jwt, key],
+}
+
+const localParams = {
+  key: {
+    in: 'path',
+    name: 'key',
+    required: true,
+    description: "The API key's UUID (the part you use as username)",
+    schema: {
+      example: 'c00475bd-3002-4baa-80ad-0145cd6a646c',
+      type: 'string',
+    },
+  },
+}
+
+const localErrors = {
+  accountStatusLacking:
+    'The account is in a status that does not allow this action (eg: it is not active or disabled).',
+  insufficientAccessLevel:
+    'The credentials used to make this API call are insufficient for this operation.',
+}
+
+const errorExamples = (errs) =>
+  errs.map((err) => `\n  - \`${err}\` : ${localErrors[err]}`).join(' ')
+
+const localStatus = {
+  401: {
+    description:
+      '**Unauthorized - Authentication failed**\n\n' +
+      'Status code `401` indicates that the request could not be authenticated.' +
+      'This typically means that authentication failed.<br>\n' +
+      '**Note:** _There is no response body for a `401` status code_.',
+  },
+  403: {
+    description:
+      '**Forbidden - Permissions problem**\n\n' +
+      'Status code `403` indicates that the request was forbidden.<br>' +
+      'The return body will have an `error` field which can hold:\n\n',
+    content: {
+      'application/json': {
+        schema: {
+          type: 'object',
+          properties: {
+            result: fields.result,
+            error: {
+              ...fields.error,
+              example: 'accountStatusLacking',
+            },
+          },
+        },
+      },
+    },
+  },
+  404: {
+    description:
+      '**Resource not found - The API key could not be found**\n\n' +
+      'Status code `404` indicates that the resource could not be found.<br>' +
+      'The return body will have an `error` field which can hold:\n\n' +
+      '- `apikeyNotFound` : The API key could not be found, probably ' +
+      'because it does not or no longer exists' +
+      '',
+    content: {
+      'application/json': {
+        schema: {
+          type: 'object',
+          properties: {
+            result: fields.result,
+            error: {
+              ...fields.error,
+              example: 'apikeyNotFound',
+            },
+          },
+        },
+      },
+    },
+  },
+  500: {
+    description:
+      '**Server error - API call failed**\n\n' +
+      'Status code `500` indicates that the request could not be handled ' +
+      'due to an unforseen error.',
+  },
+}
+
+// Create API key
 apikeys['/apikeys/{auth}'] = {
   post: {
-    tags,
-    security: jwt,
+    ...common,
     summary: 'Create a new API key',
-    description: `
-eates a new API key and returns it.
-quires a \`name\`, \`level\`, and \`expiresIn\` field in the POST body.`,
-    parameters: [
-      {
-        in: 'path',
-        name: 'auth',
-        required: true,
-        schema: {
-          type: 'string',
-          enum: ['jwt', 'key'],
-        },
-        description:
-          'One of `jwt` or `key` depending on whether you want to authentication with a JSON Web Token (`jwt`) or an API key (`key`)',
-      },
-    ],
+    description:
+      'Creates a new API key and returns it. ' +
+      'requires a `name`, `level`, and `expiresIn` field in the POST body.',
+    parameters: [parameters.auth],
     requestBody: {
       required: true,
       content: {
@@ -74,41 +129,8 @@ n never be higher than the \`apikeys.maxExpirySeconds\` configuration setting.`,
             schema: {
               type: 'object',
               properties: {
-                result: {
-                  description: 'Textual description of the result of the API call',
-                  type: 'string',
-                  example: 'created',
-                },
-                apikey: {
-                  description: 'Object holding the data of the created API key',
-                  type: 'object',
-                  properties: {
-                    expiresAt: {
-                      description: 'UTC Timestamp in ISO 8601 format.',
-                      type: 'string',
-                      example: '2022-12-18T18:14:30.460Z',
-                    },
-                    key: {
-                      description: 'The _key_ part of the API key serves as the username',
-                      type: 'string',
-                      example: 'c00475bd-3002-4baa-80ad-0145cd6a646c',
-                    },
-                    level: fields.level,
-                    name: fields.name,
-                    secret: {
-                      description: `
-                        The _secret_ part of the API key serves as the password.
-                        It is only revealed in the response of the API key creation.`,
-                      type: 'string',
-                      example: '56b74b5dc2da7a4f37b3c9a6172e840cf4912dc37cbc55c87485f2e0abf59245',
-                    },
-                    userId: {
-                      description: `The unique ID of the user who owns this resource.`,
-                      type: 'number',
-                      example: 4,
-                    },
-                  },
-                },
+                result: fields.result,
+                apikey: responseObjects.apikeyWithSecret,
               },
             },
           },
@@ -134,14 +156,9 @@ n never be higher than the \`apikeys.maxExpirySeconds\` configuration setting.`,
             schema: {
               type: 'object',
               properties: {
-                result: {
-                  description: 'Textual description of the result of the API call',
-                  type: 'string',
-                  example: 'error',
-                },
+                result: fields.result,
                 error: {
-                  description: 'Textual description of the error that caused this API call to fail',
-                  type: 'string',
+                  ...fields.error,
                   example: 'levelMissing',
                 },
               },
@@ -161,14 +178,9 @@ n never be higher than the \`apikeys.maxExpirySeconds\` configuration setting.`,
             schema: {
               type: 'object',
               properties: {
-                result: {
-                  description: 'Textual description of the result of the API call',
-                  type: 'string',
-                  example: 'error',
-                },
+                result: fields.result,
                 error: {
-                  description: 'Textual description of the error that caused this API call to fail',
-                  type: 'string',
+                  ...fields.error,
                   example: 'createApikeyFailed',
                 },
               },
@@ -180,26 +192,109 @@ n never be higher than the \`apikeys.maxExpirySeconds\` configuration setting.`,
   },
 }
 
-/*
+// Get/Remove API key
+apikeys['/apikeys/{key}/{auth}'] = {
+  // Get API key
+  get: {
+    ...common,
+    summary: 'Retrieve an API key',
+    description: 'Retrieves information about the API key `key`.',
+    parameters: [parameters.auth, localParams.key],
+    responses: {
+      200: {
+        description:
+          '**Success - API key returned**\n\n' +
+          'Status code `200` indicates that the resource was returned successfully.',
+        content: {
+          'application/json': {
+            schema: {
+              type: 'object',
+              properties: {
+                result: {
+                  ...fields.result,
+                  example: 'success',
+                },
+                apikey: responseObjects.apikeyWithoutSecret,
+              },
+            },
+          },
+        },
+      },
+      401: localStatus['401'],
+      403: {
+        ...localStatus['403'],
+        description:
+          localStatus['403'].description +
+          errorExamples(['accountStatusLacking', 'insufficientAccessLevel']),
+      },
+      404: localStatus['404'],
+      500: localStatus['500'],
+    },
+  },
+  // Remove API key
+  delete: {
+    ...common,
+    summary: 'Remove an API key',
+    description: 'Removes the API key `key`.',
+    parameters: [parameters.auth, localParams.key],
+    responses: {
+      204: {
+        description:
+          '**Success - API key removed**\n\n' +
+          'Status code `204` indicates that the resource was removed successfully.' +
+          '<br>**Note:** _There is no response body for a `204` status code_.',
+      },
+      401: localStatus['401'],
+      403: {
+        ...localStatus['403'],
+        description:
+          localStatus['403'].description +
+          errorExamples(['accountStatusLacking', 'insufficientAccessLevel']),
+      },
+      404: localStatus['404'],
+      500: localStatus['500'],
+    },
+  },
+}
 
-  // Read Apikey
-  app.get('/apikeys/:id/jwt', passport.authenticate(...jwt), (req, res) =>
-    Apikeys.read(req, res, tools)
-  )
-  app.get('/apikeys/:id/key', passport.authenticate(...bsc), (req, res) =>
-    Apikeys.read(req, res, tools)
-  )
-
-  // Read current Apikey
-  app.get('/whoami/key', passport.authenticate(...bsc), (req, res) =>
-    Apikeys.whoami(req, res, tools)
-  )
-
-  // Remove Apikey
-  app.delete('/apikeys/:id/jwt', passport.authenticate(...jwt), (req, res) =>
-    Apikeys.delete(req, res, tools)
-  )
-  app.delete('/apikeys/:id/key', passport.authenticate(...bsc), (req, res) =>
-    Apikeys.delete(req, res, tools)
-  )
-*/
+// Get current API key
+apikeys['/whoami/key'] = {
+  get: {
+    tags: ['Whoami', ...common.tags],
+    security: [key],
+    summary: 'Retrieve the API key used in the request',
+    description:
+      'Retrieves information about the API key that ' +
+      'was used to authenticate the request.\n\n' +
+      '**Note:** _See `GET /whoami/jwt` for the JWT equivalent._',
+    responses: {
+      200: {
+        description:
+          '**Success - API key returned**\n\n' +
+          'Status code `200` indicates that the resource was returned successfully.',
+        content: {
+          'application/json': {
+            schema: {
+              type: 'object',
+              properties: {
+                result: {
+                  ...fields.result,
+                  example: 'success',
+                },
+                apikey: responseObjects.apikeyWithoutSecret,
+              },
+            },
+          },
+        },
+      },
+      401: localStatus['401'],
+      403: {
+        ...localStatus['403'],
+        description:
+          localStatus['403'].description +
+          errorExamples(['accountStatusLacking', 'insufficientAccessLevel']),
+      },
+      500: localStatus['500'],
+    },
+  },
+}
