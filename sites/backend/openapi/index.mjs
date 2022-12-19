@@ -1,5 +1,5 @@
 import pkg from '../package.json' assert { type: 'json' }
-import { apikeys } from './apikeys.mjs'
+import { paths as apikeyPaths, schemas as apikeySchemas } from './apikeys.mjs'
 
 const description = `
 ## What am I looking at?  🤔
@@ -39,9 +39,11 @@ export const openapi = {
         scheme: 'basic',
       },
     },
-    schemas: {},
+    schemas: {
+      ...apikeySchemas,
+    },
   },
   paths: {
-    ...apikeys,
+    ...apikeyPaths,
   },
 }
