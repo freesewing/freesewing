@@ -39,7 +39,7 @@ function teaganFront({
     cpBelow = points.hips.dy(points.waist) * 0.25
     points.waistCp1 = points.waist.shift(90, cpBelow*2/3 - cpAbove/3)
     points.waistCp2 = points.waist.shift(90, cpAbove*2/3 - cpBelow/3)
-    points.hipsCp2 = points.hips.shift(90,points.waist.dy(points.hips) * 0.45)
+    points.hipsCp2 = points.hips.shift(90,points.waist.dy(points.hips) * 0.3)
   } else {
     let width
     if (measurements.waist > measurements.hips)
@@ -151,6 +151,18 @@ function teaganFront({
       to: points.hem,
       y: points.hem.y + sa * 2.5 + 15,
     })
+    if (options.curveToWaist) {
+      macro('hd', {
+        from: points.waist,
+        to: points.hem,
+        y: points.hem.y + sa * 2.5 + 30
+      })
+      macro('vd', {
+        from: points.hem,
+        to: points.waist,
+        x: points.waist.x - 15,
+      })
+    }
     macro('vd', {
       from: points.hem,
       to: points.armhole,
@@ -215,7 +227,7 @@ export const front = {
     // Teagan specific
     draftForHighBust: { bool: false, menu: 'fit' },
     curveToWaist: { bool: false, menu: 'fit' },
-    waistEase: { pct: 15, min: 8, max: 30, menu: 'fit' },
+    waistEase: { pct: 25, min: 8, max: 40, menu: 'fit' },
     hipsEase: { pct: 18, min: 8, max: 30, menu: 'fit' },
     necklineDepth: { pct: 25, min: 20, max: 40, menu: 'style' },
     necklineWidth: { pct: 30, min: 10, max: 50, menu: 'style' },
