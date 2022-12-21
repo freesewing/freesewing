@@ -17,6 +17,7 @@ function teaganFront({
   macro,
   log,
   units,
+  getId,
   part,
 }) {
   // Hide Brian paths
@@ -181,7 +182,7 @@ function teaganFront({
       y: points.neck.y - sa - 45,
     })
     // These dimensions are only for the front
-    let id = part.getId()
+    let id = getId()
     macro('vd', {
       id,
       from: points.cfHem,
