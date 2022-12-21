@@ -1,8 +1,8 @@
 ---
 name: 🚀 Feature request
 description: Suggest an idea to make FreeSewing better
-title: "[feature]: "
-labels: [ "\U0001F48E enhancement" ]
+title: '[feature]: '
+labels: [':gem: enhancement']
 body:
   - type: markdown
     attributes:
@@ -10,20 +10,20 @@ body:
   - type: textarea
     id: desc
     attributes:
-      label: "What is it that you would like to see happen? 🤔"
+      label: 'What is it that you would like to see happen? 🤔'
       description: Please provide a clear and concise description of what you want to happen
       placeholder: |
         I would like to be able to export patterns as a Gitlab snippet, just like they can be exported as a Github gist
   - type: dropdown
     id: patron
     attributes:
-      label: Are you a FreeSewing patron? 😃 
-      description: "Patrons support us financially :pray: so they get priority"
+      label: Are you a FreeSewing patron? 😃
+      description: 'Patrons support us financially :pray: so they get priority'
       options:
-        - "Yes, I am a tier-2 patron ❤️"
-        - "Yes, I am a tier-4 patron ❤️  💙"
-        - "Yes, I am a tier-8 patron ❤️  💙 💜"
-        - "No, I am not 😞"
+        - 'Yes, I am a tier-2 patron ❤️'
+        - 'Yes, I am a tier-4 patron ❤️  💙'
+        - 'Yes, I am a tier-8 patron ❤️  💙 💜'
+        - 'No, I am not 😞'
     validations:
       required: true
   - type: textarea
@@ -36,3 +36,4 @@ body:
       value: |
         Please keep in mind that **FreeSewing is a community project** that depends on **[your support](https://freesewing.org/community/join/)**.
 ---
+
