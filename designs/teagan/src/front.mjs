@@ -40,6 +40,11 @@ function teaganFront({
     points.waistCp1 = points.waist.shift(90, cpBelow*2/3 - cpAbove/3)
     points.waistCp2 = points.waist.shift(90, cpAbove*2/3 - cpBelow/3)
     points.hipsCp2 = points.hips.shift(90,points.waist.dy(points.hips) * 0.3)
+    
+    // warn if we're making a barrel-shaped shirt
+    if (midWidth > lowerWidth) {
+      log.warning('width at waist exceeds width at hips; consider disabling the curve to waist option for a more standard shape')
+    }
   } else {
     let width
     if (measurements.waist > measurements.hips)
