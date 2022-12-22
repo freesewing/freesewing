@@ -71,8 +71,8 @@ plugins/*/yarn.lock
 # NPM lock files for sites (we use yarn)
 sites/*/package-lock.json
 
-# Strapi cache
-sites/strapi/.cache
+# Sanity cache
+sites/sanity/.sanity
 
 # Sites prebuild artifacts
 sites/*/public/locales/*/*.json
