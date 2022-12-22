@@ -5,7 +5,6 @@ layoutThing: 'Layout {thing}'
 pageSize: Page size
 startBySelectingAThing: 'Start by selecting a {thing}'
 testThing: 'Test {thing}'
-editView:
-  titleThing: 'Edit Pattern Configuration for {thing}'
-  error: Issues with YAML
-  errorDesc: We saved your input, but it might not work for the following reasons
+yamlEditViewTitleThing: 'Edit Pattern Configuration for {thing}'
+yamlEditViewError: Issues with YAML
+yamlEditViewErrorDesc: We saved your input, but it might not work for the following reasons

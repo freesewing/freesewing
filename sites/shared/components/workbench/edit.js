@@ -45,7 +45,10 @@ const Edit = (props) => {
       // parse back to json
       const editedAsJson = yaml.load(inputRef.current.value)
       // make it backwards compatible so that people can paste in the yaml export from org
-      // the yaml export from org is missing some of the settings that are needed in the gist, and what it does have is under 'settings', so we merge that stuff with the existing gist view state and the default settings to make sure all necessary keys are accounted for, but we're not keeping stuff that was supposed to be cleared
+      // the yaml export from org is missing some of the settings that are needed in the gist,
+      // and what it does have is under 'settings',  so we merge that stuff with the existing gist view state
+      // and the default settings to make sure all necessary keys are accounted for,
+      // but we're not keeping stuff that was supposed to be cleared
       const gistFromDefaults = { _state: gist._state }
       for (const d in defaultSettings) {
         gistFromDefaults[d] = gist[d] === undefined ? defaultSettings[d] : gist[d]
@@ -76,12 +79,12 @@ const Edit = (props) => {
   const designName = capitalize(props.design.designConfig.data.name.replace('@freesewing/', ''))
   return (
     <div className="max-w-screen-xl m-auto h-screen form-control">
-      <h2>{t('editView.titleThing', { thing: designName })}</h2>
+      <h2>{t('yamlEditViewTitleThing', { thing: designName })}</h2>
 
       {error ? (
         <Popout warning className="mb-4">
-          <h3> {t('editView.error')} </h3>
-          {success ? <p> {t('editView.errorDesc')}: </p> : null}
+          <h3> {t('yamlEditViewError')} </h3>
+          {success ? <p> {t('yamlEditViewErrorDesc')}: </p> : null}
           <pre
             className="language-json hljs text-base lg:text-lg whitespace-pre overflow-scroll pr-4"
             dangerouslySetInnerHTML={{ __html: error }}
