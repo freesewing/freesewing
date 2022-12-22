@@ -7,10 +7,11 @@ class GistValidator {
   errors
   valid = true
 
-  constructor(givenGist, design) {
+  setGist(givenGist, design) {
     this.givenGist = givenGist
     this.design = design
     this.errors = {}
+    this.valid = true
   }
 
   /** check that the settings all exist and are all of the right type */
@@ -97,8 +98,10 @@ class GistValidator {
   }
 }
 
+const validator = new GistValidator()
+
 /** make and run a gist validator */
 export default function validateGist(givenGist, design) {
-  const validator = new GistValidator(givenGist, design)
+  validator.setGist(givenGist, design)
   return validator.validate()
 }
