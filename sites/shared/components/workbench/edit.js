@@ -16,21 +16,19 @@ const Edit = (props) => {
   const inputRef = useRef(null)
   // the gist parsed to yaml
   const [gistAsYaml, setGistAsYaml] = useState(null)
-  // the number of lines in the yaml
-  const [numLines, setNumLines] = useState(0)
   // any errors as a json string
   const [error, setError] = useState(null)
   // success notifier
   const [success, setSuccess] = useState(null)
 
-  const { t } = useTranslation(['app'])
+  const { t } = useTranslation(['workbench'])
 
   // parse the current gist to yaml. this will also run when the gist gets set by input
   useEffect(() => {
     if (gistReady) {
       // get everything but the design because it's a function and can't be serialized
       // eslint-disable-next-line no-unused-vars
-      const { _design, ...gistRest } = gist
+      const { design, ...gistRest } = gist
       setGistAsYaml(yaml.dump(gistRest))
     }
   }, [gist, gistReady])
@@ -38,8 +36,6 @@ const Edit = (props) => {
   // set the line numbers when the yaml changes
   useEffect(() => {
     if (gistAsYaml) {
-      setNumLines(countLines(gistAsYaml))
-      // update the input value to reflect what's been saved
       inputRef.current.value = gistAsYaml
     }
   }, [gistAsYaml])
@@ -80,21 +76,15 @@ const Edit = (props) => {
     }
   }
 
-  /** count lines and reset the success alert */
-  const onKeyUp = (e) => {
-    setNumLines(countLines(e.target.value))
-    setSuccess(false)
-  }
-
   const designName = capitalize(props.design.designConfig.data.name.replace('@freesewing/', ''))
   return (
     <div className="max-w-screen-xl m-auto h-screen form-control">
-      <h2>{t('workbench:editThingTitle', { thing: designName })}</h2>
+      <h2>{t('editView.titleThing', { thing: designName })}</h2>
 
       {error ? (
         <Popout warning className="mb-4">
-          <h3> {t('editError')} </h3>
-          {success ? <p> {t('editErrorDesc')}: </p> : null}
+          <h3> {t('editView.error')} </h3>
+          {success ? <p> {t('editView.errorDesc')}: </p> : null}
           <pre
             className="language-json hljs text-base lg:text-lg whitespace-pre overflow-scroll pr-4"
             dangerouslySetInnerHTML={{ __html: error }}
@@ -108,29 +98,14 @@ const Edit = (props) => {
           </div>
         </div>
       ) : null}
-      <div
-        id="editor"
-        className="h-3/5 mb-8 overflow-auto p-1 outline-1 outline-primary outline focus-within:outline-primary-focus focus-within:outline-2 rounded"
-      >
-        <div className="font-mono flex gap-4 leading-7 text-lg items-stretch">
-          <div id="line-numbers" className="text-right p-4 pr-0 text-primary" aria-hidden>
-            {Array.from({ length: numLines }, (_, i) => (
-              <span className="block" key={i}>
-                {' '}
-                {i + 1}{' '}
-              </span>
-            ))}
-          </div>
-          <textarea
-            className="textarea focus:outline-none w-full p-4 leading-7 overflow-y-hidden resize-none text-lg"
-            name="gistAsYaml"
-            aria-label="Configuration in YAML format"
-            ref={inputRef}
-            defaultValue={gistAsYaml}
-            onKeyUp={onKeyUp}
-            onChange={onKeyUp}
-          />
-        </div>
+      <div id="editor" className="h-3/5 my-8">
+        <textarea
+          className="textarea textarea-primary w-full p-4 leading-7 text-lg h-full"
+          name="gistAsYaml"
+          aria-label="Configuration in YAML format"
+          ref={inputRef}
+          defaultValue={gistAsYaml}
+        />
       </div>
       <button className="btn btn-primary" onClick={onSave}>
         {' '}
