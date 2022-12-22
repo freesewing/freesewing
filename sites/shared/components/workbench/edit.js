@@ -6,9 +6,6 @@ import Popout from 'shared/components/popout.js'
 import { useTranslation } from 'next-i18next'
 import { capitalize } from '@freesewing/core'
 
-/** count the number of lines in some text */
-const countLines = (txt) => txt.split('\n').length
-
 /** a view for editing the gist as yaml */
 const Edit = (props) => {
   let { gist, setGist, gistReady } = props
