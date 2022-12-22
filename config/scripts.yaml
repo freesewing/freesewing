@@ -96,6 +96,6 @@ org:
   start: *nextStart
 
 sanity:
+  dev: 'sanity dev'
   start: 'sanity start'
-  test: 'sanity check'
   build: 'sanity build -y'
