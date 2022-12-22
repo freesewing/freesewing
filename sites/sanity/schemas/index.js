@@ -8,6 +8,7 @@ const languages = ['en', 'es', 'fr', 'nl', 'de']
 export const schemaTypes = [
   userimg,
   personimg,
+  newsletter,
   ...languages.map((lang) => blogSchemaBuilder(lang)),
   ...languages.map((lang) => showcaseSchemaBuilder(lang)),
 ]
