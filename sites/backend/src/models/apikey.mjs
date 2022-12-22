@@ -63,6 +63,7 @@ ApikeyModel.prototype.guardedRead = async function ({ params, user }) {
     apikey: {
       key: this.record.id,
       level: this.record.level,
+      createdAt: this.record.createdAt,
       expiresAt: this.record.expiresAt,
       name: this.record.name,
       userId: this.record.userId,
@@ -141,6 +142,7 @@ ApikeyModel.prototype.create = async function ({ body, user }) {
       key: this.record.id,
       secret,
       level: this.record.level,
+      createdAt: this.record.createdAt,
       expiresAt: this.record.expiresAt,
       name: this.record.name,
       userId: this.record.userId,

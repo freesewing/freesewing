@@ -265,7 +265,7 @@ UserModel.prototype.passwordLogin = async function (req) {
  * Confirms a user account
  */
 UserModel.prototype.confirm = async function ({ body, params }) {
-  if (!params.id) return this.setResponse(404, 'missingConfirmationId')
+  if (!params.id) return this.setResponse(404, 'confirmationIdMissing')
   if (Object.keys(body) < 1) return this.setResponse(400, 'postBodyMissing')
   if (!body.consent || typeof body.consent !== 'number' || body.consent < 1)
     return this.setResponse(400, 'consentRequired')
@@ -338,7 +338,7 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
   if (typeof body.bio === 'string') data.bio = body.bio
   // Consent
   if ([0, 1, 2, 3].includes(body.consent)) data.consent = body.consent
-  // Consent
+  // Control
   if ([1, 2, 3, 4, 5].includes(body.control)) data.control = body.control
   // Github
   if (typeof body.github === 'string') data.github = body.github.split('@').pop()
@@ -442,8 +442,8 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
 
   // Disable
   if (body.mfa === false) {
-    if (!body.token) return this.setResponse(400, 'mfaTokenRequired')
-    if (!body.password) return this.setResponse(400, 'passwordRequired')
+    if (!body.token) return this.setResponse(400, 'mfaTokenMissing')
+    if (!body.password) return this.setResponse(400, 'passwordMissing')
     // Check password
     const [valid] = verifyPassword(body.password, this.record.password)
     if (!valid) {
