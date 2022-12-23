@@ -52,7 +52,7 @@ export const patternTests = async (chai, config, expect, store) => {
           data[field] = val
           chai
             .request(config.api)
-            .put(`/patterns/${store.account.patterns[auth].id}/${auth}`)
+            .patch(`/patterns/${store.account.patterns[auth].id}/${auth}`)
             .set(
               'Authorization',
               auth === 'jwt'
@@ -76,7 +76,7 @@ export const patternTests = async (chai, config, expect, store) => {
       it(`${store.icon('person', auth)} Should update the public field (${auth})`, (done) => {
         chai
           .request(config.api)
-          .put(`/patterns/${store.account.patterns[auth].id}/${auth}`)
+          .patch(`/patterns/${store.account.patterns[auth].id}/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -99,7 +99,7 @@ export const patternTests = async (chai, config, expect, store) => {
       it(`${store.icon('person', auth)} Should not update the design field (${auth})`, (done) => {
         chai
           .request(config.api)
-          .put(`/patterns/${store.account.patterns[auth].id}/${auth}`)
+          .patch(`/patterns/${store.account.patterns[auth].id}/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -122,7 +122,7 @@ export const patternTests = async (chai, config, expect, store) => {
       it(`${store.icon('person', auth)} Should not update the person field (${auth})`, (done) => {
         chai
           .request(config.api)
-          .put(`/patterns/${store.account.patterns[auth].id}/${auth}`)
+          .patch(`/patterns/${store.account.patterns[auth].id}/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -148,7 +148,7 @@ export const patternTests = async (chai, config, expect, store) => {
           data[field] = { test: { value: 'hello' } }
           chai
             .request(config.api)
-            .put(`/patterns/${store.account.patterns[auth].id}/${auth}`)
+            .patch(`/patterns/${store.account.patterns[auth].id}/${auth}`)
             .set(
               'Authorization',
               auth === 'jwt'
@@ -222,7 +222,7 @@ export const patternTests = async (chai, config, expect, store) => {
       )} Should not allow updating another user's pattern (${auth})`, (done) => {
         chai
           .request(config.api)
-          .put(`/patterns/${store.account.patterns[auth].id}/${auth}`)
+          .patch(`/patterns/${store.account.patterns[auth].id}/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'

@@ -26,10 +26,10 @@ export function usersRoutes(tools) {
   )
 
   // Update account
-  app.put('/account/jwt', passport.authenticate(...jwt), (req, res) =>
+  app.patch('/account/jwt', passport.authenticate(...jwt), (req, res) =>
     Users.update(req, res, tools)
   )
-  app.put('/account/key', passport.authenticate(...bsc), (req, res) =>
+  app.patch('/account/key', passport.authenticate(...bsc), (req, res) =>
     Users.update(req, res, tools)
   )
 

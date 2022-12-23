@@ -79,7 +79,7 @@ export const userTests = async (chai, config, expect, store) => {
     step(`${store.icon('user')} Should set the password`, (done) => {
       chai
         .request(config.api)
-        .put('/account/jwt')
+        .patch('/account/jwt')
         .set('Authorization', 'Bearer ' + store.account.token)
         .send({
           password: store.account.password,
@@ -94,7 +94,7 @@ export const userTests = async (chai, config, expect, store) => {
     step(`${store.icon('user')} Should set the password (altaccount)`, (done) => {
       chai
         .request(config.api)
-        .put('/account/jwt')
+        .patch('/account/jwt')
         .set('Authorization', 'Bearer ' + store.altaccount.token)
         .send({
           password: store.altaccount.password,
