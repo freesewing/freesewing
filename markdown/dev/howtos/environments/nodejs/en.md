@@ -68,7 +68,7 @@ console.log(svg)
 - You probably want to [use your own measurements](/reference/settings/measurements)
   or you could use `@freesewing/models` to load measurements from [our sizing grid](https://freesewing.org/sizes/)
 - We are using `@freesewing/plugin-theme` to theme our SVG, but you
-  could [pass in your own CSS](/guides/plugins/using-hooks-without-plugin)
+  could [pass in your own CSS](/reference/api/svg/style)
 
 </Note>
 

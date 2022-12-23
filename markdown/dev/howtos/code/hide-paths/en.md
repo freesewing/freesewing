@@ -22,7 +22,7 @@ Do __not__ replace the `path` object:
 paths = {}
 ```
 
-as the `paths` object is more than a pojo (plain old javascript object)
+as the `paths` object is more than a pojo (plain old JavaScript object)
 </Warning>
 
 <Tip>

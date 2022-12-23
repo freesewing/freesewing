@@ -11,7 +11,7 @@ show you have to handle both below:
 ## Adding linebreaks to text
 
 To add linebreaks to text, you merely have to include them in your text.
-When doing so, keep in mind that single-quoted strings in Javascript
+When doing so, keep in mind that single-quoted strings in JavaScript
 will **not** pick up linebreaks.
 
 <Example caption="An example of whitespace in text">

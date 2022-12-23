@@ -1,5 +1,5 @@
 ---
-title: Working with frontmatter
+title: Working with Frontmatter
 ---
 
 Frontmatter is a way to add metadata to markdown documents.
