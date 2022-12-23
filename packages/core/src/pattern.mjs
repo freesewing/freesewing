@@ -172,6 +172,12 @@ Pattern.prototype.draftPartForSet = function (partName, set) {
       }
       return result
     } catch (err) {
+      // If the browser's JavaScript engine doesn't include the error's
+      // "name: message" string at the top of the stack, manually push it
+      // onto the stack so the information is shown in the error log.
+      if (!err.stack.startsWith(err.toString())) {
+        err.stack = err.toString() + '\n' + err.stack
+      }
       this.setStores[set].log.error([`Unable to draft part \`${partName}\` (set ${set})`, err])
     }
   } else
