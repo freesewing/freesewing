@@ -103,7 +103,6 @@ export const front = {
     let pocketSize = apronLength / 4
 
     store.set('bibWidth', bibWidth)
-    store.set('bibLength', bibLength)
     store.set('apronLength', apronLength)
     store.set('apronWidth', apronWidth)
     store.set('strapWidth', strapWidth)
