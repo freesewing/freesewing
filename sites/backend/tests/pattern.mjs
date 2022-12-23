@@ -32,7 +32,6 @@ export const patternTests = async (chai, config, expect, store) => {
             img: cat,
           })
           .end((err, res) => {
-            console.log(JSON.stringify(res.body, null, 2))
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(201)
             expect(res.body.result).to.equal(`success`)
@@ -40,7 +39,7 @@ export const patternTests = async (chai, config, expect, store) => {
             expect(res.body.pattern.userId).to.equal(store.account.id)
             expect(res.body.pattern.personId).to.equal(store.account.people.her.id)
             expect(res.body.pattern.design).to.equal('aaron')
-            expect(res.body.pattern.public).to.equal(false)
+            expect(res.body.pattern.public).to.equal(true)
             store.account.patterns[auth] = res.body.pattern
             done()
           })
@@ -68,7 +67,7 @@ export const patternTests = async (chai, config, expect, store) => {
               expect(err === null).to.equal(true)
               expect(res.status).to.equal(200)
               expect(res.body.result).to.equal(`success`)
-              expect(res.body.pattern[field]).to.equal('--_updated')
+              expect(res.body.pattern[field]).to.equal(val)
               done()
             })
         })
