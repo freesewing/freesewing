@@ -121,7 +121,7 @@ export const prebuildMdx = async (site) => {
       const slug = fileToSlug(file, site, lang)
       if (slug) {
         const meta = await mdxMetaInfo(file)
-        if (meta.data?.title && meta.data?.title) {
+        if (meta.data?.title) {
           pages[lang][slug] = {
             title: meta.data.title,
             slug,
