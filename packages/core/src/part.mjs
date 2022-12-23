@@ -85,9 +85,7 @@ Part.prototype.attr = function (name, value, overwrite = false) {
  * @return {string} id - A free ID to use
  */
 Part.prototype.getId = function (prefix = '') {
-  this.freeId += 1
-
-  return prefix + this.freeId
+  return this.__getIdClosure()(prefix)
 }
 
 /**
