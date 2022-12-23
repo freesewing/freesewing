@@ -44,11 +44,11 @@
     "wcibuild_step7": "node build.mjs"
   },
   "peerDependencies": {
-    "@freesewing/pattern-info": "^3.0.0-alpha.2"
+    "@freesewing/pattern-info": "3.0.0-alpha.2"
   },
   "dependencies": {},
   "devDependencies": {
-    "js-yaml": "^4.1.0"
+    "js-yaml": "4.1.0"
   },
   "files": [
     "dist/*",
