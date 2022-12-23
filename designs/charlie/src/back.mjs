@@ -16,18 +16,16 @@ function draftCharlieBack({
   sa,
   log,
   units,
+  utils,
   part,
 }) {
   // Helper method to draw the outseam path
   const drawOutseam = () => {
-    let outseam = new Path()
-      .move(points.styleWaistOut)
-      .curve(points.seatOut, points.kneeOutCp2, points.floorOut)
     return new Path()
       .move(points.slantOut)
       .line(points.slantCurveStart)
       .curve(points.slantCurveCp1, points.slantCurveCp2, points.slantCurveEnd)
-      .join(outseam.split(points.slantCurveEnd).pop())
+      .join(titanOutseam.split(points.slantCurveEnd).pop())
       .reverse()
   }
   /*
@@ -80,6 +78,11 @@ function draftCharlieBack({
   const titanOutseam = new Path()
     .move(points.styleWaistOut)
     .curve(points.seatOut, points.kneeOutCp2, points.floorOut)
+
+  // Helper object holding the inseam path
+  const backInseamPath = new Path()
+    .move(points.fork)
+    .curve(points.forkCp2, points.kneeInCp1, points.floorIn)
 
   // Keep the seat control point vertically between the (lowered) waist and seat line
   points.seatOutCp2.y = points.styleWaistOut.y + points.styleWaistOut.dy(points.seatOut) / 2
@@ -137,6 +140,28 @@ function draftCharlieBack({
     .close()
     .attr('class', 'fabric')
   paths.saBase.hide()
+
+  // Sanity check, to make sure inseams and outseams match front and back
+  const backInseamLength = backInseamPath.length()
+  const frontInseamLength = store.get('frontInseamLength')
+  const inseamDiff = frontInseamLength - backInseamLength
+  let inseamDesc = 'Charlie back inseam is longer than front'
+  if (inseamDiff > 0) inseamDesc = 'Charlie front inseam is longer than back'
+  if (Math.abs(inseamDiff) > 1) {
+    log.warning(inseamDesc + ' by ' + utils.round(Math.abs(inseamDiff)) + ' mm')
+    log.debug('Charlie frontInseam: ' + utils.round(frontInseamLength).toString())
+    log.debug('Charlie backInseam: ' + utils.round(backInseamLength).toString())
+  }
+  const backOutseamLength = drawOutseam().length()
+  const frontOutseamLength = store.get('frontOutseamLength')
+  const outseamDiff = frontOutseamLength - backOutseamLength
+  let outseamDesc = 'Charlie back outseam is longer than front'
+  if (outseamDiff > 0) outseamDesc = 'Charlie front outseam is longer than back'
+  if (Math.abs(outseamDiff) > 1) {
+    log.warning(outseamDesc + ' by ' + utils.round(Math.abs(outseamDiff)) + ' mm')
+    log.debug('Charlie frontOutseam: ' + utils.round(frontOutseamLength).toString())
+    log.debug('Charlie backOutseam: ' + utils.round(backOutseamLength).toString())
+  }
 
   if (complete) {
     paths.pocketLine = new Path()
