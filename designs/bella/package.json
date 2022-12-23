@@ -46,13 +46,13 @@
     "wcibuild_step3": "node build.mjs"
   },
   "peerDependencies": {
-    "@freesewing/core": "^3.0.0-alpha.2",
-    "@freesewing/plugin-bundle": "^3.0.0-alpha.2"
+    "@freesewing/core": "3.0.0-alpha.2",
+    "@freesewing/plugin-bundle": "3.0.0-alpha.2"
   },
   "dependencies": {},
   "devDependencies": {
-    "mocha": "^10.0.0",
-    "chai": "^4.2.0"
+    "mocha": "10.0.0",
+    "chai": "4.2.0"
   },
   "files": [
     "dist/*",
