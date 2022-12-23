@@ -1,5 +1,5 @@
 ---
-title: About frontmatter
+title: About Frontmatter
 order: 10
 ---
 

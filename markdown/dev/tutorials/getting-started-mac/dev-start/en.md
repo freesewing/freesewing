@@ -31,7 +31,7 @@ yarn new design
 Just make sure to re-start the lab afterwards with `yarn lab`
 </Tip>
 
-## Standalone development
+## Stand-alone development
 
 You will have a new folder that has the name you picked for your design.
 If you chose `test`, you will have a folder named `test`.

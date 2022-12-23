@@ -7,7 +7,9 @@ make sure to draft all of a part's dependencies before drafting the part
 itself.
 
 <Warning compact>
-Do not confuse this with [part inheritance](/howtos/code/from).
+Even though inherited parts are automatically included in a part's dependencies,
+do not confuse part dependencies with [part inheritance](/howtos/code/from).
+
 </Warning>
 
 Part dependencies are configured with [the `after`

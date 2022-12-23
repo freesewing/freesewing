@@ -2,9 +2,9 @@
 title: FreeSewing in the browser
 ---
 
-Thanks to the advances in browser standardisation around Javascrip
+Thanks to the advances in browser standardisation around JavaScript
 ESM modules, not to mention [the new Skypack CDN](https://www.skypack.dev/),
-you can generate patterns in the browser with a few lines of Javascript.
+you can generate patterns in the browser with a few lines of JavaScript.
 
 <Tip>
 
