@@ -1,6 +1,5 @@
 ---
 title: Naming parts
-linktitle: name
 ---
 
 The `name` property is  -- together with [the `draft()` 

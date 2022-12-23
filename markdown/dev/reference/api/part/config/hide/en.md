@@ -1,6 +1,5 @@
 ---
 title: Hiding parts
-linktitle: hide, hideDependencies, hideAll
 ---
 
 The `hide`, `hideDependencies`, and `hideAll` properties on the
