@@ -1,11 +1,11 @@
-import PatternDocs from './pattern-docs.js'
-import PatternOptions from './pattern-options.js'
-import PatternMeasurements from './pattern-measurements.js'
+//import PatternDocs from './pattern-docs.js'
+//import PatternOptions from './pattern-options.js'
+//import PatternMeasurements from './pattern-measurements.js'
 
 const components = {
-  PatternDocs,
-  PatternOptions,
-  PatternMeasurements,
+  //PatternDocs,
+  //PatternOptions,
+  //PatternMeasurements,
 }
 
 export default components
