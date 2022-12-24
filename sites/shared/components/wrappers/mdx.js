@@ -22,7 +22,8 @@ const MdxWrapper = ({ mdx, app, t, components = {} }) => {
 
   useEffect(() => {
     ;(async () => {
-      setMdxModule(await run(mdx, runtime))
+      // Workaround for issue introduced in MDX 2.2
+      setMdxModule(await run(mdx, { ...runtime, jsxDEV: runtime.jsx }))
     })()
   }, [mdx])
 
