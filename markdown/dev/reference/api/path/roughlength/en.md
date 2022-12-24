@@ -46,5 +46,5 @@ Number path.roughLength()
 
 The `Path.roughLength()` is not intended to give an estimate that is accurate, but rather differentiates between paths that are a few millimeter long, or meters long.
 
-It calculates the length without *walking the (cubic) Bezier curve* making it very fast and very inaccurate (for curves).
+It calculates the length without *walking the (cubic) Bézier curve* making it very fast and very inaccurate (for curves).
 It is typically used to determine how much precision to apply when walking a curve.

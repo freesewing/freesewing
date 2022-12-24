@@ -2,7 +2,9 @@
 title: utils.curveEdge()
 ---
 
-The `utils.curveEdge()` function finds the edge of a cubic Bezier curve, given the curve, the edge to find ("top", "bottom", "left", or "right"), and the number of steps to divide the curve into while walking it.
+The `utils.curveEdge()` function finds the edge of a cubic Bézier curve,
+given the curve, the edge to find ("top", "bottom", "left", or "right"),
+and the number of steps to divide the curve into while walking it.
 
 ## Signature
 

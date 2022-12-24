@@ -2,7 +2,7 @@
 title: Path.curve()
 ---
 
-The `Path.curve()` method draws a cubic Bezier curve from the current position 
+The `Path.curve()` method draws a cubic Bézier curve from the current position
 via two control points to a given endpoint.
 
 ## Signature
