@@ -11,22 +11,6 @@ export function PatternModel(tools) {
 
   return this
 }
-/*
-  id        Int      @id @default(autoincrement())
-  createdAt DateTime @default(now())
-  data      String
-  design    String
-  img       String?
-  person    Person?  @relation(fields: [personId], references: [id])
-  personId  Int?
-  name      String   @default("")
-  notes     String
-  public
-  settings  String
-  user      User     @relation(fields: [userId], references: [id])
-  userId    Int
-  updatedAt DateTime @updatedAt
-  */
 
 PatternModel.prototype.guardedCreate = async function ({ body, user }) {
   if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')

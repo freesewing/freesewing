@@ -80,6 +80,9 @@ const baseConfig = {
     },
     base: 'user',
   },
+  tests: {
+    domain: process.env.BACKEND_TEST_DOMAIN || 'freesewing.dev',
+  },
   website: {
     domain: process.env.BACKEND_WEBSITE_DOMAIN || 'freesewing.org',
     scheme: process.env.BACKEND_WEBSITE_SCHEME || 'https',
@@ -122,12 +125,6 @@ if (baseConfig.use.github)
       },
       dflt: [process.env.BACKEND_GITHUB_NOTIFY_DEFAULT_USER || 'joostdecock'],
     },
-  }
-
-// Unit test config
-if (baseConfig.use.tests.base)
-  baseConfig.tests = {
-    domain: process.env.BACKEND_TEST_DOMAIN || 'freesewing.dev',
   }
 
 // Sanity config

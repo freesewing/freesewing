@@ -71,7 +71,7 @@ export const personTests = async (chai, config, expect, store) => {
           data[field] = val
           chai
             .request(config.api)
-            .put(`/people/${store.person[auth].id}/${auth}`)
+            .patch(`/people/${store.person[auth].id}/${auth}`)
             .set(
               'Authorization',
               auth === 'jwt'
@@ -99,7 +99,7 @@ export const personTests = async (chai, config, expect, store) => {
           data[field] = val
           chai
             .request(config.api)
-            .put(`/people/${store.person[auth].id}/${auth}`)
+            .patch(`/people/${store.person[auth].id}/${auth}`)
             .set(
               'Authorization',
               auth === 'jwt'
@@ -131,7 +131,7 @@ export const personTests = async (chai, config, expect, store) => {
           data.measies[field] = val
           chai
             .request(config.api)
-            .put(`/people/${store.person[auth].id}/${auth}`)
+            .patch(`/people/${store.person[auth].id}/${auth}`)
             .set(
               'Authorization',
               auth === 'jwt'
@@ -158,7 +158,7 @@ export const personTests = async (chai, config, expect, store) => {
       )} Should not set an non-existing measurement (${auth})`, (done) => {
         chai
           .request(config.api)
-          .put(`/people/${store.person[auth].id}/${auth}`)
+          .patch(`/people/${store.person[auth].id}/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -187,7 +187,7 @@ export const personTests = async (chai, config, expect, store) => {
       it(`${store.icon('person', auth)} Should clear a measurement (${auth})`, (done) => {
         chai
           .request(config.api)
-          .put(`/people/${store.person[auth].id}/${auth}`)
+          .patch(`/people/${store.person[auth].id}/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -264,7 +264,7 @@ export const personTests = async (chai, config, expect, store) => {
       )} Should not allow updating another user's person (${auth})`, (done) => {
         chai
           .request(config.api)
-          .put(`/people/${store.person[auth].id}/${auth}`)
+          .patch(`/people/${store.person[auth].id}/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'

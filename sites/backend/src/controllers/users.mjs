@@ -78,3 +78,23 @@ UsersController.prototype.updateMfa = async (req, res, tools) => {
 
   return User.sendResponse(res)
 }
+
+/*
+ * Checks whether a submitted username is available
+ *
+ * See: https://freesewing.dev/reference/backend/api
+ */
+UsersController.prototype.isUsernameAvailable = async (req, res, tools) => {
+  const User = new UserModel(tools)
+  await User.find(req.body)
+
+  if (User.exists)
+    User.setResponse(200, false, {
+      result: 'success',
+      username: req.body?.username,
+      available: false,
+    })
+  else User.setResponse(404)
+
+  return User.sendResponse(res)
+}
