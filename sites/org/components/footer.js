@@ -107,19 +107,21 @@ const Footer = ({ app }) => {
         <div className="lg:col-span-2 -order-2 2xl:order-2 px-4 lg:px-0">
           {/* Social icons */}
           <div className="w-full sm:w-auto flex flex-row flex-wrap gap-4 lg:gap-8 items-center justify-center">
-            <Link href="/contact">
-              <a
-                className="hover:text-secondary hover:-mt-2 transition-all"
-                title="Contact information"
-              >
-                <HelpIcon {...icon} />
-              </a>
+            <Link
+              href="/contact"
+              className="hover:text-secondary hover:-mt-2 transition-all"
+              title="Contact information"
+            >
+              <HelpIcon {...icon} />
             </Link>
             {Object.keys(social).map((item) => (
-              <Link key={item} href={social[item].href}>
-                <a className="hover:text-secondary hover:-mt-2 transition-all" title={item}>
-                  {social[item].icon}
-                </a>
+              <Link
+                key={item}
+                href={social[item].href}
+                className="hover:text-secondary hover:-mt-2 transition-all"
+                title={item}
+              >
+                {social[item].icon}
               </Link>
             ))}
           </div>
