@@ -1,4 +1,4 @@
-const config = {
+export const freeSewingConfig = {
   algolia: {
     app: 'MA0Y5A2PF0', // Application ID
     index: 'canary_freesewing.dev',
@@ -6,5 +6,3 @@ const config = {
   },
   monorepo: 'https://github.com/freesewing/freesewing',
 }
-
-export default config
