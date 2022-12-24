@@ -162,7 +162,7 @@ paths['/whoami/key'] = {
     responses: {
       200: paths['/apikeys/{key}/{auth}'].get.responses['200'],
       401: response.status['401'],
-      200: paths['/apikeys/{key}/{auth}'].get.responses['403'],
+      403: paths['/apikeys/{key}/{auth}'].get.responses['403'],
       500: response.status['500'],
     },
   },
