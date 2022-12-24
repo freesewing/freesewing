@@ -514,3 +514,52 @@ paths['/users/{username}'] = {
     },
   },
 }
+
+// Check whether a username is available
+const checkUsername = "Little Miss Can't Be Wrong"
+paths['/available/username'] = {
+  post: {
+    tags: ['Users'],
+    summary: `Checks whether a username is available`,
+    description:
+      'This allows a background check to see whether a username is available during signup',
+    requestBody: {
+      required: true,
+      content: {
+        'application/json': {
+          schema: {
+            type: 'object',
+            properties: {
+              username: {
+                type: 'string',
+                description: 'The username to check for availability',
+                example: checkUsername,
+              },
+            },
+          },
+        },
+      },
+    },
+    responses: {
+      200: {
+        description:
+          '**Success - Username is NOT available**\n\n' +
+          'Status code `200` indicates that the username exists.',
+        ...jsonResponse({
+          result: 'success',
+          username: checkUsername,
+          available: false,
+        }),
+      },
+      401: response.status['401'],
+      403: {
+        ...response.status['403'],
+        description:
+          response.status['403'].description +
+          errorExamples(['accountStatusLacking', 'insufficientAccessLevel']),
+      },
+      404: response.status['404'],
+      500: response.status['500'],
+    },
+  },
+}

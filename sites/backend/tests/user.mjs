@@ -258,4 +258,36 @@ export const userTests = async (chai, config, expect, store) => {
         })
     })
   })
+
+  describe(`${store.icon('user')} Check for available usernames`, () => {
+    it(`${store.icon('user')} Should find a username is available`, (done) => {
+      chai
+        .request(config.api)
+        .post(`/available/username`)
+        .send({
+          username: 'haochi',
+        })
+        .end((err, res) => {
+          expect(err === null).to.equal(true)
+          expect(res.status).to.equal(404)
+          done()
+        })
+    })
+    it(`${store.icon('user')} Should find a username is not available`, (done) => {
+      chai
+        .request(config.api)
+        .post(`/available/username`)
+        .send({
+          username: store.account.username,
+        })
+        .end((err, res) => {
+          expect(err === null).to.equal(true)
+          expect(res.status).to.equal(200)
+          expect(res.body.result).to.equal('success')
+          expect(res.body.available).to.equal(false)
+          expect(res.body.username).to.equal(store.account.username)
+          done()
+        })
+    })
+  })
 }

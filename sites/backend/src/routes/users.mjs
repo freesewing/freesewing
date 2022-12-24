@@ -40,6 +40,10 @@ export function usersRoutes(tools) {
   app.post('/account/mfa/key', passport.authenticate(...bsc), (req, res) =>
     Users.updateMfa(req, res, tools)
   )
+
+  // Check whether a username is available
+  app.post('/available/username', (req, res) => Users.isUsernameAvailable(req, res, tools))
+
   /*
 
   // Remove account
@@ -95,11 +99,5 @@ export function usersRoutes(tools) {
     (req, res) => User.readProfile(req, res, params)
   )
 
-  // Check whether a username is available
-  app.post(
-    '/available/username',
-    passport.authenticate('jwt', { session: false }),
-    (req, res) => User.isUsernameAvailable(req, res, params)
-  )
   */
 }

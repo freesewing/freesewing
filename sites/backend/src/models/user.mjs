@@ -265,7 +265,7 @@ UserModel.prototype.passwordLogin = async function (req) {
  * Confirms a user account
  */
 UserModel.prototype.confirm = async function ({ body, params }) {
-  if (!params.id) return this.setResponse(404, 'confirmationIdMissing')
+  if (!params.id) return this.setResponse(404)
   if (Object.keys(body) < 1) return this.setResponse(400, 'postBodyMissing')
   if (!body.consent || typeof body.consent !== 'number' || body.consent < 1)
     return this.setResponse(400, 'consentRequired')
@@ -275,20 +275,18 @@ UserModel.prototype.confirm = async function ({ body, params }) {
 
   if (!this.Confirmation.exists) {
     log.warn(err, `Could not find confirmation id ${params.id}`)
-    return this.setResponse(404, 'failedToFindConfirmationId')
+    return this.setResponse(404)
   }
 
   if (this.Confirmation.record.type !== 'signup') {
     log.warn(err, `Confirmation mismatch; ${params.id} is not a signup id`)
-    return this.setResponse(404, 'confirmationIdTypeMismatch')
+    return this.setResponse(404)
   }
 
   if (this.error) return this
   const data = this.Confirmation.clear.data
-  if (data.ehash !== this.Confirmation.record.user.ehash)
-    return this.setResponse(404, 'confirmationEhashMismatch')
-  if (data.id !== this.Confirmation.record.user.id)
-    return this.setResponse(404, 'confirmationUserIdMismatch')
+  if (data.ehash !== this.Confirmation.record.user.ehash) return this.setResponse(404)
+  if (data.id !== this.Confirmation.record.user.id) return this.setResponse(404)
 
   // Load user
   await this.read({ id: this.Confirmation.record.user.id })
@@ -404,12 +402,12 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
 
     if (!this.Confirmation.exists) {
       log.warn(err, `Could not find confirmation id ${params.id}`)
-      return this.setResponse(404, 'failedToFindConfirmationId')
+      return this.setResponse(404)
     }
 
     if (this.Confirmation.record.type !== 'emailchange') {
       log.warn(err, `Confirmation mismatch; ${params.id} is not an emailchange id`)
-      return this.setResponse(404, 'confirmationIdTypeMismatch')
+      return this.setResponse(404)
     }
 
     const data = this.Confirmation.clear.data
@@ -570,6 +568,7 @@ UserModel.prototype.setResponse = function (status = 200, error = false, data = 
     this.response.body.result = 'error'
     this.error = true
   } else this.error = false
+  if (status === 404) this.response.body = null
 
   return this.setExists()
 }

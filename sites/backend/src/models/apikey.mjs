@@ -52,7 +52,7 @@ ApikeyModel.prototype.guardedRead = async function ({ params, user }) {
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   await this.unguardedRead({ id: params.id })
-  if (!this.record) return this.setResponse(404, 'apikeyNotFound')
+  if (!this.record) return this.setResponse(404)
 
   if (this.record.userId !== user.uid) {
     // Not own key - only admin can do that
@@ -76,7 +76,7 @@ ApikeyModel.prototype.guardedDelete = async function ({ params, user }) {
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   await this.unguardedRead({ id: params.id })
-  if (!this.record) return this.setResponse(404, 'apikeyNotFound')
+  if (!this.record) return this.setResponse(404)
 
   if (this.record.userId !== user.uid) {
     // Not own key - only admin can do that
