@@ -41,7 +41,7 @@ module.exports = {
   // base-100: The default background color for a regular page (docs and so on)
   'base-100': colors.neutral['50'],
   // base-200: A slightly darker background color, used for hovers and so on
-  'base-200': colors.neutral['200'],
+  'base-200': colors.neutral['100'],
   // base-300: A shade midway between dark and light
   'base-300': colors.neutral['500'],
   // base-content: The default text color for a regular page (docs and so on)

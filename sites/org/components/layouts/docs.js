@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 // Shared components
-import Aside from 'shared/components/navigation/aside'
+import Aside from 'site/components/navigation/aside'
 import ThemePicker from 'shared/components/theme-picker'
 import Breadcrumbs from 'shared/components/breadcrumbs.js'
 
@@ -10,9 +10,19 @@ const DefaultLayout = ({ app, title = false, crumbs = false, children = [] }) =>
   const breadcrumbs = crumbs ? crumbs : null //FIXME getCrumbs(app, slug, title)
 
   return (
-    <div className="m-auto flex flex-row justify-center">
-      <Aside app={app} slug={slug} before={<ThemePicker app={app} className="block sm:hidden" />} />
-      <section className="py-28 md:py-36 max-w-7xl px-6 xl:pl-8 2xl:pl-16">
+    <div className="m-auto flex flex-row justify-start">
+      <section
+        className={`
+        w-1/3 flex flex-row justify-end
+        border-0 py-20
+        md:px-4 md:py-12
+        bg-base-200
+        md:border-r md:border-base-300
+        `}
+      >
+        <Aside app={app} slug={slug} />
+      </section>
+      <section className="py-8 md:py-24 px-6 xl:pl-8 2xl:pl-16">
         <div>
           {title && (
             <>

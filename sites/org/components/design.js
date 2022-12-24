@@ -71,7 +71,7 @@ const Design = ({ design }) => {
       {/* Link over the entire card */}
       <Link href={`/designs/${design}`}>
         {' '}
-        className="absolute top-0 right-0 w-full h-full" title={t(`${design}.t`)} />
+        className="absolute top-0 right-0 w-full h-full" title={t(`${design}.t`)} >
       </Link>
       {/* Slanted corner ribbon with the difficulty */}
       <div className="absolute top-0 right-0">

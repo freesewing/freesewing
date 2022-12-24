@@ -5,7 +5,7 @@ module.exports = {
     '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
 
   'base-100': colors.neutral['900'],
-  'base-200': colors.neutral['700'],
+  'base-200': colors.neutral['800'],
   'base-300': colors.neutral['600'],
   'base-content': colors.neutral['300'],
 
