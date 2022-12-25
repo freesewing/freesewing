@@ -14,8 +14,7 @@ const TocWrapper = ({ toc, app }) => {
 
   useEffect(() => {
     ;(async () => {
-      // Workaround for issue introduced in MDX 2.2
-      setMdxModule(await run(toc, { ...runtime, jsxDEV: runtime.jsx }))
+      setMdxModule(await run(toc, runtime))
     })()
   }, [toc])
 
