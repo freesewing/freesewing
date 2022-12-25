@@ -24,20 +24,12 @@ import frontmatter from 'front-matter'
  *
  */
 const mdxCompiler = async (md) => {
-
   const intro = []
   const mdx = String(
     await compile(md, {
       outputFormat: 'function-body',
-      remarkPlugins: [
-        remarkFrontmatter,
-        remarkGfm,
-        smartypants,
-        [
-          remarkIntroPlugin,
-          { intro }
-        ]
-      ],
+      development: false,
+      remarkPlugins: [remarkFrontmatter, remarkGfm, smartypants, [remarkIntroPlugin, { intro }]],
       rehypePlugins: [
         [rehypeHighlight, { plainText: ['dot', 'http'] }],
         rehypeSlug,
@@ -51,15 +43,9 @@ const mdxCompiler = async (md) => {
   const toc = String(
     await compile(md, {
       outputFormat: 'function-body',
-      remarkPlugins: [
-        remarkFrontmatter,
-        remarkGfm,
-        smartypants,
-        mdxPluginToc,
-      ],
-      rehypePlugins: [
-        rehypeSlug,
-      ],
+      development: false,
+      remarkPlugins: [remarkFrontmatter, remarkGfm, smartypants, mdxPluginToc],
+      rehypePlugins: [rehypeSlug],
     })
   )
 

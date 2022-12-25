@@ -51,6 +51,7 @@ const mdxLoader = async (language, site, slug, jargon) => {
   const mdx = String(
     await compile(md, {
       outputFormat: 'function-body',
+      development: false,
       remarkPlugins: [
         remarkFrontmatter,
         remarkGfm,
@@ -126,6 +127,7 @@ const mdxLoader = async (language, site, slug, jargon) => {
   const toc = String(
     await compile(md, {
       outputFormat: 'function-body',
+      development: false,
       remarkPlugins: [remarkFrontmatter, remarkGfm, smartypants, [mdxPluginToc, { language }]],
       rehypePlugins: [rehypeSlug],
     })

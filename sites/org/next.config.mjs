@@ -1,34 +1,21 @@
-import path from 'path'
-import { readdirSync } from 'fs'
+import configBuilder from '../shared/config/next.mjs'
 import i18nConfig from './next-i18next.config.js'
+import { banner } from '../../scripts/banner.mjs'
+import withBundleAnalyzer from '@next/bundle-analyzer'
 
-const getDirectories = (source) =>
-  readdirSync(source, { withFileTypes: true })
-    .filter((dirent) => dirent.isDirectory())
-    .map((dirent) => dirent.name)
+let config = configBuilder('org')
+config.i18n = i18nConfig.i18n
 
-const pkgs = getDirectories(path.resolve(`../`))
+// Say hi
+console.log(banner + '\n')
 
-const config = {
-  experimental: {
-    externalDir: true,
-  },
-  i18n: i18nConfig.i18n,
-  pageExtensions: ['js', 'mjs'],
-  webpack: (config, options) => {
-    // Aliases
-    config.resolve.alias.shared = path.resolve('../shared/')
-    config.resolve.alias.site = path.resolve(`.`)
-    config.resolve.alias.pkgs = path.resolve(`../../packages/`)
-
-    // This forces webpack to load the code from source, rather than compiled bundle
-    for (const pkg of pkgs) {
-      config.resolve.alias[`@freesewing/${pkg}$`] = path.resolve(
-        `../../packages/${pkg}/src/index.js`
-      )
-    }
-
-    return config
-  },
+config.eslint = {
+  // Ignore linter for now
+  ignoreDuringBuilds: true,
 }
+
+// To run the bundle analyzer, run:
+// ANALYZE=true yarn build
+if (process.env.ANALYZE) config = withBundleAnalyzer(config)(config)
+
 export default config
