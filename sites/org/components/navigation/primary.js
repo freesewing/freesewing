@@ -174,7 +174,7 @@ const SubLevel = ({ nodes = {}, active }) => (
 )
 
 // Component that renders a toplevel of navigation
-const TopLevel = ({ icon, title, nav, current, slug, hasChildren = false, active }) => (
+const TopLevel = ({ icon, title, current, slug, hasChildren = false, active }) => (
   <details className="py-1" open={keepClosed.indexOf(current.__slug) === -1 ? 1 : 0}>
     <summary
       className={`
@@ -229,7 +229,6 @@ const Navigation = ({ app, active, className = '' }) => {
 
 export const Icons = ({
   app,
-  active,
   ulClasses = '',
   liClasses = '',
   linkClasses = `grow text-lg lg:text-xl py-1 text-base-content sm:text-base-content

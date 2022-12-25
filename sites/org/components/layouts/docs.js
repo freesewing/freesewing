@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router'
 // Shared components
 import Aside from 'site/components/navigation/aside'
-import ThemePicker from 'shared/components/theme-picker'
 import Breadcrumbs from 'shared/components/breadcrumbs.js'
 
 const DefaultLayout = ({ app, title = false, crumbs = false, children = [] }) => {
