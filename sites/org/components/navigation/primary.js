@@ -95,7 +95,7 @@ const SubLevel = ({ nodes = {}, active }) => (
             `}
             >
               <Link
-                href={`${child.__slug}`}
+                href={'/' + `${child.__slug}`}
                 title={child.__title}
                 className={`
                   grow pl-2 border-l-2
@@ -135,7 +135,7 @@ const SubLevel = ({ nodes = {}, active }) => (
       ) : (
         <li className="pl-2 flex flex-row items-center" key={child.__slug}>
           <Link
-            href={`${child.__slug}`}
+            href={'/' + `${child.__slug}`}
             title={child.__title}
             className={`
               pl-2 border-l-2
@@ -188,7 +188,7 @@ const TopLevel = ({ icon, title, current, slug, hasChildren = false, active }) =
     >
       <span className="text-secondary">{icon}</span>
       <Link
-        href={`${slug}`}
+        href={'/' + `${slug}`}
         className={`
           grow ${linkClasses} hover:cursor-pointer
           ${slug === active ? 'text-secondary sm:text-secondary' : ''}`}
