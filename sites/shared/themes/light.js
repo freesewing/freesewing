@@ -48,9 +48,9 @@ module.exports = {
   'base-content': colors.neutral['700'],
 
   // primary: The main brand color and color of the primary button
-  primary: colors.violet['500'],
+  primary: colors.violet['600'],
   // primary-focus: The :hover color for the primary button
-  'primary-focus': colors.violet['600'],
+  'primary-focus': colors.violet['500'],
   // primary-content: The text color on a primary button
   'primary-content': colors.neutral['50'],
 
@@ -64,11 +64,11 @@ module.exports = {
 
   // accent: The accent color is used to highlight active things
   // Should be something is positive/neutral. Avoid red or orange.
-  accent: colors.pink['400'],
+  accent: colors.fuchsia['500'],
   // accent-focus: The :hover color for the accent button
-  'accent-focus': colors.pink['300'],
+  'accent-focus': colors.fuchsia['400'],
   // accent-content: The text color for the accent button
-  'accent-content': colors.pink['50'],
+  'accent-content': colors.fuchsia['50'],
 
   // neutral: Used as the background for the footer and navigation on desktop
   // Should always be dark
