@@ -20,7 +20,7 @@ Point point.shiftOutwards(Point target, float distance)
   points.A = new Point(90, 70).setText("Point A", "text-sm right")
   points.B = new Point(10, 10).setText("Point B", "text-sm")
   points.C = points.A.shiftOutwards(points.B, 30)
-    .setText("Point C is point A shifted 3cm\nbeyond point B", "text-sm")
+    .setText("Point C is point A shifted 3 cm\nbeyond point B", "text-sm")
     .attr("data-text-lineheight", 6)
   
   paths.direction = new Path()

@@ -66,7 +66,7 @@ export default function (part) {
     // If we're short, increase the tweak factor
     else tweak = tweak * 1.02 
   } while (Math.abs(delta) > 2 && runs < 25) 
-  // Keep doing this until we're off by less than 2mm or we tried 25 times
+  // Keep doing this until we're off by less than 2 mm or we tried 25 times
 ```
 
 A few things that are important:

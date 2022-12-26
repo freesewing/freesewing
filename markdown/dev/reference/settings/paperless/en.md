@@ -41,4 +41,4 @@ and omit them if set to `false`.
 
 The `paperless` setting does automatically cause the grid to be included.
 
-Setting `paperless` to `true` will also cause the [margin](/reference/settings/margin) to not go below 10mm.
+Setting `paperless` to `true` will also cause the [margin](/reference/settings/margin) to not go below 10 mm.
