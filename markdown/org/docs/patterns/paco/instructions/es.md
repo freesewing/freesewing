@@ -38,7 +38,6 @@ nunca has hecho pockets de soldadura antes, estarás bien.
 
 </Tip>
 
-
 ## Paso 2: Prepara los pockets frontales
 
 Your pockets are cut from a lining material, which can save on weight and bulk, but also means that you'll want to hide them a little bit inside the side seam, so the lining doesn't show. The flap along the outside seam of each leg is for just this purpose.
