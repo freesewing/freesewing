@@ -15,7 +15,7 @@ import customComponents from 'shared/components/mdx'
 // Previous-Next navigation
 import PrevNext from '../mdx/prev-next'
 
-const Null = (props) => null
+const Null = () => null
 
 const MdxWrapper = ({ mdx, app, t, components = {} }) => {
   const [mdxModule, setMdxModule] = useState()

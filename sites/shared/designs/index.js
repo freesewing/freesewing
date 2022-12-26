@@ -91,7 +91,6 @@ export const designs = {
   sven,
   tamiko,
   teagan,
-  theo,
   tiberius,
   ursula,
   wahid,
