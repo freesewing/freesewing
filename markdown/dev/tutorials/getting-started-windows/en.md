@@ -102,7 +102,7 @@ design shortcoming it does not respect certain editorconfig options which will
 break certain files in the freesewing project ([see vscode/65663 for
 details](https://github.com/microsoft/vscode/issues/65663)). If you use this
 editor please ensure that your settings.json file is configured to not trim
-trailing whitespace from markdown files. The following snippet can be added to
+trailing whitespace from Markdown files. The following snippet can be added to
 your settings.json file to add an exemption for this file type:
 
 ```json 
