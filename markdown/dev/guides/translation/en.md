@@ -2,7 +2,7 @@
 title: Translation guide
 ---
 
-Freesewing.org is proudly multilingual, and we currently support five languges.
+FreeSewing is proudly multilingual, and we currently support five languages.
 For this, we rely on the work of our translators who volunteer their
 time to translate FreeSewing into various languages from English, which
 is our source language.
@@ -60,7 +60,7 @@ If you'd like to help out, please join our translation team on Crowdin.
 
 While it can be nice to have blog and showcase posts translated, these are less important than the
 translation work in Crowdin which is about the documentation and strings that allow people to
-use FreeSewing.org in a different language.
+use FreeSewing in a different language.
 
 </Tip>
 
@@ -69,30 +69,30 @@ use FreeSewing.org in a different language.
 Most translation happens in Crowdin ([crowdin.com](https://crowdin.com/)), an online translation platform
 that makes translation and collaboration a breeze.
 
-In Crowdin, all text is broken up into lines, words or paragraphs, that are than translated.
-This does not only facilitate collaboration — as rather than work on one large block of text
-various people can jump in and translate smaller snippets — it also enforces a strict one-on-one
+In Crowdin, all text is broken up into lines, words, or paragraphs that are then translated.
+This not only facilitates collaboration — as rather than work on one large block of text,
+various people can jump in and translate smaller snippets — it also enforces a strict one-to-one
 match between the English source material and the translation.
 
 This strict correlation is important. People who refer to the documentation in a different language
-expect to find the same structure, the same amount of headings, paragraphs and so on.
+expect to find the same structure, the same amount of headings, paragraphs, and so on.
 
 ### Strapi
 
 Strapi ([strapi.io](https://strapi.io/)) is a so-called _headless content management system (CMS)_.
-Headless just means that we load the content from it via an API, rather than have it be part of our
+"_Headless_" just means that we load the content from it via an API, rather than have it be part of our
 website like a classic CMS (eg. Wordpress).
 
-In Strapi, we keep our blog posts and showcases for FreeSewing.org.
-We also keep our newsletter editions there and developer blog posts for FreeSewing.dev there, but since
+In Strapi, we keep our blog posts and showcases for freesewing.org.
+We also keep our newsletter editions and developer blog posts for freesewing.dev there, but since
 those are not translated, we will ignore them in this guide.
 
 Strapi supports different language versions for posts, but it's not a translation system like Crowdin
 that breaks text down into small parts to translate.
-Instead, each post can be translated as a whole, and there is not enforcement whatsover of structure or
-content between the different language versions.
+Instead, each post can be translated as a whole, and there is no enforcement whatsoever of structure or
+content between the versions for different language.
 
-In other words, a translated blog posts could use a different structure, or even different images.
+In other words, a translated blog post could use a different structure or even different images.
 This is by design, because we want to encourage the different (non-English) FreeSewing communities
 to make FreeSewing their own, by writing blog posts that are relevant or specific to them.
 
@@ -103,7 +103,7 @@ Somebody could write a French blog post (for example) which can then be translat
 
 Most strings are just text, but sometimes you'll find a little markup sprinkled in.
 
-#### HTML formatting
+### HTML formatting
 
 When you encounter HTML tags, simply translate around them. For example:
 
@@ -117,7 +117,7 @@ looks like this in Spanish:
 <b>No</b>, nunca.
 ```
 
-#### Placeholders
+### Placeholders
 
 When you encounter a `{key}` between curly braces, leave it as-is.
 These will be filled in later with the correct value. For example:
