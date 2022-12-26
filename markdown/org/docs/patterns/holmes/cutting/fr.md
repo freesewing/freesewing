@@ -17,7 +17,7 @@ The **gore** pattern piece needs to be cut on the fold to create a whole piece.
 
 ### Morceaux de tissu optionnels
 
-Si vous ne souhaitez pas utiliser de ruban pour vos cravates, vous pouvez les fabriquer en tissu. Coupez simplement 4 bandes de grains croisés d'un 1" (2. cm) ou la largeur de votre choix + couture large et coudre deux tubes laissant un des côtés courts ouverts pour tourner. Couper les coins et couper les coutures. Détruit une presse. If desired you can _**Edgestitch**_ or _**Topstitch**_ the tubes to stop the fabric from shifting. Le bord brut des tubes peut ensuite être dissimulé dans la couture de rabat de l'oreille lors de la construction des clapets de l'oreille.
+Si vous ne souhaitez pas utiliser de ruban pour vos cravates, vous pouvez les fabriquer en tissu. Coupez simplement 4 bandes de grains croisés d'un 1" (2. cm) ou la largeur de votre choix + couture large et coudre deux tubes laissant un des côtés courts ouverts pour tourner. Couper les coins et couper les coutures. Détruit une presse. If desired you can _Edgestitch_ or _Topstitch_ the tubes to stop the fabric from shifting. Le bord brut des tubes peut ensuite être dissimulé dans la couture de rabat de l'oreille lors de la construction des clapets de l'oreille.
 
 <Note>
 

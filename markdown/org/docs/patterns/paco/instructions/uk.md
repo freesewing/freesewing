@@ -38,8 +38,6 @@ you’ve never made welt pockets before, you’ll be fine.
 
 </Tip>
 
-<!--- One tricky bit, this documentation is for double welts, but this is I think a single welt?
-Does it need a note to that effect? --->
 
 ## Step 2: Prepare the front pockets
 
