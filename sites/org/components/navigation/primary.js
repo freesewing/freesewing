@@ -28,7 +28,7 @@ const currentChildren = (current) =>
 
 // Shared classes for links
 // Exported for re-use
-export const linkClasses = `text-lg lg:text-xl
+export const linkClasses = `
   py-1
   text-base-content sm:text-base-content
   hover:text-secondary

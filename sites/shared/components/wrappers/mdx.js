@@ -40,7 +40,7 @@ const MdxWrapper = ({ mdx, app, t, components = {} }) => {
   const MdxContent = mdxModule ? mdxModule.default : Null
 
   return app ? (
-    <div className="text-primary mdx max-w-prose text-base-content max-w-prose text-lg lg:text-xl">
+    <div className="text-primary mdx max-w-prose text-base-content max-w-prose text-base">
       {mdxModule && <MdxContent components={allComponents} />}
       <PrevNext app={app} />
     </div>

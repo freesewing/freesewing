@@ -26,7 +26,7 @@ const TocWrapper = ({ toc, app }) => {
   return children ? (
     <div
       className={`
-      mdx mdx-toc text-base-content text-lg lg:text-xl
+      mdx mdx-toc text-base-content text-base
       sticky top-16 max-h-screen overflow-y-auto
       border-2 bg-base-200 bg-opacity-30 p-4 rounded-lg border-base-200
     `}

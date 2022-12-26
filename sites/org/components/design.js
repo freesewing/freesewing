@@ -98,7 +98,7 @@ const Design = ({ design }) => {
       ></div>
       <div className="px-4 text-base-content">
         <h2 className="text-base-content m-0 p-0 z-30">{t(`${design}.t`)}</h2>
-        <div className="text-base-content m-0 p-0 font-bold text-lg">{t(`${design}.d`)}</div>
+        <div className="text-base-content m-0 p-0 font-bold text-base">{t(`${design}.d`)}</div>
       </div>
       <div className="py-4 z-10">
         <Worm list={examples} fixed />
