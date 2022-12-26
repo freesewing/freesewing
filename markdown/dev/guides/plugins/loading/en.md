@@ -3,7 +3,8 @@ title: Loading plugins
 order: 140
 ---
 
-Plugins can be loaded at build time and added to the design. Or at run time and added to an instantiated pattern.
+Plugins can be loaded at build time and added to the design.
+Or, they can be added at run time and added to an instantiated pattern.
 
 To load a plugin at build time, it should be added to [the `plugins` key of the part configuration](/reference/api/part/config/plugins).
 

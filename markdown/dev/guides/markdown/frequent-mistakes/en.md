@@ -109,7 +109,7 @@ consectetur adipisci elit,
 sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
 ```
 
-If you're using any markdown syntax within a custom component you want to also
+If you're using any Markdown syntax within a custom component you want to also
 leave an empty line at the start and end of your component.
 
 ```markdown

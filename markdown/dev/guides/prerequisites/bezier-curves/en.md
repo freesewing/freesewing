@@ -41,7 +41,7 @@ The following illustration does a great job at explaining how they are construct
 
 ![How Bézier curves are constructed](bezier.gif)
 
-You don't need understand the mathematics behind Bézier Curves.
+You don't need to understand the mathematics behind Bézier Curves.
 As long as you intuitively _get_ how the control points influence the curve, you're good to go.
 
 <Note>

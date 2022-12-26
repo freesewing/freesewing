@@ -9,7 +9,7 @@ lifecycle.
 ## Signature
 
 To provide one or more hooks, your plugin should have a `hooks` property that
-is an object where the keys are the lifecycle hook name, and the value holds a
+is an object where the keys are the lifecycle hook name and the value holds a
 method. When the lifecycle hook is triggered, your method will be called.
 
 ```mjs
