@@ -19,7 +19,7 @@ website(s) or other more user-facing aspects.
 
 FreeSewing is now ESM only. We no longer publish CJS modules.
 
-To make this explicit, we now use the `.mjs` file extension for our source code, instead of `js`.
+To make this explicit, we now use the `.mjs` file extension for our source code, instead of `.js`.
 
 ### Named exports only
 
