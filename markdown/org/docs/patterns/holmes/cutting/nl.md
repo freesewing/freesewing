@@ -17,7 +17,7 @@ Het **kroon** patroonstuk moet geknipt worden aan de stofvouw om een heel stuk t
 
 ### Optionele Stoffen
 
-Als je geen lint wilt gebruiken voor je dassen kan je ze uit stof maken. Knip 4 kruisgraan strips van een 1" (2. cm) of breedte van jouw keuze + naadwaarde breed en stik twee buizen die één van de korte kanten open laten om te draaien. Knip de hoeken en naad bij. Draai een pers uit. De rauwe rand van de buizen kan dan verborgen worden in de oordnaad bij het maken van de oorflakken. De rauwe rand van de buizen kan dan verborgen worden in de oordnaad bij het maken van de oorflakken.
+Als je geen lint wilt gebruiken voor je dassen kan je ze uit stof maken. Knip 4 kruisgraan strips van een 1" (2. cm) of breedte van jouw keuze + naadwaarde breed en stik twee buizen die één van de korte kanten open laten om te draaien. Knip de hoeken en naad bij. Draai een pers uit. If desired you can _Edgestitch_ or _Topstitch_ the tubes to stop the fabric from shifting. De rauwe rand van de buizen kan dan verborgen worden in de oordnaad bij het maken van de oorflakken.
 
 <Note>
 
