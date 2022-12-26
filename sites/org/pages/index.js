@@ -8,7 +8,8 @@ import PageLink from 'shared/components/page-link'
 
 const HomePage = () => {
   const app = useApp()
-  const { t } = useTranslation(['homepage', 'ograph'])
+  // Not using translation for now
+  //  const { t } = useTranslation(['homepage', 'ograph'])
 
   return (
     <Page app={app} title="Welcome to FreeSewing.org" layout={Layout}>
