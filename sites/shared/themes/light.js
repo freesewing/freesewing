@@ -48,9 +48,9 @@ module.exports = {
   'base-content': colors.neutral['700'],
 
   // primary: The main brand color and color of the primary button
-  primary: colors.violet['600'],
+  primary: colors.violet['500'],
   // primary-focus: The :hover color for the primary button
-  'primary-focus': colors.violet['500'],
+  'primary-focus': colors.violet['600'],
   // primary-content: The text color on a primary button
   'primary-content': colors.neutral['50'],
 
@@ -66,7 +66,7 @@ module.exports = {
   // Should be something is positive/neutral. Avoid red or orange.
   accent: colors.fuchsia['500'],
   // accent-focus: The :hover color for the accent button
-  'accent-focus': colors.fuchsia['400'],
+  'accent-focus': colors.fuchsia['600'],
   // accent-content: The text color for the accent button
   'accent-content': colors.fuchsia['50'],
 

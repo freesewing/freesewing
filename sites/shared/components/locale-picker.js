@@ -23,7 +23,7 @@ const LocalePicker = ({ app, iconOnly = false, bottom = false }) => {
       {() => (
         <>
           <Popover.Button
-            className={`group border-0 inline-flex items-center px-3 py-2 text-base font-medium text-neural-content rounded-lg px-4 hover:text-secondary-focus`}
+            className={`h-12 group border-0 inline-flex items-center px-3 text-base text-neural-content hover:bg-neutral-focus`}
           >
             <LocaleIcon />
             {!iconOnly && (
@@ -49,9 +49,14 @@ const LocalePicker = ({ app, iconOnly = false, bottom = false }) => {
                 <div className="relative grid gap-2 bg-base-100 p-4 grid-cols-1">
                   {router.locales.map((locale) => (
                     <Link
-                      href={`${locale}/${router.asPath}`}
+                      href={
+                        locale === router.defaultLocale
+                          ? `/${router.asPath}`
+                          : `/${locale}/${router.asPath}`
+                      }
                       key={locale}
-                      className="btn btn-primary"
+                      locale={locale}
+                      className="btn btn-neutral"
                     >
                       {t(locale)}
                     </Link>
