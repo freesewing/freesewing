@@ -21,9 +21,12 @@ const MdxWrapper = ({ mdx, app, t, components = {} }) => {
   const [mdxModule, setMdxModule] = useState()
 
   useEffect(() => {
-    ;(async () => {
+    // This is a workaround to keep prettier and eslint
+    // from fighting over syntax
+    async function prettierEslintPeaceDeal() {
       setMdxModule(await run(mdx, runtime))
-    })()
+    }
+    prettierEslintPeaceDeal()
   }, [mdx])
 
   /*
