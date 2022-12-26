@@ -209,7 +209,7 @@ This is illustrated below:
 
 In the vast majority of cases, a pattern will only have one set of settings.
 As such, multiset support is not something you need to be intimately familiar with.
-But it is good to know it exists and explains certain things that might seem
+But, it is good to know it exists and explains certain things that might seem
 _odd_ if you were unaware of multiset support, such as the fact that there's a
 pattern-wide store and a different store per set, the so-called _setStore(s)_.
 
