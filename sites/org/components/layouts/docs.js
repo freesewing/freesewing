@@ -9,13 +9,13 @@ const DefaultLayout = ({ app, title = false, crumbs = false, children = [] }) =>
     <div className="m-auto flex flex-row justify-start">
       <section
         className={`
-        w-1/3 flex flex-row justify-end
+        w-0 lg:w-1/3 flex flex-row justify-end
         border-0 py-20
         md:px-4
         bg-base-200
         shrink-0
         md:border-r md:border-base-300
-        hidden lg:block
+        lg:block
         `}
       >
         <Aside app={app} slug={slug} />

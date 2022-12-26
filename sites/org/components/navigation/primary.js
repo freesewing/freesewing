@@ -1,6 +1,8 @@
+import { useState } from 'react'
 import Link from 'next/link'
 import orderBy from 'lodash.orderby'
 import FreeSewingIcon from 'shared/components/icons/freesewing.js'
+import TopLevel from './top-level.js'
 
 /* helper method to order nav entries */
 const order = (obj) => orderBy(obj, ['__order', '__title'], ['asc', 'asc'])
@@ -142,9 +144,13 @@ const SubLevel = ({ nodes = {}, active }) => (
   </ul>
 )
 
-const LevelHomeButton = () => (
+const LevelHomeButton = ({ setShowLevel, level }) => (
   <>
-    <Link className="h-8 mb-1 flex flex-row p-0 items-center -ml-7" href="/" title="FreeSewing.org">
+    <button
+      className="h-8 mb-1 flex flex-row p-0 items-center -ml-7"
+      title="FreeSewing.org"
+      onClick={() => setShowLevel(level)}
+    >
       <div
         className={`bg-neutral h-8 pl-2 pr-1 pt-1.5 font-medium text-secondary-content rounded-l-full`}
       >
@@ -161,14 +167,20 @@ const LevelHomeButton = () => (
           borderBottomColor: 'transparent',
         }}
       ></div>
-    </Link>
+    </button>
   </>
 )
 
-const LevelButton = ({ href, title, color = 'secondary' }) => (
-  <Link className="h-8 mb-1 flex flex-row p-0 items-center -ml-7 max-w-1/3" href={href}>
+const colors = ['primary', 'secondary', 'accent']
+const LevelButton = ({ href, title, level, showLevel, setShowLevel }) => (
+  <button
+    className={`h-8 mb-1 flex flex-row p-0 items-center -ml-7 max-w-1/3
+      ${showLevel < level ? 'opacity-50' : ''}
+      `}
+    onClick={() => setShowLevel(level)}
+  >
     <div
-      className={`border-${color}`}
+      className={`border-${colors[level]}`}
       style={{
         width: 0,
         height: 0,
@@ -177,12 +189,12 @@ const LevelButton = ({ href, title, color = 'secondary' }) => (
       }}
     ></div>
     <div
-      className={`bg-${color} h-8 pr-1 pt-0.5 -ml-2 font-medium text-secondary-content overflow-hidden`}
+      className={`bg-${colors[level]} h-8 pr-1 pt-0.5 -ml-2 font-medium text-secondary-content overflow-hidden`}
     >
       {title}
     </div>
     <div
-      className={`border-${color} h-12`}
+      className={`border-${colors[level]} h-12`}
       style={{
         width: 0,
         height: 0,
@@ -192,44 +204,55 @@ const LevelButton = ({ href, title, color = 'secondary' }) => (
         borderBottomColor: 'transparent',
       }}
     ></div>
-  </Link>
+  </button>
 )
 
 const Navigation = ({ app, active, className = '' }) => {
+  // Levels
+  const levels = active.split('/')
+
+  const [showLevel, setShowLevel] = useState(Math.max(levels.length, 2))
   if (!app.navigation) return null
+  if (levels.length < 1) return null
 
   let navigation = app.navigation
 
-  // Levels
-  const levels = active.split('/')
-  if (levels.length < 1) return null
+  const shared = { showLevel, setShowLevel }
   const levelButtons = []
   if (levels[0]) {
     navigation = app.navigation[levels[0]]
-    levelButtons.push(<LevelHomeButton key="home" />)
+    levelButtons.push(<LevelHomeButton key="home" {...shared} level={-1} />)
     levelButtons.push(
-      <LevelButton href={'/' + levels[0]} title={navigation.__title} key={levels[0]} />
+      <LevelButton
+        href={'/' + levels[0]}
+        title={app.navigation[levels[0]].__title}
+        key={0}
+        level={0}
+        {...shared}
+      />
     )
   }
   if (levels[1]) {
-    navigation = navigation[levels[1]]
+    if (showLevel > 0) navigation = navigation[levels[1]]
     levelButtons.push(
       <LevelButton
-        title={navigation.__title}
+        title={app.navigation[levels[0]][levels[1]].__title}
         href={'/' + levels[0] + '/' + levels[1]}
-        key={levels[1]}
-        color="primary"
+        key={1}
+        level={1}
+        {...shared}
       />
     )
   }
   if (levels[2]) {
-    navigation = navigation[levels[2]]
+    if (showLevel > 1) navigation = navigation[levels[2]]
     levelButtons.push(
       <LevelButton
-        title={navigation.__title}
+        title={app.navigation[levels[0]][levels[1]][levels[2]].__title}
         href={'/' + levels[0] + '/' + levels[1] + '/' + levels[2]}
-        key={levels[2]}
-        color="accent"
+        key={2}
+        level={2}
+        {...shared}
       />
     )
   }
@@ -239,7 +262,8 @@ const Navigation = ({ app, active, className = '' }) => {
       {levelButtons}
     </div>,
   ]
-  output.push(<SubLevel nodes={order(navigation)} active={active} />)
+  if (showLevel < 0) output.push(<TopLevel />)
+  else output.push(<SubLevel nodes={order(navigation)} active={active} />)
 
   return <div className={`pb-20 ${className}`}>{output}</div>
 }
