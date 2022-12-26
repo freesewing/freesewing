@@ -1,6 +1,6 @@
----
+- - -
 title: "Paco pants: Sewing Instructions"
----
+- - -
 
 <Tip>
 
@@ -37,7 +37,6 @@ Sie noch nie Welttaschen gemacht haben, sind Sie in Ordnung.
 [Zur Welt Taschendokumentation](https://freesewing.org/docs/sewing/double-welt-pockets/)
 
 </Tip>
-
 
 ## Schritt 2: Bereiten Sie die Vordertaschen vor
 
@@ -241,6 +240,7 @@ Press the waistband up. Press the seam allowance in on the opposite side of the 
 
 Refold the waistband, turning half the waistband to the inside. Pin so that the seam allowance on the inside is just below the seam joining the waistband to the pants, and pin in place around the waistband. From the outside, stitch in the ditch, catching the inner waistband as you go.
 
+
 ![Waistband sewn with enclosed seams](step13c.svg)
 
 ## Schritt 14: Bereiten Sie die Manschette elastisch vor
@@ -313,6 +313,7 @@ Refold the cuff, turning half the cuff to the inside. Pin so that the seam allow
 ## Schritt 17: Nähen der Manschetten und der Taille (optional)
 
 If you have wider cuff elastic, you may want to stitch a horizontal line halfway up the cuff. This will hold your elastic in place and help keep it from folding or twisting. Make sure to stretch the elastic evenly as you sew, so that it gathers the fabric evenly. (If you sew without stretching the elastic, you risk lumpy gathers and a leg opening too narrow to get your foot through.)
+
 
 If you like the look, you can also sew more than one line of stitches, evenly spaced between the top and bottom of the cuff.
 
