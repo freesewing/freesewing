@@ -3,8 +3,9 @@ title: Premiers pas
 order: 100
 ---
 
-Bonjour 👋 et bienvenue sur freesewing.org 🙂  
-La lecture de ce guide prendra environ 10 minutes de votre temps maintenant, ce qui vous épargnera un tas de questions plus tard, et vous assurera de tirer le meilleur parti de notre site Web.
+Hi there 👋 and welcome to freesewing.org 🙂
+
+Reading this guide will take about 10 minutes of your time now, to save you a bunch of questions later, and make sure you get the most out of our website.
 
 ##### Ce que nous allons expliquer
 
@@ -14,7 +15,7 @@ La lecture de ce guide prendra environ 10 minutes de votre temps maintenant, ce 
 - Nous enchaînerons avec [comment vous pouvez configurer vos patrons][9] avec des options de design et de patron
 - Enfin, nous vous dirons [où vous pouvez obtenir de l'aide][10] si vous êtes bloqué.
 
-Ça vous paraît bien ? Alors plongeons directement dans le bain :
+Sounds good? Then let's dive right in:
 
 <ReadMore list />
 
