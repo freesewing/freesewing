@@ -7,7 +7,7 @@ import PageLink from 'shared/components/page-link.js'
 import Lightbox from 'shared/components/lightbox.js'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { strapiHost } from 'shared/config/freesewing.mjs'
-import { strapiImage } from 'shared/utils.js'
+import { strapiImage } from 'shared/utils.mjs'
 import { useTranslation } from 'next-i18next'
 
 const Maker = ({ maker }) => {
@@ -21,9 +21,8 @@ const Maker = ({ maker }) => {
             w-lg bg-cover bg-center rounded-full aspect-square
             hidden lg:block
           `}
-          style={{backgroundImage: `url(${strapiHost}${maker?.image?.sizes?.small?.url})`}}
-        >
-        </div>
+          style={{ backgroundImage: `url(${strapiHost}${maker?.image?.sizes?.small?.url})` }}
+        ></div>
       </div>
 
       <div className="theme-gradient p-2 rounded-full aspect-square w-40 h-40 lg:hidden m-auto">
@@ -35,15 +34,18 @@ const Maker = ({ maker }) => {
           height={maker?.image?.sizes.small.h}
         />
       </div>
-      <div className={`
+      <div
+        className={`
           text-center p-2 px-4 rounded-r-lg bg-opacity-50
           lg:text-left
         `}
       >
-        <p className="text-xl"
+        <p
+          className="text-xl"
           dangerouslySetInnerHTML={{
-            __html: t('xMadeThis', { x: maker?.displayname })
-        }} />
+            __html: t('xMadeThis', { x: maker?.displayname }),
+          }}
+        />
         <div className="prose mdx">
           <MdxWrapper mdx={maker?.mdx} />
         </div>
@@ -54,25 +56,28 @@ const Maker = ({ maker }) => {
 
 const PostPage = ({ post, maker }) => {
   const app = useApp()
-  const crumbs = [
-    app.getBreadcrumb('showcase'),
-    [ post.title ]
-  ]
+  const crumbs = [app.getBreadcrumb('showcase'), [post.title]]
 
   return (
-    <Page app={app} title={post.title} crumbs={crumbs} >
+    <Page app={app} title={post.title} crumbs={crumbs}>
       <article className="mb-12 px-8 max-w-7xl">
         <div className="flex flex-row justify-between text-sm mb-1 mt-2">
-          <div><TimeAgo date={post.date} /> [{post.date}]</div>
-          <div>{post.designs.map(design => (
-            <PageLink href={`/showcase/designs/${design}`}
-            txt={design} key={design} className="px-2 capitalize" />
-          ))}</div>
           <div>
-            By <a
-              href="#maker"
-              className="text-secondary hover:text-secondary-focus"
-            >
+            <TimeAgo date={post.date} /> [{post.date}]
+          </div>
+          <div>
+            {post.designs.map((design) => (
+              <PageLink
+                href={`/showcase/designs/${design}`}
+                txt={design}
+                key={design}
+                className="px-2 capitalize"
+              />
+            ))}
+          </div>
+          <div>
+            By{' '}
+            <a href="#maker" className="text-secondary hover:text-secondary-focus">
               {maker.displayname || 'FIXME: No displayname'}
             </a>
           </div>
@@ -86,7 +91,7 @@ const PostPage = ({ post, maker }) => {
             />
             <figcaption
               className="text-center mb-8 prose m-auto"
-              dangerouslySetInnerHTML={{__html: post.caption}}
+              dangerouslySetInnerHTML={{ __html: post.caption }}
             />
           </Lightbox>
         </figure>
@@ -112,14 +117,11 @@ const PostPage = ({ post, maker }) => {
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticProps({ params, locale }) {
-
   const { slug } = params
-  const post = await fetch(
-    `${strapiHost}/showcaseposts?_locale=${locale}&slug_eq=${slug}`
-  )
-  .then(response => response.json())
-  .then(data => data[0])
-  .catch(err => console.log(err))
+  const post = await fetch(`${strapiHost}/showcaseposts?_locale=${locale}&slug_eq=${slug}`)
+    .then((response) => response.json())
+    .then((data) => data[0])
+    .catch((err) => console.log(err))
 
   const designs = [post.design1]
   if (post.design2 && post.design2.length > 2) designs.push(post.design2)
@@ -136,7 +138,7 @@ export async function getStaticProps({ params, locale }) {
         image: {
           w: post.image.width,
           h: post.image.height,
-          url: post.image.url
+          url: post.image.url,
         },
         designs,
       },
@@ -147,17 +149,15 @@ export async function getStaticProps({ params, locale }) {
         ...(await mdxCompiler(post.maker.about)),
       },
       ...(await serverSideTranslations(locale)),
-    }
+    },
   }
 }
 
 export const getStaticPaths = async () => {
-  const paths = await fetch(
-    `${strapiHost}/showcaseposts?_locale=en&_limit=-1`
-  )
-  .then(response => response.json())
-  .then(data => data.map(post => ({ params: { slug: post.slug } })))
-  .catch(err => console.log(err))
+  const paths = await fetch(`${strapiHost}/showcaseposts?_locale=en&_limit=-1`)
+    .then((response) => response.json())
+    .then((data) => data.map((post) => ({ params: { slug: post.slug } })))
+    .catch((err) => console.log(err))
 
   return {
     paths,
@@ -166,4 +166,3 @@ export const getStaticPaths = async () => {
 }
 
 export default PostPage
-

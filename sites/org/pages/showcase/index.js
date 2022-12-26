@@ -3,7 +3,7 @@ import useApp from 'site/hooks/useApp.js'
 import Link from 'next/link'
 import PageLink from 'shared/components/page-link.js'
 import { strapiHost } from 'shared/config/freesewing.mjs'
-import { strapiImage } from 'shared/utils.js'
+import { strapiImage } from 'shared/utils.mjs'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
