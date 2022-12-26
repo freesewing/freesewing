@@ -2,7 +2,7 @@
 title: Can I copy an existing design?
 ---
 
-This questions comes up in various forms, but it boils down to: How much am I
+This question comes up in various forms, but it boils down to: How much am I
 allowed to copy from, or be inspired by, an existing product when designing
 patterns.
 
@@ -15,36 +15,36 @@ community.
 
 Instead, your guiding principle should be: **Don't be a dick**.
 
-So while I'm not in the business of telling people what to do, when it comes to
+So while we're not in the business of telling people what to do, when it comes to
 contributing to FreeSewing, here are some practical examples:
 
 ## Do you accept contributions that are a copy of a commercial pattern?
 
 Absolutely not. 
 
-Copying a commercial pattern is obviously a dick move, and I won't accept any
-contribution if I know it was ripped from a commercial pattern.
+Copying a commercial pattern is obviously a dick move, and we won't accept any
+contribution if we know it was ripped from a commercial pattern.
 
 You are directly undercutting the original designer. And regardless of whether
 that's an indie designer who might be depending on the sales of their pattern
-to put food on the table, or some big pattern company that you feel should be
+to put food on the table or some big pattern company that you feel should be
 taken down a notch: It doesn't matter. Not cool. Don't do this.
 
 ## Do you accept contributrion that are a copy of an existing garment?
 
 Yes. 
 
-Do you own something you really love, or saw something on the runway that has
+Do you own something you really love or saw something on the runway that has
 you swooning? Go ahead and (try to) replicate that look in a pattern you design
-yourself. It's fair game, it's how the fashion industry operates.
+yourself. It's fair game; it's how the fashion industry operates.
 
 One could argue that it is probably impossible to come up with a design that is
-not -- to some extend -- influenced by things we've seen before.
+not -- to some extent -- influenced by things we've seen before.
 
 <Note>
-### Don't pretend trademarks don't exists
+### Don't pretend trademarks don't exist
 
-This should go without saying, but this does not mean you can put *Gucci* (or
+This should go without saying, but this does not mean you can put "*Gucci*" (or
 whatever) on your design.
 
 </Note>
@@ -76,5 +76,5 @@ Examples would be:
    Coffin](https://www.amazon.com/Shirtmaking-Developing-Skills-Fine-Sewing-ebook/dp/B00243GMOO)
    (who was a friend of FreeSewing and is sorely missed 💔 )
  - [Patternmaking for Menswear by Gareth
-   Kershaw](https://www.instagram.com/pattern_cutting_for_menswear/) (probably
+   Kershaw](https://www.laurenceking.com/products/pattern-cutting-for-menswear) (probably
    the best teacher out there)
