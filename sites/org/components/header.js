@@ -73,13 +73,15 @@ const Header = ({ app, setSearch }) => {
                 hidden lg:flex
                 flex-row gap-4
                 justify-between
-                hover:text-secondary-focus
-                hover:bg-transparent
+                rounded-none
+                hover:bg-neutral-focus
               `}
               onClick={() => setSearch(true)}
             >
               <SearchIcon />
-              <span className="normal-case text-base font-medium">Ctrl K</span>
+              <kbd className="normal-case text-xs -ml-2 font-medium px-1.5 rounded opacity-80 border border-neutral-content">
+                /
+              </kbd>
             </button>
           </div>
         </div>

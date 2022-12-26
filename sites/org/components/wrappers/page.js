@@ -28,8 +28,8 @@ const PageWrapper = ({
 
   useEffect(() => app.setSlug(slug), [slug, app])
 
-  // Trigger search with Ctrl+k
-  useHotkeys('ctrl+k', (evt) => {
+  // Trigger search with /
+  useHotkeys('/', (evt) => {
     evt.preventDefault()
     setSearch(true)
   })
