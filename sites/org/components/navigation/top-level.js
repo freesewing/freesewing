@@ -1,4 +1,4 @@
-const TopLevelNavigation = ({}) => {
+const TopLevelNavigation = () => {
   return <p>Top-level menu here</p>
 }
 

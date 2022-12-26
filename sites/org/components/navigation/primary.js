@@ -172,7 +172,7 @@ const LevelHomeButton = ({ setShowLevel, level }) => (
 )
 
 const colors = ['primary', 'secondary', 'accent']
-const LevelButton = ({ href, title, level, showLevel, setShowLevel }) => (
+const LevelButton = ({ title, level, showLevel, setShowLevel }) => (
   <button
     className={`h-8 mb-1 flex flex-row p-0 items-center -ml-7 max-w-1/3
       ${showLevel < level ? 'opacity-50' : ''}
@@ -223,13 +223,7 @@ const Navigation = ({ app, active, className = '' }) => {
     navigation = app.navigation[levels[0]]
     levelButtons.push(<LevelHomeButton key="home" {...shared} level={-1} />)
     levelButtons.push(
-      <LevelButton
-        href={'/' + levels[0]}
-        title={app.navigation[levels[0]].__title}
-        key={0}
-        level={0}
-        {...shared}
-      />
+      <LevelButton title={app.navigation[levels[0]].__title} key={0} level={0} {...shared} />
     )
   }
   if (levels[1]) {
@@ -237,7 +231,6 @@ const Navigation = ({ app, active, className = '' }) => {
     levelButtons.push(
       <LevelButton
         title={app.navigation[levels[0]][levels[1]].__title}
-        href={'/' + levels[0] + '/' + levels[1]}
         key={1}
         level={1}
         {...shared}
@@ -249,7 +242,6 @@ const Navigation = ({ app, active, className = '' }) => {
     levelButtons.push(
       <LevelButton
         title={app.navigation[levels[0]][levels[1]][levels[2]].__title}
-        href={'/' + levels[0] + '/' + levels[1] + '/' + levels[2]}
         key={2}
         level={2}
         {...shared}

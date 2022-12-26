@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import Aside from 'site/components/navigation/aside'
 
-const DefaultLayout = ({ app, title = false, crumbs = false, children = [] }) => {
+const DefaultLayout = ({ app, title = false, children = [] }) => {
   const router = useRouter()
   const slug = router.asPath.slice(1)
 
