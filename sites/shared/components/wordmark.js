@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 export const InnerWordMark = () => (
-  <span style={{ letterSpacing: '-0.14rem' }}>
+  <span style={{ letterSpacing: '-0.1rem' }}>
     <span className="text-red-400">F</span>
     <span className="text-orange-400">r</span>
     <span className="text-yellow-400">e</span>

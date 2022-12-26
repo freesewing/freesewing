@@ -13,13 +13,13 @@ module.exports = {
   'primary-focus': colors.violet['600'],
   'primary-content': colors.violet['50'],
 
-  secondary: colors.sky['500'],
+  secondary: colors.sky['600'],
   'secondary-focus': colors.sky['400'],
   'secondary-content': colors.sky['50'],
 
-  accent: colors.pink['500'],
-  'accent-focus': colors.pink['400'],
-  'accent-content': colors.pink['50'],
+  accent: colors.fuchsia['600'],
+  'accent-focus': colors.fuchsia['500'],
+  'accent-content': colors.fuchsia['50'],
 
   neutral: '#000000', // Dark as my soul
   'neutral-focus': colors.neutral['800'],

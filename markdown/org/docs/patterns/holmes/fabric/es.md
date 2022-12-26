@@ -18,7 +18,7 @@ Generalmente quieres una tela ligera como **seda** o **alambre de algodón** per
 
 ### Interfaz
 
-Dependiendo del espesor de su tela principal y de lo bien que mantiene su forma puede que necesite para interconectar su tejido. If you are uncertain of whether your fabric requires interfacing, quickly _**Baste**_ your crown pieces together and see if the crown stays up right when placed on a surface. Si no necesita interfaz. Como regla general, generalmente necesitarás una interfaz de **empresa media** pero si tu tejido es bastante delgado, puede que necesites una interfaz más firme. If you are still uncertain you can face your crown pieces and once again _**Baste**_ the crown pieces together and check how it looks on your head. Usted puede usar interfaces fusibles o no fusibles. If using non-fusible interfacing you will want to flat line the interfacing to your pieces wih temporary _**Pad Stitches**_.
+Dependiendo del espesor de su tela principal y de lo bien que mantiene su forma puede que necesite para interconectar su tejido. If you are uncertain of whether your fabric requires interfacing, quickly _Baste_ your crown pieces together and see if the crown stays up right when placed on a surface. Si no necesita interfaz. Como regla general, generalmente necesitarás una interfaz de **empresa media** pero si tu tejido es bastante delgado, puede que necesites una interfaz más firme. If you are still uncertain you can face your crown pieces and once again _Baste_ the crown pieces together and check how it looks on your head. Usted puede usar interfaces fusibles o no fusibles. If using non-fusible interfacing you will want to flat line the interfacing to your pieces wih temporary _Pad Stitches_.
 
 <Note>
 

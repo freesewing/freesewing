@@ -9,13 +9,16 @@ import { useState, useEffect, Fragment } from 'react'
 import { run } from '@mdx-js/mdx'
 import * as runtime from 'react/jsx-runtime'
 
-const TocWrapper = ({ toc, app }) => {
+const TocWrapper = ({ toc }) => {
   const [mdxModule, setMdxModule] = useState()
 
   useEffect(() => {
-    ;(async () => {
+    // This is a workaround to keep prettier and eslint
+    // from fighting over syntax
+    async function prettierEslintPeaceDeal() {
       setMdxModule(await run(toc, runtime))
-    })()
+    }
+    prettierEslintPeaceDeal()
   }, [toc])
 
   // React component for MDX content
@@ -26,7 +29,7 @@ const TocWrapper = ({ toc, app }) => {
   return children ? (
     <div
       className={`
-      mdx mdx-toc text-base-content text-lg lg:text-xl
+      mdx mdx-toc text-base-content text-base
       sticky top-16 max-h-screen overflow-y-auto
       border-2 bg-base-200 bg-opacity-30 p-4 rounded-lg border-base-200
     `}

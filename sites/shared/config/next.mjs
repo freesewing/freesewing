@@ -66,6 +66,7 @@ const config = (site, remarkPlugins = []) => ({
     config.resolve.alias.designs = path.resolve('../../designs/')
     config.resolve.alias.plugins = path.resolve('../../plugins/')
     config.resolve.alias.pkgs = path.resolve('../../packages/')
+    config.resolve.alias.root = path.resolve('../../')
 
     // Load designs from source, rather than compiled package
     for (const design in designs) {
