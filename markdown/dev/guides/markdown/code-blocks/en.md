@@ -38,7 +38,7 @@ let me = 'you'
 
 The following language codes are supported:
 
-- `js` for Javascript code
+- `js` for JavaScript code
 - `markdown` for Markdown
 - `html` for HTML
 - `svg` for SVG

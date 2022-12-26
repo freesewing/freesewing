@@ -5,15 +5,15 @@ order: 60
 
 The store in a FreeSewing pattern provides shared key-value storage.
 If you have some information in one part that you want to make available
-outside that part (in another part) you can save it to the store.
+outside that part (to share it with another part) you can save it to the store.
 
 There are two types of stores:
 
-- A pattern-wide store that
+- A pattern-wide store that is shared across all parts in all sets
 - A store per set that is shared across parts in that set
 
 When you interact with a store in your part code, it is almost certainly the
-so-called setStore, the store that is shared accross parts in the set.
+so-called setStore, the store that is shared across parts in the set.
 
 The pattern-wide store is used for pattern initialization and storing logs and
 other data in the early stages of the pattern lifecycle.

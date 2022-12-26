@@ -18,7 +18,7 @@ followed by a space and the image title between quotes.
 
 <Tip>
 
-##### Images go in the same folder as your markdown file
+##### Images go in the same folder as your Markdown file
 
 The convention is to always place your images in the same folder as the
 text where you are including the image. That way, you just need to specify
