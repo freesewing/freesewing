@@ -37,12 +37,12 @@ For most cases, the default will be fine.
   
   points.x1 = paths.example
     .shiftAlong(20)
-    .attr("data-text", "2cm")
+    .attr("data-text", "2 cm")
     .attr("data-text-class", "center fill-note")
     .attr("data-text-lineheight", 6)
   points.x2 = paths.example
     .shiftAlong(90)
-    .attr("data-text", "9cm")
+    .attr("data-text", "9 cm")
     .attr("data-text-class", "center fill-note")
     .attr("data-text-lineheight", 6)
   

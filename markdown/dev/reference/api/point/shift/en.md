@@ -21,7 +21,7 @@ Point point.shift(float angle, float distance)
   points.A = new Point(90, 40)
     .setText("Point A", "right text-sm")
   points.B = points.A.shift(155, 70)
-    .setText("Point B is point A shifted 7cm\nat a 155 degree angle", "text-sm")
+    .setText("Point B is point A shifted 7 cm\nat a 155 degree angle", "text-sm")
     .attr("data-text-lineheight", 6)
   
   macro("ld", {
