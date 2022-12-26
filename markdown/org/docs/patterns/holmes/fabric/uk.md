@@ -4,11 +4,11 @@ title: "Holmes deerstalker hat: Fabric Options"
 
 ### Main Fabric
 
-For the main fabric of your hat, a thick fabric will work best to hold the shape but if you wanna go for a lighter fabric you can interface it to give it more body. Generally you want to use **Wools** of coating weight but you can experiment with different weights and fabrics with the relevant interfacing.
+For the main fabric of your hat, a thick fabric will work best to hold the shape but if you wanna go for a lighter fabric you can interface it to give it more body. Generally you want to use **wools** of coating weight but you can experiment with different weights and fabrics with the relevant interfacing.
 
 <Note>
 
-A fun thing to try is printed cotton. Just double up the main fabric so each piece is double thickness. Then interface it with a **Medium Firm Interfacing**.
+A fun thing to try is printed cotton. Just double up the main fabric so each piece is double thickness. Then interface it with a **medium firm interfacing**.
 
 </Note>
 
@@ -18,7 +18,7 @@ Generally you want a lightweight fabric such as **Silks** or **Cotton Lawn** but
 
 ### Interfacing
 
-Depending on your main fabric's thickness and how well it keeps its shape you may need to interface your fabric. If you are uncertain of whether your fabric requires interfacing, quickly _**Baste**_ your crown pieces together and see if the crown stays up right when placed on a surface. If it doesn't it needs interfacing. As a rule of thumb you will generally need a **Medium Firm Interfacing** but if your fabric is quite thin you may need a firmer interfacing. If you are still uncertain you can face your crown pieces and once again _**Baste**_ the crown pieces together and check how it looks on your head. You can either use fusible or non-fusible interfacing. If using non-fusible interfacing you will want to flat line the interfacing to your pieces wih temporary _**Pad Stitches**_.
+Depending on your main fabric's thickness and how well it keeps its shape you may need to interface your fabric. If you are uncertain of whether your fabric requires interfacing, quickly _baste_ your crown pieces together and see if the crown stays up right when placed on a surface. If it doesn't it needs interfacing. As a rule of thumb you will generally need a **Medium Firm Interfacing** but if your fabric is quite thin you may need a firmer interfacing. If you are still uncertain you can face your crown pieces and once again _baste_ the crown pieces together and check how it looks on your head. You can either use fusible or non-fusible interfacing. If using non-fusible interfacing you will want to flat line the interfacing to your pieces wih temporary _pad stitches_.
 
 <Note>
 
