@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import orderBy from 'lodash.orderby'
 import FreeSewingIcon from 'shared/components/icons/freesewing.js'
@@ -172,45 +172,63 @@ const LevelHomeButton = ({ setShowLevel, level }) => (
 )
 
 const colors = ['primary', 'secondary', 'accent']
-const LevelButton = ({ title, level, showLevel, setShowLevel }) => (
-  <button
-    className={`h-8 mb-1 flex flex-row p-0 items-center -ml-7 max-w-1/3
-      ${showLevel < level ? 'opacity-50' : ''}
-      `}
-    onClick={() => setShowLevel(level)}
-  >
-    <div
-      className={`border-${colors[level]}`}
-      style={{
-        width: 0,
-        height: 0,
-        borderWidth: '1rem',
-        borderLeftColor: 'transparent',
-      }}
-    ></div>
-    <div
-      className={`bg-${colors[level]} h-8 pr-1 pt-0.5 -ml-2 font-medium text-secondary-content overflow-hidden`}
-    >
-      {title}
-    </div>
-    <div
-      className={`border-${colors[level]} h-12`}
-      style={{
-        width: 0,
-        height: 0,
-        borderWidth: '1rem',
-        borderRightColor: 'transparent',
-        borderTopColor: 'transparent',
-        borderBottomColor: 'transparent',
-      }}
-    ></div>
-  </button>
-)
+
+const LevelButton = ({ title, level, showLevel, setShowLevel, href = false }) => {
+  const props = {
+    className: `h-8 mb-1 flex flex-row p-0 items-center -ml-7 max-w-1/3 ${
+      showLevel < level ? 'opacity-50' : ''
+    }`,
+  }
+  const content = (
+    <>
+      <div
+        className={`border-${colors[level]}`}
+        style={{
+          width: 0,
+          height: 0,
+          borderWidth: '1rem',
+          borderLeftColor: 'transparent',
+        }}
+      ></div>
+      <div
+        className={`
+      bg-${colors[level]} h-8 pr-1 pt-0.5 -ml-2 font-medium
+      text-secondary-content overflow-hidden`}
+      >
+        {title}
+      </div>
+      <div
+        className={`border-${colors[level]} h-12`}
+        style={{
+          width: 0,
+          height: 0,
+          borderWidth: '1rem',
+          borderRightColor: 'transparent',
+          borderTopColor: 'transparent',
+          borderBottomColor: 'transparent',
+        }}
+      ></div>
+    </>
+  )
+
+  return href ? (
+    <Link {...props} href={href}>
+      {content}
+    </Link>
+  ) : (
+    <button {...props} onClick={() => setShowLevel(level)}>
+      {content}
+    </button>
+  )
+}
 
 const Navigation = ({ app, active, className = '' }) => {
   // Levels
   const levels = active.split('/')
 
+  useEffect(() => {
+    setShowLevel(Math.max(levels.length, 2))
+  }, [active])
   const [showLevel, setShowLevel] = useState(Math.max(levels.length, 2))
   if (!app.navigation) return null
   if (levels.length < 1) return null
@@ -237,7 +255,7 @@ const Navigation = ({ app, active, className = '' }) => {
       />
     )
   }
-  if (levels[2]) {
+  if (levels[2] && levels.length > 3) {
     if (showLevel > 1) navigation = navigation[levels[2]]
     levelButtons.push(
       <LevelButton
