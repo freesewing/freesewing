@@ -1,8 +1,5 @@
 import process from 'node:process'
 
-// For now, never build org
-process.exit(0)
-
 // Do not block production builds
 if (process.env.VERCEL_ENV === 'production') {
   console.log('✅ - Production build - Proceed to build')
