@@ -383,6 +383,7 @@ shared:
     'remark-smartypants': '2.0.0'
     'sharp': '0.31.3'
     'svg-to-pdfkit': 'https://github.com/eriese/SVG-to-PDFKit'
+    'tlds': '1.236.0'
     'to-vfile': '7.2.2'
     'unist-util-visit': '4.1.0'
     'web-worker': '1.2.0'

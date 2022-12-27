@@ -19885,6 +19885,11 @@ tiny-warning@^1.0.0, tiny-warning@^1.0.3:
   resolved "https://registry.npmjs.org/tiny-warning/-/tiny-warning-1.0.3.tgz#94a30db453df4c643d0fd566060d60a875d84754"
   integrity sha512-lBN9zLN/oAf68o3zNXYrdCt1kP8WsiGW8Oo2ka41b2IM5JL/S1CTyX1rW0mb/zSuJun0ZUrDxx4sqvYS2FWzPA==
 
+tlds@1.236.0:
+  version "1.236.0"
+  resolved "https://registry.yarnpkg.com/tlds/-/tlds-1.236.0.tgz#a118eebe33261c577e3a3025144faeabb7dd813c"
+  integrity sha512-oP2PZ3KeGlgpHgsEfrtva3/K9kzsJUNliQSbCfrJ7JMCWFoCdtG+9YMq/g2AnADQ1v5tVlbtvKJZ4KLpy/P6MA==
+
 tmp@^0.0.33:
   version "0.0.33"
   resolved "https://registry.yarnpkg.com/tmp/-/tmp-0.0.33.tgz#6d34335889768d21b2bcda0aa277ced3b1bfadf9"
