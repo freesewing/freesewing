@@ -14,6 +14,7 @@ const PageWrapper = ({
   noSearch = false,
   app = false,
   layout = Docs,
+  footer = true,
   crumbs = false,
   children = [],
 }) => {
@@ -39,6 +40,7 @@ const PageWrapper = ({
   const childProps = {
     app: app,
     title: title,
+    footer,
     crumbs: crumbs,
     search,
     setSearch,
