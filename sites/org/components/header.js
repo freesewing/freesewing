@@ -33,7 +33,11 @@ const Header = ({ app, setSearch }) => {
       w-full
       z-30
       transition-transform
-      ${show ? '' : 'fixed bottom-0 lg:top-0 left-0 translate-y-20 lg:-translate-y-20'}
+      ${
+        show || app.loading
+          ? ''
+          : 'fixed bottom-0 lg:top-0 left-0 translate-y-20 lg:-translate-y-20'
+      }
       drop-shadow-xl
     `}
     >
