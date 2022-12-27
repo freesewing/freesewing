@@ -13,11 +13,11 @@ import { useTranslation } from 'next-i18next'
 /*
  * Helper method for a simple navigation item
  */
-const simpleNav = (term, t, lng, prefix='', order='') => ({
+const simpleNav = (term, t, lng, prefix = '', order = '') => ({
   __title: t(term, { lng }),
   __linktitle: t(term, { lng }),
-  __slug: prefix+term,
-  __order: order+t(term, { lng })
+  __slug: prefix + term,
+  __order: order + t(term, { lng }),
 })
 
 /*
@@ -64,7 +64,6 @@ const buildNavigation = (lang, t) => {
  * The actual hook
  */
 function useApp(full = true) {
-
   // Load translation method
   const locale = useRouter().locale
   const { t } = useTranslation()
@@ -72,6 +71,7 @@ function useApp(full = true) {
   // Persistent state
   const [account, setAccount] = useLocalStorage('account', { username: false })
   const [theme, setTheme] = useTheme()
+  const [username, setUsername] = useLocalStorage('username', false)
 
   // React State
   const [primaryMenu, setPrimaryMenu] = useState(false)
@@ -87,9 +87,7 @@ function useApp(full = true) {
    */
   const updateNavigation = (path, content) => {
     if (typeof path === 'string') {
-      path = (path.slice(0,1) === '/')
-        ? path.slice(1).split('/')
-        : path.split('/')
+      path = path.slice(0, 1) === '/' ? path.slice(1).split('/') : path.split('/')
     }
     setNavigation(set(navigation, path, content))
   }
@@ -97,12 +95,19 @@ function useApp(full = true) {
   /*
    * Helper method to get title from navigation structure
    */
-  const getTitle = slug => get(navigation, slug).__title
+  const getTitle = (slug) => get(navigation, slug).__title
 
   /*
    * Helper method to construct breadcrumb from navigation structure
    */
-  const getBreadcrumb = slug => ([ get(navigation, slug).__title, `/${slug}` ])
+  const getBreadcrumb = (slug) => [get(navigation, slug).__title, `/${slug}`]
+
+  const loadHelpers = {
+    startLoading: () => setLoading(true),
+    stopLoading: () => setLoading(false),
+    loading,
+    setLoading,
+  }
 
   return {
     // Static vars
@@ -117,6 +122,7 @@ function useApp(full = true) {
     primaryMenu,
     slug,
     theme,
+    username,
 
     // State setters
     setLoading,
@@ -124,7 +130,11 @@ function useApp(full = true) {
     setPrimaryMenu,
     setSlug,
     setTheme,
-    startLoading: () => { setLoading(true); setPrimaryMenu(false) }, // Always close menu when navigating
+    setUsername,
+    startLoading: () => {
+      setLoading(true)
+      setPrimaryMenu(false)
+    }, // Always close menu when navigating
     stopLoading: () => setLoading(false),
     updateNavigation,
 
@@ -134,8 +144,10 @@ function useApp(full = true) {
     // Navigation
     getTitle,
     getBreadcrumb,
+
+    // Loading state helpers
+    loadHelpers,
   }
 }
 
 export default useApp
-

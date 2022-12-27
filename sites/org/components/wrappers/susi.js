@@ -8,7 +8,7 @@ const opacity = {
 const SusiWrapper = ({ theme, children }) => (
   <section
     style={{
-      backgroundImage: `url('/img/splash-${theme || 'light'}.jpg')`,
+      backgroundImage: `url('https://static.freesewing.org/img/splash/${theme || 'light'}.jpg')`,
       backgroundSize: 'cover',
       backgroundPosition: '40% 50%',
     }}
