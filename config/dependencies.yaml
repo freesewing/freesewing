@@ -311,6 +311,8 @@ lab:
 
 org:
   _:
+    '@bugsnag/js': &bugsnag 7.18.0
+    '@bugsnag/plugin-react': *bugsnag
     '@mdx-js/loader': *mdx
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx

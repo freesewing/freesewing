@@ -1,6 +1,21 @@
 import 'shared/styles/globals.css'
 import { appWithTranslation } from 'next-i18next'
+import React from 'react'
+import Bugsnag from '@bugsnag/js'
+import BugsnagPluginReact from '@bugsnag/plugin-react'
 
-const FreeSewingOrg = ({ Component, pageProps }) => <Component {...pageProps} />
+Bugsnag.start({
+  apiKey: process.env.BUGSNAG_API_KEY,
+  collectUserIp: false,
+  plugins: [new BugsnagPluginReact()],
+})
+
+const ErrorBoundary = Bugsnag.getPlugin('react').createErrorBoundary(React)
+
+const FreeSewingOrg = ({ Component, pageProps }) => (
+  <ErrorBoundary>
+    <Component {...pageProps} bugsnag={Bugsnag} />
+  </ErrorBoundary>
+)
 
 export default appWithTranslation(FreeSewingOrg)

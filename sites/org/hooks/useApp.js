@@ -11,6 +11,23 @@ import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 
 /*
+ * Dumb method to generate a unique (enough) ID for submissions to bugsnag
+ */
+function errId() {
+  let result = ''
+  const characters = 'abcdefghijklmnopqrstuvwxyz0123456789'
+  const charactersLength = characters.length
+  for (let s = 0; s < 3; s++) {
+    for (let i = 0; i < 4; i++) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength))
+    }
+    if (s < 2) result += '-'
+  }
+
+  return result
+}
+
+/*
  * Helper method for a simple navigation item
  */
 const simpleNav = (term, t, lng, prefix = '', order = '') => ({
@@ -63,7 +80,7 @@ const buildNavigation = (lang, t) => {
 /*
  * The actual hook
  */
-function useApp(full = true) {
+function useApp({ bugsnag }) {
   // Load translation method
   const locale = useRouter().locale
   const { t } = useTranslation()
@@ -109,6 +126,16 @@ function useApp(full = true) {
     setLoading,
   }
 
+  const error = (err) => {
+    const id = errId
+    bugsnag.notify(err, (evt) => {
+      evt.setUser(username ? username : '__visitor')
+      evt.context = id
+    })
+
+    return id
+  }
+
   return {
     // Static vars
     site: 'org',
@@ -147,6 +174,10 @@ function useApp(full = true) {
 
     // Loading state helpers
     loadHelpers,
+
+    // Bugsnag wrapper
+    error,
+    errId,
   }
 }
 
