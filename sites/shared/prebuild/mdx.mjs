@@ -139,7 +139,7 @@ export const prebuildMdx = async (site) => {
         if (process.env.GENERATE_OG_IMAGES) {
           // Create og image
           const intro = await mdIntro(lang, site, slug)
-          const img = await generateOgImage({ lang, site, slug, title: meta.data.title, intro })
+          await generateOgImage({ lang, site, slug, title: meta.data.title, intro })
         }
       }
     }
