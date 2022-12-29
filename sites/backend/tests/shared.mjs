@@ -102,7 +102,7 @@ export const setup = async () => {
           `${store.config.api}/people/jwt`,
           {
             name: `This is ${name} name`,
-            name: `These are ${name} notes`,
+            notes: `These are ${name} notes`,
             measies: people[name],
           },
           {

@@ -140,7 +140,7 @@ UserModel.prototype.setExists = function () {
  * Creates a user+confirmation and sends out signup email
  */
 UserModel.prototype.guardedCreate = async function ({ body }) {
-  if (Object.keys(body) < 1) return this.setResponse(400, 'postBodyMissing')
+  if (Object.keys(body).length < 1) return this.setResponse(400, 'postBodyMissing')
   if (!body.email) return this.setResponse(400, 'emailMissing')
   if (!body.language) return this.setResponse(400, 'languageMissing')
   if (!this.config.languages.includes(body.language))
@@ -226,7 +226,7 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
  * Login based on username + password
  */
 UserModel.prototype.passwordLogin = async function (req) {
-  if (Object.keys(req.body) < 1) return this.setResponse(400, 'postBodyMissing')
+  if (Object.keys(req.body).length < 1) return this.setResponse(400, 'postBodyMissing')
   if (!req.body.username) return this.setResponse(400, 'usernameMissing')
   if (!req.body.password) return this.setResponse(400, 'passwordMissing')
 
@@ -266,7 +266,7 @@ UserModel.prototype.passwordLogin = async function (req) {
  */
 UserModel.prototype.confirm = async function ({ body, params }) {
   if (!params.id) return this.setResponse(404)
-  if (Object.keys(body) < 1) return this.setResponse(400, 'postBodyMissing')
+  if (Object.keys(body).length < 1) return this.setResponse(400, 'postBodyMissing')
   if (!body.consent || typeof body.consent !== 'number' || body.consent < 1)
     return this.setResponse(400, 'consentRequired')
 
@@ -627,9 +627,8 @@ UserModel.prototype.loginOk = function () {
  */
 UserModel.prototype.isLusernameAvailable = async function (lusername) {
   if (lusername.length < 2) return false
-  let found
   try {
-    found = await this.prisma.user.findUnique({ where: { lusername } })
+    await this.prisma.user.findUnique({ where: { lusername } })
   } catch (err) {
     log.warn({ err, where }, 'Could not search for free username')
   }

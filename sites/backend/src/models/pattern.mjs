@@ -14,7 +14,7 @@ export function PatternModel(tools) {
 
 PatternModel.prototype.guardedCreate = async function ({ body, user }) {
   if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
-  if (Object.keys(body) < 2) return this.setResponse(400, 'postBodyMissing')
+  if (Object.keys(body).length < 2) return this.setResponse(400, 'postBodyMissing')
   if (!body.person) return this.setResponse(400, 'personMissing')
   if (typeof body.person !== 'number') return this.setResponse(400, 'personNotNumeric')
   if (typeof body.settings !== 'object') return this.setResponse(400, 'settingsNotAnObject')
