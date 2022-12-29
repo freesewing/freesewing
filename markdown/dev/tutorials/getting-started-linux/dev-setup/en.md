@@ -60,7 +60,7 @@ But if you're running Linux, you have git, right?
 
 #### Install yarn
 
-Our repository uses yarn workspaces. So you'll need yarn to work with it.
+Our repository uses yarn workspaces. So you'll need `yarn` to work with it.
 
 To install it run:
 
@@ -75,7 +75,7 @@ all the changes you want. To do so, visit https://github.com/freesewing/freesewi
 
 #### Clone the forked repository
 
-Now that you have your very own fork, time to clone it locally.
+Now that you have your very own fork, it's time to clone it locally.
 
 ```bash
 git clone <url to your fork>
@@ -105,7 +105,7 @@ yarn new design
 
 ## Creating a new plugin
 
-If you'd like to create a new plugin, run the following comand:
+If you'd like to create a new plugin, run the following command:
 
 ```sh
 yarn new plugin
@@ -113,13 +113,15 @@ yarn new plugin
 
 ## Stand-alone development
 
-With NodeJS installed, all you need to do to setup the stand-alone development environment is run this command:
+With Node.js installed, all you need to do to setup the stand-alone development environment is run this command:
 
 ```bash
 npx @freesewing/new-design@next
 ```
 
-<Fixme>Remove `@next` tag when v3 is released</Fixme>
+<Fixme compact>
+Remove `@next` tag when v3 is released
+</Fixme>
 
 After you've answered [some questions](#questions), it will take a while to set
 everything up.  When it's done, you will have a new folder with the development
@@ -152,6 +154,12 @@ If you're not certain what to pick, just mash some keys, it doesn't matter.
 
 #### What package manager to use
 
-Chose `npm` if you don't have `yarn` are when you're not sure what the heck `yarn` is.
+Choose `yarn`. Currently, `npm` does not work.
 
 </Note>
+
+<Fixme compact>
+The `npm` issue issue should be fixed by the time v3 is released.
+The _What package manager to use_ section will need to be updated at that
+time.
+</Fixme>
