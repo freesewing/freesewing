@@ -39,7 +39,7 @@ UserModel.prototype.read = async function (where) {
 /*
  * Helper method to decrypt at-rest data
  */
-UserModel.prototype.reveal = async function (where) {
+UserModel.prototype.reveal = async function () {
   this.clear = {}
   if (this.record) {
     for (const field of this.encryptedFields) {
@@ -274,12 +274,12 @@ UserModel.prototype.confirm = async function ({ body, params }) {
   await this.Confirmation.read({ id: params.id })
 
   if (!this.Confirmation.exists) {
-    log.warn(err, `Could not find confirmation id ${params.id}`)
+    log.warn(`Could not find confirmation id ${params.id}`)
     return this.setResponse(404)
   }
 
   if (this.Confirmation.record.type !== 'signup') {
-    log.warn(err, `Confirmation mismatch; ${params.id} is not a signup id`)
+    log.warn(`Confirmation mismatch; ${params.id} is not a signup id`)
     return this.setResponse(404)
   }
 
@@ -356,7 +356,6 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
       data.lusername = clean(body.username)
     } else {
       log.info(`Rejected user name change from ${data.username} to ${body.username.trim()}`)
-      notes.push('usernameChangeRejected')
     }
   }
   // Image (img)
@@ -401,12 +400,12 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
     await this.Confirmation.read({ id: body.confirmation })
 
     if (!this.Confirmation.exists) {
-      log.warn(err, `Could not find confirmation id ${params.id}`)
+      log.warn(`Could not find confirmation id ${body.confirmation}`)
       return this.setResponse(404)
     }
 
     if (this.Confirmation.record.type !== 'emailchange') {
-      log.warn(err, `Confirmation mismatch; ${params.id} is not an emailchange id`)
+      log.warn(`Confirmation mismatch; ${body.confirmation} is not an emailchange id`)
       return this.setResponse(404)
     }
 
@@ -630,7 +629,7 @@ UserModel.prototype.isLusernameAvailable = async function (lusername) {
   try {
     await this.prisma.user.findUnique({ where: { lusername } })
   } catch (err) {
-    log.warn({ err, where }, 'Could not search for free username')
+    log.warn({ err, lusername }, 'Could not search for free username')
   }
 
   return true

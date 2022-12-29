@@ -247,7 +247,7 @@ PatternModel.prototype.unguardedDelete = async function () {
 /*
  * Removes the pattern - Checks permissions
  */
-PatternModel.prototype.guardedDelete = async function ({ params, body, user }) {
+PatternModel.prototype.guardedDelete = async function ({ params, user }) {
   if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 

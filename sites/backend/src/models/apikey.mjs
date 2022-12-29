@@ -1,6 +1,6 @@
 import { log } from '../utils/log.mjs'
-import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
-import { clean, asJson } from '../utils/index.mjs'
+import { hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
+import { asJson } from '../utils/index.mjs'
 import { UserModel } from './user.mjs'
 
 export function ApikeyModel(tools) {
