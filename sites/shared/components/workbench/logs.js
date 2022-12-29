@@ -105,8 +105,6 @@ const StoreLogs = ({ logs, units }) => (
 )
 
 const Logs = (props) => {
-  const renderProps = props.draft.getRenderProps()
-
   return (
     <Tabs
       tabs={[
