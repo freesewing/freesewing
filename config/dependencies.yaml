@@ -202,7 +202,7 @@ yuri:
 
 backend:
   _:
-    '@aws-sdk/client-sesv2': '3.200.0'
+    '@aws-sdk/client-sesv2': '3.241.0'
     '@prisma/client': &prisma '4.8.0'
     'bcryptjs': '2.4.3'
     'cors': '2.8.5'
@@ -214,8 +214,8 @@ backend:
     'otplib': '12.0.1'
     'passport': '0.6.0'
     'passport-http': '0.3.0'
-    'passport-jwt': '4.0.0'
-    'pino': '8.7.0'
+    'passport-jwt': '4.0.1'
+    'pino': '8.8.0'
     'qrcode': '1.5.1'
     'swagger-ui-dist': '4.15.5'
     'swagger-ui-express': '4.6.0'
@@ -281,7 +281,7 @@ lab:
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': *mdxRuntime
     '@tailwindcss/typography': &tailwindTypography '0.5.0'
-    'algoliasearch': &algoliasearch '4.14.2'
+    'algoliasearch': &algoliasearch '4.14.3'
     'd3-dispatch': '3.0.1'
     'd3-drag': '3.0.0'
     'd3-selection': '3.0.0'
