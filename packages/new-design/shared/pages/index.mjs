@@ -44,25 +44,26 @@ const HomePage = (props) => {
         <FsIcon className="w-96 m-auto" />
         <h1>FreeSewing</h1>
         <h4>{translations.sade[app.locale]}</h4>
-        <Link href="/design">
-          <a className="btn btn-primary btn-lg h-20 my-8 mb-12">
-            <span role="image" className="text-4xl px-6">
-              👉
-            </span>
-            <span className="text-xl px-2">{translations.load[app.locale]}</span>
-            <span role="image" className="text-4xl px-6">
-              👈
-            </span>
-          </a>
+        <Link href="/design" className="btn btn-primary btn-lg h-20 my-8 mb-12">
+          <span role="image" className="text-4xl px-6">
+            👉
+          </span>
+          <span className="text-xl px-2">{translations.load[app.locale]}</span>
+          <span role="image" className="text-4xl px-6">
+            👈
+          </span>
         </Link>
         {translations.tips[app.locale]}
       </div>
       <div className="flex flex-row flex-wrap gap-4 w-full max-w-4xl m-auto justify-center">
         {router.locales.map((locale) => (
-          <Link href={router.asPath} locale={locale} key={locale}>
-            <a className="btn btn-ghost text-base-content hover:bg-base-200">
-              <span className="text-base-content">{t(`locales:${locale}`)}</span>
-            </a>
+          <Link
+            href={router.asPath}
+            locale={locale}
+            key={locale}
+            className="btn btn-ghost text-base-content hover:bg-base-200"
+          >
+            <span className="text-base-content">{t(`locales:${locale}`)}</span>
           </Link>
         ))}
       </div>
