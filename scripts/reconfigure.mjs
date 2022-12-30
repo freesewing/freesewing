@@ -59,7 +59,7 @@ const copyThese = [
   },
 ]
 for (const cp of copyThese) {
-  fs.copyFile(path.join(repo.path, ...cp.from), path.join(repo.path, ...cp.to), (err) => null)
+  fs.copyFile(path.join(repo.path, ...cp.from), path.join(repo.path, ...cp.to), () => null)
 }
 
 // Step 1: Generate main README file from template

@@ -21,7 +21,7 @@ const translations = {
   tips: {
     en: (
       <Popout tip compact>
-        Edit the files in the <strong>design</strong> folder, and we'll auto-update your design
+        Edit the files in the <strong>design</strong> folder, and we&apos;ll auto-update your design
       </Popout>
     ),
     nl: (
@@ -33,7 +33,7 @@ const translations = {
   },
 }
 
-const HomePage = (props) => {
+const HomePage = () => {
   const app = useApp()
   const router = useRouter()
   const { t } = useTranslation(['common', 'patrons', 'locales', 'themes'])
