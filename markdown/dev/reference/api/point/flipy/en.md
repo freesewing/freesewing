@@ -31,10 +31,10 @@ Point point.flipY(Point mirror = false)
   points.houseRoofRight = new Point(85, 35)
   points.houseWallRight = new Point(85, 50)
   points.end = new Point(95, 50)
-  
+
   points.mirror = new Point(0, 60)
   points.mirrorLineEnd = new Point(95, 60)
-  
+
   points._start = points.start.flipY(points.mirror)
   points._churchTowerWallLeft = points.churchTowerWallLeft.flipY(points.mirror)
   points._churchTowerRoofLeft = points.churchTowerRoofLeft.flipY(points.mirror)
@@ -50,7 +50,7 @@ Point point.flipY(Point mirror = false)
   points._houseRoofRight = points.houseRoofRight.flipY(points.mirror)
   points._houseWallRight = points.houseWallRight.flipY(points.mirror)
   points._end = points.end.flipY(points.mirror)
-  
+
   paths.skylineTop = new Path()
     .move(points.start)
     .line(points.churchTowerWallLeft)
@@ -70,4 +70,3 @@ Point point.flipY(Point mirror = false)
 }
 ```
 </Example>
-

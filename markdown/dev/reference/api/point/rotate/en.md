@@ -33,4 +33,3 @@ Point point.rotate(float angle, Point center)
 }
 ```
 </Example>
-

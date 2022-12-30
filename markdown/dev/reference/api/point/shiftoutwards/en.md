@@ -22,12 +22,12 @@ Point point.shiftOutwards(Point target, float distance)
   points.C = points.A.shiftOutwards(points.B, 30)
     .setText("Point C is point A shifted 3 cm\nbeyond point B", "text-sm")
     .attr("data-text-lineheight", 6)
-  
+
   paths.direction = new Path()
     .move(points.A)
     .line(points.C)
     .addClass("note dashed")
-  
+
   macro("ld", {
     from: points.C,
     to: points.B,
@@ -38,4 +38,3 @@ Point point.shiftOutwards(Point target, float distance)
 }
 ```
 </Example>
-
