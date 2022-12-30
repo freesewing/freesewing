@@ -14,7 +14,7 @@ float path.length()
 
 <Example caption="Example of the Path.length() method">
 ```js
-({ Point, points, Path, paths, macro, utils, part }) => {
+({ Point, points, Path, paths, macro, utils, units, part }) => {
 
   points.A = new Point(45, 60)
   points.B = new Point(10, 30)
@@ -30,11 +30,25 @@ float path.length()
     .move(points.B)
     .curve(points.BCp2, points.CCp1, points.C)
 
-  const lengthAB = paths.AB.length()
-  const lengthBC = paths.BC.length()
+  const lengthABC = paths.AB.length() + paths.BC.length()
 
-  paths.AB.addText(utils.round(lengthAB) + " mm")
-  paths.BC.addText(utils.round(lengthBC) + " mm")
+  macro("pd", {
+     path: new Path().move(points.B).line(points.A),
+     d: 10
+   })
+
+   macro("pd", {
+     path: new Path().move(points.B).curve(points.BCp2, points.CCp1, points.C),
+     d: -10
+   })
+
+  points.label = new Point(25, 40)
+    .addText('Total length = ' + units(lengthABC))
+
+  // Set a path to prevent clipping
+  paths.noclip = new Path()
+    .move(new Point(10, -15))
+    .move(new Point(90, 60))
 
   return part
 }
