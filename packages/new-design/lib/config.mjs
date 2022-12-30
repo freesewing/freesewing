@@ -8,7 +8,7 @@ export const config = {
   // Repository to download from
   repo: process.env.FS_REPO || 'freesewing/freesewing',
   // Branch to download from
-  branch: process.env.FS_BRANCH || 'develop',
+  branch: process.env.FS_BRANCH || 'alpha-release',
   i18n: [
     'account',
     'common',
@@ -224,7 +224,7 @@ yarn-error.log*
       'shared/components/workbench/layout/cut/settings.js',
       'shared/components/workbench/layout/draft/buttons.js',
       'shared/components/workbench/layout/draft/index.js',
-      'shared/components/workbench/layout/draft/part.js',
+      'shared/components/workbench/layout/draft/stack.js',
       'shared/components/workbench/layout/print/index.js',
       'shared/components/workbench/layout/print/orientation-picker.js',
       'shared/components/workbench/layout/print/pagesize-picker.js',
