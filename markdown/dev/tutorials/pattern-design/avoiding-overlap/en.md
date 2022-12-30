@@ -151,7 +151,7 @@ function draftBib({
    *
    * We're using increments of 1 degree 
    * until the `tipRightBottomStart` point 
-   * is 1mm beyond the center of our bib.
+   * is 1 mm beyond the center of our bib.
    */
   while (points.tipRightBottomStart.x > -1) {
     for (const p of rotateThese) points[p] = points[p].rotate(1, points.edgeLeft)

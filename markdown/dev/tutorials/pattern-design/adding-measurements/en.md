@@ -45,7 +45,7 @@ This change will also get picked up by the development environment, and you'll n
 ![This screen tells you that you are missing some required measurements](./required-measurements.png)
 
 Since it's just one measurement, let's simply enter a value by hand.
-For example `38` as 38cm is a realistic head circumference measurement for a baby.
+For example `38` as 38 cm is a realistic head circumference measurement for a baby.
 
 Enter `38` in the box, and click on **Draft Design** in the sidebar under the **View** heading.
 This brings you back to our work in progress:
