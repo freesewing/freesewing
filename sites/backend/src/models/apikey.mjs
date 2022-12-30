@@ -1,6 +1,6 @@
 import { log } from '../utils/log.mjs'
-import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
-import { clean, asJson } from '../utils/index.mjs'
+import { hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
+import { asJson } from '../utils/index.mjs'
 import { UserModel } from './user.mjs'
 
 export function ApikeyModel(tools) {
@@ -103,7 +103,7 @@ ApikeyModel.prototype.unguardedDelete = async function () {
 }
 
 ApikeyModel.prototype.create = async function ({ body, user }) {
-  if (Object.keys(body) < 1) return this.setResponse(400, 'postBodyMissing')
+  if (Object.keys(body).length < 1) return this.setResponse(400, 'postBodyMissing')
   if (!body.name) return this.setResponse(400, 'nameMissing')
   if (!body.level) return this.setResponse(400, 'levelMissing')
   if (typeof body.level !== 'number') return this.setResponse(400, 'levelNotNumeric')
