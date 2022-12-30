@@ -158,6 +158,10 @@ The list is automatically generated from the pages in the subdirectories
 of the documentation page's directory.
 This tag is typically used on overview pages, such as our [Markdown guide](/guides/markdown) page.
 
+| Attribute | Default | Description |
+| ----:| ------- | ----------- |
+| `recurse` | `false` | Include all child-pages and sub-child-pages in the entire directory tree |
+
 ```markdown
 <ReadMore />
 ```

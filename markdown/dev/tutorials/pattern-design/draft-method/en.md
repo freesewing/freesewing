@@ -21,7 +21,7 @@ does.
 
 If you're not familiar with the `({ part })` syntax you see above, this is a
 technique called *parameter destructuring* or more generally, [object
-desctructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
 The draft method receives only 1 parameter: An object that holds everything you
 need to draft your method.  Destructuring is a way to *pull things out of the

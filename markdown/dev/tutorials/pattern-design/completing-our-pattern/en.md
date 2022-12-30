@@ -55,7 +55,7 @@ Snippets are little re-useable things to embellish your pattern with.
 Things like buttons or buttonholes, a logo, or snaps.
 
 To use them, much like points and paths, we need to destructure both
-the `Snippet` constructure as well as the `snippets` object to hold
+the `Snippet` constructor as well as the `snippets` object to hold
 our snippets:
 
 ```mjs

@@ -9,7 +9,7 @@ and create one single path that follows our bib outline.
 And as we now have one path to draw the bib, we can (and should)
 remove the earlier paths we drew to see what we are doing.
 
-The `round` macro we added earlier is still required to calcuate the points we
+The `round` macro we added earlier is still required to calculate the points we
 need to construct the half-circle. But we don't want it to draw the half-circle
 path. As it happens, that is the default behaviour, so we merely have to remove
 it's `hidden: false` property.

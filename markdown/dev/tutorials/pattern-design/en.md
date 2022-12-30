@@ -232,10 +232,10 @@ FreeSewing is a JavaScript library that can run in the browser, on
 [Node.js](https://nodejs.org/), or a variety of other runtimes such as Deno,
 AWS Lambda, and so on.
 
-For development, we'll use NodeJS. If you don't have Node.js on your system,
+For development, we'll use Node.js. If you don't have Node.js on your system,
 follow the link above and install it on your system.
 
-<Tip compact>You need NodeJS 16 or higher to use FreeSewing</Tip>
+<Tip compact>You need Node.js 16 or higher to use FreeSewing</Tip>
 
 When you're done, you can test whether it works by running:
 
@@ -243,4 +243,4 @@ When you're done, you can test whether it works by running:
 node -v
 ```
 
-If you get the node version number, you're all set.
+If you get the Node.js version number, you're all set.
