@@ -51,6 +51,17 @@ const repo = {
  */
 const log = process.stdout
 
+// Step 0: Avoid symlink so Windows users don't complain
+const copyThese = [
+  {
+    from: ['scripts', 'banner.mjs'],
+    to: ['packages', 'new-design', 'lib', 'banner.mjs'],
+  },
+]
+for (const cp of copyThese) {
+  fs.copyFile(path.join(repo.path, ...cp.from), path.join(repo.path, ...cp.to), () => null)
+}
+
 // Step 1: Generate main README file from template
 log.write(chalk.blueBright('Generating out main README file...'))
 fs.writeFileSync(
