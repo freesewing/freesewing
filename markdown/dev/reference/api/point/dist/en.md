@@ -19,18 +19,17 @@ float point.dist(Point point)
 
   points.from = new Point(10, 10)
   points.to = new Point(80, 70)
-  
+
   points.text = points.from
     .shiftFractionTowards(points.to, 0.6)
     .setText(units(points.from.dist(points.to)), 'text-sm fill-note center')
-  
+
   paths.line = new Path()
     .move(points.from)
     .line(points.to)
     .setClass('dashed')
-  
+
   return part
 }
 ```
 </Example>
-

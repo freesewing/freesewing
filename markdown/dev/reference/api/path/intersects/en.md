@@ -23,7 +23,7 @@ array|false path.intersects(Path path)
   points.CCp1 = new Point(50, -30)
   points.D = new Point(50, 130)
   points.DCp1 = new Point(150, 30)
-  
+
   points._A = new Point(55, 40)
   points._B = new Point(0, 55)
   points._BCp2 = new Point(40, -20)
@@ -31,7 +31,7 @@ array|false path.intersects(Path path)
   points._CCp1 = new Point(50, -30)
   points._D = new Point(40, 120)
   points._DCp1 = new Point(180, 40)
-  
+
   paths.demo1 = new Path()
     .move(points.A)
     .line(points.B)
@@ -42,7 +42,7 @@ array|false path.intersects(Path path)
     .line(points._B)
     .curve(points._BCp2, points._CCp1, points._C)
     .curve(points._DCp1, points._DCp1, points._D)
-  
+
   for (let p of paths.demo1.intersects(paths.demo2)) {
     snippets[getId()] = new Snippet('notch', p)
   }

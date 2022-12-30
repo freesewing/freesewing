@@ -20,11 +20,11 @@ Number path.roughLength()
   points.BCp2 = new Point(40, 20)
   points.C = new Point(120, 30)
   points.CCp1 = new Point(50, -30)
-  
+
   paths.example = new Path()
     .move(points.B)
     .curve(points.BCp2, points.CCp1, points.C)
-  
+
   macro("pd", {
     path: paths.example,
     d: -10,
@@ -35,7 +35,7 @@ Number path.roughLength()
     d: 10,
     text: `Path.length() = ${units(paths.example.length())}`
   })
-  
+
 
   return part
 }

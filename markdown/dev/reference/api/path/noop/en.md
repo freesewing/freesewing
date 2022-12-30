@@ -25,13 +25,13 @@ Path path.noop(string id)
   points.dartTip = new Point(50, 50)
   points.dartRight = new Point(60, 10)
   points.right = new Point(90, 10)
-  
+
   paths.withoutDart = new Path()
     .move(points.left)
     .line(points.dartLeft)
     .noop('dart')
     .line(points.right)
-  
+
   paths.withDart = paths.withoutDart
     .clone()
     .insop(
@@ -46,4 +46,3 @@ Path path.noop(string id)
 }
 ```
 </Example>
-
