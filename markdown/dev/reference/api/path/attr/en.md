@@ -5,15 +5,15 @@ title: Path.attr()
 This `Path.attr()` method can be used to add attributes to the Path object.
 It calls `this.attributes.add()` under the hood, and returns the Path object.
 
-If the third parameter is set to `true` it will call `this.attributes.set()` 
+If the third parameter is set to `true` it will call `this.attributes.set()`
 instead, thereby overwriting the value of the attribute.
 
 ## Signature
 
 ```js
 Path path.attr(
-  string name, 
-  mixed value, 
+  string name,
+  mixed value,
   bool overwrite = false
 )
 ```
@@ -34,7 +34,7 @@ Path path.attr(
   paths.example = new Path()
     .move(points.from)
     .curve(points.cp1, points.cp2, points.to)
-    .setClass("canvas")
+    .attr("class", "canvas")
     .setText("FreeSewing rocks", "text-xs center")
 
   return part
@@ -45,7 +45,7 @@ Path path.attr(
 
 ## Notes
 
-Methods like 
+Methods like
 [`Path.addClass`](/reference/api/path/addclass),
 [`Path.setClass`](/reference/api/path/setclass),
 [`Path.addText`](/reference/api/path/addtext), and
