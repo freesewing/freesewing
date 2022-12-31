@@ -75,7 +75,7 @@
     "react-copy-to-clipboard": "^5.0.4",
     "react-hotkeys-hook": "^3.4.4",
     "react-swipeable": "^6.2.0",
-    "react-timeago": "^6.2.1",
+    "react-timeago": "^7.1.0",
     "mocha": "^9.1.1",
     "chai": "^4.2.0",
     "autoprefixer": "^10.4.0",
@@ -99,7 +99,13 @@
     "tag": "next"
   },
   "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=6"
+    "node": ">=16.0.0",
+    "npm": ">=8.3.0"
+  },
+  "overrides": {
+    "react-zoom-pan-pinch": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    }
   }
 }
