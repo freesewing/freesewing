@@ -4723,6 +4723,16 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
+"@tailwindcss/typography@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@tailwindcss/typography/-/typography-0.5.0.tgz#47886ec46ac41e1211d24fea05301046d9b30906"
+  integrity sha512-1p/3C6C+JJziS/ghtG8ACYalbA2SyLJY27Pm33cVTlAoY6VQ7zfm2H64cPxUMBkVIlWXTtWHhZcZJPobMRmQAA==
+  dependencies:
+    lodash.castarray "^4.4.0"
+    lodash.isplainobject "^4.0.6"
+    lodash.merge "^4.6.2"
+    lodash.uniq "^4.5.0"
+
 "@tailwindcss/typography@0.5.8":
   version "0.5.8"
   resolved "https://registry.yarnpkg.com/@tailwindcss/typography/-/typography-0.5.8.tgz#8fb31db5ab0590be6dfa062b1535ac86ad9d12bf"
@@ -10989,10 +10999,10 @@ hey-listen@^1.0.8:
   resolved "https://registry.npmjs.org/hey-listen/-/hey-listen-1.0.8.tgz#8e59561ff724908de1aa924ed6ecc84a56a9aa68"
   integrity sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==
 
-highlight.js@11.4.0:
-  version "11.4.0"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.4.0.tgz#34ceadd49e1596ee5aba3d99346cdfd4845ee05a"
-  integrity sha512-nawlpCBCSASs7EdvZOYOYVkJpGmAOKMYZgZtUqSRqodZE0GRVcFKwo1RcpeOemqh9hyttTdd5wDBwHkuSyUfnA==
+highlight.js@11.7.0:
+  version "11.7.0"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.7.0.tgz#3ff0165bc843f8c9bce1fd89e2fda9143d24b11e"
+  integrity sha512-1rRqesRFhMO/PRF+G86evnyJkCgaZFOI+Z6kdj15TA18funfoqJXvgPCLSf0SWq3SRfg1j3HlDs8o4s3EGq1oQ==
 
 highlight.js@~11.6.0:
   version "11.6.0"
@@ -20233,6 +20243,15 @@ unist-util-visit-parents@^5.0.0, unist-util-visit-parents@^5.1.1:
   dependencies:
     "@types/unist" "^2.0.0"
     unist-util-is "^5.0.0"
+
+unist-util-visit@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-4.1.0.tgz#f41e407a9e94da31594e6b1c9811c51ab0b3d8f5"
+  integrity sha512-n7lyhFKJfVZ9MnKtqbsqkQEk5P1KShj0+//V7mAcoI6bpbUjh3C/OG8HVD+pBihfh6Ovl01m8dkcv9HNqYajmQ==
+  dependencies:
+    "@types/unist" "^2.0.0"
+    unist-util-is "^5.0.0"
+    unist-util-visit-parents "^5.0.0"
 
 unist-util-visit@4.1.1, unist-util-visit@^4.0.0, unist-util-visit@^4.1.0, unist-util-visit@~4.1.0:
   version "4.1.1"
