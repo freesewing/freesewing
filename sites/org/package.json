@@ -37,7 +37,7 @@
     "lodash.orderby": "4.6.0",
     "lodash.set": "4.3.2",
     "next": "13.1.0",
-    "react-hotkeys-hook": "4.0.6",
+    "react-hotkeys-hook": "4.3.2",
     "react-instantsearch-dom": "6.38.1",
     "react-markdown": "8.0.4",
     "react-swipeable": "7.0.0",
