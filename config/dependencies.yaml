@@ -59,7 +59,7 @@ core:
     'lodash.set': &_set '4.3.2'
     'lodash.unset': &_unset '4.5.2'
   dev:
-    'eslint': '8.23.1'
+    'eslint': &eslint '8.31.0'
     'nyc': '15.1.0'
 diana:
   peer:
@@ -95,7 +95,7 @@ jaeger:
     '@freesewing/plugin-mirror': *freesewing
 new-design:
   _:
-    'axios': '1.1.2'
+    'axios': '1.2.2'
     'chalk': '5.0.1'
     'execa': '6.1.0'
     'mustache': '4.2.0'
@@ -234,10 +234,10 @@ dev:
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': &mdxRuntime '2.0.0-next.9'
-    '@next/bundle-analyzer': &next '13.1.0'
+    '@next/bundle-analyzer': &next '13.1.1'
     '@tailwindcss/typography': '0.5.8'
     'algoliasearch': '4.14.3'
-    'daisyui': &daisyui '2.46.0'
+    'daisyui': &daisyui '2.46.1'
     'lodash.get': *_get
     'lodash.orderby': &_orderby '4.6.0'
     'lodash.set': *_set
@@ -245,7 +245,7 @@ dev:
     'react': &react '18.2.0'
     'react-copy-to-clipboard': &reactCopyToClipboard '5.1.0'
     'react-dom': *react
-    'react-hotkeys-hook': &reactHotkeysHook '4.0.6'
+    'react-hotkeys-hook': &reactHotkeysHook '4.3.2'
     'react-instantsearch-dom': &reactInstantsearchDom '6.38.1'
     'react-markdown': &reactMarkdown '8.0.4'
     'react-swipeable': &reactSwipeable '7.0.0'
@@ -347,7 +347,7 @@ sanity:
     'sanity-plugin-markdown': '3.0.1'
   dev:
     '@sanity/eslint-config-studio': '2.0.1'
-    'eslint': '8.6.0'
+    'eslint': *eslint
     'prettier': '2.8.1'
     'typescript': '4.9.4'
     '@sanity/cli': '3.1.2'
@@ -355,7 +355,7 @@ sanity:
 shared:
   _:
     '@headlessui/react': *headlessUiReact
-    '@resvg/resvg-js': '2.1.0'
+    '@resvg/resvg-js': '2.2.0'
     '@tailwindcss/typography': *tailwindTypography
     'Buffer': '0.0.0'
     'd3-dispatch': '3.0.1'
@@ -365,7 +365,7 @@ shared:
     'feed': '4.2.2'
     'file-saver': '2.0.5'
     'front-matter': '4.0.2'
-    'highlight.js': '11.4.0'
+    'highlight.js': '11.7.0'
     'lodash.clonedeep': '4.5.0'
     'lodash.orderby': *_orderby
     'lodash.unset': *_unset
