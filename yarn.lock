@@ -912,25 +912,7 @@
     eslint-visitor-keys "^2.1.0"
     semver "^6.3.0"
 
-"@babel/generator@^7.18.9":
-  version "7.18.9"
-  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.18.9.tgz#68337e9ea8044d6ddc690fb29acae39359cca0a5"
-  integrity sha512-wt5Naw6lJrL1/SGkipMiFxJjtyczUWTP38deiP1PO60HsBjDeKk08CGC3S8iVuvf0FmTdgKwU1KIXzSKL1G0Ug==
-  dependencies:
-    "@babel/types" "^7.18.9"
-    "@jridgewell/gen-mapping" "^0.3.2"
-    jsesc "^2.5.1"
-
-"@babel/generator@^7.19.6":
-  version "7.19.6"
-  resolved "https://registry.npmjs.org/@babel/generator/-/generator-7.19.6.tgz#9e481a3fe9ca6261c972645ae3904ec0f9b34a1d"
-  integrity sha512-oHGRUQeoX1QrKeJIKVe0hwjGqNnVYsM5Nep5zo0uE0m42sLH+Fsd2pStJ5sRM1bNyTUUoz0pe2lTeMJrb/taTA==
-  dependencies:
-    "@babel/types" "^7.19.4"
-    "@jridgewell/gen-mapping" "^0.3.2"
-    jsesc "^2.5.1"
-
-"@babel/generator@^7.20.1", "@babel/generator@^7.20.2":
+"@babel/generator@^7.20.2":
   version "7.20.4"
   resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.20.4.tgz#4d9f8f0c30be75fd90a0562099a26e5839602ab8"
   integrity sha512-luCf7yk/cm7yab6CAW1aiFnmEfBJplb/JojV56MYEK7ziWfGmFlTfmL9Ehwfy4gFhbjBfWO1wj7/TuSbVNEEtA==
@@ -1291,17 +1273,17 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/parser@^7.18.10", "@babel/parser@^7.19.6":
+"@babel/parser@^7.18.10":
   version "7.19.6"
   resolved "https://registry.npmjs.org/@babel/parser/-/parser-7.19.6.tgz#b923430cb94f58a7eae8facbffa9efd19130e7f8"
   integrity sha512-h1IUp81s2JYJ3mRkdxJgs4UvmSsRvDrx5ICSJbPvtWYv5i1nTBGcBpnog+89rAFMwvvru6E5NUHdBe01UeSzYA==
 
-"@babel/parser@^7.18.6", "@babel/parser@^7.18.9":
+"@babel/parser@^7.18.6":
   version "7.18.9"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.18.9.tgz#f2dde0c682ccc264a9a8595efd030a5cc8fd2539"
   integrity sha512-9uJveS9eY9DJ0t64YbIBZICtJy8a5QrDEVdiLCG97fVLpDTpGX7t8mMSb6OWw6Lrnjqj4O8zwjELX3dhoMgiBg==
 
-"@babel/parser@^7.20.1", "@babel/parser@^7.20.2":
+"@babel/parser@^7.20.2":
   version "7.20.3"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.20.3.tgz#5358cf62e380cf69efcb87a7bb922ff88bfac6e2"
   integrity sha512-OP/s5a94frIPXwjzEcv5S/tpQfc6XhxYUnmWpgdqMWGgYCuErA3SzozaRAMQgSZWKeTJxht9aWAkUY+0UzvOFg==
@@ -2029,23 +2011,7 @@
     "@babel/parser" "^7.20.7"
     "@babel/types" "^7.20.7"
 
-"@babel/traverse@^7.18.9":
-  version "7.18.9"
-  resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.18.9.tgz#deeff3e8f1bad9786874cb2feda7a2d77a904f98"
-  integrity sha512-LcPAnujXGwBgv3/WHv01pHtb2tihcyW1XuL9wd7jqh1Z8AQkTd+QVjMrMijrln0T7ED3UXLIy36P9Ao7W75rYg==
-  dependencies:
-    "@babel/code-frame" "^7.18.6"
-    "@babel/generator" "^7.18.9"
-    "@babel/helper-environment-visitor" "^7.18.9"
-    "@babel/helper-function-name" "^7.18.9"
-    "@babel/helper-hoist-variables" "^7.18.6"
-    "@babel/helper-split-export-declaration" "^7.18.6"
-    "@babel/parser" "^7.18.9"
-    "@babel/types" "^7.18.9"
-    debug "^4.1.0"
-    globals "^11.1.0"
-
-"@babel/traverse@^7.19.0", "@babel/traverse@^7.20.7":
+"@babel/traverse@^7.18.9", "@babel/traverse@^7.19.0", "@babel/traverse@^7.19.1", "@babel/traverse@^7.19.6", "@babel/traverse@^7.20.1", "@babel/traverse@^7.20.7", "@babel/traverse@^7.4.5":
   version "7.20.8"
   resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.20.8.tgz#e3a23eb04af24f8bbe8a8ba3eef6155b77df0b08"
   integrity sha512-/RNkaYDeCy4MjyV70+QkSHhxbvj2JO/5Ft2Pa880qJOG8tWrqcT/wXUuCCv43yogfqPzHL77Xu101KQPf4clnQ==
@@ -2058,38 +2024,6 @@
     "@babel/helper-split-export-declaration" "^7.18.6"
     "@babel/parser" "^7.20.7"
     "@babel/types" "^7.20.7"
-    debug "^4.1.0"
-    globals "^11.1.0"
-
-"@babel/traverse@^7.19.1", "@babel/traverse@^7.20.1":
-  version "7.20.1"
-  resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.20.1.tgz#9b15ccbf882f6d107eeeecf263fbcdd208777ec8"
-  integrity sha512-d3tN8fkVJwFLkHkBN479SOsw4DMZnz8cdbL/gvuDuzy3TS6Nfw80HuQqhw1pITbIruHyh7d1fMA47kWzmcUEGA==
-  dependencies:
-    "@babel/code-frame" "^7.18.6"
-    "@babel/generator" "^7.20.1"
-    "@babel/helper-environment-visitor" "^7.18.9"
-    "@babel/helper-function-name" "^7.19.0"
-    "@babel/helper-hoist-variables" "^7.18.6"
-    "@babel/helper-split-export-declaration" "^7.18.6"
-    "@babel/parser" "^7.20.1"
-    "@babel/types" "^7.20.0"
-    debug "^4.1.0"
-    globals "^11.1.0"
-
-"@babel/traverse@^7.19.6", "@babel/traverse@^7.4.5":
-  version "7.19.6"
-  resolved "https://registry.npmjs.org/@babel/traverse/-/traverse-7.19.6.tgz#7b4c865611df6d99cb131eec2e8ac71656a490dc"
-  integrity sha512-6l5HrUCzFM04mfbG09AagtYyR2P0B71B1wN7PfSPiksDPz2k5H9CBC1tcZpz2M8OxbKTPccByoOJ22rUKbpmQQ==
-  dependencies:
-    "@babel/code-frame" "^7.18.6"
-    "@babel/generator" "^7.19.6"
-    "@babel/helper-environment-visitor" "^7.18.9"
-    "@babel/helper-function-name" "^7.19.0"
-    "@babel/helper-hoist-variables" "^7.18.6"
-    "@babel/helper-split-export-declaration" "^7.18.6"
-    "@babel/parser" "^7.19.6"
-    "@babel/types" "^7.19.4"
     debug "^4.1.0"
     globals "^11.1.0"
 
@@ -4387,6 +4321,17 @@
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-3.1.2.tgz#45841216b0adacd2b5a580dca5270c9862359720"
   integrity sha512-rLW1zwYpv1lBCRGi5/va/rUKvADtZ1m2j+IwYOCsUvJ8x3rf+ZVBgbMHEa+zoXGWCf1Fsq3nxzF66mhjMdWPDg==
+  dependencies:
+    "@babel/traverse" "^7.19.0"
+    esbuild "^0.14.43"
+    esbuild-register "^3.3.2"
+    get-it "^5.2.1"
+    pkg-dir "^5.0.0"
+
+"@sanity/cli@3.1.4":
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-3.1.4.tgz#6c71b232ee6d27c49420857fae3c7c1122e24469"
+  integrity sha512-3DddMZlmvXSzOFmq8dw/26OFvLtMiX8iBJLZ41xUTnSp2EC9dWsL5rX0xzhouFVkqQe4tMfbk6AEkdJK7OStnA==
   dependencies:
     "@babel/traverse" "^7.19.0"
     esbuild "^0.14.43"
