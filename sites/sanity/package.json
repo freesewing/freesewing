@@ -33,7 +33,7 @@
     "eslint": "8.31.0",
     "prettier": "2.8.1",
     "typescript": "4.9.4",
-    "@sanity/cli": "3.1.2"
+    "@sanity/cli": "3.1.4"
   },
   "engines": {
     "node": ">=16.0.0",
