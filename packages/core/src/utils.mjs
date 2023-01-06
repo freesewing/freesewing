@@ -265,8 +265,7 @@ export function curvesIntersect(fromA, cp1A, cp2A, toA, fromB, cp1B, cp2B, toB) 
       }
       if (!dupe) unique.push(i)
     }
-    if (unique.length === 1) return unique[0]
-    return unique
+    return unique.length === 1 ? unique.shift() : unique
   }
 }
 
