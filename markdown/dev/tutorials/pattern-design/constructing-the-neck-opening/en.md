@@ -16,11 +16,11 @@ access to our measurements and options to do so. For this, we first destructure
 `measurements` and `options` so we can access them:
 
 ```design/src/bib.mjs
-function draftBib({ 
-  Path, 
-  Point, 
-  paths, 
-  points, 
+function draftBib({
+  Path,
+  Point,
+  paths,
+  points,
   // highlight-start
   measurements,
   options
@@ -40,11 +40,11 @@ Let's add some points, and use them to draw our first curve:
 
 <Example tutorial caption="Our very first path forms a quarter of our neck opening">
 ```js
-function draftBib({ 
-  Path, 
-  Point, 
-  paths, 
-  points, 
+function draftBib({
+  Path,
+  Point,
+  paths,
+  points,
   measurements,
   options,
   part,
@@ -54,12 +54,12 @@ function draftBib({
   // Construct the quarter neck opening
   points.right = new Point(measurements.head / 10, 0)
   points.bottom = new Point(0, measurements.head / 12)
-  
+
   points.rightCp1 = points.right
     .shift(90, points.bottom.dy(points.right)/2)
   points.bottomCp2 = points.bottom
     .shift(0, points.bottom.dx(points.right)/2)
-  
+
   paths.quarterNeck = new Path()
     .move(points.right)
     .curve(points.rightCp1, points.bottomCp2, points.bottom)
@@ -70,7 +70,7 @@ function draftBib({
 ```
 </Example>
 
-You've added some points to your part, and drawn your first path. 
+We've added some points to our part, and drawn our first path.
 Let's look at each line in detail.
 
 ## Adding points
@@ -98,10 +98,10 @@ points.rightCp1 = points.right
 - Instead of using the Point constructor, we're calling the `Point.shift()`
   method on an existing point
 - It takes two arguments: The angle to shift towards, and the distance
-- You can see that we're shifting 90 degrees (that means up) but the distance
+- We can see that we're shifting 90 degrees (that means up) but the distance
   uses another method
 - The `Point.dy()` method returns the delta along the Y axis between the point
-  you call it on and the point you pass it
+  we call it on and the point we pass it
 - We shift half of the Y-delta
 
 The next point is very similar again, except that this time we're shifting to

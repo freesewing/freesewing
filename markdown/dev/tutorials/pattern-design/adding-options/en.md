@@ -3,17 +3,17 @@ title: Adding options
 order: 140
 ---
 
-You know what your bib should look like, and you have the _head_ measurement
-to work with. But there's still a number of choices you have to make:
+We know what our bib should look like, and we have the _head_ measurement
+to work with. But there's still a number of choices we have to make:
 
 - How large should the neck opening be?
 - How wide should the bib be?
 - How long should the bib be?
 
-You can make all of these choices for the user and set them in stone, so to speak.
+We can make all of these choices for the user and set them in stone, so to speak.
 
-But since you're designing a pattern in code, it's trivial to make your pattern
-flexible and let the user decide. All you have to do is add options to your part.
+But since we're designing a pattern in code, it's trivial to make our pattern
+flexible and let the user decide. All we have to do is add options to our part.
 
 ## Add the neckRatio option
 
@@ -34,7 +34,7 @@ export const bib = {
   measurements: ['head'],
   // highlight-start
   options: {
-    neckRatio: { pct: 80, min: 70, max: 90, menu: 'fit' }, 
+    neckRatio: { pct: 80, min: 70, max: 90, menu: 'fit' },
   },
   // highlight-end
 }
@@ -61,24 +61,24 @@ Let's do something similar for the width and length of our bib:
 
 ```design/src/bib.mjs
 options: {
-  neckRatio: { pct: 80, min: 70, max: 90, menu: 'fit' }, 
-  widthRatio: { pct: 45, min: 35, max: 55, menu: 'style' }, 
-  lengthRatio: { pct: 75, min: 55, max: 85, menu: 'style' }, 
+  neckRatio: { pct: 80, min: 70, max: 90, menu: 'fit' },
+  widthRatio: { pct: 45, min: 35, max: 55, menu: 'style' },
+  lengthRatio: { pct: 75, min: 55, max: 85, menu: 'style' },
 }
 ```
 
-- You've added `widthRatio` and `lengthRatio` options
-- You've given all options sensible defaults
-- You've given all options sensible maximum and minimum boundaries
-- You've added these two new options to the *style* menu
+- We've added `widthRatio` and `lengthRatio` options
+- We've given all options sensible defaults
+- We've given all options sensible maximum and minimum boundaries
+- We've added these two new options to the *style* menu
 
-Later, you'll test-drive your pattern to see how it behaves when you adapt the options
-between their minimum and maximum values. At that time, you can still tweak these values.
+Later, we'll test-drive our pattern to see how it behaves when we adapt the options
+between their minimum and maximum values. At that time, we can still tweak these values.
 
 With that out of the way, let's start drawing our bib.
 
 ## Notes
 
-The `menu` key on an option does not do anything for your pattern as such.
+The `menu` key on an option does not do anything for our pattern as such.
 Instead it signals to the frontend that this is how options should be grouped
 together and presented to the user.
