@@ -9,7 +9,7 @@ Which means, halfway between the start of the curve, and the corner of our recta
 
 <Note>
 
-For this, you'll be using a new method: `Point.shiftFractionTowards()`. We've already
+For this, we'll be using a new method: `Point.shiftFractionTowards()`. We've already
 used `Point.shift()` and there's also `Point.shiftTowards()` and `Point.shiftOutwards()`.
 As always, [the API docs](/reference/api/point/) have all the details.
 
@@ -18,11 +18,11 @@ As always, [the API docs](/reference/api/point/) have all the details.
 
 <Example tutorial caption="All of a sudden, things are starting to look like a bib">
 ```js
-function draftBib({ 
-  Path, 
-  Point, 
-  paths, 
-  points, 
+function draftBib({
+  Path,
+  Point,
+  paths,
+  points,
   measurements,
   options,
   part,
@@ -35,15 +35,15 @@ function draftBib({
   do {
   	points.right = new Point(tweak * measurements.head / 10, 0)
   	points.bottom = new Point(0, tweak * measurements.head / 12)
-  
+
   	points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right)/2)
   	points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right)/2)
-  
+
   	paths.quarterNeck = new Path()
   	  .move(points.right)
   	  .curve(points.rightCp1, points.bottomCp2, points.bottom)
       .hide() // Add this line
-  
+
   	delta = paths.quarterNeck.length() - target
     if (delta > 0) tweak = tweak * 0.99
     else tweak = tweak * 1.02
@@ -68,10 +68,10 @@ function draftBib({
     .close()
     .addClass('fabric')
 
-  // Drawing the bib outline 
+  // Drawing the bib outline
   const width = measurements.head * options.widthRatio
   const length = measurements.head * options.lengthRatio
-  
+
   points.topLeft = new Point(
     width / -2,
     points.top.y - (width / 2 - points.right.x)
@@ -79,7 +79,7 @@ function draftBib({
   points.topRight = points.topLeft.shift(0, width)
   points.bottomLeft = points.topLeft.shift(-90, length)
   points.bottomRight = points.topRight.shift(-90, length)
-  
+
   paths.rect = new Path()
     .move(points.topLeft)
     .line(points.bottomLeft)
@@ -94,7 +94,7 @@ function draftBib({
   points.edgeLeft = new Point(points.topLeft.x, points.left.y)
   points.edgeRight = new Point(points.topRight.x, points.right.y)
   points.edgeTop = new Point(0, points.topLeft.y)
-  
+
   points.edgeLeftCp = points.edgeLeft.shiftFractionTowards(points.topLeft, 0.5)
   points.edgeRightCp = points.edgeLeftCp.flipX()
   points.edgeTopLeftCp = points.edgeTop.shiftFractionTowards(
@@ -102,7 +102,7 @@ function draftBib({
     0.5
   )
   points.edgeTopRightCp = points.edgeTopLeftCp.flipX()
-   
+
   // Now, adapt our `rect` path so it's no longer a rectangle:
   paths.rect = new Path()
     .move(points.edgeTop)
@@ -118,4 +118,3 @@ function draftBib({
 }
 ```
 </Example>
-

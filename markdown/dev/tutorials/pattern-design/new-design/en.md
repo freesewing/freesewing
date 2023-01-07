@@ -10,17 +10,17 @@ npx @freesewing/new-design@next
 ```
 <Fixme compact>Remove `@next` suffix once v3 is in production</Fixme>
 
-You'll be asked some questions. 
+We'll be asked some questions.
 All the defaults will do, but here are the details:
 
 - *What template would you like to use?* — Pick the default: **Tutorial**
 - *What package manager should we use?* — Pick the default: **npm**, unless you are certain you have **yarn** installed
 
-After you've answered these questions, files will be copied, dependencies installed, and components downloaded.
+After we've answered these questions, files will be copied, dependencies installed, and components downloaded.
 
 <Note>
 
-This will take a few minutes because we're loading some software for your development environment.
+This will take a few minutes because we're loading some software for our development environment.
 
 </Note>
 
@@ -31,16 +31,16 @@ cd tutorial
 npm run dev
 ```
 
-Or if you chose to use yarn as package manager:
+Or if we chose to use yarn as package manager:
 
 ```sh
 cd tutorial
 yarn dev
 ```
 
-Now open your browser at http://localhost:8000
+Now open our browser at http://localhost:8000
 
-If all goes well, you should see this landing page:
+If all goes well, we'll should see this landing page:
 
 ![The FreeSewing development environment](./nd.png)
 
