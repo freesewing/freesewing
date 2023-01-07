@@ -176,11 +176,11 @@ describe('Pattern', () => {
   })
 
   describe('Pattern.__pack()', () => {
-    it('should get a part stack name from a function', () => {
+    it('should get a part stack name from a function that uses settings', () => {
       const expectedName = 'namedStack'
       const front = {
         name: 'front',
-        stack: function (settings, partName) {
+        stack: function (settings) {
           return settings.options.stackName
         },
         options: {
