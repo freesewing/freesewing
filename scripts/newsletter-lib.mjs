@@ -9,16 +9,20 @@ import html from 'rehype-stringify'
 import mustache from 'mustache'
 import nodemailer from 'nodemailer'
 import { testers } from '../config/newsletter-testers.mjs'
-import { fileURLToPath } from 'url';
+import { fileURLToPath } from 'url'
 
 // Current working directory
 const cwd = path.dirname(fileURLToPath(import.meta.url))
 
-
-const backend = "https://backend.freesewing.org/"
+const backend = 'https://backend.freesewing.org/'
 
 const asHtml = async (text) => {
-  const content = await unified().use(markdown).use(remark2rehype).use(format).use(html).process(text)
+  const content = await unified()
+    .use(markdown)
+    .use(remark2rehype)
+    .use(format)
+    .use(html)
+    .process(text)
 
   return content.value
 }
@@ -46,7 +50,10 @@ const send = async (test = true) => {
   const template = fs.readFileSync(`${cwd}/../config/templates/newsletter.html`, 'utf8')
   let edition
   try {
-    edition = await axios.get(`https://posts.freesewing.org/newsletters?slug_eq=${process.env.NL_EDITION}`, 'utf8')
+    edition = await axios.get(
+      `https://posts.freesewing.org/newsletters?slug_eq=${process.env.NL_EDITION}`,
+      'utf8'
+    )
   } catch (err) {
     console.log(err)
     process.exit()
@@ -65,6 +72,7 @@ const send = async (test = true) => {
   })
 
   let i = 1
+  subscribers.sort()
   let subs = subscribers.length
   for (let sub of subscribers) {
     // If your SMTP relay start rate-limiting midway through
@@ -96,7 +104,4 @@ const send = async (test = true) => {
 const sendTest = () => send(true)
 const sendReal = () => send(false)
 
-export {
-  sendTest,
-  sendReal,
-}
+export { sendTest, sendReal }
