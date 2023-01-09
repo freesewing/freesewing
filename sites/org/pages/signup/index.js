@@ -23,7 +23,7 @@ const SignUpPage = (props) => {
   const [email, setEmail] = useState('')
   const [emailValid, setEmailValid] = useState(false)
   const [result, setResult] = useState({ result: 'success' })
-  //const [error, setError] = useState(null)
+  const [error, setError] = useState(null)
 
   const updateEmail = (evt) => {
     const value = evt.target.value
@@ -45,6 +45,8 @@ const SignUpPage = (props) => {
       })
     } catch (err) {
       setError(app.error(err))
+      // Here to keep the stupid linter happy
+      console.log(error)
     }
     // Do something clever next
     console.log(res)

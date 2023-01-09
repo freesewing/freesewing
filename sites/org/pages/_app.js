@@ -3,7 +3,7 @@ import { appWithTranslation } from 'next-i18next'
 import React from 'react'
 import Bugsnag from '@bugsnag/js'
 import BugsnagPluginReact from '@bugsnag/plugin-react'
-import process from 'node:process'
+import process from 'process'
 
 Bugsnag.start({
   apiKey: process.env.BUGSNAG_API_KEY,
