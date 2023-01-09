@@ -1,6 +1,6 @@
 {
   "name": "backend.freesewing.org",
-  "version": "3.0.0-alpha.3",
+  "version": "3.0.0-alpha.4",
   "description": "FreeSewing backend",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -28,7 +28,7 @@
   "peerDependencies": {},
   "dependencies": {
     "@aws-sdk/client-sesv2": "3.241.0",
-    "@prisma/client": "4.8.1",
+    "@prisma/client": "4.8.0",
     "bcryptjs": "2.4.3",
     "cors": "2.8.5",
     "crypto": "1.0.1",
