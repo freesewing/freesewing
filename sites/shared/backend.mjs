@@ -1,5 +1,5 @@
 import axios from 'axios'
-import process from 'node:process'
+import process from 'process'
 
 /*
  * Helper methods to interact with the FreeSewing backend

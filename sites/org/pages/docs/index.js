@@ -5,8 +5,8 @@ import MdxWrapper from 'shared/components/wrappers/mdx'
 import ReadMore from 'shared/components/mdx/read-more.js'
 import { jargon } from 'site/jargon.mjs'
 
-const DocsPage = ({ title, mdx }) => {
-  const app = useApp()
+const DocsPage = ({ title, mdx, bugsnag }) => {
+  const app = useApp({ bugsnag })
 
   // We don't need all MDX components here, just ReadMore
   const components = {

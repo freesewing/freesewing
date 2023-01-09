@@ -3,10 +3,10 @@ import { appWithTranslation } from 'next-i18next'
 import React from 'react'
 import Bugsnag from '@bugsnag/js'
 import BugsnagPluginReact from '@bugsnag/plugin-react'
-import process from 'process'
+import { freeSewingConfig } from 'site/freesewing.config.js'
 
 Bugsnag.start({
-  apiKey: process.env.BUGSNAG_API_KEY,
+  apiKey: freeSewingConfig.bugsnag.key,
   collectUserIp: false,
   plugins: [new BugsnagPluginReact()],
 })

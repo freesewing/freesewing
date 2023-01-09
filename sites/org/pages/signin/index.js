@@ -10,8 +10,8 @@ import SusiWrapper from 'site/components/wrappers/susi.js'
 
 const darkLinkClasses = 'decoration-1 underline text-medium font-medium hover:decoration-2'
 
-const SignInPage = () => {
-  const app = useApp()
+const SignInPage = (props) => {
+  const app = useApp(props)
   const { t } = useTranslation(['suli'])
 
   const [username, setUsername] = useState('')

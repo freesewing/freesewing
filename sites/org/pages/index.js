@@ -6,8 +6,8 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Layout from 'site/components/layouts/bare'
 import PageLink from 'shared/components/page-link'
 
-const HomePage = () => {
-  const app = useApp()
+const HomePage = (props) => {
+  const app = useApp(props)
   // Not using translation for now
   //  const { t } = useTranslation(['homepage', 'ograph'])
 
