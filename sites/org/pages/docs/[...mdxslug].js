@@ -13,6 +13,8 @@ import mdxPaths from 'site/prebuild/mdx.paths.js'
 const MdxPage = (props) => {
   // This hook is used for shared code and global state
   const app = useApp()
+  const title = props.page.title
+  const fullTitle = title + ' - FreeSewing.org'
 
   /*
    * Each page should be wrapped in the Page wrapper component
@@ -41,6 +43,7 @@ const MdxPage = (props) => {
         <meta property="og:url" content={`https://freesewing.dev/${props.page.slug}`} key="url" />
         <meta property="og:locale" content="en_US" key="locale" />
         <meta property="og:site_name" content="freesewing.dev" key="site" />
+        <title>{fullTitle}</title>
       </Head>
       <div className="flex flex-row-reverse flex-wrap xl:flex-nowrap justify-end">
         {props.toc && (
