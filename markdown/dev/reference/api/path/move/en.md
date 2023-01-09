@@ -19,7 +19,7 @@ Path path.move(Point to)
 
   points.to = new Point(50, 20)
     .setText("Path.move()", "text-xs fill-note center")
-  
+
   paths.noline = new Path().move(points.to)
 
   // Prevents clipping

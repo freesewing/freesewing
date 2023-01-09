@@ -1,6 +1,6 @@
----
+- - -
 title: "Paco pants: Sewing Instructions"
----
+- - -
 
 <Tip>
 
@@ -37,7 +37,6 @@ je nog nooit paspelzakken hebt gemaakt, ben je in orde.
 [Naar de documentatie voor paspelzakken (in het Engels)](https://freesewing.org/docs/sewing/double-welt-pockets/)
 
 </Tip>
-
 
 ## Stap 2: Maak de voorzakken
 

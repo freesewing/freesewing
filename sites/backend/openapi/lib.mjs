@@ -423,7 +423,7 @@ Also: Introvert 🙊
           example: 'user',
           enum: ['user', 'bughunter', 'support', 'admin'],
         },
-        patron: {
+        status: {
           description: `The status of the user's account
 - \`0\`: The account is not active (yet)
 - \`1\`: The account is active

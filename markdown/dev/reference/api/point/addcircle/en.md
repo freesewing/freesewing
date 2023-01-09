@@ -10,7 +10,7 @@ will call `Point.attr()` as circles are added by setting attributes. Refer to
 
 ```js
 Point point.addCircle(
-  number radius, 
+  number radius,
   string className
 )
 ```
@@ -41,5 +41,3 @@ Point point.addCircle(
 }
 ```
 </Example>
-
-

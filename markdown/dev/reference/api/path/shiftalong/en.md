@@ -29,12 +29,12 @@ For most cases, the default will be fine.
   points.BCp2 = new Point(40, 20)
   points.C = new Point(90, 30)
   points.CCp1 = new Point(50, -30)
-  
+
   paths.example = new Path()
     .move(points.A)
     .line(points.B)
     .curve(points.BCp2, points.CCp1, points.C)
-  
+
   points.x1 = paths.example
     .shiftAlong(20)
     .attr("data-text", "2 cm")
@@ -45,7 +45,7 @@ For most cases, the default will be fine.
     .attr("data-text", "9 cm")
     .attr("data-text-class", "center fill-note")
     .attr("data-text-lineheight", 6)
-  
+
   snippets.x1 = new Snippet("notch", points.x1)
   snippets.x2 = new Snippet("notch", points.x2)
 

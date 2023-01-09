@@ -39,7 +39,7 @@ UserModel.prototype.read = async function (where) {
 /*
  * Helper method to decrypt at-rest data
  */
-UserModel.prototype.reveal = async function (where) {
+UserModel.prototype.reveal = async function () {
   this.clear = {}
   if (this.record) {
     for (const field of this.encryptedFields) {
@@ -140,7 +140,7 @@ UserModel.prototype.setExists = function () {
  * Creates a user+confirmation and sends out signup email
  */
 UserModel.prototype.guardedCreate = async function ({ body }) {
-  if (Object.keys(body) < 1) return this.setResponse(400, 'postBodyMissing')
+  if (Object.keys(body).length < 1) return this.setResponse(400, 'postBodyMissing')
   if (!body.email) return this.setResponse(400, 'emailMissing')
   if (!body.language) return this.setResponse(400, 'languageMissing')
   if (!this.config.languages.includes(body.language))
@@ -226,7 +226,7 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
  * Login based on username + password
  */
 UserModel.prototype.passwordLogin = async function (req) {
-  if (Object.keys(req.body) < 1) return this.setResponse(400, 'postBodyMissing')
+  if (Object.keys(req.body).length < 1) return this.setResponse(400, 'postBodyMissing')
   if (!req.body.username) return this.setResponse(400, 'usernameMissing')
   if (!req.body.password) return this.setResponse(400, 'passwordMissing')
 
@@ -266,7 +266,7 @@ UserModel.prototype.passwordLogin = async function (req) {
  */
 UserModel.prototype.confirm = async function ({ body, params }) {
   if (!params.id) return this.setResponse(404)
-  if (Object.keys(body) < 1) return this.setResponse(400, 'postBodyMissing')
+  if (Object.keys(body).length < 1) return this.setResponse(400, 'postBodyMissing')
   if (!body.consent || typeof body.consent !== 'number' || body.consent < 1)
     return this.setResponse(400, 'consentRequired')
 
@@ -274,12 +274,12 @@ UserModel.prototype.confirm = async function ({ body, params }) {
   await this.Confirmation.read({ id: params.id })
 
   if (!this.Confirmation.exists) {
-    log.warn(err, `Could not find confirmation id ${params.id}`)
+    log.warn(`Could not find confirmation id ${params.id}`)
     return this.setResponse(404)
   }
 
   if (this.Confirmation.record.type !== 'signup') {
-    log.warn(err, `Confirmation mismatch; ${params.id} is not a signup id`)
+    log.warn(`Confirmation mismatch; ${params.id} is not a signup id`)
     return this.setResponse(404)
   }
 
@@ -356,7 +356,6 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
       data.lusername = clean(body.username)
     } else {
       log.info(`Rejected user name change from ${data.username} to ${body.username.trim()}`)
-      notes.push('usernameChangeRejected')
     }
   }
   // Image (img)
@@ -401,12 +400,12 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
     await this.Confirmation.read({ id: body.confirmation })
 
     if (!this.Confirmation.exists) {
-      log.warn(err, `Could not find confirmation id ${params.id}`)
+      log.warn(`Could not find confirmation id ${body.confirmation}`)
       return this.setResponse(404)
     }
 
     if (this.Confirmation.record.type !== 'emailchange') {
-      log.warn(err, `Confirmation mismatch; ${params.id} is not an emailchange id`)
+      log.warn(`Confirmation mismatch; ${body.confirmation} is not an emailchange id`)
       return this.setResponse(404)
     }
 
@@ -627,11 +626,10 @@ UserModel.prototype.loginOk = function () {
  */
 UserModel.prototype.isLusernameAvailable = async function (lusername) {
   if (lusername.length < 2) return false
-  let found
   try {
-    found = await this.prisma.user.findUnique({ where: { lusername } })
+    await this.prisma.user.findUnique({ where: { lusername } })
   } catch (err) {
-    log.warn({ err, where }, 'Could not search for free username')
+    log.warn({ err, lusername }, 'Could not search for free username')
   }
 
   return true

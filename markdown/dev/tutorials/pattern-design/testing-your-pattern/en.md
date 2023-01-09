@@ -70,7 +70,7 @@ option](test-option-neckratio.png)
 
 ### widthRatio
 
-The `widthRatio` option will determine the width of our bib.  For a the same
+The `widthRatio` option will determine the width of our bib.  For the same
 `head` measurement, varying this option should result in increasingly wider
 bibs.
 
@@ -133,7 +133,7 @@ somehow his suit still fits.
 
 The purpose of the antperson test is to bring out areas in your pattern where
 you made assumptions that will not properly scale.  Many drafting books will
-tell you to _add 3cm there_ or _measure 2 inch to the right_. Those
+tell you to _add 3 cm there_ or _measure 2 inch to the right_. Those
 instructions don't scale, and you should avoid them.
 
 The best patterns will pass the antperson test with 2 patterns exactly the

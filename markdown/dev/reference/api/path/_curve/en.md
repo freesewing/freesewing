@@ -46,5 +46,3 @@ as the two following calls yield the same result:
 path.curve(point1, point1, point2)
 path._curve(point1, point2)
 ```
-
-

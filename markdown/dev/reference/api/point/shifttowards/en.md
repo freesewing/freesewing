@@ -22,12 +22,12 @@ Point point.shiftTowards(Point target, float distance)
   points.C = points.A.shiftTowards(points.B, 35)
     .setText("Point C is point A shifted 3.5 cm\nin the direction of point B", "center, text-sm")
     .attr("data-text-lineheight", 6)
-  
+
   paths.direction = new Path()
     .move(points.A)
     .line(points.B)
     .addClass("note dashed")
-  
+
   macro("ld", {
     from: points.C,
     to: points.A,
@@ -45,5 +45,3 @@ Point point.shiftTowards(Point target, float distance)
 If you need to move a point a percentage instead of a specific distance, use
 [`Point.shiftFractionTowards()`](/reference/api/point/shiftfractiontowards/)
 instead.
-
-

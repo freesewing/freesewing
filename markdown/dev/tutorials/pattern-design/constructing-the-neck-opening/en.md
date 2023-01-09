@@ -9,7 +9,7 @@ that is the `head` measurements multiplied by the `neckRatio` option.
 That might involve some trial and error. But since the neck opening will be symmetric
 both horizontal and vertical, we only need to construct one quadrant.
 
-## Desructuring measurements and options
+## Destructuring measurements and options
 
 We'll be adding some points to our pattern to do just that. But we want to have
 access to our measurements and options to do so. For this, we first destructure

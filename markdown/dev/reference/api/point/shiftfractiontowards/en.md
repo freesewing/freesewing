@@ -29,18 +29,18 @@ Point point.shiftFractionTowards(Point target, float fraction)
       "center text-sm"
     )
     .attr("data-text-lineheight", 6)
-  
+
   paths.direction = new Path()
     .move(points.A)
     .line(points.B)
     .setClass("note dashed")
-  
+
   macro("ld", {
     from: points.C,
     to: points.A,
     d: -10
   })
-  
+
   macro("ld", {
     from: points.B,
     to: points.A,

@@ -21,7 +21,7 @@ Path path.line(Point to)
 
   points.from = new Point(10, 10)
   points.to = new Point(90, 10)
-  
+
   paths.line = new Path()
     .move(points.from)
     .line(points.to)
@@ -31,4 +31,3 @@ Path path.line(Point to)
 }
 ```
 </Example>
-

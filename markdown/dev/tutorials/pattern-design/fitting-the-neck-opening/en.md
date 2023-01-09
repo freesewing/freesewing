@@ -68,7 +68,7 @@ If the delta is negative, our path is too short and we increase the tweak
 factor.
 
 We keep on doing this until `Math.abs(delta)` is less than 1. Meaning that we
-are within 1mm of our target value.
+are within 1 mm of our target value.
 
 Now that we're happy with the length of our quarter neck opening, let's
 construct the entire neck opening.
