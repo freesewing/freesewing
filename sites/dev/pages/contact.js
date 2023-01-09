@@ -19,9 +19,10 @@ const No = () => (
 const ContactPage = () => {
   const app = useApp()
   const title = 'Contact information'
+  const fullTitle = title + ' - FreeSewing.dev'
 
   return (
-    <Page app={app} title="Contact information" slug="contact" crumbs={[[title, 'contact']]}>
+    <Page app={app} title={title} slug="contact" crumbs={[[title, 'contact']]}>
       <Head>
         <meta property="og:title" content={title} key="title" />
         <meta property="og:type" content="article" key="type" />
@@ -38,6 +39,7 @@ const ContactPage = () => {
         <meta property="og:url" content={`https://freesewing.dev/contact`} key="url" />
         <meta property="og:locale" content="en_US" key="locale" />
         <meta property="og:site_name" content="freesewing.dev" key="site" />
+        <title>{fullTitle}</title>
       </Head>
       <div className="grid grid-cols-3 lg:gap-4 text-xl">
         <div className="mb-8 w-full col-span-3 row-start-1 col-start-1 xl:col-span-1 xl:col-start-3">
