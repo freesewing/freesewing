@@ -144,6 +144,7 @@ function useApp({ bugsnag }) {
     locale,
 
     // State
+    account,
     loading,
     navigation,
     primaryMenu,
@@ -152,6 +153,7 @@ function useApp({ bugsnag }) {
     username,
 
     // State setters
+    setAccount,
     setLoading,
     setNavigation,
     setPrimaryMenu,

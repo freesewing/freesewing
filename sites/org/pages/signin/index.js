@@ -17,7 +17,7 @@ const SignInPage = () => {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [usernameIsEmail, setUsernameIsEmail] = useState(false)
-  const [clearUser, setClearUser] = useState(app.username ? false : true)
+  //const [clearUser, setClearUser] = useState(app.username ? false : true)
 
   const updateUsername = (evt) => {
     const value = evt.target.value
@@ -26,7 +26,7 @@ const SignInPage = () => {
     setUsernameIsEmail(valid === true ? true : false)
   }
   const updatePassword = (evt) => setPassword(evt.target.value)
-  const clearUsername = (evt) => app.setUsername(false)
+  const clearUsername = () => app.setUsername(false)
 
   return (
     <Page app={app} title={t('welcomeBack')} layout={Layout} footer={false}>

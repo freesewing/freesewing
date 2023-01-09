@@ -23,7 +23,7 @@ const SignUpPage = (props) => {
   const [email, setEmail] = useState('')
   const [emailValid, setEmailValid] = useState(false)
   const [result, setResult] = useState({ result: 'success' })
-  const [error, setError] = useState(null)
+  //const [error, setError] = useState(null)
 
   const updateEmail = (evt) => {
     const value = evt.target.value

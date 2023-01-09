@@ -113,7 +113,7 @@ export const strapiImage = (
   return image
 }
 
-export const getCrumbs = (app, slug = false, title) => {
+export const getCrumbs = (app, slug = false) => {
   if (!slug) return null
   const crumbs = []
   const chunks = slug.split('/')
@@ -192,9 +192,10 @@ export const optionsMenuStructure = (options) => {
 
 /** Validates an email address for correct syntax */
 export const validateEmail = (email) => {
-  // eslint-disable-next-line
+  /* eslint-disable */
   const re =
     /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  /* eslint-enable */
   return re.test(email)
 }
 

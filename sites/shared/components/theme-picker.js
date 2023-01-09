@@ -5,7 +5,7 @@ import { useTranslation } from 'next-i18next'
 import { Popover, Transition } from '@headlessui/react'
 import DownIcon from 'shared/components/icons/down'
 
-const ThemePicker = ({ app, className, iconOnly = false, bottom = false }) => {
+const ThemePicker = ({ app, iconOnly = false, bottom = false }) => {
   const { t } = useTranslation(['themes', 'common'])
 
   return (

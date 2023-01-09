@@ -6,17 +6,9 @@ import { Popover, Transition } from '@headlessui/react'
 import DownIcon from 'shared/components/icons/down'
 import Link from 'next/link'
 
-const LocalePicker = ({ app, iconOnly = false, bottom = false }) => {
+const LocalePicker = ({ iconOnly = false, bottom = false }) => {
   const { t } = useTranslation(['locales'])
   const router = useRouter()
-
-  const text = {
-    en: 'FreeSewing in English',
-    nl: 'FreeSewing in het Nederlands',
-    fr: 'FreeSewing en français',
-    de: 'FreeSewing auf Deutsch',
-    es: 'FreeSewing en español',
-  }
 
   return (
     <Popover className="relative">
