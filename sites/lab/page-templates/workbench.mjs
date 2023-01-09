@@ -12,7 +12,7 @@ const WorkbenchPage = ({ design }) => {
   const { preload, from } = router.query
   const name = design.designConfig?.data.name
   const shortName = name.substring(name.indexOf('/') + 1)
-  const title = capitalize(shortName)
+  const title = name ? capitalize(shortName) : 'Lab'
   const fullTitle = title + ' - FreeSewing Lab'
 
   return (
