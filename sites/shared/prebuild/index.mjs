@@ -1,5 +1,5 @@
 import { prebuildMdx } from './mdx.mjs'
-import { prebuildStrapi } from './strapi.mjs'
+//import { prebuildStrapi } from './strapi.mjs'
 import { prebuildNavigation } from './navigation.mjs'
 import { prebuildContributors } from './contributors.mjs'
 import { prebuildPatrons } from './patrons.mjs'
