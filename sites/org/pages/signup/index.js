@@ -1,6 +1,5 @@
 import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
-import Popout from 'shared/components/popout.js'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 import Layout from 'site/components/layouts/bare'
@@ -47,6 +46,8 @@ const SignUpPage = (props) => {
     } catch (err) {
       setError(app.error(err))
     }
+    // Do something clever next
+    console.log(res)
   }
 
   const loadingClasses = app.loading ? 'opacity-50' : ''

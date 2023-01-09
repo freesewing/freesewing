@@ -8,11 +8,12 @@ import { prebuildLab } from './lab.mjs'
 import { generateOgImage } from './og/index.mjs'
 
 const run = async () => {
+  console.log('in run')
   const SITE = process.env.SITE || 'lab'
   if (SITE === 'org') {
-    const mdxPages = await prebuildMdx(SITE)
-    const [posts] = await prebuildStrapi(SITE)
-    prebuildNavigation(mdxPages, posts, SITE)
+    //const mdxPages = await prebuildMdx(SITE)
+    //const [posts] = await prebuildStrapi(SITE)
+    //prebuildNavigation(mdxPages, posts, SITE)
   } else if (SITE === 'dev') {
     const mdxPages = await prebuildMdx(SITE)
     if (process.env.GENERATE_OG_IMAGES) {
