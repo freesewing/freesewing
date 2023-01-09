@@ -8,7 +8,7 @@ we are going to draft our pattern according to the measurements provided to us.
 
 Which begs the question, which measurements?
 
-It is we, as the pattern designers, who decides which measurements are used
+It is we, as the pattern designers, who decide which measurements are used
 to draft our pattern. For our bib, the only measurement we need is the
 _head circumference_.
 
