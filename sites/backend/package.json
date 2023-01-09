@@ -1,6 +1,6 @@
 {
   "name": "backend.freesewing.org",
-  "version": "3.0.0-alpha.3",
+  "version": "3.0.0-alpha.4",
   "description": "FreeSewing backend",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -48,7 +48,7 @@
   "devDependencies": {
     "chai": "4.2.0",
     "chai-http": "4.3.0",
-    "esbuild": "0.16.12",
+    "esbuild": "0.16.14",
     "mocha": "10.0.0",
     "mocha-steps": "1.3.0",
     "nodemon": "2.0.20",

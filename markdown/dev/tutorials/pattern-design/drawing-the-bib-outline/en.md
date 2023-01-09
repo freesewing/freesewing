@@ -7,11 +7,11 @@ With our neck opening in place, let us draw the basic outline of our bib.
 
 <Example tutorial caption="Note how the neck opening is the same distance from the left, right, and top edge">
 ```design/src/bib.mjs
-function draftBib({ 
-  Path, 
-  Point, 
-  paths, 
-  points, 
+function draftBib({
+  Path,
+  Point,
+  paths,
+  points,
   measurements,
   options,
   part,
@@ -24,15 +24,15 @@ function draftBib({
   do {
   	points.right = new Point(tweak * measurements.head / 10, 0)
   	points.bottom = new Point(0, tweak * measurements.head / 12)
-  
+
   	points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right)/2)
   	points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right)/2)
-  
+
   	paths.quarterNeck = new Path()
   	  .move(points.right)
   	  .curve(points.rightCp1, points.bottomCp2, points.bottom)
       .hide() // Add this line
-  
+
   	delta = paths.quarterNeck.length() - target
     if (delta > 0) tweak = tweak * 0.99
     else tweak = tweak * 1.02
@@ -58,10 +58,10 @@ function draftBib({
     .addClass('fabric')
 
   // highlight-start
-  // Drawing the bib outline 
+  // Drawing the bib outline
   const width = measurements.head * options.widthRatio
   const length = measurements.head * options.lengthRatio
-  
+
   points.topLeft = new Point(
     width / -2,
     points.top.y - (width / 2 - points.right.x)
@@ -69,7 +69,7 @@ function draftBib({
   points.topRight = points.topLeft.shift(0, width)
   points.bottomLeft = points.topLeft.shift(-90, length)
   points.bottomRight = points.topRight.shift(-90, length)
-  
+
   paths.rect = new Path()
     .move(points.topLeft)
     .line(points.bottomLeft)
@@ -93,9 +93,9 @@ const width = measurements.head * options.widthRatio
 const length = measurements.head * options.lengthRatio
 ```
 
-Both the length and width of your bib are a factor of the head circumference.
-This way, your bib size will adapt to the size of the baby, and the user can tweak
-the length and width by playing with the options you added to the pattern.
+Both the length and width of our bib are a factor of the head circumference.
+This way, our bib size will adapt to the size of the baby, and the user can tweak
+the length and width by playing with the options we added to the pattern.
 
 Once we have our variables, we're adding some new points, and a second path called `rect`.
 

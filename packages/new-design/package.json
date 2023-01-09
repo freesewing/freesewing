@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/new-design",
-  "version": "3.0.0-alpha.3",
+  "version": "3.0.0-alpha.4",
   "description": "Initializer package for a new FreeSewing design: npx @freesewing/new-design",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -32,7 +32,7 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "axios": "1.1.2",
+    "axios": "1.2.2",
     "chalk": "5.0.1",
     "execa": "6.1.0",
     "mustache": "4.2.0",

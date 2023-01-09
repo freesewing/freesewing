@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/hortensia",
-  "version": "3.0.0-alpha.3",
+  "version": "3.0.0-alpha.4",
   "description": "A FreeSewing pattern for a handbag",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -46,8 +46,8 @@
     "wcibuild_step5": "node build.mjs"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0-alpha.3",
-    "@freesewing/plugin-bundle": "3.0.0-alpha.3"
+    "@freesewing/core": "3.0.0-alpha.4",
+    "@freesewing/plugin-bundle": "3.0.0-alpha.4"
   },
   "dependencies": {},
   "devDependencies": {

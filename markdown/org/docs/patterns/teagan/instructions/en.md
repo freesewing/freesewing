@@ -33,9 +33,11 @@ There are two options for the neck finish on Teagan: a knit band or knit binding
 This is the most complex step in making the Teagan T-shirt, but it just requires a bit of practice. Don’t worry, all you need to do is make a couple of these and you’ll be a pro in no time.
 </Note>
 
-### Knit band finish
+### Option 1: knit band finish
 
 #### Place (the start of) your knit band
+
+![Place your knit band](step03f.svg)
 
 - Fold your binding in half lengthwise (parallel to the longest side), and press.
 - Put your T-shirt down with the back good side up, and place your band strip on top of it, lining up the raw edges of the band with the raw edge of the neck opening.
@@ -43,6 +45,8 @@ This is the most complex step in making the Teagan T-shirt, but it just requires
 - Now shift your binding strip 1cm beyond your starting point. This little extra will guarantee we can join the two ends later.
 
 #### Sew band in place
+
+![Sew knit band in place](step03g.svg)
 
 - Place your presser foot 3 cm along the knit band, so a 4 cm tail will be left unstitched. This will help us join the ends together later. Then, sew around the neck opening, stretching the band gently as you sew. 
 
@@ -56,6 +60,8 @@ This stretching is the trickiest part. Many online tutorials will tell you to si
 
 #### Sew band ends together
 
+![Sew band ends](step03c.svg)
+
 Now it's time to sew the ends of our knit band together.
 - Take the end of your knit band, and stretch it along the 3 cm separating it from the start point as you would while sewing. On the band, mark where the band reached the start point, or center back. Do the same for the other end.
 - Fold your T-shirt in whatever way makes it more easy for you to place both band ends with good sides together, aligning the marks. Sew them together at the marks.
@@ -67,11 +73,15 @@ Now it's time to sew the ends of our knit band together.
 
 </Note>
 
+![Finish knit band](step03h.svg)
+
 - Now that your band ends are joined together, it’s time to finish the last 6 cm, by stretching and sewing down the band as you did for the rest.
 
 Hurray! You've finished the trickiest part! Optionally, you can secure the raw edges by stitching them down to the T-shirt fabric, just inside the knit band with a sig-zag or coverlock stitch. This is not required, but it is a detail that you'll see on many ready-to-wear T-shirts, and it can help your neck band lie flat. 
 
-### Knit binding finish
+![Sew down knit band to secure](step03i.svg)
+
+### Option 2: knit binding finish
 
 <Tip>
 
