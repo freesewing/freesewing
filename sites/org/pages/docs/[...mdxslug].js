@@ -12,7 +12,7 @@ import mdxPaths from 'site/prebuild/mdx.paths.js'
 
 const MdxPage = (props) => {
   // This hook is used for shared code and global state
-  const app = useApp()
+  const app = useApp(props)
   const title = props.page.title
   const fullTitle = title + ' - FreeSewing.org'
 

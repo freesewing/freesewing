@@ -2,8 +2,8 @@ import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import Popout from 'shared/components/popout.js'
 
-const TypographyPage = () => {
-  const app = useApp()
+const TypographyPage = (props) => {
+  const app = useApp(props)
 
   const p = (
     <p>

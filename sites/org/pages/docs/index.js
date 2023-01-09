@@ -6,8 +6,8 @@ import ReadMore from 'shared/components/mdx/read-more.js'
 import { jargon } from 'site/jargon.mjs'
 import Head from 'next/head'
 
-const DocsPage = ({ title, mdx }) => {
-  const app = useApp()
+const DocsPage = ({ title, mdx, bugsnag }) => {
+  const app = useApp({ bugsnag })
   const fullTitle = title + ' - FreeSewing.org'
 
   // We don't need all MDX components here, just ReadMore

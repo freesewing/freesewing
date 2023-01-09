@@ -7,8 +7,8 @@ import Layout from 'site/components/layouts/bare'
 import PageLink from 'shared/components/page-link'
 import Head from 'next/head'
 
-const HomePage = () => {
-  const app = useApp()
+const HomePage = (props) => {
+  const app = useApp(props)
   const title = 'Welcome to FreeSewing.org'
   // Not using translation for now
   //  const { t } = useTranslation(['homepage', 'ograph'])

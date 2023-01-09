@@ -18,9 +18,9 @@ module.exports = {
   'secondary-focus': colors.lime['500'],
   'secondary-content': bg,
 
-  accent: colors.lime['500'],
+  accent: colors.lime['800'],
   'accent-focus': colors.lime['600'],
-  'accent-content': colors.yellow['200'],
+  'accent-content': colors.lime['400'],
 
   neutral: '#001c06', // Even darker
   'neutral-focus': colors.lime['600'],
