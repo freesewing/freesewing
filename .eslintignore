@@ -8,6 +8,7 @@
 *.css
 Dockerfile
 .git
+.env
 coverage
 dist
 node_modules
