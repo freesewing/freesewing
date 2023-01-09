@@ -4,9 +4,11 @@ import mdxLoader from 'shared/mdx/loader'
 import MdxWrapper from 'shared/components/wrappers/mdx'
 import ReadMore from 'shared/components/mdx/read-more.js'
 import { jargon } from 'site/jargon.mjs'
+import Head from 'next/head'
 
 const DocsPage = ({ title, mdx }) => {
   const app = useApp()
+  const fullTitle = title + ' - FreeSewing.org'
 
   // We don't need all MDX components here, just ReadMore
   const components = {
@@ -15,6 +17,9 @@ const DocsPage = ({ title, mdx }) => {
 
   return (
     <Page app={app} title={title}>
+      <Head>
+        <title>{fullTitle}</title>
+      </Head>
       <div className="w-full">
         <MdxWrapper mdx={mdx} app={app} components={components} />
       </div>
