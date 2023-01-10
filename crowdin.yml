@@ -10,4 +10,3 @@ files:
     translation: /sites/org/pages/**/%two_letters_code%.yaml
   - source: /sites/org/components/**/en.yaml
     translation: /sites/org/components/**/%two_letters_code%.yaml
-
