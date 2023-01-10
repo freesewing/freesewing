@@ -13,8 +13,7 @@ Wie viel vor deinem Taillenband möchtest du mit deinem letzten Button sitzen?
 Knöpfe unter dem Taillenband werden von vielen als Ärger angesehen.
 Sie werden in Ihrem Gürtel aufgefangen und verkomplizieren Badeinbrüche.
 
-By default, the last button sits 1cm above your waistband,
-but this option allows you to move it further upwards for that shirt you are going to wear with those high-waisted trousers.
+Wenn Sie Tasten unter Ihrer Taille haben möchten, können Sie das.
 
 Wenn Sie Tasten unter Ihrer Taille haben möchten, können Sie das. You should enter a negative value here,
 making sure it's within the length bonus you have available.
