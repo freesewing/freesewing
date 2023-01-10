@@ -336,6 +336,7 @@ org:
     'rehype-stringify': *rehypeStringify
     'remark-copy-linked-files': *remarkCopyLinkedFiles
     'remark-gfm': *remarkGfm
+    'yaml-loader': 0.8.0
   dev: *nextSiteDevDependencies
 
 sanity:
