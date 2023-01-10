@@ -4,7 +4,7 @@ title: Snippets
 
 A Snippet is a reusable bit of markup that draws graphic elements on patterns.
 Snippets are provided by [plugins](/reference/plugins) and are implemented as
-[\<defs> elements](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs)
+[`defs` elements](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs)
 in the rendered SVG document.
 
 ## Signature
