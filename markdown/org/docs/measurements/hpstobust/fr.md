@@ -19,8 +19,7 @@ L'objectif de cette mensuration est de déterminer la part la plus importante ve
 
 <Tip>
 
-So, for example, you could be holding the top of
-the tape up to your right shoulder with your right hand, while your left hand is holding the end. Mais cela signifie que vous déformerez la longueur que vous essayez de mesurer en levant votre bras du même côté.
+Mais cela signifie que vous déformerez la longueur que vous essayez de mesurer en levant votre bras du même côté. Mais cela signifie que vous déformerez la longueur que vous essayez de mesurer en levant votre bras du même côté.
 Mais cela signifie que vous déformerez la longueur que vous essayez de mesurer en levant votre bras du même côté.
 You might not think there is a difference, but all is connected in the world of physiology, and
 doing this could lead to an error of ~2.5cm (~1 inch) in your measurement.  
