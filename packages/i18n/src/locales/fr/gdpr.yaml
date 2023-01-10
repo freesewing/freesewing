@@ -21,10 +21,10 @@ openDataInfo: Ces données sont utilisées pour étudier et comprendre la forme 
 openDataQuestion: Partager des mesures anonymisées sous forme de données ouvertes
 profileQuestion: Donnez-vous votre consentement pour traiter vos données de profil ?
 profileShareAnswer: '<b>Non</ b>, jamais.'
-profileTimingAnswer: "<b>12 mois</b> après votre dernière connexion ou jusqu'à ce que vous <b>supprimiez</b> votre compte ou <b>révoquiez</b> ce consentement."
+profileTimingAnswer: '<b>12 mois</b> après votre dernière connexion ou jusqu''à ce que vous <b>supprimiez</b> votre compte ou <b>révoquiez</b> ce consentement.'
 profileWarning: Révoquer ce consentement entraînera la suppression de toutes vos données. Cela a exactement le même effet que de supprimer votre compte.
 profileWhatAnswerOptional: 'Optionnel : une <b>photo de profil</b>, <b>biographie</b>, et <b>comptes de réseaux sociaux</b>'
-profileWhatAnswer: "Votre <b>adresse e-mail</b>, <b>nom d'utilisateur</b>et <b>mot de passe</b>."
+profileWhatAnswer: 'Votre <b>adresse e-mail</b>, <b>nom d''utilisateur</b>et <b>mot de passe</b>.'
 profileWhatQuestion: Que sont les données de profil ?
 profileWhyAnswer: 'Pour <b>vous authentifier</b> , <b>vous contacter</b> lorsque nécessaire, et construire une <b>communauté</b>.'
 readMore: Pour plus d'informations, veuillez lire notre politique de confidentialité.
@@ -34,6 +34,6 @@ shareQuestion: La partageons-nous avec les autres ?
 timingQuestion: Combien de temps les gardons-nous ?
 whatYouNeedToKnow: Ce que vous devez savoir
 whyQuestion: Pourquoi en avons-nous besoin ?
-yesIDoObject: "Oui, je m'y oppose"
+yesIDoObject: 'Oui, je m''y oppose'
 yesIDo: 'Oui, je le veux'
 openData: 'Note : Freesewing publie des mesures rendues anonymes en tant que données libres pour la recherche scientifique. Vous avez le droit de vous y opposer'
