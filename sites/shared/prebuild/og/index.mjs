@@ -78,8 +78,6 @@ const getMetaData = async ({ slug, title, intro, site, lead = false }) => {
         lead: lead || capitalize(chunks[0]),
       }
     }
-  } else {
-    console.log('Unsupported data for OG', data)
   }
 }
 
@@ -128,7 +126,7 @@ const writeAsPng = async (svg, site, slug) => {
   // Turn into PNG
   sharp(Buffer.from(svg, 'utf-8'))
     .resize({ width: 1200 })
-    .toBuffer(async (err, data, info) => {
+    .toBuffer(async (err, data) => {
       if (err) console.log(err)
       if (data) return await fs.writeFile(path.join(dir, 'og.png'), data)
       else console.log('No data for', slug)
