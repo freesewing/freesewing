@@ -9,6 +9,8 @@ import { validateEmail, validateTld } from 'shared/utils.mjs'
 import SusiWrapper from 'site/components/wrappers/susi.js'
 import { signUp } from 'shared/backend.mjs'
 import Spinner from 'shared/components/icons/spinner.js'
+// Test for new way of loading translations
+import { i18n } from './i18n.mjs'
 
 const DarkLink = ({ href, txt }) => (
   <Link className="decoration-1 underline text-medium font-medium hover:decoration-2" href={href}>
