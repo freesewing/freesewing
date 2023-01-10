@@ -130,7 +130,8 @@ const writeAsPng = async (svg, site, slug) => {
     .resize({ width: 1200 })
     .toBuffer(async (err, data, info) => {
       if (err) console.log(err)
-      return await fs.writeFile(path.join(dir, 'og.png'), data)
+      if (data) return await fs.writeFile(path.join(dir, 'og.png'), data)
+      else console.log('No data for', slug)
     })
 }
 
@@ -149,5 +150,9 @@ export const generateOgImage = async (data) => {
   // Inject into SVG
   const meta = await getMetaData(data)
   const svg = decorateSvg(meta)
-  await writeAsPng(svg, data.site, data.slug)
+  try {
+    await writeAsPng(svg, data.site, data.slug)
+  } catch (err) {
+    console.log('Could not write PNG for', data, meta)
+  }
 }
