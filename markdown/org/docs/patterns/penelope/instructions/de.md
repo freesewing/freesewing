@@ -41,6 +41,7 @@ Darts are used to compensate for the difference between your waist and seat meas
 We're not going to go into a full explanation on how to create all the individual details
 that make up a pencil skirt. Diese Anleitung geht davon aus, dass du weißt, wie man einen Abnäher nähen, einen unsichtbaren 
 Reißverschluss einfügt, einen Schlitz macht, etc. If not, there are numerous excellent articles available on the
+web, both in writen form, and on video. If not, there are numerous excellent articles available on the
 web, both in writen form, and on video. If you do get stuck, you can always reach out to
 [other FreeSewers](https://discord.freesewing.org/) in our discord.
 
