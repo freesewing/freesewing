@@ -45,7 +45,7 @@
     "react": "18.2.0",
     "react-copy-to-clipboard": "5.1.0",
     "react-hotkeys-hook": "4.3.2",
-    "react-i18next": "12.1.1",
+    "react-i18next": "12.1.4",
     "react-instantsearch-dom": "6.38.2",
     "react-markdown": "8.0.4",
     "react-swipeable": "7.0.0",
