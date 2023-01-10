@@ -56,6 +56,9 @@ const SignUpPage = (props) => {
 
   const loadingClasses = app.loading ? 'opacity-50' : ''
 
+  // REMOVEME
+  console.log({ i18n })
+
   return (
     <Page app={app} title={t('joinFreeSewing')} layout={Layout} footer={false}>
       <SusiWrapper theme={app.theme}>
