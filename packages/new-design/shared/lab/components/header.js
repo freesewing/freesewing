@@ -66,10 +66,10 @@ const Header = ({ app }) => {
                 <span className="ml-2">{t('docs')}</span>
               </a>
               <Link href="/support" role="button" className={btnClasses}>
-                <span>
+                <>
                   <HelpIcon />
                   <span className="ml-2">{t('support')}</span>
-                </span>
+                </>
               </Link>
             </div>
           </div>
