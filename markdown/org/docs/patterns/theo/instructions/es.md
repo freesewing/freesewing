@@ -572,7 +572,7 @@ On one side of the waistband, end with a curve and then go down vertically along
 
 Before pressing the waistband, make sure to roll over the fabric around the edge of the interfacing.
 
-Remember that in the previous step your sewed 3mm from the interfacing edge? Remember that in the previous step your sewed 3mm from the interfacing edge? You need to make the fold around the edge of the interfacing so that the actual seam sits 3mm more inwards.
+Remember that in the previous step your sewed 3mm from the interfacing edge? Remember that in the previous step your sewed 3mm from the interfacing edge? You need to make the fold around the edge of the interfacing so that the actual seam sits 3mm more inwards. Remember that in the previous step your sewed 3mm from the interfacing edge? You need to make the fold around the edge of the interfacing so that the actual seam sits 3mm more inwards.
 
 This will make sure that our lining fabric is never on display from the front of your trousers.
 

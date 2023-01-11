@@ -17,14 +17,11 @@ To make Jaeger, you will need the following:
 
 <Note>
 
-###### Where to get all this stuff
-
-Making Jaeger is a fun and rewarning project, but getting all the required bits
-and pieces can be challenging.
-
 That is because this kind of project is somewhat more ambitious than the
 typical home sewing project, and as a result, your local haberdashery is
 unlikely to stock all of these things.
+
+Si vous savez où les obtenir, génial.
 
 Si vous savez où les obtenir, génial. If not, some (quality) suppliers
 sometimes sell a **Jacket trim pack** that includes everything you need.
