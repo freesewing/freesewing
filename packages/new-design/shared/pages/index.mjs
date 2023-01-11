@@ -45,13 +45,15 @@ const HomePage = () => {
         <h1>FreeSewing</h1>
         <h4>{translations.sade[app.locale]}</h4>
         <Link href="/design" className="btn btn-primary btn-lg h-20 my-8 mb-12">
-          <span role="image" className="text-4xl px-6">
-            👉
-          </span>
-          <span className="text-xl px-2">{translations.load[app.locale]}</span>
-          <span role="image" className="text-4xl px-6">
-            👈
-          </span>
+          <>
+            <span role="image" className="text-4xl px-6">
+              👉
+            </span>
+            <span className="text-xl px-2">{translations.load[app.locale]}</span>
+            <span role="image" className="text-4xl px-6">
+              👈
+            </span>
+          </>
         </Link>
         {translations.tips[app.locale]}
       </div>

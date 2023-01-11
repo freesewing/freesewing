@@ -311,6 +311,8 @@ lab:
 
 org:
   _:
+    '@bugsnag/js': &bugsnag 7.18.0
+    '@bugsnag/plugin-react': *bugsnag
     '@mdx-js/loader': *mdx
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
@@ -334,6 +336,7 @@ org:
     'rehype-stringify': *rehypeStringify
     'remark-copy-linked-files': *remarkCopyLinkedFiles
     'remark-gfm': *remarkGfm
+    'yaml-loader': 0.8.0
   dev: *nextSiteDevDependencies
 
 sanity:
@@ -383,6 +386,7 @@ shared:
     'remark-smartypants': '2.0.0'
     'sharp': '0.31.3'
     'svg-to-pdfkit': 'https://github.com/eriese/SVG-to-PDFKit'
+    'tlds': '1.236.0'
     'to-vfile': '7.2.3'
     'unist-util-visit': *unist-util-visit
     'web-worker': '1.2.0'

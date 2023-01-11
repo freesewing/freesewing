@@ -14,6 +14,7 @@ const PageWrapper = ({
   noSearch = false,
   app = false,
   layout = Docs,
+  footer = true,
   crumbs = false,
   children = [],
 }) => {
@@ -28,8 +29,8 @@ const PageWrapper = ({
 
   useEffect(() => app.setSlug(slug), [slug, app])
 
-  // Trigger search with Ctrl+k
-  useHotkeys('ctrl+k', (evt) => {
+  // Trigger search with /
+  useHotkeys('/', (evt) => {
     evt.preventDefault()
     setSearch(true)
   })
@@ -39,6 +40,7 @@ const PageWrapper = ({
   const childProps = {
     app: app,
     title: title,
+    footer,
     crumbs: crumbs,
     search,
     setSearch,

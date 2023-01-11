@@ -26,6 +26,8 @@
   },
   "peerDependencies": {},
   "dependencies": {
+    "@bugsnag/js": "7.18.0",
+    "@bugsnag/plugin-react": "7.18.0",
     "@mdx-js/loader": "2.2.1",
     "@mdx-js/mdx": "2.2.1",
     "@mdx-js/react": "2.2.1",
@@ -48,7 +50,8 @@
     "rehype-slug": "5.1.0",
     "rehype-stringify": "9.0.3",
     "remark-copy-linked-files": "https://github.com/joostdecock/remark-copy-linked-files",
-    "remark-gfm": "3.0.1"
+    "remark-gfm": "3.0.1",
+    "yaml-loader": "0.8.0"
   },
   "devDependencies": {
     "autoprefixer": "10.4.13",
