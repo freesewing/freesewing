@@ -43,9 +43,9 @@ A more comprehensive overview of this document's history is [available on GitHub
 - [Tus derechos][2]
 - [Tu consentimiento][3]
 
-[2]: /docs/various/right/
-
 [v]: /docs/various/privacy/visitor/
+
+[2]: /docs/various/right/
 
 [3]: /account/actions/consent/
 

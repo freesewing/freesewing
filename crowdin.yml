@@ -12,4 +12,3 @@ files:
     translation: /sites/org/components/**/*.%two_letters_code%.yaml
   - source: /sites/shared/components/**/*.en.yaml
     translation: /sites/shared/components/**/*.%two_letters_code%.yaml
-

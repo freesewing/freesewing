@@ -11,3 +11,6 @@ signUpHere: Sign up here
 emailUsernameId: Email address, username, or user ID
 welcomeName: 'Welcome { name }'
 password: Password
+processing: Processing
+emailSent: Email sent
+somethingWentWrong: Something went wrong

@@ -213,6 +213,6 @@ Al coser, estira elástica y teje juntos entre cada conjunto de pines quitando l
 
 ### Paso 15: Recortar y limpiar
 
-![Yay! Yay! You've made it](step15.png)
+![Yay! Yay! Yay! You've made it](step15.png)
 
 Trim any excess fabric you might have at elastic or hem, and any loose threads.

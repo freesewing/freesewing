@@ -66,8 +66,10 @@ const Header = ({ app }) => {
                 <span className="ml-2">{t('docs')}</span>
               </a>
               <Link href="/support" role="button" className={btnClasses}>
-                <HelpIcon />
-                <span className="ml-2">{t('support')}</span>
+                <>
+                  <HelpIcon />
+                  <span className="ml-2">{t('support')}</span>
+                </>
               </Link>
             </div>
           </div>

@@ -32,7 +32,7 @@ sometimes sell a **Jacket trim pack** that includes everything you need.
 Below is a list of suppliers we are aware of where you can get this.
 We have no affiliation with these suppliers.
 
-- [B. Black & Sons](https://www.bblackandsons.com/) is based in the US
+- [B. - [B. Black & Sons](https://www.bblackandsons.com/) is based in the US
 - [Kenton Trimmings](http://kentontrimmings.co.uk/shop/) in based in the UK
 
 If you know of other places that carries this stuff, please let us know.

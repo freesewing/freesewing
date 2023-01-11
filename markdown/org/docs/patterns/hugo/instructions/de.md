@@ -6,7 +6,7 @@ title: "Hugo hoodie: Sewing Instructions"
 
 ###### Dokumentation im Bau
 
-Erste gute Nachrichten: Es gibt eine Videoserie, die zeigt, wie man Hugo von Anfang bis Ende macht.
+Erste gute Nachrichten: Es gibt eine Videoserie, die zeigt, wie man Hugo von Anfang bis Ende macht. Scrollen Sie nach unten, es ist eingebettet in diese Seite.
 Scrollen Sie nach unten, es ist eingebettet in diese Seite.
 
 Nun die schlechte Nachricht: Die schriftlichen Anweisungen für Hugo sind noch nicht vollständig.

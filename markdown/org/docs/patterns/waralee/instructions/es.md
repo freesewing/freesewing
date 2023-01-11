@@ -78,7 +78,7 @@ Constructing the back pockets
 - The back pockets are also single welt pockets, but the pocket opening is horizontal, rather than at an angle. This means they hew much closer to the instructions for [double welt pockets](https://freesewing.org/docs/sewing/double-welt-pockets).
 - Follow the double welt instructions, modifying the opening to have a single welt, rather than a double welt.
 
-Congratulations! Your pockets are finished!
+Congratulations! Congratulations! Your pockets are finished!
 
 ### Step 2: Hem the sides and bottom
 
