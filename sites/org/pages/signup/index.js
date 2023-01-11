@@ -9,8 +9,9 @@ import { validateEmail, validateTld } from 'shared/utils.mjs'
 import SusiWrapper from 'site/components/wrappers/susi.js'
 import { signUp } from 'shared/backend.mjs'
 import Spinner from 'shared/components/icons/spinner.js'
-// Test for new way of loading translations
-import { i18n } from './i18n.mjs'
+
+// Translation namespaces used on this page
+const namespaces = ['signup', 'errors']
 
 const DarkLink = ({ href, txt }) => (
   <Link className="decoration-1 underline text-medium font-medium hover:decoration-2" href={href}>
@@ -20,11 +21,11 @@ const DarkLink = ({ href, txt }) => (
 
 const SignUpPage = (props) => {
   const app = useApp(props)
-  const { t } = useTranslation(['susi', 'loader', 'errors'])
+  const { t } = useTranslation(namespaces)
 
   const [email, setEmail] = useState('')
   const [emailValid, setEmailValid] = useState(false)
-  const [result, setResult] = useState({ result: 'success' })
+  const [result, setResult] = useState(false)
   const [error, setError] = useState(null)
 
   const updateEmail = (evt) => {
@@ -55,9 +56,6 @@ const SignUpPage = (props) => {
   }
 
   const loadingClasses = app.loading ? 'opacity-50' : ''
-
-  // REMOVEME
-  console.log({ i18n })
 
   return (
     <Page app={app} title={t('joinFreeSewing')} layout={Layout} footer={false}>
@@ -125,7 +123,7 @@ export default SignUpPage
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale)),
+      ...(await serverSideTranslations(locale, namespaces)),
     },
   }
 }
