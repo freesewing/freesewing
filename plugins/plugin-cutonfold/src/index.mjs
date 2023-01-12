@@ -34,7 +34,7 @@ export const plugin = {
       so = {
         offset: 15,
         margin: 5,
-        prefix: '',
+        prefix: 'cutonfold',
         ...so,
       }
       if (typeof setCutOnFold === 'function') {
@@ -42,20 +42,20 @@ export const plugin = {
         if (so.grainline) setGrain(so.from.angle(so.to))
       }
       if (complete) {
-        points[so.prefix + 'CutonfoldFrom'] = so.from.shiftFractionTowards(so.to, so.margin / 100)
-        points[so.prefix + 'CutonfoldTo'] = so.to.shiftFractionTowards(so.from, so.margin / 100)
-        points[so.prefix + 'CutonfoldVia1'] = points[so.prefix + 'CutonfoldFrom']
+        points[so.prefix + 'From'] = so.from.shiftFractionTowards(so.to, so.margin / 100)
+        points[so.prefix + 'To'] = so.to.shiftFractionTowards(so.from, so.margin / 100)
+        points[so.prefix + 'Via1'] = points[so.prefix + 'From']
           .shiftTowards(so.from, so.offset * scale)
-          .rotate(-90, points[so.prefix + 'CutonfoldFrom'])
-        points[so.prefix + 'CutonfoldVia2'] = points[so.prefix + 'CutonfoldTo']
+          .rotate(-90, points[so.prefix + 'From'])
+        points[so.prefix + 'Via2'] = points[so.prefix + 'To']
           .shiftTowards(so.to, so.offset * scale)
-          .rotate(90, points[so.prefix + 'CutonfoldTo'])
+          .rotate(90, points[so.prefix + 'To'])
         const text = so.grainline ? 'cutOnFoldAndGrainline' : 'cutOnFold'
         paths[so.prefix + 'Cutonfold'] = new Path()
-          .move(points[so.prefix + 'CutonfoldFrom'])
-          .line(points[so.prefix + 'CutonfoldVia1'])
-          .line(points[so.prefix + 'CutonfoldVia2'])
-          .line(points[so.prefix + 'CutonfoldTo'])
+          .move(points[so.prefix + 'From'])
+          .line(points[so.prefix + 'Via1'])
+          .line(points[so.prefix + 'Via2'])
+          .line(points[so.prefix + 'To'])
           .attr('class', 'note')
           .attr('marker-start', 'url(#cutonfoldFrom)')
           .attr('marker-end', 'url(#cutonfoldTo)')
