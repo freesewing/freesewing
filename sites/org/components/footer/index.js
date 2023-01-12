@@ -21,36 +21,6 @@ const link = 'text-secondary font-bold hover:pointer hover:underline px-1'
 const accent = 'text-accent font-bold text-base px-1 block sm:inline'
 const freesewing = 'px-1 text-base font-bold block sm:inline'
 
-// Keep these translations in the component because they're only used here
-const translations = {
-  cc: (
-    <span>
-      Content on FreeSewing.org is available under{' '}
-      <a className={link} href="https://creativecommons.org/licenses/by/4.0/">
-        a Creative Commons license
-      </a>
-    </span>
-  ),
-  mit: (
-    <span>
-      The FreeSewing source code is{' '}
-      <a href="https://github.com/freesewing/freesewing" className={link}>
-        available on Github
-      </a>{' '}
-      under{' '}
-      <a href="https://opensource.org/licenses/MIT" className={link}>
-        the MIT license
-      </a>
-    </span>
-  ),
-  sponsors: (
-    <>
-      <span className={freesewing}>FreeSewing</span> is sponsored by these{' '}
-      <span className={accent}>awesome companies</span>
-    </>
-  ),
-}
-
 const icon = { className: 'w-8 lg:w-12 h-8 lg:h-12' }
 const social = {
   Discord: {
