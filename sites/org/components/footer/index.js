@@ -5,6 +5,8 @@ import CcByLogo from 'shared/components/logos/cc-by.js'
 import Ribbon from 'shared/components/ribbon.js'
 import Link from 'next/link'
 import { WordMark } from 'shared/components/wordmark.js'
+import { useTranslation } from 'next-i18next'
+import { freeSewingConfig } from 'site/freesewing.config.js'
 
 import HelpIcon from 'shared/components/icons/help.js'
 import DiscordIcon from 'shared/components/icons/discord.js'
@@ -77,7 +79,18 @@ const social = {
   },
 }
 
-const Footer = ({ app }) => {
+/*
+ * This named export lets people know
+ * what translation namespaces this component relies on
+ */
+export const namespaces = ['footer']
+
+/*
+ * Named exports are better than default exports
+ */
+export const Footer = ({ app }) => {
+  const { t } = useTranslation(namespaces)
+
   return (
     <footer className="bg-neutral">
       <Ribbon loading={app.loading} theme={app.theme} />
@@ -91,13 +104,15 @@ const Footer = ({ app }) => {
             <div className="flex flex-row gap-2 justify-center items-center mt-8">
               <CcByLogo className="w-8 lg:w-12" />
               <p className="text-neutral-content text-right basis-4/5 lg:basis-3/4 leading-5">
-                {translations.cc}
+                {t('cc')}
               </p>
             </div>
             <div className="flex flex-row gap-2 justify-center items-center mt-4">
               <OsiLogo className="w-8 lg:w-12" />
               <p className="text-neutral-content text-right basis-4/5 lg:basis-3/4 leading-5">
-                {translations.mit}
+                <a href={freeSewingConfig.monorepo} className="hover:pointer hover:underline px-1">
+                  {t('mit')}
+                </a>
               </p>
             </div>
           </div>
@@ -128,7 +143,7 @@ const Footer = ({ app }) => {
           {/* Sponsors */}
           <div className="border rounded-xl p-8 border-dashed border-base-100/25 mt-20">
             <p className="text-center text-neutral-content leading-5">
-              {translations.sponsors}
+              {t('sponsors')}
               <br />
             </p>
             <div className="py-4 flex flex-row gap-8 flex-wrap 2xl:flex-nowrap justify-around text-neutral-content">
@@ -177,5 +192,3 @@ const Footer = ({ app }) => {
     </footer>
   )
 }
-
-export default Footer
