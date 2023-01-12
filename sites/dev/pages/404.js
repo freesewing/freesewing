@@ -8,9 +8,11 @@ import PageLink from 'shared/components/page-link'
 
 const Page404 = () => {
   const app = useApp()
+  const title = '404: Page not found'
+  const fullTitle = title + ' - FreeSewing.dev'
 
   return (
-    <Page app={app} title="404: Page not found" layout={Layout}>
+    <Page app={app} title={title} layout={Layout}>
       <Head>
         <meta property="og:title" content="Page not found" key="title" />
         <meta property="og:type" content="article" key="type" />
@@ -27,6 +29,7 @@ const Page404 = () => {
         <meta property="og:url" content={`https://freesewing.dev/`} key="url" />
         <meta property="og:locale" content="en_US" key="locale" />
         <meta property="og:site_name" content="freesewing.dev" key="site" />
+        <title>{fullTitle}</title>
       </Head>
       <div className="flex flex-col gap-4 mt-16 lg:mt-32 text-center">
         <h1>404: Page not found</h1>

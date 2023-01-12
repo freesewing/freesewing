@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import Layout from 'site/components/layouts/bare'
 import { PageTitle } from 'shared/components/layouts/default'
+import Head from 'next/head'
 
 const DesignLinks = ({ list, prefix = '' }) => {
   const { t } = useTranslation(['patterns'])
@@ -33,6 +34,7 @@ const PatternListPageTemplate = ({ section = false }) => {
   const { t } = useTranslation(['app'])
 
   const title = section ? app.navigation[section].__title : t('designs')
+  const fullTitle = title + ' - FreeSewing Lab'
 
   const sectionDesigns = (section = false) => {
     if (!section) {
@@ -46,6 +48,9 @@ const PatternListPageTemplate = ({ section = false }) => {
 
   return (
     <Page app={app} title={`FreeSewing Lab: ${title}`} layout={Layout}>
+      <Head>
+        <title>{fullTitle}</title>
+      </Head>
       <div className="max-w-7xl m-auto py-20 md:py-36 min-h-screen">
         <section className="px-8">
           <PageTitle
