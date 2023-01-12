@@ -12,7 +12,6 @@ import jargon from 'site/jargon.mjs'
 const MdxPage = (props) => {
   // This hook is used for shared code and global state
   const app = useApp()
-  const fullTitle = props.page.title + ' - FreeSewing.dev'
 
   /*
    * Each page should be wrapped in the Page wrapper component
@@ -26,7 +25,6 @@ const MdxPage = (props) => {
   return (
     <Page app={app} {...props.page}>
       <Head>
-        <meta property="og:title" content={props.page.title} key="title" />
         <meta property="og:type" content="article" key="type" />
         <meta property="og:description" content={props.intro} key="type" />
         <meta property="og:article:author" content="Joost De Cock" key="author" />
@@ -41,7 +39,6 @@ const MdxPage = (props) => {
         <meta property="og:url" content={`https://freesewing.dev/${props.page.slug}`} key="url" />
         <meta property="og:locale" content="en_US" key="locale" />
         <meta property="og:site_name" content="freesewing.dev" key="site" />
-        <title>{fullTitle}</title>
       </Head>
       <div className="grid grid-cols-3 lg:gap-4">
         {props.toc && (

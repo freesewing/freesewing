@@ -16,7 +16,6 @@ const HomePage = () => {
   return (
     <Page app={app} title={title} layout={Layout}>
       <Head>
-        <meta property="og:title" content="FreeSewing.dev" key="title" />
         <meta property="og:type" content="article" key="type" />
         <meta
           property="og:description"

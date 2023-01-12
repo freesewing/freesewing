@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useSwipeable } from 'react-swipeable'
 import { useRouter } from 'next/router'
 import { useHotkeys } from 'react-hotkeys-hook'
+import Head from 'next/head'
 // Layouts components
 import LayoutWrapper from 'site/components/wrappers/layout'
 import Docs from 'site/components/layouts/docs'
@@ -56,6 +57,10 @@ const PageWrapper = ({
       data-theme={app.theme}
       key={app.theme} // This forces the data-theme update
     >
+      <Head>
+        <meta property="og:title" content={`${title} - FreeSewing.dev`} key="title" />
+        <title>{title} - FreeSewing.dev</title>
+      </Head>
       <LayoutWrapper {...childProps}>
         {Layout ? <Layout {...childProps}>{children}</Layout> : children}
       </LayoutWrapper>
