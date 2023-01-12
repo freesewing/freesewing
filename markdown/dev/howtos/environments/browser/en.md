@@ -8,12 +8,12 @@ you can generate patterns in the browser with a few lines of JavaScript.
 
 <Tip>
 
-##### Use freesewing.org if you just want a pattern
+##### Use FreeSewing.org if you just want a pattern
 
 These instructions are intended for people who want to generate
 their own patterns using FreeSewing packages.
 If you _just want a sewing pattern created for you,_
-you can get all our designs on [freesewing.org](https://freesewing.org/),
+you can get all our designs on [FreeSewing.org](https://freesewing.org/),
 our website for makers.
 
 </Tip>
