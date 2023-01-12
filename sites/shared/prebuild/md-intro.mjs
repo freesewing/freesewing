@@ -40,7 +40,7 @@ const remarkIntroPlugin = () => {
   }
 
   // Tree visitor
-  const visitor = (node, i, parent) => {
+  const visitor = (node) => {
     if (node.type === 'root') {
       node.children = [
         {
