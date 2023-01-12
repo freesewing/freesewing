@@ -127,7 +127,7 @@ const fixData = (rawData) => {
     data[namespace] = { en: nsdata.en }
     // Complete other locales
     for (const lang of locales.filter((loc) => loc !== 'en')) {
-      if (typeof data[namespace][lang] === 'undefined') data[namespace][lang] = nsdata.en
+      if (typeof nsdata[lang] === 'undefined') data[namespace][lang] = nsdata.en
       else {
         for (const key of Object.keys(data[namespace].en)) {
           if (typeof nsdata[lang][key] === 'undefined') nsdata[lang][key] = nsdata.en[key]
