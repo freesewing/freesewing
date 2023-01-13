@@ -3,7 +3,7 @@ title: plugin-svgattr
 ---
 
 Published as [@freesewing/plugin-svgattr][1], this plugin takes an object of
-key-value pairs and adds them as attributes of the `svg` tag
+key-value pairs and adds them as attributes of the `<svg>` tag
 of a pattern's SVG document on render.
 
 ## Installation
