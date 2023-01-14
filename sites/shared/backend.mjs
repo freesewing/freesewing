@@ -18,10 +18,10 @@ export const signUp = async ({ email, language, startLoading, stopLoading }) => 
     startLoading()
     result = await backend.post('/signup', { email, language })
   } catch (err) {
-    console.log({ err })
+    return err
   } finally {
     stopLoading()
-    if (result && result.status === 201 && result.data) return result.data
-    return null
   }
+  if (result && result.status === 201 && result.data) return result.data
+  return null
 }
