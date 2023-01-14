@@ -1,4 +1,4 @@
-import { buttonRow, closingRow, headingRow, lead1Row, wrap } from '../shared/blocks.mjs'
+import { buttonRow, closingRow, headingRow, wrap } from '../shared/blocks.mjs'
 // Translations
 import en from '../../../../public/locales/en/loginlink.json' assert { type: 'json' }
 import de from '../../../../public/locales/de/loginlink.json' assert { type: 'json' }

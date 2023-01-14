@@ -25,8 +25,3 @@ export const i18nUrl = (lang, path) => {
 
   return url + path
 }
-
-/*
- * Capitalizes a string
- */
-export const capitalize = (string) => string.charAt(0).toUpperCase() + string.slice(1)

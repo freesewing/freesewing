@@ -4,12 +4,14 @@ import process from 'process'
 /*
  * Helper methods to interact with the FreeSewing backend
  */
-
 const backend = axios.create({
   baseURL: process.env.NEXT_PUBLIC_BACKEND || 'https://backend.freesewing.org',
   timeout: 3000,
 })
 
+/*
+ * User signup
+ */
 export const signUp = async ({ email, language, startLoading, stopLoading }) => {
   let result
   try {
@@ -18,7 +20,10 @@ export const signUp = async ({ email, language, startLoading, stopLoading }) => 
   } catch (err) {
     console.log({ err })
   } finally {
-    if (result) console.log({ result })
     stopLoading()
+    if (result) {
+      if (result.status === 201 && result.data) return result.data
+      else return null
+    }
   }
 }

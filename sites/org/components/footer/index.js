@@ -16,11 +16,6 @@ import InstagramIcon from 'shared/components/icons/instagram.js'
 import RedditIcon from 'shared/components/icons/reddit.js'
 import TwitterIcon from 'shared/components/icons/twitter.js'
 
-// Classes
-const link = 'text-secondary font-bold hover:pointer hover:underline px-1'
-const accent = 'text-accent font-bold text-base px-1 block sm:inline'
-const freesewing = 'px-1 text-base font-bold block sm:inline'
-
 const icon = { className: 'w-8 lg:w-12 h-8 lg:h-12' }
 const social = {
   Discord: {
