@@ -1,5 +1,6 @@
 ---
-title: How we structure our documentation
+title: Structure
+order: 200
 ---
 
 Whether you're writing documentation for FreeSewing or merely trying
