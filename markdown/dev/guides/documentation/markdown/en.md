@@ -1,6 +1,6 @@
 ---
 title: Markdown guide
-order: 900
+order: 800
 ---
 
 Markdown is a lightweight markup language with plain text formatting syntax.
