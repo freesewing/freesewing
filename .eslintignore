@@ -2,6 +2,7 @@
 *.jpg
 *.jpeg
 *.png
+*.svg
 *.sh
 *.md
 *.prisma

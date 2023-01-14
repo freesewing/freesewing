@@ -148,8 +148,58 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
 
   const ehash = hash(clean(body.email))
   await this.read({ ehash })
-  if (this.exists) return this.setResponse(400, 'emailExists')
+  if (this.exists) {
+    /*
+     * User already exists. However, if we return an error, then people can
+     * spam the signup endpoint to figure out who has a FreeSewing account
+     * which would be a privacy leak. So instead, pretend there is no user
+     * with that account, and that signup is proceeding as normal.
+     * Except that rather than a signup email, we send the user an info email.
+     *
+     * Note that we have to deal with 3 scenarios here:
+     *
+     *   - Account exists, and is active (aea)
+     *   - Account exists, but is inactive (regular signup)
+     *   - Account exists, but is disabled (aed)
+     */
+    // Set type of action based on the account status
+    let type = 'signup-aed'
+    if (this.record.status === 0) type = 'signup'
+    else if (this.record.status === 1) type = 'signup-aea'
 
+    // Create confirmation unless account is disabled
+    if (type !== 'signup-aed') {
+      this.confirmation = await this.Confirmation.create({
+        type,
+        data: {
+          language: body.language,
+          email: this.clear.email,
+          id: this.record.id,
+          ehash: ehash,
+        },
+        userId: this.record.id,
+      })
+    }
+    // Always send email
+    await this.mailer.send({
+      template: type,
+      language: body.language,
+      to: this.clear.email,
+      replacements: {
+        actionUrl:
+          type === 'signup-aed'
+            ? false // No actionUrl for disabled accounts
+            : i18nUrl(body.language, `/confirm/${type}/${this.Confirmation.record.id}`),
+        whyUrl: i18nUrl(body.language, `/docs/faq/email/why-${type}`),
+        supportUrl: i18nUrl(body.language, `/patrons/join`),
+      },
+    })
+
+    // Now return as if everything is fine
+    return this.setResponse(201, false, { email: this.clear.email })
+  }
+
+  // New signup
   try {
     this.clear.email = clean(body.email)
     this.clear.initial = this.clear.email

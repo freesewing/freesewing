@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import Header from 'site/components/header'
-import Footer from 'site/components/footer'
+import { Footer } from 'site/components/footer/index.js'
 import Search from 'site/components/search'
 
 const LayoutWrapper = ({ app, children = [], footer, search, setSearch, noSearch = false }) => {

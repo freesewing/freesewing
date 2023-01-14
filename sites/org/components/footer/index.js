@@ -5,6 +5,8 @@ import CcByLogo from 'shared/components/logos/cc-by.js'
 import Ribbon from 'shared/components/ribbon.js'
 import Link from 'next/link'
 import { WordMark } from 'shared/components/wordmark.js'
+import { useTranslation } from 'next-i18next'
+import { freeSewingConfig } from 'site/freesewing.config.js'
 
 import HelpIcon from 'shared/components/icons/help.js'
 import DiscordIcon from 'shared/components/icons/discord.js'
@@ -13,41 +15,6 @@ import GithubIcon from 'shared/components/icons/github.js'
 import InstagramIcon from 'shared/components/icons/instagram.js'
 import RedditIcon from 'shared/components/icons/reddit.js'
 import TwitterIcon from 'shared/components/icons/twitter.js'
-
-// Classes
-const link = 'text-secondary font-bold hover:pointer hover:underline px-1'
-const accent = 'text-accent font-bold text-base px-1 block sm:inline'
-const freesewing = 'px-1 text-base font-bold block sm:inline'
-
-// Keep these translations in the component because they're only used here
-const translations = {
-  cc: (
-    <span>
-      Content on FreeSewing.org is available under{' '}
-      <a className={link} href="https://creativecommons.org/licenses/by/4.0/">
-        a Creative Commons license
-      </a>
-    </span>
-  ),
-  mit: (
-    <span>
-      The FreeSewing source code is{' '}
-      <a href="https://github.com/freesewing/freesewing" className={link}>
-        available on Github
-      </a>{' '}
-      under{' '}
-      <a href="https://opensource.org/licenses/MIT" className={link}>
-        the MIT license
-      </a>
-    </span>
-  ),
-  sponsors: (
-    <>
-      <span className={freesewing}>FreeSewing</span> is sponsored by these{' '}
-      <span className={accent}>awesome companies</span>
-    </>
-  ),
-}
 
 const icon = { className: 'w-8 lg:w-12 h-8 lg:h-12' }
 const social = {
@@ -77,7 +44,18 @@ const social = {
   },
 }
 
-const Footer = ({ app }) => {
+/*
+ * This named export lets people know
+ * what translation namespaces this component relies on
+ */
+export const namespaces = ['footer']
+
+/*
+ * Named exports are better than default exports
+ */
+export const Footer = ({ app }) => {
+  const { t } = useTranslation(namespaces)
+
   return (
     <footer className="bg-neutral">
       <Ribbon loading={app.loading} theme={app.theme} />
@@ -91,13 +69,15 @@ const Footer = ({ app }) => {
             <div className="flex flex-row gap-2 justify-center items-center mt-8">
               <CcByLogo className="w-8 lg:w-12" />
               <p className="text-neutral-content text-right basis-4/5 lg:basis-3/4 leading-5">
-                {translations.cc}
+                {t('cc')}
               </p>
             </div>
             <div className="flex flex-row gap-2 justify-center items-center mt-4">
               <OsiLogo className="w-8 lg:w-12" />
               <p className="text-neutral-content text-right basis-4/5 lg:basis-3/4 leading-5">
-                {translations.mit}
+                <a href={freeSewingConfig.monorepo} className="hover:pointer hover:underline px-1">
+                  {t('mit')}
+                </a>
               </p>
             </div>
           </div>
@@ -128,7 +108,7 @@ const Footer = ({ app }) => {
           {/* Sponsors */}
           <div className="border rounded-xl p-8 border-dashed border-base-100/25 mt-20">
             <p className="text-center text-neutral-content leading-5">
-              {translations.sponsors}
+              {t('sponsors')}
               <br />
             </p>
             <div className="py-4 flex flex-row gap-8 flex-wrap 2xl:flex-nowrap justify-around text-neutral-content">
@@ -177,5 +157,3 @@ const Footer = ({ app }) => {
     </footer>
   )
 }
-
-export default Footer

@@ -1,18 +1,11 @@
-import { buttonRow, closingRow, headingRow, lead1Row, wrap } from './blocks.mjs'
-import { translations as sharedTranslations } from './blocks.mjs'
+import { buttonRow, closingRow, headingRow, wrap } from '../shared/blocks.mjs'
+// Translations
+import en from '../../../../public/locales/en/loginlink.json' assert { type: 'json' }
+import de from '../../../../public/locales/de/loginlink.json' assert { type: 'json' }
+import es from '../../../../public/locales/es/loginlink.json' assert { type: 'json' }
+import fr from '../../../../public/locales/fr/loginlink.json' assert { type: 'json' }
+import nl from '../../../../public/locales/nl/loginlink.json' assert { type: 'json' }
 
-/*
- * Used the following replacements:
- * - actionUrl
- * - heading
- * - lead
- * - button
- * - closing
- * - greeting
- * - ps-pre-link
- * - ps-link
- * - ps-post-link
- */
 export const loginLink = {
   html: wrap.html(`
   ${headingRow}
@@ -39,4 +32,4 @@ ${closingRow.text}
 `),
 }
 
-export const translations = {}
+export const translations = { en, de, es, fr, nl }

@@ -22,3 +22,4 @@ yarn.lock
 .prettierignore
 .gitignore
 .eslintignore
+.gitkeep
