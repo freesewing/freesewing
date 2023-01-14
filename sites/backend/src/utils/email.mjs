@@ -36,7 +36,7 @@ async function sendEmailViaAwsSes(config, { template, to, language = 'en', repla
     ...translations[template][language],
     ...replacements,
   }
-  if (language !== 'en') replace.website += `${language}/`
+  if (language !== 'en') replace.website += `/${language}`
 
   // IMHO the AWS apis are a complete clusterfuck
   const client = new SESv2Client({ region: config.aws.ses.region })
