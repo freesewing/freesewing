@@ -25,12 +25,10 @@ export const closingRow = {
         <br>
         joost
         <br><br>
-        <small>
-          PS: {{ ps-pre-link}}
-          <a href="{{ supportUrl }}" target="_blank" style="text-decoration: none; color: #262626">
-            <b>{{ ps-link}}</b>
-          </a> {{ ps-post-link }}
-        </small>
+        PS: {{ ps-pre-link}}
+        <a href="{{ supportUrl }}" target="_blank" style="text-decoration: underline; color: #262626">
+          <b>{{ ps-link}}</b>
+        </a> {{ ps-post-link }}
       </p>
     </td>
   </tr>`,
@@ -71,6 +69,25 @@ export const lead1Row = {
     </td>
   </tr>`,
   text: `{{{ text-lead }}}
+  {{{ actionUrl }}}
+  `,
+}
+
+export const preLeadRow = {
+  html: `
+  <tr>
+    <td align="left" class="sm-p-15px" style="padding-top: 15px">
+      <p style="margin: 0; font-size: 16px; line-height: 25px; color: #262626">
+        {{ preLead }}
+        <br><br>
+        <a href="{{ actionUrl }}" target="_blank" style="text-decoration: none; color: #262626">
+          <b>{{ lead }}</b>
+        </a>
+      </p>
+    </td>
+  </tr>`,
+  text: `{{{ preLead }}}
+  {{{ text-lead }}}
   {{{ actionUrl }}}
   `,
 }
@@ -185,23 +202,26 @@ export const wrap = {
 <table align="center" class="sm-max-w-full" style="width: 100%; max-width: 500px" border="0" cellpadding="0" cellspacing="0" role="presentation">
   <tr>
     <td align="left" style="border-top: 1px solid #ddd; padding: 8px" ;>
-      <p style="margin: 0; font-size: 14px; line-height: 24px; color: #a3a3a3">
-        <a href="{{ urlWebsite }}" target="_blank" style="text-decoration: none; color: #a3a3a3"><b>{{ website }}</b></a>
+      <p style="margin: 0; font-size: 14px; line-height: 24px; color: #868e96; text-align: center;">
+        <a href="https://{{ website }}" target="_blank" style="text-decoration: underline; color: #868e96"><b>{{ website }}</b></a>
         <span style="font-size: 13px; color: #737373">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-        <a href="https://github.com/fresewing/freesewing" target="_blank" style="text-decoration: none; color: #a3a3a3"><b>Github</b></a>
+        <a href="https://github.com/fresewing/freesewing" target="_blank" style="text-decoration: underline; color: #868e96"><b>Github</b></a>
         <span style="font-size: 13px; color: #737373">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-        <a href="https://discord.freesewing.org/" target="_blank" style="text-decoration: none; color: #a3a3a3"><b>Discord</b></a>
-        <span style="font-size: 13px; color: #737373">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-        <a href="https://twitter.com/freesewing_org" target="_blank" style="text-decoration: none; color: #a3a3a3"><b>Twitter</b></a>
-        <span style="font-size: 13px; color: #737373">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-        <a href="{{ urlWhy }}" target="_blank" style="text-decoration: none; color: #a3a3a3"><b>{{ whyDidIGetThis }}</b></a>
+        <a href="https://discord.freesewing.org/" target="_blank" style="text-decoration: underline; color: #868e96"><b>Discord</b></a>
+      </p>
+      <p style="margin: 0; font-size: 12px; margin-top: 12px; line-height: 18px; color: #868e96; text-align: center;">
+        {{ notMarketing }}
+        <br>
+        {{ seeWhy }}&nbsp;
+        <a href="{{ urlWhy }}" target="_blank" style="text-decoration: underline; color: #868e96">{{ whyDidIGetThis }}</a>
+        <br>
         <br>
         FreeSewing
-        <span style="font-size: 13px; color: #737373">&nbsp;&nbsp;-&nbsp;&nbsp;</span>
-        Plantin en Moretuslei 69
-        <span style="font-size: 13px; color: #737373">&nbsp;&nbsp;-&nbsp;&nbsp;</span>
-        Antwerp
-        <span style="font-size: 13px; color: #737373">&nbsp;&nbsp;-&nbsp;&nbsp;</span>
+        <br>
+        67 Plantin en Moretuslei
+        <br>
+        Antwerp 2018
+        <br>
         Belgium
       </p>
     </td>
@@ -223,8 +243,8 @@ ${body}
 
 --
 FreeSewing
-Plantin en Moretuslei 69
-Antwerp
+Plantin en Moretuslei 67
+Antwerp 2018
 Belgium
 
 {{ website }} : {{{ urlWebsite }}}
@@ -233,27 +253,4 @@ Discord : https://discord.freesewing.org/
 Twitter : https://twitter.com/freesewing_org
 {{ whyDidIGetThis }} : {{{ whyUrl }}}
 `,
-}
-
-export const translations = {
-  en: {
-    whyDidIGetThis: 'Why did I get this email?',
-    website: 'freesewing.org',
-  },
-  de: {
-    whyDidIGetThis: 'Why did I get this?', // FIXME: Provide German translation
-    website: 'freesewing.org/de',
-  },
-  es: {
-    whyDidIGetThis: 'Why did I get this?', // FIXME: Provide Spanish translation
-    website: 'freesewing.org/es',
-  },
-  fr: {
-    whyDidIGetThis: 'Why did I get this?', // FIXME: Provide French translation
-    website: 'freesewing.org/fr',
-  },
-  nl: {
-    whyDidIGetThis: 'Waarom kreeg ik deze email?',
-    website: 'freesewing.org/nl',
-  },
 }
