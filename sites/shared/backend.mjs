@@ -21,9 +21,7 @@ export const signUp = async ({ email, language, startLoading, stopLoading }) => 
     console.log({ err })
   } finally {
     stopLoading()
-    if (result) {
-      if (result.status === 201 && result.data) return result.data
-      else return null
-    }
+    if (result && result.status === 201 && result.data) return result.data
+    return null
   }
 }

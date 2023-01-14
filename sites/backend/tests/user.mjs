@@ -42,6 +42,7 @@ export const userTests = async (chai, config, expect, store) => {
       })
     })
 
+    /* eslint-disable */
     step(`${store.icon('user')} Should pretend to signup an existing email address`, (done) => {
       chai
         .request(config.api)
@@ -258,6 +259,7 @@ export const userTests = async (chai, config, expect, store) => {
         })
     })
   })
+  /* eslint-enable */
 
   describe(`${store.icon('user')} Check for available usernames`, () => {
     it(`${store.icon('user')} Should find a username is available`, (done) => {
