@@ -25,3 +25,37 @@ export const signUp = async ({ email, language, startLoading, stopLoading }) => 
   if (result && result.status === 201 && result.data) return result.data
   return null
 }
+
+/*
+ * Load confirmation
+ */
+export const loadConfirmation = async ({ id, check, startLoading, stopLoading }) => {
+  let result
+  try {
+    startLoading()
+    result = await backend.get(`/confirmations/${id}/${check}`)
+  } catch (err) {
+    return err
+  } finally {
+    stopLoading()
+  }
+  if (result && result.status === 201 && result.data) return result.data
+  return null
+}
+
+/*
+ * Confirm signup
+ */
+export const confirmSignup = async ({ id, consent, startLoading, stopLoading }) => {
+  let result
+  try {
+    startLoading()
+    result = await backend.post(`/confirm/signup/${id}`, { consent })
+  } catch (err) {
+    return err
+  } finally {
+    stopLoading()
+  }
+  if (result && result.status === 200 && result.data) return result.data
+  return null
+}

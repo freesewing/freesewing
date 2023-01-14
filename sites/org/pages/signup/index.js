@@ -123,7 +123,7 @@ export default SignUpPage
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, namespaces)),
+      ...(await serverSideTranslations(locale)),
     },
   }
 }
