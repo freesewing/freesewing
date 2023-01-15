@@ -1,6 +1,6 @@
 ---
 title: Documentation Structure
-order: 200
+order: 300
 ---
 
 Whether you're writing documentation for FreeSewing or merely trying
