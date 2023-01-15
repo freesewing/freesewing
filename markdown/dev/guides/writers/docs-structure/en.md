@@ -1,5 +1,5 @@
 ---
-title: Structure
+title: Documentation Structure
 order: 200
 ---
 
