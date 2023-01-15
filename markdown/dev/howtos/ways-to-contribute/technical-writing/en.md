@@ -2,4 +2,4 @@
 title: Technical writing
 ---
 
-<ReadMore list />
+<ReadMore />
