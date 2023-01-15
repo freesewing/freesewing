@@ -91,6 +91,14 @@ ConfirmationModel.prototype.create = async function (data = {}) {
   return this.setResponse(201)
 }
 
+ConfirmationModel.prototype.unguardedDelete = async function () {
+  await this.prisma.confirmation.delete({ where: { id: this.record.id } })
+  this.record = null
+  this.clear = null
+
+  return this.setExists()
+}
+
 /*
  * Helper method to decrypt at-rest data
  */

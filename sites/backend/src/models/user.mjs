@@ -357,6 +357,9 @@ UserModel.prototype.confirm = async function ({ body, params }) {
   })
   if (this.error) return this
 
+  // Before we return, remove the confirmation so it works only once
+  await this.Confirmation.unguardedDelete()
+
   // Account is now active, let's return a passwordless login
   return this.loginOk()
 }
