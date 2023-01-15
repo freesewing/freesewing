@@ -3,15 +3,15 @@ title: Custom tags
 order: 90
 ---
 
-The way we render markdown on our websites is through the use of
+The way we render Markdown on our websites is through the use of
 [MDX](https://mdxjs.com/). This allows us to extend Markdown with our own
 tags. These tags are custom React components.
 
 Such custom components allow us to put things in Markdown content that would
 typically require a lot more complexity.
 
-Below is a list of custom components that we support in our markdown-based
-documentation, both for FreeSewing.dev as FreeSewing.org.
+Below is a list of custom tags that we support in our Markdown-based
+documentation, both for freesewing.dev as freesewing.org.
 
 ## Comment
 
@@ -20,7 +20,7 @@ or tip/advice rather than the sort more neutral voice used throughout
 our documentation.
 
 | Attribute | Default | Description |
-| ---- | ------- | ----------- |
+| ----:| ------- | ----------- |
 | `by` |         | Name of the commenter |
 
 <Tabs tabs="example, markdown">
@@ -36,16 +36,15 @@ our documentation.
 
 ## Example
 
-The **Example** component allows you to embed a FreeSewing code example and have it rendered in the browser.
+The **Example** tag allows you to embed a FreeSewing code example and have it rendered in the browser.
 Specifically, you should write a [draft method](/reference/api/part/draft) which will then be rendered.
 
 | Attribute | Default | Description |
-| ---- | ------- | ----------- |
+| ----:| ------- | ----------- |
 | `caption` |         | The caption to go under the example |
-| `tutorial` | `false` | Set this to show the code first, rather than the result |
-| `tutorial` | `false` | Set this to show the code first, rather than the result |
-| `previewFirst` | `false` | Set this to show the code first, rather than the result (same as `tutorial`) |
-| `withHead` | `false` | Set this to include a head measurement (for tutorial) |
+| `tutorial` | `false` | Set this to show the Code tab first, rather than the default Preview tab. Also, additional options are made available for use in pattern examples |
+| `previewFirst` | `false` | Set this to always show the Preview tab first, regardless of the value of `tutorial` |
+| `withHead` | `false` | Set this to include a head measurement (for tutorial pattern examples) |
 | `paperless` | `false` | Set this to enable paperless mode |
 | `settings` |  | A YAML string of settings to take into account |
 
@@ -101,7 +100,7 @@ Use **Fixme** to indicate something needs attention/work but you don't have time
 or can't fix it now.
 
 | Attribute | Default | Description |
-| --------- | ------- | ----------- |
+| ---------:| ------- | ----------- |
 | `compact` | `false` | Renders compact variant |
 
 <Tabs tabs="example, markdown">
@@ -130,7 +129,7 @@ or can't fix it now.
 Use **Note** to add something that stands out to draw attention.
 
 | Attribute | Default | Description |
-| ---- | ------- | ----------- |
+| ----:| ------- | ----------- |
 | `compact` | `false` | Renders compact variant |
 
 <Tabs tabs="example, markdown">
@@ -154,21 +153,27 @@ This style also comes in black, which we can all agree is the superior color
 
 ## ReadMore
 
-The ReadMore component allows you to insert a list of child-pages.
-It's typically used on overview pages, such as out [markdown guide](/guides/markdown) page.
+The **ReadMore** tag allows you to insert a list of child-pages.
+The list is automatically generated from the pages in the subdirectories
+of the documentation page's directory.
+This tag is typically used on overview pages, such as our [Markdown guide](/guides/markdown) page.
+
+| Attribute | Default | Description |
+| ----:| ------- | ----------- |
+| `recurse` | `false` | Include all child-pages and sub-child-pages in the entire directory tree |
 
 ```markdown
 <ReadMore />
 ```
 
-It won't show anything on this page, since this page has not child-pages.
+(It won't show anything on this page, since this page has no child-pages.)
 
 ## Related
 
 Use **Related** to add something that is relevant to the current topic.
 
 | Attribute | Default | Description |
-| ---- | ------- | ----------- |
+| ----:| ------- | ----------- |
 | `compact` | `false` | Renders compact variant |
 
 <Tabs tabs="example, markdown">
@@ -194,22 +199,24 @@ Use **Related** to add something that is relevant to the current topic.
 Use **Tip** for, you know, tips.
 
 | Attribute | Default | Description |
-| ---- | ------- | ----------- |
+| ----:| ------- | ----------- |
 | `compact` | `false` | Renders compact variant |
 
 <Tabs tabs="example, markdown">
 <Tab>
 <Tip>
-  Comparing yourself to others is the fastest way to become unhappy
+  The notches on the shoulder and sleeve parts are used to help with
+  alignment when attaching the sleeve.
 </Tip>
-<Tip compact>Try the veal</Tip>
+<Tip compact>Align the notches so they match</Tip>
 </Tab>
 <Tab>
 ```markdown
 <Tip>
-  Comparing yourself to others is the fastest way to become unhappy
+  The notches on the shoulder and sleeve parts are used to help with
+  alignment when attaching the sleeve.
 </Tip>
-<Tip compact>Try the veal</Tip>
+<Tip compact>Align the notches so they match</Tip>
 ```
 </Tab>
 </Tabs>
@@ -217,10 +224,10 @@ Use **Tip** for, you know, tips.
 
 ## Warning
 
-Use **Warning** when you want to warn the reader for potential danger or unintended side-effects.
+Use **Warning** when you want to warn the reader of potential danger or unintended side-effects.
 
 | Attribute | Default | Description |
-| ---- | ------- | ----------- |
+| ----:| ------- | ----------- |
 | `compact` | `false` | Renders compact variant |
 
 <Tabs tabs="example, markdown">
@@ -242,13 +249,12 @@ Use **Warning** when you want to warn the reader for potential danger or uninten
 </Tab>
 </Tabs>
 
-
 ## YouTube
 
-The **YouTube** components will embed YouTube videos or YouTube playlists responsively.
+The **YouTube** tag will embed YouTube videos or YouTube playlists responsively.
 
 | Attribute | Default | Description |
-| ---- | ------- | ----------- |
+| ----:| ------- | ----------- |
 | `id` |  | ID of the YouTube video or playlist |
 | `playlist` | `false` | Set this when embedding a playlist |
 

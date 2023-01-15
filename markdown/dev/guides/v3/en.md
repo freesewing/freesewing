@@ -3,7 +3,7 @@ title: FreeSewing version 3
 ---
 
 Since August 2022, we've been working on the next major version of FreeSewing:
-version 3 (v3).  This guides presents a high level overview of the changes that
+version 3 (_v3_).  This guide presents a high level overview of the changes that
 are going into v3, why we're making them, and what to expect.
 
 <Fixme compact>This guide is a work in process</Fixme>
@@ -11,7 +11,7 @@ are going into v3, why we're making them, and what to expect.
 If you're looking for a more hands-on list of changes between v2 and v3, please
 refer to [the v3 migration guide](/guides/v3/migration).
 
-Once v3 is in production, these guides will become less relevant. For now,
+Once v3 is in production, this guide and the migration guide will become less relevant. For now,
 short of reading the code itself, they are your best source for the inside
 scoop on v3, unless you want to read the source code of course.
 
@@ -44,22 +44,22 @@ pattern parts such as a *sleeve pack* or a *collar pack*. You would then be
 able to create new designs by combining a collar from the collar pack, some
 sleeves from the sleeve pack and so on.
 
-As we itterated on this idea, it became clear that there was little added value
+As we iterated on this idea, it became clear that there was little added value
 in creating another type of container (a *pack*) and that it would be better if
 we made it easier to treat each design as a *pack*. In other words, allow
 people to combine parts from different designs in a seamless way.
 
 Design inheritance was already possible in v2, but because the configuration
-was handled on the design level, it required careful re-confiruration of
+was handled on the design level, it required careful re-configuration of
 (required) measurements, options, part dependencies, and so on. It was
-possible, but came with a lot of friction. 
+possible but came with a lot of friction.
 
 So in v3, all configuration is moved to the part level, and a design is now not
 much more than a container object for a collection of parts. It is the parts
-themselves that configure what they need. Anything from the measurements they
+themselves that configure what they need. This includes anything from the measurements they
 require, the options they provide, the plugins they use, and so on.
 
-This way, you can pull a part out of a design and all of its configuration,
+This way, you can pull a part out of a design, and all of its configuration,
 dependencies, plugins, and so on will follow.
 
 This migration of the configuration from the design level to the part level is
@@ -70,20 +70,20 @@ most of the work needs to be done to port existing designs from v2 to v3.
 
 The effort to improve the developer experience started already in v2. We've
 shipped a new development environment based on NextJS (previously we used
-Create React App) and have designing patterns more frictionless both for
-stand-alone development, as well as for people working with(in) [our
+Create React App), and this has made designing patterns more frictionless both for
+stand-alone development as well as for people working with(in) [our
 monorepo](https://github.com/freesewing/freesewing).
 
-We've also switched from Rollup to Esbuild as our bundler, and in the process
+We've also switched from Rollup to Esbuild as our bundler and in the process
 dumped Babel.
 
 However, some of the changes we wanted to make to simplify things would have
-been breaking changes, so they were put on hold. Until now that as.
+been breaking changes, so they were put on hold. Until now that is.
 
-For example, in version 2, we shipped both CJS and ESM modules, and we relied
+For example, in version 2 we shipped both CJS and ESM modules, and we relied
 on default exports.
 
-In version 3, FreeSewing is ESM-only and we only use named exports in the code
+In version 3, FreeSewing is ESM-only, and we only use named exports in the code
 we publish as they provide better IDE integration.
 
 For many of our users, these choices are deep enough under the hood that they
@@ -91,8 +91,8 @@ are unconcerned by them.  But for contributors, things have gotten a lot more
 approachable. For one thing, we are also porting our websites to NextJS so that
 there's only one frontend development framework to familiarize yourself with. 
 
-Together, these changes not only provide a better developer experience, a more
-unified approach, they've also slashed our build times.  In that sense, v3 is
+Together, these changes not only provide a better developer experience and a more
+unified approach, but they've also slashed our build times.  In that sense, v3 is
 (for now) the final chapter of our efforts to provide a better developer
 experience.
 
@@ -100,20 +100,20 @@ experience.
 
 Sampling is when FreeSewing drafts a number of variations of a given pattern
 and allows you to compare them by stacking the parts on top of each other. In
-v2 this was bolted on as an afterthought, and as such implemented in a somewhat
+v2 this was bolted on as an afterthought and as such was implemented in a somewhat
 hackish way.
 
-In v2, only paths are sampled and you can't compare list options among other
+In v2, only paths were sampled and you couldn't compare list options, among other
 restrictions.  Improving this and making sampling cover the entire spectrum
 of what goes in a design has been on our roadmap for a while, but we were not
 able to do much without introducing breaking changes.
 
 To handle this use-case in v3, we've added two new features that together open
-up a range of possibilities.  One is support for multisets, the other is
-support for stacks.
+up a range of possibilities.  One is support for _multisets_, and the other is
+support for _stacks_.
 
 Multisets means you can pass a number of different sets of settings to a
-pattern and core will draft the pattern for each set of settings.
+pattern, and core will draft the pattern for each set of settings.
 
 Stacks allow you to designate different parts of your pattern --- or parts
 across different sets of settings --- as belonging to the same stack. When it's
@@ -128,27 +128,27 @@ measurements when dealing with an asymmetric body.
 
 This is something that works on two different levels.
 
-One one hand, we've had some feature requests in v2 that were good ideas, but a
+One one hand, we've had some feature requests in v2 that were good ideas but a
 bit too specific to the user's setup for us to add them to core.
 
 On the other hand, we had things in core and in a design's configuration that
-were tightly coupled to FreeSewing's own frontend (on FreeSewing.org) and not
+were tightly coupled to FreeSewing's own frontend (on freesewing.org) and not
 really relevant to people using our software for other purposes.
 
-In v3, we wanted to keep our core library fully neutral. FreeSewing.org should
-not be a *special* case, so all the FreeSewing.org specific stuff had to go.
+In v3, we wanted to keep our core library fully neutral. freesewing.org should
+not be a *special* case, so all the freesewing.org specific stuff had to go.
 Instead, all our users, including ourselves, should have the possibility to
 extend the software with the features they need for frontend integration.
 
-Removing the FreeSewing.org specific stuff means that designs now no longer
-ship with any FreeSewing.org specific info.  Instead, plugins can now further
+Removing the freesewing.org specific stuff means that designs now no longer
+ship with any freesewing.org specific info.  Instead, plugins can now further
 extend core with *store methods*, and we allow passing any data into the
 design that you can then access on the pattern object.
 
 You can also add additional data to your part's options to further facilitate
 frontend integration.  We've also added more lifecycle hooks to let people hook
-into the drafting process at different times in a pattern's lifecycle.  And
-we've improved the logging process as well as allow people to plug in their own
+into the drafting process at different times in a pattern's lifecycle.  And,
+we've improved the logging process as well as allowing people to plug in their own
 log handlers. 
 
 These changes make our core library less opinionated about how it should be
@@ -225,7 +225,7 @@ The following methods have been added to the core API in v3:
 ## Changes for developers
 
 - FreeSewing is now ESM-only
-- We use named exports instead of default experts
+- We use named exports instead of default exports
 - We've switched from Rollup to Esbuild for our bundler
 - FreeSewing v3 requires NodeJS 16 or more recent
 

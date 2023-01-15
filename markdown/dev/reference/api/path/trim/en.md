@@ -43,11 +43,11 @@ Path path.trim()
         .line(points["base" + i])
     }
   }
-  
+
   paths.offset = paths.example
     .offset(10)
     .setClass("lining dotted stroke-sm")
-  
+
   paths.trimmed = paths.offset
     .trim()
     .setClass("various stroke-xl")

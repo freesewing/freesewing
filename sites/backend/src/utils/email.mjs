@@ -1,6 +1,7 @@
 import { templates, translations } from '../templates/email/index.mjs'
 import { SESv2Client, SendEmailCommand } from '@aws-sdk/client-sesv2'
 import mustache from 'mustache'
+import { log } from './log.mjs'
 
 /*
  * Exporting this closure that makes sure we have access to the
@@ -20,14 +21,22 @@ export const mailer = (config) => ({
  */
 async function sendEmailViaAwsSes(config, { template, to, language = 'en', replacements = {} }) {
   // Make sure we have what it takes
-  if (!template || !to || typeof templates[template] === 'undefined') return false
+  if (!template || !to || typeof templates[template] === 'undefined') {
+    log.warn(`Tried to email invalid template: ${template}`)
+    return false
+  }
+
+  log.info(`Emailing template ${template} to ${to}`)
 
   // Load template
   const { html, text } = templates[template]
   const replace = {
+    website: `FreeSewing.org`,
+    ...translations.shared[language],
     ...translations[template][language],
     ...replacements,
   }
+  if (language !== 'en') replace.website += `/${language}`
 
   // IMHO the AWS apis are a complete clusterfuck
   const client = new SESv2Client({ region: config.aws.ses.region })

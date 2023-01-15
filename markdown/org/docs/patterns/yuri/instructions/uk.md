@@ -4,12 +4,12 @@ title: "Yuri hoodie: Sewing Instructions"
 
 <Note>
 
-This pattern can be sewn with or with out a overlocker/serger. To _**Finish**_ seams without a overlocker/serger you can either use your prefered method or one of the methods below:
+This pattern can be sewn with or with out a overlocker/serger. To _finish_ seams without a overlocker/serger you can either use your prefered method or one of the methods below:
 
 ##### Finishing Method 1
 
 - Press open the seam allowances.
-- Then on the good side, _**Edgestitch**_ 3mm (1/8 inch) away or closer to both sides of the seam catching the seam allowances underneath.
+- Then on the good side, _edgestitch_ 3mm (1/8 inch) away or closer to both sides of the seam catching the seam allowances underneath.
 - On the wrong side trim the seam allowances close to the edgestitching.
 
 ##### Finishing Method 2
@@ -28,17 +28,17 @@ If using a overlocker/serger you can sew seams which need fininshing in one go r
 ## Step 1: Attaching the Gussets
 
 - With the good sides together, sew the gussets to the front panels along the side seams.
-- _**Finish**_ seams.
+- _finish_ seams.
 
 ## Step 2:  Sew the Shoulder Seams
 
 - With good sides together, sew the front pieces to the back along the shoulder seams.
-- _**Finish**_ seams.
+- _finish_ seams.
 
 ## Step 3: Attach the Sleeves
 
 - With good sides together, matching back notch to back notch and front notch to front notch, sew the sleeves to the body.
-- _**Finish**_ seams.
+- _finish_ seams.
 
 <Note>
 
@@ -65,7 +65,7 @@ This is just one hemming method, if you prefer another way go for it.
 ## Step 5: Close the Sides
 
 - With good sides together, matching shoulder seams, start at the sleeve edge and sew the sleeve together than sew the gusset and back together.
-- _**Finish**_ seams.
+- _finish_ seams.
 - Repeat for remaining sleeve and side opening.
 
 ## Step 6: Hem the Raw Edges
@@ -80,7 +80,7 @@ Follow this step twice, once for the outer hood and once for the lining hood.
 - With good sides together, sew the long edge of the Hood Centre to the outer edge of one of the Hood Sides.
 - With good sides together, sew the remaining long edge of the Hood Centre to the outer edge of the other Hood Side.
 - Press the seam allowances open.
-- _**Finish**_ seams.
+- _finish_ seams.
 
 <Note>
 

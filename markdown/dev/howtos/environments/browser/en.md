@@ -2,20 +2,21 @@
 title: FreeSewing in the browser
 ---
 
-Thanks to the advances in browser standardisation around Javascrip
+Thanks to the advances in browser standardisation around JavaScript
 ESM modules, not to mention [the new Skypack CDN](https://www.skypack.dev/),
-you can generate patterns in the browser with a few lines of Javascript.
+you can generate patterns in the browser with a few lines of JavaScript.
 
 <Tip>
 
 ##### Use FreeSewing.org if you just want a pattern
 
 These instructions are intended for people who want to generate
-their own patterns. If you _just want a sewing pattern_ you can
-get all our designs on [FreeSewing.org](https://FreeSewing.org/),
+their own patterns using FreeSewing packages.
+If you _just want a sewing pattern created for you,_
+you can get all our designs on [FreeSewing.org](https://freesewing.org/),
 our website for makers.
 
-</Tip> 
+</Tip>
 
 ## High level overview
 
@@ -58,7 +59,7 @@ Below is a complete example.
     <script type="module">
       import Aaron from 'https://cdn.skypack.dev/@freesewing/aaron';
       import theme from 'https://cdn.skypack.dev/@freesewing/plugin-theme';
-      const svg = new Aaron({ 
+      const svg = new Aaron({
         sa: 10, // Seam allowance
         paperless: true, // Enable paperless mode
         // More settings, see: https://FreeSewing.dev/reference/settings
@@ -86,7 +87,7 @@ Below is a complete example.
 
 ## Dependencies
 
-If you compare this example with [our NodeJS
+If you compare this example with [our Node.js
 example](/howtos/environments/nodejs) you'll notice that you do not
 need to worry about loading any dependencies. Not even `@freesewing/core`
 is loaded, because Skypack will pull in all dependencies for you.

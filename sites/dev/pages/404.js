@@ -8,11 +8,11 @@ import PageLink from 'shared/components/page-link'
 
 const Page404 = () => {
   const app = useApp()
+  const title = '404: Page not found'
 
   return (
-    <Page app={app} title="404: Page not found" layout={Layout}>
+    <Page app={app} title={title} layout={Layout}>
       <Head>
-        <meta property="og:title" content="Page not found" key="title" />
         <meta property="og:type" content="article" key="type" />
         <meta
           property="og:description"

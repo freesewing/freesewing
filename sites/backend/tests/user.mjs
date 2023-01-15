@@ -42,17 +42,18 @@ export const userTests = async (chai, config, expect, store) => {
       })
     })
 
-    step(`${store.icon('user')} Should fail to signup an existing email address`, (done) => {
+    /* eslint-disable */
+    step(`${store.icon('user')} Should pretend to signup an existing email address`, (done) => {
       chai
         .request(config.api)
         .post('/signup')
         .send(fields)
         .end((err, res) => {
-          expect(res.status).to.equal(400)
+          expect(res.status).to.equal(201)
           expect(res.type).to.equal('application/json')
           expect(res.charset).to.equal('utf-8')
-          expect(res.body.result).to.equal(`error`)
-          expect(res.body.error).to.equal('emailExists')
+          expect(res.body.result).to.equal(`success`)
+          expect(res.body.email).to.equal(fields.email)
           done()
         })
     })
@@ -79,7 +80,7 @@ export const userTests = async (chai, config, expect, store) => {
     step(`${store.icon('user')} Should set the password`, (done) => {
       chai
         .request(config.api)
-        .put('/account/jwt')
+        .patch('/account/jwt')
         .set('Authorization', 'Bearer ' + store.account.token)
         .send({
           password: store.account.password,
@@ -94,7 +95,7 @@ export const userTests = async (chai, config, expect, store) => {
     step(`${store.icon('user')} Should set the password (altaccount)`, (done) => {
       chai
         .request(config.api)
-        .put('/account/jwt')
+        .patch('/account/jwt')
         .set('Authorization', 'Bearer ' + store.altaccount.token)
         .send({
           password: store.altaccount.password,
@@ -254,6 +255,39 @@ export const userTests = async (chai, config, expect, store) => {
           expect(res.body.account.username).to.equal(store.account.username)
           expect(res.body.account.lusername).to.equal(store.account.username.toLowerCase())
           expect(typeof res.body.account.id).to.equal(`number`)
+          done()
+        })
+    })
+  })
+  /* eslint-enable */
+
+  describe(`${store.icon('user')} Check for available usernames`, () => {
+    it(`${store.icon('user')} Should find a username is available`, (done) => {
+      chai
+        .request(config.api)
+        .post(`/available/username`)
+        .send({
+          username: 'haochi',
+        })
+        .end((err, res) => {
+          expect(err === null).to.equal(true)
+          expect(res.status).to.equal(404)
+          done()
+        })
+    })
+    it(`${store.icon('user')} Should find a username is not available`, (done) => {
+      chai
+        .request(config.api)
+        .post(`/available/username`)
+        .send({
+          username: store.account.username,
+        })
+        .end((err, res) => {
+          expect(err === null).to.equal(true)
+          expect(res.status).to.equal(200)
+          expect(res.body.result).to.equal('success')
+          expect(res.body.available).to.equal(false)
+          expect(res.body.username).to.equal(store.account.username)
           done()
         })
     })

@@ -15,7 +15,7 @@ const config = (site, remarkPlugins = []) => ({
   experimental: {
     externalDir: true,
   },
-  pageExtensions: ['js', 'md', 'mjs'],
+  pageExtensions: ['js'],
   webpack: (config, options) => {
     // Fixes npm packages that depend on node modules
     if (!options.isServer) {
@@ -66,22 +66,23 @@ const config = (site, remarkPlugins = []) => ({
     config.resolve.alias.designs = path.resolve('../../designs/')
     config.resolve.alias.plugins = path.resolve('../../plugins/')
     config.resolve.alias.pkgs = path.resolve('../../packages/')
+    config.resolve.alias.root = path.resolve('../../')
 
     // Load designs from source, rather than compiled package
     for (const design in designs) {
-      config.resolve.alias[`@freesewing/${design}$`] = path.resolve(
+      config.resolve.alias[`@freesewing/${design}`] = path.resolve(
         `../../designs/${design}/src/index.mjs`
       )
     }
     // Load plugins from source, rather than compiled package
     for (const plugin in plugins) {
-      config.resolve.alias[`@freesewing/${plugin}$`] = path.resolve(
+      config.resolve.alias[`@freesewing/${plugin}`] = path.resolve(
         `../../plugins/${plugin}/src/index.mjs`
       )
     }
     // Load these from source, rather than compiled package
     for (const pkg of ['core', 'i18n', 'models', 'snapseries']) {
-      config.resolve.alias[`@freesewing/${pkg}$`] = path.resolve(
+      config.resolve.alias[`@freesewing/${pkg}`] = path.resolve(
         `../../packages/${pkg}/src/index.mjs`
       )
     }

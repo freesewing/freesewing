@@ -3,11 +3,11 @@ title: Conclusion
 order: 280
 ---
 
-Congratulations, you have created your first pattern. And while it's arguably
+Congratulations, we have created our first pattern. And while it's arguably
 rather simple, we have learned a bunch of things along the way. Let's list
 some of the things we've learned:
 
-- We learned how to [setup your development environment][new-design] with `npx
+- We learned how to [setup our development environment][new-design] with `npx
   @freesewing/new-design`
 - We learned about [the different files and folders][structure] in the
   development environment and how `design/src` holds our source code.
@@ -17,7 +17,7 @@ some of the things we've learned:
 - We learned about [a part's draft method][draft-method] and how to destructure
   what we need to design our part.
 - We learned [how to add points and draw paths][constructing-the-neck-opening]
-- We learned how you can make changes in a loop to [adapt the neck
+- We learned how we can make changes in a loop to [adapt the neck
   opening][fitting-the-neck-opening] or [rotate the straps][avoiding-overlap]
   until they were just right
 - We learned about [macros and how to use them][creating-the-closure]
@@ -26,7 +26,7 @@ some of the things we've learned:
 - We learned about what it means to draft [a complete
   pattern][completing-our-pattern]
 - We learned about [snippets and how to add them][completing-our-pattern]
-- We learned [how to offset a path][completing-your-pattern] to create seam
+- We learned [how to offset a path][completing-our-pattern] to create seam
   allowance, or in our case, mark the bias tape line
 - We learned how to support a [paperless pattern][paperless] by adding
   dimensions

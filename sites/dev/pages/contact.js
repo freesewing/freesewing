@@ -21,9 +21,8 @@ const ContactPage = () => {
   const title = 'Contact information'
 
   return (
-    <Page app={app} title="Contact information" slug="contact" crumbs={[[title, 'contact']]}>
+    <Page app={app} title={title} slug="contact" crumbs={[[title, 'contact']]}>
       <Head>
-        <meta property="og:title" content={title} key="title" />
         <meta property="og:type" content="article" key="type" />
         <meta
           property="og:description"

@@ -4,12 +4,12 @@ title: "Yuri hoodie: Sewing Instructions"
 
 <Note>
 
-Dit patroon kan met of met een overlocker/overlock worden gestikt. To _**Finish**_ seams without a overlocker/serger you can either use your prefered method or one of the methods below:
+Dit patroon kan met of met een overlocker/overlock worden gestikt. To _finish_ seams without a overlocker/serger you can either use your prefered method or one of the methods below:
 
 ##### Finishing Method 1
 
 - Press open the seam allowances.
-- Then on the good side, _**Edgestitch**_ 3mm (1/8 inch) away or closer to both sides of the seam catching the seam allowances underneath.
+- Then on the good side, _edgestitch_ 3mm (1/8 inch) away or closer to both sides of the seam catching the seam allowances underneath.
 - Aan de verkeerde kant bijknippen de naadwaarde dicht bij het stikteken.
 
 ##### Finishing Method 2
@@ -28,17 +28,17 @@ Als je een overlocker/overlock gebruikt, kun je naden naaien die in één keer f
 ## Stap 1: Gussets bijvoegen
 
 - Stik de voorpanden langs de zijkanten van de goede kanten op elkaar, langs de zijnaden.
-- _**Finish**_ seams.
+- _finish_ seams.
 
 ## Stap 2: Stik de schoudernaden
 
 - Stik de voorpanden aan de achterkant langs de schoudernaden.
-- _**Finish**_ seams.
+- _finish_ seams.
 
 ## Stap 3: Bevestig de mouwen
 
 - Met goede kanten op elkaar, vul het merkteken op de achterkant en het merkteken aan het voorpand, stik de mouwen aan het lichaam.
-- _**Finish**_ seams.
+- _finish_ seams.
 
 <Note>
 
@@ -65,7 +65,7 @@ Dit is slechts één zoommethode, als je de voorkeur geeft aan een andere manier
 ## Stap 5: Sluit de zijnaad
 
 - Met goede kanten samen, combineer schoudernaden, begin aan de rand van de mouw en stik de mouw samen dan de mouw aan elkaar te naaien.
-- _**Finish**_ seams.
+- _finish_ seams.
 - Herhaal voor resterende mouw en zijopening.
 
 ## Stap 6: Zoom de Rauwe randen
@@ -80,7 +80,7 @@ Follow this step twice, once for the outer hood and once for the lining hood.
 - Stik de lange rand van het kap aan de buitenrand van een van de kap aan elkaar.
 - Stik de resterende lange rand van het kap centrum aan de buitenrand van de andere kap aan elkaar.
 - Strijk de naadwaardes open.
-- _**Finish**_ seams.
+- _finish_ seams.
 
 <Note>
 

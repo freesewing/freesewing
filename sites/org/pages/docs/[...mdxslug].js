@@ -6,13 +6,15 @@ import TocWrapper from 'shared/components/wrappers/toc'
 import Head from 'next/head'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import components from 'site/components/mdx/index.js'
+import { jargon } from 'site/jargon.mjs'
 // MDX paths
 import mdxPaths from 'site/prebuild/mdx.paths.js'
 
-const MdxPage = props => {
-
+const MdxPage = (props) => {
   // This hook is used for shared code and global state
-  const app = useApp()
+  const app = useApp(props)
+  const title = props.page.title
+  const fullTitle = title + ' - FreeSewing.org'
 
   /*
    * Each page should be wrapped in the Page wrapper component
@@ -27,21 +29,26 @@ const MdxPage = props => {
     <Page app={app} {...props.page}>
       <Head>
         <meta property="og:title" content={props.page.title} key="title" />
-        <meta property="og:type" content="article" key='type' />
-        <meta property="og:description" content={props.intro} key='type' />
-        <meta property="og:article:author" content='Joost De Cock' key='author' />
-        <meta property="og:image" content={`https://canary.backend.freesewing.org/og-img/en/dev/${props.page.slug}`} key='image' />
+        <meta property="og:type" content="article" key="type" />
+        <meta property="og:description" content={props.intro} key="type" />
+        <meta property="og:article:author" content="Joost De Cock" key="author" />
+        <meta
+          property="og:image"
+          content={`https://canary.backend.freesewing.org/og-img/en/dev/${props.page.slug}`}
+          key="image"
+        />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:url" content={`https://freesewing.dev/${props.page.slug}`} key='url' />
-        <meta property="og:locale" content="en_US" key='locale' />
-        <meta property="og:site_name" content="freesewing.dev" key='site' />
+        <meta property="og:url" content={`https://freesewing.dev/${props.page.slug}`} key="url" />
+        <meta property="og:locale" content="en_US" key="locale" />
+        <meta property="og:site_name" content="freesewing.dev" key="site" />
+        <title>{fullTitle}</title>
       </Head>
       <div className="flex flex-row-reverse flex-wrap xl:flex-nowrap justify-end">
         {props.toc && (
           <div className="mb-8 w-full xl:w-80 2xl:w-96 xl:pl-8 2xl:pl-16">
-            <TocWrapper toc={props.toc} app={app}/>
+            <TocWrapper toc={props.toc} app={app} />
           </div>
         )}
         <MdxWrapper mdx={props.mdx} app={app} components={components} />
@@ -55,7 +62,6 @@ const MdxPage = props => {
  */
 export default MdxPage
 
-
 /*
  * getStaticProps() is used to fetch data at build-time.
  *
@@ -68,13 +74,13 @@ export default MdxPage
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticProps({ params, locale }) {
-
   const { mdx, intro, toc, frontmatter } = await mdxLoader(
     locale,
     'org',
-    ['docs', ...params.mdxslug].join('/')
+    ['docs', ...params.mdxslug].join('/'),
+    jargon[locale]
   )
-  const { title='FIXME: Please give this page a title' } = frontmatter
+  const { title = 'FIXME: Please give this page a title' } = frontmatter
 
   return {
     props: {
@@ -86,13 +92,11 @@ export async function getStaticProps({ params, locale }) {
         path: '/' + params.mdxslug.join('/'),
         slugArray: params.mdxslug,
         title,
-        order: frontmatter.order
-          ? frontmatter.order+title
-          : title
+        order: frontmatter.order ? frontmatter.order + title : title,
       },
       params,
       ...(await serverSideTranslations(locale)),
-    }
+    },
   }
 }
 
@@ -106,20 +110,18 @@ export async function getStaticProps({ params, locale }) {
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticPaths() {
-
   const somePaths = mdxPaths
-    .filter(path => (path.split('/').length < 5))
-    .filter(path => (path !== 'docs'))
+    .filter((path) => path.split('/').length < 5)
+    .filter((path) => path !== 'docs')
 
   return {
     paths: [
-      ...somePaths.map(key => `/${key}`),
-      ...somePaths.map(key => `/es/${key}`),
-      ...somePaths.map(key => `/de/${key}`),
-      ...somePaths.map(key => `/fr/${key}`),
-      ...somePaths.map(key => `/nl/${key}`),
+      ...somePaths.map((key) => `/${key}`),
+      ...somePaths.map((key) => `/es/${key}`),
+      ...somePaths.map((key) => `/de/${key}`),
+      ...somePaths.map((key) => `/fr/${key}`),
+      ...somePaths.map((key) => `/nl/${key}`),
     ],
-    fallback: 'blocking'
+    fallback: 'blocking',
   }
 }
-

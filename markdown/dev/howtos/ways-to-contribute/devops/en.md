@@ -2,7 +2,7 @@
 title: Devops
 ---
 
-We have use a lot of automation from Github actions to automated deployment on Vercel.
+We have use a lot of automation from GitHub actions to automated deployment on Vercel.
 We also have some Ansible playbooks to run maintenance tasks.
 
 There's also other technical tasks like database or server administration, certificate renewal, and so on.

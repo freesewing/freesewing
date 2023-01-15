@@ -3,11 +3,11 @@ title: Supporting paperless patterns
 order:  270
 ---
 
-The goal of paperless patterns is to create a pattern that you don't need to
-print to be able to use it. Saving paper is always a good thing, but it's 
+The goal of paperless patterns is to create a pattern that we don't need to
+print to be able to use it. Saving paper is always a good thing, but it's
 also a way to democratize access to patterns.
 
-While more and more of humanity is on the internet, access to printers and 
+While more and more of humanity is on the internet, access to printers and
 printing paper is often harder to come by, especially in developing countries.
 
 So before wrapping up, let's make the extra effort to make our bib design
@@ -15,11 +15,11 @@ support paperless pattern.
 
 ## The paperless setting
 
-Users can request paperless patterns by setting [the `paperless` 
+Users can request paperless patterns by setting [the `paperless`
 setting](/reference/settings/paperless) to a *truthy* value.
 
 Like other settings, we can destructure it to get access to it.
-Then, much like with the `complete` setting, we will wrap our 
+Then, much like with the `complete` setting, we will wrap our
 paperless-specific code in a condition so it only runs when the user wants
 that.
 
@@ -27,11 +27,11 @@ With paperless enabled, FreeSewing will automatically render a grid for each
 pattern part with metric or imperial markings, depending on the units requested
 by the user.
 
-Such a grid is already a good starting point. In addition, we'll be using 
+Such a grid is already a good starting point. In addition, we'll be using
 different macros to add *dimensions* to the pattern.
 
-While the grid gets added automatically, the dimensions you have to add yourself.
-Thankfully, there's macros that can help you with that, specifically:
+While the grid gets added automatically, the dimensions we have to add ourselves.
+Thankfully, there's macros that can help us with that, specifically:
 
 - The `hd` macro adds a horizontal dimension
 - The `vd` macro adds a vertical dimension
@@ -39,16 +39,16 @@ Thankfully, there's macros that can help you with that, specifically:
 - The `pd` macro adds a path dimension that follows a given path
 
 <Note>
-Refer to [the list of macros](/reference/macros/) for more details. 
+Refer to [the list of macros](/reference/macros/) for more details.
 </Note>
 
-<Example tutorial paperless caption="Making your pattern paperless is the icing on the cake. Time to wrap up, go over what we've learned, and give some pointers on where to go from here">
+<Example tutorial paperless caption="Making our pattern paperless is the icing on the cake. Time to wrap up, go over what we've learned, and give some pointers on where to go from here">
 ```js
-function draftBib({ 
-  Path, 
-  Point, 
-  paths, 
-  points, 
+function draftBib({
+  Path,
+  Point,
+  paths,
+  points,
   measurements,
   options,
   macro,
@@ -68,15 +68,15 @@ function draftBib({
   do {
   	points.right = new Point(tweak * measurements.head / 10, 0)
   	points.bottom = new Point(0, tweak * measurements.head / 12)
-  
+
   	points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right)/2)
   	points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right)/2)
-  
+
   	paths.quarterNeck = new Path()
   	  .move(points.right)
   	  .curve(points.rightCp1, points.bottomCp2, points.bottom)
       .hide() // Add this line
-  
+
   	delta = paths.quarterNeck.length() - target
     if (delta > 0) tweak = tweak * 0.99
     else tweak = tweak * 1.02
@@ -92,10 +92,10 @@ function draftBib({
   points.topCp1 = points.bottomCp2.flipY()
   points.topCp2 = points.bottomCp1.flipY()
 
-  // Drawing the bib outline 
+  // Drawing the bib outline
   const width = measurements.head * options.widthRatio
   const length = measurements.head * options.lengthRatio
-  
+
   points.topLeft = new Point(
     width / -2,
     points.top.y - (width / 2 - points.right.x)
@@ -103,12 +103,12 @@ function draftBib({
   points.topRight = points.topLeft.shift(0, width)
   points.bottomLeft = points.topLeft.shift(-90, length)
   points.bottomRight = points.topRight.shift(-90, length)
-  
+
   // Shape the straps
   points.edgeLeft = new Point(points.topLeft.x, points.left.y)
   points.edgeRight = new Point(points.topRight.x, points.right.y)
   points.edgeTop = new Point(0, points.topLeft.y)
-  
+
   points.edgeLeftCp = points.edgeLeft.shiftFractionTowards(points.topLeft, 0.5)
   points.edgeRightCp = points.edgeLeftCp.flipX()
   points.edgeTopLeftCp = points.edgeTop.shiftFractionTowards(
@@ -116,14 +116,14 @@ function draftBib({
     0.5
   )
   points.edgeTopRightCp = points.edgeTopLeftCp.flipX()
-   
+
   // Round the straps
   const strap = points.edgeTop.dy(points.top)
-  
+
   points.tipRight = points.edgeTop.translate(strap / 2, strap / 2)
   points.tipRightTop = new Point(points.tipRight.x, points.edgeTop.y)
   points.tipRightBottom = new Point(points.tipRight.x, points.top.y)
-  
+
   macro("round", {
     from: points.edgeTop,
     to: points.tipRight,
@@ -156,7 +156,7 @@ function draftBib({
   while (points.tipRightBottomStart.x > -1) {
     for (const p of rotateThese) points[p] = points[p].rotate(1, points.edgeLeft)
   }
-  
+
   // Snap anchor
   points.snapLeft = points.top.shiftFractionTowards(points.edgeTop, 0.5)
 
@@ -198,13 +198,13 @@ function draftBib({
     .curve(points.bottomRightCp1, points.bottomRightCp2, points.bottomRightEnd)
     .line(points.edgeRight)
     .curve(
-      points.edgeRightCp, 
-      points.edgeTopRightCp, 
+      points.edgeRightCp,
+      points.edgeTopRightCp,
       points.tipLeftTopStart
     )
     .curve(
-      points.tipLeftTopCp1, 
-      points.tipLeftTopCp2, 
+      points.tipLeftTopCp1,
+      points.tipLeftTopCp2,
       points.tipLeftTopEnd
     )
     .curve(
@@ -213,23 +213,23 @@ function draftBib({
       points.tipLeftBottomEnd
     )
     .curve(
-      points.topCp1, 
-      points.rightCp2, 
+      points.topCp1,
+      points.rightCp2,
       points.right
     )
     .curve(
-      points.rightCp1, 
-      points.bottomCp2, 
+      points.rightCp1,
+      points.bottomCp2,
       points.bottom
     )
     .curve(
-      points.bottomCp1, 
-      points.leftCp2, 
+      points.bottomCp1,
+      points.leftCp2,
       points.left
     )
     .curve(
-      points.leftCp1, 
-      points.topCp2, 
+      points.leftCp1,
+      points.topCp2,
       points.tipRightBottomEnd
     )
     .curve(
@@ -243,8 +243,8 @@ function draftBib({
       points.tipRightTopStart
     )
     .curve(
-      points.edgeTopLeftCp, 
-      points.edgeLeftCp, 
+      points.edgeTopLeftCp,
+      points.edgeLeftCp,
       points.edgeLeft
     )
     .close()
@@ -290,7 +290,7 @@ function draftBib({
       // Add dimensions
       /*
        * The `hd` macro adds a Horizontal Dimension (hd)
-       * It takes a from and to point, and a y value 
+       * It takes a from and to point, and a y value
        * at which to place the dimension
        */
       macro("hd", {
@@ -300,7 +300,7 @@ function draftBib({
       })
       /*
        * The `vd` macro adds a Vertical Dimension (vd)
-       * It takes a from and to point, and an x value 
+       * It takes a from and to point, and an x value
        * at which to place the dimension
        */
       macro("vd", {
@@ -328,7 +328,7 @@ function draftBib({
       })
       /*
        * The `ld` macro adds a Linear Dimension (ld)
-       * It takes a from and to point, and a d value 
+       * It takes a from and to point, and a d value
        * that sets its offset from the line from -> to
        */
       macro("ld", {

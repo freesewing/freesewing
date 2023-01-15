@@ -41,7 +41,7 @@ module.exports = {
   // base-100: The default background color for a regular page (docs and so on)
   'base-100': colors.neutral['50'],
   // base-200: A slightly darker background color, used for hovers and so on
-  'base-200': colors.neutral['200'],
+  'base-200': colors.neutral['100'],
   // base-300: A shade midway between dark and light
   'base-300': colors.neutral['500'],
   // base-content: The default text color for a regular page (docs and so on)
@@ -58,17 +58,17 @@ module.exports = {
   secondary: colors.sky['500'],
   // secondary-focus: The :hover link color for default backgrounds. Or:
   // secondary-focus: An alternative link color for on dark backgrounds
-  'secondary-focus': colors.sky['400'],
+  'secondary-focus': colors.sky['600'],
   // secondary-content: The text color on a secondary button
   'secondary-content': colors.sky['50'],
 
   // accent: The accent color is used to highlight active things
   // Should be something is positive/neutral. Avoid red or orange.
-  accent: colors.pink['400'],
+  accent: colors.fuchsia['500'],
   // accent-focus: The :hover color for the accent button
-  'accent-focus': colors.pink['300'],
+  'accent-focus': colors.fuchsia['600'],
   // accent-content: The text color for the accent button
-  'accent-content': colors.pink['50'],
+  'accent-content': colors.fuchsia['50'],
 
   // neutral: Used as the background for the footer and navigation on desktop
   // Should always be dark

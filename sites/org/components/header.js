@@ -33,12 +33,16 @@ const Header = ({ app, setSearch }) => {
       w-full
       z-30
       transition-transform
-      ${show ? '' : 'fixed bottom-0 lg:top-0 left-0 translate-y-20 lg:-translate-y-20'}
+      ${
+        show || app.loading
+          ? ''
+          : 'fixed bottom-0 lg:top-0 left-0 translate-y-20 lg:-translate-y-20'
+      }
       drop-shadow-xl
     `}
     >
-      <div className="m-auto" style={{ maxWidth: '1800px' }}>
-        <div className="p-2 flex flex-row gap-2 justify-between text-neutral-content items-center">
+      <div className="m-auto md:px-8">
+        <div className="p-0 flex flex-row gap-2 justify-between text-neutral-content items-center">
           <div className="flex flex-row items-center">
             <button
               className={`
@@ -73,13 +77,15 @@ const Header = ({ app, setSearch }) => {
                 hidden lg:flex
                 flex-row gap-4
                 justify-between
-                hover:text-secondary-focus
-                hover:bg-transparent
+                rounded-none
+                hover:bg-neutral-focus
               `}
               onClick={() => setSearch(true)}
             >
               <SearchIcon />
-              <span className="normal-case text-base font-medium">Ctrl K</span>
+              <kbd className="normal-case text-xs -ml-2 font-medium px-1.5 rounded opacity-80 border border-neutral-content">
+                /
+              </kbd>
             </button>
           </div>
         </div>

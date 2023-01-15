@@ -35,4 +35,3 @@ Point path.start()
 }
 ```
 </Example>
-

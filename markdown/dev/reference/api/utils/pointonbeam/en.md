@@ -75,6 +75,6 @@ The fourth parameter controls the precision. Lower numbers make the check less p
 
 Typically, you don't need to worry about precision. But occasionally, you may
 get unexpected results because of floating point errors, rounding errors, or
-cubic Bezier juggling.
+cubic Bézier juggling.
 
 When that happens, you can lower the precision so you get what you expect.

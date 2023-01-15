@@ -1,14 +1,16 @@
 import get from 'lodash.get'
 import set from 'lodash.set'
 import orderBy from 'lodash.orderby'
+import tlds from 'tlds/index.json' assert { type: 'json' }
 
 // Generic rounding method
-export const round = (val, decimals=1) => Math.round(val*Math.pow(10, decimals))/Math.pow(10, decimals)
+export const round = (val, decimals = 1) =>
+  Math.round(val * Math.pow(10, decimals)) / Math.pow(10, decimals)
 
 // Rounds a value in mm
 export const roundMm = (val, units) => {
-  if (units === "imperial") return Math.round(val * 1000000) / 1000000;
-  else return Math.round(val * 10) / 10;
+  if (units === 'imperial') return Math.round(val * 1000000) / 1000000
+  else return Math.round(val * 10) / 10
 }
 
 // Formatting for imperial values
@@ -46,18 +48,12 @@ export const formatMm = (val, units, format = 'html') => {
     }
     let fraction128 = Math.round(rest * 128)
     if (fraction128 == 0) return formatImperial(negative, inches, false, false, format)
-    if (fraction128 % 64 == 0)
-      return formatImperial(negative, inches, fraction128 / 64, 2, format)
-    if (fraction128 % 32 == 0)
-      return formatImperial(negative, inches, fraction128 / 32, 4, format)
-    if (fraction128 % 16 == 0)
-      return formatImperial(negative, inches, fraction128 / 16, 8, format)
-    if (fraction128 % 8 == 0)
-      return formatImperial(negative, inches, fraction128 / 8, 16, format)
-    if (fraction128 % 4 == 0)
-      return formatImperial(negative, inches, fraction128 / 4, 32, format)
-    if (fraction128 % 2 == 0)
-      return formatImperial(negative, inches, fraction128 / 2, 64, format)
+    if (fraction128 % 64 == 0) return formatImperial(negative, inches, fraction128 / 64, 2, format)
+    if (fraction128 % 32 == 0) return formatImperial(negative, inches, fraction128 / 32, 4, format)
+    if (fraction128 % 16 == 0) return formatImperial(negative, inches, fraction128 / 16, 8, format)
+    if (fraction128 % 8 == 0) return formatImperial(negative, inches, fraction128 / 8, 16, format)
+    if (fraction128 % 4 == 0) return formatImperial(negative, inches, fraction128 / 4, 32, format)
+    if (fraction128 % 2 == 0) return formatImperial(negative, inches, fraction128 / 2, 64, format)
 
     return negative + Math.round(fraction * 100) / 100 + '"'
   } else {
@@ -67,9 +63,9 @@ export const formatMm = (val, units, format = 'html') => {
 }
 
 // Format a percentage (as in, between 0 and 1)
-export const formatPercentage = val => Math.round(1000*val)/10+'%'
+export const formatPercentage = (val) => Math.round(1000 * val) / 10 + '%'
 
-export const optionType = option => {
+export const optionType = (option) => {
   if (typeof option?.pct !== 'undefined') return 'pct'
   if (typeof option?.bool !== 'undefined') return 'bool'
   if (typeof option?.count !== 'undefined') return 'count'
@@ -80,22 +76,26 @@ export const optionType = option => {
   return 'constant'
 }
 
-export const capitalize = string => string.charAt(0).toUpperCase() + string.slice(1);
+export const capitalize = (string) => string.charAt(0).toUpperCase() + string.slice(1)
 
-export const strapiImage = (img, sizes=['thumbnail', 'xlarge', 'large', 'medium', 'small', 'xsmall']) => {
+export const strapiImage = (
+  img,
+  sizes = ['thumbnail', 'xlarge', 'large', 'medium', 'small', 'xsmall']
+) => {
   const image = {
     caption: img.caption || '',
     w: img.width,
     h: img.height,
     url: img.url,
-    sizes: {}
+    sizes: {},
   }
   for (const size of sizes) {
-    if (img.formats[size]) image.sizes[size] = {
-      w: img.formats[size].width,
-      h: img.formats[size].height,
-      url: img.formats[size].url,
-    }
+    if (img.formats[size])
+      image.sizes[size] = {
+        w: img.formats[size].width,
+        h: img.formats[size].height,
+        url: img.formats[size].url,
+      }
   }
 
   // Some images only have a small original, and thus no (resized) sizes
@@ -113,57 +113,54 @@ export const strapiImage = (img, sizes=['thumbnail', 'xlarge', 'large', 'medium'
   return image
 }
 
-export const getCrumbs = (app, slug=false, title) => {
+export const getCrumbs = (app, slug = false) => {
   if (!slug) return null
   const crumbs = []
   const chunks = slug.split('/')
   for (const i in chunks) {
-    const j = parseInt(i)+parseInt(1)
-    const page = get(app.navigation, chunks.slice(0,j))
-    if (page) crumbs.push([page.__linktitle, '/'+chunks.slice(0,j).join('/'), (j < chunks.length)])
+    const j = parseInt(i) + parseInt(1)
+    const page = get(app.navigation, chunks.slice(0, j))
+    if (page) crumbs.push([page.__linktitle, '/' + chunks.slice(0, j).join('/'), j < chunks.length])
   }
 
   return crumbs
 }
 
-export const measurementAsMm = (value, units = "metric") => {
-  if (typeof value === "number")
-    return value * (units === "imperial" ? 25.4 : 10);
+export const measurementAsMm = (value, units = 'metric') => {
+  if (typeof value === 'number') return value * (units === 'imperial' ? 25.4 : 10)
 
-  if (value.endsWith('.'))
-    return false;
+  if (value.endsWith('.')) return false
 
-  if (units === "metric") {
-    value = Number(value);
-    if (isNaN(value)) return false;
-    return value * 10;
+  if (units === 'metric') {
+    value = Number(value)
+    if (isNaN(value)) return false
+    return value * 10
   } else {
-    const imperialFractionToMm = value => {
-      let chunks = value.trim().split("/");
-      if (chunks.length !== 2 || chunks[1] === "") return false;
-      let num = Number(chunks[0]);
-      let denom = Number(chunks[1]);
-      if (isNaN(num) || isNaN(denom)) return false;
-      else return (num * 25.4) / denom;
-    };
-    let chunks = value.split(" ");
+    const imperialFractionToMm = (value) => {
+      let chunks = value.trim().split('/')
+      if (chunks.length !== 2 || chunks[1] === '') return false
+      let num = Number(chunks[0])
+      let denom = Number(chunks[1])
+      if (isNaN(num) || isNaN(denom)) return false
+      else return (num * 25.4) / denom
+    }
+    let chunks = value.split(' ')
     if (chunks.length === 1) {
-      let val = chunks[0];
-      if (!isNaN(Number(val))) return Number(val) * 25.4;
-      else return imperialFractionToMm(val);
+      let val = chunks[0]
+      if (!isNaN(Number(val))) return Number(val) * 25.4
+      else return imperialFractionToMm(val)
     } else if (chunks.length === 2) {
-      let inches = Number(chunks[0]);
-      if (isNaN(inches)) return false;
-      let fraction = imperialFractionToMm(chunks[1]);
-      if (fraction === false) return false;
-      return inches * 25.4 + fraction;
+      let inches = Number(chunks[0])
+      if (isNaN(inches)) return false
+      let fraction = imperialFractionToMm(chunks[1])
+      if (fraction === false) return false
+      return inches * 25.4 + fraction
     }
   }
-  return false;
+  return false
 }
 
-
-export const optionsMenuStructure = options => {
+export const optionsMenuStructure = (options) => {
   if (!options) return options
   const sorted = {}
   for (const [name, option] of Object.entries(options)) {
@@ -173,12 +170,13 @@ export const optionsMenuStructure = options => {
   const menu = {}
   // Fixme: One day we should sort this based on the translation
   for (const option of orderBy(sorted, ['menu', 'name'], ['asc'])) {
-    if (typeof option  === 'object') {
-      if (option.menu) set(menu, (option.menu ? `${option.menu}.${option.name}` : option.name), optionType(option))
-      else if (typeof option.menu === 'undefined') console.log(
-        `Warning: Option ${option.name} does not have a menu config. ` +
-        'Either configure it, or set it to falseo false to hide this option.'
-      )
+    if (typeof option === 'object') {
+      if (option.menu) set(menu, option.name, optionType(option))
+      else if (typeof option.menu === 'undefined')
+        console.log(
+          `Warning: Option ${option.name} does not have a menu config. ` +
+            'Either configure it, or set it to falseo false to hide this option.'
+        )
     }
   }
 
@@ -192,3 +190,18 @@ export const optionsMenuStructure = options => {
   return menu
 }
 
+/** Validates an email address for correct syntax */
+export const validateEmail = (email) => {
+  /* eslint-disable */
+  const re =
+    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  /* eslint-enable */
+  return re.test(email)
+}
+
+/** Validates the top level domain (TLT) for an email address */
+export const validateTld = (email) => {
+  const tld = email.split('@').pop().split('.').pop().toLowerCase()
+  if (tlds.indexOf(tld) === -1) return tld
+  else return true
+}

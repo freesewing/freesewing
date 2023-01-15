@@ -26,7 +26,7 @@ Path path.smurve(Point cp2, Point end)
 
   points.bCp2 = new Point(50,50)
   points.bTo = new Point(10,50)
-  
+
   paths.smurve = new Path()
     .move(points.aFrom)
     .curve(points.aCp1, points.aCp2,points.aTo)
@@ -38,4 +38,3 @@ Path path.smurve(Point cp2, Point end)
 }
 ```
 </Example>
-

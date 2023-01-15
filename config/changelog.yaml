@@ -107,6 +107,8 @@ Unreleased:
       - Added new pocket options
       - Added seperate waistband options
       - Added bow tie placement option
+    components:
+      - Added linedrawing for Lunetius
 
 2.22.0:
   date: 2022-08-23

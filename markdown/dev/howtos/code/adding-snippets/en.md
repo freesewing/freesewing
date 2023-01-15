@@ -3,7 +3,7 @@ title: Adding snippets
 ---
 
 Snippets should be stored in the `snippets` key of the object passed to your part's
-draft method. The contructor for snippets is available in the `Snippets` key. You can
+draft method. The constructor for snippets is available in the `Snippets` key. You can
 destructure them for easy access.
 
 <Example caption="An example of adding a snippet" tutorial>

@@ -4,12 +4,12 @@ title: "Yuri hoodie: Sewing Instructions"
 
 <Note>
 
-Ce patron peut être cousu avec ou avec une surjeteuse. To _**Finish**_ seams without a overlocker/serger you can either use your prefered method or one of the methods below:
+Ce patron peut être cousu avec ou avec une surjeteuse. To _finish_ seams without a overlocker/serger you can either use your prefered method or one of the methods below:
 
 ##### Finishing Method 1
 
 - Press open the seam allowances.
-- Then on the good side, _**Edgestitch**_ 3mm (1/8 inch) away or closer to both sides of the seam catching the seam allowances underneath.
+- Then on the good side, _edgestitch_ 3mm (1/8 inch) away or closer to both sides of the seam catching the seam allowances underneath.
 - Sur le côté envers couper les marges de couture près du bord.
 
 ##### Méthode de finition 2
@@ -28,17 +28,17 @@ Si vous utilisez une surjeteuse, vous pouvez coudre les coutures qui ont besoin 
 ## Étape 1 : Coudre les Goussets
 
 - Endroit contre endroit, coudre les goussets aux panneaux avant le long des coutures latérales.
-- _**Finish**_ seams.
+- _finish_ seams.
 
 ## Étape 2 : Coudre les coutures des épaules
 
 - Endroit contre endroit, coudre les pièces avant au dos le long des coutures d'épaule.
-- _**Finish**_ seams.
+- _finish_ seams.
 
 ## Étape 3 : Fixer les manches
 
 - Endroit contre endroit, en faisant correspondre le repères dos au repère avant, coudre les manches au corps.
-- _**Finish**_ seams.
+- _finish_ seams.
 
 <Note>
 
@@ -65,7 +65,7 @@ Il ne s'agit là que d'une méthode d'ourlet, si vous préférez une autre faço
 ## Étape 5 : Fermer les côtés
 
 - Avec côtés endroits ensemble, avec les coutures d'épaules alignées, commencer au bord de la manche et coudre la manche ensemble que coudre le gousset et le dos ensemble.
-- _**Finish**_ seams.
+- _finish_ seams.
 - Répétez pour l'autre manche et ouverture latérale.
 
 ## Étape 6 : Ourler les bords bruts
@@ -80,7 +80,7 @@ Follow this step twice, once for the outer hood and once for the lining hood.
 - Endroit contre endroit, coudre le bord long du centre de la capuche vers le bord extérieur des côtés de la capuche.
 - Endroit contre endroit, coudre le bord long restant du centre de la capuche vers le bord extérieur de l'autre côté de la capuche.
 - Repassez la couture avec les marges ouvertes.
-- _**Finish**_ seams.
+- _finish_ seams.
 
 <Note>
 

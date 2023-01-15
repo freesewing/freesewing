@@ -1,20 +1,9 @@
-import { useEffect } from 'react'
 import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import Popout from 'shared/components/popout.js'
 
-const TypographyPage = () => {
-  const app = useApp()
-  const { updateNavigation } = app
-
-  useEffect(() => {
-    updateNavigation(['typography'], {
-      __title: 'Typography',
-      __linktitle: 'Typography',
-      __slug: 'typography',
-      __order: 'typography',
-    })
-  }, [updateNavigation])
+const TypographyPage = (props) => {
+  const app = useApp(props)
 
   const p = (
     <p>
@@ -24,8 +13,8 @@ const TypographyPage = () => {
   )
 
   return (
-    <Page app={app} title="Typography">
-      <div className="text-primary mdx max-w-prose text-base-content max-w-prose text-lg lg:text-xl">
+    <Page app={{ ...app, navigation: null }} title="Typography">
+      <div className="text-primary mdx max-w-prose text-base-content max-w-prose text-base">
         <p>This typography page shows an overview of different elements and how they are styled.</p>
         <p>It&apos;s a good starting point for theme development.</p>
         <h2>Headings (this is h2)</h2>

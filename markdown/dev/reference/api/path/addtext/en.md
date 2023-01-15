@@ -44,4 +44,4 @@ path.addText('Hello')
 
 The difference with [Path.setText()](/reference/api/path/addtext) is that this
 method will add to the existing text whereas `Path.setText()` will overwrite
-existing text on the path, 
+existing text on the path,

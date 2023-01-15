@@ -2,7 +2,7 @@
 name: 🐛 Bug report
 description: Report a problem, or something that went wrong
 title: '[bug]: '
-labels: ["\U0001F41B bug"]
+labels: [':bug: bug']
 body:
   - type: markdown
     attributes:

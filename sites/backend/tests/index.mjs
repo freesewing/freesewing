@@ -9,10 +9,10 @@ import { setup } from './shared.mjs'
 const runTests = async (...params) => {
   await userTests(...params)
   await mfaTests(...params)
-  //await apikeyTests(...params)
-  //await accountTests(...params)
-  //await personTests(...params)
-  //await patternTests(...params)
+  await apikeyTests(...params)
+  await accountTests(...params)
+  await personTests(...params)
+  await patternTests(...params)
 }
 
 // Load initial data required for tests

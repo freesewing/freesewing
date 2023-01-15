@@ -10,7 +10,7 @@ text](/howtos/code/adding-text) for more details.
 
 ```js
 Point point.setText(
-  string text, 
+  string text,
   string className
 )
 ```

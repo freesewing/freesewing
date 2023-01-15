@@ -3,7 +3,7 @@ title: Using jargon
 order: yyy
 ---
 
-Jargon are terminology that could throw off new users.
+Jargon are terms that could throw off new users.
 Rather than create a glossary on every page, we use a plugin to manage
 jargon terms for us. This page shows you how to use it.
 

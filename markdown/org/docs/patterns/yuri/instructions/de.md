@@ -4,12 +4,12 @@ title: "Yuri hoodie: Sewing Instructions"
 
 <Note>
 
-Dieses Muster kann mit oder mit einem Overlocker/Serger genäht werden. To _**Finish**_ seams without a overlocker/serger you can either use your prefered method or one of the methods below:
+Dieses Muster kann mit oder mit einem Overlocker/Serger genäht werden. To _finish_ seams without a overlocker/serger you can either use your prefered method or one of the methods below:
 
 ##### Finishing Method 1
 
 - Press open the seam allowances.
-- Then on the good side, _**Edgestitch**_ 3mm (1/8 inch) away or closer to both sides of the seam catching the seam allowances underneath.
+- Then on the good side, _edgestitch_ 3mm (1/8 inch) away or closer to both sides of the seam catching the seam allowances underneath.
 - Auf der falschen Seite die Nahtzuschläge in der Nähe des Kantenstichens abschneiden.
 
 ##### Fertigstellungsmethode 2
@@ -28,17 +28,17 @@ Bei Verwendung eines Overlockers/Sergers können Sie Nähte nähen, die in einem
 ## Schritt 1: Keile anfügen
 
 - Mit den guten Seiten zusammen, nähen Sie die Kugeln an den Frontplatten entlang der Seitennaht.
-- _**Finish**_ seams.
+- _finish_ seams.
 
 ## Schritt 2: Nähen der Schulternähte
 
 - Mit guten Seiten zusammen nähen Sie die vorderen Teile auf der Rückseite entlang der Schulternaht.
-- _**Finish**_ seams.
+- _finish_ seams.
 
 ## Schritt 3: Hänge die Ärmel an
 
 - Mit guten Seiten zusammen, passend hinten zum Rückennoch und Frontnoch an der Vorderseite, nähen Sie die Ärmel in den Körper.
-- _**Finish**_ seams.
+- _finish_ seams.
 
 <Note>
 
@@ -65,7 +65,7 @@ Dies ist nur eine Hemmungsmethode, wenn Sie lieber einen anderen Weg gehen.
 ## Schritt 5: Seiten schließen
 
 - Mit guten Seiten zusammen, passende Schulternähte, beginnen Sie an der Ärmelkante und nähen Sie den Ärmel zusammen, als den Kuschelsatz und zurück zu nähen.
-- _**Finish**_ seams.
+- _finish_ seams.
 - Wiederholen für verbleibende Ärmel und Seitenöffnung.
 
 ## Schritt 6: Hem die Rohkanten
@@ -80,7 +80,7 @@ Follow this step twice, once for the outer hood and once for the lining hood.
 - Mit guten Seiten zusammen, nähen Sie den langen Rand des Hood-Zentrums an den äußeren Rand einer der Hood-Sides.
 - Mit guten Seiten zusammen nähen Sie den verbleibenden langen Rand des Hood-Zentrums an den äußeren Rand der anderen Hood Side.
 - Drücken Sie die Nahtzuschläge offen.
-- _**Finish**_ seams.
+- _finish_ seams.
 
 <Note>
 

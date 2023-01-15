@@ -39,7 +39,7 @@ UserModel.prototype.read = async function (where) {
 /*
  * Helper method to decrypt at-rest data
  */
-UserModel.prototype.reveal = async function (where) {
+UserModel.prototype.reveal = async function () {
   this.clear = {}
   if (this.record) {
     for (const field of this.encryptedFields) {
@@ -140,7 +140,7 @@ UserModel.prototype.setExists = function () {
  * Creates a user+confirmation and sends out signup email
  */
 UserModel.prototype.guardedCreate = async function ({ body }) {
-  if (Object.keys(body) < 1) return this.setResponse(400, 'postBodyMissing')
+  if (Object.keys(body).length < 1) return this.setResponse(400, 'postBodyMissing')
   if (!body.email) return this.setResponse(400, 'emailMissing')
   if (!body.language) return this.setResponse(400, 'languageMissing')
   if (!this.config.languages.includes(body.language))
@@ -148,8 +148,58 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
 
   const ehash = hash(clean(body.email))
   await this.read({ ehash })
-  if (this.exists) return this.setResponse(400, 'emailExists')
+  if (this.exists) {
+    /*
+     * User already exists. However, if we return an error, then people can
+     * spam the signup endpoint to figure out who has a FreeSewing account
+     * which would be a privacy leak. So instead, pretend there is no user
+     * with that account, and that signup is proceeding as normal.
+     * Except that rather than a signup email, we send the user an info email.
+     *
+     * Note that we have to deal with 3 scenarios here:
+     *
+     *   - Account exists, and is active (aea)
+     *   - Account exists, but is inactive (regular signup)
+     *   - Account exists, but is disabled (aed)
+     */
+    // Set type of action based on the account status
+    let type = 'signup-aed'
+    if (this.record.status === 0) type = 'signup'
+    else if (this.record.status === 1) type = 'signup-aea'
 
+    // Create confirmation unless account is disabled
+    if (type !== 'signup-aed') {
+      this.confirmation = await this.Confirmation.create({
+        type,
+        data: {
+          language: body.language,
+          email: this.clear.email,
+          id: this.record.id,
+          ehash: ehash,
+        },
+        userId: this.record.id,
+      })
+    }
+    // Always send email
+    await this.mailer.send({
+      template: type,
+      language: body.language,
+      to: this.clear.email,
+      replacements: {
+        actionUrl:
+          type === 'signup-aed'
+            ? false // No actionUrl for disabled accounts
+            : i18nUrl(body.language, `/confirm/${type}/${this.Confirmation.record.id}`),
+        whyUrl: i18nUrl(body.language, `/docs/faq/email/why-${type}`),
+        supportUrl: i18nUrl(body.language, `/patrons/join`),
+      },
+    })
+
+    // Now return as if everything is fine
+    return this.setResponse(201, false, { email: this.clear.email })
+  }
+
+  // New signup
   try {
     this.clear.email = clean(body.email)
     this.clear.initial = this.clear.email
@@ -226,7 +276,7 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
  * Login based on username + password
  */
 UserModel.prototype.passwordLogin = async function (req) {
-  if (Object.keys(req.body) < 1) return this.setResponse(400, 'postBodyMissing')
+  if (Object.keys(req.body).length < 1) return this.setResponse(400, 'postBodyMissing')
   if (!req.body.username) return this.setResponse(400, 'usernameMissing')
   if (!req.body.password) return this.setResponse(400, 'passwordMissing')
 
@@ -265,8 +315,8 @@ UserModel.prototype.passwordLogin = async function (req) {
  * Confirms a user account
  */
 UserModel.prototype.confirm = async function ({ body, params }) {
-  if (!params.id) return this.setResponse(404, 'missingConfirmationId')
-  if (Object.keys(body) < 1) return this.setResponse(400, 'postBodyMissing')
+  if (!params.id) return this.setResponse(404)
+  if (Object.keys(body).length < 1) return this.setResponse(400, 'postBodyMissing')
   if (!body.consent || typeof body.consent !== 'number' || body.consent < 1)
     return this.setResponse(400, 'consentRequired')
 
@@ -274,21 +324,19 @@ UserModel.prototype.confirm = async function ({ body, params }) {
   await this.Confirmation.read({ id: params.id })
 
   if (!this.Confirmation.exists) {
-    log.warn(err, `Could not find confirmation id ${params.id}`)
-    return this.setResponse(404, 'failedToFindConfirmationId')
+    log.warn(`Could not find confirmation id ${params.id}`)
+    return this.setResponse(404)
   }
 
   if (this.Confirmation.record.type !== 'signup') {
-    log.warn(err, `Confirmation mismatch; ${params.id} is not a signup id`)
-    return this.setResponse(404, 'confirmationIdTypeMismatch')
+    log.warn(`Confirmation mismatch; ${params.id} is not a signup id`)
+    return this.setResponse(404)
   }
 
   if (this.error) return this
   const data = this.Confirmation.clear.data
-  if (data.ehash !== this.Confirmation.record.user.ehash)
-    return this.setResponse(404, 'confirmationEhashMismatch')
-  if (data.id !== this.Confirmation.record.user.id)
-    return this.setResponse(404, 'confirmationUserIdMismatch')
+  if (data.ehash !== this.Confirmation.record.user.ehash) return this.setResponse(404)
+  if (data.id !== this.Confirmation.record.user.id) return this.setResponse(404)
 
   // Load user
   await this.read({ id: this.Confirmation.record.user.id })
@@ -338,7 +386,7 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
   if (typeof body.bio === 'string') data.bio = body.bio
   // Consent
   if ([0, 1, 2, 3].includes(body.consent)) data.consent = body.consent
-  // Consent
+  // Control
   if ([1, 2, 3, 4, 5].includes(body.control)) data.control = body.control
   // Github
   if (typeof body.github === 'string') data.github = body.github.split('@').pop()
@@ -358,7 +406,6 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
       data.lusername = clean(body.username)
     } else {
       log.info(`Rejected user name change from ${data.username} to ${body.username.trim()}`)
-      notes.push('usernameChangeRejected')
     }
   }
   // Image (img)
@@ -403,13 +450,13 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
     await this.Confirmation.read({ id: body.confirmation })
 
     if (!this.Confirmation.exists) {
-      log.warn(err, `Could not find confirmation id ${params.id}`)
-      return this.setResponse(404, 'failedToFindConfirmationId')
+      log.warn(`Could not find confirmation id ${body.confirmation}`)
+      return this.setResponse(404)
     }
 
     if (this.Confirmation.record.type !== 'emailchange') {
-      log.warn(err, `Confirmation mismatch; ${params.id} is not an emailchange id`)
-      return this.setResponse(404, 'confirmationIdTypeMismatch')
+      log.warn(`Confirmation mismatch; ${body.confirmation} is not an emailchange id`)
+      return this.setResponse(404)
     }
 
     const data = this.Confirmation.clear.data
@@ -442,8 +489,8 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
 
   // Disable
   if (body.mfa === false) {
-    if (!body.token) return this.setResponse(400, 'mfaTokenRequired')
-    if (!body.password) return this.setResponse(400, 'passwordRequired')
+    if (!body.token) return this.setResponse(400, 'mfaTokenMissing')
+    if (!body.password) return this.setResponse(400, 'passwordMissing')
     // Check password
     const [valid] = verifyPassword(body.password, this.record.password)
     if (!valid) {
@@ -570,6 +617,7 @@ UserModel.prototype.setResponse = function (status = 200, error = false, data = 
     this.response.body.result = 'error'
     this.error = true
   } else this.error = false
+  if (status === 404) this.response.body = null
 
   return this.setExists()
 }
@@ -628,11 +676,10 @@ UserModel.prototype.loginOk = function () {
  */
 UserModel.prototype.isLusernameAvailable = async function (lusername) {
   if (lusername.length < 2) return false
-  let found
   try {
-    found = await this.prisma.user.findUnique({ where: { lusername } })
+    await this.prisma.user.findUnique({ where: { lusername } })
   } catch (err) {
-    log.warn({ err, where }, 'Could not search for free username')
+    log.warn({ err, lusername }, 'Could not search for free username')
   }
 
   return true

@@ -30,7 +30,7 @@ export const accountTests = async (chai, config, expect, store) => {
           body[field] = val
           chai
             .request(config.api)
-            .put(`/account/${auth}`)
+            .patch(`/account/${auth}`)
             .set(
               'Authorization',
               auth === 'jwt'
@@ -57,7 +57,7 @@ export const accountTests = async (chai, config, expect, store) => {
         const body = {}
         chai
           .request(config.api)
-          .put(`/account/${auth}`)
+          .patch(`/account/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -100,7 +100,7 @@ export const accountTests = async (chai, config, expect, store) => {
         const body = {}
         chai
           .request(config.api)
-          .put(`/account/${auth}`)
+          .patch(`/account/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -144,7 +144,7 @@ export const accountTests = async (chai, config, expect, store) => {
       it(`${store.icon('user', auth)} Update username (${auth})`, (done) => {
         chai
           .request(config.api)
-          .put(`/account/${auth}`)
+          .patch(`/account/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -168,7 +168,7 @@ export const accountTests = async (chai, config, expect, store) => {
       it(`${store.icon('user', auth)} Restore original username (${auth})`, (done) => {
         chai
           .request(config.api)
-          .put(`/account/${auth}`)
+          .patch(`/account/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -193,7 +193,7 @@ export const accountTests = async (chai, config, expect, store) => {
         it(`${store.icon('user', auth)} Should update the account img (${auth})`, (done) => {
           chai
             .request(config.api)
-            .put(`/account/${auth}`)
+            .patch(`/account/${auth}`)
             .set(
               'Authorization',
               auth === 'jwt'
@@ -220,7 +220,7 @@ export const accountTests = async (chai, config, expect, store) => {
         (done) => {
           chai
             .request(config.api)
-            .put(`/account/${auth}`)
+            .patch(`/account/${auth}`)
             .set(
               'Authorization',
               auth === 'jwt'
@@ -248,7 +248,7 @@ export const accountTests = async (chai, config, expect, store) => {
       step(`${store.icon('user', auth)} Should confirm the email change (${auth})`, (done) => {
         chai
           .request(config.api)
-          .put(`/account/${auth}`)
+          .patch(`/account/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -275,7 +275,7 @@ export const accountTests = async (chai, config, expect, store) => {
       step(`${store.icon('user', auth)} Restore email address (${auth})`, (done) => {
         chai
           .request(config.api)
-          .put(`/account/${auth}`)
+          .patch(`/account/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -304,7 +304,7 @@ export const accountTests = async (chai, config, expect, store) => {
         (done) => {
           chai
             .request(config.api)
-            .put(`/account/${auth}`)
+            .patch(`/account/${auth}`)
             .set(
               'Authorization',
               auth === 'jwt'

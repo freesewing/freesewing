@@ -21,10 +21,10 @@ does.
 
 If you're not familiar with the `({ part })` syntax you see above, this is a
 technique called *parameter destructuring* or more generally, [object
-desctructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
-The draft method receives only 1 parameter: An object that holds everything you
-need to draft your method.  Destructuring is a way to *pull things out of the
+The draft method receives only 1 parameter: An object that holds everything we
+need to draft our method.  Destructuring is a way to *pull things out of the
 object into their own variable*. It saves us a bunch of typing as these two are
 equivalent:
 
@@ -63,12 +63,12 @@ If you're new to JavaScript, and don't intuitively _get this_, stick with it. It
 Change the function to look like this:
 
 ```design/src/bib.mjs
-function draftBib({ 
+function draftBib({
   // highlight-start
-  Path, 
-  Point, 
-  paths, 
-  points, 
+  Path,
+  Point,
+  paths,
+  points,
   // highlight-end
   part,
 }) {
@@ -84,11 +84,11 @@ For a complete list of what you can access via destructuring like this, refer
 to [the draft method reference documentation](/reference/api/part/draft).
 Here's a brief summary of the things we've added above:
 
-- `Path`: The Path constructor, allows you to create new Paths
-- `Point`: The Point constructor, allows you to create new Points
+- `Path`: The Path constructor, allows us to create new Paths
+- `Point`: The Point constructor, allows us to create new Points
 - `points`: A container object to hold the part's points
 - `paths`: A container object to hold the part's paths
 
-Long story short: These will make it possible for you to draw points and paths easily.
+Long story short: These will make it possible for us to draw points and paths easily.
 
 So let's go ahead and do that.

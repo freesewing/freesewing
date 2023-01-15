@@ -31,6 +31,14 @@ describe('Part', () => {
     expect(macro('unknown')).to.equal(undefined)
   })
 
+  it('Should return a valid ID with Part.getId()', () => {
+    const part = new Part()
+    const id = part.getId()
+    const prefixed = part.getId('orange')
+    expect(id).to.equal('1')
+    expect(prefixed).to.equal('orange2')
+  })
+
   it('Should register and run a macro', () => {
     const plugin = {
       name: 'test',

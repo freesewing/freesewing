@@ -121,7 +121,7 @@ export const prebuildMdx = async (site) => {
       const slug = fileToSlug(file, site, lang)
       if (slug) {
         const meta = await mdxMetaInfo(file)
-        if (meta.data?.title && meta.data?.title) {
+        if (meta.data?.title) {
           pages[lang][slug] = {
             title: meta.data.title,
             slug,
@@ -139,7 +139,7 @@ export const prebuildMdx = async (site) => {
         if (process.env.GENERATE_OG_IMAGES) {
           // Create og image
           const intro = await mdIntro(lang, site, slug)
-          const img = await generateOgImage({ lang, site, slug, title: meta.data.title, intro })
+          await generateOgImage({ lang, site, slug, title: meta.data.title, intro })
         }
       }
     }

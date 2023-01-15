@@ -110,10 +110,12 @@ Understanding that each drawing operation builds upon the next one is an importa
 
 <Tip>
 
-Our example image (which, if you hadn't realized was created with FreeSewing) has a lot of
-paths in it. Each box, the arrows, the lines in the React logo, and so on.
+Our example image (which, if you hadn't realized was created with FreeSewing)
+has a lot of paths in it.
+Each box is a path made of 4 lines, and every text label is anchored on a path
+containing a hidden line.
 
-Click the **X-Ray** tab to reveal them.
+Click the **X-Ray** tab to reveal some of the lines in the paths.
 
 </Tip>
 

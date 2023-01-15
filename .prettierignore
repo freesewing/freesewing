@@ -1,9 +1,13 @@
 # Since we generate a bunch of YAML and MarkDown files programatically
 # It triggers this constant fight between prettier and YAML/MD formatting
 # So let's not
+*.yaml
 *.yml
 *.md
 *.mustache
+*.gif
+*.ico
+*.jpg
 *.png
 *.svg
 *.prisma
@@ -18,3 +22,4 @@ yarn.lock
 .prettierignore
 .gitignore
 .eslintignore
+.gitkeep

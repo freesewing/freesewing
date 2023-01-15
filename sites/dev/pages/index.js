@@ -9,12 +9,13 @@ import Popout from 'shared/components/popout'
 import WebLink from 'shared/components/web-link'
 import PageLink from 'shared/components/page-link'
 
+const title = 'Welcome to FreeSewing.dev'
+
 const HomePage = () => {
   const app = useApp()
   return (
-    <Page app={app} title="Welcome to FreeSewing.dev" layout={Layout}>
+    <Page app={app} title={title} layout={Layout}>
       <Head>
-        <meta property="og:title" content="FreeSewing.dev" key="title" />
         <meta property="og:type" content="article" key="type" />
         <meta
           property="og:description"
@@ -29,6 +30,7 @@ const HomePage = () => {
         <meta property="og:url" content="https://freesewing.dev/" key="url" />
         <meta property="og:locale" content="en_US" key="locale" />
         <meta property="og:site_name" content="freesewing.dev" key="site" />
+        <title>{title}</title>
       </Head>
       <section
         style={{

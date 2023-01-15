@@ -1,7 +1,6 @@
 import process from 'node:process'
 
-// For now, never build org
-process.exit(0)
+const branches = ['develop', 'joost']
 
 // Do not block production builds
 if (process.env.VERCEL_ENV === 'production') {
@@ -16,8 +15,8 @@ if (process.env.VERCEL_GIT_COMMIT_AUTHOR_LOGIN === 'dependabot[bot]') {
 }
 
 // Do not build anything that is not the develop branch
-if (process.env.VERCEL_GIT_COMMIT_REF === 'develop') {
-  console.log('✅ - develop build - Proceed to build')
+if (branches.includes(process.env.VERCEL_GIT_COMMIT_REF)) {
+  console.log('✅ - elected branch build - Proceed to build')
   process.exit(1)
 }
 

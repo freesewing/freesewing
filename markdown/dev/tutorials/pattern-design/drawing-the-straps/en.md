@@ -9,18 +9,18 @@ and create one single path that follows our bib outline.
 And as we now have one path to draw the bib, we can (and should)
 remove the earlier paths we drew to see what we are doing.
 
-The `round` macro we added earlier is still required to calcuate the points we
+The `round` macro we added earlier is still required to calculate the points we
 need to construct the half-circle. But we don't want it to draw the half-circle
 path. As it happens, that is the default behaviour, so we merely have to remove
 it's `hidden: false` property.
 
 <Example tutorial caption="It is starting to look good. But this sharp corners at the bottom don't exactly say baby, do they?">
 ```js
-function draftBib({ 
-  Path, 
-  Point, 
-  paths, 
-  points, 
+function draftBib({
+  Path,
+  Point,
+  paths,
+  points,
   measurements,
   options,
   macro,
@@ -34,15 +34,15 @@ function draftBib({
   do {
   	points.right = new Point(tweak * measurements.head / 10, 0)
   	points.bottom = new Point(0, tweak * measurements.head / 12)
-  
+
   	points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right)/2)
   	points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right)/2)
-  
+
   	paths.quarterNeck = new Path()
   	  .move(points.right)
   	  .curve(points.rightCp1, points.bottomCp2, points.bottom)
       .hide() // Add this line
-  
+
   	delta = paths.quarterNeck.length() - target
     if (delta > 0) tweak = tweak * 0.99
     else tweak = tweak * 1.02
@@ -71,10 +71,10 @@ function draftBib({
    */
   // strikeout-end
 
-  // Drawing the bib outline 
+  // Drawing the bib outline
   const width = measurements.head * options.widthRatio
   const length = measurements.head * options.lengthRatio
-  
+
   points.topLeft = new Point(
     width / -2,
     points.top.y - (width / 2 - points.right.x)
@@ -82,7 +82,7 @@ function draftBib({
   points.topRight = points.topLeft.shift(0, width)
   points.bottomLeft = points.topLeft.shift(-90, length)
   points.bottomRight = points.topRight.shift(-90, length)
-  
+
   // strikeout-start
   /* Remove this path
   paths.rect = new Path()
@@ -93,14 +93,14 @@ function draftBib({
     .line(points.topLeft)
     .close()
     .addClass('fabric')
-   */ 
+   */
   // strikeout-end
 
   // Shape the straps
   points.edgeLeft = new Point(points.topLeft.x, points.left.y)
   points.edgeRight = new Point(points.topRight.x, points.right.y)
   points.edgeTop = new Point(0, points.topLeft.y)
-  
+
   points.edgeLeftCp = points.edgeLeft.shiftFractionTowards(points.topLeft, 0.5)
   points.edgeRightCp = points.edgeLeftCp.flipX()
   points.edgeTopLeftCp = points.edgeTop.shiftFractionTowards(
@@ -108,14 +108,14 @@ function draftBib({
     0.5
   )
   points.edgeTopRightCp = points.edgeTopLeftCp.flipX()
-   
+
   // Round the straps
   const strap = points.edgeTop.dy(points.top)
-  
+
   points.tipRight = points.edgeTop.translate(strap / 2, strap / 2)
   points.tipRightTop = new Point(points.tipRight.x, points.edgeTop.y)
   points.tipRightBottom = new Point(points.tipRight.x, points.top.y)
-  
+
   macro("round", {
     from: points.edgeTop,
     to: points.tipRight,
@@ -162,7 +162,7 @@ function draftBib({
   while (points.tipRightBottomStart.x > -1) {
     for (const p of rotateThese) points[p] = points[p].rotate(1, points.edgeLeft)
   }
-  
+
   // strikeout-start
   /* Remove this repetition
   macro("round", {
@@ -213,13 +213,13 @@ function draftBib({
     .line(points.bottomRight)
     .line(points.edgeRight)
     .curve(
-      points.edgeRightCp, 
-      points.edgeTopRightCp, 
+      points.edgeRightCp,
+      points.edgeTopRightCp,
       points.tipLeftTopStart
     )
     .curve(
-      points.tipLeftTopCp1, 
-      points.tipLeftTopCp2, 
+      points.tipLeftTopCp1,
+      points.tipLeftTopCp2,
       points.tipLeftTopEnd
     )
     .curve(
@@ -228,23 +228,23 @@ function draftBib({
       points.tipLeftBottomEnd
     )
     .curve(
-      points.topCp1, 
-      points.rightCp2, 
+      points.topCp1,
+      points.rightCp2,
       points.right
     )
     .curve(
-      points.rightCp1, 
-      points.bottomCp2, 
+      points.rightCp1,
+      points.bottomCp2,
       points.bottom
     )
     .curve(
-      points.bottomCp1, 
-      points.leftCp2, 
+      points.bottomCp1,
+      points.leftCp2,
       points.left
     )
     .curve(
-      points.leftCp1, 
-      points.topCp2, 
+      points.leftCp1,
+      points.topCp2,
       points.tipRightBottomEnd
     )
     .curve(
@@ -258,8 +258,8 @@ function draftBib({
       points.tipRightTopStart
     )
     .curve(
-      points.edgeTopLeftCp, 
-      points.edgeLeftCp, 
+      points.edgeTopLeftCp,
+      points.edgeLeftCp,
       points.edgeLeft
     )
     .close()

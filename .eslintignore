@@ -1,12 +1,17 @@
 *.gif
+*.ico
 *.jpg
 *.jpeg
 *.png
+*.svg
 *.sh
 *.md
 *.prisma
+*.css
 Dockerfile
 .git
+.env
+*.env
 coverage
 dist
 node_modules

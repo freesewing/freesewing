@@ -25,7 +25,6 @@ const MdxPage = (props) => {
   return (
     <Page app={app} {...props.page}>
       <Head>
-        <meta property="og:title" content={props.page.title} key="title" />
         <meta property="og:type" content="article" key="type" />
         <meta property="og:description" content={props.intro} key="type" />
         <meta property="og:article:author" content="Joost De Cock" key="author" />

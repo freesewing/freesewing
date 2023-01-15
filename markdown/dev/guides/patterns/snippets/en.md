@@ -90,15 +90,6 @@ Each snippet must have:
 ```
 </Example>
 
-<Tip>
-
-Our example image (which, if you hadn't realized was created with FreeSewing) has a lot of
-paths in it. Each box, the arrows, the lines in the React logo, and so on.
-
-Click the **X-Ray** tab to reveal them.
-
-</Tip>
-
 Since our example image does not have any snippets in it, here's an example
 of a `button` snippet:
 

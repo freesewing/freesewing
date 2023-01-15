@@ -25,14 +25,14 @@ array path.divide()
   points.CCp1 = new Point(50, -30)
   points.D = new Point(50, 80)
   points.DCp1 = new Point(140, 50)
-  
+
   paths.example = new Path()
     .move(points.A)
     .line(points.B)
     .curve(points.BCp2, points.CCp1, points.C)
     .curve(points.DCp1, points.DCp1, points.D)
     .close()
-  
+
   let style = "stroke-width: 4; stroke-opacity: 0.5;"
   let i = 0
   for (let p of paths.example.divide()) {
@@ -46,4 +46,3 @@ array path.divide()
 }
 ```
 </Example>
-

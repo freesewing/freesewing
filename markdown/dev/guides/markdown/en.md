@@ -4,7 +4,7 @@ order: 900
 ---
 
 Markdown is a lightweight markup language with plain text formatting syntax.
-It is designed to be easily readable by humans, and computers alike.
+It is designed to be easily readable by humans and computers alike.
 
 Markdown is often used to format documentation, online comments,
 or anywhere where you want rich text while using a plain text editor.

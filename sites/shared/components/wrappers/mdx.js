@@ -15,15 +15,18 @@ import customComponents from 'shared/components/mdx'
 // Previous-Next navigation
 import PrevNext from '../mdx/prev-next'
 
-const Null = (props) => null
+const Null = () => null
 
 const MdxWrapper = ({ mdx, app, t, components = {} }) => {
   const [mdxModule, setMdxModule] = useState()
 
   useEffect(() => {
-    ;(async () => {
+    // This is a workaround to keep prettier and eslint
+    // from fighting over syntax
+    async function prettierEslintPeaceDeal() {
       setMdxModule(await run(mdx, runtime))
-    })()
+    }
+    prettierEslintPeaceDeal()
   }, [mdx])
 
   /*
@@ -40,7 +43,7 @@ const MdxWrapper = ({ mdx, app, t, components = {} }) => {
   const MdxContent = mdxModule ? mdxModule.default : Null
 
   return app ? (
-    <div className="text-primary mdx max-w-prose text-base-content max-w-prose text-lg lg:text-xl">
+    <div className="text-primary mdx max-w-prose text-base-content max-w-prose text-base">
       {mdxModule && <MdxContent components={allComponents} />}
       <PrevNext app={app} />
     </div>

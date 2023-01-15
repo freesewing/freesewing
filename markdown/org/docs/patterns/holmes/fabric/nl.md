@@ -4,11 +4,11 @@ title: "Holmes deerstalker hat: Fabric Options"
 
 ### Hoofd stof
 
-Voor de buitenstof van de hoed werkt een dikkere stof het beste om de hoed in vorm te houden. Als je liever een lichtere stof gebruikt kan je ook tussenvoering gebruiken voor extra stevigheid. Over het algemeen is **wol** voor jassen een goeie keuze, maar je kan experimenteren met verschillende gewichten en stoffen en eventuele tussenvoering.
+Voor de buitenstof van de hoed werkt een dikkere stof het beste om de hoed in vorm te houden. Als je liever een lichtere stof gebruikt kan je ook tussenvoering gebruiken voor extra stevigheid. Generally you want to use **wools** of coating weight but you can experiment with different weights and fabrics with the relevant interfacing.
 
 <Note>
 
-Bedrukt katoen is een keuze voor erg leuke hoedjes. Gebruik dan een dubbele laag stof voor elk patroondeel. Als tussenvoering kan je dan een middelmatig stijve versie gebruiken.
+Bedrukt katoen is een keuze voor erg leuke hoedjes. Gebruik dan een dubbele laag stof voor elk patroondeel. Then interface it with a **medium firm interfacing**.
 
 </Note>
 
@@ -18,7 +18,7 @@ Over het algemeen wil je een lichtgewicht stof zoals **zijpanden** of **Cotton L
 
 ### Tussenvoering
 
-Afhankelijk van de dikte van je hoofdstof en hoe goed het de vorm behoudt die je nodig hebt om je stof te integreren. Als je onzeker bent of je stof tussenvoering vereist kan de kroondelen _**driegen**_ en controleren of de kroon recht blijft staan wanneer je hem op een platte ondergrond plaatst. Als het geen tussenvoering nodig heeft. Als het geen tussenvoering nodig heeft. Als vuistregel heb je over het algemeen een **middelstijve tussenvoering** nodig, maar als je stof vrij dun is, heb je misschien een stevigere tussenvoering nodig. Als je nog steeds twijfelt kan je je kroondelen samen _**driegen**_ om te controleren hoe het eruitziet op je hoofd. Je kunt ofwel fusibele of niet-fusibele tussenvoering gebruiken. Als je een niet-klevende tussenvoering gebruikt kan je de tussenvoering aan je de patroondelen vastnaaien met _**pad stitches**_.
+Afhankelijk van de dikte van je hoofdstof en hoe goed het de vorm behoudt die je nodig hebt om je stof te integreren. If you are uncertain of whether your fabric requires interfacing, quickly _baste_ your crown pieces together and see if the crown stays up right when placed on a surface. Als het geen tussenvoering nodig heeft. Als vuistregel heb je over het algemeen een **middelstijve tussenvoering** nodig, maar als je stof vrij dun is, heb je misschien een stevigere tussenvoering nodig. If you are still uncertain you can face your crown pieces and once again _baste_ the crown pieces together and check how it looks on your head. Je kunt ofwel fusibele of niet-fusibele tussenvoering gebruiken. If using non-fusible interfacing you will want to flat line the interfacing to your pieces wih temporary _pad stitches_.
 
 <Note>
 

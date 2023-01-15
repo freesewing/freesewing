@@ -8,18 +8,18 @@ Which is a big no-no in sewing patterns, so we're going to have to address
 that.
 
 Specifically, we're going to rotate our strap out of the way until it no longer overlaps.
-The rest of your bib should stay as it is, so let's start by making a list of points we need
+The rest of our bib should stay as it is, so let's start by making a list of points we need
 to rotate.
 
 Once we have our list of points to rotate, we can rotate them. How far? Until the strap no longer overlaps.
 
 <Example tutorial caption="It is looking pretty wonky now, but we'll deal with that next">
 ```js
-function draftBib({ 
-  Path, 
-  Point, 
-  paths, 
-  points, 
+function draftBib({
+  Path,
+  Point,
+  paths,
+  points,
   measurements,
   options,
   macro,
@@ -33,15 +33,15 @@ function draftBib({
   do {
   	points.right = new Point(tweak * measurements.head / 10, 0)
   	points.bottom = new Point(0, tweak * measurements.head / 12)
-  
+
   	points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right)/2)
   	points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right)/2)
-  
+
   	paths.quarterNeck = new Path()
   	  .move(points.right)
   	  .curve(points.rightCp1, points.bottomCp2, points.bottom)
       .hide() // Add this line
-  
+
   	delta = paths.quarterNeck.length() - target
     if (delta > 0) tweak = tweak * 0.99
     else tweak = tweak * 1.02
@@ -66,10 +66,10 @@ function draftBib({
     .close()
     .addClass('fabric')
 
-  // Drawing the bib outline 
+  // Drawing the bib outline
   const width = measurements.head * options.widthRatio
   const length = measurements.head * options.lengthRatio
-  
+
   points.topLeft = new Point(
     width / -2,
     points.top.y - (width / 2 - points.right.x)
@@ -77,7 +77,7 @@ function draftBib({
   points.topRight = points.topLeft.shift(0, width)
   points.bottomLeft = points.topLeft.shift(-90, length)
   points.bottomRight = points.topRight.shift(-90, length)
-  
+
   paths.rect = new Path()
     .move(points.topLeft)
     .line(points.bottomLeft)
@@ -91,7 +91,7 @@ function draftBib({
   points.edgeLeft = new Point(points.topLeft.x, points.left.y)
   points.edgeRight = new Point(points.topRight.x, points.right.y)
   points.edgeTop = new Point(0, points.topLeft.y)
-  
+
   points.edgeLeftCp = points.edgeLeft.shiftFractionTowards(points.topLeft, 0.5)
   points.edgeRightCp = points.edgeLeftCp.flipX()
   points.edgeTopLeftCp = points.edgeTop.shiftFractionTowards(
@@ -99,14 +99,14 @@ function draftBib({
     0.5
   )
   points.edgeTopRightCp = points.edgeTopLeftCp.flipX()
-   
+
   // Round the straps
   const strap = points.edgeTop.dy(points.top)
-  
+
   points.tipRight = points.edgeTop.translate(strap / 2, strap / 2)
   points.tipRightTop = new Point(points.tipRight.x, points.edgeTop.y)
   points.tipRightBottom = new Point(points.tipRight.x, points.top.y)
-  
+
   macro("round", {
     from: points.edgeTop,
     to: points.tipRight,
@@ -145,13 +145,13 @@ function draftBib({
     "topCp2"
   ]
   /*
-   * We're rotating all the points in 
-   * the `rotateThese` array around 
+   * We're rotating all the points in
+   * the `rotateThese` array around
    * the `edgeLeft` point.
    *
-   * We're using increments of 1 degree 
-   * until the `tipRightBottomStart` point 
-   * is 1mm beyond the center of our bib.
+   * We're using increments of 1 degree
+   * until the `tipRightBottomStart` point
+   * is 1 mm beyond the center of our bib.
    */
   while (points.tipRightBottomStart.x > -1) {
     for (const p of rotateThese) points[p] = points[p].rotate(1, points.edgeLeft)
@@ -184,7 +184,7 @@ function draftBib({
 
   // highlight-start
   /*
-   * Always draw your path at the end 
+   * Always draw your path at the end
    * after you've manipulated your points
    */
   paths.rect = new Path()
@@ -196,9 +196,6 @@ function draftBib({
     .curve(points.edgeRightCp, points.edgeTopRightCp, points.edgeTop)
     .close()
   // highlight-end
-
-
-
 
   return part
 }

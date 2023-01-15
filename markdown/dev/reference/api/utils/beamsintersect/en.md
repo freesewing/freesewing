@@ -1,5 +1,5 @@
 ---
-title: uils.beamsIntersect()
+title: utils.beamsIntersect()
 ---
 
 The `utils.beamsIntersect()` function finds the intersection between two endless
