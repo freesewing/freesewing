@@ -87,6 +87,7 @@ function useApp({ bugsnag }) {
 
   // Persistent state
   const [account, setAccount] = useLocalStorage('account', { username: false })
+  const [token, setToken] = useLocalStorage('token', null)
   const [theme, setTheme] = useTheme()
   const [username, setUsername] = useLocalStorage('username', false)
 
@@ -145,6 +146,7 @@ function useApp({ bugsnag }) {
 
     // State
     account,
+    token,
     loading,
     navigation,
     primaryMenu,
@@ -154,6 +156,7 @@ function useApp({ bugsnag }) {
 
     // State setters
     setAccount,
+    setToken,
     setLoading,
     setNavigation,
     setPrimaryMenu,

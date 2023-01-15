@@ -15,11 +15,26 @@ import Popout from 'shared/components/popout.js'
 import {
   GdprProfileDetails,
   GdprMeasurementsDetails,
-  namespaces as gdprNamespaces,
+  namespaces as gdprNs,
 } from 'site/components/gdpr/details.js'
+import Robot from 'shared/components/robot/index.js'
 
 // Translation namespaces used on this page
-const namespaces = [...gdprNamespaces]
+const namespaces = ['confirm', ...gdprNs]
+
+export const SignupLinkExpired = () => {
+  const { t } = useTranslation('confirm')
+
+  return (
+    <>
+      <h1 className="text-center">{t('signupLinkExpired')}</h1>
+      <Robot pose="shrug" className="w-full" embed />
+      <Link className="btn btn-primary btn-lg w-full" href="/signup">
+        {t('signupAgain')}
+      </Link>
+    </>
+  )
+}
 
 const Checkbox = ({ value, name, setter, label, children = null }) => (
   <div
@@ -55,6 +70,7 @@ const ConfirmSignUpPage = (props) => {
   const [measurements, setMeasurements] = useState(false)
   const [openData, setOpenData] = useState(true)
   const [ready, setReady] = useState(false)
+  const [error, setError] = useState(false)
 
   const createAccount = async () => {
     let consent = 0
@@ -63,7 +79,15 @@ const ConfirmSignUpPage = (props) => {
     if (profile && measurements && openData) consent = 3
     if (consent > 0 && id) {
       const data = await confirmSignup({ consent, id, ...app.loadHelpers })
-      console.log(data)
+      if (data?.token && data?.account) {
+        console.log(data)
+        app.setToken(data.token)
+        app.setAccount(data.account)
+        router.push('/welcome')
+      } else {
+        // Something went wrong
+        console.log('something went wrong')
+      }
     }
   }
 
@@ -78,12 +102,23 @@ const ConfirmSignUpPage = (props) => {
         check: confirmationCheck,
         ...app.loadHelpers,
       })
+      if (data instanceof Error) setError(true)
       setReady(true)
       setId(confirmationId)
     }
     // Call async method
     getConfirmation()
   }, [])
+
+  // Short-circuit errors
+  if (error)
+    return (
+      <Page app={app} title={t('joinFreeSewing')} layout={Layout} footer={false}>
+        <WelcomeWrapper theme={app.theme}>
+          <SignupLinkExpired />
+        </WelcomeWrapper>
+      </Page>
+    )
 
   const partA = (
     <>
