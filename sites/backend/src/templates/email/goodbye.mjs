@@ -1,5 +1,4 @@
 import { headingRow, wrap } from './blocks.mjs'
-import { translations as sharedTranslations } from './blocks.mjs'
 
 /*
  * Used the following replacements:

@@ -5,7 +5,6 @@ import path from 'path'
 
 // This will load YAML translation files and store them as JSON
 const generateTranslationFiles = async () => {
-  const promises = []
   for (const locale of i18nConfig.i18n.locales) {
     for (const namespace of i18nConfig.namespaces) {
       const content = yaml.load(
