@@ -24,6 +24,7 @@ peopleWhatQuestion: What is people data?
 peopleWhyAnswer: 'To draft <b>made-to-measure sewing patterns</b>, we need <b>body measurements</b>.'
 privacyMatters: Privacy matters
 privacyNotice: FreeSewing Privacy Notice
+processing: Processing
 profileQuestion: Do you give your consent to process your profile data?
 profileShareAnswer: '<b>No</b>, never.'
 profileTimingAnswer: '<b>12 months</b> after your last login, or until you <b>remove</b> your account or <b>revoke</b> this consent.'

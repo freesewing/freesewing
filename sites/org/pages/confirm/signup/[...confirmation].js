@@ -20,7 +20,7 @@ import {
 import Robot from 'shared/components/robot/index.js'
 
 // Translation namespaces used on this page
-const namespaces = ['confirm', ...gdprNs]
+const namespaces = [...gdprNs]
 
 export const SignupLinkExpired = () => {
   const { t } = useTranslation('confirm')
@@ -206,8 +206,16 @@ const ConfirmSignUpPage = (props) => {
           </button>
         )}
         {profile && measurements && (
-          <button className="btn btn-primary btn-lg w-full mt-8" onClick={createAccount}>
-            {t('createAccount')}
+          <button onClick={createAccount}>
+            className={`btn btn-lg w-full mt-8 ${app.loading ? 'btn-accent' : 'btn-primary'}`}
+            {app.loading ? (
+              <>
+                <Spinner />
+                <span>{t('processing')}</span>
+              </>
+            ) : (
+              <span>{t('createAccount')}</span>
+            )}
           </button>
         )}
         <p className="text-center opacity-50 mt-12">

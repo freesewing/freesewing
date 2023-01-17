@@ -11,3 +11,10 @@ signUpHere: Sign up here
 processing: Processing
 emailSent: Email sent
 somethingWentWrong: Something went wrong
+checkYourInbox: Go check your inbox for an email from
+clickSignupLink: Click your personal signup link in that email to create your FreeSewing account.
+back: Back to signup
+contact: Contact support
+err1: We understand that this is frustrating, and makes for a very bad first impression.
+err2: Unfortunately, we cannot recover from this error, we need a human being to look into this.
+err3: Feel free to try again, or reach out to support so we can assist you.
