@@ -1,16 +1,16 @@
-joinFreeSewing: Join FreeSewing
-toReceiveSignupLink: To receive a signup link, enter your email address
-emailAddress: Email address
-pleaseProvideValidEmail: Please provide a valid email address
-emailSignupLink: Email me a signup link
-alreadyHaveAnAccount: Already have an account?
-dontHaveAnAccount: Don't have an account yet?
-signIn: Sign in
-signInHere: Sign in here
-signUpHere: Sign up here
-emailUsernameId: Email address, username, or user ID
-welcomeName: 'Welcome { name }'
-password: Password
-processing: Processing
-emailSent: Email sent
-somethingWentWrong: Something went wrong
+joinFreeSewing: FreeSewing beitreten
+toReceiveSignupLink: Um einen Registrierungs-Link zu erhalten, geben Sie Ihre E-Mail-Adresse ein
+emailAddress: E-Mail Adresse
+pleaseProvideValidEmail: Bitte gebe eine gültige E-Mail Adresse an
+emailSignupLink: Bitte sende mir den Login-Link
+alreadyHaveAnAccount: Hast du bereits ein Konto?
+dontHaveAnAccount: Du hast noch keinen Account?
+signIn: Anmelden
+signInHere: Hier anmelden
+signUpHere: Registriere dich hier
+emailUsernameId: E-Mail-Adresse, Benutzername oder Benutzer-ID
+welcomeName: 'Herzlich willkommen, { name }'
+password: Passwort
+processing: In Bearbeitung
+emailSent: E-Mail versendet
+somethingWentWrong: Etwas ist schiefgelaufen

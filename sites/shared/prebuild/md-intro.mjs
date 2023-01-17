@@ -9,16 +9,22 @@ import { visit } from 'unist-util-visit'
 import remarkParse from 'remark-parse'
 import remarkFrontmatter from 'remark-frontmatter'
 
-const asText = ['text', 'strong', 'emphasis', 'inlineCode']
+const asText = ['text', 'strong', 'emphasis']
+const asLink = ['link', 'linkReference']
 
 // Pulls the intro from a markdown document
-const remarkIntroPlugin = (opts = {}) => {
+const remarkIntroPlugin = () => {
   // Pulls text out of a paragraph
   const extractIntro = (node) => {
     const text = []
     for (const child of node.children) {
+      // add regular text without modification
       if (asText.indexOf(child.type) !== -1) text.push(child.value)
-      else if (child.type === 'link') text.push(child.children[0].value)
+      // escape inline code
+      else if (child.type === 'inlineCode')
+        text.push(child.value.replace(/</g, '&lt;').replace(/>/g, '&gt;'))
+      // get all the text content of links and like references
+      else if (asLink.includes(child.type)) text.push(extractIntro(child))
     }
 
     return text.map((item) => (item ? item.trim() : '')).join(' ')
@@ -34,7 +40,7 @@ const remarkIntroPlugin = (opts = {}) => {
   }
 
   // Tree visitor
-  const visitor = (node, i, parent) => {
+  const visitor = (node) => {
     if (node.type === 'root') {
       node.children = [
         {
@@ -68,11 +74,11 @@ export const mdIntro = async (language, site, slug) => {
     path.resolve(`../../markdown/${site}/${slug}/${language}.md`),
     'utf-8'
   )
-  const intro = []
+
   const result = await remark()
     .use(remarkFrontmatter)
     .use(remarkParse)
-    .use([remarkIntroPlugin, { intro }])
+    .use(remarkIntroPlugin)
     .process(md)
 
   return result.toString()

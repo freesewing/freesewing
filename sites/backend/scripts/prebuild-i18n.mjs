@@ -1,5 +1,3 @@
-import { build } from '../../../packages/i18n/src/prebuild.mjs'
-import { denyList } from '../../../packages/i18n/scripts/prebuilder.mjs'
 import fs from 'fs'
 import path from 'path'
 import rdir from 'recursive-readdir'
@@ -14,38 +12,24 @@ const locales = ['en', 'es', 'de', 'fr', 'nl']
  * This is where we configure what folders we should check for
  * code-adjacent translation source files
  */
-const folders = {
-  org: [
-    path.resolve(path.join('.', '..', 'org', 'pages')),
-    path.resolve(path.join('.', '..', 'org', 'components')),
-  ],
-  shared: [path.resolve(path.join('.', '..', 'shared', 'components'))],
-}
+const folders = [path.resolve(path.join('.', 'src'))]
 
 /*
  * Helper method to write out JSON files for translation sources
  */
-const writeJson = async (site, locale, namespace, content) =>
+const writeJson = async (locale, namespace, content) =>
   fs.writeFileSync(
-    path.resolve('..', site, 'public', 'locales', locale, `${namespace}.json`),
+    path.resolve('.', 'public', 'locales', locale, `${namespace}.json`),
     JSON.stringify(content)
   )
 
 /*
  * Helper method to get a list of code-adjecent translation files in a folder.
  * Will traverse recursively to get all files from a given root folder.
- *
- * Parameters:
- *
- *  - site: the site folder to generate translations files for
- *
  */
-const getI18nFileList = async (site = 'org') => {
-  const dirs = [...folders.shared]
-  if (site === 'org') dirs.push(...folders.org)
-
+const getI18nFileList = async () => {
   const allFiles = []
-  for (const dir of dirs) {
+  for (const dir of folders) {
     try {
       const dirFiles = await rdir(dir)
       allFiles.push(...dirFiles)
@@ -143,30 +127,16 @@ const fixData = (rawData) => {
 /*
  * The method that does the actual work
  */
-export const prebuildI18n = async (site, only = false) => {
-  const filter = site === 'dev' ? (loc) => loc === 'en' : (loc) => denyList.indexOf(loc) === -1
-  const locales = await build(filter, only)
-
-  console.log(`copying them to ${site}`, Object.keys(locales))
-
-  const languages = {}
-  Object.keys(locales).forEach((l) => (languages[l] = locales[l].i18n[l]))
-  for (const locale in locales) {
-    // Only English for dev site
-    const loc = locales[locale]
-    // Fan out into namespaces
-    for (const namespace in loc) writeJson(site, locale, namespace, loc[namespace])
-    writeJson(site, locale, 'locales', languages)
-  }
-
+export const prebuildI18n = async () => {
   // Handle new code-adjacent translations
-  const files = await getI18nFileList('org')
+  const files = await getI18nFileList()
   const data = filesAsNamespaces(files)
   const namespaces = fixData(data)
   // Write out code-adjacent source files
-  for (const locale in locales) {
+  for (const locale of locales) {
     // Fan out into namespaces
-    for (const namespace in namespaces)
-      writeJson(site, locale, namespace, namespaces[namespace][locale])
+    for (const namespace in namespaces) {
+      writeJson(locale, namespace, namespaces[namespace][locale])
+    }
   }
 }

@@ -23,7 +23,8 @@
     "prettier": "npx prettier --write 'src/*.mjs' 'tests/*.mjs'",
     "rmdb": "node ./scripts/rmdb.mjs",
     "test": "npx mocha --require mocha-steps tests/index.mjs",
-    "vbuild": "VERBOSE=1 node build.mjs"
+    "vbuild": "VERBOSE=1 node build.mjs",
+    "prebuild": "node scripts/prebuild.mjs"
   },
   "peerDependencies": {},
   "dependencies": {
