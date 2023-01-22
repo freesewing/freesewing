@@ -80,6 +80,7 @@ function teaganBack({
       paths.sa = new Path()
         .move(points.cfHem)
         .join(paths.hemBase.offset(sa * 3))
+        .join(paths.sideSeam.offset(sa))
         .join(paths.saBase.offset(sa))
         .line(points.cbNeck)
         .attr('class', 'fabric sa')
