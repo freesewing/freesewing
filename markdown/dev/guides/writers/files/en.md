@@ -1,5 +1,5 @@
 ---
-title: Where to find web page files in the repository
+title: File locations
 order: 200
 ---
 
