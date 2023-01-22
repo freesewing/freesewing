@@ -13,7 +13,5 @@ Do not use any tags enclosed in `<` and `>` angle brackets in the first paragrap
 
 Open Graph is a technology used to produce the graphics seen when a link to FreeSewing is posted to social media. For example, when a link to the FreeSewing API documentation page is posted, the following image is shown.
 
-<Image>
-</Image>
 
 
