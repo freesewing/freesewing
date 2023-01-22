@@ -1,5 +1,6 @@
 import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
+import useBackend from 'site/hooks/useBackend.js'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 import Layout from 'site/components/layouts/bare'
@@ -7,7 +8,6 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { validateEmail, validateTld } from 'shared/utils.mjs'
 import SusiWrapper from 'site/components/wrappers/susi.js'
-import { signUp } from 'shared/backend.mjs'
 import Spinner from 'shared/components/icons/spinner.js'
 import Robot from 'shared/components/robot/index.js'
 
@@ -22,6 +22,7 @@ const DarkLink = ({ href, txt }) => (
 
 const SignUpPage = (props) => {
   const app = useApp(props)
+  const backend = useBackend(app)
   const { t } = useTranslation(namespaces)
 
   const [email, setEmail] = useState('')
@@ -41,18 +42,16 @@ const SignUpPage = (props) => {
     if (!emailValid) return
     let res
     try {
-      res = await signUp({
+      res = await backend.signUp({
         email,
         language: app.locale,
         setResult,
-        ...app.loadHelpers,
       })
     } catch (err) {
       setError(app.error(err))
       // Here to keep the stupid linter happy
       console.log(error)
     }
-    console.log(res)
     if (res.result === 'success') setResult('success')
     else setResult('fail')
   }

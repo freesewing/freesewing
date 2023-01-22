@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
+import useBackend from 'site/hooks/useBackend.js'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 import Layout from 'site/components/layouts/bare'
@@ -8,7 +9,6 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { validateEmail, validateTld } from 'shared/utils.mjs'
 import WelcomeWrapper from 'site/components/wrappers/welcome.js'
-import { loadConfirmation, confirmSignup } from 'shared/backend.mjs'
 import Spinner from 'shared/components/icons/spinner.js'
 import { useRouter } from 'next/router'
 import Popout from 'shared/components/popout.js'
@@ -58,6 +58,7 @@ const Checkbox = ({ value, name, setter, label, children = null }) => (
 
 const ConfirmSignUpPage = (props) => {
   const app = useApp(props)
+  const backend = useApp(app)
   const { t } = useTranslation(namespaces)
   const router = useRouter()
 
@@ -78,7 +79,7 @@ const ConfirmSignUpPage = (props) => {
     if (profile && measurements) consent = 2
     if (profile && measurements && openData) consent = 3
     if (consent > 0 && id) {
-      const data = await confirmSignup({ consent, id, ...app.loadHelpers })
+      const data = await backend.confirmSignup({ consent, id, ...app.loadHelpers })
       if (data?.token && data?.account) {
         console.log(data)
         app.setToken(data.token)
@@ -97,7 +98,7 @@ const ConfirmSignUpPage = (props) => {
       // Get confirmation ID and check from url
       const [confirmationId, confirmationCheck] = router.asPath.slice(1).split('/').slice(2)
       // Reach out to backend
-      const data = await loadConfirmation({
+      const data = await backend.loadConfirmation({
         id: confirmationId,
         check: confirmationCheck,
         ...app.loadHelpers,
@@ -206,8 +207,10 @@ const ConfirmSignUpPage = (props) => {
           </button>
         )}
         {profile && measurements && (
-          <button onClick={createAccount}>
+          <button
+            onClick={createAccount}
             className={`btn btn-lg w-full mt-8 ${app.loading ? 'btn-accent' : 'btn-primary'}`}
+          >
             {app.loading ? (
               <>
                 <Spinner />

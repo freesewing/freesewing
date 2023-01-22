@@ -89,7 +89,6 @@ function useApp({ bugsnag }) {
   const [account, setAccount] = useLocalStorage('account', { username: false })
   const [token, setToken] = useLocalStorage('token', null)
   const [theme, setTheme] = useTheme()
-  const [username, setUsername] = useLocalStorage('username', false)
 
   // React State
   const [primaryMenu, setPrimaryMenu] = useState(false)
@@ -130,7 +129,7 @@ function useApp({ bugsnag }) {
   const error = (err) => {
     const id = errId
     bugsnag.notify(err, (evt) => {
-      evt.setUser(username ? username : '__visitor')
+      evt.setUser(account.username ? account.username : '__visitor')
       evt.context = id
     })
 
@@ -152,7 +151,6 @@ function useApp({ bugsnag }) {
     primaryMenu,
     slug,
     theme,
-    username,
 
     // State setters
     setAccount,
@@ -162,7 +160,6 @@ function useApp({ bugsnag }) {
     setPrimaryMenu,
     setSlug,
     setTheme,
-    setUsername,
     startLoading: () => {
       setLoading(true)
       setPrimaryMenu(false)

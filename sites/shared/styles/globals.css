@@ -28,7 +28,7 @@
     @apply text-base-content my-1 py-2 text-base leading-6;
   }
   .btn {
-    @apply capitalize;
+    @apply normal-case;
   }
 
   /* Dropdowns */
