@@ -27,7 +27,7 @@ function teaganFront({
   if (options.curveToWaist) {
     let midWidth, lowerWidth
     
-    midWidth = measurements.waist * (1 + options.waistEase)/4
+    midWidth = measurements.waist * (1 + options.curvedWaistEase)/4
     lowerWidth = measurements.hips * (1 + options.hipsEase)/4
     points.hem.x = lowerWidth
     points.hips.x = lowerWidth
@@ -233,7 +233,7 @@ export const front = {
     // Teagan specific
     draftForHighBust: { bool: false, menu: 'fit' },
     curveToWaist: { bool: false, menu: 'fit' },
-    waistEase: { pct: 25, min: 8, max: 40, menu: 'fit' },
+    curvedWaistEase: { pct: 25, min: 8, max: 40, menu: 'fit' },
     hipsEase: { pct: 18, min: 8, max: 30, menu: 'fit' },
     necklineDepth: { pct: 25, min: 20, max: 40, menu: 'style' },
     necklineWidth: { pct: 30, min: 10, max: 50, menu: 'style' },
