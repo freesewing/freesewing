@@ -1,0 +1,6 @@
+metric: Metric units (cm)
+metricd: Pick this if you prefer centimeters over inches.
+imperial: Imperial units (inch)
+imperiald: Pick this if you prefer inches over centimeters.
+title: Which units do you prefer?
+continue: Continue

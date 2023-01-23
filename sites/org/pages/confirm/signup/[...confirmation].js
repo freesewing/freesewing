@@ -26,13 +26,13 @@ export const SignupLinkExpired = () => {
   const { t } = useTranslation('confirm')
 
   return (
-    <>
+    <div className="p-8 max-w-md">
       <h1 className="text-center">{t('signupLinkExpired')}</h1>
       <Robot pose="shrug" className="w-full" embed />
       <Link className="btn btn-primary btn-lg w-full" href="/signup">
         {t('signupAgain')}
       </Link>
-    </>
+    </div>
   )
 }
 
@@ -58,7 +58,7 @@ const Checkbox = ({ value, name, setter, label, children = null }) => (
 
 const ConfirmSignUpPage = (props) => {
   const app = useApp(props)
-  const backend = useApp(app)
+  const backend = useBackend(app)
   const { t } = useTranslation(namespaces)
   const router = useRouter()
 
@@ -81,7 +81,6 @@ const ConfirmSignUpPage = (props) => {
     if (consent > 0 && id) {
       const data = await backend.confirmSignup({ consent, id, ...app.loadHelpers })
       if (data?.token && data?.account) {
-        console.log(data)
         app.setToken(data.token)
         app.setAccount(data.account)
         router.push('/welcome')

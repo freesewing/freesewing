@@ -7,10 +7,12 @@ import Link from 'next/link'
 import { useState } from 'react'
 import AuthWrapper, { namespaces as authNs } from 'site/components/wrappers/auth/index.js'
 import Spinner from 'shared/components/icons/spinner.js'
-import ControlSettings, { namespaces as controlNs } from 'site/components/account/control/index.js'
+import NewsletterSettings, {
+  namespaces as newsletterNs,
+} from 'site/components/account/newsletter/index.js'
 
 // Translation namespaces used on this page
-const namespaces = [...controlNs, ...authNs]
+const namespaces = [...newsletterNs, ...authNs]
 
 const WelcomePage = (props) => {
   const app = useApp(props)
@@ -22,7 +24,7 @@ const WelcomePage = (props) => {
     <Page app={app} title={t('title')} layout={Layout} footer={false}>
       <AuthWrapper app={app}>
         <div className="m-auto max-w-lg text-center lg:mt-12 p-8">
-          <ControlSettings app={app} title welcome />
+          <NewsletterSettings app={app} title welcome />
         </div>
       </AuthWrapper>
     </Page>

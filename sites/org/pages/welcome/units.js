@@ -7,12 +7,12 @@ import Link from 'next/link'
 import { useState } from 'react'
 import AuthWrapper, { namespaces as authNs } from 'site/components/wrappers/auth/index.js'
 import Spinner from 'shared/components/icons/spinner.js'
-import ControlSettings, { namespaces as controlNs } from 'site/components/account/control/index.js'
+import UnitsSettings, { namespaces as unitsNs } from 'site/components/account/units/index.js'
 
 // Translation namespaces used on this page
-const namespaces = [...controlNs, ...authNs]
+const namespaces = [...unitsNs, ...authNs]
 
-const WelcomePage = (props) => {
+const UnitsPage = (props) => {
   const app = useApp(props)
   const { t } = useTranslation(namespaces)
 
@@ -22,14 +22,14 @@ const WelcomePage = (props) => {
     <Page app={app} title={t('title')} layout={Layout} footer={false}>
       <AuthWrapper app={app}>
         <div className="m-auto max-w-lg text-center lg:mt-12 p-8">
-          <ControlSettings app={app} title welcome />
+          <UnitsSettings app={app} title welcome />
         </div>
       </AuthWrapper>
     </Page>
   )
 }
 
-export default WelcomePage
+export default UnitsPage
 
 export async function getStaticProps({ locale }) {
   return {
