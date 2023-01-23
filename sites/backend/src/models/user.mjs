@@ -394,6 +394,8 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
   const data = {}
   // Bio
   if (typeof body.bio === 'string') data.bio = body.bio
+  // Compare
+  if ([true, false].includes(body.compare)) data.compare = body.compare
   // Consent
   if ([0, 1, 2, 3].includes(body.consent)) data.consent = body.consent
   // Control
@@ -570,6 +572,7 @@ UserModel.prototype.asAccount = function () {
   return {
     id: this.record.id,
     bio: this.clear.bio,
+    compare: this.record.compare,
     consent: this.record.consent,
     control: this.record.control,
     createdAt: this.record.createdAt,
