@@ -3,8 +3,10 @@ import { useTranslation } from 'next-i18next'
 import useBackend from 'site/hooks/useBackend.js'
 import Link from 'next/link'
 import { Choice } from '../shared.js'
+import OkIcon from 'shared/components/icons/ok.js'
+import NoIcon from 'shared/components/icons/no.js'
 
-export const namespaces = ['compare']
+export const namespaces = ['username']
 
 const welcomeSteps = {
   1: {
@@ -16,11 +18,11 @@ const welcomeSteps = {
     steps: 3,
   },
   3: {
-    href: '/welcome/username',
+    href: '/docs/guide',
     steps: 5,
   },
   4: {
-    href: '/welcome/username',
+    href: '/welcome/bio',
     steps: 7,
   },
   5: {
@@ -29,29 +31,54 @@ const welcomeSteps = {
   },
 }
 
-export const CompareSettings = ({ app, title = false, welcome = false }) => {
+const UsernameSettings = ({ app, title = false, welcome = false }) => {
   const backend = useBackend(app)
   const { t } = useTranslation(namespaces)
-  const [selection, setSelection] = useState(app.account?.compare ? 'yes' : 'no')
+  const [username, setUsername] = useState(app.account.username)
+  const [available, setAvailable] = useState(true)
+  const [checking, setChecking] = useState(false)
 
-  const update = async (val) => {
-    if (val !== selection) {
-      const result = await backend.updateAccount({ compare: val === 'yes' ? true : false })
-      if (result) setSelection(val)
+  const update = async (evt) => {
+    evt.preventDefault()
+    if (evt.target.value !== username) {
+      setUsername(evt.target.value)
+      setChecking(true)
+      const free = await backend.isUsernameAvailable(evt.target.value)
+      setChecking(false)
+      setAvailable(free)
     }
+  }
+
+  const save = async () => {
+    const result = await backend.updateAccount({ username })
   }
 
   return (
     <>
       {title ? <h1 className="text-4xl">{t('title')}</h1> : null}
-      {['yes', 'no'].map((val) => (
-        <Choice val={val} t={t} update={update} current={selection} bool>
-          <span className="block text-lg leading-5">
-            {selection === 1 && val === 2 ? t('showMore') : t(`${val}`)}
-          </span>
-          <span className="block text-xs font-light normal-case pt-1">{t(`${val}d`)}</span>
-        </Choice>
-      ))}
+      <div className="flex flex-row items-center">
+        <input
+          value={username}
+          onChange={update}
+          className="input w-full input-bordered flex flex-row"
+          type="text"
+          placeholder={t('title')}
+        />
+        <span className={`-ml-10 rounded-full p-1 ${available ? 'bg-success' : 'bg-error'}`}>
+          {available ? (
+            <OkIcon className="w-5 h-5 text-neutral-content" stroke={4} />
+          ) : (
+            <NoIcon className="w-5 h-5 text-neutral-content" stroke={3} />
+          )}
+        </span>
+      </div>
+      <button
+        className={`btn btn-secondary mt-4 ${available ? '' : 'btn-disabled'} w-64`}
+        onClick={save}
+      >
+        {available ? 'Save' : 'Username is not available'}
+      </button>
+
       {welcome ? (
         <>
           <Link
@@ -64,11 +91,11 @@ export const CompareSettings = ({ app, title = false, welcome = false }) => {
             <>
               <progress
                 className="progress progress-primary w-full mt-12"
-                value={400 / welcomeSteps[app.account.control].steps}
+                value={500 / welcomeSteps[app.account.control].steps}
                 max="100"
               ></progress>
               <span className="pt-4 text-sm font-bold opacity-50">
-                4 / {welcomeSteps[app.account.control].steps}
+                5 / {welcomeSteps[app.account.control].steps}
               </span>
             </>
           ) : null}
@@ -78,4 +105,4 @@ export const CompareSettings = ({ app, title = false, welcome = false }) => {
   )
 }
 
-export default CompareSettings
+export default UsernameSettings

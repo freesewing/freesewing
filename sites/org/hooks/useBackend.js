@@ -36,7 +36,7 @@ function useBackend(app) {
   /*
    * Load confirmation
    */
-  backend.loadConfirmation = async ({ id, check, startLoading, stopLoading }) => {
+  backend.loadConfirmation = async ({ id, check }) => {
     let result
     try {
       app.startLoading()
@@ -53,7 +53,7 @@ function useBackend(app) {
   /*
    * Confirm signup
    */
-  backend.confirmSignup = async ({ id, consent, startLoading, stopLoading }) => {
+  backend.confirmSignup = async ({ id, consent }) => {
     let result
     try {
       app.startLoading()
@@ -88,8 +88,23 @@ function useBackend(app) {
     return false
   }
 
-  /* Set control */
-  backend.setControl = (control) => updateAccount({ control })
+  /*
+   * Checks whether a username is available
+   */
+  backend.isUsernameAvailable = async (username) => {
+    let result
+    try {
+      app.startLoading()
+      result = await api.post(`/available/username/jwt`, { username }, auth)
+    } catch (err) {
+      // 404 means user is not found, so the username is available
+      if (err.response?.status === 404) return true
+      return false
+    } finally {
+      app.stopLoading()
+    }
+    return false
+  }
 
   return backend
 }

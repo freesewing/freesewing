@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import useBackend from 'site/hooks/useBackend.js'
 import Link from 'next/link'
-import { Choice } from '../shared.js'
+import { Choice, Icons } from '../shared.js'
 
 export const namespaces = ['control']
 
@@ -76,6 +76,7 @@ export const ControlSettings = ({ app, title = false, welcome = false }) => {
               <span className="pt-4 text-sm font-bold opacity-50">
                 1 / {welcomeSteps[selection].steps}
               </span>
+              <Icons done={[]} todo={[welcomeSteps[selection].href]} />
             </>
           ) : null}
         </>

@@ -1,3 +1,7 @@
+import OkIcon from 'shared/components/icons/ok.js'
+import NoIcon from 'shared/components/icons/no.js'
+import CogIcon from 'shared/components/icons/cog.js'
+
 const btnClasses = {
   dflt:
     'btn w-full mt-2 btn-secondary ' +
@@ -24,4 +28,35 @@ export const Choice = ({ val, update, t, current, children, bool = false }) => {
       <div className={`normal-case text-base-content`}>{children}</div>
     </button>
   )
+}
+
+export const DoneIcon = ({ href }) => (
+  <div className="bg-warning">
+    <Link href={href} className="bg-warning">
+      <OkIcon />
+    </Link>
+  </div>
+)
+
+const TodoIcon = () => <CogIcon className="w-6 h-6 text-primary opacity-50" />
+const DoingIcon = () => <CogIcon className="w-6 h-6 text-secondary" />
+
+export const Icons = ({ done = [], todo = [] }) => (
+  <div className="m-auto flex flex-row items-center justify-center gap-2">
+    {done.map((href) => (
+      <DoneIcon href={href} key={href} />
+    ))}
+    <DoingIcon />
+    {todo.map((href) => (
+      <TodoIcon href={href} key={href} />
+    ))}
+  </div>
+)
+
+export const welcomeSteps = {
+  1: [],
+  2: ['newsletter', 'units'],
+  3: ['newsletter', 'units', 'compare', 'username'],
+  3: ['newsletter', 'units', 'compare', 'username', 'bio', 'pic'],
+  5: [],
 }
