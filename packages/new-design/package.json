@@ -32,7 +32,7 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "axios": "1.2.2",
+    "axios": "1.2.3",
     "chalk": "5.0.1",
     "execa": "6.1.0",
     "mustache": "4.2.0",
