@@ -2,32 +2,9 @@ import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import useBackend from 'site/hooks/useBackend.js'
 import Link from 'next/link'
-import { Choice } from '../shared.js'
+import { Choice, Icons, welcomeSteps } from '../shared.js'
 
 export const namespaces = ['newsletter']
-
-const welcomeSteps = {
-  1: {
-    href: '/docs/guide/',
-    steps: 0,
-  },
-  2: {
-    href: '/welcome/units',
-    steps: 3,
-  },
-  3: {
-    href: '/welcome/units',
-    steps: 5,
-  },
-  4: {
-    href: '/welcome/units',
-    steps: 7,
-  },
-  5: {
-    href: '/',
-    steps: 0,
-  },
-}
 
 export const NewsletterSettings = ({ app, title = false, welcome = false }) => {
   const backend = useBackend(app)
@@ -40,6 +17,11 @@ export const NewsletterSettings = ({ app, title = false, welcome = false }) => {
       if (result) setSelection(val)
     }
   }
+
+  const nextHref =
+    welcomeSteps[app.account.control].length > 2
+      ? '/welcome/' + welcomeSteps[app.account.control][2]
+      : '/docs/guide'
 
   return (
     <>
@@ -54,22 +36,24 @@ export const NewsletterSettings = ({ app, title = false, welcome = false }) => {
       ))}
       {welcome ? (
         <>
-          <Link
-            href={welcomeSteps[app.account.control].href}
-            className="btn btn-primary w-full mt-12"
-          >
+          <Link href={nextHref} className="btn btn-primary w-full mt-12">
             {t('continue')}
           </Link>
-          {welcomeSteps[app.account.control].steps ? (
+          {welcomeSteps[app.account.control].length > 0 ? (
             <>
               <progress
                 className="progress progress-primary w-full mt-12"
-                value={200 / welcomeSteps[app.account.control].steps}
+                value={200 / welcomeSteps[app.account.control].length}
                 max="100"
               ></progress>
               <span className="pt-4 text-sm font-bold opacity-50">
-                2 / {welcomeSteps[app.account.control].steps}
+                2 / {welcomeSteps[app.account.control].length}
               </span>
+              <Icons
+                done={welcomeSteps[app.account.control].slice(0, 1)}
+                todo={welcomeSteps[app.account.control].slice(2)}
+                current="newsletter"
+              />
             </>
           ) : null}
         </>

@@ -2,34 +2,11 @@ import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import useBackend from 'site/hooks/useBackend.js'
 import Link from 'next/link'
-import { Choice } from '../shared.js'
+import { Choice, Icons, welcomeSteps } from '../shared.js'
 import OkIcon from 'shared/components/icons/ok.js'
 import NoIcon from 'shared/components/icons/no.js'
 
 export const namespaces = ['username']
-
-const welcomeSteps = {
-  1: {
-    href: '/docs/guide',
-    steps: 0,
-  },
-  2: {
-    href: '/docs/guide',
-    steps: 3,
-  },
-  3: {
-    href: '/docs/guide',
-    steps: 5,
-  },
-  4: {
-    href: '/welcome/bio',
-    steps: 7,
-  },
-  5: {
-    href: '/',
-    steps: 0,
-  },
-}
 
 const UsernameSettings = ({ app, title = false, welcome = false }) => {
   const backend = useBackend(app)
@@ -52,6 +29,11 @@ const UsernameSettings = ({ app, title = false, welcome = false }) => {
   const save = async () => {
     const result = await backend.updateAccount({ username })
   }
+
+  const nextHref =
+    welcomeSteps[app.account.control].length > 4
+      ? '/welcome/' + welcomeSteps[app.account.control][5]
+      : '/docs/guide'
 
   return (
     <>
@@ -81,22 +63,24 @@ const UsernameSettings = ({ app, title = false, welcome = false }) => {
 
       {welcome ? (
         <>
-          <Link
-            href={welcomeSteps[app.account.control].href}
-            className="btn btn-primary w-full mt-12"
-          >
+          <Link href={nextHref} className="btn btn-primary w-full mt-12">
             {t('continue')}
           </Link>
-          {welcomeSteps[app.account.control].steps ? (
+          {welcomeSteps[app.account.control].length > 0 ? (
             <>
               <progress
                 className="progress progress-primary w-full mt-12"
-                value={500 / welcomeSteps[app.account.control].steps}
+                value={500 / welcomeSteps[app.account.control].length}
                 max="100"
               ></progress>
               <span className="pt-4 text-sm font-bold opacity-50">
-                5 / {welcomeSteps[app.account.control].steps}
+                5 / {welcomeSteps[app.account.control].length}
               </span>
+              <Icons
+                done={welcomeSteps[app.account.control].slice(0, 4)}
+                todo={welcomeSteps[app.account.control].slice(5)}
+                current="username"
+              />
             </>
           ) : null}
         </>

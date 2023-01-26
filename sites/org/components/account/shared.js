@@ -1,6 +1,14 @@
+import Link from 'next/link'
 import OkIcon from 'shared/components/icons/ok.js'
 import NoIcon from 'shared/components/icons/no.js'
 import CogIcon from 'shared/components/icons/cog.js'
+import ControlIcon from 'shared/components/icons/control.js'
+import NewsletterIcon from 'shared/components/icons/newsletter.js'
+import UnitsIcon from 'shared/components/icons/units.js'
+import CompareIcon from 'shared/components/icons/compare.js'
+import LabelIcon from 'shared/components/icons/label.js'
+import BioIcon from 'shared/components/icons/bio.js'
+import UserIcon from 'shared/components/icons/user.js'
 
 const btnClasses = {
   dflt:
@@ -31,32 +39,54 @@ export const Choice = ({ val, update, t, current, children, bool = false }) => {
 }
 
 export const DoneIcon = ({ href }) => (
-  <div className="bg-warning">
-    <Link href={href} className="bg-warning">
-      <OkIcon />
-    </Link>
-  </div>
+  <Link href={`/welcome/${href}`} className="text-success hover:text-secondary">
+    <TopicIcon href={href} />
+  </Link>
+)
+export const TodoIcon = ({ href }) => (
+  <Link href={`/welcome/${href}`} className="text-secondary w-6 h-6 opacity-50 hover:opacity-100">
+    <TopicIcon href={href} />
+  </Link>
 )
 
-const TodoIcon = () => <CogIcon className="w-6 h-6 text-primary opacity-50" />
-const DoingIcon = () => <CogIcon className="w-6 h-6 text-secondary" />
+const TopicIcon = (props) => {
+  const Icon =
+    props.href === '' || props.href === 'control'
+      ? ControlIcon
+      : icons[props.href]
+      ? icons[props.href]
+      : CogIcon
 
-export const Icons = ({ done = [], todo = [] }) => (
+  return <Icon {...props} />
+}
+
+const DoingIcon = ({ href }) => <TopicIcon href={href} className="w-6 h-6 text-base-content" />
+
+export const Icons = ({ done = [], todo = [], current = '' }) => (
   <div className="m-auto flex flex-row items-center justify-center gap-2">
     {done.map((href) => (
       <DoneIcon href={href} key={href} />
     ))}
-    <DoingIcon />
+    <DoingIcon href={current} />
     {todo.map((href) => (
       <TodoIcon href={href} key={href} />
     ))}
   </div>
 )
 
+const icons = {
+  newsletter: NewsletterIcon,
+  units: UnitsIcon,
+  compare: CompareIcon,
+  username: LabelIcon,
+  bio: BioIcon,
+  img: UserIcon,
+}
+
 export const welcomeSteps = {
-  1: [],
-  2: ['newsletter', 'units'],
-  3: ['newsletter', 'units', 'compare', 'username'],
-  3: ['newsletter', 'units', 'compare', 'username', 'bio', 'pic'],
-  5: [],
+  1: [''],
+  2: ['', 'newsletter', 'units'],
+  3: ['', 'newsletter', 'units', 'compare', 'username'],
+  4: ['', 'newsletter', 'units', 'compare', 'username', 'bio', 'img'],
+  5: [''],
 }

@@ -2,32 +2,9 @@ import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import useBackend from 'site/hooks/useBackend.js'
 import Link from 'next/link'
-import { Choice, Icons } from '../shared.js'
+import { Choice, Icons, welcomeSteps } from '../shared.js'
 
 export const namespaces = ['control']
-
-const welcomeSteps = {
-  1: {
-    href: '/docs/guide/',
-    steps: 0,
-  },
-  2: {
-    href: '/welcome/newsletter',
-    steps: 3,
-  },
-  3: {
-    href: '/welcome/newsletter',
-    steps: 5,
-  },
-  4: {
-    href: '/welcome/newsletter',
-    steps: 7,
-  },
-  5: {
-    href: '/',
-    steps: 0,
-  },
-}
 
 export const ControlSettings = ({ app, title = false, welcome = false }) => {
   const backend = useBackend(app)
@@ -40,6 +17,9 @@ export const ControlSettings = ({ app, title = false, welcome = false }) => {
       if (result) setSelection(control)
     }
   }
+
+  const nextHref =
+    welcomeSteps[selection].length > 1 ? '/welcome/' + welcomeSteps[selection][1] : '/docs/guide'
 
   return (
     <>
@@ -63,20 +43,20 @@ export const ControlSettings = ({ app, title = false, welcome = false }) => {
       })}
       {welcome ? (
         <>
-          <Link href={welcomeSteps[selection].href} className="btn btn-primary w-full mt-12">
+          <Link href={nextHref} className="btn btn-primary w-full mt-12">
             {t('continue')}
           </Link>
-          {welcomeSteps[selection].steps ? (
+          {welcomeSteps[selection].length > 1 ? (
             <>
               <progress
                 className="progress progress-primary w-full mt-12"
-                value={100 / welcomeSteps[selection].steps}
+                value={100 / welcomeSteps[selection].length}
                 max="100"
               ></progress>
               <span className="pt-4 text-sm font-bold opacity-50">
-                1 / {welcomeSteps[selection].steps}
+                1 / {welcomeSteps[selection].length}
               </span>
-              <Icons done={[]} todo={[welcomeSteps[selection].href]} />
+              <Icons done={[]} todo={welcomeSteps[selection].slice(1)} current="" />
             </>
           ) : null}
         </>
