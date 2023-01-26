@@ -208,7 +208,6 @@ deployment page, under the __...__ three dots menu.
 
 Verce's free Hobby accounts come with
 100 GB of bandwidth and 100 hours of build time each month.
-For private usage.
 This should be at least 10-15x the amount you will actually use in
 a month, so do not worry about this.
 
@@ -218,5 +217,5 @@ top of the Dashboard page.
 - Or, [https://vercel.com/account/billing][vb] will show a summary
 of your usage.
 
-[vu]: https://vercel.com/dashboard/usage]
+[vu]: https://vercel.com/dashboard/usage
 [vb]: https://vercel.com/account/billing
