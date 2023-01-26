@@ -1,6 +1,6 @@
 ---
 title: Getting started with Vercel
-order: 15
+order: 14
 ---
 
 ## What is Vercel?
