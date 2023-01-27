@@ -1,6 +1,4 @@
 import Link from 'next/link'
-import OkIcon from 'shared/components/icons/ok.js'
-import NoIcon from 'shared/components/icons/no.js'
 import CogIcon from 'shared/components/icons/cog.js'
 import ControlIcon from 'shared/components/icons/control.js'
 import NewsletterIcon from 'shared/components/icons/newsletter.js'

@@ -4,9 +4,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 import Layout from 'site/components/layouts/bare'
 import Link from 'next/link'
-import { useState } from 'react'
 import AuthWrapper, { namespaces as authNs } from 'site/components/wrappers/auth/index.js'
-import Spinner from 'shared/components/icons/spinner.js'
 import ControlSettings, { namespaces as controlNs } from 'site/components/account/control/index.js'
 
 // Translation namespaces used on this page
@@ -15,8 +13,6 @@ const namespaces = [...controlNs, ...authNs]
 const WelcomePage = (props) => {
   const app = useApp(props)
   const { t } = useTranslation(namespaces)
-
-  const loadingClasses = app.loading ? 'opacity-50' : ''
 
   return (
     <Page app={app} title={t('title')} layout={Layout} footer={false}>

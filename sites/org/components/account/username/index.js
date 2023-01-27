@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import useBackend from 'site/hooks/useBackend.js'
 import Link from 'next/link'
-import { Choice, Icons, welcomeSteps } from '../shared.js'
+import { Icons, welcomeSteps } from '../shared.js'
 import OkIcon from 'shared/components/icons/ok.js'
 import NoIcon from 'shared/components/icons/no.js'
 
@@ -27,7 +27,7 @@ const UsernameSettings = ({ app, title = false, welcome = false }) => {
   }
 
   const save = async () => {
-    const result = await backend.updateAccount({ username })
+    await backend.updateAccount({ username })
   }
 
   const nextHref =

@@ -2,7 +2,6 @@ import { useTranslation } from 'next-i18next'
 
 export const namespaces = ['gdpr']
 
-const hClasses = 'text-left w-full'
 export const GdprProfileDetails = () => {
   const { t } = useTranslation(namespaces)
 

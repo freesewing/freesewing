@@ -7,7 +7,6 @@ import { useTranslation } from 'next-i18next'
 import Layout from 'site/components/layouts/bare'
 import Link from 'next/link'
 import { useState } from 'react'
-import { validateEmail, validateTld } from 'shared/utils.mjs'
 import WelcomeWrapper from 'site/components/wrappers/welcome.js'
 import Spinner from 'shared/components/icons/spinner.js'
 import { useRouter } from 'next/router'
@@ -61,8 +60,6 @@ const ConfirmSignUpPage = (props) => {
   const backend = useBackend(app)
   const { t } = useTranslation(namespaces)
   const router = useRouter()
-
-  const loadingClasses = app.loading ? 'opacity-50' : ''
 
   const [id, setId] = useState(false)
   const [pDetails, setPDetails] = useState(false)

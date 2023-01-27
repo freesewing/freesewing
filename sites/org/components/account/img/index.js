@@ -2,22 +2,12 @@ import { useState, useCallback } from 'react'
 import { useTranslation } from 'next-i18next'
 import useBackend from 'site/hooks/useBackend.js'
 import Link from 'next/link'
-import { Choice, Icons, welcomeSteps } from '../shared.js'
+import { Icons, welcomeSteps } from '../shared.js'
 import { useDropzone } from 'react-dropzone'
 
 export const namespaces = ['img']
 
-const Tab = ({ id, activeTab, setActiveTab, t }) => (
-  <button
-    className={`text-xl font-bold capitalize tab tab-bordered grow
-    ${activeTab === id ? 'tab-active' : ''}`}
-    onClick={() => setActiveTab(id)}
-  >
-    {t(id)}
-  </button>
-)
-
-const UsernameSettings = ({ app, title = false, welcome = false }) => {
+const ImgSettings = ({ app, title = false, welcome = false }) => {
   const backend = useBackend(app)
   const { t } = useTranslation(namespaces)
 
@@ -34,7 +24,7 @@ const UsernameSettings = ({ app, title = false, welcome = false }) => {
   const { getRootProps, getInputProps } = useDropzone({ onDrop })
 
   const save = async () => {
-    const result = await backend.updateAccount({ img })
+    await backend.updateAccount({ img })
   }
 
   const nextHref = '/docs/guide'
@@ -91,4 +81,4 @@ const UsernameSettings = ({ app, title = false, welcome = false }) => {
   )
 }
 
-export default UsernameSettings
+export default ImgSettings

@@ -1,4 +1,3 @@
-import { log } from '../utils/log.mjs'
 import { ConfirmationModel } from '../models/confirmation.mjs'
 
 export function ConfirmationsController() {}

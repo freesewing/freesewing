@@ -31,7 +31,7 @@ export const ControlSettings = ({ app, title = false, welcome = false }) => {
         if (selection === 5 && val < 4) return null
         else
           return (
-            <Choice val={val} t={t} update={update} current={selection}>
+            <Choice val={val} t={t} update={update} current={selection} key={val}>
               <span className="block text-lg leading-5">
                 {selection === 1 && val === 2 ? t('showMore') : t(`${val}t`)}
               </span>

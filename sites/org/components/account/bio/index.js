@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import useBackend from 'site/hooks/useBackend.js'
 import Link from 'next/link'
-import { Choice, Icons, welcomeSteps } from '../shared.js'
+import { Icons, welcomeSteps } from '../shared.js'
 import Popout from 'shared/components/popout.js'
 import Markdown from 'react-markdown'
 
@@ -25,7 +25,7 @@ const UsernameSettings = ({ app, title = false, welcome = false }) => {
   const [activeTab, setActiveTab] = useState('edit')
 
   const save = async () => {
-    const result = await backend.updateAccount({ bio })
+    await backend.updateAccount({ bio })
   }
 
   const nextHref =
@@ -49,9 +49,8 @@ const UsernameSettings = ({ app, title = false, welcome = false }) => {
             className="textarea textarea-bordered textarea-lg w-full"
             placeholder={t('placeholder')}
             onChange={(evt) => setBio(evt.target.value)}
-          >
-            {app.account.bio}
-          </textarea>
+            value={bio}
+          />
         ) : (
           <div className="text-left px-4 border w-full">
             <Markdown>{bio}</Markdown>

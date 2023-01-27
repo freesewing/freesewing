@@ -3,10 +3,7 @@ import useApp from 'site/hooks/useApp.js'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 import Layout from 'site/components/layouts/bare'
-import Link from 'next/link'
-import { useState } from 'react'
 import AuthWrapper, { namespaces as authNs } from 'site/components/wrappers/auth/index.js'
-import Spinner from 'shared/components/icons/spinner.js'
 import CompareSettings, { namespaces as compareNs } from 'site/components/account/compare/index.js'
 
 // Translation namespaces used on this page
@@ -15,8 +12,6 @@ const namespaces = [...compareNs, ...authNs]
 const ComparePage = (props) => {
   const app = useApp(props)
   const { t } = useTranslation(namespaces)
-
-  const loadingClasses = app.loading ? 'opacity-50' : ''
 
   return (
     <Page app={app} title={t('title')} layout={Layout} footer={false}>

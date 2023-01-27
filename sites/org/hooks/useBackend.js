@@ -95,7 +95,7 @@ function useBackend(app) {
     let result
     try {
       app.startLoading()
-      result = await api.post(`/available/username/jwt`, { username }, auth)
+      await api.post(`/available/username/jwt`, { username }, auth)
     } catch (err) {
       // 404 means user is not found, so the username is available
       if (err.response?.status === 404) return true
