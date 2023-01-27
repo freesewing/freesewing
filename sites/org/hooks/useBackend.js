@@ -92,7 +92,6 @@ function useBackend(app) {
    * Checks whether a username is available
    */
   backend.isUsernameAvailable = async (username) => {
-    let result
     try {
       app.startLoading()
       await api.post(`/available/username/jwt`, { username }, auth)

@@ -3,7 +3,6 @@ import useApp from 'site/hooks/useApp.js'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 import Layout from 'site/components/layouts/bare'
-import Link from 'next/link'
 import AuthWrapper, { namespaces as authNs } from 'site/components/wrappers/auth/index.js'
 import ControlSettings, { namespaces as controlNs } from 'site/components/account/control/index.js'
 
