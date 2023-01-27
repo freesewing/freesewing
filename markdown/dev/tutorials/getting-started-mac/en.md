@@ -3,8 +3,8 @@ title: Getting started on Mac
 order: 25
 ---
 
-In this tutorial, we will setup Node JS and initialize the FreeSewing
-development environment on a Mac system running OS X.
+In this tutorial, we will setup Node.js and initialize the FreeSewing
+development environment on a Mac system running macOS.
 
 <Tip>
 
@@ -15,4 +15,4 @@ application at `/Applications/Utilities/`.
 
 We'll cover the following steps:
 
-<ReadMore list />
+<ReadMore />

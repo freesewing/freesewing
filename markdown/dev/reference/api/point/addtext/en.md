@@ -10,7 +10,7 @@ text](/howtos/code/adding-text) for more details.
 
 ```js
 Point point.addText(
-  string text, 
+  string text,
   string className
 )
 ```
@@ -41,4 +41,3 @@ Point point.addText(
 ## Notes
 
 Remember to [use translation keys, not text](/guides/best-practices/use-translation-keys)
-

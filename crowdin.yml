@@ -6,3 +6,11 @@ files:
     translation: /packages/i18n/src/locales/%two_letters_code%/**/%original_file_name%
   - source: /markdown/org/**/en.md
     translation: /markdown/org/**/%two_letters_code%.md
+  - source: /sites/org/pages/**/*.en.yaml
+    translation: /sites/org/pages/**/*.%two_letters_code%.yaml
+  - source: /sites/org/components/**/*.en.yaml
+    translation: /sites/org/components/**/*.%two_letters_code%.yaml
+  - source: /sites/shared/components/**/*.en.yaml
+    translation: /sites/shared/components/**/*.%two_letters_code%.yaml
+  - source: /sites/backend/src/**/*.en.yaml
+    translation: /sites/backend/src/**/*.%two_letters_code%.yaml

@@ -2,21 +2,29 @@ import Markdown from 'react-markdown'
 import { formatMm } from 'shared/utils'
 import { Tab, Tabs } from '../mdx/tabs.js'
 
-export const Error = ({ err }) => (
-  <pre>
-    {err.stack
-      .split(/\n/g)
-      .slice(0, 5)
-      .map((l, i) => (
-        <code
-          key={`error-${i}`}
-          className={'block whitespace-pre-wrap' + (i > 0 ? ' break-all' : '')}
-        >
-          {l}
-        </code>
-      ))}
-  </pre>
-)
+export const Error = ({ err }) => {
+  // Include the error name and message info if it isn't already at the top
+  // of the error stack.
+  let stack = err.stack
+  if (!err.stack.startsWith(err.toString())) {
+    stack = err.toString() + '\n' + err.stack
+  }
+  return (
+    <pre>
+      {stack
+        .split(/\n/g)
+        .slice(0, 5)
+        .map((l, i) => (
+          <code
+            key={`error-${i}`}
+            className={'block whitespace-pre-wrap' + (i > 0 ? ' break-all' : '')}
+          >
+            {l}
+          </code>
+        ))}
+    </pre>
+  )
+}
 
 // Markdown wrapper to suppress creation of P tags
 const Md = ({ children }) => (
@@ -97,8 +105,6 @@ const StoreLogs = ({ logs, units }) => (
 )
 
 const Logs = (props) => {
-  const renderProps = props.draft.getRenderProps()
-
   return (
     <Tabs
       tabs={[

@@ -4,7 +4,7 @@ order: 120
 ---
 
 A pattern is a container for a bunch of parts. And parts are in turn a
-container for the the points, paths, and snippets of (a part of) your pattern.
+container for the points, paths, and snippets of (a part of) your pattern.
 Parts can be re-used and mixed and matched to create other patterns, a powerful
 concept to build a pattern library.
 

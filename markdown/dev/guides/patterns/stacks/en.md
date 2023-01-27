@@ -3,12 +3,12 @@ title: Stacks
 order: 110
 ---
 
-Stacks come into play when layouting a pattern. 
+Stacks come into play when laying out a pattern.
 The FreeSewing core library, by default, will handle the layout of a pattern
 for you by placing all parts next to each other in as small a space as
 possible.
 
-That is _typically_ what you want, but not always. For example, when sampling,
+That is _typically_ what you want, but not always. For example, when sampling
 you want parts to be stacked on top of each other:
 
 <Example settings="sample: { type: measurement, measurement: head }" withHead caption="A simple example of sampling the `head` measurement">
@@ -40,7 +40,7 @@ you want parts to be stacked on top of each other:
 ```
 </Example>
 
-Under the hood, sampling uses multiple sets of settings, and then uses stacks
+Under the hood, sampling uses multiple sets of settings and then uses stacks
 to place them on top of each other.  But this functionality is also available
 to patterns designers who want to use it.
 

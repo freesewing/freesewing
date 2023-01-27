@@ -15,7 +15,7 @@ A FreeSewing plugin can extend FreeSewing in 3 different ways:
 We have [a list of plugins](/reference/plugins/) that we maintain, but
 if you can't find what you're looking for, you can write your own plugin.
 
-If you plan on doing that, or if you would like to understand how plugins work,
+If you plan on doing that or if you would like to understand how plugins work,
 this guide is for you.
 
 We'll cover the following topics:

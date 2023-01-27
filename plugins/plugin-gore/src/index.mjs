@@ -8,7 +8,7 @@ export const plugin = {
       const from = so.from
       const gores = Number(so.gores)
       const radius = Number(so.radius) //radius of the sphere
-      const prefix = so.prefix
+      const prefix = so.prefix || 'gore'
       const extraLength = Number(so.extraLength) //the length of the straight section after a complete semisphere
 
       points[prefix + 'p1'] = from.shift(0, (radius * Math.PI) / 2 + extraLength)

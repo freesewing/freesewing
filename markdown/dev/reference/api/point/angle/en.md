@@ -25,8 +25,8 @@ float point.angle(Point pointB)
     .setText(
       points.sun.angle(points.moon)+"°",
       "text-sm fill-note center"
-    ) 
-  
+    )
+
   paths.line = new Path()
     .move(points.sun)
     .line(points.moon)
@@ -36,4 +36,3 @@ float point.angle(Point pointB)
 }
 ```
 </Example>
-

@@ -40,16 +40,17 @@ All store methods receive at least two arguments:
 ## Overwriting store methods
 
 You are allowed to overwrite existing store methods.
-As it happens, this is how you should implement a custom logging solution, but overwriting the logging methods under the store's `log` key,
+As it happens, this is how you should implement a custom logging solution,
+by overwriting the logging methods under the store's `log` key,
 
-However, the following methods cannot be overwritten:
+However, the following store methods cannot be overwritten:
 
-- `extend`
-- `get`
-- `push`
-- `set`
-- `setIfUnset`
-- `unset`
+- `extend()`
+- `get()`
+- `push()`
+- `set()`
+- `setIfUnset()`
+- `unset()`
 
 ## Return value
 

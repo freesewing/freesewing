@@ -5,21 +5,21 @@ module.exports = {
     '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
 
   'base-100': colors.neutral['900'],
-  'base-200': colors.neutral['700'],
+  'base-200': colors.neutral['800'],
   'base-300': colors.neutral['600'],
   'base-content': colors.neutral['300'],
 
-  primary: colors.violet['700'],
-  'primary-focus': colors.violet['600'],
+  primary: colors.violet['800'],
+  'primary-focus': colors.violet['700'],
   'primary-content': colors.violet['50'],
 
-  secondary: colors.sky['500'],
-  'secondary-focus': colors.sky['400'],
+  secondary: colors.sky['700'],
+  'secondary-focus': colors.sky['600'],
   'secondary-content': colors.sky['50'],
 
-  accent: colors.pink['500'],
-  'accent-focus': colors.pink['400'],
-  'accent-content': colors.pink['50'],
+  accent: colors.fuchsia['700'],
+  'accent-focus': colors.fuchsia['600'],
+  'accent-content': colors.fuchsia['50'],
 
   neutral: '#000000', // Dark as my soul
   'neutral-focus': colors.neutral['800'],

@@ -12,7 +12,7 @@ export const plugin = {
       let to = so.to
       let via = so.via
       let radius = so.radius
-      let prefix = so.prefix
+      let prefix = so.prefix || 'round'
       let angle1 = from.angle(via)
       let angle2 = via.angle(to)
       if ((Math.round(angle1) - Math.round(angle2)) % 90 !== 0)

@@ -3,9 +3,12 @@ import useApp from 'site/hooks/useApp.js'
 import mdxLoader from 'shared/mdx/loader'
 import MdxWrapper from 'shared/components/wrappers/mdx'
 import ReadMore from 'shared/components/mdx/read-more.js'
+import { jargon } from 'site/jargon.mjs'
+import Head from 'next/head'
 
-const DocsPage = ({ title, mdx }) => {
-  const app = useApp()
+const DocsPage = ({ title, mdx, bugsnag }) => {
+  const app = useApp({ bugsnag })
+  const fullTitle = title + ' - FreeSewing.org'
 
   // We don't need all MDX components here, just ReadMore
   const components = {
@@ -14,6 +17,9 @@ const DocsPage = ({ title, mdx }) => {
 
   return (
     <Page app={app} title={title}>
+      <Head>
+        <title>{fullTitle}</title>
+      </Head>
       <div className="w-full">
         <MdxWrapper mdx={mdx} app={app} components={components} />
       </div>
@@ -35,7 +41,7 @@ export default DocsPage
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticProps({ locale }) {
-  const { mdx, frontmatter } = await mdxLoader(locale, 'org', ['docs'])
+  const { mdx, frontmatter } = await mdxLoader(locale, 'org', ['docs'], jargon[locale])
   const { title = 'FIXME: Please give this page a title' } = frontmatter
 
   return {

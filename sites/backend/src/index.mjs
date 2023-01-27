@@ -17,13 +17,17 @@ import { encryption } from './utils/crypto.mjs'
 import { mfa } from './utils/mfa.mjs'
 // Email
 import { mailer } from './utils/email.mjs'
+// Swagger
+import swaggerUi from 'swagger-ui-express'
+import { openapi } from '../openapi/index.mjs'
 
 // Bootstrap
 const config = verifyConfig()
 const prisma = new PrismaClient()
 const app = express()
-app.use(express.json())
+app.use(express.json({ limit: '12mb' })) // Required for img upload
 app.use(express.static('public'))
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(openapi))
 
 const tools = {
   app,

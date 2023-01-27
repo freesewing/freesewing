@@ -5,11 +5,11 @@ import { banner } from '../../../scripts/banner.mjs'
 import dotenv from 'dotenv'
 dotenv.config()
 
+//const DBURL = process.env.BACKEND_DB_URL || 'file://./db.sqlite'
 const newDb = () => {
   // Say hi
   console.log(banner + '\n')
-  const db = process.env.BACKEND_DB_URL.slice(6)
-  console.log(db)
+  const db = process.env.BACKEND_DB_URL ? process.env.BACKEND_DB_URL.slice(6) : './db.sqlite'
   const schema = path.resolve('./prisma/schema.sqlite')
   try {
     if (fs.existsSync(db)) {

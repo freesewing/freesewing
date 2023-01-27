@@ -3,7 +3,7 @@ title: Adding points
 ---
 
 Points should be stored in the `points` key of the object passed to your part's
-draft method. The contructor for points is available in the `Point` key. You
+draft method. The constructor for points is available in the `Point` key. You
 can destructure them for easy access.
 
 <Example caption="An example of adding a point" tutorial>

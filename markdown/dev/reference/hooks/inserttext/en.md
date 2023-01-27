@@ -37,16 +37,16 @@ Let's use an example to clarify things:
 ```js
 points.example
   .addText("seamAllowance")
-  .addText(": 1cm")
+  .addText(": 1 cm")
 ```
 
 For the example point above, the `insertText` hook will end up being called 3 times:
 
 - First it will pass `seamAllowance` to the plugin
-- Then it will pass `: 1cm` to the plugin
-- Finally it will pass `seamAllowance : 1cm` to the plugin
+- Then it will pass `: 1 cm` to the plugin
+- Finally it will pass `seamAllowance : 1 cm` to the plugin
 
-Having the `insertText` hook only run once with `Seam allowance: 1cm` would be problematic because
+Having the `insertText` hook only run once with `Seam allowance: 1 cm` would be problematic because
 the seam allowance may differ, or perhaps we're using imperial units, and so on.
 
 Instead, you can (and should) divide your text into chunks that need translating, and chunks that do not.

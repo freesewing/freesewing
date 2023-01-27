@@ -54,7 +54,6 @@ describe('Pattern', () => {
         margin: 2,
         scale: 1,
         layout: true,
-        debug: false,
         options: {},
         absoluteOptions: {},
       }

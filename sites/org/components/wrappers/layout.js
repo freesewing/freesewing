@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router'
 import Header from 'site/components/header'
-import Footer from 'site/components/footer'
+import { Footer } from 'site/components/footer/index.js'
 import Search from 'site/components/search'
 
-const LayoutWrapper = ({ app, children = [], search, setSearch, noSearch = false }) => {
+const LayoutWrapper = ({ app, children = [], footer, search, setSearch, noSearch = false }) => {
   const startNavigation = () => {
     app.startLoading()
     // Force close of menu on mobile if it is open
@@ -42,7 +42,7 @@ const LayoutWrapper = ({ app, children = [], search, setSearch, noSearch = false
           <div className="fixed top-0 left-0 w-full min-h-screen bg-neutral z-20 bg-opacity-70"></div>
         </>
       )}
-      <Footer app={app} />
+      {footer && <Footer app={app} />}
     </div>
   )
 }

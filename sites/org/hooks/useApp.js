@@ -11,13 +11,30 @@ import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 
 /*
+ * Dumb method to generate a unique (enough) ID for submissions to bugsnag
+ */
+function errId() {
+  let result = ''
+  const characters = 'abcdefghijklmnopqrstuvwxyz0123456789'
+  const charactersLength = characters.length
+  for (let s = 0; s < 3; s++) {
+    for (let i = 0; i < 4; i++) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength))
+    }
+    if (s < 2) result += '-'
+  }
+
+  return result
+}
+
+/*
  * Helper method for a simple navigation item
  */
-const simpleNav = (term, t, lng, prefix='', order='') => ({
+const simpleNav = (term, t, lng, prefix = '', order = '') => ({
   __title: t(term, { lng }),
   __linktitle: t(term, { lng }),
-  __slug: prefix+term,
-  __order: order+t(term, { lng })
+  __slug: prefix + term,
+  __order: order + t(term, { lng }),
 })
 
 /*
@@ -63,14 +80,14 @@ const buildNavigation = (lang, t) => {
 /*
  * The actual hook
  */
-function useApp(full = true) {
-
+function useApp({ bugsnag }) {
   // Load translation method
   const locale = useRouter().locale
   const { t } = useTranslation()
 
   // Persistent state
-  const [account, setAccount] = useLocalStorage('account', { username: false })
+  const [account, setAccount, accountReady] = useLocalStorage('account', { username: false })
+  const [token, setToken] = useLocalStorage('token', null)
   const [theme, setTheme] = useTheme()
 
   // React State
@@ -87,9 +104,7 @@ function useApp(full = true) {
    */
   const updateNavigation = (path, content) => {
     if (typeof path === 'string') {
-      path = (path.slice(0,1) === '/')
-        ? path.slice(1).split('/')
-        : path.split('/')
+      path = path.slice(0, 1) === '/' ? path.slice(1).split('/') : path.split('/')
     }
     setNavigation(set(navigation, path, content))
   }
@@ -97,12 +112,29 @@ function useApp(full = true) {
   /*
    * Helper method to get title from navigation structure
    */
-  const getTitle = slug => get(navigation, slug).__title
+  const getTitle = (slug) => get(navigation, slug).__title
 
   /*
    * Helper method to construct breadcrumb from navigation structure
    */
-  const getBreadcrumb = slug => ([ get(navigation, slug).__title, `/${slug}` ])
+  const getBreadcrumb = (slug) => [get(navigation, slug).__title, `/${slug}`]
+
+  const loadHelpers = {
+    startLoading: () => setLoading(true),
+    stopLoading: () => setLoading(false),
+    loading,
+    setLoading,
+  }
+
+  const error = (err) => {
+    const id = errId
+    bugsnag.notify(err, (evt) => {
+      evt.setUser(account.username ? account.username : '__visitor')
+      evt.context = id
+    })
+
+    return id
+  }
 
   return {
     // Static vars
@@ -112,6 +144,9 @@ function useApp(full = true) {
     locale,
 
     // State
+    account,
+    accountReady,
+    token,
     loading,
     navigation,
     primaryMenu,
@@ -119,12 +154,17 @@ function useApp(full = true) {
     theme,
 
     // State setters
+    setAccount,
+    setToken,
     setLoading,
     setNavigation,
     setPrimaryMenu,
     setSlug,
     setTheme,
-    startLoading: () => { setLoading(true); setPrimaryMenu(false) }, // Always close menu when navigating
+    startLoading: () => {
+      setLoading(true)
+      setPrimaryMenu(false)
+    }, // Always close menu when navigating
     stopLoading: () => setLoading(false),
     updateNavigation,
 
@@ -134,8 +174,14 @@ function useApp(full = true) {
     // Navigation
     getTitle,
     getBreadcrumb,
+
+    // Loading state helpers
+    loadHelpers,
+
+    // Bugsnag wrapper
+    error,
+    errId,
   }
 }
 
 export default useApp
-

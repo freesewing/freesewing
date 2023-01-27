@@ -6,11 +6,13 @@ import Layout from 'site/components/layouts/bare'
 import { useTranslation } from 'next-i18next'
 import { Icons } from 'shared/components/navigation/primary'
 
+const title = 'Welcome to the FreeSewing Lab'
+
 const HomePage = () => {
   const app = useApp()
   const { t } = useTranslation(['lab'])
   return (
-    <Page app={app} title="Welcome to FreeSewing.dev" layout={Layout}>
+    <Page app={app} title="{title}" layout={Layout}>
       <Head>
         <meta property="og:title" content="FreeSewing.dev" key="title" />
         <meta property="og:type" content="article" key="type" />
@@ -31,6 +33,7 @@ const HomePage = () => {
         <meta property="og:url" content="https://freesewing.dev/" key="url" />
         <meta property="og:locale" content="en_US" key="locale" />
         <meta property="og:site_name" content="freesewing.dev" key="site" />
+        <title>{title}</title>
       </Head>
       <section
         style={{

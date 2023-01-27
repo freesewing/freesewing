@@ -29,7 +29,7 @@ const myPlugin = {
 All macros receive two arguments:
 
 - `so`: A plain object holding configuration object passed to the macro
-- `props`: The same object as passed to the Part.draft()` method that you can destructure
+- `props`: The same object as passed to the [`Part.draft()`](/reference/api/part/draft) method that you can destructure
 
 <Note>
 ###### Macros take only 1 argument

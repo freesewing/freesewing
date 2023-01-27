@@ -29,8 +29,7 @@ i18n:
 models:
   test: 'npx mocha tests/*.test.mjs'
 new-design:
-  i18n-only: 'SITE="new-design/shared" node ../../sites/shared/prebuild/i18n-only.mjs'
-  build: '!'
+  18n-only: 'SITE="new-design/shared" node ../../sites/shared/prebuild/i18n-only.mjs'
   wbuild: '!'
   lint: "npx eslint 'lib/*.mjs'"
   mbuild: '!'
@@ -59,6 +58,7 @@ backend:
   rmdb: 'node ./scripts/rmdb.mjs'
   test: 'npx mocha --require mocha-steps tests/index.mjs'
   vbuild: 'VERBOSE=1 node build.mjs'
+  prebuild: 'node scripts/prebuild.mjs'
 
 dev:
   build: &nextBuild 'node --experimental-json-modules ../../node_modules/next/dist/bin/next build'
@@ -96,6 +96,6 @@ org:
   start: *nextStart
 
 sanity:
+  dev: 'sanity dev'
   start: 'sanity start'
-  test: 'sanity check'
   build: 'sanity build -y'

@@ -32,10 +32,10 @@ export function peopleRoutes(tools) {
   )
 
   // Update person
-  app.put('/people/:id/jwt', passport.authenticate(...jwt), (req, res) =>
+  app.patch('/people/:id/jwt', passport.authenticate(...jwt), (req, res) =>
     People.update(req, res, tools)
   )
-  app.put('/people/:id/key', passport.authenticate(...bsc), (req, res) =>
+  app.patch('/people/:id/key', passport.authenticate(...bsc), (req, res) =>
     People.update(req, res, tools)
   )
 

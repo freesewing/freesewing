@@ -42,7 +42,7 @@ When `snap` holds a number, the option will be _snapped_ to a
 multiple of this value.
 
 In the example below, the absolute value of this option will be set to a multiple of `7`
-(so one of `0mm`, `7mm`, `14mm`, `21mm`, `28mm`, `35mm`, `42mm`, ...).
+(so one of `0 mm`, `7 mm`, `14 mm`, `21 mm`, `28 mm`, `35 mm`, `42 mm`, ...).
 
 ```js
 myOption: {
@@ -68,7 +68,7 @@ When snap holds an array of numbers, the option will be _snapped_ to one of
 the numbers unless it's further away than half the distance to its closest neighbor.
 
 In the example below, if the absolute value returned by `toAbs()` is in the
-region of influence -- in this example between `4.5mm` and `69.5mm` --  the nearest snap value
+region of influence -- in this example between `4.5 mm` and `69.5 mm` --  the nearest snap value
 will be used. If instead it is outside the region of influence, the result of
 `toAbs()` will be uses as-is.
 
@@ -94,8 +94,8 @@ In the example below, the value of [settings.units](/reference/settings/units) w
 determine which list of snap values gets used.
 
 Then, if the absolute value returned by `toAbs()` is in the
-region of influence -- in this example between `4.5mm` and `69.5mm` for metric
-and between `12.7mm` and `88.9mm` for imperial --  the nearest snap value
+region of influence -- in this example between `4.5 mm` and `69.5 mm` for metric
+and between `12.7 mm` and `88.9 mm` for imperial --  the nearest snap value
 will be used. If instead it is outside the region of influence, the result of
 `toAbs()` will be used as-is.
 
@@ -138,8 +138,8 @@ We have a few different ways we can approach this:
 We use a percentage option based on a vertical measurement, like
 `waistToFloor`.
 
-The elastic width people end up with is something like `34.12mm` for
-user A and `27.83mm` for user B.
+The elastic width people end up with is something like `34.12 mm` for
+user A and `27.83 mm` for user B.
 
 Elastic of that width is not for sale in the store, so that's not great.
 
@@ -178,7 +178,7 @@ under the hood, let's first agree on terminology:
 - The **percentage value** is the value passed by the user for the option.
   Its value always represents a percentage. For example `0.5` for 50%.
 - The **millimeter value** is the result of feeding the **percentage value** to
-  the `toAbs()` method. Its value always represents millimeters. For example `12mm`.
+  the `toAbs()` method. Its value always represents millimeters. For example `12 mm`.
 - The **snap values** are the values provided by the snap configuration.
   Each of the values always represents millimeters (even for imperial users).
 

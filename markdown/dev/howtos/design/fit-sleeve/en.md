@@ -15,13 +15,13 @@ This pattern is rather common, and we will unpack an example from Bent below.
 
 Before we dive in, here's a few things to keep in mind:
 
-- In Javascript, you can create a function within your function and call it
+- In JavaScript, you can create a function within your function and call it
 - Bent extends Brian which sets both the `frontArmholeLength` and `backArmholeLength` values in the store with the length of those seams
 - We need to match the length of the sleevecap + sleeve cap ease to the length of the front and back armhole
 
 Here's how you can handle this in code:
 
-- We create a method that does teh actual drafting of our sleevecap
+- We create a method that does the actual drafting of our sleevecap
 - We use a `tweak` value to influence the process, we start with a value of `1`
 - We check the length after every attempt, and adjust the `tweak` value
 
@@ -66,7 +66,7 @@ export default function (part) {
     // If we're short, increase the tweak factor
     else tweak = tweak * 1.02 
   } while (Math.abs(delta) > 2 && runs < 25) 
-  // Keep doing this until we're off by less than 2mm or we tried 25 times
+  // Keep doing this until we're off by less than 2 mm or we tried 25 times
 ```
 
 A few things that are important:
@@ -74,4 +74,4 @@ A few things that are important:
 - We check to see how close we are by using `Math.abs(delta)` which gives us the absolute value of our delta
 - We guard against an endless loop by keeping track of the runs and giving up after 25
 - We multiply by `0.99` and `1.02` to respectively decrease and increase our `tweak` factor.
-  This assymetric approach avoids that we end up ping-ponging around our target value and never land somewhere in the middle
+  This asymmetric approach avoids that we end up ping-ponging around our target value and never land somewhere in the middle

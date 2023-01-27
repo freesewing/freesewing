@@ -5,7 +5,7 @@ title: Add seam allowance and/or hem allowance
 Adding seam allowance is something that has to happen in every pattern.
 We might also have a hem where we need to add more seam allowance, or hem allowance.
 
-When doing this, it's best to split up your path so in those sections that share the same
+When doing this, it's best to split up your path into sections that share the same
 seam allowance.
 
 In the example below we have two such paths:

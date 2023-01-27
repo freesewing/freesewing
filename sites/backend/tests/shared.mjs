@@ -70,7 +70,6 @@ export const setup = async () => {
       console.log('Failed at account confirmation request', err)
       process.exit()
     }
-    console.log(JSON.stringify(result.data, null ,2))
     store[acc].token = result.data.token
     store[acc].username = result.data.account.username
     store[acc].id = result.data.account.id
@@ -103,7 +102,7 @@ export const setup = async () => {
           `${store.config.api}/people/jwt`,
           {
             name: `This is ${name} name`,
-            name: `These are ${name} notes`,
+            notes: `These are ${name} notes`,
             measies: people[name],
           },
           {
@@ -123,6 +122,6 @@ export const setup = async () => {
   return { chai, config, expect, store }
 }
 
-export const teardown = async function (store) {
-  console.log(store)
+export const teardown = async function (/*store*/) {
+  //console.log(store)
 }

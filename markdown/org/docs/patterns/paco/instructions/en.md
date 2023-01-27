@@ -40,9 +40,6 @@ you’ve never made welt pockets before, you’ll be fine.
 
 </Tip>
 
-<!--- One tricky bit, this documentation is for double welts, but this is I think a single welt?
-Does it need a note to that effect? --->
-
 ## Step 2: Prepare the front pockets
 
 Your pockets are cut from a lining material, which can save on weight and bulk, but also means
@@ -292,7 +289,6 @@ Refold the waistband, turning half the waistband to the inside. Pin so that the 
 inside is just below the seam joining the waistband to the pants, and pin in place around the waistband.
 From the outside, stitch in the ditch, catching the inner waistband as you go.
 
-<!--- Probably put a note here about stitching in the ditch? --->
 
 ![Waistband sewn with enclosed seams](step13c.svg)
 
@@ -381,7 +377,6 @@ hold your elastic in place and help keep it from folding or twisting. Make sure 
 evenly as you sew, so that it gathers the fabric evenly. (If you sew without stretching the elastic,
 you risk lumpy gathers and a leg opening too narrow to get your foot through.)
 
-<!--- You could also do a zig-zag stitch here, but I think straight probably looks nicer? --->
 
 If you like the look, you can also sew more than one line of stitches, evenly spaced between the top
 and bottom of the cuff.
@@ -416,4 +411,3 @@ will be easier to maneuver through the fabric, and it will pull the drawstring a
 
 You did it! Way to go!
 
-<!--- Maybe we want to put a fun gif here? --->

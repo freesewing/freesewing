@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import ThemePicker from 'shared/components/theme-picker.js'
 import LocalePicker from 'shared/components/locale-picker.js'
-import DesignPicker from 'site/components/design-picker.js'
 import CloseIcon from 'shared/components/icons/close.js'
 import MenuIcon from 'shared/components/icons/menu.js'
 import HelpIcon from 'shared/components/icons/help.js'
@@ -66,11 +65,11 @@ const Header = ({ app }) => {
                 <DocsIcon />
                 <span className="ml-2">{t('docs')}</span>
               </a>
-              <Link href="/support">
-                <a role="button" className={btnClasses}>
+              <Link href="/support" role="button" className={btnClasses}>
+                <>
                   <HelpIcon />
                   <span className="ml-2">{t('support')}</span>
-                </a>
+                </>
               </Link>
             </div>
           </div>

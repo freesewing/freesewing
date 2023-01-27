@@ -13,5 +13,5 @@ string path.asPathString()
 
 ## Notes
 
-This method is mostly aimed at people looking to implement their own rendering 
+This method is mostly aimed at people looking to implement their own rendering
 methods, or integrate with SVG processing tools.

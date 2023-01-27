@@ -32,10 +32,10 @@ export function patternsRoutes(tools) {
   )
 
   // Update pattern
-  app.put('/patterns/:id/jwt', passport.authenticate(...jwt), (req, res) =>
+  app.patch('/patterns/:id/jwt', passport.authenticate(...jwt), (req, res) =>
     Patterns.update(req, res, tools)
   )
-  app.put('/patterns/:id/key', passport.authenticate(...bsc), (req, res) =>
+  app.patch('/patterns/:id/key', passport.authenticate(...bsc), (req, res) =>
     Patterns.update(req, res, tools)
   )
 

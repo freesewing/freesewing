@@ -1157,7 +1157,7 @@ Pattern.prototype.__pack = function () {
     for (const [name, part] of Object.entries(this.parts[set])) {
       const stackName =
         this.settings[set].stackPrefix +
-        (typeof part.stack === 'function' ? part.stack(this.settings, name) : part.stack)
+        (typeof part.stack === 'function' ? part.stack(this.settings[set], name) : part.stack)
       if (typeof this.stacks[stackName] === 'undefined')
         this.stacks[stackName] = this.__createStackWithContext(stackName, set)
       this.stacks[stackName].addPart(part)

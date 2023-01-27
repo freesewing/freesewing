@@ -21,7 +21,7 @@ const translations = {
   tips: {
     en: (
       <Popout tip compact>
-        Edit the files in the <strong>design</strong> folder, and we'll auto-update your design
+        Edit the files in the <strong>design</strong> folder, and we&apos;ll auto-update your design
       </Popout>
     ),
     nl: (
@@ -33,7 +33,7 @@ const translations = {
   },
 }
 
-const HomePage = (props) => {
+const HomePage = () => {
   const app = useApp()
   const router = useRouter()
   const { t } = useTranslation(['common', 'patrons', 'locales', 'themes'])
@@ -44,8 +44,8 @@ const HomePage = (props) => {
         <FsIcon className="w-96 m-auto" />
         <h1>FreeSewing</h1>
         <h4>{translations.sade[app.locale]}</h4>
-        <Link href="/design">
-          <a className="btn btn-primary btn-lg h-20 my-8 mb-12">
+        <Link href="/design" className="btn btn-primary btn-lg h-20 my-8 mb-12">
+          <>
             <span role="image" className="text-4xl px-6">
               👉
             </span>
@@ -53,16 +53,19 @@ const HomePage = (props) => {
             <span role="image" className="text-4xl px-6">
               👈
             </span>
-          </a>
+          </>
         </Link>
         {translations.tips[app.locale]}
       </div>
       <div className="flex flex-row flex-wrap gap-4 w-full max-w-4xl m-auto justify-center">
         {router.locales.map((locale) => (
-          <Link href={router.asPath} locale={locale} key={locale}>
-            <a className="btn btn-ghost text-base-content hover:bg-base-200">
-              <span className="text-base-content">{t(`locales:${locale}`)}</span>
-            </a>
+          <Link
+            href={router.asPath}
+            locale={locale}
+            key={locale}
+            className="btn btn-ghost text-base-content hover:bg-base-200"
+          >
+            <span className="text-base-content">{t(`locales:${locale}`)}</span>
           </Link>
         ))}
       </div>

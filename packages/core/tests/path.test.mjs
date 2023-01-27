@@ -201,6 +201,16 @@ describe('Path', () => {
     expect(joint.ops.length).to.equal(4)
   })
 
+  it('Should join paths that have noop operations', () => {
+    const line = new Path().move(new Point(0, 0)).line(new Point(0, 40)).noop('test1')
+    const curve = new Path()
+      .move(new Point(123, 456))
+      .curve(new Point(0, 40), new Point(123, 34), new Point(230, 4))
+      .noop('test2')
+    const joint = curve.join(line)
+    expect(joint.ops.length).to.equal(6)
+  })
+
   it('Should throw error when joining a closed paths', () => {
     const line = new Path().move(new Point(0, 0)).line(new Point(0, 40))
     const curve = new Path()

@@ -28,14 +28,14 @@ Returns the Point object at the edge of the path you specify. Edge must be one o
   points.CCp1 = new Point(50, -30)
   points.D = new Point(-60, 90)
   points.E = new Point(90, 190)
-  
+
   paths.demo = new Path()
     .move(points.A)
     .line(points.B)
     .curve(points.BCp2, points.CCp1, points.C)
     .curve(points.E, points.D, points.A)
     .close()
-  
+
   for (let i of [
     "topLeft",
     "topRight",

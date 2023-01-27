@@ -3,7 +3,8 @@ title: Aan de slag
 order: 100
 ---
 
-Hi there 👋 and welcome to freesewing.org 🙂  
+Hi there 👋 and welcome to freesewing.org 🙂
+
 Reading this guide will take about 10 minutes of your time now, to save you a bunch of questions later, and make sure you get the most out of our website.
 
 ##### Wat zullen we uitleggen
@@ -14,7 +15,7 @@ Reading this guide will take about 10 minutes of your time now, to save you a bu
 - We'll go over [how you can configure your patterns][9] with design and pattern options
 - Finally, we'll tell you [where you can get help][10] if you get stuck.
 
-Klinkt goed? Laten we dan direct gaan duiken in:
+Sounds good? Then let's dive right in:
 
 <ReadMore list />
 

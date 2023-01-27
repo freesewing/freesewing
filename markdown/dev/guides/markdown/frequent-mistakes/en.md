@@ -1,5 +1,5 @@
 ---
-title: Frequent mistakes
+title: Avoiding frequent mistakes
 order: zzz
 ---
 
@@ -8,10 +8,10 @@ Some things to keep in mind when working in Markdown are:
 ## Use remark-jargon for glossary terms
 
 There is no need to add a _glossary_ section to documentation.
-We use a plugin called [remark-jargon][rj] to explain terms.
+We use a plugin called [rehype-jargon][rj] to explain terms.
 Information can be found at the link.
 
-[rj]: https://github.com/freesewing/freesewing/blob/develop/packages/remark-jargon/README.md
+[rj]: https://github.com/freesewing/freesewing/blob/develop/packages/rehype-jargon/README.md
 
 ## Let lists be lists
 
@@ -23,18 +23,15 @@ documentation look clean and professional. You can use a Markdown editor
 like [StackEdit](https://stackedit.io/) to preview your text.
 
 <Note>
-Github itself also allows working in Markdown and will give you a handy preview!
+GitHub itself also allows working in Markdown and will give you a handy preview!
 </Note>  
 
-If you get lost or have a question about how to do something, feel free to come
-ask on the Discord. We've all had to learn Markdown at some point and would be
-delighted to pass knowledge on.
+## Create links with meaningful link text
 
-## Create meaningful links
-
-When adding links please do not link them using a structure like:
-Link [here][yt]. Instead put the link under the relevant term.
-See first list item for an example.
+When adding links please do not create them using a structure like:
+"Link [here][yt]". Instead use relevant terms for the link text.
+An example of meaningful link text is this link to a
+[famous 80s pop song video][yt].
 
 [yt]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
@@ -86,18 +83,31 @@ An example of what not to do:
 4. sew collar stand to neckline
 ```
 
-## Be mindful of whitespace
+## Be mindful of white space and whitespace characters
 
-Markdown sytax around white space is a little unintuitive. If you want a
-paragraph break but no white space you need to add two spaces at the end of
-your line. I've found it helpful to experiment and keep checking the preview
-to see how things look. Not all the empty lines and whitespace in your
-document will render in the preview.
+Markdown syntax for white space in text is a little unintuitive.
 
-## Using custom components
+- If you want a line break after a line but no white space between it and
+the next line, you need to add two space characters at the end of the
+first line.
 
-When you're using custom components you want to leave an empty line before
-and after your component.
+- If you want a paragraph break with white space between the two lines,
+you need to add at least one blank line after the first line.
+
+- If you don't have two space characters at the end of the first line or
+any blank lines between it and the second line, then no white space or
+line break will be generated.
+Instead, the two lines will be part of the same continuous paragraph in the
+resulting page even though they are on two separate lines in your document.
+
+It may be helpful to experiment and keep checking the preview or resulting
+page to see how things look. Not all the empty lines and white space in your
+document will render in the preview or result.
+
+## Using custom tag components
+
+When you're using custom tag components you want to leave an empty line before
+and after the tags.
 
 ```markdown
 Lorem ipsum dolor sit amet,
@@ -109,7 +119,7 @@ consectetur adipisci elit,
 sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
 ```
 
-If you're using any markdown syntax within a custom component you want to also
+If you're using any Markdown syntax within a custom component you want to also
 leave an empty line at the start and end of your component.
 
 ```markdown
@@ -126,6 +136,11 @@ sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
 
 ## Don't be shy to ask a friend
 
-Learning a new language can be intimidating, whether its Javascript, Norse or
-Markdown but everyone in the Freesewing community is glad you're here and
+Learning a new language can be intimidating, whether its JavaScript, Norse, or
+Markdown, but everyone in the Freesewing community is glad you're here and
 helping us make the site even more awesome.
+
+If you get lost or have a question about how to do something, feel free to come
+[ask on the Discord](https://discord.freesewing.org/).
+We've all had to learn Markdown at some point and would be
+delighted to pass knowledge on.

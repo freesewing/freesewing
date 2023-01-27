@@ -17,7 +17,7 @@ In other words, this will:
 - Add `deltaX` to the point's X-coordinate
 - Add `deltaY` to the point's Y-coordinate
 
-Positive values for `deltaX` will move the point to the right. 
+Positive values for `deltaX` will move the point to the right.
 Positive values for `deltaY` will move the point downwards.
 
 ## Example
@@ -34,10 +34,10 @@ Positive values for `deltaY` will move the point downwards.
     )
     .attr("data-text-dy", -6)
     .attr("data-text-lineheight", 6)
-  
+
   snippets.A = new Snippet("x", points.A)
   snippets.B = new Snippet("x", points.B)
-  
+
   macro("ld", {
     from: points.A,
     to: points.B,
@@ -49,4 +49,3 @@ Positive values for `deltaY` will move the point downwards.
 }
 ```
 </Example>
-

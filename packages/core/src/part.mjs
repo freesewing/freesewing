@@ -79,6 +79,16 @@ Part.prototype.attr = function (name, value, overwrite = false) {
 }
 
 /**
+ * Gets a free ID to use in the part
+ *
+ * @param {string} prefix - An optional prefix to apply to the ID
+ * @return {string} id - A free ID to use
+ */
+Part.prototype.getId = function (prefix = '') {
+  return this.__getIdClosure()(prefix)
+}
+
+/**
  * Hide the part
  *
  * @return {Part} part - The Part instance

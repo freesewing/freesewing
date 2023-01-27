@@ -44,5 +44,3 @@ bool point.sitsRoughlyOn(Point check)
 The difference between this method and
 [`Point.sitsOn()`](/reference/api/point/sitson/) is that this one rounds things
 down to the nearest integer (thus mm) before checking.
-
-
