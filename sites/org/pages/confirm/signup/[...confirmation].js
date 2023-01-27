@@ -35,7 +35,7 @@ export const SignupLinkExpired = () => {
   )
 }
 
-const Checkbox = ({ value, name, setter, label, children = null }) => (
+const Checkbox = ({ value, setter, label, children = null }) => (
   <div
     className={`form-control p-4 hover:cursor-pointer rounded border-l-8 my-2
     ${value ? 'border-success bg-success' : 'border-error bg-error'}

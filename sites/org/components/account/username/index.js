@@ -13,15 +13,12 @@ const UsernameSettings = ({ app, title = false, welcome = false }) => {
   const { t } = useTranslation(namespaces)
   const [username, setUsername] = useState(app.account.username)
   const [available, setAvailable] = useState(true)
-  const [checking, setChecking] = useState(false)
 
   const update = async (evt) => {
     evt.preventDefault()
     if (evt.target.value !== username) {
       setUsername(evt.target.value)
-      setChecking(true)
       const free = await backend.isUsernameAvailable(evt.target.value)
-      setChecking(false)
       setAvailable(free)
     }
   }

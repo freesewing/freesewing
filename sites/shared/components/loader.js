@@ -1,6 +1,6 @@
 import Spinner from 'shared/components/icons/spinner.js'
 
-const Loader = ({}) => (
+const Loader = () => (
   <div
     className={`
     fixed top-0 left-0 right-0 w-screen h-screen

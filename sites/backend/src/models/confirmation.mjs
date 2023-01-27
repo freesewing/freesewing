@@ -1,5 +1,4 @@
 import { log } from '../utils/log.mjs'
-import { hash } from '../utils/crypto.mjs'
 
 export function ConfirmationModel(tools) {
   this.config = tools.config

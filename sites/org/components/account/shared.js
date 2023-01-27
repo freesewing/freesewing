@@ -22,7 +22,7 @@ const btnClasses = {
 const spanClasses =
   'p-4 w-8 h-8 shrink-0 rounded-full text-center p-0 py-2 bg-secondary text-secondary-content'
 
-export const Choice = ({ val, update, t, current, children, bool = false }) => {
+export const Choice = ({ val, update, current, children, bool = false }) => {
   const active = val === current
 
   return (
