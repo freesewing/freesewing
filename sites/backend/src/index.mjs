@@ -25,7 +25,7 @@ import { openapi } from '../openapi/index.mjs'
 const config = verifyConfig()
 const prisma = new PrismaClient()
 const app = express()
-app.use(express.json())
+app.use(express.json({ limit: '12mb' })) // Required for img upload
 app.use(express.static('public'))
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(openapi))
 

@@ -324,6 +324,7 @@ org:
     'lodash.orderby': *_orderby
     'lodash.set': *_set
     'next': *next
+    'react-dropzone': '14.2.3'
     'react-hotkeys-hook': *reactHotkeysHook
     'react-instantsearch-dom': *reactInstantsearchDom
     'react-markdown': *reactMarkdown

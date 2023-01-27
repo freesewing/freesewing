@@ -1,4 +1,3 @@
-//import bodyParser from 'body-parser'
 import cors from 'cors'
 import http from 'passport-http'
 import jwt from 'passport-jwt'
@@ -14,8 +13,6 @@ const levelFromRole = (role) => {
 }
 
 function loadExpressMiddleware(app) {
-  // FIXME: Is this still needed in FreeSewing v3?
-  //app.use(bodyParser.urlencoded({ extended: true }))
   app.use(cors())
 }
 

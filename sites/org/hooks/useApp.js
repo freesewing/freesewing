@@ -86,7 +86,7 @@ function useApp({ bugsnag }) {
   const { t } = useTranslation()
 
   // Persistent state
-  const [account, setAccount] = useLocalStorage('account', { username: false })
+  const [account, setAccount, accountReady] = useLocalStorage('account', { username: false })
   const [token, setToken] = useLocalStorage('token', null)
   const [theme, setTheme] = useTheme()
 
@@ -145,6 +145,7 @@ function useApp({ bugsnag }) {
 
     // State
     account,
+    accountReady,
     token,
     loading,
     navigation,

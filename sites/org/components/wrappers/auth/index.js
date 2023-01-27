@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
+import Loader from 'shared/components/loader.js'
 
 export const namespaces = ['auth']
 
@@ -84,6 +85,7 @@ const ConsentLacking = ({ t }) => (
 
 const AuthWrapper = ({ children, app }) => {
   const { t } = useTranslation(namespaces)
+  if (!app.accountReady) return <Loader />
   if (!app.token || !app.account?.username) return <AuthRequired t={t} />
   if (app.account.status !== 1) {
     if (app.account.status === 0) return <AccountInactive t={t} />
