@@ -86,9 +86,9 @@ function useApp({ bugsnag }) {
   const { t } = useTranslation()
 
   // Persistent state
-  const [account, setAccount] = useLocalStorage('account', { username: false })
+  const [account, setAccount, accountReady] = useLocalStorage('account', { username: false })
+  const [token, setToken] = useLocalStorage('token', null)
   const [theme, setTheme] = useTheme()
-  const [username, setUsername] = useLocalStorage('username', false)
 
   // React State
   const [primaryMenu, setPrimaryMenu] = useState(false)
@@ -129,7 +129,7 @@ function useApp({ bugsnag }) {
   const error = (err) => {
     const id = errId
     bugsnag.notify(err, (evt) => {
-      evt.setUser(username ? username : '__visitor')
+      evt.setUser(account.username ? account.username : '__visitor')
       evt.context = id
     })
 
@@ -145,21 +145,22 @@ function useApp({ bugsnag }) {
 
     // State
     account,
+    accountReady,
+    token,
     loading,
     navigation,
     primaryMenu,
     slug,
     theme,
-    username,
 
     // State setters
     setAccount,
+    setToken,
     setLoading,
     setNavigation,
     setPrimaryMenu,
     setSlug,
     setTheme,
-    setUsername,
     startLoading: () => {
       setLoading(true)
       setPrimaryMenu(false)

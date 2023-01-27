@@ -5,7 +5,7 @@ const opacity = {
   lgbtq: 80,
 }
 
-const SusiWrapper = ({ theme, children }) => (
+const SusiWrapper = ({ theme, children, error = false }) => (
   <section
     style={{
       backgroundImage: `url('https://static.freesewing.org/img/splash/${theme || 'light'}.jpg')`,
@@ -16,7 +16,9 @@ const SusiWrapper = ({ theme, children }) => (
   >
     <div className="flex flex-col items-center justify-center h-screen mt-4 lg:mt-12 max-w-md m-auto pb-32">
       <div
-        className={`bg-neutral bg-opacity-${opacity[theme]} text-neutral-content rounded-none sm:rounded-lg py-4 px-8 drop-shadow`}
+        className={`${error ? 'bg-error' : 'bg-neutral'} bg-opacity-${
+          opacity[theme]
+        } text-neutral-content rounded-none sm:rounded-lg py-4 px-8 drop-shadow`}
       >
         {children}
       </div>

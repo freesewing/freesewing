@@ -41,6 +41,7 @@ model User {
   id            Int       @id @default(autoincrement())
   apikeys       Apikey[]
   bio           String    @default("")
+  compare       Boolean   @default(true)
   confirmations Confirmation[]
   consent       Int       @default(0)
   control       Int       @default(1)

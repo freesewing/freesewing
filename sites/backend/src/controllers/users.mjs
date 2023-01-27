@@ -86,9 +86,9 @@ UsersController.prototype.updateMfa = async (req, res, tools) => {
  */
 UsersController.prototype.isUsernameAvailable = async (req, res, tools) => {
   const User = new UserModel(tools)
-  await User.find(req.body)
+  const available = await User.isLusernameAvailable(req.body.username.toLowerCase())
 
-  if (User.exists)
+  if (!available)
     User.setResponse(200, false, {
       result: 'success',
       username: req.body?.username,

@@ -1,23 +1,30 @@
-compliant: Freesewing.org respects your privacy and your rights. We apply the General Data Protection Regulation (GDPR) of the European Union (EU).
+clickHere: Click here to give your consent
+createLimitedAccount: Create account with limited consent
+createAccount: Create account
+compliant: "FreeSewing respects your privacy and your rights. We adhere to the toughest privacy and security law in the world: the General Data Protection Regulation (GDPR) of the European Union (EU)."
 consent: Consent
-consentForModelData: Consent for model data
+consentForPeopleData: Consent for people data
 consentForProfileData: Consent for profile data
 consentGiven: Consent given
 consentNotGiven: Consent not given
-consentWhyAnswer: Under the GDPR, processing of your personal data requires your consent — in other words, your permission.
+consentWhyAnswer: Under the GDPR, processing of your personal data requires granular consent — in other words, we need your permission for the various ways we handle your data.
 createMyAccount: Create my account
 furtherReading: Further reading
-modelQuestion: Do you give your consent to process your model data?
-modelWarning: Revoking this consent will lock you out of all your model data, as well as disable functionality that depends on it.
-modelWhatAnswer: For each model their <b>measurements</b> and <b>breasts settings</b>.
-modelWhatAnswerOptional: 'Optional: A model <b>picture</b> and the <b>name</b> that you give your model.'
-modelWhatQuestion: What is model data?
-modelWhyAnswer: 'To draft <b>made-to-measure sewing patterns</b>, we need <b>body measurements</b>.'
+hideDetails: Hide details
 noConsentNoAccount: Without this consent, we cannot create your account
-noConsentNoPatterns: Without this consent, you cannot create any patterns
+noConsentNoPatterns: Without this consent, you cannot create any made-to-measure patterns
 noIDoNot: 'No, I do not'
 openDataInfo: This data is used to study and understand the human form in all its shapes, so we can get better sewing patterns, and better fitting garments. Even though this data is anonymized, you have the right to object to this.
 openDataQuestion: Share anonymized measurements as open data
+peopleQuestion: Do you give your consent to process your people data?
+peopleWarning: Revoking this consent will lock you out of all your people data, as well as disable functionality that depends on it.
+peopleWhatAnswer: For each person their <b>measurements</b>.
+peopleWhatAnswerOptional: 'Optional: A <b>picture</b> and the <b>name</b> that you give a person.'
+peopleWhatQuestion: What is people data?
+peopleWhyAnswer: 'To draft <b>made-to-measure sewing patterns</b>, we need <b>body measurements</b>.'
+privacyMatters: Privacy matters
+privacyNotice: FreeSewing Privacy Notice
+processing: Processing
 profileQuestion: Do you give your consent to process your profile data?
 profileShareAnswer: '<b>No</b>, never.'
 profileTimingAnswer: '<b>12 months</b> after your last login, or until you <b>remove</b> your account or <b>revoke</b> this consent.'
@@ -30,6 +37,7 @@ readMore: For more information, please read our privacy notice.
 readRights: For more information, please read up on your rights.
 revokeConsent: Revoke consent
 shareQuestion: Do we share it with others?
+showDetails: Show details
 timingQuestion: How long do we keep it?
 whatYouNeedToKnow: What you need to know
 whyQuestion: Why do we need it?

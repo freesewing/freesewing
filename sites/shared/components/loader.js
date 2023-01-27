@@ -1,6 +1,6 @@
-import Spinner from 'shared/components/spinner'
+import Spinner from 'shared/components/icons/spinner.js'
 
-const Loader = ({}) => (
+const Loader = () => (
   <div
     className={`
     fixed top-0 left-0 right-0 w-screen h-screen
@@ -8,13 +8,13 @@ const Loader = ({}) => (
     `}
   >
     <div
-      className="m-auto lightbox bg-neutral bg-opacity-20 p-2 mask mask-squircle"
+      className="m-auto lightbox bg-neutral bg-opacity-0 p-4 mask mask-squircle"
       style={{
         maxHeight: 'calc(100vh - 6rem)',
         maxWidth: 'calc(100vw - 6rem)',
       }}
     >
-      <Spinner className="w-36 h-36" />
+      <Spinner className="h-12 w-12 animate-spin text-primary" />
     </div>
   </div>
 )

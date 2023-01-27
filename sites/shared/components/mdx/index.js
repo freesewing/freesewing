@@ -9,6 +9,8 @@ import Examples from './examples.js'
 import Method from './http-method.js'
 import StatusCode from './status-code.js'
 
+const Fixme = () => <p>FIXME</p>
+
 const mdxCustomComponents = (app = false) => ({
   // Custom components
   Method,
@@ -33,6 +35,8 @@ const mdxCustomComponents = (app = false) => ({
   Tabs,
   Example: (props) => <Example {...props} app={app} />,
   Examples: (props) => <Examples {...props} app={app} />,
+  PatternDocs: Fixme,
+  PatternOptions: Fixme,
 })
 
 export default mdxCustomComponents
