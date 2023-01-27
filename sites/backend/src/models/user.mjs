@@ -578,7 +578,7 @@ UserModel.prototype.asAccount = function () {
     createdAt: this.record.createdAt,
     email: this.clear.email,
     github: this.clear.github,
-    img: this.record.img,
+    img: this.clear.img,
     imperial: this.record.imperial,
     initial: this.clear.initial,
     language: this.record.language,
