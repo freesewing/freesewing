@@ -183,7 +183,9 @@ const SearchBox = (props) => {
 
 const CustomSearchBox = connectSearchBox(SearchBox)
 
-const Search = (props) => {
+export const ns = ['search']
+
+export const Search = (props) => {
   const [active, setActive] = useState(0)
   useHotkeys('esc', () => props.setSearch(false))
   useHotkeys('up', () => {
@@ -209,5 +211,3 @@ const Search = (props) => {
     </InstantSearch>
   )
 }
-
-export default Search

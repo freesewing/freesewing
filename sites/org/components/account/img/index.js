@@ -5,11 +5,11 @@ import Link from 'next/link'
 import { Icons, welcomeSteps } from '../shared.js'
 import { useDropzone } from 'react-dropzone'
 
-export const namespaces = ['img']
+export const ns = ['img']
 
 const ImgSettings = ({ app, title = false, welcome = false }) => {
   const backend = useBackend(app)
-  const { t } = useTranslation(namespaces)
+  const { t } = useTranslation(ns)
 
   const [img, setImg] = useState(false)
 

@@ -1,7 +1,9 @@
 import { useRouter } from 'next/router'
-import Header from 'site/components/header'
-import { Footer } from 'site/components/footer/index.js'
-import Search from 'site/components/search'
+import { Header, ns as headerNs } from 'site/components/header/index.mjs'
+import { Footer, ns as footerNs } from 'site/components/footer/index.mjs'
+import { Search, ns as searchNs } from 'site/components/search'
+
+export const ns = [...new Set([...headerNs, ...footerNs, ...searchNs])]
 
 const LayoutWrapper = ({ app, children = [], footer, search, setSearch, noSearch = false }) => {
   const startNavigation = () => {

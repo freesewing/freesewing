@@ -44,17 +44,13 @@ const social = {
   },
 }
 
-/*
- * This named export lets people know
- * what translation namespaces this component relies on
- */
-export const namespaces = ['footer']
+export const ns = ['footer']
 
 /*
  * Named exports are better than default exports
  */
 export const Footer = ({ app }) => {
-  const { t } = useTranslation(namespaces)
+  const { t } = useTranslation(ns)
 
   return (
     <footer className="bg-neutral">

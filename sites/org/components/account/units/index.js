@@ -4,11 +4,11 @@ import useBackend from 'site/hooks/useBackend.js'
 import Link from 'next/link'
 import { Choice, Icons, welcomeSteps } from '../shared.js'
 
-export const namespaces = ['units']
+export const ns = ['units']
 
 const UnitsSettings = ({ app, title = false, welcome = false }) => {
   const backend = useBackend(app)
-  const { t } = useTranslation(namespaces)
+  const { t } = useTranslation(ns)
   const [selection, setSelection] = useState(app.account?.imperial === true ? 'imperial' : 'metric')
 
   const update = async (val) => {

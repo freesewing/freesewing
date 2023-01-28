@@ -4,11 +4,11 @@ import useBackend from 'site/hooks/useBackend.js'
 import Link from 'next/link'
 import { Choice, Icons, welcomeSteps } from '../shared.js'
 
-export const namespaces = ['compare']
+export const ns = ['compare']
 
 export const CompareSettings = ({ app, title = false, welcome = false }) => {
   const backend = useBackend(app)
-  const { t } = useTranslation(namespaces)
+  const { t } = useTranslation(ns)
   const [selection, setSelection] = useState(app.account?.compare ? 'yes' : 'no')
 
   const update = async (val) => {

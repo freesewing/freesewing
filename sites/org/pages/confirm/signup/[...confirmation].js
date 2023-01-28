@@ -14,12 +14,12 @@ import Popout from 'shared/components/popout.js'
 import {
   GdprProfileDetails,
   GdprMeasurementsDetails,
-  namespaces as gdprNs,
+  ns as gdprNs,
 } from 'site/components/gdpr/details.js'
 import Robot from 'shared/components/robot/index.js'
 
 // Translation namespaces used on this page
-const namespaces = [...gdprNs]
+const ns = Array.from(new Set([...gdprNs, 'confirm', 'locales', 'themes']))
 
 export const SignupLinkExpired = () => {
   const { t } = useTranslation('confirm')
@@ -58,7 +58,7 @@ const Checkbox = ({ value, setter, label, children = null }) => (
 const ConfirmSignUpPage = (props) => {
   const app = useApp(props)
   const backend = useBackend(app)
-  const { t } = useTranslation(namespaces)
+  const { t } = useTranslation(ns)
   const router = useRouter()
 
   const [id, setId] = useState(false)
@@ -232,7 +232,7 @@ export default ConfirmSignUpPage
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale)),
+      ...(await serverSideTranslations(locale, ns)),
     },
   }
 }

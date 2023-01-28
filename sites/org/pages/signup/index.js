@@ -91,7 +91,6 @@ const SignUpPage = (props) => {
           ) : (
             <>
               <Robot pose="ohno" className="m-auto w-56 text-neutral-content" embed />
-              <p className="text-neutral-content text-lg">{t('err1')}</p>
               <p className="text-neutral-content text-lg">{t('err2')}</p>
               <p className="text-neutral-content text-lg">{t('err3')}</p>
               <div className="flex flex-row gap-4 items-center justify-center p-8">

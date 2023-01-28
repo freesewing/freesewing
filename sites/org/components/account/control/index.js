@@ -4,11 +4,11 @@ import useBackend from 'site/hooks/useBackend.js'
 import Link from 'next/link'
 import { Choice, Icons, welcomeSteps } from '../shared.js'
 
-export const namespaces = ['control']
+export const ns = ['control']
 
 export const ControlSettings = ({ app, title = false, welcome = false }) => {
   const backend = useBackend(app)
-  const { t } = useTranslation(namespaces)
+  const { t } = useTranslation(ns)
   const [selection, setSelection] = useState(app.account.control || 2)
 
   const update = async (control) => {

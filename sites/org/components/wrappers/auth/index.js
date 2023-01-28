@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import Loader from 'shared/components/loader.js'
 
-export const namespaces = ['auth']
+export const ns = ['auth']
 
 const Wrap = ({ children }) => (
   <div className="m-auto max-w-lg text-center mt-24 p-8">{children}</div>
@@ -84,7 +84,7 @@ const ConsentLacking = ({ t }) => (
 )
 
 const AuthWrapper = ({ children, app }) => {
-  const { t } = useTranslation(namespaces)
+  const { t } = useTranslation(ns)
   if (!app.accountReady) return <Loader />
   if (!app.token || !app.account?.username) return <AuthRequired t={t} />
   if (app.account.status !== 1) {

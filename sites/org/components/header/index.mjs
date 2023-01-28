@@ -1,13 +1,15 @@
 import { useState, useEffect } from 'react'
-import ThemePicker from 'shared/components/theme-picker.js'
-import LocalePicker from 'shared/components/locale-picker.js'
+import ThemePicker, { ns as themeNs } from 'shared/components/theme-picker/index.js'
+import LocalePicker, { ns as localeNs } from 'shared/components/locale-picker/index.js'
 import CloseIcon from 'shared/components/icons/close.js'
 import MenuIcon from 'shared/components/icons/menu.js'
 import SearchIcon from 'shared/components/icons/search.js'
 import Ribbon from 'shared/components/ribbon.js'
 import { WordMark } from 'shared/components/wordmark.js'
 
-const Header = ({ app, setSearch }) => {
+export const ns = [...new Set([...themeNs, ...localeNs])]
+
+export const Header = ({ app, setSearch }) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0)
   const [show, setShow] = useState(true)
 
@@ -94,5 +96,3 @@ const Header = ({ app, setSearch }) => {
     </header>
   )
 }
-
-export default Header

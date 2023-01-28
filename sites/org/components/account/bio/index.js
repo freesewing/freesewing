@@ -6,7 +6,7 @@ import { Icons, welcomeSteps } from '../shared.js'
 import Popout from 'shared/components/popout.js'
 import Markdown from 'react-markdown'
 
-export const namespaces = ['bio']
+export const ns = ['bio']
 
 const Tab = ({ id, activeTab, setActiveTab, t }) => (
   <button
@@ -20,7 +20,7 @@ const Tab = ({ id, activeTab, setActiveTab, t }) => (
 
 const UsernameSettings = ({ app, title = false, welcome = false }) => {
   const backend = useBackend(app)
-  const { t } = useTranslation(namespaces)
+  const { t } = useTranslation(ns)
   const [bio, setBio] = useState(app.account.bio)
   const [activeTab, setActiveTab] = useState('edit')
 

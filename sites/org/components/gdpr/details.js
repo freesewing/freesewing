@@ -1,9 +1,9 @@
 import { useTranslation } from 'next-i18next'
 
-export const namespaces = ['gdpr']
+export const ns = ['gdpr']
 
 export const GdprProfileDetails = () => {
-  const { t } = useTranslation(namespaces)
+  const { t } = useTranslation(ns)
 
   return (
     <div className="border-l-4 ml-1 pl-4 my-2 opacity-80">
@@ -28,7 +28,7 @@ export const GdprProfileDetails = () => {
 }
 
 export const GdprMeasurementsDetails = () => {
-  const { t } = useTranslation(namespaces)
+  const { t } = useTranslation(ns)
 
   return (
     <div className="border-l-4 ml-1 pl-4 my-2 opacity-80">

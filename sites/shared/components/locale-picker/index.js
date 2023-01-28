@@ -1,12 +1,16 @@
 import { Fragment } from 'react'
-import themes from 'shared/themes/index.js'
-import ThemeIcon from 'shared/components/icons/theme.js'
+import LocaleIcon from 'shared/components/icons/i18n.js'
+import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 import { Popover, Transition } from '@headlessui/react'
 import DownIcon from 'shared/components/icons/down'
+import Link from 'next/link'
 
-const ThemePicker = ({ app, iconOnly = false, bottom = false }) => {
-  const { t } = useTranslation(['themes', 'common'])
+export const ns = ['locales']
+
+const LocalePicker = ({ iconOnly = false, bottom = false }) => {
+  const { t } = useTranslation(ns)
+  const router = useRouter()
 
   return (
     <Popover className="relative">
@@ -15,8 +19,8 @@ const ThemePicker = ({ app, iconOnly = false, bottom = false }) => {
           <Popover.Button
             className={`h-12 group border-0 inline-flex items-center px-3 text-base text-neural-content hover:bg-neutral-focus`}
           >
-            <ThemeIcon />
-            {!iconOnly && <span className="ml-4 font-medium capitalize">{t(`common:theme`)}</span>}
+            <LocaleIcon />
+            {!iconOnly && <span className="ml-4 font-medium capitalize">{t(router.locale)}</span>}
             <DownIcon className={`ml-2 h-5 w-5 ${bottom ? 'rotate-180' : ''}`} aria-hidden="true" />
           </Popover.Button>
           <Transition
@@ -35,15 +39,19 @@ const ThemePicker = ({ app, iconOnly = false, bottom = false }) => {
             >
               <div className="overflow-hidden rounded-lg shadow-lg">
                 <div className="relative grid gap-2 bg-base-100 p-4 grid-cols-1">
-                  {Object.keys(themes).map((theme) => (
-                    <button
-                      data-theme={theme}
-                      key={theme}
-                      onClick={() => app.setTheme(theme)}
-                      className="btn btn-primary"
+                  {router.locales.map((locale) => (
+                    <Link
+                      href={
+                        locale === router.defaultLocale
+                          ? `/${router.asPath}`
+                          : `/${locale}/${router.asPath}`
+                      }
+                      key={locale}
+                      locale={locale}
+                      className="btn btn-neutral"
                     >
-                      {t(`${theme}Theme`)}
-                    </button>
+                      {t(locale)}
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -55,4 +63,4 @@ const ThemePicker = ({ app, iconOnly = false, bottom = false }) => {
   )
 }
 
-export default ThemePicker
+export default LocalePicker

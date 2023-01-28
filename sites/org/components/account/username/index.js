@@ -6,11 +6,11 @@ import { Icons, welcomeSteps } from '../shared.js'
 import OkIcon from 'shared/components/icons/ok.js'
 import NoIcon from 'shared/components/icons/no.js'
 
-export const namespaces = ['username']
+export const ns = ['username']
 
 const UsernameSettings = ({ app, title = false, welcome = false }) => {
   const backend = useBackend(app)
-  const { t } = useTranslation(namespaces)
+  const { t } = useTranslation(ns)
   const [username, setUsername] = useState(app.account.username)
   const [available, setAvailable] = useState(true)
 
