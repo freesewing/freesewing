@@ -1,6 +1,6 @@
 import PDFDocument from 'pdfkit/js/pdfkit.standalone'
 import SVGtoPDF from 'svg-to-pdfkit'
-import { path as logoPath } from 'shared/components/icons/freesewing.js'
+import { logoPath } from 'shared/components/icons.mjs'
 
 /** an svg of the logo to put on the cover page */
 const logoSvg = `<svg viewBox="0 0 25 25">

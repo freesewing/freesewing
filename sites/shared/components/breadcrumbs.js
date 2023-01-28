@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import FreeSewingIcon from 'shared/components/icons/freesewing.js'
+import FreeSewingIcon from 'shared/components/icons.mjs'
 
 const Breadcrumbs = ({ crumbs = [], title }) =>
   crumbs ? (

@@ -1,9 +1,6 @@
 import PageSizePicker from './pagesize-picker'
 import OrientationPicker from './orientation-picker'
-import PrintIcon from 'shared/components/icons/print'
-import RightIcon from 'shared/components/icons/right'
-import ClearIcon from 'shared/components/icons/clear'
-import ExportIcon from 'shared/components/icons/export'
+import { PrintIcon, RightIcon, ClearIcon, ExportIcon } from 'shared/components/icons.mjs'
 import { useTranslation } from 'next-i18next'
 
 const PrintLayoutSettings = (props) => {

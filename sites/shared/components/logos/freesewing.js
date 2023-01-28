@@ -1,5 +1,5 @@
 import React from 'react'
-import { path } from 'shared/components/icons/freesewing.js'
+import { logoPath } from 'shared/components/icons/freesewing.js'
 import colors from 'tailwindcss/colors'
 
 const strokes = {
@@ -20,7 +20,7 @@ const Logo = ({ className = 'w-20 h-20', theme = 'light', stroke = false }) => {
   return (
     <svg {...svgProps}>
       <defs>
-        <path id="react-logo" d={path} />
+        <path id="react-logo" d={logoPath} />
       </defs>
       <use
         xlinkHref="#react-logo"

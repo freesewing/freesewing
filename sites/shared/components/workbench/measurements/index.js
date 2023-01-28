@@ -1,8 +1,10 @@
 import React, { useMemo, useEffect, useState } from 'react'
 import MeasurementInput from '../inputs/measurement.js'
 import { adult, doll, giant } from '@freesewing/models'
-import WomenswearIcon from 'shared/components/icons/womenswear.js'
-import MenswearIcon from 'shared/components/icons/menswear.js'
+import {
+  CisFemalIcon as WomenswearIcon,
+  CisMaleIcon as MenswearIcon,
+} from 'shared/components/icons.mjs'
 import { useTranslation } from 'next-i18next'
 import Setting from '../menu/core-settings/setting'
 import { settings } from '../menu/core-settings/index'

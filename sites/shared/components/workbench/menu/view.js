@@ -1,4 +1,4 @@
-import MenuIcon from 'shared/components/icons/menu.js'
+import { MenuIcon } from 'shared/components/icons.mjs'
 import { linkClasses, Chevron } from 'shared/components/navigation/primary.js'
 import { useTranslation } from 'next-i18next'
 import { defaultGist } from 'shared/hooks/useGist'
@@ -23,12 +23,14 @@ const View = (props) => {
     },
     {
       name: 'printingLayout',
-      title: t('layoutThing', { thing: props.design.designConfig.data.name }) + ': ' + t('forPrinting'),
+      title:
+        t('layoutThing', { thing: props.design.designConfig.data.name }) + ': ' + t('forPrinting'),
       onClick: () => props.updateGist(['_state', 'view'], 'printingLayout', true),
     },
     {
       name: 'cuttingLayout',
-      title: t('layoutThing', { thing: props.design.designConfig.data.name }) + ': ' + t('forCutting'),
+      title:
+        t('layoutThing', { thing: props.design.designConfig.data.name }) + ': ' + t('forCutting'),
       onClick: () => props.updateGist(['_state', 'view'], 'cuttingLayout', true),
     },
     {

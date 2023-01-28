@@ -1,9 +1,8 @@
 import { Fragment } from 'react'
 import themes from 'shared/themes/index.js'
-import ThemeIcon from 'shared/components/icons/theme.js'
+import { ThemeIcon, DownIcon } from 'shared/components/icons.mjs'
 import { useTranslation } from 'next-i18next'
 import { Popover, Transition } from '@headlessui/react'
-import DownIcon from 'shared/components/icons/down'
 
 export const ns = ['themes']
 

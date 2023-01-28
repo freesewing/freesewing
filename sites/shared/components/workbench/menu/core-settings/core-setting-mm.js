@@ -1,16 +1,16 @@
 import { useState } from 'react'
 import { formatMm } from 'shared/utils'
-import ClearIcon from 'shared/components/icons/clear'
+import { ClearIcon } from 'shared/components/icons.mjs'
 import { useTranslation } from 'next-i18next'
 
-const CoreSettingMm = props => {
+const CoreSettingMm = (props) => {
   const { t } = useTranslation(['app', 'settings'])
   const { dflt, min, max } = props
   const val = props.gist?.[props.setting]
 
   const [value, setValue] = useState(val)
 
-  const handleChange = evt => {
+  const handleChange = (evt) => {
     const newVal = parseFloat(evt.target.value)
 
     if (newVal === dflt) reset()
@@ -24,7 +24,6 @@ const CoreSettingMm = props => {
     props.updateGist([props.setting], props.dflt)
   }
 
-
   return (
     <div className="py-4 mx-6 border-l-2 pl-2">
       <p className="m-0 p-0 px-2 mb-2 text-base-content opacity-60 italic">
@@ -33,15 +32,15 @@ const CoreSettingMm = props => {
       <div className="flex flex-row justify-between">
         <span
           className="opacity-50"
-          dangerouslySetInnerHTML={{__html: formatMm(min, props.gist.units)}}
+          dangerouslySetInnerHTML={{ __html: formatMm(min, props.gist.units) }}
         />
         <span
-          className={`font-bold ${val===dflt ? 'text-secondary-focus' : 'text-accent'}`}
-          dangerouslySetInnerHTML={{__html: formatMm(val, props.gist.units)}}
+          className={`font-bold ${val === dflt ? 'text-secondary-focus' : 'text-accent'}`}
+          dangerouslySetInnerHTML={{ __html: formatMm(val, props.gist.units) }}
         />
         <span
           className="opacity-50"
-          dangerouslySetInnerHTML={{__html: formatMm(max, props.gist.units)}}
+          dangerouslySetInnerHTML={{ __html: formatMm(max, props.gist.units) }}
         />
       </div>
       <input

@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import ClearIcon from 'shared/components/icons/clear.js'
-import EditIcon from 'shared/components/icons/edit.js'
+import { ClearIcon, EditIcon } from 'shared/components/icons.mjs'
 import { useTranslation } from 'next-i18next'
 
-const EditCount = props => (
+const EditCount = (props) => (
   <div className="form-control mb-2 w-full">
     <label className="label">
       <span className="label-text text-base-content">{props.min}</span>
@@ -24,13 +23,13 @@ const EditCount = props => (
   </div>
 )
 
-
-const DesignOptionCount = props => {
+const DesignOptionCount = (props) => {
   const { t } = useTranslation(['app'])
   const { count, max, min } = props.design.patternConfig.options[props.option]
-  const val = (typeof props.gist?.options?.[props.option] === 'undefined')
-    ? count
-    : props.gist.options[props.option]
+  const val =
+    typeof props.gist?.options?.[props.option] === 'undefined'
+      ? count
+      : props.gist.options[props.option]
 
   const [value, setValue] = useState(val)
   const [editCount, setEditCount] = useState(false)
@@ -48,27 +47,24 @@ const DesignOptionCount = props => {
   return (
     <div className="py-4 mx-6 border-l-2 pl-2">
       <div className="flex flex-row justify-between">
-        {editCount
-          ? <EditCount
-              value={value}
-              handleChange={handleChange}
-              min={min}
-              max={max}
-              setEditCount={setEditCount}
-              t={t}
-            />
-          : (
-            <>
-              <span className="opacity-50">{min}</span>
-              <span className={
-                `font-bold ${val===count ? 'text-secondary' : 'text-accent'}`}
-              >
-                {val}
-              </span>
-              <span className="opacity-50">{max}</span>
-            </>
-          )
-        }
+        {editCount ? (
+          <EditCount
+            value={value}
+            handleChange={handleChange}
+            min={min}
+            max={max}
+            setEditCount={setEditCount}
+            t={t}
+          />
+        ) : (
+          <>
+            <span className="opacity-50">{min}</span>
+            <span className={`font-bold ${val === count ? 'text-secondary' : 'text-accent'}`}>
+              {val}
+            </span>
+            <span className="opacity-50">{max}</span>
+          </>
+        )}
       </div>
       <input
         type="range"
@@ -97,10 +93,7 @@ const DesignOptionCount = props => {
             title={t('editThing', { thing: '#' })}
             className={`
               btn btn-ghost btn-xs hover:text-secondary-focus
-              ${editCount
-                ? 'text-accent'
-                : 'text-secondary'
-              }
+              ${editCount ? 'text-accent' : 'text-secondary'}
             `}
             onClick={() => setEditCount(!editCount)}
           >

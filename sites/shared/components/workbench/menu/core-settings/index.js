@@ -1,4 +1,4 @@
-import SettingsIcon from 'shared/components/icons/settings.js'
+import { SettingsIcon } from 'shared/components/icons.mjs'
 import { Chevron } from 'shared/components/navigation/primary.js'
 import Setting from './setting.js'
 import { Ul, Details, TopSummary, TopSumTitle } from '../index.js'
@@ -19,7 +19,7 @@ export const settings = {
   complete: {
     dflt: false,
   },
-  only: { },
+  only: {},
   locale: {
     list: ['de', 'en', 'es', 'fr', 'nl'],
   },
@@ -40,15 +40,15 @@ export const settings = {
     list: ['react', 'svg'],
     titles: {
       react: '<Draft /> (React)',
-      svg: '@freesewing/core (SVG)'
-    }
+      svg: '@freesewing/core (SVG)',
+    },
   },
   debug: {
     dflt: false,
   },
 }
 
-const CoreSettings = props => {
+const CoreSettings = (props) => {
   const { t } = useTranslation(['app'])
 
   return (
@@ -58,7 +58,7 @@ const CoreSettings = props => {
         <Chevron />
       </TopSummary>
       <Ul>
-        {Object.keys(settings).map(setting => (
+        {Object.keys(settings).map((setting) => (
           <Setting key={setting} setting={setting} config={settings[setting]} {...props} />
         ))}
       </Ul>

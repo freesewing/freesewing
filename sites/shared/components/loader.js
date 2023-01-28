@@ -1,4 +1,4 @@
-import Spinner from 'shared/components/icons/spinner.js'
+import Spinner from 'shared/components/spinner.js'
 
 const Loader = () => (
   <div

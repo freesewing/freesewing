@@ -1,13 +1,13 @@
-import ClearIcon from 'shared/components/icons/clear.js'
+import { ClearIcon } from 'shared/components/icons.mjs'
 import orderBy from 'lodash.orderby'
 import { useTranslation } from 'next-i18next'
 
-const CoreSettingOnly = props => {
+const CoreSettingOnly = (props) => {
   const { t } = useTranslation(['app', 'parts', 'settings'])
   const list = props.draft.config.draftOrder
-  const partNames = list.map(part => ({ id: part, name: t(`parts:${part}`) }))
+  const partNames = list.map((part) => ({ id: part, name: t(`parts:${part}`) }))
 
-  const togglePart = part => {
+  const togglePart = (part) => {
     const parts = props.gist.only || []
     const newParts = new Set(parts)
     if (newParts.has(part)) newParts.delete(part)
@@ -27,19 +27,25 @@ const CoreSettingOnly = props => {
       </p>
       <div className="flex flex-row">
         <div className="grow">
-          {orderBy(partNames, ['name'], ['asc']).map(part => (
+          {orderBy(partNames, ['name'], ['asc']).map((part) => (
             <button
               key={part.id}
               onClick={() => togglePart(part.id)}
               className={`
                 mr-1 mb-1 text-left text-lg w-full hover:text-secondary-focus px-2
-                ${props.gist?.only && props.gist.only.indexOf(part.id) !== -1 && 'font-bold text-secondary-focus'}
+                ${
+                  props.gist?.only &&
+                  props.gist.only.indexOf(part.id) !== -1 &&
+                  'font-bold text-secondary-focus'
+                }
               `}
             >
-              <span className={`
+              <span
+                className={`
                 text-3xl mr-2 inline-block p-0 leading-3
                 translate-y-3
-              `}>
+              `}
+              >
                 <>&deg;</>
               </span>
               {part.name}
@@ -62,5 +68,3 @@ const CoreSettingOnly = props => {
 }
 
 export default CoreSettingOnly
-
-

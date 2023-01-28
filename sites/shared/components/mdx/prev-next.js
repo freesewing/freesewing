@@ -1,8 +1,7 @@
 import get from 'lodash.get'
 import orderBy from 'lodash.orderby'
 import Link from 'next/link'
-import LeftIcon from 'shared/components/icons/left.js'
-import RightIcon from 'shared/components/icons/right.js'
+import { LeftIcon, RightIcon } from 'shared/components/icons.mjs'
 
 // helper method to order nav entries
 const order = (obj) => orderBy(obj, ['__order', '__title'], ['asc', 'asc'])

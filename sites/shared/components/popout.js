@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import CloseIcon from 'shared/components/icons/close.js'
+import { CloseIcon } from 'shared/components/icons.mjs'
 
 const colors = {
   comment: 'secondary',

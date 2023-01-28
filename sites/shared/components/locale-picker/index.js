@@ -1,9 +1,8 @@
 import { Fragment } from 'react'
-import LocaleIcon from 'shared/components/icons/i18n.js'
+import { LocaleIcon, DownIcon } from 'shared/components/icons.mjs'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 import { Popover, Transition } from '@headlessui/react'
-import DownIcon from 'shared/components/icons/down'
 import Link from 'next/link'
 
 export const ns = ['locales']

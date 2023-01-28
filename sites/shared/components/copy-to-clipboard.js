@@ -1,6 +1,6 @@
 import ReactDOMServer from 'react-dom/server'
 import { useState } from 'react'
-import CopyIcon from 'shared/components/icons/copy.js'
+import { CopyIcon } from 'shared/components/icons.mjs'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 
 const strip = (html) =>

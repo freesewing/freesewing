@@ -1,16 +1,18 @@
 import Link from 'next/link'
 import orderBy from 'lodash.orderby'
-import RssIcon from 'shared/components/icons/rss.js'
-import TutorialIcon from 'shared/components/icons/tutorial.js'
-import GuideIcon from 'shared/components/icons/guide.js'
-import HelpIcon from 'shared/components/icons/help.js'
-import DocsIcon from 'shared/components/icons/docs.js'
-import DesignIcon from 'shared/components/icons/design.js'
-import BoxIcon from 'shared/components/icons/box.js'
-import CogIcon from 'shared/components/icons/cog.js'
-import UserIcon from 'shared/components/icons/user.js'
-import CommunityIcon from 'shared/components/icons/community.js'
-import ShowcaseIcon from 'shared/components/icons/camera.js'
+import {
+  RssIcon,
+  TutorialIcon,
+  GuideIcon,
+  HelpIcon,
+  DocsIcon,
+  DesignIcon,
+  BoxIcon,
+  CogIcon,
+  UserIcon,
+  CommunityIcon,
+  ShowcaseIcon,
+} from 'shared/components/icons.mjks'
 
 // Don't show children for blog and showcase posts
 const keepClosed = ['blog', 'showcase']

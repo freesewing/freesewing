@@ -1,15 +1,23 @@
 import { useState } from 'react'
-import ClearIcon from 'shared/components/icons/clear'
-import EditIcon from 'shared/components/icons/edit'
+import { ClearIcon, EditIcon } from 'shared/components/icons.mjs'
 import { formatMm, round } from 'shared/utils'
 import { useTranslation } from 'next-i18next'
 
-const EditOption = props => (
+const EditOption = (props) => (
   <div className="form-control mb-2 w-full">
     <label className="label">
-      <span className="label-text text-base-content">{props.min}{props.suffix}</span>
-      <span className="label-text font-bold text-base-content">{props.value}{props.suffix}</span>
-      <span className="label-text text-base-content">{props.max}{props.suffix}</span>
+      <span className="label-text text-base-content">
+        {props.min}
+        {props.suffix}
+      </span>
+      <span className="label-text font-bold text-base-content">
+        {props.value}
+        {props.suffix}
+      </span>
+      <span className="label-text text-base-content">
+        {props.max}
+        {props.suffix}
+      </span>
     </label>
     <label className="input-group input-group-sm">
       <input
@@ -25,16 +33,16 @@ const EditOption = props => (
   </div>
 )
 
-
-const DesignOptionPctDeg = props => {
+const DesignOptionPctDeg = (props) => {
   const { t } = useTranslation(['app'])
   const suffix = props.type === 'deg' ? '°' : '%'
   const factor = props.type === 'deg' ? 1 : 100
   const { max, min } = props.design.patternConfig.options[props.option]
   const dflt = props.design.patternConfig.options[props.option][props.type || 'pct']
-  const val = (typeof props.gist?.options?.[props.option] === 'undefined')
-    ? dflt
-    : props.gist.options[props.option] * factor
+  const val =
+    typeof props.gist?.options?.[props.option] === 'undefined'
+      ? dflt
+      : props.gist.options[props.option] * factor
 
   const [value, setValue] = useState(val)
   const [editOption, setEditOption] = useState(false)
@@ -42,7 +50,7 @@ const DesignOptionPctDeg = props => {
   const handleChange = (evt) => {
     const newVal = evt.target.value
     setValue(newVal)
-    props.updateGist(['options', props.option], newVal/factor)
+    props.updateGist(['options', props.option], newVal / factor)
   }
   const reset = () => {
     setValue(dflt)
@@ -55,28 +63,32 @@ const DesignOptionPctDeg = props => {
         {props.ot(`${props.option}.d`)}
       </p>
       <div className="flex flex-row justify-between">
-        {editOption
-          ? <EditOption
-              value={value}
-              handleChange={handleChange}
-              min={min}
-              max={max}
-              setEditOption={setEditOption}
-              t={t}
-              suffix={suffix}
-            />
-          : (
-            <>
-              <span className="opacity-50">{round(min)}{suffix}</span>
-              <span className={
-                `font-bold ${val===dflt ? 'text-secondary' : 'text-accent'}`}
-              >
-                {round(val)}{suffix}
-              </span>
-              <span className="opacity-50">{round(max)}{suffix}</span>
-            </>
-          )
-        }
+        {editOption ? (
+          <EditOption
+            value={value}
+            handleChange={handleChange}
+            min={min}
+            max={max}
+            setEditOption={setEditOption}
+            t={t}
+            suffix={suffix}
+          />
+        ) : (
+          <>
+            <span className="opacity-50">
+              {round(min)}
+              {suffix}
+            </span>
+            <span className={`font-bold ${val === dflt ? 'text-secondary' : 'text-accent'}`}>
+              {round(val)}
+              {suffix}
+            </span>
+            <span className="opacity-50">
+              {round(max)}
+              {suffix}
+            </span>
+          </>
+        )}
       </div>
       <input
         type="range"
@@ -91,11 +103,12 @@ const DesignOptionPctDeg = props => {
         `}
       />
       <div className="flex flex-row justify-between">
-        <span className={val===dflt ? 'text-secondary' : 'text-accent'}>
+        <span className={val === dflt ? 'text-secondary' : 'text-accent'}>
           {props.design.patternConfig.options[props.option]?.toAbs && props.gist.measurements
-            ? formatMm(props.design.patternConfig.options[props.option].toAbs(value/100, props.gist))
-            : ' '
-          }
+            ? formatMm(
+                props.design.patternConfig.options[props.option].toAbs(value / 100, props.gist)
+              )
+            : ' '}
         </span>
         <div>
           <button
@@ -110,10 +123,7 @@ const DesignOptionPctDeg = props => {
             title={t('editThing', { thing: suffix })}
             className={`
               btn btn-ghost btn-xs hover:text-secondary-focus
-              ${editOption
-                ? 'text-accent'
-                : 'text-secondary'
-              }
+              ${editOption ? 'text-accent' : 'text-secondary'}
             `}
             onClick={() => setEditOption(!editOption)}
           >
