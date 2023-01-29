@@ -1,12 +1,12 @@
+// Hooks
 import { useState, useEffect } from 'react'
-import ThemePicker from 'shared/components/theme-picker.js'
-import CloseIcon from 'shared/components/icons/close.js'
-import MenuIcon from 'shared/components/icons/menu.js'
-import SearchIcon from 'shared/components/icons/search.js'
-import Ribbon from 'shared/components/ribbon.js'
-import { WordMark } from 'shared/components/wordmark.js'
+// Components
+import { ThemePicker } from 'shared/components/theme-picker/index.mjs'
+import { CloseIcon, MenuIcon, SearchIcon } from 'shared/components/icons.mjs'
+import { Ribbon } from 'shared/components/ribbon.mjs'
+import { WordMark } from 'shared/components/wordmark.mjs'
 
-const Header = ({ app, setSearch }) => {
+export const Header = ({ app, setSearch }) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0)
   const [show, setShow] = useState(true)
 
@@ -88,5 +88,3 @@ const Header = ({ app, setSearch }) => {
     </header>
   )
 }
-
-export default Header

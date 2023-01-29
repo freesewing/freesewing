@@ -1,21 +1,21 @@
+// Hooks
 import React, { useState, useEffect } from 'react'
 import { useSwipeable } from 'react-swipeable'
 import { useRouter } from 'next/router'
 import { useHotkeys } from 'react-hotkeys-hook'
+// Components
 import Head from 'next/head'
-// Layouts components
-import LayoutWrapper from 'site/components/wrappers/layout'
-import Docs from 'site/components/layouts/docs'
-// Modal
-import Modal from 'shared/components/modal'
-import Loader from 'shared/components/loader'
+import { LayoutWrapper } from 'site/components/wrappers/layout.mjs'
+import { DocsLayout } from 'site/components/layouts/docs.mjs'
+import { Modal } from 'shared/components/modal.mjs'
+import { Loader } from 'shared/components/loader.mjs'
 
 /* This component should wrap all page content */
-const PageWrapper = ({
+export const PageWrapper = ({
   title = 'FIXME: No title set',
   noSearch = false,
   app = false,
-  layout = Docs,
+  layout = DocsLayout,
   crumbs = false,
   children = [],
 }) => {
@@ -69,5 +69,3 @@ const PageWrapper = ({
     </div>
   )
 }
-
-export default PageWrapper

@@ -1,20 +1,23 @@
-import Page from 'site/components/wrappers/page.js'
-import useApp from 'site/hooks/useApp.js'
-import Head from 'next/head'
+// Hooks
+import { useApp } from 'site/hooks/useApp.mjs'
+// Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import Layout from 'site/components/layouts/bare'
-import { Icons } from 'shared/components/navigation/primary'
-import Highlight from 'shared/components/mdx/highlight'
-import Popout from 'shared/components/popout'
-import WebLink from 'shared/components/web-link'
-import PageLink from 'shared/components/page-link'
+// Components
+import Head from 'next/head'
+import { PageWrapper } from 'site/components/wrappers/page.mjs'
+import { BareLayout } from 'site/components/layouts/bare.mjs'
+import { Icons } from 'shared/components/navigation/primary.mjs'
+import { Highlight } from 'shared/components/mdx/highlight.mjs'
+import { Popout } from 'shared/components/popout.mjs'
+import { WebLink } from 'shared/components/web-link.mjs'
+import { PageLink } from 'shared/components/page-link.mjs'
 
 const title = 'Welcome to FreeSewing.dev'
 
 const HomePage = () => {
   const app = useApp()
   return (
-    <Page app={app} title={title} layout={Layout}>
+    <PageWrapper app={app} title={title} layout={BareLayout}>
       <Head>
         <meta property="og:type" content="article" key="type" />
         <meta
@@ -214,7 +217,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-    </Page>
+    </PageWrapper>
   )
 }
 

@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import Link from 'next/link'
 import { FreeSewingIcon } from 'shared/components/icons.mjs'
 
@@ -10,7 +11,7 @@ export const Breadcrumbs = ({ crumbs = [], title }) =>
         </Link>
       </li>
       {crumbs.map((crumb) => (
-        <React.Fragment key={crumb[1] + crumb[0]}>
+        <Fragment key={crumb[1] + crumb[0]}>
           <li className="text-base-content px-2">&raquo;</li>
           <li>
             {crumb[1] ? (
@@ -25,7 +26,7 @@ export const Breadcrumbs = ({ crumbs = [], title }) =>
               <span className="text-base-content">{crumb[0]}</span>
             )}
           </li>
-        </React.Fragment>
+        </Fragment>
       ))}
     </ul>
   ) : null

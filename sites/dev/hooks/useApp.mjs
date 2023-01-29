@@ -6,13 +6,13 @@ import useTheme from 'shared/hooks/useTheme'
 // Prebuild navigation
 import prebuildNavigation from 'site/prebuild/navigation.js'
 
-function useApp(full = true) {
+export const useApp = (full = true) => {
   // No translation for freesewing.dev
   const language = 'en'
 
   // Persistent state
   const [account, setAccount] = useLocalStorage('account', { username: false })
-  const [theme, setTheme] = useTheme();
+  const [theme, setTheme] = useTheme()
 
   // React State
   const [primaryMenu, setPrimaryMenu] = useState(false)
@@ -29,9 +29,7 @@ function useApp(full = true) {
    */
   const updateNavigation = (path, content) => {
     if (typeof path === 'string') {
-      path = (path.slice(0,1) === '/')
-        ? path.slice(1).split('/')
-        : path.split('/')
+      path = path.slice(0, 1) === '/' ? path.slice(1).split('/') : path.split('/')
     }
     setNavigation(set(navigation, path, content))
   }
@@ -56,7 +54,10 @@ function useApp(full = true) {
     setPrimaryMenu,
     setSlug,
     setTheme,
-    startLoading: () => { setLoading(true); setPrimaryMenu(false) }, // Always close menu when navigating
+    startLoading: () => {
+      setLoading(true)
+      setPrimaryMenu(false)
+    }, // Always close menu when navigating
     stopLoading: () => setLoading(false),
     updateNavigation,
 
@@ -64,10 +65,7 @@ function useApp(full = true) {
     togglePrimaryMenu,
 
     // Dummy translation method
-    t: s => s,
+    t: (s) => s,
     i18n: false,
   }
 }
-
-export default useApp
-

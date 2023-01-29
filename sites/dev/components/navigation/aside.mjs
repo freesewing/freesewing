@@ -1,6 +1,6 @@
-import { MainSections, ActiveSection } from './primary'
+import { MainSections, ActiveSection } from './primary.mjs'
 
-const Aside = ({ app, slug, mobileOnly = false, before = [], after = [] }) => (
+export const AsideNavigation = ({ app, slug, mobileOnly = false, before = [], after = [] }) => (
   <aside
     className={`
     fixed top-0 right-0 h-screen w-screen
@@ -24,5 +24,3 @@ const Aside = ({ app, slug, mobileOnly = false, before = [], after = [] }) => (
     </div>
   </aside>
 )
-
-export default Aside

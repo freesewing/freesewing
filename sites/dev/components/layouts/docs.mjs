@@ -1,25 +1,28 @@
+// Hooks
 import { useRouter } from 'next/router'
-// Shared components
-import Aside from 'site/components/navigation/aside.js'
-import ThemePicker from 'shared/components/theme-picker.js'
-import Breadcrumbs from 'shared/components/breadcrumbs.js'
-import { getCrumbs } from 'shared/utils'
-import HomeIcon from 'shared/components/icons/home.js'
+// Components
 import Link from 'next/link'
+import { AsideNavigation } from 'site/components/navigation/aside.mjs'
+import { ThemePicker } from 'shared/components/theme-picker/index.mjs'
+import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
+import { getCrumbs } from 'shared/utils.mjs'
+import { HomeIcon } from 'shared/components/icons.mjs'
 
-const DefaultLayout = ({ app, title = false, crumbs = false, children = [] }) => {
+export const DocsLayout = ({ app, title = false, crumbs = false, children = [] }) => {
   const router = useRouter()
   const slug = router.asPath.slice(1)
   const breadcrumbs = crumbs ? crumbs : getCrumbs(app, slug, title)
 
   return (
     <div className="grid grid-cols-4 m-auto justify-center place-items-stretch">
-      <Aside
+      <AsideNavigation
         app={app}
         slug={slug}
         before={[
           <div className="flex flex-row items-center justify-between border-b mb-4" key="home-key">
-            <Link href="/"><HomeIcon /></Link>
+            <Link href="/">
+              <HomeIcon />
+            </Link>
             <ThemePicker app={app} />
           </div>,
         ]}
@@ -36,5 +39,3 @@ const DefaultLayout = ({ app, title = false, crumbs = false, children = [] }) =>
     </div>
   )
 }
-
-export default DefaultLayout

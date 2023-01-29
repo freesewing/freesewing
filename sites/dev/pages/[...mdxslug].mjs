@@ -1,13 +1,16 @@
-import Page from 'site/components/wrappers/page.js'
-import useApp from 'site/hooks/useApp.js'
+// Hooks
+import { useApp } from 'site/hooks/useApp.mjs'
+// Dependencies
 import mdxMeta from 'site/prebuild/mdx.en.js'
-import mdxLoader from 'shared/mdx/loader'
-import MdxWrapper from 'shared/components/wrappers/mdx'
-import TocWrapper from 'shared/components/wrappers/toc'
-import Head from 'next/head'
-import HelpUs from 'site/components/help-us.js'
+import { mdxLoader } from 'shared/mdx/loader.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import jargon from 'site/jargon.mjs'
+// Components
+import Head from 'next/head'
+import { PageWrapper } from 'site/components/wrappers/page.mjs'
+import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
+import { TocWrapper } from 'shared/components/wrappers/toc.mjs'
+import { HelpUs } from 'site/components/help-us.mjs'
+import { jargon } from 'site/jargon.mjs'
 
 const MdxPage = (props) => {
   // This hook is used for shared code and global state
@@ -23,7 +26,7 @@ const MdxPage = (props) => {
    * active state
    */
   return (
-    <Page app={app} {...props.page}>
+    <PageWrapper app={app} {...props.page}>
       <Head>
         <meta property="og:type" content="article" key="type" />
         <meta property="og:description" content={props.intro} key="type" />
@@ -51,7 +54,7 @@ const MdxPage = (props) => {
           <HelpUs mdx slug={`/${props.page.slug}`} />
         </div>
       </div>
-    </Page>
+    </PageWrapper>
   )
 }
 

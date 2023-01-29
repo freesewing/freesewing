@@ -1,17 +1,19 @@
-import Page from 'site/components/wrappers/page.js'
-import useApp from 'site/hooks/useApp.js'
-import Layout from 'site/components/layouts/bare'
+// Hooks
+import { useApp } from 'site/hooks/useApp.mjs'
+// Components
 import Head from 'next/head'
-import Robot from 'shared/components/robot'
-import Popout from 'shared/components/popout'
-import PageLink from 'shared/components/page-link'
+import { PageWrapper } from 'site/components/wrappers/page.mjs'
+import { BareLayout } from 'site/components/layouts/bare.mjs'
+import { Robot } from 'shared/components/robot/index.mjs'
+import { Popout } from 'shared/components/popout.mjs'
+import { PageLink } from 'shared/components/page-link.mjs'
 
 const Page404 = () => {
   const app = useApp()
   const title = '404: Page not found'
 
   return (
-    <Page app={app} title={title} layout={Layout}>
+    <PageWrapper app={app} title={title} layout={BareLayout}>
       <Head>
         <meta property="og:type" content="article" key="type" />
         <meta
@@ -47,7 +49,7 @@ const Page404 = () => {
           </div>
         </div>
       </div>
-    </Page>
+    </PageWrapper>
   )
 }
 

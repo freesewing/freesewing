@@ -1,9 +1,6 @@
 import Link from 'next/link'
 import orderBy from 'lodash.orderby'
-import TutorialIcon from 'shared/components/icons/tutorial.js'
-import GuideIcon from 'shared/components/icons/guide.js'
-import HelpIcon from 'shared/components/icons/help.js'
-import DocsIcon from 'shared/components/icons/docs.js'
+import { TutorialIcon, GuideIcon, HelpIcon, DocsIcon } from 'shared/components/icons.mjs'
 
 // List of icons matched to top-level slug
 const icons = {
@@ -246,5 +243,3 @@ export const ActiveSection = ({ app, active }) => (
     />
   </div>
 )
-
-//export default PrimaryMenu

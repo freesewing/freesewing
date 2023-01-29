@@ -1,17 +1,19 @@
+// Hooks
 import { useState, useRef } from 'react'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
-
-import algoliasearch from 'algoliasearch/lite'
 import { useHotkeys } from 'react-hotkeys-hook'
+// Dependencies
+import algoliasearch from 'algoliasearch/lite'
 import {
   InstantSearch,
   connectHits,
   connectHighlight,
   connectSearchBox,
 } from 'react-instantsearch-dom'
-import CloseIcon from 'shared/components/icons/close.js'
 import config from 'site/algolia.config.mjs'
+// Components
+import Link from 'next/link'
+import { CloseIcon } from 'shared/components/icons.mjs'
 
 const searchClient = algoliasearch(config.algolia.app, config.algolia.key)
 
@@ -186,7 +188,7 @@ const SearchBox = (props) => {
 
 const CustomSearchBox = connectSearchBox(SearchBox)
 
-const Search = (props) => {
+export const Search = (props) => {
   const [active, setActive] = useState(0)
   useHotkeys('esc', () => props.setSearch(false))
   useHotkeys('up', () => {
@@ -212,5 +214,3 @@ const Search = (props) => {
     </InstantSearch>
   )
 }
-
-export default Search
