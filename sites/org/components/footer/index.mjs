@@ -1,20 +1,21 @@
-import Logo from 'shared/components/logos/freesewing.js'
-import OsiLogo from 'shared/components/logos/osi.js'
-import CreativeCommonsLogo from 'shared/components/logos/cc.js'
-import CcByLogo from 'shared/components/logos/cc-by.js'
-import Ribbon from 'shared/components/ribbon.js'
 import Link from 'next/link'
-import { WordMark } from 'shared/components/wordmark.js'
+import { FreeSewingLogo } from 'shared/components/logos/freesewing.mjs'
+import { OsiLogo } from 'shared/components/logos/osi.mjs'
+import { CCLogo } from 'shared/components/logos/cc.mjs'
+import { CCByLogo } from 'shared/components/logos/cc-by.mjs'
+import { Ribbon } from 'shared/components/ribbon.mjs'
+import { WordMark } from 'shared/components/wordmark.mjs'
 import { useTranslation } from 'next-i18next'
-import { freeSewingConfig } from 'site/freesewing.config.js'
-
-import HelpIcon from 'shared/components/icons/help.js'
-import DiscordIcon from 'shared/components/icons/discord.js'
-import FacebookIcon from 'shared/components/icons/facebook.js'
-import GithubIcon from 'shared/components/icons/github.js'
-import InstagramIcon from 'shared/components/icons/instagram.js'
-import RedditIcon from 'shared/components/icons/reddit.js'
-import TwitterIcon from 'shared/components/icons/twitter.js'
+import { freeSewingConfig } from 'site/freesewing.config.mjs'
+import {
+  HelpIcon,
+  DiscordIcon,
+  FacebookIcon,
+  GithubIcon,
+  InstagramIcon,
+  RedditIcon,
+  TwitterIcon,
+} from 'shared/components/icons.mjs'
 
 const icon = { className: 'w-8 lg:w-12 h-8 lg:h-12' }
 const social = {
@@ -60,10 +61,10 @@ export const Footer = ({ app }) => {
         <div className="mb-20 order-1 mt-20 2xl:mt-0 2xl:mb-0">
           <div className="max-w-md m-auto">
             <div>
-              <CreativeCommonsLogo className="w-64 m-auto" />
+              <CCLogo className="w-64 m-auto" />
             </div>
             <div className="flex flex-row gap-2 justify-center items-center mt-8">
-              <CcByLogo className="w-8 lg:w-12" />
+              <CCByLogo className="w-8 lg:w-12" />
               <p className="text-neutral-content text-right basis-4/5 lg:basis-3/4 leading-5">
                 {t('cc')}
               </p>
@@ -138,7 +139,7 @@ export const Footer = ({ app }) => {
         {/* Col 3 - Logo & Slogan */}
         <div className="w-full 4xl:w-auto xl:max-w-md mb-8 text-center order-3 mt-0 lg:mt-20 2xl:mt-0 2xl:mb-0">
           <div className="max-w-md m-auto">
-            <Logo stroke="none" size={164} className="w-40 lg:w-64 m-auto m-auto" />
+            <FreeSewingLogo stroke="none" size={164} className="w-40 lg:w-64 m-auto m-auto" />
             <h5 className="lg:text-3xl mt-4">
               <WordMark />
             </h5>

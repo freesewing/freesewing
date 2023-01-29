@@ -1,11 +1,9 @@
 import { useState, useEffect } from 'react'
-import ThemePicker, { ns as themeNs } from 'shared/components/theme-picker/index.js'
-import LocalePicker, { ns as localeNs } from 'shared/components/locale-picker/index.js'
-import CloseIcon from 'shared/components/icons/close.js'
-import MenuIcon from 'shared/components/icons/menu.js'
-import SearchIcon from 'shared/components/icons/search.js'
-import Ribbon from 'shared/components/ribbon.js'
-import { WordMark } from 'shared/components/wordmark.js'
+import { ThemePicker, ns as themeNs } from 'shared/components/theme-picker/index.mjs'
+import { LocalePicker, ns as localeNs } from 'shared/components/locale-picker/index.mjs'
+import { CloseIcon, MenuIcon, SearchIcon } from 'shared/components/icons.mjs'
+import { Ribbon } from 'shared/components/ribbon.mjs'
+import { WordMark } from 'shared/components/wordmark.mjs'
 
 export const ns = [...new Set([...themeNs, ...localeNs])]
 
