@@ -1,4 +1,5 @@
 import process from 'node:process'
+import { execSync } from 'child_process'
 
 // For now, never build CMS
 process.exit(0)
@@ -22,21 +23,21 @@ if (branch === 'develop') {
   process.exit(1)
 }
 
-// Only build pull requests that made changes to lab
+// Only build pull requests that made changes to sanity
 if (process.env.VERCEL_GIT_PULL_REQUEST_ID) {
   try {
     const changes = execSync(
       `git diff --name-only $(git merge-base develop ${branch}) ${branch} sites/sanity`
     ).toString()
     if (changes) {
-      console.log('✅ - Lab Pull Request - Proceed to build')
+      console.log('✅ - Sanity Pull Request - Proceed to build')
       process.exit(1)
     }
   } catch {
     // just don't error out
   }
 
-  console.log('🛑 - Pull Request made no changes to Lab - Do not build')
+  console.log('🛑 - Pull Request made no changes to Sanity - Do not build')
   process.exit(0)
 }
 

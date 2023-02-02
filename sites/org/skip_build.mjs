@@ -1,8 +1,6 @@
 import process from 'node:process'
 import { execSync } from 'child_process'
 
-const branches = ['develop', 'joost']
-
 // Do not block production builds
 if (process.env.VERCEL_ENV === 'production') {
   console.log('✅ - Production build - Proceed to build')
@@ -22,21 +20,21 @@ if (branch === 'develop') {
   process.exit(1)
 }
 
-// Only build pull requests that made changes to lab
+// Only build pull requests that made changes to org
 if (process.env.VERCEL_GIT_PULL_REQUEST_ID) {
   try {
     const changes = execSync(
       `git diff --name-only $(git merge-base develop ${branch}) ${branch} sites/shared/ sites/org`
     ).toString()
     if (changes) {
-      console.log('✅ - Lab Pull Request - Proceed to build')
+      console.log('✅ - Org Pull Request - Proceed to build')
       process.exit(1)
     }
   } catch {
     // just don't error out
   }
 
-  console.log('🛑 - Pull Request made no changes to Lab - Do not build')
+  console.log('🛑 - Pull Request made no changes to Org - Do not build')
   process.exit(0)
 }
 
