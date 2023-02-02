@@ -277,7 +277,7 @@ const basePlugin = ({
       points[`${rulerName}-ruler-tick`] = points[`${rulerName}-ruler-end`]
         .translate(xAxis ? 0 : 3, xAxis ? 3 : 0)
         // add a label to it
-        .attr('data-text', rulerLength + (isMetric ? 'cm' : '"'))
+        .attr('data-text', rulerLength + (isMetric ? 'cm' : '&quot;'))
         // space the text properly from the end of the line
         .attr('data-text-class', 'fill-interfacing baseline-center' + (xAxis ? ' center' : ''))
         .attr(`data-text-d${xAxis ? 'y' : 'x'}`, xAxis ? 5 : 3)
@@ -333,49 +333,64 @@ const basePlugin = ({
       // so skip markers for the top row or leftmost column
       if (row !== 0 && withContent[row - 1][col])
         macro('addPageMarker', {
-          along: [points[`${pageName}-tl`], points[`${pageName}-tr`]],
-          label: '' + row,
+          along: [points[`${pageName}-tr`], points[`${pageName}-tl`]],
+          label: [`${row}`, `${row + 1}`],
           isRow: true,
           pageName,
         })
       if (col !== 0 && withContent[row][col - 1])
         macro('addPageMarker', {
           along: [points[`${pageName}-tl`], points[`${pageName}-bl`]],
-          label: indexStr(col),
+          label: [indexStr(col), indexStr(col + 1)],
           isRow: false,
           pageName,
         })
     },
-    /** add a page marker for either the row of the column */
+    /** add a page marker for either the row or the column, to aid with alignment and orientation */
     addPageMarker({ along, label, isRow, pageName }) {
-      const { points, paths, Path } = this.shorthand()
+      const { points, paths, Path, scale } = this.shorthand()
       const markerName = `${pageName}-${isRow ? 'row' : 'col'}-marker`
 
-      // get a point on the center of the appropriate side
-      points[`${markerName}-center`] = along[0]
-        .shiftFractionTowards(along[1], 0.5)
-        // add the label to it
-        .attr('data-text', label)
-        .attr('data-text-class', 'text-sm center baseline-center bold')
-        // give it an explicit ID in case we need to hide it later
-        .attr('data-text-id', markerName + '-text')
+      // x and y distances between corners. one will always be 0, which is helpful
+      const xDist = along[0].dx(along[1])
+      const yDist = along[0].dy(along[1])
 
-      // get points to make a diamond around the center point
-      points[`${markerName}-r`] = points[`${markerName}-center`].translate(-5, 0)
-      points[`${markerName}-l`] = points[`${markerName}-center`].translate(5, 0)
-      points[`${markerName}-t`] = points[`${markerName}-center`].translate(0, -5)
-      points[`${markerName}-b`] = points[`${markerName}-center`].translate(0, 5)
+      // size of the x mark should be impacted by the scale setting
+      const markSize = 4 * scale
 
-      // make a path for the diamond
-      paths[markerName] = new Path()
-        .move(points[`${markerName}-r`])
-        .line(points[`${markerName}-t`])
-        .line(points[`${markerName}-l`])
-        .line(points[`${markerName}-b`])
-        .close()
-        .attr('class', 'fill-interfacing interfacing')
-        // give it an explicit ID in case we need to hide it later
-        .attr('id', markerName)
+      // make one at 25% and one at 75%
+      for (var d = 25; d < 100; d += 50) {
+        // get points to make an x at d% along the edge
+        const dName = `${markerName}-${d}`
+        const centerName = `${dName}-center`
+        points[centerName] = along[0].translate((xDist * d) / 100, (yDist * d) / 100)
+        points[`${dName}-tr`] = points[centerName].translate(-markSize, markSize)
+        points[`${dName}-tl`] = points[centerName].translate(-markSize, -markSize)
+        points[`${dName}-br`] = points[centerName].translate(markSize, markSize)
+        points[`${dName}-bl`] = points[centerName].translate(markSize, -markSize)
+
+        // make a path for the x
+        paths[`${dName}`] = new Path()
+          .move(points[`${dName}-tr`])
+          .line(points[`${dName}-bl`])
+          .move(points[`${dName}-tl`])
+          .line(points[`${dName}-br`])
+          .attr('class', 'interfacing stroke-xs')
+          // give it an explicit ID in case we need to hide it later
+          .attr('id', dName)
+
+        // add directional labels
+        let angle = along[0].angle(along[1]) - 90
+        for (var i = 0; i < 2; i++) {
+          points[`${dName}-label-${i + 1}`] = points[centerName]
+            .shift(angle, markSize)
+            .setText(label[i], 'text-xs center baseline-center fill-interfacing')
+            // give it an explicit ID in case we need to hide it later
+            .attr('data-text-id', `${dName}-text-${i + 1}`)
+          // rotate for the next one
+          angle += 180
+        }
+      }
     },
   },
 })
