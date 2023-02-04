@@ -1,19 +1,16 @@
 name: Sync Dependabot Bump
 on:
   pull_request:
-    types: [opened, reopened, edited]
-permissions:
-  pull-requests: write
+    types: [opened, synchronize]
 
+permissions:
+  contents: write
 
 jobs:
   sync:
+    if: ${{ github.actor == 'dependabot[bot]' }}
     name: Sync dependency files
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [16.x]
 
     steps:
       - name: Checkout Repository
@@ -28,8 +25,9 @@ jobs:
         run: node ./scripts/sync-dependencies.mjs ${{ github.head_ref }}
       - name: Commit Changes
         run: |
+          git add .
           git status
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git commit -am "[dependabot skip] bumped ${{ github.head_ref }} changes in config/dependencies.yaml"
+          git commit -m "[dependabot skip] bumped ${{ github.head_ref }} changes in config/dependencies.yaml"
           git push

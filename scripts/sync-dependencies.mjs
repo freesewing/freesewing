@@ -26,7 +26,7 @@ const dependency = branchName
 // because this is from dependabot,
 // and because we want all our versions synced
 // we simply find and replace the version wherever it is specified
-const rgx = new RegExp(`(?<='${dependency}':\\W{0,2}\\w*\\W?')\\d+\\.\\d+\\.\\d+(?=')`, 'g')
+const rgx = new RegExp(`(?<='@?${dependency}':\\W{0,2}\\w*\\W?')\\d+\\.\\d+\\.\\d+(?=')`, 'g')
 const newDepsRaw = oldDepsRaw.replace(rgx, dependencyVersion)
 console.log(`Updating ${dependency} version to ${dependencyVersion} in config/dependencies.yaml`)
 
