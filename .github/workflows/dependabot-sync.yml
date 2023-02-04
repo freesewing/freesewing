@@ -1,9 +1,11 @@
 name: Sync Dependabot Bump
-on: pull_request
+on:
+  pull_request:
+    types: [opened, reopened, edited]
+
 
 jobs:
   sync:
-    if: ${{ github.actor == 'dependabot[bot]' }}
     name: Sync dependency files
     runs-on: ubuntu-latest
 
