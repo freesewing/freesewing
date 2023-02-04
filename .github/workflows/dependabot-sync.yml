@@ -22,8 +22,9 @@ jobs:
         run: node ./scripts/sync-dependencies.mjs ${{github.head_ref}}
       - name: Commit Changes
         run: |
+          git status
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add .
-          git commit -m "bumped {{github.head_ref}} changes in config/dependencies.yaml"
+          git add -A
+          git commit -m "bumped ${{github.head_ref}} changes in config/dependencies.yaml"
           git push
