@@ -16,6 +16,7 @@ const oldDepsRaw = readFileSync(depsFile, { encoding: 'utf8' })
 // we get the branch name handed to us by the github action,
 // and it has all the info we need about the dependency being updated
 const branchName = process.argv[2]
+console.log('processing updates from ', branchName)
 const versionRgx = /\d+\.\d+\.\d+$/
 const dependencyVersion = branchName.match(versionRgx)[0]
 const dependency = branchName
