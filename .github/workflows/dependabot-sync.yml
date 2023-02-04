@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Run Sync Script
-        run: node ./scripts/sync-dependencies.mjs {{github.ref_name}}
+        run: node ./scripts/sync-dependencies.mjs ${{github.ref_name}}
       - name: Commit Changes
         run: |
           git config user.name github-actions
