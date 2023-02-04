@@ -2,7 +2,6 @@
 // we want to update it in our dependencies.yaml so the update doesn't get clobbered
 // This script is run by the github action in dependabot-sync.yml
 import process from 'node:process'
-import yaml from 'js-yaml'
 import { readFileSync, writeFileSync } from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
