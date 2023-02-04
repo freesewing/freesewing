@@ -21,3 +21,10 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Run Sync Script
         run: node ./scripts/sync-dependencies.mjs {{github.ref_name}}
+      - name: Commit Changes
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "bumped {{github.ref_name}} changes in config/dependencies.yaml"
+          git push
