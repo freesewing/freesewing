@@ -14,17 +14,19 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
       - name: Setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
       - name: Run Sync Script
-        run: node ./scripts/sync-dependencies.mjs ${{github.head_ref}}
+        run: node ./scripts/sync-dependencies.mjs ${{ github.head_ref }}
       - name: Commit Changes
         run: |
           git status
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add -A
-          git commit -m "bumped ${{github.head_ref}} changes in config/dependencies.yaml"
+          git commit -m "bumped ${{ github.head_ref }} changes in config/dependencies.yaml"
           git push
