@@ -1,14 +1,14 @@
 import React, { useMemo, useEffect, useState } from 'react'
-import MeasurementInput from '../inputs/measurement.js'
+import { MeasurementInput } from '../inputs/measurement.mjs'
 import { adult, doll, giant } from '@freesewing/models'
 import {
-  CisFemalIcon as WomenswearIcon,
+  CisFemaleIcon as WomenswearIcon,
   CisMaleIcon as MenswearIcon,
 } from 'shared/components/icons.mjs'
 import { useTranslation } from 'next-i18next'
-import Setting from '../menu/core-settings/setting'
-import { settings } from '../menu/core-settings/index'
-import { Tab, Tabs } from 'shared/components/mdx/tabs.js'
+import { Setting } from '../menu/core-settings/setting.mjs'
+import { settings } from '../menu/core-settings/index.mjs'
+import { Tab, Tabs } from 'shared/components/mdx/tabs.mjs'
 
 const groups = { adult, doll, giant }
 
@@ -17,7 +17,7 @@ const icons = {
   cisMale: <MenswearIcon />,
 }
 
-const WorkbenchMeasurements = ({ app, design, gist, updateGist, gistReady }) => {
+export const WorkbenchMeasurements = ({ app, design, gist, updateGist, gistReady }) => {
   const { t } = useTranslation(['app', 'cfp'])
 
   // Method to handle measurement updates
@@ -111,5 +111,3 @@ const WorkbenchMeasurements = ({ app, design, gist, updateGist, gistReady }) => 
     </div>
   )
 }
-
-export default WorkbenchMeasurements

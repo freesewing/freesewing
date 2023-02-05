@@ -1,13 +1,13 @@
 import { XrayIcon } from 'shared/components/icons.mjs'
-import { linkClasses, Chevron } from 'shared/components/navigation/primary.js'
-import Log from './log.js'
-import Reset from './reset.js'
-import Disable from './disable.js'
-import List from './list.js'
+import { linkClasses, Chevron } from 'shared/components/navigation/primary.mjs'
+import { ConsoleLog } from './log.mjs'
+import { XrayReset } from './reset.mjs'
+import { XrayDisable } from './disable.mjs'
+import { XrayList } from './list.mjs'
 import { Ul, Details, TopSummary } from 'shared/components/workbench/menu'
 import { useTranslation } from 'next-i18next'
 
-const Xray = (props) => {
+export const XrayMenu = (props) => {
   const { t } = useTranslation(['app', 'settings'])
 
   return (
@@ -36,17 +36,15 @@ const Xray = (props) => {
       </TopSummary>
       {props.gist?._state?.xray?.enabled && (
         <Ul>
-          <Disable {...props} />
-          <Log {...props} />
-          <Reset {...props} />
+          <XrayDisable {...props} />
+          <ConsoleLog {...props} />
+          <XrayReset {...props} />
           {props.gist?._state?.xray?.parts &&
             Object.keys(props.gist._state.xray.parts).map((partName) => (
-              <List {...props} partName={partName} />
+              <XrayList {...props} partName={partName} />
             ))}
         </Ul>
       )}
     </Details>
   )
 }
-
-export default Xray

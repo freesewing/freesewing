@@ -1,9 +1,9 @@
-import { Ul, Li, NoSumDiv, Deg } from 'shared/components/workbench/menu'
-import { formatMm } from 'shared/utils'
-import Attributes from './attributes'
-import Ops from './path-ops'
+import { Ul, Li, NoSumDiv, Deg } from 'shared/components/workbench/menu/index.mjs'
+import { formatMm } from 'shared/utils.mjs'
+import Attributes from './attributes.mjs'
+import Ops from './path-ops.mjs'
 
-const XrayPath = ({ pathName, partName, draft, t, units }) => {
+export const XrayPath = ({ pathName, partName, draft, t, units }) => {
   const path = draft?.parts?.[partName]?.paths?.[pathName]
 
   if (!path) return null
@@ -21,14 +21,14 @@ const XrayPath = ({ pathName, partName, draft, t, units }) => {
         <NoSumDiv>
           <Deg />
           <span className="font-bold mr-2">path.length() =</span>
-          <span dangerouslySetInnerHTML={{
-            __html: formatMm(path.length(), units)
-          }} />
+          <span
+            dangerouslySetInnerHTML={{
+              __html: formatMm(path.length(), units),
+            }}
+          />
         </NoSumDiv>
       </Li>
       <Ops ops={path.ops} />
     </Ul>
   )
 }
-
-export default XrayPath

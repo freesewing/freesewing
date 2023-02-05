@@ -3,25 +3,25 @@ import { Ul, Li, Details, Summary, SumDiv, NoSumDiv, Deg } from 'shared/componen
 import Point from './point'
 
 const MoveLine = ({ op }) => <Point point={op.to} />
-const Curve = ({ op }) => ['cp1', 'cp2', 'to'].map(pnt => (
-  <Li key={pnt}>
-    <Details>
-      <Summary>
-        <SumDiv>
-          <Deg />
-          <span className="font-bold">{pnt}</span>
-        </SumDiv>
-        <Chevron />
-      </Summary>
-      <Point point={op[pnt]} />
-    </Details>
-  </Li>
-))
+const Curve = ({ op }) =>
+  ['cp1', 'cp2', 'to'].map((pnt) => (
+    <Li key={pnt}>
+      <Details>
+        <Summary>
+          <SumDiv>
+            <Deg />
+            <span className="font-bold">{pnt}</span>
+          </SumDiv>
+          <Chevron />
+        </Summary>
+        <Point point={op[pnt]} />
+      </Details>
+    </Li>
+  ))
 
 const XrayPathOp = ({ op }) => (
   <Li>
-  {op.type === 'close'
-    ? (
+    {op.type === 'close' ? (
       <NoSumDiv>
         <Deg />
         <span className="font-bold">{op.type}</span>
@@ -36,19 +36,13 @@ const XrayPathOp = ({ op }) => (
           </SumDiv>
           <Chevron />
         </Summary>
-        <Ul>
-          {op.type === 'curve'
-            ? <Curve op={op} />
-            : <MoveLine op={op} />
-          }
-        </Ul>
+        <Ul>{op.type === 'curve' ? <Curve op={op} /> : <MoveLine op={op} />}</Ul>
       </Details>
-    )
-  }
+    )}
   </Li>
 )
 
-const XrayPathOps = ({ ops=false }) => {
+export const XrayPathOps = ({ ops = false }) => {
   if (!ops || ops.length < 1) return null
 
   return (
@@ -62,11 +56,11 @@ const XrayPathOps = ({ ops=false }) => {
           <Chevron />
         </Summary>
         <Ul>
-          {ops.map(op => <XrayPathOp op={op} />)}
+          {ops.map((op) => (
+            <XrayPathOp op={op} />
+          ))}
         </Ul>
       </Details>
     </Li>
   )
 }
-
-export default XrayPathOps

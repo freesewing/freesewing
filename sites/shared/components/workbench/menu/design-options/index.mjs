@@ -1,8 +1,8 @@
 import { OptionsIcon } from 'shared/components/icons.mjs'
-import { Chevron } from 'shared/components/navigation/primary.js'
+import { Chevron } from 'shared/components/navigation/primary.mjs'
 import { OptionGroup } from './option-group.mjs'
 import { OptionComponent } from './option.mjs'
-import { Ul, Details, TopSummary, TopSumTitle } from 'shared/components/workbench/menu.mjs'
+import { Ul, Details, TopSummary, TopSumTitle } from 'shared/components/workbench/menu/index.mjs'
 import { useTranslation } from 'next-i18next'
 import { optionsMenuStructure } from 'shared/utils.mjs'
 

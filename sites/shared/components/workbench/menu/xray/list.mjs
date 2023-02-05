@@ -1,8 +1,8 @@
-import { Chevron } from 'shared/components/navigation/primary.js'
+import { Chevron } from 'shared/components/navigation/primary.mjs'
 import { ClearIcon, FilterIcon, SearchIcon } from 'shared/components/icons.mjs'
-import { Ul, Li, Details, Summary, SumDiv, Deg } from 'shared/components/workbench/menu'
-import Path from './path.js'
-import Point from './point.js'
+import { Ul, Li, Details, Summary, SumDiv, Deg } from 'shared/components/workbench/menu/index.mjs'
+import Path from './path.mjs'
+import Point from './point.mjs'
 import { useTranslation } from 'next-i18next'
 
 const types = {
@@ -10,7 +10,7 @@ const types = {
   points: Point,
 }
 
-const XrayList = (props) => {
+export const XrayList = (props) => {
   const { t } = useTranslation(['app', 'parts'])
 
   const title = t(`parts:${props.partName}`) + ` (${props.partName})`
@@ -160,5 +160,3 @@ const XrayList = (props) => {
     </Li>
   )
 }
-
-export default XrayList

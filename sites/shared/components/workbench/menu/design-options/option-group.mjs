@@ -1,5 +1,5 @@
 import { Chevron } from 'shared/components/navigation/primary.mjs'
-import { Li, Ul, Details, Summary, SumDiv, Deg } from 'shared/components/workbench/menu.mjs'
+import { Li, Ul, Details, Summary, SumDiv, Deg } from 'shared/components/workbench/menu/index.mjs'
 import { useTranslation } from 'next-i18next'
 
 export const OptionGroup = (props) => {

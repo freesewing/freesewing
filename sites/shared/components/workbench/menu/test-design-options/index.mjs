@@ -1,8 +1,8 @@
 import { OptionsIcon } from 'shared/components/icons.mjs'
-import { Chevron } from 'shared/components/navigation/primary.js'
-import OptionGroup from '../design-options/option-group'
-import Option from './option'
-import { Ul, Details, TopSummary, TopSumTitle } from 'shared/components/workbench/menu'
+import { Chevron } from 'shared/components/navigation/primary.mjs'
+import OptionGroup from '../design-options/option-group.mjs'
+import Option from './option.mjs'
+import { Ul, Details, TopSummary, TopSumTitle } from 'shared/components/workbench/menu/index.mjs'
 import { useTranslation } from 'next-i18next'
 import { optionsMenuStructure } from 'shared/utils.mjs'
 import { adult, doll, giant } from '@freesewing/models'
@@ -24,9 +24,11 @@ const SampleDesignOption = (props) => {
   )
 }
 
-const DesignOptions = (props) => {
+export const TestDesignOptions = (props) => {
   const { t } = useTranslation(['app'])
   const optionsMenu = optionsMenuStructure(props.design.patternConfig.options)
+
+  // FIXME: This menu is broken right now
 
   const measies = props.draft?.config?.measurements || []
 
@@ -45,7 +47,7 @@ const DesignOptions = (props) => {
                 type={options}
                 option={group}
                 key={group}
-                sampleSettings={{ type: 'option', option }}
+                sampleSettings={{ type: 'option', options }}
               />
             ) : (
               <OptionGroup
@@ -103,5 +105,3 @@ const DesignOptions = (props) => {
     </>
   )
 }
-
-export default DesignOptions

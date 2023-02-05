@@ -1,7 +1,7 @@
 import { SettingsIcon } from 'shared/components/icons.mjs'
-import { Chevron } from 'shared/components/navigation/primary.js'
-import Setting from './setting.js'
-import { Ul, Details, TopSummary, TopSumTitle } from '../index.js'
+import { Chevron } from 'shared/components/navigation/primary.mjs'
+import { Setting } from './setting.mjs'
+import { Ul, Details, TopSummary, TopSumTitle } from '../index.mjs'
 import { useTranslation } from 'next-i18next'
 
 export const settings = {

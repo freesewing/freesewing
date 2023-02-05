@@ -1,7 +1,15 @@
-import { Chevron } from 'shared/components/navigation/primary.js'
-import { Ul, Li, Details, Summary, SumButton, SumDiv, Deg } from 'shared/components/workbench/menu'
+import { Chevron } from 'shared/components/navigation/primary.mjs'
+import {
+  Ul,
+  Li,
+  Details,
+  Summary,
+  SumButton,
+  SumDiv,
+  Deg,
+} from 'shared/components/workbench/menu/index.mjs'
 
-const ConsoleLog = (props) => (
+export const ConsoleLog = (props) => (
   <Li>
     <Details>
       <Summary>
@@ -33,5 +41,3 @@ const ConsoleLog = (props) => (
     </Details>
   </Li>
 )
-
-export default ConsoleLog

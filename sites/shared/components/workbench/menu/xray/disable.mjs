@@ -1,7 +1,7 @@
 import { Li, SumButton, SumDiv, Deg } from 'shared/components/workbench/menu'
 import { useTranslation } from 'next-i18next'
 
-const DisableXray = props => {
+export const DisableXray = (props) => {
   const { t } = useTranslation(['cfp', 'settings'])
 
   return (
@@ -9,13 +9,9 @@ const DisableXray = props => {
       <SumButton onClick={() => props.updateGist(['_state', 'xray', 'enabled'], false)}>
         <SumDiv>
           <Deg />
-          <span>
-            {t('cfp:thingIsEnabled', { thing: t('settings:xray.t') })}
-          </span>
+          <span>{t('cfp:thingIsEnabled', { thing: t('settings:xray.t') })}</span>
         </SumDiv>
       </SumButton>
     </Li>
   )
 }
-
-export default DisableXray

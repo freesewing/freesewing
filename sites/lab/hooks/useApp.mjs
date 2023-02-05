@@ -53,7 +53,7 @@ for (const type in designsByType) {
   }
 }
 
-function useApp(full = true) {
+export const useApp = () => {
   // Load translation method
   const locale = useRouter().locale
   const { t } = useTranslation(['app'])
@@ -108,5 +108,3 @@ function useApp(full = true) {
     standalone: false,
   }
 }
-
-export default useApp

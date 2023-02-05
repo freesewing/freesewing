@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { ClearIcon, EditIcon } from 'shared/components/icons.mjs'
-import { formatMm, round } from 'shared/utils'
+import { formatMm, round } from 'shared/utils.mjs'
 import { useTranslation } from 'next-i18next'
 
 const EditOption = (props) => (

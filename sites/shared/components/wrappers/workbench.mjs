@@ -3,25 +3,24 @@ import { useEffect, useState, useMemo } from 'react'
 import { useGist } from 'shared/hooks/useGist'
 // Dependencies
 import { pluginTheme } from '@freesewing/plugin-theme'
-import preloaders from 'shared/components/workbench/preload.js'
+import { preloaders } from 'shared/components/workbench/preloaders.mjs'
 // Components
-import { Menu } from 'shared/components/workbench/menu/index.mjs'
+import { WorkbenchMenu } from 'shared/components/workbench/menu/index.mjs'
 import { DraftError } from 'shared/components/workbench/draft/error.mjs'
 import { Modal } from 'shared/components/modal.mjs'
 import { ErrorBoundary } from 'shared/components/error/error-boundary.mjs'
 // Views
-import { Measurements } from 'shared/components/workbench/measurements/index.js'
-import { LabDraft } from 'shared/components/workbench/draft/index.js'
-import { LabSample } from 'shared/components/workbench/sample.js'
-import { ExportDraft } from 'shared/components/workbench/exporting/index.js'
-import { GistAsJson } from 'shared/components/workbench/gist-as-json.js'
-import { GistAsYaml } from 'shared/components/workbench/yaml.js'
-import { DraftLogs } from 'shared/components/workbench/logs.js'
-import { CutLayout } from 'shared/components/workbench/layout/cut'
-import { PrintingLayout } from 'shared/components/workbench/layout/print'
+import { WorkbenchMeasurements } from 'shared/components/workbench/measurements/index.mjs'
+import { LabDraft } from 'shared/components/workbench/draft/index.mjs'
+import { LabSample } from 'shared/components/workbench/sample.mjs'
+import { ExportDraft } from 'shared/components/workbench/exporting/index.mjs'
+import { GistAsJson, GistAsYaml } from 'shared/components/workbench/gist.mjs'
+import { DraftLogs } from 'shared/components/workbench/logs.mjs'
+import { CutLayout } from 'shared/components/workbench/layout/cut/index.mjs'
+import { PrintingLayout } from 'shared/components/workbench/layout/print/index.mjs'
 
 const views = {
-  measurements: Measurements,
+  measurements: WorkbenchMeasurements,
   draft: LabDraft,
   test: LabSample,
   printingLayout: PrintingLayout,
@@ -156,7 +155,7 @@ export const WorkbenchWrapper = ({
     app: app,
     noSearch: true,
     workbench: true,
-    AltMenu: <Menu {...componentProps} />,
+    AltMenu: <WorkbenchMenu {...componentProps} />,
     showInfo: setPopup,
   }
 

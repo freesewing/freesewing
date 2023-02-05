@@ -1,6 +1,13 @@
 import { Chevron } from 'shared/components/navigation/primary.mjs'
 import { optionType } from 'shared/utils.mjs'
-import { Li, Details, Summary, SumButton, SumDiv, Deg } from 'shared/components/workbench/menu.mjs'
+import {
+  Li,
+  Details,
+  Summary,
+  SumButton,
+  SumDiv,
+  Deg,
+} from 'shared/components/workbench/menu/index.mjs'
 import { useTranslation } from 'next-i18next'
 import { values } from 'shared/components/workbench/menu/design-options/option-value.mjs'
 import { inputs } from 'shared/components/workbench/menu/design-options/option-input.mjs'

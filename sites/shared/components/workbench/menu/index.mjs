@@ -1,9 +1,9 @@
 import { linkClasses } from 'shared/components/navigation/primary.mjs'
 import { ViewMenu } from './view.mjs'
-import { DesignOptions } from './design-options.mjs'
-import { CoreSettings } from './core-settings.mjs'
-import { Xray } from './xray'
-import { TestDesignOptions } from './test-design-options.mjs'
+import { DesignOptions } from './design-options/index.mjs'
+import { CoreSettings } from './core-settings/index.mjs'
+import { Xray } from './xray/index.mjs'
+import { TestDesignOptions } from './test-design-options/index.mjs'
 
 export const Ul = (props) => <ul className="pl-5 list-inside">{props.children}</ul>
 export const Li = (props) => (
@@ -111,11 +111,13 @@ export const WorkbenchMenu = (props) => {
       {['draft', 'cuttingLayout', 'printingLayout'].indexOf(props.gist?._state?.view) > -1 && (
         <>
           <DesignOptions {...props} />
-          <CoreSettings {...props} />
-          {props.gist.renderer === 'react' && <Xray {...props} />}
         </>
       )}
       {props.gist?._state?.view === 'test' && <TestDesignOptions {...props} />}
     </nav>
   )
 }
+
+//<DesignOptions {...props} />
+//<CoreSettings {...props} />
+//{props.gist.renderer === 'react' && <Xray {...props} />}

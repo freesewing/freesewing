@@ -1,7 +1,7 @@
 import { Li, SumButton, SumDiv, Deg } from 'shared/components/workbench/menu'
 import { useTranslation } from 'next-i18next'
 
-const ResetXray = props =>  {
+export const ResetXray = (props) => {
   const { t } = useTranslation(['app'])
 
   return (
@@ -9,11 +9,9 @@ const ResetXray = props =>  {
       <SumButton onClick={() => props.updateGist(['_state', 'xray'], { enabled: true })}>
         <SumDiv>
           <Deg />
-          <span>{ t(`reset`) }</span>
+          <span>{t(`reset`)}</span>
         </SumDiv>
       </SumButton>
     </Li>
   )
 }
-
-export default ResetXray

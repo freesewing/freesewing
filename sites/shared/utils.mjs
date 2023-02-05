@@ -175,7 +175,7 @@ export const optionsMenuStructure = (options) => {
       else if (typeof option.menu === 'undefined')
         console.log(
           `Warning: Option ${option.name} does not have a menu config. ` +
-            'Either configure it, or set it to falseo false to hide this option.'
+            'Either configure it, or set it to false to hide this option.'
         )
     }
   }
