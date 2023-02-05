@@ -3,6 +3,11 @@ const themes = require('./shared/themes/index.js')
 
 module.exports = {
   content: [
+    './pages/*.mjs',
+    './pages/**/*.mjs',
+    './shared/**/*.mjs',
+    './lab/**/*.mjs',
+    // Legacy stuff, to be removed once everything is .mjs
     './pages/*.js',
     './pages/**/*.js',
     './shared/**/*.js',
@@ -20,8 +25,8 @@ module.exports = {
   theme: {
     extend: {
       aspectRatio: {
-        '9/16': '9 / 16'
-      }
-    }
-  }
+        '9/16': '9 / 16',
+      },
+    },
+  },
 }
