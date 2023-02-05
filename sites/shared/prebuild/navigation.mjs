@@ -5,7 +5,6 @@ import set from 'lodash.set'
 // Some arbitrary future time
 const future = new Date('10-12-2026').getTime()
 
-
 /*
  * Main method that does what needs doing
  */
@@ -46,8 +45,8 @@ export const prebuildNavigation = (mdxPages, strapiPosts, site) => {
     }
   }
   fs.writeFileSync(
-    path.resolve('..', site, 'prebuild', `navigation.js`),
-    `export default ${JSON.stringify(nav, null ,2)}`
+    path.resolve('..', site, 'prebuild', `navigation.mjs`),
+    `export const prebuildNavigation =  ${JSON.stringify(nav, null, 2)}`
   )
 
   return true
