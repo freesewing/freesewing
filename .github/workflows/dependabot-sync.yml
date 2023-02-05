@@ -23,8 +23,10 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Run Sync Script
         run: node ./scripts/sync-dependencies.mjs ${{ github.head_ref }}
-      - name: Run reconfigure
+      - name: Reconfigure
         run: yarn reconfigure
+      - name: Bootstrap
+        run: npx lerna bootstrap
       - name: Commit Changes
         run: |
           git add .
