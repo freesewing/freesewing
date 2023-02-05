@@ -348,7 +348,7 @@ sanity:
     'react-is': *react
     'sanity': *sanity
     'styled-components': '5.3.6'
-    'sanity-plugin-markdown': '3.0.1'
+    'sanity-plugin-markdown': '4.0.0'
   dev:
     '@sanity/eslint-config-studio': '2.0.1'
     'eslint': *eslint
