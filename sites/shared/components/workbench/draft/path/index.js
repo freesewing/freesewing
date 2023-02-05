@@ -502,7 +502,7 @@ export const pathInfo = (props) => {
               <Tr>
                 <KeyTd>Attributes</KeyTd>
                 <ValTd>
-                  <Attributes list={bbox.attributes.list} />
+                  <Attributes list={props.path.attributes.list} />
                 </ValTd>
               </Tr>
             </tbody>
