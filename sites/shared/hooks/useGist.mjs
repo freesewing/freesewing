@@ -3,13 +3,13 @@ import set from 'lodash.set'
 import unset from 'lodash.unset'
 import cloneDeep from 'lodash.clonedeep'
 import { useLocalStorage } from './useLocalStorage'
-import { defaultSettings } from 'shared/components/workbench/default-settings.mjs'
+import { defaultGist as baseGist } from 'shared/components/workbench/gist.mjs'
 
 // Generates a default design gist to start from
 export const defaultGist = (design, locale = 'en') => {
   const gist = {
     design,
-    ...defaultSettings,
+    ...baseGist,
     _state: { view: 'draft' },
   }
   if (locale) gist.locale = locale

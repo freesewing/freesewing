@@ -1,5 +1,5 @@
 import React from 'react'
-import Highlight from 'shared/components/mdx/highlight.mjs'
+import { Highlight } from 'shared/components/mdx/highlight.mjs'
 import hljs from 'highlight.js/lib/common'
 
 export const Json = (props) => {

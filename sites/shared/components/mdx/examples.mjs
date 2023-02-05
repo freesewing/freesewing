@@ -1,7 +1,7 @@
 import { Examples as Pattern } from '@freesewing/examples'
-import Svg from '../workbench/draft/svg'
-import Defs from '../workbench/draft/defs'
-import Stack from '../workbench/draft/stack'
+import { Svg } from '../workbench/draft/svg'
+import { Defs } from '../workbench/draft/defs'
+import { Stack } from '../workbench/draft/stack'
 import { useGist } from 'shared/hooks/useGist'
 import Md from 'react-markdown'
 

@@ -2,7 +2,7 @@
 import { useApp } from 'site/hooks/useApp.mjs'
 // Dependencies
 import Head from 'next/head'
-import mdxLoader from 'shared/mdx/loader'
+import { mdxLoader } from 'shared/mdx/loader.mjs'
 // Components
 import { PageWrapper } from 'site/components/wrappers/page.mjs'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
