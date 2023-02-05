@@ -5,7 +5,6 @@ import { useGist } from 'shared/hooks/useGist'
 import { pluginTheme } from '@freesewing/plugin-theme'
 import preloaders from 'shared/components/workbench/preload.js'
 // Components
-import { DefaultLayout } from 'shared/components/workbench/layout/default.mjs'
 import { Menu } from 'shared/components/workbench/menu/index.mjs'
 import { DraftError } from 'shared/components/workbench/draft/error.mjs'
 import { Modal } from 'shared/components/modal.mjs'

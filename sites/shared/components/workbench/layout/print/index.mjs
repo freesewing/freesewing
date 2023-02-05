@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'next-i18next'
-import { Settings } from './settings.mjs'
+import { PrintLayoutSettings } from './settings.mjs'
 import { Draft } from '../draft/index.mjs'
 import { pagesPlugin } from './plugin.mjs'
 import {
@@ -56,7 +56,7 @@ export const PrintLayout = (props) => {
     <div>
       <h2 className="capitalize">{t('layoutThing', { thing: name }) + ': ' + t('forPrinting')}</h2>
       <div className="m-4">
-        <Settings {...{ ...props, exportIt, layoutSettings }} draft={draft} />
+        <PrintLayoutSettings {...{ ...props, exportIt, layoutSettings }} draft={draft} />
         {error && (
           <Popout warning compact>
             <span className="font-bold mr-4 uppercase text-sm">{t('error')}:</span>

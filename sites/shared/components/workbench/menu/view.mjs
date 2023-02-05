@@ -3,7 +3,7 @@ import { linkClasses, Chevron } from 'shared/components/navigation/primary.mjs'
 import { useTranslation } from 'next-i18next'
 import { defaultGist } from 'shared/hooks/useGist.mjs'
 
-export const View = (props) => {
+export const ViewMenu = (props) => {
   const { t } = useTranslation(['app'])
   const entries = [
     {

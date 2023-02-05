@@ -43,7 +43,7 @@ export const LabDraft = (props) => {
 
   return (
     <>
-      {!patternProps || errors.length > 0 ? (
+      {errors.length > 0 ? (
         <Error
           {...{
             draft,
@@ -51,6 +51,7 @@ export const LabDraft = (props) => {
             updateGist,
             patternLogs: draft.store.logs,
             setLogs: draft.setStores[0].logs,
+            errors,
           }}
         />
       ) : null}

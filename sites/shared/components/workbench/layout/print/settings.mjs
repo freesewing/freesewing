@@ -1,5 +1,5 @@
 import { PageSizePicker } from './pagesize-picker.mjs'
-import { OrientationPicker } from './orientation-picker.mjs'
+import { PageOrientationPicker } from './orientation-picker.mjs'
 import { PrintIcon, RightIcon, ClearIcon, ExportIcon } from 'shared/components/icons.mjs'
 import { useTranslation } from 'next-i18next'
 
@@ -31,7 +31,7 @@ export const PrintLayoutSettings = (props) => {
       >
         <div className="flex gap-4">
           <PageSizePicker {...props} />
-          <OrientationPicker {...props} />
+          <PageOrientationPicker {...props} />
         </div>
         <div className="flex gap-4">
           <button

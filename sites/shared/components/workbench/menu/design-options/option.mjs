@@ -5,7 +5,7 @@ import { useTranslation } from 'next-i18next'
 import { values } from 'shared/components/workbench/menu/design-options/option-value.mjs'
 import { inputs } from 'shared/components/workbench/menu/design-options/option-input.mjs'
 
-export const Option = (props) => {
+export const OptionComponent = (props) => {
   const { t } = useTranslation([`o_${props.design.designConfig.data.name}`])
   const opt = props.design.patternConfig.options[props.option]
   const type = optionType(opt)

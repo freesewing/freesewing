@@ -1,5 +1,3 @@
-import { themes } from 'shared/themes/runtime.mjs'
-
 export const Ribbon = ({ loading = false, theme = 'light' }) => (
   <div
     className={`flex flex-col justify-between p-0 transition-transform

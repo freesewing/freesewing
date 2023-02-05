@@ -3,7 +3,7 @@ import { formatMm } from 'shared/utils.mjs'
 import { ClearIcon } from 'shared/components/icons.mjs'
 import { useTranslation } from 'next-i18next'
 
-export const CoreSettingMm = (props) => {
+export const CoreSettingSaMm = (props) => {
   const { t } = useTranslation(['app', 'settings'])
   const { dflt, min, max } = props
   const val = props.gist?.[props.setting]

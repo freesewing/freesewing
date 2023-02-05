@@ -32,7 +32,7 @@ export const LabSample = ({ gist, draft, updateGist, unsetGist, showInfo, app, f
     <>
       <h2>{title}</h2>
       {!patternProps || errors.length > 0 ? (
-        <Error {...{ draft, patternProps, updateGist }} />
+        <Error {...{ draft, patternProps, updateGist, errors }} />
       ) : null}
       <SvgWrapper
         {...{ draft, patternProps, gist, updateGist, unsetGist, showInfo, app, feedback }}

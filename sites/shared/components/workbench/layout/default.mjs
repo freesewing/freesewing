@@ -5,7 +5,6 @@ import { useRouter } from 'next/router'
 import get from 'lodash.get'
 // Components
 import Link from 'next/link'
-import { FreeSewingLogo } from 'shared/components/logos/freesewing.mjs'
 import { PrimaryNavigation } from 'shared/components/navigation/primary.mjs'
 import { RightIcon, LeftIcon } from 'shared/components/icons.mjs'
 import { Header } from 'site/components/header.mjs'
