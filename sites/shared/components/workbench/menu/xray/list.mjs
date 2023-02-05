@@ -71,7 +71,7 @@ export const XrayList = (props) => {
                     </Summary>
                     <Ul>
                       {Object.keys(part[type]).map((id) => (
-                        <Li>
+                        <Li key={id}>
                           <Details>
                             <Summary>
                               <SumDiv>

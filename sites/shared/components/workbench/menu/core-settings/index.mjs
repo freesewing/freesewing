@@ -48,7 +48,7 @@ export const settings = {
   },
 }
 
-const CoreSettings = (props) => {
+export const CoreSettings = (props) => {
   const { t } = useTranslation(['app'])
 
   return (
@@ -65,5 +65,3 @@ const CoreSettings = (props) => {
     </Details>
   )
 }
-
-export default CoreSettings

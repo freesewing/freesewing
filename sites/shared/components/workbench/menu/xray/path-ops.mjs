@@ -57,7 +57,7 @@ export const XrayPathOps = ({ ops = false }) => {
         </Summary>
         <Ul>
           {ops.map((op) => (
-            <XrayPathOp op={op} />
+            <XrayPathOp op={op} key={op} />
           ))}
         </Ul>
       </Details>

@@ -1,7 +1,7 @@
 import { Li, SumButton, SumDiv, Deg } from 'shared/components/workbench/menu'
 import { useTranslation } from 'next-i18next'
 
-export const ResetXray = (props) => {
+export const XrayReset = (props) => {
   const { t } = useTranslation(['app'])
 
   return (

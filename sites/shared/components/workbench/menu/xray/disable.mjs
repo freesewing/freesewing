@@ -1,7 +1,7 @@
 import { Li, SumButton, SumDiv, Deg } from 'shared/components/workbench/menu'
 import { useTranslation } from 'next-i18next'
 
-export const DisableXray = (props) => {
+export const XrayDisable = (props) => {
   const { t } = useTranslation(['cfp', 'settings'])
 
   return (

@@ -1,5 +1,4 @@
 import { Li, SumButton, SumDiv } from 'shared/components/workbench/menu/index.mjs'
-import { useTranslation } from 'next-i18next'
 
 const Option = (props) => {
   const active = props.sampleSettings?.type === 'option' && props.active === props.option
