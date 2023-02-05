@@ -1,20 +1,17 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import ThemePicker from 'shared/components/theme-picker.js'
-import LocalePicker from 'shared/components/locale-picker.js'
-import CloseIcon from 'shared/components/icons/close.js'
-import MenuIcon from 'shared/components/icons/menu.js'
-import HelpIcon from 'shared/components/icons/help.js'
-import Ribbon from 'shared/components/ribbon.js'
+import { ThemePicker } from 'shared/components/theme-picker.js'
+import { LocalePicker } from 'shared/components/locale-picker.js'
+import { CloseIcon, MenuIcon, HelpIcon, DocsIcon } from 'shared/components/icons/close.js'
+import { Ribbon } from 'shared/components/ribbon.js'
 import { WordMark } from 'shared/components/wordmark.js'
-import DocsIcon from 'shared/components/icons/docs.js'
 import { useTranslation } from 'next-i18next'
 
 const btnClasses =
   'btn btn-ghost text-base font-medium btn-sm text-neutral-content ' +
   ' capitalize hover:bg-transparent hover:text-secondary-focus'
 
-const Header = ({ app }) => {
+export const Header = ({ app }) => {
   const { t } = useTranslation(['common'])
 
   const [prevScrollPos, setPrevScrollPos] = useState(0)
@@ -83,5 +80,3 @@ const Header = ({ app }) => {
     </header>
   )
 }
-
-export default Header

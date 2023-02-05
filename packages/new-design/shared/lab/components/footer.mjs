@@ -1,15 +1,17 @@
-import Logo from 'shared/components/logos/freesewing.js'
-import { useTranslation } from 'next-i18next'
-import Ribbon from 'shared/components/ribbon.js'
 import Link from 'next/link'
+import { FreeSewingLogo } from 'shared/components/logos/freesewing.mjs'
+import { useTranslation } from 'next-i18next'
+import { Ribbon } from 'shared/components/ribbon.mjs'
 import { WordMark } from 'shared/components/wordmark.js'
 
-import DiscordIcon from 'shared/components/icons/discord.js'
-import FacebookIcon from 'shared/components/icons/facebook.js'
-import GithubIcon from 'shared/components/icons/github.js'
-import InstagramIcon from 'shared/components/icons/instagram.js'
-import RedditIcon from 'shared/components/icons/reddit.js'
-import TwitterIcon from 'shared/components/icons/twitter.js'
+import {
+  DiscordIcon,
+  FacebookIcon,
+  GithubIcon,
+  InstagramIcon,
+  RedditIcon,
+  TwitterIcon,
+} from 'shared/components/icons.mjs'
 
 const icon = { className: 'w-8 lg:w-12 h-8 lg:h-12' }
 const social = {
@@ -39,7 +41,7 @@ const social = {
   },
 }
 
-const Footer = ({ app }) => {
+export const Footer = ({ app }) => {
   const { t } = useTranslation(['common', 'patrons'])
 
   return (
@@ -80,5 +82,3 @@ const Footer = ({ app }) => {
     </footer>
   )
 }
-
-export default Footer

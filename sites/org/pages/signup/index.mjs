@@ -5,7 +5,7 @@ import { useBackend } from 'site/hooks/useBackend.mjs'
 import { useTranslation } from 'next-i18next'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { validateEmail, validateTld } from 'shared/utils.mjs'
+import { validateEmail, validateTld } from 'site/utils.mjs'
 // Components
 import Link from 'next/link'
 import { PageWrapper } from 'site/components/wrappers/page.mjs'

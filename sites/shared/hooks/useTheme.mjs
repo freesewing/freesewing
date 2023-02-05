@@ -1,7 +1,7 @@
-import { useLocalStorage } from 'shared/hooks/useLocalStorage'
 import { useEffect } from 'react'
+import { useLocalStorage } from 'shared/hooks/useLocalStorage.mjs'
 
-export function useTheme() {
+export const useTheme = () => {
   // make a local storage item for the theme
   const [storedTheme, setStoredTheme, ready] = useLocalStorage('theme', undefined)
 
