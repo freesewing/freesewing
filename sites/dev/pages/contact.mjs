@@ -1,9 +1,13 @@
-import Page from 'site/components/wrappers/page.js'
-import useApp from 'site/hooks/useApp.js'
-import Head from 'next/head'
-import WebLink from 'shared/components/web-link'
-import Popout from 'shared/components/popout'
+// Hooks
+import { useApp } from 'site/hooks/useApp.mjs'
+// Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+// Components
+import Head from 'next/head'
+import { PageWrapper } from 'site/components/wrappers/page.mjs'
+import { Popout } from 'shared/components/popout.mjs'
+import { WebLink } from 'shared/components/web-link.mjs'
+import { PageLink } from 'shared/components/page-link.mjs'
 
 const Yes = () => (
   <span role="img" className="pr-4">
@@ -21,7 +25,7 @@ const ContactPage = () => {
   const title = 'Contact information'
 
   return (
-    <Page app={app} title={title} slug="contact" crumbs={[[title, 'contact']]}>
+    <PageWrapper app={app} title={title} slug="contact" crumbs={[[title, 'contact']]}>
       <Head>
         <meta property="og:type" content="article" key="type" />
         <meta
@@ -203,7 +207,7 @@ const ContactPage = () => {
           </ul>
         </div>
       </div>
-    </Page>
+    </PageWrapper>
   )
 }
 
