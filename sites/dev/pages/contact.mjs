@@ -7,7 +7,6 @@ import Head from 'next/head'
 import { PageWrapper } from 'site/components/wrappers/page.mjs'
 import { Popout } from 'shared/components/popout.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
-import { PageLink } from 'shared/components/page-link.mjs'
 
 const Yes = () => (
   <span role="img" className="pr-4">

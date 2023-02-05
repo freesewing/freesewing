@@ -52,7 +52,7 @@ export const XrayList = (props) => {
         {Object.keys(types).map(
           (type) =>
             part[type] && (
-              <Ul>
+              <Ul key={type}>
                 <Li>
                   <Details>
                     <Summary>
