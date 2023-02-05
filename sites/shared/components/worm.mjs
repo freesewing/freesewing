@@ -41,7 +41,7 @@ export const Worm = ({ list, fixed = false }) => {
       }
     >
       {list.map((item) => (
-        <PreviewTile {...item} fixed={fixed} />
+        <PreviewTile {...item} fixed={fixed} key={item} />
       ))}
     </div>
   )

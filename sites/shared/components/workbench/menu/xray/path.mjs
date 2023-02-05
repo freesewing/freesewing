@@ -3,7 +3,7 @@ import { formatMm } from 'shared/utils.mjs'
 import Attributes from './attributes.mjs'
 import Ops from './path-ops.mjs'
 
-export const XrayPath = ({ pathName, partName, draft, t, units }) => {
+export const XrayPath = ({ pathName, partName, draft, units }) => {
   const path = draft?.parts?.[partName]?.paths?.[pathName]
 
   if (!path) return null

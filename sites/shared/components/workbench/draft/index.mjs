@@ -28,8 +28,8 @@ export const LabDraft = (props) => {
     return (
       <Error
         error={error}
-        patternLogs={pattern.store.logs}
-        setLogs={pattern.setStores[0].logs}
+        patternLogs={patternProps.store.logs}
+        setLogs={patternProps.setStores[0].logs}
         updateGist={updateGist}
       />
     )

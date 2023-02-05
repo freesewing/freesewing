@@ -6,12 +6,11 @@ import { useTheme } from 'shared/hooks/useTheme.mjs'
 // Prebuild navigation
 import prebuildNavigation from 'site/prebuild/navigation.js'
 
-export const useApp = (full = true) => {
+export const useApp = () => {
   // No translation for freesewing.dev
   const language = 'en'
 
   // Persistent state
-  const [account, setAccount] = useLocalStorage('account', { username: false })
   const [theme, setTheme] = useTheme()
 
   // React State

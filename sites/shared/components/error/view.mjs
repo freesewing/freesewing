@@ -39,7 +39,7 @@ export const ErrorView = ({ children, inspectChildren }) => {
               className="text-primary font-bold"
               href="https://github.com/orgs/freesewing/teams/bughunters"
             >
-              FreeSewing's bughunters team
+              FreeSewing&apos;s bughunters team
             </a>{' '}
             who will investigate the problem on your behalf
           </li>

@@ -3,7 +3,7 @@
  * I think we should move them to the component where they are used, for I don't think
  * they are used anywhere else, so there's little use in having them here
  */
-export default function () {
+const SheetIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -21,3 +21,5 @@ export default function () {
     </svg>
   )
 }
+
+export default SheetIcon

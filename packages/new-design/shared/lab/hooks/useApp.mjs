@@ -10,7 +10,6 @@ export const useApp = () => {
   const locale = useRouter().locale
 
   // Persistent state
-  const [account, setAccount] = useLocalStorage('account', { username: false })
   const [theme, setTheme] = useTheme()
 
   // React State

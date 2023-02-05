@@ -59,7 +59,6 @@ export const useApp = () => {
   const { t } = useTranslation(['app'])
 
   // Persistent state
-  const [account, setAccount] = useLocalStorage('account', { username: false })
   const [theme, setTheme] = useTheme()
 
   // React State

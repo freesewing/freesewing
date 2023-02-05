@@ -43,7 +43,7 @@ const translations = {
   },
 }
 
-const SupportPage = (props) => {
+const SupportPage = () => {
   const app = useApp()
   const { t } = useTranslation(['common', 'patrons'])
   return (

@@ -3,17 +3,17 @@ import { CountOption } from 'shared/components/workbench/inputs/design-option-co
 import { ListOption } from 'shared/components/workbench/inputs/design-option-list.mjs'
 import { Popout } from 'shared/components/popout.mjs'
 
-export const Tmp = (props) => <p>not yet</p>
+export const Tmp = () => <p>not yet</p>
 
 export const inputs = {
-  pct: DesignOptionPctDeg,
-  count: CountOption,
-  deg: (props) => <DesignOptionPctDeg {...props} type="deg" />,
-  list: ListOption,
-  mm: () => (
+  Pct: DesignOptionPctDeg,
+  Count: CountOption,
+  Deg: (props) => <DesignOptionPctDeg {...props} type="deg" />,
+  List: ListOption,
+  Mm: () => (
     <Popout fixme compact>
       Mm options are deprecated. Please report this
     </Popout>
   ),
-  constant: Tmp,
+  Constant: Tmp,
 }

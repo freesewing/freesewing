@@ -8,8 +8,8 @@ import Layout from 'shared/components/layouts/default'
 /* This component should wrap all page content */
 export const PageWrapper = (props) => {
   const swipeHandlers = useSwipeable({
-    onSwipedLeft: (evt) => (props.app.primaryMenu ? props.app.setPrimaryMenu(false) : null),
-    onSwipedRight: (evt) => (props.app.primaryMenu ? null : props.app.setPrimaryMenu(true)),
+    onSwipedLeft: () => (props.app.primaryMenu ? props.app.setPrimaryMenu(false) : null),
+    onSwipedRight: () => (props.app.primaryMenu ? null : props.app.setPrimaryMenu(true)),
     trackMouse: true,
   })
 

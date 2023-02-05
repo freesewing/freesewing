@@ -2,7 +2,7 @@ import { useTranslation } from 'next-i18next'
 import { formatMm, formatPercentage } from 'shared/utils.mjs'
 
 export const values = {
-  pct: (props) => {
+  Pct: (props) => {
     const val =
       typeof props.gist?.options?.[props.option] === 'undefined'
         ? props.design.patternConfig.options[props.option].pct / 100
@@ -23,7 +23,7 @@ export const values = {
       </span>
     )
   },
-  bool: (props) => {
+  Bool: (props) => {
     const { t } = useTranslation(['app'])
     const dflt = props.design.patternConfig.options[props.option].bool
     let current = props.gist?.options?.[props.option]
@@ -38,7 +38,7 @@ export const values = {
       </span>
     )
   },
-  count: (props) => {
+  Count: (props) => {
     const dflt = props.design.patternConfig.options[props.option].count
     const current = props.gist?.options?.[props.option]
     return dflt == current || typeof current === 'undefined' ? (
@@ -47,7 +47,7 @@ export const values = {
       <span className="text-accent">{current}</span>
     )
   },
-  list: (props) => {
+  List: (props) => {
     const dflt = props.design.patternConfig.options[props.option].dflt
     const current = props.gist?.options?.[props.option]
     const prefix = `${props.option}.o.`
@@ -60,7 +60,7 @@ export const values = {
       <span className="text-accent">{translate(current)}</span>
     )
   },
-  deg: (props) => {
+  Deg: (props) => {
     const dflt = props.design.patternConfig.options[props.option].deg
     const current = props.gist?.options?.[props.option]
     return dflt == current || typeof current === 'undefined' ? (
@@ -69,10 +69,10 @@ export const values = {
       <span className="text-accent">{current}&deg;</span>
     )
   },
-  mm: (props) => {
+  Mm: () => {
     return <p>No mm val yet</p>
   },
-  constant: (props) => {
+  Constant: () => {
     return <p>No constant val yet</p>
   },
 }

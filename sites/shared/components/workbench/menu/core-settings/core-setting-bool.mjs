@@ -6,7 +6,7 @@ export const CoreSettingBool = (props) => {
   const { t } = useTranslation(['app'])
   const [value, setValue] = useState(props.gist[props.setting])
 
-  const toggle = (evt) => {
+  const toggle = () => {
     props.updateGist([props.setting], !value)
     setValue(!value)
   }

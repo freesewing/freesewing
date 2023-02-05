@@ -10,7 +10,7 @@ export const Tr = ({ children }) => <tr className="border border-base-300">{chil
 export const KeyTd = ({ children }) => <td className="p-3 text-right">{children}:</td>
 export const ValTd = ({ children }) => <td className="p-3">{children}</td>
 
-export const TextAlongPath = ({ id, size, fill = 'var(--pattern-note)', txt }) => (
+export const TextAlongPath = ({ id, size, txt }) => (
   <text>
     <textPath xlinkHref={`#${id}`} startOffset="50%">
       <tspan
@@ -610,9 +610,23 @@ const XrayPath = (props) => {
       {ops.length > 0
         ? ops.map((op, i) =>
             op.ops[1].type === 'curve' ? (
-              <XrayCurve {...props} path={op} ops={ops} i={i} pathName={`${props.pathName}_test`} />
+              <XrayCurve
+                {...props}
+                path={op}
+                ops={ops}
+                i={i}
+                pathName={`${props.pathName}_test`}
+                key={i}
+              />
             ) : (
-              <XrayLine {...props} path={op} ops={ops} i={i} pathName={`${props.pathName}_test`} />
+              <XrayLine
+                {...props}
+                path={op}
+                ops={ops}
+                i={i}
+                pathName={`${props.pathName}_test`}
+                key={i}
+              />
             )
           )
         : null}

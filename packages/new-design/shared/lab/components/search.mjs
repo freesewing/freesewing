@@ -1,4 +1,4 @@
 // Noop placeholder
-const Noop = (props) => null
+const Noop = () => null
 
 export default Noop

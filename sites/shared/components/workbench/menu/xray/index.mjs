@@ -41,7 +41,7 @@ export const XrayMenu = (props) => {
           <XrayReset {...props} />
           {props.gist?._state?.xray?.parts &&
             Object.keys(props.gist._state.xray.parts).map((partName) => (
-              <XrayList {...props} partName={partName} />
+              <XrayList {...props} partName={partName} key={partName} />
             ))}
         </Ul>
       )}

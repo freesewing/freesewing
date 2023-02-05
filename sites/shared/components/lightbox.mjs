@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export const Lightbox = ({ cancel, children }) => {
+export const Lightbox = ({ children }) => {
   const [box, setBox] = useState(false)
 
   if (box)

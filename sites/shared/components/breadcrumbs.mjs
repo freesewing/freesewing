@@ -2,7 +2,7 @@ import { Fragment } from 'react'
 import Link from 'next/link'
 import { FreeSewingIcon } from 'shared/components/icons.mjs'
 
-export const Breadcrumbs = ({ crumbs = [], title }) =>
+export const Breadcrumbs = ({ crumbs = [] }) =>
   crumbs ? (
     <ul className="flex flex-row flex-wrap gap-2 font-bold">
       <li>

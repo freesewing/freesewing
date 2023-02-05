@@ -5,7 +5,7 @@ import { PageWrapper } from 'site/components/wrappers/page.mjs'
 import { LabLayout } from 'site/components/layouts/lab.mjs'
 import { WorkbenchWrapper } from 'shared/components/wrappers/workbench.mjs'
 
-const WorkbenchPage = (props) => {
+const WorkbenchPage = () => {
   const app = useApp()
 
   return (

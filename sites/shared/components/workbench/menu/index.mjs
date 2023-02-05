@@ -14,7 +14,7 @@ export const Details = (props) => (
     {props.children}
   </details>
 )
-export const Deg = (props) => (
+export const Deg = () => (
   <span className="text-3xl inline-block p-0 leading-3 px-2 translate-y-3">&deg;</span>
 )
 export const NoSumDiv = (props) => (

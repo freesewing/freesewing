@@ -37,7 +37,7 @@ export async function getStaticProps({ locale }) {
  * Main method that does what needs doing
  */
 
-export const prebuildLab = async (site) => {
+export const prebuildLab = async () => {
   const promises = []
   for (const section in designsByType) {
     // Iterate over sections

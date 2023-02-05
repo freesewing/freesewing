@@ -26,7 +26,7 @@ export const FlipIconInner = ({ x = 0, y = 0, rotate = 0, ...style }) => (
   </g>
 )
 
-export default function ({ className = 'h-6 w-6' }) {
+const FlipIcon = ({ className = 'h-6 w-6' }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -40,3 +40,5 @@ export default function ({ className = 'h-6 w-6' }) {
     </svg>
   )
 }
+
+export default FlipIcon

@@ -1,4 +1,5 @@
 import { useTranslation } from 'next-i18next'
+import { ClearIcon } from 'shared/components/icons.mjs'
 
 const Triangle = ({ transform = 'translate(0,0)', fill = 'currentColor' }) => (
   <path
@@ -9,6 +10,10 @@ const Triangle = ({ transform = 'translate(0,0)', fill = 'currentColor' }) => (
     transform-origin="12 12"
     d="M1 12m9 3m-6 4h2c3 0 3 -3 3-3L9 3c-0-1.732 -2.25-2.6125 -3.325 -.77L2 16c-.77 1.333.192 3 1.732 3z"
   />
+)
+
+const Line = () => (
+  <path strokeLinecap="round" strokeLinejoin="round" transform="translate(12, 2)" d="M0 0L0 20" />
 )
 
 const FlipIconInner = ({ x = 0, y = 0, rotate = 0, ...style }) => (
@@ -49,7 +54,7 @@ const Button = ({ onClickCb, transform, Icon, children }) => {
 }
 
 /** buttons for manipulating the part */
-export const Buttons = ({ transform, flip, rotate, setRotate, resetPart, rotate90 }) => {
+export const Buttons = ({ transform, flip, rotate, resetPart, rotate90 }) => {
   const { t } = useTranslation('workbench')
   return (
     <g transform={transform}>
@@ -61,7 +66,7 @@ export const Buttons = ({ transform, flip, rotate, setRotate, resetPart, rotate9
       <Button
         onClickCb={resetPart}
         transform={`translate(${rectSize / -2}, ${rectSize / -2})`}
-        Icon={ClearIconInner}
+        Icon={ClearIcon}
       >
         {t('toolbar.resetPart')}
       </Button>

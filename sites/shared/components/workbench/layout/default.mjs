@@ -6,7 +6,7 @@ import get from 'lodash.get'
 // Components
 import Link from 'next/link'
 import { PrimaryNavigation } from 'shared/components/navigation/primary.mjs'
-import { RightIcon, LeftIcon } from 'shared/components/icons.mjs'
+import { RightIcon, LeftIcon, FreeSewingIcon } from 'shared/components/icons.mjs'
 import { Header } from 'site/components/header.mjs'
 import { Footer } from 'site/components/footer.mjs'
 import { Search } from 'site/components/search.mjs'
@@ -18,7 +18,7 @@ export const PageTitle = ({ app, slug, title }) => {
   return <h1>FIXME: This page has no title</h1>
 }
 
-const Breadcrumbs = ({ app, slug = false, title }) => {
+const Breadcrumbs = ({ app, slug = false }) => {
   if (!slug) return null
   const crumbs = []
   const chunks = slug.split('/')
@@ -32,7 +32,7 @@ const Breadcrumbs = ({ app, slug = false, title }) => {
     <ul className="flex flex-row flex-wrap gap-2 font-bold">
       <li>
         <Link href="/" title="To the homepage" className="text-base-content">
-          <Logo size={24} fill="currentColor" stroke={false} />
+          <FreeSewingIcon size={24} className="w-8 h-8" fill stroke={0} />
         </Link>
       </li>
       {crumbs.map((crumb) => (
@@ -182,15 +182,15 @@ export const DefaultLayout = ({
               >
                 {collapseAltMenu ? (
                   <>
-                    <Left />
-                    <Left />
-                    <Left />
+                    <LeftIcon />
+                    <LeftIcon />
+                    <LeftIcon />
                   </>
                 ) : (
                   <>
-                    <Right />
-                    <Right />
-                    <Right />
+                    <RightIcon />
+                    <RightIcon />
+                    <RightIcon />
                   </>
                 )}
               </button>

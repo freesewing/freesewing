@@ -166,7 +166,7 @@ export const WorkbenchWrapper = ({
   }
 
   // Layout to use
-  const LayoutComponent = layout ? layout : Layout
+  const LayoutComponent = layout
 
   const Component = views[gist._state?.view] ? views[gist._state.view] : views.welcome
 
