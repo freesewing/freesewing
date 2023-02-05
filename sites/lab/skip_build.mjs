@@ -1,4 +1,5 @@
 import process from 'node:process'
+import { execSync } from 'child_process'
 
 // Do not block production builds
 if (process.env.VERCEL_ENV === 'production') {
@@ -12,13 +13,32 @@ if (process.env.VERCEL_GIT_COMMIT_AUTHOR_LOGIN === 'dependabot[bot]') {
   process.exit(0)
 }
 
-// Do not build anything that is not the develop branch
-if (process.env.VERCEL_GIT_COMMIT_REF === 'develop') {
+const branch = process.env.VERCEL_GIT_COMMIT_REF
+// Always build develop branch
+if (branch === 'develop') {
   console.log('✅ - develop build - Proceed to build')
   process.exit(1)
 }
 
+// Only build pull requests that made changes to lab
+if (process.env.VERCEL_GIT_PULL_REQUEST_ID) {
+  try {
+    const changes = execSync(
+      `git diff --name-only $(git merge-base develop ${branch}) ${branch} sites/shared/ sites/lab`
+    ).toString()
+    if (changes) {
+      console.log('✅ - Lab Pull Request - Proceed to build')
+      process.exit(1)
+    }
+  } catch {
+    // just don't error out
+  }
+
+  console.log('🛑 - Pull Request made no changes to Lab - Do not build')
+  process.exit(0)
+}
+
 console.log('🛑 - Unhandled case - Do not build')
 console.log(`  VERCEL_GIT_COMMIT_AUTHOR_LOGIN: ${process.env.VERCEL_GIT_COMMIT_AUTHOR_LOGIN}`)
-console.log(`  VERCEL_GIT_COMMIT_REF: ${process.env.VERCEL_GIT_COMMIT_REF}`)
+console.log(`  VERCEL_GIT_COMMIT_REF: ${branch}`)
 process.exit(0)

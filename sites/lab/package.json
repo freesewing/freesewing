@@ -14,13 +14,13 @@
     "url": "https://freesewing.org/patrons/join"
   },
   "scripts": {
-    "build": "node --experimental-json-modules ../../node_modules/next/dist/bin/next build",
+    "build": "next build",
     "cibuild": "yarn build",
     "clean": "rimraf pages/*.mjs && rimraf pages/*/*.mjs && rimraf pages/v/*/*.mjs",
-    "dev": "node --experimental-json-modules ../../node_modules/next/dist/bin/next dev -p 8000",
-    "develop": "node --experimental-json-modules ../../node_modules/next/dist/bin/next dev -p 8000",
-    "lint": "../../node_modules/next/dist/bin/next lint",
-    "prebuild": "SITE=lab node --experimental-json-modules ../shared/prebuild/index.mjs",
+    "dev": "next dev -p 8000",
+    "develop": "next dev -p 8000",
+    "lint": "next lint",
+    "prebuild": "node --experimental-json-modules ../shared/prebuild/index.mjs",
     "start": "yarn prebuild && yarn dev"
   },
   "peerDependencies": {},
