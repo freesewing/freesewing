@@ -152,8 +152,8 @@ export const prebuildMdx = async (site) => {
 
   // Write list of all MDX paths (in one language)
   fs.writeFileSync(
-    path.resolve('..', site, 'prebuild', `mdx.paths.js`),
-    `export default ${JSON.stringify(Object.keys(pages.en), null, 2)}`
+    path.resolve('..', site, 'prebuild', `mdx.paths.mjs`),
+    `export const mdxPaths = ${JSON.stringify(Object.keys(pages.en), null, 2)}`
   )
 
   return pages
