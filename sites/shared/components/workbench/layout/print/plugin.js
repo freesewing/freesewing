@@ -259,9 +259,9 @@ const basePlugin = ({
     /** add a ruler to the top left corner of the page */
     addRuler({ xAxis, pageName }, shorthand) {
       const { points, paths, Path } = shorthand
-      // arbitrary number of units for the ruler
-      const rulerLength = 2
       const isMetric = this.context.settings.units === 'metric'
+      // not so arbitrary number of units for the ruler
+      const rulerLength = isMetric ? 10 : 2
       // distance to the end of the ruler
       const endPointDist = [(isMetric ? 10 : 25.4) * rulerLength, 0]
 
