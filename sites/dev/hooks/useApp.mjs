@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import set from 'lodash.set'
-// Stores state in local storage
-import { useLocalStorage } from 'shared/hooks/useLocalStorage.mjs'
 import { useTheme } from 'shared/hooks/useTheme.mjs'
 // Prebuild navigation
 import prebuildNavigation from 'site/prebuild/navigation.js'

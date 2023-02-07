@@ -1,6 +1,4 @@
 import { useState } from 'react'
-// Stores state in local storage
-import { useLocalStorage } from 'shared/hooks/useLocalStorage.mjs'
 // Locale and translation
 import { useRouter } from 'next/router'
 import { useTheme } from 'shared/hooks/useTheme.mjs'
