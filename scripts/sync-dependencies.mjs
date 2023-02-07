@@ -26,10 +26,36 @@ const dependency = branchName
 // because this is from dependabot,
 // and because we want all our versions synced
 // we simply find and replace the version wherever it is specified
-const rgx = new RegExp(`(?<='@?${dependency}':\\W{0,2}\\w*\\W?')\\d+\\.\\d+\\.\\d+(?=')`, 'g')
-const newDepsRaw = oldDepsRaw.replace(rgx, dependencyVersion)
-console.log(`Updating ${dependency} version to ${dependencyVersion} in config/dependencies.yaml`)
+const semVerRgx = `\\d+\\.\\d+\\.\\d+` // regex pattern to find semver
+const dependencyRgx = `'@?${dependency}':` //regex pattern to find a dependency based on the branch name
+let newDepsRaw = false
+
+// replace direct matches
+const directRgx = new RegExp(`(?<=${dependencyRgx}\\s(&.+\\s)?')${semVerRgx}(?=')`, 'g') // a regex to find the dependency if it has its own version
+if (oldDepsRaw.match(directRgx)) {
+  newDepsRaw = oldDepsRaw.replace(directRgx, dependencyVersion)
+
+  console.log(
+    `Updating ${dependency} version to ${dependencyVersion} in config/dependencies.yaml. This may impact linked dependencies`
+  )
+} else {
+  // otherwise find the name of its linked version
+  const linkedRgx = new RegExp(`(?<=${dependencyRgx}\\s\\*)\\w+`) // a regex to find the name of the linked version of this dependency
+  const linkedMatch = oldDepsRaw.match(linkedRgx)
+  // if there's a match
+  if (linkedMatch) {
+    // find and replace the version where it is declared
+    const declarationRgx = new RegExp(`(?<=&${linkedMatch[0]}\\s?')${semVerRgx}(?=')`)
+
+    newDepsRaw = oldDepsRaw.replace(declarationRgx, dependencyVersion)
+    console.log(`Updating linked version for ${linkedMatch[0]} in config/dependencies.yaml`)
+  }
+}
 
 // write the file
-writeFileSync(depsFile, newDepsRaw)
-console.log('Successfully updated config/dependencies.yaml')
+if (newDepsRaw) {
+  writeFileSync(depsFile, newDepsRaw)
+  console.log('Successfully updated config/dependencies.yaml')
+} else {
+  console.log('Could not find dependency to sync')
+}
