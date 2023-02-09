@@ -58,6 +58,7 @@ core:
     'lodash.get': &_get '4.4.2'
     'lodash.set': &_set '4.3.2'
     'lodash.unset': &_unset '4.5.2'
+    'lodash.clonedeep': '^4.5.0'
   dev:
     'eslint': &eslint '8.33.0'
     'nyc': '15.1.0'

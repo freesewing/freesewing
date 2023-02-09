@@ -21,10 +21,19 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        run: |
+          cd packages/core
+          npm i --workspaces=false --no-save
+          cd ../../scripts
+          npm i --workspaces=false --no-save
+          cd ../
+        env:
+          CI: true
       - name: Run Sync Script
         run: node ./scripts/sync-dependencies.mjs ${{ github.head_ref }}
       - name: Reconfigure
-        run: yarn reconfigure
+        run: node --experimental-json-modules --no-warnings ./scripts/reconfigure.mjs
       - name: Bootstrap
         run: npx lerna bootstrap
       - name: Commit Changes
@@ -33,5 +42,5 @@ jobs:
           git status
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git commit -m "[dependabot skip] bumped ${{ github.head_ref }} changes in config/dependencies.yaml"
+          git commit -m "[dependabot skip] chore(deps): bumped ${{ github.head_ref }} changes in config/dependencies.yaml"
           git push
