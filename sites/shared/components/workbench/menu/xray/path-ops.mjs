@@ -1,8 +1,8 @@
 import { Chevron } from 'shared/components/navigation/primary'
 import { Ul, Li, Details, Summary, SumDiv, NoSumDiv, Deg } from 'shared/components/workbench/menu'
-import Point from './point'
+import { XrayPoint } from './point'
 
-const MoveLine = ({ op }) => <Point point={op.to} />
+const MoveLine = ({ op }) => <XrayPoint point={op.to} />
 const Curve = ({ op }) =>
   ['cp1', 'cp2', 'to'].map((pnt) => (
     <Li key={pnt}>
@@ -14,7 +14,7 @@ const Curve = ({ op }) =>
           </SumDiv>
           <Chevron />
         </Summary>
-        <Point point={op[pnt]} />
+        <XrayPoint point={op[pnt]} />
       </Details>
     </Li>
   ))

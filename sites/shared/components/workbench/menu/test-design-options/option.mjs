@@ -1,6 +1,6 @@
 import { Li, SumButton, SumDiv } from 'shared/components/workbench/menu/index.mjs'
 
-const Option = (props) => {
+export const Option = (props) => {
   const active = props.sampleSettings?.type === 'option' && props.active === props.option
 
   const setSampleSettings = () => {
@@ -32,5 +32,3 @@ const Option = (props) => {
     </Li>
   )
 }
-
-export default Option

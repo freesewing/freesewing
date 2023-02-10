@@ -17,13 +17,13 @@ import { ExportDraft } from 'shared/components/workbench/exporting/index.mjs'
 import { GistAsJson, GistAsYaml } from 'shared/components/workbench/gist.mjs'
 import { DraftLogs } from 'shared/components/workbench/logs.mjs'
 import { CutLayout } from 'shared/components/workbench/layout/cut/index.mjs'
-import { PrintingLayout } from 'shared/components/workbench/layout/print/index.mjs'
+import { PrintLayout } from 'shared/components/workbench/layout/print/index.mjs'
 
 const views = {
   measurements: WorkbenchMeasurements,
   draft: LabDraft,
   test: LabSample,
-  printingLayout: PrintingLayout,
+  printingLayout: PrintLayout,
   cuttingLayout: CutLayout,
   export: ExportDraft,
   logs: DraftLogs,

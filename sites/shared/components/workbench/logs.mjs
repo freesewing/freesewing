@@ -104,7 +104,7 @@ const StoreLogs = ({ logs, units }) => (
   </div>
 )
 
-const Logs = (props) => {
+export const DraftLogs = (props) => {
   return (
     <Tabs
       tabs={[
@@ -121,4 +121,4 @@ const Logs = (props) => {
   )
 }
 
-export default Logs
+export default DraftLogs

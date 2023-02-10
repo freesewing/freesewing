@@ -88,6 +88,8 @@ packages/new-design/lib/banner.mjs
 # Lab auto-generated pages
 sites/lab/lib
 sites/lab/pages
+# but not the indexes
+!sites/lab/pages/*/index.js
 
 # Node dependencies
 node_modules
