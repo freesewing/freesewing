@@ -6,7 +6,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { PageWrapper } from 'site/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
-import { PageTitle } from 'shared/components/layouts/default.mjs'
+import { PageTitle } from 'shared/components/workbench/layout/default.mjs'
 
 const DesignLinks = ({ list, prefix = '' }) => {
   const { t } = useTranslation(['patterns'])
