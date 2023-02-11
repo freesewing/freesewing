@@ -42,6 +42,7 @@
     "react-dropzone": "14.2.3",
     "react-hotkeys-hook": "4.3.2",
     "react-instantsearch-dom": "6.38.3",
+    "react-hot-toast": "2.4.0",
     "react-markdown": "8.0.5",
     "react-swipeable": "7.0.0",
     "react-timeago": "7.1.0",

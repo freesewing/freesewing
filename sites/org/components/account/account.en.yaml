@@ -1,0 +1,36 @@
+account: Account
+yourAccount: Your account
+newPattern: New pattern
+newSet: New measurements set
+links: Links
+info: Info
+settings: Settings
+actions: Actions
+
+yourProfile: Your profile
+yourPatterns: Your patterns
+yourSets: Your measurement sets
+logout: Log out
+
+bio: Bio
+email: Email address
+github: Github username
+img: Profile image
+username: Username
+compare: Metricset comparison
+consent: Consent & Privacy
+control: Control
+imperial: Units
+apikeys: API Keys
+newsletter: Newsletter subscription
+password: Password
+mfa: Two-Factor authentication
+language: Language
+developer: Developer
+
+reloadAccount: Reload account
+exportData: Export your data
+reviewContent: Review your consent
+restrictProcessing: Restrict processing of your data
+disableAccount: Disable your account
+removeAccount: Remove your account

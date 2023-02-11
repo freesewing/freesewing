@@ -6,6 +6,7 @@ import { useHotkeys } from 'react-hotkeys-hook'
 // Components
 import { LayoutWrapper } from 'site/components/wrappers/layout.mjs'
 import { DocsLayout } from 'site/components/layouts/docs.mjs'
+import { Toaster } from 'site/components/toaster.mjs'
 // Add feeds
 import { Feeds } from 'site/components/feeds.mjs'
 
@@ -62,6 +63,23 @@ export const PageWrapper = ({
       <LayoutWrapper {...childProps}>
         {Layout ? <Layout {...childProps}>{children}</Layout> : children}
       </LayoutWrapper>
+      {app.modal ? (
+        <div
+          className={`fixed top-0 left-0 m-0 p-0 shadow drop-shadow-lg w-full h-screen
+              bg-base-100 bg-opacity-90 z-50 hover:cursor-pointer
+              flex flex-row items-center justify-center
+            `}
+          onClick={() => app.setModal(false)}
+        >
+          {app.modal}
+        </div>
+      ) : null}
+      <Toaster
+        position="bottom-right"
+        toastOptions={{
+          className: 'bg-base-100 text-base-content',
+        }}
+      />
     </div>
   )
 }
