@@ -24,7 +24,7 @@ if (branch === 'develop') {
 if (process.env.VERCEL_GIT_PULL_REQUEST_ID) {
   try {
     const changes = execSync(
-      `git diff --name-only $(git merge-base origin/develop HEAD) HEAD -- sites/shared/ sites/lab`
+      `git diff --name-only $(git merge-base develop HEAD) HEAD -- ../shared .`
     ).toString()
     if (changes) {
       console.log('✅ - Lab Pull Request - Proceed to build')
