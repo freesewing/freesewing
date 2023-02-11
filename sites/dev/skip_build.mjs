@@ -23,8 +23,11 @@ if (branch === 'develop') {
 // Only build pull requests that made changes to dev
 if (process.env.VERCEL_GIT_PULL_REQUEST_ID) {
   try {
+    // we need to fetch develop in order to get the merge base
+    execSync(`git fetch origin develop:develop --depth=1`)
+    // now check for changes
     const changes = execSync(
-      `git diff --name-only $(git merge-base origin/develop HEAD) HEAD -- sites/shared/ sites/dev`
+      `git diff --name-only $(git merge-base develop HEAD) HEAD -- ../shared .`
     ).toString()
     if (changes) {
       console.log('✅ - Dev Pull Request - Proceed to build')
