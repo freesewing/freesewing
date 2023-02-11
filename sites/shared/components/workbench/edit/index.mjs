@@ -1,13 +1,13 @@
 import yaml from 'js-yaml'
-import defaultSettings from './default-settings'
-import validateGist from './gist-validator'
+import { defaultGist } from 'shared/components/workbench/gist.mjs'
+import { validateGist } from './gist-validator.mjs'
 import { useEffect, useState, useRef } from 'react'
-import Popout from 'shared/components/popout.js'
+import Popout from 'shared/components/popout.mjs'
 import { useTranslation } from 'next-i18next'
 import { capitalize } from '@freesewing/core'
 
 /** a view for editing the gist as yaml */
-const Edit = (props) => {
+export const EditYaml = (props) => {
   let { gist, setGist, gistReady } = props
 
   const inputRef = useRef(null)
@@ -50,8 +50,8 @@ const Edit = (props) => {
       // and the default settings to make sure all necessary keys are accounted for,
       // but we're not keeping stuff that was supposed to be cleared
       const gistFromDefaults = { _state: gist._state }
-      for (const d in defaultSettings) {
-        gistFromDefaults[d] = gist[d] === undefined ? defaultSettings[d] : gist[d]
+      for (const d in defaultGist) {
+        gistFromDefaults[d] = gist[d] === undefined ? defaultGist[d] : gist[d]
       }
 
       // merge it all up
@@ -114,5 +114,3 @@ const Edit = (props) => {
     </div>
   )
 }
-
-export default Edit

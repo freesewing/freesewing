@@ -1,4 +1,4 @@
-import defaultSettings from './default-settings.js'
+import { defaultGist } from 'shared/components/workbench/gist.mjs'
 
 /** A utility for validating a gist against a design */
 class GistValidator {
@@ -16,11 +16,11 @@ class GistValidator {
 
   /** check that the settings all exist and are all of the right type */
   validateSettings() {
-    for (const key in defaultSettings) {
+    for (const key in defaultGist) {
       if (this.givenGist[key] === undefined) {
         this.errors[key] = 'MissingSetting'
         this.valid = false
-      } else if (typeof this.givenGist[key] !== typeof defaultSettings[key]) {
+      } else if (typeof this.givenGist[key] !== typeof defaultGist[key]) {
         this.errors[key] = 'TypeError'
         this.valid = false
       }
@@ -101,7 +101,7 @@ class GistValidator {
 const validator = new GistValidator()
 
 /** make and run a gist validator */
-export default function validateGist(givenGist, design) {
+export function validateGist(givenGist, design) {
   validator.setGist(givenGist, design)
   return validator.validate()
 }
