@@ -9,10 +9,7 @@ export const AccountProfile = ({ app }) => {
 
   const toggleModal = () => {
     if (modal) setModal(false)
-    else {
-      setModal(<img src={account.img} />)
-      app.toast(<span>test</span>)
-    }
+    else setModal(<img src={account.img} />)
   }
 
   if (!account) return null
@@ -21,7 +18,7 @@ export const AccountProfile = ({ app }) => {
     <div className="my-8">
       <div className="flex flex-row w-full justify-center">
         <div className="w-24 mask mask-squircle bg-neutral z-10">
-          <img src={account.img} onClick={toggleModal} />
+          <img src={account.img} onClick={toggleModal} className="hover:cursor-zoom-in" />
         </div>
         {!account.patron ? (
           <Link href="/patrons/join" className="z-20">
