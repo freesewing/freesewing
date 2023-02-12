@@ -2,7 +2,7 @@ import { useState } from 'react'
 import set from 'lodash.set'
 import { useTheme } from 'shared/hooks/useTheme.mjs'
 // Prebuild navigation
-import prebuildNavigation from 'site/prebuild/navigation.js'
+import { prebuildNavigation } from 'site/prebuild/navigation.mjs'
 
 export const useApp = () => {
   // No translation for freesewing.dev
