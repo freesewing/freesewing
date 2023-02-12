@@ -34,3 +34,68 @@ reviewContent: Review your consent
 restrictProcessing: Restrict processing of your data
 disableAccount: Disable your account
 removeAccount: Remove your account
+
+mdSupport: You can use markdown here
+or: or
+continue: Continue
+save: Save
+noThanks: No thanks
+
+# bio
+bioTitle: Tell people a little bit about yourself
+bioPreview: Bio Preview
+bioPlaceholder: "|
+I make clothes and shoes. I design sewing patterns. I write code. I run [FreeSewing](http://freesewing.org)
+
+我也在学中文
+
+Also: Introvert 🙊
+
+(he/him) or (they/them)"
+
+# compare
+compareTitle: Are you comfortable with measurement sets being compared?
+compareYes: Yes, in case it may help me
+compareYesd: |
+  We will occasionally show how your set of measurements compares to other measurement sets.
+  This allows us to detect potential problems in your measurements or patterns.
+compareNo: No, never compare
+compareNod: |
+  We will never compare your set of measurements to other measurement sets.
+  This will limit our ability to warn you about potential problems in your measurement sets or patterns.
+
+# control
+control1t: Keep it as simple as possible
+control1d: Hides all but the most crucial features.
+control2t: Keep it simple, but not too simple
+control2d: Hides the majority of features.
+control3t: Balance simplicity with power
+control3d: Reveals the majority of features, but not all.
+control4t: Give me all powers, but keep me safe
+control4d: Reveals all features, keeps handrails and safety checks.
+control5t: Get out of my way
+control5d: Reveals all features, removes all handrails and safety checks.
+controlShowMore: Show more options
+controlTitle: What do you prefer?
+
+# img
+imgTitle: How about a picture too?
+imgDragAndDropImageHere: Drag and drop an image here
+imgSelectImage: Select an image
+
+# newsletter
+newsletterTitle: Would you like to reveice the FreeSewing newsletter?
+newsletterYes: Yes, I would like to receive the newsletter
+newsletterYesd: Once every 3 months you'll receive an email from us with honest wholesome content. No tracking, no ads, no nonsense.
+newsletterNod: You can always change your mind later. But until you do, we will not send you any newsletters.
+
+# imperial
+metricUnits: Metric units (cm)
+metricUnitsd: Pick this if you prefer centimeters over inches.
+imperialUnits: Imperial units (inch)
+imperialUnitsd: Pick this if you prefer inches over centimeters.
+unitsTitle: Which units do you prefer?
+
+# username
+usernameTitle: What username would you like?
+usernameNotAvailable: Username is not available

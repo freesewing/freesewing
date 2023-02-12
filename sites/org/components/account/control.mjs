@@ -4,7 +4,8 @@ import { useTranslation } from 'next-i18next'
 import { useBackend } from 'site/hooks/useBackend.mjs'
 // Components
 import Link from 'next/link'
-import { Choice, Icons, welcomeSteps } from '../shared.mjs'
+import { Choice, Icons, welcomeSteps } from './shared.mjs'
+import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
 
 export const ns = ['control']
 
@@ -45,9 +46,7 @@ export const ControlSettings = ({ app, title = false, welcome = false }) => {
       })}
       {welcome ? (
         <>
-          <Link href={nextHref} className="btn btn-primary w-full mt-12">
-            {t('continue')}
-          </Link>
+          <ContinueButton app={app} btnProps={{ href: nextHref }} link />
           {welcomeSteps[selection].length > 1 ? (
             <>
               <progress
@@ -66,5 +65,3 @@ export const ControlSettings = ({ app, title = false, welcome = false }) => {
     </>
   )
 }
-
-export default ControlSettings

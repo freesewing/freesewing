@@ -4,11 +4,13 @@ import { useSwipeable } from 'react-swipeable'
 import { useRouter } from 'next/router'
 import { useHotkeys } from 'react-hotkeys-hook'
 // Components
-import { LayoutWrapper } from 'site/components/wrappers/layout.mjs'
+import { LayoutWrapper, ns as layoutNs } from 'site/components/wrappers/layout.mjs'
 import { DocsLayout } from 'site/components/layouts/docs.mjs'
 import { Toaster } from 'site/components/toast/index.mjs'
 // Add feeds
 import { Feeds } from 'site/components/feeds.mjs'
+
+export const ns = [...new Set([...layoutNs])]
 
 /* This component should wrap all page content */
 export const PageWrapper = ({

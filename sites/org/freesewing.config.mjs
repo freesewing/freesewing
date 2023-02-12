@@ -16,8 +16,8 @@ export const freeSewingConfig = {
         email: 3,
         github: 3,
         img: 2,
-        imperial: 2,
-        languge: 2,
+        units: 2,
+        language: 2,
         username: 2,
       },
       settings: {
@@ -33,4 +33,5 @@ export const freeSewingConfig = {
       },
     },
   },
+  languages: ['en', 'es', 'de', 'fr', 'nl'],
 }

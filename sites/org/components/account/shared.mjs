@@ -1,3 +1,4 @@
+import { Spinner } from 'shared/components/spinner.mjs'
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import {
@@ -10,6 +11,8 @@ import {
   BioIcon,
   UserIcon,
   LeftIcon,
+  OkIcon,
+  NoIcon,
 } from 'shared/components/icons.mjs'
 
 const btnClasses = {
@@ -26,17 +29,30 @@ const btnClasses = {
 const spanClasses =
   'p-4 w-8 h-8 shrink-0 rounded-full text-center p-0 py-2 bg-secondary text-secondary-content'
 
-export const BackToAccountButton = () => {
+export const BackToAccountButton = ({ loading = false }) => {
   const { t } = useTranslation(['account'])
 
   return (
-    <Link className="btn btn-secondary btnoutline mt-4 pr-6" href="/account">
-      <LeftIcon className="h-6 w-6 mr-2" /> {t('yourAccount')}
+    <Link className={`btn ${loading ? 'btn-accent' : 'btn-secondary'} mt-4 pr-6`} href="/account">
+      <span className="flex flex-row items-center gap-2">
+        {loading ? <Spinner /> : <LeftIcon />}
+        {t('yourAccount')}
+      </span>
     </Link>
   )
 }
 
-export const Choice = ({ val, update, current, children, bool = false }) => {
+export const Choice = ({
+  val,
+  update,
+  current,
+  children,
+  bool = false,
+  boolChoices = {
+    yes: <OkIcon className="w-6 h-6 text-success shrink-0" stroke={4} />,
+    no: <NoIcon className="w-6 h-6 text-error shrink-0" stroke={3} />,
+  },
+}) => {
   const active = val === current
 
   return (
@@ -44,7 +60,11 @@ export const Choice = ({ val, update, current, children, bool = false }) => {
       className={`${btnClasses.dflt} ${active ? btnClasses.active : btnClasses.inactive}`}
       onClick={() => update(val)}
     >
-      <span className={spanClasses}>{bool ? (val === 'yes' ? 1 : 2) : val}</span>
+      {bool ? (
+        boolChoices[val]
+      ) : (
+        <span className={spanClasses}>{bool ? (val === 'yes' ? 1 : 2) : val}</span>
+      )}
       <div className={`normal-case text-base-content`}>{children}</div>
     </button>
   )

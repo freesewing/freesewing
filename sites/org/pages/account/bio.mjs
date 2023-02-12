@@ -5,12 +5,12 @@ import { useTranslation } from 'next-i18next'
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
-import { PageWrapper } from 'site/components/wrappers/page.mjs'
+import { PageWrapper, ns as pageNs } from 'site/components/wrappers/page.mjs'
 import { ns as authNs } from 'site/components/wrappers/auth/index.mjs'
-import { BioSettings, ns as bioNs } from 'site/components/account/bio/index.mjs'
+import { ns as bioNs } from 'site/components/account/bio.mjs'
 
 // Translation namespaces used on this page
-const namespaces = ['account', ...authNs, ...bioNs]
+const namespaces = [...new Set([...bioNs, ...authNs, ...pageNs])]
 
 /*
  * Some things should never generated as SSR
@@ -22,7 +22,7 @@ const DynamicAuthWrapper = dynamic(
 )
 
 const DynamicBio = dynamic(
-  () => import('site/components/account/bio/index.mjs').then((mod) => mod.BioSettings),
+  () => import('site/components/account/bio.mjs').then((mod) => mod.BioSettings),
   { ssr: false }
 )
 
@@ -30,8 +30,8 @@ const AccountPage = (props) => {
   const app = useApp(props)
   const { t } = useTranslation(namespaces)
   const crumbs = [
-    [t('yourAccount'), 'account'],
-    [t('bio'), 'bio'],
+    [t('yourAccount'), '/account'],
+    [t('bio'), '/account/bio'],
   ]
 
   return (
@@ -48,7 +48,7 @@ export default AccountPage
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale)),
+      ...(await serverSideTranslations(locale, namespaces)),
     },
   }
 }
