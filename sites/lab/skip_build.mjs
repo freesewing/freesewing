@@ -25,7 +25,13 @@ if (process.env.VERCEL_GIT_PULL_REQUEST_ID) {
   try {
     // we need to fetch develop in order to get the merge base
     console.log('skip build version 1')
-    execSync(`git fetch origin develop:develop --depth=1`)
+    execSync(
+      `git add remote origin https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}.git`
+    )
+    execSync(`git fetch origin develop:develop --depth=10`)
+    execSync(
+      `until git merge-base develop HEAD > /dev/null; do git fetch origin develop:develop --deepen=1; done`
+    )
     // now check for changes
     const changes = execSync(
       `git diff --name-only $(git merge-base develop HEAD) HEAD -- ../shared .`
