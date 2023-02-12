@@ -170,12 +170,13 @@ export const optionsMenuStructure = (options) => {
   // Fixme: One day we should sort this based on the translation
   for (const option of orderBy(sorted, ['menu', 'name'], ['asc'])) {
     if (typeof option === 'object') {
-      if (option.menu) set(menu, option.name, optionType(option))
-      else if (typeof option.menu === 'undefined')
+      if (option.menu) set(menu, [option.menu, option.name], optionType(option))
+      else if (typeof option.menu === 'undefined') {
         console.log(
           `Warning: Option ${option.name} does not have a menu config. ` +
             'Either configure it, or set it to false to hide this option.'
         )
+      }
     }
   }
 
