@@ -1,13 +1,9 @@
-import Page from 'site/components/wrappers/page.js'
-import useApp from 'site/hooks/useApp.js'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import Layout from 'site/components/layouts/docs'
 import { useTranslation } from 'next-i18next'
-import DiscordIcon from 'shared/components/icons/discord'
-import GithubIcon from 'shared/components/icons/github'
-import CcIcon from 'shared/components/icons/community'
-import HeartIcon from 'shared/components/icons/heart'
-import DocsIcon from 'shared/components/icons/docs'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { PageWrapper } from 'site/components/wrappers/page.mjs'
+import { useApp } from 'site/hooks/useApp.mjs'
+import { DefaultLayout } from 'site/components/layouts/default.mjs'
+import { DiscordIcon, GithubIcon, CcIcon, HeartIcon, DocsIcon } from 'shared/components/icons/docs'
 
 const gh = `<a class="text-secondary hover:text-secondary-focus"
 href="https://github.com/freesewing/freesewing">freesewing/freesewing</a>`
@@ -47,11 +43,11 @@ const translations = {
   },
 }
 
-const SupportPage = (props) => {
+const SupportPage = () => {
   const app = useApp()
   const { t } = useTranslation(['common', 'patrons'])
   return (
-    <Page app={app} title={t('support')} layout={Layout}>
+    <PageWrapper app={app} title={t('support')} layout={DefaultLayout}>
       <h2 className="border-0">Discord</h2>
       <div className="flex flex-row flex-wrap gap-2">
         <p className="max-w-3xl">{translations.discord[app.locale]}</p>
@@ -116,7 +112,7 @@ const SupportPage = (props) => {
           </a>
         </div>
       </div>
-    </Page>
+    </PageWrapper>
   )
 }
 

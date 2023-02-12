@@ -1,0 +1,30 @@
+{
+  "name": "@freesewing/scripts",
+  "version": "1.0.0",
+  "description": "Scripts to run various business tasks for the @freesewing monorepo",
+  "repository": {
+    "type": "git",
+    "url": "github:freesewing/freesewing"
+  },
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.3.2",
+    "chalk": "^5.2.0",
+    "glob": "^8.0.3",
+    "i18n": "^0.15.1",
+    "js-yaml": "^4.1.0",
+    "lodash.get": "^4.4.2",
+    "lodash.orderby": "^4.6.0",
+    "lodash.set": "^4.3.2",
+    "mustache": "^4.2.0",
+    "nodemailer": "^6.9.1",
+    "prompts": "^2.4.2",
+    "rehype-format": "^4.0.1",
+    "rehype-stringify": "^9.0.3",
+    "remark-parse": "^10.0.1",
+    "remark-rehype": "^10.1.0",
+    "tlds": "^1.236.0",
+    "unified": "^10.1.2"
+  }
+}

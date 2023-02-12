@@ -1,18 +1,17 @@
-import { Pattern } from 'design/src/index.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { Pattern } from 'design/src/index.mjs'
+import { useApp } from 'site/hooks/useApp.mjs'
+import { PageWrapper } from 'site/components/wrappers/page.mjs'
+import { LabLayout } from 'site/components/layouts/lab.mjs'
+import { WorkbenchWrapper } from 'shared/components/wrappers/workbench.mjs'
 
-import Page from 'site/components/wrappers/page.js'
-import useApp from 'site/hooks/useApp.js'
-import WorkbenchWrapper from 'shared/components/wrappers/workbench.js'
-import Layout from 'site/components/layouts/lab'
-
-const WorkbenchPage = (props) => {
+const WorkbenchPage = () => {
   const app = useApp()
 
   return (
-    <Page app={app}>
-      <WorkbenchWrapper {...{ app, design: Pattern, layout: Layout }} />
-    </Page>
+    <PageWrapper app={app}>
+      <WorkbenchWrapper {...{ app, design: Pattern, layout: LabLayout }} />
+    </PageWrapper>
   )
 }
 
