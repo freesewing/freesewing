@@ -2,7 +2,7 @@ import yaml from 'js-yaml'
 import { defaultGist } from 'shared/components/workbench/gist.mjs'
 import { validateGist } from './gist-validator.mjs'
 import { useEffect, useState, useRef } from 'react'
-import Popout from 'shared/components/popout.mjs'
+import { Popout } from 'shared/components/popout.mjs'
 import { useTranslation } from 'next-i18next'
 import { capitalize } from '@freesewing/core'
 
