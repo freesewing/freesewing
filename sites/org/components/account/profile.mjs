@@ -33,11 +33,6 @@ export const AccountProfile = ({ app }) => {
       <div className="max-w-full truncate">
         <Markdown>{account.bio}</Markdown>
       </div>
-      <button onClick={() => app.toast.info('info')}>info</button>
-      <button onClick={() => app.toast.error('error')}>error</button>
-      <button onClick={() => app.toast.warning('warning')}>warning</button>
-      <button onClick={() => app.toast.accent('accent')}>accent</button>
-      <button onClick={() => app.toast.success('success')}>success</button>
     </div>
   )
 }

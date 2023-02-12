@@ -37,16 +37,13 @@ const icons = {
   accent: <ChatIcon className="w-6 h-6 text-accent" />,
 }
 
-export const Toast = ({ type = 'info', children }) => {
-  console.log('tasting')
-  return (
-    <div className={`w-64 alert shadow bg-base-100 p-0`}>
-      <div
-        className={`w-full m-0 bg-${type} p-4 border bg-opacity-30 rounded-lg flex flex-row items-center`}
-      >
-        {icons[type]}
-        <div>{children}</div>
-      </div>
+export const Toast = ({ type = 'info', children }) => (
+  <div className={`w-64 alert shadow bg-base-100 p-0`}>
+    <div
+      className={`w-full m-0 bg-${type} p-4 border bg-opacity-30 rounded-lg flex flex-row items-center`}
+    >
+      {icons[type]}
+      <div>{children}</div>
     </div>
-  )
-}
+  </div>
+)

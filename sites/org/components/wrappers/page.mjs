@@ -6,7 +6,7 @@ import { useHotkeys } from 'react-hotkeys-hook'
 // Components
 import { LayoutWrapper } from 'site/components/wrappers/layout.mjs'
 import { DocsLayout } from 'site/components/layouts/docs.mjs'
-import { Toaster } from 'site/components/toaster.mjs'
+import { Toaster } from 'site/components/toast/index.mjs'
 // Add feeds
 import { Feeds } from 'site/components/feeds.mjs'
 

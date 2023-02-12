@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { useTranslation } from 'next-i18next'
 import {
   CogIcon,
   ControlIcon,
@@ -8,6 +9,7 @@ import {
   LabelIcon,
   BioIcon,
   UserIcon,
+  LeftIcon,
 } from 'shared/components/icons.mjs'
 
 const btnClasses = {
@@ -23,6 +25,16 @@ const btnClasses = {
 }
 const spanClasses =
   'p-4 w-8 h-8 shrink-0 rounded-full text-center p-0 py-2 bg-secondary text-secondary-content'
+
+export const BackToAccountButton = () => {
+  const { t } = useTranslation(['account'])
+
+  return (
+    <Link className="btn btn-secondary btnoutline mt-4 pr-6" href="/account">
+      <LeftIcon className="h-6 w-6 mr-2" /> {t('yourAccount')}
+    </Link>
+  )
+}
 
 export const Choice = ({ val, update, current, children, bool = false }) => {
   const active = val === current

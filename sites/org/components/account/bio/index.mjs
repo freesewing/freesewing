@@ -2,11 +2,13 @@
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useBackend } from 'site/hooks/useBackend.mjs'
+import { useToast } from 'site/hooks/useToast.mjs'
 // Components
 import Link from 'next/link'
 import Markdown from 'react-markdown'
-import { Icons, welcomeSteps } from '../shared.mjs'
+import { Icons, welcomeSteps, BackToAccountButton } from '../shared.mjs'
 import { Popout } from 'shared/components/popout.mjs'
+import { PageLink } from 'shared/components/page-link.mjs'
 
 export const ns = ['bio']
 
@@ -23,11 +25,14 @@ const Tab = ({ id, activeTab, setActiveTab, t }) => (
 export const BioSettings = ({ app, title = false, welcome = false }) => {
   const backend = useBackend(app)
   const { t } = useTranslation(ns)
+  const toast = useToast()
   const [bio, setBio] = useState(app.account.bio)
   const [activeTab, setActiveTab] = useState('edit')
 
   const save = async () => {
-    await backend.updateAccount({ bio })
+    const result = await backend.updateAccount({ bio })
+    if (result) toast.for.settingsSaved()
+    else toast.for.backendError()
   }
 
   const nextHref =
@@ -59,9 +64,13 @@ export const BioSettings = ({ app, title = false, welcome = false }) => {
           </div>
         )}
       </div>
-      <button className={`btn btn-secondary mt-4 w-64`} onClick={save}>
+      <button
+        className={`btn mt-4 ${welcome ? 'btn-secondary w-64' : 'btn-primary w-full'}`}
+        onClick={save}
+      >
         {t('save')}
       </button>
+      {!welcome && <BackToAccountButton />}
       <Popout tip compact>
         {t('mdSupport')}
       </Popout>

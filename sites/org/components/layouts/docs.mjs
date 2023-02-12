@@ -21,7 +21,7 @@ export const DocsLayout = ({ app, title = false, children = [], crumbs = [] }) =
       >
         <AsideNavigation app={app} slug={slug} />
       </section>
-      <section className="py-8 lg:py-16 px-6 xl:pl-8 2xl:pl-16">
+      <section className="py-8 lg:py-16 px-6 xl:pl-8 2xl:pl-16 w-full max-w-2xl">
         <div>
           <Breadcrumbs crumbs={crumbs} />
           {title && <h1>{title}</h1>}

@@ -244,15 +244,9 @@ const Navigation = ({ app, active, className = '' }) => {
     levelButtons.push(<LevelButton title={title} key={0} level={0} {...shared} />)
   }
   if (levels[1]) {
+    const title = app.navigation?.[levels[0]]?.[levels[1]]?.__title || levels[1]
     if (showLevel > 0) navigation = navigation[levels[1]]
-    levelButtons.push(
-      <LevelButton
-        title={app.navigation[levels[0]][levels[1]].__title}
-        key={1}
-        level={1}
-        {...shared}
-      />
-    )
+    levelButtons.push(<LevelButton title={title} key={1} level={1} {...shared} />)
   }
   if (levels[2] && levels.length > 3) {
     if (showLevel > 1) navigation = navigation[levels[2]]
