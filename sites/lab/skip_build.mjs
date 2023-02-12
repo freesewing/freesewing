@@ -26,7 +26,7 @@ if (process.env.VERCEL_GIT_PULL_REQUEST_ID) {
     // we need to fetch develop in order to get the merge base
     console.log('skip build version 1')
     execSync(
-      `git add remote origin https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}.git`
+      `git remote add origin https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}.git`
     )
     execSync(`git fetch origin develop:develop --depth=10`)
     execSync(
