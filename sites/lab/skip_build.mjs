@@ -24,6 +24,7 @@ if (branch === 'develop') {
 if (process.env.VERCEL_GIT_PULL_REQUEST_ID) {
   try {
     // we need to fetch develop in order to get the merge base
+    console.log('skip build version 1')
     execSync(`git fetch origin develop:develop --depth=1`)
     // now check for changes
     const changes = execSync(
