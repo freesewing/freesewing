@@ -14,7 +14,7 @@ import {
 } from '../config/software/index.mjs'
 import { buildOrder } from '../config/build-order.mjs'
 import rootPackageJson from '../package.json' assert { type: 'json' }
-import { capitalize } from '../sites/shared/utils.mjs'
+import { capitalize } from '../packages/core/src/index.mjs'
 
 // Working directory
 const cwd = process.cwd()
