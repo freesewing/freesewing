@@ -17,6 +17,7 @@ export const LabSample = ({ gist, draft, updateGist, unsetGist, showInfo, app, f
   if (gist.sample) {
     try {
       draft = draft.sample()
+      patternProps = draft.getRenderProps()
       // Render as React
       for (const logs of patternProps.logs.sets) errors.push(...logs.error)
     } catch (err) {
@@ -30,8 +31,8 @@ export const LabSample = ({ gist, draft, updateGist, unsetGist, showInfo, app, f
   } else {
     // don't error on first page landing
     draft.draft()
+    patternProps = draft.getRenderProps()
   }
-  patternProps = draft.getRenderProps()
 
   return (
     <>
