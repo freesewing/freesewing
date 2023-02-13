@@ -65,7 +65,7 @@ export const WorkbenchWrapper = ({
   // State for gist
   const { gist, setGist, unsetGist, updateGist, gistReady, undoGist, resetGist } = useGist(
     design.designConfig?.data?.name,
-    app
+    app.locale
   )
   const [messages, setMessages] = useState([])
   const [popup, setPopup] = useState(false)
@@ -80,14 +80,14 @@ export const WorkbenchWrapper = ({
     if (!gistReady) return
     if (!['measurements', 'edit'].includes(gist._state?.view) && !hasRequiredMeasurements)
       updateGist(['_state', 'view'], 'measurements')
-  }, [gistReady, gist._state?.view, hasRequiredMeasurements])
+  }, [gistReady, gist._state?.view, hasRequiredMeasurements, updateGist])
 
   // If we need to preload the gist, do so
   useEffect(() => {
     if (preload && preload !== preloaded && from && preloaders[from]) {
       doPreload(preload, from, design, gist, setGist, setPreloaded)
     }
-  }, [preload, preloaded, from, design])
+  }, [preload, preloaded, from, design, gist, setGist])
 
   // Helper methods to manage the gist state
   const updateWBGist = useMemo(
@@ -97,7 +97,7 @@ export const WorkbenchWrapper = ({
         // Force close of menu on mobile if it is open
         if (closeNav && app.primaryMenu) app.setPrimaryMenu(false)
       },
-    [app]
+    [app, updateGist]
   )
 
   // Helper methods to handle messages

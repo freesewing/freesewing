@@ -7,7 +7,7 @@ import Md from 'react-markdown'
 
 export const Examples = ({ app, part, caption, xray }) => {
   // State for gist
-  const { gist, unsetGist, updateGist } = useGist('examples-mdx', app)
+  const { gist, unsetGist, updateGist } = useGist('examples-mdx', app.locale)
 
   if (xray) {
     gist._state.xray = { enabled: true }

@@ -1,38 +1,38 @@
-import { useState, useEffect, useRef, useReducer } from 'react'
+import { useState, useEffect } from 'react'
+
+const prefix = 'fs_'
 
 // See: https://usehooks.com/useLocalStorage/
-export function useLocalStorage(key, initialValue, reducer) {
-  const prefix = 'fs_'
-  const [storedValue, setStoredValue] =
-    typeof reducer == 'function' ? useReducer(reducer, initialValue) : useState(initialValue)
+export function useLocalStorage(key, initialValue) {
   // use this to track whether it's mounted. useful for doing other effects outside this hook
+  // and for making sure we don't write the initial value over the current value
   const [ready, setReady] = useState(false)
-  const readyInternal = useRef(false)
-  const setValue = setStoredValue
+
+  // State to store our value
+  const [storedValue, setValue] = useState(initialValue)
 
   // set to localstorage every time the storedValue changes
+  // we do it this way instead of a callback because
+  // getting the current state inside `useCallback` didn't seem to be working
   useEffect(() => {
-    if (readyInternal.current) {
+    if (ready) {
       window.localStorage.setItem(prefix + key, JSON.stringify(storedValue))
     }
-  }, [storedValue])
+  }, [storedValue, key, ready])
 
-  // get the item from localstorage after the component has mounted. empty brackets mean it runs one time
+  // read from local storage on mount
   useEffect(() => {
-    readyInternal.current = true
-    const item = window.localStorage.getItem(prefix + key)
-    let valueToSet = storedValue
-    if (item) {
-      valueToSet = JSON.parse(item)
+    try {
+      // Get from local storage by key
+      const item = window.localStorage.getItem(prefix + key)
+      // Parse stored json or if none return initialValue
+      const valToSet = item ? JSON.parse(item) : initialValue
+      setValue(valToSet)
+      setReady(true)
+    } catch (error) {
+      console.log(error)
     }
-
-    if (reducer) {
-      valueToSet = { value: valueToSet, type: 'replace' }
-    }
-
-    setValue(valueToSet)
-    setReady(true)
-  }, [])
+  }, [setReady, setValue, key, initialValue])
 
   return [storedValue, setValue, ready]
 }

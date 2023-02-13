@@ -18,12 +18,9 @@ export const defaultGist = (design, locale = 'en') => {
 }
 
 // generate the gist state and its handlers
-export function useGist(design, app) {
+export function useGist(design, locale) {
   // get the localstorage state and setter
-  const [gist, _setGist, gistReady] = useLocalStorage(
-    `${design}_gist`,
-    defaultGist(design, app.locale)
-  )
+  const [gist, _setGist, gistReady] = useLocalStorage(`${design}_gist`, defaultGist(design, locale))
   const [gistHistory, setGistHistory] = useState([])
   const [gistFuture, setGistFuture] = useState([])
 
@@ -67,7 +64,7 @@ export function useGist(design, app) {
       let prevGist
       setGistHistory((history) => {
         const newHistory = [...history]
-        prevGist = newHistory.pop() || defaultGist(design, app.locale)
+        prevGist = newHistory.pop() || defaultGist(design, locale)
         return newHistory
       })
       setGistFuture((future) => [gistState, ...future])
@@ -85,7 +82,7 @@ export function useGist(design, app) {
     _setGist(newGist)
   }
 
-  const resetGist = () => setGist(defaultGist(design, app.locale))
+  const resetGist = () => setGist(defaultGist(design, locale))
 
   return { gist, setGist, unsetGist, gistReady, updateGist, undoGist, redoGist, resetGist }
 }

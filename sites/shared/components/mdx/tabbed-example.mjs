@@ -24,7 +24,7 @@ export const asText = (reactEl) => {
 // The actual example
 const Example = ({ app, draft, settings, xray = false }) => {
   // State for gist
-  const { gist, unsetGist, updateGist } = useGist('example-mdx', app)
+  const { gist, unsetGist, updateGist } = useGist('example-mdx', app.locale)
 
   if (xray) {
     gist._state.xray = { enabled: true }
