@@ -28,8 +28,6 @@ export const TestDesignOptions = (props) => {
   const { t } = useTranslation(['app'])
   const optionsMenu = optionsMenuStructure(props.design.patternConfig.options)
 
-  // FIXME: This menu is broken right now
-
   const measies = props.draft?.config?.measurements || []
 
   return (
@@ -42,7 +40,7 @@ export const TestDesignOptions = (props) => {
         <Ul className="pl-5 list-inside">
           {Object.entries(optionsMenu).map(([group, options]) =>
             typeof options === 'string' ? (
-              <Option
+              <SampleDesignOption
                 {...props}
                 type={options}
                 option={group}
