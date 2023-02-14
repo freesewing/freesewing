@@ -5,20 +5,24 @@ export const IconWrapper = ({
   stroke = 2,
   children = null,
   fill = false,
-}) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill={fill ? 'currentColor' : 'none'}
-    viewBox="0 0 24 24"
-    strokeWidth={stroke}
-    stroke="currentColor"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={className + ' icon'}
-  >
-    {children}
-  </svg>
-)
+  wrapped = true,
+}) =>
+  wrapped ? (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill={fill ? 'currentColor' : 'none'}
+      viewBox="0 0 24 24"
+      strokeWidth={stroke}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className + ' icon'}
+    >
+      {children}
+    </svg>
+  ) : (
+    <> {children} </>
+  )
 
 export const BioIcon = (props) => (
   <IconWrapper {...props}>
