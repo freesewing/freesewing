@@ -3,16 +3,16 @@ import { Svg } from '../workbench/draft/svg'
 import { Defs } from '../workbench/draft/defs'
 import { Stack } from '../workbench/draft/stack'
 import { useGist } from 'shared/hooks/useGist'
+import { useEffect } from 'react'
 import Md from 'react-markdown'
 
 export const Examples = ({ app, part, caption, xray }) => {
   // State for gist
   const { gist, unsetGist, updateGist } = useGist('examples-mdx', app.locale)
 
-  if (xray) {
-    gist._state.xray = { enabled: true }
-    gist.margin = 20
-  }
+  useEffect(() => {
+    updateGist(['_state', 'xray', 'enabled'], xray)
+  }, [xray, updateGist])
 
   //const measurements = part.includes('tutorial') ? measurementSets.tutorial : {}
   const pattern = Pattern
