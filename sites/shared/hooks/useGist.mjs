@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import set from 'lodash.set'
 import unset from 'lodash.unset'
 import cloneDeep from 'lodash.clonedeep'
@@ -19,8 +19,11 @@ export const defaultGist = (design, locale = 'en') => {
 
 // generate the gist state and its handlers
 export function useGist(design, locale) {
+  // memoize the initial gist for this design so that it doesn't change between renders and cause an infinite loop
+  const initialGist = useMemo(() => defaultGist(design, locale), [design, locale])
+
   // get the localstorage state and setter
-  const [gist, _setGist, gistReady] = useLocalStorage(`${design}_gist`, defaultGist(design, locale))
+  const [gist, _setGist, gistReady] = useLocalStorage(`${design}_gist`, initialGist)
   const [gistHistory, setGistHistory] = useState([])
   const [gistFuture, setGistFuture] = useState([])
 
