@@ -34,6 +34,7 @@ const Carlita = new Design({
     underSleeve,
     collarStand,
     collar,
+    cuffFacing,
     pocket,
     pocketFlap,
     pocketLining,
