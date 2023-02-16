@@ -1,7 +1,9 @@
 import process from 'node:process'
 import { execSync } from 'child_process'
 
-export const shouldSkipBuild = (siteName, checkFolders = '../shared .') => {
+const defaultFolders = ['../shared', '../../plugins', '../../designs', '.'].join(' ')
+
+export const shouldSkipBuild = (siteName, checkFolders = defaultFolders) => {
   console.log('Skip build script version 1.0.0')
 
   // Do not block production builds
