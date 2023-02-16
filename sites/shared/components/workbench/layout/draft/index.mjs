@@ -18,7 +18,7 @@ export const Draft = (props) => {
   const svgRef = useRef(null)
   if (!patternProps) return null
   // keep a fresh copy of the layout because we might manipulate it without saving to the gist
-  let layout = draft.settings[0].layouts?.printingLayout || {
+  let layout = draft.settings[0].layouts?.[layoutType] || {
     ...patternProps.autoLayout,
     width: patternProps.width,
     height: patternProps.height,

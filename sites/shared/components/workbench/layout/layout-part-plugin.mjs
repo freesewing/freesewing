@@ -50,6 +50,14 @@ export const pagesPlugin = ({ size = 'a4', ...settings }) => {
   return basePlugin({ ...settings, sheetWidth, sheetHeight })
 }
 
+export const fabricPlugin = (settings) => {
+  return basePlugin({
+    ...settings,
+    partName: 'fabric',
+    responsiveColumns: false,
+  })
+}
+
 /** check if there is anything to render on the given section of the svg so that we can skip empty pages */
 const doScanForBlanks = (stacks, layout, x, y, w, h) => {
   let hasContent = false
@@ -92,7 +100,7 @@ const doScanForBlanks = (stacks, layout, x, y, w, h) => {
  * sheetHeight: the height of the helper part
  * boundary: should the helper part calculate its boundary?
  * responsiveColumns: should the part make more columns if the pattern exceed its width? (for pages you want this, for fabric you don't)
- * printStyle: hould the pages be rendered for printing or for screen viewing?
+ * printStyle: should the pages be rendered for printing or for screen viewing?
  * */
 const basePlugin = ({
   sheetWidth,
