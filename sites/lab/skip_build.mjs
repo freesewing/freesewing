@@ -1,3 +1,5 @@
 import { shouldSkipBuild } from '../../scripts/skip-build-base.mjs'
 
-shouldSkipBuild('Lab')
+const triggerFolders = ['../shared', '../../plugins', '../../designs', '.'].join(' ')
+
+shouldSkipBuild('Lab', triggerFolders)
