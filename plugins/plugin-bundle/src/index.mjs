@@ -1,7 +1,11 @@
+import { bartackPlugin } from '../../plugin-annotations/src/index.mjs'
+import { crossboxPlugin } from '../../plugin-annotations/src/index.mjs'
+import { cutonfoldPlugin } from '../../plugin-annotations/src/index.mjs'
+import { pleatPlugin } from '../../plugin-annotations/src/index.mjs'
+import { sewtogetherPlugin } from '../../plugin-annotations/src/index.mjs'
+
 import { bannerPlugin } from '../../plugin-banner/src/index.mjs'
-import { bartackPlugin } from '../../plugin-bartack/src/index.mjs'
 import { buttonsPlugin } from '../../plugin-buttons/src/index.mjs'
-import { cutonfoldPlugin } from '../../plugin-cutonfold/src/index.mjs'
 import { dimensionPlugin } from '../../plugin-dimension/src/index.mjs'
 import { grainlinePlugin } from '../../plugin-grainline/src/index.mjs'
 import { logoPlugin } from '../../plugin-logo/src/index.mjs'
@@ -18,6 +22,7 @@ const bundledPlugins = [
   bannerPlugin,
   bartackPlugin,
   buttonsPlugin,
+  crossboxPlugin,
   cutonfoldPlugin,
   dimensionPlugin,
   grainlinePlugin,
@@ -25,8 +30,10 @@ const bundledPlugins = [
   measurementsPlugin,
   mirrorPlugin,
   notchesPlugin,
+  pleatPlugin,
   roundPlugin,
   scaleboxPlugin,
+  sewtogetherPlugin,
   sprinklePlugin,
   titlePlugin,
 ]

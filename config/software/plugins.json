@@ -1,11 +1,10 @@
 {
+  "plugin-annotations": "A bundle of FreeSewing plugins that provide annotations",
   "plugin-banner": "A FreeSewing plugin to repeat text on a path",
-  "plugin-bartack": "A FreeSewing plugin to add bartacks to your pattern",
   "plugin-bundle": "An umbrella package of 8 essential FreeSewing build-time plugins",
   "plugin-bust": "A FreeSewing plugin that helps with bust-adjusting menswear patterns",
   "plugin-buttons": "A FreeSewing plugin that provides button, buttonhole, and snap snippets",
   "plugin-cutlist": "A FreeSewing plugin to store data regarding a pattern's cutlist",
-  "plugin-cutonfold": "A FreeSewing plugin to add cut-on-fold indicators on your patterns",
   "plugin-dimension": "A FreeSewing plugin to add dimensions to your (paperless) pattern",
   "plugin-flip": "A FreeSewing plugin to flip parts horizontally",
   "plugin-gore": "A FreeSewing plugin to generate gores for a semi-sphere or dome",

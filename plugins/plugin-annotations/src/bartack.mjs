@@ -41,7 +41,7 @@ const getPoints = (path, so) => {
 
 const bartackPath = (path, so, props) => (path ? drawBartack(getPoints(path, so), props) : null)
 
-function bartack(so, props) {
+function createBartack(so, props) {
   const defaults = {
     width: 3,
     length: 15,
@@ -103,12 +103,12 @@ function bartack(so, props) {
 }
 
 // The actual plugin
-export const plugin = {
+export const bartack = {
   name,
   version,
   macros: {
     bartack: function (so, props) {
-      return bartack(so, props)
+      return createBartack(so, props)
     },
     bartackAlong: function (so, props) {
       so.bartackFractionAlong = false
@@ -116,7 +116,7 @@ export const plugin = {
       so.anchor = false
       so.from = false
       so.to = false
-      return bartack(so, props)
+      return createBartack(so, props)
     },
     bartackFractionAlong: function (so, props) {
       so.bartackFractionAlong = true
@@ -124,11 +124,11 @@ export const plugin = {
       so.anchor = false
       so.from = false
       so.to = false
-      return bartack(so, props)
+      return createBartack(so, props)
     },
   },
 }
 
 // More specifically named exports
-export const bartackPlugin = plugin
-export const pluginBartack = plugin
+// export const bartackPlugin = bartack
+// export const pluginBartack = bartack
