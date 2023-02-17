@@ -277,6 +277,11 @@ Add the sleeves to the jacket
 
 
 ### Inside pocket
+<note>
+The inside pocket is a double welt pocket. Which is the same as the front pockets but without a cover.
+Please see images at the front pockets for details
+</note>
+
 Locate the position of the pocket on the left inner lining with basting
 Add some fusible interfacting around the area
 Draw the pocket on the interfacing.
