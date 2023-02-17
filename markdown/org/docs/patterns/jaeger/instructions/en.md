@@ -242,16 +242,29 @@ So make sure to align the notches. It's what they're there for.
 
 
 ### Make the collar
+In order to look real crisp, the collar should be symetrical on both sides. 
+About 5mm difference is already visible to a collar, so the more precise you do these steps, the better.
+
+### Add markings to both collars
+But both collars on top of each other, baste the corners together and cut the basting.
+Then use a marking pencil or some chalk to mark the edges of the collar. 
+Measure 2 times to make sure the remaining collars and the location of the corners are 100% identical on both corners
+![Mark the collar Edges](collarMarkings.svg)
+
 
 #### Add interfacing or canvas to the outside collar stand and under collar
 Either use a fusable interfacing, or, if you want to be hardcore use a horsehair canvas. 
 Stich it to the outside collor stand using the same technique as when adding canvas to the lapel.
+![Add canvas to the collor](collarWithCanvas.svg)
 
 #### Sew the outside collarstand to the under collar, and add to jacket
-Make sure the collar stand and under collar are alligend
-Sew the collarstand+ undercollar to the neckline of the jacket
+Make sure the outside collarstand and under collar are alligend and sew together
+Sew the outside collarstand+undercollar to the neckline of the jacket
 Give small cuts in the fabric around the neckline to give it more ease
 Cut the seam allowance in the corners diagonally for a better fit
+
+![make small cuts in SA around collar](collarCuts.svg)
+
 
 ### Sleeves
 Sew the uppersleeve to the undersleeve untill the split
