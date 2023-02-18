@@ -1,6 +1,6 @@
 import { Ul, Li, NoSumDiv, Deg } from 'shared/components/workbench/menu'
 import { round } from 'shared/utils'
-import Attributes from './attributes'
+import { XrayAttributes } from './attributes'
 
 export const XrayPoint = ({ pointName, partName, draft, t }) => {
   const point = draft?.parts?.[partName]?.points?.[pointName]
@@ -16,7 +16,7 @@ export const XrayPoint = ({ pointName, partName, draft, t }) => {
           </NoSumDiv>
         </Li>
       ))}
-      <Attributes attr={point.attributes} t={t} />
+      <XrayAttributes attr={point.attributes} t={t} />
     </Ul>
   ) : null
 }

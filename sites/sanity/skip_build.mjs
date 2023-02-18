@@ -27,7 +27,7 @@ if (branch === 'develop') {
 if (process.env.VERCEL_GIT_PULL_REQUEST_ID) {
   try {
     const changes = execSync(
-      `git diff --name-only $(git merge-base develop ${branch}) ${branch} sites/sanity`
+      `git diff --name-only $(git merge-base origin/develop HEAD) HEAD -- sites/sanity`
     ).toString()
     if (changes) {
       console.log('✅ - Sanity Pull Request - Proceed to build')

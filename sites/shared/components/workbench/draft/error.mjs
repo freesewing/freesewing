@@ -1,6 +1,6 @@
 import { ErrorView } from 'shared/components/error/view.mjs'
 
-export const Error = (props) => {
+export const DraftError = (props) => {
   const errors = {
     pattern: 0,
     sets: 0,

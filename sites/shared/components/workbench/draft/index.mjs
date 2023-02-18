@@ -1,5 +1,5 @@
 import { SvgWrapper } from './svg.mjs'
-import { Error } from './error.mjs'
+import { DraftError } from './error.mjs'
 
 export const LabDraft = (props) => {
   const { app, draft, gist, updateGist, unsetGist, showInfo, feedback, hasRequiredMeasurements } =
@@ -14,7 +14,7 @@ export const LabDraft = (props) => {
       svg = draft.render()
     } catch (error) {
       console.log('Failed to render design', error)
-      return <Error error={error} {...props} />
+      return <DraftError error={error} {...props} />
     }
     return <div dangerouslySetInnerHTML={{ __html: svg }} />
   }
@@ -26,7 +26,7 @@ export const LabDraft = (props) => {
   } catch (error) {
     console.log('Failed to get render props for design', error)
     return (
-      <Error
+      <DraftError
         error={error}
         patternLogs={patternProps.store.logs}
         setLogs={patternProps.setStores[0].logs}
@@ -44,7 +44,7 @@ export const LabDraft = (props) => {
   return (
     <>
       {errors.length > 0 ? (
-        <Error
+        <DraftError
           {...{
             draft,
             patternProps,
