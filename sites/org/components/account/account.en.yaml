@@ -24,7 +24,10 @@ imperial: Units
 apikeys: API Keys
 newsletter: Newsletter subscription
 password: Password
+passwordPlaceholder: Enter your new password here
 mfa: Two-Factor authentication
+mfaTipTitle: Please consider enabling Two-Factor Authentication
+mfaTipMsg: We do not enforce a password policy, but we do recommend you enable Two-Factor Authentication to keep your FreeSewing account safe.
 language: Language
 developer: Developer
 
