@@ -7,10 +7,10 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import { PageWrapper, ns as pageNs } from 'site/components/wrappers/page.mjs'
 import { ns as authNs } from 'site/components/wrappers/auth/index.mjs'
-import { ns as githubNs } from 'site/components/account/github.mjs'
+import { ns as consentNs } from 'site/components/account/consent.mjs'
 
 // Translation namespaces used on this page
-const namespaces = [...new Set([...githubNs, ...authNs, ...pageNs])]
+const namespaces = [...new Set([...consentNs, ...authNs, ...pageNs])]
 
 /*
  * Some things should never generated as SSR
@@ -21,8 +21,8 @@ const DynamicAuthWrapper = dynamic(
   { ssr: false }
 )
 
-const DynamicGithub = dynamic(
-  () => import('site/components/account/github.mjs').then((mod) => mod.GithubSettings),
+const DynamicConsent = dynamic(
+  () => import('site/components/account/consent.mjs').then((mod) => mod.ConsentSettings),
   { ssr: false }
 )
 
@@ -31,13 +31,13 @@ const AccountPage = (props) => {
   const { t } = useTranslation(namespaces)
   const crumbs = [
     [t('yourAccount'), '/account'],
-    [t('github'), '/account/github'],
+    [t('consent'), '/account/consent'],
   ]
 
   return (
-    <PageWrapper app={app} title={t('github')} crumbs={crumbs}>
+    <PageWrapper app={app} title={t('account:consent')} crumbs={crumbs}>
       <DynamicAuthWrapper app={app}>
-        <DynamicGithub app={app} title />
+        <DynamicConsent app={app} title />
       </DynamicAuthWrapper>
     </PageWrapper>
   )
@@ -46,6 +46,7 @@ const AccountPage = (props) => {
 export default AccountPage
 
 export async function getStaticProps({ locale }) {
+  console.log(namespaces)
   return {
     props: {
       ...(await serverSideTranslations(locale, namespaces)),

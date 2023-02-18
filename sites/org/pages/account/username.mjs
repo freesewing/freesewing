@@ -37,7 +37,7 @@ const AccountPage = (props) => {
   return (
     <PageWrapper app={app} title={t('username')} crumbs={crumbs}>
       <DynamicAuthWrapper app={app}>
-        <DynamicUsername app={app} />
+        <DynamicUsername app={app} title />
       </DynamicAuthWrapper>
     </PageWrapper>
   )

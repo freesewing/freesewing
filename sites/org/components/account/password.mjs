@@ -28,6 +28,7 @@ export const PasswordSettings = ({ app, title = false, welcome = false }) => {
 
   return (
     <>
+      {title ? <h2 className="text-4xl">{t('passwordTitle')}</h2> : null}
       <div className="flex flex-row items-center mt-4">
         <input
           value={password}

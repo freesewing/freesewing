@@ -24,7 +24,7 @@ const Tab = ({ id, activeTab, setActiveTab, t }) => (
   </button>
 )
 
-export const EmailSettings = ({ app }) => {
+export const EmailSettings = ({ app, title = false }) => {
   const backend = useBackend(app)
   const { t } = useTranslation(ns)
   const toast = useToast()
@@ -41,6 +41,7 @@ export const EmailSettings = ({ app }) => {
 
   return (
     <>
+      {title ? <h2 className="text-4xl">{t('emailTitle')}</h2> : null}
       <div className="flex flex-row items-center mt-4">
         <input
           value={email}

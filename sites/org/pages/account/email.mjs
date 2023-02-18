@@ -31,13 +31,13 @@ const AccountPage = (props) => {
   const { t } = useTranslation(namespaces)
   const crumbs = [
     [t('yourAccount'), '/account'],
-    [t('bio'), '/account/bio'],
+    [t('email'), '/account/email'],
   ]
 
   return (
-    <PageWrapper app={app} title={t('bio')} crumbs={crumbs}>
+    <PageWrapper app={app} title={t('email')} crumbs={crumbs}>
       <DynamicAuthWrapper app={app}>
-        <DynamicEmail app={app} />
+        <DynamicEmail app={app} title />
       </DynamicAuthWrapper>
     </PageWrapper>
   )

@@ -105,5 +105,26 @@ export function useBackend(app) {
     return false
   }
 
+  /*
+   * Remove account method
+   */
+  backend.removeAccount = async (data) => {
+    let result
+    try {
+      app.startLoading()
+      result = await api.delete(`/account/jwt`, auth)
+    } catch (err) {
+      return err
+    } finally {
+      app.stopLoading()
+    }
+    if (result && result.status === 200 && result.data?.account) {
+      app.setAccount(result.data.account)
+      return true
+    }
+
+    return false
+  }
+
   return backend
 }

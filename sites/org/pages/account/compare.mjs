@@ -7,10 +7,10 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import { PageWrapper, ns as pageNs } from 'site/components/wrappers/page.mjs'
 import { ns as authNs } from 'site/components/wrappers/auth/index.mjs'
-import { ns as githubNs } from 'site/components/account/github.mjs'
+import { ns as compareNs } from 'site/components/account/compare.mjs'
 
 // Translation namespaces used on this page
-const namespaces = [...new Set([...githubNs, ...authNs, ...pageNs])]
+const namespaces = [...new Set([...compareNs, ...authNs, ...pageNs])]
 
 /*
  * Some things should never generated as SSR
@@ -21,8 +21,8 @@ const DynamicAuthWrapper = dynamic(
   { ssr: false }
 )
 
-const DynamicGithub = dynamic(
-  () => import('site/components/account/github.mjs').then((mod) => mod.GithubSettings),
+const DynamicCompare = dynamic(
+  () => import('site/components/account/compare.mjs').then((mod) => mod.CompareSettings),
   { ssr: false }
 )
 
@@ -31,13 +31,13 @@ const AccountPage = (props) => {
   const { t } = useTranslation(namespaces)
   const crumbs = [
     [t('yourAccount'), '/account'],
-    [t('github'), '/account/github'],
+    [t('compare'), '/account/compare'],
   ]
 
   return (
-    <PageWrapper app={app} title={t('github')} crumbs={crumbs}>
+    <PageWrapper app={app} title={t('compare')} crumbs={crumbs}>
       <DynamicAuthWrapper app={app}>
-        <DynamicGithub app={app} title />
+        <DynamicCompare app={app} title />
       </DynamicAuthWrapper>
     </PageWrapper>
   )

@@ -49,7 +49,7 @@ export const ImperialSettings = ({ app, title = false, welcome = false }) => {
           <span className="block text-lg leading-5">
             {selection === 1 && val === 2 ? t('showMore') : t(`${val}Units`)}
           </span>
-          <span className="block text-xs font-light normal-case pt-1">{t(`${val}Unitsd`)}</span>
+          <span className="block text-normal font-light normal-case pt-1">{t(`${val}Unitsd`)}</span>
         </Choice>
       ))}
       {welcome ? (

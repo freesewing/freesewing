@@ -1,7 +1,13 @@
 import { Spinner } from 'shared/components/spinner.mjs'
 import { useTranslation } from 'next-i18next'
 
-export const SaveSettingsButton = ({ email, app, btnProps = {}, welcome = false }) => {
+export const SaveSettingsButton = ({
+  email,
+  app,
+  btnProps = {},
+  welcome = false,
+  label = false,
+}) => {
   const { t } = useTranslation(['account'])
   let classes = 'btn mt-4 capitalize '
   if (welcome) {
@@ -22,6 +28,8 @@ export const SaveSettingsButton = ({ email, app, btnProps = {}, welcome = false 
             <Spinner />
             <span>{t('processing')}</span>
           </>
+        ) : label ? (
+          <span>{label}</span>
         ) : (
           <span>{t('save')}</span>
         )}

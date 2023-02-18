@@ -11,7 +11,7 @@ import { freeSewingConfig as conf } from 'site/freesewing.config.mjs'
 
 export const ns = ['account', 'locales', 'toast']
 
-export const LanguageSettings = ({ app }) => {
+export const LanguageSettings = ({ app, title = false }) => {
   const backend = useBackend(app)
   const toast = useToast()
   const { t } = useTranslation(ns)
@@ -30,6 +30,7 @@ export const LanguageSettings = ({ app }) => {
 
   return (
     <>
+      {title ? <h2 className="text-4xl">{t('languageTitle')}</h2> : null}
       {conf.languages.map((val) => (
         <Choice val={val} t={t} update={update} current={language} key={val}>
           <span className="block text-lg leading-5">{t(`locales:${val}`)}</span>

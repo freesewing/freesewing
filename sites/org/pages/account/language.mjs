@@ -37,7 +37,7 @@ const AccountPage = (props) => {
   return (
     <PageWrapper app={app} title={t('language')} crumbs={crumbs}>
       <DynamicAuthWrapper app={app}>
-        <DynamicLanguage app={app} />
+        <DynamicLanguage app={app} title />
       </DynamicAuthWrapper>
     </PageWrapper>
   )

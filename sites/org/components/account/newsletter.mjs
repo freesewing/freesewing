@@ -5,7 +5,7 @@ import { useBackend } from 'site/hooks/useBackend.mjs'
 import { useToast } from 'site/hooks/useToast.mjs'
 // Components
 import Link from 'next/link'
-import { Choice, Icons, welcomeSteps } from './shared.mjs'
+import { BackToAccountButton, Choice, Icons, welcomeSteps } from './shared.mjs'
 import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
 
 export const ns = ['account', 'toast']
@@ -43,7 +43,7 @@ export const NewsletterSettings = ({ app, title = false, welcome = false }) => {
               ? t('showMore')
               : t(val === 'yes' ? 'newsletterYes' : 'noThanks')}
           </span>
-          <span className="block text-xs font-light normal-case pt-1">
+          <span className="block text-normal font-light normal-case pt-1 leading-5">
             {t(val === 'yes' ? 'newsletterYesd' : 'newsletterNod')}
           </span>
         </Choice>
@@ -69,7 +69,9 @@ export const NewsletterSettings = ({ app, title = false, welcome = false }) => {
             </>
           ) : null}
         </>
-      ) : null}
+      ) : (
+        <BackToAccountButton loading={app.loading} />
+      )}
     </>
   )
 }

@@ -41,7 +41,7 @@ export const ImgSettings = ({ app, title = false, welcome = false }) => {
 
   return (
     <>
-      {title ? <h1 className="text-4xl">{t('imgTitle')}</h1> : null}
+      {title ? <h2 className="text-4xl">{t('imgTitle')}</h2> : null}
       <div>
         {!welcome || img !== false ? (
           <img alt="img" src={img || app.account.img} className="shadow mb-4" />

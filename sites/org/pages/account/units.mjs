@@ -7,7 +7,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import { PageWrapper, ns as pageNs } from 'site/components/wrappers/page.mjs'
 import { ns as authNs } from 'site/components/wrappers/auth/index.mjs'
-import { ns as unitsNs } from 'site/components/account/units.mjs'
+import { ns as unitsNs } from 'site/components/account/imperial.mjs'
 
 // Translation namespaces used on this page
 const namespaces = [...new Set([...unitsNs, ...authNs, ...pageNs])]
@@ -37,7 +37,7 @@ const AccountPage = (props) => {
   return (
     <PageWrapper app={app} title={t('imperial')} crumbs={crumbs}>
       <DynamicAuthWrapper app={app}>
-        <DynamicImperial app={app} />
+        <DynamicImperial app={app} title />
       </DynamicAuthWrapper>
     </PageWrapper>
   )

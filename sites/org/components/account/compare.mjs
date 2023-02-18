@@ -5,7 +5,7 @@ import { useBackend } from 'site/hooks/useBackend.mjs'
 import { useToast } from 'site/hooks/useToast.mjs'
 // Components
 import Link from 'next/link'
-import { Choice, Icons, welcomeSteps } from './shared.mjs'
+import { Choice, Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
 
 export const ns = ['account', 'toast']
@@ -35,7 +35,7 @@ export const CompareSettings = ({ app, title = false, welcome = false }) => {
 
   return (
     <>
-      {title ? <h1 className="text-4xl">{t('compareTitle')}</h1> : null}
+      {title ? <h2 className="text-4xl">{t('compareTitle')}</h2> : null}
       {['yes', 'no'].map((val) => (
         <Choice val={val} t={t} update={update} current={selection} bool key={val}>
           <span className="block text-lg leading-5">
@@ -43,7 +43,7 @@ export const CompareSettings = ({ app, title = false, welcome = false }) => {
               ? t('showMore')
               : t(val === 'yes' ? 'compareYes' : 'compareNo')}
           </span>
-          <span className="block text-xs font-light normal-case pt-1">
+          <span className="block text-normal font-light normal-case pt-1 leading-5">
             {t(val === 'yes' ? 'compareYesd' : 'compareNod')}
           </span>
         </Choice>
@@ -69,7 +69,9 @@ export const CompareSettings = ({ app, title = false, welcome = false }) => {
             </>
           ) : null}
         </>
-      ) : null}
+      ) : (
+        <BackToAccountButton loading={app.loading} />
+      )}
     </>
   )
 }

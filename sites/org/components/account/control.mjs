@@ -2,22 +2,28 @@
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useBackend } from 'site/hooks/useBackend.mjs'
+import { useToast } from 'site/hooks/useToast.mjs'
 // Components
 import Link from 'next/link'
-import { Choice, Icons, welcomeSteps } from './shared.mjs'
+import { BackToAccountButton, Choice, Icons, welcomeSteps } from './shared.mjs'
 import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
 
-export const ns = ['control']
+export const ns = ['account', 'toast']
 
 export const ControlSettings = ({ app, title = false, welcome = false }) => {
   const backend = useBackend(app)
+  const toast = useToast()
   const { t } = useTranslation(ns)
   const [selection, setSelection] = useState(app.account.control || 2)
 
   const update = async (control) => {
     if (control !== selection) {
+      app.startLoading()
       const result = await backend.updateAccount({ control })
       if (result) setSelection(control)
+      if (result === true) toast.for.settingsSaved()
+      else toast.for.backendError()
+      app.stopLoading()
     }
   }
 
@@ -26,7 +32,7 @@ export const ControlSettings = ({ app, title = false, welcome = false }) => {
 
   return (
     <>
-      {title ? <h1 className="text-4xl">{t('title')}</h1> : null}
+      {title ? <h1 className="text-4xl">{t('controlTitle')}</h1> : null}
       {[1, 2, 3, 4, 5].map((val) => {
         if (selection === 1 && val > 2) return null
         if (selection === 2 && val > 3) return null
@@ -36,10 +42,12 @@ export const ControlSettings = ({ app, title = false, welcome = false }) => {
           return (
             <Choice val={val} t={t} update={update} current={selection} key={val}>
               <span className="block text-lg leading-5">
-                {selection === 1 && val === 2 ? t('showMore') : t(`${val}t`)}
+                {selection === 1 && val === 2 ? t('showMore') : t(`control${val}t`)}
               </span>
               {selection > 1 ? (
-                <span className="block text-xs font-light normal-case pt-1">{t(`${val}d`)}</span>
+                <span className="block text-normal font-light normal-case pt-1 leading-5">
+                  {t(`control${val}d`)}
+                </span>
               ) : null}
             </Choice>
           )
@@ -61,7 +69,9 @@ export const ControlSettings = ({ app, title = false, welcome = false }) => {
             </>
           ) : null}
         </>
-      ) : null}
+      ) : (
+        <BackToAccountButton loading={app.loading} />
+      )}
     </>
   )
 }

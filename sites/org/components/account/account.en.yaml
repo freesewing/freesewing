@@ -82,7 +82,7 @@ controlShowMore: Show more options
 controlTitle: What do you prefer?
 
 # img
-imgTitle: How about a picture too?
+imgTitle: How about a picture?
 imgDragAndDropImageHere: Drag and drop an image here
 imgSelectImage: Select an image
 
@@ -102,3 +102,15 @@ unitsTitle: Which units do you prefer?
 # username
 usernameTitle: What username would you like?
 usernameNotAvailable: Username is not available
+
+# email
+emailTitle: Where can we reach you in case we have a good reason for it (like when you forgot your password)?
+
+# github
+githubTitle: Enter your github username here to receive updates when you report a problem through this website.
+
+# languge
+languageTitle: Which language do you prefer?
+
+# password
+passwordTitle: Something only you know
