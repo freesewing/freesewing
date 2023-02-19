@@ -6,30 +6,15 @@ import { useToast } from 'site/hooks/useToast.mjs'
 // Verification methods
 import { validateEmail, validateTld } from 'site/utils.mjs'
 // Components
-import Link from 'next/link'
-import Markdown from 'react-markdown'
-import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
-import { Popout } from 'shared/components/popout.mjs'
-import { PageLink } from 'shared/components/page-link.mjs'
+import { BackToAccountButton } from './shared.mjs'
 
 export const ns = ['account']
-
-const Tab = ({ id, activeTab, setActiveTab, t }) => (
-  <button
-    className={`text-xl font-bold capitalize tab tab-bordered grow
-    ${activeTab === id ? 'tab-active' : ''}`}
-    onClick={() => setActiveTab(id)}
-  >
-    {t(id)}
-  </button>
-)
 
 export const EmailSettings = ({ app, title = false }) => {
   const backend = useBackend(app)
   const { t } = useTranslation(ns)
   const toast = useToast()
   const [email, setEmail] = useState(app.account.email)
-  const [sent, setSent] = useState(false)
 
   const save = async () => {
     const result = await backend.updateAccount({ email })
@@ -50,19 +35,9 @@ export const EmailSettings = ({ app, title = false }) => {
           type="text"
         />
       </div>
-      {sent ? (
-        <Popout note>
-          <h5>Email changes require confirmation</h5>
-          <p>
-            When you change your email address here, we will sent a confirmation email to the new
-            email address.
-          </p>
-        </Popout>
-      ) : (
-        <button className="btn mt-4 btn-primary w-full" onClick={save} disabled={!valid}>
-          {t('save')}
-        </button>
-      )}
+      <button className="btn mt-4 btn-primary w-full" onClick={save} disabled={!valid}>
+        {t('save')}
+      </button>
       <BackToAccountButton loading={app.loading} />
     </>
   )

@@ -74,7 +74,12 @@ export const AccountLinks = ({ account }) => {
       </ul>
 
       {Object.keys(conf.account.fields).map((section) => (
-        <LinkList items={conf.account.fields[section]} first={t(section)} {...lprops} />
+        <LinkList
+          key={section}
+          items={conf.account.fields[section]}
+          first={t(section)}
+          {...lprops}
+        />
       ))}
 
       <LinkList items={actions} first={t('actions')} {...lprops} />

@@ -5,7 +5,6 @@ import { useBackend } from 'site/hooks/useBackend.mjs'
 import { useDropzone } from 'react-dropzone'
 import { useToast } from 'site/hooks/useToast.mjs'
 // Components
-import Link from 'next/link'
 import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
 import { SaveSettingsButton } from 'site/components/buttons/save-settings-button.mjs'

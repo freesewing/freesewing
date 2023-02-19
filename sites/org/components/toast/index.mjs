@@ -22,13 +22,6 @@ export const Toaster = () => (
   />
 )
 
-const style = {
-  info: 'bg-info border',
-  warning: 'bg-warning border',
-  error: 'bg-error border',
-  accent: 'bg-accent border',
-  success: 'bg-success border',
-}
 const icons = {
   success: <OkIcon className="w-6 h-6 text-success" />,
   error: <NoIcon className="w-6 h-6 text-error" />,

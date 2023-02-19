@@ -4,7 +4,6 @@ import { useTranslation } from 'next-i18next'
 import { useBackend } from 'site/hooks/useBackend.mjs'
 import { useToast } from 'site/hooks/useToast.mjs'
 // Components
-import Link from 'next/link'
 import { Choice, Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
 

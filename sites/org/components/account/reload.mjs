@@ -1,16 +1,9 @@
 // Hooks
-import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useBackend } from 'site/hooks/useBackend.mjs'
 import { useToast } from 'site/hooks/useToast.mjs'
 // Components
-import Link from 'next/link'
-import Markdown from 'react-markdown'
-import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
-import { Popout } from 'shared/components/popout.mjs'
-import { PageLink } from 'shared/components/page-link.mjs'
-import { SaveSettingsButton } from 'site/components/buttons/save-settings-button.mjs'
-import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
+import { BackToAccountButton } from './shared.mjs'
 
 export const ns = ['account', 'toast']
 

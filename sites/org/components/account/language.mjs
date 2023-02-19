@@ -4,8 +4,7 @@ import { useTranslation } from 'next-i18next'
 import { useBackend } from 'site/hooks/useBackend.mjs'
 import { useToast } from 'site/hooks/useToast.mjs'
 // Components
-import { BackToAccountButton, updateAccount, Choice } from './shared.mjs'
-import { SaveSettingsButton } from 'site/components/buttons/save-settings-button.mjs'
+import { BackToAccountButton, Choice } from './shared.mjs'
 // Config
 import { freeSewingConfig as conf } from 'site/freesewing.config.mjs'
 

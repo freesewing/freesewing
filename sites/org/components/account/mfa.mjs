@@ -4,11 +4,8 @@ import { useTranslation } from 'next-i18next'
 import { useBackend } from 'site/hooks/useBackend.mjs'
 import { useToast } from 'site/hooks/useToast.mjs'
 // Components
-import Link from 'next/link'
-import { BackToAccountButton, updateAccount } from './shared.mjs'
-import { SaveSettingsButton } from 'site/components/buttons/save-settings-button.mjs'
+import { BackToAccountButton } from './shared.mjs'
 import { Popout } from 'shared/components/popout.mjs'
-import { RightIcon } from 'shared/components/icons.mjs'
 import { Bullet } from 'site/components/bullet.mjs'
 
 export const ns = ['account']
@@ -28,7 +25,6 @@ export const MfaSettings = ({ app, title = false, welcome = false }) => {
   const { t } = useTranslation(ns)
   const toast = useToast()
 
-  const [mfa, setMfa] = useState(app.account.mfaEnabled)
   const [enable, setEnable] = useState(false)
   const [disable, setDisable] = useState(false)
   const [code, setCode] = useState('')

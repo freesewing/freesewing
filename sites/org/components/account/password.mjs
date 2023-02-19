@@ -5,7 +5,7 @@ import { useBackend } from 'site/hooks/useBackend.mjs'
 import { useToast } from 'site/hooks/useToast.mjs'
 // Components
 import Link from 'next/link'
-import { BackToAccountButton, updateAccount } from './shared.mjs'
+import { BackToAccountButton } from './shared.mjs'
 import { SaveSettingsButton } from 'site/components/buttons/save-settings-button.mjs'
 import { Popout } from 'shared/components/popout.mjs'
 import { RightIcon } from 'shared/components/icons.mjs'

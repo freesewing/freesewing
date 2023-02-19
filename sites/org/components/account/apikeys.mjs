@@ -10,7 +10,6 @@ import { CopyToClipboard } from 'react-copy-to-clipboard'
 import { BackToAccountButton, Choice } from './shared.mjs'
 import { Popout } from 'shared/components/popout.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
-import { Bullet } from 'site/components/bullet.mjs'
 import { CopyIcon } from 'shared/components/icons.mjs'
 
 export const ns = ['account', 'toast']
@@ -205,12 +204,12 @@ const NewKey = ({ app, t, setGenerate, backend, toast }) => {
   )
 }
 
-export const Apikeys = ({ app, title = false, welcome = false }) => {
+export const Apikeys = ({ app }) => {
   const backend = useBackend(app)
   const { t } = useTranslation(ns)
   const toast = useToast()
 
-  const [keys, setKeys] = useState([])
+  //const [keys, setKeys] = useState([])
   const [generate, setGenerate] = useState(false)
 
   //useEffect(() => {
@@ -220,14 +219,6 @@ export const Apikeys = ({ app, title = false, welcome = false }) => {
   //  }
   //  getApiKeys()
   //}, [ ])
-
-  const save = async () => {
-    app.startLoading()
-    const result = await backend.updateAccount({ bio })
-    if (result === true) toast.for.settingsSaved()
-    else toast.for.backendError()
-    app.stopLoading()
-  }
 
   return (
     <>

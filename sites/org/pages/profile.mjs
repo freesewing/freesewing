@@ -6,7 +6,6 @@ import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import { PageWrapper, ns as pageNs } from 'site/components/wrappers/page.mjs'
-import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { ns as authNs } from 'site/components/wrappers/auth/index.mjs'
 import { Popout } from 'shared/components/popout.mjs'
 import { PageLink } from 'shared/components/page-link.mjs'

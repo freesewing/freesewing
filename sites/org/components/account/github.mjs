@@ -4,7 +4,7 @@ import { useTranslation } from 'next-i18next'
 import { useBackend } from 'site/hooks/useBackend.mjs'
 import { useToast } from 'site/hooks/useToast.mjs'
 // Components
-import { BackToAccountButton, updateAccount } from './shared.mjs'
+import { BackToAccountButton } from './shared.mjs'
 import { SaveSettingsButton } from 'site/components/buttons/save-settings-button.mjs'
 
 export const ns = ['account']

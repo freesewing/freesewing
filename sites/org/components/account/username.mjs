@@ -4,12 +4,10 @@ import { useTranslation } from 'next-i18next'
 import { useBackend } from 'site/hooks/useBackend.mjs'
 import { useToast } from 'site/hooks/useToast.mjs'
 // Components
-import Link from 'next/link'
 import { Spinner } from 'shared/components/spinner.mjs'
 import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { OkIcon, NoIcon } from 'shared/components/icons.mjs'
 import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
-import { SaveSettingsButton } from 'site/components/buttons/save-settings-button.mjs'
 
 export const ns = ['account', 'toast']
 

@@ -1,10 +1,8 @@
-import { useTranslation } from 'next-i18next'
 import Link from 'next/link'
 import Markdown from 'react-markdown'
 import { HeartIcon } from 'shared/components/icons.mjs'
 
 export const AccountProfile = ({ app }) => {
-  const { t } = useTranslation(['account'])
   const { account, modal, setModal } = app
 
   const toggleModal = () => {

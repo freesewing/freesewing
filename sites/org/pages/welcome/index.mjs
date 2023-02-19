@@ -8,7 +8,6 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { PageWrapper } from 'site/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { ns as authNs } from 'site/components/wrappers/auth/index.mjs'
-import { ControlSettings } from 'site/components/account/control.mjs'
 
 // Translation namespaces used on this page
 const namespaces = [...new Set(['account', ...authNs])]

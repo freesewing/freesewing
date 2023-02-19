@@ -6,8 +6,7 @@ import { useToast } from 'site/hooks/useToast.mjs'
 // Components
 import Link from 'next/link'
 import { Popout } from 'shared/components/popout.mjs'
-import { Spinner } from 'shared/components/spinner.mjs'
-import { Choice, Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
+import { BackToAccountButton } from './shared.mjs'
 import { SaveSettingsButton } from 'site/components/buttons/save-settings-button.mjs'
 import {
   GdprProfileDetails,
@@ -37,14 +36,11 @@ const Checkbox = ({ value, setter, label, children = null }) => (
   </div>
 )
 
-export const ConsentSettings = ({ app, title = false, welcome = false }) => {
+export const ConsentSettings = ({ app, title = false }) => {
   const backend = useBackend(app)
   const toast = useToast()
   const { t } = useTranslation(ns)
-  const [selection, setSelection] = useState(app.account?.imperial === true ? 'imperial' : 'metric')
 
-  const [pDetails, setPDetails] = useState(false)
-  const [mDetails, setMDetails] = useState(false)
   const [profile, setProfile] = useState(app.account?.consent > 0)
   const [measurements, setMeasurements] = useState(app.account?.consent > 1)
   const [openData, setOpenData] = useState(app.account?.consent > 2)
