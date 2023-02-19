@@ -39,7 +39,7 @@
     "react-markdown": "8.0.5",
     "react-sizeme": "3.0.2",
     "react-timeago": "7.1.0",
-    "react-zoom-pan-pinch": "2.2.0",
+    "react-zoom-pan-pinch": "2.6.1",
     "rehype-autolink-headings": "6.1.1",
     "rehype-highlight": "6.0.0",
     "remark-smartypants": "2.0.0",
