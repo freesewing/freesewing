@@ -39,7 +39,7 @@ const AccountPage = (props) => {
         <DynamicAccountProfile app={app} />
       </DynamicAuthWrapper>
       <Popout link compact>
-        <PageLink href={`/users/${app.account.username}`} txt={`/users/${app.account?.username}`} />
+        <PageLink href={`/users/${app.account.username}`} txt={`/users/${app.account.username}`} />
       </Popout>
       <BackToAccountButton />
       <pre>{JSON.stringify(app.toasts, null, 2)}</pre>
