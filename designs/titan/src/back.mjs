@@ -213,6 +213,8 @@ function titanBack({
     points.styleWaistOut = points.waistOut.clone()
   }
   // Now angle the waist (if requested)
+  // create a backup of the unangled position, for use in dependent patterns
+  points.styleWaistInNoAngle = points.styleWaistIn.clone()  
   if (options.waistAngle != 0) {
     // calculate how much to add/subtract
     // assume that from the crossSeamCurveStart upwards, the crotch seam will be vertical
@@ -222,7 +224,7 @@ function titanBack({
     triangleBase = points.fork.dx(points.crossSeamCurveStart)
     // length of opposite side is length of adjacent side times tangent of the angle
     triangleHeight = Math.tan(options.waistAngle * Math.PI/180) * triangleBase
-    
+       
     // top of cross seam is a straight line, so just extend
     points.styleWaistIn = points.crossSeamCurveStart.shiftOutwards(points.styleWaistIn,triangleHeight)
     

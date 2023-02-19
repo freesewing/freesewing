@@ -288,6 +288,8 @@ function titanFront({
     points.styleWaistOut = points.waistOut.clone()
   }
   // Now angle the waist (if requested)
+  // create a backup of the unangled position, for use in dependent patterns
+  points.styleWaistInNoAngle = points.styleWaistIn.clone()  
   if (options.waistAngle != 0) {
     // calculate how much to add/subtract
     // assume that from the crossSeamCurveStart upwards, the crotch seam will be vertical
