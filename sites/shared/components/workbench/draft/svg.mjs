@@ -45,6 +45,8 @@ export const Svg = forwardRef(
   }
 )
 
+Svg.displayName = 'Svg'
+
 /* What's with all the wrapping?
  *
  * Glad you asked. The problem lies within the pan & zoom functionality
@@ -105,3 +107,5 @@ export const SvgWrapper = forwardRef((props, ref) => {
     </SizeMe>
   )
 })
+
+SvgWrapper.displayName = 'SvgWrapper'
