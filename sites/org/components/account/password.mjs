@@ -10,7 +10,7 @@ import { SaveSettingsButton } from 'site/components/buttons/save-settings-button
 import { Popout } from 'shared/components/popout.mjs'
 import { RightIcon } from 'shared/components/icons.mjs'
 
-export const ns = ['account']
+export const ns = ['account', 'toast']
 
 export const PasswordSettings = ({ app, title = false, welcome = false }) => {
   const backend = useBackend(app)
@@ -35,7 +35,7 @@ export const PasswordSettings = ({ app, title = false, welcome = false }) => {
           onChange={(evt) => setPassword(evt.target.value)}
           className="input w-full input-bordered flex flex-row"
           type="text"
-          placeholder={t('passwordPlaceholder')}
+          placeholder={t('newPasswordPlaceholder')}
         />
       </div>
       <SaveSettingsButton app={app} btnProps={{ onClick: save, disabled: password.length < 4 }} />

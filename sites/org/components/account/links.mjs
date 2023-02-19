@@ -30,12 +30,11 @@ const LinkList = ({ items, t, control, first = false }) => {
 }
 
 const actions = {
-  reloadAccount: 4,
-  exportData: 3,
-  reviewContent: 4,
-  restrictProcessing: 4,
-  disableAccount: 4,
-  removeAccount: 2,
+  reload: 4,
+  export: 3,
+  restrict: 4,
+  disable: 4,
+  remove: 2,
 }
 
 export const AccountLinks = ({ account }) => {

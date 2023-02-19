@@ -519,7 +519,10 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
         log.warn(err, 'Could not disable MFA after token check')
         return this.setResponse(500, 'mfaDeactivationFailed')
       }
-      return this.setResponse(200, false, {})
+      return this.setResponse(200, false, {
+        result: 'success',
+        account: this.asAccount(),
+      })
     } else {
       console.log('token check failed')
       return this.setResponse(401, 'authenticationFailed')
@@ -537,7 +540,10 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
         log.warn(err, 'Could not enable MFA after token check')
         return this.setResponse(500, 'mfaActivationFailed')
       }
-      return this.setResponse(200, false, {})
+      return this.setResponse(200, false, {
+        result: 'success',
+        account: this.asAccount(),
+      })
     } else return this.setResponse(403, 'mfaTokenInvalid')
   }
   // Enroll
