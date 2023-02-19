@@ -9,23 +9,29 @@ export const LabSample = ({ gist, draft, updateGist, unsetGist, showInfo, app, f
   let title = ''
   let patternProps
   const errors = []
+
+  draft.use(svgattrPlugin, {
+    class: 'freesewing pattern max-h-screen',
+  })
+
   if (gist.sample) {
     try {
-      draft.use(svgattrPlugin, {
-        class: 'freesewing pattern max-h-screen',
-      })
       draft = draft.sample()
-      // Render as React
       patternProps = draft.getRenderProps()
-      for (const logs of patternProps.logs) errors.push(...logs.error)
+      // Render as React
+      for (const logs of patternProps.logs.sets) errors.push(...logs.error)
     } catch (err) {
       console.log(err)
     }
-    if (gist.sample.type === 'option') {
-      title = t('testThing', {
-        thing: ' : ' + t('option') + ' : ' + gist.sample.option,
-      })
-    }
+
+    //FIXME this doesn't work for models
+    title = t('testThing', {
+      thing: ` : ${t(gist.sample.type)} : ${gist.sample[gist.sample.type]}`,
+    })
+  } else {
+    // don't error on first page landing
+    draft.draft()
+    patternProps = draft.getRenderProps()
   }
 
   return (
