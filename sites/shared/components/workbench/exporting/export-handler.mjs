@@ -1,7 +1,7 @@
 import Worker from 'web-worker'
 import fileSaver from 'file-saver'
 import { themePlugin } from '@freesewing/plugin-theme'
-import { pagesPlugin } from '../layout/layout-part-plugin.mjs'
+import { pagesPlugin } from '../layout/plugin-layout-part.mjs'
 import { capitalize } from 'shared/utils.mjs'
 
 export const exportTypes = {

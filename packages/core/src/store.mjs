@@ -35,9 +35,11 @@ export function Store(methods = []) {
       logs.info.push(...data)
     },
     warning: function (...data) {
+      console.warn(...data)
       logs.warning.push(...data)
     },
     error: function (...data) {
+      console.error(...data)
       logs.error.push(...data)
     },
   }
