@@ -14279,10 +14279,10 @@ new-github-release-url@^1.0.0:
   dependencies:
     type-fest "^0.4.1"
 
-next-i18next@13.0.3:
-  version "13.0.3"
-  resolved "https://registry.yarnpkg.com/next-i18next/-/next-i18next-13.0.3.tgz#f0d5194c9ec3657d114c0c491ba7fbb031788fe1"
-  integrity sha512-7AA8J6WbkxRBtSf1+97LSAE7btxWZHsBIJEJ3FuTSBgYtpRiO5NGjcb8XbNAlz6yGU0TtS+yZE+/Wu83KhIT1Q==
+next-i18next@13.1.4:
+  version "13.1.4"
+  resolved "https://registry.yarnpkg.com/next-i18next/-/next-i18next-13.1.4.tgz#02660bb936f9f80fbccea950731011a42a8657a9"
+  integrity sha512-//Ub7TCdbbNnI5rA6XEe+TLsiXaHR/7OjFBlXw5caPirHNCLvVs24NsmXl9z0ZIqqAT8T8I5hnPWIL75d84ubA==
   dependencies:
     "@babel/runtime" "^7.20.6"
     "@types/hoist-non-react-statics" "^3.3.1"
