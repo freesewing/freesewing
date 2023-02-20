@@ -13,7 +13,7 @@ import { version } from '../data.mjs'
 import { __loadPatternDefaults } from './config.mjs'
 import cloneDeep from 'lodash.clonedeep'
 
-const DISTANCE_DEBUG = false
+const DISTANCE_DEBUG = true
 
 //////////////////////////////////////////////
 //               CONSTRUCTOR                //
@@ -74,11 +74,12 @@ export function Pattern(designConfig) {
  * @param {object} part - The part to add
  * @return {object} this - The Pattern instance
  */
-Pattern.prototype.addPart = function (part) {
+Pattern.prototype.addPart = function (part, runtime = false) {
   if (typeof part?.draft === 'function') {
     if (part.name) {
       this.designConfig.parts.push(part)
-      this.__initialized = false
+      if (runtime) {
+      } else this.__initialized = false
     } else this.store.log.error(`Part must have a name`)
   } else this.store.log.error(`Part must have a draft() method`)
 
@@ -370,6 +371,7 @@ Pattern.prototype.use = function (plugin, data) {
  */
 Pattern.prototype.__addDependency = function (name, part, dep) {
   this.__dependencies[name] = mergeDependencies(dep.name, this.__dependencies[name])
+  // #FIXME What's supposed to happen here?
   if (typeof this.__designParts[dep.name] === 'undefined') {
     this.config = this.__addPartConfig(this.__designParts[dep.name])
   }
@@ -417,12 +419,6 @@ Pattern.prototype.__addPartMeasurements = function (part, list = false) {
       }
     }
   }
-  if (part.from) this.__addPartMeasurements(part.from, list)
-  if (part.after) {
-    if (Array.isArray(part.after)) {
-      for (const dep of part.after) this.__addPartMeasurements(dep, list)
-    } else this.__addPartMeasurements(part.after, list)
-  }
 
   // Weed out duplicates
   this.config.measurements = [...new Set(list)]
@@ -452,12 +448,6 @@ Pattern.prototype.__addPartOptionalMeasurements = function (part, list = false) 
       }
     }
   }
-  if (part.from) this.__addPartOptionalMeasurements(part.from, list)
-  if (part.after) {
-    if (Array.isArray(part.after)) {
-      for (const dep of part.after) this.__addPartOptionalMeasurements(dep, list)
-    } else this.__addPartOptionalMeasurements(part.after, list)
-  }
 
   // Weed out duplicates
   if (list.length > 0) this.config.optionalMeasurements = [...new Set(list)]
@@ -475,36 +465,26 @@ Pattern.prototype.__addPartOptionalMeasurements = function (part, list = false) 
 Pattern.prototype.__addPartOptions = function (part) {
   if (!this.config.options) this.config.options = {}
   if (part.options) {
+    const partDistance = this.__mutated.partDistance?.[part.name] || 0
     for (const optionName in part.options) {
-      if (!this.__mutated.optionDistance[optionName]) {
-        this.__mutated.optionDistance[optionName] = this.__mutated.partDistance?.[part.name] || 0
+      const optionDistance = this.__mutated.optionDistance[optionName]
+      if (!optionDistance) {
+        this.__mutated.optionDistance[optionName] = partDistance
         // Keep design parts immutable in the pattern or risk subtle bugs
         this.config.options[optionName] = Object.freeze(part.options[optionName])
         this.store.log.debug(`🔵  __${optionName}__ option loaded from part \`${part.name}\``)
       } else {
         if (DISTANCE_DEBUG)
           this.store.log.debug(
-            'optionDistance for ' +
-              optionName +
-              ' is ' +
-              this.__mutated.optionDistance[optionName] +
-              ', and partDistance for ' +
-              part.name +
-              ' is ' +
-              this.__mutated.partDistance[part.name]
+            `optionDistance for ${optionName}  is ${optionDistance} and partDistance for ${part.name} is ${partDistance}`
           )
-        if (this.__mutated.optionDistance[optionName] > this.__mutated.partDistance[part.name]) {
+        if (optionDistance > partDistance) {
           this.config.options[optionName] = part.options[optionName]
+          this.__mutated.optionDistance[optionName] = partDistance
           this.store.log.debug(`🟣  __${optionName}__ option overwritten by \`${part.name}\``)
         }
       }
     }
-  }
-  if (part.from) this.__addPartOptions(part.from)
-  if (part.after) {
-    if (Array.isArray(part.after)) {
-      for (const dep of part.after) this.__addPartOptions(dep)
-    } else this.__addPartOptions(part.after)
   }
 
   return this
@@ -1272,6 +1252,76 @@ Pattern.prototype.__resolveDraftOrder = function (graph = this.__resolvedDepende
   return this
 }
 
+Pattern.prototype.__resolvePartMutation = function (part, dependency, depType) {
+  const current_part_distance = this.__mutated.partDistance[part.name]
+  const proposed_dependent_part_distance = current_part_distance + 1
+
+  this.__designParts[dependency.name] = Object.freeze(dependency)
+  switch (depType) {
+    case 'from':
+      this.__setFromHide(part, part.name, dependency.name)
+      this.__inject[part.name] = dependency.name
+      break
+    case 'after':
+      this.__setAfterHide(part, part.name, dependency.name)
+      this.__addDependency(part.name, part, dependency)
+  }
+
+  if (
+    typeof this.__mutated.partDistance[dependency.name] === 'undefined' ||
+    this.__mutated.partDistance[dependency.name] < proposed_dependent_part_distance
+  ) {
+    this.__mutated.partDistance[dependency.name] = proposed_dependent_part_distance
+    if (DISTANCE_DEBUG)
+      this.store.log.debug(
+        `"${depType}:" partDistance for ${dependency.name} is ${
+          this.__mutated.partDistance[dependency.name]
+        }`
+      )
+  }
+}
+
+Pattern.prototype.__resolvePart = function (part, distance = 0) {
+  if (distance === 0) {
+    this.__designParts[part.name] = Object.freeze(part)
+  }
+  let count = Object.keys(this.__designParts).length
+  distance++
+  if (typeof this.__mutated.partDistance[part.name] === 'undefined') {
+    this.__mutated.partDistance[part.name] = distance
+
+    if (DISTANCE_DEBUG)
+      this.store.log.debug(
+        `Base partDistance for ${part.name} is ${this.__mutated.partDistance[part.name]}`
+      )
+  }
+
+  // Hide when hideAll is set
+  if (part.hideAll) {
+    this.__mutated.partHide[part.name] = true
+  }
+
+  // Resolve part mutations. first from then after
+  ;['from', 'after'].forEach((d) => {
+    if (part[d]) {
+      if (DISTANCE_DEBUG) this.store.log.debug(`Processing ${part.name} "${d}:"`)
+
+      const depsOfType = Array.isArray(part[d]) ? part[d] : [part[d]]
+
+      depsOfType.forEach((dot) => {
+        this.__resolvePartMutation(part, dot, d)
+        const newCount = Object.keys(this.__designParts).length
+        if (count < newCount) {
+          this.__resolvePart(dot, distance)
+          count = newCount
+        }
+      })
+    }
+  })
+
+  // add the part's config
+  this.__addPartConfig(part)
+}
 /**
  * Resolves parts and their dependencies
  *
@@ -1281,113 +1331,21 @@ Pattern.prototype.__resolveDraftOrder = function (graph = this.__resolvedDepende
  * @return {Pattern} this - The Pattern instance
  */
 Pattern.prototype.__resolveParts = function (count = 0, distance = 0) {
-  if (count === 0) {
-    for (const part of this.designConfig.parts) {
-      // Keep design parts immutable in the pattern or risk subtle bugs
-      this.__designParts[part.name] = Object.freeze(part)
-    }
-  }
-  distance++
-  if (DISTANCE_DEBUG) this.store.log.debug('Distance incremented to ' + distance)
   for (const part of this.designConfig.parts) {
-    if (typeof this.__mutated.partDistance[part.name] === 'undefined') {
-      this.__mutated.partDistance[part.name] = distance
-      if (DISTANCE_DEBUG)
-        this.store.log.debug(
-          'Base partDistance for ' + part.name + ' is ' + this.__mutated.partDistance[part.name]
-        )
-    }
+    this.__resolvePart(part, distance)
   }
-  for (const [name, part] of Object.entries(this.__designParts)) {
-    const current_part_distance = this.__mutated.partDistance[part.name]
-    const proposed_dependent_part_distance = current_part_distance + 1
-    // Hide when hideAll is set
-    if (part.hideAll) this.__mutated.partHide[part.name] = true
-    // Inject (from)
-    if (part.from) {
-      if (DISTANCE_DEBUG) this.store.log.debug('Processing ' + part.name + ' "from:"')
-      this.__setFromHide(part, name, part.from.name)
-      this.__designParts[part.from.name] = part.from
-      this.__inject[name] = part.from.name
-      if (
-        typeof this.__mutated.partDistance[part.from.name] === 'undefined' ||
-        this.__mutated.partDistance[part.from.name] < proposed_dependent_part_distance
-      ) {
-        this.__mutated.partDistance[part.from.name] = proposed_dependent_part_distance
-        if (DISTANCE_DEBUG)
-          this.store.log.debug(
-            '"from:" partDistance for ' +
-              part.from.name +
-              ' is ' +
-              this.__mutated.partDistance[part.from.name]
-          )
-      }
-    }
-    // Simple dependency (after)
-    if (part.after) {
-      if (DISTANCE_DEBUG) this.store.log.debug('Processing ' + part.name + ' "after:"')
-      if (Array.isArray(part.after)) {
-        for (const dep of part.after) {
-          this.__setAfterHide(part, name, dep.name)
-          this.__designParts[dep.name] = dep
-          this.__addDependency(name, part, dep)
-          if (
-            typeof this.__mutated.partDistance[dep.name] === 'undefined' ||
-            this.__mutated.partDistance[dep.name] < proposed_dependent_part_distance
-          ) {
-            this.__mutated.partDistance[dep.name] = proposed_dependent_part_distance
-            if (DISTANCE_DEBUG)
-              this.store.log.debug(
-                '"after:" partDistance for ' +
-                  dep.name +
-                  ' is ' +
-                  this.__mutated.partDistance[dep.name]
-              )
-          }
-        }
-      } else {
-        this.__setAfterHide(part, name, part.after.name)
-        this.__designParts[part.after.name] = part.after
-        this.__addDependency(name, part, part.after)
-        if (
-          typeof this.__mutated.partDistance[part.after.name] === 'undefined' ||
-          this.__mutated.partDistance[part.after.name] < proposed_dependent_part_distance
-        ) {
-          this.__mutated.partDistance[part.after.name] = proposed_dependent_part_distance
-          if (DISTANCE_DEBUG)
-            this.store.log.debug(
-              '"after:" partDistance for ' +
-                part.after.name +
-                ' is ' +
-                this.__mutated.partDistance[part.after.name]
-            )
-        }
-      }
-    }
-  }
-  // Did we discover any new dependencies?
-  const len = Object.keys(this.__designParts).length
-  // If so, resolve recursively
-  if (len > count) {
-    if (DISTANCE_DEBUG) this.store.log.debug('Recursing...')
-    return this.__resolveParts(len, distance)
-  }
+
   // Print final part distances.
   for (const part of this.designConfig.parts) {
-    let qualifier = ''
-    if (DISTANCE_DEBUG) qualifier = 'final '
+    let qualifier = DISTANCE_DEBUG ? 'final' : ''
     this.store.log.debug(
-      '⚪️  `' +
-        part.name +
-        '` ' +
-        qualifier +
-        'options priority is __' +
-        this.__mutated.partDistance[part.name] +
-        '__'
+      `⚪️  ${part.name} ${qualifier} options priority is __${
+        this.__mutated.partDistance[part.name]
+      }__`
     )
   }
 
-  for (const part of Object.values(this.__designParts)) this.__addPartConfig(part)
+  // for (const part of Object.values(this.__designParts)) this.__addPartConfig(part)
 
   return this
 }
