@@ -1,6 +1,10 @@
 import { bartack } from './bartack.mjs'
+import { buttons } from './buttons.mjs'
 import { crossbox } from './crossbox.mjs'
 import { cutonfold } from './cutonfold.mjs'
+import { grainline } from './grainline.mjs'
+import { logo } from './logo.mjs'
+import { notches } from './notches.mjs'
 import { pleat } from './pleat.mjs'
 import { sewtogether } from './sewtogether.mjs'
 
@@ -20,3 +24,15 @@ export const pluginPleat = pleat
 
 export const sewtogetherPlugin = sewtogether
 export const pluginSewtogether = sewtogether
+
+export const buttonsPlugin = buttons
+export const pluginButtons = buttons
+
+export const grainlinePlugin = grainline
+export const pluginGrainline = grainline
+
+export const logoPlugin = logo
+export const pluginLogo = logo
+
+export const notchesPlugin = notches
+export const pluginNotches = notches
