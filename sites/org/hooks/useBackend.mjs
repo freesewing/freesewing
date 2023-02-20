@@ -23,7 +23,6 @@ export function useBackend(app) {
       } catch (err) {
         return err
       }
-      return false
     },
     post: async (uri, data = null, config = {}) => {
       let result
@@ -33,7 +32,6 @@ export function useBackend(app) {
       } catch (err) {
         return err
       }
-      return false
     },
     patch: async (uri, data = null, config = {}) => {
       let result
@@ -43,17 +41,15 @@ export function useBackend(app) {
       } catch (err) {
         return err
       }
-      return false
     },
     delete: async (uri, config = {}) => {
       let result
       try {
-        result = await apiHandler.delete(uri, data, config)
+        result = await apiHandler.delete(uri, config)
         return result
       } catch (err) {
         return err
       }
-      return false
     },
   }
 
