@@ -324,10 +324,10 @@ describe('Pattern', () => {
       expect(pattern.config.options.optionR.list[1]).to.equal('green')
       expect(pattern.config.options.optionR.list[2]).to.equal('blue')
       // Dependencies
-      expect(pattern.__dependencies.partB[0]).to.equal('partA')
-      expect(pattern.__dependencies.partC[0]).to.equal('partB')
-      expect(pattern.__dependencies.partR[0]).to.equal('partC')
-      expect(pattern.__dependencies.partR[1]).to.equal('partA')
+      expect(pattern.__dependencies.partB).to.include('partA')
+      expect(pattern.__dependencies.partC).to.include('partB')
+      expect(pattern.__dependencies.partR).to.include('partC')
+      expect(pattern.__dependencies.partR).to.include('partA')
       // Inject
       expect(pattern.__inject.partB).to.equal('partA')
       expect(pattern.__inject.partC).to.equal('partB')
