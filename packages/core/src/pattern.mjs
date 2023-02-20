@@ -13,8 +13,7 @@ import { version } from '../data.mjs'
 import { __loadPatternDefaults } from './config.mjs'
 import cloneDeep from 'lodash.clonedeep'
 
-const DISTANCE_DEBUG = true
-
+const DISTANCE_DEBUG = false
 //////////////////////////////////////////////
 //               CONSTRUCTOR                //
 //////////////////////////////////////////////
@@ -74,12 +73,11 @@ export function Pattern(designConfig) {
  * @param {object} part - The part to add
  * @return {object} this - The Pattern instance
  */
-Pattern.prototype.addPart = function (part, runtime = false) {
+Pattern.prototype.addPart = function (part) {
   if (typeof part?.draft === 'function') {
     if (part.name) {
       this.designConfig.parts.push(part)
-      if (runtime) {
-      } else this.__initialized = false
+      this.__initialized = false
     } else this.store.log.error(`Part must have a name`)
   } else this.store.log.error(`Part must have a draft() method`)
 
@@ -369,14 +367,12 @@ Pattern.prototype.use = function (plugin, data) {
  * @param {object} dep - The dependency configuration
  * @return {object} this - The Pattern instance
  */
-Pattern.prototype.__addDependency = function (name, part, dep) {
-  this.__dependencies[name] = mergeDependencies(dep.name, this.__dependencies[name])
-  // #FIXME What's supposed to happen here?
-  if (typeof this.__designParts[dep.name] === 'undefined') {
-    this.config = this.__addPartConfig(this.__designParts[dep.name])
-  }
-
-  return this
+Pattern.prototype.__addDependency = function (dependencyList, part, dep) {
+  this[dependencyList][part.name] = this[dependencyList][part.name] || []
+  if (dependencyList == '__resolvedDependencies' && DISTANCE_DEBUG)
+    this.store.log.debug(`add ${dep.name} to ${part.name} dependencyResolution`)
+  if (this[dependencyList][part.name].indexOf(dep.name) === -1)
+    this[dependencyList][part.name].push(dep.name)
 }
 
 /**
@@ -476,7 +472,7 @@ Pattern.prototype.__addPartOptions = function (part) {
       } else {
         if (DISTANCE_DEBUG)
           this.store.log.debug(
-            `optionDistance for ${optionName}  is ${optionDistance} and partDistance for ${part.name} is ${partDistance}`
+            `optionDistance for __${optionName}__  is __${optionDistance}__ and partDistance for \`${part.name}\` is __${partDistance}__`
           )
         if (optionDistance > partDistance) {
           this.config.options[optionName] = part.options[optionName]
@@ -551,6 +547,11 @@ Pattern.prototype.__addPartPlugins = function (part) {
           this.store.log.info(
             `Plugin \`${name}\` was requested conditionally, but is already added explicitly. Not loading.`
           )
+      }
+      // swap from a conditional if needed
+      else if (plugins[name].condition) {
+        plugins[name] = plugin
+        this.store.log.info(`Plugin \`${name}\` was explicitly added. Changing from conditional.`)
       }
     }
   }
@@ -741,21 +742,11 @@ Pattern.prototype.__isPartHidden = function (partName) {
 Pattern.prototype.__isStackHidden = function (stackName) {
   if (!this.stacks[stackName]) return true
   const parts = this.stacks[stackName].getPartNames()
-  if (Array.isArray(this.settings[this.activeStack || 0].only)) {
-    for (const partName of parts) {
-      if (this.settings[this.activeStack || 0].only.includes(partName)) return false
-    }
-    return true
-  }
   for (const partName of parts) {
-    if (this.__designParts?.[partName]?.hide) return true
-    if (this.__designParts?.[partName]?.hideAll) return true
-    if (this.__mutated.partHide?.[partName]) return true
-    if (this.__mutated.partHideAll?.[partName]) return true
-    if (this.parts?.[this.activeSet]?.[partName]?.hidden) return true
+    if (!this.__isPartHidden(partName)) return false
   }
 
-  return false
+  return true
 }
 
 /**
@@ -1190,35 +1181,6 @@ Pattern.prototype.__pack = function () {
 }
 
 /**
- * Recursively solves part dependencies for a part
- *
- * @private
- * @param {object} seen - Object to keep track of seen dependencies
- * @param {string} part - Name of the part
- * @param {object} graph - Dependency graph, used to call itself recursively
- * @param {array} deps - List of dependencies
- * @return {Array} deps - The list of dependencies
- */
-Pattern.prototype.__resolveDependency = function (
-  seen,
-  part,
-  graph = this.dependencies,
-  deps = []
-) {
-  if (typeof seen[part] === 'undefined') seen[part] = true
-  if (typeof graph[part] === 'string') graph[part] = [graph[part]]
-  if (Array.isArray(graph[part])) {
-    if (graph[part].length === 0) return []
-    else {
-      if (deps.indexOf(graph[part]) === -1) deps.push(...graph[part])
-      for (let apart of graph[part]) deps.concat(this.__resolveDependency(seen, apart, graph, deps))
-    }
-  }
-
-  return deps
-}
-
-/**
  * Resolves the draft order based on the configuation
  *
  * @private
@@ -1226,37 +1188,23 @@ Pattern.prototype.__resolveDependency = function (
  * @return {Pattern} this - The Pattern instance
  */
 Pattern.prototype.__resolveDraftOrder = function (graph = this.__resolvedDependencies) {
-  let sorted = []
-  let visited = {}
-  Object.keys(graph).forEach(function visit(name, ancestors) {
-    if (!Array.isArray(ancestors)) ancestors = []
-    ancestors.push(name)
-    visited[name] = true
-    if (typeof graph[name] !== 'undefined') {
-      graph[name].forEach(function (dep) {
-        if (visited[dep]) return
-        visit(dep, ancestors.slice(0))
-      })
-    }
-    if (sorted.indexOf(name) < 0) sorted.push(name)
-  })
-
-  // Don't forget about parts without dependencies
-  for (const part in this.__designParts) {
-    if (sorted.indexOf(part) === -1) sorted.push(part)
-  }
-
+  const sorted = Object.keys(this.__designParts).sort(
+    (p1, p2) => this.__mutated.partDistance[p2] - this.__mutated.partDistance[p1]
+  )
   this.__draftOrder = sorted
   this.config.draftOrder = sorted
 
   return this
 }
 
-Pattern.prototype.__resolvePartMutation = function (part, dependency, depType) {
-  const current_part_distance = this.__mutated.partDistance[part.name]
-  const proposed_dependent_part_distance = current_part_distance + 1
+Pattern.prototype.__resolvePartDependencyChain = function (depChain, dependency, depType) {
+  const part = depChain[0]
 
   this.__designParts[dependency.name] = Object.freeze(dependency)
+  this.__addDependency('__dependencies', part, dependency)
+
+  depChain.forEach((c) => this.__addDependency('__resolvedDependencies', c, dependency))
+
   switch (depType) {
     case 'from':
       this.__setFromHide(part, part.name, dependency.name)
@@ -1264,35 +1212,72 @@ Pattern.prototype.__resolvePartMutation = function (part, dependency, depType) {
       break
     case 'after':
       this.__setAfterHide(part, part.name, dependency.name)
-      this.__addDependency(part.name, part, dependency)
-  }
-
-  if (
-    typeof this.__mutated.partDistance[dependency.name] === 'undefined' ||
-    this.__mutated.partDistance[dependency.name] < proposed_dependent_part_distance
-  ) {
-    this.__mutated.partDistance[dependency.name] = proposed_dependent_part_distance
-    if (DISTANCE_DEBUG)
-      this.store.log.debug(
-        `"${depType}:" partDistance for ${dependency.name} is ${
-          this.__mutated.partDistance[dependency.name]
-        }`
-      )
   }
 }
 
-Pattern.prototype.__resolvePart = function (part, distance = 0) {
+Pattern.prototype.__resolveMutatedPartDistance = function (partName) {
+  const proposed_dependent_part_distance = this.__mutated.partDistance[partName] + 1
+  let didChange = false
+  if (!this.__dependencies[partName]) return false
+  this.__dependencies[partName].forEach((dependency) => {
+    if (
+      typeof this.__mutated.partDistance[dependency] === 'undefined' ||
+      this.__mutated.partDistance[dependency] < proposed_dependent_part_distance
+    ) {
+      didChange = true
+      this.__mutated.partDistance[dependency] = proposed_dependent_part_distance
+      this.__resolveMutatedPartDistance(dependency)
+    }
+    if (DISTANCE_DEBUG)
+      this.store.log.debug(
+        `"${depType}:" partDistance for \`${dependency}\` is __${this.__mutated.partDistance[dependency]}__`
+      )
+  })
+
+  return didChange
+}
+
+const depTypes = ['from', 'after']
+Pattern.prototype.__resolvePartDependencies = function (depChain, distance) {
+  // Resolve part Dependencies. first from then after
+  const part = depChain[0]
+  this.__resolvedDependencies[part.name] = this.__resolvedDependencies[part.name] || []
+
+  depTypes.forEach((d) => {
+    if (part[d]) {
+      if (DISTANCE_DEBUG) this.store.log.debug(`Processing \`${part.name}\` "${d}:"`)
+
+      const depsOfType = Array.isArray(part[d]) ? part[d] : [part[d]]
+
+      depsOfType.forEach((dot) => {
+        let count = Object.keys(this.__designParts).length
+        // if any changes resulted from resolving this part mutation
+        this.__resolvePartDependencyChain(depChain, dot, d)
+        // if a new part was added, resolve the part
+        const newCount = Object.keys(this.__designParts).length
+        if (count < newCount) {
+          this.__resolvePart([dot, ...depChain], distance)
+          count = newCount
+        }
+      })
+    }
+  })
+
+  this.__resolveMutatedPartDistance(part.name)
+}
+
+Pattern.prototype.__resolvePart = function (depChain, distance = 0) {
+  const part = depChain[0]
   if (distance === 0) {
     this.__designParts[part.name] = Object.freeze(part)
   }
-  let count = Object.keys(this.__designParts).length
   distance++
   if (typeof this.__mutated.partDistance[part.name] === 'undefined') {
     this.__mutated.partDistance[part.name] = distance
 
     if (DISTANCE_DEBUG)
       this.store.log.debug(
-        `Base partDistance for ${part.name} is ${this.__mutated.partDistance[part.name]}`
+        `Base partDistance for \`${part.name}\` is __${this.__mutated.partDistance[part.name]}__`
       )
   }
 
@@ -1301,23 +1286,7 @@ Pattern.prototype.__resolvePart = function (part, distance = 0) {
     this.__mutated.partHide[part.name] = true
   }
 
-  // Resolve part mutations. first from then after
-  ;['from', 'after'].forEach((d) => {
-    if (part[d]) {
-      if (DISTANCE_DEBUG) this.store.log.debug(`Processing ${part.name} "${d}:"`)
-
-      const depsOfType = Array.isArray(part[d]) ? part[d] : [part[d]]
-
-      depsOfType.forEach((dot) => {
-        this.__resolvePartMutation(part, dot, d)
-        const newCount = Object.keys(this.__designParts).length
-        if (count < newCount) {
-          this.__resolvePart(dot, distance)
-          count = newCount
-        }
-      })
-    }
-  })
+  this.__resolvePartDependencies(depChain, distance)
 
   // add the part's config
   this.__addPartConfig(part)
@@ -1332,20 +1301,18 @@ Pattern.prototype.__resolvePart = function (part, distance = 0) {
  */
 Pattern.prototype.__resolveParts = function (count = 0, distance = 0) {
   for (const part of this.designConfig.parts) {
-    this.__resolvePart(part, distance)
+    this.__resolvePart([part], distance)
   }
 
   // Print final part distances.
   for (const part of this.designConfig.parts) {
     let qualifier = DISTANCE_DEBUG ? 'final' : ''
     this.store.log.debug(
-      `⚪️  ${part.name} ${qualifier} options priority is __${
+      `⚪️  \`${part.name}\` ${qualifier} options priority is __${
         this.__mutated.partDistance[part.name]
       }__`
     )
   }
-
-  // for (const part of Object.values(this.__designParts)) this.__addPartConfig(part)
 
   return this
 }
@@ -1354,35 +1321,10 @@ Pattern.prototype.__resolveParts = function (count = 0, distance = 0) {
  * Resolves parts depdendencies into a flat array
  *
  * @private
- * @param {object} graph - The graph is used to call itsels recursively
  * @return {Pattern} this - The Pattern instance
  */
-Pattern.prototype.__resolveDependencies = function (graph = false) {
-  if (!graph) graph = this.__dependencies
-  for (const i in this.__inject) {
-    const dependency = this.__inject[i]
-    if (typeof this.__dependencies[i] === 'undefined') this.__dependencies[i] = dependency
-    else if (this.__dependencies[i] !== dependency) {
-      if (typeof this.__dependencies[i] === 'string') {
-        this.__dependencies[i] = [this.__dependencies[i], dependency]
-      } else if (Array.isArray(this.__dependencies[i])) {
-        if (this.__dependencies[i].indexOf(dependency) === -1)
-          this.__dependencies[i].push(dependency)
-      } else {
-        this.store.log.error('Part dependencies should be a string or an array of strings')
-        throw new Error('Part dependencies should be a string or an array of strings')
-      }
-    }
-  }
-
-  let resolved = {}
-  let seen = {}
-  for (let part in graph) resolved[part] = this.__resolveDependency(seen, part, graph)
-  for (let part in seen) if (typeof resolved[part] === 'undefined') resolved[part] = []
-
-  this.__resolvedDependencies = resolved
-  this.config.resolvedDependencies = resolved
-
+Pattern.prototype.__resolveDependencies = function () {
+  this.config.resolvedDependencies = this.__resolvedDependencies
   return this
 }
 
@@ -1563,19 +1505,7 @@ Pattern.prototype.__wants = function (partName, set = 0) {
  */
 function mergeDependencies(dep = [], current = []) {
   // Current dependencies
-  const list = []
-  if (Array.isArray(current)) list.push(...current)
-  else if (typeof current === 'string') list.push(current)
+  const list = [].concat(current, dep)
 
-  if (Array.isArray(dep)) list.push(...dep)
-  else if (typeof dep === 'string') list.push(dep)
-
-  // Dependencies should be parts names (string) not the object
-  const deps = []
-  for (const part of [...new Set(list)]) {
-    if (typeof part === 'object') deps.push(part.name)
-    else deps.push(part)
-  }
-
-  return deps
+  return [...new Set(list)]
 }
