@@ -111,7 +111,7 @@ describe('Pattern', () => {
       parts: [partC],
     })
     const pattern = new Pattern()
-    pattern.draft()
+    pattern.__init()
 
     it('Pattern.__init() should resolve all measurements', () => {
       expect(
@@ -153,8 +153,8 @@ describe('Pattern', () => {
     })
 
     it('Pattern.__init() should set config data in the store', () => {
-      expect(pattern.setStores[0].get('data.name')).to.equal('test')
-      expect(pattern.setStores[0].get('data.version')).to.equal('1.2.3')
+      expect(pattern.store.get('data.name')).to.equal('test')
+      expect(pattern.store.get('data.version')).to.equal('1.2.3')
     })
 
     it('Pattern.__init() should resolve dependencies', () => {
@@ -179,6 +179,63 @@ describe('Pattern', () => {
       expect(pattern.config.draftOrder[0]).to.equal('test.partA')
       expect(pattern.config.draftOrder[1]).to.equal('test.partB')
       expect(pattern.config.draftOrder[2]).to.equal('test.partC')
+    })
+
+    it('Pattern.__init() should overwrite options from dependencies', () => {
+      const partD = {
+        name: 'test.partD',
+        from: partB,
+        options: {
+          optB: { deg: 25, min: 15, max: 45 },
+        },
+        draft: ({ part }) => part,
+      }
+
+      const Pattern = new Design({
+        data: {
+          name: 'test',
+          version: '1.2.3',
+        },
+        parts: [partD],
+      })
+      const pattern = new Pattern()
+      pattern.__init()
+      for (const [key, value] of Object.entries(partD.options.optB)) {
+        expect(pattern.config.options.optB[key]).to.equal(value)
+      }
+    })
+
+    it('Pattern.__init() should overwrite options from complex dependencies', () => {
+      const partD = {
+        name: 'test.partD',
+        from: partB,
+        options: {
+          optB: { deg: 25, min: 15, max: 45 },
+        },
+        draft: ({ part }) => part,
+      }
+
+      const partE = {
+        name: 'test.partE',
+        from: partD,
+        options: {
+          optB: { deg: 10, min: 15, max: 50 },
+        },
+        draft: ({ part }) => part,
+      }
+
+      const Pattern = new Design({
+        data: {
+          name: 'test',
+          version: '1.2.3',
+        },
+        parts: [partC, partE],
+      })
+      const pattern = new Pattern()
+      pattern.__init()
+      for (const [key, value] of Object.entries(partE.options.optB)) {
+        expect(pattern.config.options.optB[key]).to.equal(value)
+      }
     })
 
     // I am aware this does too much for one unit test, but this is to simplify TDD
