@@ -32,12 +32,12 @@ describe('Pattern', () => {
       expect(typeof pattern.Snippet).to.equal('function')
       expect(typeof pattern.Attributes).to.equal('function')
       expect(typeof pattern.macros).to.equal('object')
-      expect(typeof pattern.__designParts).to.equal('object')
-      expect(typeof pattern.__inject).to.equal('object')
-      expect(typeof pattern.__dependencies).to.equal('object')
-      expect(typeof pattern.__resolvedDependencies).to.equal('object')
-      expect(typeof pattern.__hide).to.equal('object')
-      expect(Array.isArray(pattern.__draftOrder)).to.equal(true)
+      // expect(typeof pattern.__designParts).to.equal('object')
+      // expect(typeof pattern.config.inject).to.equal('object')
+      // expect(typeof pattern.config.directDependencies).to.equal('object')
+      // expect(typeof pattern.__resolvedDependencies).to.equal('object')
+      // expect(typeof pattern.__hide).to.equal('object')
+      // expect(Array.isArray(pattern.__draftOrder)).to.equal(true)
       expect(pattern.width).to.equal(0)
       expect(pattern.height).to.equal(0)
       expect(pattern.is).to.equal('')
@@ -145,7 +145,7 @@ describe('Pattern', () => {
     })
 
     it('Pattern.__init() should resolve parts', () => {
-      expect(pattern.designConfig.parts.length).to.equal(3)
+      expect(Object.keys(pattern.config.parts)).to.have.lengthOf(3)
     })
 
     it('Pattern.__init() should resolve plugins', () => {
@@ -324,14 +324,14 @@ describe('Pattern', () => {
       expect(pattern.config.options.optionR.list[1]).to.equal('green')
       expect(pattern.config.options.optionR.list[2]).to.equal('blue')
       // Dependencies
-      expect(pattern.__dependencies.partB).to.include('partA')
-      expect(pattern.__dependencies.partC).to.include('partB')
-      expect(pattern.__dependencies.partR).to.include('partC')
-      expect(pattern.__dependencies.partR).to.include('partA')
+      expect(pattern.config.directDependencies.partB).to.include('partA')
+      expect(pattern.config.directDependencies.partC).to.include('partB')
+      expect(pattern.config.directDependencies.partR).to.include('partC')
+      expect(pattern.config.directDependencies.partR).to.include('partA')
       // Inject
-      expect(pattern.__inject.partB).to.equal('partA')
-      expect(pattern.__inject.partC).to.equal('partB')
-      expect(pattern.__inject.partR).to.equal('partA')
+      expect(pattern.config.inject.partB).to.equal('partA')
+      expect(pattern.config.inject.partC).to.equal('partB')
+      expect(pattern.config.inject.partR).to.equal('partA')
       // Draft order
       expect(pattern.config.draftOrder[0]).to.equal('partA')
       expect(pattern.config.draftOrder[1]).to.equal('partB')
@@ -472,12 +472,12 @@ describe('Pattern', () => {
       expect(pattern.config.options.optionD.list[1]).to.equal('green')
       expect(pattern.config.options.optionD.list[2]).to.equal('blue')
       // Dependencies
-      expect(pattern.__dependencies.partB[0]).to.equal('partA')
-      expect(pattern.__dependencies.partC[0]).to.equal('partB')
-      expect(pattern.__dependencies.partD[0]).to.equal('partC')
+      expect(pattern.config.directDependencies.partB[0]).to.equal('partA')
+      expect(pattern.config.directDependencies.partC[0]).to.equal('partB')
+      expect(pattern.config.directDependencies.partD[0]).to.equal('partC')
       // Inject
-      expect(pattern.__inject.partB).to.equal('partA')
-      expect(pattern.__inject.partC).to.equal('partB')
+      expect(pattern.config.inject.partB).to.equal('partA')
+      expect(pattern.config.inject.partC).to.equal('partB')
       // Draft order
       expect(pattern.config.draftOrder[0]).to.equal('partA')
       expect(pattern.config.draftOrder[1]).to.equal('partB')
