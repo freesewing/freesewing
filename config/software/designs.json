@@ -21,6 +21,13 @@
       "difficulty": 3,
       "tags": ["accessories", "infants"]
     },
+    "cuthbert": {
+      "description": "A FreeSewing pattern for a cummerbund",
+      "code": "Sam Pride",
+      "design": "Sam Pride",
+      "difficulty": 3,
+      "tags": ["accessories"]
+    },
     "florence": {
       "description": "A FreeSewing pattern for a face mask",
       "code": "Joost De Cock",
