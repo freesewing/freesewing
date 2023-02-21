@@ -111,10 +111,11 @@ function draftPocketWelt({
       .move(points.weltTopLeft)
       .line(points.weltTopLeft.translate(pocketWeltHeight, pocketWeltHeight / 2))
       .line(points.weltBottomLeft)
-      .move(points.weltTopLeft.translate(0, pocketWeltHeight / 2))
-      .line(points.weltTopRight.translate(0, pocketWeltHeight / 2))
+      .move(points.weltTopLeft.translate(pocketWeltHeight, pocketWeltHeight / 2))
+      .line(points.weltTopRight.translate(pocketWeltHeight * -1, pocketWeltHeight / 2))
       .move(points.weltTopRight)
       .line(points.weltTopRight.translate(pocketWeltHeight * -1, pocketWeltHeight / 2))
+      .line(points.weltBottomRight)
       .addClass('note dotted')
 
     points.title = points.pocketWeltAnchor.translate(pocketWidth / 2, pocketWeltHeight)
