@@ -73,11 +73,14 @@ export function Pattern(designConfig) {
  * @param {object} part - The part to add
  * @return {object} this - The Pattern instance
  */
-Pattern.prototype.addPart = function (part) {
+Pattern.prototype.addPart = function (part, resolveImmediately = false) {
   if (typeof part?.draft === 'function') {
     if (part.name) {
       this.designConfig.parts.push(part)
-      this.__initialized = false
+      if (resolveImmediately) {
+        this.store.log.debug(`Perfoming runtime resolution of new part ${part.name}`)
+        this.__resolvePart([part])
+      } else this.__initialized = false
     } else this.store.log.error(`Part must have a name`)
   } else this.store.log.error(`Part must have a draft() method`)
 
