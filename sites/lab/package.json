@@ -14,13 +14,13 @@
     "url": "https://freesewing.org/patrons/join"
   },
   "scripts": {
-    "build": "node --experimental-json-modules ../../node_modules/next/dist/bin/next build",
+    "build": "next build",
     "cibuild": "yarn build",
     "clean": "rimraf pages/*.mjs && rimraf pages/*/*.mjs && rimraf pages/v/*/*.mjs",
-    "dev": "node --experimental-json-modules ../../node_modules/next/dist/bin/next dev -p 8000",
-    "develop": "node --experimental-json-modules ../../node_modules/next/dist/bin/next dev -p 8000",
-    "lint": "../../node_modules/next/dist/bin/next lint",
-    "prebuild": "SITE=lab node --experimental-json-modules ../shared/prebuild/index.mjs",
+    "dev": "next dev -p 8000",
+    "develop": "next dev -p 8000",
+    "lint": "next lint",
+    "prebuild": "node --experimental-json-modules ../shared/prebuild/index.mjs",
     "start": "yarn prebuild && yarn dev"
   },
   "peerDependencies": {},
@@ -40,8 +40,8 @@
     "lodash.get": "4.4.2",
     "lodash.orderby": "4.6.0",
     "lodash.set": "4.3.2",
-    "next": "13.1.5",
-    "next-i18next": "13.0.3",
+    "next": "13.1.6",
+    "next-i18next": "13.1.4",
     "react": "18.2.0",
     "react-copy-to-clipboard": "5.1.0",
     "react-hotkeys-hook": "4.3.2",
@@ -60,7 +60,7 @@
   },
   "devDependencies": {
     "autoprefixer": "10.4.13",
-    "eslint-config-next": "13.1.5",
+    "eslint-config-next": "13.1.6",
     "js-yaml": "4.1.0",
     "postcss": "8.4.21",
     "remark-extract-frontmatter": "3.2.0",

@@ -61,11 +61,11 @@ backend:
   prebuild: 'node scripts/prebuild.mjs'
 
 dev:
-  build: &nextBuild 'node --experimental-json-modules ../../node_modules/next/dist/bin/next build'
+  build: &nextBuild 'next build'
   cibuild: 'yarn build && node scripts/algolia.mjs'
-  dev: &nextDev 'node --experimental-json-modules ../../node_modules/next/dist/bin/next dev -p 8000'
+  dev: &nextDev 'next dev -p 8000'
   develop: *nextDev
-  lint: &nextLint '../../node_modules/next/dist/bin/next lint'
+  lint: &nextLint 'next lint'
   prebuild: 'SITE=dev node --experimental-json-modules ../shared/prebuild/index.mjs'
   serve: "pm2 start npm --name 'dev' -- run start"
   start: &nextStart 'yarn prebuild && yarn dev'
@@ -81,7 +81,7 @@ lab:
   dev: *nextDev
   develop: *nextDev
   lint: *nextLint
-  prebuild: 'SITE=lab node --experimental-json-modules ../shared/prebuild/index.mjs'
+  prebuild: 'node --experimental-json-modules ../shared/prebuild/index.mjs'
   start: *nextStart
 
 org:

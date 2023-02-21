@@ -1,7 +1,7 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import PageTemplate from 'site/page-templates/design-list.js'
+import { PatternListPageTemplate } from 'site/page-templates/design-list.mjs'
 
-const Page = () => <PageTemplate section="garments" />
+const Page = () => <PatternListPageTemplate section="garments" />
 
 export default Page
 

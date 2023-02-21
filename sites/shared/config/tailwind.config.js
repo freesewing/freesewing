@@ -3,12 +3,14 @@ const themes = require('../themes')
 
 module.exports = {
   content: [
+    './pages/*.mjs',
     './pages/*.js',
+    './pages/**/*.mjs',
     './pages/**/*.js',
-    './components/*.js',
-    './components/**/*.js',
-    './page-templates/*.js',
-    '../shared/components/**/*.js',
+    './components/*.mjs',
+    './components/**/*.mjs',
+    './page-templates/*.mjs',
+    '../shared/components/**/*.mjs',
     '../shared/config/tailwind-force.html',
   ],
   plugins: [require('daisyui'), require('tailwindcss/nesting')],
@@ -23,8 +25,8 @@ module.exports = {
   theme: {
     extend: {
       aspectRatio: {
-        '9/16': '9 / 16'
-      }
-    }
-  }
+        '9/16': '9 / 16',
+      },
+    },
+  },
 }

@@ -42,7 +42,12 @@ export function usersRoutes(tools) {
   )
 
   // Check whether a username is available
-  app.post('/available/username', (req, res) => Users.isUsernameAvailable(req, res, tools))
+  app.post('/available/username/jwt', passport.authenticate(...jwt), (req, res) =>
+    Users.isUsernameAvailable(req, res, tools)
+  )
+  app.post('/available/username/key', passport.authenticate(...bsc), (req, res) =>
+    Users.isUsernameAvailable(req, res, tools)
+  )
 
   /*
 

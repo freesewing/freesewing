@@ -147,6 +147,7 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
     return this.setResponse(400, 'unsupportedLanguage')
 
   const ehash = hash(clean(body.email))
+  const check = randomString()
   await this.read({ ehash })
   if (this.exists) {
     /*
@@ -176,6 +177,7 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
           email: this.clear.email,
           id: this.record.id,
           ehash: ehash,
+          check,
         },
         userId: this.record.id,
       })
@@ -189,7 +191,7 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
         actionUrl:
           type === 'signup-aed'
             ? false // No actionUrl for disabled accounts
-            : i18nUrl(body.language, `/confirm/${type}/${this.Confirmation.record.id}`),
+            : i18nUrl(body.language, `/confirm/${type}/${this.Confirmation.record.id}/${check}`),
         whyUrl: i18nUrl(body.language, `/docs/faq/email/why-${type}`),
         supportUrl: i18nUrl(body.language, `/patrons/join`),
       },
@@ -247,9 +249,11 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
       email: this.clear.email,
       id: this.record.id,
       ehash: ehash,
+      check,
     },
     userId: this.record.id,
   })
+  console.log(check)
 
   // Send signup email
   if (!this.isUnitTest(body) || this.config.tests.sendEmail)
@@ -258,7 +262,10 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
       language: this.language,
       to: this.clear.email,
       replacements: {
-        actionUrl: i18nUrl(this.language, `/confirm/signup/${this.Confirmation.record.id}`),
+        actionUrl: i18nUrl(
+          this.language,
+          `/confirm/signup/${this.Confirmation.record.id}/${check}`
+        ),
         whyUrl: i18nUrl(this.language, `/docs/faq/email/why-signup`),
         supportUrl: i18nUrl(this.language, `/patrons/join`),
       },
@@ -350,6 +357,9 @@ UserModel.prototype.confirm = async function ({ body, params }) {
   })
   if (this.error) return this
 
+  // Before we return, remove the confirmation so it works only once
+  await this.Confirmation.unguardedDelete()
+
   // Account is now active, let's return a passwordless login
   return this.loginOk()
 }
@@ -384,6 +394,8 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
   const data = {}
   // Bio
   if (typeof body.bio === 'string') data.bio = body.bio
+  // Compare
+  if ([true, false].includes(body.compare)) data.compare = body.compare
   // Consent
   if ([0, 1, 2, 3].includes(body.consent)) data.consent = body.consent
   // Control
@@ -560,12 +572,13 @@ UserModel.prototype.asAccount = function () {
   return {
     id: this.record.id,
     bio: this.clear.bio,
+    compare: this.record.compare,
     consent: this.record.consent,
     control: this.record.control,
     createdAt: this.record.createdAt,
     email: this.clear.email,
     github: this.clear.github,
-    img: this.record.img,
+    img: this.clear.img,
     imperial: this.record.imperial,
     initial: this.clear.initial,
     language: this.record.language,
