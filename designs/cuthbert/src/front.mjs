@@ -90,13 +90,6 @@ function draftFront({
     .close()
     .addClass('fabric')
 
-  // Pleates ********************
-
-  //log.info ("Pleat height:" + pleatHeight)
-  //log.info ("Side Top:" + points.rightSideTop.y)
-
-  // points.bottomRightTaperStart.y += totalPleatsHeight - sideHeight
-
   // Construct Seam
 
   paths.frontSeam = new Path()
@@ -110,6 +103,52 @@ function draftFront({
     .addClass('fabric')
 
   if (paperless) {
+    //overall
+    macro('hd', {
+      from: points.top,
+      to: points.rightSideTop,
+      y: 15,
+    })
+
+    macro('vd', {
+      from: points.top,
+      to: points.leftBottom,
+      y: -15,
+    })
+
+    //Side
+    macro('vd', {
+      from: points.rightSideTop,
+      to: points.rightSideBottom,
+      y: points.rightSideTop.y + 15,
+      x: points.rightSideTop.x + 15,
+    })
+
+    macro('vd', {
+      from: points.top,
+      to: points.rightSideTop,
+      y: points.rightSideTop.y + 15,
+      x: points.rightSideTop.x + 15,
+    })
+    macro('vd', {
+      from: points.leftBottom,
+      to: points.rightSideBottom,
+      y: points.rightSideBottom.y + 15,
+      x: points.rightSideBottom.x + 15,
+    })
+
+    // taper
+    macro('hd', {
+      from: points.top,
+      to: points.topRightTaperStart,
+      y: -15,
+    })
+
+    macro('hd', {
+      from: points.leftBottom,
+      to: points.bottomRightTaperStart,
+      y: points.leftBottom.y - 15,
+    })
   }
 
   if (complete) {

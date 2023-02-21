@@ -57,6 +57,18 @@ function draftStrapRight({
     .addClass('fabric')
 
   if (paperless) {
+    //overall
+    macro('hd', {
+      from: points.topLeft,
+      to: points.topRight,
+      y: 15,
+    })
+
+    macro('vd', {
+      from: points.topLeft,
+      to: points.bottomLeft,
+      x: 15,
+    })
   }
 
   if (complete) {

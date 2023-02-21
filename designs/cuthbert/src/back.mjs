@@ -43,7 +43,7 @@ function draftBack({
   let pocketWidth = Math.round(frontWidth * options.pocketWidth)
   let pocketHeight = Math.round(pocketWidth * options.pocketHeightRatio)
   let pocketWeltHeight = Math.round(pocketHeight * options.pocketWeltHeight)
-  let pocketWeltExtraWidth = pocketWeltHeight * 4
+  let pocketWeltExtraWidth = Math.round(pocketWeltHeight * 4)
 
   store.set('pocketWidth', pocketWidth)
   store.set('pocketHeight', pocketHeight)
@@ -98,10 +98,50 @@ function draftBack({
     .addClass('fabric')
 
   if (paperless) {
+    //overall
     macro('hd', {
       from: points.top,
       to: points.rightSideTop,
       y: 15,
+    })
+
+    macro('vd', {
+      from: points.top,
+      to: points.bottom,
+      y: -15,
+    })
+
+    //Side
+    macro('vd', {
+      from: points.rightSideTop,
+      to: points.rightSideBottom,
+      y: points.rightSideTop.y + 15,
+      x: points.rightSideTop.x + 15,
+    })
+    macro('vd', {
+      from: points.top,
+      to: points.rightSideTop,
+      y: points.rightSideTop.y + 15,
+      x: points.rightSideTop.x + 15,
+    })
+    macro('vd', {
+      from: points.bottom,
+      to: points.rightSideBottom,
+      y: points.rightSideBottom.y + 15,
+      x: points.rightSideBottom.x + 15,
+    })
+
+    //taper
+    macro('hd', {
+      from: points.top,
+      to: points.topRightTaperStart,
+      y: -15,
+    })
+
+    macro('hd', {
+      from: points.bottom,
+      to: points.bottomRightTaperStart,
+      y: points.bottom.y - 15,
     })
   }
 

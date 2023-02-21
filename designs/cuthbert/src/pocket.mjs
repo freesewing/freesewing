@@ -80,11 +80,11 @@ function draftPocket({
         y: points.bottomLeft.y - 30,
       })
 
-      macro('hd', {
-        from: points.weltTopLeft,
-        to: points.topLeft,
-        y: points.weltTopLeft.y + 30,
-      })
+      // macro('hd', {
+      //   from: points.topLeft,
+      //   to: points.weltTopLeft,
+      //   y: points.weltTopLeft.y + 30,
+      // })
     }
 
     if (complete) {

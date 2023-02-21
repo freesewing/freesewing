@@ -84,25 +84,25 @@ function draftPocketWelt({
     macro('vd', {
       from: points.trueWeltTopLeft,
       to: points.trueWeltBottomLeft,
-      x: points.trueWeltBottomLeft.x + pocketWeltExtraWidth,
+      x: points.trueWeltBottomLeft.x + pocketWeltExtraWidth / 2,
     })
 
     macro('hd', {
       from: points.trueWeltBottomLeft,
       to: points.trueWeltBottomRight,
-      y: points.trueWeltBottomLeft.y - pocketWeltExtraWidth,
+      y: points.trueWeltBottomLeft.y - pocketWeltExtraWidth / 2,
     })
 
     macro('vd', {
       from: points.trueWeltTopLeft,
       to: points.weltTopLeft,
-      x: points.trueWeltTopLeft.x + pocketWeltExtraWidth,
+      x: points.trueWeltTopRight.x / 3,
     })
 
     macro('hd', {
-      from: points.trueWeltTopLeft,
-      to: points.weltTopLeft,
-      x: points.trueWeltTopLeft.x + pocketWeltExtraWidth,
+      from: points.trueWeltTopRight,
+      to: points.weltTopRight,
+      x: points.trueWeltTopLeft.x,
     })
   }
 

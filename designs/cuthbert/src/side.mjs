@@ -85,6 +85,37 @@ function draftSide({
   }
 
   if (paperless) {
+    //overall
+    macro('vd', {
+      from: points.sideTopLeft,
+      to: points.sideBottomLeft,
+      x: sideLength * 0.125,
+    })
+
+    macro('hd', {
+      from: points.sideTopLeft,
+      to: points.strapTop,
+      y: sideHeight * 0.125,
+    })
+
+    //Strap
+    macro('vd', {
+      from: points.sideTopLeft,
+      to: points.strapTop,
+      x: sideLength * 0.875,
+    })
+
+    macro('vd', {
+      from: points.strapTop,
+      to: points.strapBottom,
+      x: sideLength * 0.875,
+    })
+
+    macro('vd', {
+      from: points.strapBottom,
+      to: points.sideBottomLeft,
+      x: sideLength * 0.875,
+    })
   }
 
   if (complete) {
