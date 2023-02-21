@@ -12,31 +12,31 @@ describe('Pattern', () => {
 
     const part2 = {
       name: 'test2',
-      from: part1,
+      after: part1,
       draft: ({ part }) => part,
     }
 
     const part3 = {
       name: 'test3',
-      after: part2,
+      from: part2,
       draft: ({ part }) => part,
     }
 
     describe('with resolveImmediately: true', () => {
-      it('Should add the part to the internal part object', () => {
+      it('Should add the part to parts object', () => {
         const design = new Design({ parts: [part1] })
         const pattern = new design()
         pattern.__init()
         pattern.addPart(part2, true)
-        expect(pattern.__designParts.test2).to.equal(part2)
+        expect(pattern.config.parts.test2).to.equal(part2)
       })
 
       it('Should resolve injected dependencies for the new part', () => {
         const design = new Design({ parts: [part1] })
         const pattern = new design()
         pattern.__init()
-        pattern.addPart(part2, true)
-        expect(pattern.__inject.test2).to.equal('test')
+        pattern.addPart(part3, true)
+        expect(pattern.config.inject.test3).to.equal('test2')
       })
 
       it('Should resolve all dependencies for the new part', () => {
@@ -45,7 +45,7 @@ describe('Pattern', () => {
         pattern.__init()
         pattern.addPart(part3, true)
         expect(pattern.config.resolvedDependencies.test3).to.have.members(['test', 'test2'])
-        expect(pattern.__designParts.test2).to.equal(part2)
+        expect(pattern.config.parts.test2).to.equal(part2)
       })
 
       it('Should add a the measurements for the new part', () => {
@@ -79,7 +79,7 @@ describe('Pattern', () => {
         expect(pattern.config.plugins.testPlugin).to.equal(plugin)
       })
 
-      it('Should add the options for the new part', () => {
+      it('Should resolve the options for the new part', () => {
         const design = new Design({ parts: [part1] })
         const pattern = new design()
         pattern.__init()
@@ -96,6 +96,61 @@ describe('Pattern', () => {
         pattern.addPart(part2, true)
         expect(pattern.config.options.opt1).to.equal(opt1)
       })
+
+      it('Should resolve the dependency options for the new part', () => {
+        const design = new Design({ parts: [part1] })
+        const pattern = new design()
+        pattern.__init()
+
+        const opt1 = { pct: 10, min: 0, max: 50 }
+        const part2 = {
+          name: 'test2',
+          options: {
+            opt1,
+          },
+          draft: ({ part }) => part,
+        }
+
+        const part3 = {
+          name: 'test3',
+          from: part2,
+          draft: ({ part }) => part,
+        }
+
+        pattern.addPart(part3, true)
+        expect(pattern.config.options.opt1).to.equal(opt1)
+      })
+
+      it('Should resolve the overwritten options for the new part', () => {
+        const design = new Design({ parts: [part1] })
+        const pattern = new design()
+        pattern.__init()
+
+        const opt1 = { pct: 10, min: 0, max: 50 }
+        const part2 = {
+          name: 'test2',
+          options: {
+            opt1: { pct: 15, min: 10, max: 55 },
+          },
+          draft: ({ part }) => part,
+        }
+
+        const part3 = {
+          name: 'test3',
+          from: part2,
+          options: {
+            opt1,
+          },
+          draft: ({ part }) => part,
+        }
+
+        pattern.addPart(part3, true)
+        expect(pattern.config.options.opt1).to.equal(opt1)
+      })
+    })
+
+    describe('with resolveImmediately: false', () => {
+      it('does not create duplications in the configuration')
     })
   })
 })
