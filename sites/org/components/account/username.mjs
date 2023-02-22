@@ -2,15 +2,18 @@
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useBackend } from 'site/hooks/useBackend.mjs'
+import { useToast } from 'site/hooks/useToast.mjs'
 // Components
-import Link from 'next/link'
-import { Icons, welcomeSteps } from '../shared.mjs'
+import { Spinner } from 'shared/components/spinner.mjs'
+import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { OkIcon, NoIcon } from 'shared/components/icons.mjs'
+import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
 
-export const ns = ['username']
+export const ns = ['account', 'toast']
 
 export const UsernameSettings = ({ app, title = false, welcome = false }) => {
   const backend = useBackend(app)
+  const toast = useToast()
   const { t } = useTranslation(ns)
   const [username, setUsername] = useState(app.account.username)
   const [available, setAvailable] = useState(true)
@@ -25,7 +28,11 @@ export const UsernameSettings = ({ app, title = false, welcome = false }) => {
   }
 
   const save = async () => {
-    await backend.updateAccount({ username })
+    app.startLoading()
+    const result = await backend.updateAccount({ username })
+    if (result === true) toast.for.settingsSaved()
+    else toast.for.backendError()
+    app.stopLoading()
   }
 
   const nextHref =
@@ -33,9 +40,20 @@ export const UsernameSettings = ({ app, title = false, welcome = false }) => {
       ? '/welcome/' + welcomeSteps[app.account.control][5]
       : '/docs/guide'
 
+  let btnClasses = 'btn mt-4 capitalize '
+  if (welcome) {
+    btnClasses += 'w-64 '
+    if (app.loading) btnClasses += 'btn-accent '
+    else btnClasses += 'btn-secondary '
+  } else {
+    btnClasses += 'w-full '
+    if (app.loading) btnClasses += 'btn-accent '
+    else btnClasses += 'btn-primary '
+  }
+
   return (
     <>
-      {title ? <h1 className="text-4xl">{t('title')}</h1> : null}
+      {title ? <h1 className="text-4xl">{t('usernameTitle')}</h1> : null}
       <div className="flex flex-row items-center">
         <input
           value={username}
@@ -52,18 +70,24 @@ export const UsernameSettings = ({ app, title = false, welcome = false }) => {
           )}
         </span>
       </div>
-      <button
-        className={`btn btn-secondary mt-4 ${available ? '' : 'btn-disabled'} w-64`}
-        onClick={save}
-      >
-        {available ? 'Save' : 'Username is not available'}
+      <button className={btnClasses} disabled={!available} onClick={save}>
+        <span className="flex flex-row items-center gap-2">
+          {app.loading ? (
+            <>
+              <Spinner />
+              <span>{t('processing')}</span>
+            </>
+          ) : available ? (
+            t('save')
+          ) : (
+            t('usernameNotAvailable')
+          )}
+        </span>
       </button>
 
       {welcome ? (
         <>
-          <Link href={nextHref} className="btn btn-primary w-full mt-12">
-            {t('continue')}
-          </Link>
+          <ContinueButton app={app} btnProps={{ href: nextHref }} link />
           {welcomeSteps[app.account.control].length > 0 ? (
             <>
               <progress
@@ -82,7 +106,9 @@ export const UsernameSettings = ({ app, title = false, welcome = false }) => {
             </>
           ) : null}
         </>
-      ) : null}
+      ) : (
+        <BackToAccountButton loading={app.loading} />
+      )}
     </>
   )
 }

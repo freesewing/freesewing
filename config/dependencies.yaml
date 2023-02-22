@@ -320,14 +320,17 @@ org:
     '@mdx-js/runtime': *mdxRuntime
     '@tailwindcss/typography': *tailwindTypography
     'algoliasearch': *algoliasearch
+    'react-copy-to-clipboard': 5.1.0
     'daisyui': *daisyui
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
+    'luxon': '3.2.1'
     'next': *next
     'react-dropzone': '14.2.3'
     'react-hotkeys-hook': *reactHotkeysHook
     'react-instantsearch-dom': *reactInstantsearchDom
+    'react-hot-toast': 2.4.0
     'react-markdown': *reactMarkdown
     'react-swipeable': *reactSwipeable
     'react-timeago': *reactTimeago

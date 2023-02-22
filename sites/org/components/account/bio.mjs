@@ -2,13 +2,15 @@
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useBackend } from 'site/hooks/useBackend.mjs'
+import { useToast } from 'site/hooks/useToast.mjs'
 // Components
-import Link from 'next/link'
 import Markdown from 'react-markdown'
-import { Icons, welcomeSteps } from '../shared.mjs'
+import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { Popout } from 'shared/components/popout.mjs'
+import { SaveSettingsButton } from 'site/components/buttons/save-settings-button.mjs'
+import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
 
-export const ns = ['bio']
+export const ns = ['account', 'toast']
 
 const Tab = ({ id, activeTab, setActiveTab, t }) => (
   <button
@@ -23,11 +25,16 @@ const Tab = ({ id, activeTab, setActiveTab, t }) => (
 export const BioSettings = ({ app, title = false, welcome = false }) => {
   const backend = useBackend(app)
   const { t } = useTranslation(ns)
+  const toast = useToast()
   const [bio, setBio] = useState(app.account.bio)
   const [activeTab, setActiveTab] = useState('edit')
 
   const save = async () => {
-    await backend.updateAccount({ bio })
+    app.startLoading()
+    const result = await backend.updateAccount({ bio })
+    if (result === true) toast.for.settingsSaved()
+    else toast.for.backendError()
+    app.stopLoading()
   }
 
   const nextHref =
@@ -39,7 +46,7 @@ export const BioSettings = ({ app, title = false, welcome = false }) => {
 
   return (
     <>
-      {title ? <h1 className="text-4xl">{t('title')}</h1> : null}
+      {title ? <h1 className="text-4xl">{t('bioTitle')}</h1> : null}
       <div className="tabs w-full">
         <Tab id="edit" {...tabProps} />
         <Tab id="preview" {...tabProps} />
@@ -59,18 +66,15 @@ export const BioSettings = ({ app, title = false, welcome = false }) => {
           </div>
         )}
       </div>
-      <button className={`btn btn-secondary mt-4 w-64`} onClick={save}>
-        {t('save')}
-      </button>
+      <SaveSettingsButton app={app} btnProps={{ onClick: save }} welcome={welcome} />
+      {!welcome && <BackToAccountButton loading={app.loading} />}
       <Popout tip compact>
         {t('mdSupport')}
       </Popout>
 
       {welcome ? (
         <>
-          <Link href={nextHref} className="btn btn-primary w-full mt-12">
-            {t('continue')}
-          </Link>
+          <ContinueButton app={app} btnProps={{ href: nextHref }} link />
           {welcomeSteps[app.account.control].length > 0 ? (
             <>
               <progress

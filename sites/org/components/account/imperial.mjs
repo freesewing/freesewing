@@ -2,21 +2,28 @@
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useBackend } from 'site/hooks/useBackend.mjs'
+import { useToast } from 'site/hooks/useToast.mjs'
 // Components
-import Link from 'next/link'
-import { Choice, Icons, welcomeSteps } from '../shared.mjs'
+import { Choice, Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
+import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
 
-export const ns = ['units']
+export const ns = ['account', 'toast']
 
-export const UnitsSettings = ({ app, title = false, welcome = false }) => {
+export const ImperialSettings = ({ app, title = false, welcome = false }) => {
   const backend = useBackend(app)
+  const toast = useToast()
   const { t } = useTranslation(ns)
   const [selection, setSelection] = useState(app.account?.imperial === true ? 'imperial' : 'metric')
 
   const update = async (val) => {
     if (val !== selection) {
+      app.startLoading()
       const result = await backend.updateAccount({ imperial: val === 'imperial' ? true : false })
-      if (result) setSelection(val)
+      if (result === true) {
+        setSelection(val)
+        toast.for.settingsSaved()
+      } else toast.for.backendError()
+      app.stopLoading()
     }
   }
 
@@ -27,20 +34,26 @@ export const UnitsSettings = ({ app, title = false, welcome = false }) => {
 
   return (
     <>
-      {title ? <h1 className="text-4xl">{t('title')}</h1> : <h1></h1>}
+      {title ? <h1 className="text-4xl">{t('unitsTitle')}</h1> : <h1></h1>}
       {['metric', 'imperial'].map((val) => (
-        <Choice val={val} t={t} update={update} current={selection} bool key={val}>
+        <Choice
+          val={val}
+          t={t}
+          update={update}
+          current={selection}
+          bool
+          key={val}
+          boolIcons={{ yes: <span>&quot;</span>, no: <span>cm</span> }}
+        >
           <span className="block text-lg leading-5">
-            {selection === 1 && val === 2 ? t('showMore') : t(`${val}`)}
+            {selection === 1 && val === 2 ? t('showMore') : t(`${val}Units`)}
           </span>
-          <span className="block text-xs font-light normal-case pt-1">{t(`${val}d`)}</span>
+          <span className="block text-normal font-light normal-case pt-1">{t(`${val}Unitsd`)}</span>
         </Choice>
       ))}
       {welcome ? (
         <>
-          <Link href={nextHref} className="btn btn-primary w-full mt-12">
-            {t('continue')}
-          </Link>
+          <ContinueButton app={app} btnProps={{ href: nextHref }} link />
           {welcomeSteps[app.account?.control].length > 0 ? (
             <>
               <progress
@@ -59,7 +72,9 @@ export const UnitsSettings = ({ app, title = false, welcome = false }) => {
             </>
           ) : null}
         </>
-      ) : null}
+      ) : (
+        <BackToAccountButton loading={app.loading} />
+      )}
     </>
   )
 }

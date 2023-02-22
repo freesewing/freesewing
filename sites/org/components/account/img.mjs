@@ -3,14 +3,17 @@ import { useState, useCallback } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useBackend } from 'site/hooks/useBackend.mjs'
 import { useDropzone } from 'react-dropzone'
+import { useToast } from 'site/hooks/useToast.mjs'
 // Components
-import Link from 'next/link'
-import { Icons, welcomeSteps } from '../shared.mjs'
+import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
+import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
+import { SaveSettingsButton } from 'site/components/buttons/save-settings-button.mjs'
 
-export const ns = ['img']
+export const ns = ['account', 'toast']
 
 export const ImgSettings = ({ app, title = false, welcome = false }) => {
   const backend = useBackend(app)
+  const toast = useToast()
   const { t } = useTranslation(ns)
 
   const [img, setImg] = useState(false)
@@ -26,14 +29,18 @@ export const ImgSettings = ({ app, title = false, welcome = false }) => {
   const { getRootProps, getInputProps } = useDropzone({ onDrop })
 
   const save = async () => {
-    await backend.updateAccount({ img })
+    app.startLoading()
+    const result = await backend.updateAccount({ img })
+    if (result === true) toast.for.settingsSaved()
+    else toast.for.backendError()
+    app.stopLoading()
   }
 
   const nextHref = '/docs/guide'
 
   return (
     <>
-      {title ? <h1 className="text-4xl">{t('title')}</h1> : null}
+      {title ? <h2 className="text-4xl">{t('imgTitle')}</h2> : null}
       <div>
         {!welcome || img !== false ? (
           <img alt="img" src={img || app.account.img} className="shadow mb-4" />
@@ -46,20 +53,20 @@ export const ImgSettings = ({ app, title = false, welcome = false }) => {
         `}
         >
           <input {...getInputProps()} />
-          <p className="hidden lg:block p-0 m-0">{t('dragAndDropImageHere')}</p>
+          <p className="hidden lg:block p-0 m-0">{t('imgDragAndDropImageHere')}</p>
           <p className="hidden lg:block p-0 my-2">{t('or')}</p>
-          <button className={`btn btn-secondary btn-outline mt-4 w-64`}>{t('selectImage')}</button>
+          <button className={`btn btn-secondary btn-outline mt-4 w-64`}>
+            {t('imgSelectImage')}
+          </button>
         </div>
       </div>
-      <button className={`btn btn-secondary mt-4 w-64`} onClick={save} disabled={!img}>
-        {t('save')}
-      </button>
 
       {welcome ? (
         <>
-          <Link href={nextHref} className="btn btn-primary w-full mt-12">
-            {t('continue')}
-          </Link>
+          <button className={`btn btn-secondary mt-4 w-64`} onClick={save} disabled={!img}>
+            {t('save')}
+          </button>
+          <ContinueButton app={app} btnProps={{ href: nextHref }} link />
           {welcomeSteps[app.account.control].length > 0 ? (
             <>
               <progress
@@ -78,7 +85,12 @@ export const ImgSettings = ({ app, title = false, welcome = false }) => {
             </>
           ) : null}
         </>
-      ) : null}
+      ) : (
+        <>
+          <SaveSettingsButton app={app} btnProps={{ onClick: save }} />
+          <BackToAccountButton loading={app.loading} />
+        </>
+      )}
     </>
   )
 }

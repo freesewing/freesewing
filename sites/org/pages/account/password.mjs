@@ -6,12 +6,11 @@ import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import { PageWrapper, ns as pageNs } from 'site/components/wrappers/page.mjs'
-import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { ns as authNs } from 'site/components/wrappers/auth/index.mjs'
-import { ns as bioNs } from 'site/components/account/bio.mjs'
+import { ns as passwordNs } from 'site/components/account/password.mjs'
 
 // Translation namespaces used on this page
-const namespaces = [...new Set([...bioNs, ...authNs, ...pageNs])]
+const namespaces = [...new Set([...passwordNs, ...authNs, ...pageNs])]
 
 /*
  * Some things should never generated as SSR
@@ -21,27 +20,30 @@ const DynamicAuthWrapper = dynamic(
   () => import('site/components/wrappers/auth/index.mjs').then((mod) => mod.AuthWrapper),
   { ssr: false }
 )
-const DynamicBio = dynamic(
-  () => import('site/components/account/bio.mjs').then((mod) => mod.BioSettings),
+
+const DynamicPassword = dynamic(
+  () => import('site/components/account/password.mjs').then((mod) => mod.PasswordSettings),
   { ssr: false }
 )
 
-const BioPage = (props) => {
+const AccountPage = (props) => {
   const app = useApp(props)
   const { t } = useTranslation(namespaces)
+  const crumbs = [
+    [t('yourAccount'), '/account'],
+    [t('password'), '/account/password'],
+  ]
 
   return (
-    <PageWrapper app={app} title={t('title')} layout={BareLayout} footer={false}>
+    <PageWrapper app={app} title={t('password')} crumbs={crumbs}>
       <DynamicAuthWrapper app={app}>
-        <div className="m-auto max-w-lg text-center lg:mt-12 p-8">
-          <DynamicBio app={app} title welcome />
-        </div>
+        <DynamicPassword app={app} title />
       </DynamicAuthWrapper>
     </PageWrapper>
   )
 }
 
-export default BioPage
+export default AccountPage
 
 export async function getStaticProps({ locale }) {
   return {
