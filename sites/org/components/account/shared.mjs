@@ -60,11 +60,7 @@ export const Choice = ({
       className={`${btnClasses.dflt} ${active ? btnClasses.active : btnClasses.inactive}`}
       onClick={() => update(val)}
     >
-      {bool ? (
-        boolChoices[val]
-      ) : (
-        <span className={spanClasses}>{bool ? (val === 'yes' ? 1 : 2) : val}</span>
-      )}
+      {bool ? boolChoices[val] : <span className={spanClasses}>{val}</span>}
       <div className={`normal-case text-base-content`}>{children}</div>
     </button>
   )
