@@ -4711,10 +4711,10 @@
     lodash "^4.17.21"
     rxjs "^7.8.0"
 
-"@sanity/vision@3.2.5":
-  version "3.2.5"
-  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-3.2.5.tgz#d006eefa450c51eb43ba821b33570337d522419f"
-  integrity sha512-qprFXGA+GUKHWCGRca2ugp9eJV6VnZaWFWqv1di7KDwraEiDAK8evtT5in3LhOIgAxNcbLGGjj707PqFkfpTaA==
+"@sanity/vision@3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-3.5.0.tgz#c4332e071e6f83c2b822f7459f47cd20b7dab9a6"
+  integrity sha512-SpD9fO5F+nDk00yNZmvujMhk+mLxTEFC8CqgLV5ypk458kyqPEf16yHdhO+bly0IaXOSWQzYmkXFFi8bjqiJ8Q==
   dependencies:
     "@codemirror/autocomplete" "^6.1.0"
     "@codemirror/commands" "^6.0.1"

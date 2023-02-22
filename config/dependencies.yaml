@@ -343,7 +343,7 @@ org:
 
 sanity:
   _:
-    '@sanity/vision': &sanity '3.2.5'
+    '@sanity/vision': &sanity '3.5.0'
     'react': *react
     'react-dom': *react
     'react-is': *react
