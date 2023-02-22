@@ -34,9 +34,9 @@ export const strapType = {
   menu: 'style.strap',
 }
 
-export const strapWidth = { count: 30, min: 5, max: 100, menu: 'style.strap' } // the size of the Strap as a % of the overall height -
-export const strapExtraLength = { pct: 25, min: 0, max: 100, menu: 'style.strap' }
-export const strapRightPct = { pct: 25, min: 25, max: 75, menu: 'style.strap' } // For Uneven strap lengths, what percentage of the total strap is on the right. 50% for even lengths
+export const strapWidth = { count: 18, min: 5, max: 100, menu: 'style.strap' } // the size of the Strap as a % of the overall height -
+export const strapExtraLength = { pct: 30, min: 10, max: 100, menu: 'style.strap' }
+export const strapRightPct = { pct: 50, min: 25, max: 75, menu: 'style.strap' } // For Uneven strap lengths, what percentage of the total strap is on the right. 50% for even lengths
 
 // Fastener
 export const fastenerStyle = {
@@ -86,9 +86,10 @@ export const pocketSide = {
   menu: 'style.pocket',
 }
 
-export const pocketWidth = { pct: 10, min: 10, max: 40, menu: 'style.pocket' } //Optional fob/internal pocket width as a pct of front width
-export const pocketHeightRatio = { pct: 50, min: 50, max: 200, menu: 'style.pocket' } //Optional fob/internal pocket height as a ratio of width (Validate sizing)
-export const pocketWeltHeight = { pct: 3.5, min: 2.5, max: 5, menu: 'style.pocket' } // height of the welt opening as a % of the overall pocket height
+export const pocketWidth = { pct: 20, min: 10, max: 50, menu: 'style.pocket' } //Optional fob/internal pocket width as a pct of front width
+export const pocketHeightRatio = { pct: 100, min: 50, max: 200, menu: 'style.pocket' } //Optional fob/internal pocket height as a ratio of width (Validate sizing)
+export const pocketWeltHeight = { pct: 10, min: 5, max: 25, menu: 'style.pocket' } // height of the welt opening as a % of the overall pocket height
+export const pocketWeltExtra = { pct: 10, min: 5, max: 25, menu: 'style.pocket' } // Additional "Width/Height added to pocket welt and pocket as a ratio of pocket width"
 export const pocketPointRatio = { pct: 10, min: 0, max: 50, menu: 'style.pocket' } // Height of the bottom taper/point as a % of the pocketHeight
 
 // export const buttonPlacketStyle = {

@@ -7,6 +7,7 @@ import {
   frontSideStartRatio,
   pocketHeightRatio,
   pocketStyle,
+  pocketWeltExtra,
   pocketWeltHeight,
   pocketWidth,
   sideHeightRatio,
@@ -31,7 +32,7 @@ function draftBack({
 }) {
   // global/re-used settings
 
-  let frontWidth = Math.round(measurements.waist * 0.5) //Total front width is 1/2 the waist
+  let frontWidth = Math.round(measurements.waist * 0.25) //Total front width is 1/2 the waist, but as we are cutting on the fold, this should be 25%
   let frontHeight = Math.round(frontWidth * options.frontHeightRatio)
 
   store.set('frontWidth', frontWidth)
@@ -43,7 +44,7 @@ function draftBack({
   let pocketWidth = Math.round(frontWidth * options.pocketWidth)
   let pocketHeight = Math.round(pocketWidth * options.pocketHeightRatio)
   let pocketWeltHeight = Math.round(pocketHeight * options.pocketWeltHeight)
-  let pocketWeltExtraWidth = Math.round(pocketWeltHeight * 4)
+  let pocketWeltExtraWidth = Math.round(pocketWidth * options.pocketWeltExtra)
 
   store.set('pocketWidth', pocketWidth)
   store.set('pocketHeight', pocketHeight)
@@ -233,6 +234,7 @@ export const back = {
     frontSideStartRatio,
     pocketHeightRatio,
     pocketStyle,
+    pocketWeltExtra,
     pocketWeltHeight,
     pocketWidth,
     sideHeightRatio,

@@ -38,9 +38,9 @@ function draftStrapLeft({
   let sideLength = store.get('sideLength')
   let frontWidth = store.get('frontWidth')
 
-  let totalStrapLength = Math.round(
-    (measurements['waist'] - frontWidth - sideLength * 2) * (1 + options.strapExtraLength)
-  )
+  let totalStrapLength = Math.round(measurements['waist'] - frontWidth * 2 - sideLength * 2)
+
+  totalStrapLength = totalStrapLength * (1 + options.strapExtraLength)
   let totalStrapHeight = options.strapWidth * 2
 
   store.set('totalStrapLength', totalStrapLength)
