@@ -38,7 +38,7 @@ export function Store(methods = []) {
       logs.warning.push(...data)
     },
     error: function (...data) {
-      console.error(...data)
+      if (typeof window !== 'undefined') console.error(...data)
       logs.error.push(...data)
     },
   }

@@ -1,41 +1,72 @@
 import { __addNonEnumProp } from './utils.mjs'
 
+/**
+ * Get the name of the given plugin config
+ *
+ * @param  {(Object|Object[])} plugin the plugin to get the name of
+ * @return {(string|false)} the name, or false if there isn't one
+ */
 export function getPluginName(plugin) {
-  if (Array.isArray(plugin)) {
-    if (plugin[0].name) return plugin[0].name
-    if (plugin[0].plugin.name) return plugin[0].plugin.name
-  } else {
-    if (plugin.name) return plugin.name
-    if (plugin.plugin?.name) return plugin.plugin.name
-  }
+  const toCheck = Array.isArray(plugin) ? plugin[0] : plugin
+  return toCheck.name || toCheck.plugin?.name || false
 
   return false
 }
 
+/////////////////
+// CONSTRUCTOR //
+/////////////////
+/**
+ * A class for handling config resolution for a Pattern
+ * @class
+ * @param {Pattern} pattern the pattern whose config is being handled
+ */
 export function PatternConfig(pattern) {
-  this.pattern = pattern
+  /** @type {Store} the pattern's store, for logging */
   this.store = pattern.store
-  __addNonEnumProp(this, 'plugins', { ...(pattern.designConfig.plugins || {}) })
-  __addNonEnumProp(this, 'options', { ...(pattern.designConfig.options || {}) })
-  __addNonEnumProp(this, 'measurements', [...(pattern.designConfig.measurements || [])])
-  __addNonEnumProp(this, 'optionalMeasurements', [
-    ...(pattern.designConfig.optionalMeasurements || []),
-  ])
-  __addNonEnumProp(this, 'inject', {})
-  __addNonEnumProp(this, 'directDependencies', {})
-  __addNonEnumProp(this, 'resolvedDependencies', {})
-  __addNonEnumProp(this, 'parts', {})
+
+  /** @type {Object} resolved plugins keyed by name */
+  this.plugins = { ...(pattern.designConfig.plugins || {}) }
+  /** @type {Object} resolved options keyed by name */
+  this.options = { ...(pattern.designConfig.options || {}) }
+  /** @type {string[]} required measurements */
+  this.measurements = [...(pattern.designConfig.measurements || [])]
+  /** @type {string[]} optional measurements */
+  this.optionalMeasurements = [...(pattern.designConfig.optionalMeasurements || [])]
+  /** @type {Object} the names of the parts that will be injected */
+  this.inject = {}
+  /** @type {Object} arrays of parts that are direct dependencies of the key */
+  this.directDependencies = {}
+  /** @type {Object} arrays of all dependencies of the key */
+  this.resolvedDependencies = {}
+  /** @type {Object} parts to include in the pattern */
+  this.parts = {}
+  /** @type {Object} which parts are hidden */
+  this.partHide = {}
+  /** @type {Object} which parts hide all their dependencies */
+  this.partHideAll = {}
+
+  /** to track which parts have already been resolved */
   __addNonEnumProp(this, '__resolvedParts', {})
+  /** @type {Object} to track when to overwrite options */
   __addNonEnumProp(this, '__mutated', {
     optionDistance: {},
     partDistance: {},
-    partHide: {},
-    partHideAll: {},
   })
 }
 
+/** @type {Boolean} change me to true to get full debugging of the resolution process */
 const DISTANCE_DEBUG = false
 
+////////////////////
+// PUBLIC METHODs //
+////////////////////
+
+/**
+ * Validate that a part meets the requirements to be added to the pattern
+ * @param  {Object} part a part configuration
+ * @return {boolean}      whether the part is valid
+ */
 PatternConfig.prototype.validatePart = function (part) {
   if (typeof part?.draft !== 'function') {
     this.store.log.error(`Part must have a draft() method`)
@@ -49,12 +80,18 @@ PatternConfig.prototype.validatePart = function (part) {
 
   return true
 }
+
+/**
+ * Chainable method to add a part to the configuration
+ * @param {Object} part
+ */
 PatternConfig.prototype.addPart = function (part) {
-  if (this.validatePart(part)) this.__resolvePart([part])
+  if (this.validatePart(part)) this.__addPart([part])
 
   return this
 }
 
+/** Log the final report on part inheritance order */
 PatternConfig.prototype.logPartDistances = function () {
   for (const partName in this.parts) {
     let qualifier = DISTANCE_DEBUG ? 'final' : ''
@@ -64,6 +101,10 @@ PatternConfig.prototype.logPartDistances = function () {
   }
 }
 
+/**
+ * Return a configuration in the structure expected by the pattern
+ * @return {Object} contains parts, plugins, measurements, options, optionalMeasurements, resolvedDependencies, directDependencies, inject, draftOrder, partHide, and partHideAll
+ */
 PatternConfig.prototype.asConfig = function () {
   return {
     parts: this.parts,
@@ -75,17 +116,30 @@ PatternConfig.prototype.asConfig = function () {
     directDependencies: this.directDependencies,
     inject: this.inject,
     draftOrder: this.__resolveDraftOrder(),
-    partHide: this.__mutated.partHide,
-    partHideAll: this.__mutated.partHideAll,
+    partHide: this.partHide,
+    partHideAll: this.partHideAll,
   }
 }
 
-PatternConfig.prototype.__resolvePart = function (depChain, distance = 0) {
+/////////////////////
+// PRIVATE METHODS //
+/////////////////////
+
+/**
+ * Add a part's configuration
+ * Uses recursion to also add that part's dependencies
+ * @private
+ * @param  {Object[]} depChain an array starting with the current part to add and containing its dependents/descendents in order
+ */
+PatternConfig.prototype.__addPart = function (depChain) {
+  // the current part is the head of the chain
   const part = depChain[0]
-  if (distance === 0) {
+  // the longer the chain, the deeper the part is down it
+  const distance = depChain.length
+  if (!this.parts[part.name]) {
     this.parts[part.name] = Object.freeze(part)
   }
-  distance++
+  // if it hasn't been registered with a distance, do that now
   if (typeof this.__mutated.partDistance[part.name] === 'undefined') {
     this.__mutated.partDistance[part.name] = distance
 
@@ -97,10 +151,11 @@ PatternConfig.prototype.__resolvePart = function (depChain, distance = 0) {
 
   // Hide when hideAll is set
   if (part.hideAll) {
-    this.__mutated.partHide[part.name] = true
+    this.partHide[part.name] = true
   }
 
-  this.__resolvePartDependencies(depChain, distance)
+  // resolve its dependencies
+  this.__resolvePartDependencies(depChain)
 
   // add the part's config
   this.__addPartConfig(part)
@@ -111,20 +166,16 @@ PatternConfig.prototype.__resolvePart = function (depChain, distance = 0) {
  *
  * @private
  * @param {Part} part - The part of which to resolve the config
- * @param {onject} config - The global config
- * @param {Store} store - The store, used for logging
- * @return {object} config - The mutated global config
+ * @return this
  */
 PatternConfig.prototype.__addPartConfig = function (part) {
+  // don't resolve a part that's already been resolved
   if (this.__resolvedParts[part.name]) return this
 
-  // Add parts, using set to keep them unique in the array
-  // this.designConfig.parts = [...new Set(this.designConfig.parts).add(part)]
-
-  return this.__addPartOptions(part)
-    .__addPartMeasurements(part, true)
-    .__addPartMeasurements(part, false)
-    .__addPartPlugins(part)
+  return this.__addPartOptions(part) // add options
+    .__addPartMeasurements(part, false) // add required measurements
+    .__addPartMeasurements(part, true) // add optional measurements
+    .__addPartPlugins(part) // add plugins
 }
 
 /**
@@ -132,29 +183,38 @@ PatternConfig.prototype.__addPartConfig = function (part) {
  *
  * @private
  * @param {Part} part - The part of which to resolve the config
- * @return {Pattern} this - The Pattern instance
+ * @return {PatternConfig} this - The PatternConfig instance
  */
 PatternConfig.prototype.__addPartOptions = function (part) {
+  // skip empty options
   if (!part.options) return this
 
+  // get the part's option priority
   const partDistance = this.__mutated.partDistance?.[part.name] || 0
+
+  // loop through options
   for (const optionName in part.options) {
     const option = part.options[optionName]
+    // get the priority of this option's current registration
     const optionDistance = this.__mutated.optionDistance[optionName]
+    // debug the comparison
     if (optionDistance && DISTANCE_DEBUG)
       this.store.log.debug(
         `optionDistance for __${optionName}__  is __${optionDistance}__ and partDistance for \`${part.name}\` is __${partDistance}__`
       )
+
+    // if it's never been registered, or it's registered at a further distance
     if (!optionDistance || optionDistance > partDistance) {
-      this.__mutated.optionDistance[optionName] = partDistance
-      // Keep design parts immutable in the pattern or risk subtle bugs
+      // Keep options immutable in the pattern or risk subtle bugs
       this.options[optionName] = Object.freeze(option)
+      // register the new distance
+      this.__mutated.optionDistance[optionName] = partDistance
+      // debug appropriately
       this.store.log.debug(
         optionDistance
           ? `🟣  __${optionName}__ option overwritten by \`${part.name}\``
           : `🔵  __${optionName}__ option loaded from part \`${part.name}\``
       )
-      this.__loadOptionDefault(optionName, option)
     }
   }
 
@@ -166,22 +226,32 @@ PatternConfig.prototype.__addPartOptions = function (part) {
  *
  * @private
  * @param {Part} part - The part of which to resolve the config
- * @param {array} list - The list of resolved measurements
- * @return {Pattern} this - The Pattern instance
+ * @param {boolean} optional - are these measurements optional?
+ * @return {PatternConfig} this - The PatternConfig instance
  */
 PatternConfig.prototype.__addPartMeasurements = function (part, optional = false) {
+  // which list are we drawing from?
   const listType = optional ? 'optionalMeasurements' : 'measurements'
+  // if the part has measurements of this type, go through them
   if (part[listType]) {
     part[listType].forEach((m) => {
+      // we need to know what lists it's already present on
       const isInReqList = this.measurements.indexOf(m) !== -1
+      // if it's already registered as required, we're done here
+      if (isInReqList) return
+
+      // check if it's registered as optional
       const optInd = this.optionalMeasurements.indexOf(m)
       const isInOptList = optInd !== -1
 
-      if (isInReqList) return
+      // if it is optional and not in the list, push it
       if (optional && !isInOptList) this.optionalMeasurements.push(m)
+      // if it's not optional
       if (!optional) {
+        // push it to required list
         this.measurements.push(m)
 
+        // make sure it's not also registered as optional
         if (isInOptList) this.optionalMeasurements.splice(optInd, 1)
       }
 
@@ -199,7 +269,7 @@ PatternConfig.prototype.__addPartMeasurements = function (part, optional = false
  *
  * @private
  * @param {Part} part - The part of which to resolve the config
- * @return {Pattern} this - The Pattern instance
+ * @return {PatternConfig} this - The PatternConfig instance
  */
 PatternConfig.prototype.__addPartPlugins = function (part) {
   if (!part.plugins) return this
@@ -255,109 +325,117 @@ PatternConfig.prototype.__addPartPlugins = function (part) {
   return this
 }
 
-PatternConfig.prototype.__loadOptionDefault = function (optionName, option) {
-  this.pattern.settings.forEach((set) => {
-    if (typeof set.options[optionName] !== 'undefined') return
-    if (typeof option === 'object') {
-      if (typeof option.pct !== 'undefined') set.options[optionName] = option.pct / 100
-      else if (typeof option.mm !== 'undefined') set.options[optionName] = option.mm
-      else if (typeof option.deg !== 'undefined') set.options[optionName] = option.deg
-      else if (typeof option.count !== 'undefined') set.options[optionName] = option.count
-      else if (typeof option.bool !== 'undefined') set.options[optionName] = option.bool
-      else if (typeof option.dflt !== 'undefined') set.options[optionName] = option.dflt
-      else {
-        let err = 'Unknown option type: ' + JSON.stringify(option)
-        this.store.log.error(err)
-        throw new Error(err)
-      }
-    } else set.options[optionName] = option
-  })
-}
-
-PatternConfig.prototype.__resolvePartDependencyChain = function (depChain, dependency, depType) {
-  const part = depChain[0]
-
-  this.parts[dependency.name] = Object.freeze(dependency)
-  this.__addDependency('directDependencies', part, dependency)
-
-  depChain.forEach((c) => this.__addDependency('resolvedDependencies', c, dependency))
-
-  switch (depType) {
-    case 'from':
-      this.__setFromHide(part, part.name, dependency.name)
-      this.inject[part.name] = dependency.name
-      break
-    case 'after':
-      this.__setAfterHide(part, part.name, dependency.name)
-  }
-}
-
-PatternConfig.prototype.__resolveMutatedPartDistance = function (partName) {
-  const proposed_dependent_part_distance = this.__mutated.partDistance[partName] + 1
-  let didChange = false
-  if (!this.directDependencies[partName]) return false
-  this.directDependencies[partName].forEach((dependency) => {
-    if (
-      typeof this.__mutated.partDistance[dependency] === 'undefined' ||
-      this.__mutated.partDistance[dependency] < proposed_dependent_part_distance
-    ) {
-      didChange = true
-      this.__mutated.partDistance[dependency] = proposed_dependent_part_distance
-      this.__resolveMutatedPartDistance(dependency)
-    }
-    if (DISTANCE_DEBUG)
-      this.store.log.debug(
-        `partDistance for \`${dependency}\` is __${this.__mutated.partDistance[dependency]}__`
-      )
-  })
-
-  return didChange
-}
-
+// the two types of dependencies
 const depTypes = ['from', 'after']
-PatternConfig.prototype.__resolvePartDependencies = function (depChain, distance) {
-  // Resolve part Dependencies. first from then after
+
+/**
+ * Recursively register part dependencies
+ * triggers {@link __addPart} on new parts found during resolution
+ * @param   {Object[]} depChain an array starting with the current part to register and containing its dependents/descendents in order
+ * @return  {PatternConfig}          this
+ * @private
+ */
+PatternConfig.prototype.__resolvePartDependencies = function (depChain) {
+  // the current part is the head of the chain
   const part = depChain[0]
+  // get or make its array of resolved dependencies
   this.resolvedDependencies[part.name] = this.resolvedDependencies[part.name] || []
 
+  // for each dependency type (from, after)
   depTypes.forEach((d) => {
+    // if the part has dependencies of that type
     if (part[d]) {
       if (DISTANCE_DEBUG) this.store.log.debug(`Processing \`${part.name}\` "${d}:"`)
 
+      // enforce an array
       const depsOfType = Array.isArray(part[d]) ? part[d] : [part[d]]
 
+      // each dependency
       depsOfType.forEach((dot) => {
-        let count = Object.keys(this.parts).length
-        // if any changes resulted from resolving this part mutation
-        this.__resolvePartDependencyChain(depChain, dot, d)
-        // if a new part was added, resolve the part
-        const newCount = Object.keys(this.parts).length
-        if (count < newCount) {
-          this.__resolvePart([dot, ...depChain], distance)
-          count = newCount
+        // add it as a direct dependency of the current part
+        this.__addDependency('directDependencies', part.name, dot.name)
+        // add it as a resolved dependency of all parts in the chain
+        depChain.forEach((c) => this.__addDependency('resolvedDependencies', c.name, dot.name))
+
+        // handle hiding and injecting
+        this.__handlePartDependencyOfType(part, dot.name, d)
+
+        // if the dependency isn't registered, register it
+        if (!this.parts[dot.name]) {
+          // add the part's configuration
+          this.__addPart([dot, ...depChain])
         }
       })
     }
   })
 
+  // now that the chain has been registered, recalculate the part distances
   this.__resolveMutatedPartDistance(part.name)
 }
 
 /**
- * Adds a part as a simple dependency
- *
+ * Adds a part as either a direct or a resolved dependency
+ * @param   {string} dependencyList which list to add the part to, 'resolvedDependencies' or 'directDependencies'
+ * @param   {string} partName           the name of the part to add the dependency to in the list
+ * @param   {string} depName            the name of the dependency to add to the list
  * @private
- * @param {string} name - The name of the dependency
- * @param {object} part - The part configuration
- * @param {object} dep - The dependency configuration
- * @return {object} this - The Pattern instance
  */
-PatternConfig.prototype.__addDependency = function (dependencyList, part, dep) {
-  this[dependencyList][part.name] = this[dependencyList][part.name] || []
+PatternConfig.prototype.__addDependency = function (dependencyList, partName, depName) {
+  this[dependencyList][partName] = this[dependencyList][partName] || []
   if (dependencyList == 'resolvedDependencies' && DISTANCE_DEBUG)
-    this.store.log.debug(`add ${dep.name} to ${part.name} dependencyResolution`)
-  if (this[dependencyList][part.name].indexOf(dep.name) === -1)
-    this[dependencyList][part.name].push(dep.name)
+    this.store.log.debug(`add ${depName} to ${partName} dependencyResolution`)
+  if (this[dependencyList][partName].indexOf(depName) === -1)
+    this[dependencyList][partName].push(depName)
+}
+
+/**
+ * Handle dependency-type specific config business
+ * @param   {Object} part       the part to add the dependency to
+ * @param   {string} depName    the name of the dependency to add
+ * @param   {string} depType    the type of dependency, 'from' or 'after'
+ * @private
+ */
+PatternConfig.prototype.__handlePartDependencyOfType = function (part, depName, depType) {
+  switch (depType) {
+    case 'from':
+      this.__setFromHide(part, depName)
+      this.inject[part.name] = depName
+      break
+    case 'after':
+      this.__setAfterHide(part, depName)
+  }
+}
+
+/**
+ * Resolve part option priority
+ * Recursively bumps priorities down the dependency chain
+ * @param   {string} partName the name of the part to resolve
+ * @private
+ */
+PatternConfig.prototype.__resolveMutatedPartDistance = function (partName) {
+  // if the part has no dependencies, bail
+  if (!this.directDependencies[partName]) return
+
+  // propose that each of the part's direct dependencies should be at a distance 1 further than the part's distance
+  const proposed_dependency_distance = this.__mutated.partDistance[partName] + 1
+  // check each direct dependency
+  this.directDependencies[partName].forEach((dependency) => {
+    // if the dependency doesn't have a distance, or that distance is less than the proposal
+    if (
+      typeof this.__mutated.partDistance[dependency] === 'undefined' ||
+      this.__mutated.partDistance[dependency] < proposed_dependency_distance
+    ) {
+      // set the new distance
+      this.__mutated.partDistance[dependency] = proposed_dependency_distance
+      // bump the dependency's dependencies as well
+      this.__resolveMutatedPartDistance(dependency)
+    }
+
+    if (DISTANCE_DEBUG)
+      this.store.log.debug(
+        `partDistance for \`${dependency}\` is __${this.__mutated.partDistance[dependency]}__`
+      )
+  })
 }
 
 /**
@@ -376,24 +454,22 @@ PatternConfig.prototype.__resolveDraftOrder = function () {
 }
 
 /**
- * Sets visibility of a dependency based on its config
+ * Sets visibility of a 'from' dependency based on its config
  *
  * @private
  * @param {Part} part - The part of which this is a dependency
- * @param {string} name - The name of the part
  * @param {string} depName - The name of the dependency
- * @param {int} set - The index of the set in the list of settings
  * @return {Pattern} this - The Pattern instance
  */
-PatternConfig.prototype.__setFromHide = function (part, name, depName) {
+PatternConfig.prototype.__setFromHide = function (part, depName) {
   if (
     part.hideDependencies ||
     part.hideAll ||
-    this.__mutated.partHide[name] ||
-    this.__mutated.partHideAll[name]
+    this.partHide[part.name] ||
+    this.partHideAll[part.name]
   ) {
-    this.__mutated.partHide[depName] = true
-    this.__mutated.partHideAll[depName] = true
+    this.partHide[depName] = true
+    this.partHideAll[depName] = true
   }
 
   return this
@@ -404,15 +480,14 @@ PatternConfig.prototype.__setFromHide = function (part, name, depName) {
  *
  * @private
  * @param {Part} part - The part of which this is a dependency
- * @param {string} name - The name of the part
  * @param {string} depName - The name of the dependency
  * @param {int} set - The index of the set in the list of settings
  * @return {Pattern} this - The Pattern instance
  */
-PatternConfig.prototype.__setAfterHide = function (part, name, depName) {
-  if (this.__mutated.partHide[name] || this.__mutated.partHideAll[name]) {
-    this.__mutated.partHide[depName] = true
-    this.__mutated.partHideAll[depName] = true
+PatternConfig.prototype.__setAfterHide = function (part, depName) {
+  if (this.partHide[part.name] || this.partHideAll[part.name]) {
+    this.partHide[depName] = true
+    this.partHideAll[depName] = true
   }
 
   return this
