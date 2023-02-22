@@ -26,6 +26,12 @@ import cloneDeep from 'lodash.clonedeep'
  * @return {object} this - The Pattern instance
  */
 export function Pattern(designConfig = {}) {
+  // Enumerable properties
+  this.designConfig = cloneDeep(designConfig) // The design configuration (unresolved)
+  this.config = {} // Will hold the resolved pattern after calling __init()
+  this.store = new Store() // Pattern-wide store
+  this.setStores = [] // Per-set stores
+
   // Non-enumerable properties
   __addNonEnumProp(this, 'plugins', {})
   __addNonEnumProp(this, 'width', 0)
@@ -42,13 +48,6 @@ export function Pattern(designConfig = {}) {
   __addNonEnumProp(this, 'config.parts', {})
   __addNonEnumProp(this, 'config.resolvedDependencies', {})
   __addNonEnumProp(this, '__storeMethods', new Set())
-  __addNonEnumProp(this, '__hide', {})
-
-  // Enumerable properties
-  this.designConfig = cloneDeep(designConfig) // The design configuration (unresolved)
-  this.config = {} // Will hold the resolved pattern after calling __init()
-  this.store = new Store() // Pattern-wide store
-  this.setStores = [] // Per-set stores
   __addNonEnumProp(this, '__configResolver', new PatternConfig(this)) // handles config resolution during __init() as well as runtime part adding
 
   return this
@@ -59,9 +58,12 @@ export function Pattern(designConfig = {}) {
 //////////////////////////////////////////////
 
 /**
- * FIXME: Allows adding parts to the config at runtime
+ * Allows adding parts to the config at runtime
  *
  * @param {object} part - The part to add
+ * @param {boolean} resolveImmediately - Should the part be resolved now, or wait until the next call to {@link __init()}?
+ * It is useful to resolve immediately if one part is being added at runtime
+ * It might be useful to not resolve immediately if a number of parts will be added over multiple calls
  * @return {object} this - The Pattern instance
  */
 Pattern.prototype.addPart = function (part, resolveImmediately = false) {
@@ -444,24 +446,6 @@ Pattern.prototype.__createStackWithContext = function (name) {
 }
 
 /**
- * Filter optional measurements out id they are also required measurments
- *
- * @private
- * @return {Pattern} this - The Pattern instance
- */
-Pattern.prototype.__filterOptionalMeasurements = function () {
-  if (!this.config.optionalMeasurements) {
-    this.config.optionalMeasurements = []
-    return this
-  }
-  this.config.optionalMeasurements = this.config.optionalMeasurements.filter(
-    (m) => this.config.measurements.indexOf(m) === -1
-  )
-
-  return this
-}
-
-/**
  * Initializes the pattern coniguration and settings
  *
  * @return {object} this - The Pattern instance
@@ -484,6 +468,7 @@ Pattern.prototype.__init = function () {
    */
   this.__resolveParts() // Resolves parts
     .__resolveConfig() // Gets the config from the resolver
+    .__loadOptionDefaults() // Merges default options with user provided ones
     .__loadPlugins() // Loads plugins
     .__loadConfigData() // Makes config data available in store
 
@@ -598,6 +583,40 @@ Pattern.prototype.__loadAbsoluteOptionsSet = function (set) {
  */
 Pattern.prototype.__loadConfigData = function () {
   if (this.designConfig.data) this.store.set('data', this.designConfig.data)
+
+  return this
+}
+
+/**
+ * Merges defaults for options with user-provided options
+ *
+ * @private
+ * @return {Pattern} this - The Pattern instance
+ */
+Pattern.prototype.__loadOptionDefaults = function () {
+  if (!this.config.options) this.config.options = {}
+  if (Object.keys(this.config.options).length < 1) return this
+  for (const i in this.settings) {
+    for (const [name, option] of Object.entries(this.config.options)) {
+      // Don't overwrite user-provided settings.options
+      if (typeof this.settings[i].options[name] === 'undefined') {
+        if (typeof option === 'object') {
+          if (typeof option.pct !== 'undefined') this.settings[i].options[name] = option.pct / 100
+          else if (typeof option.mm !== 'undefined') this.settings[i].options[name] = option.mm
+          else if (typeof option.deg !== 'undefined') this.settings[i].options[name] = option.deg
+          else if (typeof option.count !== 'undefined')
+            this.settings[i].options[name] = option.count
+          else if (typeof option.bool !== 'undefined') this.settings[i].options[name] = option.bool
+          else if (typeof option.dflt !== 'undefined') this.settings[i].options[name] = option.dflt
+          else {
+            let err = 'Unknown option type: ' + JSON.stringify(option)
+            this.store.log.error(err)
+            throw new Error(err)
+          }
+        } else this.settings[i].options[name] = option
+      }
+    }
+  }
 
   return this
 }
