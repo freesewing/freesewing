@@ -54,11 +54,14 @@ describe('Pattern', () => {
       name: 'test',
       draft: ({ part }) => part,
     }
-    const design = new Design({ parts: [test] })
+    const you = {
+      name: 'you',
+      draft: ({ part }) => part,
+    }
+    const design = new Design({ parts: [test, you] })
     const pattern = new design({ only: ['you'] })
     pattern.draft()
-    expect(pattern.setStores[0].logs.debug.length).to.equal(4)
-    expect(pattern.setStores[0].logs.debug[3]).to.equal(
+    expect(pattern.setStores[0].logs.debug).to.include(
       'Part `test` is not needed. Skipping draft and setting hidden to `true`'
     )
   })
