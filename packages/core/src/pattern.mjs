@@ -67,8 +67,11 @@ export function Pattern(designConfig = {}) {
  * It might be useful to not resolve immediately if a number of parts will be added over multiple calls
  * @return {object} this - The Pattern instance
  */
-Pattern.prototype.addPart = function (part, resolveImmediately = false) {
-  if (this.__configResolver.isPartValid(part) && this.designConfig.parts.indexOf(part) === -1) {
+Pattern.prototype.addPart = function (part, resolveImmediately = true) {
+  if (
+    this.__configResolver.isPartValid(part) &&
+    !this.designConfig.parts.find((p) => p.name == part.name)
+  ) {
     this.designConfig.parts.push(part)
     if (resolveImmediately) {
       if (this.__configResolver.addPart(part) && typeof this.draftQueue !== 'undefined')
