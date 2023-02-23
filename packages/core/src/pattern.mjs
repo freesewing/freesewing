@@ -11,7 +11,7 @@ import { Store } from './store.mjs'
 import { Hooks } from './hooks.mjs'
 import { version } from '../data.mjs'
 import { __loadPatternDefaults } from './config.mjs'
-import { PatternConfig, getPluginName } from './patternConfig.mjs'
+import { PatternConfig, getPluginName } from './pattern-config.mjs'
 import cloneDeep from 'lodash.clonedeep'
 
 //////////////////////////////////////////////
@@ -814,11 +814,7 @@ Pattern.prototype.__needs = function (partName, set = 0) {
   // Walk the only parts, checking each one for a match in its dependencies
   for (const part of only) {
     if (part === partName) return true
-    if (this.config.resolvedDependencies[part]) {
-      for (const dependency of this.config.resolvedDependencies[part]) {
-        if (dependency === partName) return true
-      }
-    }
+    if (this.config.resolvedDependencies[part]?.indexOf(partName) !== -1) return true
   }
 
   return false

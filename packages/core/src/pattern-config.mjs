@@ -9,8 +9,6 @@ import { __addNonEnumProp } from './utils.mjs'
 export function getPluginName(plugin) {
   const toCheck = Array.isArray(plugin) ? plugin[0] : plugin
   return toCheck.name || toCheck.plugin?.name || false
-
-  return false
 }
 
 /////////////////
@@ -362,8 +360,13 @@ PatternConfig.prototype.__resolvePartDependencies = function (depChain) {
 
         // if the dependency isn't registered, register it
         if (!this.parts[dot.name]) {
-          // add the part's configuration
+          // add the part's configuration. this will recursively add the part's dependencies to all parts in the chain
           this.__addPart([dot, ...depChain])
+        } else {
+          // if it's already registered, recursion won't happen, but we still need to add its resolved dependencies to all parts in the chain
+          this.resolvedDependencies[dot.name].forEach((r) => {
+            depChain.forEach((c) => this.__addDependency('resolvedDependencies', c.name, r))
+          })
         }
       })
     }
