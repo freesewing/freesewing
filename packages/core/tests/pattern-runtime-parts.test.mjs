@@ -22,6 +22,11 @@ describe('Pattern', () => {
       draft: ({ part }) => part,
     }
 
+    describe('with runtime: true, resolveImmediately: true', () => {
+      it('adds the part to the current draft cycle')
+      it('does not add the part to subsequent draft cycles')
+    })
+
     describe('with resolveImmediately: true', () => {
       it('Should add the part to parts object', () => {
         const design = new Design({ parts: [part1] })

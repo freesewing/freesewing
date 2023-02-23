@@ -65,7 +65,7 @@ const DISTANCE_DEBUG = false
  * @param  {Object} part a part configuration
  * @return {boolean}      whether the part is valid
  */
-PatternConfig.prototype.validatePart = function (part) {
+PatternConfig.prototype.isPartValid = function (part) {
   if (typeof part?.draft !== 'function') {
     this.store.log.error(`Part must have a draft() method`)
     return false
@@ -84,7 +84,7 @@ PatternConfig.prototype.validatePart = function (part) {
  * @param {Object} part
  */
 PatternConfig.prototype.addPart = function (part) {
-  if (this.validatePart(part)) this.__addPart([part])
+  if (this.isPartValid(part)) this.__addPart([part])
 
   return this
 }
@@ -134,9 +134,9 @@ PatternConfig.prototype.__addPart = function (depChain) {
   const part = depChain[0]
   // the longer the chain, the deeper the part is down it
   const distance = depChain.length
-  if (!this.parts[part.name]) {
-    this.parts[part.name] = Object.freeze(part)
-  }
+  if (!this.parts[part.name]) this.parts[part.name] = Object.freeze(part)
+  else return
+
   // if it hasn't been registered with a distance, do that now
   if (typeof this.__mutated.partDistance[part.name] === 'undefined') {
     this.__mutated.partDistance[part.name] = distance
