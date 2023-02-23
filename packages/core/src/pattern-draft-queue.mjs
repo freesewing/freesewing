@@ -9,7 +9,7 @@ PatternDraftQueue.prototype.start = function () {
 }
 
 PatternDraftQueue.prototype.addPart = function (partName) {
-  this.queue.push(partName)
+  if (!this.contains(partName)) this.queue.push(partName)
   return this
 }
 
@@ -25,6 +25,10 @@ PatternDraftQueue.prototype.next = function () {
   const next = this.peek()
   this.queueIndex++
   return next
+}
+
+PatternDraftQueue.prototype.contains = function (partName) {
+  return this.queue.indexOf(partName) !== -1
 }
 
 /**
