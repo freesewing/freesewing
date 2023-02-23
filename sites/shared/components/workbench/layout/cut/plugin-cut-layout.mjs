@@ -1,5 +1,6 @@
 const prefix = 'mirroredOnFold'
 
+const redraft = ({ part }) => part
 export const cutLayoutPlugin = {
   hooks: {
     postPartDraft: (pattern) => {
@@ -8,13 +9,25 @@ export const cutLayoutPlugin = {
 
       const { macro } = pattern.parts[pattern.activeSet][pattern.activePart].shorthand()
       if (partCutlist.cutOnFold) macro('mirrorOnFold', { fold: partCutlist.cutOnFold })
+
+      if (partCutlist.materials) {
+        for (const material in partCutlist.materials) {
+          for (var i = 1; i < partCutlist.materials[material]; i++) {
+            pattern.addPart({
+              name: `${pattern.activePart}_${material}_${i}`,
+              from: pattern.activePart,
+              draft: redraft,
+            })
+          }
+        }
+      }
     },
   },
   macros: {
     mirrorOnFold: ({ fold }, { paths, snippets, utils, macro, points }) => {
       const mirrorPaths = []
       for (const p in paths) {
-        if (!paths[p].hidden) mirrorPaths.push(paths[p])
+        if (!paths[p].hidden && !p.startsWith(prefix)) mirrorPaths.push(paths[p])
       }
 
       const mirrorPoints = []
@@ -34,11 +47,16 @@ export const cutLayoutPlugin = {
         }
       }
 
+      let unnamed = 0
       macro('mirror', {
-        paths: mirrorPaths,
+        paths: Object.values(mirrorPaths),
         points: mirrorPoints,
         mirror: fold,
         prefix,
+        nameFormat: (path) => {
+          unnamed++
+          return `${prefix}_${unnamed}`
+        },
       })
 
       for (var def in snippetsByType) {
