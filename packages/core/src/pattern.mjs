@@ -12,6 +12,7 @@ import { Hooks } from './hooks.mjs'
 import { version } from '../data.mjs'
 import { __loadPatternDefaults } from './config.mjs'
 import { PatternConfig, getPluginName } from './pattern-config.mjs'
+import { PatternDraftQueue } from './pattern-draft-queue.mjs'
 import cloneDeep from 'lodash.clonedeep'
 
 //////////////////////////////////////////////
@@ -67,10 +68,12 @@ export function Pattern(designConfig = {}) {
  * @return {object} this - The Pattern instance
  */
 Pattern.prototype.addPart = function (part, resolveImmediately = false) {
-  if (this.__configResolver.validatePart(part) && this.designConfig.parts.indexOf(part) === -1) {
+  if (this.__configResolver.isPartValid(part) && this.designConfig.parts.indexOf(part) === -1) {
     this.designConfig.parts.push(part)
-    if (resolveImmediately) this.__configResolver.addPart(part)
-    else this.__initialized = false
+    if (resolveImmediately) {
+      if (this.__configResolver.addPart(part) && typeof this.draftQueue !== 'undefined')
+        this.draftQueue.addPart(part.name)
+    } else this.__initialized = false
   }
   return this
 }
@@ -82,6 +85,7 @@ Pattern.prototype.addPart = function (part, resolveImmediately = false) {
  */
 Pattern.prototype.draft = function () {
   this.__init()
+  this.draftQueue = new PatternDraftQueue(this)
   this.__runHooks('preDraft')
   // Keep container for drafted parts fresh
   this.parts = []
@@ -100,8 +104,9 @@ Pattern.prototype.draft = function () {
     // Handle snap for pct options
     this.__loadAbsoluteOptionsSet(set)
 
-    for (const partName of this.config.draftOrder) {
-      this.createPartForSet(partName, set)
+    this.draftQueue.start()
+    while (this.draftQueue.hasNext()) {
+      this.createPartForSet(this.draftQueue.next(), set)
     }
     this.__runHooks('postSetDraft')
   }
