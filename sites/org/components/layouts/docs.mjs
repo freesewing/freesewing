@@ -1,7 +1,8 @@
 import { useRouter } from 'next/router'
 import { AsideNavigation } from 'site/components/navigation/aside.mjs'
+import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
 
-export const DocsLayout = ({ app, title = false, children = [] }) => {
+export const DocsLayout = ({ app, title = false, children = [], crumbs = [] }) => {
   const router = useRouter()
   const slug = router.asPath.slice(1)
 
@@ -20,8 +21,9 @@ export const DocsLayout = ({ app, title = false, children = [] }) => {
       >
         <AsideNavigation app={app} slug={slug} />
       </section>
-      <section className="py-8 lg:py-16 px-6 xl:pl-8 2xl:pl-16">
+      <section className="py-8 lg:py-16 px-6 xl:pl-8 2xl:pl-16 w-full max-w-2xl">
         <div>
+          <Breadcrumbs crumbs={crumbs} />
           {title && <h1>{title}</h1>}
           {children}
         </div>

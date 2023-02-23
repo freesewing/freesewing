@@ -1,5 +1,6 @@
 import chai from 'chai'
 import { Design } from '../src/index.mjs'
+import sinon from 'sinon'
 
 const expect = chai.expect
 
@@ -146,6 +147,51 @@ describe('Pattern', () => {
 
         pattern.addPart(part3, true)
         expect(pattern.config.options.opt1).to.equal(opt1)
+      })
+
+      describe('during drafting', () => {
+        it('adds the part to the draft queue', () => {
+          const design = new Design({ parts: [part1] })
+          const pattern = new design()
+          pattern.use({
+            name: 'draftTimePartPlugin',
+            hooks: {
+              postPartDraft: (pattern) => {
+                const newPart = {
+                  name: 'newPartTest',
+                  draft: ({ part }) => part,
+                }
+
+                pattern.addPart(newPart)
+              },
+            },
+          })
+
+          pattern.draft()
+          expect(pattern.draftQueue.contains('newPartTest')).to.be.true
+        })
+        it('drafts the part', () => {
+          const design = new Design({ parts: [part1] })
+          const pattern = new design()
+          const part2Draft = ({ part }) => part
+          const draftSpy = sinon.spy(part2Draft)
+          pattern.use({
+            name: 'draftTimePartPlugin',
+            hooks: {
+              postPartDraft: (pattern) => {
+                const newPart = {
+                  name: 'newPartTest',
+                  draft: draftSpy,
+                }
+
+                pattern.addPart(newPart)
+              },
+            },
+          })
+
+          pattern.draft()
+          expect(draftSpy.calledOnce).to.be.true
+        })
       })
     })
 

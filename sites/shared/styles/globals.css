@@ -550,10 +550,15 @@ details.jargon-details[open] svg.jargon-close {
   opacity: 0.6;
 }
 
-/* Fix styling for pan&zoom */
 /*
-div#pan-zoom-wrapper > div.react-transform-wrapper > div.react-transform-component {
-  width: calc(100vw - 64rem);
-  height: calc(100vh - 8rem);
+ * Fix slider styles that for some reason are ugly
+ */
+.range::-moz-range-thumb {
+  border-radius: 100%;
 }
-*/
+input[type='range']::-moz-range-track {
+  background-color: hsla(var(--bc) / 0.1);
+}
+.range {
+  border-radius: 1rem;
+}

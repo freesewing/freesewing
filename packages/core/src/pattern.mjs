@@ -11,7 +11,8 @@ import { Store } from './store.mjs'
 import { Hooks } from './hooks.mjs'
 import { version } from '../data.mjs'
 import { __loadPatternDefaults } from './config.mjs'
-import { PatternConfig, getPluginName } from './patternConfig.mjs'
+import { PatternConfig, getPluginName } from './pattern-config.mjs'
+import { PatternDraftQueue } from './pattern-draft-queue.mjs'
 import cloneDeep from 'lodash.clonedeep'
 
 //////////////////////////////////////////////
@@ -66,11 +67,16 @@ export function Pattern(designConfig = {}) {
  * It might be useful to not resolve immediately if a number of parts will be added over multiple calls
  * @return {object} this - The Pattern instance
  */
-Pattern.prototype.addPart = function (part, resolveImmediately = false) {
-  if (this.__configResolver.validatePart(part) && this.designConfig.parts.indexOf(part) === -1) {
+Pattern.prototype.addPart = function (part, resolveImmediately = true) {
+  if (
+    this.__configResolver.isPartValid(part) &&
+    !this.designConfig.parts.find((p) => p.name == part.name)
+  ) {
     this.designConfig.parts.push(part)
-    if (resolveImmediately) this.__configResolver.addPart(part)
-    else this.__initialized = false
+    if (resolveImmediately) {
+      if (this.__configResolver.addPart(part) && typeof this.draftQueue !== 'undefined')
+        this.draftQueue.addPart(part.name)
+    } else this.__initialized = false
   }
   return this
 }
@@ -82,6 +88,7 @@ Pattern.prototype.addPart = function (part, resolveImmediately = false) {
  */
 Pattern.prototype.draft = function () {
   this.__init()
+  this.draftQueue = new PatternDraftQueue(this)
   this.__runHooks('preDraft')
   // Keep container for drafted parts fresh
   this.parts = []
@@ -100,8 +107,9 @@ Pattern.prototype.draft = function () {
     // Handle snap for pct options
     this.__loadAbsoluteOptionsSet(set)
 
-    for (const partName of this.config.draftOrder) {
-      this.createPartForSet(partName, set)
+    this.draftQueue.start()
+    while (this.draftQueue.hasNext()) {
+      this.createPartForSet(this.draftQueue.next(), set)
     }
     this.__runHooks('postSetDraft')
   }
@@ -814,11 +822,7 @@ Pattern.prototype.__needs = function (partName, set = 0) {
   // Walk the only parts, checking each one for a match in its dependencies
   for (const part of only) {
     if (part === partName) return true
-    if (this.config.resolvedDependencies[part]) {
-      for (const dependency of this.config.resolvedDependencies[part]) {
-        if (dependency === partName) return true
-      }
-    }
+    if (this.config.resolvedDependencies[part]?.indexOf(partName) !== -1) return true
   }
 
   return false

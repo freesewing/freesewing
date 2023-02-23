@@ -238,6 +238,10 @@ describe('Pattern', () => {
       }
     })
 
+    it(
+      'Pattern.__init() should resolve nested dependencies for multiple parts that depend on the same part'
+    )
+
     // I am aware this does too much for one unit test, but this is to simplify TDD
     // we can split it up later
     it('Pattern.__init() should resolve nested injections', () => {

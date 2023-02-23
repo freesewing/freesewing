@@ -23,8 +23,8 @@ const part = {
 ## hideDependencies
 
 When you set the `hideDependencies` property to a truthy value,
-all parts that are dependencies of the current part (listed either
-in `after` or `from`) will be hidden.
+the part that is an inheritance dependency of the current part
+(the part listed in `from`) will be hidden.
 
 ```js
 import exampleBase from './base.mjs'
@@ -40,7 +40,7 @@ const part = {
 ## hideAll
 
 When you set the `hideAll` property to a truthy value,
-both the current part and all parts that are dependencies of the 
+both the current part and all parts that are dependencies of the
 current part (listed either in `after` or `from`) will be hidden.
 
 ```js
@@ -56,8 +56,10 @@ const part = {
 
 <Note>
 
-This has the same effect as setting both `hide` and `hideDependencies` to
+This has a different effect than setting both `hide` and `hideDependencies` to
 a truthy value.
+The difference is that `hideall` also affects parts listed in `after`,
+not just the current part and the part listed in `from`.
 
 </Note>
 
