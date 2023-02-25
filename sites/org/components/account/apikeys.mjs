@@ -86,6 +86,9 @@ const Row = ({ title, children }) => (
 )
 const ShowKey = ({ apikey, t, clear }) => (
   <div>
+    <Popout warning compact>
+      {t('keySecretWarning')}
+    </Popout>
     <Row title={t('keyName')}>{apikey.name}</Row>
     <Row title={t('created')}>{DateTime.fromISO(apikey.createdAt).toHTTP()}</Row>
     <Row title={t('expires')}>{DateTime.fromISO(apikey.expiresAt).toHTTP()}</Row>
@@ -95,11 +98,8 @@ const ShowKey = ({ apikey, t, clear }) => (
     <Row title="Key Secret">
       <CopyInput text={apikey.secret} />
     </Row>
-    <Popout warning compact>
-      {t('keySecretWarning')}
-    </Popout>
     <button
-      className="btn btn-secondary mt-4 pr-6 flex flex-row items-center gap-2"
+      className="btn btn-secondary mt-8 pr-6 flex flex-row items-center gap-2"
       onClick={clear}
     >
       <LeftIcon />
@@ -241,10 +241,11 @@ const Apikey = ({ apikey, t, backend, keyAdded, app }) => {
       valid={!expired}
       buttons={[
         <button
+          key="button1"
           className="z-10 btn btn-sm mr-4 bg-base-100 text-error hover:bg-error hover:text-error-content border-0"
           onClick={app.account.control > 4 ? remove : removeModal}
         >
-          <TrashIcon />
+          <TrashIcon key="button2" />
         </button>,
       ]}
     >
@@ -254,7 +255,9 @@ const Apikey = ({ apikey, t, backend, keyAdded, app }) => {
         </Popout>
       ) : null}
       {Object.entries(fields).map(([key, title]) => (
-        <Row title={title}>{apikey[key]}</Row>
+        <Row title={title} key={key}>
+          {apikey[key]}
+        </Row>
       ))}
     </Collapse>
   )
@@ -296,19 +299,21 @@ export const Apikeys = ({ app }) => {
             {t('newApikey')}
           </button>
           <BackToAccountButton loading={app.loading} />
-          <Popout tip>
-            <h5>Refer to FreeSewing.dev for details (English only)</h5>
-            <p>
-              This is an advanced feature aimed at developers or anyone who wants to interact with
-              our backend directly. For details, please refer to{' '}
-              <WebLink
-                href="https://freesewing.dev/reference/backend/api/apikeys"
-                txt="the API keys reference documentation"
-              />{' '}
-              on <WebLink href="https://freesewing.dev/" txt="FreeSewing.dev" /> our site for
-              developers and contributors.
-            </p>
-          </Popout>
+          {app.account.control < 5 ? (
+            <Popout tip>
+              <h5>Refer to FreeSewing.dev for details (English only)</h5>
+              <p>
+                This is an advanced feature aimed at developers or anyone who wants to interact with
+                our backend directly. For details, please refer to{' '}
+                <WebLink
+                  href="https://freesewing.dev/reference/backend/api/apikeys"
+                  txt="the API keys reference documentation"
+                />{' '}
+                on <WebLink href="https://freesewing.dev/" txt="FreeSewing.dev" /> our site for
+                developers and contributors.
+              </p>
+            </Popout>
+          ) : null}
         </>
       )}
     </div>
