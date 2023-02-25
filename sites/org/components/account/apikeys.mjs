@@ -13,6 +13,7 @@ import { WebLink } from 'shared/components/web-link.mjs'
 import { CopyIcon } from 'shared/components/icons.mjs'
 import { Collapse } from 'shared/components/collapse.mjs'
 import { TrashIcon } from 'shared/components/icons.mjs'
+import { LeftIcon } from 'shared/components/icons.mjs'
 
 export const ns = ['account', 'toast']
 
@@ -79,7 +80,7 @@ const CopyInput = ({ text }) => {
 
 const Row = ({ title, children }) => (
   <div className="flex flex-row flex-wrap items-center lg:gap-4 my-2">
-    <div className="w-24 text-left md:text-right block md:inline font-bold">{title}</div>
+    <div className="w-24 text-left md:text-right block md:inline font-bold pr-4">{title}</div>
     <div className="grow">{children}</div>
   </div>
 )
@@ -97,7 +98,11 @@ const ShowKey = ({ apikey, t, clear }) => (
     <Popout warning compact>
       {t('keySecretWarning')}
     </Popout>
-    <button className="btn btn-primary capitalize mt-4i w-full" onClick={clear}>
+    <button
+      className="btn btn-secondary mt-4 pr-6 flex flex-row items-center gap-2"
+      onClick={clear}
+    >
+      <LeftIcon />
       {t('apikeys')}
     </button>
   </div>
@@ -202,6 +207,21 @@ const Apikey = ({ apikey, t, backend, keyAdded, app }) => {
     app.stopLoading()
   }
 
+  const removeModal = () => {
+    app.setModal(
+      <div className="text-center">
+        <h2>{t('areYouCertain')}</h2>
+        <p>{t('deleteKeyWarning')}</p>
+        <p className="flex flex-row gap-4 items-center justify-center">
+          <button className="btn btn-neutral btn-outline px-8">{t('cancel')}</button>
+          <button className="btn btn-error px-8" onClick={remove}>
+            {t('delete')}
+          </button>
+        </p>
+      </div>
+    )
+  }
+
   const title = (
     <div className="flex flex-row gap-2 items-center inline-block justify-around w-full">
       <span>{apikey.name}</span>
@@ -222,7 +242,7 @@ const Apikey = ({ apikey, t, backend, keyAdded, app }) => {
       buttons={[
         <button
           className="z-10 btn btn-sm mr-4 bg-base-100 text-error hover:bg-error hover:text-error-content border-0"
-          onClick={remove}
+          onClick={app.account.control > 4 ? remove : removeModal}
         >
           <TrashIcon />
         </button>,
@@ -233,16 +253,9 @@ const Apikey = ({ apikey, t, backend, keyAdded, app }) => {
           <b>{t('keyExpired')}</b>
         </Popout>
       ) : null}
-      <table className="table w-full">
-        <tbody>
-          {Object.entries(fields).map(([key, title]) => (
-            <tr>
-              <td className="font-bold text-right">{title}</td>
-              <td>{apikey[key]}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      {Object.entries(fields).map(([key, title]) => (
+        <Row title={title}>{apikey[key]}</Row>
+      ))}
     </Collapse>
   )
 }
