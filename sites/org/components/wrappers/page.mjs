@@ -39,6 +39,12 @@ export const PageWrapper = ({
     setSearch(true)
   })
 
+  // Always close modal when Escape key is hit
+  useHotkeys('esc', (evt) => {
+    evt.preventDefault()
+    app.setModal(false)
+  })
+
   const [search, setSearch] = useState(false)
 
   const childProps = {
