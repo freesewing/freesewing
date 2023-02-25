@@ -20,6 +20,22 @@ ApikeysController.prototype.create = async (req, res, tools) => {
 }
 
 /*
+ * List API keys
+ *
+ * This is the endpoint that handles listing of API keys/tokens
+ * See: https://freesewing.dev/reference/backend/api/apikey
+ */
+ApikeysController.prototype.list = async (req, res, tools) => {
+  const Apikey = new ApikeyModel(tools)
+  const apikeys = await Apikey.userApikeys(req.user.uid)
+
+  if (apikeys) Apikey.setResponse(200, 'success', { apikeys })
+  else Apikey.setResponse(404, 'notFound')
+
+  return Apikey.sendResponse(res)
+}
+
+/*
  * Read API key
  *
  * This is the endpoint that handles creation of API keys/tokens
