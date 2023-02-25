@@ -57,6 +57,7 @@ noThanks: No thanks
 
 # reload
 nailedIt: Nailed it
+gone: Poof. Gone.
 reloadMsg1: The data stored in your browser can sometimes get out of sync with the data stored in our backend.
 reloadMsg2: This lets you reload your account data from the backend. It has the same effect as loggin out, and then logging in again
 
@@ -149,3 +150,4 @@ keyLevel7: Write access to all account data of other users
 keyLevel8: Impersonate other users, full write access to all data
 cancel: Cancel
 keySecretWarning: This is the only time you can see the key secret, make sure to copy it.
+keyExpired: This API key has expired

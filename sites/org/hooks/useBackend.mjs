@@ -183,5 +183,27 @@ export function useBackend(app) {
     return false
   }
 
+  /*
+   * Get API keys
+   */
+  backend.getApikeys = async () => {
+    const result = await api.get(`/apikeys/jwt`, auth)
+    if (result && result.status === 200 && result.data?.apikeys) {
+      return result.data.apikeys
+    }
+
+    return false
+  }
+
+  /*
+   * Remove API key
+   */
+  backend.removeApikey = async (id) => {
+    const result = await api.delete(`/apikeys/${id}/jwt`, auth)
+    if (result && result.status === 204) return true
+
+    return false
+  }
+
   return backend
 }
