@@ -44,18 +44,15 @@ const ConfirmSignUpPage = (props) => {
         })
         if (changed) {
           app.stopLoading()
-          setReady(true)
           setError(false)
           toast.for.settingsSaved()
           router.push('/account')
         } else {
           app.stopLoading()
-          setReady(true)
           setError(true)
         }
       } else {
         app.stopLoading()
-        setReady(true)
         setError(true)
       }
     }

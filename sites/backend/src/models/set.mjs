@@ -14,7 +14,7 @@ export function SetModel(tools) {
 
 SetModel.prototype.guardedCreate = async function ({ body, user }) {
   if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
-  if (Object.keys(body) < 1) return this.setResponse(400, 'postBodyMissing')
+  if (Object.keys(body).length < 1) return this.setResponse(400, 'postBodyMissing')
   if (!body.name || typeof body.name !== 'string') return this.setResponse(400, 'nameMissing')
 
   // Prepare data
