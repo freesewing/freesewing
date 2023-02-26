@@ -59,7 +59,7 @@ The first thing we need to do is decide where we are going to start/stop our bin
 - Für die Armlöcher: an der Seitennaht. Dies wird unsere Naht unter dem Arm verbergen
 - Für die Halsöffnung: die Mitte des Halsrückens. Möglicherweise möchten Sie dies mit einem Pin markieren
 
-### Platzieren Sie den Beginn Ihrer Bindung
+### Place (the start of) your binding
 
 ![Place (the start of) your binding](step03b.png)
 
