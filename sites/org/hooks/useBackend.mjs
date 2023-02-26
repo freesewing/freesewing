@@ -69,7 +69,7 @@ export function useBackend(app) {
    */
   backend.loadConfirmation = async ({ id, check }) => {
     const result = await api.get(`/confirmations/${id}/${check}`)
-    if (result && result.status === 201 && result.data) return result.data
+    if (result && result.status === 200 && result.data) return result.data
     return null
   }
 

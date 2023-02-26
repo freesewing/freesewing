@@ -432,10 +432,12 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
   const isUnitTest = this.isUnitTest(body)
   if (typeof body.email === 'string' && this.clear.email !== clean(body.email)) {
     // Email change (requires confirmation)
+    const check = randomString()
     this.confirmation = await this.Confirmation.create({
       type: 'emailchange',
       data: {
         language: this.record.language,
+        check,
         email: {
           current: this.clear.email,
           new: body.email,
@@ -451,13 +453,20 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
         to: body.email,
         cc: this.clear.email,
         replacements: {
-          actionUrl: i18nUrl(this.language, `/confirm/emailchange/${this.Confirmation.record.id}`),
-          whyUrl: i18nUrl(this.language, `/docs/faq/email/why-emailchange`),
-          supportUrl: i18nUrl(this.language, `/patrons/join`),
+          actionUrl: i18nUrl(
+            this.record.language,
+            `/confirm/emailchange/${this.Confirmation.record.id}/${check}`
+          ),
+          whyUrl: i18nUrl(this.record.language, `/docs/faq/email/why-emailchange`),
+          supportUrl: i18nUrl(this.record.language, `/patrons/join`),
         },
       })
     }
-  } else if (typeof body.confirmation === 'string' && body.confirm === 'emailchange') {
+  } else if (
+    typeof body.confirmation === 'string' &&
+    body.confirm === 'emailchange' &&
+    typeof body.check === 'string'
+  ) {
     // Handle email change confirmation
     await this.Confirmation.read({ id: body.confirmation })
 
@@ -472,7 +481,11 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
     }
 
     const data = this.Confirmation.clear.data
-    if (data.email.current === this.clear.email && typeof data.email.new === 'string') {
+    if (
+      data.check === body.check &&
+      data.email.current === this.clear.email &&
+      typeof data.email.new === 'string'
+    ) {
       await this.unguardedUpdate({
         email: this.encrypt(data.email.new),
         ehash: hash(clean(data.email.new)),
