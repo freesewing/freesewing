@@ -708,11 +708,14 @@ UserModel.prototype.loginOk = function () {
  */
 UserModel.prototype.isLusernameAvailable = async function (lusername) {
   if (lusername.length < 2) return false
+  let user
   try {
-    await this.prisma.user.findUnique({ where: { lusername } })
+    user = await this.prisma.user.findUnique({ where: { lusername } })
   } catch (err) {
     log.warn({ err, lusername }, 'Could not search for free username')
+    return true
   }
+  if (user) return false
 
   return true
 }
