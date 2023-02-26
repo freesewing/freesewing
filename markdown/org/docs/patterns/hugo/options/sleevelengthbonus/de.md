@@ -1,8 +1,8 @@
 - - -
-Ärmellänge anpassen
+title: "Längenzugabe Ärmel"
 - - -
 
-Diese Variable legt fest, um welches Mass die Ärmel verlängert werden.
+Diese Option legt fest, um wie viel die Ärmel verlängert werden.
 
 ## Effekt dieser Option auf das Schnittmuster
 
