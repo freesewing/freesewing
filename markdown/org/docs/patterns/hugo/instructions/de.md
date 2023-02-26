@@ -17,7 +17,7 @@ Nun die schlechte Nachricht: Die schriftlichen Anweisungen für Hugo sind noch n
 
 Ist der Text zu trocken für dich? Ich versuche, Videos als Teil der Musterdokumentation zur Verfügung zu stellen.
 
-Diese 6-Episoden-Serie zeigt dir, wie du deine Hoodie zum Ende bringen kannst:
+Diese Reihe an 6 Episoden zeigt dir, wie du deinen Hoodie von Anfang bis Ende nähst:
 
 <YouTube id='PL1gv5yv3DoZOHLjisuD1JcUPTkFy_IGGO' playlist />
 
@@ -25,7 +25,7 @@ Diese 6-Episoden-Serie zeigt dir, wie du deine Hoodie zum Ende bringen kannst:
 
 ### Schritt 1: Bereiten die Tasche vor
 
-- Platzieren Sie die das Taschenfutter (pocket facing) rechts auf rechts auf das Taschenteil (pocket piece).
+- Platziere das Taschenfutter (pocket facing) rechts auf rechts auf das Taschenteil (pocket piece).
 - Nähe die Futterteile mit einer Nahtzugabe von 1cm auf das Taschenteil.  Nähen Sie sowohl den langen Rand als auch den kürzeren Rand am unteren Rand der Tasche.
 - Die Nahtzugaben am Futterteil vorsichtig einkürzen.
 - Die Tasche wenden, sodass die rechte Seite außen ist.  Dann Handwalzen und drücken Sie die Nähte.
@@ -37,7 +37,7 @@ Diese 6-Episoden-Serie zeigt dir, wie du deine Hoodie zum Ende bringen kannst:
 ### Schritt 2: Befestige die Tasche
 
 - Passen Sie die Pocket auf die Vorderseite, gute Seiten zusammen.
-- Die obere Taschennahtlinie ist mit Knipsen am Schnittmuster gekennzeichnet.  Die Unterkante der Tasche sollte auf die Halslinie zeigen.  Die Kanten der Tasche horizontal mit den Noten am Muster ausrichten. Überlappen Sie die Oberseite der Tasche über der Nahtlinie um etwas weniger als 1 cm Nahtzugabe.
+- Die obere Taschennahtlinie ist mit Knipsen am Schnittmuster gekennzeichnet.  Die Unterkante der Tasche sollte auf die Halslinie zeigen.  Die Kanten der Tasche horizontal mit den Noten am Muster ausrichten. Overlap the top of the pocket over the seam line by a little less than 1 cm seam allowance.
 - Nähen Sie die obere Naht der Tasche an die Shirt Front.
 - Drehen Sie die Tasche über die Nahtlinie, so dass die Unterseite nun mit der Kante an der Taille nach oben zieht.
 - Mit einem langen Heftstich (4mm oder länger) die Tasche in der Taille mit einer Nahtzugabe von ½ cm fixieren.  Dies ist optional, hält aber die Tasche fest während Sie am Rest des Hemdes arbeiten.
