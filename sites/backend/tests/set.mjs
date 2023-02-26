@@ -37,7 +37,7 @@ export const setTests = async (chai, config, expect, store) => {
 
   for (const auth of ['jwt', 'key']) {
     describe(`${store.icon('set', auth)} Set tests (${auth})`, () => {
-      step(`${store.icon('set', auth)} Should create a new set (${auth})`, (done) => {
+      it(`${store.icon('set', auth)} Should create a new set (${auth})`, (done) => {
         chai
           .request(config.api)
           .post(`/sets/${auth}`)

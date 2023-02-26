@@ -47,7 +47,7 @@ export async function setAvatar(type, id, data) {
     if (!img.data?.document?._id) return false // Upload failed
 
     // Step 2, update the document
-    const doc = await axios.post(
+    await axios.post(
       `${config.api}/data/mutate/${config.dataset}`,
       {
         mutations: [
