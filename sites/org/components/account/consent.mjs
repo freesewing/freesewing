@@ -91,7 +91,7 @@ export const ConsentSettings = ({ app, title = false }) => {
   )
   const partB = (
     <>
-      <h5 className="mt-8">{t('peopleQuestion')}</h5>
+      <h5 className="mt-8">{t('setQuestion')}</h5>
       <GdprMeasurementsDetails />
       {measurements ? (
         <Checkbox value={measurements} setter={setMeasurements} label={t('yesIDo')} />
