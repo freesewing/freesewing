@@ -1,24 +1,24 @@
 - - -
-title: "Aaron A-Shirt: Nähanweisung"
+title: "Aaron A-Shirt: Nähanleitung"
 - - -
 
 ## Schritt 1: Nähte schließen
 
 ![Seiten- und Schulternähte schließen](step01.png)
 
-Legen Sie Vorder- und Rückseite mit den _rechten Seiten zusammen_ übereinander. Nähe die Seitennähte zusammen und die kurzen Nähte an den Schulterträgern. Wenn du eine Overlock besitzt, ist dies ein guter Moment um sie zu verwenden. Wenn nicht, versäubere deine Nähte auf eine andere Art und Weise.
+Lege Vorder- und Rückseite mit den _rechten Seiten zusammen_ übereinander. Nähe die Seitennähte zusammen und die kurzen Nähte an den Schulterträgern. Wenn du eine Overlock besitzt, ist dies ein guter Moment um sie zu verwenden. Wenn nicht, versäubere deine Nähte auf eine andere Art und Weise.
 
 ## Schritt 2: Saum versäubern
 
 ![Nähe den Saum](step02.png)
 
-Falte den Saum nach oben und nähe ihn fest. Wenn du eine Coverlock hast, verwende sie. Falls nicht, verwenden Sie eine _Zwillingsnadel_ oder _Zickzackstich_, um die Naht dehnbar zu halten.
+Falte den Saum nach oben und nähe ihn fest. Wenn du eine Coverlock hast, verwende sie. Falls nicht, verwende eine _Zwillingsnadel_ oder einen _Zickzackstich_, um die Naht dehnbar zu halten.
 
 <Note>
 
 ##### Nur einmal falten, um dicke Stellen zu vermeiden
 
-Maschenware franst nicht aus, deshalb kann man es nur einfach umklappen und festnähen, danach die Nahtzugabe zurückschneiden.
+Maschenware franst nicht aus, deswegen nur einmal umklappen und festnähen, danach die Nahtzugabe zurückschneiden.
 
 </Note>
 
