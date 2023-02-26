@@ -265,7 +265,8 @@ export const userTests = async (chai, config, expect, store) => {
     it(`${store.icon('user')} Should find a username is available`, (done) => {
       chai
         .request(config.api)
-        .post(`/available/username`)
+        .post(`/available/username/jwt`)
+        .set('Authorization', 'Bearer ' + store.token)
         .send({
           username: 'haochi',
         })
@@ -278,7 +279,8 @@ export const userTests = async (chai, config, expect, store) => {
     it(`${store.icon('user')} Should find a username is not available`, (done) => {
       chai
         .request(config.api)
-        .post(`/available/username`)
+        .post(`/available/username/jwt`)
+        .set('Authorization', 'Bearer ' + store.token)
         .send({
           username: store.account.username,
         })

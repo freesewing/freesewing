@@ -151,7 +151,7 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
   await this.read({ ehash })
   if (this.exists) {
     /*
-     * User already exists. However, if we return an error, then people can
+     * User already exists. However, if we return an error, then baddies can
      * spam the signup endpoint to figure out who has a FreeSewing account
      * which would be a privacy leak. So instead, pretend there is no user
      * with that account, and that signup is proceeding as normal.
@@ -253,7 +253,6 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
     },
     userId: this.record.id,
   })
-  console.log(check)
 
   // Send signup email
   if (!this.isUnitTest(body) || this.config.tests.sendEmail)
@@ -497,7 +496,8 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
     result: 'success',
     account: this.asAccount(),
   }
-  if (isUnitTest) returnData.confirmation = this.Confirmation.record.id
+  if (isUnitTest && this.Confirmation.record?.id)
+    returnData.confirmation = this.Confirmation.record.id
 
   return this.setResponse(200, false, returnData)
 }
@@ -519,7 +519,6 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
     // Check password
     const [valid] = verifyPassword(body.password, this.record.password)
     if (!valid) {
-      console.log('password check failed')
       log.warn(`Wrong password for existing user while disabling MFA: ${user.uid} from ${ip}`)
       return this.setResponse(401, 'authenticationFailed')
     }
@@ -537,7 +536,6 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
         account: this.asAccount(),
       })
     } else {
-      console.log('token check failed')
       return this.setResponse(401, 'authenticationFailed')
     }
   }
@@ -713,7 +711,7 @@ UserModel.prototype.isLusernameAvailable = async function (lusername) {
     user = await this.prisma.user.findUnique({ where: { lusername } })
   } catch (err) {
     log.warn({ err, lusername }, 'Could not search for free username')
-    return true
+    return false
   }
   if (user) return false
 

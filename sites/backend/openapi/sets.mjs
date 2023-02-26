@@ -10,7 +10,7 @@ import {
 } from './lib.mjs'
 
 const common = {
-  tags: ['People'],
+  tags: ['Measurements Sets'],
   security: [jwt, key],
 }
 
@@ -20,7 +20,7 @@ const local = {
       in: 'path',
       name: 'id',
       required: true,
-      description: "The Person's unique ID",
+      description: "The Set's unique ID",
       schema: {
         example: 666,
         type: 'integer',
@@ -32,12 +32,12 @@ const local = {
 // Paths
 export const paths = {}
 
-// Create Person
-paths['/people/{auth}'] = {
+// Create set
+paths['/sets/{auth}'] = {
   post: {
     ...common,
-    summary: 'Create a new Person',
-    description: 'Creates a new Person and returns it.',
+    summary: 'Create a new Measurements Set',
+    description: 'Creates a new Measurements Set and returns it.',
     parameters: [parameters.auth],
     requestBody: {
       required: true,
@@ -47,11 +47,11 @@ paths['/people/{auth}'] = {
             type: 'object',
             properties: {
               img: uploadImg,
-              imperial: response.body.person.properties.imperial,
-              name: response.body.person.properties.name,
-              notes: response.body.person.properties.notes,
-              public: response.body.person.properties.public,
-              measies: response.body.person.properties.measies,
+              imperial: response.body.set.properties.imperial,
+              name: response.body.set.properties.name,
+              notes: response.body.set.properties.notes,
+              public: response.body.set.properties.public,
+              measies: response.body.set.properties.measies,
             },
           },
         },
@@ -62,7 +62,7 @@ paths['/people/{auth}'] = {
         ...response.status['201'],
         ...jsonResponse({
           result: fields.result,
-          person: response.body.person,
+          set: response.body.set,
         }),
       },
       400: {
@@ -82,25 +82,25 @@ paths['/people/{auth}'] = {
   },
 }
 
-// Get/Remove Person
-paths['/people/{id}/{auth}'] = {
-  // Get a Person
+// Get/Remove Set
+paths['/sets/{id}/{auth}'] = {
+  // Get a Set
   get: {
     ...common,
-    summary: 'Retrieve a Person',
-    description: 'Retrieves information about Person `id`.',
+    summary: 'Retrieve a Measurements Set',
+    description: 'Retrieves information about Measurements Set `id`.',
     parameters: [parameters.auth, local.params.id],
     responses: {
       200: {
         description:
-          '**Success - Person returned**\n\n' +
+          '**Success - Measurements Set returned**\n\n' +
           'Status code `200` indicates that the resource was returned successfully.',
         ...jsonResponse({
           result: {
             ...fields.result,
             example: 'success',
           },
-          person: response.body.person,
+          set: response.body.set,
         }),
       },
       401: response.status['401'],
@@ -114,11 +114,11 @@ paths['/people/{id}/{auth}'] = {
       500: response.status['500'],
     },
   },
-  // Update a Person
+  // Update a Set
   patch: {
     ...common,
-    summary: 'Update a Person',
-    description: 'Updates information about Person `id`.',
+    summary: 'Update a Measurements Set',
+    description: 'Updates information about Measurements Set `id`.',
     parameters: [parameters.auth, local.params.id],
     requestBody: {
       required: true,
@@ -128,11 +128,11 @@ paths['/people/{id}/{auth}'] = {
             type: 'object',
             properties: {
               img: uploadImg,
-              imperial: response.body.person.properties.imperial,
-              name: response.body.person.properties.name,
-              notes: response.body.person.properties.notes,
-              public: response.body.person.properties.public,
-              measies: response.body.person.properties.measies,
+              imperial: response.body.set.properties.imperial,
+              name: response.body.set.properties.name,
+              notes: response.body.set.properties.notes,
+              public: response.body.set.properties.public,
+              measies: response.body.set.properties.measies,
             },
           },
         },
@@ -141,14 +141,14 @@ paths['/people/{id}/{auth}'] = {
     responses: {
       200: {
         description:
-          '**Success - Person returned**\n\n' +
+          '**Success - Measurements Set returned**\n\n' +
           'Status code `200` indicates that the resource was returned successfully.',
         ...jsonResponse({
           result: {
             ...fields.result,
             example: 'success',
           },
-          person: response.body.person,
+          set: response.body.set,
         }),
       },
       401: response.status['401'],
@@ -162,11 +162,11 @@ paths['/people/{id}/{auth}'] = {
       500: response.status['500'],
     },
   },
-  // Remove a Person
+  // Remove a Set
   delete: {
     ...common,
-    summary: 'Remove a Person',
-    description: 'Removes the Person `id`.',
+    summary: 'Remove a Set',
+    description: 'Removes the Measurements Set `id`.',
     parameters: [parameters.auth, local.params.id],
     responses: {
       204: response.status['204'],
@@ -183,19 +183,19 @@ paths['/people/{id}/{auth}'] = {
   },
 }
 
-// Clone Person
-paths['/people/{id}/clone/{auth}'] = {
+// Clone a Set
+paths['/sets/{id}/clone/{auth}'] = {
   post: {
     ...common,
-    summary: 'Clone a Person',
-    description: 'Creates a new Person by cloning an existing one.',
+    summary: 'Clone a Measurements Set',
+    description: 'Creates a new Measurments Set by cloning an existing one.',
     parameters: [parameters.auth],
     responses: {
       201: {
         ...response.status['201'],
         ...jsonResponse({
           result: fields.result,
-          person: response.body.person,
+          set: response.body.set,
         }),
       },
       401: response.status['401'],
