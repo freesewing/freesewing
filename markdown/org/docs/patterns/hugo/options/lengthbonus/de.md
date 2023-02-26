@@ -1,8 +1,8 @@
 - - -
-Längenzugabe
+title: "Längenzugabe"
 - - -
 
-Das Mass, um das das Kleidungsstück verlängert werden soll. Ein negativer Wert verkürzt das Schnittteil.
+Der Betrag, um den das Kleidungsstück verlängert werden soll. Ein negativer Wert verkürzt das Schnittteil.
 
 ## Effekt dieser Option auf das Schnittmuster
 
