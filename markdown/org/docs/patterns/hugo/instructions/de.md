@@ -52,7 +52,7 @@ Diese Reihe an 6 Episoden zeigt dir, wie du deinen Hoodie von Anfang bis Ende n�
 
   - Verwenden Sie einen Serger, um die Naht in einem Schritt zu nähen und zu beenden.  Dies ist schnell und komfortabel, erzeugt aber ein weniger raffiniertes Aussehen.
   - Wenn Sie keinen Serger haben oder einen raffinierteren Look wünschen, nähen Sie eine Naht mit einer geraden Naht auf Ihrer herkömmlichen Maschine. Bügeln Sie die Nahtzugabe auf der linken Seite auseinander.  Dann auf beiden Seiten der Naht auf der rechten Seite knappkantig absteppen.  Kürze die Nahtzugabe ein.  Dies erzeugt ein raffiniertes Aussehen, aber dauert länger.
-  - Eine weitere serger-freie Option ist das Nähen der Naht mit einem geraden Stich. Dann die Nahtzugaben mit einer zusätzlichen Zick-Zack-Linie neben der geraden Naht zusammennähen.  Nahtzugabe einkürzen.  Dies simuliert, was ein Serger tun würde, und ist schneller als die Option (2).
+  - Eine weitere Option ohne Overlock ist das Nähen der Naht mit einem geraden Stich. Dann die Nahtzugaben mit einer zusätzlichen Zick-Zack-Linie neben der geraden Naht zusammennähen.  Nahtzugabe einkürzen.  Dies simuliert, was ein Serger tun würde, und ist schneller als die Option (2).
 
 - Lege die Hinterseite des Ärmels rechts auf rechts auf das Rückenteil. Die doppelten Knipse treffen aufeinander.  Nähen Sie die Naht ab und beenden Sie die Nähte wie für die Vorderseite.
 
@@ -60,12 +60,12 @@ Diese Reihe an 6 Episoden zeigt dir, wie du deinen Hoodie von Anfang bis Ende n�
 
 - Ärmel- und Seitennaht passgenau aufeinander legen.
 - Nähen Sie die Seitennaht und die Ärmel in einer langen Naht zusammen von der Taille bis zum Ende des Ärmels.  Sie können an der Unterarm Punkt stoppen, um die Farben für den Ärmel zu ändern, wenn Ihr Design dies erfordert.
-- Drücken Sie die Nahtzuschläge und beenden Sie sie wie in Schritt 2.  Schneiden Sie die Nahtzuschläge ab.
+- Drücken Sie die Nahtzuschläge und beenden Sie sie wie in Schritt 2.  If you finish the sleeves with the edgestitch method, you will need to go slow for finishing the sleeve seam, as you will be .sewing in the tunnel..
 
 ### Schritt 5: Füge eine Zeichenfolge zur Kapuze hinzu (Optional)
 
 - Nehmen Sie ein passendes Set der Hood Side Stücke, die Sie auf der Außenseite der fertigen Hoodie vorführen möchten.
-- Markieren Sie den Platz für ein Loch an jeder Seitenhaube entlang des Felgens.
+- Mark the place for a hole on each side hood piece, along the rim.
 - Das Loch sollte etwa 1,5-2cm vom Rand des Stoffes entfernt sein.  Dies soll sowohl die Nahtzuweisung als auch die Haube erlauben
 - Das Loch sollte über der Höhe auf dem Kopfrand liegen.  Die Schicht zeigt an, wo sich die Seiten der Kapuze an der Vorderseite überlappen, so dass die Schnur oberhalb dieses Punktes verlassen sollte.
 - Sie können die Funktion des Knopflochs Ihrer Nähmaschine in Betracht ziehen, falls sie eine besitzt, um an dieser Stelle ein Knopfloch zu nähen.
