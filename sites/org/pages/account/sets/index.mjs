@@ -7,10 +7,10 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import { PageWrapper, ns as pageNs } from 'site/components/wrappers/page.mjs'
 import { ns as authNs } from 'site/components/wrappers/auth/index.mjs'
-import { ns as consentNs } from 'site/components/account/consent.mjs'
+import { ns as apikeysNs } from 'site/components/account/apikeys.mjs'
 
 // Translation namespaces used on this page
-const namespaces = [...new Set([...consentNs, ...authNs, ...pageNs])]
+const namespaces = [...new Set([...apikeysNs, ...authNs, ...pageNs])]
 
 /*
  * Some things should never generated as SSR
@@ -21,8 +21,8 @@ const DynamicAuthWrapper = dynamic(
   { ssr: false }
 )
 
-const DynamicConsent = dynamic(
-  () => import('site/components/account/consent.mjs').then((mod) => mod.ConsentSettings),
+const DynamicApikeys = dynamic(
+  () => import('site/components/account/apikeys.mjs').then((mod) => mod.Apikeys),
   { ssr: false }
 )
 
@@ -30,14 +30,14 @@ const AccountPage = (props) => {
   const app = useApp(props)
   const { t } = useTranslation(namespaces)
   const crumbs = [
-    [t('account:yourAccount'), '/account'],
-    [t('consent'), '/account/consent'],
+    [t('yourAccount'), '/account'],
+    [t('apikeys'), '/account/apikeys'],
   ]
 
   return (
-    <PageWrapper app={app} title={t('account:consent')} crumbs={crumbs}>
+    <PageWrapper app={app} title={t('apikeys')} crumbs={crumbs}>
       <DynamicAuthWrapper app={app}>
-        <DynamicConsent app={app} title />
+        <DynamicApikeys app={app} />
       </DynamicAuthWrapper>
     </PageWrapper>
   )
@@ -46,7 +46,6 @@ const AccountPage = (props) => {
 export default AccountPage
 
 export async function getStaticProps({ locale }) {
-  console.log(namespaces)
   return {
     props: {
       ...(await serverSideTranslations(locale, namespaces)),

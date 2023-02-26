@@ -1,6 +1,6 @@
 import { cat } from './cat.mjs'
 
-export const personTests = async (chai, config, expect, store) => {
+export const setTests = async (chai, config, expect, store) => {
   const data = {
     jwt: {
       name: 'Joost',
@@ -26,21 +26,21 @@ export const personTests = async (chai, config, expect, store) => {
       imperial: false,
     },
   }
-  store.person = {
+  store.set = {
     jwt: {},
     key: {},
   }
-  store.altperson = {
+  store.altset = {
     jwt: {},
     key: {},
   }
 
   for (const auth of ['jwt', 'key']) {
-    describe(`${store.icon('person', auth)} Person tests (${auth})`, () => {
-      step(`${store.icon('person', auth)} Should create a new person (${auth})`, (done) => {
+    describe(`${store.icon('set', auth)} Set tests (${auth})`, () => {
+      it(`${store.icon('set', auth)} Should create a new set (${auth})`, (done) => {
         chai
           .request(config.api)
-          .post(`/people/${auth}`)
+          .post(`/sets/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -57,21 +57,21 @@ export const personTests = async (chai, config, expect, store) => {
             expect(res.body.result).to.equal(`success`)
             for (const [key, val] of Object.entries(data[auth])) {
               if (!['measies', 'img', 'unittest'].includes(key))
-                expect(res.body.person[key]).to.equal(val)
+                expect(res.body.set[key]).to.equal(val)
             }
-            store.person[auth] = res.body.person
+            store.set[auth] = res.body.set
             done()
           })
       }).timeout(5000)
 
       for (const field of ['name', 'notes']) {
-        it(`${store.icon('person', auth)} Should update the ${field} field (${auth})`, (done) => {
+        it(`${store.icon('set', auth)} Should update the ${field} field (${auth})`, (done) => {
           const data = {}
-          const val = store.person[auth][field] + '_updated'
+          const val = store.set[auth][field] + '_updated'
           data[field] = val
           chai
             .request(config.api)
-            .patch(`/people/${store.person[auth].id}/${auth}`)
+            .patch(`/sets/${store.set[auth].id}/${auth}`)
             .set(
               'Authorization',
               auth === 'jwt'
@@ -86,20 +86,20 @@ export const personTests = async (chai, config, expect, store) => {
               expect(err === null).to.equal(true)
               expect(res.status).to.equal(200)
               expect(res.body.result).to.equal(`success`)
-              expect(res.body.person[field]).to.equal(val)
+              expect(res.body.set[field]).to.equal(val)
               done()
             })
         })
       }
 
       for (const field of ['imperial', 'public']) {
-        it(`${store.icon('person', auth)} Should update the ${field} field (${auth})`, (done) => {
+        it(`${store.icon('set', auth)} Should update the ${field} field (${auth})`, (done) => {
           const data = {}
-          const val = !store.person[auth][field]
+          const val = !store.set[auth][field]
           data[field] = val
           chai
             .request(config.api)
-            .patch(`/people/${store.person[auth].id}/${auth}`)
+            .patch(`/sets/${store.set[auth].id}/${auth}`)
             .set(
               'Authorization',
               auth === 'jwt'
@@ -114,8 +114,8 @@ export const personTests = async (chai, config, expect, store) => {
               expect(err === null).to.equal(true)
               expect(res.status).to.equal(200)
               expect(res.body.result).to.equal(`success`)
-              expect(res.body.person[field]).to.equal(val)
-              store.person[auth][field] = val
+              expect(res.body.set[field]).to.equal(val)
+              store.set[auth][field] = val
               done()
             })
         })
@@ -123,7 +123,7 @@ export const personTests = async (chai, config, expect, store) => {
 
       for (const field of ['chest', 'neck', 'ankle']) {
         it(`${store.icon(
-          'person',
+          'set',
           auth
         )} Should update the ${field} measurement (${auth})`, (done) => {
           const data = { measies: {} }
@@ -131,7 +131,7 @@ export const personTests = async (chai, config, expect, store) => {
           data.measies[field] = val
           chai
             .request(config.api)
-            .patch(`/people/${store.person[auth].id}/${auth}`)
+            .patch(`/sets/${store.set[auth].id}/${auth}`)
             .set(
               'Authorization',
               auth === 'jwt'
@@ -146,19 +146,19 @@ export const personTests = async (chai, config, expect, store) => {
               expect(err === null).to.equal(true)
               expect(res.status).to.equal(200)
               expect(res.body.result).to.equal(`success`)
-              expect(res.body.person.measies[field]).to.equal(val)
+              expect(res.body.set.measies[field]).to.equal(val)
               done()
             })
         })
       }
 
       it(`${store.icon(
-        'person',
+        'set',
         auth
       )} Should not set an non-existing measurement (${auth})`, (done) => {
         chai
           .request(config.api)
-          .patch(`/people/${store.person[auth].id}/${auth}`)
+          .patch(`/sets/${store.set[auth].id}/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -178,16 +178,16 @@ export const personTests = async (chai, config, expect, store) => {
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(200)
             expect(res.body.result).to.equal(`success`)
-            expect(res.body.person.measies.ankle).to.equal(320)
-            expect(typeof res.body.person.measies.potatoe).to.equal('undefined')
+            expect(res.body.set.measies.ankle).to.equal(320)
+            expect(typeof res.body.set.measies.potatoe).to.equal('undefined')
             done()
           })
       })
 
-      it(`${store.icon('person', auth)} Should clear a measurement (${auth})`, (done) => {
+      it(`${store.icon('set', auth)} Should clear a measurement (${auth})`, (done) => {
         chai
           .request(config.api)
-          .patch(`/people/${store.person[auth].id}/${auth}`)
+          .patch(`/sets/${store.set[auth].id}/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -206,15 +206,15 @@ export const personTests = async (chai, config, expect, store) => {
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(200)
             expect(res.body.result).to.equal(`success`)
-            expect(typeof res.body.person.measies.chest).to.equal('undefined')
+            expect(typeof res.body.set.measies.chest).to.equal('undefined')
             done()
           })
       })
 
-      it(`${store.icon('person', auth)} Should read a person (${auth})`, (done) => {
+      it(`${store.icon('set', auth)} Should read a set (${auth})`, (done) => {
         chai
           .request(config.api)
-          .get(`/people/${store.person[auth].id}/${auth}`)
+          .get(`/sets/${store.set[auth].id}/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -228,18 +228,18 @@ export const personTests = async (chai, config, expect, store) => {
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(200)
             expect(res.body.result).to.equal(`success`)
-            expect(typeof res.body.person.measies).to.equal('object')
+            expect(typeof res.body.set.measies).to.equal('object')
             done()
           })
       })
 
       it(`${store.icon(
-        'person',
+        'set',
         auth
-      )} Should not allow reading another user's person (${auth})`, (done) => {
+      )} Should not allow reading another user's set (${auth})`, (done) => {
         chai
           .request(config.api)
-          .get(`/people/${store.person[auth].id}/${auth}`)
+          .get(`/sets/${store.set[auth].id}/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -259,12 +259,12 @@ export const personTests = async (chai, config, expect, store) => {
       })
 
       it(`${store.icon(
-        'person',
+        'set',
         auth
-      )} Should not allow updating another user's person (${auth})`, (done) => {
+      )} Should not allow updating another user's set (${auth})`, (done) => {
         chai
           .request(config.api)
-          .patch(`/people/${store.person[auth].id}/${auth}`)
+          .patch(`/sets/${store.set[auth].id}/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -287,12 +287,12 @@ export const personTests = async (chai, config, expect, store) => {
       })
 
       it(`${store.icon(
-        'person',
+        'set',
         auth
-      )} Should not allow removing another user's person (${auth})`, (done) => {
+      )} Should not allow removing another user's set (${auth})`, (done) => {
         chai
           .request(config.api)
-          .delete(`/people/${store.person[auth].id}/${auth}`)
+          .delete(`/sets/${store.set[auth].id}/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -311,10 +311,10 @@ export const personTests = async (chai, config, expect, store) => {
           })
       })
 
-      it(`${store.icon('person', auth)} Should clone a person (${auth})`, (done) => {
+      it(`${store.icon('set', auth)} Should clone a set (${auth})`, (done) => {
         chai
           .request(config.api)
-          .post(`/people/${store.person[auth].id}/clone/${auth}`)
+          .post(`/sets/${store.set[auth].id}/clone/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -329,18 +329,18 @@ export const personTests = async (chai, config, expect, store) => {
             expect(res.status).to.equal(200)
             expect(res.body.result).to.equal(`success`)
             expect(typeof res.body.error).to.equal(`undefined`)
-            expect(typeof res.body.person.id).to.equal(`number`)
+            expect(typeof res.body.set.id).to.equal(`number`)
             done()
           })
       })
 
       it(`${store.icon(
-        'person',
+        'set',
         auth
-      )} Should (not) clone a public person across accounts (${auth})`, (done) => {
+      )} Should (not) clone a public set across accounts (${auth})`, (done) => {
         chai
           .request(config.api)
-          .post(`/people/${store.person[auth].id}/clone/${auth}`)
+          .post(`/sets/${store.set[auth].id}/clone/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -351,12 +351,12 @@ export const personTests = async (chai, config, expect, store) => {
                   ).toString('base64')
           )
           .end((err, res) => {
-            if (store.person[auth].public) {
+            if (store.set[auth].public) {
               expect(err === null).to.equal(true)
               expect(res.status).to.equal(200)
               expect(res.body.result).to.equal(`success`)
               expect(typeof res.body.error).to.equal(`undefined`)
-              expect(typeof res.body.person.id).to.equal(`number`)
+              expect(typeof res.body.set.id).to.equal(`number`)
             } else {
               expect(err === null).to.equal(true)
               expect(res.status).to.equal(403)
@@ -368,8 +368,8 @@ export const personTests = async (chai, config, expect, store) => {
       })
 
       // TODO:
-      // - Clone person
-      // - Clone person accross accounts of they are public
+      // - Clone set
+      // - Clone set accross accounts of they are public
     })
   }
 }

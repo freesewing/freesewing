@@ -50,7 +50,7 @@ const baseConfig = {
   },
   avatars: {
     user: process.env.BACKEND_AVATAR_USER || 'https://freesewing.org/avatar.svg',
-    person: process.env.BACKEND_AVATAR_PERSON || 'https://freesewing.org/avatar.svg',
+    set: process.env.BACKEND_AVATAR_SET || 'https://freesewing.org/avatar.svg',
     pattern: process.env.BACKEND_AVATAR_PATTERN || 'https://freesewing.org/avatar.svg',
   },
   db: {

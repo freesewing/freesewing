@@ -1,7 +1,7 @@
 import { log } from '../utils/log.mjs'
-import { setPersonAvatar } from '../utils/sanity.mjs'
+import { setSetAvatar } from '../utils/sanity.mjs'
 
-export function PersonModel(tools) {
+export function SetModel(tools) {
   this.config = tools.config
   this.prisma = tools.prisma
   this.decrypt = tools.decrypt
@@ -12,9 +12,9 @@ export function PersonModel(tools) {
   return this
 }
 
-PersonModel.prototype.guardedCreate = async function ({ body, user }) {
+SetModel.prototype.guardedCreate = async function ({ body, user }) {
   if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
-  if (Object.keys(body) < 1) return this.setResponse(400, 'postBodyMissing')
+  if (Object.keys(body).length < 1) return this.setResponse(400, 'postBodyMissing')
   if (!body.name || typeof body.name !== 'string') return this.setResponse(400, 'nameMissing')
 
   // Prepare data
@@ -30,7 +30,7 @@ PersonModel.prototype.guardedCreate = async function ({ body, user }) {
   data.imperial = body.imperial === true ? true : false
   data.userId = user.uid
   // Set this one initially as we need the ID to create a custom img via Sanity
-  data.img = this.config.avatars.person
+  data.img = this.config.avatars.set
 
   // Create record
   await this.unguardedCreate(data)
@@ -40,36 +40,36 @@ PersonModel.prototype.guardedCreate = async function ({ body, user }) {
     this.config.use.sanity &&
     typeof body.img === 'string' &&
     (!body.unittest || (body.unittest && this.config.use.tests?.sanity))
-      ? await setPersonAvatar(this.record.id, body.img)
+      ? await setSetAvatar(this.record.id, body.img)
       : false
 
   if (img) await this.unguardedUpdate(this.cloak({ img: img.url }))
   else await this.read({ id: this.record.id })
 
-  return this.setResponse(201, 'created', { person: this.asPerson() })
+  return this.setResponse(201, 'created', { set: this.asSet() })
 }
 
-PersonModel.prototype.unguardedCreate = async function (data) {
+SetModel.prototype.unguardedCreate = async function (data) {
   try {
-    this.record = await this.prisma.person.create({ data: this.cloak(data) })
+    this.record = await this.prisma.set.create({ data: this.cloak(data) })
   } catch (err) {
-    log.warn(err, 'Could not create person')
-    return this.setResponse(500, 'createPersonFailed')
+    log.warn(err, 'Could not create set')
+    return this.setResponse(500, 'createSetFailed')
   }
 
   return this
 }
 
 /*
- * Loads a person from the database based on the where clause you pass it
+ * Loads a measurements set from the database based on the where clause you pass it
  *
  * Stores result in this.record
  */
-PersonModel.prototype.read = async function (where) {
+SetModel.prototype.read = async function (where) {
   try {
-    this.record = await this.prisma.person.findUnique({ where })
+    this.record = await this.prisma.set.findUnique({ where })
   } catch (err) {
-    log.warn({ err, where }, 'Could not read person')
+    log.warn({ err, where }, 'Could not read measurements set')
   }
 
   this.reveal()
@@ -78,12 +78,12 @@ PersonModel.prototype.read = async function (where) {
 }
 
 /*
- * Loads a person from the database based on the where clause you pass it
- * In addition prepares it for returning the person data
+ * Loads a measurements set from the database based on the where clause you pass it
+ * In addition prepares it for returning the set data
  *
  * Stores result in this.record
  */
-PersonModel.prototype.guardedRead = async function ({ params, user }) {
+SetModel.prototype.guardedRead = async function ({ params, user }) {
   if (user.level < 1) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
@@ -94,17 +94,17 @@ PersonModel.prototype.guardedRead = async function ({ params, user }) {
 
   return this.setResponse(200, false, {
     result: 'success',
-    person: this.asPerson(),
+    set: this.asSet(),
   })
 }
 
 /*
- * Clones a person
- * In addition prepares it for returning the person data
+ * Clones a measurements set
+ * In addition prepares it for returning the set data
  *
  * Stores result in this.record
  */
-PersonModel.prototype.guardedClone = async function ({ params, user }) {
+SetModel.prototype.guardedClone = async function ({ params, user }) {
   if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
@@ -113,11 +113,11 @@ PersonModel.prototype.guardedClone = async function ({ params, user }) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
 
-  // Clone person
-  const data = this.asPerson()
+  // Clone set
+  const data = this.asSet()
   delete data.id
   data.name += ` (cloned from #${this.record.id})`
-  data.notes += ` (Note: This person was cloned from person #${this.record.id})`
+  data.notes += ` (Note: This measurements set was cloned from set #${this.record.id})`
   await this.unguardedCreate(data)
 
   // Update unencrypted data
@@ -125,14 +125,14 @@ PersonModel.prototype.guardedClone = async function ({ params, user }) {
 
   return this.setResponse(200, false, {
     result: 'success',
-    person: this.asPerson(),
+    set: this.asSet(),
   })
 }
 
 /*
  * Helper method to decrypt at-rest data
  */
-PersonModel.prototype.reveal = async function () {
+SetModel.prototype.reveal = async function () {
   this.clear = {}
   if (this.record) {
     for (const field of this.encryptedFields) {
@@ -146,7 +146,7 @@ PersonModel.prototype.reveal = async function () {
 /*
  * Helper method to encrypt at-rest data
  */
-PersonModel.prototype.cloak = function (data) {
+SetModel.prototype.cloak = function (data) {
   for (const field of this.encryptedFields) {
     if (typeof data[field] !== 'undefined') {
       data[field] = this.encrypt(data[field])
@@ -162,26 +162,26 @@ PersonModel.prototype.cloak = function (data) {
  *
  * Stores result in this.exists
  */
-PersonModel.prototype.setExists = function () {
+SetModel.prototype.setExists = function () {
   this.exists = this.record ? true : false
 
   return this
 }
 
 /*
- * Updates the person data - Used when we create the data ourselves
+ * Updates the set data - Used when we create the data ourselves
  * so we know it's safe
  */
-PersonModel.prototype.unguardedUpdate = async function (data) {
+SetModel.prototype.unguardedUpdate = async function (data) {
   try {
-    this.record = await this.prisma.person.update({
+    this.record = await this.prisma.set.update({
       where: { id: this.record.id },
       data,
     })
   } catch (err) {
-    log.warn(err, 'Could not update person record')
+    log.warn(err, 'Could not update set record')
     process.exit()
-    return this.setResponse(500, 'updatePersonFailed')
+    return this.setResponse(500, 'updateSetFailed')
   }
   await this.reveal()
 
@@ -189,10 +189,10 @@ PersonModel.prototype.unguardedUpdate = async function (data) {
 }
 
 /*
- * Updates the person data - Used when we pass through user-provided data
+ * Updates the set data - Used when we pass through user-provided data
  * so we can't be certain it's safe
  */
-PersonModel.prototype.guardedUpdate = async function ({ params, body, user }) {
+SetModel.prototype.guardedUpdate = async function ({ params, body, user }) {
   if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
   await this.read({ id: parseInt(params.id) })
@@ -224,21 +224,21 @@ PersonModel.prototype.guardedUpdate = async function ({ params, body, user }) {
 
   // Image (img)
   if (typeof body.img === 'string') {
-    const img = await setPersonAvatar(params.id, body.img)
+    const img = await setSetAvatar(params.id, body.img)
     data.img = img.url
   }
 
   // Now update the record
   await this.unguardedUpdate(this.cloak(data))
 
-  return this.setResponse(200, false, { person: this.asPerson() })
+  return this.setResponse(200, false, { set: this.asSet() })
 }
 
 /*
- * Removes the person - No questions asked
+ * Removes the set - No questions asked
  */
-PersonModel.prototype.unguardedDelete = async function () {
-  await this.prisma.person.delete({ here: { id: this.record.id } })
+SetModel.prototype.unguardedDelete = async function () {
+  await this.prisma.set.delete({ here: { id: this.record.id } })
   this.record = null
   this.clear = null
 
@@ -246,9 +246,9 @@ PersonModel.prototype.unguardedDelete = async function () {
 }
 
 /*
- * Removes the person - Checks permissions
+ * Removes the set - Checks permissions
  */
-PersonModel.prototype.guardedDelete = async function ({ params, body, user }) {
+SetModel.prototype.guardedDelete = async function ({ params, user }) {
   if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
@@ -265,7 +265,7 @@ PersonModel.prototype.guardedDelete = async function ({ params, body, user }) {
 /*
  * Returns record data
  */
-PersonModel.prototype.asPerson = function () {
+SetModel.prototype.asSet = function () {
   return {
     ...this.record,
     ...this.clear,
@@ -277,7 +277,7 @@ PersonModel.prototype.asPerson = function () {
  *
  * Will be used by this.sendResponse()
  */
-PersonModel.prototype.setResponse = function (status = 200, error = false, data = {}) {
+SetModel.prototype.setResponse = function (status = 200, error = false, data = {}) {
   this.response = {
     status,
     body: {
@@ -297,7 +297,7 @@ PersonModel.prototype.setResponse = function (status = 200, error = false, data 
 /*
  * Helper method to send response
  */
-PersonModel.prototype.sendResponse = async function (res) {
+SetModel.prototype.sendResponse = async function (res) {
   return res.status(this.response.status).send(this.response.body)
 }
 
@@ -331,7 +331,7 @@ PersonModel.prototype.sendResponse = async function (res) {
 //}
 
 /* Helper method to parse user-supplied measurements */
-PersonModel.prototype.sanitizeMeasurements = function (input) {
+SetModel.prototype.sanitizeMeasurements = function (input) {
   const measies = {}
   if (typeof input !== 'object') return measies
   for (const [m, val] of Object.entries(input)) {

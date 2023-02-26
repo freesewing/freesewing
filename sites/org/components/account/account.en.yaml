@@ -13,9 +13,9 @@ yourProfile: Your profile
 yourPatterns: Your patterns
 yourSets: Your measurement sets
 logout: Log out
-
+politeOhCrap: Oh fiddlesticks
 bio: Bio
-email: Email address
+email: E-mail address
 github: Github username
 img: Profile image
 username: Username
@@ -124,6 +124,10 @@ usernameNotAvailable: Username is not available
 
 # email
 emailTitle: Where can we reach you in case we have a good reason for it (like when you forgot your password)?
+oneMoreThing: One more thing
+oneMomentPlease: One moment please
+emailChangeConfirmation: We have sent an E-mail to your new address to confirm this change.
+vagueError: Something went wrong, and we're not certain how to handle it. Please try again, or involve a human being for assistance.
 
 # github
 githubTitle: Enter your github username here to receive updates when you report a problem through this website.

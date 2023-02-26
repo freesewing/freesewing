@@ -7,7 +7,7 @@ import { useToast } from 'site/hooks/useToast.mjs'
 import { BackToAccountButton } from './shared.mjs'
 import { SaveSettingsButton } from 'site/components/buttons/save-settings-button.mjs'
 
-export const ns = ['account']
+export const ns = ['account', 'toast']
 
 export const GithubSettings = ({ app, title = false, welcome = false }) => {
   const backend = useBackend(app)

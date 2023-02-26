@@ -15,8 +15,8 @@ export function PatternModel(tools) {
 PatternModel.prototype.guardedCreate = async function ({ body, user }) {
   if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
   if (Object.keys(body).length < 2) return this.setResponse(400, 'postBodyMissing')
-  if (!body.person) return this.setResponse(400, 'personMissing')
-  if (typeof body.person !== 'number') return this.setResponse(400, 'personNotNumeric')
+  if (!body.set) return this.setResponse(400, 'setMissing')
+  if (typeof body.set !== 'number') return this.setResponse(400, 'setNotNumeric')
   if (typeof body.settings !== 'object') return this.setResponse(400, 'settingsNotAnObject')
   if (body.data && typeof body.data !== 'object') return this.setResponse(400, 'dataNotAnObject')
   if (!body.design && !body.data?.design) return this.setResponse(400, 'designMissing')
@@ -25,7 +25,7 @@ PatternModel.prototype.guardedCreate = async function ({ body, user }) {
   // Prepare data
   const data = {
     design: body.design,
-    personId: body.person,
+    setId: body.set,
     settings: body.settings,
   }
   // Data (will be encrypted, so always set _some_ value)
