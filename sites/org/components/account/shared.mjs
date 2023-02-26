@@ -27,7 +27,7 @@ const btnClasses = {
     'border border-secondary hover:border hover:border-secondary',
 }
 const spanClasses =
-  'p-4 w-8 h-8 shrink-0 rounded-full text-center p-0 py-2 bg-secondary text-secondary-content'
+  'p-2 w-8 h-8 shrink-0 rounded-full text-center p-0 py-2 bg-secondary text-secondary-content'
 
 export const BackToAccountButton = ({ loading = false }) => {
   const { t } = useTranslation(['account'])

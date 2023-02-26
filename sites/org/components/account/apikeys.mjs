@@ -309,7 +309,7 @@ export const Apikeys = ({ app }) => {
                   href="https://freesewing.dev/reference/backend/api/apikeys"
                   txt="the API keys reference documentation"
                 />{' '}
-                on <WebLink href="https://freesewing.dev/" txt="FreeSewing.dev" /> our site for
+                on <WebLink href="https://freesewing.dev/" txt="FreeSewing.dev" />, our site for
                 developers and contributors.
               </p>
             </Popout>

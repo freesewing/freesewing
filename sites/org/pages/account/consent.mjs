@@ -30,7 +30,7 @@ const AccountPage = (props) => {
   const app = useApp(props)
   const { t } = useTranslation(namespaces)
   const crumbs = [
-    [t('yourAccount'), '/account'],
+    [t('account:yourAccount'), '/account'],
     [t('consent'), '/account/consent'],
   ]
 
