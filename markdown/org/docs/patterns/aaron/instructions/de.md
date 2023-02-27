@@ -1,44 +1,44 @@
 - - -
-title: "Aaron A-Shirt: Nähanweisung"
+title: "Aaron A-Shirt: Nähanleitung"
 - - -
 
 ## Schritt 1: Nähte schließen
 
 ![Seiten- und Schulternähte schließen](step01.png)
 
-Legen Sie Vorder- und Rückseite mit den _rechten Seiten zusammen_ übereinander. Nähe die Seitennähte zusammen und die kurzen Nähte an den Schulterträgern. Wenn du eine Overlock besitzt, ist dies ein guter Moment um sie zu verwenden. Wenn nicht, versäubere deine Nähte auf eine andere Art und Weise.
+Lege Vorder- und Rückseite mit den _rechten Seiten zusammen_ übereinander. Nähe die Seitennähte zusammen und die kurzen Nähte an den Schulterträgern. Wenn du eine Overlock besitzt, ist dies ein guter Moment um sie zu verwenden. Wenn nicht, versäubere deine Nähte auf eine andere Art und Weise.
 
 ## Schritt 2: Saum versäubern
 
 ![Nähe den Saum](step02.png)
 
-Falte den Saum nach oben und nähe ihn fest. Wenn du eine Coverlock hast, verwende sie. Falls nicht, verwenden Sie eine _Zwillingsnadel_ oder _Zickzackstich_, um die Naht dehnbar zu halten.
+Falte den Saum nach oben und nähe ihn fest. Wenn du eine Coverlock hast, verwende sie. Falls nicht, verwende eine _Zwillingsnadel_ oder einen _Zickzackstich_, um die Naht dehnbar zu halten.
 
 <Note>
 
 ##### Nur einmal falten, um dicke Stellen zu vermeiden
 
-Maschenware franst nicht aus, deshalb kann man es nur einfach umklappen und festnähen, danach die Nahtzugabe zurückschneiden.
+Maschenware franst nicht aus, deswegen nur einmal umklappen und festnähen, danach die Nahtzugabe zurückschneiden.
 
 </Note>
 
-## Schritt 3: Nähen Strickbindung an die Vorderseite
+## Schritt 3: Bringe das Einfassband an der Vorderseite an
 
 <Note>
 
-##### Über Strickbindungen
+##### Über Einfassbänder
 
-Wenn du neu bist [binden](/docs/sewing/knit-binding), kannst du [diese Seite auf dem Betreff lesen](/docs/sewing/knit-binding) lesen.
+Wenn dir [Einfassbänder](/docs/sewing/knit-binding) unbekannt sind, kannst du [diese Seite zum Thema](/docs/sewing/knit-binding) lesen.
 
-###### Wiederholen Sie die Schritte 3 und 4 für die Armlöcher und die Halsöffnung
+###### Wiederhole Schritte 3 und 4 für beide Armlöcher und die Halsöffnung
 
-und das unten beschriebene Verfahren gilt sowohl für die Armlöcher als auch für die Halsöffnung. Mit anderen Worten: Du musst das dreimal machen.
+Das unten beschriebene Verfahren gilt sowohl für die Armlöcher als auch für die Halsöffnung. Mit anderen Worten: Du musst das dreimal machen.
 
-###### Beginnen Sie mit der einfachsten Öffnung
+###### Beginne mit der einfachsten Öffnung
 
-Ich würde Ihnen raten, mit jeder Öffnung zu beginnen, die die einheitlichste Krümmung hat. Standardmäßig sind dies die Armlöcher, aber wenn Sie die Musteroptionen geändert haben (denken Sie an Racerback), ist dies möglicherweise nicht der Fall.
+Ich würde dir anraten, mit der Öffnung zu beginnen, die die einheitlichste Krümmung hat. Standardmäßig sind dies die Armlöcher, aber wenn du die Schnittmusteroptionen geändert hast (zum Beispiel zu einem Racerback), ist dies möglicherweise nicht der Fall.
 
-So oder so, je weniger scharfe Kurven Sie haben, desto einfacher wird es sein. Also beginnen Sie mit dem Aufwärmen, bevor Sie die dreckigen Kurven machen.
+So oder so, je weniger scharfe Kurven du hast, desto einfacher wird es sein. Also beginnen Sie mit dem Aufwärmen, bevor Sie die dreckigen Kurven machen.
 
 </Note>
 
