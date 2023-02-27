@@ -33,7 +33,7 @@ function draftBack({
   // global/re-used settings
 
   let frontWidth = Math.round(measurements.waist * 0.25) //Total front width is 1/2 the waist, but as we are cutting on the fold, this should be 25%
-  let frontHeight = Math.round(frontWidth * options.frontHeightRatio)
+  let frontHeight = Math.round(frontWidth * 2 * options.frontHeightRatio)
 
   store.set('frontWidth', frontWidth)
   store.set('frontHeight', frontHeight)
