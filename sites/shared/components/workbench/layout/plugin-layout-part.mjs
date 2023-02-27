@@ -117,6 +117,9 @@ const basePlugin = ({
   version,
   hooks: {
     preLayout: function (pattern) {
+      if (!responsiveColumns) {
+        pattern.settings[0].maxWidth = sheetWidth
+      }
       // Add part
       pattern.addPart({
         name: partName,

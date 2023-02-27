@@ -4,7 +4,7 @@ import { useTranslation } from 'next-i18next'
 
 export const CoreSettingOnly = (props) => {
   const { t } = useTranslation(['app', 'parts', 'settings'])
-  const list = props.draft.config.draftOrder
+  const list = props.design.patternConfig.draftOrder
   const partNames = list.map((part) => ({ id: part, name: t(`parts:${part}`) }))
 
   const togglePart = (part) => {

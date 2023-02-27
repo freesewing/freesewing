@@ -16,6 +16,7 @@ function draftCarltonBack({
   paths,
   Path,
   part,
+  addCut,
 }) {
   calculateRatios(part)
   // Belt width
@@ -95,6 +96,8 @@ function draftCarltonBack({
     .line(points.bpStart)
     .attr('class', 'dashed')
 
+  addCut(2)
+  addCut(2, 'lining')
   if (complete) {
     macro('sprinkle', {
       snippet: 'bnotch',

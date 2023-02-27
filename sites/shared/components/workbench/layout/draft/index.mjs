@@ -2,10 +2,10 @@ import { useRef } from 'react'
 import { Stack } from './stack.mjs'
 import { SvgWrapper } from '../../draft/svg.mjs'
 import { PartInner } from '../../draft/part.mjs'
+import get from 'lodash.get'
 
 export const Draft = (props) => {
   const {
-    draft,
     patternProps,
     gist,
     updateGist,
@@ -18,7 +18,8 @@ export const Draft = (props) => {
   const svgRef = useRef(null)
   if (!patternProps) return null
   // keep a fresh copy of the layout because we might manipulate it without saving to the gist
-  let layout = draft.settings[0].layouts?.[layoutType] || {
+  const layoutPath = ['layouts'].concat(layoutType)
+  let layout = get(patternProps.settings[0], layoutPath) || {
     ...patternProps.autoLayout,
     width: patternProps.width,
     height: patternProps.height,
@@ -53,7 +54,7 @@ export const Draft = (props) => {
     newLayout.topLeft = topLeft
 
     if (history) {
-      updateGist(['layouts', layoutType], newLayout, history)
+      updateGist(layoutPath, newLayout, history)
     } else {
       // we don't put it in the gist if it shouldn't contribute to history because we need some of the data calculated here for rendering purposes on the initial layout, but we don't want to actually save a layout until the user manipulates it. This is what allows the layout to respond appropriately to settings changes. Once the user has starting playing with the layout, all bets are off
       layout = newLayout
