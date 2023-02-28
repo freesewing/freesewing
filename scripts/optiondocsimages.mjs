@@ -10,17 +10,18 @@
  * markdown/org/docs/patterns/[pattern]/[option]/[pattern]_[option]_sample.svg
  *
  */
-const fs = require('fs')
-const path = require('path')
-const core = require('../packages/core/dist')
-const pi = require('../packages/pattern-info/dist')
-const models = require('../packages/models/dist')
-const wb32 = models.withBreasts.size32
-const noVersions = require('../plugins/plugin-versionfree-svg')
-let { capitalize } = require('../packages/core/src/utils.mjs')
-capitalize = capitalize.default
-let theme = require('../plugins/plugin-theme/dist')
-theme = theme.default
+import fs from 'fs'
+import path from 'path'
+import { fileURLToPath } from 'url'
+import { designs } from '../config/software/index.mjs'
+import { cisFemaleAdult32 } from '../packages/models/dist/index.mjs'
+import { plugin as noVersions } from '../plugins/plugin-versionfree-svg/dist/index.mjs'
+import { capitalize } from '../packages/core/src/utils.mjs'
+import { plugin as theme } from '../plugins/plugin-theme/dist/index.mjs'
+
+// when dependabot updates a dependency in a package.json, we want to update it in our dependencies.yaml
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 const image = (pattern, option) => `
 
@@ -34,13 +35,13 @@ const insertImage = (file, pattern, option) => {
     fs.writeFileSync(file, md + image(pattern, option))
 }
 
-const createImages = () => {
-  for (const pattern of pi.list) {
+const createImages = async () => {
+  for (const pattern in designs) {
     if (true || pattern === 'unice') {
-      const Pattern = require(`../designs/${pattern}/dist/index.js`)[capitalize(pattern)]
-      for (const option of pi.options[pattern]) {
+      const Pattern = (await import(`../designs/${pattern}/dist/index.mjs`))[capitalize(pattern)]
+      for (const option in Pattern.patternConfig.options) {
         const p = new Pattern({
-          measurements: wb32,
+          measurements: cisFemaleAdult32,
           settings: {
             idPrefix: `${pattern}_${option}`,
             embed: true,
@@ -48,6 +49,8 @@ const createImages = () => {
         })
           .use(theme)
           .use(noVersions)
+          .__init()
+
         const file = path.join(
           'markdown',
           'org',
