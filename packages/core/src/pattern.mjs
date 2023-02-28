@@ -500,10 +500,7 @@ Pattern.prototype.__isPartHidden = function (partName) {
   if (Array.isArray(this.settings[this.activeSet || 0].only)) {
     if (this.settings[this.activeSet || 0].only.includes(partName)) return false
   }
-  if (this.config.parts?.[partName]?.hide) return true
-  if (this.config.parts?.[partName]?.hideAll) return true
   if (this.config.partHide?.[partName]) return true
-  if (this.config.partHideAll?.[partName]) return true
   if (this.parts?.[this.activeSet]?.[partName]?.hidden) return true
 
   return false
