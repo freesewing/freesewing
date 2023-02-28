@@ -965,8 +965,6 @@ Pattern.prototype.__resolveConfig = function () {
  * Resolves parts and their dependencies
  *
  * @private
- * @param {int} count - The count is used to call itself recursively
- * @param {int} distance - Keeps track of how far the dependency is from the pattern
  * @return {Pattern} this - The Pattern instance
  */
 Pattern.prototype.__resolveParts = function () {
