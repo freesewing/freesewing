@@ -24,7 +24,7 @@ export const shouldSkipBuild = (siteName, checkFolders = '../shared .') => {
   }
 
   // Do not build commits that have [vercel skip] in the message
-  if (process.env.VERCEL_GIT_COMMIT_MESSAGE.match('[vercel skip]')) {
+  if (process.env.VERCEL_GIT_COMMIT_MESSAGE.match(/\[vercel skip\]/)) {
     console.log('🛑 - Commit message includes [vercel skip] - Do not build')
     process.exit(0)
   }
