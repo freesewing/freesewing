@@ -4,6 +4,7 @@ import { Draft } from '../draft/index.mjs'
 import { fabricPlugin } from '../plugin-layout-part.mjs'
 import { cutLayoutPlugin } from './plugin-cut-layout.mjs'
 import { pluginCutlist } from '@freesewing/plugin-cutlist'
+import { pluginFlip } from '@freesewing/plugin-flip'
 import { measurementAsMm } from 'shared/utils.mjs'
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { Tabs } from 'shared/components/mdx/tabs.mjs'
@@ -43,8 +44,9 @@ export const CutLayout = (props) => {
         sheetHeight,
       }
       draft.use(fabricPlugin(layoutSettings))
-      draft.use(pluginCutlist)
       draft.use(cutLayoutPlugin(cutFabric))
+      draft.use(pluginCutlist)
+      draft.use(pluginFlip)
       // draft the pattern
       draft.draft()
       setPatternProps(draft.getRenderProps())

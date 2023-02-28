@@ -13,6 +13,7 @@ function draftCarltonBelt({
   paths,
   Path,
   part,
+  addCut,
 }) {
   let length = 1.6 * (store.get('cbToDart') + store.get('dartToSide'))
   let width = store.get('beltWidth')
@@ -64,6 +65,7 @@ function draftCarltonBelt({
       points.bottomRight.shiftFractionTowards(points.topRight, 0.5)
     )
 
+    addCut(4)
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
     if (paperless) {

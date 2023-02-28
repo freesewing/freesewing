@@ -1,6 +1,11 @@
 const prefix = 'mirroredOnFold'
 
 const redraft = ({ part }) => part
+const redraftAndFlip = ({ part, macro }) => {
+  macro('flip')
+  return part
+}
+
 export const cutLayoutPlugin = function (material) {
   return {
     hooks: {
@@ -12,7 +17,7 @@ export const cutLayoutPlugin = function (material) {
           pattern.activePart,
         ])
 
-        if (!partCutlist?.materials?.[material] && material !== 'fabric') {
+        if (partCutlist?.materials ? !partCutlist.materials[material] : material !== 'fabric') {
           pattern.parts[pattern.activeSet][pattern.activePart].hide()
           return
         }
@@ -22,12 +27,15 @@ export const cutLayoutPlugin = function (material) {
           macro('mirrorOnFold', { fold: partCutlist.cutOnFold })
         }
 
-        for (var i = 1; i < partCutlist?.materials?.[material].cut; i++) {
+        const matCutConfig = partCutlist?.materials?.[material]
+        if (!matCutConfig) return
+
+        for (var i = 1; i < matCutConfig.cut; i++) {
           const dupPartName = `cut.${pattern.activePart}.${material}_${i + 1}`
           pattern.addPart({
             name: dupPartName,
             from: pattern.config.parts[pattern.activePart],
-            draft: redraft,
+            draft: matCutConfig.identical || i % 2 === 0 ? redraft : redraftAndFlip,
           })
         }
       },

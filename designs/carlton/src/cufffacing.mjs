@@ -12,6 +12,7 @@ function draftCarltonCuffFacing({
   paths,
   Path,
   part,
+  addCut,
 }) {
   points.topLeft = new Point(0, 0)
   points.bottomRight = new Point(
@@ -46,6 +47,8 @@ function draftCarltonCuffFacing({
     .close()
     .attr('class', 'fabric')
 
+  addCut(2)
+  addCut(2, 'lmhCanvas')
   if (complete) {
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
     macro('title', {
