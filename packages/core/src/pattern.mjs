@@ -920,6 +920,7 @@ Pattern.prototype.__pack = function () {
     }
   }
   if (this.settings[0].layout === true) {
+    // some plugins will add a width constraint to the settings, but we can safely pass undefined if not
     let size = pack(bins, { inPlace: true, maxWidth: this.settings[0].maxWidth })
     for (let bin of bins) {
       this.autoLayout.stacks[bin.id] = { move: {} }
@@ -950,6 +951,11 @@ Pattern.prototype.__pack = function () {
   return this
 }
 
+/**
+ * Gets the configuration for the config resolver and sets it on the pattern
+ * @private
+ * @return  {Pattern} this - The Pattern instance
+ */
 Pattern.prototype.__resolveConfig = function () {
   this.config = this.__configResolver.asConfig()
   return this
