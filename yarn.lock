@@ -6254,10 +6254,10 @@ bin-links@^3.0.0:
     rimraf "^3.0.0"
     write-file-atomic "^4.0.0"
 
-bin-pack@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/bin-pack/-/bin-pack-1.0.2.tgz#c2a014edbf0bed70a3292062ed46577b96120679"
-  integrity sha512-aOk0SxEon5LF9cMxQFViSKb4qccG6rs7XKyMXIb1J8f8LA2acTIWnHdT0IOTe4gYBbqgjdbuTZ5f+UP+vlh4Mw==
+bin-pack-with-constraints@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/bin-pack-with-constraints/-/bin-pack-with-constraints-1.0.1.tgz#47e67b481724a8a5a3644ec9c9ccf881c2725096"
+  integrity sha512-fiPxvZAWuIqLpK79Ov58PztT/ZiGbpDB7usifleilJ/4aqhSx0ivY5kRifESJnR2rq51pScbUJ0LgCebufGJnA==
 
 binary-extensions@^2.0.0:
   version "2.2.0"
