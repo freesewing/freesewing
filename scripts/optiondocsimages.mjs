@@ -37,52 +37,50 @@ const insertImage = (file, pattern, option) => {
 
 const createImages = async () => {
   for (const pattern in designs) {
-    if (true || pattern === 'unice') {
-      const Pattern = (await import(`../designs/${pattern}/dist/index.mjs`))[capitalize(pattern)]
-      for (const option in Pattern.patternConfig.options) {
-        const p = new Pattern({
-          measurements: cisFemaleAdult32,
-          settings: {
-            idPrefix: `${pattern}_${option}`,
-            embed: true,
-          },
-        })
-          .use(theme)
-          .use(noVersions)
-          .__init()
+    const Pattern = (await import(`../designs/${pattern}/dist/index.mjs`))[capitalize(pattern)]
+    for (const option in Pattern.patternConfig.options) {
+      const p = new Pattern({
+        measurements: cisFemaleAdult32,
+        settings: {
+          idPrefix: `${pattern}_${option}`,
+          embed: true,
+        },
+      })
+        .use(theme)
+        .use(noVersions)
+        .__init()
 
-        const file = path.join(
-          'markdown',
-          'org',
-          'docs',
-          'patterns',
-          pattern,
-          'options',
-          option.toLowerCase(),
-          `${pattern}_${option.toLowerCase()}_sample.svg`
-        )
-        try {
-          const svg = p.sampleOption(option).render()
-          fs.writeFileSync(path.join(__dirname, '..', file), svg)
-          insertImage(
-            path.join(
-              'markdown',
-              'org',
-              'docs',
-              'patterns',
-              pattern,
-              'options',
-              option.toLowerCase(),
-              'en.md'
-            ),
+      const file = path.join(
+        'markdown',
+        'org',
+        'docs',
+        'patterns',
+        pattern,
+        'options',
+        option.toLowerCase(),
+        `${pattern}_${option.toLowerCase()}_sample.svg`
+      )
+      try {
+        const svg = p.sampleOption(option).render()
+        fs.writeFileSync(path.join(__dirname, '..', file), svg)
+        insertImage(
+          path.join(
+            'markdown',
+            'org',
+            'docs',
+            'patterns',
             pattern,
-            option
-          )
-          console.log('✅ ' + file)
-        } catch (err) {
-          console.log('⚠️  ' + file)
-          console.log(err)
-        }
+            'options',
+            option.toLowerCase(),
+            'en.md'
+          ),
+          pattern,
+          option
+        )
+        console.log('✅ ' + file)
+      } catch (err) {
+        console.log('⚠️  ' + file)
+        console.log(err)
       }
     }
   }
