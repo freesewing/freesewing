@@ -250,7 +250,7 @@ function simonBack({
     })
     points.title = new Point(points.armhole.x / 4, points.armhole.y)
     macro('title', { at: points.title, nr: 3, title: 'back' })
-    points.logo = points.title.shift(-90, 70)
+    points.logo = new Point(points.armhole.x / 4, points.waistCp2.y)
     snippets.logo = new Snippet('logo', points.logo)
     if (options.boxPleat) {
       paths.boxPleat = new Path()
