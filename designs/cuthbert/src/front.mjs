@@ -13,9 +13,7 @@ import {
 
 function draftFront({
   complete,
-  log,
   macro,
-  measurements,
   options,
   paperless,
   Path,

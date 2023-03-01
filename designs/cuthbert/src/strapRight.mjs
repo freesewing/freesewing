@@ -3,21 +3,21 @@ import { pluginBundle } from '@freesewing/plugin-bundle'
 import { strapLeft } from './strapLeft.mjs'
 
 import {
-  fastenerCount,
-  fastenerHoleCount,
-  fastenerRows,
-  fastenerStyle,
-  strapExtraLength,
-  strapRightPct,
-  strapType,
+  // fastenerCount,
+  // fastenerHoleCount,
+  // fastenerRows,
+  // fastenerStyle,
+  // strapExtraLength,
+  // strapRightPct,
+  // strapType,
   strapWidth,
 } from './options.mjs'
 
 function draftStrapRight({
   complete,
-  log,
+  //log,
   macro,
-  measurements,
+  //measurements,
   options,
   paperless,
   Path,
@@ -26,8 +26,8 @@ function draftStrapRight({
   points,
   part,
   sa,
-  snippets,
-  Snippet,
+  //snippets,
+  // Snippet,
   store,
 }) {
   //if using tape/elastic, no need to make straps
@@ -35,10 +35,10 @@ function draftStrapRight({
     return part.hide()
   }
 
-  let sideLength = store.get('sideLength')
-  let frontWidth = store.get('frontWidth')
+  // let sideLength = store.get('sideLength')
+  // let frontWidth = store.get('frontWidth')
 
-  let totalStrapLength = store.get('totalStrapLength')
+  // let totalStrapLength = store.get('totalStrapLength')
   let totalStrapHeight = store.get('totalStrapHeight')
 
   let rightStrapLength = store.get('righStrapLength')

@@ -6,9 +6,9 @@ import { pocketStyle, pocketWidth, pocketHeightRatio } from './options.mjs'
 
 function draftPocketWelt({
   complete,
-  log,
+  // log,
   macro,
-  measurements,
+  //  measurements,
   options,
   paperless,
   Path,
@@ -21,7 +21,7 @@ function draftPocketWelt({
   //Don't need a welt for an external pocket
   if (options.pocketStyle != 'internal') return part.hide()
 
-  let pocketHeight = store.get('pocketHeight')
+  // let pocketHeight = store.get('pocketHeight')
   let pocketWidth = store.get('pocketWidth')
   let pocketWeltExtraWidth = store.get('pocketWeltExtraWidth')
   let pocketWeltHeight = store.get('pocketWeltHeight')

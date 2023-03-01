@@ -15,7 +15,6 @@ import {
 
 function draftBack({
   complete,
-  log,
   macro,
   measurements,
   options,

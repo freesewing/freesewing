@@ -26,8 +26,8 @@ function draftStrapLeft({
   points,
   part,
   sa,
-  snippets,
-  Snippet,
+  //  snippets,
+  //  Snippet,
   store,
 }) {
   //if using tape/elastic, no need to make straps

@@ -7,8 +7,6 @@ import { pocketStyle, pocketWidth, pocketHeightRatio, pocketPointRatio } from '.
 function draftPocket({
   complete,
   macro,
-  log,
-  measurements,
   options,
   paperless,
   Path,
@@ -139,6 +137,28 @@ function draftPocket({
     paths.seam = paths.pocketBase.join(paths.hemBase).close().addClass('fabric')
 
     if (paperless) {
+      macro('vd', {
+        from: points.topLeft,
+        to: points.leftBottom,
+        x: points.leftBottom.x + sa + 30,
+      })
+
+      macro('hd', {
+        from: points.leftBottom,
+        to: points.rightBottom,
+        y: points.leftBottom.y - 30,
+      })
+
+      macro('vd', {
+        from: points.centreBottom,
+        to: points.leftBottom,
+        x: points.centreBottom.x + sa + 30,
+      })
+      macro('hd', {
+        from: points.centreBottom,
+        to: points.rightBottom,
+        y: points.centreBottom.y + 5,
+      })
     }
 
     if (complete) {
@@ -183,4 +203,5 @@ export const pocket = {
     pocketHeightRatio,
     pocketPointRatio,
   },
+  plugins: [pluginBundle],
 }
