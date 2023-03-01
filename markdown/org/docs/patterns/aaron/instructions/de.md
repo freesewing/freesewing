@@ -38,26 +38,26 @@ Das unten beschriebene Verfahren gilt sowohl für die Armlöcher als auch für d
 
 Ich würde dir anraten, mit der Öffnung zu beginnen, die die einheitlichste Krümmung hat. Standardmäßig sind dies die Armlöcher, aber wenn du die Schnittmusteroptionen geändert hast (zum Beispiel zu einem Racerback), ist dies möglicherweise nicht der Fall.
 
-So oder so, je weniger scharfe Kurven du hast, desto einfacher wird es sein. Also beginnen Sie mit dem Aufwärmen, bevor Sie die dreckigen Kurven machen.
+So oder so, je weniger scharfe Kurven du hast, desto einfacher wird es sein. Beginne also mit diesen, um dich an das Verfahren zu gewöhnen, bevor du dich an die komplexeren Stellen wagst.
 
 </Note>
 
-We are going to finish the arm and neck hole with [knit binding](/docs/sewing/knit-binding) (note: not a knit band. Es gibt einen Unterschied, und der wird [hier](/docs/sewing/knit-binding) erklärt).
+Wir werden die Armlöcher und die Halsöffnung mit einem [Einfassband](/docs/sewing/knit-binding) versäubern (Anmerkung: kein Bündchen. Es gibt einen Unterschied, und der wird [hier](/docs/sewing/knit-binding) erklärt).
 
 <Note>
 
-Dies ist der einzige Teil, um dieses A-Shirt zu machen, das ein bisschen Praxis erfordert. Keine Sorge, alles was du tun musst, ist ein paar davon zu machen und du wirst in kürzester Zeit ein Profi sein.
+Dies ist der einzige Schritt beim Anfertigen dieses A-Shirts, der etwas Übung erfordert. Keine Sorge, du musst das nur ein paar Mal gemacht haben und du wirst in kürzester Zeit ein Profi sein.
 
 </Note>
 
-### Wähle deinen Platz
+### Wähle eine Stelle
 
 ![Einfassung annähen](step03a.png)
 
-The first thing we need to do is decide where we are going to start/stop our binding. Ich schlage Folgendes vor:
+Das Erste, was wir tun müssen, ist, zu entscheiden, wo wir unser Einfassband ansetzen bzw. stoppen wollen. Ich schlage Folgendes vor:
 
 - Für die Armlöcher: an der Seitennaht. Dies wird unsere Naht unter dem Arm verbergen
-- Für die Halsöffnung: die Mitte des Halsrückens. Möglicherweise möchten Sie dies mit einem Pin markieren
+- Für die Halsöffnung: die Mitte des Halsrückens. Möglicherweise möchtest du dies mit einer Stecknadel markieren
 
 ### Place (the start of) your binding
 
