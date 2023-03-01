@@ -238,9 +238,31 @@ describe('Pattern', () => {
       }
     })
 
-    it(
-      'Pattern.__init() should resolve nested dependencies for multiple parts that depend on the same part'
-    )
+    it('Pattern.__init() should resolve nested dependencies for multiple parts that depend on the same part', () => {
+      const partD = {
+        name: 'test.partD',
+        from: partB,
+        draft: ({ part }) => part,
+      }
+
+      const Pattern = new Design({
+        data: {
+          name: 'test',
+          version: '1.2.3',
+        },
+        parts: [partC, partD],
+      })
+      const pattern = new Pattern()
+      pattern.__init()
+      expect(pattern.config.resolvedDependencies['test.partD']).to.have.members([
+        'test.partA',
+        'test.partB',
+      ])
+      expect(pattern.config.resolvedDependencies['test.partC']).to.have.members([
+        'test.partA',
+        'test.partB',
+      ])
+    })
 
     // I am aware this does too much for one unit test, but this is to simplify TDD
     // we can split it up later
