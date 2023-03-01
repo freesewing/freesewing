@@ -2,13 +2,7 @@ import { pluginBundle } from '@freesewing/plugin-bundle'
 
 import { back } from './back.mjs'
 
-import {
-  pocketInclude,
-  pocketStyle,
-  pocketWidth,
-  pocketHeightRatio,
-  pocketPointRatio,
-} from './options.mjs'
+import { pocketStyle, pocketWidth, pocketHeightRatio, pocketPointRatio } from './options.mjs'
 
 function draftPocket({
   complete,
@@ -184,7 +178,6 @@ export const pocket = {
   draft: draftPocket,
   after: [back],
   options: {
-    pocketInclude,
     pocketStyle,
     pocketWidth,
     pocketHeightRatio,

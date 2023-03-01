@@ -7,7 +7,6 @@ import {
   sideHeightRatio,
   sideOpening,
   sideStrapTopRatio,
-  sideTopRatio,
   sideHorizontalTaperRatio,
   strapWidth,
 } from './options.mjs'
@@ -156,7 +155,6 @@ export const side = {
     sideHeightRatio,
     sideOpening,
     sideStrapTopRatio,
-    sideTopRatio,
     sideHorizontalTaperRatio,
     strapWidth,
   },

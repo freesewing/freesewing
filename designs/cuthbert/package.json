@@ -1,8 +1,8 @@
 {
   "name": "@freesewing/cuthbert",
   "version": "3.0.0-alpha.4",
-  "description": "A FreeSewing pattern for a configurable cummerbund",
-  "author": "Sam Pride <sam@kludge.com.au> (https://github.com/sampride)",
+  "description": "A FreeSewing pattern for a cummerbund",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
   "license": "MIT",
