@@ -465,11 +465,11 @@ PatternConfig.prototype.__resolveDraftOrder = function () {
  * @return {Pattern} this - The Pattern instance
  */
 PatternConfig.prototype.__setFromHide = function (part, depName) {
-  if (part.hideDependencies || this.__hiding.deps[part.name]) {
+  if (this.__hiding.deps[part.name]) {
     this.partHide[depName] = true
     this.__hiding.deps[depName] = true
   }
-  if (part.hideAll || this.__hiding.all[part.name]) {
+  if (this.__hiding.all[part.name]) {
     this.partHide[depName] = true
     this.__hiding.all[depName] = true
   }
@@ -489,6 +489,7 @@ PatternConfig.prototype.__setFromHide = function (part, depName) {
 PatternConfig.prototype.__setAfterHide = function (part, depName) {
   if (this.__hiding.all[part.name]) {
     this.partHide[depName] = true
+    this.__hiding.all[depName] = true
   }
 
   return this
