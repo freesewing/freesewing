@@ -17,6 +17,7 @@ export const PasswordSettings = ({ app, title = false, welcome = false }) => {
   const { t } = useTranslation(ns)
   const toast = useToast()
   const [password, setPassword] = useState('')
+  const [reveal, setReveal] = useState(false)
 
   const save = async () => {
     app.startLoading()
@@ -29,18 +30,26 @@ export const PasswordSettings = ({ app, title = false, welcome = false }) => {
   return (
     <>
       {title ? <h2 className="text-4xl">{t('passwordTitle')}</h2> : null}
-      <div className="flex flex-row items-center mt-4">
+      <div className="flex flex-row items-center mt-4 gap-2">
         <input
           value={password}
           onChange={(evt) => setPassword(evt.target.value)}
           className="input w-full input-bordered flex flex-row"
-          type="text"
+          type={reveal ? 'text' : 'password'}
           placeholder={t('newPasswordPlaceholder')}
         />
+        <button
+          className="btn hover:bg-opacity-10 border-0 btn-outline"
+          onClick={() => setReveal(!reveal)}
+        >
+          <span role="img" className="text-3xl">
+            {reveal ? '👀' : '🙈'}
+          </span>
+        </button>
       </div>
       <SaveSettingsButton app={app} btnProps={{ onClick: save, disabled: password.length < 4 }} />
       {!welcome && <BackToAccountButton loading={app.loading} />}
-      {!app.account.mfa && (
+      {!app.account.mfaEnabled && (
         <Popout tip>
           <h5>{t('mfaTipTitle')}</h5>
           <p>{t('mfaTipMsg')}</p>

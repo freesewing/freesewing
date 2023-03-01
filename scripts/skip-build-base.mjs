@@ -19,8 +19,14 @@ export const shouldSkipBuild = (siteName, checkFolders = '../shared .') => {
   const branch = process.env.VERCEL_GIT_COMMIT_REF
   // Always build develop branch
   if (branch === 'develop') {
-    console.log('✅ - develop build - Proceed to build')
+    console.log('✅ - Develop build - Proceed to build')
     process.exit(1)
+  }
+
+  // Do not build commits that have [vercel skip] in the message
+  if (process.env.VERCEL_GIT_COMMIT_MESSAGE.match(/\[vercel skip\]/)) {
+    console.log('🛑 - Commit message includes [vercel skip] - Do not build')
+    process.exit(0)
   }
 
   // Only build pull requests that made changes to the given site

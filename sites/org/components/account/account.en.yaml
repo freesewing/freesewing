@@ -13,9 +13,9 @@ yourProfile: Your profile
 yourPatterns: Your patterns
 yourSets: Your measurement sets
 logout: Log out
-
+politeOhCrap: Oh fiddlesticks
 bio: Bio
-email: Email address
+email: E-mail address
 github: Github username
 img: Profile image
 username: Username
@@ -54,9 +54,12 @@ or: or
 continue: Continue
 save: Save
 noThanks: No thanks
+areYouCertain: Are you certain?
+delete: Delete
 
 # reload
 nailedIt: Nailed it
+gone: Poof. Gone.
 reloadMsg1: The data stored in your browser can sometimes get out of sync with the data stored in our backend.
 reloadMsg2: This lets you reload your account data from the backend. It has the same effect as loggin out, and then logging in again
 
@@ -121,6 +124,10 @@ usernameNotAvailable: Username is not available
 
 # email
 emailTitle: Where can we reach you in case we have a good reason for it (like when you forgot your password)?
+oneMoreThing: One more thing
+oneMomentPlease: One moment please
+emailChangeConfirmation: We have sent an E-mail to your new address to confirm this change.
+vagueError: Something went wrong, and we're not certain how to handle it. Please try again, or involve a human being for assistance.
 
 # github
 githubTitle: Enter your github username here to receive updates when you report a problem through this website.
@@ -149,3 +156,5 @@ keyLevel7: Write access to all account data of other users
 keyLevel8: Impersonate other users, full write access to all data
 cancel: Cancel
 keySecretWarning: This is the only time you can see the key secret, make sure to copy it.
+keyExpired: This API key has expired
+deleteKeyWarning: Removing an API key cannot be undone.

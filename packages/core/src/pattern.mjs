@@ -1,5 +1,5 @@
 import { Attributes } from './attributes.mjs'
-import pack from 'bin-pack'
+import pack from 'bin-pack-with-constraints'
 import { __addNonEnumProp, __macroName } from './utils.mjs'
 import { Part } from './part.mjs'
 import { Stack } from './stack.mjs'
@@ -72,6 +72,7 @@ Pattern.prototype.addPart = function (part, resolveImmediately = true) {
     this.__configResolver.isPartValid(part) &&
     !this.designConfig.parts.find((p) => p.name == part.name)
   ) {
+    this.store.log.debug(`Adding Part \`${part.name}\` at runtime`)
     this.designConfig.parts.push(part)
     if (resolveImmediately) {
       if (this.__configResolver.addPart(part) && typeof this.draftQueue !== 'undefined')
@@ -499,10 +500,7 @@ Pattern.prototype.__isPartHidden = function (partName) {
   if (Array.isArray(this.settings[this.activeSet || 0].only)) {
     if (this.settings[this.activeSet || 0].only.includes(partName)) return false
   }
-  if (this.config.parts?.[partName]?.hide) return true
-  if (this.config.parts?.[partName]?.hideAll) return true
   if (this.config.partHide?.[partName]) return true
-  if (this.config.partHideAll?.[partName]) return true
   if (this.parts?.[this.activeSet]?.[partName]?.hidden) return true
 
   return false
@@ -922,7 +920,8 @@ Pattern.prototype.__pack = function () {
     }
   }
   if (this.settings[0].layout === true) {
-    let size = pack(bins, { inPlace: true })
+    // some plugins will add a width constraint to the settings, but we can safely pass undefined if not
+    let size = pack(bins, { inPlace: true, maxWidth: this.settings[0].maxWidth })
     for (let bin of bins) {
       this.autoLayout.stacks[bin.id] = { move: {} }
       let stack = this.stacks[bin.id]
@@ -952,6 +951,11 @@ Pattern.prototype.__pack = function () {
   return this
 }
 
+/**
+ * Gets the configuration for the config resolver and sets it on the pattern
+ * @private
+ * @return  {Pattern} this - The Pattern instance
+ */
 Pattern.prototype.__resolveConfig = function () {
   this.config = this.__configResolver.asConfig()
   return this
@@ -961,8 +965,6 @@ Pattern.prototype.__resolveConfig = function () {
  * Resolves parts and their dependencies
  *
  * @private
- * @param {int} count - The count is used to call itself recursively
- * @param {int} distance - Keeps track of how far the dependency is from the pattern
  * @return {Pattern} this - The Pattern instance
  */
 Pattern.prototype.__resolveParts = function () {

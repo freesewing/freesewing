@@ -48,7 +48,7 @@ export const AccountLinks = ({ account }) => {
         {t('newPattern')}
       </Link>
       <div className="flex flex-row gap-2">
-        <Link className="btn btn-secondary grow capitalize" href="/create">
+        <Link className="btn btn-secondary grow capitalize" href="/account/sets">
           {t('newSet')}
         </Link>
         <Link className="btn btn-warning btnoutline mb-2 capitalize" href="/logout">

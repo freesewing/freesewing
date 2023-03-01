@@ -69,7 +69,7 @@ export function useBackend(app) {
    */
   backend.loadConfirmation = async ({ id, check }) => {
     const result = await api.get(`/confirmations/${id}/${check}`)
-    if (result && result.status === 201 && result.data) return result.data
+    if (result && result.status === 200 && result.data) return result.data
     return null
   }
 
@@ -179,6 +179,28 @@ export function useBackend(app) {
     if (result && result.status === 201 && result.data?.apikey) {
       return result.data.apikey
     }
+
+    return false
+  }
+
+  /*
+   * Get API keys
+   */
+  backend.getApikeys = async () => {
+    const result = await api.get(`/apikeys/jwt`, auth)
+    if (result && result.status === 200 && result.data?.apikeys) {
+      return result.data.apikeys
+    }
+
+    return false
+  }
+
+  /*
+   * Remove API key
+   */
+  backend.removeApikey = async (id) => {
+    const result = await api.delete(`/apikeys/${id}/jwt`, auth)
+    if (result && result.status === 204) return true
 
     return false
   }

@@ -41,15 +41,17 @@ export function PatternConfig(pattern) {
   this.parts = {}
   /** @type {Object} which parts are hidden */
   this.partHide = {}
-  /** @type {Object} which parts hide all their dependencies */
-  this.partHideAll = {}
 
-  /** to track which parts have already been resolved */
-  __addNonEnumProp(this, '__resolvedParts', {})
   /** @type {Object} to track when to overwrite options */
   __addNonEnumProp(this, '__mutated', {
     optionDistance: {},
     partDistance: {},
+  })
+
+  /** @type {Object} tracking for dependency hiding */
+  __addNonEnumProp(this, '__hiding', {
+    all: {},
+    deps: {},
   })
 }
 
@@ -101,7 +103,7 @@ PatternConfig.prototype.logPartDistances = function () {
 
 /**
  * Return a configuration in the structure expected by the pattern
- * @return {Object} contains parts, plugins, measurements, options, optionalMeasurements, resolvedDependencies, directDependencies, inject, draftOrder, partHide, and partHideAll
+ * @return {Object} contains parts, plugins, measurements, options, optionalMeasurements, resolvedDependencies, directDependencies, inject, draftOrder, partHide
  */
 PatternConfig.prototype.asConfig = function () {
   return {
@@ -115,7 +117,6 @@ PatternConfig.prototype.asConfig = function () {
     inject: this.inject,
     draftOrder: this.__resolveDraftOrder(),
     partHide: this.partHide,
-    partHideAll: this.partHideAll,
   }
 }
 
@@ -147,9 +148,11 @@ PatternConfig.prototype.__addPart = function (depChain) {
       )
   }
 
-  // Hide when hideAll is set
+  // Handle various hiding possibilities
+  if (part.hide || part.hideAll) this.partHide[part.name] = true
+  if (part.hideDependencies) this.__hiding.deps[part.name] = true
   if (part.hideAll) {
-    this.partHide[part.name] = true
+    this.__hiding.all[part.name] = true
   }
 
   // resolve its dependencies
@@ -167,9 +170,6 @@ PatternConfig.prototype.__addPart = function (depChain) {
  * @return this
  */
 PatternConfig.prototype.__addPartConfig = function (part) {
-  // don't resolve a part that's already been resolved
-  if (this.__resolvedParts[part.name]) return this
-
   return this.__addPartOptions(part) // add options
     .__addPartMeasurements(part, false) // add required measurements
     .__addPartMeasurements(part, true) // add optional measurements
@@ -465,14 +465,13 @@ PatternConfig.prototype.__resolveDraftOrder = function () {
  * @return {Pattern} this - The Pattern instance
  */
 PatternConfig.prototype.__setFromHide = function (part, depName) {
-  if (
-    part.hideDependencies ||
-    part.hideAll ||
-    this.partHide[part.name] ||
-    this.partHideAll[part.name]
-  ) {
+  if (this.__hiding.deps[part.name]) {
     this.partHide[depName] = true
-    this.partHideAll[depName] = true
+    this.__hiding.deps[depName] = true
+  }
+  if (this.__hiding.all[part.name]) {
+    this.partHide[depName] = true
+    this.__hiding.all[depName] = true
   }
 
   return this
@@ -488,9 +487,9 @@ PatternConfig.prototype.__setFromHide = function (part, depName) {
  * @return {Pattern} this - The Pattern instance
  */
 PatternConfig.prototype.__setAfterHide = function (part, depName) {
-  if (this.partHide[part.name] || this.partHideAll[part.name]) {
+  if (this.__hiding.all[part.name]) {
     this.partHide[depName] = true
-    this.partHideAll[depName] = true
+    this.__hiding.all[depName] = true
   }
 
   return this

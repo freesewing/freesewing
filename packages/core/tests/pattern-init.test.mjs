@@ -238,9 +238,31 @@ describe('Pattern', () => {
       }
     })
 
-    it(
-      'Pattern.__init() should resolve nested dependencies for multiple parts that depend on the same part'
-    )
+    it('Pattern.__init() should resolve nested dependencies for multiple parts that depend on the same part', () => {
+      const partD = {
+        name: 'test.partD',
+        from: partB,
+        draft: ({ part }) => part,
+      }
+
+      const Pattern = new Design({
+        data: {
+          name: 'test',
+          version: '1.2.3',
+        },
+        parts: [partC, partD],
+      })
+      const pattern = new Pattern()
+      pattern.__init()
+      expect(pattern.config.resolvedDependencies['test.partD']).to.have.members([
+        'test.partA',
+        'test.partB',
+      ])
+      expect(pattern.config.resolvedDependencies['test.partC']).to.have.members([
+        'test.partA',
+        'test.partB',
+      ])
+    })
 
     // I am aware this does too much for one unit test, but this is to simplify TDD
     // we can split it up later
@@ -589,7 +611,7 @@ describe('Pattern', () => {
       expect(pattern.hooks.preRender.length).to.equal(2)
     })
 
-    it('Pattern.__init() should load conditional plugin', () => {
+    it('Pattern.__init() should load conditional plugin if condition is met', () => {
       const plugin = {
         name: 'example',
         version: 1,
@@ -611,7 +633,7 @@ describe('Pattern', () => {
       expect(pattern.hooks.preRender.length).to.equal(1)
     })
 
-    it('Pattern.__init() should not load conditional plugin', () => {
+    it('Pattern.__init() should not load conditional plugin if condition is not mett', () => {
       const plugin = {
         name: 'example',
         version: 1,
@@ -664,6 +686,38 @@ describe('Pattern', () => {
       const design = new Design({ parts: [part] })
       const pattern = new design()
       pattern.draft()
+      expect(pattern.hooks.preRender.length).to.equal(1)
+    })
+
+    it('Pattern.__init() should load a conditional plugin multiple times with different conditions', () => {
+      const plugin1 = {
+        name: 'example1',
+        version: 1,
+        hooks: {
+          preRender: function (svg) {
+            svg.attributes.add('freesewing:plugin-example', 1)
+          },
+        },
+      }
+
+      const condition1 = () => true
+      const condition2 = () => false
+      const part = {
+        name: 'test.part',
+        plugins: [{ plugin: plugin1, condition: condition1 }],
+        draft: (part) => part,
+      }
+      const part2 = {
+        name: 'test.part2',
+        plugins: [{ plugin: plugin1, condition: condition2 }],
+        draft: (part) => part,
+      }
+      const design = new Design({ parts: [part, part2] })
+      const pattern = new design()
+      pattern.__init()
+      expect(pattern.config.plugins).to.be.an('object').that.has.all.keys('example1', 'example1_')
+      expect(pattern.config.plugins.example1.plugin).to.deep.equal(plugin1)
+      expect(pattern.config.plugins.example1_.plugin).to.deep.equal(plugin1)
       expect(pattern.hooks.preRender.length).to.equal(1)
     })
 
@@ -758,6 +812,191 @@ describe('Pattern', () => {
       pattern.use(plugin)
       pattern.draft()
       expect(count).to.equal(2)
+    })
+
+    describe('Hiding parts', () => {
+      const blankDraft = ({ part }) => part
+      const afterPart = {
+        name: 'afterPart',
+        draft: blankDraft,
+      }
+      const fromPart = {
+        name: 'fromPart',
+        draft: blankDraft,
+      }
+      describe('{hide: true}', () => {
+        const mainPart = {
+          name: 'mainPart',
+          after: afterPart,
+          from: fromPart,
+          hide: true,
+          draft: blankDraft,
+        }
+
+        const Test = new Design({
+          name: 'test',
+          parts: [mainPart],
+        })
+
+        const pattern = new Test()
+        pattern.__init()
+
+        it('Should hide the part', () => {
+          expect(pattern.__isPartHidden('mainPart')).to.be.true
+        })
+
+        it("Should not hide the part's dependencies", () => {
+          expect(pattern.__isPartHidden('fromPart')).to.be.false
+          expect(pattern.__isPartHidden('afterPart')).to.be.false
+        })
+
+        describe('Nested Parts', () => {
+          const mainPart = {
+            name: 'mainPart',
+            after: afterPart,
+            from: fromPart,
+            draft: blankDraft,
+          }
+          const grandChild = {
+            name: 'grandChild',
+            from: mainPart,
+            hide: true,
+            draft: blankDraft,
+          }
+          const Test = new Design({
+            name: 'test',
+            parts: [grandChild],
+          })
+
+          const pattern = new Test()
+          pattern.__init()
+
+          it('should not hide nested `from` dependencies', () => {
+            expect(pattern.__isPartHidden('fromPart')).to.be.false
+            expect(pattern.__isPartHidden('mainPart')).to.be.false
+          })
+
+          it('should not hide nested `after` dependencies', () => {
+            expect(pattern.__isPartHidden('afterPart')).to.be.false
+          })
+        })
+      })
+
+      describe('{hideDependencies: true}', () => {
+        const mainPart = {
+          name: 'mainPart',
+          hideDependencies: true,
+          after: afterPart,
+          from: fromPart,
+          draft: blankDraft,
+        }
+        const Test = new Design({
+          name: 'test',
+          parts: [mainPart],
+        })
+
+        const pattern = new Test()
+        pattern.__init()
+
+        it('Should not hide the part', () => {
+          expect(pattern.__isPartHidden('mainPart')).to.be.false
+        })
+        it("Should hide the part's `from` dependencies", () => {
+          expect(pattern.__isPartHidden('fromPart')).to.be.true
+        })
+        it("Should not hide the part's `after` dependencies", () => {
+          expect(pattern.__isPartHidden('afterPart')).to.be.false
+        })
+
+        describe('Nested Parts', () => {
+          const mainPart = {
+            name: 'mainPart',
+            after: afterPart,
+            from: fromPart,
+            draft: blankDraft,
+          }
+          const grandChild = {
+            name: 'grandChild',
+            from: mainPart,
+            hideDependencies: true,
+            draft: blankDraft,
+          }
+          const Test = new Design({
+            name: 'test',
+            parts: [grandChild],
+          })
+
+          const pattern = new Test()
+          pattern.__init()
+
+          it('should hide nested `from` dependencies', () => {
+            expect(pattern.__isPartHidden('fromPart')).to.be.true
+            expect(pattern.__isPartHidden('mainPart')).to.be.true
+          })
+
+          it('should not hide nested `after` dependencies', () => {
+            expect(pattern.__isPartHidden('afterPart')).to.be.false
+          })
+        })
+      })
+
+      describe('{hideAll: true}', () => {
+        const mainPart = {
+          name: 'mainPart',
+          hideAll: true,
+          after: afterPart,
+          from: fromPart,
+          draft: blankDraft,
+        }
+        const Test = new Design({
+          name: 'test',
+          parts: [mainPart],
+        })
+
+        const pattern = new Test()
+        pattern.__init()
+
+        it('Should hide the part', () => {
+          expect(pattern.__isPartHidden('mainPart')).to.be.true
+        })
+        it("Should hide the part's `from` dependencies", () => {
+          expect(pattern.__isPartHidden('fromPart')).to.be.true
+        })
+        it("Should hide the part's `after` dependencies", () => {
+          expect(pattern.__isPartHidden('afterPart')).to.be.true
+        })
+
+        describe('Nested Parts', () => {
+          const mainPart = {
+            name: 'mainPart',
+            after: afterPart,
+            from: fromPart,
+            draft: blankDraft,
+          }
+          const grandChild = {
+            name: 'grandChild',
+            from: mainPart,
+            hideAll: true,
+            draft: blankDraft,
+          }
+          const Test = new Design({
+            name: 'test',
+            parts: [grandChild],
+          })
+
+          const pattern = new Test()
+          pattern.__init()
+
+          it('should hide nested `from` dependencies', () => {
+            expect(pattern.__isPartHidden('fromPart')).to.be.true
+            expect(pattern.__isPartHidden('mainPart')).to.be.true
+          })
+
+          it('should hide nested `after` dependencies', () => {
+            expect(pattern.__isPartHidden('afterPart')).to.be.true
+          })
+        })
+      })
     })
 
     it('Should check whether created parts get the pattern context', () => {

@@ -162,7 +162,8 @@ export const front = {
   name: 'simon.front',
   from: brianFront,
   after: back,
-  hideAll: true,
+  hide: true,
+  hideDependencies: true,
   options: {
     backDarts,
     backDartShaping,
