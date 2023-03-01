@@ -9,4 +9,29 @@ export const freeSewingConfig = {
   },
   monorepo: 'https://github.com/freesewing/freesewing',
   maxWidth: 2800,
+  account: {
+    fields: {
+      info: {
+        bio: 1,
+        email: 3,
+        github: 3,
+        img: 2,
+        units: 2,
+        language: 2,
+        username: 2,
+      },
+      settings: {
+        compare: 3,
+        consent: 2,
+        control: 1,
+        mfa: 4,
+        newsletter: 2,
+        password: 2,
+      },
+      developer: {
+        apikeys: 4,
+      },
+    },
+  },
+  languages: ['en', 'es', 'de', 'fr', 'nl'],
 }

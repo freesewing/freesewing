@@ -102,6 +102,21 @@ ApikeyModel.prototype.unguardedDelete = async function () {
   return this.setExists()
 }
 
+ApikeyModel.prototype.userApikeys = async function (uid) {
+  if (!uid) return false
+  let keys
+  try {
+    keys = await this.prisma.apikey.findMany({ where: { userId: uid } })
+  } catch (err) {
+    log.warn(`Failed to search apikeys for user ${uid}: ${err}`)
+  }
+
+  return keys.map((key) => {
+    delete key.secret
+    return key
+  })
+}
+
 ApikeyModel.prototype.create = async function ({ body, user }) {
   if (Object.keys(body).length < 1) return this.setResponse(400, 'postBodyMissing')
   if (!body.name) return this.setResponse(400, 'nameMissing')

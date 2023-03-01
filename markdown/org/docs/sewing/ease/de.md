@@ -6,13 +6,13 @@ title: Zugabe
 
 ![Negative Zugabe macht deine Strumpfhose passend](ease-min.jpg)
 
-Ease is the amount of fabric that is added to a garment in addition to what is strictly required to make the garment fit.
+Zugabe ist die Menge an Stoff, die zu einem Kleidungsstück hinzugefügt wird, zusätzlich zu dem, was unbedingt erforderlich ist, um das Kleidungsstück passend zu machen.
 
-Without ease, a garment would fit you so precisely that you might not be able to get in to it, or would have problems moving in it.
+Ohne Zugabe würde dir ein Kleidungsstück so exakt passen, dass du nicht hineinkommen würdest oder Probleme hättest, dich darin zu bewegen.
 
 Zugabe, die hinzugefügt wird, damit du dich in einem Kleidungsstück bewegen kannst, wird Bewegungs- oder Bequemlichkeitszugabe genannt. Es kann auch weitere Zugabe hinzugefügt werden, die über das hinausgeht, was zur Funktionalität des Kleidungsstücks gebraucht wird. Dies nennt man Design-Zugabe und wird verwendet, um eine bestimmte visuelle Wirkung zu erzielen.
 
-Zugabe kann auch umgekehrt arbeiten. When the fabric stretches, we can choose to use less fabric than what is needed to make the garment fit. Dies nennt man **negative Zugabe**.
+Zugabe kann auch umgekehrt arbeiten. Wenn der Stoff dehnbar ist, können wir weniger Stoff verwenden, um das Kleidungsstück passend zu machen. Dies nennt man **negative Zugabe**.
 
 Negative Zugabe wird bei dehnbaren Materialien verwendet, bei denen das Kleidungsstück eng anliegen muss. Zum Beispiel bei Badebekleidung, Strumpfhosen, Unterwäsche oder Sportbekleidung.
 

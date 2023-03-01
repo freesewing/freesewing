@@ -15,6 +15,14 @@ export function apikeysRoutes(tools) {
     Apikeys.create(req, res, tools)
   )
 
+  // List Apikeys
+  app.get('/apikeys/jwt', passport.authenticate(...jwt), (req, res) =>
+    Apikeys.list(req, res, tools)
+  )
+  app.get('/apikeys/key', passport.authenticate(...bsc), (req, res) =>
+    Apikeys.list(req, res, tools)
+  )
+
   // Read Apikey
   app.get('/apikeys/:id/jwt', passport.authenticate(...jwt), (req, res) =>
     Apikeys.read(req, res, tools)

@@ -293,6 +293,10 @@ const basePlugin = ({
 
       // get the distance between the smaller ticks on the rule
       const division = (isMetric ? 0.1 : 0.125) / rulerLength
+      // Set up intervals for whole and half units.
+      const wholeInterval = isMetric ? 10 : 8
+      const halfInterval = isMetric ? 5 : 4
+      let tickCounter = 1
       // we're going to go by fraction, so we want to do this up to 1
       for (var d = division; d < 1; d += division) {
         // make a start point
@@ -304,9 +308,10 @@ const basePlugin = ({
         // base tick size on whether this is a major interval or a minor one
         let tick = 1
         // if this tick indicates a whole unit, extra long
-        if (d.toFixed(3) % (1 / rulerLength) === 0) tick = 3
+        if (tickCounter % wholeInterval === 0) tick = 3
         // if this tick indicates half a unit, long
-        else if (d.toFixed(3) % (0.5 / rulerLength) === 0) tick = 2
+        else if (tickCounter % halfInterval === 0) tick = 2
+        tickCounter++
 
         // make a point for the end of the tick
         points[`${rulerName}-ruler-${d}-tick`] = points[`${rulerName}-ruler-${d}-end`].translate(
