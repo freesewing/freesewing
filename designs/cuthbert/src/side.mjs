@@ -13,7 +13,7 @@ import {
 
 function draftSide({
   complete,
-  log,
+  // log,
   macro,
   measurements,
   options,

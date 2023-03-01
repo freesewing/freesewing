@@ -15,7 +15,7 @@ import {
 
 function draftStrapLeft({
   complete,
-  log,
+  //log,
   macro,
   measurements,
   options,
