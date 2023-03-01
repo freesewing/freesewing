@@ -6,11 +6,14 @@ const redraftAndFlip = ({ part, macro }) => {
   return part
 }
 
-export const cutLayoutPlugin = function (material) {
+const opTypes = ['to', 'cp1', 'cp2']
+export const cutLayoutPlugin = function (material, grainAngle) {
   return {
     hooks: {
       postPartDraft: (pattern) => {
-        if (pattern.activePart.startsWith('cut.') || pattern.activePart === 'fabric') return
+        const part = pattern.parts[pattern.activeSet][pattern.activePart]
+        if (pattern.activePart.startsWith('cut.') || pattern.activePart === 'fabric' || part.hidden)
+          return
 
         const partCutlist = pattern.setStores[pattern.activeSet].get([
           'cutlist',
@@ -18,13 +21,21 @@ export const cutLayoutPlugin = function (material) {
         ])
 
         if (partCutlist?.materials ? !partCutlist.materials[material] : material !== 'fabric') {
-          pattern.parts[pattern.activeSet][pattern.activePart].hide()
+          part.hide()
           return
         }
 
+        const { macro } = part.shorthand()
         if (partCutlist?.cutOnFold) {
-          const { macro } = pattern.parts[pattern.activeSet][pattern.activePart].shorthand()
           macro('mirrorOnFold', { fold: partCutlist.cutOnFold })
+        }
+
+        if (
+          partCutlist?.grain !== undefined &&
+          partCutlist.grain !== grainAngle &&
+          partCutlist.grain + 180 != grainAngle
+        ) {
+          macro('rotateToGrain', { partGrain: partCutlist.grain, grainAngle })
         }
 
         const matCutConfig = partCutlist?.materials?.[material]
@@ -81,6 +92,35 @@ export const cutLayoutPlugin = function (material) {
             snippet: def,
             on: snippetsByType[def],
           })
+        }
+      },
+      rotateToGrain: ({ partGrain, grainAngle }, { paths, snippets, Point, points }) => {
+        const pivot = points.grainlineFrom || points.cutonfoldFrom || new Point(0, 0)
+
+        const toRotate = grainAngle - partGrain
+
+        for (const pathName in paths) {
+          const path = paths[pathName]
+          if (paths[pathName].hidden) continue
+
+          path.ops.forEach((op) => {
+            opTypes.forEach((t) => {
+              if (op[t]) op[t] = op[t].rotate(toRotate, pivot)
+            })
+          })
+        }
+
+        for (const snippetName in snippets) {
+          snippets[snippetName].anchor = snippets[snippetName].anchor.rotate(toRotate, pivot)
+        }
+
+        for (const pointName in points) {
+          const point = points[pointName]
+          const pointAttrs = point.attributes
+          if (Object.keys(pointAttrs.list).length) {
+            points[pointName] = point.rotate(toRotate, pivot)
+            points[pointName].attributes = pointAttrs.clone()
+          }
         }
       },
     },

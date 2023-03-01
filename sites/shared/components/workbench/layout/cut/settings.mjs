@@ -1,10 +1,29 @@
 import { useMemo, useEffect, useState, useCallback, useRef } from 'react'
-import { ClearIcon, PageIcon } from 'shared/components/icons.mjs'
+import { ClearIcon, IconWrapper } from 'shared/components/icons.mjs'
 import { useTranslation } from 'next-i18next'
 import { formatFraction128, measurementAsMm, round, formatMm } from 'shared/utils.mjs'
 import get from 'lodash.get'
 
-const FabricSizer = ({ gist, updateGist, cutFabric, sheetWidth }) => {
+const SheetIcon = (props) => (
+  <IconWrapper {...props}>
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z"
+    />
+  </IconWrapper>
+)
+
+const GrainIcon = (props) => (
+  <IconWrapper {...props}>
+    <g>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M6 17l-5-5 5-5" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M8 12l8 0" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M18 7l5 5-5 5" />
+    </g>
+  </IconWrapper>
+)
+const FabricSizer = ({ gist, updateGist, activeFabric, sheetWidth }) => {
   const { t } = useTranslation(['workbench'])
 
   let val = formatMm(sheetWidth, gist.units, 'none')
@@ -18,28 +37,45 @@ const FabricSizer = ({ gist, updateGist, cutFabric, sheetWidth }) => {
     let useVal = measurementAsMm(evtVal, gist.units)
     // only set to the gist if it's valid
     if (!isNaN(useVal)) {
-      updateGist(['_state', 'layout', 'forCutting', 'fabric', cutFabric, 'sheetWidth'], useVal)
+      updateGist(['_state', 'layout', 'forCutting', 'fabric', activeFabric, 'sheetWidth'], useVal)
     }
   }
 
   return (
-    <div className="flex gap-4 px-0 font-bold items-center">
-      <div className="form-control mb-2 flex flex-row" key="wrap-fabricWidth">
-        <label className="input-group input-group-xs">
-          <span className="label-text font-bold">{`${t(cutFabric)} ${t('width')}`}</span>
-          <input
-            key="input-fabricWidth"
-            type="text"
-            className="input input-sm input-bordered grow text-base-content border-r-0"
-            value={val}
-            onChange={update}
-          />
-          <span className="bg-transparent border input-bordered">
-            {gist.units == 'metric' ? 'cm' : 'in'}
-          </span>
-        </label>
-      </div>
-    </div>
+    <label className="input-group">
+      <span className="label-text font-bold">{`${t(activeFabric)} ${t('width')}`}</span>
+      <input
+        key="input-fabricWidth"
+        type="text"
+        className="input input-bordered grow text-base-content border-r-0"
+        value={val}
+        onChange={update}
+      />
+      <span className="bg-transparent border input-bordered">
+        {gist.units == 'metric' ? 'cm' : 'in'}
+      </span>
+    </label>
+  )
+}
+export const GrainDirectionPicker = ({ grainDirection, activeFabric, updateGist }) => {
+  const { t } = useTranslation(['workbench'])
+
+  return (
+    <button
+      className={`
+        btn btn-primary flex flex-row gap-2 items-center
+        hover:text-primary-content ml-4
+      `}
+      onClick={() =>
+        updateGist(
+          ['_state', 'layout', 'forCutting', 'fabric', activeFabric, 'grainDirection'],
+          grainDirection === 0 ? 90 : 0
+        )
+      }
+    >
+      <GrainIcon className={`h-6 w-6 mr-2 ${grainDirection === 0 ? '' : 'rotate-90'}`} />
+      <span>{t(`grainDirection`)}</span>
+    </button>
   )
 }
 
@@ -66,23 +102,27 @@ export const CutLayoutSettings = ({
   patternProps,
   unsetGist,
   updateGist,
-  cutFabric,
+  activeFabric,
   sheetWidth,
+  grainDirection,
 }) => {
   const { t } = useTranslation(['workbench'])
 
   const fabricLength = useFabricLength(gist.units === 'imperial', patternProps.height)
 
   return (
-    <div className="flex flex-row justify-between mb-2 items-baseline">
-      <FabricSizer {...{ gist, updateGist, cutFabric, sheetWidth }} />
+    <div className="flex flex-row justify-between mb-2 items-center">
+      <div className="flex">
+        <FabricSizer {...{ gist, updateGist, activeFabric, sheetWidth }} />
+        <GrainDirectionPicker {...{ updateGist, activeFabric, grainDirection }} />
+      </div>
       <div>
-        <PageIcon className="h-6 w-6 mr-2 inline align-middle" />
+        <SheetIcon className="h-6 w-6 mr-2 inline align-middle" />
         <span className="text-xl font-bold align-middle">{fabricLength}</span>
       </div>
       <button
         key="reset"
-        onClick={() => unsetGist(['layouts', 'cuttingLayout', cutFabric])}
+        onClick={() => unsetGist(['layouts', 'cuttingLayout', activeFabric])}
         className="btn btn-primary btn-outline"
       >
         <ClearIcon className="h-6 w-6 mr-2" />

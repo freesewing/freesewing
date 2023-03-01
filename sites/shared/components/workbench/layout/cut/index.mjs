@@ -10,96 +10,121 @@ import { useState, useEffect, useCallback, useRef } from 'react'
 import { Tabs } from 'shared/components/mdx/tabs.mjs'
 import get from 'lodash.get'
 
+const activeFabricPath = ['_state', 'layout', 'forCutting', 'activeFabric']
+const useFabricSettings = (gist) => {
+  const isImperial = gist.units === 'imperial'
+  const sheetHeight = measurementAsMm(isImperial ? 36 : 100, gist.units)
+  const activeFabric = get(gist, activeFabricPath) || 'fabric'
+  const gistSettings = get(gist, ['_state', 'layout', 'forCutting', 'fabric', activeFabric])
+  const sheetWidth = gistSettings?.sheetWidth || measurementAsMm(isImperial ? 54 : 120, gist.units)
+  const grainDirection =
+    gistSettings?.grainDirection === undefined ? 90 : gistSettings.grainDirection
+
+  return { activeFabric, sheetWidth, grainDirection, sheetHeight }
+}
+
+const useFabricDraft = (gist, design, fabricSettings) => {
+  // get the appropriate layout for the view
+  const layout =
+    get(gist, ['layouts', gist._state.view, fabricSettings.activeFabric]) || gist.layout || true
+  // hand it separately to the design
+  const draft = new design({ ...gist, layout })
+
+  const layoutSettings = {
+    sheetWidth: fabricSettings.sheetWidth,
+    sheetHeight: fabricSettings.sheetHeight,
+  }
+
+  let patternProps
+  try {
+    // add the fabric plugin to the draft
+    draft.use(fabricPlugin(layoutSettings))
+    // add the cutLayout plugin
+    draft.use(cutLayoutPlugin(fabricSettings.activeFabric, fabricSettings.grainDirection))
+    // also, pluginCutlist and pluginFlip are needed
+    draft.use(pluginCutlist)
+    draft.use(pluginFlip)
+
+    // draft the pattern
+    draft.draft()
+    patternProps = draft.getRenderProps()
+  } catch (err) {
+    console.log(err, gist)
+  }
+
+  return { draft, patternProps }
+}
+
+const useFabricList = (draft) => {
+  const cutList = draft.setStores[0].get('cutlist')
+  const fabricList = ['fabric']
+  for (const partName in cutList) {
+    for (const matName in cutList[partName].materials) {
+      if (!fabricList.includes(matName)) fabricList.push(matName)
+    }
+  }
+
+  return fabricList
+}
+
+const bgProps = { fill: 'none' }
 export const CutLayout = (props) => {
   const { t } = useTranslation(['workbench'])
+  const { gist, design, updateGist } = props
 
   // disable xray
   useEffect(() => {
-    if (props.gist?._state?.xray?.enabled) props.updateGist(['_state', 'xray', 'enabled'], false)
+    if (gist?._state?.xray?.enabled) updateGist(['_state', 'xray', 'enabled'], false)
   })
 
-  const isImperial = props.gist.units === 'imperial'
+  const fabricSettings = useFabricSettings(gist)
+  const { draft, patternProps } = useFabricDraft(gist, design, fabricSettings)
+  const fabricList = useFabricList(draft)
 
-  const [patternProps, setPatternProps] = useState(undefined)
-  const [cutFabrics, setCutFabrics] = useState(['fabric'])
-  const [draft, setDraft] = useState()
-  const [cutFabric, setCutFabric] = useState('fabric')
+  const setCutFabric = (newFabric) => {
+    updateGist(activeFabricPath, newFabric)
+  }
 
-  const gistSettings = get(props.gist, ['_state', 'layout', 'forCutting', 'fabric', cutFabric])
-  const sheetWidth =
-    gistSettings?.sheetWidth || measurementAsMm(isImperial ? 54 : 120, props.gist.units)
-  const gist = props.gist
-  const sheetHeight = measurementAsMm(isImperial ? 36 : 100, props.gist.units)
-
-  useEffect(() => {
-    try {
-      // get the appropriate layout for the view
-      const layout = gist.layouts?.[gist._state.view]?.[cutFabric] || gist.layout || true
-      // hand it separately to the design
-      const draft = new props.design({ ...gist, layout })
-
-      // add the pages plugin to the draft
-      const layoutSettings = {
-        sheetWidth,
-        sheetHeight,
-      }
-      draft.use(fabricPlugin(layoutSettings))
-      draft.use(cutLayoutPlugin(cutFabric))
-      draft.use(pluginCutlist)
-      draft.use(pluginFlip)
-      // draft the pattern
-      draft.draft()
-      setPatternProps(draft.getRenderProps())
-
-      const cutList = draft.setStores[0].get('cutlist')
-      const cf = ['fabric']
-      for (const partName in cutList) {
-        for (const matName in cutList[partName].materials) {
-          if (!cf.includes(matName)) cf.push(matName)
-        }
-      }
-      setCutFabrics(cf)
-    } catch (err) {
-      console.log(err, props.gist)
-    }
-  }, [cutFabric, isImperial, gist])
-
-  const bgProps = { fill: 'url(#page)' }
-
-  let name = props.design.designConfig.data.name
+  let name = design.designConfig.data.name
   name = name.replace('@freesewing/', '')
+
+  const settingsProps = {
+    gist,
+    updateGist,
+    patternProps,
+    unsetGist: props.unsetGist,
+    ...fabricSettings,
+  }
 
   return patternProps ? (
     <div>
       <h2 className="capitalize">{t('layoutThing', { thing: name }) + ': ' + t('forCutting')}</h2>
-      <CutLayoutSettings
-        {...{ ...props, patternProps, cutFabric, sheetWidth }}
-        patternProps={patternProps}
-        cutFabric={cutFabric}
-      />
+      <CutLayoutSettings {...settingsProps} />
       <div className="my-4">
-        <div className="tabs">
-          {cutFabrics.map((title) => (
-            <button
-              key={title}
-              className={`text-xl font-bold capitalize tab tab-bordered grow ${
-                cutFabric === title ? 'tab-active' : ''
-              }`}
-              onClick={() => setCutFabric(title)}
-            >
-              {title}
-            </button>
-          ))}
-        </div>
+        {fabricList.length > 1 ? (
+          <div className="tabs">
+            {fabricList.map((title) => (
+              <button
+                key={title}
+                className={`text-xl font-bold capitalize tab tab-bordered grow ${
+                  fabricSettings.activeFabric === title ? 'tab-active' : ''
+                }`}
+                onClick={() => setCutFabric(title)}
+              >
+                {title}
+              </button>
+            ))}
+          </div>
+        ) : null}
         <Draft
           draft={draft}
-          gist={props.gist}
-          updateGist={props.updateGist}
+          gist={gist}
+          updateGist={updateGist}
           patternProps={patternProps}
           bgProps={bgProps}
           gistReady={props.gistReady}
           layoutPart="fabric"
-          layoutType={['cuttingLayout', cutFabric]}
+          layoutType={['cuttingLayout', fabricSettings.activeFabric]}
         />
       </div>
     </div>
