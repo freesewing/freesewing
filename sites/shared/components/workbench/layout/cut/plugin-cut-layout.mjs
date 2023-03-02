@@ -7,6 +7,11 @@ const redraftAndFlip = ({ part, macro }) => {
 }
 
 const opTypes = ['to', 'cp1', 'cp2']
+const getRotationAngle = (grainAngle, partGrain) => {
+  let toRotate = Math.abs(grainAngle - partGrain)
+  if (toRotate >= 180) toRotate -= 180
+  return toRotate
+}
 export const cutLayoutPlugin = function (material, grainAngle) {
   return {
     hooks: {
@@ -15,38 +20,54 @@ export const cutLayoutPlugin = function (material, grainAngle) {
         if (pattern.activePart.startsWith('cut.') || pattern.activePart === 'fabric' || part.hidden)
           return
 
-        const partCutlist = pattern.setStores[pattern.activeSet].get([
-          'cutlist',
-          pattern.activePart,
-        ])
+        let partCutlist = pattern.setStores[pattern.activeSet].get(['cutlist', pattern.activePart])
 
         if (partCutlist?.materials ? !partCutlist.materials[material] : material !== 'fabric') {
           part.hide()
           return
         }
 
-        const { macro } = part.shorthand()
-        if (partCutlist?.cutOnFold) {
-          macro('mirrorOnFold', { fold: partCutlist.cutOnFold })
-        }
-
-        if (
-          partCutlist?.grain !== undefined &&
-          partCutlist.grain !== grainAngle &&
-          partCutlist.grain + 180 != grainAngle
-        ) {
-          macro('rotateToGrain', { partGrain: partCutlist.grain, grainAngle })
+        if (typeof partCutlist.cut === 'function') {
+          partCutlist = { ...partCutlist, ...partCutlist }
         }
 
         const matCutConfig = partCutlist?.materials?.[material]
+
+        const { macro } = part.shorthand()
+        const foldSpec =
+          matCutConfig?.cutOnFold === undefined ? partCutlist?.cutOnFold : matCutConfig.cutOnFold
+        if (foldSpec) {
+          macro('mirrorOnFold', { fold: foldSpec })
+        }
+
+        let baseRotation = 0
+        const grainSpec = matCutConfig?.grain || partCutlist?.grain
+        if (grainSpec !== undefined) {
+          let partGrain = grainSpec
+          if (typeof grainSpec === 'function') {
+            partGrain = grainSpec(0)
+            baseRotation = getRotationAngle(grainAngle, partGrain)
+          }
+          macro('rotateToGrain', { grainAngle, partGrain })
+        }
         if (!matCutConfig) return
 
-        for (var i = 1; i < matCutConfig.cut; i++) {
+        for (let i = 1; i < matCutConfig.cut; i++) {
           const dupPartName = `cut.${pattern.activePart}.${material}_${i + 1}`
+
           pattern.addPart({
             name: dupPartName,
             from: pattern.config.parts[pattern.activePart],
-            draft: matCutConfig.identical || i % 2 === 0 ? redraft : redraftAndFlip,
+            draft: ({ part, macro }) => {
+              if (typeof grainSpec === 'function') {
+                let partGrain = grainSpec(i) - baseRotation
+                macro('rotateToGrain', { partGrain, grainAngle })
+              }
+
+              if (!matCutConfig.identical && i % 2 === 1) macro('flip')
+
+              return part
+            },
           })
         }
       },
@@ -95,9 +116,12 @@ export const cutLayoutPlugin = function (material, grainAngle) {
         }
       },
       rotateToGrain: ({ partGrain, grainAngle }, { paths, snippets, Point, points }) => {
-        const pivot = points.grainlineFrom || points.cutonfoldFrom || new Point(0, 0)
+        if (partGrain === undefined) return
 
-        const toRotate = grainAngle - partGrain
+        const toRotate = getRotationAngle(grainAngle, partGrain)
+        if (toRotate === 0) return
+
+        const pivot = new Point(0, 0)
 
         for (const pathName in paths) {
           const path = paths[pathName]

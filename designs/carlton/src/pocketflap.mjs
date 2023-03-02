@@ -12,6 +12,7 @@ function draftCarltonPocketFlap({
   paths,
   Path,
   part,
+  addCut,
 }) {
   points.topLeft = new Point(0, 0)
   points.bottomRight = new Point(store.get('pocketWidth'), store.get('pocketFlapHeight'))
@@ -44,6 +45,9 @@ function draftCarltonPocketFlap({
   }
 
   paths.seam = paths.seam.line(points.topRight).line(points.topLeft).close().attr('class', 'fabric')
+
+  addCut(4, 'fabric')
+  addCut(2, 'lmhCanvas')
 
   if (complete) {
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)

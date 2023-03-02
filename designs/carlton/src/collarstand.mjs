@@ -48,6 +48,7 @@ function draftCarltonCollarStand({
 
   addCut(2)
   addCut(1, 'lmhCanvas')
+
   if (complete) {
     points.title = points.bottomLeftCp.clone()
     macro('title', {

@@ -14,6 +14,7 @@ function draftCarltonUnderSleeve({
   paths,
   Path,
   part,
+  addCut,
 }) {
   // Add cuff
   let length = measurements.shoulderToWrist * options.cuffLength
@@ -49,6 +50,8 @@ function draftCarltonUnderSleeve({
     .close()
     .attr('class', 'fabric')
 
+  addCut()
+  addCut(2, 'lining')
   if (complete) {
     macro('grainline', {
       from: points.boxBottom,

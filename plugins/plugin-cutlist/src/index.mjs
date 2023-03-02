@@ -44,21 +44,25 @@ function removeCut(store, partName, material = false) {
 }
 
 /** Method to add the grain info */
-function setGrain(store, partName, grain = false) {
-  const path = ['cutlist', partName, 'grain']
+function setGrain(store, partName, grain = false, material = false) {
+  const path = material
+    ? ['cutlist', partName, 'materials', material, 'grain']
+    : ['cutlist', partName, 'grain']
   if (grain === false) return store.unset(path)
-  if (typeof grain !== 'number') {
-    store.log.error('Called part.setGrain() with a value that is not a number')
+  if (!['number', 'function'].includes(typeof grain)) {
+    store.log.error('Called part.setGrain() with a value that is not a number or function')
     return store
   }
   return store.set(path, grain)
 }
 
 /** Method to add the cutOnFold info */
-function setCutOnFold(store, partName, p1, p2) {
-  const path = ['cutlist', partName, 'cutOnFold']
+function setCutOnFold(store, partName, p1, p2, material = false) {
+  const path = material
+    ? ['cutlist', partName, 'materials', material, 'cutOnFold']
+    : ['cutlist', partName, 'cutOnFold']
   if (p1 === false && typeof p2 === 'undefined') {
-    return store.unset(path)
+    return material ? store.set(path, false) : store.unset(path)
   }
   if (p1 instanceof Point && p2 instanceof Point) {
     store.set(path, [p1, p2])

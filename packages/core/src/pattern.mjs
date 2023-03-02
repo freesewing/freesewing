@@ -163,6 +163,9 @@ Pattern.prototype.draftPartForSet = function (partName, set) {
     try {
       this.__runHooks('prePartDraft')
       const result = this.config.parts[partName].draft(this.parts[set][partName].shorthand())
+      if (!this.__wants(partName, set)) {
+        result.hide()
+      }
       this.__runHooks('postPartDraft')
       if (typeof result === 'undefined') {
         this.setStores[set].log.error(

@@ -49,6 +49,7 @@ function draftCarltonCuffFacing({
 
   addCut(2)
   addCut(2, 'lmhCanvas')
+
   if (complete) {
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
     macro('title', {

@@ -33,6 +33,7 @@ function draftCarltonChestPocketWelt({
 
   addCut(2)
   addCut(2, 'lmhCanvas')
+
   if (complete) {
     points.title = new Point(points.bottomRight.x / 4, points.bottomRight.y / 2)
     macro('title', {

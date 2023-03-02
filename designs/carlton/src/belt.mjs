@@ -50,6 +50,7 @@ function draftCarltonBelt({
     .close()
     .attr('class', 'fabric')
 
+  addCut(4)
   if (complete) {
     snippets.button = new Snippet('button', points.button).attr('data-scale', 2)
     points.title = new Point(points.bottomRight.x / 2, points.bottomRight.y / 2)
@@ -65,7 +66,6 @@ function draftCarltonBelt({
       points.bottomRight.shiftFractionTowards(points.topRight, 0.5)
     )
 
-    addCut(4)
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
     if (paperless) {

@@ -16,6 +16,10 @@ function draftCarltonCollar({
   paths,
   Path,
   part,
+  addCut,
+  setGrain,
+  setCutOnFold,
+  store,
 }) {
   // We're going to slash and spread this collar. Slashing first:
   // Divide top in 5 parts
@@ -193,6 +197,13 @@ function draftCarltonCollar({
       grainline: true,
     })
 
+    addCut()
+    const defaultGrain = store.get(['cutlist', 'carlton.collar', 'grain'])
+    setGrain((i) => (i % 2 === 0 ? defaultGrain : defaultGrain + 45))
+
+    addCut(2, 'lining')
+    setCutOnFold(false, undefined, 'lining')
+    setGrain(defaultGrain + 45, 'lining')
     if (sa) {
       paths.sa = paths.saBase.offset(sa)
       paths.sa = paths.sa

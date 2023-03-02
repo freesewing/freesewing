@@ -15,6 +15,7 @@ function draftCarltonTopSleeve({
   Snippet,
   snippets,
   part,
+  addCut,
 }) {
   // Add cuff
   let length = measurements.shoulderToWrist * options.cuffLength
@@ -52,6 +53,9 @@ function draftCarltonTopSleeve({
     .curve(points.frontPitchPointCpBottom, points.tsLeftEdgeCpRight, points.tsLeftEdge)
     .close()
     .attr('class', 'fabric')
+
+  addCut()
+  addCut(2, 'lining')
 
   if (complete) {
     macro('grainline', {
