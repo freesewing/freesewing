@@ -68,7 +68,7 @@ export const front = {
     bibLength: { pct: 75, min: 0, max: 90, menu: 'style' },
     lengthBonus: { pct: 0, min: -20, max: 25, menu: 'style' },
   },
-  plugins: [pluginBundle, crossBox],
+  plugins: pluginBundle,
   draft: ({
     options,
     measurements,
@@ -191,11 +191,11 @@ export const front = {
       points.scaleboxAnchor = points.pocketLeftBottom.shiftFractionTowards(points.bottomRight, 0.5)
       macro('scalebox', { at: points.scaleboxAnchor })
 
-      macro('crossBox', {
+      macro('crossbox', {
         from: points.topRightHem,
         to: points.crossBoxTo1,
       })
-      macro('crossBox', {
+      macro('crossbox', {
         from: points.topRightBack,
         to: points.crossBoxTo2,
         text: 'attachment',

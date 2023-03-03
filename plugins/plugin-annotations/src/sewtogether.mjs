@@ -12,7 +12,7 @@ const markers = `
 </marker>
 `
 
-export const plugin = {
+export const sewtogether = {
   name,
   version,
   hooks: {

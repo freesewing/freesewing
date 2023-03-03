@@ -6,7 +6,7 @@ const markers = `
 </marker>
 `
 
-export const plugin = {
+export const pleat = {
   name,
   version,
   hooks: {

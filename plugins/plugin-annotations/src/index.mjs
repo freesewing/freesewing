@@ -4,6 +4,9 @@ import { crossbox } from './crossbox.mjs'
 import { cutonfold } from './cutonfold.mjs'
 import { grainline } from './grainline.mjs'
 import { logo } from './logo.mjs'
+import { scalebox } from './scalebox.mjs'
+import { miniscale } from './scalebox.mjs'
+// import { miniscale } from './miniscale.mjs'
 import { notches } from './notches.mjs'
 import { pleat } from './pleat.mjs'
 import { sewtogether } from './sewtogether.mjs'
@@ -21,6 +24,11 @@ export const pluginCutonfold = cutonfold
 
 export const pleatPlugin = pleat
 export const pluginPleat = pleat
+
+export const scaleboxPlugin = scalebox
+export const pluginScalebox = scalebox
+export const miniscalePlugin = miniscale
+export const pluginMiniscale = miniscale
 
 export const sewtogetherPlugin = sewtogether
 export const pluginSewtogether = sewtogether
