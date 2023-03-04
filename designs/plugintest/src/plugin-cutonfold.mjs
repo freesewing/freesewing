@@ -1,4 +1,4 @@
-import { cutonfoldPlugin } from '@freesewing/plugin-cutonfold'
+import { cutonfoldPlugin } from '@freesewing/plugin-annotations'
 import { base } from './base.mjs'
 
 const pluginCutonfold = ({ points, Point, paths, Path, options, macro, part }) => {

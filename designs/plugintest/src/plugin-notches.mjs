@@ -1,4 +1,4 @@
-import { notchesPlugin } from '@freesewing/plugin-notches'
+import { notchesPlugin } from '@freesewing/plugin-annotations'
 
 const addThese = ['notch', 'bnotch']
 

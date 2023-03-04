@@ -1,4 +1,4 @@
-import { bartackPlugin } from '@freesewing/plugin-bartack'
+import { bartackPlugin } from '@freesewing/plugin-annotations'
 import { base } from './base.mjs'
 
 const bartackOptions = (options) => ({

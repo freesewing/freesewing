@@ -1,4 +1,4 @@
-import { buttonsPlugin } from '@freesewing/plugin-buttons'
+import { buttonsPlugin } from '@freesewing/plugin-annotations'
 import { base } from './base.mjs'
 
 const addThese = [
