@@ -27,7 +27,7 @@ export const cutLayoutPlugin = function (material, grainAngle) {
           return
         }
 
-        if (typeof partCutlist.cut === 'function') {
+        if (typeof partCutlist?.cut === 'function') {
           partCutlist = { ...partCutlist, ...partCutlist }
         }
 

@@ -1,5 +1,6 @@
 import { underSleeve as bentUnderSleeve } from '@freesewing/bent'
 import { front as bentFront } from '@freesewing/bent'
+import { pluginCutlist } from '@freesewing/plugin-cutlist'
 
 function draftCarltonUnderSleeve({
   paperless,
@@ -152,5 +153,6 @@ export const underSleeve = {
     sleevecapHeight: { pct: 45, min: 40, max: 60, menu: 'advanced' },
     sleevecapEase: { pct: 1, min: 0, max: 10, menu: 'advanced' },
   },
+  plugins: [pluginCutlist],
   draft: draftCarltonUnderSleeve,
 }
