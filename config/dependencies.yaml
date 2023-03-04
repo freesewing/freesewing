@@ -155,7 +155,7 @@ rehype-jargon:
     'hast-util-from-html': '1.0.1'
 rehype-highlight-lines:
   _:
-    'unist-util-remove': '3.1.0'
+    'unist-util-remove': '3.1.1'
 sandy:
   peer:
     '@freesewing/snapseries': *freesewing
