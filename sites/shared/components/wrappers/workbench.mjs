@@ -17,18 +17,20 @@ import { ExportDraft } from 'shared/components/workbench/exporting/index.mjs'
 import { GistAsJson, GistAsYaml } from 'shared/components/workbench/gist.mjs'
 import { DraftLogs } from 'shared/components/workbench/logs.mjs'
 import { CutLayout } from 'shared/components/workbench/layout/cut/index.mjs'
-import { PrintingLayout } from 'shared/components/workbench/layout/print/index.mjs'
+import { PrintLayout } from 'shared/components/workbench/layout/print/index.mjs'
+import { EditYaml } from 'shared/components/workbench/edit/index.mjs'
 
 const views = {
   measurements: WorkbenchMeasurements,
   draft: LabDraft,
   test: LabSample,
-  printingLayout: PrintingLayout,
+  printingLayout: PrintLayout,
   cuttingLayout: CutLayout,
   export: ExportDraft,
   logs: DraftLogs,
   yaml: GistAsYaml,
   json: GistAsJson,
+  edit: EditYaml,
   welcome: () => <p>TODO</p>,
 }
 
@@ -63,7 +65,7 @@ export const WorkbenchWrapper = ({
   // State for gist
   const { gist, setGist, unsetGist, updateGist, gistReady, undoGist, resetGist } = useGist(
     design.designConfig?.data?.name,
-    app
+    app.locale
   )
   const [messages, setMessages] = useState([])
   const [popup, setPopup] = useState(false)
@@ -76,16 +78,16 @@ export const WorkbenchWrapper = ({
   // force view to measurements
   useEffect(() => {
     if (!gistReady) return
-    if (gist._state?.view !== 'measurements' && !hasRequiredMeasurements)
+    if (!['measurements', 'edit'].includes(gist._state?.view) && !hasRequiredMeasurements)
       updateGist(['_state', 'view'], 'measurements')
-  }, [gistReady, gist._state?.view, hasRequiredMeasurements])
+  }, [gistReady, gist._state?.view, hasRequiredMeasurements, updateGist])
 
   // If we need to preload the gist, do so
   useEffect(() => {
     if (preload && preload !== preloaded && from && preloaders[from]) {
       doPreload(preload, from, design, gist, setGist, setPreloaded)
     }
-  }, [preload, preloaded, from, design])
+  }, [preload, preloaded, from, design, gist, setGist])
 
   // Helper methods to manage the gist state
   const updateWBGist = useMemo(
@@ -95,7 +97,7 @@ export const WorkbenchWrapper = ({
         // Force close of menu on mobile if it is open
         if (closeNav && app.primaryMenu) app.setPrimaryMenu(false)
       },
-    [app]
+    [app, updateGist]
   )
 
   // Helper methods to handle messages

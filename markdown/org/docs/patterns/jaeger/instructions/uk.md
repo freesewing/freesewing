@@ -214,3 +214,45 @@ what you need.
 So make sure to align the notches. It's what they're there for.
 
 </Note>
+
+### Make the collar
+In order to look real crisp, the collar should be symetrical on both sides. About 5mm difference is already visible to a collar, so the more precise you do these steps, the better.
+
+### Add markings to both collars
+But both collars on top of each other, baste the corners together and cut the basting. Then use a marking pencil or some chalk to mark the edges of the collar. Measure 2 times to make sure the remaining collars and the location of the corners are 100% identical on both corners ![Mark the collar Edges](collarMarkings.svg)
+
+
+#### Add interfacing or canvas to the outside collar stand and under collar
+Either use a fusable interfacing, or, if you want to be hardcore use a horsehair canvas. Stich it to the outside collor stand using the same technique as when adding canvas to the lapel. ![Add canvas to the collor](collarWithCanvas.svg)
+
+#### Sew the outside collarstand to the under collar, and add to jacket
+Make sure the outside collarstand and under collar are alligend and sew together Sew the outside collarstand+undercollar to the neckline of the jacket Give small cuts in the fabric around the neckline to give it more ease Cut the seam allowance in the corners diagonally for a better fit
+
+![make small cuts in SA around collar](collarCuts.svg)
+
+
+### Sleeves
+Sew the uppersleeve to the undersleeve untill the split
+
+#### Create the split at the eng of the sleeve
+
+Sew the other side of the sleeves Turn the sleeves with the good side out Add the sleeves to the jacket
+
+
+### Inside pocket
+<note>
+The inside pocket is a double welt pocket. Which is the same as the front pockets but without a cover.
+Please see images at the front pockets for details
+</note>
+
+Locate the position of the pocket on the left inner lining with basting Add some fusible interfacting around the area Draw the pocket on the interfacing. Add the  welts to the upper and lower side of the pocket Sew the welts on the line on both sides of the pocket. Make use the welts end exactly on top of eachother. Cut the pocket entrance to about 1 or 2 cm from the end. Cut the last part diagonally so you get a fish bone fcut Turn the welts inside out, baste and press Turn the triangles inside out, baste and press Sew around the pocket to put everything in place Take the pocketbag, sew it to the lower welt and the other part to the upper welt (See: chest pocket)
+
+### Lining
+Sew the lining back seam untill the split Sew the figure seams in the front parts Add the whole lining together (front, side, back) Add the from lining to the front facing. LEave about 5cm open from the bottom Close the shoulders Add the inside collar stand to the uppercollar and add to the lining jacket Make small cuts in the neckline and the corners Add upper to lower sleeves Add sleeves to lining jacket
+
+### Close it up
+But the jacket + lining jackets on top of each other with the good sides. Sew around the collar and continue all the way to the front facing Turn the jacket right side out Fold the sleeves in place (make sure they are not turned!!) Add the sleeves lining to the sleeves split Make sure the collars are straight on top of each other (they allign) and add the seam allowences to each other by hand. Add in a few places front SA to lining SA by hand from the inside of the jacket Create the backsplit and manually add the lining to the main fabric Add buttonholes and buttons
+
+
+
+

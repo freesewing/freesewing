@@ -1,7 +1,7 @@
 import { OptionsIcon } from 'shared/components/icons.mjs'
 import { Chevron } from 'shared/components/navigation/primary.mjs'
-import OptionGroup from '../design-options/option-group.mjs'
-import Option from './option.mjs'
+import { OptionGroup } from '../design-options/option-group.mjs'
+import { Option } from './option.mjs'
 import { Ul, Details, TopSummary, TopSumTitle } from 'shared/components/workbench/menu/index.mjs'
 import { useTranslation } from 'next-i18next'
 import { optionsMenuStructure } from 'shared/utils.mjs'
@@ -28,8 +28,6 @@ export const TestDesignOptions = (props) => {
   const { t } = useTranslation(['app'])
   const optionsMenu = optionsMenuStructure(props.design.patternConfig.options)
 
-  // FIXME: This menu is broken right now
-
   const measies = props.draft?.config?.measurements || []
 
   return (
@@ -42,7 +40,7 @@ export const TestDesignOptions = (props) => {
         <Ul className="pl-5 list-inside">
           {Object.entries(optionsMenu).map(([group, options]) =>
             typeof options === 'string' ? (
-              <Option
+              <SampleDesignOption
                 {...props}
                 type={options}
                 option={group}

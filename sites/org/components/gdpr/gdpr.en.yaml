@@ -3,7 +3,7 @@ createLimitedAccount: Create account with limited consent
 createAccount: Create account
 compliant: "FreeSewing respects your privacy and your rights. We adhere to the toughest privacy and security law in the world: the General Data Protection Regulation (GDPR) of the European Union (EU)."
 consent: Consent
-consentForPeopleData: Consent for people data
+consentForSetData: Consent for measurement data
 consentForProfileData: Consent for profile data
 consentGiven: Consent given
 consentNotGiven: Consent not given
@@ -16,12 +16,12 @@ noConsentNoPatterns: Without this consent, you cannot create any made-to-measure
 noIDoNot: 'No, I do not'
 openDataInfo: This data is used to study and understand the human form in all its shapes, so we can get better sewing patterns, and better fitting garments. Even though this data is anonymized, you have the right to object to this.
 openDataQuestion: Share anonymized measurements as open data
-peopleQuestion: Do you give your consent to process your people data?
-peopleWarning: Revoking this consent will lock you out of all your people data, as well as disable functionality that depends on it.
-peopleWhatAnswer: For each person their <b>measurements</b>.
-peopleWhatAnswerOptional: 'Optional: A <b>picture</b> and the <b>name</b> that you give a person.'
-peopleWhatQuestion: What is people data?
-peopleWhyAnswer: 'To draft <b>made-to-measure sewing patterns</b>, we need <b>body measurements</b>.'
+setQuestion: Do you give your consent to process your measurements data?
+setWarning: Revoking this consent will lock you out of all your measurements data, as well as disable functionality that depends on it.
+setWhatAnswer: For each measurements set the <b>measurements</b>.
+setWhatAnswerOptional: 'Optional: A <b>picture</b> and the <b>name</b> or <b>notes</b> that you add to a measurements set.'
+setWhatQuestion: What is measurements data?
+setWhyAnswer: 'To draft <b>made-to-measure sewing patterns</b>, we need <b>body measurements</b>.'
 privacyMatters: Privacy matters
 privacyNotice: FreeSewing Privacy Notice
 processing: Processing

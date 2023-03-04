@@ -17,7 +17,7 @@ The **gore** pattern piece needs to be cut on the fold to create a whole piece.
 
 ### Optionale Stoffbinden
 
-Wenn du kein Band für deine Verbindungen verwenden möchtest, kannst du sie aus dem Stoff herstellen. Schneiden Sie einfach 4 Crosskornstreifen von einem 1" (2. cm) oder Breite Ihrer Wahl + Nahtzustände breit und nähen zwei Röhren, so dass eine der kurzen Seiten offen zum Drehen ist. Clicken Sie die Ecken und schneiden Sie Nähte. Stelle einen Druck aus. Der rohe Rand der Rohre kann dann beim Bau der Ohrklappen in der Ohrklappe versteckt werden. Der rohe Rand der Rohre kann dann beim Bau der Ohrklappen in der Ohrklappe versteckt werden.
+Wenn du kein Band für deine Verbindungen verwenden möchtest, kannst du sie aus dem Stoff herstellen. Schneiden Sie einfach 4 Crosskornstreifen von einem 1" (2. cm) oder Breite Ihrer Wahl + Nahtzustände breit und nähen zwei Röhren, so dass eine der kurzen Seiten offen zum Drehen ist. Clicken Sie die Ecken und schneiden Sie Nähte. Stelle einen Druck aus. If desired you can _Edgestitch_ or _Topstitch_ the tubes to stop the fabric from shifting. Der rohe Rand der Rohre kann dann beim Bau der Ohrklappen in der Ohrklappe versteckt werden.
 
 <Note>
 

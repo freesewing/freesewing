@@ -1,10 +1,10 @@
 - - -
-title: "Aaron, A-Shirt: Zuschnitt"
+title: "Aaron, das A-Shirt: Zuschnitt"
 - - -
 
 - Schneide **1 Rückenteil** im Stoffbruch
 - Schneide **1 Vorderteil** im Stoffbruch
-- Schneide **3 Streifen** für Halsöffnung und Armlochbindung
+- Schneide **3 Streifen** für Einfassband für Halsöffnung und Armloch
 
 <Warning>
 

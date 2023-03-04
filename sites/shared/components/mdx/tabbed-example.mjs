@@ -8,6 +8,7 @@ import { Svg } from '../workbench/draft/svg'
 import { Defs } from '../workbench/draft/defs'
 import { Stack } from '../workbench/draft/stack'
 import { useGist } from 'shared/hooks/useGist'
+import { useEffect } from 'react'
 import yaml from 'js-yaml'
 
 // Get code from children
@@ -24,12 +25,12 @@ export const asText = (reactEl) => {
 // The actual example
 const Example = ({ app, draft, settings, xray = false }) => {
   // State for gist
-  const { gist, unsetGist, updateGist } = useGist('example-mdx', app)
+  const { gist, unsetGist, updateGist } = useGist('example-mdx', app.locale)
 
-  if (xray) {
-    gist._state.xray = { enabled: true }
-    gist.margin = 20
-  }
+  useEffect(() => {
+    updateGist(['_state', 'xray', 'enabled'], xray)
+  }, [xray, updateGist])
+
   if (!draft.sample) return null
   const patternProps = settings.sample
     ? draft.sample().getRenderProps()
@@ -121,11 +122,11 @@ export const TabbedExample = ({
     return (
       <div className="my-8">
         <Tabs tabs="Code, Preview, X-Ray">
-          <Tab>{children}</Tab>
-          <Tab>
+          <Tab key="code">{children}</Tab>
+          <Tab key="preview">
             <Example {...{ draft, tutorial, paperless, settings, app }} />
           </Tab>
-          <Tab>
+          <Tab key="xray">
             <Example {...{ draft, tutorial, paperless, settings, app }} xray={true} />
           </Tab>
         </Tabs>
@@ -140,11 +141,11 @@ export const TabbedExample = ({
   return (
     <div className="my-8">
       <Tabs tabs="Preview, Code, X-Ray">
-        <Tab>
+        <Tab key="preview">
           <Example {...{ draft, tutorial, paperless, settings, app }} />
         </Tab>
-        <Tab>{children}</Tab>
-        <Tab>
+        <Tab key="code">{children}</Tab>
+        <Tab key="xray">
           <Example {...{ draft, tutorial, paperless, settings, app }} xray={true} />
         </Tab>
       </Tabs>

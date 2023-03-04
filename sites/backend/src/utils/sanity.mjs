@@ -15,7 +15,7 @@ function imageUrl(ref) {
  * Retrieval of avatar images from the Sanity API
  */
 export const getUserAvatar = async (id) => getAvatar('user', id)
-export const getPersonAvatar = async (id) => getAvatar('person', id)
+export const getSetAvatar = async (id) => getAvatar('set', id)
 async function getAvatar(type, id) {
   const url =
     `${config.api}/data/query/${config.dataset}?query=` +
@@ -32,7 +32,7 @@ async function getAvatar(type, id) {
  * Uploads an image to sanity
  */
 export const setUserAvatar = async (id, data) => setAvatar('user', id, data)
-export const setPersonAvatar = async (id, data) => setAvatar('person', id, data)
+export const setSetAvatar = async (id, data) => setAvatar('set', id, data)
 export const setPatternAvatar = async (id, data) => setAvatar('pattern', id, data)
 export async function setAvatar(type, id, data) {
   // Step 1: Upload the image as asset
@@ -47,7 +47,7 @@ export async function setAvatar(type, id, data) {
     if (!img.data?.document?._id) return false // Upload failed
 
     // Step 2, update the document
-    const doc = await axios.post(
+    await axios.post(
       `${config.api}/data/mutate/${config.dataset}`,
       {
         mutations: [

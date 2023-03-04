@@ -1,13 +1,13 @@
 import { Chevron } from 'shared/components/navigation/primary.mjs'
 import { ClearIcon, FilterIcon, SearchIcon } from 'shared/components/icons.mjs'
 import { Ul, Li, Details, Summary, SumDiv, Deg } from 'shared/components/workbench/menu/index.mjs'
-import Path from './path.mjs'
-import Point from './point.mjs'
+import { XrayPath } from './path.mjs'
+import { XrayPoint } from './point.mjs'
 import { useTranslation } from 'next-i18next'
 
 const types = {
-  paths: Path,
-  points: Point,
+  paths: XrayPath,
+  points: XrayPoint,
 }
 
 export const XrayList = (props) => {
@@ -131,7 +131,7 @@ export const XrayList = (props) => {
                               <Chevron />
                             </Summary>
                             {type === 'paths' && (
-                              <Path
+                              <XrayPath
                                 pathName={id}
                                 partName={props.partName}
                                 draft={props.draft}
@@ -140,7 +140,7 @@ export const XrayList = (props) => {
                               />
                             )}
                             {type === 'points' && (
-                              <Point
+                              <XrayPoint
                                 pointName={id}
                                 partName={props.partName}
                                 draft={props.draft}

@@ -15,7 +15,7 @@ const pluginTitle = ({ points, Point, paths, Path, macro, options, store, part }
       scale: options.titleScale,
     })
     // Prevent clipping of text
-    paths.box = new Path().move(new Point(0, -20)).line(new Point(120, 20)).attr('class', 'hidden')
+    paths.box = new Path().move(new Point(10, -45)).line(new Point(120, 35)).attr('class', 'hidden')
   }
 
   return part

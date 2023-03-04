@@ -151,7 +151,7 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
   await this.read({ ehash })
   if (this.exists) {
     /*
-     * User already exists. However, if we return an error, then people can
+     * User already exists. However, if we return an error, then baddies can
      * spam the signup endpoint to figure out who has a FreeSewing account
      * which would be a privacy leak. So instead, pretend there is no user
      * with that account, and that signup is proceeding as normal.
@@ -253,7 +253,6 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
     },
     userId: this.record.id,
   })
-  console.log(check)
 
   // Send signup email
   if (!this.isUnitTest(body) || this.config.tests.sendEmail)
@@ -432,10 +431,12 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
   const isUnitTest = this.isUnitTest(body)
   if (typeof body.email === 'string' && this.clear.email !== clean(body.email)) {
     // Email change (requires confirmation)
+    const check = randomString()
     this.confirmation = await this.Confirmation.create({
       type: 'emailchange',
       data: {
         language: this.record.language,
+        check,
         email: {
           current: this.clear.email,
           new: body.email,
@@ -451,13 +452,20 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
         to: body.email,
         cc: this.clear.email,
         replacements: {
-          actionUrl: i18nUrl(this.language, `/confirm/emailchange/${this.Confirmation.record.id}`),
-          whyUrl: i18nUrl(this.language, `/docs/faq/email/why-emailchange`),
-          supportUrl: i18nUrl(this.language, `/patrons/join`),
+          actionUrl: i18nUrl(
+            this.record.language,
+            `/confirm/emailchange/${this.Confirmation.record.id}/${check}`
+          ),
+          whyUrl: i18nUrl(this.record.language, `/docs/faq/email/why-emailchange`),
+          supportUrl: i18nUrl(this.record.language, `/patrons/join`),
         },
       })
     }
-  } else if (typeof body.confirmation === 'string' && body.confirm === 'emailchange') {
+  } else if (
+    typeof body.confirmation === 'string' &&
+    body.confirm === 'emailchange' &&
+    typeof body.check === 'string'
+  ) {
     // Handle email change confirmation
     await this.Confirmation.read({ id: body.confirmation })
 
@@ -472,7 +480,11 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
     }
 
     const data = this.Confirmation.clear.data
-    if (data.email.current === this.clear.email && typeof data.email.new === 'string') {
+    if (
+      data.check === body.check &&
+      data.email.current === this.clear.email &&
+      typeof data.email.new === 'string'
+    ) {
       await this.unguardedUpdate({
         email: this.encrypt(data.email.new),
         ehash: hash(clean(data.email.new)),
@@ -484,7 +496,8 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
     result: 'success',
     account: this.asAccount(),
   }
-  if (isUnitTest) returnData.confirmation = this.Confirmation.record.id
+  if (isUnitTest && this.Confirmation.record?.id)
+    returnData.confirmation = this.Confirmation.record.id
 
   return this.setResponse(200, false, returnData)
 }
@@ -506,7 +519,6 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
     // Check password
     const [valid] = verifyPassword(body.password, this.record.password)
     if (!valid) {
-      console.log('password check failed')
       log.warn(`Wrong password for existing user while disabling MFA: ${user.uid} from ${ip}`)
       return this.setResponse(401, 'authenticationFailed')
     }
@@ -519,9 +531,11 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
         log.warn(err, 'Could not disable MFA after token check')
         return this.setResponse(500, 'mfaDeactivationFailed')
       }
-      return this.setResponse(200, false, {})
+      return this.setResponse(200, false, {
+        result: 'success',
+        account: this.asAccount(),
+      })
     } else {
-      console.log('token check failed')
       return this.setResponse(401, 'authenticationFailed')
     }
   }
@@ -537,7 +551,10 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
         log.warn(err, 'Could not enable MFA after token check')
         return this.setResponse(500, 'mfaActivationFailed')
       }
-      return this.setResponse(200, false, {})
+      return this.setResponse(200, false, {
+        result: 'success',
+        account: this.asAccount(),
+      })
     } else return this.setResponse(403, 'mfaTokenInvalid')
   }
   // Enroll
@@ -689,11 +706,14 @@ UserModel.prototype.loginOk = function () {
  */
 UserModel.prototype.isLusernameAvailable = async function (lusername) {
   if (lusername.length < 2) return false
+  let user
   try {
-    await this.prisma.user.findUnique({ where: { lusername } })
+    user = await this.prisma.user.findUnique({ where: { lusername } })
   } catch (err) {
     log.warn({ err, lusername }, 'Could not search for free username')
+    return false
   }
+  if (user) return false
 
   return true
 }

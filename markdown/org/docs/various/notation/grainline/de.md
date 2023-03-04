@@ -2,7 +2,7 @@
 title: Fadenlauf und Indikator für Zuschnitt im Stoffbruch
 ---
 
-Fadenlauf -- eine Linie, die den _Verlauf der Fäden im Stoff_ anzeigt -- sieht folgendermaßen as:
+Fadenlauf -- eine Linie, die den _Verlauf der Fäden im Stoff_ anzeigt -- sieht folgendermaßen aus:
 
 <Legend part="grainline">
 

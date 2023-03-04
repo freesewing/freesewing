@@ -66,7 +66,7 @@ export const Buttons = ({ transform, flip, rotate, resetPart, rotate90 }) => {
       <Button
         onClickCb={resetPart}
         transform={`translate(${rectSize / -2}, ${rectSize / -2})`}
-        Icon={ClearIcon}
+        Icon={() => <ClearIcon wrapped={false} />}
       >
         {t('toolbar.resetPart')}
       </Button>

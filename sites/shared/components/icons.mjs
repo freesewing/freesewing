@@ -5,20 +5,24 @@ export const IconWrapper = ({
   stroke = 2,
   children = null,
   fill = false,
-}) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill={fill ? 'currentColor' : 'none'}
-    viewBox="0 0 24 24"
-    strokeWidth={stroke}
-    stroke="currentColor"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={className + ' icon'}
-  >
-    {children}
-  </svg>
-)
+  wrapped = true,
+}) =>
+  wrapped ? (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill={fill ? 'currentColor' : 'none'}
+      viewBox="0 0 24 24"
+      strokeWidth={stroke}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className + ' icon'}
+    >
+      {children}
+    </svg>
+  ) : (
+    <> {children} </>
+  )
 
 export const BioIcon = (props) => (
   <IconWrapper {...props}>
@@ -38,6 +42,12 @@ export const Camera = (props) => (
       <path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
       <path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
     </>
+  </IconWrapper>
+)
+
+export const ChatIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
   </IconWrapper>
 )
 
@@ -115,7 +125,12 @@ export const DocsIcon = (props) => (
 
 export const DownIcon = (props) => (
   <IconWrapper {...props}>
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={props.stroke || 2}
+      d="M19 9l-7 7-7-7"
+    />
   </IconWrapper>
 )
 
@@ -140,6 +155,12 @@ export const FacebookIcon = (props) => (
 export const FilterIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+  </IconWrapper>
+)
+
+export const FingerprintIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
   </IconWrapper>
 )
 
@@ -316,6 +337,12 @@ export const TutorialIcon = (props) => (
   </IconWrapper>
 )
 
+export const TrashIcon = (props) => (
+  <IconWrapper {...props} stroke={props.stroke || 2}>
+    <path d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+  </IconWrapper>
+)
+
 export const TwitterIcon = (props) => (
   <IconWrapper {...props} stroke={0} fill>
     <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z" />
@@ -337,6 +364,12 @@ export const UserIcon = (props) => (
 export const VersionIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+  </IconWrapper>
+)
+
+export const WarningIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
   </IconWrapper>
 )
 
