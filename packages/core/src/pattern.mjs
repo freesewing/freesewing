@@ -500,13 +500,13 @@ Pattern.prototype.__init = function () {
  * @return {bool} hidden - true if the part is hidden, or false if not
  */
 Pattern.prototype.__isPartHidden = function (partName) {
+  const partHidden = this.parts?.[this.activeSet]?.[partName]?.hidden || false
   if (Array.isArray(this.settings[this.activeSet || 0].only)) {
-    if (this.settings[this.activeSet || 0].only.includes(partName)) return false
+    if (this.settings[this.activeSet || 0].only.includes(partName)) return partHidden
   }
   if (this.config.partHide?.[partName]) return true
-  if (this.parts?.[this.activeSet]?.[partName]?.hidden) return true
 
-  return false
+  return partHidden
 }
 
 /**

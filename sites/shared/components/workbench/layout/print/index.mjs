@@ -35,7 +35,7 @@ export const PrintLayout = (props) => {
   } catch (err) {
     console.log(err, props.gist)
   }
-  const bgProps = { fill: 'url(#page)' }
+  const bgProps = { fill: 'none' }
 
   const exportIt = () => {
     setError(false)

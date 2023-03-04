@@ -158,7 +158,7 @@ rehype-jargon:
     'hast-util-from-html': '1.0.1'
 rehype-highlight-lines:
   _:
-    'unist-util-remove': '3.1.0'
+    'unist-util-remove': '3.1.1'
 sandy:
   peer:
     '@freesewing/snapseries': *freesewing
@@ -219,7 +219,7 @@ backend:
     'passport': '0.6.0'
     'passport-http': '0.3.0'
     'passport-jwt': '4.0.1'
-    'pino': '8.8.0'
+    'pino': '8.11.0'
     'qrcode': '1.5.1'
     'swagger-ui-dist': '4.15.5'
     'swagger-ui-express': '4.6.0'
@@ -241,7 +241,7 @@ dev:
     '@next/bundle-analyzer': &next '13.1.6'
     '@tailwindcss/typography': &tailwindTypography '0.5.9'
     'algoliasearch': '4.14.3'
-    'daisyui': &daisyui '2.47.0'
+    'daisyui': &daisyui '2.51.3'
     'lodash.get': *_get
     'lodash.orderby': &_orderby '4.6.0'
     'lodash.set': *_set
@@ -250,7 +250,7 @@ dev:
     'react-copy-to-clipboard': &reactCopyToClipboard '5.1.0'
     'react-dom': *react
     'react-hotkeys-hook': &reactHotkeysHook '4.3.2'
-    'react-instantsearch-dom': &reactInstantsearchDom '6.38.3'
+    'react-instantsearch-dom': &reactInstantsearchDom '6.39.0'
     'react-markdown': &reactMarkdown '8.0.5'
     'react-swipeable': &reactSwipeable '7.0.0'
     'react-timeago': &reactTimeago '7.1.0'
@@ -359,7 +359,7 @@ sanity:
   dev:
     '@sanity/eslint-config-studio': '2.0.1'
     'eslint': *eslint
-    'prettier': '2.8.3'
+    'prettier': '2.8.4'
     'typescript': '4.9.5'
     '@sanity/cli': '3.2.6'
 
