@@ -44,11 +44,19 @@ function draftCharlieFront({
     points.waistOut.x < points.seatOut.x
       ? new Path()
           .move(points.styleWaistOut)
-          .curve(points.seatOut, points.kneeOutCp1, points.floorOut)
+          .curve(points.seatOut, points.kneeOutCp1, points.kneeOut)
+          .line(points.floorOut)
       : new Path()
           .move(points.styleWaistOut)
           ._curve(points.seatOutCp1, points.seatOut)
-          .curve(points.seatOutCp2, points.kneeOutCp1, points.floorOut)
+          .curve(points.seatOutCp2, points.kneeOutCp1, points.kneeOut)
+          .line(points.floorOut)
+
+  // Helper object holding the inseam path
+  const frontInseamPath = new Path()
+    .move(points.floorIn)
+    .line(points.kneeIn)
+    .curve(points.kneeInCp2, points.forkCp1, points.fork)
 
   // Helper object holding the inseam path
   const frontInseamPath = new Path()

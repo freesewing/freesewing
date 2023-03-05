@@ -40,7 +40,8 @@ function draftCharlieBack({
       .curve(points.backDartLeftCp, points.cbCp, waistIn)
       .line(points.crossSeamCurveStart)
       .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
-      .curve(points.forkCp2, points.kneeInCp1, points.floorIn)
+      .curve(points.forkCp2, points.kneeInCp1, points.kneeIn)
+      .line(points.floorIn)
   }
 
   // Mark back pocket
@@ -75,9 +76,25 @@ function draftCharlieBack({
   points.styleWaistOut = points.styleWaistOut.shift(angle, delta / 2)
 
   // Helper object that holds the titan outseam path adapted for the dart
-  const titanOutseam = new Path()
-    .move(points.styleWaistOut)
-    .curve(points.seatOut, points.kneeOutCp2, points.floorOut)
+  const titanOutseam =
+    points.waistOut.x > points.seatOut.x
+      ? new Path()
+          .move(points.floorOut)
+          .line(points.kneeOut)
+          .curve(points.kneeOutCp2, points.seatOut, points.styleWaistOut)
+          .reverse()
+      : new Path()
+          .move(points.floorOut)
+          .line(points.kneeOut)
+          .curve(points.kneeOutCp2, points.seatOutCp1, points.seatOut)
+          .curve_(points.seatOutCp2, points.styleWaistOut)
+          .reverse()
+
+  // Helper object holding the inseam path
+  const backInseamPath = new Path()
+    .move(points.fork)
+    .curve(points.forkCp2, points.kneeInCp1, points.kneeIn)
+    .line(points.floorIn)
 
   // Helper object holding the inseam path
   const backInseamPath = new Path()
