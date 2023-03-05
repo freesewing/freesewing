@@ -31,7 +31,7 @@
     "lodash.clonedeep": "4.5.0",
     "lodash.orderby": "4.6.0",
     "lodash.unset": "4.5.2",
-    "mdast-util-toc": "6.1.0",
+    "mdast-util-toc": "6.1.1",
     "pdfkit": "0.13.0",
     "postcss-for": "2.1.1",
     "react": "18.2.0",
@@ -47,7 +47,7 @@
     "svg-to-pdfkit": "https://github.com/eriese/SVG-to-PDFKit",
     "tlds": "1.236.0",
     "to-vfile": "7.2.4",
-    "unist-util-visit": "4.1.1",
+    "unist-util-visit": "4.1.2",
     "web-worker": "1.2.0"
   },
   "devDependencies": {},
