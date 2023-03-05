@@ -4,8 +4,6 @@ export const pocket = {
   name: 'albert.pocket',
   after: front,
   draft: ({
-    options,
-    measurements,
     Point,
     Path,
     points,
@@ -19,7 +17,6 @@ export const pocket = {
     store,
     part,
   }) => {
-    let apronLength = store.get('apronLength')
     let pocketSize = store.get('pocketSize')
     let hemWidth = store.get('hemWidth')
 
