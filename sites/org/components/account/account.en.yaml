@@ -11,7 +11,7 @@ expires: Expires
 
 yourProfile: Your profile
 yourPatterns: Your patterns
-yourSets: Your measurement sets
+yourSets: Your measurements sets
 logout: Log out
 politeOhCrap: Oh fiddlesticks
 bio: Bio
@@ -76,15 +76,15 @@ Also: Introvert 🙊
 (he/him) or (they/them)"
 
 # compare
-compareTitle: Are you comfortable with measurement sets being compared?
+compareTitle: Are you comfortable with measurements sets being compared?
 compareYes: Yes, in case it may help me
 compareYesd: |
-  We will occasionally show how your set of measurements compares to other measurement sets.
+  We will occasionally show how your set of measurements compares to other measurements sets.
   This allows us to detect potential problems in your measurements or patterns.
 compareNo: No, never compare
 compareNod: |
-  We will never compare your set of measurements to other measurement sets.
-  This will limit our ability to warn you about potential problems in your measurement sets or patterns.
+  We will never compare your set of measurements to other measurements sets.
+  This will limit our ability to warn you about potential problems in your measurements sets or patterns.
 
 # control
 control1t: Keep it as simple as possible
@@ -146,12 +146,12 @@ keyExpires: Key expiration
 keyExpiresDesc: "The key will expire on:"
 keyLevel: Key permission level
 keyLevel0: Authenticate only
-keyLevel1: Read access to your own patterns and measurement sets
+keyLevel1: Read access to your own patterns and measurements sets
 keyLevel2: Read access to all your account data
-keyLevel3: Write access to your own patterns and measurement sets
+keyLevel3: Write access to your own patterns and measurements sets
 keyLevel4: Write access to all your account data
-keyLevel5: Read access to patterns and measurement sets of other users
-keyLevel6: Write access to patterns and measurement sets of other users
+keyLevel5: Read access to patterns and measurements sets of other users
+keyLevel6: Write access to patterns and measurements sets of other users
 keyLevel7: Write access to all account data of other users
 keyLevel8: Impersonate other users, full write access to all data
 cancel: Cancel
