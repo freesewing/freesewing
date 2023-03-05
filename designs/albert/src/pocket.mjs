@@ -16,13 +16,12 @@ export const pocket = {
     sa,
     paperless,
     macro,
+    store,
     part,
   }) => {
-    let apronLength =
-      measurements.hpsToWaistBack * options.bibLength +
-      measurements.waistToKnee * (1 + options.lengthBonus)
-    let pocketSize = apronLength / 4
-    let hemWidth = (measurements.hpsToWaistBack * options.strapWidth) / 8
+    let apronLength = store.get('apronLength')
+    let pocketSize = store.get('pocketSize')
+    let hemWidth = store.get('hemWidth')
 
     points.topLeft = new Point(0, 0)
     points.topRight = new Point(pocketSize, 0)
