@@ -31,9 +31,8 @@ function draftCharlieFront({
   // Helper method to draw the outline path
   const drawPath = () => {
     let outseam = drawOutseam()
-    return new Path()
-      .move(points.floorIn)
-      .curve(points.kneeInCp2, points.forkCp1, points.fork)
+    return frontInseamPath
+      .clone()
       .curve(points.crotchSeamCurveCp1, points.crotchSeamCurveCp2, points.crotchSeamCurveStart)
       .line(points.styleWaistIn)
       .line(points.slantTop)
@@ -50,6 +49,11 @@ function draftCharlieFront({
           .move(points.styleWaistOut)
           ._curve(points.seatOutCp1, points.seatOut)
           .curve(points.seatOutCp2, points.kneeOutCp1, points.floorOut)
+
+  // Helper object holding the inseam path
+  const frontInseamPath = new Path()
+    .move(points.floorIn)
+    .curve(points.kneeInCp2, points.forkCp1, points.fork)
 
   // Draw fly J-seam
   const flyBottom = utils.curveIntersectsY(
@@ -167,6 +171,10 @@ function draftCharlieFront({
   store.set('waistbandFront', points.styleWaistIn.dist(points.slantTop))
   store.set('waistbandFly', points.styleWaistIn.dist(points.flyTop))
   store.set('legWidthFront', points.floorIn.dist(points.floorOut))
+
+  // Store inseam and outseam lengths
+  store.set('frontInseamLength', frontInseamPath.length())
+  store.set('frontOutseamLength', drawOutseam().length())
 
   if (complete) {
     points.titleAnchor = new Point(points.knee.x, points.fork.y)
