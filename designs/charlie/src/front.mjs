@@ -58,11 +58,6 @@ function draftCharlieFront({
     .line(points.kneeIn)
     .curve(points.kneeInCp2, points.forkCp1, points.fork)
 
-  // Helper object holding the inseam path
-  const frontInseamPath = new Path()
-    .move(points.floorIn)
-    .curve(points.kneeInCp2, points.forkCp1, points.fork)
-
   // Draw fly J-seam
   const flyBottom = utils.curveIntersectsY(
     points.crotchSeamCurveStart,

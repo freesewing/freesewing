@@ -96,11 +96,6 @@ function draftCharlieBack({
     .curve(points.forkCp2, points.kneeInCp1, points.kneeIn)
     .line(points.floorIn)
 
-  // Helper object holding the inseam path
-  const backInseamPath = new Path()
-    .move(points.fork)
-    .curve(points.forkCp2, points.kneeInCp1, points.floorIn)
-
   // Keep the seat control point vertically between the (lowered) waist and seat line
   points.seatOutCp2.y = points.styleWaistOut.y + points.styleWaistOut.dy(points.seatOut) / 2
 
