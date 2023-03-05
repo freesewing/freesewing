@@ -154,7 +154,7 @@ plugintest:
     '@freesewing/plugin-validate': *freesewing
 rehype-jargon:
   _:
-    'unist-util-visit': &unist-util-visit '4.1.1'
+    'unist-util-visit': &unist-util-visit '4.1.2'
     'hast-util-from-html': '1.0.1'
 rehype-highlight-lines:
   _:
