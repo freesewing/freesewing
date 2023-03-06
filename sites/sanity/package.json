@@ -25,7 +25,7 @@
     "react-dom": "18.2.0",
     "react-is": "18.2.0",
     "sanity": "3.5.0",
-    "styled-components": "5.3.6",
+    "styled-components": "5.3.8",
     "sanity-plugin-markdown": "3.0.1"
   },
   "devDependencies": {
