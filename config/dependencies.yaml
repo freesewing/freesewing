@@ -234,7 +234,7 @@ backend:
 
 dev:
   _:
-    '@mdx-js/loader': &mdx '2.2.1'
+    '@mdx-js/loader': &mdx '2.3.0'
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': &mdxRuntime '2.0.0-next.9'
