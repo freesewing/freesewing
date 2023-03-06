@@ -171,7 +171,6 @@ yarn-error.log*
       'shared/components/workbench/inputs/design-option-pct-deg.mjs',
       'shared/components/workbench/inputs/measurement.mjs',
       'shared/components/workbench/measurements/index.mjs',
-      'shared/components/workbench/measurements/non-human.mjs',
       'shared/components/workbench/draft/circle.mjs',
       'shared/components/workbench/draft/defs.mjs',
       'shared/components/workbench/draft/error.mjs',
