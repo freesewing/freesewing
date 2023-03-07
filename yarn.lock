@@ -4651,10 +4651,10 @@
     lodash "^4.17.21"
     rxjs "^7.8.0"
 
-"@sanity/vision@3.5.0":
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-3.5.0.tgz#c4332e071e6f83c2b822f7459f47cd20b7dab9a6"
-  integrity sha512-SpD9fO5F+nDk00yNZmvujMhk+mLxTEFC8CqgLV5ypk458kyqPEf16yHdhO+bly0IaXOSWQzYmkXFFi8bjqiJ8Q==
+"@sanity/vision@3.5.1":
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-3.5.1.tgz#7d90ef9ef2b2fd45ebf8788e67508225d0b53c60"
+  integrity sha512-LKHojIJY5yNCBQWL+V8vPCd693qx+mc4hEavZ6w0fPa9kiaJ4G/fql1tfSzqzpRF9N9cKZQzb5LQNANzG3BYDw==
   dependencies:
     "@codemirror/autocomplete" "^6.1.0"
     "@codemirror/commands" "^6.0.1"
@@ -4668,7 +4668,7 @@
     "@rexxars/react-split-pane" "^0.1.93"
     "@sanity/color" "^2.1.20"
     "@sanity/icons" "^2.1.0"
-    "@sanity/ui" "^1.0.0"
+    "@sanity/ui" "^1.2.0"
     "@uiw/react-codemirror" "^4.11.4"
     hashlru "^2.3.0"
     is-hotkey "^0.1.6"
