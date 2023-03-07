@@ -1,4 +1,4 @@
-import { __addNonEnumProp } from './utils.mjs'
+import { __addNonEnumProp, capitalize } from './utils.mjs'
 
 /**
  * Get the name of the given plugin config
@@ -46,12 +46,16 @@ export function PatternConfig(pattern) {
   __addNonEnumProp(this, '__mutated', {
     optionDistance: {},
     partDistance: {},
+    hideDistance: {},
   })
 
   /** @type {Object} tracking for dependency hiding */
   __addNonEnumProp(this, '__hiding', {
-    all: {},
-    deps: {},
+    from: {},
+    after: {},
+    inherited: {},
+    always: {},
+    never: {},
   })
 }
 
@@ -133,14 +137,15 @@ PatternConfig.prototype.asConfig = function () {
 PatternConfig.prototype.__addPart = function (depChain) {
   // the current part is the head of the chain
   const part = depChain[0]
-  // the longer the chain, the deeper the part is down it
-  const distance = depChain.length
+
+  // only process a part that hasn't already been processed
   if (!this.parts[part.name]) this.parts[part.name] = Object.freeze(part)
   else return
 
   // if it hasn't been registered with a distance, do that now
   if (typeof this.__mutated.partDistance[part.name] === 'undefined') {
-    this.__mutated.partDistance[part.name] = distance
+    // the longer the chain, the deeper the part is down it
+    this.__mutated.partDistance[part.name] = depChain.length
 
     if (DISTANCE_DEBUG)
       this.store.log.debug(
@@ -149,11 +154,7 @@ PatternConfig.prototype.__addPart = function (depChain) {
   }
 
   // Handle various hiding possibilities
-  if (part.hide || part.hideAll) this.partHide[part.name] = true
-  if (part.hideDependencies) this.__hiding.deps[part.name] = true
-  if (part.hideAll) {
-    this.__hiding.all[part.name] = true
-  }
+  this.__resolvePartHiding(part)
 
   // resolve its dependencies
   this.__resolvePartDependencies(depChain)
@@ -188,7 +189,7 @@ PatternConfig.prototype.__addPartOptions = function (part) {
   if (!part.options) return this
 
   // get the part's option priority
-  const partDistance = this.__mutated.partDistance?.[part.name] || 0
+  const partDistance = this.__mutated.partDistance?.[part.name]
 
   // loop through options
   for (const optionName in part.options) {
@@ -325,7 +326,37 @@ PatternConfig.prototype.__addPartPlugins = function (part) {
 
 // the two types of dependencies
 const depTypes = ['from', 'after']
+const exceptionTypes = ['never', 'always']
+PatternConfig.prototype.__resolvePartHiding = function (part) {
+  if (part.hide) {
+    // get the part's option priority
+    const partDistance = this.__mutated.partDistance?.[part.name]
+    const neverDistance = this.__hiding.never[part.name] || Infinity
+    const alwaysDistance = this.__hiding.always[part.name] || Infinity
 
+    if (part.hide.self && (neverDistance > partDistance || alwaysDistance <= neverDistance))
+      this.partHide[part.name] = true
+
+    exceptionTypes.forEach((e, i) => {
+      if (part.hide[e]) {
+        part.hide[e].forEach((p) => {
+          const otherDistance = this.__hiding[exceptionTypes[Math.abs(i - 1)]][p] || Infinity
+
+          if (otherDistance > partDistance) {
+            const thisDistance = this.__hiding[e][p] || Infinity
+            this.__hiding[e][p] = Math.min(thisDistance, partDistance)
+            this.partHide[p] = i == 1
+          }
+        })
+      }
+    })
+
+    Object.keys(this.__hiding).forEach((k) => {
+      if (!exceptionTypes.includes(k) && this.__hiding[k][part.name] === undefined)
+        this.__hiding[k][part.name] = part.hide[k]
+    })
+  }
+}
 /**
  * Recursively register part dependencies
  * triggers {@link __addPart} on new parts found during resolution
@@ -364,9 +395,11 @@ PatternConfig.prototype.__resolvePartDependencies = function (depChain) {
           this.__addPart([dot, ...depChain])
         } else {
           // if it's already registered, recursion won't happen, but we still need to add its resolved dependencies to all parts in the chain
-          this.resolvedDependencies[dot.name].forEach((r) => {
-            depChain.forEach((c) => this.__addDependency('resolvedDependencies', c.name, r))
-          })
+          // this.resolvedDependencies[dot.name].forEach((r) => {
+          //   depChain.forEach((c) => this.__resolvePartDependencies('resolvedDependencies', c.name, r))
+          // })
+          this.__resolvePartDependencies([dot, ...depChain])
+          // and check for stricter hiding policies
         }
       })
     }
@@ -399,14 +432,18 @@ PatternConfig.prototype.__addDependency = function (dependencyList, partName, de
  * @private
  */
 PatternConfig.prototype.__handlePartDependencyOfType = function (part, depName, depType) {
-  switch (depType) {
-    case 'from':
-      this.__setFromHide(part, depName)
-      this.inject[part.name] = depName
-      break
-    case 'after':
-      this.__setAfterHide(part, depName)
+  if (this.__hiding[depType][part.name] === true && this.partHide[depName] === undefined) {
+    this.partHide[depName] = true
   }
+
+  const hideInherited = this.__hiding.inherited[part.name]
+  if (depType === 'from') {
+    this.inject[part.name] = depName
+    this.__hiding.after[depName] = hideInherited
+  }
+
+  this.__hiding.from[depName] = hideInherited
+  this.__hiding.inherited[depName] = hideInherited
 }
 
 /**
@@ -454,43 +491,4 @@ PatternConfig.prototype.__resolveDraftOrder = function () {
   )
 
   return this.__draftOrder
-}
-
-/**
- * Sets visibility of a 'from' dependency based on its config
- *
- * @private
- * @param {Part} part - The part of which this is a dependency
- * @param {string} depName - The name of the dependency
- * @return {Pattern} this - The Pattern instance
- */
-PatternConfig.prototype.__setFromHide = function (part, depName) {
-  if (this.__hiding.deps[part.name]) {
-    this.partHide[depName] = true
-    this.__hiding.deps[depName] = true
-  }
-  if (this.__hiding.all[part.name]) {
-    this.partHide[depName] = true
-    this.__hiding.all[depName] = true
-  }
-
-  return this
-}
-
-/**
- * Sets visibility of an 'after' dependency based on its config
- *
- * @private
- * @param {Part} part - The part of which this is a dependency
- * @param {string} depName - The name of the dependency
- * @param {int} set - The index of the set in the list of settings
- * @return {Pattern} this - The Pattern instance
- */
-PatternConfig.prototype.__setAfterHide = function (part, depName) {
-  if (this.__hiding.all[part.name]) {
-    this.partHide[depName] = true
-    this.__hiding.all[depName] = true
-  }
-
-  return this
 }
