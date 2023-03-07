@@ -59,7 +59,7 @@
   },
   "devDependencies": {
     "autoprefixer": "10.4.13",
-    "eslint-config-next": "13.1.6",
+    "eslint-config-next": "13.2.3",
     "js-yaml": "4.1.0",
     "postcss": "8.4.21",
     "remark-extract-frontmatter": "3.2.0",
