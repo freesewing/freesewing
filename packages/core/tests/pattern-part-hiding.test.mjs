@@ -6,7 +6,6 @@ function hidePartMatcher(partName) {
   const isHidden = this._obj.__isPartHidden(partName)
   if (!this._obj.config.parts[partName]) {
     throw new chai.AssertionError(`expected part \`${partName}\` to exist in pattern`)
-    this.fail()
   }
   this.assert(
     isHidden,
@@ -19,7 +18,6 @@ function hidePartsMatcher(...partNames) {
   const hiddens = partNames.map((n) => {
     if (!this._obj.config.parts[n]) {
       throw new chai.AssertionError(`expected part \`${n}\` to exist in pattern`)
-      this.fail()
     }
     return this._obj.__isPartHidden(n)
   })
