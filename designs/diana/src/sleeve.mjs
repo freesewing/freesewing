@@ -1,6 +1,7 @@
 import { sleeve as sleeveBase } from '@freesewing/brian'
 import { front } from './front.mjs'
 import { back } from './front.mjs'
+import { hidePresets } from '@freesewing/core'
 
 function draftDianaSleeve({ sa, points, paths, Path, complete, paperless, macro, part }) {
   paths.seam = new Path()
@@ -67,9 +68,6 @@ export const sleeve = {
   name: 'diana.sleeve',
   from: sleeveBase,
   after: [front, back],
-  hide: {
-    from: true,
-    inherited: true,
-  },
+  hide: hidePresets.HIDE_TREE,
   draft: draftDianaSleeve,
 }

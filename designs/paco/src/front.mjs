@@ -1,5 +1,6 @@
 import { front as titanFront } from '@freesewing/titan'
 import { back } from './back.mjs'
+import { hidePresets } from '@freesewing/core'
 
 function pacoFront({
   utils,
@@ -327,10 +328,7 @@ function pacoFront({
 export const front = {
   name: 'paco.front',
   from: titanFront,
-  hide: {
-    from: true,
-    inherited: true,
-  },
+  hide: hidePresets.HIDE_TREE,
   after: back,
   draft: pacoFront,
 }

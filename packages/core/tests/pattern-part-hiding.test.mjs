@@ -1,5 +1,5 @@
 import chai from 'chai'
-import { Design } from '../src/index.mjs'
+import { Design, hidePresets } from '../src/index.mjs'
 
 const expect = chai.expect
 function hidePartMatcher(partName) {
@@ -14,7 +14,25 @@ function hidePartMatcher(partName) {
     `expected part ${partName} to NOT be hidden, but it is hidden`
   )
 }
+
+function hidePartsMatcher(...partNames) {
+  const hiddens = partNames.map((n) => {
+    if (!this._obj.config.parts[n]) {
+      throw new chai.AssertionError(`expected part \`${n}\` to exist in pattern`)
+      this.fail()
+    }
+    return this._obj.__isPartHidden(n)
+  })
+
+  this.assert(
+    hiddens.every((v) => v === true),
+    `expected parts [${partNames}] to be hidden, but hide check returns [${hiddens}]`,
+    `expected parts [${partNames}] to NOT be hidden, but hide check returns [${hiddens}]`
+  )
+}
+
 chai.Assertion.addMethod('hidePart', hidePartMatcher)
+chai.Assertion.addMethod('hideParts', hidePartsMatcher)
 
 const blankDraft = ({ part }) => part
 const blankPart = (name, config = {}) => ({
@@ -49,8 +67,7 @@ describe('Hiding parts', () => {
     })
 
     it("Should NOT hide the part's dependencies", () => {
-      expect(pattern).not.to.hidePart('fromPart')
-      expect(pattern).not.to.hidePart('afterPart')
+      expect(pattern).not.to.hidePart('fromPart', 'afterPart')
     })
 
     describe('Inherited Parts', () => {
@@ -75,8 +92,7 @@ describe('Hiding parts', () => {
       pattern.__init()
 
       it('Should NOT hide inherited `from` dependencies', () => {
-        expect(pattern).not.to.hidePart('fromPart')
-        expect(pattern).not.to.hidePart('mainPart')
+        expect(pattern).not.to.hideParts('fromPart', 'mainPart')
       })
 
       it('Should NOT hide inherited `after` dependencies', () => {
@@ -247,13 +263,11 @@ describe('Hiding parts', () => {
     })
 
     it('Should hide the `after` dependencies of `from` dependencies', () => {
-      expect(pattern).to.hidePart('afterPart')
-      expect(pattern).to.hidePart('parentAfter')
+      expect(pattern).to.hideParts('afterPart', 'parentAfter')
     })
 
     it('Should hide the `from` dependencies of `from` dependencies', () => {
-      expect(pattern).to.hidePart('fromPart')
-      expect(pattern).to.hidePart('grandParent')
+      expect(pattern).to.hideParts('fromPart', 'grandParent')
     })
   })
 
@@ -342,6 +356,107 @@ describe('Hiding parts', () => {
     })
   })
 
+  describe('HIDE_ALL', () => {
+    const grandParent = blankPart('grandParent')
+    const parent = blankPart('parent', {
+      from: grandParent,
+    })
+
+    it('Should behave like `{self: true, after: true, from: true, inherited: true}`', () => {
+      const main1 = blankPart('main1', {
+        from: parent,
+        after: afterPart,
+        hide: hidePresets.HIDE_ALL,
+      })
+
+      const Test = new Design({
+        name: 'test',
+        parts: [main1],
+      })
+      const pattern = new Test()
+      pattern.__init()
+
+      expect(pattern).to.hideParts('grandParent', 'parent', 'main1', 'afterPart')
+    })
+    it('Should work when passed as a string', () => {
+      const main1 = blankPart('main1', {
+        from: parent,
+        after: afterPart,
+        hide: 'HIDE_ALL',
+      })
+
+      const Test = new Design({
+        name: 'test',
+        parts: [main1],
+      })
+      const pattern = new Test()
+      pattern.__init()
+
+      expect(pattern).to.hideParts('grandParent', 'parent', 'main1', 'afterPart')
+    })
+  })
+
+  describe('HIDE_TREE', () => {
+    const grandParent = blankPart('grandParent', { from: fromPart, after: afterPart })
+    const parentAfter = blankPart('parentAfter')
+    const parent = blankPart('parent', { from: grandParent, after: parentAfter })
+    const mainAfterFrom = blankPart('mainAfterFrom')
+    const mainAfterAfter = blankPart('mainAfterAfter')
+    const mainAfter = blankPart('mainAfter', { after: mainAfterAfter, from: mainAfterFrom })
+
+    it('Should behave like `{from: true, inherited: true}`', () => {
+      const mainPart = {
+        name: 'mainPart',
+        from: parent,
+        after: mainAfter,
+        hide: hidePresets.HIDE_TREE,
+        draft: blankDraft,
+      }
+      const Test = new Design({
+        name: 'test',
+        parts: [mainPart],
+      })
+
+      const pattern = new Test()
+      pattern.__init()
+
+      expect(pattern).to.hideParts(
+        'grandParent',
+        'fromPart',
+        'afterPart',
+        'parentAfter',
+        `mainAfterFrom`,
+        `parent`
+      )
+      expect(pattern).to.not.hideParts('mainPart', 'mainAfter', 'mainAfterAfter')
+    })
+    it('Should work when passed as a string', () => {
+      const mainPart = {
+        name: 'mainPart',
+        from: parent,
+        after: mainAfter,
+        hide: 'HIDE_TREE',
+        draft: blankDraft,
+      }
+      const Test = new Design({
+        name: 'test',
+        parts: [mainPart],
+      })
+
+      const pattern = new Test()
+      pattern.__init()
+
+      expect(pattern).to.hideParts(
+        'grandParent',
+        'fromPart',
+        'afterPart',
+        'parentAfter',
+        `mainAfterFrom`,
+        `parent`
+      )
+      expect(pattern).to.not.hideParts('mainPart', 'mainAfter', 'mainAfterAfter')
+    })
+  })
   describe('With complex inheritance', () => {
     it('Should use the strictest hiding configuration given by toplevel parts', () => {
       const greatGrandParent = blankPart('greatGrandParent')
@@ -363,9 +478,7 @@ describe('Hiding parts', () => {
       const pattern = new Test()
       pattern.__init()
 
-      expect(pattern).to.hidePart('parent')
-      expect(pattern).to.hidePart('grandParent')
-      expect(pattern).to.hidePart('greatGrandParent')
+      expect(pattern).to.hideParts('parent', 'grandParent', 'greatGrandParent')
     })
     it('Should use inherited configurations that are not overridden', () => {
       const greatGrandParent = blankPart('greatGrandParent')

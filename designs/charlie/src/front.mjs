@@ -1,5 +1,5 @@
 import { elastics } from '@freesewing/snapseries'
-import { pctBasedOn } from '@freesewing/core'
+import { pctBasedOn, hidePresets } from '@freesewing/core'
 import { front as titanFront } from '@freesewing/titan'
 
 function draftCharlieFront({
@@ -366,10 +366,7 @@ function draftCharlieFront({
 export const front = {
   name: 'charlie.front',
   from: titanFront,
-  hide: {
-    from: true,
-    inherited: true,
-  },
+  hide: hidePresets.HIDE_TREE,
   measurements: [
     'crossSeam',
     'crossSeamFront',

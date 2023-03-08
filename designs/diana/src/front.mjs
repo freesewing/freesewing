@@ -1,5 +1,6 @@
 import { front as frontBase } from '@freesewing/brian'
 import { back as backBase } from '@freesewing/brian'
+import { hidePresets } from '@freesewing/core'
 
 export function draftDianaFrontOrBack({
   measurements,
@@ -165,10 +166,7 @@ export function draftDianaFrontOrBack({
 export const front = {
   name: 'diana.front',
   from: frontBase,
-  hide: {
-    from: true,
-    inherited: true,
-  },
+  hide: hidePresets.HIDE_TREE,
   measurements: [
     'biceps',
     'chest',
@@ -244,10 +242,7 @@ export const front = {
 export const back = {
   name: 'diana.back',
   from: backBase,
-  hide: {
-    from: true,
-    inherited: true,
-  },
+  hide: hidePresets.HIDE_TREE,
   measurements: [
     'biceps',
     'chest',

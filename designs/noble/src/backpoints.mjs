@@ -1,4 +1,5 @@
 import { back as bellaBack } from '@freesewing/bella'
+import { hidePresets } from '@freesewing/core'
 import * as options from './options.mjs'
 
 function nobleBackPoints({ points, Path, paths, options, snippets, log, part }) {
@@ -83,11 +84,7 @@ function nobleBackPoints({ points, Path, paths, options, snippets, log, part }) 
 export const backPoints = {
   name: 'noble.backPoints',
   from: bellaBack,
-  hide: {
-    self: true,
-    from: true,
-    inherited: true,
-  },
+  hide: hidePresets.HIDE_ALL,
   options,
   draft: nobleBackPoints,
 }

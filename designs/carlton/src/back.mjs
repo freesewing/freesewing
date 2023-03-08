@@ -1,5 +1,6 @@
 import { back as bentBack } from '@freesewing/bent'
 import { calculateRatios } from './shared.mjs'
+import { hidePresets } from '@freesewing/core'
 
 function draftCarltonBack({
   paperless,
@@ -230,10 +231,7 @@ function draftCarltonBack({
 export const back = {
   name: 'carlton.back',
   from: bentBack,
-  hide: {
-    from: true,
-    inherited: true,
-  },
+  hide: hidePresets.HIDE_TREE,
   measurements: ['chest', 'hpsToWaistBack'],
   options: {
     backPleat: 0.048,

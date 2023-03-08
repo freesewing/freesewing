@@ -1,5 +1,6 @@
 import { front } from './front.mjs'
 import { sleeve as brianSleeve } from '@freesewing/brian'
+import { hidePresets } from '@freesewing/core'
 import {
   cuffOverlap,
   cuffDrape,
@@ -284,10 +285,7 @@ export const sleeve = {
   name: 'simon.sleeve',
   from: brianSleeve,
   after: front,
-  hide: {
-    from: true,
-    inherited: true,
-  },
+  hide: hidePresets.HIDE_TREE,
   options: {
     cuffOverlap,
     cuffDrape,

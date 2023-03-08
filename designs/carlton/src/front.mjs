@@ -1,5 +1,6 @@
 import { front as bentFront } from '@freesewing/bent'
 import { calculateRatios } from './shared.mjs'
+import { hidePresets } from '@freesewing/core'
 
 function draftCarltonFront({
   paperless,
@@ -477,10 +478,7 @@ function draftCarltonFront({
 export const front = {
   name: 'carlton.front',
   from: bentFront,
-  hide: {
-    from: true,
-    inherited: true,
-  },
+  hide: hidePresets.HIDE_TREE,
   measurements: ['waist', 'waistToFloor', 'waistToSeat'],
   options: {
     chestEase: { pct: 10, min: 5, max: 20, menu: 'fit' },

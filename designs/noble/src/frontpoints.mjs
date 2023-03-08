@@ -1,4 +1,5 @@
 import { frontSideDart as bellaFront } from '@freesewing/bella'
+import { hidePresets } from '@freesewing/core'
 import * as options from './options.mjs'
 
 function nobleFrontPoints({ log, points, Path, paths, snippets, options, macro, part }) {
@@ -318,11 +319,7 @@ function nobleFrontPoints({ log, points, Path, paths, snippets, options, macro, 
 export const frontPoints = {
   name: 'noble.frontPoints',
   from: bellaFront,
-  hide: {
-    self: true,
-    from: true,
-    inherited: true,
-  },
+  hide: hidePresets.HIDE_ALL,
   options,
   draft: nobleFrontPoints,
 }

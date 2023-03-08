@@ -1,4 +1,5 @@
 import { sleevecap } from '@freesewing/brian'
+import { hidePresets } from '@freesewing/core'
 
 function teaganSleeve({
   sa,
@@ -96,10 +97,7 @@ function teaganSleeve({
 export const sleeve = {
   name: 'teagan.sleeve',
   from: sleevecap,
-  hide: {
-    from: true,
-    inherited: true,
-  },
+  hide: hidePresets.HIDE_TREE,
   options: {
     sleeveEase: { pct: 15, min: 5, max: 35, menu: 'style' },
   },

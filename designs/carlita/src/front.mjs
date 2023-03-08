@@ -1,5 +1,6 @@
 import { pluginBust } from '@freesewing/plugin-bust'
 import { front as carltonFront } from '@freesewing/carlton'
+import { hidePresets } from '@freesewing/core'
 
 function draftCarlitaFront({
   paperless,
@@ -501,10 +502,7 @@ function draftCarlitaFront({
 export const front = {
   name: 'carlita.front',
   from: carltonFront,
-  hide: {
-    from: true,
-    inherited: true,
-  },
+  hide: hidePresets.HIDE_TREE,
   measurements: ['highBust', 'bustSpan', 'hpsToBust'],
   plugins: [pluginBust],
   options: {

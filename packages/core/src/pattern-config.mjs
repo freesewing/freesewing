@@ -1,5 +1,18 @@
 import { __addNonEnumProp, capitalize } from './utils.mjs'
 
+export const hidePresets = {
+  HIDE_ALL: {
+    self: true,
+    from: true,
+    after: true,
+    inherited: true,
+  },
+  HIDE_TREE: {
+    from: true,
+    inherited: true,
+  },
+}
+
 /**
  * Get the name of the given plugin config
  *
@@ -328,34 +341,35 @@ PatternConfig.prototype.__addPartPlugins = function (part) {
 const depTypes = ['from', 'after']
 const exceptionTypes = ['never', 'always']
 PatternConfig.prototype.__resolvePartHiding = function (part) {
-  if (part.hide) {
-    // get the part's option priority
-    const partDistance = this.__mutated.partDistance?.[part.name]
-    const neverDistance = this.__hiding.never[part.name] || Infinity
-    const alwaysDistance = this.__hiding.always[part.name] || Infinity
+  let hide = part.hide
+  if (typeof hide === 'string') hide = hidePresets[hide]
+  if (!hide) return
 
-    if (part.hide.self && (neverDistance > partDistance || alwaysDistance <= neverDistance))
-      this.partHide[part.name] = true
+  // get the part's option priority
+  const partDistance = this.__mutated.partDistance?.[part.name]
+  const neverDistance = this.__hiding.never[part.name] || Infinity
+  const alwaysDistance = this.__hiding.always[part.name] || Infinity
 
-    exceptionTypes.forEach((e, i) => {
-      if (part.hide[e]) {
-        part.hide[e].forEach((p) => {
-          const otherDistance = this.__hiding[exceptionTypes[Math.abs(i - 1)]][p] || Infinity
+  if (hide.self && (neverDistance > partDistance || alwaysDistance <= neverDistance))
+    this.partHide[part.name] = true
 
-          if (otherDistance > partDistance) {
-            const thisDistance = this.__hiding[e][p] || Infinity
-            this.__hiding[e][p] = Math.min(thisDistance, partDistance)
-            this.partHide[p] = i == 1
-          }
-        })
-      }
-    })
+  exceptionTypes.forEach((e, i) => {
+    if (hide[e]) {
+      hide[e].forEach((p) => {
+        const otherDistance = this.__hiding[exceptionTypes[Math.abs(i - 1)]][p] || Infinity
 
-    Object.keys(this.__hiding).forEach((k) => {
-      if (!exceptionTypes.includes(k) && this.__hiding[k][part.name] === undefined)
-        this.__hiding[k][part.name] = part.hide[k]
-    })
-  }
+        if (otherDistance > partDistance) {
+          const thisDistance = this.__hiding[e][p] || Infinity
+          this.__hiding[e][p] = Math.min(thisDistance, partDistance)
+          this.partHide[p] = i == 1
+        }
+      })
+    }
+  })
+
+  depTypes.concat('inherited').forEach((k) => {
+    if (this.__hiding[k][part.name] === undefined) this.__hiding[k][part.name] = hide[k]
+  })
 }
 /**
  * Recursively register part dependencies

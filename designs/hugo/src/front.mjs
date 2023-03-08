@@ -1,4 +1,5 @@
 import { front as brianFront } from '@freesewing/brian'
+import { hidePresets } from '@freesewing/core'
 import {
   collarEase,
   armholeDepthFactor,
@@ -189,10 +190,7 @@ function hugoFront({
 export const front = {
   name: 'hugo.front',
   from: brianFront,
-  hide: {
-    from: true,
-    inherited: true,
-  },
+  hide: hidePresets.HIDE_TREE,
   measurements: ['hips', 'waistToHips'],
   options: {
     collarEase,
