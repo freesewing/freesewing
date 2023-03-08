@@ -1,4 +1,4 @@
-import { grainlinePlugin } from '@freesewing/plugin-grainline'
+import { grainlinePlugin } from '@freesewing/plugin-annotations'
 
 const pluginGrainline = ({ points, Point, paths, Path, options, macro, part }) => {
   if (['grainline', 'all'].indexOf(options.plugin) !== -1) {

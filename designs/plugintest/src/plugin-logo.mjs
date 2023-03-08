@@ -1,4 +1,4 @@
-import { logoPlugin } from '@freesewing/plugin-logo'
+import { logoPlugin } from '@freesewing/plugin-annotations'
 import { base } from './base.mjs'
 
 const pluginLogo = ({ points, Point, paths, Path, snippets, Snippet, options, part }) => {

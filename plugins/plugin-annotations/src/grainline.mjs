@@ -52,5 +52,5 @@ export const grainline = {
 }
 
 // More specifically named exports
-// export const grainlinePlugin = plugin
-// export const pluginGrainline = plugin
+export const grainlinePlugin = grainline
+export const pluginGrainline = grainline

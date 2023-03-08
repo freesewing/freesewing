@@ -72,5 +72,5 @@ export const pleat = {
 }
 
 // More specifically named exports
-// export const pleatPlugin = plugin
-// export const pluginPleat = plugin
+export const pleatPlugin = pleat
+export const pluginPleat = pleat

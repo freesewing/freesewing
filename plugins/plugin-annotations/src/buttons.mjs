@@ -78,5 +78,5 @@ export const buttons = {
 }
 
 // More specifically named exports
-// export const buttonsPlugin = plugin
-// export const pluginButtons = plugin
+export const buttonsPlugin = buttons
+export const pluginButtons = buttons

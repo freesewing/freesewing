@@ -90,5 +90,5 @@ export const sewtogether = {
 }
 
 // More specifically named exports
-// export const sewtogetherPlugin = plugin
-// export const pluginSewtogether = plugin
+export const sewtogetherPlugin = sewtogether
+export const pluginSewtogether = sewtogether

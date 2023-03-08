@@ -67,5 +67,5 @@ export const cutonfold = {
 }
 
 // More specifically named exports
-// export const cutonfoldPlugin = cutonfold
-// export const pluginCutonfold = cutonfold
+export const cutonfoldPlugin = cutonfold
+export const pluginCutonfold = cutonfold

@@ -15,5 +15,5 @@ export const logo = {
 }
 
 // More specifically named exports
-// export const logoPlugin = logo
-// export const pluginLogo = logo
+export const logoPlugin = logo
+export const pluginLogo = logo

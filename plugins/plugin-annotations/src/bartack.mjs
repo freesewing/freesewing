@@ -130,5 +130,5 @@ export const bartack = {
 }
 
 // More specifically named exports
-// export const bartackPlugin = bartack
-// export const pluginBartack = bartack
+export const bartackPlugin = bartack
+export const pluginBartack = bartack

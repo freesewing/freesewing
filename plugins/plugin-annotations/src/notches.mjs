@@ -21,5 +21,5 @@ export const notches = {
 }
 
 // More specifically named exports
-// export const notchesPlugin = notches
-// export const pluginNotches = notches
+export const notchesPlugin = notches
+export const pluginNotches = notches

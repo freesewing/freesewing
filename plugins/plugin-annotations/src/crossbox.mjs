@@ -58,5 +58,5 @@ export const crossbox = {
 }
 
 // More specifically named exports
-// export const cutonfoldPlugin = cutonfold
-// export const pluginCutonfold = cutonfold
+export const crossboxPlugin = crossbox
+export const pluginCrossbox = crossbox

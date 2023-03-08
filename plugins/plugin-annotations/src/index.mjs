@@ -1,42 +1,60 @@
-import { bartack } from './bartack.mjs'
-import { buttons } from './buttons.mjs'
-import { crossbox } from './crossbox.mjs'
-import { cutonfold } from './cutonfold.mjs'
-import { grainline } from './grainline.mjs'
-import { logo } from './logo.mjs'
-import { scalebox, scalebox2 } from './scalebox.mjs'
-import { notches } from './notches.mjs'
-import { pleat } from './pleat.mjs'
-import { sewtogether } from './sewtogether.mjs'
+import { name, version } from '../data.mjs'
 
-// Named exports
-// export bartack
-export const bartackPlugin = bartack
-export const pluginBartack = bartack
+import { bartackPlugin } from './bartack.mjs'
+import { buttonsPlugin } from './buttons.mjs'
+import { crossboxPlugin } from './crossbox.mjs'
+import { cutonfoldPlugin } from './cutonfold.mjs'
+import { grainlinePlugin } from './grainline.mjs'
+import { logoPlugin } from './logo.mjs'
+import { notchesPlugin } from './notches.mjs'
+import { pleatPlugin } from './pleat.mjs'
+import { scaleboxPlugin } from './scalebox.mjs'
+import { sewtogetherPlugin } from './sewtogether.mjs'
 
-export const crossboxPlugin = crossbox
-export const pluginCrossbox = crossbox
+const annotationPlugins = [
+  bartackPlugin,
+  buttonsPlugin,
+  crossboxPlugin,
+  cutonfoldPlugin,
+  grainlinePlugin,
+  logoPlugin,
+  notchesPlugin,
+  pleatPlugin,
+  scaleboxPlugin,
+  sewtogetherPlugin,
+]
 
-export const cutonfoldPlugin = cutonfold
-export const pluginCutonfold = cutonfold
+function annotationHooks() {
+  const hooks = {}
+  for (const plugin of annotationPlugins) {
+    for (const i in plugin.hooks) {
+      if (typeof hooks[i] === 'undefined') hooks[i] = []
+      const hook = plugin.hooks[i]
+      if (typeof hook === 'function') hooks[i].push(hook)
+      else if (typeof hook === 'object') {
+        for (let method of hook) hooks[i].push(method)
+      }
+    }
+  }
 
-export const pleatPlugin = pleat
-export const pluginPleat = pleat
+  return hooks
+}
 
-export const scaleboxPlugin = scalebox
-export const pluginScalebox = scalebox
+function annotationMacros() {
+  const macros = {}
+  for (const plugin of annotationPlugins) {
+    for (const i in plugin.macros) macros[i] = plugin.macros[i]
+  }
 
-export const sewtogetherPlugin = sewtogether
-export const pluginSewtogether = sewtogether
+  return macros
+}
 
-export const buttonsPlugin = buttons
-export const pluginButtons = buttons
+export const plugin = {
+  name,
+  version,
+  hooks: annotationHooks(),
+  macros: annotationMacros(),
+}
 
-export const grainlinePlugin = grainline
-export const pluginGrainline = grainline
-
-export const logoPlugin = logo
-export const pluginLogo = logo
-
-export const notchesPlugin = notches
-export const pluginNotches = notches
+export const annotationPlugin = plugin
+export const pluginAnnotation = plugin

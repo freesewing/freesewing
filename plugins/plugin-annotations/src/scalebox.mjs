@@ -1,10 +1,16 @@
 import { name, version } from '../data.mjs'
 
+const markers = `
+<marker id="pleatTo" markerWidth="12" markerHeight="8" orient="auto" refY="4" refX="12">
+  <path class="note fill-note" d="M 12,4 L 0,0 C 2,2 2,6  0,8 z" />
+</marker>
+`
+
 export const scalebox = {
-  name: 'scalebox',
+  name,
   version,
   macros: {
-    scalebox(so, { store, points, paths, scale, Point, Path }) {
+    scalebox: function (so, { store, points, paths, scale, Point, Path }) {
       // Passing `false` will remove the scalebox
       if (so === false) {
         for (let id of [
@@ -285,3 +291,7 @@ export const scalebox = {
     },
   },
 }
+
+// More specifically named exports
+export const scaleboxPlugin = scalebox
+export const pluginScalebox = scalebox
