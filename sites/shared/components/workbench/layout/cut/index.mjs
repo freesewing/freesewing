@@ -6,8 +6,7 @@ import { cutLayoutPlugin } from './plugin-cut-layout.mjs'
 import { pluginCutlist } from '@freesewing/plugin-cutlist'
 import { pluginFlip } from '@freesewing/plugin-flip'
 import { measurementAsMm } from 'shared/utils.mjs'
-import { useState, useEffect, useCallback, useRef } from 'react'
-import { Tabs } from 'shared/components/mdx/tabs.mjs'
+import { useEffect } from 'react'
 import get from 'lodash.get'
 
 const activeFabricPath = ['_state', 'layout', 'forCutting', 'activeFabric']

@@ -1,11 +1,5 @@
 const prefix = 'mirroredOnFold'
 
-const redraft = ({ part }) => part
-const redraftAndFlip = ({ part, macro }) => {
-  macro('flip')
-  return part
-}
-
 const opTypes = ['to', 'cp1', 'cp2']
 const getRotationAngle = (grainAngle, partGrain) => {
   let toRotate = Math.abs(grainAngle - partGrain)
@@ -102,7 +96,7 @@ export const cutLayoutPlugin = function (material, grainAngle) {
           points: mirrorPoints,
           mirror: fold,
           prefix,
-          nameFormat: (path) => {
+          nameFormat: () => {
             unnamed++
             return `${prefix}_${unnamed}`
           },

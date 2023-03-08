@@ -1,8 +1,6 @@
-import { useMemo, useEffect, useState, useCallback, useRef } from 'react'
 import { ClearIcon, IconWrapper } from 'shared/components/icons.mjs'
 import { useTranslation } from 'next-i18next'
 import { formatFraction128, measurementAsMm, round, formatMm } from 'shared/utils.mjs'
-import get from 'lodash.get'
 
 const SheetIcon = (props) => (
   <IconWrapper {...props}>
