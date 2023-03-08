@@ -3,6 +3,7 @@ import { data } from '../data.mjs'
 import { banner } from './plugin-banner.mjs'
 import { bartack } from './plugin-bartack.mjs'
 import { buttons } from './plugin-buttons.mjs'
+import { crossbox } from './plugin-crossbox.mjs'
 import { cutonfold } from './plugin-cutonfold.mjs'
 import { dimension } from './plugin-dimension.mjs'
 import { flip } from './plugin-flip.mjs'
@@ -13,8 +14,10 @@ import { logo } from './plugin-logo.mjs'
 import { measurements } from './plugin-measurements.mjs'
 import { mirror } from './plugin-mirror.mjs'
 import { notches } from './plugin-notches.mjs'
+import { pleat } from './plugin-pleat.mjs'
 import { round } from './plugin-round.mjs'
 import { scalebox } from './plugin-scalebox.mjs'
+import { sewtogether } from './plugin-sewtogether.mjs'
 import { sprinkle } from './plugin-sprinkle.mjs'
 import { title } from './plugin-title.mjs'
 
@@ -25,6 +28,7 @@ const Plugintest = new Design({
     banner,
     bartack,
     buttons,
+    crossbox,
     cutonfold,
     dimension,
     flip,
@@ -35,8 +39,10 @@ const Plugintest = new Design({
     measurements,
     mirror,
     notches,
+    pleat,
     round,
     scalebox,
+    sewtogether,
     sprinkle,
     title,
   ],
@@ -47,6 +53,7 @@ export {
   banner,
   bartack,
   buttons,
+  crossbox,
   cutonfold,
   dimension,
   flip,
@@ -57,8 +64,10 @@ export {
   measurements,
   mirror,
   notches,
+  pleat,
   round,
   scalebox,
+  sewtogether,
   sprinkle,
   title,
   Plugintest,

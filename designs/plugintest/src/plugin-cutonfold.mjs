@@ -29,6 +29,5 @@ export const cutonfold = {
     cutonfoldGrainline: { bool: false, menu: 'cutonfold' },
   },
   plugins: annotationPlugin,
-  // plugins: [pluginBundle],
   draft: pluginCutonfold,
 }
