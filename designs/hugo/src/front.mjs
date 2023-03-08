@@ -189,7 +189,10 @@ function hugoFront({
 export const front = {
   name: 'hugo.front',
   from: brianFront,
-  hideDependencies: true,
+  hide: {
+    from: true,
+    inherited: true,
+  },
   measurements: ['hips', 'waistToHips'],
   options: {
     collarEase,

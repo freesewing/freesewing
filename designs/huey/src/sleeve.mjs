@@ -93,6 +93,9 @@ export const sleeve = {
   name: 'huey.sleeve',
   from: brianSleeve,
   after: back,
-  hideDependencies: true,
   draft: draftHueySleeve,
+  hide: {
+    from: true,
+    inherited: true,
+  },
 }

@@ -128,7 +128,10 @@ export const front = {
   name: 'sven.front',
   from: brianFront,
   options,
-  hideDependencies: true,
+  hide: {
+    from: true,
+    inherited: true,
+  },
   measurements,
   draft: svenFrontBack,
 }
@@ -137,7 +140,10 @@ export const back = {
   name: 'sven.back',
   from: brianBack,
   options,
-  hideDependencies: true,
+  hide: {
+    from: true,
+    inherited: true,
+  },
   measurements,
   draft: svenFrontBack,
 }

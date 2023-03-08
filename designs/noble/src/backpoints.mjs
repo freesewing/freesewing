@@ -83,7 +83,11 @@ function nobleBackPoints({ points, Path, paths, options, snippets, log, part }) 
 export const backPoints = {
   name: 'noble.backPoints',
   from: bellaBack,
-  hideAll: true,
+  hide: {
+    self: true,
+    from: true,
+    inherited: true,
+  },
   options,
   draft: nobleBackPoints,
 }

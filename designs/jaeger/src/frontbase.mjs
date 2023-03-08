@@ -192,7 +192,11 @@ export const frontBase = {
   name: 'jaeger.frontBase',
   measurements: ['hips', 'waist'],
   from: bentFront,
-  hideAll: true,
+  hide: {
+    self: true,
+    from: true,
+    inherited: true,
+  },
   options: {
     hipsEase,
     waistEase,

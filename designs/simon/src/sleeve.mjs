@@ -284,7 +284,10 @@ export const sleeve = {
   name: 'simon.sleeve',
   from: brianSleeve,
   after: front,
-  hideDependencies: true,
+  hide: {
+    from: true,
+    inherited: true,
+  },
   options: {
     cuffOverlap,
     cuffDrape,

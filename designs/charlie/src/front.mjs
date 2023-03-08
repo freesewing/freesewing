@@ -366,7 +366,10 @@ function draftCharlieFront({
 export const front = {
   name: 'charlie.front',
   from: titanFront,
-  hideDependencies: true,
+  hide: {
+    from: true,
+    inherited: true,
+  },
   measurements: [
     'crossSeam',
     'crossSeamFront',

@@ -165,7 +165,10 @@ export function draftDianaFrontOrBack({
 export const front = {
   name: 'diana.front',
   from: frontBase,
-  hideDependencies: true,
+  hide: {
+    from: true,
+    inherited: true,
+  },
   measurements: [
     'biceps',
     'chest',
@@ -241,7 +244,10 @@ export const front = {
 export const back = {
   name: 'diana.back',
   from: backBase,
-  hideDependencies: true,
+  hide: {
+    from: true,
+    inherited: true,
+  },
   measurements: [
     'biceps',
     'chest',

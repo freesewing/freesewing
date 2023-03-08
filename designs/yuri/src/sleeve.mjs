@@ -69,6 +69,9 @@ function yuriSleeve({ Point, Path, points, paths, complete, sa, paperless, macro
 export const sleeve = {
   name: 'yuri.sleeve',
   from: brianSleeve,
-  hideDependencies: true,
+  hide: {
+    from: true,
+    inherited: true,
+  },
   draft: yuriSleeve,
 }

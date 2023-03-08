@@ -72,7 +72,10 @@ function svenSleeve({ store, sa, points, paths, Path, complete, paperless, macro
 export const sleeve = {
   name: 'sven.sleeve',
   from: brianSleeve,
-  hideDependencies: true,
+  hide: {
+    from: true,
+    inherited: true,
+  },
   after: [front, back],
   options: {
     ribbing,

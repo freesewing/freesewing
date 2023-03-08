@@ -230,7 +230,10 @@ function draftCarltonBack({
 export const back = {
   name: 'carlton.back',
   from: bentBack,
-  hideDependencies: true,
+  hide: {
+    from: true,
+    inherited: true,
+  },
   measurements: ['chest', 'hpsToWaistBack'],
   options: {
     backPleat: 0.048,

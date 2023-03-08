@@ -477,7 +477,10 @@ function draftCarltonFront({
 export const front = {
   name: 'carlton.front',
   from: bentFront,
-  hideDependencies: true,
+  hide: {
+    from: true,
+    inherited: true,
+  },
   measurements: ['waist', 'waistToFloor', 'waistToSeat'],
   options: {
     chestEase: { pct: 10, min: 5, max: 20, menu: 'fit' },

@@ -312,7 +312,10 @@ function pacoBack({
 export const back = {
   name: 'paco.back',
   from: titanBack,
-  hideDependencies: true,
+  hide: {
+    from: true,
+    inherited: true,
+  },
   measurements: ['heel'],
   options: {
     // Constants

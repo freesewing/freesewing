@@ -67,6 +67,9 @@ export const sleeve = {
   name: 'diana.sleeve',
   from: sleeveBase,
   after: [front, back],
-  hideDependencies: true,
+  hide: {
+    from: true,
+    inherited: true,
+  },
   draft: draftDianaSleeve,
 }

@@ -116,7 +116,10 @@ function hugoBack({
 export const back = {
   name: 'hugo.back',
   from: brianBack,
-  hideDependencies: true,
+  hide: {
+    from: true,
+    inherited: true,
+  },
   measurements: ['hips'],
   after: front,
   draft: hugoBack,

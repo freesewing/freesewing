@@ -327,8 +327,10 @@ function pacoFront({
 export const front = {
   name: 'paco.front',
   from: titanFront,
-  hideDependencies: true,
+  hide: {
+    from: true,
+    inherited: true,
+  },
   after: back,
-  hideDepedencies: true,
   draft: pacoFront,
 }

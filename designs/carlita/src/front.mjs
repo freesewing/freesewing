@@ -501,7 +501,10 @@ function draftCarlitaFront({
 export const front = {
   name: 'carlita.front',
   from: carltonFront,
-  hideDependencies: true,
+  hide: {
+    from: true,
+    inherited: true,
+  },
   measurements: ['highBust', 'bustSpan', 'hpsToBust'],
   plugins: [pluginBust],
   options: {

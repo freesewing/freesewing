@@ -91,7 +91,11 @@ export const backBase = {
   name: 'jaeger.backBase',
   measurements: ['hips', 'waist'],
   from: bentBack,
-  hideAll: true,
+  hide: {
+    self: true,
+    from: true,
+    inherited: true,
+  },
   options: {
     centerBackDart,
     hipsEase,

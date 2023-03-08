@@ -204,6 +204,9 @@ export const underSleeve = {
   name: 'jaeger.underSleeve',
   from: bentUnderSleeve,
   options: { sleeveVentLength, sleeveVentWidth },
-  hideDependencies: true,
+  hide: {
+    from: true,
+    inherited: true,
+  },
   draft: jaegerUnderSleeve,
 }

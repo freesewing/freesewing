@@ -407,8 +407,11 @@ export const back = {
   name: 'simon.back',
   plugins: [flipPlugin],
   measurements: ['waist', 'hips'],
-  hideDependencies: true,
   from: brianBack,
+  hide: {
+    from: true,
+    inherited: true,
+  },
   options: {
     collarFactor,
     backDarts,

@@ -318,7 +318,11 @@ function nobleFrontPoints({ log, points, Path, paths, snippets, options, macro, 
 export const frontPoints = {
   name: 'noble.frontPoints',
   from: bellaFront,
-  hideAll: true,
+  hide: {
+    self: true,
+    from: true,
+    inherited: true,
+  },
   options,
   draft: nobleFrontPoints,
 }

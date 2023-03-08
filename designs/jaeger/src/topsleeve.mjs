@@ -219,7 +219,10 @@ function jaegerTopSleeve({
 export const topSleeve = {
   name: 'jaeger.topSleeve',
   from: bentTopSleeve,
-  hideDependencies: true,
+  hide: {
+    from: true,
+    inherited: true,
+  },
   options: { sleeveVentLength, sleeveVentWidth },
   draft: jaegerTopSleeve,
 }

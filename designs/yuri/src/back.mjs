@@ -109,7 +109,10 @@ export const back = {
       sleeveLengthBonus: { pct: 1, min: 0, max: 10 },
     },
   },
-  hideDependencies: true,
+  hide: {
+    from: true,
+    inherited: true,
+  },
   options: {
     hipsEase: { pct: 0, min: 0, max: 10 },
   },

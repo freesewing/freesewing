@@ -96,7 +96,10 @@ function teaganSleeve({
 export const sleeve = {
   name: 'teagan.sleeve',
   from: sleevecap,
-  hideDependencies: true,
+  hide: {
+    from: true,
+    inherited: true,
+  },
   options: {
     sleeveEase: { pct: 15, min: 5, max: 35, menu: 'style' },
   },
