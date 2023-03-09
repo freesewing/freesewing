@@ -182,13 +182,6 @@ function draftCarltonCollar({
   paths.seam = paths.saBase.clone().line(points.standTop).close().attr('class', 'fabric')
 
   if (complete) {
-    points.title = points.standTopCp.clone()
-    macro('title', {
-      at: points.title,
-      nr: 8,
-      title: 'collar',
-    })
-
     // Remove grainline from collarstand part
     delete paths.grainline
     macro('cutonfold', {
@@ -204,6 +197,13 @@ function draftCarltonCollar({
     addCut(2, 'lining')
     setCutOnFold(false, undefined, 'lining')
     setGrain(defaultGrain + 45, 'lining')
+
+    points.title = points.standTopCp.clone()
+    macro('title', {
+      at: points.title,
+      nr: 8,
+      title: 'collar',
+    })
     if (sa) {
       paths.sa = paths.saBase.offset(sa)
       paths.sa = paths.sa

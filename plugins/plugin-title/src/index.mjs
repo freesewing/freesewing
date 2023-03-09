@@ -31,20 +31,17 @@ export const plugin = {
     },
   },
   macros: {
-    title: function (so, { points, scale, locale, store }) {
+    title: function (so, { points, scale, locale, store, part, getCutOnFold }) {
       const prefix = so.prefix || ''
+      let overwrite = !so.append
 
       // Passing `false` will remove the title
-      if (so === false) {
-        for (const id of [
-          `_${prefix}_titleNr`,
-          `_${prefix}_titleName`,
-          `_${prefix}_titlePattern`,
-          `_${prefix}_titleFor`,
-          `_${prefix}_exportDate`,
-        ])
-          delete points[id]
-        return true
+      if (so === false || overwrite) {
+        Object.keys(points).forEach((p) => {
+          if (p.startsWith(`_${prefix}_title`) || p === `_${prefix}_exportDate`) delete points[p]
+        })
+
+        if (so === false) return true
       }
 
       const transform = function (anchor) {
@@ -53,44 +50,55 @@ export const plugin = {
 
         return `matrix(${so.scale}, 0, 0, ${so.scale}, ${cx}, ${cy}) rotate(${so.rotation} ${anchor.x} ${anchor.y})`
       }
+      let shift = 8
+      const nextPoint = (text, textClass, shiftAmt = shift) => {
+        const newPoint = so.at.shift(-90 - so.rotation, shiftAmt * so.scale)
+        newPoint.attr('data-text-transform', transform(newPoint)).addText(text, textClass)
+        return newPoint
+      }
       const defaults = {
         scale: 1,
         rotation: 0,
+        cutlist: true,
       }
 
       so = { ...defaults, ...so }
       so.scale = so.scale * scale
-      let overwrite = true
-      if (so.append) overwrite = false
+
       points[`_${prefix}_titleNr`] = so.at
         .clone()
         .attr('data-text', so.nr, overwrite)
         .attr('data-text-class', 'text-4xl fill-note font-bold')
         .attr('data-text-transform', transform(so.at))
-      let shift = 8
+
       if (so.title) {
-        points[`_${prefix}_titleName`] = so.at
-          .shift(-90 - so.rotation, shift * so.scale)
-          .attr('data-text', so.title)
-          .attr('data-text-class', 'text-lg fill-current font-bold')
-          .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, 13 * so.scale)))
+        points[`_${prefix}_titleName`] = nextPoint(so.title, 'text-lg fill-current font-bold')
         shift += 8
       }
+
+      const partCutlist = store.get(['cutlist', part.name])
+      if (so.cutlist && partCutlist?.materials) {
+        for (const material in partCutlist.materials) {
+          const matCut = partCutlist.materials[material]
+          const cutPoint = nextPoint('plugin:cut', 'text-md fill-current')
+          cutPoint.addText(matCut.cut)
+          if (!matCut.indentical && matCut.cut > 1) cutPoint.addText('plugin:paired')
+          if (typeof getCutOnFold(material) === 'number') cutPoint.addText('plugin:onFoldLower')
+          cutPoint.addText('plugin:from').addText('plugin:' + material)
+
+          points[`_${prefix}_titleCut_${material}`] = cutPoint
+          shift += 8
+        }
+      }
+
       let name = store.data?.name || 'No Name'
       name = name.replace('@freesewing/', '')
-      points[`_${prefix}_titlePattern`] = so.at
-        .shift(-90 - so.rotation, shift * so.scale)
-        .attr('data-text', name)
-        .attr('data-text', 'v' + (store.data?.version || 'No Version'))
-        .attr('data-text-class', 'fill-note')
-        .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, shift * so.scale)))
+      name += 'v' + (store.data?.version || 'No Version')
+      points[`_${prefix}_titlePattern`] = nextPoint(name, 'fill-note')
+
       if (store.data.for) {
         shift += 8
-        points[`_${prefix}_titleFor`] = so.at
-          .shift(-90 - so.rotation, shift * so.scale)
-          .attr('data-text', '( ' + store.data.for + ' )')
-          .attr('data-text-class', 'fill-current font-bold')
-          .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, shift * so.scale)))
+        points[`_${prefix}_titleFor`] = nextPoint(`( ${store.data.for} )`, 'fill-current font-bold')
       }
       shift += 6
       const now = new Date()
@@ -98,20 +106,13 @@ export const plugin = {
       let mins = now.getMinutes()
       if (hours < 10) hours = `0${hours}`
       if (mins < 10) mins = `0${mins}`
-      points[`_${prefix}_exportDate`] = so.at
-        .shift(-90 - so.rotation, shift * so.scale)
-        .attr(
-          'data-text',
-          now.toLocaleDateString(locale || 'en', {
-            weekday: 'long',
-            year: 'numeric',
-            month: 'short',
-            day: 'numeric',
-          })
-        )
-        .attr('data-text', `@ ${hours}:${mins}`)
-        .attr('data-text-class', 'text-sm')
-        .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, shift * so.scale)))
+      const exportDate = now.toLocaleDateString(locale || 'en', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+      })
+      points[`_${prefix}_exportDate`] = nextPoint(`${exportDate}@ ${hours}:${mins}`, 'text-sm')
     },
   },
 }

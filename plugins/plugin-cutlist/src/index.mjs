@@ -9,6 +9,7 @@ export const plugin = {
     ['removeCut', removeCut],
     ['setGrain', setGrain],
     ['setCutOnFold', setCutOnFold],
+    ['getCutOnFold', getCutOnFold],
   ],
 }
 
@@ -70,4 +71,11 @@ function setCutOnFold(store, partName, p1, p2, material = false) {
     store.log.error('Called part.setCutOnFold() but at least one parameter is not a Point instance')
 
   return store
+}
+
+function getCutOnFold(store, partName, material = false) {
+  if (!material) return store.get(['cutlist', partName, 'cutOnFold'])
+
+  const matFold = store.get(['cutlist', partName, 'materials', material, 'cutOnFold'])
+  return matFold === undefined ? store.get(['cutlist', partName, 'cutOnFold']) : matFold
 }

@@ -15,7 +15,7 @@ export const PrintLayout = (props) => {
     if (props.gist?._state?.xray?.enabled) props.updateGist(['_state', 'xray', 'enabled'], false)
   })
 
-  const { t } = useTranslation(['workbench'])
+  const { t } = useTranslation(['workbench', 'plugin'])
   const [error, setError] = useState(false)
 
   const draft = props.draft
