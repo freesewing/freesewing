@@ -13,6 +13,7 @@ export const Draft = (props) => {
     bgProps = {},
     fitLayoutPart = false,
     layoutType = 'printingLayout',
+    layoutSetType = 'forPrinting',
   } = props
 
   const svgRef = useRef(null)
@@ -98,6 +99,7 @@ export const Draft = (props) => {
           gist,
           updateLayout,
           isLayoutPart: stackName === props.layoutPart,
+          layoutSetType: layoutSetType,
         }}
       />
     )

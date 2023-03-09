@@ -68,7 +68,7 @@ const useFabricList = (draft) => {
 
 const bgProps = { fill: 'none' }
 export const CutLayout = (props) => {
-  const { t } = useTranslation(['workbench'])
+  const { t } = useTranslation(['workbench', 'plugin'])
   const { gist, design, updateGist } = props
 
   // disable xray
@@ -110,7 +110,7 @@ export const CutLayout = (props) => {
                 }`}
                 onClick={() => setCutFabric(title)}
               >
-                {title}
+                {t('plugin:' + title)}
               </button>
             ))}
           </div>
@@ -124,6 +124,7 @@ export const CutLayout = (props) => {
           gistReady={props.gistReady}
           layoutPart="fabric"
           layoutType={['cuttingLayout', fabricSettings.activeFabric]}
+          layoutSetType="forCutting"
         />
       </div>
     </div>

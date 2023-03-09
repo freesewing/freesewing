@@ -1,6 +1,7 @@
 import { ClearIcon, IconWrapper } from 'shared/components/icons.mjs'
 import { useTranslation } from 'next-i18next'
 import { formatFraction128, measurementAsMm, round, formatMm } from 'shared/utils.mjs'
+import { ShowButtonsToggle } from '../draft/buttons.mjs'
 
 const SheetIcon = (props) => (
   <IconWrapper {...props}>
@@ -118,14 +119,21 @@ export const CutLayoutSettings = ({
         <SheetIcon className="h-6 w-6 mr-2 inline align-middle" />
         <span className="text-xl font-bold align-middle">{fabricLength}</span>
       </div>
-      <button
-        key="reset"
-        onClick={() => unsetGist(['layouts', 'cuttingLayout', activeFabric])}
-        className="btn btn-primary btn-outline"
-      >
-        <ClearIcon className="h-6 w-6 mr-2" />
-        {t('reset')}
-      </button>
+      <div>
+        <ShowButtonsToggle
+          gist={gist}
+          updateGist={updateGist}
+          layoutSetType="forCutting"
+        ></ShowButtonsToggle>
+        <button
+          key="reset"
+          onClick={() => unsetGist(['layouts', 'cuttingLayout', activeFabric])}
+          className="btn btn-primary btn-outline"
+        >
+          <ClearIcon className="h-6 w-6 mr-2" />
+          {t('reset')}
+        </button>
+      </div>
     </div>
   )
 }
