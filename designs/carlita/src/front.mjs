@@ -349,8 +349,8 @@ function draftCarlitaFront({
 
   if (complete) {
     if (typeof addCut === 'function') {
-      addCut(2)
-      addCut(2, 'lining')
+      addCut()
+      addCut({ material: 'lining' })
     }
     snippets.button1Left = new Snippet('button', points.button1Left).attr('data-scale', 2)
     snippets.button1Right = new Snippet('button', points.button1Right).attr('data-scale', 2)

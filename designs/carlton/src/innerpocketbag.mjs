@@ -45,7 +45,7 @@ function draftCarltonInnerPocketBag({
     .line(points.startRight)
     .attr('class', 'lining dashed')
 
-  addCut(2, 'lining')
+  addCut({ material: 'lining' })
 
   if (complete) {
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)

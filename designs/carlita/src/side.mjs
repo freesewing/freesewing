@@ -40,8 +40,8 @@ function draftCarlitaSide({
 
   if (complete) {
     if (typeof addCut === 'function') {
-      addCut(2)
-      addCut(2, 'lining')
+      addCut()
+      addCut({ material: 'lining' })
     }
     points.title = points.bustPoint.shiftFractionTowards(points.waist, 0.5)
     macro('title', {

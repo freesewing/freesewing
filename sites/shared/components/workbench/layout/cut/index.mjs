@@ -45,7 +45,7 @@ const useFabricDraft = (gist, design, fabricSettings, t) => {
     draft.use(pluginCutlist)
     draft.use(pluginFlip)
     // add translation
-    draft.use(pluginI18n, { t })
+    // draft.use(pluginI18n, { t })
 
     // draft the pattern
     draft.draft()

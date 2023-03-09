@@ -52,7 +52,7 @@ function draftCarltonUnderSleeve({
     .attr('class', 'fabric')
 
   addCut()
-  addCut(2, 'lining')
+  addCut({ material: 'lining' })
   if (complete) {
     macro('grainline', {
       from: points.boxBottom,

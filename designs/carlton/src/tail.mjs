@@ -70,7 +70,7 @@ function draftCarltonTail({
     .attr('class', 'fabric dashed')
 
   addCut()
-  addCut(2, 'lining')
+  addCut({ material: 'lining' })
 
   if (complete) {
     points.title = points.fold4Top.shiftFractionTowards(points.waistBottom, 0.5)

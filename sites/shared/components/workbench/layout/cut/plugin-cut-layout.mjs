@@ -15,54 +15,48 @@ export const cutLayoutPlugin = function (material, grainAngle) {
           return
 
         let partCutlist = pattern.setStores[pattern.activeSet].get(['cutlist', pattern.activePart])
+        if (!partCutlist) return
 
-        if (partCutlist?.materials ? !partCutlist.materials[material] : material !== 'fabric') {
+        if (partCutlist.materials ? !partCutlist.materials[material] : material !== 'fabric') {
           part.hide()
           return
         }
 
-        if (typeof partCutlist?.cut === 'function') {
-          partCutlist = { ...partCutlist, ...partCutlist }
+        const handleFoldAndGrain = (macro, grainSpec, ignoreOnFold) => {
+          if (!ignoreOnFold && partCutlist.cutOnFold)
+            macro('mirrorOnFold', { fold: partCutlist.cutOnFold })
+
+          if (grainSpec !== undefined) macro('rotateToGrain', { grainAngle, partGrain: grainSpec })
         }
 
-        const matCutConfig = partCutlist?.materials?.[material]
+        const matCutConfig = partCutlist.materials?.[material]
+        if (matCutConfig) {
+          const activePart = pattern.config.parts[pattern.activePart]
 
-        const { macro } = part.shorthand()
-        const foldSpec =
-          matCutConfig?.cutOnFold === undefined ? partCutlist?.cutOnFold : matCutConfig.cutOnFold
-        if (foldSpec) {
-          macro('mirrorOnFold', { fold: foldSpec })
-        }
+          // hide the part so that all others can inherit from it and be manipulated separately
+          part.hide()
 
-        let baseRotation = 0
-        const grainSpec = matCutConfig?.grain || partCutlist?.grain
-        if (grainSpec !== undefined) {
-          let partGrain = grainSpec
-          if (typeof grainSpec === 'function') {
-            partGrain = grainSpec(0)
-            baseRotation = getRotationAngle(grainAngle, partGrain)
-          }
-          macro('rotateToGrain', { grainAngle, partGrain })
-        }
-        if (!matCutConfig) return
+          matCutConfig.forEach(({ cut, identical, bias, ignoreOnFold }, i) => {
+            const cGrain = partCutlist.grain ? partCutlist.grain + (bias ? 45 : 0) : undefined
+            for (let c = 0; c < cut; c++) {
+              const dupPartName = `cut.${pattern.activePart}.${material}_${c + i + 1}`
 
-        for (let i = 1; i < matCutConfig.cut; i++) {
-          const dupPartName = `cut.${pattern.activePart}.${material}_${i + 1}`
+              pattern.addPart({
+                name: dupPartName,
+                from: activePart,
+                draft: ({ part, macro }) => {
+                  handleFoldAndGrain(macro, cGrain, ignoreOnFold)
 
-          pattern.addPart({
-            name: dupPartName,
-            from: pattern.config.parts[pattern.activePart],
-            draft: ({ part, macro }) => {
-              if (typeof grainSpec === 'function') {
-                let partGrain = grainSpec(i) - baseRotation
-                macro('rotateToGrain', { partGrain, grainAngle })
-              }
+                  if (!identical && c % 2 === 1) macro('flip')
 
-              if (!matCutConfig.identical && i % 2 === 1) macro('flip')
-
-              return part
-            },
+                  return part
+                },
+              })
+            }
           })
+        } else {
+          const { macro } = part.shorthand()
+          handleFoldAndGrain(partCutlist.grain)
         }
       },
     },

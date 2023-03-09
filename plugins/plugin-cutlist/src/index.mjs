@@ -18,7 +18,8 @@ export const cutlistPlugin = plugin
 export const pluginCutlist = plugin
 
 /** Method to add the cut info */
-function addCut(store, partName, cut = 2, material = 'fabric', identical = false) {
+function addCut(store, partName, so = {}) {
+  const { cut = 2, material = 'fabric', identical = false, bias = false, ignoreOnFold = false } = so
   if (cut === false) {
     if (material === false) store.unset(['cutlist', partName, 'materials'])
     else store.unset(['cutlist', partName, 'materials', material])
@@ -33,37 +34,34 @@ function addCut(store, partName, cut = 2, material = 'fabric', identical = false
     return store
   }
   const path = ['cutlist', partName, 'materials', material]
-  store.set([...path, 'cut'], cut)
-  store.set([...path, 'identical'], identical)
+  const existing = store.get(path) || []
+  store.set(path, existing.concat({ cut, identical, bias, ignoreOnFold }))
+  // store.set([...path, 'identical'], identical)
 
   return store
 }
 
 /** Method to remove the cut info */
 function removeCut(store, partName, material = false) {
-  return addCut(store, partName, false, material)
+  return addCut(store, partName, { cut: false, material })
 }
 
 /** Method to add the grain info */
-function setGrain(store, partName, grain = false, material = false) {
-  const path = material
-    ? ['cutlist', partName, 'materials', material, 'grain']
-    : ['cutlist', partName, 'grain']
+function setGrain(store, partName, grain = false) {
+  const path = ['cutlist', partName, 'grain']
   if (grain === false) return store.unset(path)
-  if (!['number', 'function'].includes(typeof grain)) {
-    store.log.error('Called part.setGrain() with a value that is not a number or function')
+  if (typeof grain !== 'number') {
+    store.log.error('Called part.setGrain() with a value that is not a number')
     return store
   }
   return store.set(path, grain)
 }
 
 /** Method to add the cutOnFold info */
-function setCutOnFold(store, partName, p1, p2, material = false) {
-  const path = material
-    ? ['cutlist', partName, 'materials', material, 'cutOnFold']
-    : ['cutlist', partName, 'cutOnFold']
+function setCutOnFold(store, partName, p1, p2) {
+  const path = ['cutlist', partName, 'cutOnFold']
   if (p1 === false && typeof p2 === 'undefined') {
-    return material ? store.set(path, false) : store.unset(path)
+    return store.unset(path)
   }
   if (p1 instanceof Point && p2 instanceof Point) {
     store.set(path, [p1, p2])
@@ -74,8 +72,9 @@ function setCutOnFold(store, partName, p1, p2, material = false) {
 }
 
 function getCutOnFold(store, partName, material = false) {
-  if (!material) return store.get(['cutlist', partName, 'cutOnFold'])
+  const partFold = store.get(['cutlist', partName, 'cutOnFold'])
+  if (!material) return partFold
 
   const matFold = store.get(['cutlist', partName, 'materials', material, 'cutOnFold'])
-  return matFold === undefined ? store.get(['cutlist', partName, 'cutOnFold']) : matFold
+  return matFold === undefined ? partFold : matFold
 }

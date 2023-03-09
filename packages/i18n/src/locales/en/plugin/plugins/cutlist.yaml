@@ -4,4 +4,6 @@ lining: Lining
 cut: Cut
 paired: paired
 onFoldLower: on the fold
+onFoldAndBias: folded on the bias
 onBias: on the bias
+

@@ -97,8 +97,8 @@ function draftCarltonBack({
     .line(points.bpStart)
     .attr('class', 'dashed')
 
-  addCut(2)
-  addCut(2, 'lining')
+  addCut()
+  addCut({ cut: 2, material: 'lining' })
 
   if (complete) {
     macro('sprinkle', {

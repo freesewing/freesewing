@@ -78,16 +78,19 @@ export const plugin = {
 
       const partCutlist = store.get(['cutlist', part.name])
       if (so.cutlist && partCutlist?.materials) {
+        const cutonfold = partCutlist.cutOnFold
         for (const material in partCutlist.materials) {
-          const matCut = partCutlist.materials[material]
-          const cutPoint = nextPoint('plugin:cut', 'text-md fill-current')
-          cutPoint.addText(matCut.cut)
-          if (!matCut.indentical && matCut.cut > 1) cutPoint.addText('plugin:paired')
-          if (typeof getCutOnFold(material) === 'number') cutPoint.addText('plugin:onFoldLower')
-          cutPoint.addText('plugin:from').addText('plugin:' + material)
-
-          points[`_${prefix}_titleCut_${material}`] = cutPoint
-          shift += 8
+          partCutlist.materials[material].forEach(({ cut, identical, bias, ignoreOnFold }, c) => {
+            const cutPoint = nextPoint('plugin:cut', 'text-md fill-current')
+            cutPoint.addText(cut)
+            if (!identical && cut > 1) cutPoint.addText('plugin:paired')
+            if (cutonfold && !ignoreOnFold)
+              cutPoint.addText(bias ? 'plugin:onFoldAndBias' : 'plugin:onFoldLower')
+            else if (bias) cutPoint.addText('plugin:onBias')
+            cutPoint.addText('plugin:from').addText('plugin:' + material)
+            points[`_${prefix}_titleCut_${material}_${c}`] = cutPoint
+            shift += 8
+          })
         }
       }
 

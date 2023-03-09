@@ -46,8 +46,8 @@ function draftCarltonCollarStand({
     .close()
     .attr('class', 'fabric')
 
-  addCut(2)
-  addCut(1, 'lmhCanvas')
+  addCut()
+  addCut({ cut: 1, material: 'lmhCanvas' })
 
   if (complete) {
     points.title = points.bottomLeftCp.clone()

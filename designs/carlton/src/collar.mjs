@@ -190,13 +190,9 @@ function draftCarltonCollar({
       grainline: true,
     })
 
-    addCut()
-    const defaultGrain = store.get(['cutlist', 'carlton.collar', 'grain'])
-    setGrain((i) => (i % 2 === 0 ? defaultGrain : defaultGrain + 45))
-
-    addCut(2, 'lining')
-    setCutOnFold(false, undefined, 'lining')
-    setGrain(defaultGrain + 45, 'lining')
+    addCut({ cut: 1 })
+    addCut({ cut: 1, bias: true })
+    addCut({ cut: 2, material: 'lining', bias: true, ignoreOnFold: true })
 
     points.title = points.standTopCp.clone()
     macro('title', {

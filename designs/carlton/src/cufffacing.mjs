@@ -47,8 +47,8 @@ function draftCarltonCuffFacing({
     .close()
     .attr('class', 'fabric')
 
-  addCut(2)
-  addCut(2, 'lmhCanvas')
+  addCut()
+  addCut({ cut: 2, material: 'lmhCanvas' })
 
   if (complete) {
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
