@@ -17,9 +17,6 @@ function draftCarltonCollar({
   Path,
   part,
   addCut,
-  setGrain,
-  setCutOnFold,
-  store,
 }) {
   // We're going to slash and spread this collar. Slashing first:
   // Divide top in 5 parts

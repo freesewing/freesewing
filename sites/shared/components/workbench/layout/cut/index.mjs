@@ -5,7 +5,6 @@ import { fabricPlugin } from '../plugin-layout-part.mjs'
 import { cutLayoutPlugin } from './plugin-cut-layout.mjs'
 import { pluginCutlist } from '@freesewing/plugin-cutlist'
 import { pluginFlip } from '@freesewing/plugin-flip'
-import { pluginI18n } from '@freesewing/plugin-i18n'
 import { measurementAsMm } from 'shared/utils.mjs'
 import { useEffect } from 'react'
 import get from 'lodash.get'
@@ -23,7 +22,7 @@ const useFabricSettings = (gist) => {
   return { activeFabric, sheetWidth, grainDirection, sheetHeight }
 }
 
-const useFabricDraft = (gist, design, fabricSettings, t) => {
+const useFabricDraft = (gist, design, fabricSettings) => {
   // get the appropriate layout for the view
   const layout =
     get(gist, ['layouts', gist._state.view, fabricSettings.activeFabric]) || gist.layout || true
@@ -44,8 +43,6 @@ const useFabricDraft = (gist, design, fabricSettings, t) => {
     // also, pluginCutlist and pluginFlip are needed
     draft.use(pluginCutlist)
     draft.use(pluginFlip)
-    // add translation
-    // draft.use(pluginI18n, { t })
 
     // draft the pattern
     draft.draft()
@@ -80,7 +77,7 @@ export const CutLayout = (props) => {
   })
 
   const fabricSettings = useFabricSettings(gist)
-  const { draft, patternProps } = useFabricDraft(gist, design, fabricSettings, t)
+  const { draft, patternProps } = useFabricDraft(gist, design, fabricSettings)
   const fabricList = useFabricList(draft)
 
   const setCutFabric = (newFabric) => {

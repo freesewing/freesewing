@@ -31,7 +31,7 @@ export const plugin = {
     },
   },
   macros: {
-    title: function (so, { points, scale, locale, store, part, getCutOnFold }) {
+    title: function (so, { points, scale, locale, store, part }) {
       const prefix = so.prefix || ''
       let overwrite = !so.append
 
@@ -52,8 +52,10 @@ export const plugin = {
       }
       let shift = 8
       const nextPoint = (text, textClass, shiftAmt = shift) => {
-        const newPoint = so.at.shift(-90 - so.rotation, shiftAmt * so.scale)
-        newPoint.attr('data-text-transform', transform(newPoint)).addText(text, textClass)
+        const newPoint = so.at
+          .shift(-90 - so.rotation, shiftAmt * so.scale)
+          .addText(text, textClass)
+        newPoint.attr('data-text-transform', transform(newPoint))
         return newPoint
       }
       const defaults = {
@@ -76,18 +78,32 @@ export const plugin = {
         shift += 8
       }
 
+      // Cut List instructions
       const partCutlist = store.get(['cutlist', part.name])
+      // if there's a cutlist and it should be included
       if (so.cutlist && partCutlist?.materials) {
+        // get the default cutonfold
         const cutonfold = partCutlist.cutOnFold
+        // each material
         for (const material in partCutlist.materials) {
+          // each set of instructions
           partCutlist.materials[material].forEach(({ cut, identical, bias, ignoreOnFold }, c) => {
-            const cutPoint = nextPoint('plugin:cut', 'text-md fill-current')
-            cutPoint.addText(cut)
-            if (!identical && cut > 1) cutPoint.addText('plugin:paired')
+            // make a new point for this set of instructions
+            const cutPoint = nextPoint('plugin:cut', 'text-md fill-current').addText(cut)
+
+            // if they're not identical, add that to the point's text
+            if (!identical && cut > 1) cutPoint.addText('plugin:mirrored')
+
+            // if they should be cut on the fold add that, with bias or without
             if (cutonfold && !ignoreOnFold)
               cutPoint.addText(bias ? 'plugin:onFoldAndBias' : 'plugin:onFoldLower')
+            // otherwise if they should be on the bias, say so
             else if (bias) cutPoint.addText('plugin:onBias')
+
+            // add 'from' the material
             cutPoint.addText('plugin:from').addText('plugin:' + material)
+
+            // save and shift
             points[`_${prefix}_titleCut_${material}_${c}`] = cutPoint
             shift += 8
           })
