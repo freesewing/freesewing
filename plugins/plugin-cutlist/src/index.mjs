@@ -9,7 +9,6 @@ export const plugin = {
     ['removeCut', removeCut],
     ['setGrain', setGrain],
     ['setCutOnFold', setCutOnFold],
-    ['getCutOnFold', getCutOnFold],
   ],
 }
 
@@ -17,7 +16,17 @@ export const plugin = {
 export const cutlistPlugin = plugin
 export const pluginCutlist = plugin
 
-/** Method to add the cut info */
+/**
+ * Add a set of cutting instructions for the part
+ * @param {Store} store                   the Store
+ * @param {string} partName               the name of the part
+ * @param {Object} so                     a set of cutting instructions for a material
+ * @param {number} so.cut = 2             the number of pieces to cut from the specified fabric
+ * @param {string} so.material = fabric   the name of the material to cut from
+ * @param {boolean} so.identical = false  should even numbers of pieces be cut in the same direction or mirrored
+ * @param {boolean} so.bias = false       should the pieces in these cutting instructions be cut on the bias
+ * @param {boolean} so.ignoreOnFold       should these cutting instructions ignore any cutOnFold information set by the part
+ */
 function addCut(store, partName, so = {}) {
   const { cut = 2, material = 'fabric', identical = false, bias = false, ignoreOnFold = false } = so
   if (cut === false) {
@@ -36,7 +45,6 @@ function addCut(store, partName, so = {}) {
   const path = ['cutlist', partName, 'materials', material]
   const existing = store.get(path) || []
   store.set(path, existing.concat({ cut, identical, bias, ignoreOnFold }))
-  // store.set([...path, 'identical'], identical)
 
   return store
 }
@@ -69,12 +77,4 @@ function setCutOnFold(store, partName, p1, p2) {
     store.log.error('Called part.setCutOnFold() but at least one parameter is not a Point instance')
 
   return store
-}
-
-function getCutOnFold(store, partName, material = false) {
-  const partFold = store.get(['cutlist', partName, 'cutOnFold'])
-  if (!material) return partFold
-
-  const matFold = store.get(['cutlist', partName, 'materials', material, 'cutOnFold'])
-  return matFold === undefined ? partFold : matFold
 }
