@@ -4,7 +4,7 @@ import { useGist } from 'shared/hooks/useGist'
 import { useTranslation } from 'next-i18next'
 // Dependencies
 import { pluginTheme } from '@freesewing/plugin-theme'
-import { pluginI18n } from '@freeSewing/plugin-i18n'
+import { pluginI18n } from '@freesewing/plugin-i18n'
 import { preloaders } from 'shared/components/workbench/preloaders.mjs'
 // Components
 import { WorkbenchMenu } from 'shared/components/workbench/menu/index.mjs'

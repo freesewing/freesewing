@@ -57,9 +57,9 @@ function bundleStore(plugin) {
 }
 
 for (const plugin of bundledPlugins) {
-  bundleHooks(plugin, hooks)
-  bundleMacros(plugin, macros)
-  bundleStore(plugin, store)
+  bundleHooks(plugin)
+  bundleMacros(plugin)
+  bundleStore(plugin)
 }
 
 export const plugin = {
