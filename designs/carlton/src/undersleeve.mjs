@@ -1,5 +1,6 @@
 import { underSleeve as bentUnderSleeve } from '@freesewing/bent'
 import { front as bentFront } from '@freesewing/bent'
+import { pluginCutlist } from '@freesewing/plugin-cutlist'
 
 function draftCarltonUnderSleeve({
   paperless,
@@ -14,6 +15,7 @@ function draftCarltonUnderSleeve({
   paths,
   Path,
   part,
+  addCut,
 }) {
   // Add cuff
   let length = measurements.shoulderToWrist * options.cuffLength
@@ -49,6 +51,8 @@ function draftCarltonUnderSleeve({
     .close()
     .attr('class', 'fabric')
 
+  addCut()
+  addCut({ material: 'lining' })
   if (complete) {
     macro('grainline', {
       from: points.boxBottom,
@@ -149,5 +153,6 @@ export const underSleeve = {
     sleevecapHeight: { pct: 45, min: 40, max: 60, menu: 'advanced' },
     sleevecapEase: { pct: 1, min: 0, max: 10, menu: 'advanced' },
   },
+  plugins: [pluginCutlist],
   draft: draftCarltonUnderSleeve,
 }

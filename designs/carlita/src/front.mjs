@@ -17,6 +17,7 @@ function draftCarlitaFront({
   paths,
   Path,
   part,
+  addCut,
 }) {
   /**
    * we're adding half of the proportionate amount of chest east for the bust span
@@ -347,6 +348,10 @@ function draftCarlitaFront({
     .attr('class', 'fabric help')
 
   if (complete) {
+    if (typeof addCut === 'function') {
+      addCut()
+      addCut({ material: 'lining' })
+    }
     snippets.button1Left = new Snippet('button', points.button1Left).attr('data-scale', 2)
     snippets.button1Right = new Snippet('button', points.button1Right).attr('data-scale', 2)
     snippets.button2Left = new Snippet('button', points.button2Left).attr('data-scale', 2)

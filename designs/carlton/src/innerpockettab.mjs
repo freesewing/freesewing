@@ -11,6 +11,7 @@ function draftCarltonInnerPocketTab({
   paths,
   Path,
   part,
+  addCut,
 }) {
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(store.get('innerPocketWidth') * 1.2, 0)
@@ -29,6 +30,8 @@ function draftCarltonInnerPocketTab({
     .attr('class', 'lining')
 
   paths.hint = new Path().move(points.top).line(points.bottom).attr('class', 'lining dashed')
+
+  addCut({ cut: 1, material: 'lining' })
 
   if (complete) {
     points.title = points.top.shiftFractionTowards(points.bottom, 0.5)
