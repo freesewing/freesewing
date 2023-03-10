@@ -1,3 +1,3 @@
 import { shouldSkipBuild } from '../../scripts/skip-build-base.mjs'
 
-shouldSkipBuild('Dev')
+shouldSkipBuild('Dev', '../shared . ../../markdown/dev')
