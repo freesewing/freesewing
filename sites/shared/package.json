@@ -31,6 +31,7 @@
     "lodash.clonedeep": "4.5.0",
     "lodash.orderby": "4.6.0",
     "lodash.unset": "4.5.2",
+    "lodash.get": "4.4.2",
     "mdast-util-toc": "6.1.1",
     "pdfkit": "0.13.0",
     "postcss-for": "2.1.1",

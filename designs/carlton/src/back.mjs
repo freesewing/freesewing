@@ -1,5 +1,6 @@
 import { back as bentBack } from '@freesewing/bent'
 import { calculateRatios } from './shared.mjs'
+import { pluginCutlist } from '@freesewing/plugin-cutlist'
 
 function draftCarltonBack({
   paperless,
@@ -16,6 +17,7 @@ function draftCarltonBack({
   paths,
   Path,
   part,
+  addCut,
 }) {
   calculateRatios(part)
   // Belt width
@@ -94,6 +96,9 @@ function draftCarltonBack({
     .line(points.bpTriangleEdge)
     .line(points.bpStart)
     .attr('class', 'dashed')
+
+  addCut()
+  addCut({ cut: 2, material: 'lining' })
 
   if (complete) {
     macro('sprinkle', {
@@ -238,5 +243,6 @@ export const back = {
     waistEase: { pct: 14, min: 8, max: 25, menu: 'fit' },
     seatEase: { pct: 14, min: 8, max: 25, menu: 'fit' },
   },
+  plugins: [pluginCutlist],
   draft: draftCarltonBack,
 }

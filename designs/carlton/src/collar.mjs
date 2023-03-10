@@ -16,6 +16,7 @@ function draftCarltonCollar({
   paths,
   Path,
   part,
+  addCut,
 }) {
   // We're going to slash and spread this collar. Slashing first:
   // Divide top in 5 parts
@@ -178,13 +179,6 @@ function draftCarltonCollar({
   paths.seam = paths.saBase.clone().line(points.standTop).close().attr('class', 'fabric')
 
   if (complete) {
-    points.title = points.standTopCp.clone()
-    macro('title', {
-      at: points.title,
-      nr: 8,
-      title: 'collar',
-    })
-
     // Remove grainline from collarstand part
     delete paths.grainline
     macro('cutonfold', {
@@ -193,6 +187,16 @@ function draftCarltonCollar({
       grainline: true,
     })
 
+    addCut({ cut: 1 })
+    addCut({ cut: 1, bias: true })
+    addCut({ cut: 2, material: 'lining', bias: true, ignoreOnFold: true })
+
+    points.title = points.standTopCp.clone()
+    macro('title', {
+      at: points.title,
+      nr: 8,
+      title: 'collar',
+    })
     if (sa) {
       paths.sa = paths.saBase.offset(sa)
       paths.sa = paths.sa

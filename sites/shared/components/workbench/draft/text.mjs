@@ -53,7 +53,7 @@ const XrayText = (props) => (
 )
 
 const TextSpans = ({ point, className = '', style = {}, onClick = null }) => {
-  const { t } = useTranslation(['app'])
+  const { t } = useTranslation(['plugin'])
   let text = []
   // Handle translation
   let translated = ''
@@ -117,7 +117,7 @@ const XrayTextOnPath = (props) => (
 )
 
 export const TextOnPath = (props) => {
-  const { t } = useTranslation(['app'])
+  const { t } = useTranslation(['plugin'])
   // Handle translation (and spaces)
   let translated = ''
   for (let string of props.path.attributes.getAsArray('data-text')) {

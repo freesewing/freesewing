@@ -14,6 +14,7 @@ function draftCarltonCollarStand({
   paths,
   Path,
   part,
+  addCut,
 }) {
   let height = measurements.chest * options.collarHeight
   let length = store.get('frontCollarLength') + store.get('backCollarLength')
@@ -44,6 +45,9 @@ function draftCarltonCollarStand({
     .curve(points.standTipCpLeft, points.bottomLeftCpLeft, points.bottomLeft)
     .close()
     .attr('class', 'fabric')
+
+  addCut()
+  addCut({ cut: 1, material: 'lmhCanvas' })
 
   if (complete) {
     points.title = points.bottomLeftCp.clone()
