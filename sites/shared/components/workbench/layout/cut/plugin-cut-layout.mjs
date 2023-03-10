@@ -106,7 +106,8 @@ export const cutLayoutPlugin = function (material, grainAngle) {
         const mirrorPaths = []
         for (const p in paths) {
           // skip ones that are hidden
-          if (!paths[p].hidden) mirrorPaths.push(paths[p])
+          if (!paths[p].hidden && !p.match(/^(cutonfold|grainline|__scalebox|__miniscale)/))
+            mirrorPaths.push(paths[p])
         }
 
         // store all the points to mirror
