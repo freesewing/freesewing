@@ -38,15 +38,20 @@ describe('Cutlist Plugin Tests', () => {
     const Test = new Design({ parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    expect(pattern.setStores[0].cutlist.example_part.materials.fabric.cut).to.equal(2)
-    expect(pattern.setStores[0].cutlist.example_part.materials.fabric.identical).to.equal(false)
+    expect(pattern.setStores[0].cutlist.example_part.materials.fabric).to.have.lengthOf(1)
+    expect(pattern.setStores[0].cutlist.example_part.materials.fabric[0]).to.deep.equal({
+      cut: 2,
+      identical: false,
+      bias: false,
+      ignoreOnFold: false,
+    })
   })
 
   it('Should handle addCut() with non-defaults', () => {
     const part = {
       name: 'example_part',
       draft: ({ addCut, part }) => {
-        addCut(3, 'lining', true)
+        addCut({ cut: 3, material: 'lining', identical: true })
 
         return part
       },
@@ -55,8 +60,13 @@ describe('Cutlist Plugin Tests', () => {
     const Test = new Design({ parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    expect(pattern.setStores[0].cutlist.example_part.materials.lining.cut).to.equal(3)
-    expect(pattern.setStores[0].cutlist.example_part.materials.lining.identical).to.equal(true)
+    expect(pattern.setStores[0].cutlist.example_part.materials.lining).to.have.lengthOf(1)
+    expect(pattern.setStores[0].cutlist.example_part.materials.lining[0]).to.deep.equal({
+      cut: 3,
+      identical: true,
+      bias: false,
+      ignoreOnFold: false,
+    })
   })
 
   it('Should remove cut info via addCut(false)', () => {
@@ -93,7 +103,7 @@ describe('Cutlist Plugin Tests', () => {
     const pattern = new Test()
     pattern.draft()
     expect(typeof pattern.setStores[0].cutlist.example_part.materials.lining).to.equal('undefined')
-    expect(pattern.setStores[0].cutlist.example_part.materials.fabric.cut).to.equal(2)
+    expect(pattern.setStores[0].cutlist.example_part.materials.fabric[0].cut).to.equal(2)
   })
 
   it('Should remove cut info for all materials via removeCut(true)', () => {

@@ -13,6 +13,7 @@ function draftCarlitaSide({
   paths,
   Path,
   part,
+  addCut,
 }) {
   // Give points their original names
   for (let i of store.get('side')) points[i] = points[i + 'Rot2'].clone()
@@ -38,6 +39,10 @@ function draftCarlitaSide({
   paths.seam = paths.saBase.clone().line(points.hem).close().attr('class', 'fabric')
 
   if (complete) {
+    if (typeof addCut === 'function') {
+      addCut()
+      addCut({ material: 'lining' })
+    }
     points.title = points.bustPoint.shiftFractionTowards(points.waist, 0.5)
     macro('title', {
       at: points.title,

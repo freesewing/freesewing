@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import { PrintLayoutSettings } from './settings.mjs'
 import { Draft } from '../draft/index.mjs'
-import { pagesPlugin } from './plugin.mjs'
+import { pagesPlugin } from '../plugin-layout-part.mjs'
 import {
   handleExport,
   defaultPdfSettings,
@@ -15,7 +15,7 @@ export const PrintLayout = (props) => {
     if (props.gist?._state?.xray?.enabled) props.updateGist(['_state', 'xray', 'enabled'], false)
   })
 
-  const { t } = useTranslation(['workbench'])
+  const { t } = useTranslation(['workbench', 'plugin'])
   const [error, setError] = useState(false)
 
   const draft = props.draft

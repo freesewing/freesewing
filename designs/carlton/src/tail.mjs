@@ -13,6 +13,7 @@ function draftCarltonTail({
   paths,
   Path,
   part,
+  addCut,
 }) {
   let length = store.get('waistToHem') - store.get('beltWidth') / 2
 
@@ -67,6 +68,9 @@ function draftCarltonTail({
     .move(points.fold5Top)
     .line(points.fold5Bottom)
     .attr('class', 'fabric dashed')
+
+  addCut()
+  addCut({ material: 'lining' })
 
   if (complete) {
     points.title = points.fold4Top.shiftFractionTowards(points.waistBottom, 0.5)

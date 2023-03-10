@@ -46,4 +46,4 @@ access the following properties:
 || **_Return value_**   |
 | `part`            | Your draft method **must** return this |
 
-
+<Note> Some plugins, such as the [cutlist plugin](/reference/plugins/cutlist) add additional methods to this object that can be accessed through the same destructuring </Note>

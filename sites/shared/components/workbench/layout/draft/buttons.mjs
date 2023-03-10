@@ -1,5 +1,6 @@
 import { useTranslation } from 'next-i18next'
 import { ClearIcon } from 'shared/components/icons.mjs'
+import get from 'lodash.get'
 
 const Triangle = ({ transform = 'translate(0,0)', fill = 'currentColor' }) => (
   <path
@@ -50,6 +51,25 @@ const Button = ({ onClickCb, transform, Icon, children }) => {
       <text className="invisible group-hover:visible text-xl">{children}</text>
       <rect width={rectSize} height={rectSize} onClick={_onClick} className="fill-transparent" />
     </g>
+  )
+}
+
+export const ShowButtonsToggle = ({ gist, layoutSetType, updateGist }) => {
+  const { t } = useTranslation('workbench')
+  const path = ['_state', 'layout', layoutSetType, 'showButtons']
+  const showButtons = get(gist, path, true)
+  const setShowButtons = () => updateGist(path, !showButtons)
+
+  return (
+    <label htmlFor="showButtons" className="label">
+      <span className="mr-2">{t('showButtons')}</span>
+      <input
+        type="checkbox"
+        className="toggle toggle-primary"
+        checked={showButtons}
+        onChange={setShowButtons}
+      />
+    </label>
   )
 }
 

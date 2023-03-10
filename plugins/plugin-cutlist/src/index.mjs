@@ -16,8 +16,19 @@ export const plugin = {
 export const cutlistPlugin = plugin
 export const pluginCutlist = plugin
 
-/** Method to add the cut info */
-function addCut(store, partName, cut = 2, material = 'fabric', identical = false) {
+/**
+ * Add a set of cutting instructions for the part
+ * @param {Store} store                   the Store
+ * @param {string} partName               the name of the part
+ * @param {Object} so                     a set of cutting instructions for a material
+ * @param {number} so.cut = 2             the number of pieces to cut from the specified fabric
+ * @param {string} so.material = fabric   the name of the material to cut from
+ * @param {boolean} so.identical = false  should even numbers of pieces be cut in the same direction or mirrored
+ * @param {boolean} so.bias = false       should the pieces in these cutting instructions be cut on the bias
+ * @param {boolean} so.ignoreOnFold       should these cutting instructions ignore any cutOnFold information set by the part
+ */
+function addCut(store, partName, so = {}) {
+  const { cut = 2, material = 'fabric', identical = false, bias = false, ignoreOnFold = false } = so
   if (cut === false) {
     if (material === false) store.unset(['cutlist', partName, 'materials'])
     else store.unset(['cutlist', partName, 'materials', material])
@@ -32,15 +43,15 @@ function addCut(store, partName, cut = 2, material = 'fabric', identical = false
     return store
   }
   const path = ['cutlist', partName, 'materials', material]
-  store.set([...path, 'cut'], cut)
-  store.set([...path, 'identical'], identical)
+  const existing = store.get(path) || []
+  store.set(path, existing.concat({ cut, identical, bias, ignoreOnFold }))
 
   return store
 }
 
 /** Method to remove the cut info */
 function removeCut(store, partName, material = false) {
-  return addCut(store, partName, false, material)
+  return addCut(store, partName, { cut: false, material })
 }
 
 /** Method to add the grain info */
