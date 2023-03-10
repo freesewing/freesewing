@@ -46,11 +46,11 @@ export const pleat = {
         paths[so.prefix + 'PleatFrom'] = new Path()
           .move(points[so.prefix + 'From'])
           .line(points[so.prefix + 'FromIn'])
-          .attr('class', 'note ' + (so.reverse ? 'dashed' : ''))
+          .attr('class', 'note' + (so.reverse ? ' dashed' : ''))
         paths[so.prefix + 'PleatTo'] = new Path()
           .move(points[so.prefix + 'To'])
           .line(points[so.prefix + 'ToIn'])
-          .attr('class', 'note ' + (so.reverse ? '' : 'dashed'))
+          .attr('class', 'note' + (so.reverse ? '' : ' dashed'))
         paths[so.prefix + 'PleatArrow'] = new Path()
           .move(
             points[so.prefix + (so.reverse ? 'To' : 'From')].shiftFractionTowards(
