@@ -1,5 +1,3 @@
-import { name, version } from '../data.mjs'
-
 const markers = `
 <g id="notch">
   <circle cy="0" cx="0" r="1.4" class="fill-note" />
@@ -10,16 +8,11 @@ const markers = `
   <circle cy="0" cx="0" r="2.8" class="note" />
 </g>`
 
-export const notches = {
-  name,
-  version,
-  hooks: {
-    preRender: function (svg) {
+// Export hooks
+export const notchesHooks = {
+  preRender: [
+    function (svg) {
       if (svg.defs.indexOf(`id="notch"`) === -1) svg.defs += markers
     },
-  },
+  ],
 }
-
-// More specifically named exports
-export const notchesPlugin = notches
-export const pluginNotches = notches

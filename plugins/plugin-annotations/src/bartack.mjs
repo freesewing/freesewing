@@ -1,5 +1,3 @@
-import { version, name } from '../data.mjs'
-
 // Method that draws the actual bartack
 const drawBartack = (pointList, { Path }) => {
   let path = new Path().move(pointList.path1[0])
@@ -102,33 +100,25 @@ function createBartack(so, props) {
   return true
 }
 
-// The actual plugin
-export const bartack = {
-  name,
-  version,
-  macros: {
-    bartack: function (so, props) {
-      return createBartack(so, props)
-    },
-    bartackAlong: function (so, props) {
-      so.bartackFractionAlong = false
-      so.bartackAlong = true
-      so.anchor = false
-      so.from = false
-      so.to = false
-      return createBartack(so, props)
-    },
-    bartackFractionAlong: function (so, props) {
-      so.bartackFractionAlong = true
-      so.bartackAlong = false
-      so.anchor = false
-      so.from = false
-      so.to = false
-      return createBartack(so, props)
-    },
+// Export macros
+export const bartackMacros = {
+  bartack: function (so, props) {
+    return createBartack(so, props)
+  },
+  bartackAlong: function (so, props) {
+    so.bartackFractionAlong = false
+    so.bartackAlong = true
+    so.anchor = false
+    so.from = false
+    so.to = false
+    return createBartack(so, props)
+  },
+  bartackFractionAlong: function (so, props) {
+    so.bartackFractionAlong = true
+    so.bartackAlong = false
+    so.anchor = false
+    so.from = false
+    so.to = false
+    return createBartack(so, props)
   },
 }
-
-// More specifically named exports
-export const bartackPlugin = bartack
-export const pluginBartack = bartack

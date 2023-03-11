@@ -1,5 +1,3 @@
-import { name, version } from '../data.mjs'
-
 const defs = [
   // button
   `
@@ -65,18 +63,13 @@ const defs = [
 </g>`,
 ]
 
-export const buttons = {
-  name,
-  version,
-  hooks: {
-    preRender: function (svg) {
+// Export hooks
+export const buttonsHooks = {
+  preRender: [
+    function (svg) {
       for (const def of defs) {
         if (svg.defs.indexOf(def) === -1) svg.defs += def
       }
     },
-  },
+  ],
 }
-
-// More specifically named exports
-export const buttonsPlugin = buttons
-export const pluginButtons = buttons

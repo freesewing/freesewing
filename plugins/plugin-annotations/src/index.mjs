@@ -1,59 +1,41 @@
 import { name, version } from '../data.mjs'
-
-import { bartackPlugin } from './bartack.mjs'
-import { buttonsPlugin } from './buttons.mjs'
-import { crossboxPlugin } from './crossbox.mjs'
-import { cutonfoldPlugin } from './cutonfold.mjs'
-import { grainlinePlugin } from './grainline.mjs'
-import { logoPlugin } from './logo.mjs'
-import { notchesPlugin } from './notches.mjs'
-import { pleatPlugin } from './pleat.mjs'
-import { scaleboxPlugin } from './scalebox.mjs'
-import { sewtogetherPlugin } from './sewtogether.mjs'
-
-const annotationPlugins = [
-  bartackPlugin,
-  buttonsPlugin,
-  crossboxPlugin,
-  cutonfoldPlugin,
-  grainlinePlugin,
-  logoPlugin,
-  notchesPlugin,
-  pleatPlugin,
-  scaleboxPlugin,
-  sewtogetherPlugin,
-]
-
-function annotationHooks() {
-  const hooks = {}
-  for (const plugin of annotationPlugins) {
-    for (const i in plugin.hooks) {
-      if (typeof hooks[i] === 'undefined') hooks[i] = []
-      const hook = plugin.hooks[i]
-      if (typeof hook === 'function') hooks[i].push(hook)
-      else if (typeof hook === 'object') {
-        for (let method of hook) hooks[i].push(method)
-      }
-    }
-  }
-
-  return hooks
-}
-
-function annotationMacros() {
-  const macros = {}
-  for (const plugin of annotationPlugins) {
-    for (const i in plugin.macros) macros[i] = plugin.macros[i]
-  }
-
-  return macros
-}
+// Hooks only
+import { buttonsHooks } from './buttons.mjs'
+import { logoHooks } from './logo.mjs'
+import { notchesHooks } from './notches.mjs'
+// Macros only
+import { bartackMacros } from './bartack.mjs'
+import { crossboxMacros } from './crossbox.mjs'
+import { scaleboxMacros } from './scalebox.mjs'
+// Hooks and Macros
+import { cutonfoldMacros, cutonfoldHooks } from './cutonfold.mjs'
+import { grainlineMacros, grainlineHooks } from './grainline.mjs'
+import { pleatMacros, pleatHooks } from './pleat.mjs'
+import { sewtogetherMacros, sewtogetherHooks } from './sewtogether.mjs'
 
 export const plugin = {
   name,
   version,
-  hooks: annotationHooks(),
-  macros: annotationMacros(),
+  hooks: {
+    preRender: [
+      ...buttonsHooks.preRender,
+      ...logoHooks.preRender,
+      ...notchesHooks.preRender,
+      ...cutonfoldHooks.preRender,
+      ...grainlineHooks.preRender,
+      ...pleatHooks.preRender,
+      ...sewtogetherHooks.preRender,
+    ],
+  },
+  macros: {
+    ...bartackMacros,
+    ...crossboxMacros,
+    ...scaleboxMacros,
+    ...cutonfoldMacros,
+    ...grainlineMacros,
+    ...pleatMacros,
+    ...sewtogetherMacros,
+  },
 }
 
 export const annotationPlugin = plugin
