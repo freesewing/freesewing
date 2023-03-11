@@ -163,7 +163,7 @@ function draftBreannaFrontBase({
 
 export const frontBase = {
   name: 'breanna.frontBase',
-  hide: true,
+  hide: { self: true },
   from: base,
   after: back,
   draft: draftBreannaFrontBase,

@@ -1,5 +1,6 @@
 import { backSideBoundary } from './shared.mjs'
 import { front as bentFront } from '@freesewing/bent'
+import { hidePresets } from '@freesewing/core'
 import {
   hipsEase,
   waistEase,
@@ -192,7 +193,7 @@ export const frontBase = {
   name: 'jaeger.frontBase',
   measurements: ['hips', 'waist'],
   from: bentFront,
-  hideAll: true,
+  hide: hidePresets.HIDE_ALL,
   options: {
     hipsEase,
     waistEase,

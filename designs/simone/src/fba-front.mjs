@@ -416,9 +416,12 @@ export const fbaFront = {
   name: 'simone.fbaFront',
   from: front,
   measurements: ['highBust'],
-  hideDependencies: true,
+  hide: {
+    self: true,
+    from: true,
+    inherited: false,
+  },
   plugins: [bustPlugin],
-  hide: true,
   options: {
     draftForHighBust: true,
     minimalDartShaping: 5,

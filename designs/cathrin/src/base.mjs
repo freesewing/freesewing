@@ -91,7 +91,7 @@ function draftCathrinBase({ measurements, options, store, points, paths, Point, 
 
 export const base = {
   name: 'cathrin.base',
-  hide: true,
+  hide: { self: true },
   measurements: ['underbust', 'waist', 'hips', 'waistToUnderbust', 'waistToHips'],
   options: {
     waistReduction: { pct: 10, min: 2, max: 20, menu: 'fit' },

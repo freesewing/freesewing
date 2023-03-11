@@ -126,7 +126,11 @@ export const underSleeve = {
   name: 'carlton.underSleeve',
   from: bentUnderSleeve,
   after: bentFront,
-  hideDependencies: true,
+  hide: {
+    from: true,
+    after: true,
+    inherited: true,
+  },
   measurements: ['shoulderToWrist'],
   options: {
     cuffLength: { pct: 15, min: 10, max: 20, menu: 'style' },

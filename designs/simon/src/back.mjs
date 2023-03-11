@@ -1,6 +1,7 @@
 import { calculateReduction } from './shared.mjs'
 import { flipPlugin } from '@freesewing/plugin-flip'
 import { back as brianBack } from '@freesewing/brian'
+import { hidePresets } from '@freesewing/core'
 import {
   collarFactor,
   backDarts,
@@ -407,8 +408,8 @@ export const back = {
   name: 'simon.back',
   plugins: [flipPlugin],
   measurements: ['waist', 'hips'],
-  hideDependencies: true,
   from: brianBack,
+  hide: hidePresets.HIDE_TREE,
   options: {
     collarFactor,
     backDarts,

@@ -149,7 +149,11 @@ export const topSleeve = {
   name: 'carlton.topSleeve',
   from: bentTopSleeve,
   after: bentFront,
-  hideDependencies: true,
+  hide: {
+    after: true,
+    from: true,
+    inherited: true,
+  },
   measurements: ['shoulderToWrist'],
   options: {
     cuffLength: { pct: 15, min: 10, max: 20, menu: 'style' },

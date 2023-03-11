@@ -3,7 +3,7 @@ import { withCondition as bustPlugin } from '@freesewing/plugin-bust'
 
 export const base = {
   name: 'brian.base',
-  hide: true,
+  hide: { self: true },
   measurements: [
     'biceps',
     'chest',
