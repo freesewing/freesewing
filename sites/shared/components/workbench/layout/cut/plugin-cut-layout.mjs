@@ -1,3 +1,4 @@
+import { addToOnly } from '../plugin-layout-part.mjs'
 const prefix = 'mirroredOnFold'
 
 // types of path operations
@@ -14,12 +15,16 @@ export const cutLayoutPlugin = function (material, grainAngle) {
     hooks: {
       // after each part
       postPartDraft: (pattern) => {
-        // get the part that's just been drafted
-        const part = pattern.parts[pattern.activeSet][pattern.activePart]
-        // if it's a duplicated cut part, the fabric part, or it's hidden, leave it alone
-        if (pattern.activePart.startsWith('cut.') || pattern.activePart === 'fabric' || part.hidden)
+        // if it's a duplicated cut part, the fabric part, or it's not wanted by the pattern
+        if (
+          pattern.activePart.startsWith('cut.') ||
+          pattern.activePart === 'fabric' ||
+          !pattern.__wants(pattern.activePart)
+        )
           return
 
+        // get the part that's just been drafted
+        const part = pattern.parts[pattern.activeSet][pattern.activePart]
         // get this part's cutlist configuration
         let partCutlist = pattern.setStores[pattern.activeSet].get(['cutlist', pattern.activePart])
         // if there isn't one, we're done here
@@ -71,6 +76,9 @@ export const cutLayoutPlugin = function (material, grainAngle) {
                   return part
                 },
               })
+
+              // add it to the only list if there is one
+              addToOnly(pattern, dupPartName)
             }
           })
         }

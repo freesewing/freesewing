@@ -58,6 +58,8 @@ const useFabricList = (draft) => {
   const cutList = draft.setStores[0].get('cutlist')
   const fabricList = ['fabric']
   for (const partName in cutList) {
+    if (draft.settings[0].only && !draft.settings[0].only.includes(partName)) continue
+
     for (const matName in cutList[partName].materials) {
       if (!fabricList.includes(matName)) fabricList.push(matName)
     }

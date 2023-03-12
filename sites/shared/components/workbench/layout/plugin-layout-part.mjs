@@ -94,7 +94,7 @@ const doScanForBlanks = (stacks, layout, x, y, w, h) => {
   return hasContent
 }
 
-function addToOnly(pattern, partName) {
+export function addToOnly(pattern, partName) {
   const only = pattern.settings[0].only
   if (only && !only.includes(partName)) {
     pattern.settings[0].only = [].concat(only, partName)
