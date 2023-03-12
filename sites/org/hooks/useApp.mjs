@@ -160,7 +160,7 @@ export function useApp({ bugsnag }) {
 
   // Clear user data (when loggin in as a different user, this gets called)
   const clear = () => {
-    setAccount({ username: false })
+    setAccount(noAccount)
   }
 
   return {
