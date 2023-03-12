@@ -37,7 +37,7 @@ export const plugin = {
         prefix: 'cutonfold',
         ...so,
       }
-      if (typeof store.cutlist !== undefined) {
+      if (typeof store.cutlist !== 'undefined') {
         store.cutlist.setCutOnFold(so.from, so.to)
         if (so.grainline) store.cutlist.setGrain(so.from.angle(so.to))
       }
