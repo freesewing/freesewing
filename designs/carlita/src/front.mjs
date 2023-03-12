@@ -347,11 +347,10 @@ function draftCarlitaFront({
     .close()
     .attr('class', 'fabric help')
 
+  store.cutlist.addCut()
+  store.cutlist.addCut({ material: 'lining' })
+
   if (complete) {
-    if (typeof store.addCut === 'function') {
-      store.addCut()
-      store.addCut({ material: 'lining' })
-    }
     snippets.button1Left = new Snippet('button', points.button1Left).attr('data-scale', 2)
     snippets.button1Right = new Snippet('button', points.button1Right).attr('data-scale', 2)
     snippets.button2Left = new Snippet('button', points.button2Left).attr('data-scale', 2)

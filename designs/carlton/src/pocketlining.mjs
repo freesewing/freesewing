@@ -45,7 +45,7 @@ function draftCarltonPocketLining({
 
   delete paths.fold
 
-  if (typeof store.addCut === 'function') store.addCut({ material: 'lining' })
+  store.cutlist.addCut({ material: 'lining' })
 
   if (complete) {
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)

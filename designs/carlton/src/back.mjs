@@ -97,10 +97,8 @@ function draftCarltonBack({
     .line(points.bpStart)
     .attr('class', 'dashed')
 
-  if (typeof store.addCut === 'function') {
-    store.addCut()
-    store.addCut({ cut: 2, material: 'lining' })
-  }
+  store.cutlist.addCut()
+  store.cutlist.addCut({ material: 'lining' })
 
   if (complete) {
     macro('title', {

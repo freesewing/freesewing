@@ -300,7 +300,7 @@ function draftCarltonFront({
     .close()
     .attr('class', 'fabric help')
 
-  if (typeof store.addCut === 'function') store.addCut()
+  store.cutlist.addCut()
 
   if (complete) {
     snippets.button1Left = new Snippet('button', points.button1Left).attr('data-scale', 2)

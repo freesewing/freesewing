@@ -5,10 +5,10 @@ export const plugin = {
   name,
   version,
   store: [
-    ['addCut', addCut],
-    ['removeCut', removeCut],
-    ['setGrain', setGrain],
-    ['setCutOnFold', setCutOnFold],
+    [['cutlist', 'addCut'], addCut],
+    [['cutlist', 'removeCut'], removeCut],
+    [['cutlist', 'setGrain'], setGrain],
+    [['cutlist', 'setCutOnFold'], setCutOnFold],
   ],
 }
 

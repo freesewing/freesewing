@@ -37,9 +37,9 @@ export const plugin = {
         prefix: 'cutonfold',
         ...so,
       }
-      if (typeof store.setCutOnFold === 'function') {
-        store.setCutOnFold(so.from, so.to)
-        if (so.grainline) store.setGrain(so.from.angle(so.to))
+      if (typeof store.cutlist !== undefined) {
+        store.cutlist.setCutOnFold(so.from, so.to)
+        if (so.grainline) store.cutlist.setGrain(so.from.angle(so.to))
       }
       if (complete) {
         points[so.prefix + 'From'] = so.from.shiftFractionTowards(so.to, so.margin / 100)

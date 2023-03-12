@@ -37,11 +37,10 @@ function draftCarlitaSide({
     .line(points.psHem)
   paths.seam = paths.saBase.clone().line(points.hem).close().attr('class', 'fabric')
 
+  store.cutlist.addCut()
+  store.cutlist.addCut({ material: 'lining' })
+
   if (complete) {
-    if (typeof store.addCut === 'function') {
-      store.addCut()
-      store.addCut({ material: 'lining' })
-    }
     points.title = points.bustPoint.shiftFractionTowards(points.waist, 0.5)
     macro('title', {
       at: points.title,

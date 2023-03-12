@@ -30,7 +30,7 @@ function draftCarltonInnerPocketTab({
 
   paths.hint = new Path().move(points.top).line(points.bottom).attr('class', 'lining dashed')
 
-  if (typeof store.addCut === 'function') store.addCut({ cut: 1, material: 'lining' })
+  store.cutlist.addCut({ cut: 1, material: 'lining' })
 
   if (complete) {
     points.title = points.top.shiftFractionTowards(points.bottom, 0.5)

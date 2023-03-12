@@ -49,7 +49,8 @@ function draftCarltonBelt({
     .close()
     .attr('class', 'fabric')
 
-  if (typeof store.addCut === 'function') store.addCut({ cut: 4 })
+  store.cutlist.addCut({ cut: 4 })
+
   if (complete) {
     snippets.button = new Snippet('button', points.button).attr('data-scale', 2)
     points.title = new Point(points.bottomRight.x / 2, points.bottomRight.y / 2)

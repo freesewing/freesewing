@@ -24,8 +24,8 @@ export const plugin = {
         delete points.grainlineFrom
         delete points.grainlineTo
         delete paths.grainline
-        if (typeof store.setGrain === 'function') {
-          setGrain(false) // Restoring default
+        if (typeof store.cutlist.setGrain === 'function') {
+          store.cutlist.setGrain(false) // Restoring default
         }
         return true
       }
@@ -34,8 +34,8 @@ export const plugin = {
         ...so,
       }
       // setGrain relies on plugin-cutlist
-      if (typeof store.setGrain === 'function') {
-        store.setGrain(so.from.angle(so.to))
+      if (typeof store.cutlist.setGrain === 'function') {
+        store.cutlist.setGrain(so.from.angle(so.to))
       }
       if (complete) {
         points.grainlineFrom = so.from.shiftFractionTowards(so.to, 0.05)

@@ -53,7 +53,7 @@ function draftCarltonPocket({
 
   paths.fold = new Path().move(points.topLeft).line(points.topRight).attr('class', 'fabric dashed')
 
-  if (typeof store.addCut === 'function') store.addCut()
+  store.cutlist.addCut()
 
   if (complete) {
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)

@@ -50,10 +50,8 @@ function draftCarltonUnderSleeve({
     .close()
     .attr('class', 'fabric')
 
-  if (typeof store.addCut === 'function') {
-    store.addCut()
-    store.addCut({ material: 'lining' })
-  }
+  store.cutlist.addCut()
+  store.cutlist.addCut({ material: 'lining' })
 
   if (complete) {
     macro('title', {
