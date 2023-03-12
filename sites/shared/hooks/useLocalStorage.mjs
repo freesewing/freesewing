@@ -32,7 +32,7 @@ export function useLocalStorage(key, initialValue) {
     } catch (error) {
       console.log(error)
     }
-  }, [setReady, setValue, key, initialValue])
+  }, []) // The linter will hate this, but this was cleared to stop a render loop
 
   return [storedValue, setValue, ready]
 }
