@@ -44,10 +44,18 @@ export function Store(methods = []) {
   }
   this.logs = logs
 
+  // Make it easy to figure out whether store has a method available
+  this.hasMethod = {}
+  for (const level in this.log) this.hasMethod[`log.${level}`] = true
+  for (const method of avoid) this.hasMethod[method] = true
+
   for (const [path, method] of methods) {
     if (avoid.indexOf(path) !== -1) {
       this.log.warning(`You cannot overwrite store.${path}()`)
-    } else set(this, path, method)
+    } else {
+      set(this, path, method)
+      this.hasMethod[path] = true
+    }
   }
 
   return this
