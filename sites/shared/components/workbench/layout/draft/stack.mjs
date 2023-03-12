@@ -50,6 +50,7 @@ import { getProps, angle } from '../../draft/utils.mjs'
 import { drag } from 'd3-drag'
 import { select } from 'd3-selection'
 import { Buttons } from './buttons.mjs'
+import get from 'lodash.get'
 
 export const Stack = (props) => {
   const { layout, stack, stackName, gist } = props
@@ -230,6 +231,7 @@ export const Stack = (props) => {
   // don't render if the part is empty
   // if (Object.keys(part.snippets).length === 0 && Object.keys(part.paths).length === 0) return null;
 
+  const showButtons = get(gist, ['_state', 'layout', props.layoutSetType, 'showButtons'], true)
   return (
     <g id={`stack-${stackName}`} {...getProps(stack)} ref={stackRef}>
       <g id={`stack-inner-${stackName}`} ref={innerRef}>
@@ -249,17 +251,19 @@ export const Stack = (props) => {
             id={`${stackName}-layout-rect`}
             onClick={toggleDragRotate}
           />
-          <Buttons
-            transform={`translate(${center.x}, ${center.y}) rotate(${-rotation}) scale(${
-              flipX ? -1 : 1
-            },${flipY ? -1 : 1})`}
-            flip={flip}
-            rotate={rotate}
-            setRotate={setRotate}
-            resetPart={resetPart}
-            rotate90={rotate90}
-            partName={stackName}
-          />
+          {showButtons ? (
+            <Buttons
+              transform={`translate(${center.x}, ${center.y}) rotate(${-rotation}) scale(${
+                flipX ? -1 : 1
+              },${flipY ? -1 : 1})`}
+              flip={flip}
+              rotate={rotate}
+              setRotate={setRotate}
+              resetPart={resetPart}
+              rotate90={rotate90}
+              partName={stackName}
+            />
+          ) : null}
         </>
       )}
     </g>

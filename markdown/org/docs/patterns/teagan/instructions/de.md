@@ -18,7 +18,7 @@ Optional: In einem Drapierstrick können Sie die Schulternähte durch das Nähen
 ![Set in sleeves](step02.svg)
 
 - Platzieren Sie Ihre jetzt befestigte Vorder- und Rückseite mit der guten Seite.
-- Identifizieren Sie die Vorder- und Rückseite jeder Ihrer Ärmel. (So trennen Sie den linken Ärmel von rechts.) (So trennen Sie den linken Ärmel von rechts.) On your paper pattern piece, the front side of the sleeve is to the right.
+- Identifizieren Sie die Vorder- und Rückseite jeder Ihrer Ärmel. (So trennen Sie den linken Ärmel von rechts.) On your paper pattern piece, the front side of the sleeve is to the right.
 - Platzieren Sie einen Ärmel oben auf der Vorder- und Rückseite mit der guten Seite.
 - Legen Sie die Oberseite der Ärmel mit der Schulternaht an. Vergewissern Sie sich, dass Vorder- und Rückseite des Ärmels mit den Vorder- und Rückenteilen Ihres Hemdes ausgerichtet sind.
 - Pin Sleeve am Platz entlang des gesamten Armlochs. Es gibt ein bisschen Ärmel Leichtigkeit, was bedeutet, dass der Ärmelkopf etwas länger ist als das Armloch. Leicht im oberen Teil des Ärmelkopfes während der Pinning.

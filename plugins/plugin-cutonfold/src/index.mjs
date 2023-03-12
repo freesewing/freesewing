@@ -24,7 +24,7 @@ export const plugin = {
         delete points.cutonfoldTo
         delete points.cutonfoldVia1
         delete points.cutonfoldVia2
-        delete paths.cutonfold
+        delete paths.cutonfoldCutonfold
         // setCutOnFold relies on plugin-cutlist
         if (typeof setCutOnFold === 'function') {
           setCutOnFold(false) // Restore default

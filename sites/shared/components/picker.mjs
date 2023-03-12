@@ -2,7 +2,7 @@ import { forwardRef } from 'react'
 import { Menu } from '@headlessui/react'
 import Link from 'next/link'
 
-// FIXME: Is this even used at all?
+// FIXME: Update this to be used to dry up all picker components
 
 /** an accessible dropdown menu for use by picker components */
 export const Picker = ({ Icon, className, title, ariaLabel, iconOnly = false, children, end }) => {
@@ -67,6 +67,8 @@ const ForwardLink = forwardRef(({ href, locale, active, children, ...rest }, ref
     <span className="text-base-content">{children}</span>
   </Link>
 ))
+
+ForwardLink.displayName = 'ForwardLink'
 
 /** a menu item that is a button */
 export const PickerButton = ({ onClick, children }) => {

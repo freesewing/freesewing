@@ -82,6 +82,7 @@ export const front = {
     sa,
     paperless,
     macro,
+    store,
     part,
   }) => {
     let chestWidth = measurements.chest / 4
@@ -100,6 +101,13 @@ export const front = {
     let hemWidth = strapWidth
     let sideHemWidth = Math.max(sa, hemWidth / 4)
     let pocketSize = apronLength / 4
+
+    store.set('bibWidth', bibWidth)
+    store.set('apronLength', apronLength)
+    store.set('apronWidth', apronWidth)
+    store.set('strapWidth', strapWidth)
+    store.set('hemWidth', hemWidth)
+    store.set('pocketSize', pocketSize)
 
     points.topLeft = new Point(0, 0)
     points.topLeftHem = points.topLeft.shift(270, hemWidth)

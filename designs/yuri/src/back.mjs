@@ -1,5 +1,6 @@
 import { back as brianBack } from '@freesewing/brian'
 import { sharedDimensions } from './shared.mjs'
+import { hidePresets } from '@freesewing/core'
 
 function yuriBack({
   store,
@@ -109,7 +110,7 @@ export const back = {
       sleeveLengthBonus: { pct: 1, min: 0, max: 10 },
     },
   },
-  hideDependencies: true,
+  hide: hidePresets.HIDE_TREE,
   options: {
     hipsEase: { pct: 0, min: 0, max: 10 },
   },

@@ -51,7 +51,7 @@
   "peerDependencies": {},
   "dependencies": {
     "bezier-js": "6.1.0",
-    "bin-pack": "1.0.2",
+    "bin-pack-with-constraints": "1.0.1",
     "hooks": "0.3.2",
     "lodash.get": "4.4.2",
     "lodash.set": "4.3.2",
@@ -59,8 +59,11 @@
     "lodash.clonedeep": "^4.5.0"
   },
   "devDependencies": {
-    "eslint": "8.33.0",
-    "nyc": "15.1.0"
+    "eslint": "8.34.0",
+    "nyc": "15.1.0",
+    "mocha": "10.0.0",
+    "chai": "4.2.0",
+    "sinon": "^15.0.1"
   },
   "files": [
     "dist/*",

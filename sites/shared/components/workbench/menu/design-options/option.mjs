@@ -21,7 +21,7 @@ export const OptionComponent = (props) => {
   const Value = values[capitalize(type)]
 
   try {
-    const hide = opt.hide && opt.hide(props.draft.settings)
+    const hide = opt.hide && opt.hide(props.gist)
 
     if (hide) return null
   } catch (e) {

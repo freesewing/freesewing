@@ -12,6 +12,6 @@ export const configpart = {
     widthRatio: { pct: 45, min: 35, max: 55 },
     lengthRatio: { pct: 75, min: 55, max: 85 },
   },
-  hide: true,
+  hide: { self: true },
   draft: ({ part }) => part,
 }

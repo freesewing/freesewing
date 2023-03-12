@@ -7,6 +7,7 @@ import { Point } from './point.mjs'
 import { Path } from './path.mjs'
 import { Snippet } from './snippet.mjs'
 import { Store } from './store.mjs'
+import { hidePresets } from './pattern-config.mjs'
 import {
   beamIntersectsCircle,
   beamIntersectsX,
@@ -47,6 +48,8 @@ export {
   Store,
   version,
   Bezier,
+  //consts
+  hidePresets,
   // Utils
   beamIntersectsCircle,
   beamIntersectsX,

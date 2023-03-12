@@ -9,6 +9,7 @@ import cutonfold from './plugins/cutonfold.yaml'
 import grainline from './plugins/grainline.yaml'
 import scalebox from './plugins/scalebox.yaml'
 import title from './plugins/title.yaml'
+import cutlist from './plugins/cutlist/yaml'
 
 const files = {
   brian,
@@ -22,6 +23,7 @@ const files = {
   grainline,
   scalebox,
   title,
+  cutlist,
 }
 
 const messages = {}

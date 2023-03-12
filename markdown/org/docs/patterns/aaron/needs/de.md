@@ -1,11 +1,11 @@
 - - -
-title: "Aaron A-Shirt: What You Need"
+title: "Aaron, das A-Shirt: Was du brauchst"
 - - -
 
-To make Aaron, you will need the following:
+Um Aaron zu erstellen, benötigst du Folgendes:
 
 - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
-- About 0.75 meters (0.8 yards) of a suitable fabric ([see Fabric options](/docs/patterns/aaron/fabric))
+- Etwa 0.75 cm (0.8") eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/patterns/aaron/fabric))
 
 <Note>
 
@@ -13,7 +13,7 @@ To make Aaron, you will need the following:
 
 Wie bei allen Strickwaren und Stretchgeweben wird dir ein Serger/Overlock das Leben erleichtern.
 
-Wenn Sie nicht eines davon haben, verzweifeln Sie nicht. Sie brauchen es nicht wirklich.
-Da diese Seitennaht und Schulternähte nicht ausgedehnt werden, können Sie sie einfach mit einer regelmässigen geraden Nähte nähen.
+Wenn du keine hast, musst du aber nicht verzweifeln. Du brauchst sie nicht unbedingt.
+Da die Seiten- und Schulternähte nicht gedehnt werden, kannst du sie mit einem gewöhnlichen Geradstich nähen.
 
 </Note>

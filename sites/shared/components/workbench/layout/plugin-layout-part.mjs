@@ -50,6 +50,14 @@ export const pagesPlugin = ({ size = 'a4', ...settings }) => {
   return basePlugin({ ...settings, sheetWidth, sheetHeight })
 }
 
+export const fabricPlugin = (settings) => {
+  return basePlugin({
+    ...settings,
+    partName: 'fabric',
+    responsiveColumns: false,
+  })
+}
+
 /** check if there is anything to render on the given section of the svg so that we can skip empty pages */
 const doScanForBlanks = (stacks, layout, x, y, w, h) => {
   let hasContent = false
@@ -86,13 +94,26 @@ const doScanForBlanks = (stacks, layout, x, y, w, h) => {
   return hasContent
 }
 
+function addToOnly(pattern, partName) {
+  const only = pattern.settings[0].only
+  if (only && !only.includes(partName)) {
+    pattern.settings[0].only = [].concat(only, partName)
+  }
+}
+
+function removeFromOnly(pattern, partName) {
+  const only = pattern.settings[0].only
+  if (only && only.includes(partName)) {
+    pattern.settings[0].only.splice(only.indexOf(partName), 1)
+  }
+}
 /**
  * The base plugin for adding a layout helper part like pages or fabric
  * sheetWidth: the width of the helper part
  * sheetHeight: the height of the helper part
  * boundary: should the helper part calculate its boundary?
  * responsiveColumns: should the part make more columns if the pattern exceed its width? (for pages you want this, for fabric you don't)
- * printStyle: hould the pages be rendered for printing or for screen viewing?
+ * printStyle: should the pages be rendered for printing or for screen viewing?
  * */
 const basePlugin = ({
   sheetWidth,
@@ -108,7 +129,12 @@ const basePlugin = ({
   name,
   version,
   hooks: {
-    preLayout: function (pattern) {
+    preDraft: function (pattern) {
+      if (!responsiveColumns) {
+        pattern.settings[0].maxWidth = sheetWidth
+      }
+
+      addToOnly(pattern, partName)
       // Add part
       pattern.addPart({
         name: partName,
@@ -124,20 +150,14 @@ const basePlugin = ({
           return shorthand.part
         },
       })
-
-      // Re-calculate the pattern's config
-      pattern.getConfig()
-      // create the part so that a stack gets made for it during packing
-      // but don't draft it so that it doesn't have a size
-      pattern.createPartForSet(partName, pattern.activeSet)
     },
     postLayout: function (pattern) {
       let { height, width, stacks } = pattern
       if (!responsiveColumns) width = sheetWidth
       // get the layout
       const layout =
-        typeof pattern.settings[0].layout === 'object'
-          ? pattern.settings[0].layout
+        typeof pattern.settings[pattern.activeSet].layout === 'object'
+          ? pattern.settings[pattern.activeSet].layout
           : pattern.autoLayout
 
       // if the layout doesn't start at 0,0 we want to account for that in our height and width
@@ -164,22 +184,14 @@ const basePlugin = ({
         pattern.width = sheetWidth * generatedPageData.cols
         pattern.height = sheetHeight * generatedPageData.rows
       }
+
+      removeFromOnly(pattern, partName)
     },
     preRender: function (svg) {
-      const pattern = svg.pattern
-      const only = pattern.settings[pattern.activeStack || 0].only
-      // add the layout part to the include list if there is one so that it gets rendered
-      if (Array.isArray(only) && !only.includes(partName)) {
-        pattern.settings[pattern.activeStack || 0].only.push(partName)
-      }
+      addToOnly(svg.pattern, partName)
     },
     postRender: function (svg) {
-      const pattern = svg.pattern
-      const only = pattern.settings[pattern.activeStack || 0].only
-      // remove the layout part from the include list if there is one so that we don't pollute the settings
-      if (Array.isArray(only) && only.includes(partName)) {
-        pattern.settings[pattern.activeStack || 0].only.splice(only.indexOf(partName), 1)
-      }
+      removeFromOnly(svg.pattern, partName)
     },
   },
   macros: {
@@ -293,6 +305,10 @@ const basePlugin = ({
 
       // get the distance between the smaller ticks on the rule
       const division = (isMetric ? 0.1 : 0.125) / rulerLength
+      // Set up intervals for whole and half units.
+      const wholeInterval = isMetric ? 10 : 8
+      const halfInterval = isMetric ? 5 : 4
+      let tickCounter = 1
       // we're going to go by fraction, so we want to do this up to 1
       for (var d = division; d < 1; d += division) {
         // make a start point
@@ -304,9 +320,10 @@ const basePlugin = ({
         // base tick size on whether this is a major interval or a minor one
         let tick = 1
         // if this tick indicates a whole unit, extra long
-        if (d.toFixed(3) % (1 / rulerLength) === 0) tick = 3
+        if (tickCounter % wholeInterval === 0) tick = 3
         // if this tick indicates half a unit, long
-        else if (d.toFixed(3) % (0.5 / rulerLength) === 0) tick = 2
+        else if (tickCounter % halfInterval === 0) tick = 2
+        tickCounter++
 
         // make a point for the end of the tick
         points[`${rulerName}-ruler-${d}-tick`] = points[`${rulerName}-ruler-${d}-end`].translate(

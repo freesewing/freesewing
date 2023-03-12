@@ -17,7 +17,7 @@ Nun die schlechte Nachricht: Die schriftlichen Anweisungen für Hugo sind noch n
 
 Ist der Text zu trocken für dich? Ich versuche, Videos als Teil der Musterdokumentation zur Verfügung zu stellen.
 
-Diese 6-Episoden-Serie zeigt dir, wie du deine Hoodie zum Ende bringen kannst:
+Diese Reihe an 6 Episoden zeigt dir, wie du deinen Hoodie von Anfang bis Ende nähst:
 
 <YouTube id='PL1gv5yv3DoZOHLjisuD1JcUPTkFy_IGGO' playlist />
 
@@ -25,7 +25,7 @@ Diese 6-Episoden-Serie zeigt dir, wie du deine Hoodie zum Ende bringen kannst:
 
 ### Schritt 1: Bereiten die Tasche vor
 
-- Platzieren Sie die das Taschenfutter (pocket facing) rechts auf rechts auf das Taschenteil (pocket piece).
+- Platziere das Taschenfutter (pocket facing) rechts auf rechts auf das Taschenteil (pocket piece).
 - Nähe die Futterteile mit einer Nahtzugabe von 1cm auf das Taschenteil.  Nähen Sie sowohl den langen Rand als auch den kürzeren Rand am unteren Rand der Tasche.
 - Die Nahtzugaben am Futterteil vorsichtig einkürzen.
 - Die Tasche wenden, sodass die rechte Seite außen ist.  Dann Handwalzen und drücken Sie die Nähte.
@@ -37,7 +37,7 @@ Diese 6-Episoden-Serie zeigt dir, wie du deine Hoodie zum Ende bringen kannst:
 ### Schritt 2: Befestige die Tasche
 
 - Passen Sie die Pocket auf die Vorderseite, gute Seiten zusammen.
-- Die obere Taschennahtlinie ist mit Knipsen am Schnittmuster gekennzeichnet.  Die Unterkante der Tasche sollte auf die Halslinie zeigen.  Die Kanten der Tasche horizontal mit den Noten am Muster ausrichten. Überlappen Sie die Oberseite der Tasche über der Nahtlinie um etwas weniger als 1 cm Nahtzugabe.
+- Die obere Taschennahtlinie ist mit Knipsen am Schnittmuster gekennzeichnet.  Die Unterkante der Tasche sollte auf die Halslinie zeigen.  Die Kanten der Tasche horizontal mit den Noten am Muster ausrichten. Overlap the top of the pocket over the seam line by a little less than 1 cm seam allowance.
 - Nähen Sie die obere Naht der Tasche an die Shirt Front.
 - Drehen Sie die Tasche über die Nahtlinie, so dass die Unterseite nun mit der Kante an der Taille nach oben zieht.
 - Mit einem langen Heftstich (4mm oder länger) die Tasche in der Taille mit einer Nahtzugabe von ½ cm fixieren.  Dies ist optional, hält aber die Tasche fest während Sie am Rest des Hemdes arbeiten.
@@ -52,7 +52,7 @@ Diese 6-Episoden-Serie zeigt dir, wie du deine Hoodie zum Ende bringen kannst:
 
   - Verwenden Sie einen Serger, um die Naht in einem Schritt zu nähen und zu beenden.  Dies ist schnell und komfortabel, erzeugt aber ein weniger raffiniertes Aussehen.
   - Wenn Sie keinen Serger haben oder einen raffinierteren Look wünschen, nähen Sie eine Naht mit einer geraden Naht auf Ihrer herkömmlichen Maschine. Bügeln Sie die Nahtzugabe auf der linken Seite auseinander.  Dann auf beiden Seiten der Naht auf der rechten Seite knappkantig absteppen.  Kürze die Nahtzugabe ein.  Dies erzeugt ein raffiniertes Aussehen, aber dauert länger.
-  - Eine weitere serger-freie Option ist das Nähen der Naht mit einem geraden Stich. Dann die Nahtzugaben mit einer zusätzlichen Zick-Zack-Linie neben der geraden Naht zusammennähen.  Nahtzugabe einkürzen.  Dies simuliert, was ein Serger tun würde, und ist schneller als die Option (2).
+  - Eine weitere Option ohne Overlock ist das Nähen der Naht mit einem geraden Stich. Dann die Nahtzugaben mit einer zusätzlichen Zick-Zack-Linie neben der geraden Naht zusammennähen.  Nahtzugabe einkürzen.  Dies simuliert, was ein Serger tun würde, und ist schneller als die Option (2).
 
 - Lege die Hinterseite des Ärmels rechts auf rechts auf das Rückenteil. Die doppelten Knipse treffen aufeinander.  Nähen Sie die Naht ab und beenden Sie die Nähte wie für die Vorderseite.
 
@@ -60,12 +60,12 @@ Diese 6-Episoden-Serie zeigt dir, wie du deine Hoodie zum Ende bringen kannst:
 
 - Ärmel- und Seitennaht passgenau aufeinander legen.
 - Nähen Sie die Seitennaht und die Ärmel in einer langen Naht zusammen von der Taille bis zum Ende des Ärmels.  Sie können an der Unterarm Punkt stoppen, um die Farben für den Ärmel zu ändern, wenn Ihr Design dies erfordert.
-- Drücken Sie die Nahtzuschläge und beenden Sie sie wie in Schritt 2.  Schneiden Sie die Nahtzuschläge ab.
+- Drücken Sie die Nahtzuschläge und beenden Sie sie wie in Schritt 2.  If you finish the sleeves with the edgestitch method, you will need to go slow for finishing the sleeve seam, as you will be .sewing in the tunnel..
 
 ### Schritt 5: Füge eine Zeichenfolge zur Kapuze hinzu (Optional)
 
 - Nehmen Sie ein passendes Set der Hood Side Stücke, die Sie auf der Außenseite der fertigen Hoodie vorführen möchten.
-- Markieren Sie den Platz für ein Loch an jeder Seitenhaube entlang des Felgens.
+- Mark the place for a hole on each side hood piece, along the rim.
 - Das Loch sollte etwa 1,5-2cm vom Rand des Stoffes entfernt sein.  Dies soll sowohl die Nahtzuweisung als auch die Haube erlauben
 - Das Loch sollte über der Höhe auf dem Kopfrand liegen.  Die Schicht zeigt an, wo sich die Seiten der Kapuze an der Vorderseite überlappen, so dass die Schnur oberhalb dieses Punktes verlassen sollte.
 - Sie können die Funktion des Knopflochs Ihrer Nähmaschine in Betracht ziehen, falls sie eine besitzt, um an dieser Stelle ein Knopfloch zu nähen.

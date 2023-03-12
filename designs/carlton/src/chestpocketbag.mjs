@@ -12,6 +12,7 @@ function draftCarltonChestPocketBag({
   paths,
   Path,
   part,
+  addCut,
 }) {
   points.topLeft = new Point(0, 0)
   points.bottomRight = new Point(
@@ -42,6 +43,8 @@ function draftCarltonChestPocketBag({
     .move(points.endRight)
     .line(points.startRight)
     .attr('class', 'lining dashed')
+
+  addCut({ material: 'lining' })
 
   if (complete) {
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
