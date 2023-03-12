@@ -12,7 +12,6 @@ function draftCarltonCuffFacing({
   paths,
   Path,
   part,
-  addCut,
 }) {
   points.topLeft = new Point(0, 0)
   points.bottomRight = new Point(
@@ -47,8 +46,10 @@ function draftCarltonCuffFacing({
     .close()
     .attr('class', 'fabric')
 
-  addCut()
-  addCut({ cut: 2, material: 'lmhCanvas' })
+  if (typeof store.addCut === 'function') {
+    store.addCut()
+    store.addCut({ cut: 2, material: 'lmhCanvas' })
+  }
 
   if (complete) {
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)

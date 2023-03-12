@@ -65,7 +65,6 @@ export const back = {
     measurements,
     log,
     part,
-    addCut,
   }) => {
     // Get to work
     points.cbNeck = new Point(0, measurements.neck * options.backNeckCutout)
@@ -270,7 +269,7 @@ export const back = {
         on: ['armholePitch', 'bustCenter'],
       })
 
-      addCut()
+      if (typeof store.addCut === 'function') store.addCut()
 
       if (sa) paths.sa = paths.saBase.offset(sa).attr('class', 'fabric sa')
 

@@ -16,7 +16,7 @@ function draftCarltonCollar({
   paths,
   Path,
   part,
-  addCut,
+  store,
 }) {
   // We're going to slash and spread this collar. Slashing first:
   // Divide top in 5 parts
@@ -187,9 +187,11 @@ function draftCarltonCollar({
       grainline: true,
     })
 
-    addCut({ cut: 1 })
-    addCut({ cut: 1, bias: true })
-    addCut({ cut: 2, material: 'lining', bias: true, ignoreOnFold: true })
+    if (typeof store.addCut === 'function') {
+      store.addCut({ cut: 1 })
+      store.addCut({ cut: 1, bias: true })
+      store.addCut({ cut: 2, material: 'lining', bias: true, ignoreOnFold: true })
+    }
 
     points.title = points.standTopCp.clone()
     macro('title', {
