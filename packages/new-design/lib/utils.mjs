@@ -15,7 +15,7 @@ let filename
 try {
   filename = __filename
 } catch {
-  filename = fileURLToPath(import.meta.url)
+  filename = fileURLToPath(new URL(import.meta.url))
 }
 const newDesignDir = join(filename, '../..')
 const designSrcDir = 'design/src'
