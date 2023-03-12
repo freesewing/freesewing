@@ -95,6 +95,9 @@ const toastMethods = (t) => ({
   },
 })
 
+// Make it possible to always check for app.account.username
+const noAccount = { username: false }
+
 /*
  * The actual hook
  */
@@ -104,7 +107,7 @@ export function useApp({ bugsnag }) {
   const { t } = useTranslation(['toast'])
 
   // Persistent state
-  const [account, setAccount, accountReady] = useLocalStorage('account', { username: false })
+  const [account, setAccount, accountReady] = useLocalStorage('account', noAccount)
   const [token, setToken] = useLocalStorage('token', null)
   const [theme, setTheme] = useTheme()
 
@@ -155,6 +158,11 @@ export function useApp({ bugsnag }) {
     return id
   }
 
+  // Clear user data (when loggin in as a different user, this gets called)
+  const clear = () => {
+    setAccount({ username: false })
+  }
+
   return {
     // Static vars
     site: 'org',
@@ -188,6 +196,7 @@ export function useApp({ bugsnag }) {
     stopLoading: () => setLoading(false),
     updateNavigation,
     setModal,
+    clear,
 
     // State handlers
     togglePrimaryMenu,
