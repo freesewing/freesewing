@@ -16000,10 +16000,10 @@ react-hot-toast@2.4.0:
   dependencies:
     goober "^2.1.10"
 
-react-hotkeys-hook@4.3.2:
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/react-hotkeys-hook/-/react-hotkeys-hook-4.3.2.tgz#0faf9f86fc0058fe5da0e73535359cd088af3468"
-  integrity sha512-ZA/li3kBDHuRTtJIf7Td41UU87bPtnt9xV4r+PlEzpnFoYRDVspk3B+mlaX75zowyQygMVmoaWnM4B88lkyExQ==
+react-hotkeys-hook@4.3.7:
+  version "4.3.7"
+  resolved "https://registry.yarnpkg.com/react-hotkeys-hook/-/react-hotkeys-hook-4.3.7.tgz#87d4c2c939d190643acb66de84cdf586a8743dce"
+  integrity sha512-qUcA5vl/liGWr9wLYI5/8oppHLa6nExFqOAMC6CyZhpj7C56PIzYZ76xAtJ+5lgxObgl4A4pQz8upy+nq7orSQ==
 
 react-i18next@12.1.4:
   version "12.1.4"
