@@ -26,7 +26,7 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "@bugsnag/js": "7.18.0",
+    "@bugsnag/js": "7.20.0",
     "@bugsnag/plugin-react": "7.18.0",
     "@mdx-js/loader": "2.3.0",
     "@mdx-js/mdx": "2.3.0",
