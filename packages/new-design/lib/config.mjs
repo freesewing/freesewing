@@ -160,6 +160,8 @@ yarn-error.log*
       'shared/components/workbench/logs.mjs',
       'shared/components/workbench/preloaders.mjs',
       'shared/components/workbench/sample.mjs',
+      'shared/components/workbench/edit/index.mjs',
+      'shared/components/workbench/edit/gist-validator.mjs',
       'shared/components/workbench/exporting/export-handler.mjs',
       'shared/components/workbench/exporting/export-worker.js',
       'shared/components/workbench/exporting/index.mjs',
