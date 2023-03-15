@@ -1,6 +1,6 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 
-function draftBox({
+function draftBack({
   options,
   Point,
   Path,
@@ -30,33 +30,34 @@ function draftBox({
     .attr('class', 'fabric')
 
   points.p0 = new Point(98.8897, 26.2563)
-  points.p1 = new Point(98.8227, 146.325)
-  points.p2 = new Point(90.0027, 146.394)
-  points.p3 = new Point(90.0697, 135.368)
-  points.p4 = new Point(83.4547, 135.135)
-  points.p5 = new Point(81.0847, 128.471)
-  points.p6 = new Point(78.1927, 122.214)
-  points.p7 = new Point(74.1497, 113.469)
-  points.p8 = new Point(73.8997, 108.708)
-  points.p9 = new Point(65.0127, 104.899)
-  points.p10 = new Point(64.6117, 51.8473)
-  points.p11 = new Point(74.1667, 51.5803)
-  points.p12 = new Point(77.2407, 45.9003)
-  points.p13 = new Point(71.8287, 11.5563)
-  points.p14 = new Point(94.0117, 18.4603)
-  points.p15 = new Point(79.9137, 26.1003)
-  points.p16 = new Point(98.8897, 26.2563)
+  points.p0Cp1 = new Point(79.9137, 26.1003)
+  points.p1 = new Point(71.8287, 11.5563)
+  points.p1Cp1 = new Point(77.2407, 45.9003)
+  points.p1Cp2 = new Point(94.0117, 18.4603)
+  points.p2 = new Point(64.6117, 51.8473)
+  points.p2Cp2 = new Point(74.1667, 51.5803)
+  points.p3 = new Point(65.0127, 104.899)
+  points.p3Cp1 = new Point(73.8997, 108.708)
+  points.p4 = new Point(78.1927, 122.214)
+  points.p4Cp1 = new Point(81.0847, 128.471)
+  points.p4Cp2 = new Point(74.1497, 113.469)
+  points.p5 = new Point(90.0697, 135.368)
+  points.p5Cp1 = new Point(90.0027, 146.394)
+  points.p5Cp2 = new Point(83.4547, 135.135)
+  points.p6 = new Point(90.0697, 146.325)
+  points.p7 = new Point(98.8227, 146.325)
 
   paths.seam = new Path()
     .move(points.p0)
-    .line(points.p1)
-    .line(points.p2)
+    .curve(points.p0Cp1, points.p1Cp2, points.p1)
+    .curve(points.p1Cp1, points.p2Cp2, points.p2)
     .line(points.p3)
-    .curve(points.p4, points.p5, points.p6)
-    .curve(points.p7, points.p8, points.p9)
-    .line(points.p10)
-    .curve(points.p11, points.p12, points.p13)
-    .curve(points.p14, points.p15, points.p16)
+    .curve(points.p3Cp1, points.p4Cp2, points.p4)
+    .curve(points.p4Cp1, points.p5Cp2, points.p5)
+    .line(points.p5)
+    .line(points.p6)
+    .line(points.p7)
+    .line(points.p0)
     .close()
 
   // Complete?
@@ -90,11 +91,12 @@ function draftBox({
   return part
 }
 
-export const box = {
-  name: 'box',
+export const back = {
+  name: 'back',
+  measurements: ['waist'],
   options: {
     size: { pct: 50, min: 10, max: 100, menu: 'fit' },
   },
   plugins: [pluginBundle],
-  draft: draftBox,
+  draft: draftBack,
 }
