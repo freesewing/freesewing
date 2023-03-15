@@ -78,7 +78,7 @@ export const GrainDirectionPicker = ({ grainDirection, activeFabric, updateGist 
   )
 }
 
-const useFabricLength = (isImperial, height) => {
+export const useFabricLength = (isImperial, height) => {
   // regular conversion from mm to inches or cm
   const unit = isImperial ? 25.4 : 10
   // conversion from inches or cm to yards or meters

@@ -13,7 +13,7 @@ const logoSvg = `<svg viewBox="0 0 25 25">
  * The svg uses mm internally, so when we do spatial reasoning inside the svg, we need to know values in mm
  * */
 const mmToPoints = 2.834645669291339
-
+const lineStart = 50
 /**
  * Freesewing's first explicit class?
  * handles pdf exporting
@@ -47,12 +47,14 @@ export class PdfMaker {
   svgHeight
 
   pageCount = 0
+  lineLevel = 50
 
-  constructor({ svg, settings, pages, strings }) {
+  constructor({ svg, settings, pages, strings, cutLayouts }) {
     this.settings = settings
     this.pagesWithContent = pages.withContent
     this.svg = svg
     this.strings = strings
+    this.cutLayouts = cutLayouts
 
     this.initPdf()
 
@@ -88,6 +90,7 @@ export class PdfMaker {
   /** make the pdf */
   async makePdf() {
     await this.generateCoverPage()
+    await this.generateCutLayoutPages()
     await this.generatePages()
   }
 
@@ -116,15 +119,19 @@ export class PdfMaker {
       return
     }
 
-    const headerLevel = await this.generateCoverPageTitle()
+    this.nextPage()
+    await this.generateCoverPageTitle()
+    await this.generateSvgPage(this.svg)
+  }
 
+  async generateSvgPage(svg) {
     //abitrary margin for visual space
     let coverMargin = 85
-    let coverHeight = this.pdf.page.height - coverMargin * 2 - headerLevel
+    let coverHeight = this.pdf.page.height - coverMargin * 2 - this.lineLevel
     let coverWidth = this.pdf.page.width - coverMargin * 2
 
     // add the entire pdf to the page, so that it fills the available space as best it can
-    await SVGtoPDF(this.pdf, this.svg, coverMargin, headerLevel + coverMargin, {
+    await SVGtoPDF(this.pdf, svg, coverMargin, this.lineLevel + coverMargin, {
       width: coverWidth,
       height: coverHeight,
       assumePt: false,
@@ -133,40 +140,50 @@ export class PdfMaker {
     })
     this.pageCount++
   }
-
   async generateCoverPageTitle() {
-    let lineLevel = 50
-    let lineStart = 50
-
-    this.pdf.fontSize(28)
-    this.pdf.text('FreeSewing', lineStart, lineLevel)
-    lineLevel += 28
-
-    this.pdf.fontSize(12)
-    this.pdf.text(this.strings.tagline, lineStart, lineLevel)
-    lineLevel += 12 + 20
-
-    this.pdf.fontSize(48)
-    this.pdf.text(this.strings.design, lineStart, lineLevel)
-    lineLevel += 48
+    this.addText('FreeSewing', 28)
+      .addText(this.strings.tagline, 12, 20)
+      .addText(this.strings.design, 48, -8)
 
     await SVGtoPDF(this.pdf, logoSvg, this.pdf.page.width - lineStart - 100, lineStart, {
       width: 100,
-      height: lineLevel - lineStart - 8,
+      height: this.lineLevel - lineStart,
       preserveAspectRatio: 'xMaxYMin meet',
     })
 
     this.pdf.lineWidth(1)
     this.pdf
-      .moveTo(lineStart, lineLevel - 8)
-      .lineTo(this.pdf.page.width - lineStart, lineLevel - 8)
+      .moveTo(lineStart, this.lineLevel)
+      .lineTo(this.pdf.page.width - lineStart, this.lineLevel)
       .stroke()
 
+    this.lineLevel += 8
     this.pdf.fillColor('#888888')
-    this.pdf.fontSize(10)
-    this.pdf.text(this.strings.url, lineStart, lineLevel)
+    this.addText(this.strings.url, 10)
+  }
 
-    return lineLevel
+  async generateCutLayoutTitle(fabricTitle, fabricDimensions) {
+    this.addText(this.strings.cuttingLayout, 12, 2).addText(fabricTitle, 28)
+
+    this.pdf.lineWidth(1)
+    this.pdf
+      .moveTo(lineStart, this.lineLevel)
+      .lineTo(this.pdf.page.width - lineStart, this.lineLevel)
+      .stroke()
+
+    this.lineLevel += 5
+    this.addText(fabricDimensions, 16)
+  }
+
+  async generateCutLayoutPages() {
+    if (!this.settings.cutlist || !this.cutLayouts) return
+
+    for (const fabric in this.cutLayouts) {
+      this.nextPage()
+      const { title, dimensions, svg } = this.cutLayouts[fabric]
+      await this.generateCutLayoutTitle(title, dimensions)
+      await this.generateSvgPage(svg)
+    }
   }
 
   /** generate the pages of the pdf */
@@ -190,16 +207,29 @@ export class PdfMaker {
         let x = -w * this.pageWidth + startMargin
         let y = -h * this.pageHeight + startMargin
 
-        // if there was no cover page, the first page already exists
-        if (this.pageCount > 0) {
-          // otherwise make a new page
-          this.pdf.addPage()
-        }
+        this.nextPage()
 
         // add the pdf to the page, offset by the page distances
         await SVGtoPDF(this.pdf, this.svg, x, y, options)
         this.pageCount++
       }
     }
+  }
+
+  nextPage() {
+    // if no pages have been made, we can use the current
+    this.lineLevel = lineStart
+    if (this.pageCount === 0) return
+
+    // otherwise make a new page
+    this.pdf.addPage()
+  }
+
+  addText(text, fontSize, marginBottom = 0) {
+    this.pdf.fontSize(fontSize)
+    this.pdf.text(text, 50, this.lineLevel)
+
+    this.lineLevel += fontSize + marginBottom
+    return this
   }
 }

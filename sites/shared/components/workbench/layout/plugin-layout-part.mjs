@@ -179,11 +179,11 @@ const basePlugin = ({
       pattern.draftPartForSet(partName, pattern.activeSet)
 
       // if the pattern size is supposed to be re-set to the full width and height of all pages, do that
-      if (setPatternSize) {
-        const generatedPageData = pattern.setStores[pattern.activeSet].get('pages')
-        pattern.width = sheetWidth * generatedPageData.cols
-        pattern.height = sheetHeight * generatedPageData.rows
-      }
+      const generatedPageData = pattern.setStores[pattern.activeSet].get(partName)
+      if (setPatternSize === true || setPatternSize === 'width')
+        pattern.width = Math.max(pattern.width, sheetWidth * generatedPageData.cols)
+      if (setPatternSize === true || setPatternSize === 'height')
+        pattern.height = Math.max(pattern.height, sheetHeight * generatedPageData.rows)
 
       removeFromOnly(pattern, partName)
     },

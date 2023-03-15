@@ -8,6 +8,7 @@ export const plugin = {
     ['cutlist.removeCut', removeCut],
     ['cutlist.setGrain', setGrain],
     ['cutlist.setCutOnFold', setCutOnFold],
+    ['cutlist.getCutFabrics', getCutFabrics],
   ],
 }
 
@@ -78,4 +79,21 @@ function setCutOnFold(store, p1, p2) {
     store.log.error('Called part.setCutOnFold() but at least one parameter is not a Point instance')
 
   return store
+}
+
+function getCutFabrics(store, settings) {
+  const cutlist = store.get('cutlist')
+  const list = settings.only ? [].concat(settings.only) : Object.keys(cutlist)
+
+  const fabrics = []
+  list.forEach((partName) => {
+    if (!cutlist[partName].materials) {
+      return
+    }
+    for (var m in cutlist[partName].materials) {
+      if (!fabrics.includes(m)) fabrics.push(m)
+    }
+  })
+
+  return fabrics
 }

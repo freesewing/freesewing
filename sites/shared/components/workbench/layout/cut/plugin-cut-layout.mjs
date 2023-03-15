@@ -1,8 +1,11 @@
 import { addToOnly } from '../plugin-layout-part.mjs'
+import { pluginFlip } from '@freesewing/plugin-flip'
+import { pluginMirror } from '@freesewing/plugin-mirror'
 const prefix = 'mirroredOnFold'
 
 // types of path operations
 const opTypes = ['to', 'cp1', 'cp2']
+const avoidRegx = new RegExp(`^(cutonfold|grainline|__scalebox|__miniscale|${prefix})`)
 
 /**
  * The plugin to handle all business related to mirroring, rotating, and duplicating parts for the cutting layout
@@ -90,6 +93,8 @@ export const cutLayoutPlugin = function (material, grainAngle) {
       },
     },
     macros: {
+      ...pluginFlip.macros,
+      ...pluginMirror.macros,
       // handle mirroring on the fold and rotating to sit along the grain or bias
       handleFoldAndGrain: ({ partCutlist, grainSpec, ignoreOnFold, bias }, { points, macro }) => {
         // if the part has cutonfold instructions
@@ -114,8 +119,7 @@ export const cutLayoutPlugin = function (material, grainAngle) {
         const mirrorPaths = []
         for (const p in paths) {
           // skip ones that are hidden
-          if (!paths[p].hidden && !p.match(/^(cutonfold|grainline|__scalebox|__miniscale)/))
-            mirrorPaths.push(paths[p])
+          if (!paths[p].hidden && !p.match(avoidRegx)) mirrorPaths.push(paths[p])
         }
 
         // store all the points to mirror

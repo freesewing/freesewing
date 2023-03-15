@@ -4,22 +4,25 @@ import { Draft } from '../draft/index.mjs'
 import { fabricPlugin } from '../plugin-layout-part.mjs'
 import { cutLayoutPlugin } from './plugin-cut-layout.mjs'
 import { pluginCutlist } from '@freesewing/plugin-cutlist'
-import { pluginFlip } from '@freesewing/plugin-flip'
 import { measurementAsMm } from 'shared/utils.mjs'
 import { useEffect } from 'react'
 import get from 'lodash.get'
 
-const activeFabricPath = ['_state', 'layout', 'forCutting', 'activeFabric']
-const useFabricSettings = (gist) => {
+export const fabricSettingsOrDefault = (gist, fabric) => {
   const isImperial = gist.units === 'imperial'
   const sheetHeight = measurementAsMm(isImperial ? 36 : 100, gist.units)
-  const activeFabric = get(gist, activeFabricPath) || 'fabric'
-  const gistSettings = get(gist, ['_state', 'layout', 'forCutting', 'fabric', activeFabric])
+  const gistSettings = get(gist, ['_state', 'layout', 'forCutting', 'fabric', fabric])
   const sheetWidth = gistSettings?.sheetWidth || measurementAsMm(isImperial ? 54 : 120, gist.units)
   const grainDirection =
     gistSettings?.grainDirection === undefined ? 90 : gistSettings.grainDirection
 
-  return { activeFabric, sheetWidth, grainDirection, sheetHeight }
+  return { activeFabric: fabric, sheetWidth, grainDirection, sheetHeight }
+}
+
+const activeFabricPath = ['_state', 'layout', 'forCutting', 'activeFabric']
+const useFabricSettings = (gist) => {
+  const activeFabric = get(gist, activeFabricPath) || 'fabric'
+  return fabricSettingsOrDefault(gist, activeFabric)
 }
 
 const useFabricDraft = (gist, design, fabricSettings) => {
@@ -42,7 +45,6 @@ const useFabricDraft = (gist, design, fabricSettings) => {
     draft.use(cutLayoutPlugin(fabricSettings.activeFabric, fabricSettings.grainDirection))
     // also, pluginCutlist and pluginFlip are needed
     draft.use(pluginCutlist)
-    draft.use(pluginFlip)
 
     // draft the pattern
     draft.draft()
@@ -55,17 +57,7 @@ const useFabricDraft = (gist, design, fabricSettings) => {
 }
 
 const useFabricList = (draft) => {
-  const cutList = draft.setStores[0].get('cutlist')
-  const fabricList = ['fabric']
-  for (const partName in cutList) {
-    if (draft.settings[0].only && !draft.settings[0].only.includes(partName)) continue
-
-    for (const matName in cutList[partName].materials) {
-      if (!fabricList.includes(matName)) fabricList.push(matName)
-    }
-  }
-
-  return fabricList
+  return draft.setStores[0].cutlist.getCutFabrics(draft.settings[0])
 }
 
 const bgProps = { fill: 'none' }
