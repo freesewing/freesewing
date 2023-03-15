@@ -1,4 +1,5 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
+import { adjustPoints, consoleLogPoints } from './utils.mjs'
 
 function draftBack({
   options,
@@ -59,6 +60,9 @@ function draftBack({
     .line(points.p7)
     .line(points.p0)
     .close()
+
+  adjustPoints(points, points.p0)
+  consoleLogPoints(points)
 
   // Complete?
   if (complete) {
