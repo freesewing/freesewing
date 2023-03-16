@@ -103,34 +103,35 @@ export const $$ part $$ = {
   $$ ^doesInherit $$
   from: false,
   $$ /doesInherit $$
-  /*
-   * hide: Set this to true to hide a part.
-   *
-   * We've set this to false here to clarify its use.
-   * If you don't want to hide this part,
-   * you can remove the hide key entirely.
-   */
-  hide: false,
-  /*
-   * hideDependecies: Set this to true to hide a part's dependencies.
-   *
-   $$ #doesInherit $$
-   * We've set this to true here since you're extending $$ BaseName $$'s $$ part $$ part.
-   $$ /doesInherit $$
-   * If you don't want to hide this part's dependencies,
-   * you can remove the hideDependencies key entirely.
-   */
-  hideDependencies: $$ doesInherit $$,
-  /*
-   * hideAll: Set this to true to hide both the part and its dependencies.
-   *
-   * This is a combination of the hide and hideDependencies keys in case
-   * you want to both hide this part and its dependencies.
-   * We've included it here with a value of false.
-   * If you don't want to hide this a part and its dependencies,
-   * you can remove the hideAll key entirely.
-   */
-  hideAll: false,
+  /* hide: */
+  hide: {
+    /*
+     * self: Set this to true to hide the part.
+     *
+     * We've set this to false here to clarify its use.
+     * If you don't want to hide this part,
+     * you can remove the hide key entirely.
+     */
+    self: false,
+    /*
+     * from: Set this to true to hide a part's from dependency.
+     *
+     $$ #doesInherit $$
+     * We've set this to true here since you're extending $$ BaseName $$'s $$ part $$ part.
+     $$ /doesInherit $$
+     * If you don't want to hide this part's from dependency,
+     * you can remove the from key entirely.
+     */
+    from: $$ doesInherit $$,
+    /*
+     * after: Set this to true to hide any parts specified in the after setting
+     *
+     * We've set this to false here to clarify its use.
+     * If you don't want to hide this part,
+     * you can remove the hide key entirely.
+     */
+    after: false
+  },
   options: {
     /*
      * options: Holds (the configuration of) options for this part
