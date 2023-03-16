@@ -52,7 +52,7 @@ charlie:
     '@freesewing/snapseries': *freesewing
 core:
   _:
-    'bezier-js': '6.1.0'
+    'bezier-js': '6.1.3'
     'bin-pack-with-constraints': '1.0.1'
     'hooks': '0.3.2'
     'lodash.get': &_get '4.4.2'
