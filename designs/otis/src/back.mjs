@@ -21,6 +21,7 @@ function draftBack({
   sa,
   paperless,
   measurements,
+  store,
   macro,
   part,
 }) {
@@ -110,9 +111,9 @@ function draftBack({
   points.p4 = new Point(-86.44, 417.21)
   points.p4Cp1 = new Point(-73.36, 445.51)
   points.p4Cp2 = new Point(-104.72, 377.67)
-  points.p5 = new Point(-39.88, 474.31)
+  points.p5 = new Point(-30.355, 474.31)
   points.p5Cp2 = new Point(-69.79, 473.26)
-  points.p6 = new Point(-39.88, 523.54)
+  points.p6 = new Point(-30.355, 523.54)
   points.p7 = new Point(0, 523.54)
 
   // const ease = (Math.abs(points.p2.x)/waist)*100 -100
@@ -138,6 +139,10 @@ function draftBack({
   // points.cp6 = points.p6.clone()
   // points.cp7 = points.p7.clone()
 
+  store.set('waist', waist)
+  store.set('ease', ease)
+  store.set('sideseam', points.p2.dist(points.p3))
+
   paths.seam = new Path()
     .move(points.p0)
     .curve(points.p0Cp1, points.p1Cp2, points.p1)
@@ -154,8 +159,6 @@ function draftBack({
   // scalePoints(points, 4.5216)
   // adjustPoints(points, points.p0)
 
-  // makeRelativePoints(Point, points, points.p0, waist, ease)
-
   points.rp0 = points.p0.clone()
   points.rp0Cp1 = points.p0.shift(179.46671698034373, 66.85997996683854 * (ease + 1))
   points.rp1 = points.p0.shift(149.4969649618097, 114.77690177458263 * (ease + 1))
@@ -168,10 +171,12 @@ function draftBack({
   points.rp4 = points.p0.shift(258.29473769456416, 373.4377312467428 * (ease + 1))
   points.rp4Cp1 = points.p0.shift(260.64928928354027, 395.73426981886126 * (ease + 1))
   points.rp4Cp2 = points.p0.shift(254.50241750616306, 343.50545360055503 * (ease + 1))
-  points.rp5 = points.p0.shift(265.19387331061694, 417.18505125425753 * (ease + 1))
+  points.rp5 = points.p0.shift(266.33816548102595, 416.95234504954817 * (ease + 1))
   points.rp5Cp2 = points.p0.shift(261.61125103564785, 419.2838140564341 * (ease + 1))
-  points.rp6 = points.p0.shift(265.64397835663624, 460.1961242540228 * (ease + 1))
+  points.rp6 = points.p0.shift(266.6816892765254, 459.5 * (ease + 1))
   points.rp7 = points.p0.shift(270, 458.8667766549804 * (ease + 1))
+
+  // makeRelativePoints(Point, points, points.p0, waist, ease)
 
   paths.seam2 = new Path()
     .move(points.rp0)
