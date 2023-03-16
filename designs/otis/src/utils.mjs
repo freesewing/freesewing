@@ -45,3 +45,16 @@ export function consoleLogPoints(points) {
     )
   }
 }
+
+export function makeRelativePoints(Point, points, p0, waist, ease) {
+  for (let p in points) {
+    const x = points[p].x / (ease / 100 + 1)
+    const y = points[p].y / (ease / 100 + 1)
+    const pt = new Point(x, y)
+    points['r' + points[p].name] = points.p0.shift(p0.angle(pt), p0.dist(pt))
+
+    console.log(
+      'points.r' + points[p].name + ' = points.p0.shift(' + p0.angle(pt) + ',' + p0.dist(pt) + ')'
+    )
+  }
+}

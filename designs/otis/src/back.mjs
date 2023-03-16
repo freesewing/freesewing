@@ -6,6 +6,7 @@ import {
   addPoint,
   addPointX,
   addPointY,
+  makeRelativePoints,
 } from './utils.mjs'
 
 function draftBack({
@@ -19,9 +20,13 @@ function draftBack({
   complete,
   sa,
   paperless,
+  measurements,
   macro,
   part,
 }) {
+  console.log({ waist: measurements.waist })
+  const waist = measurements.waist / 4
+
   // points.p0 = new Point(98.8897, 26.2563)
   // points.p0Cp1 = new Point(79.9137, 26.1003)
   // points.p1 = new Point(71.8287, 11.5563)
@@ -106,10 +111,14 @@ function draftBack({
   points.p4Cp1 = new Point(-73.36, 445.51)
   points.p4Cp2 = new Point(-104.72, 377.67)
   points.p5 = new Point(-39.88, 474.31)
-  points.p5Cp1 = new Point(-40.18, 533.07)
   points.p5Cp2 = new Point(-69.79, 473.26)
   points.p6 = new Point(-39.88, 523.54)
-  points.p7 = new Point(0, 52.54)
+  points.p7 = new Point(0, 523.54)
+
+  // const ease = (Math.abs(points.p2.x)/waist)*100 -100
+  const ease = options.ease
+
+  console.log({ waist: waist, ease: ease })
 
   // points.cp0 = points.p0.clone()
   // points.cp0Cp1 = points.p0Cp1.clone()
@@ -143,7 +152,41 @@ function draftBack({
     .close()
 
   // scalePoints(points, 4.5216)
-  adjustPoints(points, points.p0)
+  // adjustPoints(points, points.p0)
+
+  // makeRelativePoints(Point, points, points.p0, waist, ease)
+
+  points.rp0 = points.p0.clone()
+  points.rp0Cp1 = points.p0.shift(179.46671698034373, 66.85997996683854 * (ease + 1))
+  points.rp1 = points.p0.shift(149.4969649618097, 114.77690177458263 * (ease + 1))
+  points.rp1Cp1 = points.p0.shift(225.14875267727388, 109.80899305797357 * (ease + 1))
+  points.rp1Cp2 = points.p0.shift(139.38837703544834, 47.46382796432377 * (ease + 1))
+  points.rp2 = points.p0.shift(218.49950238029894, 162.91565334215258 * (ease + 1))
+  points.rp2Cp2 = points.p0.shift(225.68612903855728, 140.2549673523486 * (ease + 1))
+  points.rp3 = points.p0.shift(246.77020008250858, 323.2595476959096 * (ease + 1))
+  points.rp3Cp1 = points.p0.shift(252.2866567480084, 325.491128632521 * (ease + 1))
+  points.rp4 = points.p0.shift(258.29473769456416, 373.4377312467428 * (ease + 1))
+  points.rp4Cp1 = points.p0.shift(260.64928928354027, 395.73426981886126 * (ease + 1))
+  points.rp4Cp2 = points.p0.shift(254.50241750616306, 343.50545360055503 * (ease + 1))
+  points.rp5 = points.p0.shift(265.19387331061694, 417.18505125425753 * (ease + 1))
+  points.rp5Cp2 = points.p0.shift(261.61125103564785, 419.2838140564341 * (ease + 1))
+  points.rp6 = points.p0.shift(265.64397835663624, 460.1961242540228 * (ease + 1))
+  points.rp7 = points.p0.shift(270, 458.8667766549804 * (ease + 1))
+
+  paths.seam2 = new Path()
+    .move(points.rp0)
+    .curve(points.rp0Cp1, points.rp1Cp2, points.rp1)
+    .curve(points.rp1Cp1, points.rp2Cp2, points.rp2)
+    .line(points.rp3)
+    .curve(points.rp3Cp1, points.rp4Cp2, points.rp4)
+    .curve(points.rp4Cp1, points.rp5Cp2, points.rp5)
+    .line(points.rp5)
+    .line(points.rp6)
+    .line(points.rp7)
+    .line(points.rp0)
+    .close()
+    .attr('class', 'lining')
+
   // addPoint(points.cp0, 9.525, 0, 1 )
   // addPoint(points.cp0Cp1, 9.525, 1, 1 )
   // addPoint(points.cp1Cp2, 9.525, -2, 1 )
@@ -212,6 +255,7 @@ export const back = {
   name: 'back',
   measurements: ['waist'],
   options: {
+    ease: { pct: 14, min: 0, max: 30, menu: 'fit' },
     size: { pct: 50, min: 10, max: 100, menu: 'fit' },
   },
   plugins: [pluginBundle],
