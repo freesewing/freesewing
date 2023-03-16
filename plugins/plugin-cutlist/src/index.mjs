@@ -1,5 +1,4 @@
 import { name, version } from '../data.mjs'
-import { Point } from '@freesewing/core'
 
 export const plugin = {
   name,
@@ -71,7 +70,7 @@ function setCutOnFold(store, partName, p1, p2) {
   if (p1 === false && typeof p2 === 'undefined') {
     return store.unset(path)
   }
-  if (p1 instanceof Point && p2 instanceof Point) {
+  if (!isNaN(p1.x) && !isNaN(p1.y) && !isNaN(p2.x) && !isNaN(p2.y)) {
     store.set(path, [p1, p2])
   } else
     store.log.error('Called part.setCutOnFold() but at least one parameter is not a Point instance')
