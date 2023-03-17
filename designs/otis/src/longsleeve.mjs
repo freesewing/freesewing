@@ -25,31 +25,46 @@ function draftLongsleeve({
   measurements,
   store,
   macro,
+  utils,
   part,
 }) {
   const waist = store.get('waist')
   const ease = store.get('ease')
   const sideseam = store.get('sideseam')
+  const hem = store.get('hem')
 
-  // for( const p in paths ) {
-  //   delete paths[p]
-  // }
+  for (const p in paths) {
+    paths[p].hide()
+  }
+
+  paths.short = paths.seam.clone().attr('class', 'note dashed')
 
   points.rp1 = points.p0.shift(180, 293.7625802105263 * (ease + 1))
   points.rp2 = points.p0.shift(194.345521471841, 303.21713769055657 * (ease + 1))
-  points.rp3 = points.p0.shift(194.66320209996223, 290.50417302498295 * (ease + 1))
-  points.rp3Cp1 = points.p0.shift(200.01156103077165, 229.3425471399697 * (ease + 1))
-  points.rp4Cp2 = points.p0.shift(213.17727589125565, 174.25165593501407 * (ease + 1))
+  points.rp2Cp1 = points.p0.shift(200.01156103077165, 229.3425471399697 * (ease + 1))
+  points.rp3Cp2 = points.p0.shift(213.17727589125565, 174.25165593501407 * (ease + 1))
 
-  paths.seam2 = new Path()
+  points.rp1hm = points.rp1.shift(0, hem)
+  points.rp2hm = utils.curveIntersectsX(
+    points.rp2,
+    points.rp2Cp1,
+    points.rp3Cp2,
+    points.rp3,
+    points.rp1hm.x
+  )
+  points.rp1h = points.rp1hm.flipX(points.rp1)
+  points.rp2h = points.rp2hm.flipX(points.rp2)
+
+  paths.seam = new Path()
     .move(points.rp0)
     .line(points.rp1)
+    .line(points.rp1h)
+    .line(points.rp2h)
     .line(points.rp2)
-    .line(points.rp3)
-    .curve(points.rp3Cp1, points.rp4Cp2, points.rp4)
-    .curve(points.rp4Cp1, points.rp0Cp2, points.rp0)
+    .curve(points.rp2Cp1, points.rp3Cp2, points.rp3)
+    .curve(points.rp3Cp1, points.rp0Cp2, points.rp0)
     .close()
-    .attr('class', 'lining')
+  // .attr('class', 'lining')
 
   // Complete?
   if (complete) {

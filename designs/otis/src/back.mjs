@@ -121,6 +121,8 @@ function draftBack({
 
   console.log({ waist: waist, ease: ease })
 
+  // makeRelativePoints(Point, points, points.p0, 0, ease)
+
   // points.cp0 = points.p0.clone()
   // points.cp0Cp1 = points.p0Cp1.clone()
   // points.cp1 = points.p1.clone()
@@ -159,24 +161,47 @@ function draftBack({
   // scalePoints(points, 4.5216)
   // adjustPoints(points, points.p0)
 
-  points.rp0 = points.p0.clone()
-  points.rp0Cp1 = points.p0.shift(179.46671698034373, 66.85997996683854 * (ease + 1))
-  points.rp1 = points.p0.shift(149.4969649618097, 114.77690177458263 * (ease + 1))
-  points.rp1Cp1 = points.p0.shift(225.14875267727388, 109.80899305797357 * (ease + 1))
-  points.rp1Cp2 = points.p0.shift(139.38837703544834, 47.46382796432377 * (ease + 1))
-  points.rp2 = points.p0.shift(218.49950238029894, 162.91565334215258 * (ease + 1))
-  points.rp2Cp2 = points.p0.shift(225.68612903855728, 140.2549673523486 * (ease + 1))
-  points.rp3 = points.p0.shift(246.77020008250858, 323.2595476959096 * (ease + 1))
-  points.rp3Cp1 = points.p0.shift(252.2866567480084, 325.491128632521 * (ease + 1))
-  points.rp4 = points.p0.shift(258.29473769456416, 373.4377312467428 * (ease + 1))
-  points.rp4Cp1 = points.p0.shift(260.64928928354027, 395.73426981886126 * (ease + 1))
-  points.rp4Cp2 = points.p0.shift(254.50241750616306, 343.50545360055503 * (ease + 1))
-  points.rp5 = points.p0.shift(266.33816548102595, 416.95234504954817 * (ease + 1))
-  points.rp5Cp2 = points.p0.shift(261.61125103564785, 419.2838140564341 * (ease + 1))
-  points.rp6 = points.p0.shift(266.6816892765254, 459.5 * (ease + 1))
-  points.rp7 = points.p0.shift(270, 458.8667766549804 * (ease + 1))
+  // points.rp0 = points.p0.clone()
+  // points.rp0Cp1 = points.p0.shift(179.46671698034373, 66.85997996683854 * (ease + 1))
+  // points.rp1 = points.p0.shift(149.4969649618097, 114.77690177458263 * (ease + 1))
+  // points.rp1Cp1 = points.p0.shift(225.14875267727388, 109.80899305797357 * (ease + 1))
+  // points.rp1Cp2 = points.p0.shift(139.38837703544834, 47.46382796432377 * (ease + 1))
+  // points.rp2 = points.p0.shift(218.49950238029894, 162.91565334215258 * (ease + 1))
+  // points.rp2Cp2 = points.p0.shift(225.68612903855728, 140.2549673523486 * (ease + 1))
+  // points.rp3 = points.p0.shift(246.77020008250858, 323.2595476959096 * (ease + 1))
+  // points.rp3Cp1 = points.p0.shift(252.2866567480084, 325.491128632521 * (ease + 1))
+  // points.rp4 = points.p0.shift(258.29473769456416, 373.4377312467428 * (ease + 1))
+  // points.rp4Cp1 = points.p0.shift(260.64928928354027, 395.73426981886126 * (ease + 1))
+  // points.rp4Cp2 = points.p0.shift(254.50241750616306, 343.50545360055503 * (ease + 1))
+  // points.rp5 = points.p0.shift(266.33816548102595, 416.95234504954817 * (ease + 1))
+  // points.rp5Cp2 = points.p0.shift(261.61125103564785, 419.2838140564341 * (ease + 1))
+  // points.rp6 = points.p0.shift(266.6816892765254, 459.5 * (ease + 1))
+  // points.rp7 = points.p0.shift(270, 458.8667766549804 * (ease + 1))
 
+  points.rp0 = new Point(0, 0)
+  points.rp0Cp1 = points.rp0.shift(180, 66.91517912470589 * (ease + 1))
+  points.rp1 = points.rp0.shift(149.4969649618097, 114.87166082661528 * (ease + 1))
+  points.rp1Cp1 = points.rp1.shift(278.9548159482757, 137.90010759149453 * (ease + 1))
+  points.rp1Cp2 = points.rp1.shift(336.4763168951959, 68.61447469210127 * (ease + 1))
+  points.rp2 = points.rp0.shift(218.49950238029894, 163.05015542953512 * (ease + 1))
+  points.rp2Cp2 = points.rp2.shift(2.0575442111337274, 29.562919686247152 * (ease + 1))
+  points.rp3 = points.rp0.shift(246.77020008250858, 323.5264286434397 * (ease + 1))
+  points.rp3Cp1 = points.rp3.shift(335.4445026359432, 31.324216272472654 * (ease + 1))
+  points.rp3Cp1 = points.rp3.shift(0, 15 * (ease + 1))
+  points.rp4 = points.rp0.shift(258.29473769456416, 373.7460389711983 * (ease + 1))
+  points.rp4Cp1 = points.rp4.shift(294.805946128575, 27.347838639268335 * (ease + 1))
+  points.rp4Cp2 = points.rp4.shift(114.81188629380082, 38.21149693481505 * (ease + 1))
+  points.rp5 = points.rp0.shift(266.33816548102595, 416.91257944059936 * (ease + 1))
+  points.rp5Cp2 = points.rp5.shift(180, 34.60436510741867 * (ease + 1))
+  points.rp6 = points.rp0.shift(266.68168927652545, 460.0168925339477 * (ease + 1))
+  points.rp7 = points.rp0.shift(270, 459.2456140350876 * (ease + 1))
   // makeRelativePoints(Point, points, points.p0, waist, ease)
+
+  paths.armhole = new Path().move(points.rp1).curve(points.rp1Cp1, points.rp2Cp2, points.rp2).hide()
+
+  store.set('armhole', paths.armhole.length() * 0.85)
+
+  points.shoulder = paths.armhole.shiftFractionAlong(0.15)
 
   paths.seam2 = new Path()
     .move(points.rp0)
@@ -261,7 +286,7 @@ export const back = {
   measurements: ['waist'],
   options: {
     ease: { pct: 14, min: 0, max: 30, menu: 'fit' },
-    size: { pct: 50, min: 10, max: 100, menu: 'fit' },
+    bottomHem: { pct: 14, min: 0, max: 30, menu: 'advanced' },
   },
   plugins: [pluginBundle],
   draft: draftBack,

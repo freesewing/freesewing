@@ -30,6 +30,7 @@ function draftFront({
   const waist = store.get('waist')
   const ease = store.get('ease')
   const sideseam = store.get('sideseam')
+  const armhole = store.get('armhole')
 
   // points.p0 = new Point(49.4448,39.0178)
   // points.p0Cp1 = new Point(29.8008,38.1718)
@@ -102,18 +103,18 @@ function draftFront({
   // makeRelativePoints(Point, points, points.p0, waist, ease)
   // adjustPoints(points, points.p0)
 
-  points.rp0 = points.p0.shift(0, 0 * (ease + 1))
-  points.rp0Cp1 = points.p0.shift(177.23489980395945, 69.64248775236683 * (ease + 1))
-  points.rp1 = points.p0.shift(137.39365873630706, 132.32581976385896 * (ease + 1))
-  points.rp1Cp1 = points.p0.shift(183.61903452199124, 88.10552341588226 * (ease + 1))
-  points.rp1Cp2 = points.p0.shift(117.37967771746665, 64.56612361178088 * (ease + 1))
-  points.rp2 = points.p0.shift(208.92817996505278, 145.1854377221146 * (ease + 1))
-  points.rp2Cp2 = points.p0.shift(221.04696386788987, 110.57793733238341 * (ease + 1))
-  points.rp3 = points.p0.shift(244.49016929788834, 295.05507494424813 * (ease + 1))
-  points.rp3Cp1 = points.p0.shift(247.6094440397825, 285.94358560556816 * (ease + 1))
-  points.rp4 = points.p0.shift(265.3666986326574, 309.97788995830655 * (ease + 1))
-  points.rp5 = points.p0.shift(265.91499446139534, 351.4982585965382 * (ease + 1))
-  points.rp6 = points.p0.shift(270, 350.6052631578947 * (ease + 1))
+  points.rp0 = new Point(0, 0)
+  points.rp0Cp1 = points.rp0.shift(180, 69.64248775236683 * (ease + 1))
+  points.rp1 = points.rp0.shift(137.39365873630706, 132.32581976385896 * (ease + 1))
+  points.rp1Cp1 = points.rp1.shift(275.68130162148066, 95.6099938788659 * (ease + 1))
+  points.rp1Cp2 = points.rp1.shift(334.5320444890682, 74.98871362703433 * (ease + 1))
+  points.rp2 = points.rp0.shift(208.92817996505278, 145.1854377221146 * (ease + 1))
+  points.rp2Cp2 = points.rp2.shift(356.8730716127121, 43.74056201237602 * (ease + 1))
+  points.rp3 = points.rp0.shift(244.49016929788834, 295.05507494424813 * (ease + 1))
+  points.rp3Cp1 = points.rp3.shift(0, 18.248785709538428 * (ease + 1))
+  points.rp4 = points.rp0.shift(265.3666986326574, 309.97788995830655 * (ease + 1))
+  points.rp5 = points.rp0.shift(265.91499446139534, 351.4982585965382 * (ease + 1))
+  points.rp6 = points.rp0.shift(270, 350.6052631578947 * (ease + 1))
 
   paths.seam = new Path()
     .move(points.p0)
@@ -125,6 +126,26 @@ function draftFront({
     .line(points.p6)
     .line(points.p0)
     .close()
+
+  let diff = 10
+  let iter = 1
+  do {
+    paths.armhole = new Path()
+      .move(points.rp1)
+      .curve(points.rp1Cp1, points.rp2Cp2, points.rp2)
+      .hide()
+
+    const armholeLength = paths.armhole.length() * 0.85
+    diff = armholeLength - armhole
+    console.log({ diff: diff })
+
+    if (diff < -1 || diff > 1) {
+      points.rp1 = points.rp0.shift(137.39365873630706, 132.32581976385896 * (ease + 1) + diff)
+    }
+    iter++
+  } while ((diff < -1 || diff > 1) & (iter < 100))
+
+  points.shoulder = paths.armhole.shiftFractionAlong(0.15)
 
   paths.seam2 = new Path()
     .move(points.rp0)
