@@ -223,7 +223,7 @@ function draftBack({
   //   .close()
   //   .attr('class', 'lining')
 
-  consoleLogPoints(points)
+  // consoleLogPoints(points)
 
   // Complete?
   if (complete) {
