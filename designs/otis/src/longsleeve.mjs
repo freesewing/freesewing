@@ -39,32 +39,31 @@ function draftLongsleeve({
 
   paths.short = paths.seam.clone().attr('class', 'note dashed')
 
-  points.rp1 = points.p0.shift(180, 293.7625802105263 * (ease + 1))
-  points.rp2 = points.p0.shift(194.345521471841, 303.21713769055657 * (ease + 1))
-  points.rp2Cp1 = points.p0.shift(200.01156103077165, 229.3425471399697 * (ease + 1))
-  points.rp3Cp2 = points.p0.shift(213.17727589125565, 174.25165593501407 * (ease + 1))
+  points.p1 = points.p0.shift(270, 293.7625802105263 * (ease + 1))
+  points.p2 = points.p0.shift(284.345521471841, 303.21713769055657 * (ease + 1))
+  points.p2Cp1 = points.p0.shift(290.01156103077165, 229.3425471399697 * (ease + 1))
+  points.p3Cp2 = points.p0.shift(303.17727589125565, 174.25165593501407 * (ease + 1))
 
-  points.rp1hm = points.rp1.shift(0, hem)
-  points.rp2hm = utils.curveIntersectsX(
-    points.rp2,
-    points.rp2Cp1,
-    points.rp3Cp2,
-    points.rp3,
-    points.rp1hm.x
+  points.p1hm = points.p1.shift(90, hem)
+  points.p2hm = utils.curveIntersectsY(
+    points.p2,
+    points.p2Cp1,
+    points.p3Cp2,
+    points.p3,
+    points.p1hm.y
   )
-  points.rp1h = points.rp1hm.flipX(points.rp1)
-  points.rp2h = points.rp2hm.flipX(points.rp2)
+  points.p1h = points.p1hm.flipY(points.p1)
+  points.p2h = points.p2hm.flipY(points.p2)
 
-  paths.seam = new Path()
-    .move(points.rp0)
-    .line(points.rp1)
-    .line(points.rp1h)
-    .line(points.rp2h)
-    .line(points.rp2)
-    .curve(points.rp2Cp1, points.rp3Cp2, points.rp3)
-    .curve(points.rp3Cp1, points.rp0Cp2, points.rp0)
-    .close()
-  // .attr('class', 'lining')
+  paths.seamSA = new Path()
+    .move(points.p1h)
+    .line(points.p2h)
+    .line(points.p2)
+    .curve(points.p2Cp1, points.p3Cp2, points.p3)
+    .curve(points.p3Cp1, points.p0Cp2, points.p0)
+    .hide()
+
+  paths.seam = paths.seamSA.clone().line(points.p1).line(points.p0).close().unhide()
 
   // Complete?
   if (complete) {
@@ -76,7 +75,7 @@ function draftLongsleeve({
     //   .attr('data-text-class', 'center')
 
     if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+      paths.sa = paths.seamSA.offset(sa).close().attr('class', 'fabric sa')
     }
   }
 
