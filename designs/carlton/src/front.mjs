@@ -19,7 +19,6 @@ function draftCarltonFront({
   paths,
   Path,
   part,
-  addCut,
 }) {
   calculateRatios(part)
 
@@ -301,7 +300,7 @@ function draftCarltonFront({
     .close()
     .attr('class', 'fabric help')
 
-  addCut()
+  store.cutlist.addCut()
 
   if (complete) {
     snippets.button1Left = new Snippet('button', points.button1Left).attr('data-scale', 2)

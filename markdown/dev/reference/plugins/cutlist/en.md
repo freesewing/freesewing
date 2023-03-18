@@ -2,7 +2,7 @@
 title: plugin-cutlist
 ---
 
-Published as [@freesewing/plugin-cutlist][1], this plugin provides additional methods to the [part draft function](/reference/api/part/draft) which allow you to configure cutting instructions for your parts.
+Published as [@freesewing/plugin-cutlist][1], this plugin adds additional methods to the [store](/reference/api/store/extend) which allow you to configure cutting instructions for your parts.
 
 <Tip> For an in-depth look at how to add cutting instructions to your part, see our [cutlist how-to](/howtos/design/cutlist) </Tip>
 
@@ -29,16 +29,16 @@ import { pluginCutlist } from '@freesewing/plugin-cutlist'
 
 The cutlist plugin adds the following methods to the part draft method parameter
 
-### addCut
+### store.cutlist.addCut
 
-The `addCut()` method will add a set of cutting instructions for the part
+The `store.cutlist.addCut()` method will add a set of cutting instructions for the part
 
 #### Signature
 ```js
-addCut(Object so)
+store.cutlist.addCut(Object so)
 ````
 
-Pass an object to the `addCut` method with any of the following keys; any you don't provide will be filled with the defaults:
+Pass an object to the `store.cutlist.addCut` method with any of the following keys; any you don't provide will be filled with the defaults:
 
 | Key | Type | Default | Description |
 | :-- | :--- | :------ | :---------- |
@@ -76,11 +76,11 @@ import {pluginCutlist} from '@freesewing/plugin-cutlist'
 const part = {
 	name: 'example.front',
 	plugins: [pluginCutlist],
-	draft: ({part, addCut}) => {
+	draft: ({part, store}) => {
 		// add instructions to cut two from main fabric
-		addCut()
+		store.cutlist.addCut()
 		// add instructions to cut four on the biad from lining
-		addCut({cut: 4, material: 'lining', bias: true, })
+		store.cutlist.addCut({cut: 4, material: 'lining', bias: true, })
 		return part
 	}
 }
@@ -93,24 +93,24 @@ import {pluginCutlist} from '@freesewing/plugin-cutlist'
 const part = {
 	name: 'example.front',
 	plugins: [pluginCutlist],
-	draft: ({part, addCut}) => {
+	draft: ({part, store}) => {
 		// add instructions to 1 from lining
-		addCut({cut: 1, material: 'lining'})
+		store.cutlist.addCut({cut: 1, material: 'lining'})
 		// add instructions to cut 1 on the bias from lining
-		addCut({cut: 1, material: 'lining', bias: true, })
+		store.cutlist.addCut({cut: 1, material: 'lining', bias: true, })
 		return part
 	}
 }
 ```
 
-### removeCut
+### store.cutlist.removeCut
 
-The `removeCut()` method will remove cutting instructions from the part
+The `store.cutlist.removeCut()` method will remove cutting instructions from the part
 
 #### Signature
 
 ```js
-removeCut(String material)
+store.cutlist.removeCut(String material)
 ```
 
 #### Example
@@ -120,24 +120,24 @@ import {pluginCutlist} from '@freesewing/plugin-cutlist'
 const part = {
 	name: 'example.front',
 	plugins: [pluginCutlist],
-	draft: ({part, removeCut}) => {
+	draft: ({part, store}) => {
 		// remove all cutting instructions for all materials
-		removeCut()
+		store.cutlist.removeCut()
 
 		// remove cutting instructions for just one material
-		removeCut('fabric')
+		store.cutlist.removeCut('fabric')
 		return part
 	}
 }
 ```
-### setGrain
+### store.cutlist.setGrain
 
-The `setGrain()` method will record the angle of the grainline annotation. This method is called internally by [`plugin-grainline`](/reference/plugins/grainline) to store information for cutting layout tools. You shouldn't have to call it, but it's there if you need it.
+The `store.cutlist.setGrain()` method will record the angle of the grainline annotation. This method is called internally by [`plugin-grainline`](/reference/plugins/grainline) to store information for cutting layout tools. You shouldn't have to call it, but it's there if you need it.
 
 #### Signature
 
 ```js
-setGrain(Number grainAngle)
+store.cutlist.setGrain(Number grainAngle)
 ```
 
 #### Example
@@ -147,21 +147,21 @@ import {pluginCutlist} from '@freesewing/plugin-cutlist'
 const part = {
 	name: 'example.front',
 	plugins: [pluginCutlist],
-	draft: ({part, setGrain}) => {
+	draft: ({part, store}) => {
 		// set the grainline angle
-		setGrain(0)
+		store.cutlist.setGrain(0)
 		return part
 	}
 }
 ```
 
-### setCutOnFold
-The `setCutOnFold()` method will record the points that make up the cut on fold line. This method is called internally by [`plugin-cutonfold`](/reference/plugins/cutonfold) to store information for cutting layout tools. You shouldn't have to call it, but it's there if you need it.
+### store.cutlist.setCutOnFold
+The `store.cutlist.setCutOnFold()` method will record the points that make up the cut on fold line. This method is called internally by [`plugin-cutonfold`](/reference/plugins/cutonfold) to store information for cutting layout tools. You shouldn't have to call it, but it's there if you need it.
 
 #### Signature
 
 ```js
-setCutOnFold(Point p1, Point p2)
+store.cutlist.setCutOnFold(Point p1, Point p2)
 ```
 
 #### Example
@@ -171,11 +171,11 @@ import {pluginCutlist} from '@freesewing/plugin-cutlist'
 const part = {
 	name: 'example.front',
 	plugins: [pluginCutlist],
-	draft: ({part, points, Point, setCutOnFold}) => {
+	draft: ({part, points, Point, store}) => {
 		// set the cut on fold line
 		points.p1 = new Point(0, 0)
 		points.p2 = new Point(0, 10)
-		setCutOnFold(points.p1, points.p2)
+		store.cutlist.setCutOnFold(points.p1, points.p2)
 		return part
 	}
 }

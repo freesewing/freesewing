@@ -16,7 +16,6 @@ function draftCarltonTopSleeve({
   Snippet,
   snippets,
   part,
-  addCut,
 }) {
   // Add cuff
   let length = measurements.shoulderToWrist * options.cuffLength
@@ -55,10 +54,15 @@ function draftCarltonTopSleeve({
     .close()
     .attr('class', 'fabric')
 
-  addCut()
-  addCut({ material: 'lining' })
+  store.cutlist.addCut()
+  store.cutlist.addCut({ material: 'lining' })
 
   if (complete) {
+    macro('title', {
+      at: points.armCenter,
+      nr: 3,
+      title: 'topsleeve',
+    })
     macro('grainline', {
       from: points.boxBottom,
       to: points.top,

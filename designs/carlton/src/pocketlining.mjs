@@ -12,7 +12,6 @@ function draftCarltonPocketLining({
   paths,
   Path,
   part,
-  addCut,
 }) {
   points.topLeft = points.bottomLeft.shiftFractionTowards(points.topLeft, 0.75)
   points.topRight = new Point(points.bottomRight.x, points.topLeft.y)
@@ -46,7 +45,7 @@ function draftCarltonPocketLining({
 
   delete paths.fold
 
-  addCut({ material: 'lining' })
+  store.cutlist.addCut({ material: 'lining' })
 
   if (complete) {
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
