@@ -90,6 +90,8 @@ function draftBack({
       paths.sa = paths.seamSA.offset(sa).close().attr('class', 'fabric sa')
     }
 
+    snippets.shoulder = new Snippet('notch', points.shoulder)
+
     macro('cutonfold', {
       from: points.p7,
       to: points.p0,
