@@ -30,6 +30,7 @@ function draftLongsleeve({
 }) {
   const waist = store.get('waist')
   const ease = store.get('ease')
+  const sizeFactor = store.get('sizeFactor')
   const sideseam = store.get('sideseam')
   const hem = store.get('hem')
 
@@ -39,10 +40,10 @@ function draftLongsleeve({
 
   paths.short = paths.seam.clone().attr('class', 'note dashed')
 
-  points.p1 = points.p0.shift(270, 293.7625802105263 * (ease + 1))
-  points.p2 = points.p0.shift(284.345521471841, 303.21713769055657 * (ease + 1))
-  points.p2Cp1 = points.p0.shift(290.01156103077165, 229.3425471399697 * (ease + 1))
-  points.p3Cp2 = points.p0.shift(303.17727589125565, 174.25165593501407 * (ease + 1))
+  points.p1 = points.p0.shift(270, 293.7625802105263 * (ease + 1) * sizeFactor)
+  points.p2 = points.p0.shift(284.345521471841, 303.21713769055657 * (ease + 1) * sizeFactor)
+  points.p2Cp1 = points.p0.shift(290.01156103077165, 229.3425471399697 * (ease + 1) * sizeFactor)
+  points.p3Cp2 = points.p0.shift(303.17727589125565, 174.25165593501407 * (ease + 1) * sizeFactor)
 
   points.p1hm = points.p1.shift(90, hem)
   points.p2hm = utils.curveIntersectsY(
@@ -77,6 +78,10 @@ function draftLongsleeve({
     if (sa) {
       paths.sa = paths.seamSA.offset(sa).close().attr('class', 'fabric sa')
     }
+    macro('cutonfold', {
+      from: points.p0,
+      to: points.p1h,
+    })
   }
 
   // Paperless?

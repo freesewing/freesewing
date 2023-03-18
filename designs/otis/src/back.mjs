@@ -27,30 +27,32 @@ function draftBack({
 }) {
   console.log({ waist: measurements.waist })
   const waist = measurements.waist / 4
+  const sizeFactor = measurements.waist / 510
   const ease = options.ease
 
   console.log({ waist: waist, ease: ease })
 
   store.set('waist', waist)
   store.set('ease', ease)
+  store.set('sizeFactor', sizeFactor)
 
   points.p0 = new Point(0, 0)
-  points.p0Cp1 = points.p0.shift(180, 66.91517912470589 * (ease + 1))
-  points.p1 = points.p0.shift(149.4969649618097, 114.87166082661528 * (ease + 1))
-  points.p1Cp1 = points.p1.shift(278.9548159482757, 137.90010759149453 * (ease + 1))
-  points.p1Cp2 = points.p1.shift(336.4763168951959, 68.61447469210127 * (ease + 1))
-  points.p2 = points.p0.shift(218.49950238029894, 163.05015542953512 * (ease + 1))
-  points.p2Cp2 = points.p2.shift(2.0575442111337274, 29.562919686247152 * (ease + 1))
-  points.p3 = points.p0.shift(246.77020008250858, 323.5264286434397 * (ease + 1))
-  points.p3Cp1 = points.p3.shift(335.4445026359432, 31.324216272472654 * (ease + 1))
-  points.p3Cp1 = points.p3.shift(0, 15 * (ease + 1))
-  points.p4 = points.p0.shift(258.29473769456416, 373.7460389711983 * (ease + 1))
-  points.p4Cp1 = points.p4.shift(294.805946128575, 27.347838639268335 * (ease + 1))
-  points.p4Cp2 = points.p4.shift(114.81188629380082, 38.21149693481505 * (ease + 1))
-  points.p5 = points.p0.shift(266.33816548102595, 416.91257944059936 * (ease + 1))
-  points.p5Cp2 = points.p5.shift(180, 34.60436510741867 * (ease + 1))
-  points.p6 = points.p0.shift(266.68168927652545, 460.0168925339477 * (ease + 1))
-  points.p7 = points.p0.shift(270, 459.2456140350876 * (ease + 1))
+  points.p0Cp1 = points.p0.shift(180, 66.91517912470589 * (ease + 1) * sizeFactor)
+  points.p1 = points.p0.shift(149.4969649618097, 114.87166082661528 * (ease + 1) * sizeFactor)
+  points.p1Cp1 = points.p1.shift(278.9548159482757, 137.90010759149453 * (ease + 1) * sizeFactor)
+  points.p1Cp2 = points.p1.shift(336.4763168951959, 68.61447469210127 * (ease + 1) * sizeFactor)
+  points.p2 = points.p0.shift(218.49950238029894, 163.05015542953512 * (ease + 1) * sizeFactor)
+  points.p2Cp2 = points.p2.shift(2.0575442111337274, 29.562919686247152 * (ease + 1) * sizeFactor)
+  points.p3 = points.p0.shift(246.77020008250858, 323.5264286434397 * (ease + 1) * sizeFactor)
+  points.p3Cp1 = points.p3.shift(335.4445026359432, 31.324216272472654 * (ease + 1) * sizeFactor)
+  points.p3Cp1 = points.p3.shift(0, 15 * (ease + 1) * sizeFactor)
+  points.p4 = points.p0.shift(258.29473769456416, 373.7460389711983 * (ease + 1) * sizeFactor)
+  points.p4Cp1 = points.p4.shift(294.805946128575, 27.347838639268335 * (ease + 1) * sizeFactor)
+  points.p4Cp2 = points.p4.shift(114.81188629380082, 38.21149693481505 * (ease + 1) * sizeFactor)
+  points.p5 = points.p0.shift(266.33816548102595, 416.91257944059936 * (ease + 1) * sizeFactor)
+  points.p5Cp2 = points.p5.shift(180, 34.60436510741867 * (ease + 1) * sizeFactor)
+  points.p6 = points.p0.shift(266.68168927652545, 460.0168925339477 * (ease + 1) * sizeFactor)
+  points.p7 = points.p0.shift(270, 459.2456140350876 * (ease + 1) * sizeFactor)
   // makeRelativePoints(Point, points, points.p0, waist, ease)
 
   store.set('sideseam', points.p2.dist(points.p3))
@@ -87,6 +89,11 @@ function draftBack({
     if (sa) {
       paths.sa = paths.seamSA.offset(sa).close().attr('class', 'fabric sa')
     }
+
+    macro('cutonfold', {
+      from: points.p7,
+      to: points.p0,
+    })
   }
 
   // Paperless?
