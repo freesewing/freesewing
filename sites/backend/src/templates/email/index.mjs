@@ -1,6 +1,6 @@
 import { emailchange, translations as emailchangeTranslations } from './emailchange/index.mjs'
 import { goodbye, translations as goodbyeTranslations } from './goodbye/index.mjs'
-import { loginlink, translations as loginlinkTranslations } from './loginlink/index.mjs'
+import { signinlink, translations as signinlinkTranslations } from './signinlink/index.mjs'
 import { newslettersub, translations as newslettersubTranslations } from './newslettersub/index.mjs'
 import { passwordreset, translations as passwordresetTranslations } from './passwordreset/index.mjs'
 import { signup, translations as signupTranslations } from './signup/index.mjs'
@@ -19,7 +19,7 @@ import nl from '../../../public/locales/nl/shared.json' assert { type: 'json' }
 export const templates = {
   emailchange,
   goodbye,
-  loginlink,
+  signinlink,
   newslettersub,
   passwordreset,
   signup,
@@ -30,7 +30,7 @@ export const templates = {
 export const translations = {
   emailchange: emailchangeTranslations,
   goodbye: goodbyeTranslations,
-  loginlink: loginlinkTranslations,
+  signinlink: signinlinkTranslations,
   newslettersub: newslettersubTranslations,
   passwordreset: passwordresetTranslations,
   signup: signupTranslations,

@@ -133,10 +133,10 @@ export const mfaTests = async (chai, config, expect, store) => {
           })
       })
 
-      it(`${store.icon('mfa', auth)} Should not login with username/password only`, (done) => {
+      it(`${store.icon('mfa', auth)} Should not sign in with username/password only`, (done) => {
         chai
           .request(config.api)
-          .post('/login')
+          .post('/signin')
           .send({
             username: secret[auth].username,
             password: secret[auth].password,
@@ -150,10 +150,10 @@ export const mfaTests = async (chai, config, expect, store) => {
           })
       })
 
-      it(`${store.icon('mfa')} Should login with username/password/token`, (done) => {
+      it(`${store.icon('mfa')} Should sign in with username/password/token`, (done) => {
         chai
           .request(config.api)
-          .post('/login')
+          .post('/signin')
           .send({
             username: secret[auth].username,
             password: secret[auth].password,
@@ -168,10 +168,10 @@ export const mfaTests = async (chai, config, expect, store) => {
           })
       })
 
-      it(`${store.icon('mfa')} Should not login with a wrong token`, (done) => {
+      it(`${store.icon('mfa')} Should not sign in with a wrong token`, (done) => {
         chai
           .request(config.api)
-          .post('/login')
+          .post('/signin')
           .send({
             username: secret[auth].username,
             password: secret[auth].password,
@@ -181,7 +181,7 @@ export const mfaTests = async (chai, config, expect, store) => {
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(401)
             expect(res.body.result).to.equal('error')
-            expect(res.body.error).to.equal('loginFailed')
+            expect(res.body.error).to.equal('signInFailed')
             done()
           })
       })

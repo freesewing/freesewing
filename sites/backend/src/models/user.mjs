@@ -279,42 +279,86 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
 }
 
 /*
- * Login based on username + password
+ * Sign in based on username + password
  */
-UserModel.prototype.passwordLogin = async function (req) {
+UserModel.prototype.passwordSignIn = async function (req) {
   if (Object.keys(req.body).length < 1) return this.setResponse(400, 'postBodyMissing')
   if (!req.body.username) return this.setResponse(400, 'usernameMissing')
   if (!req.body.password) return this.setResponse(400, 'passwordMissing')
 
   await this.find(req.body)
   if (!this.exists) {
-    log.warn(`Login attempt for non-existing user: ${req.body.username} from ${req.ip}`)
-    return this.setResponse(401, 'loginFailed')
+    log.warn(`Sign-in attempt for non-existing user: ${req.body.username} from ${req.ip}`)
+    return this.setResponse(401, 'signInFailed')
   }
 
   // Account found, check password
   const [valid, updatedPasswordField] = verifyPassword(req.body.password, this.record.password)
   if (!valid) {
     log.warn(`Wrong password for existing user: ${req.body.username} from ${req.ip}`)
-    return this.setResponse(401, 'loginFailed')
+    return this.setResponse(401, 'signInFailed')
   }
 
   // Check for MFA
   if (this.record.mfaEnabled) {
     if (!req.body.token) return this.setResponse(403, 'mfaTokenRequired')
     else if (!this.mfa.verify(req.body.token, this.clear.mfaSecret)) {
-      return this.setResponse(401, 'loginFailed')
+      return this.setResponse(401, 'signInFailed')
     }
   }
 
-  // Login success
-  log.info(`Login by user ${this.record.id} (${this.record.username})`)
+  // Sign in success
+  log.info(`Sign-in by user ${this.record.id} (${this.record.username})`)
   if (updatedPasswordField) {
     // Update the password field with a v3 hash
     await this.unguardedUpdate({ password: updatedPasswordField })
   }
 
-  return this.isOk() ? this.loginOk() : this.setResponse(401, 'loginFailed')
+  return this.isOk() ? this.signInOk() : this.setResponse(401, 'signInFailed')
+}
+
+/*
+ * Send a magic link for user sign in
+ */
+UserModel.prototype.sendSigninlink = async function (req) {
+  if (Object.keys(req.body).length < 1) return this.setResponse(400, 'postBodyMissing')
+  if (!req.body.username) return this.setResponse(400, 'usernameMissing')
+
+  await this.find(req.body)
+  if (!this.exists) {
+    log.warn(`Magic link attempt for non-existing user: ${req.body.username} from ${req.ip}`)
+    return this.setResponse(401, 'signinFailed')
+  }
+
+  // Account found, create confirmation
+  const check = randomString()
+  this.confirmation = await this.Confirmation.create({
+    type: 'signinlink',
+    data: {
+      language: this.record.language,
+      check,
+    },
+    userId: this.record.id,
+  })
+  const isUnitTest = this.isUnitTest(req.body)
+  if (!isUnitTest) {
+    // Send sign-in link email
+    await this.mailer.send({
+      template: 'signinlink',
+      language: this.record.language,
+      to: this.clear.email,
+      replacements: {
+        actionUrl: i18nUrl(
+          this.record.language,
+          `/confirm/signin/${this.Confirmation.record.id}/${check}`
+        ),
+        whyUrl: i18nUrl(this.record.language, `/docs/faq/email/why-signin-link`),
+        supportUrl: i18nUrl(this.record.language, `/patrons/join`),
+      },
+    })
+  }
+
+  return this.setResponse(200, 'emailSent')
 }
 
 /*
@@ -348,19 +392,19 @@ UserModel.prototype.confirm = async function ({ body, params }) {
   await this.read({ id: this.Confirmation.record.user.id })
   if (this.error) return this
 
-  // Update user status, consent, and last login
+  // Update user status, consent, and last sign in
   await this.unguardedUpdate({
     status: 1,
     consent: body.consent,
-    lastLogin: new Date(),
+    lastSignIn: new Date(),
   })
   if (this.error) return this
 
   // Before we return, remove the confirmation so it works only once
   await this.Confirmation.unguardedDelete()
 
-  // Account is now active, let's return a passwordless login
-  return this.loginOk()
+  // Account is now active, let's return a passwordless sign in
+  return this.signInOk()
 }
 
 /*
@@ -599,7 +643,7 @@ UserModel.prototype.asAccount = function () {
     imperial: this.record.imperial,
     initial: this.clear.initial,
     language: this.record.language,
-    lastLogin: this.record.lastLogin,
+    lastSignIn: this.record.lastSignIn,
     mfaEnabled: this.record.mfaEnabled,
     newsletter: this.record.newsletter,
     patron: this.record.patron,
@@ -689,9 +733,9 @@ UserModel.prototype.isOk = function () {
 }
 
 /*
- * Helper method to return from successful login
+ * Helper method to return from successful sign in
  */
-UserModel.prototype.loginOk = function () {
+UserModel.prototype.signInOk = function () {
   return this.setResponse(200, false, {
     result: 'success',
     token: this.getToken(),

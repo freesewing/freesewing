@@ -24,7 +24,7 @@ import {
   )
   */
 const common = {
-  tags: ['Signup & Login'],
+  tags: ['Sign Up & Sign In'],
   security: [jwt, key],
 }
 
@@ -66,10 +66,10 @@ const local = {
 // Paths
 export const paths = {}
 
-// Create account (signup)
+// Create account (sign up)
 paths['/signup'] = {
   post: {
-    tags: ['Signup & Login'],
+    tags: ['Sign Up & Sign In'],
     summary: 'Sign up for a FreeSewing account',
     description:
       'Creates a new inactive account. The account will require confirmation via a link sent to the email address that the user submitted.',
@@ -114,7 +114,7 @@ paths['/signup'] = {
 // Confirm account
 paths['/confirm/signup/{id}'] = {
   post: {
-    tags: ['Signup & Login'],
+    tags: ['Sign Up & Sign In'],
     parameters: [local.params.id],
     summary: 'Confirm a FreeSewing account',
     description: 'Confirmes a new inactive account.',
@@ -152,13 +152,13 @@ paths['/confirm/signup/{id}'] = {
   },
 }
 
-// Login
-paths['/login'] = {
+// Sign In
+paths['/signin'] = {
   post: {
-    tags: ['Signup & Login'],
-    summary: 'Log in to a FreeSewing account',
+    tags: ['Sign Up & Sign In'],
+    summary: 'Sign in to a FreeSewing account',
     description:
-      "Logs in to an existing and active account. If MFA is enabled, you must also send the `token`. <br>The `username` field used for the login can contain one the User's `username`, `email`, or `id`.",
+      "Signs in to an existing and active account. If MFA is enabled, you must also send the `token`. <br>The `username` field used for the sign in can contain one the User's `username`, `email`, or `id`.",
     requestBody: {
       required: true,
       content: {
@@ -195,6 +195,45 @@ paths['/login'] = {
   },
 }
 
+// Send sign In Link
+paths['/signinlink'] = {
+  post: {
+    tags: ['Sign Up & Sign In'],
+    summary: 'Send a sign in link via email (aka magic link)',
+    description:
+      "Sends an email containing a sign in link that will sign in the user without the need for a password (also known as a 'magic link'). <br>The `username` field used for the sign in can contain one the User's `username`, `email`, or `id`.",
+    requestBody: {
+      required: true,
+      content: {
+        'application/json': {
+          schema: {
+            type: 'object',
+            properties: {
+              username: response.body.userAccount.properties.email,
+            },
+          },
+        },
+      },
+    },
+    responses: {
+      200: {
+        ...response.status['200'],
+        ...jsonResponse({
+          result: { ...fields.result, example: 'sent' },
+        }),
+      },
+      400: {
+        ...response.status['400'],
+        description:
+          response.status['400'].description +
+          errorExamples(['postBodyMissing', 'usernameMissing']),
+      },
+      401: response.status['401'],
+      500: response.status['500'],
+    },
+  },
+}
+
 // Load user account
 paths['/account/{auth}'] = {
   get: {
@@ -209,10 +248,7 @@ paths['/account/{auth}'] = {
           '**Success - Account data returned**\n\n' +
           'Status code `200` indicates that the resource was returned successfully.',
         ...jsonResponse({
-          result: {
-            ...fields.result,
-            example: 'success',
-          },
+          result: fields.result,
           account: response.body.userAccount,
         }),
       },
@@ -522,7 +558,7 @@ paths['/available/username'] = {
     tags: ['Users'],
     summary: `Checks whether a username is available`,
     description:
-      'This allows a background check to see whether a username is available during signup',
+      'This allows a background check to see whether a username is available during sign up',
     requestBody: {
       required: true,
       content: {

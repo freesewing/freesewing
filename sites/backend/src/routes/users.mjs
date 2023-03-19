@@ -7,14 +7,17 @@ const bsc = ['basic', { session: false }]
 export function usersRoutes(tools) {
   const { app, passport } = tools
 
-  // Sign up
+  // Sign Up
   app.post('/signup', (req, res) => Users.signup(req, res, tools))
 
   // Confirm account
   app.post('/confirm/signup/:id', (req, res) => Users.confirm(req, res, tools))
 
-  // Login
-  app.post('/login', (req, res) => Users.login(req, res, tools))
+  // Sign In
+  app.post('/signin', (req, res) => Users.signin(req, res, tools))
+
+  // Send magic link to sign in
+  app.post('/signinlink', (req, res) => Users.signinlink(req, res, tools))
 
   // Read current jwt
   app.get('/whoami/jwt', passport.authenticate(...jwt), (req, res) => Users.whoami(req, res, tools))

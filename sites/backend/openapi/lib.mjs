@@ -391,8 +391,8 @@ Also: Introvert 🙊
           example: 'en',
           enum: ['en', 'es', 'de', 'fr', 'nl'],
         },
-        lastLogin: {
-          description: 'Timestamp of when the User last authenticated, in ISO 8601 format.',
+        lastSignIn: {
+          description: 'Timestamp of when the User last signed in, in ISO 8601 format.',
           type: 'string',
           example: '2022-12-18T18:14:30.460Z',
         },
@@ -462,7 +462,7 @@ for (const remove of [
   'email',
   'github',
   'initial',
-  'lastLogin',
+  'lastSignIn',
   'lusername',
   'mfaEnabled',
   'newsletter',
