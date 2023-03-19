@@ -112,7 +112,7 @@ export const plugin = {
 
       let name = store.data?.name || 'No Name'
       name = name.replace('@freesewing/', '')
-      name += 'v' + (store.data?.version || 'No Version')
+      name += ' v' + (store.data?.version || 'No Version')
       points[`_${prefix}_titlePattern`] = nextPoint(name, 'fill-note')
 
       if (store.data.for) {
