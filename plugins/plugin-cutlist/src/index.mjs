@@ -42,7 +42,7 @@ function addCut(store, so = {}) {
     return store
   }
   const path = ['cutlist', partName, 'materials', material]
-  const existing = store.get(path) || []
+  const existing = store.get(path, [])
   store.set(path, existing.concat({ cut, identical, bias, ignoreOnFold }))
 
   return store
