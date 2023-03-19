@@ -16,8 +16,11 @@ export function usersRoutes(tools) {
   // Sign In
   app.post('/signin', (req, res) => Users.signin(req, res, tools))
 
-  // Send magic link to sign in
+  // Send sign-in link (aka magic link)
   app.post('/signinlink', (req, res) => Users.signinlink(req, res, tools))
+
+  // Login via sign-in link (aka magic link)
+  app.post('/signinlink/:id/:check', (req, res) => Users.signinvialink(req, res, tools))
 
   // Read current jwt
   app.get('/whoami/jwt', passport.authenticate(...jwt), (req, res) => Users.whoami(req, res, tools))

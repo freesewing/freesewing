@@ -314,6 +314,58 @@ UserModel.prototype.passwordSignIn = async function (req) {
     await this.unguardedUpdate({ password: updatedPasswordField })
   }
 
+  // Before we return, remove the confirmation so it works only once
+  await this.Confirmation.unguardedDelete()
+
+  return this.isOk() ? this.signInOk() : this.setResponse(401, 'signInFailed')
+}
+
+/*
+ * Sign in based on a sign-in link
+ */
+UserModel.prototype.linkSignIn = async function (req) {
+  if (!req.params.id) return this.setResponse(400, 'signInIdMissing')
+  if (!req.params.check) return this.setResponse(400, 'signInCheckMissing')
+
+  // Retrieve confirmation record
+  await this.Confirmation.read({ id: req.params.id })
+
+  // Verify whether Confirmation exists
+  if (!this.Confirmation.exists) {
+    log.warn(`Could not find signin confirmation id ${req.params.id}`)
+    return this.setResponse(404)
+  }
+
+  // Verify whether Confirmation is of the right type
+  if (this.Confirmation.record.type !== 'signinlink') {
+    log.warn(`Confirmation mismatch; ${req.params.id} is not a signin id`)
+    return this.setResponse(404)
+  }
+
+  // Verify Confirmation check
+  if (this.Confirmation.clear.data.check !== req.params.check) {
+    log.warn(`Confirmation mismatch; ${req.params.check} did not match signin confirmation check`)
+    return this.setResponse(404)
+  }
+
+  // Looks good, load user
+  await this.read({ id: this.Confirmation.record.user.id })
+  if (this.error) return this
+
+  // Check for MFA
+  if (this.record.mfaEnabled) {
+    if (!req.body.token) return this.setResponse(403, 'mfaTokenRequired')
+    else if (!this.mfa.verify(req.body.token, this.clear.mfaSecret)) {
+      return this.setResponse(401, 'signInFailed')
+    }
+  }
+
+  // Before we return, remove the confirmation so it works only once
+  await this.Confirmation.unguardedDelete()
+
+  // Sign in success
+  log.info(`Sign-in by user ${this.record.id} (${this.record.username}) (via signin link)`)
+
   return this.isOk() ? this.signInOk() : this.setResponse(401, 'signInFailed')
 }
 
@@ -327,7 +379,7 @@ UserModel.prototype.sendSigninlink = async function (req) {
   await this.find(req.body)
   if (!this.exists) {
     log.warn(`Magic link attempt for non-existing user: ${req.body.username} from ${req.ip}`)
-    return this.setResponse(401, 'signinFailed')
+    return this.setResponse(401, 'signInFailed')
   }
 
   // Account found, create confirmation

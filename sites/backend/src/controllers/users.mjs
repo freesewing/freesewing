@@ -55,6 +55,19 @@ UsersController.prototype.signinlink = async function (req, res, tools) {
 }
 
 /*
+ * Sign in (with a sign-in link)
+ *
+ * This is the endpoint that signs in a user via a sign-in link (aka magic link)
+ * See: https://freesewing.dev/reference/backend/api
+ */
+UsersController.prototype.signinvialink = async function (req, res, tools) {
+  const User = new UserModel(tools)
+  await User.linkSignIn(req)
+
+  return User.sendResponse(res)
+}
+
+/*
  * Returns the account of the authenticated user (with JWT)
  *
  * See: https://freesewing.dev/reference/backend/api

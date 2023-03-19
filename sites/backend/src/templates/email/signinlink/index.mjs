@@ -1,4 +1,4 @@
-import { buttonRow, closingRow, headingRow, wrap } from '../shared/blocks.mjs'
+import { buttonRow, closingRow, headingRow, lead1Row, wrap } from '../shared/blocks.mjs'
 // Translations
 import en from '../../../../public/locales/en/signinlink.json' assert { type: 'json' }
 import de from '../../../../public/locales/de/signinlink.json' assert { type: 'json' }
@@ -8,27 +8,24 @@ import nl from '../../../../public/locales/nl/signinlink.json' assert { type: 'j
 
 export const signinlink = {
   html: wrap.html(`
-  ${headingRow}
-  <tr>
-    <td align="left" class="sm-p-15px" style="padding-top: 15px">
-      <p style="margin: 0; font-size: 16px; line-height: 25px; color: #262626">
-        {{ prelead }}
-        <br>
-        <br>
-        <a href="__URL__" target="_blank" style="text-decoration: none; color: #262626">
-          <b>{{ lead }}:</b>
-        </a>
-      </p>
-    </td>
-  </tr>
-  ${buttonRow.text}
-  ${closingRow.text}
+  ${headingRow.html}
+  ${lead1Row.html}
+  ${buttonRow.html}
+  ${closingRow.html}
 `),
-  text: wrap.text(`${headingRow.text}
-{{ prelead }}
-{{lead }}
-${buttonRow.text}
-${closingRow.text}
+  text: wrap.text(`
+{{{ heading }}}
+
+{{{ textLead }}}
+
+{{{ actionUrl }}}
+
+{{{ closing }}}
+
+{{{ greeting }}},
+joost
+
+PS: {{{ text-ps }}} : {{{ supportUrl }}}
 `),
 }
 
