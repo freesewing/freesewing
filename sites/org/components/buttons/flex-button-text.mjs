@@ -2,7 +2,10 @@ import { validateEmail, validateTld } from 'site/utils.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
 import { useTranslation } from 'next-i18next'
 import { EmailIcon, RightIcon, WarningIcon } from 'shared/components/icons.mjs'
-import { FlexButtonText } from './flex-button-text.mjs'
+
+export const FlexButtonText = ({ children }) => (
+  <div className="flex flex-row items-center justify-between w-full">{children}</div>
+)
 
 export const EmailValidButton = ({ email, app, validText, invalidText, btnProps = {} }) => {
   const { t } = useTranslation(['signup'])

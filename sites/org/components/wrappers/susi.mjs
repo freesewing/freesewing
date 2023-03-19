@@ -18,7 +18,7 @@ export const SusiWrapper = ({ theme, children, error = false }) => (
       <div
         className={`${error ? 'bg-error' : 'bg-neutral'} bg-opacity-${
           opacity[theme]
-        } text-neutral-content rounded-none sm:rounded-lg py-4 px-8 drop-shadow`}
+        } text-neutral-content rounded-none sm:rounded-lg py-4 px-8 drop-shadow w-full`}
       >
         {children}
       </div>

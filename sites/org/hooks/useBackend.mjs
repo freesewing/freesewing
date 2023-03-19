@@ -83,6 +83,29 @@ export function useBackend(app) {
   }
 
   /*
+   * User signin
+   */
+  backend.signIn = async ({ username, password = false, token = false }) => {
+    const result =
+      password === false
+        ? await api.post('/signinlink', { username })
+        : await api.post('/signin', { username, password, token })
+    if (result.response) return result.response
+    // Handle this in the sign in page
+    return result
+  }
+
+  /*
+   * Trade in sign-in link
+   */
+  backend.signInLink = async ({ id, check, token }) => {
+    const result = await api.post(`/signinlink/${id}/${check}`, { token })
+    if (result.response) return result.response
+    // Handle this in the sign in page
+    return result
+  }
+
+  /*
    * Generic update account method
    */
   backend.updateAccount = async (data) => {

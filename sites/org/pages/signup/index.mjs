@@ -13,6 +13,8 @@ import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { SusiWrapper } from 'site/components/wrappers/susi.mjs'
 import { Robot } from 'shared/components/robot/index.mjs'
 import { EmailValidButton } from 'site/components/buttons/email-valid-button.mjs'
+import { ButtonText } from '../signin/index.mjs'
+import { EmailIcon, RightIcon, WarningIcon } from 'shared/components/icons.mjs'
 
 // Translation namespaces used on this page
 const namespaces = ['signup', 'errors']
@@ -124,6 +126,7 @@ const SignUpPage = (props) => {
                 app={app}
                 t={t}
                 validText={t('emailSignupLink')}
+                invalidText={t('pleaseProvideValidEmail')}
                 btnProps={{ type: 'submit' }}
               />
             </form>
