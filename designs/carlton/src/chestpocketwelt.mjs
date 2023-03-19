@@ -11,7 +11,6 @@ function draftCarltonChestPocketWelt({
   paths,
   Path,
   part,
-  addCut,
 }) {
   points.topLeft = new Point(0, 0)
   points.bottomRight = new Point(store.get('chestPocketWidth') * 2, store.get('chestPocketHeight'))
@@ -31,8 +30,8 @@ function draftCarltonChestPocketWelt({
 
   paths.fold = new Path().move(points.topMid).line(points.bottomMid).attr('class', 'dashed')
 
-  addCut()
-  addCut({ material: 'lmhCanvas' })
+  store.cutlist.addCut()
+  store.cutlist.addCut({ material: 'lmhCanvas' })
 
   if (complete) {
     points.title = new Point(points.bottomRight.x / 4, points.bottomRight.y / 2)

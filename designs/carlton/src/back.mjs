@@ -18,7 +18,6 @@ function draftCarltonBack({
   paths,
   Path,
   part,
-  addCut,
 }) {
   calculateRatios(part)
   // Belt width
@@ -98,10 +97,16 @@ function draftCarltonBack({
     .line(points.bpStart)
     .attr('class', 'dashed')
 
-  addCut()
-  addCut({ cut: 2, material: 'lining' })
+  store.cutlist.addCut()
+  store.cutlist.addCut({ material: 'lining' })
 
   if (complete) {
+    macro('title', {
+      at: points.title,
+      nr: '2',
+      title: 'back',
+    })
+
     macro('sprinkle', {
       snippet: 'bnotch',
       on: ['shoulder', 'bpTriangleTip'],

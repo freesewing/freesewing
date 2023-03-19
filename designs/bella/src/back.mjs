@@ -65,7 +65,6 @@ export const back = {
     measurements,
     log,
     part,
-    addCut,
   }) => {
     // Get to work
     points.cbNeck = new Point(0, measurements.neck * options.backNeckCutout)
@@ -254,6 +253,8 @@ export const back = {
       .close()
       .hide()
 
+    store.cutlist.addCut()
+
     if (complete) {
       points.titleAnchor = new Point(points.hps.x, points.armholePitchCp2.y)
       macro('title', {
@@ -269,8 +270,6 @@ export const back = {
         snippet: 'bnotch',
         on: ['armholePitch', 'bustCenter'],
       })
-
-      addCut()
 
       if (sa) paths.sa = paths.saBase.offset(sa).attr('class', 'fabric sa')
 

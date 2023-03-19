@@ -11,7 +11,6 @@ function draftCarltonInnerPocketWelt({
   paths,
   Path,
   part,
-  addCut,
 }) {
   points.topLeft = new Point(0, 0)
   points.bottomRight = new Point(
@@ -50,8 +49,8 @@ function draftCarltonInnerPocketWelt({
     .close()
     .attr('class', 'lashed')
 
-  addCut()
-  addCut({ material: 'lmhCanvas' })
+  store.cutlist.addCut()
+  store.cutlist.addCut({ material: 'lmhCanvas' })
 
   if (complete) {
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)

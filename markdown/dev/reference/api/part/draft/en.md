@@ -45,5 +45,3 @@ access the following properties:
 | `Bezier`          | The [bezier-js](https://pomax.github.io/bezierjs/) library's `Bezier` named export |
 || **_Return value_**   |
 | `part`            | Your draft method **must** return this |
-
-<Note> Some plugins, such as the [cutlist plugin](/reference/plugins/cutlist) add additional methods to this object that can be accessed through the same destructuring </Note>

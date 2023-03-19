@@ -2,7 +2,7 @@
 title: "Include Cutting Instructions"
 ---
 
-To include cutting instructions with your part, use the [cutlist plugin](/reference/plugins/cutlist) to add the [`addCut` method](/reference/plugins/cutlist#addcut) to your part's [`draft` method](/reference/api/part/draft)
+To include cutting instructions with your part, use the [cutlist plugin](/reference/plugins/cutlist) to add the [`cutlist.addCut` method](/reference/plugins/cutlist#addcut) to your part's [`store`](/reference/api/store/extend)
 
 <Tip>When you use the cutlist plugin, the [grainline plugin](/reference/plugins/grainline) and the [cut on fold plugin](/reference/plugins/cutonfold) will automatically add grain and fold information to the cutting instructions </Tip>
 
@@ -12,7 +12,7 @@ To include cutting instructions with your part, use the [cutlist plugin](/refere
 	<details>
 	<summary>addCut() Parameters</summary>
 
-Pass an object to the `addCut` method with any of the following keys; any you don't provide will be filled with the defaults:
+Pass an object to the `store.cutlist.addCut` method with any of the following keys; any you don't provide will be filled with the defaults:
 
 | Key | Type | Default | Description |
 | :-- | :--- | :------ | :---------- |
@@ -49,9 +49,9 @@ import {pluginCutlist} from '@freesewing/plugin-cutlist'
 const part = {
 	name: 'example.front',
 	plugins: [pluginCutlist],
-	draft: ({part, addCut}) => {
+	draft: ({part, store}) => {
 		// add instructions to cut two mirrored from main fabric
-		addCut()
+		store.cutlist.addCut()
 	}
 }
 ```
@@ -69,9 +69,9 @@ import {pluginCutlist} from '@freesewing/plugin-cutlist'
 const part = {
 	name: 'example.front',
 	plugins: [pluginCutlist],
-	draft: ({part, addCut}) => {
+	draft: ({part, store}) => {
 		// add instructions to cut three identical from lining
-		addCut({cut: 3, material: 'lining', identical: true})
+		store.cutlist.addCut({cut: 3, material: 'lining', identical: true})
 	}
 }
 ```
@@ -85,11 +85,11 @@ import {pluginCutlist} from '@freesewing/plugin-cutlist'
 const part = {
 	name: 'example.front',
 	plugins: [pluginCutlist],
-	draft: ({part, addCut}) => {
+	draft: ({part, store}) => {
 		// add instructions to cut four mirrored from main fabric
-		addCut({cut: 4})
+		store.cutlist.addCut({cut: 4})
 		// add instructions to cut three identical from lining
-		addCut({cut: 3, material: 'lining', identical: true})
+		store.cutlist.addCut({cut: 3, material: 'lining', identical: true})
 	}
 }
 ```
@@ -106,7 +106,7 @@ import {pluginCutonfold} from '@freesewing/plugin-cutonfold'
 const part = {
 	name: 'example.front',
 	plugins: [pluginCutlist, pluginCutonfold],
-	draft: ({part, points, Point, macro, addCut}) => {
+	draft: ({part, points, Point, macro, store}) => {
 		// set the cut on fold line
 		points.p1 = new Point(0, 0)
 		points.p2 = new Point(0, 10)
@@ -115,9 +115,9 @@ const part = {
 		macro('cutonfold', {from: points.p1, to: points.p2})
 
 		// cut two on the fold
-		addCut()
+		store.cutlist.addCut()
 		// cut two, not on the fold
-		addCut({cut: 2, ignoreOnFold: true})
+		store.cutlist.addCut({cut: 2, ignoreOnFold: true})
 	}
 }
 ```
@@ -133,7 +133,7 @@ import {pluginGrainline} from '@freesewing/plugin-grainline'
 const part = {
 	name: 'example.front',
 	plugins: [pluginCutlist, pluginGrainline],
-	draft: ({part, points, Point, macro, addCut}) => {
+	draft: ({part, points, Point, macro, store}) => {
 		// set the cut on fold line
 		points.p1 = new Point(0, 0)
 		points.p2 = new Point(0, 10)
@@ -142,9 +142,9 @@ const part = {
 		macro('grainline', {from: points.p1, to: points.p2})
 
 		// cut two mirrored on the grain
-		addCut()
+		store.cutlist.addCut()
 		// cut two mirrored on the bias
-		addCut({cut: 2, bias: true})
+		store.cutlist.addCut({cut: 2, bias: true})
 	}
 }
 ```
