@@ -24,8 +24,8 @@ const AuthRequired = ({ t }) => (
       <Link href="/signup" className="btn btn-primary w-32">
         {t('signUp')}
       </Link>
-      <Link href="/login" className="btn btn-primary btn-outline w-32">
-        {t('logIn')}
+      <Link href="/signin" className="btn btn-primary btn-outline w-32">
+        {t('signIn')}
       </Link>
     </div>
   </Wrap>
@@ -76,8 +76,8 @@ const ConsentLacking = ({ t }) => (
       <Link href="/signup" className="btn btn-primary w-32">
         {t('signUp')}
       </Link>
-      <Link href="/login" className="btn btn-primary btn-outline w-32">
-        {t('logIn')}
+      <Link href="/signin" className="btn btn-primary btn-outline w-32">
+        {t('signIn')}
       </Link>
     </div>
   </Wrap>

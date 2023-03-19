@@ -1,7 +1,7 @@
 authRequired: Authentication required
 membersOnly: This content is only accessible for FreeSewing members.
 signUp: Sign Up
-logIn: Log In
+signIn: Sign In
 statusUnknown: Account status warning
 statusUnknownMsg: Your account status prohibits us from processing your data. Please contact support.
 consentLacking: Consent lacking

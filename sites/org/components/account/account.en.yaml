@@ -12,7 +12,7 @@ expires: Expires
 yourProfile: Your profile
 yourPatterns: Your patterns
 yourSets: Your measurements sets
-logout: Log out
+signOut: Sign out
 politeOhCrap: Oh fiddlesticks
 bio: Bio
 email: E-mail address
@@ -61,7 +61,7 @@ delete: Delete
 nailedIt: Nailed it
 gone: Poof. Gone.
 reloadMsg1: The data stored in your browser can sometimes get out of sync with the data stored in our backend.
-reloadMsg2: This lets you reload your account data from the backend. It has the same effect as loggin out, and then logging in again
+reloadMsg2: This lets you reload your account data from the backend. It has the same effect as signin out, and then signing in again
 
 # bio
 bioTitle: Tell people a little bit about yourself
