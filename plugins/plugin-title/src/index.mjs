@@ -79,7 +79,7 @@ export const plugin = {
       }
 
       // Cut List instructions
-      const partCutlist = store.get(['cutlist', part.name])
+      const partCutlist = store.get(['cutlist', part.name], [])
       // if there's a cutlist and it should be included
       if (so.cutlist && partCutlist?.materials) {
         // get the default cutonfold
