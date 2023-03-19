@@ -4,7 +4,7 @@ import { pluginMirror } from '@freesewing/plugin-mirror'
 const prefix = 'mirroredOnFold'
 
 // types of path operations
-const opTypes = ['to', 'cp1', 'cp2']
+const opTypes = ['to', 'from', 'cp1', 'cp2']
 const avoidRegx = new RegExp(`^(cutonfold|grainline|__scalebox|__miniscale|${prefix})`)
 
 /**
@@ -41,55 +41,49 @@ export const cutLayoutPlugin = function (material, grainAngle) {
           return
         }
 
-        // get the cutlist configuration for this material
-        const matCutConfig = partCutlist.materials?.[material]
-        // if there's specific instructions for this material
-        if (matCutConfig) {
-          // get the config of the active part to be inherited by all duplicates
-          const activePartConfig = pattern.config.parts[pattern.activePart]
+        // get the cutlist configuration for this material, or default to one
+        const matCutConfig =
+          partCutlist.materials?.[material] || (material === 'fabric' ? [{ cut: 1 }] : [])
 
-          // hide the active part so that all others can inherit from it and be manipulated separately
-          part.hide()
+        // get the config of the active part to be inherited by all duplicates
+        const activePartConfig = pattern.config.parts[pattern.activePart]
 
-          // for each set of cutting instructions for this material
-          matCutConfig.forEach(({ cut, identical, bias, ignoreOnFold }, i) => {
-            // get the grain angle for the part for this set of instructions
-            const cGrain = partCutlist.grain ? partCutlist.grain + (bias ? 45 : 0) : undefined
+        // hide the active part so that all others can inherit from it and be manipulated separately
+        part.hide()
 
-            // for each piece that should be cut
-            for (let c = 0; c < cut; c++) {
-              const dupPartName = `cut.${pattern.activePart}.${material}_${c + i + 1}`
+        // for each set of cutting instructions for this material
+        matCutConfig.forEach(({ cut, identical, bias, ignoreOnFold }, i) => {
+          // get the grain angle for the part for this set of instructions
+          const cGrain = partCutlist.grain ? partCutlist.grain + (bias ? 45 : 0) : undefined
 
-              // make a new part that will follow these cutting instructions
-              pattern.addPart({
-                name: dupPartName,
-                from: activePartConfig,
-                draft: ({ part, macro }) => {
-                  // handle fold and grain for these cutting instructions
-                  macro('handleFoldAndGrain', {
-                    partCutlist,
-                    grainSpec: cGrain,
-                    ignoreOnFold,
-                    bias,
-                  })
+          // for each piece that should be cut
+          for (let c = 0; c < cut; c++) {
+            const dupPartName = `cut.${pattern.activePart}.${material}_${c + i + 1}`
 
-                  // if they shouldn't be identical, flip every other piece
-                  if (!identical && c % 2 === 1) macro('flip')
+            // make a new part that will follow these cutting instructions
+            pattern.addPart({
+              name: dupPartName,
+              from: activePartConfig,
+              draft: ({ part, macro }) => {
+                // handle fold and grain for these cutting instructions
+                macro('handleFoldAndGrain', {
+                  partCutlist,
+                  grainSpec: cGrain,
+                  ignoreOnFold,
+                  bias,
+                })
 
-                  return part
-                },
-              })
+                // if they shouldn't be identical, flip every other piece
+                if (!identical && c % 2 === 1) macro('flip')
 
-              // add it to the only list if there is one
-              addToOnly(pattern, dupPartName)
-            }
-          })
-        }
-        // if there wasn't a specific configuration, still make sure to handle fold and grain
-        else {
-          const { macro } = part.shorthand()
-          macro('handleFoldAndGrain', { partCutlist, grainSpec: partCutlist.grain })
-        }
+                return part
+              },
+            })
+
+            // add it to the only list if there is one
+            addToOnly(pattern, dupPartName)
+          }
+        })
       },
     },
     macros: {
@@ -97,6 +91,7 @@ export const cutLayoutPlugin = function (material, grainAngle) {
       ...pluginMirror.macros,
       // handle mirroring on the fold and rotating to sit along the grain or bias
       handleFoldAndGrain: ({ partCutlist, grainSpec, ignoreOnFold, bias }, { points, macro }) => {
+        // if there's a grain angle, rotate the part to be along it
         // if the part has cutonfold instructions
         if (partCutlist.cutOnFold) {
           // if we're not meant to igore those instructions, mirror on the fold
@@ -109,7 +104,6 @@ export const cutLayoutPlugin = function (material, grainAngle) {
           }
         }
 
-        // if there's a grain angle, rotate the part to be along it
         if (grainSpec !== undefined)
           macro('rotateToGrain', { grainAngle, bias, partGrain: grainSpec })
       },
@@ -177,12 +171,10 @@ export const cutLayoutPlugin = function (material, grainAngle) {
       rotateToGrain: ({ partGrain, grainAngle, bias }, { paths, snippets, Point, points }) => {
         // if this part doesn't have a grain recorded, bail
         if (partGrain === undefined) return
-
         // the amount to rotate is the difference between this part's grain angle (as drafted) and the fabric's grain angle
         let toRotate = grainAngle - partGrain
         // don't over rotate
-        if (toRotate >= 180) toRotate -= 180
-        else if (toRotate <= -180) toRotate += 180
+        toRotate = toRotate % 180
         // if there's no difference, don't rotate
         if (toRotate === 0) return
 
