@@ -10,6 +10,16 @@ export const plugin = {
     ['cutlist.setCutOnFold', setCutOnFold],
     ['cutlist.getCutFabrics', getCutFabrics],
   ],
+  hooks: {
+    prePartDraft: (pattern) => {
+      const injectedPart = pattern.config.inject[pattern.activePart]
+      if (!injectedPart) return
+
+      const store = pattern.setStores[pattern.activeSet]
+      const injectedCutlist = store.get(['cutlist', injectedPart], {})
+      store.set(['cutlist', pattern.activePart], { ...injectedCutlist })
+    },
+  },
 }
 
 // More specifically named exports
