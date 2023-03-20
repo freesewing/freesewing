@@ -23,7 +23,7 @@ describe('Cutonfold Plugin Tests', () => {
     const Test = new Design({ plugins: [plugin], parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    const c = pattern.parts[0].test.paths.cutonfold
+    const c = pattern.parts[0].test.paths.cutonfoldCutonfold
     expect(c.attributes.get('class')).to.equal('note')
     expect(c.attributes.get('marker-start')).to.equal('url(#cutonfoldFrom)')
     expect(c.attributes.get('marker-end')).to.equal('url(#cutonfoldTo)')
@@ -62,7 +62,7 @@ describe('Cutonfold Plugin Tests', () => {
     const Test = new Design({ plugins: [plugin], parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    const c = pattern.parts[0].test.paths.cutonfold
+    const c = pattern.parts[0].test.paths.cutonfoldCutonfold
     expect(c.attributes.get('data-text')).to.equal('cutOnFoldAndGrainline')
   })
 
@@ -85,7 +85,7 @@ describe('Cutonfold Plugin Tests', () => {
     const Test = new Design({ plugins: [plugin], parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    let c = pattern.parts[0].test.paths.cutonfold
+    let c = pattern.parts[0].test.paths.cutonfoldCutonfold
     expect(c.attributes.get('class')).to.equal('note')
     expect(c.attributes.get('marker-start')).to.equal('url(#cutonfoldFrom)')
     expect(c.attributes.get('marker-end')).to.equal('url(#cutonfoldTo)')
@@ -124,7 +124,7 @@ describe('Cutonfold Plugin Tests', () => {
     const Test = new Design({ plugins: [plugin], parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    let c = pattern.parts[0].test.paths.cutonfold
+    let c = pattern.parts[0].test.paths.cutonfoldCutonfold
     expect(c.attributes.get('class')).to.equal('note')
     expect(c.attributes.get('marker-start')).to.equal('url(#cutonfoldFrom)')
     expect(c.attributes.get('marker-end')).to.equal('url(#cutonfoldTo)')
