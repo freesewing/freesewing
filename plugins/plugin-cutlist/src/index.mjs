@@ -81,6 +81,7 @@ function setCutOnFold(store, p1, p2) {
   return store
 }
 
+/** Get a list of fabrics used by the pattern for the given settings */
 function getCutFabrics(store, settings) {
   const cutlist = store.get('cutlist')
   const list = settings.only ? [].concat(settings.only) : Object.keys(cutlist)

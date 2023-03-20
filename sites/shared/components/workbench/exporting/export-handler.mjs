@@ -24,6 +24,15 @@ export const defaultPdfSettings = {
   cutlist: true,
 }
 
+/**
+ * Instantiate a pattern that uses plugins theme, i18n, and cutlist
+ * @param  {Design} design    the design to construct the pattern from
+ * @param  {Object} gist      the gist
+ * @param  {Object} overwrite settings to overwrite gist settings with
+ * @param  {string} format    the export format this pattern will be prepared for
+ * @param  {function} t         the i18n function
+ * @return {Pattern}           a pattern
+ */
 const themedPattern = (design, gist, overwrite, format, t) => {
   const pattern = new design({ ...gist, ...overwrite })
 
@@ -34,7 +43,18 @@ const themedPattern = (design, gist, overwrite, format, t) => {
 
   return pattern
 }
+
+/**
+ * Generate svgs of all cutting layouts for the pattern
+ * @param  {Pattern} pattern the pattern to generate cutting layouts for
+ * @param  {Design} design  the design constructor for the pattern
+ * @param  {Object} gist    the gist
+ * @param  {string} format  the export format this pattern will be prepared for
+ * @param  {function} t       the i18n function
+ * @return {Object}         a dictionary of svgs and related translation strings, keyed by fabric
+ */
 const generateCutLayouts = (pattern, design, gist, format, t) => {
+  // get the fabrics from the already drafted base pattern
   const fabrics = pattern.setStores[pattern.activeSet].cutlist.getCutFabrics(
     pattern.settings[0]
   ) || ['fabric']
@@ -42,15 +62,22 @@ const generateCutLayouts = (pattern, design, gist, format, t) => {
 
   const isImperial = gist.units === 'imperial'
   const cutLayouts = {}
+  // each fabric
   fabrics.forEach((f) => {
+    // get the settings and layout for that fabric
     const fabricSettings = fabricSettingsOrDefault(gist, f)
     const fabricLayout = get(gist, ['layouts', 'cuttingLayout', f], true)
+
+    // make a new pattern
     const fabricPattern = themedPattern(design, gist, { layout: fabricLayout }, format, t)
+      // add cut layout plugin and fabric plugin
       .use(cutLayoutPlugin(f, fabricSettings.grainDirection))
       .use(fabricPlugin({ ...fabricSettings, printStyle: true, setPatternSize: 'width' }))
 
+    // draft and render
     fabricPattern.draft()
     const svg = fabricPattern.render()
+    // include translations
     cutLayouts[f] = {
       svg,
       title: t('plugin:' + f),

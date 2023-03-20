@@ -29,6 +29,8 @@ export class PdfMaker {
   buffers
   /** translated strings to add to the cover page */
   strings
+  /** cutting layout svgs and strings */
+  cutLayouts
 
   /** the usable width (excluding margin) of the pdf page, in points */
   pageWidth
@@ -124,6 +126,7 @@ export class PdfMaker {
     await this.generateSvgPage(this.svg)
   }
 
+  /** generate a page that has an svg centered in it below any text */
   async generateSvgPage(svg) {
     //abitrary margin for visual space
     let coverMargin = 85
@@ -138,8 +141,12 @@ export class PdfMaker {
       // use aspect ratio to center it
       preserveAspectRatio: 'xMidYMid meet',
     })
+
+    // increment page count
     this.pageCount++
   }
+
+  /** generate the title for the cover page */
   async generateCoverPageTitle() {
     this.addText('FreeSewing', 28)
       .addText(this.strings.tagline, 12, 20)
@@ -162,6 +169,7 @@ export class PdfMaker {
     this.addText(this.strings.url, 10)
   }
 
+  /** generate the title for a cutting layout page */
   async generateCutLayoutTitle(fabricTitle, fabricDimensions) {
     this.addText(this.strings.cuttingLayout, 12, 2).addText(fabricTitle, 28)
 
@@ -175,6 +183,7 @@ export class PdfMaker {
     this.addText(fabricDimensions, 16)
   }
 
+  /** generate all cutting layout pages */
   async generateCutLayoutPages() {
     if (!this.settings.cutlist || !this.cutLayouts) return
 
@@ -216,15 +225,24 @@ export class PdfMaker {
     }
   }
 
+  /** Reset to a clean page */
   nextPage() {
-    // if no pages have been made, we can use the current
+    // set the line level back to the top
     this.lineLevel = lineStart
+
+    // if no pages have been made, we can use the current
     if (this.pageCount === 0) return
 
     // otherwise make a new page
     this.pdf.addPage()
   }
 
+  /**
+   * Add Text to the page at the current line level
+   * @param {String} text         the text to add
+   * @param {Number} fontSize     the size for the text
+   * @param {Number} marginBottom additional margin to add below the text
+   */
   addText(text, fontSize, marginBottom = 0) {
     this.pdf.fontSize(fontSize)
     this.pdf.text(text, 50, this.lineLevel)
