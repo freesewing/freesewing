@@ -34,9 +34,10 @@ export const plugin = {
         ...so,
       }
       // setGrain relies on plugin-cutlist
-      if (typeof store.cutlist.setGrain === 'function') {
+      if (typeof store.get('cutlist.setGrain') === 'function') {
         store.cutlist.setGrain(so.from.angle(so.to))
       }
+
       if (complete) {
         points.grainlineFrom = so.from.shiftFractionTowards(so.to, 0.05)
         points.grainlineTo = so.to.shiftFractionTowards(so.from, 0.05)
