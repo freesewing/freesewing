@@ -359,7 +359,7 @@ sanity:
   dev:
     '@sanity/eslint-config-studio': '2.0.1'
     'eslint': *eslint
-    'prettier': '2.8.4'
+    'prettier': '2.8.5'
     'typescript': '4.9.5'
     '@sanity/cli': '3.6.0'
 
