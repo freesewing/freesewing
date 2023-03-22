@@ -229,7 +229,9 @@ export function curveIntersectsY(from, cp1, cp2, to, y) {
  * @param {Point} cp1B - Control Point at the start of the second curve
  * @param {Point} cp2B - Control Point at the end of the second curve
  * @param {Point} toB - End Point of the fsecond curve
- * @return {Array} intersections - An Array of Point objects of all intersections between the curves
+ * @return {Array} intersections - An Array of Point objects of all intersections between the curves, when there are more than 1 intersection
+ * @return {Point} intersection - A Point object of the intersection when there is exactly 1 intersection
+ * @return {Boolean} - false when there are no intersections
  */
 export function curvesIntersect(fromA, cp1A, cp2A, toA, fromB, cp1B, cp2B, toB) {
   let precision = 0.005 // See https://github.com/Pomax/bezierjs/issues/99
@@ -263,7 +265,7 @@ export function curvesIntersect(fromA, cp1A, cp2A, toA, fromB, cp1B, cp2B, toB) 
       }
       if (!dupe) unique.push(i)
     }
-    return unique
+    return unique.length === 1 ? unique.shift() : unique
   }
 }
 

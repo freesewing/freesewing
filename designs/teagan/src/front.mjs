@@ -1,4 +1,5 @@
 import { base } from '@freesewing/brian'
+import { hidePresets } from '@freesewing/core'
 
 function teaganFront({
   utils,
@@ -166,7 +167,7 @@ export const front = {
   name: 'teagan.front',
   from: base,
   measurements: ['hips', 'waist'],
-  hideDependencies: true,
+  hide: hidePresets.HIDE_TREE,
   options: {
     bicepsEase: 0.05,
     shoulderEase: 0,

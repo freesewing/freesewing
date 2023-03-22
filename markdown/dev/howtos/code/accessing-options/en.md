@@ -2,18 +2,19 @@
 title: Accessing options
 ---
 
-(the value of) Options are available on the `options` key of from the object
+Options are available on the `options` key of from the object
 passed to your part's draft method. You can destructure them for easy access.
 
 ```design/src/part.mjs
-function draftPart = ({ 
+function draftPart = ({
   // highlight-start
-  options, 
+  options,
   // highlight-end
-  part 
+  part
 }) {
 
-  // Do something here 
+  const a = options.fitKnee
+  const b = options[waistEase]
 
   return part
 }

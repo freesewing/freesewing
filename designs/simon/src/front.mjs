@@ -122,9 +122,10 @@ function simonFront({
   // Complete pattern?
   if (complete) {
     delete paths.cutonfold
+    const grainlineDistance = (points.hem.x - points.cfHem.x) * 0.2
     macro('grainline', {
-      from: points.cfHem.shift(0, 45),
-      to: points.cfNeck.shift(0, 45),
+      from: points.cfHem.shift(0, grainlineDistance),
+      to: points.cfNeck.shift(0, grainlineDistance),
     })
     macro('title', { at: points.title, nr: 'X', title: 'front' })
     macro('sprinkle', {
@@ -162,7 +163,11 @@ export const front = {
   name: 'simon.front',
   from: brianFront,
   after: back,
-  hideAll: true,
+  hide: {
+    self: true,
+    from: true,
+    inherited: true,
+  },
   options: {
     backDarts,
     backDartShaping,

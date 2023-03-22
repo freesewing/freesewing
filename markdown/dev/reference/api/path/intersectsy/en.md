@@ -47,4 +47,3 @@ array|false path.intersectsY(float y)
 }
 ```
 </Example>
-

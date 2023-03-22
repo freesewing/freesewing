@@ -21,7 +21,7 @@ Path path.close()
   points.from = new Point(10, 20)
   points.cp2 = new Point(60, 30)
   points.to = new Point(90, 20)
-  
+
   paths.line = new Path()
     .move(points.from)
     ._curve(points.cp2, points.to)
@@ -33,4 +33,3 @@ Path path.close()
 }
 ```
 </Example>
-

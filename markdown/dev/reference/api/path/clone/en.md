@@ -21,12 +21,12 @@ Path path.clone()
   points.BCp2 = new Point(40, 20)
   points.C = new Point(90, 30)
   points.CCp1 = new Point(50, -30)
-  
+
   paths.example = new Path()
     .move(points.A)
     .line(points.B)
     .curve(points.BCp2, points.CCp1, points.C)
-  
+
   paths.clone = paths.example
     .clone()
     .setClass("note lashed stroke-xl")
@@ -36,4 +36,3 @@ Path path.clone()
 }
 ```
 </Example>
-

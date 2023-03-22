@@ -3,7 +3,7 @@ title: Construct paths counter-clockwise
 order: 70
 ---
 
-Construct your paths counter-clockwise. You have to pick a direction anyway, and going
+Construct your paths _counter-clockwise_ (anti-clockwise). You have to pick a direction anyway, and going
 counter-clockwise is a bit of a convention.
 
 This applies both to naming points (specifically the control points of curves)
@@ -16,8 +16,8 @@ of (a part of) a garment.
 So pick a point, and make your way around counter-clockwise.
 
 When naming control points for curves, re-use the name of the point they are attached to
-and add `Cp1` to the control point before and `Cp2` to the control point after the point if
-, once again, you'd follow your path counter-clockwise.
+and add `Cp1` to the control point before and `Cp2` to the control point after the point if,
+once again, you follow your path counter-clockwise.
 
 For example:
 

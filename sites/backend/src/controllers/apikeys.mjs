@@ -1,6 +1,3 @@
-import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
-import { clean, asJson } from '../utils/index.mjs'
-import { log } from '../utils/log.mjs'
 import { ApikeyModel } from '../models/apikey.mjs'
 import { UserModel } from '../models/user.mjs'
 
@@ -15,6 +12,22 @@ export function ApikeysController() {}
 ApikeysController.prototype.create = async (req, res, tools) => {
   const Apikey = new ApikeyModel(tools)
   await Apikey.create(req)
+
+  return Apikey.sendResponse(res)
+}
+
+/*
+ * List API keys
+ *
+ * This is the endpoint that handles listing of API keys/tokens
+ * See: https://freesewing.dev/reference/backend/api/apikey
+ */
+ApikeysController.prototype.list = async (req, res, tools) => {
+  const Apikey = new ApikeyModel(tools)
+  const apikeys = await Apikey.userApikeys(req.user.uid)
+
+  if (apikeys) Apikey.setResponse(200, 'success', { apikeys })
+  else Apikey.setResponse(404, 'notFound')
 
   return Apikey.sendResponse(res)
 }

@@ -1,28 +1,40 @@
-import { emailChange, translations as emailChangeTranslations } from './emailchange.mjs'
-import { goodbye, translations as goodbyeTranslations } from './goodbye.mjs'
-import { loginLink, translations as loginLinkTranslations } from './loginlink.mjs'
-import { newsletterSub, translations as newsletterSubTranslations } from './newslettersub.mjs'
-import { passwordReset, translations as passwordResetTranslations } from './passwordreset.mjs'
-import { signup, translations as signupTranslations } from './signup.mjs'
-
-export const templates = {
-  emailChange,
-  goodbye,
-  loginLink,
-  newsletterSub,
-  passwordReset,
-  signup,
-}
+import { emailchange, translations as emailchangeTranslations } from './emailchange/index.mjs'
+import { goodbye, translations as goodbyeTranslations } from './goodbye/index.mjs'
+import { loginlink, translations as loginlinkTranslations } from './loginlink/index.mjs'
+import { newslettersub, translations as newslettersubTranslations } from './newslettersub/index.mjs'
+import { passwordreset, translations as passwordresetTranslations } from './passwordreset/index.mjs'
+import { signup, translations as signupTranslations } from './signup/index.mjs'
+import { signupaea, translations as signupaeaTranslations } from './signup-aea/index.mjs'
+import { signupaed, translations as signupaedTranslations } from './signup-aed/index.mjs'
+// Shared translations
+import en from '../../../public/locales/en/shared.json' assert { type: 'json' }
+import de from '../../../public/locales/de/shared.json' assert { type: 'json' }
+import es from '../../../public/locales/es/shared.json' assert { type: 'json' }
+import fr from '../../../public/locales/fr/shared.json' assert { type: 'json' }
+import nl from '../../../public/locales/nl/shared.json' assert { type: 'json' }
 
 /*
- * This is not part of our i18n package for... reasons
- * It's not an accident, let's put it that way.
+ * Everything is kept lowercase here because these key names are used in URLS
  */
+export const templates = {
+  emailchange,
+  goodbye,
+  loginlink,
+  newslettersub,
+  passwordreset,
+  signup,
+  'signup-aea': signupaea,
+  'signup-aed': signupaed,
+}
+
 export const translations = {
-  emailChange: emailChangeTranslations,
+  emailchange: emailchangeTranslations,
   goodbye: goodbyeTranslations,
-  loginLink: loginLinkTranslations,
-  newsletterSub: newsletterSubTranslations,
-  passwordReset: passwordResetTranslations,
+  loginlink: loginlinkTranslations,
+  newslettersub: newslettersubTranslations,
+  passwordreset: passwordresetTranslations,
   signup: signupTranslations,
+  'signup-aea': signupaeaTranslations,
+  'signup-aed': signupaedTranslations,
+  shared: { en, de, es, fr, nl },
 }

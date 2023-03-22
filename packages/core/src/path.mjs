@@ -1202,6 +1202,8 @@ function __joinPaths(paths, closed = false) {
     for (let op of p.ops) {
       if (op.type === 'curve') {
         joint.curve(op.cp1, op.cp2, op.to)
+      } else if (op.type === 'noop') {
+        joint.noop(op.id)
       } else if (op.type !== 'close') {
         // We're using sitsRoughlyOn here to avoid miniscule line segments
         if (current && !op.to.sitsRoughlyOn(current)) joint.line(op.to)

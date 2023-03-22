@@ -2,7 +2,7 @@ const Mocha = require('mocha')
 const { EVENT_TEST_FAIL, EVENT_RUN_END } = Mocha.Runner.constants
 
 const path = require('path')
-const projectRoot = path.normalize(path.join(__dirname, '..'))
+const projectRoot = path.normalize(path.join(__dirname, '../..'))
 const outputLog = path.join(projectRoot, '.test-failures.log')
 
 const red = function (string) {
@@ -26,11 +26,12 @@ class TerseReporter {
     runner.on(EVENT_TEST_FAIL, (test, err) => {
       // output to the console
       console.log(`FAIL: ${test.fullTitle()}`)
-      console.log(err)
+      console.error(err)
 
       // save for adding to an output file
-      failuresPerFile[this.currentTest.file] = failuresPerFile[this.currentTest.file] || []
-      failuresPerFile[this.currentTest.file].push(this.currentTest)
+      test.err = err
+      failuresPerFile[test.file] = failuresPerFile[test.file] || []
+      failuresPerFile[test.file].push(test)
     })
 
     runner.on(EVENT_RUN_END, () => {

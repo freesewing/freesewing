@@ -1,4 +1,5 @@
 import { sleevecap } from '@freesewing/brian'
+import { hidePresets } from '@freesewing/core'
 
 function teaganSleeve({
   sa,
@@ -46,7 +47,7 @@ function teaganSleeve({
   // Complete pattern?
   if (complete) {
     points.title = points.gridAnchor.clone()
-    macro('title', { at: points.title, nr: 2, title: 'sleeve' })
+    macro('title', { at: points.title, nr: 3, title: 'sleeve' })
     macro('grainline', {
       from: new Point(points.top.x, points.hemLeft.y),
       to: points.top,
@@ -96,7 +97,7 @@ function teaganSleeve({
 export const sleeve = {
   name: 'teagan.sleeve',
   from: sleevecap,
-  hideDependencies: true,
+  hide: hidePresets.HIDE_TREE,
   options: {
     sleeveEase: { pct: 15, min: 5, max: 35, menu: 'style' },
   },

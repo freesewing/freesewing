@@ -19,11 +19,11 @@ website(s) or other more user-facing aspects.
 
 FreeSewing is now ESM only. We no longer publish CJS modules.
 
-To make this explicit, we now use `.mjs` as file extention for our source code.
+To make this explicit, we now use the `.mjs` file extension for our source code, instead of `.js`.
 
 ### Named exports only
 
-All our published packages now have only named exports, and no longer any
+All our published packages now have only named exports and no longer have any
 default exports.
 
 Please refer to [the reference documentation](/reference/api#named-exports) to see what
@@ -38,7 +38,7 @@ FreeSewing now requires NodeJS version 16 or more recent.
 The following packages have been removed in v3:
 
 - **@freesewing/pattern-info**
-- **gatsby-remark-jargon**: We no longer use gatsby
+- **gatsby-remark-jargon**: We no longer use Gatsby
 - **remark-jargon**: Use rehype-jargon instead
 - **@freesewing/mui-theme**: We no longer use Material-UI
 - **@freesewing/css-theme**: We now use TailwindCSS
@@ -69,9 +69,9 @@ Refer to [the `Store.log` documentation](/reference/api/store/log) for all detai
 
 ### Design configuration
 
-In v2, a design had its own confifuration which contained all the info about
+In v2, a design had its own configuration which contained all the info about
 the design.  In v3, all of that is migrated to the part level. A design is now
-merely a container of parts, but also allows you to pass in additional data:
+merely a container of parts, but it also allows you to pass in additional data:
 
 ```js
 import { Design } from '@freesewing/core' // Note: named export
@@ -88,7 +88,7 @@ export const MyDesign = new Design({
 })
 ```
 
-You pass the Design contructor a single object where the only required property
+You pass the Design constructor a single object where the only required property
 is the `parts` key that holds an array of part objects.  The `data` property is
 optional, and allows you to add data/information to the design that you can use
 to facilitate frontend integration or a host of other things. Anything under
@@ -116,6 +116,6 @@ Apart from being attached at the part level, changes in comparison to v2 include
 
 ### File and directory structure changes
 
-- We no longer use a `config` folder, instead keep the config next to the parts.
-- We use `.mjs` extentions rather than `.js`
+- Designs no longer use a `config` folder, instead keeping the config in the parts files.
+- We use `.mjs` extensions rather than `.js`
 

@@ -26,7 +26,6 @@ export const __loadPatternDefaults = () => ({
   margin: 2,
   scale: 1,
   layout: true,
-  debug: false,
   options: {},
   absoluteOptions: {},
   measurements: {},

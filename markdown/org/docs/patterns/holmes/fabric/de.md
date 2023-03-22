@@ -4,11 +4,11 @@ title: "Holmes deerstalker hat: Fabric Options"
 
 ### Hauptstoff
 
-For the main fabric of your hat, a thick fabric will work best to hold the shape but if you wanna go for a lighter fabric you can interface it to give it more body. Generally you want to use **Wools** of coating weight but you can experiment with different weights and fabrics with the relevant interfacing.
+For the main fabric of your hat, a thick fabric will work best to hold the shape but if you wanna go for a lighter fabric you can interface it to give it more body. Generally you want to use **wools** of coating weight but you can experiment with different weights and fabrics with the relevant interfacing.
 
 <Note>
 
-A fun thing to try is printed cotton. Just double up the main fabric so each piece is double thickness. Then interface it with a **Medium Firm Interfacing**.
+A fun thing to try is printed cotton. Just double up the main fabric so each piece is double thickness. Then interface it with a **medium firm interfacing**.
 
 </Note>
 
@@ -18,7 +18,7 @@ Im Allgemeinen wollen Sie einen leichten Stoff wie **Seiden** oder **Baumwolle**
 
 ### Einlage
 
-Abhängig von der Dicke Ihres Stoffes und wie gut er seine Form beibehält, können Sie die Oberfläche Ihres Stoffes anpassen. If you are uncertain of whether your fabric requires interfacing, quickly _**Baste**_ your crown pieces together and see if the crown stays up right when placed on a surface. Wenn es keine Schnittstelle braucht. Als Faustregel benötigen Sie im Allgemeinen eine **mittlere Firm-Schnittstelle** aber wenn Ihr Stoff ziemlich dünn ist, benötigen Sie vielleicht eine festere Schnittstelle. If you are still uncertain you can face your crown pieces and once again _**Baste**_ the crown pieces together and check how it looks on your head. Sie können entweder fusible oder nicht fusible Schnittstellen verwenden. If using non-fusible interfacing you will want to flat line the interfacing to your pieces wih temporary _**Pad Stitches**_.
+Abhängig von der Dicke Ihres Stoffes und wie gut er seine Form beibehält, können Sie die Oberfläche Ihres Stoffes anpassen. If you are uncertain of whether your fabric requires interfacing, quickly _baste_ your crown pieces together and see if the crown stays up right when placed on a surface. Wenn es keine Schnittstelle braucht. Als Faustregel benötigen Sie im Allgemeinen eine **mittlere Firm-Schnittstelle** aber wenn Ihr Stoff ziemlich dünn ist, benötigen Sie vielleicht eine festere Schnittstelle. If you are still uncertain you can face your crown pieces and once again _baste_ the crown pieces together and check how it looks on your head. Sie können entweder fusible oder nicht fusible Schnittstellen verwenden. If using non-fusible interfacing you will want to flat line the interfacing to your pieces wih temporary _pad stitches_.
 
 <Note>
 

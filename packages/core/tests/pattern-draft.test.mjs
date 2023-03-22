@@ -174,6 +174,40 @@ describe('Pattern', () => {
       'Could not inject part `otherPart` into part `front`'
     )
   })
+
+  describe('Pattern.__pack()', () => {
+    it('should get a part stack name from a function that uses settings', () => {
+      const expectedName = 'namedStack'
+      const front = {
+        name: 'front',
+        stack: function (settings) {
+          return settings.options.stackName
+        },
+        options: {
+          stackName: {
+            dflt: expectedName,
+            list: [expectedName, 'otherStack'],
+          },
+        },
+        draft: function ({ part }) {
+          return part
+        },
+      }
+
+      const Test = new Design({
+        name: 'test',
+        parts: [front],
+      })
+
+      const pattern = new Test()
+      pattern.draft()
+      pattern.__pack()
+
+      const stackNames = Object.keys(pattern.stacks)
+      expect(stackNames).to.include(expectedName)
+      expect(stackNames).not.to.include('front')
+    })
+  })
   /*
 
   it('Should return all render props', () => {

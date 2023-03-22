@@ -1,5 +1,7 @@
 import { front as bentFront } from '@freesewing/bent'
 import { calculateRatios } from './shared.mjs'
+import { hidePresets } from '@freesewing/core'
+import { pluginCutlist } from '@freesewing/plugin-cutlist'
 
 function draftCarltonFront({
   paperless,
@@ -298,6 +300,8 @@ function draftCarltonFront({
     .close()
     .attr('class', 'fabric help')
 
+  store.cutlist.addCut()
+
   if (complete) {
     snippets.button1Left = new Snippet('button', points.button1Left).attr('data-scale', 2)
     snippets.button1Right = new Snippet('button', points.button1Right).attr('data-scale', 2)
@@ -477,7 +481,7 @@ function draftCarltonFront({
 export const front = {
   name: 'carlton.front',
   from: bentFront,
-  hideDependencies: true,
+  hide: hidePresets.HIDE_TREE,
   measurements: ['waist', 'waistToFloor', 'waistToSeat'],
   options: {
     chestEase: { pct: 10, min: 5, max: 20, menu: 'fit' },
@@ -501,5 +505,6 @@ export const front = {
     seatEase: { pct: 14, min: 8, max: 25, menu: 'fit' },
     innerPocketWeltHeight: { pct: 3.5, min: 2.5, max: 5, menu: 'pockets' },
   },
+  plugins: [pluginCutlist],
   draft: draftCarltonFront,
 }

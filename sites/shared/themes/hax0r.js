@@ -14,13 +14,13 @@ module.exports = {
   'primary-focus': colors.lime['600'],
   'primary-content': colors.lime['50'],
 
-  secondary: colors.lime['400'],
+  secondary: colors.lime['600'],
   'secondary-focus': colors.lime['500'],
   'secondary-content': bg,
 
-  accent: colors.lime['700'],
+  accent: colors.lime['800'],
   'accent-focus': colors.lime['600'],
-  'accent-content': colors.yellow['200'],
+  'accent-content': colors.lime['400'],
 
   neutral: '#001c06', // Even darker
   'neutral-focus': colors.lime['600'],

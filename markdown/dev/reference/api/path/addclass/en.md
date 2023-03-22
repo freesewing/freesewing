@@ -40,4 +40,3 @@ as the two following calls yield the same result:
 path.attr('class', 'fabric')
 path.addClass('fabric')
 ```
-

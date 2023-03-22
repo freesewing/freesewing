@@ -10,8 +10,8 @@ the attribute instead of adding it.
 
 ```js
 Point point.attr(
-  string name, 
-  mixed value, 
+  string name,
+  mixed value,
   bool overwrite = false
 )
 ```
@@ -36,7 +36,7 @@ If the third parameter is set to `true` it will call [`this.attributes.set()`](/
     .move(points.anchor)
     .line(points.anchor.shift(0, 80))
     .addClass('hidden')
-  
+
   return part
 }
 ```

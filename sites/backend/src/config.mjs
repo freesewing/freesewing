@@ -2,12 +2,21 @@ import chalk from 'chalk'
 // Load environment variables
 import dotenv from 'dotenv'
 import { asJson } from './utils/index.mjs'
-import { measurements } from '../../../config/measurements.mjs'
+import { randomString } from './utils/crypto.mjs'
+import { measurements } from './measurements.mjs'
+import get from 'lodash.get'
+import { readFileSync, writeFileSync } from 'node:fs'
+import { postConfig } from '../local-config.mjs'
 dotenv.config()
 
 // Allow these 2 to be imported
 export const port = process.env.BACKEND_PORT || 3000
 export const api = process.env.BACKEND_URL || `http://localhost:${port}`
+
+// Generate/Check encryption key only once
+const encryptionKey = process.env.BACKEND_ENC_KEY
+  ? process.env.BACKEND_ENC_KEY
+  : randomEncryptionKey()
 
 // All environment variables are strings
 // This is a helper method to turn them into a boolean
@@ -17,7 +26,7 @@ const envToBool = (input = 'no') => {
 }
 
 // Construct config object
-const config = {
+const baseConfig = {
   // Feature flags
   use: {
     github: envToBool(process.env.BACKEND_ENABLE_GITHUB),
@@ -41,17 +50,17 @@ const config = {
   },
   avatars: {
     user: process.env.BACKEND_AVATAR_USER || 'https://freesewing.org/avatar.svg',
-    person: process.env.BACKEND_AVATAR_PERSON || 'https://freesewing.org/avatar.svg',
+    set: process.env.BACKEND_AVATAR_SET || 'https://freesewing.org/avatar.svg',
     pattern: process.env.BACKEND_AVATAR_PATTERN || 'https://freesewing.org/avatar.svg',
   },
   db: {
-    url: process.env.BACKEND_DB_URL,
+    url: process.env.BACKEND_DB_URL || './db.sqlite',
   },
   encryption: {
-    key: process.env.BACKEND_ENC_KEY,
+    key: encryptionKey,
   },
   jwt: {
-    secretOrKey: process.env.BACKEND_ENC_KEY,
+    secretOrKey: encryptionKey,
     issuer: process.env.BACKEND_JWT_ISSUER || 'freesewing.org',
     audience: process.env.BACKEND_JWT_ISSUER || 'freesewing.org',
     expiresIn: process.env.BACKEND_JWT_EXPIRY || '7d',
@@ -71,6 +80,9 @@ const config = {
     },
     base: 'user',
   },
+  tests: {
+    domain: process.env.BACKEND_TEST_DOMAIN || 'freesewing.dev',
+  },
   website: {
     domain: process.env.BACKEND_WEBSITE_DOMAIN || 'freesewing.org',
     scheme: process.env.BACKEND_WEBSITE_SCHEME || 'https',
@@ -84,8 +96,8 @@ const config = {
  */
 
 // Github config
-if (config.use.github)
-  config.github = {
+if (baseConfig.use.github)
+  baseConfig.github = {
     token: process.env.BACKEND_GITHUB_TOKEN,
     api: 'https://api.github.com',
     bot: {
@@ -115,18 +127,12 @@ if (config.use.github)
     },
   }
 
-// Unit test config
-if (config.use.tests.base)
-  config.tests = {
-    domain: process.env.BACKEND_TEST_DOMAIN || 'freesewing.dev',
-  }
-
 // Sanity config
-if (config.use.sanity)
-  config.sanity = {
+if (baseConfig.use.sanity)
+  baseConfig.sanity = {
     project: process.env.SANITY_PROJECT,
     dataset: process.env.SANITY_DATASET || 'production',
-    token: process.env.SANITY_TOKEN,
+    token: process.env.SANITY_TOKEN || 'fixmeSetSanityToken',
     version: process.env.SANITY_VERSION || 'v2022-10-31',
     api: `https://${process.env.SANITY_PROJECT || 'missing-project-id'}.api.sanity.io/${
       process.env.SANITY_VERSION || 'v2022-10-31'
@@ -134,8 +140,8 @@ if (config.use.sanity)
   }
 
 // AWS SES config (for sending out emails)
-if (config.use.ses)
-  config.aws = {
+if (baseConfig.use.ses)
+  baseConfig.aws = {
     ses: {
       region: process.env.BACKEND_AWS_SES_REGION || 'us-east-1',
       from: process.env.BACKEND_AWS_SES_FROM || 'FreeSewing <info@freesewing.org>',
@@ -151,8 +157,8 @@ if (config.use.ses)
   }
 
 // Oauth config for Github as a provider
-if (config.use.oauth?.github)
-  config.oauth.github = {
+if (baseConfig.use.oauth?.github)
+  baseConfig.oauth.github = {
     clientId: process.env.BACKEND_OAUTH_GITHUB_CLIENT_ID,
     clientSecret: process.env.BACKEND_OAUTH_GITHUB_CLIENT_SECRET,
     tokenUri: 'https://github.com/login/oauth/access_token',
@@ -161,24 +167,27 @@ if (config.use.oauth?.github)
   }
 
 // Oauth config for Google as a provider
-if (config.use.oauth?.google)
-  config.oauth.google = {
+if (baseConfig.use.oauth?.google)
+  baseConfig.oauth.google = {
     clientId: process.env.BACKEND_OAUTH_GOOGLE_CLIENT_ID,
     clientSecret: process.env.BACKEND_OAUTH_GOOGLE_CLIENT_SECRET,
     tokenUri: 'https://oauth2.googleapis.com/token',
     dataUri: 'https://people.googleapis.com/v1/people/me?personFields=emailAddresses,names,photos',
   }
 
+// Load local config
+const config = postConfig(baseConfig)
+
 // Exporting this stand-alone config
 export const sanity = config.sanity || {}
 export const website = config.website
 
 const vars = {
-  BACKEND_DB_URL: 'required',
+  BACKEND_DB_URL: ['required', 'db.url'],
   BACKEND_PORT: 'optional',
   BACKEND_WEBSITE_DOMAIN: 'optional',
   BACKEND_WEBSITE_SCHEME: 'optional',
-  BACKEND_ENC_KEY: 'requiredSecret',
+  BACKEND_ENC_KEY: ['requiredSecret', 'encryption.key'],
   BACKEND_JWT_ISSUER: 'optional',
   BACKEND_JWT_EXPIRY: 'optional',
   // Feature flags
@@ -245,16 +254,22 @@ export function verifyConfig(silent = false) {
     if (typeof input === 'string' && input.length > 0) return false
     return true
   }
-  const warnings = []
   const errors = []
   const ok = []
 
-  for (const [key, type] of Object.entries(vars)) {
+  for (let [key, type] of Object.entries(vars)) {
+    let configPath = false
+    let val
+    if (Array.isArray(type)) [type, configPath] = type
     if (['required', 'requiredSecret'].includes(type)) {
-      if (typeof process.env[key] === 'undefined' || emptyString(process.env[key])) errors.push(key)
+      if (typeof process.env[key] === 'undefined' || emptyString(process.env[key])) {
+        // Allow falling back to defaults for required config
+        if (configPath) val = get(config, configPath)
+        if (typeof val === 'undefined') errors.push(key)
+      }
       if (type === 'requiredSecret')
         ok.push(`🔒 ${chalk.yellow(key)}: ` + chalk.grey('***redacted***'))
-      else ok.push(`✅ ${chalk.green(key)}: ${chalk.grey(process.env[key])}`)
+      else ok.push(`✅ ${chalk.green(key)}: ${chalk.grey(val)}`)
     } else {
       if (typeof process.env[key] !== 'undefined' && !emptyString(process.env[key])) {
         ok.push(`✅ ${chalk.green(key)}: ${chalk.grey(process.env[key])}`)
@@ -284,32 +299,54 @@ export function verifyConfig(silent = false) {
   }
 
   if (envToBool(process.env.BACKEND_ENABLE_DUMP_CONFIG_AT_STARTUP)) {
-    console.log(
-      chalk.cyan.bold('Dumping configuration:\n'),
-      asJson(
-        {
-          ...config,
-          encryption: {
-            ...config.encryption,
-            key:
-              config.encryption.key.slice(0, 4) + '**redacted**' + config.encryption.key.slice(-4),
-          },
-          jwt: {
-            secretOrKey:
-              config.jwt.secretOrKey.slice(0, 4) +
-              '**redacted**' +
-              config.jwt.secretOrKey.slice(-4),
-          },
-          sanity: {
-            ...config.sanity,
-            token: config.sanity.token.slice(0, 4) + '**redacted**' + config.sanity.token.slice(-4),
-          },
-        },
-        null,
-        2
-      )
-    )
+    const dump = {
+      ...config,
+      encryption: {
+        ...config.encryption,
+        key: config.encryption.key.slice(0, 4) + '**redacted**' + config.encryption.key.slice(-4),
+      },
+      jwt: {
+        secretOrKey:
+          config.jwt.secretOrKey.slice(0, 4) + '**redacted**' + config.jwt.secretOrKey.slice(-4),
+      },
+    }
+    if (config.sanity)
+      dump.sanity = {
+        ...config.sanity,
+        token: config.sanity.token.slice(0, 4) + '**redacted**' + config.sanity.token.slice(-4),
+      }
+    console.log(chalk.cyan.bold('Dumping configuration:\n'), asJson(dump, null, 2))
   }
 
   return config
+}
+
+/*
+ * Generates a random key
+ *
+ * This is a convenience method, typically used in a scenario where people want
+ * to kick the tires by spinning up a Docker container running this backend.
+ * The backend won't start without a valid encryption key. So rather than add
+ * this roadblock to such users, it will auto-generate an encryption key and
+ * write it to disk.
+ */
+function randomEncryptionKey() {
+  const filename = 'encryption.key'
+  console.log(chalk.yellow('⚠️  No encryption key provided'))
+  let key = false
+  try {
+    console.log(chalk.dim('Checking for prior auto-generated encryption key'))
+    key = readFileSync(filename, 'utf-8')
+  } catch (err) {
+    console.log(chalk.dim('No prior auto-generated encryption key found.'))
+  }
+  if (key) {
+    console.log(chalk.green('✅ Prior encryption key found.'))
+  } else {
+    console.log(chalk.green('✅ Generating new random encryption key'))
+    key = randomString(64)
+    writeFileSync(filename, key)
+  }
+
+  return key
 }

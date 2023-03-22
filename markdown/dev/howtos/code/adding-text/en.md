@@ -37,4 +37,3 @@ function draftPart = ({
 }
 ```
 </Example>
-```

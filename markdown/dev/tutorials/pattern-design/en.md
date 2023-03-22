@@ -2,31 +2,31 @@
 title: Pattern design tutorial
 ---
 
-Welcome to the FreeSewing pattern design tutorial, where you'll learn how to
+Welcome to the FreeSewing pattern design tutorial, where we'll learn how to
 design a made-to-measure sewing pattern, start to finish.
 
 <Tip>
 ##### Before you start
 
-If you haven't done so yet, read the [Before you start 
-guide](/guides/prerequisites). It's very short, but covers some basic 
+If you haven't done so yet, read the [Before you start
+guide](/guides/prerequisites). It's very short, but covers some basic
 terminology and concepts that we'll use throughout this guide.
 </Tip>
 
-You will be designing a pattern for a baby bib. It's a very simple pattern, but
-that's the point.  Your focus today is on learning FreeSewing and how to
-translate your designs into code.
+We will be designing a pattern for a baby bib. It's a very simple pattern, but
+that's the point.  Our focus today is on learning FreeSewing and how to
+translate our designs into code.
 
-At the end of this tutorial, you will have created this pattern:
+At the end of this tutorial, we will have created this pattern:
 
 
 <Example tutorial="1" previewFirst="1" caption="Our end result">
 ```js
-function draftBib({ 
-  Path, 
-  Point, 
-  paths, 
-  points, 
+function draftBib({
+  Path,
+  Point,
+  paths,
+  points,
   measurements,
   options,
   macro,
@@ -43,15 +43,15 @@ function draftBib({
   do {
   	points.right = new Point(tweak * measurements.head / 10, 0)
   	points.bottom = new Point(0, tweak * measurements.head / 12)
-  
+
   	points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right)/2)
   	points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right)/2)
-  
+
   	paths.quarterNeck = new Path()
   	  .move(points.right)
   	  .curve(points.rightCp1, points.bottomCp2, points.bottom)
       .hide() // Add this line
-  
+
   	delta = paths.quarterNeck.length() - target
     if (delta > 0) tweak = tweak * 0.99
     else tweak = tweak * 1.02
@@ -67,10 +67,10 @@ function draftBib({
   points.topCp1 = points.bottomCp2.flipY()
   points.topCp2 = points.bottomCp1.flipY()
 
-  // Drawing the bib outline 
+  // Drawing the bib outline
   const width = measurements.head * options.widthRatio
   const length = measurements.head * options.lengthRatio
-  
+
   points.topLeft = new Point(
     width / -2,
     points.top.y - (width / 2 - points.right.x)
@@ -78,12 +78,12 @@ function draftBib({
   points.topRight = points.topLeft.shift(0, width)
   points.bottomLeft = points.topLeft.shift(-90, length)
   points.bottomRight = points.topRight.shift(-90, length)
-  
+
   // Shape the straps
   points.edgeLeft = new Point(points.topLeft.x, points.left.y)
   points.edgeRight = new Point(points.topRight.x, points.right.y)
   points.edgeTop = new Point(0, points.topLeft.y)
-  
+
   points.edgeLeftCp = points.edgeLeft.shiftFractionTowards(points.topLeft, 0.5)
   points.edgeRightCp = points.edgeLeftCp.flipX()
   points.edgeTopLeftCp = points.edgeTop.shiftFractionTowards(
@@ -91,14 +91,14 @@ function draftBib({
     0.5
   )
   points.edgeTopRightCp = points.edgeTopLeftCp.flipX()
-   
+
   // Round the straps
   const strap = points.edgeTop.dy(points.top)
-  
+
   points.tipRight = points.edgeTop.translate(strap / 2, strap / 2)
   points.tipRightTop = new Point(points.tipRight.x, points.edgeTop.y)
   points.tipRightBottom = new Point(points.tipRight.x, points.top.y)
-  
+
   macro("round", {
     from: points.edgeTop,
     to: points.tipRight,
@@ -131,7 +131,7 @@ function draftBib({
   while (points.tipRightBottomStart.x > -1) {
     for (const p of rotateThese) points[p] = points[p].rotate(1, points.edgeLeft)
   }
-  
+
   // Snap anchor
   points.snapLeft = points.top.shiftFractionTowards(points.edgeTop, 0.5)
 
@@ -223,8 +223,8 @@ function draftBib({
 ```
 </Example>
 
-Before we can get started, let's make sure you have the required software
-installed on your computer:
+Before we can get started, let's make sure we have the required software
+installed on our computer:
 
 ## Prerequisites
 
@@ -232,15 +232,15 @@ FreeSewing is a JavaScript library that can run in the browser, on
 [Node.js](https://nodejs.org/), or a variety of other runtimes such as Deno,
 AWS Lambda, and so on.
 
-For development, we'll use NodeJS. If you don't have Node.js on your system,
-follow the link above and install it on your system.
+For development, we'll use Node.js. If we don't have Node.js on our system,
+follow the link above and install it on our system.
 
-<Tip compact>You need NodeJS 16 or higher to use FreeSewing</Tip>
+<Tip compact>We need Node.js 16 or higher to use FreeSewing</Tip>
 
-When you're done, you can test whether it works by running:
+When we're done, we can test whether it works by running:
 
 ```sh
 node -v
 ```
 
-If you get the node version number, you're all set.
+If we get the Node.js version number, we're all set.

@@ -959,6 +959,24 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "MA-TATAS",
+      "name": "MA-TATAS",
+      "avatar_url": "https://avatars.githubusercontent.com/u/125549564?v=4",
+      "profile": "https://github.com/MA-TATAS",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "raphaelsiz",
+      "name": "mergerg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64447714?v=4",
+      "profile": "https://tech.lgbt/@mergerg",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true

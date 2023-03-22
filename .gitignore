@@ -71,8 +71,8 @@ plugins/*/yarn.lock
 # NPM lock files for sites (we use yarn)
 sites/*/package-lock.json
 
-# Strapi cache
-sites/strapi/.cache
+# Sanity cache
+sites/sanity/.sanity
 
 # Sites prebuild artifacts
 sites/*/public/locales/*/*.json
@@ -88,6 +88,8 @@ packages/new-design/lib/banner.mjs
 # Lab auto-generated pages
 sites/lab/lib
 sites/lab/pages
+# but not the indexes
+!sites/lab/pages/*/index.js
 
 # Node dependencies
 node_modules

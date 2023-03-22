@@ -4,12 +4,12 @@ title: "Yuri hoodie: Sewing Instructions"
 
 <Note>
 
-Este patrón se puede coser con o con un overlocker/serger. To _**Finish**_ seams without a overlocker/serger you can either use your prefered method or one of the methods below:
+Este patrón se puede coser con o con un overlocker/serger. To _finish_ seams without a overlocker/serger you can either use your prefered method or one of the methods below:
 
 ##### Finishing Method 1
 
 - Press open the seam allowances.
-- Then on the good side, _**Edgestitch**_ 3mm (1/8 inch) away or closer to both sides of the seam catching the seam allowances underneath.
+- Then on the good side, _edgestitch_ 3mm (1/8 inch) away or closer to both sides of the seam catching the seam allowances underneath.
 - En el lado equivocado recortar las franquicias de costura cerca de la edgestión.
 
 ##### Método de finalización 2
@@ -28,17 +28,17 @@ Si usas un overlocker/serger puedes coser costuras que necesitan fininshing en u
 ## Step 1: Attaching the Gussets
 
 - Con los buenos lados juntos, coser las chispas a los paneles frontales a lo largo de las costuras laterales.
-- _**Finish**_ seams.
+- _finish_ seams.
 
 ## Paso 2: Acercar las Costuras del Hombro
 
 - Con buenos lados juntos, coser las piezas delanteras a la espalda a lo largo de las costuras del hombro.
-- _**Finish**_ seams.
+- _finish_ seams.
 
 ## Paso 3: Adjunta las Mangas
 
 - Con buenos lados juntos, emparejar el mueble de espalda y el mueble delantero al mueble delantero, coser las mangas al cuerpo.
-- _**Finish**_ seams.
+- _finish_ seams.
 
 <Note>
 
@@ -65,7 +65,7 @@ Este es sólo un método de hemming, si se prefiere otro camino a seguir.
 ## Paso 5: Cerrar los lados
 
 - Con buenos lados juntos, emparejar costuras de hombro, empezar en el borde de la manga y coser la manga juntos que coser el chorro y volver juntos.
-- _**Finish**_ seams.
+- _finish_ seams.
 - Repetir para la manga restante y la apertura lateral.
 
 ## Paso 6: Hem los bordes raudales
@@ -80,7 +80,7 @@ Follow this step twice, once for the outer hood and once for the lining hood.
 - Con buenos lados juntos, coser el largo borde del Centro de Madera hasta el borde exterior de una de las laderas de Madera.
 - Con buenos lados juntos, coser el largo borde restante del Centro de Madera al borde exterior del otro lado de la Madera.
 - Pulse la costura abierta.
-- _**Finish**_ seams.
+- _finish_ seams.
 
 <Note>
 

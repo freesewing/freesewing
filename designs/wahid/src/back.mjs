@@ -1,6 +1,7 @@
 import { constructMainDart, shapeSideSeam, dartPath } from './shared.mjs'
 import { back as brianBack } from '@freesewing/brian'
 import { backInset, shoulderInset, neckInset, centerBackDart, backScyeDart } from './options.mjs'
+import { hidePresets } from '@freesewing/core'
 
 function wahidBack({
   points,
@@ -227,7 +228,7 @@ function wahidBack({
 export const back = {
   name: 'wahid.back',
   from: brianBack,
-  hideDependencies: true,
+  hide: hidePresets.HIDE_TREE,
   measurements: ['hips', 'waist'],
   options: {
     backInset,

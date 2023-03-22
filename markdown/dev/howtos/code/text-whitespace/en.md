@@ -8,11 +8,11 @@ need to add a special type of text: whitespace.
 Whitespace in patterns can either be line breaks, or spaces. We'll
 show you have to handle both below:
 
-## Adding linebreaks to text
+## Adding line breaks to text
 
-To add linebreaks to text, you merely have to include them in your text.
-When doing so, keep in mind that single-quoted strings in Javascript
-will **not** pick up linebreaks.
+To add line breaks to text, you merely have to include them in your text.
+When doing so, keep in mind that single-quoted strings in JavaScript
+will **not** pick up line breaks.
 
 <Example caption="An example of whitespace in text">
 ```design/src/part.mjs

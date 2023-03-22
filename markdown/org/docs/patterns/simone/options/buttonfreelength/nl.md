@@ -13,8 +13,7 @@ Hoe ver voor je tailleband wil je dat je laatste knoop zit?
 Knopen voorbij je tailleband wordt door velen als vervelend ervaren.
 Ze zitten vast in je riem, en maken toiletpauzes onnodig lastig.
 
-By default, the last button sits 1cm above your waistband,
-but this option allows you to move it further upwards for that shirt you are going to wear with those high-waisted trousers.
+Als je knopen onder je tailleband wil kan dat ook.
 
 Als je knopen onder je tailleband wil kan dat ook. You should enter a negative value here,
 making sure it's within the length bonus you have available.

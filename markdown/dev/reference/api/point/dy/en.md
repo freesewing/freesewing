@@ -19,7 +19,7 @@ float point.dy(Point point)
 
   points.from = new Point(10, 40)
   points.to = new Point(10, 10)
-      
+
   paths.line = new Path()
     .move(points.from)
     .line(points.to)
@@ -35,4 +35,3 @@ float point.dy(Point point)
 }
 ```
 </Example>
-

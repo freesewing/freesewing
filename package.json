@@ -16,14 +16,14 @@
     "tips": "node scripts/help.mjs",
     "lab": "cd sites/lab && yarn start",
     "lab-debug": "cd sites/lab && yarn start-debug",
-    "kickstart": "npx lerna bootstrap && yarn buildall && yarn prepare && yarn tips",
+    "kickstart": "npx lerna bootstrap && yarn reconfigure && yarn buildall && yarn prepare && yarn tips",
     "kickstart:windows": "npx lerna bootstrap && yarn wbuildall && yarn prepare && yarn tips",
     "cleanall": "lerna run clean",
     "test": "lerna run test",
     "prettier": "npx prettier --write 'config/*' 'config/**/*' 'packages/**/src/*.mjs' 'packages/i18n/src/locales/**/*.*' 'packages/**/tests/*.mjs'",
     "reconfigure": "all-contributors generate && node --experimental-json-modules --no-warnings scripts/reconfigure.mjs",
     "prerelease": "lerna version --no-git-tag-version --no-push && yarn reconfigure && yarn buildall",
-    "buildall": "lerna run cibuild_step0 && lerna run cibuild_step1 && lerna run cibuild_step2 && lerna run cibuild_step3 && lerna run cibuild_step4 && lerna run cibuild_step5 && lerna run cibuild_step6 && lerna run cibuild_step7",
+    "buildall": "npm run reconfigure && lerna run cibuild_step0 && lerna run cibuild_step1 && lerna run cibuild_step2 && lerna run cibuild_step3 && lerna run cibuild_step4 && lerna run cibuild_step5 && lerna run cibuild_step6 && lerna run cibuild_step7",
     "build": "yarn buildall",
     "wbuild": "yarn wbuildall",
     "testall": "node scripts/testall.js",
@@ -42,7 +42,7 @@
     "checkdocs": "remark markdown --quiet --frail",
     "strapi:translate": "node scripts/strapi-en-to-other.mjs",
     "fixdocs": "remark markdown --quiet --frail --output",
-    "wbuildall": "lerna run wcibuild_step0 && lerna run wcibuild_step1 && lerna run wcibuild_step2 && lerna run wcibuild_step3 && lerna run wcibuild_step4 && lerna run wcibuild_step5 && lerna run wcibuild_step6 && lerna run wcibuild_step7",
+    "wbuildall": "npm run reconfigure && lerna run wcibuild_step0 && lerna run wcibuild_step1 && lerna run wcibuild_step2 && lerna run wcibuild_step3 && lerna run wcibuild_step4 && lerna run wcibuild_step5 && lerna run wcibuild_step6 && lerna run wcibuild_step7",
     "prepare": "husky install"
   },
   "repository": {
@@ -75,7 +75,7 @@
     "chalk": "^4.1.0",
     "codecov": "^3.8.3",
     "cross-env": "^7.0.2",
-    "esbuild": "^0.16.0",
+    "esbuild": "^0.17.2",
     "esbuild-plugin-yaml": "^0.0.1",
     "eslint": "^8.23.1",
     "eslint-config-next": "^13.0.6",
@@ -103,7 +103,7 @@
     "remark-lint-list-item-indent": "^3.1.1",
     "remark-preset-lint-consistent": "^5.1.1",
     "remark-preset-lint-recommended": "^6.1.2",
-    "rimraf": "^3.0.2",
+    "rimraf": "^4.1.1",
     "standard": "^17.0.0"
   },
   "workspaces": [

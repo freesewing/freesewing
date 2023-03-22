@@ -1,12 +1,12 @@
-import Page from 'site/components/wrappers/page.js'
-import useApp from 'site/hooks/useApp.js'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import Layout from 'site/components/layouts/docs'
 import { useTranslation } from 'next-i18next'
-import FsIcon from 'shared/components/icons/freesewing'
-import Link from 'next/link'
-import Popout from 'shared/components/popout'
 import { useRouter } from 'next/router'
+import Link from 'next/link'
+import { PageWrapper } from 'site/components/wrappers/page.mjs'
+import { useApp } from 'site/hooks/useApp.mjs'
+import { HomeLayout } from 'site/components/layouts/home.mjs'
+import { FreeSewingIcon } from 'shared/components/icons.mjs'
+import { Popout } from 'shared/components/popout.mjs'
 import themes from 'shared/themes/index.js'
 
 const translations = {
@@ -21,7 +21,7 @@ const translations = {
   tips: {
     en: (
       <Popout tip compact>
-        Edit the files in the <strong>design</strong> folder, and we'll auto-update your design
+        Edit the files in the <strong>design</strong> folder, and we&apos;ll auto-update your design
       </Popout>
     ),
     nl: (
@@ -33,19 +33,19 @@ const translations = {
   },
 }
 
-const HomePage = (props) => {
+const HomePage = () => {
   const app = useApp()
   const router = useRouter()
   const { t } = useTranslation(['common', 'patrons', 'locales', 'themes'])
 
   return (
-    <Page app={app} title={false} layout={Layout}>
+    <PageWrapper app={app} title={false} layout={HomeLayout}>
       <div className="text-center w-full pt-20 pb-10 max-w-4xl m-auto">
-        <FsIcon className="w-96 m-auto" />
+        <FreeSewingIcon className="w-96 m-auto" />
         <h1>FreeSewing</h1>
         <h4>{translations.sade[app.locale]}</h4>
-        <Link href="/design">
-          <a className="btn btn-primary btn-lg h-20 my-8 mb-12">
+        <Link href="/design" className="btn btn-primary btn-lg h-20 my-8 mb-12">
+          <>
             <span role="image" className="text-4xl px-6">
               👉
             </span>
@@ -53,16 +53,19 @@ const HomePage = (props) => {
             <span role="image" className="text-4xl px-6">
               👈
             </span>
-          </a>
+          </>
         </Link>
         {translations.tips[app.locale]}
       </div>
       <div className="flex flex-row flex-wrap gap-4 w-full max-w-4xl m-auto justify-center">
         {router.locales.map((locale) => (
-          <Link href={router.asPath} locale={locale} key={locale}>
-            <a className="btn btn-ghost text-base-content hover:bg-base-200">
-              <span className="text-base-content">{t(`locales:${locale}`)}</span>
-            </a>
+          <Link
+            href={router.asPath}
+            locale={locale}
+            key={locale}
+            className="btn btn-ghost text-base-content hover:bg-base-200"
+          >
+            <span className="text-base-content">{t(`locales:${locale}`)}</span>
           </Link>
         ))}
       </div>
@@ -98,7 +101,7 @@ const HomePage = (props) => {
       </div>
       {/* here to force Tailwind inclusion of the w-8 h-8 classes */}
       <span className="w-8 h-8" />
-    </Page>
+    </PageWrapper>
   )
 }
 

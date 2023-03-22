@@ -24,16 +24,16 @@ array path.split(Point splitPoint)
   points.CCp1 = new Point(50, -30)
   points.D = new Point(50, 130)
   points.DCp1 = new Point(150, 30)
-  
+
   paths.demo = new Path()
     .move(points.D)
     .curve(points.DCp1, points.DCp1, points.C)
     .curve(points.CCp1, points.BCp2, points.B)
     .line(points.A)
-  
+
   points.split = paths.demo.shiftFractionAlong(0.75)
   snippets.split = new Snippet("notch", points.split)
-  
+
   let halves = paths.demo.split(points.split)
   for (let i in halves) {
     paths[i] = halves[i]
@@ -45,4 +45,3 @@ array path.split(Point splitPoint)
 }
 ```
 </Example>
-

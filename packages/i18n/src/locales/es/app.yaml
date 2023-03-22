@@ -13,7 +13,7 @@ applyThisLayout: Aplicar este diseño
 areYouSureYouWantToContinue: '¿Seguro que quieres continuar?'
 askForHelp: Pide ayuda
 automatic: Automático
-averagePeopleDoNotExist: 'La gente promedio no existe'
+averagePeopleDoNotExist: "La gente promedio no existe"
 awesome: Genial
 back: Atrás
 becauseThatWouldBeReallyHelpful: Porque eso sería realmente útil.
@@ -76,7 +76,7 @@ drafts: Bocetos
 draftSettings: Ajustes del boceto
 dragAndDropImageHere: Arrastra y suelta una imagen aquí, o selecciona una manualmente con el botón de abajo
 emailAddress: Dirección de correo electrónico
-emailWorksToo: 'Si no conoces tu nombre de usuario, tu dirección de correo electrónico también funcionará'
+emailWorksToo: "Si no conoces tu nombre de usuario, tu dirección de correo electrónico también funcionará"
 enterEmailPickPassword: Introduce tu dirección de email y elige una contraseña
 export: Exportar
 exportTiledPDF: Exportar PDF paginado
@@ -85,7 +85,7 @@ fieldRemoved: '{field} eliminado'
 fieldSaved: '{field} guardado'
 filterByPattern: Filtrar por patrón
 filterPatterns: Filtrar los patrones
-forgotLoginInstructions: 'Entra tu nombre de usuario o correo electrónico debajo y pulsa el botón de Restablecer contraseña'
+forgotLoginInstructions: "Entra tu nombre de usuario o correo electrónico debajo y pulsa el botón de Restablecer contraseña"
 freesewing: Freesewing
 freesewingOnGithub: Freesewing en GitHub
 garmentPatterns: Patrones de prendas
@@ -163,7 +163,7 @@ remove: Eliminar
 removeThing: Eliminar {thing}
 reportThisOnGithub: Notifícalo en GitHub
 requiredMeasurements: Medidas requeridas
-resendActivationEmailMessage: 'Complete la dirección de correo electrónico con la que se registró y le enviaremos un nuevo mensaje de confirmación.'
+resendActivationEmailMessage: "Complete la dirección de correo electrónico con la que se registró y le enviaremos un nuevo mensaje de confirmación."
 resendActivationEmail: Reenviar email de activación
 resetPassword: Restablecer contraseña
 reset: Reiniciar
@@ -205,7 +205,7 @@ twitter: Twitter
 txt-footer: Freesewing está hecho por una comunidad de colaboradores<br />con el apoyo financiero de nuestros Patrones
 txt-tier2: Nuestro nivel más democrático de precios. Puede ser menor que el precio de un café con leche, pero su apoyo significa mucho para nosotros.
 txt-tier4: Suscríbase a este nivel y le enviaremos parte de nuestro codiciado botín de diseño gratuito a su hogar en cualquier parte del mundo.
-txt-tier8: 'Si no solo desea apoyarnos, sino que quiere ver prosperar en la libertad, este es el nivel para usted. También: botín extra!'
+txt-tier8: "Si no solo desea apoyarnos, sino que quiere ver prosperar en la libertad, este es el nivel para usted. También: botín extra!"
 txt-tiers: 'FreeSewing es alimentado por un modelo de suscripción voluntario'
 unitsInfo: Freesewing es compatible con el sistema métrico y las unidades imperiales. Simplemente elige cuál querrías usar aquí (por defecto usamos las unidades configuradas en tu cuenta).
 updated: Actualizado
@@ -248,8 +248,8 @@ noPattern: No tienes ningún patrón (todavía). Crea un nuevo patrón, luego gu
 modelFirst: Empezar añadiendo mediciones
 noModel: No has añadido ninguna medición (aún). La Coser libre puede generar patrones de costura hechos a medida. Pero para eso necesitamos mediciones.
 noModel2: Así que lo primero que debes hacer es añadir una persona y agitar tu cinta de medición.
-noUserBrowsingTitle: 'No puedes navegar por todos los usuarios'
-noUserBrowsingText: 'Tenemos miles de ellos. ¿Seguro que tienes cosas mejores que hacer?'
+noUserBrowsingTitle: "No puedes navegar por todos los usuarios"
+noUserBrowsingText: "Tenemos miles de ellos. ¿Seguro que tienes cosas mejores que hacer?"
 usePatternMeasurements: 'Usar las medidas del patrón original'
 createReplica: Crear una réplica
 showDetails: Mostrar detalles
@@ -342,3 +342,7 @@ darkTheme: Tema oscuro
 hax0rTheme: Tema Hax0r
 lgbtqTheme: Tema LGBTQ
 transTheme: Tema Trans
+accessoryDesigns: Accessory Designs
+blockDesigns: Block/Sloper Designs
+garmentDesigns: Garment Designs
+utilityDesigns: Utility Designs

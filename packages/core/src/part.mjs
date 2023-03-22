@@ -79,6 +79,16 @@ Part.prototype.attr = function (name, value, overwrite = false) {
 }
 
 /**
+ * Gets a free ID to use in the part
+ *
+ * @param {string} prefix - An optional prefix to apply to the ID
+ * @return {string} id - A free ID to use
+ */
+Part.prototype.getId = function (prefix = '') {
+  return this.__getIdClosure()(prefix)
+}
+
+/**
  * Hide the part
  *
  * @return {Part} part - The Part instance
@@ -125,15 +135,6 @@ Part.prototype.shorthand = function () {
     utils: utils,
     Bezier: Bezier,
   }
-  // Add top-level store methods and add a part name parameter
-  const partName = this.name
-  for (const [key, method] of Object.entries(this.context.store)) {
-    if (typeof method === 'function')
-      shorthand[key] = function (...args) {
-        return method(partName, ...args)
-      }
-  }
-
   // We'll need this
   let self = this
 

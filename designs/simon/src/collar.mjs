@@ -102,9 +102,10 @@ function simonCollar({
     paths.help = new Path().move(points.topMid).line(points.bottomMid).attr('class', 'dotted')
 
     // Grainline
+    const grainlineY = (points.bottomMid.y - points.ucTopMid.y) / 2
     macro('grainline', {
-      from: points.bottomMidCp2.shift(90, 10),
-      to: points.bottomMidCp1.shift(90, 10),
+      from: new Point(points.bottomMidCp2.x, grainlineY),
+      to: new Point(points.bottomMidCp1.x, grainlineY),
     })
 
     // Title

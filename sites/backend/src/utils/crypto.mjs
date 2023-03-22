@@ -6,7 +6,9 @@ import { asJson } from './index.mjs'
 /*
  * Hashes an email address (or other string)
  */
-export const hash = (string) => createHash('sha256').update(string).digest('hex')
+export function hash(string) {
+  return createHash('sha256').update(string).digest('hex')
+}
 
 /*
  * Generates a random string
@@ -14,7 +16,9 @@ export const hash = (string) => createHash('sha256').update(string).digest('hex'
  * This is not used in anything cryptographic. It is only used as a temporary
  * username to avoid username collisions or to generate (long) API key secrets
  */
-export const randomString = (bytes = 8) => randomBytes(bytes).toString('hex')
+export function randomString(bytes = 8) {
+  return randomBytes(bytes).toString('hex')
+}
 
 /*
  * Returns an object holding encrypt() and decrypt() methods
@@ -23,7 +27,7 @@ export const randomString = (bytes = 8) => randomBytes(bytes).toString('hex')
  * which makes things easier to read/understand for contributors, as well
  * as allowing scrutiny of the implementation in a single file.
  */
-export const encryption = (stringKey, salt = 'FreeSewing') => {
+export function encryption(stringKey, salt = 'FreeSewing') {
   // Shout-out to the OG crypto bros Joan and Vincent
   const algorithm = 'aes-256-cbc'
 

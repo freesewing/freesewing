@@ -11,28 +11,12 @@ export function PatternModel(tools) {
 
   return this
 }
-/*
-  id        Int      @id @default(autoincrement())
-  createdAt DateTime @default(now())
-  data      String
-  design    String
-  img       String?
-  person    Person?  @relation(fields: [personId], references: [id])
-  personId  Int?
-  name      String   @default("")
-  notes     String
-  public
-  settings  String
-  user      User     @relation(fields: [userId], references: [id])
-  userId    Int
-  updatedAt DateTime @updatedAt
-  */
 
 PatternModel.prototype.guardedCreate = async function ({ body, user }) {
   if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
-  if (Object.keys(body) < 2) return this.setResponse(400, 'postBodyMissing')
-  if (!body.person) return this.setResponse(400, 'personMissing')
-  if (typeof body.person !== 'number') return this.setResponse(400, 'personNotNumeric')
+  if (Object.keys(body).length < 2) return this.setResponse(400, 'postBodyMissing')
+  if (!body.set) return this.setResponse(400, 'setMissing')
+  if (typeof body.set !== 'number') return this.setResponse(400, 'setNotNumeric')
   if (typeof body.settings !== 'object') return this.setResponse(400, 'settingsNotAnObject')
   if (body.data && typeof body.data !== 'object') return this.setResponse(400, 'dataNotAnObject')
   if (!body.design && !body.data?.design) return this.setResponse(400, 'designMissing')
@@ -41,7 +25,7 @@ PatternModel.prototype.guardedCreate = async function ({ body, user }) {
   // Prepare data
   const data = {
     design: body.design,
-    personId: body.person,
+    setId: body.set,
     settings: body.settings,
   }
   // Data (will be encrypted, so always set _some_ value)
@@ -263,7 +247,7 @@ PatternModel.prototype.unguardedDelete = async function () {
 /*
  * Removes the pattern - Checks permissions
  */
-PatternModel.prototype.guardedDelete = async function ({ params, body, user }) {
+PatternModel.prototype.guardedDelete = async function ({ params, user }) {
   if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 

@@ -14,7 +14,7 @@ import {
 } from '../config/software/index.mjs'
 import { buildOrder } from '../config/build-order.mjs'
 import rootPackageJson from '../package.json' assert { type: 'json' }
-import { capitalize } from '../sites/shared/utils.mjs'
+import { capitalize } from '../packages/core/src/index.mjs'
 
 // Working directory
 const cwd = process.cwd()
@@ -50,6 +50,17 @@ const repo = {
  * Now let's get to work
  */
 const log = process.stdout
+
+// Step 0: Avoid symlink so Windows users don't complain
+const copyThese = [
+  {
+    from: ['scripts', 'banner.mjs'],
+    to: ['packages', 'new-design', 'lib', 'banner.mjs'],
+  },
+]
+for (const cp of copyThese) {
+  fs.copyFile(path.join(repo.path, ...cp.from), path.join(repo.path, ...cp.to), () => null)
+}
 
 // Step 1: Generate main README file from template
 log.write(chalk.blueBright('Generating out main README file...'))
@@ -93,7 +104,7 @@ fs.writeFileSync(path.join(repo.path, 'CHANGELOG.md'), changelog('global'))
 // Step 5: Generate build script for published software
 log.write(chalk.blueBright('Generating buildall node script...'))
 const buildSteps = buildOrder.map((step, i) => `lerna run cibuild_step${i}`)
-const buildAllCommand = buildSteps.join(' && ')
+const buildAllCommand = 'npm run reconfigure && ' + buildSteps.join(' && ')
 const newRootPkgJson = { ...rootPackageJson }
 newRootPkgJson.scripts.buildall = buildAllCommand
 newRootPkgJson.scripts.wbuildall = buildAllCommand.replace(/cibuild/g, 'wcibuild')

@@ -25,22 +25,21 @@ export const patternTests = async (chai, config, expect, store) => {
             name: 'Just a test',
             notes: 'These are my notes',
             public: true,
-            person: store.account.people.her.id,
+            set: store.account.sets.her.id,
             data: {
               some: 'value',
             },
             img: cat,
           })
           .end((err, res) => {
-            console.log(JSON.stringify(res.body, null, 2))
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(201)
             expect(res.body.result).to.equal(`success`)
             expect(typeof res.body.pattern?.id).to.equal('number')
             expect(res.body.pattern.userId).to.equal(store.account.id)
-            expect(res.body.pattern.personId).to.equal(store.account.people.her.id)
+            expect(res.body.pattern.setId).to.equal(store.account.sets.her.id)
             expect(res.body.pattern.design).to.equal('aaron')
-            expect(res.body.pattern.public).to.equal(false)
+            expect(res.body.pattern.public).to.equal(true)
             store.account.patterns[auth] = res.body.pattern
             done()
           })
@@ -53,7 +52,7 @@ export const patternTests = async (chai, config, expect, store) => {
           data[field] = val
           chai
             .request(config.api)
-            .put(`/patterns/${store.account.patterns[auth].id}/${auth}`)
+            .patch(`/patterns/${store.account.patterns[auth].id}/${auth}`)
             .set(
               'Authorization',
               auth === 'jwt'
@@ -68,16 +67,16 @@ export const patternTests = async (chai, config, expect, store) => {
               expect(err === null).to.equal(true)
               expect(res.status).to.equal(200)
               expect(res.body.result).to.equal(`success`)
-              expect(res.body.pattern[field]).to.equal('--_updated')
+              expect(res.body.pattern[field]).to.equal(val)
               done()
             })
         })
       }
 
-      it(`${store.icon('person', auth)} Should update the public field (${auth})`, (done) => {
+      it(`${store.icon('set', auth)} Should update the public field (${auth})`, (done) => {
         chai
           .request(config.api)
-          .put(`/patterns/${store.account.patterns[auth].id}/${auth}`)
+          .patch(`/patterns/${store.account.patterns[auth].id}/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -97,10 +96,10 @@ export const patternTests = async (chai, config, expect, store) => {
           })
       })
 
-      it(`${store.icon('person', auth)} Should not update the design field (${auth})`, (done) => {
+      it(`${store.icon('set', auth)} Should not update the design field (${auth})`, (done) => {
         chai
           .request(config.api)
-          .put(`/patterns/${store.account.patterns[auth].id}/${auth}`)
+          .patch(`/patterns/${store.account.patterns[auth].id}/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -120,10 +119,10 @@ export const patternTests = async (chai, config, expect, store) => {
           })
       })
 
-      it(`${store.icon('person', auth)} Should not update the person field (${auth})`, (done) => {
+      it(`${store.icon('set', auth)} Should not update the set field (${auth})`, (done) => {
         chai
           .request(config.api)
-          .put(`/patterns/${store.account.patterns[auth].id}/${auth}`)
+          .patch(`/patterns/${store.account.patterns[auth].id}/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -133,23 +132,23 @@ export const patternTests = async (chai, config, expect, store) => {
                     'base64'
                   )
           )
-          .send({ person: 1 })
+          .send({ set: 1 })
           .end((err, res) => {
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(200)
             expect(res.body.result).to.equal(`success`)
-            expect(res.body.pattern.personId).to.equal(store.account.people.her.id)
+            expect(res.body.pattern.setId).to.equal(store.account.sets.her.id)
             done()
           })
       })
 
       for (const field of ['data', 'settings']) {
-        it(`${store.icon('person', auth)} Should update the ${field} field (${auth})`, (done) => {
+        it(`${store.icon('set', auth)} Should update the ${field} field (${auth})`, (done) => {
           const data = {}
           data[field] = { test: { value: 'hello' } }
           chai
             .request(config.api)
-            .put(`/patterns/${store.account.patterns[auth].id}/${auth}`)
+            .patch(`/patterns/${store.account.patterns[auth].id}/${auth}`)
             .set(
               'Authorization',
               auth === 'jwt'
@@ -193,7 +192,7 @@ export const patternTests = async (chai, config, expect, store) => {
       })
 
       it(`${store.icon(
-        'person',
+        'set',
         auth
       )} Should not allow reading another user's pattern (${auth})`, (done) => {
         chai
@@ -218,12 +217,12 @@ export const patternTests = async (chai, config, expect, store) => {
       })
 
       it(`${store.icon(
-        'person',
+        'set',
         auth
       )} Should not allow updating another user's pattern (${auth})`, (done) => {
         chai
           .request(config.api)
-          .put(`/patterns/${store.account.patterns[auth].id}/${auth}`)
+          .patch(`/patterns/${store.account.patterns[auth].id}/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -246,7 +245,7 @@ export const patternTests = async (chai, config, expect, store) => {
       })
 
       it(`${store.icon(
-        'person',
+        'set',
         auth
       )} Should not allow removing another user's pattern (${auth})`, (done) => {
         chai
@@ -271,10 +270,10 @@ export const patternTests = async (chai, config, expect, store) => {
       })
 
       /*
-      it(`${store.icon('person', auth)} Should clone a person (${auth})`, (done) => {
+      it(`${store.icon('set', auth)} Should clone a set (${auth})`, (done) => {
         chai
           .request(config.api)
-          .post(`/people/${store.person[auth].id}/clone/${auth}`)
+          .post(`/sets/${store.set[auth].id}/clone/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -289,18 +288,18 @@ export const patternTests = async (chai, config, expect, store) => {
             expect(res.status).to.equal(200)
             expect(res.body.result).to.equal(`success`)
             expect(typeof res.body.error).to.equal(`undefined`)
-            expect(typeof res.body.person.id).to.equal(`number`)
+            expect(typeof res.body.set.id).to.equal(`number`)
             done()
           })
       })
 
       it(`${store.icon(
-        'person',
+        'set',
         auth
-      )} Should (not) clone a public person across accounts (${auth})`, (done) => {
+      )} Should (not) clone a public set across accounts (${auth})`, (done) => {
         chai
           .request(config.api)
-          .post(`/people/${store.person[auth].id}/clone/${auth}`)
+          .post(`/sets/${store.set[auth].id}/clone/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -311,12 +310,12 @@ export const patternTests = async (chai, config, expect, store) => {
                   ).toString('base64')
           )
           .end((err, res) => {
-            if (store.person[auth].public) {
+            if (store.set[auth].public) {
               expect(err === null).to.equal(true)
               expect(res.status).to.equal(200)
               expect(res.body.result).to.equal(`success`)
               expect(typeof res.body.error).to.equal(`undefined`)
-              expect(typeof res.body.person.id).to.equal(`number`)
+              expect(typeof res.body.set.id).to.equal(`number`)
             } else {
               expect(err === null).to.equal(true)
               expect(res.status).to.equal(403)
@@ -328,8 +327,8 @@ export const patternTests = async (chai, config, expect, store) => {
       })
 
       // TODO:
-      // - Clone person
-      // - Clone person accross accounts of they are public
+      // - Clone set
+      // - Clone set accross accounts of they are public
     */
     })
   }

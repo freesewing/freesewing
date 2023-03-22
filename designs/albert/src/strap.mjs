@@ -20,18 +20,13 @@ export const strap = {
     sa,
     paperless,
     macro,
+    store,
     part,
   }) => {
-    let chestWidth = measurements.chest / 4
-    let bibWidth = chestWidth * options.bibWidth
-    /*
-    let apronWidth =
-      Math.max(measurements.hips, measurements.waist) *
-      (1 - options.backOpening)
-    */
-    let apronWidth = measurements.waist * (1 - options.backOpening)
+    let bibWidth = store.get('bibWidth')
+    let apronWidth = store.get('apronWidth')
     let backOpening = apronWidth - Math.max(measurements.hips, measurements.waist)
-    let hemWidth = (measurements.hpsToWaistBack * options.strapWidth) / 8
+    let hemWidth = store.get('hemWidth')
 
     let hSpan = backOpening / 2 + bibWidth / 2
     let vSpan =
@@ -39,7 +34,7 @@ export const strap = {
       measurements.hpsToWaistBack -
       measurements.hpsToWaistBack * options.bibLength
 
-    let strapWidth = (measurements.hpsToWaistBack * options.strapWidth) / 8
+    let strapWidth = store.get('strapWidth')
     let strapLength =
       Math.sqrt(hSpan * hSpan + vSpan * vSpan) + measurements.chest * options.chestDepth
     /*

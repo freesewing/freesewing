@@ -33,7 +33,7 @@ Path path.clean()
   points.D = new Point(90, 10)
   points.E = new Point(90, 20)
   points.F = new Point(90, 30)
-  
+
   paths.a = new Path()
     .move(points.A)
     .line(points.C)
@@ -58,4 +58,3 @@ Path path.clean()
 }
 ```
 </Example>
-

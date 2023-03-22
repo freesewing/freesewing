@@ -15,9 +15,13 @@ float utils.stretchToScale(float stretch)
 
 The way people measure stretch intuitively is different from the way we handle stretch in code.
 
-When people say _25% stretch_ they mean that 10cm fabric gets stretched to 12.5cm fabric.
-In code and on our patterns, that means we need to scale things by 80%.
+When people say fabric has _25% stretch_ they mean that 10 cm of fabric can
+stretch to 12.5 cm.
+In code that means we would need to scale non-stretch lengths by 80%
+to get the correct lengths to use in patterns with 25% stretch fabric.
 
+Pattern designers need a way to calculate the scaling factor to use for
+their pattern part lengths, given a fabric stretch percentage.
 This function does that by returning:
 
 ```js

@@ -3,8 +3,8 @@ title: Common git challenges
 ---
 
 Git is a distributed version control system originally created by
-Linus Torvalds (of linux fame).
-Much like Linux itself, git is immensly powerful yet can be intimidating
+Linus Torvalds (of Linux fame).
+Much like Linux itself, git is immensely powerful yet can be intimidating
 at first.
 
 Below are some common challenges when working with FreeSewing code in git:

@@ -1,8 +1,8 @@
 ---
-title: FreeSewing in NodeJS
+title: FreeSewing in Node.js
 ---
 
-These instructions explain how you can generate patterns in NodeJS.
+These instructions explain how you can generate patterns in Node.js.
 Whether it's in a backend application or on the command line, all
 it takes is a few lines of code — and a couple of dependencies — to
 generate a pattern.
@@ -12,11 +12,12 @@ generate a pattern.
 ##### Use FreeSewing.org if you just want a pattern
 
 These instructions are intended for people who want to generate
-their own patterns. If you _just want a sewing pattern_ you can
-get all our designs on [FreeSewing.org](https://FreeSewing.org/),
+their own patterns using FreeSewing packages.
+If you _just want a sewing pattern created for you,_
+you can get all our designs on [FreeSewing.org](https://freesewing.org/),
 our website for makers.
 
-</Tip> 
+</Tip>
 
 ## High level overview
 
@@ -40,7 +41,7 @@ import theme from '@freesewing/plugin-theme' // SVG theme
 const svg = new Aaron( // Instantiate pattern
   { // Pass in settings. See reference > core > settings
     sa: 10, // Seam allowance
-    // ... 
+    // ...
     measurements: { // Pass in measurements
       biceps: 387,
       chest: 1105,
@@ -68,14 +69,14 @@ console.log(svg)
 - You probably want to [use your own measurements](/reference/settings/measurements)
   or you could use `@freesewing/models` to load measurements from [our sizing grid](https://freesewing.org/sizes/)
 - We are using `@freesewing/plugin-theme` to theme our SVG, but you
-  could [pass in your own CSS](/guides/plugins/using-hooks-without-plugin)
+  could [pass in your own CSS](/reference/api/svg/style)
 
 </Note>
 
 ## Dependencies
 
 The code above will only work if you've got the required dependencies installed on your system.
-Obviously you need NodeJS, but you will also need the following packages:
+Obviously you need Node.js, but you will also need the following packages:
 
 - `@freesewing/core`: Our core library
 - `@freesewing/plugin-bundle`: Set of common plugins

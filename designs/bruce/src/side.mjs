@@ -15,8 +15,11 @@ function draftBruceSide({
   utils,
   snippets,
   Snippet,
+  log,
   part,
 }) {
+  let adjustment_warning = false
+
   // Initialize
   init(part)
 
@@ -37,7 +40,15 @@ function draftBruceSide({
     points.topLeft,
     store.get('backSeamLength')
   )
-  points.bottomLeft = isect[0]
+  if (isect) {
+    points.bottomLeft = isect[0]
+  } else {
+    // The circles are too far apart to intersect. Print a warning message
+    // and compromise by placing the bottom left point at the midpoint.
+    log.warning('Unable to calculate a correct bottom left point on the side part.')
+    adjustment_warning = true
+    points.bottomLeft = points.bottomRight.shiftFractionTowards(points.topLeft, 0.5)
+  }
 
   // Store side seam length
   store.set('sideSeamLength', points.topRight.dist(points.bottomRight))
@@ -112,6 +123,19 @@ function draftBruceSide({
       to: points.bottomRight,
       y: points.bottomLeft.y + 15 + sa,
     })
+  }
+
+  if (adjustment_warning) {
+    log.warning(
+      'We were not able to generate the Side pattern piece correctly. ' +
+        'Manual fitting and alteration of this and other pattern pieces ' +
+        'are likely to be needed. ' +
+        'First, please retake your measurements and generate a new pattern ' +
+        'using the new measurements. ' +
+        'If you still see this warning with the new pattern, then please ' +
+        'make a test garment, check fit, and make alterations as necessary ' +
+        'before trying to make the final garment.'
+    )
   }
 
   return part

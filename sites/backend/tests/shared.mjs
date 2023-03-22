@@ -14,7 +14,7 @@ dotenv.config()
 const config = verifyConfig(true)
 const expect = chai.expect
 chai.use(http)
-const people = { her, him }
+const sets = { her, him }
 
 export const setup = async () => {
   // Initial store contents
@@ -26,20 +26,20 @@ export const setup = async () => {
       email: `test_${randomString()}@${config.tests.domain}`,
       language: 'en',
       password: randomString(),
-      people: {},
+      sets: {},
     },
     altaccount: {
       email: `test_${randomString()}@${config.tests.domain}`,
       language: 'en',
       password: randomString(),
-      people: {},
+      sets: {},
     },
     icons: {
       user: '🧑 ',
       mfa: '🔒 ',
       jwt: '🎫 ',
       key: '🎟️  ',
-      person: '🧕 ',
+      set: '🧕 ',
       pattern: '👕 ',
     },
     randomString,
@@ -70,7 +70,6 @@ export const setup = async () => {
       console.log('Failed at account confirmation request', err)
       process.exit()
     }
-    console.log(JSON.stringify(result.data, null ,2))
     store[acc].token = result.data.token
     store[acc].username = result.data.account.username
     store[acc].id = result.data.account.id
@@ -96,15 +95,15 @@ export const setup = async () => {
     }
     store[acc].apikey = result.data.apikey
 
-    // Create people key
-    for (const name in people) {
+    // Create sets key
+    for (const name in sets) {
       try {
         result = await axios.post(
-          `${store.config.api}/people/jwt`,
+          `${store.config.api}/sets/jwt`,
           {
             name: `This is ${name} name`,
-            name: `These are ${name} notes`,
-            measies: people[name],
+            notes: `These are ${name} notes`,
+            measies: sets[name],
           },
           {
             headers: {
@@ -116,13 +115,13 @@ export const setup = async () => {
         console.log('Failed at API key creation request', err)
         process.exit()
       }
-      store[acc].people[name] = result.data.person
+      store[acc].sets[name] = result.data.set
     }
   }
 
   return { chai, config, expect, store }
 }
 
-export const teardown = async function (store) {
-  console.log(store)
+export const teardown = async function (/*store*/) {
+  //console.log(store)
 }
