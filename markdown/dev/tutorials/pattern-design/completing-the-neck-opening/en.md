@@ -127,7 +127,7 @@ function draftBib({
 </Example>
 
 To add the points, we're using the `Point.flipX()` and `Point.flipY()` methods
-here.  There's a few new Path methods to, like `close()` and `addClass()`.
+here.  There's a few new Path methods too, like `close()` and `addClass()`.
 
 Perhaps you can figure out what they do? If not, both [the Point
 documentation](/reference/api/point/) and [the Path
