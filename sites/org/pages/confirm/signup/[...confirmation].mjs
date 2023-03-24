@@ -1,7 +1,8 @@
 // Hooks
 import { useEffect, useState } from 'react'
-import { useApp } from 'site/hooks/useApp.mjs'
-import { useBackend } from 'site/hooks/useBackend.mjs'
+import { useApp } from 'site/hooks/use-app.mjs'
+import { useAccount } from 'shared/hooks/use-account.mjs'
+import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 // Dependencies
@@ -59,7 +60,8 @@ const Checkbox = ({ value, setter, label, children = null }) => (
 
 const ConfirmSignUpPage = (props) => {
   const app = useApp(props)
-  const backend = useBackend(app)
+  const { setAccount, setToken } = useAccount()
+  const backend = useBackend()
   const { t } = useTranslation(ns)
   const router = useRouter()
 
@@ -78,10 +80,10 @@ const ConfirmSignUpPage = (props) => {
     if (profile && measurements) consent = 2
     if (profile && measurements && openData) consent = 3
     if (consent > 0 && id) {
-      const data = await backend.confirmSignup({ consent, id, ...app.loadHelpers })
-      if (data?.token && data?.account) {
-        app.setToken(data.token)
-        app.setAccount(data.account)
+      const result = await backend.confirmSignup({ consent, id, ...app.loadHelpers })
+      if (result.success) {
+        setToken(result.data.token)
+        setAccount(result.data.account)
         router.push('/welcome')
       } else {
         // Something went wrong

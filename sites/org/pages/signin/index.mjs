@@ -1,6 +1,7 @@
 // Hooks
 import { useState, useEffect } from 'react'
 import { useApp } from 'site/hooks/use-app.mjs'
+import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useTranslation } from 'next-i18next'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
@@ -56,6 +57,7 @@ export const ButtonText = ({ children }) => (
 
 const SignInPage = (props) => {
   const app = useApp(props)
+  const { setAccount, setToken } = useAccount()
   const { t } = useTranslation(['signin', 'signup', 'toast'])
   const backend = useBackend(app)
   const toast = useToast()
@@ -75,7 +77,8 @@ const SignInPage = (props) => {
       window.setTimeout(() => setSignInFailed(false), 1750)
     }
   }, [signInFailed])
-
+  setAccount(result.data.account)
+  setToken(result.data.token)
   const signinHandler = async (evt) => {
     evt.preventDefault()
     app.startLoading()
@@ -83,7 +86,8 @@ const SignInPage = (props) => {
       ? await backend.signIn({ username, password: false })
       : await backend.signIn({ username, password })
     // Sign-in succeeded
-    if (result.status === 200) {
+    console.log(result)
+    if (result.success) {
       let msg
       if (magicLink) {
         setMagicLinkSent(true)

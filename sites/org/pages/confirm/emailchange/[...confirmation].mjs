@@ -1,8 +1,8 @@
 // Hooks
 import { useEffect, useState } from 'react'
-import { useApp } from 'site/hooks/useApp.mjs'
-import { useBackend } from 'site/hooks/useBackend.mjs'
-import { useToast } from 'site/hooks/useToast.mjs'
+import { useApp } from 'site/hooks/use-app.mjs'
+import { useBackend } from 'site/hooks/use-backend.mjs'
+import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 // Dependencies
@@ -21,7 +21,8 @@ const ns = Array.from(new Set([...pageNs, 'account']))
 
 const ConfirmSignUpPage = (props) => {
   const app = useApp(props)
-  const backend = useBackend(app)
+  const { setAccount, setToken, token } = useAccount()
+  const backend = useBackend()
   const toast = useToast()
   const { t } = useTranslation(ns)
   const router = useRouter()
@@ -37,12 +38,14 @@ const ConfirmSignUpPage = (props) => {
       app.startLoading()
       const result = await backend.loadConfirmation({ id, check })
       if (result?.result === 'success' && result.confirmation) {
-        const changed = await backend.updateAccount({
+        const result = await backend.updateAccount({
           confirm: 'emailchange',
           confirmation: result.confirmation.id,
           check: result.confirmation.check,
         })
-        if (changed) {
+        if (result.success) {
+          setAccount(result.data.account)
+          setToken(result.data.token)
           app.stopLoading()
           setError(false)
           toast.for.settingsSaved()
@@ -57,8 +60,8 @@ const ConfirmSignUpPage = (props) => {
       }
     }
     // Call async methods
-    if (app.token) confirmEmail()
-  }, [id, check, app.token])
+    if (token) confirmEmail()
+  }, [id, check, token])
 
   // Short-circuit errors
   if (error)

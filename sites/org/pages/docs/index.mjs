@@ -1,5 +1,5 @@
 // Hooks
-import { useApp } from 'site/hooks/useApp.mjs'
+import { useApp } from 'site/hooks/use-app.mjs'
 // Dependencies
 import Head from 'next/head'
 import { mdxLoader } from 'shared/mdx/loader.mjs'
@@ -15,7 +15,7 @@ const DocsPage = ({ title, mdx, bugsnag }) => {
 
   // We don't need all MDX components here, just ReadMore
   const components = {
-    ReadMore: (props) => <ReadMore {...props} app={app} slug="docs" recurse />,
+    //ReadMore: (props) => <ReadMore {...props} app={app} slug="docs" recurse />,
   }
 
   return (
@@ -23,12 +23,11 @@ const DocsPage = ({ title, mdx, bugsnag }) => {
       <Head>
         <title>{fullTitle}</title>
       </Head>
-      <div className="w-full">
-        <MdxWrapper mdx={mdx} app={app} components={components} />
-      </div>
+      <div className="w-full"></div>
     </PageWrapper>
   )
 }
+//<MdxWrapper mdx={mdx} app={app} components={components} />
 
 export default DocsPage
 

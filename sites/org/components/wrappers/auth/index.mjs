@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import { Loader } from 'shared/components/loader.mjs'
+import { useAccount } from 'shared/hooks/use-account.mjs'
 
 export const ns = ['auth']
 
@@ -85,15 +86,15 @@ const ConsentLacking = ({ t }) => (
 
 export const AuthWrapper = ({ children, app }) => {
   const { t } = useTranslation(ns)
-  if (!app.accountReady) return <Loader />
-  if (!app.token || !app.account?.username) return <AuthRequired t={t} />
-  if (app.account.status !== 1) {
-    if (app.account.status === 0) return <AccountInactive t={t} />
-    if (app.account.status === -1) return <AccountDisabled t={t} />
-    if (app.account.status === -2) return <AccountProhibited t={t} />
+  const { account, token } = useAccount()
+  if (!token || !account.username) return <AuthRequired t={t} />
+  if (account.status !== 1) {
+    if (account.status === 0) return <AccountInactive t={t} />
+    if (account.status === -1) return <AccountDisabled t={t} />
+    if (account.status === -2) return <AccountProhibited t={t} />
     return <AccountStatusUnknown t={t} />
   }
-  if (app.account.consent < 1) return <ConsentLacking />
+  if (account.consent < 1) return <ConsentLacking />
 
   return children
 }

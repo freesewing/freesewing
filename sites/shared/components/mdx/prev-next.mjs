@@ -12,14 +12,14 @@ const currentChildren = (current) =>
 
 // Helper method to get the siblings
 const currentSiblings = (app) =>
-  currentChildren(get(app.navigation, app.slug.split('/').slice(0, -1)))
+  currentChildren(get(app.navigation, app.state.slug.split('/').slice(0, -1)))
 
 // Helper method to get the parents
 const currentParents = (app) =>
-  currentChildren(get(app.navigation, app.slug.split('/').slice(0, -2)))
+  currentChildren(get(app.navigation, app.state.slug.split('/').slice(0, -2)))
 
 // Helper method to get current node
-const current = (app) => get(app.navigation, app.slug.split('/'))
+const current = (app) => get(app.navigation, app.state.slug.split('/'))
 
 const previous = (app) => {
   // Previous sibling (aside)
@@ -28,7 +28,7 @@ const previous = (app) => {
     let next = false
     for (const node of aside.reverse()) {
       if (next) return node
-      if (node?.__slug && node.__slug === app.slug) next = true
+      if (node?.__slug && node.__slug === app.state.slug) next = true
     }
   }
 
@@ -38,7 +38,7 @@ const previous = (app) => {
     let next = false
     for (const node of up.reverse()) {
       if (next) return node
-      if (node?.__slug && node.__slug === app.slug.slice(0, node.__slug.length)) next = true
+      if (node?.__slug && node.__slug === app.state.slug.slice(0, node.__slug.length)) next = true
     }
   }
   return false
@@ -55,7 +55,7 @@ const next = (app) => {
     let next = false
     for (const node of aside) {
       if (next) return node
-      if (node?.__slug && node.__slug === app.slug) next = true
+      if (node?.__slug && node.__slug === app.state.slug) next = true
     }
   }
 
@@ -65,7 +65,7 @@ const next = (app) => {
     let next = false
     for (const node of up) {
       if (next) return node
-      if (node?.__slug && node.__slug === app.slug.slice(0, node.__slug.length)) next = true
+      if (node?.__slug && node.__slug === app.state.slug.slice(0, node.__slug.length)) next = true
     }
   }
   return false

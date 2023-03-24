@@ -1,7 +1,7 @@
 // Hooks
 import { useEffect, useState } from 'react'
-import { useApp } from 'site/hooks/useApp.mjs'
-import { useBackend } from 'site/hooks/useBackend.mjs'
+import { useApp } from 'site/hooks/use-app.mjs'
+import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 // Dependencies
@@ -46,8 +46,9 @@ const Wrapper = ({ app, t, children }) => (
 )
 
 const ConfirmSignInPage = (props) => {
+  const account = ({ setAccount, setToken } = useAccount())
   const app = useApp(props)
-  const backend = useBackend(app)
+  const backend = useBackend()
   const { t } = useTranslation(ns)
   const router = useRouter()
 
@@ -56,13 +57,11 @@ const ConfirmSignInPage = (props) => {
 
   const storeAccount = async (data) => {
     if (data?.token && data?.account) {
-      app.setToken(data.token)
-      app.setAccount(data.account)
-      console.log('now pushing')
+      setToken(data.token)
+      setAccount(data.account)
       router.push('/account')
     } else {
       setError(data)
-      console.log('not here', data)
     }
   }
 
@@ -76,7 +75,6 @@ const ConfirmSignInPage = (props) => {
         id: confirmationId,
         check: confirmationCheck,
       })
-      console.log(result)
       if (result.data.token) return storeAccount(result.data)
       if (result.status === 404) return setError(404)
 

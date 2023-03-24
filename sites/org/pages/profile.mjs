@@ -1,5 +1,6 @@
 // Hooks
-import { useApp } from 'site/hooks/useApp.mjs'
+import { useApp } from 'site/hooks/use-app.mjs'
+import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useTranslation } from 'next-i18next'
 // Dependencies
 import dynamic from 'next/dynamic'
@@ -30,6 +31,7 @@ const DynamicAccountProfile = dynamic(
 
 const AccountPage = (props) => {
   const app = useApp(props)
+  const { account, token } = useAccount()
   const { t } = useTranslation(namespaces)
   const crumbs = [[t('profile'), 'profile']]
 
@@ -39,7 +41,7 @@ const AccountPage = (props) => {
         <DynamicAccountProfile app={app} />
       </DynamicAuthWrapper>
       <Popout link compact>
-        <PageLink href={`/users/${app.account.username}`} txt={`/users/${app.account.username}`} />
+        <PageLink href={`/users/${account.username}`} txt={`/users/${account.username}`} />
       </Popout>
       <BackToAccountButton />
       <pre>{JSON.stringify(app.toasts, null, 2)}</pre>
