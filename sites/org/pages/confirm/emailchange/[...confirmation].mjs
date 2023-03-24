@@ -1,6 +1,6 @@
 // Hooks
 import { useEffect, useState } from 'react'
-import { useApp } from 'site/hooks/use-app.mjs'
+import { useApp } from 'shared/hooks/use-app.mjs'
 import { useBackend } from 'site/hooks/use-backend.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useRouter } from 'next/router'

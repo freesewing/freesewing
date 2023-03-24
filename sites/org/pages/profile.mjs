@@ -1,5 +1,5 @@
 // Hooks
-import { useApp } from 'site/hooks/use-app.mjs'
+import { useApp } from 'shared/hooks/use-app.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useTranslation } from 'next-i18next'
 // Dependencies

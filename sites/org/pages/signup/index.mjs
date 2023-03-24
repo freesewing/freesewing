@@ -1,6 +1,6 @@
 // Hooks
 import { useState } from 'react'
-import { useApp } from 'site/hooks/use-app.mjs'
+import { useApp } from 'shared/hooks/use-app.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useTranslation } from 'next-i18next'
 // Dependencies

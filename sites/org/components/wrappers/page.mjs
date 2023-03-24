@@ -9,6 +9,8 @@ import { LayoutWrapper, ns as layoutNs } from 'site/components/wrappers/layout.m
 import { DocsLayout } from 'site/components/layouts/docs.mjs'
 import { Feeds } from 'site/components/feeds.mjs'
 
+export const ns = [...layoutNs]
+
 /* This component should wrap all page content */
 export const PageWrapper = ({
   title = 'FIXME: No title set',

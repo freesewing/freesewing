@@ -16,7 +16,7 @@ const defaultState = {
  */
 export function useApp({ bugsnag }) {
   const router = useRouter()
-  const reportError = useBugsnag(bugsnag)
+  const reportError = useBugsnag ? useBugsnag(bugsnag) : () => false
 
   // React state
   const [state, setState] = useState({

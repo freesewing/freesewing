@@ -1,5 +1,5 @@
 // Hooks
-import { useApp } from 'site/hooks/use-app.mjs'
+import { useApp } from 'shared/hooks/use-app.mjs'
 // Components
 import { PageWrapper } from 'site/components/wrappers/page.mjs'
 import { Popout } from 'shared/components/popout.mjs'
