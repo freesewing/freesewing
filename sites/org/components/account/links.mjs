@@ -1,3 +1,4 @@
+import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useTranslation } from 'next-i18next'
 import Link from 'next/link'
 import { PageLink } from 'shared/components/page-link.mjs'
@@ -38,7 +39,7 @@ const actions = {
 }
 
 export const AccountLinks = ({ app }) => {
-  const { account } = app
+  const { account } = useAccount()
   const { t } = useTranslation(ns)
 
   const lprops = { t, control: account.control }

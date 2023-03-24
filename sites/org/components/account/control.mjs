@@ -1,8 +1,10 @@
-// Hooks
+// Dependencies
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
-import { useBackend } from 'site/hooks/useBackend.mjs'
-import { useToast } from 'site/hooks/useToast.mjs'
+// Hooks
+import { useAccount } from 'shared/hooks/use-account.mjs'
+import { useBackend } from 'shared/hooks/use-backend.mjs'
+import { useToast } from 'shared/hooks/use-toast.mjs'
 // Components
 import { BackToAccountButton, Choice, Icons, welcomeSteps } from './shared.mjs'
 import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
@@ -10,10 +12,11 @@ import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
 export const ns = ['account', 'toast']
 
 export const ControlSettings = ({ app, title = false, welcome = false }) => {
-  const backend = useBackend(app)
+  const { account, setAccount, token } = useAccount()
+  const backend = useBackend(token)
   const toast = useToast()
   const { t } = useTranslation(ns)
-  const [selection, setSelection] = useState(app.account.control || 2)
+  const [selection, setSelection] = useState(account.control || 2)
 
   const update = async (control) => {
     if (control !== selection) {
@@ -69,7 +72,7 @@ export const ControlSettings = ({ app, title = false, welcome = false }) => {
           ) : null}
         </>
       ) : (
-        <BackToAccountButton loading={app.loading} />
+        <BackToAccountButton loading={app.state.loading} />
       )}
     </>
   )

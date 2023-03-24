@@ -1,22 +1,28 @@
-// Hooks
+// Dependencies
+import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
-import { useBackend } from 'site/hooks/useBackend.mjs'
-import { useToast } from 'site/hooks/useToast.mjs'
+// Hooks
+import { useAccount } from 'shared/hooks/use-account.mjs'
+import { useBackend } from 'shared/hooks/use-backend.mjs'
+import { useToast } from 'shared/hooks/use-toast.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
 
 export const ns = ['account', 'toast']
 
 export const ReloadAccount = ({ app, title = false }) => {
-  const backend = useBackend(app)
+  const { account, setAccount, token } = useAccount()
+  const backend = useBackend(token)
   const { t } = useTranslation(ns)
   const toast = useToast()
 
   const reload = async () => {
     app.startLoading()
     const result = await backend.reloadAccount()
-    if (result === true) toast.success(<span>{t('nailedIt')}</span>)
-    else toast.for.backendError()
+    if (result.success) {
+      setAccount(result.data.account)
+      toast.success(<span>{t('nailedIt')}</span>)
+    } else toast.for.backendError()
     app.stopLoading()
   }
 
@@ -27,7 +33,7 @@ export const ReloadAccount = ({ app, title = false }) => {
       <button className="btn btn-primary capitalize w-full my-2" onClick={reload}>
         {t('reload')}
       </button>
-      <BackToAccountButton loading={app.loading} />
+      <BackToAccountButton loading={app.state.loading} />
     </>
   )
 }

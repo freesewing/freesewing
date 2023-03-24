@@ -1,8 +1,10 @@
-// Hooks
+// Dependencies
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
-import { useBackend } from 'site/hooks/useBackend.mjs'
-import { useToast } from 'site/hooks/useToast.mjs'
+// Hooks
+import { useAccount } from 'shared/hooks/use-account.mjs'
+import { useBackend } from 'shared/hooks/use-backend.mjs'
+import { useToast } from 'shared/hooks/use-toast.mjs'
 // Components
 import { BackToAccountButton, Choice } from './shared.mjs'
 // Config
@@ -11,18 +13,21 @@ import { freeSewingConfig as conf } from 'site/freesewing.config.mjs'
 export const ns = ['account', 'locales', 'toast']
 
 export const LanguageSettings = ({ app, title = false }) => {
-  const backend = useBackend(app)
+  const { account, setAccount, token } = useAccount()
+  const backend = useBackend(token)
   const toast = useToast()
   const { t } = useTranslation(ns)
-  const [language, setLanguage] = useState(app.account.language || 'en')
+  const [language, setLanguage] = useState(account.language || 'en')
 
   const update = async (lang) => {
     if (lang !== language) {
       app.startLoading()
       setLanguage(lang)
       const result = await backend.updateAccount({ language: lang })
-      if (result === true) toast.for.settingsSaved()
-      else toast.for.backendError()
+      if (result.success) {
+        setAccount(result.data.account)
+        toast.for.settingsSaved()
+      } else toast.for.backendError()
       app.stopLoading()
     }
   }
@@ -35,7 +40,7 @@ export const LanguageSettings = ({ app, title = false }) => {
           <span className="block text-lg leading-5">{t(`locales:${val}`)}</span>
         </Choice>
       ))}
-      <BackToAccountButton loading={app.loading} />
+      <BackToAccountButton loading={app.state.loading} />
     </>
   )
 }

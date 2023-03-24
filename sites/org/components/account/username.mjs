@@ -1,8 +1,10 @@
-// Hooks
+// Dependencies
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
-import { useBackend } from 'site/hooks/useBackend.mjs'
-import { useToast } from 'site/hooks/useToast.mjs'
+// Hooks
+import { useAccount } from 'shared/hooks/use-account.mjs'
+import { useBackend } from 'shared/hooks/use-backend.mjs'
+import { useToast } from 'shared/hooks/use-toast.mjs'
 // Components
 import { Spinner } from 'shared/components/spinner.mjs'
 import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
@@ -12,10 +14,11 @@ import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
 export const ns = ['account', 'toast']
 
 export const UsernameSettings = ({ app, title = false, welcome = false }) => {
-  const backend = useBackend(app)
+  const { account, setAccount, token } = useAccount()
+  const backend = useBackend(token)
   const toast = useToast()
   const { t } = useTranslation(ns)
-  const [username, setUsername] = useState(app.account.username)
+  const [username, setUsername] = useState(account.username)
   const [available, setAvailable] = useState(true)
 
   const update = async (evt) => {
@@ -30,24 +33,26 @@ export const UsernameSettings = ({ app, title = false, welcome = false }) => {
   const save = async () => {
     app.startLoading()
     const result = await backend.updateAccount({ username })
-    if (result === true) toast.for.settingsSaved()
-    else toast.for.backendError()
+    if (result.success) {
+      setAccount(result.data.account)
+      toast.for.settingsSaved()
+    } else toast.for.backendError()
     app.stopLoading()
   }
 
   const nextHref =
-    welcomeSteps[app.account.control].length > 4
-      ? '/welcome/' + welcomeSteps[app.account.control][5]
+    welcomeSteps[account.control].length > 4
+      ? '/welcome/' + welcomeSteps[account.control][5]
       : '/docs/guide'
 
   let btnClasses = 'btn mt-4 capitalize '
   if (welcome) {
     btnClasses += 'w-64 '
-    if (app.loading) btnClasses += 'btn-accent '
+    if (app.state.loading) btnClasses += 'btn-accent '
     else btnClasses += 'btn-secondary '
   } else {
     btnClasses += 'w-full '
-    if (app.loading) btnClasses += 'btn-accent '
+    if (app.state.loading) btnClasses += 'btn-accent '
     else btnClasses += 'btn-primary '
   }
 
@@ -72,7 +77,7 @@ export const UsernameSettings = ({ app, title = false, welcome = false }) => {
       </div>
       <button className={btnClasses} disabled={!available} onClick={save}>
         <span className="flex flex-row items-center gap-2">
-          {app.loading ? (
+          {app.state.loading ? (
             <>
               <Spinner />
               <span>{t('processing')}</span>
@@ -88,26 +93,26 @@ export const UsernameSettings = ({ app, title = false, welcome = false }) => {
       {welcome ? (
         <>
           <ContinueButton app={app} btnProps={{ href: nextHref }} link />
-          {welcomeSteps[app.account.control].length > 0 ? (
+          {welcomeSteps[account.control].length > 0 ? (
             <>
               <progress
                 className="progress progress-primary w-full mt-12"
-                value={500 / welcomeSteps[app.account.control].length}
+                value={500 / welcomeSteps[account.control].length}
                 max="100"
               ></progress>
               <span className="pt-4 text-sm font-bold opacity-50">
-                5 / {welcomeSteps[app.account.control].length}
+                5 / {welcomeSteps[account.control].length}
               </span>
               <Icons
-                done={welcomeSteps[app.account.control].slice(0, 4)}
-                todo={welcomeSteps[app.account.control].slice(5)}
+                done={welcomeSteps[account.control].slice(0, 4)}
+                todo={welcomeSteps[account.control].slice(5)}
                 current="username"
               />
             </>
           ) : null}
         </>
       ) : (
-        <BackToAccountButton loading={app.loading} />
+        <BackToAccountButton loading={app.state.loading} />
       )}
     </>
   )

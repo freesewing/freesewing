@@ -1,8 +1,10 @@
-// Hooks
+// Dependencies
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
-import { useBackend } from 'site/hooks/useBackend.mjs'
-import { useToast } from 'site/hooks/useToast.mjs'
+// Hooks
+import { useAccount } from 'shared/hooks/use-account.mjs'
+import { useBackend } from 'shared/hooks/use-backend.mjs'
+import { useToast } from 'shared/hooks/use-toast.mjs'
 // Components
 import Link from 'next/link'
 import { Popout } from 'shared/components/popout.mjs'
@@ -37,20 +39,21 @@ const Checkbox = ({ value, setter, label, children = null }) => (
 )
 
 export const ConsentSettings = ({ app, title = false }) => {
-  const backend = useBackend(app)
+  const { account, setAccount, token } = useAccount()
+  const backend = useBackend(token)
   const toast = useToast()
   const { t } = useTranslation(ns)
 
-  const [profile, setProfile] = useState(app.account?.consent > 0)
-  const [measurements, setMeasurements] = useState(app.account?.consent > 1)
-  const [openData, setOpenData] = useState(app.account?.consent > 2)
+  const [profile, setProfile] = useState(account?.consent > 0)
+  const [measurements, setMeasurements] = useState(account?.consent > 1)
+  const [openData, setOpenData] = useState(account?.consent > 2)
 
   const update = async () => {
     let newConsent = 0
     if (profile) newConsent = 1
     if (profile && measurements) newConsent = 2
     if (profile && measurements && openData) newConsent = 3
-    if (newConsent !== app.account.consent) {
+    if (newConsent !== account.consent) {
       app.startLoading()
       const result = await backend.updateAccount({ consent: newConsent })
       if (result === true) toast.for.settingsSaved()
@@ -143,7 +146,7 @@ export const ConsentSettings = ({ app, title = false }) => {
         />
       ) : null}
 
-      <BackToAccountButton loading={app.loading} />
+      <BackToAccountButton loading={app.state.loading} />
       <p className="text-center opacity-50 mt-12">
         <Link href="/docs/various/privacy" className="hover:text-secondary underline">
           FreeSewing Privacy Notice

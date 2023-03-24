@@ -1,7 +1,7 @@
 // Hooks
 import React, { useState, useEffect } from 'react'
 import { useSwipeable } from 'react-swipeable'
-import { useRouter } from 'next/router'
+//import { useRouter } from 'next/router'
 import { useHotkeys } from 'react-hotkeys-hook'
 // Components
 import { LayoutWrapper, ns as layoutNs } from 'site/components/wrappers/layout.mjs'
@@ -27,10 +27,10 @@ export const PageWrapper = ({
     trackMouse: true,
   })
 
-  const router = useRouter()
-  const slug = router.asPath.slice(1)
+  //const router = useRouter()
+  //const slug = router.asPath.slice(1)
 
-  useEffect(() => app.setSlug(slug), [slug, app])
+  //useEffect(() => app.setSlug(slug), [slug, app])
 
   // Trigger search with /
   useHotkeys('/', (evt) => {

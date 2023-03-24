@@ -344,6 +344,7 @@ org:
     'rehype-stringify': *rehypeStringify
     'remark-copy-linked-files': *remarkCopyLinkedFiles
     'remark-gfm': *remarkGfm
+    'use-persisted-state': &use-persisted-state 0.3.3
     'yaml-loader': 0.8.0
   dev: *nextSiteDevDependencies
 
@@ -398,4 +399,5 @@ shared:
     'tlds': '1.237.0'
     'to-vfile': '7.2.4'
     'unist-util-visit': *unist-util-visit
+    'use-persisted-state': *use-persisted-state
     'web-worker': '1.2.0'

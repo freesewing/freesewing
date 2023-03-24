@@ -57,21 +57,19 @@ const api = {
 const responseHandler = (response, expectedStatus = 200, expectData = true) => {
   if (response && response.status === expectedStatus) {
     if (!expectData || response.data) {
-      return { success: true, data: response.data, reponse }
+      return { success: true, data: response.data, response }
     }
-    return { success: true, reponse }
+    return { success: true, response }
   }
 
-  return { success: false, reponse }
+  return { success: false, response }
 }
 
-export function useBackend(token) {
+export function useBackend(token = false) {
   /*
    * Set up authentication headers
    */
-  const auth = {
-    headers: { Authorization: 'Bearer ' + app.token },
-  }
+  const auth = token ? { headers: { Authorization: 'Bearer ' + token } } : {}
 
   /*
    * This backend object is what we'll end up returning
@@ -123,9 +121,9 @@ export function useBackend(token) {
     const response = await api.post(`/available/username/jwt`, { username }, auth)
 
     // 404 means username is available, which is success in this case
-    return result.response?.status === 404
-      ? { success: true, data: false, available: true, reponse }
-      : { success: false, available: false, reponse }
+    return response.status === 404
+      ? { success: true, data: false, available: true, response }
+      : { success: false, available: false, response }
   }
 
   /*

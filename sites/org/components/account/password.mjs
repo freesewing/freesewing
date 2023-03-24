@@ -1,8 +1,10 @@
-// Hooks
+// Dependencies
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
-import { useBackend } from 'site/hooks/useBackend.mjs'
-import { useToast } from 'site/hooks/useToast.mjs'
+// Hooks
+import { useAccount } from 'shared/hooks/use-account.mjs'
+import { useBackend } from 'shared/hooks/use-backend.mjs'
+import { useToast } from 'shared/hooks/use-toast.mjs'
 // Components
 import Link from 'next/link'
 import { BackToAccountButton } from './shared.mjs'
@@ -13,7 +15,8 @@ import { RightIcon } from 'shared/components/icons.mjs'
 export const ns = ['account', 'toast']
 
 export const PasswordSettings = ({ app, title = false, welcome = false }) => {
-  const backend = useBackend(app)
+  const { account, setAccount, token } = useAccount()
+  const backend = useBackend(token)
   const { t } = useTranslation(ns)
   const toast = useToast()
   const [password, setPassword] = useState('')
@@ -22,8 +25,10 @@ export const PasswordSettings = ({ app, title = false, welcome = false }) => {
   const save = async () => {
     app.startLoading()
     const result = await backend.updateAccount({ password })
-    if (result === true) toast.for.settingsSaved()
-    else toast.for.backendError()
+    if (result.success) {
+      setAccount(result.data.account)
+      toast.for.settingsSaved()
+    } else toast.for.backendError()
     app.stopLoading()
   }
 
@@ -48,8 +53,8 @@ export const PasswordSettings = ({ app, title = false, welcome = false }) => {
         </button>
       </div>
       <SaveSettingsButton app={app} btnProps={{ onClick: save, disabled: password.length < 4 }} />
-      {!welcome && <BackToAccountButton loading={app.loading} />}
-      {!app.account.mfaEnabled && (
+      {!welcome && <BackToAccountButton loading={app.state.loading} />}
+      {!account.mfaEnabled && (
         <Popout tip>
           <h5>{t('mfaTipTitle')}</h5>
           <p>{t('mfaTipMsg')}</p>

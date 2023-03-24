@@ -1,8 +1,10 @@
-// Hooks
+// Dependencies
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
-import { useBackend } from 'site/hooks/useBackend.mjs'
-import { useToast } from 'site/hooks/useToast.mjs'
+// Hooks
+import { useAccount } from 'shared/hooks/use-account.mjs'
+import { useBackend } from 'shared/hooks/use-backend.mjs'
+import { useToast } from 'shared/hooks/use-toast.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
 import { Popout } from 'shared/components/popout.mjs'
@@ -21,7 +23,8 @@ const CodeInput = ({ code, setCode, t }) => (
 )
 
 export const MfaSettings = ({ app, title = false, welcome = false }) => {
-  const backend = useBackend(app)
+  const { account, setAccount, token } = useAccount()
+  const backend = useBackend(token)
   const { t } = useTranslation(ns)
   const toast = useToast()
 
@@ -33,7 +36,7 @@ export const MfaSettings = ({ app, title = false, welcome = false }) => {
   const enableMfa = async () => {
     app.startLoading()
     const result = await backend.enableMfa()
-    if (result) setEnable(result)
+    if (result.success) setEnable(result.data.mfa)
     app.stopLoading()
   }
 
@@ -45,8 +48,10 @@ export const MfaSettings = ({ app, title = false, welcome = false }) => {
       token: code,
     })
     if (result) {
-      if (result === true) toast.warning(<span>{t('mfaDisabled')}</span>)
-      else toast.for.backendError()
+      if (result.success) {
+        setAccount(result.data.account)
+        toast.warning(<span>{t('mfaDisabled')}</span>)
+      } else toast.for.backendError()
       setDisable(false)
       setEnable(false)
       setCode('')
@@ -62,14 +67,16 @@ export const MfaSettings = ({ app, title = false, welcome = false }) => {
       secret: enable.secret,
       token: code,
     })
-    if (result === true) toast.success(<span>{t('mfaEnabled')}</span>)
-    else toast.for.backendError()
+    if (result.success) {
+      setAccount(result.data.account)
+      toast.success(<span>{t('mfaEnabled')}</span>)
+    } else toast.for.backendError()
     setEnable(false)
     setCode('')
     app.stopLoading()
   }
 
-  let titleText = app.account.mfaEnabled ? t('mfaEnabled') : t('mfaDisabled')
+  let titleText = account.mfaEnabled ? t('mfaEnabled') : t('mfaDisabled')
   if (enable) titleText = t('mfaSetup')
 
   return (
@@ -77,7 +84,7 @@ export const MfaSettings = ({ app, title = false, welcome = false }) => {
       {title ? <h2 className="text-4xl">{titleText}</h2> : null}
       {enable ? (
         <>
-          <div className="flex flex-row items-center justify-center">
+          <div className="flex flex-row items-center justify-center px-8 lg:px-36">
             <div dangerouslySetInnerHTML={{ __html: enable.qrcode }} />
           </div>
           <Bullet num="1">{t('mfaAdd')}</Bullet>
@@ -120,7 +127,7 @@ export const MfaSettings = ({ app, title = false, welcome = false }) => {
         </div>
       ) : null}
       <div className="flex flex-row items-center mt-4">
-        {app.account.mfaEnabled ? (
+        {account.mfaEnabled ? (
           disable ? null : (
             <button className="btn btn-primary block w-full" onClick={() => setDisable(true)}>
               {t('disableMfa')}
@@ -138,7 +145,7 @@ export const MfaSettings = ({ app, title = false, welcome = false }) => {
           </div>
         )}
       </div>
-      {!welcome && <BackToAccountButton loading={app.loading} />}
+      {!welcome && <BackToAccountButton loading={app.state.loading} />}
     </>
   )
 }

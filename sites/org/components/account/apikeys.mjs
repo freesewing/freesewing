@@ -1,11 +1,12 @@
-// Hooks
+// Dependencies
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'next-i18next'
-import { useBackend } from 'site/hooks/useBackend.mjs'
-import { useToast } from 'site/hooks/useToast.mjs'
-// Dependencies
 import { DateTime } from 'luxon'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
+// Hooks
+import { useAccount } from 'shared/hooks/use-account.mjs'
+import { useBackend } from 'shared/hooks/use-backend.mjs'
+import { useToast } from 'shared/hooks/use-toast.mjs'
 // Components
 import { BackToAccountButton, Choice } from './shared.mjs'
 import { Popout } from 'shared/components/popout.mjs'
@@ -114,7 +115,7 @@ const NewKey = ({ app, t, setGenerate, keyAdded, backend, toast }) => {
   const [expires, setExpires] = useState(DateTime.now())
   const [apikey, setApikey] = useState(false)
 
-  const levels = app.account.role === 'admin' ? [0, 1, 2, 3, 4, 5, 6, 7, 8] : [0, 1, 2, 3, 4]
+  const levels = account.role === 'admin' ? [0, 1, 2, 3, 4, 5, 6, 7, 8] : [0, 1, 2, 3, 4]
 
   const createKey = async () => {
     app.startLoading()
@@ -243,7 +244,7 @@ const Apikey = ({ apikey, t, backend, keyAdded, app }) => {
         <button
           key="button1"
           className="z-10 btn btn-sm mr-4 bg-base-100 text-error hover:bg-error hover:text-error-content border-0"
-          onClick={app.account.control > 4 ? remove : removeModal}
+          onClick={account.control > 4 ? remove : removeModal}
         >
           <TrashIcon key="button2" />
         </button>,
@@ -264,7 +265,8 @@ const Apikey = ({ apikey, t, backend, keyAdded, app }) => {
 }
 
 export const Apikeys = ({ app }) => {
-  const backend = useBackend(app)
+  const { account, setAccount, token } = useAccount()
+  const backend = useBackend(token)
   const { t } = useTranslation(ns)
   const toast = useToast()
 
@@ -298,8 +300,8 @@ export const Apikeys = ({ app }) => {
           >
             {t('newApikey')}
           </button>
-          <BackToAccountButton loading={app.loading} />
-          {app.account.control < 5 ? (
+          <BackToAccountButton loading={app.state.loading} />
+          {account.control < 5 ? (
             <Popout tip>
               <h5>Refer to FreeSewing.dev for details (English only)</h5>
               <p>

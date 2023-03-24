@@ -1,9 +1,9 @@
-// Hooks
-import { useApp } from 'site/hooks/useApp.mjs'
-import { useTranslation } from 'next-i18next'
 // Dependencies
+import { useTranslation } from 'next-i18next'
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+// Hooks
+import { useApp } from 'site/hooks/use-app.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'site/components/wrappers/page.mjs'
 import { ns as authNs } from 'site/components/wrappers/auth/index.mjs'

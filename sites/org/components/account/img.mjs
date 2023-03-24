@@ -1,9 +1,11 @@
-// Hooks
+// Dependencies
 import { useState, useCallback } from 'react'
 import { useTranslation } from 'next-i18next'
-import { useBackend } from 'site/hooks/useBackend.mjs'
 import { useDropzone } from 'react-dropzone'
-import { useToast } from 'site/hooks/useToast.mjs'
+// Hooks
+import { useAccount } from 'shared/hooks/use-account.mjs'
+import { useBackend } from 'shared/hooks/use-backend.mjs'
+import { useToast } from 'shared/hooks/use-toast.mjs'
 // Components
 import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
@@ -12,7 +14,8 @@ import { SaveSettingsButton } from 'site/components/buttons/save-settings-button
 export const ns = ['account', 'toast']
 
 export const ImgSettings = ({ app, title = false, welcome = false }) => {
-  const backend = useBackend(app)
+  const { account, setAccount, token } = useAccount()
+  const backend = useBackend(token)
   const toast = useToast()
   const { t } = useTranslation(ns)
 
@@ -31,8 +34,10 @@ export const ImgSettings = ({ app, title = false, welcome = false }) => {
   const save = async () => {
     app.startLoading()
     const result = await backend.updateAccount({ img })
-    if (result === true) toast.for.settingsSaved()
-    else toast.for.backendError()
+    if (result.success) {
+      setAccount(result.data.account)
+      toast.for.settingsSaved()
+    } else toast.for.backendError()
     app.stopLoading()
   }
 
@@ -43,7 +48,7 @@ export const ImgSettings = ({ app, title = false, welcome = false }) => {
       {title ? <h2 className="text-4xl">{t('imgTitle')}</h2> : null}
       <div>
         {!welcome || img !== false ? (
-          <img alt="img" src={img || app.account.img} className="shadow mb-4" />
+          <img alt="img" src={img || account.img} className="shadow mb-4" />
         ) : null}
         <div
           {...getRootProps()}
@@ -67,19 +72,19 @@ export const ImgSettings = ({ app, title = false, welcome = false }) => {
             {t('save')}
           </button>
           <ContinueButton app={app} btnProps={{ href: nextHref }} link />
-          {welcomeSteps[app.account.control].length > 0 ? (
+          {welcomeSteps[account.control].length > 0 ? (
             <>
               <progress
                 className="progress progress-primary w-full mt-12"
-                value={700 / welcomeSteps[app.account.control].length}
+                value={700 / welcomeSteps[account.control].length}
                 max="100"
               ></progress>
               <span className="pt-4 text-sm font-bold opacity-50">
-                7 / {welcomeSteps[app.account.control].length}
+                7 / {welcomeSteps[account.control].length}
               </span>
               <Icons
-                done={welcomeSteps[app.account.control].slice(0, 6)}
-                todo={welcomeSteps[app.account.control].slice(7)}
+                done={welcomeSteps[account.control].slice(0, 6)}
+                todo={welcomeSteps[account.control].slice(7)}
                 current="img"
               />
             </>
@@ -88,7 +93,7 @@ export const ImgSettings = ({ app, title = false, welcome = false }) => {
       ) : (
         <>
           <SaveSettingsButton app={app} btnProps={{ onClick: save }} />
-          <BackToAccountButton loading={app.loading} />
+          <BackToAccountButton loading={app.state.loading} />
         </>
       )}
     </>

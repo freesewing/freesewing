@@ -1,5 +1,5 @@
 // Hooks
-import { useApp } from 'site/hooks/useApp.mjs'
+import { useApp } from 'site/hooks/use-spp.mjs'
 import { useTranslation } from 'next-i18next'
 // Dependencies
 import dynamic from 'next/dynamic'

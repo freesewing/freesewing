@@ -1,9 +1,9 @@
 // Hooks
 import { useState, useEffect } from 'react'
-import { useApp } from 'site/hooks/useApp.mjs'
+import { useApp } from 'site/hooks/use-app.mjs'
 import { useTranslation } from 'next-i18next'
-import { useBackend } from 'site/hooks/useBackend.mjs'
-import { useToast } from 'site/hooks/useToast.mjs'
+import { useBackend } from 'shared/hooks/use-backend.mjs'
+import { useToast } from 'shared/hooks/use-toast.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { validateEmail, validateTld } from 'shared/utils.mjs'
@@ -82,7 +82,6 @@ const SignInPage = (props) => {
     const result = magicLink
       ? await backend.signIn({ username, password: false })
       : await backend.signIn({ username, password })
-    console.log(result)
     // Sign-in succeeded
     if (result.status === 200) {
       let msg
