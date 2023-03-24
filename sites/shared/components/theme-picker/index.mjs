@@ -3,10 +3,12 @@ import themes from 'shared/themes/index.js'
 import { ThemeIcon, DownIcon } from 'shared/components/icons.mjs'
 import { useTranslation } from 'next-i18next'
 import { Popover, Transition } from '@headlessui/react'
+import { useTheme } from 'shared/hooks/use-theme.mjs'
 
 export const ns = ['themes']
 
 export const ThemePicker = ({ app, iconOnly = false, bottom = false }) => {
+  const [theme, setTheme] = useTheme()
   const { t } = useTranslation(ns)
 
   return (
@@ -18,7 +20,9 @@ export const ThemePicker = ({ app, iconOnly = false, bottom = false }) => {
           >
             <ThemeIcon />
             {!iconOnly && (
-              <span className="ml-4 font-medium capitalize">{t(`${app.theme}Theme`)}</span>
+              <span className="ml-4 font-medium capitalize" suppressHydrationWarning={true}>
+                {t(`${theme}Theme`)}
+              </span>
             )}
             <DownIcon className={`ml-2 h-5 w-5 ${bottom ? 'rotate-180' : ''}`} aria-hidden="true" />
           </Popover.Button>
@@ -42,7 +46,7 @@ export const ThemePicker = ({ app, iconOnly = false, bottom = false }) => {
                     <button
                       data-theme={theme}
                       key={theme}
-                      onClick={() => app.setTheme(theme)}
+                      onClick={() => setTheme(theme)}
                       className="btn btn-primary"
                     >
                       {t(`${theme}Theme`)}

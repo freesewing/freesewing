@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { useLanguage } from 'shared/hooks/use-language.mjs'
 
 const rss = (lang, type, title) => ({
   title,
@@ -59,9 +60,9 @@ const feeds = {
   ],
 }
 
-export const Feeds = ({ lang = 'en' }) => (
+export const Feeds = () => (
   <Head>
-    {feeds[lang].map((feed) => (
+    {feeds[useLanguage()].map((feed) => (
       <link key={feed.href} {...feed} />
     ))}
   </Head>

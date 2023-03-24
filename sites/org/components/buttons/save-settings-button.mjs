@@ -6,18 +6,18 @@ export const SaveSettingsButton = ({ app, btnProps = {}, welcome = false, label 
   let classes = 'btn mt-4 capitalize '
   if (welcome) {
     classes += 'w-64 '
-    if (app.loading) classes += 'btn-accent '
+    if (app.state.loading) classes += 'btn-accent '
     else classes += 'btn-secondary '
   } else {
     classes += 'w-full '
-    if (app.loading) classes += 'btn-accent '
+    if (app.state.loading) classes += 'btn-accent '
     else classes += 'btn-primary '
   }
 
   return (
     <button className={classes} tabIndex="-1" role="button" {...btnProps}>
       <span className="flex flex-row items-center gap-2">
-        {app.loading ? (
+        {app.state.loading ? (
           <>
             <Spinner />
             <span>{t('processing')}</span>

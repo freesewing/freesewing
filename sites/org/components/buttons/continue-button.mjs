@@ -5,12 +5,12 @@ import { useTranslation } from 'next-i18next'
 export const ContinueButton = ({ app, btnProps = {}, link = false }) => {
   const { t } = useTranslation(['account'])
   let classes = 'btn mt-8 capitalize w-full '
-  if (app.loading) classes += 'btn-accent '
+  if (app.state.loading) classes += 'btn-accent '
   else classes += 'btn-primary '
 
   const children = (
     <span className="flex flex-row items-center gap-2">
-      {app.loading ? (
+      {app.state.loading ? (
         <>
           <Spinner />
           <span>{t('processing')}</span>

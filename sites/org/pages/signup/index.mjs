@@ -28,7 +28,7 @@ const DarkLink = ({ href, txt }) => (
 const SignUpPage = (props) => {
   const app = useApp(props)
   const backend = useBackend()
-  const { t } = useTranslation(namespaces)
+  const { t, i18n } = useTranslation(namespaces)
 
   const [email, setEmail] = useState('')
   const [emailValid, setEmailValid] = useState(false)
@@ -49,7 +49,7 @@ const SignUpPage = (props) => {
     try {
       res = await backend.signUp({
         email,
-        language: app.locale,
+        language: i18n.language,
         setResult,
       })
     } catch (err) {
@@ -61,7 +61,7 @@ const SignUpPage = (props) => {
     else setResult('fail')
   }
 
-  const loadingClasses = app.loading ? 'opacity-50' : ''
+  const loadingClasses = app.state.loading ? 'opacity-50' : ''
 
   return (
     <PageWrapper app={app} title={t('joinFreeSewing')} layout={BareLayout} footer={false}>

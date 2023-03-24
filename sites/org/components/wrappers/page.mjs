@@ -1,15 +1,13 @@
-// Hooks
+// Dependencies
 import React, { useState, useEffect } from 'react'
 import { useSwipeable } from 'react-swipeable'
-//import { useRouter } from 'next/router'
 import { useHotkeys } from 'react-hotkeys-hook'
+// Hooks
+import { useTheme } from 'shared/hooks/use-theme.mjs'
 // Components
 import { LayoutWrapper, ns as layoutNs } from 'site/components/wrappers/layout.mjs'
 import { DocsLayout } from 'site/components/layouts/docs.mjs'
-// Add feeds
 import { Feeds } from 'site/components/feeds.mjs'
-
-export const ns = [...new Set([...layoutNs])]
 
 /* This component should wrap all page content */
 export const PageWrapper = ({
@@ -21,17 +19,26 @@ export const PageWrapper = ({
   crumbs = false,
   children = [],
 }) => {
+  /*
+   * This forces a re-render upon initial bootstrap of the app
+   * This is needed to avoid hydration errors because theme can't be set reliably in SSR
+   */
+  const [theme, setTheme] = useTheme()
+  const [currentTheme, setCurrentTheme] = useState()
+  useEffect(() => setCurrentTheme(theme), [currentTheme, theme])
+
+  /*
+   * Swipe handling for the entire site
+   */
   const swipeHandlers = useSwipeable({
     onSwipedLeft: () => (app.primaryMenu ? app.setPrimaryMenu(false) : null),
     onSwipedRight: () => (app.primaryMenu ? null : app.setPrimaryMenu(true)),
     trackMouse: true,
   })
 
-  //const router = useRouter()
-  //const slug = router.asPath.slice(1)
-
-  //useEffect(() => app.setSlug(slug), [slug, app])
-
+  /*
+   * Hotkeys (keyboard actions)
+   */
   // Trigger search with /
   useHotkeys('/', (evt) => {
     evt.preventDefault()
@@ -44,8 +51,10 @@ export const PageWrapper = ({
     app.setModal(false)
   })
 
+  // Search state
   const [search, setSearch] = useState(false)
 
+  // Helper object to pass props down (keeps things DRY)
   const childProps = {
     app: app,
     title: title,
@@ -57,16 +66,18 @@ export const PageWrapper = ({
     noSearch: noSearch,
   }
 
+  // Make layout prop into a (uppercase) component
   const Layout = layout
 
+  // Return wrapper
   return (
     <div
       ref={swipeHandlers.ref}
       onMouseDown={swipeHandlers.onMouseDown}
-      data-theme={app.theme}
-      key={app.theme} // This forces the data-theme update
+      data-theme={currentTheme} // This facilitates CSS selectors
+      key={currentTheme} // This forces the data-theme update
     >
-      <Feeds lang={app.locale} />
+      <Feeds />
       <LayoutWrapper {...childProps}>
         {Layout ? <Layout {...childProps}>{children}</Layout> : children}
       </LayoutWrapper>

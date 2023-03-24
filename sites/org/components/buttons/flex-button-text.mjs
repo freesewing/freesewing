@@ -18,7 +18,7 @@ export const EmailValidButton = ({ email, app, validText, invalidText, btnProps 
         opacity: emailValid ? 1 : 0.8,
       }}
       className={`btn mt-4 capitalize w-full
-      ${emailValid ? (app.loading ? 'btn-accent' : 'btn-primary') : 'btn-warning'}`}
+      ${emailValid ? (app.state.loading ? 'btn-accent' : 'btn-primary') : 'btn-warning'}`}
       tabIndex="-1"
       role="button"
       aria-disabled={!emailValid}
@@ -26,7 +26,7 @@ export const EmailValidButton = ({ email, app, validText, invalidText, btnProps 
     >
       <FlexButtonText>
         {emailValid ? (
-          app.loading ? (
+          app.state.loading ? (
             <>
               <Spinner />
               <span>{t('processing')}</span>

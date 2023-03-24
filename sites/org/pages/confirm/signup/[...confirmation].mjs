@@ -80,7 +80,7 @@ const ConfirmSignUpPage = (props) => {
     if (profile && measurements) consent = 2
     if (profile && measurements && openData) consent = 3
     if (consent > 0 && id) {
-      const result = await backend.confirmSignup({ consent, id, ...app.loadHelpers })
+      const result = await backend.confirmSignup({ consent, id })
       if (result.success) {
         setToken(result.data.token)
         setAccount(result.data.account)
@@ -101,7 +101,6 @@ const ConfirmSignUpPage = (props) => {
       const data = await backend.loadConfirmation({
         id: confirmationId,
         check: confirmationCheck,
-        ...app.loadHelpers,
       })
       if (data instanceof Error) setError(true)
       setReady(true)
@@ -209,9 +208,9 @@ const ConfirmSignUpPage = (props) => {
         {profile && measurements && (
           <button
             onClick={createAccount}
-            className={`btn btn-lg w-full mt-8 ${app.loading ? 'btn-accent' : 'btn-primary'}`}
+            className={`btn btn-lg w-full mt-8 ${app.state.loading ? 'btn-accent' : 'btn-primary'}`}
           >
-            {app.loading ? (
+            {app.state.loading ? (
               <>
                 <Spinner />
                 <span>{t('processing')}</span>
