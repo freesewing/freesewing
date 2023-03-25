@@ -77,6 +77,12 @@ function draftBack({
 
   paths.seam = paths.seamSA.clone().line(points.p0).close().unhide()
 
+  store.set(
+    'BackOpening',
+    new Path().move(points.p0).curve(points.p0Cp1, points.p1Cp2, points.p1).length() * 2
+  )
+  console.log({ BackOpening: store.get('BackOpening') })
+
   // Complete?
   if (complete) {
     // points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)

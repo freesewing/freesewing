@@ -78,6 +78,12 @@ function draftFront({
 
   paths.seam = paths.seamSA.clone().line(points.p0).close().unhide()
 
+  store.set(
+    'FrontOpening',
+    new Path().move(points.p0).curve(points.p0Cp1, points.p1Cp2, points.p1).length() * 2
+  )
+  console.log({ FrontOpening: store.get('FrontOpening') })
+
   // makeRelativePoints(Point, points, points.p0, waist, ease)
 
   // consoleLogPoints(points)
