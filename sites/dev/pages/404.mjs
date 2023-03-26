@@ -1,8 +1,8 @@
 // Hooks
-import { useApp } from 'site/hooks/useApp.mjs'
+import { useApp } from 'shared/hooks/use-app.mjs'
 // Components
 import Head from 'next/head'
-import { PageWrapper } from 'site/components/wrappers/page.mjs'
+import { PageWrapper } from 'shared/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { Robot } from 'shared/components/robot/index.mjs'
 import { Popout } from 'shared/components/popout.mjs'

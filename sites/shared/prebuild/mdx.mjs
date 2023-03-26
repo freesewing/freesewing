@@ -122,11 +122,8 @@ export const prebuildMdx = async (site) => {
       if (slug) {
         const meta = await mdxMetaInfo(file)
         if (meta.data?.title) {
-          pages[lang][slug] = {
-            title: meta.data.title,
-            slug,
-            order: meta.data.order ? `${meta.data.order}${meta.data.title}` : meta.data.title,
-          }
+          pages[lang][slug] = { t: meta.data.title }
+          if (meta.data.order) pages[lang][slug].o = `${meta.data.order}${meta.data.title}`
         } else {
           if (pages.en[slug]) {
             console.log(`⚠️l Falling back to EN metadata for ${slug}`)
@@ -146,14 +143,14 @@ export const prebuildMdx = async (site) => {
 
     fs.writeFileSync(
       path.resolve('..', site, 'prebuild', `mdx.${lang}.js`),
-      `export default ${JSON.stringify(pages[lang], null, 2)}`
+      `export default ${JSON.stringify(pages[lang])}`
     )
   }
 
   // Write list of all MDX paths (in one language)
   fs.writeFileSync(
     path.resolve('..', site, 'prebuild', `mdx.paths.mjs`),
-    `export const mdxPaths = ${JSON.stringify(Object.keys(pages.en), null, 2)}`
+    `export const mdxPaths = ${JSON.stringify(Object.keys(pages.en))}`
   )
 
   return pages

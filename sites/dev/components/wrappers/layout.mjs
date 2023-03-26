@@ -1,22 +1,9 @@
-import { useRouter } from 'next/router'
 import Head from 'next/head'
 import { Header } from 'site/components/header.mjs'
 import { Footer } from 'site/components/footer.mjs'
 import { Search } from 'site/components/search.mjs'
 
 export const LayoutWrapper = ({ app, children = [], search, setSearch, noSearch = false }) => {
-  const startNavigation = () => {
-    app.startLoading()
-    // Force close of menu on mobile if it is open
-    if (app.primaryNavigation) app.setPrimaryNavigation(false)
-    // Force close of search modal if it is open
-    if (search) setSearch(false)
-  }
-
-  const router = useRouter()
-  router.events?.on('routeChangeStart', startNavigation)
-  router.events?.on('routeChangeComplete', () => app.stopLoading())
-
   return (
     <div
       className={`

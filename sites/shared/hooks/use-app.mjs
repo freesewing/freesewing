@@ -1,28 +1,36 @@
+import { loadNavigation } from 'site/lib/load-navigation.mjs'
 // Hooks
-import { useState } from 'react'
-import { useBugsnag } from 'site/hooks/use-bugsnag.mjs'
-import { useRouter } from 'next/router'
+import { useState, useEffect } from 'react'
+import { useBugsnag } from 'shared/hooks/use-bugsnag.mjs'
 // Dependencies
+import get from 'lodash.get'
 import set from 'lodash.set'
 import unset from 'lodash.unset'
 
 const defaultState = {
   loading: false,
   modal: null,
+  menu: {
+    main: null,
+  },
 }
 
 /*
  * The useApp hook
  */
-export function useApp({ bugsnag }) {
-  const router = useRouter()
-  const reportError = useBugsnag ? useBugsnag(bugsnag) : () => false
+export function useApp(props = {}) {
+  const { bugsnag = false, page = {}, loadState = {} } = props
+  const { saa = [] } = page
+
+  const reportError = useBugsnag(props?.bugsnag)
 
   // React state
-  const [state, setState] = useState({
-    ...defaultState,
-    slug: useRouter().asPath.slice(1),
-  })
+  const [state, setState] = useState(() => ({ ...defaultState, ...loadState }))
+
+  useEffect(() => {
+    // Force update of navigation info (nav, title, crumbs) on each page change
+    if (saa.length > 0) setState({ ...state, ...loadNavigation(saa) })
+  }, [saa, state.slug, state.title])
 
   /*
    * Helper methods for partial state updates
@@ -33,7 +41,9 @@ export function useApp({ bugsnag }) {
   /*
    * Helper methods for specific state updates
    */
-  const clearModal = () => updateState('modal', null)
+  const closeModal = () => updateState('modal', null)
+  const closeMenu = (name) =>
+    get(state, `menu.${name}`, false) ? updateState(`menu.${name}`, false) : null
   const startLoading = () => updateState('loading', true)
   const stopLoading = () => updateState('loading', false)
 
@@ -45,7 +55,8 @@ export function useApp({ bugsnag }) {
     unsetState,
 
     // Helper methods
-    clearModal,
+    closeModal,
+    closeMenu,
     startLoading,
     stopLoading,
 

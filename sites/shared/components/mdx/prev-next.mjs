@@ -96,6 +96,7 @@ const renderNext = (node) =>
   )
 
 export const PrevNext = ({ app }) => {
+  return <p>fixme: prevnext</p>
   return (
     <div className="grid grid-cols-2 gap-4 border-t mt-12 py-2">
       {renderPrevious(previous(app))}

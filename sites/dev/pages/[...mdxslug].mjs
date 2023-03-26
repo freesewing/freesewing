@@ -1,12 +1,12 @@
 // Hooks
-import { useApp } from 'site/hooks/useApp.mjs'
+import { useApp } from 'shared/hooks/use-app.mjs'
 // Dependencies
 import mdxMeta from 'site/prebuild/mdx.en.js'
 import { mdxLoader } from 'shared/mdx/loader.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import Head from 'next/head'
-import { PageWrapper } from 'site/components/wrappers/page.mjs'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { TocWrapper } from 'shared/components/wrappers/toc.mjs'
 import { HelpUs } from 'site/components/help-us.mjs'
@@ -14,7 +14,7 @@ import { jargon } from 'site/jargon.mjs'
 
 const MdxPage = (props) => {
   // This hook is used for shared code and global state
-  const app = useApp()
+  const app = useApp(props)
 
   /*
    * Each page should be wrapped in the Page wrapper component
@@ -26,7 +26,7 @@ const MdxPage = (props) => {
    * active state
    */
   return (
-    <PageWrapper app={app} {...props.page}>
+    <PageWrapper app={app} title={app.state.title}>
       <Head>
         <meta property="og:type" content="article" key="type" />
         <meta property="og:description" content={props.intro} key="type" />
@@ -83,9 +83,7 @@ export async function getStaticProps({ params }) {
       toc,
       intro: intro.join(' '),
       page: {
-        slug: params.mdxslug.join('/'),
-        path: '/' + params.mdxslug.join('/'),
-        slugArray: params.mdxslug,
+        saa: params.mdxslug, // slug as array (saa)
         ...mdxMeta[params.mdxslug.join('/')],
       },
       params,

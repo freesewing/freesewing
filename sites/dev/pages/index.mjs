@@ -1,10 +1,10 @@
 // Hooks
-import { useApp } from 'site/hooks/useApp.mjs'
+import { useApp } from 'shared/hooks/use-app.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import Head from 'next/head'
-import { PageWrapper } from 'site/components/wrappers/page.mjs'
+import { PageWrapper } from 'shared/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { Icons } from 'shared/components/navigation/primary.mjs'
 import { Highlight } from 'shared/components/mdx/highlight.mjs'
