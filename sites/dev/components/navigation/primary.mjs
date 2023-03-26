@@ -157,9 +157,11 @@ export const Icons = ({
   flex flex-col items-center`,
   linkStyle = {},
 }) => {
-  if (!app.navigation) return null
+  console.log(app.state)
+  if (!app.state?.nav) return null
+
   const output = []
-  for (const page of order(app.navigation)) {
+  for (const page of order(app.state.nav)) {
     output.push(
       <li key={page.s}>
         <Link href={`${page.s}`} className={linkClasses} title={page.t} style={linkStyle}>

@@ -81,9 +81,9 @@ export const Header = ({ app, setSearch }) => {
               onClick={() => setSearch(true)}
             >
               <SearchIcon />
-              <keyb className="px-3 rounded text-base font-medium border border-solid border-base-300">
+              <span className="px-3 rounded text-base font-medium border border-solid border-base-300">
                 /
-              </keyb>
+              </span>
             </button>
             <ThemePicker app={app} />
           </div>

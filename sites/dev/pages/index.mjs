@@ -6,7 +6,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
 import { PageWrapper } from 'shared/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
-import { Icons } from 'shared/components/navigation/primary.mjs'
+import { Icons } from 'site/components/navigation/primary.mjs'
 import { Highlight } from 'shared/components/mdx/highlight.mjs'
 import { Popout } from 'shared/components/popout.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
@@ -14,8 +14,8 @@ import { PageLink } from 'shared/components/page-link.mjs'
 
 const title = 'Welcome to FreeSewing.dev'
 
-const HomePage = () => {
-  const app = useApp()
+const HomePage = (props) => {
+  const app = useApp(props)
   return (
     <PageWrapper app={app} title={title} layout={BareLayout}>
       <Head>
@@ -71,7 +71,6 @@ const HomePage = () => {
           </div>
           <Icons
             app={app}
-            active="/"
             ulClasses="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-8 mt-8 max-w-6xl"
             liClasses=""
             linkClasses={`
@@ -206,7 +205,6 @@ const HomePage = () => {
           <div className="px-8 text-base-content">
             <Icons
               app={app}
-              active="/"
               ulClasses="grid grid-cols-2 gap-4 w-full lg:grid-cols-4 lg:gap-8 mt-8 max-w-6xl"
               liClasses=""
               linkClasses={`
@@ -227,6 +225,9 @@ export async function getStaticProps() {
   return {
     props: {
       ...(await serverSideTranslations('en')),
+      page: {
+        path: [],
+      },
     },
   }
 }

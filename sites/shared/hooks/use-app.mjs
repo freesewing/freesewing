@@ -20,7 +20,9 @@ const defaultState = {
  */
 export function useApp(props = {}) {
   const { bugsnag = false, page = {}, loadState = {} } = props
-  const { path = [] } = page
+  const { path = false } = page
+
+  if (!path) throw 'You MUST pass a page.path prop to the useApp hook'
 
   const reportError = useBugsnag(props?.bugsnag)
 
@@ -29,7 +31,7 @@ export function useApp(props = {}) {
 
   useEffect(() => {
     // Force update of navigation info (nav, title, crumbs) on each page change
-    if (path.length > 0) setState({ ...state, ...loadNavigation(path) })
+    if (path) setState({ ...state, ...loadNavigation(path) })
   }, [path, state.slug, state.title])
 
   /*

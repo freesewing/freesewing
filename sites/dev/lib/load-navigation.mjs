@@ -37,13 +37,14 @@ const createSections = () => {
 export const loadNavigation = (path = []) => {
   // Creat crumbs array
   const crumbs = createCrumbs(path)
+  const sections = createSections()
 
   return {
     path,
     slug: path.join('/'),
     crumbs,
-    sections: createSections(),
-    nav: path.length > 1 ? get(pbn.en, path[0]) : pbn.en[path[0]],
-    title: crumbs.slice(-1)[0].t,
+    sections,
+    nav: path.length > 1 ? get(pbn.en, path[0]) : path.length === 0 ? sections : pbn.en[path[0]],
+    title: crumbs.length > 0 ? crumbs.slice(-1)[0].t : '',
   }
 }
