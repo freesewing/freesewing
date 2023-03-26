@@ -314,9 +314,6 @@ UserModel.prototype.passwordSignIn = async function (req) {
     await this.unguardedUpdate({ password: updatedPasswordField })
   }
 
-  // Before we return, remove the confirmation so it works only once
-  await this.Confirmation.unguardedDelete()
-
   return this.isOk() ? this.signInOk() : this.setResponse(401, 'signInFailed')
 }
 
