@@ -37,7 +37,7 @@ export const Header = ({ app, setSearch }) => {
     `}
     >
       <div className="m-auto" style={{ maxWidth: '1800px' }}>
-        <div className="p-2 flex flex-row gap-2 justify-between text-neutral-content">
+        <div className="p-0 px-4 flex flex-row gap-2 justify-between text-neutral-content">
           <div className="flex flex-row items-center">
             <button
               className={`
@@ -72,8 +72,7 @@ export const Header = ({ app, setSearch }) => {
                 hidden lg:flex
                 flex-row gap-4
                 justify-between
-                hover:text-secondary-focus
-                hover:bg-transparent
+                hover:bg-secondary hover:bg-opacity-50 rounded-none
               `}
               onClick={() => setSearch(true)}
             >

@@ -20,7 +20,11 @@ const No = () => (
 )
 
 const ContactPage = () => {
-  const app = useApp()
+  const app = useApp({
+    page: {
+      path: ['contact'],
+    },
+  })
   const title = 'Contact information'
 
   return (
