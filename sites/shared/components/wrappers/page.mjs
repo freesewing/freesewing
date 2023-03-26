@@ -32,8 +32,8 @@ export const PageWrapper = ({
    * Swipe handling for the entire site
    */
   const swipeHandlers = useSwipeable({
-    onSwipedLeft: () => (app.primaryMenu ? app.setPrimaryMenu(false) : null),
-    onSwipedRight: () => (app.primaryMenu ? null : app.setPrimaryMenu(true)),
+    onSwipedLeft: () => (app.state?.menu?.main ? app.updateState('menu.main', false) : null),
+    onSwipedRight: () => (app.state?.menu?.main ? null : app.updateState('menu.main', true)),
     trackMouse: true,
   })
 
@@ -49,7 +49,7 @@ export const PageWrapper = ({
   // Always close modal when Escape key is hit
   useHotkeys('esc', (evt) => {
     evt.preventDefault()
-    app.setModal(false)
+    app.updateState('modal', null)
   })
 
   // Search state
@@ -63,7 +63,7 @@ export const PageWrapper = ({
     setSearch,
     toggleSearch: () => setSearch(!search),
     noSearch: noSearch,
-    title,
+    title: app.state.title ? app.state.title : title,
   }
 
   // Make layout prop into a (uppercase) component
@@ -87,7 +87,7 @@ export const PageWrapper = ({
               bg-base-100 bg-opacity-90 z-50 hover:cursor-pointer
               flex flex-row items-center justify-center
             `}
-          onClick={() => app.setModal(false)}
+          onClick={() => app.updateState('modal', false)}
         >
           {app.modal}
         </div>

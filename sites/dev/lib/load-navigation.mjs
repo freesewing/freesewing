@@ -8,6 +8,8 @@ import orderBy from 'lodash.orderby'
  * - 404 => no navigation shown
  * - home page => no navvigation shown
  * - /contact => Added below
+ *
+ * Note: Set 'h' to truthy to not show a top-level entry as a section
  */
 pbn.en.contact = { t: 'Contact information', s: 'contact', h: 1 }
 

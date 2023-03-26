@@ -7,7 +7,7 @@ export const AsideNavigation = ({ app, slug, mobileOnly = false, before = [], af
     overflow-y-auto z-20
     bg-base-100 text-base-content md:bg-base-50
     transition-all
-    ${app.primaryMenu ? '' : 'translate-x-[-120%]'} transition-transform
+    ${app.state?.menu?.main ? '' : 'translate-x-[-120%]'} transition-transform
     md:flex md:sticky md:flex-row-reverse
     md:relative md:transform-none
     px-6 py-24

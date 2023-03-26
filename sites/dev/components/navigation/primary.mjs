@@ -35,9 +35,9 @@ const currentChildren = (current) =>
 
 // Shared classes for links
 // Exported for re-use
-export const linkClasses = `text-lg lg:text-xl
+export const linkClasses = `
   py-1
-  text-base-content sm:text-base-content
+  text-base text-base-content sm:text-base-content
   hover:text-secondary
   sm:hover:text-secondary
 `
@@ -180,8 +180,12 @@ export const MainSections = ({ app }) => {
     const act = isActive(page.s, app.state.slug)
     const txt = (
       <>
-        {icons[page.s] ? icons[page.s](`w-8 h-8 ${act ? 'text-accent' : ''}`) : <HelpIcon />}
-        <span className={`font-bold ${act ? 'text-accent' : ''}`}>{page.t}</span>
+        {icons[page.s] ? (
+          icons[page.s](`w-6 h-6 ${act ? 'text-secondary-content' : ''}`)
+        ) : (
+          <HelpIcon />
+        )}
+        <span className={`font-bold ${act ? 'text-secondary-content' : ''}`}>{page.t}</span>
       </>
     )
 
@@ -191,10 +195,12 @@ export const MainSections = ({ app }) => {
           <span
             className={`
                 flex flex-row gap-4 items-center
-                text-accent
+                text-secondary-content
                 hover:text-base-content
-                p-2 rounded
+                bg-secondary
+                p-2 px-4 rounded
                 bg-base-200
+                rounded-none
               `}
             title={page.t}
           >
@@ -205,8 +211,9 @@ export const MainSections = ({ app }) => {
             href={`/${page.s}`}
             className={`
               flex flex-row gap-4 items-center
-              hover:bg-secondary hover:bg-opacity-10 hover:cursor-pointer
-              p-2 rounded
+              hover:bg-secondary hover:bg-opacity-25 hover:cursor-pointer
+              p-2 px-4 rounded
+              rounded-none
             `}
             title={page.t}
           >

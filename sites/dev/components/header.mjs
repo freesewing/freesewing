@@ -43,12 +43,16 @@ export const Header = ({ app, setSearch }) => {
               className={`
                   btn btn-sm btn-ghost
                   text-neutral-content bg-transparent
-                  hover:text-secondary-focus
+                  hover:bg-secondary hover:bg-opacity-50
                   lg:hidden
+                  rounded-none
+                  swap swap-rotate
                 `}
-              onClick={app.togglePrimaryMenu}
+              onClick={() => app.updateState('menu.main', app.state?.menu?.main ? false : true)}
             >
-              {app.primaryMenu ? <CloseIcon /> : <MenuIcon />}
+              <div className={`${app.state?.menu?.main ? 'rotate-90' : ''} transition-transform`}>
+                {app.state?.menu?.main ? <CloseIcon /> : <MenuIcon />}
+              </div>
             </button>
             <div className="hidden lg:block">
               <WordMark />
@@ -60,7 +64,7 @@ export const Header = ({ app, setSearch }) => {
           <div className="flex flex-row items-center lg:hidden pr-2">
             <button
               onClick={() => setSearch(true)}
-              className="btn btn-sm btn-ghost hover:text-secondary-focus"
+              className="btn btn-sm btn-ghost hover:bg-secondary hover:bg-opacity-50 rounded-none"
             >
               <SearchIcon />
             </button>
@@ -77,7 +81,9 @@ export const Header = ({ app, setSearch }) => {
               onClick={() => setSearch(true)}
             >
               <SearchIcon />
-              <span className="normal-case text-base font-medium">Ctrl K</span>
+              <keyb className="px-3 rounded text-base font-medium border border-solid border-base-300">
+                /
+              </keyb>
             </button>
             <ThemePicker app={app} />
           </div>

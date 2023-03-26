@@ -19,16 +19,11 @@ const No = () => (
   </span>
 )
 
-const ContactPage = () => {
-  const app = useApp({
-    page: {
-      path: ['contact'],
-    },
-  })
-  const title = 'Contact information'
+const ContactPage = (props) => {
+  const app = useApp(props)
 
   return (
-    <PageWrapper app={app} title={title} slug="contact" crumbs={[[title, 'contact']]}>
+    <PageWrapper app={app}>
       <Head>
         <meta property="og:type" content="article" key="type" />
         <meta
@@ -220,6 +215,9 @@ export async function getStaticProps() {
   return {
     props: {
       ...(await serverSideTranslations('en')),
+      page: {
+        path: ['contact'],
+      },
     },
   }
 }

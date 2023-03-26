@@ -16,7 +16,8 @@ export const ThemePicker = ({ app, iconOnly = false, bottom = false }) => {
       {() => (
         <>
           <Popover.Button
-            className={`h-12 group border-0 inline-flex items-center px-3 text-base text-neural-content hover:bg-neutral-focus`}
+            className={`h-12 group border-0 inline-flex items-center px-3 text-base
+              text-neural-content hover:bg-secondary hover:bg-opacity-50`}
           >
             <ThemeIcon />
             {!iconOnly && (
