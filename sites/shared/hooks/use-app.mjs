@@ -20,7 +20,7 @@ const defaultState = {
  */
 export function useApp(props = {}) {
   const { bugsnag = false, page = {}, loadState = {} } = props
-  const { saa = [] } = page
+  const { path = [] } = page
 
   const reportError = useBugsnag(props?.bugsnag)
 
@@ -29,8 +29,8 @@ export function useApp(props = {}) {
 
   useEffect(() => {
     // Force update of navigation info (nav, title, crumbs) on each page change
-    if (saa.length > 0) setState({ ...state, ...loadNavigation(saa) })
-  }, [saa, state.slug, state.title])
+    if (path.length > 0) setState({ ...state, ...loadNavigation(path) })
+  }, [path, state.slug, state.title])
 
   /*
    * Helper methods for partial state updates

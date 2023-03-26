@@ -2,9 +2,9 @@ import get from 'lodash.get'
 import { prebuildNavigation as pbn } from 'site/prebuild/navigation.mjs'
 import orderBy from 'lodash.orderby'
 
-const createCrumbs = (saa) =>
-  saa.map((crumb, i) => {
-    const entry = get(pbn.en, saa.slice(0, i + 1))
+const createCrumbs = (path) =>
+  path.map((crumb, i) => {
+    const entry = get(pbn.en, path.slice(0, i + 1))
     const val = { t: entry.t, s: entry.s }
     if (entry.o) val.o = entry.o
 
@@ -23,16 +23,16 @@ const createSections = () => {
   return orderBy(sections, 'o')
 }
 
-export const loadNavigation = (saa = []) => {
+export const loadNavigation = (path = []) => {
   // Creat crumbs array
-  const crumbs = createCrumbs(saa)
+  const crumbs = createCrumbs(path)
 
   return {
-    saa,
-    slug: saa.join('/'),
+    path,
+    slug: path.join('/'),
     crumbs,
     sections: createSections(),
-    nav: saa.length > 1 ? get(pbn.en, saa[0]) : pbn.en[saa[0]],
+    nav: path.length > 1 ? get(pbn.en, path[0]) : pbn.en[path[0]],
     title: crumbs.slice(-1)[0].t,
   }
 }

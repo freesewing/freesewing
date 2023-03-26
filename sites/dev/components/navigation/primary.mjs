@@ -225,7 +225,7 @@ export const ActiveSection = ({ app }) => (
   <div className="mt-4 pt-4 border-t-2">
     {app.state.crumbs ? (
       <div className="pl-4">
-        <Breadcrumbs crumbs={app.state.crumbs.slice(0, 2)} />
+        <Breadcrumbs crumbs={app.state.crumbs.slice(0, 1)} />
       </div>
     ) : null}
     <div className="pr-2">

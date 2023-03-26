@@ -83,7 +83,7 @@ export async function getStaticProps({ params }) {
       toc,
       intro: intro.join(' '),
       page: {
-        saa: params.mdxslug, // slug as array (saa)
+        path: params.mdxslug, // path to page as array
         ...mdxMeta[params.mdxslug.join('/')],
       },
       params,
