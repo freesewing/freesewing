@@ -1,7 +1,7 @@
-import { loadNavigation } from 'site/lib/load-navigation.mjs'
 // Hooks
 import { useState, useEffect } from 'react'
 import { useBugsnag } from 'shared/hooks/use-bugsnag.mjs'
+import { useNavigation } from 'site/hooks/use-navigation.mjs'
 // Dependencies
 import get from 'lodash.get'
 import set from 'lodash.set'
@@ -25,13 +25,14 @@ export function useApp(props = {}) {
   if (!path) throw 'You MUST pass a page.path prop to the useApp hook'
 
   const reportError = useBugsnag(props?.bugsnag)
+  const navState = useNavigation(path)
 
   // React state
   const [state, setState] = useState(() => ({ ...defaultState, ...loadState }))
 
   useEffect(() => {
     // Force update of navigation info (nav, title, crumbs) on each page change
-    if (path) setState({ ...state, ...loadNavigation(path) })
+    if (path) setState({ ...state, ...navState })
   }, [path, state.slug, state.title])
 
   /*

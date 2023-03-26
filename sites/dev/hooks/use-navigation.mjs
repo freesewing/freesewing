@@ -34,7 +34,7 @@ const createSections = () => {
   return orderBy(sections, 'o')
 }
 
-export const loadNavigation = (path = []) => {
+export const useNavigation = (path = []) => {
   // Creat crumbs array
   const crumbs = createCrumbs(path)
   const sections = createSections()
