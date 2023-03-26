@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Header } from 'site/components/header.mjs'
-import { Footer } from 'site/components/footer.mjs'
+import { Footer } from 'shared/components/footer/index.mjs'
 import { Search } from 'site/components/search.mjs'
 
 export const LayoutWrapper = ({ app, children = [], search, setSearch, noSearch = false }) => {

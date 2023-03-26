@@ -1,5 +1,18 @@
 import Link from 'next/link'
 
+export const colors = [
+  'red',
+  'orange',
+  'yellow',
+  'lime',
+  'green',
+  'cyan',
+  'blue',
+  'indigo',
+  'violet',
+  'purple',
+]
+
 export const InnerWordMark = () => (
   <span style={{ letterSpacing: '-0.1rem' }}>
     <span className="text-red-400 hover:text-purple-400">F</span>

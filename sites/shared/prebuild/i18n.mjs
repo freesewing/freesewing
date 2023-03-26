@@ -18,6 +18,7 @@ const locales = ['en', 'es', 'de', 'fr', 'nl']
 const sitesFolder = path.join(fileURLToPath(import.meta.url), '..', '..', '..')
 const folders = {
   org: [path.join(sitesFolder, 'org', 'pages'), path.join(sitesFolder, 'org', 'components')],
+  dev: [path.join(sitesFolder, 'dev', 'pages'), path.join(sitesFolder, 'dev', 'components')],
   shared: [path.join(sitesFolder, 'shared', 'components')],
 }
 
@@ -39,9 +40,10 @@ const writeJson = async (site, locale, namespace, content) =>
  *  - site: the site folder to generate translations files for
  *
  */
-const getI18nFileList = async (site = 'org') => {
+const getI18nFileList = async (site) => {
   const dirs = [...folders.shared]
   if (site === 'org') dirs.push(...folders.org)
+  if (site === 'dev') dirs.push(...folders.dev)
 
   const allFiles = []
   for (const dir of dirs) {
@@ -159,7 +161,7 @@ export const prebuildI18n = async (site, only = false) => {
   }
 
   // Handle new code-adjacent translations
-  const files = await getI18nFileList('org')
+  const files = await getI18nFileList(site)
   const data = filesAsNamespaces(files)
   const namespaces = fixData(data)
   // Write out code-adjacent source files
