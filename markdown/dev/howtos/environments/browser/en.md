@@ -57,8 +57,8 @@ Below is a complete example.
   </head>
   <body>
     <script type="module">
-      import Aaron from 'https://cdn.skypack.dev/@freesewing/aaron';
-      import theme from 'https://cdn.skypack.dev/@freesewing/plugin-theme';
+      import { Aaron } from 'https://cdn.skypack.dev/@freesewing/aaron';
+      import { pluginTheme as theme } from 'https://cdn.skypack.dev/@freesewing/plugin-theme';
       const svg = new Aaron({
         sa: 10, // Seam allowance
         paperless: true, // Enable paperless mode
