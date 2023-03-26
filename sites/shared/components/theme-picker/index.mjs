@@ -48,9 +48,16 @@ export const ThemePicker = ({ app, iconOnly = false, bottom = false }) => {
                       data-theme={theme}
                       key={theme}
                       onClick={() => setTheme(theme)}
-                      className="btn btn-primary"
+                      className="btn bg-base-100 text-base-content hover:bg-base-100 hover:-ml-1"
                     >
-                      {t(`${theme}Theme`)}
+                      <span>{theme}</span>
+                      <span className="grow"></span>
+                      <div className="flex flex-shrink-0 flex-wrap gap-1 h-1/2">
+                        <div className="bg-primary w-2 rounded"></div>
+                        <div className="bg-secondary w-2 rounded"></div>
+                        <div className="bg-accent w-2 rounded"></div>
+                        <div className="bg-neutral w-2 rounded"></div>
+                      </div>
                     </button>
                   ))}
                 </div>
