@@ -38,6 +38,9 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale)),
+      page: {
+        path: [],
+      },
     },
   }
 }

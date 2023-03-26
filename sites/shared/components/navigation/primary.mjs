@@ -1,14 +1,28 @@
 import Link from 'next/link'
 import orderBy from 'lodash.orderby'
-import { TutorialIcon, GuideIcon, HelpIcon, DocsIcon } from 'shared/components/icons.mjs'
+import {
+  TutorialIcon,
+  GuideIcon,
+  HelpIcon,
+  DocsIcon,
+  RssIcon,
+  ShowcaseIcon,
+  AccountIcon,
+} from 'shared/components/icons.mjs'
 import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
 
 // List of icons matched to top-level slug
 const icons = {
+  // FreeSewing.dev
   guides: (className = '') => <GuideIcon className={className} />,
   howtos: (className = '') => <HelpIcon className={className} />,
   reference: (className = '') => <DocsIcon className={className} />,
   tutorials: (className = '') => <TutorialIcon className={className} />,
+  // FreeSewing.org
+  blog: (className = '') => <RssIcon className={className} stroke={3} />,
+  showcase: (className = '') => <ShowcaseIcon className={className} />,
+  docs: (className = '') => <DocsIcon className={className} />,
+  account: (className = '') => <AccountIcon className={className} />,
 }
 
 /* helper method to order nav entries */
@@ -73,7 +87,7 @@ const SubLevel = ({ nodes = {}, active = '' }) => (
             `}
             >
               <Link
-                href={`${child.s}`}
+                href={`/${child.s}`}
                 title={child.t}
                 className={`
                 grow pl-2 border-l-2
@@ -112,7 +126,7 @@ const SubLevel = ({ nodes = {}, active = '' }) => (
       ) : (
         <li className="pl-2 flex flex-row items-center" key={child.s}>
           <Link
-            href={`${child.s}`}
+            href={`/${child.s}`}
             title={child.t}
             className={`
             pl-2 border-l-2
@@ -164,7 +178,7 @@ export const Icons = ({
   for (const page of order(app.state.nav)) {
     output.push(
       <li key={page.s}>
-        <Link href={`${page.s}`} className={linkClasses} title={page.t} style={linkStyle}>
+        <Link href={`/${page.s}`} className={linkClasses} title={page.t} style={linkStyle}>
           {icons[page.s] ? icons[page.s]('w-14 h-14') : <HelpIcon />}
           <span className="font-bold">{page.t}</span>
         </Link>

@@ -109,7 +109,8 @@ export const prebuildMdx = async (site) => {
   }
   // Loop over locales
   const pages = {}
-  for (const lang of site === 'dev' ? ['en'] : ['en', 'fr', 'es', 'nl', 'de']) {
+  const locales = site === 'dev' ? ['en'] : ['en', 'fr', 'es', 'nl', 'de']
+  for (const lang of locales) {
     console.log(`  - Language: ${lang}`)
 
     // Get list of filenames
@@ -146,6 +147,14 @@ export const prebuildMdx = async (site) => {
       `export default ${JSON.stringify(pages[lang])}`
     )
   }
+
+  // Create wrapper
+  fs.writeFileSync(
+    path.resolve('..', site, 'prebuild', `mdx.js`),
+    locales.map((l) => `import ${l} from './mdx.${l}.js'`).join('\n') +
+      '\n\n' +
+      `export default { ${locales.join()} }`
+  )
 
   // Write list of all MDX paths (in one language)
   fs.writeFileSync(

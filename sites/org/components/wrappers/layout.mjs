@@ -1,32 +1,9 @@
-// Hooks
-import { useRouter } from 'next/router'
-// Components
-import { Header, ns as headerNs } from 'site/components/header/index.mjs'
-import { Footer, ns as footerNs } from 'site/components/footer/index.mjs'
-import { Search, ns as searchNs } from 'site/components/search.mjs'
+import Head from 'next/head'
+import { Header } from 'site/components/header/index.mjs'
+import { Footer } from 'shared/components/footer/index.mjs'
+import { Search } from 'site/components/search.mjs'
 
-export const ns = [...new Set([...headerNs, ...footerNs, ...searchNs])]
-
-export const LayoutWrapper = ({
-  app,
-  children = [],
-  footer,
-  search,
-  setSearch,
-  noSearch = false,
-}) => {
-  const startNavigation = () => {
-    app.startLoading()
-    // Force close of menu on mobile if it is open
-    if (app.primaryNavigation) app.setPrimaryNavigation(false)
-    // Force close of search modal if it is open
-    if (search) setSearch(false)
-  }
-
-  const router = useRouter()
-  router.events?.on('routeChangeStart', startNavigation)
-  router.events?.on('routeChangeComplete', () => app.stopLoading())
-
+export const LayoutWrapper = ({ app, children = [], search, setSearch, noSearch = false }) => {
   return (
     <div
       className={`
@@ -35,6 +12,9 @@ export const LayoutWrapper = ({
     bg-base-100
     `}
     >
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <Header app={app} setSearch={setSearch} />
       <main className="grow">{children}</main>
       {!noSearch && search && (
@@ -53,7 +33,7 @@ export const LayoutWrapper = ({
           <div className="fixed top-0 left-0 w-full min-h-screen bg-neutral z-20 bg-opacity-70"></div>
         </>
       )}
-      {footer && <Footer app={app} />}
+      <Footer app={app} />
     </div>
   )
 }

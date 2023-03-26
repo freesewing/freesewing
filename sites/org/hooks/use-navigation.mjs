@@ -1,97 +1,55 @@
-import { useState } from 'react'
 import get from 'lodash.get'
-import set from 'lodash.set'
-// Prebuild navigation
-import { prebuildNavigation } from 'site/prebuild/navigation.mjs'
+import { prebuildNavigation as pbn } from 'site/prebuild/navigation.mjs'
+import orderBy from 'lodash.orderby'
 
 /*
- * Helper method for a simple navigation item
+ * prebuildNavvigation[locale] holds the naigation structure based on MDX content.
+ * The entire website only has a few pages that are now MDX-based:
+ * - 404 => no navigation shown
+ * - home page => no navvigation shown
+ * - /contact => Added below
+ *
+ * Note: Set 'h' to truthy to not show a top-level entry as a section
  */
-const simpleNav = (term, t, lng, prefix = '', order = '') => ({
-  __title: t(term, { lng }),
-  __linktitle: t(term, { lng }),
-  __slug: prefix + term,
-  __order: order + t(term, { lng }),
-})
+pbn.en.contact = { t: 'Contact information', s: 'contact', h: 1 }
 
-/*
- * Generated the static navigation
- * Static means not mdx, not strapi
- */
-const staticNavigation = (t, lang) => ({
-  designs: simpleNav('designs', t, lang, '', 'A'),
-  community: simpleNav('community', t, lang),
-  account: simpleNav('account', t, lang),
-})
+const createCrumbs = (path) =>
+  path.map((crumb, i) => {
+    const entry = get(pbn.en, path.slice(0, i + 1))
+    const val = { t: entry.t, s: entry.s }
+    if (entry.o) val.o = entry.o
 
-/*
- * Merges prebuild navigation with the static navigation
- */
-const buildNavigation = (lang, t) => {
-  const nav = {
-    ...prebuildNavigation[lang],
-    ...staticNavigation(t, lang),
+    return val
+  })
+
+const createSections = () => {
+  const sections = {}
+  for (const slug of Object.keys(pbn.en)) {
+    const entry = pbn.en[slug]
+    const val = { t: entry.t, s: entry.s }
+    if (entry.o) val.o = entry.o
+    if (!entry.h) sections[slug] = val
   }
 
-  // Set top-level order
-  nav.designs.__order = 'a'
-  nav.showcase.__order = 'b'
-  nav.docs.__order = 'c'
-  nav.community.__order = 'd'
-  nav.blog.__order = 'e'
-  nav.account.__order = 'f'
-
-  // Translation top-level strapi pages
-  nav.showcase.__title = t('showcase')
-  nav.showcase.__linktitle = t('showcase')
-  nav.blog.__title = t('blog')
-  nav.blog.__linktitle = t('blog')
-
-  // Translation top-level strapi pages
-  nav.community.__title = t('community')
-  nav.community.__linktitle = t('community')
-
-  return nav
+  return orderBy(sections, 'o')
 }
 
-/*
- * The actual hook
- */
-export function useNavigation({}) {
-  // React State
-  const [navigation, setNavigation] = useState(buildNavigation(locale, t))
-  const [slug, setSlug] = useState('/')
-
-  /*
-   * Hot-update navigation method
-   */
-  const updateNavigation = (path, content) => {
-    if (typeof path === 'string') {
-      path = path.slice(0, 1) === '/' ? path.slice(1).split('/') : path.split('/')
-    }
-    setNavigation(set(navigation, path, content))
-  }
-
-  /*
-   * Helper method to get title from navigation structure
-   */
-  const getTitle = (slug) => get(navigation, slug).__title
-
-  /*
-   * Helper method to construct breadcrumb from navigation structure
-   */
-  const getBreadcrumb = (slug) => [get(navigation, slug).__title, `/${slug}`]
+export const useNavigation = (path = [], locale = 'en') => {
+  // Creat crumbs array
+  const crumbs = createCrumbs(path)
+  const sections = createSections()
 
   return {
-    // State
-    navigation,
-    setNavigation,
-    slug,
-    setSlug,
-    updateNavigation,
-
-    // Navigation
-    getTitle,
-    getBreadcrumb,
+    path,
+    slug: path.join('/'),
+    crumbs,
+    sections,
+    nav:
+      path.length > 1
+        ? get(pbn[locale], path[0])
+        : path.length === 0
+        ? sections
+        : pbn[locale][path[0]],
+    title: crumbs.length > 0 ? crumbs.slice(-1)[0].t : '',
   }
 }

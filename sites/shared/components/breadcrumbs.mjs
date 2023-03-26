@@ -12,7 +12,7 @@ export const Breadcrumbs = ({ crumbs, title }) =>
         </li>
         {crumbs.map((crumb) => (
           <li key={crumb.s}>
-            <Link href={crumb.s} title={crumb.t} className="text-secondary-focus font-bold">
+            <Link href={`/${crumb.s}`} title={crumb.t} className="text-secondary-focus font-bold">
               {crumb.t}
             </Link>
           </li>

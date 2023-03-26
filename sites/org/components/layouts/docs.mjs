@@ -1,33 +1,26 @@
+// Hooks
 import { useRouter } from 'next/router'
-import { AsideNavigation } from 'site/components/navigation/aside.mjs'
+// Components
+import Link from 'next/link'
+import { AsideNavigation } from 'shared/components/navigation/aside.mjs'
+import { ThemePicker } from 'shared/components/theme-picker/index.mjs'
 import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
+import { HomeIcon } from 'shared/components/icons.mjs'
+import { useState, useEffect } from 'react'
 
-export const DocsLayout = ({ app, title = false, children = [], crumbs = [] }) => {
-  const router = useRouter()
-  const slug = router.asPath.slice(1)
+export const ns = []
 
-  return (
-    <div className="m-auto flex flex-row justify-start">
-      <section
-        className={`
-        w-0 lg:w-1/3 flex flex-row justify-end
-        border-0 py-20
-        md:px-4
-        bg-base-200
-        shrink-0
-        md:border-r md:border-base-300
-        lg:block
-        `}
-      >
-        <AsideNavigation app={app} slug={slug} />
-      </section>
-      <section className="py-8 lg:py-16 px-6 xl:pl-8 2xl:pl-16 w-full max-w-2xl">
-        <div>
-          <Breadcrumbs crumbs={crumbs} />
-          {title && <h1>{title}</h1>}
-          {children}
+export const DocsLayout = ({ app, children = [], title }) => (
+  <div className="grid grid-cols-4 m-auto justify-center place-items-stretch">
+    <AsideNavigation app={app} />
+    <section className="col-span-4 lg:col-span-3 py-24 px-4 lg:pl-8 bg-base-50">
+      {title && (
+        <div className="xl:pl-4">
+          <Breadcrumbs crumbs={app.state.crumbs} title={title} />
+          <h1 className="break-words">{title}</h1>
         </div>
-      </section>
-    </div>
-  )
-}
+      )}
+      {children}
+    </section>
+  </div>
+)

@@ -6,10 +6,11 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { mdxLoader } from 'shared/mdx/loader.mjs'
 import { jargon } from 'site/jargon.mjs'
 import { mdxPaths } from 'site/prebuild/mdx.paths.mjs'
+import mdxMeta from 'site/prebuild/mdx.js'
 // Components
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { TocWrapper } from 'shared/components/wrappers/toc.mjs'
-import { PageWrapper } from 'site/components/wrappers/page.mjs'
+import { PageWrapper } from 'shared/components/wrappers/page.mjs'
 import { components } from 'site/components/mdx/index.mjs'
 
 const MdxPage = (props) => {
@@ -76,13 +77,13 @@ export default MdxPage
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticProps({ params, locale }) {
+  const path = ['docs', ...params.mdxslug]
   const { mdx, intro, toc, frontmatter } = await mdxLoader(
     locale,
     'org',
     ['docs', ...params.mdxslug].join('/'),
     jargon[locale]
   )
-  const { title = 'FIXME: Please give this page a title' } = frontmatter
 
   return {
     props: {
@@ -90,11 +91,8 @@ export async function getStaticProps({ params, locale }) {
       toc,
       intro: intro.join(' '),
       page: {
-        slug: params.mdxslug.join('/'),
-        path: '/' + params.mdxslug.join('/'),
-        slugArray: params.mdxslug,
-        title,
-        order: frontmatter.order ? frontmatter.order + title : title,
+        path, // path to page as array
+        ...mdxMeta[locale][path.join('/')],
       },
       params,
       ...(await serverSideTranslations(locale)),
