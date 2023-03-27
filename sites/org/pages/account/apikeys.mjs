@@ -11,6 +11,7 @@ import { ns as apikeysNs } from 'site/components/account/apikeys.mjs'
 
 // Translation namespaces used on this page
 const namespaces = [...new Set([...apikeysNs, ...authNs, ...pageNs])]
+console.log(namespaces)
 
 /*
  * Some things should never generated as SSR
@@ -49,6 +50,9 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, namespaces)),
+      page: {
+        path: ['account', 'apikeys'],
+      },
     },
   }
 }

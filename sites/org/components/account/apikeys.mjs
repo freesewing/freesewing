@@ -276,8 +276,8 @@ export const Apikeys = ({ app }) => {
 
   useEffect(() => {
     const getApikeys = async () => {
-      const allKeys = await backend.getApikeys()
-      if (allKeys) setKeys(allKeys)
+      const result = await backend.getApikeys()
+      if (result.success) setKeys(result.data.apikeys)
     }
     getApikeys()
   }, [added])
@@ -294,12 +294,14 @@ export const Apikeys = ({ app }) => {
           {keys.map((apikey) => (
             <Apikey {...{ app, apikey, t, backend, keyAdded }} key={apikey.id} />
           ))}
-          <button
-            className="btn btn-primary w-full capitalize mt-4"
-            onClick={() => setGenerate(true)}
-          >
-            {t('newApikey')}
-          </button>
+          <div className="max-w-sm">
+            <button
+              className="btn btn-primary w-full capitalize mt-4"
+              onClick={() => setGenerate(true)}
+            >
+              {t('newApikey')}
+            </button>
+          </div>
           <BackToAccountButton loading={app.state.loading} />
           {account.control < 5 ? (
             <Popout tip>

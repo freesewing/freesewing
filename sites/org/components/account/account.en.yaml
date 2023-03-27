@@ -23,6 +23,7 @@ compare: Metricset comparison
 consent: Consent & Privacy
 control: Control
 imperial: Units
+units: Units
 apikeys: API Keys
 newsletter: Newsletter subscription
 password: Password

@@ -1,7 +1,9 @@
 import Head from 'next/head'
-import { Header } from 'site/components/header/index.mjs'
-import { Footer } from 'shared/components/footer/index.mjs'
-import { Search } from 'site/components/search.mjs'
+import { Header, ns as headerNs } from 'site/components/header/index.mjs'
+import { Footer, ns as footerNs } from 'shared/components/footer/index.mjs'
+import { Search, ns as searchNs } from 'site/components/search.mjs'
+
+export const ns = [...new Set([...headerNs, ...footerNs, ...searchNs])]
 
 export const LayoutWrapper = ({ app, children = [], search, setSearch, noSearch = false }) => {
   return (

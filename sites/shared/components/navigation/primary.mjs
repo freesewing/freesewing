@@ -7,7 +7,7 @@ import {
   DocsIcon,
   RssIcon,
   ShowcaseIcon,
-  AccountIcon,
+  UserIcon,
 } from 'shared/components/icons.mjs'
 import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
 
@@ -22,7 +22,8 @@ const icons = {
   blog: (className = '') => <RssIcon className={className} stroke={3} />,
   showcase: (className = '') => <ShowcaseIcon className={className} />,
   docs: (className = '') => <DocsIcon className={className} />,
-  account: (className = '') => <AccountIcon className={className} />,
+  account: (className = '') => <UserIcon className={className} />,
+  Account: (className = '') => <UserIcon className={className} />,
 }
 
 /* helper method to order nav entries */
@@ -171,7 +172,6 @@ export const Icons = ({
   flex flex-col items-center`,
   linkStyle = {},
 }) => {
-  console.log(app.state)
   if (!app.state?.nav) return null
 
   const output = []
