@@ -21,6 +21,11 @@ const sitePages = (locale, t = false) => {
   // Handle t not being present
   if (!t) t = (string) => string
   const pages = {
+    profile: {
+      t: t('yourProfile'),
+      s: 'profile',
+      h: 1,
+    },
     account: {
       t: t('account'),
       s: 'account',

@@ -36,15 +36,14 @@ const AccountPage = (props) => {
   const crumbs = [[t('profile'), 'profile']]
 
   return (
-    <PageWrapper app={app} title={t('yourProfile')} crumbs={crumbs}>
+    <PageWrapper app={app}>
       <DynamicAuthWrapper app={app}>
         <DynamicAccountProfile app={app} />
+        <Popout link compact>
+          <PageLink href={`/users/${account.username}`} txt={`/users/${account.username}`} />
+        </Popout>
       </DynamicAuthWrapper>
-      <Popout link compact>
-        <PageLink href={`/users/${account.username}`} txt={`/users/${account.username}`} />
-      </Popout>
       <BackToAccountButton />
-      <pre>{JSON.stringify(app.toasts, null, 2)}</pre>
     </PageWrapper>
   )
 }
@@ -55,6 +54,9 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, namespaces)),
+      page: {
+        path: ['profile'],
+      },
     },
   }
 }
