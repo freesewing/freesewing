@@ -10,7 +10,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { validateEmail, validateTld } from 'shared/utils.mjs'
 // Components
 import Link from 'next/link'
-import { PageWrapper } from 'site/components/wrappers/page.mjs'
+import { PageWrapper } from 'shared/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { SusiWrapper } from 'site/components/wrappers/susi.mjs'
 import { EmailIcon, KeyIcon, RightIcon, WarningIcon } from 'shared/components/icons.mjs'

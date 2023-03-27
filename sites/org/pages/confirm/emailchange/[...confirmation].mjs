@@ -9,11 +9,11 @@ import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Link from 'next/link'
 // Components
-import { PageWrapper, ns as pageNs } from 'site/components/wrappers/page.mjs'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
 import { Robot } from 'shared/components/robot/index.mjs'
-import { BackToAccountButton } from 'site/components/account/shared.mjs'
+import { BackToAccountButton } from 'shared/components/account/shared.mjs'
 import { HelpIcon } from 'shared/components/icons.mjs'
 
 // Translation namespaces used on this page

@@ -285,7 +285,7 @@ export const Apikeys = ({ app }) => {
   const keyAdded = () => setAdded(added + 1)
 
   return (
-    <div>
+    <div className="max-w-xl xl:pl-4">
       {generate ? (
         <NewKey {...{ app, t, setGenerate, backend, toast, keyAdded }} />
       ) : (
@@ -294,14 +294,12 @@ export const Apikeys = ({ app }) => {
           {keys.map((apikey) => (
             <Apikey {...{ app, apikey, t, backend, keyAdded }} key={apikey.id} />
           ))}
-          <div className="max-w-sm">
-            <button
-              className="btn btn-primary w-full capitalize mt-4"
-              onClick={() => setGenerate(true)}
-            >
-              {t('newApikey')}
-            </button>
-          </div>
+          <button
+            className="btn btn-primary w-full capitalize mt-4"
+            onClick={() => setGenerate(true)}
+          >
+            {t('newApikey')}
+          </button>
           <BackToAccountButton loading={app.state.loading} />
           {account.control < 5 ? (
             <Popout tip>

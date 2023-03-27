@@ -50,7 +50,7 @@ export const BioSettings = ({ app, title = false, welcome = false }) => {
   const tabProps = { activeTab, setActiveTab, t }
 
   return (
-    <>
+    <div className="max-w-xl xl:pl-4">
       {title ? <h1 className="text-4xl">{t('bioTitle')}</h1> : null}
       <div className="tabs w-full">
         <Tab id="edit" {...tabProps} />
@@ -99,6 +99,6 @@ export const BioSettings = ({ app, title = false, welcome = false }) => {
           ) : null}
         </>
       ) : null}
-    </>
+    </div>
   )
 }

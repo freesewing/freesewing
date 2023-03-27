@@ -5,10 +5,10 @@ import { useTranslation } from 'next-i18next'
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
-import { PageWrapper, ns as pageNs } from 'site/components/wrappers/page.mjs'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
-import { ns as authNs } from 'site/components/wrappers/auth/index.mjs'
-import { ns as imgNs } from 'site/components/account/img.mjs'
+import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
+import { ns as imgNs } from 'shared/components/account/img.mjs'
 
 // Translation namespaces used on this page
 const namespaces = [...new Set([...imgNs, ...authNs, ...pageNs])]
@@ -18,11 +18,11 @@ const namespaces = [...new Set([...imgNs, ...authNs, ...pageNs])]
  * So for these, we run a dynamic import and disable SSR rendering
  */
 const DynamicAuthWrapper = dynamic(
-  () => import('site/components/wrappers/auth/index.mjs').then((mod) => mod.AuthWrapper),
+  () => import('shared/components/wrappers/auth/index.mjs').then((mod) => mod.AuthWrapper),
   { ssr: false }
 )
 const DynamicImg = dynamic(
-  () => import('site/components/account/img.mjs').then((mod) => mod.ImgSettings),
+  () => import('shared/components/account/img.mjs').then((mod) => mod.ImgSettings),
   { ssr: false }
 )
 

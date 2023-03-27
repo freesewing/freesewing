@@ -116,7 +116,7 @@ export const ConsentSettings = ({ app, title = false }) => {
   )
 
   return (
-    <>
+    <div className="max-w-xl xl:pl-4">
       {title ? <h2 className="text-4xl">{t('privacyMatters')}</h2> : null}
       <p>{t('compliant')}</p>
       <p>{t('consentWhyAnswer')}</p>
@@ -152,6 +152,6 @@ export const ConsentSettings = ({ app, title = false }) => {
           FreeSewing Privacy Notice
         </Link>
       </p>
-    </>
+    </div>
   )
 }

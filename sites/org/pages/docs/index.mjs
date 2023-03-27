@@ -4,7 +4,7 @@ import { useApp } from 'shared/hooks/use-app.mjs'
 import Head from 'next/head'
 import { mdxLoader } from 'shared/mdx/loader.mjs'
 // Components
-import { PageWrapper } from 'site/components/wrappers/page.mjs'
+import { PageWrapper } from 'shared/components/wrappers/page.mjs'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { ReadMore } from 'shared/components/mdx/read-more.mjs'
 import { jargon } from 'site/jargon.mjs'

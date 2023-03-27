@@ -5,9 +5,9 @@ import { useTranslation } from 'next-i18next'
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
-import { PageWrapper, ns as pageNs } from 'site/components/wrappers/page.mjs'
-import { ns as authNs } from 'site/components/wrappers/auth/index.mjs'
-import { ns as emailNs } from 'site/components/account/email.mjs'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
+import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
+import { ns as emailNs } from 'shared/components/account/email.mjs'
 
 // Translation namespaces used on this page
 const namespaces = [...new Set([...emailNs, ...authNs, ...pageNs])]
@@ -17,12 +17,12 @@ const namespaces = [...new Set([...emailNs, ...authNs, ...pageNs])]
  * So for these, we run a dynamic import and disable SSR rendering
  */
 const DynamicAuthWrapper = dynamic(
-  () => import('site/components/wrappers/auth/index.mjs').then((mod) => mod.AuthWrapper),
+  () => import('shared/components/wrappers/auth/index.mjs').then((mod) => mod.AuthWrapper),
   { ssr: false }
 )
 
 const DynamicEmail = dynamic(
-  () => import('site/components/account/email.mjs').then((mod) => mod.EmailSettings),
+  () => import('shared/components/account/email.mjs').then((mod) => mod.EmailSettings),
   { ssr: false }
 )
 

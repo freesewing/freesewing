@@ -5,9 +5,9 @@ import { useTranslation } from 'next-i18next'
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
-import { PageWrapper } from 'site/components/wrappers/page.mjs'
+import { PageWrapper } from 'shared/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
-import { ns as authNs } from 'site/components/wrappers/auth/index.mjs'
+import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
 
 // Translation namespaces used on this page
 const namespaces = [...new Set(['account', ...authNs])]
@@ -17,12 +17,12 @@ const namespaces = [...new Set(['account', ...authNs])]
  * So for these, we run a dynamic import and disable SSR rendering
  */
 const DynamicAuthWrapper = dynamic(
-  () => import('site/components/wrappers/auth/index.mjs').then((mod) => mod.AuthWrapper),
+  () => import('shared/components/wrappers/auth/index.mjs').then((mod) => mod.AuthWrapper),
   { ssr: false }
 )
 
 const DynamicControl = dynamic(
-  () => import('site/components/account/control.mjs').then((mod) => mod.ControlSettings),
+  () => import('shared/components/account/control.mjs').then((mod) => mod.ControlSettings),
   { ssr: false }
 )
 

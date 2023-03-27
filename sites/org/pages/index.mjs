@@ -5,7 +5,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 //import { useTranslation } from 'next-i18next'
 import Head from 'next/head'
 // Components
-import { PageWrapper } from 'site/components/wrappers/page.mjs'
+import { PageWrapper } from 'shared/components/wrappers/page.mjs'
 import { Popout } from 'shared/components/popout.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { PageLink } from 'shared/components/page-link.mjs'

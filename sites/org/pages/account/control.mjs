@@ -5,9 +5,9 @@ import { useTranslation } from 'next-i18next'
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
-import { PageWrapper, ns as pageNs } from 'site/components/wrappers/page.mjs'
-import { ns as authNs } from 'site/components/wrappers/auth/index.mjs'
-import { ns as controlNs } from 'site/components/account/control.mjs'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
+import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
+import { ns as controlNs } from 'shared/components/account/control.mjs'
 
 // Translation namespaces used on this page
 const namespaces = [...new Set([...controlNs, ...authNs, ...pageNs])]
@@ -17,25 +17,21 @@ const namespaces = [...new Set([...controlNs, ...authNs, ...pageNs])]
  * So for these, we run a dynamic import and disable SSR rendering
  */
 const DynamicAuthWrapper = dynamic(
-  () => import('site/components/wrappers/auth/index.mjs').then((mod) => mod.AuthWrapper),
+  () => import('shared/components/wrappers/auth/index.mjs').then((mod) => mod.AuthWrapper),
   { ssr: false }
 )
 
 const DynamicControl = dynamic(
-  () => import('site/components/account/control.mjs').then((mod) => mod.ControlSettings),
+  () => import('shared/components/account/control.mjs').then((mod) => mod.ControlSettings),
   { ssr: false }
 )
 
 const AccountPage = (props) => {
   const app = useApp(props)
   const { t } = useTranslation(namespaces)
-  const crumbs = [
-    [t('yourAccount'), '/account'],
-    [t('control'), '/account/control'],
-  ]
 
   return (
-    <PageWrapper app={app} title={t('control')} crumbs={crumbs}>
+    <PageWrapper app={app} itle={t('control')}>
       <DynamicAuthWrapper app={app}>
         <DynamicControl app={app} title />
       </DynamicAuthWrapper>
@@ -49,6 +45,9 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, namespaces)),
+      page: {
+        path: ['account', 'control'],
+      },
     },
   }
 }

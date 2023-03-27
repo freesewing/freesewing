@@ -5,9 +5,9 @@ import { useTranslation } from 'next-i18next'
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
-import { PageWrapper, ns as pageNs } from 'site/components/wrappers/page.mjs'
-import { ns as authNs } from 'site/components/wrappers/auth/index.mjs'
-import { ns as mfaNs } from 'site/components/account/mfa.mjs'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
+import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
+import { ns as mfaNs } from 'shared/components/account/mfa.mjs'
 
 // Translation namespaces used on this page
 const namespaces = [...new Set([...mfaNs, ...authNs, ...pageNs])]
@@ -17,12 +17,12 @@ const namespaces = [...new Set([...mfaNs, ...authNs, ...pageNs])]
  * So for these, we run a dynamic import and disable SSR rendering
  */
 const DynamicAuthWrapper = dynamic(
-  () => import('site/components/wrappers/auth/index.mjs').then((mod) => mod.AuthWrapper),
+  () => import('shared/components/wrappers/auth/index.mjs').then((mod) => mod.AuthWrapper),
   { ssr: false }
 )
 
 const DynamicMfa = dynamic(
-  () => import('site/components/account/mfa.mjs').then((mod) => mod.MfaSettings),
+  () => import('shared/components/account/mfa.mjs').then((mod) => mod.MfaSettings),
   { ssr: false }
 )
 

@@ -1,7 +1,7 @@
 // Hooks
 import { useApp } from 'shared/hooks/use-app.mjs'
 // Components
-import { PageWrapper } from 'site/components/wrappers/page.mjs'
+import { PageWrapper } from 'shared/components/wrappers/page.mjs'
 import { Popout } from 'shared/components/popout.mjs'
 
 const TypographyPage = (props) => {

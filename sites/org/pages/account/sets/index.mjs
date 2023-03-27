@@ -5,9 +5,9 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Hooks
 import { useApp } from 'shared/hooks/use-app.mjs'
 // Components
-import { PageWrapper, ns as pageNs } from 'site/components/wrappers/page.mjs'
-import { ns as authNs } from 'site/components/wrappers/auth/index.mjs'
-import { ns as apikeysNs } from 'site/components/account/apikeys.mjs'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
+import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
+import { ns as apikeysNs } from 'shared/components/account/apikeys.mjs'
 
 // Translation namespaces used on this page
 const namespaces = [...new Set([...apikeysNs, ...authNs, ...pageNs])]
@@ -17,12 +17,12 @@ const namespaces = [...new Set([...apikeysNs, ...authNs, ...pageNs])]
  * So for these, we run a dynamic import and disable SSR rendering
  */
 const DynamicAuthWrapper = dynamic(
-  () => import('site/components/wrappers/auth/index.mjs').then((mod) => mod.AuthWrapper),
+  () => import('shared/components/wrappers/auth/index.mjs').then((mod) => mod.AuthWrapper),
   { ssr: false }
 )
 
 const DynamicApikeys = dynamic(
-  () => import('site/components/account/apikeys.mjs').then((mod) => mod.Apikeys),
+  () => import('shared/components/account/apikeys.mjs').then((mod) => mod.Apikeys),
   { ssr: false }
 )
 
