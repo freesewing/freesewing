@@ -37,7 +37,7 @@ export const NewsletterSettings = ({ app, title = false, welcome = false }) => {
       : '/docs/guide'
 
   return (
-    <>
+    <div className="max-w-xl">
       {title ? <h1 className="text-4xl">{t('newsletterTitle')}</h1> : null}
       {['yes', 'no'].map((val) => (
         <Choice val={val} t={t} update={update} current={selection} bool key={val}>
@@ -75,7 +75,7 @@ export const NewsletterSettings = ({ app, title = false, welcome = false }) => {
       ) : (
         <BackToAccountButton loading={app.state.loading} />
       )}
-    </>
+    </div>
   )
 }
 

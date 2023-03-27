@@ -37,7 +37,7 @@ export const ImperialSettings = ({ app, title = false, welcome = false }) => {
       : '/docs/guide'
 
   return (
-    <>
+    <div className="max-w-xl">
       {title ? <h1 className="text-4xl">{t('unitsTitle')}</h1> : <h1></h1>}
       {['metric', 'imperial'].map((val) => (
         <Choice
@@ -79,6 +79,6 @@ export const ImperialSettings = ({ app, title = false, welcome = false }) => {
       ) : (
         <BackToAccountButton loading={app.state.loading} />
       )}
-    </>
+    </div>
   )
 }

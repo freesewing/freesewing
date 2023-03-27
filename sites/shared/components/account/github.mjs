@@ -29,7 +29,7 @@ export const GithubSettings = ({ app, title = false, welcome = false }) => {
   }
 
   return (
-    <>
+    <div className="max-w-xl">
       {title ? <h2 className="text-4xl">{t('githubTitle')}</h2> : null}
       <div className="flex flex-row items-center mt-4">
         <input
@@ -42,6 +42,6 @@ export const GithubSettings = ({ app, title = false, welcome = false }) => {
       </div>
       <SaveSettingsButton app={app} btnProps={{ onClick: save }} />
       {!welcome && <BackToAccountButton loading={app.state.loading} />}
-    </>
+    </div>
   )
 }

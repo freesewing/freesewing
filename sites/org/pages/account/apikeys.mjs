@@ -1,6 +1,5 @@
 // Hooks
 import { useApp } from 'shared/hooks/use-app.mjs'
-import { useTranslation } from 'next-i18next'
 // Dependencies
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -29,14 +28,9 @@ const DynamicApikeys = dynamic(
 
 const AccountPage = (props) => {
   const app = useApp(props)
-  const { t } = useTranslation(namespaces)
-  const crumbs = [
-    [t('yourAccount'), '/account'],
-    [t('apikeys'), '/account/apikeys'],
-  ]
 
   return (
-    <PageWrapper app={app} title={t('apikeys')} crumbs={crumbs}>
+    <PageWrapper app={app}>
       <DynamicAuthWrapper app={app}>
         <DynamicApikeys app={app} />
       </DynamicAuthWrapper>

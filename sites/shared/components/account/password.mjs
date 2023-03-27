@@ -33,7 +33,7 @@ export const PasswordSettings = ({ app, title = false, welcome = false }) => {
   }
 
   return (
-    <>
+    <div className="max-w-xl">
       {title ? <h2 className="text-4xl">{t('passwordTitle')}</h2> : null}
       <div className="flex flex-row items-center mt-4 gap-2">
         <input
@@ -65,6 +65,6 @@ export const PasswordSettings = ({ app, title = false, welcome = false }) => {
           </p>
         </Popout>
       )}
-    </>
+    </div>
   )
 }

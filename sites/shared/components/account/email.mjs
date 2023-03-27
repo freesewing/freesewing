@@ -33,7 +33,7 @@ export const EmailSettings = ({ app, title = false }) => {
   const valid = (validateEmail(email) && validateTld(email)) || false
 
   return (
-    <>
+    <div className="max-w-xl">
       {title ? <h2 className="text-4xl">{t('emailTitle')}</h2> : null}
       {changed ? (
         <Popout note>
@@ -60,6 +60,6 @@ export const EmailSettings = ({ app, title = false }) => {
         </>
       )}
       <BackToAccountButton loading={app.state.loading} />
-    </>
+    </div>
   )
 }

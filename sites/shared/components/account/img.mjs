@@ -44,7 +44,7 @@ export const ImgSettings = ({ app, title = false, welcome = false }) => {
   const nextHref = '/docs/guide'
 
   return (
-    <>
+    <div className="max-w-xl">
       {title ? <h2 className="text-4xl">{t('imgTitle')}</h2> : null}
       <div>
         {!welcome || img !== false ? (
@@ -96,6 +96,6 @@ export const ImgSettings = ({ app, title = false, welcome = false }) => {
           <BackToAccountButton loading={app.state.loading} />
         </>
       )}
-    </>
+    </div>
   )
 }

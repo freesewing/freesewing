@@ -57,7 +57,7 @@ export const UsernameSettings = ({ app, title = false, welcome = false }) => {
   }
 
   return (
-    <>
+    <div className="max-w-xl">
       {title ? <h1 className="text-4xl">{t('usernameTitle')}</h1> : null}
       <div className="flex flex-row items-center">
         <input
@@ -114,6 +114,6 @@ export const UsernameSettings = ({ app, title = false, welcome = false }) => {
       ) : (
         <BackToAccountButton loading={app.state.loading} />
       )}
-    </>
+    </div>
   )
 }

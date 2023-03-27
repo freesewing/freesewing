@@ -33,7 +33,7 @@ export const ControlSettings = ({ app, title = false, welcome = false }) => {
     welcomeSteps[selection].length > 1 ? '/welcome/' + welcomeSteps[selection][1] : '/docs/guide'
 
   return (
-    <>
+    <div className="max-w-xl">
       {title ? <h1 className="text-4xl">{t('controlTitle')}</h1> : null}
       {[1, 2, 3, 4, 5].map((val) => {
         if (selection === 1 && val > 2) return null
@@ -74,6 +74,6 @@ export const ControlSettings = ({ app, title = false, welcome = false }) => {
       ) : (
         <BackToAccountButton loading={app.state.loading} />
       )}
-    </>
+    </div>
   )
 }

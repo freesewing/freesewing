@@ -1,6 +1,5 @@
 // Hooks
 import { useApp } from 'shared/hooks/use-app.mjs'
-import { useTranslation } from 'next-i18next'
 // Dependencies
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -28,14 +27,9 @@ const DynamicConsent = dynamic(
 
 const AccountPage = (props) => {
   const app = useApp(props)
-  const { t } = useTranslation(namespaces)
-  const crumbs = [
-    [t('account:yourAccount'), '/account'],
-    [t('consent'), '/account/consent'],
-  ]
 
   return (
-    <PageWrapper app={app} title={t('account:consent')} crumbs={crumbs}>
+    <PageWrapper app={app}>
       <DynamicAuthWrapper app={app}>
         <DynamicConsent app={app} title />
       </DynamicAuthWrapper>

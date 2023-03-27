@@ -80,7 +80,7 @@ export const MfaSettings = ({ app, title = false, welcome = false }) => {
   if (enable) titleText = t('mfaSetup')
 
   return (
-    <>
+    <div className="max-w-xl">
       {title ? <h2 className="text-4xl">{titleText}</h2> : null}
       {enable ? (
         <>
@@ -146,6 +146,6 @@ export const MfaSettings = ({ app, title = false, welcome = false }) => {
         )}
       </div>
       {!welcome && <BackToAccountButton loading={app.state.loading} />}
-    </>
+    </div>
   )
 }

@@ -1,6 +1,5 @@
 // Hooks
 import { useApp } from 'shared/hooks/use-app.mjs'
-import { useTranslation } from 'next-i18next'
 // Dependencies
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -28,14 +27,9 @@ const DynamicNewsletter = dynamic(
 
 const AccountPage = (props) => {
   const app = useApp(props)
-  const { t } = useTranslation(namespaces)
-  const crumbs = [
-    [t('yourAccount'), '/account'],
-    [t('newsletter'), '/account/newsletter'],
-  ]
 
   return (
-    <PageWrapper app={app} title={t('newsletter')} crumbs={crumbs}>
+    <PageWrapper app={app}>
       <DynamicAuthWrapper app={app}>
         <DynamicNewsletter app={app} title />
       </DynamicAuthWrapper>
@@ -49,6 +43,9 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, namespaces)),
+      page: {
+        path: ['account', 'newsletter'],
+      },
     },
   }
 }

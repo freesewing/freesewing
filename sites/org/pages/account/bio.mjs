@@ -1,6 +1,5 @@
 // Hooks
 import { useApp } from 'shared/hooks/use-app.mjs'
-import { useTranslation } from 'next-i18next'
 // Dependencies
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -28,14 +27,9 @@ const DynamicBio = dynamic(
 
 const AccountPage = (props) => {
   const app = useApp(props)
-  const { t } = useTranslation(namespaces)
-  const crumbs = [
-    [t('yourAccount'), '/account'],
-    [t('bio'), '/account/bio'],
-  ]
 
   return (
-    <PageWrapper app={app} title={t('bio')} crumbs={crumbs}>
+    <PageWrapper app={app}>
       <DynamicAuthWrapper app={app}>
         <DynamicBio app={app} title />
       </DynamicAuthWrapper>

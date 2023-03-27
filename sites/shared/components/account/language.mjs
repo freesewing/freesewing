@@ -33,7 +33,7 @@ export const LanguageSettings = ({ app, title = false }) => {
   }
 
   return (
-    <>
+    <div className="max-w-xl">
       {title ? <h2 className="text-4xl">{t('languageTitle')}</h2> : null}
       {conf.languages.map((val) => (
         <Choice val={val} t={t} update={update} current={language} key={val}>
@@ -41,6 +41,6 @@ export const LanguageSettings = ({ app, title = false }) => {
         </Choice>
       ))}
       <BackToAccountButton loading={app.state.loading} />
-    </>
+    </div>
   )
 }
