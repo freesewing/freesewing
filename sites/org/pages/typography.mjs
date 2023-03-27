@@ -1,8 +1,13 @@
 // Hooks
 import { useApp } from 'shared/hooks/use-app.mjs'
+// Dependencies
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
-import { PageWrapper } from 'shared/components/wrappers/page.mjs'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Popout } from 'shared/components/popout.mjs'
+
+// Translation namespaces used on this page
+const namespaces = [...new Set(pageNs)]
 
 const TypographyPage = (props) => {
   const app = useApp(props)
@@ -15,8 +20,8 @@ const TypographyPage = (props) => {
   )
 
   return (
-    <PageWrapper app={{ ...app, navigation: null }} title="Typography">
-      <div className="text-primary mdx max-w-prose text-base-content max-w-prose text-base">
+    <PageWrapper app={app}>
+      <div className="text-primary mdx max-w-prose text-base-content max-w-prose text-base xl:pl-4">
         <p>This typography page shows an overview of different elements and how they are styled.</p>
         <p>It&apos;s a good starting point for theme development.</p>
         <h2>Headings (this is h2)</h2>
@@ -91,3 +96,14 @@ const TypographyPage = (props) => {
 }
 
 export default TypographyPage
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, namespaces)),
+      page: {
+        path: ['typography'],
+      },
+    },
+  }
+}

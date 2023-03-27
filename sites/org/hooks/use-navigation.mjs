@@ -26,6 +26,11 @@ const sitePages = (locale, t = false) => {
       s: 'profile',
       h: 1,
     },
+    typography: {
+      t: 'Typography', // Not translated, this is a developer page
+      s: 'typography',
+      h: 1,
+    },
     account: {
       t: t('account'),
       s: 'account',
