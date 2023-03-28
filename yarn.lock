@@ -2913,10 +2913,10 @@
     ora "^5.1.0"
     update-notifier "^5.0.1"
 
-"@maizzle/framework@4.4.0":
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/@maizzle/framework/-/framework-4.4.0.tgz#144f37fc64685abae04abffa199d01e2af406274"
-  integrity sha512-eJwkn7r6u2Jsyw8u5k602Sjf1gHYCh+qhV3wCvOxFVU+3k8sr+KaErGIOwKKGEIXn4Z/Dx8d4l64cTuYdgtoCg==
+"@maizzle/framework@4.4.2":
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/@maizzle/framework/-/framework-4.4.2.tgz#6808d673a358611882cdf9acf38d3fdead91a59d"
+  integrity sha512-9B0KuXbKL8Vq/nUtcO5vuS2/R8Zh7Mhtae2RrLZ2ocQmR5jkohGgX7GVhV0UwBp4F2dCh4Cei3lN6R3pJGbu4Q==
   dependencies:
     "@maizzle/cli" "^1.5.1"
     autoprefixer "^10.4.14"
