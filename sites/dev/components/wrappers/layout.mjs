@@ -3,6 +3,8 @@ import { Header } from 'site/components/header.mjs'
 import { Footer } from 'shared/components/footer/index.mjs'
 import { Search } from 'site/components/search.mjs'
 
+export const ns = []
+
 export const LayoutWrapper = ({ app, children = [], search, setSearch, noSearch = false }) => {
   return (
     <div
