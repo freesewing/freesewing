@@ -15,12 +15,16 @@ import { freeSewingConfig as conf } from 'site/freesewing.config.mjs'
  * Note: Set 'c' to set the control level to hide things from users
  */
 
-const ns = ['account']
+const ns = ['account', 'sections']
 
 const sitePages = (locale, t = false) => {
   // Handle t not being present
   if (!t) t = (string) => string
   const pages = {
+    account: {
+      t: t('sections:account'),
+      s: 'account',
+    },
     profile: {
       t: t('yourProfile'),
       s: 'profile',
@@ -30,10 +34,6 @@ const sitePages = (locale, t = false) => {
       t: 'Typography', // Not translated, this is a developer page
       s: 'typography',
       h: 1,
-    },
-    account: {
-      t: t('account'),
-      s: 'account',
     },
   }
   for (const section in conf.account.fields) {

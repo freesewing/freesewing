@@ -16,7 +16,7 @@ const locales = ['en', 'es', 'de', 'fr', 'nl']
  * code-adjacent translation source files
  */
 const sitesFolder = path.join(fileURLToPath(import.meta.url), '..', '..', '..')
-const folders = {
+export const folders = {
   org: [path.join(sitesFolder, 'org', 'pages'), path.join(sitesFolder, 'org', 'components')],
   dev: [path.join(sitesFolder, 'dev', 'pages'), path.join(sitesFolder, 'dev', 'components')],
   shared: [path.join(sitesFolder, 'shared', 'components')],
@@ -79,12 +79,12 @@ const languageAndNamespaceFromFilename = (file) => {
 /*
  * Helper method to load a YAML file from disk
  */
-const loadYaml = (file) => {
+export const loadYaml = (file, complain = true) => {
   let data
   try {
     data = yaml.load(fs.readFileSync(file, 'utf-8'))
   } catch (err) {
-    console.log(err)
+    if (complain) console.log(err)
   }
 
   return data

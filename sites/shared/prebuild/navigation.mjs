@@ -1,9 +1,24 @@
 import path from 'path'
 import fs from 'fs'
 import set from 'lodash.set'
+import { loadYaml, folders } from './i18n.mjs'
 
 // Some arbitrary future time
 const future = new Date('10-12-2026').getTime()
+
+// We need to load the translation for blog + showcase
+const loadTranslation = (locale) => {
+  const file = `${folders.shared}/navigation/sections.${locale}.yaml`
+  let data
+  try {
+    data = loadYaml(`${folders.shared}/navigation/sections.${locale}.yaml`, false)
+  } catch (err) {
+    data = {}
+  }
+  if (!data) data = {}
+
+  return data
+}
 
 /*
  * Main method that does what needs doing
@@ -20,6 +35,7 @@ export const prebuildNavigation = (mdxPages, strapiPosts, site) => {
    */
   const nav = {}
   for (const lang in mdxPages) {
+    const translations = loadTranslation(lang)
     nav[lang] = {}
 
     // Handle MDX content
@@ -37,10 +53,10 @@ export const prebuildNavigation = (mdxPages, strapiPosts, site) => {
     // Handle strapi content
     for (const type in strapiPosts) {
       set(nav, [lang, type], {
-        t: type,
+        t: translations[type] ? translations[type] : type,
         l: type,
         s: type,
-        o: type,
+        o: translations[type] ? translations[type] : type,
       })
       for (const [slug, page] of Object.entries(strapiPosts[type][lang])) {
         const chunks = slug.split('/')

@@ -1,17 +1,19 @@
 // Hooks
 import { useApp } from 'shared/hooks/use-app.mjs'
 // Dependencies
-import Head from 'next/head'
 import { mdxLoader } from 'shared/mdx/loader.mjs'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
-import { PageWrapper } from 'shared/components/wrappers/page.mjs'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { ReadMore } from 'shared/components/mdx/read-more.mjs'
 import { jargon } from 'site/jargon.mjs'
 
-const DocsPage = ({ title, mdx, bugsnag }) => {
-  const app = useApp({ bugsnag })
-  const fullTitle = title + ' - FreeSewing.org'
+// Translation namespaces used on this page
+const namespaces = [...new Set(['docs', ...pageNs])]
+
+const DocsPage = (props) => {
+  const app = useApp(props)
 
   // We don't need all MDX components here, just ReadMore
   const components = {
@@ -19,15 +21,11 @@ const DocsPage = ({ title, mdx, bugsnag }) => {
   }
 
   return (
-    <PageWrapper app={app} title={title}>
-      <Head>
-        <title>{fullTitle}</title>
-      </Head>
+    <PageWrapper app={app}>
       <div className="w-full"></div>
     </PageWrapper>
   )
 }
-//<MdxWrapper mdx={mdx} app={app} components={components} />
 
 export default DocsPage
 
@@ -43,13 +41,15 @@ export default DocsPage
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticProps({ locale }) {
-  const { mdx, frontmatter } = await mdxLoader(locale, 'org', ['docs'], jargon[locale])
-  const { title = 'FIXME: Please give this page a title' } = frontmatter
+  const { mdx } = await mdxLoader(locale, 'org', ['docs'], jargon[locale])
 
   return {
     props: {
+      ...(await serverSideTranslations(locale, namespaces)),
       mdx,
-      title,
+      page: {
+        path: ['docs'],
+      },
     },
   }
 }

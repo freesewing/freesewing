@@ -11,6 +11,8 @@ import {
 } from 'shared/components/icons.mjs'
 import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
 
+export const ns = ['sections']
+
 // List of icons matched to top-level slug
 const icons = {
   // FreeSewing.dev
@@ -191,8 +193,10 @@ export const Icons = ({
 
 export const MainSections = ({ app }) => {
   if (!app.state.sections) return null
+  // Ensure each page as an `o` key so we can put them in order
+  const sortableSections = app.state.sections.map((s) => ({ ...s, o: s.o ? s.o : s.t }))
   const output = []
-  for (const page of app.state.sections) {
+  for (const page of orderBy(sortableSections, ['o', 't'])) {
     const act = isActive(page.s, app.state.slug)
     const txt = (
       <>

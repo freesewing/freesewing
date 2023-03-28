@@ -25,15 +25,15 @@ const TypographyPage = (props) => {
         <p>This typography page shows an overview of different elements and how they are styled.</p>
         <p>It&apos;s a good starting point for theme development.</p>
         <h2>Headings (this is h2)</h2>
-        {p}
+        {p} {p}
         <h3>This is h3</h3>
-        {p}
+        {p} {p}
         <h4>This is h4</h4>
-        {p}
+        {p} {p}
         <h5>This is h5</h5>
-        {p}
+        {p} {p}
         <h6>This is h6</h6>
-        {p}
+        {p} {p}
         <h2>Links and buttons</h2>
         <p>
           A regular link <a href="#">looks like this</a>, whereas buttons look like this:

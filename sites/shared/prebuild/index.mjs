@@ -8,7 +8,6 @@ import { prebuildLab } from './lab.mjs'
 import { generateOgImage } from './og/index.mjs'
 
 const run = async () => {
-  console.log('in run')
   const SITE = process.env.SITE || 'lab'
   if (SITE === 'org') {
     const mdxPages = await prebuildMdx(SITE)

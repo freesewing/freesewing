@@ -1,5 +1,7 @@
-import { MainSections, ActiveSection } from './primary.mjs'
+import { MainSections, ActiveSection, ns as navNs } from './primary.mjs'
 import Link from 'next/link'
+
+export const ns = navNs
 
 export const AsideNavigation = ({ app, mobileOnly = false, before = [], after = [] }) => (
   <aside

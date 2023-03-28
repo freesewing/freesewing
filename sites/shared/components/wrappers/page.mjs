@@ -6,10 +6,10 @@ import { useHotkeys } from 'react-hotkeys-hook'
 import { useTheme } from 'shared/hooks/use-theme.mjs'
 // Components
 import { LayoutWrapper, ns as layoutNs } from 'site/components/wrappers/layout.mjs'
-import { DocsLayout } from 'site/components/layouts/docs.mjs'
+import { DocsLayout, ns as docsNs } from 'site/components/layouts/docs.mjs'
 import { Feeds } from 'site/components/feeds.mjs'
 
-export const ns = [...layoutNs]
+export const ns = [...new Set([...layoutNs, ...docsNs])]
 
 /* This component should wrap all page content */
 export const PageWrapper = ({

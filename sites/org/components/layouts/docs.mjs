@@ -2,13 +2,13 @@
 import { useRouter } from 'next/router'
 // Components
 import Link from 'next/link'
-import { AsideNavigation } from 'shared/components/navigation/aside.mjs'
+import { AsideNavigation, ns as navNs } from 'shared/components/navigation/aside.mjs'
 import { ThemePicker } from 'shared/components/theme-picker/index.mjs'
 import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
 import { HomeIcon } from 'shared/components/icons.mjs'
 import { useState, useEffect } from 'react'
 
-export const ns = []
+export const ns = navNs
 
 export const DocsLayout = ({ app, children = [], title }) => (
   <div className="grid grid-cols-4 m-auto justify-center place-items-stretch">
