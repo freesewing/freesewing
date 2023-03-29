@@ -2913,10 +2913,10 @@
     ora "^5.1.0"
     update-notifier "^5.0.1"
 
-"@maizzle/framework@4.4.0":
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/@maizzle/framework/-/framework-4.4.0.tgz#144f37fc64685abae04abffa199d01e2af406274"
-  integrity sha512-eJwkn7r6u2Jsyw8u5k602Sjf1gHYCh+qhV3wCvOxFVU+3k8sr+KaErGIOwKKGEIXn4Z/Dx8d4l64cTuYdgtoCg==
+"@maizzle/framework@4.4.3":
+  version "4.4.3"
+  resolved "https://registry.yarnpkg.com/@maizzle/framework/-/framework-4.4.3.tgz#b44ce8a2718943bcec9465deb01da8cbdba49c34"
+  integrity sha512-wOXoVudZVwLAmlWTEj+lLsdJTqDyTnq5aWa5QeW1wDYNpXREgOW6YRgeh9RWQ3ll7O2sG3PLP6zPFeYjTz5oFQ==
   dependencies:
     "@maizzle/cli" "^1.5.1"
     autoprefixer "^10.4.14"
@@ -2933,7 +2933,7 @@
     ora "^5.1.0"
     postcss "^8.4.21"
     postcss-import "^15.0.0"
-    postcss-merge-longhand "^5.1.7"
+    postcss-merge-longhand "^6.0.0"
     posthtml "^0.16.6"
     posthtml-attrs-parser "^0.1.1"
     posthtml-base-url "^2.0.0"
@@ -15177,13 +15177,21 @@ postcss-load-config@^3.1.4:
     lilconfig "^2.0.5"
     yaml "^1.10.2"
 
-postcss-merge-longhand@^5.0.1, postcss-merge-longhand@^5.1.7:
+postcss-merge-longhand@^5.0.1:
   version "5.1.7"
   resolved "https://registry.yarnpkg.com/postcss-merge-longhand/-/postcss-merge-longhand-5.1.7.tgz#24a1bdf402d9ef0e70f568f39bdc0344d568fb16"
   integrity sha512-YCI9gZB+PLNskrK0BB3/2OzPnGhPkBEwmwhfYk1ilBHYVAZB7/tkTHFBAnCrvBBOmeYyMYw3DMjT55SyxMBzjQ==
   dependencies:
     postcss-value-parser "^4.2.0"
     stylehacks "^5.1.1"
+
+postcss-merge-longhand@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-merge-longhand/-/postcss-merge-longhand-6.0.0.tgz#6f627b27db939bce316eaa97e22400267e798d69"
+  integrity sha512-4VSfd1lvGkLTLYcxFuISDtWUfFS4zXe0FpF149AyziftPFQIWxjvFSKhA4MIxMe4XM3yTDgQMbSNgzIVxChbIg==
+  dependencies:
+    postcss-value-parser "^4.2.0"
+    stylehacks "^6.0.0"
 
 postcss-nested@6.0.0:
   version "6.0.0"
@@ -18397,6 +18405,14 @@ stylehacks@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/stylehacks/-/stylehacks-5.1.1.tgz#7934a34eb59d7152149fa69d6e9e56f2fc34bcc9"
   integrity sha512-sBpcd5Hx7G6seo7b1LkpttvTz7ikD0LlH5RmdcBNb6fFR0Fl7LQwHDFr300q4cwUqi+IYrFGmsIHieMBfnN/Bw==
+  dependencies:
+    browserslist "^4.21.4"
+    postcss-selector-parser "^6.0.4"
+
+stylehacks@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/stylehacks/-/stylehacks-6.0.0.tgz#9fdd7c217660dae0f62e14d51c89f6c01b3cb738"
+  integrity sha512-+UT589qhHPwz6mTlCLSt/vMNTJx8dopeJlZAlBMJPWA3ORqu6wmQY7FBXf+qD+FsqoBJODyqNxOUP3jdntFRdw==
   dependencies:
     browserslist "^4.21.4"
     postcss-selector-parser "^6.0.4"
