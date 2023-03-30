@@ -19,12 +19,14 @@ L'objectif de cette mensuration est de déterminer la part la plus importante ve
 
 <Tip>
 
-Mais cela signifie que vous déformerez la longueur que vous essayez de mesurer en levant votre bras du même côté. Mais cela signifie que vous déformerez la longueur que vous essayez de mesurer en levant votre bras du même côté.
-Mais cela signifie que vous déformerez la longueur que vous essayez de mesurer en levant votre bras du même côté.
-You might not think there is a difference, but all is connected in the world of physiology, and
-doing this could lead to an error of ~2.5cm (~1 inch) in your measurement.  
-Simply switch your hands around, and you get a more accurate measurement.
+##### Pensez à quelle main vous utilisez
 
-For best results, get a second person to take your measurements (if possible).
+Si vous vous mesurez tout seul-e-, vous pouvez essayer de tenir votre ruban de mesure jusqu'à votre épaule avec la main du même côté de votre corps que l'épaule que vous mesurez. Ainsi, par exemple, vous pourriez tenir le haut du 
+ruban jusqu'à votre épaule droite avec votre main droite, pendant que votre main gauche tient l'autre extrémité.
+Mais cela signifie que vous déformerez la longueur que vous essayez de mesurer en levant votre bras du même côté.
+Vous ne pensez peut-être pas qu'il y a une différence, mais tout est connecté dans le monde de la physiologie, et cela pourrait conduire à une erreur de ~2,5 cm (~1 pouce) dans votre mesure.  
+Il vous suffit de changer vos mains et vous obtenez une mesure plus précise.
+
+Pour de meilleurs résultats, demandez à une seconde personne de prendre vos mesures (si possible).
 
 </Tip>
