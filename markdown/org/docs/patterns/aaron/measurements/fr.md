@@ -1,5 +1,5 @@
 - - -
-title: "Aaron A-Shirt: Required Measurements"
+titre: "Débardeur Aaron (A-Shirt) : Mesures requises"
 - - -
 
 <PatternMeasurements pattern='aaron' />
