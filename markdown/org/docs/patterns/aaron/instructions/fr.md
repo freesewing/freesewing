@@ -1,5 +1,5 @@
 - - -
-title: "Aaron A-Shirt: Sewing Instructions"
+titre: "Débardeur Aaron (A-Shirt) : Instructions de couture"
 - - -
 
 ## Étape 1 : Faire les coutures d'assemblage
@@ -16,9 +16,9 @@ Pliez l'ourlet vers le haut, et cousez-le. Si vous avez une recouvreuse, utilise
 
 <Note>
 
-##### Fold only once, to avoid bulk
+##### Ne pliez qu'une seule fois, pour éviter la surépaisseur
 
-Knitwear doesn't ravel, so you can simply fold this over once and sew it down, then neatly trim back the fabric.
+Les tricots ne s'effilochent pas, il suffit donc de les plier une seule fois et de les coudre, puis de découper soigneusement le tissu.
 
 </Note>
 
