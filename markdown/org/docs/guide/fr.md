@@ -5,7 +5,7 @@ order: 100
 
 Bonjour 👋 et bienvenue sur freesewing.org 🙂
 
-Reading this guide will take about 10 minutes of your time now, to save you a bunch of questions later, and make sure you get the most out of our website.
+La lecture de ce tutoriel prendra environ 10 minutes maintenant, vous économisera un tas de questions plus tard, et vous assurera de tirer le meilleur parti de notre site Web.
 
 ##### Ce que nous allons expliquer
 
