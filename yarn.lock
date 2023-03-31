@@ -19017,10 +19017,10 @@ tailwindcss-mso@1.3.0:
   resolved "https://registry.yarnpkg.com/tailwindcss-mso/-/tailwindcss-mso-1.3.0.tgz#05023f191ac200b7da86a179fbf2d18f3b3fa0fd"
   integrity sha512-aCdQrJaS0GM3/aTOG7T/KuUvoVJvpW4H+9Ao2aYfm3mjd515I5JtJqOcZRXaC99AOTfaKJ0skgRIt8h6LTkDNw==
 
-tailwindcss@3.3.0, tailwindcss@^3, tailwindcss@^3.0.7, tailwindcss@^3.2.7:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.3.0.tgz#8cab40e5a10a10648118c0859ba8bfbc744a761e"
-  integrity sha512-hOXlFx+YcklJ8kXiCAfk/FMyr4Pm9ck477G0m/us2344Vuj355IpoEDB5UmGAsSpTBmr+4ZhjzW04JuFXkb/fw==
+tailwindcss@3.3.1, tailwindcss@^3, tailwindcss@^3.0.7, tailwindcss@^3.2.7:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.3.1.tgz#b6662fab6a9b704779e48d083a9fef5a81d2b81e"
+  integrity sha512-Vkiouc41d4CEq0ujXl6oiGFQ7bA3WEhUZdTgXAhtKxSy49OmKs8rEfQmupsfF0IGW8fv2iQkp1EVUuapCFrZ9g==
   dependencies:
     arg "^5.0.2"
     chokidar "^3.5.3"
