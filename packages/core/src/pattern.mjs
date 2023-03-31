@@ -1,5 +1,5 @@
 import { Attributes } from './attributes.mjs'
-import pack from 'bin-pack'
+import pack from 'bin-pack-with-constraints'
 import { __addNonEnumProp, __macroName } from './utils.mjs'
 import { Part } from './part.mjs'
 import { Stack } from './stack.mjs'
@@ -11,9 +11,9 @@ import { Store } from './store.mjs'
 import { Hooks } from './hooks.mjs'
 import { version } from '../data.mjs'
 import { __loadPatternDefaults } from './config.mjs'
+import { PatternConfig, getPluginName } from './pattern-config.mjs'
+import { PatternDraftQueue } from './pattern-draft-queue.mjs'
 import cloneDeep from 'lodash.clonedeep'
-
-const DISTANCE_DEBUG = false
 
 //////////////////////////////////////////////
 //               CONSTRUCTOR                //
@@ -26,7 +26,13 @@ const DISTANCE_DEBUG = false
  * @param {object} config - The Design config
  * @return {object} this - The Pattern instance
  */
-export function Pattern(designConfig) {
+export function Pattern(designConfig = {}) {
+  // Enumerable properties
+  this.designConfig = cloneDeep(designConfig) // The design configuration (unresolved)
+  this.config = {} // Will hold the resolved pattern after calling __init()
+  this.store = new Store() // Pattern-wide store
+  this.setStores = [] // Per-set stores
+
   // Non-enumerable properties
   __addNonEnumProp(this, 'plugins', {})
   __addNonEnumProp(this, 'width', 0)
@@ -40,26 +46,10 @@ export function Pattern(designConfig) {
   __addNonEnumProp(this, 'Attributes', Attributes)
   __addNonEnumProp(this, 'macros', {})
   __addNonEnumProp(this, '__initialized', false)
-  __addNonEnumProp(this, '__designParts', {})
-  __addNonEnumProp(this, '__inject', {})
-  __addNonEnumProp(this, '__dependencies', {})
-  __addNonEnumProp(this, '__resolvedDependencies', {})
-  __addNonEnumProp(this, '__resolvedParts', [])
+  __addNonEnumProp(this, 'config.parts', {})
+  __addNonEnumProp(this, 'config.resolvedDependencies', {})
   __addNonEnumProp(this, '__storeMethods', new Set())
-  __addNonEnumProp(this, '__mutated', {
-    optionDistance: {},
-    partDistance: {},
-    partHide: {},
-    partHideAll: {},
-  })
-  __addNonEnumProp(this, '__draftOrder', [])
-  __addNonEnumProp(this, '__hide', {})
-
-  // Enumerable properties
-  this.designConfig = cloneDeep(designConfig) // The design configuration (unresolved)
-  this.config = {} // Will hold the resolved pattern after calling __init()
-  this.store = new Store() // Pattern-wide store
-  this.setStores = [] // Per-set stores
+  __addNonEnumProp(this, '__configResolver', new PatternConfig(this)) // handles config resolution during __init() as well as runtime part adding
 
   return this
 }
@@ -69,19 +59,26 @@ export function Pattern(designConfig) {
 //////////////////////////////////////////////
 
 /**
- * FIXME: Allows adding parts to the config at runtime
+ * Allows adding parts to the config at runtime
  *
  * @param {object} part - The part to add
+ * @param {boolean} resolveImmediately - Should the part be resolved now, or wait until the next call to {@link __init()}?
+ * It is useful to resolve immediately if one part is being added at runtime
+ * It might be useful to not resolve immediately if a number of parts will be added over multiple calls
  * @return {object} this - The Pattern instance
  */
-Pattern.prototype.addPart = function (part) {
-  if (typeof part?.draft === 'function') {
-    if (part.name) {
-      this.designConfig.parts.push(part)
-      this.__initialized = false
-    } else this.store.log.error(`Part must have a name`)
-  } else this.store.log.error(`Part must have a draft() method`)
-
+Pattern.prototype.addPart = function (part, resolveImmediately = true) {
+  if (
+    this.__configResolver.isPartValid(part) &&
+    !this.designConfig.parts.find((p) => p.name == part.name)
+  ) {
+    this.store.log.debug(`Adding Part \`${part.name}\` at runtime`)
+    this.designConfig.parts.push(part)
+    if (resolveImmediately) {
+      if (this.__configResolver.addPart(part) && typeof this.draftQueue !== 'undefined')
+        this.draftQueue.addPart(part.name)
+    } else this.__initialized = false
+  }
   return this
 }
 
@@ -92,6 +89,7 @@ Pattern.prototype.addPart = function (part) {
  */
 Pattern.prototype.draft = function () {
   this.__init()
+  this.draftQueue = new PatternDraftQueue(this)
   this.__runHooks('preDraft')
   // Keep container for drafted parts fresh
   this.parts = []
@@ -110,8 +108,9 @@ Pattern.prototype.draft = function () {
     // Handle snap for pct options
     this.__loadAbsoluteOptionsSet(set)
 
-    for (const partName of this.config.draftOrder) {
-      this.createPartForSet(partName, set)
+    this.draftQueue.start()
+    while (this.draftQueue.hasNext()) {
+      this.createPartForSet(this.draftQueue.next(), set)
     }
     this.__runHooks('postSetDraft')
   }
@@ -130,15 +129,15 @@ Pattern.prototype.createPartForSet = function (partName, set = 0) {
   this.parts[set][partName] = this.__createPartWithContext(partName, set)
 
   // Handle inject/inheritance
-  if (typeof this.__inject[partName] === 'string') {
+  if (typeof this.config.inject[partName] === 'string') {
     this.setStores[set].log.debug(
-      `Creating part \`${partName}\` from part \`${this.__inject[partName]}\``
+      `Creating part \`${partName}\` from part \`${this.config.inject[partName]}\``
     )
     try {
-      this.parts[set][partName].__inject(this.parts[set][this.__inject[partName]])
+      this.parts[set][partName].__inject(this.parts[set][this.config.inject[partName]])
     } catch (err) {
       this.setStores[set].log.error([
-        `Could not inject part \`${this.__inject[partName]}\` into part \`${partName}\``,
+        `Could not inject part \`${this.config.inject[partName]}\` into part \`${partName}\``,
         err,
       ])
     }
@@ -159,11 +158,15 @@ Pattern.prototype.createPartForSet = function (partName, set = 0) {
 }
 
 Pattern.prototype.draftPartForSet = function (partName, set) {
-  if (typeof this.__designParts?.[partName]?.draft === 'function') {
+  if (typeof this.config.parts?.[partName]?.draft === 'function') {
     this.activePart = partName
+    this.setStores[set].set('activePart', partName)
     try {
       this.__runHooks('prePartDraft')
-      const result = this.__designParts[partName].draft(this.parts[set][partName].shorthand())
+      const result = this.config.parts[partName].draft(this.parts[set][partName].shorthand())
+      if (!this.__wants(partName, set)) {
+        result.hide()
+      }
       this.__runHooks('postPartDraft')
       if (typeof result === 'undefined') {
         this.setStores[set].log.error(
@@ -360,227 +363,6 @@ Pattern.prototype.use = function (plugin, data) {
 //////////////////////////////////////////////
 
 /**
- * Adds a part as a simple dependency
- *
- * @private
- * @param {string} name - The name of the dependency
- * @param {object} part - The part configuration
- * @param {object} dep - The dependency configuration
- * @return {object} this - The Pattern instance
- */
-Pattern.prototype.__addDependency = function (name, part, dep) {
-  this.__dependencies[name] = mergeDependencies(dep.name, this.__dependencies[name])
-  if (typeof this.__designParts[dep.name] === 'undefined') {
-    this.config = this.__addPartConfig(this.__designParts[dep.name])
-  }
-
-  return this
-}
-
-/**
- * Resolves/Adds a part's design configuration to the pattern config
- *
- * @private
- * @param {Part} part - The part of which to resolve the config
- * @param {onject} config - The global config
- * @param {Store} store - The store, used for logging
- * @return {object} config - The mutated global config
- */
-Pattern.prototype.__addPartConfig = function (part) {
-  if (this.__resolvedParts.includes(part.name)) return this
-
-  // Add parts, using set to keep them unique in the array
-  this.designConfig.parts = [...new Set(this.designConfig.parts).add(part)]
-
-  return this.__addPartOptions(part)
-    .__addPartMeasurements(part)
-    .__addPartOptionalMeasurements(part)
-    .__addPartPlugins(part)
-}
-
-/**
- * Resolves/Adds a part's configured measurements to the global config
- *
- * @private
- * @param {Part} part - The part of which to resolve the config
- * @param {array} list - The list of resolved measurements
- * @return {Pattern} this - The Pattern instance
- */
-Pattern.prototype.__addPartMeasurements = function (part, list = false) {
-  if (!this.config.measurements) this.config.measurements = []
-  if (!list) list = this.config.measurements
-  if (part.measurements) {
-    for (const m of part.measurements) {
-      if (list.indexOf(m) === -1) {
-        list.push(m)
-        this.store.log.debug(`🟠  __${m}__ measurement is required in \`${part.name}\``)
-      }
-    }
-  }
-  if (part.from) this.__addPartMeasurements(part.from, list)
-  if (part.after) {
-    if (Array.isArray(part.after)) {
-      for (const dep of part.after) this.__addPartMeasurements(dep, list)
-    } else this.__addPartMeasurements(part.after, list)
-  }
-
-  // Weed out duplicates
-  this.config.measurements = [...new Set(list)]
-
-  return this
-}
-
-/**
- * Resolves/Adds a part's configured optional measurements to the global config
- *
- * @private
- * @param {Part} part - The part of which to resolve the config
- * @param {array} list - The list of resolved optional measurements
- * @return {Pattern} this - The Pattern instance
- */
-Pattern.prototype.__addPartOptionalMeasurements = function (part, list = false) {
-  if (!this.config.optionalMeasurements) this.config.optionalMeasurements = []
-  if (!list) list = this.config.optionalMeasurements
-  if (part.optionalMeasurements) {
-    for (const m of part.optionalMeasurements) {
-      // Don't add it's a required measurement for another part
-      if (this.config.measurements.indexOf(m) === -1) {
-        if (list.indexOf(m) === -1) {
-          list.push(m)
-          this.store.log.debug(`🟡  __${m}__ measurement is optional in \`${part.name}\``)
-        }
-      }
-    }
-  }
-  if (part.from) this.__addPartOptionalMeasurements(part.from, list)
-  if (part.after) {
-    if (Array.isArray(part.after)) {
-      for (const dep of part.after) this.__addPartOptionalMeasurements(dep, list)
-    } else this.__addPartOptionalMeasurements(part.after, list)
-  }
-
-  // Weed out duplicates
-  if (list.length > 0) this.config.optionalMeasurements = [...new Set(list)]
-
-  return this
-}
-
-/**
- * Resolves/Adds a part's configured options to the global config
- *
- * @private
- * @param {Part} part - The part of which to resolve the config
- * @return {Pattern} this - The Pattern instance
- */
-Pattern.prototype.__addPartOptions = function (part) {
-  if (!this.config.options) this.config.options = {}
-  if (part.options) {
-    for (const optionName in part.options) {
-      if (!this.__mutated.optionDistance[optionName]) {
-        this.__mutated.optionDistance[optionName] = this.__mutated.partDistance?.[part.name] || 0
-        // Keep design parts immutable in the pattern or risk subtle bugs
-        this.config.options[optionName] = Object.freeze(part.options[optionName])
-        this.store.log.debug(`🔵  __${optionName}__ option loaded from part \`${part.name}\``)
-      } else {
-        if (DISTANCE_DEBUG)
-          this.store.log.debug(
-            'optionDistance for ' +
-              optionName +
-              ' is ' +
-              this.__mutated.optionDistance[optionName] +
-              ', and partDistance for ' +
-              part.name +
-              ' is ' +
-              this.__mutated.partDistance[part.name]
-          )
-        if (this.__mutated.optionDistance[optionName] > this.__mutated.partDistance[part.name]) {
-          this.config.options[optionName] = part.options[optionName]
-          this.store.log.debug(`🟣  __${optionName}__ option overwritten by \`${part.name}\``)
-        }
-      }
-    }
-  }
-  if (part.from) this.__addPartOptions(part.from)
-  if (part.after) {
-    if (Array.isArray(part.after)) {
-      for (const dep of part.after) this.__addPartOptions(dep)
-    } else this.__addPartOptions(part.after)
-  }
-
-  return this
-}
-
-function getPluginName(plugin) {
-  if (Array.isArray(plugin)) {
-    if (plugin[0].name) return plugin[0].name
-    if (plugin[0].plugin.name) return plugin[0].plugin.name
-  } else {
-    if (plugin.name) return plugin.name
-    if (plugin.plugin?.name) return plugin.plugin.name
-  }
-
-  return false
-}
-
-/**
- * Resolves/Adds a part's configured plugins to the global config
- *
- * @private
- * @param {Part} part - The part of which to resolve the config
- * @return {Pattern} this - The Pattern instance
- */
-Pattern.prototype.__addPartPlugins = function (part) {
-  if (!part.plugins) return this
-  if (!this.config.plugins) this.config.plugins = {}
-  const plugins = { ...this.config.plugins }
-  // Side-step immutability of the part object to ensure plugins is an array
-  let partPlugins = part.plugins
-  if (!Array.isArray(partPlugins)) partPlugins = [partPlugins]
-  // Go through list of part plugins
-  for (let plugin of partPlugins) {
-    const name = getPluginName(plugin)
-    this.store.log.debug(
-      plugin.plugin
-        ? `🔌  Resolved __${name}__ conditional plugin in \`${part.name}\``
-        : `🔌  Resolved __${name}__ plugin in \`${part.name}\``
-    )
-    // Handle [plugin, data] scenario
-    if (Array.isArray(plugin)) {
-      const pluginObj = { ...plugin[0], data: plugin[1] }
-      plugin = pluginObj
-    }
-    if (!plugins[name]) {
-      // New plugin, so we load it
-      plugins[name] = plugin
-      this.store.log.info(
-        plugin.condition
-          ? `New plugin conditionally added: \`${name}\``
-          : `New plugin added: \`${name}\``
-      )
-    } else {
-      // Existing plugin, takes some more work
-      if (plugin.plugin && plugin.condition) {
-        // Multiple instances of the same plugin with different conditions
-        // will all be added, so we need to change the name.
-        if (plugins[name]?.condition) {
-          plugins[name + '_'] = plugin
-          this.store.log.info(
-            `Plugin \`${name}\` was conditionally added again. Renaming to ${name}_.`
-          )
-        } else
-          this.store.log.info(
-            `Plugin \`${name}\` was requested conditionally, but is already added explicitly. Not loading.`
-          )
-      }
-    }
-  }
-
-  this.config.plugins = { ...plugins }
-
-  return this
-}
-
-/**
  * Creates a store for a set (of settings)
  *
  * @private
@@ -636,7 +418,7 @@ Pattern.prototype.__createPartWithContext = function (name, set) {
   const part = new Part()
   part.name = name
   part.set = set
-  part.stack = this.__designParts[name]?.stack || name
+  part.stack = this.config.parts[name]?.stack || name
   part.context = {
     parts: this.parts[set],
     config: this.config,
@@ -677,24 +459,6 @@ Pattern.prototype.__createStackWithContext = function (name) {
 }
 
 /**
- * Filter optional measurements out id they are also required measurments
- *
- * @private
- * @return {Pattern} this - The Pattern instance
- */
-Pattern.prototype.__filterOptionalMeasurements = function () {
-  if (!this.config.optionalMeasurements) {
-    this.config.optionalMeasurements = []
-    return this
-  }
-  this.config.optionalMeasurements = this.config.optionalMeasurements.filter(
-    (m) => this.config.measurements.indexOf(m) === -1
-  )
-
-  return this
-}
-
-/**
  * Initializes the pattern coniguration and settings
  *
  * @return {object} this - The Pattern instance
@@ -716,14 +480,12 @@ Pattern.prototype.__init = function () {
    * This methods does that, and resolves the design config + user settings
    */
   this.__resolveParts() // Resolves parts
-    .__resolveDependencies() // Resolves dependencies
-    .__resolveDraftOrder() // Resolves draft order
+    .__resolveConfig() // Gets the config from the resolver
+    .__loadOptionDefaults() // Merges default options with user provided ones
     .__loadPlugins() // Loads plugins
     .__loadConfigData() // Makes config data available in store
-    .__filterOptionalMeasurements() // Removes required m's from optional list
-    .__loadOptionDefaults() // Merges default options with user provided ones
 
-  this.store.log.info(`Pattern initialized. Draft order is: ${this.__draftOrder.join(', ')}`)
+  this.store.log.info(`Pattern initialized. Draft order is: ${this.config.draftOrder.join(', ')}`)
   this.__runHooks('postInit')
 
   this.__initialized = true
@@ -739,16 +501,13 @@ Pattern.prototype.__init = function () {
  * @return {bool} hidden - true if the part is hidden, or false if not
  */
 Pattern.prototype.__isPartHidden = function (partName) {
+  const partHidden = this.parts?.[this.activeSet]?.[partName]?.hidden || false
   if (Array.isArray(this.settings[this.activeSet || 0].only)) {
-    if (this.settings[this.activeSet || 0].only.includes(partName)) return false
+    if (this.settings[this.activeSet || 0].only.includes(partName)) return partHidden
   }
-  if (this.__designParts?.[partName]?.hide) return true
-  if (this.__designParts?.[partName]?.hideAll) return true
-  if (this.__mutated.partHide?.[partName]) return true
-  if (this.__mutated.partHideAll?.[partName]) return true
-  if (this.parts?.[this.activeSet]?.[partName]?.hidden) return true
+  if (this.config.partHide?.[partName]) return true
 
-  return false
+  return partHidden
 }
 
 /**
@@ -761,21 +520,11 @@ Pattern.prototype.__isPartHidden = function (partName) {
 Pattern.prototype.__isStackHidden = function (stackName) {
   if (!this.stacks[stackName]) return true
   const parts = this.stacks[stackName].getPartNames()
-  if (Array.isArray(this.settings[this.activeStack || 0].only)) {
-    for (const partName of parts) {
-      if (this.settings[this.activeStack || 0].only.includes(partName)) return false
-    }
-    return true
-  }
   for (const partName of parts) {
-    if (this.__designParts?.[partName]?.hide) return true
-    if (this.__designParts?.[partName]?.hideAll) return true
-    if (this.__mutated.partHide?.[partName]) return true
-    if (this.__mutated.partHideAll?.[partName]) return true
-    if (this.parts?.[this.activeSet]?.[partName]?.hidden) return true
+    if (!this.__isPartHidden(partName)) return false
   }
 
-  return false
+  return true
 }
 
 /**
@@ -1075,11 +824,7 @@ Pattern.prototype.__needs = function (partName, set = 0) {
   // Walk the only parts, checking each one for a match in its dependencies
   for (const part of only) {
     if (part === partName) return true
-    if (this.__resolvedDependencies[part]) {
-      for (const dependency of this.__resolvedDependencies[part]) {
-        if (dependency === partName) return true
-      }
-    }
+    if (this.config.resolvedDependencies[part]?.indexOf(partName) !== -1) return true
   }
 
   return false
@@ -1179,7 +924,8 @@ Pattern.prototype.__pack = function () {
     }
   }
   if (this.settings[0].layout === true) {
-    let size = pack(bins, { inPlace: true })
+    // some plugins will add a width constraint to the settings, but we can safely pass undefined if not
+    let size = pack(bins, { inPlace: true, maxWidth: this.settings[0].maxWidth })
     for (let bin of bins) {
       this.autoLayout.stacks[bin.id] = { move: {} }
       let stack = this.stacks[bin.id]
@@ -1210,65 +956,12 @@ Pattern.prototype.__pack = function () {
 }
 
 /**
- * Recursively solves part dependencies for a part
- *
+ * Gets the configuration for the config resolver and sets it on the pattern
  * @private
- * @param {object} seen - Object to keep track of seen dependencies
- * @param {string} part - Name of the part
- * @param {object} graph - Dependency graph, used to call itself recursively
- * @param {array} deps - List of dependencies
- * @return {Array} deps - The list of dependencies
+ * @return  {Pattern} this - The Pattern instance
  */
-Pattern.prototype.__resolveDependency = function (
-  seen,
-  part,
-  graph = this.dependencies,
-  deps = []
-) {
-  if (typeof seen[part] === 'undefined') seen[part] = true
-  if (typeof graph[part] === 'string') graph[part] = [graph[part]]
-  if (Array.isArray(graph[part])) {
-    if (graph[part].length === 0) return []
-    else {
-      if (deps.indexOf(graph[part]) === -1) deps.push(...graph[part])
-      for (let apart of graph[part]) deps.concat(this.__resolveDependency(seen, apart, graph, deps))
-    }
-  }
-
-  return deps
-}
-
-/**
- * Resolves the draft order based on the configuation
- *
- * @private
- * @param {object} graph - The object of resolved dependencies, used to call itself recursively
- * @return {Pattern} this - The Pattern instance
- */
-Pattern.prototype.__resolveDraftOrder = function (graph = this.__resolvedDependencies) {
-  let sorted = []
-  let visited = {}
-  Object.keys(graph).forEach(function visit(name, ancestors) {
-    if (!Array.isArray(ancestors)) ancestors = []
-    ancestors.push(name)
-    visited[name] = true
-    if (typeof graph[name] !== 'undefined') {
-      graph[name].forEach(function (dep) {
-        if (visited[dep]) return
-        visit(dep, ancestors.slice(0))
-      })
-    }
-    if (sorted.indexOf(name) < 0) sorted.push(name)
-  })
-
-  // Don't forget about parts without dependencies
-  for (const part in this.__designParts) {
-    if (sorted.indexOf(part) === -1) sorted.push(part)
-  }
-
-  this.__draftOrder = sorted
-  this.config.draftOrder = sorted
-
+Pattern.prototype.__resolveConfig = function () {
+  this.config = this.__configResolver.asConfig()
   return this
 }
 
@@ -1276,154 +969,13 @@ Pattern.prototype.__resolveDraftOrder = function (graph = this.__resolvedDepende
  * Resolves parts and their dependencies
  *
  * @private
- * @param {int} count - The count is used to call itself recursively
- * @param {int} distance - Keeps track of how far the dependency is from the pattern
  * @return {Pattern} this - The Pattern instance
  */
-Pattern.prototype.__resolveParts = function (count = 0, distance = 0) {
-  if (count === 0) {
-    for (const part of this.designConfig.parts) {
-      // Keep design parts immutable in the pattern or risk subtle bugs
-      this.__designParts[part.name] = Object.freeze(part)
-    }
-  }
-  distance++
-  if (DISTANCE_DEBUG) this.store.log.debug('Distance incremented to ' + distance)
-  for (const part of this.designConfig.parts) {
-    if (typeof this.__mutated.partDistance[part.name] === 'undefined') {
-      this.__mutated.partDistance[part.name] = distance
-      if (DISTANCE_DEBUG)
-        this.store.log.debug(
-          'Base partDistance for ' + part.name + ' is ' + this.__mutated.partDistance[part.name]
-        )
-    }
-  }
-  for (const [name, part] of Object.entries(this.__designParts)) {
-    const current_part_distance = this.__mutated.partDistance[part.name]
-    const proposed_dependent_part_distance = current_part_distance + 1
-    // Hide when hideAll is set
-    if (part.hideAll) this.__mutated.partHide[part.name] = true
-    // Inject (from)
-    if (part.from) {
-      if (DISTANCE_DEBUG) this.store.log.debug('Processing ' + part.name + ' "from:"')
-      this.__setFromHide(part, name, part.from.name)
-      this.__designParts[part.from.name] = part.from
-      this.__inject[name] = part.from.name
-      if (
-        typeof this.__mutated.partDistance[part.from.name] === 'undefined' ||
-        this.__mutated.partDistance[part.from.name] < proposed_dependent_part_distance
-      ) {
-        this.__mutated.partDistance[part.from.name] = proposed_dependent_part_distance
-        if (DISTANCE_DEBUG)
-          this.store.log.debug(
-            '"from:" partDistance for ' +
-              part.from.name +
-              ' is ' +
-              this.__mutated.partDistance[part.from.name]
-          )
-      }
-    }
-    // Simple dependency (after)
-    if (part.after) {
-      if (DISTANCE_DEBUG) this.store.log.debug('Processing ' + part.name + ' "after:"')
-      if (Array.isArray(part.after)) {
-        for (const dep of part.after) {
-          this.__setAfterHide(part, name, dep.name)
-          this.__designParts[dep.name] = dep
-          this.__addDependency(name, part, dep)
-          if (
-            typeof this.__mutated.partDistance[dep.name] === 'undefined' ||
-            this.__mutated.partDistance[dep.name] < proposed_dependent_part_distance
-          ) {
-            this.__mutated.partDistance[dep.name] = proposed_dependent_part_distance
-            if (DISTANCE_DEBUG)
-              this.store.log.debug(
-                '"after:" partDistance for ' +
-                  dep.name +
-                  ' is ' +
-                  this.__mutated.partDistance[dep.name]
-              )
-          }
-        }
-      } else {
-        this.__setAfterHide(part, name, part.after.name)
-        this.__designParts[part.after.name] = part.after
-        this.__addDependency(name, part, part.after)
-        if (
-          typeof this.__mutated.partDistance[part.after.name] === 'undefined' ||
-          this.__mutated.partDistance[part.after.name] < proposed_dependent_part_distance
-        ) {
-          this.__mutated.partDistance[part.after.name] = proposed_dependent_part_distance
-          if (DISTANCE_DEBUG)
-            this.store.log.debug(
-              '"after:" partDistance for ' +
-                part.after.name +
-                ' is ' +
-                this.__mutated.partDistance[part.after.name]
-            )
-        }
-      }
-    }
-  }
-  // Did we discover any new dependencies?
-  const len = Object.keys(this.__designParts).length
-  // If so, resolve recursively
-  if (len > count) {
-    if (DISTANCE_DEBUG) this.store.log.debug('Recursing...')
-    return this.__resolveParts(len, distance)
-  }
+Pattern.prototype.__resolveParts = function () {
+  this.designConfig.parts.forEach((p) => this.__configResolver.addPart(p))
+
   // Print final part distances.
-  for (const part of this.designConfig.parts) {
-    let qualifier = ''
-    if (DISTANCE_DEBUG) qualifier = 'final '
-    this.store.log.debug(
-      '⚪️  `' +
-        part.name +
-        '` ' +
-        qualifier +
-        'options priority is __' +
-        this.__mutated.partDistance[part.name] +
-        '__'
-    )
-  }
-
-  for (const part of Object.values(this.__designParts)) this.__addPartConfig(part)
-
-  return this
-}
-
-/**
- * Resolves parts depdendencies into a flat array
- *
- * @private
- * @param {object} graph - The graph is used to call itsels recursively
- * @return {Pattern} this - The Pattern instance
- */
-Pattern.prototype.__resolveDependencies = function (graph = false) {
-  if (!graph) graph = this.__dependencies
-  for (const i in this.__inject) {
-    const dependency = this.__inject[i]
-    if (typeof this.__dependencies[i] === 'undefined') this.__dependencies[i] = dependency
-    else if (this.__dependencies[i] !== dependency) {
-      if (typeof this.__dependencies[i] === 'string') {
-        this.__dependencies[i] = [this.__dependencies[i], dependency]
-      } else if (Array.isArray(this.__dependencies[i])) {
-        if (this.__dependencies[i].indexOf(dependency) === -1)
-          this.__dependencies[i].push(dependency)
-      } else {
-        this.store.log.error('Part dependencies should be a string or an array of strings')
-        throw new Error('Part dependencies should be a string or an array of strings')
-      }
-    }
-  }
-
-  let resolved = {}
-  let seen = {}
-  for (let part in graph) resolved[part] = this.__resolveDependency(seen, part, graph)
-  for (let part in seen) if (typeof resolved[part] === 'undefined') resolved[part] = []
-
-  this.__resolvedDependencies = resolved
-  this.config.resolvedDependencies = resolved
+  this.__configResolver.logPartDistances()
 
   return this
 }
@@ -1459,49 +1011,6 @@ Pattern.prototype.__setBase = function () {
     measurements: { ...(this.settings[0].measurements || {}) },
     options: { ...(this.settings[0].options || {}) },
   }
-}
-
-/**
- * Sets visibility of a dependency based on its config
- *
- * @private
- * @param {Part} part - The part of which this is a dependency
- * @param {string} name - The name of the part
- * @param {string} depName - The name of the dependency
- * @param {int} set - The index of the set in the list of settings
- * @return {Pattern} this - The Pattern instance
- */
-Pattern.prototype.__setFromHide = function (part, name, depName) {
-  if (
-    part.hideDependencies ||
-    part.hideAll ||
-    this.__mutated.partHide[name] ||
-    this.__mutated.partHideAll[name]
-  ) {
-    this.__mutated.partHide[depName] = true
-    this.__mutated.partHideAll[depName] = true
-  }
-
-  return this
-}
-
-/**
- * Sets visibility of an 'after' dependency based on its config
- *
- * @private
- * @param {Part} part - The part of which this is a dependency
- * @param {string} name - The name of the part
- * @param {string} depName - The name of the dependency
- * @param {int} set - The index of the set in the list of settings
- * @return {Pattern} this - The Pattern instance
- */
-Pattern.prototype.__setAfterHide = function (part, name, depName) {
-  if (this.__mutated.partHide[name] || this.__mutated.partHideAll[name]) {
-    this.__mutated.partHide[depName] = true
-    this.__mutated.partHideAll[depName] = true
-  }
-
-  return this
 }
 
 /**
@@ -1589,35 +1098,4 @@ Pattern.prototype.__wants = function (partName, set = 0) {
   }
 
   return true
-}
-
-//////////////////////////////////////////////
-//         STATIC  PRIVATE FUNCTIONS        //
-//////////////////////////////////////////////
-
-/**
- * Merges dependencies into a flat list
- *
- * @private
- * @param {array} dep - New dependencies
- * @param {array} current - Current dependencies
- * @return {array} deps - Merged dependencies
- */
-function mergeDependencies(dep = [], current = []) {
-  // Current dependencies
-  const list = []
-  if (Array.isArray(current)) list.push(...current)
-  else if (typeof current === 'string') list.push(current)
-
-  if (Array.isArray(dep)) list.push(...dep)
-  else if (typeof dep === 'string') list.push(dep)
-
-  // Dependencies should be parts names (string) not the object
-  const deps = []
-  for (const part of [...new Set(list)]) {
-    if (typeof part === 'object') deps.push(part.name)
-    else deps.push(part)
-  }
-
-  return deps
 }

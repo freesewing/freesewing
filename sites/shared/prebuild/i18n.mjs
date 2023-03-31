@@ -4,6 +4,7 @@ import fs from 'fs'
 import path from 'path'
 import rdir from 'recursive-readdir'
 import yaml from 'js-yaml'
+import { fileURLToPath } from 'url'
 
 /*
  * List of supported languages
@@ -14,12 +15,10 @@ const locales = ['en', 'es', 'de', 'fr', 'nl']
  * This is where we configure what folders we should check for
  * code-adjacent translation source files
  */
+const sitesFolder = path.join(fileURLToPath(import.meta.url), '..', '..', '..')
 const folders = {
-  org: [
-    path.resolve(path.join('.', '..', 'org', 'pages')),
-    path.resolve(path.join('.', '..', 'org', 'components')),
-  ],
-  shared: [path.resolve(path.join('.', '..', 'shared', 'components'))],
+  org: [path.join(sitesFolder, 'org', 'pages'), path.join(sitesFolder, 'org', 'components')],
+  shared: [path.join(sitesFolder, 'shared', 'components')],
 }
 
 /*

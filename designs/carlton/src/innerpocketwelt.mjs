@@ -49,6 +49,9 @@ function draftCarltonInnerPocketWelt({
     .close()
     .attr('class', 'lashed')
 
+  store.cutlist.addCut()
+  store.cutlist.addCut({ material: 'lmhCanvas' })
+
   if (complete) {
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
     macro('title', {

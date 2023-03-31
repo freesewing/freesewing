@@ -31,18 +31,18 @@ equivalent:
 <Tabs tabs="Without destructuring, With destructuring">
 <Tab>
 ```design/src/bib.mjs
-function draftBib({ part }) {
+function draftBib(props) {
 
-  return part
+  return props.part
+
 }
 ```
 </Tab>
 <Tab>
 ```design/src/bib.mjs
-function draftBib(props) {
+function draftBib({ part }) {
 
-  return props.part
-
+  return part
 }
 ```
 </Tab>

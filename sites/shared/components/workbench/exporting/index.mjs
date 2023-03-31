@@ -9,7 +9,7 @@ export const ExportDraft = ({ gist, design, app }) => {
   const [error, setError] = useState(false)
   const [format, setFormat] = useState(false)
 
-  const { t } = useTranslation(['app'])
+  const { t } = useTranslation(['app', 'plugin'])
   const doExport = (format) => {
     setLink(false)
     setError(false)

@@ -33,8 +33,11 @@ function draftBruceFront({
   macro,
   snippets,
   Snippet,
+  log,
   part,
 }) {
+  let adjustment_warning = false
+
   // Initialize
   init(part)
 
@@ -64,14 +67,41 @@ function draftBruceFront({
 
   // Adjust tusk length to fit inset curve
   let delta = tuskDelta(Path, points, store)
+  let previous_delta = delta
+  const points_to_save = ['rightTuskRight', 'rightTuskLeft', 'curveRightCpBottom']
+  let saved = []
+  let stop = false
+  if (Math.abs(delta) <= 1) {
+    // We started below the 1mm threshold. No adjustment needed.
+    stop = true
+  }
   let count = 0
-  while (Math.abs(delta) > 1) {
-    // Below 1mm is good enough
+  while (!stop) {
+    for (const i of points_to_save) {
+      saved[i] = points[i]
+    }
+    previous_delta = delta
     tweakTusk(delta, points)
     delta = tuskDelta(Path, points, store)
     count++
-    if (count > 150)
-      throw 'We got stuck trying to calculate an optimal tusk length. Please report this.'
+    if (Math.abs(delta) <= 1) {
+      // Below 1mm threshold is good enough.
+      stop = true
+    } else if (Math.abs(delta) > Math.abs(previous_delta) || count >= 150) {
+      // The adjustments have failed, either starting to produce
+      // worse results or exceeding the maximum number of runs.
+      // Stop the adjustment process, print a warning message,
+      // and revert back to the last good set of points if appropriate.
+      stop = true
+      log.warning(
+        'Unable to adjust the front tusk length to fit the given measurements, after ' +
+          count +
+          ' iterations.'
+      )
+      adjustment_warning = true
+      if (Math.abs(delta) > Math.abs(previous_delta))
+        for (const i of points_to_save) points[i] = saved[i]
+    }
   }
 
   // Adjust midMid to new length
@@ -265,6 +295,19 @@ function draftBruceFront({
         x: points.topRight.x + 30 + sa,
       })
     }
+  }
+
+  if (adjustment_warning) {
+    log.warning(
+      'We were not able to generate the Front pattern piece correctly. ' +
+        'Manual fitting and alteration of this and other pattern pieces ' +
+        'are likely to be needed. ' +
+        'First, please retake your measurements and generate a new pattern ' +
+        'using the new measurements. ' +
+        'If you still see this warning with the new pattern, then please ' +
+        'make a test garment, check fit, and make alterations as necessary ' +
+        'before trying to make the final garment.'
+    )
   }
 
   return part
