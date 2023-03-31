@@ -1,12 +1,12 @@
 - - -
-title: "Albert apron: Sewing Instructions"
+titre : "Tablier Albert : Instructions de couture"
 - - -
 
 ### Étape 1 : La Poche
 
-- Along the top of the pocket fold the seam allowance to wrong side, press.
-- Then fold the top hem allowance to wrong side and press, making sure the seam allowance is tucked underneath. Pin in place if you need to.
-- Press the seam allowance of the sides and bottom to the wrong side.
+- Le long du haut de la poche, pliez la marge de couture sur l'envers, repassez.
+- Pliez ensuite le surplus de l'ourlet supérieur sur l'envers et repassez, en veillant à ce que le surplus de couture soit rentré en dessous. Épinglez si nécessaire.
+- Repassez le surplus de couture des côtés et du bas sur l'envers.
 - On the right side topstich close to where the hem edge lies underneath, making sure to catch the hem and seam allowances as you sew.
 - Pin the pocket to the front using the guides.
 - _Edgestitch_ the sides and bottom of the pocket leaving the top open. Make sure to backstitch at the start and end to secure the pocket properly.
