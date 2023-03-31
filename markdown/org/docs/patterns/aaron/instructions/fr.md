@@ -1,24 +1,24 @@
 - - -
-title: "Aaron A-Shirt: Sewing Instructions"
+titre: "Débardeur Aaron (A-Shirt) : Instructions de couture"
 - - -
 
 ## Étape 1 : Faire les coutures d'assemblage
 
-![Close the side and shoulder seams](step01.png)
+![Fermer les coutures latérales et les coutures d'épaule](step01.png)
 
 Placez le torse avant contre le torse arrière, endroit contre endroit. Assemblez les côtés et les épaules ensemble. Si vous possédez une surjeteuse, c'est le bon moment de l'utiliser . Si ce n'est pas le cas, finissez vos coutures autrement.
 
 ## Étape 2 : Faire l'ourlet
 
-![Finish the hem](step02.png)
+![Finir l'ourlet](step02.png)
 
 Pliez l'ourlet vers le haut, et cousez-le. Si vous avez une recouvreuse, utilisez-la. Sinon, utilisez une _aiguille double_ ou un _point zig-zag_ pour garder la couture extensible.
 
 <Note>
 
-##### Fold only once, to avoid bulk
+##### Ne pliez qu'une seule fois, pour éviter la surépaisseur
 
-Knitwear doesn't ravel, so you can simply fold this over once and sew it down, then neatly trim back the fabric.
+Les tricots ne s'effilochent pas, il suffit donc de les plier une seule fois et de les coudre, puis de découper soigneusement le tissu.
 
 </Note>
 
@@ -52,7 +52,7 @@ C'est la seule partie de la fabrication de ce A-shirt qui nécessite un peu de p
 
 ### Choisissez votre emplacement
 
-![Applying knit binding](step03a.png)
+![Application d'un biais](step03a.png)
 
 La première chose à faire est de décider où démarrer/arrêter notre biais. Voici ce que je suggère :
 
@@ -61,17 +61,17 @@ La première chose à faire est de décider où démarrer/arrêter notre biais. 
 
 ### Placer (démarrer) votre biais
 
-![Place (the start of) your binding](step03b.png)
+![Placez (le début de) votre biais](step03b.png)
 
-Put your A-shirt down with the good side up, and place your binding strip on top of it with the good side down (as in, good sides together).
+Posez votre débardeur avec le bon côté vers le haut, et placez votre bande de biais sur le dessus avec le bon côté vers le bas (c'est-à-dire les bons côtés ensemble).
 
-Align the long edge of your strip with the edge of your fabric so the strip lies on top of the fabric (not in the opening). Place the corner on your starting point.
+Alignez le bord long de votre bande sur le bord de votre tissu de façon à ce que la bande repose sur le tissu (et non dans l'ouverture). Placez le coin sur votre point de départ.
 
-Now shift your binding strip 1cm beyond your starting point. This little extra will guarantee we can join the two ends later.
+Décalez maintenant votre bande de reliure de 1 cm par rapport à votre point de départ. Ce petit surplus garantira que nous pourrons joindre les deux extrémités plus tard.
 
 ### Assurez-vous de savoir où coudre
 
-![Make sure you know where to sew](step03c.png)
+![Assurez-vous de savoir où coudre](step03c.png)
 
 Nous allons coudre à 1,5 cm du bord. Soyez donc prudent car ce n'est pas la marge habituelle de couture.
 
@@ -87,7 +87,7 @@ De plus, nous ne commençons pas à notre point de départ, nous laissons les 3 
 
 ### Coudre le biais bien positionné
 
-![Sew binding in place](step03d.png)
+![Coudre le biais en place](step03d.png)
 
 Cousez votre biais en vous assurant qu'il soit bien placé, tout en étirant délicatement le biais, mais pas le tissu. Assurez-vous de ne pas coudre les 3 derniers cm, laissez-les comme au début.
 
@@ -97,11 +97,11 @@ Vous aurez peut-être besoin de vous entraîner un peu pour y arriver.
 
 ### Marquer les extrémités du biais
 
-![Joining the binding ends](step03e.png)
+![Rejoindre les bouts de biais](step03e.png)
 
 6cm de marge avant de terminer notre cercle, il est temps de coudre les extrémités du biais ensemble.
 
-![Mark binding ends](step03f.png)
+![Marquer les extrémités du biais](step03f.png)
 
 Prenez l'un des bords et étirez-le le long des 3 cm en le séparant du point de départ comme vous le feriez lors de la couture.
 
@@ -109,15 +109,15 @@ Marquer la liaison où elle atteint le point de départ. Faites la même chose p
 
 ### Assembler les extrémités du biais
 
-![Join the ends of the binding](step03g.png)
+![Assembler les extrémités du biais](step03g.png)
 
-Pliez votre A-shirt de la façon dont il vous sera le plus facile pour placer les deux extrémités du biais endroit contre endroit, en alignant les repères. Coudre les extrémités sur les repères.
+Pliez votre débardeur (A-shirt) de la façon dont il vous sera le plus facile pour placer les deux extrémités du biais endroit contre endroit, en alignant les repères. Coudre les extrémités sur les repères.
 
 > 6 cm n'est pas beaucoup, mais ça devrait suffire pour placer les deux bords confortablement sous votre machine pour les coudre.
 
 ### Terminer les 6 derniers cm de biais
 
-![Sew binding ends together](step03h.png)
+![Coudre les extrémités du biais ensemble](step03h.png)
 
 Maintenant que vos extrémités de biais sont réunies, il est temps de terminer les 6 dernière cm du biais. Cousez-les en restant à 1,5cm du bord comme vous l'avez fait auparavant.
 
@@ -125,15 +125,15 @@ Maintenant que vos extrémités de biais sont réunies, il est temps de terminer
 
 ### Pliez votre biais sur le bord du tissu sur l'envers
 
-![Fold knit binding to the back](step04a.png)
+![Plier le biais de jersey sur l'arrière](step04a.png)
 
-Pliez votre bande de biais par-dessus le tissu de votre A-Shirt sur l'envers. Voici comment nous allons le coudre.
+Pliez votre bande de biais par-dessus le tissu de votre débardeur (A-Shirt) sur l'envers. Voici comment nous allons le coudre.
 
 > Alors que le tissu est plié deux fois sur l'endroit (ce qui cache donc le bord du biais) il n'est pas nécessaire de faire cela à l'arrière. Nous allons simplement couper le bord plus tard, étant donné que le jersey ne s'effiloche pas. Si nous devions replier le tissu à l'arrière également, cela ne ferait qu'ajouter de l'épaisseur.
 
 ### Coudre votre biais
 
-![Sew the knit binding down](step04b.png)
+![Coudre le biais de jersey](step04b.png)
 
 Sur l'endroit de votre tissu, cousez le long du bord de votre biais (le plus loin du bord du pli), en s'assurant de bien prendre le biais de l'arrière dans la couture.
 
@@ -143,7 +143,7 @@ Si vous avez une recouvreuse, ce sera parfait pour cette couture
 
 </Note>
 
-Une fois de plus, vous devrez étirer un peu votre biais en faisant cela. But this time, there's an extra caveat to look out for.
+Une fois de plus, vous devrez étirer un peu votre biais en faisant cela. Mais cette fois-ci, il y a une mise en garde supplémentaire à faire.
 
 <Note>
 
@@ -161,9 +161,9 @@ Veillez donc à ce que cela se produise, et si vous le voyez, étirez un peu plu
 
 ## Étape 5 : Couper l'excédent de biais à l'intérieur
 
-![Trim back knit binding on the inside](step05.png)
+![Couper l'excédent de biais à l'intérieur](step05.png)
 
-À l'intérieur de votre A-Shirt, coupez le biais près votre couture pour finir.
+À l'intérieur de votre débardeur (A-Shirt), coupez le biais près votre couture pour finir.
 
 <Note>
 
@@ -171,4 +171,4 @@ Faites attention à ne pas faire un trou dans votre A-shirt. Sérieusement, cela
 
 </Note>
 
-![That's it, you're done 👍](finished.gif)
+![Voilà, vous avez fini 👍](finished.gif)
