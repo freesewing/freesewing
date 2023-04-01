@@ -7,8 +7,8 @@ titre : "Tablier Albert : Instructions de couture"
 - Le long du haut de la poche, pliez la marge de couture sur l'envers, repassez.
 - Pliez ensuite le surplus de l'ourlet supérieur sur l'envers et repassez, en veillant à ce que le surplus de couture soit rentré en dessous. Épinglez si nécessaire.
 - Repassez le surplus de couture des côtés et du bas sur l'envers.
-- On the right side topstich close to where the hem edge lies underneath, making sure to catch the hem and seam allowances as you sew.
-- Pin the pocket to the front using the guides.
+- Sur l'endroit, surpiquez près de l'endroit où le bord de l'ourlet se trouve en dessous, en veillant à attraper l'ourlet et les surplus de couture pendant que vous cousez.
+- Épinglez la poche sur le devant en utilisant les guides.
 - _Edgestitch_ the sides and bottom of the pocket leaving the top open. Make sure to backstitch at the start and end to secure the pocket properly.
 
 <Tip>
