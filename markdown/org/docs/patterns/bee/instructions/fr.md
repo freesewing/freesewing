@@ -1,38 +1,38 @@
 ---
-title: "Bee bikini top: Sewing Instructions"
+title: "Haut de bikini Bee : Instructions de couture"
 ---
 
 <Warning>
-Make sure to use a stretch stitch
+Veillez à utiliser un point extensible
 </Warning>
 
 <Note>
 
-When making a reversible top the second colour will be refered to as the lining fabric.  
-The notches in this pattern act more like dots so **do not** clip them to mark them.
+Lors de la réalisation d'un haut réversible, la seconde couleur sera désignée comme le tissu de doublure.  
+Les encoches de ce motif se comportent davantage comme des points, il ne faut donc **pas** les couper pour les marquer.
 
 </Note>
 
-### Step 1: Construct the Neck Ties
+### Étape 1 : Construire les nouettes du cou
 
-#### Neck Ties One Colour Method
+#### Nouettes de cou Méthode Une Couleur
 
-- Fold one of the neck tie pieces in half lengthwise, right sides and raw edges together.
-- Sew along the raw edges, leaving one of the short ends open.
-- Trim the seam allowances and clip the corners.
-- Turn inside out and press.
+- Pliez l'un des morceaux de la nouette en deux dans le sens de la longueur, endroit et bords bruts ensemble.
+- Coudre le long des bords bruts, laissant une des courtes extrémités ouvertes.
+- Découpez les surplus de couture et coupez les coins.
+- Retourner et presser.
 
-<Note>Repeat this for the other neck tie</Note>
+<Note>Répétez ceci pour l'autre nouette de cou</Note>
 
-#### Neck Ties Two Colours Method
+#### Nouettes de cou Méthode Deux Couleurs
 
-- With right sides together, sew one main neck tie to one lining neck tie leaving one of the short edges open.
-- Trim the seam allowances and clip the corners.
-- Turn inside out. Press.
+- Endroit contre endroit, coudre une nouette principale à une cravate de doublure en laissant l'un des bords courts ouvert.
+- Découpez les surplus de couture et coupez les coins.
+- Retourner à l'envers. Appuyer.
 
-<Note>Repeat this for the the remaining neck tie pieces</Note>
+<Note>Répétez ceci pour les pièces restantes de nouettes de cou</Note>
 
-### Step 2: The Cups
+### Étape 2 : Les coques
 
 #### Band Tie Variant
 
