@@ -44,6 +44,7 @@ export function useApp(props = {}) {
   /*
    * Helper methods for specific state updates
    */
+  const setModal = (content) => updateState('modal', content)
   const closeModal = () => updateState('modal', null)
   const closeMenu = (name) =>
     get(state, `menu.${name}`, false) ? updateState(`menu.${name}`, false) : null
@@ -58,6 +59,7 @@ export function useApp(props = {}) {
     unsetState,
 
     // Helper methods
+    setModal,
     closeModal,
     closeMenu,
     startLoading,

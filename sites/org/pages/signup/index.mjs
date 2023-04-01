@@ -14,7 +14,7 @@ import { SusiWrapper } from 'site/components/wrappers/susi.mjs'
 import { Robot } from 'shared/components/robot/index.mjs'
 import { EmailValidButton } from 'site/components/buttons/email-valid-button.mjs'
 import { ButtonText } from '../signin/index.mjs'
-import { EmailIcon, RightIcon, WarningIcon } from 'shared/components/icons.mjs'
+import { EmailIcon, LeftIcon, RightIcon, WarningIcon, HelpIcon } from 'shared/components/icons.mjs'
 
 // Translation namespaces used on this page
 const namespaces = ['signup', 'errors']
@@ -55,10 +55,29 @@ const SignUpPage = (props) => {
     } catch (err) {
       setError(app.error(err))
       // Here to keep the stupid linter happy
-      console.log(error)
+      console.log(err)
     }
     if (res.result === 'success') setResult('success')
-    else setResult('fail')
+    else {
+      app.setModal(
+        <div className="bg-base-100 rounded-lg p-4 max-w-xl">
+          <h3>An error occured while trying to process your request</h3>
+          <Robot pose="ohno" className="m-auto w-56" embed />
+          <p className="text-lg">{t('err2')}</p>
+          <p className="text-lg">{t('err3')}</p>
+          <div className="flex flex-row gap-4 items-center justify-center p-8">
+            <button className="btn btn-primary px-8" onClick={() => setResult(false)}>
+              <LeftIcon />
+              <span className="pl-2">{t('back')}</span>
+            </button>
+            <Link href="/support" className="btn btn-primary btn-outline px-8">
+              <HelpIcon />
+              <span className="pl-2">{t('contact')}</span>
+            </Link>
+          </div>
+        </div>
+      )
+    }
   }
 
   const loadingClasses = app.state.loading ? 'opacity-50' : ''
@@ -77,6 +96,7 @@ const SignUpPage = (props) => {
             <span>{t('joinFreeSewing')}!</span>
           )}
         </h1>
+
         {result ? (
           result === 'success' ? (
             <>
@@ -148,6 +168,9 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale)),
+      page: {
+        path: ['signup'],
+      },
     },
   }
 }

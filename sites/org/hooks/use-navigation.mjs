@@ -50,7 +50,7 @@ const sitePages = (locale, t = false) => {
 
 const createCrumbs = (path, nav) =>
   path.map((crumb, i) => {
-    const entry = get(nav, path.slice(0, i + 1))
+    const entry = get(nav, path.slice(0, i + 1), { t: 'no-title', s: path.join('/') })
     const val = { t: entry.t, s: entry.s }
     if (entry.o) val.o = entry.o
 

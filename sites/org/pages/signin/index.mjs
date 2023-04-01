@@ -5,6 +5,7 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useTranslation } from 'next-i18next'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
+import { useRouter } from 'next/router'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { validateEmail, validateTld } from 'shared/utils.mjs'
@@ -61,6 +62,7 @@ const SignInPage = (props) => {
   const { t } = useTranslation(['signin', 'signup', 'toast'])
   const backend = useBackend(app)
   const toast = useToast()
+  const router = useRouter()
 
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
@@ -77,8 +79,7 @@ const SignInPage = (props) => {
       window.setTimeout(() => setSignInFailed(false), 1750)
     }
   }, [signInFailed])
-  setAccount(result.data.account)
-  setToken(result.data.token)
+
   const signinHandler = async (evt) => {
     evt.preventDefault()
     app.startLoading()
@@ -86,13 +87,16 @@ const SignInPage = (props) => {
       ? await backend.signIn({ username, password: false })
       : await backend.signIn({ username, password })
     // Sign-in succeeded
-    console.log(result)
     if (result.success) {
       let msg
       if (magicLink) {
         setMagicLinkSent(true)
         msg = t('signup:emailSent')
       } else {
+        setAccount(result.data.account)
+        setToken(result.data.token)
+        msg = t('signin:welcomeName', { name: result.data.account.username })
+        router.push('/account')
       }
       return toast.success(<b>{msg}</b>)
     }
@@ -103,6 +107,7 @@ const SignInPage = (props) => {
         msg = magicLink ? t('notFound') : t('signInFailed')
       }
       setSignInFailed(msg)
+
       return toast.warning(<b>{msg}</b>)
     }
     // Bad request
@@ -221,6 +226,9 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale)),
+      page: {
+        path: ['signin'],
+      },
     },
   }
 }
