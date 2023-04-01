@@ -1,5 +1,5 @@
 ---
-title: "Bee bikini top: Cutting Instructions"
+title: "Haut de bikini Bee : Instructions de coupe"
 ---
 
 Il y a trois variantes de ce patron. **Une couleur**, qui est celle où le haut de bikini est fait d'une couleur. **Deux couleurs**, celle où le haut de bikini est rendu réversible en utilisant deux couleurs, et **Cross Back Tie Variant**, celle où les attaches du cou se fixent dans le dos en remplaçant l'attache bandeau.
@@ -10,34 +10,34 @@ Il y a trois variantes de ce patron. **Une couleur**, qui est celle où le haut 
 
 **Tissu principal**
 
-- Cut **4 cup** parts.
+- Couper **4 coques**.
 - Couper **2 pièces** de l'attache du cou.
-- Cut **1 band tie** part.
+- Couper **1 bande**.
 
-### Two Colours (Reversible)
+### Deux couleurs (Reversible)
 
 **Tissu principal**
 
-- Cut **2 cup** parts from main.
+- Couper **2 coques**.
 - Couper **2 pièces** de l'attache du cou.
-- Cut **1 band tie** part.
+- Couper **1 bande**.
 
 **Tissu de doublure**
 
-- Cut **2 cup** parts.
+- Couper **2 coques**.
 - Couper **2 pièces** de l'attache du cou.
-- Cut **1 band tie** part.
+- Couper **1 bande**.
 
-### Cross Back Tie Variant.
+### Variante à nouettes a dos croisé.
 
 **Tissu principal**
 
-- Cut **4 cup** parts or Cut **2 cups** from main and lining if making reversible ties.
-- Cut **2 neck tie** parts or Cut **2 neck ties** from main and lining if making reversible ties.
-- Cut **1 band** part if making cross back tie variant instead of band tie variant.
+- Coupez **4 coques ** ou coupez **2 coques** de la partie principale et de la doublure si vous réalisez des liens réversibles.
+- Couper **2 bandes de cou ** ou Couper **2 nouettes** de la pièce principale et de la doublure pour les liens réversibles.
+- Couper **1 bande** si l'on fait une variante de nouettes croisée au lieu d'une variante de nouette à bande.
 
 <Note>
 
-This pattern is easily made reversible by buying a similar fabric to the main fabric and using it as contrast. To save confusion on instructions it will be refered to as the lining fabric.
+Ce motif est facilement rendu réversible en achetant un tissu similaire au tissu principal et en l’utilisant comme contraste. Pour éviter toute confusion dans les instructions, nous l'appellerons le tissu de doublure.
 
 </Note>
