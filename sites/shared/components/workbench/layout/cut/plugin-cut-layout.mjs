@@ -54,7 +54,7 @@ export const cutLayoutPlugin = function (material, grainAngle) {
         // for each set of cutting instructions for this material
         matCutConfig.forEach(({ cut, identical, bias, ignoreOnFold }, i) => {
           // get the grain angle for the part for this set of instructions
-          const cGrain = partCutlist.grain ? partCutlist.grain + (bias ? 45 : 0) : undefined
+          const grainSpec = partCutlist.grain ? partCutlist.grain + (bias ? 45 : 0) : undefined
 
           // for each piece that should be cut
           for (let c = 0; c < cut; c++) {
@@ -64,18 +64,37 @@ export const cutLayoutPlugin = function (material, grainAngle) {
             pattern.addPart({
               name: dupPartName,
               from: activePartConfig,
-              draft: ({ part, macro }) => {
+              draft: ({ part, macro, store, points }) => {
+                // the amount to rotate is the difference between this part's grain angle (as drafted) and the fabric's grain angle
+                let toRotate = grainSpec === undefined ? 0 : grainAngle - grainSpec
+                // don't over rotate
+                toRotate = toRotate % 180
+                if (toRotate < 0) toRotate += 180
+
                 // handle fold and grain for these cutting instructions
-                macro('handleFoldAndGrain', {
-                  partCutlist,
-                  grainSpec: cGrain,
-                  ignoreOnFold,
-                  bias,
-                })
+                const titleSo = store.get(['title', part.name])
 
                 // if they shouldn't be identical, flip every other piece
                 if (!identical && c % 2 === 1) macro('flip')
 
+                macro('handleFoldAndGrain', {
+                  partCutlist,
+                  toRotate,
+                  ignoreOnFold,
+                  grainSpec,
+                  bias,
+                })
+
+                if (titleSo) {
+                  const newTitleSo = {
+                    ...titleSo,
+                    at: points[`_${titleSo.prefix || ''}_titleNr`],
+                    append: false,
+                  }
+                  if (titleSo.rotation !== undefined)
+                    newTitleSo.rotation = titleSo.rotation - toRotate
+                  macro('title', newTitleSo)
+                }
                 return part
               },
             })
@@ -90,7 +109,10 @@ export const cutLayoutPlugin = function (material, grainAngle) {
       ...pluginFlip.macros,
       ...pluginMirror.macros,
       // handle mirroring on the fold and rotating to sit along the grain or bias
-      handleFoldAndGrain: ({ partCutlist, grainSpec, ignoreOnFold, bias }, { points, macro }) => {
+      handleFoldAndGrain: (
+        { partCutlist, toRotate, grainSpec, ignoreOnFold, bias },
+        { points, macro }
+      ) => {
         // if there's a grain angle, rotate the part to be along it
         // if the part has cutonfold instructions
         if (partCutlist.cutOnFold) {
@@ -104,8 +126,7 @@ export const cutLayoutPlugin = function (material, grainAngle) {
           }
         }
 
-        if (grainSpec !== undefined)
-          macro('rotateToGrain', { grainAngle, bias, partGrain: grainSpec })
+        macro('rotateToGrain', { toRotate, bias })
       },
       // mirror the part across the line indicated by cutonfold
       mirrorOnFold: ({ fold }, { paths, snippets, utils, macro, points }) => {
@@ -168,16 +189,12 @@ export const cutLayoutPlugin = function (material, grainAngle) {
        * if the part should be on the bias, this rotates the part to lie on the bias
        * while keeping the grainline annotation along the grain
        */
-      rotateToGrain: ({ partGrain, grainAngle, bias }, { paths, snippets, Point, points }) => {
-        // if this part doesn't have a grain recorded, bail
-        if (partGrain === undefined) return
-        // the amount to rotate is the difference between this part's grain angle (as drafted) and the fabric's grain angle
-        let toRotate = grainAngle - partGrain
-        // don't over rotate
-        toRotate = toRotate % 180
+      rotateToGrain: (
+        { toRotate, bias },
+        { paths, snippets, Point, points, part, store, macro }
+      ) => {
         // if there's no difference, don't rotate
         if (toRotate === 0) return
-
         // we'll pivot rotations along the grainline to point, with a fallback
         const pivot = points.grainlineTo || new Point(0, 0)
 
@@ -206,21 +223,28 @@ export const cutLayoutPlugin = function (material, grainAngle) {
           snippets[snippetName].anchor = snippets[snippetName].anchor.rotate(toRotate, pivot)
         }
 
-        // go through all the points
         for (const pointName in points) {
           const point = points[pointName]
-          const pointAttrs = point.attributes
-          // if it has attributes, we want to rotate it
-          if (Object.keys(pointAttrs.list).length) {
-            points[pointName] = point.rotate(toRotate, pivot)
+          const pointAttrs = point.attributes.clone()
 
-            // title points need to be re-rotated around the top title point to avoid text collisions
-            if (pointName.match(/_(title|exportDate)(?!Nr)/))
-              points[pointName] = points[pointName].rotate(-toRotate, points.__titleNr)
+          points[pointName] = point.rotate(toRotate, pivot)
 
-            // put the attributes back onto the new point
-            points[pointName].attributes = pointAttrs.clone()
+          points[pointName].attributes = pointAttrs
+          let textTransform = pointAttrs.get('data-text-transform')
+          const textTransformRotation = textTransform ? textTransform.match(/rotate\(\s*\d+/) : null
+
+          let textRotationAmt = -toRotate
+          if (textTransformRotation) {
+            const textRotation = textTransformRotation[0]
+            textRotationAmt = parseFloat(textRotation.replace(/rotate\(\s*/, ''))
           }
+
+          let newTransform = `rotate(${textRotationAmt} ${points[pointName].x} ${points[pointName].y})`
+
+          if (textTransform)
+            newTransform = textTransform.replace(/rotate\((\s*\d+\.*\d*,*){3}\)/, newTransform)
+
+          points[pointName].attr('data-text-transform', newTransform, true)
         }
       },
     },
