@@ -2,7 +2,7 @@
 title: "Haut de bikini Bee : Instructions de coupe"
 ---
 
-Il y a trois variantes de ce patron. **Une couleur**, qui est celle où le haut de bikini est fait d'une couleur. **Deux couleurs**, celle où le haut de bikini est rendu réversible en utilisant deux couleurs, et **Cross Back Tie Variant**, celle où les attaches du cou se fixent dans le dos en remplaçant l'attache bandeau.
+Il y a trois variantes de ce patron. **Une couleur**, qui est celle où le haut de bikini est fait d'une couleur. **Deux couleurs**, celle où le haut de bikini est rendu réversible en utilisant deux couleurs, et **Variante a nouettes à dos croisé**, celle où les attaches du cou se fixent dans le dos en remplaçant l'attache bandeau.
 
 ## Matériaux
 
