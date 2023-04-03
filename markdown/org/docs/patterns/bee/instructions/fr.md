@@ -13,32 +13,32 @@ Les encoches de ce motif se comportent davantage comme des points, il ne faut do
 
 </Note>
 
-### Étape 1 : Construire les nouettes du cou
+### Étape 1 : Construire les bretelles du cou
 
-#### Nouettes de cou Méthode Une Couleur
+#### Bretelles de cou Méthode Une Couleur
 
-- Pliez l'un des morceaux de la nouette en deux dans le sens de la longueur, endroit et bords bruts ensemble.
+- Pliez l'un des morceaux de la bretelle en deux dans le sens de la longueur, endroit et bords bruts ensemble.
 - Coudre le long des bords bruts, laissant une des courtes extrémités ouvertes.
 - Découpez les surplus de couture et coupez les coins.
 - Retourner et presser.
 
-<Note>Répétez ceci pour l'autre nouette de cou</Note>
+<Note>Répétez ceci pour l'autre bretelle de cou</Note>
 
-#### Nouettes de cou Méthode Deux Couleurs
+#### Bretelles de cou Méthode Deux Couleurs
 
-- Endroit contre endroit, coudre une nouette principale à une cravate de doublure en laissant l'un des bords courts ouvert.
+- Endroit contre endroit, coudre une bretelle principale à une bretelle de doublure en laissant l'un des bords courts ouvert.
 - Découpez les surplus de couture et coupez les coins.
 - Retourner à l'envers. Appuyer.
 
-<Note>Répétez ceci pour les pièces restantes de nouettes de cou</Note>
+<Note>Répétez ceci pour les pièces restantes des bretelles de cou</Note>
 
-### Étape 2 : Les coques
+### Étape 2 : Les bonnets
 
 #### Variante bandeau
 
-- With raw edges and main fabric together, _baste_ one of the neck ties to the top of one of the cup pieces making sure that the tie goes towards the bottom of the cup.
-- With the neck tie sandwiched inside, pin a lining cup piece right sides together to the main cup piece.
-- Sew the lining to the main cup between notches along the front, top and side seams, making sure not to catch the neck tie and to reinforce the stitch at the notches.
+- Avec les bords bruts et le tissu principal ensemble, _coller_ l'une des bretelles sur le haut de l'un des morceaux de bonnet en veillant à ce que la bretelle aille vers le bas du bonnet.
+- Avec la bretelle de cou priss en sandwich à l'intérieur, épinglez un morceau de bonnet de doublure, endroit contre endroit, sur le morceau de bonnet principal.
+- Cousez la doublure au bonnet principal entre les encoches le long des coutures avant, supérieures et latérales, en veillant à ne pas accrocher la bretelle et à renforcer le point au niveau des encoches.
 - (Optional) Fold to the wrong side and _edgestitch_ the seam allowance down between notches on the front and side seams. Do not sew the allowances together.
 - With good sides together, sew the lining to the main fabric along the bottom, leaving a gap between the side notches making sure to reinforce the stitch at the either end.
 - Trim the seam allowances of the sewn edges whilst leaving the seam allowance between the notches. Clip the corners. You may also need to clip the curved seams.
