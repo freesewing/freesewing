@@ -2982,10 +2982,10 @@
     ora "^5.1.0"
     update-notifier "^5.0.1"
 
-"@maizzle/framework@4.4.3":
-  version "4.4.3"
-  resolved "https://registry.yarnpkg.com/@maizzle/framework/-/framework-4.4.3.tgz#b44ce8a2718943bcec9465deb01da8cbdba49c34"
-  integrity sha512-wOXoVudZVwLAmlWTEj+lLsdJTqDyTnq5aWa5QeW1wDYNpXREgOW6YRgeh9RWQ3ll7O2sG3PLP6zPFeYjTz5oFQ==
+"@maizzle/framework@4.4.4":
+  version "4.4.4"
+  resolved "https://registry.yarnpkg.com/@maizzle/framework/-/framework-4.4.4.tgz#a7ba9ab5d0bf53393c69780302814b2e01c6d3cb"
+  integrity sha512-gf2jhKJ+xcmDxySZE2/FBOjuNiB/xo41yPn8DhgkE1J6ikbt95it0H0bRzErauYoPivtaC3P8EEo7eJpeIZVyg==
   dependencies:
     "@maizzle/cli" "^1.5.1"
     autoprefixer "^10.4.14"
