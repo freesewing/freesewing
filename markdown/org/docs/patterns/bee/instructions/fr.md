@@ -34,7 +34,7 @@ Les encoches de ce motif se comportent davantage comme des points, il ne faut do
 
 ### Étape 2 : Les coques
 
-#### Band Tie Variant
+#### Variante bandeau
 
 - With raw edges and main fabric together, _baste_ one of the neck ties to the top of one of the cup pieces making sure that the tie goes towards the bottom of the cup.
 - With the neck tie sandwiched inside, pin a lining cup piece right sides together to the main cup piece.
@@ -63,7 +63,7 @@ Whilst certainly optional it is recommended to _edgestitch_ the top and sides of
 
 </Note>
 
-#### Cross Back Ties Variant
+#### Variante lacé croisé
 
 - With raw edges and main fabric together, _baste_ one of the neck ties to the top of one of the cup pieces making sure that the tie goes towards the bottom of the cup.
 - With the neck tie sandwiched inside, pin a lining cup piece right sides together to the main cup piece.
