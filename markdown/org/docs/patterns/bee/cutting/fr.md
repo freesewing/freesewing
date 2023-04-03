@@ -10,31 +10,31 @@ Il y a trois variantes de ce patron. **Une couleur**, qui est celle où le haut 
 
 **Tissu principal**
 
-- Couper **4 coques**.
+- Couper **4 bonnets**.
 - Couper **2 pièces** de l'attache du cou.
-- Couper **1 bande**.
+- Couper **1 bandeau**.
 
 ### Deux couleurs (Reversible)
 
 **Tissu principal**
 
-- Couper **2 coques**.
+- Couper **2 bonnets**.
 - Couper **2 pièces** de l'attache du cou.
-- Couper **1 bande**.
+- Couper **1 bandeau**.
 
 **Tissu de doublure**
 
-- Couper **2 coques**.
+- Couper **2 bonnets**.
 - Couper **2 pièces** de l'attache du cou.
-- Couper **1 bande**.
+- Couper **1 bandeau**.
 
-### Variante à nouettes a dos croisé.
+### Variante à lacets croisés dans le dos.
 
 **Tissu principal**
 
-- Coupez **4 coques ** ou coupez **2 coques** de la partie principale et de la doublure si vous réalisez des liens réversibles.
-- Couper **2 bandes de cou ** ou Couper **2 nouettes** de la pièce principale et de la doublure pour les liens réversibles.
-- Couper **1 bande** si l'on fait une variante de nouettes croisée au lieu d'une variante de nouette à bande.
+- Coupez **4 bonnets ** ou coupez **2 bonnets** de la partie principale et de la doublure si vous réalisez des liens réversibles.
+- Couper **2 bretelles de cou ** ou couper **2 bretelles de cou ** de la pièce principale et de la doublure pour les bretelles réversibles.
+- Couper **1 bande** si l'on fait une variante à lacets croisés au lieu d'une variante en bandeau.
 
 <Note>
 
