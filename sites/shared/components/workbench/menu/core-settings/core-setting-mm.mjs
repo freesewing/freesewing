@@ -47,7 +47,7 @@ export const CoreSettingMm = (props) => {
         type="range"
         max={max}
         min={min}
-        step={0.1}
+        step={1}
         value={value}
         onChange={handleChange}
         className={`

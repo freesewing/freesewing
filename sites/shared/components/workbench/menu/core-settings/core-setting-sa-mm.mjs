@@ -25,6 +25,7 @@ export const CoreSettingSaMm = (props) => {
   const reset = () => {
     setValue(dflt)
     props.updateGist(['saMm'], dflt)
+    props.updateGist(['sa'], dflt)
   }
 
   return (
@@ -48,7 +49,7 @@ export const CoreSettingSaMm = (props) => {
         type="range"
         max={max}
         min={min}
-        step={0.1}
+        step={1}
         value={value}
         onChange={handleChange}
         className={`
