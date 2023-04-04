@@ -140,17 +140,40 @@ function draftHiBelly({
   points.belly09cp2 = points.belly01cp1.flipY()
   points.belly10cp2 = points.belly10cp1.flipY()
 
-  paths.top = new Path()
+  paths.body1 = new Path()
     .move(points.belly04)
     .curve(points.belly04cp2, points.belly03cp1, points.belly03)
+    .attr('data-text-class', 'text-xs')
+  paths.body2 = new Path()
+    .move(points.belly07)
+    .curve(points.belly07cp2, points.belly06cp1, points.belly06)
+    .attr('data-text-class', 'text-xs')
+  paths.finAttachmentBelly1 = new Path()
+    .move(points.belly03)
     .curve(points.belly03cp2, points.belly02cp1, points.belly02)
+    .attr('data-text-class', 'text-xs')
+  paths.finAttachmentBelly2 = new Path()
+    .move(points.belly08)
+    .curve(points.belly08cp2, points.belly07cp1, points.belly07)
+    .attr('data-text-class', 'text-xs')
+  paths.mouthAttachment1 = new Path()
+    .move(points.belly02)
     .curve(points.belly02cp2, points.belly01cp1, points.belly01)
+  paths.mouthAttachment2 = new Path()
+    .move(points.belly09)
+    .curve(points.belly09cp2, points.belly08cp1, points.belly08)
+
+  paths.top = new Path()
+    .move(points.belly04)
+    .join(paths.body1)
+    .join(paths.finAttachmentBelly1)
+    .join(paths.mouthAttachment1)
     .hide()
   paths.bottom = new Path()
     .move(points.belly09)
-    .curve(points.belly09cp2, points.belly08cp1, points.belly08)
-    .curve(points.belly08cp2, points.belly07cp1, points.belly07)
-    .curve(points.belly07cp2, points.belly06cp1, points.belly06)
+    .join(paths.mouthAttachment2)
+    .join(paths.finAttachmentBelly2)
+    .join(paths.body2)
     .hide()
   paths.seam = new Path()
     .move(points.belly01)
@@ -173,17 +196,84 @@ function draftHiBelly({
 
   // Complete?
   if (complete) {
-    points.bellyMouthSnippet1 = new Path()
-      .move(points.belly01)
-      .curve(points.belly01cp1, points.belly02cp2, points.belly02)
+    points.bellyMouthSnippet1 = paths.mouthAttachment1
+      .reverse()
       .shiftAlong(store.get('mouthBottomLength'))
-    points.bellyMouthSnippet2 = points.bellyMouthSnippet1.flipY()
+    points.bellyMouthSnippet2 = paths.mouthAttachment2
+      .reverse()
+      .shiftAlong(store.get('mouthBottomLength'))
 
     snippets.mouth1 = new Snippet('bnotch', points.bellyMouthSnippet1)
     snippets.mouth2 = new Snippet('bnotch', points.bellyMouthSnippet2)
 
+    macro('banner', {
+      path: paths.finAttachmentBelly1,
+      text: '-o-',
+      dy: 0,
+      spaces: 3,
+      repeat: 7,
+    })
+    macro('banner', {
+      path: paths.finAttachmentBelly2,
+      text: '-o-',
+      dy: 0,
+      spaces: 3,
+      repeat: 7,
+    })
+
+    let split1 = paths.mouthAttachment1.split(points.bellyMouthSnippet1)
+    let split2 = paths.mouthAttachment2.split(points.bellyMouthSnippet2)
+    paths.mouth1 = split1[1].attr('data-text-class', 'text-xs')
+    paths.mouth2 = split2[0].attr('data-text-class', 'text-xs')
+    paths.aboveMouth1 = split1[0].attr('data-text-class', 'text-xs')
+    paths.aboveMouth2 = split2[1].attr('data-text-class', 'text-xs')
+
+    macro('banner', {
+      path: paths.mouth1,
+      text: 'mouth',
+      dy: 0,
+      spaces: 3,
+      repeat: 3,
+    })
+    macro('banner', {
+      path: paths.mouth2,
+      text: 'mouth',
+      dy: 0,
+      spaces: 3,
+      repeat: 3,
+    })
+    macro('banner', {
+      path: paths.body1,
+      text: 'body',
+      dy: 0,
+      spaces: 3,
+      repeat: 3,
+    })
+    macro('banner', {
+      path: paths.body2,
+      text: 'body',
+      dy: 0,
+      spaces: 3,
+      repeat: 3,
+    })
+    macro('banner', {
+      path: paths.aboveMouth1,
+      text: 'aboveMouth',
+      dy: 0,
+      spaces: 3,
+      repeat: 3,
+    })
+    macro('banner', {
+      path: paths.aboveMouth2,
+      text: 'aboveMouth',
+      dy: 0,
+      spaces: 3,
+      repeat: 3,
+    })
+
     points.grainlineFrom = new Point(points.belly10.x, points.belly02.y * 0.7)
     points.grainlineTo = new Point(points.belly05.x, points.belly02.y * 0.7)
+
     macro('grainline', {
       from: points.grainlineFrom,
       to: points.grainlineTo,

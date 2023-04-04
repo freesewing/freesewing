@@ -45,13 +45,17 @@ function draftHiMouth({
   points.mouth04cp1 = points.mouth02cp2.flipX()
   points.mouth03cp1 = points.mouth03cp2.flipX()
 
-  paths.seam = new Path()
-    .move(points.mouth01)
+  paths.aboveMouth = new Path()
+    .move(points.mouth02)
+    .curve(points.mouth02cp2, points.mouth01cp1, points.mouth01)
     .curve(points.mouth01cp2, points.mouth04cp1, points.mouth04)
+    .attr('data-text-class', 'text-xs')
+  paths.belly = new Path()
+    .move(points.mouth04)
     .curve(points.mouth04cp2, points.mouth03cp1, points.mouth03)
     .curve(points.mouth03cp2, points.mouth02cp1, points.mouth02)
-    .curve(points.mouth02cp2, points.mouth01cp1, points.mouth01)
-    .close()
+    .attr('data-text-class', 'text-xs')
+  paths.seam = new Path().move(points.mouth02).join(paths.aboveMouth).join(paths.belly).close()
 
   store.set(
     'mouthTopLength',
@@ -92,6 +96,21 @@ function draftHiMouth({
     snippets.mouthlowerTeeth2 = new Snippet('bnotch', points.mouthlowerTeeth2)
     snippets.mouthMidTop = new Snippet('bnotch', points.mouth01)
     snippets.mouthMidBottom = new Snippet('bnotch', points.mouth03)
+
+    macro('banner', {
+      path: paths.aboveMouth,
+      text: 'aboveMouth',
+      dy: 0,
+      spaces: 4,
+      repeat: 6,
+    })
+    macro('banner', {
+      path: paths.belly,
+      text: 'belly',
+      dy: 0,
+      spaces: 4,
+      repeat: 6,
+    })
 
     points.titleAnchor = points.mouth01.shiftFractionTowards(points.mouth02, 0.33)
     points.logoAnchor = points.mouth01.shiftFractionTowards(points.mouth04, 0.3)

@@ -89,6 +89,19 @@ function draftHiTail({
       .shiftFractionAlong(0.25)
     snippets.tail = new Snippet('bnotch', points.tailSnippet)
 
+    paths.body = new Path()
+      .move(points.tail05)
+      .curve(points.tail05cp1, points.tail01cp2, points.tail01)
+      .attr('class', 'hidden')
+      .attr('data-text-class', 'text-xs')
+    macro('banner', {
+      path: paths.body,
+      text: 'body',
+      dy: 0,
+      spaces: 10,
+      repeat: 3,
+    })
+
     points.titleAnchor = points.tail03.shiftFractionTowards(points.tail01, 0.4)
     points.logoAnchor = points.tail03.shiftFractionTowards(points.tail05, 0.5)
 

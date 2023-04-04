@@ -97,11 +97,29 @@ function draftHiBottomFin({
 
   // Complete?
   if (complete) {
-    points.bottomFinSnippet = new Path()
+    let finAttachment = new Path()
       .move(points.bottomFin01)
       .curve(points.bottomFin01cp2, points.bottomFin03cp1, points.bottomFin03)
-      .shiftAlong(store.get('aboveMouthFinLength'))
+    points.bottomFinSnippet = finAttachment.shiftAlong(store.get('aboveMouthFinLength'))
     snippets.bottomFin = new Snippet('bnotch', points.bottomFinSnippet)
+
+    let attachments = finAttachment.split(points.bottomFinSnippet)
+    paths.finAttachmentAboveMouth = attachments[0].reverse().attr('data-text-class', 'text-xs')
+    paths.finAttachmentBelly = attachments[1].reverse().attr('data-text-class', 'text-xs')
+    macro('banner', {
+      path: paths.finAttachmentAboveMouth,
+      text: '+',
+      dy: 0,
+      spaces: 0,
+      repeat: 4,
+    })
+    macro('banner', {
+      path: paths.finAttachmentBelly,
+      text: '-o-',
+      dy: 0,
+      spaces: 4,
+      repeat: 7,
+    })
 
     points.titleAnchor = points.bottomFin02
       .shiftFractionTowards(points.bottomFin01, 0.4)

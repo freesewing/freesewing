@@ -78,6 +78,19 @@ function draftHiTopFin({
 
   // Complete?
   if (complete) {
+    paths.body = new Path()
+      .move(points.topFin01)
+      .curve(points.topFin01cp2, points.topFin03cp1, points.topFin03)
+      .attr('class', 'hidden')
+      .attr('data-text-class', 'text-xs')
+    macro('banner', {
+      path: paths.body,
+      text: 'body',
+      dy: 0,
+      spaces: 10,
+      repeat: 3,
+    })
+
     points.titleAnchor = points.topFin01
       .shiftFractionTowards(points.topFin02, 0.5)
       .shiftFractionTowards(points.topFin03, 0.1)

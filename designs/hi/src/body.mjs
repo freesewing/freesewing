@@ -411,6 +411,53 @@ function draftHiBody({
       paths.sa = paths.allButDart.close().offset(sa).attr('class', 'fabric sa')
     }
 
+    paths.aboveMouth = new Path()
+      .move(points.body17)
+      .curve(points.body17cp1, points.body18cp2, points.body18)
+      .attr('data-text-class', 'text-xs')
+    macro('banner', {
+      path: paths.aboveMouth,
+      text: 'aboveMouth',
+      dy: 0,
+      spaces: 0,
+      repeat: 1,
+    })
+    paths.belly = new Path()
+      .move(points.body15)
+      .curve(points.body15cp1, points.body16cp2, points.body16)
+      .attr('data-text-class', 'text-xs')
+    macro('banner', {
+      path: paths.belly,
+      text: 'belly',
+      dy: 0,
+      spaces: 10,
+      repeat: 3,
+    })
+    paths.topFin = new Path()
+      .move(points.body16)
+      .curve(points.body16cp1, points.body17cp2, points.body17)
+      .attr('class', 'hidden')
+      .attr('data-text-class', 'text-xs')
+    macro('banner', {
+      path: paths.topFin,
+      text: 'topFin',
+      dy: 0,
+      spaces: 10,
+      repeat: 3,
+    })
+    paths.tail = new Path()
+      .move(points.body13)
+      .curve(points.body13cp1, points.body14cp2, points.body14)
+      .attr('class', 'hidden')
+      .attr('data-text-class', 'text-xs')
+    macro('banner', {
+      path: paths.tail,
+      text: 'tail',
+      dy: 0,
+      spaces: 14,
+      repeat: 3,
+    })
+
     macro('ld', {
       from: points.body13,
       to: points.body01,
@@ -426,30 +473,6 @@ function draftHiBody({
     points.titleAnchor = points.body04.shiftFractionTowards(points.body17, 0.4)
     points.logoAnchor = points.body06.shiftFractionTowards(points.body16, 0.6)
 
-    paths.topFin = new Path()
-      .move(points.body16)
-      .curve(points.body16cp1, points.body17cp2, points.body17)
-      .attr('class', 'hidden')
-
-    macro('banner', {
-      path: paths.topFin,
-      text: 'topFin',
-      dy: 1,
-      spaces: 1,
-      repeat: 1,
-    })
-    paths.tail = new Path()
-      .move(points.body13)
-      .curve(points.body13cp1, points.body14cp2, points.body14)
-      .attr('class', 'hidden')
-
-    macro('banner', {
-      path: paths.tail,
-      text: 'tail',
-      dy: 1,
-      spaces: 1,
-      repeat: 1,
-    })
     if (options.size < 0.35) {
       points.scaleboxAnchor = new Point(points.body06.x - 60 - sa, points.body11.y - 35 - sa)
     } else {
