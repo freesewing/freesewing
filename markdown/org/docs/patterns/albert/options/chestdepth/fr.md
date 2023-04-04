@@ -1,9 +1,9 @@
 - - -
-title: "Strap length"
+titre : "Longueur de la sangle"
 - - -
 
-Controls the length of the straps on your apron.
+Contrôle la longueur des sangles sur votre tablier.
 
 ## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](albert_chestdepth_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](albert_chestdepth_sample.svg "Effet de cette option sur le patron")
