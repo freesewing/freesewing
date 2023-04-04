@@ -20,6 +20,23 @@ This tutorial assumes that you already have a GitHub account
 containing a fork of the FreeSewing repository.
 </Note>
 
+## Why you might want to use Vercel
+
+There are reasons why you might want your own Vercel account:
+- You can preview your changes:
+  - if you develop on a mobile device or if you do not have access to a
+    computer.
+  - without having to set up and maintain development environments on your
+    own computer.
+  - without having to manually rebuild your development environments each
+    time there is a code change.
+- You can more easily share your work with others.
+
+However, it is not necessary to have your own Vercel account.
+Because we use Vercel to preview pull requests, if you always submit your
+work to the main repository then you will be able to share your work without
+needing to use Vercel yourself.
+
 ## About repositories, projects, and deployments
 
 Vercel works through _repositories_, _projects_, and _deployments_.
@@ -32,7 +49,7 @@ Within each repository there can be multiple projects.
 
 _Projects_ are specific build types for the repository.
 For example, one project in your FreeSewing repository could
-be the one that builds the lab.freesewing.org website.
+be the one that builds the lab.freesewing.dev website.
 You would use this project to test new designs or changes
 to existing designs.
 Another project could be the one that builds the freesewing.org
@@ -143,12 +160,16 @@ website home page.
 
 As mentioned previously, Vercel will eventually create and build many
 deployments for your project.
-One is known as the _production deployment_, based on the `develop` branch
-of the repository.
-All other deployments are referred to as _preview deployments_.
+One is known as the _production deployment_, based on the configured Production Branch of the repository (by default the branch named `main`).
+All other deployments are referred to as _preview deployments_, including
+ones based on the `develop` branch
+(unless you change the Production Branch in the Project Settings to
+`develop` instead of `main).
 
 Created deployments include:
-1. The initial production deployment for the `develop` branch
+1. The initial production deployment. (Because you don't have a branch named
+`main` in your repository, Vercel will instead create the initial
+production deployment from the default `develop` branch.)
 2. A new preview deployment every time you update your `develop` branch in GitHub
 (for example, whenever you sync it with the latest `freesewing/freesewing`
 updates)
