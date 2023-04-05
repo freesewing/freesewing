@@ -1,128 +1,128 @@
 ---
-title: "Bee bikini top: Sewing Instructions"
+title: "Haut de bikini Bee : Instructions de couture"
 ---
 
 <Warning>
-Make sure to use a stretch stitch
+Veillez à utiliser un point extensible
 </Warning>
 
 <Note>
 
-When making a reversible top the second colour will be refered to as the lining fabric.  
-The notches in this pattern act more like dots so **do not** clip them to mark them.
+Lors de la réalisation d'un haut réversible, la seconde couleur sera désignée comme le tissu de doublure.  
+Les encoches de ce motif se comportent davantage comme des points, il ne faut donc **pas** les couper pour les marquer.
 
 </Note>
 
-### Step 1: Construct the Neck Ties
+### Étape 1 : Construire les bretelles du cou
 
-#### Neck Ties One Colour Method
+#### Bretelles de cou Méthode Une Couleur
 
-- Fold one of the neck tie pieces in half lengthwise, right sides and raw edges together.
-- Sew along the raw edges, leaving one of the short ends open.
-- Trim the seam allowances and clip the corners.
-- Turn inside out and press.
+- Pliez l'un des morceaux de la bretelle en deux dans le sens de la longueur, endroit et bords bruts ensemble.
+- Coudre le long des bords bruts, laissant une des courtes extrémités ouvertes.
+- Découpez les surplus de couture et coupez les coins.
+- Retourner et presser.
 
-<Note>Repeat this for the other neck tie</Note>
+<Note>Répétez ceci pour l'autre bretelle de cou</Note>
 
-#### Neck Ties Two Colours Method
+#### Bretelles de cou Méthode Deux Couleurs
 
-- With right sides together, sew one main neck tie to one lining neck tie leaving one of the short edges open.
-- Trim the seam allowances and clip the corners.
-- Turn inside out. Press.
+- Endroit contre endroit, coudre une bretelle principale à une bretelle de doublure en laissant l'un des bords courts ouvert.
+- Découpez les surplus de couture et coupez les coins.
+- Retourner à l'envers. Repasser.
 
-<Note>Repeat this for the the remaining neck tie pieces</Note>
+<Note>Répétez ceci pour les pièces restantes des bretelles de cou</Note>
 
-### Step 2: The Cups
+### Étape 2 : Les bonnets
 
-#### Band Tie Variant
+#### Variante bandeau
 
-- With raw edges and main fabric together, _baste_ one of the neck ties to the top of one of the cup pieces making sure that the tie goes towards the bottom of the cup.
-- With the neck tie sandwiched inside, pin a lining cup piece right sides together to the main cup piece.
-- Sew the lining to the main cup between notches along the front, top and side seams, making sure not to catch the neck tie and to reinforce the stitch at the notches.
-- (Optional) Fold to the wrong side and _edgestitch_ the seam allowance down between notches on the front and side seams. Do not sew the allowances together.
-- With good sides together, sew the lining to the main fabric along the bottom, leaving a gap between the side notches making sure to reinforce the stitch at the either end.
-- Trim the seam allowances of the sewn edges whilst leaving the seam allowance between the notches. Clip the corners. You may also need to clip the curved seams.
-- Turn inside out by pulling the neck tie through one of the gaps. Press.
-- (Optional) _edgestitch_ the top, sides and bottom of the cup leaving the gaps between the notches open.
-- Stitch along casing line to create band channel.
+- Avec les bords bruts et le tissu principal ensemble, _coller_ l'une des bretelles sur le haut de l'un des morceaux de bonnet en veillant à ce que la bretelle aille vers le bas du bonnet.
+- Avec la bretelle de cou priss en sandwich à l'intérieur, épinglez un morceau de bonnet de doublure, endroit contre endroit, sur le morceau de bonnet principal.
+- Cousez la doublure au bonnet principal entre les encoches le long des coutures avant, supérieures et latérales, en veillant à ne pas accrocher la bretelle et à renforcer le point au niveau des encoches.
+- (Facultatif) Pliez sur l'envers et _piquez_ le surplus de couture entre les encoches des coutures du devant et des côtés. Ne cousez pas les surplus ensemble.
+- Endroit contre endroit, coudre la doublure sur le tissu principal le long du bas, en laissant un espace entre les encoches latérales et en veillant à renforcer le point à chaque extrémité.
+- Coupez les surplus de couture des bords cousus en laissant le surplus de couture entre les encoches. Coupez les coins. Vous pouvez également avoir besoin de couper les coutures courbes.
+- Retourner en tirant la bretelle par l'un des interstices. Appuyer.
+- (Facultatif) _piquez_ le haut, les côtés et le bas des bonnets en laissant les espaces entre les encoches ouverts.
+- Piquez le long de la ligne d'encadrement pour créer le bandeau.
 
-<Note>Repeat this for the other cup</Note>
+<Note>Répétez ceci pour l'autre bonnet</Note>
 
 <Tip>
 
-If your seam allowance is wide you may find that you need to trim the gaps' seam allowances a little to reduce bulk.  
-If you are having trouble turning the cups you can try one of these methods:
+Si votre marge de couture est large, il se peut que vous deviez couper légèrement les marges de couture des espaces pour réduire l’excès de matière.  
+Si vous avez des difficultés à retourner les bonnets, vous pouvez essayer l'une des méthodes suivantes :
 
-- Create a 2.5cm (1") gap in the front or side seam and turn throught that, either _slipstitch_-ing the gap closed or _edgestitch_-ing it closed during Step 7.
-- Widen one of the existing gaps and turn through that. Then when turned _edgestitch_ or _slipstitch_ the widened part closed.
+- Créez un espace de 2,5 cm (1") dans la couture du devant ou du côté et retournez à travers cet espace, soit en le fermant au point de glissement, soit en le fermant au point d'ornement au cours de l'étape 7.
+- Élargir l'une des brèches existantes et retourner le tissus à travers. Ensuite, lorsque les points d'ornement ou point de glissements sont effectués, la partie élargie se referme.
 
 </Tip>
 <Note>
 
-Whilst certainly optional it is recommended to _edgestitch_ the top and sides of the cups but the bottom is entirely optional.
+Bien qu'il s'agisse d'une option, il est recommandé de piquer le haut et les côtés des bonnets, mais le bas est tout à fait facultatif.
 
 </Note>
 
-#### Cross Back Ties Variant
+#### Variante lacé croisé
 
-- With raw edges and main fabric together, _baste_ one of the neck ties to the top of one of the cup pieces making sure that the tie goes towards the bottom of the cup.
-- With the neck tie sandwiched inside, pin a lining cup piece right sides together to the main cup piece.
-- Sew the lining to the main cup along the front, top and side seams, making sure not to catch the neck tie.
-- Turn the cups right side out and press.
-- (Optional) _edgestitch_ the top and sides of the cups.
-- Sew a line of basting stitches along the bottom of the cups, just inside the seamline.
-- Gather cups along the basting stitches.
+- Avec les bords bruts et le tissu principal ensemble, _coller_ l'une des bretelels sur le haut de l'un des morceaux de bonnet en veillant à ce que la bretelle aille vers le bas du bonnet.
+- Avec la bretelle de cou prise en sandwich à l'intérieur, épinglez un morceau de bonnet de doublure, endroit contre endroit, sur le morceau de bonnet principal.
+- Coudre la doublure au bonnet principal le long des coutures du devant, du haut et des côtés, en veillant à ne pas accrocher la bretelle.
+- Retourner les bonnets à l'endroit et les repasser.
+- (Facultatif) _piquer_ sur le dessus et les côtés des bonnets.
+- Cousez une ligne de points de bâti le long du bas des bonnets, juste à l'intérieur de la ligne de couture.
+- Rassemblez les bonnets le long des points de bâti.
 
 <Tip>
 
-The amount you gather the cups is a matter of preference and cup size, but you can hold them up to yourself before stitching in place to ensure the fit is right.  
-There are also notches on either side of the band piece's midpoint to help give you an idea of how much to gather by.
+Le degré de rapprochement des bonnets est une question de préférence et de taille de bonnet, mais vous pouvez les essayer sur vous avant de les coudre pour vous assurer qu'ils sont bien ajustés.  
+Des encoches sont également présentes de part et d'autre du point médian de la pièce pour vous donner une idée de la distance à respecter.
 
 </Tip>
 
-- Find the midpoint of the band piece, this is marked by a notch, then pin the gathered bottoms of cups to band piece, right sides together. You'll want the cups to meet at the band's midpoint.
-- Stitch the cups to the band. Once they're stitched in place, check the fit of the cups once more before continuing. Unpicking swim fabric is a pain, so it's better to make sure the cups fit just right before moving on.
+- Trouvez le point milieu de la bande, marqué par une encoche, puis épinglez les bas de bonnets froncés sur la bande, endroit contre endroit. Les bonnets doivent se rencontrer au point milieu du bandeau.
+- Cousez les bonnets au bandeau. Une fois qu'ils sont cousus en place, vérifiez encore une fois l'ajustement des bonnets avant de continuer. Découdre du tissus de nage est compliqué, il est donc préférable de s'assurer que les bonnets sont bien ajustés avant de continuer.
 
 <Note>
 
-You may prefer to wrap the one cup over the other at the midpoint. To do this place the sides of the cups at the otuer notches and lay their fronts pass the midpoint with the left on top.
+Vous pouvez préférer enrouler un bonnet sur l'autre au milieu. Pour ce faire, placez les côtés des bonnets sur les encoches extérieures et posez leur face avant sur le point milieu, la gauche sur le dessus.
 
 </Note>
 
-- Now it's time to finish the band. To do this, fold in the seam allowance on both sides of the band. The raw edges of your swim cups should be turned to the inside of the band. Then, fold the band in half lengthwise, aligning the long edges and enclosing the seam allowances. Swim fabric can be slippery, so you may need extra pins or clips to hold the fabric in place.
-- Stitch along the top of the band, securing the seam allowances within the band.
+- Il est maintenant temps de terminer le bandeau. Pour ce faire, repliez le surplus de couture des deux côtés de la bande. Les bords bruts des bonnets de bain doivent être tournés vers l'intérieur de la bande. Ensuite, pliez la bande en deux dans le sens de la longueur, en alignant les bords longs et en enfermant les surplus de couture. Le tissu de natation peut être glissant, c'est pourquoi vous aurez peut-être besoin d'épingles ou de pinces supplémentaires pour le maintenir en place.
+- Piquez le long du haut de la bande, en fixant les surplus de couture à l'intérieur de la bande.
 
 <Tip>
 
-For extra support, you can also add swim elastic into the band, either by stitching clear elastic into the band's seam allowance, or by threading swim elastic through the band at this point.
+Pour un soutien supplémentaire, vous pouvez également ajouter un élastique de natation dans la bande, soit en cousant un élastique transparent dans la marge de couture de la bande, soit en enfilant l'élastique de natation dans la bande à cet endroit.
 
 </Tip>
 
-- At this point, the band is a long tube with open ends. Next, we'll be sewing those closed while providing a loop to thread your neck ties through. To do this fold over one end of the band towards the inside of the swim top. The amount you fold over should be, at minimum, the width of your neck ties plus a seam allowance. Stitch the end down to create a loop at least as wide as your neck ties. There will be a lot of pressure on this point, so make sure your stitching is secure, and consider running a second line of stitching next to the first, for additional support. Repeat for the other end of the band.
-- To thread your neck-ties for cross back ties, take the tie from the left cup and thread it through the loop on the right side of the band, from top to bottom. Thread the tie from the right cup top-to-bottom through the loop on the left side of the band. Then tie the neck ties at center back to secure the swim top.
-- Skip to "Step 5: Enjoy!"
+- À ce stade, la bande est un long tube aux extrémités ouvertes. Ensuite, nous les coudrons tout en prévoyant une boucle pour y passer vos bretelles de cou. Pour ce faire, repliez une extrémité de la bande vers l'intérieur du maillot de bain. La quantité repliée doit correspondre, au minimum, à la largeur de vos bretelles de cou, plus une marge de couture. Cousez l'extrémité du bas pour créer une boucle au moins aussi large que vos bretelles de cou. Il y aura beaucoup d'effort sur ce point, alors assurez-vous que votre couture est solide, et envisagez de faire une deuxième ligne de couture à côté de la première, pour un soutien supplémentaire. Répétez l'opération pour l'autre extrémité de la bande.
+- Pour enfiler vos bretelles pour les lacets croisés, prenez la bretelle du bonnet gauche et enfilez-la dans la boucle du côté droit de la bande, de haut en bas. Enfilez la bande du bonnet droit, de haut en bas, dans la boucle située sur le côté gauche de la bande. Nouez ensuite les liens du cou au centre du dos pour fixer le maillot de bain.
+- Passez à l'étape 5 : Profitez-en
 
-### Step 3: Band tie
+### Étape 3: bandeau
 
-You only need to do this step if making the band tie variant.
+Cette étape n'est nécessaire que pour la variante de l'attache à bandeau.
 
-#### Band Tie One Colour Method
+#### Bandeau Méthode unicolore
 
-- Fold the band tie piece in half lengthwise, right sides and raw edges together.
-- Sew along the raw edges, leaving one of the short ends open.
-- Trim the seam allowances and clip the corners.
-- Turn inside out. Press.
+- Pliez le morceau de ruban en deux dans le sens de la longueur, endroit et bords bruts ensemble.
+- Coudre le long des bords bruts, en laissant l'une des extrémités courtes ouverte.
+- Découpez les surplus de couture et coupez les coins.
+- Retourner à l'envers. Repasser.
 
-#### Band Tie Two Colours Method
+#### Bandeau Méthode bicolore
 
-- With right sides together, sew the main band tie to the lining neck tie leaving one of the short edges open.
-- Trim the seam allowances and clip the corners.
-- Turn inside out. Press.
+- Endroit contre endroit, coudre le lien principal aux bretelles de cou de la doublure en laissant l'un des bords courts ouvert.
+- Découpez les surplus de couture et coupez les coins.
+- Retourner à l'envers. Repasser.
 
-### Step 4: Putting it all together.
+### Étape 4: Mettre tout ensemble.
 
-- Thread the band tie through the gaps along the bottom edge of the cups, making sure the front sides of the cups are in the centre and that the main and lining sides are on the respective side.
+- Enfilez le lien dans les interstices du bord inférieur des bonnets, en veillant à ce que les côtés avant des bonnets soient au centre et que les côtés principal et de la doublure soient sur les côtés respectifs.
 
-### Step 5: Enjoy!
+### Étape 5: Profitez-en!
 
-Hooray, your Bee Bikini Top is finished!
+Hourra, votre BikiniBee est fini!
