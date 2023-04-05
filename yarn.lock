@@ -3934,18 +3934,6 @@
     get-random-values-esm "^1.0.0"
     lodash "^4.17.21"
 
-"@sanity/cli@3.8.2":
-  version "3.8.2"
-  resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-3.8.2.tgz#cee96729db2f114d0208ecc029ce28af0c4d89c4"
-  integrity sha512-v3UAy4g4Pf+OxTfR61yJ1aqqEE6VNy3Q9QQA2HeIsyLkz9fY5OfsOu8UizmYEEd+rAWohR4yEYUGzWgIT4zdUg==
-  dependencies:
-    "@babel/traverse" "^7.19.0"
-    chalk "^4.1.2"
-    esbuild "^0.16.5"
-    esbuild-register "^3.4.1"
-    get-it "^8.0.9"
-    pkg-dir "^5.0.0"
-
 "@sanity/cli@3.8.3":
   version "3.8.3"
   resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-3.8.3.tgz#bfc6b147d8ee589a740e9970dc1e7a8bddf22b67"
@@ -4659,9 +4647,9 @@
     "@types/react" "*"
 
 "@types/react@*", "@types/react@>=16", "@types/react@^18.0.25", "@types/react@^18.0.8":
-  version "18.0.31"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.31.tgz#a69ef8dd7bfa849734d258c793a8fe343a338205"
-  integrity sha512-EEG67of7DsvRDU6BLLI0p+k1GojDLz9+lZsnCpCRTa/lOokvyPBvp8S5x+A24hME3yyQuIipcP70KJ6H7Qupww==
+  version "18.0.33"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.33.tgz#a1575160cb4376787c2f5fe0312302f824baa61e"
+  integrity sha512-sHxzVxeanvQyQ1lr8NSHaj0kDzcNiGpILEVt69g9S31/7PfMvNCKLKcsHw4lYKjs3cGNJjXSP4mYzX43QlnjNA==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
