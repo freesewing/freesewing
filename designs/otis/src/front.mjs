@@ -116,8 +116,8 @@ function draftFront({
       y: points.p1.y - sa - 15,
     })
     macro('hd', {
-      from: points.p6,
-      to: points.p5,
+      from: points.p5,
+      to: points.p6,
       y: points.p6.y + sa + 15,
     })
     macro('vd', {

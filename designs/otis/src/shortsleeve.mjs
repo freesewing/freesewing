@@ -104,8 +104,8 @@ function draftShortsleeve({
       y: points.p2h.y + sa + 15,
     })
     macro('vd', {
-      from: points.p0,
-      to: points.p1h,
+      from: points.p1h,
+      to: points.p0,
       x: points.p1h.x - sa - 15,
     })
     macro('vd', {
