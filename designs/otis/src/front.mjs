@@ -43,8 +43,10 @@ function draftFront({
   points.p3 = points.p0.shift(244.49016929788834, 295.05507494424813 * (ease + 1) * sizeFactor)
   points.p3Cp1 = points.p3.shift(0, 18.248785709538428 * (ease + 1) * sizeFactor)
   points.p4 = points.p0.shift(265.3666986326574, 309.97788995830655 * (ease + 1) * sizeFactor)
-  points.p5 = points.p0.shift(265.91499446139534, 351.4982585965382 * (ease + 1) * sizeFactor)
-  points.p6 = points.p0.shift(270, 350.6052631578947 * (ease + 1) * sizeFactor)
+  points.p5 = points.p4.shift(270, measurements.waist * options.snapPlacket * 2)
+  points.p6 = new Point(0, points.p5.y)
+  // points.p5 = points.p0.shift(265.91499446139534, 351.4982585965382 * (ease + 1) * sizeFactor)
+  // points.p6 = points.p0.shift(270, 350.6052631578947 * (ease + 1) * sizeFactor)
 
   let diff = 10
   let iter = 1
@@ -79,10 +81,15 @@ function draftFront({
   paths.seam = paths.seamSA.clone().line(points.p0).close().unhide()
 
   store.set(
-    'FrontOpening',
+    'FrontNeckOpening',
     new Path().move(points.p0).curve(points.p0Cp1, points.p1Cp2, points.p1).length() * 2
   )
-  console.log({ FrontOpening: store.get('FrontOpening') })
+  store.set(
+    'FrontLegOpening',
+    new Path().move(points.p3).curve(points.p3Cp1, points.p4, points.p4).length()
+  )
+  console.log({ FrontNeckOpening: store.get('FrontNeckOpening') })
+  console.log({ FrontLegOpening: store.get('FrontLegOpening') })
 
   // makeRelativePoints(Point, points, points.p0, waist, ease)
 
@@ -90,12 +97,21 @@ function draftFront({
 
   // Complete?
   if (complete) {
-    // points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-    // snippets.logo = new Snippet('logo', points.logo)
-    // points.text = points.logo
-    //   .shift(-90, w / 8)
-    //   .attr('data-text', 'hello')
-    //   .attr('data-text-class', 'center')
+    points.logo = points.p0.shiftFractionTowards(points.p3, 0.5)
+    snippets.logo = new Snippet('logo', points.logo)
+
+    macro('title', {
+      at: points.logo.shift(-90, waist / 1.7).shift(-180, waist / 4),
+      nr: 2,
+      title: 'front',
+    })
+
+    points.snapPlacketOut = points.p4.shift(270, measurements.waist * options.snapPlacket)
+    points.snapPlacketIn = new Point(0, points.snapPlacketOut.y)
+    paths.snapPlacket = new Path()
+      .move(points.snapPlacketOut)
+      .line(points.snapPlacketIn)
+      .addClass('dashed')
 
     if (sa) {
       paths.sa = paths.seamSA.offset(sa).close().attr('class', 'fabric sa')
@@ -104,7 +120,7 @@ function draftFront({
     snippets.shoulder = new Snippet('notch', points.shoulder)
 
     macro('cutonfold', {
-      from: points.p6,
+      from: new Point(0, points.p4.y),
       to: points.p0,
     })
   }

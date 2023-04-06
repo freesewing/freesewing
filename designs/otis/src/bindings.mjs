@@ -1,15 +1,6 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { back } from './back.mjs'
-
-import {
-  adjustPoints,
-  consoleLogPoints,
-  scalePoints,
-  addPoint,
-  addPointX,
-  addPointY,
-  makeRelativePoints,
-} from './utils.mjs'
+import { front } from './front.mjs'
 
 function draftShortsleeve({
   options,
@@ -28,20 +19,17 @@ function draftShortsleeve({
   utils,
   part,
 }) {
-  const hem = options.hem
-  const waist = store.get('waist')
-  const ease = store.get('ease')
-  const sizeFactor = store.get('sizeFactor')
-  const armhole = store.get('armhole')
-  const sideseam = store.get('sideseam')
-  store.set('hem', 117 * (ease + 1) * sizeFactor * hem)
+  const backNeckOpening = store.get('BackNeckOpening')
+  const backLegOpening = store.get('BackLegOpening')
+  const frontNeckOpening = store.get('FrontNeckOpening')
+  const frontLegOpening = store.get('FrontLegOpening')
 
   points.p0 = new Point(0, 0)
   points.p0Cp2 = points.p0.shift(0, 84.74633802080332 * (ease + 1) * sizeFactor)
   points.p1 = points.p0.shift(270, 117 * (ease + 1) * sizeFactor)
   points.p2 = points.p1.shift(0, 121 * (ease + 1) * sizeFactor)
   points.p3 = points.p0.shift(331.96514949510785, 145.46831943365956 * (ease + 1) * sizeFactor)
-  points.p3Cp1 = points.p3.shift(180, 69.4545599851181 * (ease + 1) * sizeFactor)
+  points.p3Cp1 = points.p3.shift(181.24017302101714, 69.4545599851181 * (ease + 1) * sizeFactor)
 
   let diff = 10
   let iter = 1
@@ -82,24 +70,19 @@ function draftShortsleeve({
 
   // Complete?
   if (complete) {
-    points.logo = points.p0.shiftFractionTowards(points.p2, 0.5)
-    snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.5)
-
-    macro('title', {
-      at: points.logo.shift(-90, waist / 3).shift(-180, waist / 4),
-      nr: 4,
-      title: 'shortSleeve',
-      scale: 0.5,
-    })
-
-    paths.hem = new Path().move(points.p1).line(points.p2).addClass('dashed')
+    // points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
+    // snippets.logo = new Snippet('logo', points.logo)
+    // points.text = points.logo
+    //   .shift(-90, w / 8)
+    //   .attr('data-text', 'hello')
+    //   .attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = paths.seamSA.offset(sa).close().attr('class', 'fabric sa')
     }
     macro('cutonfold', {
       from: points.p0,
-      to: points.p1,
+      to: points.p1h,
     })
   }
 
@@ -120,11 +103,11 @@ function draftShortsleeve({
   return part
 }
 
-export const shortsleeve = {
-  name: 'shortsleeve',
-  after: back,
+export const bindings = {
+  name: 'bindings',
+  after: [back, front],
   options: {
-    hem: { pct: 10, min: 0, max: 30, menu: 'advanced' },
+    binding: { pct: 12, min: 0, max: 30, menu: 'advanced' },
   },
   plugins: [pluginBundle],
   draft: draftShortsleeve,

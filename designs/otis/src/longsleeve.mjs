@@ -68,19 +68,24 @@ function draftLongsleeve({
 
   // Complete?
   if (complete) {
-    // points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-    // snippets.logo = new Snippet('logo', points.logo)
-    // points.text = points.logo
-    //   .shift(-90, w / 8)
-    //   .attr('data-text', 'hello')
-    //   .attr('data-text-class', 'center')
+    points.logo = points.p0.shiftFractionTowards(points.p2, 0.5)
+    snippets.logo = new Snippet('logo', points.logo)
+
+    macro('title', {
+      at: points.logo.shift(-90, waist / 1.7).shift(-180, waist / 7),
+      nr: 3,
+      title: 'longSleeve',
+      scale: 0.75,
+    })
+
+    paths.hem = new Path().move(points.p1).line(points.p2).addClass('dashed')
 
     if (sa) {
       paths.sa = paths.seamSA.offset(sa).close().attr('class', 'fabric sa')
     }
     macro('cutonfold', {
       from: points.p0,
-      to: points.p1h,
+      to: points.p1,
     })
   }
 

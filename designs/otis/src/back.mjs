@@ -51,8 +51,8 @@ function draftBack({
   points.p4Cp2 = points.p4.shift(114.81188629380082, 38.21149693481505 * (ease + 1) * sizeFactor)
   points.p5 = points.p0.shift(266.33816548102595, 416.91257944059936 * (ease + 1) * sizeFactor)
   points.p5Cp2 = points.p5.shift(180, 34.60436510741867 * (ease + 1) * sizeFactor)
-  points.p6 = points.p0.shift(266.68168927652545, 460.0168925339477 * (ease + 1) * sizeFactor)
-  points.p7 = points.p0.shift(270, 459.2456140350876 * (ease + 1) * sizeFactor)
+  points.p6 = points.p5.shift(270, measurements.waist * options.snapPlacket * 2)
+  points.p7 = new Point(0, points.p6.y)
   // makeRelativePoints(Point, points, points.p0, waist, ease)
 
   store.set('sideseam', points.p2.dist(points.p3))
@@ -62,6 +62,8 @@ function draftBack({
   store.set('armhole', paths.armhole.length() * 0.85)
 
   points.shoulder = paths.armhole.shiftFractionAlong(0.15)
+
+  // points.shoulder = (new Path().move(points.p5).line(points.p6)).shiftFractionAlong(measurements.waist*options.bottomHem/100)
 
   paths.seamSA = new Path()
     .move(points.p0)
@@ -78,19 +80,37 @@ function draftBack({
   paths.seam = paths.seamSA.clone().line(points.p0).close().unhide()
 
   store.set(
-    'BackOpening',
+    'BackNeckOpening',
     new Path().move(points.p0).curve(points.p0Cp1, points.p1Cp2, points.p1).length() * 2
   )
-  console.log({ BackOpening: store.get('BackOpening') })
+  store.set(
+    'BackLegOpening',
+    new Path()
+      .move(points.p3)
+      .curve(points.p3Cp1, points.p4Cp2, points.p4)
+      .curve(points.p4Cp1, points.p5Cp2, points.p5)
+      .length()
+  )
+  console.log({ BackNeckOpening: store.get('BackNeckOpening') })
+  console.log({ BackLegOpening: store.get('BackLegOpening') })
 
   // Complete?
   if (complete) {
-    // points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-    // snippets.logo = new Snippet('logo', points.logo)
-    // points.text = points.logo
-    //   .shift(-90, w / 8)
-    //   .attr('data-text', 'hello')
-    //   .attr('data-text-class', 'center')
+    points.logo = points.p0.shiftFractionTowards(points.p3, 0.5)
+    snippets.logo = new Snippet('logo', points.logo)
+
+    macro('title', {
+      at: points.logo.shift(-90, waist / 1.7).shift(-180, waist / 4),
+      nr: 1,
+      title: 'back',
+    })
+
+    points.snapPlacketOut = points.p5.shift(270, measurements.waist * options.snapPlacket)
+    points.snapPlacketIn = new Point(0, points.snapPlacketOut.y)
+    paths.snapPlacket = new Path()
+      .move(points.snapPlacketOut)
+      .line(points.snapPlacketIn)
+      .addClass('dashed')
 
     if (sa) {
       paths.sa = paths.seamSA.offset(sa).close().attr('class', 'fabric sa')
@@ -99,7 +119,7 @@ function draftBack({
     snippets.shoulder = new Snippet('notch', points.shoulder)
 
     macro('cutonfold', {
-      from: points.p7,
+      from: new Point(0, points.p5.y),
       to: points.p0,
     })
   }
@@ -126,7 +146,7 @@ export const back = {
   measurements: ['waist'],
   options: {
     ease: { pct: 14, min: 0, max: 30, menu: 'fit' },
-    bottomHem: { pct: 14, min: 0, max: 30, menu: 'advanced' },
+    snapPlacket: { pct: 5, min: 0, max: 30, menu: 'advanced' },
   },
   plugins: [pluginBundle],
   draft: draftBack,
