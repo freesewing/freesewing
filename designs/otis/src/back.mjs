@@ -1,13 +1,4 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
-import {
-  adjustPoints,
-  consoleLogPoints,
-  scalePoints,
-  addPoint,
-  addPointX,
-  addPointY,
-  makeRelativePoints,
-} from './utils.mjs'
 
 function draftBack({
   options,
@@ -25,12 +16,9 @@ function draftBack({
   macro,
   part,
 }) {
-  console.log({ waist: measurements.waist })
   const waist = measurements.waist / 4
   const sizeFactor = measurements.waist / 510
   const ease = options.ease
-
-  console.log({ waist: waist, ease: ease })
 
   store.set('waist', waist)
   store.set('ease', ease)
@@ -53,7 +41,6 @@ function draftBack({
   points.p5Cp2 = points.p5.shift(180, 34.60436510741867 * (ease + 1) * sizeFactor)
   points.p6 = points.p5.shift(270, measurements.waist * options.snapPlacket * 2)
   points.p7 = new Point(0, points.p6.y)
-  // makeRelativePoints(Point, points, points.p0, waist, ease)
 
   store.set('sideseam', points.p2.dist(points.p3))
 
@@ -62,8 +49,6 @@ function draftBack({
   store.set('armhole', paths.armhole.length() * 0.85)
 
   points.shoulder = paths.armhole.shiftFractionAlong(0.15)
-
-  // points.shoulder = (new Path().move(points.p5).line(points.p6)).shiftFractionAlong(measurements.waist*options.bottomHem/100)
 
   paths.seamSA = new Path()
     .move(points.p0)
@@ -91,8 +76,6 @@ function draftBack({
       .curve(points.p4Cp1, points.p5Cp2, points.p5)
       .length()
   )
-  console.log({ BackNeckOpening: store.get('BackNeckOpening') })
-  console.log({ BackLegOpening: store.get('BackLegOpening') })
 
   // Complete?
   if (complete) {
@@ -127,14 +110,49 @@ function draftBack({
   // Paperless?
   if (paperless) {
     macro('hd', {
-      from: points.bottomLeft,
-      to: points.bottomRight,
-      y: points.bottomLeft.y + sa + 15,
+      from: points.p1,
+      to: points.p0,
+      y: points.p1.y - sa - 15,
+    })
+    macro('hd', {
+      from: points.p6,
+      to: points.p7,
+      y: points.p7.y + sa + 15,
     })
     macro('vd', {
-      from: points.bottomRight,
-      to: points.topRight,
-      x: points.topRight.x + sa + 15,
+      from: points.p1,
+      to: points.p0,
+      x: points.p0.x + sa + 15,
+    })
+    macro('vd', {
+      from: points.p2,
+      to: points.p1,
+      x: points.p2.x - sa - 15,
+    })
+    macro('vd', {
+      from: points.p3,
+      to: points.p2,
+      x: points.p2.x - sa - 15,
+    })
+    macro('vd', {
+      from: points.p5,
+      to: points.p3,
+      x: points.p3.x - sa - 15,
+    })
+    macro('vd', {
+      from: points.snapPlacketOut,
+      to: points.p5,
+      x: points.p5.x - sa - 15,
+    })
+    macro('vd', {
+      from: points.p6,
+      to: points.snapPlacketOut,
+      x: points.p5.x - sa - 15,
+    })
+    macro('vd', {
+      from: points.p0,
+      to: points.p7,
+      x: points.p7.x + sa + 15,
     })
   }
 

@@ -1,16 +1,6 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { back } from './back.mjs'
 
-import {
-  adjustPoints,
-  consoleLogPoints,
-  scalePoints,
-  addPoint,
-  addPointX,
-  addPointY,
-  makeRelativePoints,
-} from './utils.mjs'
-
 function draftFront({
   options,
   Point,
@@ -45,8 +35,6 @@ function draftFront({
   points.p4 = points.p0.shift(265.3666986326574, 309.97788995830655 * (ease + 1) * sizeFactor)
   points.p5 = points.p4.shift(270, measurements.waist * options.snapPlacket * 2)
   points.p6 = new Point(0, points.p5.y)
-  // points.p5 = points.p0.shift(265.91499446139534, 351.4982585965382 * (ease + 1) * sizeFactor)
-  // points.p6 = points.p0.shift(270, 350.6052631578947 * (ease + 1) * sizeFactor)
 
   let diff = 10
   let iter = 1
@@ -55,7 +43,6 @@ function draftFront({
 
     const armholeLength = paths.armhole.length() * 0.85
     diff = armholeLength - armhole
-    console.log({ diff: diff })
 
     if (diff < -1 || diff > 1) {
       points.p1 = points.p0.shift(
@@ -88,12 +75,6 @@ function draftFront({
     'FrontLegOpening',
     new Path().move(points.p3).curve(points.p3Cp1, points.p4, points.p4).length()
   )
-  console.log({ FrontNeckOpening: store.get('FrontNeckOpening') })
-  console.log({ FrontLegOpening: store.get('FrontLegOpening') })
-
-  // makeRelativePoints(Point, points, points.p0, waist, ease)
-
-  // consoleLogPoints(points)
 
   // Complete?
   if (complete) {
@@ -128,14 +109,49 @@ function draftFront({
   // Paperless?
   if (paperless) {
     macro('hd', {
-      from: points.bottomLeft,
-      to: points.bottomRight,
-      y: points.bottomLeft.y + sa + 15,
+      from: points.p1,
+      to: points.p0,
+      y: points.p1.y - sa - 15,
+    })
+    macro('hd', {
+      from: points.p5,
+      to: points.p6,
+      y: points.p6.y + sa + 15,
     })
     macro('vd', {
-      from: points.bottomRight,
-      to: points.topRight,
-      x: points.topRight.x + sa + 15,
+      from: points.p1,
+      to: points.p0,
+      x: points.p0.x + sa + 15,
+    })
+    macro('vd', {
+      from: points.p2,
+      to: points.p1,
+      x: points.p2.x - sa - 15,
+    })
+    macro('vd', {
+      from: points.p3,
+      to: points.p2,
+      x: points.p2.x - sa - 15,
+    })
+    macro('vd', {
+      from: points.p4,
+      to: points.p3,
+      x: points.p3.x - sa - 15,
+    })
+    macro('vd', {
+      from: points.snapPlacketOut,
+      to: points.p4,
+      x: points.p4.x - sa - 15,
+    })
+    macro('vd', {
+      from: points.p5,
+      to: points.snapPlacketOut,
+      x: points.p5.x - sa - 15,
+    })
+    macro('vd', {
+      from: points.p0,
+      to: points.p6,
+      x: points.p6.x + sa + 15,
     })
   }
 

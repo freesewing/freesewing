@@ -1,16 +1,6 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { shortsleeve } from './shortsleeve.mjs'
 
-import {
-  adjustPoints,
-  consoleLogPoints,
-  scalePoints,
-  addPoint,
-  addPointX,
-  addPointY,
-  makeRelativePoints,
-} from './utils.mjs'
-
 function draftLongsleeve({
   options,
   Point,
@@ -92,14 +82,39 @@ function draftLongsleeve({
   // Paperless?
   if (paperless) {
     macro('hd', {
-      from: points.bottomLeft,
-      to: points.bottomRight,
-      y: points.bottomLeft.y + sa + 15,
+      from: points.p0,
+      to: points.p3,
+      y: points.p0.y - sa - 15,
+    })
+    macro('hd', {
+      from: points.p2,
+      to: points.p3,
+      y: points.p3.y - sa - 15,
+    })
+    macro('hd', {
+      from: points.p1h,
+      to: points.p2h,
+      y: points.p2h.y + sa + 15,
     })
     macro('vd', {
-      from: points.bottomRight,
-      to: points.topRight,
-      x: points.topRight.x + sa + 15,
+      from: points.p0,
+      to: points.p1h,
+      x: points.p1h.x - sa - 15,
+    })
+    macro('vd', {
+      from: points.p0,
+      to: points.p3,
+      x: points.p3.x + sa + 15,
+    })
+    macro('vd', {
+      from: points.p3,
+      to: points.p2,
+      x: points.p3.x + sa + 15,
+    })
+    macro('vd', {
+      from: points.p2h,
+      to: points.p2,
+      x: points.p3.x + sa + 15,
     })
   }
 

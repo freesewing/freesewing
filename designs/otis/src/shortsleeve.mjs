@@ -1,16 +1,6 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { back } from './back.mjs'
 
-import {
-  adjustPoints,
-  consoleLogPoints,
-  scalePoints,
-  addPoint,
-  addPointX,
-  addPointY,
-  makeRelativePoints,
-} from './utils.mjs'
-
 function draftShortsleeve({
   options,
   Point,
@@ -49,7 +39,6 @@ function draftShortsleeve({
     paths.armhole = new Path().move(points.p3).curve(points.p3Cp1, points.p0Cp2, points.p0).hide()
 
     diff = armhole - paths.armhole.length()
-    console.log({ diffa: diff })
     if (diff < -1 || diff > 1) {
       points.p3 = points.p0.shift(
         331.96514949510785,
@@ -73,12 +62,6 @@ function draftShortsleeve({
     .hide()
 
   paths.seam = paths.seamSA.clone().line(points.p1).line(points.p0).close().unhide()
-
-  // scalePoints(points, 4.5216)
-
-  // adjustPoints(points, points.p0)
-
-  // consoleLogPoints(points)
 
   // Complete?
   if (complete) {
@@ -106,14 +89,39 @@ function draftShortsleeve({
   // Paperless?
   if (paperless) {
     macro('hd', {
-      from: points.bottomLeft,
-      to: points.bottomRight,
-      y: points.bottomLeft.y + sa + 15,
+      from: points.p0,
+      to: points.p3,
+      y: points.p0.y - sa - 15,
+    })
+    macro('hd', {
+      from: points.p2,
+      to: points.p3,
+      y: points.p3.y - sa - 15,
+    })
+    macro('hd', {
+      from: points.p1h,
+      to: points.p2h,
+      y: points.p2h.y + sa + 15,
     })
     macro('vd', {
-      from: points.bottomRight,
-      to: points.topRight,
-      x: points.topRight.x + sa + 15,
+      from: points.p0,
+      to: points.p1h,
+      x: points.p1h.x - sa - 15,
+    })
+    macro('vd', {
+      from: points.p0,
+      to: points.p3,
+      x: points.p3.x + sa + 15,
+    })
+    macro('vd', {
+      from: points.p3,
+      to: points.p2,
+      x: points.p3.x + sa + 15,
+    })
+    macro('vd', {
+      from: points.p2h,
+      to: points.p2,
+      x: points.p3.x + sa + 15,
     })
   }
 
