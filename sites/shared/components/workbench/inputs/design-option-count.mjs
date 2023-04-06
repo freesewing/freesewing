@@ -37,7 +37,7 @@ export const DesignOptionCount = (props) => {
   const handleChange = (evt) => {
     const newVal = evt.target.value
     setValue(newVal)
-    props.updateGist(['options', props.option], newVal)
+    props.updateGist(['options', props.option], newVal * 1)
   }
   const reset = () => {
     setValue(count)
