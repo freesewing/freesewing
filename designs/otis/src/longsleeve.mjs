@@ -112,8 +112,8 @@ function draftLongsleeve({
       x: points.p3.x + sa + 15,
     })
     macro('vd', {
-      from: points.p2h,
-      to: points.p2,
+      from: points.p2,
+      to: points.p2h,
       x: points.p3.x + sa + 15,
     })
   }
