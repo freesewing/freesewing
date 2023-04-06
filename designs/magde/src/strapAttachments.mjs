@@ -41,8 +41,6 @@ function draftStrapAttachments({
     } else {
       webbingSize = upperBound
     }
-  } else {
-    webbingSize = idealWebbingSize
   }
 
   points.origin = new Point(0, 0)
