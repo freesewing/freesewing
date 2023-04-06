@@ -76,6 +76,7 @@ function draftBack({
       .curve(points.p4Cp1, points.p5Cp2, points.p5)
       .length()
   )
+  store.set('SnapPlacketWidth', points.p6.dist(points.p7))
 
   // Complete?
   if (complete) {

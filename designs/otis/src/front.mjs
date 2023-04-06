@@ -22,6 +22,7 @@ function draftFront({
   const sizeFactor = store.get('sizeFactor')
   const sideseam = store.get('sideseam')
   const armhole = store.get('armhole')
+  const snapPlacketWidth = store.get('SnapPlacketWidth')
 
   points.p0 = new Point(0, 0)
   points.p0Cp1 = points.p0.shift(180, 69.64248775236683 * (ease + 1) * sizeFactor)
@@ -33,6 +34,7 @@ function draftFront({
   points.p3 = points.p0.shift(244.49016929788834, 295.05507494424813 * (ease + 1) * sizeFactor)
   points.p3Cp1 = points.p3.shift(0, 18.248785709538428 * (ease + 1) * sizeFactor)
   points.p4 = points.p0.shift(265.3666986326574, 309.97788995830655 * (ease + 1) * sizeFactor)
+  points.p4.x = points.p0.x - snapPlacketWidth
   points.p5 = points.p4.shift(270, measurements.waist * options.snapPlacket * 2)
   points.p6 = new Point(0, points.p5.y)
 
@@ -114,8 +116,8 @@ function draftFront({
       y: points.p1.y - sa - 15,
     })
     macro('hd', {
-      from: points.p5,
-      to: points.p6,
+      from: points.p6,
+      to: points.p5,
       y: points.p6.y + sa + 15,
     })
     macro('vd', {
