@@ -16,18 +16,18 @@ function draftHiMouth({
   macro,
   part,
 }) {
-  let mouth01_02d = 141.93684055893488 * options.size
-  let mouth01_02a = 312.8254216093024
-  let mouth01_03d = 42.496 * options.size
-  let mouth01_03a = 270
-  let mouth01cp1d = 38.6204 * options.size
-  let mouth01cp1a = 0
-  let mouth02cp1d = 59.58739935676417 * options.size
-  let mouth02cp2d = 73.53520117766728 * options.size
-  let mouth02cp1a = 128.07726051101747
-  let mouth02cp2a = 95.21339058299296
-  let mouth03cp2d = 33.142 * options.size
-  let mouth03cp2a = 0
+  const mouth01_02d = 141.93684055893488 * options.size
+  const mouth01_02a = 312.8254216093024
+  const mouth01_03d = 42.496 * options.size
+  const mouth01_03a = 270
+  const mouth01cp1d = 38.6204 * options.size
+  const mouth01cp1a = 0
+  const mouth02cp1d = 59.58739935676417 * options.size
+  const mouth02cp2d = 73.53520117766728 * options.size
+  const mouth02cp1a = 128.07726051101747
+  const mouth02cp2a = 95.21339058299296
+  const mouth03cp2d = 33.142 * options.size
+  const mouth03cp2a = 0
 
   points.mouth01 = new Point(0, 0)
   points.mouth02 = points.mouth01.shift(mouth01_02a, mouth01_02d)

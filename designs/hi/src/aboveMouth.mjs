@@ -17,21 +17,21 @@ function draftHiAboveMouth({
   part,
 }) {
   let aboveMouth01_02d = 266.7238454769277 * options.size
-  let aboveMouth01_02a = 353.4089695458119
-  let aboveMouth02_03d = 28.348200101593726 * options.size
-  let aboveMouth02_03a = 233.13495309848912
+  const aboveMouth01_02a = 353.4089695458119
+  const aboveMouth02_03d = 28.348200101593726 * options.size
+  const aboveMouth02_03a = 233.13495309848912
   let aboveMouth01_04d = 57.858419828059574 * options.size
-  let aboveMouth01_04a = 208.91023166349467
-  let aboveMouth01cp1d = 62.927189989701574 * options.size
-  let aboveMouth01cp1a = 298.7196048714283
-  let aboveMouth02cp2d = 169.53367533325053 * options.size
-  let aboveMouth02cp2a = 195.1209034747764
-  let aboveMouth03cp1d = 172.36585117998288 * options.size
-  let aboveMouth03cp1a = 197.87876803095696
-  let aboveMouth04cp2d = 66.94005927693816 * options.size
-  let aboveMouth04cp2a = 308.8121959753343
+  const aboveMouth01_04a = 208.91023166349467
+  const aboveMouth01cp1d = 62.927189989701574 * options.size
+  const aboveMouth01cp1a = 298.7196048714283
+  const aboveMouth02cp2d = 169.53367533325053 * options.size
+  const aboveMouth02cp2a = 195.1209034747764
+  const aboveMouth03cp1d = 172.36585117998288 * options.size
+  const aboveMouth03cp1a = 197.87876803095696
+  const aboveMouth04cp2d = 66.94005927693816 * options.size
+  const aboveMouth04cp2a = 308.8121959753343
 
-  let faceTopLength = store.get('faceTopLength')
+  const faceTopLength = store.get('faceTopLength')
 
   let diff = 0
   let iteration = 0

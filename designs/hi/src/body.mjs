@@ -18,7 +18,6 @@ function draftHiBody({
 }) {
   const body01_02d = 117.67274991262845 * options.size
   const body02_03d = 124.91298035032229 * options.size
-  // const body02_03d = body01_02d
   const body03_04d = 255.92397474640785 * options.size
   const body04_05d = 201.01260719168837 * options.size
   const body05_06d = 134.89080971660005 * options.size
@@ -35,7 +34,6 @@ function draftHiBody({
   const body16_17d = 152.51537318250902 * options.size
   const body17_18d = 255.15294373571314 * options.size
   const body18_19d = 71.90453921693678 * options.size
-  //const body19_01d = 61.33021195137026 * options.size
 
   const body01cp1d = 32.13103487929059 * options.size
   const body01cp2d = 23.72518967258217 * options.size
@@ -262,11 +260,9 @@ function draftHiBody({
     eyeSmallDist * (-0.5 + (options.aggressive ? 0 : 1))
   )
 
-  // Feeding:
-
-  let c = 0.55191502449351
-  let eyeBigX = 18.7757 * options.size
-  let eyeBigY = 11.6262 * options.size
+  const c = 0.55191502449351
+  const eyeBigX = 18.7757 * options.size
+  const eyeBigY = 11.6262 * options.size
   points.eyeBigT = points.eyeBig.shift(90, eyeBigY / 2)
   points.eyeBigB = points.eyeBig
     .shift(270, eyeBigY / 2)
@@ -291,8 +287,8 @@ function draftHiBody({
     .curve(points.eyeBigBcp2, points.eyeBigRcp1, points.eyeBigR)
     .curve(points.eyeBigRcp2, points.eyeBigTcp1, points.eyeBigT)
 
-  let eyeSmallX = 1.87089 * options.size * (options.aggressive ? 1.5 : 1)
-  let eyeSmallY = 1.5368 * options.size * (options.aggressive ? 1.5 : 1)
+  const eyeSmallX = 1.87089 * options.size * (options.aggressive ? 1.5 : 1)
+  const eyeSmallY = 1.5368 * options.size * (options.aggressive ? 1.5 : 1)
   points.eyeSmallT = points.eyeSmall.shift(270, eyeSmallY / 2)
   points.eyeSmallB = points.eyeSmall.shift(90, eyeSmallY / 2)
   points.eyeSmallR = points.eyeSmall.shift(0, eyeSmallX / 2)
@@ -341,7 +337,7 @@ function draftHiBody({
     .join(paths.allButDart)
     .close()
 
-  let gillPath = new Path()
+  const gillPath = new Path()
     .move(points.body17)
     .curve(points.body17cp1, points.body18cp2, points.body18)
   points.gill1start = gillPath.shiftFractionAlong(0.018)
