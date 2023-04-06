@@ -123,7 +123,7 @@ function draftFront({
     macro('vd', {
       from: points.p1,
       to: points.p0,
-      x: points.p0.x + sa + 15,
+      x: points.p0.x + 15,
     })
     macro('vd', {
       from: points.p2,
@@ -153,7 +153,7 @@ function draftFront({
     macro('vd', {
       from: points.p0,
       to: points.p6,
-      x: points.p6.x + sa + 15,
+      x: points.p6.x + 15,
     })
   }
 
