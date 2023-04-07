@@ -167,9 +167,10 @@ export const cutLayoutPlugin = function (material, grainAngle) {
         if (partGrain === undefined) return
 
         // the amount to rotate is the difference between this part's grain angle (as drafted) and the fabric's grain angle
-        let toRotate = Math.abs(grainAngle - partGrain)
+        let toRotate = grainAngle - partGrain
         // don't over rotate
         if (toRotate >= 180) toRotate -= 180
+        else if (toRotate <= -180) toRotate += 180
         // if there's no difference, don't rotate
         if (toRotate === 0) return
 

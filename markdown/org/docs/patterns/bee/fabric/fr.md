@@ -1,13 +1,13 @@
 ---
-title: "Bee bikini top: Fabric Options"
+title: "Haut bikini Bee : Options de tissu"
 ---
 
-### Main and Lining Fabric
+### Étoffe principale et doublure
 
-The main and lining fabric are the same type of material. Bee is made with swimwear fabrics such as lycras.
+Le tissu principal et la doublure sont le même type de matériau. Bee est fabriquée à partir de tissus de maillots de bain tels que les lycras.
 
 <Note>
 
-You only need lining fabric if you intend to make the pattern reversible or if you want the band for the cross back tie variant to be a constrasting fabric. Otherwise you can cut all the required pieces from your main fabric.
+Vous n'avez besoin de tissu de doublure que si vous avez l'intention de rendre le motif réversible ou si vous voulez que la bande pour la variante à lacets croisés soit un tissu contrastant. Sinon, vous pouvez couper toutes les pièces dans votre tissu principal.
 
 </Note>

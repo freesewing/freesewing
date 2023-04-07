@@ -1,11 +1,11 @@
 - - -
-title: "Aaron A-Shirt: What You Need"
+titre: "Débardeur Aaron (A-Shirt) : Ce dont vous avez besoin"
 - - -
 
-To make Aaron, you will need the following:
+Pour réaliser Aaron, vous aurez besoin de :
 
 - [Fourniture de base pour la couture](/docs/sewing/basic-sewing-supplies)
-- About 0.75 meters (0.8 yards) of a suitable fabric ([see Fabric options](/docs/patterns/aaron/fabric))
+- Environ 0.75 mètres (0.8 yards) d'un tissu adapté ([voir Options de tissu](/docs/patterns/aaron/fabric))
 
 <Note>
 

@@ -10,6 +10,7 @@ import mustache from 'mustache'
 import nodemailer from 'nodemailer'
 import { testers } from '../config/newsletter-testers.mjs'
 import { fileURLToPath } from 'url'
+import { SESv2Client, SendEmailCommand } from '@aws-sdk/client-sesv2'
 
 // Current working directory
 const cwd = path.dirname(fileURLToPath(import.meta.url))
@@ -47,6 +48,7 @@ const getSubscribers = async (test = true) => {
 }
 
 const send = async (test = true) => {
+  const us = 'FreeSewing <info@freesewing.org>'
   const template = fs.readFileSync(`${cwd}/../config/templates/newsletter.html`, 'utf8')
   let edition
   try {
@@ -71,6 +73,9 @@ const send = async (test = true) => {
     },
   })
 
+  // Oh AWS your APIs are such a clusterfuck
+  const client = new SESv2Client({ region: 'us-east-1' })
+
   let i = 1
   subscribers.sort()
   let subs = subscribers.length
@@ -83,6 +88,46 @@ const send = async (test = true) => {
       inject.unsubscribe = unsub
       let body = mustache.render(template, inject)
       console.log(`${i}/${subs} Sending to ${sub.email}`)
+
+      // Via API
+      const command = new SendEmailCommand({
+        ConfigurationSetName: 'Newsletter',
+        Content: {
+          Simple: {
+            Body: {
+              Text: {
+                Charset: 'utf-8',
+                Data: text,
+              },
+              Html: {
+                Charset: 'utf-8',
+                Data: body,
+              },
+            },
+            Subject: {
+              Charset: 'utf-8',
+              Data: 'FreeSewing newsletter: Spring 2023',
+            },
+          },
+        },
+        Destination: {
+          ToAddresses: [sub.email],
+        },
+        //FeedbackForwardingEmailAddress: us,
+        FromEmailAddress: us,
+        //FromEmailAddressIdentityArn: "arn:aws:ses:us-east-1:550348293871:identity/freesewing.org",
+        //ReplyToAddresses: us,
+      })
+      let result
+      try {
+        result = await client.send(command)
+      } catch (err) {
+        console.log(err)
+        return false
+      }
+
+      // Via SMTP
+      /*
       await smtp.sendMail({
         from: '"FreeSewing" <info@freesewing.org>',
         to: sub.email,
@@ -96,6 +141,7 @@ const send = async (test = true) => {
         text,
         html: body,
       })
+      */
     }
     i++
   }

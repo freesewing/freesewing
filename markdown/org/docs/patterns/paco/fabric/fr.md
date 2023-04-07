@@ -2,12 +2,12 @@
 title: "Paco pants: Fabric Options"
 - - -
 
-These work best in a lighter fabric with relatively good drape.
+Un meilleur résultat est obtenu avec un tissu léger avec drapage relativement bon.
 
-A light cotton, or chambray are particularly well-suited.  
-Rayon or jersey will work too, but will give it a more casual-look.
+Un coton léger, ou chambray sont particulièrement bien adaptés.  
+De la rayonne ou du jersey fonctionneront également, mais lui donneront une allure plus décontractée.
 
-For the opposite effect, less casual and more style, you can consider a silk blend or light wool.
+Pour l'effet inverse, moins décontracté et avec plus de style, vous pouvez envisager un mélange de soie ou de laine légère.
 
 <Tip>
 

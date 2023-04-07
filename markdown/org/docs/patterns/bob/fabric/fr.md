@@ -1,7 +1,7 @@
 ---
-title: "Bob the Bib: Fabric Options"
+title: "Bob le bavoir : Choix de tissus"
 ---
 
-An bib should be soft, absorbent, and be able to handle plenty of washing cycles. In addition, natural fibres are much preferred, especially for babies.
+Un bavoir doit être doux, absorbant et être capable d'accepter de nombreux cycles de lavage. En outre, les fibres naturelles sont préférées, en particulier pour les bébés.
 
 So use cotton, flannel, or jersey knit for the bib front of the bib, and back it with something like terrycloth (aka towel fabric) or a similar bamboo-based fabric.

@@ -1,12 +1,12 @@
 - - -
-title: "Hips ease"
+titre : "Aisance pour les hanches"
 - - -
 
-![The hips ease option on Aaron](./hipsease.svg)
+![L'option d'aisance des hanches sur Aaron](./hipsease.svg)
 
-How much room do you want at the hips?
+Quelle aisance souhaitez-vous au niveau des hanches ?
 
-Whatever value you provide here will simply be added to your hips circumference measurement when drafting the garment.
+Quelle que soit la valeur que vous indiquez ici, elle sera simplement ajoutée à la mesure de votre tour de hanches lors de l'élaboration du vêtement.
 
 > ##### Cette option permet également des valeurs négatives.
 > 
@@ -14,4 +14,4 @@ Whatever value you provide here will simply be added to your hips circumference 
 
 ## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_hipsease_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](aaron_hipsease_sample.svg "Effet de cette option sur le modèle")

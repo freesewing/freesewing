@@ -79,7 +79,7 @@ export const plugin = {
       }
 
       // Cut List instructions
-      const partCutlist = store.get(['cutlist', part.name])
+      const partCutlist = store.get(['cutlist', part.name], [])
       // if there's a cutlist and it should be included
       if (so.cutlist && partCutlist?.materials) {
         // get the default cutonfold
@@ -112,7 +112,7 @@ export const plugin = {
 
       let name = store.data?.name || 'No Name'
       name = name.replace('@freesewing/', '')
-      name += 'v' + (store.data?.version || 'No Version')
+      name += ' v' + (store.data?.version || 'No Version')
       points[`_${prefix}_titlePattern`] = nextPoint(name, 'fill-note')
 
       if (store.data.for) {
