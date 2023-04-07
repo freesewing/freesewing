@@ -16,203 +16,132 @@ function draftHiBody({
   utils,
   part,
 }) {
-  let body01_02d = 117.67274991262845 * options.size
-  let body02_03d = 124.91298035032229 * options.size
-  // let body02_03d = body01_02d
-  let body03_04d = 255.92397474640785 * options.size
-  let body04_05d = 201.01260719168837 * options.size
-  let body05_06d = 134.89080971660005 * options.size
-  let body06_07d = 49.0386070356816 * options.size
-  let body07_08d = 225.86340480918992 * options.size
-  let body08_09d = 66.84760000179512 * options.size
-  let body09_10d = 40.7278200374142 * options.size
-  let body10_11d = 23.78799421977402 * options.size
-  let body11_12d = 57.68530918700182 * options.size
-  let body12_13d = 98.0662397820983 * options.size
-  let body13_14d = 91.32736600274856 * options.size
-  let body14_15d = 295.1097706682888 * options.size
-  let body15_16d = 209.4263335058177 * options.size
-  let body16_17d = 152.51537318250902 * options.size
-  let body17_18d = 255.15294373571314 * options.size
-  let body18_19d = 71.90453921693678 * options.size
-  //let body19_01d = 61.33021195137026 * options.size
+  const body01_02d = 117.67274991262845 * options.size
+  const body02_03d = 124.91298035032229 * options.size
+  const body03_04d = 255.92397474640785 * options.size
+  const body04_05d = 201.01260719168837 * options.size
+  const body05_06d = 134.89080971660005 * options.size
+  const body06_07d = 49.0386070356816 * options.size
+  const body07_08d = 225.86340480918992 * options.size
+  const body08_09d = 66.84760000179512 * options.size
+  const body09_10d = 40.7278200374142 * options.size
+  const body10_11d = 23.78799421977402 * options.size
+  const body11_12d = 57.68530918700182 * options.size
+  const body12_13d = 98.0662397820983 * options.size
+  const body13_14d = 91.32736600274856 * options.size
+  const body14_15d = 295.1097706682888 * options.size
+  const body15_16d = 209.4263335058177 * options.size
+  const body16_17d = 152.51537318250902 * options.size
+  const body17_18d = 255.15294373571314 * options.size
+  const body18_19d = 71.90453921693678 * options.size
 
-  let body01cp1d = 32.13103487929059 * options.size
-  let body01cp2d = 23.72518967258217 * options.size
-  let body02cp1d = 44.99353642469105 * options.size
-  let body02cp2d = 42.33568754608812 * options.size
-  let body03cp1d = 62.59332758369697 * options.size
-  let body03cp2d = 40.89285869195256 * options.size
-  let body04cp1d = 176.21501525125487 * options.size
-  let body04cp2d = 130.11389715553065 * options.size
-  let body05cp1d = 29.56689479806765 * options.size
-  let body05cp2d = 104.66860665930352 * options.size
-  let body06cp1d = 8.03497915367552 * options.size
-  let body06cp2d = 34.57808908832297 * options.size
-  let body07cp1d = 89.11908088619404 * options.size
-  let body07cp2d = 25.54827831772624 * options.size
-  let body08cp1d = 41.24120086757895 * options.size
-  let body08cp2d = 158.23693200387828 * options.size
-  let body09cp1d = 4.87663090668135 * options.size
-  let body09cp2d = 25.76988630165065 * options.size
-  let body10cp1d = 4.13950105689086 * options.size
-  let body10cp2d = 13.2750849338149 * options.size
-  let body11cp1d = 17.66659910678904 * options.size
-  let body11cp2d = 17.66533107530116 * options.size
-  let body12cp1d = 14.46914569005365 * options.size
-  let body12cp2d = 39.51915145850176 * options.size
-  let body13cp1d = 35.66832366400192 * options.size
-  let body13cp2d = 48.53828530139895 * options.size
-  let body14cp1d = 77.2603605608982 * options.size
-  let body14cp2d = 37.42741381661305 * options.size
-  let body15cp1d = 74.89746640634775 * options.size
-  let body15cp2d = 101.16048880857042 * options.size
-  let body16cp1d = 36.21092864039804 * options.size
-  let body16cp2d = 63.69410844026312 * options.size
-  let body17cp1d = 97.90988675818191 * options.size
-  let body17cp2d = 62.08991689477443 * options.size
-  let body18cp1d = 22.74982929606286 * options.size
-  let body18cp2d = 16.57960183478481 * options.size
-  let body19cp1d = 23.95674278778315 * options.size
-  let body19cp2d = 24.49741270011998 * options.size
+  const body01cp1d = 32.13103487929059 * options.size
+  const body01cp2d = 23.72518967258217 * options.size
+  const body02cp1d = 44.99353642469105 * options.size
+  const body02cp2d = 42.33568754608812 * options.size
+  const body03cp1d = 62.59332758369697 * options.size
+  const body03cp2d = 40.89285869195256 * options.size
+  const body04cp1d = 176.21501525125487 * options.size
+  const body04cp2d = 130.11389715553065 * options.size
+  const body05cp1d = 29.56689479806765 * options.size
+  const body05cp2d = 104.66860665930352 * options.size
+  const body06cp1d = 8.03497915367552 * options.size
+  const body06cp2d = 34.57808908832297 * options.size
+  const body07cp1d = 89.11908088619404 * options.size
+  const body07cp2d = 25.54827831772624 * options.size
+  const body08cp1d = 41.24120086757895 * options.size
+  const body08cp2d = 158.23693200387828 * options.size
+  const body09cp1d = 4.87663090668135 * options.size
+  const body09cp2d = 25.76988630165065 * options.size
+  const body10cp1d = 4.13950105689086 * options.size
+  const body10cp2d = 13.2750849338149 * options.size
+  const body11cp1d = 17.66659910678904 * options.size
+  const body11cp2d = 17.66533107530116 * options.size
+  const body12cp1d = 14.46914569005365 * options.size
+  const body12cp2d = 39.51915145850176 * options.size
+  const body13cp1d = 35.66832366400192 * options.size
+  const body13cp2d = 48.53828530139895 * options.size
+  const body14cp1d = 77.2603605608982 * options.size
+  const body14cp2d = 37.42741381661305 * options.size
+  const body15cp1d = 74.89746640634775 * options.size
+  const body15cp2d = 101.16048880857042 * options.size
+  const body16cp1d = 36.21092864039804 * options.size
+  const body16cp2d = 63.69410844026312 * options.size
+  const body17cp1d = 97.90988675818191 * options.size
+  const body17cp2d = 62.08991689477443 * options.size
+  const body18cp1d = 22.74982929606286 * options.size
+  const body18cp2d = 16.57960183478481 * options.size
+  const body19cp1d = 23.95674278778315 * options.size
+  const body19cp2d = 24.49741270011998 * options.size
 
-  let eyeBigDist = 180.18315182058507 * options.size
-  let eyeSmallDist = 2.3629811679317316 * options.size
+  const eyeBigDist = 180.18315182058507 * options.size
+  const eyeSmallDist = 2.3629811679317316 * options.size
 
-  let gillLength = 41.01907104018812 * options.size
+  const gillLength = 41.01907104018812 * options.size
 
-  /*
-  let body01_02a = 350.1382392835908
-  let body02_03a = 219.2280235992150
-  let body03_04a = 339.6914424367389
-  let body04_05a = 327.5949161262267
-  let body05_06a = 308.0581973147166
-  let body06_07a =  73.6604388249373
-  let body07_08a =  45.7462208380377
-  let body08_09a = 337.5894682731302
-  let body09_10a = 305.1280145118106
-  let body10_11a =  62.0485099186233
-  let body11_12a =  31.5926663325278
-  let body12_13a = 351.3547159587854
-  let body13_14a =  65.2915054300727
-  let body14_15a = 146.7578208812976
-  let body15_16a = 179.0692249048048
-  let body16_17a = 173.6138831920282
-  let body17_18a = 182.5463896677164
-  let body18_19a = 168.3450180715549
-  let body19_01a = 239.6348252240278
-
-  let body01cp1a = 341.5263465356924
-  let body01cp2a =  75.6503959063636
-  let body02cp1a = 211.9535499171619
-  let body02cp2a = 179.4884199670842
-  let body03cp1a = 322.8538439425170
-  let body03cp2a =  45.3745027878966
-  let body04cp1a = 349.1071045662215
-  let body04cp2a = 170.7775897297436
-  let body05cp1a = 285.1596014648055
-  let body05cp2a = 108.5890112443549
-  let body06cp1a =  41.1852543570561
-  let body06cp2a = 164.1413220186340
-  let body07cp1a =  87.2041495377715
-  let body07cp2a = 267.0316498407170
-  let body08cp1a = 357.4386948546150
-  let body08cp2a = 178.5040422857397
-  let body09cp1a = 299.4140745661390
-  let body09cp2a = 119.4139505554426
-  let body10cp1a =  39.0878163024596
-  let body10cp2a = 131.9955535201102
-  let body11cp1a =  71.2799386715762
-  let body11cp2a = 251.2819695388968
-  let body12cp1a = 355.0877186628186
-  let body12cp2a = 175.0877829918719
-  let body13cp1a =  80.2392635965701
-  let body13cp2a = 171.4909473733658
-  let body14cp1a = 140.9298470364624
-  let body14cp2a = 236.9514886304476
-  let body15cp1a = 202.5529871921231
-  let body15cp2a = 333.1212843908838
-  let body16cp1a = 193.8904149121820
-  let body16cp2a = 321.0219904969430
-  let body17cp1a = 191.0428733832995
-  let body17cp2a = 318.4852423703768
-  let body18cp1a = 176.9688130385547
-  let body18cp2a = 358.1542838646098
-  let body19cp1a = 231.3360831292815
-  let body19cp2a = 338.5586388459373
-
-  let eyeBigAngle = 4.84999368439876
-  let eyeSmallAngle = 331.26569123319354
-
-  let gillAngle = 283.9416746517148
-*/
-
-  let body01_02a = 170.1382393
-  let body02_03a = 39.2280236
-  let body03_04a = 159.6914424
-  let body04_05a = 147.5949161
-  let body05_06a = 128.0581973
-  let body06_07a = 253.6604388
-  let body07_08a = 225.7462208
-  let body08_09a = 157.5894683
-  let body09_10a = 125.1280145
-  let body10_11a = 242.0485099
-  let body11_12a = 211.5926663
-  let body12_13a = 171.354716
-  let body13_14a = 245.2915054
-  let body14_15a = 326.7578209
-  let body15_16a = 359.0692249
-  let body16_17a = 353.6138832
-  let body17_18a = 2.546389668
-  let body18_19a = 348.3450181
-  //let body19_01a = 59.63482522
+  const body01_02a = 170.1382393
+  const body02_03a = 39.2280236
+  const body03_04a = 159.6914424
+  const body04_05a = 147.5949161
+  const body05_06a = 128.0581973
+  const body06_07a = 253.6604388
+  const body07_08a = 225.7462208
+  const body08_09a = 157.5894683
+  const body09_10a = 125.1280145
+  const body10_11a = 242.0485099
+  const body11_12a = 211.5926663
+  const body12_13a = 171.354716
+  const body13_14a = 245.2915054
+  const body14_15a = 326.7578209
+  const body15_16a = 359.0692249
+  const body16_17a = 353.6138832
+  const body17_18a = 2.546389668
+  const body18_19a = 348.3450181
 
   let body01cp1a = 161.5263465
-  let body01cp2a = 255.6503959
-  let body02cp1a = 31.95354992
-  // let body02cp2a = 359.48842
-  // let body02cp2a = 2.48842
-  let body02cp2a = 10
+  const body01cp2a = 255.6503959
+  const body02cp1a = 31.95354992
+  const body02cp2a = 10
 
-  let body03cp1a = 142.8538439
-  let body03cp2a = 225.3745028
-  let body04cp1a = 169.1071046
-  let body04cp2a = 350.7775897
-  let body05cp1a = 105.1596015
-  let body05cp2a = 288.5890112
-  let body06cp1a = 221.1852544
-  let body06cp2a = 344.141322
-  let body07cp1a = 267.2041495
-  let body07cp2a = 87.03164984
-  let body08cp1a = 177.4386949
-  let body08cp2a = 358.5040423
-  let body09cp1a = 119.4140746
-  let body09cp2a = 299.4139506
-  let body10cp1a = 219.0878163
-  let body10cp2a = 311.9955535
-  let body11cp1a = 251.2799387
-  let body11cp2a = 71.28196954
-  let body12cp1a = 175.0877187
-  let body12cp2a = 355.087783
-  let body13cp1a = 260.2392636
-  let body13cp2a = 351.4909474
-  let body14cp1a = 320.929847
-  let body14cp2a = 56.95148863
-  let body15cp1a = 22.55298719
-  let body15cp2a = 153.1212844
-  let body16cp1a = 13.89041491
-  let body16cp2a = 141.0219905
-  let body17cp1a = 11.04287338
-  let body17cp2a = 138.4852424
-  let body18cp1a = 356.968813
-  let body18cp2a = 178.1542839
-  let body19cp1a = 51.33608313
-  let body19cp2a = 158.5586388
+  const body03cp1a = 142.8538439
+  const body03cp2a = 225.3745028
+  const body04cp1a = 169.1071046
+  const body04cp2a = 350.7775897
+  const body05cp1a = 105.1596015
+  const body05cp2a = 288.5890112
+  const body06cp1a = 221.1852544
+  const body06cp2a = 344.141322
+  const body07cp1a = 267.2041495
+  const body07cp2a = 87.03164984
+  const body08cp1a = 177.4386949
+  const body08cp2a = 358.5040423
+  const body09cp1a = 119.4140746
+  const body09cp2a = 299.4139506
+  const body10cp1a = 219.0878163
+  const body10cp2a = 311.9955535
+  const body11cp1a = 251.2799387
+  const body11cp2a = 71.28196954
+  const body12cp1a = 175.0877187
+  const body12cp2a = 355.087783
+  const body13cp1a = 260.2392636
+  const body13cp2a = 351.4909474
+  const body14cp1a = 320.929847
+  const body14cp2a = 56.95148863
+  const body15cp1a = 22.55298719
+  const body15cp2a = 153.1212844
+  const body16cp1a = 13.89041491
+  const body16cp2a = 141.0219905
+  const body17cp1a = 11.04287338
+  const body17cp2a = 138.4852424
+  const body18cp1a = 356.968813
+  const body18cp2a = 178.1542839
+  const body19cp1a = 51.33608313
+  const body19cp2a = 158.5586388
 
-  let eyeBigAngle = 184.8499937
-  let eyeSmallAngle = 151.2656912
+  const eyeBigAngle = 184.8499937
+  const eyeSmallAngle = 151.2656912
 
-  let gillAngle = 103.9416747
+  const gillAngle = 103.9416747
 
   points.body01 = new Point(0, 0)
   points.body02 = points.body01.shift(body01_02a, body01_02d)
@@ -331,11 +260,9 @@ function draftHiBody({
     eyeSmallDist * (-0.5 + (options.aggressive ? 0 : 1))
   )
 
-  // Feeding:
-
-  let c = 0.55191502449351
-  let eyeBigX = 18.7757 * options.size
-  let eyeBigY = 11.6262 * options.size
+  const c = 0.55191502449351
+  const eyeBigX = 18.7757 * options.size
+  const eyeBigY = 11.6262 * options.size
   points.eyeBigT = points.eyeBig.shift(90, eyeBigY / 2)
   points.eyeBigB = points.eyeBig
     .shift(270, eyeBigY / 2)
@@ -360,8 +287,8 @@ function draftHiBody({
     .curve(points.eyeBigBcp2, points.eyeBigRcp1, points.eyeBigR)
     .curve(points.eyeBigRcp2, points.eyeBigTcp1, points.eyeBigT)
 
-  let eyeSmallX = 1.87089 * options.size * (options.aggressive ? 1.5 : 1)
-  let eyeSmallY = 1.5368 * options.size * (options.aggressive ? 1.5 : 1)
+  const eyeSmallX = 1.87089 * options.size * (options.aggressive ? 1.5 : 1)
+  const eyeSmallY = 1.5368 * options.size * (options.aggressive ? 1.5 : 1)
   points.eyeSmallT = points.eyeSmall.shift(270, eyeSmallY / 2)
   points.eyeSmallB = points.eyeSmall.shift(90, eyeSmallY / 2)
   points.eyeSmallR = points.eyeSmall.shift(0, eyeSmallX / 2)
@@ -410,7 +337,7 @@ function draftHiBody({
     .join(paths.allButDart)
     .close()
 
-  let gillPath = new Path()
+  const gillPath = new Path()
     .move(points.body17)
     .curve(points.body17cp1, points.body18cp2, points.body18)
   points.gill1start = gillPath.shiftFractionAlong(0.018)
@@ -479,6 +406,53 @@ function draftHiBody({
       // paths.sa = paths.seam.offset(sa).trim().attr('class', 'fabric sa')
       paths.sa = paths.allButDart.close().offset(sa).attr('class', 'fabric sa')
     }
+
+    paths.aboveMouth = new Path()
+      .move(points.body17)
+      .curve(points.body17cp1, points.body18cp2, points.body18)
+      .attr('data-text-class', 'text-xs')
+    macro('banner', {
+      path: paths.aboveMouth,
+      text: 'aboveMouth',
+      dy: 0,
+      spaces: 0,
+      repeat: 1,
+    })
+    paths.belly = new Path()
+      .move(points.body15)
+      .curve(points.body15cp1, points.body16cp2, points.body16)
+      .attr('data-text-class', 'text-xs')
+    macro('banner', {
+      path: paths.belly,
+      text: 'belly',
+      dy: 0,
+      spaces: 10,
+      repeat: 3,
+    })
+    paths.topFin = new Path()
+      .move(points.body16)
+      .curve(points.body16cp1, points.body17cp2, points.body17)
+      .attr('class', 'hidden')
+      .attr('data-text-class', 'text-xs')
+    macro('banner', {
+      path: paths.topFin,
+      text: 'topFin',
+      dy: 0,
+      spaces: 10,
+      repeat: 3,
+    })
+    paths.tail = new Path()
+      .move(points.body13)
+      .curve(points.body13cp1, points.body14cp2, points.body14)
+      .attr('class', 'hidden')
+      .attr('data-text-class', 'text-xs')
+    macro('banner', {
+      path: paths.tail,
+      text: 'tail',
+      dy: 0,
+      spaces: 14,
+      repeat: 3,
+    })
 
     macro('ld', {
       from: points.body13,
