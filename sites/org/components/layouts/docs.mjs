@@ -11,7 +11,7 @@ import { useState, useEffect } from 'react'
 export const ns = navNs
 
 export const DocsLayout = ({ app, children = [], title }) => (
-  <div className="grid grid-cols-4 m-auto justify-center place-items-stretch">
+  <div className="grid grid-cols-4 m-auto justify-center place-items-stretch lg:mt-16">
     <AsideNavigation app={app} />
     <section className="col-span-4 lg:col-span-3 py-24 px-4 lg:pl-8 bg-base-50">
       {title && (

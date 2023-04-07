@@ -9,7 +9,7 @@ import { preloaders } from 'shared/components/workbench/preloaders.mjs'
 // Components
 import { WorkbenchMenu } from 'shared/components/workbench/menu/index.mjs'
 import { DraftError } from 'shared/components/workbench/draft/error.mjs'
-import { Modal } from 'shared/components/modal.mjs'
+import { Modal } from 'shared/components/modal/modal.mjs'
 import { ErrorBoundary } from 'shared/components/error/error-boundary.mjs'
 // Views
 import { WorkbenchMeasurements } from 'shared/components/workbench/measurements/index.mjs'

@@ -61,6 +61,8 @@ export const linkClasses = `
 
 // Figure out whether a page is on the path to the active page
 const isActive = (slug, active) => {
+  console.log({ slug, active })
+  if (!slug) return false
   if (slug === active) return true
   let result = true
   const slugParts = slug.split('/')
