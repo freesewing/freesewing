@@ -56,6 +56,8 @@ function draftFront({
   } while ((diff < -1 || diff > 1) & (iter < 100))
 
   points.shoulder = paths.armhole.shiftFractionAlong(0.15)
+  points.snapPlacketOut = points.p4.shift(270, measurements.waist * options.snapPlacket)
+  points.snapPlacketIn = new Point(0, points.snapPlacketOut.y)
 
   paths.seamSA = new Path()
     .move(points.p0)
@@ -89,8 +91,6 @@ function draftFront({
       title: 'front',
     })
 
-    points.snapPlacketOut = points.p4.shift(270, measurements.waist * options.snapPlacket)
-    points.snapPlacketIn = new Point(0, points.snapPlacketOut.y)
     paths.snapPlacket = new Path()
       .move(points.snapPlacketOut)
       .line(points.snapPlacketIn)

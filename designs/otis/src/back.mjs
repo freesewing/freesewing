@@ -50,6 +50,8 @@ function draftBack({
   store.set('armhole', paths.armhole.length() * 0.85)
 
   points.shoulder = paths.armhole.shiftFractionAlong(0.15)
+  points.snapPlacketOut = points.p5.shift(270, measurements.waist * options.snapPlacket)
+  points.snapPlacketIn = new Point(0, points.snapPlacketOut.y)
 
   paths.seamSA = new Path()
     .move(points.p0)
@@ -90,8 +92,6 @@ function draftBack({
       title: 'back',
     })
 
-    points.snapPlacketOut = points.p5.shift(270, measurements.waist * options.snapPlacket)
-    points.snapPlacketIn = new Point(0, points.snapPlacketOut.y)
     paths.snapPlacket = new Path()
       .move(points.snapPlacketOut)
       .line(points.snapPlacketIn)
