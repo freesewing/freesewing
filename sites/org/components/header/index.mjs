@@ -24,6 +24,8 @@ import { WordMark } from 'shared/components/wordmark.mjs'
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import { ModalThemePicker } from 'shared/components/modal/theme-picker.mjs'
+import { ModalLocalePicker } from 'shared/components/modal/locale-picker.mjs'
+import { Search, ns as searchNs } from 'site/components/search.mjs'
 
 export const ns = [...new Set(['header', ...themeNs, ...localeNs])]
 
@@ -52,7 +54,7 @@ const NavSpacer = () => (
   <div className="hidden lg:block text-base lg:text-4xl font-thin opacity-30 px-0.5 lg:px-2">|</div>
 )
 
-const NavIcons = ({ app }) => {
+const NavIcons = ({ app, setSearch }) => {
   const { t } = useTranslation(['header'])
   const iconSize = 'h-6 w-6 lg:h-12 lg:w-12'
 
@@ -95,7 +97,11 @@ const NavIcons = ({ app }) => {
       >
         <ThemeIcon className={iconSize} />
       </NavButton>
-      <NavButton href="/patrons/join" label={t('header:language')} color="indigo">
+      <NavButton
+        onClick={() => app.setModal(<ModalLocalePicker app={app} />)}
+        label={t('header:language')}
+        color="indigo"
+      >
         <I18nIcon className={iconSize} />
       </NavButton>
       <NavButton onClick={() => setSearch(true)} label={t('header:search')} color="violet">
@@ -147,12 +153,12 @@ export const Header = ({ app, setSearch }) => {
         <div className="p-0 flex flex-row gap-2 justify-between text-neutral-content items-center">
           {/* Non-mobile content */}
           <div className="hidden lg:flex lg:px-2 flex-row items-center justify-center w-full">
-            <NavIcons app={app} />
+            <NavIcons app={app} setSearch={setSearch} />
           </div>
 
           {/* Mobile content */}
           <div className="flex lg:hidden flex-row items-center justify-between w-full">
-            <NavIcons />
+            <NavIcons app={app} setSearch={setSearch} />
           </div>
         </div>
       </div>
