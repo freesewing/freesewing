@@ -77,6 +77,13 @@
       "difficulty": 4,
       "tags": ["accessories", "toys"]
     },
+    "skully": {
+      "description": "A FreeSewing pattern that needs a description",
+      "code": "Coder name",
+      "design": "Designer name",
+      "difficulty": 1,
+      "tags": ["tagname"]
+    },
     "trayvon": {
       "description": "A FreeSewing pattern for a tie",
       "code": "Joost De Cock",
