@@ -13,7 +13,6 @@ function draftShortsleeve({
   complete,
   sa,
   paperless,
-  measurements,
   store,
   macro,
   utils,
@@ -24,15 +23,14 @@ function draftShortsleeve({
   const ease = store.get('ease')
   const sizeFactor = store.get('sizeFactor')
   const armhole = store.get('armhole')
-  const sideseam = store.get('sideseam')
   store.set('hem', 117 * (ease + 1) * sizeFactor * hem)
 
   points.p0 = new Point(0, 0)
-  points.p0Cp2 = points.p0.shift(0, 84.74633802080332 * (ease + 1) * sizeFactor)
+  points.p0Cp2 = points.p0.shift(0, 84.746 * (ease + 1) * sizeFactor)
   points.p1 = points.p0.shift(270, 117 * (ease + 1) * sizeFactor)
   points.p2 = points.p1.shift(0, 121 * (ease + 1) * sizeFactor)
-  points.p3 = points.p0.shift(331.96514949510785, 145.46831943365956 * (ease + 1) * sizeFactor)
-  points.p3Cp1 = points.p3.shift(180, 69.4545599851181 * (ease + 1) * sizeFactor)
+  points.p3 = points.p0.shift(331.965149, 145.468319 * (ease + 1) * sizeFactor)
+  points.p3Cp1 = points.p3.shift(180, 69.454559985 * (ease + 1) * sizeFactor)
 
   let diff = 10
   let iter = 1
@@ -41,10 +39,7 @@ function draftShortsleeve({
 
     diff = armhole - paths.armhole.length()
     if (diff < -1 || diff > 1) {
-      points.p3 = points.p0.shift(
-        331.96514949510785,
-        145.46831943365956 * (ease + 1) * sizeFactor + diff
-      )
+      points.p3 = points.p0.shift(331.965149, 145.468319 * (ease + 1) * sizeFactor + diff)
     }
     iter++
   } while ((diff < -1 || diff > 1) & (iter < 100))

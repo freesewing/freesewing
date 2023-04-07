@@ -5,7 +5,6 @@ import { front } from './front.mjs'
 import { shortsleeve } from './shortsleeve.mjs'
 
 function draftBindingLeg({
-  options,
   Point,
   Path,
   points,
@@ -15,10 +14,8 @@ function draftBindingLeg({
   complete,
   sa,
   paperless,
-  measurements,
   store,
   macro,
-  utils,
   part,
 }) {
   const backLegOpening = store.get('BackLegOpening')

@@ -5,7 +5,6 @@ import { front } from './front.mjs'
 import { shortsleeve } from './shortsleeve.mjs'
 
 function draftBindingNeckBack({
-  options,
   Point,
   Path,
   points,
@@ -15,16 +14,11 @@ function draftBindingNeckBack({
   complete,
   sa,
   paperless,
-  measurements,
   store,
   macro,
-  utils,
   part,
 }) {
   const backNeckOpening = store.get('BackNeckOpening')
-  const backLegOpening = store.get('BackLegOpening')
-  const frontNeckOpening = store.get('FrontNeckOpening')
-  const frontLegOpening = store.get('FrontLegOpening')
   const hem = store.get('hem')
 
   points.p0 = new Point(0, 0)

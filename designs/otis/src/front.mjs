@@ -21,7 +21,6 @@ function draftFront({
   const waist = store.get('waist')
   const ease = store.get('ease')
   const sizeFactor = store.get('sizeFactor')
-  const sideseam = store.get('sideseam')
   const armhole = store.get('armhole')
   const snapPlacketWidth = store.get('SnapPlacketWidth')
 

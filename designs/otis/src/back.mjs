@@ -1,5 +1,5 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
-import { pluginCutlist } from '@freesewing/plugin-cutlist'
+// import { pluginCutlist } from '@freesewing/plugin-cutlist'
 
 function draftBack({
   options,

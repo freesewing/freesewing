@@ -13,7 +13,6 @@ function draftLongsleeve({
   complete,
   sa,
   paperless,
-  measurements,
   store,
   macro,
   utils,
@@ -22,7 +21,6 @@ function draftLongsleeve({
   const waist = store.get('waist')
   const ease = store.get('ease')
   const sizeFactor = store.get('sizeFactor')
-  const sideseam = store.get('sideseam')
   const hem = store.get('hem')
 
   for (const p in paths) {
