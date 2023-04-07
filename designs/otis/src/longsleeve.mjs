@@ -1,3 +1,4 @@
+import { pluginCutlist } from '@freesewing/plugin-cutlist'
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { shortsleeve } from './shortsleeve.mjs'
 
@@ -17,6 +18,7 @@ function draftLongsleeve({
   macro,
   utils,
   part,
+  addCut,
 }) {
   const waist = store.get('waist')
   const ease = store.get('ease')
@@ -118,12 +120,14 @@ function draftLongsleeve({
     })
   }
 
+  addCut()
+
   return part
 }
 
 export const longsleeve = {
   name: 'longsleeve',
   from: shortsleeve,
-  plugins: [pluginBundle],
+  plugins: [pluginBundle, pluginCutlist],
   draft: draftLongsleeve,
 }

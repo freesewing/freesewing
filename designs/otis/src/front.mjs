@@ -96,6 +96,11 @@ function draftFront({
       .line(points.snapPlacketIn)
       .addClass('dashed')
 
+    points.snap = points.p5
+      .shiftFractionTowards(points.p6, 0.333)
+      .shift(90, (measurements.waist * options.snapPlacket) / 2)
+    snippets.snap = new Snippet('snap-socket', points.snap)
+
     if (sa) {
       paths.sa = paths.seamSA.offset(sa).close().attr('class', 'fabric sa')
     }

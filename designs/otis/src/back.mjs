@@ -1,4 +1,5 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
+import { pluginCutlist } from '@freesewing/plugin-cutlist'
 
 function draftBack({
   options,
@@ -15,6 +16,7 @@ function draftBack({
   store,
   macro,
   part,
+  addCut,
 }) {
   const waist = measurements.waist / 4
   const sizeFactor = measurements.waist / 510
@@ -96,6 +98,11 @@ function draftBack({
       .line(points.snapPlacketIn)
       .addClass('dashed')
 
+    points.snap = points.p6
+      .shiftFractionTowards(points.p7, 0.333)
+      .shift(90, (measurements.waist * options.snapPlacket) / 2)
+    snippets.snap = new Snippet('snap-stud', points.snap)
+
     if (sa) {
       paths.sa = paths.seamSA.offset(sa).close().attr('class', 'fabric sa')
     }
@@ -156,6 +163,8 @@ function draftBack({
       x: points.p7.x + 15,
     })
   }
+
+  addCut({ material: 'fabric' })
 
   return part
 }
