@@ -215,11 +215,11 @@
       "tags": ["tops", "coats", "historical"]
     },
     "otis": {
-      "description": "A FreeSewing pattern that needs a description",
-      "code": "Coder name",
-      "design": "Designer name",
-      "difficulty": 1,
-      "tags": ["tagname"]
+      "description": "A FreeSewing pattern for a simple onesie",
+      "code": "Wouter Van Wageningen",
+      "design": "Wouter Van Wageningen",
+      "difficulty": 2,
+      "tags": ["bottoms", "tops", "underwear"]
     },
     "paco": {
       "description": "A FreeSewing pattern for summer pants",
