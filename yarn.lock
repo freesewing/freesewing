@@ -19011,10 +19011,10 @@ synckit@^0.8.4:
     "@pkgr/utils" "^2.3.1"
     tslib "^2.4.0"
 
-tailwindcss-box-shadow@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/tailwindcss-box-shadow/-/tailwindcss-box-shadow-2.0.0.tgz#a7fd1e5255e73c26e5578119a5732289366056eb"
-  integrity sha512-RZdePEMzIpiTG0FmbncVlY6Zkqp3tBhpyCoVpc8UQBZEdGY8TqVcIrE75Si4vIz/oGDAIFRKGeKFt2HLLbLHHQ==
+tailwindcss-box-shadow@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/tailwindcss-box-shadow/-/tailwindcss-box-shadow-2.0.1.tgz#5d224fff9231019ff2780c07805821c43608e474"
+  integrity sha512-F0reqyXrQkcPQiCM27ZqV8Le0CGqea0S5PCwwgTnNrdzOdDs2y6iJ5jJKIdMgKu/1VxUpgP0CMPU/k8vdqpLBA==
 
 tailwindcss-email-variants@2.0.1:
   version "2.0.1"
