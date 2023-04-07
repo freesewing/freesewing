@@ -977,6 +977,16 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "clegganator259",
+      "name": "David Clegg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3974250?v=4",
+      "profile": "https://github.com/clegganator259",
+      "contributions": [
+        "design",
+        "code"
+      ]
     }
   ],
   "skipCi": true
