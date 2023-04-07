@@ -4,7 +4,6 @@ import { shortsleeve } from './shortsleeve.mjs'
 
 function draftLongsleeve({
   options,
-  Point,
   Path,
   points,
   paths,

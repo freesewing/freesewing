@@ -1,5 +1,5 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
-// import { pluginCutlist } from '@freesewing/plugin-cutlist'
+import { pluginCutlist } from '@freesewing/plugin-cutlist'
 
 function draftBack({
   options,
@@ -175,6 +175,6 @@ export const back = {
     ease: { pct: 14, min: 0, max: 30, menu: 'fit' },
     snapPlacket: { pct: 5, min: 0, max: 30, menu: 'advanced' },
   },
-  plugins: [pluginBundle],
+  plugins: [pluginBundle, pluginCutlist],
   draft: draftBack,
 }

@@ -137,6 +137,6 @@ export const shortsleeve = {
     sleeveType: { dflt: 'short', list: ['short', 'long'], menu: 'style' },
     hem: { pct: 10, min: 0, max: 30, menu: 'advanced' },
   },
-  plugins: [pluginBundle],
+  plugins: [pluginBundle, pluginCutlist],
   draft: draftShortsleeve,
 }

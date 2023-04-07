@@ -1,5 +1,5 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { pluginCutlist } from '@freesewing/plugin-cutlist'
+import { pluginBundle } from '@freesewing/plugin-bundle'
 import { back } from './back.mjs'
 
 function draftFront({
@@ -170,6 +170,6 @@ function draftFront({
 export const front = {
   name: 'front',
   after: back,
-  plugins: [pluginBundle],
+  plugins: [pluginBundle, pluginCutlist],
   draft: draftFront,
 }

@@ -82,6 +82,6 @@ export const bindingNeckFront = {
   options: {
     binding: { pct: 12, min: 0, max: 30, menu: 'advanced' },
   },
-  plugins: [pluginBundle],
+  plugins: [pluginBundle, pluginCutlist],
   draft: draftBindingNeckFront,
 }
