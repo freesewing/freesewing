@@ -2,90 +2,87 @@
 title: "Otis, the simple onesie: Sewing Instructions"
 ---
 
-## Step 1: The Body
-
-### The Face
-
-- **Octoplushy**
-  - With _good sides together_ sew four head parts together, from notch B to the tip of the head part A creating a semi-sphere like shape.
-  - Repeat with the remaining four head parts to create a second half.
-  - Use topstitching, or a long bar-tack, to make the mouth on one of the segments.
-  - On the same section create eyes where the buttons are marked on the pattern.
-  - With _good sides together_ sew the two head halves together, from notch B to the tip of the head part A.
-  - Turn _good sides_ out.
-
 <Note>
 
-There are a couple of ways to make eyes for the Octoplushy version.
-- Buttons
-- Toy eyes
-- Embroidery
-- Felt or other suitable unravelling fabrics which can be combined with a _satin stitch_
+You should use a stretch stitch on your sewing machine. Small zig-zag stitches work really well. The side seams can also be done with a serger.
 
 </Note>
 
-- **Octopus**
-  - With _good sides together_ sew four head parts together, from notch B to the tip of the head part A creating a semi-sphere like shape.
-  - Repeat with the remaining four head parts to create a second half.
-  - With _wrong sides_ to _good sides_ sew the pupil to eyes parts. 
-  - With _good sides together_ sew both short ends of eyebrows together, creating a ring. 
-  - With _good sides together_ sew the eyebrows to the circumferences of the eyes, gathering the excess as you go.
-  - Fold the eyebrows in half _wrong sides together_, and sew it again to the eyes. You may find it easier to hand sew this step.  
-  - Hand sew the eyes to the lower part of one of the head halves, so that you will have two sections between them when it all comes together.
-  - With _good sides together_ sew the two head halves together, from notch B to the tip of the head part A.
-  - Turn _good sides_ out.
+## Step 1: Bindings
 
-<Note>
+### Two options
 
-Before sewing the eyebrows in half, you can stuff the eyebrows to create a more dramatic looking eyebrow.
+There are two ways to do the bindings. You can use it like double-folded bias binding, or just fold it in two and stitch that to the pieces. The double-folding will look nicer and more finished, but is a lot more involved.
 
-</Note>
+#### Double-folded
 
-- **Squid**
-  - With _good sides together_ sew four head parts together, from notch B to the tip of the head part A creating a semi-sphere like shape.
-  - Repeat with the remaining four head parts to create a second half.
-  - On the head (a) parts fold along the fold-line with _good sides together_.
-  - Sew the straight line that juts out and then turn the flap _good sides_ out. 
-  - With _good sides together_ sew the non - flap edges of the head (a) parts to the one of the head halves sewn earlier, from notch B to the tip of the head part A.
-  - With _wrong side_ to _good side_ sew the pupils to the eyes and finish their sides the best you can.
-  - Hand Sew the eyes to the section closest to the legs.
-  - With _good sides together_ sew the two halves together, from notch B to the tip of the head part A making sure that the flaps are on the outside.
-  - Turn _good sides_ out.
+  - Fold both bindings along the long side in two, wrong sides together, and give it a good press.
+  - Mark the middle of each of the bindings and of the front and back parts. 
+  - Attach the binding to the corresponding part, good sides together. Make sure you distribute the binding evenly along the edge. 
+  - Sew just shy of the SA. 
+  - Press the binding towards the edge and flip your part over. 
+  - Now fold the remaining SA under and press. 
+  - Sew this side of the binding to the part through all five layers.
 
-## Step 2: The Legs
+#### Fold and stitch
 
-- **Octoplushy & Octopus**
-  - With _good sides together_ sew four leg parts together, from notch D to the tip of the leg part C.
-  - Repeat with the remaining four leg parts to create a second half.
-  - With _good sides together_ sew the two leg halves together, from notch D to the tip of the leg part C but only one side. This other side stays open for
-stuffing later. 
+  - Fold both bindings along the long side in two, wrong sides together, and give it a good press.
+  - Mark the middle of each of the bindings and of the front and back parts. 
+  - Attach the folded binding to the corresponding part, good sides together. Make sure you distribute the binding evenly along the edge. You have three layers pinned together.
+  - Sew just shy of the SA. 
+  - Press the binding towards the edge, pressing the SA towards the wrong side.
+  - Sew through the part and the SA underneath, holding the folded SA on the wrong side.
 
-- **Squid**
-  - With _good sides together_ sew four leg parts together, from notch D to the tip of the leg part C.
-  - Repeat with the remaining four leg parts to create a second half. 
-  - With _good sides together_ sew a leg (a) part to each half so you have matching halves.
-  - With _good sides together_ sew the two leg halves together, from notch D to the tip of the leg part C but only one side. This other side stays open for
-stuffing later. 
+## Step 2: Attach body parts
 
-## Step 3: Final Construction
+  - Lay the back and front parts with the good side up, tops facing eachother.
+  - Lay the front part shoulders on top of the back part shoulders, alinging the notches on the left and right.
+  - Baste or pin together.
 
-- With _good sides together_ match up the leg parts with the body parts. 
-- Sew each leg from notch B/D down and back around to notch B/D. 
-- If the leg part is slightly shorter than the leg on the head partsm you will have to ease it in while matching it up. Notches have been provided to make this easier.
+## Step 3: Attach sleeves
 
-<Tip>
+  - Mark the middle of the should of each sleeve.
+  - Pin the sleeve to the two body parts, aligning the middle of the sleeve wioth the shoulder notch.
+  - Distribute the sleeve evenly along the opening.
+  - Sew the pieces together
 
-It is easiest to sew one leg almost to the next B/D notch, stop sewing, pin the next leg, and continue sewing rather than trying to pin and sew all the legs in one go. 
+## Step 4: Prepare snap placket
 
-Those who are more confident can do this with the needle down on their machine but if you are less confident you may wish to remove from the machine, pin and then start sewing again a little bit over your originial stitching to secure it.
-  
-</Tip>
+  - (optional) If your fabric is flimsy, or very stretchy, cut a piece of iron-on interfacing the size of the snap placket and iron it in place.
+  - Press the SA of the snap placket over, and then press the snap placket in two.
+  - Sew just along the inner edge on the snap placket.
 
-- Turn _good sides_ out.
-- For Octopus sew along stitching lines of the legs before stuffing.
-- Stuff the plushy through the opening in the legs.
-- Hand sew the opening closed.
+## Step 5: Body
 
-## Step 4: Enjoy!
+  <Note>
 
-- That's it you are all done now go explore the depths of the oceans with your new Octoplushy!
+  You can reinforce the sleeve openings now if you're so inclined. Add some iron interfacing tape to the hem of the sleeve. This will keep the sleeve opening looking nice if you have flimsy or stretchy fabric.
+
+  </Note>
+
+  - Press the sleeve SA and hem over, so it'll be easier to sew the hem once you've done the next steps.
+  - Pin both front and back sides together, wrong sides out, from the leg opening all the way to the arm opening in the sleeve.
+  - Sew the whole seam on both sides.
+  - Turn the onesie right-side out.
+
+## Step 6: Hem
+
+  - Fold the hems on the sleeves in.
+  - Sew them in place.
+
+## Step 7: Leg binding
+
+  - Fold the leg binding in two length-wise, wrong sides together, and press.
+  - Hold the ends right sides together, and sew the SA at the ends.
+  - Fold the binding back, wrong sides together.
+  - Pin the binding to the leg opening, matching the notch to the side seam, and the beginning and end to the snap placket.
+  - Sew this binding to the leg opening like you did with the earlier bindings.
+
+## Step 8: Snaps
+
+  - Mark the position of the snaps along the snap placket, evenly distributed.
+  - Install the studs on the right side of the back part, and the sockets on the wrong side of the front part.
+
+## Done!
+
+Give it a good press all around and take a moment to enjoy the new onesie. This will be the last time it will ever look this nice.

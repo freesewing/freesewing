@@ -3,7 +3,7 @@ import { back } from './back.mjs'
 import { front } from './front.mjs'
 import { shortsleeve } from './shortsleeve.mjs'
 
-function draftBindingNeckBack({
+function draftBindingLeg({
   options,
   Point,
   Path,
@@ -20,15 +20,13 @@ function draftBindingNeckBack({
   utils,
   part,
 }) {
-  const backNeckOpening = store.get('BackNeckOpening')
   const backLegOpening = store.get('BackLegOpening')
-  const frontNeckOpening = store.get('FrontNeckOpening')
   const frontLegOpening = store.get('FrontLegOpening')
   const hem = store.get('hem')
 
   points.p0 = new Point(0, 0)
-  points.p1 = new Point(0, backNeckOpening)
-  points.p2 = new Point(hem * 2, backNeckOpening)
+  points.p1 = new Point(0, backLegOpening + frontLegOpening)
+  points.p2 = new Point(hem * 2, backLegOpening + frontLegOpening)
   points.p3 = new Point(hem * 2, 0)
 
   paths.seam = new Path()
@@ -49,12 +47,12 @@ function draftBindingNeckBack({
     points.logo = points.p0.shiftFractionTowards(points.p2, 0.5)
     snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.25)
 
-    snippets.middle = new Snippet('notch', points.p2.shiftFractionTowards(points.p3, 0.5))
+    snippets.middle = new Snippet('notch', points.p2.shiftTowards(points.p3, frontLegOpening))
 
     macro('title', {
       at: points.logo.shift(-115, 15),
-      nr: 5,
-      title: 'bindingNeckBack',
+      nr: 7,
+      title: 'bindingLeg',
       scale: 0.2,
     })
 
@@ -80,12 +78,12 @@ function draftBindingNeckBack({
   return part
 }
 
-export const bindingNeckBack = {
-  name: 'bindingNeckBack',
+export const bindingLeg = {
+  name: 'bindingLeg',
   after: [back, front, shortsleeve],
   options: {
     binding: { pct: 12, min: 0, max: 30, menu: 'advanced' },
   },
   plugins: [pluginBundle],
-  draft: draftBindingNeckBack,
+  draft: draftBindingLeg,
 }
