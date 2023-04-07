@@ -1,4 +1,5 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
+import { pluginCutlist } from '@freesewing/plugin-cutlist'
 import { back } from './back.mjs'
 
 function draftFront({
@@ -111,6 +112,8 @@ function draftFront({
       from: new Point(0, points.p4.y),
       to: points.p0,
     })
+
+    store.cutlist.addCut({ material: 'fabric', cut: 1 })
   }
 
   // Paperless?

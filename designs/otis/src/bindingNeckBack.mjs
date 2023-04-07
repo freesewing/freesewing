@@ -1,3 +1,4 @@
+import { pluginCutlist } from '@freesewing/plugin-cutlist'
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { back } from './back.mjs'
 import { front } from './front.mjs'
@@ -76,6 +77,7 @@ function draftBindingNeckBack({
       x: points.p3.x + sa + 15,
     })
   }
+  store.cutlist.addCut({ material: 'fabric', cut: 1 })
 
   return part
 }

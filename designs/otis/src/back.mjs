@@ -16,7 +16,6 @@ function draftBack({
   store,
   macro,
   part,
-  addCut,
 }) {
   const waist = measurements.waist / 4
   const sizeFactor = measurements.waist / 510
@@ -164,7 +163,7 @@ function draftBack({
     })
   }
 
-  addCut({ material: 'fabric' })
+  store.cutlist.addCut({ material: 'fabric', cut: 1 })
 
   return part
 }

@@ -1,3 +1,4 @@
+import { pluginCutlist } from '@freesewing/plugin-cutlist'
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { back } from './back.mjs'
 
@@ -125,6 +126,12 @@ function draftShortsleeve({
     })
   }
 
+  if (options.sleeveType != 'short') {
+    part.hide()
+  }
+
+  store.cutlist.addCut({ material: 'fabric', cut: 2 })
+
   return part
 }
 
@@ -132,6 +139,7 @@ export const shortsleeve = {
   name: 'shortsleeve',
   after: back,
   options: {
+    sleeveType: { dflt: 'short', list: ['short', 'long'], menu: 'style' },
     hem: { pct: 10, min: 0, max: 30, menu: 'advanced' },
   },
   plugins: [pluginBundle],

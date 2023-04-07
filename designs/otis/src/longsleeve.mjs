@@ -18,7 +18,6 @@ function draftLongsleeve({
   macro,
   utils,
   part,
-  addCut,
 }) {
   const waist = store.get('waist')
   const ease = store.get('ease')
@@ -120,7 +119,11 @@ function draftLongsleeve({
     })
   }
 
-  addCut()
+  if (options.sleeveType != 'long') {
+    part.hide()
+  }
+
+  store.cutlist.addCut({ material: 'fabric', cut: 2 })
 
   return part
 }
