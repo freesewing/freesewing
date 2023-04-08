@@ -81,11 +81,11 @@ function senyaBack({
     // Remove dimensions that are front only
     macro('rmd', { ids: ['frontOnly'] })
     macro('vd', {
+      id: 'backWaist',
       from: points.cbWaist,
       to: points.cbNeck,
       x: points.cbWaist.x - sa - 15,
     })
-    // Hmm, this doesn't actually add all the sizes. :< The last one disappears.
   }
   log.info('back done!')
 
