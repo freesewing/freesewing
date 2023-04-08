@@ -35,13 +35,9 @@ function senyaFront({
     .shiftTowards(points.shoulder, points.neck.dy(points.cfNeck) * (0.2 + options.necklineBend))
     .rotate(-90, points.neck)
 
-  // Log info for full length
-  log.info(['fullLengthFromHps', units(points.hps.dy(points.waist))])
-
-  // TODO: the 0.69 should probably be a parameter
   points.sleeveEnd = points.shoulder.shift(
     measurements.shoulderSlope * -1,
-    measurements.shoulderToElbow * 0.69
+    measurements.shoulderToElbow * options.bicepTopCoverage
   )
   points.sleeveCp1 = points.sleeveEnd.shift(
     measurements.shoulderSlope * -1 - 90,
@@ -163,6 +159,7 @@ export const front = {
     necklineDepth: { pct: 25, min: 20, max: 40, menu: 'style' },
     necklineWidth: { pct: 30, min: 10, max: 50, menu: 'style' },
     necklineBend: { pct: 30, min: 0, max: 70, menu: 'style' },
+    bicepTopCoverage: { pct: 69, min: 30, max: 110, menu: 'style' },
   },
   draft: senyaFront,
 }

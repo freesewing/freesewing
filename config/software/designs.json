@@ -242,6 +242,13 @@
       "difficulty": 3,
       "tags": ["bottoms", "skirts"]
     },
+    "senya": {
+      "description": "A FreeSewing pattern for a slightly weird shirt",
+      "code": ["timorl"],
+      "design": "timorl",
+      "difficulty": 3,
+      "tags": ["tops"]
+    },
     "shin": {
       "description": "A FreeSewing pattern for swim trunks",
       "code": "Joost De Cock",

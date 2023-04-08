@@ -59,7 +59,6 @@ function senyaBottom({
     })
 
     if (sa) {
-      log.info(`${fullLength * options.lengthBonus * options.hemWidth * -1}`)
       paths.hemBase = new Path()
         .move(points.ex1Rotated)
         .curve(points.ex1CFlippedRotated, points.ex2CFlippedRotated, points.ex2FlippedRotated)
@@ -125,6 +124,7 @@ function senyaBottom({
     }
     snippets.center = new Snippet('bnotch', points.center)
   }
+  log.info('bottom done!')
   return part
 }
 

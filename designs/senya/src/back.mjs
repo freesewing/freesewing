@@ -77,7 +77,6 @@ function senyaBack({
     }
   }
 
-  log.info(`${sa}`)
   // Paperless?
   if (paperless) {
     // Remove dimensions that are front only
@@ -88,7 +87,6 @@ function senyaBack({
       x: points.cbWaist.x - sa - 15,
     })
     // Hmm, this doesn't actually add all the sizes. :< The last one disappears.
-    log.info(`${JSON.stringify(sa, null, 1)}`)
   }
   log.info('back done!')
 
