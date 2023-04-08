@@ -2,8 +2,6 @@ import { base } from './base.mjs'
 import { bottomAndSide, sleevecap, shoulderAndNeck } from './shared.mjs'
 
 function senyaFront({
-  utils,
-  store,
   sa,
   Point,
   points,
@@ -17,7 +15,6 @@ function senyaFront({
   paperless,
   macro,
   log,
-  units,
   part,
 }) {
   points.waistCp2 = points.waist.shift(90, points.armhole.dy(points.waist) / 3)

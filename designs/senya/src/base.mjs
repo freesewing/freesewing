@@ -119,7 +119,6 @@ function draftSenyaBase({
   Point,
   Snippet,
   Path,
-  paths,
   utils,
   complete,
   macro,

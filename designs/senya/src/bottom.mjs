@@ -3,7 +3,6 @@ import { base } from './base.mjs'
 
 function senyaBottom({
   utils,
-  store,
   sa,
   points,
   Path,
@@ -15,7 +14,6 @@ function senyaBottom({
   complete,
   paperless,
   macro,
-  absoluteOptions,
   part,
   log,
 }) {

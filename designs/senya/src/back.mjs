@@ -2,7 +2,6 @@ import { front } from './front.mjs'
 import { bottomAndSide, sleevecap, shoulderAndNeck } from './shared.mjs'
 
 function senyaBack({
-  store,
   sa,
   Point,
   points,
