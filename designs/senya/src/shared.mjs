@@ -1,5 +1,5 @@
-export function bottomAndSide(centerWaist, sideWaist, armhole, waistCp, Path) {
-  return new Path().move(centerWaist).line(sideWaist).curve_(waistCp, armhole)
+export function bottomAndSide(centerMidriffTop, sideMidriffTop, armhole, midriffTopCp, Path) {
+  return new Path().move(centerMidriffTop).line(sideMidriffTop).curve_(midriffTopCp, armhole)
 }
 
 export function sleevecap(armhole, sleeveEnd, cp1, cp2, Path) {

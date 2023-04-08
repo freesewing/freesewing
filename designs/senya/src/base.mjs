@@ -27,11 +27,11 @@ function pointAtX(x, point, Point) {
 function centerBack(measurements, options, Point) {
   var hps = new Point(0, 0)
   var neck = new Point(0, options.backNeckCutout * measurements.neck)
-  var waist = new Point(0, measurements.hpsToWaistBack)
+  var midriffTop = new Point(0, measurements.hpsToMidriffTopBack)
   return {
     hps,
     neck,
-    waist,
+    midriffTop,
   }
 }
 
@@ -132,7 +132,7 @@ function draftSenyaBase({
   let centerBackPoint = centerBack(measurements, options, Point)
   points.cbHps = centerBackPoint.hps
   points.cbNeck = centerBackPoint.neck
-  points.cbWaist = centerBackPoint.waist
+  points.cbMidriffTop = centerBackPoint.midriffTop
 
   // Shoulder line
   points.neck = neckPoint(measurements, options, Point)
@@ -158,8 +158,8 @@ function draftSenyaBase({
   // Side back (cb) vertical axis
   let chestWidth = halfwidth(measurements.chest, options.chestEase)
   points.armhole = pointAtX(chestWidth, points.cbArmhole, Point)
-  let waistWidth = measurements.waist / 4
-  points.waist = pointAtX(waistWidth, points.cbWaist, Point)
+  let midriffTopWidth = measurements.midriffTop / 4
+  points.midriffTop = pointAtX(midriffTopWidth, points.cbMidriffTop, Point)
 
   // Armhhole
   points.armholePitch = armholePitch(
@@ -200,7 +200,7 @@ function draftSenyaBase({
   points.neckCp2Front = collarPoints.cp2Front
 
   // Anchor point for sampling
-  points.gridAnchor = points.cbWaist
+  points.gridAnchor = points.cbMidriffTop
 
   // Add points needed for the mirrored front&back neck/armhole path
   macro('mirror', {
@@ -239,11 +239,11 @@ export const base = {
   measurements: [
     'biceps',
     'chest',
-    'hpsToWaistBack',
+    'hpsToMidriffTopBack',
     'neck',
     'shoulderToShoulder',
     'shoulderSlope',
-    'waist',
+    'midriffTop',
   ],
   options: {
     // Static

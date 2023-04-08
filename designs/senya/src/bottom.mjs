@@ -17,21 +17,21 @@ function senyaBottom({
   part,
   log,
 }) {
-  let topCircumverence = measurements.waist
-  let fullLength = measurements.waistToHips
+  let topCircumverence = measurements.midriffTop
+  let fullLength = measurements.midriffTopToHips
   let angle = 180 * options.circleRatio
-  let radiusWaist = topCircumverence / utils.deg2rad(angle) / 2
+  let radiusMidriffTop = topCircumverence / utils.deg2rad(angle) / 2
 
   if (angle > 90 && sa) {
-    const maxAngle = utils.rad2deg(Math.atan(radiusWaist / sa))
+    const maxAngle = utils.rad2deg(Math.atan(radiusMidriffTop / sa))
     if (angle > 90 + maxAngle) angle = 90 + maxAngle
   }
 
-  const radiusHem = radiusWaist + fullLength * options.lengthBonus
+  const radiusHem = radiusMidriffTop + fullLength * options.lengthBonus
 
   const rotation = angle / 2
 
-  paths.seam = draftRingSector(part, rotation, angle, radiusWaist, radiusHem, true).attr(
+  paths.seam = draftRingSector(part, rotation, angle, radiusMidriffTop, radiusHem, true).attr(
     'class',
     'fabric'
   )
@@ -130,7 +130,7 @@ export const bottom = {
   name: 'senya.bottom',
   from: base,
   hideDependencies: true,
-  measurements: ['waistToHips'],
+  measurements: ['midriffTopToHips'],
   options: {
     lengthBonus: { pct: 110, min: 90, max: 120, menu: 'style' },
     circleRatio: { pct: 50, min: 20, max: 100, menu: 'style' },
