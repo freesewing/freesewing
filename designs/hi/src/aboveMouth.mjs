@@ -17,21 +17,21 @@ function draftHiAboveMouth({
   part,
 }) {
   let aboveMouth01_02d = 266.7238454769277 * options.size
-  let aboveMouth01_02a = 353.4089695458119
-  let aboveMouth02_03d = 28.348200101593726 * options.size
-  let aboveMouth02_03a = 233.13495309848912
+  const aboveMouth01_02a = 353.4089695458119
+  const aboveMouth02_03d = 28.348200101593726 * options.size
+  const aboveMouth02_03a = 233.13495309848912
   let aboveMouth01_04d = 57.858419828059574 * options.size
-  let aboveMouth01_04a = 208.91023166349467
-  let aboveMouth01cp1d = 62.927189989701574 * options.size
-  let aboveMouth01cp1a = 298.7196048714283
-  let aboveMouth02cp2d = 169.53367533325053 * options.size
-  let aboveMouth02cp2a = 195.1209034747764
-  let aboveMouth03cp1d = 172.36585117998288 * options.size
-  let aboveMouth03cp1a = 197.87876803095696
-  let aboveMouth04cp2d = 66.94005927693816 * options.size
-  let aboveMouth04cp2a = 308.8121959753343
+  const aboveMouth01_04a = 208.91023166349467
+  const aboveMouth01cp1d = 62.927189989701574 * options.size
+  const aboveMouth01cp1a = 298.7196048714283
+  const aboveMouth02cp2d = 169.53367533325053 * options.size
+  const aboveMouth02cp2a = 195.1209034747764
+  const aboveMouth03cp1d = 172.36585117998288 * options.size
+  const aboveMouth03cp1a = 197.87876803095696
+  const aboveMouth04cp2d = 66.94005927693816 * options.size
+  const aboveMouth04cp2a = 308.8121959753343
 
-  let faceTopLength = store.get('faceTopLength')
+  const faceTopLength = store.get('faceTopLength')
 
   let diff = 0
   let iteration = 0
@@ -58,28 +58,31 @@ function draftHiAboveMouth({
     iteration++
   } while (Math.abs(diff) > store.get('tolerance') && iteration < 100)
 
-  paths.seam = new Path()
+  paths.aboveMouthAttachment = new Path()
     .move(points.aboveMouth01)
     .line(points.aboveMouth04)
+    .attr('data-text-class', 'text-xs')
+  paths.bodyAttachment = new Path()
+    .move(points.aboveMouth04)
     .curve(points.aboveMouth04cp2, points.aboveMouth03cp1, points.aboveMouth03)
+    .attr('data-text-class', 'text-xs')
+  paths.finAttachment = new Path()
+    .move(points.aboveMouth03)
     .line(points.aboveMouth02)
+    .attr('data-text-class', 'text-xs')
+  paths.bellyAndMouthAttachment = new Path()
+    .move(points.aboveMouth02)
     .curve(points.aboveMouth02cp2, points.aboveMouth01cp1, points.aboveMouth01)
+  paths.seam = new Path()
+    .move(points.aboveMouth01)
+    .join(paths.aboveMouthAttachment)
+    .join(paths.bodyAttachment)
+    .join(paths.finAttachment)
+    .join(paths.bellyAndMouthAttachment)
     .close()
 
-  store.set(
-    'aboveMouthTopLength',
-    new Path()
-      .move(points.aboveMouth03)
-      .curve(points.aboveMouth03cp1, points.aboveMouth04cp2, points.aboveMouth04)
-      .length()
-  )
-  store.set(
-    'aboveMouthBottomLength',
-    new Path()
-      .move(points.aboveMouth01)
-      .curve(points.aboveMouth01cp1, points.aboveMouth02cp2, points.aboveMouth02)
-      .length()
-  )
+  store.set('aboveMouthTopLength', paths.bodyAttachment.length())
+  store.set('aboveMouthBottomLength', paths.bellyAndMouthAttachment.length())
   store.set('aboveMouthFinLength', points.aboveMouth02.dist(points.aboveMouth03))
 
   // Complete?
@@ -103,6 +106,45 @@ function draftHiAboveMouth({
       nr: 5,
       title: 'aboveMouth',
       scale: options.size / 2,
+    })
+
+    macro('banner', {
+      path: paths.aboveMouthAttachment,
+      text: 'aboveMouth',
+      dy: -0,
+      spaces: 0,
+      repeat: 1,
+    })
+    macro('banner', {
+      path: paths.bodyAttachment,
+      text: 'body',
+      dy: 0,
+      spaces: 10,
+      repeat: 7,
+    })
+    macro('banner', {
+      path: paths.finAttachment,
+      text: '+',
+      dy: 0,
+      spaces: 0,
+      repeat: 4,
+    })
+    let split = paths.bellyAndMouthAttachment.split(points.aboveMouthSnippet)
+    paths.bellyAttachment = split[0].attr('data-text-class', 'text-xs')
+    macro('banner', {
+      path: paths.bellyAttachment,
+      text: 'belly',
+      dy: 0,
+      spaces: 4,
+      repeat: 3,
+    })
+    paths.mouthAttachment = split[1].attr('data-text-class', 'text-xs')
+    macro('banner', {
+      path: paths.mouthAttachment,
+      text: 'mouth',
+      dy: 0,
+      spaces: 4,
+      repeat: 3,
     })
 
     if (paperless) {
