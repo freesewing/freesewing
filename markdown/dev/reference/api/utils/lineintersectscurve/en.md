@@ -6,15 +6,24 @@ The `utils.lineIntersectsCurve()` function finds the intersection between a line
 segment from point `from` to point `to` and a curve described by points
 `start`, `cp1`, `cp2, and `end\`.
 
+<Warning>
+
+This function can sometimes fail to find intersections in some curves
+due to a limitation in an underlying Bézier library.
+Please see [Bug #3367](https://github.com/freesewing/freesewing/issues/3367)
+for more information.
+
+</Warning>
+
 ## Signature
 
 ```js
 array | false utils.lineIntersectsCurve(
-  Point from, 
-  Point to, 
-  Point start, 
-  Point cp1, 
-  Point cp2, 
+  Point from,
+  Point to,
+  Point start,
+  Point cp1,
+  Point cp2,
   Point end
 )
 ```
@@ -35,7 +44,7 @@ array | false utils.lineIntersectsCurve(
     .move(points.A)
     .curve(points.Acp, points.Bcp, points.B)
   paths.line = new Path().move(points.E).line(points.D)
-  
+
   for (let p of utils.lineIntersectsCurve(
     points.D,
     points.E,
@@ -51,4 +60,3 @@ array | false utils.lineIntersectsCurve(
 }
 ```
 </Example>
-
