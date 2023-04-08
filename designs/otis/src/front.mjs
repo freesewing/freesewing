@@ -102,7 +102,7 @@ function draftFront({
     snippets.snap = new Snippet('snap-socket', points.snap)
 
     if (sa) {
-      paths.sa = paths.seamSA.offset(sa).close().attr('class', 'fabric sa')
+      paths.sa = paths.seamSA.offset(sa).close().trim().attr('class', 'fabric sa')
     }
 
     snippets.shoulder = new Snippet('notch', points.shoulder)

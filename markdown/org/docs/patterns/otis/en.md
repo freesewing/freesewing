@@ -1,5 +1,5 @@
 ---
-title: Otis: the simple onesie
+title: Otis: the simple romper
 ---
 
 <PatternDocs pattern='otis' />

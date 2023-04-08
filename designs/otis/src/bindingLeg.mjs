@@ -9,6 +9,7 @@ function draftBindingLeg({
   Path,
   points,
   paths,
+  options,
   Snippet,
   snippets,
   complete,
@@ -20,12 +21,16 @@ function draftBindingLeg({
 }) {
   const backLegOpening = store.get('BackLegOpening')
   const frontLegOpening = store.get('FrontLegOpening')
-  const hem = store.get('hem')
-
+  const waist = store.get('waist')
+  const ease = store.get('ease')
+  const sizeFactor = store.get('sizeFactor')
+  const binding = waist * (ease + 1) * sizeFactor * options.binding
+  store.set('binding', binding)
+  console.log({ waist: waist })
   points.p0 = new Point(0, 0)
   points.p1 = new Point(0, backLegOpening + frontLegOpening)
-  points.p2 = new Point(hem * 2, backLegOpening + frontLegOpening)
-  points.p3 = new Point(hem * 2, 0)
+  points.p2 = new Point(binding * 2, backLegOpening + frontLegOpening)
+  points.p3 = new Point(binding * 2, 0)
 
   paths.seam = new Path()
     .move(points.p0)
@@ -81,7 +86,7 @@ export const bindingLeg = {
   name: 'bindingLeg',
   after: [back, front, shortsleeve],
   options: {
-    binding: { pct: 12, min: 0, max: 30, menu: 'advanced' },
+    binding: { pct: 11, min: 0, max: 30, menu: 'advanced' },
   },
   plugins: [pluginBundle, pluginCutlist],
   draft: draftBindingLeg,

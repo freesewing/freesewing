@@ -1,10 +1,10 @@
 ---
-title: "Otis, the simple onesie: Fabric Options"
+title: "Otis, the simple romper: Fabric Options"
 ---
 
 ## Main Fabric 
 
-Onesies are normally made from knit fabric. For best results, use a cotton fabric with just one or two percent of spandex. 
+rompers are normally made from knit fabric. For best results, use a cotton fabric with just one or two percent of spandex. 
 Jersey works well if it has good recovery.
 
 ## Interfacing

@@ -1,5 +1,5 @@
 ---
-title: "Otis, the simple onesie: Design Options"
+title: "Otis, the simple romper: Design Options"
 ---
 
 <PatternOptions pattern='otis' />

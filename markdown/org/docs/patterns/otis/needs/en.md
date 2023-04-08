@@ -1,5 +1,5 @@
 ---
-title: "Otis, the simple onesie: What You Need"
+title: "Otis, the simple romper: What You Need"
 ---
 
 To make Otis, you will need the following:

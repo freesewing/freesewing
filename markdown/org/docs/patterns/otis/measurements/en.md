@@ -1,5 +1,5 @@
 ---
-title: "Otis, the simple onesie: Required Measurements"
+title: "Otis, the simple romper: Required Measurements"
 ---
 
 <PatternMeasurements pattern='otis' />

@@ -48,7 +48,7 @@
 
 # @freesewing/otis
 
-A FreeSewing pattern for a simple onesie
+A FreeSewing pattern for a simple romper
 
 
 

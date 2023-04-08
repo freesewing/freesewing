@@ -1,8 +1,6 @@
 import { pluginCutlist } from '@freesewing/plugin-cutlist'
 import { pluginBundle } from '@freesewing/plugin-bundle'
-import { back } from './back.mjs'
-import { front } from './front.mjs'
-import { shortsleeve } from './shortsleeve.mjs'
+import { bindingLeg } from './bindingLeg.mjs'
 
 function draftBindingNeckFront({
   Point,
@@ -19,12 +17,12 @@ function draftBindingNeckFront({
   part,
 }) {
   const frontNeckOpening = store.get('FrontNeckOpening')
-  const hem = store.get('hem')
+  const binding = store.get('binding')
 
   points.p0 = new Point(0, 0)
   points.p1 = new Point(0, frontNeckOpening)
-  points.p2 = new Point(hem * 2, frontNeckOpening)
-  points.p3 = new Point(hem * 2, 0)
+  points.p2 = new Point(binding * 2, frontNeckOpening)
+  points.p3 = new Point(binding * 2, 0)
 
   paths.seam = new Path()
     .move(points.p0)
@@ -78,7 +76,7 @@ function draftBindingNeckFront({
 
 export const bindingNeckFront = {
   name: 'bindingNeckFront',
-  after: [back, front, shortsleeve],
+  after: [bindingLeg],
   options: {
     binding: { pct: 12, min: 0, max: 30, menu: 'advanced' },
   },

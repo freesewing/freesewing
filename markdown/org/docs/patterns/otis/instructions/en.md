@@ -1,5 +1,5 @@
 ---
-title: "Otis, the simple onesie: Sewing Instructions"
+title: "Otis, the simple romper: Sewing Instructions"
 ---
 
 <Note>
@@ -17,7 +17,7 @@ There are two ways to do the bindings. You can use it like double-folded bias bi
 #### Double-folded
 
   - Fold both bindings along the long side in two, wrong sides together, and give it a good press.
-  - Mark the middle of each of the bindings and of the front and back parts. 
+  - Mark the middle of each of the bindings (notch) and of the front and back parts. 
   - Attach the binding to the corresponding part, good sides together. Make sure you distribute the binding evenly along the edge. 
   - Sew just shy of the SA. 
   - Press the binding towards the edge and flip your part over. 
@@ -63,7 +63,7 @@ There are two ways to do the bindings. You can use it like double-folded bias bi
   - Press the sleeve SA and hem over, so it'll be easier to sew the hem once you've done the next steps.
   - Pin both front and back sides together, wrong sides out, from the leg opening all the way to the arm opening in the sleeve.
   - Sew the whole seam on both sides.
-  - Turn the onesie right-side out.
+  - Turn the romper right-side out.
 
 ## Step 6: Hem
 
@@ -85,4 +85,4 @@ There are two ways to do the bindings. You can use it like double-folded bias bi
 
 ## Done!
 
-Give it a good press all around and take a moment to enjoy the new onesie. This will be the last time it will ever look this nice.
+Give it a good press all around and take a moment to enjoy the new romper. This will be the last time it will ever look this nice.

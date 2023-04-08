@@ -1,5 +1,5 @@
 ---
-title: "Otis, the simple onesie: Cutting Instructions"
+title: "Otis, the simple romper: Cutting Instructions"
 ---
 
 - **Main fabric**
