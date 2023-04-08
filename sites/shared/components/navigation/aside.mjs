@@ -15,7 +15,8 @@ export const AsideNavigation = ({ app, mobileOnly = false, before = [], after = 
     lg:w-auto
     lg:sticky lg:relative lg:transform-none
     lg:justify-center
-    lg:border-r-2 lg:border-base-200 lg:bg-base-300 lg:bg-opacity-10
+    lg:border lg:border-dashed lg:border-l-0 lg:border-t-0 lg:border-b-0 lg:border-r-1 lg:border-base-300
+    lg:bg-base-300 lg:bg-opacity-10
     lg:pt-16
     ${mobileOnly ? 'block lg:hidden w-full ' : ''}
   `}

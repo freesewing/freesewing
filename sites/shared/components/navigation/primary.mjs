@@ -251,7 +251,7 @@ export const MainSections = ({ app }) => {
 }
 
 export const ActiveSection = ({ app }) => (
-  <div className="mt-4 pt-4 border-t-2">
+  <div className="mt-4 pt-4 border border-l-0 border-r-0 border-b-0 border-dashed border-base-300">
     {app.state.crumbs ? (
       <div className="pl-4">
         <Breadcrumbs crumbs={app.state.crumbs.slice(0, 1)} />

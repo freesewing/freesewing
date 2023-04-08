@@ -22,7 +22,7 @@ module.exports = {
   'accent-focus': colors.lime['600'],
   'accent-content': colors.lime['400'],
 
-  neutral: '#001c06', // Even darker
+  neutral: bg,
   'neutral-focus': colors.lime['600'],
   'neutral-content': colors.lime['200'],
 

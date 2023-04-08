@@ -1,8 +1,7 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  fontFamily:
-    '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+  fontFamily: "'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;",
 
   // base-100: The default background color for a regular page (docs and so on)
   'base-100': colors.red['50'],
@@ -42,7 +41,7 @@ module.exports = {
   // neutral-focus: Typically a shade lighter than neutral
   'neutral-focus': colors.fuchsia['800'],
   // neutral-content: The text color on neutral backgrounds
-  'neutral-content': colors.fuchsia['50'],
+  'neutral-content': colors.fuchsia['300'],
 
   // info: Used rarely, can be another color best somewhat neutral looking
   // and should work with the default text color

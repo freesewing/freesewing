@@ -9,8 +9,8 @@ const aqua = require('./aqua')
 module.exports = {
   light,
   dark,
+  aqua,
   hax0r,
   lgbtq,
   pastel,
-  aqua,
 }

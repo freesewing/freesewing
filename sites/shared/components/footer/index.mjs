@@ -29,7 +29,7 @@ export const Footer = ({ app }) => {
         <SocialIcons />
       </div>
 
-      <div className="py-4 px-8 flex flex-row gap-8 flex-wrap 2xl:flex-nowrap justify-around text-neutral-content py-10 border border-solid border-l-0 border-r-0 border-b-0 border-base-300">
+      <div className="mt-8 py-8 px-8 flex flex-row gap-8 flex-wrap 2xl:flex-nowrap justify-around text-neutral-content py-10 border border-solid border-l-0 border-r-0 border-b-0 border-base-300">
         <Sponsors />
       </div>
     </footer>
