@@ -16,24 +16,23 @@ function draftHiTopFin({
   part,
 }) {
   let topFinOpening = store.get('topFinOpening')
-  let topFinOpeningLength = store.get('topFinOpeningLength')
+  const topFinOpeningLength = store.get('topFinOpeningLength')
 
-  let topFin01_02d = 256.9537569065251 * options.size
-  let topFin01_02a = 325.46697637215823
-  //let topFin01_03d = 149.5416276819869 * options.size
-  let topFin01_03a = 275.4353725228365
-  let topFin01cp1d = 178.52481158058 * options.size
-  let topFin01cp2d = 27.240286624072077 * options.size
-  let topFin01cp1a = 346.31732410079576
-  let topFin01cp2a = 254.05347154462484
-  let topFin02cp1d = 25.871054481794893 * options.size
-  let topFin02cp2d = 12.154549189501026 * options.size
-  let topFin02cp1a = 236.80010054081936
-  let topFin02cp2a = 56.66685795767527
-  let topFin03cp1d = 39.024661651837555 * options.size
-  let topFin03cp2d = 76.08965682877273 * options.size
-  let topFin03cp1a = 113.40393219481112
-  let topFin03cp2a = 22.511206474810457
+  const topFin01_02d = 256.9537569065251 * options.size
+  const topFin01_02a = 325.46697637215823
+  const topFin01_03a = 275.4353725228365
+  const topFin01cp1d = 178.52481158058 * options.size
+  const topFin01cp2d = 27.240286624072077 * options.size
+  const topFin01cp1a = 346.31732410079576
+  const topFin01cp2a = 254.05347154462484
+  const topFin02cp1d = 25.871054481794893 * options.size
+  const topFin02cp2d = 12.154549189501026 * options.size
+  const topFin02cp1a = 236.80010054081936
+  const topFin02cp2a = 56.66685795767527
+  const topFin03cp1d = 39.024661651837555 * options.size
+  const topFin03cp2d = 76.08965682877273 * options.size
+  const topFin03cp1a = 113.40393219481112
+  const topFin03cp2a = 22.511206474810457
 
   let diff = 0
   let iteration = 0
@@ -78,6 +77,19 @@ function draftHiTopFin({
 
   // Complete?
   if (complete) {
+    paths.body = new Path()
+      .move(points.topFin01)
+      .curve(points.topFin01cp2, points.topFin03cp1, points.topFin03)
+      .attr('class', 'hidden')
+      .attr('data-text-class', 'text-xs')
+    macro('banner', {
+      path: paths.body,
+      text: 'body',
+      dy: 0,
+      spaces: 10,
+      repeat: 3,
+    })
+
     points.titleAnchor = points.topFin01
       .shiftFractionTowards(points.topFin02, 0.5)
       .shiftFractionTowards(points.topFin03, 0.1)
@@ -97,11 +109,11 @@ function draftHiTopFin({
 
     if (paperless) {
       points.topFinLeft = paths.seam.edge('left')
-      let tempPath = new Path()
+      const tempPath = new Path()
         .move(points.topFin02)
         .curve(points.topFin02cp1, points.topFin03cp2, points.topFin03)
       points.topFinInsideTop = tempPath.edge('top')
-      let tempPoint = tempPath.shiftFractionAlong(0.5)
+      const tempPoint = tempPath.shiftFractionAlong(0.5)
       points.topFinInsideBottom = tempPath.split(tempPoint)[0].edge('bottom')
       points.topFinRight = paths.seam.edge('right')
 

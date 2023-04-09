@@ -15,34 +15,34 @@ function draftHiTail({
   macro,
   part,
 }) {
-  let tail01_02d = 192.0129724628 * options.size
-  let tail01_02a = 53.242955551234914
-  let tail01_03d = 115.38057785000036 * options.size
-  let tail01_03a = 106.95066736265407
-  let tail01_04d = 230.05210782342334 * options.size
-  let tail01_04a = 138.66344842617497
-  let tail01_05d = 95.12771141996424 * options.size
-  let tail01_05a = 173.38284569091573
-  let tail01cp1d = 156.52907796955816 * options.size
-  let tail01cp2d = 33.33694275124821 * options.size
-  let tail01cp1a = 40.69161792982998
-  let tail01cp2a = 150.8191939475001
-  let tail02cp1d = 20.1307852802616 * options.size
-  let tail02cp2d = 26.418081118809575 * options.size
-  let tail02cp1a = 129.66709301725697
-  let tail02cp2a = 303.9168409570558
-  let tail03cp1d = 41.577 * options.size
-  let tail03cp2d = 41.575999999999965 * options.size
-  let tail03cp1a = 180
-  let tail03cp2a = -0
-  let tail04cp1d = 18.83137554720844 * options.size
-  let tail04cp2d = 18.830271479721173 * options.size
-  let tail04cp1a = 218.47354143777738
-  let tail04cp2a = 38.483984913053284
-  let tail05cp1d = 38.59528397356339 * options.size
-  let tail05cp2d = 126.7372982195849 * options.size
-  let tail05cp1a = 14.169822482118544
-  let tail05cp2a = 128.3396902984
+  const tail01_02d = 192.0129724628 * options.size
+  const tail01_02a = 53.242955551234914
+  const tail01_03d = 115.38057785000036 * options.size
+  const tail01_03a = 106.95066736265407
+  const tail01_04d = 230.05210782342334 * options.size
+  const tail01_04a = 138.66344842617497
+  const tail01_05d = 95.12771141996424 * options.size
+  const tail01_05a = 173.38284569091573
+  const tail01cp1d = 156.52907796955816 * options.size
+  const tail01cp2d = 33.33694275124821 * options.size
+  const tail01cp1a = 40.69161792982998
+  const tail01cp2a = 150.8191939475001
+  const tail02cp1d = 20.1307852802616 * options.size
+  const tail02cp2d = 26.418081118809575 * options.size
+  const tail02cp1a = 129.66709301725697
+  const tail02cp2a = 303.9168409570558
+  const tail03cp1d = 41.577 * options.size
+  const tail03cp2d = 41.575999999999965 * options.size
+  const tail03cp1a = 180
+  const tail03cp2a = -0
+  const tail04cp1d = 18.83137554720844 * options.size
+  const tail04cp2d = 18.830271479721173 * options.size
+  const tail04cp1a = 218.47354143777738
+  const tail04cp2a = 38.483984913053284
+  const tail05cp1d = 38.59528397356339 * options.size
+  const tail05cp2d = 126.7372982195849 * options.size
+  const tail05cp1a = 14.169822482118544
+  const tail05cp2a = 128.3396902984
 
   points.tail01 = new Point(0, 0)
   points.tail02 = points.tail01.shift(tail01_02a, tail01_02d)
@@ -88,6 +88,19 @@ function draftHiTail({
       .curve(points.tail01cp2, points.tail05cp1, points.tail05)
       .shiftFractionAlong(0.25)
     snippets.tail = new Snippet('bnotch', points.tailSnippet)
+
+    paths.body = new Path()
+      .move(points.tail05)
+      .curve(points.tail05cp1, points.tail01cp2, points.tail01)
+      .attr('class', 'hidden')
+      .attr('data-text-class', 'text-xs')
+    macro('banner', {
+      path: paths.body,
+      text: 'body',
+      dy: 0,
+      spaces: 10,
+      repeat: 3,
+    })
 
     points.titleAnchor = points.tail03.shiftFractionTowards(points.tail01, 0.4)
     points.logoAnchor = points.tail03.shiftFractionTowards(points.tail05, 0.5)

@@ -1,57 +1,57 @@
 - - -
-title: "Albert apron: Sewing Instructions"
+titre : "Tablier Albert : Instructions de couture"
 - - -
 
 ### Étape 1 : La Poche
 
-- Along the top of the pocket fold the seam allowance to wrong side, press.
-- Then fold the top hem allowance to wrong side and press, making sure the seam allowance is tucked underneath. Pin in place if you need to.
-- Press the seam allowance of the sides and bottom to the wrong side.
-- On the right side topstich close to where the hem edge lies underneath, making sure to catch the hem and seam allowances as you sew.
-- Pin the pocket to the front using the guides.
-- _Edgestitch_ the sides and bottom of the pocket leaving the top open. Make sure to backstitch at the start and end to secure the pocket properly.
+- Le long du haut de la poche, pliez la marge de couture sur l'envers, repassez.
+- Pliez ensuite le surplus de l'ourlet supérieur sur l'envers et repassez, en veillant à ce que le surplus de couture soit rentré en dessous. Épinglez si nécessaire.
+- Repassez le surplus de couture des côtés et du bas sur l'envers.
+- Sur l'endroit, surpiquez près de l'endroit où le bord de l'ourlet se trouve en dessous, en veillant à attraper l'ourlet et les surplus de couture pendant que vous cousez.
+- Épinglez la poche sur le devant en utilisant les guides.
+- _Piquez _les côtés et le fond de la poche en laissant le haut ouvert. Veillez à faire un point arrière au début et à la fin pour bien fixer la poche.
 
 <Tip>
 
-If you have trouble catching the top hem we suggest to either _Baste_ close to the hem edge first, and use that as a guide when stitching on the right side or pin the hem edge down from the right side making sure the pins are parallel to the top edge and use them as a guide.
+Si vous avez des difficultés à attraper l'ourlet du haut, nous vous suggérons plutot en premier de _Baste_ près du bord de l'ourlet et de l'utiliser comme guide lorsque vous cousez sur l'endroit, soit d'épingler le bord de l'ourlet sur l'endroit en veillant à ce que les épingles soient parallèles au bord du haut et de les utiliser comme guide.
 
 </Tip>
 
 <Note>
 
-There are multiple ways to sew a patch pocket so use the way you prefer if you do not like this one.  
-A fun thing you can do is embroider/stitch the pocket with the name of the person the apron is for or even a cute design. Just remember that aprons typically get dirty so don't go to overtop with it.
+Il existe plusieurs façons de coudre une poche plaquée, alors utilisez celle que vous préférez si vous n'aimez pas celle-ci.  
+Une chose amusante que vous pouvez faire est de broder/coudre la poche avec le nom de la personne à qui le tablier est destiné ou même un joli motif. N'oubliez pas que les tabliers se salissent généralement, alors n'en faites pas trop.
 
 </Note>
 
-### Step 2: The Front
+### Étape 2 : Le devant
 
-- Press under the side seam allowances to the wrong side.
-- Press under the side seams to the wrong side along the hem lines making sure the seam allowances are tucked underneath.
-- On the right side topstich close to where the folded edges lie underneath, making sure to catch the hems as you sew.
-- Repeat Step 2 for the top and bottom hems.
+- Repassez sous les surplus de couture latérale sur l'envers.
+- Repassez les coutures latérales sur l'envers le long des lignes d'ourlet en veillant à ce que les surplus de couture soient rentrés en dessous.
+- Sur l'endroit, surpiquez près de l'endroit où les bords pliés se trouvent en dessous, en veillant à attraper les ourlets pendant que vous cousez.
+- Répétez l'étape 2 pour les ourlets supérieur et inférieur.
 
 <Note>
 
-It is recommended to hem the side seams before the top and bottom seams as they are narrower.  
-The side seams are narrow hems simply being the seam allowance folded over twice.
+Il est recommandé d'ourler les coutures latérales avant les coutures supérieures et inférieures, car elles sont plus étroites.  
+Les coutures latérales sont des ourlets étroits, la marge de couture étant simplement repliée deux fois.
 
 </Note>
 
-### Step 3: The Straps
+### Étape 3 : Les sangles
 
-- Fold one strap in half, right sides together and sew the top and side together.
-- Turn inside out through the bottom. Press.
-- Using the cross and rectangle as a guide, stitch the top of the strap to the wrong side of the front on the top left.
-- Using the cross and rectangle as a guide, stitch the bottom of the strap to the wrong side of the front at the side right.
-- Repeat Step 3 for the remaining strap attaching it at the top right and then the side left.
+- Pliez une sangle en deux, endroit contre endroit, et cousez le haut et le côté ensemble.
+- Retourner à l'envers vers le bas. Appuyer.
+- En utilisant la croix et le rectangle comme guide, cousez le haut de la sangle sur l'envers du devant en haut à gauche.
+- En utilisant la croix et le rectangle comme guide, cousez le bas de la sangle sur l'envers du devant, sur le côté droit.
+- Répétez l'étape 3 pour la sangle restante en l'attachant en haut à droite, puis sur le côté à gauche.
 
 <Note>
 
-You can make another set of straps to tie at the back if you wish to keep the apron close to body when moving.
+Vous pouvez faire un autre jeu de lanières à nouer dans le dos si vous souhaitez garder le tablier près du corps lorsque des déplacements.
 
 </Note>
 
-### Step 4: Enjoy!
+### Étape 4: Profitez-en!
 
-You're done! Now go enjoy your apron and make every stain a memory!
+Vous avez terminé ! Maintenant, allez profiter de votre tablier et faire de chaque tache un souvenir!

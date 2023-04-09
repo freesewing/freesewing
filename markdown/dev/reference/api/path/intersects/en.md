@@ -5,6 +5,15 @@ title: Path.intersects()
 The `Path.intersects()` method returns the Point object(s) where the path
 intersects with a path you pass it.
 
+<Warning>
+
+This method can sometimes fail to find intersections in some curves
+due to a limitation in an underlying Bézier library.
+Please see [Bug #3367](https://github.com/freesewing/freesewing/issues/3367)
+for more information.
+
+</Warning>
+
 ## Signature
 
 ```
