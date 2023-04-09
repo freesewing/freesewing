@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import orderBy from 'lodash.orderby'
 import {
-  TutorialIcon,
+  CommunityIcon,
+  DesignIcon,
+  DocsIcon,
   GuideIcon,
   HelpIcon,
-  DocsIcon,
   RssIcon,
   ShowcaseIcon,
+  TutorialIcon,
   UserIcon,
 } from 'shared/components/icons.mjs'
 import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
@@ -14,18 +16,19 @@ import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
 export const ns = ['sections']
 
 // List of icons matched to top-level slug
-const icons = {
+export const icons = {
   // FreeSewing.dev
   guides: (className = '') => <GuideIcon className={className} />,
   howtos: (className = '') => <HelpIcon className={className} />,
   reference: (className = '') => <DocsIcon className={className} />,
   tutorials: (className = '') => <TutorialIcon className={className} />,
   // FreeSewing.org
-  blog: (className = '') => <RssIcon className={className} stroke={3} />,
-  showcase: (className = '') => <ShowcaseIcon className={className} />,
-  docs: (className = '') => <DocsIcon className={className} />,
   account: (className = '') => <UserIcon className={className} />,
-  Account: (className = '') => <UserIcon className={className} />,
+  blog: (className = '') => <RssIcon className={className} stroke={3} />,
+  designs: (className = '') => <DesignIcon className={className} stroke={3} />,
+  docs: (className = '') => <DocsIcon className={className} />,
+  showcase: (className = '') => <ShowcaseIcon className={className} />,
+  community: (className = '') => <CommunityIcon className={className} />,
 }
 
 /* helper method to order nav entries */
@@ -60,8 +63,7 @@ export const linkClasses = `
 `
 
 // Figure out whether a page is on the path to the active page
-const isActive = (slug, active) => {
-  console.log({ slug, active })
+export const isActive = (slug, active) => {
   if (!slug) return false
   if (slug === active) return true
   let result = true
@@ -251,7 +253,7 @@ export const MainSections = ({ app }) => {
 }
 
 export const ActiveSection = ({ app }) => (
-  <div className="mt-4 pt-4 border border-l-0 border-r-0 border-b-0 border-dashed border-base-300">
+  <div>
     {app.state.crumbs ? (
       <div className="pl-4">
         <Breadcrumbs crumbs={app.state.crumbs.slice(0, 1)} />

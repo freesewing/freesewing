@@ -26,10 +26,9 @@ import { useTranslation } from 'next-i18next'
 import { ModalThemePicker } from 'shared/components/modal/theme-picker.mjs'
 import { ModalLocalePicker } from 'shared/components/modal/locale-picker.mjs'
 import { Search, ns as searchNs } from 'site/components/search.mjs'
+import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
 
 export const ns = [...new Set(['header', ...themeNs, ...localeNs])]
-
-const MainMenu = () => <p>Main menu here</p>
 
 const NavButton = ({ href, label, color, children, onClick = false, extraClasses = '' }) => {
   const className =
@@ -54,37 +53,64 @@ const NavSpacer = () => (
   <div className="hidden lg:block text-base lg:text-4xl font-thin opacity-30 px-0.5 lg:px-2">|</div>
 )
 
+export const colors = {
+  menu: 'red',
+  designs: 'orange',
+  showcase: 'yellow',
+  docs: 'lime',
+  blog: 'green',
+  community: 'cyan',
+  theme: 'blue',
+  language: 'indigo',
+  search: 'violet',
+  account: 'purple',
+}
+
 const NavIcons = ({ app, setSearch }) => {
   const { t } = useTranslation(['header'])
   const iconSize = 'h-6 w-6 lg:h-12 lg:w-12'
 
   return (
     <>
-      <NavButton onClick={() => app.setModal(<MainMenu />)} label={t('header:menu')} color="red">
+      <NavButton
+        onClick={() => app.setModal(<ModalMenu app={app} />)}
+        label={t('header:menu')}
+        color={colors.menu}
+      >
         <MenuIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
-      <NavButton href="/designs" label={t('header:designs')} color="orange">
+      <NavButton href="/designs" label={t('header:designs')} color={colors.designs}>
         <DesignIcon className={iconSize} />
       </NavButton>
       <NavButton
         href="/showcase"
         label={t('header:showcase')}
-        color="yellow"
+        color={colors.showcase}
         extraClasses="hidden lg:flex"
       >
         <ShowcaseIcon className={iconSize} />
       </NavButton>
-      <NavButton href="/docs" label={t('header:docs')} color="lime" extraClasses="hidden lg:flex">
+      <NavButton
+        href="/docs"
+        label={t('header:docs')}
+        color={colors.docs}
+        extraClasses="hidden lg:flex"
+      >
         <DocsIcon className={iconSize} />
       </NavButton>
-      <NavButton href="/blog" label={t('header:blog')} color="green" extraClasses="hidden lg:flex">
+      <NavButton
+        href="/blog"
+        label={t('header:blog')}
+        color={colors.blog}
+        extraClasses="hidden lg:flex"
+      >
         <RssIcon className={iconSize} />
       </NavButton>
       <NavButton
         href="/community"
         label={t('header:community')}
-        color="cyan"
+        color={colors.community}
         extraClasses="hidden lg:flex"
       >
         <CommunityIcon className={iconSize} />
@@ -93,22 +119,22 @@ const NavIcons = ({ app, setSearch }) => {
       <NavButton
         onClick={() => app.setModal(<ModalThemePicker app={app} />)}
         label={t('header:theme')}
-        color="blue"
+        color={colors.theme}
       >
         <ThemeIcon className={iconSize} />
       </NavButton>
       <NavButton
         onClick={() => app.setModal(<ModalLocalePicker app={app} />)}
         label={t('header:language')}
-        color="indigo"
+        color={colors.language}
       >
         <I18nIcon className={iconSize} />
       </NavButton>
-      <NavButton onClick={() => setSearch(true)} label={t('header:search')} color="violet">
+      <NavButton onClick={() => setSearch(true)} label={t('header:search')} color={colors.search}>
         <SearchIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
-      <NavButton href="/account" label={t('header:account')} color="purple">
+      <NavButton href="/account" label={t('header:account')} color={colors.account}>
         <UserIcon className={iconSize} />
       </NavButton>
     </>

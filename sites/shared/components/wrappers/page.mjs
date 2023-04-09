@@ -85,7 +85,7 @@ export const PageWrapper = ({
         <div
           className={`fixed top-0 left-0 m-0 p-0 shadow drop-shadow-lg w-full h-screen
               bg-base-100 bg-opacity-95 z-50 hover:cursor-pointer
-              flex flex-row items-center justify-center
+              flex flex-row justify-center overflow-auto
             `}
           onClick={() => app.updateState('modal', false)}
         >

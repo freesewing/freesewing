@@ -24,7 +24,9 @@ export const AsideNavigation = ({ app, mobileOnly = false, before = [], after = 
     <div className="w-screen lg:w-auto">
       {before}
       <MainSections app={app} />
-      <ActiveSection app={app} />
+      <div className=" border border-l-0 border-r-0 border-b-0 border-dashed border-base-300 mt-4 pt-4">
+        <ActiveSection app={app} />
+      </div>
       {after}
     </div>
   </aside>

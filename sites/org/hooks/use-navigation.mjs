@@ -21,17 +21,46 @@ const sitePages = (locale, t = false) => {
   // Handle t not being present
   if (!t) t = (string) => string
   const pages = {
+    // Top-level pages that are the sections menu
+    designs: {
+      t: t('sections:designs'),
+      s: 'designs',
+      o: 10,
+    },
+    showcase: {
+      t: t('sections:showcase'),
+      s: 'showcase',
+      o: 20,
+    },
+    docs: {
+      t: t('sections:docs'),
+      s: 'docs',
+      o: 30,
+    },
+    blog: {
+      t: t('sections:blog'),
+      s: 'blog',
+      o: 40,
+    },
+    community: {
+      t: t('sections:community'),
+      s: 'community',
+      o: 50,
+    },
     account: {
       t: t('sections:account'),
       s: 'account',
+      o: 60,
     },
+    // Top-level pages that are not in the sections menu
     profile: {
       t: t('yourProfile'),
       s: 'profile',
       h: 1,
     },
+    // Not translated, this is a developer page
     typography: {
-      t: 'Typography', // Not translated, this is a developer page
+      t: 'Typography',
       s: 'typography',
       h: 1,
     },

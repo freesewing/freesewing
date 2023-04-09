@@ -19,7 +19,6 @@
     "dev": "next dev -p 8000",
     "develop": "next dev -p 8000",
     "lint": "next lint",
-    "i18n": "SITE=dev node ../shared/prebuild/i18n-only.mjs",
     "prebuild": "SITE=dev node --experimental-json-modules ../shared/prebuild/index.mjs",
     "serve": "pm2 start npm --name 'dev' -- run start",
     "start": "yarn prebuild && yarn dev"
