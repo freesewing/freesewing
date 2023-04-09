@@ -67,21 +67,6 @@ function halfwidth(chest, chestEase) {
   return (chest * (1 + chestEase)) / 4
 }
 
-// timorl: I suspect in my design this will be very different, if present at all
-function armholePitch(
-  shoulderToShoulder,
-  acrossBackFactor,
-  shoulderEaseValue,
-  shoulder,
-  armhole,
-  Point
-) {
-  return new Point(
-    (shoulderToShoulder * acrossBackFactor + shoulderEaseValue) / 2,
-    shoulder.y + shoulder.dy(armhole) / 2
-  )
-}
-
 function fitCollar(neckCircumverence, collarEase, neck, neckCp2, cbNeck, utils, Point, Path) {
   let cf = neck.rotate(-90, new Point(0, 0))
   let target = neckCircumverence * (1 + collarEase)
@@ -161,23 +146,6 @@ function draftSenyaBase({
   let midriffTopWidth = measurements.midriffTop / 4
   points.midriffTop = pointAtX(midriffTopWidth, points.cbMidriffTop, Point)
 
-  // Armhhole
-  points.armholePitch = armholePitch(
-    measurements.shoulderToShoulder,
-    options.acrossBackFactor,
-    shoulderEaseValue,
-    points.shoulder,
-    points.armhole,
-    Point
-  )
-  // Set both an front and back armhole pitch point
-  // but keep 'armholePitch' for backwards compatibility
-  points.backArmholePitch = points.armholePitch.clone()
-  points.frontArmholePitch = points.armholePitch.clone() // will be overwritten below
-  points.shoulderCp1 = points.shoulder
-    .shiftTowards(points.neck, points.shoulder.dy(points.armholePitch) / 5)
-    .rotate(90, points.shoulder)
-
   // Neck opening (back)
   // timorl: I should prolly figure out what this actually does, huh; suspicion -- this whole operation tries to make a natural neck curve
   // also, this should get a function if I ever figure this out
@@ -205,29 +173,14 @@ function draftSenyaBase({
   // Add points needed for the mirrored front&back neck/armhole path
   macro('mirror', {
     mirror: [points.hps, points.shoulder],
-    points: [
-      points.neckCp2Front,
-      points.cfNeckCp1,
-      points.cfNeck,
-      points.cbNeck,
-      points.neckCp2,
-      points.shoulderCp1,
-    ],
+    points: [points.neckCp2Front, points.cfNeckCp1, points.cfNeck, points.cbNeck, points.neckCp2],
     clone: true,
   })
 
   // How much space do we have to work with here?
   store.set('s3CollarMaxFront', points.hps.dy(points.cfNeck) / 2)
   store.set('s3CollarMaxBack', points.hps.dy(points.cbNeck) / 2)
-  store.set('s3ArmholeMax', points.shoulder.dy(points.frontArmholePitch) / 4)
   // Let's leave the actual splitting the curves for the front/back parts
-
-  // Complete pattern?
-  if (complete) {
-    points.title = new Point(points.armholePitch.x / 2, points.armholePitch.y)
-    points.logo = points.title.shift(-90, 100)
-    snippets.logo = new Snippet('logo', points.logo)
-  }
 
   log.info(`base prepared`)
   return part
@@ -235,7 +188,7 @@ function draftSenyaBase({
 
 export const base = {
   name: 'senya.base',
-  hide: true,
+  hide: { self: true },
   measurements: [
     'biceps',
     'chest',
@@ -256,7 +209,6 @@ export const base = {
     chestEase: { pct: 12, min: 5, max: 25, menu: 'fit' },
     backNeckCutout: { pct: 8, min: 4, max: 12, menu: 'fit' },
     // Advanced
-    acrossBackFactor: { pct: 98, min: 93, max: 100, menu: 'advanced' },
     armholeDepthFactor: { pct: 55, min: 50, max: 70, menu: 'advanced' },
   },
   plugins: [pluginBundle, bustPlugin],

@@ -1,5 +1,5 @@
 import { front } from './front.mjs'
-import { bottomAndSide, sleevecap, shoulderAndNeck } from './shared.mjs'
+import { shoulderAndNeck } from './shared.mjs'
 
 function senyaBack({
   sa,
@@ -21,21 +21,7 @@ function senyaBack({
   points.cbNeckCp1 = points.cbNeck.shift(0, points.neck.x / 2)
   points.neckCp2 = utils.beamIntersectsY(points.neck, points.neckCp2, points.cbNeck.y)
 
-  // Draw seamline
-  paths.bottomAndSide = bottomAndSide(
-    points.cfMidriffTop,
-    points.midriffTop,
-    points.armhole,
-    points.midriffTopCp2,
-    Path
-  ).hide()
-  paths.sleevecap = sleevecap(
-    points.armhole,
-    points.sleeveEnd,
-    points.sleeveCp1,
-    points.sleeveCp2,
-    Path
-  ).hide()
+  // Draw seamline; bottomAndSide and the cleevecap are identical as the front, so we don't recompute
   paths.shoulderAndNeck = shoulderAndNeck(
     points.sleeveEnd,
     points.neck,

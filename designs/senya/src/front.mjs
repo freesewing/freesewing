@@ -150,7 +150,7 @@ function senyaFront({
 export const front = {
   name: 'senya.front',
   from: base,
-  hideDependencies: true,
+  hide: 'HIDE_TREE',
   measurements: ['shoulderToElbow'],
   options: {
     necklineDepth: { pct: 25, min: 20, max: 40, menu: 'style' },

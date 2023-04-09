@@ -129,7 +129,7 @@ function senyaBottom({
 export const bottom = {
   name: 'senya.bottom',
   from: base,
-  hideDependencies: true,
+  hide: 'HIDE_TREE',
   measurements: ['midriffTopToHips'],
   options: {
     lengthBonus: { pct: 110, min: 90, max: 120, menu: 'style' },
