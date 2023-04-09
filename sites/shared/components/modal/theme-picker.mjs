@@ -18,7 +18,7 @@ export const ModalThemePicker = ({ app, iconOnly = false, bottom = false }) => {
             data-theme={theme}
             key={theme}
             onClick={() => setTheme(theme)}
-            className="btn btn-lg grow bg-base-100 border border-base-200 border-solid text-base-content hover:bg-primary hover:text-primary-content hover:border-primary"
+            className="btn btn-lg grow bg-base-100 border border-base-200 border-solid text-base-content hover:bg-primary hover:text-primary-content hover:border-primary shadow hover:shadow-lg"
           >
             {t(`${theme}Theme`)}
             <span className="grow"></span>
