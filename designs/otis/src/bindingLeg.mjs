@@ -86,7 +86,7 @@ export const bindingLeg = {
   name: 'bindingLeg',
   after: [back, front, shortsleeve],
   options: {
-    binding: { pct: 11, min: 0, max: 30, menu: 'advanced' },
+    binding: { pct: 11, min: 2, max: 30, menu: 'advanced' },
   },
   plugins: [pluginBundle, pluginCutlist],
   draft: draftBindingLeg,

@@ -4,7 +4,7 @@ title: "Otis, the simple romper: Fabric Options"
 
 ## Main Fabric 
 
-rompers are normally made from knit fabric. For best results, use a cotton fabric with just one or two percent of spandex. 
+Rompers are normally made from knit fabric. For best results, use a cotton fabric with just one or two percent of spandex. 
 Jersey works well if it has good recovery.
 
 ## Interfacing
