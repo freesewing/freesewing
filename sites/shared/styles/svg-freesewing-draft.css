@@ -297,11 +297,16 @@ path.gridline.metric.sm {
 path.gridline.metric.xs {
   stroke-dasharray: 1 1;
 }
-path.gridline.imperial {
-  stroke-dasharray: 5 5;
+path.gridline.imperial.md {
+  stroke-width: 0.15 !important;
+  stroke-dasharray: 3 1;
 }
 path.gridline.imperial.sm {
-  stroke-dasharray: 2 2;
+  stroke-width: 0.1 !important;
+  stroke-dasharray: 1 1;
+}
+path.gridline.imperial.xs {
+  stroke-dasharray: 0.1 0.5;
 }
 
 figure.develop.example div.develop {
