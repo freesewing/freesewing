@@ -78,11 +78,12 @@
       "tags": ["accessories", "toys"]
     },
     "skully": {
-      "description": "A FreeSewing pattern that needs a description",
+      "description": "A FreeSewing pattern for skully, our logo, a plushy toy",
       "code": "Coder name",
-      "design": "Designer name",
-      "difficulty": 1,
-      "tags": ["tagname"]
+      "code": "Wouter Van Wageningen",
+      "design": "Wouter Van Wageningen",
+      "difficulty": 9,
+      "tags": ["accessories", "toys"]
     },
     "trayvon": {
       "description": "A FreeSewing pattern for a tie",

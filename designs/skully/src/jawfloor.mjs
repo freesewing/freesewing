@@ -125,14 +125,59 @@ function draftJawfloor({
   // Paperless?
   if (paperless) {
     macro('hd', {
-      from: points.bottomLeft,
-      to: points.bottomRight,
-      y: points.bottomLeft.y + sa + 15,
+      from: points.mPoint0,
+      to: points.mPoint5,
+      y: points.mPoint4.y - sa - 15,
+    })
+    macro('hd', {
+      from: points.point4,
+      to: points.point5,
+      y: points.point4.y + sa + 15,
+    })
+    macro('hd', {
+      from: points.point2,
+      to: points.point4,
+      y: points.point4.y + sa + 15,
+    })
+    macro('hd', {
+      from: points.point1,
+      to: points.point2,
+      y: points.point4.y + sa + 15,
+    })
+    macro('hd', {
+      from: points.point0,
+      to: points.point1,
+      y: points.point4.y + sa + 15,
     })
     macro('vd', {
-      from: points.bottomRight,
-      to: points.topRight,
-      x: points.topRight.x + sa + 15,
+      from: points.point1,
+      to: points.mPoint1,
+      x: points.mPoint1.x,
+    })
+    macro('vd', {
+      from: points.point2,
+      to: points.mPoint2,
+      x: points.mPoint2.x,
+    })
+    macro('vd', {
+      from: points.point3,
+      to: points.mPoint3,
+      x: points.mPoint3.x,
+    })
+    macro('vd', {
+      from: points.point4,
+      to: points.mPoint4,
+      x: points.mPoint4.x,
+    })
+    macro('vd', {
+      from: points.mPoint4,
+      to: points.point5,
+      x: points.point5.x + sa + 15,
+    })
+    macro('vd', {
+      from: points.mPoint5,
+      to: points.point4,
+      x: points.mPoint5.x + sa + 15,
     })
   }
 

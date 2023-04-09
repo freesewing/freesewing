@@ -82,8 +82,7 @@ function draftHead1({
     // snippets.logo = new Snippet('logo', points.logo)
     // points.text = points.logo
     //   .shift(-90, w / 8)
-    //   .attr('data-text', 'hello')
-    //   .attr('data-text-class', 'center')
+
     snippets.n1 = new Snippet('notch', points.fs1)
     snippets.n2 = new Snippet('notch', points.fs2)
 
@@ -94,15 +93,40 @@ function draftHead1({
 
   // Paperless?
   if (paperless) {
-    // macro('hd', {
-    //   from: points.bottomLeft,
-    //   to: points.bottomRight,
-    //   y: points.bottomLeft.y + sa + 15,
-    // })
+    macro('hd', {
+      from: points.point1,
+      to: points.point2,
+      y: points.point2.y + sa + 10,
+    })
+    macro('hd', {
+      from: points.point2,
+      to: points.point0,
+      y: points.point2.y + sa + 10,
+    })
     macro('vd', {
       from: points.point0,
       to: points.point2,
       x: points.point0.x + sa + 15,
+    })
+    macro('vd', {
+      from: points.point2,
+      to: points.point1,
+      x: points.point1.x - sa - 15,
+    })
+    macro('ld', {
+      from: points.point0,
+      to: points.point1,
+      d: 5,
+    })
+    macro('ld', {
+      from: points.point2,
+      to: points.fs2,
+      d: 5,
+    })
+    macro('ld', {
+      from: points.point2,
+      to: points.fs1,
+      d: 15,
     })
   }
 

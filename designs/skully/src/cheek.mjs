@@ -171,7 +171,7 @@ function draftCheek({
     snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.3)
 
     if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+      paths.sa = paths.seam.offset(sa).trim().attr('class', 'fabric sa')
     }
   }
 

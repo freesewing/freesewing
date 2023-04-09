@@ -170,7 +170,7 @@ function draftEye({
   if (complete) {
     points.title = points.p4
       .shiftFractionTowards(points.p1, 0.45)
-      .shiftFractionTowards(points.p0, 0.6)
+      .shiftFractionTowards(points.p0, 0.5)
 
     macro('title', {
       nr: 9,
@@ -201,28 +201,28 @@ function draftEye({
     // snippets.logo = new Snippet('logo', points.logo)
     // points.text = points.logo
     //   .shift(-90, w / 8)
-    //   .attr('data-text', 'hello')
-    //   .attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
   }
-  console.log({ points: JSON.parse(JSON.stringify(points)) })
-
-  console.log({ paths: JSON.parse(JSON.stringify(paths)) })
 
   // Paperless?
   if (paperless) {
     macro('hd', {
-      from: points.bottomLeft,
-      to: points.bottomRight,
-      y: points.bottomLeft.y + sa + 15,
+      from: points.p4,
+      to: points.pointNotch,
+      y: points.p0.y + sa + 15,
+    })
+    macro('hd', {
+      from: points.p4,
+      to: points.p2,
+      y: points.p2.y - sa - 15,
     })
     macro('vd', {
-      from: points.bottomRight,
-      to: points.topRight,
-      x: points.topRight.x + sa + 15,
+      from: points.p2,
+      to: points.p0,
+      x: points.p2.x + sa + 15,
     })
   }
 

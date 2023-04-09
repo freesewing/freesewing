@@ -90,14 +90,14 @@ function draftUppermouth({
   // Paperless?
   if (paperless) {
     macro('hd', {
-      from: points.bottomLeft,
-      to: points.bottomRight,
-      y: points.bottomLeft.y + sa + 15,
+      from: points.point1,
+      to: points.point0,
+      y: points.point0.y - sa - 15,
     })
     macro('vd', {
-      from: points.bottomRight,
-      to: points.topRight,
-      x: points.topRight.x + sa + 15,
+      from: points.point0,
+      to: points.point2,
+      x: points.point0.x + sa + 15,
     })
   }
 
