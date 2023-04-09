@@ -24,10 +24,11 @@ function draftHead2({
   const sizeFactor = store.get('sizeFactor')
 
   points.point0 = new Point(0, 0)
-  points.point0Cp1 = points.point0.shift(269.3443191225503, 29.448928299685203 * sizeFactor)
+  points.point0Cp2 = points.point0.shift(0, 15 * sizeFactor)
+  // points.point0Cp1 = points.point0.shift(269.3443191225503, 29.448928299685203 * sizeFactor)
   points.point1 = points.point0.shift(257.7901473243395, 66.12988849226953 * sizeFactor)
-  points.point1Cp1 = points.point1.shift(268.2738211037443, 30.242724116719366 * sizeFactor)
-  points.point1Cp2 = points.point1.shift(88.2745252696326, 18.83053830882166 * sizeFactor)
+  points.point1Cp1 = points.point1.shift(270, 30.242724116719366 * sizeFactor)
+  points.point1Cp2 = points.point1.shift(90, 18.83053830882166 * sizeFactor)
   points.point2 = points.point0.shift(272.3327760921532, 153.20596573567235 * sizeFactor)
   points.point3 = points.point0.shift(282.5001868336755, 164.15422647315543 * sizeFactor)
   points.point3Cp1 = points.point3.shift(81.44269285511335, 54.758598457228615 * sizeFactor)
@@ -43,15 +44,16 @@ function draftHead2({
 
     p = new Path()
       .move(points.point0)
-      .curve(points.point0Cp1, points.point1Cp2, points.point1)
+      // .curve(points.point0Cp1, points.point1Cp2, points.point1)
+      ._curve(points.point1Cp2, points.point1)
       .curve_(points.point1Cp1, points.point2)
 
     if (secondSeam - p.length() > 0.1 || secondSeam - p.length() < -0.1) {
       points.point0 = points.point0.shift(90, secondSeam - p.length())
       points.point1 = points.point1.shift(90, secondSeam - p.length())
-      points.point0Cp1 = points.point0.shift(269.3443191225503, 29.448928299685203 * sizeFactor)
-      points.point1Cp1 = points.point1.shift(268.2738211037443, 30.242724116719366 * sizeFactor)
-      points.point1Cp2 = points.point1.shift(88.2745252696326, 18.83053830882166 * sizeFactor)
+      // points.point0Cp1 = points.point0.shift(269.3443191225503, 29.448928299685203 * sizeFactor)
+      points.point1Cp1 = points.point1.shift(270, 30.242724116719366 * sizeFactor)
+      points.point1Cp2 = points.point1.shift(90, 18.83053830882166 * sizeFactor)
       points.point0Cp2 = points.point0.shift(0, 15 * sizeFactor)
     }
   } while (iterations < 100 && (secondSeam - p.length() > 1 || secondSeam - p.length() < -1))
@@ -133,8 +135,6 @@ function draftHead2({
     // snippets.logo = new Snippet('logo', points.logo)
     // points.text = points.logo
     //   .shift(-90, w / 8)
-    //   .attr('data-text', 'hello')
-    //   .attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -143,16 +143,93 @@ function draftHead2({
 
   // Paperless?
   if (paperless) {
-    // macro('hd', {
-    //   from: points.bottomLeft,
-    //   to: points.bottomRight,
-    //   y: points.bottomLeft.y + sa + 15,
-    // })
-    // macro('vd', {
-    //   from: points.bottomRight,
-    //   to: points.topRight,
-    //   x: points.topRight.x + sa + 15,
-    // })
+    const bb = paths.seam.bbox()
+    const minX = bb.bottomRight.x
+
+    points.pointX = utils.curveIntersectsX(
+      points.point3,
+      points.point3Cp1,
+      points.point4Cp2,
+      points.point4,
+      minX - 0.00001
+    )[0]
+
+    macro('hd', {
+      from: points.point0,
+      to: points.point4,
+      y: points.point0.y - sa - 15,
+    })
+    macro('hd', {
+      from: points.point0,
+      to: points.pointX,
+      y: points.point0.y - sa - 25,
+    })
+    macro('hd', {
+      from: points.point1,
+      to: points.pointX,
+      y: points.point0.y - sa - 35,
+    })
+    macro('hd', {
+      from: points.point3,
+      to: points.pointX,
+      y: points.point3.y + sa + 15,
+    })
+    macro('hd', {
+      from: points.point2,
+      to: points.point3,
+      y: points.point3.y + sa + 15,
+    })
+    macro('hd', {
+      from: points.point1,
+      to: points.point2,
+      y: points.point3.y + sa + 15,
+    })
+    macro('hd', {
+      from: points.point0,
+      to: points.dartPoint1,
+      y: points.dartPoint1.y,
+    })
+
+    macro('vd', {
+      from: points.point1,
+      to: points.point0,
+      x: points.point1.x - sa - 15,
+    })
+    macro('vd', {
+      from: points.point2,
+      to: points.point1,
+      x: points.point1.x - sa - 15,
+    })
+    macro('vd', {
+      from: points.point3,
+      to: points.point1,
+      x: points.point1.x - sa - 25,
+    })
+    macro('vd', {
+      from: points.point0,
+      to: points.point4,
+      x: points.point4.x + sa + 15,
+    })
+    macro('vd', {
+      from: points.point4,
+      to: points.dartPoint0,
+      x: points.point4.x + sa + 15,
+    })
+    macro('vd', {
+      from: points.point4,
+      to: points.dartPoint2,
+      x: points.point4.x + sa + 25,
+    })
+    macro('vd', {
+      from: points.dartPoint2,
+      to: points.point3,
+      x: points.point4.x + sa + 25,
+    })
+    macro('vd', {
+      from: points.point0,
+      to: points.dartPoint1,
+      x: points.dartPoint1.x,
+    })
   }
 
   return part

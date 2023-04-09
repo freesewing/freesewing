@@ -16,6 +16,7 @@ function draftLowerjaw({
   store,
   paperless,
   macro,
+  utils,
   part,
 }) {
   console.log('lowerjaw')
@@ -29,15 +30,12 @@ function draftLowerjaw({
   points.point4 = points.point0.shift(276.6440430845334, 116.75813357963548 * sizeFactor)
   points.point5 = points.point0.shift(264.48800048134507, 50.78381912578058 * sizeFactor)
 
-  points.point0Cp2 = points.point0.shift(264.9481781658739, 16.659715303689914 * sizeFactor)
-  points.point1Cp1 = points.point1.shift(268.7020740231185, 53.02160375733648 * sizeFactor)
-
   let mouthTop = store.get('mouthTop')
 
   points.point0 = new Point(0, 0)
   points.point0Cp2 = points.point0.shift(354.9481781658739, 16.659715303689914 * sizeFactor)
   points.point1 = points.point0.shift(264.91311161963836, 43.0264648094635 * sizeFactor)
-  points.point1Cp1 = points.point1.shift(358.7020740231185, 53.02160375733651 * sizeFactor)
+  points.point1Cp1 = points.point1.shift(0, 53.02160375733651 * sizeFactor)
   points.point2 = points.point0.shift(331.14662128979205, 83.05325951149062 * sizeFactor)
   points.point2Cp1 = points.point2.shift(23.491413537740165, 11.818521142681087 * sizeFactor)
   points.point2Cp2 = points.point2.shift(203.48599545649284, 6.360957553702122 * sizeFactor)
@@ -68,12 +66,6 @@ function draftLowerjaw({
   if (iterations >= 100) {
     log.error('Something is not quite right here!')
   }
-
-  // let mouthTop = store.get('mouthTop')
-  let mt = new Path()
-    .move(points.point5)
-    .curve(points.point5Cp1, points.point0Cp2, points.point0)
-    .length()
 
   points.point4 = points.point4.shift(
     355,
@@ -131,8 +123,6 @@ function draftLowerjaw({
     // snippets.logo = new Snippet('logo', points.logo)
     // points.text = points.logo
     //   .shift(-90, w / 8)
-    //   .attr('data-text', 'hello')
-    //   .attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).trim().attr('class', 'fabric sa')
@@ -141,16 +131,75 @@ function draftLowerjaw({
 
   // Paperless?
   if (paperless) {
-    // macro('hd', {
-    //   from: points.bottomLeft,
-    //   to: points.bottomRight,
-    //   y: points.bottomLeft.y + sa + 15,
-    // })
-    // macro('vd', {
-    //   from: points.bottomRight,
-    //   to: points.topRight,
-    //   x: points.topRight.x + sa + 15,
-    // })
+    const bb = paths.seam.bbox()
+    const maxY = bb.topLeft.y
+
+    points.pointY = utils.curveIntersectsY(
+      points.point4,
+      points.point4Cp1,
+      points.point5Cp2,
+      points.point5,
+      maxY + 0.0000001
+    )[0]
+
+    console.log({ bb: bb, maxY: maxY, pointY: points.pointY })
+
+    macro('hd', {
+      from: points.point0,
+      to: points.point5,
+      y: points.pointY.y - sa - 15,
+    })
+    macro('hd', {
+      from: points.pointY,
+      to: points.point4,
+      y: points.pointY.y - sa - 15,
+    })
+    macro('hd', {
+      from: points.point1,
+      to: points.point5,
+      y: points.pointY.y - sa - 25,
+    })
+    macro('hd', {
+      from: points.point5,
+      to: points.point4,
+      y: points.pointY.y - sa - 25,
+    })
+    macro('hd', {
+      from: points.point1,
+      to: points.point3,
+      y: points.point1.y + sa + 15,
+    })
+    macro('hd', {
+      from: points.point3,
+      to: points.point4,
+      y: points.point1.y + sa + 15,
+    })
+
+    macro('vd', {
+      from: points.point1,
+      to: points.point5,
+      x: points.point1.x - sa - 15,
+    })
+    macro('vd', {
+      from: points.point1,
+      to: points.point0,
+      x: points.point1.x - sa - 25,
+    })
+    macro('vd', {
+      from: points.point1,
+      to: points.pointY,
+      x: points.point1.x - sa - 35,
+    })
+    macro('vd', {
+      from: points.pointY,
+      to: points.point3,
+      x: points.point4.x + sa + 25,
+    })
+    macro('vd', {
+      from: points.point4,
+      to: points.point3,
+      x: points.point4.x + sa + 15,
+    })
   }
 
   return part

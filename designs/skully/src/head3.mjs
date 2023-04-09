@@ -131,16 +131,78 @@ function draftHead3({
 
   // Paperless?
   if (paperless) {
-    // macro('hd', {
-    //   from: points.bottomLeft,
-    //   to: points.bottomRight,
-    //   y: points.bottomLeft.y + sa + 15,
-    // })
-    // macro('vd', {
-    //   from: points.bottomRight,
-    //   to: points.topRight,
-    //   x: points.topRight.x + sa + 15,
-    // })
+    const bb = paths.seam.bbox()
+    const minX = bb.bottomRight.x
+
+    points.pointX = utils.curveIntersectsX(
+      points.point1,
+      points.point1Cp1,
+      points.point2Cp2,
+      points.point2,
+      minX - 0.0000001
+    )[0]
+
+    macro('hd', {
+      from: points.dartPoint2,
+      to: points.point2,
+      y: points.point2.y - sa - 15,
+    })
+    macro('hd', {
+      from: points.dartPoint2,
+      to: points.pointX,
+      y: points.point2.y - sa - 25,
+    })
+    macro('hd', {
+      from: points.dartPoint2,
+      to: points.point5,
+      y: points.point0.y + sa + 15,
+    })
+    macro('hd', {
+      from: points.dartPoint0,
+      to: points.point5,
+      y: points.point0.y + sa + 5,
+    })
+    macro('hd', {
+      from: points.dartPoint2,
+      to: points.point0,
+      y: points.point0.y + sa + 25,
+    })
+    macro('hd', {
+      from: points.dartPoint2,
+      to: points.dartPoint1,
+      y: points.dartPoint2.y,
+    })
+
+    macro('vd', {
+      from: points.point2,
+      to: points.dartPoint1,
+      x: points.pointX.x + sa + 15,
+    })
+    macro('vd', {
+      from: points.dartPoint1,
+      to: points.point0,
+      x: points.pointX.x + sa + 15,
+    })
+    macro('vd', {
+      from: points.point2,
+      to: points.pointX,
+      x: points.pointX.x + sa + 25,
+    })
+    macro('vd', {
+      from: points.dartPoint2,
+      to: points.point2,
+      x: points.dartPoint2.x - sa - 15,
+    })
+    macro('vd', {
+      from: points.dartPoint0,
+      to: points.dartPoint2,
+      x: points.dartPoint2.x - sa - 15,
+    })
+    macro('vd', {
+      from: points.point5,
+      to: points.dartPoint0,
+      x: points.dartPoint2.x - sa - 15,
+    })
   }
 
   return part
