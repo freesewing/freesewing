@@ -1,5 +1,5 @@
 ---
-title: "Curve to waist"
+title: "Courbe vers la taille"
 ---
 
 Choose this option to draft Teagan to curve towards your waist before curving towards the hips.
@@ -10,6 +10,6 @@ If waist measurement (plus ease) is smaller than hips (plus ease), this creates 
 This option can also be used when the waist measurement exceeds the hip measurement, but this results in a non-standard T-shirt shape which may be impossible to put on.
 </Note>
 
-## Effect of this option on the pattern
+## Effet de cette option sur le modèle
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](teagan_curvetowaist_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](teagan_curvetowaist_sample.svg "Effet de cette option sur le modèle")
