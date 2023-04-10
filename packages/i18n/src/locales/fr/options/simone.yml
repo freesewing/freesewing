@@ -5,7 +5,7 @@ bustAlignedButtons:
   options:
     even: Even spacing
     split: Split spacing
-    disabled: Disabled
+    disabled: Désactivé
 bustDartAngle:
   title: Angle des pinces poitrine
   description: Contrôle l'angle par lequel la pince poitrine (sur le côté) s'incline vers le bas
