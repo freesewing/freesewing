@@ -42,7 +42,7 @@ function draftShortsleeve({
       points.p3 = points.p0.shift(331.965149, 145.468319 * (ease + 1) * sizeFactor + diff)
     }
     iter++
-  } while ((diff < -1 || diff > 1) & (iter < 100))
+  } while ((diff < -1 || diff > 1) && iter < 100)
 
   points.p1hm = points.p1.shift(90, 117 * (ease + 1) * sizeFactor * hem)
   points.p2hm = utils.beamIntersectsY(points.p2, points.p3, points.p1hm.y)

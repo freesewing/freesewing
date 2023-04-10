@@ -53,7 +53,7 @@ function draftFront({
       )
     }
     iter++
-  } while ((diff < -1 || diff > 1) & (iter < 100))
+  } while ((diff < -1 || diff > 1) && iter < 100)
 
   points.shoulder = paths.armhole.shiftFractionAlong(0.15)
   points.snapPlacketOut = points.p4.shift(270, measurements.waist * options.snapPlacket)
