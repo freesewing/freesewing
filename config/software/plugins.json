@@ -1,5 +1,5 @@
 {
-  "plugin-annotations": "A bundle of FreeSewing plugins that provide annotations",
+  "plugin-annotations": "A FreeSewing plugin that provides pattern annotations",
   "plugin-banner": "A FreeSewing plugin to repeat text on a path",
   "plugin-bundle": "An umbrella package of 8 essential FreeSewing build-time plugins",
   "plugin-bust": "A FreeSewing plugin that helps with bust-adjusting menswear patterns",
