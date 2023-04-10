@@ -6,7 +6,7 @@ frontPocket:
   title: Poche avant
   description: Inclure ou non des poches avant
 hemWidth:
-  title: Hem size
+  title: Taille des ourlets
   description: Size of the hem at the bottom of the pants
 waistbandWidth:
   title: Waist Band
