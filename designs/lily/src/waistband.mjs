@@ -103,4 +103,5 @@ export const waistband = {
   name: 'lily.waistband',
   after: [back, front],
   draft: lilyWaistband,
+  hide: 'HIDE_TREE',
 }

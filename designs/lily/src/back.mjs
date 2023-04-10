@@ -240,6 +240,7 @@ function draftLilyBack({
   paths.seam = drawPath().attr('class', 'fabric')
   
   // adjust the length (at the bottom)
+  let extendBeyondKnee = 1
   if (options.lengthReduction > 0) {
     let requestedLength = (1 - options.lengthReduction)*measurements.waistToFloor
     // leggings must reach to fork at least, so define a minimum
@@ -253,6 +254,8 @@ function draftLilyBack({
     points.bottom = points.waistX.shift(270,requestedLength)
     let upperPoint, upperCp
     if (requestedLength < measurements.waistToKnee) {    
+      extendBeyondKnee = 0
+    
       // 'cut' between fork and knee
       if (points.waistOut.x > points.seatOut.x) {
         upperPoint = points.styleWaistOutLily
@@ -332,8 +335,7 @@ function draftLilyBack({
     })
     
     //notches
-    //if (options.fitGuides) {
-    if (true) {
+    if (options.fitGuides) {
       points.waistMid = points.waistOut.shiftFractionTowards(points.waistIn, 0.5)
       // shift + rotate (below) is equivalent to shifting measurements.waistToSeat perpendicular to the waistIn-waistMid line
       points.seatMid = points.waistMid
@@ -379,7 +381,7 @@ function draftLilyBack({
       }
         if (points.waistOut.x > points.seatOut.x) {
           points.hipsOut = utils.lineIntersectsCurve(
-            points.hipsOutTarget,
+            points.hipsIn,
             points.hipsIn.rotate(180, points.hipsOutTarget),
             points.kneeOut,
             points.kneeOutCp2,
@@ -396,7 +398,7 @@ function draftLilyBack({
           )
         } else {
           points.hipsOut = utils.lineIntersectsCurve(
-            points.hipsOutTarget,
+            points.hipsIn,
             points.hipsIn.rotate(180, points.hipsOutTarget),
             points.seatOut,
             points.seatOutCp2,
@@ -409,8 +411,14 @@ function draftLilyBack({
         points.kneeInNotch = points.kneeIn
       macro('sprinkle', {
         snippet: 'notch',
-        on: ['seatOutNotch', 'kneeInNotch', 'kneeOutNotch'],
+        on: ['seatOutNotch'],
       })
+      if (extendBeyondKnee) {
+        macro('sprinkle', {
+          snippet: 'notch',
+          on: ['kneeInNotch', 'kneeOutNotch'],
+        })
+      }        
       macro('sprinkle', {
         snippet: 'bnotch',
         on: ['crossSeamCurveStart', 'seatIn'],
@@ -437,15 +445,17 @@ function draftLilyBack({
     }
    
     if (sa) {
-      paths.saBase = drawOutseam()
-        .join(
-          new Path()
-            .move(points.styleWaistOutLily)
-            .line(points.styleWaistInLily)
-            .line(points.crossSeamCurveStart)
-            .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
-        )
-        .join(drawInseam())
+      // TODO: fix this
+      paths.saBase = paths.seam
+      // paths.saBase = drawOutseam()
+        // .join(
+          // new Path()
+            // .move(points.styleWaistOutLily)
+            // .line(points.styleWaistInLily)
+            // .line(points.crossSeamCurveStart)
+            // .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
+        // )
+        // .join(drawInseam())
       paths.hemBase = new Path().move(points.floorIn).line(points.floorOut)
       paths.sa = paths.hemBase
         .offset(sa * 3)
@@ -553,21 +563,21 @@ export const back = {
     'heel', // secondary measurement, used instead of ankle
   ],
   options: {
-    fitGuides: {bool: true, menu: undefined},
+    fitGuides: {bool: false, menu: 'advanced'},
     fitKnee: {bool: true, menu: undefined},
     legBalance: 0.5, // between back and front parts
     waistBalance: 0.5,
     crotchDrop: { pct: 0, min: 0, max: 15, menu: 'advanced' }, // 'downgrade' to advanced menu
     waistHeight: { ...titanBack.options.waistHeight, pct: 50 }, // halfway between waist and hips
     fabricStretch: { pct: 40, min: 0, max: 50, menu: 'fit' },
-    waistEase: {pct: -4, min: 0, max: 50, menu: 'fit' }, // -fabricStretch/10,
-    seatEase: {pct: -4, min: 0, max: 50, menu: 'fit' }, // -fabricStretch/10,
-    kneeEase: {pct: -4, min: 0, max: 50, menu: 'fit' }, // -fabricStretch/10,
+    waistEase: {pct: -4, min: -20, max: 0, menu: 'fit' }, // -fabricStretch/10,
+    seatEase: {pct: -4, min: -20, max: 0, menu: 'fit' }, // -fabricStretch/10,
+    kneeEase: {pct: -4, min: -20, max: 0, menu: 'fit' }, // -fabricStretch/10,
     //test: {pct: back.options.fabricStretch/2, min: 0, max: 50, menu: 'fit'},
     lengthBonus: 0,
     lengthReduction: { pct: 0, min: 0, max: 100, menu: 'style'},
     waistbandWidth: { ...titanBack.options.waistbandWidth, menu: 'style' },
     },
-  hideDependencies: true,
+  hide: 'HIDE_TREE',
   draft: draftLilyBack,
 }

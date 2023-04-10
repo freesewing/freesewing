@@ -352,6 +352,7 @@ function draftLilyFront({
   paths.seam = drawPath().attr('class', 'fabric')
   
   // adjust the length (at the bottom)
+  let extendBeyondKnee = 1
   if (options.lengthReduction > 0) {
     let requestedLength = store.get('requestedLength')
     // leggings must reach to fork at least, so define a minimum
@@ -364,7 +365,9 @@ function draftLilyFront({
     
     points.bottom = points.waistX.shift(270,requestedLength)
     let upperPoint, upperCp
-    if (requestedLength < measurements.waistToKnee) {    
+    if (requestedLength < measurements.waistToKnee) {   
+      extendBeyondKnee = 0
+    
       // 'cut' between fork and knee
       if (points.waistOut.x < points.seatOut.x) {
         upperPoint = points.styleWaistOutLily
@@ -504,7 +507,7 @@ function draftLilyFront({
         if (points.waistOut.x < points.seatOut.x) {
           //log.info('waist to the left of seat')
           points.hipsOut = utils.lineIntersectsCurve(
-            points.hipsOutTarget,
+            points.hipsIn,
             points.hipsIn.rotate(180, points.hipsOutTarget),
             points.waistOut,
             points.seatOut,
@@ -522,7 +525,7 @@ function draftLilyFront({
         } else {
           //log.info('waist to the right of seat')
           points.hipsOut = utils.lineIntersectsCurve(
-            points.hipsOutTarget,
+            points.hipsIn,
             points.hipsIn.rotate(180, points.hipsOutTarget),
             points.waistOut,
             points.waistOut,
@@ -535,8 +538,14 @@ function draftLilyFront({
         points.kneeInNotch = points.kneeIn
       macro('sprinkle', {
         snippet: 'notch',
-        on: ['crotchSeamCurveStart', 'seatIn', 'seatOutNotch', 'kneeInNotch', 'kneeOutNotch'],
+        on: ['crotchSeamCurveStart', 'seatIn', 'seatOutNotch'],
       })
+      if (extendBeyondKnee) {
+        macro('sprinkle', {
+          snippet: 'notch',
+          on: ['kneeInNotch', 'kneeOutNotch'],
+        })
+      }
       paths.seatline = new Path()
         .move(points.seatOutNotch)
         .line(points.seatIn)
@@ -671,6 +680,6 @@ export const front = {
   name: 'lily.front',
   from: titanFront,
   after: back,
-  hideDependencies: true,
+  hide: 'HIDE_TREE',
   draft: draftLilyFront,
 }
