@@ -15,7 +15,7 @@ Due to seamless and closure Sandy's needing different constructions we have sepa
 
 </Note>
 
-### Step 1: Prepping the Skirt
+## Step 1: Prepping the Skirt
 
 - If including a closure, sew the skirt seam  _good sides together_ up to where you intend the opening to start.
 - Add Pockets if using.
@@ -32,7 +32,7 @@ If you do not wish to create additional seams but still wish to have pockets, yo
 
 </Note>
 
-### Step 2: Prep the opening
+## Step 2: Prep the opening
 
 - Insert zipper or placket into opening if using.
 - If not using, press the openings seam allowance to the inside and _Edgestitch_/_Topstitch_ in place. You may also wish to continue the topstiching down the seam.
@@ -45,7 +45,7 @@ Skip this step if:
 
 </Note>
 
-### Step 3: Lining
+## Step 3: Lining
 
 - (Optional) Interline the skirt with a stiffener.
 - Attach Lining to skirt at hem and opening by your preferred method.
@@ -54,9 +54,9 @@ Skip this step if:
 
 <Note>
 
-### Step 4: The waistband
+## Step 4: The waistband
 
-#### Closure
+### Closures
 
 - Interface/stiffen half the waistband part lengthwise.
 - Press under the seam allowance on the long edge of the waistband that is not interfaced. Trim. _Baste_ the fold in place if needed.
@@ -64,10 +64,10 @@ Skip this step if:
 
 There will be some overhangs:
 
-	- The side you wish not to overlap should be overhang by your seam allowance.
-	- The side intended to overlap will have a greater overhang.
-	- If using a placket, both sides will overhang by your seam allowance.
-	- If using a zipper in the waistband the greater overhang will need to be trimmed to the seam allowance.
+- The side you wish not to overlap should be overhang by your seam allowance.
+- The side intended to overlap will have a greater overhang.
+- If using a placket, both sides will overhang by your seam allowance.
+- If using a zipper in the waistband the greater overhang will need to be trimmed to the seam allowance.
 
 __Zipper in Waistband__
 - If inserting a zipper into the waistband now is the time to do so, attach the zipper from the waistband fold line down.
@@ -86,7 +86,7 @@ __Other closures__
 - Alternatively, _Slipstich_ or _Whipstitch_ the waistband in place on the inside and close the gap of the over-lap with _Slipstiching_.
 - Add snaps, dress hooks or button and buttonhole, whatever is your preferred closure to the waistband overhang.
 
-#### Seamless
+### Seamless
 
 - With _good sides together_ sew the waistband in half along the short seams, leaving a gap for the elastic that will be on the inside.
 - Press under the seam allowance on the long edge of the waistband that is intended to be on the inside.
@@ -100,7 +100,7 @@ __Other closures__
 - Overlap the ends of the elastic by 1cm (3/8 inch) and zig-zag stitch in place.
 - Tuck elastic into waistband and close the opening with hand-sewing.
 
-### Step 5: Hemming
+## Step 5: Hemming
 
 If you have hemmed the skirt with the lining you can skip this step.
 
@@ -115,7 +115,7 @@ There are many ways to hem/face the bottom of a skirt, If you have a prefered me
 
 </Note>
 
-### Step 6: Enjoy!
+## Step 6: Enjoy!
 
 You are all done! Now go enjoy your wonderful new skirt and try not to get too dizzy showing off it's fullness!
 
