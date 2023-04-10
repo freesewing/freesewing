@@ -131,16 +131,10 @@ function draftHead3({
 
   // Paperless?
   if (paperless) {
-    const bb = paths.seam.bbox()
-    const minX = bb.bottomRight.x
-
-    points.pointX = utils.curveIntersectsX(
-      points.point1,
-      points.point1Cp1,
-      points.point2Cp2,
-      points.point2,
-      minX - 0.0000001
-    )[0]
+    points.pointX = new Path()
+      .move(points.point1)
+      .curve(points.point1Cp1, points.point2Cp2, points.point2)
+      .edge('right')
 
     macro('hd', {
       from: points.dartPoint2,

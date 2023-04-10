@@ -65,13 +65,7 @@ function draftCheekbone({
     const bb = paths.seam.bbox()
     const minY = bb.topLeft.y
 
-    points.pointY = utils.curveIntersectsY(
-      points.point1,
-      points.point1Cp1,
-      points.point0,
-      points.point0,
-      minY + 0.00001
-    )[0]
+    points.pointY = paths.seam.edge('top')
 
     macro('hd', {
       from: points.point0,

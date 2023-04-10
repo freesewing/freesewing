@@ -136,25 +136,14 @@ function draftNose({
 
   // Paperless?
   if (paperless) {
-    const bb = paths.seam.bbox()
-    const maxY = bb.bottomRight.y
-
-    console.log({ bb: bb, maxY: maxY })
-
-    points.pointY1 = utils.curveIntersectsY(
-      points.point0,
-      points.point0Cp1,
-      points.point1Cp2,
-      points.point1,
-      maxY - 0.0000001
-    )[0]
-    points.pointY2 = utils.curveIntersectsY(
-      points.point0,
-      points.point0Cp2,
-      points.point3Cp1,
-      points.point3,
-      maxY - 0.0000001
-    )[0]
+    points.pointY1 = new Path()
+      .move(points.point0)
+      .curve(points.point0Cp1, points.point1Cp2, points.point1)
+      .edge('bottom')
+    points.pointY2 = new Path()
+      .move(points.point0)
+      .curve(points.point0Cp2, points.point3Cp1, points.point3)
+      .edge('bottom')
 
     macro('vd', {
       from: points.point2,
@@ -162,7 +151,7 @@ function draftNose({
       x: points.point1.x + sa + 5,
     })
     macro('vd', {
-      from: points.pointY2,
+      from: points.pointY1,
       to: points.point2,
       x: points.point3.x - sa - 5,
     })
@@ -180,17 +169,17 @@ function draftNose({
     macro('hd', {
       from: points.pointY1,
       to: points.point1,
-      y: maxY + sa + 5,
+      y: points.pointY2.y + sa + 5,
     })
     macro('hd', {
       from: points.pointY2,
       to: points.pointY1,
-      y: maxY + sa + 5,
+      y: points.pointY2.y + sa + 5,
     })
     macro('hd', {
       from: points.point3,
       to: points.pointY2,
-      y: maxY + sa + 5,
+      y: points.pointY2.y + sa + 5,
     })
   }
 

@@ -131,18 +131,10 @@ function draftLowerjaw({
 
   // Paperless?
   if (paperless) {
-    const bb = paths.seam.bbox()
-    const maxY = bb.topLeft.y
-
-    points.pointY = utils.curveIntersectsY(
-      points.point4,
-      points.point4Cp1,
-      points.point5Cp2,
-      points.point5,
-      maxY + 0.0000001
-    )[0]
-
-    console.log({ bb: bb, maxY: maxY, pointY: points.pointY })
+    points.pointY = new Path()
+      .move(points.point4)
+      .curve(points.point4Cp1, points.point5Cp2, points.point5)
+      .edge('top')
 
     macro('hd', {
       from: points.point0,
