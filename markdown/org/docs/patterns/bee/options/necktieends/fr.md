@@ -1,10 +1,10 @@
 - - -
-title: "Neck tie ends"
+titre : "Les extrémités des bandes de cou"
 - - -
 
 ***
 
-Whether you like straight or pointy ends on the ties around your neck
+Que vous aimiez les extrémités droites ou pointues sur les liens autour de votre cou
 
 ## Effet de cette option sur le motif
 
