@@ -83,29 +83,29 @@ Now give it one last press and admire your work.
 
 #### Étape 2 : Attacher le ruban
 
-![Sew the ribbon to part 1](step22.png)
+![Coudre le ruban à la partie 1](step22.png)
 
-The first thing to do is to sew the adjustment ribbon to the shortest of the bow parts. The ribbon should be 290mm long. If it is different, you have to make sure that you align it such that the ribbon and short bow piece together are as long as the long bow piece.
+The first thing to do is to sew the adjustment ribbon to the shortest of the bow parts. Le ruban doit avoir une longueur de 290mm. If it is different, you have to make sure that you align it such that the ribbon and short bow piece together are as long as the long bow piece.
 
-Put right sides of the short bow piece and the ribbon together.
+Assemblez les côtés droits du petit nœud et du ruban.
 
-Now sew across the end to join the parts.
+Coudre alors jusqu'au bout pour assembler les pièces.
 
 #### Étape 3 : Assemblez les deux côtés
 
-![Sew both sides together](step23.png)
+![Coudre les deux côtés ensemble](step23.png)
 
-Lay both the parts of the medium bow on top of each other, right sides together. And lay the long bow on top of the ribbon and short bow part, also rights sides together.
+Poser les deux parties du nœud moyen l'une sur l'autre, endroit contre endroit. And lay the long bow on top of the ribbon and short bow part, also rights sides together.
 
-Sew all along, but leave the short ends open. Through these openings we will turn the bow tie parts right side out.
+Cousez tout le long, mais laissez les extrémités courtes ouvertes. Through these openings we will turn the bow tie parts right side out.
 
 #### Étape 4 : Retourner
 
-![Clip seam allowance](step14.png)
+![Couper le surplus de couture](step14.png)
 
 Clip the seam allowance back in the usual spots and make little cuts to allow for a smooth curves.
 
-Then use the back of a large crochet hook, or some other appropriately long skinny object, to turn the two parts right-side-out through the ends. Start by gently pulling the two fabric pieces at the end of the bow apart. Then push the end of the bow up between the two pieces of fabric. Keep gently pushing while pulling the rest of the tie down over it. This can be a tedious procedure. Take your time and be gentle. It's easy to push too hard and rip stitches or fabric.
+Then use the back of a large crochet hook, or some other appropriately long skinny object, to turn the two parts right-side-out through the ends. Start by gently pulling the two fabric pieces at the end of the bow apart. Then push the end of the bow up between the two pieces of fabric. Keep gently pushing while pulling the rest of the tie down over it. Cela peut être une procédure fastidieuse. Take your time and be gentle. Il est facile de pousser trop fort et de déchirer les points ou le tissu.
 
 Once you have the part right side out, make sure you push all the corners and sides out before giving it a good press.
 
