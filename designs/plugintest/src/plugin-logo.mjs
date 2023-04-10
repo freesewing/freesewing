@@ -1,4 +1,3 @@
-import { logoPlugin } from '@freesewing/plugin-annotations'
 import { base } from './base.mjs'
 
 const pluginLogo = ({ points, Point, paths, Path, snippets, Snippet, options, part }) => {
@@ -17,7 +16,6 @@ const pluginLogo = ({ points, Point, paths, Path, snippets, Snippet, options, pa
 
 export const logo = {
   name: 'plugintest.logo',
-  plugins: logoPlugin,
   after: base,
   options: {
     logoScale: { pct: 100, min: 10, max: 200, menu: 'logo' },
