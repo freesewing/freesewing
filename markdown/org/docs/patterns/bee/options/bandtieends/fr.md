@@ -1,10 +1,10 @@
 - - -
-title: "Band (chest) tie ends"
+titre : "Attaches de bande (de poitrine)"
 - - -
 
 ***
 
-Whether you like straight or pointy ends on the tie around your chest
+Que vous aimiez les extrémités droites ou pointues de la bande autour de votre poitrine
 
 ## Effet de cette option sur le motif
 
