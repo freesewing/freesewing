@@ -1,6 +1,6 @@
 import chai from 'chai'
 import { Design, round } from '@freesewing/core'
-import { annotationPlugin } from '../src/index.mjs'
+import { annotationsPlugin } from '../src/index.mjs'
 
 const expect = chai.expect
 
@@ -18,9 +18,9 @@ describe('Cutonfold Plugin Tests', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
-    const Test = new Design({ plugins: [annotationPlugin], parts: [part] })
+    const Test = new Design({ plugins: [annotationsPlugin], parts: [part] })
     const pattern = new Test()
     pattern.draft()
     const c = pattern.parts[0].test.paths.cutonfoldCutonfold
@@ -57,9 +57,9 @@ describe('Cutonfold Plugin Tests', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
-    const Test = new Design({ plugins: [annotationPlugin], parts: [part] })
+    const Test = new Design({ plugins: [annotationsPlugin], parts: [part] })
     const pattern = new Test()
     pattern.draft()
     const c = pattern.parts[0].test.paths.cutonfoldCutonfold
@@ -80,9 +80,9 @@ describe('Cutonfold Plugin Tests', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
-    const Test = new Design({ plugins: [annotationPlugin], parts: [part] })
+    const Test = new Design({ plugins: [annotationsPlugin], parts: [part] })
     const pattern = new Test()
     pattern.draft()
     let c = pattern.parts[0].test.paths.cutonfoldCutonfold
@@ -119,9 +119,9 @@ describe('Cutonfold Plugin Tests', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
-    const Test = new Design({ plugins: [annotationPlugin], parts: [part] })
+    const Test = new Design({ plugins: [annotationsPlugin], parts: [part] })
     const pattern = new Test()
     pattern.draft()
     let c = pattern.parts[0].test.paths.cutonfoldCutonfold

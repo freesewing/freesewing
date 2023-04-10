@@ -1,11 +1,11 @@
 import chai from 'chai'
 import { Design } from '@freesewing/core'
-import { annotationPlugin } from '../src/index.mjs'
+import { annotationsPlugin } from '../src/index.mjs'
 
 const expect = chai.expect
 
 const Pattern = new Design()
-const pattern = new Pattern().use(annotationPlugin)
+const pattern = new Pattern().use(annotationsPlugin)
 pattern.draft().render()
 
 describe('Buttons Plugin Test', () => {
@@ -24,7 +24,7 @@ describe('Buttons Plugin Test', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
     const Pattern = new Design({ parts: [part] })
     const svg = new Pattern().draft().render()
@@ -40,7 +40,7 @@ describe('Buttons Plugin Test', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
     const Pattern = new Design({ parts: [part] })
     const svg = new Pattern().draft().render()
@@ -56,7 +56,7 @@ describe('Buttons Plugin Test', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
     const Pattern = new Design({ parts: [part] })
     const svg = new Pattern().draft().render()
@@ -72,7 +72,7 @@ describe('Buttons Plugin Test', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
     const Pattern = new Design({ parts: [part] })
     const svg = new Pattern().draft().render()
@@ -88,7 +88,7 @@ describe('Buttons Plugin Test', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
     const Pattern = new Design({ parts: [part] })
     const svg = new Pattern().draft().render()
@@ -104,7 +104,7 @@ describe('Buttons Plugin Test', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
     const Pattern = new Design({ parts: [part] })
     const svg = new Pattern().draft().render()

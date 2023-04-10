@@ -1,6 +1,6 @@
 import chai from 'chai'
 import { Design, round } from '@freesewing/core'
-import { annotationPlugin } from '../src/index.mjs'
+import { annotationsPlugin } from '../src/index.mjs'
 
 const expect = chai.expect
 
@@ -18,9 +18,9 @@ describe('Sewtogether Plugin Tests', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
-    const Test = new Design({ plugins: [annotationPlugin], parts: [part] })
+    const Test = new Design({ plugins: [annotationsPlugin], parts: [part] })
     const pattern = new Test()
     pattern.draft()
     const c = pattern.parts[0].test.paths.sewtogetherSewTogether
@@ -56,9 +56,9 @@ describe('Sewtogether Plugin Tests', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
-    const Test = new Design({ plugins: [annotationPlugin], parts: [part] })
+    const Test = new Design({ plugins: [annotationsPlugin], parts: [part] })
     const pattern = new Test()
     pattern.draft()
     var c = pattern.parts[0].test.paths.sewtogetherSewTogetherHinge
@@ -87,9 +87,9 @@ describe('Sewtogether Plugin Tests', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
-    const Test = new Design({ plugins: [annotationPlugin], parts: [part] })
+    const Test = new Design({ plugins: [annotationsPlugin], parts: [part] })
     const pattern = new Test({ sa: 10 })
     pattern.draft()
     var c = pattern.parts[0].test.paths.sewtogetherSewTogetherHinge

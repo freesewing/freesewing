@@ -1,6 +1,6 @@
 import chai from 'chai'
 import { Design, round } from '@freesewing/core'
-import { annotationPlugin } from '../src/index.mjs'
+import { annotationsPlugin } from '../src/index.mjs'
 
 const expect = chai.expect
 
@@ -16,7 +16,7 @@ describe('Scalebox Plugin Tests', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
     const Pattern = new Design({ parts: [part] })
     const pattern = new Pattern()
@@ -90,7 +90,7 @@ describe('Scalebox Plugin Tests', () => {
           rotate: 90,
         })
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
     const Pattern = new Design({ parts: [part] })
     const pattern = new Pattern()
@@ -137,7 +137,7 @@ describe('Scalebox Plugin Tests', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
     const Pattern = new Design({
       parts: [part],
@@ -171,7 +171,7 @@ describe('Scalebox Plugin Tests', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
     const Pattern = new Design({
       parts: [part],
@@ -205,11 +205,11 @@ describe('Scalebox Plugin Tests', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
     const Pattern = new Design({
       parts: [part],
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
       data: { name: 'test', version: '1.2.3' },
     })
     const pattern = new Pattern({ scale: 0.5 })
@@ -250,11 +250,11 @@ describe('Scalebox Plugin Tests', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
     const Pattern = new Design({
       parts: [part],
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
       data: { name: 'test', version: '1.2.3' },
     })
     const pattern = new Pattern({ scale: 0.5 })

@@ -1,6 +1,6 @@
 import chai from 'chai'
 import { Design } from '@freesewing/core'
-import { annotationPlugin } from '../src/index.mjs'
+import { annotationsPlugin } from '../src/index.mjs'
 
 const expect = chai.expect
 
@@ -9,7 +9,7 @@ const part = {
   draft: ({ Point, snippets, Snippet }) => {
     snippets.button = new Snippet('notch', new Point(10, 20))
   },
-  plugins: [annotationPlugin],
+  plugins: [annotationsPlugin],
 }
 const Pattern = new Design({ parts: [part] })
 const pattern = new Pattern()
@@ -32,7 +32,7 @@ describe('Notches Plugin Test', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
     const Pattern = new Design({ parts: [part] })
     const pattern = new Pattern()

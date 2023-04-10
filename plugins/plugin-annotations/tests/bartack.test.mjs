@@ -1,6 +1,6 @@
 import chai from 'chai'
 import { round, Design } from '@freesewing/core'
-import { annotationPlugin } from '../src/index.mjs'
+import { annotationsPlugin } from '../src/index.mjs'
 
 const expect = chai.expect
 
@@ -16,7 +16,7 @@ describe('Bartack plugin Tests', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
     const design = new Design({ parts: [part] })
     const pattern = new design()
@@ -51,7 +51,7 @@ describe('Bartack plugin Tests', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
     const design = new Design({ parts: [part] })
     const pattern = new design()
@@ -87,7 +87,7 @@ describe('Bartack plugin Tests', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
     const design = new Design({ parts: [part] })
     const pattern = new design()
@@ -123,7 +123,7 @@ describe('Bartack plugin Tests', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
     const design = new Design({ parts: [part] })
     const pattern = new design()
@@ -157,7 +157,7 @@ describe('Bartack plugin Tests', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
     const design = new Design({ parts: [part] })
     const pattern = new design()
@@ -191,7 +191,7 @@ describe('Bartack plugin Tests', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
     const design = new Design({ parts: [part] })
     const pattern = new design()
@@ -225,7 +225,7 @@ describe('Bartack plugin Tests', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
     const design = new Design({ parts: [part] })
     const pattern = new design()
@@ -259,7 +259,7 @@ describe('Bartack plugin Tests', () => {
 
         part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
     const design = new Design({ parts: [part] })
     const pattern = new design()
@@ -280,7 +280,7 @@ describe('Bartack plugin Tests', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
     const design = new Design({ parts: [part] })
     const pattern = new design()

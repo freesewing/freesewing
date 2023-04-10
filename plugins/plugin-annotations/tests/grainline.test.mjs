@@ -1,6 +1,6 @@
 import chai from 'chai'
 import { round, Design } from '@freesewing/core'
-import { annotationPlugin } from '../src/index.mjs'
+import { annotationsPlugin } from '../src/index.mjs'
 
 const expect = chai.expect
 
@@ -18,7 +18,7 @@ describe('Grainline Plugin Tests', () => {
 
         return part
       },
-      plugins: [annotationPlugin],
+      plugins: [annotationsPlugin],
     }
     const Pattern = new Design({ parts: [part] })
     const pattern = new Pattern()

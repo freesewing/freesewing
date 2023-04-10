@@ -38,5 +38,5 @@ export const plugin = {
   },
 }
 
-export const annotationPlugin = plugin
-export const pluginAnnotation = plugin
+export const annotationsPlugin = plugin
+export const pluginAnnotations = plugin
