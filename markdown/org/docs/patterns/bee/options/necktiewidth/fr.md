@@ -1,10 +1,10 @@
 - - -
-title: "Neck tie width"
+title: "Largeur des bandes du cou "
 - - -
 
 ***
 
-Controls the width of the ties around your neck
+Contrôle la largeur des bandes autour de votre cou
 
 ## Effet de cette option sur le motif
 
