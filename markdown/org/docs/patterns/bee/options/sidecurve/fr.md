@@ -1,10 +1,10 @@
 - - -
-title: "Side curve"
+titre : "Courbe latérale"
 - - -
 
 ***
 
-Controls the curvature of the side of the bikini cup
+Contrôle la courbure du côté du bonnet du bikini
 
 ## Effet de cette option sur le motif
 
