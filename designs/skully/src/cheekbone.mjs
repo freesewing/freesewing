@@ -1,20 +1,17 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { cheek } from './cheek.mjs'
-import { convertPoints } from './pointsUtil.mjs'
 
 function draftCheekbone({
-  options,
   Point,
   Path,
   points,
   paths,
-  Snippet,
-  snippets,
   complete,
   sa,
   store,
   paperless,
   macro,
+  utils,
   part,
 }) {
   console.log('cheekbone')
@@ -57,8 +54,6 @@ function draftCheekbone({
     // snippets.logo = new Snippet('logo', points.logo)
     // points.text = points.logo
     //   .shift(-90, w / 8)
-    //   .attr('data-text', 'hello')
-    //   .attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -67,16 +62,48 @@ function draftCheekbone({
 
   // Paperless?
   if (paperless) {
-    // macro('hd', {
-    //   from: points.bottomLeft,
-    //   to: points.bottomRight,
-    //   y: points.bottomLeft.y + sa + 15,
-    // })
+    const bb = paths.seam.bbox()
+    const minY = bb.topLeft.y
+
+    points.pointY = utils.curveIntersectsY(
+      points.point1,
+      points.point1Cp1,
+      points.point0,
+      points.point0,
+      minY + 0.00001
+    )[0]
+
+    macro('hd', {
+      from: points.point0,
+      to: points.point1,
+      y: points.point0.y + sa + 15,
+    })
+    macro('hd', {
+      from: points.point0,
+      to: points.pointY,
+      y: points.pointY.y - sa - 15,
+    })
+    macro('hd', {
+      from: points.pointY,
+      to: points.point1,
+      y: points.pointY.y - sa - 15,
+    })
+
     // macro('vd', {
-    //   from: points.bottomRight,
-    //   to: points.topRight,
-    //   x: points.topRight.x + sa + 15,
+    //   from: points.pointY,
+    //   to: points.point1,
+    //   x: points.point1.x + sa + 15,
     // })
+    macro('vd', {
+      from: points.point1,
+      to: points.point0,
+      x: points.point1.x + sa + 15,
+    })
+    macro('vd', {
+      from: points.pointY,
+      to: points.point0,
+      x: points.point0.x - sa - 15,
+    })
   }
 
   return part

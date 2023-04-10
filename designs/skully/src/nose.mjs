@@ -5,7 +5,6 @@ import { forehead } from './forehead.mjs'
 import { convertPoints } from './pointsUtil.mjs'
 
 function draftNose({
-  options,
   Point,
   Path,
   points,
@@ -22,12 +21,9 @@ function draftNose({
 }) {
   console.log('nose')
   const textAttribute = 'text-xs center'
-  const sizeFactor = store.get('sizeFactor')
 
   var noseSide = store.get('noseSide')
   var noseHeight = store.get('noseHeight')
-  var noseCircumference = noseSide * 2
-  var noseDiameter = (noseCircumference / Math.PI) * 2
 
   const c = 0.55191502449351
 
@@ -110,26 +106,92 @@ function draftNose({
     // snippets.logo = new Snippet('logo', points.logo)
     // points.text = points.logo
     //   .shift(-90, w / 8)
-    //   .attr('data-text', 'hello')
-    //   .attr('data-text-class', 'center')
 
     if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+      // paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+      const pathSA1 = new Path()
+        .move(points.point0)
+        .join(paths.p1)
+        .line(points.point2)
+        .offset(sa)
+        .hide()
+      const pathSA2 = new Path()
+        .move(points.point2)
+        .line(points.point3)
+        .curve(points.point3Cp1, points.point0Cp2, points.point0)
+        .offset(sa)
+        .hide()
+      const pSa1 = pathSA1.intersectsX(0)[0]
+      paths.sa1 = pathSA1.split(pSa1)[1].hide()
+      const pSa2 = pathSA2.intersectsX(0)[0]
+      paths.sa2 = pathSA2.split(pSa2)[0].hide()
+      paths.sa = new Path()
+        .move(pSa1)
+        .join(paths.sa1)
+        .join(paths.sa2)
+        .close()
+        .attr('class', 'fabric sa')
     }
   }
 
   // Paperless?
   if (paperless) {
-    // macro('hd', {
-    //   from: points.bottomLeft,
-    //   to: points.bottomRight,
-    //   y: points.bottomLeft.y + sa + 15,
-    // })
-    // macro('vd', {
-    //   from: points.bottomRight,
-    //   to: points.topRight,
-    //   x: points.topRight.x + sa + 15,
-    // })
+    const bb = paths.seam.bbox()
+    const maxY = bb.bottomRight.y
+
+    console.log({ bb: bb, maxY: maxY })
+
+    points.pointY1 = utils.curveIntersectsY(
+      points.point0,
+      points.point0Cp1,
+      points.point1Cp2,
+      points.point1,
+      maxY - 0.0000001
+    )[0]
+    points.pointY2 = utils.curveIntersectsY(
+      points.point0,
+      points.point0Cp2,
+      points.point3Cp1,
+      points.point3,
+      maxY - 0.0000001
+    )[0]
+
+    macro('vd', {
+      from: points.point2,
+      to: points.point1,
+      x: points.point1.x + sa + 5,
+    })
+    macro('vd', {
+      from: points.pointY2,
+      to: points.point2,
+      x: points.point3.x - sa - 5,
+    })
+
+    macro('hd', {
+      from: points.point0,
+      to: points.point1,
+      y: points.point2.y - sa - 5,
+    })
+    macro('hd', {
+      from: points.point3,
+      to: points.point0,
+      y: points.point2.y - sa - 5,
+    })
+    macro('hd', {
+      from: points.pointY1,
+      to: points.point1,
+      y: maxY + sa + 5,
+    })
+    macro('hd', {
+      from: points.pointY2,
+      to: points.pointY1,
+      y: maxY + sa + 5,
+    })
+    macro('hd', {
+      from: points.point3,
+      to: points.pointY2,
+      y: maxY + sa + 5,
+    })
   }
 
   return part
