@@ -1,10 +1,10 @@
 - - -
-title: "Band (chest) tie length colours"
+titre: Couleurs de la bande (sous poitrine)
 - - -
 
 ***
 
-Whether you want single color tie around your chest, or dual-coloured ones
+Que vous vouliez une seule couleur autour de votre poitrine, ou une teinte bicolore
 
 ## Effet de cette option sur le motif
 
