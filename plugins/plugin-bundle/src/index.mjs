@@ -1,4 +1,4 @@
-import { annotationPlugin } from '../../plugin-annotations/src/index.mjs'
+import { annotationsPlugin } from '../../plugin-annotations/src/index.mjs'
 
 import { bannerPlugin } from '../../plugin-banner/src/index.mjs'
 import { dimensionPlugin } from '../../plugin-dimension/src/index.mjs'
@@ -10,7 +10,7 @@ import { titlePlugin } from '../../plugin-title/src/index.mjs'
 import { name, version } from '../data.mjs'
 
 const bundledPlugins = [
-  annotationPlugin,
+  annotationsPlugin,
   bannerPlugin,
   dimensionPlugin,
   measurementsPlugin,

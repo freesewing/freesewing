@@ -1,4 +1,4 @@
-import { annotationPlugin } from '@freesewing/plugin-annotations'
+import { annotationsPlugin } from '@freesewing/plugin-annotations'
 import { base } from './base.mjs'
 
 const pluginSewtogether = ({ points, Point, paths, Path, options, macro, part }) => {
@@ -27,6 +27,6 @@ export const sewtogether = {
     sewtogetherHinge: { bool: true, menu: 'sewtogether' },
     sewtogetherMiddle: { bool: false, menu: 'sewtogether' },
   },
-  plugins: annotationPlugin,
+  plugins: annotationsPlugin,
   draft: pluginSewtogether,
 }

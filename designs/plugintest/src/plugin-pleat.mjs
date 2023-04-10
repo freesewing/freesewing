@@ -1,4 +1,4 @@
-import { annotationPlugin } from '@freesewing/plugin-annotations'
+import { annotationsPlugin } from '@freesewing/plugin-annotations'
 import { base } from './base.mjs'
 
 const pluginPleat = ({ points, Point, paths, Path, options, macro, part }) => {
@@ -26,6 +26,6 @@ export const pleat = {
     pleatMargin: { count: 35, min: 0, max: 50, menu: 'pleat' },
     pleatReverse: { bool: false, menu: 'pleat' },
   },
-  plugins: annotationPlugin,
+  plugins: annotationsPlugin,
   draft: pluginPleat,
 }

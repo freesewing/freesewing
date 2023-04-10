@@ -1,4 +1,4 @@
-import { annotationPlugin } from '@freesewing/plugin-annotations'
+import { annotationsPlugin } from '@freesewing/plugin-annotations'
 import { base } from './base.mjs'
 
 const pluginCutonfold = ({ points, Point, paths, Path, options, macro, part }) => {
@@ -28,6 +28,6 @@ export const cutonfold = {
     cutonfoldOffset: { count: 15, min: 0, max: 100, menu: 'cutonfold' },
     cutonfoldGrainline: { bool: false, menu: 'cutonfold' },
   },
-  plugins: annotationPlugin,
+  plugins: annotationsPlugin,
   draft: pluginCutonfold,
 }

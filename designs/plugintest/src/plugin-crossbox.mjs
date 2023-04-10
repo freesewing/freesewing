@@ -1,4 +1,4 @@
-import { annotationPlugin } from '@freesewing/plugin-annotations'
+import { annotationsPlugin } from '@freesewing/plugin-annotations'
 import { base } from './base.mjs'
 
 const pluginCrossbox = ({ points, Point, paths, Path, options, macro, part }) => {
@@ -24,6 +24,6 @@ export const crossbox = {
   options: {
     crossboxText: { bool: false, menu: 'crossbox' },
   },
-  plugins: annotationPlugin,
+  plugins: annotationsPlugin,
   draft: pluginCrossbox,
 }
