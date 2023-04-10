@@ -26,6 +26,10 @@ cuffEase:
   title: Cuff ease
   description: The amount of ease at your wrist.
 
+draftForHighBust:
+  title: Draft for high bust
+  description: Draft the pattern for the high bust measurement (if available) rather than the (full) chest. This will result in a more fitted garment for people with breasts.
+
 frontArmholeDeeper:
   title: Front armhole extra cutout
   description: How much do you want the front armhole to be cut out deeper than the back.
