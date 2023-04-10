@@ -142,6 +142,7 @@ export const cutLayoutPlugin = function (material, grainAngle) {
         // store snippets by type so we can re-sprinkle later
         const snippetsByType = {}
         // for each snippet
+        let anchorNames = 0
         for (var s in snippets) {
           const snip = snippets[s]
           // don't mirror these ones
@@ -152,15 +153,7 @@ export const cutLayoutPlugin = function (material, grainAngle) {
 
           // put the anchor on the list to mirror
           mirrorPoints.push(snip.anchor)
-
-          // then we have to find the name of that point so we can apply the snippet to its mirror
-          for (var pName in points) {
-            if (points[pName] === snip.anchor) {
-              // add the name-to-be of the mirrored anchor to the list for resprinkling
-              snippetsByType[snip.def].push(prefix + utils.capitalize(pName))
-              break
-            }
-          }
+          snippetsByType[snip.def].push(`${prefix}_${anchorNames++}`)
         }
 
         // mirror
@@ -176,6 +169,7 @@ export const cutLayoutPlugin = function (material, grainAngle) {
           },
         })
 
+        console.log(mirrorPoints, snippetsByType, points)
         // sprinkle the snippets
         for (var def in snippetsByType) {
           macro('sprinkle', {

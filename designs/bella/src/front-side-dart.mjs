@@ -1,8 +1,10 @@
 import { back } from './back.mjs'
+import { pluginCutlist } from '@freesewing/plugin-cutlist'
 
 export const frontSideDart = {
   name: 'bella.frontSideDart',
   after: back,
+  plugins: [pluginCutlist],
   draft: ({
     store,
     sa,
@@ -201,6 +203,8 @@ export const frontSideDart = {
       .line(points.hps)
       .curve(points.hpsCp2, points.cfNeckCp1, points.cfNeck)
       .hide()
+
+    store.cutlist.addCut()
 
     if (complete) {
       points.titleAnchor = new Point(points.armholePitch.x / 2, points.armholePitchCp2.y)
