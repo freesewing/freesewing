@@ -48,7 +48,7 @@
 
 # @freesewing/plugin-annotations
 
-A bundle of FreeSewing plugins that provide annotations
+A FreeSewing plugin that provides pattern annotations
 
 
 

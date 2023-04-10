@@ -1,7 +1,7 @@
 {
   "name": "@freesewing/plugin-annotations",
   "version": "3.0.0-alpha.4",
-  "description": "A bundle of FreeSewing plugins that provide annotations",
+  "description": "A FreeSewing plugin that provides pattern annotations",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",

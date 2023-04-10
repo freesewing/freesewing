@@ -9,11 +9,12 @@ It is provided by the [banner plugin](/reference/plugins/banner).
 
 ```js
 macro('banner', {
+  String className='',
+  Number dy=1,
+  Number repeat=10,
+  Number spaces=12,
   Path path,
   String text,
-  Number dy=1,
-  Number spaces=12,
-  Number repeat=10,
 })
 ```
   
@@ -45,11 +46,12 @@ macro('banner', {
 
 | Property     | Default    | Type       | Description |
 |-------------:|------------|------------|-------------|
-| `path`       |            | `Path`     | The Path to add the text on |
-| `text`       |            | `text`     | The text to place repeat along the path |
+| `className`  | ``         | `string`   | Any additional CSS classes to apply to the text |
 | `dy`         | `1`        | `number`   | Controls how far the text will be located above the path |
-| `spaces`     | `12`       | `number`   | The number of spaces to place between repetitions |
+| `path`       |            | `Path`     | The Path to add the text on |
 | `repeat`     | `10`       | `number`   | The number of repetitions |
+| `spaces`     | `12`       | `number`   | The number of spaces to place between repetitions |
+| `text`       |            | `string`   | The text to place repeat along the path |
 
 ## Notes
 

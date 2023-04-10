@@ -1,7 +1,5 @@
 import { annotationsPlugin } from '../../plugin-annotations/src/index.mjs'
 
-import { bannerPlugin } from '../../plugin-banner/src/index.mjs'
-import { dimensionPlugin } from '../../plugin-dimension/src/index.mjs'
 import { measurementsPlugin } from '../../plugin-measurements/src/index.mjs'
 import { mirrorPlugin } from '../../plugin-mirror/src/index.mjs'
 import { roundPlugin } from '../../plugin-round/src/index.mjs'
@@ -11,8 +9,6 @@ import { name, version } from '../data.mjs'
 
 const bundledPlugins = [
   annotationsPlugin,
-  bannerPlugin,
-  dimensionPlugin,
   measurementsPlugin,
   mirrorPlugin,
   roundPlugin,
