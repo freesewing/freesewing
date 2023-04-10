@@ -18,7 +18,7 @@ bent:
   description: Ce bloc d'emmanchure en deux parties est la base de nos modèles de manteau et de veste.
   title: Patron de base Bent
 bob:
-  description: This is the bib that you can create by following our design tutorial
+  description: Voici le bavoir que vous pouvez créer en suivant notre tutoriel de design
   title: Bob le bavoir
 breanna:
   description: Breanna est un bloc corporel de base pour les personnes qui ont un sein.
@@ -54,8 +54,8 @@ florence:
   description: 'Florence est un masque facial.'
   title: Masque Florence
 hi:
-  description: The world's friendliest shark
-  title: Hi the shark
+  description: Le requin le plus amical du monde
+  title: Bonjour le requin
 holmes:
   description: 'Pour un cosplay Sherlock Holmes, ou juste un joli manteau.'
   title: Casquette de détective Holmes
@@ -78,8 +78,8 @@ lunetius:
   description: Lunetius est une lacerne, un manteau romain historique
   title: Lacerne Lunetius
 noble:
-  description: Noble is a body block with prince(ess) seams
-  title: Noble body block
+  description: Noble est un bloc de corps avec des coutures prince(sse)
+  title: Bloc du corps Noble
 octoplushy:
   description: Un compagnon à plusieurs bras pour des câlins de haut niveau
   title: Octoplushy la pieuvre
