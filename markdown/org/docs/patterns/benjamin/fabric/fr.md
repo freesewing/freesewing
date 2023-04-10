@@ -1,8 +1,8 @@
 - - -
-title: "Benjamin bow tie: Fabric Options"
+titre : "Nœud papillon Benjamin : Options de tissu"
 - - -
 
-The bow ties you find in the store are typically make out of silk or some imitation silk poly. So it will come as no surprise that those are good options. Any type of fabric that you like the pattern or looks of can become a candidate for a bow tie. The only real limitation is that the bow tie will have to be turned inside out through a tube that is only 2cm across. With some thicker fabrics, this will be a difficult proposition.
+Les nœuds papillons que vous trouvez dans les magasins sont généralement en soie ou en imitation de soie. Il ne sera donc pas surprenant que ce soient de bonnes options. Any type of fabric that you like the pattern or looks of can become a candidate for a bow tie. The only real limitation is that the bow tie will have to be turned inside out through a tube that is only 2cm across. Avec des tissus plus épais, ce sera difficile.
 
 Bow ties are more whimsical than normal ties, so having a fun pattern or loud colour is not as much of a problem as it would be with a regular tie.
 
