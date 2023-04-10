@@ -19,7 +19,7 @@ bent:
   title: Patron de base Bent
 bob:
   description: This is the bib that you can create by following our design tutorial
-  title: Bob the bib
+  title: Bob le bavoir
 breanna:
   description: Breanna est un bloc corporel de base pour les personnes qui ont un sein.
   title: Haut Breanna
@@ -81,8 +81,8 @@ noble:
   description: Noble is a body block with prince(ess) seams
   title: Noble body block
 octoplushy:
-  description: A multi-armed companion for next-level hugs
-  title: Octoplushy the octopus
+  description: Un compagnon à plusieurs bras pour des câlins de haut niveau
+  title: Octoplushy la pieuvre
 paco:
   description: Paco est un pantalon d'été décontracté mais élégant.
   title: Pantalon Paco
@@ -123,8 +123,8 @@ trayvon:
   description: Trayvon est une cravate qui ne fait pas d'économies pour un résultat professionnel.
   title: Cravate Trayvon
 unice:
-  description: Unice is a variant of Ursula; A basic, highly-customizable underwear pattern.
-  title: Unice undies
+  description: Unice est une variante d'Ursula ; un modèle de sous-vêtements basique et hautement personnalisable.
+  title: Sous-vêtements Unice
 ursula:
   description: Ursula est un motif basique et hautement personnalisable.
   title: Unités d'Ursula
