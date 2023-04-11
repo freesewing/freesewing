@@ -16,4 +16,4 @@ Cela ne s'applique qu'aux poignets classiques. Donc si vous avez choisi un poign
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_barrelcuffnarrowbutton_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_barrelcuffnarrowbutton_sample.svg "Effet de cette option sur le modèle")
