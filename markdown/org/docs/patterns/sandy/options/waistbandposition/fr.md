@@ -8,4 +8,4 @@ Où se trouve la ceinture. 0% le fait s'asseoir sur la taille naturelle, 100% le
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](sandy_waistbandposition_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](sandy_waistbandposition_sample.svg "Effet de cette option sur le modèle")
