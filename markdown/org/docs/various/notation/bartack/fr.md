@@ -1,12 +1,12 @@
 ---
-title: Bartacks
+title: Point d'arrêt
 ---
 
-A bartack is a stitch of varying size and length used to reinforce fabric. It is often used on the edges of seams such as at a pocket or fly opening.
+Un point d'arrêt est un point de taille et de longueur variables utilisé pour renforcer le tissu. Il est souvent utilisé sur les bords des coutures, par exemple au niveau d'une poche ou de l'ouverture d'une braguette.
 
 <Legend part="bartack">
 
-This is how a bartack displays on a pattern. 
+C'est ainsi qu'un point d'arrêt est représenté sur un patron. 
 
 </Legend>
 
