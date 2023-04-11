@@ -47,7 +47,7 @@ Skip this step if:
 
 ## Step 3: Lining
 
-- (Optional) Interline the skirt with a stiffener.
+- (Optional) Interline the skirt with a stiffer or stronger fabric.
 - Attach Lining to skirt at hem and opening by your preferred method.
 - _Baste_ Lining to skirt at waist.
 - Gather the waist if needed.
