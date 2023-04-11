@@ -108,21 +108,11 @@ function yuriFront({
 
 export const front = {
   name: 'yuri.front',
-  from: {
-    ...brianFront,
-    options: {
-      ...brianFront.options,
-      // Overrides
-      collarEase: { pct: 20, min: 10, max: 30 },
-      cuffEase: { pct: 30, min: 20, max: 60 },
-      lengthBonus: { pct: 10, min: 5, max: 15 },
-      sleeveLengthBonus: { pct: 1, min: 0, max: 10 },
-    },
+  from: brianFront,
+  options: {
+    ...brianFront.options,
   },
   hide: hidePresets.HIDE_TREE,
-  options: {
-    hipsEase: { pct: 0, min: 0, max: 10 },
-  },
   measurements: ['hips', 'hpsToBust'],
   draft: yuriFront,
 }
