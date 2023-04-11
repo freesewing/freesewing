@@ -35,7 +35,7 @@ If you do not wish to create additional seams but still wish to have pockets, yo
 ## Step 2: Prep the opening
 
 - Insert zipper or placket into opening if using.
-- If not using, press the openings seam allowance to the inside and _Edgestitch_/_Topstitch_ in place. You may also wish to continue the topstiching down the seam.
+- If not using, press the openings seam allowance to the inside and _Edgestitch_/_Topstitch_ in place. You may also wish to continue the topstitching down the seam.
 
 <Note>
 
