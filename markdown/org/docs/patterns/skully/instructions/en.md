@@ -21,7 +21,7 @@ Sew together the sides of the eye, so you will make a cone. Cut away any bulk. R
 
 ## Step 3: The nose
 
-Like the eyes, the nose too has parts that need to be sewn together. There are two of these sides that need to be sew together. This creates two connected cones. This is very finicky, so take your time.
+Like the eyes, the nose has seams that need to be sewn together. Sew the two straight seams together creating two connected cones. This is very finicky, so take your time.
 
 ## Step 4: The head
 
