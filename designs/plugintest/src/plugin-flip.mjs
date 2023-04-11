@@ -29,6 +29,11 @@ const pluginFlip = ({ points, Point, paths, Path, snippets, Snippet, options, ma
     paths.b = new Path().move(points.e).curve(points.a, points.d, points.c)
 
     macro('flip', { axis: options.flipAxis })
+    macro('bannerbox', {
+      topLeft: new Point(-45, 5),
+      bottomRight: new Point(-5, 40),
+      title: 'macro = flip',
+    })
   }
 
   return part

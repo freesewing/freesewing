@@ -309,7 +309,7 @@ const pluginAnnotations = ({
     })
 
     // macro = scalebox
-    x = 50
+    x = 45
     y += margin * 4.5
     points.scalebox = new Point(x, y)
     const scaleboxOptions = {
@@ -321,7 +321,7 @@ const pluginAnnotations = ({
     macro('scalebox', scaleboxOptions)
     macro('bannerbox', {
       topLeft: new Point(0, y - 20),
-      bottomRight: new Point(110, y + 30),
+      bottomRight: new Point(95, y + 20),
       title: 'macro = scalebox',
       margin,
     })

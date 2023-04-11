@@ -1,14 +1,17 @@
 import { base } from './base.mjs'
 
-const pluginLogo = ({ points, Point, paths, Path, snippets, Snippet, options, part }) => {
+const pluginLogo = ({ points, Point, paths, Path, snippets, Snippet, options, part, macro }) => {
   if (['logo', 'all'].indexOf(options.plugin) !== -1) {
     points.a = new Point(40, 40)
     snippets.a = new Snippet('logo', points.a)
       .attr('data-scale', options.logoScale)
       .attr('data-rotate', options.logoRotate)
 
-    // Prevent clipping of text
-    paths.box = new Path().move(new Point(0, 0)).line(new Point(80, 60)).attr('class', 'hidden')
+    macro('bannerbox', {
+      topLeft: new Point(25, 10),
+      bottomRight: new Point(60, 45),
+      title: 'snippet = logo',
+    })
   }
 
   return part

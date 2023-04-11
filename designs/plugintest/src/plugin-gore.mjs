@@ -10,6 +10,11 @@ const pluginGore = ({ points, Point, options, macro, part }) => {
       gores: options.goreGoreNumber,
       extraLength: options.goreExtraLength,
     })
+    macro('bannerbox', {
+      topLeft: new Point(15, 5),
+      bottomRight: new Point(45, 5),
+      title: 'macro = gore',
+    })
   }
   return part
 }
