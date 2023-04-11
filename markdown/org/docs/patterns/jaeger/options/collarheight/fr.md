@@ -8,4 +8,4 @@ Il s'agit de la hauteur du col à l'arrière du cou et ne peut jamais être inf�
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_collarheight_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_collarheight_sample.svg "Effet de cette option sur le modèle")
