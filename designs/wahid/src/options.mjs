@@ -2,6 +2,17 @@
 export const acrossBackFactor = 0.97
 export const frontOverlap = 0.01
 export const frontArmholeDeeper = 0.005
+export const brianFitSleeve = false
+export const brianFitCollar = false
+export const collarFactor = 4.8
+export const backNeckCutout = 0.05
+export const shoulderSlopeReduction = 0
+export const collarEase = 0.035
+export const shoulderEase = 0
+export const bicepsEase = 0.15
+export const s3Collar = 0
+export const s3Armhole = 0
+export const cuffEase = 0
 // Fit
 export const armholeDepthFactor = { pct: 70, min: 60, max: 80, menu: 'fit' }
 export const backScyeDart = { deg: 2, min: 0, max: 6, menu: 'fit' }

@@ -1,6 +1,23 @@
 import { constructMainDart, shapeSideSeam, dartPath } from './shared.mjs'
 import { back as brianBack } from '@freesewing/brian'
-import { backInset, shoulderInset, neckInset, centerBackDart, backScyeDart } from './options.mjs'
+import {
+  backInset,
+  shoulderInset,
+  neckInset,
+  centerBackDart,
+  backScyeDart,
+  brianFitSleeve,
+  brianFitCollar,
+  collarFactor,
+  backNeckCutout,
+  shoulderSlopeReduction,
+  collarEase,
+  shoulderEase,
+  bicepsEase,
+  cuffEase,
+  s3Collar,
+  s3Armhole,
+} from './options.mjs'
 import { hidePresets } from '@freesewing/core'
 
 function wahidBack({
@@ -236,6 +253,17 @@ export const back = {
     neckInset,
     centerBackDart,
     backScyeDart,
+    brianFitSleeve,
+    brianFitCollar,
+    collarFactor,
+    backNeckCutout,
+    shoulderSlopeReduction,
+    collarEase,
+    shoulderEase,
+    bicepsEase,
+    cuffEase,
+    s3Collar,
+    s3Armhole,
   },
   draft: wahidBack,
 }
