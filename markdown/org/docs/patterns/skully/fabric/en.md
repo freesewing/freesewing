@@ -12,7 +12,7 @@ Since this is a plush toy, it will need to be stuffed with material. Most of the
 
 ## Hair
 
-Skully needs hair. Embrodery floss works very well, and can be had in all colors.
+Skully needs hair. Embroidery floss works very well, and can be had in all colors.
 
 ## Needle
 
