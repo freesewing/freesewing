@@ -4,9 +4,7 @@ title: "Skully (the logo): Fabric Options"
 
 ## Main Fabric
 
-This plush toy is best made from a felt type of fabric. This will provide extra rigidity to keep the shape
-correct, while still allowing it to be a plush toy. Thin and stretchy fabrics are not well suited, because
-the shape will change considerably due to tensions from the stuffing.
+This plush toy is best made from a felt type fabrics. This will provide extra rigidity to keep the shape correct, while still allowing it to be a plush toy. Thin and stretchy fabrics are not well suited, because the shape will change considerably due to tensions from the stuffing.
 
 ## Stuffing
 
