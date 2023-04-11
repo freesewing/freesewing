@@ -5,7 +5,7 @@ title: "Skully (the logo): What You Need"
 To make Skully, you will need the following:
 
 - [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 0.5 meter (0.6 yards) of a suitable fabric ([see Skully Fabric options](/docs/patterns/skully/fabric/))
+- About 0.5 meters (0.6 yards) of a suitable fabric ([see Skully Fabric options](/docs/patterns/skully/fabric/))
 - Stuffing
 - Embroidery floss for the hair
 - Appropriately sized upholstery needle
