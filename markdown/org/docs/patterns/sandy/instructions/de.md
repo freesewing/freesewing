@@ -15,129 +15,101 @@ Due to seamless and closure Sandy's needing different constructions we have sepa
 
 </Note>
 
-## Sandy with Closure (default)
+## Step 1: Prepping the Skirt
 
-### Step 1: Prepping the Skirt
-
-- With _good sides together_ sew the skirt seam up to where you intend the opening to start.
+- If including a closure, sew the skirt seam  _good sides together_ up to where you intend the opening to start.
 - Add Pockets if using.
 - If using lining, prep the same as the skirt.
-- _Finish_ if not lining.
+- _Finish_ seams if not lining.
 
 <Note>
 
-Pockets are not included in Sandy as it has one seam by default, if you cut multiple skirt pieces instead of a single one you and easily add pockets.
+Pockets are not included in Sandy as it has one seam by default or no seams at all.
+
+If you would like inseam pockets you can cut the skirt pattern piece into multiple pieces rather than a single one to create seams to insert them into. Cutting it into thirds (for default) or two (for seamless) will give you two sideseams for two inseam pockets, just don't forget to add back seam allowance to the cut lines if including.
+
+If you do not wish to create additional seams but still wish to have pockets, you can use Patch Pockets or if you are feeling adventurous, you can use Welt Pockets.
 
 </Note>
 
-### Step 2: Prep the opening
+## Step 2: Prep the opening
 
 - Insert zipper or placket into opening if using.
-- If not using, press the openings seam allowance to the inside and _Edgestitch_/_Topstitch_ in place. You may also wish to continue the topstiching down the seam.
+- If not using, press the openings seam allowance to the inside and _Edgestitch_/_Topstitch_ in place. You may also wish to continue the topstitching down the seam.
 
 <Note>
 
-Skip this step if you are including the zipper in the waistband.
+Skip this step if:
+- You are including the zipper in the waistband.
+- You are making a seamless version.
 
 </Note>
 
-### Step 3: Lining
+## Step 3: Lining
 
-- Face the skirt if desired.
+- (Optional) Interline the skirt with a stiffer or stronger fabric.
 - Attach Lining to skirt at hem and opening by your preferred method.
 - _Baste_ Lining to skirt at waist.
-- Gather skirt and lining skit if needed.
+- Gather the waist if needed.
 
 <Note>
 
-These instructions will treat the lining and skirt the same at the waist.  
-If not lining you should face the skirt when hemming later.
+## Step 4: The waistband
 
-</Note>
+### Closures
 
-### Step 4: The waistband
+- Interface/stiffen half the waistband part lengthwise. Or interface/stiffen one of the curved waistband parts.
+- Press under the seam allowance on the long edge of the waistband that is not interfaced. Trim. _Baste_ the fold in place if needed.
+- With _good sides together_ sew the interfaced waistband/side of the waistband to the skirt. Gather the skirt down to the waistband if needed.
+- If using the curved waistband sew the non-interfaced part to the interfaced part. Trim and clip seam and press the non-interfaced part up and away from the skirt.
 
-- Face half the waistbands parts lengthwise.
-- With _good sides together_ sew the waistbands together along one of the short edges.
-- Press under the seam allowance on the long edge of the waistband that is not faced.
-- Attach the faced side of the waistband, _good sides together_ to the skirt. There will be some overhang, the side you wish not to overlap should be overhang by your seam allowance. The side intended to overlap will have a greater overhang. Trim seam.
-- Press the waistband and seam allowance up and away from the skirt.
-- If inserting a zipper now is the time to do so, attach the zipper from the fold line down. Then follow the rest of the instructions ommiting overhangs and other closures. You will need to attach the lining to the zipper at this point if you have not treated the lining and skirt as one at the opening.
-- Press the waistband _good sides together_ along fold-line.
+There will be some overhangs:
+
+- The side you wish not to overlap should be overhang by your seam allowance.
+- The side intended to overlap will have a greater overhang.
+- If using a placket, both sides will overhang by your seam allowance.
+- If using a zipper in the waistband the greater overhang will need to be trimmed to the seam allowance.
+
+__Inserting Zipper in Waistband__
+- If inserting a zipper into the waistband now is the time to do so, attach the zipper from the waistband fold line down. Or from seam-line down for curved waistband.
+- _Slipstitch_ or _Whipstitch_ the lining to the zipper at this point if you have not treated the lining and skirt as one at the opening.
+- Press under overhangs.
+- Press the waistband _wrong sides together_ along fold-line. Or along seam-line for curved waistband.
+- Slipstitch_ or _Whipstitch_ the overhang edges to the zipper.
+- _Edgestitch_ the waistband in place.
+- Alternatively, _Slipstitch_ or _Whipstitch_ the waistband in place on the inside.
+
+__Other closures__
+- Press the waistband _good sides together_ along fold-line. Or along seam-line for curved waistband.
 - Sew the overhangs with your seam allowance.
 - Turn the waistband out and to the inside, Press.
 - _Egdestitch_ the waistband in place, this should also close the gap of the over-lap.
 - Alternatively, _Slipstich_ or _Whipstitch_ the waistband in place on the inside and close the gap of the over-lap with _Slipstiching_.
-- Add button and buttonhole, snaps or dress hooks, whatever is your preferred closure to the waistband overhang.
+- Add snaps, dress hooks or button and buttonhole, whatever is your preferred closure to the waistband overhang.
 
-<Tip>
+### Seamless
 
-If you are having trouble keeping the pressed under seam allowance of the waistband folded/not staying pressed you may find it helpful to _Baste_ the fold in place.
-
-</Tip>
-
-### Step 5: Hemming/Facing
-
-If you have hemmed the skirt with the lining you can skip this step.
-
-- Faced the skirt if desired.
-- Line the facing if desired.
-- Hem the skirt if you have not already done so with the lining.
-
-<Note>  
-
-There are many ways to hem/face the bottom of a skirt, If you have a prefered method use it here.
-
-</Note>
-
-### Schritt 6: Viel Spaß!
-
-You are all done! Now go enjoy your wonderful new skirt!
-
-## Sandy with no closure (seamless/elasticated waistband)
-
-### Step 1: Lining and Skirt
-
-- Face skirt if desired.
-- Attach Lining to skirt at hem by your preferred method if using.
-- _Baste_ Lining to skirt at waist.
-- _Finish_ seams if not lining.
-- Gather skirt and lining skit if needed.
-
-<Note>
-
-These instructions will treat the lining and skirt the same at the waist.  
-If not lining you should face the skirt when hemming later.
-
-</Note>
-
-### Step 2: The waistband
-
-- With _good sides together_ sew the waistband in half along the short seams, leaving a gap for the elastic that will be on the inside.
+- If curved waistband with _good sides together_ sew the two waistbands together along the shortest curved edge. Press away from one another, Trim and clip the seam.
+- With _good sides together_ sew the waistband together along the short seams, leaving a gap for the elastic that will be on the inside.
 - Press under the seam allowance on the long edge of the waistband that is intended to be on the inside.
 - With _good sides together_ attach the waistband to the skirt along the unpressed seam. Trim seam.
 - Press waistband and seam allowance up away from skirt.
-- Press the waistband to the inside along the fold-line.
+- Press the waistband to the inside along the fold-line/seam-line.
 - _Edgestitch_ the waistband in place.
 - Alternatively you can _Slipstitch_ or _Whipstitch_ the waistband in place on the inside.
 - Cut the elastic to your waist.
 - Thread the elastic through the opening of the waistband making sure not to lose the end.
-- Overlap the ends by 1cm (3/8 inch) and zig-zag stitch in place.
+- Overlap the ends of the elastic by 1cm (3/8 inch) and zig-zag stitch in place.
 - Tuck elastic into waistband and close the opening with hand-sewing.
 
-<Tip>
-
-If you are having trouble keeping the pressed under seam allowance of the waistband folded/not staying pressed you may find it helpful to _Baste_ the fold in place.
-
-</Tip>
-
-### Step 3: Hemming/Facing
+## Step 5: Hemming
 
 If you have hemmed the skirt with the lining you can skip this step.
 
-- Faced the skirt if desired.
-- Line the facing if desired.
-- Hem the skirt if you have not already done so with the lining.
+Hem the skirt in one of the following ways:
+- Omit the hem allowance and bind the raw edge.
+- Bind the raw edge of the hem allowance, single fold the hem under and either _Topstitch_ or hand sew the hem in place.
+- Double fold the hem under and either _Topstitch_ or hand sew the hem in place. You may have heard this be called a Rolled hem.
 
 <Note>  
 
@@ -145,9 +117,9 @@ There are many ways to hem/face the bottom of a skirt, If you have a prefered me
 
 </Note>
 
-### Schritt 4: Viel Spaß!
+## Step 6: Enjoy!
 
-You all done! Now go enjoy your wonderfully seamless skirt!
+You are all done! Now go enjoy your wonderful new skirt and try not to get too dizzy showing off it's fullness!
 
 <Note>
 
