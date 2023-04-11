@@ -9,7 +9,9 @@ Since it has no openings, you'll need an elastic waistband.
 
 <Note>
 
-This produces a full circle ignoring the _Circle percent_ option.
+- This produces a full circle ignoring the _Circle percent_ option.
+- You may need to use the [gathering option](sandy/options/gathering) to increase the waist circumference to fit over your seat/hips.
+- You will need to set the [waistband overlap](sandy/options/waistbandoverlap) to 0%.
 
 </Note>
 
