@@ -1,17 +1,13 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
-import { convertPoints } from './pointsUtil.mjs'
 import { cheek } from './cheek.mjs'
 import { head2 } from './head2.mjs'
 import { jawfloor } from './jawfloor.mjs'
 
 function draftHead3({
-  options,
   Point,
   Path,
   points,
   paths,
-  Snippet,
-  snippets,
   complete,
   sa,
   log,
@@ -21,7 +17,6 @@ function draftHead3({
   utils,
   part,
 }) {
-  console.log('head3')
   const textAttribute = 'text-xs center'
   const sizeFactor = store.get('sizeFactor')
 

@@ -2,16 +2,12 @@ import { pluginBundle } from '@freesewing/plugin-bundle'
 import { cheek } from './cheek.mjs'
 import { head1 } from './head1.mjs'
 import { uppermouth } from './uppermouth.mjs'
-import { convertPoints } from './pointsUtil.mjs'
 
 function draftLowermouth({
-  options,
   Point,
   Path,
   points,
   paths,
-  Snippet,
-  snippets,
   complete,
   sa,
   store,
@@ -19,7 +15,6 @@ function draftLowermouth({
   macro,
   part,
 }) {
-  console.log('lowermouth')
   const textAttribute = 'text-xs center'
   const sizeFactor = store.get('sizeFactor')
 
@@ -138,14 +133,14 @@ function draftLowermouth({
     .addClass('hidden')
 
   paths.front1 = new Path()
-    .move(points.mPoint1)
-    .curve_(points.mPointM1Cp1, points.pointM1)
+    .move(points.pointM1)
+    .curve_(points.pointM1Cp1, points.point1)
     .setText('(16)', textAttribute)
     .addClass('hidden')
 
   paths.front2 = new Path()
-    .move(points.pointM1)
-    .curve_(points.pointM1Cp1, points.point1)
+    .move(points.mPoint1)
+    .curve_(points.mPointM1Cp1, points.pointM1)
     .setText('(16)', textAttribute)
     .addClass('hidden')
 
@@ -156,8 +151,8 @@ function draftLowermouth({
     .join(paths.upperJaw1)
     .join(paths.backOfUpperJaw)
     .join(paths.upperJaw2)
-    .join(paths.front1)
     .join(paths.front2)
+    .join(paths.front1)
     .close()
 
   paths.backOfMouth = new Path()
@@ -192,10 +187,11 @@ function draftLowermouth({
     // snippets.logo = new Snippet('logo', points.logo)
     // points.text = points.logo
     //   .shift(-90, w / 8)
-    //   .attr('data-text', 'hello')
-    //   .attr('data-text-class', 'center')
 
     if (sa) {
+      // Doing a trim() here has a weird issue. Part of the SA, related to
+      // the point1->point2 line, will disappear.
+      // paths.sa = paths.seam.offset(sa).trim().attr('class', 'fabric sa')
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
   }

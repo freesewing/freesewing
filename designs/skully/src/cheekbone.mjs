@@ -11,7 +11,6 @@ function draftCheekbone({
   store,
   paperless,
   macro,
-  utils,
   part,
 }) {
   console.log('cheekbone')
@@ -62,9 +61,6 @@ function draftCheekbone({
 
   // Paperless?
   if (paperless) {
-    const bb = paths.seam.bbox()
-    const minY = bb.topLeft.y
-
     points.pointY = paths.seam.edge('top')
 
     macro('hd', {
@@ -83,11 +79,6 @@ function draftCheekbone({
       y: points.pointY.y - sa - 15,
     })
 
-    // macro('vd', {
-    //   from: points.pointY,
-    //   to: points.point1,
-    //   x: points.point1.x + sa + 15,
-    // })
     macro('vd', {
       from: points.point1,
       to: points.point0,

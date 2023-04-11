@@ -1,5 +1,4 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
-import { convertPoints } from './pointsUtil.mjs'
 
 function draftCheek({
   options,
@@ -20,7 +19,7 @@ function draftCheek({
   console.log('cheek')
   const textAttribute = 'text-xs center'
 
-  let sizeFactor = ((measurements?.head || 596) / 929.5) * options.size * 2
+  const sizeFactor = ((measurements?.head || 596) / 929.5) * options.size * 2
   store.set('sizeFactor', sizeFactor)
 
   points.point0 = new Point(0, 0)
@@ -53,7 +52,7 @@ function draftCheek({
     .curve(points.point6Cp2, points.point5Cp1, points.point5)
     .shiftAlong(65 * sizeFactor)
 
-  var sp = new Path()
+  const sp = new Path()
     .move(points.point5)
     .curve(points.point5Cp1, points.point6Cp2, points.point6)
     .split(points.point5a)
@@ -91,9 +90,6 @@ function draftCheek({
 
   store.set('templeToJaw', points.point5.dist(points.point5a))
   store.set('upperJaw', paths.upperJaw.length())
-
-  console.log({ sp: sp })
-  console.log({ points: JSON.parse(JSON.stringify(points)) })
 
   paths.seam1 = new Path()
     .move(points.point9)
@@ -134,7 +130,6 @@ function draftCheek({
     .join(paths.eyeBottom)
     .join(paths.seam1)
     .close()
-  // .attr('class', 'fabric')
 
   store.set('templeWidth', points.point6.dist(points.point7))
   store.set('noseBridgeWidth', points.point0.dist(points.point9))
@@ -143,10 +138,6 @@ function draftCheek({
   store.set('eyeBottom', paths.eyeBottom.length())
   store.set('noseSide', paths.nose.length())
   store.set('noseHeight', points.point1.dist(points.point2))
-
-  // console.log({ points: JSON.parse(JSON.stringify(points)) })
-  // console.log({ paths: JSON.parse(JSON.stringify(paths)) })
-  // convertPoints(points)
 
   // Complete?
   if (complete) {
@@ -177,16 +168,107 @@ function draftCheek({
 
   // Paperless?
   if (paperless) {
-    // macro('hd', {
-    //   from: points.bottomLeft,
-    //   to: points.bottomRight,
-    //   y: points.bottomLeft.y + sa + 15,
-    // })
-    // macro('vd', {
-    //   from: points.bottomRight,
-    //   to: points.topRight,
-    //   x: points.topRight.x + sa + 15,
-    // })
+    points.noseX = paths.nose.edge('right')
+    points.eyeBottomY = paths.eyeBottom.edge('bottom')
+    points.upperJaw = paths.upperJaw.shiftFractionAlong(0.42)
+    console.log({ uj: points.upperJaw, p6: points.point6 })
+
+    macro('hd', {
+      from: points.noseX,
+      to: points.point4,
+      y: points.noseX.y + 5,
+    })
+    macro('hd', {
+      from: points.point6,
+      to: points.point5,
+      y: points.point6.y - sa - 15,
+    })
+    macro('hd', {
+      from: points.point6,
+      to: points.point5a,
+      y: points.point6.y - sa - 5,
+    })
+    macro('hd', {
+      from: points.point7,
+      to: points.point5,
+      y: points.point6.y - sa - 25,
+    })
+    macro('hd', {
+      from: points.point3,
+      to: points.point7,
+      y: points.point6.y - sa - 35,
+    })
+    macro('hd', {
+      from: points.point2,
+      to: points.point7,
+      y: points.point6.y - sa - 25,
+    })
+    macro('hd', {
+      from: points.point1,
+      to: points.point7,
+      y: points.point6.y - sa - 15,
+    })
+    macro('hd', {
+      from: points.point0,
+      to: points.point7,
+      y: points.point6.y - sa - 5,
+    })
+    macro('hd', {
+      from: points.point9,
+      to: points.point7,
+      y: points.point6.y - sa + 5,
+    })
+    macro('hd', {
+      from: points.point3,
+      to: points.point4,
+      y: points.point4.y + sa + 15,
+    })
+    macro('hd', {
+      from: points.point4,
+      to: points.point5,
+      y: points.point4.y + sa + 15,
+    })
+
+    macro('vd', {
+      from: points.eyeBottomY,
+      to: points.point4,
+      x: points.point4.x,
+    })
+    macro('vd', {
+      from: points.point6,
+      to: points.point5a,
+      x: points.point5.x + sa + 10,
+    })
+    macro('vd', {
+      from: points.point6,
+      to: points.point5,
+      x: points.point5.x + sa + 20,
+    })
+    macro('vd', {
+      from: points.point5,
+      to: points.point4,
+      x: points.point5.x + sa + 20,
+    })
+    macro('vd', {
+      from: points.point3,
+      to: points.point2,
+      x: points.point2.x - sa - 10,
+    })
+    macro('vd', {
+      from: points.point3,
+      to: points.point1,
+      x: points.point2.x - sa - 20,
+    })
+    macro('vd', {
+      from: points.point1,
+      to: points.point0,
+      x: points.point2.x - sa - 20,
+    })
+    macro('vd', {
+      from: points.point6,
+      to: points.upperJaw,
+      x: points.point6.x,
+    })
   }
 
   return part

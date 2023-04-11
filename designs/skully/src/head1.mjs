@@ -1,10 +1,8 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
-import { convertPoints } from './pointsUtil.mjs'
 import { cheek } from './cheek.mjs'
 import { forehead } from './forehead.mjs'
 
 function draftHead1({
-  options,
   Point,
   Path,
   points,
@@ -17,9 +15,7 @@ function draftHead1({
   paperless,
   macro,
   part,
-  utils,
 }) {
-  console.log('head1')
   const textAttribute = 'text-xs center'
   const sizeFactor = store.get('sizeFactor')
 

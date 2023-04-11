@@ -1,15 +1,11 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { cheek } from './cheek.mjs'
-import { convertPoints } from './pointsUtil.mjs'
 
 function draftUppermouth({
-  options,
   Point,
   Path,
   points,
   paths,
-  Snippet,
-  snippets,
   complete,
   sa,
   store,
@@ -79,8 +75,6 @@ function draftUppermouth({
     // snippets.logo = new Snippet('logo', points.logo)
     // points.text = points.logo
     //   .shift(-90, w / 8)
-    //   .attr('data-text', 'hello')
-    //   .attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')

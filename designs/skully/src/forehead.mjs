@@ -1,9 +1,7 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { cheek } from './cheek.mjs'
-import { convertPoints } from './pointsUtil.mjs'
 
 function draftForehead({
-  options,
   Point,
   Path,
   points,
@@ -136,8 +134,6 @@ function draftForehead({
     // snippets.logo = new Snippet('logo', points.logo)
     // points.text = points.logo
     //   .shift(-90, w / 8)
-    //   .attr('data-text', 'hello')
-    //   .attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).trim().attr('class', 'fabric sa')
@@ -146,16 +142,99 @@ function draftForehead({
 
   // Paperless?
   if (paperless) {
-    // macro('hd', {
-    //   from: points.bottomLeft,
-    //   to: points.bottomRight,
-    //   y: points.bottomLeft.y + sa + 15,
-    // })
-    // macro('vd', {
-    //   from: points.bottomRight,
-    //   to: points.topRight,
-    //   x: points.topRight.x + sa + 15,
-    // })
+    points.pointX = paths.seam.edge('left')
+
+    macro('hd', {
+      from: points.point0,
+      to: points.point9,
+      y: points.point0.y - sa - 15,
+    })
+    macro('hd', {
+      from: points.pointX,
+      to: points.point0,
+      y: points.point0.y - sa - 15,
+    })
+    macro('hd', {
+      from: points.point6,
+      to: points.point8,
+      y: points.point6.y + sa + 5,
+    })
+    macro('hd', {
+      from: points.point6,
+      to: points.point9,
+      y: points.point6.y + sa + 15,
+    })
+    macro('hd', {
+      from: points.point5,
+      to: points.point6,
+      y: points.point6.y + sa + 5,
+    })
+    macro('hd', {
+      from: points.point4,
+      to: points.point6,
+      y: points.point6.y + sa + 15,
+    })
+    macro('hd', {
+      from: points.point2,
+      to: points.point6,
+      y: points.point6.y + sa + 25,
+    })
+    macro('hd', {
+      from: points.point1,
+      to: points.point6,
+      y: points.point6.y + sa + 35,
+    })
+    macro('hd', {
+      from: points.pointX,
+      to: points.point6,
+      y: points.point6.y + sa + 45,
+    })
+    macro('hd', {
+      from: points.point0,
+      to: points.point7,
+      y: points.point7.y,
+    })
+
+    macro('vd', {
+      from: points.point5,
+      to: points.point0,
+      x: points.pointX.x - sa - 10,
+    })
+    macro('vd', {
+      from: points.point4,
+      to: points.point0,
+      x: points.pointX.x - sa - 20,
+    })
+    macro('vd', {
+      from: points.point1,
+      to: points.point0,
+      x: points.pointX.x - sa - 30,
+    })
+    macro('vd', {
+      from: points.point2,
+      to: points.point0,
+      x: points.pointX.x - sa - 40,
+    })
+    macro('vd', {
+      from: points.point0,
+      to: points.point9,
+      x: points.point9.x + sa + 10,
+    })
+    macro('vd', {
+      from: points.point0,
+      to: points.point8,
+      x: points.point9.x + sa + 20,
+    })
+    macro('vd', {
+      from: points.point0,
+      to: points.point6,
+      x: points.point9.x + sa + 30,
+    })
+    macro('vd', {
+      from: points.point0,
+      to: points.point7,
+      x: points.point0.x,
+    })
   }
 
   return part

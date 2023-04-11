@@ -1,25 +1,19 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { cheek } from './cheek.mjs'
 import { lowermouth } from './lowermouth.mjs'
-import { convertPoints } from './pointsUtil.mjs'
 
 function draftLowerjaw({
-  options,
   Point,
   Path,
   points,
   paths,
-  Snippet,
-  snippets,
   complete,
   sa,
   store,
   paperless,
   macro,
-  utils,
   part,
 }) {
-  console.log('lowerjaw')
   const textAttribute = 'text-xs center'
   const sizeFactor = store.get('sizeFactor')
 
@@ -30,7 +24,7 @@ function draftLowerjaw({
   points.point4 = points.point0.shift(276.6440430845334, 116.75813357963548 * sizeFactor)
   points.point5 = points.point0.shift(264.48800048134507, 50.78381912578058 * sizeFactor)
 
-  let mouthTop = store.get('mouthTop')
+  const mouthTop = store.get('mouthTop')
 
   points.point0 = new Point(0, 0)
   points.point0Cp2 = points.point0.shift(354.9481781658739, 16.659715303689914 * sizeFactor)

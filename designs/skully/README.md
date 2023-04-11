@@ -48,7 +48,7 @@
 
 # @freesewing/skully
 
-A FreeSewing pattern that needs a description
+A FreeSewing pattern for skully, our logo, a plushy toy
 
 
 

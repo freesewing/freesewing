@@ -2,7 +2,6 @@ import { pluginBundle } from '@freesewing/plugin-bundle'
 import { cheek } from './cheek.mjs'
 import { eye } from './eye.mjs'
 import { forehead } from './forehead.mjs'
-import { convertPoints } from './pointsUtil.mjs'
 
 function draftNose({
   Point,
@@ -15,17 +14,14 @@ function draftNose({
   sa,
   store,
   paperless,
-  utils,
   macro,
   part,
 }) {
   console.log('nose')
   const textAttribute = 'text-xs center'
 
-  var noseSide = store.get('noseSide')
-  var noseHeight = store.get('noseHeight')
-
-  const c = 0.55191502449351
+  const noseSide = store.get('noseSide')
+  const noseHeight = store.get('noseHeight')
 
   points.point0 = new Point(0, 0)
   points.point2 = points.point0.shift(90, noseHeight)
@@ -84,6 +80,15 @@ function draftNose({
 
   // Complete?
   if (complete) {
+    points.title = points.point0.shiftFractionTowards(points.point3, 0.5)
+    macro('title', {
+      nr: 12,
+      at: points.title,
+      scale: 0.15,
+      rotation: 325,
+      title: 'nose',
+    })
+
     snippets.n1 = new Snippet('bnotch', points.point0)
     snippets.n2 = new Snippet('notch', points.point1)
     snippets.n3 = new Snippet('notch', points.point2)
@@ -108,7 +113,8 @@ function draftNose({
     //   .shift(-90, w / 8)
 
     if (sa) {
-      // paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+      // Doing a trim() on the SA will remove the wrong part of the SA ;-)
+      // paths.sa = paths.seam.offset(sa).trim().attr('class', 'fabric sa')
       const pathSA1 = new Path()
         .move(points.point0)
         .join(paths.p1)

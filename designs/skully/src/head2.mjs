@@ -1,31 +1,14 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
-import { convertPoints } from './pointsUtil.mjs'
 import { cheek } from './cheek.mjs'
 import { head1 } from './head1.mjs'
 
-function draftHead2({
-  options,
-  Point,
-  Path,
-  points,
-  paths,
-  Snippet,
-  snippets,
-  complete,
-  sa,
-  store,
-  utils,
-  paperless,
-  macro,
-  part,
-}) {
+function draftHead2({ Point, Path, points, paths, complete, sa, store, paperless, macro, part }) {
   console.log('head2')
   const textAttribute = 'text-xs center'
   const sizeFactor = store.get('sizeFactor')
 
   points.point0 = new Point(0, 0)
   points.point0Cp2 = points.point0.shift(0, 15 * sizeFactor)
-  // points.point0Cp1 = points.point0.shift(269.3443191225503, 29.448928299685203 * sizeFactor)
   points.point1 = points.point0.shift(257.7901473243395, 66.12988849226953 * sizeFactor)
   points.point1Cp1 = points.point1.shift(270, 30.242724116719366 * sizeFactor)
   points.point1Cp2 = points.point1.shift(90, 18.83053830882166 * sizeFactor)
@@ -35,7 +18,7 @@ function draftHead2({
   points.point4 = points.point0.shift(340.927384878832, 52.16879559660159 * sizeFactor)
   points.point4Cp2 = points.point4.shift(274.04106104609286, 50.57373626695976 * sizeFactor)
 
-  let secondSeam = store.get('secondSeam')
+  const secondSeam = store.get('secondSeam')
 
   let iterations = 0
   var p
@@ -44,14 +27,12 @@ function draftHead2({
 
     p = new Path()
       .move(points.point0)
-      // .curve(points.point0Cp1, points.point1Cp2, points.point1)
       ._curve(points.point1Cp2, points.point1)
       .curve_(points.point1Cp1, points.point2)
 
     if (secondSeam - p.length() > 0.1 || secondSeam - p.length() < -0.1) {
       points.point0 = points.point0.shift(90, secondSeam - p.length())
       points.point1 = points.point1.shift(90, secondSeam - p.length())
-      // points.point0Cp1 = points.point0.shift(269.3443191225503, 29.448928299685203 * sizeFactor)
       points.point1Cp1 = points.point1.shift(270, 30.242724116719366 * sizeFactor)
       points.point1Cp2 = points.point1.shift(90, 18.83053830882166 * sizeFactor)
       points.point0Cp2 = points.point0.shift(0, 15 * sizeFactor)
@@ -61,13 +42,11 @@ function draftHead2({
   if (iterations >= 100) {
     log.error('Something is not quite right here!')
   }
-  console.log({ iterations: iterations })
 
   points.dartPoint0 = new Path()
     .move(points.point3)
     .curve(points.point3Cp1, points.point4Cp2, points.point4)
     .shiftAlong(99.23273836900117 * sizeFactor)
-  // points.dartPoint0Cp1 = points.dartPoint0.clone()
   points.dartPoint1 = points.point0.shift(285.96197961706986, 65.4910471438654 * sizeFactor)
   points.dartPoint1Cp1 = points.dartPoint1.shift(
     354.74216521134053,
@@ -124,7 +103,7 @@ function draftHead2({
 
   // Complete?
   if (complete) {
-    points.title = points.point0.shiftFractionTowards(points.point3, 0.25)
+    points.title = points.dartPoint1.shiftFractionTowards(points.point2, 0.35)
     macro('title', {
       nr: 4,
       at: points.title,

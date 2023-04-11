@@ -1,16 +1,12 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { cheek } from './cheek.mjs'
 import { lowerjaw } from './lowerjaw.mjs'
-import { convertPoints } from './pointsUtil.mjs'
 
 function draftJawfloor({
-  options,
   Point,
   Path,
   points,
   paths,
-  Snippet,
-  snippets,
   complete,
   sa,
   store,
@@ -18,7 +14,6 @@ function draftJawfloor({
   macro,
   part,
 }) {
-  console.log('jawfloor')
   const textAttribute = 'text-xs center'
   const sizeFactor = store.get('sizeFactor')
 
@@ -114,8 +109,6 @@ function draftJawfloor({
     // snippets.logo = new Snippet('logo', points.logo)
     // points.text = points.logo
     //   .shift(-90, w / 8)
-    //   .attr('data-text', 'hello')
-    //   .attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
