@@ -3,15 +3,15 @@ title: "Skully (the logo): Cutting Instructions"
 ---
 
 - **Main fabric**
-  - Cut **2 cheek**
-  - Cut **2 forehead**
-  - Cut **2 head1**
-  - Cut **2 head2**
-  - Cut **2 head3**
-  - Cut **2 cheekbone**
-  - Cut **1 lowermouth**
-  - Cut **1 jawFloor**
-  - Cut **2 eye**
-  - Cut **1 uppermouth**
-  - Cut **2 lowerJaw**
-  - Cut **1 nose**
+  - Cut **2 cheek** parts
+  - Cut **2 forehead** parts
+  - Cut **2 head1** parts
+  - Cut **2 head2** parts
+  - Cut **2 head3** parts
+  - Cut **2 cheekbone** parts
+  - Cut **1 lowermouth** part
+  - Cut **1 jawFloor** part
+  - Cut **2 eye** parts
+  - Cut **1 uppermouth** part
+  - Cut **2 lowerJaw** parts
+  - Cut **1 nose** part
