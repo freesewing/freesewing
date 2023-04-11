@@ -12,6 +12,7 @@ function draftNose({
   snippets,
   complete,
   sa,
+  log,
   store,
   paperless,
   macro,
@@ -41,10 +42,10 @@ function draftNose({
 
   points.point1Cp2 = points.point1.shift(points.point1.angle(points.point2) + 55, noseHeight / 3)
 
-  var iteration = 0
+  var iterations = 0
   var pl
   do {
-    iteration++
+    iterations++
 
     points.point1 = points.point1.rotate(-0.5, points.point2)
     points.point1Cp2 = points.point1Cp2.rotate(-0.5, points.point2)
@@ -55,8 +56,10 @@ function draftNose({
       .setText('nose' + ' (10)', textAttribute)
 
     pl = paths.p1.length()
-    console.log({ i: iteration, pl: pl, noseSide: noseSide })
-  } while (iteration < 100 && pl - noseSide > 1)
+  } while (iterations < 100 && pl - noseSide > 1)
+  if (iterations >= 100) {
+    log.error('Something is not quite right here!')
+  }
 
   points.pMiddle1 = points.point2.shiftFractionTowards(points.point1, 0.5)
 

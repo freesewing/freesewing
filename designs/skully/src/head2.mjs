@@ -2,8 +2,19 @@ import { pluginBundle } from '@freesewing/plugin-bundle'
 import { cheek } from './cheek.mjs'
 import { head1 } from './head1.mjs'
 
-function draftHead2({ Point, Path, points, paths, complete, sa, store, paperless, macro, part }) {
-  console.log('head2')
+function draftHead2({ 
+  Point, 
+  Path, 
+  points, 
+  paths, 
+  complete, 
+  sa, 
+  log,
+  store, 
+  paperless, 
+  macro, 
+  part 
+}) {
   const textAttribute = 'text-xs center'
   const sizeFactor = store.get('sizeFactor')
 
@@ -38,7 +49,6 @@ function draftHead2({ Point, Path, points, paths, complete, sa, store, paperless
       points.point0Cp2 = points.point0.shift(0, 15 * sizeFactor)
     }
   } while (iterations < 100 && (secondSeam - p.length() > 1 || secondSeam - p.length() < -1))
-
   if (iterations >= 100) {
     log.error('Something is not quite right here!')
   }

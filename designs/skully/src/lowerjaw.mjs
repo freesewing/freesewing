@@ -9,6 +9,7 @@ function draftLowerjaw({
   paths,
   complete,
   sa,
+  log,
   store,
   paperless,
   macro,
