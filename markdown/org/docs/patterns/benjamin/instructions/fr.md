@@ -73,11 +73,11 @@ Once you have the tie right side out, make sure you push all the corners and sid
 
 #### Étape 5 : Fermeture
 
-![Closing the bow tie](step15.png)
+![Fermeture du nœud papillon](step15.png)
 
 Now all that is left is closing the litle hole we used to turn the bow tie right side out. You can do this by hand with a slip stitch, or a ladder stitch. Or you can use the machine and stitch right at the edge of the band. Since this will normally be hidden by the collar of your shirt, it will not be all that obvious.
 
-Now give it one last press and admire your work.
+Maintenant donnez-lui un dernier coup de fer et admirez votre travail.
 
 ### Avec ruban d'ajustement
 
@@ -113,18 +113,18 @@ Do this with both parts.
 
 #### Étape 5 : Ajouter les accessoires d'ajustement
 
-Now we need to add the two pieces of hardware that make the bow tie adjustable. The oval looking piece will be attached to the part without the adjustment ribbon. And the piece with the T shaped attachment will go on the part with the ribbon.
+Now we need to add the two pieces of hardware that make the bow tie adjustable. La pièce ovale sera attachée à la pièce sans ruban d'ajustement. And the piece with the T shaped attachment will go on the part with the ribbon.
 
-First do the part without the ribbon. This is because the fabric tail of the ribbon piece will have to go through the oval part before sewing on its hardware. If you would do it in the other sequence, you may not be able to feed it through.
+D'abord faites la partie sans le ruban. This is because the fabric tail of the ribbon piece will have to go through the oval part before sewing on its hardware. Si vous le faisiez dans l'ordre inverse, vous ne pourriez peut-être pas le passer.
 
-To finish the ends, we're going to fold the fabric in three steps:
+Pour terminer les extrémités, nous allons plier le tissu en trois étapes :
 
-![Three steps to fold, one step to sew](step25.png)
+![Trois étapes pour plier, une étape pour coudre](step25.png)
 
-First we fold the side in under an angle. Then we fold the end over by just a small seam allowance, something like 5mm. Then we fold it over again, for about 1cm. Finally we stick the oval ring under this last fold and stitch across.
+Tout d'abord, on plie le côté sous un angle. Then we fold the end over by just a small seam allowance, something like 5mm. Puis nous le plions à nouveau, pour environ 1cm. Enfin on place l'anneau ovale sous ce dernier pli et on coud.
 
 Now feed the ribbon piece through the oval part and finish it the same way.
 
-Hook the T in one of the adjustment holes and your bow tie is done!
+Accrochez le T dans une des boucles d'ajustement et votre nœud papillon est terminé !
 
-![Good job!](finished.gif)
+![Bon travail!](finished.gif)
