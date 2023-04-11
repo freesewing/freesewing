@@ -1,6 +1,6 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { cheek } from './cheek.mjs'
-import { lowermouth } from './lowermouth.mjs'
+import { uppermouth } from './uppermouth.mjs'
 
 function draftLowerjaw({
   Point,
@@ -193,7 +193,7 @@ function draftLowerjaw({
 
 export const lowerjaw = {
   name: 'lowerjaw',
-  after: [cheek, lowermouth],
+  after: [cheek, uppermouth],
   plugins: [pluginBundle],
   draft: draftLowerjaw,
 }

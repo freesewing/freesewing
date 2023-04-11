@@ -83,11 +83,17 @@ function draftJawfloor({
     .setText('jawBottom' + ' (15)', textAttribute)
     .addClass('hidden')
 
+  paths.back = new Path()
+    .move(points.point4)
+    .curve(points.point4, points.point5Cp2, points.point5)
+    .curve(points.mPoint5Cp2, points.mPoint4, points.mPoint4)
+    .setText('21', textAttribute)
+    .addClass('hidden')
+
   paths.seam = new Path()
     .move(points.point6)
     .join(paths.bottomJaw1)
-    .curve(points.point4, points.point5Cp2, points.point5)
-    .curve(points.mPoint5Cp2, points.mPoint4, points.mPoint4)
+    .join(paths.back)
     .join(paths.bottomJaw2)
     .close()
 
