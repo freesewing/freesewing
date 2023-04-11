@@ -8,7 +8,7 @@ This plush toy is best made from a felt type fabrics. This will provide extra ri
 
 ## Stuffing
 
-Since this is a plush toy, it will need to be stuffed with material. Most of the time you'll want to use polyester fiberfill (polyfill), but if you have a lot of fabric scraps, you can use shredded scrap fabric. However this may be heavier and less soft than fiberfill. It's also worth thinking about whether your Hi may be at risk of getting dirty, or want to go for a swim, as not all stuffing options are washable.
+Since this is a plush toy, it will need to be stuffed with material. Most of the time you'll want to use polyester fiberfill (polyfill), but if you have a lot of fabric scraps, you can use shredded scrap fabric. However this may be heavier and less soft than fiberfill. It's also worth thinking about whether your Skully may be at risk of getting dirty as not all stuffing options are washable.
 
 ## Hair
 
