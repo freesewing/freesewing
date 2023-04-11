@@ -16,5 +16,4 @@ Skully needs hair. Embroidery floss works very well, and can be had in all color
 
 ## Needle
 
-Skully has traded his sword for a needle. A needle this size is mostly sold as upholstery needles. This will come
-in handy when doing some of the touch-ups at the end of the construction.
+Skully has traded his sword for a needle. A needle this size is mostly sold as upholstery needles. This will come in handy when doing some of the touch-ups at the end of the construction.
