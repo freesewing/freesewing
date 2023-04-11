@@ -12,8 +12,8 @@ If not using seamless follow the default list, If using seamless follow the seam
 
 - (If default) Cut **1 skirt** part on the fold.
 - (If seamless) Cut **1 skirt** part on double fold.
-- (If default) Cut **2 waistband** parts.
-- (If seamless) Cut **1 waistband** part.
+- (If straight) Cut **1 waistband** part.
+- (If curved) Cut **2 waistband** parts.
 
 **Lining Fabric (Optional)**
 
@@ -22,5 +22,4 @@ If not using seamless follow the default list, If using seamless follow the seam
 
 **Interfacing**
 
-- (If default) Cut **2 waistband** parts.
-- (If seamless) Cut **1 waistband** part.
+- Cut **1 waistband** part.
