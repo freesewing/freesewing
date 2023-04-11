@@ -41,7 +41,7 @@ If you do not wish to create additional seams but still wish to have pockets, yo
 
 Skip this step if:
 - You are including the zipper in the waistband.
-- You are making a seamless version
+- You are making a seamless version.
 
 </Note>
 
