@@ -61,7 +61,7 @@ Skip this step if:
 - Interface/stiffen half the waistband part lengthwise. Or interface/stiffen one of the curved waistband parts.
 - Press under the seam allowance on the long edge of the waistband that is not interfaced. Trim. _Baste_ the fold in place if needed.
 - With _good sides together_ sew the interfaced waistband/side of the waistband to the skirt. Gather the skirt down to the waistband if needed.
-- If curved waistband sew the non-interfaced part to the interfaced part. Trim and clip seam and press the non-interfaced part up and away from the skirt.
+- If using the curved waistband sew the non-interfaced part to the interfaced part. Trim and clip seam and press the non-interfaced part up and away from the skirt.
 
 There will be some overhangs:
 
