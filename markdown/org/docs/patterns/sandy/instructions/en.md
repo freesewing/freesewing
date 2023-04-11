@@ -72,12 +72,12 @@ There will be some overhangs:
 
 __Inserting Zipper in Waistband__
 - If inserting a zipper into the waistband now is the time to do so, attach the zipper from the waistband fold line down. Or from seam-line down for curved waistband.
-- _Slipstich_ or _Whipstitch_ the lining to the zipper at this point if you have not treated the lining and skirt as one at the opening.
+- _Slipstitch_ or _Whipstitch_ the lining to the zipper at this point if you have not treated the lining and skirt as one at the opening.
 - Press under overhangs.  
 - Press the waistband _wrong sides together_ along fold-line. Or along seam-line for curved waistband.
-- Slipstich_ or _Whipstitch_ the overhang edges to the zipper.
-- _Egdestitch_ the waistband in place.
-- Alternatively, _Slipstich_ or _Whipstitch_ the waistband in place on the inside.
+- Slipstitch_ or _Whipstitch_ the overhang edges to the zipper.
+- _Edgestitch_ the waistband in place.
+- Alternatively, _Slipstitch_ or _Whipstitch_ the waistband in place on the inside.
 
 __Other closures__ 
 - Press the waistband _good sides together_ along fold-line. Or along seam-line for curved waistband.
