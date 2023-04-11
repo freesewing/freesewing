@@ -18,4 +18,4 @@ Veuillez prendre note de la valeur par défaut et utiliser cela comme base pour 
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_sleevelengthbonus_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_sleevelengthbonus_sample.svg "Effet de cette option sur le modèle")
