@@ -6,17 +6,17 @@ title: "Benjamin bow tie: Sewing Instructions"
 
 ### Précision
 
-Since a bow tie is a rather small item, precission with sewing is key to a good result. Any slight difference between the upper and lower part of the bow will stand out. To get a great result I found it very helpful to trace the actual seam lines onto the interfacing and follow that while sewing.
+Comme un nœud papillon est un objet assez petit, la précision de la couture est la clé d'un bon résultat. Toute légère différence entre la partie supérieure et la partie inférieure du nœud se verra. To get a great result I found it very helpful to trace the actual seam lines onto the interfacing and follow that while sewing.
 
 ### Pressez judicieusement
 
-Later in the construction steps, you will be asked to press your fabric. Please be careful that you are not using too much heat on a delicate fabric that can't handle it.
+Plus loin dans les étapes de construction, on vous demandera de repasser votre tissu. Please be careful that you are not using too much heat on a delicate fabric that can't handle it.
 
-It's a good idea to try pressing some fabric scraps before you start. This will allow you to figure out what is a good heat setting for the fabric you are using.
+C'est une bonne idée de faire des essais sur quelques morceaux de tissu avant de commencer. This will allow you to figure out what is a good heat setting for the fabric you are using.
 
 ### Déterminez le sens du tissu
 
-This pattern includes a grain line. This grain line is mostly there to be used with the interfacing. Since each pattern piece is interfaced, the grain line of the fabric itself is not so important. You can even change this from the standard for more informal impressions.
+Ce patron comprend un sens de droit fil. This grain line is mostly there to be used with the interfacing. Since each pattern piece is interfaced, the grain line of the fabric itself is not so important. You can even change this from the standard for more informal impressions.
 
 <Note>
 
@@ -29,7 +29,7 @@ page on [Fabric grain](/docs/sewing/fabric-grain).
 
 This pattern allows you to make a bow tie that is the right length for a certain neck size. It can also make one that has a ribbon and hardware that makes the bow tie adjustable to different neck sizes. This is useful if not all of your shirts have the same neck measurements, or if you sometimes like shirts with more ease in the neck.
 
-These ribbons can be found in the better haberdasheries or can be ordered online.
+Ces rubans peuvent être trouvés dans les meilleures merceries ou peuvent être commandés en ligne.
 
 ### Marge de couture
 
