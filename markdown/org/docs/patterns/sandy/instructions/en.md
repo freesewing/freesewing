@@ -58,9 +58,10 @@ Skip this step if:
 
 ### Closures
 
-- Interface/stiffen half the waistband part lengthwise.
+- Interface/stiffen half the waistband part lengthwise. Or interface/stiffen one of the curved waistband parts.
 - Press under the seam allowance on the long edge of the waistband that is not interfaced. Trim. _Baste_ the fold in place if needed.
-- With _good sides together_ sew the interfaced side of the waistband to the skirt. Gather the skrit down to the waistband if needed.
+- With _good sides together_ sew the interfaced waistband/side of the waistband to the skirt. Gather the skrit down to the waistband if needed.
+- If curved waistband sew the non-interfaced part to the interfaced part. Trim and clip seam and press the non-interfaced part up and away from the skirt.
 
 There will be some overhangs:
 
@@ -70,16 +71,16 @@ There will be some overhangs:
 - If using a zipper in the waistband the greater overhang will need to be trimmed to the seam allowance.
 
 __Zipper in Waistband__
-- If inserting a zipper into the waistband now is the time to do so, attach the zipper from the waistband fold line down.
+- If inserting a zipper into the waistband now is the time to do so, attach the zipper from the waistband fold line down. Or for from seam-line down for curved waistband.
 - _Slipstich_ or _Whipstitch_ the lining to the zipper at this point if you have not treated the lining and skirt as one at the opening.
-- Press under overhangs.
-- Press the waistband _wrong sides together_ along fold-line.
+- Press under overhangs.  
+- Press the waistband _wrong sides together_ along fold-line. Or along seam-line for curved waistband.
 - Slipstich_ or _Whipstitch_ the overhang edges to the zipper.
 - _Egdestitch_ the waistband in place.
 - Alternatively, _Slipstich_ or _Whipstitch_ the waistband in place on the inside.
 
-__Other closures__
-- Press the waistband _good sides together_ along fold-line.
+__Other closures__ 
+- Press the waistband _good sides together_ along fold-line. Or along seam-line for curved waistband.
 - Sew the overhangs with your seam allowance.
 - Turn the waistband out and to the inside, Press.
 - _Egdestitch_ the waistband in place, this should also close the gap of the over-lap.
