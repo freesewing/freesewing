@@ -6,4 +6,4 @@ Ce réglage lève la taille dans le dos. Notre tour de taille ne s'assied pas ho
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](waralee_backraise_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](waralee_backraise_sample.svg "Effet de cette option sur le modèle")
