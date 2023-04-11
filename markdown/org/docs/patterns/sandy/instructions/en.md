@@ -89,11 +89,12 @@ __Other closures__
 
 ### Seamless
 
-- With _good sides together_ sew the waistband in half along the short seams, leaving a gap for the elastic that will be on the inside.
+- If curved waistband with _good sides together_ sew the two waistbands together along the shortest curved edge. Press away from one another, Trim and clip the seam.
+- With _good sides together_ sew the waistband together along the short seams, leaving a gap for the elastic that will be on the inside.
 - Press under the seam allowance on the long edge of the waistband that is intended to be on the inside.
 - With _good sides together_ attach the waistband to the skirt along the unpressed seam. Trim seam.
 - Press waistband and seam allowance up away from skirt.
-- Press the waistband to the inside along the fold-line.
+- Press the waistband to the inside along the fold-line/seam-line.
 - _Edgestitch_ the waistband in place.
 - Alternatively you can _Slipstitch_ or _Whipstitch_ the waistband in place on the inside.
 - Cut the elastic to your waist.
