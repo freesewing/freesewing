@@ -8,4 +8,4 @@ La longueur du chevauchement entre les extrémités de la ceinture, pour permett
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](sandy_waistbandoverlap_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](sandy_waistbandoverlap_sample.svg "Effet de cette option sur le modèle")
