@@ -2,12 +2,12 @@
 title: "Courbe vers la taille"
 ---
 
-Choose this option to draft Teagan to curve towards your waist before curving towards the hips.
+Choisissez cette option pour que Teagan se courbe vers votre taille avant de se courber vers les hanches.
 
-If waist measurement (plus ease) is smaller than hips (plus ease), this creates an hourglass shape such as found in 'fitted' or 'ladies' T-shirts (as opposed to 'regular' or 'unisex').
+Si le tour de taille (plus l'aisance) est plus petit que le tour de hanches (plus l'aisance), on obtient une forme de sablier, comme celle des T-shirts "ajustés" ou "pour femmes" (par opposition aux T-shirts "normaux" ou "unisexes").
 
 <Note>
-This option can also be used when the waist measurement exceeds the hip measurement, but this results in a non-standard T-shirt shape which may be impossible to put on.
+Cette option peut également être utilisée lorsque le tour de taille dépasse le tour de hanches, mais cela donne une forme de T-shirt non standard qu'il peut être impossible d'enfiler.
 </Note>
 
 ## Effet de cette option sur le modèle
