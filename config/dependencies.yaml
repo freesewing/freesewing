@@ -389,7 +389,7 @@ shared:
     'react-markdown': *reactMarkdown
     'react-sizeme': '3.0.2'
     'react-timeago': *reactTimeago
-    'react-zoom-pan-pinch': '3.0.6'
+    'react-zoom-pan-pinch': '3.0.7'
     'rehype-autolink-headings': *rehypeAutolinkHeadings
     'rehype-highlight': *rehypeHighlight
     'remark-smartypants': '2.0.0'
