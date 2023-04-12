@@ -72,9 +72,9 @@ There are two ways to do the bindings. You can use it like double-folded bias bi
 
 ## Step 7: Leg binding
 
-  - Fold the leg binding in two length-wise, wrong sides together, and press.
-  - Hold the ends right sides together, and sew the SA at the ends.
-  - Fold the binding back, wrong sides together.
+  - Fold the leg binding in two length-wise, _wrong sides together_, and press.
+  - Hold the ends _good sides together_, and sew the SA at the ends.
+  - Fold the binding back, _wrong sides together_.
   - Pin the binding to the leg opening, matching the notch to the side seam, and the beginning and end to the snap placket.
   - Sew this binding to the leg opening like you did with the earlier bindings.
 
