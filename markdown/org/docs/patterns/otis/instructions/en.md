@@ -48,7 +48,7 @@ There are two ways to do the bindings. You can use it like double-folded bias bi
 
 ## Step 4: Prepare snap placket
 
-  - (optional) If your fabric is flimsy, or very stretchy, cut a piece of iron-on interfacing the size of the snap placket and iron it in place.
+  - (Optional) If your fabric is flimsy, or very stretchy, cut a piece of iron-on interfacing the size of the snap placket and iron it in place.
   - Press the SA of the snap placket over, and then press the snap placket in two.
   - Sew just along the inner edge on the snap placket.
 
