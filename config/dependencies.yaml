@@ -60,7 +60,7 @@ core:
     'lodash.unset': &_unset '4.5.2'
     'lodash.clonedeep': '^4.5.0'
   dev:
-    'eslint': &eslint '8.37.0'
+    'eslint': &eslint '8.38.0'
     'nyc': '15.1.0'
     'mocha': *mocha
     'chai': *chai
