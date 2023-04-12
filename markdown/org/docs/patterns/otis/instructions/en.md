@@ -30,8 +30,8 @@ There are two ways to do the bindings. You can use it like double-folded bias bi
   - Mark the middle of each of the bindings and of the front and back parts. 
   - Attach the folded binding to the corresponding part, _good sides together_. Make sure you distribute the binding evenly along the edge. You should have three layers pinned together.
   - Sew just shy of the SA. 
-  - Press the binding towards the edge, pressing the SA towards the wrong side.
-  - Sew through the part and the SA underneath, holding the folded SA on the wrong side.
+  - Press the binding towards the edge, pressing the SA towards the _wrong side_.
+  - Sew through the part and the SA underneath, holding the folded SA on the _wrong side_.
 
 ## Step 2: Attach body parts
 
