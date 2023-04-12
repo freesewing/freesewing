@@ -56,7 +56,7 @@ There are two ways to do the bindings. You can use it like double-folded bias bi
 
   <Note>
 
-  You can reinforce the sleeve openings now if you're so inclined. Add some iron interfacing tape to the hem of the sleeve. This will keep the sleeve opening looking nice if you have flimsy or stretchy fabric.
+You can reinforce the sleeve openings now if you're so inclined. Add some iron interfacing tape to the hem of the sleeve. This will keep the sleeve opening looking nice if you have flimsy or stretchy fabric.
 
   </Note>
 
