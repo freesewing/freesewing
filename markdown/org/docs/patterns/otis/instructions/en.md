@@ -63,7 +63,7 @@ There are two ways to do the bindings. You can use it like double-folded bias bi
   - Press the sleeve SA and hem over, so it'll be easier to sew the hem once you've done the next steps.
   - Pin both front and back sides together, wrong sides out, from the leg opening all the way to the arm opening in the sleeve.
   - Sew the whole seam on both sides.
-  - Turn the romper right-side out.
+  - Turn the romper _good sides out_.
 
 ## Step 6: Hem
 
