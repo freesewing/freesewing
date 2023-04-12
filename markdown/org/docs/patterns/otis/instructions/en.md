@@ -44,7 +44,7 @@ There are two ways to do the bindings. You can use it like double-folded bias bi
   - Mark the middle of the should of each sleeve.
   - Pin the sleeve to the two body parts, aligning the middle of the sleeve with the shoulder notch.
   - Distribute the sleeve evenly along the opening.
-  - Sew the pieces together
+  - Sew the pieces together.
 
 ## Step 4: Prepare snap placket
 
