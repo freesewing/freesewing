@@ -16,4 +16,4 @@ Combien voulez-vous que l'ourlet se courbe vers le haut ?
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_hemcurve_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_hemcurve_sample.svg "Effet de cette option sur le modèle")

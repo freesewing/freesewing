@@ -6,10 +6,10 @@ paperless:
   title: Sans papier
   description: Dessine un patron avec toutes les dimensions incluses afin que vous puissiez le transférer sur du tissu ou un autre support sans avoir à imprimer
 sabool:
-  title: Include seam allowance
-  description: Controls whether or not to include seam allowance in your pattern
+  title: Inclure la marge de couture
+  description: Contrôle l'inclusion ou non de la marge de couture dans le patron
 sa:
-  title: Seam allowance size
+  title: Taille de la marge de couture
   description: Contrôle la valeur de la marge de couture incluse dans votre patron
 locale:
   title: Langue

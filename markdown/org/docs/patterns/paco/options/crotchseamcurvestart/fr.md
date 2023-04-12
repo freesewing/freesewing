@@ -6,4 +6,4 @@ Contrôle où la couture de crochage commence à être courbée, ce qui influe s
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](paco_crotchseamcurvestart_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](paco_crotchseamcurvestart_sample.svg "Effet de cette option sur le modèle")

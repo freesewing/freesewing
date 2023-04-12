@@ -17,4 +17,4 @@ Les gens qui ont un bum rond voudront peut-être abaisser cela pour créer un pe
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](titan_crossseamcurvestart_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](titan_crossseamcurvestart_sample.svg "Effet de cette option sur le modèle")
