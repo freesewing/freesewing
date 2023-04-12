@@ -35,6 +35,8 @@ packageJson:
     author: SeaZeeZee (https://github.com/SeaZeeZee)
   lunetius: &starf
     author: Starfetch (https://github.com/starfetch)
+  magde:
+    author: clegganator259 (https://github.com/clegganator259)
   new-design:
     exports: '!'
     bin:

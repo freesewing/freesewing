@@ -22,4 +22,4 @@ making sure it's within the length bonus you have available.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_buttonfreelength_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_buttonfreelength_sample.svg "Effet de cette option sur le modèle")

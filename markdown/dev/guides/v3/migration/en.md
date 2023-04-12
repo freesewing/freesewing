@@ -111,7 +111,7 @@ Apart from being attached at the part level, changes in comparison to v2 include
 - The `name` property is mandatory in v3
 - The `dependencies` property v2 is named `after` in v3
 - The `inject` property in v2 is named `from` in v3
-- The `hide` property in v2 is now one of `hide`, `hideDependencies`, or `hideAll`
+- The `hide` property is [different from v2 and has gained more features](reference/api/part/config/hide) in v3
 - The `plugins` property is new 
 
 ### File and directory structure changes
