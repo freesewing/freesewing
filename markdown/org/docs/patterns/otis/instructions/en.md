@@ -42,7 +42,7 @@ There are two ways to do the bindings. You can use it like double-folded bias bi
 ## Step 3: Attach sleeves
 
   - Mark the middle of the should of each sleeve.
-  - Pin the sleeve to the two body parts, aligning the middle of the sleeve wioth the shoulder notch.
+  - Pin the sleeve to the two body parts, aligning the middle of the sleeve with the shoulder notch.
   - Distribute the sleeve evenly along the opening.
   - Sew the pieces together
 
