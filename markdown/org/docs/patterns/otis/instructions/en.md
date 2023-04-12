@@ -83,6 +83,6 @@ There are two ways to do the bindings. You can use it like double-folded bias bi
   - Mark the position of the snaps along the snap placket, evenly distributed.
   - Install the studs on the _good side_ of the back part, and the sockets on the _wrong side_ of the front part.
 
-## Done!
+## Step 9: Done!
 
 Give it a good press all around and take a moment to enjoy the new romper. This will be the last time it will ever look this nice.
