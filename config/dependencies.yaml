@@ -279,7 +279,7 @@ email:
 
 lab:
   _:
-    '@headlessui/react': &headlessUiReact '1.7.13'
+    '@headlessui/react': &headlessUiReact '1.7.14'
     '@mdx-js/loader': *mdx
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
