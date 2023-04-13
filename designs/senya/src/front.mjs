@@ -17,15 +17,15 @@ function senyaFront({
   log,
   part,
 }) {
-  points.midriffTopCp2 = points.midriffTop.shift(90, points.armhole.dy(points.midriffTop) / 3)
+  points.waistlineCp2 = points.waistline.shift(90, points.armhole.dy(points.waistline) / 3)
 
   // Clone cb (center back) into cf (center front)
-  for (let key of ['Neck', 'Shoulder', 'Armhole', 'MidriffTop']) {
+  for (let key of ['Neck', 'Shoulder', 'Armhole', 'Waistline']) {
     points[`cf${key}`] = points[`cb${key}`].clone()
   }
 
   // Neckline
-  points.cfNeck = new Point(0, options.necklineDepth * measurements.hpsToMidriffTopBack)
+  points.cfNeck = new Point(0, options.necklineDepth * measurements.hpsToUnderbust)
   points.cfNeckCp1 = points.cfNeck.shift(0, points.neck.x * options.necklineBend * 2)
   points.neck = points.hps.shiftFractionTowards(points.shoulder, options.necklineWidth)
   points.neckCp2 = points.neck
@@ -44,10 +44,10 @@ function senyaFront({
 
   // Draw
   paths.bottomAndSide = bottomAndSide(
-    points.cfMidriffTop,
-    points.midriffTop,
+    points.cfWaistline,
+    points.waistline,
     points.armhole,
-    points.midriffTopCp2,
+    points.waistlineCp2,
     Path
   ).hide()
   paths.sleevecap = sleevecap(
@@ -66,11 +66,11 @@ function senyaFront({
     Path
   ).hide()
   paths.seam = new Path()
-    .move(points.cfMidriffTop)
+    .move(points.cfWaistline)
     .join(paths.bottomAndSide)
     .join(paths.sleevecap)
     .join(paths.shoulderAndNeck)
-    .line(points.cfMidriffTop)
+    .line(points.cfWaistline)
     .close()
     .setClass('fabric')
 
@@ -78,17 +78,17 @@ function senyaFront({
   if (complete) {
     macro('cutonfold', {
       from: points.cfNeck,
-      to: points.cfMidriffTop,
+      to: points.cfWaistline,
       grainline: true,
     })
-    points.title = new Point(points.midriffTop.x / 2, points.armhole.y)
+    points.title = new Point(points.waistline.x / 2, points.armhole.y)
     macro('title', { at: points.title, nr: 1, title: 'front' })
     points.logo = points.title.shift(-90, 75)
     snippets.logo = new Snippet('logo', points.logo)
 
     if (sa) {
       paths.sa = new Path()
-        .move(points.cfMidriffTop)
+        .move(points.cfWaistline)
         .join(paths.bottomAndSide.offset(sa))
         .join(paths.sleevecap.offset(sa * 3))
         .join(paths.shoulderAndNeck.offset(sa))
@@ -101,22 +101,22 @@ function senyaFront({
   if (paperless) {
     // These dimensions will be inherited by the back part
     macro('hd', {
-      from: points.cfMidriffTop,
-      to: points.midriffTop,
-      y: points.midriffTop.y + sa + 15,
+      from: points.cfWaistline,
+      to: points.waistline,
+      y: points.waistline.y + sa + 15,
     })
     macro('vd', {
-      from: points.midriffTop,
+      from: points.waistline,
       to: points.armhole,
       x: points.armhole.x + sa + 15,
     })
     macro('vd', {
-      from: points.midriffTop,
+      from: points.waistline,
       to: points.sleeveEnd,
       x: points.armhole.x + sa + 30,
     })
     macro('vd', {
-      from: points.midriffTop,
+      from: points.waistline,
       to: points.neck,
       x: points.armhole.x + sa + 45,
     })
@@ -137,9 +137,9 @@ function senyaFront({
     })
     macro('vd', {
       id: 'frontOnly',
-      from: points.cfMidriffTop,
+      from: points.cfWaistline,
       to: points.cfNeck,
-      x: points.cfMidriffTop.x - sa - 15,
+      x: points.cfWaistline.x - sa - 15,
     })
   }
   log.info('front done!')

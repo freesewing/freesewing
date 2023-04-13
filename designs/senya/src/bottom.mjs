@@ -1,5 +1,6 @@
 import { draftRingSector } from '@freesewing/sandy'
 import { base } from './base.mjs'
+import { waistlineHeight } from './shared.mjs'
 
 function senyaBottom({
   utils,
@@ -17,8 +18,15 @@ function senyaBottom({
   part,
   log,
 }) {
-  let topCircumverence = measurements.midriffTop
-  let fullLength = measurements.midriffTopToHips
+  let topCircumverence = measurements.waist
+  let fullLength =
+    measurements.hpsToWaistBack -
+    waistlineHeight(
+      measurements.hpsToUnderbust,
+      measurements.hpsToWaistBack,
+      options.lowerWaistline
+    ) +
+    measurements.waistToHips
   let angle = 180 * options.circleRatio
   let radiusMidriffTop = topCircumverence / utils.deg2rad(angle) / 2
 
@@ -130,7 +138,7 @@ export const bottom = {
   name: 'senya.bottom',
   from: base,
   hide: 'HIDE_TREE',
-  measurements: ['midriffTopToHips'],
+  measurements: ['waistToHips'],
   options: {
     lengthBonus: { pct: 110, min: 90, max: 120, menu: 'style' },
     circleRatio: { pct: 50, min: 20, max: 100, menu: 'style' },

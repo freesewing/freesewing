@@ -31,11 +31,11 @@ function senyaBack({
     Path
   ).hide()
   paths.seam = new Path()
-    .move(points.cfMidriffTop)
+    .move(points.cfWaistline)
     .join(paths.bottomAndSide)
     .join(paths.sleevecap)
     .join(paths.shoulderAndNeck)
-    .line(points.cfMidriffTop)
+    .line(points.cfWaistline)
     .close()
     .setClass('fabric')
 
@@ -43,7 +43,7 @@ function senyaBack({
   if (complete) {
     macro('cutonfold', {
       from: points.cfNeck,
-      to: points.cfMidriffTop,
+      to: points.cfWaistline,
       grainline: true,
     })
 
@@ -53,7 +53,7 @@ function senyaBack({
 
     if (sa) {
       paths.sa = new Path()
-        .move(points.cfMidriffTop)
+        .move(points.cfWaistline)
         .join(paths.bottomAndSide.offset(sa))
         .join(paths.sleevecap.offset(sa * 3))
         .join(paths.shoulderAndNeck.offset(sa))
@@ -67,10 +67,10 @@ function senyaBack({
     // Remove dimensions that are front only
     macro('rmd', { ids: ['frontOnly'] })
     macro('vd', {
-      id: 'backMidriffTop',
-      from: points.cbMidriffTop,
+      id: 'backWaistline',
+      from: points.cbWaistline,
       to: points.cbNeck,
-      x: points.cbMidriffTop.x - sa - 15,
+      x: points.cbWaistline.x - sa - 15,
     })
   }
   log.info('back done!')

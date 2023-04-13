@@ -1,5 +1,6 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { withCondition as bustPlugin } from '@freesewing/plugin-bust'
+import { waistlineHeight } from './shared.mjs'
 
 function infinitelyHigh(xCoordinate, Point) {
   return new Point(xCoordinate, -100)
@@ -27,11 +28,18 @@ function pointAtX(x, point, Point) {
 function centerBack(measurements, options, Point) {
   var hps = new Point(0, 0)
   var neck = new Point(0, options.backNeckCutout * measurements.neck)
-  var midriffTop = new Point(0, measurements.hpsToMidriffTopBack)
+  var waistline = new Point(
+    0,
+    waistlineHeight(
+      measurements.hpsToUnderbust,
+      measurements.hpsToWaistBack,
+      options.lowerWaistline
+    )
+  )
   return {
     hps,
     neck,
-    midriffTop,
+    waistline,
   }
 }
 
@@ -114,7 +122,7 @@ function draftSenyaBase({
   let centerBackPoint = centerBack(measurements, options, Point)
   points.cbHps = centerBackPoint.hps
   points.cbNeck = centerBackPoint.neck
-  points.cbMidriffTop = centerBackPoint.midriffTop
+  points.cbWaistline = centerBackPoint.waistline
 
   // Shoulder line
   points.neck = neckPoint(measurements, options, Point)
@@ -140,12 +148,10 @@ function draftSenyaBase({
   // Side back (cb) vertical axis
   let chestWidth = halfwidth(measurements.chest, options.chestEase)
   points.armhole = pointAtX(chestWidth, points.cbArmhole, Point)
-  let midriffTopWidth = measurements.midriffTop / 4
-  points.midriffTop = pointAtX(midriffTopWidth, points.cbMidriffTop, Point)
+  let waistlineWidth = measurements.underbust / 4
+  points.waistline = pointAtX(waistlineWidth, points.cbWaistline, Point)
 
   // Neck opening (back)
-  // timorl: I should prolly figure out what this actually does, huh; suspicion -- this whole operation tries to make a natural neck curve
-  // also, this should get a function if I ever figure this out
   let weirdNeckPoint = points.neck.shiftTowards(points.shoulder, 10).rotate(-90, points.neck)
   points.neckCp2 = utils.beamIntersectsY(points.neck, weirdNeckPoint, points.cbNeck.y)
 
@@ -165,7 +171,7 @@ function draftSenyaBase({
   points.neckCp2Front = collarPoints.cp2Front
 
   // Anchor point for sampling
-  points.gridAnchor = points.cbMidriffTop
+  points.gridAnchor = points.cbWaistline
 
   // Add points needed for the mirrored front&back neck/armhole path
   macro('mirror', {
@@ -189,11 +195,12 @@ export const base = {
   measurements: [
     'biceps',
     'chest',
-    'hpsToMidriffTopBack',
+    'hpsToUnderbust',
+    'hpsToWaistBack',
     'neck',
     'shoulderToShoulder',
     'shoulderSlope',
-    'midriffTop',
+    'underbust',
   ],
   options: {
     // Static
@@ -205,6 +212,7 @@ export const base = {
     // Fit
     chestEase: { pct: 12, min: 5, max: 25, menu: 'fit' },
     backNeckCutout: { pct: 8, min: 4, max: 12, menu: 'fit' },
+    lowerWaistline: { pct: 10, min: 0, max: 20, menu: 'fit' },
     // Advanced
     armholeDepthFactor: { pct: 55, min: 50, max: 70, menu: 'advanced' },
   },
