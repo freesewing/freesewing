@@ -100,48 +100,7 @@ function draftLilyBack({
       .rotate(options.crossSeamCurveAngle, points.fork)
   }
 
-  // majority of points re-used from titan
-
-/*   // Let's get to work
-  points.waistX = new Point(-1 * measurements.waistBackArc * (1 + options.waistEase), 0)
-  points.upperLegY = new Point(0, measurements.waistToUpperLeg)
-  points.seatX = new Point(-1 * measurements.seatBackArc * (1 + options.seatEase), 0)
-  points.seatY = new Point(0, measurements.waistToSeat)
-  points.seatOut = points.seatY
-  points.cbSeat = new Point(points.seatX.x, points.seatY.y)
-
-  // Determine fork location
-  points.fork = new Point(
-    measurements.seatBackArc * (1 + options.seatEase) * -1.25,
-    points.upperLegY.y * (1 + options.crotchDrop)
-  )
-
-  // Grainline location, map out center of knee and floor
-  points.grainlineTop = points.upperLegY.shiftFractionTowards(
-    points.fork,
-    options.grainlinePosition
-  )
-  points.knee = new Point(points.grainlineTop.x, measurements.waistToKnee)
-  points.floor = new Point(
-    points.grainlineTop.x,
-    measurements.waistToFloor * (1 + options.lengthBonus)
-  )
-  points.grainlineBottom = points.floor
-
-  // Figure out width at the knee
-  let kneeTotal = measurements.knee * (1 + options.kneeEase)
-  if (!options.fitKnee) {
-    // Based the knee width on the seat, unless that ends up being less
-    let altKneeTotal = measurements.seatFront
-    if (altKneeTotal > kneeTotal) kneeTotal = altKneeTotal
-  }
-  // Store for re-use in front part
-  store.set('kneeTotal', kneeTotal)
-  store.set('kneeBack', kneeTotal * options.legBalance)
-  store.set('kneeFront', kneeTotal * (1 - options.legBalance))
-  let halfKnee = store.get('kneeBack') / 2
-  points.kneeOut = points.knee.shift(0, halfKnee)
-  points.kneeIn = points.kneeOut.flipX(points.knee) */
+  // NOTE: majority of points re-used from titan
 
   // shape at the ankle (unlike titan)
   let halfAnkle
@@ -165,20 +124,9 @@ function draftLilyBack({
   points.floorOutCp2 = points.floorOut.shift(90,points.knee.dy(points.floor) / 3)
   points.kneeOutCp1 = points.kneeOut.shift(90, -points.knee.dy(points.floor) / 3)  
 
-  // other control points have already been calculated in titan
-/*   // Control points to shape the legs towards the seat
-  points.kneeInCp1 = points.kneeIn.shift(90, points.fork.dy(points.knee) / 3)
-  points.kneeOutCp2 = points.kneeOut.shift(90, points.fork.dy(points.knee) / 3)
-  points.seatOutCp1 = points.seatOut.shift(-90, points.seatOut.dy(points.knee) / 3)
-  points.seatOutCp2 = points.seatOut.shift(90, points.seatOut.y / 2) */
-
-/*   // Balance the waist
-  if (points.cbSeat.x < points.waistX.x) {
-    let delta = points.cbSeat.dx(points.waistX)
-    points.waistIn = points.waistX.shift(180, delta * (1 - options.waistBalance))
-  } else points.waistIn = points.waistX
-  let width = points.waistX.x
-  points.waistOut = points.waistIn.shift(180, width) */
+  // other control points have already been calculated in titan:
+    // Control points to shape the legs towards the seat
+    // Balance the waist
 
   // Cross seam
   drawCrossSeam()
@@ -301,22 +249,47 @@ function draftLilyBack({
         points.floorInCp2,
         points.floorIn)     
     }
+    
+    // define the three parts of the path, then combine
     paths.bottom = new Path ()
       .move(points.bottomIn)
       .line(points.bottomOut)
       
     let halves = paths.seam.split(points.bottomIn)
-    let upperInseam = halves[0]
+    paths.upperInseam = halves[0]
     let halves2 = halves[1].split(points.bottomOut)
-    let upperOutseam = halves2[1]
+    paths.upperOutseam = halves2[1]    
     
-    paths.seam = upperInseam.join(paths.bottom)
-      .join(upperOutseam)
+    paths.seam = paths.upperInseam.join(paths.bottom)
+      .join(paths.upperOutseam)    
     
     // store requestedLength for use in front part
     store.set('requestedLength',requestedLength)    
-  }
-  
+  } else {
+    // define the same three parts of the path as when length reduction is enabled, then combine
+    
+    points.bottomIn = points.floorIn
+    points.bottomOut = points.floorOut
+    
+    paths.bottom = new Path ()
+      .move(points.floorIn)
+      .line(points.floorOut)
+      
+    // note: upperOutseam contains waist and cross seam as well
+    paths.upperInseam = drawInseam()
+    paths.upperOutseam = drawOutseam()
+      .join(
+          new Path()
+            .move(points.styleWaistOut)
+            .line(points.styleWaistIn)
+            .line(points.crossSeamCurveStart)
+            .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
+        )
+    paths.bottom.hide()
+    paths.upperInseam.hide()
+    paths.upperOutseam.hide()
+  } 
+    
   if (complete) {
     // TODO: fix position of grainline so it doesn't extend below the pattern
     points.grainlineTop.y = points.styleWaistOutLily.y
@@ -444,19 +417,10 @@ function draftLilyBack({
       }
     }
    
-    if (sa) {
-      // TODO: fix this
-      paths.saBase = paths.seam
-      // paths.saBase = drawOutseam()
-        // .join(
-          // new Path()
-            // .move(points.styleWaistOutLily)
-            // .line(points.styleWaistInLily)
-            // .line(points.crossSeamCurveStart)
-            // .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
-        // )
-        // .join(drawInseam())
-      paths.hemBase = new Path().move(points.floorIn).line(points.floorOut)
+    if (sa) {    
+      paths.saBase = paths.upperOutseam
+        .join(paths.upperInseam)
+      paths.hemBase = paths.bottom
       paths.sa = paths.hemBase
         .offset(sa * 3)
         .join(paths.saBase.offset(sa))
