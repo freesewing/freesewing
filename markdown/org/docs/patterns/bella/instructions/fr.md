@@ -1,5 +1,5 @@
 - - -
-title: "Bella body block: Sewing Instructions"
+title: "Bloc du corps de Bella : Instructions de couture"
 - - -
 
 <Note>
@@ -9,13 +9,13 @@ title: "Bella body block: Sewing Instructions"
 Un bloc est une forme de base à partir de laquelle plusieurs patrons vont pouvoir être élaborés.
 Ils sont parfois aussi appelés patrons de base, bien que les puristes soutiennent qu'un bloc et un patron de base sont des choses différentes.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns so the instructions below will not go in depth about closures or finishes and are for the default Bella block.
+Les blocs ne sont généralement pas réalisés tels quels mais servent plutôt de base à d'autres modèles. Les instructions ci-dessous n'abordent donc pas en détail les fermetures ou les finitions et concernent le bloc Bella par défaut.
 
 </Note>
 
-### Step 1: Mock-up Construction
+### Etape 1 : Construction de la maquette
 
-- Close the front bust and waist darts.
+- Fermez les pinces du buste et de la taille.
 - Fermer les fléchettes arrière.
 - Sew the front to the backs at the shoulders good sides together.
 - Sew the front to the backs at the side seams good sides together.
@@ -26,43 +26,43 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 
 </Tip>
 
-### Step 2: Try it on
+### Étape 2 : Essayez-le
 
-- Try it on and check the fit by pinning the back closed whilst wearing it.
-- Make any alterations and try it on again.
-- Repeat until you are happy.
+- Essayez-le et vérifiez la coupe en épinglant le dos tout en le portant.
+- Effectuez toutes les modifications et essayez à nouveau.
+- Répétez jusqu'à ce que vous soyez satisfait.
 
 <Tip>
 
-If you do not have someone to help with pinning, you may find it easier to cut the front part in two with seam allowance rather than on a fold and sew the back seam up so that you can pin in the front when trying on.
+Si vous n'avez personne pour vous aider à épingler, vous trouverez peut-être plus facile de couper le devant en deux avec une marge de couture plutôt que sur un pli et de coudre la couture du dos pour pouvoir épingler le devant lors de l'essayage.
 
-Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. Things like these are signs of where the pattern may need adjusting.
+Soyez attentif à tout ce que vous faites en portant la maquette : la tirez-vous vers le bas ? Ajustement permanent de l'épaule ? ect... Ces éléments sont des signes indiquant que le modèle doit être ajusté.
 
-Sometimes you may need to wear the mock-up for an extended amount of time to get a better sense of the fit so don't be afraid to walk around in it for a couple of hours.
+Il est parfois nécessaire de porter la maquette pendant un certain temps pour avoir une meilleure idée de la coupe, alors n'hésitez pas à vous promener avec pendant quelques heures.
 
 </Tip>
 
 <Note>
 
-Remember to treat Bella as a basis rather than a final product, so adjust what you need to get the desired look.  
-For instance:
+N'oubliez pas de considérer Bella comme une base plutôt que comme un produit final, et ajustez donc ce dont vous avez besoin pour obtenir l'aspect désiré.  
+Par exemple :
 
-- Change the neck line
-- Add/change the closure allowances
-- Alter the dart placements
-- Add a collar
+- Modifier la ligne d'encolure
+- Ajouter/modifier les marges de fermeture
+- Modifier l'emplacement des pinces
+- Ajouter un col
 
-It is all up to you! Experiment and go forth!
+Tout dépend de vous ! Expérimentez et allez-y !
 
 </Note>
 
-### Step 3: Make a paper pattern
+### Étape 3 : Créer un modèle en papier
 
-- Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
-- Now you have a pattern you can use to produce a garment.
+- Une fois que vous êtes satisfait de toutes vos modifications, retirer les épingles de votre maquette et créez un modèle de papier à partir de celle-ci.
+- Vous disposez à présent d'un modèle que vous pouvez utiliser pour produire un vêtement.
 
 <Note>
 
-It is best practice to make a paper pattern from the mock-up if you have made any alterations, as this will allow you to clean up any lines but also means you have a pattern that you can keep producing garments from.
+Si vous avez effectué des modifications, il est préférable de créer un modèle en papier à partir de la maquette, car cela vous permettra de nettoyer les lignes et de disposer d'un modèle à partir duquel vous pourrez continuer à produire des vêtements.
 
 </Note>

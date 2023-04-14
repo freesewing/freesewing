@@ -14,4 +14,4 @@ Vous pouvez augmenter ou diminuer la pince pour modifier l'emmanchure.
 
 ## Effet de cette option sur le patron
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_frontscyedart_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_frontscyedart_sample.svg "Effet de cette option sur le modèle")

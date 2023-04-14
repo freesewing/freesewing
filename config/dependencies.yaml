@@ -4,7 +4,7 @@ _types:
       '@freesewing/core': &freesewing '{{version}}'
       '@freesewing/plugin-bundle': *freesewing
     dev:
-      'mocha': &mocha '10.0.0'
+      'mocha': &mocha '10.2.0'
       'chai': &chai '4.2.0'
   plugin:
     peer:
@@ -60,7 +60,7 @@ core:
     'lodash.unset': &_unset '4.5.2'
     'lodash.clonedeep': '^4.5.0'
   dev:
-    'eslint': &eslint '8.37.0'
+    'eslint': &eslint '8.38.0'
     'nyc': '15.1.0'
     'mocha': *mocha
     'chai': *chai
@@ -209,7 +209,7 @@ yuri:
 
 backend:
   _:
-    '@aws-sdk/client-sesv2': '3.306.0'
+    '@aws-sdk/client-sesv2': '3.312.0'
     '@prisma/client': &prisma '4.12.0'
     'bcryptjs': '2.4.3'
     'cors': '2.8.5'
@@ -229,7 +229,7 @@ backend:
   dev:
     'chai': *chai
     'chai-http': '4.3.0'
-    'esbuild': '0.17.15'
+    'esbuild': '0.17.16'
     'mocha': *mocha
     'mocha-steps': '1.3.0'
     'nodemon': '2.0.22'
@@ -254,7 +254,7 @@ dev:
     'react-dom': *react
     'react-hotkeys-hook': &reactHotkeysHook '4.3.8'
     'react-instantsearch-dom': &reactInstantsearchDom '6.39.1'
-    'react-markdown': &reactMarkdown '8.0.6'
+    'react-markdown': &reactMarkdown '8.0.7'
     'react-swipeable': &reactSwipeable '7.0.0'
     'react-timeago': &reactTimeago '7.1.0'
     'rehype-autolink-headings': &rehypeAutolinkHeadings '6.1.1'
@@ -282,7 +282,7 @@ email:
 
 lab:
   _:
-    '@headlessui/react': &headlessUiReact '1.7.13'
+    '@headlessui/react': &headlessUiReact '1.7.14'
     '@mdx-js/loader': *mdx
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
@@ -358,12 +358,12 @@ sanity:
     'react-is': *react
     'sanity': *sanity
     'styled-components': '5.3.9'
-    'sanity-plugin-markdown': '3.0.1'
+    'sanity-plugin-markdown': '4.1.0'
   dev:
     '@sanity/eslint-config-studio': '2.0.1'
     'eslint': *eslint
     'prettier': '2.8.7'
-    'typescript': '5.0.3'
+    'typescript': '5.0.4'
     '@sanity/cli': '3.8.3'
 
 shared:
@@ -392,7 +392,7 @@ shared:
     'react-markdown': *reactMarkdown
     'react-sizeme': '3.0.2'
     'react-timeago': *reactTimeago
-    'react-zoom-pan-pinch': '3.0.6'
+    'react-zoom-pan-pinch': '3.0.7'
     'rehype-autolink-headings': *rehypeAutolinkHeadings
     'rehype-highlight': *rehypeHighlight
     'remark-smartypants': '2.0.0'

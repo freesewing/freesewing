@@ -192,7 +192,8 @@ Path.prototype.clean = function () {
 
   if (ops.length < this.ops.length) this.ops = ops
 
-  return this
+  // A path with not drawing operations or only a move is not path at all
+  return ops.length === 0 || (ops.length === 1 && ops[0].type === 'move') ? false : this
 }
 
 /**
@@ -1311,7 +1312,10 @@ function __pathOffset(path, distance, log) {
         { x: cp2.x, y: cp2.y },
         { x: op.to.x, y: op.to.y }
       )
-      for (let bezier of b.offset(distance)) offset.push(__asPath(bezier, path.log))
+      for (let bezier of b.offset(distance)) {
+        const segment = __asPath(bezier, path.log)
+        if (segment) offset.push(segment)
+      }
     } else if (op.type === 'close') closed = true
     if (op.to) current = op.to
     if (!start) start = current
