@@ -51,10 +51,33 @@ Stack.prototype.home = function () {
   this.bottomRight = new Point(-Infinity, -Infinity)
   for (const part of this.getPartList()) {
     part.__boundary()
-    if (part.topLeft.x < this.topLeft.x) this.topLeft.x = part.topLeft.x
-    if (part.topLeft.y < this.topLeft.y) this.topLeft.y = part.topLeft.y
-    if (part.bottomRight.x > this.bottomRight.x) this.bottomRight.x = part.bottomRight.x
-    if (part.bottomRight.y > this.bottomRight.y) this.bottomRight.y = part.bottomRight.y
+
+    const transforms = part.attributes.get('transform')
+    let tl = part.topLeft
+    let br = part.bottomRight
+    let tr = new Point(br.x, tl.y)
+    let bl = new Point(tl.x, br.y)
+
+    if (transforms) {
+      const combinedTransform =
+        typeof transforms === 'string' ? transforms : utils.combineTransforms(transforms)
+
+      tl = utils.applyTransformToPoint(combinedTransform, part.topLeft.copy())
+      br = utils.applyTransformToPoint(combinedTransform, part.bottomRight.copy())
+      bl = utils.applyTransformToPoint(
+        combinedTransform,
+        new Point(part.topLeft.x, part.bottomRight.y)
+      )
+      tr = utils.applyTransformToPoint(
+        combinedTransform,
+        new Point(part.bottomRight.x, part.topLeft.y)
+      )
+    }
+
+    this.topLeft.x = Math.min(this.topLeft.x, tl.x, br.x, bl.x, tr.x)
+    this.topLeft.y = Math.min(this.topLeft.y, tl.y, br.y, bl.y, tr.y)
+    this.bottomRight.x = Math.max(this.bottomRight.x, tl.x, br.x, bl.x, tr.x)
+    this.bottomRight.y = Math.max(this.bottomRight.y, tl.y, br.y, bl.y, tr.y)
   }
 
   // Fix infinity if it's not overwritten

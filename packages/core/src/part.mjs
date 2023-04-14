@@ -269,15 +269,6 @@ Part.prototype.__boundary = function () {
   if (bottomRight.x === -Infinity) bottomRight.x = 0
   if (bottomRight.y === -Infinity) bottomRight.y = 0
 
-  // Handle part transforms
-  const transforms = this.attributes.get('transform')
-  if (transforms) {
-    const combinedTransform =
-      typeof transforms === 'string' ? transforms : utils.combineTransforms(transforms)
-    topLeft = utils.applyTransformToPoint(combinedTransform, topLeft)
-    bottomRight = utils.applyTransformToPoint(combinedTransform, bottomRight)
-  }
-
   this.topLeft = topLeft
   this.bottomRight = bottomRight
   this.width = this.bottomRight.x - this.topLeft.x
