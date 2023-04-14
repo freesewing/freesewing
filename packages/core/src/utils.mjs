@@ -674,7 +674,7 @@ export function __macroName(name) {
  * @return {object} result - An object with the parts, name, and values
  */
 function __parseTransform(transform) {
-  const parts = transform.match(/(\w+)\(([^\)]+)\)/)
+  const parts = transform.match(/(\w+)\(([^)]+)\)/)
   const name = parts[1]
   const values = parts[2].split(/,\s*/).map(parseFloat)
 
@@ -697,7 +697,7 @@ export function combineTransforms(transforms = []) {
   // Loop through the transforms
   for (let i = 0; i < transforms.length; i++) {
     // Parse the transform string
-    const { parts, name, values } = __parseTransform(transforms[i])
+    const { name, values } = __parseTransform(transforms[i])
 
     // Update matrix for transform
     switch (name) {
@@ -721,7 +721,7 @@ export function combineTransforms(transforms = []) {
         matrix[2] *= values[1]
         matrix[3] *= values[1]
         break
-      case 'rotate':
+      case 'rotate': {
         const angle = (values[0] * Math.PI) / 180
         const cos = Math.cos(angle)
         const sin = Math.sin(angle)
@@ -734,6 +734,7 @@ export function combineTransforms(transforms = []) {
           matrix[5],
         ]
         break
+      }
       case 'skewX':
         matrix[2] += matrix[0] * Math.tan((values[0] * Math.PI) / 180)
         matrix[3] += matrix[1] * Math.tan((values[0] * Math.PI) / 180)
@@ -758,7 +759,7 @@ export function combineTransforms(transforms = []) {
  */
 export function applyTransformToPoint(transform, point) {
   // Parse the transform string
-  const { parts, name, values } = __parseTransform(transform)
+  const { name, values } = __parseTransform(transform)
 
   // The starting matrix
   let matrix = [1, 0, 0, 1, 0, 0]
@@ -776,13 +777,14 @@ export function applyTransformToPoint(transform, point) {
       matrix[0] = values[0]
       matrix[3] = values[1]
       break
-    case 'rotate':
+    case 'rotate': {
       const angle = (values[0] * Math.PI) / 180
       const cos = Math.cos(angle)
       const sin = Math.sin(angle)
       console.log('in rotate', { angle })
       matrix = [cos, sin, -sin, cos, 0, 0]
       break
+    }
     case 'skewX':
       matrix[2] = Math.tan((values[0] * Math.PI) / 180)
       break
