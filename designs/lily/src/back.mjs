@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { back as titanBack } from '@freesewing/titan'
 //import { front as titanFront } from '@freesewing/titan'
 
@@ -199,6 +198,11 @@ function draftLilyBack({
       requestedLength = waistToFork*1.01
     }    
     
+    // work-around to avoid splitting exactly at the knee
+    //   (due to a bug, splitting a path at a node is not possible)
+    if (0.999 < requestedLength/measurements.waistToKnee && requestedLength/measurements.waistToKnee < 1.001) {
+      requestedLength = 1.001*measurements.waistToKnee
+    }          
     points.bottom = points.waistX.shift(270,requestedLength)
     let upperPoint, upperCp
     if (requestedLength < measurements.waistToKnee) {    
@@ -227,10 +231,6 @@ function draftLilyBack({
           points.kneeInCp1,
           points.forkCp2,
           points.fork)     
-    } else if (0.999 < requestedLength/measurements.waistToKnee && requestedLength/measurements.waistToKnee < 1.001) {
-      // TODO: find a solution that actually works
-      points.bottomOut = points.kneeOut.clone()
-      points.bottomIn = points.kneeIn.clone()
     } else {
       // 'cut' between knee and 'floor'      
       points.bottomOut = utils.lineIntersectsCurve(
