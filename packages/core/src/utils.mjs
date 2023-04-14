@@ -746,7 +746,7 @@ export function combineTransforms(transforms = []) {
   }
 
   // Return the combined matrix transform
-  return 'matrix(' + matrix.join(' ') + ')'
+  return 'matrix(' + matrix.join(', ') + ')'
 }
 
 /**
@@ -792,8 +792,11 @@ export function applyTransformToPoint(transform, point) {
   }
 
   // Apply the matrix transform to the coordinates
-  point.x = point.x * matrix[0] + point.y * matrix[2] + matrix[4]
-  point.y = point.x * matrix[1] + point.y * matrix[3] + matrix[5]
+  const newX = point.x * matrix[0] + point.y * matrix[2] + matrix[4]
+  const newY = point.x * matrix[1] + point.y * matrix[3] + matrix[5]
+
+  point.x = newX
+  point.y = newY
 
   return point
 }
