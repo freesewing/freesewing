@@ -267,10 +267,7 @@ function draftLilyBack({
     store.set('requestedLength',requestedLength)    
   } else {
     // define the same three parts of the path as when length reduction is enabled, then combine
-    
-    points.bottomIn = points.floorIn
-    points.bottomOut = points.floorOut
-    
+       
     paths.bottom = new Path ()
       .move(points.floorIn)
       .line(points.floorOut)

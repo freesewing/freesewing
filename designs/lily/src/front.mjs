@@ -177,40 +177,8 @@ function draftLilyFront({
   
   console.log('test')
 
-  // majority of points re-used from titan
+  // NOTE: majority of points re-used from titan
 
-/*   // Let's get to work
-  points.waistX = new Point(measurements.waistFrontArc * (1 + options.waistEase), 0)
-  points.upperLegY = new Point(0, measurements.waistToUpperLeg)
-  points.seatX = new Point(measurements.seatFrontArc * (1 + options.seatEase), 0)
-  points.seatY = new Point(0, measurements.waistToSeat)
-  points.seatOut = points.seatY
-  points.cfSeat = new Point(points.seatX.x, points.seatY.y)
-
-  // Determine fork width
-  points.fork = new Point(
-    measurements.seatFrontArc * (1 + options.seatEase) * 1.25,
-    points.upperLegY.y * (1 + options.crotchDrop)
-  )
-
-  // Grainline location, map out center of knee and floor
-  points.grainlineTop = points.upperLegY.shiftFractionTowards(
-    points.fork,
-    options.grainlinePosition
-  )
-  points.knee = new Point(points.grainlineTop.x, measurements.waistToKnee)
-  points.floor = new Point(
-    points.grainlineTop.x,
-    measurements.waistToFloor * (1 + options.lengthBonus)
-  )
-  points.grainlineBottom = points.floor
-
-  // Figure out width at the knee
-  let halfKnee = store.get('kneeFront') / 2
-  points.kneeOut = points.knee.shift(180, halfKnee)
-  points.kneeIn = points.kneeOut.flipX(points.knee) */
-  
-  console.log('test2')
 
   // shape at the ankle (unlike titan)
   let halfAnkle = store.get('halfAnkle')
@@ -228,22 +196,8 @@ function draftLilyFront({
   points.kneeOutCp2 = points.kneeOut.shift(90, -points.knee.dy(points.floor) / 3)
   
   // other control points have already been calculated in titan
-/*   points.kneeInCp2 = points.kneeIn.shift(90, points.fork.dy(points.knee) / 3)
-  points.kneeOutCp1 = points.kneeOut.shift(90, points.fork.dy(points.knee) / 3)
-  points.seatOutCp1 = points.seatOut.shift(
-    90,
-    measurements.waistToHips * options.waistHeight + absoluteOptions.waistbandWidth
-  )
-  points.seatOutCp2 = points.seatOut.shift(-90, points.seatOut.dy(points.knee) / 3) */
-  
-  console.log('control points')
-
-/*   // Balance the waist
-  let delta = points.waistX.dx(points.cfSeat)
-  let width = points.waistX.x
-  points.waistOut = new Point(delta * options.waistBalance, 0)
-  points.waistIn = points.waistOut.shift(0, width)
-  points.cfWaist = points.waistIn */
+    // Control points to shape the legs towards the seat
+    // Balance the waist
 
   // Draw initial crotch seam
   drawCrotchSeam()
@@ -276,53 +230,14 @@ function draftLilyFront({
    * all that's left is to match the inseam and outseam
    */
    
-/*   points.cfSeatInitial = points.cfSeat.clone()
-  points.waistInInitial = points.waistIn.clone()
-  points.waistOutInitial = points.waistOut.clone()
-  points.crotchSeamCurveStartInitial = points.crotchSeamCurveStart.clone()
-  points.forkInitial = points.fork.clone();
-  points.seatOutInitial = points.seatOut.clone();
-  
-  paths.tempInitial = new Path()
-    .move(points.forkInitial)
-    .line(points.cfSeatInitial)
-    .line(points.crotchSeamCurveStartInitial)
-    .line(points.waistInInitial)
-    .line(points.waistOutInitial)
-    .line(points.seatOutInitial) */
-
   // When both are too short/long, adapt the leg length
   if ((inseamDelta() < 0 && outseamDelta() < 0) || (inseamDelta() > 0 && outseamDelta() > 0))
     adaptInseamAndOutseam()
   
-/*   points.cfSeatIntermediate = points.cfSeat.clone()
-  points.waistInIntermediate = points.waistIn.clone()
-  points.waistOutIntermediate = points.waistOut.clone()  
-  
-  paths.tempIntermediate = new Path()
-  .move(points.cfSeatIntermediate)
-  .line(points.waistInIntermediate)
-  .line(points.waistOutIntermediate) */
-
   // Now one is ok, the other will be adapted
   adaptOutseam()
   adaptInseam()
   
-/*   points.cfSeatIntermediate2 = points.cfSeat.clone()
-  points.waistInIntermediate2 = points.waistIn.clone()
-  points.waistOutIntermediate2 = points.waistOut.clone()
-  points.crotchSeamCurveStartIntermediate2 = points.crotchSeamCurveStart.clone()
-  points.forkIntermediate2 = points.fork.clone();
-  points.seatOutIntermediate2 = points.seatOut.clone();
-  
-  paths.tempIntermediate2 = new Path()
-    .move(points.forkIntermediate2)
-    .line(points.cfSeatIntermediate2)
-    .line(points.crotchSeamCurveStartIntermediate2)
-    .line(points.waistInIntermediate2)
-    .line(points.waistOutIntermediate2)
-    .line(points.seatOutIntermediate2) */
-
   // Changing one will ever so slightly impact the other, so let's run both again to be sure
   adaptOutseam()
   adaptInseam()
@@ -413,18 +328,36 @@ function draftLilyFront({
         points.floorInCp2,
         points.floorIn)     
     }
+    
+    // define the three parts of the path, then combine    
     paths.bottom = new Path ()
       .move(points.bottomOut)
       .line(points.bottomIn)
       
     let halves = paths.seam.split(points.bottomOut)
-    let upperOutseam = halves[0]
+    paths.upperOutseam = halves[0]
     let halves2 = halves[1].split(points.bottomIn)
-    let upperInseam = halves2[1]
+    paths.upperInseam = halves2[1]
       
-    paths.seam = upperOutseam.join(paths.bottom)
-      .join(upperInseam)    
-  }  
+    paths.seam = paths.upperOutseam.join(paths.bottom)
+      .join(paths.upperInseam)    
+  } else {
+    // define the same three parts of the path as when length reduction is enabled, then combine
+    
+    paths.bottom = new Path ()
+      .move(points.floorOut)
+      .line(points.floorIn)
+      
+    // note: upperInseam contains waist and cross seam as well
+    paths.upperInseam = drawInseam()
+      .curve(points.crotchSeamCurveCp1, points.crotchSeamCurveCp2, points.crotchSeamCurveStart)
+      .line(points.styleWaistIn)
+      .line(points.styleWaistOut)    
+    paths.upperOutseam = drawOutseam()
+    paths.bottom.hide()
+    paths.upperInseam.hide()
+    paths.upperOutseam.hide()
+  }     
 
   if (complete) {
     points.grainlineTop.y = points.styleWaistInLily.y
@@ -570,20 +503,9 @@ function draftLilyFront({
     }
    
     if (sa) {
-      paths.saBase = drawInseam()
-        .join(
-          new Path()
-            .move(points.fork)
-            .curve(
-              points.crotchSeamCurveCp1,
-              points.crotchSeamCurveCp2,
-              points.crotchSeamCurveStart
-            )
-            .line(points.styleWaistInLily)
-            .line(points.styleWaistOutLily)
-        )
-        .join(drawOutseam())
-      paths.hemBase = new Path().move(points.floorOut).line(points.floorIn)
+      paths.saBase = paths.upperInseam
+        .join(paths.upperOutseam)
+      paths.hemBase = paths.bottom
       paths.sa = paths.hemBase
         .offset(sa * 3)
         .join(paths.saBase.offset(sa))
