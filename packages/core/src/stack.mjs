@@ -53,8 +53,8 @@ Stack.prototype.home = function () {
     part.__boundary()
 
     const transforms = part.attributes.get('transform')
-    let tl = part.topLeft
-    let br = part.bottomRight
+    let tl = part.topLeft || this.topLeft
+    let br = part.bottomRight || this.bottomRight
     let tr = new Point(br.x, tl.y)
     let bl = new Point(tl.x, br.y)
 
