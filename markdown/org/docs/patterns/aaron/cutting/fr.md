@@ -1,5 +1,5 @@
 - - -
-title: "Aaron A-Shirt: Cutting Instructions"
+titre: "Débardeur (A-Shirt) Aaron : Instructions de coupe"
 - - -
 
 - Couper **1 dos** au pli
@@ -8,10 +8,10 @@ title: "Aaron A-Shirt: Cutting Instructions"
 
 <Warning>
 
-#### Caveats
+#### Mises en garde
 
-- There is no seam allowance on the armholes
-- There is no seam allowance on the neck opening
-- There is extra hem allowance at the hem
+- Il n'y a pas de marge au niveau des emmanchures
+- Il n'y a pas de marge au niveau de l'encolure
+- Il n'y a pas de marge au niveau de l'ourlet
 
 </Warning>

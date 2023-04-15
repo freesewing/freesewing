@@ -1,27 +1,27 @@
 - - -
-title: "Cross back ties"
+titre: "Lacets croisés"
 - - -
 
 ***
 
-A variation of Bee, where the neck ties cross and tie in the back by looping into a band that replaces the band tie
+Une variante de Bee, où les lacets du cou et les bandes se croisent et se nouent dans le dos en formant une boucle qui remplace le bandeau
 
-#### Default
+#### Par défaut
 
-- 2 neck ties
-- 1 band tie
+- 2 attaches du cou
+- 1 bande
 
-The neck ties are sewn into the cups and tie at the neck like a halter.  
-The band tie is thread through casings in the cups and ties with itself at the back
+Les liens de cou sont cousus dans les bonnets et se nouent au cou comme un licou.  
+Le lien de la bande est enfilé dans les bonnets et se noue dans le dos
 
-#### Cross Back Ties
+#### Lacets croisés
 
-- 2 neck ties
-- No band tie
+- 2 attaches du cou
+- Pas de bande
 
-The band tie and casing on the cups are replaced by a band which is sewn with loops in the back.  
-The neck ties are longer and cross over each other in the back, then go through the loops in the band and then tie with one another.
+La bande et l'enveloppe des bonnets sont remplacés par une bande cousue avec des boucles dans le dos.  
+Les attaches de cou sont plus longues et se croisent dans le dos, puis passent dans les boucles de la bande et se nouent l'une à l'autre.
 
 ## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_crossbackties_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bee_crossbackties_sample.svg "Effet de cette option sur le modèle")

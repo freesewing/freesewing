@@ -1,4 +1,5 @@
 import { sleeve as brianSleeve } from '@freesewing/brian'
+import { hidePresets } from '@freesewing/core'
 
 function yuriSleeve({ Point, Path, points, paths, complete, sa, paperless, macro, part }) {
   // Clear paths from Brian, but keep sleevecap
@@ -69,6 +70,6 @@ function yuriSleeve({ Point, Path, points, paths, complete, sa, paperless, macro
 export const sleeve = {
   name: 'yuri.sleeve',
   from: brianSleeve,
-  hideDependencies: true,
+  hide: hidePresets.HIDE_TREE,
   draft: yuriSleeve,
 }

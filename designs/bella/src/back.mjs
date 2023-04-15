@@ -253,6 +253,8 @@ export const back = {
       .close()
       .hide()
 
+    store.cutlist.addCut()
+
     if (complete) {
       points.titleAnchor = new Point(points.hps.x, points.armholePitchCp2.y)
       macro('title', {

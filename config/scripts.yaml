@@ -29,7 +29,7 @@ i18n:
 models:
   test: 'npx mocha tests/*.test.mjs'
 new-design:
-  18n-only: 'SITE="new-design/shared" node ../../sites/shared/prebuild/i18n-only.mjs'
+  i18n-only: 'SITE="new-design/shared" node ../../sites/shared/prebuild/i18n-only.mjs'
   wbuild: '!'
   lint: "npx eslint 'lib/*.mjs'"
   mbuild: '!'

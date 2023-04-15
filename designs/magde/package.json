@@ -1,8 +1,8 @@
 {
-  "name": "@freesewing/plugin-logo",
-  "version": "3.0.0-alpha.4",
-  "description": "A FreeSewing plugin that provides our logo as a snippet",
-  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
+  "name": "@freesewing/magde",
+  "version": "3.0.0-alpha.8",
+  "description": "A FreeSewing pattern for a bike messenger bag",
+  "author": "clegganator259 (https://github.com/clegganator259)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
   "license": "MIT",
@@ -15,14 +15,14 @@
   },
   "keywords": [
     "freesewing",
-    "plugin",
-    "sewing pattern",
-    "sewing",
     "design",
-    "parametric design",
-    "made to measure",
     "diy",
-    "fashion"
+    "fashion",
+    "made to measure",
+    "parametric design",
+    "pattern",
+    "sewing",
+    "sewing pattern"
   ],
   "type": "module",
   "module": "dist/index.mjs",
@@ -41,16 +41,17 @@
     "lint": "npx eslint 'src/**' 'tests/*.mjs'",
     "prettier": "npx prettier --write 'src/*.mjs' 'tests/*.mjs'",
     "testci": "npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js",
-    "cibuild_step1": "node build.mjs",
+    "cibuild_step5": "node build.mjs",
     "wbuild": "node build.mjs",
-    "wcibuild_step1": "node build.mjs"
+    "wcibuild_step5": "node build.mjs"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0-alpha.4"
+    "@freesewing/core": "3.0.0-alpha.8",
+    "@freesewing/plugin-bundle": "3.0.0-alpha.8"
   },
   "dependencies": {},
   "devDependencies": {
-    "mocha": "10.0.0",
+    "mocha": "10.2.0",
     "chai": "4.2.0"
   },
   "files": [

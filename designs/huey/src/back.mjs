@@ -88,7 +88,9 @@ function draftHueyBack({
 export const back = {
   name: 'huey.back',
   from: brianBack,
-  hideDependencies: true,
+  hide: {
+    from: true,
+  },
   measurements: ['hips'],
   options: {
     ribbing: { bool: true, menu: 'style' },

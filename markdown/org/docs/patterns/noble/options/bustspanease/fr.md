@@ -8,6 +8,6 @@ The **bust span ease** option controls how much ease is applied to the bust span
 
 <Note>This will not add ease to the garment, but merely influence the bust point</Note>
 
-## Effect of this option on the pattern
+## Effet de cette option sur le modèle
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_bustspanease_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](noble_bustspanease_sample.svg "Effet de cette option sur le modèle")

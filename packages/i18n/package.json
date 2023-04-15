@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/i18n",
-  "version": "3.0.0-alpha.4",
+  "version": "3.0.0-alpha.8",
   "description": "Translations for the FreeSewing project",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -44,7 +44,7 @@
     "wcibuild_step7": "node build.mjs"
   },
   "peerDependencies": {
-    "@freesewing/pattern-info": "3.0.0-alpha.4"
+    "@freesewing/pattern-info": "3.0.0-alpha.8"
   },
   "dependencies": {},
   "devDependencies": {

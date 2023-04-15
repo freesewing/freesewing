@@ -1,5 +1,6 @@
 import { back as brianBack } from '@freesewing/brian'
 import { front } from './front.mjs'
+import { hidePresets } from '@freesewing/core'
 
 function hugoBack({
   store,
@@ -116,7 +117,7 @@ function hugoBack({
 export const back = {
   name: 'hugo.back',
   from: brianBack,
-  hideDependencies: true,
+  hide: hidePresets.HIDE_TREE,
   measurements: ['hips'],
   after: front,
   draft: hugoBack,

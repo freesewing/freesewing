@@ -7,11 +7,18 @@ import { ThemePicker } from 'shared/components/theme-picker/index.mjs'
 import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
 import { getCrumbs } from 'shared/utils.mjs'
 import { HomeIcon } from 'shared/components/icons.mjs'
+import { useState, useEffect } from 'react'
 
 export const DocsLayout = ({ app, title = false, crumbs = false, children = [] }) => {
   const router = useRouter()
-  const slug = router.asPath.slice(1)
-  const breadcrumbs = crumbs ? crumbs : getCrumbs(app, slug, title)
+  const [slug, setSlug] = useState('')
+  const [breadcrumbs, setBreadcrumbs] = useState(crumbs)
+
+  useEffect(() => {
+    const newSlug = router.asPath.slice(1)
+    setSlug(newSlug)
+    if (!breadcrumbs) setBreadcrumbs(getCrumbs(app, newSlug, title))
+  }, [router.asPath, breadcrumbs, app, title])
 
   return (
     <div className="grid grid-cols-4 m-auto justify-center place-items-stretch">

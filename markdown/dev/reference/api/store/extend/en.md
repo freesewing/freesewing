@@ -19,8 +19,10 @@ The single argument should be an Array of methods to add to the
 store. Each entry in the array should be an array itself holding a path in
 dot notation and a method, as such:
 
+The expected first parameter for the method is the `Store` instance.
+
 ```js
-function myCustomMethod() {
+function myCustomMethod(store, ...otherArguments) {
  // Do something clever
 }
 

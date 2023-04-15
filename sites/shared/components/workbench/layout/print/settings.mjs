@@ -2,6 +2,7 @@ import { PageSizePicker } from './pagesize-picker.mjs'
 import { PageOrientationPicker } from './orientation-picker.mjs'
 import { PrintIcon, RightIcon, ClearIcon, ExportIcon } from 'shared/components/icons.mjs'
 import { useTranslation } from 'next-i18next'
+import { ShowButtonsToggle } from '../draft/buttons.mjs'
 
 export const PrintLayoutSettings = (props) => {
   const { t } = useTranslation(['workbench'])
@@ -34,6 +35,11 @@ export const PrintLayoutSettings = (props) => {
           <PageOrientationPicker {...props} />
         </div>
         <div className="flex gap-4">
+          <ShowButtonsToggle
+            gist={props.gist}
+            updateGist={props.updateGist}
+            layoutSetType="forPrinting"
+          ></ShowButtonsToggle>
           <button
             key="export"
             onClick={props.exportIt}

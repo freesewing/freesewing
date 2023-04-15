@@ -45,6 +45,9 @@ function draftCarltonPocketFlap({
 
   paths.seam = paths.seam.line(points.topRight).line(points.topLeft).close().attr('class', 'fabric')
 
+  store.cutlist.addCut({ cut: 4 })
+  store.cutlist.addCut({ material: 'lmhCanvas' })
+
   if (complete) {
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
     macro('title', {

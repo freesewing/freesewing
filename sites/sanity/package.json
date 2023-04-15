@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/sanity",
-  "version": "3.0.0-alpha.4",
+  "version": "3.0.0-alpha.8",
   "description": "Code for the sanity.io CMS",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -20,20 +20,20 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "@sanity/vision": "3.5.0",
+    "@sanity/vision": "3.8.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-is": "18.2.0",
-    "sanity": "3.5.0",
-    "styled-components": "5.3.6",
-    "sanity-plugin-markdown": "3.0.1"
+    "sanity": "3.8.3",
+    "styled-components": "5.3.9",
+    "sanity-plugin-markdown": "4.1.0"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "2.0.1",
-    "eslint": "8.34.0",
-    "prettier": "2.8.4",
-    "typescript": "4.9.5",
-    "@sanity/cli": "3.2.6"
+    "eslint": "8.38.0",
+    "prettier": "2.8.7",
+    "typescript": "5.0.4",
+    "@sanity/cli": "3.8.3"
   },
   "engines": {
     "node": ">=16.0.0",

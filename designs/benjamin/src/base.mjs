@@ -203,7 +203,7 @@ function draftBenjaminBase({
 
 export const base = {
   name: 'benjamin.base',
-  hide: true,
+  hide: { self: true },
   measurements: ['neck'],
   options: {
     // Static options

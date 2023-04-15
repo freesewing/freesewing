@@ -11,10 +11,14 @@ export const plugin = {
         )
         return text
       }
-      const prefix = data.prefix || ''
-      return typeof data.strings[locale][prefix + text] === 'undefined'
-        ? text
-        : data.strings[locale][prefix + text]
+      if (data.t) {
+        return data.t(text)
+      } else {
+        const prefix = data.prefix || ''
+        return typeof data.strings[locale][prefix + text] === 'undefined'
+          ? text
+          : data.strings[locale][prefix + text]
+      }
     },
   },
 }

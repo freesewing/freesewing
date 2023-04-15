@@ -144,6 +144,6 @@ function draftCathrinPanels({ measurements, options, store, points, paths, Point
 export const panels = {
   name: 'cathrin.panels',
   from: base,
-  hide: true,
+  hide: { self: true },
   draft: draftCathrinPanels,
 }

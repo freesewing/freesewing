@@ -4,7 +4,9 @@ import { neckTie } from './neck-tie.mjs'
 export const cup = {
   name: 'bee.cup',
   from: frontSideDart,
-  hideDependencies: true,
+  hide: {
+    inherited: true,
+  },
   after: neckTie,
   options: {
     topDepth: { pct: 54, min: 50, max: 80, menu: 'fit' },

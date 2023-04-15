@@ -163,8 +163,11 @@ export const front = {
   name: 'simon.front',
   from: brianFront,
   after: back,
-  hide: true,
-  hideDependencies: true,
+  hide: {
+    self: true,
+    from: true,
+    inherited: true,
+  },
   options: {
     backDarts,
     backDartShaping,

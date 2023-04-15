@@ -1,7 +1,8 @@
 import Worker from 'web-worker'
 import fileSaver from 'file-saver'
 import { themePlugin } from '@freesewing/plugin-theme'
-import { pagesPlugin } from '../layout/print/plugin.mjs'
+import { pluginI18n } from '@freesewing/plugin-i18n'
+import { pagesPlugin } from '../layout/plugin-layout-part.mjs'
 import { capitalize } from 'shared/utils.mjs'
 
 export const exportTypes = {
@@ -75,14 +76,7 @@ export const handleExport = async (format, gist, design, t, app, onComplete, onE
 
     // add the theme and translation to the pattern
     pattern.use(themePlugin, { stripped: format !== 'svg', skipGrid: ['pages'] })
-    pattern.use(
-      {
-        hooks: {
-          insertText: (locale, text, { t }) => t(text),
-        },
-      },
-      { t }
-    )
+    pattern.use(pluginI18n, { t })
 
     // a specified size should override the gist one
     if (format !== 'pdf') {

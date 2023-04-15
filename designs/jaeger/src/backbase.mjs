@@ -1,5 +1,6 @@
 import { calculateRatios, backSideBoundary } from './shared.mjs'
 import { back as bentBack } from '@freesewing/bent'
+import { hidePresets } from '@freesewing/core'
 import {
   centerBackDart,
   hipsEase,
@@ -91,7 +92,7 @@ export const backBase = {
   name: 'jaeger.backBase',
   measurements: ['hips', 'waist'],
   from: bentBack,
-  hideAll: true,
+  hide: hidePresets.HIDE_ALL,
   options: {
     centerBackDart,
     hipsEase,

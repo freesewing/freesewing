@@ -23,7 +23,7 @@ function draftBib({
   points,
   // highlight-start
   measurements,
-  options
+  options,
   // highlight-end
   part,
 }) {

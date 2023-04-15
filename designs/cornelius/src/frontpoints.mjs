@@ -105,7 +105,7 @@ function draftCorneliusFrontpoints({
 
 export const frontpoints = {
   name: 'cornelius.frontpoints',
-  hide: true,
+  hide: { self: true },
   measurements: [
     'waist',
     'hips',

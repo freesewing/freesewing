@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/legend",
-  "version": "3.0.0-alpha.4",
+  "version": "3.0.0-alpha.8",
   "description": "A FreeSewing pattern to document pattern notation",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -46,13 +46,13 @@
     "wcibuild_step5": "node build.mjs"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0-alpha.4",
-    "@freesewing/plugin-bundle": "3.0.0-alpha.4",
-    "@freesewing/plugin-buttons": "3.0.0-alpha.4"
+    "@freesewing/core": "3.0.0-alpha.8",
+    "@freesewing/plugin-bundle": "3.0.0-alpha.8",
+    "@freesewing/plugin-buttons": "3.0.0-alpha.8"
   },
   "dependencies": {},
   "devDependencies": {
-    "mocha": "10.0.0",
+    "mocha": "10.2.0",
     "chai": "4.2.0"
   },
   "files": [

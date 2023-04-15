@@ -1,5 +1,5 @@
 import { config } from './config.mjs'
-import { mkdir, readFile, writeFile, copyFile } from 'node:fs/promises'
+import { mkdir, readFile, writeFile, copyFile, open, opendir } from 'node:fs/promises'
 import { join, dirname, relative } from 'path'
 import mustache from 'mustache'
 import rdir from 'recursive-readdir'
@@ -15,7 +15,7 @@ let filename
 try {
   filename = __filename
 } catch {
-  filename = fileURLToPath(import.meta.url)
+  filename = fileURLToPath(new URL(import.meta.url))
 }
 const newDesignDir = join(filename, '../..')
 const designSrcDir = 'design/src'
@@ -91,15 +91,62 @@ export const getChoices = async () => {
     initial: 0,
   })
 
-  const { name } =
-    template === 'tutorial'
-      ? { name: 'tutorial' }
-      : await prompts({
-          type: 'text',
-          name: 'name',
-          message: 'What name would you like the design to have? 🏷️ ([a-z] only)',
-          validate: validateDesignName,
-        })
+  let finalName = false // we're going to use this to track whether we stay in the naming loop
+  let overwrite = true // should we overwrite existing files?
+  const cwd = process.cwd()
+  let name // name will go here
+
+  // while we're not finalized on a name
+  while (finalName === false) {
+    // request a name
+    name =
+      template === 'tutorial' && name === undefined
+        ? 'tutorial'
+        : (
+            await prompts({
+              type: 'text',
+              name: 'name',
+              message: 'What name would you like the design to have? 🏷️ ([a-z] only)',
+              validate: validateDesignName,
+            })
+          ).name
+
+    // check whether a folder with that name already exists
+    config.dest = join(cwd, name)
+    try {
+      const dir = await opendir(config.dest)
+      dir.close()
+    } catch {
+      // the folder didn't exist, so we're good to go
+      finalName = true
+      break
+    }
+
+    // the folder did exist, so now we need to ask what to do
+    const { nextStep } = await prompts({
+      type: 'select',
+      name: 'nextStep',
+      message:
+        'It looks like you already have a design by that name in progress. What should we do?',
+      choices: [
+        { title: 'Rename', value: 'rename', description: 'Choose a new name for this design' },
+        { title: 'Overwrite', value: 'overwrite', description: 'Overwrite the existing design' },
+        {
+          title: 'Re-initialize',
+          value: 'reinit',
+          description:
+            "Bring in a fresh workbench, but don't overwrite existing design files (useful for updating to the latest dev environment)",
+        },
+      ],
+    })
+
+    // if they said rename, we loop again. otherwise
+    if (nextStep !== 'rename') {
+      finalName = true
+      // set the overwrite choice
+      overwrite = nextStep === 'overwrite'
+    }
+  }
 
   const { manager } = await prompts({
     type: 'select',
@@ -112,7 +159,7 @@ export const getChoices = async () => {
     initial: 0,
   })
 
-  return { template, name, manager }
+  return { template, name, manager, overwrite }
 }
 
 const capitalize = (string) => string.charAt(0).toUpperCase() + string.slice(1)
@@ -128,8 +175,27 @@ const ensureDir = async (file, suppress = false) => {
 }
 
 // Helper method to copy template files
-const copyFileOrTemplate = async (fromRootOrTemplate, toRoot, relativeDest, templateVars) => {
+const copyFileOrTemplate = async (
+  fromRootOrTemplate,
+  toRoot,
+  relativeDest,
+  templateVars,
+  overwrite = true
+) => {
   const to = join(toRoot, relativeDest)
+
+  // if the file shouldn't be overwritten, open it to see if it exists
+  if (!overwrite) {
+    try {
+      // if the file doesn't exist, this will throw an error
+      const fd = await open(to)
+      fd.close()
+      // we only reach this return if the file exists, which means we're safe to leave
+      return
+    } catch {
+      // don't do anything with the error because it just means the file wasn't there and we can continue
+    }
+  }
 
   await ensureDir(to)
 
@@ -148,6 +214,7 @@ const copyPackageJson = async (config, choices) => {
     config.relativeFiles.templates['package.json'],
     'utf-8'
   )
+
   await copyFileOrTemplate(packageJsonTemplate, config.dest, 'package.json', {
     name: choices.name,
     tag: config.tag,
@@ -165,11 +232,17 @@ const copyIndexFile = async (config, choices) => {
     ? config.templateData.parts.map((p) => p.part)
     : config.templateData.parts
   // write the file
-  await copyFileOrTemplate(indexTemplate, config.dest, `${designSrcDir}/index.mjs`, {
-    name: choices.name,
-    Name: capitalize(choices.name),
-    parts: partNames,
-  })
+  await copyFileOrTemplate(
+    indexTemplate,
+    config.dest,
+    `${designSrcDir}/index.mjs`,
+    {
+      name: choices.name,
+      Name: capitalize(choices.name),
+      parts: partNames,
+    },
+    choices.overwrite
+  )
 }
 
 // Template the part files
@@ -213,7 +286,8 @@ const copyPartFiles = async (config, choices) => {
       partTemplate,
       config.dest,
       `${designSrcDir}/${templateArgs.part}.mjs`,
-      templateArgs
+      templateArgs,
+      choices.overwrite
     )
   })
 }
@@ -271,7 +345,7 @@ const downloadLabFiles = async (config) => {
 
 // Helper method to initialize a git repository
 const initGitRepo = async (config, choices) => {
-  await writeFile(join(config.dest, '.gitignore'), config.gitignore, 'utf-8')
+  await copyFileOrTemplate(config.gitignore, config.dest, '.gitignore', {}, choices.overwrite)
 
   return execa(
     `git init -b main && git add . && git commit -m ":tada: Initialized ${choices.name} repository"`,
@@ -344,8 +418,6 @@ export const createEnvironment = async (choices) => {
     templates: join(newDesignDir, `templates/shared`),
     shared: join(newDesignDir, `shared`),
   }
-
-  config.dest = join(process.cwd(), choices.name)
 
   // Create target directory
   await mkdir(config.dest, { recursive: true })
@@ -427,7 +499,7 @@ export const createEnvironment = async (choices) => {
         chalk.white.dim('  |  This does not stop you from developing your design'),
     })
   } catch (err) {
-    /* no git no worries */
+    console.log(err)
   }
 
   // All done. Show tips

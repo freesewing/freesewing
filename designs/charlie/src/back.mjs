@@ -1,5 +1,6 @@
 import { back as titanBack } from '@freesewing/titan'
 import { front } from './front.mjs'
+import { hidePresets } from '@freesewing/core'
 
 function draftCharlieBack({
   points,
@@ -346,7 +347,7 @@ export const back = {
   name: 'charlie.back',
   from: titanBack,
   after: front,
-  hideDependencies: true,
+  hide: hidePresets.HIDE_TREE,
   options: {
     backPocketVerticalPlacement: { pct: 24, min: 18, max: 30, menu: 'pockets.backpockets' },
     backPocketHorizontalPlacement: { pct: 55, min: 48, max: 62, menu: 'pockets.backpockets' },

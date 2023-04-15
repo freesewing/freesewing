@@ -1,5 +1,6 @@
 import { constructMainDart, shapeSideSeam, dartPath } from './shared.mjs'
 import { front as brianFront } from '@freesewing/brian'
+import { hidePresets } from '@freesewing/core'
 import {
   frontOverlap,
   necklineDrop,
@@ -493,7 +494,7 @@ function wahidFront({
 export const front = {
   name: 'wahid.front',
   from: brianFront,
-  hideDependencies: true,
+  hide: hidePresets.HIDE_TREE,
   measurements: ['hips', 'waist'],
   options: {
     frontOverlap,

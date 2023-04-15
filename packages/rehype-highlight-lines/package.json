@@ -1,6 +1,6 @@
 {
   "name": "rehype-highlight-lines",
-  "version": "3.0.0-alpha.4",
+  "version": "3.0.0-alpha.8",
   "description": "A Rehype plugin to add highlighted lines to code blocks",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",

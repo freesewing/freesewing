@@ -227,7 +227,7 @@ function draftBreannaSleevecap(params) {
 
 export const sleeveCap = {
   name: 'breanna.sleeveCap',
-  hide: true,
+  hide: { self: true },
   after: [front, frontBase, back],
   options: {
     bicepsEase: { pct: 15, min: 0, max: 50, menu: 'fit' },

@@ -1,5 +1,7 @@
 import { back as bentBack } from '@freesewing/bent'
 import { calculateRatios } from './shared.mjs'
+import { hidePresets } from '@freesewing/core'
+import { pluginCutlist } from '@freesewing/plugin-cutlist'
 
 function draftCarltonBack({
   paperless,
@@ -95,7 +97,16 @@ function draftCarltonBack({
     .line(points.bpStart)
     .attr('class', 'dashed')
 
+  store.cutlist.addCut()
+  store.cutlist.addCut({ material: 'lining' })
+
   if (complete) {
+    macro('title', {
+      at: points.title,
+      nr: '2',
+      title: 'back',
+    })
+
     macro('sprinkle', {
       snippet: 'bnotch',
       on: ['shoulder', 'bpTriangleTip'],
@@ -230,7 +241,7 @@ function draftCarltonBack({
 export const back = {
   name: 'carlton.back',
   from: bentBack,
-  hideDependencies: true,
+  hide: hidePresets.HIDE_TREE,
   measurements: ['chest', 'hpsToWaistBack'],
   options: {
     backPleat: 0.048,
@@ -238,5 +249,6 @@ export const back = {
     waistEase: { pct: 14, min: 8, max: 25, menu: 'fit' },
     seatEase: { pct: 14, min: 8, max: 25, menu: 'fit' },
   },
+  plugins: [pluginCutlist],
   draft: draftCarltonBack,
 }

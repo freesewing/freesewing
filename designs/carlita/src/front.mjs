@@ -1,5 +1,6 @@
 import { pluginBust } from '@freesewing/plugin-bust'
 import { front as carltonFront } from '@freesewing/carlton'
+import { hidePresets } from '@freesewing/core'
 
 function draftCarlitaFront({
   paperless,
@@ -346,6 +347,9 @@ function draftCarlitaFront({
     .close()
     .attr('class', 'fabric help')
 
+  store.cutlist.addCut()
+  store.cutlist.addCut({ material: 'lining' })
+
   if (complete) {
     snippets.button1Left = new Snippet('button', points.button1Left).attr('data-scale', 2)
     snippets.button1Right = new Snippet('button', points.button1Right).attr('data-scale', 2)
@@ -501,7 +505,7 @@ function draftCarlitaFront({
 export const front = {
   name: 'carlita.front',
   from: carltonFront,
-  hideDependencies: true,
+  hide: hidePresets.HIDE_TREE,
   measurements: ['highBust', 'bustSpan', 'hpsToBust'],
   plugins: [pluginBust],
   options: {

@@ -67,7 +67,7 @@ function draftBreannaBase({ store, points, Point, measurements, options, utils, 
 
 export const base = {
   name: 'breanna.base',
-  hide: true,
+  hide: { self: true },
   measurements: [
     'biceps',
     'bustFront',

@@ -1,11 +1,11 @@
 hungry:
-  title: Hungry
+  title: Affamé
   description: Changes the mouth shape to convey Hi is hungry
 nosePointiness:
   title: Nose pointiness
   description: Controls how pointy Hi's nose is
 aggressive:
-  title: Aggressive
+  title: Agressif
   description: Give Hi pointy teeth, or not
 size:
   title: Size
