@@ -572,7 +572,7 @@ Path.prototype.noop = function (id = false) {
 Path.prototype.offset = function (distance) {
   distance = __asNumber(distance, 'distance', 'Path.offset', this.log)
 
-  return __pathOffset(this, distance, this.log)
+  return __pathOffset(this, distance)
 }
 
 /**
