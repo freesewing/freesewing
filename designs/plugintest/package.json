@@ -48,11 +48,10 @@
   "peerDependencies": {
     "@freesewing/core": "3.0.0-alpha.8",
     "@freesewing/plugin-bundle": "3.0.0-alpha.8",
+    "@freesewing/plugin-annotations": "3.0.0-alpha.8",
     "@freesewing/plugin-banner": "3.0.0-alpha.8",
-    "@freesewing/plugin-bartack": "3.0.0-alpha.8",
     "@freesewing/plugin-bust": "3.0.0-alpha.8",
     "@freesewing/plugin-buttons": "3.0.0-alpha.8",
-    "@freesewing/plugin-cutonfold": "3.0.0-alpha.8",
     "@freesewing/plugin-dimension": "3.0.0-alpha.8",
     "@freesewing/plugin-flip": "3.0.0-alpha.8",
     "@freesewing/plugin-gore": "3.0.0-alpha.8",

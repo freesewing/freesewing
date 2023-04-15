@@ -68,13 +68,13 @@ function draftHortensiaFrontpanel({
   )
   points.attachPoint2BR = new Point(handleVertPos + handleWidth * 2, h - h / 2 + handleSpace / 2)
 
-  macro('crossBox', {
+  macro('crossbox', {
     from: points.attachPoint1TL,
     to: points.attachPoint1BR,
     text: 'attachment',
   })
 
-  macro('crossBox', {
+  macro('crossbox', {
     from: points.attachPoint2TL,
     to: points.attachPoint2BR,
     text: 'attachment',

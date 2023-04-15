@@ -118,9 +118,9 @@ paco:
     '@freesewing/snapseries': *freesewing
 plugin-bundle:
   dev:
+    '@freesewing/plugin-annotations': *freesewing
     '@freesewing/plugin-banner': *freesewing
     '@freesewing/plugin-buttons': *freesewing
-    '@freesewing/plugin-cutonfold': *freesewing
     '@freesewing/plugin-dimension': *freesewing
     '@freesewing/plugin-grainline': *freesewing
     '@freesewing/plugin-logo': *freesewing
@@ -131,11 +131,10 @@ plugin-bundle:
     '@freesewing/plugin-sprinkle': *freesewing
 plugintest:
   peer:
+    '@freesewing/plugin-annotations': *freesewing
     '@freesewing/plugin-banner': *freesewing
-    '@freesewing/plugin-bartack': *freesewing
     '@freesewing/plugin-bust': *freesewing
     '@freesewing/plugin-buttons': *freesewing
-    '@freesewing/plugin-cutonfold': *freesewing
     '@freesewing/plugin-dimension': *freesewing
     '@freesewing/plugin-flip': *freesewing
     '@freesewing/plugin-gore': *freesewing

@@ -28,14 +28,11 @@ function teaganBack({
   if (options.curveToWaist) {
     paths.sideSeam = new Path()
       .move(points.hem)
-      .curve(points.hipsCp2,points.waistCp1, points.waist)
-      .curve_(points.waistCp2,points.armhole)
+      .curve(points.hipsCp2, points.waistCp1, points.waist)
+      .curve_(points.waistCp2, points.armhole)
       .hide()
   } else {
-    paths.sideSeam = new Path()
-      .move(points.hem)
-      .curve_(points.waistCp2,points.armhole)
-      .hide()
+    paths.sideSeam = new Path().move(points.hem).curve_(points.waistCp2, points.armhole).hide()
   }
   paths.saBase = new Path()
     .move(points.armhole)

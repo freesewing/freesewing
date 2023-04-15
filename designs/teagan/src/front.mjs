@@ -27,24 +27,26 @@ function teaganFront({
   // Adapt fit to waist
   if (options.curveToWaist) {
     let midWidth, lowerWidth
-    
-    midWidth = measurements.waist * (1 + options.curvedWaistEase)/4
-    lowerWidth = measurements.hips * (1 + options.hipsEase)/4
+
+    midWidth = (measurements.waist * (1 + options.curvedWaistEase)) / 4
+    lowerWidth = (measurements.hips * (1 + options.hipsEase)) / 4
     points.hem.x = lowerWidth
     points.hips.x = lowerWidth
     points.waist.x = midWidth
-    
+
     // control points should be somewhat evenly spaced around waist
     let cpAbove, cpBelow
     cpAbove = points.armhole.dy(points.waist) * 0.6
     cpBelow = points.hips.dy(points.waist) * 0.25
-    points.waistCp1 = points.waist.shift(90, cpBelow*2/3 - cpAbove/3)
-    points.waistCp2 = points.waist.shift(90, cpAbove*2/3 - cpBelow/3)
-    points.hipsCp2 = points.hips.shift(90,points.waist.dy(points.hips) * 0.3)
-    
+    points.waistCp1 = points.waist.shift(90, (cpBelow * 2) / 3 - cpAbove / 3)
+    points.waistCp2 = points.waist.shift(90, (cpAbove * 2) / 3 - cpBelow / 3)
+    points.hipsCp2 = points.hips.shift(90, points.waist.dy(points.hips) * 0.3)
+
     // warn if we're making a barrel-shaped shirt
     if (midWidth > lowerWidth) {
-      log.warning('width at waist exceeds width at hips; consider disabling the curve to waist option for a more standard shape')
+      log.warning(
+        'width at waist exceeds width at hips; consider disabling the curve to waist option for a more standard shape'
+      )
     }
   } else {
     let width
@@ -56,8 +58,6 @@ function teaganFront({
     points.waist.x = width
     points.waistCp2 = points.waist.shift(90, points.armhole.dy(points.waist) / 3)
   }
-  
-  
 
   // Clone cb (center back) into cf (center front)
   for (let key of ['Neck', 'Shoulder', 'Armhole', 'Hips', 'Hem']) {
@@ -92,14 +92,11 @@ function teaganFront({
   if (options.curveToWaist) {
     paths.sideSeam = new Path()
       .move(points.hem)
-      .curve(points.hipsCp2,points.waistCp1, points.waist)
-      .curve_(points.waistCp2,points.armhole)
+      .curve(points.hipsCp2, points.waistCp1, points.waist)
+      .curve_(points.waistCp2, points.armhole)
       .hide()
   } else {
-    paths.sideSeam = new Path()
-      .move(points.hem)
-      .curve_(points.waistCp2,points.armhole)
-      .hide()
+    paths.sideSeam = new Path().move(points.hem).curve_(points.waistCp2, points.armhole).hide()
   }
   paths.saBase = new Path()
     .move(points.armhole)
@@ -162,7 +159,7 @@ function teaganFront({
       macro('hd', {
         from: points.waist,
         to: points.hem,
-        y: points.hem.y + sa * 2.5 + 30
+        y: points.hem.y + sa * 2.5 + 30,
       })
       macro('vd', {
         from: points.hem,
