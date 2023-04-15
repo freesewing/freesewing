@@ -5,9 +5,10 @@ export const bannerboxMacros = {
     so = {
       topLeft: new Point(0, 0),
       bottomRight: new Point(100, 100),
-      title: 'No title for this bannerbox',
+      text: '',
       margin: 15,
-      className: 'text-xs fill-note',
+      textClassName: 'text-xs fill-note',
+      boxClassName: 'stroke-xs stroke-note lashed',
       dy: 4,
       spaces: 12,
       repeat: 10,
@@ -23,11 +24,12 @@ export const bannerboxMacros = {
       .line(new Point(so.topLeft.x, so.bottomRight.y).shift(225, offset))
       .line(so.topLeft.shift(135, offset))
       .close()
+      .addClass(so.boxClassName)
 
     macro('banner', {
       path: paths[id],
-      text: so.title,
-      className: 'text-xs fill-note',
+      text: so.text,
+      className: so.textClassName,
       repeat: 99,
       dy: 4,
     })
