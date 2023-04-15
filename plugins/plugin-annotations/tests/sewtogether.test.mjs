@@ -11,7 +11,7 @@ describe('Sewtogether Plugin Tests', () => {
       draft: ({ Point, points, macro, part }) => {
         points.from = new Point(10, 20)
         points.to = new Point(10, 220)
-        macro('sewtogether', {
+        macro('sewTogether', {
           from: points.from,
           to: points.to,
         })
@@ -48,7 +48,7 @@ describe('Sewtogether Plugin Tests', () => {
         points.from = new Point(10, 20)
         points.hinge = new Point(40, 110)
         points.to = new Point(10, 220)
-        macro('sewtogether', {
+        macro('sewTogether', {
           from: points.from,
           hinge: points.hinge,
           to: points.to,
@@ -72,14 +72,14 @@ describe('Sewtogether Plugin Tests', () => {
     expect(round(c.ops[1].to.y)).to.equal(120)
   })
 
-  it('Should run the sewtogether/hinge (with sa) macro', () => {
+  it('Should run the sewTogether/hinge (with sa) macro', () => {
     const part = {
       name: 'test',
       draft: ({ Point, points, macro, part }) => {
         points.from = new Point(10, 20)
         points.hinge = new Point(40, 110)
         points.to = new Point(10, 220)
-        macro('sewtogether', {
+        macro('sewTogether', {
           from: points.from,
           hinge: points.hinge,
           to: points.to,

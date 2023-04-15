@@ -1,6 +1,6 @@
 // Export macros
 export const bannerboxMacros = {
-  bannerbox: function (so, { points, Point, paths, Path, getId, macro }) {
+  bannerbox: function (so, { Point, paths, Path, getId, macro }) {
     // Spread so settings into defaults
     so = {
       topLeft: new Point(0, 0),

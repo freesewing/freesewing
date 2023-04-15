@@ -185,7 +185,7 @@ export const scaleboxMacros = {
       .attr('data-text', `${imperialDisplayHeight}`)
       .attr('data-text-class', 'text-xs center ')
   },
-  miniscale(so, { store, points, paths, scale, Point, Path }) {
+  miniscale(so, { points, paths, scale, Point, Path }) {
     // Passing `false` will remove the miniscale
     if (so === false) {
       for (const id of [

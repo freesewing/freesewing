@@ -21,7 +21,7 @@ export const sewtogetherHooks = {
 
 // Export macros
 export const sewtogetherMacros = {
-  sewTogether: function (so, { points, paths, Path, complete, scale, sa }) {
+  sewTogether: function (so, { points, paths, Path, complete, sa }) {
     if (so === false) {
       delete points.sewtogetherFrom
       delete points.sewtogetherFromCp
