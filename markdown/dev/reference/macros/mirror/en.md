@@ -56,7 +56,7 @@ macro('mirror', {
 | `points`     |            | `array`    | An array of pointnames, the names of Points in the `points` array to mirror |
 | `paths`      |            | `array`    | An array of pathnames, the names of Paths in the `paths` array to mirror |
 | `prefix`     | `mirrored` | `string`   | A prefix to apply to the names of the clones points and or paths. Ignored if `nameFormat` is set |
-| `nameFormat` |            | `function` | A method that receives the name of the path or point and should return the name for the cloned path and or point |
+| `nameFormat` |            | `function` | A method that receives the name of the path or point as a first argument and one of `path` or `point` as the second argument and should return the name for the cloned path and or point |
 
 ## Result
 
