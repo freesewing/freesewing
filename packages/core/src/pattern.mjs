@@ -216,7 +216,7 @@ Pattern.prototype.getRenderProps = function () {
           ...set[p].asProps(),
           store: this.setStores[set[p].set],
         }
-      } else if (this.setStores[set?.set]) {
+      } else if (this.setStores[set.set]) {
         this.setStores[set.set].log.info(
           `Part${p} is hidden in set ${set.set}. Not adding to render props`
         )
@@ -383,7 +383,7 @@ Pattern.prototype.__applySettings = function (sets) {
   if (!Array.isArray(sets)) throw 'Sets should be an array of settings objects'
   if (sets.length === 0) sets.push({}) // Required to load default settings
   this.settings = []
-  for (const i in sets) {
+  for (let i = 0; i < sets.length; i++) {
     // Don't mutate the input itself
     const set = { ...sets[i] }
     if (!set.options) set.options = {}

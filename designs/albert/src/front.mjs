@@ -1,5 +1,4 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
-import { version } from '../data.mjs'
 
 export const front = {
   name: 'albert.front',

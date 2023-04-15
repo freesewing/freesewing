@@ -1,6 +1,5 @@
 import { annotationsPlugin } from '@freesewing/plugin-annotations'
 import { base } from './base.mjs'
-import { version } from '../data.mjs'
 
 const snippies = [
   'button',
@@ -12,15 +11,6 @@ const snippies = [
   'notch',
   'bnotch',
 ]
-
-const bartackOptions = (options) => ({
-  angle: options.bartackAngle,
-  length: options.bartackLength,
-  density: options.bartackDensity,
-  width: options.bartackWidth,
-  start: options.bartackStart,
-  end: options.bartackEnd,
-})
 
 const pluginAnnotations = ({
   points,
@@ -307,10 +297,6 @@ const pluginAnnotations = ({
 
     // macro = miniscale
     points.miniscale = new Point(310, 138)
-    const minscaleboxOptions = {
-      at: points.scalebox,
-      rotate: options.scaleboxRotation,
-    }
     macro('miniscale', {
       at: points.miniscale,
       rotate: options.scaleboxRotation,
