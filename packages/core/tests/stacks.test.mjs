@@ -218,6 +218,16 @@ describe('Stacks', () => {
       expect(stack.bottomRight.x).to.equal(7.0710678118654755)
       expect(stack.bottomRight.y).to.equal(0)
     })
+
+    it('Should handle an empty stack', () => {
+      const stack = new Stack('test')
+      stack.context = { settings: [{ margin: 0 }] }
+      stack.home()
+      expect(stack.topLeft.x).to.equal(0)
+      expect(stack.topLeft.y).to.equal(0)
+      expect(stack.bottomRight.x).to.equal(0)
+      expect(stack.bottomRight.y).to.equal(0)
+    })
   })
 
   it('Should get the anchor for the stack', () => {
