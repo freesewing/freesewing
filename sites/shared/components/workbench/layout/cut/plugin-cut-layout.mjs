@@ -60,7 +60,7 @@ export const cutLayoutPlugin = function (material, grainAngle) {
             pattern.addPart({
               name: dupPartName,
               from: activePartConfig,
-              draft: ({ part, macro, store, points, utils }) => {
+              draft: ({ part, macro, utils }) => {
                 part.attributes.remove('transform')
 
                 // if they shouldn't be identical, flip every other piece
@@ -115,10 +115,10 @@ export const cutLayoutPlugin = function (material, grainAngle) {
         }
 
         // if there's a grain angle, rotate the part to be along it
-        macro('rotateToGrain', { bias: instruction.bias, flipped, grainSpec })
+        macro('rotateToGrain', { bias: instruction.bias, grainSpec })
       },
       // mirror the part across the line indicated by cutonfold
-      mirrorOnFold: ({ fold }, { paths, snippets, utils, macro, points }) => {
+      mirrorOnFold: ({ fold }, { paths, snippets, macro }) => {
         // get all the paths to mirror
         const mirrorPaths = []
         for (const p in paths) {
@@ -171,7 +171,7 @@ export const cutLayoutPlugin = function (material, grainAngle) {
        * if the part should be on the bias, this rotates the part to lie on the bias
        * while keeping the grainline annotation along the grain
        */
-      rotateToGrain: ({ bias, flipped, grainSpec }, { part, paths, points }) => {
+      rotateToGrain: ({ bias, grainSpec }, { part, paths, points, Point }) => {
         // the amount to rotate is the difference between this part's grain angle (as drafted) and the fabric's grain angle
         let toRotate = grainSpec === undefined ? 0 : grainAngle + grainSpec
         // don't over rotate

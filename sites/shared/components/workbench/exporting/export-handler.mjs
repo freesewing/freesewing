@@ -7,7 +7,7 @@ import { pluginCutlist } from '@freesewing/plugin-cutlist'
 import { cutLayoutPlugin } from '../layout/cut/plugin-cut-layout.mjs'
 import { fabricSettingsOrDefault } from '../layout/cut/index.mjs'
 import { useFabricLength } from '../layout/cut/settings.mjs'
-import { capitalize, formatFraction128, formatMm } from 'shared/utils.mjs'
+import { capitalize, formatMm } from 'shared/utils.mjs'
 import get from 'lodash.get'
 
 export const exportTypes = {
