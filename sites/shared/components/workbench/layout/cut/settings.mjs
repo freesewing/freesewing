@@ -78,7 +78,7 @@ export const GrainDirectionPicker = ({ grainDirection, activeFabric, updateGist 
   )
 }
 
-export const useFabricLength = (isImperial, height) => {
+export const useFabricLength = (isImperial, height, format = 'none') => {
   // regular conversion from mm to inches or cm
   const unit = isImperial ? 25.4 : 10
   // conversion from inches or cm to yards or meters
@@ -91,7 +91,7 @@ export const useFabricLength = (isImperial, height) => {
   // we multiply it by the rounder, round it up, then divide by the rounder again to get the rounded amount
   const roundCount = Math.ceil(rounder * inFabricUnits) / rounder
   // format as a fraction for imperial, a decimal for metric
-  const count = isImperial ? formatFraction128(roundCount, 'none') : round(roundCount, 1)
+  const count = isImperial ? formatFraction128(roundCount, format) : round(roundCount, 1)
 
   return `${count}${isImperial ? 'yds' : 'm'}`
 }
