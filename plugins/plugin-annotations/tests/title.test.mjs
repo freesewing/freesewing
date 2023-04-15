@@ -1,6 +1,6 @@
 import chai from 'chai'
 import { Design } from '@freesewing/core'
-import { plugin } from '../src/index.mjs'
+import { annotationsPlugin } from '../src/index.mjs'
 
 const expect = chai.expect
 
@@ -18,7 +18,7 @@ describe('Title Plugin Tests', () => {
 
         return part
       },
-      plugins: [plugin],
+      plugins: [annotationsPlugin],
     }
     const Pattern = new Design({
       data: { name: 'testPattern', version: 99 },
@@ -59,7 +59,7 @@ describe('Title Plugin Tests', () => {
 
         return part
       },
-      plugins: [plugin],
+      plugins: [annotationsPlugin],
     }
     const Pattern = new Design({
       data: { name: 'testPattern', version: 99 },
@@ -90,7 +90,7 @@ describe('Title Plugin Tests', () => {
 
         return part
       },
-      plugins: [plugin],
+      plugins: [annotationsPlugin],
     }
     const Pattern = new Design({
       data: { name: 'testPattern', version: 99 },

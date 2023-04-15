@@ -1,13 +1,13 @@
 ![FreeSewing](https://static.freesewing.org/banner.png)
 <p align='center'><a
-  href="https://www.npmjs.com/package/@freesewing/plugin-title"
-  title="@freesewing/plugin-title on NPM"
-  ><img src="https://img.shields.io/npm/v/@freesewing/plugin-title.svg"
-  alt="@freesewing/plugin-title on NPM"/>
+  href="https://www.npmjs.com/package/@freesewing/plugin-logo"
+  title="@freesewing/plugin-logo on NPM"
+  ><img src="https://img.shields.io/npm/v/@freesewing/plugin-logo.svg"
+  alt="@freesewing/plugin-logo on NPM"/>
   </a><a
   href="https://opensource.org/licenses/MIT"
   title="License: MIT"
-  ><img src="https://img.shields.io/npm/l/@freesewing/plugin-title.svg?label=License"
+  ><img src="https://img.shields.io/npm/l/@freesewing/plugin-logo.svg?label=License"
   alt="License: MIT"/>
   </a><a
   href="https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256"
@@ -15,10 +15,10 @@
   ><img src="https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg"
   alt="Code quality on DeepScan"/>
   </a><a
-  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Aplugin-title"
-  title="Open issues tagged pkg:plugin-title"
-  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:plugin-title.svg?label=Issues"
-  alt="Open issues tagged pkg:plugin-title"/>
+  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Aplugin-logo"
+  title="Open issues tagged pkg:plugin-logo"
+  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:plugin-logo.svg?label=Issues"
+  alt="Open issues tagged pkg:plugin-logo"/>
   </a><a
   href="#contributors-"
   title="All Contributors"
@@ -46,9 +46,9 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-# @freesewing/plugin-title
+# @freesewing/plugin-logo
 
-A FreeSewing plugin to add a title to your pattern parts
+A FreeSewing plugin that provides our logo as a snippet
 
 
 
@@ -65,7 +65,7 @@ A FreeSewing plugin to add a title to your pattern parts
 
 This repository is our *monorepo* holding all our NPM designs, plugins, other NPM packages, and (web)sites.
 
-This folder holds: @freesewing/plugin-title
+This folder holds: @freesewing/plugin-logo
 
 If you're not entirely sure what to do or how to start, type this command:
 

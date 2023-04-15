@@ -9,6 +9,7 @@ import { bannerboxMacros } from './bannerbox.mjs'
 import { bartackMacros } from './bartack.mjs'
 import { crossboxMacros } from './crossbox.mjs'
 import { scaleboxMacros } from './scalebox.mjs'
+import { titleMacros } from './title.mjs'
 // Hooks and Macros
 import { cutonfoldMacros, cutonfoldHooks } from './cutonfold.mjs'
 import { dimensionsMacros, dimensionsHooks } from './dimensions.mjs'
@@ -42,6 +43,7 @@ export const plugin = {
     ...grainlineMacros,
     ...pleatMacros,
     ...sewtogetherMacros,
+    ...titleMacros,
   },
 }
 

@@ -1,4 +1,5 @@
 import { base } from './base.mjs'
+import { logoPlugin } from '@freesewing/plugin-logo'
 
 const pluginLogo = ({
   points,
@@ -37,4 +38,5 @@ export const logo = {
     logoRotate: { deg: 0, min: -360, max: 360, menu: 'logo' },
   },
   draft: pluginLogo,
+  plugins: [logoPlugin],
 }

@@ -348,7 +348,7 @@ const pluginAnnotations = ({
     points.st_a = new Point(x - 5, y)
     points.st_b = new Point(x + 35, y + 10)
     points.st_c = new Point(x + 70, y)
-    macro('sewtogether', {
+    macro('sewTogether', {
       from: points.st_a,
       to: points.st_c,
       hinge: options.sewtogetherHinge,
@@ -357,7 +357,7 @@ const pluginAnnotations = ({
     macro('bannerbox', {
       topLeft: new Point(x, y - 30),
       bottomRight: new Point(x + 65, y + 10),
-      text: 'macro = sewtogether',
+      text: 'macro = sewTogether',
       ...store.get('bannerbox.macro'),
     })
 
@@ -379,6 +379,18 @@ const pluginAnnotations = ({
       bottomRight: new Point(x + 65, y + 35),
       text: 'macro = title',
       ...store.get('bannerbox.macro'),
+    })
+
+    points.logo = new Point(40, 40)
+    snippets.logo = new Snippet('logo', points.logo)
+      .attr('data-scale', options.logoScale)
+      .attr('data-rotate', options.logoRotate)
+
+    macro('bannerbox', {
+      topLeft: new Point(25, 10),
+      bottomRight: new Point(60, 45),
+      text: 'snippet = logo',
+      ...store.get('bannerbox.snippet'),
     })
 
     // Overarching bannerbox
@@ -418,6 +430,9 @@ export const annotations = {
     dimensionsCustomText: { bool: false, menu: 'annotations.dimensions' },
     dimensionsEndMarker: { bool: true, menu: 'annotations.dimensions' },
     dimensionsStartMarker: { bool: true, menu: 'annotations.dimensions' },
+    // Logo
+    logoScale: { pct: 100, min: 10, max: 200, menu: 'annptations.logo' },
+    logoRotate: { deg: 0, min: -360, max: 360, menu: 'annotations.logo' },
     // Pleat
     pleatMargin: { count: 35, min: 0, max: 50, menu: 'annotations.pleat' },
     pleatReverse: { bool: false, menu: 'annotations.pleat' },

@@ -6,6 +6,7 @@
   "plugin-flip": "A FreeSewing plugin to flip parts horizontally",
   "plugin-gore": "A FreeSewing plugin to generate gores for a semi-sphere or dome",
   "plugin-i18n": "A FreeSewing plugin for pattern translation",
+  "plugin-logo": "A FreeSewing plugin that provides our logo as a snippet",
   "plugin-measurements": "A FreeSewing plugin that adds additional measurements that can be calculated from existing ones",
   "plugin-mirror": "A FreeSewing plugin to mirror points or paths",
   "plugin-round": "A FreeSewing plugin to round corners",
@@ -13,6 +14,5 @@
   "plugin-svgattr": "A FreeSewing plugin to set SVG attributes",
   "plugin-theme": "A FreeSewing plugin that provides a default theme",
   "plugin-timing": "A FreeSewing plugin to record the time it takes to draft your pattern parts",
-  "plugin-title": "A FreeSewing plugin to add a title to your pattern parts",
   "plugin-versionfree-svg": "A FreeSewing plugin to keep version info out of your SVG to allow easy diffs across versions"
 }

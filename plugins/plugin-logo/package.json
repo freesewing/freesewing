@@ -1,7 +1,7 @@
 {
-  "name": "@freesewing/plugin-title",
+  "name": "@freesewing/plugin-logo",
   "version": "3.0.0-alpha.4",
-  "description": "A FreeSewing plugin to add a title to your pattern parts",
+  "description": "A FreeSewing plugin that provides our logo as a snippet",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
