@@ -15,139 +15,111 @@ Due to seamless and closure Sandy's needing different constructions we have sepa
 
 </Note>
 
-## Sandy with Closure (default)
+## Etape 1 : Préparation de la jupe
 
-### Step 1: Prepping the Skirt
-
-- With _good sides together_ sew the skirt seam up to where you intend the opening to start.
+- Si vous prévoyez une fermeture, cousez la couture de la jupe _bonnes faces ensemble_ jusqu'à l'endroit où vous voulez que l'ouverture commence.
 - Add Pockets if using.
 - If using lining, prep the same as the skirt.
-- _Finish_ if not lining.
+- _Finir_ les coutures si pas de doublure.
 
 <Note>
 
-Pockets are not included in Sandy as it has one seam by default, if you cut multiple skirt pieces instead of a single one you and easily add pockets.
+Les poches ne sont pas incluses dans Sandy car il y a une couture par défaut ou pas de couture du tout.
+
+Si vous souhaitez des poches à l'entrejambe, vous pouvez découper le patron de la jupe en plusieurs morceaux plutôt qu'en un seul afin de créer des coutures pour les insérer. En le coupant en trois (par défaut) ou en deux (sans couture), vous obtiendrez deux coutures latérales pour deux poches à l'entrejambe. N'oubliez pas d'ajouter la marge de couture arrière aux lignes de coupe si vous en avez besoin.
+
+Si vous ne souhaitez pas créer de coutures supplémentaires mais que vous voulez tout de même avoir des poches, vous pouvez utiliser des poches plaquées ou, si vous vous sentez l'âme d'un aventurier, des poches passepoilées.
 
 </Note>
 
-### Step 2: Prep the opening
+## Étape 2 : Préparez l'ouverture
 
 - Insert zipper or placket into opening if using.
-- If not using, press the openings seam allowance to the inside and _Edgestitch_/_Topstitch_ in place. You may also wish to continue the topstiching down the seam.
+- If not using, press the openings seam allowance to the inside and _Edgestitch_/_Topstitch_ in place. Vous pouvez également poursuivre la surpiqûre le long de la couture.
 
 <Note>
 
-Skip this step if you are including the zipper in the waistband.
+Sautez cette étape si :
+- Vous incluez la fermeture à glissière dans la ceinture.
+- Vous réalisez une version sans couture.
 
 </Note>
 
-### Step 3: Lining
+## Étape 3 : Doublure
 
-- Face the skirt if desired.
+- (Facultatif) doublez la jupe avec un tissu plus rigide ou plus résistant.
 - Attach Lining to skirt at hem and opening by your preferred method.
 - _Baste_ Lining to skirt at waist.
-- Gather skirt and lining skit if needed.
+- Rassembler la taille si nécessaire.
 
 <Note>
 
-These instructions will treat the lining and skirt the same at the waist.  
-If not lining you should face the skirt when hemming later.
+## Étape 4 : La ceinture
 
-</Note>
+### Fermetures
 
-### Step 4: The waistband
+- Interfacer/renforcer la moitié de la partie de la ceinture dans le sens de la longueur. Ou interfacer/renforcer l'une des parties incurvées de la ceinture.
+- Repassez sous le surplus de couture sur le bord long de la ceinture qui n'est pas entoilée. Ajuster. _Coller_ le pli en place si nécessaire.
+- Avec _les bonnes faces ensemble_, coudre l'interface ceinture / côté de la ceinture à la jupe. Si nécessaire, froncez la jupe jusqu'à la ceinture.
+- Si vous utilisez la ceinture incurvée, cousez la partie non interfacée à la partie interfacée. Découpez et coupez la couture, puis repassez la partie non interfacée vers le haut et à l'écart de la jupe.
 
-- Face half the waistbands parts lengthwise.
-- With _good sides together_ sew the waistbands together along one of the short edges.
-- Press under the seam allowance on the long edge of the waistband that is not faced.
-- Attach the faced side of the waistband, _good sides together_ to the skirt. There will be some overhang, the side you wish not to overlap should be overhang by your seam allowance. The side intended to overlap will have a greater overhang. Trim seam.
-- Press the waistband and seam allowance up and away from the skirt.
-- If inserting a zipper now is the time to do so, attach the zipper from the fold line down. Then follow the rest of the instructions ommiting overhangs and other closures. You will need to attach the lining to the zipper at this point if you have not treated the lining and skirt as one at the opening.
-- Press the waistband _good sides together_ along fold-line.
-- Sew the overhangs with your seam allowance.
+Il y aura des dépassements :
+
+- Le côté que vous ne souhaitez pas faire chevaucher doit dépasser de votre marge de couture.
+- Le côté destiné à se chevaucher aura un plus grand débordement.
+- Si vous utilisez une patte de boutonnage, les deux côtés dépasseront de votre marge de couture.
+- Si vous utilisez une fermeture à glissière dans la ceinture, l'excédent le plus important devra être coupé au niveau de la marge de couture.
+
+__Insertion d'une fermeture à glissière dans la ceinture__
+- If inserting a zipper into the waistband now is the time to do so, attach the zipper from the waistband fold line down. Ou à partir de la ligne de couture vers le bas pour une ceinture incurvée.
+- _Slipstitch_ or _Whipstitch_ the lining to the zipper at this point if you have not treated the lining and skirt as one at the opening.
+- Presser sous les surplombs.
+- Press the waistband _wrong sides together_ along fold-line. Or along seam-line for curved waistband.
+- Slipstitch_ or _Whipstitch_ the overhang edges to the zipper.
+- _Edgestitch_ the waistband in place.
+- Alternatively, _Slipstitch_ or _Whipstitch_ the waistband in place on the inside.
+
+__Autres fermetures__
+- Press the waistband _good sides together_ along fold-line. Or along seam-line for curved waistband.
+- Cousez les dépassements avec votre marge de couture.
 - Turn the waistband out and to the inside, Press.
 - _Egdestitch_ the waistband in place, this should also close the gap of the over-lap.
 - Alternatively, _Slipstich_ or _Whipstitch_ the waistband in place on the inside and close the gap of the over-lap with _Slipstiching_.
-- Add button and buttonhole, snaps or dress hooks, whatever is your preferred closure to the waistband overhang.
+- Add snaps, dress hooks or button and buttonhole, whatever is your preferred closure to the waistband overhang.
 
-<Tip>
+### Seamless
 
-If you are having trouble keeping the pressed under seam allowance of the waistband folded/not staying pressed you may find it helpful to _Baste_ the fold in place.
-
-</Tip>
-
-### Step 5: Hemming/Facing
-
-If you have hemmed the skirt with the lining you can skip this step.
-
-- Faced the skirt if desired.
-- Line the facing if desired.
-- Hem the skirt if you have not already done so with the lining.
-
-<Note>  
-
-There are many ways to hem/face the bottom of a skirt, If you have a prefered method use it here.
-
-</Note>
-
-### Step 6: Enjoy!
-
-You are all done! Now go enjoy your wonderful new skirt!
-
-## Sandy with no closure (seamless/elasticated waistband)
-
-### Step 1: Lining and Skirt
-
-- Face skirt if desired.
-- Attach Lining to skirt at hem by your preferred method if using.
-- _Baste_ Lining to skirt at waist.
-- _Finish_ seams if not lining.
-- Gather skirt and lining skit if needed.
-
-<Note>
-
-These instructions will treat the lining and skirt the same at the waist.  
-If not lining you should face the skirt when hemming later.
-
-</Note>
-
-### Step 2: The waistband
-
-- With _good sides together_ sew the waistband in half along the short seams, leaving a gap for the elastic that will be on the inside.
+- If curved waistband with _good sides together_ sew the two waistbands together along the shortest curved edge. Press away from one another, Trim and clip the seam.
+- With _good sides together_ sew the waistband together along the short seams, leaving a gap for the elastic that will be on the inside.
 - Press under the seam allowance on the long edge of the waistband that is intended to be on the inside.
 - With _good sides together_ attach the waistband to the skirt along the unpressed seam. Trim seam.
 - Press waistband and seam allowance up away from skirt.
-- Press the waistband to the inside along the fold-line.
+- Press the waistband to the inside along the fold-line/seam-line.
 - _Edgestitch_ the waistband in place.
 - Alternatively you can _Slipstitch_ or _Whipstitch_ the waistband in place on the inside.
 - Cut the elastic to your waist.
 - Thread the elastic through the opening of the waistband making sure not to lose the end.
-- Overlap the ends by 1cm (3/8 inch) and zig-zag stitch in place.
-- Tuck elastic into waistband and close the opening with hand-sewing.
+- Overlap the ends of the elastic by 1cm (3/8 inch) and zig-zag stitch in place.
+- Rentrer l'élastique dans la ceinture et fermer l'ouverture par une couture à la main.
 
-<Tip>
+## Étape 5 : Ourlet
 
-If you are having trouble keeping the pressed under seam allowance of the waistband folded/not staying pressed you may find it helpful to _Baste_ the fold in place.
+Si vous avez ourlé la jupe avec la doublure, vous pouvez sauter cette étape.
 
-</Tip>
-
-### Step 3: Hemming/Facing
-
-If you have hemmed the skirt with the lining you can skip this step.
-
-- Faced the skirt if desired.
-- Line the facing if desired.
-- Hem the skirt if you have not already done so with the lining.
+Faites un ourlet sur la jupe de l'une des façons suivantes :
+- Oubliez la marge de l'ourlet et assemblez le bord brut.
+- Bind the raw edge of the hem allowance, single fold the hem under and either _Topstitch_ or hand sew the hem in place.
+- Double fold the hem under and either _Topstitch_ or hand sew the hem in place. Vous avez peut-être entendu parler d'un ourlet roulé.
 
 <Note>  
 
-There are many ways to hem/face the bottom of a skirt, If you have a prefered method use it here.
+Il y a de nombreuses façons d'ourler le bas d'une jupe. Si vous avez une méthode préférée, utilisez-la ici.
 
 </Note>
 
-### Step 4: Enjoy!
+## Étape 6: Profitez-en!
 
-You all done! Now go enjoy your wonderfully seamless skirt!
+Vous avez terminé ! Now go enjoy your wonderful new skirt and try not to get too dizzy showing off it's fullness!
 
 <Note>
 

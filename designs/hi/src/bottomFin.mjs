@@ -18,24 +18,24 @@ function draftHiBottomFin({
   part,
 }) {
   let bottomFin01_02d = 250.63638754690027 * options.size
-  let bottomFin01_02a = 119.34849371430543
+  const bottomFin01_02a = 119.34849371430543
   let bottomFin01_03d = 137.70322741678933 * options.size
-  let bottomFin01_03a = 175.11970494988498
-  let bottomFin01cp1d = 133.21819413653674 * options.size
-  let bottomFin01cp2d = 51.94197687805115 * options.size
-  let bottomFin01cp1a = 95.20910872095476
-  let bottomFin01cp2a = 158.66090918215986
-  let bottomFin02cp1d = 29.25974733588791 * options.size
-  let bottomFin02cp2d = 31.28292571739416 * options.size
-  let bottomFin02cp1a = 208.55316756249104
-  let bottomFin02cp2a = 28.113642612639804
-  let bottomFin03cp1d = 53.31550082293142 * options.size
-  let bottomFin03cp2d = 177.65809391356197 * options.size
-  let bottomFin03cp1a = 9.79694130335566
-  let bottomFin03cp2a = 80.81868300891519
+  const bottomFin01_03a = 175.11970494988498
+  const bottomFin01cp1d = 133.21819413653674 * options.size
+  const bottomFin01cp2d = 51.94197687805115 * options.size
+  const bottomFin01cp1a = 95.20910872095476
+  const bottomFin01cp2a = 158.66090918215986
+  const bottomFin02cp1d = 29.25974733588791 * options.size
+  const bottomFin02cp2d = 31.28292571739416 * options.size
+  const bottomFin02cp1a = 208.55316756249104
+  const bottomFin02cp2a = 28.113642612639804
+  const bottomFin03cp1d = 53.31550082293142 * options.size
+  const bottomFin03cp2d = 177.65809391356197 * options.size
+  const bottomFin03cp1a = 9.79694130335566
+  const bottomFin03cp2a = 80.81868300891519
 
-  let finLength = store.get('aboveMouthFinLength') + store.get('bellyFinLength')
-  let finCircumference = store.get('topFinCircumference')
+  const finLength = store.get('aboveMouthFinLength') + store.get('bellyFinLength')
+  const finCircumference = store.get('topFinCircumference')
 
   let diff = 0
   let iteration = 0
@@ -97,11 +97,29 @@ function draftHiBottomFin({
 
   // Complete?
   if (complete) {
-    points.bottomFinSnippet = new Path()
+    const finAttachment = new Path()
       .move(points.bottomFin01)
       .curve(points.bottomFin01cp2, points.bottomFin03cp1, points.bottomFin03)
-      .shiftAlong(store.get('aboveMouthFinLength'))
+    points.bottomFinSnippet = finAttachment.shiftAlong(store.get('aboveMouthFinLength'))
     snippets.bottomFin = new Snippet('bnotch', points.bottomFinSnippet)
+
+    const attachments = finAttachment.split(points.bottomFinSnippet)
+    paths.finAttachmentAboveMouth = attachments[0].reverse().attr('data-text-class', 'text-xs')
+    paths.finAttachmentBelly = attachments[1].reverse().attr('data-text-class', 'text-xs')
+    macro('banner', {
+      path: paths.finAttachmentAboveMouth,
+      text: '+',
+      dy: 0,
+      spaces: 0,
+      repeat: 4,
+    })
+    macro('banner', {
+      path: paths.finAttachmentBelly,
+      text: '-o-',
+      dy: 0,
+      spaces: 4,
+      repeat: 7,
+    })
 
     points.titleAnchor = points.bottomFin02
       .shiftFractionTowards(points.bottomFin01, 0.4)
@@ -125,7 +143,7 @@ function draftHiBottomFin({
       let tempPath = new Path()
         .move(points.bottomFin03)
         .curve(points.bottomFin03cp2, points.bottomFin02cp1, points.bottomFin02)
-      let tempPoint = tempPath.shiftFractionAlong(0.8)
+      const tempPoint = tempPath.shiftFractionAlong(0.8)
       points.bottomFinInsideLeft = tempPath.split(tempPoint)[0].edge('right')
       tempPath = new Path()
         .move(points.bottomFin01)

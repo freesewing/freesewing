@@ -16,12 +16,12 @@ function draftHiLowerTeeth({
   macro,
   part,
 }) {
-  let lowerTeeth01_02d = 75.74338717643937 * options.size
-  let lowerTeeth01_02a = 25.414236606099728 + 180
-  let lowerTeeth02cp1d = 47.74891452755759 * options.size
-  let lowerTeeth02cp1a = 42.59332849750379
-  let lowerTeeth01cp2d = 27.774046078481962 * options.size
-  let lowerTeeth01cp2a = 180
+  const lowerTeeth01_02d = 75.74338717643937 * options.size
+  const lowerTeeth01_02a = 25.414236606099728 + 180
+  const lowerTeeth02cp1d = 47.74891452755759 * options.size
+  const lowerTeeth02cp1a = 42.59332849750379
+  const lowerTeeth01cp2d = 27.774046078481962 * options.size
+  const lowerTeeth01cp2a = 180
 
   points.lowerTeeth01 = new Point(0, 0)
   points.lowerTeeth02 = points.lowerTeeth01.shift(lowerTeeth01_02a, lowerTeeth01_02d)
