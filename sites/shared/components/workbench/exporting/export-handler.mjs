@@ -3,7 +3,7 @@ import fileSaver from 'file-saver'
 import { themePlugin } from '@freesewing/plugin-theme'
 import { pluginI18n } from '@freesewing/plugin-i18n'
 import { pagesPlugin, fabricPlugin } from '../layout/plugin-layout-part.mjs'
-import { pluginCutlist } from '@freesewing/plugin-cutlist'
+import { pluginAnnotations } from '@freesewing/plugin-annotations'
 import { cutLayoutPlugin } from '../layout/cut/plugin-cut-layout.mjs'
 import { fabricSettingsOrDefault } from '../layout/cut/index.mjs'
 import { useFabricLength } from '../layout/cut/settings.mjs'
@@ -39,7 +39,7 @@ const themedPattern = (design, gist, overwrite, format, t) => {
   // add the theme and translation to the pattern
   pattern.use(themePlugin, { stripped: format !== 'svg', skipGrid: ['pages'] })
   pattern.use(pluginI18n, { t })
-  pattern.use(pluginCutlist)
+  pattern.use(pluginAnnotations)
 
   return pattern
 }

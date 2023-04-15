@@ -3,7 +3,7 @@ import { CutLayoutSettings } from './settings.mjs'
 import { Draft } from '../draft/index.mjs'
 import { fabricPlugin } from '../plugin-layout-part.mjs'
 import { cutLayoutPlugin } from './plugin-cut-layout.mjs'
-import { pluginCutlist } from '@freesewing/plugin-cutlist'
+import { pluginAnnotations } from '@freesewing/plugin-annotations'
 import { measurementAsMm } from 'shared/utils.mjs'
 import { useEffect } from 'react'
 import get from 'lodash.get'
@@ -43,8 +43,8 @@ const useFabricDraft = (gist, design, fabricSettings) => {
     draft.use(fabricPlugin(layoutSettings))
     // add the cutLayout plugin
     draft.use(cutLayoutPlugin(fabricSettings.activeFabric, fabricSettings.grainDirection))
-    // also, pluginCutlist and pluginFlip are needed
-    draft.use(pluginCutlist)
+    // also, pluginAnnotations and pluginFlip are needed
+    draft.use(pluginAnnotations)
 
     // draft the pattern
     draft.draft()

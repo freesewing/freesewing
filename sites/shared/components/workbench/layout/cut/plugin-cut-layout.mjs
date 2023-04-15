@@ -64,8 +64,7 @@ export const cutLayoutPlugin = function (material, grainAngle) {
                 part.attributes.remove('transform')
 
                 // if they shouldn't be identical, flip every other piece
-                const flipped = !instruction.identical && c % 2 === 1
-                if (flipped) {
+                if (!instruction.identical && c % 2 === 1) {
                   part.attributes.add(
                     'transform',
                     grainAngle === 90 ? 'scale(-1, 1)' : 'scale(1, -1)'
@@ -75,7 +74,6 @@ export const cutLayoutPlugin = function (material, grainAngle) {
                 macro('handleFoldAndGrain', {
                   partCutlist,
                   instruction,
-                  flipped,
                 })
 
                 // combine the transforms
@@ -97,7 +95,7 @@ export const cutLayoutPlugin = function (material, grainAngle) {
     macros: {
       ...pluginMirror.macros,
       // handle mirroring on the fold and rotating to sit along the grain or bias
-      handleFoldAndGrain: ({ partCutlist, instruction, flipped }, { points, macro }) => {
+      handleFoldAndGrain: ({ partCutlist, instruction }, { points, macro }) => {
         // get the grain angle for the part for this set of instructions
         const grainSpec = partCutlist.grain
           ? partCutlist.grain + (instruction.bias ? 45 : 0)

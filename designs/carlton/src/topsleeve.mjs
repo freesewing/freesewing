@@ -1,6 +1,6 @@
 import { topSleeve as bentTopSleeve } from '@freesewing/bent'
 import { front as bentFront } from '@freesewing/bent'
-import { pluginCutlist } from '@freesewing/plugin-cutlist'
+import { pluginAnnotations } from '@freesewing/plugin-annotations'
 
 function draftCarltonTopSleeve({
   paperless,
@@ -184,6 +184,6 @@ export const topSleeve = {
     sleevecapHeight: { pct: 45, min: 40, max: 60, menu: 'advanced' },
     sleevecapEase: { pct: 1, min: 0, max: 10, menu: 'advanced' },
   },
-  plugins: [pluginCutlist],
+  plugins: [pluginAnnotations],
   draft: draftCarltonTopSleeve,
 }

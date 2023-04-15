@@ -1,7 +1,7 @@
 import { back as bentBack } from '@freesewing/bent'
 import { calculateRatios } from './shared.mjs'
 import { hidePresets } from '@freesewing/core'
-import { pluginCutlist } from '@freesewing/plugin-cutlist'
+import { pluginAnnotations } from '@freesewing/plugin-annotations'
 
 function draftCarltonBack({
   paperless,
@@ -250,6 +250,6 @@ export const back = {
     waistEase: { pct: 14, min: 8, max: 25, menu: 'fit' },
     seatEase: { pct: 14, min: 8, max: 25, menu: 'fit' },
   },
-  plugins: [pluginCutlist],
+  plugins: [pluginAnnotations],
   draft: draftCarltonBack,
 }

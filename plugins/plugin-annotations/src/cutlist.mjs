@@ -1,17 +1,14 @@
-import { name, version } from '../data.mjs'
+export const cutlistStores = [
+  ['cutlist.addCut', addCut],
+  ['cutlist.removeCut', removeCut],
+  ['cutlist.setGrain', setGrain],
+  ['cutlist.setCutOnFold', setCutOnFold],
+  ['cutlist.getCutFabrics', getCutFabrics],
+]
 
-export const plugin = {
-  name,
-  version,
-  store: [
-    ['cutlist.addCut', addCut],
-    ['cutlist.removeCut', removeCut],
-    ['cutlist.setGrain', setGrain],
-    ['cutlist.setCutOnFold', setCutOnFold],
-    ['cutlist.getCutFabrics', getCutFabrics],
-  ],
-  hooks: {
-    prePartDraft: (pattern) => {
+export const cutlistHooks = {
+  prePartDraft: [
+    function (pattern) {
       const injectedPart = pattern.config.inject[pattern.activePart]
       if (!injectedPart) return
 
@@ -19,12 +16,8 @@ export const plugin = {
       const injectedCutlist = store.get(['cutlist', injectedPart], {})
       store.set(['cutlist', pattern.activePart], { ...injectedCutlist })
     },
-  },
+  ],
 }
-
-// More specifically named exports
-export const cutlistPlugin = plugin
-export const pluginCutlist = plugin
 
 /**
  * Add a set of cutting instructions for the part

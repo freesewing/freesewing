@@ -78,7 +78,6 @@ body:
         - plugins/plugin-bundle
         - plugins/plugin-bust
         - plugins/plugin-buttons
-        - plugins/plugin-cutlist
         - plugins/plugin-cutonfold
         - plugins/plugin-dimension
         - plugins/plugin-flip
