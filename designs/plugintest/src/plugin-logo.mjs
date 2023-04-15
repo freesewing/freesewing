@@ -1,6 +1,17 @@
 import { base } from './base.mjs'
 
-const pluginLogo = ({ points, Point, paths, Path, snippets, Snippet, options, part, macro }) => {
+const pluginLogo = ({
+  points,
+  Point,
+  paths,
+  Path,
+  snippets,
+  Snippet,
+  options,
+  part,
+  macro,
+  store,
+}) => {
   if (['logo', 'all'].indexOf(options.plugin) !== -1) {
     points.a = new Point(40, 40)
     snippets.a = new Snippet('logo', points.a)
@@ -10,7 +21,8 @@ const pluginLogo = ({ points, Point, paths, Path, snippets, Snippet, options, pa
     macro('bannerbox', {
       topLeft: new Point(25, 10),
       bottomRight: new Point(60, 45),
-      title: 'snippet = logo',
+      text: 'snippet = logo',
+      ...store.get('bannerbox.snippet'),
     })
   }
 

@@ -1,7 +1,18 @@
 import { flipPlugin } from '@freesewing/plugin-flip'
 import { base } from './base.mjs'
 
-const pluginFlip = ({ points, Point, paths, Path, snippets, Snippet, options, macro, part }) => {
+const pluginFlip = ({
+  points,
+  Point,
+  paths,
+  Path,
+  snippets,
+  Snippet,
+  options,
+  macro,
+  part,
+  store,
+}) => {
   if (['flip', 'all'].indexOf(options.plugin) !== -1) {
     points.mirrorA = new Point(50, 0)
     points.mirrorB = new Point(0, 0)
@@ -32,7 +43,8 @@ const pluginFlip = ({ points, Point, paths, Path, snippets, Snippet, options, ma
     macro('bannerbox', {
       topLeft: new Point(-45, 5),
       bottomRight: new Point(-5, 40),
-      title: 'macro = flip',
+      text: 'macro = flip',
+      ...store.get('bannerbox.macro'),
     })
   }
 

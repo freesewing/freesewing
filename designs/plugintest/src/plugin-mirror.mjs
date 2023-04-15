@@ -1,7 +1,18 @@
 import { mirrorPlugin } from '@freesewing/plugin-mirror'
 import { base } from './base.mjs'
 
-const pluginMirror = ({ points, Point, paths, Path, snippets, Snippet, options, macro, part }) => {
+const pluginMirror = ({
+  points,
+  Point,
+  paths,
+  Path,
+  snippets,
+  Snippet,
+  options,
+  macro,
+  part,
+  store,
+}) => {
   if (['mirror', 'all'].indexOf(options.plugin) !== -1) {
     // Mirror lines
     points.mirrorA = new Point(0, 0)
@@ -52,7 +63,8 @@ const pluginMirror = ({ points, Point, paths, Path, snippets, Snippet, options, 
     macro('bannerbox', {
       topLeft: new Point(options.mirrorLine === 'b' ? -35 : 5, -25),
       bottomRight: new Point(65, 50),
-      title: 'plugin = measurements',
+      text: 'plugin = measurements',
+      ...store.get('bannerbox.plugin'),
     })
   }
 

@@ -8,26 +8,12 @@ import { logo } from './plugin-logo.mjs'
 import { measurements } from './plugin-measurements.mjs'
 import { mirror } from './plugin-mirror.mjs'
 import { round } from './plugin-round.mjs'
-import { sewtogether } from './plugin-sewtogether.mjs'
 import { sprinkle } from './plugin-sprinkle.mjs'
-import { title } from './plugin-title.mjs'
 
 // Setup our new design
 const Plugintest = new Design({
   data,
-  parts: [
-    annotations,
-    flip,
-    gore,
-    i18n,
-    logo,
-    measurements,
-    mirror,
-    round,
-    //sewtogether,
-    sprinkle,
-    //title,
-  ],
+  parts: [annotations, flip, gore, i18n, logo, measurements, mirror, round, sprinkle],
 })
 
 // Named exports

@@ -32,6 +32,7 @@ const pluginAnnotations = ({
   part,
   snippets,
   Snippet,
+  store,
 }) => {
   if (['annotations', 'all'].indexOf(options.plugin) !== -1) {
     let y = 0
@@ -52,8 +53,9 @@ const pluginAnnotations = ({
     macro('bannerbox', {
       topLeft: points.banner_from,
       bottomRight: points.banner_to,
-      title: 'macro = banner',
+      text: 'macro = banner',
       margin,
+      ...store.get('bannerbox.macro'),
     })
 
     // macro = crossbox
@@ -68,8 +70,9 @@ const pluginAnnotations = ({
     macro('bannerbox', {
       topLeft: points.crossbox_a,
       bottomRight: points.crossbox_b,
-      title: 'macro = crossbox',
+      text: 'macro = crossbox',
       margin,
+      ...store.get('bannerbox.macro'),
     })
 
     // Shared bartack options
@@ -93,8 +96,9 @@ const pluginAnnotations = ({
     macro('bannerbox', {
       topLeft: points.bartack,
       bottomRight: points.bartack.shift(0, 15),
-      title: 'macro = bartack',
+      text: 'macro = bartack',
       margin,
+      ...store.get('bannerbox.macro'),
     })
 
     // macro = bartackAlong
@@ -115,8 +119,9 @@ const pluginAnnotations = ({
     macro('bannerbox', {
       topLeft: points.bartack_a,
       bottomRight: points.bartack_d,
-      title: 'macro = bartackAlong',
+      text: 'macro = bartackAlong',
       margin,
+      ...store.get('bannerbox.macro'),
     })
 
     // macro = bartackFractionAlong
@@ -137,8 +142,9 @@ const pluginAnnotations = ({
     macro('bannerbox', {
       topLeft: points.bartack_e,
       bottomRight: points.bartack_h,
-      title: 'macro = bartackFractionAlong',
+      text: 'macro = bartackFractionAlong',
       margin,
+      ...store.get('bannerbox.macro'),
     })
 
     // macro = cutonfold
@@ -155,8 +161,9 @@ const pluginAnnotations = ({
     macro('bannerbox', {
       topLeft: points.cof_a.shift(90, 10),
       bottomRight: points.cof_b.shift(90, 10),
-      title: 'macro = cutonfold',
+      text: 'macro = cutonfold',
       margin,
+      ...store.get('bannerbox.macro'),
     })
 
     // Snippets
@@ -171,8 +178,9 @@ const pluginAnnotations = ({
       macro('bannerbox', {
         topLeft: points[snippet],
         bottomRight: points[snippet],
-        title: `snippet = ${snippet}`,
+        text: `snippet = ${snippet}`,
         margin,
+        ...store.get('bannerbox.snippet'),
       })
       x += margin
     }
@@ -199,8 +207,9 @@ const pluginAnnotations = ({
     macro('bannerbox', {
       topLeft: points.vd_from,
       bottomRight: points.vd_to,
-      title: 'macro = vd',
+      text: 'macro = vd',
       margin,
+      ...store.get('bannerbox.macro'),
     })
 
     // macro = hd
@@ -218,8 +227,9 @@ const pluginAnnotations = ({
     macro('bannerbox', {
       topLeft: points.hd_from,
       bottomRight: points.hd_to.shift(-90, 15),
-      title: 'macro = hd',
+      text: 'macro = hd',
       margin,
+      ...store.get('bannerbox.macro'),
     })
 
     // macro = ld
@@ -236,8 +246,9 @@ const pluginAnnotations = ({
     macro('bannerbox', {
       topLeft: points.ld_from.shift(90, 10),
       bottomRight: points.ld_to.shift(-90, 5),
-      title: 'macro = ld',
+      text: 'macro = ld',
       margin,
+      ...store.get('bannerbox.macro'),
     })
 
     // macro = pd
@@ -257,8 +268,9 @@ const pluginAnnotations = ({
     macro('bannerbox', {
       topLeft: points.pd_from,
       bottomRight: points.pd_to.shift(-90, 23),
-      title: 'macro = ld',
+      text: 'macro = ld',
       margin,
+      ...store.get('bannerbox.macro'),
     })
 
     // macro = grainline
@@ -270,8 +282,9 @@ const pluginAnnotations = ({
     macro('bannerbox', {
       topLeft: points.gl_a,
       bottomRight: points.gl_b,
-      title: 'macro = grainline',
+      text: 'macro = grainline',
       margin,
+      ...store.get('bannerbox.macro'),
     })
 
     // macro = pleat
@@ -287,8 +300,9 @@ const pluginAnnotations = ({
     macro('bannerbox', {
       topLeft: points.pleat_a.shift(-90, 5),
       bottomRight: points.pleat_b.shift(0, 40).shift(90, 5),
-      title: 'macro = pleat',
+      text: 'macro = pleat',
       margin,
+      ...store.get('bannerbox.macro'),
     })
 
     // macro = miniscale
@@ -304,8 +318,9 @@ const pluginAnnotations = ({
     macro('bannerbox', {
       topLeft: new Point(303, 133),
       bottomRight: new Point(320, 142),
-      title: 'macro = miniscale',
+      text: 'macro = miniscale',
       margin,
+      ...store.get('bannerbox.macro'),
     })
 
     // macro = scalebox
@@ -322,8 +337,56 @@ const pluginAnnotations = ({
     macro('bannerbox', {
       topLeft: new Point(0, y - 20),
       bottomRight: new Point(95, y + 20),
-      title: 'macro = scalebox',
+      text: 'macro = scalebox',
       margin,
+      ...store.get('bannerbox.macro'),
+    })
+
+    // macro = sewtogether
+    x = 127
+    y += 10
+    points.st_a = new Point(x - 5, y)
+    points.st_b = new Point(x + 35, y + 10)
+    points.st_c = new Point(x + 70, y)
+    macro('sewtogether', {
+      from: points.st_a,
+      to: points.st_c,
+      hinge: options.sewtogetherHinge,
+      middle: options.sewtogetherMiddle ? points.st_b : null,
+    })
+    macro('bannerbox', {
+      topLeft: new Point(x, y - 30),
+      bottomRight: new Point(x + 65, y + 10),
+      text: 'macro = sewtogether',
+      ...store.get('bannerbox.macro'),
+    })
+
+    // macro = title
+    x = 225
+    if (options.titleMeta) store.set('data.for', 'Some user')
+    else store.unset('data.for')
+    points.title = new Point(x, y + 10)
+    macro('title', {
+      at: points.title,
+      nr: options.titleNr,
+      title: options.titleTitle ? 'Title here' : false,
+      prefix: 'prefix',
+      rotation: options.titleRotate,
+      scale: options.titleScale,
+    })
+    macro('bannerbox', {
+      topLeft: new Point(x, y - 30),
+      bottomRight: new Point(x + 65, y + 35),
+      text: 'macro = title',
+      ...store.get('bannerbox.macro'),
+    })
+
+    // Overarching bannerbox
+    macro('bannerbox', {
+      topLeft: new Point(-10, -10),
+      bottomRight: new Point(330, 250),
+      text: 'plugin = annotations',
+      ...store.get('bannerbox.plugin'),
     })
   }
 
@@ -365,6 +428,15 @@ export const annotations = {
       list: ['default', 'custom', 'suppress'],
       menu: 'annotations.scalebox',
     },
+    // Sewtogether
+    sewtogetherHinge: { bool: true, menu: 'annotations.sewtogether' },
+    sewtogetherMiddle: { bool: false, menu: 'annotations.sewtogether' },
+    // Title
+    titleNr: { count: 1, min: 0, max: 100, menu: 'annotations.title' },
+    titleTitle: { bool: true, menu: 'annotations.title' },
+    titleMeta: { bool: true, menu: 'annotations.title' },
+    titleScale: { pct: 100, min: 10, max: 200, menu: 'annotations.title' },
+    titleRotate: { deg: 0, min: -360, max: 360, menu: 'annotations.title' },
     // Snippets
     snippetScale: { pct: 100, min: 10, max: 200, menu: 'annotations.snippets' },
     snippetRotation: { deg: 0, min: -360, max: 360, menu: 'annotations.snippets' },
