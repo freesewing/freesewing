@@ -3,7 +3,7 @@ title: banner
 ---
 
 The `banner` macro allows you to add repeating text along a path.
-It is provided by the [banner plugin](/reference/plugins/banner).
+It is provided by the [annotations plugin](/reference/plugins/annotations).
 
 ## Signature
 

@@ -31,15 +31,18 @@ macro('mirror', {
   paths.example = new Path()
     .move(points.from)
     .curve(points.cp1, points.cp2, points.to)
+
+  points.m1 =  new Point(20,0)
+  points.m2 =  new Point(20,20)
+  paths.mirror = new Path()
+    .move(points.m1)
+    .line(points.m2)
+    .addClass('stroke-xm dashed stroke-lining')
   
   macro('mirror', {
     clone: true,
-    mirror: [
-      new Point(20,10),
-      new Point(20,20),
-    ],
-    paths: Object.values(paths),
-    points: Object.values(points),
+    mirror: [ points.m1, points.m2 ],
+    paths: Object.keys(paths),
   })
 
   return part

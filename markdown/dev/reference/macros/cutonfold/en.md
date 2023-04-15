@@ -3,7 +3,7 @@ title: cutonfold
 ---
 
 The `cutonfold` macro adds a _cut on fold_ indicator to your pattern.
-It is provided by the [cutonfold plugin](/reference/plugins/cutonfold).
+It is provided by the [annotations plugin](/reference/plugins/annotations).
 
 ## Signature
 
