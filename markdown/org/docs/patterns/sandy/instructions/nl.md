@@ -52,8 +52,6 @@ Skip this step if:
 - _Baste_ Lining to skirt at waist.
 - Gather the waist if needed.
 
-<Note>
-
 ## Step 4: The waistband
 
 ### Closures
@@ -111,7 +109,7 @@ Hem the skirt in one of the following ways:
 - Bind the raw edge of the hem allowance, single fold the hem under and either _Topstitch_ or hand sew the hem in place.
 - Double fold the hem under and either _Topstitch_ or hand sew the hem in place. You may have heard this be called a Rolled hem.
 
-<Note>  
+<Note>
 
 There are many ways to hem/face the bottom of a skirt, If you have a prefered method use it here.
 
