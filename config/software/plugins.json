@@ -6,7 +6,6 @@
   "plugin-flip": "A FreeSewing plugin to flip parts horizontally",
   "plugin-gore": "A FreeSewing plugin to generate gores for a semi-sphere or dome",
   "plugin-i18n": "A FreeSewing plugin for pattern translation",
-  "plugin-logo": "A FreeSewing plugin that provides our logo as a snippet",
   "plugin-measurements": "A FreeSewing plugin that adds additional measurements that can be calculated from existing ones",
   "plugin-mirror": "A FreeSewing plugin to mirror points or paths",
   "plugin-round": "A FreeSewing plugin to round corners",
