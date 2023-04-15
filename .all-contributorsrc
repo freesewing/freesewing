@@ -968,6 +968,34 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "raphaelsiz",
+      "name": "mergerg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64447714?v=4",
+      "profile": "https://tech.lgbt/@mergerg",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "clegganator259",
+      "name": "David Clegg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3974250?v=4",
+      "profile": "https://github.com/clegganator259",
+      "contributions": [
+        "design",
+        "code"
+      ]
+    },
+    {
+      "login": "luizfzs",
+      "name": "Luiz Saggioro",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6039675?v=4",
+      "profile": "https://github.com/luizfzs",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "skipCi": true

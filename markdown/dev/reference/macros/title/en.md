@@ -3,7 +3,7 @@ title: title
 ---
 
 The `title` macro adds a title to a pattern part.
-It is provided by the [title plugin](/reference/plugins/title).
+It is provided by the [annotations plugin](/reference/plugins/annotations).
 
 ## Signature
 
@@ -66,7 +66,7 @@ macro('title', {
 |-------------------|-------------|
 | `points._${prefix}_titleNr` | Point anchoring the part number text |
 | `points._${prefix}_titleName` | Point anchoring the part name text |
-| `points._${prefix}_titleCut_${material}_${i} | Points anchoring the cutting instructions, by material key and instruction index |
+| `points._${prefix}_titleCut_${material}_${i}` | Points anchoring the cutting instructions, by material key and instruction index |
 | `points._${prefix}_titlePattern` | Point anchoring the pattern name text |
 | `points._${prefix}_titleFor` | Point anchoring the name of the person for whom the pattern was made, if that information exists |
 | `points._${prefix}_exportDate` | Point anchoring the pattern export date |

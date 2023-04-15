@@ -189,14 +189,14 @@ export const base = {
     macro('mirror', {
       mirror: [points.hps, points.shoulder],
       points: [
-        points.neckCp2Front,
-        points.cfNeckCp1,
-        points.cfNeck,
-        points.cbNeck,
-        points.neckCp2,
-        points.frontArmholePitch,
-        points.frontArmholePitchCp2,
-        points.shoulderCp1,
+        'neckCp2Front',
+        'cfNeckCp1',
+        'cfNeck',
+        'cbNeck',
+        'neckCp2',
+        'frontArmholePitch',
+        'frontArmholePitchCp2',
+        'shoulderCp1',
       ],
       clone: true,
     })

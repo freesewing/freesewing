@@ -4,7 +4,7 @@ title: Tour de cuisse
 
 Le **tour de cuisse** est la mesure autour de votre jambe, près du sommet de votre jambe.
 
-You should measure this a bit below your crotch, refer to the illustration for guidance. Make sure to keep the tape measure horizontal to the floor as you measure the circumference of your leg.
+La mesure doit être prise un peu en dessous de l'entrejambe, voir l'illustration pour vous guider. Veillez à maintenir le mètre ruban à l'horizontale pendant que vous mesurez la circonférence de votre jambe.
 
 <Tip>
 

@@ -25,9 +25,17 @@ function teaganBack({
 
   // Draw seamline
   paths.hemBase = new Path().move(points.cfHem).line(points.hem).hide()
+  if (options.curveToWaist) {
+    paths.sideSeam = new Path()
+      .move(points.hem)
+      .curve(points.hipsCp2, points.waistCp1, points.waist)
+      .curve_(points.waistCp2, points.armhole)
+      .hide()
+  } else {
+    paths.sideSeam = new Path().move(points.hem).curve_(points.waistCp2, points.armhole).hide()
+  }
   paths.saBase = new Path()
-    .move(points.hem)
-    .curve_(points.waistCp2, points.armhole)
+    .move(points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.shoulderCp1, points.shoulder)
     .line(points.neck)
@@ -36,6 +44,7 @@ function teaganBack({
   paths.seam = new Path()
     .move(points.cfHem)
     .join(paths.hemBase)
+    .join(paths.sideSeam)
     .join(paths.saBase)
     .line(points.cfHem)
     .close()
@@ -68,6 +77,7 @@ function teaganBack({
       paths.sa = new Path()
         .move(points.cfHem)
         .join(paths.hemBase.offset(sa * 3))
+        .join(paths.sideSeam.offset(sa))
         .join(paths.saBase.offset(sa))
         .line(points.cbNeck)
         .attr('class', 'fabric sa')

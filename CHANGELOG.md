@@ -54,18 +54,6 @@
  - Fixed pocket size issue
  - Fixed waist shaping issue
 
-### plugin-banner
-
-#### Removed
-
- - This plugin no longer sets its version as an SVG attribute when rendering patterns
-
-### plugin-bartack
-
-#### Removed
-
- - This plugin no longer sets its version as an SVG attribute when rendering patterns
-
 ### plugin-bundle
 
 #### Removed
@@ -73,24 +61,6 @@
  - Named exports of the bundled plugins are no longer available
 
 ### plugin-bust
-
-#### Removed
-
- - This plugin no longer sets its version as an SVG attribute when rendering patterns
-
-### plugin-buttons
-
-#### Removed
-
- - This plugin no longer sets its version as an SVG attribute when rendering patterns
-
-### plugin-cutonfold
-
-#### Removed
-
- - This plugin no longer sets its version as an SVG attribute when rendering patterns
-
-### plugin-dimension
 
 #### Removed
 
@@ -112,19 +82,7 @@
 
  - This plugin no longer sets its version as an SVG attribute when rendering patterns
 
-### plugin-grainline
-
-#### Removed
-
- - This plugin no longer sets its version as an SVG attribute when rendering patterns
-
 ### plugin-i18n
-
-#### Removed
-
- - This plugin no longer sets its version as an SVG attribute when rendering patterns
-
-### plugin-logo
 
 #### Removed
 
@@ -142,19 +100,7 @@
 
  - This plugin no longer sets its version as an SVG attribute when rendering patterns
 
-### plugin-notches
-
-#### Removed
-
- - This plugin no longer sets its version as an SVG attribute when rendering patterns
-
 ### plugin-round
-
-#### Removed
-
- - This plugin no longer sets its version as an SVG attribute when rendering patterns
-
-### plugin-scalebox
 
 #### Removed
 
@@ -173,16 +119,6 @@
  - This plugin no longer sets its version as an SVG attribute when rendering patterns
 
 ### plugin-theme
-
-#### Removed
-
- - This plugin no longer sets its version as an SVG attribute when rendering patterns
-
-### plugin-title
-
-#### Changed
-
- - Use localized date format
 
 #### Removed
 
@@ -348,13 +284,6 @@
 #### Added
 
  - Support drafting for high bust
-
-### plugin-title
-
-#### Added
-
- - Added support for removing the title via a macro call
- - Added a render timestamp to the title
 
 
 ## 2.21.3 (2022-07-02)
@@ -733,18 +662,6 @@
 
  - Migrated from Rollup to Esbuild for all builds
 
-### plugin-banner
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
-
-### plugin-bartack
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
-
 ### plugin-bundle
 
 #### Changed
@@ -752,24 +669,6 @@
  - Migrated from Rollup to Esbuild for all builds
 
 ### plugin-bust
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
-
-### plugin-buttons
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
-
-### plugin-cutonfold
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
-
-### plugin-dimension
 
 #### Changed
 
@@ -787,19 +686,7 @@
 
  - Migrated from Rollup to Esbuild for all builds
 
-### plugin-grainline
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
-
 ### plugin-i18n
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
-
-### plugin-logo
 
 #### Changed
 
@@ -817,19 +704,7 @@
 
  - Migrated from Rollup to Esbuild for all builds
 
-### plugin-notches
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
-
 ### plugin-round
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
-
-### plugin-scalebox
 
 #### Changed
 
@@ -848,12 +723,6 @@
  - Migrated from Rollup to Esbuild for all builds
 
 ### plugin-theme
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
-
-### plugin-title
 
 #### Changed
 
@@ -1341,43 +1210,12 @@
 
  - Switched to default import for version from package.json
 
-### plugin-banner
-
-#### Changed
-
- - Changed the default options
- - Now part of `@freesewing/plugin-bundle`
-
-### plugin-bartack
-
-#### Changed
-
- - Now part of `@freesewing/plugin-bundle`
-
-#### Fixed
-
- - Fixed issue with `bartackFractionAlong` macro
- - Handle start and endpoints being the same in `bartackFractionAlong`
- - Support start and endpoints being reversed in `bartackFractionAlong`
-
 ### plugin-bundle
 
 #### Changed
 
  - plugin-banner is now part of plugin-bundle
  - plugin-bartack is now part of plugin-bundle
-
-### plugin-cutonfold
-
-#### Added
-
- - Support for scale setting
-
-### plugin-dimension
-
-#### Fixed
-
- - Support hiding start/end markers on path dimensions (pd macro)
 
 ### plugin-flip
 
@@ -1392,28 +1230,12 @@
  - The `goreNumber` property of the gore macro has been renamed to `gores`
  - Using `goreNumber` is now deprecated in favor of `gore` and will be removed in the next majot version
 
-### plugin-grainline
-
-#### Added
-
- - Added support for custom text
-
 ### plugin-sprinkle
 
 #### Added
 
  - Added support for `scale` to scale all sprinkled snippets
  - Added support for `rotate` to rotate all sprinkled snippets
-
-### plugin-title
-
-#### Added
-
- - Added support for `settings.scale`
-
-#### Removed
-
- - Removed rendering of config.cut as it's not used
 
 ### core
 
@@ -1488,22 +1310,6 @@
 
  - Updated the rendertest pattern to be more concise
 
-### plugin-banner
-
-#### Added
-
- - Added (esm) unit tests
-
-### plugin-bartack
-
-#### Added
-
- - Added (esm) unit tests
-
-#### Changed
-
- - Add utility classes and CSS variables for better styling support
-
 ### plugin-bundle
 
 #### Added
@@ -1511,32 +1317,6 @@
  - Added (esm) unit tests
 
 ### plugin-bust
-
-#### Added
-
- - Added (esm) unit tests
-
-### plugin-buttons
-
-#### Added
-
- - Added (esm) unit tests
-
-#### Changed
-
- - Add utility classes and CSS variables for better styling support
-
-#### Fixed
-
- - Only add snippets once to SVG object
-
-### plugin-cutonfold
-
-#### Added
-
- - Added (esm) unit tests
-
-### plugin-dimension
 
 #### Added
 
@@ -1554,19 +1334,7 @@
 
  - Added (esm) unit tests
 
-### plugin-grainline
-
-#### Added
-
- - Added (esm) unit tests
-
 ### plugin-i18n
-
-#### Added
-
- - Added (esm) unit tests
-
-### plugin-logo
 
 #### Added
 
@@ -1584,27 +1352,11 @@
 
  - Added (esm) unit tests
 
-### plugin-notches
-
-#### Added
-
- - Added (esm) unit tests
-
 ### plugin-round
 
 #### Added
 
  - Added (esm) unit tests
-
-### plugin-scalebox
-
-#### Added
-
- - Added (esm) unit tests
-
-#### Changed
-
- - Add utility classes and CSS variables for better styling support
 
 ### plugin-sprinkle
 
@@ -1623,16 +1375,6 @@
 #### Added
 
  - Added (esm) unit tests
-
-### plugin-title
-
-#### Added
-
- - Added (esm) unit tests
-
-#### Changed
-
- - Add utility classes and CSS variables for better styling support
 
 ### plugin-versionfree-svg
 
@@ -2175,12 +1917,6 @@
  - Include plugin-buttons
  - Include plugin-mirror
 
-### plugin-buttons
-
-#### Changed
-
- - Is now included in plugin-bundle
-
 ### plugin-mirror
 
 #### Changed
@@ -2570,25 +2306,6 @@
  - Added examples for bartack plugin
  - Added examples for new buttonhole-start/end snippets
 
-### plugin-buttons
-
-#### Added
-
- - Added the buttonhole-end snippet
- - Added the buttonhole-start snippet
-
-### plugin-dimension
-
-#### Added
-
- - Added the `rmad` macro
-
-### plugin-logo
-
-#### Added
-
- - Render logo in currentColor to support dark mode
-
 ### plugin-theme
 
 #### Added
@@ -2843,16 +2560,6 @@
 
  - Added missing scalebox
 
-### plugin-scalebox
-
-#### Added
-
- - Now includes the miniscale macro
-
-#### Changed
-
- - Took my name off the patterns
-
 
 ## 2.11.2 (2021-01-11)
 
@@ -2873,12 +2580,6 @@
 #### Fixed
 
  - Removed unused lengthBonus option
-
-### plugin-notches
-
-#### Added
-
- - Initial release. See [#757](https://github.com/freesewing/freesewing/issues/757)
 
 ### i18n
 
@@ -2964,19 +2665,6 @@
 #### Added
 
  - Teagan is a T-shirt pattern
-
-### plugin-dimension
-
-#### Added
-
- - Added support for passing in the ID used to add paths to the part
- - Added the `rmd` macro that removes dimensions
-
-### plugin-title
-
-#### Added
-
- - Added support for cutting instructions. Closes [#500](https://github.com/freesewing/freesewing/issues/500)
 
 ### core
 
@@ -3366,16 +3054,6 @@
 
  - Removed `Circumference` suffix from measurement names
 
-### plugin-buttons
-
-#### Changed
-
- - Snippet names are changed, `snap-male` is now `snap-stud` and `snap-female` is now `snap-socket` Changing this to avoid needless use of gender related terminology.
-
-#### Removed
-
- - Snippet `snap-male` and `snap-female` are no longer available. Use `snap-stud` and `snap-socket` instead
-
 ### plugin-measurements
 
 #### Added
@@ -3532,12 +3210,6 @@
 
  - The `sleevecapBackFactorY` and `sleevecapFrontFactorY` options had a minimum above the default
 
-### plugin-dimension
-
-#### Changed
-
- - Don't escape inch symbol in text. Instead let Svg.escapeText() handle it at render time
-
 ### core
 
 #### Fixed
@@ -3555,12 +3227,6 @@
 
 
 ## 2.4.2 (2020-03-08)
-
-### plugin-title
-
-#### Changed
-
- - Added *for* to title output
 
 ### i18n
 
@@ -3795,12 +3461,6 @@
 
 
 ## 2.1.5 (2019-11-19)
-
-### plugin-dimension
-
-#### Fixed
-
- - Fixed issue where inch marks where breaking SVG because of unescaped double quotes
 
 
 ## 2.1.4 (2019-11-01)
@@ -4077,12 +3737,6 @@
 
  - Initial release
 
-### plugin-banner
-
-#### Added
-
- - Initial release
-
 ### plugin-bundle
 
 #### Added
@@ -4095,31 +3749,7 @@
 
  - Initial release
 
-### plugin-buttons
-
-#### Added
-
- - Initial release
-
-### plugin-cutonfold
-
-#### Added
-
- - Initial release
-
-### plugin-dimension
-
-#### Added
-
- - Initial release
-
 ### plugin-flip
-
-#### Added
-
- - Initial release
-
-### plugin-grainline
 
 #### Added
 
@@ -4131,19 +3761,7 @@
 
  - Initial release
 
-### plugin-logo
-
-#### Added
-
- - Initial release
-
 ### plugin-round
-
-#### Added
-
- - Initial release
-
-### plugin-scalebox
 
 #### Added
 
@@ -4162,12 +3780,6 @@
  - Initial release
 
 ### plugin-theme
-
-#### Added
-
- - Initial release
-
-### plugin-title
 
 #### Added
 

@@ -9,8 +9,8 @@ bustSpanEase:
   title: Aisance de l'écart poitrine
   description: Contrôle la quantité d'aisance (horizontale) ajoutée à votre poitrine entre les 2 pointes de la poitrine.
 shoulderToShoulderEase:
-  title: Shoulder to Shoulder ease
-  description: Controls the amount of ease between your shoulders. Initially set to -.5% because Bella implements a block that is used in the industry.
+  title: Aisance d'épaule à épaule
+  description: Contrôle la quantité d'aisance entre vos épaules. Initialement réglé sur -.5% parce que Bella implémente un bloc qui est utilisé dans l'industrie.
 fullChestEaseReduction:
   title: Réduction de l'aisance de la poitrine
   description: Vous permet de réduire l'aisance de la poitrine indépendamment pour rendre plus seyant cette zone

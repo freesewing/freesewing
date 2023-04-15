@@ -79,6 +79,7 @@ const buildExample = (children, settings = { margin: 5 }, tutorial = false, pape
   }
   const part = {
     draft: draft,
+    name: tutorial ? 'tutorial.bib' : 'example',
     measurements: tutorial ? [] : ['head'],
     options: tutorial
       ? {
@@ -91,7 +92,7 @@ const buildExample = (children, settings = { margin: 5 }, tutorial = false, pape
   }
   const design = new Design({
     parts: [part],
-    data: tutorial ? { name: 'Tutorial', version: '0.0.1' } : {},
+    data: tutorial ? { name: 'Tutorial', version: '0.0.1' } : { name: 'Example', version: '0.0.1' },
   })
   if (tutorial) settings.measurements = { head: 380 }
   if (paperless) settings.paperless = true

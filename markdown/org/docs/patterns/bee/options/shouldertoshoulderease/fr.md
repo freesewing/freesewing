@@ -1,11 +1,11 @@
 ---
-title: "Shoulder to Shoulder ease (Bella)"
+title: "Aisance d'épaules à épaules (Bella)"
 ---
 
 ***
 
-Controls the shoulder to shoulder ease in the underlying Bella block Bee is based on.
+Contrôle l'aisance d'épaule à épaule dans le bloc Bella sur lequel est basé le patron Bee.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le modèle
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_shouldertoshoulderease_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bee_shouldertoshoulderease_sample.svg "Effet de cette option sur le modèle")

@@ -35,8 +35,8 @@ Which can be done as a one-liner since `use()`, `draft()` and
 ## Code example
 
 ```js
-import Aaron from '@freesewing/aaron' // Design to use
-import theme from '@freesewing/plugin-theme' // SVG theme
+import { Aaron } from '@freesewing/aaron' // Design to use
+import { pluginTheme as theme } from '@freesewing/plugin-theme' // SVG theme
 
 const svg = new Aaron( // Instantiate pattern
   { // Pass in settings. See reference > core > settings

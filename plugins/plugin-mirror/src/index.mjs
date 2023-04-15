@@ -15,7 +15,20 @@ const mirrorGen = (start, end) => {
     const uNom = (B ** 2 - A ** 2) * x - 2 * A * B * y - 2 * A * C
     const vNom = (A ** 2 - B ** 2) * y - 2 * A * B * x - 2 * B * C
     const denom = A ** 2 + B ** 2
-    return [uNom / denom, vNom / denom]
+
+    point.x = uNom / denom
+    point.y = vNom / denom
+
+    const mirrorCount = Number(point.attributes.get('data-mirrored'))
+    if (mirrorCount > 0)
+      point.log.warning(
+        `Point ${point.name} was mirrored more than once (${
+          mirrorCount + 1
+        }) which can lead to hard to trace bugs`
+      )
+    point.attributes.set('data-mirrored', mirrorCount + 1)
+
+    return point
   }
 }
 
@@ -28,66 +41,60 @@ export const plugin = {
     mirror: function ({
       mirror,
       clone = true,
-      points = null,
-      paths = null,
+      points = [],
+      paths = [],
       prefix = 'mirrored',
       nameFormat = undefined,
     }) {
       const [start, end] = mirror
       const mirrorPoint = mirrorGen(start, end)
-      const ops = ['from', 'to', 'cp1', 'cp2']
 
-      if (paths !== null) {
-        paths.forEach((path) => {
-          // Try to find point name from path by looking in list of all points
-          let foundId = null
-          for (let id of Object.keys(this.paths)) {
-            if (this.paths[id] === path) {
-              foundId = id
-              break
+      for (const pathId of paths) {
+        // Make sure the path exists
+        if (this.paths[pathId]) {
+          const path = clone ? this.paths[pathId].clone() : this.paths[pathId]
+
+          const newId = clone
+            ? typeof nameFormat == 'function'
+              ? nameFormat(pathId, 'path')
+              : `${prefix}${capFirst(pathId)}`
+            : pathId
+
+          for (const op of path.ops) {
+            switch (op.type) {
+              case 'move':
+              case 'line':
+                op.to = mirrorPoint(op.to)
+                break
+              case 'curve':
+                op.to = mirrorPoint(op.to)
+                op.cp1 = mirrorPoint(op.cp1)
+                op.cp2 = mirrorPoint(op.cp2)
+                break
+              default:
+              // Do nothing
             }
           }
-          path = clone ? path.clone() : path
-          if (clone) {
-            if (foundId === null && typeof nameFormat == 'function') {
-              this.paths[nameFormat(path)] = path
-            } else {
-              this.paths[`${prefix}${capFirst(foundId)}`] = path
-            }
-          }
-          for (let op in path.ops) {
-            for (let type of ops) {
-              // Iterate over all possible path op points and clone/move point
-              const pathOp = path.ops[op][type]
-              if (typeof pathOp !== 'undefined') {
-                [pathOp.x, pathOp.y] = mirrorPoint(pathOp)
-                pathOp.attributes.set('mirrored', true)
-              }
-            }
-          }
-        })
+
+          this.paths[newId] = path
+        }
       }
 
-      if (points !== null) {
-        points.forEach((point) => {
-          let foundId = null
-          for (let id of Object.keys(this.points)) {
-            if (this.points[id] === point) {
-              foundId = id
-              break
-            }
-          }
-          if (clone) {
-            point = point.clone()
-            if (foundId === null && typeof nameFormat == 'function') {
-              this.points[nameFormat(point)] = point
-            } else {
-              this.points[`${prefix}${capFirst(foundId)}`] = point
-            }
-          }
-          [point.x, point.y] = mirrorPoint(point)
-          point.attributes.set('mirrored', true)
-        })
+      for (const pointId of points) {
+        // Make sure the point exists
+        if (this.points[pointId]) {
+          const point = clone
+            ? mirrorPoint(this.points[pointId].clone())
+            : mirrorPoint(this.points[pointId])
+
+          const newId = clone
+            ? typeof nameFormat == 'function'
+              ? nameFormat(pointId, 'point')
+              : `${prefix}${capFirst(pointId)}`
+            : pointId
+
+          this.points[newId] = point
+        }
       }
     },
   },

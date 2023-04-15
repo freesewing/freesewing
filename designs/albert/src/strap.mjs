@@ -94,8 +94,8 @@ export const strap = {
         at: points.title,
         title: 'Strap',
       })
-      macro('crossBox', { from: points.topLeft, to: points.topMiddleHem })
-      macro('crossBox', { from: points.bottomLeftHem, to: points.bottomMiddle })
+      macro('crossbox', { from: points.topLeft, to: points.topMiddleHem })
+      macro('crossbox', { from: points.bottomLeftHem, to: points.bottomMiddle })
       if (sa) {
         paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
       }

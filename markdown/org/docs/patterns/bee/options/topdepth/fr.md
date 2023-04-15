@@ -1,10 +1,10 @@
 - - -
-title: "Top Depth"
+titre: "Profondeur de la partie supérieure"
 - - -
 
 ***
 
-Controls how far the bikini cup extends upwards
+Contrôle jusqu'à quel point le bonnet de bikini s'étend vers le haut
 
 ## Effet de cette option sur le motif
 
