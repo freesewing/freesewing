@@ -17,8 +17,8 @@ describe('Mirror Plugin Tests', () => {
         .curve(new Point(10, 20), new Point(30, 40), new Point(50, 60))
       const settings = {
         mirror: [points.mirrorA, points.mirrorB],
-        points: [points.a, points.b],
-        paths: [paths.test],
+        points: ['a', 'b'],
+        paths: ['test'],
       }
       macro('mirror', settings)
       macro('mirror', { ...settings, prefix: 'test' })
