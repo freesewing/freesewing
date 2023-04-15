@@ -1280,10 +1280,9 @@ function __offsetLine(from, to, distance, log = false) {
  * @private
  * @param {Path} path - The Path to offset
  * @param {float} distance - The distance to offset by
- * @param {object} log - The log methods
  * @return {Path} offsetted - The offsetted Path instance
  */
-function __pathOffset(path, distance, log) {
+function __pathOffset(path, distance) {
   let offset = []
   let current
   let start = false
