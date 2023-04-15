@@ -3,6 +3,7 @@ import { base } from './base.mjs'
 
 const pluginMirror = ({ points, Point, paths, Path, snippets, Snippet, options, macro, part }) => {
   if (['mirror', 'all'].indexOf(options.plugin) !== -1) {
+    // Mirror lines
     points.mirrorA = new Point(0, 0)
     points.mirrorB = new Point(70, 30)
     points.mirrorC = new Point(0, 50)
@@ -20,21 +21,21 @@ const pluginMirror = ({ points, Point, paths, Path, snippets, Snippet, options, 
       .attr('data-text', 'Mirror B')
       .attr('data-text-class', 'right')
 
-    points.b1 = new Point(10, 10).attr('data-text', 1)
-    points.h2 = new Point(20, 10).attr('data-text', 2)
-    points.h3 = new Point(30, 10).attr('data-text', 3)
-    points.v2 = new Point(10, 20).attr('data-text', 2)
-    points.v3 = new Point(10, 30).attr('data-text', 3)
-    points.a = new Point(10, 0)
-    points.b = new Point(30, 30)
-    points.c = new Point(50, 50)
-    points.d = new Point(12, 34)
-    points.e = new Point(54, 34)
+    // line
+    points.start = new Point(10, 0)
+    points.end = new Point(30, 30)
+    paths.line = new Path().move(points.start).line(points.end)
 
-    snippets.a = new Snippet('button', points.b)
+    // curve
+    points.from = new Point(50, 50)
+    points.cp1 = new Point(12, 34)
+    points.cp2 = new Point(14, -4)
+    points.to = new Point(64, 34)
+    paths.curve = new Path().move(points.from).curve(points.cp1, points.cp2, points.to)
 
-    paths.a = new Path().move(points.a).line(points.b)
-    paths.b = new Path().move(points.e).curve(points.a, points.d, points.c)
+    // snippet
+    points.a = new Point(20, 30)
+    snippets.a = new Snippet('button', points.a)
 
     if (options.mirrorLine !== 'none') {
       macro('mirror', {
@@ -42,22 +43,17 @@ const pluginMirror = ({ points, Point, paths, Path, snippets, Snippet, options, 
           options.mirrorLine === 'a'
             ? [points.mirrorA, points.mirrorB]
             : [points.mirrorC, points.mirrorD],
-        points: [
-          points.b1,
-          points.h2,
-          points.h3,
-          points.v2,
-          points.v3,
-          points.a,
-          points.b,
-          points.c,
-          points.d,
-          points.e,
-        ],
-        paths: [paths.a, paths.b],
+        points: ['a'],
+        paths: ['line', 'curve'],
         clone: options.mirrorClone,
       })
     }
+
+    macro('bannerbox', {
+      topLeft: new Point(options.mirrorLine === 'b' ? -35 : 5, -25),
+      bottomRight: new Point(65, 50),
+      title: 'plugin = measurements',
+    })
   }
 
   return part
