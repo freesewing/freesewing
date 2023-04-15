@@ -1,7 +1,7 @@
 // Not importing i18n since it's a run-time plugin loaded by workbench
 //import { i18nPlugin } from '@freesewing/plugin-i18n'
 
-const pluginI18n = ({ points, Point, paths, Path, options, part, macro, store }) => {
+const pluginI18n = ({ points, Point, options, part, macro, store }) => {
   if (['i18n', 'all'].indexOf(options.plugin) !== -1) {
     points.a = new Point(0, 0).attr('data-text', 'cutTwoStripsToFinishTheArmholes')
 

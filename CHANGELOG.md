@@ -88,12 +88,6 @@
 
  - This plugin no longer sets its version as an SVG attribute when rendering patterns
 
-### plugin-logo
-
-#### Removed
-
- - This plugin no longer sets its version as an SVG attribute when rendering patterns
-
 ### plugin-measurements
 
 #### Removed
@@ -693,12 +687,6 @@
  - Migrated from Rollup to Esbuild for all builds
 
 ### plugin-i18n
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
-
-### plugin-logo
 
 #### Changed
 
@@ -1347,12 +1335,6 @@
  - Added (esm) unit tests
 
 ### plugin-i18n
-
-#### Added
-
- - Added (esm) unit tests
-
-### plugin-logo
 
 #### Added
 
@@ -2323,12 +2305,6 @@
 
  - Added examples for bartack plugin
  - Added examples for new buttonhole-start/end snippets
-
-### plugin-logo
-
-#### Added
-
- - Render logo in currentColor to support dark mode
 
 ### plugin-theme
 
@@ -3780,12 +3756,6 @@
  - Initial release
 
 ### plugin-i18n
-
-#### Added
-
- - Initial release
-
-### plugin-logo
 
 #### Added
 
