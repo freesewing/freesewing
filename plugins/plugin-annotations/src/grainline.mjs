@@ -17,12 +17,12 @@ export const grainlineHooks = {
   ],
 }
 export const grainlineMacros = {
-  grainline: function (so = {}, { points, paths, Path, complete, setGrain }) {
+  grainline: function (so = {}, { points, paths, Path, complete, store }) {
     if (so === false) {
       delete points.grainlineFrom
       delete points.grainlineTo
       delete paths.grainline
-      setGrain(90) // Restoring default
+      if (store.cutlist?.setGrain) store.cutlist.setGrain(90) // Restoring default
       return true
     }
     so = {
@@ -30,8 +30,8 @@ export const grainlineMacros = {
       ...so,
     }
     // setGrain relies on plugin-cutlist
-    if (typeof setGrain === 'function') {
-      setGrain(so.from.angle(so.to))
+    if (typeof store.cutlist?.setGrain === 'function') {
+      store.cutlist.setGrain(so.from.angle(so.to))
     }
     if (complete) {
       points.grainlineFrom = so.from.shiftFractionTowards(so.to, 0.05)

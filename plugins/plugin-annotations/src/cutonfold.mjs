@@ -17,16 +17,16 @@ export const cutonfoldHooks = {
 }
 // Export macros
 export const cutonfoldMacros = {
-  cutonfold: function (so, { points, paths, Path, complete, setCutOnFold, setGrain, scale }) {
+  cutonfold: function (so, { points, paths, Path, complete, store, scale }) {
     if (so === false) {
       delete points.cutonfoldFrom
       delete points.cutonfoldTo
       delete points.cutonfoldVia1
       delete points.cutonfoldVia2
-      delete paths.cutonfold
+      delete paths.cutonfoldCutonfold
       // setCutOnFold relies on plugin-cutlist
-      if (typeof setCutOnFold === 'function') {
-        setCutOnFold(false) // Restore default
+      if (typeof store.cutlist?.setCutOnFold === 'function') {
+        store.cutlist.setCutOnFold(false) // Restore default
       }
       return true
     }
@@ -36,9 +36,9 @@ export const cutonfoldMacros = {
       prefix: 'cutonfold',
       ...so,
     }
-    if (typeof setCutOnFold === 'function') {
-      setCutOnFold(so.from, so.to)
-      if (so.grainline) setGrain(so.from.angle(so.to))
+    if (typeof store.cutlist?.setCutOnFold === 'function') {
+      store.cutlist.setCutOnFold(so.from, so.to)
+      if (so.grainline) store.cutlist.setGrain(so.from.angle(so.to))
     }
     if (complete) {
       points[so.prefix + 'From'] = so.from.shiftFractionTowards(so.to, so.margin / 100)

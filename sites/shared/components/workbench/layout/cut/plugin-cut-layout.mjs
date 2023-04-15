@@ -1,5 +1,4 @@
 import { addToOnly } from '../plugin-layout-part.mjs'
-import { pluginFlip } from '@freesewing/plugin-flip'
 import { pluginMirror } from '@freesewing/plugin-mirror'
 const prefix = 'mirroredOnFold'
 
@@ -52,49 +51,39 @@ export const cutLayoutPlugin = function (material, grainAngle) {
         part.hide()
 
         // for each set of cutting instructions for this material
-        matCutConfig.forEach(({ cut, identical, bias, ignoreOnFold }, i) => {
-          // get the grain angle for the part for this set of instructions
-          const grainSpec = partCutlist.grain ? partCutlist.grain + (bias ? 45 : 0) : undefined
-
+        matCutConfig.forEach((instruction, i) => {
           // for each piece that should be cut
-          for (let c = 0; c < cut; c++) {
+          for (let c = 0; c < instruction.cut; c++) {
             const dupPartName = `cut.${pattern.activePart}.${material}_${c + i + 1}`
 
             // make a new part that will follow these cutting instructions
             pattern.addPart({
               name: dupPartName,
               from: activePartConfig,
-              draft: ({ part, macro, store, points }) => {
-                // the amount to rotate is the difference between this part's grain angle (as drafted) and the fabric's grain angle
-                let toRotate = grainSpec === undefined ? 0 : grainAngle - grainSpec
-                // don't over rotate
-                toRotate = toRotate % 180
-                if (toRotate < 0) toRotate += 180
-
-                // handle fold and grain for these cutting instructions
-                const titleSo = store.get(['title', part.name])
+              draft: ({ part, macro, store, points, utils }) => {
+                part.attributes.remove('transform')
 
                 // if they shouldn't be identical, flip every other piece
-                if (!identical && c % 2 === 1) macro('flip')
+                const flipped = !instruction.identical && c % 2 === 1
+                if (flipped) {
+                  part.attributes.add(
+                    'transform',
+                    grainAngle === 90 ? 'scale(-1, 1)' : 'scale(1, -1)'
+                  )
+                }
 
                 macro('handleFoldAndGrain', {
                   partCutlist,
-                  toRotate,
-                  ignoreOnFold,
-                  grainSpec,
-                  bias,
+                  instruction,
+                  flipped,
                 })
 
-                if (titleSo) {
-                  const newTitleSo = {
-                    ...titleSo,
-                    at: points[`_${titleSo.prefix || ''}_titleNr`],
-                    append: false,
-                  }
-                  if (titleSo.rotation !== undefined)
-                    newTitleSo.rotation = titleSo.rotation - toRotate
-                  macro('title', newTitleSo)
-                }
+                // combine the transforms
+                const combinedTransform = utils.combineTransforms(
+                  part.attributes.getAsArray('transform')
+                )
+                part.attributes.set('transform', combinedTransform)
+
                 return part
               },
             })
@@ -106,18 +95,17 @@ export const cutLayoutPlugin = function (material, grainAngle) {
       },
     },
     macros: {
-      ...pluginFlip.macros,
       ...pluginMirror.macros,
       // handle mirroring on the fold and rotating to sit along the grain or bias
-      handleFoldAndGrain: (
-        { partCutlist, toRotate, grainSpec, ignoreOnFold, bias },
-        { points, macro }
-      ) => {
-        // if there's a grain angle, rotate the part to be along it
+      handleFoldAndGrain: ({ partCutlist, instruction, flipped }, { points, macro }) => {
+        // get the grain angle for the part for this set of instructions
+        const grainSpec = partCutlist.grain
+          ? partCutlist.grain + (instruction.bias ? 45 : 0)
+          : undefined
         // if the part has cutonfold instructions
         if (partCutlist.cutOnFold) {
           // if we're not meant to igore those instructions, mirror on the fold
-          if (!ignoreOnFold) macro('mirrorOnFold', { fold: partCutlist.cutOnFold })
+          if (!instruction.ignoreOnFold) macro('mirrorOnFold', { fold: partCutlist.cutOnFold })
           // if we are meant to ignore those instructions, but there's a grainline
           else if (grainSpec !== undefined) {
             // replace the cutonfold with a grainline
@@ -126,7 +114,8 @@ export const cutLayoutPlugin = function (material, grainAngle) {
           }
         }
 
-        macro('rotateToGrain', { toRotate, bias })
+        // if there's a grain angle, rotate the part to be along it
+        macro('rotateToGrain', { bias: instruction.bias, flipped, grainSpec })
       },
       // mirror the part across the line indicated by cutonfold
       mirrorOnFold: ({ fold }, { paths, snippets, utils, macro, points }) => {
@@ -134,7 +123,7 @@ export const cutLayoutPlugin = function (material, grainAngle) {
         const mirrorPaths = []
         for (const p in paths) {
           // skip ones that are hidden
-          if (!paths[p].hidden && !p.match(avoidRegx)) mirrorPaths.push(paths[p])
+          if (!paths[p].hidden && !p.match(avoidRegx)) mirrorPaths.push(p)
         }
 
         // store all the points to mirror
@@ -169,7 +158,6 @@ export const cutLayoutPlugin = function (material, grainAngle) {
           },
         })
 
-        console.log(mirrorPoints, snippetsByType, points)
         // sprinkle the snippets
         for (var def in snippetsByType) {
           macro('sprinkle', {
@@ -183,63 +171,25 @@ export const cutLayoutPlugin = function (material, grainAngle) {
        * if the part should be on the bias, this rotates the part to lie on the bias
        * while keeping the grainline annotation along the grain
        */
-      rotateToGrain: (
-        { toRotate, bias },
-        { paths, snippets, Point, points, part, store, macro }
-      ) => {
+      rotateToGrain: ({ bias, flipped, grainSpec }, { part, paths, points }) => {
+        // the amount to rotate is the difference between this part's grain angle (as drafted) and the fabric's grain angle
+        let toRotate = grainSpec === undefined ? 0 : grainAngle + grainSpec
+        // don't over rotate
+        toRotate = toRotate % 180
+        if (toRotate < 0) toRotate += 180
         // if there's no difference, don't rotate
         if (toRotate === 0) return
-        // we'll pivot rotations along the grainline to point, with a fallback
-        const pivot = points.grainlineTo || new Point(0, 0)
 
-        // go through all the paths
-        for (const pathName in paths) {
-          const path = paths[pathName]
-          // don't rotate hidden paths
-          if (paths[pathName].hidden) continue
-
-          // we want the grainline indicator to always go in the fabric grain direction
-          // so if this part is on the bias and this path is the grainline indicator
-          // we'll rotate it 45 degrees less than necessary
-          let thisRotation = toRotate
-          if (pathName === 'grainline' && bias) thisRotation -= 45
-
-          // replace all the points in all the ops of this path with ones that have been rotated
-          path.ops.forEach((op) => {
+        if (paths.grainline && bias) {
+          const pivot = points.grainlineFrom || new Point(0, 0)
+          paths.grainline.ops.forEach((op) => {
             opTypes.forEach((t) => {
-              if (op[t]) op[t] = op[t].rotate(thisRotation, pivot)
+              if (op[t]) op[t] = op[t].rotate(45, pivot)
             })
           })
         }
 
-        // replace all snippet anchors with ones that have been rotated
-        for (const snippetName in snippets) {
-          snippets[snippetName].anchor = snippets[snippetName].anchor.rotate(toRotate, pivot)
-        }
-
-        for (const pointName in points) {
-          const point = points[pointName]
-          const pointAttrs = point.attributes.clone()
-
-          points[pointName] = point.rotate(toRotate, pivot)
-
-          points[pointName].attributes = pointAttrs
-          let textTransform = pointAttrs.get('data-text-transform')
-          const textTransformRotation = textTransform ? textTransform.match(/rotate\(\s*\d+/) : null
-
-          let textRotationAmt = -toRotate
-          if (textTransformRotation) {
-            const textRotation = textTransformRotation[0]
-            textRotationAmt = parseFloat(textRotation.replace(/rotate\(\s*/, ''))
-          }
-
-          let newTransform = `rotate(${textRotationAmt} ${points[pointName].x} ${points[pointName].y})`
-
-          if (textTransform)
-            newTransform = textTransform.replace(/rotate\((\s*\d+\.*\d*,*){3}\)/, newTransform)
-
-          points[pointName].attr('data-text-transform', newTransform, true)
-        }
+        part.attributes.add('transform', `rotate(${toRotate})`)
       },
     },
   }
