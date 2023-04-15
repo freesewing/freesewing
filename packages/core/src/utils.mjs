@@ -665,3 +665,140 @@ export function __isCoord(value) {
 export function __macroName(name) {
   return `__macro_${name}`
 }
+
+/**
+ * Helper method to parse an (SVG) transform string
+ *
+ * @private
+ * @param {string} transform - The SVG transform string
+ * @return {object} result - An object with the parts, name, and values
+ */
+function __parseTransform(transform) {
+  const parts = transform.match(/(\w+)\(([^)]+)\)/)
+  const name = parts[1]
+  const values = parts[2].split(/,\s*/).map(parseFloat)
+
+  return { parts, name, values }
+}
+
+/**
+ * Combines an array of (SVG) transforms into a single matrix transform
+ *
+ * @param {array} transorms - The list of transforms to combine
+ * @return {string} matrixTransform - The combined matrix transform
+ */
+export function combineTransforms(transforms = []) {
+  // Don't bother if there are no part transforms
+  if (transforms.length < 1) return ''
+
+  // The starting matrix
+  let matrix = [1, 0, 0, 1, 0, 0]
+
+  // Loop through the transforms
+  for (let i = 0; i < transforms.length; i++) {
+    // Parse the transform string
+    const { name, values } = __parseTransform(transforms[i])
+
+    // Update matrix for transform
+    switch (name) {
+      case 'matrix':
+        matrix = [
+          matrix[0] * values[0] + matrix[2] * values[1],
+          matrix[1] * values[0] + matrix[3] * values[1],
+          matrix[0] * values[2] + matrix[2] * values[3],
+          matrix[1] * values[2] + matrix[3] * values[3],
+          matrix[0] * values[4] + matrix[2] * values[5] + matrix[4],
+          matrix[1] * values[4] + matrix[3] * values[5] + matrix[5],
+        ]
+        break
+      case 'translate':
+        matrix[4] += matrix[0] * values[0] + matrix[2] * values[1]
+        matrix[5] += matrix[1] * values[0] + matrix[3] * values[1]
+        break
+      case 'scale':
+        matrix[0] *= values[0]
+        matrix[1] *= values[0]
+        matrix[2] *= values[1]
+        matrix[3] *= values[1]
+        break
+      case 'rotate': {
+        const angle = (values[0] * Math.PI) / 180
+        const cos = Math.cos(angle)
+        const sin = Math.sin(angle)
+        matrix = [
+          matrix[0] * cos + matrix[2] * sin,
+          matrix[1] * cos + matrix[3] * sin,
+          matrix[0] * -sin + matrix[2] * cos,
+          matrix[1] * -sin + matrix[3] * cos,
+          matrix[4],
+          matrix[5],
+        ]
+        break
+      }
+      case 'skewX':
+        matrix[2] += matrix[0] * Math.tan((values[0] * Math.PI) / 180)
+        matrix[3] += matrix[1] * Math.tan((values[0] * Math.PI) / 180)
+        break
+      case 'skewY':
+        matrix[0] += matrix[2] * Math.tan((values[0] * Math.PI) / 180)
+        matrix[1] += matrix[3] * Math.tan((values[0] * Math.PI) / 180)
+        break
+    }
+  }
+
+  // Return the combined matrix transform
+  return 'matrix(' + matrix.join(', ') + ')'
+}
+
+/**
+ * Applies and (SVG) transform to a point's coordinates (x and y)
+ *
+ * @param {string} transorm - The transform to apply
+ * @param {Point} point - The point of which to update the coordinates
+ * @return {Point} point - The point with the transform applied to its coordinates
+ */
+export function applyTransformToPoint(transform, point) {
+  // Parse the transform string
+  const { name, values } = __parseTransform(transform)
+
+  // The starting matrix
+  let matrix = [1, 0, 0, 1, 0, 0]
+
+  // Update matrix for transform
+  switch (name) {
+    case 'matrix':
+      matrix = values
+      break
+    case 'translate':
+      matrix[4] = values[0]
+      matrix[5] = values[1]
+      break
+    case 'scale':
+      matrix[0] = values[0]
+      matrix[3] = values[1]
+      break
+    case 'rotate': {
+      const angle = (values[0] * Math.PI) / 180
+      const cos = Math.cos(angle)
+      const sin = Math.sin(angle)
+      console.log('in rotate', { angle })
+      matrix = [cos, sin, -sin, cos, 0, 0]
+      break
+    }
+    case 'skewX':
+      matrix[2] = Math.tan((values[0] * Math.PI) / 180)
+      break
+    case 'skewY':
+      matrix[1] = Math.tan((values[0] * Math.PI) / 180)
+      break
+  }
+
+  // Apply the matrix transform to the coordinates
+  const newX = point.x * matrix[0] + point.y * matrix[2] + matrix[4]
+  const newY = point.x * matrix[1] + point.y * matrix[3] + matrix[5]
+
+  point.x = newX
+  point.y = newY
+
+  return point
+}
