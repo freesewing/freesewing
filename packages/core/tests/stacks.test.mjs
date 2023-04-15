@@ -1,5 +1,6 @@
 import chai from 'chai'
-import { Design } from '../src/index.mjs'
+import { Design, Point, Attributes } from '../src/index.mjs'
+import { Stack } from '../src/stack.mjs'
 
 const expect = chai.expect
 
@@ -170,6 +171,52 @@ describe('Stacks', () => {
       })
       expect(pattern.stacks.test.attributes.list.transform.length).to.equal(1)
       expect(pattern.stacks.test.attributes.list.transform[0]).to.equal('translate(10 20)')
+    })
+  })
+
+  describe('Stack.prototype.home()', () => {
+    function dummyPart(tl, br) {
+      return {
+        __boundary: () => null,
+        topLeft: new Point(tl.x, tl.y),
+        bottomRight: new Point(br.x, br.y),
+        attributes: new Attributes(),
+      }
+    }
+
+    it('Should calculate the bounds using all part bounds', () => {
+      const stack = new Stack('test')
+      stack.context = { settings: [{ margin: 0 }] }
+      const expectedTlX = -1
+      const expectedTlY = -2
+      const expectedBrX = 20
+      const expectedBrY = 20
+
+      stack.addPart(dummyPart({ x: 0, y: expectedTlY }, { x: expectedBrX, y: 10 }))
+
+      stack.addPart(dummyPart({ x: expectedTlX, y: 0 }, { x: expectedBrX, y: expectedBrY }))
+
+      stack.home()
+      expect(stack.topLeft.x).to.equal(expectedTlX)
+      expect(stack.topLeft.y).to.equal(expectedTlY)
+      expect(stack.bottomRight.x).to.equal(expectedBrX)
+      expect(stack.bottomRight.y).to.equal(expectedBrY)
+    })
+
+    it('Should calculate the bounds using all transformed part bounds', () => {
+      const stack = new Stack('test')
+      stack.context = { settings: [{ margin: 0 }] }
+
+      const part1 = dummyPart({ x: 0, y: 0 }, { x: 10, y: 10 })
+      part1.attributes.add('transform', 'scale(1, -1)')
+      part1.attributes.add('transform', 'rotate(45)')
+      stack.addPart(part1)
+
+      stack.home()
+      expect(stack.topLeft.x).to.equal(-7.071067811865475)
+      expect(stack.topLeft.y).to.equal(-14.142135623730951)
+      expect(stack.bottomRight.x).to.equal(7.0710678118654755)
+      expect(stack.bottomRight.y).to.equal(0)
     })
   })
 
