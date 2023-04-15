@@ -2,11 +2,10 @@
 title: "Cross seam angle"
 ---
 
-<Fixme>
+Controls the angle of cross seam curve.
 
-Documentation missing
-
-</Fixme>
+- 0% makes the cross seam draft parallel to the hem.
+- Increasing this option will draft the cross seam at that angle away from the hem.
 
 ## Effect of this option on the pattern
 
