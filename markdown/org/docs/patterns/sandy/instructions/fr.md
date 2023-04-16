@@ -52,8 +52,6 @@ Sautez cette étape si :
 - _Baste_ Lining to skirt at waist.
 - Rassembler la taille si nécessaire.
 
-<Note>
-
 ## Étape 4 : La ceinture
 
 ### Fermetures

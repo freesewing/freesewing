@@ -52,8 +52,6 @@ Skip this step if:
 - _Baste_ Lining to skirt at waist.
 - Gather the waist if needed.
 
-<Note>
-
 ## Step 4: The waistband
 
 ### Closures
