@@ -1,12 +1,12 @@
 ---
-title: Riegelstich
+title: Riegelstich/ Raupe
 ---
 
-Ein Bartack ist ein Naht von unterschiedlicher Größe und Länge, die zur Verstärkung verwendet wird. It is often used on the edges of seams such as at a pocket or fly opening.
+Ein Bartack ist ein Naht von unterschiedlicher Größe und Länge, die zur Verstärkung verwendet wird. Er wird oft an den Kanten von Nähten wie an einem Tascheneingriff oder dem Hosenschlitz verwendet.
 
 <Legend part="bartack">
 
-This is how a bartack displays on a pattern. 
+So wird der Riegel auf dem Schnittmuster dargestellt. 
 
 </Legend>
 
