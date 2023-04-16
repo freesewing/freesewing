@@ -4,11 +4,11 @@ import { useApp } from 'shared/hooks/use-app.mjs'
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
-import { PageWrapper } from 'shared/components/wrappers/page.mjs'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
 
 // Translation namespaces used on this page
-const ns = ['account', ...authNs]
+const ns = [...new Set(['account', ...pageNs, ...authNs])]
 
 /*
  * Some things should never generated as SSR
