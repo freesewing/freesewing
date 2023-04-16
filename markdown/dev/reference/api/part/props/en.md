@@ -2,14 +2,12 @@
 title: Part.asProps()
 ---
 
-This `Part.asProps()` method can be used to return the part as an object that is suitable for inclusion in renderprops. 
+This `Part.asProps()` method can be used to return the part as an object that is suitable for inclusion in renderprops. We call this internally, when rendering you only need this when you are building your own render system. 
 
 
-## Example
+## Signature
 
-<Example caption=" Example of the Part.asprops() method">
 ```js
-({ Point, points, Path, paths, part }) => {
 
   Part.prototype.asProps = function () 
   return {
@@ -22,8 +20,8 @@ This `Part.asProps()` method can be used to return the part as an object that is
     bottomRight: this.bottomRight,
     topLeft: this.topLeft,
   }
-}
+
 ```
-</Example>
+
 
 

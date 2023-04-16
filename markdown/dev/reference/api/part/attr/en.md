@@ -28,14 +28,23 @@ Part Part.attr(
 
 ```js
 
-({ Point, points, Path, paths, part }) => {
+({ part, points, Point, Path, paths }) => {
 
- const part = {
-  name: 'examples.attribute',
-  draft: ({ attribute, part }
-) =>  part.attr()
-}
+points.A = new Point(0,0)
+points.B = new Point(0,40)
+points.C = new Point(100,40)
 
+paths.line = new Path()
+  .move(points.B)
+  .line(points.C)
+  .line(points.A)
+  .line(points.B)
+  .close()
+  .addText('I have been flipped!', 'left')
+
+part.attr('transform', 'scale(1,-1) translate(0,-40)') 
+
+return part
 }
 
 ```
