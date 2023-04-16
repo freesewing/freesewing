@@ -13,6 +13,7 @@ import { version } from '../../data.mjs'
 import { __loadPatternDefaults } from '../config.mjs'
 import { PatternConfig, getPluginName } from './pattern-config.mjs'
 import { PatternDraftQueue } from './pattern-draft-queue.mjs'
+import { PatternSampler } from './pattern-sampler.mjs'
 import cloneDeep from 'lodash.clonedeep'
 
 //////////////////////////////////////////////
@@ -254,14 +255,7 @@ Pattern.prototype.getRenderProps = function () {
  * @return {object} this - The Pattern instance
  */
 Pattern.prototype.sample = function () {
-  this.__init()
-  if (this.settings[0].sample.type === 'option') {
-    return this.sampleOption(this.settings[0].sample.option)
-  } else if (this.settings[0].sample.type === 'measurement') {
-    return this.sampleMeasurement(this.settings[0].sample.measurement)
-  } else if (this.settings[0].sample.type === 'models') {
-    return this.sampleModels(this.settings[0].sample.models, this.settings[0].sample.focus || false)
-  }
+  return new PatternSampler(this).sample()
 }
 
 /**
@@ -270,13 +264,7 @@ Pattern.prototype.sample = function () {
  * @return {object} this - The Pattern instance
  */
 Pattern.prototype.sampleMeasurement = function (measurementName) {
-  this.store.log.debug(`Sampling measurement \`${measurementName}\``)
-  this.__runHooks('preSample')
-  this.__applySettings(this.__measurementSets(measurementName))
-  this.__init()
-  this.__runHooks('postSample')
-
-  return this.draft()
+  return new PatternSampler(this).sampleMeasurement(measurementName)
 }
 
 /**
@@ -285,13 +273,7 @@ Pattern.prototype.sampleMeasurement = function (measurementName) {
  * @return {object} this - The Pattern instance
  */
 Pattern.prototype.sampleModels = function (models, focus = false) {
-  this.store.log.debug(`Sampling models \`${Object.keys(models).join(', ')}\``)
-  this.__runHooks('preSample')
-  this.__applySettings(this.__modelSets(models, focus))
-  this.__init()
-  this.__runHooks('postSample')
-
-  return this.draft()
+  return new PatternSampler(this).sampleModels(models, focus)
 }
 
 /**
@@ -300,13 +282,7 @@ Pattern.prototype.sampleModels = function (models, focus = false) {
  * @return {object} this - The Pattern instance
  */
 Pattern.prototype.sampleOption = function (optionName) {
-  this.store.log.debug(`Sampling option \`${optionName}\``)
-  this.__runHooks('preSample')
-  this.__applySettings(this.__optionSets(optionName))
-  this.__init()
-  this.__runHooks('postSample')
-
-  return this.draft()
+  return new PatternSampler(this).sampleOption(optionName)
 }
 
 /**
@@ -528,36 +504,6 @@ Pattern.prototype.__isStackHidden = function (stackName) {
 }
 
 /**
- * Generates an array of settings.options objects for sampling a list or boolean option
- *
- * @private
- * @param {string} optionName - Name of the option to sample
- * @return {Array} sets - The list of settings objects
- */
-Pattern.prototype.__listBoolOptionSets = function (optionName) {
-  let option = this.config.options[optionName]
-  const base = this.__setBase()
-  const sets = []
-  let run = 1
-  if (typeof option.bool !== 'undefined') option = { list: [false, true] }
-  for (const choice of option.list) {
-    const settings = {
-      ...base,
-      options: {
-        ...base.options,
-      },
-      idPrefix: `sample-${run}`,
-      partClasses: `sample-${run}`,
-    }
-    settings.options[optionName] = choice
-    sets.push(settings)
-    run++
-  }
-
-  return sets
-}
-
-/**
  * Generates an array of settings.absoluteOptions objects for sampling a list option
  *
  * @private
@@ -730,75 +676,6 @@ Pattern.prototype.__macro = function (key, method) {
 }
 
 /**
- * Generates an array of settings objects for sampling a measurement
- *
- * @private
- * @param {string} measurementName - The name of the measurement to sample
- * @return {Array} sets - The list of settings objects
- */
-Pattern.prototype.__measurementSets = function (measurementName) {
-  let val = this.settings[0].measurements[measurementName]
-  if (val === undefined)
-    this.store.log.error(
-      `Cannot sample measurement \`${measurementName}\` because it's \`undefined\``
-    )
-  let step = val / 50
-  val = val * 0.9
-  const sets = []
-  const base = this.__setBase()
-  for (let run = 1; run < 11; run++) {
-    const settings = {
-      ...base,
-      measurements: {
-        ...base.measurements,
-      },
-      idPrefix: `sample-${run}`,
-      partClasses: `sample-${run}`,
-    }
-    settings.measurements[measurementName] = val
-    sets.push(settings)
-    val += step
-  }
-
-  return sets
-}
-
-/**
- * Generates an array of settings objects for sampling a list of models
- *
- * @private
- * @param {object} models - The models to sample
- * @param {string} focus - The ID of the model that should be highlighted
- * @return {Array} sets - The list of settings objects
- */
-Pattern.prototype.__modelSets = function (models, focus = false) {
-  const sets = []
-  const base = this.__setBase()
-  let run = 1
-  // If there's a focus, do it first so it's at the bottom of the SVG
-  if (focus) {
-    sets.push({
-      ...base,
-      measurements: models[focus],
-      idPrefix: `sample-${run}`,
-      partClasses: `sample-${run} sample-focus`,
-    })
-    run++
-    delete models[focus]
-  }
-  for (const measurements of Object.values(models)) {
-    sets.push({
-      ...base,
-      measurements,
-      idPrefix: `sample-${run}`,
-      partClasses: `sample-${run}`,
-    })
-  }
-
-  return sets
-}
-
-/**
  * Determines whether a part is needed, depending on the 'only' setting and the configured dependencies
  *
  * @private
@@ -828,58 +705,6 @@ Pattern.prototype.__needs = function (partName, set = 0) {
   }
 
   return false
-}
-
-/**
- * Generates an array of settings objects for sampling an option
- *
- * @private
- * @param {string} optionName - The name of the option to sample
- * @return {Array} sets - The list of settings objects
- */
-Pattern.prototype.__optionSets = function (optionName) {
-  const sets = []
-  if (!(optionName in this.config.options)) return sets
-  let option = this.config.options[optionName]
-  if (typeof option.list === 'object' || typeof option.bool !== 'undefined')
-    return this.__listBoolOptionSets(optionName)
-  let factor = 1
-  let step, val
-  let numberRuns = 10
-  let stepFactor = numberRuns - 1
-  if (typeof option.min === 'undefined' || typeof option.max === 'undefined') {
-    const min = option * 0.9
-    const max = option * 1.1
-    option = { min, max }
-  }
-  if (typeof option.pct !== 'undefined') factor = 100
-  val = option.min / factor
-  if (typeof option.count !== 'undefined' || typeof option.mm !== 'undefined') {
-    const numberOfCounts = option.max - option.min + 1
-    if (numberOfCounts < 10) {
-      numberRuns = numberOfCounts
-      stepFactor = Math.max(numberRuns - 1, 1)
-    }
-  }
-  step = (option.max / factor - val) / stepFactor
-  const base = this.__setBase()
-  for (let run = 1; run <= numberRuns; run++) {
-    const settings = {
-      ...base,
-      options: {
-        ...base.options,
-      },
-      idPrefix: `sample-${run}`,
-      partClasses: `sample-${run}`,
-    }
-    settings.options[optionName] = val
-    sets.push(settings)
-    val += step
-    if (typeof option.count !== 'undefined' || typeof option.mm !== 'undefined')
-      val = Math.round(val)
-  }
-
-  return sets
 }
 
 /**
@@ -996,20 +821,6 @@ Pattern.prototype.__runHooks = function (hookName, data = false) {
     for (let hook of hooks) {
       hook.method(data, hook.data)
     }
-  }
-}
-
-/**
- * Returns the base/defaults to generate a set of settings
- *
- * @private
- * @return {object} settings - The settings object
- */
-Pattern.prototype.__setBase = function () {
-  return {
-    ...this.settings[0],
-    measurements: { ...(this.settings[0].measurements || {}) },
-    options: { ...(this.settings[0].options || {}) },
   }
 }
 
