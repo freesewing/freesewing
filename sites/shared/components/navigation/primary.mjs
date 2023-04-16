@@ -259,7 +259,10 @@ export const ActiveSection = ({ app }) => {
   let nodes = app.state.nav
   // Some sections are further trimmed
   if (app.state.crumbs && app.state.crumbs[0].s === 'docs') {
-    if (app.state.crumbs.length === 2) {
+    if (app.state.crumbs.length > 1 && app.state.crumbs[1].s === 'docs/faq') {
+      slice = 2
+      nodes = app.state.nav[getCrumb(1, app)]
+    } else if (app.state.crumbs.length === 2) {
       slice = 2
       nodes = app.state.nav[getCrumb(1, app)]
     } else if (
