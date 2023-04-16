@@ -14,7 +14,7 @@ export const DocsLayout = ({ app, children = [], title }) => (
           <h1 className="break-words">{title}</h1>
         </div>
       )}
-      {children}
+      <div className="xl:pl-4">{children}</div>
     </section>
   </div>
 )
