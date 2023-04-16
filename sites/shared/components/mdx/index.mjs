@@ -17,7 +17,7 @@ export const MdxComponents = (app = false) => ({
   Fixme: (props) => <Popout {...props} fixme />,
   Link: (props) => <Popout {...props} link />,
   Note: (props) => <Popout {...props} note />,
-  ReadMore: (props) => <ReadMore {...props} app={app} slug={app.slug} />,
+  ReadMore: (props) => <ReadMore {...props} app={app} slug={app.state.slug} />,
   Related: (props) => <Popout {...props} related />,
   Tip: (props) => <Popout {...props} tip />,
   Warning: (props) => <Popout {...props} warning />,
