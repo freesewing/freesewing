@@ -28,36 +28,36 @@ Taschen sind in Sandy nicht enthalten, da sie standardmäßig nur eine Naht oder
 
 Wenn du Naht-Taschen haben möchtest, kannst du das Rock- Schnittmuster teilen, um Nähte zu erzeugen, in die du die Taschen einfügen kannst. Wenn du es in Drittel (standard) oder Hälften teilst, entstehen Seitennähte, in die du die Nahttaschen einfügen kannst. Vergiss nicht, Nahtzugaben an den Schnittlinien hinzuzufügen.
 
-If you do not wish to create additional seams but still wish to have pockets, you can use Patch Pockets or if you are feeling adventurous, you can use Welt Pockets.
+Wenn du keine zusätzlichen Nähte erstellen möchtest, aber trotzdem Taschen haben möchtest, kannst du eine Tasche aufsetzen, oder wenn du dich abenteuerlich fühlst, kannst du auch Paspeltaschen nähen.
 
 </Note>
 
-## Step 2: Prep the opening
+## Schritt 2: Bereite die Öffnung vor
 
 - Insert zipper or placket into opening if using.
-- If not using, press the openings seam allowance to the inside and _Edgestitch_/_Topstitch_ in place. You may also wish to continue the topstitching down the seam.
+- If not using, press the openings seam allowance to the inside and _Edgestitch_/_Topstitch_ in place. Nach Wunsch kannst du die Naht absteppen.
 
 <Note>
 
-Skip this step if:
-- You are including the zipper in the waistband.
-- You are making a seamless version.
+Überspringe diesen Schritt, wenn:
+- du den Reißverschluss in den Bund einfügen möchtest.
+Du machst eine nahtlose Version.
 
 </Note>
 
-## Step 3: Lining
+## Schritt 3: Wenden
 
-- (Optional) Interline the skirt with a stiffer or stronger fabric.
+- (optional) du kannst ein Zwischenfutter mit einem steiferen oder festeren Material erstellen.
 - Attach Lining to skirt at hem and opening by your preferred method.
 - _Baste_ Lining to skirt at waist.
-- Gather the waist if needed.
+- Bei Bedarf Die Weite in Falten legen.
 
-## Step 4: The waistband
+## Der Bund
 
-### Closures
+### Verschlüsse
 
-- Interface/stiffen half the waistband part lengthwise. Or interface/stiffen one of the curved waistband parts.
-- Press under the seam allowance on the long edge of the waistband that is not interfaced. Trim. _Baste_ the fold in place if needed.
+- Verstärke den Bund der Länge nach auf einer Hälfte. Oder verstärke eines der gebogenen Bundteile.
+- Presse an der Seite, die nicht verstärkt ist, die Nahtzugabe nach unten um. Trim. _Baste_ the fold in place if needed.
 - With _good sides together_ sew the interfaced waistband/side of the waistband to the skirt. Gather the skirt down to the waistband if needed.
 - If using the curved waistband sew the non-interfaced part to the interfaced part. Trim and clip seam and press the non-interfaced part up and away from the skirt.
 
