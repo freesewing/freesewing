@@ -49,6 +49,9 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, namespaces)),
+      page: {
+        path: ['account', 'sets'],
+      },
     },
   }
 }
