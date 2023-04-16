@@ -25,11 +25,7 @@ export const ModalThemePicker = ({ app, iconOnly = false, bottom = false }) => {
               <span className="grow"></span>
               <div className="flex flex-shrink-0 flex-wrap gap-1 items-center">
                 {['primary', 'secondary', 'accent', 'neutral'].map((color) => (
-                  <div
-                    key={color}
-                    className={`bg-${color} w-8 h-8 rounded-full border-2 `}
-                    key={theme}
-                  ></div>
+                  <div key={color} className={`bg-${color} w-8 h-8 rounded-full border-2 `}></div>
                 ))}
               </div>
             </button>

@@ -1,7 +1,6 @@
 // Hooks
 import { useApp } from 'shared/hooks/use-app.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
-import { useTranslation } from 'next-i18next'
 // Dependencies
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -32,7 +31,6 @@ const DynamicAccountProfile = dynamic(
 const AccountPage = (props) => {
   const app = useApp(props)
   const { account } = useAccount()
-  const { t } = useTranslation(namespaces)
 
   return (
     <PageWrapper app={app}>

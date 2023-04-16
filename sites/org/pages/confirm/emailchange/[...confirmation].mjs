@@ -38,7 +38,7 @@ const ConfirmSignUpPage = (props) => {
       app.startLoading()
       const confirmation = await backend.loadConfirmation({ id, check })
       if (confirmation?.result === 'success' && confirmation.confirmation) {
-        const result2 = await backend.updateAccount({
+        const result = await backend.updateAccount({
           confirm: 'emailchange',
           confirmation: confirmation.confirmation.id,
           check: confirmation.confirmation.check,

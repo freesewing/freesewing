@@ -1,5 +1,3 @@
-// Dependencies
-import { useTranslation } from 'next-i18next'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 // Components
