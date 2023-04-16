@@ -33,7 +33,7 @@ const UsernamePage = (props) => {
   return (
     <PageWrapper app={app} title={t('title')} layout={BareLayout} footer={false}>
       <DynamicAuthWrapper app={app}>
-        <div className="m-auto max-w-lg text-center lg:mt-12 p-8">
+        <div className="m-auto max-w-lg text-center lg:mt-24 p-8">
           <DynamicUsername app={app} title welcome />
         </div>
       </DynamicAuthWrapper>
@@ -47,6 +47,9 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, namespaces)),
+      page: {
+        path: ['welcome', 'username'],
+      },
     },
   }
 }
