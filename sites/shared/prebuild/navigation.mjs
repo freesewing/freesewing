@@ -46,7 +46,7 @@ export const prebuildNavigation = (mdxPages, strapiPosts, site) => {
         t: page.t,
         s: slug,
       }
-      if (page.o) val._o = page.o
+      if (page.o) val.o = page.o
       set(nav, [lang, ...chunks], val)
     }
 

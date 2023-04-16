@@ -3,26 +3,28 @@ import orderBy from 'lodash.orderby'
 import Link from 'next/link'
 
 // Helper method to filter out the real children
-const order = (obj) => orderBy(obj, ['__order', '__title'], ['asc', 'asc'])
+const order = (obj) => orderBy(obj, ['o', 't'], ['asc', 'asc'])
 const currentChildren = (current) =>
   Object.values(order(current)).filter((entry) => typeof entry === 'object')
 
-export const ReadMore = (props) => {
+export const ReadMore = ({ app, recurse = 0, slug = false }) => {
   // Don't bother if we don't have the navigation tree in app
-  if (!props.app) return null
+  if (!app) return null
 
-  const root = get(props.app.navigation, props.app.state.slug.split('/'))
+  // Deal with recurse not being a number
+  if (recurse) {
+    if (typeof recurse === 'number') recurse--
+    else recurse = 1
+  }
+
+  const root = slug ? get(app.state.nav, slug.split('/').slice(1)) : app.state.nav
+
   const list = []
   for (const page of currentChildren(root)) {
     list.push(
-      <li key={page.__slug} className={props.recurse ? 'ont-bold' : ''}>
-        <Link
-          href={`/${page.__slug}`}
-          className={props.recurse ? 'inline-block font-bold pt-3 pb-1' : ''}
-        >
-          {page.__title}
-        </Link>
-        {props.recurse && <ReadMore app={props.app} slug={page.__slug} />}
+      <li key={page.s}>
+        <Link href={`/${page.s}`}>{page.t}</Link>
+        {recurse > 0 ? <ReadMore app={app} slug={page.s} recurse={recurse} /> : null}
       </li>
     )
   }

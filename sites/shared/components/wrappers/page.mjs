@@ -8,6 +8,7 @@ import { useTheme } from 'shared/hooks/use-theme.mjs'
 import { LayoutWrapper, ns as layoutNs } from 'site/components/wrappers/layout.mjs'
 import { DocsLayout, ns as docsNs } from 'site/components/layouts/docs.mjs'
 import { Feeds } from 'site/components/feeds.mjs'
+import { Spinner } from 'shared/components/spinner.mjs'
 
 export const ns = [...new Set([...layoutNs, ...docsNs])]
 
@@ -18,7 +19,7 @@ export const PageWrapper = ({
   layout = DocsLayout,
   footer = true,
   children = [],
-  title = 'FIXME: No title set',
+  title = <Spinner className="h-12 w-12 animate-spin text-primary" />,
 }) => {
   /*
    * This forces a re-render upon initial bootstrap of the app

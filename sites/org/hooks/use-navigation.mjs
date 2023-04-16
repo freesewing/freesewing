@@ -5,7 +5,7 @@ import orderBy from 'lodash.orderby'
 import { freeSewingConfig as conf } from 'site/freesewing.config.mjs'
 
 /*
- * prebuildNavvigation[locale] holds the naigation structure based on MDX content.
+ * prebuildNavvigation[locale] holds the navigation structure based on MDX content.
  * The entire website only has a few pages that are now MDX-based:
  * - 404 => no navigation shown
  * - home page => no navvigation shown
@@ -31,11 +31,6 @@ const sitePages = (locale, t = false) => {
       t: t('sections:showcase'),
       s: 'showcase',
       o: 20,
-    },
-    docs: {
-      t: t('sections:docs'),
-      s: 'docs',
-      o: 30,
     },
     blog: {
       t: t('sections:blog'),

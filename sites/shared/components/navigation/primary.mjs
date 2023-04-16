@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import orderBy from 'lodash.orderby'
+import get from 'lodash.get'
 import {
   CommunityIcon,
   DesignIcon,
@@ -252,15 +253,39 @@ export const MainSections = ({ app }) => {
   return <ul>{output}</ul>
 }
 
-export const ActiveSection = ({ app }) => (
-  <div>
-    {app.state.crumbs ? (
-      <div className="pl-4">
-        <Breadcrumbs crumbs={app.state.crumbs.slice(0, 1)} />
+const getCrumb = (index, app) => app.state.crumbs[index].s.split('/').pop()
+
+export const ActiveSection = ({ app }) => {
+  let slice = 1
+  let nodes = app.state.nav
+  // Some sections are further trimmed
+  if (app.state.crumbs && app.state.crumbs[0].s === 'docs') {
+    if (app.state.crumbs.length === 2) {
+      slice = 2
+      nodes = app.state.nav[getCrumb(1, app)]
+    } else if (
+      app.state.crumbs.length === 4 &&
+      app.state.crumbs[1].s === 'docs/patterns' &&
+      app.state.crumbs[3].s.split('/').pop() === 'options'
+    ) {
+      slice = 4
+      nodes = app.state.nav[getCrumb(1, app)][getCrumb(2, app)][getCrumb(3, app)]
+    } else if (app.state.crumbs.length > 2 && app.state.crumbs[1].s === 'docs/patterns') {
+      slice = 3
+      nodes = app.state.nav[getCrumb(1, app)][getCrumb(2, app)]
+    }
+  }
+
+  return (
+    <div>
+      {app.state.crumbs ? (
+        <div className="pl-4 my-2">
+          <Breadcrumbs crumbs={app.state.crumbs.slice(0, slice)} />
+        </div>
+      ) : null}
+      <div className="pr-2">
+        <SubLevel hasChildren={1} nodes={nodes} active={app.state.slug} />
       </div>
-    ) : null}
-    <div className="pr-2">
-      <SubLevel hasChildren={1} nodes={app.state.nav} active={app.state.slug} />
     </div>
-  </div>
-)
+  )
+}
