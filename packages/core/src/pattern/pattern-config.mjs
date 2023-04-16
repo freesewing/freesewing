@@ -1,4 +1,4 @@
-import { __addNonEnumProp } from './utils.mjs'
+import { __addNonEnumProp } from '../utils.mjs'
 
 export const hidePresets = {
   HIDE_ALL: {
