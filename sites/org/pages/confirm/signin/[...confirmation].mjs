@@ -1,6 +1,7 @@
 // Hooks
 import { useEffect, useState } from 'react'
 import { useApp } from 'shared/hooks/use-app.mjs'
+import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
@@ -45,11 +46,19 @@ const Wrapper = ({ app, t, children }) => (
 )
 
 const ConfirmSignInPage = (props) => {
+  const router = useRouter()
+  // Get confirmation ID and check from url
+  const [confirmationId, confirmationCheck] = router.asPath.slice(1).split('/').slice(2)
+  const app = useApp({
+    ...props,
+    page: {
+      path: ['confirm', 'emailchange', confirmationId],
+    },
+  })
+
   const { setAccount, setToken } = useAccount()
-  const app = useApp(props)
   const backend = useBackend()
   const { t } = useTranslation(ns)
-  const router = useRouter()
 
   const [error, setError] = useState(false)
   const [ready, setReady] = useState(false)
@@ -67,14 +76,12 @@ const ConfirmSignInPage = (props) => {
   useEffect(() => {
     // Async inside useEffect requires this approach
     const getConfirmation = async () => {
-      // Get confirmation ID and check from url
-      const [confirmationId, confirmationCheck] = router.asPath.slice(1).split('/').slice(2)
       // Reach out to backend
-      const result = await backend.signInLink({
+      const result = await backend.signInFromLink({
         id: confirmationId,
         check: confirmationCheck,
       })
-      if (result.data.token) return storeAccount(result.data)
+      if (result?.data?.token) return storeAccount(result.data)
       if (result.status === 404) return setError(404)
 
       return setError(true)
