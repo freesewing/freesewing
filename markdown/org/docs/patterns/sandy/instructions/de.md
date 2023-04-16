@@ -15,18 +15,18 @@ Due to seamless and closure Sandy's needing different constructions we have sepa
 
 </Note>
 
-## Step 1: Prepping the Skirt
+## Schritt 1: Vorbereitung des Rocks
 
-- If including a closure, sew the skirt seam  _good sides together_ up to where you intend the opening to start.
+- Nähe die Rock-Naht  _rechts auf rechts_ zusammen bis dahin, wo die Öffnung für den Verschluss beginnen soll.
 - Add Pockets if using.
 - If using lining, prep the same as the skirt.
 - _Finish_ seams if not lining.
 
 <Note>
 
-Pockets are not included in Sandy as it has one seam by default or no seams at all.
+Taschen sind in Sandy nicht enthalten, da sie standardmäßig nur eine Naht oder gar keine Nähte hat.
 
-If you would like inseam pockets you can cut the skirt pattern piece into multiple pieces rather than a single one to create seams to insert them into. Cutting it into thirds (for default) or two (for seamless) will give you two sideseams for two inseam pockets, just don't forget to add back seam allowance to the cut lines if including.
+Wenn du Naht-Taschen haben möchtest, kannst du das Rock- Schnittmuster teilen, um Nähte zu erzeugen, in die du die Taschen einfügen kannst. Wenn du es in Drittel (standard) oder Hälften teilst, entstehen Seitennähte, in die du die Nahttaschen einfügen kannst. Vergiss nicht, Nahtzugaben an den Schnittlinien hinzuzufügen.
 
 If you do not wish to create additional seams but still wish to have pockets, you can use Patch Pockets or if you are feeling adventurous, you can use Welt Pockets.
 
