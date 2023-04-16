@@ -9,8 +9,8 @@ import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Link from 'next/link'
 // Components
-import { PageWrapper } from 'shared/components/wrappers/page.mjs'
-import { BareLayout } from 'site/components/layouts/bare.mjs'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
+import { BareLayout, ns as layoutNs } from 'site/components/layouts/bare.mjs'
 import { WelcomeWrapper } from 'site/components/wrappers/welcome.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
 import { Popout } from 'shared/components/popout.mjs'
@@ -22,7 +22,7 @@ import {
 } from 'site/components/gdpr/details.mjs'
 
 // Translation namespaces used on this page
-const ns = Array.from(new Set([...gdprNs, 'confirm', 'locales', 'themes']))
+const ns = Array.from(new Set([...pageNs, ...layoutNs, ...gdprNs, 'confirm', 'locales', 'themes']))
 
 export const SignupLinkExpired = () => {
   const { t } = useTranslation('confirm')
@@ -59,11 +59,18 @@ const Checkbox = ({ value, setter, label, children = null }) => (
 )
 
 const ConfirmSignUpPage = (props) => {
-  const app = useApp(props)
+  const router = useRouter()
+  // Get confirmation ID and check from url
+  const [confirmationId, confirmationCheck] = router.asPath.slice(1).split('/').slice(2)
+  const app = useApp({
+    ...props,
+    page: {
+      path: ['confirm', 'emailchange', confirmationId],
+    },
+  })
   const { setAccount, setToken } = useAccount()
   const backend = useBackend()
   const { t } = useTranslation(ns)
-  const router = useRouter()
 
   const [id, setId] = useState(false)
   const [pDetails, setPDetails] = useState(false)
@@ -95,8 +102,6 @@ const ConfirmSignUpPage = (props) => {
   useEffect(() => {
     // Async inside useEffect requires this approach
     const getConfirmation = async () => {
-      // Get confirmation ID and check from url
-      const [confirmationId, confirmationCheck] = router.asPath.slice(1).split('/').slice(2)
       // Reach out to backend
       const data = await backend.loadConfirmation({
         id: confirmationId,
