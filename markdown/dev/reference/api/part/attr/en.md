@@ -30,7 +30,7 @@ Part Part.attr(
 
 ({ Point, points, Path, paths, part }) => {
 
- cont part = {
+ const part = {
   name: 'examples.attribute',
   draft: ({ attribute, part }
 ) =>  part.attr()
