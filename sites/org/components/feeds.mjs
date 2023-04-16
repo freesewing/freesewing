@@ -60,10 +60,14 @@ const feeds = {
   ],
 }
 
-export const Feeds = () => (
-  <Head>
-    {feeds[useLanguage()].map((feed) => (
-      <link key={feed.href} {...feed} />
-    ))}
-  </Head>
-)
+export const Feeds = () => {
+  const language = useLanguage()
+
+  return language ? (
+    <Head>
+      {feeds[language].map((feed) => (
+        <link key={feed.href} {...feed} />
+      ))}
+    </Head>
+  ) : null
+}

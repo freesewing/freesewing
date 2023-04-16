@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react'
 import { useApp } from 'shared/hooks/use-app.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
+import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
@@ -20,17 +21,22 @@ import { HelpIcon } from 'shared/components/icons.mjs'
 const ns = Array.from(new Set([...pageNs, 'account']))
 
 const ConfirmSignUpPage = (props) => {
-  const app = useApp(props)
+  const router = useRouter()
+  // Get confirmation ID and check from url
+  const [id, check] = router.asPath.slice(1).split('/').slice(2)
+
+  const app = useApp({
+    ...props,
+    page: {
+      path: ['confirm', 'emailchange', id],
+    },
+  })
   const { setAccount, setToken, token } = useAccount()
   const backend = useBackend()
   const toast = useToast()
   const { t } = useTranslation(ns)
-  const router = useRouter()
 
   const [error, setError] = useState(false)
-
-  // Get confirmation ID and check from url
-  const [id, check] = router.asPath.slice(1).split('/').slice(2)
 
   useEffect(() => {
     // Async inside useEffect requires this approach
