@@ -81,17 +81,7 @@ export const PageWrapper = ({
       <LayoutWrapper {...childProps}>
         {Layout ? <Layout {...childProps}>{children}</Layout> : children}
       </LayoutWrapper>
-      {app.state.modal ? (
-        <div
-          className={`fixed top-0 left-0 m-0 p-0 shadow drop-shadow-lg w-full h-screen
-              bg-base-100 bg-opacity-95 z-50 hover:cursor-pointer
-              flex flex-row justify-center overflow-auto
-            `}
-          onClick={() => app.updateState('modal', false)}
-        >
-          {app.state.modal}
-        </div>
-      ) : null}
+      {app.state.modal ? app.state.modal : null}
     </div>
   )
 }

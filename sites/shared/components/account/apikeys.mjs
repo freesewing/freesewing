@@ -15,6 +15,7 @@ import { CopyIcon } from 'shared/components/icons.mjs'
 import { Collapse } from 'shared/components/collapse.mjs'
 import { TrashIcon } from 'shared/components/icons.mjs'
 import { LeftIcon } from 'shared/components/icons.mjs'
+import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 
 export const ns = ['account', 'toast']
 
@@ -109,7 +110,7 @@ const ShowKey = ({ apikey, t, clear }) => (
   </div>
 )
 
-const NewKey = ({ app, t, setGenerate, keyAdded, backend, toast }) => {
+const NewKey = ({ app, t, account, setGenerate, keyAdded, backend, toast }) => {
   const [name, setName] = useState('')
   const [level, setLevel] = useState(1)
   const [expires, setExpires] = useState(DateTime.now())
@@ -184,7 +185,7 @@ const NewKey = ({ app, t, setGenerate, keyAdded, backend, toast }) => {
   )
 }
 
-const Apikey = ({ apikey, t, backend, keyAdded, app }) => {
+const Apikey = ({ apikey, t, account, backend, keyAdded, app }) => {
   const toast = useToast()
 
   const fields = {
@@ -210,7 +211,7 @@ const Apikey = ({ apikey, t, backend, keyAdded, app }) => {
 
   const removeModal = () => {
     app.setModal(
-      <div className="text-center">
+      <ModalWrapper app={app}>
         <h2>{t('areYouCertain')}</h2>
         <p>{t('deleteKeyWarning')}</p>
         <p className="flex flex-row gap-4 items-center justify-center">
@@ -219,7 +220,7 @@ const Apikey = ({ apikey, t, backend, keyAdded, app }) => {
             {t('delete')}
           </button>
         </p>
-      </div>
+      </ModalWrapper>
     )
   }
 
@@ -287,12 +288,12 @@ export const Apikeys = ({ app }) => {
   return (
     <div className="max-w-xl xl:pl-4">
       {generate ? (
-        <NewKey {...{ app, t, setGenerate, backend, toast, keyAdded }} />
+        <NewKey {...{ app, t, account, setGenerate, backend, toast, keyAdded }} />
       ) : (
         <>
           <h2>{t('apikeys')}</h2>
           {keys.map((apikey) => (
-            <Apikey {...{ app, apikey, t, backend, keyAdded }} key={apikey.id} />
+            <Apikey {...{ app, account, apikey, t, backend, keyAdded }} key={apikey.id} />
           ))}
           <button
             className="btn btn-primary w-full capitalize mt-4"

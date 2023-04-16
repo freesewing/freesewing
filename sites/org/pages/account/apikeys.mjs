@@ -10,7 +10,6 @@ import { ns as apikeysNs } from 'shared/components/account/apikeys.mjs'
 
 // Translation namespaces used on this page
 const namespaces = [...new Set([...apikeysNs, ...authNs, ...pageNs])]
-console.log(namespaces)
 
 /*
  * Some things should never generated as SSR

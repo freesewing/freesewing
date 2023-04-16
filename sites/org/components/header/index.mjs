@@ -27,6 +27,7 @@ import { ModalThemePicker } from 'shared/components/modal/theme-picker.mjs'
 import { ModalLocalePicker } from 'shared/components/modal/locale-picker.mjs'
 import { Search, ns as searchNs } from 'site/components/search.mjs'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
+import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 
 export const ns = [...new Set(['header', ...themeNs, ...localeNs])]
 
