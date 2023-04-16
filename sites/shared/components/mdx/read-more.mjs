@@ -17,7 +17,9 @@ export const ReadMore = ({ app, recurse = 0, slug = false }) => {
     else recurse = 1
   }
 
-  const root = slug ? get(app.state.nav, slug.split('/').slice(1)) : app.state.nav
+  const root =
+    slug && slug !== 'docs' ? get(app.state.nav, slug.split('/').slice(1)) : app.state.nav
+  console.log(root)
 
   const list = []
   for (const page of currentChildren(root)) {
