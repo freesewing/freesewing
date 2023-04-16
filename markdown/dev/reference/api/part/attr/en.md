@@ -11,11 +11,13 @@ instead, thereby overwriting the value of the attribute.
 ## Signature
 
 ```js
+
 Part Part.attr( 
   string name,
   mixed value,
   bool overwrite = false
 )
+
 ```
 
 <Tip compact>This method is chainable as it returns the `Part` object</Tip>
@@ -23,7 +25,9 @@ Part Part.attr(
 ## Example
 
 <Example caption=" Example of the Part.attr() method">
+
 ```js
+
 ({ Point, points, Path, paths, part }) => {
 
  cont part = {
@@ -33,6 +37,8 @@ Part Part.attr(
 }
 
 }
+
 ```
+
 </Example>
 
