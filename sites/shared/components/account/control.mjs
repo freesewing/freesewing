@@ -12,7 +12,7 @@ import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
 export const ns = ['account', 'toast']
 
 export const ControlSettings = ({ app, title = false, welcome = false }) => {
-  const { account, setAccount, token } = useAccount()
+  const { account, token } = useAccount()
   const backend = useBackend(token)
   const toast = useToast()
   const { t } = useTranslation(ns)

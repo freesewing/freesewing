@@ -24,7 +24,7 @@ export function useApp(props = {}) {
 
   if (!path) throw 'You MUST pass a page.path prop to the useApp hook'
 
-  const reportError = useBugsnag(props?.bugsnag)
+  const reportError = useBugsnag(bugsnag)
   const navState = useNavigation(path)
 
   // React state

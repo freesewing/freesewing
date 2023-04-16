@@ -2,6 +2,7 @@ import get from 'lodash.get'
 import orderBy from 'lodash.orderby'
 import Link from 'next/link'
 import { LeftIcon, RightIcon } from 'shared/components/icons.mjs'
+import { Popout } from 'shared/components/popout.mjs'
 
 // helper method to order nav entries
 const order = (obj) => orderBy(obj, ['__order', '__title'], ['asc', 'asc'])
@@ -96,10 +97,15 @@ const renderNext = (node) =>
   )
 
 export const PrevNext = ({ app }) => {
-  return <p>fixme: prevnext</p>
   return (
     <div className="grid grid-cols-2 gap-4 border-t mt-12 py-2">
       {renderPrevious(previous(app))}
+      <Popout fixme>
+        <h5>Not yet implemented</h5>
+        <p>
+          Fix it in <code>site/shared/components/mdx/prev-next.mjs</code>
+        </p>
+      </Popout>
       {renderNext(next(app))}
     </div>
   )

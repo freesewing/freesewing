@@ -266,7 +266,7 @@ const Apikey = ({ apikey, t, account, backend, keyAdded, app }) => {
 }
 
 export const Apikeys = ({ app }) => {
-  const { account, setAccount, token } = useAccount()
+  const { account, token } = useAccount()
   const backend = useBackend(token)
   const { t } = useTranslation(ns)
   const toast = useToast()

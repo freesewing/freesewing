@@ -11,17 +11,15 @@ export const Breadcrumbs = ({ crumbs, title }) =>
         </Link>
       </li>
       {crumbs.map((crumb) => (
-        <>
-          <li key={crumb.s} className="flex flex-row flex-wrap items-center">
-            <RightIcon className="w-4 h-4 opacity-50" stroke={3} />
-            <PageLink
-              href={`/${crumb.s}`}
-              title={crumb.t}
-              className="text-secondary-focus font-bold px-1"
-              txt={crumb.t}
-            />
-          </li>
-        </>
+        <li key={crumb.s} className="flex flex-row flex-wrap items-center">
+          <RightIcon className="w-4 h-4 opacity-50" stroke={3} />
+          <PageLink
+            href={`/${crumb.s}`}
+            title={crumb.t}
+            className="text-secondary-focus font-bold px-1"
+            txt={crumb.t}
+          />
+        </li>
       ))}
     </ul>
   ) : null

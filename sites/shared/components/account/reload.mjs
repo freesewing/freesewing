@@ -1,5 +1,4 @@
 // Dependencies
-import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
@@ -11,7 +10,7 @@ import { BackToAccountButton } from './shared.mjs'
 export const ns = ['account', 'toast']
 
 export const ReloadAccount = ({ app, title = false }) => {
-  const { account, setAccount, token } = useAccount()
+  const { setAccount, token } = useAccount()
   const backend = useBackend(token)
   const { t } = useTranslation(ns)
   const toast = useToast()

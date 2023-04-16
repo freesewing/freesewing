@@ -1,16 +1,8 @@
 import { useState, useEffect } from 'react'
-import { ThemePicker, ns as themeNs } from 'shared/components/theme-picker/index.mjs'
-import { LocalePicker, ns as localeNs } from 'shared/components/locale-picker/index.mjs'
 import {
-  CloseIcon,
   CommunityIcon,
   DesignIcon,
-  DiscordIcon,
   DocsIcon,
-  GithubIcon,
-  HeartIcon,
-  HelpIcon,
-  HomeIcon,
   MenuIcon,
   RssIcon,
   SearchIcon,
@@ -20,14 +12,11 @@ import {
   I18nIcon,
 } from 'shared/components/icons.mjs'
 import { Ribbon } from 'shared/components/ribbon.mjs'
-import { WordMark } from 'shared/components/wordmark.mjs'
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import { ModalThemePicker } from 'shared/components/modal/theme-picker.mjs'
 import { ModalLocalePicker } from 'shared/components/modal/locale-picker.mjs'
-import { Search, ns as searchNs } from 'site/components/search.mjs'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
-import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 
 export const ns = [...new Set(['header', ...themeNs, ...localeNs])]
 

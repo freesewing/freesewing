@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import orderBy from 'lodash.orderby'
-import get from 'lodash.get'
 import {
   CommunityIcon,
   DesignIcon,

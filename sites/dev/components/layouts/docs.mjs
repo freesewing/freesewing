@@ -1,12 +1,6 @@
-// Hooks
-import { useRouter } from 'next/router'
 // Components
-import Link from 'next/link'
 import { AsideNavigation } from 'shared/components/navigation/aside.mjs'
-import { ThemePicker } from 'shared/components/theme-picker/index.mjs'
 import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
-import { HomeIcon } from 'shared/components/icons.mjs'
-import { useState, useEffect } from 'react'
 
 export const ns = []
 

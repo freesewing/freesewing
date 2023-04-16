@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router'
 import { AsideNavigation } from 'shared/components/navigation/aside.mjs'
 
 export const ns = []

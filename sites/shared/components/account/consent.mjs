@@ -39,7 +39,7 @@ const Checkbox = ({ value, setter, label, children = null }) => (
 )
 
 export const ConsentSettings = ({ app, title = false }) => {
-  const { account, setAccount, token } = useAccount()
+  const { account, token } = useAccount()
   const backend = useBackend(token)
   const toast = useToast()
   const { t } = useTranslation(ns)

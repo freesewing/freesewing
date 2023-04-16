@@ -17,7 +17,7 @@ import { freeSewingConfig as conf } from 'site/freesewing.config.mjs'
 
 const ns = ['account', 'sections']
 
-const sitePages = (locale, t = false) => {
+const sitePages = (t = false) => {
   // Handle t not being present
   if (!t) t = (string) => string
   const pages = {
@@ -96,12 +96,11 @@ const createSections = (nav) => {
 export const useNavigation = (path = [], locale = 'en') => {
   const { t } = useTranslation(ns)
 
-  const nav = { ...pbn[locale], ...sitePages(locale, t) }
+  const nav = { ...pbn[locale], ...sitePages(t) }
 
   // Creat crumbs array
   const crumbs = createCrumbs(path, nav)
   const sections = createSections(nav)
-  const pages = sitePages(locale)
 
   return {
     path,

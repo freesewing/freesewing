@@ -36,12 +36,12 @@ const ConfirmSignUpPage = (props) => {
     // Async inside useEffect requires this approach
     const confirmEmail = async () => {
       app.startLoading()
-      const result = await backend.loadConfirmation({ id, check })
-      if (result?.result === 'success' && result.confirmation) {
-        const result = await backend.updateAccount({
+      const confirmation = await backend.loadConfirmation({ id, check })
+      if (confirmation?.result === 'success' && confirmation.confirmation) {
+        const result2 = await backend.updateAccount({
           confirm: 'emailchange',
-          confirmation: result.confirmation.id,
-          check: result.confirmation.check,
+          confirmation: confirmation.confirmation.id,
+          check: confirmation.confirmation.check,
         })
         if (result.success) {
           setAccount(result.data.account)

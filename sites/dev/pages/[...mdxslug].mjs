@@ -6,7 +6,7 @@ import { mdxLoader } from 'shared/mdx/loader.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import Head from 'next/head'
-import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
+import { PageWrapper } from 'shared/components/wrappers/page.mjs'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { TocWrapper } from 'shared/components/wrappers/toc.mjs'
 import { HelpUs } from 'site/components/help-us.mjs'

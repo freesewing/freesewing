@@ -78,7 +78,7 @@ export default MdxPage
  */
 export async function getStaticProps({ params, locale }) {
   const path = ['docs', ...params.mdxslug]
-  const { mdx, intro, toc, frontmatter } = await mdxLoader(
+  const { mdx, intro, toc } = await mdxLoader(
     locale,
     'org',
     ['docs', ...params.mdxslug].join('/'),

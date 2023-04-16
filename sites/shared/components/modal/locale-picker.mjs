@@ -1,11 +1,8 @@
 // Dependencies
-import { Fragment } from 'react'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
-import { Popover, Transition } from '@headlessui/react'
 import Link from 'next/link'
 // Components
-import { I18nIcon, DownIcon } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 // Languages
 import en from 'site/public/locales/en/locales.json'

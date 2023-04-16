@@ -2,7 +2,6 @@
 import { useTranslation } from 'next-i18next'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
-import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Components
 import Link from 'next/link'
 import Markdown from 'react-markdown'
@@ -31,13 +30,7 @@ const Avatar = ({ img, app = false }) => (
 )
 
 export const AccountProfile = ({ app }) => {
-  const { account, setAccount, token } = useAccount()
-  const { t } = useTranslation(ns)
-
-  const toggleModal = () => {
-    if (modal) setModal(false)
-    else setModal(<img src={account.img} />)
-  }
+  const { account } = useAccount()
 
   if (!account) return null
 

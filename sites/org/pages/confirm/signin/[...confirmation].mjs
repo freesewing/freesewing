@@ -10,7 +10,6 @@ import Link from 'next/link'
 // Components
 import { PageWrapper } from 'shared/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
-import { WelcomeWrapper } from 'site/components/wrappers/welcome.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
 import { Robot } from 'shared/components/robot/index.mjs'
 import { FlexButtonText } from 'site/components/buttons/flex-button-text.mjs'
@@ -46,7 +45,7 @@ const Wrapper = ({ app, t, children }) => (
 )
 
 const ConfirmSignInPage = (props) => {
-  const account = ({ setAccount, setToken } = useAccount())
+  const { setAccount, setToken } = useAccount()
   const app = useApp(props)
   const backend = useBackend()
   const { t } = useTranslation(ns)

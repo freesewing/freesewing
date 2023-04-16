@@ -31,9 +31,8 @@ const DynamicAccountProfile = dynamic(
 
 const AccountPage = (props) => {
   const app = useApp(props)
-  const { account, token } = useAccount()
+  const { account } = useAccount()
   const { t } = useTranslation(namespaces)
-  const crumbs = [[t('profile'), 'profile']]
 
   return (
     <PageWrapper app={app}>

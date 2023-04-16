@@ -8,7 +8,7 @@ import { PageWrapper } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
 
 // Translation namespaces used on this page
-const namespaces = ['account', ...authNs]
+const ns = ['account', ...authNs]
 
 /*
  * Some things should never generated as SSR
@@ -41,7 +41,7 @@ export default AccountPage
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale)),
+      ...(await serverSideTranslations(locale, ns)),
       page: {
         path: ['account'],
       },

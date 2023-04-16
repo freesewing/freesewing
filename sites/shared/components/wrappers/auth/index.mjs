@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
-import { Loader } from 'shared/components/loader.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 
 export const ns = ['auth']

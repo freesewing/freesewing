@@ -13,8 +13,7 @@ import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { SusiWrapper } from 'site/components/wrappers/susi.mjs'
 import { Robot } from 'shared/components/robot/index.mjs'
 import { EmailValidButton } from 'site/components/buttons/email-valid-button.mjs'
-import { ButtonText } from '../signin/index.mjs'
-import { EmailIcon, LeftIcon, RightIcon, WarningIcon, HelpIcon } from 'shared/components/icons.mjs'
+import { LeftIcon, HelpIcon } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 
 // Translation namespaces used on this page

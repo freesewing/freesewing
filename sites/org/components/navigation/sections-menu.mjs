@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { icons, isActive, ns as sectionsNs } from 'shared/components/navigation/primary.mjs'
+import { icons, ns as sectionsNs } from 'shared/components/navigation/primary.mjs'
 import { useTranslation } from 'next-i18next'
 import orderBy from 'lodash.orderby'
 import { colors } from 'site/components/header/index.mjs'
@@ -14,8 +14,6 @@ export const SectionsMenu = ({ app }) => {
   const sortableSections = app.state.sections.map((s) => ({ ...s, o: s.o ? s.o : s.t }))
   const output = []
   for (const page of orderBy(sortableSections, ['o', 't'])) {
-    const act = isActive(page.s, app.state.slug)
-
     const item = (
       <Link
         key={page.s}

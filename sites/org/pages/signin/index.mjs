@@ -8,7 +8,6 @@ import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useRouter } from 'next/router'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { validateEmail, validateTld } from 'shared/utils.mjs'
 // Components
 import Link from 'next/link'
 import { PageWrapper } from 'shared/components/wrappers/page.mjs'
@@ -71,7 +70,6 @@ const SignInPage = (props) => {
   const [signInFailed, setSignInFailed] = useState(false)
   const [magicLinkSent, setMagicLinkSent] = useState(false)
 
-  const updatePassword = (evt) => setPassword(evt.target.value)
   const clearUsername = () => app.setUsername(false)
 
   useEffect(() => {
