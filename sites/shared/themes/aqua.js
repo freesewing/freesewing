@@ -46,9 +46,9 @@ module.exports = {
 
   // info: Used rarely, can be another color best somewhat neutral looking
   // and should work with the default text color
-  info: colors.lightBlue['600'],
+  info: colors.sky['600'],
   // Text color on the info button
-  '--btn-info-content': colors.lightBlue['200'],
+  '--btn-info-content': colors.sky['200'],
   // success: Used rarely, but if it is it's in notifications indicating success
   // Typically some shade of green
   success: colors.teal['400'],
