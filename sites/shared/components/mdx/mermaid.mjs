@@ -10,5 +10,5 @@ export const Mermaid = ({ children }) => {
   useEffect(() => {
     mermaid.contentLoaded()
   }, [])
-  return <div className="mermaid">{children.props.children}</div>
+  return <div className="mermaid">{chart}</div>
 }
