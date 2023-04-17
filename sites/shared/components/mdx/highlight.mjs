@@ -11,7 +11,6 @@ const names = {
 }
 
 export const Highlight = (props) => {
-  console.log('in highlight')
   let language = 'txt'
   let status = false
   if (props.language) language = props.language
