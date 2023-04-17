@@ -175,7 +175,7 @@ describe('Pattern', () => {
     )
   })
 
-  describe('Pattern.__pack()', () => {
+  describe('PatternRenderer.__pack()', () => {
     it('should get a part stack name from a function that uses settings', () => {
       const expectedName = 'namedStack'
       const front = {
@@ -201,7 +201,7 @@ describe('Pattern', () => {
 
       const pattern = new Test()
       pattern.draft()
-      pattern.__pack()
+      pattern.getRenderProps()
 
       const stackNames = Object.keys(pattern.stacks)
       expect(stackNames).to.include(expectedName)

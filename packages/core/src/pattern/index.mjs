@@ -15,6 +15,7 @@ import { PatternConfig } from './pattern-config.mjs'
 import { PatternDraftQueue } from './pattern-draft-queue.mjs'
 import { PatternSampler } from './pattern-sampler.mjs'
 import { PatternPlugins, getPluginName } from './pattern-plugins.mjs'
+import { PatternRenderer } from './pattern-renderer.mjs'
 import cloneDeep from 'lodash.clonedeep'
 
 //////////////////////////////////////////////
@@ -194,60 +195,22 @@ Pattern.prototype.getConfig = function () {
   return this.__init().config
 }
 
+/**
+ * Renders the pattern to SVG
+ *
+ * @return {string} svg - The rendered SVG
+ */
+Pattern.prototype.render = function () {
+  return new PatternRenderer(this).render()
+}
+
 /** Returns props required to render this pattern through
  *  an external renderer (eg. a React component)
  *
  * @return {object} this - The Pattern instance
  */
 Pattern.prototype.getRenderProps = function () {
-  this.store.log.info('Gathering render props')
-  // Run pre-render hook
-  let svg = new Svg(this)
-  svg.hooks = this.plugins.hooks
-
-  this.__pack()
-  svg.__runHooks('preRender')
-
-  let props = { svg }
-  props.width = this.width
-  props.height = this.height
-  props.autoLayout = this.autoLayout
-  props.settings = this.settings
-  props.parts = []
-  for (const set of this.parts) {
-    const setParts = {}
-    for (let p in set) {
-      if (!set[p].hidden) {
-        setParts[p] = {
-          ...set[p].asProps(),
-          store: this.setStores[set[p].set],
-        }
-      } else if (this.setStores[set.set]) {
-        this.setStores[set.set].log.info(
-          `Part${p} is hidden in set ${set.set}. Not adding to render props`
-        )
-      }
-    }
-    props.parts.push(setParts)
-  }
-  props.stacks = {}
-  for (let s in this.stacks) {
-    if (!this.__isStackHidden(s)) {
-      props.stacks[s] = this.stacks[s].asProps()
-    } else this.store.log.info(`Stack ${s} is hidden. Skipping in render props.`)
-  }
-  props.logs = {
-    pattern: this.store.logs,
-    sets: this.setStores.map((store) => ({
-      debug: store.logs.debug,
-      info: store.logs.info,
-      error: store.logs.error,
-      warning: store.logs.warning,
-    })),
-  }
-
-  svg.__runHooks('postRender')
-  return props
+  return new PatternRenderer(this).getRenderProps()
 }
 
 /**
@@ -298,18 +261,6 @@ Pattern.prototype.on = function (hook, method, data) {
   this.plugins.on(hook, method, data)
 
   return this
-}
-
-/**
- * Renders the pattern to SVG
- *
- * @return {string} svg - The rendered SVG
- */
-Pattern.prototype.render = function () {
-  this.svg = new Svg(this)
-  this.svg.hooks = this.plugins.hooks
-
-  return this.__pack().svg.render()
 }
 
 /**
@@ -403,26 +354,6 @@ Pattern.prototype.__createPartWithContext = function (name, set) {
   }
 
   return part
-}
-
-/**
- * Instantiates a new Stack instance and populates it with the pattern context
- *
- * @private
- * @param {string} name - The name of the stack
- * @return {Stack} stack - The instantiated Stack
- */
-Pattern.prototype.__createStackWithContext = function (name) {
-  // Context object to add to Stack closure
-  const stack = new Stack()
-  stack.name = name
-  stack.context = {
-    config: this.config,
-    settings: this.settings,
-    setStores: this.setStores,
-  }
-
-  return stack
 }
 
 /**
@@ -599,79 +530,6 @@ Pattern.prototype.__needs = function (partName, set = 0) {
   }
 
   return false
-}
-
-/**
- * Packs stacks in a 2D space and sets pattern size
- *
- * @private
- * @return {Pattern} this - The Pattern instance
- */
-Pattern.prototype.__pack = function () {
-  this.__runHooks('preLayout')
-  for (const set in this.settings) {
-    if (this.setStores[set].logs.error.length > 0) {
-      this.setStores[set].log.warning(`One or more errors occured. Not packing pattern parts`)
-      return this
-    }
-  }
-  // First, create all stacks
-  this.stacks = {}
-  for (const set in this.settings) {
-    for (const [name, part] of Object.entries(this.parts[set])) {
-      const stackName =
-        this.settings[set].stackPrefix +
-        (typeof part.stack === 'function' ? part.stack(this.settings[set], name) : part.stack)
-      if (typeof this.stacks[stackName] === 'undefined')
-        this.stacks[stackName] = this.__createStackWithContext(stackName, set)
-      this.stacks[stackName].addPart(part)
-    }
-  }
-
-  let bins = []
-  for (const [key, stack] of Object.entries(this.stacks)) {
-    // Avoid multiple render calls to cause addition of transforms
-    stack.attributes.remove('transform')
-    if (!this.__isStackHidden(key)) {
-      stack.home()
-      if (this.settings[0].layout === true)
-        bins.push({ id: key, width: stack.width, height: stack.height })
-      else {
-        if (this.width < stack.width) this.width = stack.width
-        if (this.height < stack.height) this.height = stack.height
-      }
-    }
-  }
-  if (this.settings[0].layout === true) {
-    // some plugins will add a width constraint to the settings, but we can safely pass undefined if not
-    let size = pack(bins, { inPlace: true, maxWidth: this.settings[0].maxWidth })
-    for (let bin of bins) {
-      this.autoLayout.stacks[bin.id] = { move: {} }
-      let stack = this.stacks[bin.id]
-      if (bin.x !== 0 || bin.y !== 0) {
-        stack.attr('transform', `translate(${bin.x}, ${bin.y})`)
-      }
-      this.autoLayout.stacks[bin.id].move = {
-        x: bin.x + stack.layout.move.x,
-        y: bin.y + stack.layout.move.y,
-      }
-    }
-    this.width = size.width
-    this.height = size.height
-  } else if (typeof this.settings[0].layout === 'object') {
-    this.width = this.settings[0].layout.width
-    this.height = this.settings[0].layout.height
-    for (let stackId of Object.keys(this.settings[0].layout.stacks)) {
-      // Some parts are added by late-stage plugins
-      if (this.stacks[stackId]) {
-        let transforms = this.settings[this.activeStack || 0].layout.stacks[stackId]
-        this.stacks[stackId].generateTransform(transforms)
-      }
-    }
-  }
-
-  this.__runHooks('postLayout')
-  return this
 }
 
 /**
