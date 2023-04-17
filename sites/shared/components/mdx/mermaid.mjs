@@ -7,7 +7,6 @@ mermaid.initialize({
 
 export const Mermaid = ({ children }) => {
   const chart = children.props.children
-  console.log({ chart })
   useEffect(() => {
     mermaid.contentLoaded()
   }, [])
