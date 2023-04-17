@@ -12,7 +12,6 @@ import remarkCopyLinkedFiles from 'remark-copy-linked-files'
 import { remarkIntroPlugin } from './remark-intro-plugin.mjs'
 import mdxPluginToc from './mdx-plugin-toc.mjs'
 import smartypants from 'remark-smartypants'
-//import mdxMermaid from 'mdx-mermaid'
 // Rehype plugins we want to use
 import rehypeHighlight from 'rehype-highlight'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
@@ -54,7 +53,6 @@ export const mdxLoader = async (language, site, slug, jargon) => {
       outputFormat: 'function-body',
       development: false,
       remarkPlugins: [
-        //mdxMermaid,
         remarkFrontmatter,
         remarkGfm,
         smartypants,
