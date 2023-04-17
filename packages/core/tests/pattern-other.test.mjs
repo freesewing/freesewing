@@ -90,8 +90,8 @@ describe('Pattern', () => {
     pattern.use(plugin)
     pattern.use({ plugin })
     pattern.use({ plugin })
-    expect(Object.keys(pattern.plugins).length).to.equal(1)
-    expect(Object.keys(pattern.plugins)[0]).to.equal('test')
+    expect(Object.keys(pattern.plugins.plugins)).to.have.lengthOf(1)
+    expect(Object.keys(pattern.plugins.plugins)[0]).to.equal('test')
   })
 
   it('Should log an error of added parts do not have a draft method', () => {

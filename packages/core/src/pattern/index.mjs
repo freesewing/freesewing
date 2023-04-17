@@ -11,9 +11,10 @@ import { Store } from '../store.mjs'
 import { Hooks } from '../hooks.mjs'
 import { version } from '../../data.mjs'
 import { __loadPatternDefaults } from '../config.mjs'
-import { PatternConfig, getPluginName } from './pattern-config.mjs'
+import { PatternConfig } from './pattern-config.mjs'
 import { PatternDraftQueue } from './pattern-draft-queue.mjs'
 import { PatternSampler } from './pattern-sampler.mjs'
+import { PatternPlugins, getPluginName } from './pattern-plugins.mjs'
 import cloneDeep from 'lodash.clonedeep'
 
 //////////////////////////////////////////////
@@ -35,7 +36,6 @@ export function Pattern(designConfig = {}) {
   this.setStores = [] // Per-set stores
 
   // Non-enumerable properties
-  __addNonEnumProp(this, 'plugins', {})
   __addNonEnumProp(this, 'width', 0)
   __addNonEnumProp(this, 'height', 0)
   __addNonEnumProp(this, 'autoLayout', { stacks: {} })
@@ -49,7 +49,8 @@ export function Pattern(designConfig = {}) {
   __addNonEnumProp(this, '__initialized', false)
   __addNonEnumProp(this, 'config.parts', {})
   __addNonEnumProp(this, 'config.resolvedDependencies', {})
-  __addNonEnumProp(this, '__storeMethods', new Set())
+
+  __addNonEnumProp(this, 'plugins', new PatternPlugins(this))
   __addNonEnumProp(this, '__configResolver', new PatternConfig(this)) // handles config resolution during __init() as well as runtime part adding
 
   return this
@@ -202,7 +203,7 @@ Pattern.prototype.getRenderProps = function () {
   this.store.log.info('Gathering render props')
   // Run pre-render hook
   let svg = new Svg(this)
-  svg.hooks = this.hooks
+  svg.hooks = this.plugins.hooks
 
   this.__pack()
   svg.__runHooks('preRender')
@@ -294,11 +295,7 @@ Pattern.prototype.sampleOption = function (optionName) {
  * @return {object} this - The Pattern instance
  */
 Pattern.prototype.on = function (hook, method, data) {
-  for (const added of this.hooks[hook]) {
-    // Don't add it twice
-    if (added.method === method) return this
-  }
-  this.hooks[hook].push({ method, data })
+  this.plugins.on(hook, method, data)
 
   return this
 }
@@ -310,7 +307,7 @@ Pattern.prototype.on = function (hook, method, data) {
  */
 Pattern.prototype.render = function () {
   this.svg = new Svg(this)
-  this.svg.hooks = this.hooks
+  this.svg.hooks = this.plugins.hooks
 
   return this.__pack().svg.render()
 }
@@ -323,13 +320,7 @@ Pattern.prototype.render = function () {
  * @return {object} this - The Pattern instance
  */
 Pattern.prototype.use = function (plugin, data) {
-  const name = getPluginName(plugin)
-  if (!this.plugins?.[name])
-    return plugin.plugin && plugin.condition
-      ? this.__useIf(plugin, data) // Conditional plugin
-      : this.__loadPlugin(plugin, data) // Regular plugin
-
-  this.store.log.info(`Plugin \`${name}\` was requested, but it's already loaded. Skipping.`)
+  this.plugins.use(plugin, data, this.settings)
 
   return this
 }
@@ -347,7 +338,7 @@ Pattern.prototype.use = function (plugin, data) {
 Pattern.prototype.__createSetStore = function () {
   const store = new Store()
   store.set('data', this.store.data)
-  store.extend([...this.__storeMethods])
+  store.extend([...this.plugins.__storeMethods])
 
   return store
 }
@@ -400,15 +391,15 @@ Pattern.prototype.__createPartWithContext = function (name, set) {
     config: this.config,
     settings: this.settings[set],
     store: this.setStores[set],
-    macros: this.macros,
+    macros: this.plugins.macros,
   }
 
   if (this.settings[set]?.partClasses) {
     part.attr('class', this.settings[set].partClasses)
   }
 
-  for (const macro in this.macros) {
-    part[__macroName(macro)] = this.macros[macro]
+  for (const macro in this.plugins.macros) {
+    part[__macroName(macro)] = this.plugins.macros[macro]
   }
 
   return part
@@ -457,9 +448,10 @@ Pattern.prototype.__init = function () {
    */
   this.__resolveParts() // Resolves parts
     .__resolveConfig() // Gets the config from the resolver
-    .__loadOptionDefaults() // Merges default options with user provided ones
-    .__loadPlugins() // Loads plugins
     .__loadConfigData() // Makes config data available in store
+    .__loadOptionDefaults() // Merges default options with user provided ones
+
+  this.plugins.loadConfigPlugins(this.config, this.settings) // Loads plugins
 
   this.store.log.info(`Pattern initialized. Draft order is: ${this.config.draftOrder.join(', ')}`)
   this.__runHooks('postInit')
@@ -573,104 +565,6 @@ Pattern.prototype.__loadOptionDefaults = function () {
       }
     }
   }
-
-  return this
-}
-
-/**
- * Loads a plugin
- *
- * @private
- * @param {object} plugin - The plugin object, or an object with `plugin` and `condition` keys
- * @param {object} data - Any plugin data to load
- * @return {Pattern} this - The Pattern instance
- */
-Pattern.prototype.__loadPlugin = function (plugin, data) {
-  this.plugins[plugin.name] = plugin
-  if (plugin.hooks) this.__loadPluginHooks(plugin, data)
-  if (plugin.macros) this.__loadPluginMacros(plugin)
-  if (plugin.store) this.__loadPluginStoreMethods(plugin)
-  this.store.log.info(`Loaded plugin \`${plugin.name}:${plugin.version}\``)
-
-  return this
-}
-
-/**
- * Loads a plugin's hooks
- *
- * @private
- * @param {object} plugin - The plugin object
- * @param {object} data - Any plugin data to load
- * @return {Pattern} this - The Pattern instance
- */
-Pattern.prototype.__loadPluginHooks = function (plugin, data) {
-  for (let hook of Object.keys(this.hooks)) {
-    if (typeof plugin.hooks[hook] === 'function') {
-      this.on(hook, plugin.hooks[hook], data)
-    } else if (Array.isArray(plugin.hooks[hook])) {
-      for (let method of plugin.hooks[hook]) {
-        this.on(hook, method, data)
-      }
-    }
-  }
-
-  return this
-}
-
-/**
- * Loads a plugin's macros
- *
- * @private
- * @param {object} plugin - The plugin object
- * @return {Pattern} this - The Pattern instance
- */
-Pattern.prototype.__loadPluginMacros = function (plugin) {
-  for (let macro in plugin.macros) {
-    if (typeof plugin.macros[macro] === 'function') {
-      this.__macro(macro, plugin.macros[macro])
-    }
-  }
-}
-
-/**
- * Loads the plugins that are part of the config
- *
- * @private
- * @return {Pattern} this - The Pattern instance
- */
-Pattern.prototype.__loadPlugins = function () {
-  if (!this.config.plugins) return this
-  for (const plugin in this.config.plugins)
-    this.use(this.config.plugins[plugin], this.config.plugins[plugin]?.data)
-
-  return this
-}
-
-/**
- * Loads a plugin's store methods
- *
- * @private
- * @param {object} plugin - The plugin object
- * @return {Pattern} this - The Pattern instance
- */
-Pattern.prototype.__loadPluginStoreMethods = function (plugin) {
-  if (Array.isArray(plugin.store)) {
-    for (const method of plugin.store) this.__storeMethods.add(method)
-  } else this.store.log.warning(`Plugin store methods should be an Array`)
-
-  return this
-}
-
-/**
- * Sets a method for a macro
- *
- * @private
- * @param {string} macro - Name of the macro to run
- * @param {function} method - The macro method
- * @return {object} this - The Pattern instance
- */
-Pattern.prototype.__macro = function (key, method) {
-  this.macros[key] = method
 
   return this
 }
@@ -815,7 +709,7 @@ Pattern.prototype.__resolveParts = function () {
  */
 Pattern.prototype.__runHooks = function (hookName, data = false) {
   if (data === false) data = this
-  let hooks = this.hooks[hookName]
+  let hooks = this.plugins.hooks[hookName]
   if (hooks.length > 0) {
     this.store.log.debug(`Running \`${hookName}\` hooks`)
     for (let hook of hooks) {
@@ -861,32 +755,6 @@ Pattern.prototype.__snappedPercentageOption = function (optionName, set) {
   }
 
   return abs
-}
-
-/**
- * Loads a conditional plugin
- *
- * @private
- * @param {object} plugin - An object with `plugin` and `condition` keys
- * @return {Pattern} this - The Pattern instance
- */
-Pattern.prototype.__useIf = function (plugin) {
-  let load = 0
-  for (const set of this.settings) {
-    if (plugin.condition(set)) load++
-  }
-  if (load > 0) {
-    this.store.log.info(
-      `Condition met: Loaded plugin \`${plugin.plugin.name}:${plugin.plugin.version}\``
-    )
-    this.__loadPlugin(plugin.plugin, plugin.data)
-  } else {
-    this.store.log.info(
-      `Condition not met: Skipped loading plugin \`${plugin.plugin.name}:${plugin.plugin.version}\``
-    )
-  }
-
-  return this
 }
 
 /**
