@@ -1,5 +1,4 @@
 import { Attributes } from '../attributes.mjs'
-import pack from 'bin-pack-with-constraints'
 import { __addNonEnumProp, __macroName } from '../utils.mjs'
 import { Part } from '../part.mjs'
 import { Stack } from '../stack.mjs'
@@ -12,7 +11,7 @@ import { Hooks } from '../hooks.mjs'
 import { version } from '../../data.mjs'
 import { __loadPatternDefaults } from '../config.mjs'
 import { PatternConfig } from './pattern-config.mjs'
-import { PatternDraftQueue } from './pattern-draft-queue.mjs'
+import { PatternDrafter } from './pattern-drafter.mjs'
 import { PatternSampler } from './pattern-sampler.mjs'
 import { PatternPlugins, getPluginName } from './pattern-plugins.mjs'
 import { PatternRenderer } from './pattern-renderer.mjs'
@@ -46,7 +45,6 @@ export function Pattern(designConfig = {}) {
   __addNonEnumProp(this, 'Path', Path)
   __addNonEnumProp(this, 'Snippet', Snippet)
   __addNonEnumProp(this, 'Attributes', Attributes)
-  __addNonEnumProp(this, 'macros', {})
   __addNonEnumProp(this, '__initialized', false)
   __addNonEnumProp(this, 'config.parts', {})
   __addNonEnumProp(this, 'config.resolvedDependencies', {})
@@ -92,98 +90,14 @@ Pattern.prototype.addPart = function (part, resolveImmediately = true) {
  */
 Pattern.prototype.draft = function () {
   this.__init()
-  this.draftQueue = new PatternDraftQueue(this)
-  this.__runHooks('preDraft')
-  // Keep container for drafted parts fresh
-  this.parts = []
-
-  // Iterate over the provided sets of settings (typically just one)
-  for (const set in this.settings) {
-    this.activeSet = set
-    this.setStores[set] = this.__createSetStore()
-    this.setStores[set].log.debug(`Initialized store for set ${set}`)
-    this.__runHooks('preSetDraft')
-    this.setStores[set].log.debug(`📐 Drafting pattern for set ${set}`)
-
-    // Create parts container
-    this.parts[set] = {}
-
-    // Handle snap for pct options
-    this.__loadAbsoluteOptionsSet(set)
-
-    this.draftQueue.start()
-    while (this.draftQueue.hasNext()) {
-      this.createPartForSet(this.draftQueue.next(), set)
-    }
-    this.__runHooks('postSetDraft')
-  }
-  this.__runHooks('postDraft')
+  new PatternDrafter(this).draft()
 
   return this
 }
 
-Pattern.prototype.createPartForSet = function (partName, set = 0) {
-  // gotta protect against attacks
-  if (set === '__proto__') {
-    throw new Error('malicious attempt at altering Object.prototype. Stopping action')
-  }
-  // Create parts
-  this.setStores[set].log.debug(`📦 Creating part \`${partName}\` (set ${set})`)
-  this.parts[set][partName] = this.__createPartWithContext(partName, set)
-
-  // Handle inject/inheritance
-  if (typeof this.config.inject[partName] === 'string') {
-    this.setStores[set].log.debug(
-      `Creating part \`${partName}\` from part \`${this.config.inject[partName]}\``
-    )
-    try {
-      this.parts[set][partName].__inject(this.parts[set][this.config.inject[partName]])
-    } catch (err) {
-      this.setStores[set].log.error([
-        `Could not inject part \`${this.config.inject[partName]}\` into part \`${partName}\``,
-        err,
-      ])
-    }
-  }
-  if (this.__needs(partName, set)) {
-    // Draft part
-    const result = this.draftPartForSet(partName, set)
-    if (typeof result !== 'undefined') this.parts[set][partName] = result
-    // FIXME: THis won't work not that this is immutable
-    // But is it still needed?
-    // this.parts[set][partName].hidden === true ? true : !this.__wants(partName, set)
-  } else {
-    this.setStores[set].log.debug(
-      `Part \`${partName}\` is not needed. Skipping draft and setting hidden to \`true\``
-    )
-    this.parts[set][partName].hidden = true
-  }
-}
-
 Pattern.prototype.draftPartForSet = function (partName, set) {
-  if (typeof this.config.parts?.[partName]?.draft === 'function') {
-    this.activePart = partName
-    this.setStores[set].set('activePart', partName)
-    try {
-      this.__runHooks('prePartDraft')
-      const result = this.config.parts[partName].draft(this.parts[set][partName].shorthand())
-      if (!this.__wants(partName, set)) {
-        result.hide()
-      }
-      this.__runHooks('postPartDraft')
-      if (typeof result === 'undefined') {
-        this.setStores[set].log.error(
-          `Result of drafting part ${partName} was undefined. Did you forget to return the part?`
-        )
-      }
-      return result
-    } catch (err) {
-      this.setStores[set].log.error([`Unable to draft part \`${partName}\` (set ${set})`, err])
-    }
-  } else
-    this.setStores[set].log.error(
-      `Unable to draft pattern part __${partName}__. Part.draft() is not callable`
-    )
+  this.__init()
+  return new PatternDrafter(this).draftPartForSet(partName, set)
 }
 
 /**
@@ -324,39 +238,6 @@ Pattern.prototype.__applySettings = function (sets) {
 }
 
 /**
- * Instantiates a new Part instance and populates it with the pattern context
- *
- * @private
- * @param {string} name - The name of the part
- * @param {int} set - The index of the settings set in the list of sets
- * @return {Part} part - The instantiated Part
- */
-Pattern.prototype.__createPartWithContext = function (name, set) {
-  // Context object to add to Part closure
-  const part = new Part()
-  part.name = name
-  part.set = set
-  part.stack = this.config.parts[name]?.stack || name
-  part.context = {
-    parts: this.parts[set],
-    config: this.config,
-    settings: this.settings[set],
-    store: this.setStores[set],
-    macros: this.plugins.macros,
-  }
-
-  if (this.settings[set]?.partClasses) {
-    part.attr('class', this.settings[set].partClasses)
-  }
-
-  for (const macro in this.plugins.macros) {
-    part[__macroName(macro)] = this.plugins.macros[macro]
-  }
-
-  return part
-}
-
-/**
  * Initializes the pattern coniguration and settings
  *
  * @return {object} this - The Pattern instance
@@ -424,34 +305,6 @@ Pattern.prototype.__isStackHidden = function (stackName) {
   }
 
   return true
-}
-
-/**
- * Generates an array of settings.absoluteOptions objects for sampling a list option
- *
- * @private
- * @param {string} optionName - Name of the option to sample
- * @return {Array} sets - The list of settings objects
- */
-Pattern.prototype.__loadAbsoluteOptionsSet = function (set) {
-  for (const optionName in this.settings[set].options) {
-    const option = this.config.options[optionName]
-    if (
-      typeof option !== 'undefined' &&
-      typeof option.snap !== 'undefined' &&
-      option.toAbs instanceof Function
-    ) {
-      this.settings[set].absoluteOptions[optionName] = this.__snappedPercentageOption(
-        optionName,
-        set
-      )
-      this.setStores[set].log.debug(
-        `🧲 Snapped __${optionName}__ to \`${this.settings[set].absoluteOptions[optionName]}\` for set __${set}__`
-      )
-    }
-  }
-
-  return this
 }
 
 /**
@@ -574,45 +427,6 @@ Pattern.prototype.__runHooks = function (hookName, data = false) {
       hook.method(data, hook.data)
     }
   }
-}
-
-/**
- * Returns the absolute value of a snapped percentage option
- *
- * @private
- * @param {string} optionName - The name of the option
- * @param {int} set - The index of the set in the list of settings
- * @return {float} abs - The absolute value of the snapped option
- */
-Pattern.prototype.__snappedPercentageOption = function (optionName, set) {
-  const conf = this.config.options[optionName]
-  const abs = conf.toAbs(this.settings[set].options[optionName], this.settings[set])
-  // Handle units-specific config - Side-step immutability for the snap conf
-  let snapConf = conf.snap
-  if (!Array.isArray(snapConf) && snapConf.metric && snapConf.imperial)
-    snapConf = snapConf[this.settings[set].units]
-  // Simple steps
-  if (typeof snapConf === 'number') return Math.ceil(abs / snapConf) * snapConf
-  // List of snaps
-  if (Array.isArray(snapConf) && snapConf.length > 1) {
-    for (const snap of snapConf
-      .sort((a, b) => a - b)
-      .map((snap, i) => {
-        const margin =
-          i < snapConf.length - 1
-            ? (snapConf[Number(i) + 1] - snap) / 2 // Look forward
-            : (snap - snapConf[i - 1]) / 2 // Final snap, look backward
-
-        return {
-          min: snap - margin,
-          max: snap + Number(margin),
-          snap,
-        }
-      }))
-      if (abs <= snap.max && abs >= snap.min) return snap.snap
-  }
-
-  return abs
 }
 
 /**

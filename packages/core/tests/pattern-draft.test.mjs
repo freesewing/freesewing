@@ -33,18 +33,6 @@ describe('Pattern', () => {
       expect(count).to.equal(2)
     })
   })
-  describe('Pattern.createPartForSet()', () => {
-    it('Should not allow malicious assignment to Object.prototype', () => {
-      const objProto = Object.prototype
-      const Pattern = new Design()
-      const pattern = new Pattern()
-
-      expect(() => pattern.createPartForSet('part', '__proto__')).to.throw(
-        'malicious attempt at altering Object.prototype. Stopping action'
-      )
-      expect(objProto).to.equal(Object.prototype)
-    })
-  })
   it('Should check whether a part is needed', () => {
     const partA = {
       name: 'test.partA',

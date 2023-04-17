@@ -61,9 +61,7 @@ describe('Pattern', () => {
     const design = new Design({ parts: [test, you] })
     const pattern = new design({ only: ['you'] })
     pattern.draft()
-    expect(pattern.setStores[0].logs.debug).to.include(
-      'Part `test` is not needed. Skipping draft and setting hidden to `true`'
-    )
+    expect(pattern.setStores[0].logs.debug).to.include('Part `test` is not needed. Skipping part')
   })
 
   it('Should return the initialized config', () => {
