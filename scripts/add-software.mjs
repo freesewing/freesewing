@@ -120,7 +120,7 @@ async function addDesign() {
   👉 ${chalk.yellow(
     'Dependencies'
   )}: If you need additional plugins or patterns to extend, update ${chalk.green(
-        'config/dependecies.yaml'
+        'config/dependencies.yaml'
       )}
 
   If you change any of these, run ${chalk.blue('yarn reconfigure')} to update the package(s).
@@ -176,7 +176,7 @@ async function addPlugin() {
 
   👉  We've created your plugin skeleton at ${chalk.green('plugins/plugin-' + name)}
   👉  We've configured the packages via the ${chalk.green('pacakge.json')} file
-  👉  We've added ${chalk.green('plugins/plugin-/' + name)} to the lab
+  👉  We've added ${chalk.green('plugins/plugin-' + name)} to the lab
 
 
   ${chalk.bold.yellow('✏️  Make it your own')}
@@ -193,7 +193,7 @@ async function addPlugin() {
   👉 ${chalk.yellow(
     'Dependencies'
   )}: If you need additional plugins or patterns to extend, update ${chalk.green(
-        'config/dependecies.yaml'
+        'config/dependencies.yaml'
       )}
 
   If you change any of these, run ${chalk.blue('yarn reconfigure')} to update the package(s).
