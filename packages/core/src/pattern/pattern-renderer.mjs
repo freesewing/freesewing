@@ -36,38 +36,36 @@ PatternRenderer.prototype.getRenderProps = function () {
     autoLayout: this.pattern.autoLayout,
     settings: this.pattern.settings,
     parts: [],
+    stacks: {},
   }
 
-  for (const set of this.pattern.parts) {
-    const setParts = {}
-    for (let p in set) {
-      if (!set[p].hidden) {
-        setParts[p] = {
-          ...set[p].asProps(),
-          store: this.pattern.setStores[set[p].set],
+  for (const partSet of this.pattern.parts) {
+    const setPartProps = {}
+    for (let partName in partSet) {
+      const part = partSet[partName]
+      if (!part.hidden) {
+        setPartProps[partName] = {
+          ...partSet[partName].asProps(),
+          store: this.pattern.setStores[part.set],
         }
-      } else if (this.pattern.setStores[set.set]) {
-        this.pattern.setStores[set.set].log.info(
-          `Part${p} is hidden in set ${set.set}. Not adding to render props`
+      } else if (this.pattern.setStores[part.set]) {
+        this.pattern.setStores[part.set].log.info(
+          `Part ${partName} is hidden in set ${part.set}. Not adding to render props`
         )
       }
     }
-    props.parts.push(setParts)
+    props.parts.push(setPartProps)
   }
-  props.stacks = {}
+
   for (let s in this.pattern.stacks) {
     if (!this.pattern.__isStackHidden(s)) {
       props.stacks[s] = this.pattern.stacks[s].asProps()
     } else this.pattern.store.log.info(`Stack ${s} is hidden. Skipping in render props.`)
   }
+
   props.logs = {
     pattern: this.pattern.store.logs,
-    sets: this.pattern.setStores.map((store) => ({
-      debug: store.logs.debug,
-      info: store.logs.info,
-      error: store.logs.error,
-      warning: store.logs.warning,
-    })),
+    sets: this.pattern.setStores.map((store) => store.logs),
   }
 
   this.svg.__runHooks('postRender')
@@ -107,7 +105,7 @@ PatternRenderer.prototype.__stack = function () {
  */
 PatternRenderer.prototype.__pack = function () {
   this.pattern.__runHooks('preLayout')
-  const { settings, setStores, parts } = this.pattern
+  const { settings, setStores, activeSet } = this.pattern
   for (const set in settings) {
     if (setStores[set].logs.error.length > 0) {
       setStores[set].log.warning(`One or more errors occured. Not packing pattern parts`)
@@ -123,39 +121,37 @@ PatternRenderer.prototype.__pack = function () {
     stack.attributes.remove('transform')
     if (!this.pattern.__isStackHidden(key)) {
       stack.home()
-      if (settings[0].layout === true)
+      if (settings[activeSet].layout === true)
         bins.push({ id: key, width: stack.width, height: stack.height })
-      else {
-        if (this.width < stack.width) this.width = stack.width
-        if (this.height < stack.height) this.height = stack.height
+    }
+  }
+  if (settings[activeSet].layout === true) {
+    // some plugins will add a width constraint to the settings, but we can safely pass undefined if not
+    let size = pack(bins, { inPlace: true, maxWidth: settings[0].maxWidth })
+    this.autoLayout.width = size.width
+    this.autoLayout.height = size.height
+
+    for (let bin of bins) {
+      let stack = this.stacks[bin.id]
+      this.autoLayout.stacks[bin.id] = {
+        move: {
+          x: bin.x + stack.layout.move.x,
+          y: bin.y + stack.layout.move.y,
+        },
       }
     }
   }
-  if (settings[0].layout === true) {
-    // some plugins will add a width constraint to the settings, but we can safely pass undefined if not
-    let size = pack(bins, { inPlace: true, maxWidth: settings[0].maxWidth })
-    for (let bin of bins) {
-      this.autoLayout.stacks[bin.id] = { move: {} }
-      let stack = this.stacks[bin.id]
-      if (bin.x !== 0 || bin.y !== 0) {
-        stack.attr('transform', `translate(${bin.x}, ${bin.y})`)
-      }
-      this.autoLayout.stacks[bin.id].move = {
-        x: bin.x + stack.layout.move.x,
-        y: bin.y + stack.layout.move.y,
-      }
-    }
-    this.width = size.width
-    this.height = size.height
-  } else if (typeof settings[0].layout === 'object') {
-    this.width = settings[0].layout.width
-    this.height = settings[0].layout.height
-    for (let stackId of Object.keys(settings[0].layout.stacks)) {
-      // Some parts are added by late-stage plugins
-      if (this.stacks[stackId]) {
-        let transforms = settings[this.activeStack || 0].layout.stacks[stackId]
-        this.stacks[stackId].generateTransform(transforms)
-      }
+
+  const packedLayout =
+    typeof settings[activeSet].layout === 'object' ? settings[activeSet].layout : this.autoLayout
+
+  this.width = packedLayout.width
+  this.height = packedLayout.height
+  for (let stackId of Object.keys(packedLayout.stacks)) {
+    // Some parts are added by late-stage plugins
+    if (this.stacks[stackId]) {
+      let transforms = packedLayout.stacks[stackId]
+      this.stacks[stackId].generateTransform(transforms)
     }
   }
 

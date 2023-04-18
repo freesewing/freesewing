@@ -9,7 +9,7 @@ import { __loadPatternDefaults } from '../config.mjs'
 import { PatternConfig } from './pattern-config.mjs'
 import { PatternDrafter } from './pattern-drafter.mjs'
 import { PatternSampler } from './pattern-sampler.mjs'
-import { PatternPlugins, getPluginName } from './pattern-plugins.mjs'
+import { PatternPlugins } from './pattern-plugins.mjs'
 import { PatternRenderer } from './pattern-renderer.mjs'
 import cloneDeep from 'lodash.clonedeep'
 

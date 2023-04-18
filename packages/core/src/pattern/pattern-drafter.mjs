@@ -6,25 +6,6 @@ export function PatternDrafter(pattern) {
   this.pattern = pattern
 }
 
-Object.defineProperty(PatternDrafter.prototype, 'activeSet', {
-  get: function () {
-    return this.pattern.activeSet
-  },
-  set: function (newVal) {
-    this.pattern.activeSet = newVal
-  },
-})
-
-Object.defineProperty(PatternDrafter.prototype, 'activePart', {
-  get: function () {
-    return this.pattern.activePart
-  },
-  set: function (newVal) {
-    this.pattern.activePart = newVal
-    this.activeStore.set('activePart', newVal)
-  },
-})
-
 /**
  * Drafts this pattern, aka the raison d'etre of FreeSewing
  *
@@ -66,6 +47,10 @@ PatternDrafter.prototype.draft = function () {
 }
 
 PatternDrafter.prototype.draftPartForSet = function (partName, set) {
+  // gotta protect against attacks
+  if (set === '__proto__') {
+    throw new Error('malicious attempt at altering Object.prototype. Stopping action')
+  }
   this.__useSet(set)
   this.__createPartForSet(partName, set)
 
@@ -77,7 +62,8 @@ PatternDrafter.prototype.draftPartForSet = function (partName, set) {
     return
   }
 
-  this.activePart = partName
+  this.pattern.activePart = partName
+  this.activeStore.set('activePart', partName)
   try {
     this.pattern.__runHooks('prePartDraft')
     const result = configPart.draft(this.pattern.parts[set][partName].shorthand())
@@ -222,7 +208,7 @@ PatternDrafter.prototype.__snappedPercentageOption = function (optionName, set) 
 }
 
 PatternDrafter.prototype.__useSet = function (set = 0) {
-  this.activeSet = set
+  this.pattern.activeSet = set
   this.activeSettings = this.pattern.settings[set]
   this.activeStore = this.pattern.setStores[set]
 }

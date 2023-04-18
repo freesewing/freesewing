@@ -159,7 +159,6 @@ describe('Pattern', () => {
     expect(pattern.setStores[0].logs.error[0][0]).to.equal('Unable to draft part `test` (set 0)')
   })
 
-  // FIXME: Add assertions here
   it('Handle layout object', () => {
     const part = {
       name: 'test',
@@ -174,7 +173,7 @@ describe('Pattern', () => {
       layout: { stacks: { test: { flipX: true } }, width: 300, height: 400 },
     })
     const props = pattern.draft().getRenderProps()
-    expect(props.stacks.test.attributes.get('transform')).to.equal('scale(-1 1)')
+    expect(props.stacks.test.attributes.get('transform')).to.equal('scale(-1, 1)')
     expect(props.width).to.equal(300)
     expect(props.height).to.equal(400)
   })
