@@ -52,7 +52,7 @@
   "dependencies": {},
   "devDependencies": {
     "mocha": "10.2.0",
-    "chai": "4.2.0",
+    "chai": "4.3.7",
     "@freesewing/plugin-annotations": "3.0.0-alpha.8",
     "@freesewing/plugin-banner": "3.0.0-alpha.8",
     "@freesewing/plugin-buttons": "3.0.0-alpha.8",
