@@ -14,50 +14,56 @@ export const pleatDefs = [
 export const pleatMacros = {
   pleat: function (so, { points, paths, Path, complete, scale }) {
     if (so === false) {
-      delete points.pleatFrom
-      delete points.pleatFromIn
-      delete points.pleatTo
-      delete points.pleatToIn
-      delete paths.pleatTo
-      delete paths.pleatFrom
-      delete paths.pleatArrow
+      for (const pointName in points) {
+        if (pointName.match('pleat')) delete points[pointName]
+      }
+      for (const pathName in paths) {
+        if (pathName.match('pleat')) delete paths[pathName]
+      }
       return true
     }
     so = {
       margin: 35,
-      prefix: 'pleat',
       reverse: false,
       ...so,
     }
+
+    let prefix
+    if (so.prefix) {
+      prefix = so.prefix + '_pleat'
+    } else {
+      prefix = 'pleat'
+    }
+
     if (complete) {
-      points[so.prefix + 'From'] = so.from
-      points[so.prefix + 'To'] = so.to
-      points[so.prefix + 'FromIn'] = points[so.prefix + 'From'].shift(
+      points[prefix + 'From'] = so.from
+      points[prefix + 'To'] = so.to
+      points[prefix + 'FromIn'] = points[prefix + 'From'].shift(
         so.from.shiftTowards(so.to, 0.1).angle(so.from) + 270,
         so.margin * scale
       )
-      points[so.prefix + 'ToIn'] = points[so.prefix + 'To'].shift(
+      points[prefix + 'ToIn'] = points[prefix + 'To'].shift(
         so.from.shiftTowards(so.to, 0.1).angle(so.to) + 90,
         so.margin * scale
       )
-      paths[so.prefix + 'PleatFrom'] = new Path()
-        .move(points[so.prefix + 'From'])
-        .line(points[so.prefix + 'FromIn'])
+      paths[prefix + 'PleatFrom'] = new Path()
+        .move(points[prefix + 'From'])
+        .line(points[prefix + 'FromIn'])
         .attr('class', 'note' + (so.reverse ? ' dashed' : ''))
-      paths[so.prefix + 'PleatTo'] = new Path()
-        .move(points[so.prefix + 'To'])
-        .line(points[so.prefix + 'ToIn'])
+      paths[prefix + 'PleatTo'] = new Path()
+        .move(points[prefix + 'To'])
+        .line(points[prefix + 'ToIn'])
         .attr('class', 'note' + (so.reverse ? '' : ' dashed'))
-      paths[so.prefix + 'PleatArrow'] = new Path()
+      paths[prefix + 'PleatArrow'] = new Path()
         .move(
-          points[so.prefix + (so.reverse ? 'To' : 'From')].shiftFractionTowards(
-            points[so.prefix + (so.reverse ? 'ToIn' : 'FromIn')],
+          points[prefix + (so.reverse ? 'To' : 'From')].shiftFractionTowards(
+            points[prefix + (so.reverse ? 'ToIn' : 'FromIn')],
             0.25
           )
         )
         .line(
-          points[so.prefix + (so.reverse ? 'From' : 'To')].shiftFractionTowards(
-            points[so.prefix + (so.reverse ? 'FromIn' : 'ToIn')],
+          points[prefix + (so.reverse ? 'From' : 'To')].shiftFractionTowards(
+            points[prefix + (so.reverse ? 'FromIn' : 'ToIn')],
             0.25
           )
         )

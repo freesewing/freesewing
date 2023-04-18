@@ -4,16 +4,12 @@ const titleMacro = function (so, { points, scale, locale, store, part }) {
 
   // Passing `false` will remove the title
   if (so === false || overwrite) {
-    for (const id of [
-      `_${prefix}_titleNr`,
-      `_${prefix}_titleName`,
-      `_${prefix}_titlePattern`,
-      `_${prefix}_titleFor`,
-      `_${prefix}_exportDate`,
-    ])
-      delete points[id]
-
-    if (so === false) return true
+    for (const id of [`titleNr`, `titleName`, `titlePattern`, `titleFor`, `exportDate`]) {
+      for (const pointName in points) {
+        if (pointName.match(id)) delete points[pointName]
+      }
+    }
+    return true
   }
 
   const transform = function (anchor) {
