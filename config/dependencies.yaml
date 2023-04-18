@@ -381,6 +381,7 @@ shared:
     'lodash.unset': *_unset
     'lodash.get': *_get
     'mdast-util-toc': '6.1.1'
+    'mermaid': '10.1.0'
     'pdfkit': '0.13.0'
     'postcss-for': '2.1.1'
     'react': *react
