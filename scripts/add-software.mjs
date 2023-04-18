@@ -102,7 +102,7 @@ async function addDesign() {
   ${chalk.gray('≡≡≡≡≡≡≡≡≡≡')}
 
   👉  We've created your design skeleton at ${chalk.green('designs/' + name)}
-  👉  We've configured the packages via the ${chalk.green('pacakge.json')} file
+  👉  We've configured the packages via the ${chalk.green('package.json')} file
   👉  We've added ${chalk.green('designs/' + name)} to the lab
 
 
@@ -175,8 +175,7 @@ async function addPlugin() {
   ${chalk.gray('≡≡≡≡≡≡≡≡≡≡')}
 
   👉  We've created your plugin skeleton at ${chalk.green('plugins/plugin-' + name)}
-  👉  We've configured the packages via the ${chalk.green('pacakge.json')} file
-  👉  We've added ${chalk.green('plugins/plugin-' + name)} to the lab
+  👉  We've configured the packages via the ${chalk.green('package.json')} file
 
 
   ${chalk.bold.yellow('✏️  Make it your own')}
