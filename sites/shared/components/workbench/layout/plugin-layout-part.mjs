@@ -1,3 +1,5 @@
+import { pluginAnnotations } from '@freesewing/plugin-annotations'
+
 const name = 'Pages Plugin'
 const version = '1.0.0'
 export const sizes = {
@@ -195,6 +197,7 @@ const basePlugin = ({
     },
   },
   macros: {
+    banner: pluginAnnotations.macros.banner,
     /** draft the pages */
     addPages: function (so, shorthand) {
       const [h, w] = so.size
@@ -229,7 +232,7 @@ const basePlugin = ({
             .attr('data-circle-id', `${pageName}-circle`)
           points[`${pageName}-text`] = new Point(x + w / 2, y + h / 2)
             .setText(
-              `${indexStr(col + 1)}${row + 1}`,
+              `${responsiveColumns ? indexStr(col + 1) : ''}${row + 1}`,
               'text-4xl center baseline-center bold muted fill-fabric'
             )
             .attr('data-text-id', `${pageName}-text`)
@@ -241,6 +244,22 @@ const basePlugin = ({
             .line(points[`${pageName}-br`])
             .line(points[`${pageName}-tr`])
             .close()
+
+          // add an edge warning if it can't expand horizontally
+          if (!responsiveColumns) {
+            paths[pageName + '_edge'] = new Path()
+              .move(points[`${pageName}-tr`])
+              .line(points[`${pageName}-br`])
+              // .move(points[`${pageName}-br`].translate(20, 0))
+              .addClass('help contrast stroke-xl')
+
+            shorthand.macro('banner', {
+              path: paths[pageName + '_edge'],
+              text: 'plugin:edgeOf' + shorthand.utils.capitalize(partName),
+              className: 'text-xl center',
+              spaces: 20,
+            })
+          }
 
           if (col === cols - 1 && row === rows - 1) {
             const br = points[`${pageName}-br`]
@@ -254,7 +273,7 @@ const basePlugin = ({
               .attr('class', 'fill-fabric')
               .attr(
                 'style',
-                `stroke-opacity: 0; fill-opacity: ${(col + row) % 2 === 0 ? 0.03 : 0.09};`
+                `stroke-opacity: 0; fill-opacity: ${(col + row) % 2 === 0 ? 0.03 : 0.15};`
               )
           } else {
             paths[pageName].attr('class', 'interfacing stroke-xs')
