@@ -240,7 +240,7 @@ function validatePluginName(name) {
 function createDesign(name, type) {
   const template = ['config', 'templates', 'design']
   const design = ['designs', name]
-  const description = 'A pattern that needs a description'
+  const description = 'A FreeSewing pattern that needs a description'
   const capitalized_name = name.charAt(0).toUpperCase() + name.slice(1)
 
   // Add to designs config file
@@ -280,7 +280,7 @@ function createDesign(name, type) {
 function createPlugin(name) {
   const pluginName = 'plugin-' + name
   const template = ['config', 'templates', 'plugin']
-  const description = 'A plugin that needs a description'
+  const description = 'A FreeSewing plugin that needs a description'
   const plugin = ['plugins', pluginName]
   const capitalized_name = name.charAt(0).toUpperCase() + name.slice(1)
 
