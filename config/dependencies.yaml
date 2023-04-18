@@ -5,7 +5,7 @@ _types:
       '@freesewing/plugin-bundle': *freesewing
     dev:
       'mocha': &mocha '10.2.0'
-      'chai': &chai '4.2.0'
+      'chai': &chai '4.3.7'
   plugin:
     peer:
       '@freesewing/core': *freesewing
