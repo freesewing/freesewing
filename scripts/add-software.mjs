@@ -86,7 +86,7 @@ async function addDesign() {
     type: 'text',
     name: 'name',
     message: 'What name would you like the design to have? ([a-z] only)',
-    validate: validateNameDesign,
+    validate: validateDesignName,
   })
 
   if (name && type) {
@@ -159,7 +159,7 @@ async function addPlugin() {
     type: 'text',
     name: 'name',
     message: 'What name would you like the plugin to have? ([a-z] only)',
-    validate: validateNamePlugin,
+    validate: validatePluginName,
   })
 
   if (name) {
@@ -213,7 +213,7 @@ async function addPlugin() {
   }
 }
 
-function validateNameDesign(name) {
+function validateDesignName(name) {
   if (
     [
       ...Object.keys(designs.accessories),
@@ -228,7 +228,7 @@ function validateNameDesign(name) {
   else return ' 🙈 Please use only [a-z], no spaces, no capitals, no nothing 🤷'
 }
 
-function validateNamePlugin(name) {
+function validatePluginName(name) {
   const pluginName = 'plugin-' + name
   if ([...Object.keys(plugins)].indexOf(pluginName) !== -1)
     return `Sorry but ${pluginName} is already taken so you'll need to pick something else`
