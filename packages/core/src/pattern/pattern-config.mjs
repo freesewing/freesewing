@@ -66,7 +66,7 @@ export function PatternConfig(pattern) {
 const DISTANCE_DEBUG = false
 
 ////////////////////
-// PUBLIC METHODs //
+// PUBLIC METHODS //
 ////////////////////
 
 /**

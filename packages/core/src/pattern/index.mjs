@@ -1,13 +1,9 @@
 import { Attributes } from '../attributes.mjs'
-import { __addNonEnumProp, __macroName } from '../utils.mjs'
-import { Part } from '../part.mjs'
-import { Stack } from '../stack.mjs'
+import { __addNonEnumProp } from '../utils.mjs'
 import { Point } from '../point.mjs'
 import { Path } from '../path.mjs'
 import { Snippet } from '../snippet.mjs'
-import { Svg } from '../svg.mjs'
 import { Store } from '../store.mjs'
-import { Hooks } from '../hooks.mjs'
 import { version } from '../../data.mjs'
 import { __loadPatternDefaults } from '../config.mjs'
 import { PatternConfig } from './pattern-config.mjs'
@@ -40,7 +36,6 @@ export function Pattern(designConfig = {}) {
   __addNonEnumProp(this, 'height', 0)
   __addNonEnumProp(this, 'autoLayout', { stacks: {} })
   __addNonEnumProp(this, 'is', '')
-  __addNonEnumProp(this, 'hooks', new Hooks())
   __addNonEnumProp(this, 'Point', Point)
   __addNonEnumProp(this, 'Path', Path)
   __addNonEnumProp(this, 'Snippet', Snippet)
@@ -58,6 +53,10 @@ export function Pattern(designConfig = {}) {
 //////////////////////////////////////////////
 //            PUBLIC METHODS                //
 //////////////////////////////////////////////
+
+///////////
+// Setup //
+///////////
 
 /**
  * Allows adding parts to the config at runtime
@@ -84,6 +83,49 @@ Pattern.prototype.addPart = function (part, resolveImmediately = true) {
 }
 
 /**
+ * Return the initialized configuration
+ *
+ * @return {object} config - The initialized config
+ */
+Pattern.prototype.getConfig = function () {
+  return this.__init().config
+}
+
+//////////////////////////////
+// Plugin and Hook Handling //
+//////////////////////////////
+
+/**
+ * Adds a lifecycle hook method to the pattern
+ *
+ * @param {string} hook - Name of the lifecycle hook
+ * @param {function} method - The method to run
+ * @param {object} data - Any data to pass to the hook method
+ * @return {object} this - The Pattern instance
+ */
+Pattern.prototype.on = function (hook, method, data) {
+  this.plugins.on(hook, method, data)
+
+  return this
+}
+
+/**
+ * Loads a plugin
+ *
+ * @param {object} plugin - The plugin to load
+ * @param {object} data - Any data to pass to the plugin
+ * @return {object} this - The Pattern instance
+ */
+Pattern.prototype.use = function (plugin, data) {
+  this.plugins.use(plugin, data, this.settings)
+
+  return this
+}
+
+//////////////
+// Drafting //
+//////////////
+/**
  * Drafts this pattern, aka the raison d'etre of FreeSewing
  *
  * @return {object} this - The Pattern instance
@@ -100,14 +142,9 @@ Pattern.prototype.draftPartForSet = function (partName, set) {
   return new PatternDrafter(this).draftPartForSet(partName, set)
 }
 
-/**
- * Return the initialized configuration
- *
- * @return {object} config - The initialized config
- */
-Pattern.prototype.getConfig = function () {
-  return this.__init().config
-}
+///////////////
+// Rendering //
+///////////////
 
 /**
  * Renders the pattern to SVG
@@ -127,13 +164,26 @@ Pattern.prototype.getRenderProps = function () {
   return new PatternRenderer(this).getRenderProps()
 }
 
+//////////////
+// Sampling //
+//////////////
+
 /**
  * Handles pattern sampling
  *
  * @return {object} this - The Pattern instance
  */
 Pattern.prototype.sample = function () {
-  return new PatternSampler(this).sample()
+  this.__init()
+  const sampleSetting = this.settings[0].sample
+  if (sampleSetting.type === 'option') {
+    return this.sampleOption(sampleSetting.option)
+  } else if (sampleSetting.type === 'measurement') {
+    return this.sampleMeasurement(sampleSetting.measurement)
+  } else if (sampleSetting.type === 'models') {
+    return this.sampleModels(sampleSetting.models, sampleSetting.focus || false)
+  }
+  return this.draft()
 }
 
 /**
@@ -163,50 +213,13 @@ Pattern.prototype.sampleOption = function (optionName) {
   return new PatternSampler(this).sampleOption(optionName)
 }
 
-/**
- * Adds a lifecycle hook method to the pattern
- *
- * @param {string} hook - Name of the lifecycle hook
- * @param {function} method - The method to run
- * @param {object} data - Any data to pass to the hook method
- * @return {object} this - The Pattern instance
- */
-Pattern.prototype.on = function (hook, method, data) {
-  this.plugins.on(hook, method, data)
-
-  return this
-}
-
-/**
- * Loads a plugin
- *
- * @param {object} plugin - The plugin to load
- * @param {object} data - Any data to pass to the plugin
- * @return {object} this - The Pattern instance
- */
-Pattern.prototype.use = function (plugin, data) {
-  this.plugins.use(plugin, data, this.settings)
-
-  return this
-}
-
 //////////////////////////////////////////////
 //            PRIVATE METHODS               //
 //////////////////////////////////////////////
 
-/**
- * Creates a store for a set (of settings)
- *
- * @private
- * @return {Store} store - A new store populated with relevant data/methods
- */
-Pattern.prototype.__createSetStore = function () {
-  const store = new Store()
-  store.set('data', this.store.data)
-  store.extend([...this.plugins.__storeMethods])
-
-  return store
-}
+///////////
+// Setup //
+///////////
 
 /**
  * Merges (sets of) settings with the default settings
@@ -238,6 +251,20 @@ Pattern.prototype.__applySettings = function (sets) {
 }
 
 /**
+ * Creates a store for a set (of settings)
+ *
+ * @private
+ * @return {Store} store - A new store populated with relevant data/methods
+ */
+Pattern.prototype.__createSetStore = function () {
+  const store = new Store()
+  store.set('data', this.store.data)
+  store.extend([...this.plugins.__storeMethods])
+
+  return store
+}
+
+/**
  * Initializes the pattern coniguration and settings
  *
  * @return {object} this - The Pattern instance
@@ -258,63 +285,28 @@ Pattern.prototype.__init = function () {
    * so we need to do the things we used to do in the contructor at a later stage.
    * This methods does that, and resolves the design config + user settings
    */
-  this.__resolveParts() // Resolves parts
-    .__resolveConfig() // Gets the config from the resolver
-    .__loadConfigData() // Makes config data available in store
-    .__loadOptionDefaults() // Merges default options with user provided ones
+  // Resolve parts
+  this.designConfig.parts.forEach((p) => this.__configResolver.addPart(p))
 
-  this.plugins.loadConfigPlugins(this.config, this.settings) // Loads plugins
+  // Print final part distances.
+  this.__configResolver.logPartDistances()
+
+  // get the config from the resolver
+  this.config = this.__configResolver.asConfig()
+
+  // load resolved plugins
+  this.plugins.loadConfigPlugins(this.config, this.settings)
+
+  // Make config data available in store
+  if (this.designConfig.data) this.store.set('data', this.designConfig.data)
+
+  // Merges default options with user provided ones
+  this.__loadOptionDefaults()
 
   this.store.log.info(`Pattern initialized. Draft order is: ${this.config.draftOrder.join(', ')}`)
+
   this.__runHooks('postInit')
-
   this.__initialized = true
-
-  return this
-}
-
-/**
- * Checks whether a part is hidden in the config
- *
- * @private
- * @param {string} partName - Name of the part to check
- * @return {bool} hidden - true if the part is hidden, or false if not
- */
-Pattern.prototype.__isPartHidden = function (partName) {
-  const partHidden = this.parts?.[this.activeSet]?.[partName]?.hidden || false
-  if (Array.isArray(this.settings[this.activeSet || 0].only)) {
-    if (this.settings[this.activeSet || 0].only.includes(partName)) return partHidden
-  }
-  if (this.config.partHide?.[partName]) return true
-
-  return partHidden
-}
-
-/**
- * Checks whether a stack is hidden in the config
- *
- * @private
- * @param {string} stackName - Name of the stack to check
- * @return {bool} hidden - true if the part is hidden, or false if not
- */
-Pattern.prototype.__isStackHidden = function (stackName) {
-  if (!this.stacks[stackName]) return true
-  const parts = this.stacks[stackName].getPartNames()
-  for (const partName of parts) {
-    if (!this.__isPartHidden(partName)) return false
-  }
-
-  return true
-}
-
-/**
- * Loads data from the design config into the store
- *
- * @private
- * @return {Pattern} this - The Pattern instance
- */
-Pattern.prototype.__loadConfigData = function () {
-  if (this.designConfig.data) this.store.set('data', this.designConfig.data)
 
   return this
 }
@@ -353,6 +345,67 @@ Pattern.prototype.__loadOptionDefaults = function () {
   return this
 }
 
+///////////
+// Hooks //
+///////////
+
+/**
+ * Runs subscriptions to a given lifecycle hook
+ *
+ * @private
+ * @param {string} hookName - Name of the lifecycle hook
+ * @param {obhect} data - Any data to pass to the hook method
+ * @return {Pattern} this - The Pattern instance
+ */
+Pattern.prototype.__runHooks = function (hookName, data = false) {
+  if (data === false) data = this
+  let hooks = this.plugins.hooks[hookName]
+  if (hooks.length > 0) {
+    this.store.log.debug(`Running \`${hookName}\` hooks`)
+    for (let hook of hooks) {
+      hook.method(data, hook.data)
+    }
+  }
+}
+
+///////////////////////
+// Config Evaluation //
+///////////////////////
+
+/**
+ * Checks whether a part is hidden in the config
+ *
+ * @private
+ * @param {string} partName - Name of the part to check
+ * @return {bool} hidden - true if the part is hidden, or false if not
+ */
+Pattern.prototype.__isPartHidden = function (partName) {
+  const partHidden = this.parts?.[this.activeSet]?.[partName]?.hidden || false
+  if (Array.isArray(this.settings[this.activeSet || 0].only)) {
+    if (this.settings[this.activeSet || 0].only.includes(partName)) return partHidden
+  }
+  if (this.config.partHide?.[partName]) return true
+
+  return partHidden
+}
+
+/**
+ * Checks whether a stack is hidden in the config
+ *
+ * @private
+ * @param {string} stackName - Name of the stack to check
+ * @return {bool} hidden - true if the part is hidden, or false if not
+ */
+Pattern.prototype.__isStackHidden = function (stackName) {
+  if (!this.stacks[stackName]) return true
+  const parts = this.stacks[stackName].getPartNames()
+  for (const partName of parts) {
+    if (!this.__isPartHidden(partName)) return false
+  }
+
+  return true
+}
+
 /**
  * Determines whether a part is needed, depending on the 'only' setting and the configured dependencies
  *
@@ -383,50 +436,6 @@ Pattern.prototype.__needs = function (partName, set = 0) {
   }
 
   return false
-}
-
-/**
- * Gets the configuration for the config resolver and sets it on the pattern
- * @private
- * @return  {Pattern} this - The Pattern instance
- */
-Pattern.prototype.__resolveConfig = function () {
-  this.config = this.__configResolver.asConfig()
-  return this
-}
-
-/**
- * Resolves parts and their dependencies
- *
- * @private
- * @return {Pattern} this - The Pattern instance
- */
-Pattern.prototype.__resolveParts = function () {
-  this.designConfig.parts.forEach((p) => this.__configResolver.addPart(p))
-
-  // Print final part distances.
-  this.__configResolver.logPartDistances()
-
-  return this
-}
-
-/**
- * Runs subscriptions to a given lifecycle hook
- *
- * @private
- * @param {string} hookName - Name of the lifecycle hook
- * @param {obhect} data - Any data to pass to the hook method
- * @return {Pattern} this - The Pattern instance
- */
-Pattern.prototype.__runHooks = function (hookName, data = false) {
-  if (data === false) data = this
-  let hooks = this.plugins.hooks[hookName]
-  if (hooks.length > 0) {
-    this.store.log.debug(`Running \`${hookName}\` hooks`)
-    for (let hook of hooks) {
-      hook.method(data, hook.data)
-    }
-  }
 }
 
 /**

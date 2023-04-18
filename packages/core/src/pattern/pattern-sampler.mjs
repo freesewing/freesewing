@@ -2,19 +2,6 @@ export function PatternSampler(pattern) {
   this.pattern = pattern
 }
 
-PatternSampler.prototype.sample = function () {
-  this.pattern.__init()
-  const sampleSetting = this.pattern.settings[0].sample
-  if (sampleSetting.type === 'option') {
-    return this.sampleOption(sampleSetting.option)
-  } else if (sampleSetting.type === 'measurement') {
-    return this.sampleMeasurement(sampleSetting.measurement)
-  } else if (sampleSetting.type === 'models') {
-    return this.sampleModels(sampleSetting.models, sampleSetting.focus || false)
-  }
-  return this.pattern
-}
-
 /**
  * Handles measurement sampling
  *

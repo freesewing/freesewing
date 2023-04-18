@@ -121,11 +121,39 @@ PatternDrafter.prototype.__createPartForSet = function (partName, set = 0) {
   }
 }
 
-PatternDrafter.prototype.__useSet = function (set = 0) {
-  this.activeSet = set
-  this.activeSettings = this.pattern.settings[set]
-  this.activeStore = this.pattern.setStores[set]
+/**
+ * Instantiates a new Part instance and populates it with the pattern context
+ *
+ * @private
+ * @param {string} name - The name of the part
+ * @param {int} set - The index of the settings set in the list of sets
+ * @return {Part} part - The instantiated Part
+ */
+PatternDrafter.prototype.__createPartWithContext = function (name, set) {
+  // Context object to add to Part closure
+  const part = new Part()
+  part.name = name
+  part.set = set
+  part.stack = this.pattern.config.parts[name]?.stack || name
+  part.context = {
+    parts: this.pattern.parts[set],
+    config: this.pattern.config,
+    settings: this.pattern.settings[set],
+    store: this.pattern.setStores[set],
+    macros: this.pattern.plugins.macros,
+  }
+
+  if (this.pattern.settings[set]?.partClasses) {
+    part.attr('class', this.pattern.settings[set].partClasses)
+  }
+
+  for (const macro in this.pattern.plugins.macros) {
+    part[__macroName(macro)] = this.pattern.plugins.macros[macro]
+  }
+
+  return part
 }
+
 /**
  * Generates an array of settings.absoluteOptions objects for sampling a list option
  *
@@ -193,35 +221,8 @@ PatternDrafter.prototype.__snappedPercentageOption = function (optionName, set) 
   return abs
 }
 
-/**
- * Instantiates a new Part instance and populates it with the pattern context
- *
- * @private
- * @param {string} name - The name of the part
- * @param {int} set - The index of the settings set in the list of sets
- * @return {Part} part - The instantiated Part
- */
-PatternDrafter.prototype.__createPartWithContext = function (name, set) {
-  // Context object to add to Part closure
-  const part = new Part()
-  part.name = name
-  part.set = set
-  part.stack = this.pattern.config.parts[name]?.stack || name
-  part.context = {
-    parts: this.pattern.parts[set],
-    config: this.pattern.config,
-    settings: this.pattern.settings[set],
-    store: this.pattern.setStores[set],
-    macros: this.pattern.plugins.macros,
-  }
-
-  if (this.pattern.settings[set]?.partClasses) {
-    part.attr('class', this.pattern.settings[set].partClasses)
-  }
-
-  for (const macro in this.pattern.plugins.macros) {
-    part[__macroName(macro)] = this.pattern.plugins.macros[macro]
-  }
-
-  return part
+PatternDrafter.prototype.__useSet = function (set = 0) {
+  this.activeSet = set
+  this.activeSettings = this.pattern.settings[set]
+  this.activeStore = this.pattern.setStores[set]
 }
