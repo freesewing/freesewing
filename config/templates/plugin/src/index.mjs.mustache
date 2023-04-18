@@ -5,15 +5,13 @@ export const plugin = {
   version,
   macros: {
     {{name}}: function (so, {points, paths, Path}) { //Example shorthand, you may wish to add other elements like utils
-
-const defaults = {
-//note these are common examples and can be removed
-    scale: 1,
-    rotation: 0,
-  }
-  so = { ...defaults, ...so }
-
-
+      const defaults = {
+        //note these are common examples and can be removed
+        scale: 1,
+        rotation: 0,
+      }
+      so = { ...defaults, ...so }
+      //write plugin here
     },
   },
 }
