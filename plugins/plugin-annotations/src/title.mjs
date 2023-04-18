@@ -1,13 +1,9 @@
-const titleMacro = function (so, { points, scale, locale, store, part }) {
-  const prefix = so.prefix || ''
-  let overwrite = !so.append
-
+const titleMacro = function (so, { points, scale, locale, store }) {
+  const prefix = (so.prefix || '') + '_title'
   // Passing `false` will remove the title
-  if (so === false || overwrite) {
-    for (const id of [`titleNr`, `titleName`, `titlePattern`, `titleFor`, `exportDate`]) {
-      for (const pointName in points) {
-        if (pointName.match(id)) delete points[pointName]
-      }
+  if (so === false) {
+    for (const pointName in points) {
+      if (pointName.match('_title')) delete points[pointName]
     }
     return true
   }
@@ -33,18 +29,19 @@ const titleMacro = function (so, { points, scale, locale, store, part }) {
 
   so = { ...defaults, ...so }
   so.scale = so.scale * scale
-
   const validAlignments = ['left', 'right', 'center']
   const alignment = validAlignments.includes(so.align) ? ' ' + so.align : ' left'
 
-  points[`_${prefix}_titleNr`] = so.at
+  let overwrite = true
+  if (so.append) overwrite = false
+  points[prefix + 'titleNr'] = so.at
     .clone()
     .attr('data-text', so.nr, overwrite)
     .attr('data-text-class', 'text-4xl fill-note font-bold' + alignment)
     .attr('data-text-transform', transform(so.at))
 
   if (so.title) {
-    points[`_${prefix}_titleName`] = nextPoint(
+    points[prefix + 'titleName'] = nextPoint(
       so.title,
       'text-lg fill-current font-bold' + alignment
     )
@@ -85,12 +82,10 @@ const titleMacro = function (so, { points, scale, locale, store, part }) {
 
   let name = store.data?.name || 'No Name'
   name = name.replace('@freesewing/', '')
-  name += ' v' + (store.data?.version || 'No Version')
-  points[`_${prefix}_titlePattern`] = nextPoint(name, 'fill-note' + alignment)
-
+  points[prefix + 'titlePattern'] = nextPoint(name, 'fill-note' + alignment)
   if (store.data.for) {
     shift += 8
-    points[`_${prefix}_titleFor`] = nextPoint(
+    points[prefix + 'titleFor'] = nextPoint(
       `( ${store.data.for} )`,
       'fill-current font-bold' + alignment
     )
@@ -107,7 +102,7 @@ const titleMacro = function (so, { points, scale, locale, store, part }) {
     month: 'short',
     day: 'numeric',
   })
-  points[`_${prefix}_exportDate`] = nextPoint(
+  points[prefix + 'ExportDate'] = nextPoint(
     `${exportDate}@ ${hours}:${mins}`,
     'text-sm' + alignment
   )

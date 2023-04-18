@@ -26,24 +26,19 @@ export const sewtogetherDefs = [
 // Export macros
 export const sewtogetherMacros = {
   sewTogether: function (so, { points, paths, Path, complete, sa }) {
+    const prefix = (so.prefix || '') + '_sewtogether'
+
     if (so === false) {
       for (const pointName in points) {
-        if (pointName.match('sewtogether')) delete points[pointName]
+        if (pointName.match('_sewtogether')) delete points[pointName]
       }
       for (const pathName in paths) {
-        if (pathName.match('sewtogether')) delete paths[pathName]
+        if (pathName.match('_sewtogether')) delete paths[pathName]
       }
       return true
     }
     so = {
       ...so,
-    }
-
-    let prefix
-    if (so.prefix) {
-      prefix = so.prefix + '_sewtogether'
-    } else {
-      ;('sewtogether')
     }
 
     if (complete) {

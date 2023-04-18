@@ -19,12 +19,14 @@ export const cutonfoldDefs = [
 // Export macros
 export const cutonfoldMacros = {
   cutonfold: function (so, { points, paths, Path, complete, store, scale }) {
+    const prefix = (so.prefix || '') + '_cutonfold'
+
     if (so === false) {
       for (const pointName in points) {
-        if (pointName.match('cutonfold')) delete points[pointName]
+        if (pointName.match('_cutonfold')) delete points[pointName]
       }
       for (const pathName in paths) {
-        if (pathName.match('cutonfold')) delete paths[pathName]
+        if (pathName.match('_cutonfold')) delete paths[pathName]
       }
       store.cutlist.setCutOnFold(false) // Restore default
       return true
@@ -33,12 +35,6 @@ export const cutonfoldMacros = {
       offset: 15,
       margin: 5,
       ...so,
-    }
-    let prefix
-    if (so.prefix) {
-      prefix = so.prefix + '_cutonfold'
-    } else {
-      prefix = 'cutonfold'
     }
 
     // store in cutlist

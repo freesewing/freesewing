@@ -13,12 +13,14 @@ export const pleatDefs = [
 // Export macros
 export const pleatMacros = {
   pleat: function (so, { points, paths, Path, complete, scale }) {
+    const prefix = (so.prefix || '') + '_pleat'
+
     if (so === false) {
       for (const pointName in points) {
-        if (pointName.match('pleat')) delete points[pointName]
+        if (pointName.match('_pleat')) delete points[pointName]
       }
       for (const pathName in paths) {
-        if (pathName.match('pleat')) delete paths[pathName]
+        if (pathName.match('_pleat')) delete paths[pathName]
       }
       return true
     }
@@ -26,13 +28,6 @@ export const pleatMacros = {
       margin: 35,
       reverse: false,
       ...so,
-    }
-
-    let prefix
-    if (so.prefix) {
-      prefix = so.prefix + '_pleat'
-    } else {
-      prefix = 'pleat'
     }
 
     if (complete) {
