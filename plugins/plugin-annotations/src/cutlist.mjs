@@ -91,7 +91,7 @@ function getCutFabrics(store, settings) {
 
   const fabrics = []
   list.forEach((partName) => {
-    if (!cutlist[partName].materials) {
+    if (!cutlist[partName]?.materials) {
       return
     }
     for (var m in cutlist[partName].materials) {

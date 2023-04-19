@@ -20,7 +20,8 @@ const mirrorGen = (start, end) => {
     point.y = vNom / denom
 
     const mirrorCount = Number(point.attributes.get('data-mirrored'))
-    if (mirrorCount > 0)
+    // some points returned by utils do not have logs
+    if (mirrorCount > 0 && point.log)
       point.log.warning(
         `Point ${point.name} was mirrored more than once (${
           mirrorCount + 1

@@ -116,7 +116,7 @@ export const cutLayoutPlugin = function (material, grainAngle) {
         macro('rotateToGrain', { bias: instruction.bias, grainSpec })
       },
       // mirror the part across the line indicated by cutonfold
-      mirrorOnFold: ({ fold }, { paths, snippets, macro }) => {
+      mirrorOnFold: ({ fold }, { paths, snippets, macro, points, utils, Point }) => {
         // get all the paths to mirror
         const mirrorPaths = []
         for (const p in paths) {
@@ -139,8 +139,10 @@ export const cutLayoutPlugin = function (material, grainAngle) {
           snippetsByType[snip.def] = snippetsByType[snip.def] || []
 
           // put the anchor on the list to mirror
-          mirrorPoints.push(snip.anchor)
-          snippetsByType[snip.def].push(`${prefix}_${anchorNames++}`)
+          const anchorName = `snippetAnchors_${anchorNames++}`
+          points[anchorName] = new Point(snip.anchor.x, snip.anchor.y)
+          mirrorPoints.push(anchorName)
+          snippetsByType[snip.def].push(`${prefix}${utils.capitalize(anchorName)}`)
         }
 
         // mirror
@@ -150,10 +152,6 @@ export const cutLayoutPlugin = function (material, grainAngle) {
           points: mirrorPoints,
           mirror: fold,
           prefix,
-          nameFormat: () => {
-            unnamed++
-            return `${prefix}_${unnamed}`
-          },
         })
 
         // sprinkle the snippets
