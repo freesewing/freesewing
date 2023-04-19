@@ -193,6 +193,7 @@ PatternSampler.prototype.__optionSets = function (optionName) {
   }
   step = (option.max / factor - val) / stepFactor
   const base = this.__setBase()
+  const roundVal = typeof option.count !== 'undefined' || typeof option.mm !== 'undefined'
   for (let run = 1; run <= numberRuns; run++) {
     const settings = {
       ...base,
@@ -202,11 +203,9 @@ PatternSampler.prototype.__optionSets = function (optionName) {
       idPrefix: `sample-${run}`,
       partClasses: `sample-${run}`,
     }
-    settings.options[optionName] = val
+    settings.options[optionName] = roundVal ? Math.ceil(val) : val
     sets.push(settings)
     val += step
-    if (typeof option.count !== 'undefined' || typeof option.mm !== 'undefined')
-      val = Math.round(val)
   }
 
   return sets

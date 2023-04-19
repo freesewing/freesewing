@@ -30,12 +30,6 @@ describe('Pattern', () => {
       expect(typeof pattern.Path).to.equal('function')
       expect(typeof pattern.Snippet).to.equal('function')
       expect(typeof pattern.Attributes).to.equal('function')
-      // expect(typeof pattern.__designParts).to.equal('object')
-      // expect(typeof pattern.config.inject).to.equal('object')
-      // expect(typeof pattern.config.directDependencies).to.equal('object')
-      // expect(typeof pattern.__resolvedDependencies).to.equal('object')
-      // expect(typeof pattern.__hide).to.equal('object')
-      // expect(Array.isArray(pattern.__draftOrder)).to.equal(true)
       expect(pattern.width).to.equal(0)
       expect(pattern.height).to.equal(0)
       expect(pattern.is).to.equal('')
@@ -631,7 +625,7 @@ describe('Pattern', () => {
       expect(pattern.plugins.hooks.preRender).to.have.lengthOf(1)
     })
 
-    it('Pattern.__init() should not load conditional plugin if condition is not mett', () => {
+    it('Pattern.__init() should not load conditional plugin if condition is not met', () => {
       const plugin = {
         name: 'example',
         version: 1,
@@ -797,6 +791,32 @@ describe('Pattern', () => {
             function () {
               count++
             },
+            function () {
+              count++
+            },
+          ],
+        },
+      }
+      const Pattern = new Design()
+      const pattern = new Pattern()
+      let count = 0
+      pattern._draft = () => {}
+      pattern.use(plugin)
+      pattern.draft()
+      expect(count).to.equal(2)
+    })
+
+    it('Pattern.__init() should not register the same method twice on one hook', () => {
+      function hookMethod() {
+        count++
+      }
+      const plugin = {
+        name: 'test',
+        version: '0.1-test',
+        hooks: {
+          preDraft: [
+            hookMethod,
+            hookMethod,
             function () {
               count++
             },
