@@ -13,16 +13,16 @@ export const ModalMenu = ({ app }) => {
       <div className="max-w-full">
         <div
           className={`
-        py-16 w-full m-auto
+        py-4 lg:py-16 w-full m-auto
         flex flex-col-reverse gap-0 flex-wrap justify-between
         lg:max-w-6xl lg:flex-nowrap lg:gap-8 lg:flex-row
       `}
         >
-          <div className="w-1/2">
+          <div className="w-full lg:w-1/2">
             <h3>{t('mainSections')}</h3>
             <SectionsMenu app={app} />
           </div>
-          <div className="w-1/2">
+          <div className="w-full lg:w-1/2">
             <h3>{t('currentSection')}</h3>
             <ActiveSection app={app} bare />
           </div>
