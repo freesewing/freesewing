@@ -9,6 +9,7 @@ import { LayoutWrapper, ns as layoutNs } from 'site/components/wrappers/layout.m
 import { DocsLayout, ns as docsNs } from 'site/components/layouts/docs.mjs'
 import { Feeds } from 'site/components/feeds.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
+import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
 
 export const ns = [...new Set([...layoutNs, ...docsNs])]
 
@@ -33,8 +34,8 @@ export const PageWrapper = ({
    * Swipe handling for the entire site
    */
   const swipeHandlers = useSwipeable({
-    onSwipedLeft: () => (app.state?.menu?.main ? app.updateState('menu.main', false) : null),
-    onSwipedRight: () => (app.state?.menu?.main ? null : app.updateState('menu.main', true)),
+    onSwipedLeft: () => app.setModal(false),
+    onSwipedRight: () => app.setModal(<ModalMenu app={app} />),
     trackMouse: true,
   })
 
