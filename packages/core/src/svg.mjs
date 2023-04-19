@@ -46,6 +46,8 @@ export function Svg(pattern) {
  * @return {string} svg - The rendered SVG output
  */
 Svg.prototype.render = function () {
+  // console.log('render')
+
   this.idPrefix = this.pattern?.settings?.[0]?.idPrefix || 'fs-'
   this.__runHooks('preRender')
   if (!this.pattern.settings[0].embed) {
@@ -214,8 +216,10 @@ Svg.prototype.__renderCircle = function (point) {
  * @return {string} svg - The SVG markup for the defs block
  */
 Svg.prototype.__renderDefs = function () {
+  console.log('__renderDefs')
   let svg = '<defs>'
   this.__indent()
+  // console.log({defs:this.defs.render()})
   svg += this.__nl() + this.defs.render()
   this.__outdent()
   svg += this.__nl() + '</defs>' + this.__nl()
@@ -230,6 +234,7 @@ Svg.prototype.__renderDefs = function () {
  * @return {string} svg - The SVG markup for the head section
  */
 Svg.prototype.__renderHead = function () {
+  // console.log('__renderHead')
   let svg = this.__renderStyle()
   svg += this.__renderDefs()
   svg += this.__openGroup(this.idPrefix + 'container')
@@ -291,6 +296,7 @@ Svg.prototype.__renderPart = function (part) {
     `${this.idPrefix}stack-${this.activeStack}-part-${part.name}`,
     part.attributes
   )
+  svg += this.__openGroup(`${this.idPrefix}stack-${this.activeStack}-part-${part.name}`, part.defs)
   for (let key in part.paths) {
     let path = part.paths[key]
     if (!path.hidden) svg += this.__renderPath(path)
