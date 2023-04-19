@@ -3966,18 +3966,6 @@
     get-random-values-esm "^1.0.0"
     lodash "^4.17.21"
 
-"@sanity/cli@3.8.3":
-  version "3.8.3"
-  resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-3.8.3.tgz#bfc6b147d8ee589a740e9970dc1e7a8bddf22b67"
-  integrity sha512-peurP4aRRgGWH7jVCrLCg4SlRTzXqASIxaBcegLQ69bSX7EMMkVPqckgvHr5cF6rzwfcSLV4jiQO3K/YvEZVcQ==
-  dependencies:
-    "@babel/traverse" "^7.19.0"
-    chalk "^4.1.2"
-    esbuild "^0.16.5"
-    esbuild-register "^3.4.1"
-    get-it "^8.0.9"
-    pkg-dir "^5.0.0"
-
 "@sanity/cli@3.9.0":
   version "3.9.0"
   resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-3.9.0.tgz#c8c285cd8c8c90a14083f7cf92e4a2b67c24b1cb"

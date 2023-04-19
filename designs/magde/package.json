@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/magde",
-  "version": "3.0.0-alpha.8",
+  "version": "3.0.0-alpha.9",
   "description": "A FreeSewing pattern for a bike messenger bag",
   "author": "clegganator259 (https://github.com/clegganator259)",
   "homepage": "https://freesewing.org/",
@@ -46,8 +46,8 @@
     "wcibuild_step5": "node build.mjs"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0-alpha.8",
-    "@freesewing/plugin-bundle": "3.0.0-alpha.8"
+    "@freesewing/core": "3.0.0-alpha.9",
+    "@freesewing/plugin-bundle": "3.0.0-alpha.9"
   },
   "dependencies": {},
   "devDependencies": {

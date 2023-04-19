@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/teagan",
-  "version": "3.0.0-alpha.8",
+  "version": "3.0.0-alpha.9",
   "description": "A FreeSewing pattern for a T-shirt",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -46,10 +46,10 @@
     "wcibuild_step5": "node build.mjs"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0-alpha.8",
-    "@freesewing/plugin-bundle": "3.0.0-alpha.8",
-    "@freesewing/brian": "3.0.0-alpha.8",
-    "@freesewing/plugin-bust": "3.0.0-alpha.8"
+    "@freesewing/core": "3.0.0-alpha.9",
+    "@freesewing/plugin-bundle": "3.0.0-alpha.9",
+    "@freesewing/brian": "3.0.0-alpha.9",
+    "@freesewing/plugin-bust": "3.0.0-alpha.9"
   },
   "dependencies": {},
   "devDependencies": {

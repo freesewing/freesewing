@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/email",
-  "version": "3.0.0-alpha.8",
+  "version": "3.0.0-alpha.9",
   "description": "Holds maizzle instance to generate the FreeSewing email templates",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",

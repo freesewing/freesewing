@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/waralee",
-  "version": "3.0.0-alpha.8",
+  "version": "3.0.0-alpha.9",
   "description": "A FreeSewing pattern for wrap pants",
   "author": "woutervdub (https://github.com/woutervdub)",
   "homepage": "https://freesewing.org/",
@@ -46,8 +46,8 @@
     "wcibuild_step5": "node build.mjs"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0-alpha.8",
-    "@freesewing/plugin-bundle": "3.0.0-alpha.8"
+    "@freesewing/core": "3.0.0-alpha.9",
+    "@freesewing/plugin-bundle": "3.0.0-alpha.9"
   },
   "dependencies": {},
   "devDependencies": {
