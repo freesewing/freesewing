@@ -1,6 +1,7 @@
 const defs = [
-  // button
-  `
+  {
+    name: 'button',
+    def: `
 <g id="button">
   <circle
     cx="0" cy="0" r="3.4"
@@ -11,8 +12,10 @@ const defs = [
   <circle cx="1"  cy="1"  r="0.5" class="no-stroke fill-mark" />
   <circle cx="-1" cy="1"  r="0.5" class="no-stroke fill-mark" />
 </g>`,
-  // buttonhole
-  `
+  },
+  {
+    name: 'buttonhole',
+    def: `
 <g id="buttonhole">
   <path
     class="mark"
@@ -31,8 +34,10 @@ const defs = [
     d="M -1,0 L 1,0 L 1,10 L -1,10 z"
   />
 </g>`,
-  // snaps
-  `
+  },
+  {
+    name: 'snaps',
+    def: `
 <radialGradient id="snap-stud-grad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
   <stop offset="30%" style="stop-color:rgb(235,235,235); stop-opacity:1"/>
   <stop offset="80%" style="stop-color:rgb(100,100,100);stop-opacity:1" />
@@ -61,6 +66,7 @@ const defs = [
     d="M -1.7,-1 L -1.7,1 M 1.7,-1 L 1.7,1" id="snap-socket-lines"
   />
 </g>`,
+  },
 ]
 
 // Export hooks
@@ -68,7 +74,7 @@ export const buttonsHooks = {
   preRender: [
     function (svg) {
       for (const def of defs) {
-        if (svg.defs.indexOf(def) === -1) svg.defs += def
+        svg.defs.setIfUnset(def.name, def.def)
       }
     },
   ],

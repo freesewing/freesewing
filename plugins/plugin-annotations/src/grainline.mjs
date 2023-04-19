@@ -12,7 +12,7 @@ const dflts = { text: 'grainline' }
 export const grainlineHooks = {
   preRender: [
     function (svg) {
-      if (svg.defs.indexOf(markers) === -1) svg.defs += markers
+      svg.defs.setIfUnset('grainline', markers)
     },
   ],
 }

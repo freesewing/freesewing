@@ -5,7 +5,7 @@ const logo = (scale) =>
 export const logoHooks = {
   preRender: [
     function (svg) {
-      if (svg.defs.indexOf('id="logo"') === -1) svg.defs += logo(svg.pattern.settings[0].scale)
+      svg.defs.setIfUnset('logo', logo(svg.pattern.settings[0].scale))
     },
   ],
 }

@@ -12,7 +12,7 @@ const markers = `
 export const notchesHooks = {
   preRender: [
     function (svg) {
-      if (svg.defs.indexOf(`id="notch"`) === -1) svg.defs += markers
+      svg.defs.setIfUnset('notch', markers)
     },
   ],
 }
