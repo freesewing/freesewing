@@ -4072,7 +4072,7 @@
   resolved "https://registry.yarnpkg.com/@sanity/icons/-/icons-1.3.10.tgz#df934a94ae6669fe6b15515d800afb221cba0498"
   integrity sha512-5wVG/vIiGuGrSmq+Bl3PY7XDgQrGv0fyHdJI64FSulnr2wH3NMqZ6C59UFxnrZ93sr7kOt0zQFoNv2lkPBi0Cg==
 
-"@sanity/icons@^2.1.0", "@sanity/icons@^2.2.2", "@sanity/icons@^2.3.0":
+"@sanity/icons@^2.2.2", "@sanity/icons@^2.3.0":
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/@sanity/icons/-/icons-2.3.1.tgz#38e0e85095a2ae41c7e9836aa4e4dbf1905ac68f"
   integrity sha512-DyUdjjWFIokrMewnK24Vvxpv2lKx5LrzUM3eEk0ZVwhS8+hWkFFN1Z7jhcwQnQ5NweejhzsZkT4JHUdffCAQaw==
@@ -4219,10 +4219,10 @@
     lodash "^4.17.21"
     rxjs "^7.8.0"
 
-"@sanity/vision@3.8.3":
-  version "3.8.3"
-  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-3.8.3.tgz#67b60234dfcc699c62be79fd9f46ec5c1d8fe146"
-  integrity sha512-1GaccTzx8pCDvgQltoGGD2DVBtPITytAq49lnUz6uu/DLzhStcc58KlMxPpRtL6igQjCIpwIacxnUWITTjEMgg==
+"@sanity/vision@3.9.0":
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-3.9.0.tgz#bcf3eb1e17f97b988d71a2023f45085c18858718"
+  integrity sha512-KMSolVmpKLl9QRnT8PCYce0haLSDt9bcktHNw0QwR1rALJjT63N9QIMkGeWjyHfD14r1YIrehjj8DLXc51FXtg==
   dependencies:
     "@codemirror/autocomplete" "^6.1.0"
     "@codemirror/commands" "^6.0.1"
@@ -4235,7 +4235,7 @@
     "@rexxars/react-json-inspector" "^8.0.1"
     "@rexxars/react-split-pane" "^0.1.93"
     "@sanity/color" "^2.1.20"
-    "@sanity/icons" "^2.1.0"
+    "@sanity/icons" "^2.3.0"
     "@sanity/ui" "^1.3.0"
     "@uiw/react-codemirror" "^4.11.4"
     hashlru "^2.3.0"
