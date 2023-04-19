@@ -360,7 +360,7 @@ sanity:
     'eslint': *eslint
     'prettier': '2.8.7'
     'typescript': '5.0.4'
-    '@sanity/cli': '3.8.3'
+    '@sanity/cli': '3.9.0'
 
 shared:
   _:
