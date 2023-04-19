@@ -255,6 +255,10 @@ export const MainSections = ({ app }) => {
 const getCrumb = (index, app) => app.state.crumbs[index].s.split('/').pop()
 
 export const ActiveSection = ({ app }) => {
+  // Don't bother if we don't know where we are
+  if (!app.state.crumbs || !Array.isArray(app.state.crumbs) || app.state.crumbs.length < 1)
+    return null
+
   let slice = 1
   let nodes = app.state.nav
   // Some sections are further trimmed
