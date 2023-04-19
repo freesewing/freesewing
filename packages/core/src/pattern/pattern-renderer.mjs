@@ -2,6 +2,10 @@ import { Svg } from '../svg.mjs'
 import { Stack } from '../stack.mjs'
 import pack from 'bin-pack-with-constraints'
 
+/**
+ * A class for handling layout and rendering for a pattern
+ * @param {Pattern} pattern the pattern to layout or render
+ */
 export function PatternRenderer(pattern) {
   this.pattern = pattern
   this.autoLayout = pattern.autoLayout

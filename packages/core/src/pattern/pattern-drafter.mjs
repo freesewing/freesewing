@@ -2,6 +2,10 @@ import { PatternDraftQueue } from './pattern-draft-queue.mjs'
 import { Part } from '../part.mjs'
 import { __macroName } from '../utils.mjs'
 
+/**
+ * A class to handle drafting a pattern
+ * @param {Pattern} pattern the pattern to draft
+ */
 export function PatternDrafter(pattern) {
   this.pattern = pattern
 }
@@ -32,6 +36,7 @@ PatternDrafter.prototype.draft = function () {
     // Handle snap for pct options
     this.__loadAbsoluteOptionsSet(set)
 
+    // draft all the parts for this set
     this.pattern.draftQueue.start()
     while (this.pattern.draftQueue.hasNext()) {
       const partName = this.pattern.draftQueue.next()
@@ -46,6 +51,12 @@ PatternDrafter.prototype.draft = function () {
   this.pattern.__runHooks('postDraft')
 }
 
+/**
+ * Draft and save a part for the given set of settings
+ * @param  {String} partName the name of the part
+ * @param  {number} set      the index of the settings set
+ * @return {Part}            the drafted part, which is also stored in the Pattern
+ */
 PatternDrafter.prototype.draftPartForSet = function (partName, set) {
   // gotta protect against attacks
   if (set === '__proto__') {
@@ -54,6 +65,7 @@ PatternDrafter.prototype.draftPartForSet = function (partName, set) {
   this.__useSet(set)
   this.__createPartForSet(partName, set)
 
+  // don't draft what can't be drafted
   const configPart = this.pattern.config.parts?.[partName]
   if (typeof configPart?.draft !== 'function') {
     this.activeStore.log.error(
@@ -62,10 +74,12 @@ PatternDrafter.prototype.draftPartForSet = function (partName, set) {
     return
   }
 
+  // set the active part for use by hooks and such
   this.pattern.activePart = partName
   this.activeStore.set('activePart', partName)
   try {
     this.pattern.__runHooks('prePartDraft')
+    // draft
     const result = configPart.draft(this.pattern.parts[set][partName].shorthand())
 
     if (typeof result === 'undefined') {
@@ -73,37 +87,15 @@ PatternDrafter.prototype.draftPartForSet = function (partName, set) {
         `Result of drafting part ${partName} was undefined. Did you forget to return the part?`
       )
     } else {
+      // hide if necessary
       if (!this.pattern.__wants(partName, set)) result.hide()
       this.pattern.__runHooks('postPartDraft')
+      // save the result
       this.pattern.parts[set][partName] = result
     }
     return result
   } catch (err) {
     this.activeStore.log.error([`Unable to draft part \`${partName}\` (set ${set})`, err])
-  }
-}
-
-PatternDrafter.prototype.__createPartForSet = function (partName, set = 0) {
-  // gotta protect against attacks
-  if (set === '__proto__') {
-    throw new Error('malicious attempt at altering Object.prototype. Stopping action')
-  }
-  // Create parts
-  this.activeStore.log.debug(`📦 Creating part \`${partName}\` (set ${set})`)
-  this.pattern.parts[set][partName] = this.__createPartWithContext(partName, set)
-
-  // Handle inject/inheritance
-  const parent = this.pattern.config.inject[partName]
-  if (typeof parent === 'string') {
-    this.activeStore.log.debug(`Creating part \`${partName}\` from part \`${parent}\``)
-    try {
-      this.pattern.parts[set][partName].__inject(this.pattern.parts[set][parent])
-    } catch (err) {
-      this.activeStore.log.error([
-        `Could not inject part \`${parent}\` into part \`${partName}\``,
-        err,
-      ])
-    }
   }
 }
 
@@ -207,8 +199,12 @@ PatternDrafter.prototype.__snappedPercentageOption = function (optionName, set) 
   return abs
 }
 
+/**
+ * Sets the active set
+ * @param   {Number} set the set to use
+ * @private
+ */
 PatternDrafter.prototype.__useSet = function (set = 0) {
   this.pattern.activeSet = set
-  this.activeSettings = this.pattern.settings[set]
   this.activeStore = this.pattern.setStores[set]
 }

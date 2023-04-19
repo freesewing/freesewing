@@ -1,3 +1,7 @@
+/**
+ * A class for handling pattern sampling
+ * @param {Pattern} pattern the pattern that will be sampled
+ */
 export function PatternSampler(pattern) {
   this.pattern = pattern
 }
@@ -45,20 +49,6 @@ PatternSampler.prototype.sampleOption = function (optionName) {
   this.pattern.__runHooks('postSample')
 
   return this.pattern.draft()
-}
-
-/**
- * Returns the base/defaults to generate a set of settings
- *
- * @private
- * @return {object} settings - The settings object
- */
-PatternSampler.prototype.__setBase = function () {
-  return {
-    measurements: {},
-    options: {},
-    ...this.pattern.settings[0],
-  }
 }
 
 /**
@@ -209,4 +199,18 @@ PatternSampler.prototype.__optionSets = function (optionName) {
   }
 
   return sets
+}
+
+/**
+ * Returns the base/defaults to generate a set of settings
+ *
+ * @private
+ * @return {object} settings - The settings object
+ */
+PatternSampler.prototype.__setBase = function () {
+  return {
+    measurements: {},
+    options: {},
+    ...this.pattern.settings[0],
+  }
 }

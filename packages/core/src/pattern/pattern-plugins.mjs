@@ -11,6 +11,10 @@ export function getPluginName(plugin) {
   return toCheck.name || toCheck.plugin?.name || false
 }
 
+/**
+ * A class for managing the plugins and lifecycle hooks of a pattern
+ * @param {Pattern} pattern the pattern to manage
+ */
 export function PatternPlugins(pattern) {
   this.store = pattern.store
 
@@ -21,21 +25,15 @@ export function PatternPlugins(pattern) {
 }
 
 /**
- * Loads a plugin
+ * Loads the plugins that are part of the config
  *
- * @param {object} plugin - The plugin to load
- * @param {object} data - Any data to pass to the plugin
- * @return {object} this - The Pattern instance
+ * @private
+ * @return {Pattern} this - The Pattern instance
  */
-PatternPlugins.prototype.use = function (plugin, data, settings = [{}]) {
-  const name = getPluginName(plugin)
-  if (!this.plugins?.[name])
-    return plugin.plugin && plugin.condition
-      ? this.__useIf(plugin, data, settings) // Conditional plugin
-      : this.__loadPlugin(plugin, data) // Regular plugin
-
-  this.store.log.info(`Plugin \`${name}\` was requested, but it's already loaded. Skipping.`)
-
+PatternPlugins.prototype.loadConfigPlugins = function (config, settings) {
+  if (!config.plugins) return this
+  for (const plugin in config.plugins)
+    this.use(config.plugins[plugin], config.plugins[plugin]?.data, settings)
   return this
 }
 
@@ -58,15 +56,21 @@ PatternPlugins.prototype.on = function (hook, method, data) {
 }
 
 /**
- * Loads the plugins that are part of the config
+ * Loads a plugin
  *
- * @private
- * @return {Pattern} this - The Pattern instance
+ * @param {object} plugin - The plugin to load
+ * @param {object} data - Any data to pass to the plugin
+ * @return {object} this - The Pattern instance
  */
-PatternPlugins.prototype.loadConfigPlugins = function (config, settings) {
-  if (!config.plugins) return this
-  for (const plugin in config.plugins)
-    this.use(config.plugins[plugin], config.plugins[plugin]?.data, settings)
+PatternPlugins.prototype.use = function (plugin, data, settings = [{}]) {
+  const name = getPluginName(plugin)
+  if (!this.plugins?.[name])
+    return plugin.plugin && plugin.condition
+      ? this.__useIf(plugin, data, settings) // Conditional plugin
+      : this.__loadPlugin(plugin, data) // Regular plugin
+
+  this.store.log.info(`Plugin \`${name}\` was requested, but it's already loaded. Skipping.`)
+
   return this
 }
 
