@@ -146,7 +146,6 @@ export const cutLayoutPlugin = function (material, grainAngle) {
         }
 
         // mirror
-        let unnamed = 0
         macro('mirror', {
           paths: mirrorPaths,
           points: mirrorPoints,
