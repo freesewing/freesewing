@@ -11,7 +11,7 @@ pattern.draft().render()
 describe('Buttons Plugin Test', () => {
   for (const snippet of ['button', 'buttonhole', 'snap-stud', 'snap-socket']) {
     it(`Should add the ${snippet} snippet to defs`, () => {
-      expect(pattern.svg.defs.indexOf(`<g id="${snippet}">`)).to.not.equal(-1)
+      expect(pattern.svg.defs.render().indexOf(`<g id="${snippet}">`)).to.not.equal(-1)
     })
   }
 

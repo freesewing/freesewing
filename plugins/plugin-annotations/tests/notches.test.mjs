@@ -17,11 +17,11 @@ pattern.draft().render()
 
 describe('Notches Plugin Test', () => {
   it(`Should add the snippets to defs`, () => {
-    expect(pattern.svg.defs).to.contain('<g id="notch">')
+    expect(pattern.svg.defs.render()).to.contain('<g id="notch">')
   })
 
   it(`Should add the notches snippet to defs`, () => {
-    expect(pattern.svg.defs.indexOf(`<g id="notch">`)).to.not.equal(-1)
+    expect(pattern.svg.defs.render().indexOf(`<g id="notch">`)).to.not.equal(-1)
   })
 
   it('Draws a notch on an anchor point', () => {
