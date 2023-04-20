@@ -61,7 +61,7 @@ Defs.prototype.remove = function (name) {
 Defs.prototype.render = function () {
   let svg = ''
   for (let key in this.list) {
-    svg += ` ${key}="${this.list[key].join('')}"`
+    svg += ` ${key}="${this.list[key]}"`
   }
 
   return svg
@@ -75,7 +75,7 @@ Defs.prototype.render = function () {
  * @return {Defs} this - The Defs instance
  */
 Defs.prototype.set = function (name, value) {
-  this.list[name] = [value]
+  this.list[name] = value
 
   return this
 }
@@ -88,6 +88,6 @@ Defs.prototype.set = function (name, value) {
  * @return {Defs} this - The Defs instance
  */
 Defs.prototype.setIfUnset = function (name, value) {
-  if (typeof this.list[name] === 'undefined') this.list[name] = [value]
+  if (typeof this.list[name] === 'undefined') this.list[name] = value
   return this
 }
