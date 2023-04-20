@@ -16,12 +16,12 @@ jobs:
       with:
         node-version: 16
     - name: Cache node modules
-        uses: actions/cache@v3
-        id: cache_node_modules
-        with:
-          # caching node_modules
-          path: node_modules
-          key: node_modules-${{ hashFiles('yarn.lock') }}
+      uses: actions/cache@v3
+      id: cache_node_modules
+      with:
+        # caching node_modules
+        path: node_modules
+        key: node_modules-${{ hashFiles('yarn.lock') }}
     - name: Install dependencies
       if: steps.cache_node_modules.outputs.cache-hit != 'true'
       run: npx lerna bootstrap
