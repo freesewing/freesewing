@@ -137,3 +137,6 @@ scripts/verdaccio.sh
 !markdown/dev/reference/api/point/dist
 
 .test-failures.log
+
+# e2e test results
+sites/*/playwright-report

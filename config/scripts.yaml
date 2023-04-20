@@ -80,6 +80,7 @@ lab:
   clean: 'rimraf pages/*.mjs && rimraf pages/*/*.mjs && rimraf pages/v/*/*.mjs'
   dev: *nextDev
   develop: *nextDev
+  e2e: &e2e 'yarn playwright test'
   lint: *nextLint
   prebuild: 'node --experimental-json-modules ../shared/prebuild/index.mjs'
   start: *nextStart
