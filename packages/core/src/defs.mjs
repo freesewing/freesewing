@@ -70,8 +70,8 @@ Defs.prototype.render = function () {
 /**
  * Set a def, overwriting existing value
  *
- * @param {string} name - Name of the defs to set
- * @param {string} value - Value of the defs to set
+ * @param {string} name - Name of the def to set
+ * @param {string} value - Value of the def to set
  * @return {Defs} this - The Defs instance
  */
 Defs.prototype.set = function (name, value) {
