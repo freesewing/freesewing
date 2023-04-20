@@ -109,9 +109,6 @@ new-design:
 noble:
   peer:
     '@freesewing/bella': *freesewing
-legend:
-  peer:
-    '@freesewing/plugin-buttons': *freesewing
 paco:
   peer:
     '@freesewing/titan': *freesewing
