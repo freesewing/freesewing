@@ -10,8 +10,8 @@ export function shoulderAndNeck(sleeveEnd, neckSide, neckCenter, neckCp1, neckCp
   return new Path().move(sleeveEnd).line(neckSide).curve(neckCp2, neckCp1, neckCenter)
 }
 
-export function waistlineHeight(hpsToUnderbust, hpsToWaistBack, lowerPct) {
-  return hpsToUnderbust + (hpsToWaistBack - hpsToUnderbust) * lowerPct
+export function waistlineHeight(waistToUnderbust, hpsToWaistBack, lowerPct) {
+  return hpsToWaistBack - waistToUnderbust * (1 - lowerPct)
 }
 
 export const draftRingSector = (part, rot, an, radIn, radEx, rotate = false) => {

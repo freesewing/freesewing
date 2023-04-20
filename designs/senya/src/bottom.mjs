@@ -21,7 +21,7 @@ function senyaBottom({
   let fullLength =
     measurements.hpsToWaistBack -
     waistlineHeight(
-      measurements.hpsToUnderbust,
+      measurements.waistToUnderbust,
       measurements.hpsToWaistBack,
       options.lowerWaistline
     ) +

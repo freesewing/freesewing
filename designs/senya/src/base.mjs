@@ -31,7 +31,7 @@ function centerBack(measurements, options, Point) {
   var waistline = new Point(
     0,
     waistlineHeight(
-      measurements.hpsToUnderbust,
+      measurements.waistToUnderbust,
       measurements.hpsToWaistBack,
       options.lowerWaistline
     )
@@ -195,12 +195,12 @@ export const base = {
   measurements: [
     'biceps',
     'chest',
-    'hpsToUnderbust',
     'hpsToWaistBack',
     'neck',
     'shoulderToShoulder',
     'shoulderSlope',
     'underbust',
+    'waistToUnderbust',
   ],
   options: {
     // Static

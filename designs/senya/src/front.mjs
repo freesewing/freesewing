@@ -25,7 +25,7 @@ function senyaFront({
   }
 
   // Neckline
-  points.cfNeck = new Point(0, options.necklineDepth * measurements.hpsToUnderbust)
+  points.cfNeck = new Point(0, options.necklineDepth * measurements.waistToUnderbust)
   points.cfNeckCp1 = points.cfNeck.shift(0, points.neck.x * options.necklineBend * 2)
   points.neck = points.hps.shiftFractionTowards(points.shoulder, options.necklineWidth)
   points.neckCp2 = points.neck
