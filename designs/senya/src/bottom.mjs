@@ -1,6 +1,5 @@
-import { draftRingSector } from '@freesewing/sandy'
 import { base } from './base.mjs'
-import { waistlineHeight } from './shared.mjs'
+import { draftRingSector, waistlineHeight } from './shared.mjs'
 
 function senyaBottom({
   utils,
