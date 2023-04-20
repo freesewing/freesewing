@@ -100,6 +100,37 @@ PatternDrafter.prototype.draftPartForSet = function (partName, set) {
 }
 
 /**
+ * Create a part for the given set of settings.
+ * Handles injection
+ * @param   {String} partName the name of the part to create
+ * @param   {Number} set      the settings index
+ * @private
+ */
+PatternDrafter.prototype.__createPartForSet = function (partName, set = 0) {
+  // gotta protect against attacks
+  if (set === '__proto__') {
+    throw new Error('malicious attempt at altering Object.prototype. Stopping action')
+  }
+  // Create parts
+  this.activeStore.log.debug(`📦 Creating part \`${partName}\` (set ${set})`)
+  this.pattern.parts[set][partName] = this.__createPartWithContext(partName, set)
+
+  // Handle inject/inheritance
+  const parent = this.pattern.config.inject[partName]
+  if (typeof parent === 'string') {
+    this.activeStore.log.debug(`Creating part \`${partName}\` from part \`${parent}\``)
+    try {
+      this.pattern.parts[set][partName].__inject(this.pattern.parts[set][parent])
+    } catch (err) {
+      this.activeStore.log.error([
+        `Could not inject part \`${parent}\` into part \`${partName}\``,
+        err,
+      ])
+    }
+  }
+}
+
+/**
  * Instantiates a new Part instance and populates it with the pattern context
  *
  * @private
