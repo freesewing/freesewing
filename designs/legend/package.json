@@ -47,8 +47,7 @@
   },
   "peerDependencies": {
     "@freesewing/core": "3.0.0-alpha.9",
-    "@freesewing/plugin-bundle": "3.0.0-alpha.9",
-    "@freesewing/plugin-buttons": "3.0.0-alpha.9"
+    "@freesewing/plugin-bundle": "3.0.0-alpha.9"
   },
   "dependencies": {},
   "devDependencies": {

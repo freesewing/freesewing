@@ -9,7 +9,6 @@ labelPRBasedOnFilePath:
   ":package: rehype-highlight-lines": [ packages/rehype-highlight-lines/* ]
   ":package: rehype-jargon": [ packages/rehype-jargon/* ]
   ":package: snapseries": [ packages/snapseries/* ]
-  ":electric_plug: plugin-banner": [ plugins/plugin-banner/* ]
   ":electric_plug: plugin-bartack": [ plugins/plugin-bartack/* ]
   ":electric_plug: plugin-bundle": [ plugins/plugin-bundle/* ]
   ":electric_plug: plugin-bust": [ plugins/plugin-bust/* ]
