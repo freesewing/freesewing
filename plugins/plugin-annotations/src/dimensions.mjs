@@ -1,11 +1,20 @@
-const markers = `
+const defs = [
+  {
+    name: 'dimensionFrom',
+    def: `
 <marker orient="auto" refY="4.0" refX="0.0" id="dimensionFrom" style="overflow:visible;" markerWidth="12" markerHeight="8">
 	<path class="mark fill-mark" d="M 0,4 L 12,0 C 10,2 10,6  12,8 z" />
-</marker>
+</marker>`,
+  },
+  {
+    name: 'dimensionTo',
+    def: `
 <marker orient="auto" refY="4.0" refX="12.0" id="dimensionTo" style="overflow:visible;" markerWidth="12" markerHeight="8">
 	<path class="mark fill-mark" d="M 12,4 L 0,0 C 2,2 2,6  0,8 z" />
-</marker>
-`
+</marker>`,
+  },
+]
+
 const prefix = '__paperless'
 
 function drawDimension(from, to, so, { Path, units }) {
@@ -74,7 +83,9 @@ function lleader(so, type, props, id) {
 export const dimensionsHooks = {
   preRender: [
     function (svg) {
-      svg.defs.setIfUnset('dimensions', markers)
+      for (const def of defs) {
+        svg.defs.setIfUnset(def.name, def.def)
+      }
     },
   ],
 }

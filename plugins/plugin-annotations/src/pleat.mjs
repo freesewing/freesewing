@@ -8,7 +8,7 @@ const markers = `
 export const pleatHooks = {
   preRender: [
     function (svg) {
-      svg.defs.setIfUnset('pleat', markers)
+      svg.defs.setIfUnset('pleatTo', markers)
     },
   ],
 }
