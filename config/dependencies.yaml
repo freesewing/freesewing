@@ -125,12 +125,9 @@ plugintest:
     '@freesewing/plugin-bust': *freesewing
     '@freesewing/plugin-flip': *freesewing
     '@freesewing/plugin-gore': *freesewing
-    '@freesewing/plugin-grainline': *freesewing
     '@freesewing/plugin-i18n': *freesewing
-    '@freesewing/plugin-logo': *freesewing
     '@freesewing/plugin-measurements': *freesewing
     '@freesewing/plugin-mirror': *freesewing
-    '@freesewing/plugin-notches': *freesewing
     '@freesewing/plugin-round': *freesewing
     '@freesewing/plugin-sprinkle': *freesewing
     '@freesewing/plugin-svgattr': *freesewing
