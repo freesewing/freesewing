@@ -2724,41 +2724,6 @@
   dependencies:
     "@floating-ui/dom" "^1.1.0"
 
-"@freesewing/plugin-banner@3.0.0-alpha.8":
-  version "3.0.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/@freesewing/plugin-banner/-/plugin-banner-3.0.0-alpha.8.tgz#ed5501b081b6dcd2455ed17fbda648499da35b7b"
-  integrity sha512-F6jBjnZcyJhnggCOFEUAmow77AwSJ3XAulJ3DDlaf32SDioZpLxXm6lxX0ZpNB5kryPNy+xtqjZeYHRwko50GQ==
-
-"@freesewing/plugin-buttons@3.0.0-alpha.8":
-  version "3.0.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/@freesewing/plugin-buttons/-/plugin-buttons-3.0.0-alpha.8.tgz#6d1e90f2bec01a06042734f21144c08e69426ea4"
-  integrity sha512-gdpPudp3q04fK+MC18q1A0U7fBCKlCP8KuxA2f49mReUZbHzeoifGgksr31YLbq1vGBkzSfHVX/8LxK3R3AlVg==
-
-"@freesewing/plugin-dimension@3.0.0-alpha.8":
-  version "3.0.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/@freesewing/plugin-dimension/-/plugin-dimension-3.0.0-alpha.8.tgz#6276bd888fb234bc7b8dc64aa54b902547d944fc"
-  integrity sha512-nrooIFEsr8WFybpK1gqMH3T7X7/IMTne44kfXhVM4dUD19BQCyRHXksFED+XfLrPi4Zh/s5ScUZB9fBt6jRY2Q==
-
-"@freesewing/plugin-grainline@3.0.0-alpha.8":
-  version "3.0.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/@freesewing/plugin-grainline/-/plugin-grainline-3.0.0-alpha.8.tgz#3af1f402dbf091d9d62f529cb5c50f1aa6460844"
-  integrity sha512-m0Qs64kSbAg54jM7Mul1Jf+srb8WYIdPrgxUT5MNDZitJMGuzgnj3W8IbXboDu+DGSG5ypRFIWFPTddfOQPq8g==
-
-"@freesewing/plugin-logo@3.0.0-alpha.8":
-  version "3.0.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/@freesewing/plugin-logo/-/plugin-logo-3.0.0-alpha.8.tgz#9f6f0040f004e3b1bf9509bb690ebfffc69e09de"
-  integrity sha512-IifS2hIWcmkiaA32HKgMxhjFR1gUOpO0EFF+/aNjY+p030DbcWjnFuhDZCK6SGZER/CPF23UzQjOrwmOil6eOQ==
-
-"@freesewing/plugin-scalebox@3.0.0-alpha.8":
-  version "3.0.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/@freesewing/plugin-scalebox/-/plugin-scalebox-3.0.0-alpha.8.tgz#992725bf2f67ef9e45790e10621a46d5bf1ecbe0"
-  integrity sha512-6HWldI6vz5/MgmVboIr15pzOJIlOrFUNNNerX8fGTZ11KTsUm7OJ2D8oMsSed1/Chz4Rw5+NIQOfMTu3qOtgPg==
-
-"@freesewing/plugin-title@3.0.0-alpha.8":
-  version "3.0.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/@freesewing/plugin-title/-/plugin-title-3.0.0-alpha.8.tgz#06d55c3c95245002215add11816c20f827ef3d11"
-  integrity sha512-TfYHMMl3sZahjngTMpQ+dRhqMLyOwhF+XeWX/9wLqArJ4WMl3VthbUhTaWSw+pnDDCNid3yh/MSPaXgwKIVoaQ==
-
 "@gar/promisify@^1.1.3":
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"
