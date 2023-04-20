@@ -88,9 +88,6 @@ Defs.prototype.set = function (name, value) {
  * @return {Defs} this - The Defs instance
  */
 Defs.prototype.setIfUnset = function (name, value) {
-  // console.log({defsSetIfUnset:{name:name,value:value}})
   if (typeof this.list[name] === 'undefined') this.list[name] = [value]
-  // console.log({list:JSON.parse(JSON.stringify(this.list))})
-  // console.log({defs:this.render()})
   return this
 }
