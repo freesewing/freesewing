@@ -44,8 +44,6 @@ jobs:
         run: npx lerna bootstrap
         env:
           CI: true
-      - name: Build all
-        run: npm run buildall
       - name: Run all tests
         run: npm run testall
       - name: Upload to codecov.io
