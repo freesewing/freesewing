@@ -232,8 +232,8 @@ export const plugin_mirror = {
 
     macro('mirror', {
       mirror: [points.b, points.d],
-      points: [points.mid],
-      paths: [paths.a],
+      points: ['mid'],
+      paths: ['a'],
     })
 
     macro('sprinkle', {

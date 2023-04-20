@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/lab",
-  "version": "3.0.0-alpha.8",
+  "version": "3.0.0-alpha.9",
   "description": "FreeSewing website to test various patterns",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -25,7 +25,7 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "@headlessui/react": "1.7.13",
+    "@headlessui/react": "1.7.14",
     "@mdx-js/loader": "2.3.0",
     "@mdx-js/mdx": "2.3.0",
     "@mdx-js/react": "2.3.0",
@@ -44,10 +44,10 @@
     "next-i18next": "13.2.2",
     "react": "18.2.0",
     "react-copy-to-clipboard": "5.1.0",
-    "react-hotkeys-hook": "4.3.8",
+    "react-hotkeys-hook": "4.4.0",
     "react-i18next": "12.2.0",
     "react-instantsearch-dom": "6.39.1",
-    "react-markdown": "8.0.6",
+    "react-markdown": "8.0.7",
     "react-swipeable": "7.0.0",
     "react-timeago": "7.1.0",
     "rehype-autolink-headings": "6.1.1",
@@ -62,7 +62,7 @@
     "autoprefixer": "10.4.14",
     "eslint-config-next": "13.3.0",
     "js-yaml": "4.1.0",
-    "postcss": "8.4.21",
+    "postcss": "8.4.22",
     "remark-extract-frontmatter": "3.2.0",
     "tailwindcss": "3.3.1",
     "yaml-loader": "0.8.0"
