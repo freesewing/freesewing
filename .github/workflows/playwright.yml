@@ -16,7 +16,9 @@ jobs:
       with:
         node-version: 16
     - name: Install dependencies
-      run: yarn kickstart
+      run: npx lerna bootstrap
+    - name: Prebuild
+      run: npx lerna run prebuild
     - name: Install Playwright Browsers
       run: yarn playwright install --with-deps
     - name: Run Playwright tests
