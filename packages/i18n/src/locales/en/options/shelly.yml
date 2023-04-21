@@ -1,0 +1,60 @@
+---
+bodyHem:
+  title: Body hem
+  description: Sets the hem allowance along the bottom of the body of the shirt, as a percentage of the seam allowance.
+
+bodyLength:
+  title: Body length
+  description: Controls how long the shirt is, with 100% stopping at the hips.
+
+bodyShape:
+  title: Body shape
+  description: Controls how the side seam is curved. Zero creates a straight line from the armpit to the side of the hips. Positive values add material and gives the side seam a rounded/convex shape, while negative values remove material and gives the side seam an hourglass/concave shape.
+
+chestEase:
+  title: Chest ease
+  description: Controls how wide the shirt will be at your chest.
+
+hipsEase:
+  title: Hips ease
+  description: Controls how wide your shirt will be at the bottom hem.
+
+neckbandLength:
+  title: Neckband length
+  description: Controls how long the neckband is, as a percentage of the circumferance of the neckline. Recommended values for this option vary based on the material used for the neckband.
+
+neckbandWidth:
+  title: Neckband width
+  description: Controls how wide the finished neckband will be, as a percentage of the neckline circumference.
+
+neckEase:
+  title: Neck ease
+  description: Controls how large the neck hole is.
+
+neckOffset:
+  title: Neck position
+  description: Controls where the neck hole is placed on the shirt. A value of 0% has the center of the neck hole exactly where the four raglan seams would intersect, with the front and back bodices being identical. A positive value shifts the neck towards the front of the shirt.
+
+raglanScoopLength:
+  title: Raglan scoop length
+  description: Controls how far out from the armpit the scoop starts.
+
+raglanScoopMagnitude:
+  title: Raglan scoop depth
+  description: Controls how much extra material to place under the armpits. Larger values will generally provide better mobility and room in the armpits, while smaller values may give a more fitted look.
+
+sleeveEase:
+  title: Sleeve ease
+  description: Affects how wide the sleeve is at the armpit on all shirts, and also affects how wide the sleeve is at the end of the sleeve on short-sleeved shirts (sleeve length of less than 100%), with this effect being greater on shorter sleeves.
+
+sleeveHem:
+  title: Sleeve hem
+  description: Sets the hem allowance of the hem along the end of the sleeves, as a percentage of the seam allowance.
+
+sleeveLength:
+  title: Sleeve length
+  description: Controls the how long the sleeves of your shirt will be. 100% means the sleeves go to the wrist. 15-30% will make a short-sleeved shirt. 0% means the sleeves end at the armpit.
+
+wristEase:
+  title: Wrist ease
+  description: Affects how wide the end of the sleeve is on some shirts. There is no effect for sleeves ending at the biceps or above. For longer sleeves, the wrist measurement and this wrist ease option have a progressively larger effect, reaching full effect for long sleeved shirts (sleeve length of 100% or greater).

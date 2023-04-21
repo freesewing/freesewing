@@ -24,6 +24,7 @@ import benjamin from './benjamin.yml'
 import florent from './florent.yml'
 import theo from './theo.yml'
 import sandy from './sandy.yml'
+import shelly from './shelly.yml'
 import shin from './shin.yml'
 import penelope from './penelope.yml'
 import waralee from './waralee.yml'
@@ -72,6 +73,7 @@ let patterns = {
   florent,
   theo,
   sandy,
+  shelly,
   shin,
   penelope,
   waralee,
