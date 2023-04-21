@@ -31,4 +31,8 @@ describe('Defs', () => {
     console.log(defs.render())
     expect(defs.render()).to.equal(' test="passed"')
   })
+
+  it('Should be able to clone itself', () => {
+    expect(defs.clone().get('test')).to.equal('passed')
+  })
 })
