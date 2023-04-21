@@ -2072,7 +2072,7 @@
   resolved "https://registry.yarnpkg.com/@braintree/sanitize-url/-/sanitize-url-6.0.2.tgz#6110f918d273fe2af8ea1c4398a88774bb9fc12f"
   integrity sha512-Tbsj02wXCbqGmzdnXNk0SOF19ChhRU70BsroIi4Pm6Ehp56in6vch94mfbdQ17DozxkL3BAVjbZ4Qc1a0HFRAg==
 
-"@bugsnag/browser@^7.20.0":
+"@bugsnag/browser@^7.18.0":
   version "7.20.0"
   resolved "https://registry.yarnpkg.com/@bugsnag/browser/-/browser-7.20.0.tgz#1c18d7f78bb605cc85b005138f0f6a34793d0edc"
   integrity sha512-LzZWI6q5cWYQSXvfJDcSl287d2xXESVn0L20lK+K5nwo/jXcK9IVZr9L+CYZ40HVXaC9jOmQbqZ18hsbO2QNIw==
@@ -2095,15 +2095,15 @@
   resolved "https://registry.yarnpkg.com/@bugsnag/cuid/-/cuid-3.0.1.tgz#ed05265d17ecca8c93e5898a1b4ddeed52d48693"
   integrity sha512-ZWOywEsXGWMBb9PULGGbP2S/mUDp30ZjaozrOy/pv2xyFoCFiCdk5PB2HA3muH4W/ppb9pXr3b5f7al74qZ5sg==
 
-"@bugsnag/js@7.20.0":
-  version "7.20.0"
-  resolved "https://registry.yarnpkg.com/@bugsnag/js/-/js-7.20.0.tgz#a526d074e2d2719d290ebb3479ec4b9e26dbd164"
-  integrity sha512-lhUUSOveE8fP10RagAINqBmuH+eoOpyUOiTN1WRkjHUevWG0LZjRRUWEGN3AA+ZyTphmC6ljd2qE3/64qfOSGQ==
+"@bugsnag/js@7.18.0":
+  version "7.18.0"
+  resolved "https://registry.yarnpkg.com/@bugsnag/js/-/js-7.18.0.tgz#48261838a893a5e452f09ea75f27ad7ad964f199"
+  integrity sha512-engv7itP6E5VcqapikA/ZPgnnImxZLMRZMyu14dgld/RCjCm3XFLhGcscnN8jJkTmp366e5Xqo8Lq7y9aI6Yhw==
   dependencies:
-    "@bugsnag/browser" "^7.20.0"
-    "@bugsnag/node" "^7.19.0"
+    "@bugsnag/browser" "^7.18.0"
+    "@bugsnag/node" "^7.18.0"
 
-"@bugsnag/node@^7.19.0":
+"@bugsnag/node@^7.18.0":
   version "7.19.0"
   resolved "https://registry.yarnpkg.com/@bugsnag/node/-/node-7.19.0.tgz#6a8e5d0f5e73a1d0bad19537def1a7ff65e19787"
   integrity sha512-c4snyxx5d/fsMogmgehFBGc//daH6+4XCplia4zrEQYltjaQ+l8ud0dPx623DgJl/2j1+2zlRc7y7IHSd7Gm5w==
