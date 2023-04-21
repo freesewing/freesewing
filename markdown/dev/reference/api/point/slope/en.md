@@ -2,7 +2,7 @@
 title: Point.slope()
 ---
 
-The `Point.slope()` method returns the slope (dy/dx) of a line made by this Point and that Point. 
+The `Point.slope()` method returns the slope (dy/dx) of a line between two Points. 
 
 ## Signature
 
@@ -41,9 +41,6 @@ paths.line = new Path()
 .line(points.B)
 .attr("class", "canvas")
 .setText("Slope: " + slope,  "center text-lg")
-
-
-
 
 
 

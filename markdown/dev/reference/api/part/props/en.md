@@ -2,7 +2,7 @@
 title: Part.asProps()
 ---
 
-This `Part.asProps()` method can be used to return the part as an object that is suitable for inclusion in renderprops. We call this internally, when rendering you only need this when you are building your own render system. 
+This `Part.asProps()` method can be used to return the part as an object that is suitable for inclusion in renderprops. This method is used internally and is only required when building your own render system. 
 
 
 ## Signature
