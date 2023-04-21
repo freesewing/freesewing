@@ -274,7 +274,7 @@ function draftRaglanSleeve({
 }
 
 export const raglanSleeve = {
-  name: 'swimshirt.raglanSleeve',
+  name: 'shelly.raglanSleeve',
   after: [front, back],
   plugins: [pluginBundle, pluginCutlist],
   draft: draftRaglanSleeve,

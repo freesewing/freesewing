@@ -185,7 +185,7 @@ function draftBack({
 }
 
 export const back = {
-  name: 'swimshirt.back',
+  name: 'shelly.back',
   plugins: [pluginBundle, pluginCutlist],
   draft: draftBack,
   measurements: ['neck', 'chest', 'hips', 'hpsToBust', 'waistToHips', 'hpsToWaistBack'],

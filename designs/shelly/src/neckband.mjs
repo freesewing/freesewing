@@ -67,7 +67,7 @@ function draftNeckband({
 }
 
 export const neckband = {
-  name: 'swimshirt.neckband',
+  name: 'shelly.neckband',
   plugins: [pluginBundle, pluginCutlist],
   draft: draftNeckband,
   measurements: ['neck', 'chest', 'biceps', 'wrist'],

@@ -78,9 +78,19 @@ function draftFront({
     options.raglanScoopLength * raglanLength
   )
 
+  let sideAngle = points.bottomSideCorner.angle(points.armpitCornerScooped)
+  let sideLength = points.bottomSideCorner.dist(points.armpitCornerScooped)
+  points.sideCp1 = points.bottomSideCorner
+    .shift(sideAngle, 0.33333 * sideLength)
+    .shift(sideAngle - 90, options.sideShape * sideLength)
+  points.sideCp2 = points.armpitCornerScooped
+    .shift(sideAngle + 180, 0.33333 * sideLength)
+    .shift(sideAngle - 90, options.sideShape * sideLength)
+
   paths.frontSA = new Path()
     .move(points.bottomSideCorner)
-    .line(points.armpitCornerScooped)
+    //    .line(points.armpitCornerScooped)
+    .curve(points.sideCp1, points.sideCp2, points.armpitCornerScooped)
     .curve(points.armpitScoopCp1, points.armpitScoopCp2, points.armpitScoopEnd)
     .line(points.neckShoulderCorner)
     .curve(points.shoulderNeckCp1, points.shoulderNeckCp2, points.neckCenterCorner)
@@ -187,18 +197,18 @@ function draftFront({
 }
 
 export const front = {
-  name: 'swimshirt.front',
+  name: 'shelly.front',
   plugins: [pluginBundle, pluginCutlist],
   draft: draftFront,
   measurements: ['neck', 'chest', 'hips', 'hpsToBust', 'waistToHips', 'hpsToWaistBack'],
   options: {
     // How much ease to give for the neck, as a percentage.
-    neckEase: { pct: 0, min: -30, max: 50, menu: 'fit' },
+    neckEase: { pct: 0, min: -30, max: 100, menu: 'fit' },
     chestEase: { pct: 0, min: -30, max: 50, menu: 'fit' },
-    hipsEase: { pct: 0, min: -30, max: 50, menu: 'fit' },
+    hipsEase: { pct: 0, min: -30, max: 75, menu: 'fit' },
     bodyLength: { pct: 100, min: 60, max: 300, menu: 'style' },
     // How far the neck hole is shifted towards the front. +100% means it's entirely on the front, -100% means it's entirely on the back, and 0 means the front and back are the same.
-    neckOffset: { pct: 25, min: -80, max: 80, menu: 'fit' },
+    neckOffset: { pct: 40, min: -80, max: 0, menu: 'fit' },
     // Note: The raglan length is the distance between the armpit and where the raglan seams would meet if there were no neckhole. It is used as a base for the following fit options.
     // How long the scoop running down the raglan seam is, as a % of the raglan length.
     raglanScoopLength: { pct: 20, min: 0, max: 50, menu: 'fit' },
@@ -206,5 +216,7 @@ export const front = {
     raglanScoopMagnitude: { pct: 6, min: 0, max: 20, menu: 'fit' },
     // Length of the hem around the hips, as a percent of the seam allowance.
     bodyHem: { pct: 200, min: 0, max: 800, menu: 'style' },
+    // How the body curves along the side from the armpit to the side of the hips, as a % of the length of the side seam. Negative values form a concave body and positive values form a convex body.
+    sideShape: { pct: 0, min: -20, max: 20, menu: 'style' },
   },
 }
