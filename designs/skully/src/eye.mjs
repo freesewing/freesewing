@@ -64,8 +64,8 @@ function draftEye({
   points.pointNotch = paths.eye.shiftAlong(store.get('eyeTop'))
 
   const ps = paths.eye.split(points.pointNotch)
-  paths.eyeTop = ps[0].clone().setText('eyeTop' + ' (4)', textAttribute)
-  paths.eyeBottom = ps[1].clone().setText('eyeBottom' + ' (4)', textAttribute)
+  paths.eyeTop = ps[0].clone().setText(complete ? 'eyeTop' + ' (4)' : '', textAttribute)
+  paths.eyeBottom = ps[1].clone().setText(complete ? 'eyeBottom' + ' (4)' : '', textAttribute)
 
   paths.seam = new Path()
     .move(points.p4)

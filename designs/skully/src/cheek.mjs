@@ -16,10 +16,8 @@ function draftCheek({
   macro,
   part,
 }) {
-  console.log('cheek')
   const textAttribute = 'text-xs center'
-
-  const sizeFactor = ((measurements?.head || 596) / 929.5) * options.size * 2
+  const sizeFactor = (('head' in measurements ? measurements.head : 596) / 929.5) * options.size * 2
   store.set('sizeFactor', sizeFactor)
 
   points.point0 = new Point(0, 0)
@@ -67,25 +65,25 @@ function draftCheek({
     .move(points.point7)
     .curve(points.point7Cp1, points.point8Cp2, points.point8)
     .curve(points.point8Cp1, points.point9Cp2, points.point9)
-    .setText('eyeBottom' + ' (4)', textAttribute)
+    .setText(complete ? 'eyeBottom' + ' (4)' : '', textAttribute)
     .addClass('hidden')
 
   paths.mouthTop = new Path()
     .move(points.point3)
     .curve(points.point3Cp1, points.point4Cp2, points.point4)
-    .setText('mouthTop' + ' (16)', textAttribute)
+    .setText(complete ? 'mouthTop' + ' (16)' : '', textAttribute)
     .addClass('hidden')
 
   paths.upperJaw = new Path()
     .move(points.point4)
     .curve(points.point4Cp1, points.point5Cp2, points.point5)
-    .setText('upperJaw' + ' (16)', textAttribute)
+    .setText(complete ? 'upperJaw' + ' (16)' : '', textAttribute)
     .addClass('hidden')
 
   paths.nose = new Path()
     .move(points.point1)
     .curve(points.point1Cp1, points.point2Cp2, points.point2)
-    .setText('nose (10)', textAttribute)
+    .setText(complete ? 'nose (10)' : '', textAttribute)
     .addClass('hidden')
 
   store.set('templeToJaw', points.point5.dist(points.point5a))
@@ -94,27 +92,27 @@ function draftCheek({
   paths.seam1 = new Path()
     .move(points.point9)
     .line(points.point0)
-    .setText('1', textAttribute)
+    .setText(complete ? '1' : '', textAttribute)
     .addClass('hidden')
   paths.seam2 = new Path()
     .move(points.point6)
     .line(points.point7)
-    .setText('2', textAttribute)
+    .setText(complete ? '2' : '', textAttribute)
     .addClass('hidden')
   paths.seam5 = new Path()
     .move(points.point5a)
     .curve(points.point5aCp1, points.point6Cp2, points.point6)
-    .setText('5', textAttribute)
+    .setText(complete ? '5' : '', textAttribute)
     .addClass('hidden')
   paths.seam7 = new Path()
     .move(points.point0)
     .line(points.point1)
-    .setText('7', textAttribute)
+    .setText(complete ? '7' : '', textAttribute)
     .addClass('hidden')
   paths.seam8 = new Path()
     .move(points.point2)
     .curve(points.point2Cp1, points.point3Cp2, points.point3)
-    .setText('8', textAttribute)
+    .setText(complete ? '8' : '', textAttribute)
     .addClass('hidden')
 
   paths.seam = new Path()

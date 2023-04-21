@@ -12,12 +12,12 @@ Most of the seams will benefit from being basted before being sewn.
 
 ## Step 1: The darts
 
-There are three darts that need to be closed first. Pin and sew them, then remove the bulk and
+There are three darts that need to be closed first. Pin and sew them, then remove the extra fabric and
 give them a good press. Repeat for the other three darts.
 
 ## Step 2: The eyes
 
-Sew together the sides of the eye, so you will make a cone. Cut away any bulk. Repeat for the other eye
+Sew together the sides of the eye, so you will make a cone. Cut away any excess seam allowance. Repeat for the other eye
 
 ## Step 3: The nose
 
@@ -35,7 +35,7 @@ it partly.
 
 When you are sewing together the individual parts, you will be making two halves of the skull. 
 
-Sewing the eyes and nose to the cheek and forehead parts is best done by hand. You will have to aling
+Sewing the eyes and nose to the cheek and forehead parts is best done by hand. You will have to align
 the different notches to their corresponding ones on the other part. 
 
 Sewing the lowerJaw to the lowerMouth and upperMouth is challenging. You will be making a normal seam 
@@ -48,7 +48,9 @@ The back of the upperMouth is not sewn to anything. It is just there to provide 
 ## Step 5: Hair
 
 Now is the time to add hair to skully. When putting the embroidery floss in, make sure you add knots 
-on the inside, or else it is very easy to pull Skully's hair out later. 
+on the inside, or else it is very easy to pull Skully's hair out later. I threaded two pieces of floss
+through a needle, and stick it from the outside through the head. Then make an overhand knot, and push
+the needle back out. You should make shorter hair towards the outside, and longer in the middle.
 
 ## Step 6: Stuffing
 

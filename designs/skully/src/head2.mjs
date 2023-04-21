@@ -2,18 +2,18 @@ import { pluginBundle } from '@freesewing/plugin-bundle'
 import { cheek } from './cheek.mjs'
 import { head1 } from './head1.mjs'
 
-function draftHead2({ 
-  Point, 
-  Path, 
-  points, 
-  paths, 
-  complete, 
-  sa, 
+function draftHead2({
+  Point,
+  Path,
+  points,
+  paths,
+  complete,
+  sa,
   log,
-  store, 
-  paperless, 
-  macro, 
-  part 
+  store,
+  paperless,
+  macro,
+  part,
 }) {
   const textAttribute = 'text-xs center'
   const sizeFactor = store.get('sizeFactor')
@@ -50,7 +50,7 @@ function draftHead2({
     }
   } while (iterations < 100 && (secondSeam - p.length() > 1 || secondSeam - p.length() < -1))
   if (iterations >= 100) {
-    log.error('Something is not quite right here!')
+    log.error('Generating head2 could not be made to fit in 100 iterations!')
   }
 
   points.dartPoint0 = new Path()
@@ -75,25 +75,25 @@ function draftHead2({
     .move(points.point0)
     ._curve(points.point1Cp2, points.point1)
     .curve_(points.point1Cp1, points.point2)
-    .setText('17', textAttribute)
+    .setText(complete ? '17' : '', textAttribute)
     .addClass('hidden')
 
   paths.thirdSeam = new Path()
     .move(points.point3)
     .curve(points.point3Cp1, points.point4Cp2, points.point4)
-    .setText('18', textAttribute)
+    .setText(complete ? '18' : '', textAttribute)
     .addClass('hidden')
 
   paths.top = new Path()
     .move(points.point4)
     .curve(points.point4, points.point0Cp2, points.point0)
-    .setText('19', textAttribute)
+    .setText(complete ? '19' : '', textAttribute)
     .addClass('hidden')
 
   paths.bottom = new Path()
     .move(points.point2)
     .line(points.point3)
-    .setText('21', textAttribute)
+    .setText(complete ? '21' : '', textAttribute)
     .addClass('hidden')
 
   store.set('thirdSeam', paths.thirdSeam.length() - points.dartPoint0.dist(points.dartPoint2))

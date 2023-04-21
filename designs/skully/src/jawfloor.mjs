@@ -70,7 +70,7 @@ function draftJawfloor({
     .curve(points.point1Cp1, points.point2Cp2, points.point2)
     .curve(points.point2Cp1, points.point3Cp2, points.point3)
     .curve(points.point3Cp1, points.point4Cp2, points.point4)
-    .setText('jawBottom' + ' (15)', textAttribute)
+    .setText(complete ? 'jawBottom' + ' (15)' : '', textAttribute)
     .addClass('hidden')
 
   paths.bottomJaw2 = new Path()
@@ -80,14 +80,14 @@ function draftJawfloor({
     .curve(points.mPoint2Cp2, points.mPoint1Cp1, points.mPoint1)
     .curve(points.mPoint1Cp2, points.mPoint0Cp1, points.mPoint0)
     .curve_(points.mPoint0Cp2, points.point6)
-    .setText('jawBottom' + ' (15)', textAttribute)
+    .setText(complete ? 'jawBottom' + ' (15)' : '', textAttribute)
     .addClass('hidden')
 
   paths.back = new Path()
     .move(points.point4)
     .curve(points.point4, points.point5Cp2, points.point5)
     .curve(points.mPoint5Cp2, points.mPoint4, points.mPoint4)
-    .setText('21', textAttribute)
+    .setText(complete ? '21' : '', textAttribute)
     .addClass('hidden')
 
   paths.seam = new Path()

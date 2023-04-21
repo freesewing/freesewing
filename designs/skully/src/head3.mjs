@@ -57,7 +57,7 @@ function draftHead3({
   if (x) {
     points.point5 = x[0].clone()
   } else {
-    log.error('Something is not quite right here!')
+    log.error('Could not make the lower part of head3 fit the other parts!')
   }
 
   points.point5Cp1 = points.point5.shift(359.48476820979687, 24.91000716579583 * sizeFactor)
@@ -65,26 +65,26 @@ function draftHead3({
   paths.thirdSeam1 = new Path()
     .move(points.point2)
     .curve(points.point2Cp1, points.point3Cp2, points.point3)
-    .setText('18', textAttribute)
+    .setText(complete ? '18' : '', textAttribute)
     .addClass('hidden')
 
   paths.thirdSeam2 = new Path()
     .move(points.point4)
     .line(points.point5)
-    .setText('18', textAttribute)
+    .setText(complete ? '18' : '', textAttribute)
     .addClass('hidden')
 
   paths.back = new Path()
     .move(points.point0)
     .curve(points.point0Cp1, points.point1Cp2, points.point1)
     .curve(points.point1Cp1, points.point2Cp2, points.point2)
-    .setText('19', textAttribute)
+    .setText(complete ? '19' : '', textAttribute)
     .addClass('hidden')
 
   paths.bottom = new Path()
     .move(points.point5)
     .line(points.point0)
-    .setText('21', textAttribute)
+    .setText(complete ? '21' : '', textAttribute)
     .addClass('hidden')
 
   paths.dart = new Path()
