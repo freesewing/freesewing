@@ -1,4 +1,5 @@
-const defs = [
+// Export defs
+export const grainlineDefs = [
   {
     name: 'grainlineFrom',
     def: `
@@ -17,16 +18,7 @@ const defs = [
 
 const dflts = { text: 'grainline' }
 
-// Export hooks and macros
-export const grainlineHooks = {
-  preRender: [
-    function (svg) {
-      for (const def of defs) {
-        svg.defs.setIfUnset(def.name, def.def)
-      }
-    },
-  ],
-}
+// Export macros
 export const grainlineMacros = {
   grainline: function (so = {}, { points, paths, Path, complete, setGrain }) {
     if (so === false) {

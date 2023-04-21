@@ -1,4 +1,5 @@
-const defs = [
+// Export defs
+export const cutonfoldDefs = [
   {
     name: 'cutonfoldFrom',
     def: `
@@ -15,16 +16,6 @@ const defs = [
   },
 ]
 
-// Export hooks
-export const cutonfoldHooks = {
-  preRender: [
-    function (svg) {
-      for (const def of defs) {
-        svg.defs.setIfUnset(def.name, def.def)
-      }
-    },
-  ],
-}
 // Export macros
 export const cutonfoldMacros = {
   cutonfold: function (so, { points, paths, Path, complete, setCutOnFold, setGrain, scale }) {

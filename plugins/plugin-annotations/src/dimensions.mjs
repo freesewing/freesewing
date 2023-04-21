@@ -1,4 +1,5 @@
-const defs = [
+// Export defs
+export const dimensionsDefs = [
   {
     name: 'dimensionFrom',
     def: `
@@ -79,16 +80,7 @@ function lleader(so, type, props, id) {
   return point
 }
 
-// Export hooks and macros
-export const dimensionsHooks = {
-  preRender: [
-    function (svg) {
-      for (const def of defs) {
-        svg.defs.setIfUnset(def.name, def.def)
-      }
-    },
-  ],
-}
+// Export macros
 export const dimensionsMacros = {
   // horizontal
   hd: function (so, props) {

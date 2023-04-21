@@ -9,8 +9,6 @@ describe('Logo Plugin Tests', () => {
     const Pattern = new Design()
     const pattern = new Pattern().use(annotationsPlugin)
     pattern.draft().render()
-    expect(pattern.svg.defs.render()).to.contain(
-      '<g id="logo" transform="scale(1) translate(-23 -36)"><path class="logo"'
-    )
+    expect(pattern.svg.defs.get('logo')).to.not.equal(false)
   })
 })

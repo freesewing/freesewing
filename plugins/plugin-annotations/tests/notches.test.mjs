@@ -16,14 +16,12 @@ const pattern = new Pattern()
 pattern.draft().render()
 
 describe('Notches Plugin Test', () => {
-  it(`Should add the snippets to defs`, () => {
-    expect(pattern.svg.defs.render()).to.contain('<g id="notch">')
+  it(`Should add the bnotch to defs`, () => {
+    expect(pattern.svg.defs.get('bnotch')).to.not.equal(false)
   })
-
-  it(`Should add the notches snippet to defs`, () => {
-    expect(pattern.svg.defs.render().indexOf(`<g id="notch">`)).to.not.equal(-1)
+  it(`Should add the notch to defs`, () => {
+    expect(pattern.svg.defs.get('notch')).to.not.equal(false)
   })
-
   it('Draws a notch on an anchor point', () => {
     const part = {
       name: 'test',

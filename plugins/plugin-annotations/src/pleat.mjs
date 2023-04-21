@@ -1,17 +1,14 @@
-const markers = `
+// Export defs
+export const pleatDefs = [
+  {
+    name: 'notch',
+    def: `
 <marker id="pleatTo" markerWidth="12" markerHeight="8" orient="auto" refY="4" refX="12">
   <path class="note fill-note" d="M 12,4 L 0,0 C 2,2 2,6  0,8 z" />
 </marker>
-`
-
-// Export hooks
-export const pleatHooks = {
-  preRender: [
-    function (svg) {
-      svg.defs.setIfUnset('pleatTo', markers)
-    },
-  ],
-}
+`,
+  },
+]
 
 // Export macros
 export const pleatMacros = {

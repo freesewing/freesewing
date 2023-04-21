@@ -1,4 +1,5 @@
-const defs = [
+// Export defs
+export const sewtogetherDefs = [
   {
     name: 'sewTogetherStart',
     def: `
@@ -21,17 +22,6 @@ const defs = [
 </marker>`,
   },
 ]
-
-// Export hooks
-export const sewtogetherHooks = {
-  preRender: [
-    function (svg) {
-      for (const def of defs) {
-        svg.defs.setIfUnset(def.name, def.def)
-      }
-    },
-  ],
-}
 
 // Export macros
 export const sewtogetherMacros = {

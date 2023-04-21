@@ -1,4 +1,5 @@
-const defs = [
+// Export defs
+export const buttonsDefs = [
   {
     name: 'button',
     def: `
@@ -84,14 +85,3 @@ const defs = [
 </g>`,
   },
 ]
-
-// Export hooks
-export const buttonsHooks = {
-  preRender: [
-    function (svg) {
-      for (const def of defs) {
-        svg.defs.setIfUnset(def.name, def.def)
-      }
-    },
-  ],
-}

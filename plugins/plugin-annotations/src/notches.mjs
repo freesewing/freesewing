@@ -1,4 +1,5 @@
-const defs = [
+// Export hooks
+export const notchesDefs = [
   {
     name: 'notch',
     def: `
@@ -16,14 +17,3 @@ const defs = [
 </g>`,
   },
 ]
-
-// Export hooks
-export const notchesHooks = {
-  preRender: [
-    function (svg) {
-      for (const def of defs) {
-        svg.defs.setIfUnset(def.name, def.def)
-      }
-    },
-  ],
-}
