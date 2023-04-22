@@ -6,6 +6,8 @@ _types:
     dev:
       'mocha': &mocha '10.2.0'
       'chai': &chai '4.3.7'
+      '@freesewing/models': *freesewing
+      '@freesewing/plugin-timing': *freesewing
   plugin:
     peer:
       '@freesewing/core': *freesewing
@@ -99,7 +101,7 @@ jaeger:
     '@freesewing/plugin-mirror': *freesewing
 new-design:
   _:
-    'axios': '1.3.5'
+    'axios': '1.3.6'
     'chalk': '5.0.1'
     'execa': '7.1.1'
     'mustache': '4.2.0'
