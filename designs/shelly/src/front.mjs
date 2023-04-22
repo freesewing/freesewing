@@ -19,7 +19,8 @@ function draftFront({
   snippets,
   Snippet,
 }) {
-  let adjustedChest = measurements.chest * (1 + options.chestEase)
+  // Subtracting raglanScoopMagnitude is a fudge to counter the effects of the scoop moving the armpit point out. It's exactly correct for a 45% raglan seam (most people are very close to 45% on this measurement), but will have some error that will affect fit for other angles. The angle of the raglan seam is affected by this correction, so calculating the exact value isn't easy.
+  let adjustedChest = measurements.chest * (1 + options.chestEase - options.raglanScoopMagnitude)
   let adjustedNeckRadius = (measurements.neck * (1 + options.neckEase)) / (2 * Math.PI)
   let adjustedHips = measurements.hips * (1 + options.hipsEase)
 
@@ -204,7 +205,7 @@ export const front = {
   options: {
     // How much ease to give for the neck, as a percentage.
     neckEase: { pct: 0, min: -30, max: 100, menu: 'fit' },
-    chestEase: { pct: 0, min: -40, max: 50, menu: 'fit' },
+    chestEase: { pct: 0, min: -30, max: 50, menu: 'fit' },
     hipsEase: { pct: 0, min: -30, max: 75, menu: 'fit' },
     bodyLength: { pct: 100, min: 60, max: 300, menu: 'style' },
     // How far the neck hole is shifted towards the front. +100% means it's entirely on the front, -100% means it's entirely on the back, and 0 means the front and back are the same.

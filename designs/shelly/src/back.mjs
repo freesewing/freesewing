@@ -19,7 +19,8 @@ function draftBack({
   snippets,
   Snippet,
 }) {
-  let adjustedChest = measurements.chest * (1 + options.chestEase)
+  // Subtracting raglanScoopMagnitude is a fudge to counter the effects of the scoop moving the armpit point out. It's exactly correct for a 45% raglan seam (most people are very close to 45% on this measurement), but will have some error that will affect fit for other angles. The angle of the raglan seam is affected by this correction, so calculating the exact value isn't easy.
+  let adjustedChest = measurements.chest * (1 + options.chestEase - options.raglanScoopMagnitude)
   let adjustedNeckRadius = (measurements.neck * (1 + options.neckEase)) / (2 * Math.PI)
   let adjustedHips = measurements.hips * (1 + options.hipsEase)
 
@@ -76,9 +77,18 @@ function draftBack({
     options.raglanScoopLength * raglanLength
   )
 
+  let sideAngle = points.bottomSideCorner.angle(points.armpitCornerScooped)
+  let sideLength = points.bottomSideCorner.dist(points.armpitCornerScooped)
+  points.sideCp1 = points.bottomSideCorner
+    .shift(sideAngle, 0.33333 * sideLength)
+    .shift(sideAngle - 90, options.sideShape * sideLength)
+  points.sideCp2 = points.armpitCornerScooped
+    .shift(sideAngle + 180, 0.33333 * sideLength)
+    .shift(sideAngle - 90, options.sideShape * sideLength)
+
   paths.backSA = new Path()
     .move(points.bottomSideCorner)
-    .line(points.armpitCornerScooped)
+    .curve(points.sideCp1, points.sideCp2, points.armpitCornerScooped)
     .curve(points.armpitScoopCp1, points.armpitScoopCp2, points.armpitScoopEnd)
     .line(points.neckShoulderCorner)
     .curve(points.shoulderNeckCp1, points.shoulderNeckCp2, points.neckCenterCorner)
