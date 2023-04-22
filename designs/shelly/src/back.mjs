@@ -19,8 +19,9 @@ function draftBack({
   snippets,
   Snippet,
 }) {
-  // Subtracting raglanScoopMagnitude is a fudge to counter the effects of the scoop moving the armpit point out. It's exactly correct for a 45% raglan seam (most people are very close to 45% on this measurement), but will have some error that will affect fit for other angles. The angle of the raglan seam is affected by this correction, so calculating the exact value isn't easy.
-  let adjustedChest = measurements.chest * (1 + options.chestEase - options.raglanScoopMagnitude)
+  let adjustedChest = measurements.chest * (1 + options.chestEase)
+  // Reduce the chest measurement by the horizontal size of the raglan scoop, since the scoop is generated outwards and will add to the chest width.
+  adjustedChest -= 4 * (options.raglanScoopMagnitude * measurements.hpsToBust)
   let adjustedNeckRadius = (measurements.neck * (1 + options.neckEase)) / (2 * Math.PI)
   let adjustedHips = measurements.hips * (1 + options.hipsEase)
 

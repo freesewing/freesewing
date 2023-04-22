@@ -19,8 +19,9 @@ function draftFront({
   snippets,
   Snippet,
 }) {
-  // Subtracting raglanScoopMagnitude is a fudge to counter the effects of the scoop moving the armpit point out. It's exactly correct for a 45% raglan seam (most people are very close to 45% on this measurement), but will have some error that will affect fit for other angles. The angle of the raglan seam is affected by this correction, so calculating the exact value isn't easy.
-  let adjustedChest = measurements.chest * (1 + options.chestEase - options.raglanScoopMagnitude)
+  let adjustedChest = measurements.chest * (1 + options.chestEase)
+  // Reduce the chest measurement by the horizontal size of the raglan scoop, since the scoop is generated outwards and will add to the chest width.
+  adjustedChest -= 4 * (options.raglanScoopMagnitude * measurements.hpsToBust)
   let adjustedNeckRadius = (measurements.neck * (1 + options.neckEase)) / (2 * Math.PI)
   let adjustedHips = measurements.hips * (1 + options.hipsEase)
 
@@ -209,7 +210,7 @@ export const front = {
     hipsEase: { pct: 0, min: -30, max: 75, menu: 'fit' },
     bodyLength: { pct: 100, min: 60, max: 300, menu: 'style' },
     // How far the neck hole is shifted towards the front. +100% means it's entirely on the front, -100% means it's entirely on the back, and 0 means the front and back are the same.
-    neckOffset: { pct: 40, min: -80, max: 0, menu: 'fit' },
+    neckOffset: { pct: 40, min: 0, max: 80, menu: 'fit' },
     // Note: The raglan length is the distance between the armpit and where the raglan seams would meet if there were no neckhole. It is used as a base for the following fit options.
     // How long the scoop running down the raglan seam is, as a % of the raglan length.
     raglanScoopLength: { pct: 20, min: 0, max: 50, menu: 'fit' },

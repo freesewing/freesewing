@@ -21,7 +21,7 @@ function draftRaglanSleeve({
   snippets,
   Snippet,
 }) {
-  let armholeFudgeFactor = 1.1 // How much larger to make the armhole as a proportion of the biceps measurement.
+  let armholeFudgeFactor = 1.1 - options.raglanScoopMagnitude // How much larger to make the armhole as a proportion of the biceps measurement. The constant term is to account for the armpit being a bit wider than the biceps, while subtracting the raglan scoop is to adjust for the extra material that the scoop will insert.
   let bicepsPosition = 0.2 // How far the biceps measurement is along the arm. 0 means at the armhole. 1 means at the wrist.
 
   let adjustedNeckRadius = (measurements.neck * (1 + options.neckEase)) / (2 * Math.PI)
