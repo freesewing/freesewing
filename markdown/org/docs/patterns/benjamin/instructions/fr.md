@@ -27,13 +27,13 @@ sur [le droit fil de tissu](/docs/sewing/fabric-grain).
 
 ### Ruban d'ajustement de nœud papillon
 
-Ce patron vous permet de faire un nœud papillon à la bonne longueur pour une certain tour de cou. It can also make one that has a ribbon and hardware that makes the bow tie adjustable to different neck sizes. This is useful if not all of your shirts have the same neck measurements, or if you sometimes like shirts with more ease in the neck.
+Ce patron vous permet de faire un nœud papillon à la bonne longueur pour une certain tour de cou. Il permet également d'en faire un qui possède un ruban et les boucles qui rendent le nœud papillon réglable pour différentes tailles de cou. Ceci est utile si toutes vos chemises n'ont pas les mêmes mesures de cou, ou si vous portez parfois des chemises avec plus d'aisance au cou.
 
 Ces rubans peuvent être trouvés dans les meilleures merceries ou peuvent être commandés en ligne.
 
 ### Marge de couture
 
-Since the bow tie is constructed with the right sides of the fabric against each other, the whole thing will have to be turned inside out. You probably want to consider using a small seam allowance of 6mm (¼ inch) to reduce the bulk.
+Puisque le nœud papillon est construit avec le tissu endroit contre endroit, tout l'ouvrage devra être retourné. Vous voulez probablement envisager d'utiliser une petite marge de couture de 6 mm (¼ pouces) pour réduire les surépaisseurs.
 
 ## Montage
 
