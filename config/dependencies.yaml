@@ -6,6 +6,8 @@ _types:
     dev:
       'mocha': &mocha '10.2.0'
       'chai': &chai '4.3.7'
+      '@freesewing/models': *freesewing
+      '@freesewing/plugin-timing': *freesewing
   plugin:
     peer:
       '@freesewing/core': *freesewing
