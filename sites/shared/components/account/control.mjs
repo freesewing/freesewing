@@ -12,7 +12,7 @@ import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
 export const ns = ['account', 'toast']
 
 export const ControlSettings = ({ app, title = false, welcome = false }) => {
-  const { account, token } = useAccount()
+  const { account, setAccount, token } = useAccount()
   const backend = useBackend(token)
   const toast = useToast()
   const { t } = useTranslation(ns)
@@ -22,9 +22,11 @@ export const ControlSettings = ({ app, title = false, welcome = false }) => {
     if (control !== selection) {
       app.startLoading()
       const result = await backend.updateAccount({ control })
-      if (result) setSelection(control)
-      if (result === true) toast.for.settingsSaved()
-      else toast.for.backendError()
+      if (result.success) {
+        setSelection(control)
+        toast.for.settingsSaved()
+        setAccount(result.data.account)
+      } else toast.for.backendError()
       app.stopLoading()
     }
   }

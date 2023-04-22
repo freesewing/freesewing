@@ -174,5 +174,15 @@ export function useBackend(token = false) {
     return response && response.status === 204 ? true : false
   }
 
+  /*
+   * Get measurements sets
+   */
+  backend.getSets = async () => responseHandler(await api.get(`/sets/jwt`, auth))
+
+  /*
+   * Create measurements set
+   */
+  backend.createSet = async (data) => responseHandler(await api.post(`/sets/jwt`, data, auth), 201)
+
   return backend
 }

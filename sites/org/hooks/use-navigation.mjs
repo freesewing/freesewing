@@ -3,6 +3,7 @@ import { prebuildNavigation as pbn } from 'site/prebuild/navigation.mjs'
 import { useTranslation } from 'next-i18next'
 import orderBy from 'lodash.orderby'
 import { freeSewingConfig as conf } from 'site/freesewing.config.mjs'
+import { useAccount } from 'shared/hooks/use-account.mjs'
 
 /*
  * prebuildNavvigation[locale] holds the navigation structure based on MDX content.
@@ -17,7 +18,7 @@ import { freeSewingConfig as conf } from 'site/freesewing.config.mjs'
 
 const ns = ['account', 'sections']
 
-const sitePages = (t = false) => {
+const sitePages = (t = false, control = 99) => {
   // Handle t not being present
   if (!t) t = (string) => string
   const pages = {
@@ -72,11 +73,12 @@ const sitePages = (t = false) => {
     },
   }
   for (const section in conf.account.fields) {
-    for (const field in conf.account.fields[section]) {
-      pages.account[field] = {
-        t: t(`account:${field}`),
-        s: `account/${field}`,
-      }
+    for (const [field, controlScore] of Object.entries(conf.account.fields[section])) {
+      if (Number(control) >= controlScore)
+        pages.account[field] = {
+          t: t(`account:${field}`),
+          s: `account/${field}`,
+        }
     }
   }
 
@@ -106,8 +108,9 @@ const createSections = (nav) => {
 
 export const useNavigation = (path = [], locale = 'en') => {
   const { t } = useTranslation(ns)
+  const { account } = useAccount()
 
-  const nav = { ...pbn[locale], ...sitePages(t) }
+  const nav = { ...pbn[locale], ...sitePages(t, account?.control) }
 
   // Creat crumbs array
   const crumbs = createCrumbs(path, nav)

@@ -11,6 +11,10 @@ export const freeSewingConfig = {
   maxWidth: 2800,
   account: {
     fields: {
+      data: {
+        sets: 1,
+        patterns: 1,
+      },
       info: {
         bio: 1,
         email: 3,

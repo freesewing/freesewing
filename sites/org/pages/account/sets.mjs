@@ -1,9 +1,8 @@
-// Dependencies
-import { useTranslation } from 'next-i18next'
-import dynamic from 'next/dynamic'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Hooks
 import { useApp } from 'shared/hooks/use-app.mjs'
+// Dependencies
+import dynamic from 'next/dynamic'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
@@ -21,23 +20,18 @@ const DynamicAuthWrapper = dynamic(
   { ssr: false }
 )
 
-const DynamicApikeys = dynamic(
-  () => import('shared/components/account/apikeys.mjs').then((mod) => mod.Apikeys),
+const DynamicSets = dynamic(
+  () => import('shared/components/account/sets.mjs').then((mod) => mod.Sets),
   { ssr: false }
 )
 
 const AccountPage = (props) => {
   const app = useApp(props)
-  const { t } = useTranslation(namespaces)
-  const crumbs = [
-    [t('yourAccount'), '/account'],
-    [t('apikeys'), '/account/apikeys'],
-  ]
 
   return (
-    <PageWrapper app={app} title={t('apikeys')} crumbs={crumbs}>
+    <PageWrapper app={app}>
       <DynamicAuthWrapper app={app}>
-        <DynamicApikeys app={app} />
+        <DynamicSets app={app} />
       </DynamicAuthWrapper>
     </PageWrapper>
   )

@@ -14,7 +14,7 @@ import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
 
 export const ns = ['account', 'toast']
 
-const Tab = ({ id, activeTab, setActiveTab, t }) => (
+export const Tab = ({ id, activeTab, setActiveTab, t }) => (
   <button
     className={`text-xl font-bold capitalize tab tab-bordered grow
     ${activeTab === id ? 'tab-active' : ''}`}

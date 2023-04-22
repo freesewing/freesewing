@@ -5,6 +5,9 @@ newSet: New measurements set
 links: Links
 info: Info
 settings: Settings
+data: Data
+sets: Measurements sets
+patterns: Patterns
 actions: Actions
 created: Created
 expires: Expires
@@ -21,7 +24,7 @@ img: Profile image
 username: Username
 compare: Metricset comparison
 consent: Consent & Privacy
-control: Control
+control: Power & Simplicity
 imperial: Units
 units: Units
 apikeys: API Keys
@@ -161,3 +164,10 @@ keyExpired: This API key has expired
 deleteKeyWarning: Removing an API key cannot be undone.
 
 new: New
+
+# sets
+name: Name
+setNameDesc: A name to identify this measurements set
+notes: Notes
+setNotesDesc: Any notes you'd like to keep regarding this measurements set
+description: Description
