@@ -1,33 +1,33 @@
 - - -
-title: "Benjamin bow tie: Sewing Instructions"
+titre : "Nœud papillon Benjamin : Instructions de couture"
 - - -
 
 ## Notes et conseils
 
 ### Précision
 
-Comme un nœud papillon est un objet assez petit, la précision de la couture est la clé d'un bon résultat. Toute légère différence entre la partie supérieure et la partie inférieure du nœud se verra. To get a great result I found it very helpful to trace the actual seam lines onto the interfacing and follow that while sewing.
+Comme un nœud papillon est un objet assez petit, la précision de la couture est la clé d'un bon résultat. Toute légère différence entre la partie supérieure et la partie inférieure du nœud se verra. Pour obtenir un excellent résultat, j'ai trouvé très utile de tracer les lignes de couture sur l'entoilage et de les suivre pendant la couture.
 
 ### Pressez judicieusement
 
-Plus loin dans les étapes de construction, on vous demandera de repasser votre tissu. Please be careful that you are not using too much heat on a delicate fabric that can't handle it.
+Plus loin dans les étapes de construction, on vous demandera de repasser votre tissu. Faites attention à ce que vous n'utilisez pas trop de chaleur sur un tissu délicat qui pourrait ne pas le supporter.
 
-C'est une bonne idée de faire des essais sur quelques morceaux de tissu avant de commencer. This will allow you to figure out what is a good heat setting for the fabric you are using.
+C'est une bonne idée de faire des essais sur quelques morceaux de tissu avant de commencer. Cela vous permettra de déterminer le bon réglage de chaleur pour le tissu que vous utilisez.
 
 ### Déterminez le sens du tissu
 
-Ce patron comprend un sens de droit fil. This grain line is mostly there to be used with the interfacing. Since each pattern piece is interfaced, the grain line of the fabric itself is not so important. You can even change this from the standard for more informal impressions.
+Ce patron comprend un sens de droit fil. Ce droit fil est principalement là pour être utilisé avec l'entoilage. Puisque chaque pièce de patron est entoilée, le droit fil du tissu lui-même n'est pas si important. Vous pouvez même changer cela du standard pour un effet plus original.
 
 <Note>
 
-If this all sounds very confusing, might I suggest reading the help
-page on [Fabric grain](/docs/sewing/fabric-grain).
+Si tout cela semble très confus, puis-je suggérer de lire la page d'aide 
+sur [le droit fil de tissu](/docs/sewing/fabric-grain).
 
 </Note>
 
 ### Ruban d'ajustement de nœud papillon
 
-This pattern allows you to make a bow tie that is the right length for a certain neck size. It can also make one that has a ribbon and hardware that makes the bow tie adjustable to different neck sizes. This is useful if not all of your shirts have the same neck measurements, or if you sometimes like shirts with more ease in the neck.
+Ce patron vous permet de faire un nœud papillon à la bonne longueur pour une certain tour de cou. It can also make one that has a ribbon and hardware that makes the bow tie adjustable to different neck sizes. This is useful if not all of your shirts have the same neck measurements, or if you sometimes like shirts with more ease in the neck.
 
 Ces rubans peuvent être trouvés dans les meilleures merceries ou peuvent être commandés en ligne.
 
