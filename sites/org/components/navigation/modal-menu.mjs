@@ -9,7 +9,7 @@ export const ModalMenu = ({ app }) => {
   const { t } = useTranslation(ns)
 
   return (
-    <ModalWrapper app={app} flex="col" justify="top lg:justify-center">
+    <ModalWrapper app={app} flex="col" justify="top lg:justify-center" slideFrom="left">
       <div className="max-w-full">
         <div
           className={`

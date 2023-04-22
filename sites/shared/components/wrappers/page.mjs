@@ -34,8 +34,16 @@ export const PageWrapper = ({
    * Swipe handling for the entire site
    */
   const swipeHandlers = useSwipeable({
-    onSwipedLeft: () => app.setModal(false),
-    onSwipedRight: () => app.setModal(<ModalMenu app={app} />),
+    onSwipedLeft: (evt) => {
+      // Only process the first swipe event
+      evt.event.stopPropagation()
+      app.setModal(false)
+    },
+    onSwipedRight: (evt) => {
+      // Only process the first swipe event
+      evt.event.stopPropagation()
+      app.setModal(<ModalMenu app={app} />)
+    },
     trackMouse: true,
   })
 
