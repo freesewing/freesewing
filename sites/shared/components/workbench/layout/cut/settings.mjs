@@ -46,7 +46,7 @@ const FabricSizer = ({ gist, updateGist, activeFabric, sheetWidth }) => {
       <input
         key="input-fabricWidth"
         type="text"
-        className="input input-bordered grow text-base-content border-r-0"
+        className="input input-bordered grow text-base-content border-r-0 w-20"
         value={val}
         onChange={update}
       />
@@ -78,7 +78,7 @@ export const GrainDirectionPicker = ({ grainDirection, activeFabric, updateGist 
   )
 }
 
-const useFabricLength = (isImperial, height) => {
+export const useFabricLength = (isImperial, height, format = 'none') => {
   // regular conversion from mm to inches or cm
   const unit = isImperial ? 25.4 : 10
   // conversion from inches or cm to yards or meters
@@ -91,7 +91,7 @@ const useFabricLength = (isImperial, height) => {
   // we multiply it by the rounder, round it up, then divide by the rounder again to get the rounded amount
   const roundCount = Math.ceil(rounder * inFabricUnits) / rounder
   // format as a fraction for imperial, a decimal for metric
-  const count = isImperial ? formatFraction128(roundCount, 'none') : round(roundCount, 1)
+  const count = isImperial ? formatFraction128(roundCount, format) : round(roundCount, 1)
 
   return `${count}${isImperial ? 'yds' : 'm'}`
 }
@@ -119,7 +119,7 @@ export const CutLayoutSettings = ({
         <SheetIcon className="h-6 w-6 mr-2 inline align-middle" />
         <span className="text-xl font-bold align-middle">{fabricLength}</span>
       </div>
-      <div>
+      <div className="flex">
         <ShowButtonsToggle
           gist={gist}
           updateGist={updateGist}
@@ -128,7 +128,7 @@ export const CutLayoutSettings = ({
         <button
           key="reset"
           onClick={() => unsetGist(['layouts', 'cuttingLayout', activeFabric])}
-          className="btn btn-primary btn-outline"
+          className="btn btn-primary btn-outline ml-4"
         >
           <ClearIcon className="h-6 w-6 mr-2" />
           {t('reset')}

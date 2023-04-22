@@ -4,7 +4,6 @@ import { measurementsPlugin } from '../../plugin-measurements/src/index.mjs'
 import { mirrorPlugin } from '../../plugin-mirror/src/index.mjs'
 import { roundPlugin } from '../../plugin-round/src/index.mjs'
 import { sprinklePlugin } from '../../plugin-sprinkle/src/index.mjs'
-import { pluginCutlist } from '../../plugin-cutlist/src/index.mjs'
 import { name, version } from '../data.mjs'
 
 const bundledPlugins = [
@@ -13,7 +12,6 @@ const bundledPlugins = [
   mirrorPlugin,
   roundPlugin,
   sprinklePlugin,
-  pluginCutlist,
 ]
 
 const hooks = {}

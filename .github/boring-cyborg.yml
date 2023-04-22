@@ -12,7 +12,6 @@ labelPRBasedOnFilePath:
   ":electric_plug: plugin-annotations": [ plugins/plugin-annotations/* ]
   ":electric_plug: plugin-bundle": [ plugins/plugin-bundle/* ]
   ":electric_plug: plugin-bust": [ plugins/plugin-bust/* ]
-  ":electric_plug: plugin-cutlist": [ plugins/plugin-cutlist/* ]
   ":electric_plug: plugin-flip": [ plugins/plugin-flip/* ]
   ":electric_plug: plugin-gore": [ plugins/plugin-gore/* ]
   ":electric_plug: plugin-i18n": [ plugins/plugin-i18n/* ]

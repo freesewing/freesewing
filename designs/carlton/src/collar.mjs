@@ -178,6 +178,7 @@ function draftCarltonCollar({
     ._curve(points.topLeftCp, points.topLeft)
   paths.seam = paths.saBase.clone().line(points.standTop).close().attr('class', 'fabric')
 
+  store.cutlist.removeCut()
   store.cutlist.addCut({ cut: 1 })
   store.cutlist.addCut({ cut: 1, bias: true })
   store.cutlist.addCut({ cut: 2, material: 'lining', bias: true, ignoreOnFold: true })

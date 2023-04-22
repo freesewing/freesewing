@@ -1,19 +1,23 @@
-import { name, version } from '../data.mjs'
+export const cutlistStores = [
+  ['cutlist.addCut', addCut],
+  ['cutlist.removeCut', removeCut],
+  ['cutlist.setGrain', setGrain],
+  ['cutlist.setCutOnFold', setCutOnFold],
+  ['cutlist.getCutFabrics', getCutFabrics],
+]
 
-export const plugin = {
-  name,
-  version,
-  store: [
-    ['cutlist.addCut', addCut],
-    ['cutlist.removeCut', removeCut],
-    ['cutlist.setGrain', setGrain],
-    ['cutlist.setCutOnFold', setCutOnFold],
+export const cutlistHooks = {
+  prePartDraft: [
+    function (pattern) {
+      const injectedPart = pattern.config.inject[pattern.activePart]
+      if (!injectedPart) return
+
+      const store = pattern.setStores[pattern.activeSet]
+      const injectedCutlist = store.get(['cutlist', injectedPart], {})
+      store.set(['cutlist', pattern.activePart], { ...injectedCutlist })
+    },
   ],
 }
-
-// More specifically named exports
-export const cutlistPlugin = plugin
-export const pluginCutlist = plugin
 
 /**
  * Add a set of cutting instructions for the part
@@ -78,4 +82,22 @@ function setCutOnFold(store, p1, p2) {
     store.log.error('Called part.setCutOnFold() but at least one parameter is not a Point instance')
 
   return store
+}
+
+/** Get a list of fabrics used by the pattern for the given settings */
+function getCutFabrics(store, settings) {
+  const cutlist = store.get('cutlist')
+  const list = settings.only ? [].concat(settings.only) : Object.keys(cutlist)
+
+  const fabrics = []
+  list.forEach((partName) => {
+    if (!cutlist[partName]?.materials) {
+      return
+    }
+    for (var m in cutlist[partName].materials) {
+      if (!fabrics.includes(m)) fabrics.push(m)
+    }
+  })
+
+  return fabrics
 }
