@@ -7,6 +7,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
+import { useRouter } from 'next/router'
 // Components
 import { BackToAccountButton, Choice } from './shared.mjs'
 import { Popout } from 'shared/components/popout.mjs'
@@ -110,7 +111,8 @@ const ShowKey = ({ apikey, t, clear }) => (
   </div>
 )
 
-const NewKey = ({ app, t, account, setGenerate, keyAdded, backend, toast }) => {
+const NewKey = ({ app, t, account, setGenerate, keyAdded, backend, toast, standAlone = false }) => {
+  const router = useRouter()
   const [name, setName] = useState('')
   const [level, setLevel] = useState(1)
   const [expires, setExpires] = useState(DateTime.now())
@@ -125,9 +127,9 @@ const NewKey = ({ app, t, account, setGenerate, keyAdded, backend, toast }) => {
       level,
       expiresIn: Math.floor((expires.valueOf() - DateTime.now().valueOf()) / 1000),
     })
-    if (result.key) {
+    if (result.success) {
       toast.success(<span>{t('nailedIt')}</span>)
-      setApikey(result)
+      setApikey(result.data.apikey)
       keyAdded()
     } else toast.for.backendError()
     app.stopLoading()
@@ -174,7 +176,7 @@ const NewKey = ({ app, t, account, setGenerate, keyAdded, backend, toast }) => {
             </button>
             <button
               className="btn btn-primary btn-outline capitalize"
-              onClick={() => setGenerate(false)}
+              onClick={() => (standAlone ? router.push('/account/apikeys') : setGenerate(false))}
             >
               {t('cancel')}
             </button>
@@ -211,7 +213,7 @@ const Apikey = ({ apikey, t, account, backend, keyAdded, app }) => {
 
   const removeModal = () => {
     app.setModal(
-      <ModalWrapper app={app}>
+      <ModalWrapper app={app} slideFrom="top">
         <h2>{t('areYouCertain')}</h2>
         <p>{t('deleteKeyWarning')}</p>
         <p className="flex flex-row gap-4 items-center justify-center">
@@ -265,6 +267,27 @@ const Apikey = ({ apikey, t, account, backend, keyAdded, app }) => {
   )
 }
 
+// Component for the 'new/apikey' page
+export const NewApikey = ({ app, standAlone = false }) => {
+  const { account, token } = useAccount()
+  const backend = useBackend(token)
+  const { t } = useTranslation(ns)
+  const toast = useToast()
+
+  const [keys, setKeys] = useState([])
+  const [generate, setGenerate] = useState(false)
+  const [added, setAdded] = useState(0)
+
+  const keyAdded = () => setAdded(added + 1)
+
+  return (
+    <div className="max-w-xl xl:pl-4">
+      <NewKey {...{ app, t, account, setGenerate, backend, toast, keyAdded, standAlone }} />
+    </div>
+  )
+}
+
+// Component for the account/apikeys page
 export const Apikeys = ({ app }) => {
   const { account, token } = useAccount()
   const backend = useBackend(token)

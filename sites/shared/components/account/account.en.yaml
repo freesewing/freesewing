@@ -159,3 +159,5 @@ cancel: Cancel
 keySecretWarning: This is the only time you can see the key secret, make sure to copy it.
 keyExpired: This API key has expired
 deleteKeyWarning: Removing an API key cannot be undone.
+
+new: New

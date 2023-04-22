@@ -53,6 +53,17 @@ const sitePages = (t = false) => {
       s: 'profile',
       h: 1,
     },
+    new: {
+      t: t('new'),
+      s: 'new',
+      h: 1,
+      apikey: {
+        t: t('newApikey'),
+        s: 'new/apikey',
+        h: 1,
+      },
+    },
+
     // Not translated, this is a developer page
     typography: {
       t: 'Typography',
