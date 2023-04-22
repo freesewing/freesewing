@@ -34,6 +34,37 @@ export const paths = {}
 
 // Create set
 paths['/sets/{auth}'] = {
+  get: {
+    ...common,
+    summary: 'Retrieves list of measurements sets',
+    description: 'Returns a list of sets for the user making the API request',
+    parameters: [parameters.auth],
+    responses: {
+      200: {
+        description:
+          '**Success - List of measurements sets returned**\n\n' +
+          'Status code `200` indicates that the resource was returned successfully.',
+        ...jsonResponse({
+          result: {
+            ...fields.result,
+            example: 'success',
+          },
+          sets: {
+            type: 'array',
+            items: response.body.set,
+          },
+        }),
+      },
+      401: response.status['401'],
+      403: {
+        ...response.status['403'],
+        description:
+          response.status['403'].description +
+          errorExamples(['accountStatusLacking', 'insufficientAccessLevel']),
+      },
+      500: response.status['500'],
+    },
+  },
   post: {
     ...common,
     summary: 'Create a new Measurements Set',

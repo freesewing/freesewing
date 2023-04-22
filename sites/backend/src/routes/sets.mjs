@@ -23,6 +23,10 @@ export function setsRoutes(tools) {
   app.get('/sets/:id/jwt', passport.authenticate(...jwt), (req, res) => Sets.read(req, res, tools))
   app.get('/sets/:id/key', passport.authenticate(...bsc), (req, res) => Sets.read(req, res, tools))
 
+  // Get a list of measurments set for the user
+  app.get('/sets/jwt', passport.authenticate(...jwt), (req, res) => Sets.list(req, res, tools))
+  app.get('/sets/key', passport.authenticate(...bsc), (req, res) => Sets.list(req, res, tools))
+
   // Update a measurements set
   app.patch('/sets/:id/jwt', passport.authenticate(...jwt), (req, res) =>
     Sets.update(req, res, tools)

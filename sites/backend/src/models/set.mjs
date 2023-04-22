@@ -263,6 +263,21 @@ SetModel.prototype.guardedDelete = async function ({ params, user }) {
 }
 
 /*
+ * Returns a list of sets for the user making the API call
+ */
+SetModel.prototype.userSets = async function (uid) {
+  if (!uid) return false
+  let sets
+  try {
+    sets = await this.prisma.set.findMany({ where: { userId: uid } })
+  } catch (err) {
+    log.warn(`Failed to search sets for user ${uid}: ${err}`)
+  }
+
+  return sets
+}
+
+/*
  * Returns record data
  */
 SetModel.prototype.asSet = function () {

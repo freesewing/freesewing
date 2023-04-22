@@ -25,6 +25,20 @@ SetsController.prototype.read = async (req, res, tools) => {
 }
 
 /*
+ * Get a list of measurements sets
+ * See: https://freesewing.dev/reference/backend/api
+ */
+SetsController.prototype.list = async (req, res, tools) => {
+  const Set = new SetModel(tools)
+  const sets = await Set.userSets(req.user.uid)
+
+  if (sets) Set.setResponse(200, 'success', { sets })
+  else Set.setResponse(404, 'notFound')
+
+  return Set.sendResponse(res)
+}
+
+/*
  * Update a measurements set
  * See: https://freesewing.dev/reference/backend/api
  */
