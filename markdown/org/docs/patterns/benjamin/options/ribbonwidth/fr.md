@@ -1,10 +1,10 @@
 ---
-title: "Ribbon width"
+title: "Largeur du ruban"
 ---
 
 ***
 
-Width of the ribbon
+Largeur du ruban
 
 ## Effet de cette option sur le modèle
 
