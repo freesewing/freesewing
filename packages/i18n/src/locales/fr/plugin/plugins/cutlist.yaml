@@ -1,6 +1,8 @@
 canvas: Canvas
 cut: Couper
+cuttingLayout: Suggested Cutting Layout
 fabric: Tissu principal
+fabricSize: "{length} of {width} wide material"
 heavyCanvas: Toile lourde
 interfacing: Entoilage
 lining: Doublure
@@ -11,3 +13,4 @@ onFoldAndBias: plié dans le biais
 onBias: dans le biais
 plastic: Plastic
 ribbing: Bord côte
+edgeOfFabric: Edge of Fabric
