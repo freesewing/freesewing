@@ -204,7 +204,7 @@ export const front = {
   options: {
     // How much ease to give for the neck, as a percentage.
     neckEase: { pct: 0, min: -30, max: 100, menu: 'fit' },
-    chestEase: { pct: 0, min: -30, max: 50, menu: 'fit' },
+    chestEase: { pct: 0, min: -40, max: 50, menu: 'fit' },
     hipsEase: { pct: 0, min: -30, max: 75, menu: 'fit' },
     bodyLength: { pct: 100, min: 60, max: 300, menu: 'style' },
     // How far the neck hole is shifted towards the front. +100% means it's entirely on the front, -100% means it's entirely on the back, and 0 means the front and back are the same.
