@@ -19,7 +19,7 @@ This leaves an unfinished edge on the inside that is often sewn down by edge-sti
 
 ### Knit binding
 
-![This woman's grey undershirt and white T-shirt both have a knit binding at the neckline.](knit_binding.jpg)
+![This grey undershirt and white T-shirt both have a knit binding at the neckline.](knit_binding.jpg)
 
 Real knit binding acts more like classic bias binding, in that it wraps around the unfinished edge of the garment, rather than extend from it.
 
