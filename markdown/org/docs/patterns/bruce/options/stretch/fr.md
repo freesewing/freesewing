@@ -1,11 +1,11 @@
 - - -
-title: "Stretch"
+titre : "Élasticité"
 - - -
 
-![The stretch option on Bruce](./stretch.svg)
+![L'option stretch pour Bruce](./stretch.svg)
 
-The amount of overall (horizontal) stretch.
+La quantité d'élasticité globale (horizontale).
 
 ## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bruce_stretch_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bruce_stretch_sample.svg "Effet de cette option sur le modèle")
