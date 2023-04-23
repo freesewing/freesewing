@@ -139,7 +139,7 @@ otherThing: 'Ще {thing}'
 ourPatrons: Наші патрони
 ourRevenuePledge: Куди йде наш прибуток
 patron-2: Порохова мавпочка
-patron-4: First mate
+patron-4: Перший помічник
 patron-8: Капітан
 patronHelp: Якщо Ви маєте будь-які запитання чи бажаєте внести зміни до свого статусу патрона — зв'яжіться з нами, будь ласка
 patron: Патрон
@@ -212,7 +212,7 @@ updated: Оновлено
 update: Оновити
 userHasBeenWithUsSince: '{user} тут з {since}'
 users: Користувачі
-utilityPatterns: Utility Patterns
+utilityPatterns: Utility patterns
 weAreValidatingYourConfirmationCode: Ми перевіряємо Ваш код підтвердження
 weCouldNotValidateYourConfirmationCode: Нам не вдалося підтвердити Ваш код
 weEncounteredAProblem: У нас виникла проблема
@@ -342,7 +342,7 @@ darkTheme: Темна тема
 hax0rTheme: Тема Hax0r
 lgbtqTheme: Тема ЛГБТК
 transTheme: Транс тема
-accessoryDesigns: Accessory Designs
-blockDesigns: Block/Sloper Designs
-garmentDesigns: Garment Designs
-utilityDesigns: Utility Designs
+accessoryDesigns: Дизайни аксесуарів
+blockDesigns: Викрійки-основи
+garmentDesigns: Дизайни одягу
+utilityDesigns: Базові дизайни
