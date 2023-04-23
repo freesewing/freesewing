@@ -1,6 +1,6 @@
 hungry:
   title: Affamé
-  description: Changes the mouth shape to convey Hi is hungry
+  description: Change la forme de la bouche pour voir que Hi a faim
 nosePointiness:
   title: Nose pointiness
   description: Controls how pointy Hi's nose is
