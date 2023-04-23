@@ -27,6 +27,7 @@ SetModel.prototype.guardedCreate = async function ({ body, user }) {
   else data.notes = '--'
   if (body.public === true) data.public = true
   if (body.measies) data.measies = this.sanitizeMeasurements(body.measies)
+  else data.measies = {}
   data.imperial = body.imperial === true ? true : false
   data.userId = user.uid
   // Set this one initially as we need the ID to create a custom img via Sanity
@@ -136,7 +137,11 @@ SetModel.prototype.reveal = async function () {
   this.clear = {}
   if (this.record) {
     for (const field of this.encryptedFields) {
-      this.clear[field] = this.decrypt(this.record[field])
+      try {
+        this.clear[field] = this.decrypt(this.record[field])
+      } catch (err) {
+        console.log(err)
+      }
     }
   }
 
@@ -154,6 +159,22 @@ SetModel.prototype.cloak = function (data) {
   }
 
   return data
+}
+
+/*
+ * Helper method to decrypt data from a non-instantiated set
+ */
+SetModel.prototype.revealSet = function (mset) {
+  const clear = {}
+  for (const field of this.encryptedFields) {
+    try {
+      clear[field] = this.decrypt(mset[field])
+    } catch (err) {
+      //console.log(err)
+    }
+  }
+
+  return { ...mset, ...clear }
 }
 
 /*
@@ -238,7 +259,7 @@ SetModel.prototype.guardedUpdate = async function ({ params, body, user }) {
  * Removes the set - No questions asked
  */
 SetModel.prototype.unguardedDelete = async function () {
-  await this.prisma.set.delete({ here: { id: this.record.id } })
+  await this.prisma.set.delete({ where: { id: this.record.id } })
   this.record = null
   this.clear = null
 
@@ -273,8 +294,10 @@ SetModel.prototype.userSets = async function (uid) {
   } catch (err) {
     log.warn(`Failed to search sets for user ${uid}: ${err}`)
   }
+  const list = []
+  for (const set of sets) list.push(await this.revealSet(set))
 
-  return sets
+  return list
 }
 
 /*
