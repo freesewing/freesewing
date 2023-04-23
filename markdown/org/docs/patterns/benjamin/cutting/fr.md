@@ -2,7 +2,7 @@
 titre : "Nœud papillon Benjamin : Instructions de coupe"
 - - -
 
-Benjamin is a rather simple pattern, but your options will determine what needs to be cut out. Vous trouverez ci-dessous deux schémas types.
+Benjamin est un modèle plutôt simple, mais vos options détermineront ce qui doit être coupé. Vous trouverez ci-dessous deux schémas types.
 
 ## Sans ruban d'ajustement
 
