@@ -251,6 +251,12 @@ export const LeftIcon = (props) => (
   </IconWrapper>
 )
 
+export const LinkIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+  </IconWrapper>
+)
+
 export const MenuIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M4 6h16M4 12h16M4 18h16" />
@@ -316,6 +322,12 @@ export const PageIcon = (props) => (
 export const PageSizeIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
+  </IconWrapper>
+)
+
+export const PlusIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
   </IconWrapper>
 )
 

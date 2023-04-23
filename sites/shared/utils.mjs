@@ -15,8 +15,8 @@ export const roundMm = (val, units) => {
 // Formatting for imperial values
 export const formatImperial = (neg, inch, numo = false, deno = false, format = 'html') => {
   if (format === 'html') {
-    if (numo) return `<span>${neg}${inch}"&nbsp;<sup>${numo}</sup>/<sub>${deno}</sub></span>`
-    else return `<span>${neg}${inch}"</span>`
+    if (numo) return `${neg}${inch}"&nbsp;<sup>${numo}</sup>/<sub>${deno}</sub>`
+    else return `${neg}${inch}"`
   } else if (format === 'notags') {
     if (numo) return `${neg}${inch}" ${numo}/${deno}`
     else return `${neg}${inch}"`

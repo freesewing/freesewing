@@ -193,5 +193,11 @@ export function useBackend(token = false) {
     return response && response.status === 204 ? true : false
   }
 
+  /*
+   * Generic update measurements set method
+   */
+  backend.updateSet = async (id, data) =>
+    responseHandler(await api.patch(`/sets/${id}/jwt`, data, auth))
+
   return backend
 }

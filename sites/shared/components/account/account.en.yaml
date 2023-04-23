@@ -172,4 +172,16 @@ notes: Notes
 setNotesDesc: Any notes you'd like to keep regarding this measurements set
 description: Description
 deleteSetWarning: Removing a measurements set cannot be undone.
+image: Image
+measies: Measurements
+setUnitsMsgTitle: This settings only applies to this measurement set
+setUnitsMsgDesc: |
+  These are the units we will use when updating or displaying the measurements in this set.
+  Everywhere else on this website, we will use the units preference set in your account.
+public: Public
+publicSet: Public measurements set
+privateSet: Private measurements set
+publicSetDesc: Others are allowed to use these measurements to generate or test patterns
+privateSetDesc: These measurments cannot be used by other users or visitors
+permalink: Permalink
 
