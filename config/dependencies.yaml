@@ -245,10 +245,12 @@ dev:
     'remark-copy-linked-files': &remarkCopyLinkedFiles 'https://github.com/joostdecock/remark-copy-linked-files'
     'remark-gfm': &remarkGfm '3.0.1'
   dev: &nextSiteDevDependencies
+    '@playwright/test': '^1.32.3'
     'autoprefixer': '10.4.14'
     'eslint-config-next': *next
     'js-yaml': &jsYaml '4.1.0'
     'postcss': &postcss '8.4.22'
+    'playwright': '^1.32.3'
     'remark-extract-frontmatter': '3.2.0'
     'tailwindcss': &tailwindcss '3.3.1'
     'yaml-loader': '0.8.0'
@@ -294,7 +296,8 @@ lab:
     'rehype-stringify': *rehypeStringify
     'remark-copy-linked-files': *remarkCopyLinkedFiles
     'remark-gfm': *remarkGfm
-  dev: *nextSiteDevDependencies
+  dev:
+    *nextSiteDevDependencies
 
 org:
   _:
