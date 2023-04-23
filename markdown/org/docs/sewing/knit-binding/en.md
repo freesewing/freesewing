@@ -50,11 +50,17 @@ A knit binding is less common but often used on undershirts (as in, underwear). 
 
 Whether you're using a knit band or a knit binding finish, you are going to have to stretch your binding fabric for good results. That is, assuming you're not sewing a straight seam. Here's why:
 
+<Note>
+
+The remainder of this documentation uses the term _binding_ to refer to both knit bands and knit binding.
+
+</Note>
+
 ### Straight: life on easy mode
 
 ![No stretch required when going straight](knitbinding1.png)
 
-On a straight seam, you can simply attach your binding/band. Your fabric and binding have the same length, so everything will be fine.
+On a straight seam, you can simply attach your binding. Your fabric and binding have the same length, so everything will be fine.
 
 The most likely scenario where you will encounter this is on the (short) sleeves of a T-shirt. Although the knit band wraps around your arm, from a pattern perspective (as in, when the fabric is still flat) it's a straight seam.
 
@@ -88,26 +94,47 @@ On a slight curve, the difference between the inner and outer edge is not so big
 
 So as you follow your seam and as it curves around necklines, shoulders, or design features, you will have to adapt the amount of stretch to the situation.
 
-## You cannot calculate the length of your knit binding
+## Methods for attaching binding
 
-It may not be theoretically impossible, but it is practically impossible.
+There are differing opinions about the method that should be used to
+attach binding. The two main methods are:
 
-The length of your knit binding depends on the amount it needs to be stretched. This depends on the curves you have to follow and the width of the binding, not to mention the strength of its stretchiness. There are just too many parameters to take into account to calculate your binding length accurately.
+1. Calculating the length of binding to use, sewing the binding into a
+closed ring, and sewing the ring of binding to the garment.
+2. Attaching binding to the garment while stretching the binding, using
+just enough, and cutting off the excess.
 
-### Do not do this
+### Method 1: Ring method
 
-There are a bunch of tutorials out on the internet that show you how to sew on knit binding.
-Many of those suggest something like _make the neck binding 90% of the length of the seam you are attaching it to_ (the percentage varies).
+1. Measure the opening seam that the binding will cover.
+2. Check the pattern instructions for guidance on the length of binding to use.
+Or, use a length 70-85% smaller than the opening based on the stretchiness
+of the binding fabric (For example, 70% for fabrics with a stretch of 40% or greater,
+85% for those with a stretch of 10% or less).
+3. Cut the length of binding required, plus seam allowance at each end.
+4. Sew the binding together to form a closed loop or ring.
+5. Mark or insert pins into the ring in 4 places, starting at the seam
+to divide the ring into 4 quarters of equal length.
+6. Mark or insert pins into the garment opening in 4 places,
+dividing the opening into 4 quarters of equal length.
+7. Match the marks or pins on the ring with the ones on the garment opening, and pin the binding ring to the opening in 4 places, at each quarter
+mark/pin.
+8. While evenly stretching each quarter segment of the binding ring into
+its quarter segment of garment opening, sew the binding to the opening.
 
-This idea is that you would cut your binding, join its edges to form a closed loop, and then sew it to the opening. However, this is not the best method.
+Pros: Some people feel this is the easiest method for novice sewists
+because they are told exactly how much binding to use.
+This method also requires less technical skill during the construction
+process.
 
-A possible alternate approach to sidestep the length issue would be to attach the binding before you close the opening your binding goes in.
-For example, on a T-shirt you would close one shoulder seam, attach the binding, then close the second shoulder seam.
+Cons: Some people say that it is not possible or practical to accurately
+calculate the length of binding needed because there are too many factors.
+The binding length and amount it needs to be stretched depends on the
+cuves that need to be followed and the material, width, and stretchiness of the binding.
+This method applies the binding evenly into the opening, without taking into consideration the actual curves of the opening, and this may lead to a
+suboptimal distribution of binding in the opening.
 
-However, that obviously means your shoulder seam would cut through your binding.
-So, this approach is also not desirable.
-
-### Instead, do this
+### Method 2: Stretching method
 
 1. Cut your binding exactly as long as the seam it needs to be sewn into. Not 90%, but 100%. This way, you know it's going to be too long, and that's what we want.
 2. Mark the place you want your binding to be joined (say center back of the neckline) and place your binding 1 cm beyond this point.
@@ -117,13 +144,20 @@ So, this approach is also not desirable.
 6. Cut off the excess binding, and sew the binding loop closed.
 7. Sew this remaining 6 cm or so binding loop to the garment.
 
-This way, there is no guessing how long your binding should be, and the binding seam sits where you want it to sit.
-
 <Tip>
-
 While it is impossible to know the exact length of binding you will end
-up using, lengths of 70-85% are common.
-
+up using, lengths of 70-85% of the garment opening are common.
 </Tip>
+
+Pros: Some people feel that this is the best method to use because it always
+results in the exact length of binding needed being used.
+No calculations or measurements are required, and it works regardless
+of the binding material fabric, width, or stretchiness.
+
+Cons: Some people find this method difficult for novice sewists because
+knowledge of the correct amount of stretch to apply to the binding is
+something that is gained only with experience.
+It may also be difficult to apply and maintain a consistent stretch
+while sewing the binding.
 
 > For detailed instructions, check [the Aaron documentation](/docs/patterns/aaron/)
