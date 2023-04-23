@@ -10,7 +10,7 @@ There are two varieties of this finish, a knit _band_ and actual knit _binding_.
 
 ## Knit band
 
-![Like most T-shirts, the one this woman is wearing has a knit band at the neck opening.](knit_band.jpg)
+![Like most T-shirts, this one has a knit band at the neck opening.](knit_band.jpg)
 
 Knit band is what you typically find at the neck opening of your T-shirt. It's a strip of fabric that is folded double and attached to the edge of the garment
 such that some of the fabric strip extends beyond the unfinished edge of garment.
