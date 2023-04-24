@@ -147,8 +147,8 @@ The Root Directory setting will determine the build type for the project.
 Names can consist of alphanumeric lowercase and hyphen characters.
 2. Change the Root Directory to the desired setting, as described above.
 3. In the Build & Development Settings,
-override the Build Command with `yarn run build`.
-(All the other settings will work fine with default values.)
+add `yarn run build` as the Build Command override.
+(All the other settings will work fine with the default values.)
 4. Press the white "Deploy" button.
 
 Vercel will then create the project and start building the project's first
