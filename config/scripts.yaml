@@ -63,6 +63,7 @@ backend:
 dev:
   build: &nextBuild 'next build'
   cibuild: 'yarn build && node scripts/algolia.mjs'
+  clean: &nextClean 'rimraf prebuild/* && rimraf public/locales/*/* && rimraf public/feeds/*'
   dev: &nextDev 'next dev -p 8000'
   develop: *nextDev
   lint: &nextLint 'next lint'
@@ -88,7 +89,7 @@ lab:
 org:
   build: *nextBuild
   cibuild: 'yarn build'
-  clean: 'rimraf pages/*.mjs && rimraf pages/*/*.mjs && rimraf pages/v/*/*.mjs'
+  clean: *nextClean
   dev: *nextDev
   develop: *nextDev
   i18n: 'SITE=org node ../shared/prebuild/i18n-only.mjs'
