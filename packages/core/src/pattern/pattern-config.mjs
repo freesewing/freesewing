@@ -1,4 +1,5 @@
-import { __addNonEnumProp } from './utils.mjs'
+import { __addNonEnumProp } from '../utils.mjs'
+import { getPluginName } from './pattern-plugins.mjs'
 
 export const hidePresets = {
   HIDE_ALL: {
@@ -11,17 +12,6 @@ export const hidePresets = {
     from: true,
     inherited: true,
   },
-}
-
-/**
- * Get the name of the given plugin config
- *
- * @param  {(Object|Object[])} plugin the plugin to get the name of
- * @return {(string|false)} the name, or false if there isn't one
- */
-export function getPluginName(plugin) {
-  const toCheck = Array.isArray(plugin) ? plugin[0] : plugin
-  return toCheck.name || toCheck.plugin?.name || false
 }
 
 /////////////////
@@ -76,7 +66,7 @@ export function PatternConfig(pattern) {
 const DISTANCE_DEBUG = false
 
 ////////////////////
-// PUBLIC METHODs //
+// PUBLIC METHODS //
 ////////////////////
 
 /**
