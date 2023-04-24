@@ -1,12 +1,12 @@
 dartPosition:
-  description: Controls whether to split at the shoulder or armhole
-  title: Dart position
+  description: Contrôle s'il faut séparer à l'épaule ou à l'emmanchure
+  title: Position de la pince
 chestEase:
-  description: Controls the amount of ease at the chest
-  title: Chest ease
+  description: Contrôle la quantité d'aisance de votre poitrine
+  title: Aisance de poitrine
 waistEase:
-  description: Controls the amount of ease at the waist
-  title: Waist ease
+  description: Contrôle la quantité d'aisance au niveau de la taille
+  title: Aisance à la taille
 bustSpanEase:
   description: Controls the amount of ease along the bust span
   title: Bust span ease
