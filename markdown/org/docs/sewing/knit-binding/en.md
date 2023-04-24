@@ -52,7 +52,8 @@ Whether you're using a knit band or a knit binding finish, you are going to have
 
 <Note>
 
-The remainder of this documentation uses the term _binding_ to refer to both knit bands and knit binding.
+The remainder of this documentation refers to _binding_ but applies equally
+to knit bands.
 
 </Note>
 
@@ -107,18 +108,25 @@ just enough, and cutting off the excess.
 ### Method 1: Ring method
 
 1. Measure the opening seam that the binding will cover.
+
 2. Check the pattern instructions for guidance on the length of binding to use.
 Or, use a length 70-85% smaller than the opening based on the stretchiness
 of the binding fabric (For example, 70% for fabrics with a stretch of 40% or greater,
 85% for those with a stretch of 10% or less).
+
 3. Cut the length of binding required, plus seam allowance at each end.
+
 4. Sew the binding together to form a closed loop or ring.
+
 5. Mark or insert pins into the ring in 4 places, starting at the seam
 to divide the ring into 4 quarters of equal length.
+
 6. Mark or insert pins into the garment opening in 4 places,
 dividing the opening into 4 quarters of equal length.
+
 7. Match the marks or pins on the ring with the ones on the garment opening, and pin the binding ring to the opening in 4 places, at each quarter
 mark/pin.
+
 8. While evenly stretching each quarter segment of the binding ring into
 its quarter segment of garment opening, sew the binding to the opening.
 
@@ -137,17 +145,23 @@ suboptimal distribution of binding in the opening.
 ### Method 2: Stretching method
 
 1. Cut your binding exactly as long as the seam it needs to be sewn into. Not 90%, but 100%. This way, you know it's going to be too long, and that's what we want.
+
 2. Mark the place you want your binding to be joined (say center back of the neckline) and place your binding 1 cm beyond this point.
+
 3. Start sewing your binding about 3 cm or so from this point, and go all the way around. While you do so, make sure to adjust the stretch to whatever the curve requires. There are no tricks for this; you'll have to practice until it comes naturally to you.
-4. When you make your way around and get close to the point you marked, stop about 3 cm before that. Now your entire binding is attached, apart from a 6 cm or so stretch at the back.
-5. Pin both edges of your binding good sides together to form the binding into a closed loop, making it exactly as long as needed.
-6. Cut off the excess binding, and sew the binding loop closed.
-7. Sew this remaining 6 cm or so binding loop to the garment.
 
 <Tip>
 While it is impossible to know the exact length of binding you will end
 up using, lengths of 70-85% of the garment opening are common.
 </Tip>
+
+4. When you make your way around and get close to the point you marked, stop about 3 cm before that. Now your entire binding is attached, apart from a 6 cm or so stretch at the back.
+
+5. Pin both edges of your binding good sides together to form the binding into a closed loop, making it exactly as long as needed.
+
+6. Cut off the excess binding, and sew the binding loop closed.
+
+7. Sew this remaining 6 cm or so binding loop to the garment.
 
 Pros: Some people feel that this is the best method to use because it always
 results in the exact length of binding needed being used.
