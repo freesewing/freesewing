@@ -7,7 +7,7 @@ on:
     branches:
       - develop
 jobs:
-  check_relevant_files:
+  shared_setup:
     runs-on: ubuntu-latest
     outputs:
       files: ${{ steps.diff.outputs.files }}
@@ -23,31 +23,28 @@ jobs:
     - name: Diff for relevant files
       id: diff
       run: echo "files=$(git diff --shortstat origin/${{github.base_ref}} sites/shared sites/lab/components packages/new-design packages/core plugins)" >> "$GITHUB_OUTPUT"
-  node_setup:
-    needs: check_relevant_files
-    if: ${{needs.check_relevant_files.outputs.files}}
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout PR ref
-      uses: actions/checkout@v3
     - uses: actions/setup-node@v3
+      if: ${{ steps.diff.outputs.files }}
       with:
         node-version: 18
     - name: Cache node modules
       uses: actions/cache@v3
+      if: ${{ steps.diff.outputs.files }}
       id: cache_node_modules
       with:
         # caching node_modules
         path: node_modules
         key: node_modules-${{ hashFiles('yarn.lock') }}
+        lookup-only: true
     - name: Install dependencies
-      if: steps.cache_node_modules.outputs.cache-hit != 'true'
+      if: ${{ steps.diff.outputs.files }} && steps.cache_node_modules.outputs.cache-hit != 'true'
       run: npx lerna bootstrap
       env:
         CI: true
 
   test:
-    needs: node_setup
+    if: ${{needs.shared_setup.outputs.files}}
+    needs: shared_setup
     timeout-minutes: 60
     runs-on: ubuntu-latest
     strategy:
