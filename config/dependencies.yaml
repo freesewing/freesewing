@@ -224,7 +224,7 @@ dev:
     '@next/bundle-analyzer': &next '13.3.1'
     '@tailwindcss/typography': &tailwindTypography '0.5.9'
     'algoliasearch': '4.17.0'
-    'daisyui': &daisyui '2.51.5'
+    'daisyui': &daisyui '2.51.6'
     'lodash.get': *_get
     'lodash.orderby': &_orderby '4.6.0'
     'lodash.set': *_set
