@@ -1,10 +1,10 @@
 - - -
-title: "Leg stretch"
+titre : "Élasticité des jambes"
 - - -
 
-![The leg stretch option on Bruce](./legstretch.svg)
+![L'option élasticité des jambes pour Bruce](./legstretch.svg)
 
-The amount of stretch at the (upper) legs.
+L'élasticité au niveau des cuisses.
 
 ## Effet de cette option sur le motif
 

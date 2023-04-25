@@ -1,12 +1,12 @@
 - - -
-title: "Bulge"
+title: "Poche pénienne"
 - - -
 
-![The bulge option on Bruce](./bulge.svg)
+![L'option poche pénienne pour Bruce](./bulge.svg)
 
-How much room do you want in the front pouch?
+Quel est l'espace dont vous avez besoin au niveau de la poche frontale ?
 
-This option will increase the front dart, thereby creating more room in the front.
+Cette option augmentera la pince avant, créant ainsi plus de place à l'avant.
 
 > Si c'est de l'aisance verticale que vous voulez, voir l'option **hauteur**
 

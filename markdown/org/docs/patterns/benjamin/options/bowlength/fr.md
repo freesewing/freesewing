@@ -1,10 +1,10 @@
 - - -
-title: "Bow length"
+title: "longueur du nœud"
 - - -
 
-![Bow length](bowlength.svg)
+![Longueur de nœud](bowlength.svg)
 
-You can make wide bow ties, or narrow ones. This option allows you to change the horizontal size of the bows. Make them larger to be more flamboyant, or small for a more subdued style.
+Vous pouvez faire des nœuds papillon larges ou étroits. Cette option vous permet de changer la taille horizontale des extrémités du nœud. Faites-les plus grand pour être plus flamboyant, ou petit pour un style plus discret.
 
 ## Effet de cette option sur le motif
 

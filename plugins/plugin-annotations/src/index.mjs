@@ -8,6 +8,7 @@ import { bannerMacros } from './banner.mjs'
 import { bannerboxMacros } from './bannerbox.mjs'
 import { bartackMacros } from './bartack.mjs'
 import { crossboxMacros } from './crossbox.mjs'
+import { cutlistStores, cutlistHooks } from './cutlist.mjs'
 import { scaleboxMacros } from './scalebox.mjs'
 import { titleMacros } from './title.mjs'
 // Hooks and Macros
@@ -31,6 +32,7 @@ export const plugin = {
       ...pleatHooks.preRender,
       ...sewtogetherHooks.preRender,
     ],
+    prePartDraft: [...cutlistHooks.prePartDraft],
   },
   macros: {
     ...bannerMacros,
@@ -45,6 +47,7 @@ export const plugin = {
     ...sewtogetherMacros,
     ...titleMacros,
   },
+  store: [...cutlistStores],
 }
 
 export const annotationsPlugin = plugin
