@@ -7566,10 +7566,10 @@ dagre-d3-es@7.0.10:
     d3 "^7.8.2"
     lodash-es "^4.17.21"
 
-daisyui@2.51.5:
-  version "2.51.5"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-2.51.5.tgz#9caf846ef602d949a468bc2d5f0a7f877cdce5f5"
-  integrity sha512-L05dRw0tasmz2Ha+10LhftEGLq4kaA8vRR/T0wDaXfHwqcgsf81jfXDJ6NlZ63Z7Rl1k3rj7UHs0l0p7CM3aYA==
+daisyui@2.51.6:
+  version "2.51.6"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-2.51.6.tgz#c91f5a782f2e991b973dfe9d17d7e93cd973b372"
+  integrity sha512-JRqOKayuFCmWe4X4k6Qvx1y7V/VNao8U5eTSOhusOKIzCsYqf56+TCSe4d7zmqGE0V6JiLDYAT8JeoWUeRKFCw==
   dependencies:
     color "^4.2"
     css-selector-tokenizer "^0.8.0"
@@ -10788,10 +10788,10 @@ i18next-fs-backend@^2.1.1:
   resolved "https://registry.yarnpkg.com/i18next-fs-backend/-/i18next-fs-backend-2.1.1.tgz#07c6393be856c5a398e3dfc1257bf8439841cd89"
   integrity sha512-FTnj+UmNgT3YRml5ruRv0jMZDG7odOL/OP5PF5mOqvXud2vHrPOOs68Zdk6iqzL47cnnM0ZVkK2BAvpFeDJToA==
 
-i18next@22.4.15:
-  version "22.4.15"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-22.4.15.tgz#951882b751872994f8502b5a6ef6f796e6a7d7f8"
-  integrity sha512-yYudtbFrrmWKLEhl6jvKUYyYunj4bTBCe2qIUYAxbXoPusY7YmdwPvOE6fx6UIfWvmlbCWDItr7wIs8KEBZ5Zg==
+i18next@22.4.14:
+  version "22.4.14"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-22.4.14.tgz#18dd94e9adc2618497c7de101a206e1ca3a18727"
+  integrity sha512-VtLPtbdwGn0+DAeE00YkiKKXadkwg+rBUV+0v8v0ikEjwdiJ0gmYChVE4GIa9HXymY6wKapkL93vGT7xpq6aTw==
   dependencies:
     "@babel/runtime" "^7.20.6"
 
