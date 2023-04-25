@@ -10,7 +10,7 @@ jobs:
   check_relevant_files:
     runs-on: ubuntu-latest
     outputs:
-      files: ${{ steps.diff.outputs }}
+      files: ${{ steps.diff.outputs.files }}
     steps:
     - name: Fetch PR base ref
       uses: actions/checkout@v3
@@ -22,7 +22,7 @@ jobs:
         ref: ${{ github.ref }}
     - name: Diff for relevant files
       id: diff
-      run: git diff --name-only origin/${{github.base_ref}} sites/shared sites/lab/components packages/new-design packages/core plugins
+      run: echo "files=$(git diff --name-only origin/${{github.base_ref}} sites/shared sites/lab/components packages/new-design packages/core plugins)" >> "$GITHUB_OUTPUT"
   node_setup:
     needs: check_relevant_files
     if: ${{needs.check_relevant_files.outputs.files}}
