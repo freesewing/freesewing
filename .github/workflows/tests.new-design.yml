@@ -12,37 +12,37 @@ jobs:
     outputs:
       files: ${{ steps.diff.outputs }}
     steps:
-      - name: Fetch PR base ref
+    - name: Fetch PR base ref
       uses: actions/checkout@v3
       with:
-        ref: ${{ github.base_ref }}
-      - name: Checkout PR ref
-        uses: actions/checkout@v3
-        with:
-        ref: ${{ github.ref }}
-      - name: Diff for relevant files
-        id: diff
-        run: git diff --name-only origin/${{github.base_ref}} sites/shared sites/lab/components packages/new-design packages/core plugins
+      ref: ${{ github.base_ref }}
+    - name: Checkout PR ref
+      uses: actions/checkout@v3
+      with:
+      ref: ${{ github.ref }}
+    - name: Diff for relevant files
+      id: diff
+      run: git diff --name-only origin/${{github.base_ref}} sites/shared sites/lab/components packages/new-design packages/core plugins
   node_setup:
     needs: check_relevant_files
     if: ${{needs.check_relevant_files.outputs.files}}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-      - name: Cache node modules
-        uses: actions/cache@v3
-        id: cache_node_modules
-        with:
-          # caching node_modules
-          path: node_modules
-          key: node_modules-${{ hashFiles('yarn.lock') }}
-      - name: Install dependencies
-        if: steps.cache_node_modules.outputs.cache-hit != 'true'
-        run: npx lerna bootstrap
-        env:
-          CI: true
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 18
+    - name: Cache node modules
+      uses: actions/cache@v3
+      id: cache_node_modules
+      with:
+        # caching node_modules
+        path: node_modules
+        key: node_modules-${{ hashFiles('yarn.lock') }}
+    - name: Install dependencies
+      if: steps.cache_node_modules.outputs.cache-hit != 'true'
+      run: npx lerna bootstrap
+      env:
+        CI: true
 
   test:
     needs: node_setup
@@ -55,7 +55,6 @@ jobs:
           - tutorial
           - bent
     steps:
-
     - uses: actions/setup-node@v3
       with:
         node-version: 18
