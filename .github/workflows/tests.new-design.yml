@@ -22,7 +22,7 @@ jobs:
         ref: ${{ github.ref }}
     - name: Diff for relevant files
       id: diff
-      run: echo "files=$(git diff --name-only origin/${{github.base_ref}} sites/shared sites/lab/components packages/new-design packages/core plugins)" >> "$GITHUB_OUTPUT"
+      run: echo "files=$(git diff --shortstat origin/${{github.base_ref}} sites/shared sites/lab/components packages/new-design packages/core plugins)" >> "$GITHUB_OUTPUT"
   node_setup:
     needs: check_relevant_files
     if: ${{needs.check_relevant_files.outputs.files}}
