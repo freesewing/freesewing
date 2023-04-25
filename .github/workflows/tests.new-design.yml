@@ -20,7 +20,7 @@ jobs:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
       with:
-        node-version: 16
+        node-version: 18
     - name: Cache node modules
       uses: actions/cache@v3
       id: cache_node_modules
@@ -37,7 +37,7 @@ jobs:
         yarn i18n-only
     - name: Generate Design
       run: |
-        cd ../
+        cd
         TEMPLATE=${{ matrix.template }} NAME=test${{ matrix.template }} node ${{ github.workspace }}/packages/new-design/scripts/generate-from-cli.mjs && cd test${{ matrix.template }}
     - name: Install Playwright Browsers
       run: yarn playwright install --with-deps
