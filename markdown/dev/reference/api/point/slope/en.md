@@ -42,13 +42,8 @@ paths.line = new Path()
 .attr("class", "canvas")
 .setText("Slope: " + slope,  "center text-lg")
 
-
-
-
   return part
 }
 
 ```
 </Example>
-
-
