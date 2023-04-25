@@ -20,7 +20,11 @@ Part Part.attr(
 
 ```
 
-<Tip compact>This method is chainable as it returns the `Part` object</Tip>
+<Tip compact>
+
+This method is chainable as it returns the `Part` object
+
+</Tip>
 
 ## Example
 
