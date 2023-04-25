@@ -491,7 +491,7 @@ Path.prototype.intersectsY = function (y) {
 Path.prototype.join = function (that, closed = false) {
   if (that instanceof Path !== true)
     this.log.error('Called `Path.join(that)` but `that` is not a `Path` object')
-  return __joinPaths([this, that], closed, this.log)
+  return __joinPaths([this, that], closed)
 }
 
 /**
@@ -573,7 +573,7 @@ Path.prototype.noop = function (id = false) {
 Path.prototype.offset = function (distance) {
   distance = __asNumber(distance, 'distance', 'Path.offset', this.log)
 
-  return __pathOffset(this, distance, this.log)
+  return __pathOffset(this, distance)
 }
 
 /**
@@ -844,8 +844,8 @@ Path.prototype.split = function (point) {
       }
     }
   }
-  if (firstHalf.length > 0) firstHalf = __joinPaths(firstHalf, false, this.log)
-  if (secondHalf.length > 0) secondHalf = __joinPaths(secondHalf, false, this.log)
+  if (firstHalf.length > 0) firstHalf = __joinPaths(firstHalf, false)
+  if (secondHalf.length > 0) secondHalf = __joinPaths(secondHalf, false)
 
   return [firstHalf, secondHalf]
 }
@@ -931,9 +931,9 @@ Path.prototype.trim = function () {
           first = false
         }
         let joint
-        if (trimmedStart.length > 0) joint = __joinPaths(trimmedStart, false, this.log).join(glue)
+        if (trimmedStart.length > 0) joint = __joinPaths(trimmedStart, false).join(glue)
         else joint = glue
-        if (trimmedEnd.length > 0) joint = joint.join(__joinPaths(trimmedEnd, false, this.log))
+        if (trimmedEnd.length > 0) joint = joint.join(__joinPaths(trimmedEnd, false))
 
         return joint.trim()
       }
@@ -1281,10 +1281,9 @@ function __offsetLine(from, to, distance, log = false) {
  * @private
  * @param {Path} path - The Path to offset
  * @param {float} distance - The distance to offset by
- * @param {object} log - The log methods
  * @return {Path} offsetted - The offsetted Path instance
  */
-function __pathOffset(path, distance, log) {
+function __pathOffset(path, distance) {
   let offset = []
   let current
   let start = false
@@ -1321,7 +1320,7 @@ function __pathOffset(path, distance, log) {
     if (!start) start = current
   }
 
-  return __joinPaths(offset, closed, log)
+  return __joinPaths(offset, closed)
 }
 
 /**

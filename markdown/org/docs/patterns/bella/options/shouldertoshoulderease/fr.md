@@ -1,8 +1,8 @@
 ---
-title: Shoulder to Shoulder ease
+title: Aisance d'épaule à épaule
 ---
 
-Controls the amount of ease between your shoulders. Initially set to -.5% because Bella implements a block that is used in the industry.
+Contrôle la quantité d'aisance entre vos épaules. Initialement fixée à -.5% parce que Bella met en œuvre un bloc qui est utilisé dans l'industrie.
 
 ## Effet de cette option sur le modèle
 

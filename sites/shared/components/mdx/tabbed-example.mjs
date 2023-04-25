@@ -7,8 +7,9 @@ import { Design } from '@freesewing/core'
 import { Svg } from '../workbench/draft/svg'
 import { Defs } from '../workbench/draft/defs'
 import { Stack } from '../workbench/draft/stack'
-import { useGist } from 'shared/hooks/useGist'
-import { useEffect } from 'react'
+import { defaultGist } from 'shared/hooks/useGist'
+import { useMemo } from 'react'
+import set from 'lodash.set'
 import yaml from 'js-yaml'
 
 // Get code from children
@@ -23,23 +24,19 @@ export const asText = (reactEl) => {
 }
 
 // The actual example
-const Example = ({ app, draft, settings, xray = false }) => {
+const Example = ({ app, patternProps, xray = false }) => {
   // State for gist
-  const { gist, unsetGist, updateGist } = useGist('example-mdx', app.locale)
+  const gist = useMemo(() => {
+    const newGist = defaultGist('example-mdx', app.locale)
+    set(newGist, ['_state', 'xray', 'enabled'], xray)
+    return newGist
+  }, [xray, app.locale])
 
-  useEffect(() => {
-    updateGist(['_state', 'xray', 'enabled'], xray)
-  }, [xray, updateGist])
-
-  if (!draft.sample) return null
-  const patternProps = settings.sample
-    ? draft.sample().getRenderProps()
-    : draft.draft().getRenderProps()
-  if (draft.store.logs.error.length > 0 || draft.setStores[0].logs.error.length > 0)
+  if (patternProps.logs.pattern.error.length > 0 || patternProps.logs.sets[0].error.length > 0)
     return (
       <div className="max-w-full p-4">
-        <pre>{draft.store.logs.error.join('\n')}</pre>
-        <pre>{draft.setStores[0].logs.error.join('\n')}</pre>
+        <pre>{patternProps.logs.pattern.error.join('\n')}</pre>
+        <pre>{patternProps.logs.sets[0].error.join('\n')}</pre>
       </div>
     )
 
@@ -50,7 +47,7 @@ const Example = ({ app, draft, settings, xray = false }) => {
       <g>
         {Object.keys(patternProps.stacks).map((stackName) => (
           <Stack
-            {...{ app, gist, updateGist, unsetGist, patternProps }}
+            {...{ app, gist, patternProps }}
             showInfo={app.setPopup}
             key={stackName}
             stackName={stackName}
@@ -119,16 +116,23 @@ export const TabbedExample = ({
   else settings = { margin: 5 }
   if (withHead) settings.measurements = { head: 300 }
   const draft = buildExample(children, settings, tutorial, paperless)
+
+  if (!draft.sample) return null
+
+  const patternProps = settings.sample
+    ? draft.sample().getRenderProps()
+    : draft.draft().getRenderProps()
+
   if (tutorial && !previewFirst)
     return (
       <div className="my-8">
         <Tabs tabs="Code, Preview, X-Ray">
           <Tab key="code">{children}</Tab>
           <Tab key="preview">
-            <Example {...{ draft, tutorial, paperless, settings, app }} />
+            <Example {...{ patternProps, tutorial, paperless, settings, app }} />
           </Tab>
           <Tab key="xray">
-            <Example {...{ draft, tutorial, paperless, settings, app }} xray={true} />
+            <Example {...{ patternProps, tutorial, paperless, settings, app }} xray={true} />
           </Tab>
         </Tabs>
         {caption && (
@@ -143,11 +147,11 @@ export const TabbedExample = ({
     <div className="my-8">
       <Tabs tabs="Preview, Code, X-Ray">
         <Tab key="preview">
-          <Example {...{ draft, tutorial, paperless, settings, app }} />
+          <Example {...{ patternProps, tutorial, paperless, settings, app }} />
         </Tab>
         <Tab key="code">{children}</Tab>
         <Tab key="xray">
-          <Example {...{ draft, tutorial, paperless, settings, app }} xray={true} />
+          <Example {...{ patternProps, tutorial, paperless, settings, app }} xray={true} />
         </Tab>
       </Tabs>
       {caption && (

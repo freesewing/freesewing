@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/core",
-  "version": "3.0.0-alpha.8",
+  "version": "3.0.0-alpha.9",
   "description": "A library for creating made-to-measure sewing patterns",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -59,10 +59,10 @@
     "lodash.clonedeep": "^4.5.0"
   },
   "devDependencies": {
-    "eslint": "8.37.0",
+    "eslint": "8.39.0",
     "nyc": "15.1.0",
     "mocha": "10.2.0",
-    "chai": "4.2.0",
+    "chai": "4.3.7",
     "sinon": "^15.0.1"
   },
   "files": [

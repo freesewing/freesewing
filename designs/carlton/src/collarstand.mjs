@@ -49,7 +49,7 @@ function draftCarltonCollarStand({
   store.cutlist.addCut({ cut: 1, material: 'lmhCanvas' })
 
   if (complete) {
-    points.title = points.bottomLeftCp.clone()
+    points.title = points.standTop.clone()
     macro('title', {
       at: points.title,
       nr: 7,

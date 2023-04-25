@@ -1,10 +1,10 @@
 import { sprinklePlugin } from '@freesewing/plugin-sprinkle'
 import { base } from './base.mjs'
 
-const pluginSprinkle = ({ Point, points, Path, paths, options, macro, part }) => {
+const pluginSprinkle = ({ Point, points, options, macro, part, store }) => {
   if (['sprinkle', 'all'].indexOf(options.plugin) !== -1) {
     points.center = new Point(0, 0)
-    points.top = new Point(0, 40)
+    points.top = new Point(0, 20)
     const on = []
     for (let i = 0; i < 360; i += 45) {
       points[`s${i}`] = points.top.rotate(i, points.center)
@@ -17,8 +17,12 @@ const pluginSprinkle = ({ Point, points, Path, paths, options, macro, part }) =>
       scale: options.sprinkleScale,
       rotate: options.sprinkleRotate,
     })
-
-    paths.box = new Path().move(new Point(-50, -50)).line(new Point(50, 50))
+    macro('bannerbox', {
+      topLeft: new Point(-20, -20),
+      bottomRight: new Point(20, 20),
+      text: 'macro = sprinkle',
+      ...store.get('bannerbox.plugin'),
+    })
   }
 
   return part

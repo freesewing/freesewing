@@ -34,6 +34,8 @@ function simonFront({
     if (i.indexOf('otch')) delete snippets[i]
   }
 
+  macro('cutonfold', false)
+
   // Populare store with data we need
   calculateReduction(part)
   store.set(
@@ -121,7 +123,6 @@ function simonFront({
 
   // Complete pattern?
   if (complete) {
-    delete paths.cutonfold
     const grainlineDistance = (points.hem.x - points.cfHem.x) * 0.2
     macro('grainline', {
       from: points.cfHem.shift(0, grainlineDistance),
