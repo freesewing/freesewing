@@ -24,7 +24,7 @@ jobs:
     - name: Install dependencies
       run: cd packages/new-design && npm install --workspaces=false
     - name: Prebuild i18n
-      run: yarn i18n-only
+      run: pwd && yarn i18n-only
     - name: Generate Design
       run: |
         cd
