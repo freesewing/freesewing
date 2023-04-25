@@ -1,4 +1,9 @@
-import { useState, useEffect } from 'react'
+// Hooks
+import { useState, useEffect, useContext } from 'react'
+import { useTranslation } from 'next-i18next'
+// Context
+import { ModalContext } from 'shared/context/modal-context.mjs'
+// Components
 import {
   CommunityIcon,
   DesignIcon,
@@ -13,7 +18,6 @@ import {
 } from 'shared/components/icons.mjs'
 import { Ribbon } from 'shared/components/ribbon.mjs'
 import Link from 'next/link'
-import { useTranslation } from 'next-i18next'
 import { ModalThemePicker, ns as themeNs } from 'shared/components/modal/theme-picker.mjs'
 import { ModalLocalePicker, ns as localeNs } from 'shared/components/modal/locale-picker.mjs'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
@@ -56,14 +60,14 @@ export const colors = {
   account: 'purple',
 }
 
-const NavIcons = ({ app, setSearch }) => {
+const NavIcons = ({ app, setModal, setSearch }) => {
   const { t } = useTranslation(['header'])
   const iconSize = 'h-6 w-6 lg:h-12 lg:w-12'
 
   return (
     <>
       <NavButton
-        onClick={() => app.setModal(<ModalMenu app={app} />)}
+        onClick={() => setModal(<ModalMenu app={app} />)}
         label={t('header:menu')}
         color={colors.menu}
       >
@@ -107,14 +111,14 @@ const NavIcons = ({ app, setSearch }) => {
       </NavButton>
       <NavSpacer />
       <NavButton
-        onClick={() => app.setModal(<ModalThemePicker app={app} />)}
+        onClick={() => setModal(<ModalThemePicker app={app} />)}
         label={t('header:theme')}
         color={colors.theme}
       >
         <ThemeIcon className={iconSize} />
       </NavButton>
       <NavButton
-        onClick={() => app.setModal(<ModalLocalePicker app={app} />)}
+        onClick={() => setModal(<ModalLocalePicker app={app} />)}
         label={t('header:language')}
         color={colors.language}
       >
@@ -132,6 +136,7 @@ const NavIcons = ({ app, setSearch }) => {
 }
 
 export const Header = ({ app, setSearch }) => {
+  const { setModal } = useContext(ModalContext)
   const [prevScrollPos, setPrevScrollPos] = useState(0)
   const [show, setShow] = useState(true)
 
@@ -169,12 +174,12 @@ export const Header = ({ app, setSearch }) => {
         <div className="p-0 flex flex-row gap-2 justify-between text-neutral-content items-center">
           {/* Non-mobile content */}
           <div className="hidden lg:flex lg:px-2 flex-row items-center justify-center w-full">
-            <NavIcons app={app} setSearch={setSearch} />
+            <NavIcons app={app} setModal={setModal} setSearch={setSearch} />
           </div>
 
           {/* Mobile content */}
           <div className="flex lg:hidden flex-row items-center justify-between w-full">
-            <NavIcons app={app} setSearch={setSearch} />
+            <NavIcons app={app} setModal={setModal} setSearch={setSearch} />
           </div>
         </div>
       </div>

@@ -1,15 +1,15 @@
 // Dependencies
 import React, { useState, useEffect } from 'react'
-import { useSwipeable } from 'react-swipeable'
 import { useHotkeys } from 'react-hotkeys-hook'
 // Hooks
 import { useTheme } from 'shared/hooks/use-theme.mjs'
 // Components
+import { SwipeWrapper } from 'shared/components/wrappers/swipes.mjs'
 import { LayoutWrapper, ns as layoutNs } from 'site/components/wrappers/layout.mjs'
 import { DocsLayout, ns as docsNs } from 'site/components/layouts/docs.mjs'
 import { Feeds } from 'site/components/feeds.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
-import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
+import { ModalContextProvider, ModalContextConsumer } from 'shared/context/modal-context.mjs'
 
 export const ns = [...new Set([...layoutNs, ...docsNs])]
 
@@ -31,35 +31,12 @@ export const PageWrapper = ({
   useEffect(() => setCurrentTheme(theme), [currentTheme, theme])
 
   /*
-   * Swipe handling for the entire site
-   */
-  const swipeHandlers = useSwipeable({
-    onSwipedLeft: (evt) => {
-      // Only process the first swipe event
-      evt.event.stopPropagation()
-      app.setModal(false)
-    },
-    onSwipedRight: (evt) => {
-      // Only process the first swipe event
-      evt.event.stopPropagation()
-      app.setModal(<ModalMenu app={app} />)
-    },
-    trackMouse: true,
-  })
-
-  /*
    * Hotkeys (keyboard actions)
    */
   // Trigger search with /
   useHotkeys('/', (evt) => {
     evt.preventDefault()
     setSearch(true)
-  })
-
-  // Always close modal when Escape key is hit
-  useHotkeys('esc', (evt) => {
-    evt.preventDefault()
-    app.updateState('modal', null)
   })
 
   // Search state
@@ -81,17 +58,19 @@ export const PageWrapper = ({
 
   // Return wrapper
   return (
-    <div
-      ref={swipeHandlers.ref}
-      onMouseDown={swipeHandlers.onMouseDown}
-      data-theme={currentTheme} // This facilitates CSS selectors
-      key={currentTheme} // This forces the data-theme update
-    >
-      <Feeds />
-      <LayoutWrapper {...childProps}>
-        {Layout ? <Layout {...childProps}>{children}</Layout> : children}
-      </LayoutWrapper>
-      {app.state.modal ? app.state.modal : null}
-    </div>
+    <ModalContextProvider>
+      <SwipeWrapper app={app}>
+        <div
+          data-theme={currentTheme} // This facilitates CSS selectors
+          key={currentTheme} // This forces the data-theme update
+        >
+          <Feeds />
+          <LayoutWrapper {...childProps}>
+            {Layout ? <Layout {...childProps}>{children}</Layout> : children}
+          </LayoutWrapper>
+          <ModalContextConsumer />
+        </div>
+      </SwipeWrapper>
+    </ModalContextProvider>
   )
 }

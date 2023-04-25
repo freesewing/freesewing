@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { useSwipeable } from 'react-swipeable'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
+import { ModalContext } from 'shared/context/modal-context.mjs'
 
 const slideClasses = {
   left: '-translate-x-full',
@@ -10,7 +11,6 @@ const slideClasses = {
 }
 
 export const ModalWrapper = ({
-  app,
   children = null,
   flex = 'row',
   justify = 'center',
@@ -21,6 +21,7 @@ export const ModalWrapper = ({
   keepOpenOnClick = false,
   slideFrom = 'left',
 }) => {
+  const { clearModal } = useContext(ModalContext)
   const [animate, setAnimate] = useState(true)
 
   const swipeActions = {}
@@ -28,7 +29,7 @@ export const ModalWrapper = ({
     // Only process the first swipe event
     if (evt?.event) evt.event.stopPropagation()
     setAnimate(true)
-    window.setTimeout(() => app.closeModal(), 250)
+    window.setTimeout(() => clearModal(), 150)
   }
   if (slideFrom === 'left') swipeActions.onSwipedLeft = close
   else if (slideFrom === 'right') swipeActions.onSwipedRight = close
