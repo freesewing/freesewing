@@ -16,6 +16,7 @@
   "scripts": {
     "build": "next build",
     "cibuild": "yarn build && node scripts/algolia.mjs",
+    "clean": "rimraf prebuild/* && rimraf public/locales/*/* && rimraf public/feeds/*",
     "dev": "next dev -p 8000",
     "develop": "next dev -p 8000",
     "lint": "next lint",
