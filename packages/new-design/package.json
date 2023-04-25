@@ -60,5 +60,8 @@
   },
   "bin": {
     "new-design": "./index.mjs"
+  },
+  "resolutions": {
+    "execa": "7.1.1"
   }
 }
