@@ -22,14 +22,18 @@ jobs:
       with:
         node-version: 18
     - name: Install dependencies
-      run: cd packages/new-design && npm install --workspaces=false
+      run: npm install --workspaces=false
+      working-directory: ./packages/new-design
     - name: Prebuild i18n
-      run: pwd && yarn i18n-only
+      run: yarn i18n-only
+      working-directory: ./packages/new-design
     - name: Generate Design
       run: |
-        cd
-        TEMPLATE=${{ matrix.template }} NAME=test${{ matrix.template }} node ${{ github.workspace }}/packages/new-design/scripts/generate-from-cli.mjs && cd test${{ matrix.template }}
+        cd ../
+        TEMPLATE=${{ matrix.template }} NAME=test${{ matrix.template }} node ${{ github.workspace }}/packages/new-design/scripts/generate-from-cli.mjs
     - name: Install Playwright Browsers
       run: yarn playwright install --with-deps
+      working-directory: ../test${{ matrix.template }}
     - name: Run Playwright tests
       run: yarn playwright test
+      working-directory: ../test${{ matrix.template }}
