@@ -16,7 +16,7 @@
   "scripts": {
     "build": "next build",
     "cibuild": "yarn build",
-    "clean": "rimraf pages/*.mjs && rimraf pages/*/*.mjs && rimraf pages/v/*/*.mjs",
+    "clean": "rimraf prebuild/* && rimraf public/locales/*/* && rimraf public/feeds/*",
     "dev": "next dev -p 8000",
     "develop": "next dev -p 8000",
     "i18n": "SITE=org node ../shared/prebuild/i18n-only.mjs",
@@ -35,7 +35,7 @@
     "@tailwindcss/typography": "0.5.9",
     "algoliasearch": "4.17.0",
     "react-copy-to-clipboard": "5.1.0",
-    "daisyui": "2.51.5",
+    "daisyui": "2.51.6",
     "lodash.get": "4.4.2",
     "lodash.orderby": "4.6.0",
     "lodash.set": "4.3.2",
