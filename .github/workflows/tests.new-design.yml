@@ -21,15 +21,7 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 18
-    - name: Cache node modules
-      uses: actions/cache@v3
-      id: cache_node_modules
-      with:
-        # caching node_modules
-        path: node_modules
-        key: node_modules-${{ hashFiles('yarn.lock') }}
     - name: Install dependencies
-      if: steps.cache_node_modules.outputs.cache-hit != 'true'
       run: cd packages/new-design && npm install --workspaces=false
     - name: Prebuild i18n
       run: yarn i18n-only
