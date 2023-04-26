@@ -76,7 +76,7 @@ function sandySkirt({
      * maximum angle calculated so the seam allowance fits in the
      * fabric
      */
-    if (an > 90 && sa) {
+    if (an > 90 && an !== 180 && sa) {
       const maxAn = utils.rad2deg(Math.atan(radiusWaist / sa))
       if (an > 90 + maxAn) an = 90 + maxAn
     }
@@ -138,7 +138,8 @@ function sandySkirt({
         .move(points.in2Flipped)
         .curve(points.in2CFlipped, points.in1CFlipped, points.in2FlippedRotated)
         .curve(points.in2CFlippedRotated, points.in1CFlippedRotated, points.in1Rotated)
-      if (!options.seamlessFullCircle) paths.saBase = paths.saBase.line(points.ex1Rotated)
+      if (!options.seamlessFullCircle && an !== 180)
+        paths.saBase = paths.saBase.line(points.ex1Rotated)
       paths.saBase = paths.saBase.offset(sa * -1)
 
       paths.hemBase.hide()
