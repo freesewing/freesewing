@@ -42,7 +42,7 @@ export const strapRightPct = { pct: 50, min: 25, max: 75, menu: 'style.strap' } 
 export const fastenerStyle = {
   // What style of fastener should we use?
   list: ['button', 'buckle', 'pressStud', 'hook&Bar', 'hook&Eye'],
-  dflt: 'external',
+  dflt: 'buckle',
   menu: 'style.fastener',
 }
 

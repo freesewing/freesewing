@@ -1,7 +1,7 @@
 //
 
 import { Design } from '@freesewing/core'
-//import { data } from '../data.mjs'
+import { data } from '../data.mjs'
 
 // Parts
 import { front } from './front.mjs'
@@ -14,10 +14,7 @@ import { back } from './back.mjs'
 
 // Create new design
 const Cuthbert = new Design({
-  data: {
-    version: '0.0.1',
-    name: '@freesewing/Cuthbert',
-  },
+  data,
   parts: [front, side, strapLeft, strapRight, back, pocket, pocketWelt],
 })
 
