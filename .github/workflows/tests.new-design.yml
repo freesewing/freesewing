@@ -67,7 +67,6 @@ jobs:
         path: node_modules
         key: node_modules-${{ hashFiles('yarn.lock') }}
     - name: Check execa version
-      if: steps.diff.outputs.files && steps.cache_node_modules.outputs.cache-hit != 'true'
       run: yarn list --pattern execa
     - name: Prebuild i18n
       run: yarn i18n-only
