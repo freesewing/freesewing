@@ -34,11 +34,11 @@ jobs:
       with:
         # caching node_modules
         path: '**/node_modules'
-        key: node_modules_execa-${{ hashFiles('yarn.lock') }}
+        key: node_modules-${{ hashFiles('yarn.lock') }}
         lookup-only: true
     - name: Install dependencies
       if: steps.diff.outputs.files && steps.cache_node_modules.outputs.cache-hit != 'true'
-      run: npx lerna bootstrap --nohoist=execa
+      run: npx lerna bootstrap
       env:
         CI: true
 
@@ -65,9 +65,7 @@ jobs:
       with:
         # caching node_modules
         path: '**/node_modules'
-        key: node_modules-execa${{ hashFiles('yarn.lock') }}
-    - name: Check execa version
-      run: yarn list --pattern execa
+        key: node_modules-${{ hashFiles('yarn.lock') }}
     - name: Prebuild i18n
       run: yarn i18n-only
       working-directory: ./packages/new-design
