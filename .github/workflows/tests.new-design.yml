@@ -34,13 +34,15 @@ jobs:
       with:
         # caching node_modules
         path: node_modules
-        key: node_modules-${{ hashFiles('yarn.lock') }}
+        key: node_modules_execa-${{ hashFiles('yarn.lock') }}
         lookup-only: true
     - name: Install dependencies
       if: steps.diff.outputs.files && steps.cache_node_modules.outputs.cache-hit != 'true'
       run: npx lerna bootstrap --nohoist=execa
       env:
         CI: true
+    - name: Check execa version
+      if: steps.diff.outputs.files && steps.cache_node_modules.outputs.cache-hit != 'true'
 
   test:
     if: needs.shared_setup.outputs.files
