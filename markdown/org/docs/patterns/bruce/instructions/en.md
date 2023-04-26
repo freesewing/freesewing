@@ -29,7 +29,7 @@ Serge them together, taking into account that the seam allowance is 1cm. So aim 
 
 Align the other side of the back (piece 1) with the second side (piece 3)
 making sure to put the good sides together. Again, because the side (piece 3)
-is asymmetric, be careful to correctly match them.
+is not symmetric, be careful to correctly match them.
 
 Serge them together, as you did on the other side.
 
