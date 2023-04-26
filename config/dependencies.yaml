@@ -91,8 +91,7 @@ hugo:
 i18n:
   dev:
     'js-yaml': '4.1.0'
-  peer:
-    '@freesewing/pattern-info': *freesewing
+    'recursive-readdir': '^2.2.3'
 jaeger:
   peer:
     '@freesewing/brian': *freesewing
@@ -386,3 +385,5 @@ shared:
     'to-vfile': '7.2.4'
     'unist-util-visit': *unist-util-visit
     'web-worker': '1.2.0'
+  dev:
+    'recursive-readdir': '^2.2.3'

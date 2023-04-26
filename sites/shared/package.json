@@ -52,7 +52,9 @@
     "unist-util-visit": "4.1.2",
     "web-worker": "1.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "recursive-readdir": "^2.2.3"
+  },
   "engines": {
     "node": ">=16.0.0",
     "npm": ">=8"
