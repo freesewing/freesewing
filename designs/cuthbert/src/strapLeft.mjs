@@ -10,14 +10,12 @@ import {
   strapExtraLength,
   strapRightPct,
   strapType,
-  strapWidth,
+  strapHeight,
 } from './options.mjs'
 
 function draftStrapLeft({
   complete,
-  //log,
   macro,
-  measurements,
   options,
   paperless,
   Path,
@@ -37,11 +35,12 @@ function draftStrapLeft({
 
   let sideLength = store.get('sideLength')
   let frontWidth = store.get('frontWidth')
+  let strapHeight = store.get('strapHeight')
 
-  let totalStrapLength = Math.round(measurements['waist'] - frontWidth * 2 - sideLength * 2)
+  let totalStrapLength = Math.round(frontWidth * 2 - sideLength * 2)
 
   totalStrapLength = totalStrapLength * (1 + options.strapExtraLength)
-  let totalStrapHeight = options.strapWidth * 2
+  let totalStrapHeight = strapHeight * 2
 
   store.set('totalStrapLength', totalStrapLength)
   store.set('totalStrapHeight', totalStrapHeight)
@@ -138,7 +137,7 @@ export const strapLeft = {
     strapExtraLength,
     strapRightPct,
     strapType,
-    strapWidth,
+    strapHeight,
   },
   plugins: [pluginBundle],
 }

@@ -8,7 +8,7 @@ import {
   sideOpening,
   sideStrapTopRatio,
   sideHorizontalTaperRatio,
-  strapWidth,
+  strapHeight,
 } from './options.mjs'
 
 function draftSide({
@@ -28,38 +28,33 @@ function draftSide({
   Snippet,
   store,
 }) {
-  // Remove inherited paths, snippets, and scalebox
-  for (const p in paths) delete paths[p]
-  for (const s in snippets) delete snippets[s]
-  macro('scalebox', false)
-
   let sideHeight = store.get('sideHeight')
 
   let sideLength = Math.round(measurements.waist * options.sideLengthRatio)
   store.set('sideLength', sideLength)
 
   // log.info ("sideHeight:" + sideHeight )
-  // log.info ("strapWidth:" + options.strapWidth )
+  // log.info ("strapWidth:" + options.strapHeight )
   // log.info ("sideStrapTopRatio:" + options.sideStrapTopRatio )
 
-  let strapStartY = (sideHeight - options.strapWidth) * options.sideStrapTopRatio
+  let strapHeight = sideHeight * options.strapHeight
+  store.set('strapHeight', strapHeight)
+
+  let strapStartY = (sideHeight - strapHeight) * options.sideStrapTopRatio
 
   points.sideTopLeft = new Point(0, 0)
   points.sideBottomLeft = new Point(0, sideHeight)
 
   // log.info ("sideLength:" + sideLength )
-  // log.info ("YY:" + (strapStartY + options.strapWidth))
+  // log.info ("YY:" + (strapStartY + options.strapHeight))
 
   points.strapTop = new Point(sideLength, strapStartY)
-  points.strapBottom = new Point(sideLength, strapStartY + options.strapWidth)
+  points.strapBottom = new Point(sideLength, strapStartY + strapHeight)
 
-  points.centreLeft = new Point(
-    0,
-    points.strapBottom.y - points.strapTop.y + options.strapWidth / 2
-  )
+  points.centreLeft = new Point(0, points.strapBottom.y - points.strapTop.y + strapHeight / 2)
   points.centreRight = new Point(
     sideLength,
-    points.strapBottom.y - points.strapTop.y + options.strapWidth / 2
+    points.strapBottom.y - points.strapTop.y + strapHeight / 2
   )
 
   //TODO: Check if strap is bigger than the side and flip the Control points accordingly
@@ -156,7 +151,7 @@ export const side = {
     sideOpening,
     sideStrapTopRatio,
     sideHorizontalTaperRatio,
-    strapWidth,
+    strapHeight,
   },
   plugins: [pluginBundle],
 }

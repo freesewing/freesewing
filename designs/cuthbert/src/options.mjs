@@ -34,7 +34,7 @@ export const strapType = {
   menu: 'style.strap',
 }
 
-export const strapWidth = { count: 18, min: 5, max: 100, menu: 'style.strap' } // the size of the Strap as a % of the overall cummerbund height -
+export const strapHeight = { pct: 18, min: 0.5, max: 200, menu: 'style.strap' } // the size of the Strap as a % of the cummerbund side height -
 export const strapExtraLength = { pct: 30, min: 10, max: 100, menu: 'style.strap' }
 export const strapRightPct = { pct: 50, min: 25, max: 75, menu: 'style.strap' } // For Uneven strap lengths, what percentage of the total strap is on the right. 50% for even lengths
 

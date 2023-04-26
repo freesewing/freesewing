@@ -1,0 +1,97 @@
+frontHeightRatio:
+  title: Cummerbund Hieght
+  description: How Tall should the cummerbund be (as a ratio of the width)
+  
+frontPleats: 
+  title: Pleats
+  description: How many pleats to create, spread evenly across the front of the cummerbund
+  
+frontTaperTopStartRatio:
+  title: Cummerbund top taper start 
+  description: Controls how far from the centre of the cummerbund shoult the top start tapering
+  
+frontTaperBottomStartRatio:
+  title: Cummerbund bottom taper start 
+  description: Controls how far from the centre of the cummerbund shoult the bottom start tapering
+  
+  
+frontSideStartRatio:
+  title: Side Position Top Ratio
+  description: How far down, from the top of the cummerbund should we start the side piece?
+  
+sideLengthRatio:
+  title: Side Length 
+  description: how long, as a ratio of the waist, should each side component be 
+  
+sideHeightRatio:
+  title: Side Height
+  description: How tall should the side be, as a % of the overall cummerbund height
+  
+sideStrapTopRatio:
+  title: Side Strap Top Position
+  description: How far, from the top of the Side part, should the strap start
+  
+sideHorizontalTaperRatio:
+  title: Side Horizontal Taper Start
+  description: How far, from the cummerbund, should the side component start tapering
+  
+strapType:
+  title: Strap style
+  description: What type of strap
+  
+strapHeight:
+  title: Strap height
+  description: How tall is the strap, as a % of the overall cummerbund height
+  
+strapExtraLength:
+  title: Strap Extra Length
+  description: how much extra length to add to the strap
+  
+strapRightPct:
+  title: Strap Right Ratio
+  description: For uneven straps, how much "extra" should be generated for the right strap
+  
+fastenerStyle:
+  title: Fastener Type
+  description: What type of fastener will be used (buckle,button etc.)
+  
+fastenerCount:
+  title: Fastener Count
+  description: how many fasteners are required
+  
+fastenerHoleCount:
+  title: Fastener hole Count
+  description: How many holes to create
+  
+fastenerRows:
+  title: Fastener Row Count
+  description: How many rows of fasteners 
+  
+pocketStyle:
+  title: Pocket Style
+  description: What type of pocket to create (or exclude)
+  
+pocketSide:
+  title: Pocket Side
+  description: What side of the cummerbund will the pocket be sewn
+  
+pocketWidth:
+  title: Pocket Width
+  description: How wide is the pocket, as a % of the cummerbund width
+  
+pocketHeightRatio:
+  title: Pocket height
+  description: How tall is the internal pocket, as a % of the pocekt width
+  
+pocketWeltHeight:
+  title: Pocket Welt height
+  description: height of the welt opening as a % of the overall pocket height
+  
+pocketWeltExtra:
+  title: Pocket Welt Extra
+  description: Additional Width/Height added to pocket welt and pocket as a ratio of pocket width
+  
+pocketPointRatio:
+  title: Pocket Point Ratio
+  description: Height of the bottom taper/point as a % of the pocketHeight
+  

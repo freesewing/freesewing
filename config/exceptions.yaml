@@ -25,6 +25,8 @@ packageJson:
       exclude:
         - 'node_modules/*'
         - 'tests'
+  cuthbert:
+    author: SamPride(https://github.com/sampride/)
   hi:
     author: woutervdub (https://github.com/woutervdub)
   holmes:

@@ -61,8 +61,6 @@ function draftBack({
 
   store.set('topRightTaperStartX', points.topRightTaperStart.x)
 
-  //
-  //let sideTopHeight = (frontHeight - options.strapWidth) * options.frontSideStartRatio
   let sideTopHeight = (frontHeight - sideHeight) * options.frontSideStartRatio
 
   points.rightSideTop = new Point(frontWidth, sideTopHeight)
