@@ -2,9 +2,9 @@
 title: "Include Cutting Instructions"
 ---
 
-To include cutting instructions with your part, use the [cutlist plugin](/reference/plugins/cutlist) to add the [`cutlist.addCut` method](/reference/plugins/cutlist#addcut) to your part's [`store`](/reference/api/store/extend)
+To include cutting instructions with your part, use the [annotations plugin](/reference/plugins/annotations) to add the [`cutlist.addCut` method](/reference/plugins/cutlist#addcut) to your part's [`store`](/reference/api/store/extend)
 
-<Tip>When you use the cutlist plugin, the [grainline plugin](/reference/plugins/grainline) and the [cut on fold plugin](/reference/plugins/cutonfold) will automatically add grain and fold information to the cutting instructions </Tip>
+<Tip>The [grainline macro](/reference/macros/grainline) and the [cutonfold macro](/reference/macros/cutonfold) will automatically add grain and fold information to the cutting instructions </Tip>
 
 <Tip>These cutting instructions get used by the [title macro](/reference/macros/title), so be sure to add them before adding your part's title. </Tip>
 
@@ -44,11 +44,11 @@ You can use any `string` you want for your material, but here are some standard 
 For simple cutting instructions, you can rely on the default method parameters
 
 ```js
-import {pluginCutlist} from '@freesewing/plugin-cutlist'
+import { pluginAnnotations } from '@freesewing/plugin-cutlist'
 
 const part = {
 	name: 'example.front',
-	plugins: [pluginCutlist],
+	plugins: [pluginAnnotations],
 	draft: ({part, store}) => {
 		// add instructions to cut two mirrored from main fabric
 		store.cutlist.addCut()
@@ -64,11 +64,11 @@ For many designs, you'll want more than just "Cut 2 mirrored from Main Fabric"
 You can override the default values to specify different materials, number of pieces to cut, and whether they should be mirrored or identical
 
 ```js
-import {pluginCutlist} from '@freesewing/plugin-cutlist'
+import { pluginAnnotations } from '@freesewing/plugin-cutlist'
 
 const part = {
 	name: 'example.front',
-	plugins: [pluginCutlist],
+	plugins: [pluginAnnotations],
 	draft: ({part, store}) => {
 		// add instructions to cut three identical from lining
 		store.cutlist.addCut({cut: 3, material: 'lining', identical: true})
@@ -80,11 +80,11 @@ const part = {
 You can add as many sets of instructions as you need
 
 ```js
-import {pluginCutlist} from '@freesewing/plugin-cutlist'
+import { pluginAnnotations } from '@freesewing/plugin-cutlist'
 
 const part = {
 	name: 'example.front',
-	plugins: [pluginCutlist],
+	plugins: [pluginAnnotations],
 	draft: ({part, store}) => {
 		// add instructions to cut four mirrored from main fabric
 		store.cutlist.addCut({cut: 4})
@@ -100,12 +100,11 @@ const part = {
 Sometimes you want some pieces cut on the fold and others cut as halves to seam together.
 
 ```js
-import {pluginCutlist} from '@freesewing/plugin-cutlist'
-import {pluginCutonfold} from '@freesewing/plugin-cutonfold'
+import { pluginAnnotations } from '@freesewing/plugin-cutlist'
 
 const part = {
 	name: 'example.front',
-	plugins: [pluginCutlist, pluginCutonfold],
+	plugins: [pluginAnnotations],
 	draft: ({part, points, Point, macro, store}) => {
 		// set the cut on fold line
 		points.p1 = new Point(0, 0)
@@ -127,12 +126,11 @@ const part = {
 You set the grainline on a piece, but you also need some to be cut on the bias
 
 ```js
-import {pluginCutlist} from '@freesewing/plugin-cutlist'
-import {pluginGrainline} from '@freesewing/plugin-grainline'
+import { pluginAnnotations } from '@freesewing/plugin-cutlist'
 
 const part = {
 	name: 'example.front',
-	plugins: [pluginCutlist, pluginGrainline],
+	plugins: [pluginAnnotations],
 	draft: ({part, points, Point, macro, store}) => {
 		// set the cut on fold line
 		points.p1 = new Point(0, 0)

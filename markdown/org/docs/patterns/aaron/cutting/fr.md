@@ -1,5 +1,5 @@
 - - -
-title: "A-Shirt Aaron : Instructions de coupe"
+titre: "Débardeur (A-Shirt) Aaron : Instructions de coupe"
 - - -
 
 - Couper **1 dos** au pli

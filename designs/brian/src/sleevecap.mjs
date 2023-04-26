@@ -177,6 +177,7 @@ export const sleevecap = {
     for (const path in paths) delete paths[path]
     delete snippets.logo
     macro('title', false)
+    macro('cutonfold', false)
 
     store.set('sleeveFactor', 1)
     let run = 0

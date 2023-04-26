@@ -1,0 +1,31 @@
+name: Playwright Tests
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - develop
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - name: Cache node modules
+      uses: actions/cache@v3
+      id: cache_node_modules
+      with:
+        # caching node_modules
+        path: node_modules
+        key: node_modules-${{ hashFiles('yarn.lock') }}
+    - name: Install dependencies
+      if: steps.cache_node_modules.outputs.cache-hit != 'true'
+      run: npx lerna bootstrap
+    - name: Install Playwright Browsers
+      run: yarn playwright install --with-deps
+    - name: Run Playwright tests
+      run: yarn e2e

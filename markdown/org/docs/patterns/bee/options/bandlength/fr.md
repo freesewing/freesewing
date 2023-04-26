@@ -1,10 +1,10 @@
 - - -
-title: "Band Length (Cross back ties)"
+titre: "Longueur de la bande (lacets croisés dans le dos)"
 - - -
 
 ***
 
-Controls the length of the band around your chest for the cross back ties variation of Bee
+Contrôle la longueur de la bande autour de la poitrine pour la variante de Bee avec les liens croisés dans le dos
 
 ## Effet de cette option sur le motif
 

@@ -8,4 +8,4 @@ Combien voulez-vous que le devant de votre veste soit plus long/inférieur au do
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_centerfronthemdrop_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_centerfronthemdrop_sample.svg "Effet de cette option sur le modèle")

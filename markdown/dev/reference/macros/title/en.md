@@ -3,7 +3,7 @@ title: title
 ---
 
 The `title` macro adds a title to a pattern part.
-It is provided by the [title plugin](/reference/plugins/title).
+It is provided by the [annotations plugin](/reference/plugins/annotations).
 
 ## Signature
 

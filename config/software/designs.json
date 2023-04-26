@@ -70,6 +70,13 @@
       "difficulty": 2,
       "tags": ["accessories", "historical", "bags"]
     },
+    "magde": {
+      "description": "A FreeSewing pattern for a bike messenger bag",
+      "code": "clegganator259",
+      "design": "clegganator259",
+      "difficulty": 3,
+      "tags": ["accessories", "bags"]
+    },
     "octoplushy": {
       "description": "A FreeSewing pattern for an octopus plushy toy",
       "code": "Wouter Van Wageningen",

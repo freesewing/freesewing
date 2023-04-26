@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/email",
-  "version": "3.0.0-alpha.8",
+  "version": "3.0.0-alpha.9",
   "description": "Holds maizzle instance to generate the FreeSewing email templates",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -19,9 +19,9 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "@maizzle/framework": "4.4.3",
-    "tailwindcss-box-shadow": "2.0.0",
-    "tailwindcss-email-variants": "2.0.1",
+    "@maizzle/framework": "4.4.4",
+    "tailwindcss-box-shadow": "2.0.1",
+    "tailwindcss-email-variants": "2.0.2",
     "tailwindcss-mso": "1.3.0"
   },
   "devDependencies": {},

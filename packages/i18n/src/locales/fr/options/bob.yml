@@ -1,12 +1,12 @@
 neckRatio:
-  title: Neck opening
-  description: Controls the size of the neck opening relative to the bib size
+  title: Ouverture du cou
+  description: Contrôle la taille de l'ouverture du cou par rapport à la taille du bavoir
 widthRatio:
-  title: Width
-  description: Controls the width of the bib
+  title: Largeur
+  description: Contrôle la largeur du bavoir
 lengthRatio:
-  title: Length
-  description: Controls the length of the bib
+  title: Longeur
+  description: Contrôle la longueur du bavoir
 headSize:
-  title: Head size
-  description: The head circumference you want the bib to accomodate
+  title: Taille de la tête
+  description: Le tour de tête que vous voulez que le bavoir prenne en compte
