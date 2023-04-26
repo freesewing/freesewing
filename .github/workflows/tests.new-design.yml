@@ -43,6 +43,7 @@ jobs:
         CI: true
     - name: Check execa version
       if: steps.diff.outputs.files && steps.cache_node_modules.outputs.cache-hit != 'true'
+      run: yarn list --pattern execa
 
   test:
     if: needs.shared_setup.outputs.files
