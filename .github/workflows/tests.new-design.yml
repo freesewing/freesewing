@@ -33,7 +33,7 @@ jobs:
       id: cache_node_modules
       with:
         # caching node_modules
-        path: node_modules
+        path: '**/node_modules'
         key: node_modules_execa-${{ hashFiles('yarn.lock') }}
         lookup-only: true
     - name: Install dependencies
@@ -60,12 +60,12 @@ jobs:
       with:
         node-version: 18
     - name: Cache node modules
-      uses: actions/cache@v3
+      uses: actions/cache/restore@v3
       id: cache_node_modules
       with:
         # caching node_modules
-        path: node_modules
-        key: node_modules-${{ hashFiles('yarn.lock') }}
+        path: '**/node_modules'
+        key: node_modules-execa${{ hashFiles('yarn.lock') }}
     - name: Check execa version
       run: yarn list --pattern execa
     - name: Prebuild i18n
