@@ -2,22 +2,12 @@ import { pluginBundle } from '@freesewing/plugin-bundle'
 
 import { strapLeft } from './strapLeft.mjs'
 
-import {
-  // fastenerCount,
-  // fastenerHoleCount,
-  // fastenerRows,
-  // fastenerStyle,
-  // strapExtraLength,
-  // strapRightPct,
-  // strapType,
-  strapWidth,
-} from './options.mjs'
+import { strapHeight } from './options.mjs'
 
 function draftStrapRight({
   complete,
-  //log,
   macro,
-  //measurements,
+
   options,
   paperless,
   Path,
@@ -26,8 +16,6 @@ function draftStrapRight({
   points,
   part,
   sa,
-  //snippets,
-  // Snippet,
   store,
 }) {
   //if using tape/elastic, no need to make straps
@@ -35,10 +23,6 @@ function draftStrapRight({
     return part.hide()
   }
 
-  // let sideLength = store.get('sideLength')
-  // let frontWidth = store.get('frontWidth')
-
-  // let totalStrapLength = store.get('totalStrapLength')
   let totalStrapHeight = store.get('totalStrapHeight')
 
   let rightStrapLength = store.get('righStrapLength')
@@ -79,7 +63,7 @@ function draftStrapRight({
     //     'hook&Bar',
     //     'hook&Eye',
     if (options.fastenerStyle == 'buckle') {
-      //don't round the corner for the left buckle
+      //don't round the corner for the buckle
     } else if (options.fastenerStyle == 'pressStud' || options.fastenerStyle == 'button') {
       //Round corner and indicate 'male' fasteners
     }
@@ -123,7 +107,7 @@ export const strapRight = {
   draft: draftStrapRight,
   measurements: ['waist'],
   options: {
-    strapWidth,
+    strapHeight,
   },
   plugins: [pluginBundle],
 }
