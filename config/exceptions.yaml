@@ -50,8 +50,6 @@ packageJson:
       - index.mjs
       - package.json
     module: '!'
-    resolutions:
-      execa: 7.1.1
   noble:
     author: woutervdub (https://github.com/woutervdub)
   octoplushy:
