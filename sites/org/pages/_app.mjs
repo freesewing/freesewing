@@ -16,7 +16,7 @@ const ErrorBoundary = Bugsnag.getPlugin('react').createErrorBoundary(React)
 
 const FreeSewingOrg = ({ Component, pageProps }) => (
   <ErrorBoundary>
-    <Component {...pageProps} bugsnag={Bugsnag} />
+    <Component {...pageProps} />
     <DefaultToaster
       position="bottom-right"
       toastOptions={{

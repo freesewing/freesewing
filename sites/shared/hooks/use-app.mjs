@@ -1,6 +1,5 @@
 // Hooks
 import { useState, useEffect } from 'react'
-import { useBugsnag } from 'shared/hooks/use-bugsnag.mjs'
 import { useNavigation } from 'site/hooks/use-navigation.mjs'
 // Dependencies
 import get from 'lodash.get'
@@ -19,12 +18,11 @@ const defaultState = {
  * The useApp hook
  */
 export function useApp(props = {}) {
-  const { bugsnag = false, page = {}, loadState = {} } = props
+  const { page = {}, loadState = {} } = props
   const { path = false } = page
 
   if (!path) throw 'You MUST pass a page.path prop to the useApp hook'
 
-  const reportError = useBugsnag(bugsnag)
   const navState = useNavigation(path)
 
   // React state
@@ -64,8 +62,5 @@ export function useApp(props = {}) {
     closeMenu,
     startLoading,
     stopLoading,
-
-    // Bugsnag helper
-    reportError,
   }
 }
