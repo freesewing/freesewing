@@ -1,15 +1,15 @@
 size:
-  title: Size
-  description: Controls the overall size
+  title: Taille
+  description: Contrôle la taille globale
 type:
   title: Type
-  description: Allows you to choose one of the variants of this design
+  description: Vous permet de choisir une des variantes de ce design
 armWidth:
-  title: Arm width
-  description: Controls the width of the arms
+  title: Largeur de bras
+  description: Contrôle la largeur des bras
 armLength:
-  title: Arm length
-  description: Controls the length of the arms
+  title: Longueur des bras
+  description: Contrôle la longueur des bras
 neckWidth:
   title: Neck width
   description: Determines the width at the neck

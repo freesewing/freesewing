@@ -1,10 +1,10 @@
 ---
-title: "Full chest ease reduction"
+title: "Réduction de l'aisance de la poitrine"
 ---
 
 ***
 
-Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area
+Vous permet de réduire indépendamment du reste l'aisance de la poitrine pour le rendre (plus) ajusté à ce niveau
 
 ## Effet de cette option sur le modèle
 

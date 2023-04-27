@@ -1,6 +1,6 @@
 import chai from 'chai'
 import { Design } from '@freesewing/core'
-import { plugin } from '../src/index.mjs'
+import { annotationsPlugin } from '../src/index.mjs'
 
 const expect = chai.expect
 
@@ -14,7 +14,7 @@ describe('Cutlist Plugin Tests', () => {
 
         return part
       },
-      plugins: [plugin],
+      plugins: [annotationsPlugin],
     }
     const Test = new Design({ parts: [part] })
     const pattern = new Test()
@@ -23,6 +23,7 @@ describe('Cutlist Plugin Tests', () => {
     expect(methods.removeCut).to.be.a('function')
     expect(methods.setGrain).to.be.a('function')
     expect(methods.setCutOnFold).to.be.a('function')
+    expect(methods.getCutFabrics).to.be.a('function')
   })
 
   it('Should handle addCut() with defaults', () => {
@@ -33,7 +34,7 @@ describe('Cutlist Plugin Tests', () => {
 
         return part
       },
-      plugins: [plugin],
+      plugins: [annotationsPlugin],
     }
     const Test = new Design({ parts: [part] })
     const pattern = new Test()
@@ -55,7 +56,7 @@ describe('Cutlist Plugin Tests', () => {
 
         return part
       },
-      plugins: [plugin],
+      plugins: [annotationsPlugin],
     }
     const Test = new Design({ parts: [part] })
     const pattern = new Test()
@@ -79,7 +80,7 @@ describe('Cutlist Plugin Tests', () => {
 
         return part
       },
-      plugins: [plugin],
+      plugins: [annotationsPlugin],
     }
     const Test = new Design({ parts: [part] })
     const pattern = new Test()
@@ -97,7 +98,7 @@ describe('Cutlist Plugin Tests', () => {
 
         return part
       },
-      plugins: [plugin],
+      plugins: [annotationsPlugin],
     }
     const Test = new Design({ parts: [part] })
     const pattern = new Test()
@@ -116,7 +117,7 @@ describe('Cutlist Plugin Tests', () => {
 
         return part
       },
-      plugins: [plugin],
+      plugins: [annotationsPlugin],
     }
     const Test = new Design({ parts: [part] })
     const pattern = new Test()
@@ -132,7 +133,7 @@ describe('Cutlist Plugin Tests', () => {
 
         return part
       },
-      plugins: [plugin],
+      plugins: [annotationsPlugin],
     }
     const Test = new Design({ parts: [part] })
     const pattern = new Test()
@@ -149,7 +150,7 @@ describe('Cutlist Plugin Tests', () => {
 
         return part
       },
-      plugins: [plugin],
+      plugins: [annotationsPlugin],
     }
     const Test = new Design({ parts: [part] })
     const pattern = new Test()
@@ -169,7 +170,7 @@ describe('Cutlist Plugin Tests', () => {
 
         return part
       },
-      plugins: [plugin],
+      plugins: [annotationsPlugin],
     }
     const Test = new Design({ parts: [part] })
     const pattern = new Test()
@@ -193,7 +194,7 @@ describe('Cutlist Plugin Tests', () => {
 
         return part
       },
-      plugins: [plugin],
+      plugins: [annotationsPlugin],
     }
     const Test = new Design({ parts: [part] })
     const pattern = new Test()

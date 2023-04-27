@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugintest",
-  "version": "3.0.0-alpha.8",
+  "version": "3.0.0-alpha.9",
   "description": "A FreeSewing pattern to test (y)our plugins",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -46,33 +46,27 @@
     "wcibuild_step5": "node build.mjs"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0-alpha.8",
-    "@freesewing/plugin-bundle": "3.0.0-alpha.8",
-    "@freesewing/plugin-annotations": "3.0.0-alpha.8",
-    "@freesewing/plugin-banner": "3.0.0-alpha.8",
-    "@freesewing/plugin-bust": "3.0.0-alpha.8",
-    "@freesewing/plugin-buttons": "3.0.0-alpha.8",
-    "@freesewing/plugin-dimension": "3.0.0-alpha.8",
-    "@freesewing/plugin-flip": "3.0.0-alpha.8",
-    "@freesewing/plugin-gore": "3.0.0-alpha.8",
-    "@freesewing/plugin-grainline": "3.0.0-alpha.8",
-    "@freesewing/plugin-i18n": "3.0.0-alpha.8",
-    "@freesewing/plugin-logo": "3.0.0-alpha.8",
-    "@freesewing/plugin-measurements": "3.0.0-alpha.8",
-    "@freesewing/plugin-mirror": "3.0.0-alpha.8",
-    "@freesewing/plugin-notches": "3.0.0-alpha.8",
-    "@freesewing/plugin-round": "3.0.0-alpha.8",
-    "@freesewing/plugin-scalebox": "3.0.0-alpha.8",
-    "@freesewing/plugin-sprinkle": "3.0.0-alpha.8",
-    "@freesewing/plugin-svgattr": "3.0.0-alpha.8",
-    "@freesewing/plugin-theme": "3.0.0-alpha.8",
-    "@freesewing/plugin-title": "3.0.0-alpha.8",
-    "@freesewing/plugin-validate": "3.0.0-alpha.8"
+    "@freesewing/core": "3.0.0-alpha.9",
+    "@freesewing/plugin-bundle": "3.0.0-alpha.9",
+    "@freesewing/plugin-annotations": "3.0.0-alpha.9",
+    "@freesewing/plugin-bust": "3.0.0-alpha.9",
+    "@freesewing/plugin-flip": "3.0.0-alpha.9",
+    "@freesewing/plugin-gore": "3.0.0-alpha.9",
+    "@freesewing/plugin-i18n": "3.0.0-alpha.9",
+    "@freesewing/plugin-measurements": "3.0.0-alpha.9",
+    "@freesewing/plugin-mirror": "3.0.0-alpha.9",
+    "@freesewing/plugin-round": "3.0.0-alpha.9",
+    "@freesewing/plugin-sprinkle": "3.0.0-alpha.9",
+    "@freesewing/plugin-svgattr": "3.0.0-alpha.9",
+    "@freesewing/plugin-theme": "3.0.0-alpha.9",
+    "@freesewing/plugin-validate": "3.0.0-alpha.9"
   },
   "dependencies": {},
   "devDependencies": {
     "mocha": "10.2.0",
-    "chai": "4.3.7"
+    "chai": "4.3.7",
+    "@freesewing/models": "3.0.0-alpha.9",
+    "@freesewing/plugin-timing": "3.0.0-alpha.9"
   },
   "files": [
     "dist/*",

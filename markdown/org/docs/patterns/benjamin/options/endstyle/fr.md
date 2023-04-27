@@ -1,10 +1,10 @@
 - - -
-title: "End style"
+title: "Style des extrémités"
 - - -
 
-![Three different tip shapes](endstyle.svg)
+![Trois formes de pointe différentes](endstyle.svg)
 
-In addition to having four different bow tie styles, each style can be individualized with three different tip options:
+En plus d'avoir quatre styles de nœud papillon différents, chaque style peut être personnalisé avec trois options de pointe différentes :
 
 - Droit
 - Pointu

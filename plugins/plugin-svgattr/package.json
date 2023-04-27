@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-svgattr",
-  "version": "3.0.0-alpha.8",
+  "version": "3.0.0-alpha.9",
   "description": "A FreeSewing plugin to set SVG attributes",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -46,7 +46,7 @@
     "wcibuild_step1": "node build.mjs"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0-alpha.8"
+    "@freesewing/core": "3.0.0-alpha.9"
   },
   "dependencies": {},
   "devDependencies": {

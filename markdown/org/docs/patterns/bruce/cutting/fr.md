@@ -1,8 +1,8 @@
 - - -
-title: "Bruce boxer briefs: Cutting Instructions"
+title: "Boxer Bruce : Instructions de coupe"
 - - -
 
-Bruce consists of a back, and two sides, insets and fronts.
+Bruce se compose d'un dos, et de deux côtés, inserts et devants.
 
 - **Tissu principal**
   - Couper **1 dos** au pli

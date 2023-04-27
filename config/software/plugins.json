@@ -2,7 +2,6 @@
   "plugin-annotations": "A FreeSewing plugin that provides pattern annotations",
   "plugin-bundle": "An umbrella package of 8 essential FreeSewing build-time plugins",
   "plugin-bust": "A FreeSewing plugin that helps with bust-adjusting menswear patterns",
-  "plugin-cutlist": "A FreeSewing plugin to store data regarding a pattern's cutlist",
   "plugin-flip": "A FreeSewing plugin to flip parts horizontally",
   "plugin-gore": "A FreeSewing plugin to generate gores for a semi-sphere or dome",
   "plugin-i18n": "A FreeSewing plugin for pattern translation",

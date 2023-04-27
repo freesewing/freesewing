@@ -33,18 +33,6 @@ describe('Pattern', () => {
       expect(count).to.equal(2)
     })
   })
-  describe('Pattern.createPartForSet()', () => {
-    it('Should not allow malicious assignment to Object.prototype', () => {
-      const objProto = Object.prototype
-      const Pattern = new Design()
-      const pattern = new Pattern()
-
-      expect(() => pattern.createPartForSet('part', '__proto__')).to.throw(
-        'malicious attempt at altering Object.prototype. Stopping action'
-      )
-      expect(objProto).to.equal(Object.prototype)
-    })
-  })
   it('Should check whether a part is needed', () => {
     const partA = {
       name: 'test.partA',
@@ -175,7 +163,7 @@ describe('Pattern', () => {
     )
   })
 
-  describe('Pattern.__pack()', () => {
+  describe('PatternRenderer.__pack()', () => {
     it('should get a part stack name from a function that uses settings', () => {
       const expectedName = 'namedStack'
       const front = {
@@ -201,7 +189,7 @@ describe('Pattern', () => {
 
       const pattern = new Test()
       pattern.draft()
-      pattern.__pack()
+      pattern.getRenderProps()
 
       const stackNames = Object.keys(pattern.stacks)
       expect(stackNames).to.include(expectedName)
