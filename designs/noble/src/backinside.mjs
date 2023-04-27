@@ -33,12 +33,12 @@ function nobleBackInside({
       .attr('class', 'fabric')
   }
 
-  ;(points.grainlineFrom = new Point(points.hps.x / 2, points.shoulder.y)),
-    (points.grainlineTo = new Point(points.hps.x / 2, points.waistSide.y)),
-    macro('grainline', {
-      from: points.grainlineFrom,
-      to: points.grainlineTo,
-    })
+  points.grainlineFrom = new Point(points.hps.x / 2, points.shoulder.y)
+  points.grainlineTo = new Point(points.hps.x / 2, points.waistSide.y)
+  macro('grainline', {
+    from: points.grainlineFrom,
+    to: points.grainlineTo,
+  })
 
   if (complete) {
     snippets.dartTip = new Snippet('notch', points.dartTip)
