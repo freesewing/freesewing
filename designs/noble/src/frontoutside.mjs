@@ -66,15 +66,15 @@ function nobleFrontOutside({
       .attr('class', 'fabric')
   }
 
-  store.cutlist.removeCut()
-  store.cutlist.addCut()
-
   points.grainTop = points.armhole.shift(225, 20)
   points.grainBottom = points.sideHemInitial.shift(135, 20)
   macro('grainline', {
     from: points.grainBottom,
     to: points.grainTop,
   })
+
+  store.cutlist.removeCut()
+  store.cutlist.addCut()
 
   if (complete) {
     points.snippet = paths.princessSeam.shiftAlong(
