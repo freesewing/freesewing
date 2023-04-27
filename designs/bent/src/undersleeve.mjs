@@ -11,6 +11,7 @@ function draftBentUnderSleeve({
   snippets,
   Snippet,
   sa,
+  store,
   part,
 }) {
   // Extract seamline from sleeve
@@ -19,6 +20,8 @@ function draftBentUnderSleeve({
   delete paths.us
 
   points.anchor = points.usTip.clone()
+
+  store.cutlist.addCut()
 
   // Complete?
   if (complete) {

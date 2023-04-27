@@ -240,6 +240,8 @@ function titanBack({
   // Paths
   paths.seam = drawPath().attr('class', 'fabric')
 
+  store.cutlist.addCut()
+
   if (complete) {
     points.grainlineTop.y = points.styleWaistOut.y
     macro('grainline', {

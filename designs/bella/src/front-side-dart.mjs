@@ -204,7 +204,7 @@ export const frontSideDart = {
       .curve(points.hpsCp2, points.cfNeckCp1, points.cfNeck)
       .hide()
 
-    store.cutlist.addCut()
+    store.cutlist.addCut({ cut: 1 })
 
     if (complete) {
       points.titleAnchor = new Point(points.armholePitch.x / 2, points.armholePitchCp2.y)

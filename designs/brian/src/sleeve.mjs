@@ -56,6 +56,9 @@ export const sleeve = {
     // Anchor point for sampling
     points.gridAnchor = new Point(0, 0)
 
+    store.cutlist.removeCut()
+    store.cutlist.addCut()
+
     // Complete pattern?
     if (complete) {
       points.logo = points.centerBiceps.shiftFractionTowards(points.centerWrist, 0.3)

@@ -315,6 +315,8 @@ function titanFront({
   // Seamline
   paths.seam = drawPath().attr('class', 'fabric')
 
+  store.cutlist.addCut()
+
   if (complete) {
     points.grainlineTop.y = points.styleWaistIn.y
     macro('grainline', {

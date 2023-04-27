@@ -170,6 +170,8 @@ function draftBreannaBack({
   // Anchor point
   points.gridAnchor = points.cbNeck.clone()
 
+  store.cutlist.addCut()
+
   // Complete pattern?
   if (complete) {
     // Title
@@ -182,6 +184,13 @@ function draftBreannaBack({
 
     // Notch
     snippets.armholePitch = new Snippet('bnotch', points.armholePitch)
+
+    // Grainline
+    const grainlineDistance = (points.armhole.x - points.cbNeck.x) * 0.1
+    macro('grainline', {
+      from: points.cbNeck.shift(0, grainlineDistance),
+      to: points.cbWaist.shift(0, grainlineDistance),
+    })
 
     if (sa) paths.sa = paths.saBase.offset(sa).attr('class', 'sa')
   }

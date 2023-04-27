@@ -145,6 +145,8 @@ function draftBreannaFront({
   // Anchor point
   points.gridAnchor = points.cfNeck.clone()
 
+  store.cutlist.addCut({ cut: 1 })
+
   // Complete pattern?
   if (complete) {
     // Logo
@@ -159,6 +161,12 @@ function draftBreannaFront({
     snippets.bustNotch = new Snippet('notch', points.bustPoint)
     snippets.armholePitch = new Snippet('notch', points.armholePitch)
 
+    // CutonfoldAndGrainline
+    macro('cutonfold', {
+      from: points.cfNeck,
+      to: points.cfWaist,
+      grainline: true,
+    })
     if (sa) paths.sa = paths.saBase.offset(sa).attr('class', 'sa')
   }
 

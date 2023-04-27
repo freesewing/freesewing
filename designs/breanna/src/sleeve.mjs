@@ -52,6 +52,8 @@ function draftBreannaSleeve(params) {
   // Anchor point for sampling
   points.gridAnchor = new Point(0, 0)
 
+  store.cutlist.addCut()
+
   // Complete pattern?
   if (complete) {
     points.logo = points.centerBiceps.shiftFractionTowards(points.centerWrist, 0.3)

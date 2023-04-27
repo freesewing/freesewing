@@ -22,6 +22,7 @@ function nobleFrontOutside({
   delete points.bustDartCpBottom
   delete points.bustB
   delete points.bustDartEdge
+  macro('cutonfold', false)
 
   if (options.dartPosition == 'shoulder') {
     paths.princessSeam = new Path()
@@ -64,6 +65,9 @@ function nobleFrontOutside({
       .close()
       .attr('class', 'fabric')
   }
+
+  store.cutlist.removeCut()
+  store.cutlist.addCut()
 
   if (complete) {
     points.snippet = paths.princessSeam.shiftAlong(
