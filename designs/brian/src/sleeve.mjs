@@ -56,6 +56,11 @@ export const sleeve = {
     // Anchor point for sampling
     points.gridAnchor = new Point(0, 0)
 
+    macro('grainline', {
+      from: points.centerWrist,
+      to: points.centerBiceps,
+    })
+
     store.cutlist.removeCut()
     store.cutlist.addCut()
 
@@ -64,7 +69,6 @@ export const sleeve = {
       points.logo = points.centerBiceps.shiftFractionTowards(points.centerWrist, 0.3)
       snippets.logo = new Snippet('logo', points.logo)
       macro('title', { at: points.centerBiceps, nr: 3, title: 'sleeve' })
-      macro('grainline', { from: points.centerWrist, to: points.centerBiceps })
       points.scaleboxAnchor = points.scalebox = points.centerBiceps.shiftFractionTowards(
         points.centerWrist,
         0.5

@@ -2,6 +2,7 @@ import { backPoints } from './backpoints.mjs'
 
 function nobleBackInside({
   sa,
+  Point,
   points,
   Path,
   paths,
@@ -32,6 +33,13 @@ function nobleBackInside({
       .attr('class', 'fabric')
   }
 
+  ;(points.grainlineFrom = new Point(points.hps.x / 2, points.shoulder.y)),
+    (points.grainlineTo = new Point(points.hps.x / 2, points.waistSide.y)),
+    macro('grainline', {
+      from: points.grainlineFrom,
+      to: points.grainlineTo,
+    })
+
   if (complete) {
     snippets.dartTip = new Snippet('notch', points.dartTip)
 
@@ -39,10 +47,6 @@ function nobleBackInside({
       at: points.titleAnchor,
       nr: 3,
       title: options.dartPosition != 'shoulder' ? 'Back' : 'Inside Back',
-    })
-    macro('grainline', {
-      from: points.grainlineFrom,
-      to: points.grainlineTo,
     })
 
     if (sa) paths.sa = paths.insideSeam.offset(sa).attr('class', 'fabric sa')
