@@ -248,7 +248,7 @@ dev:
     'autoprefixer': '10.4.14'
     'eslint-config-next': *next
     'js-yaml': &jsYaml '4.1.0'
-    'postcss': &postcss '8.4.22'
+    'postcss': &postcss '8.4.23'
     'playwright': '^1.32.3'
     'remark-extract-frontmatter': '3.2.0'
     'tailwindcss': &tailwindcss '3.3.2'
