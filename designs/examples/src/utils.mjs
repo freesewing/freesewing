@@ -84,6 +84,38 @@ export const utils_beamintersectsy = {
   },
 }
 
+export const utils_beamintersectscurve = {
+  name: 'examples.utils_beamintersectscurve',
+  draft: ({ Point, points, Path, paths, Snippet, snippets, utils, part }) => {
+    points.A = new Point(10, 10)
+    points.Acp = new Point(10, 40)
+    points.B = new Point(110, 70)
+    points.Bcp = new Point(110, 40)
+    points.E = new Point(50, 14)
+    points.D = new Point(55, 16)
+    paths.curve = new Path().move(points.A).curve(points.Acp, points.Bcp, points.B)
+    paths.line = new Path().move(points.E).line(points.D)
+
+    for (let p of utils.beamIntersectsCurve(
+      points.D,
+      points.E,
+      points.A,
+      points.Acp,
+      points.Bcp,
+      points.B
+    )) {
+      snippets[getId()] = new Snippet('notch', p)
+    }
+
+    paths.help = new Path()
+      .move(new Point(0, 30))
+      .line(new Point(50, 30))
+      .attr('class', 'note dashed')
+
+    return part
+  },
+}
+
 export const utils_beamsintersect = {
   name: 'examples.utils_beamsintersect',
   draft: ({ Point, points, Path, paths, Snippet, snippets, utils, part }) => {
