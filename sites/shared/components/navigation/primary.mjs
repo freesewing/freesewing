@@ -12,6 +12,7 @@ import {
   UserIcon,
   CommunityIcon,
   ShowcaseIcon,
+  TrophyIcon,
 } from 'shared/components/icons.mjs'
 
 // Don't show children for blog and showcase posts
@@ -33,6 +34,7 @@ const icons = {
   showcase: (className = '') => <ShowcaseIcon className={className} />,
   tutorials: (className = '') => <TutorialIcon className={className} />,
   utilities: (className = '') => <CogIcon className={className} />,
+  training: (className = '') => <TrophyIcon className={className} />,
 }
 
 /* helper method to order nav entries */

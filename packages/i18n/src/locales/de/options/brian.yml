@@ -20,6 +20,9 @@ chestEase:
 cuffEase:
   title: Manschette Zugabe
   description: Die Bequemlichkeits-/Bewegungszugabe am Handgelenk.
+draftForHighBust:
+  title: Draft for high bust
+  description: Draft the pattern for the high bust measurement (if available) rather than the (full) chest. This will result in a more fitted garment for people with breasts.
 frontArmholeDeeper:
   title: Zusätzlicher Ausschnitt am vorderen Armloch
   description: Um wie viel das vordere Armloch tiefer ausgeschnitten ist als im Rücken.

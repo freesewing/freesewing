@@ -5,9 +5,9 @@ order: 100
 
 Bonjour 👋 et bienvenue sur freesewing.org 🙂
 
-La lecture de ce tutoriel prendra environ 10 minutes maintenant, vous économisera un tas de questions plus tard, et vous assurera de tirer le meilleur parti de notre site Web.
+La lecture de ce tutoriel prendra environ 10 minutes aujourd'hui, vous économisera un tas de questions plus tard, et vous assurera de tirer le meilleur parti de notre site Web.
 
-##### Ce que nous allons expliquer
+##### Nous allons expliquer
 
 - Nous allons vous dire [ce qu'est FreeSewing][1] et [ce qu'est freesewing.org][2]
 - Nous allons vous parler de nos [patrons de couture sur mesure][3] et de ce que nous entendons par [_avec des seins_ vs _sans seins_][4]

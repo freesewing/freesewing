@@ -18,8 +18,8 @@ bent:
   description: Ce bloc d'emmanchure en deux parties est la base de nos modèles de manteau et de veste.
   title: Patron de base Bent
 bob:
-  description: This is the bib that you can create by following our design tutorial
-  title: Bob the bib
+  description: Voici le bavoir que vous pouvez créer en suivant notre tutoriel de design
+  title: Bob le bavoir
 breanna:
   description: Breanna est un bloc corporel de base pour les personnes qui ont un sein.
   title: Haut Breanna
@@ -54,8 +54,8 @@ florence:
   description: 'Florence est un masque facial.'
   title: Masque Florence
 hi:
-  description: The world's friendliest shark
-  title: Hi the shark
+  description: Le requin le plus amical du monde
+  title: Bonjour le requin
 holmes:
   description: 'Pour un cosplay Sherlock Holmes, ou juste un joli manteau.'
   title: Casquette de détective Holmes
@@ -72,17 +72,17 @@ jaeger:
   description: Jaeger est une veste de sport de style manteau avec deux boutons et des poches plaquées.
   title: Veste Jaeger
 lucy:
-  description: Lucy is a historical pocket that you can tie around your waist.
-  title: Lucy tie-on pocket
+  description: Lucy est une poche historique que vous pouvez nouer autour de votre taille.
+  title: Pochette à nouer Lucy
 lunetius:
   description: Lunetius est une lacerne, un manteau romain historique
   title: Lacerne Lunetius
 noble:
-  description: Noble is a body block with prince(ess) seams
-  title: Noble body block
+  description: Noble est un bloc de corps avec des coutures prince(sse)
+  title: Bloc du corps Noble
 octoplushy:
-  description: A multi-armed companion for next-level hugs
-  title: Octoplushy the octopus
+  description: Un compagnon à plusieurs bras pour des câlins de haut niveau
+  title: Octoplushy la pieuvre
 paco:
   description: Paco est un pantalon d'été décontracté mais élégant.
   title: Pantalon Paco
@@ -123,8 +123,8 @@ trayvon:
   description: Trayvon est une cravate qui ne fait pas d'économies pour un résultat professionnel.
   title: Cravate Trayvon
 unice:
-  description: Unice is a variant of Ursula; A basic, highly-customizable underwear pattern.
-  title: Unice undies
+  description: Unice est une variante d'Ursula ; un modèle de sous-vêtements basique et hautement personnalisable.
+  title: Sous-vêtements Unice
 ursula:
   description: Ursula est un motif basique et hautement personnalisable.
   title: Unités d'Ursula

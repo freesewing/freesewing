@@ -82,6 +82,16 @@ function hugoHoodSide({
         .offset(sa * -1)
         .attr('class', 'fabric sa')
     }
+    //notches
+    points.cfNotch = new Path()
+      .move(points.neckEdge)
+      .curve(points.neckEdgeCp2, points.frontEdgeCp1, points.frontEdge)
+      .shiftAlong(neckOpening - halfCenterPanel)
+    macro('sprinkle', {
+      snippet: 'notch',
+      on: ['shoulderNotch', 'cfNotch'],
+    })
+    //title
     points.title = points.hoodTop.shift(-90, 50)
     macro('title', { at: points.title, nr: 6, title: 'hoodSide' })
     points.logo = points.title.shift(-90, 60)

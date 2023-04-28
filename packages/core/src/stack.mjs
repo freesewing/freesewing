@@ -51,10 +51,30 @@ Stack.prototype.home = function () {
   this.bottomRight = new Point(-Infinity, -Infinity)
   for (const part of this.getPartList()) {
     part.__boundary()
-    if (part.topLeft.x < this.topLeft.x) this.topLeft.x = part.topLeft.x
-    if (part.topLeft.y < this.topLeft.y) this.topLeft.y = part.topLeft.y
-    if (part.bottomRight.x > this.bottomRight.x) this.bottomRight.x = part.bottomRight.x
-    if (part.bottomRight.y > this.bottomRight.y) this.bottomRight.y = part.bottomRight.y
+
+    // get all corners of the part's bounds
+    let tl = part.topLeft || this.topLeft
+    let br = part.bottomRight || this.bottomRight
+    let tr = new Point(br.x, tl.y)
+    let bl = new Point(tl.x, br.y)
+
+    // if there are transforms on the part, apply them to the corners so that we have the correct bounds
+    const transforms = part.attributes.getAsArray('transform')
+    if (transforms) {
+      const combinedTransform = utils.combineTransforms(transforms)
+
+      tl = utils.applyTransformToPoint(combinedTransform, tl.copy())
+      br = utils.applyTransformToPoint(combinedTransform, br.copy())
+      tr = utils.applyTransformToPoint(combinedTransform, tr.copy())
+      bl = utils.applyTransformToPoint(combinedTransform, bl.copy())
+    }
+
+    // get the top left, the minimum x and y values of any corner
+    this.topLeft.x = Math.min(this.topLeft.x, tl.x, br.x, bl.x, tr.x)
+    this.topLeft.y = Math.min(this.topLeft.y, tl.y, br.y, bl.y, tr.y)
+    // get the bottom right, the maximum x and y values of any corner
+    this.bottomRight.x = Math.max(this.bottomRight.x, tl.x, br.x, bl.x, tr.x)
+    this.bottomRight.y = Math.max(this.bottomRight.y, tl.y, br.y, bl.y, tr.y)
   }
 
   // Fix infinity if it's not overwritten

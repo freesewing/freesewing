@@ -1,6 +1,8 @@
 canvas: Canvas
 cut: Cut
+cuttingLayout: Suggested Cutting Layout
 fabric: Main Fabric
+fabricSize: "{length} of {width} wide material"
 heavyCanvas: Heavy Canvas
 interfacing: Interfacing
 lining: Lining
@@ -11,3 +13,4 @@ onFoldAndBias: folded on the bias
 onBias: on the bias
 plastic: Plastic
 ribbing: Ribbing
+edgeOfFabric: Edge of Fabric

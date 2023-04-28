@@ -987,6 +987,24 @@
         "design",
         "code"
       ]
+    },
+    {
+      "login": "luizfzs",
+      "name": "Luiz Saggioro",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6039675?v=4",
+      "profile": "https://github.com/luizfzs",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "marpants",
+      "name": "marpants",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61366665?v=4",
+      "profile": "https://github.com/marpants",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "skipCi": true

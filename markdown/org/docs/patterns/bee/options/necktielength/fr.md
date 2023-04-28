@@ -1,10 +1,10 @@
 - - -
-title: "Neck tie length"
+titre: "Longueur des liens de cou"
 - - -
 
 ***
 
-Controls the length of the ties around your neck
+Contrôle la longueur des bandes autour de votre cou
 
 ## Effet de cette option sur le motif
 

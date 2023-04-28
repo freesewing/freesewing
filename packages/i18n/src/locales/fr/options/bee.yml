@@ -72,11 +72,11 @@ frontShoulderWidth:
   title: Largeur de l'épaule devant (Bella)
   description: Contrôle la largeur de l'épaule avant dans le bloc de Bella sur lequel est basé le patron Bee
 fullChestEaseReduction:
-  title: Full chest reduction (Bella)
-  description: Controls the full chest reduction in the underlying Bella block Bee is based on
+  title: Réduction de la poitrine (Bella)
+  description: Contrôle la réduction du thorax dans le bloc Bella sur lequel est basé Bee
 highBustWidth:
   title: Largeur du tour de buste supérieur (Bella)
   description: Contrôle la largeur du buste supérieur dans le bloc de Bella sur lequel est basé Bee
 shoulderToShoulderEase:
-  title: Shoulder to Shoulder ease (Bella)
-  description: Controls the shoulder to shoulder ease in the underlying Bella block Bee is based on
+  title: Aisance d'épaules à épaules (Bella)
+  description: Contrôle l'aisance d'épaule à épaule dans le bloc Bella sur lequel est basé le patron Bee

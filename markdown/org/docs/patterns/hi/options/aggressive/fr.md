@@ -4,6 +4,6 @@ title: "Aggressive"
 
 Your Hi can come in the default sweet form, or in a more aggressive version with more authentic teeth, and a mean look.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le modèle
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](hi_aggressive_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](hi_aggressive_sample.svg "Effet de cette option sur le modèle")

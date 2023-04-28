@@ -2,11 +2,10 @@
 title: "Crotch seam angle"
 - - -
 
-<Fixme>
+Controls the angle of the crotch seam curve.
 
-Documentation missing
-
-</Fixme>
+- 0% makes the crotch seam draft parallel to the hem.
+- Increasing this option will draft the crotch seam at 180 - the angle.
 
 ## Effect of this option on the pattern
 

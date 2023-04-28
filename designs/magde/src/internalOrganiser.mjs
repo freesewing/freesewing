@@ -72,21 +72,21 @@ function draftInternalOrganiser({
 
   // Paperless?
   if (paperless) {
-    // macro('hd', {
-    //   from: points.origin,
-    //   to: points.organiserTopRight,
-    //   y: points.origin.y - 2 * sa - 15,
-    // })
-    // macro('hd', {
-    //   from: points.organiserBottomLeft,
-    //   to: points.organiserBottomRight,
-    //   y: points.organiserBottomLeft.y + 2 * sa + 15,
-    // })
-    // macro('vd', {
-    //   from: points.origin,
-    //   to: points.organiserBottomRight,
-    //   x: points.organiserTopRight.x + 2 * sa + 15,
-    // })
+    macro('hd', {
+      from: points.origin,
+      to: points.organiserTopRight,
+      y: points.origin.y - 2 * sa - 15,
+    })
+    macro('hd', {
+      from: points.organiserBottomLeft,
+      to: points.organiserBottomRight,
+      y: points.organiserBottomLeft.y + 2 * sa + 15,
+    })
+    macro('vd', {
+      from: points.origin,
+      to: points.organiserBottomRight,
+      x: points.organiserTopRight.x + 2 * sa + 15,
+    })
   }
 
   return part

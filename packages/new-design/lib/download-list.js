@@ -11,12 +11,11 @@ const avoid = {
     'pattern-picker.js',
     'header.js',
   ],
-  dirs: [ 'node_modules', 'layouts' ]
+  dirs: ['node_modules', 'layouts', 'e2e'],
 }
 
-
 // Method to check what files to keep
-const keep = file => {
+const keep = (file) => {
   if (avoid.files.indexOf(basename(file)) !== -1) return false
   for (const dir of avoid.dirs) {
     if (file.indexOf(dir) !== -1) return false
@@ -28,16 +27,11 @@ const keep = file => {
 const getFiles = async (site) => {
   const all = await rdir(join('..', '..', 'sites', site))
 
-  return all
-    .filter(file => keep(file))
-    .map(file => file.slice(12))
+  return all.filter((file) => keep(file)).map((file) => file.slice(12))
 }
 
-getFiles('shared').then(shared => {
-  getFiles(join('lab', 'components')).then(lab => {
-    console.log(JSON.stringify([
-      ...shared,
-      ...lab,
-    ], null, 2))
+getFiles('shared').then((shared) => {
+  getFiles(join('lab', 'components')).then((lab) => {
+    console.log(JSON.stringify([...shared, ...lab], null, 2))
   })
 })

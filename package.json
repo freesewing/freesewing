@@ -20,6 +20,7 @@
     "kickstart:windows": "npx lerna bootstrap && yarn wbuildall && yarn prepare && yarn tips",
     "cleanall": "lerna run clean",
     "test": "lerna run test",
+    "e2e": "lerna run e2e",
     "prettier": "npx prettier --write 'config/*' 'config/**/*' 'packages/**/src/*.mjs' 'packages/i18n/src/locales/**/*.*' 'packages/**/tests/*.mjs'",
     "reconfigure": "all-contributors generate && node --experimental-json-modules --no-warnings scripts/reconfigure.mjs",
     "prerelease": "lerna version --no-git-tag-version --no-push && yarn reconfigure && yarn buildall",
@@ -103,7 +104,7 @@
     "remark-lint-list-item-indent": "^3.1.1",
     "remark-preset-lint-consistent": "^5.1.1",
     "remark-preset-lint-recommended": "^6.1.2",
-    "rimraf": "^4.1.1",
+    "rimraf": "^5.0.0",
     "standard": "^17.0.0"
   },
   "workspaces": [
