@@ -104,7 +104,7 @@ export const utils_beamintersectscurve = {
       points.Bcp,
       points.B
     )) {
-      snippets[getId()] = new Snippet('notch', p)
+      snippets[part.getId()] = new Snippet('notch', p)
     }
 
     paths.help = new Path()
