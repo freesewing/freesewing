@@ -1,16 +1,16 @@
-joinFreeSewing: Join FreeSewing
-toReceiveSignupLink: To receive a signup link, enter your email address
-emailAddress: Email address
-pleaseProvideValidEmail: Please provide a valid email address
-emailSignupLink: Email me a signup link
-alreadyHaveAnAccount: Already have an account?
-dontHaveAnAccount: Don't have an account yet?
-signIn: Sign in
-signInHere: Sign in here
-signUpHere: Sign up here
-emailUsernameId: Email address, username, or user ID
-welcomeName: 'Welcome { name }'
-password: Password
-processing: Processing
-emailSent: Email sent
-somethingWentWrong: Something went wrong
+joinFreeSewing: Приєднатися до FreeSewing
+toReceiveSignupLink: Щоб отримати посилання для реєстрації, введіть свою адресу електронної пошти
+emailAddress: Адреса електронної пошти
+pleaseProvideValidEmail: Будь ласка, вкажіть дійсну e-mail адресу
+emailSignupLink: Надішліть мені посилання для реєстрації
+alreadyHaveAnAccount: Вже маєте обліковий запис?
+dontHaveAnAccount: Ще не зареєстровані?
+signIn: Вхід
+signInHere: Увійдіть тут
+signUpHere: Зареєструйтеся тут
+emailUsernameId: Адреса ел. пошти, ім'я користувача чи ID користувача
+welcomeName: 'Ласкаво просимо, { name }'
+password: Пароль
+processing: Обробляється
+emailSent: Лист відправлено
+somethingWentWrong: Щось пішло не так

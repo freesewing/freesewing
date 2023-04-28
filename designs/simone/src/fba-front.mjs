@@ -313,26 +313,26 @@ function simoneFbaFront({
   paths.frontArmhole.ops[0].to.x = points.armholePitch.x
   paths.frontArmhole.ops[0].to.y = points.armholePitch.y
 
-  //
-  // Put the snippets in the right place
-  //
   for (let s in snippets) delete snippets[s]
-  macro('sprinkle', {
-    snippet: 'notch',
-    on: [
-      'armhole',
-      'armholePitch',
-      'cfArmhole',
-      'cfWaist',
-      'cfHem',
-      'hips',
-      'waist',
-      'bust',
-      'cfBust',
-    ],
-  })
-  points.logo = new Point(points.armhole.x / 2, points.armhole.y)
-  snippets.logo = new Snippet('logo', points.logo)
+  if (complete) {
+    // Put the snippets in the right place
+    macro('sprinkle', {
+      snippet: 'notch',
+      on: [
+        'armhole',
+        'armholePitch',
+        'cfArmhole',
+        'cfWaist',
+        'cfHem',
+        'hips',
+        'waist',
+        'bust',
+        'cfBust',
+      ],
+    })
+    points.logo = new Point(points.armhole.x / 2, points.armhole.y)
+    snippets.logo = new Snippet('logo', points.logo)
+  }
 
   //
   // Now recreate the paths and let Simon take it from here
@@ -416,9 +416,12 @@ export const fbaFront = {
   name: 'simone.fbaFront',
   from: front,
   measurements: ['highBust'],
-  hideDependencies: true,
+  hide: {
+    self: true,
+    from: true,
+    inherited: false,
+  },
   plugins: [bustPlugin],
-  hide: true,
   options: {
     draftForHighBust: true,
     minimalDartShaping: 5,

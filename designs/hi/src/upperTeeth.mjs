@@ -16,12 +16,12 @@ function draftHiUpperTeeth({
   macro,
   part,
 }) {
-  let upperTeeth01_02d = 131.305041182736 * options.size
-  let upperTeeth01_02a = 34.147056946748805
-  let upperTeeth02cp1d = 64.30113337316406 * options.size
-  let upperTeeth02cp1a = 55.1335930733262 + 180
-  let upperTeeth01cp2d = 48.331000000000017 * options.size
-  let upperTeeth01cp2a = 0
+  const upperTeeth01_02d = 131.305041182736 * options.size
+  const upperTeeth01_02a = 34.147056946748805
+  const upperTeeth02cp1d = 64.30113337316406 * options.size
+  const upperTeeth02cp1a = 55.1335930733262 + 180
+  const upperTeeth01cp2d = 48.331000000000017 * options.size
+  const upperTeeth01cp2a = 0
 
   points.upperTeeth01 = new Point(0, 0)
   points.upperTeeth02 = points.upperTeeth01.shift(upperTeeth01_02a, upperTeeth01_02d)

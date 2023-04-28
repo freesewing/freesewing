@@ -2,7 +2,7 @@
 weitenzugabe/Bequemlichkeitszugabe Oberarm
 - - -
 
-Das Mass der Beqeumlichkeitszugabe/Weitenzugabe am Oberarm.
+Das Maß der Bequemlichkeitszugabe/Weitenzugabe am Oberarm.
 
 ## Effekt dieser Option auf das Schnittmuster
 

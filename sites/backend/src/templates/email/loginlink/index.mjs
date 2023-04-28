@@ -6,7 +6,7 @@ import es from '../../../../public/locales/es/loginlink.json' assert { type: 'js
 import fr from '../../../../public/locales/fr/loginlink.json' assert { type: 'json' }
 import nl from '../../../../public/locales/nl/loginlink.json' assert { type: 'json' }
 
-export const loginLink = {
+export const loginlink = {
   html: wrap.html(`
   ${headingRow}
   <tr>

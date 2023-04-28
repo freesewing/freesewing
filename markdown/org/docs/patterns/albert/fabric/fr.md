@@ -1,9 +1,9 @@
 - - -
-title: "Albert apron: Fabric Options"
+titre : "Tablier Albert : Options de tissu"
 - - -
 
-An apron works best with a fabric that is sturdy, tightly woven, and easy to clean. In addition, make sure to go for a natural fibre and in any case something that is heat-resistant.
+Pour un tablier, il est préférable d'utiliser un tissu solide, tissé serré et facile à nettoyer. En outre, veillez à opter pour une fibre naturelle et, dans tous les cas, pour un produit qui soit résistant à la chaleur.
 
-Heavy cotton, chino, canvas or denim are all excellent choices.
+Le coton lourd, du chino, la toile ou le denim sont d'excellents choix.
 
-When in doubt, go for raw denim (pure cotton, if it stretches it's no good).
+En cas de doute, optez pour du denim brut (pur coton, s'il s'étire, ce n'est pas bon).

@@ -7,7 +7,7 @@ import fr from '../../../../public/locales/fr/signup-aea.json' assert { type: 'j
 import nl from '../../../../public/locales/nl/signup-aea.json' assert { type: 'json' }
 
 // aea = Account Exists and is Active
-export const signupAea = {
+export const signupaea = {
   html: wrap.html(`
   ${headingRow.html}
   ${preLeadRow.html}

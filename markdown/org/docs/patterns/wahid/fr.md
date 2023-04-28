@@ -1,5 +1,5 @@
 - - -
-title: "Wahid waistcoat"
+title: "Veston Wahid"
 - - -
 
 <PatternDocs pattern='wahid' />

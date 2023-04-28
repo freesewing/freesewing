@@ -19,12 +19,20 @@ export const mailer = (config) => ({
  * If you want to use another way to send email, change the mailer
  * assignment above to point to another method to deliver email
  */
-async function sendEmailViaAwsSes(config, { template, to, language = 'en', replacements = {} }) {
+async function sendEmailViaAwsSes(
+  config,
+  { template, to, cc = false, language = 'en', replacements = {} }
+) {
   // Make sure we have what it takes
   if (!template || !to || typeof templates[template] === 'undefined') {
     log.warn(`Tried to email invalid template: ${template}`)
     return false
   }
+
+  if (!cc) cc = []
+  if (typeof cc === 'string') cc = [cc]
+  if (Array.isArray(config.aws.ses.cc) && config.aws.ses.cc.length > 0)
+    cc = [...new Set([...cc, ...config.aws.ses.cc])]
 
   log.info(`Emailing template ${template} to ${to}`)
 
@@ -62,7 +70,7 @@ async function sendEmailViaAwsSes(config, { template, to, language = 'en', repla
     },
     Destination: {
       ToAddresses: [to],
-      CcAddresses: config.aws.ses.cc || [],
+      CcAddresses: cc,
       BccAddresses: config.aws.ses.bcc || [],
     },
     FeedbackForwardingEmailAddress: config.aws.ses.feedback,

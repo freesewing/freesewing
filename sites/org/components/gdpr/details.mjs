@@ -32,18 +32,15 @@ export const GdprMeasurementsDetails = () => {
 
   return (
     <div className="border-l-4 ml-1 pl-4 my-2 opacity-80">
-      <h6>{t('peopleWhatQuestion')}</h6>
+      <h6>{t('setWhatQuestion')}</h6>
       <p
         dangerouslySetInnerHTML={{
           __html:
-            t('peopleWhatAnswer') +
-            '<br /><em><small>' +
-            t('peopleWhatAnswerOptional') +
-            '</small></em>',
+            t('setWhatAnswer') + '<br /><em><small>' + t('setWhatAnswerOptional') + '</small></em>',
         }}
       />
       <h6>{t('whyQuestion')}</h6>
-      <p dangerouslySetInnerHTML={{ __html: t('peopleWhyAnswer') }} />
+      <p dangerouslySetInnerHTML={{ __html: t('setWhyAnswer') }} />
       <h6>{t('timingQuestion')}</h6>
       <p dangerouslySetInnerHTML={{ __html: t('profileTimingAnswer') }} />
       <h6>{t('shareQuestion')}</h6>

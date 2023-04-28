@@ -28,8 +28,8 @@ export const errors = {
   mfaTokenMissing: 'The `token` field is missing from the request body',
   nameMissing: 'The `name` field was missing from the request body',
   passwordMissing: 'The `password` field is missing from the request body',
-  personMissing: 'The request lacks a `person` value in the POST body',
-  personNotNumeric: 'The `person` field in the POST body is not of type `integer`',
+  setMissing: 'The request lacks a `set` value in the POST body',
+  setNotNumeric: 'The `set` field in the POST body is not of type `integer`',
   postBodyMissing: 'The request lacks a POST body',
   settingsNotAnObject:
     'The `settings` field in the POST body does not contain a value of type `object`',
@@ -221,8 +221,8 @@ export const response = {
           type: 'string',
           example: 'These are my notes. I can keep them alongside the pattern. Handy!',
         },
-        personId: {
-          description: `The unique ID of the Person this pattern was drafted for`,
+        setId: {
+          description: `The unique ID of the Measurements Set this pattern was drafted for`,
           type: 'integer',
           example: 33,
         },
@@ -248,39 +248,39 @@ export const response = {
         },
       },
     },
-    person: {
-      description: 'Object holding the data of the person',
+    set: {
+      description: 'Object holding the data of the measurements set',
       type: 'object',
       properties: {
         id: {
-          description: `The Person's unique ID`,
+          description: `The Measurements Set's unique ID`,
           type: 'integer',
           example: 666,
         },
         createdAt: {
-          description: 'Timestamp of when the Person was created, in ISO 8601 format.',
+          description: 'Timestamp of when the Measurement Set was created, in ISO 8601 format.',
           type: 'string',
           example: '2022-12-18T18:14:30.460Z',
         },
         img: {
-          description: `An image that was stored with this person`,
+          description: `An image that was stored with this measurements set`,
           type: 'string',
           example: 'https://freesewing.org/avatar.svg',
         },
         imperial: {
-          description: `Whether or not to use imperial units for this person`,
+          description: `Whether or not to use imperial units for this measurements set`,
           type: 'boolean',
           example: false,
         },
         name: {
-          description: `The name of the Person exists solely to help you differentiate between your people.`,
+          description: `The name of the Measurements Set exists solely to help you differentiate between your people.`,
           type: 'string',
           example: 'My bestie Ronda',
         },
         notes: {
-          description: `Any notes to be stored with the person`,
+          description: `Any notes to be stored with the measurements set`,
           type: 'string',
-          example: 'These are my notes. I can keep them alongside the person. Handy!',
+          example: 'These are my notes. I can keep them alongside the measurements set. Handy!',
         },
         public: {
           description: `Whether or not this pattern can be viewed/used by others`,
@@ -288,7 +288,7 @@ export const response = {
           example: false,
         },
         measies: {
-          description: `The measurements for this person`,
+          description: `The measurements of this set`,
           type: 'object',
           example: { neck: 420 },
         },
@@ -314,7 +314,7 @@ export const response = {
         ehash         String    @unique
         ihash         String
         patterns      Pattern[]
-        people        Person[]
+        people        Set[]
         */
         id: {
           description: `The User's unique ID`,
@@ -336,8 +336,8 @@ Also: Introvert 🙊
           description: `This field is about data protection. It indicates the level of consent the user has given to process their data.
 - \`0\`: No consent given
 - \`1\`: Consent given to process account data
-- \`2\`: Consent given to process account data and person data
-- \`3\`: Consent given to process account data and person data, and use anonymized data for research
+- \`2\`: Consent given to process account data and measurement data
+- \`3\`: Consent given to process account data and measurement data, and use anonymized data for research
 `,
           type: 'integer',
           enum: [0, 1, 2, 3],
@@ -371,7 +371,7 @@ Also: Introvert 🙊
           example: 'joostdecock',
         },
         img: {
-          description: `An image that was stored with this person`,
+          description: `An image that was stored with this measurements set`,
           type: 'string',
           example: 'https://freesewing.org/avatar.svg',
         },
@@ -486,7 +486,7 @@ export const token = {
 export const schemas = {
   apikey: response.body.apikey,
   pattern: response.body.pattern,
-  person: response.body.person,
+  set: response.body.set,
   userAccount: response.body.userAccount,
   userProfile: response.body.userProfile,
 }

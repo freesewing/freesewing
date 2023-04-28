@@ -1,5 +1,6 @@
 import { underSleeve as bentUnderSleeve } from '@freesewing/bent'
 import { front as bentFront } from '@freesewing/bent'
+import { pluginAnnotations } from '@freesewing/plugin-annotations'
 
 function draftCarltonUnderSleeve({
   paperless,
@@ -49,7 +50,16 @@ function draftCarltonUnderSleeve({
     .close()
     .attr('class', 'fabric')
 
+  store.cutlist.addCut()
+  store.cutlist.addCut({ material: 'lining' })
+
   if (complete) {
+    macro('title', {
+      at: points.armCenter,
+      nr: 4,
+      title: 'undersleeve',
+    })
+
     macro('grainline', {
       from: points.boxBottom,
       to: new Point(points.top.x, points.usLeftEdge.y),
@@ -122,7 +132,11 @@ export const underSleeve = {
   name: 'carlton.underSleeve',
   from: bentUnderSleeve,
   after: bentFront,
-  hideDependencies: true,
+  hide: {
+    from: true,
+    after: true,
+    inherited: true,
+  },
   measurements: ['shoulderToWrist'],
   options: {
     cuffLength: { pct: 15, min: 10, max: 20, menu: 'style' },
@@ -149,5 +163,6 @@ export const underSleeve = {
     sleevecapHeight: { pct: 45, min: 40, max: 60, menu: 'advanced' },
     sleevecapEase: { pct: 1, min: 0, max: 10, menu: 'advanced' },
   },
+  plugins: [pluginAnnotations],
   draft: draftCarltonUnderSleeve,
 }

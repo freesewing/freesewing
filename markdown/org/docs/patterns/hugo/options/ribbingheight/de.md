@@ -1,5 +1,5 @@
 - - -
-Bündchen Breite (Höhe)
+title: "Bündchen Breite (Höhe)"
 - - -
 
 Die Breite (Höhe) des Bündchens am Bauchbund und den Ärmelbündchen.

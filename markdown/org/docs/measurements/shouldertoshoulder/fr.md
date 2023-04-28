@@ -4,4 +4,4 @@ title: Largeur d'épaules
 
 La **largeur d'épaules** court du bout de votre épaule d'un côté sur votre dos jusqu'au bout de votre autre épaule.
 
-To measure your **shoulder to shoulder** find the tip of your shoulder, the tip or corner of the protruding bone that is located where the top of the shoulder meets the side of the arm. It is also where the top of the shoulder seam sits and the sleeve begins on a well-fitting dress shirt. Then, measure from there across your back to the same point at the other side.
+Pour mesurer votre **largeur d'épaule**, trouver la pointe de l'épaule, la pointe ou le coin de l'os qui est situé où le sommet de l'épaule rencontre le côté du bras. C'est aussi l'endroit où se trouve le haut de la couture de l'épaule et où commence la manche sur une chemise bien ajustée. Ensuite, mesurez à partir de là, en passant par le dos, jusqu'au même point de l'autre côté.

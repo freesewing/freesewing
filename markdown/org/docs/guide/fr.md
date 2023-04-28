@@ -3,11 +3,11 @@ title: Premiers pas
 order: 100
 ---
 
-Hi there 👋 and welcome to freesewing.org 🙂
+Bonjour 👋 et bienvenue sur freesewing.org 🙂
 
-Reading this guide will take about 10 minutes of your time now, to save you a bunch of questions later, and make sure you get the most out of our website.
+La lecture de ce tutoriel prendra environ 10 minutes aujourd'hui, vous économisera un tas de questions plus tard, et vous assurera de tirer le meilleur parti de notre site Web.
 
-##### Ce que nous allons expliquer
+##### Nous allons expliquer
 
 - Nous allons vous dire [ce qu'est FreeSewing][1] et [ce qu'est freesewing.org][2]
 - Nous allons vous parler de nos [patrons de couture sur mesure][3] et de ce que nous entendons par [_avec des seins_ vs _sans seins_][4]
@@ -15,7 +15,7 @@ Reading this guide will take about 10 minutes of your time now, to save you a bu
 - Nous enchaînerons avec [comment vous pouvez configurer vos patrons][9] avec des options de design et de patron
 - Enfin, nous vous dirons [où vous pouvez obtenir de l'aide][10] si vous êtes bloqué.
 
-Sounds good? Then let's dive right in:
+Cela vous convient ? Alors approfondissons :
 
 <ReadMore list />
 

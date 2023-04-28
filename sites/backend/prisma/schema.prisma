@@ -62,7 +62,7 @@ model User {
   password      String
   patron        Int       @default(0)
   patterns      Pattern[]
-  people        Person[]
+  sets          Set[]
   role          String    @default("user")
   status        Int       @default(0)
   updatedAt     DateTime? @updatedAt
@@ -78,18 +78,18 @@ model Pattern {
   img       String?
   name      String   @default("")
   notes     String
-  person    Person?  @relation(fields: [personId], references: [id])
-  personId  Int?
+  set       Set?  @relation(fields: [setId], references: [id])
+  setId     Int?
   public    Boolean  @default(false)
   settings  String
   user      User     @relation(fields: [userId], references: [id])
   userId    Int
   updatedAt DateTime @updatedAt
 
-  @@index([userId, personId])
+  @@index([userId, setId])
 }
 
-model Person {
+model Set {
   id        Int       @id @default(autoincrement())
   createdAt DateTime  @default(now())
   img       String?

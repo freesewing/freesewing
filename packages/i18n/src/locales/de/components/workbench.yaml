@@ -7,5 +7,5 @@ pageSize: Seitengröße
 startBySelectingAThing: 'Beginne mit der Auswahl eines {thing}'
 testThing: '{thing} testen'
 yamlEditViewTitleThing: 'Edit Pattern Configuration for {thing}'
-yamlEditViewError: Issues with YAML
-yamlEditViewErrorDesc: We saved your input, but it might not work for the following reasons
+yamlEditViewError: Probleme mit YAML
+yamlEditViewErrorDesc: Wir haben deine Eingabe gespeichert, aber sie funktioniert möglicherweise aus folgenden Gründen nicht

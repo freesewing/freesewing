@@ -1,5 +1,6 @@
 import { front as brianFront } from '@freesewing/brian'
 import { sharedDimensions } from './shared.mjs'
+import { hidePresets } from '@freesewing/core'
 
 function yuriFront({
   store,
@@ -118,7 +119,7 @@ export const front = {
       sleeveLengthBonus: { pct: 1, min: 0, max: 10 },
     },
   },
-  hideDependencies: true,
+  hide: hidePresets.HIDE_TREE,
   options: {
     hipsEase: { pct: 0, min: 0, max: 10 },
   },

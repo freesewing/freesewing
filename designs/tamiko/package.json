@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/tamiko",
-  "version": "3.0.0-alpha.4",
+  "version": "3.0.0-alpha.9",
   "description": "A FreeSewing pattern for a zero-waste top",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -46,14 +46,16 @@
     "wcibuild_step5": "node build.mjs"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0-alpha.4",
-    "@freesewing/plugin-bundle": "3.0.0-alpha.4",
-    "@freesewing/plugin-bust": "3.0.0-alpha.4"
+    "@freesewing/core": "3.0.0-alpha.9",
+    "@freesewing/plugin-bundle": "3.0.0-alpha.9",
+    "@freesewing/plugin-bust": "3.0.0-alpha.9"
   },
   "dependencies": {},
   "devDependencies": {
-    "mocha": "10.0.0",
-    "chai": "4.2.0"
+    "mocha": "10.2.0",
+    "chai": "4.3.7",
+    "@freesewing/models": "3.0.0-alpha.9",
+    "@freesewing/plugin-timing": "3.0.0-alpha.9"
   },
   "files": [
     "dist/*",

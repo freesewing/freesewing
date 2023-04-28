@@ -4,8 +4,10 @@ _types:
       '@freesewing/core': &freesewing '{{version}}'
       '@freesewing/plugin-bundle': *freesewing
     dev:
-      'mocha': &mocha '10.0.0'
-      'chai': &chai '4.2.0'
+      'mocha': &mocha '10.2.0'
+      'chai': &chai '4.3.7'
+      '@freesewing/models': *freesewing
+      '@freesewing/plugin-timing': *freesewing
   plugin:
     peer:
       '@freesewing/core': *freesewing
@@ -52,16 +54,19 @@ charlie:
     '@freesewing/snapseries': *freesewing
 core:
   _:
-    'bezier-js': '6.1.0'
-    'bin-pack': '1.0.2'
+    'bezier-js': '6.1.3'
+    'bin-pack-with-constraints': '1.0.1'
     'hooks': '0.3.2'
     'lodash.get': &_get '4.4.2'
     'lodash.set': &_set '4.3.2'
     'lodash.unset': &_unset '4.5.2'
     'lodash.clonedeep': '^4.5.0'
   dev:
-    'eslint': &eslint '8.33.0'
+    'eslint': &eslint '8.39.0'
     'nyc': '15.1.0'
+    'mocha': *mocha
+    'chai': *chai
+    'sinon': &sinon '^15.0.1'
 diana:
   peer:
     '@freesewing/brian': *freesewing
@@ -86,8 +91,7 @@ hugo:
 i18n:
   dev:
     'js-yaml': '4.1.0'
-  peer:
-    '@freesewing/pattern-info': *freesewing
+    'recursive-readdir': '^2.2.3'
 jaeger:
   peer:
     '@freesewing/brian': *freesewing
@@ -96,9 +100,9 @@ jaeger:
     '@freesewing/plugin-mirror': *freesewing
 new-design:
   _:
-    'axios': '1.2.6'
+    'axios': '1.3.6'
     'chalk': '5.0.1'
-    'execa': '6.1.0'
+    'execa': '7.1.1'
     'mustache': '4.2.0'
     'ora': '6.1.0'
     'prompts': '2.4.2'
@@ -106,56 +110,37 @@ new-design:
 noble:
   peer:
     '@freesewing/bella': *freesewing
-legend:
-  peer:
-    '@freesewing/plugin-buttons': *freesewing
 paco:
   peer:
     '@freesewing/titan': *freesewing
     '@freesewing/snapseries': *freesewing
 plugin-bundle:
   dev:
-    '@freesewing/plugin-banner': *freesewing
-    '@freesewing/plugin-buttons': *freesewing
-    '@freesewing/plugin-cutonfold': *freesewing
-    '@freesewing/plugin-dimension': *freesewing
-    '@freesewing/plugin-grainline': *freesewing
-    '@freesewing/plugin-logo': *freesewing
+    '@freesewing/plugin-annotations': *freesewing
     '@freesewing/plugin-mirror': *freesewing
-    '@freesewing/plugin-title': *freesewing
-    '@freesewing/plugin-scalebox': *freesewing
     '@freesewing/plugin-round': *freesewing
     '@freesewing/plugin-sprinkle': *freesewing
 plugintest:
   peer:
-    '@freesewing/plugin-banner': *freesewing
-    '@freesewing/plugin-bartack': *freesewing
+    '@freesewing/plugin-annotations': *freesewing
     '@freesewing/plugin-bust': *freesewing
-    '@freesewing/plugin-buttons': *freesewing
-    '@freesewing/plugin-cutonfold': *freesewing
-    '@freesewing/plugin-dimension': *freesewing
     '@freesewing/plugin-flip': *freesewing
     '@freesewing/plugin-gore': *freesewing
-    '@freesewing/plugin-grainline': *freesewing
     '@freesewing/plugin-i18n': *freesewing
-    '@freesewing/plugin-logo': *freesewing
     '@freesewing/plugin-measurements': *freesewing
     '@freesewing/plugin-mirror': *freesewing
-    '@freesewing/plugin-notches': *freesewing
     '@freesewing/plugin-round': *freesewing
-    '@freesewing/plugin-scalebox': *freesewing
     '@freesewing/plugin-sprinkle': *freesewing
     '@freesewing/plugin-svgattr': *freesewing
     '@freesewing/plugin-theme': *freesewing
-    '@freesewing/plugin-title': *freesewing
     '@freesewing/plugin-validate': *freesewing
 rehype-jargon:
   _:
-    'unist-util-visit': &unist-util-visit '4.1.1'
+    'unist-util-visit': &unist-util-visit '4.1.2'
     'hast-util-from-html': '1.0.1'
 rehype-highlight-lines:
   _:
-    'unist-util-remove': '3.1.0'
+    'unist-util-remove': '3.1.1'
 sandy:
   peer:
     '@freesewing/snapseries': *freesewing
@@ -203,8 +188,8 @@ yuri:
 
 backend:
   _:
-    '@aws-sdk/client-sesv2': '3.272.0'
-    '@prisma/client': &prisma '4.9.0'
+    '@aws-sdk/client-sesv2': '3.321.1'
+    '@prisma/client': &prisma '4.13.0'
     'bcryptjs': '2.4.3'
     'cors': '2.8.5'
     'crypto': '1.0.1'
@@ -216,29 +201,29 @@ backend:
     'passport': '0.6.0'
     'passport-http': '0.3.0'
     'passport-jwt': '4.0.1'
-    'pino': '8.8.0'
-    'qrcode': '1.5.1'
-    'swagger-ui-dist': '4.15.5'
-    'swagger-ui-express': '4.6.0'
+    'pino': '8.11.0'
+    'qrcode': '1.5.3'
+    'swagger-ui-dist': '4.18.3'
+    'swagger-ui-express': '4.6.2'
   dev:
     'chai': *chai
     'chai-http': '4.3.0'
-    'esbuild': '0.17.4'
+    'esbuild': '0.17.18'
     'mocha': *mocha
     'mocha-steps': '1.3.0'
-    'nodemon': '2.0.20'
+    'nodemon': '2.0.22'
     'prisma': *prisma
 
 dev:
   _:
-    '@mdx-js/loader': &mdx '2.2.1'
+    '@mdx-js/loader': &mdx '2.3.0'
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': &mdxRuntime '2.0.0-next.9'
-    '@next/bundle-analyzer': &next '13.1.6'
+    '@next/bundle-analyzer': &next '13.3.1'
     '@tailwindcss/typography': &tailwindTypography '0.5.9'
-    'algoliasearch': '4.14.3'
-    'daisyui': &daisyui '2.47.0'
+    'algoliasearch': '4.17.0'
+    'daisyui': &daisyui '2.51.6'
     'lodash.get': *_get
     'lodash.orderby': &_orderby '4.6.0'
     'lodash.set': *_set
@@ -246,9 +231,9 @@ dev:
     'react': &react '18.2.0'
     'react-copy-to-clipboard': &reactCopyToClipboard '5.1.0'
     'react-dom': *react
-    'react-hotkeys-hook': &reactHotkeysHook '4.3.2'
-    'react-instantsearch-dom': &reactInstantsearchDom '6.38.3'
-    'react-markdown': &reactMarkdown '8.0.5'
+    'react-hotkeys-hook': &reactHotkeysHook '4.4.0'
+    'react-instantsearch-dom': &reactInstantsearchDom '6.39.1'
+    'react-markdown': &reactMarkdown '8.0.7'
     'react-swipeable': &reactSwipeable '7.0.0'
     'react-timeago': &reactTimeago '7.1.0'
     'rehype-autolink-headings': &rehypeAutolinkHeadings '6.1.1'
@@ -259,44 +244,46 @@ dev:
     'remark-copy-linked-files': &remarkCopyLinkedFiles 'https://github.com/joostdecock/remark-copy-linked-files'
     'remark-gfm': &remarkGfm '3.0.1'
   dev: &nextSiteDevDependencies
-    'autoprefixer': '10.4.13'
+    '@playwright/test': '^1.32.3'
+    'autoprefixer': '10.4.14'
     'eslint-config-next': *next
     'js-yaml': &jsYaml '4.1.0'
-    'postcss': &postcss '8.4.21'
+    'postcss': &postcss '8.4.23'
+    'playwright': '^1.32.3'
     'remark-extract-frontmatter': '3.2.0'
-    'tailwindcss': &tailwindcss '3.2.4'
+    'tailwindcss': &tailwindcss '3.3.2'
     'yaml-loader': '0.8.0'
 
 email:
   _:
-    '@maizzle/framework': '4.3.1'
-    'tailwindcss-box-shadow': '2.0.0'
-    'tailwindcss-email-variants': '2.0.0'
+    '@maizzle/framework': '4.4.4'
+    'tailwindcss-box-shadow': '2.0.1'
+    'tailwindcss-email-variants': '2.0.2'
     'tailwindcss-mso': '1.3.0'
 
 lab:
   _:
-    '@headlessui/react': &headlessUiReact '1.7.7'
+    '@headlessui/react': &headlessUiReact '1.7.14'
     '@mdx-js/loader': *mdx
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': *mdxRuntime
     '@tailwindcss/typography': *tailwindTypography
-    'algoliasearch': &algoliasearch '4.14.3'
+    'algoliasearch': &algoliasearch '4.17.0'
     'd3-dispatch': '3.0.1'
     'd3-drag': '3.0.0'
     'd3-selection': '3.0.0'
     'daisyui': *daisyui
-    'i18next': &i18next '22.4.9'
+    'i18next': &i18next '22.4.14'
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
     'next': *next
-    'next-i18next': &nextI18next '13.0.3'
+    'next-i18next': &nextI18next '13.2.2'
     'react': *react
     'react-copy-to-clipboard': *reactCopyToClipboard
     'react-hotkeys-hook': *reactHotkeysHook
-    'react-i18next': &reactI18next '12.1.4'
+    'react-i18next': &reactI18next '12.2.2'
     'react-instantsearch-dom': *reactInstantsearchDom
     'react-markdown': *reactMarkdown
     'react-swipeable': *reactSwipeable
@@ -308,7 +295,8 @@ lab:
     'rehype-stringify': *rehypeStringify
     'remark-copy-linked-files': *remarkCopyLinkedFiles
     'remark-gfm': *remarkGfm
-  dev: *nextSiteDevDependencies
+  dev:
+    *nextSiteDevDependencies
 
 org:
   _:
@@ -320,14 +308,17 @@ org:
     '@mdx-js/runtime': *mdxRuntime
     '@tailwindcss/typography': *tailwindTypography
     'algoliasearch': *algoliasearch
+    'react-copy-to-clipboard': 5.1.0
     'daisyui': *daisyui
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
+    'luxon': '3.3.0'
     'next': *next
     'react-dropzone': '14.2.3'
     'react-hotkeys-hook': *reactHotkeysHook
     'react-instantsearch-dom': *reactInstantsearchDom
+    'react-hot-toast': 2.4.0
     'react-markdown': *reactMarkdown
     'react-swipeable': *reactSwipeable
     'react-timeago': *reactTimeago
@@ -343,24 +334,24 @@ org:
 
 sanity:
   _:
-    '@sanity/vision': &sanity '3.2.5'
+    '@sanity/vision': &sanity '3.9.1'
     'react': *react
     'react-dom': *react
     'react-is': *react
     'sanity': *sanity
-    'styled-components': '5.3.6'
-    'sanity-plugin-markdown': '3.0.1'
+    'styled-components': '5.3.10'
+    'sanity-plugin-markdown': '4.1.0'
   dev:
     '@sanity/eslint-config-studio': '2.0.1'
     'eslint': *eslint
-    'prettier': '2.8.3'
-    'typescript': '4.9.4'
-    '@sanity/cli': '3.2.6'
+    'prettier': '2.8.8'
+    'typescript': '5.0.4'
+    '@sanity/cli': '3.9.0'
 
 shared:
   _:
     '@headlessui/react': *headlessUiReact
-    '@resvg/resvg-js': '2.2.0'
+    '@resvg/resvg-js': '2.4.1'
     '@tailwindcss/typography': *tailwindTypography
     'Buffer': '0.0.0'
     'd3-dispatch': '3.0.1'
@@ -374,7 +365,9 @@ shared:
     'lodash.clonedeep': '4.5.0'
     'lodash.orderby': *_orderby
     'lodash.unset': *_unset
-    'mdast-util-toc': '6.1.0'
+    'lodash.get': *_get
+    'mdast-util-toc': '6.1.1'
+    'mermaid': '10.1.0'
     'pdfkit': '0.13.0'
     'postcss-for': '2.1.1'
     'react': *react
@@ -382,13 +375,15 @@ shared:
     'react-markdown': *reactMarkdown
     'react-sizeme': '3.0.2'
     'react-timeago': *reactTimeago
-    'react-zoom-pan-pinch': '2.2.0'
+    'react-zoom-pan-pinch': '3.0.7'
     'rehype-autolink-headings': *rehypeAutolinkHeadings
     'rehype-highlight': *rehypeHighlight
     'remark-smartypants': '2.0.0'
-    'sharp': '0.31.3'
+    'sharp': '0.32.0'
     'svg-to-pdfkit': 'https://github.com/eriese/SVG-to-PDFKit'
-    'tlds': '1.236.0'
-    'to-vfile': '7.2.3'
+    'tlds': '1.238.0'
+    'to-vfile': '7.2.4'
     'unist-util-visit': *unist-util-visit
     'web-worker': '1.2.0'
+  dev:
+    'recursive-readdir': '^2.2.3'

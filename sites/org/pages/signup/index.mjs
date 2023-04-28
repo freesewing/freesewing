@@ -11,8 +11,8 @@ import Link from 'next/link'
 import { PageWrapper } from 'site/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { SusiWrapper } from 'site/components/wrappers/susi.mjs'
-import { Spinner } from 'shared/components/spinner.mjs'
 import { Robot } from 'shared/components/robot/index.mjs'
+import { EmailValidButton } from 'site/components/buttons/email-valid-button.mjs'
 
 // Translation namespaces used on this page
 const namespaces = ['signup', 'errors']
@@ -119,33 +119,13 @@ const SignUpPage = (props) => {
                 autoFocus={true}
                 value={email}
               />
-              <button
-                type="submit"
-                style={{
-                  backgroundColor: emailValid ? '' : 'hsl(var(--wa) / var(--tw-border-opacity))',
-                  opacity: emailValid ? 1 : 0.8,
-                }}
-                className={`btn mt-4 capitalize w-full
-                ${emailValid ? (app.loading ? 'btn-accent' : 'btn-primary') : 'btn-warning'}`}
-                tabIndex="-1"
-                role="button"
-                aria-disabled={!emailValid}
-              >
-                {emailValid ? (
-                  <span className="flex flex-row items-center gap-2">
-                    {app.loading ? (
-                      <>
-                        <Spinner />
-                        <span>{t('processing')}</span>
-                      </>
-                    ) : (
-                      <span>{t('emailSignupLink')}</span>
-                    )}
-                  </span>
-                ) : (
-                  <span className="text-warning-content">{t('pleaseProvideValidEmail')}</span>
-                )}
-              </button>
+              <EmailValidButton
+                email={email}
+                app={app}
+                t={t}
+                validText={t('emailSignupLink')}
+                btnProps={{ type: 'submit' }}
+              />
             </form>
             <p
               className={`text-neutral-content text-sm mt-4 opacity-80 text-center ${loadingClasses}`}

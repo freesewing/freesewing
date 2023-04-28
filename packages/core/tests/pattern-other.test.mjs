@@ -54,13 +54,14 @@ describe('Pattern', () => {
       name: 'test',
       draft: ({ part }) => part,
     }
-    const design = new Design({ parts: [test] })
+    const you = {
+      name: 'you',
+      draft: ({ part }) => part,
+    }
+    const design = new Design({ parts: [test, you] })
     const pattern = new design({ only: ['you'] })
     pattern.draft()
-    expect(pattern.setStores[0].logs.debug.length).to.equal(4)
-    expect(pattern.setStores[0].logs.debug[3]).to.equal(
-      'Part `test` is not needed. Skipping draft and setting hidden to `true`'
-    )
+    expect(pattern.setStores[0].logs.debug).to.include('Part `test` is not needed. Skipping part')
   })
 
   it('Should return the initialized config', () => {
@@ -87,8 +88,8 @@ describe('Pattern', () => {
     pattern.use(plugin)
     pattern.use({ plugin })
     pattern.use({ plugin })
-    expect(Object.keys(pattern.plugins).length).to.equal(1)
-    expect(Object.keys(pattern.plugins)[0]).to.equal('test')
+    expect(Object.keys(pattern.plugins.plugins)).to.have.lengthOf(1)
+    expect(Object.keys(pattern.plugins.plugins)[0]).to.equal('test')
   })
 
   it('Should log an error of added parts do not have a draft method', () => {
@@ -158,7 +159,6 @@ describe('Pattern', () => {
     expect(pattern.setStores[0].logs.error[0][0]).to.equal('Unable to draft part `test` (set 0)')
   })
 
-  // FIXME: Add assertions here
   it('Handle layout object', () => {
     const part = {
       name: 'test',
@@ -173,7 +173,7 @@ describe('Pattern', () => {
       layout: { stacks: { test: { flipX: true } }, width: 300, height: 400 },
     })
     const props = pattern.draft().getRenderProps()
-    expect(props.stacks.test.attributes.get('transform')).to.equal('scale(-1 1)')
+    expect(props.stacks.test.attributes.get('transform')).to.equal('scale(-1, 1)')
     expect(props.width).to.equal(300)
     expect(props.height).to.equal(400)
   })

@@ -1,6 +1,7 @@
 import { calculateReduction } from './shared.mjs'
 import { flipPlugin } from '@freesewing/plugin-flip'
 import { back as brianBack } from '@freesewing/brian'
+import { hidePresets } from '@freesewing/core'
 import {
   collarFactor,
   backDarts,
@@ -250,7 +251,7 @@ function simonBack({
     })
     points.title = new Point(points.armhole.x / 4, points.armhole.y)
     macro('title', { at: points.title, nr: 3, title: 'back' })
-    points.logo = points.title.shift(-90, 70)
+    points.logo = new Point(points.armhole.x / 4, points.waistCp2.y)
     snippets.logo = new Snippet('logo', points.logo)
     if (options.boxPleat) {
       paths.boxPleat = new Path()
@@ -407,8 +408,8 @@ export const back = {
   name: 'simon.back',
   plugins: [flipPlugin],
   measurements: ['waist', 'hips'],
-  hideDependencies: true,
   from: brianBack,
+  hide: hidePresets.HIDE_TREE,
   options: {
     collarFactor,
     backDarts,

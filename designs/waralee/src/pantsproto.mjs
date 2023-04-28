@@ -310,7 +310,7 @@ function waraleePantsProto({ options, measurements, Point, Path, points, paths, 
 
 export const pantsProto = {
   name: 'waralee.pantsProto',
-  hide: true,
+  hide: { self: true },
   measurements: ['seat', 'inseam', 'crotchDepth', 'waistToHips'],
   optionalMeasurements: ['waist', 'waistBack'],
   options,

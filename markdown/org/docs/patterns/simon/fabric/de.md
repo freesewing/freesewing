@@ -28,7 +28,7 @@ The flip side of the coin is that it won't give you that starchy crisp vibe that
 
 ## Pinpoint
 
-Pinpoint is the work horse of shirt fabrics. Typically they produce a heavier and thicker . and thus more durable . fabric. and thus more durable . fabric.
+Pinpoint is the work horse of shirt fabrics. Typically they produce a heavier and thicker . and thus more durable . fabric.
 
 Pinpoint is a less formal look than broadcloth or twill, but more formal than oxford. This, combined with its durability, make it a great choice for your everyday work shirt.
 

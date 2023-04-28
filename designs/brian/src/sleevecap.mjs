@@ -149,7 +149,7 @@ const menu = 'advanced.sleevecap'
 export const sleevecap = {
   from: front,
   name: 'brian.sleevecap',
-  hide: true,
+  hide: { self: true },
   options: {
     sleevecapEase: { pct: 0, min: 0, max: 10, menu },
     sleevecapTopFactorX: { pct: 50, min: 25, max: 75, menu },
@@ -177,6 +177,7 @@ export const sleevecap = {
     for (const path in paths) delete paths[path]
     delete snippets.logo
     macro('title', false)
+    macro('cutonfold', false)
 
     store.set('sleeveFactor', 1)
     let run = 0

@@ -14,7 +14,7 @@ The _bounding box_ of the sleevecap is a rectangle that is as wide as the sleeve
 
 ![The Brian sleevecap](sleevecap.svg)
 
-The image above shows a sleevecap, starting at point 1, then going up until point 4, and then down again to point 2.
+Das obrige Bild zeigt eine Armkugel, beginnend am Punkt 1, dann nach oben gehend bis Punkt 4 und dann wieder nach unten zu Punkt 2.
 
 <Note>
 
@@ -35,7 +35,7 @@ The width of the sleevecap (and thus the width of the sleeve at the bottom of th
 
 ![Controlling the top of the sleevecap](sleevecaptop.svg)
 
-The height of the sleevecap is equal to the distance between points 3 and 4. The exact height is a trade-off between the measurments of the model, options, ease, sleevecap ease, and the fact that the sleeve ultimately has to fit the armhole. So the height may vary, and we don't control the exact value. But there are two options that control the shape of our sleevecap:
+The height of the sleevecap is equal to the distance between points 3 and 4. The exact height is a trade-off between the measurments of the model, options, ease, sleevecap ease, and the fact that the sleeve ultimately has to fit the armhole. Die Höhe kann also variieren und wir kontrollieren nicht den exakten Wert. But there are two options that control the shape of our sleevecap:
 
 - [Sleevecap Top X](/docs/patterns/brian/options/sleevecaptopfactorx/) : Steuert die horizontale Platzierung von Punkt 3 und 4
 - [Sleevecap oben Y](/docs/patterns/brian/options/sleevecaptopfactory/) : Steuert die vertikale Platzierung von Punkt 4

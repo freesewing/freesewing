@@ -5,7 +5,6 @@ import { Figure } from './figure.mjs'
 import { ReadMore } from './read-more.mjs'
 import { Tab, Tabs } from './tabs.mjs'
 import { TabbedExample as Example } from './tabbed-example.mjs'
-import { Examples } from './examples.mjs'
 import { HttpMethod, HttpStatusCode } from './http.mjs'
 
 const Fixme = () => <p>FIXME</p>
@@ -33,7 +32,6 @@ export const MdxComponents = (app = false) => ({
   Tab,
   Tabs,
   Example: (props) => <Example {...props} app={app} />,
-  Examples: (props) => <Examples {...props} app={app} />,
   PatternDocs: Fixme,
   PatternOptions: Fixme,
 })

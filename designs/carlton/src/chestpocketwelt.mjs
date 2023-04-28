@@ -30,6 +30,9 @@ function draftCarltonChestPocketWelt({
 
   paths.fold = new Path().move(points.topMid).line(points.bottomMid).attr('class', 'dashed')
 
+  store.cutlist.addCut()
+  store.cutlist.addCut({ material: 'lmhCanvas' })
+
   if (complete) {
     points.title = new Point(points.bottomRight.x / 4, points.bottomRight.y / 2)
     macro('title', {

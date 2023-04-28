@@ -26,7 +26,7 @@ Here's how you can handle this in code:
 - We check the length after every attempt, and adjust the `tweak` value
 
 ```js
-export default function (part) {
+export const partName = (part) {
   let { Path, paths, points, store, options } = part.shorthand()
 
   // we'll call this function repeatedly until it gets it right

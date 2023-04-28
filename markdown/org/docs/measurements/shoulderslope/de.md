@@ -2,7 +2,7 @@
 title: Schulterneigung
 ---
 
-Die **Schulterneigung**ist ein Indikator dafür, wie stark sich deine Schulter nach unten neigt.
+Die **Schulterneigung** ist ein Indikator dafür, wie stark sich deine Schulter nach unten neigt.
 
 Um deine Schulterneigung zu messen, musst du den Winkel bestimmen, unter dem sich deine Schulterlinie nach unten neigt.
 

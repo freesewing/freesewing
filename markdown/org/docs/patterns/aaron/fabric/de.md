@@ -1,13 +1,13 @@
 - - -
-title: "Aaron A-Shirt: Stoffoptionen"
+title: "Aaron, das A-Shirt: Stoffoptionen"
 - - -
 
-Ein A-Shirt ist im Wesentlichen Unterwäsche. Und in dieser Hinsicht willst du etwas Bequemes, das sich auf der Haut gut anfühlt und atmungsaktiv ist.
+Ein A-Shirt ist im wesentlichen Unterwäsche. Und in dieser Hinsicht willst du etwas Bequemes, das sich auf der Haut gut anfühlt und atmungsaktiv ist.
 
-Baumwolle mit einem Hauch von etwas dehnbaren, vielleicht Viskose oder feiner Strick. Ich schlage vor, Sie gehen in den Stoffladen und fühlen sich um ein wenig.
+Baumwolle mit einem Hauch von etwas Dehnbaren, vielleicht Viskose oder feiner Strick. Am besten gehst du in den Stoffladen und fühlst dich ein wenig um.
 
 <Note>
 
-Dehnbarkeit ist zwar nicht erforderlich, aber für Unterwäsche sinnvoll. Allerdings können Sie dies in einem non-stretch machen und stellen Sie sicher, dass Sie sich locker oder lässig passen.
+Dehnbarkeit ist zwar nicht erforderlich, aber für Unterwäsche sinnvoll. Allerdings kannst du Aaron auch aus einem nicht-dehnbaren Stoff nähen, nimm dann aber eine lockere oder lässige Passform.
 
 </Note>

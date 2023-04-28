@@ -21,7 +21,10 @@ export const mfa = ({ service }) => ({
       } catch (err) {
         console.log(err)
       }
-      svg = svg.replace(dark, 'currentColor').replace(light, 'none')
+      svg = svg
+        .replace(dark, 'currentColor')
+        .replace(light, 'none')
+        .replace('<svg ', '<svg class="qrcode" width="100%" height="100%" ')
 
       return { secret, otpauth, qrcode: svg }
     },

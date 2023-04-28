@@ -188,7 +188,7 @@ If you are having trouble dealing with the curves of the visors, sew a stitching
 
 **For both Assembly and Lining Methods**
 
-Assembly and Lining instructions are written with a 6 panelled Holmes in mind. Sie können feststellen, dass die Platzierung von Visoren und Ohrklappenteilen für andere nummerierte Holmes unterschiedlich ist. Sie können feststellen, dass die Platzierung von Visoren und Ohrklappenteilen für andere nummerierte Holmes unterschiedlich ist. As a rule of thumb generally the centre front of the visor is always on the centre crown seam so go from there if struggling.
+Assembly and Lining instructions are written with a 6 panelled Holmes in mind. Sie können feststellen, dass die Platzierung von Visoren und Ohrklappenteilen für andere nummerierte Holmes unterschiedlich ist. As a rule of thumb generally the centre front of the visor is always on the centre crown seam so go from there if struggling.
 
 </Warning>
 

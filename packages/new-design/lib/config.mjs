@@ -8,7 +8,7 @@ export const config = {
   // Repository to download from
   repo: process.env.FS_REPO || 'freesewing/freesewing',
   // Branch to download from
-  branch: process.env.FS_BRANCH || 'joost',
+  branch: process.env.FS_BRANCH || 'develop',
   i18n: [
     'account',
     'common',
@@ -51,6 +51,9 @@ dist
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# e2e test results
+playwright-report
 `,
   fetch: {
     config: [
@@ -122,7 +125,6 @@ yarn-error.log*
       'shared/components/error/view.mjs',
       'shared/components/icons/flip.js',
       'shared/components/icons/rotate.js',
-      'shared/components/icons/sheet.js',
       'shared/components/locale-picker/index.mjs',
       'shared/components/locale-picker/locales.de.yaml',
       'shared/components/locale-picker/locales.en.yaml',
@@ -133,11 +135,11 @@ yarn-error.log*
       'shared/components/logos/cc.mjs',
       'shared/components/logos/freesewing.mjs',
       'shared/components/logos/osi.mjs',
-      'shared/components/mdx/examples.mjs',
       'shared/components/mdx/figure.mjs',
       'shared/components/mdx/highlight.mjs',
       'shared/components/mdx/http.mjs',
       'shared/components/mdx/index.mjs',
+      'shared/components/mdx/mermaid.mjs',
       'shared/components/mdx/prev-next.mjs',
       'shared/components/mdx/read-more.mjs',
       'shared/components/mdx/tabbed-example.mjs',
@@ -162,6 +164,8 @@ yarn-error.log*
       'shared/components/workbench/logs.mjs',
       'shared/components/workbench/preloaders.mjs',
       'shared/components/workbench/sample.mjs',
+      'shared/components/workbench/edit/index.mjs',
+      'shared/components/workbench/edit/gist-validator.mjs',
       'shared/components/workbench/exporting/export-handler.mjs',
       'shared/components/workbench/exporting/export-worker.js',
       'shared/components/workbench/exporting/index.mjs',
@@ -171,7 +175,6 @@ yarn-error.log*
       'shared/components/workbench/inputs/design-option-pct-deg.mjs',
       'shared/components/workbench/inputs/measurement.mjs',
       'shared/components/workbench/measurements/index.mjs',
-      'shared/components/workbench/measurements/non-human.mjs',
       'shared/components/workbench/draft/circle.mjs',
       'shared/components/workbench/draft/defs.mjs',
       'shared/components/workbench/draft/error.mjs',
@@ -186,11 +189,12 @@ yarn-error.log*
       'shared/components/workbench/draft/utils.mjs',
       'shared/components/workbench/layout/default.mjs',
       'shared/components/workbench/layout/cut/index.mjs',
+      'shared/components/workbench/layout/cut/plugin-cut-layout.mjs',
       'shared/components/workbench/layout/cut/settings.mjs',
       'shared/components/workbench/layout/print/index.mjs',
       'shared/components/workbench/layout/print/orientation-picker.mjs',
       'shared/components/workbench/layout/print/pagesize-picker.mjs',
-      'shared/components/workbench/layout/print/plugin.mjs',
+      'shared/components/workbench/layout/plugin-layout-part.mjs',
       'shared/components/workbench/layout/print/settings.mjs',
       'shared/components/workbench/layout/draft/buttons.mjs',
       'shared/components/workbench/layout/draft/index.mjs',

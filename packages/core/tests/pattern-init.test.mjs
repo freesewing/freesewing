@@ -18,7 +18,7 @@ describe('Pattern', () => {
       expect(Array.isArray(pattern.setStores)).to.equal(true)
       expect(typeof pattern.store).to.equal('object')
       expect(typeof pattern.config).to.equal('object')
-      expect(Object.keys(pattern).length).to.equal(5)
+      expect(Object.keys(pattern)).to.have.lengthOf(5)
     })
 
     it('Pattern constructor should add non-enumerable properties', () => {
@@ -26,18 +26,10 @@ describe('Pattern', () => {
       const pattern = new Pattern()
       expect(typeof pattern.plugins).to.equal('object')
       expect(typeof pattern.autoLayout).to.equal('object')
-      expect(typeof pattern.hooks).to.equal('object')
       expect(typeof pattern.Point).to.equal('function')
       expect(typeof pattern.Path).to.equal('function')
       expect(typeof pattern.Snippet).to.equal('function')
       expect(typeof pattern.Attributes).to.equal('function')
-      expect(typeof pattern.macros).to.equal('object')
-      expect(typeof pattern.__designParts).to.equal('object')
-      expect(typeof pattern.__inject).to.equal('object')
-      expect(typeof pattern.__dependencies).to.equal('object')
-      expect(typeof pattern.__resolvedDependencies).to.equal('object')
-      expect(typeof pattern.__hide).to.equal('object')
-      expect(Array.isArray(pattern.__draftOrder)).to.equal(true)
       expect(pattern.width).to.equal(0)
       expect(pattern.height).to.equal(0)
       expect(pattern.is).to.equal('')
@@ -58,7 +50,7 @@ describe('Pattern', () => {
         absoluteOptions: {},
       }
       for (const [key, value] of Object.entries(dflts)) {
-        if (typeof value === 'object') expect(Object.keys(value).length).to.equal(0)
+        if (typeof value === 'object') expect(Object.keys(value)).to.have.lengthOf(0)
         else expect(pattern.settings[0][key]).to.equal(value)
       }
     })
@@ -111,7 +103,7 @@ describe('Pattern', () => {
       parts: [partC],
     })
     const pattern = new Pattern()
-    pattern.draft()
+    pattern.__init()
 
     it('Pattern.__init() should resolve all measurements', () => {
       expect(
@@ -120,19 +112,19 @@ describe('Pattern', () => {
     })
 
     it('Pattern.__init() should resolve required measurements', () => {
-      expect(pattern.config.measurements.length).to.equal(2)
+      expect(pattern.config.measurements).to.have.lengthOf(2)
       expect(pattern.config.measurements[0]).to.equal('head')
       expect(pattern.config.measurements[1]).to.equal('knee')
     })
 
     it('Pattern.__init() should resolve optional measurements', () => {
-      expect(pattern.config.optionalMeasurements.length).to.equal(2)
+      expect(pattern.config.optionalMeasurements).to.have.lengthOf(2)
       expect(pattern.config.optionalMeasurements[0]).to.equal('chest')
       expect(pattern.config.optionalMeasurements[1]).to.equal('waist')
     })
 
     it('Pattern.__init() should resolve options', () => {
-      expect(Object.keys(pattern.config.options).length).to.equal(3)
+      expect(Object.keys(pattern.config.options)).to.have.lengthOf(3)
       for (const [key, value] of Object.entries(partA.options.optA)) {
         expect(pattern.config.options.optA[key]).to.equal(value)
       }
@@ -145,27 +137,27 @@ describe('Pattern', () => {
     })
 
     it('Pattern.__init() should resolve parts', () => {
-      expect(pattern.designConfig.parts.length).to.equal(3)
+      expect(Object.keys(pattern.config.parts)).to.have.lengthOf(3)
     })
 
     it('Pattern.__init() should resolve plugins', () => {
-      expect(Object.keys(pattern.config.plugins).length).to.equal(1)
+      expect(Object.keys(pattern.config.plugins)).to.have.lengthOf(1)
     })
 
     it('Pattern.__init() should set config data in the store', () => {
-      expect(pattern.setStores[0].get('data.name')).to.equal('test')
-      expect(pattern.setStores[0].get('data.version')).to.equal('1.2.3')
+      expect(pattern.store.get('data.name')).to.equal('test')
+      expect(pattern.store.get('data.version')).to.equal('1.2.3')
     })
 
     it('Pattern.__init() should resolve dependencies', () => {
       expect(typeof pattern.config.resolvedDependencies).to.equal('object')
       expect(Array.isArray(pattern.config.resolvedDependencies['test.partA'])).to.equal(true)
-      expect(pattern.config.resolvedDependencies['test.partA'].length).to.equal(0)
+      expect(pattern.config.resolvedDependencies['test.partA']).to.have.lengthOf(0)
       expect(Array.isArray(pattern.config.resolvedDependencies['test.partB'])).to.equal(true)
-      expect(pattern.config.resolvedDependencies['test.partB'].length).to.equal(1)
+      expect(pattern.config.resolvedDependencies['test.partB']).to.have.lengthOf(1)
       expect(pattern.config.resolvedDependencies['test.partB'][0]).to.equal('test.partA')
       expect(Array.isArray(pattern.config.resolvedDependencies['test.partC'])).to.equal(true)
-      expect(pattern.config.resolvedDependencies['test.partC'].length).to.equal(2)
+      expect(pattern.config.resolvedDependencies['test.partC']).to.have.lengthOf(2)
       expect(
         pattern.config.resolvedDependencies['test.partC'].indexOf('test.partA') !== -1
       ).to.equal(true)
@@ -179,6 +171,89 @@ describe('Pattern', () => {
       expect(pattern.config.draftOrder[0]).to.equal('test.partA')
       expect(pattern.config.draftOrder[1]).to.equal('test.partB')
       expect(pattern.config.draftOrder[2]).to.equal('test.partC')
+    })
+
+    it('Pattern.__init() should overwrite options from dependencies', () => {
+      const partD = {
+        name: 'test.partD',
+        from: partB,
+        options: {
+          optB: { deg: 25, min: 15, max: 45 },
+        },
+        draft: ({ part }) => part,
+      }
+
+      const Pattern = new Design({
+        data: {
+          name: 'test',
+          version: '1.2.3',
+        },
+        parts: [partD],
+      })
+      const pattern = new Pattern()
+      pattern.__init()
+      for (const [key, value] of Object.entries(partD.options.optB)) {
+        expect(pattern.config.options.optB[key]).to.equal(value)
+      }
+    })
+
+    it('Pattern.__init() should overwrite options from complex dependencies', () => {
+      const partD = {
+        name: 'test.partD',
+        from: partB,
+        options: {
+          optB: { deg: 25, min: 15, max: 45 },
+        },
+        draft: ({ part }) => part,
+      }
+
+      const partE = {
+        name: 'test.partE',
+        from: partD,
+        options: {
+          optB: { deg: 10, min: 15, max: 50 },
+        },
+        draft: ({ part }) => part,
+      }
+
+      const Pattern = new Design({
+        data: {
+          name: 'test',
+          version: '1.2.3',
+        },
+        parts: [partC, partE],
+      })
+      const pattern = new Pattern()
+      pattern.__init()
+      for (const [key, value] of Object.entries(partE.options.optB)) {
+        expect(pattern.config.options.optB[key]).to.equal(value)
+      }
+    })
+
+    it('Pattern.__init() should resolve nested dependencies for multiple parts that depend on the same part', () => {
+      const partD = {
+        name: 'test.partD',
+        from: partB,
+        draft: ({ part }) => part,
+      }
+
+      const Pattern = new Design({
+        data: {
+          name: 'test',
+          version: '1.2.3',
+        },
+        parts: [partC, partD],
+      })
+      const pattern = new Pattern()
+      pattern.__init()
+      expect(pattern.config.resolvedDependencies['test.partD']).to.have.members([
+        'test.partA',
+        'test.partB',
+      ])
+      expect(pattern.config.resolvedDependencies['test.partC']).to.have.members([
+        'test.partA',
+        'test.partB',
+      ])
     })
 
     // I am aware this does too much for one unit test, but this is to simplify TDD
@@ -242,13 +317,13 @@ describe('Pattern', () => {
       const design = new Design({ parts: [partC] })
       const pattern = new design().addPart(partR).draft()
       // Measurements
-      expect(pattern.config.measurements.length).to.equal(4)
+      expect(pattern.config.measurements).to.have.lengthOf(4)
       expect(pattern.config.measurements.indexOf('measieA') === -1).to.equal(false)
       expect(pattern.config.measurements.indexOf('measieB') === -1).to.equal(false)
       expect(pattern.config.measurements.indexOf('measieC') === -1).to.equal(false)
       expect(pattern.config.measurements.indexOf('measieR') === -1).to.equal(false)
       // Optional measurements
-      expect(pattern.config.optionalMeasurements.length).to.equal(4)
+      expect(pattern.config.optionalMeasurements).to.have.lengthOf(4)
       expect(pattern.config.optionalMeasurements.indexOf('optmeasieA') === -1).to.equal(false)
       expect(pattern.config.optionalMeasurements.indexOf('optmeasieB') === -1).to.equal(false)
       expect(pattern.config.optionalMeasurements.indexOf('optmeasieC') === -1).to.equal(false)
@@ -267,14 +342,14 @@ describe('Pattern', () => {
       expect(pattern.config.options.optionR.list[1]).to.equal('green')
       expect(pattern.config.options.optionR.list[2]).to.equal('blue')
       // Dependencies
-      expect(pattern.__dependencies.partB[0]).to.equal('partA')
-      expect(pattern.__dependencies.partC[0]).to.equal('partB')
-      expect(pattern.__dependencies.partR[0]).to.equal('partC')
-      expect(pattern.__dependencies.partR[1]).to.equal('partA')
+      expect(pattern.config.directDependencies.partB).to.include('partA')
+      expect(pattern.config.directDependencies.partC).to.include('partB')
+      expect(pattern.config.directDependencies.partR).to.include('partC')
+      expect(pattern.config.directDependencies.partR).to.include('partA')
       // Inject
-      expect(pattern.__inject.partB).to.equal('partA')
-      expect(pattern.__inject.partC).to.equal('partB')
-      expect(pattern.__inject.partR).to.equal('partA')
+      expect(pattern.config.inject.partB).to.equal('partA')
+      expect(pattern.config.inject.partC).to.equal('partB')
+      expect(pattern.config.inject.partR).to.equal('partA')
       // Draft order
       expect(pattern.config.draftOrder[0]).to.equal('partA')
       expect(pattern.config.draftOrder[1]).to.equal('partB')
@@ -390,13 +465,13 @@ describe('Pattern', () => {
       const design = new Design({ parts: [partD] })
       const pattern = new design().draft()
       // Measurements
-      expect(pattern.config.measurements.length).to.equal(4)
+      expect(pattern.config.measurements).to.have.lengthOf(4)
       expect(pattern.config.measurements.indexOf('measieA') === -1).to.equal(false)
       expect(pattern.config.measurements.indexOf('measieB') === -1).to.equal(false)
       expect(pattern.config.measurements.indexOf('measieC') === -1).to.equal(false)
       expect(pattern.config.measurements.indexOf('measieD') === -1).to.equal(false)
       // Optional measurements
-      expect(pattern.config.optionalMeasurements.length).to.equal(4)
+      expect(pattern.config.optionalMeasurements).to.have.lengthOf(4)
       expect(pattern.config.optionalMeasurements.indexOf('optmeasieA') === -1).to.equal(false)
       expect(pattern.config.optionalMeasurements.indexOf('optmeasieB') === -1).to.equal(false)
       expect(pattern.config.optionalMeasurements.indexOf('optmeasieC') === -1).to.equal(false)
@@ -415,12 +490,12 @@ describe('Pattern', () => {
       expect(pattern.config.options.optionD.list[1]).to.equal('green')
       expect(pattern.config.options.optionD.list[2]).to.equal('blue')
       // Dependencies
-      expect(pattern.__dependencies.partB[0]).to.equal('partA')
-      expect(pattern.__dependencies.partC[0]).to.equal('partB')
-      expect(pattern.__dependencies.partD[0]).to.equal('partC')
+      expect(pattern.config.directDependencies.partB[0]).to.equal('partA')
+      expect(pattern.config.directDependencies.partC[0]).to.equal('partB')
+      expect(pattern.config.directDependencies.partD[0]).to.equal('partC')
       // Inject
-      expect(pattern.__inject.partB).to.equal('partA')
-      expect(pattern.__inject.partC).to.equal('partB')
+      expect(pattern.config.inject.partB).to.equal('partA')
+      expect(pattern.config.inject.partC).to.equal('partB')
       // Draft order
       expect(pattern.config.draftOrder[0]).to.equal('partA')
       expect(pattern.config.draftOrder[1]).to.equal('partB')
@@ -495,7 +570,7 @@ describe('Pattern', () => {
       const design = new Design({ parts: [part] })
       const pattern = new design()
       pattern.draft()
-      expect(pattern.hooks.preRender.length).to.equal(1)
+      expect(pattern.plugins.hooks.preRender).to.have.lengthOf(1)
     })
 
     it('Pattern.__init() should load array of plugins', () => {
@@ -525,10 +600,10 @@ describe('Pattern', () => {
       const design = new Design({ parts: [part] })
       const pattern = new design()
       pattern.__init()
-      expect(pattern.hooks.preRender.length).to.equal(2)
+      expect(pattern.plugins.hooks.preRender).to.have.lengthOf(2)
     })
 
-    it('Pattern.__init() should load conditional plugin', () => {
+    it('Pattern.__init() should load conditional plugin if condition is met', () => {
       const plugin = {
         name: 'example',
         version: 1,
@@ -546,11 +621,11 @@ describe('Pattern', () => {
       }
       const design = new Design({ parts: [part] })
       const pattern = new design()
-      pattern.draft()
-      expect(pattern.hooks.preRender.length).to.equal(1)
+      pattern.__init()
+      expect(pattern.plugins.hooks.preRender).to.have.lengthOf(1)
     })
 
-    it('Pattern.__init() should not load conditional plugin', () => {
+    it('Pattern.__init() should not load conditional plugin if condition is not met', () => {
       const plugin = {
         name: 'example',
         version: 1,
@@ -568,7 +643,7 @@ describe('Pattern', () => {
       }
       const design = new Design({ parts: [part] })
       const pattern = new design()
-      expect(pattern.hooks.preRender.length).to.equal(0)
+      expect(pattern.plugins.hooks.preRender).to.have.lengthOf(0)
     })
 
     it('Pattern.__init() should load multiple conditional plugins', () => {
@@ -603,7 +678,39 @@ describe('Pattern', () => {
       const design = new Design({ parts: [part] })
       const pattern = new design()
       pattern.draft()
-      expect(pattern.hooks.preRender.length).to.equal(1)
+      expect(pattern.plugins.hooks.preRender).to.have.lengthOf(1)
+    })
+
+    it('Pattern.__init() should load a conditional plugin multiple times with different conditions', () => {
+      const plugin1 = {
+        name: 'example1',
+        version: 1,
+        hooks: {
+          preRender: function (svg) {
+            svg.attributes.add('freesewing:plugin-example', 1)
+          },
+        },
+      }
+
+      const condition1 = () => true
+      const condition2 = () => false
+      const part = {
+        name: 'test.part',
+        plugins: [{ plugin: plugin1, condition: condition1 }],
+        draft: (part) => part,
+      }
+      const part2 = {
+        name: 'test.part2',
+        plugins: [{ plugin: plugin1, condition: condition2 }],
+        draft: (part) => part,
+      }
+      const design = new Design({ parts: [part, part2] })
+      const pattern = new design()
+      pattern.__init()
+      expect(pattern.config.plugins).to.be.an('object').that.has.all.keys('example1', 'example1_')
+      expect(pattern.config.plugins.example1.plugin).to.deep.equal(plugin1)
+      expect(pattern.config.plugins.example1_.plugin).to.deep.equal(plugin1)
+      expect(pattern.plugins.hooks.preRender).to.have.lengthOf(1)
     })
 
     it('Load conditional plugins that are also passing data', () => {
@@ -642,7 +749,7 @@ describe('Pattern', () => {
       })
       const pattern = new design()
       pattern.__init()
-      expect(pattern.hooks.preRender.length).to.equal(2)
+      expect(pattern.plugins.hooks.preRender).to.have.lengthOf(2)
     })
 
     it('Pattern.__init() should register a hook via on', () => {
@@ -684,6 +791,32 @@ describe('Pattern', () => {
             function () {
               count++
             },
+            function () {
+              count++
+            },
+          ],
+        },
+      }
+      const Pattern = new Design()
+      const pattern = new Pattern()
+      let count = 0
+      pattern._draft = () => {}
+      pattern.use(plugin)
+      pattern.draft()
+      expect(count).to.equal(2)
+    })
+
+    it('Pattern.__init() should not register the same method twice on one hook', () => {
+      function hookMethod() {
+        count++
+      }
+      const plugin = {
+        name: 'test',
+        version: '0.1-test',
+        hooks: {
+          preDraft: [
+            hookMethod,
+            hookMethod,
             function () {
               count++
             },

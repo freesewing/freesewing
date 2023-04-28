@@ -2,6 +2,7 @@ import { sleeve as brianSleeve } from '@freesewing/brian'
 import { front } from './front.mjs'
 import { back } from './back.mjs'
 import { cuffEase, sleeveLengthBonus, ribbingHeight } from './options.mjs'
+import { hidePresets } from '@freesewing/core'
 
 function hugoSleeve({
   utils,
@@ -158,6 +159,7 @@ function hugoSleeve({
       .curve(points.slopeFrontCp2, points.capQ4Cp2, points.bicepsLeft)
       .shiftAlong(store.get('notchFront'))
     snippets.frontNotch = new Snippet('notch', points.frontNotch)
+    snippets.shoulderNotch = new Snippet('notch', points.raglanTop)
     points.backNotch = new Path()
       .move(points.raglanTipBack)
       .curve(points.raglanTipBack, points.slopeBackCp2, points.slopeBack)
@@ -223,7 +225,7 @@ function hugoSleeve({
 export const sleeve = {
   name: 'hugo.sleeve',
   from: brianSleeve,
-  hideDependencies: true,
+  hide: hidePresets.HIDE_TREE,
   after: [front, back],
   options: { cuffEase, sleeveLengthBonus, ribbingHeight },
   draft: hugoSleeve,

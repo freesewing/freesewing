@@ -1,8 +1,8 @@
 joinFreeSewing: FreeSewing beitreten
-toReceiveSignupLink: Um einen Registrierungs-Link zu erhalten, geben Sie Ihre E-Mail-Adresse ein
-emailAddress: E-Mail Adresse
-pleaseProvideValidEmail: Bitte gebe eine gültige E-Mail Adresse an
-emailSignupLink: Bitte sende mir den Login-Link
+toReceiveSignupLink: Um einen Registrierungs-Link zu erhalten, gib deine E-Mail-Adresse ein
+emailAddress: E-Mail-Adresse
+pleaseProvideValidEmail: Bitte gib eine gültige E-Mail-Adresse an
+emailSignupLink: Bitte sende mir den Anmeldelink per E-Mail
 alreadyHaveAnAccount: Hast du bereits ein Konto?
 dontHaveAnAccount: Du hast noch keinen Account?
 signIn: Anmelden

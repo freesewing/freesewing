@@ -6,7 +6,7 @@ import es from '../../../../public/locales/es/passwordreset.json' assert { type:
 import fr from '../../../../public/locales/fr/passwordreset.json' assert { type: 'json' }
 import nl from '../../../../public/locales/nl/passwordreset.json' assert { type: 'json' }
 
-export const passwordReset = {
+export const passwordreset = {
   html: wrap.html(`
   ${headingRow.html}
   <tr>

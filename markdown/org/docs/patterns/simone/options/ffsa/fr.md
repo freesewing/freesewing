@@ -10,4 +10,4 @@ This option controls the amount of flat-felled seam allowance as a factor of the
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_ffsa_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_ffsa_sample.svg "Effet de cette option sur le modèle")

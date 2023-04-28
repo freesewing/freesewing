@@ -74,41 +74,6 @@ describe('Store', () => {
     expect(pattern.setStores[0].get('test.message.info')).to.equal('hello info')
   })
 
-  it('Should make top-level plugin methods available via shorthand', () => {
-    const plugin = {
-      name: 'test',
-      version: 1,
-      store: [
-        [
-          'methodA',
-          function (store, name, msg) {
-            store.set(['test', name, 'a'], msg)
-          },
-        ],
-        [
-          'methodB',
-          function (store, name, msg) {
-            store.set(['test', name, 'b'], msg)
-          },
-        ],
-      ],
-    }
-    const part = {
-      name: 'example_part',
-      plugins: [plugin],
-      draft: ({ methodA, methodB, part }) => {
-        methodA('hello A')
-        methodB('hello B')
-        return part
-      },
-    }
-    const Test = new Design({ parts: [part] })
-    const pattern = new Test()
-    pattern.draft()
-    expect(pattern.setStores[0].get('test.example_part.a')).to.equal('hello A')
-    expect(pattern.setStores[0].get('test.example_part.b')).to.equal('hello B')
-  })
-
   it('Should log a warning when trying to extend a protected method via the constructor', () => {
     const store = new Store([['get', () => false]])
     expect(store.logs.warning.length).to.equal(1)

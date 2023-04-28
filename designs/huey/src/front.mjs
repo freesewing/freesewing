@@ -102,7 +102,9 @@ export const front = {
   name: 'huey.front',
   from: brianFront,
   after: back,
-  hideDependencies: true,
+  hide: {
+    from: true,
+  },
   options: {
     pocket: { bool: true, menu: 'style' },
     pocketHeight: { pct: 30, min: 25, max: 35, menu: 'style' },

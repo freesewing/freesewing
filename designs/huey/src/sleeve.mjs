@@ -1,5 +1,6 @@
 import { sleeve as brianSleeve } from '@freesewing/brian'
 import { back } from './back.mjs'
+import { hidePresets } from '@freesewing/core'
 
 function draftHueySleeve({
   Point,
@@ -93,6 +94,6 @@ export const sleeve = {
   name: 'huey.sleeve',
   from: brianSleeve,
   after: back,
-  hideDependencies: true,
   draft: draftHueySleeve,
+  hide: hidePresets.HIDE_TREE,
 }

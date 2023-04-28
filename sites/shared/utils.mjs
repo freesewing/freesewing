@@ -26,35 +26,52 @@ export const formatImperial = (neg, inch, numo = false, deno = false, format = '
   }
 }
 
+/**
+ * format a value to the nearest fraction with a denominator that is a power of 2
+ * or a decimal if the value is between fractions
+ * NOTE: this method does not convert mm to inches. It will turn any given value directly into its equivalent fractional representation
+ *
+ * fraction: the value to process
+ * format: the type of formatting to apply. html, notags, or anything else which will only return numbers
+ */
+export const formatFraction128 = (fraction, format = 'html') => {
+  let negative = ''
+  let inches = ''
+  let rest = ''
+  if (fraction < 0) {
+    fraction = fraction * -1
+    negative = '-'
+  }
+  if (Math.abs(fraction) < 1) rest = fraction
+  else {
+    inches = Math.floor(fraction)
+    rest = fraction - inches
+  }
+  let fraction128 = Math.round(rest * 128)
+  if (fraction128 == 0) return formatImperial(negative, inches, false, false, format)
+
+  for (let i = 1; i < 7; i++) {
+    const numoFactor = Math.pow(2, 7 - i)
+    if (fraction128 % numoFactor === 0)
+      return formatImperial(negative, inches, fraction128 / numoFactor, Math.pow(2, i), format)
+  }
+
+  return (
+    negative +
+    Math.round(fraction * 100) / 100 +
+    (format === 'html' || format === 'notags' ? '"' : '')
+  )
+}
+
 // Format a value in mm based on the user's units
 // Format can be html, notags, or anything else which will only return numbers
 export const formatMm = (val, units, format = 'html') => {
   val = roundMm(val)
   if (units === 'imperial') {
     if (val == 0) return formatImperial('', 0, false, false, format)
-    let negative = ''
-    let inches = ''
-    let rest = ''
-    let fraction = val / 25.4
-    if (fraction < 0) {
-      fraction = fraction * -1
-      negative = '-'
-    }
-    if (Math.abs(fraction) < 1) rest = fraction
-    else {
-      inches = Math.floor(fraction)
-      rest = fraction - inches
-    }
-    let fraction128 = Math.round(rest * 128)
-    if (fraction128 == 0) return formatImperial(negative, inches, false, false, format)
-    if (fraction128 % 64 == 0) return formatImperial(negative, inches, fraction128 / 64, 2, format)
-    if (fraction128 % 32 == 0) return formatImperial(negative, inches, fraction128 / 32, 4, format)
-    if (fraction128 % 16 == 0) return formatImperial(negative, inches, fraction128 / 16, 8, format)
-    if (fraction128 % 8 == 0) return formatImperial(negative, inches, fraction128 / 8, 16, format)
-    if (fraction128 % 4 == 0) return formatImperial(negative, inches, fraction128 / 4, 32, format)
-    if (fraction128 % 2 == 0) return formatImperial(negative, inches, fraction128 / 2, 64, format)
 
-    return negative + Math.round(fraction * 100) / 100 + '"'
+    let fraction = val / 25.4
+    return formatFraction128(fraction, format)
   } else {
     if (format === 'html' || format === 'notags') return roundMm(val / 10) + 'cm'
     else return roundMm(val / 10)
@@ -170,7 +187,7 @@ export const optionsMenuStructure = (options) => {
   // Fixme: One day we should sort this based on the translation
   for (const option of orderBy(sorted, ['menu', 'name'], ['asc'])) {
     if (typeof option === 'object') {
-      if (option.menu) set(menu, [option.menu, option.name], optionType(option))
+      if (option.menu) set(menu, `${option.menu}.${option.name}`, optionType(option))
       else if (typeof option.menu === 'undefined') {
         console.log(
           `Warning: Option ${option.name} does not have a menu config. ` +

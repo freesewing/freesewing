@@ -174,7 +174,7 @@ function draftBentSleeve({ Path, paths, points, store, options, part }) {
 export const sleeve = {
   name: 'bent.sleeve',
   after: front,
-  hide: true,
+  hide: { self: true },
   measurements: ['shoulderToElbow', 'shoulderToWrist', 'wrist'],
   options: {
     // Constants

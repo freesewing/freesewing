@@ -9,7 +9,8 @@ import { prebuildNavigation } from 'site/prebuild/navigation.mjs'
 // Translation
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
-
+import toastMethod from 'react-hot-toast'
+import { Toast } from 'site/components/toast/index.mjs'
 /*
  * Dumb method to generate a unique (enough) ID for submissions to bugsnag
  */
@@ -77,13 +78,30 @@ const buildNavigation = (lang, t) => {
   return nav
 }
 
+/* Custom toast methods */
+const toastMethods = (t) => ({
+  info: (children) => toastMethod.custom(<Toast type="info">{children}</Toast>),
+  warning: (children) => toastMethod.custom(<Toast type="warning">{children}</Toast>),
+  error: (children) => toastMethod.custom(<Toast type="error">{children}</Toast>),
+  accent: (children) => toastMethod.custom(<Toast type="accent">{children}</Toast>),
+  success: (children) => toastMethod.custom(<Toast type="success">{children}</Toast>),
+  for: {
+    settingsSaved: () =>
+      toastMethod.custom(
+        <Toast type="success">
+          <span>{t('settingsSaved')}</span>
+        </Toast>
+      ),
+  },
+})
+
 /*
  * The actual hook
  */
 export function useApp({ bugsnag }) {
   // Load translation method
   const locale = useRouter().locale
-  const { t } = useTranslation()
+  const { t } = useTranslation(['toast'])
 
   // Persistent state
   const [account, setAccount, accountReady] = useLocalStorage('account', { username: false })
@@ -94,6 +112,7 @@ export function useApp({ bugsnag }) {
   const [primaryMenu, setPrimaryMenu] = useState(false)
   const [navigation, setNavigation] = useState(buildNavigation(locale, t))
   const [slug, setSlug] = useState('/')
+  const [modal, setModal] = useState(false)
   const [loading, setLoading] = useState(false)
 
   // State methods
@@ -152,6 +171,7 @@ export function useApp({ bugsnag }) {
     primaryMenu,
     slug,
     theme,
+    modal,
 
     // State setters
     setAccount,
@@ -167,9 +187,11 @@ export function useApp({ bugsnag }) {
     }, // Always close menu when navigating
     stopLoading: () => setLoading(false),
     updateNavigation,
+    setModal,
 
     // State handlers
     togglePrimaryMenu,
+    toast: toastMethods(t),
 
     // Navigation
     getTitle,

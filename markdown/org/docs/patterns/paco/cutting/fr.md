@@ -4,9 +4,9 @@ title: "Paco pants: Cutting Instructions"
 
 <Tip>
 
-###### Cut out only what you need
+###### Ne coupez que ce dont vous avez besoin.
 
-Depending on the choices you made in your pattern, you may not need all parts.
+En fonction des choix que vous faites dans votre patron, vous n'avez peut-être pas besoin de toutes les pièces.
 Si une partie de motif n'est pas imprimée, cela signifie que vous n'en avez pas besoin.
 
 </Tip>
@@ -25,10 +25,10 @@ Si une partie de motif n'est pas imprimée, cela signifie que vous n'en avez pas
 
 <Warning>
 
-#### Caveats
+#### Avertissements
 
-- There is no seam allowance on the interfacing
-- There is extra seam allowance on the waist band and hem
-- The waistband is a mere rectangle, so it's not fully printed to save paper
+- Les marges de couture ne sont pas incluses
+- Il y a une marge de couture supplémentaire sur la bande de taille et l'ourlet
+- La ceinture est un simple rectangle, donc il n'est pas entièrement imprimé pour économiser du papier
 
 </Warning>

@@ -15,7 +15,7 @@ export const useTheme = () => {
 
       setStoredTheme(prefersDarkMode ? 'dark' : 'light')
     }
-  }, [ready])
+  }, [ready, storedTheme, setStoredTheme])
 
   return [storedTheme, setStoredTheme]
 }

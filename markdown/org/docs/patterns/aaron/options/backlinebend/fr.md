@@ -1,13 +1,13 @@
 - - -
-title: "Back armhole shape"
+titre : "Forme de l'emmanchure du dos"
 - - -
 
-![The back armhole shape option on Aaron](./backlinebend.svg)
+![L'option de la forme de l'emmanchure du dos sur Aaron](./backlinebend.svg)
 
-Determines the bend of the armhole at the back. In other words, the amount the arm opening is cut-out on your back.
+Détermine la courbure de l'emmanchure dans le dos. En d'autres termes, il s'agit de l'ampleur de la découpe de l'ouverture sur votre dos.
 
 > Des valeurs plus élevées courbent davantage les emmanchures, ce qui donne plus un style de dos nageur.
 
 ## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_backlinebend_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](aaron_backlinebend_sample.svg "Effet de cette option sur le modèle")

@@ -6,8 +6,8 @@ title: Zickzackstich
 
 Ein Zickzackstich ist nützlich, wenn man eine dehnbare Naht nähen muss (beispielsweise bei Strickstoffen). Du kannst ihn auch für einen dekorativen Effekt verwenden, oder um die Kante deines Stoffes zu sichern.
 
-As most, if not all, sewing machines can sew a zig-zag stitch, it's a popular alternative for when more specialised stitches are not available.
+Da die meisten, wenn nicht sogar alle, Nähmaschinen einen Zickzackstich nähen können, ist er eine beliebte Alternative, wenn speziellere Stiche nicht verfügbar sind.
 
-> Everyone's favourite encyclopedia has more on the zig-zag stitch: [Zigzag stitch on Wikipedia](http://en.wikipedia.org/wiki/Zigzag_stitch)
+> Die allseits beliebte Enzyklopädie hat mehr Informationen über den Zickzackstich: [Zickzackstich auf Wikipedia (engl. *zigzag stitch*)](http://en.wikipedia.org/wiki/Zigzag_stitch)
 
 > Bild von [Kristin Roach](https://www.flickr.com/photos/kristinroach/3161126359)

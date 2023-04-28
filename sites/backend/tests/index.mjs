@@ -2,7 +2,7 @@ import { userTests } from './user.mjs'
 import { mfaTests } from './mfa.mjs'
 import { accountTests } from './account.mjs'
 import { apikeyTests } from './apikey.mjs'
-import { personTests } from './person.mjs'
+import { setTests } from './set.mjs'
 import { patternTests } from './pattern.mjs'
 import { setup } from './shared.mjs'
 
@@ -11,7 +11,7 @@ const runTests = async (...params) => {
   await mfaTests(...params)
   await apikeyTests(...params)
   await accountTests(...params)
-  await personTests(...params)
+  await setTests(...params)
   await patternTests(...params)
 }
 

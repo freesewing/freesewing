@@ -68,6 +68,9 @@ function draftCarltonTail({
     .line(points.fold5Bottom)
     .attr('class', 'fabric dashed')
 
+  store.cutlist.addCut()
+  store.cutlist.addCut({ material: 'lining' })
+
   if (complete) {
     points.title = points.fold4Top.shiftFractionTowards(points.waistBottom, 0.5)
     macro('title', {

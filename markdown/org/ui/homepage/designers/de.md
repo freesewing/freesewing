@@ -8,7 +8,7 @@ Parametrisches Design bezieht sich auf das Verwenden von Parametern oder Variabl
 In Schnittmustern sind die _Parameter_ das, was Nutzer/-innen zur Verfügung stellen: ihre Körpermaße und die Optionen, die sie ausgewählt haben.  
 Die _Regeln_ des Designs ist das, was du als Designer/-in festlegst.
 
-#### Was bedeutet das für Designer/-innen?
+#### Was bedeutet das für Designer*innen?
 
 Beim Entwurf oder Design von Schnittmustern oder Kleidungsstücken ist es üblich, mit einem _Schnittmodell_ (oder einer _Schneiderpuppe_) zu beginnen. Die Maße des Schnittmodells werden als Input im initialen Design verwendet.
 

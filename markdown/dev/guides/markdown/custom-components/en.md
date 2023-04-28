@@ -124,6 +124,37 @@ or can't fix it now.
 </Tab>
 </Tabs>
 
+## Mermaid
+
+Not strictly speaking a custom tag, but by using a fenced code block with the
+`mermaid` language, you can generate [Mermaid](https://mermaid.js.org/)
+diagrams. Like this:
+
+<Tabs tabs="example, markdown">
+<Tab>
+```mermaid
+graph LR;
+    A--> B & C & D;
+    B--> A & E;
+    C--> A & E;
+    D--> A & E;
+    E--> B & C & D;
+```
+</Tab>
+<Tab>
+````markdown
+```mermaid
+graph LR;
+    A--> B & C & D;
+    B--> A & E;
+    C--> A & E;
+    D--> A & E;
+    E--> B & C & D;
+```
+````
+</Tab>
+</Tabs>
+
 ## Note
 
 Use **Note** to add something that stands out to draw attention.

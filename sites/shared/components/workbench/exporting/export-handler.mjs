@@ -1,8 +1,14 @@
 import Worker from 'web-worker'
 import fileSaver from 'file-saver'
 import { themePlugin } from '@freesewing/plugin-theme'
-import { pagesPlugin } from '../layout/print/plugin.mjs'
-import { capitalize } from 'shared/utils.mjs'
+import { pluginI18n } from '@freesewing/plugin-i18n'
+import { pagesPlugin, fabricPlugin } from '../layout/plugin-layout-part.mjs'
+import { pluginAnnotations } from '@freesewing/plugin-annotations'
+import { cutLayoutPlugin } from '../layout/cut/plugin-cut-layout.mjs'
+import { fabricSettingsOrDefault } from '../layout/cut/index.mjs'
+import { useFabricLength } from '../layout/cut/settings.mjs'
+import { capitalize, formatMm } from 'shared/utils.mjs'
+import get from 'lodash.get'
 
 export const exportTypes = {
   exportForPrinting: ['a4', 'a3', 'a2', 'a1', 'a0', 'letter', 'tabloid'],
@@ -15,8 +21,76 @@ export const defaultPdfSettings = {
   orientation: 'portrait',
   margin: 10,
   coverPage: true,
+  cutlist: true,
 }
 
+/**
+ * Instantiate a pattern that uses plugins theme, i18n, and cutlist
+ * @param  {Design} design    the design to construct the pattern from
+ * @param  {Object} gist      the gist
+ * @param  {Object} overwrite settings to overwrite gist settings with
+ * @param  {string} format    the export format this pattern will be prepared for
+ * @param  {function} t         the i18n function
+ * @return {Pattern}           a pattern
+ */
+const themedPattern = (design, gist, overwrite, format, t) => {
+  const pattern = new design({ ...gist, ...overwrite })
+
+  // add the theme and translation to the pattern
+  pattern.use(themePlugin, { stripped: format !== 'svg', skipGrid: ['pages'] })
+  pattern.use(pluginI18n, { t })
+  pattern.use(pluginAnnotations)
+
+  return pattern
+}
+
+/**
+ * Generate svgs of all cutting layouts for the pattern
+ * @param  {Pattern} pattern the pattern to generate cutting layouts for
+ * @param  {Design} design  the design constructor for the pattern
+ * @param  {Object} gist    the gist
+ * @param  {string} format  the export format this pattern will be prepared for
+ * @param  {function} t       the i18n function
+ * @return {Object}         a dictionary of svgs and related translation strings, keyed by fabric
+ */
+const generateCutLayouts = (pattern, design, gist, format, t) => {
+  // get the fabrics from the already drafted base pattern
+  const fabrics = pattern.setStores[pattern.activeSet].cutlist.getCutFabrics(
+    pattern.settings[0]
+  ) || ['fabric']
+  if (!fabrics.length) return
+
+  const isImperial = gist.units === 'imperial'
+  const cutLayouts = {}
+  // each fabric
+  fabrics.forEach((f) => {
+    // get the settings and layout for that fabric
+    const fabricSettings = fabricSettingsOrDefault(gist, f)
+    const fabricLayout = get(gist, ['layouts', 'cuttingLayout', f], true)
+
+    // make a new pattern
+    const fabricPattern = themedPattern(design, gist, { layout: fabricLayout }, format, t)
+      // add cut layout plugin and fabric plugin
+      .use(cutLayoutPlugin(f, fabricSettings.grainDirection))
+      .use(fabricPlugin({ ...fabricSettings, printStyle: true, setPatternSize: 'width' }))
+
+    // draft and render
+    fabricPattern.draft()
+    const svg = fabricPattern.render()
+    // include translations
+    cutLayouts[f] = {
+      svg,
+      title: t('plugin:' + f),
+      dimensions: t('plugin:fabricSize', {
+        width: formatMm(fabricSettings.sheetWidth, gist.units, 'notags'),
+        length: useFabricLength(isImperial, fabricPattern.height, 'notags'),
+        interpolation: { escapeValue: false },
+      }),
+    }
+  })
+
+  return cutLayouts
+}
 /**
  * Handle exporting the draft or gist
  * format: format to export to
@@ -71,18 +145,7 @@ export const handleExport = async (format, gist, design, t, app, onComplete, onE
     gist.embed = false
     // make a pattern instance for export rendering
     const layout = gist.layouts?.printingLayout || gist.layout || true
-    let pattern = new design({ ...gist, layout })
-
-    // add the theme and translation to the pattern
-    pattern.use(themePlugin, { stripped: format !== 'svg', skipGrid: ['pages'] })
-    pattern.use(
-      {
-        hooks: {
-          insertText: (locale, text, { t }) => t(text),
-        },
-      },
-      { t }
-    )
+    let pattern = themedPattern(design, gist, { layout }, format, t)
 
     // a specified size should override the gist one
     if (format !== 'pdf') {
@@ -106,6 +169,7 @@ export const handleExport = async (format, gist, design, t, app, onComplete, onE
           design: capitalize(pattern.designConfig.data.name.replace('@freesewing/', '')),
           tagline: t('common:sloganCome') + '. ' + t('common:sloganStay'),
           url: window.location.href,
+          cuttingLayout: t('plugin:cuttingLayout'),
         }
       }
 
@@ -115,6 +179,11 @@ export const handleExport = async (format, gist, design, t, app, onComplete, onE
 
       // add the svg and pages data to the worker args
       workerArgs.pages = pattern.setStores[pattern.activeSet].get('pages')
+
+      // add cutting layouts if requested
+      if (format !== 'svg' && settings.cutlist) {
+        workerArgs.cutLayouts = generateCutLayouts(pattern, design, gist, format, t)
+      }
 
       // post a message to the worker with all needed data
       worker.postMessage(workerArgs)

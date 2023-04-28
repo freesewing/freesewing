@@ -135,15 +135,6 @@ Part.prototype.shorthand = function () {
     utils: utils,
     Bezier: Bezier,
   }
-  // Add top-level store methods and add a part name parameter
-  const partName = this.name
-  for (const [key, method] of Object.entries(this.context.store)) {
-    if (typeof method === 'function')
-      shorthand[key] = function (...args) {
-        return method(partName, ...args)
-      }
-  }
-
   // We'll need this
   let self = this
 
@@ -304,6 +295,7 @@ Part.prototype.__getIdClosure = function () {
 
 /**
  * Copies point/path/snippet data from part orig into this
+ * Also sets the freeId
  *
  * @private
  * @param {object} orig - The original part to inject into this
@@ -316,6 +308,7 @@ Part.prototype.__inject = function (orig) {
     }
   }
 
+  this.freeId = orig.freeId
   for (let i in orig.points) this.points[i] = orig.points[i].clone()
   for (let i in orig.paths) {
     this.paths[i] = orig.paths[i].clone()

@@ -42,7 +42,7 @@ If you are making adjustments you may wish to sew the seams _wrong sides togethe
 
 <Tip>
 
-Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. etc. Things like these are signs of where the pattern may need adjusting.
+Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. Solche Dinge sind Zeichen dafür, wo das Schnittmuster möglicherweise angepasst werden muss.
 
 Sometimes you may need to wear the mock-up for an extended amount of time to get a better sense of the fit so don't be afraid to walk around in it for a couple of hours.
 

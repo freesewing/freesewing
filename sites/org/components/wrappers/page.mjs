@@ -4,10 +4,13 @@ import { useSwipeable } from 'react-swipeable'
 import { useRouter } from 'next/router'
 import { useHotkeys } from 'react-hotkeys-hook'
 // Components
-import { LayoutWrapper } from 'site/components/wrappers/layout.mjs'
+import { LayoutWrapper, ns as layoutNs } from 'site/components/wrappers/layout.mjs'
 import { DocsLayout } from 'site/components/layouts/docs.mjs'
+import { Toaster } from 'site/components/toast/index.mjs'
 // Add feeds
 import { Feeds } from 'site/components/feeds.mjs'
+
+export const ns = [...new Set([...layoutNs])]
 
 /* This component should wrap all page content */
 export const PageWrapper = ({
@@ -36,6 +39,12 @@ export const PageWrapper = ({
     setSearch(true)
   })
 
+  // Always close modal when Escape key is hit
+  useHotkeys('esc', (evt) => {
+    evt.preventDefault()
+    app.setModal(false)
+  })
+
   const [search, setSearch] = useState(false)
 
   const childProps = {
@@ -62,6 +71,23 @@ export const PageWrapper = ({
       <LayoutWrapper {...childProps}>
         {Layout ? <Layout {...childProps}>{children}</Layout> : children}
       </LayoutWrapper>
+      {app.modal ? (
+        <div
+          className={`fixed top-0 left-0 m-0 p-0 shadow drop-shadow-lg w-full h-screen
+              bg-base-100 bg-opacity-90 z-50 hover:cursor-pointer
+              flex flex-row items-center justify-center
+            `}
+          onClick={() => app.setModal(false)}
+        >
+          {app.modal}
+        </div>
+      ) : null}
+      <Toaster
+        position="bottom-right"
+        toastOptions={{
+          className: 'bg-base-100 text-base-content',
+        }}
+      />
     </div>
   )
 }

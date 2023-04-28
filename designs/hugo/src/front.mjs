@@ -1,4 +1,5 @@
 import { front as brianFront } from '@freesewing/brian'
+import { hidePresets } from '@freesewing/core'
 import {
   collarEase,
   armholeDepthFactor,
@@ -10,6 +11,7 @@ import {
   chestEase,
   hipsEase,
   lengthBonus,
+  draftForHighBust,
   ribbingHeight,
 } from './options.mjs'
 
@@ -189,7 +191,7 @@ function hugoFront({
 export const front = {
   name: 'hugo.front',
   from: brianFront,
-  hideDependencies: true,
+  hide: hidePresets.HIDE_TREE,
   measurements: ['hips', 'waistToHips'],
   options: {
     collarEase,
@@ -201,6 +203,7 @@ export const front = {
     s3Armhole,
     chestEase,
     hipsEase,
+    draftForHighBust,
     lengthBonus,
     ribbingHeight,
   },

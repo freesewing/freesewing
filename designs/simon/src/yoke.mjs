@@ -27,7 +27,7 @@ function simonYoke({
   else {
     macro('mirror', {
       mirror: [points.cbNeck, points.cbYoke],
-      paths: [paths.saBase],
+      paths: ['saBase'],
       clone: true,
     })
     paths.saBase = paths.saBase.join(paths.mirroredSaBase.reverse())
@@ -43,14 +43,14 @@ function simonYoke({
     delete snippets.collarNotch
     delete snippets.shoulderNotch
     snippets.sleevecapNotch = new Snippet('notch', points.armholeYokeSplitPreBoxpleat)
-    points.title = new Point(points.neck.x, points.cbYoke.y / 3)
+    points.title = new Point(points.neck.x, points.cbYoke.y / 2)
     macro('title', { at: points.title, nr: 4, title: 'yoke', scale: 0.8 })
-    points.logo = points.title.shift(-90, 50)
+    points.logo = new Point(-points.neck.x, points.cbYoke.y * 0.6)
     snippets.logo = new Snippet('logo', points.logo)
     snippets.logo.attr('data-scale', 0.8)
 
-    points.grainlineFrom = points.cbYoke.shift(0, 20)
-    points.grainlineTo = points.cbNeck.shift(0, 20)
+    points.grainlineFrom = points.cbYoke.shiftFractionTowards(points.cbNeck, 0.2)
+    points.grainlineTo = points.cbNeck.shiftFractionTowards(points.cbYoke, 0.2)
     macro('grainline', {
       from: points.grainlineFrom,
       to: points.grainlineTo,

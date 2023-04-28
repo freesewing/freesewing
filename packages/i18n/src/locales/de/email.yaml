@@ -1,26 +1,26 @@
 ---
-emailChangeActionText: 'Confirm your new E-mail address'
-emailChangeCopy1: 'You requested to change the E-mail address linked to your account at FreeSewing.org.'
-emailChangeCopy2: 'Before we do that, you need to confirm your new E-mail address. Please click the link below to do that:'
-emailChangeHiddenIntro: "Let's confirm your new E-mail address"
-emailChangeTitle: 'Please confirm your new E-mail address'
-emailChangeWhy: 'You received this E-mail because you changed the E-mail address linked to your account on FreeSewing.org'
-goodbyeCopy1: "If you'd like to share why you're leaving, you can reply to this message."
-goodbyeCopy2: "From our side, we won't bother you again."
-goodbyeTitle: 'Thank you for giving FreeSewing a chance'
-goodbyeWhy: 'You received this E-mail as a final farewell after removing your account on FreeSewing.org'
-passwordResetActionText: 'Re-gain access to your account'
-passwordResetCopy1: 'You forgot your password for your account at FreeSewing.org.'
-passwordResetCopy2: 'Click the link below to reset your password:'
-passwordResetHeaderOpeningLine: "Don't worry, these things happen to all of us"
-passwordResetHiddenIntro: 'Re-gain access to your account'
-passwordResetSubject: 'Re-gain access to your account on freesewing.org'
-passwordResetTitle: 'Reset your password, and re-gain access to your account'
-passwordResetWhy: 'You received this E-mail because you requested to reset your password on freesewing.org'
+emailChangeActionText: 'Bestätige deine neue E-Mail-Adresse'
+emailChangeCopy1: 'Du hast angefordert, die mit deinem FreeSewing.org-Account verknüpfte E-Mail-Adresse zu ändern.'
+emailChangeCopy2: 'Bevor wir das tun, musst du deine neue E-Mail-Adresse bestätigen. Bitte klicke auf den folgenden Link, um das zu tun:'
+emailChangeHiddenIntro: "Lass uns deine neue E-Mail-Adresse bestätigen"
+emailChangeTitle: 'Bitte bestätige deine neue E-Mail-Adresse'
+emailChangeWhy: 'Du hast diese E-Mail erhalten, weil du die mit deinem Konto auf Freesewing.org verknüpfte E-Mail-Adresse geändert hast'
+goodbyeCopy1: "Falls du uns mitteilen möchtest, warum du gehst, kannst du gerne auf diese Nachricht antworten."
+goodbyeCopy2: "Wir werden dich sonst nicht weiter stören."
+goodbyeTitle: 'Vielen Dank, dass du FreeSewing eine Chance gegeben hast'
+goodbyeWhy: 'Du hast diese E-Mail als endgültiges Lebewohl erhalten, nachdem du deinen Account auf FreeSewing.org entfernt hast'
+passwordResetActionText: 'Erhalte erneut Zugang zu deinem Account'
+passwordResetCopy1: 'Du hast dein Passwort für deinen FreeSewing.org-Account vergessen.'
+passwordResetCopy2: 'Klicke auf den untenstehenden Link, um dein Passwort zurückzusetzen:'
+passwordResetHeaderOpeningLine: "Keine Sorge, solche Dinge passieren uns allen"
+passwordResetHiddenIntro: 'Erhalte erneut Zugang zu deinem Account'
+passwordResetSubject: 'Erhalte erneut Zugang zu deinem Account auf freesewing.org'
+passwordResetTitle: 'Setze dein Passwort zurück und erhalte erneut Zugang zu deinem Account'
+passwordResetWhy: 'Du hast diese E-Mail erhalten, weil du die Anfrage gestellt hast, dein Passwort von freesewing.org zurückzusetzen'
 questionsJustReply: "Wenn du Fragen hast, antworte einfach auf diese E-Mail. Ich bin immer gerne bereit zu helfen. 🙂"
 signupActionText: 'Bestätige deine E-Mail-Adresse'
-signupCopy1: 'Thank you for signing up at FreeSewing.org.'
-signupCopy2: 'Before we get started, you need to confirm your E-mail address. Please click the link below to do that:'
+signupCopy1: 'Danke, dass du dich auf FreeSewing.org angemeldet hast.'
+signupCopy2: 'Bevor wir beginnen, musst du deine E-Mail-Adresse bestätigen. Bitte klicke auf den folgenden Link, um das zu tun:'
 signupHiddenIntro: "Lass uns deine E-Mail-Adresse bestätigen"
-signupSubject: 'Welcome to FreeSewing.org'
+signupSubject: 'Willkommen bei FreeSewing.org'
 signupWhy: 'Du hast diese E-Mail erhalten, weil du dich gerade auf freesewing.org angemeldet hast'

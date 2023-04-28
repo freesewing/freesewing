@@ -1,5 +1,6 @@
 import { topSleeve as bentTopSleeve } from '@freesewing/bent'
 import { front as bentFront } from '@freesewing/bent'
+import { pluginAnnotations } from '@freesewing/plugin-annotations'
 
 function draftCarltonTopSleeve({
   paperless,
@@ -53,7 +54,15 @@ function draftCarltonTopSleeve({
     .close()
     .attr('class', 'fabric')
 
+  store.cutlist.addCut()
+  store.cutlist.addCut({ material: 'lining' })
+
   if (complete) {
+    macro('title', {
+      at: points.armCenter,
+      nr: 3,
+      title: 'topsleeve',
+    })
     macro('grainline', {
       from: points.boxBottom,
       to: points.top,
@@ -144,7 +153,11 @@ export const topSleeve = {
   name: 'carlton.topSleeve',
   from: bentTopSleeve,
   after: bentFront,
-  hideDependencies: true,
+  hide: {
+    after: true,
+    from: true,
+    inherited: true,
+  },
   measurements: ['shoulderToWrist'],
   options: {
     cuffLength: { pct: 15, min: 10, max: 20, menu: 'style' },
@@ -171,5 +184,6 @@ export const topSleeve = {
     sleevecapHeight: { pct: 45, min: 40, max: 60, menu: 'advanced' },
     sleevecapEase: { pct: 1, min: 0, max: 10, menu: 'advanced' },
   },
+  plugins: [pluginAnnotations],
   draft: draftCarltonTopSleeve,
 }

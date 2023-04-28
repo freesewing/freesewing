@@ -6,7 +6,7 @@ import es from '../../../../public/locales/es/emailchange.json' assert { type: '
 import fr from '../../../../public/locales/fr/emailchange.json' assert { type: 'json' }
 import nl from '../../../../public/locales/nl/emailchange.json' assert { type: 'json' }
 
-export const emailChange = {
+export const emailchange = {
   html: wrap.html(`
     ${headingRow.html}
     ${lead1Row.html}

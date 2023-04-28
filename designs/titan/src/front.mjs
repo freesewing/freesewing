@@ -175,6 +175,8 @@ function titanFront({
   const adaptOutseam = () => adaptSeam('out')
   const adaptInseam = () => adaptSeam('in')
 
+  let adjustment_warning = false
+
   // Let's get to work
   points.waistX = new Point(measurements.waistFrontArc * (1 + options.waistEase), 0)
   points.upperLegY = new Point(0, measurements.waistToUpperLeg)
@@ -237,19 +239,42 @@ function titanFront({
 
   if (options.fitCrossSeam && options.fitCrossSeamFront) {
     let delta = crotchSeamDelta()
+    let previous_delta = delta
     let rotate = ['waistIn', 'waistOut', 'cfWaist']
+    let saved = []
     let run = 0
     do {
+      previous_delta = delta
       run++
       // Remedy A: Slash and spread
-      for (const i of rotate) points[i] = points[i].rotate(delta / -15, points.seatOut)
+      for (const i of rotate) {
+        saved[i] = points[i]
+        points[i] = points[i].rotate(delta / -15, points.seatOut)
+      }
       // Remedy B: Nudge the fork inwards/outwards
+      saved.fork = points.fork
       points.fork = points.fork.shift(180, delta / 5)
       drawCrotchSeam()
       delta = crotchSeamDelta()
       // Uncomment the line below this to see all iterations
       // paths[`try${run}`] = drawPath().attr('class', 'dotted')
-    } while (Math.abs(delta) > 1 && run < 15)
+    } while (Math.abs(delta) > 1 && run < 15 && Math.abs(delta) < Math.abs(previous_delta))
+    if (Math.abs(delta) > Math.abs(previous_delta)) {
+      // The rotations started to produce worse results.
+      // Revert back to the previous rotation.
+      for (const i of rotate) {
+        points[i] = saved[i]
+  }
+      points.fork = saved.fork
+    }
+    if (Math.abs(delta) > 1 || Math.abs(delta) > Math.abs(previous_delta)) {
+      log.warning(
+        'Unable to adjust the front crotch seam to fit the given measurements, after ' +
+          run +
+          ' iterations.'
+      )
+      adjustment_warning = true
+    }
   }
 
   // Uncomment this to see the outline prior to fitting the inseam & outseam
@@ -582,6 +607,19 @@ function titanFront({
         y: points.styleWaistIn.y - sa - 60,
       })
     }
+  }
+
+  if (adjustment_warning) {
+    log.warning(
+      'We were not able to generate the Front pattern piece correctly. ' +
+        'Manual fitting and alteration of this and other pattern pieces ' +
+        'are likely to be needed. ' +
+        'First, please retake your measurements and generate a new pattern ' +
+        'using the new measurements. ' +
+        'If you still see this warning with the new pattern, then please ' +
+        'make a test garment, check fit, and make alterations as necessary ' +
+        'before trying to make the final garment.'
+    )
   }
 
   return part

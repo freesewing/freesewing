@@ -104,6 +104,8 @@ function titanBack({
       .rotate(options.crossSeamCurveAngle, points.fork)
   }
 
+  let adjustment_warning = false
+
   // Let's get to work
   points.waistX = new Point(-1 * measurements.waistBackArc * (1 + options.waistEase), 0)
   points.upperLegY = new Point(0, measurements.waistToUpperLeg)
@@ -175,20 +177,41 @@ function titanBack({
   // Should we fit the cross seam?
   if (options.fitCrossSeam && options.fitCrossSeamBack) {
     let rotate = ['waistIn', 'waistOut']
+    let saved = []
     let delta = crossSeamDelta()
+    let previous_delta = delta
     let run = 0
     do {
+      previous_delta = delta
       run++
       // Remedy A: Slash and spread
-      for (const i of rotate) points[i] = points[i].rotate(delta / 15, points.seatOut)
+      for (const i of rotate) {
+        saved[i] = points[i]
+        points[i] = points[i].rotate(delta / 15, points.seatOut)
+      }
       // Remedy B: Nudge the fork inwards/outwards
+      saved.fork = points.fork
       points.fork = points.fork.shift(0, delta / 5)
+      saved.forkCp2 = points.forkCp2
       points.forkCp2 = points.crossSeamCurveCp2.rotate(-90, points.fork)
       drawCrossSeam()
       delta = crossSeamDelta()
       // Uncomment the line beloe this to see all iterations
       // paths[`try${run}`] = drawPath().attr('class', 'dotted')
-    } while (Math.abs(delta) > 1 && run < 15)
+    } while (Math.abs(delta) > 1 && run < 15 && Math.abs(delta) < Math.abs(previous_delta))
+    if (Math.abs(delta) > Math.abs(previous_delta)) {
+      // The rotations started to produce worse results.
+      // Revert back to the previous rotation.
+      for (const i of rotate) {
+        points[i] = saved[i]
+  }
+      points.fork = saved.fork
+      points.forkCp2 = saved.forkCp2
+    }
+    if (Math.abs(delta) > 1 || Math.abs(delta) > Math.abs(previous_delta)) {
+      log.warning('Unable to adjust the back crotch seam to fit the given measurements.')
+      adjustment_warning = true
+    }
   }
 
   // Store inseam & outseam length
@@ -513,6 +536,19 @@ function titanBack({
         })
       }
     }
+  }
+
+  if (adjustment_warning) {
+    log.warning(
+      'We were not able to generate the Back pattern piece correctly. ' +
+        'Manual fitting and alteration of this and other pattern pieces ' +
+        'are likely to be needed. ' +
+        'First, please retake your measurements and generate a new pattern ' +
+        'using the new measurements. ' +
+        'If you still see this warning with the new pattern, then please ' +
+        'make a test garment, check fit, and make alterations as necessary ' +
+        'before trying to make the final garment.'
+    )
   }
 
   return part

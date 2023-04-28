@@ -1,5 +1,6 @@
 import { sleeve as brianSleeve } from '@freesewing/brian'
 import { ribbing, front, back } from './frontback.mjs'
+import { hidePresets } from '@freesewing/core'
 
 function svenSleeve({ store, sa, points, paths, Path, complete, paperless, macro, options, part }) {
   if (options.ribbing) {
@@ -72,7 +73,7 @@ function svenSleeve({ store, sa, points, paths, Path, complete, paperless, macro
 export const sleeve = {
   name: 'sven.sleeve',
   from: brianSleeve,
-  hideDependencies: true,
+  hide: hidePresets.HIDE_TREE,
   after: [front, back],
   options: {
     ribbing,

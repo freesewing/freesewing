@@ -8,10 +8,12 @@ Sélectionnez 'oui' pour un cercle transparent, qui est coupé sur un double pli
 
 <Note>
 
-This produces a full circle ignoring the _Circle percent_ option.
+- This produces a full circle ignoring the _Circle percent_ option.
+- You may need to use the [gathering option](sandy/options/gathering) to increase the waist circumference to fit over your seat/hips.
+- You will need to set the [waistband overlap](sandy/options/waistbandoverlap) to 0%.
 
 </Note>
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](sandy_seamlessfullcircle_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](sandy_seamlessfullcircle_sample.svg "Effet de cette option sur le modèle")
