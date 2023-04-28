@@ -180,7 +180,7 @@ export const Stack = (props) => {
     const transforms = setTransforms()
 
     // apply the transforms to the bounding box to get the new extents of the stack
-    const { tl, br } = getTransformedBounds(stack, [transforms])
+    const { tl, br } = getTransformedBounds(stack, transforms)
 
     // update it on the draft component
     props.updateLayout(
