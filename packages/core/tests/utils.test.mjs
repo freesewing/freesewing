@@ -492,6 +492,6 @@ describe('Utils', () => {
     const pattern = new design()
     const props = pattern.draft().getRenderProps()
     const transform = generateStackTransform(30, 60, 90, true, true, props.stacks.test)
-    expect(transform.transform).to.equal('translate(51, 138) scale(-1, -1) rotate(90, 10.5, 39)')
+    expect(transform.join(' ')).to.equal('translate(51, 138) scale(-1, -1) rotate(90, 10.5, 39)')
   })
 })
