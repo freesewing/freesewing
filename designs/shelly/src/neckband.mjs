@@ -27,13 +27,20 @@ function draftNeckband({
   points.bottomRightCorner = new Point(neckbandLength / 2, neckbandWidth)
   points.topRightCorner = new Point(neckbandLength / 2, 0)
 
-  paths.neckband = new Path()
-    .move(points.topLeftCorner)
-    .line(points.bottomLeftCorner)
+  paths.neckbandSA = new Path()
+    .move(points.bottomLeftCorner)
     .line(points.bottomRightCorner)
     .line(points.topRightCorner)
     .line(points.topLeftCorner)
     .attr('class', 'fabric')
+    .setHidden(true)
+
+  paths.neckbandNone = new Path()
+    .move(points.topLeftCorner)
+    .line(points.bottomLeftCorner)
+    .setHidden(true)
+
+  paths.seam = paths.neckbandSA.join(paths.neckbandNone).close().attr('class', 'fabric')
 
   if (paperless) {
     macro('vd', {
@@ -59,7 +66,7 @@ function draftNeckband({
     macro('title', { at: points.title, nr: 4, title: 'neckband' })
 
     if (sa) {
-      paths.sa = paths.neckband.offset(sa).close().attr('class', 'fabric sa')
+      paths.sa = paths.neckbandSA.offset(sa).close().attr('class', 'fabric sa')
     }
   }
 

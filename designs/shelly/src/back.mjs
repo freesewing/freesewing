@@ -78,6 +78,12 @@ function draftBack({
     options.raglanScoopLength * raglanLength
   )
 
+  // Make sure that the shirt at least reaches the armpits, to ensure that the full raglan seam can be formed. This code should only trigger if someone tries to make a really, _really_ short shirt.
+  if (points.bottomSideCorner.y < points.armpitCornerScooped.y) {
+    points.bottomSideCorner.y = points.armpitCornerScooped.y
+    points.bottomCenterCorner.y = points.armpitCornerScooped.y
+  }
+
   let sideAngle = points.bottomSideCorner.angle(points.armpitCornerScooped)
   let sideLength = points.bottomSideCorner.dist(points.armpitCornerScooped)
   points.sideCp1 = points.bottomSideCorner
@@ -93,6 +99,10 @@ function draftBack({
     .curve(points.armpitScoopCp1, points.armpitScoopCp2, points.armpitScoopEnd)
     .line(points.neckShoulderCorner)
     .curve(points.shoulderNeckCp1, points.shoulderNeckCp2, points.neckCenterCorner)
+    .setHidden(true)
+
+  paths.backNone = new Path()
+    .move(points.neckCenterCorner)
     .line(points.bottomCenterCorner)
     .setHidden(true)
 
@@ -101,7 +111,7 @@ function draftBack({
     .line(points.bottomSideCorner)
     .setHidden(true)
 
-  paths.seam = paths.backSA.join(paths.backHem).close().attr('class', 'fabric')
+  paths.seam = paths.backSA.join(paths.backNone).join(paths.backHem).close().attr('class', 'fabric')
 
   if (paperless) {
     macro('vd', {

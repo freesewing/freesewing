@@ -80,6 +80,12 @@ function draftFront({
     options.raglanScoopLength * raglanLength
   )
 
+  // Make sure that the shirt at least reaches the armpits, to ensure that the full raglan seam can be formed. This code should only trigger is someone tries to make a really, _really_ short shirt.
+  if (points.bottomSideCorner.y < points.armpitCornerScooped.y) {
+    points.bottomSideCorner.y = points.armpitCornerScooped.y
+    points.bottomCenterCorner.y = points.armpitCornerScooped.y
+  }
+
   let sideAngle = points.bottomSideCorner.angle(points.armpitCornerScooped)
   let sideLength = points.bottomSideCorner.dist(points.armpitCornerScooped)
   points.sideCp1 = points.bottomSideCorner
@@ -96,6 +102,10 @@ function draftFront({
     .curve(points.armpitScoopCp1, points.armpitScoopCp2, points.armpitScoopEnd)
     .line(points.neckShoulderCorner)
     .curve(points.shoulderNeckCp1, points.shoulderNeckCp2, points.neckCenterCorner)
+    .setHidden(true)
+
+  paths.frontNone = new Path()
+    .move(points.neckCenterCorner)
     .line(points.bottomCenterCorner)
     .setHidden(true)
 
@@ -104,7 +114,11 @@ function draftFront({
     .line(points.bottomSideCorner)
     .setHidden(true)
 
-  paths.seam = paths.frontSA.join(paths.frontHem).close().attr('class', 'fabric')
+  paths.seam = paths.frontSA
+    .join(paths.frontNone)
+    .join(paths.frontHem)
+    .close()
+    .attr('class', 'fabric')
 
   if (paperless) {
     macro('vd', {
@@ -208,7 +222,7 @@ export const front = {
     neckEase: { pct: 0, min: -30, max: 100, menu: 'fit' },
     chestEase: { pct: 0, min: -30, max: 50, menu: 'fit' },
     hipsEase: { pct: 0, min: -30, max: 75, menu: 'fit' },
-    bodyLength: { pct: 100, min: 60, max: 300, menu: 'style' },
+    bodyLength: { pct: 100, min: 20, max: 300, menu: 'style' },
     // How far the neck hole is shifted towards the front. +100% means it's entirely on the front, -100% means it's entirely on the back, and 0 means the front and back are the same.
     neckOffset: { pct: 40, min: 0, max: 80, menu: 'fit' },
     // Note: The raglan length is the distance between the armpit and where the raglan seams would meet if there were no neckhole. It is used as a base for the following fit options.
