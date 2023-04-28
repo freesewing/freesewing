@@ -1,5 +1,3 @@
-// Hooks
-import { useApp } from 'shared/hooks/use-app.mjs'
 // Dependencies
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -24,25 +22,22 @@ const DynamicAccountOverview = dynamic(
   { ssr: false }
 )
 
-const AccountPage = (props) => {
-  const app = useApp(props)
+const AccountIndexPage = ({ page }) => (
+  <PageWrapper {...page}>
+    <DynamicAuthWrapper>
+      <DynamicAccountOverview />
+    </DynamicAuthWrapper>
+  </PageWrapper>
+)
 
-  return (
-    <PageWrapper app={app}>
-      <DynamicAuthWrapper app={app}>
-        <DynamicAccountOverview app={app} />
-      </DynamicAuthWrapper>
-    </PageWrapper>
-  )
-}
-
-export default AccountPage
+export default AccountIndexPage
 
 export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, ns)),
       page: {
+        locale,
         path: ['account'],
       },
     },

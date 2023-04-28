@@ -1,5 +1,5 @@
 // Dependencies
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 import { DateTime } from 'luxon'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
@@ -8,6 +8,9 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useRouter } from 'next/router'
+// Context
+import { LoadingContext } from 'shared/context/loading-context.mjs'
+import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
 import { BackToAccountButton, Choice } from './shared.mjs'
 import { Popout } from 'shared/components/popout.mjs'
@@ -22,15 +25,22 @@ import { Tab } from './bio.mjs'
 
 export const ns = ['account', 'toast']
 
-const NewSet = ({ app, t, account, setGenerate, oneAdded, backend, toast, standAlone = false }) => {
+const NewSet = ({ t, account, setGenerate, oneAdded, backend, toast, standAlone = false }) => {
+  // Context
+  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+
+  // Hooks
   const router = useRouter()
+
+  // State
   const [name, setName] = useState('')
   const [notes, setNotes] = useState('')
   const [set, setSet] = useState(false)
   const [activeTab, setActiveTab] = useState('edit')
 
+  // Helper method to create a new set
   const createSet = async () => {
-    app.startLoading()
+    startLoading()
     const result = await backend.createSet({
       name,
     })
@@ -39,13 +49,16 @@ const NewSet = ({ app, t, account, setGenerate, oneAdded, backend, toast, standA
       setSet(result.data.set)
       oneAdded()
     } else toast.for.backendError()
-    app.stopLoading()
+    stopLoading()
   }
 
+  // Helper method to clear inputs
   const clear = () => {
     setSet(false)
     setGenerate(false)
   }
+
+  // Shared props for tabs
   const tabProps = { activeTab, setActiveTab, t }
 
   return (
@@ -104,7 +117,12 @@ const NewSet = ({ app, t, account, setGenerate, oneAdded, backend, toast, standA
   )
 }
 
-const MeasurementsSet = ({ apikey, t, account, backend, oneAdded, app }) => {
+const MeasurementsSet = ({ apikey, t, account, backend, oneAdded }) => {
+  // Context
+  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+  const { setModal } = useContext(ModalContext)
+
+  // Hooks
   const toast = useToast()
 
   const fields = {
@@ -118,19 +136,19 @@ const MeasurementsSet = ({ apikey, t, account, backend, oneAdded, app }) => {
   const expired = DateTime.fromISO(apikey.expiresAt).valueOf() < DateTime.now().valueOf()
 
   const remove = async () => {
-    app.startLoading()
+    startLoading()
     const result = await backend.removeApikey(apikey.id)
     if (result) toast.success(t('gone'))
     else toast.for.backendError()
     // This just forces a refresh of the list from the server
     // We obviously did not add a key here, but rather removed one
     oneAdded()
-    app.stopLoading()
+    stopLoading()
   }
 
   const removeModal = () => {
-    app.setModal(
-      <ModalWrapper app={app} slideFrom="top">
+    setModal(
+      <ModalWrapper slideFrom="top">
         <h2>{t('areYouCertain')}</h2>
         <p>{t('deleteKeyWarning')}</p>
         <p className="flex flex-row gap-4 items-center justify-center">
@@ -205,16 +223,22 @@ const MeasurementsSet = ({ apikey, t, account, backend, oneAdded, app }) => {
 //}
 
 // Component for the account/sets page
-export const Sets = ({ app }) => {
+export const Sets = () => {
+  // Context
+  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+
+  // Hooks
   const { account, token } = useAccount()
   const backend = useBackend(token)
   const { t } = useTranslation(ns)
   const toast = useToast()
 
+  // State
   const [sets, setSets] = useState([])
   const [generate, setGenerate] = useState(false)
   const [added, setAdded] = useState(0)
 
+  // Effects
   useEffect(() => {
     const getSets = async () => {
       const result = await backend.getSets()
@@ -223,17 +247,18 @@ export const Sets = ({ app }) => {
     getSets()
   }, [added])
 
+  // Helper method to force a refresh
   const oneAdded = () => setAdded(added + 1)
 
   return (
     <div className="max-w-xl xl:pl-4">
       {generate ? (
-        <NewSet {...{ app, t, account, setGenerate, backend, toast, oneAdded }} />
+        <NewSet {...{ t, account, setGenerate, backend, toast, oneAdded }} />
       ) : (
         <>
           <h2>{t('sets')}</h2>
           {sets.map((set) => (
-            <Set {...{ app, account, apikey, t, backend, oneAdded }} key={apikey.id} />
+            <Set {...{ account, apikey, t, backend, oneAdded }} key={apikey.id} />
           ))}
           <button
             className="btn btn-primary w-full capitalize mt-4"
@@ -241,7 +266,7 @@ export const Sets = ({ app }) => {
           >
             {t('newSet')}
           </button>
-          <BackToAccountButton loading={app.state.loading} />
+          <BackToAccountButton loading={loading} />
         </>
       )}
     </div>

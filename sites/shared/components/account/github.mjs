@@ -1,31 +1,40 @@
 // Dependencies
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
+// Context
+import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
 import { SaveSettingsButton } from 'site/components/buttons/save-settings-button.mjs'
 
 export const ns = ['account', 'toast']
 
-export const GithubSettings = ({ app, title = false, welcome = false }) => {
+export const GithubSettings = ({ title = false, welcome = false }) => {
+  // Context
+  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+
+  // Hooks
   const { account, setAccount, token } = useAccount()
   const backend = useBackend(token)
   const { t } = useTranslation(ns)
   const toast = useToast()
+
+  // State
   const [github, setGithub] = useState(account.github || '')
 
+  // Helper method to save changes
   const save = async () => {
-    app.startLoading()
+    startLoading()
     const result = await backend.updateAccount({ github })
     if (result.success) {
       setAccount(result.data.account)
       toast.for.settingsSaved()
     } else toast.for.backendError()
-    app.stopLoading()
+    stopLoading()
   }
 
   return (
@@ -40,8 +49,8 @@ export const GithubSettings = ({ app, title = false, welcome = false }) => {
           placeholder={t('github')}
         />
       </div>
-      <SaveSettingsButton app={app} btnProps={{ onClick: save }} />
-      {!welcome && <BackToAccountButton loading={app.state.loading} />}
+      <SaveSettingsButton btnProps={{ onClick: save }} />
+      {!welcome && <BackToAccountButton loading={loading} />}
     </div>
   )
 }

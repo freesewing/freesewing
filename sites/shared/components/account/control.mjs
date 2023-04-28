@@ -1,38 +1,51 @@
 // Dependencies
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
+// Context
+import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import { BackToAccountButton, Choice, Icons, welcomeSteps } from './shared.mjs'
 import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
 
 export const ns = ['account', 'toast']
 
-export const ControlSettings = ({ app, title = false, welcome = false }) => {
+export const ControlSettings = ({ title = false, welcome = false }) => {
+  // Context
+  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+
+  // Hooks
   const { account, setAccount, token } = useAccount()
   const backend = useBackend(token)
   const toast = useToast()
   const { t } = useTranslation(ns)
+
+  // State
   const [selection, setSelection] = useState(account.control || 2)
 
+  // Method to update the control setting
   const update = async (control) => {
     if (control !== selection) {
-      app.startLoading()
+      startLoading()
       const result = await backend.updateAccount({ control })
       if (result.success) {
         setSelection(control)
         toast.for.settingsSaved()
         setAccount(result.data.account)
       } else toast.for.backendError()
-      app.stopLoading()
+      stopLoading()
     }
   }
 
-  const nextHref =
-    welcomeSteps[selection].length > 1 ? '/welcome/' + welcomeSteps[selection][1] : '/docs/guide'
+  // Helper to get the link to the next onboarding step
+  const nextHref = welcome
+    ? welcomeSteps[selection].length > 1
+      ? '/welcome/' + welcomeSteps[selection][1]
+      : '/docs/guide'
+    : false
 
   return (
     <div className="max-w-xl">
@@ -58,7 +71,7 @@ export const ControlSettings = ({ app, title = false, welcome = false }) => {
       })}
       {welcome ? (
         <>
-          <ContinueButton app={app} btnProps={{ href: nextHref }} link />
+          <ContinueButton btnProps={{ href: nextHref }} link />
           {welcomeSteps[selection].length > 1 ? (
             <>
               <progress
@@ -74,7 +87,7 @@ export const ControlSettings = ({ app, title = false, welcome = false }) => {
           ) : null}
         </>
       ) : (
-        <BackToAccountButton loading={app.state.loading} />
+        <BackToAccountButton />
       )}
     </div>
   )

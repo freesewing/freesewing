@@ -19,9 +19,3 @@ export const ModalContextProvider = ({ children }) => {
 
   return <ModalContext.Provider value={__modal}>{children}</ModalContext.Provider>
 }
-
-export const ModalContextConsumer = ({}) => {
-  const { modalContent } = useContext(ModalContext)
-
-  return modalContent ? modalContent : null
-}

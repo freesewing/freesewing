@@ -1,5 +1,3 @@
-// Hooks
-import { useApp } from 'shared/hooks/use-app.mjs'
 // Dependencies
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -25,25 +23,28 @@ const DynamicBio = dynamic(
   { ssr: false }
 )
 
-const AccountPage = (props) => {
-  const app = useApp(props)
+/*
+ * Each page MUST be wrapped in the PageWrapper component.
+ * You also MUST spread props.page into this wrapper component
+ * when path and locale come from static props (as here)
+ * or set them manually.
+ */
+const AccountBioPage = ({ page }) => (
+  <PageWrapper {...page}>
+    <DynamicAuthWrapper>
+      <DynamicBio title />
+    </DynamicAuthWrapper>
+  </PageWrapper>
+)
 
-  return (
-    <PageWrapper app={app}>
-      <DynamicAuthWrapper app={app}>
-        <DynamicBio app={app} title />
-      </DynamicAuthWrapper>
-    </PageWrapper>
-  )
-}
-
-export default AccountPage
+export default AccountBioPage
 
 export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, namespaces)),
       page: {
+        locale,
         path: ['account', 'bio'],
       },
     },

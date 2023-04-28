@@ -1,8 +1,11 @@
 // Dependencies
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 import { DateTime } from 'luxon'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
+// Context
+import { LoadingContext } from 'shared/context/loading-context.mjs'
+import { ModalContext } from 'shared/context/modal-context.mjs'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
@@ -111,7 +114,17 @@ const ShowKey = ({ apikey, t, clear }) => (
   </div>
 )
 
-const NewKey = ({ app, t, account, setGenerate, keyAdded, backend, toast, standAlone = false }) => {
+const NewKey = ({
+  t,
+  account,
+  setGenerate,
+  keyAdded,
+  backend,
+  toast,
+  startLoading,
+  stopLoading,
+  standAlone = false,
+}) => {
   const router = useRouter()
   const [name, setName] = useState('')
   const [level, setLevel] = useState(1)
@@ -121,7 +134,7 @@ const NewKey = ({ app, t, account, setGenerate, keyAdded, backend, toast, standA
   const levels = account.role === 'admin' ? [0, 1, 2, 3, 4, 5, 6, 7, 8] : [0, 1, 2, 3, 4]
 
   const createKey = async () => {
-    app.startLoading()
+    startLoading()
     const result = await backend.createApikey({
       name,
       level,
@@ -132,7 +145,7 @@ const NewKey = ({ app, t, account, setGenerate, keyAdded, backend, toast, standA
       setApikey(result.data.apikey)
       keyAdded()
     } else toast.for.backendError()
-    app.stopLoading()
+    stopLoading()
   }
 
   const clear = () => {
@@ -187,7 +200,9 @@ const NewKey = ({ app, t, account, setGenerate, keyAdded, backend, toast, standA
   )
 }
 
-const Apikey = ({ apikey, t, account, backend, keyAdded, app }) => {
+const Apikey = ({ apikey, t, account, backend, keyAdded }) => {
+  //const { startLoading, stopLoading } = useContext(LoadingContext)
+  const { setModal } = useContext(ModalContext)
   const toast = useToast()
 
   const fields = {
@@ -201,19 +216,19 @@ const Apikey = ({ apikey, t, account, backend, keyAdded, app }) => {
   const expired = DateTime.fromISO(apikey.expiresAt).valueOf() < DateTime.now().valueOf()
 
   const remove = async () => {
-    app.startLoading()
+    startLoading()
     const result = await backend.removeApikey(apikey.id)
     if (result) toast.success(t('gone'))
     else toast.for.backendError()
     // This just forces a refresh of the list from the server
     // We obviously did not add a key here, but rather removed one
     keyAdded()
-    app.stopLoading()
+    stopLoading()
   }
 
   const removeModal = () => {
-    app.setModal(
-      <ModalWrapper app={app} slideFrom="top">
+    setModal(
+      <ModalWrapper slideFrom="top">
         <h2>{t('areYouCertain')}</h2>
         <p>{t('deleteKeyWarning')}</p>
         <p className="flex flex-row gap-4 items-center justify-center">
@@ -268,36 +283,60 @@ const Apikey = ({ apikey, t, account, backend, keyAdded, app }) => {
 }
 
 // Component for the 'new/apikey' page
-export const NewApikey = ({ app, standAlone = false }) => {
+export const NewApikey = ({ standAlone = false }) => {
+  // Context
+  const { startLoading, stopLoading } = useContext(LoadingContext)
+
+  // Hooks
   const { account, token } = useAccount()
   const backend = useBackend(token)
   const { t } = useTranslation(ns)
   const toast = useToast()
 
+  // State
   const [keys, setKeys] = useState([])
   const [generate, setGenerate] = useState(false)
   const [added, setAdded] = useState(0)
 
+  // Helper method to force refresh
   const keyAdded = () => setAdded(added + 1)
 
   return (
     <div className="max-w-xl xl:pl-4">
-      <NewKey {...{ app, t, account, setGenerate, backend, toast, keyAdded, standAlone }} />
+      <NewKey
+        {...{
+          t,
+          account,
+          setGenerate,
+          backend,
+          toast,
+          keyAdded,
+          standAlone,
+          startLoading,
+          stopLoading,
+        }}
+      />
     </div>
   )
 }
 
 // Component for the account/apikeys page
-export const Apikeys = ({ app }) => {
+export const Apikeys = () => {
+  // Context
+  const { startLoading, stopLoading, loading } = useContext(LoadingContext)
+
+  // Hooks
   const { account, token } = useAccount()
   const backend = useBackend(token)
   const { t } = useTranslation(ns)
   const toast = useToast()
 
+  // State
   const [keys, setKeys] = useState([])
   const [generate, setGenerate] = useState(false)
   const [added, setAdded] = useState(0)
 
+  // Effects
   useEffect(() => {
     const getApikeys = async () => {
       const result = await backend.getApikeys()
@@ -306,12 +345,24 @@ export const Apikeys = ({ app }) => {
     getApikeys()
   }, [added])
 
+  // Helper method to force refresh
   const keyAdded = () => setAdded(added + 1)
 
   return (
     <div className="max-w-xl xl:pl-4">
       {generate ? (
-        <NewKey {...{ app, t, account, setGenerate, backend, toast, keyAdded }} />
+        <NewKey
+          {...{
+            t,
+            account,
+            setGenerate,
+            backend,
+            toast,
+            keyAdded,
+            startLoading,
+            stopLoading,
+          }}
+        />
       ) : (
         <>
           <h2>{t('apikeys')}</h2>
@@ -324,7 +375,7 @@ export const Apikeys = ({ app }) => {
           >
             {t('newApikey')}
           </button>
-          <BackToAccountButton loading={app.state.loading} />
+          <BackToAccountButton loading={loading} />
           {account.control < 5 ? (
             <Popout tip>
               <h5>Refer to FreeSewing.dev for details (English only)</h5>

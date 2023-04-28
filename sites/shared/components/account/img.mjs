@@ -1,7 +1,9 @@
 // Dependencies
-import { useState, useCallback } from 'react'
+import { useState, useContext, useCallback } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useDropzone } from 'react-dropzone'
+// Context
+import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
@@ -13,7 +15,8 @@ import { SaveSettingsButton } from 'site/components/buttons/save-settings-button
 
 export const ns = ['account', 'toast']
 
-export const ImgSettings = ({ app, title = false, welcome = false }) => {
+export const ImgSettings = ({ title = false, welcome = false }) => {
+  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
   const { account, setAccount, token } = useAccount()
   const backend = useBackend(token)
   const toast = useToast()
@@ -32,13 +35,13 @@ export const ImgSettings = ({ app, title = false, welcome = false }) => {
   const { getRootProps, getInputProps } = useDropzone({ onDrop })
 
   const save = async () => {
-    app.startLoading()
+    startLoading()
     const result = await backend.updateAccount({ img })
     if (result.success) {
       setAccount(result.data.account)
       toast.for.settingsSaved()
     } else toast.for.backendError()
-    app.stopLoading()
+    stopLoading()
   }
 
   const nextHref = '/docs/guide'
@@ -71,7 +74,7 @@ export const ImgSettings = ({ app, title = false, welcome = false }) => {
           <button className={`btn btn-secondary mt-4 w-64`} onClick={save} disabled={!img}>
             {t('save')}
           </button>
-          <ContinueButton app={app} btnProps={{ href: nextHref }} link />
+          <ContinueButton btnProps={{ href: nextHref }} link />
           {welcomeSteps[account.control].length > 0 ? (
             <>
               <progress
@@ -92,8 +95,8 @@ export const ImgSettings = ({ app, title = false, welcome = false }) => {
         </>
       ) : (
         <>
-          <SaveSettingsButton app={app} btnProps={{ onClick: save }} />
-          <BackToAccountButton loading={app.state.loading} />
+          <SaveSettingsButton btnProps={{ onClick: save }} />
+          <BackToAccountButton loading={loading} />
         </>
       )}
     </div>

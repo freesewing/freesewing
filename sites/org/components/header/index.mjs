@@ -3,6 +3,7 @@ import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
+import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import {
   CommunityIcon,
@@ -60,14 +61,14 @@ export const colors = {
   account: 'purple',
 }
 
-const NavIcons = ({ app, setModal, setSearch }) => {
+const NavIcons = ({ setModal, setSearch }) => {
   const { t } = useTranslation(['header'])
   const iconSize = 'h-6 w-6 lg:h-12 lg:w-12'
 
   return (
     <>
       <NavButton
-        onClick={() => setModal(<ModalMenu app={app} />)}
+        onClick={() => setModal(<ModalMenu />)}
         label={t('header:menu')}
         color={colors.menu}
       >
@@ -111,14 +112,14 @@ const NavIcons = ({ app, setModal, setSearch }) => {
       </NavButton>
       <NavSpacer />
       <NavButton
-        onClick={() => setModal(<ModalThemePicker app={app} />)}
+        onClick={() => setModal(<ModalThemePicker />)}
         label={t('header:theme')}
         color={colors.theme}
       >
         <ThemeIcon className={iconSize} />
       </NavButton>
       <NavButton
-        onClick={() => setModal(<ModalLocalePicker app={app} />)}
+        onClick={() => setModal(<ModalLocalePicker />)}
         label={t('header:language')}
         color={colors.language}
       >
@@ -135,8 +136,9 @@ const NavIcons = ({ app, setModal, setSearch }) => {
   )
 }
 
-export const Header = ({ app, setSearch }) => {
+export const Header = ({ setSearch }) => {
   const { setModal } = useContext(ModalContext)
+  const { loading } = useContext(LoadingContext)
   const [prevScrollPos, setPrevScrollPos] = useState(0)
   const [show, setShow] = useState(true)
 
@@ -162,11 +164,7 @@ export const Header = ({ app, setSearch }) => {
       w-full
       z-30
       transition-transform
-      ${
-        show || app.state.loading
-          ? ''
-          : 'fixed bottom-0 lg:top-0 left-0 translate-y-36 lg:-translate-y-36'
-      }
+      ${show || loading ? '' : 'fixed bottom-0 lg:top-0 left-0 translate-y-36 lg:-translate-y-36'}
       drop-shadow-xl
     `}
     >
@@ -174,16 +172,16 @@ export const Header = ({ app, setSearch }) => {
         <div className="p-0 flex flex-row gap-2 justify-between text-neutral-content items-center">
           {/* Non-mobile content */}
           <div className="hidden lg:flex lg:px-2 flex-row items-center justify-center w-full">
-            <NavIcons app={app} setModal={setModal} setSearch={setSearch} />
+            <NavIcons setModal={setModal} setSearch={setSearch} />
           </div>
 
           {/* Mobile content */}
           <div className="flex lg:hidden flex-row items-center justify-between w-full">
-            <NavIcons app={app} setModal={setModal} setSearch={setSearch} />
+            <NavIcons setModal={setModal} setSearch={setSearch} />
           </div>
         </div>
       </div>
-      <Ribbon loading={app.state.loading} theme={app.theme} />
+      <Ribbon />
     </header>
   )
 }

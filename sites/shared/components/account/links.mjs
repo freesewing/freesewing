@@ -38,8 +38,8 @@ const actions = {
   remove: 2,
 }
 
-export const AccountLinks = ({ app }) => {
-  const { account } = useAccount()
+export const AccountLinks = () => {
+  const { account, clear } = useAccount()
   const { t } = useTranslation(ns)
 
   const lprops = { t, control: account.control }
@@ -53,7 +53,7 @@ export const AccountLinks = ({ app }) => {
         <Link className="btn btn-secondary grow capitalize" href="/account/sets">
           {t('newSet')}
         </Link>
-        <button className="btn btn-warning btnoutline mb-2 capitalize" onClick={app.clear}>
+        <button className="btn btn-warning btnoutline mb-2 capitalize" onClick={clear}>
           {t('signOut')}
         </button>
       </div>

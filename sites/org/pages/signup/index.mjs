@@ -1,8 +1,9 @@
 // Hooks
-import { useState } from 'react'
-import { useApp } from 'shared/hooks/use-app.mjs'
+import { useState, useContext } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useTranslation } from 'next-i18next'
+// Context
+import { ModalContext } from 'shared/context/modal-context.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { validateEmail, validateTld } from 'site/utils.mjs'
@@ -25,8 +26,10 @@ const DarkLink = ({ href, txt }) => (
   </Link>
 )
 
-const SignUpPage = (props) => {
-  const app = useApp(props)
+const SignUpPage = ({ page }) => {
+  // Context
+  const { setModal } = useContext(ModalContext)
+
   const backend = useBackend()
   const { t, i18n } = useTranslation(namespaces)
 
@@ -34,6 +37,7 @@ const SignUpPage = (props) => {
   const [emailValid, setEmailValid] = useState(false)
   const [result, setResult] = useState(false)
   const [error, setError] = useState(null)
+  const [loading, setLoading] = useState(false)
 
   const updateEmail = (evt) => {
     const value = evt.target.value
@@ -44,6 +48,7 @@ const SignUpPage = (props) => {
 
   const signupHandler = async (evt) => {
     evt.preventDefault()
+    setLoading(true)
     if (!emailValid) return
     let res
     try {
@@ -53,14 +58,13 @@ const SignUpPage = (props) => {
         setResult,
       })
     } catch (err) {
-      setError(app.error(err))
       // Here to keep the stupid linter happy
       console.log(err)
     }
     if (res.result === 'success') setResult('success')
     else {
-      app.setModal(
-        <ModalWrapper app={app} bg="base-100 lg:bg-base-300">
+      setModal(
+        <ModalWrapper bg="base-100 lg:bg-base-300">
           <div className="bg-base-100 rounded-lg p-4 lg:px-8 max-w-xl lg:shadow-lg">
             <h3>An error occured while trying to process your request</h3>
             <Robot pose="ohno" className="m-auto w-56" embed />
@@ -80,13 +84,14 @@ const SignUpPage = (props) => {
         </ModalWrapper>
       )
     }
+    setLoading(false)
   }
 
-  const loadingClasses = app.state.loading ? 'opacity-50' : ''
+  const loadingClasses = loading ? 'opacity-50' : ''
 
   return (
-    <PageWrapper app={app} title={t('joinFreeSewing')} layout={BareLayout} footer={false}>
-      <SusiWrapper theme={app.theme} error={result && result !== 'success'}>
+    <PageWrapper {...page} title={t('joinFreeSewing')} layout={BareLayout} footer={false}>
+      <SusiWrapper error={result && result !== 'success'}>
         <h1 className={`text-neutral-content font-light text-3xl mb-0 pb-0 ${loadingClasses}`}>
           {result ? (
             result === 'success' ? (
@@ -145,7 +150,6 @@ const SignUpPage = (props) => {
               />
               <EmailValidButton
                 email={email}
-                app={app}
                 t={t}
                 validText={t('emailSignupLink')}
                 invalidText={t('pleaseProvideValidEmail')}

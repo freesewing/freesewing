@@ -7,8 +7,7 @@ export const ns = ['footer', ...sponsorsNs]
 
 export const Footer = ({ app }) => (
   <footer className="bg-neutral">
-    <Ribbon loading={app.loading} theme={app.theme} />
-
+    <Ribbon />
     <div className="w-full sm:w-auto flex flex-col gap-2 items-center justify-center pt-12">
       <FreeSewingIcon className="w-24 lg:w-40 m-auto m-auto text-neutral-content" />
       <div className="mt-4">

@@ -1,3 +1,5 @@
+import { useContext, useEffect } from 'react'
+import { NavigationContext } from 'shared/context/navigation-context.mjs'
 import get from 'lodash.get'
 import { prebuildNavigation as pbn } from 'site/prebuild/navigation.mjs'
 import { useTranslation } from 'next-i18next'
@@ -81,6 +83,10 @@ const sitePages = (t = false, control = 99) => {
         }
     }
   }
+  pages.account.reload = {
+    t: t(`account:reload`),
+    s: `account/reload`,
+  }
 
   return pages
 }
@@ -106,7 +112,7 @@ const createSections = (nav) => {
   return orderBy(sections, ['o', 't'])
 }
 
-export const useNavigation = (path = [], locale = 'en') => {
+export const useNavigation = ({ path, locale }) => {
   const { t } = useTranslation(ns)
   const { account } = useAccount()
 
@@ -117,10 +123,9 @@ export const useNavigation = (path = [], locale = 'en') => {
   const sections = createSections(nav)
 
   return {
-    path,
-    slug: path.join('/'),
     crumbs,
     sections,
+    slug: path.join('/'),
     nav: path.length > 1 ? get(nav, path[0]) : path.length === 0 ? sections : nav[path[0]],
     title: crumbs.length > 0 ? crumbs.slice(-1)[0].t : '',
   }

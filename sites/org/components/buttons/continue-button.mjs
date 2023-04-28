@@ -1,16 +1,26 @@
+// Hooks
+import { useContext } from 'react'
+import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingContext } from 'shared/context/loading-context.mjs'
+// Components
 import { Spinner } from 'shared/components/spinner.mjs'
 import Link from 'next/link'
-import { useTranslation } from 'next-i18next'
 
 export const ContinueButton = ({ app, btnProps = {}, link = false }) => {
+  // Context
+  const { loading } = useContext(LoadingContext)
+
+  // Hooks
   const { t } = useTranslation(['account'])
+
   let classes = 'btn mt-8 capitalize w-full '
-  if (app.state.loading) classes += 'btn-accent '
+  if (loading) classes += 'btn-accent '
   else classes += 'btn-primary '
 
   const children = (
     <span className="flex flex-row items-center gap-2">
-      {app.state.loading ? (
+      {loading ? (
         <>
           <Spinner />
           <span>{t('processing')}</span>

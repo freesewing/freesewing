@@ -1,6 +1,5 @@
 // Hooks
 import { useEffect, useState } from 'react'
-import { useApp } from 'shared/hooks/use-app.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
@@ -37,25 +36,23 @@ export const SigninLinkExpired = () => {
   )
 }
 
-const Wrapper = ({ app, t, children }) => (
-  <PageWrapper app={app} title={t('signin:oneMomentPlease')} layout={BareLayout} footer={false}>
+const Wrapper = ({ page, t, children }) => (
+  <PageWrapper {...page} title={t('signin:oneMomentPlease')} layout={BareLayout} footer={false}>
     <section className="m-0 p-0 w-full">
       <div className="mt-4 lg:mt-32 max-w-xl m-auto">{children}</div>
     </section>
   </PageWrapper>
 )
 
-const ConfirmSignInPage = (props) => {
+/*
+ * Each page MUST be wrapped in the PageWrapper component.
+ * You also MUST spread props.page into this wrapper component
+ * and set path and locale when it's dynamic (like on this page)
+ */
+const ConfirmSignInPage = ({ page }) => {
   const router = useRouter()
   // Get confirmation ID and check from url
   const [confirmationId, confirmationCheck] = router.asPath.slice(1).split('/').slice(2)
-  const app = useApp({
-    ...props,
-    page: {
-      path: ['confirm', 'emailchange', confirmationId],
-    },
-  })
-
   const { setAccount, setToken } = useAccount()
   const backend = useBackend()
   const { t } = useTranslation(ns)
@@ -90,16 +87,18 @@ const ConfirmSignInPage = (props) => {
     getConfirmation()
   }, [])
 
+  if (page) page.path = ['confirm', 'emailchange', confirmationId]
+
   // Short-circuit errors
   if (error)
     return (
-      <Wrapper app={app} t={t}>
+      <Wrapper page={page} t={t}>
         <SigninLinkExpired />
       </Wrapper>
     )
 
   return (
-    <Wrapper app={app} t={t}>
+    <Wrapper page={page} t={t}>
       <h1>{t('oneMomentPlease')}</h1>
       <Spinner className="w-8 h-8 m-auto animate-spin" />
     </Wrapper>

@@ -9,7 +9,7 @@ import { HttpMethod, HttpStatusCode } from './http.mjs'
 
 const Fixme = () => <p>FIXME</p>
 
-export const MdxComponents = (app = false) => ({
+export const MdxComponents = () => ({
   // Custom components
   Method: HttpMethod,
   StatusCode: HttpStatusCode,
@@ -17,7 +17,7 @@ export const MdxComponents = (app = false) => ({
   Fixme: (props) => <Popout {...props} fixme />,
   Link: (props) => <Popout {...props} link />,
   Note: (props) => <Popout {...props} note />,
-  ReadMore: (props) => <ReadMore {...props} app={app} slug={app.state.slug} />,
+  ReadMore,
   Related: (props) => <Popout {...props} related />,
   Tip: (props) => <Popout {...props} tip />,
   Warning: (props) => <Popout {...props} warning />,
@@ -31,7 +31,7 @@ export const MdxComponents = (app = false) => ({
   ),
   Tab,
   Tabs,
-  Example: (props) => <Example {...props} app={app} />,
+  Example,
   PatternDocs: Fixme,
   PatternOptions: Fixme,
 })

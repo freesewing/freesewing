@@ -1,10 +1,11 @@
-welcomeName: "Welcome { name }"
+welcome: Welcome
+welcomeBackName: "Welcome back { name }"
 emailUsernameId: "Your Email address, Username, or User #"
 password: Your Password
 dontHaveAnAccount: Don't have an account yet?
 signIn: Sign in
 signInToThing: "Sign in to { thing }"
-signInWith: Sign in with username and password
+usePassword: Use your password
 signUpHere: Sign up here
 processing: Processing
 signInFailed: Sign in failed

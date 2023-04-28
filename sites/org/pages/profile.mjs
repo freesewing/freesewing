@@ -1,5 +1,4 @@
 // Hooks
-import { useApp } from 'shared/hooks/use-app.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 // Dependencies
 import dynamic from 'next/dynamic'
@@ -28,14 +27,18 @@ const DynamicAccountProfile = dynamic(
   { ssr: false }
 )
 
-const AccountPage = (props) => {
-  const app = useApp(props)
+/*
+ * Each page MUST be wrapped in the PageWrapper component.
+ * You also MUST spread props.page into this wrapper component
+ * when path and locale come from static props (as here)
+ * or set them manually.
+ */
+const ProfilePage = ({ page }) => {
   const { account } = useAccount()
-
   return (
-    <PageWrapper app={app}>
-      <DynamicAuthWrapper app={app}>
-        <DynamicAccountProfile app={app} />
+    <PageWrapper {...page}>
+      <DynamicAuthWrapper>
+        <DynamicAccountProfile />
         <Popout link compact>
           <PageLink href={`/users/${account.username}`} txt={`/users/${account.username}`} />
         </Popout>
@@ -45,13 +48,14 @@ const AccountPage = (props) => {
   )
 }
 
-export default AccountPage
+export default ProfilePage
 
 export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, namespaces)),
       page: {
+        locale,
         path: ['profile'],
       },
     },

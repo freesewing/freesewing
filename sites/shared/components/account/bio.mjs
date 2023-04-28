@@ -1,10 +1,12 @@
 // Dependencies
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
+// Context
+import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import Markdown from 'react-markdown'
 import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
@@ -24,29 +26,38 @@ export const Tab = ({ id, activeTab, setActiveTab, t }) => (
   </button>
 )
 
-export const BioSettings = ({ app, title = false, welcome = false }) => {
+export const BioSettings = ({ title = false, welcome = false }) => {
+  // Context
+  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+
+  // Hooks
   const { account, setAccount, token } = useAccount()
   const backend = useBackend(token)
   const { t } = useTranslation(ns)
   const toast = useToast()
+
+  // State
   const [bio, setBio] = useState(account.bio)
   const [activeTab, setActiveTab] = useState('edit')
 
+  // Helper method to save bio
   const save = async () => {
-    app.startLoading()
+    startLoading()
     const result = await backend.updateAccount({ bio })
     if (result.success) {
       setAccount(result.data.account)
       toast.for.settingsSaved()
     } else toast.for.backendError()
-    app.stopLoading()
+    stopLoading()
   }
 
+  // Next step in the onboarding
   const nextHref =
     welcomeSteps[account.control].length > 5
       ? '/welcome/' + welcomeSteps[account.control][6]
       : '/docs/guide'
 
+  // Shared props for tabs
   const tabProps = { activeTab, setActiveTab, t }
 
   return (
@@ -71,15 +82,15 @@ export const BioSettings = ({ app, title = false, welcome = false }) => {
           </div>
         )}
       </div>
-      <SaveSettingsButton app={app} btnProps={{ onClick: save }} welcome={welcome} />
-      {!welcome && <BackToAccountButton loading={app.state.loading} />}
+      <SaveSettingsButton btnProps={{ onClick: save }} welcome={welcome} />
+      {!welcome && <BackToAccountButton loading={loading} />}
       <Popout tip compact>
         {t('mdSupport')}
       </Popout>
 
       {welcome ? (
         <>
-          <ContinueButton app={app} btnProps={{ href: nextHref }} link />
+          <ContinueButton btnProps={{ href: nextHref }} link />
           {welcomeSteps[account.control].length > 0 ? (
             <>
               <progress

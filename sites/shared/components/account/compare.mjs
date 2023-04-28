@@ -1,36 +1,48 @@
 // Dependencies
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
+// Context
+import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import { Choice, Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
 
 export const ns = ['account', 'toast']
 
-export const CompareSettings = ({ app, title = false, welcome = false }) => {
+export const CompareSettings = ({ title = false, welcome = false }) => {
+  // Context
+  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+
+  // Hooks
   const { account, setAccount, token } = useAccount()
   const backend = useBackend(token)
   const toast = useToast()
   const { t } = useTranslation(ns)
+
+  // State
   const [selection, setSelection] = useState(account?.compare ? 'yes' : 'no')
 
+  // Helper method to update the account
   const update = async (val) => {
     if (val !== selection) {
-      app.startLoading()
-      const result = await backend.updateAccount({ compare: val === 'yes' ? true : false })
+      startLoading()
+      const result = await backend.updateAccount({
+        compare: val === 'yes' ? true : false,
+      })
       if (result.success) {
         setAccount(result.data.account)
         setSelection(val)
         toast.for.settingsSaved()
       } else toast.for.backendError()
-      app.stopLoading()
+      stopLoading()
     }
   }
 
+  // Link to the next onboarding step
   const nextHref =
     welcomeSteps[account?.control].length > 3
       ? '/welcome/' + welcomeSteps[account?.control][4]
@@ -53,7 +65,7 @@ export const CompareSettings = ({ app, title = false, welcome = false }) => {
       ))}
       {welcome ? (
         <>
-          <ContinueButton app={app} btnProps={{ href: nextHref }} link />
+          <ContinueButton btnProps={{ href: nextHref }} link />
           {welcomeSteps[account?.control].length > 0 ? (
             <>
               <progress
@@ -73,10 +85,8 @@ export const CompareSettings = ({ app, title = false, welcome = false }) => {
           ) : null}
         </>
       ) : (
-        <BackToAccountButton loading={app.state.loading} />
+        <BackToAccountButton loading={loading} />
       )}
     </div>
   )
 }
-
-export default CompareSettings

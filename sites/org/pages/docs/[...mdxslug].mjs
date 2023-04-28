@@ -1,5 +1,3 @@
-// Hooks
-import { useApp } from 'shared/hooks/use-app.mjs'
 // Dependencies
 import Head from 'next/head'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -13,52 +11,44 @@ import { TocWrapper } from 'shared/components/wrappers/toc.mjs'
 import { PageWrapper } from 'shared/components/wrappers/page.mjs'
 import { components } from 'site/components/mdx/index.mjs'
 
-const MdxPage = (props) => {
-  // This hook is used for shared code and global state
-  const app = useApp(props)
-  const title = props.page.title
-  const fullTitle = title + ' - FreeSewing.org'
-
-  /*
-   * Each page should be wrapped in the Page wrapper component
-   * You MUST pass it the result of useApp() as the `app` prop
-   * and for MDX pages you can spread the props.page props to it
-   * to automatically set the title and navigation
-   *
-   * Like breadcrumbs and updating the primary navigation with
-   * active state
-   */
-  return (
-    <PageWrapper app={app} {...props.page}>
-      <Head>
-        <meta property="og:title" content={props.page.title} key="title" />
-        <meta property="og:type" content="article" key="type" />
-        <meta property="og:description" content={props.intro} key="type" />
-        <meta property="og:article:author" content="Joost De Cock" key="author" />
-        <meta
-          property="og:image"
-          content={`https://canary.backend.freesewing.org/og-img/en/dev/${props.page.slug}`}
-          key="image"
-        />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:url" content={`https://freesewing.dev/${props.page.slug}`} key="url" />
-        <meta property="og:locale" content="en_US" key="locale" />
-        <meta property="og:site_name" content="freesewing.dev" key="site" />
-        <title>{fullTitle}</title>
-      </Head>
-      <div className="flex flex-row-reverse flex-wrap xl:flex-nowrap justify-end">
-        {props.toc && (
-          <div className="mb-8 w-full xl:w-80 2xl:w-96 xl:pl-8 2xl:pl-16">
-            <TocWrapper toc={props.toc} app={app} />
-          </div>
-        )}
-        <MdxWrapper mdx={props.mdx} app={app} components={components} />
+/*
+ * Each page MUST be wrapped in the PageWrapper component.
+ * You also MUST spread props.page into this wrapper component
+ * when path and locale come from static props (as here)
+ * or set them manually.
+ */
+const MdxPage = ({ page, mdx, toc, intro }) => (
+  <PageWrapper {...page}>
+    <Head>
+      <meta property="og:title" content={page.t} key="title" />
+      <meta property="og:type" content="article" key="type" />
+      <meta property="og:description" content={intro} key="type" />
+      <meta property="og:article:author" content="Joost De Cock" key="author" />
+      <meta
+        property="og:image"
+        content={`https://canary.backend.freesewing.org/og-img/en/dev/${page.slug}`}
+        key="image"
+      />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:url" content={`https://freesewing.dev/${page.slug}`} key="url" />
+      <meta property="og:locale" content="en_US" key="locale" />
+      <meta property="og:site_name" content="freesewing.dev" key="site" />
+      <title>{typeof page.t === 'string' ? page.t : ''} - FreeSewing.org</title>
+    </Head>
+    <div className="flex flex-row-reverse flex-wrap xl:flex-nowrap justify-end">
+      {toc && (
+        <div className="mb-8 w-full xl:w-80 2xl:w-96 xl:pl-8 2xl:pl-16">
+          <TocWrapper toc={toc} />
+        </div>
+      )}
+      <div className="max-w-prose">
+        <MdxWrapper mdx={mdx} components={components} />
       </div>
-    </PageWrapper>
-  )
-}
+    </div>
+  </PageWrapper>
+)
 
 /*
  * Default export is the NextJS page object
@@ -92,6 +82,7 @@ export async function getStaticProps({ params, locale }) {
       intro: intro.join(' '),
       page: {
         path, // path to page as array
+        locale,
         ...mdxMeta[locale][path.join('/')],
       },
       params,

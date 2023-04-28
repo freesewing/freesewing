@@ -1,10 +1,12 @@
 // Dependencies
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
+// Context
+import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import Link from 'next/link'
 import { BackToAccountButton } from './shared.mjs'
@@ -14,22 +16,29 @@ import { RightIcon } from 'shared/components/icons.mjs'
 
 export const ns = ['account', 'toast']
 
-export const PasswordSettings = ({ app, title = false, welcome = false }) => {
+export const PasswordSettings = ({ title = false, welcome = false }) => {
+  // Context
+  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+
+  // Hooks
   const { account, setAccount, token } = useAccount()
   const backend = useBackend(token)
   const { t } = useTranslation(ns)
   const toast = useToast()
+
+  // State
   const [password, setPassword] = useState('')
   const [reveal, setReveal] = useState(false)
 
+  // Helper method to save password to account
   const save = async () => {
-    app.startLoading()
+    startLoading()
     const result = await backend.updateAccount({ password })
     if (result.success) {
       setAccount(result.data.account)
       toast.for.settingsSaved()
     } else toast.for.backendError()
-    app.stopLoading()
+    stopLoading()
   }
 
   return (
@@ -52,8 +61,8 @@ export const PasswordSettings = ({ app, title = false, welcome = false }) => {
           </span>
         </button>
       </div>
-      <SaveSettingsButton app={app} btnProps={{ onClick: save, disabled: password.length < 4 }} />
-      {!welcome && <BackToAccountButton loading={app.state.loading} />}
+      <SaveSettingsButton btnProps={{ onClick: save, disabled: password.length < 4 }} />
+      {!welcome && <BackToAccountButton loading={loading} />}
       {!account.mfaEnabled && (
         <Popout tip>
           <h5>{t('mfaTipTitle')}</h5>

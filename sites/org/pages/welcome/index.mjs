@@ -1,5 +1,4 @@
 // Hooks
-import { useApp } from 'shared/hooks/use-app.mjs'
 import { useTranslation } from 'next-i18next'
 // Dependencies
 import dynamic from 'next/dynamic'
@@ -26,15 +25,20 @@ const DynamicControl = dynamic(
   { ssr: false }
 )
 
-const WelcomePage = (props) => {
-  const app = useApp(props)
+/*
+ * Each page MUST be wrapped in the PageWrapper component.
+ * You also MUST spread props.page into this wrapper component
+ * when path and locale come from static props (as here)
+ * or set them manually.
+ */
+const WelcomePage = ({ page }) => {
   const { t } = useTranslation(namespaces)
 
   return (
-    <PageWrapper app={app} title={t('title')} layout={BareLayout} footer={false}>
-      <DynamicAuthWrapper app={app}>
+    <PageWrapper {...page} layout={BareLayout} footer={false}>
+      <DynamicAuthWrapper>
         <div className="m-auto max-w-lg text-center lg:mt-24 p-8">
-          <DynamicControl app={app} title welcome />
+          <DynamicControl title welcome />
         </div>
       </DynamicAuthWrapper>
     </PageWrapper>

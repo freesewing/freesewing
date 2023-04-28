@@ -1,36 +1,46 @@
 // Dependencies
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
+// Context
+import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import { Choice, Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
 
 export const ns = ['account', 'toast']
 
-export const ImperialSettings = ({ app, title = false, welcome = false }) => {
+export const ImperialSettings = ({ title = false, welcome = false }) => {
+  // Context
+  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+
+  // Hooks
   const { account, setAccount, token } = useAccount()
   const backend = useBackend(token)
   const toast = useToast()
   const { t } = useTranslation(ns)
+
+  // State
   const [selection, setSelection] = useState(account?.imperial === true ? 'imperial' : 'metric')
 
+  // Helper method to update account
   const update = async (val) => {
     if (val !== selection) {
-      app.startLoading()
+      startLoading()
       const result = await backend.updateAccount({ imperial: val === 'imperial' ? true : false })
       if (result.success) {
         setAccount(result.data.account)
         setSelection(val)
         toast.for.settingsSaved()
       } else toast.for.backendError()
-      app.stopLoading()
+      stopLoading()
     }
   }
 
+  // Next step in the onboarding
   const nextHref =
     welcomeSteps[account?.control].length > 3
       ? '/welcome/' + welcomeSteps[account?.control][3]
@@ -57,7 +67,7 @@ export const ImperialSettings = ({ app, title = false, welcome = false }) => {
       ))}
       {welcome ? (
         <>
-          <ContinueButton app={app} btnProps={{ href: nextHref }} link />
+          <ContinueButton btnProps={{ href: nextHref }} link />
           {welcomeSteps[account?.control].length > 0 ? (
             <>
               <progress
@@ -77,7 +87,7 @@ export const ImperialSettings = ({ app, title = false, welcome = false }) => {
           ) : null}
         </>
       ) : (
-        <BackToAccountButton loading={app.state.loading} />
+        <BackToAccountButton loading={loading} />
       )}
     </div>
   )

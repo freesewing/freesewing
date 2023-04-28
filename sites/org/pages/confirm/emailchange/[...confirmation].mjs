@@ -1,11 +1,12 @@
 // Hooks
-import { useEffect, useState } from 'react'
-import { useApp } from 'shared/hooks/use-app.mjs'
+import { useEffect, useState, useContext } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Link from 'next/link'
@@ -20,28 +21,27 @@ import { HelpIcon } from 'shared/components/icons.mjs'
 // Translation namespaces used on this page
 const ns = Array.from(new Set([...pageNs, 'account']))
 
-const ConfirmSignUpPage = (props) => {
-  const router = useRouter()
-  // Get confirmation ID and check from url
-  const [id, check] = router.asPath.slice(1).split('/').slice(2)
+const ConfirmSignUpPage = ({ page }) => {
+  // Context
+  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
 
-  const app = useApp({
-    ...props,
-    page: {
-      path: ['confirm', 'emailchange', id],
-    },
-  })
+  // Hooks
   const { setAccount, setToken, token } = useAccount()
   const backend = useBackend()
   const toast = useToast()
   const { t } = useTranslation(ns)
+  const router = useRouter()
+  // Get confirmation ID and check from url
+  const [id, check] = router.asPath.slice(1).split('/').slice(2)
 
+  // State
   const [error, setError] = useState(false)
 
+  // Effects
   useEffect(() => {
     // Async inside useEffect requires this approach
     const confirmEmail = async () => {
-      app.startLoading()
+      startLoading()
       const confirmation = await backend.loadConfirmation({ id, check })
       if (confirmation?.result === 'success' && confirmation.confirmation) {
         const result = await backend.updateAccount({
@@ -52,16 +52,16 @@ const ConfirmSignUpPage = (props) => {
         if (result.success) {
           setAccount(result.data.account)
           setToken(result.data.token)
-          app.stopLoading()
+          stopLoading()
           setError(false)
           toast.for.settingsSaved()
           router.push('/account')
         } else {
-          app.stopLoading()
+          stopLoading()
           setError(true)
         }
       } else {
-        app.stopLoading()
+        stopLoading()
         setError(true)
       }
     }
@@ -69,10 +69,14 @@ const ConfirmSignUpPage = (props) => {
     if (token) confirmEmail()
   }, [id, check, token])
 
+  // Update path with dynamic ID
+  if (!page) return null
+  if (page) page.path = ['confirm', 'emailchange', id]
+
   // Short-circuit errors
   if (error)
     return (
-      <PageWrapper app={app} title={t('account:politeOhCrap')} layout={BareLayout} footer={false}>
+      <PageWrapper {...page} title={t('account:politeOhCrap')} layout={BareLayout} footer={false}>
         <div className="max-w-md flex flex-col items-center m-auto justify-center h-screen text-center">
           <h1 className="text-center">{t('account:politeOhCrap')}</h1>
           <Robot pose="ohno" className="w-48" embed />
@@ -88,7 +92,7 @@ const ConfirmSignUpPage = (props) => {
     )
 
   return (
-    <PageWrapper app={app} title={t('account:oneMomentPlease')} layout={BareLayout} footer={false}>
+    <PageWrapper {...page} title={t('account:oneMomentPlease')} layout={BareLayout} footer={false}>
       <div className="max-w-md flex flex-col items-center m-auto justify-center h-screen text-center">
         <h1 className="text-center">{t('account:oneMomentPlease')}</h1>
         <p className="text-center">
@@ -105,6 +109,7 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, ns)),
+      page: { locale },
     },
   }
 }

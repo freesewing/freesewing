@@ -1,5 +1,4 @@
 // Hooks
-import { useApp } from 'shared/hooks/use-app.mjs'
 import { useTranslation } from 'next-i18next'
 // Dependencies
 import dynamic from 'next/dynamic'
@@ -26,28 +25,34 @@ const DynamicImg = dynamic(
   { ssr: false }
 )
 
-const ImgPage = (props) => {
-  const app = useApp(props)
+/*
+ * Each page MUST be wrapped in the PageWrapper component.
+ * You also MUST spread props.page into this wrapper component
+ * when path and locale come from static props (as here)
+ * or set them manually.
+ */
+const WelcomeImgPage = ({ page }) => {
   const { t } = useTranslation(namespaces)
 
   return (
-    <PageWrapper app={app} title={t('imgTitle')} layout={BareLayout} footer={false}>
-      <DynamicAuthWrapper app={app}>
+    <PageWrapper {...page} title={t('imgTitle')} layout={BareLayout} footer={false}>
+      <DynamicAuthWrapper>
         <div className="m-auto max-w-lg text-center lg:mt-24 p-8">
-          <DynamicImg app={app} title welcome />
+          <DynamicImg title welcome />
         </div>
       </DynamicAuthWrapper>
     </PageWrapper>
   )
 }
 
-export default ImgPage
+export default WelcomeImgPage
 
 export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, namespaces)),
       page: {
+        locale,
         path: ['welcome', 'img'],
       },
     },

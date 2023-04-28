@@ -1,5 +1,5 @@
 // Dependencies
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 // Hooks
 import { useTheme } from 'shared/hooks/use-theme.mjs'
@@ -9,19 +9,20 @@ import { LayoutWrapper, ns as layoutNs } from 'site/components/wrappers/layout.m
 import { DocsLayout, ns as docsNs } from 'site/components/layouts/docs.mjs'
 import { Feeds } from 'site/components/feeds.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
-import { ModalContextProvider, ModalContextConsumer } from 'shared/context/modal-context.mjs'
+import { ModalContext } from 'shared/context/modal-context.mjs'
+import { NavigationContext } from 'shared/context/navigation-context.mjs'
 
 export const ns = [...new Set([...layoutNs, ...docsNs])]
 
 /* This component should wrap all page content */
-export const PageWrapper = ({
-  noSearch = false,
-  app = false,
-  layout = DocsLayout,
-  footer = true,
-  children = [],
-  title = <Spinner className="h-12 w-12 animate-spin text-primary" />,
-}) => {
+export const PageWrapper = (props) => {
+  /*
+   * Deconstruct props
+   */
+  const { layout = DocsLayout, footer = true, children = [], path = [], locale = 'en' } = props
+  // Title is typically set in props.t but check props.title too
+  const pageTitle = props.t ? props.t : props.title ? props.title : null
+
   /*
    * This forces a re-render upon initial bootstrap of the app
    * This is needed to avoid hydration errors because theme can't be set reliably in SSR
@@ -29,6 +30,23 @@ export const PageWrapper = ({
   const [theme, setTheme] = useTheme()
   const [currentTheme, setCurrentTheme] = useState()
   useEffect(() => setCurrentTheme(theme), [currentTheme, theme])
+
+  /*
+   * Contexts
+   */
+  const { modalContent } = useContext(ModalContext)
+  const { title, setTitle, setNavigation } = useContext(NavigationContext)
+
+  /*
+   * Update navigation context with title and path
+   */
+  useEffect(() => {
+    setNavigation({
+      title: pageTitle,
+      locale,
+      path,
+    })
+  }, [path, title, pageTitle])
 
   /*
    * Hotkeys (keyboard actions)
@@ -43,34 +61,24 @@ export const PageWrapper = ({
   const [search, setSearch] = useState(false)
 
   // Helper object to pass props down (keeps things DRY)
-  const childProps = {
-    app: app,
-    footer,
-    search,
-    setSearch,
-    toggleSearch: () => setSearch(!search),
-    noSearch: noSearch,
-    title: app.state.title ? app.state.title : title,
-  }
+  const childProps = { footer, title: pageTitle }
 
   // Make layout prop into a (uppercase) component
   const Layout = layout
 
   // Return wrapper
   return (
-    <ModalContextProvider>
-      <SwipeWrapper app={app}>
-        <div
-          data-theme={currentTheme} // This facilitates CSS selectors
-          key={currentTheme} // This forces the data-theme update
-        >
-          <Feeds />
-          <LayoutWrapper {...childProps}>
-            {Layout ? <Layout {...childProps}>{children}</Layout> : children}
-          </LayoutWrapper>
-          <ModalContextConsumer />
-        </div>
-      </SwipeWrapper>
-    </ModalContextProvider>
+    <SwipeWrapper>
+      <div
+        data-theme={currentTheme} // This facilitates CSS selectors
+        key={currentTheme} // This forces the data-theme update
+      >
+        <Feeds />
+        <LayoutWrapper {...childProps}>
+          {Layout ? <Layout {...childProps}>{children}</Layout> : children}
+        </LayoutWrapper>
+        {modalContent}
+      </div>
+    </SwipeWrapper>
   )
 }

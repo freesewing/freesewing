@@ -1,3 +1,5 @@
+import { NavigationContext } from 'shared/context/navigation-context.mjs'
+import { useContext } from 'react'
 import Link from 'next/link'
 import orderBy from 'lodash.orderby'
 import {
@@ -195,13 +197,14 @@ export const Icons = ({
   return <ul className={ulClasses}>{output}</ul>
 }
 
-export const MainSections = ({ app }) => {
-  if (!app.state.sections) return null
+export const MainSections = () => {
+  const { sections = false, slug } = useContext(NavigationContext)
+  if (!sections) return null
   // Ensure each page as an `o` key so we can put them in order
-  const sortableSections = app.state.sections.map((s) => ({ ...s, o: s.o ? s.o : s.t }))
+  const sortableSections = sections.map((s) => ({ ...s, o: s.o ? s.o : s.t }))
   const output = []
   for (const page of orderBy(sortableSections, ['o', 't'])) {
-    const act = isActive(page.s, app.state.slug)
+    const act = isActive(page.s, slug)
     const txt = (
       <>
         {icons[page.s] ? (
@@ -252,45 +255,47 @@ export const MainSections = ({ app }) => {
   return <ul>{output}</ul>
 }
 
-const getCrumb = (index, app) => app.state.crumbs[index].s.split('/').pop()
+const getCrumb = (index, crumbs) => crumbs[index].s.split('/').pop()
 
-export const ActiveSection = ({ app }) => {
+export const ActiveSection = () => {
+  // Get navigation context
+  const { sections = false, crumbs = [], nav = {}, slug } = useContext(NavigationContext)
+
   // Don't bother if we don't know where we are
-  if (!app.state.crumbs || !Array.isArray(app.state.crumbs) || app.state.crumbs.length < 1)
-    return null
+  if (!crumbs || !Array.isArray(crumbs) || crumbs.length < 1) return null
 
   let slice = 1
-  let nodes = app.state.nav
+  let nodes = nav
   // Some sections are further trimmed
-  if (app.state.crumbs && app.state.crumbs[0].s === 'docs') {
-    if (app.state.crumbs.length > 1 && app.state.crumbs[1].s === 'docs/faq') {
+  if (crumbs && crumbs[0].s === 'docs') {
+    if (crumbs.length > 1 && crumbs[1].s === 'docs/faq') {
       slice = 2
-      nodes = app.state.nav[getCrumb(1, app)]
-    } else if (app.state.crumbs.length === 2) {
+      nodes = nav[getCrumb(1, crumbs)]
+    } else if (crumbs.length === 2) {
       slice = 2
-      nodes = app.state.nav[getCrumb(1, app)]
+      nodes = nav[getCrumb(1, crumbs)]
     } else if (
-      app.state.crumbs.length === 4 &&
-      app.state.crumbs[1].s === 'docs/patterns' &&
-      app.state.crumbs[3].s.split('/').pop() === 'options'
+      crumbs.length === 4 &&
+      crumbs[1].s === 'docs/patterns' &&
+      crumbs[3].s.split('/').pop() === 'options'
     ) {
       slice = 4
-      nodes = app.state.nav[getCrumb(1, app)][getCrumb(2, app)][getCrumb(3, app)]
-    } else if (app.state.crumbs.length > 2 && app.state.crumbs[1].s === 'docs/patterns') {
+      nodes = nav[getCrumb(1, crumbs)][getCrumb(2, crumbs)][getCrumb(3, crumbs)]
+    } else if (crumbs.length > 2 && crumbs[1].s === 'docs/patterns') {
       slice = 3
-      nodes = app.state.nav[getCrumb(1, app)][getCrumb(2, app)]
+      nodes = nav[getCrumb(1, crumbs)][getCrumb(2, crumbs)]
     }
   }
 
   return (
     <div>
-      {app.state.crumbs ? (
+      {crumbs ? (
         <div className="pl-4 my-2">
-          <Breadcrumbs crumbs={app.state.crumbs.slice(0, slice)} />
+          <Breadcrumbs crumbs={crumbs.slice(0, slice)} />
         </div>
       ) : null}
       <div className="pr-2">
-        <SubLevel hasChildren={1} nodes={nodes} active={app.state.slug} />
+        <SubLevel hasChildren={1} nodes={nodes} active={slug} />
       </div>
     </div>
   )

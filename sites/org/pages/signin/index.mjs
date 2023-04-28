@@ -1,11 +1,12 @@
 // Hooks
-import { useState, useEffect } from 'react'
-import { useApp } from 'shared/hooks/use-app.mjs'
+import { useState, useEffect, useContext } from 'react'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useTranslation } from 'next-i18next'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useRouter } from 'next/router'
+// Context
+import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
@@ -55,11 +56,17 @@ export const ButtonText = ({ children }) => (
   <div className="flex flex-row items-center justify-between w-full">{children}</div>
 )
 
-const SignInPage = (props) => {
-  const app = useApp(props)
-  const { setAccount, setToken } = useAccount()
+/*
+ * Each page MUST be wrapped in the PageWrapper component.
+ * You also MUST spread props.page into this wrapper component
+ * when path and locale come from static props (as here)
+ * or set them manually.
+ */
+const SignInPage = ({ page }) => {
+  const { startLoading, stopLoading } = useContext(LoadingContext)
+  const { setAccount, setToken, seenUser, setSeenUser, clear } = useAccount()
   const { t } = useTranslation(['signin', 'signup', 'toast'])
-  const backend = useBackend(app)
+  const backend = useBackend()
   const toast = useToast()
   const router = useRouter()
 
@@ -69,8 +76,9 @@ const SignInPage = (props) => {
   const [magicLink, setMagicLink] = useState(true)
   const [signInFailed, setSignInFailed] = useState(false)
   const [magicLinkSent, setMagicLinkSent] = useState(false)
+  const [seenBefore, setSeenBefore] = useState(false)
 
-  const clearUsername = () => app.setUsername(false)
+  const clearUsername = () => setUsername(false)
 
   useEffect(() => {
     if (typeof window !== 'undefined' && signInFailed) {
@@ -78,9 +86,20 @@ const SignInPage = (props) => {
     }
   }, [signInFailed])
 
+  // Avoid SSR rendering mismatch by setting this in effect
+  useEffect(() => {
+    if (seenUser) {
+      setSeenBefore(seenUser)
+      setUsername(seenUser)
+    } else {
+      setSeenBefore(false)
+      setUsername('')
+    }
+  }, [seenUser])
+
   const signinHandler = async (evt) => {
     evt.preventDefault()
-    app.startLoading()
+    startLoading()
     const result = magicLink
       ? await backend.signIn({ username, password: false })
       : await backend.signIn({ username, password })
@@ -93,7 +112,9 @@ const SignInPage = (props) => {
       } else {
         setAccount(result.data.account)
         setToken(result.data.token)
-        msg = t('signin:welcomeName', { name: result.data.account.username })
+        setSeenUser(result.data.account.username)
+        msg = t('signin:welcomeBackName', { name: result.data.account.username })
+        stopLoading()
         router.push('/account')
       }
       return toast.success(<b>{msg}</b>)
@@ -116,7 +137,7 @@ const SignInPage = (props) => {
       setSignInFailed(msg)
       return toast.warning(<b>{msg}</b>)
     }
-    app.stopLoading()
+    stopLoading()
   }
 
   const btnClasses = `btn capitalize w-full mt-4 ${
@@ -132,8 +153,8 @@ const SignInPage = (props) => {
 
   if (magicLinkSent)
     return (
-      <PageWrapper app={app} title={t('welcomeBack')} layout={BareLayout} footer={false}>
-        <SusiWrapper theme={app.theme}>
+      <PageWrapper {...page} title={t('welcomeBack')} layout={BareLayout} footer={false}>
+        <SusiWrapper>
           <h1 className="text-neutral-content font-light text-3xl mb-4 pb-0 text-center">
             {t('signup:emailSent')}
           </h1>
@@ -154,15 +175,15 @@ const SignInPage = (props) => {
     )
 
   return (
-    <PageWrapper app={app} title={t('welcomeBack')} layout={BareLayout} footer={false}>
-      <SusiWrapper theme={app.theme}>
+    <PageWrapper {...page} title={t('welcomeBack')} layout={BareLayout} footer={false}>
+      <SusiWrapper>
         <h1 className="text-neutral-content font-light text-3xl mb-4 pb-0 text-center">
-          {t('signin:welcomeName', { name: app.username || '' })}
+          {seenBefore ? t('signin:welcomeBackName', { name: seenUser }) : t('signin:welcome')}
         </h1>
         <p className="text-neutral-content text-center">
           {t('signin:signInToThing', { thing: 'FreeSewing.org' })}
         </p>
-        {!app.username && <UsernameField {...{ username, setUsername, t }} />}
+        {!seenBefore && <UsernameField {...{ username, setUsername, t }} />}
         {magicLink ? (
           <button className={btnClasses} tabIndex="-1" role="button" onClick={signinHandler}>
             {signInFailed ? (
@@ -190,29 +211,31 @@ const SignInPage = (props) => {
             </button>
           </>
         )}
-        <ul className="mt-4 flex flex-row gap-2 text-sm items-center justify-center">
+        <ul className="mt-4 mb-2 flex flex-row gap-2 text-sm items-center justify-center">
           <li>
             <button className={darkLinkClasses} onClick={() => setMagicLink(!magicLink)}>
-              {magicLink ? t('signin:signInWith') : t('signin:emailSignInLink')}
+              {magicLink ? t('signin:usePassword') : t('signin:emailSignInLink')}
             </button>
           </li>
-          {app.username ? (
+          {seenBefore ? (
             <>
               <li>|</li>
               <li>
-                <button className={darkLinkClasses} onClick={clearUsername}>
+                <button className={darkLinkClasses} onClick={() => setSeenUser(false)}>
                   Sign in as another user
                 </button>
               </li>
             </>
           ) : null}
         </ul>
-        <p className="text-neutral-content text-sm mt-4 opacity-80 text-center">
-          {t('signin:dontHaveAnAccount')}{' '}
-          <Link className={darkLinkClasses} href="/signup">
-            {t('signin:signUpHere')}
-          </Link>
-        </p>
+        {!seenBefore ? (
+          <p className="text-neutral-content text-sm mt-4 opacity-80 text-center">
+            {t('signin:dontHaveAnAccount')}{' '}
+            <Link className={darkLinkClasses} href="/signup">
+              {t('signin:signUpHere')}
+            </Link>
+          </p>
+        ) : null}
       </SusiWrapper>
     </PageWrapper>
   )
@@ -225,6 +248,7 @@ export async function getStaticProps({ locale }) {
     props: {
       ...(await serverSideTranslations(locale)),
       page: {
+        locale,
         path: ['signin'],
       },
     },
