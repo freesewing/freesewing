@@ -6,6 +6,6 @@ layoutThing: 'Розташувати {thing}'
 pageSize: Розмір сторінки
 startBySelectingAThing: 'Почніть з вибору {thing}'
 testThing: 'Протестувати {thing}'
-yamlEditViewTitleThing: 'Edit Pattern Configuration for {thing}'
-yamlEditViewError: Issues with YAML
-yamlEditViewErrorDesc: We saved your input, but it might not work for the following reasons
+yamlEditViewTitleThing: 'Редагувати конфігурацію шаблону для {thing}'
+yamlEditViewError: Проблеми з YAML
+yamlEditViewErrorDesc: Ми зберегли Ваш внесок, але він може не працювати з наступних причин

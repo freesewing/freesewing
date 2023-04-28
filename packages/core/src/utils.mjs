@@ -320,7 +320,7 @@ export const generateStackTransform = (
 
   // add the scaling to the transforms
   if (scaleX + scaleY < 2) {
-    transforms.push(`scale(${scaleX} ${scaleY})`)
+    transforms.push(`scale(${scaleX}, ${scaleY})`)
   }
 
   if (rotate) {
@@ -331,11 +331,11 @@ export const generateStackTransform = (
     }
 
     // add the rotation around the center to the transforms
-    transforms.push(`rotate(${rotate} ${center.x} ${center.y})`)
+    transforms.push(`rotate(${rotate}, ${center.x}, ${center.y})`)
   }
 
   // put the translation before any other transforms to avoid having to make complex calculations once the matrix has been rotated or scaled
-  if (xTotal !== 0 || yTotal !== 0) transforms.unshift(`translate(${xTotal} ${yTotal})`)
+  if (xTotal !== 0 || yTotal !== 0) transforms.unshift(`translate(${xTotal}, ${yTotal})`)
 
   return {
     transform: transforms.join(' '),

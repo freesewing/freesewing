@@ -23,7 +23,7 @@
     "d3-dispatch": "3.0.1",
     "d3-drag": "3.0.0",
     "d3-selection": "3.0.0",
-    "daisyui": "2.51.5",
+    "daisyui": "2.51.6",
     "feed": "4.2.2",
     "file-saver": "2.0.5",
     "front-matter": "4.0.2",
@@ -52,7 +52,9 @@
     "unist-util-visit": "4.1.2",
     "web-worker": "1.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "recursive-readdir": "^2.2.3"
+  },
   "engines": {
     "node": ">=16.0.0",
     "npm": ">=8"

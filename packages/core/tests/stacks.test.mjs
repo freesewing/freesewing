@@ -170,7 +170,7 @@ describe('Stacks', () => {
         },
       })
       expect(pattern.stacks.test.attributes.list.transform.length).to.equal(1)
-      expect(pattern.stacks.test.attributes.list.transform[0]).to.equal('translate(10 20)')
+      expect(pattern.stacks.test.attributes.list.transform[0]).to.equal('translate(10, 20)')
     })
   })
 

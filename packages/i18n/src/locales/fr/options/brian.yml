@@ -21,8 +21,8 @@ cuffEase:
   title: Aisance de poignet
   description: L'ampleur d'aisance à votre poignet.
 draftForHighBust:
-  title: Draft for high bust
-  description: Draft the pattern for the high bust measurement (if available) rather than the (full) chest. This will result in a more fitted garment for people with breasts.
+  title: Tracé pour le haut de la poitrine
+  description: Tracez le patron pour la mesure du dessus de poitrine (si disponible) au lieu du torse. Cela donnera un vêtement plus ajusté pour les personnes avec des seins.
 frontArmholeDeeper:
   title: Découpe supplémentaire sur l'emmanchure avant
   description: Combien voulez-vous que l’emmanchure devant soit découpée plus profondément que le dos.

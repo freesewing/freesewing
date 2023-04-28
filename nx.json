@@ -17,6 +17,9 @@
     },
     "lint": {
       "dependsOn": ["prebuild"]
+    },
+    "e2e": {
+      "dependsOn": ["prebuild"]
     }
   }
 }

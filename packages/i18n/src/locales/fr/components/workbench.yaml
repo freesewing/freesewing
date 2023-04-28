@@ -6,6 +6,6 @@ layoutThing: 'Mise en page de {thing}'
 pageSize: Taille de page
 startBySelectingAThing: 'Commencez par sélectionner un {thing}'
 testThing: 'Tester {thing}'
-yamlEditViewTitleThing: 'Edit Pattern Configuration for {thing}'
-yamlEditViewError: Issues with YAML
-yamlEditViewErrorDesc: We saved your input, but it might not work for the following reasons
+yamlEditViewTitleThing: 'Modifier la configuration du patron pour {thing}'
+yamlEditViewError: Problèmes avec YAML
+yamlEditViewErrorDesc: Nous avons sauvegardé votre entrée, mais il se peut que cela ne fonctionne pas pour les raisons suivantes

@@ -45,13 +45,17 @@
     "@freesewing/plugin-bundle": "$$ tag $$"
   },
   "devDependencies": {
-    "@freesewing/plugin-cutlist": "$$ tag $$",
+    "@freesewing/plugin-annotations": "$$ tag $$",
     "@freesewing/plugin-flip": "$$ tag $$",
     "@freesewing/plugin-svgattr": "$$ tag $$",
     "@freesewing/plugin-theme": "$$ tag $$",
     "@freesewing/plugin-i18n": "$$ tag $$",
+    "@freesewing/plugin-mirror": "$$ tag $$",
     "@freesewing/models": "$$ tag $$",
     "@headlessui/react": "^1.6.5",
+    $$ #includeTests $$
+    "@playwright/test": "^1.32.3",
+    $$ /includeTests $$
     "js-yaml": "^4.1.0",
     "file-saver": "^2.0.5",
     "axios": "^0.27.2",
@@ -75,6 +79,9 @@
     "mermaid": "10.1.0",
     "next-i18next": "^11.0.0",
     "pdfkit": "^0.13.0",
+    $$ #includeTests $$
+    "playwright": "^1.32.3",
+    $$ /includeTests $$
     "react-copy-to-clipboard": "^5.0.4",
     "react-hotkeys-hook": "^3.4.4",
     "react-swipeable": "^6.2.0",

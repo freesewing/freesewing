@@ -6,7 +6,7 @@ const expect = chai.expect
 describe('Hooks', () => {
   it('Should contain all hooks', () => {
     const pattern = new Pattern()
-    const h = pattern.hooks
+    const h = pattern.plugins.hooks
     const test = {
       preInit: [],
       postInit: [],
