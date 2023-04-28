@@ -112,6 +112,25 @@ export function beamsIntersect(a1, a2, b1, b2) {
 }
 
 /**
+ * Find the intersections between an endless line (beam) and a curve
+ *
+ *
+ * @param {Point} start - Start Point of the line
+ * @param {Point} end - End Point of the line
+ * @param {Point} from - Start Point of the curve
+ * @param {Point} cp1 - Control Point at the start of the curve
+ * @param {Point} cp2 - Control Point at the end of the curve
+ * @param {Point} to - End Point of the curve
+ * @return {Array} intersections - An array of Points at the intersections
+ */
+export function beamIntersectsCurve(start, end, from, cp1, cp2, to) {
+  let _start = new Point(start.x + (start.x - end.x) * 1000, start.y + (start.y - end.y) * 1000)
+  let _end = new Point(end.x + (end.x - start.x) * 1000, end.y + (end.y - start.y) * 1000)
+  console.log({ _start: _start, _end: _end })
+  return lineIntersectsCurve(_start, _end, from, cp1, cp2, to)
+}
+
+/**
  * Returns the string you pass with with the first character converted to uppercase
  *
  * @param {string} string - The string to capitalize
