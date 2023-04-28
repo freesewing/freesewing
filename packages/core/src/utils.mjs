@@ -126,7 +126,6 @@ export function beamsIntersect(a1, a2, b1, b2) {
 export function beamIntersectsCurve(start, end, from, cp1, cp2, to) {
   let _start = new Point(start.x + (start.x - end.x) * 1000, start.y + (start.y - end.y) * 1000)
   let _end = new Point(end.x + (end.x - start.x) * 1000, end.y + (end.y - start.y) * 1000)
-  console.log({ _start: _start, _end: _end })
   return lineIntersectsCurve(_start, _end, from, cp1, cp2, to)
 }
 

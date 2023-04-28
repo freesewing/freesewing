@@ -89,10 +89,10 @@ export const utils_beamintersectscurve = {
   draft: ({ Point, points, Path, paths, Snippet, snippets, utils, part }) => {
     points.A = new Point(10, 10)
     points.Acp = new Point(10, 40)
-    points.B = new Point(110, 70)
+    points.B = new Point(110, 10)
     points.Bcp = new Point(110, 40)
-    points.E = new Point(50, 14)
-    points.D = new Point(55, 16)
+    points.E = new Point(45, 25)
+    points.D = new Point(65, 25)
     paths.curve = new Path().move(points.A).curve(points.Acp, points.Bcp, points.B)
     paths.line = new Path().move(points.E).line(points.D)
 
