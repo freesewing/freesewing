@@ -1,6 +1,6 @@
 import * as shared from './shared.mjs'
 import { pluginBundle } from '@freesewing/plugin-bundle'
-import { pluginCutlist } from '@freesewing/plugin-cutlist'
+import { pluginAnnotations } from '@freesewing/plugin-annotations'
 
 function draftFront({
   utils,
@@ -214,7 +214,7 @@ function draftFront({
 
 export const front = {
   name: 'shelly.front',
-  plugins: [pluginBundle, pluginCutlist],
+  plugins: [pluginBundle, pluginAnnotations],
   draft: draftFront,
   measurements: ['neck', 'chest', 'hips', 'hpsToBust', 'waistToHips', 'hpsToWaistBack'],
   options: {

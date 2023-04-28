@@ -1,6 +1,6 @@
 import * as shared from './shared.mjs'
 import { pluginBundle } from '@freesewing/plugin-bundle'
-import { pluginCutlist } from '@freesewing/plugin-cutlist'
+import { pluginAnnotations } from '@freesewing/plugin-annotations'
 
 function draftBack({
   utils,
@@ -207,7 +207,7 @@ function draftBack({
 
 export const back = {
   name: 'shelly.back',
-  plugins: [pluginBundle, pluginCutlist],
+  plugins: [pluginBundle, pluginAnnotations],
   draft: draftBack,
   measurements: ['neck', 'chest', 'hips', 'hpsToBust', 'waistToHips', 'hpsToWaistBack'],
 }

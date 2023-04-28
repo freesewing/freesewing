@@ -1,6 +1,6 @@
 import * as shared from './shared.mjs'
 import { pluginBundle } from '@freesewing/plugin-bundle'
-import { pluginCutlist } from '@freesewing/plugin-cutlist'
+import { pluginAnnotations } from '@freesewing/plugin-annotations'
 
 function draftNeckband({
   Path,
@@ -75,7 +75,7 @@ function draftNeckband({
 
 export const neckband = {
   name: 'shelly.neckband',
-  plugins: [pluginBundle, pluginCutlist],
+  plugins: [pluginBundle, pluginAnnotations],
   draft: draftNeckband,
   measurements: ['neck', 'chest', 'biceps', 'wrist'],
   options: {

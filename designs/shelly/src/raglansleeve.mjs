@@ -2,7 +2,7 @@ import * as shared from './shared.mjs'
 import { front } from './front.mjs'
 import { back } from './back.mjs'
 import { pluginBundle } from '@freesewing/plugin-bundle'
-import { pluginCutlist } from '@freesewing/plugin-cutlist'
+import { pluginAnnotations } from '@freesewing/plugin-annotations'
 
 function draftRaglanSleeve({
   utils,
@@ -276,7 +276,7 @@ function draftRaglanSleeve({
 export const raglanSleeve = {
   name: 'shelly.raglanSleeve',
   after: [front, back],
-  plugins: [pluginBundle, pluginCutlist],
+  plugins: [pluginBundle, pluginAnnotations],
   draft: draftRaglanSleeve,
   measurements: ['neck', 'chest', 'biceps', 'wrist', 'shoulderToWrist'],
   options: {
