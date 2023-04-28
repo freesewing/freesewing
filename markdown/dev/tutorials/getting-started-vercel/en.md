@@ -147,7 +147,7 @@ The Root Directory setting will determine the build type for the project.
 Names can consist of alphanumeric lowercase and hyphen characters.
 2. Change the Root Directory to the desired setting, as described above.
 3. In the Build & Development Settings,
-add `yarn run build` as the Build Command override.
+add `yarn build` as the Build Command override.
 (All the other settings will work fine with the default values.)
 4. Press the white "Deploy" button.
 
