@@ -193,6 +193,13 @@
       "difficulty": 2,
       "tags": ["tops"]
     },
+    "dona": {
+      "description": "A FreeSewing pattern for a button-front shirt dress, based on the Simone pattern",
+      "code": "mesil",
+      "design": "mesil",
+      "difficulty": 4,
+      "tags": ["tops"]
+    },
     "huey": {
       "description": "A FreeSewing pattern for a zip-up hoodie",
       "code": "Joost De Cock",
