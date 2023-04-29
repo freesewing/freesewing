@@ -438,7 +438,7 @@ function donaFbaFront({
 }
 
 export const fbaFront = {
-  name: 'simone.fbaFront',
+  name: 'dona.fbaFront',
   from: front,
   measurements: ['highBust', 'waistToFloor', 'hpsToWaistBack', 'bustSpan', 'hpsToBust'],
   hide: {
