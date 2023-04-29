@@ -332,8 +332,8 @@ function donaFbaFront({
       'cfBust',
     ],
   })
-  points.logo = new Point(points.armhole.x / 2, points.armhole.y)
-  snippets.logo = new Snippet('logo', points.logo)
+  // points.logo = new Point(points.armhole.x / 2, points.armhole.y)
+  // snippets.logo = new Snippet('logo', points.logo)
 
   // begin changes to modify into a dress pattern
 
@@ -420,6 +420,11 @@ function donaFbaFront({
   paths.saBaseFromHips.hide()
   paths.saBaseFromArmhole.hide()
   paths.saBase.hide()
+
+  if (complete) {
+    points.logo = new Point(points.armhole.x / 2, points.armhole.y)
+    snippets.logo = new Snippet('logo', points.logo)
+  }
 
   if (complete && sa) {
     paths.saFrench = paths.saBase.offset(sa * options.ffsa).attr('class', 'fabric sa')
