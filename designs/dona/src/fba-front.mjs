@@ -42,8 +42,9 @@ function donaFbaFront({
    * return the original part from simon
    */
   if (FBA < 0) {
-    log.info('No FBA required, using unaltered Simon front')
-    return part
+    log.info('No FBA, bust dart calculation is incorrect')
+
+    // return part
   }
 
   /*
