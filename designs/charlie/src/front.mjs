@@ -31,12 +31,7 @@ function draftCharlieFront({
   // Helper method to draw the outline path
   const drawPath = () => {
     let outseam = drawOutseam()
-    return frontInseamPath
-      .clone()
-      .curve(points.crotchSeamCurveCp1, points.crotchSeamCurveCp2, points.crotchSeamCurveStart)
-      .line(points.styleWaistIn)
-      .line(points.slantTop)
-      .join(outseam)
+    return frontInseamPath.clone().join(crotchCurve).join(outseam)
   }
 
   // Helper object holding the Titan side seam path
@@ -58,7 +53,13 @@ function draftCharlieFront({
     .line(points.kneeIn)
     .curve(points.kneeInCp2, points.forkCp1, points.fork)
 
-  // Draw fly J-seam
+  // Helper object holding the crotchCurve
+  const crotchCurve = new Path()
+    .move(points.fork)
+    .curve(points.crotchSeamCurveCp1, points.crotchSeamCurveCp2, points.crotchSeamCurveStart)
+    .line(points.styleWaistIn)
+
+  // Mark the bottom of the fly J-seam
   const flyBottom = utils.curveIntersectsY(
     points.crotchSeamCurveStart,
     points.crotchSeamCurveCp2,
@@ -66,23 +67,19 @@ function draftCharlieFront({
     points.fork,
     points.cfSeat.shiftFractionTowards(points.crotchSeamCurveCp2, options.flyLength).y
   )
+
   if (flyBottom) points.flyBottom = flyBottom
   else log.error('Unable to locate the fly bottom. This draft will fail.')
 
-  points.flyBottom = utils.curveIntersectsY(
-    points.crotchSeamCurveStart,
-    points.crotchSeamCurveCp2,
-    points.crotchSeamCurveCp1,
-    points.fork,
-    points.cfSeat.shiftFractionTowards(points.crotchSeamCurveCp2, options.flyLength).y
-  )
+  // Define Fly components
   points.flyExtensionBottom = utils.curveIntersectsY(
     points.crotchSeamCurveStart,
     points.crotchSeamCurveCp2,
     points.crotchSeamCurveCp1,
     points.fork,
-    points.cfSeat.shiftFractionTowards(points.crotchSeamCurveCp2, options.flyLength * 1.25).y
+    points.cfSeat.shiftFractionTowards(points.crotchSeamCurveCp2, options.flyLength * 1.5).y
   )
+
   points.flyTop = points.styleWaistOut.shiftFractionTowards(
     points.styleWaistIn,
     1 - options.flyWidth
@@ -98,6 +95,59 @@ function draftCharlieFront({
   )
   points.flyCurveCp1 = points.flyBottom.shiftFractionTowards(points.flyCorner, options.flyCurve)
   points.flyCurveCp2 = points.flyCurveStart.shiftFractionTowards(points.flyCorner, options.flyCurve)
+
+  let topStitchDist = (1 - options.flyWidth) * 8
+
+  points.flyTopSeamline = points.flyTop.shiftTowards(points.styleWaistIn, topStitchDist)
+
+  points.flyBottomSeamLine = utils.curveIntersectsY(
+    points.crotchSeamCurveStart,
+    points.crotchSeamCurveCp2,
+    points.crotchSeamCurveCp1,
+    points.fork,
+    points.flyBottom.shiftTowards(points.crotchSeamCurveStart, topStitchDist).y
+  )
+
+  let waistlineAngle = points.flyTop.angle(points.flyTopSeamline)
+  points.flyCurveSeamLine = points.flyCurveStart.shift(waistlineAngle, topStitchDist)
+
+  let curveOffset = (topStitchDist * Math.PI) / 2 // lets the curve scale nicely
+  points.flyCurveSeamCp1 = points.flyCurveCp1.shift(
+    points.cfSeat.angle(points.crotchSeamCurveStart),
+    curveOffset
+  )
+  points.flyCurveSeamCp2 = points.flyCurveCp2.shift(waistlineAngle, curveOffset)
+
+  paths.flyFacingLine = new Path()
+    .move(points.flyTop)
+    .line(points.flyCurveStart)
+    .curve(points.flyCurveCp2, points.flyCurveCp1, points.flyBottom)
+    .setClass('lining dashed')
+
+  let JseamCurve = new Path()
+    .move(points.flyCurveSeamLine)
+    .curve(points.flyCurveSeamCp2, points.flyCurveSeamCp1, points.flyBottomSeamLine)
+  paths.completeJseam = new Path()
+    .move(points.flyTopSeamline)
+    .join(JseamCurve)
+    .setClass('dashed')
+    .addText('j-seam stitch line (left leg)', 'center text-sm')
+
+  paths.flyRightLegExtension = crotchCurve
+    .clone()
+    .split(points.flyBottom)[1]
+    .offset(topStitchDist)
+    .line(points.styleWaistIn)
+    .reverse()
+    .line(points.flyExtensionBottom)
+    .reverse()
+    .setClass('fabric')
+    .addText('right leg seamline', 'center fill-note text-sm')
+
+  // paths.flyRightLegTabThing = new Path()
+  //   .move(paths.flyRightLegExtension.start())
+  //   .line(points.flyExtensionBottom)
+  //   .setClass('fabric')
 
   // Construct pocket slant
   points.slantTop = points.styleWaistIn.shiftFractionTowards(
@@ -151,6 +201,7 @@ function draftCharlieFront({
     0,
     points.slantTop.dist(points.pocketFacingTop)
   )
+
   // YOLO
   points.pocketFacingBottom = new Path()
     .move(points.pocketFacingTop)
@@ -209,17 +260,10 @@ function draftCharlieFront({
         'grainlineBottom',
         'flyBottom',
         'flyExtensionBottom',
+        'flyBottomSeamLine',
       ],
     })
-    let Jseam = new Path()
-      .move(points.flyCurveStart)
-      .curve(points.flyCurveCp2, points.flyCurveCp1, points.flyBottom)
-    paths.Jseam = new Path()
-      .move(points.flyTop)
-      .join(Jseam)
-      .attr('class', 'dashed')
-      .attr('data-text', 'Left panel only')
-      .attr('data-text-class', 'center')
+
     paths.pocketBag = new Path()
       .move(points.slantTop)
       .line(points.slantCurveStart)
@@ -229,7 +273,7 @@ function draftCharlieFront({
       .line(points.pocketbagTopRight)
       .move(points.pocketFacingTop)
       .line(points.pocketFacingBottom)
-      .attr('class', 'lining dashed')
+      .setClass('lining dashed')
 
     // Bartack
     macro('bartack', {
@@ -246,7 +290,7 @@ function draftCharlieFront({
     // This is too small to do on doll-sized patterns
     if (measurements.waist > 200) {
       macro('bartackFractionAlong', {
-        path: Jseam.reverse(),
+        path: JseamCurve.reverse(),
         start: 0,
         end: 0.1,
         suffix: 'stom',
@@ -254,6 +298,7 @@ function draftCharlieFront({
     }
 
     if (sa) {
+      // Draw the main front seam allowance
       paths.sa = drawPath()
         .offset(sa)
         .join(
@@ -264,7 +309,15 @@ function draftCharlieFront({
         )
         .close()
         .trim()
-        .attr('class', 'fabric sa')
+        .setClass('fabric sa')
+
+      // Draw the right leg fly extension
+      let FlyRightLegExtensionSa = paths.flyRightLegExtension.offset(sa)
+      paths.flyRightLegExtensionSa = FlyRightLegExtensionSa.split(
+        FlyRightLegExtensionSa.intersects(paths.sa)[0]
+      )[1]
+        .setClass('dotted')
+        .addText('right leg seam allowance', 'center fill-note text-sm')
     }
 
     if (paperless) {

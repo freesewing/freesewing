@@ -16,12 +16,12 @@ function draftCharlieFlyExtension({ points, paths, Path, complete, macro, sa, pa
   // Paths
   paths.saBase = new Path()
     .move(points.flyCorner)
-    .line(points.flyBottom)
+    .line(points.flyExtensionBottom)
     .join(
       new Path()
         .move(points.fork)
         .curve(points.crotchSeamCurveCp1, points.crotchSeamCurveCp2, points.crotchSeamCurveStart)
-        .split(points.flyBottom)
+        .split(points.flyExtensionBottom)
         .pop()
     )
     .line(points.styleWaistIn)

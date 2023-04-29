@@ -194,16 +194,27 @@ When you're done, press open the inseam.
 
 ## Step 9:  Close the crossseam
 
+<tip>
+
+Double check that your right and left legs match the pattern markings. The right leg's crotch should extend slightly beyond the left. Refer to the pattern and cut excess on the left leg if necessary.
+
+It can be valuable to mark with chalk or a running stitch the **Center Front** on each leg. This will help you make sure the peices are in the right place duing fly construction.
+
+</tip>
+
 Make sure one leg is turned with the good side out, and the other has the good side in.
 
 Now tuck the leg with the good side out inside the leg that has the good side in.
 This way, they have their good sides against each other.
 
 Align the cross seam, starting at the back waist, pinning both halves together as you make your way
-towards the fly. Stop at the fly notch.
+towards the fly. **Stop at the fly notch** and makes sure to back-stitch.
 
 When you're done. Do it again. Always sew the cross seam twice.
 It's one of those best practices you ignore at your own peril.
+
+![Close Crossseam](CloseCrossseam.svg)
+
 
 <Tip>
 
@@ -215,22 +226,7 @@ Getting it just right is one of those things you'll end up cherishing each time 
 </Tip>
 
 ## Step 10: Construct the fly
-
-<tip>
-
-**Center Front**
-It can be valuable to mark with chalk or a running stitch the center front of the right leg. this will assist during fly construction.
-
-</tip>
-
-<tip>
-
-**Zipper Length**
-The expected zipper stop is marked on the pattern. This ensures we don't sew over the zipper stop by mistake and reduces tension on the J seam during use. If your zipper that extends past the expected stop, simply use a 0 length zig zag stitch to make a new stop and cut away the excess.
-
-</tip>
-
-### Close the fly extension
+### Close the fly extension and serge
 
 Fold the fly extension on its fold line with good sides together.
 
@@ -238,21 +234,20 @@ Now sew along the bottom, to close the fly extension.
 
 Trim back one half of the seam allowance to remove bulk before turning it good side out and pressing.
 
-### Serge the fly extension and fly facing
+#### Serge the fly extension and fly facing
 
 Serge (or zig-zag) along the open side of the fly extension. No need to serge the top as that will get caught in our waistband.
 
 while you're at it, also serge along the entirety of the fly facings J-shaped edge.
 
+![Close Extension and Serge](CloseExtensionAndSerge.svg)
+
+
 ### Attach the fly facing
 
-<tip>
-
-Double check that your right and left legs match the pattern markings. The right leg should extend ~1/4"/6mm beyond the left. Refer to the pattern and cut excess on the left leg if necessary.
-
-</tip>
-
 Sew fly facing to left leg. You will be sewing slightly past the cross seam point, so be careful to keep the right leg seam allowance out of the way and aim to sew directly on top of the cross seam line.
+
+![Attach Facing](AttachFacing.svg)
 
 ### Finish the fly facing
 
@@ -261,9 +256,22 @@ Tuck in the tip of the fly facing and secure it with a few stitches.
 Edge stitch the fly facing to the seam allowance.
 Press the seam allowance toward the facing and understitch the facing for a clean finish. Again, keeping the right leg 	seam allowance out of the way.
 
+![Finish Facing](FinishFacing.svg)
+
 ### Edge stitch the zipper to the fly extension
 
+<tip>
+
+**Zipper Length**
+
+It's a good idea to ensure your zipper stop ends before the indicated stitch line on the pattern. This will ensure you don't sew over your zipper stop and reduces tension on the bottom of the fly. If your zipper is too long, you can do a 0 length zig zag stitch to create a new stop (on just the zipper itself).
+
+</tip>
+
 Edge stitch along the left edge of the zipper to the serged edge of the fly extension to hold it in place.
+
+![Baste Zipper](BasteZipper.svg)
+
 
 ### Top stitch the right leg to the zipper
 
@@ -271,7 +279,7 @@ Start by pressing the right leg seam allowance to the back.
 
 <tip>
 
-Remember that the seam allowance starts ~1/4"/6mm to the right of the center front, make sure you don't fold along the center front line by mistake.
+Remember that the seam allowance starts slightly right of the center front, the center front is marked in purple in the image, make sure you don't fold along the center front line by mistake.
 
 </tip>
 
@@ -279,24 +287,33 @@ Ensure you place the folded edge of the right leg just left of the zipper teeth 
 
 Stop sewing at the top 'fly extention' notch, slightly above the cross seam, and be sure to backstitch. If you don't do this you won't be able to keep the extension out of the way when sewing the J-Seam.
 
+![Attach Extension to Right Leg](AttachExtensionToRightLeg.svg)
+
+
 ### Attach the zipper to the fly facing.
 
-Be careful to align the leg left on the right center front. It can be valuable to pin or baste through the facing and right zide of the zipper tape. (We need to sew the right side of the zipper tape to the left leg).
-Ensuring everything is lined up, pin the right side of the zipper to just the fly facing and sew. Try to get slow to the zipper, but not too close.
+Be careful to align the leg left on the right center front. It can be valuable to pin or baste through the facing and right zide of the zipper tape. (We need to sew the left side of the zipper tape to the left leg).
+Ensuring everything is lined, sew the fly facing to the left side of the zipper. Try to get close to the zipper, but not too close.
+
+![Attach Facing to Zipper](AttachFacingToZipper.svg)
+
 
 ### Sew the J-seam of the fly
 
 <tip>
 
 Use a peice of paper as a guide to sew the J seam, this can be cut from your pattern along the indicated stitch line.
+
 </tip>
 
 Now topstitch the so-called J-seam of the fly. Make sure to keep the fly extension out of the way. Since you didn't sew all the way along the fly extention, you should be able to pin it out of the way.
 
-### Bar tack the bottom of the fly
+#### Bar tack the bottom of the fly
 
 Now, bartack the very botton of the J-seam (the horizontal part) but this time make sure to also catch the fly extension.
-Optionally, you can add an additional bar tack at the edge further up along the J-seam curve as indicated on the patter.
+You can choose to add an additional bar tack along the J-Seam as well (shown in purple).
+
+![Sew the J-Seam](SewTheJSeam.svg)
 
 ## Step 11: Attach the belt loops
 
@@ -312,6 +329,8 @@ Cut a strip 80cm long (32 inch) and 2.8cm wide (1 1/8 inch).
 
 Serge (or zigzag) the long edge of the strip on both sides.
 
+![Finish Loop Edges](FinishLoopEdges.svg)
+
 Fold one side inwards, and the other side over it. Then press down with your iron.
 The end result should be a long strip about 1cm wide.
 
@@ -319,6 +338,8 @@ Now sew along the entire length of the strip, smack in the middle of it.
 Make sure to use a generous stitch length for this.
 
 Finally, cut your length belt loops strip into 8 equal parts to make 8 belt loops.
+
+![Stitch and Cut Loops](StitchAndCutLoops.svg)
 
 ### Attach the belt loops
 
