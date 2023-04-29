@@ -4,7 +4,7 @@ import { Design } from '@freesewing/core'
 import { data } from '../data.mjs'
 import {
   // We use these as-is from simon
-  back,
+  // back,
   collar,
   collarStand,
   cuff,
