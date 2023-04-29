@@ -2,7 +2,7 @@ import { front } from './front.mjs'
 import { bustPlugin } from '@freesewing/plugin-bust'
 // import { lengthBonus } from './options.mjs'
 
-function simoneFbaFront({
+function donaFbaFront({
   measurements,
   Point,
   points,
@@ -463,5 +463,5 @@ export const fbaFront = {
     lengthBonus: { pct: 75, min: 25, max: 100, menu: 'fit' },
     hemExpansion: { pct: 150, min: 100, max: 200, menu: 'fit' },
   },
-  draft: simoneFbaFront,
+  draft: donaFbaFront,
 }
