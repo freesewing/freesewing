@@ -11,6 +11,7 @@ import {
   splitCurve,
   beamIntersectsX,
   beamIntersectsY,
+  beamIntersectsCurve,
   units,
   lineIntersectsCurve,
   curveIntersectsX,
@@ -69,6 +70,42 @@ describe('Utils', () => {
     let X = beamsIntersect(a, b, c, d)
     expect(round(X.x)).to.equal(7.14)
     expect(round(X.y)).to.equal(40)
+  })
+  it('Should find no intersections between a curve and a beam', () => {
+    let A = new Point(10, 10)
+    let Acp = new Point(10, 30)
+    let B = new Point(110, 10)
+    let Bcp = new Point(110, 30)
+    let E = new Point(10, 40)
+    let D = new Point(20, 40)
+
+    let hit = beamIntersectsCurve(E, D, A, Acp, Bcp, B)
+    expect(hit).to.equal(false)
+  })
+
+  it('Should find one intersections between a curve and a beam', () => {
+    let A = new Point(10, 10)
+    let Acp = new Point(10, 30)
+    let B = new Point(110, 10)
+    let Bcp = new Point(110, 30)
+    let E = new Point(50, 14)
+    let D = new Point(55, 16)
+
+    let hit = beamIntersectsCurve(E, D, A, Acp, Bcp, B)
+    expect(round(hit.x)).to.equal(75.79)
+    expect(round(hit.y)).to.equal(24.31)
+  })
+
+  it('Should find two intersections between a curve and a beam', () => {
+    let A = new Point(10, 10)
+    let Acp = new Point(10, 30)
+    let B = new Point(110, 10)
+    let Bcp = new Point(110, 30)
+    let E = new Point(0, 14)
+    let D = new Point(5, 15)
+
+    let hits = beamIntersectsCurve(E, D, A, Acp, Bcp, B)
+    expect(hits.length).to.equal(2)
   })
 
   it("Should return false when two lines don't intersect", () => {
