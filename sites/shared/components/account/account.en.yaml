@@ -171,3 +171,5 @@ setNameDesc: A name to identify this measurements set
 notes: Notes
 setNotesDesc: Any notes you'd like to keep regarding this measurements set
 description: Description
+deleteSetWarning: Removing a measurements set cannot be undone.
+

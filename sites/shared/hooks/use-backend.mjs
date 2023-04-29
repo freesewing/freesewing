@@ -184,5 +184,14 @@ export function useBackend(token = false) {
    */
   backend.createSet = async (data) => responseHandler(await api.post(`/sets/jwt`, data, auth), 201)
 
+  /*
+   * Remove measurements set
+   */
+  backend.removeSet = async (id) => {
+    const response = await api.delete(`/sets/${id}/jwt`, auth)
+
+    return response && response.status === 204 ? true : false
+  }
+
   return backend
 }

@@ -3,6 +3,7 @@ import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 import { DateTime } from 'luxon'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
+import orderBy from 'lodash.orderby'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
@@ -34,9 +35,7 @@ const NewSet = ({ t, account, setGenerate, oneAdded, backend, toast, standAlone 
 
   // State
   const [name, setName] = useState('')
-  const [notes, setNotes] = useState('')
-  const [set, setSet] = useState(false)
-  const [activeTab, setActiveTab] = useState('edit')
+  const [mset, setMset] = useState(false)
 
   // Helper method to create a new set
   const createSet = async () => {
@@ -46,7 +45,7 @@ const NewSet = ({ t, account, setGenerate, oneAdded, backend, toast, standAlone 
     })
     if (result.success) {
       toast.success(<span>{t('nailedIt')}</span>)
-      setSet(result.data.set)
+      setMset(result.data.set)
       oneAdded()
     } else toast.for.backendError()
     stopLoading()
@@ -54,7 +53,7 @@ const NewSet = ({ t, account, setGenerate, oneAdded, backend, toast, standAlone 
 
   // Helper method to clear inputs
   const clear = () => {
-    setSet(false)
+    setMset(false)
     setGenerate(false)
   }
 
@@ -73,31 +72,6 @@ const NewSet = ({ t, account, setGenerate, oneAdded, backend, toast, standAlone 
         type="text"
         placeholder={'Georg Cantor'}
       />
-      {account.control > 2 ? (
-        <>
-          <h3>{t('notes')}</h3>
-          <p>{t('setNotesDesc')}</p>
-          <div className="tabs w-full">
-            <Tab id="edit" {...tabProps} />
-            <Tab id="preview" {...tabProps} />
-          </div>
-          <div className="flex flex-row items-center mt-4">
-            {activeTab === 'edit' ? (
-              <textarea
-                rows="5"
-                className="textarea textarea-bordered textarea-lg w-full"
-                placeholder={t('placeholder')}
-                onChange={(evt) => setNotes(evt.target.value)}
-                value={notes}
-              />
-            ) : (
-              <div className="text-left px-4 border w-full">
-                <Markdown>{notes}</Markdown>
-              </div>
-            )}
-          </div>
-        </>
-      ) : null}
       <div className="flex flex-row gap-2 items-center w-full my-8">
         <button
           className="btn btn-primary grow capitalize"
@@ -117,6 +91,13 @@ const NewSet = ({ t, account, setGenerate, oneAdded, backend, toast, standAlone 
   )
 }
 
+const Row = ({ title, children }) => (
+  <div className="flex flex-row flex-wrap items-center lg:gap-4 my-2">
+    <div className="w-24 text-left md:text-right block md:inline font-bold pr-4">{title}</div>
+    <div className="grow">{children}</div>
+  </div>
+)
+
 const MeasurementsSet = ({ apikey, t, account, backend, oneAdded }) => {
   // Context
   const { loading, startLoading, stopLoading } = useContext(LoadingContext)
@@ -127,17 +108,14 @@ const MeasurementsSet = ({ apikey, t, account, backend, oneAdded }) => {
 
   const fields = {
     id: 'ID',
-    name: t('keyName'),
+    name: t('name'),
     level: t('keyLevel'),
-    expiresAt: t('expires'),
     createdAt: t('created'),
   }
 
-  const expired = DateTime.fromISO(apikey.expiresAt).valueOf() < DateTime.now().valueOf()
-
   const remove = async () => {
     startLoading()
-    const result = await backend.removeApikey(apikey.id)
+    const result = await backend.removeSet(mset.id)
     if (result) toast.success(t('gone'))
     else toast.for.backendError()
     // This just forces a refresh of the list from the server
@@ -150,7 +128,7 @@ const MeasurementsSet = ({ apikey, t, account, backend, oneAdded }) => {
     setModal(
       <ModalWrapper slideFrom="top">
         <h2>{t('areYouCertain')}</h2>
-        <p>{t('deleteKeyWarning')}</p>
+        <p>{t('deleteSetWarning')}</p>
         <p className="flex flex-row gap-4 items-center justify-center">
           <button className="btn btn-neutral btn-outline px-8">{t('cancel')}</button>
           <button className="btn btn-error px-8" onClick={remove}>
@@ -163,21 +141,15 @@ const MeasurementsSet = ({ apikey, t, account, backend, oneAdded }) => {
 
   const title = (
     <div className="flex flex-row gap-2 items-center inline-block justify-around w-full">
-      <span>{apikey.name}</span>
-      <span className="font-normal">
-        {t('expires')}: <b>{DateTime.fromISO(apikey.expiresAt).toLocaleString()}</b>
-      </span>
-      <span className="opacity-50">|</span>
-      <span className="font-normal">
-        {t('keyLevel')}: <b>{apikey.level}</b>
-      </span>
+      <span>{mset.name}</span>
     </div>
   )
 
+  //return <pre>{JSON.stringify(mset, null ,2)}</pre>
   return (
     <Collapse
       title={[title, null]}
-      valid={!expired}
+      valid={true}
       buttons={[
         <button
           key="button1"
@@ -188,14 +160,10 @@ const MeasurementsSet = ({ apikey, t, account, backend, oneAdded }) => {
         </button>,
       ]}
     >
-      {expired ? (
-        <Popout warning compact>
-          <b>{t('keyExpired')}</b>
-        </Popout>
-      ) : null}
+      <pre>{JSON.stringify(mset, null, 2)}</pre>
       {Object.entries(fields).map(([key, title]) => (
         <Row title={title} key={key}>
-          {apikey[key]}
+          {mset[key]}
         </Row>
       ))}
     </Collapse>
@@ -257,8 +225,8 @@ export const Sets = () => {
       ) : (
         <>
           <h2>{t('sets')}</h2>
-          {sets.map((set) => (
-            <Set {...{ account, apikey, t, backend, oneAdded }} key={apikey.id} />
+          {orderBy(sets, ['name'], ['asc']).map((mset) => (
+            <MeasurementsSet {...{ app, account, mset, t, backend, oneAdded }} key={mset.id} />
           ))}
           <button
             className="btn btn-primary w-full capitalize mt-4"
