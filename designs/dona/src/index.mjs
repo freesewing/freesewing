@@ -64,4 +64,16 @@ const Dona = new Design({
 export {
   // box,
   Dona,
+  fbaFront,
+  collar,
+  collarStand,
+  cuff,
+  sleeve,
+  sleevePlacketOverlap,
+  sleevePlacketUnderlap,
+  yoke,
+  buttonPlacket,
+  buttonholePlacket,
+  frontLeft,
+  frontRight,
 }
