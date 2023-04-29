@@ -39,7 +39,7 @@ function draftCharlieFlyExtension({ points, paths, Path, complete, macro, sa, pa
     macro('title', {
       at: points.titleAnchor,
       nr: 10,
-      title: 'flyExtention',
+      title: 'flyExtension',
     })
     if (sa)
       paths.sa = paths.saBase
