@@ -131,7 +131,7 @@ function draftCharlieFront({
     .move(points.flyTopSeamline)
     .join(JseamCurve)
     .setClass('dashed')
-    .addText('j-seam stitch line (left leg)', 'center text-sm')
+    .addText('jseamStitchLine', 'center text-sm')
 
   paths.flyRightLegExtension = crotchCurve
     .clone()
@@ -142,12 +142,7 @@ function draftCharlieFront({
     .line(points.flyExtensionBottom)
     .reverse()
     .setClass('fabric')
-    .addText('right leg seamline', 'center fill-note text-sm')
-
-  // paths.flyRightLegTabThing = new Path()
-  //   .move(paths.flyRightLegExtension.start())
-  //   .line(points.flyExtensionBottom)
-  //   .setClass('fabric')
+    .addText('rightLegSeamline', 'center fill-note text-sm')
 
   // Construct pocket slant
   points.slantTop = points.styleWaistIn.shiftFractionTowards(
@@ -317,7 +312,7 @@ function draftCharlieFront({
         FlyRightLegExtensionSa.intersects(paths.sa)[0]
       )[1]
         .setClass('dotted')
-        .addText('right leg seam allowance', 'center fill-note text-sm')
+        .addText('rightLegSeamAllowance', 'center fill-note text-sm')
     }
 
     if (paperless) {

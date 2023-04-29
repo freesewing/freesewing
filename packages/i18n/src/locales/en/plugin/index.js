@@ -1,29 +1,32 @@
-import brian from './patterns/brian.yaml'
 import aaron from './patterns/aaron.yaml'
+import brian from './patterns/brian.yaml'
 import bruce from './patterns/bruce.yaml'
+import cfp from './patterns/cfp.yaml'
+import charlie from './patterns/charlie.yaml'
 import hugo from './patterns/hugo.yaml'
 import simon from './patterns/simon.yaml'
 import teagan from './patterns/teagan.yaml'
-import cfp from './patterns/cfp.yaml'
+
+import cutlist from './plugins/cutlist/yaml'
 import cutonfold from './plugins/cutonfold.yaml'
 import grainline from './plugins/grainline.yaml'
 import scalebox from './plugins/scalebox.yaml'
 import title from './plugins/title.yaml'
-import cutlist from './plugins/cutlist/yaml'
 
 const files = {
-  brian,
   aaron,
+  brian,
   bruce,
+  cfp,
+  charlie,
   hugo,
   simon,
   teagan,
-  cfp,
+  cutlist,
   cutonfold,
   grainline,
   scalebox,
   title,
-  cutlist,
 }
 
 const messages = {}
