@@ -13,10 +13,10 @@ import {
   sleevePlacketUnderlap,
   yoke,
   // We'll update these to use simone's front as dependency
-  buttonholePlacket as simonButtonholePlacket,
-  buttonPlacket as simonButtonPlacket,
-  frontRight as simonFrontRight,
-  frontLeft as simonFrontLeft,
+  buttonholePlacket as simoneButtonholePlacket,
+  buttonPlacket as simoneButtonPlacket,
+  frontRight as simoneFrontRight,
+  frontLeft as simoneFrontLeft,
 } from '@freesewing/simon'
 // Re-export skeleton parts so people can re-use them
 
@@ -25,19 +25,19 @@ import { fbaFront } from './fba-front.mjs'
 
 // Update these to use simone's front as dependency
 const buttonholePlacket = {
-  ...simonButtonholePlacket,
+  ...simoneButtonholePlacket,
   from: fbaFront,
 }
 const buttonPlacket = {
-  ...simonButtonPlacket,
+  ...simoneButtonPlacket,
   from: fbaFront,
 }
 const frontRight = {
-  ...simonFrontRight,
+  ...simoneFrontRight,
   from: fbaFront,
 }
 const frontLeft = {
-  ...simonFrontLeft,
+  ...simoneFrontLeft,
   from: fbaFront,
 }
 
@@ -61,7 +61,7 @@ const Dona = new Design({
 })
 
 // Named exports
-export { 
-  // box, 
-  Dona 
+export {
+  // box,
+  Dona,
 }
