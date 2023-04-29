@@ -288,16 +288,16 @@ export function deg2rad(degrees) {
  * @param {bool} flipX - Whether or not to flip/mirror along the X-axis
  * @param {bool} flipY - Whether or not to flip/mirror along the Y-axis
  * @param {Stack} stack - The Stack instance
- * @return {string} transform - The SVG transform value
+ * @return {String[]} transform - An array of SVG transform values
  */
-export const generateStackTransform = (
+export function generateStackTransform(
   x = 0,
   y = 0,
   rotate = 0,
   flipX = false,
   flipY = false,
   stack
-) => {
+) {
   const transforms = []
   let xTotal = x || 0
   let yTotal = y || 0
@@ -337,10 +337,7 @@ export const generateStackTransform = (
   // put the translation before any other transforms to avoid having to make complex calculations once the matrix has been rotated or scaled
   if (xTotal !== 0 || yTotal !== 0) transforms.unshift(`translate(${xTotal}, ${yTotal})`)
 
-  return {
-    transform: transforms.join(' '),
-    // 'transform-origin': `${center.x} ${center.y}`
-  }
+  return transforms
 }
 
 /**
@@ -682,6 +679,77 @@ function __parseTransform(transform) {
 }
 
 /**
+ * Applies a transformation of the given type to the matrix
+ * @param  {String} transformationType   the transformation type (tranlate, rotate, scale, skew, etc)
+ * @param  {Number[]} matrix             the matrix to apply the transform to
+ * @param  {Number[]} values             the transformation values to apply
+ * @return {Number[]}                    the transformed matrix
+ */
+function matrixTransform(transformationType, matrix, values) {
+  // Update matrix for transform
+  switch (transformationType) {
+    case 'matrix':
+      matrix = [
+        matrix[0] * values[0] + matrix[2] * values[1],
+        matrix[1] * values[0] + matrix[3] * values[1],
+        matrix[0] * values[2] + matrix[2] * values[3],
+        matrix[1] * values[2] + matrix[3] * values[3],
+        matrix[0] * values[4] + matrix[2] * values[5] + matrix[4],
+        matrix[1] * values[4] + matrix[3] * values[5] + matrix[5],
+      ]
+      break
+    case 'translate':
+      matrix[4] += matrix[0] * values[0] + matrix[2] * values[1]
+      matrix[5] += matrix[1] * values[0] + matrix[3] * values[1]
+      break
+    case 'scale':
+      matrix[0] *= values[0]
+      matrix[1] *= values[0]
+      matrix[2] *= values[1]
+      matrix[3] *= values[1]
+      break
+    case 'rotate': {
+      const angle = (values[0] * Math.PI) / 180
+      const centerX = values[1]
+      const centerY = values[2]
+
+      // if there's a rotation center, we need to move the origin to that center
+      if (centerX) {
+        matrix = matrixTransform('translate', matrix, [centerX, centerY])
+      }
+
+      // rotate
+      const cos = Math.cos(angle)
+      const sin = Math.sin(angle)
+      matrix = [
+        matrix[0] * cos + matrix[2] * sin,
+        matrix[1] * cos + matrix[3] * sin,
+        matrix[0] * -sin + matrix[2] * cos,
+        matrix[1] * -sin + matrix[3] * cos,
+        matrix[4],
+        matrix[5],
+      ]
+
+      // move the origin back to origin
+      if (centerX) {
+        matrix = matrixTransform('translate', matrix, [-centerX, -centerY])
+      }
+      break
+    }
+    case 'skewX':
+      matrix[2] += matrix[0] * Math.tan((values[0] * Math.PI) / 180)
+      matrix[3] += matrix[1] * Math.tan((values[0] * Math.PI) / 180)
+      break
+    case 'skewY':
+      matrix[0] += matrix[2] * Math.tan((values[0] * Math.PI) / 180)
+      matrix[1] += matrix[3] * Math.tan((values[0] * Math.PI) / 180)
+      break
+  }
+
+  return matrix
+}
+
+/**
  * Combines an array of (SVG) transforms into a single matrix transform
  *
  * @param {array} transorms - The list of transforms to combine
@@ -698,52 +766,7 @@ export function combineTransforms(transforms = []) {
   for (let i = 0; i < transforms.length; i++) {
     // Parse the transform string
     const { name, values } = __parseTransform(transforms[i])
-
-    // Update matrix for transform
-    switch (name) {
-      case 'matrix':
-        matrix = [
-          matrix[0] * values[0] + matrix[2] * values[1],
-          matrix[1] * values[0] + matrix[3] * values[1],
-          matrix[0] * values[2] + matrix[2] * values[3],
-          matrix[1] * values[2] + matrix[3] * values[3],
-          matrix[0] * values[4] + matrix[2] * values[5] + matrix[4],
-          matrix[1] * values[4] + matrix[3] * values[5] + matrix[5],
-        ]
-        break
-      case 'translate':
-        matrix[4] += matrix[0] * values[0] + matrix[2] * values[1]
-        matrix[5] += matrix[1] * values[0] + matrix[3] * values[1]
-        break
-      case 'scale':
-        matrix[0] *= values[0]
-        matrix[1] *= values[0]
-        matrix[2] *= values[1]
-        matrix[3] *= values[1]
-        break
-      case 'rotate': {
-        const angle = (values[0] * Math.PI) / 180
-        const cos = Math.cos(angle)
-        const sin = Math.sin(angle)
-        matrix = [
-          matrix[0] * cos + matrix[2] * sin,
-          matrix[1] * cos + matrix[3] * sin,
-          matrix[0] * -sin + matrix[2] * cos,
-          matrix[1] * -sin + matrix[3] * cos,
-          matrix[4],
-          matrix[5],
-        ]
-        break
-      }
-      case 'skewX':
-        matrix[2] += matrix[0] * Math.tan((values[0] * Math.PI) / 180)
-        matrix[3] += matrix[1] * Math.tan((values[0] * Math.PI) / 180)
-        break
-      case 'skewY':
-        matrix[0] += matrix[2] * Math.tan((values[0] * Math.PI) / 180)
-        matrix[1] += matrix[3] * Math.tan((values[0] * Math.PI) / 180)
-        break
-    }
+    matrix = matrixTransform(name, matrix, values)
   }
 
   // Return the combined matrix transform
@@ -801,4 +824,45 @@ export function applyTransformToPoint(transform, point) {
   point.y = newY
 
   return point
+}
+
+/**
+ * Get the bounds of a given object after transforms have been applied
+ * @param  {Object}           boundsObj   any object with `topLeft` and `bottomRight` properties
+ * @param  {Boolean|String[]} transforms  the transforms to apply to the bounds, structured as they would be for being applied as an svg attribute
+ * @return {Object}                       `tl` and `br` for the transformed bounds
+ */
+export function getTransformedBounds(boundsObj, transforms = false) {
+  if (!boundsObj.topLeft) return {}
+  // get all corners of the part's bounds
+  let tl = boundsObj.topLeft
+  let br = boundsObj.bottomRight
+  let tr = new Point(br.x, tl.y)
+  let bl = new Point(tl.x, br.y)
+
+  // if there are transforms on the part, apply them to the corners so that we have the correct bounds
+  if (transforms) {
+    const combinedTransform = combineTransforms(transforms)
+
+    tl = applyTransformToPoint(combinedTransform, tl.copy())
+    br = applyTransformToPoint(combinedTransform, br.copy())
+    tr = applyTransformToPoint(combinedTransform, tr.copy())
+    bl = applyTransformToPoint(combinedTransform, bl.copy())
+  }
+
+  // now get the top left and bottom right after transforms
+  const transformedTl = new Point(
+    Math.min(tl.x, br.x, bl.x, tr.x),
+    Math.min(tl.y, br.y, bl.y, tr.y)
+  )
+
+  const transformedBr = new Point(
+    Math.max(tl.x, br.x, bl.x, tr.x),
+    Math.max(tl.y, br.y, bl.y, tr.y)
+  )
+
+  return {
+    tl: transformedTl,
+    br: transformedBr,
+  }
 }
