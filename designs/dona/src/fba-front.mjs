@@ -1,6 +1,6 @@
 import { front } from './front.mjs'
 import { bustPlugin } from '@freesewing/plugin-bust'
-import { lengthBonus } from './options.mjs'
+// import { lengthBonus } from './options.mjs'
 
 function simoneFbaFront({
   measurements,
@@ -341,14 +341,13 @@ function simoneFbaFront({
   // let maxlength = measurements.hpsToWaistBack + measurements.waistToFloor
   let maxlength = points.waist.y + measurements.waistToFloor
 
-
   // set points defining max center front hem position and max outer hem position
-  points.cfHemMax = new Point(points.cfHem.x , maxlength)
+  points.cfHemMax = new Point(points.cfHem.x, maxlength)
   points.outHemMax = new Point(points.hem_rot2.x * options.hemExpansion, points.cfHemMax.y)
 
   // set the actual center front hem position to percentage of the maximal position
   points.cfHem = points.cfHem.shiftFractionTowards(points.cfHemMax, options.lengthBonus)
-  points.hem = points.hem.shiftFractionTowards(points.outHemMax,options.lengthBonus)
+  points.hem = points.hem.shiftFractionTowards(points.outHemMax, options.lengthBonus)
 
   // establish a construction line and use it to calculate outside hem position
   paths.hemConstructor = new Path().move(points.hips_rot2).line(points.outHemMax).hide()
@@ -462,7 +461,7 @@ export const fbaFront = {
       menu: 'style.closure',
     },
     lengthBonus: { pct: 75, min: 25, max: 100, menu: 'fit' },
-    hemExpansion: { pct:150, min:100, max: 200, menu: 'fit'},
+    hemExpansion: { pct: 150, min: 100, max: 200, menu: 'fit' },
   },
   draft: simoneFbaFront,
 }
