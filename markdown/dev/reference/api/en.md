@@ -60,6 +60,7 @@ The following named exports are **utility methods**:
 | Named export | Description |
 | ------------ | ------------|
 | `beamIntersectsCircle`    | See the [beamIntersectsCircle](/reference/api/utils/beamintersectscircle) documentation |
+| `beamIntersectsCurve`     | See the [beamIntersectsCurve](/reference/api/utils/beamintersectscurve) documentation |
 | `beamIntersectsX`         | See the [beamIntersectsX](/reference/api/utils/beamintersectsx) documentation |
 | `beamIntersectsY`         | See the [beamIntersectsY](/reference/api/utils//beamintersectsy) documentation |
 | `beamsIntersect`          | See the [beamsIntersect](/reference/api/utils/beamsintersect) documentation |
