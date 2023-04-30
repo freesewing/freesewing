@@ -20,6 +20,7 @@ import { BackToAccountButton, Choice } from './shared.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
 import { PageLink } from 'shared/components/page-link.mjs'
 import {
+  CloseIcon,
   PlusIcon,
   OkIcon,
   NoIcon,
@@ -123,27 +124,49 @@ const EditField = (props) => {
 
 const noop = () => null
 
+const EditTitleButton = ({ title, setEdit }) => (
+  <button
+    className={`flex flex-row items-center justify-between w-full bg-secondary
+      px-4 py-1 text-secondary-content text-lg font-bold`}
+    onClick={() => setEdit(false)}
+  >
+    {title}
+    <CloseIcon className="w-6 h-6 hover:opacity-40" stroke={3} />
+  </button>
+)
+
 const EditRow = (props) => {
   const [edit, setEdit] = useState(false)
 
   return (
     <div
-      className={`flex flex-row flex-wrap items-center lg:gap-4 my-2 border-2 border-base100
+      className={`flex flex-wrap items-center my-2 border-2 border-base100
       rounded-lg p-0 hover:cursor-pointer
-      ${edit ? 'border-secondary p-4' : 'hover:border-secondary hover:cursor-pointer'}
+      ${
+        edit
+          ? 'flex-col border-secondary p-0 hover:cursor-pointer'
+          : 'flex-row hover:border-secondary'
+      }
     `}
       onClick={edit ? noop : () => setEdit(true)}
     >
-      <div className="w-24 text-left md:text-right block md:inline font-bold pr-4">
-        {props.title}
-      </div>
-      <div className="grow">
-        {edit ? <EditField field="name" {...props} setEdit={setEdit} /> : props.children}
-      </div>
-      {edit ? null : (
-        <button className="btn btn-secondary btm-sm rounded-l-none" onClick={() => setEdit(true)}>
-          <EditIcon />
-        </button>
+      {edit ? (
+        <>
+          <EditTitleButton title={props.title} setEdit={setEdit} />
+          <div className="p-4">
+            <EditField field="name" {...props} setEdit={setEdit} />
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="w-24 text-left md:text-right block md:inline font-bold pr-4">
+            {props.title}
+          </div>
+          <div className="grow">{props.children}</div>
+          <button className="btn btn-secondary btm-sm rounded-l-none" onClick={() => setEdit(true)}>
+            <EditIcon />
+          </button>
+        </>
       )}
     </div>
   )
@@ -172,14 +195,16 @@ const MeasieRow = (props) => {
     <div
       className={`flex flex-row flex-wrap items-center lg:gap-4 my-2 border-2 border-base100
       rounded-lg p-0 hover:cursor-pointer
-      ${edit ? 'border-secondary p-4' : 'hover:border-secondary hover:cursor-pointer'}
+      ${edit ? 'border-secondary p-0' : 'hover:border-secondary hover:cursor-pointer'}
     `}
       onClick={edit ? noop : () => setEdit(true)}
     >
       {edit ? (
         <>
-          <div className="grow text-left md:text-right block md:inline font-bold pr-4">{t(m)}</div>
-          <MeasieInput m={m} {...props} setEdit={setEdit} />
+          <EditTitleButton title={t(m)} setEdit={setEdit} />
+          <div className="p-4">
+            <MeasieInput m={m} {...props} setEdit={setEdit} />
+          </div>
         </>
       ) : (
         <>
@@ -689,8 +714,13 @@ const EditMeasurementsSet = (props) => {
         </button>
       </h4>
       <div className="flex flex-row gap-4 text-sm">
-        <div>
-          <b>{t('permalink')}</b>: <PageLink href={`/sets/${mset.id}`} txt={`/sets/${mset.id}`} />
+        <div className="flex flex-row gap-2 items-center">
+          <b>{t('permalink')}:</b>
+          {mset.public ? (
+            <PageLink href={`/sets/${mset.id}`} txt={`/sets/${mset.id}`} />
+          ) : (
+            <NoIcon className="w-4 h-4 text-error" />
+          )}
         </div>
         <div>
           <b>{t('created')}</b>: <Timeago date={mset.createdAt} />
