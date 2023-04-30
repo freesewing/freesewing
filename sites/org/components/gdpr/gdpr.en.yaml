@@ -1,0 +1,46 @@
+clickHere: Click here to give your consent
+createLimitedAccount: Create account with limited consent
+createAccount: Create account
+compliant: "FreeSewing respects your privacy and your rights. We adhere to the toughest privacy and security law in the world: the General Data Protection Regulation (GDPR) of the European Union (EU)."
+consent: Consent
+consentForSetData: Consent for measurement data
+consentForProfileData: Consent for profile data
+consentGiven: Consent given
+consentNotGiven: Consent not given
+consentWhyAnswer: Under the GDPR, processing of your personal data requires granular consent — in other words, we need your permission for the various ways we handle your data.
+createMyAccount: Create my account
+furtherReading: Further reading
+hideDetails: Hide details
+noConsentNoAccount: Without this consent, we cannot create your account
+noConsentNoPatterns: Without this consent, you cannot create any made-to-measure patterns
+noIDoNot: 'No, I do not'
+openDataInfo: This data is used to study and understand the human form in all its shapes, so we can get better sewing patterns, and better fitting garments. Even though this data is anonymized, you have the right to object to this.
+openDataQuestion: Share anonymized measurements as open data
+setQuestion: Do you give your consent to process your measurements data?
+setWarning: Revoking this consent will lock you out of all your measurements data, as well as disable functionality that depends on it.
+setWhatAnswer: For each measurements set the <b>measurements</b>.
+setWhatAnswerOptional: 'Optional: A <b>picture</b> and the <b>name</b> or <b>notes</b> that you add to a measurements set.'
+setWhatQuestion: What is measurements data?
+setWhyAnswer: 'To draft <b>made-to-measure sewing patterns</b>, we need <b>body measurements</b>.'
+privacyMatters: Privacy matters
+privacyNotice: FreeSewing Privacy Notice
+processing: Processing
+profileQuestion: Do you give your consent to process your profile data?
+profileShareAnswer: '<b>No</b>, never.'
+profileTimingAnswer: '<b>12 months</b> after your last login, or until you <b>remove</b> your account or <b>revoke</b> this consent.'
+profileWarning: Revoking this consent will trigger the removal of all of your data. It has the exact same affect as removing your account.
+profileWhatAnswerOptional: 'Optional: A <b>profile picture</b>, <b>bio</b>, and <b>social media accounts</b>'
+profileWhatAnswer: 'Your <b>email address</b>, <b>username</b>, and <b>password</b>.'
+profileWhatQuestion: What is profile data?
+profileWhyAnswer: 'To <b>authenticate</b> you, <b>contact</b> you when needed, and build a <b>community</b>.'
+readMore: For more information, please read our privacy notice.
+readRights: For more information, please read up on your rights.
+revokeConsent: Revoke consent
+shareQuestion: Do we share it with others?
+showDetails: Show details
+timingQuestion: How long do we keep it?
+whatYouNeedToKnow: What you need to know
+whyQuestion: Why do we need it?
+yesIDoObject: 'Yes, I do object'
+yesIDo: 'Yes, I do'
+openData: 'Note: Freesewing publishes anonymized measurements as open data for scientific research. You have the right to object to this'
