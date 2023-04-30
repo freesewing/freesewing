@@ -139,7 +139,7 @@ export const WorkbenchWrapper = ({
 
     // draft it for draft and event views. Other views may add plugins, etc and we don't want to draft twice
     try {
-      if (['draft', 'logs'].indexOf(gist._state.view) > -1) draft.draft()
+      if (['draft', 'logs'].indexOf(gist._state.view) > -1 && hasRequiredMeasurements) draft.draft()
     } catch (error) {
       return <DraftError error={error} app={app} draft={draft} at={'draft'} />
     }
