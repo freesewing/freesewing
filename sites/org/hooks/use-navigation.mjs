@@ -30,25 +30,40 @@ const sitePages = (t = false, control = 99) => {
       s: 'designs',
       o: 10,
     },
+    patterns: {
+      t: t('sections:patterns'),
+      s: 'patterns',
+      o: 14,
+    },
+    sets: {
+      t: t('sections:sets'),
+      s: 'sets',
+      o: 16,
+    },
     showcase: {
       t: t('sections:showcase'),
       s: 'showcase',
       o: 20,
     },
-    blog: {
-      t: t('sections:blog'),
-      s: 'blog',
-      o: 40,
+    docs: {
+      t: t('sections:docs'),
+      s: 'docs',
+      o: 30,
     },
     community: {
       t: t('sections:community'),
       s: 'community',
+      o: 40,
+    },
+    blog: {
+      t: t('sections:blog'),
+      s: 'blog',
       o: 50,
     },
     account: {
       t: t('sections:account'),
       s: 'account',
-      o: 60,
+      o: 99,
     },
     // Top-level pages that are not in the sections menu
     apikeys: {
@@ -69,11 +84,6 @@ const sitePages = (t = false, control = 99) => {
     profile: {
       t: t('yourProfile'),
       s: 'profile',
-      h: 1,
-    },
-    sets: {
-      t: t('sets'),
-      s: 'sets',
       h: 1,
     },
 

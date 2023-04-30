@@ -12,6 +12,9 @@ import {
   ShowcaseIcon,
   TutorialIcon,
   UserIcon,
+  MeasureIcon,
+  PageIcon,
+  PrintIcon,
 } from 'shared/components/icons.mjs'
 import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
 
@@ -31,6 +34,8 @@ export const icons = {
   docs: (className = '') => <DocsIcon className={className} />,
   showcase: (className = '') => <ShowcaseIcon className={className} />,
   community: (className = '') => <CommunityIcon className={className} />,
+  sets: (className = '') => <MeasureIcon className={className} />,
+  patterns: (className = '') => <PageIcon className={className} />,
 }
 
 /* helper method to order nav entries */

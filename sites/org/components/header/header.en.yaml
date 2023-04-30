@@ -8,4 +8,6 @@ account: Account
 theme: Theme
 language: Language
 search: Search
+sets: Measurements
+patterns: Patterns
 

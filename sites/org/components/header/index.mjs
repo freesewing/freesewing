@@ -16,6 +16,8 @@ import {
   UserIcon,
   ThemeIcon,
   I18nIcon,
+  MeasureIcon,
+  PageIcon,
 } from 'shared/components/icons.mjs'
 import { Ribbon } from 'shared/components/ribbon.mjs'
 import Link from 'next/link'
@@ -23,7 +25,7 @@ import { ModalThemePicker, ns as themeNs } from 'shared/components/modal/theme-p
 import { ModalLocalePicker, ns as localeNs } from 'shared/components/modal/locale-picker.mjs'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
 
-export const ns = ['header', ...themeNs, ...localeNs]
+export const ns = ['header', 'sections', ...themeNs, ...localeNs]
 
 const NavButton = ({ href, label, color, children, onClick = false, extraClasses = '' }) => {
   const className =
@@ -51,10 +53,10 @@ const NavSpacer = () => (
 export const colors = {
   menu: 'red',
   designs: 'orange',
-  showcase: 'yellow',
-  docs: 'lime',
-  blog: 'green',
-  community: 'cyan',
+  patterns: 'yellow',
+  sets: 'lime',
+  showcase: 'green',
+  docs: 'cyan',
   theme: 'blue',
   language: 'indigo',
   search: 'violet',
@@ -79,6 +81,22 @@ const NavIcons = ({ setModal, setSearch }) => {
         <DesignIcon className={iconSize} />
       </NavButton>
       <NavButton
+        href="/patterns"
+        label={t('header:patterns')}
+        color={colors.patterns}
+        extraClasses="hidden lg:flex"
+      >
+        <PageIcon className={iconSize} />
+      </NavButton>
+      <NavButton
+        href="/sets"
+        label={t('header:sets')}
+        color={colors.sets}
+        extraClasses="hidden lg:flex"
+      >
+        <MeasureIcon className={iconSize} />
+      </NavButton>
+      <NavButton
         href="/showcase"
         label={t('header:showcase')}
         color={colors.showcase}
@@ -93,22 +111,6 @@ const NavIcons = ({ setModal, setSearch }) => {
         extraClasses="hidden lg:flex"
       >
         <DocsIcon className={iconSize} />
-      </NavButton>
-      <NavButton
-        href="/blog"
-        label={t('header:blog')}
-        color={colors.blog}
-        extraClasses="hidden lg:flex"
-      >
-        <RssIcon className={iconSize} />
-      </NavButton>
-      <NavButton
-        href="/community"
-        label={t('header:community')}
-        color={colors.community}
-        extraClasses="hidden lg:flex"
-      >
-        <CommunityIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
       <NavButton

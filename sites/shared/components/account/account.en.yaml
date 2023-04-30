@@ -187,3 +187,14 @@ publicSetDesc: Others are allowed to use these measurements to generate or test 
 privateSetDesc: These measurments cannot be used by other users or visitors
 permalink: Permalink
 
+patternNew: Generate a new pattern
+patternNewInfo: Pick a design, add your measurements set, and we'll generate a made-to-measure sewing pattern for you.
+
+designNew: Create a new design
+designNewInfo: FreeSewing designs are small bundles of JavaScript code that generate patterns. It's not hard to create your own designs, and we have a detailed tutorial to get you started.
+
+pluginNew: Create a new plugin
+pluginNewInfo: FreeSewing's functionality can be further extended with plugins. Creating a plugin is easy, and we have a guide to take you from start to finish.
+
+newBasic: The basics
+newAdvanced: Go further
