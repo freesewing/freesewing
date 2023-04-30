@@ -238,7 +238,7 @@ function titanBack({
   // Now angle the waist (if requested)
   // create a backup of the unangled position, for use in dependent patterns
   points.styleWaistInNoAngle = points.styleWaistIn.clone()  
-  if (options.waistAngle != 0) {
+  if (options.waistAngle != 0 && (options.useWaistAngleFor === 'both' || options.useWaistAngleFor === 'backOnly') ) {
     // calculate how much to add/subtract
     // assume that from the crossSeamCurveStart upwards, the crotch seam will be vertical
     // base of the triangle is then horizontal distance from crossSeamCurveStart to fork
@@ -588,6 +588,16 @@ export const back = {
     crotchDrop: { pct: 2, min: 0, max: 15, menu: 'style' },
     fitKnee: { bool: false, menu: 'style' },
     waistAngle: { deg: 0, min: -20, max: 20, menu: 'style' },
+    useWaistAngleFor: {
+      dflt: "both",
+      list: [
+        "both",
+        "backOnly",
+        "frontOnly",
+      ],
+      menu: 'style'
+    },
+
     // Advanced
     legBalance: { pct: 57.5, min: 52.5, max: 62.5, menu: 'advanced' },
     crossSeamCurveStart: { pct: 85, min: 60, max: 100, menu: 'advanced' },
