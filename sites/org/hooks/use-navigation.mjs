@@ -4,7 +4,7 @@ import get from 'lodash.get'
 import { prebuildNavigation as pbn } from 'site/prebuild/navigation.mjs'
 import { useTranslation } from 'next-i18next'
 import orderBy from 'lodash.orderby'
-import { freeSewingConfig as conf } from 'site/freesewing.config.mjs'
+import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 
 /*

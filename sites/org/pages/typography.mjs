@@ -3,6 +3,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Popout } from 'shared/components/popout.mjs'
+import { Collapse } from 'shared/components/collapse.mjs'
 
 // Translation namespaces used on this page
 const namespaces = [...new Set(pageNs)]
@@ -17,6 +18,30 @@ const p = (
 
 const TypographyPage = ({ page }) => (
   <PageWrapper {...page}>
+    <Collapse title="test" color="primary">
+      test
+    </Collapse>
+    <Collapse title="test" color="secondary">
+      test
+    </Collapse>
+    <Collapse title="test" color="accent">
+      test
+    </Collapse>
+    <Collapse title="test" color="neutral">
+      test
+    </Collapse>
+    <Collapse title="test" color="success">
+      test
+    </Collapse>
+    <Collapse title="test" color="info">
+      test
+    </Collapse>
+    <Collapse title="test" color="warning">
+      test
+    </Collapse>
+    <Collapse title="test" color="error">
+      test
+    </Collapse>
     <div className="text-primary mdx max-w-prose text-base-content max-w-prose text-base xl:pl-4">
       <p>This typography page shows an overview of different elements and how they are styled.</p>
       <p>It&apos;s a good starting point for theme development.</p>

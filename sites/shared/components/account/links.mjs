@@ -2,7 +2,7 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useTranslation } from 'next-i18next'
 import Link from 'next/link'
 import { PageLink } from 'shared/components/page-link.mjs'
-import { freeSewingConfig as conf } from 'site/freesewing.config.mjs'
+import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
 
 export const ns = ['account']
 

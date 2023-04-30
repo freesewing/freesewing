@@ -7,6 +7,7 @@ import orderBy from 'lodash.orderby'
 import { measurements, isDegreeMeasurement } from 'config/measurements.mjs'
 import { measurementAsMm, formatMm } from 'shared/utils.mjs'
 import { measurements as designMeasurements } from 'site/prebuild/design-measurements.mjs'
+import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
 // Hooks
 import { useDropzone } from 'react-dropzone'
 import { useAccount } from 'shared/hooks/use-account.mjs'
@@ -641,49 +642,88 @@ const EditMeasurementsSet = (props) => {
 
   return (
     <div className="p-4">
-      <div className="flex flex-row gap-4 text-sm items-center justify-center">
-        <div className="flex flex-row gap-2 items-center">
-          <b>{t('permalink')}:</b>
-          {mset.public ? (
-            <PageLink href={`/sets/${mset.id}`} txt={`/sets/${mset.id}`} />
-          ) : (
-            <NoIcon className="w-4 h-4 text-error" />
-          )}
+      {/* Meta info */}
+      {props.account.control > 2 ? (
+        <div className="flex flex-row gap-4 text-sm items-center justify-center mb-2">
+          <div className="flex flex-row gap-2 items-center">
+            <b>{t('permalink')}:</b>
+            {mset.public ? (
+              <PageLink href={`/sets/${mset.id}`} txt={`/sets/${mset.id}`} />
+            ) : (
+              <NoIcon className="w-4 h-4 text-error" />
+            )}
+          </div>
+          <div>
+            <b>{t('created')}</b>: <Timeago date={mset.createdAt} />
+          </div>
+          <div>
+            <b>{t('updated')}</b>: <Timeago date={mset.updatedAt} />
+          </div>
         </div>
-        <div>
-          <b>{t('created')}</b>: <Timeago date={mset.createdAt} />
+      ) : null}
+
+      {/* JSON & YAML links */}
+      {props.account.control > 3 ? (
+        <div className="flex flex-row gap-4 text-sm items-center justify-center">
+          <a
+            className="badge badge-secondary font-bold"
+            href={`${conf.backend}/sets/${mset.id}.json`}
+          >
+            JSON
+          </a>
+          <a
+            className="badge badge-success font-bold"
+            href={`${conf.backend}/sets/${mset.id}.yaml`}
+          >
+            YAML
+          </a>
         </div>
-        <div>
-          <b>{t('updated')}</b>: <Timeago date={mset.updatedAt} />
-        </div>
-      </div>
+      ) : null}
 
       <EditSectionTitle title={t('data')} />
+
+      {/* Name is always shown */}
       <EditRow title={t('name')} field="name" {...props}>
         {mset.name}
       </EditRow>
-      <EditRow title={t('image')} field="img" {...props}>
-        <img src={mset.img} className="w-10 mask mask-squircle bg-neutral aspect-square" />
-      </EditRow>
-      <EditRow title={t('public')} field="public" {...props}>
-        <div className="flex flex-row gap-2">
-          {mset.public ? (
-            <>
-              <OkIcon className="h-6 w-6 text-success" /> <span>{t('publicSet')}</span>
-            </>
-          ) : (
-            <>
-              <NoIcon className="h-6 w-6 text-error" /> <span>{t('privateSet')}</span>
-            </>
-          )}
-        </div>
-      </EditRow>
-      <EditRow title={t('units')} field="imperial" {...props}>
-        {mset.imperial ? t('imperialUnits') : t('metricUnits')}
-      </EditRow>
-      <EditRow title={t('notes')} field="notes" {...props}>
-        <Markdown>{mset.notes}</Markdown>
-      </EditRow>
+
+      {/* img: Control level determines whether or not to show this */}
+      {props.account.control >= conf.account.sets.img ? (
+        <EditRow title={t('image')} field="img" {...props}>
+          <img src={mset.img} className="w-10 mask mask-squircle bg-neutral aspect-square" />
+        </EditRow>
+      ) : null}
+
+      {/* public: Control level determines whether or not to show this */}
+      {props.account.control >= conf.account.sets.public ? (
+        <EditRow title={t('public')} field="public" {...props}>
+          <div className="flex flex-row gap-2">
+            {mset.public ? (
+              <>
+                <OkIcon className="h-6 w-6 text-success" /> <span>{t('publicSet')}</span>
+              </>
+            ) : (
+              <>
+                <NoIcon className="h-6 w-6 text-error" /> <span>{t('privateSet')}</span>
+              </>
+            )}
+          </div>
+        </EditRow>
+      ) : null}
+
+      {/* units: Control level determines whether or not to show this */}
+      {props.account.control >= conf.account.sets.units ? (
+        <EditRow title={t('units')} field="imperial" {...props}>
+          {mset.imperial ? t('imperialUnits') : t('metricUnits')}
+        </EditRow>
+      ) : null}
+
+      {/* notes: Control level determines whether or not to show this */}
+      {props.account.control >= conf.account.sets.notes ? (
+        <EditRow title={t('notes')} field="notes" {...props}>
+          <Markdown>{mset.notes}</Markdown>
+        </EditRow>
+      ) : null}
 
       <EditSectionTitle title={t('measies')} />
       <div className="flex flex-row items-center justify-center">
