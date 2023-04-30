@@ -1,5 +1,6 @@
 import { log } from '../utils/log.mjs'
 import { setSetAvatar } from '../utils/sanity.mjs'
+import yaml from 'js-yaml'
 
 export function SetModel(tools) {
   this.config = tools.config
@@ -97,6 +98,22 @@ SetModel.prototype.guardedRead = async function ({ params, user }) {
     result: 'success',
     set: this.asSet(),
   })
+}
+
+/*
+ * Loads a measurements set from the database but only if it's public
+ *
+ * Stores result in this.record
+ */
+SetModel.prototype.publicRead = async function ({ params }) {
+  await this.read({ id: parseInt(params.id) })
+  if (this.record.public !== true) {
+    // Note that we return 404
+    // because we don't want to reveal that a non-public set exists.
+    return this.setResponse(404)
+  }
+
+  return this.setResponse(200, false, this.asPublicSet(), true)
 }
 
 /*
@@ -311,17 +328,44 @@ SetModel.prototype.asSet = function () {
 }
 
 /*
+ * Returns record data fit for public publishing
+ */
+SetModel.prototype.asPublicSet = function () {
+  const data = {
+    author: 'FreeSewing.org',
+    type: 'measurementsSet',
+    about: 'Contains measurements in mm as well as metadata',
+    ...this.asSet(),
+  }
+  delete data.userId
+  data.measurements = data.measies
+  delete data.measies
+  data.units = data.imperial ? 'imperial' : 'metric'
+  delete data.imperial
+  delete data.public
+
+  return data
+}
+
+/*
  * Helper method to set the response code, result, and body
  *
  * Will be used by this.sendResponse()
  */
-SetModel.prototype.setResponse = function (status = 200, error = false, data = {}) {
+SetModel.prototype.setResponse = function (
+  status = 200,
+  error = false,
+  data = {},
+  rawData = false
+) {
   this.response = {
     status,
-    body: {
-      result: 'success',
-      ...data,
-    },
+    body: rawData
+      ? data
+      : {
+          result: 'success',
+          ...data,
+        },
   }
   if (status > 201) {
     this.response.body.error = error
@@ -333,10 +377,17 @@ SetModel.prototype.setResponse = function (status = 200, error = false, data = {
 }
 
 /*
- * Helper method to send response
+ * Helper method to send response (as JSON)
  */
 SetModel.prototype.sendResponse = async function (res) {
   return res.status(this.response.status).send(this.response.body)
+}
+
+/*
+ * Helper method to send response as YAML
+ */
+SetModel.prototype.sendYamlResponse = async function (res) {
+  return res.status(this.response.status).type('yaml').send(yaml.dump(this.response.body))
 }
 
 /*

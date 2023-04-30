@@ -88,7 +88,7 @@ hugo:
     '@freesewing/plugin-bust': *freesewing
 i18n:
   dev:
-    'js-yaml': '4.1.0'
+    'js-yaml': &jsyaml '4.1.0'
   peer:
     '@freesewing/pattern-info': *freesewing
 jaeger:
@@ -212,6 +212,7 @@ backend:
     'crypto': '1.0.1'
     'dotenv': '16.0.3'
     'express': '4.18.2'
+    'js-yaml': *jsyaml
     'lodash.get': *_get
     'mustache': '4.2.0'
     'otplib': '12.0.1'
@@ -263,7 +264,7 @@ dev:
   dev: &nextSiteDevDependencies
     'autoprefixer': '10.4.14'
     'eslint-config-next': *next
-    'js-yaml': &jsYaml '4.1.0'
+    'js-yaml': *jsyaml
     'postcss': &postcss '8.4.21'
     'remark-extract-frontmatter': '3.2.0'
     'tailwindcss': &tailwindcss '3.3.1'

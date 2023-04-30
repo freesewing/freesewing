@@ -35,6 +35,7 @@
     "crypto": "1.0.1",
     "dotenv": "16.0.3",
     "express": "4.18.2",
+    "js-yaml": "4.1.0",
     "lodash.get": "4.4.2",
     "mustache": "4.2.0",
     "otplib": "12.0.1",

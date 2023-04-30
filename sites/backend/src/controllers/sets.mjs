@@ -70,3 +70,14 @@ SetsController.prototype.clone = async (req, res, tools) => {
 
   return Set.sendResponse(res)
 }
+
+/*
+ * Read a public measurements set
+ * See: https://freesewing.dev/reference/backend/api
+ */
+SetsController.prototype.readPublic = async (req, res, tools, format = 'json') => {
+  const Set = new SetModel(tools)
+  await Set.publicRead(req)
+
+  return format === 'yaml' ? Set.sendYamlResponse(res) : Set.sendResponse(res)
+}

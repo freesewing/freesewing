@@ -7,7 +7,7 @@ const bsc = ['basic', { session: false }]
 export function setsRoutes(tools) {
   const { app, passport } = tools
 
-  // Create a measurments set
+  // Create a measurements set
   app.post('/sets/jwt', passport.authenticate(...jwt), (req, res) => Sets.create(req, res, tools))
   app.post('/sets/key', passport.authenticate(...bsc), (req, res) => Sets.create(req, res, tools))
 
@@ -19,7 +19,7 @@ export function setsRoutes(tools) {
     Sets.clone(req, res, tools)
   )
 
-  // Read a measurments set
+  // Read a measurements set
   app.get('/sets/:id/jwt', passport.authenticate(...jwt), (req, res) => Sets.read(req, res, tools))
   app.get('/sets/:id/key', passport.authenticate(...bsc), (req, res) => Sets.read(req, res, tools))
 
@@ -42,4 +42,8 @@ export function setsRoutes(tools) {
   app.delete('/sets/:id/key', passport.authenticate(...bsc), (req, res) =>
     Sets.delete(req, res, tools)
   )
+
+  // Read a public measurements set as JSON or YAML (no auth needed, but will only work for public sets)
+  app.get('/sets/:id.json', (req, res) => Sets.readPublic(req, res, tools, 'json'))
+  app.get('/sets/:id.yaml', (req, res) => Sets.readPublic(req, res, tools, 'yaml'))
 }
