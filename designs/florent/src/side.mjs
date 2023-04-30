@@ -21,6 +21,17 @@ function draftFlorentSide({
   paths.seam = paths.side.clone().line(points.foldTop).attr('class', 'fabric')
   paths.seam.unhide()
 
+  macro('cutonfold', {
+    from: points.foldBottom,
+    to: points.foldTop,
+    offset: 15,
+    grainline: true,
+  })
+
+  store.cutlist.removeCut()
+  store.cutlist.addCut({ cut: 1 })
+  store.cutlist.addCut({ cut: 1, material: 'lining' })
+
   if (complete) {
     if (points.__miniscaleMetric) delete points.__miniscaleMetric
     if (points.__miniscaleImperial) delete points.__miniscaleImperial
@@ -33,12 +44,6 @@ function draftFlorentSide({
     })
     points.logo = points.tipCp2.shiftFractionTowards(points.outerTopCp1, 0.5)
     snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.75)
-    macro('cutonfold', {
-      from: points.foldBottom,
-      to: points.foldTop,
-      offset: 15,
-      grainline: true,
-    })
     points.notch1 = new Path()
       .move(points.tip)
       .curve(points.tipCp1, points.outerTopCp2, points.outerTop)

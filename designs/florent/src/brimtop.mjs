@@ -14,16 +14,17 @@ function draftFlorentBrimTop({ paperless, sa, complete, points, macro, paths, Pa
 
   paths.seam = paths.hint.offset(3).join(paths.rest).close().attr('class', 'fabric')
 
+  macro('grainline', {
+    from: points.outerMid,
+    to: points.innerMid,
+  })
+
   if (complete) {
     points.title = points.innerMid.shiftFractionTowards(points.outerMidCp2, 0.35)
     macro('title', {
       at: points.title,
       nr: 4,
       title: 'brimTop',
-    })
-    macro('grainline', {
-      from: points.outerMid,
-      to: points.innerMid,
     })
 
     if (sa)
