@@ -1,8 +1,12 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+// Hooks
+import { useTranslation } from 'next-i18next'
+import { useAccount } from 'shared/hooks/use-account.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { Popout } from 'shared/components/popout.mjs'
+import { ChoiceLink } from 'shared/components/choice-link.mjs'
+import { KeyIcon, MeasureIcon, UnitsIcon } from 'shared/components/icons.mjs'
 
 // Translation namespaces used on this page
 // Note that we include the account namespace here for the 'new' keyword
@@ -14,18 +18,27 @@ const namespaces = [...pageNs, 'account']
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const NewIndexPage = ({ page }) => (
-  <PageWrapper {...page}>
-    <div className="max-w-lg">
-      <Popout fixme>
-        <h5>This needs an umbrella page</h5>
-        <p>
-          We need to create content here linking to all the <em>new something</em> pages
-        </p>
-      </Popout>
-    </div>
-  </PageWrapper>
-)
+const NewIndexPage = ({ page }) => {
+  const { t } = useTranslation(['account'])
+  const { account } = useAccount()
+
+  const control = account.control ? account.control : 99
+
+  return (
+    <PageWrapper {...page}>
+      <div className="max-w-lg">
+        {control > 3 ? (
+          <ChoiceLink title={t('newApikey')} icon={<KeyIcon className="w-6 h-6 text-secondary" />}>
+            {t('keyNewInfo')}
+          </ChoiceLink>
+        ) : null}
+        <ChoiceLink title={t('newSet')} icon={<MeasureIcon className="w-6 h-6 text-secondary" />}>
+          {t('setNewInfo')}
+        </ChoiceLink>
+      </div>
+    </PageWrapper>
+  )
+}
 
 export default NewIndexPage
 

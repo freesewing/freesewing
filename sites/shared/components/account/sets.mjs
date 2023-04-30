@@ -46,7 +46,20 @@ import { SaveSettingsButton } from 'site/components/buttons/save-settings-button
 
 export const ns = ['account', 'patterns', 'toast']
 
-const NewSet = ({
+export const StandAloneNewSet = () => {
+  const { t } = useTranslation(['account'])
+  const toast = useToast()
+  const { account, token } = useAccount()
+  const backend = useBackend(token)
+
+  return (
+    <div className="max-w-xl">
+      <NewSet {...{ t, account, backend, toast }} title={false} standalone={true} />
+    </div>
+  )
+}
+
+export const NewSet = ({
   t,
   account,
   refresh,
@@ -54,7 +67,7 @@ const NewSet = ({
   backend,
   toast,
   title = true,
-  standAlone = false,
+  standalone = false,
 }) => {
   // Context
   const { loading, startLoading, stopLoading } = useContext(LoadingContext)
@@ -74,9 +87,12 @@ const NewSet = ({
     })
     if (result.success) {
       toast.success(<span>{t('nailedIt')}</span>)
-      setMset(result.data.set)
-      refresh()
-      closeCollapseButton()
+      if (standalone) router.push('/account/sets/')
+      else {
+        setMset(result.data.set)
+        refresh()
+        closeCollapseButton()
+      }
     } else toast.for.backendError()
     stopLoading()
   }

@@ -1,7 +1,7 @@
 account: Account
 yourAccount: Your account
 newPattern: New pattern
-newSet: New measurements set
+newSet: Create a new measurements set
 links: Links
 info: Info
 settings: Settings
@@ -144,6 +144,7 @@ passwordTitle: Something only you know
 
 # api key
 newApikey: Generate a new API key
+keyNewInfo: Create a new API key to connect to the FreeSewing backend in an automated way.
 keyName: Key name
 keyNameDesc: A unique name for this API key. Only visible to you.
 keyExpires: Key expiration
@@ -168,6 +169,7 @@ new: New
 # sets
 name: Name
 setNameDesc: A name to identify this measurements set
+setNewInfo: Create a new set of measurements which you can then use to generate patterns for.
 notes: Notes
 setNotesDesc: Any notes you'd like to keep regarding this measurements set
 description: Description

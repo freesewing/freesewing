@@ -90,29 +90,33 @@ const Row = ({ title, children }) => (
     <div className="grow">{children}</div>
   </div>
 )
-const ShowKey = ({ apikey, t, clear }) => (
-  <div>
-    <Popout warning compact>
-      {t('keySecretWarning')}
-    </Popout>
-    <Row title={t('keyName')}>{apikey.name}</Row>
-    <Row title={t('created')}>{DateTime.fromISO(apikey.createdAt).toHTTP()}</Row>
-    <Row title={t('expires')}>{DateTime.fromISO(apikey.expiresAt).toHTTP()}</Row>
-    <Row title="Key ID">
-      <CopyInput text={apikey.key} />
-    </Row>
-    <Row title="Key Secret">
-      <CopyInput text={apikey.secret} />
-    </Row>
-    <button
-      className="btn btn-secondary mt-8 pr-6 flex flex-row items-center gap-2"
-      onClick={clear}
-    >
-      <LeftIcon />
-      {t('apikeys')}
-    </button>
-  </div>
-)
+const ShowKey = ({ apikey, t, clear, standalone }) => {
+  const router = useRouter()
+
+  return (
+    <div>
+      <Popout warning compact>
+        {t('keySecretWarning')}
+      </Popout>
+      <Row title={t('keyName')}>{apikey.name}</Row>
+      <Row title={t('created')}>{DateTime.fromISO(apikey.createdAt).toHTTP()}</Row>
+      <Row title={t('expires')}>{DateTime.fromISO(apikey.expiresAt).toHTTP()}</Row>
+      <Row title="Key ID">
+        <CopyInput text={apikey.key} />
+      </Row>
+      <Row title="Key Secret">
+        <CopyInput text={apikey.secret} />
+      </Row>
+      <button
+        className="btn btn-secondary mt-8 pr-6 flex flex-row items-center gap-2"
+        onClick={standalone ? () => router.push('/account/apikeys') : clear}
+      >
+        <LeftIcon />
+        {t('apikeys')}
+      </button>
+    </div>
+  )
+}
 
 const NewKey = ({
   t,
@@ -124,10 +128,9 @@ const NewKey = ({
   startLoading,
   stopLoading,
   closeCollapseButton,
-  standAlone = false,
+  standalone = false,
   title = true,
 }) => {
-  const router = useRouter()
   const [name, setName] = useState('')
   const [level, setLevel] = useState(1)
   const [expires, setExpires] = useState(DateTime.now())
@@ -148,7 +151,7 @@ const NewKey = ({
       keyAdded()
     } else toast.for.backendError()
     stopLoading()
-    closeCollapseButton()
+    if (closeCollapseButton) closeCollapseButton()
   }
 
   const clear = () => {
@@ -161,7 +164,7 @@ const NewKey = ({
       {title ? <h2>{t('newApikey')}</h2> : null}
       {apikey ? (
         <>
-          <ShowKey apikey={apikey} t={t} clear={clear} />
+          <ShowKey {...{ apikey, t, clear, standalone }} />
         </>
       ) : (
         <>
@@ -281,7 +284,7 @@ const Apikey = ({ apikey, t, account, backend, keyAdded, startLoading, stopLoadi
 }
 
 // Component for the 'new/apikey' page
-export const NewApikey = ({ standAlone = false }) => {
+export const NewApikey = ({ standalone = false }) => {
   // Context
   const { startLoading, stopLoading } = useContext(LoadingContext)
 
@@ -309,7 +312,7 @@ export const NewApikey = ({ standAlone = false }) => {
           backend,
           toast,
           keyAdded,
-          standAlone,
+          standalone,
           startLoading,
           stopLoading,
         }}

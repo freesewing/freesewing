@@ -4,11 +4,10 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
-import { ns as apikeysNs } from 'shared/components/account/apikeys.mjs'
+import { ns as setsNs } from 'shared/components/account/sets.mjs'
 
 // Translation namespaces used on this page
-const namespaces = [...new Set([...apikeysNs, ...authNs, ...pageNs])]
-
+const namespaces = [...new Set([...setsNs, ...authNs, ...pageNs])]
 /*
  * Some things should never generated as SSR
  * So for these, we run a dynamic import and disable SSR rendering
@@ -18,8 +17,8 @@ const DynamicAuthWrapper = dynamic(
   { ssr: false }
 )
 
-const DynamicNewApikey = dynamic(
-  () => import('shared/components/account/apikeys.mjs').then((mod) => mod.NewApikey),
+const DynamicNewSet = dynamic(
+  () => import('shared/components/account/sets.mjs').then((mod) => mod.StandAloneNewSet),
   { ssr: false }
 )
 
@@ -29,15 +28,15 @@ const DynamicNewApikey = dynamic(
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const NewApikeyPage = ({ page }) => (
+const NewSetPage = ({ page }) => (
   <PageWrapper {...page}>
     <DynamicAuthWrapper>
-      <DynamicNewApikey standalone title={false} />
+      <DynamicNewSet />
     </DynamicAuthWrapper>
   </PageWrapper>
 )
 
-export default NewApikeyPage
+export default NewSetPage
 
 export async function getStaticProps({ locale }) {
   return {
@@ -45,7 +44,7 @@ export async function getStaticProps({ locale }) {
       ...(await serverSideTranslations(locale, namespaces)),
       page: {
         locale,
-        path: ['new', 'apikey'],
+        path: ['new', 'set'],
       },
     },
   }

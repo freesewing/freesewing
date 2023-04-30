@@ -60,9 +60,9 @@ const sitePages = (t = false, control = 99) => {
       t: t('new'),
       s: 'new',
       h: 1,
-      apikey: {
-        t: t('newApikey'),
-        s: 'new/apikey',
+      set: {
+        t: t('newSet'),
+        s: 'new/set',
         h: 1,
       },
     },
@@ -93,6 +93,12 @@ const sitePages = (t = false, control = 99) => {
         }
     }
   }
+  if (Number(control) >= conf.account.fields.developer.apikeys)
+    pages.new.apikey = {
+      t: t('newApikey'),
+      s: 'new/apikey',
+      h: 1,
+    }
   pages.account.reload = {
     t: t(`account:reload`),
     s: `account/reload`,

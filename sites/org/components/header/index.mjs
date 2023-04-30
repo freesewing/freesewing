@@ -23,7 +23,7 @@ import { ModalThemePicker, ns as themeNs } from 'shared/components/modal/theme-p
 import { ModalLocalePicker, ns as localeNs } from 'shared/components/modal/locale-picker.mjs'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
 
-export const ns = ['header', themeNs, localeNs]
+export const ns = ['header', ...themeNs, ...localeNs]
 
 const NavButton = ({ href, label, color, children, onClick = false, extraClasses = '' }) => {
   const className =
