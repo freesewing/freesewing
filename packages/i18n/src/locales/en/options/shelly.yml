@@ -1,4 +1,8 @@
 ---
+tubular:
+  title: Tubular
+  description: Forms a tubular shirt, which is a shirt where the hips and chests are identical. Set this to true and leave bodyShape at its default value (0%) for a perfectly vertical, tubular side seam. This setting overrides any values set for the hips.
+
 bodyHem:
   title: Body hem
   description: Sets the hem allowance along the bottom of the body of the shirt, as a percentage of the seam allowance.
