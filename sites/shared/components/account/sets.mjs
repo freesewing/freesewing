@@ -6,6 +6,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard'
 import orderBy from 'lodash.orderby'
 import { measurements, isDegreeMeasurement } from 'config/measurements.mjs'
 import { measurementAsMm, formatMm } from 'shared/utils.mjs'
+import { measurements as designMeasurements } from 'site/prebuild/design-measurements.mjs'
 // Hooks
 import { useDropzone } from 'react-dropzone'
 import { useAccount } from 'shared/hooks/use-account.mjs'
@@ -19,7 +20,10 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
 import { BackToAccountButton, Choice } from './shared.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
 import { PageLink } from 'shared/components/page-link.mjs'
+import { ModalDesignPicker } from 'shared/components/modal/design-picker.mjs'
 import {
+  FilterIcon,
+  ClearIcon,
   CloseIcon,
   PlusIcon,
   OkIcon,
@@ -30,7 +34,6 @@ import {
   LeftIcon,
   EditIcon,
 } from 'shared/components/icons.mjs'
-import { Collapse } from 'shared/components/collapse.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import Markdown from 'react-markdown'
 import { Tab } from './bio.mjs'
@@ -39,7 +42,7 @@ import { Spinner } from 'shared/components/spinner.mjs'
 import Link from 'next/link'
 import { SaveSettingsButton } from 'site/components/buttons/save-settings-button.mjs'
 
-export const ns = ['account', 'toast']
+export const ns = ['account', 'patterns', 'toast']
 
 const NewSet = ({ t, account, setGenerate, refresh, backend, toast, standAlone = false }) => {
   // Context
@@ -124,10 +127,11 @@ const EditField = (props) => {
 
 const noop = () => null
 
-const EditTitleButton = ({ title, setEdit }) => (
+const EditTitleButton = ({ title, setEdit, primary = false }) => (
   <button
-    className={`flex flex-row items-center justify-between w-full bg-secondary
-      px-4 py-1 text-secondary-content text-lg font-bold`}
+    className={`flex flex-row items-center justify-between w-full
+      ${primary ? 'bg-primary text-primary-content' : 'bg-secondary text-secondary-content'}
+      px-4 py-1 text-lg font-bold`}
     onClick={() => setEdit(false)}
   >
     {title}
@@ -698,71 +702,99 @@ const EditPublic = ({ t, mset, account, backend, setEdit, toast, refresh }) => {
   )
 }
 
+const EditSectionTitle = ({ title }) => (
+  <h5 className="border border-solid border-b-2 border-r-0 border-l-0 border-t-0 border-primary mt-4 mb-2">
+    {title}
+  </h5>
+)
+
 const EditMeasurementsSet = (props) => {
   const [editProp, setEditProp] = useState(false)
+  const [filter, setFilter] = useState(false)
+  const { mset, t, setEdit, setModal } = props
 
-  const { mset, t, setEdit } = props
+  const filterMeasurements = () => {
+    if (!filter) return measurements.map((m) => t(`measurements:${m}`)).sort()
+    else return designMeasurements[filter].map((m) => t(`measurements:${m}`)).sort()
+  }
 
   return (
-    <div
-      className={`shadow border-solid border-l-[6px] border-r-0 border-t-0 border-b-0 border-primary p-4 my-2`}
-    >
-      <h4 className="flex flex-row items-center justify-between">
-        <span>{mset.name}</span>
-        <button onClick={() => setEdit(false)} className="btn btn-primary">
-          <DownIcon className="w-6 h-6 rotate-180" stroke={3} />
-        </button>
-      </h4>
-      <div className="flex flex-row gap-4 text-sm">
-        <div className="flex flex-row gap-2 items-center">
-          <b>{t('permalink')}:</b>
-          {mset.public ? (
-            <PageLink href={`/sets/${mset.id}`} txt={`/sets/${mset.id}`} />
-          ) : (
-            <NoIcon className="w-4 h-4 text-error" />
-          )}
+    <div className={`shadow border-solid border-2 rounded-lg border-primary my-2`}>
+      <EditTitleButton title={mset.name} setEdit={setEdit} primary />
+      <div className="p-4">
+        <div className="flex flex-row gap-4 text-sm items-center justify-center">
+          <div className="flex flex-row gap-2 items-center">
+            <b>{t('permalink')}:</b>
+            {mset.public ? (
+              <PageLink href={`/sets/${mset.id}`} txt={`/sets/${mset.id}`} />
+            ) : (
+              <NoIcon className="w-4 h-4 text-error" />
+            )}
+          </div>
+          <div>
+            <b>{t('created')}</b>: <Timeago date={mset.createdAt} />
+          </div>
+          <div>
+            <b>{t('updated')}</b>: <Timeago date={mset.updatedAt} />
+          </div>
         </div>
-        <div>
-          <b>{t('created')}</b>: <Timeago date={mset.createdAt} />
+
+        <EditSectionTitle title={t('data')} />
+        <EditRow title={t('name')} field="name" {...props} setEditProp={setEditProp}>
+          {mset.name}
+        </EditRow>
+        <EditRow title={t('image')} field="img" {...props} setEditProp={setEditProp}>
+          <img src={mset.img} className="w-10 mask mask-squircle bg-neutral aspect-square" />
+        </EditRow>
+        <EditRow title={t('public')} field="public" {...props} setEditProps={setEditProp}>
+          <div className="flex flex-row gap-2">
+            {mset.public ? (
+              <>
+                <OkIcon className="h-6 w-6 text-success" /> <span>{t('publicSet')}</span>
+              </>
+            ) : (
+              <>
+                <NoIcon className="h-6 w-6 text-error" /> <span>{t('privateSet')}</span>
+              </>
+            )}
+          </div>
+        </EditRow>
+        <EditRow title={t('units')} field="imperial" {...props} setEditProp={setEditProp}>
+          {mset.imperial ? t('imperialUnits') : t('metricUnits')}
+        </EditRow>
+        <EditRow title={t('notes')} field="notes" {...props} setEditProp={setEditProp}>
+          <Markdown>{mset.notes}</Markdown>
+        </EditRow>
+
+        <EditSectionTitle title={t('measies')} />
+        <div className="flex flex-row items-center justify-center">
+          <button
+            className="btn btn-secondary btn-outline flex flex-row gap-4 rounded-r-none"
+            onClick={() =>
+              setModal(
+                <ModalDesignPicker
+                  designs={Object.keys(designMeasurements)}
+                  setModal={setModal}
+                  setter={setFilter}
+                />
+              )
+            }
+          >
+            <FilterIcon />
+            {filter ? t(`designs:${filter}.t`) : t(`designs:allDesigns`)}
+          </button>
+          <button
+            className="btn btn-secondary btn-outline rounded-l-none border-l-0"
+            onClick={() => setFilter(false)}
+          >
+            <ClearIcon />
+          </button>
         </div>
-        <div>
-          <b>{t('updated')}</b>: <Timeago date={mset.updatedAt} />
-        </div>
+        {filterMeasurements().map((m) => (
+          <MeasieRow key={m} m={m} {...props} setEditProp={setEditProp} />
+        ))}
       </div>
-      <h5 className="border border-2 border-b border-r-0 border-l-0 border-t-0 border-primary">
-        {t('data')}
-      </h5>
-      <EditRow title={t('name')} field="name" {...props} setEditProp={setEditProp}>
-        {mset.name}
-      </EditRow>
-      <EditRow title={t('image')} field="img" {...props} setEditProp={setEditProp}>
-        <img src={mset.img} className="w-10 mask mask-squircle bg-neutral aspect-square" />
-      </EditRow>
-      <EditRow title={t('public')} field="public" {...props} setEditProps={setEditProp}>
-        <div className="flex flex-row gap-2">
-          {mset.public ? (
-            <>
-              <OkIcon className="h-6 w-6 text-success" /> <span>{t('publicSet')}</span>
-            </>
-          ) : (
-            <>
-              <NoIcon className="h-6 w-6 text-error" /> <span>{t('privateSet')}</span>
-            </>
-          )}
-        </div>
-      </EditRow>
-      <EditRow title={t('units')} field="imperial" {...props} setEditProp={setEditProp}>
-        {mset.imperial ? t('imperialUnits') : t('metricUnits')}
-      </EditRow>
-      <EditRow title={t('notes')} field="notes" {...props} setEditProp={setEditProp}>
-        <Markdown>{mset.notes}</Markdown>
-      </EditRow>
-      <h5 className="border border-2 border-b border-r-0 border-l-0 border-t-0 border-primary mt-4">
-        {t('measies')}
-      </h5>
-      {measurements.map((m) => (
-        <MeasieRow key={m} m={m} {...props} setEditProp={setEditProp} />
-      ))}
+      <EditTitleButton title={mset.name} setEdit={setEdit} primary />
     </div>
   )
 }
@@ -819,7 +851,7 @@ const MeasurementsSet = ({ mset, t, account, backend, refresh }) => {
   )
 
   return edit ? (
-    <EditMeasurementsSet {...{ t, mset, account, backend, setEdit, toast, refresh }} />
+    <EditMeasurementsSet {...{ t, mset, account, backend, setEdit, toast, refresh, setModal }} />
   ) : (
     <div className={`flex flex-row gap-2 my-4 items-center`}>
       <div

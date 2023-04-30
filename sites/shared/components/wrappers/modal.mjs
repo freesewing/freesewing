@@ -57,13 +57,15 @@ export const ModalWrapper = ({
       className={`fixed top-0 left-0 m-0 p-0 shadow w-full h-screen
         transform-all duration-150 ${animation}
         bg-${bg} bg-opacity-${bgOpacity} z-50 hover:cursor-pointer
-        flex flex-${flex} justify-${justify} overflow-auto items-${items}`}
+        flex flex-${flex} justify-${justify} overflow-auto items-${items} lg:p-12`}
       onClick={keepOpenOnClick ? null : close}
     >
       {bare ? (
         children
       ) : (
-        <div className="bg-base-100 p-4 lg:px-8 lg:rounded-lg lg:shadow-lg">{children}</div>
+        <div className="bg-base-100 p-4 lg:px-8 lg:rounded-lg lg:shadow-lg lg:w-full">
+          {children}
+        </div>
       )}
     </div>
   )
