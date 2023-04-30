@@ -219,7 +219,7 @@ export const front = {
   measurements: ['neck', 'chest', 'hips', 'hpsToBust', 'waistToHips', 'hpsToWaistBack'],
   options: {
     // How much ease to give for the neck, as a percentage.
-    neckEase: { pct: 0, min: -30, max: 100, menu: 'fit' },
+    neckEase: { pct: 25, min: -30, max: 150, menu: 'fit' },
     chestEase: { pct: 0, min: -30, max: 50, menu: 'fit' },
     hipsEase: { pct: 0, min: -30, max: 75, menu: 'fit' },
     bodyLength: { pct: 100, min: 20, max: 300, menu: 'style' },

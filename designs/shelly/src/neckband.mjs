@@ -80,7 +80,7 @@ export const neckband = {
   measurements: ['neck', 'chest', 'biceps', 'wrist'],
   options: {
     // How long the neckband should be, as a percentage of the length of the neck hole.
-    neckbandLength: { pct: 85, min: 60, max: 100, menu: 'fit' },
+    neckbandLength: { pct: 80, min: 50, max: 100, menu: 'fit' },
     // How wide the neckband should be, as a percentage of the neckband length.
     neckbandWidth: { pct: 7.5, min: 0, max: 30, menu: 'fit' },
   },
