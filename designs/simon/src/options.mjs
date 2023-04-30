@@ -29,7 +29,7 @@ export const extraTopButton = { bool: true, menu: 'style.closure' }
 export const seperateButtonPlacket = { bool: false, menu: 'style.closure' }
 export const seperateButtonholePlacket = { bool: false, menu: 'style.closure' }
 // Collar
-export const collarEase = { pct: 2, min: 0, max: 10, menu: 'style.collar' }
+export const collarEase = { pct: 2, min: 0, max: 10, menu: 'fit' }
 export const collarAngle = { deg: 85, min: 60, max: 130, menu: 'style.collar' }
 export const collarBend = { pct: 3.5, min: 0, max: 10, menu: 'style.collar' }
 export const collarFlare = { deg: 3.5, min: 0, max: 10, menu: 'style.collar' }
