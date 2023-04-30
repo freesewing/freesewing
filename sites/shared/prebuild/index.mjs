@@ -5,6 +5,7 @@ import { prebuildContributors } from './contributors.mjs'
 import { prebuildPatrons } from './patrons.mjs'
 import { prebuildI18n } from './i18n.mjs'
 import { prebuildLab } from './lab.mjs'
+import { prebuildDesigns } from './designs.mjs'
 import { generateOgImage } from './og/index.mjs'
 
 const run = async () => {
@@ -13,6 +14,7 @@ const run = async () => {
     const mdxPages = await prebuildMdx(SITE)
     const [posts] = await prebuildStrapi(SITE)
     prebuildNavigation(mdxPages, posts, SITE)
+    prebuildDesigns()
   } else if (SITE === 'dev') {
     const mdxPages = await prebuildMdx(SITE)
     if (process.env.GENERATE_OG_IMAGES) {
