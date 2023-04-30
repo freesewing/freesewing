@@ -80,6 +80,9 @@ function draftFront({
     options.raglanScoopLength * raglanLength
   )
 
+  // Make the side seams vertical if we're making a tubular shirt. Overrides any hips measurements or options.
+  if (options.tubular) points.bottomSideCorner.x = points.armpitCornerScooped.x
+
   // Make sure that the shirt at least reaches the armpits, to ensure that the full raglan seam can be formed. This code should only trigger is someone tries to make a really, _really_ short shirt.
   if (points.bottomSideCorner.y < points.armpitCornerScooped.y) {
     points.bottomSideCorner.y = points.armpitCornerScooped.y
@@ -221,6 +224,8 @@ export const front = {
     // How much ease to give for the neck, as a percentage.
     neckEase: { pct: 25, min: -30, max: 150, menu: 'fit' },
     chestEase: { pct: 0, min: -30, max: 50, menu: 'fit' },
+    // If set to true, makes a tubular body based on the chest, ignoring the hips measurements and options.
+    tubular: { bool: false, menu: 'fit' },
     hipsEase: { pct: 0, min: -30, max: 75, menu: 'fit' },
     bodyLength: { pct: 100, min: 20, max: 300, menu: 'style' },
     // How far the neck hole is shifted towards the front. +100% means it's entirely on the front, -100% means it's entirely on the back, and 0 means the front and back are the same.

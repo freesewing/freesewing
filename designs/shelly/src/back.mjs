@@ -78,6 +78,9 @@ function draftBack({
     options.raglanScoopLength * raglanLength
   )
 
+  // Make the side seams vertical if we're making a tubular shirt. Overrides any hips measurements or options.
+  if (options.tubular) points.bottomSideCorner.x = points.armpitCornerScooped.x
+
   // Make sure that the shirt at least reaches the armpits, to ensure that the full raglan seam can be formed. This code should only trigger if someone tries to make a really, _really_ short shirt.
   if (points.bottomSideCorner.y < points.armpitCornerScooped.y) {
     points.bottomSideCorner.y = points.armpitCornerScooped.y
