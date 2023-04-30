@@ -51,9 +51,9 @@ const sitePages = (t = false, control = 99) => {
       o: 60,
     },
     // Top-level pages that are not in the sections menu
-    profile: {
-      t: t('yourProfile'),
-      s: 'profile',
+    apikeys: {
+      t: t('apikeys'),
+      s: 'apikeys',
       h: 1,
     },
     new: {
@@ -65,6 +65,16 @@ const sitePages = (t = false, control = 99) => {
         s: 'new/apikey',
         h: 1,
       },
+    },
+    profile: {
+      t: t('yourProfile'),
+      s: 'profile',
+      h: 1,
+    },
+    sets: {
+      t: t('sets'),
+      s: 'sets',
+      h: 1,
     },
 
     // Not translated, this is a developer page

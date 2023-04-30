@@ -4,10 +4,10 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
-import { ns as setsNs } from 'shared/components/account/sets.mjs'
+import { ns as apikeysNs } from 'shared/components/account/apikeys.mjs'
 
 // Translation namespaces used on this page
-const namespaces = [...new Set([...setsNs, ...authNs, ...pageNs])]
+const namespaces = [...new Set([...apikeysNs, ...authNs, ...pageNs])]
 
 /*
  * Some things should never generated as SSR
@@ -18,8 +18,8 @@ const DynamicAuthWrapper = dynamic(
   { ssr: false }
 )
 
-const DynamicSets = dynamic(
-  () => import('shared/components/account/sets.mjs').then((mod) => mod.Sets),
+const DynamicApikeys = dynamic(
+  () => import('shared/components/account/apikeys.mjs').then((mod) => mod.Apikeys),
   { ssr: false }
 )
 
@@ -29,15 +29,15 @@ const DynamicSets = dynamic(
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const AccountSetsPage = ({ page }) => (
+const AccountApikeysPage = ({ page }) => (
   <PageWrapper {...page}>
     <DynamicAuthWrapper>
-      <DynamicSets />
+      <DynamicApikeys />
     </DynamicAuthWrapper>
   </PageWrapper>
 )
 
-export default AccountSetsPage
+export default AccountApikeysPage
 
 export async function getStaticProps({ locale }) {
   return {
@@ -45,7 +45,7 @@ export async function getStaticProps({ locale }) {
       ...(await serverSideTranslations(locale, namespaces)),
       page: {
         locale,
-        path: ['account', 'sets'],
+        path: ['apikeys'],
       },
     },
   }

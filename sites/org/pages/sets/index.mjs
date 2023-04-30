@@ -3,6 +3,8 @@ import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
+import { Popout } from 'shared/components/popout.mjs'
+
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
 import { ns as setsNs } from 'shared/components/account/sets.mjs'
 
@@ -29,15 +31,15 @@ const DynamicSets = dynamic(
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const AccountSetsPage = ({ page }) => (
+const SetsIndexPage = ({ page }) => (
   <PageWrapper {...page}>
     <DynamicAuthWrapper>
-      <DynamicSets />
+      <DynamicSets title={false} />
     </DynamicAuthWrapper>
   </PageWrapper>
 )
 
-export default AccountSetsPage
+export default SetsIndexPage
 
 export async function getStaticProps({ locale }) {
   return {
@@ -45,7 +47,7 @@ export async function getStaticProps({ locale }) {
       ...(await serverSideTranslations(locale, namespaces)),
       page: {
         locale,
-        path: ['account', 'sets'],
+        path: ['sets'],
       },
     },
   }

@@ -16,7 +16,7 @@ import { BackToAccountButton, Choice } from './shared.mjs'
 import { Popout } from 'shared/components/popout.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
 import { CopyIcon } from 'shared/components/icons.mjs'
-import { Collapse } from 'shared/components/collapse.mjs'
+import { Collapse, useCollapseButton } from 'shared/components/collapse.mjs'
 import { TrashIcon } from 'shared/components/icons.mjs'
 import { LeftIcon } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
@@ -123,7 +123,9 @@ const NewKey = ({
   toast,
   startLoading,
   stopLoading,
+  closeCollapseButton,
   standAlone = false,
+  title = true,
 }) => {
   const router = useRouter()
   const [name, setName] = useState('')
@@ -146,6 +148,7 @@ const NewKey = ({
       keyAdded()
     } else toast.for.backendError()
     stopLoading()
+    closeCollapseButton()
   }
 
   const clear = () => {
@@ -155,14 +158,14 @@ const NewKey = ({
 
   return (
     <div>
-      <h2>{t('newApikey')}</h2>
+      {title ? <h2>{t('newApikey')}</h2> : null}
       {apikey ? (
         <>
           <ShowKey apikey={apikey} t={t} clear={clear} />
         </>
       ) : (
         <>
-          <h3>{t('keyName')}</h3>
+          <h5>{t('keyName')}</h5>
           <p>{t('keyNameDesc')}</p>
           <input
             value={name}
@@ -171,9 +174,9 @@ const NewKey = ({
             type="text"
             placeholder={'Alicia key'}
           />
-          <h3>{t('keyExpires')}</h3>
+          <h5 className="mt-4">{t('keyExpires')}</h5>
           <ExpiryPicker {...{ t, expires, setExpires }} />
-          <h3>{t('keyLevel')}</h3>
+          <h5 className="mt-4">{t('keyLevel')}</h5>
           {levels.map((l) => (
             <Choice val={l} t={t} update={setLevel} current={level} key={l}>
               <span className="block text-lg leading-5">{t(`keyLevel${l}`)}</span>
@@ -187,12 +190,6 @@ const NewKey = ({
             >
               {t('newApikey')}
             </button>
-            <button
-              className="btn btn-primary btn-outline capitalize"
-              onClick={() => (standAlone ? router.push('/account/apikeys') : setGenerate(false))}
-            >
-              {t('cancel')}
-            </button>
           </div>
         </>
       )}
@@ -200,8 +197,7 @@ const NewKey = ({
   )
 }
 
-const Apikey = ({ apikey, t, account, backend, keyAdded }) => {
-  //const { startLoading, stopLoading } = useContext(LoadingContext)
+const Apikey = ({ apikey, t, account, backend, keyAdded, startLoading, stopLoading }) => {
   const { setModal } = useContext(ModalContext)
   const toast = useToast()
 
@@ -256,12 +252,14 @@ const Apikey = ({ apikey, t, account, backend, keyAdded }) => {
 
   return (
     <Collapse
-      title={[title, null]}
+      title={title}
+      openTitle={apikey.name}
+      primary
       valid={!expired}
       buttons={[
         <button
-          key="button1"
-          className="z-10 btn btn-sm mr-4 bg-base-100 text-error hover:bg-error hover:text-error-content border-0"
+          key="rm"
+          className="btn btn-error hover:text-error-content border-0"
           onClick={account.control > 4 ? remove : removeModal}
         >
           <TrashIcon key="button2" />
@@ -330,6 +328,7 @@ export const Apikeys = () => {
   const backend = useBackend(token)
   const { t } = useTranslation(ns)
   const toast = useToast()
+  const { CollapseButton, closeCollapseButton } = useCollapseButton()
 
   // State
   const [keys, setKeys] = useState([])
@@ -367,14 +366,32 @@ export const Apikeys = () => {
         <>
           <h2>{t('apikeys')}</h2>
           {keys.map((apikey) => (
-            <Apikey {...{ app, account, apikey, t, backend, keyAdded }} key={apikey.id} />
+            <Apikey
+              {...{ account, apikey, t, backend, keyAdded, startLoading, stopLoading }}
+              key={apikey.id}
+            />
           ))}
-          <button
+          <CollapseButton
+            title={t('newApikey')}
             className="btn btn-primary w-full capitalize mt-4"
-            onClick={() => setGenerate(true)}
+            bottom
+            primary
           >
-            {t('newApikey')}
-          </button>
+            <NewKey
+              title={false}
+              {...{
+                t,
+                account,
+                setGenerate,
+                backend,
+                toast,
+                keyAdded,
+                startLoading,
+                stopLoading,
+                closeCollapseButton,
+              }}
+            />
+          </CollapseButton>
           <BackToAccountButton loading={loading} />
           {account.control < 5 ? (
             <Popout tip>

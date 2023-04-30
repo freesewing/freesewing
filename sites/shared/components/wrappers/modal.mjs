@@ -63,9 +63,7 @@ export const ModalWrapper = ({
       {bare ? (
         children
       ) : (
-        <div className="bg-base-100 p-4 lg:px-8 lg:rounded-lg lg:shadow-lg lg:w-full">
-          {children}
-        </div>
+        <div className={`bg-base-100 p-4 lg:px-8 lg:rounded-lg lg:shadow-lg`}>{children}</div>
       )}
     </div>
   )
