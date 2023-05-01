@@ -5,7 +5,7 @@ import { ClearIcon } from 'shared/components/icons.mjs'
 
 export const CoreSettingMm = (props) => {
   const { t } = useTranslation(['app', 'settings'])
-  const { dflt, min, max } = props
+  const { dflt, min, max, step, stepIm } = props
   const val = props.gist?.[props.setting]
 
   const [value, setValue] = useState(val)
@@ -22,6 +22,13 @@ export const CoreSettingMm = (props) => {
   const reset = () => {
     setValue(props.dflt)
     props.updateGist([props.setting], props.dflt)
+  }
+
+  let stepVal
+  if (props.gist.units == 'imperial') {
+    stepVal = stepIm
+  } else {
+    stepVal = step
   }
 
   return (
@@ -47,7 +54,7 @@ export const CoreSettingMm = (props) => {
         type="range"
         max={max}
         min={min}
-        step={1}
+        step={stepVal}
         value={value}
         onChange={handleChange}
         className={`

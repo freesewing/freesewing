@@ -15,6 +15,10 @@ export const settings = {
     min: 0,
     max: 25,
     dflt: 10,
+    step: 1,
+    maxIm: 25.4,
+    dfltIm: 9.525,
+    stepIm: 1.5875,
   },
   complete: {
     dflt: false,
