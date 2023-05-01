@@ -1,10 +1,10 @@
 - - -
-title: "Front armhole pitch depth (Bella)"
+titre : "Profondeur de l'emmanchure avant (Bella)"
 - - -
 
 ***
 
-Controls the front armhole pitch depth in the underlying Bella block Bee is based on
+Contrôle la profondeur de l'emmanchure dans le bloc Bella sur lequel est basé le patron Bee
 
 ## Effet de cette option sur le motif
 

@@ -6,11 +6,11 @@ frontPocket:
   title: Poche avant
   description: Inclure ou non des poches avant
 hemWidth:
-  title: Hem size
-  description: Size of the hem at the bottom of the pants
+  title: Taille des ourlets
+  description: Taille de l'ourlet au bas du pantalon
 waistbandWidth:
-  title: Waist Band
-  description: Size of the waist band
+  title: Bande de taille
+  description: Taille de la bande de taille
 waistRaise:
   title: Hauteur de taille
   description: Combien il faut élever la taille de la mesure de hauteur d'assise, ce qui influence la profondeur de la coupe de l'entre-jambe.

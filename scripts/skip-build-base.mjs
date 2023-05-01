@@ -2,7 +2,7 @@ import process from 'node:process'
 import { execSync } from 'child_process'
 
 export const shouldSkipBuild = (siteName, checkFolders = '../shared .') => {
-  console.log('Skip build script version 1.0.0')
+  console.log('Skip build script version 1.1.0')
 
   // Do not block production builds
   if (process.env.VERCEL_ENV === 'production') {
@@ -38,10 +38,22 @@ export const shouldSkipBuild = (siteName, checkFolders = '../shared .') => {
       )
       // we need to fetch develop in order to get the merge base
       execSync(`git fetch origin develop:develop --depth=5`)
-      // if depth 5 wasn't enough, keep deepening until we find the merge base
-      execSync(
-        `until git merge-base develop HEAD > /dev/null; do git fetch origin develop:develop --deepen=1; done`
-      )
+
+      let hasMerge = ''
+      for (let a = 0; a < 5; a++) {
+        try {
+          hasMerge = execSync(`git merge-base develop HEAD`).toString()
+          break
+        } catch {
+          // if depth 5 wasn't enough, keep deepening until we find the merge base
+          execSync(`git fetch origin develop:develop --deepen=1`)
+        }
+      }
+
+      if (!hasMerge.length) {
+        console.log(`🛑 - Can't find merge base for pull request - Do not build`)
+        process.exit(0)
+      }
 
       // now check for changes
       const changes = execSync(
@@ -51,8 +63,8 @@ export const shouldSkipBuild = (siteName, checkFolders = '../shared .') => {
         console.log(`✅ - ${siteName} Pull Request - Proceed to build`)
         process.exit(1)
       }
-    } catch {
-      // just don't error out
+    } catch (e) {
+      console.log(e)
     }
 
     console.log(`🛑 - Pull Request made no changes to ${siteName} - Do not build`)

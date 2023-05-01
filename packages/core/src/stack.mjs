@@ -51,10 +51,19 @@ Stack.prototype.home = function () {
   this.bottomRight = new Point(-Infinity, -Infinity)
   for (const part of this.getPartList()) {
     part.__boundary()
-    if (part.topLeft.x < this.topLeft.x) this.topLeft.x = part.topLeft.x
-    if (part.topLeft.y < this.topLeft.y) this.topLeft.y = part.topLeft.y
-    if (part.bottomRight.x > this.bottomRight.x) this.bottomRight.x = part.bottomRight.x
-    if (part.bottomRight.y > this.bottomRight.y) this.bottomRight.y = part.bottomRight.y
+
+    const { tl, br } = utils.getTransformedBounds(part, part.attributes.getAsArray('transform'))
+
+    if (!tl) {
+      continue
+    }
+
+    // get the top left, the minimum x and y values of any corner
+    this.topLeft.x = Math.min(this.topLeft.x, tl.x)
+    this.topLeft.y = Math.min(this.topLeft.y, tl.y)
+    // get the bottom right, the maximum x and y values of any corner
+    this.bottomRight.x = Math.max(this.bottomRight.x, br.x)
+    this.bottomRight.y = Math.max(this.bottomRight.y, br.y)
   }
 
   // Fix infinity if it's not overwritten
@@ -122,14 +131,22 @@ Stack.prototype.attr = function (name, value, overwrite = false) {
   return this
 }
 
-/** Generates the transform for a stack */
+/**
+ * Generates the transforms for a stack and sets them as attributes
+ * @param  {Object} transforms a transform config object
+ * @param  {Object} transforms.move x and y coordinates for how far to translate the stack
+ * @param  {Number} transfroms.rotate the number of degrees to rotate the stack around its center
+ * @param  {Boolean}  tranforms.flipX whether to flip the stack along the X axis
+ * @param  {Boolean}  transforms.flipY whether to flip the stack along the Y axis
+ */
 Stack.prototype.generateTransform = function (transforms) {
   const { move, rotate, flipX, flipY } = transforms
   const generated = utils.generateStackTransform(move?.x, move?.y, rotate, flipX, flipY, this)
 
-  for (var t in generated) {
-    this.attr(t, generated[t], true)
-  }
+  this.attributes.remove('transform')
+  generated.forEach((t) => this.attr('transform', t))
+
+  return this
 }
 
 export default Stack

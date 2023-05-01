@@ -30,7 +30,7 @@ Need some inspo? check out [Sandy's showcase](/showcase/designs/sandy/) page and
 
 ### Lining Fabric
 
-Linings are optional for Sandy but you made need one if your main fabric is scratchy, sheds, hard to wash or is not nice to wear against skin.
+Linings are optional for Sandy but you may need one if your main fabric is scratchy, sheds, hard to wash or is not nice to wear against skin.
 You will want to use lighter fabrics to reduce bulk such as lightweight **Cottons** and **Silks**.
 
 <Note>

@@ -1,7 +1,7 @@
 import { front as bentFront } from '@freesewing/bent'
 import { calculateRatios } from './shared.mjs'
 import { hidePresets } from '@freesewing/core'
-import { pluginCutlist } from '@freesewing/plugin-cutlist'
+import { pluginAnnotations } from '@freesewing/plugin-annotations'
 
 function draftCarltonFront({
   paperless,
@@ -20,6 +20,7 @@ function draftCarltonFront({
   Path,
   part,
 }) {
+  macro('cutonfold', false)
   calculateRatios(part)
 
   // Waist shaping
@@ -505,6 +506,6 @@ export const front = {
     seatEase: { pct: 14, min: 8, max: 25, menu: 'fit' },
     innerPocketWeltHeight: { pct: 3.5, min: 2.5, max: 5, menu: 'pockets' },
   },
-  plugins: [pluginCutlist],
+  plugins: [pluginAnnotations],
   draft: draftCarltonFront,
 }

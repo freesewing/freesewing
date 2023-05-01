@@ -1,26 +1,26 @@
 ---
-emailChangeActionText: 'Confirm your new E-mail address'
-emailChangeCopy1: 'You requested to change the E-mail address linked to your account at FreeSewing.org.'
-emailChangeCopy2: 'Before we do that, you need to confirm your new E-mail address. Please click the link below to do that:'
-emailChangeHiddenIntro: "Let's confirm your new E-mail address"
-emailChangeTitle: 'Please confirm your new E-mail address'
-emailChangeWhy: 'You received this E-mail because you changed the E-mail address linked to your account on FreeSewing.org'
-goodbyeCopy1: "If you'd like to share why you're leaving, you can reply to this message."
-goodbyeCopy2: "From our side, we won't bother you again."
-goodbyeTitle: 'Thank you for giving FreeSewing a chance'
-goodbyeWhy: 'You received this E-mail as a final farewell after removing your account on FreeSewing.org'
-passwordResetActionText: 'Re-gain access to your account'
-passwordResetCopy1: 'You forgot your password for your account at FreeSewing.org.'
-passwordResetCopy2: 'Click the link below to reset your password:'
-passwordResetHeaderOpeningLine: "Don't worry, these things happen to all of us"
-passwordResetHiddenIntro: 'Re-gain access to your account'
-passwordResetSubject: 'Re-gain access to your account on freesewing.org'
-passwordResetTitle: 'Reset your password, and re-gain access to your account'
-passwordResetWhy: 'You received this E-mail because you requested to reset your password on freesewing.org'
-questionsJustReply: "Якщо у вас є запитання, просто надішліть відповідь на цей E-mail. Ми завжди раді допомогти 🙂"
+emailChangeActionText: 'Підтвердіть нову адресу електронної пошти'
+emailChangeCopy1: 'Ви запросили зміну електронної адреси, прив''язаної до вашого облікового запису на Freesewing.org.'
+emailChangeCopy2: 'Перш ніж зробити це, необхідно підтвердити нову адресу електронної пошти. Будь ласка, натисніть на посилання нижче, щоб зробити це:'
+emailChangeHiddenIntro: "Час підтвердити нову адресу електронної пошти"
+emailChangeTitle: 'Будь ласка, підтвердіть нову адресу електронної пошти'
+emailChangeWhy: 'Ви отримали цей лист, оскільки змінили адресу електронної пошти, прив''язану до вашого облікового запису на freesewing.org'
+goodbyeCopy1: "Якщо ви хочете поділитися, чому ви йдете, можете відповісти на це повідомлення."
+goodbyeCopy2: "З нашого боку, ми не будемо вас турбувати."
+goodbyeTitle: 'Дякуємо за ще один шанс для FreeSewing'
+goodbyeWhy: 'Ви отримали цей лист, як останнє прощання після видалення вашого облікового запису на freesewing.org'
+passwordResetActionText: 'Повторно отримати доступ до вашого облікового запису'
+passwordResetCopy1: 'Ви забули пароль до облікового запису на FreeSewing.org.'
+passwordResetCopy2: 'Натисніть на посилання нижче, щоб відновити пароль:'
+passwordResetHeaderOpeningLine: "Не хвилюйтеся, це стається з нами усіма"
+passwordResetHiddenIntro: 'Повторно отримати доступ до вашого облікового запису'
+passwordResetSubject: 'Повторно отримати доступ до вашого облікового запису на freesewing.org'
+passwordResetTitle: 'Змінити пароль і повторно отримати доступ до вашого облікового запису'
+passwordResetWhy: 'Ви отримали цей електронний лист, тому що ви запросили зміну паролю на сайті freesewing.org'
+questionsJustReply: "Якщо у вас є запитання, просто надішліть відповідь на цей електронний лист. Ми завжди раді допомогти 🙂"
 signupActionText: 'Підтвердіть адресу електронної пошти'
-signupCopy1: 'Thank you for signing up at FreeSewing.org.'
-signupCopy2: 'Before we get started, you need to confirm your E-mail address. Please click the link below to do that:'
+signupCopy1: 'Дякуємо за реєстрацію на FreeSewing.org.'
+signupCopy2: 'Перш ніж почати роботу, необхідно підтвердити свою адресу електронної пошти. Будь ласка, натисніть на посилання нижче, щоб зробити це:'
 signupHiddenIntro: "Час підтвердити нову адресу електронної пошти"
-signupSubject: 'Welcome to FreeSewing.org'
+signupSubject: 'Ласкаво просимо до FreeSewing.org'
 signupWhy: 'Ви отримали цей електронний лист, тому що ви щойно зареєструвалися на сайті freesewing.org'

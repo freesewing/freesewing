@@ -6,7 +6,7 @@ The `buttonhole` snippet is used to mark buttonhole placement.
 This particular snippet places the buttonhole centrally on its
 anchor point.
 
-It is provided by [plugin-buttons](/reference/plugins/buttons/).
+It is provided by [plugin-annotations](/reference/plugins/annotations/).
 
 
 ## Example

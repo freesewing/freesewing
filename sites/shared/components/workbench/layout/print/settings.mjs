@@ -24,6 +24,12 @@ export const PrintLayoutSettings = (props) => {
     )
   }
 
+  const setCutlist = () => {
+    props.updateGist(
+      ['_state', 'layout', 'forPrinting', 'page', 'cutlist'],
+      !props.layoutSettings.cutlist
+    )
+  }
   return (
     <div>
       <div
@@ -33,13 +39,6 @@ export const PrintLayoutSettings = (props) => {
         <div className="flex gap-4">
           <PageSizePicker {...props} />
           <PageOrientationPicker {...props} />
-        </div>
-        <div className="flex gap-4">
-          <ShowButtonsToggle
-            gist={props.gist}
-            updateGist={props.updateGist}
-            layoutSetType="forPrinting"
-          ></ShowButtonsToggle>
           <button
             key="export"
             onClick={props.exportIt}
@@ -48,8 +47,15 @@ export const PrintLayoutSettings = (props) => {
             aria-disabled={count === 0}
           >
             <ExportIcon className="h-6 w-6 mr-2" />
-            {t('export')}
+            {`${t('export')} PDF`}
           </button>
+        </div>
+        <div className="flex gap-4">
+          <ShowButtonsToggle
+            gist={props.gist}
+            updateGist={props.updateGist}
+            layoutSetType="forPrinting"
+          ></ShowButtonsToggle>
           <button
             key="reset"
             onClick={() => props.unsetGist(['layouts', 'printingLayout'])}
@@ -62,8 +68,8 @@ export const PrintLayoutSettings = (props) => {
       </div>
       <div className="flex flex-row justify-between">
         <div className="flex flex-row">
-          <label htmlFor="pageMargin" className="label mr-6">
-            <span className="mr-2">{t('pageMargin')}</span>
+          <label htmlFor="pageMargin" className="label">
+            <span className="">{t('pageMargin')}</span>
             <input
               type="range"
               max={50}
@@ -93,6 +99,15 @@ export const PrintLayoutSettings = (props) => {
               className="toggle toggle-primary"
               checked={props.layoutSettings.coverPage}
               onChange={setCoverPage}
+            />
+          </label>
+          <label htmlFor="cutlist" className="label">
+            <span className="mr-2">{t('cutlist')}</span>
+            <input
+              type="checkbox"
+              className="toggle toggle-primary"
+              checked={props.layoutSettings.cutlist}
+              onChange={setCutlist}
             />
           </label>
         </div>
