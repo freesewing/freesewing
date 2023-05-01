@@ -19,7 +19,10 @@ const sitesFolder = path.join(fileURLToPath(import.meta.url), '..', '..', '..')
 export const folders = {
   org: [path.join(sitesFolder, 'org', 'pages'), path.join(sitesFolder, 'org', 'components')],
   dev: [path.join(sitesFolder, 'dev', 'pages'), path.join(sitesFolder, 'dev', 'components')],
-  shared: [path.join(sitesFolder, 'shared', 'components')],
+  shared: [
+    path.join(sitesFolder, 'shared', 'components'),
+    path.join(sitesFolder, 'shared', 'i18n'),
+  ],
 }
 
 /*

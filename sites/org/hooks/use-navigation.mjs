@@ -6,6 +6,7 @@ import { useTranslation } from 'next-i18next'
 import orderBy from 'lodash.orderby'
 import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
+import { designs, tags } from 'shared/config/designs.mjs'
 
 /*
  * prebuildNavvigation[locale] holds the navigation structure based on MDX content.
@@ -18,7 +19,7 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
  * Note: Set 'c' to set the control level to hide things from users
  */
 
-const ns = ['account', 'sections']
+const ns = ['account', 'sections', 'design', 'tags']
 
 const sitePages = (t = false, control = 99) => {
   // Handle t not being present
@@ -29,6 +30,12 @@ const sitePages = (t = false, control = 99) => {
       t: t('sections:designs'),
       s: 'designs',
       o: 10,
+      tags: {
+        t: t('design:tags'),
+        s: 'designs/tags',
+        h: 1,
+        o: 'aaa',
+      },
     },
     patterns: {
       t: t('sections:patterns'),
@@ -75,10 +82,15 @@ const sitePages = (t = false, control = 99) => {
       t: t('new'),
       s: 'new',
       h: 1,
+      pattern: {
+        t: t('patternNew'),
+        s: 'new/pattern',
+        o: 10,
+      },
       set: {
         t: t('newSet'),
         s: 'new/set',
-        h: 1,
+        0: 20,
       },
     },
     profile: {
@@ -107,11 +119,23 @@ const sitePages = (t = false, control = 99) => {
     pages.new.apikey = {
       t: t('newApikey'),
       s: 'new/apikey',
-      h: 1,
+      o: 30,
     }
   pages.account.reload = {
     t: t(`account:reload`),
     s: `account/reload`,
+  }
+  for (const design in designs) {
+    pages.designs[design] = {
+      t: t(`designs:${design}.t`),
+      s: `designs/${design}`,
+    }
+  }
+  for (const tag of tags) {
+    pages.designs.tags[tag] = {
+      t: t(`tags:${tag}`),
+      s: `designs/tags/${tag}`,
+    }
   }
 
   return pages
