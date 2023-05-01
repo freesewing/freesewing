@@ -76,6 +76,6 @@ function draftBindingNeckFront({
 export const bindingNeckFront = {
   name: 'bindingNeckFront',
   after: [bindingLeg],
-  plugins: [pluginBundle, pluginCutlist],
+  plugins: [pluginBundle],
   draft: draftBindingNeckFront,
 }

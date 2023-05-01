@@ -53,6 +53,11 @@ function draftLongsleeve({
 
   paths.seam = paths.seamSA.clone().line(points.p1).line(points.p0).close().unhide()
 
+  macro('cutonfold', {
+    from: points.p0,
+    to: points.p1,
+  })
+
   // Complete?
   if (complete) {
     points.logo = points.p0.shiftFractionTowards(points.p2, 0.5)
@@ -70,10 +75,6 @@ function draftLongsleeve({
     if (sa) {
       paths.sa = paths.seamSA.offset(sa).close().attr('class', 'fabric sa')
     }
-    macro('cutonfold', {
-      from: points.p0,
-      to: points.p1,
-    })
   }
 
   // Paperless?
@@ -127,6 +128,6 @@ function draftLongsleeve({
 export const longsleeve = {
   name: 'longsleeve',
   from: shortsleeve,
-  plugins: [pluginBundle, pluginCutlist],
+  plugins: [pluginBundle],
   draft: draftLongsleeve,
 }

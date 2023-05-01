@@ -79,6 +79,11 @@ function draftFront({
     new Path().move(points.p3).curve(points.p3Cp1, points.p4, points.p4).length()
   )
 
+  macro('cutonfold', {
+    from: new Point(0, points.p4.y),
+    to: points.p0,
+  })
+
   // Complete?
   if (complete) {
     points.logo = points.p0.shiftFractionTowards(points.p3, 0.5)
@@ -105,13 +110,6 @@ function draftFront({
     }
 
     snippets.shoulder = new Snippet('notch', points.shoulder)
-
-    macro('cutonfold', {
-      from: new Point(0, points.p4.y),
-      to: points.p0,
-    })
-
-    store.cutlist.addCut({ material: 'fabric', cut: 1 })
   }
 
   // Paperless?
@@ -163,12 +161,14 @@ function draftFront({
     })
   }
 
+  store.cutlist.addCut({ material: 'fabric', cut: 1 })
+
   return part
 }
 
 export const front = {
   name: 'front',
   after: back,
-  plugins: [pluginBundle, pluginCutlist],
+  plugins: [pluginBundle],
   draft: draftFront,
 }

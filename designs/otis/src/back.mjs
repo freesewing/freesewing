@@ -66,6 +66,11 @@ function draftBack({
 
   paths.seam = paths.seamSA.clone().line(points.p0).close().unhide()
 
+  macro('cutonfold', {
+    from: new Point(0, points.p5.y),
+    to: points.p0,
+  })
+
   store.set(
     'BackNeckOpening',
     new Path().move(points.p0).curve(points.p0Cp1, points.p1Cp2, points.p1).length() * 2
@@ -106,11 +111,6 @@ function draftBack({
     }
 
     snippets.shoulder = new Snippet('notch', points.shoulder)
-
-    macro('cutonfold', {
-      from: new Point(0, points.p5.y),
-      to: points.p0,
-    })
   }
 
   // Paperless?
@@ -174,6 +174,6 @@ export const back = {
     ease: { pct: 14, min: 0, max: 30, menu: 'fit' },
     snapPlacket: { pct: 5, min: 0, max: 30, menu: 'advanced' },
   },
-  plugins: [pluginBundle, pluginCutlist],
+  plugins: [pluginBundle],
   draft: draftBack,
 }

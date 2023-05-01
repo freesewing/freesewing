@@ -87,6 +87,6 @@ export const bindingLeg = {
   options: {
     binding: { pct: 11, min: 2, max: 30, menu: 'advanced' },
   },
-  plugins: [pluginBundle, pluginCutlist],
+  plugins: [pluginBundle],
   draft: draftBindingLeg,
 }
