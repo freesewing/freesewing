@@ -361,7 +361,7 @@ shared:
     'feed': '4.2.2'
     'file-saver': '2.0.5'
     'front-matter': '4.0.2'
-    'highlight.js': '11.7.0'
+    'highlight.js': '11.8.0'
     'lodash.clonedeep': '4.5.0'
     'lodash.orderby': *_orderby
     'lodash.unset': *_unset
