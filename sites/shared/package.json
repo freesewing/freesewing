@@ -45,14 +45,16 @@
     "rehype-autolink-headings": "6.1.1",
     "rehype-highlight": "6.0.0",
     "remark-smartypants": "2.0.0",
-    "sharp": "0.32.0",
+    "sharp": "0.32.1",
     "svg-to-pdfkit": "https://github.com/eriese/SVG-to-PDFKit",
     "tlds": "1.238.0",
     "to-vfile": "7.2.4",
     "unist-util-visit": "4.1.2",
     "web-worker": "1.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "recursive-readdir": "^2.2.3"
+  },
   "engines": {
     "node": ">=16.0.0",
     "npm": ">=8"

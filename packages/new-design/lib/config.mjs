@@ -51,6 +51,9 @@ dist
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# e2e test results
+playwright-report
 `,
   fetch: {
     config: [

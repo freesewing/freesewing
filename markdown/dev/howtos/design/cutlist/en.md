@@ -19,7 +19,7 @@ Pass an object to the `store.cutlist.addCut` method with any of the following ke
 | cut | Number\|false | 2 | the number of pieces to cut from the specified material. Pass `false` to clear all cutting instructions for the material |
 | material | String | 'fabric' | the translation key of the material to cut from |
 | identical | Boolean | false | should even numbers of pieces be cut in the same direction? false for mirrored |
-| bias | Boolean | false | should the pieces in these cutting instructions be cut on the bias |
+| bias | Boolean | false | should the pieces in these cutting instructions be cut on the bias? 'false' uses grainline instruction or leaves orientation as is |
 | ignoreOnFold | Boolean | false | should these cutting instructions ignore any cutOnFold information set by the part |
 
 

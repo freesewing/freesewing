@@ -1,61 +1,61 @@
 dartPosition:
-  description: Controls whether to split at the shoulder or armhole
-  title: Dart position
+  description: Contrôle s'il faut séparer à l'épaule ou à l'emmanchure
+  title: Position de la pince
 chestEase:
-  description: Controls the amount of ease at the chest
-  title: Chest ease
+  description: Contrôle la quantité d'aisance de votre poitrine
+  title: Aisance de poitrine
 waistEase:
-  description: Controls the amount of ease at the waist
-  title: Waist ease
+  description: Contrôle la quantité d'aisance au niveau de la taille
+  title: Aisance à la taille
 bustSpanEase:
   description: Controls the amount of ease along the bust span
   title: Bust span ease
 backDartHeight:
-  description: Back dart height
-  title: Controls the height of the back dart
+  description: Hauteur de la pince de dos
+  title: Contrôle la hauteur de la pince de dos
 waistDartLength:
-  description: Controls the length of the waist dart
-  title: Waist dart length
+  description: Contrôle la longueur de la pince de taille
+  title: Longueur de la pince de taille
 shoulderDartPosition:
-  description: Controls the position of the shoulder dart
-  title: Shoulder dart position
+  description: Contrôle la position de la pince d'épaule
+  title: Position de la pince d'épaule
 upperDartLength:
-  description: Controls the length of the upper dart
-  title: Upper dart length
+  description: Contrôle la longueur de la pince supérieure
+  title: Longueur de la pince supérieure
 armholeDartPosition:
-  description: Controls the position of the armhole dart
-  title: Armhole dart position
+  description: Contrôle la position de la pince d'emmanchure
+  title: Position de la pince d'emmanchure
 armholeDepth:
-  description: Controls the depth of the armhole
-  title: Armhole depth
+  description: Contrôle la profondeur de l'emmanchure
+  title: Profondeur d'emmanchure
 backArmholeSlant:
-  description: Controls the slant of the armhole at the back
-  title: Back armhole slant
+  description: Contrôle l'inclinaison de l'emmanchure dos
+  title: Inclinaison d'emmanchure dos
 backArmholeCurvature:
-  description: Controls how deep the armhole is scooped out at the back
-  title: Back armhole curvature
+  description: Contrôle la profondeur du bas de la courbure d'emmanchure dans le dos
+  title: Courbure de l'emmanchure arrière
 frontArmholeCurvature:
-  title: Front armhole curvature
-  description: Controls how deep the armhole is scooped out at the front bottom
+  title: Courbe de l'emmanchure avant
+  description: Contrôle la profondeur du bas de la courbure d'emmanchure sur le devant
 frontArmholePitchDepth:
   description: Controls how deep the armhole cuts into the front
-  title: Front armhole pitch depth
+  title: Profondeur du point de pivot de l'emmanchure avant
 backArmholePitchDepth:
   description: Controls how deep the armhole cuts into the back
-  title: Back armhole pitch depth
+  title: Profondeur du point de pivot de l'emmanchure dos
 backNeckCutout:
-  description: Controls how deep the neck is cutout in the back
-  title: Back neck cutout
+  description: Contrôle la profondeur de l'encolure dans le dos
+  title: Arrondi de l'encolure dos
 backHemSlope:
-  description: Constrols the slope of the back hem
-  title: Back hem slope
+  description: Contrôle la pente de l'ourlet arrière
+  title: Pente de l'ourlet arrière
 frontShoulderWidth:
-  description: Controls how much width is added to the shoulder in the front
-  title: Front shoulder width
+  description: Contrôle la largeur ajoutée devant les épaules
+  title: Largeur d'épaule devant
 highBustWidth:
-  description: Controls the width of the high bust
-  title: High bust width
+  description: Contrôle la largeur du haut de poitrine
+  title: Largeur du haut de poitrine
 shoulderToShoulderEase:
-  description: Controls the amount of ease along the shoulder to shoulder measurement
-  title: Shoulder to shoulder ease
+  description: Contrôle l'aisance sur la mesure épaule à épaule
+  title: Aisance d'épaule à épaule
 

@@ -112,7 +112,7 @@ const part = {
 	draft: ({part, store}) => {
 		// add instructions to cut two from main fabric
 		store.cutlist.addCut()
-		// add instructions to cut four on the biad from lining
+		// add instructions to cut four on the bias from lining
 		store.cutlist.addCut({cut: 4, material: 'lining', bias: true, })
 		return part
 	}

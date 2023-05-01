@@ -112,9 +112,9 @@ export const getChoices = async () => {
           ).name
 
     // check whether a folder with that name already exists
-    config.dest = join(cwd, name)
+    const dest = join(cwd, name)
     try {
-      const dir = await opendir(config.dest)
+      const dir = await opendir(dest)
       dir.close()
     } catch {
       // the folder didn't exist, so we're good to go
@@ -219,6 +219,7 @@ const copyPackageJson = async (config, choices) => {
     name: choices.name,
     tag: config.tag,
     dependencies: config.templateData.dependencies,
+    includeTests: choices.includeTests,
   })
 }
 
@@ -299,7 +300,8 @@ const copyAll = async (config, choices) => {
   // Copy shared files
   promises = promises.concat(
     config.relativeFiles.shared.map((from) => {
-      copyFileOrTemplate(config.source.shared, config.dest, from)
+      if (choices.includeTests || !from.match(/e2e|playwright/))
+        copyFileOrTemplate(config.source.shared, config.dest, from)
     })
   )
 
@@ -412,6 +414,7 @@ const showTips = (config, choices) => {
 
 // Creates the environment based on the user's choices
 export const createEnvironment = async (choices) => {
+  config.dest = join(process.cwd(), choices.name)
   // Store directories for re-use
   config.source = {
     templateData: join(newDesignDir, `templates/from-${choices.template}.mjs`),

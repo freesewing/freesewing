@@ -1,0 +1,81 @@
+name: Test new-design
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - develop
+jobs:
+  shared_setup:
+    runs-on: ubuntu-latest
+    outputs:
+      files: ${{ steps.diff.outputs.files }}
+    steps:
+    - name: Fetch PR base ref
+      uses: actions/checkout@v3
+      with:
+        ref: ${{ github.base_ref }}
+    - name: Checkout PR ref
+      uses: actions/checkout@v3
+      with:
+        ref: ${{ github.ref }}
+    - name: Diff for relevant files
+      id: diff
+      run: echo "files=$(git diff --shortstat origin/${{github.base_ref}} sites/shared sites/lab/components packages/new-design packages/core plugins)" >> "$GITHUB_OUTPUT"
+    - uses: actions/setup-node@v3
+      if: steps.diff.outputs.files
+      with:
+        node-version: 18
+    - name: Cache node modules
+      uses: actions/cache@v3
+      if: steps.diff.outputs.files
+      id: cache_node_modules
+      with:
+        # caching node_modules
+        path: '**/node_modules'
+        key: node_modules-${{ hashFiles('yarn.lock') }}
+        lookup-only: true
+    - name: Install dependencies
+      if: steps.diff.outputs.files && steps.cache_node_modules.outputs.cache-hit != 'true'
+      run: npx lerna bootstrap
+      env:
+        CI: true
+
+  test:
+    if: needs.shared_setup.outputs.files
+    needs: shared_setup
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        template:
+          - scratch
+          - tutorial
+          - bent
+    steps:
+    - name: Checkout PR ref
+      uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 18
+    - name: Cache node modules
+      uses: actions/cache/restore@v3
+      id: cache_node_modules
+      with:
+        # caching node_modules
+        path: '**/node_modules'
+        key: node_modules-${{ hashFiles('yarn.lock') }}
+    - name: Prebuild i18n
+      run: yarn i18n-only
+      working-directory: ./packages/new-design
+    - name: Generate Design
+      run: |
+        cd ../
+        TEMPLATE=${{ matrix.template }} NAME=test${{ matrix.template }} node ${{ github.workspace }}/packages/new-design/scripts/generate-from-cli.mjs
+    - name: Install Playwright Browsers
+      run: yarn playwright install --with-deps
+      working-directory: ../test${{ matrix.template }}
+    - name: Run Playwright tests
+      run: yarn playwright test
+      working-directory: ../test${{ matrix.template }}

@@ -44,7 +44,7 @@
  *  how custom layouts are supported in the core. And I would like to discuss this with the core team.
  */
 import { useRef, useState, useEffect } from 'react'
-import { generateStackTransform } from '@freesewing/core'
+import { generateStackTransform, getTransformedBounds } from '@freesewing/core'
 import { Part } from '../../draft/part.mjs'
 import { getProps, angle } from '../../draft/utils.mjs'
 import { drag } from 'd3-drag'
@@ -108,9 +108,9 @@ export const Stack = (props) => {
     const transforms = generateStackTransform(translateX, translateY, rotation, flipX, flipY, stack)
 
     const me = select(stackRef.current)
-    for (var t in transforms) {
-      me.attr(t, transforms[t])
-    }
+    me.attr('transform', transforms.join(' '))
+
+    return transforms
   }
 
   let didDrag = false
@@ -176,22 +176,11 @@ export const Stack = (props) => {
     /** don't mess with what we don't lay out */
     if (!stackRef.current || props.isLayoutPart) return
 
-    // set the transforms on the part in order to calculate from the latest position
-    setTransforms()
+    // set the transforms on the stack in order to calculate from the latest position
+    const transforms = setTransforms()
 
-    // get the bounding box and the svg's current transform matrix
-    const stackRect = innerRef.current.getBoundingClientRect()
-    const matrix = innerRef.current.ownerSVGElement.getScreenCTM().inverse()
-
-    // a function to convert dom space to svg space
-    const domToSvg = (point) => {
-      const { x, y } = DOMPointReadOnly.fromPoint(point).matrixTransform(matrix)
-      return { x, y }
-    }
-
-    // include the new top left and bottom right to ease calculating the pattern width and height
-    const tl = domToSvg({ x: stackRect.left, y: stackRect.top })
-    const br = domToSvg({ x: stackRect.right, y: props.isLayoutPart ? 0 : stackRect.bottom })
+    // apply the transforms to the bounding box to get the new extents of the stack
+    const { tl, br } = getTransformedBounds(stack, transforms)
 
     // update it on the draft component
     props.updateLayout(
