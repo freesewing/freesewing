@@ -1,4 +1,3 @@
-import { pluginCutlist } from '@freesewing/plugin-cutlist'
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { shortsleeve } from './shortsleeve.mjs'
 
