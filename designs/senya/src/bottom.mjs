@@ -140,7 +140,7 @@ export const bottom = {
   measurements: ['waistToHips'],
   options: {
     lengthBonus: { pct: 110, min: 90, max: 120, menu: 'style' },
-    circleRatio: { pct: 50, min: 20, max: 100, menu: 'style' },
+    circleRatio: { pct: 50, min: 20, max: 90, menu: 'style' },
     hemWidth: { pct: 10, min: 5, max: 15, menu: 'construction' },
   },
   draft: senyaBottom,
