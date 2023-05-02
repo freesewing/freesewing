@@ -435,7 +435,7 @@ export const fbaFront = {
       list: ['even', 'split', 'disabled'],
       menu: 'style.closure',
     },
-    lengthBonus: { pct: 25, min: -4, max: 60 },
+    lengthBonus: { pct: 25, min: -4, max: 60, menu: 'fit' },
   },
   draft: simoneFbaFront,
 }

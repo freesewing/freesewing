@@ -40,7 +40,7 @@ export const chestShaping = { pct: 30, min: 0, max: 100, menu: 'advanced' }
 export const rollLineCollarHeight = { pct: 6, min: 5, max: 9, menu: 'collar' }
 export const buttonLength = { pct: 30, min: 30, max: 60, menu: 'style' }
 export const buttons = { list: ['1', '2', '3'], dflt: '2', menu: 'style' }
-export const lengthBonus = { pct: 19, min: 10, max: 25 }
+export const lengthBonus = { pct: 19, min: 10, max: 25, menu: 'fit' }
 
 // Constants
 export const chestShapingMax = 5
