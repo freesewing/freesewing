@@ -226,6 +226,7 @@ Getting it just right is one of those things you'll end up cherishing each time 
 </Tip>
 
 ## Step 10: Construct the fly
+
 ### Close the fly extension and serge
 
 Fold the fly extension on its fold line with good sides together.
