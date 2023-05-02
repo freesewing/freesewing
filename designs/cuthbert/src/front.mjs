@@ -45,8 +45,6 @@ function draftFront({
 
   points.topRightTaperStart = new Point(topRightTaperStartX, 0)
 
-  //
-  //let sideTopHeight = (frontHeight - options.strapWidth) * options.frontSideStartRatio
   let sideTopHeight = (frontHeight - sideHeight) * options.frontSideStartRatio
 
   // If 1 pleats, it's just a single piece of fabric
@@ -75,18 +73,6 @@ function draftFront({
   )
 
   store.set('bottomrRightTaperStartX', points.bottomRightTaperStart.x)
-
-  // Construct Seam
-
-  paths.frontSeam = new Path()
-    .move(points.leftBottom)
-    .line(points.bottomRightTaperStart)
-    ._curve(points.bottomRightTaperCp, points.rightSideBottom)
-    .line(points.rightSideTop)
-    ._curve(points.topRightTaperCp, points.topRightTaperStart)
-    .line(points.top)
-    .close()
-    .addClass('fabric')
 
   // Construct Seam
 
@@ -151,35 +137,43 @@ function draftFront({
 
   if (complete) {
     if (options.frontPleats > 1) {
-      paths.pleatTargets = new Path()
-      paths.pleatFolds = new Path()
-      paths.pleatNextPleatTops = new Path()
-      //paths.foldText = new Path()
-
       for (let curPleat = 1; curPleat < options.frontPleats; curPleat++) {
-        // Start Pleat
+        let pleatTargetPathName = 'pleatTarget' + curPleat
+        let pleatNextTopPathName = 'pleatNextTop' + curPleat
+        let pleatFoldPathName = 'pleatFold' + curPleat
 
-        // Fold To
         let curPleatFoldTargetY =
           (curPleat - 1) * 3 * pleatHeight + pleatHeight + points.rightSideTop.y //
         let curPleatFoldLineY = curPleatFoldTargetY + pleatHeight
         let nextPleatTopLineY = curPleatFoldLineY + pleatHeight
 
-        paths.pleatTargets
+        paths[pleatTargetPathName] = new Path()
+        paths[pleatNextTopPathName] = new Path()
+        paths[pleatFoldPathName] = new Path()
+
+        paths[pleatTargetPathName]
           .move(new Point(0, curPleatFoldTargetY))
           .line(new Point(frontWidth, curPleatFoldTargetY))
-        paths.pleatFolds
+          .addClass('note')
+
+        paths[pleatFoldPathName]
           .move(new Point(0, curPleatFoldLineY))
           .line(new Point(frontWidth, curPleatFoldLineY))
-        //paths.pleatFoldText.move( new Point(0,curPleatFoldLineY)).addText('fold','center')
-        paths.pleatNextPleatTops
+          .addClass('mark dashed')
+
+        paths[pleatNextTopPathName]
           .move(new Point(0, nextPleatTopLineY))
           .line(new Point(frontWidth, nextPleatTopLineY))
-      }
+          .addClass('contrast dotted')
 
-      paths.pleatTargets.addClass('note')
-      paths.pleatFolds.addClass('mark dashed')
-      paths.pleatNextPleatTops.addClass('contrast dotted')
+        macro('banner', {
+          path: paths[pleatFoldPathName],
+          text: 'fold',
+          dy: 0,
+          repeat: 50,
+          className: 'text-xs italic',
+        })
+      }
 
       points.basteStart = points.rightSideTop.translate(frontWidth * -0.025, 0)
       points.basteEnd = points.rightSideBottom.translate(frontWidth * -0.025, 0)
