@@ -26,3 +26,13 @@ export const frontInset = { pct: 15, min: 10, max: 20, menu: 'advanced' }
 export const shoulderInset = { pct: 10, min: 0, max: 20, menu: 'advanced' }
 export const neckInset = { pct: 5, min: 0, max: 10, menu: 'advanced' }
 export const pocketAngle = { deg: 5, min: 0, max: 5, menu: 'advanced' }
+
+// Hide inherited options
+export const bicepsEase = { pct: 15, min: 0, max: 50, menu: false }
+export const collarEase = { pct: 5, min: 0, max: 10, menu: false }
+export const cuffEase = { pct: 20, min: 0, max: 200, menu: false }
+export const shoulderEase = { pct: 0, min: -2, max: 6, menu: false }
+export const s3Armhole = { pct: 0, min: -100, max: 100, menu: false }
+export const s3Collar = { pct: 0, min: -100, max: 100, menu: false }
+export const shoulderSlopeReduction = { pct: 0, min: 0, max: 80, menu: false }
+export const backNeckCutout = { pct: 5, min: -2, max: 8, menu: false }
