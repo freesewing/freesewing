@@ -2859,13 +2859,6 @@
   resolved "https://registry.yarnpkg.com/@next/env/-/env-13.3.4.tgz#419bc4aaf67dff0060abcfb0ca097acb23e17a77"
   integrity sha512-oTK/wRV2qga86m/4VdrR1+/56UA6U1Qv3sIgowB+bZjahniZLEG5BmmQjfoGv7ZuLXBZ8Eec6hkL9BqJcrEL2g==
 
-"@next/eslint-plugin-next@13.3.1":
-  version "13.3.1"
-  resolved "https://registry.yarnpkg.com/@next/eslint-plugin-next/-/eslint-plugin-next-13.3.1.tgz#aa08601f1fec5e1ffbb5850761585734f110345a"
-  integrity sha512-Hpd74UrYGF+bq9bBSRDXRsRfaWkPpcwjhvachy3sr/R/5fY6feC0T0s047pUthyqcaeNsqKOY1nUGQQJNm4WyA==
-  dependencies:
-    glob "7.1.7"
-
 "@next/eslint-plugin-next@13.3.4":
   version "13.3.4"
   resolved "https://registry.yarnpkg.com/@next/eslint-plugin-next/-/eslint-plugin-next-13.3.4.tgz#0f1092d89b0801dbe99fc7e712f9bf1d835431a3"
@@ -8221,27 +8214,12 @@ escodegen@^2.0.0:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-next@13.3.4:
+eslint-config-next@13.3.4, eslint-config-next@^13.0.6:
   version "13.3.4"
   resolved "https://registry.yarnpkg.com/eslint-config-next/-/eslint-config-next-13.3.4.tgz#3243b19e48e76b5388917f27c9cd3f793ef381d6"
   integrity sha512-TknEcP+EdTqLvJ2zMY1KnWqcx8ZHl1C2Tjjbq3qmtWcHRU5oxe1PAsz3vrKG3NOzonSaPcB2SpCSfYqcgj6nfA==
   dependencies:
     "@next/eslint-plugin-next" "13.3.4"
-    "@rushstack/eslint-patch" "^1.1.3"
-    "@typescript-eslint/parser" "^5.42.0"
-    eslint-import-resolver-node "^0.3.6"
-    eslint-import-resolver-typescript "^3.5.2"
-    eslint-plugin-import "^2.26.0"
-    eslint-plugin-jsx-a11y "^6.5.1"
-    eslint-plugin-react "^7.31.7"
-    eslint-plugin-react-hooks "^4.5.0"
-
-eslint-config-next@^13.0.6:
-  version "13.3.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-next/-/eslint-config-next-13.3.1.tgz#a4441b9b8a708383e9444492c21bab0099851d90"
-  integrity sha512-DieA5djybeE3Q0IqnDXihmhgRSp44x1ywWBBpVRA9pSx+m5Icj8hFclx7ffXlAvb9MMLN6cgj/hqJ4lka/QmvA==
-  dependencies:
-    "@next/eslint-plugin-next" "13.3.1"
     "@rushstack/eslint-patch" "^1.1.3"
     "@typescript-eslint/parser" "^5.42.0"
     eslint-import-resolver-node "^0.3.6"
