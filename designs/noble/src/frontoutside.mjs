@@ -22,6 +22,7 @@ function nobleFrontOutside({
   delete points.bustDartCpBottom
   delete points.bustB
   delete points.bustDartEdge
+  macro('cutonfold', false)
 
   if (options.dartPosition == 'shoulder') {
     paths.princessSeam = new Path()
@@ -65,6 +66,16 @@ function nobleFrontOutside({
       .attr('class', 'fabric')
   }
 
+  points.grainTop = points.armhole.shift(225, 20)
+  points.grainBottom = points.sideHemInitial.shift(135, 20)
+  macro('grainline', {
+    from: points.grainBottom,
+    to: points.grainTop,
+  })
+
+  store.cutlist.removeCut()
+  store.cutlist.addCut()
+
   if (complete) {
     points.snippet = paths.princessSeam.shiftAlong(
       paths.princessSeam.length() - store.get('shoulderDartTipNotch')
@@ -78,13 +89,6 @@ function nobleFrontOutside({
       at: points.titleAnchor,
       nr: 2,
       title: 'Outside Front',
-    })
-    points.grainTop = points.armhole.shift(225, 20)
-    points.grainBottom = points.sideHemInitial.shift(135, 20)
-
-    macro('grainline', {
-      from: points.grainBottom,
-      to: points.grainTop,
     })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
