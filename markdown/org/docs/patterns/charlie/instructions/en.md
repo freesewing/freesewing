@@ -198,7 +198,7 @@ When you're done, press open the inseam.
 
 Double check that your right and left legs match the pattern markings. The right leg's crotch should extend slightly beyond the left. Refer to the pattern and cut excess on the left leg if necessary.
 
-It can be valuable to mark with chalk or a running stitch the **Center Front** on each leg. This will help you make sure the peices are in the right place duing fly construction.
+It can be valuable to mark with chalk or thread mark the **Center Front** on each leg. This will help you make sure the peices are in the right place duing fly construction.
 
 </tip>
 
