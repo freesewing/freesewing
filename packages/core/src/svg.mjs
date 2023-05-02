@@ -1,4 +1,5 @@
 import { Attributes } from './attributes.mjs'
+import { Defs } from './defs.mjs'
 import { __addNonEnumProp, round } from './utils.mjs'
 import { version } from '../data.mjs'
 
@@ -31,7 +32,7 @@ export function Svg(pattern) {
   this.layout = {}
   this.body = ''
   this.style = ''
-  this.defs = ''
+  this.defs = new Defs()
 }
 
 //////////////////////////////////////////////
@@ -215,7 +216,7 @@ Svg.prototype.__renderCircle = function (point) {
 Svg.prototype.__renderDefs = function () {
   let svg = '<defs>'
   this.__indent()
-  svg += this.__nl() + this.defs
+  svg += this.__nl() + this.defs.render()
   this.__outdent()
   svg += this.__nl() + '</defs>' + this.__nl()
 
