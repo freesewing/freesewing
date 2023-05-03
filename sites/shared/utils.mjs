@@ -180,7 +180,7 @@ export const optionsMenuStructure = (options) => {
   if (!options) return options
   const sorted = {}
   for (const [name, option] of Object.entries(options)) {
-    sorted[name] = { ...option, name }
+    if (typeof option === 'object') sorted[name] = { ...option, name }
   }
 
   const menu = {}
