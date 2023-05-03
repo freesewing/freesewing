@@ -611,25 +611,28 @@ const options = {
     pct: 90,
     min: 75,
     max: 125,
-    menu: ({ options }) => (options.type == 'octoplushy' ? 'style' : false),
+    menu: 'style',
+    hide: ({ options }) =>
+      options === undefined || options?.type === undefined || options === 'octoplushy',
   },
   bottomArmReductionPlushy: {
     pct: 80,
     min: 75,
     max: 125,
-    menu: ({ options }) => (options.type != 'octoplushy' ? 'style' : false),
+    menu: 'style',
+    hide: ({ options }) => options?.type === 'squid' || options?.type === 'octopus',
   },
 }
 
 export const headSection1 = {
   name: 'octoplushy.headSection1',
   options,
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: (params) => octoplushyHeadSection(0, params),
 }
 export const headSection2 = {
   name: 'octoplushy.headSection2',
   options,
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: (params) => octoplushyHeadSection(1, params),
 }
