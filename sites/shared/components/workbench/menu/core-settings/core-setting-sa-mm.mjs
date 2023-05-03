@@ -26,8 +26,6 @@ export const CoreSettingSaMm = (props) => {
   const handleChange = (evt) => {
     const newVal = parseFloat(evt.target.value)
 
-    setValue(stepVal)
-
     setValue(newVal)
     if (props.gist.saBool)
       props.setGist({
