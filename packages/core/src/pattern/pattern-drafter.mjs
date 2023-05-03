@@ -113,7 +113,8 @@ PatternDrafter.prototype.__createPartForSet = function (partName, set = 0) {
   }
   // Create parts
   this.activeStore.log.debug(`📦 Creating part \`${partName}\` (set ${set})`)
-  this.pattern.parts[set][partName] = this.__createPartWithContext(partName, set)
+  this.pattern.parts[set][partName] =
+    this.pattern.parts[set][partName] || this.__createPartWithContext(partName, set)
 
   // Handle inject/inheritance
   const parent = this.pattern.config.inject[partName]
