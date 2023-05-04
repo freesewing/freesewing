@@ -44,6 +44,8 @@ function draftBindingLeg({
     .line(points.p2.shiftFractionTowards(points.p1, 0.5))
     .addClass('dashed')
 
+  store.cutlist.addCut({ material: 'fabric', cut: 2 })
+
   // Complete?
   if (complete) {
     points.logo = points.p0.shiftFractionTowards(points.p2, 0.5)
@@ -76,7 +78,6 @@ function draftBindingLeg({
       x: points.p3.x + sa + 15,
     })
   }
-  store.cutlist.addCut({ material: 'fabric', cut: 2 })
 
   return part
 }

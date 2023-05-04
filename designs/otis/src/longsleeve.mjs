@@ -58,6 +58,8 @@ function draftLongsleeve({
     to: points.p1,
   })
 
+  // store.cutlist.addCut({ material: 'fabric', cut: 2 })
+
   // Complete?
   if (complete) {
     points.logo = points.p0.shiftFractionTowards(points.p2, 0.5)
@@ -119,8 +121,6 @@ function draftLongsleeve({
   if (options.sleeveType != 'long') {
     part.hide()
   }
-
-  store.cutlist.addCut({ material: 'fabric', cut: 2 })
 
   return part
 }

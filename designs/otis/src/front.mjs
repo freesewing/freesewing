@@ -84,6 +84,8 @@ function draftFront({
     to: points.p0,
   })
 
+  store.cutlist.addCut({ material: 'fabric', cut: 1 })
+
   // Complete?
   if (complete) {
     points.logo = points.p0.shiftFractionTowards(points.p3, 0.5)
@@ -160,8 +162,6 @@ function draftFront({
       x: points.p6.x + 15,
     })
   }
-
-  store.cutlist.addCut({ material: 'fabric', cut: 1 })
 
   return part
 }

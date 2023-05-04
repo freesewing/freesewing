@@ -35,13 +35,13 @@ There are two ways to do the bindings. You can use it like double-folded bias bi
 
 ## Step 2: Attach body parts
 
-  - Lay the back and front parts with the _good sides up_, tops facing eachother.
+  - Lay the back and front parts with the _good sides up_, tops facing each other.
   - Lay the front part shoulders on top of the back part shoulders, aligning the notches on the left and right.
   - Baste or pin together.
 
 ## Step 3: Attach sleeves
 
-  - Mark the middle of the should of each sleeve.
+  - Mark the middle of the shoulder of each sleeve.
   - Pin the sleeve to the two body parts, aligning the middle of the sleeve with the shoulder notch.
   - Distribute the sleeve evenly along the opening.
   - Sew the pieces together.

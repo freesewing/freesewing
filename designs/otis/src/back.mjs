@@ -85,6 +85,8 @@ function draftBack({
   )
   store.set('SnapPlacketWidth', points.p6.dist(points.p7))
 
+  store.cutlist.addCut({ material: 'fabric', cut: 1 })
+
   // Complete?
   if (complete) {
     points.logo = points.p0.shiftFractionTowards(points.p3, 0.5)
@@ -161,8 +163,6 @@ function draftBack({
       x: points.p7.x + 15,
     })
   }
-
-  store.cutlist.addCut({ material: 'fabric', cut: 1 })
 
   return part
 }

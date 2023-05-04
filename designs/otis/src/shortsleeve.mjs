@@ -63,6 +63,8 @@ function draftShortsleeve({
     to: points.p1,
   })
 
+  store.cutlist.addCut({ material: 'fabric', cut: 2 })
+
   // Complete?
   if (complete) {
     points.logo = points.p0.shiftFractionTowards(points.p2, 0.5)
@@ -124,8 +126,6 @@ function draftShortsleeve({
   if (options.sleeveType != 'short') {
     part.hide()
   }
-
-  store.cutlist.addCut({ material: 'fabric', cut: 2 })
 
   return part
 }
