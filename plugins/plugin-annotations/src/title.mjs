@@ -32,19 +32,26 @@ const titleMacro = function (so, { points, scale, locale, store, part }) {
     scale: 1,
     rotation: 0,
     cutlist: true,
+    align: 'left',
   }
 
   so = { ...defaults, ...so }
   so.scale = so.scale * scale
 
+  const validAlignments = ['left', 'right', 'center']
+  const alignment = validAlignments.includes(so.align) ? ' ' + so.align : ' left'
+
   points[`_${prefix}_titleNr`] = so.at
     .clone()
     .attr('data-text', so.nr, overwrite)
-    .attr('data-text-class', 'text-4xl fill-note font-bold')
+    .attr('data-text-class', 'text-4xl fill-note font-bold' + alignment)
     .attr('data-text-transform', transform(so.at))
 
   if (so.title) {
-    points[`_${prefix}_titleName`] = nextPoint(so.title, 'text-lg fill-current font-bold')
+    points[`_${prefix}_titleName`] = nextPoint(
+      so.title,
+      'text-lg fill-current font-bold' + alignment
+    )
     shift += 8
   }
 
@@ -59,7 +66,7 @@ const titleMacro = function (so, { points, scale, locale, store, part }) {
       // each set of instructions
       partCutlist.materials[material].forEach(({ cut, identical, bias, ignoreOnFold }, c) => {
         // make a new point for this set of instructions
-        const cutPoint = nextPoint('plugin:cut', 'text-md fill-current').addText(cut)
+        const cutPoint = nextPoint('plugin:cut', 'text-md fill-current' + alignment).addText(cut)
 
         // if they're not identical, add that to the point's text
         if (!identical && cut > 1) cutPoint.addText('plugin:mirrored')
@@ -83,11 +90,14 @@ const titleMacro = function (so, { points, scale, locale, store, part }) {
   let name = store.data?.name || 'No Name'
   name = name.replace('@freesewing/', '')
   name += ' v' + (store.data?.version || 'No Version')
-  points[`_${prefix}_titlePattern`] = nextPoint(name, 'fill-note')
+  points[`_${prefix}_titlePattern`] = nextPoint(name, 'fill-note' + alignment)
 
   if (store.data.for) {
     shift += 8
-    points[`_${prefix}_titleFor`] = nextPoint(`( ${store.data.for} )`, 'fill-current font-bold')
+    points[`_${prefix}_titleFor`] = nextPoint(
+      `( ${store.data.for} )`,
+      'fill-current font-bold' + alignment
+    )
   }
   shift += 6
   const now = new Date()
@@ -101,7 +111,10 @@ const titleMacro = function (so, { points, scale, locale, store, part }) {
     month: 'short',
     day: 'numeric',
   })
-  points[`_${prefix}_exportDate`] = nextPoint(`${exportDate}@ ${hours}:${mins}`, 'text-sm')
+  points[`_${prefix}_exportDate`] = nextPoint(
+    `${exportDate}@ ${hours}:${mins}`,
+    'text-sm' + alignment
+  )
 }
 
 // Export macros
