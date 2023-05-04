@@ -109,7 +109,7 @@ module.exports = {
   '--pattern-text-3xl': '2rem',
   '--pattern-text-4xl': '3rem',
 
-  '--pattern-scale': '1',
+  // '--pattern-scale': '1',
   '--pattern-stroke-xs': '0.2px',
   '--pattern-stroke-sm': '0.4px',
   '--pattern-stroke': '0.7px',

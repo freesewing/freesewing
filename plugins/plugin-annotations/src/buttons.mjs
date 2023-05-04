@@ -2,8 +2,9 @@
 export const buttonsDefs = [
   {
     name: 'button',
-    def: `
-<g id="button">
+    def: (scale) => `
+<g id="button"
+transform="scale(${scale})">
   <circle
     cx="0" cy="0" r="3.4"
     class="mark"
@@ -16,8 +17,9 @@ export const buttonsDefs = [
   },
   {
     name: 'buttonhole',
-    def: `
-<g id="buttonhole">
+    def: (scale) => `
+<g id="buttonhole"
+transform="scale(${scale})">
   <path
     class="mark"
     d="M -1,-5 L 1,-5 L 1,5 L -1,5 z"
@@ -26,8 +28,9 @@ export const buttonsDefs = [
   },
   {
     name: 'buttonhole-start',
-    def: `
-<g id="buttonhole-start">
+    def: (scale) => `
+<g id="buttonhole-start"
+transform="scale(${scale})">
   <path
     class="mark"
     d="M -1,-10 L 1,-10 L 1,0 L -1,0 z"
@@ -36,8 +39,9 @@ export const buttonsDefs = [
   },
   {
     name: 'buttonhole-end',
-    def: `
-<g id="buttonhole-end">
+    def: (scale) => `
+<g id="buttonhole-end"
+transform="scale(${scale})">
   <path
     class="mark"
     d="M -1,0 L 1,0 L 1,10 L -1,10 z"
@@ -46,16 +50,18 @@ export const buttonsDefs = [
   },
   {
     name: 'snap-stud-grad',
-    def: `
-<radialGradient id="snap-stud-grad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+    def: (scale) => `
+<radialGradient id="snap-stud-grad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%"
+transform="scale(${scale})">
   <stop offset="30%" style="stop-color:rgb(235,235,235); stop-opacity:1"/>
   <stop offset="80%" style="stop-color:rgb(100,100,100);stop-opacity:1" />
 </radialGradient>`,
   },
   {
     name: 'snap-stud',
-    def: `
-<g id="snap-stud">
+    def: (scale) => `
+<g id="snap-stud"
+transform="scale(${scale})">
   <circle id="snap-stud-circle-edge" cx="0" cy="0" r="3.4"
     style="stroke:#666;fill:#dddddd;stroke-width:0.3;"
   />
@@ -70,8 +76,9 @@ export const buttonsDefs = [
   },
   {
     name: 'snap-socket',
-    def: `
-<g id="snap-socket">
+    def: (scale) => `
+<g id="snap-socket"
+transform="scale(${scale})">
   <circle id="snap-socket-circle-edge" cx="0" cy="0" r="3.4"
     style="stroke:#666;fill:#bbbbbb;stroke-width:0.3;"
   />

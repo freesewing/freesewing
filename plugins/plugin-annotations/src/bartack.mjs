@@ -58,7 +58,9 @@ function createBartack(so, props) {
   }
   so = { ...defaults, ...so }
 
-  const { Path, paths } = props
+  const { Path, paths, scale } = props
+
+  so.width *= scale
 
   // Handle negative angle
   if (so.angle < 0) so.angle = 360 + (so.angle % -360)

@@ -241,7 +241,7 @@ module.exports = {
   '--pattern-text-4xl': '3rem',
 
   // Pattern overal scale for strokes and text sizes
-  '--pattern-scale': '1',
+  // '--pattern-scale': '1',
   // Pattern xs stroke width
   '--pattern-stroke-xs': '0.2px',
   // Pattern sm stroke width

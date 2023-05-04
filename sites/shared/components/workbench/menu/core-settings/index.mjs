@@ -33,7 +33,7 @@ export const settings = {
   },
   scale: {
     min: 0.1,
-    max: 5,
+    max: 1,
     dflt: 1,
   },
   renderer: {
