@@ -49,7 +49,7 @@ const titleMacro = function (so, { points, scale, locale, store, part }) {
   }
 
   // Cut List instructions
-  const partCutlist = store.get(['cutlist', part.name])
+  const partCutlist = store.get(['cutlist', part.name], null)
   // if there's a cutlist and it should be included
   if (so.cutlist && partCutlist?.materials) {
     // get the default cutonfold
