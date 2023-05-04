@@ -38,21 +38,7 @@ export const options = {
 }
 
 export function BuildMainShape(
-  {
-    sa,
-    options,
-    measurements,
-    optionalMeasurements,
-    Point,
-    Path,
-    points,
-    paths,
-    store,
-    paperless,
-    macro,
-    part,
-    log,
-  },
+  { sa, options, measurements, Point, Path, points, paths, store, paperless, macro, part, log },
   frontPart
 ) {
   let skirtLength = measurements.waistToKnee * (1 + options.lengthBonus) // + options.hem;
