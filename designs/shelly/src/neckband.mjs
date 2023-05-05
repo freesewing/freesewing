@@ -1,6 +1,4 @@
-import * as shared from './shared.mjs'
 import { pluginBundle } from '@freesewing/plugin-bundle'
-import { pluginAnnotations } from '@freesewing/plugin-annotations'
 
 function draftNeckband({
   Path,
@@ -18,29 +16,36 @@ function draftNeckband({
   snippets,
   Snippet,
 }) {
-  let adjustedNeckCircumference = measurements.neck * (1 + options.neckEase)
-  let neckbandLength = options.neckbandLength * adjustedNeckCircumference
-  let neckbandWidth = 2 * (options.neckbandWidth * adjustedNeckCircumference)
+  const neckbandLength = store.get('neckRadius') * 2 * Math.PI * options.neckbandLength
+  const neckbandWidth = 2 * (options.neckbandWidth * measurements.neck)
 
   points.topLeftCorner = new Point(0, 0)
   points.bottomLeftCorner = new Point(0, neckbandWidth)
   points.bottomRightCorner = new Point(neckbandLength / 2, neckbandWidth)
   points.topRightCorner = new Point(neckbandLength / 2, 0)
 
-  paths.neckbandSA = new Path()
+  points.leftCenter = new Point(0, neckbandWidth / 2)
+  points.rightCenter = new Point(neckbandLength / 2, neckbandWidth / 2)
+
+  paths.saBase = new Path()
     .move(points.bottomLeftCorner)
     .line(points.bottomRightCorner)
     .line(points.topRightCorner)
     .line(points.topLeftCorner)
     .attr('class', 'fabric')
-    .setHidden(true)
+    .hide(true)
 
-  paths.neckbandNone = new Path()
-    .move(points.topLeftCorner)
-    .line(points.bottomLeftCorner)
-    .setHidden(true)
+  paths.foldBase = new Path().move(points.topLeftCorner).line(points.bottomLeftCorner).hide(true)
 
-  paths.seam = paths.neckbandSA.join(paths.neckbandNone).close().attr('class', 'fabric')
+  paths.foldLine = new Path()
+    .move(points.leftCenter)
+    .line(points.rightCenter)
+    .attr('class', 'various dashed')
+    .attr('data-text', 'Fold Line')
+    .attr('data-text-class', 'center')
+    .hide(false)
+
+  paths.seam = paths.saBase.join(paths.foldBase).close().attr('class', 'fabric')
 
   if (paperless) {
     macro('vd', {
@@ -54,11 +59,12 @@ function draftNeckband({
       y: -(sa + 15),
     })
   }
-
   if (complete) {
+    points.cutonfoldFrom = points.topLeftCorner
+    points.cutonfoldTo = points.bottomLeftCorner
     macro('cutonfold', {
-      from: points.topLeftCorner,
-      to: points.bottomLeftCorner,
+      from: points.cutonfoldFrom,
+      to: points.cutonfoldTo,
       grainline: true,
     })
 
@@ -66,22 +72,25 @@ function draftNeckband({
     macro('title', { at: points.title, nr: 4, title: 'neckband' })
 
     if (sa) {
-      paths.sa = paths.neckbandSA.offset(sa).close().attr('class', 'fabric sa')
+      paths.sa = new Path()
+        .move(points.bottomLeftCorner)
+        .join(paths.saBase.offset(sa))
+        .line(points.topLeftCorner)
+        .attr('class', 'fabric sa')
     }
   }
-
   return part
 }
 
 export const neckband = {
   name: 'shelly.neckband',
-  plugins: [pluginBundle, pluginAnnotations],
+  plugins: [pluginBundle],
   draft: draftNeckband,
   measurements: ['neck', 'chest', 'biceps', 'wrist'],
   options: {
     // How long the neckband should be, as a percentage of the length of the neck hole.
     neckbandLength: { pct: 80, min: 50, max: 100, menu: 'fit' },
     // How wide the neckband should be, as a percentage of the neckband length.
-    neckbandWidth: { pct: 7.5, min: 0, max: 30, menu: 'fit' },
+    neckbandWidth: { pct: 7.5, min: 0, max: 50, menu: 'fit' },
   },
 }

@@ -1,6 +1,5 @@
-import * as shared from './shared.mjs'
 import { pluginBundle } from '@freesewing/plugin-bundle'
-import { pluginAnnotations } from '@freesewing/plugin-annotations'
+import { base } from './base.mjs'
 
 function draftBack({
   utils,
@@ -19,190 +18,87 @@ function draftBack({
   snippets,
   Snippet,
 }) {
-  let adjustedChest = measurements.chest * (1 + options.chestEase)
-  // Reduce the chest measurement by the horizontal size of the raglan scoop, since the scoop is generated outwards and will add to the chest width.
-  adjustedChest -= 4 * (options.raglanScoopMagnitude * measurements.hpsToBust)
-  let adjustedNeckRadius = (measurements.neck * (1 + options.neckEase)) / (2 * Math.PI)
-  let adjustedHips = measurements.hips * (1 + options.hipsEase)
+  const raglanAngle = store.get('raglanAngle')
+  const raglanLength = store.get('raglanLength')
+  const neckRadius = store.get('neckRadius')
 
-  points.raglanCenter = new Point(0, 0)
-  points.neckCenter = points.raglanCenter.shift(270, -options.neckOffset * adjustedNeckRadius)
-
-  points.armpitCorner = new Point(adjustedChest / 4, measurements.hpsToBust)
+  points.neckCenter = points.raglanCenter.shift(270, -options.neckBalance * neckRadius)
 
   points.neckShoulderCorner = utils.beamIntersectsCircle(
     points.neckCenter,
-    adjustedNeckRadius,
+    neckRadius,
     points.raglanCenter,
-    points.armpitCorner
+    points.armholeCorner
   )[1]
 
-  points.bottomCenterCorner = new Point(
-    0,
-    options.bodyLength * (measurements.hpsToWaistBack + measurements.waistToHips)
-  )
-  points.bottomSideCorner = new Point(
-    adjustedHips / 4,
-    options.bodyLength * (measurements.hpsToWaistBack + measurements.waistToHips)
-  )
-  points.neckCenterCorner = points.neckCenter.shift(270, adjustedNeckRadius)
+  points.cfNeck = points.neckCenter.shift(270, neckRadius)
 
-  let raglanAngle = points.neckShoulderCorner.angle(points.armpitCorner)
-  let raglanLength = points.raglanCenter.dist(points.armpitCorner)
-
-  let necklineAngleAtRaglan = points.neckCenterCorner.angle(points.neckShoulderCorner) * 2
-  let necklineArcLength = utils.deg2rad(necklineAngleAtRaglan) * adjustedNeckRadius
-  points.shoulderNeckCp1 = points.neckShoulderCorner.shift(
+  const necklineAngleAtRaglan = points.cfNeck.angle(points.neckShoulderCorner) * 2
+  const necklineArcLength = utils.deg2rad(necklineAngleAtRaglan) * neckRadius
+  points.neckCP1 = points.neckShoulderCorner.shift(
     necklineAngleAtRaglan + 180,
     necklineArcLength / 3
   )
-  points.shoulderNeckCp2 = points.neckCenterCorner.shift(0, necklineArcLength / 3)
+  points.neckCP2 = points.cfNeck.shift(0, necklineArcLength / 3)
 
-  let backNecklineToRaglanAngle = raglanAngle - (necklineAngleAtRaglan + 180)
+  const backNecklineToRaglanAngle = raglanAngle - (necklineAngleAtRaglan + 180)
   store.set('backNecklineToRaglanAngle', backNecklineToRaglanAngle)
-
-  points.armpitCornerScooped = points.armpitCorner.shift(
-    raglanAngle + 90,
-    options.raglanScoopMagnitude * raglanLength
-  )
-  points.armpitScoopCp1 = points.armpitCorner.shift(
-    raglanAngle + 180,
-    0.33333 * options.raglanScoopLength * raglanLength
-  )
-  points.armpitScoopCp2 = points.armpitCorner.shift(
-    raglanAngle + 180,
-    0.66666 * options.raglanScoopLength * raglanLength
-  )
-  points.armpitScoopEnd = points.armpitCorner.shift(
-    raglanAngle + 180,
-    options.raglanScoopLength * raglanLength
-  )
-
-  // Make the side seams vertical if we're making a tubular shirt. Overrides any hips measurements or options.
-  if (options.tubular) points.bottomSideCorner.x = points.armpitCornerScooped.x
-
-  // Make sure that the shirt at least reaches the armpits, to ensure that the full raglan seam can be formed. This code should only trigger if someone tries to make a really, _really_ short shirt.
-  if (points.bottomSideCorner.y < points.armpitCornerScooped.y) {
-    points.bottomSideCorner.y = points.armpitCornerScooped.y
-    points.bottomCenterCorner.y = points.armpitCornerScooped.y
-  }
-
-  let sideAngle = points.bottomSideCorner.angle(points.armpitCornerScooped)
-  let sideLength = points.bottomSideCorner.dist(points.armpitCornerScooped)
-  points.sideCp1 = points.bottomSideCorner
-    .shift(sideAngle, 0.33333 * sideLength)
-    .shift(sideAngle - 90, options.sideShape * sideLength)
-  points.sideCp2 = points.armpitCornerScooped
-    .shift(sideAngle + 180, 0.33333 * sideLength)
-    .shift(sideAngle - 90, options.sideShape * sideLength)
-
-  paths.backSA = new Path()
-    .move(points.bottomSideCorner)
-    .curve(points.sideCp1, points.sideCp2, points.armpitCornerScooped)
-    .curve(points.armpitScoopCp1, points.armpitScoopCp2, points.armpitScoopEnd)
-    .line(points.neckShoulderCorner)
-    .curve(points.shoulderNeckCp1, points.shoulderNeckCp2, points.neckCenterCorner)
-    .setHidden(true)
-
-  paths.backNone = new Path()
-    .move(points.neckCenterCorner)
-    .line(points.bottomCenterCorner)
-    .setHidden(true)
-
-  paths.backHem = new Path()
-    .move(points.bottomCenterCorner)
-    .line(points.bottomSideCorner)
-    .setHidden(true)
-
-  paths.seam = paths.backSA.join(paths.backNone).join(paths.backHem).close().attr('class', 'fabric')
 
   if (paperless) {
     macro('vd', {
-      from: points.neckCenterCorner,
-      to: points.bottomCenterCorner,
+      from: points.cfNeck,
+      to: points.cfHem,
       x: -(15 + sa),
     })
     macro('vd', {
       from: points.neckShoulderCorner,
-      to: points.neckCenterCorner,
+      to: points.cfNeck,
       x: -(15 + sa),
       noStartMarker: true,
       noEndMarker: true,
     })
     macro('vd', {
       from: points.neckShoulderCorner,
-      to: points.bottomCenterCorner,
+      to: points.cfHem,
       x: -(30 + sa),
     })
-    macro('hd', {
-      from: points.bottomCenterCorner,
-      to: points.bottomSideCorner,
-      y: points.bottomSideCorner.y + (sa + 15),
-    })
     macro('vd', {
-      from: points.bottomSideCorner,
-      to: points.armpitCornerScooped,
-      x: Math.max(points.bottomSideCorner.x, points.armpitCornerScooped.x) + (15 + sa),
-    })
-    macro('vd', {
-      from: points.armpitCornerScooped,
+      from: points.armholeCornerScooped,
       to: points.neckShoulderCorner,
-      x: points.armpitCornerScooped.x + (15 + sa),
-    })
-    macro('vd', {
-      from: points.armpitCornerScooped,
-      to: points.armpitScoopEnd,
-      x: points.armpitCornerScooped.x + (30 + sa),
-    })
-    macro('hd', {
-      from: points.armpitScoopEnd,
-      to: points.armpitCornerScooped,
-      y: points.neckShoulderCorner.y - (sa + 15),
+      x: points.armholeCornerScooped.x + (15 + sa),
     })
     macro('hd', {
       from: points.neckShoulderCorner,
-      to: points.armpitScoopEnd,
-      y: points.neckShoulderCorner.y - (sa + 15),
+      to: points.armholeScoopEnd,
+      y: 0 - (sa + 0),
     })
     macro('hd', {
       from: points.neckShoulderCorner,
-      to: points.armpitCornerScooped,
-      y: points.neckShoulderCorner.y - (sa + 30),
+      to: points.armholeCornerScooped,
+      y: 0 - (sa + 15),
     })
     macro('hd', {
-      from: points.neckCenterCorner,
+      from: points.cfNeck,
       to: points.neckShoulderCorner,
-      y: points.neckShoulderCorner.y - (sa + 15),
+      y: 0 - (sa + 15),
       noStartMarker: true,
       noEndMarker: true,
     })
     macro('hd', {
-      from: points.neckCenterCorner,
-      to: points.armpitCornerScooped,
-      y: points.neckShoulderCorner.y - (sa + 45),
+      from: points.cfNeck,
+      to: points.armholeCornerScooped,
+      y: 0 - (sa + 30),
     })
   }
 
   if (complete) {
-    macro('cutonfold', {
-      from: points.neckCenterCorner,
-      to: points.bottomCenterCorner,
-      grainline: true,
-    })
+    snippets.armholeScoopEnd = new Snippet('notch', points.armholeScoopEnd)
 
-    points.title = new Point(points.armpitCorner.x / 2, points.bottomCenterCorner.y / 2)
+    points.title = new Point(
+      points.armholeCorner.x / 2,
+      (points.cfHem.y + points.armholeCornerScooped.y / 2) / 2
+    )
     macro('title', { at: points.title, nr: 2, title: 'back' })
-
-    points.logo = points.title.shift(-90, 70)
-    snippets.logo = new Snippet('logo', points.logo)
-
-    if (sa) {
-      paths.sa = paths.backSA
-        .offset(sa)
-        .join(paths.backHem.offset(sa * options.bodyHem))
-        .close()
-        .attr('class', 'fabric sa')
-    }
   }
 
   return part
@@ -210,7 +106,8 @@ function draftBack({
 
 export const back = {
   name: 'shelly.back',
-  plugins: [pluginBundle, pluginAnnotations],
+  plugins: [pluginBundle],
   draft: draftBack,
+  from: base,
   measurements: ['neck', 'chest', 'hips', 'hpsToBust', 'waistToHips', 'hpsToWaistBack'],
 }
