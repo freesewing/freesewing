@@ -170,6 +170,15 @@ function draftBreannaBack({
   // Anchor point
   points.gridAnchor = points.cbNeck.clone()
 
+  // Grainline
+  const grainlineDistance = (points.armhole.x - points.cbNeck.x) * 0.1
+  macro('grainline', {
+    from: points.cbNeck.shift(0, grainlineDistance),
+    to: points.cbWaist.shift(0, grainlineDistance),
+  })
+
+  store.cutlist.addCut()
+
   // Complete pattern?
   if (complete) {
     // Title

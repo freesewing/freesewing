@@ -2,6 +2,7 @@ import { backPoints } from './backpoints.mjs'
 
 function nobleBackOutside({
   sa,
+  Point,
   points,
   Path,
   paths,
@@ -34,6 +35,20 @@ function nobleBackOutside({
     .close()
     .attr('class', 'fabric')
 
+  points.grainlineFrom = new Point(
+    Math.max(points.shoulderDart.x, points.dartBottomRight.x),
+    points.shoulder.y
+  )
+  points.grainlineTo = new Point(
+    points.grainlineFrom.x,
+    points.waistSide.y - (points.waistSide.y - points.shoulder.y) * 0.4
+  )
+
+  macro('grainline', {
+    from: points.grainlineFrom,
+    to: points.grainlineTo,
+  })
+
   if (complete) {
     snippets.dartTip = new Snippet('notch', points.dartTip)
 
@@ -44,13 +59,6 @@ function nobleBackOutside({
       at: points.titleAnchor,
       nr: 4,
       title: 'Outside Back',
-    })
-    points.grainlineFrom.x = points.shoulderDart.x
-    points.grainlineTo.x = points.shoulderDart.x
-
-    macro('grainline', {
-      from: points.grainlineFrom,
-      to: points.grainlineTo,
     })
 
     if (sa) paths.sa = paths.outsideSeam.offset(sa).attr('class', 'fabric sa')

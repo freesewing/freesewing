@@ -188,7 +188,7 @@ yuri:
 
 backend:
   _:
-    '@aws-sdk/client-sesv2': '3.321.1'
+    '@aws-sdk/client-sesv2': '3.326.0'
     '@prisma/client': &prisma '4.13.0'
     'bcryptjs': '2.4.3'
     'cors': '2.8.5'
@@ -220,7 +220,7 @@ dev:
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': &mdxRuntime '2.0.0-next.9'
-    '@next/bundle-analyzer': &next '13.3.1'
+    '@next/bundle-analyzer': &next '13.3.4'
     '@tailwindcss/typography': &tailwindTypography '0.5.9'
     'algoliasearch': '4.17.0'
     'daisyui': &daisyui '2.51.6'
@@ -334,7 +334,7 @@ org:
 
 sanity:
   _:
-    '@sanity/vision': &sanity '3.9.1'
+    '@sanity/vision': &sanity '3.10.0'
     'react': *react
     'react-dom': *react
     'react-is': *react
@@ -346,7 +346,7 @@ sanity:
     'eslint': *eslint
     'prettier': '2.8.8'
     'typescript': '5.0.4'
-    '@sanity/cli': '3.9.0'
+    '@sanity/cli': '3.10.0'
 
 shared:
   _:
@@ -361,7 +361,7 @@ shared:
     'feed': '4.2.2'
     'file-saver': '2.0.5'
     'front-matter': '4.0.2'
-    'highlight.js': '11.7.0'
+    'highlight.js': '11.8.0'
     'lodash.clonedeep': '4.5.0'
     'lodash.orderby': *_orderby
     'lodash.unset': *_unset

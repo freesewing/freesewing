@@ -253,6 +253,11 @@ export const back = {
       .close()
       .hide()
 
+    macro('grainline', {
+      from: new Point(points.hps.x / 2, points.shoulder.y),
+      to: new Point(points.hps.x / 2, points.waistSide.y),
+    })
+
     store.cutlist.addCut()
 
     if (complete) {
@@ -261,10 +266,6 @@ export const back = {
         nr: 2,
         title: 'back',
         at: points.titleAnchor,
-      })
-      macro('grainline', {
-        from: new Point(points.hps.x / 2, points.shoulder.y),
-        to: new Point(points.hps.x / 2, points.waistSide.y),
       })
       macro('sprinkle', {
         snippet: 'bnotch',

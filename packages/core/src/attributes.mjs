@@ -35,7 +35,7 @@ Attributes.prototype.add = function (name, value) {
 }
 
 /**
- * Return a props object for attributes with a fiven prefix (typically used for data-text)
+ * Return a props object for attributes with a given prefix (typically used for data-text)
  *
  * @param {string} prefix - The prefix to filter attributes on
  * @return {object} props - The attributes as props

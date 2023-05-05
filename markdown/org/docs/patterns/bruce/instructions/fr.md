@@ -25,7 +25,7 @@ Assemblez-les ensemble à la surjeteuse, en tenant compte d'une marge de couture
 
 ![Assembler le dos et le second côté](step02.png)
 
-Alignez l'autre côté du dos (pièce 1) avec le second côté (pièce 3) endroit contre endroit. Since the side (piece 3) is symmetric, you can't go wrong.
+Align the other side of the back (piece 1) with the second side (piece 3) making sure to put the good sides together. Again, because the side (piece 3) is not symmetric, be careful to correctly match them.
 
 Assemblez-les ensemble à la surjeteuse, comme précédemment.
 
