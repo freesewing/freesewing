@@ -646,7 +646,7 @@ If you pay close attention, you will see that right after the branch name it
 says **root-commit**.  
 That's because the commit we just added to the DAG is special.
 It is -- and will forever be -- the only commit in our entire index (or
-DAG if you wil) that does not have a parent commit. This root commit is the
+DAG if you will) that does not have a parent commit. This root commit is the
 source of our river of data from which everything else will spring.
 
 ## Chapter 14: git log
@@ -946,7 +946,7 @@ to understand, and we'll show you exactly how to make them in the next chapter.
 
 To work with branches in git, we use the `git branch` command.
 If we run it without any additional info, git will show us a list of current
-branches. The active branch will have an asterix in front of it.
+branches. The active branch will have an asterisk in front of it.
 
 ```bash
 git branch
@@ -1159,7 +1159,7 @@ Only when we write does the staging area come into play. So whenever
  particular commit in our DAG, we use the `git checkout` command.
 
 We're at a particularly good point to illustrate this because we're currently
-a the `my-feature` branch which is 2 commits ahead of the `main` branch.
+on the `my-feature` branch which is 2 commits ahead of the `main` branch.
 Furthermore, during those two commits, we created a new file called
 `feature.md`. No such file exists in the main branch.
 
@@ -2675,7 +2675,7 @@ stash stack.
 After doing this, it will ensure that your working directory is *clean* again,
 in other works in sync with `HEAD`.
 
-If, at any moment, potentionally after `HEAD` points to a new commit, you
+If, at any moment, potentially after `HEAD` points to a new commit, you
 want to re-apply these changes, you can do so with
 
 ```
@@ -3056,7 +3056,7 @@ I will not
 After you've resolved all conflicts -- whether it is through looking into
 the file and implementing your own solution, or by picking one branch's
 version over the other -- you should add the file or files that had the
-merge conflic in them, and then commit them.
+merge conflict in them, and then commit them.
 
 In our example, we run
 
@@ -3097,7 +3097,7 @@ enjoyable, but also facilitate working with others.
 
 ## Chapter 45: Where to go from here
 
-We've covered a lot of groud and hopefully you'll walk away from this series
+We've covered a lot of ground and hopefully you'll walk away from this series
 with a good understanding of git's basic principles, as well as some hands-on
 examples and commands to guide you through the most common use-cases.
 
