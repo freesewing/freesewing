@@ -1,6 +1,5 @@
 import { base } from './base.mjs'
 import { pluginBundle } from '@freesewing/plugin-bundle'
-import { withCondition as bustPlugin } from '@freesewing/plugin-bust'
 
 function draftFront({
   utils,
