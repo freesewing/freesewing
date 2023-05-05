@@ -179,6 +179,13 @@
       "difficulty": 3,
       "tags": ["bottoms", "trousers"]
     },
+    "collab": {
+      "description": "FIXME: A FreeSewing pattern that is a work in progress",
+      "code": "Joost De Cock",
+      "design": "Joost De Cock & x",
+      "difficulty": 3,
+      "tags": ["bottoms", "skirts"]
+    },
     "cornelius": {
       "description": "A FreeSewing pattern for cycling breeches, based on the Keystone drafting system",
       "code": "Wouter Van Wageningen",
