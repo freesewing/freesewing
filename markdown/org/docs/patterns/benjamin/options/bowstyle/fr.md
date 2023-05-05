@@ -1,10 +1,10 @@
 - - -
-title: "Bow style"
+title: "Style de nœud"
 - - -
 
-Four different bow tie styles!
+Quatre styles de nœud papillon différents !
 
-Benjamin allows you to make four different bow ties.
+Benjamin vous permet de faire quatre nœuds papillon différents.
 
 - Diamant contemporain
 - Papillon classique

@@ -1,10 +1,10 @@
 - - -
-title: "Rise"
+title: "Hauteur"
 - - -
 
-![The rise option on Bruce](./rise.svg)
+![L'option hauteur pour Bruce](./rise.svg)
 
-This option controls the overal height of the waist.
+Cette option permet de contrôler la hauteur générale de la taille.
 
 > Plus la valeur est élevée, plus la taille est haute.
 

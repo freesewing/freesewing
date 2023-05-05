@@ -52,8 +52,6 @@ Skip this step if:
 - _Baste_ Lining to skirt at waist.
 - Gather the waist if needed.
 
-<Note>
-
 ## Step 4: The waistband
 
 ### Closures
@@ -73,13 +71,13 @@ There will be some overhangs:
 __Inserting Zipper in Waistband__
 - If inserting a zipper into the waistband now is the time to do so, attach the zipper from the waistband fold line down. Or from seam-line down for curved waistband.
 - _Slipstitch_ or _Whipstitch_ the lining to the zipper at this point if you have not treated the lining and skirt as one at the opening.
-- Press under overhangs.  
+- Press under overhangs.
 - Press the waistband _wrong sides together_ along fold-line. Or along seam-line for curved waistband.
 - Slipstitch_ or _Whipstitch_ the overhang edges to the zipper.
 - _Edgestitch_ the waistband in place.
 - Alternatively, _Slipstitch_ or _Whipstitch_ the waistband in place on the inside.
 
-__Other closures__ 
+__Other closures__
 - Press the waistband _good sides together_ along fold-line. Or along seam-line for curved waistband.
 - Sew the overhangs with your seam allowance.
 - Turn the waistband out and to the inside, Press.
@@ -111,7 +109,7 @@ Hem the skirt in one of the following ways:
 - Bind the raw edge of the hem allowance, single fold the hem under and either _Topstitch_ or hand sew the hem in place.
 - Double fold the hem under and either _Topstitch_ or hand sew the hem in place. You may have heard this be called a Rolled hem.
 
-<Note>  
+<Note>
 
 There are many ways to hem/face the bottom of a skirt, If you have a prefered method use it here.
 

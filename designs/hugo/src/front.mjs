@@ -11,6 +11,7 @@ import {
   chestEase,
   hipsEase,
   lengthBonus,
+  draftForHighBust,
   ribbingHeight,
 } from './options.mjs'
 
@@ -202,6 +203,7 @@ export const front = {
     s3Armhole,
     chestEase,
     hipsEase,
+    draftForHighBust,
     lengthBonus,
     ribbingHeight,
   },

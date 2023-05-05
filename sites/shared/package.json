@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/shared",
-  "version": "3.0.0-alpha.8",
+  "version": "3.0.0-alpha.9",
   "description": "Shared code and React components for different websites",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -23,16 +23,17 @@
     "d3-dispatch": "3.0.1",
     "d3-drag": "3.0.0",
     "d3-selection": "3.0.0",
-    "daisyui": "2.51.5",
+    "daisyui": "2.51.6",
     "feed": "4.2.2",
     "file-saver": "2.0.5",
     "front-matter": "4.0.2",
-    "highlight.js": "11.7.0",
+    "highlight.js": "11.8.0",
     "lodash.clonedeep": "4.5.0",
     "lodash.orderby": "4.6.0",
     "lodash.unset": "4.5.2",
     "lodash.get": "4.4.2",
     "mdast-util-toc": "6.1.1",
+    "mermaid": "10.1.0",
     "pdfkit": "0.13.0",
     "postcss-for": "2.1.1",
     "react": "18.2.0",
@@ -44,14 +45,16 @@
     "rehype-autolink-headings": "6.1.1",
     "rehype-highlight": "6.0.0",
     "remark-smartypants": "2.0.0",
-    "sharp": "0.32.0",
+    "sharp": "0.32.1",
     "svg-to-pdfkit": "https://github.com/eriese/SVG-to-PDFKit",
     "tlds": "1.238.0",
     "to-vfile": "7.2.4",
     "unist-util-visit": "4.1.2",
     "web-worker": "1.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "recursive-readdir": "^2.2.3"
+  },
   "engines": {
     "node": ">=16.0.0",
     "npm": ">=8"

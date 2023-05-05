@@ -145,6 +145,15 @@ function draftBreannaFront({
   // Anchor point
   points.gridAnchor = points.cfNeck.clone()
 
+  // CutonfoldAndGrainline
+  macro('cutonfold', {
+    from: points.cfNeck,
+    to: points.cfWaist,
+    grainline: true,
+  })
+
+  store.cutlist.addCut({ cut: 1 })
+
   // Complete pattern?
   if (complete) {
     // Logo

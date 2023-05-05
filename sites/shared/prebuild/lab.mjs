@@ -48,6 +48,7 @@ export const prebuildLab = async () => {
       const page = pageTemplate(design)
       const pages = ['..', 'lab', 'pages']
       await fs.mkdir(path.resolve(...pages, 'v', 'next'), { recursive: true })
+      await fs.mkdir(path.resolve(...pages, section, 'v', 'next'), { recursive: true })
       promises.push(
         fs.writeFile(path.resolve(...pages, `${design}.mjs`), page),
         fs.writeFile(path.resolve(...pages, section, `${design}.mjs`), page)

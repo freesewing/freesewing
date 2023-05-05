@@ -1,8 +1,10 @@
 import { back } from './back.mjs'
+import { pluginAnnotations } from '@freesewing/plugin-annotations'
 
 export const frontSideDart = {
   name: 'bella.frontSideDart',
   after: back,
+  plugins: [pluginAnnotations],
   draft: ({
     store,
     sa,
@@ -202,6 +204,14 @@ export const frontSideDart = {
       .curve(points.hpsCp2, points.cfNeckCp1, points.cfNeck)
       .hide()
 
+    macro('cutonfold', {
+      from: points.cfNeck,
+      to: points.cfHem,
+      grainline: true,
+    })
+
+    store.cutlist.addCut({ cut: 1 })
+
     if (complete) {
       points.titleAnchor = new Point(points.armholePitch.x / 2, points.armholePitchCp2.y)
       macro('title', {
@@ -216,11 +226,6 @@ export const frontSideDart = {
         .line(points.bustDartEdge)
         .line(points.bustDartBottom)
         .attr('class', 'help')
-      macro('cutonfold', {
-        from: points.cfNeck,
-        to: points.cfHem,
-        grainline: true,
-      })
       macro('sprinkle', {
         snippet: 'notch',
         on: ['bust', 'armholePitch', 'cfBust'],

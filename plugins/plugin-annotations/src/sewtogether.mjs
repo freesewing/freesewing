@@ -1,23 +1,27 @@
-const markers = `
+// Export defs
+export const sewtogetherDefs = [
+  {
+    name: 'sewTogetherStart',
+    def: `
 <marker id="sewTogetherStart" markerWidth="4" markerHeight="4" orient="auto" refX="0" refY="2">
   <path class="note stroke-sm" d="M4,4 L0,2 4,0" />
-</marker>
+</marker>`,
+  },
+  {
+    name: 'sewTogetherEnd',
+    def: `
 <marker id="sewTogetherEnd" markerWidth="4" markerHeight="4" orient="auto" refX="4" refY="2">
   <path class="note stroke-sm" d="M0,0 L4,2 0,4" />
-</marker>
+</marker>`,
+  },
+  {
+    name: 'sewTogetherCross',
+    def: `
 <marker id="sewTogetherCross" markerWidth="4" markerHeight="4" orient="auto" refX="2" refY="2">
   <path d="M 0,0 L 4,4 M 4,0 L 0,4" class="note stroke-sm"/>
-</marker>
-`
-
-// Export hooks
-export const sewtogetherHooks = {
-  preRender: [
-    function (svg) {
-      if (svg.defs.indexOf(markers) === -1) svg.defs += markers
-    },
-  ],
-}
+</marker>`,
+  },
+]
 
 // Export macros
 export const sewtogetherMacros = {

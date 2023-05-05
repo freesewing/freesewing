@@ -1,17 +1,17 @@
 - - -
-title: "Bella body block: Cutting Instructions"
+title: "Bloc de corps de Bella : Instructions de coupe"
 - - -
 
 **Tissu principal**
 
-- Cut **1 Front** part on the fold.
-- Cut **2 Back** parts.
+- Couper **1 partie avant** dans le pli.
+- Couper ** deux parties arrière**.
 
-These cutting instructions are just for the default Bella block. Adjust your cutting accordingly if you have/are making changes to the block.
+C'est instructions de coupe sont juste pour le bloc par défaut de Bella. Si vous faites des changements sur le bloc ajustez votre coupe en fonction.
 
 <Tip>
 
-If you do not have someone to help pin you into Bella then you may find it easier to Cut 2 Front parts with seam allowance and sew the backs up when constructing so you can pin in the front.
+Si vous n'avez pas quelqu'un pour vous aider à épingler Bella, il vous sera peut-être plus facile de couper 2 parties avant avec une marge de couture et de coudre les dos lors de la construction afin de pouvoir épingler le devant.
 
 </Tip>
 

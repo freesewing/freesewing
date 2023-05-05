@@ -8,7 +8,7 @@ within a pattern.
 
 ## Signature
 
-To provide one or more store methods, your plugin should have a `macros` property that
+To provide one or more store methods, your plugin should have a `store` property that
 is an array where each member is itself an array with two members:
 
 - The first member holds the key to attach the method to (in dot notation)

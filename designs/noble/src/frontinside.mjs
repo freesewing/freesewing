@@ -90,6 +90,12 @@ function nobleFrontInside({
     )
   }
 
+  macro('cutonfold', {
+    from: points.cfNeck,
+    to: points.cfHem,
+    grainline: true,
+  })
+
   if (complete) {
     if (options.dartPosition == 'shoulder') {
       snippets.shoulderDartTip = new Snippet('notch', points.shoulderDartTip)
@@ -104,12 +110,6 @@ function nobleFrontInside({
     })
     points.scaleboxAnchor = points.titleAnchor.shift(-90, 90).shift(0, 10)
     macro('scalebox', { at: points.scaleboxAnchor, rotate: 270 })
-
-    macro('cutonfold', {
-      from: points.cfNeck,
-      to: points.cfHem,
-      grainline: true,
-    })
 
     if (sa) {
       paths.sa = paths.insideSeam.offset(sa).line(points.cfNeck).attr('class', 'fabric sa')

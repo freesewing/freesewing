@@ -1,38 +1,41 @@
-const markers = `
+// Export defs
+export const grainlineDefs = [
+  {
+    name: 'grainlineFrom',
+    def: `
 <marker orient="auto" refY="4.0" refX="10.0" id="grainlineFrom" style="overflow:visible;" markerWidth="12" markerHeight="8">
 	<path class="note fill-note" d="M 0,4 L 12,0 C 10,2 10,6  12,8 z" />
-</marker>
+</marker>`,
+  },
+  {
+    name: 'grainlineTo',
+    def: `
 <marker orient="auto" refY="4.0" refX="2.0" id="grainlineTo" style="overflow:visible;" markerWidth="12" markerHeight="8">
 	<path class="note fill-note" d="M 12,4 L 0,0 C 2,2 2,6  0,8 z" />
-</marker>`
+</marker>`,
+  },
+]
 
 const dflts = { text: 'grainline' }
 
-// Export hooks and macros
-export const grainlineHooks = {
-  preRender: [
-    function (svg) {
-      if (svg.defs.indexOf(markers) === -1) svg.defs += markers
-    },
-  ],
-}
+// Export macros
 export const grainlineMacros = {
-  grainline: function (so = {}, { points, paths, Path, complete, setGrain }) {
+  grainline: function (so = {}, { points, paths, Path, complete, store }) {
     if (so === false) {
       delete points.grainlineFrom
       delete points.grainlineTo
       delete paths.grainline
-      setGrain(90) // Restoring default
+      if (store.cutlist?.setGrain) store.cutlist.setGrain(90) // Restoring default
       return true
     }
     so = {
       ...dflts,
       ...so,
     }
-    // setGrain relies on plugin-cutlist
-    if (typeof setGrain === 'function') {
-      setGrain(so.from.angle(so.to))
-    }
+
+    // store in cutlist
+    store.cutlist.setGrain(so.from.angle(so.to))
+
     if (complete) {
       points.grainlineFrom = so.from.shiftFractionTowards(so.to, 0.05)
       points.grainlineTo = so.to.shiftFractionTowards(so.from, 0.05)
