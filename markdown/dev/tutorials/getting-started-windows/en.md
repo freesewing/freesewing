@@ -73,7 +73,7 @@ set up the project. The default package manager uses a fairly simplistic approac
 to dependency resolution which can make builds take a long time. Yarn is an
 alternative package manager which makes builds faster, especially for monolithic
 projects like FreeSewing. If you'd like to install yarn run `npm install yarn
--g` (optional).
+--global` (optional, but recommended).
 
 #### Install and configure Git (recommended)
 
@@ -205,7 +205,7 @@ If you chose `banana`, you'll have a folder named `banana`.
 You can ignore all other subfolders and files; they are part of the development environment.)
 
 To start the development environment, navigate to the folder that was created
-and run `npm run dev` (or `yarn dev` if you're using Yarn as a package manager).
+and run `yarn dev` (or `npm run dev` if you're using npm as a package manager).
 
 Then open your browser and go to http://localhost:8000
 
