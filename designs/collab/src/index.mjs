@@ -1,15 +1,14 @@
-//
-
 import { Design } from '@freesewing/core'
 import { data } from '../data.mjs'
 // Parts
-import { box } from './box.mjs'
+import { shared } from './shared.mjs'
+import { back } from './back.mjs'
 
 // Create new design
 const Collab = new Design({
   data,
-  parts: [box],
+  parts: [shared, back],
 })
 
 // Named exports
-export { box, Collab }
+export { shared, back, Collab }
