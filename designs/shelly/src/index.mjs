@@ -14,7 +14,6 @@ const Shelly = new Design({
   parts: [front, back, raglanSleeve, neckband],
 })
 
-const Pattern = Shelly
 /*
  * Named exports
  *
