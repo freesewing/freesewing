@@ -173,7 +173,7 @@ function draftBase({
 
 export const base = {
   name: 'shelly.base',
-  plugins: [pluginBundle],
+  plugins: [pluginBundle, bustPlugin],
   draft: draftBase,
   hide: { self: true },
   measurements: [
