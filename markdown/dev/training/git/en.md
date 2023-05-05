@@ -22,7 +22,7 @@ confidence to explore further on your own.
 This is the **long read** format (20k words).
 
 This training is also available as a 1¾-hour **[audiobook][audio]**
-or **[video series][video]** (todo).
+or **[video series][video]**.
 
 </Note>
 
