@@ -19,7 +19,6 @@ function draftBack({
   Snippet,
 }) {
   const raglanAngle = store.get('raglanAngle')
-  const raglanLength = store.get('raglanLength')
   const neckRadius = store.get('neckRadius')
 
   points.neckCenter = points.raglanCenter.shift(270, -options.neckBalance * neckRadius)
