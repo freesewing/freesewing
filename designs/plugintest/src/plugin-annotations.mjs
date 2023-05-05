@@ -34,12 +34,15 @@ const pluginAnnotations = ({
     points.banner_to = new Point(320, y)
     paths.banner = new Path().move(points.banner_from).line(points.banner_to)
     macro('banner', {
-      path: paths.banner,
+      path: 'banner',
       text: 'banner macro',
       dy: options.bannerDy,
       spaces: options.bannerSpaces,
       repeat: options.bannerRepeat,
     })
+    macro('rmbanner', 'banner')
+    paths.banner.addText('banner removed')
+
     macro('bannerbox', {
       topLeft: points.banner_from,
       bottomRight: points.banner_to,
