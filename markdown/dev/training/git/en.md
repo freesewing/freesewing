@@ -40,7 +40,7 @@ If that already sounds scary, then don't worry.
 My goal today is to explain git in an approachable way that
 requires no prior knowledge of, or experience with git.
 
-By the end of this training, you should have a clear understanding 
+By the end of this training, you should have a clear understanding
 of what git is, what it does, and how it does it.
 
 If that sounds like the kind of thing you would like to learn, then you've come
@@ -55,10 +55,10 @@ The problem is that people don't always get it right from the first time. The
 content of this git training didn't spring from my mind fully formed. It
 started out as a list of bullet points of things I wanted to cover. Then it
 was gradually turned into a rough draft over numerous edits and rewrites.
-At some point, I also started to involve other people. 
-I asked them to proofread or provide input, which led to more changes. 
+At some point, I also started to involve other people.
+I asked them to proofread or provide input, which led to more changes.
 
-Somehow, we need to keep track of all these changes. And ensure that at any 
+Somehow, we need to keep track of all these changes. And ensure that at any
 time we can go back to an earlier version. Or allow multiple people to work
 on the same text without overwriting each other's changes.
 
@@ -73,14 +73,14 @@ familiar with this problem:
 - `git-good_final.md`
 
 This is not an efficient way to keep track of different versions of a single file.
-Let alone if we may have many different files, with different 
+Let alone if we may have many different files, with different
 collaborators working on them.
 
-What we need is some sort of **system** to **control** all these different 
+What we need is some sort of **system** to **control** all these different
 **versions** somehow. Thankfully, such systems exist. And software that is created
 specifically for this task are called **version control systems**.
 
-Git is such a version control system, but there are others too. 
+Git is such a version control system, but there are others too.
 So let's meet a few of them.
 
 ## Chapter 3: Version control systems
@@ -113,7 +113,7 @@ generation of tools was not good enough for them.
 One such project was the Linux kernel. Started in 1991 as a hobby project by a
 Finnish student named Linus Torvalds, by 2002 the Linux kernel underpinned a
 multibillion Linux market spearheaded by vendors such as Redhat, Suse, and
-early adopters like IBM. 
+early adopters like IBM.
 
 The Linux kernel itself though was and is an open source project. And while more
 and more people worked on the kernel professionally, they were spread out not
@@ -132,13 +132,13 @@ principle to having to use a closed-source product to contribute to the open
 source Linux kernel.
 
 This went on for a while until in 2005 BitMover -- the company -- grew
-increasingly worried that the kernel developers would reverse engineer their 
-technology. So they imposed further restrictions which made it impossible for 
+increasingly worried that the kernel developers would reverse engineer their
+technology. So they imposed further restrictions which made it impossible for
 kernel developers to use their product.
 
 Faced with this dilemma, and in a move that would forever cement his reputation
 as an exceptionally gifted software engineer, Linus Torvals decided to take
-matters into his own hands. He sat down and over the couple of a couple of 
+matters into his own hands. He sat down and over the couple of a couple of
 days wrote his own version control system: git.
 
 A few years later, every major open source project had migrated from subversion
@@ -154,12 +154,12 @@ storm.
 ## Chapter 4: Git won't fall out of the sky
 
 Knowing the history of git, and its origins as the version control system for
-the Linux kernel, goes a long way to explain one of its more glaring 
+the Linux kernel, goes a long way to explain one of its more glaring
 shortcomings: Why does it seem so damn hard to use?
 
 The answer is, of course, that Linux kernel developers are rather comfortable
 with all this complexity. They know exactly what git does under the hood, and
-as a result all its numerous commands make sense to them. 
+as a result all its numerous commands make sense to them.
 
 People who've mastered git are like airline pilots.
 To the laymen, all those dials and buttons in the cockpit seem like an
@@ -180,14 +180,14 @@ Git is built on the combination of two concepts, and you're probably already
 somewhat familiar with both of them.
 
 The first concept is the so-called DAG. Which stands for *Directed 
-Acyclic Graph*. A *graph* in computer science and mathematics alike is 
+Acyclic Graph*. A *graph* in computer science and mathematics alike is
 a structure in which we can store not only information, but also relationships
 between that information.
 
 You may have heard of Facebook's *social graph*, which holds information about
 Facebook's users, but also information about the relationships between those
 users. Alice, Bob, Tony, Jim, and Sandra are all Facebook users.
-In addition, Alice is a friend of Bob. Bob's father is Tony. Tony works at 
+In addition, Alice is a friend of Bob. Bob's father is Tony. Tony works at
 McDonalds. Jim and Sandra also work at McDonalds.
 
 We call this sort of data structure a *graph*. The users themselves are the
@@ -224,8 +224,8 @@ do so downstream from the direction of the graph. Like a river.
 So to summarize, a DAG or Directed Acyclic Graph is a graph where edges go
 in one direction only (directed), and no loops are allowed (acyclic).
 
-Like a river, a DAG can split into branches. Each of those branches can 
-further split, or they can join another branch further downstream. 
+Like a river, a DAG can split into branches. Each of those branches can
+further split, or they can join another branch further downstream.
 
 But no matter how intricate our river delta gets, we can never go backwards. We
 can never branch off and then somehow reconnect to a point before the one where
@@ -233,12 +233,12 @@ we branched off from and form a loop.
 
 Water cannot run uphill.
 If you can remember that, you know what a DAG is. And once you know what a DAG
-is, it's easier to think about your data in git. All your changes are right 
+is, it's easier to think about your data in git. All your changes are right
 there, each version of your work represented by a node in the graph.
 
 
-The question that remains is, how does git keep track of the edges, or the 
-relationship between the nodes? 
+The question that remains is, how does git keep track of the edges, or the
+relationship between the nodes?
 
 So let's look at that in the next chapter.
 
@@ -261,8 +261,8 @@ that it's you.
 
 In computer science these fingerprints or checksums are calculated by a type of
 cryptographic function that we call a hash function. For this reason,
-checksums are often referred to as hashes. You may have already heard of some 
-of the more well known hashing methods, such as MD5 or SHA1. 
+checksums are often referred to as hashes. You may have already heard of some
+of the more well known hashing methods, such as MD5 or SHA1.
 The latter -- SHA1 -- is the hashing method git uses under the hood.
 
 Git relies extensively on these checksums. So much so that each commit object
@@ -288,14 +288,14 @@ the commit object, which means it is used to calculate the checksum:
 
 So with the exception of the very first commit -- which is a bit like the
 source of our river and the only node in our graph that does not have a direct
-ancestor -- each commit has a reference to the commit it is based on. This 
+ancestor -- each commit has a reference to the commit it is based on. This
 reference forms the relationship in our graph. It says, this commit right here
 follows that commit over there with this ID.
 
 Including the ID or checksum of the parent commit provides strong protection
 against data tampering. If any commit object in our DAG is changed, it's
 checksum and thus its ID will change. And all commits that stem from it will
-have a parent commit ID that no longer matches. If we were to go in and 
+have a parent commit ID that no longer matches. If we were to go in and
 change that, it will in turn change the ID of that commit, and then the next
 one would break and so on and so forth.
 
@@ -308,25 +308,25 @@ ledger because this is the exact same technology that underpins the blockchain.
 At this point, I feel it's worth pointing out -- for the crypto-bros out there
 -- that Satoshi Nakamoto's original bitcoin paper was published at the end of
 October 2008. As we learned in chapter 2, Linus Torvalds wrote git in
-2005, more than 3 years prior to that. 
+2005, more than 3 years prior to that.
 Which explains why some people think Linus is Satoshi. But he's not.
 
 Enough about blockchain. While it's a useful crutch to explain how different
 commits are linked together in git, it would be a distraction to talk about it
-any futher. 
+any futher.
 
-Especially since we're finally getting to the good stuff: 
+Especially since we're finally getting to the good stuff:
 Let's start using git in the next chapter.
 
 ## Chapter 7: Installing git
 
-Before we can gain some hands-on experience, we should make sure git is 
+Before we can gain some hands-on experience, we should make sure git is
 installed on our system.
 
-If you're on Windows, you should [download the git release for Windows from 
+If you're on Windows, you should [download the git release for Windows from
 the git website](https://git-scm.com/download/win) which is git-scm.com.
 
-If you use MacOS, you can [download the git release for 
+If you use MacOS, you can [download the git release for
 macOS](https://git-scm.com/download/mac) from the same website. Or, you
 can also install the Xcode command-line tools from Apple, as they include git.
 
@@ -342,9 +342,9 @@ we're good to go.
 
 ## Chapter 8: git init
 
-The first thing you'll notice as we start using git, is that it does not 
+The first thing you'll notice as we start using git, is that it does not
 require any sort of central components or server. Those of you who have
-trouble distinguishing between git itself and the popular git hosting 
+trouble distinguishing between git itself and the popular git hosting
 services such as Github or Gitlab, should take a moment to appreciate this.
 
 You don't need anything to use git. You can use it on your own, without
@@ -357,7 +357,7 @@ git init
 Initialized empty Git repository in /Users/joost/git-training/.git/
 ```
 
-Congratulations, you have just created a **git repository**. 
+Congratulations, you have just created a **git repository**.
 An empty repository for now, but a git repository nonetheless.
 
 The English dictionary tells us that a repository is *a place where things are
@@ -370,15 +370,15 @@ If however, we go up one level, we are outside of our repository.
 ## Chapter 9: The .git folder
 
 In the top-level folder of our repository, git has create a `.git` subfolder.
-This folder is where git will write all of the data in our graph. It's where it 
-will store metadata, and anything else that is required for git to do what it 
+This folder is where git will write all of the data in our graph. It's where it
+will store metadata, and anything else that is required for git to do what it
 does.  There is no database, there is no server, it's all just a bunch of files
 in this mysterious `.git` folder.
 
 When working with git, you **never** venture in this folder. Doing so may not
-only irreparably mess up your repository. It's also not required. 
+only irreparably mess up your repository. It's also not required.
 
-But, out of curiosity, let's have a look anyway. 
+But, out of curiosity, let's have a look anyway.
 
 ```bash
 ls -1 .git
@@ -401,8 +401,8 @@ important of them are:
   It contains two subfolders, `objects/info` and `objects/pack`. Both of them
   are empty right now, but that will change soon enough.
 - The `refs` folder is where git will store info about the various ways in
-  which we decided to branch and split our river of data or graph. 
-  It also contains two subfolders, `refs/heads` and `refs/tags`. 
+  which we decided to branch and split our river of data or graph.
+  It also contains two subfolders, `refs/heads` and `refs/tags`.
   Both of which are also empty for now.
 
 Let's not worry too much about this structure. Once again, you rarely if ever
@@ -423,14 +423,14 @@ No commits yet
 nothing to commit (create/copy files and use "git add" to track)
 ```
 
-When we enter this command, git will tell us what the current status is. 
+When we enter this command, git will tell us what the current status is.
 For now git tells us that:
 
-- We are on branch main. Each time we split our river of git data, 
+- We are on branch main. Each time we split our river of git data,
   this creates a branch. The main branch is the one we start from.
   The source of our river so to speak.
 - There are no commits yet
-- There is nothing to commit. But we could create files and use `git add` 
+- There is nothing to commit. But we could create files and use `git add`
   to track them
 
 Ok, not much going on here, but git hints us that we should use `git add` to
@@ -464,7 +464,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-Git will still tell us that we are on branch main and that there are no 
+Git will still tell us that we are on branch main and that there are no
 commits. But this time it will tell us that there are *untracked files*.
 Specifically *hello.md*.
 
@@ -499,7 +499,7 @@ It also tells us what command to run to *unstage* this file, which is some
 nice foreshadowing for the next chapter.
 
 But before we get to that, let's take another look at the `.git` folder where
-git keeps our data. 
+git keeps our data.
 
 ```bash
 ls .git/objects
@@ -534,7 +534,7 @@ that come into play.
 
 ![Git layers](git-layers.png)
 
-At the lowest level we have **the file system**. 
+At the lowest level we have **the file system**.
 At the end of the day, git is just a bunch of files on disk, and all it does
 is write to those files. When git refers to our own data on disk, not its
 internal metadata, but the files and folders we are looking to keep track
@@ -596,7 +596,7 @@ Changes not staged for commit:
 ```
 
 This time, git still tells us that we're on branch main, and that there's no
-commits yet. It also reminds us that the `hello.md` file is staged to be 
+commits yet. It also reminds us that the `hello.md` file is staged to be
 committed. But in addition, it now tells us that there are changes that are
 not staged for commit. Changes to the `hello.md` file.
 
@@ -605,7 +605,7 @@ will notice this. If we **add** this file with `git add`, git will copy
 our file to the staging area. If we then make further changes, git will
 notice that the file in our working directory has changed again, and will
 once again inform us about it. However, the version of the file that we
-added with `git add` earlier is still in the staging area. 
+added with `git add` earlier is still in the staging area.
 
 By now you should have learned how `git add` is how we tell git to write
 our data to the staging area. But that's only half of the work. To make
@@ -617,13 +617,13 @@ do in the next chapter.
 Now that we have covered the `git add` command, and know about the staging
 area, the next step on our learning path is the `git commit` command.
 
-The `git commit` command is how we tell git to take the data that is in 
+The `git commit` command is how we tell git to take the data that is in
 our staging area, and add it to the DAG. To do so, git will create a
-commit object and add *labels* to it. It will calculate a checksum and 
+commit object and add *labels* to it. It will calculate a checksum and
 add it to the commit object in the dag to link it to its parent commit.
 
 Git will also move the `HEAD` label (remember, `HEAD` is the equivalent of
-a **your are here** marker) to point to our new commit. It will also 
+a **your are here** marker) to point to our new commit. It will also
 move the `main` label to our new commit to indicate that this is
 the tip of the `main` branch.
 
@@ -644,7 +644,7 @@ couple of characters of the commit ID or checksum, as well as some other info.
 
 If you pay close attention, you will see that right after the branch name it
 says **root-commit**.  
-That's because the commit we just added to the DAG is special. 
+That's because the commit we just added to the DAG is special.
 It is -- and will forever be -- the only commit in our entire index (or
 DAG if you wil) that does not have a parent commit. This root commit is the
 source of our river of data from which everything else will spring.
@@ -655,7 +655,7 @@ We've already learned that the commit ID is very important in git. Later --
 when you are a git guru and will ask it to do advanced stuff -- you will
 often need to specify the commit ID.
 
-Git keeps a log of all commits, and you can ask it to show this log with the 
+Git keeps a log of all commits, and you can ask it to show this log with the
 `git log` command.
 
 ```bash
@@ -687,7 +687,7 @@ For now, we have a single branch. It's called `main` which is the default
 branch in git. And while one single branch is not very exciting, it is all
 we need to understand how labels work.
 
-To see the labels git uses, let's ask git to show us the commit log 
+To see the labels git uses, let's ask git to show us the commit log
 with `git log`.
 
 ```bash
@@ -707,10 +707,10 @@ will say `HEAD` and then a little arrow pointing to `main`.
 Remember in chapter 8 where we went spelunking in the `.git` folder, we
 learned that `HEAD` is like a *you are here* marker. In other words, git
 will put the `HEAD` label on whatever commit it considers to be where we are
-right now. So each commit we make will always become a child of whatever commit 
+right now. So each commit we make will always become a child of whatever commit
 the `HEAD` label is on.
 
-While `git log` is certainly the user-friendly way to retrieve this 
+While `git log` is certainly the user-friendly way to retrieve this
 information, we can also figure out where HEAD is pointing to by looking into
 the `.git` folder. If you look at the contents of the `.git/HEAD` file,
 you will see it holds a reference to `refs/heads/main`.
@@ -727,7 +727,7 @@ it holds the ID of our root commit.
 cat .git/refs/heads/main
 4506fafad7b70ff2c44d7900d457f9a65133f7ed
 ```
- 
+
 In other words, HEAD points to refs/head/main, which points to our commit.
 So git knows that both the `HEAD` label and the `main` label
 are both on this root commit.
@@ -735,12 +735,12 @@ are both on this root commit.
 Why this matters will become clearer when we talk about branching.
 For now, what you should know is that each branch has its own label,
 which should be on the last commit made on that branch.
-The `HEAD` label is special. In that it always points to the 
+The `HEAD` label is special. In that it always points to the
 commit that will become the parent of the next commit we'll make.
 
 ## Chapter 16: git show
 
-The `git show` command will show us what exactly what is included in any given 
+The `git show` command will show us what exactly what is included in any given
 commit.
 
 We've already made our first commit, the so-called root commit, but perhaps
@@ -761,7 +761,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
 Git tells us we're on the main branch, and that
-we have changes that are not staged for commit. 
+we have changes that are not staged for commit.
 Perhaps you have a good memory and remember that we changed
 the contents of our file from `Hello git` to `Hello git. How are you?`.
 
@@ -772,9 +772,9 @@ If we want to know that, we can just ask git to show us what's actually
 in this commit. To do so, we use the `git show` command followed by the
 ID of the commit we want to see. We don't actually have to include the
 entire ID. All we need is the first 4 characters of the ID. If later we
-have plenty of commits and there are multiple commit IDs that start with 
+have plenty of commits and there are multiple commit IDs that start with
 these same 4 characters, git will show us a list of all matching commits
-and ask us to be more specific. But for now, with only one commit, 4 
+and ask us to be more specific. But for now, with only one commit, 4
 characters is plenty.
 
 ```bash
@@ -799,8 +799,8 @@ commit.  But this time around, it will also show us a diff. In other words,
 what exactly this commit changed. And we can see that this was a new file and
 that its contents are `Hello git`.
 
-What we committed on Friday evening was what was in the staging area at that 
-time. Which was our file with `Hello git` in it. And not the current version 
+What we committed on Friday evening was what was in the staging area at that
+time. Which was our file with `Hello git` in it. And not the current version
 on disk which has `Hello git. How are you?` in it.
 
 If we want to add this updated version of the file to the repository, we
@@ -813,7 +813,7 @@ git commit -m "My second commit"
 ```
 
 When you run the `git commit` command, git will open an editor to let you enter
-the commit message. If you'd like, you can specify the commit message on the 
+the commit message. If you'd like, you can specify the commit message on the
 command line with the `-m` flag, and then git will just use that.
 
 If we now run `git status` again, git will tell us there are no changes.
@@ -896,7 +896,7 @@ Before we look at how we can create a new branch, we should probably pause
 for a moment to make sure we understand why you would want to make a
 branch in the first place.
 
-Remember in chapter two where we were talking about why we need version 
+Remember in chapter two where we were talking about why we need version
 control systems. Specifically this list of files:
 
 - `git-draft.md`
@@ -906,7 +906,7 @@ control systems. Specifically this list of files:
 - `git-good.md`
 - `git-good_final.md`
 
-If we were to manage this in git instead, the first couple of drafts would 
+If we were to manage this in git instead, the first couple of drafts would
 probably just be additional commits on the same branch. But then there's this
 file with the `_comments-by-serge` suffix, which probably means that this was
 a colleague making changes to a file.
@@ -933,7 +933,7 @@ a big deal, but your boss is a bit of a grammar nazi, so they want you to
 drop what you're doing and fix it now.
 
 If you had been doing your dark mode work on the `main` branch, you would be
-in a real pickle right now. Because you would have mixed your new dark mode 
+in a real pickle right now. Because you would have mixed your new dark mode
 work with the production code, and so fixing the typo would have had to wait
 until you were ready with that, or you'd have to somehow undo the work you did
 so far, or at least find a way to disentangle those changes from what was
@@ -982,7 +982,7 @@ git branch -d example
 Deleted branch example (was 036776b).
 ```
 
-Poof gone. Now let's look at some more efficient ways to not only create a 
+Poof gone. Now let's look at some more efficient ways to not only create a
 branch, but also make it active.
 
 ## Chapter 19: git switch
@@ -992,7 +992,7 @@ which branch is currently active. In git, the active branch is whatever the
 `HEAD` labels points to, so when we use the `git switch` command, git is
 typically just moving the `HEAD` label to a different branch.
 
-But, git switch can also create a new branch. For that, you should pass it the 
+But, git switch can also create a new branch. For that, you should pass it the
 `-c` flag (for create) followed by the branch name. So if we run `git switch
 -c my-feature` git will not only create the `my-feature` branch, it will also
 make it active by moving the `HEAD` label to it.
@@ -1051,7 +1051,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-Which is sweet of git, but we know that by now. So we add the file to the 
+Which is sweet of git, but we know that by now. So we add the file to the
 staging area with `git add feature.md` and then commit it with `git commit
 -m "Working on a new feature"`.
 
@@ -1076,7 +1076,7 @@ to read `Started working on a new feature` rather than just `This is a new
 feature` -- both the `HEAD` and `my-feature` labels would move to the new
 commit as this is now the new tip of the `my-feature` branch.
 
-To clarify why we made this change, we'll use `Manage expectations through 
+To clarify why we made this change, we'll use `Manage expectations through
 better phrasing` as our commit message. Because why not.
 
 ```bash
@@ -1123,7 +1123,7 @@ Date:   Tue Apr 4 15:32:20 2023 +0200
 ## Chapter 20: git checkout
 
 In the previous chapter, we used the `git switch` command to create a branch
-and *switch* to it, or in other words, make it active by moving the `HEAD` 
+and *switch* to it, or in other words, make it active by moving the `HEAD`
 label to the tip of this branch.
 
 We already mentioned that git only does a couple of things and the various
@@ -1132,12 +1132,12 @@ commands are typically just ways to combine those different things. And the
 
 As we've learned in chapter 18, we can use `git branch` to create a branch.
 However, we also learned that this does not make that branch *active*. In
-other words, it does not move the `HEAD` label to it. Which is why `git 
+other words, it does not move the `HEAD` label to it. Which is why `git
 switch` is handy because it does that for us.
 
 But `git switch` is not special. All it does is combine git's basic operations
-in a way that saves us some typing. In the case of creating a branch and 
-*switching* to it, we can accomplish the same by executing 2 commands in a 
+in a way that saves us some typing. In the case of creating a branch and
+*switching* to it, we can accomplish the same by executing 2 commands in a
 row.
 
 First, we run `git branch my-feature` to create the branch. Then we run `git
@@ -1147,20 +1147,20 @@ of git's core functionalities that you should really understand.
 
 ![Getting data out of the DAG](git-layers.png)
 
-In chapter 12, when we learned about the staging area, we learned that `git 
+In chapter 12, when we learned about the staging area, we learned that `git
 add` adds things to the staging area, while `git commit` adds them to the
-DAG or index. But so far we have only learned how to *add* data to git. The 
-question of how to get it back out hasn't come up yet. 
+DAG or index. But so far we have only learned how to *add* data to git. The
+question of how to get it back out hasn't come up yet.
 
 The `git checkout` command reads data from the DAG or index and puts it on our
 filesystem. There is no staging area when we read from the DAG.
 Only when we write does the staging area come into play. So whenever
- we want to go the other way, and have our local file system replicate a 
+ we want to go the other way, and have our local file system replicate a
  particular commit in our DAG, we use the `git checkout` command.
 
 We're at a particularly good point to illustrate this because we're currently
 a the `my-feature` branch which is 2 commits ahead of the `main` branch.
-Furthermore, during those two commits, we created a new file called 
+Furthermore, during those two commits, we created a new file called
 `feature.md`. No such file exists in the main branch.
 
 So before we do anything, let's do a quick `ls` to see what files are currently
@@ -1173,7 +1173,7 @@ feature.md      hello.md
 
 As expected, we have a `feature.md` file and a `hello.md` file. And yes,
 the `.git` folder is also there, but that's a hidden folder that we know about
-because we're quickly turning into git wizards here. But we don't take that 
+because we're quickly turning into git wizards here. But we don't take that
 into account.
 
 Alright, so now let's make the `main` branch active by issuing the command
@@ -1199,11 +1199,11 @@ All that we're left with is our `hello.md` file. Which on one hand might seem
 scary that things can just disappear like that. On the other hand, when we
 think about it, we've asked git to go back to the `main` branch. And the tip
 of the `main` branch never had this file to begin with. So git reads from the
-DAG and makes sure that our filesystem is exactly like it was when we made 
+DAG and makes sure that our filesystem is exactly like it was when we made
 that last commit on the `main` branch.
 
 If we want to go back to the `my-feature` branch, we can do so with the
-`git checkout my-feature` command. However, let's apply some of what we've 
+`git checkout my-feature` command. However, let's apply some of what we've
 learned here and just use `git switch my-feature` instead.
 
 ```bash
@@ -1221,29 +1221,29 @@ feature.md      hello.md
 ```
 
 So, when we use `git switch` here, it calls `git checkout` under the hood,
-because `git checkout` is the only command that will actually read data from 
+because `git checkout` is the only command that will actually read data from
 the DAG and make sure to restore the file system to the state it was in at that
 point.
 
 The `git checkout` command can not only check out branches. You can also check
-out a specific commit -- by passing it a commit ID -- or a tag which is 
+out a specific commit -- by passing it a commit ID -- or a tag which is
 something we haven't talked about yet, but we will later. For now, think of tag
 as a label that does not need to be on the tip of branch, but can go anywhere.
 
 One bonus feature that `git checkout` has up its sleeve is that it can also
 create branches. To do so, use the `-b` flag followed by the branch name.
 
-So when we used 
+So when we used
 ```bash
 git switch -c my-feature
-``` 
-earlier to create a branch with `git switch` and it's `-c` flag for create. 
-We could also have ran 
+```
+earlier to create a branch with `git switch` and it's `-c` flag for create.
+We could also have ran
 ```bash
 git checkout -b my-feature
 ```
 instead. The result would have been exactly the same. But ultimately,
-only `git branch` can create a branch. All these other commands just 
+only `git branch` can create a branch. All these other commands just
 re-use the same trick by calling `git branch` under the hood.
 
 Why is the flag to create a new branch `-c` when we use `git switch` and
@@ -1259,17 +1259,17 @@ like best. The choice is yours.
 ## Chapter 21: Merging in git
 
 When we first discussed branching in git, we said that using branches is all
-about *isolating our work*. And -- just to clear on this -- this is true. 
+about *isolating our work*. And -- just to clear on this -- this is true.
 That's why we use branches.
 
-However, isolation is almost always a temporary state. We don't want to isolate 
-our work in perpetuity. We want to go on a little journey to work on 
-something without having to worry about any other changes. But when we're 
+However, isolation is almost always a temporary state. We don't want to isolate
+our work in perpetuity. We want to go on a little journey to work on
+something without having to worry about any other changes. But when we're
 ready for it, we'd like to come back and contribute the fruits of our labor
 somehow.
 
 In git, we call this *merging* and it is the exact opposite of *branching*.
-When we branch, our river splits in two. When we merge, we rejoin two 
+When we branch, our river splits in two. When we merge, we rejoin two
 branches of our river so that they come together again.
 
 ![Branching and merging in git](git-branch-merge.png)
@@ -1299,9 +1299,9 @@ branch. Now if we would run the `git merge my-feature` command, git would merge
 the `my-feature` branch into wherever `HEAD` is, which is the `main` branch
 because we made sure of that.
 
-If that all sounds a bit confusing, just keep in mind that by default 
+If that all sounds a bit confusing, just keep in mind that by default
 `git merge` only expects one single argument, the name of the branch you
-want to merge. So where should git merge that branch into? Well, into 
+want to merge. So where should git merge that branch into? Well, into
 whatever branch we're on right now. And `HEAD` always points to whatever
 branch we're on right now.
 
@@ -1349,7 +1349,7 @@ Git will merge everything, and even tell us it's doing a fast-forward merge.
 
 If we look at our commit log, with `git log` we can see that no commits have
 been added to the log. The most recent commit is still the one with the
-`Manage expectations through better phrasing` commit message, which was the 
+`Manage expectations through better phrasing` commit message, which was the
 second commit we did on the `my-feature` branch.
 
 ```bash
@@ -1379,7 +1379,7 @@ Date:   Tue Apr 4 15:32:20 2023 +0200
     My first commit
 ```
 
-This confirms that all git had to do to merge this was move labels around. 
+This confirms that all git had to do to merge this was move labels around.
 But that's not the only thing git did though. If we run `ls` again, you will
 find that the `feature.md` file is now present. So git not only moved labels,
 it also used `git checkout` under the hood to make sure that our current
@@ -1398,17 +1398,17 @@ our current folder is kept in sync with what the DAG tells it should be there.
 
 A 3-way merge in git is the default way of merging. Default in the
 sense that all other merges either can only happen under specific circumstances
--- like the fast-forward scenario we discussed in the previous chapter -- or 
+-- like the fast-forward scenario we discussed in the previous chapter -- or
 you need to tell git explicitly that you want it to do some other type of merge.
 
 If you just tell git to merge it will check whether a fast-forward merge is
 possible, and if not will do a 3-way merge.
 
 So that begs the question: *What is a 3-way merge?*   
-And arguably a more 
+And arguably a more
 interesting question: *Why is it called a 3-way merge?*  
 It is because [with a
-honey the middle there's some 
+honey the middle there's some
 leeway](https://www.youtube.com/watch?v=Pi7gwX7rjOw)?
 
 Sadly, no. It is called a 3-way merge because git needs 3 commits to make this
@@ -1454,7 +1454,7 @@ echo "
 Added in main." >> hello.md
 ```
 
-If we run `git status` git will tell us that there are changes to the 
+If we run `git status` git will tell us that there are changes to the
 `hello.md` file and suggest that perhaps we should stage them.
 
 ```bash
@@ -1542,8 +1542,8 @@ Date:   Tue Apr 4 15:32:20 2023 +0200
     My first commit
 ```
 
-Remember, we are currently on the `my-feature` branch. And sure 
-enough, the commit log tells us that both the `HEAD` and 
+Remember, we are currently on the `my-feature` branch. And sure
+enough, the commit log tells us that both the `HEAD` and
 `my-feature` labels are on our most recent commit.
 
 However, nowhere in the commit log can we see the `main` label.
@@ -1615,7 +1615,7 @@ helpful and has already provided a default message for us saying *Merge
 branch 'my-feature'*.
 
 If we inspect the commit log with `git log` we see that we once again
-have all labels in the log. 
+have all labels in the log.
 
 ```bash
 git log
@@ -1796,7 +1796,7 @@ Date:   Tue Apr 4 15:32:20 2023 +0200
 Next, we will ask git to squash-merge these commits into the `main` branch.
 
 To do so, we first switch to the `main` branch, and then use the
-`--squash` flag in our merge command to tell git we want to 
+`--squash` flag in our merge command to tell git we want to
 squash-merge.
 
 ```bash
@@ -1866,18 +1866,18 @@ But no merge ever occurred. There is no empty merge commit. It looks as if
 all the work in the `my-feature` branch was done in one regular commit on the
 `main` branch.
 
-Some people prefer this way of merging. If you don't have a personal 
+Some people prefer this way of merging. If you don't have a personal
 preference, you can mostly forget about squash-merging. But it's good to
 know the option is there should you ever feel like you'd want to use it.
 
 ## Chapter 26: git diff
 
 In this chapter, we are going to look at how git can help us compare different
-versions of our files. 
+versions of our files.
 
 The way to do that is with the `git diff` command -- which you should write with
 double `f` because it stands for *difference*. By default, the command will
-compare your working directory -- that is the files on your file system right 
+compare your working directory -- that is the files on your file system right
 now -- with the staging area.
 
 We don't have any changes right now, which we can confirm by running `git
@@ -1922,7 +1922,7 @@ sign were added.
 
 As I mentioned, by default `git diff` will compare the working directory
 with the staging area. If you would instead like to compare the staging area
-to the DAG (specifically, to `HEAD`), pass it the `--cached` flag. 
+to the DAG (specifically, to `HEAD`), pass it the `--cached` flag.
 Why cached? Because in git the staging area is also referred to as the cache.
 
 If we run `git diff --cached` now, we will get nothing. Because we have not
@@ -1977,14 +1977,14 @@ curious about all possibilities.
 
 So far, all of our work has been done in our very own repository that only
 exists on our computer.  That's great, I actually use this often myself when
-I'm just looking to avoid losing changes or keeping track of things. 
+I'm just looking to avoid losing changes or keeping track of things.
 
 However, the more common use case is that we are collaborating with others.
 That we are working on something together with friends or colleagues and we
 want to share our changes with them.
 
 Fueled by the rise of git hosting sites like
-[Github](https://github.com) and [Gitlab](https://gitlab.com/) 
+[Github](https://github.com) and [Gitlab](https://gitlab.com/)
 this scenario has become so popular that today many people don't fully
 comprehend the difference between let's say *git* and *github*.
 
@@ -1992,15 +1992,15 @@ Not you of course. You're on chapter 27 and are probably eager to find out
 how we get git to talk to the network.
 
 The first thing to know is that git will only ever talk to the network when you
-tell it to. That's perhaps something to appreciate for a moment in today's 
+tell it to. That's perhaps something to appreciate for a moment in today's
 world of cloud services, subscriptions, telemetry, and so on.
 
 Git will not do any networking unless you ask it to.
 
 So how do you ask it? Well, these are the relevant commands:
 
-- First up is `git clone` which you can think of as the networked version of 
-`git init`. 
+- First up is `git clone` which you can think of as the networked version of
+`git init`.
 - Second is `git fetch` which downloads remote data but makes no local changes.
 - As an alternative, there is `git pull` which also downloads, but merges changes locally.
 - And finally there's `git push` which does the opposite and pushes our local
@@ -2017,7 +2017,7 @@ that exists *somewhere else*.
 
 This *somewhere else* can be many different things. It can be another folder
 on your computer, a shared drive, or network mount, a remote location that
-you access over SSH or another tunnel, or the most common scenario, a 
+you access over SSH or another tunnel, or the most common scenario, a
 git hosting service like Github or Gitlab.
 
 No matter where we are cloning from, git refers to the source repository
@@ -2025,13 +2025,13 @@ that we are cloning from as the **remote**.
 
 To make this all a bit more hands-on, let's practice by cloning a repository
 from Github.
-There are, of course, millions of repositories on Github but 
-I have set up a repository for this purpose, so let's use that one. 
-It will be our remote, and you can find it 
+There are, of course, millions of repositories on Github but
+I have set up a repository for this purpose, so let's use that one.
+It will be our remote, and you can find it
 at [github.com/joostdecock/git-training/](https://github.com/joostdecock/git-training/).
 
-Git can use several protocols to talk to the remote. When cloning a 
-repository from Github, the very first choice we have to make is 
+Git can use several protocols to talk to the remote. When cloning a
+repository from Github, the very first choice we have to make is
 choosing the protocol we want to use. Since this will influence the URL that
 we have to pass to the `git clone` command.
 
@@ -2042,9 +2042,9 @@ SSH or HTTPS.
 
 When possible, you should always pick SSH. It has a number of benefits,
 and it's what we'll use in the examples below. However, you should know
-that you need to [setup your SSH keys to do 
+that you need to [setup your SSH keys to do
 so](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
-Check the documentation of your git hosting provider of choice for more 
+Check the documentation of your git hosting provider of choice for more
 details.
 
 Alright, so to clone a repository, we run `git clone` followed by the URL.
@@ -2099,7 +2099,7 @@ We can see the `HEAD` and `main` labels on the most recent commit, as expected,
 but in addition there are two other labels: `origin/HEAD` and `origin/main`.
 
 The location of the `origin/HEAD` and `origin/main` labels indicate where the
-`HEAD` and `main` labels are in the origin repository. Or more accurately, 
+`HEAD` and `main` labels are in the origin repository. Or more accurately,
 where they were last time git talked to the origin.
 
 Another way you can confirm that this repository was cloned from a remote
@@ -2120,7 +2120,7 @@ origin  git@github.com:joostdecock/git-training.git (push)
 ```
 
 We can see that git has not one but 2 URLs for our origin.
-One to **fetch** and one to **push**. So let's look at what *fetch* is all 
+One to **fetch** and one to **push**. So let's look at what *fetch* is all
 about in the next chapter.
 
 ## Chapter 29: git fetch
@@ -2132,7 +2132,7 @@ updated data, but it won't make any changes to the DAG locally.
 To fully appreciate what exactly `git fetch` does would lead us too far down
 a rabbit hole. But essentially it is a non-intrusive version of `git pull`.
 So it will download, it will make sure everything is available locally, but
-it won't actually change anything. 
+it won't actually change anything.
 
 If you want the changes to be applied, you should merge then explicitly. To do
 so, you insert the `origin` keyword between the `git merge` command and the
@@ -2158,9 +2158,9 @@ Fast-forward
  1 file changed, 3 insertions(+), 1 deletion(-)
 ```
 
-Using `git fetch` is the careful approach because you first download the 
+Using `git fetch` is the careful approach because you first download the
 remote changes, and then merge them. This gives you the option to take a moment
-between steps to inspect what has changed and decide whether you want these 
+between steps to inspect what has changed and decide whether you want these
 changes to be added to your local repository or not.
 
 But realistically, you're most often going to use `git pull` instead.
@@ -2200,14 +2200,14 @@ in the remote is kosher, use `git fetch` instead.
 
 ## Chapter 31: git push
 
-The last of the git networking commands is `git push`. It does the opposite 
+The last of the git networking commands is `git push`. It does the opposite
 of `git pull`, which downloads changes from the remote and ensures your local
 repository is in sync with the remote.
 
 In contrast, `git push` uploads your changes to the remote, and ensures that
 the remote is in sync with your local repository.
 
-To try this out, we will first make a change to the `README.md` file, 
+To try this out, we will first make a change to the `README.md` file,
 then add it to the staging area, and finally commit it.
 
 ```bash
@@ -2318,7 +2318,7 @@ Date:   Wed Apr 5 18:33:55 2023 +0200
     My firts commit
 ```
 
-However, and this is a bit embarrassing. For the commit message I wrote 
+However, and this is a bit embarrassing. For the commit message I wrote
 *My firts commit* when it should have been *My first commit*.
 
 This is not that big a deal perhaps, but I don't want my first commit to
@@ -2353,7 +2353,7 @@ not the only thing that has changed. The commit ID has also changed.
 
 Which should not come as a surprise because in chapter 6 we learned that git
 uses the commit data, the author, the date, and the log message as input to
-create the commit checksum. So when we change the commit's log message, the 
+create the commit checksum. So when we change the commit's log message, the
 commit checksum will also change. There is no way around that.
 
 This brings us to an important point to take into consideration whenever you
@@ -2370,15 +2370,15 @@ However, there's an important caveat that you should keep in mind whenever you
 want to change git's history. And that is that **checksums don't lie**.
 
 You can go back in git's history and change things. That's not a problem.
-But keep in mind that when you change either the commit data, the author, 
+But keep in mind that when you change either the commit data, the author,
 the date, or the log message, the commit checksum/ID will change.
 
 Why does this matter? Well, it may very well not. As long as the history you
-are changing only exists in your local copy -- in other words, on your 
+are changing only exists in your local copy -- in other words, on your
 computer -- things will be fine.
 
 But if you are rewriting a shared history, for example by cloning a repository,
-then rewriting a bunch of its history and then pushing back those changes, 
+then rewriting a bunch of its history and then pushing back those changes,
 things will not end well. Because now you and other contributors will have a
 different idea of what the git history is, and the entire DAG will unravel.
 
@@ -2459,7 +2459,7 @@ to find and fix this bug. Which is perhaps not a problem, but maybe you would
 just feel better if the commit log showed a single commit where you went in like
 a ninja, fixed the bug without touching anything else.
 
-For this sort of ninja-level git log, you have two options: You either get 
+For this sort of ninja-level git log, you have two options: You either get
 everything perfect from the first attempt. Or -- if you are a merely human like
 myself -- you learn to use `git reset` and simply rewrite history and cast
 yourself in the leading role of ninja git master.
@@ -2501,7 +2501,7 @@ Date:   Wed Apr 5 18:33:55 2023 +0200
     My first commit
 ```
 
-Now if we use `git reset --soft HEAD~4` we are telling git to soft reset 
+Now if we use `git reset --soft HEAD~4` we are telling git to soft reset
 HEAD to 4 commits earlier.
 
 ```bash
@@ -2523,11 +2523,11 @@ Changes to be committed:
 
 The effect of this is that the most recent 4 commits are undone. They are
 removed from the DAG, but the result of their combined changes is preserved
-in the staging area. 
+in the staging area.
 
 Which means that we can now commit what's in the staging area, and this commit
 will hold the work done in the 4 commits we just reset or rolled back.
-In the commit log though, it will for always appear that we did all of this 
+In the commit log though, it will for always appear that we did all of this
 work in one single commit.
 
 ```bash
@@ -2549,14 +2549,14 @@ Date:   Wed Apr 5 18:33:55 2023 +0200
     My first commit
 ```
 
-You probably noticed that I used the `--soft` flag after the `git reset` 
+You probably noticed that I used the `--soft` flag after the `git reset`
 command. Which begs the question *what is a soft reset, and is there also a hard
 reset?*. The answer is yes. Let's look at the various types of resets in the
 next chapter.
 
 ## Chapter 35: Soft, mixed, and hard resets in git
 
-The default mode of `git reset` is to do a so-called *mixed* reset, which 
+The default mode of `git reset` is to do a so-called *mixed* reset, which
 personally I think should be called *firm* reset because it's in
 between a soft and a hard reset.
 
@@ -2595,7 +2595,7 @@ remote branches.
 
 You can leverage the same functionality to add your own labels. This can be
 done with the `git tag` command which adds a tag to a commit.
-Such a tag is a label created by you rather than one that git manages 
+Such a tag is a label created by you rather than one that git manages
 internally. It also will never move, unlike the way git automatically
 moves its internal labels to keep track of things.
 
@@ -2605,8 +2605,8 @@ where tagging is used extensively is to track releases throughout the
 lifecycle of a project.
 
 To tag a commit, you use the `git tag` command followed by the tag name.
-For example, if you are releasing version 1.1.0 of the software you are 
-working on, you could tag the latest commit with `git tag v1.1.0`. 
+For example, if you are releasing version 1.1.0 of the software you are
+working on, you could tag the latest commit with `git tag v1.1.0`.
 
 ```bash
 git tag v1.1.0
@@ -2630,7 +2630,7 @@ the state it was when version 1.1.0 came out by running `git checkout v1.1.0`.
 
 If you do so right away, nothing special will happen. But if you do it further
 down the line when more commits have been added you will find that git freaks
-out a bit because you are now in a *detached HEAD* state. 
+out a bit because you are now in a *detached HEAD* state.
 
 We will cover what exactly such a *detached HEAD* state is in a later chapter.
 For now, let's just agree that it sounds equal parts scary and funny.
@@ -2668,7 +2668,7 @@ git stash push
 In other words, push is its default behavior.
 
 Here too, git is merely recycling the things it does well. When you run this
-command, git will essentially add your changes to a commit object. But it 
+command, git will essentially add your changes to a commit object. But it
 won't actually commit anything, but instead push this commit object on the
 stash stack.
 
@@ -2692,7 +2692,7 @@ stash@{2}: WIP on main: 0f96791 Feat: Easy export of the oauth token
 stash@{3}: WIP on main: 9918d55 fix: Delay gitlab API action until localstorage is ready
 ```
 
-You will notice that by default, git will use the commit message of wherever 
+You will notice that by default, git will use the commit message of wherever
 `HEAD` is pointing to to identify this entry in the stash stack.
 
 If you'd rather specify your own message, you can do so with the `-m` switch:
@@ -2702,7 +2702,7 @@ git stash push -m "Halfway through working on the scroll bug"
 ```
 
 The `git stash` command provides a handle little storage area where you can
-put your half-finished work when you have to switch from one task to another 
+put your half-finished work when you have to switch from one task to another
 in git. You can learn more by running `git stash --help`.
 
 ## Chapter 38: The .gitignore file
@@ -2710,7 +2710,7 @@ in git. You can learn more by running `git stash --help`.
 By default, git will look for any changes in the folder holding your repository
 and eagerly nudge you to add and commit them.
 
-But sometimes, that's not what you want. You typically want to keep track of 
+But sometimes, that's not what you want. You typically want to keep track of
 only those files that matter, and not things like dependencies, build
 artifacts, error logs, or those pesky `.DS_Store` files on mac.
 
@@ -2762,7 +2762,7 @@ the tip of the branch.
 
 You've now moved the `HEAD` label to a commit that does not have any branch
 label on it. So from git's point of view, you are not currently on a branch
-and if you were to make changes here they would be added to the DAG but 
+and if you were to make changes here they would be added to the DAG but
 without a label you could only ever reference them by their internal ID.
 
 To get out of this situation, you have two options. You can checkout any other
@@ -2774,7 +2774,7 @@ will now be on the tip of your newly created branch and thus will also no
 longer be detached.
 
 Whichever option you choose, a *detached HEAD* state is not a good place to
-make changes. So if you want to just have a look around without changing 
+make changes. So if you want to just have a look around without changing
 anything, that's fine. But if you plan to add commits, you should really
 start by creating a branch first.
 
@@ -2783,7 +2783,7 @@ start by creating a branch first.
 A *reference* in git is an umbrella term for anything that points to a given
 commit in the DAG.
 
-A reference can be a commit ID, a label or tag like `HEAD`, a branch name, 
+A reference can be a commit ID, a label or tag like `HEAD`, a branch name,
 or a remote.
 
 In most git commands, these various types of references are interchangeable.
@@ -2824,14 +2824,14 @@ because the checksum of both images are the same, so there is only one key and
 only one value to retrieve for that key.
 
 Another object type in git are called **tree-objects**. A tree object addresses
-some shortcomings of the blob-objects. For example, we need to be able to 
+some shortcomings of the blob-objects. For example, we need to be able to
 store the filename somehow. Which is different from the file contents. And if
 we add a bunch of files together, we need to keep track that these files belong
 together. This sort of information is stored in *tree-objects* in git.
 
 Then, there are the **commit-objects**. These are, of course, the objects we've
 been paying most attention to so far. In chapter 6 we explained that a commit
-object holds the data itself, the author, the date, the log message, and the 
+object holds the data itself, the author, the date, the log message, and the
 checksum of the parent commit.
 
 Well, when we wrote *the commit data itself* what that means under the hood is
@@ -2843,13 +2843,13 @@ before how you can attach your own label to any commit with the `git tag`
 command. What we didn't get into is that you can add more info to the tag
 such as a message or you can even cryptographically sign a tag. Git needs
 a place to store this additional information, and so there is an object type
-to specifically deal with this. However, the use of `git tag` that we 
+to specifically deal with this. However, the use of `git tag` that we
 demonstrated will only create the label, and not create an object in git.
 
 ## Chapter 42: Commit message structure
 
 Writing good commit messages in git is a bit of an art. Some people have
-strong feelings on the matter, others see the commit messages as a nuisance 
+strong feelings on the matter, others see the commit messages as a nuisance
 and put in whatever just to make git happy.
 
 There have been efforts to create rules for commit messages that people should
@@ -2873,7 +2873,7 @@ The first line should be short, and should hold a terse summary of why the
 commit was made.
 
 Then, you can add more info by leaving a blank line, followed by
-a lengthy message going into the fine details of the how/what/why of your 
+a lengthy message going into the fine details of the how/what/why of your
 commit.
 
 You don't have to do this. If one line is all you need, then that's fine.
@@ -2924,7 +2924,7 @@ I will cause merge conflict
 I will not
 ```
 and then add and commit that change too.
-- Finally, we switch to the `main` branch and attempt to merge with the `git 
+- Finally, we switch to the `main` branch and attempt to merge with the `git
 merge notmain` command.
 
 Spoiler alert, it won't work.
@@ -2957,23 +2957,23 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 So let's first take a moment to appreciate that while we now have a merge
 conflict on our hands, git already told us that we can simply back out of this
-situation by aborting the merge with `git merge --abort`. 
+situation by aborting the merge with `git merge --abort`.
 
 Which is nice of git, but we're not scared by a little merge conflict.
 Instead, let's fix the conflict. And to do so, we essentially have 3 options:
 
-- Option 1 is to pick the changes in the `main` branch as the winner, and 
+- Option 1 is to pick the changes in the `main` branch as the winner, and
 discard the changes in the `notmain` branch.
-- Option 2 is the opposite of that: pick the changes in the `notmain` branch 
+- Option 2 is the opposite of that: pick the changes in the `notmain` branch
 as the winner, and discard the changes in the `main` branch.
 - Option 3 is to investigate the conflict in more detail and demonstrate that
-for now we are still smarter than git and can find a solution that keeps 
+for now we are still smarter than git and can find a solution that keeps
 all changes.
 
 The third option is almost always what you want, but if you are certain the
 changes in one branch can be discarded, you can just load the latest version
 of the file from the winning branch. By now you should know that `git checkout`
-is the only command to get data out of the DAG, so let's say we want the 
+is the only command to get data out of the DAG, so let's say we want the
 `notmain` branch to win, then we could solve this merge conflict with:
 
 ```bash
@@ -2990,8 +2990,8 @@ git checkout notmain conflict.md
 instead.
 
 If we run `git status` after this, git will inform us that all conflicts are
-resolved. However, we still need to commit to finalize the merge. That's 
-because we're doing a 3-way commit here, and so the merge is not complete 
+resolved. However, we still need to commit to finalize the merge. That's
+because we're doing a 3-way commit here, and so the merge is not complete
 until the merge commit happens.
 
 ```bash
@@ -3045,7 +3045,7 @@ sure to remove the extra markup git added.
 
 We also are not limited to picking one option over the other. We are using
 the same git functionality as before, so anything goes.
-In our example, let's update the first line to read `I am no longer a 
+In our example, let's update the first line to read `I am no longer a
 merge conflict` and remove the markup git added.
 
 ```md title=conflict.md
@@ -3054,8 +3054,8 @@ I will not
 ```
 
 After you've resolved all conflicts -- whether it is through looking into
-the file and implementing your own solution, or by picking one branch's 
-version over the other -- you should add the file or files that had the 
+the file and implementing your own solution, or by picking one branch's
+version over the other -- you should add the file or files that had the
 merge conflic in them, and then commit them.
 
 In our example, we run
@@ -3065,7 +3065,7 @@ git add conflict
 git commit
 ```
 
-And with that, we have successfully resolved the merge conflict, and 
+And with that, we have successfully resolved the merge conflict, and
 merged the two branches.
 
 Git put everything that it could figure out on its own in the staging area,
@@ -3084,13 +3084,13 @@ enjoyable, but also facilitate working with others.
 
 - Branches or free. Use them.
 - Make many small commits, rather than 1 massive commit.
-- Adding things to the staging area is a good way to do a *soft-save* 
+- Adding things to the staging area is a good way to do a *soft-save*
   before you're ready to commit.
 - Write commit messages that focus on why you did something, not what you did.
 - Update your prompt to show what branch you are on. You can [download a script
-  for this from the git project's repository on 
+  for this from the git project's repository on
   Github](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh).
-- Use `.gitignore` to keep files that should not be subject to version control 
+- Use `.gitignore` to keep files that should not be subject to version control
   out of your repository.
 - Use the inline documentation. There's loads of it. Use `git command --help`
   to access it.
@@ -3105,7 +3105,7 @@ That being said, there's a lot to git that we did not cover yet, or that we
 did not cover in detail. Things like rebasing or reflog, cherry-picking or
 the infamous octopus merge.
 
-Thankfully, git has a ton of inline documentation, and there's a wealth of 
+Thankfully, git has a ton of inline documentation, and there's a wealth of
 information out there on the internet for when you want to learn about the more
 advanced corners of git.
 There's also a bunch of GUI tools that can help you visualize the git DAG such
@@ -3114,7 +3114,7 @@ https://www.gitkraken.com/jc).
 
 My goal throughout this series was not to provide you with the ultimate git
 training. Instead, I wanted to show you that when it comes to git, there's
-nothing to be afraid of. 
+nothing to be afraid of.
 
 If you've made it this far, I am cautiously optimistic that it worked.
 Which is great news, because I really believe that my life is better because
