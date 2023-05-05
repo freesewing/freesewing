@@ -91,6 +91,7 @@ compareNod: |
   This will limit our ability to warn you about potential problems in your measurements sets or patterns.
 
 # control
+showMore: Show more
 control1t: Keep it as simple as possible
 control1d: Hides all but the most crucial features.
 control2t: Keep it simple, but not too simple
@@ -198,3 +199,5 @@ pluginNewInfo: FreeSewing's functionality can be further extended with plugins. 
 
 newBasic: The basics
 newAdvanced: Go further
+
+generateANewThing: "Generate a new { thing }"

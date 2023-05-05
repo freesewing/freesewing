@@ -1,6 +1,6 @@
 import fs_ from 'fs'
 import path from 'path'
-import { designsByType } from '../../../config/software/index.mjs'
+import allDesigns from '../../../config/software/designs.json' assert { type: 'json' }
 import { capitalize } from '../../../sites/shared/utils.mjs'
 
 const fs = fs_.promises
@@ -22,10 +22,9 @@ export const prebuildDesigns = async () => {
   const designs = []
 
   // Compile list of designs
-  for (const type in designsByType) {
-    if (type !== 'utilities') {
-      for (const design in designsByType[type]) designs.push(design)
-    }
+  for (const design in allDesigns) {
+    console.log(design)
+    if (allDesigns[design]?.tags) designs.push(design)
   }
 
   const measurements = {}

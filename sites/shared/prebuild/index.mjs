@@ -1,5 +1,4 @@
 import { prebuildMdx } from './mdx.mjs'
-import { prebuildStrapi } from './strapi.mjs'
 import { prebuildNavigation } from './navigation.mjs'
 import { prebuildContributors } from './contributors.mjs'
 import { prebuildPatrons } from './patrons.mjs'
@@ -11,10 +10,10 @@ import { generateOgImage } from './og/index.mjs'
 const run = async () => {
   const SITE = process.env.SITE || 'lab'
   if (SITE === 'org') {
-    const mdxPages = await prebuildMdx(SITE)
-    const [posts] = await prebuildStrapi(SITE)
-    prebuildNavigation(mdxPages, posts, SITE)
     prebuildDesigns()
+    const mdxPages = await prebuildMdx(SITE)
+    const posts = {}
+    prebuildNavigation(mdxPages, posts, SITE)
   } else if (SITE === 'dev') {
     const mdxPages = await prebuildMdx(SITE)
     if (process.env.GENERATE_OG_IMAGES) {

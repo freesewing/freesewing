@@ -130,6 +130,10 @@ const sitePages = (t = false, control = 99) => {
       t: t(`designs:${design}.t`),
       s: `designs/${design}`,
     }
+    pages.new.pattern[design] = {
+      t: t(`account:generateANewThing`, { thing: t(`designs:${design}.t`) }),
+      s: `new/patterns/${design}`,
+    }
   }
   for (const tag of tags) {
     pages.designs.tags[tag] = {

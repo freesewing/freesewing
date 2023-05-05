@@ -61,7 +61,7 @@ const SignUpPage = ({ page }) => {
       // Here to keep the stupid linter happy
       console.log(err)
     }
-    if (res.result === 'success') setResult('success')
+    if (res.data.result === 'success') setResult('success')
     else {
       setModal(
         <ModalWrapper bg="base-100 lg:bg-base-300">

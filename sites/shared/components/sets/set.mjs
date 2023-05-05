@@ -6,9 +6,10 @@ import { DesignTag } from 'shared/components/designs/tag.mjs'
 
 export const ns = ['design', 'designs', 'tags']
 
-export const Design = ({ name }) => {
+export const Set = ({ name }) => {
   const { t } = useTranslation(ns)
-  console.log(name)
+
+  return <p>fixme</p>
   return (
     <Link
       href={`/new/pattern/${name}`}
