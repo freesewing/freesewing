@@ -1,15 +1,21 @@
 ---
 tubular:
   title: Tubular
-  description: Forms a tubular shirt, which is a shirt where the hips and chests are identical. Set this to true and leave bodyShape at its default value (0%) for a perfectly vertical, tubular side seam. This setting overrides any values set for the hips.
+  description: Forms a tubular shirt, which is a shirt where the hips and chests are the same width and connected by a straight seam. Set this to true for a bodice that is perfectly rectangular below the armholes. This setting overrides any values set for the hips or body shape.
 
 bodyHem:
   title: Body hem
-  description: Sets the hem allowance along the bottom of the body of the shirt, as a percentage of the seam allowance.
+  description: Sets the hem allowance along the bottom of the body of the shirt, as a multiple of the seam allowance.
 
 bodyLength:
   title: Body length
-  description: Controls how long the shirt is, with 100% stopping at the hips.
+  description: "Controls how long the shirt is.|
+   - Up to 80% or so will produce a crop top.|
+   - 100% ends at the waistband of most pants, with no overlap.|
+   - 120% will produce a typical t-shirt.|
+   - 140% will produce a somewhat longer shirt that is less prone to untucking or riding up.|
+   - 200%+ can be used to make a simple t-shirt dress. It's suggested that you set straight sides to false, and adjust the side shape (under advanced options) for t-shirt dresses."
+
 
 bodyShape:
   title: Body shape
