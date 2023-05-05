@@ -137,7 +137,7 @@ technology. So they imposed further restrictions which made it impossible for
 kernel developers to use their product.
 
 Faced with this dilemma, and in a move that would forever cement his reputation
-as an exceptionally gifted software engineer, Linus Torvals decided to take
+as an exceptionally gifted software engineer, Linus Torvalds decided to take
 matters into his own hands. He sat down and over the couple of a couple of
 days wrote his own version control system: git.
 
@@ -313,7 +313,7 @@ Which explains why some people think Linus is Satoshi. But he's not.
 
 Enough about blockchain. While it's a useful crutch to explain how different
 commits are linked together in git, it would be a distraction to talk about it
-any futher.
+any further.
 
 Especially since we're finally getting to the good stuff:
 Let's start using git in the next chapter.
@@ -515,7 +515,7 @@ file .git/objects/0d/ec2239efc0bbfabe40
 If you look in the `.git/objects` folder you should see that it has changed.
 A new folder and file appeared which holds a bunch of compressed data.
 
-The reason I'm asking you to go digging through these files it because this is
+The reason I'm asking you to go digging through these files is because this is
 an important thing that many people, even those rather familiar with git, don't
 realize. And that is that **git add writes data**.
 
@@ -679,7 +679,7 @@ the next chapter, when we talk about labels in git.
 ## Chapter 15: Labels in git
 
 Our DAG now consists of a single node. There is exactly one commit, and it
-is not related to any other commits. But it does have labels. Labels is how
+is not related to any other commits. But it does have labels. Labels are how
 git keeps track of different branches, which is something we'll
 take a closer look at in a later chapter.
 
@@ -1259,7 +1259,7 @@ like best. The choice is yours.
 ## Chapter 21: Merging in git
 
 When we first discussed branching in git, we said that using branches is all
-about *isolating our work*. And -- just to clear on this -- this is true.
+about *isolating our work*. And -- just to be clear on this -- this is true.
 That's why we use branches.
 
 However, isolation is almost always a temporary state. We don't want to isolate
@@ -2853,7 +2853,7 @@ strong feelings on the matter, others see the commit messages as a nuisance
 and put in whatever just to make git happy.
 
 There have been efforts to create rules for commit messages that people should
-adhere too, such as the *Conventional Commits* specification which you can read
+adhere to, such as the *Conventional Commits* specification which you can read
 about at [conventionalcommits.org](https://www.conventionalcommits.org/). But
 at the end of the day, how you write your commit messages depends a lot on
 context. Is it a project you work on alone, or do you work together with
