@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
- xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" class="freesewing" width="737.64mm" height="941.93mm" viewBox="0 0 737.64 941.93"
+ xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" class="freesewing" width="737.64mm" height="548.19mm" viewBox="0 0 737.64 548.19"
 >
 <style type="text/css"> <![CDATA[ 
 
@@ -318,12 +318,12 @@ svg.freesewing path.gridbox {
 <g id="sample-1container">
 
 <!-- Start of group #sample-2stack-shelly.front -->
-<g id="sample-2stack-shelly.front"  transform="translate(301.9041445384815, -67.99417171006179)">
+<g id="sample-2stack-shelly.front"  transform="translate(2.0000000000000493, -53.808539540641334)">
 
 <!-- Start of group #sample-2stack-shelly.front-part-shelly.front -->
 <g id="sample-2stack-shelly.front-part-shelly.front"  class="sample-1">
-<path  class="fabric" id="sample-21" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 65.43,69.99 C 51.91,92.42 26.19,106.95 0,106.95 L 0,600 L 214.87,600 z" />
-<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-22" d="M 0,131.6 L 15,131.6 L 15,575.35 L 0,575.35" />
+<path  class="fabric" id="sample-21" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 52.17,55.81 C 38.18,68.88 19.14,76.39 0,76.39 L 0,600 L 214.87,600 z" />
+<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-22" d="M 0,102.57 L 15,102.57 L 15,573.82 L 0,573.82" />
 <text><textPath xlink:href="#sample-22"  startOffset="50%" ><tspan  class="center fill-note">cutOnFoldAndGrainline</tspan></textPath>
 </text>
 <text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 100.955 350.97135)" x="100.96" y="350.97"><tspan>1 </tspan>
@@ -341,8 +341,8 @@ svg.freesewing path.gridbox {
 
 <!-- Start of group #sample-2stack-shelly.front-part-shelly.front -->
 <g id="sample-2stack-shelly.front-part-shelly.front"  class="sample-2">
-<path  class="fabric" id="sample-23" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 65.43,69.99 C 51.91,92.42 26.19,106.95 0,106.95 L 0,600 L 214.87,600 z" />
-<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-24" d="M 0,131.6 L 15,131.6 L 15,575.35 L 0,575.35" />
+<path  class="fabric" id="sample-23" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 55.46,59.33 C 41.23,74.35 20.69,83.18 0,83.18 L 0,600 L 214.87,600 z" />
+<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-24" d="M 0,109.03 L 15,109.03 L 15,574.16 L 0,574.16" />
 <text><textPath xlink:href="#sample-24"  startOffset="50%" ><tspan  class="center fill-note">cutOnFoldAndGrainline</tspan></textPath>
 </text>
 <text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 100.955 350.97135)" x="100.96" y="350.97"><tspan>1 </tspan>
@@ -360,8 +360,8 @@ svg.freesewing path.gridbox {
 
 <!-- Start of group #sample-2stack-shelly.front-part-shelly.front -->
 <g id="sample-2stack-shelly.front-part-shelly.front"  class="sample-3">
-<path  class="fabric" id="sample-25" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 65.43,69.99 C 51.91,92.42 26.19,106.95 0,106.95 L 0,600 L 214.87,600 z" />
-<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-26" d="M 0,131.6 L 15,131.6 L 15,575.35 L 0,575.35" />
+<path  class="fabric" id="sample-25" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 58.56,62.64 C 44.27,79.69 22.24,89.98 0,89.98 L 0,600 L 214.87,600 z" />
+<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-26" d="M 0,115.48 L 15,115.48 L 15,574.5 L 0,574.5" />
 <text><textPath xlink:href="#sample-26"  startOffset="50%" ><tspan  class="center fill-note">cutOnFoldAndGrainline</tspan></textPath>
 </text>
 <text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 100.955 350.97135)" x="100.96" y="350.97"><tspan>1 </tspan>
@@ -379,8 +379,8 @@ svg.freesewing path.gridbox {
 
 <!-- Start of group #sample-2stack-shelly.front-part-shelly.front -->
 <g id="sample-2stack-shelly.front-part-shelly.front"  class="sample-4">
-<path  class="fabric" id="sample-27" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 65.43,69.99 C 51.91,92.42 26.19,106.95 0,106.95 L 0,600 L 214.87,600 z" />
-<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-28" d="M 0,131.6 L 15,131.6 L 15,575.35 L 0,575.35" />
+<path  class="fabric" id="sample-27" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 61.46,65.75 C 47.32,84.9 23.8,96.77 0,96.77 L 0,600 L 214.87,600 z" />
+<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-28" d="M 0,121.93 L 15,121.93 L 15,574.84 L 0,574.84" />
 <text><textPath xlink:href="#sample-28"  startOffset="50%" ><tspan  class="center fill-note">cutOnFoldAndGrainline</tspan></textPath>
 </text>
 <text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 100.955 350.97135)" x="100.96" y="350.97"><tspan>1 </tspan>
@@ -398,8 +398,8 @@ svg.freesewing path.gridbox {
 
 <!-- Start of group #sample-2stack-shelly.front-part-shelly.front -->
 <g id="sample-2stack-shelly.front-part-shelly.front"  class="sample-5">
-<path  class="fabric" id="sample-29" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 65.43,69.99 C 51.91,92.42 26.19,106.95 0,106.95 L 0,600 L 214.87,600 z" />
-<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-210" d="M 0,131.6 L 15,131.6 L 15,575.35 L 0,575.35" />
+<path  class="fabric" id="sample-29" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 64.16,68.63 C 50.38,89.96 25.39,103.56 0,103.56 L 0,600 L 214.87,600 z" />
+<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-210" d="M 0,128.38 L 15,128.38 L 15,575.18 L 0,575.18" />
 <text><textPath xlink:href="#sample-210"  startOffset="50%" ><tspan  class="center fill-note">cutOnFoldAndGrainline</tspan></textPath>
 </text>
 <text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 100.955 350.97135)" x="100.96" y="350.97"><tspan>1 </tspan>
@@ -417,8 +417,8 @@ svg.freesewing path.gridbox {
 
 <!-- Start of group #sample-2stack-shelly.front-part-shelly.front -->
 <g id="sample-2stack-shelly.front-part-shelly.front"  class="sample-6">
-<path  class="fabric" id="sample-211" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 65.43,69.99 C 51.91,92.42 26.19,106.95 0,106.95 L 0,600 L 214.87,600 z" />
-<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-212" d="M 0,131.6 L 15,131.6 L 15,575.35 L 0,575.35" />
+<path  class="fabric" id="sample-211" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 66.65,71.3 C 53.45,94.85 26.99,110.35 0,110.35 L 0,600 L 214.87,600 z" />
+<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-212" d="M 0,134.83 L 15,134.83 L 15,575.52 L 0,575.52" />
 <text><textPath xlink:href="#sample-212"  startOffset="50%" ><tspan  class="center fill-note">cutOnFoldAndGrainline</tspan></textPath>
 </text>
 <text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 100.955 350.97135)" x="100.96" y="350.97"><tspan>1 </tspan>
@@ -436,8 +436,8 @@ svg.freesewing path.gridbox {
 
 <!-- Start of group #sample-2stack-shelly.front-part-shelly.front -->
 <g id="sample-2stack-shelly.front-part-shelly.front"  class="sample-7">
-<path  class="fabric" id="sample-213" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 65.43,69.99 C 51.91,92.42 26.19,106.95 0,106.95 L 0,600 L 214.87,600 z" />
-<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-214" d="M 0,131.6 L 15,131.6 L 15,575.35 L 0,575.35" />
+<path  class="fabric" id="sample-213" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 68.91,73.72 C 56.55,99.55 28.63,117.14 0,117.14 L 0,600 L 214.87,600 z" />
+<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-214" d="M 0,141.28 L 15,141.28 L 15,575.86 L 0,575.86" />
 <text><textPath xlink:href="#sample-214"  startOffset="50%" ><tspan  class="center fill-note">cutOnFoldAndGrainline</tspan></textPath>
 </text>
 <text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 100.955 350.97135)" x="100.96" y="350.97"><tspan>1 </tspan>
@@ -455,8 +455,8 @@ svg.freesewing path.gridbox {
 
 <!-- Start of group #sample-2stack-shelly.front-part-shelly.front -->
 <g id="sample-2stack-shelly.front-part-shelly.front"  class="sample-8">
-<path  class="fabric" id="sample-215" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 65.43,69.99 C 51.91,92.42 26.19,106.95 0,106.95 L 0,600 L 214.87,600 z" />
-<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-216" d="M 0,131.6 L 15,131.6 L 15,575.35 L 0,575.35" />
+<path  class="fabric" id="sample-215" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 70.94,75.89 C 59.69,104.04 30.32,123.93 0,123.93 L 0,600 L 214.87,600 z" />
+<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-216" d="M 0,147.73 L 15,147.73 L 15,576.2 L 0,576.2" />
 <text><textPath xlink:href="#sample-216"  startOffset="50%" ><tspan  class="center fill-note">cutOnFoldAndGrainline</tspan></textPath>
 </text>
 <text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 100.955 350.97135)" x="100.96" y="350.97"><tspan>1 </tspan>
@@ -474,8 +474,8 @@ svg.freesewing path.gridbox {
 
 <!-- Start of group #sample-2stack-shelly.front-part-shelly.front -->
 <g id="sample-2stack-shelly.front-part-shelly.front"  class="sample-9">
-<path  class="fabric" id="sample-217" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 65.43,69.99 C 51.91,92.42 26.19,106.95 0,106.95 L 0,600 L 214.87,600 z" />
-<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-218" d="M 0,131.6 L 15,131.6 L 15,575.35 L 0,575.35" />
+<path  class="fabric" id="sample-217" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 72.71,77.78 C 62.86,108.28 32.05,130.72 0,130.72 L 0,600 L 214.87,600 z" />
+<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-218" d="M 0,154.18 L 15,154.18 L 15,576.54 L 0,576.54" />
 <text><textPath xlink:href="#sample-218"  startOffset="50%" ><tspan  class="center fill-note">cutOnFoldAndGrainline</tspan></textPath>
 </text>
 <text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 100.955 350.97135)" x="100.96" y="350.97"><tspan>1 </tspan>
@@ -493,8 +493,8 @@ svg.freesewing path.gridbox {
 
 <!-- Start of group #sample-2stack-shelly.front-part-shelly.front -->
 <g id="sample-2stack-shelly.front-part-shelly.front"  class="sample-10">
-<path  class="fabric" id="sample-219" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 65.43,69.99 C 51.91,92.42 26.19,106.95 0,106.95 L 0,600 L 214.87,600 z" />
-<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-220" d="M 0,131.6 L 15,131.6 L 15,575.35 L 0,575.35" />
+<path  class="fabric" id="sample-219" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 74.18,79.36 C 66.1,112.24 33.86,137.51 0,137.51 L 0,600 L 214.87,600 z" />
+<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-220" d="M 0,160.63 L 15,160.63 L 15,576.88 L 0,576.88" />
 <text><textPath xlink:href="#sample-220"  startOffset="50%" ><tspan  class="center fill-note">cutOnFoldAndGrainline</tspan></textPath>
 </text>
 <text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 100.955 350.97135)" x="100.96" y="350.97"><tspan>1 </tspan>
@@ -513,12 +513,12 @@ svg.freesewing path.gridbox {
 <!-- end of group #sample-2stack-shelly.front -->
 
 <!-- Start of group #sample-3stack-shelly.back -->
-<g id="sample-3stack-shelly.back"  transform="translate(520.7741445384814, -67.99417171006179)">
+<g id="sample-3stack-shelly.back"  transform="translate(220.8700000000001, -53.808539540641334)">
 
 <!-- Start of group #sample-3stack-shelly.back-part-shelly.back -->
 <g id="sample-3stack-shelly.back-part-shelly.back"  class="sample-1">
-<path  class="fabric" id="sample-321" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 65.43,69.99 C 51.91,92.42 26.19,106.95 0,106.95 L 0,600 L 214.87,600 z" />
-<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-322" d="M 0,131.6 L 15,131.6 L 15,575.35 L 0,575.35" />
+<path  class="fabric" id="sample-321" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 52.17,55.81 C 38.18,68.88 19.14,76.39 0,76.39 L 0,600 L 214.87,600 z" />
+<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-322" d="M 0,102.57 L 15,102.57 L 15,573.82 L 0,573.82" />
 <text><textPath xlink:href="#sample-322"  startOffset="50%" ><tspan  class="center fill-note">cutOnFoldAndGrainline</tspan></textPath>
 </text>
 <text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 100.955 350.97135)" x="100.96" y="350.97"><tspan>2 </tspan>
@@ -536,8 +536,8 @@ svg.freesewing path.gridbox {
 
 <!-- Start of group #sample-3stack-shelly.back-part-shelly.back -->
 <g id="sample-3stack-shelly.back-part-shelly.back"  class="sample-2">
-<path  class="fabric" id="sample-323" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 65.43,69.99 C 51.91,92.42 26.19,106.95 0,106.95 L 0,600 L 214.87,600 z" />
-<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-324" d="M 0,131.6 L 15,131.6 L 15,575.35 L 0,575.35" />
+<path  class="fabric" id="sample-323" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 55.46,59.33 C 41.23,74.35 20.69,83.18 0,83.18 L 0,600 L 214.87,600 z" />
+<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-324" d="M 0,109.03 L 15,109.03 L 15,574.16 L 0,574.16" />
 <text><textPath xlink:href="#sample-324"  startOffset="50%" ><tspan  class="center fill-note">cutOnFoldAndGrainline</tspan></textPath>
 </text>
 <text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 100.955 350.97135)" x="100.96" y="350.97"><tspan>2 </tspan>
@@ -555,8 +555,8 @@ svg.freesewing path.gridbox {
 
 <!-- Start of group #sample-3stack-shelly.back-part-shelly.back -->
 <g id="sample-3stack-shelly.back-part-shelly.back"  class="sample-3">
-<path  class="fabric" id="sample-325" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 65.43,69.99 C 51.91,92.42 26.19,106.95 0,106.95 L 0,600 L 214.87,600 z" />
-<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-326" d="M 0,131.6 L 15,131.6 L 15,575.35 L 0,575.35" />
+<path  class="fabric" id="sample-325" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 58.56,62.64 C 44.27,79.69 22.24,89.98 0,89.98 L 0,600 L 214.87,600 z" />
+<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-326" d="M 0,115.48 L 15,115.48 L 15,574.5 L 0,574.5" />
 <text><textPath xlink:href="#sample-326"  startOffset="50%" ><tspan  class="center fill-note">cutOnFoldAndGrainline</tspan></textPath>
 </text>
 <text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 100.955 350.97135)" x="100.96" y="350.97"><tspan>2 </tspan>
@@ -574,8 +574,8 @@ svg.freesewing path.gridbox {
 
 <!-- Start of group #sample-3stack-shelly.back-part-shelly.back -->
 <g id="sample-3stack-shelly.back-part-shelly.back"  class="sample-4">
-<path  class="fabric" id="sample-327" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 65.43,69.99 C 51.91,92.42 26.19,106.95 0,106.95 L 0,600 L 214.87,600 z" />
-<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-328" d="M 0,131.6 L 15,131.6 L 15,575.35 L 0,575.35" />
+<path  class="fabric" id="sample-327" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 61.46,65.75 C 47.32,84.9 23.8,96.77 0,96.77 L 0,600 L 214.87,600 z" />
+<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-328" d="M 0,121.93 L 15,121.93 L 15,574.84 L 0,574.84" />
 <text><textPath xlink:href="#sample-328"  startOffset="50%" ><tspan  class="center fill-note">cutOnFoldAndGrainline</tspan></textPath>
 </text>
 <text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 100.955 350.97135)" x="100.96" y="350.97"><tspan>2 </tspan>
@@ -593,8 +593,8 @@ svg.freesewing path.gridbox {
 
 <!-- Start of group #sample-3stack-shelly.back-part-shelly.back -->
 <g id="sample-3stack-shelly.back-part-shelly.back"  class="sample-5">
-<path  class="fabric" id="sample-329" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 65.43,69.99 C 51.91,92.42 26.19,106.95 0,106.95 L 0,600 L 214.87,600 z" />
-<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-330" d="M 0,131.6 L 15,131.6 L 15,575.35 L 0,575.35" />
+<path  class="fabric" id="sample-329" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 64.16,68.63 C 50.38,89.96 25.39,103.56 0,103.56 L 0,600 L 214.87,600 z" />
+<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-330" d="M 0,128.38 L 15,128.38 L 15,575.18 L 0,575.18" />
 <text><textPath xlink:href="#sample-330"  startOffset="50%" ><tspan  class="center fill-note">cutOnFoldAndGrainline</tspan></textPath>
 </text>
 <text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 100.955 350.97135)" x="100.96" y="350.97"><tspan>2 </tspan>
@@ -612,8 +612,8 @@ svg.freesewing path.gridbox {
 
 <!-- Start of group #sample-3stack-shelly.back-part-shelly.back -->
 <g id="sample-3stack-shelly.back-part-shelly.back"  class="sample-6">
-<path  class="fabric" id="sample-331" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 65.43,69.99 C 51.91,92.42 26.19,106.95 0,106.95 L 0,600 L 214.87,600 z" />
-<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-332" d="M 0,131.6 L 15,131.6 L 15,575.35 L 0,575.35" />
+<path  class="fabric" id="sample-331" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 66.65,71.3 C 53.45,94.85 26.99,110.35 0,110.35 L 0,600 L 214.87,600 z" />
+<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-332" d="M 0,134.83 L 15,134.83 L 15,575.52 L 0,575.52" />
 <text><textPath xlink:href="#sample-332"  startOffset="50%" ><tspan  class="center fill-note">cutOnFoldAndGrainline</tspan></textPath>
 </text>
 <text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 100.955 350.97135)" x="100.96" y="350.97"><tspan>2 </tspan>
@@ -631,8 +631,8 @@ svg.freesewing path.gridbox {
 
 <!-- Start of group #sample-3stack-shelly.back-part-shelly.back -->
 <g id="sample-3stack-shelly.back-part-shelly.back"  class="sample-7">
-<path  class="fabric" id="sample-333" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 65.43,69.99 C 51.91,92.42 26.19,106.95 0,106.95 L 0,600 L 214.87,600 z" />
-<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-334" d="M 0,131.6 L 15,131.6 L 15,575.35 L 0,575.35" />
+<path  class="fabric" id="sample-333" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 68.91,73.72 C 56.55,99.55 28.63,117.14 0,117.14 L 0,600 L 214.87,600 z" />
+<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-334" d="M 0,141.28 L 15,141.28 L 15,575.86 L 0,575.86" />
 <text><textPath xlink:href="#sample-334"  startOffset="50%" ><tspan  class="center fill-note">cutOnFoldAndGrainline</tspan></textPath>
 </text>
 <text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 100.955 350.97135)" x="100.96" y="350.97"><tspan>2 </tspan>
@@ -650,8 +650,8 @@ svg.freesewing path.gridbox {
 
 <!-- Start of group #sample-3stack-shelly.back-part-shelly.back -->
 <g id="sample-3stack-shelly.back-part-shelly.back"  class="sample-8">
-<path  class="fabric" id="sample-335" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 65.43,69.99 C 51.91,92.42 26.19,106.95 0,106.95 L 0,600 L 214.87,600 z" />
-<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-336" d="M 0,131.6 L 15,131.6 L 15,575.35 L 0,575.35" />
+<path  class="fabric" id="sample-335" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 70.94,75.89 C 59.69,104.04 30.32,123.93 0,123.93 L 0,600 L 214.87,600 z" />
+<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-336" d="M 0,147.73 L 15,147.73 L 15,576.2 L 0,576.2" />
 <text><textPath xlink:href="#sample-336"  startOffset="50%" ><tspan  class="center fill-note">cutOnFoldAndGrainline</tspan></textPath>
 </text>
 <text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 100.955 350.97135)" x="100.96" y="350.97"><tspan>2 </tspan>
@@ -669,8 +669,8 @@ svg.freesewing path.gridbox {
 
 <!-- Start of group #sample-3stack-shelly.back-part-shelly.back -->
 <g id="sample-3stack-shelly.back-part-shelly.back"  class="sample-9">
-<path  class="fabric" id="sample-337" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 65.43,69.99 C 51.91,92.42 26.19,106.95 0,106.95 L 0,600 L 214.87,600 z" />
-<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-338" d="M 0,131.6 L 15,131.6 L 15,575.35 L 0,575.35" />
+<path  class="fabric" id="sample-337" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 72.71,77.78 C 62.86,108.28 32.05,130.72 0,130.72 L 0,600 L 214.87,600 z" />
+<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-338" d="M 0,154.18 L 15,154.18 L 15,576.54 L 0,576.54" />
 <text><textPath xlink:href="#sample-338"  startOffset="50%" ><tspan  class="center fill-note">cutOnFoldAndGrainline</tspan></textPath>
 </text>
 <text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 100.955 350.97135)" x="100.96" y="350.97"><tspan>2 </tspan>
@@ -688,8 +688,8 @@ svg.freesewing path.gridbox {
 
 <!-- Start of group #sample-3stack-shelly.back-part-shelly.back -->
 <g id="sample-3stack-shelly.back-part-shelly.back"  class="sample-10">
-<path  class="fabric" id="sample-339" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 65.43,69.99 C 51.91,92.42 26.19,106.95 0,106.95 L 0,600 L 214.87,600 z" />
-<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-340" d="M 0,131.6 L 15,131.6 L 15,575.35 L 0,575.35" />
+<path  class="fabric" id="sample-339" d="M 214.87,600 L 214.87,203.89 C 188.45,201.6 174.99,187.2 161.53,172.8 L 74.18,79.36 C 66.1,112.24 33.86,137.51 0,137.51 L 0,600 L 214.87,600 z" />
+<path  class="note" marker-start="url(#cutonfoldFrom)" marker-end="url(#cutonfoldTo)" data-text="cutOnFoldAndGrainline" data-text-class="center fill-note" id="sample-340" d="M 0,160.63 L 15,160.63 L 15,576.88 L 0,576.88" />
 <text><textPath xlink:href="#sample-340"  startOffset="50%" ><tspan  class="center fill-note">cutOnFoldAndGrainline</tspan></textPath>
 </text>
 <text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 100.955 350.97135)" x="100.96" y="350.97"><tspan>2 </tspan>
@@ -708,352 +708,352 @@ svg.freesewing path.gridbox {
 <!-- end of group #sample-3stack-shelly.back -->
 
 <!-- Start of group #sample-4stack-shelly.raglanSleeve -->
-<g id="sample-4stack-shelly.raglanSleeve"  transform="translate(149.95207226924072, -49.60915820121213)">
+<g id="sample-4stack-shelly.raglanSleeve"  transform="translate(587.6920722692407, -21.306646690762353)">
 
 <!-- Start of group #sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve -->
 <g id="sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve"  class="sample-1">
-<path  class="fabric" id="sample-441" d="M 147.95,256.61 C 123.27,246.9 114.47,229.26 105.66,211.63 L 25.77,51.61 C 8.35,67.51 -14.79,80.41 -37.96,76.03 L -105.66,211.63 C -114.47,229.26 -123.27,246.9 -147.95,256.61 L 147.95,256.61 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" id="sample-442" d="M 0,85.41 L 0,247.6" />
+<path  class="fabric" id="sample-441" d="M 127,380.53 L 147.95,256.61 C 123.27,246.9 114.47,229.26 105.66,211.63 L 34.13,68.35 C 13.03,78.88 -13.03,78.88 -34.13,68.35 L -105.66,211.63 C -114.47,229.26 -123.27,246.9 -147.95,256.61 L -127,380.53 L 127,380.53 z" />
+<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" id="sample-442" d="M 0,91.6 L 0,365.33" />
 <text><textPath xlink:href="#sample-442"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
 </text>
-<path  class="scalebox imperial fill-current" id="sample-443" d="M -50.8,200.14 L -50.8,250.94 L 50.8,250.94 L 50.8,200.14 z" />
-<path  class="scalebox metric fill-bg" id="sample-444" d="M -50,200.54 L -50,250.54 L 50,250.54 L 50,200.54 z" />
-<text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 0 85.53657927355948)" x="0" y="85.54"><tspan>3 </tspan>
+<path  class="scalebox imperial fill-current" id="sample-443" d="M -50.8,241.44 L -50.8,292.24 L 50.8,292.24 L 50.8,241.44 z" />
+<path  class="scalebox metric fill-bg" id="sample-444" d="M -50,241.84 L -50,291.84 L 50,291.84 L 50,241.84 z" />
+<text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 0 126.84484594022615)" x="0" y="126.84"><tspan>3 </tspan>
 </text>
-<text  class="text-lg fill-current font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -4.898587196589413e-16 93.53657927355948)" x="0" y="93.54"><tspan>sleeve </tspan>
+<text  class="text-lg fill-current font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -4.898587196589413e-16 134.84484594022615)" x="0" y="134.84"><tspan>sleeve </tspan>
 </text>
-<text  class="fill-note" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -9.797174393178826e-16 101.53657927355948)" x="0" y="101.54"><tspan>shelly v3.0.0-alpha.9 </tspan>
+<text  class="fill-note" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -9.797174393178826e-16 142.84484594022615)" x="0" y="142.84"><tspan>shelly v3.0.0-alpha.9 </tspan>
 </text>
-<text  class="text-sm" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -1.3471114790620886e-15 107.53657927355948)" x="0" y="107.54"><tspan>Thursday, May 4, 2023@ 21:45 </tspan>
+<text  class="text-sm" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -1.3471114790620886e-15 148.84484594022615)" x="0" y="148.84"><tspan>Thursday, May 4, 2023@ 21:45 </tspan>
 </text>
-<text  class="text-sm" x="-45" y="210.54"><tspan>FreeSewing </tspan>
+<text  class="text-sm" x="-45" y="251.84"><tspan>FreeSewing </tspan>
 </text>
-<text  class="text-lg" x="-45" y="220.54"><tspan>shelly v3.0.0-alpha.9 </tspan>
+<text  class="text-lg" x="-45" y="261.84"><tspan>shelly v3.0.0-alpha.9 </tspan>
 </text>
-<text  class="text-xs" x="-45" y="232.54"><tspan>supportFreesewingBecomeAPatron </tspan>
+<text  class="text-xs" x="-45" y="273.84"><tspan>supportFreesewingBecomeAPatron </tspan>
 </text>
-<text  class="text-sm fill-note" x="-45" y="237.54"><tspan>freesewing.org/patrons/join </tspan>
+<text  class="text-sm fill-note" x="-45" y="278.84"><tspan>freesewing.org/patrons/join </tspan>
 </text>
-<text  class="text-xs center" x="0" y="245.54"><tspan>theWhiteInsideOfThisBoxShouldMeasure 10cm x 5cm </tspan>
+<text  class="text-xs center" x="0" y="286.84"><tspan>theWhiteInsideOfThisBoxShouldMeasure 10cm x 5cm </tspan>
 </text>
-<text  class="text-xs center " x="0" y="249.54"><tspan>theBlackOutsideOfThisBoxShouldMeasure 4″ x 2″ </tspan>
+<text  class="text-xs center " x="0" y="290.84"><tspan>theBlackOutsideOfThisBoxShouldMeasure 4″ x 2″ </tspan>
 </text>
 <use x="-105.66" y="211.63" xlink:href="#notch"  transform="translate(-105.66, 211.63) scale(1) translate(105.66, -211.63)"></use>
 <use x="105.66" y="211.63" xlink:href="#bnotch"  transform="translate(105.66, 211.63) scale(1) translate(-105.66, -211.63)"></use>
-<use x="0" y="155.54" xlink:href="#logo"  transform="translate(0, 155.54) scale(1) translate(0, -155.54)"></use>
+<use x="0" y="196.84" xlink:href="#logo"  transform="translate(0, 196.84) scale(1) translate(0, -196.84)"></use>
 </g>
 <!-- end of group #sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve -->
 
 <!-- Start of group #sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve -->
 <g id="sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve"  class="sample-2">
-<path  class="fabric" id="sample-445" d="M 133.4,342.67 L 147.95,256.61 C 123.27,246.9 114.47,229.26 105.66,211.63 L 25.77,51.61 C 8.35,67.51 -14.79,80.41 -37.96,76.03 L -105.66,211.63 C -114.47,229.26 -123.27,246.9 -147.95,256.61 L -133.4,342.67 L 133.4,342.67 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" id="sample-446" d="M 0,89.71 L 0,329.35" />
+<path  class="fabric" id="sample-445" d="M 127,380.53 L 147.95,256.61 C 123.27,246.9 114.47,229.26 105.66,211.63 L 32.66,65.42 C 12.24,77.21 -13.67,80.08 -35.37,70.85 L -105.66,211.63 C -114.47,229.26 -123.27,246.9 -147.95,256.61 L -127,380.53 L 127,380.53 z" />
+<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" id="sample-446" d="M 0,91.6 L 0,365.33" />
 <text><textPath xlink:href="#sample-446"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
 </text>
-<path  class="scalebox imperial fill-current" id="sample-447" d="M -50.8,228.82 L -50.8,279.62 L 50.8,279.62 L 50.8,228.82 z" />
-<path  class="scalebox metric fill-bg" id="sample-448" d="M -50,229.22 L -50,279.22 L 50,279.22 L 50,229.22 z" />
-<text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 0 114.22287556985577)" x="0" y="114.22"><tspan>3 </tspan>
+<path  class="scalebox imperial fill-current" id="sample-447" d="M -50.8,241.44 L -50.8,292.24 L 50.8,292.24 L 50.8,241.44 z" />
+<path  class="scalebox metric fill-bg" id="sample-448" d="M -50,241.84 L -50,291.84 L 50,291.84 L 50,241.84 z" />
+<text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 0 126.84484594022615)" x="0" y="126.84"><tspan>3 </tspan>
 </text>
-<text  class="text-lg fill-current font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -4.898587196589413e-16 122.22287556985577)" x="0" y="122.22"><tspan>sleeve </tspan>
+<text  class="text-lg fill-current font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -4.898587196589413e-16 134.84484594022615)" x="0" y="134.84"><tspan>sleeve </tspan>
 </text>
-<text  class="fill-note" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -9.797174393178826e-16 130.22287556985577)" x="0" y="130.22"><tspan>shelly v3.0.0-alpha.9 </tspan>
+<text  class="fill-note" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -9.797174393178826e-16 142.84484594022615)" x="0" y="142.84"><tspan>shelly v3.0.0-alpha.9 </tspan>
 </text>
-<text  class="text-sm" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -1.3471114790620886e-15 136.22287556985577)" x="0" y="136.22"><tspan>Thursday, May 4, 2023@ 21:45 </tspan>
+<text  class="text-sm" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -1.3471114790620886e-15 148.84484594022615)" x="0" y="148.84"><tspan>Thursday, May 4, 2023@ 21:45 </tspan>
 </text>
-<text  class="text-sm" x="-45" y="239.22"><tspan>FreeSewing </tspan>
+<text  class="text-sm" x="-45" y="251.84"><tspan>FreeSewing </tspan>
 </text>
-<text  class="text-lg" x="-45" y="249.22"><tspan>shelly v3.0.0-alpha.9 </tspan>
+<text  class="text-lg" x="-45" y="261.84"><tspan>shelly v3.0.0-alpha.9 </tspan>
 </text>
-<text  class="text-xs" x="-45" y="261.22"><tspan>supportFreesewingBecomeAPatron </tspan>
+<text  class="text-xs" x="-45" y="273.84"><tspan>supportFreesewingBecomeAPatron </tspan>
 </text>
-<text  class="text-sm fill-note" x="-45" y="266.22"><tspan>freesewing.org/patrons/join </tspan>
+<text  class="text-sm fill-note" x="-45" y="278.84"><tspan>freesewing.org/patrons/join </tspan>
 </text>
-<text  class="text-xs center" x="0" y="274.22"><tspan>theWhiteInsideOfThisBoxShouldMeasure 10cm x 5cm </tspan>
+<text  class="text-xs center" x="0" y="286.84"><tspan>theWhiteInsideOfThisBoxShouldMeasure 10cm x 5cm </tspan>
 </text>
-<text  class="text-xs center " x="0" y="278.22"><tspan>theBlackOutsideOfThisBoxShouldMeasure 4″ x 2″ </tspan>
+<text  class="text-xs center " x="0" y="290.84"><tspan>theBlackOutsideOfThisBoxShouldMeasure 4″ x 2″ </tspan>
 </text>
 <use x="-105.66" y="211.63" xlink:href="#notch"  transform="translate(-105.66, 211.63) scale(1) translate(105.66, -211.63)"></use>
 <use x="105.66" y="211.63" xlink:href="#bnotch"  transform="translate(105.66, 211.63) scale(1) translate(-105.66, -211.63)"></use>
-<use x="0" y="184.22" xlink:href="#logo"  transform="translate(0, 184.22) scale(1) translate(0, -184.22)"></use>
+<use x="0" y="196.84" xlink:href="#logo"  transform="translate(0, 196.84) scale(1) translate(0, -196.84)"></use>
 </g>
 <!-- end of group #sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve -->
 
 <!-- Start of group #sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve -->
 <g id="sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve"  class="sample-3">
-<path  class="fabric" id="sample-449" d="M 122.43,425.65 L 147.95,256.61 C 123.27,246.9 114.47,229.26 105.66,211.63 L 25.77,51.61 C 8.35,67.51 -14.79,80.41 -37.96,76.03 L -105.66,211.63 C -114.47,229.26 -123.27,246.9 -147.95,256.61 L -122.43,425.65 L 122.43,425.65 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" id="sample-450" d="M 0,93.86 L 0,408.18" />
+<path  class="fabric" id="sample-449" d="M 127,380.53 L 147.95,256.61 C 123.27,246.9 114.47,229.26 105.66,211.63 L 30.98,62.05 C 11.32,75.07 -14.18,80.8 -36.4,72.91 L -105.66,211.63 C -114.47,229.26 -123.27,246.9 -147.95,256.61 L -127,380.53 L 127,380.53 z" />
+<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" id="sample-450" d="M 0,91.6 L 0,365.33" />
 <text><textPath xlink:href="#sample-450"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
 </text>
-<path  class="scalebox imperial fill-current" id="sample-451" d="M -50.8,256.48 L -50.8,307.28 L 50.8,307.28 L 50.8,256.48 z" />
-<path  class="scalebox metric fill-bg" id="sample-452" d="M -50,256.88 L -50,306.88 L 50,306.88 L 50,256.88 z" />
-<text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 0 141.8818829772632)" x="0" y="141.88"><tspan>3 </tspan>
+<path  class="scalebox imperial fill-current" id="sample-451" d="M -50.8,241.44 L -50.8,292.24 L 50.8,292.24 L 50.8,241.44 z" />
+<path  class="scalebox metric fill-bg" id="sample-452" d="M -50,241.84 L -50,291.84 L 50,291.84 L 50,241.84 z" />
+<text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 0 126.84484594022615)" x="0" y="126.84"><tspan>3 </tspan>
 </text>
-<text  class="text-lg fill-current font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -4.898587196589413e-16 149.8818829772632)" x="0" y="149.88"><tspan>sleeve </tspan>
+<text  class="text-lg fill-current font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -4.898587196589413e-16 134.84484594022615)" x="0" y="134.84"><tspan>sleeve </tspan>
 </text>
-<text  class="fill-note" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -9.797174393178826e-16 157.8818829772632)" x="0" y="157.88"><tspan>shelly v3.0.0-alpha.9 </tspan>
+<text  class="fill-note" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -9.797174393178826e-16 142.84484594022615)" x="0" y="142.84"><tspan>shelly v3.0.0-alpha.9 </tspan>
 </text>
-<text  class="text-sm" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -1.3471114790620886e-15 163.8818829772632)" x="0" y="163.88"><tspan>Thursday, May 4, 2023@ 21:45 </tspan>
+<text  class="text-sm" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -1.3471114790620886e-15 148.84484594022615)" x="0" y="148.84"><tspan>Thursday, May 4, 2023@ 21:45 </tspan>
 </text>
-<text  class="text-sm" x="-45" y="266.88"><tspan>FreeSewing </tspan>
+<text  class="text-sm" x="-45" y="251.84"><tspan>FreeSewing </tspan>
 </text>
-<text  class="text-lg" x="-45" y="276.88"><tspan>shelly v3.0.0-alpha.9 </tspan>
+<text  class="text-lg" x="-45" y="261.84"><tspan>shelly v3.0.0-alpha.9 </tspan>
 </text>
-<text  class="text-xs" x="-45" y="288.88"><tspan>supportFreesewingBecomeAPatron </tspan>
+<text  class="text-xs" x="-45" y="273.84"><tspan>supportFreesewingBecomeAPatron </tspan>
 </text>
-<text  class="text-sm fill-note" x="-45" y="293.88"><tspan>freesewing.org/patrons/join </tspan>
+<text  class="text-sm fill-note" x="-45" y="278.84"><tspan>freesewing.org/patrons/join </tspan>
 </text>
-<text  class="text-xs center" x="0" y="301.88"><tspan>theWhiteInsideOfThisBoxShouldMeasure 10cm x 5cm </tspan>
+<text  class="text-xs center" x="0" y="286.84"><tspan>theWhiteInsideOfThisBoxShouldMeasure 10cm x 5cm </tspan>
 </text>
-<text  class="text-xs center " x="0" y="305.88"><tspan>theBlackOutsideOfThisBoxShouldMeasure 4″ x 2″ </tspan>
+<text  class="text-xs center " x="0" y="290.84"><tspan>theBlackOutsideOfThisBoxShouldMeasure 4″ x 2″ </tspan>
 </text>
 <use x="-105.66" y="211.63" xlink:href="#notch"  transform="translate(-105.66, 211.63) scale(1) translate(105.66, -211.63)"></use>
 <use x="105.66" y="211.63" xlink:href="#bnotch"  transform="translate(105.66, 211.63) scale(1) translate(-105.66, -211.63)"></use>
-<use x="0" y="211.88" xlink:href="#logo"  transform="translate(0, 211.88) scale(1) translate(0, -211.88)"></use>
+<use x="0" y="196.84" xlink:href="#logo"  transform="translate(0, 196.84) scale(1) translate(0, -196.84)"></use>
 </g>
 <!-- end of group #sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve -->
 
 <!-- Start of group #sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve -->
 <g id="sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve"  class="sample-4">
-<path  class="fabric" id="sample-453" d="M 114.27,506.2 L 147.95,256.61 C 123.27,246.9 114.47,229.26 105.66,211.63 L 25.77,51.61 C 8.35,67.51 -14.79,80.41 -37.96,76.03 L -105.66,211.63 C -114.47,229.26 -123.27,246.9 -147.95,256.61 L -114.27,506.2 L 114.27,506.2 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" id="sample-454" d="M 0,97.88 L 0,484.71" />
+<path  class="fabric" id="sample-453" d="M 127,380.53 L 147.95,256.61 C 123.27,246.9 114.47,229.26 105.66,211.63 L 29.08,58.23 C 10.25,72.43 -14.54,81.03 -37.21,74.52 L -105.66,211.63 C -114.47,229.26 -123.27,246.9 -147.95,256.61 L -127,380.53 L 127,380.53 z" />
+<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" id="sample-454" d="M 0,91.6 L 0,365.33" />
 <text><textPath xlink:href="#sample-454"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
 </text>
-<path  class="scalebox imperial fill-current" id="sample-455" d="M -50.8,283.33 L -50.8,334.13 L 50.8,334.13 L 50.8,283.33 z" />
-<path  class="scalebox metric fill-bg" id="sample-456" d="M -50,283.73 L -50,333.73 L 50,333.73 L 50,283.73 z" />
-<text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 0 168.73373482911504)" x="0" y="168.73"><tspan>3 </tspan>
+<path  class="scalebox imperial fill-current" id="sample-455" d="M -50.8,241.44 L -50.8,292.24 L 50.8,292.24 L 50.8,241.44 z" />
+<path  class="scalebox metric fill-bg" id="sample-456" d="M -50,241.84 L -50,291.84 L 50,291.84 L 50,241.84 z" />
+<text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 0 126.84484594022615)" x="0" y="126.84"><tspan>3 </tspan>
 </text>
-<text  class="text-lg fill-current font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -4.898587196589413e-16 176.73373482911504)" x="0" y="176.73"><tspan>sleeve </tspan>
+<text  class="text-lg fill-current font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -4.898587196589413e-16 134.84484594022615)" x="0" y="134.84"><tspan>sleeve </tspan>
 </text>
-<text  class="fill-note" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -9.797174393178826e-16 184.73373482911504)" x="0" y="184.73"><tspan>shelly v3.0.0-alpha.9 </tspan>
+<text  class="fill-note" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -9.797174393178826e-16 142.84484594022615)" x="0" y="142.84"><tspan>shelly v3.0.0-alpha.9 </tspan>
 </text>
-<text  class="text-sm" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -1.3471114790620886e-15 190.73373482911504)" x="0" y="190.73"><tspan>Thursday, May 4, 2023@ 21:45 </tspan>
+<text  class="text-sm" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -1.3471114790620886e-15 148.84484594022615)" x="0" y="148.84"><tspan>Thursday, May 4, 2023@ 21:45 </tspan>
 </text>
-<text  class="text-sm" x="-45" y="293.73"><tspan>FreeSewing </tspan>
+<text  class="text-sm" x="-45" y="251.84"><tspan>FreeSewing </tspan>
 </text>
-<text  class="text-lg" x="-45" y="303.73"><tspan>shelly v3.0.0-alpha.9 </tspan>
+<text  class="text-lg" x="-45" y="261.84"><tspan>shelly v3.0.0-alpha.9 </tspan>
 </text>
-<text  class="text-xs" x="-45" y="315.73"><tspan>supportFreesewingBecomeAPatron </tspan>
+<text  class="text-xs" x="-45" y="273.84"><tspan>supportFreesewingBecomeAPatron </tspan>
 </text>
-<text  class="text-sm fill-note" x="-45" y="320.73"><tspan>freesewing.org/patrons/join </tspan>
+<text  class="text-sm fill-note" x="-45" y="278.84"><tspan>freesewing.org/patrons/join </tspan>
 </text>
-<text  class="text-xs center" x="0" y="328.73"><tspan>theWhiteInsideOfThisBoxShouldMeasure 10cm x 5cm </tspan>
+<text  class="text-xs center" x="0" y="286.84"><tspan>theWhiteInsideOfThisBoxShouldMeasure 10cm x 5cm </tspan>
 </text>
-<text  class="text-xs center " x="0" y="332.73"><tspan>theBlackOutsideOfThisBoxShouldMeasure 4″ x 2″ </tspan>
+<text  class="text-xs center " x="0" y="290.84"><tspan>theBlackOutsideOfThisBoxShouldMeasure 4″ x 2″ </tspan>
 </text>
 <use x="-105.66" y="211.63" xlink:href="#notch"  transform="translate(-105.66, 211.63) scale(1) translate(105.66, -211.63)"></use>
 <use x="105.66" y="211.63" xlink:href="#bnotch"  transform="translate(105.66, 211.63) scale(1) translate(-105.66, -211.63)"></use>
-<use x="0" y="238.73" xlink:href="#logo"  transform="translate(0, 238.73) scale(1) translate(0, -238.73)"></use>
+<use x="0" y="196.84" xlink:href="#logo"  transform="translate(0, 196.84) scale(1) translate(0, -196.84)"></use>
 </g>
 <!-- end of group #sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve -->
 
 <!-- Start of group #sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve -->
 <g id="sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve"  class="sample-5">
-<path  class="fabric" id="sample-457" d="M 106.11,586.76 L 147.95,256.61 C 123.27,246.9 114.47,229.26 105.66,211.63 L 25.77,51.61 C 8.35,67.51 -14.79,80.41 -37.96,76.03 L -105.66,211.63 C -114.47,229.26 -123.27,246.9 -147.95,256.61 L -106.11,586.76 L 106.11,586.76 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" id="sample-458" d="M 0,101.91 L 0,561.24" />
+<path  class="fabric" id="sample-457" d="M 127,380.53 L 147.95,256.61 C 123.27,246.9 114.47,229.26 105.66,211.63 L 26.93,53.94 C 9.02,69.29 -14.75,80.75 -37.77,75.65 L -105.66,211.63 C -114.47,229.26 -123.27,246.9 -147.95,256.61 L -127,380.53 L 127,380.53 z" />
+<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" id="sample-458" d="M 0,91.6 L 0,365.33" />
 <text><textPath xlink:href="#sample-458"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
 </text>
-<path  class="scalebox imperial fill-current" id="sample-459" d="M -50.8,310.19 L -50.8,360.99 L 50.8,360.99 L 50.8,310.19 z" />
-<path  class="scalebox metric fill-bg" id="sample-460" d="M -50,310.59 L -50,360.59 L 50,360.59 L 50,310.59 z" />
-<text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 0 195.58558668096688)" x="0" y="195.59"><tspan>3 </tspan>
+<path  class="scalebox imperial fill-current" id="sample-459" d="M -50.8,241.44 L -50.8,292.24 L 50.8,292.24 L 50.8,241.44 z" />
+<path  class="scalebox metric fill-bg" id="sample-460" d="M -50,241.84 L -50,291.84 L 50,291.84 L 50,241.84 z" />
+<text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 0 126.84484594022615)" x="0" y="126.84"><tspan>3 </tspan>
 </text>
-<text  class="text-lg fill-current font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -4.898587196589413e-16 203.58558668096688)" x="0" y="203.59"><tspan>sleeve </tspan>
+<text  class="text-lg fill-current font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -4.898587196589413e-16 134.84484594022615)" x="0" y="134.84"><tspan>sleeve </tspan>
 </text>
-<text  class="fill-note" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -9.797174393178826e-16 211.58558668096688)" x="0" y="211.59"><tspan>shelly v3.0.0-alpha.9 </tspan>
+<text  class="fill-note" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -9.797174393178826e-16 142.84484594022615)" x="0" y="142.84"><tspan>shelly v3.0.0-alpha.9 </tspan>
 </text>
-<text  class="text-sm" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -1.3471114790620886e-15 217.58558668096688)" x="0" y="217.59"><tspan>Thursday, May 4, 2023@ 21:45 </tspan>
+<text  class="text-sm" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -1.3471114790620886e-15 148.84484594022615)" x="0" y="148.84"><tspan>Thursday, May 4, 2023@ 21:45 </tspan>
 </text>
-<text  class="text-sm" x="-45" y="320.59"><tspan>FreeSewing </tspan>
+<text  class="text-sm" x="-45" y="251.84"><tspan>FreeSewing </tspan>
 </text>
-<text  class="text-lg" x="-45" y="330.59"><tspan>shelly v3.0.0-alpha.9 </tspan>
+<text  class="text-lg" x="-45" y="261.84"><tspan>shelly v3.0.0-alpha.9 </tspan>
 </text>
-<text  class="text-xs" x="-45" y="342.59"><tspan>supportFreesewingBecomeAPatron </tspan>
+<text  class="text-xs" x="-45" y="273.84"><tspan>supportFreesewingBecomeAPatron </tspan>
 </text>
-<text  class="text-sm fill-note" x="-45" y="347.59"><tspan>freesewing.org/patrons/join </tspan>
+<text  class="text-sm fill-note" x="-45" y="278.84"><tspan>freesewing.org/patrons/join </tspan>
 </text>
-<text  class="text-xs center" x="0" y="355.59"><tspan>theWhiteInsideOfThisBoxShouldMeasure 10cm x 5cm </tspan>
+<text  class="text-xs center" x="0" y="286.84"><tspan>theWhiteInsideOfThisBoxShouldMeasure 10cm x 5cm </tspan>
 </text>
-<text  class="text-xs center " x="0" y="359.59"><tspan>theBlackOutsideOfThisBoxShouldMeasure 4″ x 2″ </tspan>
+<text  class="text-xs center " x="0" y="290.84"><tspan>theBlackOutsideOfThisBoxShouldMeasure 4″ x 2″ </tspan>
 </text>
 <use x="-105.66" y="211.63" xlink:href="#notch"  transform="translate(-105.66, 211.63) scale(1) translate(105.66, -211.63)"></use>
 <use x="105.66" y="211.63" xlink:href="#bnotch"  transform="translate(105.66, 211.63) scale(1) translate(-105.66, -211.63)"></use>
-<use x="0" y="265.59" xlink:href="#logo"  transform="translate(0, 265.59) scale(1) translate(0, -265.59)"></use>
+<use x="0" y="196.84" xlink:href="#logo"  transform="translate(0, 196.84) scale(1) translate(0, -196.84)"></use>
 </g>
 <!-- end of group #sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve -->
 
 <!-- Start of group #sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve -->
 <g id="sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve"  class="sample-6">
-<path  class="fabric" id="sample-461" d="M 97.95,667.31 L 147.95,256.61 C 123.27,246.9 114.47,229.26 105.66,211.63 L 25.77,51.61 C 8.35,67.51 -14.79,80.41 -37.96,76.03 L -105.66,211.63 C -114.47,229.26 -123.27,246.9 -147.95,256.61 L -97.95,667.31 L 97.95,667.31 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" id="sample-462" d="M 0,105.94 L 0,637.77" />
+<path  class="fabric" id="sample-461" d="M 127,380.53 L 147.95,256.61 C 123.27,246.9 114.47,229.26 105.66,211.63 L 24.54,49.14 C 7.63,65.59 -14.78,79.92 -38.09,76.28 L -105.66,211.63 C -114.47,229.26 -123.27,246.9 -147.95,256.61 L -127,380.53 L 127,380.53 z" />
+<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" id="sample-462" d="M 0,91.6 L 0,365.33" />
 <text><textPath xlink:href="#sample-462"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
 </text>
-<path  class="scalebox imperial fill-current" id="sample-463" d="M -50.8,337.04 L -50.8,387.84 L 50.8,387.84 L 50.8,337.04 z" />
-<path  class="scalebox metric fill-bg" id="sample-464" d="M -50,337.44 L -50,387.44 L 50,387.44 L 50,337.44 z" />
-<text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 0 222.43743853281876)" x="0" y="222.44"><tspan>3 </tspan>
+<path  class="scalebox imperial fill-current" id="sample-463" d="M -50.8,241.44 L -50.8,292.24 L 50.8,292.24 L 50.8,241.44 z" />
+<path  class="scalebox metric fill-bg" id="sample-464" d="M -50,241.84 L -50,291.84 L 50,291.84 L 50,241.84 z" />
+<text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 0 126.84484594022615)" x="0" y="126.84"><tspan>3 </tspan>
 </text>
-<text  class="text-lg fill-current font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -4.898587196589413e-16 230.43743853281876)" x="0" y="230.44"><tspan>sleeve </tspan>
+<text  class="text-lg fill-current font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -4.898587196589413e-16 134.84484594022615)" x="0" y="134.84"><tspan>sleeve </tspan>
 </text>
-<text  class="fill-note" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -9.797174393178826e-16 238.43743853281876)" x="0" y="238.44"><tspan>shelly v3.0.0-alpha.9 </tspan>
+<text  class="fill-note" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -9.797174393178826e-16 142.84484594022615)" x="0" y="142.84"><tspan>shelly v3.0.0-alpha.9 </tspan>
 </text>
-<text  class="text-sm" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -1.3471114790620886e-15 244.43743853281876)" x="0" y="244.44"><tspan>Thursday, May 4, 2023@ 21:45 </tspan>
+<text  class="text-sm" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -1.3471114790620886e-15 148.84484594022615)" x="0" y="148.84"><tspan>Thursday, May 4, 2023@ 21:45 </tspan>
 </text>
-<text  class="text-sm" x="-45" y="347.44"><tspan>FreeSewing </tspan>
+<text  class="text-sm" x="-45" y="251.84"><tspan>FreeSewing </tspan>
 </text>
-<text  class="text-lg" x="-45" y="357.44"><tspan>shelly v3.0.0-alpha.9 </tspan>
+<text  class="text-lg" x="-45" y="261.84"><tspan>shelly v3.0.0-alpha.9 </tspan>
 </text>
-<text  class="text-xs" x="-45" y="369.44"><tspan>supportFreesewingBecomeAPatron </tspan>
+<text  class="text-xs" x="-45" y="273.84"><tspan>supportFreesewingBecomeAPatron </tspan>
 </text>
-<text  class="text-sm fill-note" x="-45" y="374.44"><tspan>freesewing.org/patrons/join </tspan>
+<text  class="text-sm fill-note" x="-45" y="278.84"><tspan>freesewing.org/patrons/join </tspan>
 </text>
-<text  class="text-xs center" x="0" y="382.44"><tspan>theWhiteInsideOfThisBoxShouldMeasure 10cm x 5cm </tspan>
+<text  class="text-xs center" x="0" y="286.84"><tspan>theWhiteInsideOfThisBoxShouldMeasure 10cm x 5cm </tspan>
 </text>
-<text  class="text-xs center " x="0" y="386.44"><tspan>theBlackOutsideOfThisBoxShouldMeasure 4″ x 2″ </tspan>
+<text  class="text-xs center " x="0" y="290.84"><tspan>theBlackOutsideOfThisBoxShouldMeasure 4″ x 2″ </tspan>
 </text>
 <use x="-105.66" y="211.63" xlink:href="#notch"  transform="translate(-105.66, 211.63) scale(1) translate(105.66, -211.63)"></use>
 <use x="105.66" y="211.63" xlink:href="#bnotch"  transform="translate(105.66, 211.63) scale(1) translate(-105.66, -211.63)"></use>
-<use x="0" y="292.44" xlink:href="#logo"  transform="translate(0, 292.44) scale(1) translate(0, -292.44)"></use>
+<use x="0" y="196.84" xlink:href="#logo"  transform="translate(0, 196.84) scale(1) translate(0, -196.84)"></use>
 </g>
 <!-- end of group #sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve -->
 
 <!-- Start of group #sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve -->
 <g id="sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve"  class="sample-7">
-<path  class="fabric" id="sample-465" d="M 89.79,747.87 L 147.95,256.61 C 123.27,246.9 114.47,229.26 105.66,211.63 L 25.77,51.61 C 8.35,67.51 -14.79,80.41 -37.96,76.03 L -105.66,211.63 C -114.47,229.26 -123.27,246.9 -147.95,256.61 L -89.79,747.87 L 89.79,747.87 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" id="sample-466" d="M 0,109.97 L 0,714.29" />
+<path  class="fabric" id="sample-465" d="M 127,380.53 L 147.95,256.61 C 123.27,246.9 114.47,229.26 105.66,211.63 L 21.86,43.78 C 6.05,61.28 -14.63,78.48 -38.12,76.35 L -105.66,211.63 C -114.47,229.26 -123.27,246.9 -147.95,256.61 L -127,380.53 L 127,380.53 z" />
+<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" id="sample-466" d="M 0,91.6 L 0,365.33" />
 <text><textPath xlink:href="#sample-466"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
 </text>
-<path  class="scalebox imperial fill-current" id="sample-467" d="M -50.8,363.89 L -50.8,414.69 L 50.8,414.69 L 50.8,363.89 z" />
-<path  class="scalebox metric fill-bg" id="sample-468" d="M -50,364.29 L -50,414.29 L 50,414.29 L 50,364.29 z" />
-<text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 0 249.28929038467058)" x="0" y="249.29"><tspan>3 </tspan>
+<path  class="scalebox imperial fill-current" id="sample-467" d="M -50.8,241.44 L -50.8,292.24 L 50.8,292.24 L 50.8,241.44 z" />
+<path  class="scalebox metric fill-bg" id="sample-468" d="M -50,241.84 L -50,291.84 L 50,291.84 L 50,241.84 z" />
+<text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 0 126.84484594022615)" x="0" y="126.84"><tspan>3 </tspan>
 </text>
-<text  class="text-lg fill-current font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -4.898587196589413e-16 257.2892903846706)" x="0" y="257.29"><tspan>sleeve </tspan>
+<text  class="text-lg fill-current font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -4.898587196589413e-16 134.84484594022615)" x="0" y="134.84"><tspan>sleeve </tspan>
 </text>
-<text  class="fill-note" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -9.797174393178826e-16 265.2892903846706)" x="0" y="265.29"><tspan>shelly v3.0.0-alpha.9 </tspan>
+<text  class="fill-note" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -9.797174393178826e-16 142.84484594022615)" x="0" y="142.84"><tspan>shelly v3.0.0-alpha.9 </tspan>
 </text>
-<text  class="text-sm" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -1.3471114790620886e-15 271.2892903846706)" x="0" y="271.29"><tspan>Thursday, May 4, 2023@ 21:45 </tspan>
+<text  class="text-sm" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -1.3471114790620886e-15 148.84484594022615)" x="0" y="148.84"><tspan>Thursday, May 4, 2023@ 21:45 </tspan>
 </text>
-<text  class="text-sm" x="-45" y="374.29"><tspan>FreeSewing </tspan>
+<text  class="text-sm" x="-45" y="251.84"><tspan>FreeSewing </tspan>
 </text>
-<text  class="text-lg" x="-45" y="384.29"><tspan>shelly v3.0.0-alpha.9 </tspan>
+<text  class="text-lg" x="-45" y="261.84"><tspan>shelly v3.0.0-alpha.9 </tspan>
 </text>
-<text  class="text-xs" x="-45" y="396.29"><tspan>supportFreesewingBecomeAPatron </tspan>
+<text  class="text-xs" x="-45" y="273.84"><tspan>supportFreesewingBecomeAPatron </tspan>
 </text>
-<text  class="text-sm fill-note" x="-45" y="401.29"><tspan>freesewing.org/patrons/join </tspan>
+<text  class="text-sm fill-note" x="-45" y="278.84"><tspan>freesewing.org/patrons/join </tspan>
 </text>
-<text  class="text-xs center" x="0" y="409.29"><tspan>theWhiteInsideOfThisBoxShouldMeasure 10cm x 5cm </tspan>
+<text  class="text-xs center" x="0" y="286.84"><tspan>theWhiteInsideOfThisBoxShouldMeasure 10cm x 5cm </tspan>
 </text>
-<text  class="text-xs center " x="0" y="413.29"><tspan>theBlackOutsideOfThisBoxShouldMeasure 4″ x 2″ </tspan>
+<text  class="text-xs center " x="0" y="290.84"><tspan>theBlackOutsideOfThisBoxShouldMeasure 4″ x 2″ </tspan>
 </text>
 <use x="-105.66" y="211.63" xlink:href="#notch"  transform="translate(-105.66, 211.63) scale(1) translate(105.66, -211.63)"></use>
 <use x="105.66" y="211.63" xlink:href="#bnotch"  transform="translate(105.66, 211.63) scale(1) translate(-105.66, -211.63)"></use>
-<use x="0" y="319.29" xlink:href="#logo"  transform="translate(0, 319.29) scale(1) translate(0, -319.29)"></use>
+<use x="0" y="196.84" xlink:href="#logo"  transform="translate(0, 196.84) scale(1) translate(0, -196.84)"></use>
 </g>
 <!-- end of group #sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve -->
 
 <!-- Start of group #sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve -->
 <g id="sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve"  class="sample-8">
-<path  class="fabric" id="sample-469" d="M 81.63,828.42 L 147.95,256.61 C 123.27,246.9 114.47,229.26 105.66,211.63 L 25.77,51.61 C 8.35,67.51 -14.79,80.41 -37.96,76.03 L -105.66,211.63 C -114.47,229.26 -123.27,246.9 -147.95,256.61 L -81.63,828.42 L 81.63,828.42 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" id="sample-470" d="M 0,114 L 0,790.82" />
+<path  class="fabric" id="sample-469" d="M 127,380.53 L 147.95,256.61 C 123.27,246.9 114.47,229.26 105.66,211.63 L 18.86,37.78 C 4.24,56.28 -14.26,76.35 -37.83,75.78 L -105.66,211.63 C -114.47,229.26 -123.27,246.9 -147.95,256.61 L -127,380.53 L 127,380.53 z" />
+<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" id="sample-470" d="M 0,91.6 L 0,365.33" />
 <text><textPath xlink:href="#sample-470"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
 </text>
-<path  class="scalebox imperial fill-current" id="sample-471" d="M -50.8,390.74 L -50.8,441.54 L 50.8,441.54 L 50.8,390.74 z" />
-<path  class="scalebox metric fill-bg" id="sample-472" d="M -50,391.14 L -50,441.14 L 50,441.14 L 50,391.14 z" />
-<text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 0 276.1411422365224)" x="0" y="276.14"><tspan>3 </tspan>
+<path  class="scalebox imperial fill-current" id="sample-471" d="M -50.8,241.44 L -50.8,292.24 L 50.8,292.24 L 50.8,241.44 z" />
+<path  class="scalebox metric fill-bg" id="sample-472" d="M -50,241.84 L -50,291.84 L 50,291.84 L 50,241.84 z" />
+<text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 0 126.84484594022615)" x="0" y="126.84"><tspan>3 </tspan>
 </text>
-<text  class="text-lg fill-current font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -4.898587196589413e-16 284.1411422365224)" x="0" y="284.14"><tspan>sleeve </tspan>
+<text  class="text-lg fill-current font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -4.898587196589413e-16 134.84484594022615)" x="0" y="134.84"><tspan>sleeve </tspan>
 </text>
-<text  class="fill-note" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -9.797174393178826e-16 292.1411422365224)" x="0" y="292.14"><tspan>shelly v3.0.0-alpha.9 </tspan>
+<text  class="fill-note" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -9.797174393178826e-16 142.84484594022615)" x="0" y="142.84"><tspan>shelly v3.0.0-alpha.9 </tspan>
 </text>
-<text  class="text-sm" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -1.3471114790620886e-15 298.1411422365224)" x="0" y="298.14"><tspan>Thursday, May 4, 2023@ 21:45 </tspan>
+<text  class="text-sm" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -1.3471114790620886e-15 148.84484594022615)" x="0" y="148.84"><tspan>Thursday, May 4, 2023@ 21:45 </tspan>
 </text>
-<text  class="text-sm" x="-45" y="401.14"><tspan>FreeSewing </tspan>
+<text  class="text-sm" x="-45" y="251.84"><tspan>FreeSewing </tspan>
 </text>
-<text  class="text-lg" x="-45" y="411.14"><tspan>shelly v3.0.0-alpha.9 </tspan>
+<text  class="text-lg" x="-45" y="261.84"><tspan>shelly v3.0.0-alpha.9 </tspan>
 </text>
-<text  class="text-xs" x="-45" y="423.14"><tspan>supportFreesewingBecomeAPatron </tspan>
+<text  class="text-xs" x="-45" y="273.84"><tspan>supportFreesewingBecomeAPatron </tspan>
 </text>
-<text  class="text-sm fill-note" x="-45" y="428.14"><tspan>freesewing.org/patrons/join </tspan>
+<text  class="text-sm fill-note" x="-45" y="278.84"><tspan>freesewing.org/patrons/join </tspan>
 </text>
-<text  class="text-xs center" x="0" y="436.14"><tspan>theWhiteInsideOfThisBoxShouldMeasure 10cm x 5cm </tspan>
+<text  class="text-xs center" x="0" y="286.84"><tspan>theWhiteInsideOfThisBoxShouldMeasure 10cm x 5cm </tspan>
 </text>
-<text  class="text-xs center " x="0" y="440.14"><tspan>theBlackOutsideOfThisBoxShouldMeasure 4″ x 2″ </tspan>
+<text  class="text-xs center " x="0" y="290.84"><tspan>theBlackOutsideOfThisBoxShouldMeasure 4″ x 2″ </tspan>
 </text>
 <use x="-105.66" y="211.63" xlink:href="#notch"  transform="translate(-105.66, 211.63) scale(1) translate(105.66, -211.63)"></use>
 <use x="105.66" y="211.63" xlink:href="#bnotch"  transform="translate(105.66, 211.63) scale(1) translate(-105.66, -211.63)"></use>
-<use x="0" y="346.14" xlink:href="#logo"  transform="translate(0, 346.14) scale(1) translate(0, -346.14)"></use>
+<use x="0" y="196.84" xlink:href="#logo"  transform="translate(0, 196.84) scale(1) translate(0, -196.84)"></use>
 </g>
 <!-- end of group #sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve -->
 
 <!-- Start of group #sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve -->
 <g id="sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve"  class="sample-9">
-<path  class="fabric" id="sample-473" d="M 80,908.98 L 147.95,256.61 C 123.27,246.9 114.47,229.26 105.66,211.63 L 25.77,51.61 C 8.35,67.51 -14.79,80.41 -37.96,76.03 L -105.66,211.63 C -114.47,229.26 -123.27,246.9 -147.95,256.61 L -80,908.98 L 80,908.98 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" id="sample-474" d="M 0,118.02 L 0,867.35" />
+<path  class="fabric" id="sample-473" d="M 127,380.53 L 147.95,256.61 C 123.27,246.9 114.47,229.26 105.66,211.63 L 15.49,31.02 C 2.16,50.48 -13.61,73.41 -37.17,74.44 L -105.66,211.63 C -114.47,229.26 -123.27,246.9 -147.95,256.61 L -127,380.53 L 127,380.53 z" />
+<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" id="sample-474" d="M 0,91.6 L 0,365.33" />
 <text><textPath xlink:href="#sample-474"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
 </text>
-<path  class="scalebox imperial fill-current" id="sample-475" d="M -50.8,417.59 L -50.8,468.39 L 50.8,468.39 L 50.8,417.59 z" />
-<path  class="scalebox metric fill-bg" id="sample-476" d="M -50,417.99 L -50,467.99 L 50,467.99 L 50,417.99 z" />
-<text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 0 302.99299408837425)" x="0" y="302.99"><tspan>3 </tspan>
+<path  class="scalebox imperial fill-current" id="sample-475" d="M -50.8,241.44 L -50.8,292.24 L 50.8,292.24 L 50.8,241.44 z" />
+<path  class="scalebox metric fill-bg" id="sample-476" d="M -50,241.84 L -50,291.84 L 50,291.84 L 50,241.84 z" />
+<text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 0 126.84484594022615)" x="0" y="126.84"><tspan>3 </tspan>
 </text>
-<text  class="text-lg fill-current font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -4.898587196589413e-16 310.99299408837425)" x="0" y="310.99"><tspan>sleeve </tspan>
+<text  class="text-lg fill-current font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -4.898587196589413e-16 134.84484594022615)" x="0" y="134.84"><tspan>sleeve </tspan>
 </text>
-<text  class="fill-note" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -9.797174393178826e-16 318.99299408837425)" x="0" y="318.99"><tspan>shelly v3.0.0-alpha.9 </tspan>
+<text  class="fill-note" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -9.797174393178826e-16 142.84484594022615)" x="0" y="142.84"><tspan>shelly v3.0.0-alpha.9 </tspan>
 </text>
-<text  class="text-sm" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -1.3471114790620886e-15 324.99299408837425)" x="0" y="324.99"><tspan>Thursday, May 4, 2023@ 21:45 </tspan>
+<text  class="text-sm" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -1.3471114790620886e-15 148.84484594022615)" x="0" y="148.84"><tspan>Thursday, May 4, 2023@ 21:45 </tspan>
 </text>
-<text  class="text-sm" x="-45" y="427.99"><tspan>FreeSewing </tspan>
+<text  class="text-sm" x="-45" y="251.84"><tspan>FreeSewing </tspan>
 </text>
-<text  class="text-lg" x="-45" y="437.99"><tspan>shelly v3.0.0-alpha.9 </tspan>
+<text  class="text-lg" x="-45" y="261.84"><tspan>shelly v3.0.0-alpha.9 </tspan>
 </text>
-<text  class="text-xs" x="-45" y="449.99"><tspan>supportFreesewingBecomeAPatron </tspan>
+<text  class="text-xs" x="-45" y="273.84"><tspan>supportFreesewingBecomeAPatron </tspan>
 </text>
-<text  class="text-sm fill-note" x="-45" y="454.99"><tspan>freesewing.org/patrons/join </tspan>
+<text  class="text-sm fill-note" x="-45" y="278.84"><tspan>freesewing.org/patrons/join </tspan>
 </text>
-<text  class="text-xs center" x="0" y="462.99"><tspan>theWhiteInsideOfThisBoxShouldMeasure 10cm x 5cm </tspan>
+<text  class="text-xs center" x="0" y="286.84"><tspan>theWhiteInsideOfThisBoxShouldMeasure 10cm x 5cm </tspan>
 </text>
-<text  class="text-xs center " x="0" y="466.99"><tspan>theBlackOutsideOfThisBoxShouldMeasure 4″ x 2″ </tspan>
+<text  class="text-xs center " x="0" y="290.84"><tspan>theBlackOutsideOfThisBoxShouldMeasure 4″ x 2″ </tspan>
 </text>
 <use x="-105.66" y="211.63" xlink:href="#notch"  transform="translate(-105.66, 211.63) scale(1) translate(105.66, -211.63)"></use>
 <use x="105.66" y="211.63" xlink:href="#bnotch"  transform="translate(105.66, 211.63) scale(1) translate(-105.66, -211.63)"></use>
-<use x="0" y="372.99" xlink:href="#logo"  transform="translate(0, 372.99) scale(1) translate(0, -372.99)"></use>
+<use x="0" y="196.84" xlink:href="#logo"  transform="translate(0, 196.84) scale(1) translate(0, -196.84)"></use>
 </g>
 <!-- end of group #sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve -->
 
 <!-- Start of group #sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve -->
 <g id="sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve"  class="sample-10">
-<path  class="fabric" id="sample-477" d="M 80,989.53 L 147.95,256.61 C 123.27,246.9 114.47,229.26 105.66,211.63 L 25.77,51.61 C 8.35,67.51 -14.79,80.41 -37.96,76.03 L -105.66,211.63 C -114.47,229.26 -123.27,246.9 -147.95,256.61 L -80,989.53 L 80,989.53 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" id="sample-478" d="M 0,122.05 L 0,943.88" />
+<path  class="fabric" id="sample-477" d="M 127,380.53 L 147.95,256.61 C 123.27,246.9 114.47,229.26 105.66,211.63 L 11.64,23.31 C -0.28,43.66 -12.6,69.45 -36.03,72.16 L -105.66,211.63 C -114.47,229.26 -123.27,246.9 -147.95,256.61 L -127,380.53 L 127,380.53 z" />
+<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" id="sample-478" d="M 0,91.6 L 0,365.33" />
 <text><textPath xlink:href="#sample-478"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
 </text>
-<path  class="scalebox imperial fill-current" id="sample-479" d="M -50.8,444.44 L -50.8,495.24 L 50.8,495.24 L 50.8,444.44 z" />
-<path  class="scalebox metric fill-bg" id="sample-480" d="M -50,444.84 L -50,494.84 L 50,494.84 L 50,444.84 z" />
-<text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 0 329.8448459402261)" x="0" y="329.84"><tspan>3 </tspan>
+<path  class="scalebox imperial fill-current" id="sample-479" d="M -50.8,241.44 L -50.8,292.24 L 50.8,292.24 L 50.8,241.44 z" />
+<path  class="scalebox metric fill-bg" id="sample-480" d="M -50,241.84 L -50,291.84 L 50,291.84 L 50,241.84 z" />
+<text  class="text-4xl fill-note font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 0 126.84484594022615)" x="0" y="126.84"><tspan>3 </tspan>
 </text>
-<text  class="text-lg fill-current font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -4.898587196589413e-16 337.8448459402261)" x="0" y="337.84"><tspan>sleeve </tspan>
+<text  class="text-lg fill-current font-bold" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -4.898587196589413e-16 134.84484594022615)" x="0" y="134.84"><tspan>sleeve </tspan>
 </text>
-<text  class="fill-note" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -9.797174393178826e-16 345.8448459402261)" x="0" y="345.84"><tspan>shelly v3.0.0-alpha.9 </tspan>
+<text  class="fill-note" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -9.797174393178826e-16 142.84484594022615)" x="0" y="142.84"><tspan>shelly v3.0.0-alpha.9 </tspan>
 </text>
-<text  class="text-sm" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -1.3471114790620886e-15 351.8448459402261)" x="0" y="351.84"><tspan>Thursday, May 4, 2023@ 21:45 </tspan>
+<text  class="text-sm" transform="matrix(1, 0, 0, 1, 0, 0) rotate(0 -1.3471114790620886e-15 148.84484594022615)" x="0" y="148.84"><tspan>Thursday, May 4, 2023@ 21:45 </tspan>
 </text>
-<text  class="text-sm" x="-45" y="454.84"><tspan>FreeSewing </tspan>
+<text  class="text-sm" x="-45" y="251.84"><tspan>FreeSewing </tspan>
 </text>
-<text  class="text-lg" x="-45" y="464.84"><tspan>shelly v3.0.0-alpha.9 </tspan>
+<text  class="text-lg" x="-45" y="261.84"><tspan>shelly v3.0.0-alpha.9 </tspan>
 </text>
-<text  class="text-xs" x="-45" y="476.84"><tspan>supportFreesewingBecomeAPatron </tspan>
+<text  class="text-xs" x="-45" y="273.84"><tspan>supportFreesewingBecomeAPatron </tspan>
 </text>
-<text  class="text-sm fill-note" x="-45" y="481.84"><tspan>freesewing.org/patrons/join </tspan>
+<text  class="text-sm fill-note" x="-45" y="278.84"><tspan>freesewing.org/patrons/join </tspan>
 </text>
-<text  class="text-xs center" x="0" y="489.84"><tspan>theWhiteInsideOfThisBoxShouldMeasure 10cm x 5cm </tspan>
+<text  class="text-xs center" x="0" y="286.84"><tspan>theWhiteInsideOfThisBoxShouldMeasure 10cm x 5cm </tspan>
 </text>
-<text  class="text-xs center " x="0" y="493.84"><tspan>theBlackOutsideOfThisBoxShouldMeasure 4″ x 2″ </tspan>
+<text  class="text-xs center " x="0" y="290.84"><tspan>theBlackOutsideOfThisBoxShouldMeasure 4″ x 2″ </tspan>
 </text>
 <use x="-105.66" y="211.63" xlink:href="#notch"  transform="translate(-105.66, 211.63) scale(1) translate(105.66, -211.63)"></use>
 <use x="105.66" y="211.63" xlink:href="#bnotch"  transform="translate(105.66, 211.63) scale(1) translate(-105.66, -211.63)"></use>
-<use x="0" y="399.84" xlink:href="#logo"  transform="translate(0, 399.84) scale(1) translate(0, -399.84)"></use>
+<use x="0" y="196.84" xlink:href="#logo"  transform="translate(0, 196.84) scale(1) translate(0, -196.84)"></use>
 </g>
 <!-- end of group #sample-4stack-shelly.raglanSleeve-part-shelly.raglanSleeve -->
 </g>
 <!-- end of group #sample-4stack-shelly.raglanSleeve -->
 
 <!-- Start of group #sample-5stack-shelly.neckband -->
-<g id="sample-5stack-shelly.neckband"  transform="translate(520.7741445384814, 536.0058282899382)">
+<g id="sample-5stack-shelly.neckband"  transform="translate(439.74000000000007, 363.2278911299161)">
 
 <!-- Start of group #sample-5stack-shelly.neckband-part-shelly.neckband -->
 <g id="sample-5stack-shelly.neckband-part-shelly.neckband"  class="sample-1">
