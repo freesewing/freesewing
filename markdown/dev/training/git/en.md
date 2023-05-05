@@ -142,7 +142,7 @@ matters into his own hands. He sat down and over the couple of a couple of
 days wrote his own version control system: git.
 
 A few years later, every major open source project had migrated from subversion
-to git, and sites like GitHub and Gitlab sprung up to provide centralized git
+to git, and sites like GitHub and GitLab sprung up to provide centralized git
 hosting.
 
 Today, git is a household name among developers, as well as the de facto
@@ -345,7 +345,7 @@ we're good to go.
 The first thing you'll notice as we start using git, is that it does not
 require any sort of central components or server. Those of you who have
 trouble distinguishing between git itself and the popular git hosting
-services such as Github or Gitlab, should take a moment to appreciate this.
+services such as GitHub or GitLab, should take a moment to appreciate this.
 
 You don't need anything to use git. You can use it on your own, without
 collaborating with anyone. All you need to do is open up a terminal window.
@@ -1984,7 +1984,7 @@ That we are working on something together with friends or colleagues and we
 want to share our changes with them.
 
 Fueled by the rise of git hosting sites like
-[Github](https://github.com) and [Gitlab](https://gitlab.com/)
+[GitHub](https://github.com) and [GitLab](https://gitlab.com/)
 this scenario has become so popular that today many people don't fully
 comprehend the difference between let's say *git* and *github*.
 
@@ -2018,25 +2018,25 @@ that exists *somewhere else*.
 This *somewhere else* can be many different things. It can be another folder
 on your computer, a shared drive, or network mount, a remote location that
 you access over SSH or another tunnel, or the most common scenario, a
-git hosting service like Github or Gitlab.
+git hosting service like GitHub or GitLab.
 
 No matter where we are cloning from, git refers to the source repository
 that we are cloning from as the **remote**.
 
 To make this all a bit more hands-on, let's practice by cloning a repository
-from Github.
-There are, of course, millions of repositories on Github but
+from GitHub.
+There are, of course, millions of repositories on GitHub but
 I have set up a repository for this purpose, so let's use that one.
 It will be our remote, and you can find it
 at [github.com/joostdecock/git-training/](https://github.com/joostdecock/git-training/).
 
 Git can use several protocols to talk to the remote. When cloning a
-repository from Github, the very first choice we have to make is
+repository from GitHub, the very first choice we have to make is
 choosing the protocol we want to use. Since this will influence the URL that
 we have to pass to the `git clone` command.
 
-The URL can be found on the repository page of the hosting service. Github has
-a big green **Code**  button, whereas Gitlab has a big blue **Clone** button.
+The URL can be found on the repository page of the hosting service. GitHub has
+a big green **Code**  button, whereas GitLab has a big blue **Clone** button.
 Both of them give you a drop-down that lists the URLs to clone with either
 SSH or HTTPS.
 
@@ -3089,7 +3089,7 @@ enjoyable, but also facilitate working with others.
 - Write commit messages that focus on why you did something, not what you did.
 - Update your prompt to show what branch you are on. You can [download a script
   for this from the git project's repository on
-  Github](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh).
+  GitHub](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh).
 - Use `.gitignore` to keep files that should not be subject to version control
   out of your repository.
 - Use the inline documentation. There's loads of it. Use `git command --help`
