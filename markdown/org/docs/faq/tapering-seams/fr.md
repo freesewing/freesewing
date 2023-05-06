@@ -1,8 +1,8 @@
 ---
-title: Why are seam allowances tapered?
+title: Pourquoi les marges de coutures ont des coins sectionnés ?
 ---
 
-Freesewing generates the seam allowances by offsetting from the seam paths. This means that when there is a corner in your pattern and the two offset seam allowances converge, it would require a lot more code to make the offset seam allowance come to a point. Instead, the offset seam allowances come to the end of the seam paths and then are connected in a straight line, making a trimmed or tapered corner.
+Freesewing génère les marges de couture en interpolant à partir des traits de couture. Cela signifie que lorsqu'il y a un coin dans votre patron et que les deux limites de couture convergent, il faudrait beaucoup plus de code pour faire aussi converger les marges de coutures. Au lieu de cela, les marges de coutures s'arrêtent à la fin des traits de couture et sont ensuite connectés par une ligne droite, formant un coin sectionné.
 
-If you want you could simply cut the seam allowance corners fully when cutting your printed pattern or when cutting your fabric. You do not have to cut along the tapered lines. 
+Si vous le souhaitez, il vous suffit de couper les angles des marges de couture en entier lorsque vous coupez votre patron imprimé ou lorsque vous coupez votre tissu. Vous n'avez pas à couper le long des coins sectionnés. 
 
