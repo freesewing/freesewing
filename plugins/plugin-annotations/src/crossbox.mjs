@@ -1,8 +1,8 @@
 // Export macros
 export const crossboxMacros = {
   crossbox: function (so, { points, Point, paths, Path, getId }) {
-    const id = getId()
-    const shiftFraction = 0.1
+    let id = getId()
+    let shiftFraction = 0.1
     points[id + '_boxTopLeft'] = so.from.copy()
     points[id + '_boxBottomRight'] = so.to.copy()
     points[id + '_boxTopRight'] = new Point(so.to.x, so.from.y)
@@ -44,7 +44,7 @@ export const crossboxMacros = {
       .line(points[id + '_topCrossBL'])
       .attr('class', 'lining dotted stroke-sm')
     if (typeof so.text === 'string') {
-      points[id + '_textAnchor'] = points[id + '_boxTopLeft']
+      pointstextAnchor = points[id + '_boxTopLeft']
         .shiftFractionTowards(points[id + '_boxBottomRight'], 0.5)
         .attr('data-text', so.text)
         .attr('data-text-class', 'center')
