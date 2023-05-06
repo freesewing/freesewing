@@ -104,7 +104,7 @@ export const back = {
     let backDartWidth = reduction * (1 - options.backCenterWaistReduction * 0.5)
     if (backDartWidth < 0) {
       backDartWidth = 0
-      log.info('Back dart is not necessary (width is 0.0 mm/inches).')
+      log.info('Bella: Back dart is not necessary (width is 0.0 mm/inches).')
     }
     points.dartBottomLeft = points.dartBottomCenter.shift(180, backDartWidth / 2)
     points.dartBottomRight = points.dartBottomLeft.rotate(180, points.dartBottomCenter)
