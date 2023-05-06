@@ -44,7 +44,7 @@ export const crossboxMacros = {
       .line(points[id + '_topCrossBL'])
       .attr('class', 'lining dotted stroke-sm')
     if (typeof so.text === 'string') {
-      pointstextAnchor = points[id + '_boxTopLeft']
+      points.textAnchor = points[id + '_boxTopLeft']
         .shiftFractionTowards(points[id + '_boxBottomRight'], 0.5)
         .attr('data-text', so.text)
         .attr('data-text-class', 'center')
