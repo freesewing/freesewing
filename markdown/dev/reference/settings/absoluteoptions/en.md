@@ -36,7 +36,7 @@ export const part = {
     width: {
       pct: 5, min: 1 max: 25, snap: 7,
       toAbs: (pct, { measurements }) => measurements.waist * pct,
-}
+    }
   },
   draft: ({ absoluteOptions }
   ) => {
