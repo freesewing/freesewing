@@ -62,7 +62,7 @@
   "devDependencies": {
     "@playwright/test": "^1.32.3",
     "autoprefixer": "10.4.14",
-    "eslint-config-next": "13.4.0",
+    "eslint-config-next": "13.4.1",
     "js-yaml": "4.1.0",
     "postcss": "8.4.23",
     "playwright": "^1.32.3",
