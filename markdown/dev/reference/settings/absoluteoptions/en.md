@@ -25,3 +25,22 @@ const settings = {
   Object absoluteOptions={}
 }
 ```
+
+## Example
+
+```js
+export const part = {
+  name: 'example.part',
+  measurements: [ 'waist' ],
+  options: {
+    width: {
+      pct: 5, min: 1 max: 25, snap: 7,
+      toAbs: (pct, { measurements }) => measurements.waist * pct,
+}
+  },
+  draft: ({ absoluteOptions }
+  ) => {
+    const garmentWidth = absoluteOptions.width * 1.1
+  }
+}
+```
