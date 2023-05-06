@@ -1,13 +1,13 @@
 fabricStretchX:
-  title: Fabric stretch (horizontal)
-  description: Adjust this for more or less stretchy fabrics
+  title: Élasticité du tissu (horizontale)
+  description: Ajuster ceci pour des tissus plus ou moins élastiques
 fabricStretchY:
-  title: Fabric stretch (vertical)
-  description: Adjust this for more or less stretchy fabrics
+  title: Élasticité du tissu (verticale)
+  description: Ajuster ceci pour des tissus plus ou moins élastiques
 adjustStretch:
-  title: Adjust stretch
-  description: This option you to put in the maximum stretch that the fabric will allow in both horizontal and vertical directions; When disabled, the stretch values are used as-is
+  title: Ajuster l'élasticité
+  description: Cette option vous permet de mettre le maximum d'élasticité que le tissu autorise a l'horizontal et à la verticale. Quand désactivée les valeurs d'élasticité sont utilisés comme si
 useCrossSeam:
-  title: Use crossseam
+  title: Utiliser l'intersection des coutures
   description: When enabled, the total height of the pattern pieces combined will match the cross seam length minus the front and back rise. When disabled, the total height depends on the gusset length option.
 
