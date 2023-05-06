@@ -105,3 +105,22 @@ model Set {
 
   @@index([userId])
 }
+
+model CuratedSet {
+  id        Int       @id @default(autoincrement())
+  createdAt DateTime  @default(now())
+  img       String?
+  nameDe    String    @default("")
+  nameEn    String    @default("")
+  nameEs    String    @default("")
+  nameFr    String    @default("")
+  nameNl    String    @default("")
+  notesDe   String    @default("")
+  notesEn   String    @default("")
+  notesEs   String    @default("")
+  notesFr   String    @default("")
+  notesNl   String    @default("")
+  measies   String    @default("{}")
+  updatedAt DateTime @updatedAt
+}
+

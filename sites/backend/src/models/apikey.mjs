@@ -6,6 +6,7 @@ import { UserModel } from './user.mjs'
 export function ApikeyModel(tools) {
   this.config = tools.config
   this.prisma = tools.prisma
+  this.rbac = tools.rbac
   this.User = new UserModel(tools)
 
   return this
@@ -48,7 +49,7 @@ ApikeyModel.prototype.verify = async function (key, secret) {
 }
 
 ApikeyModel.prototype.guardedRead = async function ({ params, user }) {
-  if (user.level < 1) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   await this.unguardedRead({ id: params.id })
@@ -56,7 +57,7 @@ ApikeyModel.prototype.guardedRead = async function ({ params, user }) {
 
   if (this.record.userId !== user.uid) {
     // Not own key - only admin can do that
-    if (user.level < 8) return this.setResponse(403, 'insufficientAccessLevel')
+    if (!this.rbac.admin(user)) return this.setResponse(403, 'insufficientAccessLevel')
   }
 
   return this.setResponse(200, 'success', {
@@ -72,7 +73,7 @@ ApikeyModel.prototype.guardedRead = async function ({ params, user }) {
 }
 
 ApikeyModel.prototype.guardedDelete = async function ({ params, user }) {
-  if (user.level < 4) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.user(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   await this.unguardedRead({ id: params.id })
@@ -80,7 +81,7 @@ ApikeyModel.prototype.guardedDelete = async function ({ params, user }) {
 
   if (this.record.userId !== user.uid) {
     // Not own key - only admin can do that
-    if (user.level < 8) return this.setResponse(403, 'insufficientAccessLevel')
+    if (!this.rbac.admin(user)) return this.setResponse(403, 'insufficientAccessLevel')
   }
 
   await this.unguardedDelete()

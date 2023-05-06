@@ -45,7 +45,7 @@ const baseConfig = {
   // Config
   api,
   apikeys: {
-    levels: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+    levels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
     expiryMaxSeconds: 365 * 24 * 3600,
   },
   avatars: {
@@ -73,10 +73,15 @@ const baseConfig = {
   port,
   roles: {
     levels: {
+      readNone: 0,
+      readSome: 1,
+      readOnly: 2,
+      writeSome: 3,
       user: 4,
-      bughunter: 5,
-      support: 7,
-      admin: 8,
+      curator: 5,
+      bughunter: 6,
+      support: 8,
+      admin: 9,
     },
     base: 'user',
   },

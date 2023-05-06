@@ -7,6 +7,7 @@ export function SetModel(tools) {
   this.prisma = tools.prisma
   this.decrypt = tools.decrypt
   this.encrypt = tools.encrypt
+  this.rbac = tools.rbac
   this.encryptedFields = ['measies', 'img', 'name', 'notes']
   this.clear = {} // For holding decrypted data
 
@@ -14,7 +15,7 @@ export function SetModel(tools) {
 }
 
 SetModel.prototype.guardedCreate = async function ({ body, user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (Object.keys(body).length < 1) return this.setResponse(400, 'postBodyMissing')
   if (!body.name || typeof body.name !== 'string') return this.setResponse(400, 'nameMissing')
 
@@ -86,11 +87,11 @@ SetModel.prototype.read = async function (where) {
  * Stores result in this.record
  */
 SetModel.prototype.guardedRead = async function ({ params, user }) {
-  if (user.level < 1) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   await this.read({ id: parseInt(params.id) })
-  if (this.record.userId !== user.uid && user.level < 5) {
+  if (this.record.userId !== user.uid && !this.rbac.bughunter(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
 
@@ -123,11 +124,11 @@ SetModel.prototype.publicRead = async function ({ params }) {
  * Stores result in this.record
  */
 SetModel.prototype.guardedClone = async function ({ params, user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   await this.read({ id: parseInt(params.id) })
-  if (this.record.userId !== user.uid && !this.record.public && user.level < 5) {
+  if (this.record.userId !== user.uid && !this.record.public && !this.rbac.support(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
 
@@ -231,10 +232,10 @@ SetModel.prototype.unguardedUpdate = async function (data) {
  * so we can't be certain it's safe
  */
 SetModel.prototype.guardedUpdate = async function ({ params, body, user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
   await this.read({ id: parseInt(params.id) })
-  if (this.record.userId !== user.uid && user.level < 8) {
+  if (this.record.userId !== user.uid && !this.rbac.admin(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
   const data = {}
@@ -287,11 +288,11 @@ SetModel.prototype.unguardedDelete = async function () {
  * Removes the set - Checks permissions
  */
 SetModel.prototype.guardedDelete = async function ({ params, user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   await this.read({ id: parseInt(params.id) })
-  if (this.record.userId !== user.uid && user.level < 8) {
+  if (this.record.userId !== user.uid && !this.rbac.admin(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
 

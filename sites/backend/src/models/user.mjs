@@ -11,6 +11,7 @@ export function UserModel(tools) {
   this.decrypt = tools.decrypt
   this.encrypt = tools.encrypt
   this.mfa = tools.mfa
+  this.rbac = tools.rbac
   this.mailer = tools.email
   this.Confirmation = new ConfirmationModel(tools)
   this.encryptedFields = ['bio', 'github', 'email', 'initial', 'img', 'mfaSecret']
@@ -69,7 +70,7 @@ UserModel.prototype.cloak = function (data) {
  * Stores result in this.record
  */
 UserModel.prototype.guardedRead = async function (where, { user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
   await this.read(where)
 
@@ -481,7 +482,7 @@ UserModel.prototype.unguardedUpdate = async function (data) {
  * so we can't be certain it's safe
  */
 UserModel.prototype.guardedUpdate = async function ({ body, user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
   const data = {}
   // Bio
@@ -600,7 +601,7 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
  * user-provided data so we can't be certain it's safe
  */
 UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
-  if (user.level < 4) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.user(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
   if (body.mfa === true && this.record.mfaEnabled === true)
     return this.setResponse(400, 'mfaActive')
