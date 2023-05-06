@@ -184,7 +184,7 @@ export const base = {
   options: {
     // How much ease to give for the neck, as a percentage.
     neckEase: { pct: 50, min: -30, max: 150, menu: 'fit' },
-    chestEase: { pct: 0, min: -30, max: 50, menu: 'fit' },
+    chestEase: { pct: 0, min: -40, max: 50, menu: 'fit' },
     // If set to true, makes a tubular body based on the chest, ignoring the hips measurements and options.
     straightSides: { bool: true, menu: 'advanced' },
     hipsEase: { pct: 0, min: -30, max: 75, menu: 'advanced' },
