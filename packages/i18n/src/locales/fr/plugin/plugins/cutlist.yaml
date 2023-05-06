@@ -1,4 +1,4 @@
-canvas: Canvas
+canvas: Toile
 cut: Couper
 cuttingLayout: Disposition de coupe suggérée
 fabric: Tissu principal
@@ -6,11 +6,11 @@ fabricSize: "{length} sur {width} de large matériel"
 heavyCanvas: Toile lourde
 interfacing: Entoilage
 lining: Doublure
-lmhCanvas: Tissu avec fils de poids léger a moyen
+lmhCanvas: Tissu de poids léger a moyen
 mirrored: en miroir
 onFoldLower: sur le pli
 onFoldAndBias: plié dans le biais
 onBias: dans le biais
-plastic: Plastic
+plastic: Plastique
 ribbing: Bord côte
 edgeOfFabric: Bord du tissu
