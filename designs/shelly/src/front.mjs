@@ -108,13 +108,5 @@ export const front = {
   plugins: [pluginBundle],
   draft: draftFront,
   from: base,
-  measurements: [
-    'neck',
-    'chest',
-    'hips',
-    'hpsToBust',
-    'waistToHips',
-    'hpsToWaistBack',
-    'waistToArmhole',
-  ],
+  measurements: ['neck', 'chest', 'hips', 'waistToHips', 'hpsToWaistBack', 'waistToArmhole'],
 }

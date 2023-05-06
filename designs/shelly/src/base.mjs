@@ -19,9 +19,13 @@ function draftBase({
   Snippet,
 }) {
   const armholeYPosition = measurements.hpsToWaistBack - measurements.waistToArmhole
-  const chest =
-    measurements.chest * (1 + options.chestEase) -
-    4 * (options.raglanScoopMagnitude * measurements.hpsToBust)
+  let chest = measurements.chest
+  if (options.straightSides)
+    chest = Math.max(
+      measurements.chest * (1 + options.chestEase),
+      measurements.hips * (1 + options.hipsEase)
+    )
+  chest -= 4 * (options.raglanScoopMagnitude * armholeYPosition)
   const bodyLength = options.bodyLength * (measurements.hpsToWaistBack + measurements.waistToHips)
   const neckRadius = (measurements.neck * (1 + options.neckEase)) / (2 * Math.PI)
   const hips = measurements.hips * (1 + options.hipsEase)
@@ -176,15 +180,7 @@ export const base = {
   plugins: [pluginBundle, bustPlugin],
   draft: draftBase,
   hide: { self: true },
-  measurements: [
-    'neck',
-    'chest',
-    'hips',
-    'hpsToBust',
-    'waistToHips',
-    'hpsToWaistBack',
-    'waistToArmhole',
-  ],
+  measurements: ['neck', 'chest', 'hips', 'waistToHips', 'hpsToWaistBack', 'waistToArmhole'],
   options: {
     // How much ease to give for the neck, as a percentage.
     neckEase: { pct: 50, min: -30, max: 150, menu: 'fit' },

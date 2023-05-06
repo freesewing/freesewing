@@ -108,5 +108,5 @@ export const back = {
   plugins: [pluginBundle],
   draft: draftBack,
   from: base,
-  measurements: ['neck', 'chest', 'hips', 'hpsToBust', 'waistToHips', 'hpsToWaistBack'],
+  measurements: ['neck', 'chest', 'hips', 'waistToHips', 'hpsToWaistBack'],
 }
