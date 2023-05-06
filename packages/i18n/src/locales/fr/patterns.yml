@@ -55,7 +55,7 @@ florence:
   title: Masque Florence
 hi:
   description: Le requin le plus amical du monde
-  title: Bonjour le requin
+  title: Hi le requin
 holmes:
   description: 'Pour un cosplay Sherlock Holmes, ou juste un joli manteau.'
   title: Casquette de détective Holmes
@@ -73,13 +73,13 @@ jaeger:
   title: Veste Jaeger
 lucy:
   description: Lucy est une poche historique que vous pouvez nouer autour de votre taille.
-  title: Pochette à nouer Lucy
+  title: Poche à nouer Lucy
 lunetius:
   description: Lunetius est une lacerne, un manteau romain historique
   title: Lacerne Lunetius
 noble:
   description: Noble est un bloc de corps avec des coutures prince(sse)
-  title: Bloc du corps Noble
+  title: Bloc de corps Noble
 octoplushy:
   description: Un compagnon à plusieurs bras pour des câlins de haut niveau
   title: Octoplushy la pieuvre
