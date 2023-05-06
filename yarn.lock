@@ -18889,7 +18889,8 @@ supports-preserve-symlinks-flag@^1.0.0:
 
 "svg-to-pdfkit@https://github.com/eriese/SVG-to-PDFKit":
   version "0.1.10"
-  resolved "https://github.com/eriese/SVG-to-PDFKit#2702cbe6b225224c4b5ea25b6a1ee8936cd8cf61"
+  uid "388d8c29a7b6b1353ea6b65f683ed939e4a7725f"
+  resolved "https://github.com/eriese/SVG-to-PDFKit#388d8c29a7b6b1353ea6b65f683ed939e4a7725f"
 
 swagger-ui-dist@4.18.3, swagger-ui-dist@>=4.11.0:
   version "4.18.3"
