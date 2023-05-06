@@ -18,6 +18,8 @@ function draftBase({
   snippets,
   Snippet,
 }) {
+  if (options.straightSides) options.hipsEase = options.chestEase
+
   const armholeYPosition = measurements.hpsToWaistBack - measurements.waistToArmhole
   let chest = measurements.chest
   if (options.straightSides)
