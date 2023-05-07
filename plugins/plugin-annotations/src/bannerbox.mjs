@@ -11,11 +11,10 @@ export const bannerboxMacros = {
       boxClassName: 'stroke-xs stroke-note lashed',
       dy: 4,
       spaces: 12,
-      repeat: 10,
+      repeat: 99,
       ...so,
     }
     const offset = Math.sqrt(2 * Math.pow(so.margin, 2))
-
     const id = getId()
     paths[id] = new Path()
       .move(so.topLeft.shift(135, offset))
@@ -30,8 +29,9 @@ export const bannerboxMacros = {
       path: paths[id],
       text: so.text,
       className: so.textClassName,
-      repeat: 99,
-      dy: 4,
+      repeat: so.repeat,
+      spaces: so.spaces,
+      dy: so.dy,
     })
   },
 }
