@@ -76,6 +76,7 @@ It just so happens that in most cases, there will be only one settings object in
 - `Pattern.parts`: Holds the parts used in the pattern
 - `Pattern.plugins`: Holds the plugins used in the pattern
 - `Pattern.settings`: Holds the settings used for the pattern
+- `Pattern.stacks`: Holds the stacks used in the pattern
 - `Pattern.store`: Holds the pattern-wide Store
 - `Pattern.setStores`: Holds an array of stores, one for each set of settings.
 
