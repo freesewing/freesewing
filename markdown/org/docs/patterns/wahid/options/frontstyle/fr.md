@@ -1,5 +1,5 @@
 - - -
-title: "Neck opening style"
+title: "Style d'encolure"
 - - -
 
 ![Style devant](frontstyle.svg)
