@@ -235,10 +235,6 @@ CuratedSetModel.prototype.guardedDelete = async function ({ params, user }) {
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   await this.read({ id: parseInt(params.id) })
-  if (this.record.userId !== user.uid && user.level < 8) {
-    return this.setResponse(403, 'insufficientAccessLevel')
-  }
-
   await this.unguardedDelete()
 
   return this.setResponse(204, false)

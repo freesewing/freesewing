@@ -301,9 +301,28 @@ export const curatedSetTests = async (chai, config, expect, store) => {
       })
     }
   })
-  //console.log(`/curated-sets/${store.curatedSet[auth].id}/${auth}`)
-  //console.log({body: res.body, status: res.status})
 
-  // TODO:
-  // - Delete Curated set
+  for (const auth of ['jwt', 'key']) {
+    describe(`${store.icon('set', auth)} Curated set removal tests (${auth})`, () => {
+      it(`${store.icon('set', auth)} Should remove a curated set (${auth})`, (done) => {
+        chai
+          .request(config.api)
+          .delete(`/curated-sets/${store.curatedSet[auth].id}/${auth}`)
+          .set(
+            'Authorization',
+            auth === 'jwt'
+              ? 'Bearer ' + store.account.token
+              : 'Basic ' +
+                  new Buffer(`${store.account.apikey.key}:${store.account.apikey.secret}`).toString(
+                    'base64'
+                  )
+          )
+          .end((err, res) => {
+            expect(err === null).to.equal(true)
+            expect(res.status).to.equal(204)
+            done()
+          })
+      }).timeout(5000)
+    })
+  }
 }

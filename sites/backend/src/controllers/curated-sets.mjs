@@ -62,7 +62,7 @@ CuratedSetsController.prototype.delete = async (req, res, tools) => {
   const CuratedSet = new CuratedSetModel(tools)
   await CuratedSet.guardedDelete(req)
 
-  return Set.sendResponse(res)
+  return CuratedSet.sendResponse(res)
 }
 
 /*
