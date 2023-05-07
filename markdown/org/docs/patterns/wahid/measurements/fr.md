@@ -1,5 +1,5 @@
 - - -
-title: "Wahid waistcoat: Required Measurements"
+title: "Gilet Wahid : Mensurations requises"
 - - -
 
 <PatternMeasurements pattern='wahid' />

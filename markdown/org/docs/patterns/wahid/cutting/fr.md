@@ -1,5 +1,5 @@
 - - -
-title: "Wahid waistcoat: Cutting Instructions"
+titre: "Gilet Aaron : Instructions de coupe"
 - - -
 
 - **Tissu principal**
@@ -18,10 +18,10 @@ title: "Wahid waistcoat: Cutting Instructions"
 
 <Warning>
 
-###### Caveats
+###### Mises en garde
 
-- Do not cut out the **front** dart
-- Do not cut out the **back** dart
-- Watch out for the grainline on the **pocket welt** and **pocket facing**
+ - Ne coupez pas la pince **devant**
+ - Ne coupez pas la pince **dos**
+ - Attention à la ligne de droit fil sur le **passepoil/rabat de poche** et **le parement de poche**
 
 </Warning>
