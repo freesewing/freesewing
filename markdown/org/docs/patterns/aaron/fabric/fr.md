@@ -1,5 +1,5 @@
 - - -
-titre: "Débardeur Aaron (A-Shirt) : Choix d'étoffe"
+title: "Débardeur Aaron (A-Shirt) : Options de tissu"
 - - -
 
 Un débardeur (A-shirt) est principalement un sous-vêtement. Et dans ce sens, vous souhaitez quelque chose de confortable, doux contre votre corps et respirant.
