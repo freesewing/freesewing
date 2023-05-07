@@ -5,7 +5,7 @@ title: pleat
 The `pleat` macro is used to mark a pleat on a pattern. It draws the appropriate 
 lines perpendicular to the line going from `from` to `to`. 
 The `pleat` macro follows the convention of paths being counter-clockwise to 
-determin what is the inside or outside of the part. 
+determine what is the inside or outside of the part. 
 
 It is provided by [plugin-annotations](/reference/plugins/annotations/).
 
