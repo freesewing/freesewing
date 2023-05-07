@@ -20,9 +20,6 @@ const { encrypt, decrypt } = encryption(config.encryption.key)
  * Note: This will import the FreeSewing (v2) sizing table into the
  * FreeSewing curator account.
  *
- * The curator account is just a regular user account, but one that
- * we use to store the 'official' measurement sets.
- *
  * Unless you are a very involved contributor, there is probably
  * no reason for you to run this script.
  */
@@ -30,31 +27,32 @@ const { encrypt, decrypt } = encryption(config.encryption.key)
 // Holds the sets to create
 const sets = []
 
-// Helper method to create the set data
-const createSetData = ({ name, measies, imperial }) => ({
-  imperial,
-  name,
-  measies,
-  userId: config.curator.id,
-  public: true,
+// Helper method to create the set data (does nothing for now)
+const createSetData = (data) => ({
+  ...data,
+  measies: JSON.stringify(data.measies),
+  tagsEn: JSON.stringify(data.tagsEn),
+  tagsDe: JSON.stringify(data.tagsDe),
+  tagsEs: JSON.stringify(data.tagsEs),
+  tagsNl: JSON.stringify(data.tagsNl),
+  tagsFr: JSON.stringify(data.tagsFr),
 })
 
 // CIS Female Adult
 sets.push(
   ...Object.keys(cisFemaleAdult).map((size) =>
     createSetData({
-      name: `Metric Cis Female Adult - Size ${size} (EU)`,
+      nameEn: `Cis-Female Adult - Size ${size} (EU)`,
+      nameDe: `Cis-Weiblich Erwachsener - Größe ${size} (EU)`,
+      nameEs: `Cis-Mujer Adulta - Talla ${size} (UE)`,
+      nameFr: `Cis-Femme Adulte - Taille ${size} (UE)`,
+      nameNl: `Cis-Dame Volwassene - Maat ${size} (EU)`,
+      tagsEn: ['cis-female', 'adults', 'eu'],
+      tagsDe: ['cis-weiblich', 'erwachsene', 'eu'],
+      tagsEs: ['cis-mujer', 'adulta', 'ue'],
+      tagsFr: ['cis-femme', 'adulte', 'ue'],
+      tagsNl: ['cis-dame', 'volwassenen', 'eu'],
       measies: cisFemaleAdult[size],
-      imperial: false,
-    })
-  )
-)
-sets.push(
-  ...Object.keys(cisFemaleAdult).map((size) =>
-    createSetData({
-      name: `Imperial Cis Female Adult - Size ${size} (EU)`,
-      measies: cisFemaleAdult[size],
-      imperial: true,
     })
   )
 )
@@ -63,18 +61,17 @@ sets.push(
 sets.push(
   ...Object.keys(cisMaleAdult).map((size) =>
     createSetData({
-      name: `Metric Cis Male Adult - Size ${size} (EU)`,
+      nameEn: `Cis-Male Adult - Size ${size} (EU)`,
+      nameDe: `Cis-Männlich Erwachsener - Größe ${size} (EU)`,
+      nameEs: `Cis-Hombre Adulto - Talla ${size} (UE)`,
+      nameFr: `Cis-Homme Adulte - Taille ${size} (UE)`,
+      nameNl: `Cis-Heer Volwassene - Maat ${size} (EU)`,
+      tagsEn: ['cis-male', 'adults', 'eu'],
+      tagsDe: ['cis-männlich', 'erwachsene', 'eu'],
+      tagsEs: ['cis-hombre', 'adulto', 'ue'],
+      tagsFr: ['cis-homme', 'adulte', 'ue'],
+      tagsNl: ['cis-heer', 'volwassenen', 'eu'],
       measies: cisMaleAdult[size],
-      imperial: false,
-    })
-  )
-)
-sets.push(
-  ...Object.keys(cisMaleAdult).map((size) =>
-    createSetData({
-      name: `Imperial Cis Male Adult - Size ${size} (EU)`,
-      measies: cisMaleAdult[size],
-      imperial: true,
     })
   )
 )
@@ -83,18 +80,17 @@ sets.push(
 sets.push(
   ...Object.keys(cisFemaleDoll).map((size) =>
     createSetData({
-      name: `Metric Cis Female Doll - ${size}%`,
+      nameEn: `Cis-Female Doll - ${size}%`,
+      nameDe: `Cis-Weiblich Puppe - ${size}%`,
+      nameEs: `Cis-Mujer Muñeca - ${size}%`,
+      nameFr: `Cis-Femme Poupée - ${size}%`,
+      nameNl: `Cis-Dame Pop - ${size}%`,
+      tagsEn: ['cis-female', 'dolls'],
+      tagsDe: ['cis-weiblich', 'puppen'],
+      tagsEs: ['cis-mujer', 'muñecas'],
+      tagsFr: ['cis-femme', 'poupées'],
+      tagsNl: ['cis-dame', 'poppen'],
       measies: cisFemaleDoll[size],
-      imperial: false,
-    })
-  )
-)
-sets.push(
-  ...Object.keys(cisFemaleDoll).map((size) =>
-    createSetData({
-      name: `Imperial Cis Female Doll - ${size}%`,
-      measies: cisFemaleDoll[size],
-      imperial: true,
     })
   )
 )
@@ -103,18 +99,17 @@ sets.push(
 sets.push(
   ...Object.keys(cisMaleDoll).map((size) =>
     createSetData({
-      name: `Metric Cis Male Doll - ${size}%`,
+      nameEn: `Cis-Male Doll - ${size}%`,
+      nameDe: `Cis-Männlich Puppe - ${size}%`,
+      nameEs: `Cis-Hombre Muñeca - ${size}%`,
+      nameFr: `Cis-Homme Poupée - ${size}%`,
+      nameNl: `Cis-Heer Pop - ${size}%`,
+      tagsEn: ['cis-male', 'dolls'],
+      tagsDe: ['cis-männlich', 'puppen'],
+      tagsEs: ['cis-hombre', 'muñecas'],
+      tagsFr: ['cis-homme', 'poupées'],
+      tagsNl: ['cis-heer', 'poppen'],
       measies: cisMaleDoll[size],
-      imperial: false,
-    })
-  )
-)
-sets.push(
-  ...Object.keys(cisMaleDoll).map((size) =>
-    createSetData({
-      name: `Imperial Cis Male Doll - ${size}%`,
-      measies: cisMaleDoll[size],
-      imperial: true,
     })
   )
 )
@@ -123,47 +118,46 @@ sets.push(
 sets.push(
   ...Object.keys(cisFemaleGiant).map((size) =>
     createSetData({
-      name: `Metric Cis Female Giant - Size ${size}%`,
+      nameEn: `Cis-Female Giant - ${size}%`,
+      nameDe: `Cis-Weiblich Riesin - ${size}%`,
+      nameEs: `Cis-Mujer Gigante - ${size}%`,
+      nameFr: `Cis-Femme Géante - ${size}%`,
+      nameNl: `Cis-Dame Reuzin - ${size}%`,
+      tagsEn: ['cis-female', 'giants'],
+      tagsDe: ['cis-weiblich', 'riesen'],
+      tagsEs: ['cis-mujer', 'gigantes'],
+      tagsFr: ['cis-femme', 'géants'],
+      tagsNl: ['cis-dame', 'reuzen'],
       measies: cisFemaleGiant[size],
-      imperial: false,
-    })
-  )
-)
-sets.push(
-  ...Object.keys(cisFemaleGiant).map((size) =>
-    createSetData({
-      name: `Imperial Cis Female Giant - Size ${size}%`,
-      measies: cisFemaleGiant[size],
-      imperial: true,
     })
   )
 )
 
 // CIS Male Giant
 sets.push(
-  ...Object.keys(cisMaleGiant).map((size) =>
+  ...Object.keys(cisFemaleGiant).map((size) =>
     createSetData({
-      name: `Metric Cis Male Giant - Size ${size}%`,
+      nameEn: `Cis-Male Giant - ${size}%`,
+      nameDe: `Cis-Männlich Riese - ${size}%`,
+      nameEs: `Cis-Hombre Gigante - ${size}%`,
+      nameFr: `Cis-Homme Géant - ${size}%`,
+      nameNl: `Cis-Heer Reus - ${size}%`,
+      tagsEn: ['cis-female', 'giants'],
+      tagsDe: ['cis-weiblich', 'riesen'],
+      tagsEs: ['cis-mujer', 'gigantes'],
+      tagsFr: ['cis-femme', 'géants'],
+      tagsNl: ['cis-dame', 'reuzen'],
       measies: cisMaleGiant[size],
-      imperial: false,
-    })
-  )
-)
-sets.push(
-  ...Object.keys(cisMaleGiant).map((size) =>
-    createSetData({
-      name: `Imperial Cis Male Giant - Size ${size}%`,
-      measies: cisMaleGiant[size],
-      imperial: true,
     })
   )
 )
 
 importSets(sets)
 
-async function createSet(set) {
+async function createSet(data) {
+  let record
   try {
-    record = await prisma.user.create({ data: set })
+    record = await prisma.curatedSet.create({ data })
   } catch (err) {
     console.log(err)
   }
@@ -171,7 +165,7 @@ async function createSet(set) {
 
 async function importSets(sets) {
   for (const set of sets) {
-    console.log(`Importing ${set.name}`)
+    console.log(`Importing ${set.nameEn}`)
     await createSet(set)
   }
 }
