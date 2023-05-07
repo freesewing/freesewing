@@ -345,6 +345,7 @@ Part.prototype.__macroClosure = function (props) {
   const method = function (key, args) {
     const macro = utils.__macroName(key)
     if (typeof self[macro] === 'function') self[macro](args, props)
+    else self.context.store.log.warning('Unknown macro `' + key + '` used in ' + self.name)
   }
 
   return method
