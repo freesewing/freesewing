@@ -2,7 +2,7 @@
 title: sewtogether
 ---
 
-The `sewtogether` macro is used to mark where two parts of the same `part` need 
+The `sewTogether` macro is used to mark where two parts of the same `part` need 
 to be sewn together. This happens when you want to construct a cone for instance.
 
 It is provided by [plugin-annotations](/reference/plugins/annotations/).
