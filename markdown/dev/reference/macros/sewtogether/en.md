@@ -57,7 +57,7 @@ macro('sewTogether', {
 | `from`          |          | [Point](/reference/api/point) | One side of what needs to be sewn together |
 | `to`            |          | [Point](/reference/api/point) | The other side of what needs to be sewn together |
 | `middle`        | null     | [Point](/reference/api/point) | The middle point (when ommitted, it will be halfway between `from` and `to`) |
-| `prefix`        | 'pleat'  | String   | The prefix to be used for creating all the points and paths |
+| `prefix`        | 'sewtogether'  | String   | The prefix to be used for creating all the points and paths |
 | `hinge `        | `false`  | Boolean  | Draws the hinge line                  |
 
 ## Result
