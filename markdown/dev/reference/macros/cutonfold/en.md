@@ -48,18 +48,18 @@ macro('cutonfold', {
 | `to`        |         | [Point](/reference/api/point) | The endpoint of the _cut on fold_ indicator |
 | `margin`    | 5       | [Point](/reference/api/point) | The distance in % to keep from the start/end edge |
 | `offset`    | 15      | Number              | The distance in mm to offset from the line from start to end |
-| `prefix`    |         | String              | A prefix to apply to the names of the generated path and points |
+| `prefix`    | 'cutonfold' | String              | A prefix to apply to the names of the generated path and points |
 | `grainline` | `false` | Boolean             | Whether this cutonfold indicator is also the grainline |
 
 ## Result
 
 | Generated Element | Description |
 |------|-------------|
-| `paths.cutonfold${prefix}` | The Path for the _cut on fold_ indicator |
-| `points.cutonfoldFrom${prefix}` | Point used to create the path |
-| `points.cutonfoldVia1${prefix}` | Point used to create the path |
-| `points.cutonfoldVia2${prefix}` | Point used to create the path |
-| `points.cutonfoldTo${prefix}` | Point used to create the path |
+| `paths.${prefix}Cutonfold` | The Path for the _cut on fold_ indicator |
+| `points.${prefix}From` | Point used to create the path |
+| `points.${prefix}Via1` | Point used to create the path |
+| `points.${prefix}Via2` | Point used to create the path |
+| `points.${prefix}To}` | Point used to create the path |
 
 ## Notes
 
