@@ -1,7 +1,7 @@
 // Export defs
 export const pleatDefs = [
   {
-    name: 'notch',
+    name: 'pleatTo',
     def: `
 <marker id="pleatTo" markerWidth="12" markerHeight="8" orient="auto" refY="4" refX="12">
   <path class="note fill-note" d="M 12,4 L 0,0 C 2,2 2,6  0,8 z" />
