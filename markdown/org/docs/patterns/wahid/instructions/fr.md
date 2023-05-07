@@ -62,7 +62,7 @@ Repliez votre devant (avec son entoilage thermocollé) endroit contre endroit, e
 
 #### Repasser les pinces de devant
 
-Une fois coupées ouvertes, Repassez ouvertes les pinces avant.
+Une fois coupées ouvertes, repassez ouvertes les pinces avant.
 
 #### Repasser les pinces dos
 
@@ -76,9 +76,9 @@ Si vous coupez les pinces dos, repassez pour les ouvrir. Si ce n'est pas le cas,
 
 ![Attacher le fond de poche au passepoil de poche](05a.png)
 
-Placez votre fond de poche avec l'endroit vers le haut, et votre passepoil de poche dessus avec l'endroit vers le bas.
+Placez votre fond de poche avec l'endroit vers le haut et votre passepoil de poche dessus avec l'endroit vers le bas.
 
-Alignez le côté droit du fond avec le côté du passepoil qui n'a pas d'entoilage, et les coudre ensemble avec la marge de couture standard.
+Alignez le côté droit du fond de poche avec le côté du passepoil qui n'a pas d'entoilage, et les coudre ensemble avec la marge de couture standard.
 
 #### Repasser pour ouvrir la couture
 
@@ -142,7 +142,7 @@ Retournez le parement de poche vers l'arrière et repassez.
 
 Déplacez votre parement de poche sur le côté pour révéler ces petits triangles sur le côté de votre poche.
 
-Fold them back making sure you to keep your pocket opening a clean rectangle, and press them down.
+Repliez-les vers l'arrière en vous assurant de garder un rectangle parfait pour l'ouverture de poche, puis repassez-les.
 
 #### Retourner le passepoil/rabat vers l'arrière, le plier et le repasser
 
