@@ -23,6 +23,8 @@ CuratedSetModel.prototype.guardedCreate = async function ({ body, user }) {
       const key = field + capitalize(lang)
       if (body[key] && typeof body[key] === 'string') data[key] = body[key]
     }
+    const key = 'tags' + capitalize(lang)
+    if (body[key] && Array.isArray(body[key])) data[key] = body[key]
   }
   if (body.measies) data.measies = this.sanitizeMeasurements(body.measies)
   else data.measies = {}
@@ -49,6 +51,10 @@ CuratedSetModel.prototype.guardedCreate = async function ({ body, user }) {
 CuratedSetModel.prototype.unguardedCreate = async function (data) {
   // FIXME: See https://github.com/prisma/prisma/issues/3786
   if (data.measies && typeof data.measies === 'object') data.measies = JSON.stringify(data.measies)
+  for (const lang of this.config.languages) {
+    const key = `tags${capitalize(lang)}`
+    if (Array.isArray(data[key])) data[key] = JSON.stringify(data[key] || [])
+  }
   try {
     this.record = await this.prisma.curatedSet.create({ data })
   } catch (err) {
@@ -68,11 +74,17 @@ CuratedSetModel.prototype.read = async function (where) {
   try {
     this.record = await this.prisma.curatedSet.findUnique({ where })
   } catch (err) {
-    log.warn({ err, where }, 'Could not read measurements set')
+    log.warn({ err, where }, 'Could not read curated measurements set')
   }
 
-  // FIXME: Convert JSON to object. See https://github.com/prisma/prisma/issues/3786
-  this.record.measies = JSON.parse(this.record.measies)
+  if (this.record) {
+    // FIXME: Convert JSON to object. See https://github.com/prisma/prisma/issues/3786
+    this.record.measies = JSON.parse(this.record.measies)
+    for (const lang of this.config.languages) {
+      const key = `tags${capitalize(lang)}`
+      this.record[key] = JSON.parse(this.record[key] || '[]')
+    }
+  }
 
   return this.curatedSetExists()
 }
@@ -156,6 +168,10 @@ CuratedSetModel.prototype.curatedSetExists = function () {
 CuratedSetModel.prototype.unguardedUpdate = async function (data) {
   // FIXME: Convert object to JSON. See https://github.com/prisma/prisma/issues/3786
   if (data.measies && typeof data.measies === 'object') data.measies = JSON.stringify(data.measies)
+  for (const lang of this.config.languages) {
+    const key = `tags${capitalize(lang)}`
+    if (data[key] && Array.isArray(data[key])) data[key] = JSON.stringify(data[key] || [])
+  }
 
   try {
     this.record = await this.prisma.curatedSet.update({
@@ -164,6 +180,10 @@ CuratedSetModel.prototype.unguardedUpdate = async function (data) {
     })
     // FIXME: Convert JSON to object. See https://github.com/prisma/prisma/issues/3786
     this.record.measies = JSON.parse(this.record.measies)
+    for (const lang of this.config.languages) {
+      const key = `tags${capitalize(lang)}`
+      this.record[key] = JSON.parse(this.record[key])
+    }
   } catch (err) {
     log.warn(err, 'Could not update set record')
     process.exit()

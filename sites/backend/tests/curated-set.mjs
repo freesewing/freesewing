@@ -14,6 +14,11 @@ export const curatedSetTests = async (chai, config, expect, store) => {
       notesEs: 'Estas son las notas A',
       notesFr: 'Ce sont les notes A',
       notesNl: 'Dit zijn de notities A',
+      tagsDe: ['tagA', 'tagB'],
+      tagsEn: ['tagA', 'tagB'],
+      tagsEs: ['tagA', 'tagB'],
+      tagsFr: ['tagA', 'tagB'],
+      tagsNl: ['tagA', 'tagB'],
       measies: {
         chest: 1000,
         neck: 420,
@@ -30,6 +35,11 @@ export const curatedSetTests = async (chai, config, expect, store) => {
       notesEs: 'Estas son las notas B',
       notesFr: 'Ce sont les notes B',
       notesNl: 'Dit zijn de notities B',
+      tagsDe: ['tagA', 'tagB'],
+      tagsEn: ['tagA', 'tagB'],
+      tagsEs: ['tagA', 'tagB'],
+      tagsFr: ['tagA', 'tagB'],
+      tagsNl: ['tagA', 'tagB'],
       measies: {
         chest: 930,
         neck: 360,
@@ -46,7 +56,9 @@ export const curatedSetTests = async (chai, config, expect, store) => {
     key: {},
   }
 
-  for (const auth of ['jwt', 'key']) {
+  const auths = ['jwt', 'key']
+
+  for (const auth of auths) {
     describe(`${store.icon('set', auth)} Curated set tests (${auth})`, () => {
       it(`${store.icon('set', auth)} Should create a new curated set (${auth})`, (done) => {
         chai
@@ -67,7 +79,8 @@ export const curatedSetTests = async (chai, config, expect, store) => {
             expect(res.status).to.equal(201)
             expect(res.body.result).to.equal(`success`)
             for (const [key, val] of Object.entries(data[auth])) {
-              if (!['measies', 'img'].includes(key)) expect(res.body.curatedSet[key]).to.equal(val)
+              if (!['measies', 'img'].includes(key))
+                expect(JSON.stringify(res.body.curatedSet[key])).to.equal(JSON.stringify(val))
             }
             store.curatedSet[auth] = res.body.curatedSet
             done()
@@ -228,7 +241,7 @@ export const curatedSetTests = async (chai, config, expect, store) => {
 
   // Unauthenticated tests
   describe(`${store.icon('set')} Curated set tests (unauthenticated)`, () => {
-    for (const auth of ['jwt', 'key']) {
+    for (const auth of auths) {
       it(`${store.icon('set')} Should read a curated set created with ${auth}`, (done) => {
         chai
           .request(config.api)
@@ -302,7 +315,7 @@ export const curatedSetTests = async (chai, config, expect, store) => {
     }
   })
 
-  for (const auth of ['jwt', 'key']) {
+  for (const auth of auths) {
     describe(`${store.icon('set', auth)} Curated set removal tests (${auth})`, () => {
       it(`${store.icon('set', auth)} Should remove a curated set (${auth})`, (done) => {
         chai

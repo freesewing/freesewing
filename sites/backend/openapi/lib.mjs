@@ -374,6 +374,46 @@ export const response = {
           type: 'string',
           example: 'Dit zijn de notities A',
         },
+        tagsEn: {
+          description: `A list of tags for the measurements set`,
+          type: 'array',
+          items: {
+            type: 'string',
+            example: 'cisFemale',
+          },
+        },
+        tagsDe: {
+          description: `A list of tags for the measurements set`,
+          type: 'array',
+          items: {
+            type: 'string',
+            example: 'cisFemale',
+          },
+        },
+        tagsEs: {
+          description: `A list of tags for the measurements set`,
+          type: 'array',
+          items: {
+            type: 'string',
+            example: 'cisFemale',
+          },
+        },
+        tagsFr: {
+          description: `A list of tags for the measurements set`,
+          type: 'array',
+          items: {
+            type: 'string',
+            example: 'cisFemale',
+          },
+        },
+        tagsNl: {
+          description: `A list of tags for the measurements set`,
+          type: 'array',
+          items: {
+            type: 'string',
+            example: 'cisFemale',
+          },
+        },
         measies: {
           description: `The measurements of this set`,
           type: 'object',

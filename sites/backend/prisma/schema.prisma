@@ -120,6 +120,11 @@ model CuratedSet {
   notesEs   String    @default("")
   notesFr   String    @default("")
   notesNl   String    @default("")
+  tagsDe    String    @default("")
+  tagsEn    String    @default("")
+  tagsEs    String    @default("")
+  tagsFr    String    @default("")
+  tagsNl    String    @default("")
   measies   String    @default("{}")
   updatedAt DateTime @updatedAt
 }
