@@ -30,8 +30,8 @@ export const pleatMacros = {
       ...so,
     }
     if (complete) {
-      points[so.prefix + 'From'] = so.from
-      points[so.prefix + 'To'] = so.to
+      points[so.prefix + 'From'] = so.from.copy()
+      points[so.prefix + 'To'] = so.to.copy()
       points[so.prefix + 'FromIn'] = points[so.prefix + 'From'].shift(
         so.from.shiftTowards(so.to, 0.1).angle(so.from) + 270,
         so.margin * scale

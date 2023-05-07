@@ -45,9 +45,9 @@ export const sewtogetherMacros = {
       if (null == so.middle) {
         so.middle = so.from.shiftFractionTowards(so.to, 0.5)
       }
-      points[so.prefix + 'From'] = so.from
-      points[so.prefix + 'Middle'] = so.middle
-      points[so.prefix + 'To'] = so.to
+      points[so.prefix + 'From'] = so.from.copy()
+      points[so.prefix + 'Middle'] = so.middle.copy()
+      points[so.prefix + 'To'] = so.to.copy()
 
       points[so.prefix + 'FromCp'] = points[so.prefix + 'From'].shift(
         points[so.prefix + 'From'].angle(points[so.prefix + 'Middle']) + 90,
