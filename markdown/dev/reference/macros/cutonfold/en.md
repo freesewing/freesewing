@@ -63,6 +63,19 @@ macro('cutonfold', {
 
 ## Notes
 
+### Place outside `complete`
+
+The `cutonfold` macro should be placed outside of `complete` blocks
+in the part's draft method.
+
+This is because it provides information about the part's foldline and
+possible grainline,
+information that is always needed by the cutting layout regardless of
+whether `complete` details and graphics are shown on the pattern.
+
+The `cutonfold` macro will automatically show or hide the cut on fold
+indicator based on the `complete` setting.
+
 ### It's safe to use a corner of your pattern part for this
 
 Since this is typically used on corners, the generated cut-on-fold indicator
