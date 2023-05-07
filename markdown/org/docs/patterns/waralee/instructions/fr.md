@@ -1,49 +1,49 @@
 - - -
-title: "Waralee wrap pants: Sewing Instructions"
+titre: "Pantalon portefeuille Waralee : Instructions de couture"
 - - -
 
 <Warning>
 
-##### The key to Waralee is the waist band
+##### La clé de Waralee est la bande de taille
 
-In a way, Waralee is just a waist band with a long piece of fabric attached. The waist band needs to continue from the fabric into two strings of fabric that are used to tie the pants in the front and two in the back. These strings are not included in the pattern. Traditionally, they are of similar length. You can make longer ones for the front panel (the side that is a little shorter than the other, on the left in the illustrations below), to allow you to tie both sets in the front. I prefer this as it is easier to tie, and you don't have the bulk of the knot in the back.
+D'une certaine manière, Waralee est juste une bande de taille avec un long morceau de tissu attaché. La bande de taille doit continuer à partir du tissu en deux cordes de tissu qui sont utilisées pour attacher le pantalon à l'avant et deux autres pour le dos. Ces bandes ne sont pas incluses dans le patron. Traditionnellement, elles sont de la même longueur. Vous pouvez en faire des plus longues pour le panneau avant (le côté qui est un peu plus court que l'autre, sur la gauche dans les illustrations ci-dessous), pour vous permettre d'attacher les deux nœuds à l'avant. Je préfère comme ça car c'est pour facile à attacher et vous n'avez pas la bosse du nœud dans le dos.
 
 </Warning>
 
-### Step 1: Sew the pockets
+### Étape 1 : Coudre les poches
 
 <Note>
 
-##### Pockets are optional
+##### Les poches sont optionnelles
 
-Traditionally, these types of pants do not have pockets. Mais je veux mettre mon téléphone, mes clés et mon portefeuille quelque part. J'ai donc inclus des poches dans le motif. Vous pouvez décider par vous-même si vous le souhaitez sur votre pantalon.
+Traditionnellement, ce type de pantalon n'a pas de poches. Mais je veux mettre mon téléphone, mes clés et mon portefeuille quelque part. J'ai donc inclus des poches dans le motif. Vous pouvez décider par vous-même si vous le souhaitez sur votre pantalon.
 
 Les illustrations des étapes suivantes montrent les pantalons Waralee sans poches. Seuls les emplacements de poche du modèle sont affichés, pour vous aider à vous orienter.
 
-##### If you do want pockets, make them first
+##### Si vous voulez des poches, faites-les d'abord
 
-If you're going to make the pockets, make them before putting one piece of fabric on the other. Il est plus facile de travailler avec les pièces encore séparées.
+Si vous voulez faire les poches, faites les avant d'attacher les morceaux de tissus ensemble. Il est plus facile de travailler avec les pièces encore séparées.
 
 </Note>
 
-Both sets of pockets on Waralee are single welt pockets. These use a single piece of fabric to create a pocket opening, but are otherwise very similar to the double welt pockets shown here: [Double welt pockets](https://freesewing.org/docs/sewing/double-welt-pockets).
+Les deux poches de Waralee sont des poches passepoilées. Celles-ci utilisent un seul morceau de tissu pour créer l'ouverture de poche, mais sont par ailleurs très similaires aux poches à double passepoil montrées ici : [Double-poches passepoilées](https://freesewing.org/docs/sewing/double-welt-pockets).
 
-We'll start with the front pockets.
-- Start with all the parts, and mark the location of the pocket on the right side of the fabric.
-- Mark the pocket opening on one of the facing pieces too. This time on the wrong side of the fabric.
-- Place the facing on the fabric, right sides together. Align the corners of the pocket openings, and pin in place.
+Nous commencerons par les poches avant.
+- Commencez avec toutes les pièces et marquez l'emplacement de la poche sur le côté droit du tissu.
+- Marquez également l'ouverture de la poche sur l'une des pièces de devant. Cette fois-ci sur le mauvais côté du tissu.
+- Placez le parement sur le tissu, les côtés droit ensemble. Alignez les coins des ouvertures de la poche et épinglez-les en place.
 
-Pocket lining
-- Mark the pocket opening on your pocket lining. It should be just inside the seam allowance.
-- Align the pocket openings up on all fabric pieces, and line your pocket lining top up with the waistband. Pin or baste in place.
+Doublure de poche
+- Marquez l'ouverture de la poche sur votre doublure de poche. Il devrait être juste à l'intérieur de la marge de couture.
+- Alignez les ouvertures de poche au-dessus de tous les morceaux de tissu et fixez votre doublure de poche avec la ceinture. Épingler ou bâtir en place.
 
-Pocket opening
-- Using small stitches, sew the long sides of the pocket openings, catching fabric, facing, and pocket lining. Do not sew past the ends of the pocket opening.
-- Cut a slit directly between the two lines of stitching. Just before the end, split each end of the cut, snipping into each corner of the pocket opening (but not past). You should have a small V at each end of the cut.
-- Press the seams open.
-- Now push everything through the opening to the other side. Lay everything out nicely with the pocket opening open. Press the pocket opening.
+Ouverture de poche
+- À l’aide de petits points de couture, coudre les côtés longs des ouvertures de poche, attrapez le tissu, la doublure de poche et la parmenture de poche. Ne pas coudre après les extrémités de l'ouverture de la poche.
+- Couper une fente directement entre les deux lignes de couture. Juste avant la fin, séparez chaque extrémité de la coupe, en coupant vers chaque coin de la poche (mais sans les dépasser). Vous devriez avoir un petit V à chaque extrémité de la coupe.
+- Repasser pour ouvrir la couture.
+- Maintenant, faites tout passer par l'ouverture de l'autre côté. Disposez tout bien avec l'ouverture de la poche ouverte. Repassez sur l'ouverture de la poche.
 
-Constructing the welt
+Construction du passepoil
 - Turn the garment over, and press the bottom edge of the pocket facing under. Later, this will yield a nice, clean edgestitch.
 - Next, flip the pocket facing up, so that it covers the pocket opening. Then, fold back just enough of the facing to exactly cover the entire pocket opening. Press, and pin in place.
 
