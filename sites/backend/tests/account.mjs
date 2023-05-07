@@ -232,7 +232,7 @@ export const accountTests = async (chai, config, expect, store) => {
             )
             .send({
               email: `updating_${store.randomString()}@${store.config.tests.domain}`,
-              unittest: true,
+              test: true,
             })
             .end((err, res) => {
               expect(err === null).to.equal(true)
@@ -287,7 +287,7 @@ export const accountTests = async (chai, config, expect, store) => {
           )
           .send({
             email: store.account.email,
-            unittest: true,
+            test: true,
           })
           .end((err, res) => {
             expect(err === null).to.equal(true)

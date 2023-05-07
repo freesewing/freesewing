@@ -51,7 +51,7 @@ PatternModel.prototype.guardedCreate = async function ({ body, user }) {
   const img =
     this.config.use.sanity &&
     typeof body.img === 'string' &&
-    (!body.unittest || (body.unittest && this.config.use.tests?.sanity))
+    (!body.test || (body.test && this.config.use.tests?.sanity))
       ? await setPatternAvatar(this.record.id, body.img)
       : false
 

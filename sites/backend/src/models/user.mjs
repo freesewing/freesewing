@@ -150,6 +150,10 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
   const ehash = hash(clean(body.email))
   const check = randomString()
   await this.read({ ehash })
+
+  // Check for unit tests only once
+  const isTest = this.isTest(body)
+
   if (this.exists) {
     /*
      * User already exists. However, if we return an error, then baddies can
@@ -183,20 +187,21 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
         userId: this.record.id,
       })
     }
-    // Always send email
-    await this.mailer.send({
-      template: type,
-      language: body.language,
-      to: this.clear.email,
-      replacements: {
-        actionUrl:
-          type === 'signup-aed'
-            ? false // No actionUrl for disabled accounts
-            : i18nUrl(body.language, `/confirm/${type}/${this.Confirmation.record.id}/${check}`),
-        whyUrl: i18nUrl(body.language, `/docs/faq/email/why-${type}`),
-        supportUrl: i18nUrl(body.language, `/patrons/join`),
-      },
-    })
+    // Send email unless it's a test and we don't want to send test emails
+    if (!isTest || this.config.tests.sendEmail)
+      await this.mailer.send({
+        template: type,
+        language: body.language,
+        to: this.clear.email,
+        replacements: {
+          actionUrl:
+            type === 'signup-aed'
+              ? false // No actionUrl for disabled accounts
+              : i18nUrl(body.language, `/confirm/${type}/${this.Confirmation.record.id}/${check}`),
+          whyUrl: i18nUrl(body.language, `/docs/faq/email/why-${type}`),
+          supportUrl: i18nUrl(body.language, `/patrons/join`),
+        },
+      })
 
     // Now return as if everything is fine
     return this.setResponse(201, false, { email: this.clear.email })
@@ -225,6 +230,8 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
       // Set this one initially as we need the ID to create a custom img via Sanity
       img: this.encrypt(this.config.avatars.user),
     }
+    // During tests, users can set their own permission level so you can test admin stuff
+    if (isTest && body.role) data.role = body.role
     this.record = await this.prisma.user.create({ data })
   } catch (err) {
     log.warn(err, 'Could not create user record')
@@ -256,7 +263,7 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
   })
 
   // Send signup email
-  if (!this.isUnitTest(body) || this.config.tests.sendEmail)
+  if (!this.isTest(body) || this.config.tests.sendEmail)
     await this.mailer.send({
       template: 'signup',
       language: this.language,
@@ -271,7 +278,7 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
       },
     })
 
-  return this.isUnitTest(body)
+  return this.isTest(body)
     ? this.setResponse(201, false, {
         email: this.clear.email,
         confirmation: this.confirmation.record.id,
@@ -390,8 +397,8 @@ UserModel.prototype.sendSigninlink = async function (req) {
     },
     userId: this.record.id,
   })
-  const isUnitTest = this.isUnitTest(req.body)
-  if (!isUnitTest) {
+  const isTest = this.isTest(req.body)
+  if (!isTest) {
     // Send sign-in link email
     await this.mailer.send({
       template: 'signinlink',
@@ -522,7 +529,7 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
   // Now update the record
   await this.unguardedUpdate(this.cloak(data))
 
-  const isUnitTest = this.isUnitTest(body)
+  const isTest = this.isTest(body)
   if (typeof body.email === 'string' && this.clear.email !== clean(body.email)) {
     // Email change (requires confirmation)
     const check = randomString()
@@ -538,7 +545,7 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
       },
       userId: this.record.id,
     })
-    if (!isUnitTest || this.config.tests.sendEmail) {
+    if (!isTest || this.config.tests.sendEmail) {
       // Send confirmation email
       await this.mailer.send({
         template: 'emailchange',
@@ -590,8 +597,7 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
     result: 'success',
     account: this.asAccount(),
   }
-  if (isUnitTest && this.Confirmation.record?.id)
-    returnData.confirmation = this.Confirmation.record.id
+  if (isTest && this.Confirmation.record?.id) returnData.confirmation = this.Confirmation.record.id
 
   return this.setResponse(200, false, returnData)
 }
@@ -755,11 +761,14 @@ UserModel.prototype.sendResponse = async function (res) {
 
 /*
  * Update method to determine whether this request is
- * part of a unit test
+ * part of a (unit) test
  */
-UserModel.prototype.isUnitTest = function (body) {
-  if (!body.unittest) return false
-  if (!this.clear.email.split('@').pop() === this.config.tests.domain) return false
+UserModel.prototype.isTest = function (body) {
+  // Disalowing tests in prodution is hard-coded to protect people from
+  if (this.config.env === 'production' && !this.config.tests.production) return false
+  if (!body.test) return false
+  if (this.clear?.email && !this.clear.email.split('@').pop() === this.config.tests.domain)
+    return false
   if (body.email && !body.email.split('@').pop() === this.config.tests.domain) return false
 
   return true

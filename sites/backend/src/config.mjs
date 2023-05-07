@@ -27,6 +27,8 @@ const envToBool = (input = 'no') => {
 
 // Construct config object
 const baseConfig = {
+  // Environment
+  env: process.env.NODE_ENV || 'development',
   // Feature flags
   use: {
     github: envToBool(process.env.BACKEND_ENABLE_GITHUB),
@@ -87,6 +89,7 @@ const baseConfig = {
   },
   tests: {
     domain: process.env.BACKEND_TEST_DOMAIN || 'freesewing.dev',
+    production: envToBool(process.env.BACKEND_ALLOW_TESTS_IN_PRODUCTION),
   },
   website: {
     domain: process.env.BACKEND_WEBSITE_DOMAIN || 'freesewing.org',
@@ -202,6 +205,7 @@ const vars = {
   BACKEND_ENABLE_OAUTH_GITHUB: 'optional',
   BACKEND_ENABLE_OAUTH_GOOGLE: 'optional',
   BACKEND_ENABLE_TESTS: 'optional',
+  BACKEND_ALLOW_TESTS_IN_PRODUCTION: 'optional',
   BACKEND_ENABLE_DUMP_CONFIG_AT_STARTUP: 'optional',
 }
 
@@ -241,7 +245,7 @@ if (envToBool(process.env.BACKEND_ENABLE_OAUTH_GOOGLE)) {
   vars.BACKEND_OAUTH_GOOGLE_CLIENT_ID = 'required'
   vars.BACKEND_OAUTH_GOOGLE_CLIENT_SECRET = 'requiredSecret'
 }
-// Vars for unit tests
+// Vars for (unit) tests
 if (envToBool(process.env.BACKEND_ENABLE_TESTS)) {
   vars.BACKEND_TEST_DOMAIN = 'optional'
   vars.BACKEND_ENABLE_TESTS_EMAIL = 'optional'

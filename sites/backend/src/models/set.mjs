@@ -42,7 +42,7 @@ SetModel.prototype.guardedCreate = async function ({ body, user }) {
   const img =
     this.config.use.sanity &&
     typeof body.img === 'string' &&
-    (!body.unittest || (body.unittest && this.config.use.tests?.sanity))
+    (!body.test || (body.test && this.config.use.tests?.sanity))
       ? await setSetAvatar(this.record.id, body.img)
       : false
 
@@ -393,10 +393,10 @@ SetModel.prototype.sendYamlResponse = async function (res) {
 
 /*
  * Update method to determine whether this request is
- * part of a unit test
+ * part of a test
  */
-//UserModel.prototype.isUnitTest = function (body) {
-//  if (!body.unittest) return false
+//UserModel.prototype.isTest = function (body) {
+//  if (!body.test) return false
 //  if (!this.clear.email.split('@').pop() === this.config.tests.domain) return false
 //  if (body.email && !body.email.split('@').pop() === this.config.tests.domain) return false
 //
