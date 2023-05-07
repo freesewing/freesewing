@@ -56,7 +56,7 @@ macro('crossbox', {
 |----------------:|----------|---------------------|-------------|
 | `from`          |          | [Point](/reference/api/point) | The top left point of the crossbox |
 | `to`            |          | [Point](/reference/api/point) | The bottom right point of the crossbox |
-| `text`          |          | String   | The text to go on the dimension if not the from-to horizontal distance |
+| `text`          |          | String   | Optional text to go in the center of the crossbox |
 
 ## Result
 
