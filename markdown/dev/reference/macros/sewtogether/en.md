@@ -1,5 +1,5 @@
 ---
-title: sewtogether
+title: sewTogether
 ---
 
 The `sewTogether` macro is used to mark where two parts of the same `part` need 
