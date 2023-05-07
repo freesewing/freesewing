@@ -51,7 +51,7 @@ macro('pleat', {
 
 | Property        | Default  | Type                | Description |
 |----------------:|----------|---------------------|-------------|
-| `from`          |          | [Point](/reference/api/point) | The top left point of the crossbox |
+| `from`          |          | [Point](/reference/api/point) | The start point of the pleat |
 | `to`            |          | [Point](/reference/api/point) | The bottom right point of the crossbox |
 | `prefix`        | 'pleat'  | String   | The prefix to be used for creating all the points and paths |
 | `margin`        | 35       | Number   | The size (in mm) of the pleat lines                         |
