@@ -36,3 +36,10 @@ is to assign the part to its own stack.
 The part will not overlap other parts in drafting and printing layouts.
 This is because it is the only part drafted within its stack and
 because stacks do not overlap other stacks.
+
+<Related>
+
+Please see [Stacks](/guides/patterns/stacks) in the Pattern Guide for
+more information about how stacks can be used.
+
+</Related>
