@@ -1,5 +1,5 @@
 ---
-title: "Florent flat cap: Sewing Instructions"
+title: "Casquette plate Florent : Instructions de couture"
 ---
 
 ### Étape 1 : Thermocoller l'entoilage
