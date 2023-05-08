@@ -2,6 +2,7 @@
 
 # .env
 .env
+.key
 
 # Plugins
 plugins/plugin-theme/src/bundle.css.js

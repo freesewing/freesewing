@@ -7,6 +7,7 @@ import { measurements } from './measurements.mjs'
 import get from 'lodash.get'
 import { readFileSync, writeFileSync } from 'node:fs'
 import { postConfig } from '../local-config.mjs'
+import { roles } from '../../../config/roles.mjs'
 dotenv.config()
 
 // Allow these 2 to be imported
@@ -73,20 +74,7 @@ const baseConfig = {
     service: process.env.BACKEND_MFA_SERVICE || 'FreeSewing',
   },
   port,
-  roles: {
-    levels: {
-      readNone: 0,
-      readSome: 1,
-      readOnly: 2,
-      writeSome: 3,
-      user: 4,
-      curator: 5,
-      bughunter: 6,
-      support: 8,
-      admin: 9,
-    },
-    base: 'user',
-  },
+  roles,
   tests: {
     domain: process.env.BACKEND_TEST_DOMAIN || 'freesewing.dev',
     production: envToBool(process.env.BACKEND_ALLOW_TESTS_IN_PRODUCTION),

@@ -16,3 +16,5 @@ signupAgain: If you cannot find the link, you can receive a new one by signing u
 cannotUse: A disabled account cannot be used.
 contactSupport: Contact support
 reviewConsent: Review your consent
+roleLacking: You lack the required role to access this content
+roleLackingMsg: This content requires the <b>{ requiredRole }</b> role. Your role is <b>{ role }</b> which does not grant you access to this content.

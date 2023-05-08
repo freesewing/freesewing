@@ -3,6 +3,7 @@ import { useTranslation } from 'next-i18next'
 import Link from 'next/link'
 import { PageLink } from 'shared/components/page-link.mjs'
 import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
+import { Fingerprint } from 'shared/components/fingerprint.mjs'
 
 export const ns = ['account']
 
@@ -85,6 +86,8 @@ export const AccountLinks = () => {
       ))}
 
       <LinkList items={actions} first={t('actions')} {...lprops} />
+
+      <Fingerprint id={account.id} />
     </div>
   )
 }

@@ -78,6 +78,15 @@ const sitePages = (t = false, control = 99) => {
       s: 'apikeys',
       h: 1,
     },
+    curate: {
+      t: t('curate'),
+      s: 'curate',
+      h: 1,
+      sets: {
+        t: t('curateSets'),
+        s: 'curate/sets',
+      },
+    },
     new: {
       t: t('new'),
       s: 'new',

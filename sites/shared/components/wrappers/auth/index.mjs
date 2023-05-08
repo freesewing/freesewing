@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import { useAccount } from 'shared/hooks/use-account.mjs'
+import { roles } from 'config/roles.mjs'
 
 export const ns = ['auth']
 
@@ -68,6 +69,14 @@ const AccountStatusUnknown = ({ t }) => (
   </Wrap>
 )
 
+const RoleLacking = ({ t, requiredRole, role }) => (
+  <Wrap>
+    <h1>{t('roleLacking')}</h1>
+    <p dangerouslySetInnerHTML={{ __html: t('roleLackingMsg', { requiredRole, role }) }} />
+    <ContactSupport t={t} />
+  </Wrap>
+)
+
 const ConsentLacking = ({ t }) => (
   <Wrap>
     <h1>{t('consentLacking')}</h1>
@@ -83,7 +92,7 @@ const ConsentLacking = ({ t }) => (
   </Wrap>
 )
 
-export const AuthWrapper = ({ children, app }) => {
+export const AuthWrapper = ({ children, app, requiredRole = 'user' }) => {
   const { t } = useTranslation(ns)
   const { account, token } = useAccount()
   if (!token || !account.username) return <AuthRequired t={t} />
@@ -94,6 +103,10 @@ export const AuthWrapper = ({ children, app }) => {
     return <AccountStatusUnknown t={t} />
   }
   if (account.consent < 1) return <ConsentLacking />
+
+  if (!roles.levels[account.role] || roles.levels[account.role] < roles.levels[requiredRole]) {
+    return <RoleLacking t={t} role={account.role} requiredRole={requiredRole} />
+  }
 
   return children
 }

@@ -199,5 +199,19 @@ export function useBackend(token = false) {
   backend.updateSet = async (id, data) =>
     responseHandler(await api.patch(`/sets/${id}/jwt`, data, auth))
 
+  /*
+   * Get curated measurements sets
+   */
+  backend.getCuratedSets = async () => responseHandler(await api.get(`/curated-sets`))
+
+  /*
+   * Remove curated measurements set
+   */
+  backend.removeCuratedMeasurementsSet = async (id) => {
+    const response = await api.delete(`/curated-sets/${id}/jwt`, auth)
+
+    return response && response.status === 204 ? true : false
+  }
+
   return backend
 }
