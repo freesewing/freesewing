@@ -25,43 +25,9 @@ import { ModalThemePicker, ns as themeNs } from 'shared/components/modal/theme-p
 import { ModalLocalePicker, ns as localeNs } from 'shared/components/modal/locale-picker.mjs'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
 
+import { NavButton, NavSpacer, colors } from 'shared/components/workbench/header.mjs'
+
 export const ns = ['header', 'sections', ...themeNs, ...localeNs]
-
-const NavButton = ({ href, label, color, children, onClick = false, extraClasses = '' }) => {
-  const className =
-    'border-0 px-1 lg:px-4 text-base py-3 lg:py-4 text-center flex flex-col items-center 2xl:w-36 ' +
-    `hover:bg-${color}-400 text-${color}-400 hover:text-neutral grow lg:grow-0 ${extraClasses}`
-  const span = <span className="block font-bold hidden 2xl:block">{label}</span>
-
-  return onClick ? (
-    <button {...{ onClick, className }} title={label}>
-      {children}
-      {span}
-    </button>
-  ) : (
-    <Link {...{ href, className }} title={label}>
-      {children}
-      {span}
-    </Link>
-  )
-}
-
-const NavSpacer = () => (
-  <div className="hidden lg:block text-base lg:text-4xl font-thin opacity-30 px-0.5 lg:px-2">|</div>
-)
-
-export const colors = {
-  menu: 'red',
-  designs: 'orange',
-  patterns: 'yellow',
-  sets: 'lime',
-  showcase: 'green',
-  docs: 'cyan',
-  theme: 'blue',
-  language: 'indigo',
-  search: 'violet',
-  account: 'purple',
-}
 
 const NavIcons = ({ setModal, setSearch }) => {
   const { t } = useTranslation(['header'])
@@ -69,21 +35,17 @@ const NavIcons = ({ setModal, setSearch }) => {
 
   return (
     <>
-      <NavButton
-        onClick={() => setModal(<ModalMenu />)}
-        label={t('header:menu')}
-        color={colors.menu}
-      >
+      <NavButton onClick={() => setModal(<ModalMenu />)} label={t('header:menu')} color={colors[0]}>
         <MenuIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
-      <NavButton href="/designs" label={t('header:designs')} color={colors.designs}>
+      <NavButton href="/designs" label={t('header:designs')} color={colors[1]}>
         <DesignIcon className={iconSize} />
       </NavButton>
       <NavButton
         href="/patterns"
         label={t('header:patterns')}
-        color={colors.patterns}
+        color={colors[2]}
         extraClasses="hidden lg:flex"
       >
         <PageIcon className={iconSize} />
@@ -91,7 +53,7 @@ const NavIcons = ({ setModal, setSearch }) => {
       <NavButton
         href="/sets"
         label={t('header:sets')}
-        color={colors.sets}
+        color={colors[3]}
         extraClasses="hidden lg:flex"
       >
         <MeasureIcon className={iconSize} />
@@ -99,7 +61,7 @@ const NavIcons = ({ setModal, setSearch }) => {
       <NavButton
         href="/showcase"
         label={t('header:showcase')}
-        color={colors.showcase}
+        color={colors[4]}
         extraClasses="hidden lg:flex"
       >
         <ShowcaseIcon className={iconSize} />
@@ -107,7 +69,7 @@ const NavIcons = ({ setModal, setSearch }) => {
       <NavButton
         href="/docs"
         label={t('header:docs')}
-        color={colors.docs}
+        color={colors[5]}
         extraClasses="hidden lg:flex"
       >
         <DocsIcon className={iconSize} />
@@ -116,22 +78,22 @@ const NavIcons = ({ setModal, setSearch }) => {
       <NavButton
         onClick={() => setModal(<ModalThemePicker />)}
         label={t('header:theme')}
-        color={colors.theme}
+        color={colors[6]}
       >
         <ThemeIcon className={iconSize} />
       </NavButton>
       <NavButton
         onClick={() => setModal(<ModalLocalePicker />)}
         label={t('header:language')}
-        color={colors.language}
+        color={colors[7]}
       >
         <I18nIcon className={iconSize} />
       </NavButton>
-      <NavButton onClick={() => setSearch(true)} label={t('header:search')} color={colors.search}>
+      <NavButton onClick={() => setSearch(true)} label={t('header:search')} color={colors[8]}>
         <SearchIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
-      <NavButton href="/account" label={t('header:account')} color={colors.account}>
+      <NavButton href="/account" label={t('header:account')} color={colors[9]}>
         <UserIcon className={iconSize} />
       </NavButton>
     </>

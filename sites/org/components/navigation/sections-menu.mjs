@@ -1,17 +1,20 @@
+import { useContext } from 'react'
 import Link from 'next/link'
 import { icons, ns as sectionsNs } from 'shared/components/navigation/primary.mjs'
 import { useTranslation } from 'next-i18next'
 import orderBy from 'lodash.orderby'
 import { colors } from 'site/components/header/index.mjs'
+import { NavigationContext } from 'shared/context/navigation-context.mjs'
 
 export const ns = sectionsNs
 
-export const SectionsMenu = ({ app }) => {
+export const SectionsMenu = () => {
   const { t } = useTranslation(ns)
-  if (!app.state.sections) return null
+  const { sections = false, slug } = useContext(NavigationContext)
+  if (!sections) return null
 
   // Ensure each page as an `o` key so we can put them in order
-  const sortableSections = app.state.sections.map((s) => ({ ...s, o: s.o ? s.o : s.t }))
+  const sortableSections = sections.map((s) => ({ ...s, o: s.o ? s.o : s.t }))
   const output = []
   for (const page of orderBy(sortableSections, ['o', 't'])) {
     const item = (

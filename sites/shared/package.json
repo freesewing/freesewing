@@ -28,6 +28,8 @@
     "file-saver": "2.0.5",
     "front-matter": "4.0.2",
     "highlight.js": "11.7.0",
+    "jotai": "2.1.0",
+    "jotai-location": "0.5.1",
     "lodash.clonedeep": "4.5.0",
     "lodash.orderby": "4.6.0",
     "lodash.unset": "4.5.2",

@@ -142,11 +142,11 @@ sets.push(
       nameEs: `Cis-Hombre Gigante - ${size}%`,
       nameFr: `Cis-Homme Géant - ${size}%`,
       nameNl: `Cis-Heer Reus - ${size}%`,
-      tagsEn: ['cis-female', 'giants'],
-      tagsDe: ['cis-weiblich', 'riesen'],
-      tagsEs: ['cis-mujer', 'gigantes'],
-      tagsFr: ['cis-femme', 'géants'],
-      tagsNl: ['cis-dame', 'reuzen'],
+      tagsEn: ['cis-male', 'giants'],
+      tagsDe: ['cis-männlich', 'riesen'],
+      tagsEs: ['cis-hombre', 'gigantes'],
+      tagsFr: ['cis-homme', 'géants'],
+      tagsNl: ['cis-heer', 'reuzen'],
       measies: cisMaleGiant[size],
     })
   )

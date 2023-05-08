@@ -19,7 +19,14 @@ export const PageWrapper = (props) => {
   /*
    * Deconstruct props
    */
-  const { layout = DocsLayout, footer = true, children = [], path = [], locale = 'en' } = props
+  const {
+    layout = DocsLayout,
+    footer = true,
+    header = false,
+    children = [],
+    path = [],
+    locale = 'en',
+  } = props
   // Title is typically set in props.t but check props.title too
   const pageTitle = props.t ? props.t : props.title ? props.title : null
 
@@ -37,7 +44,6 @@ export const PageWrapper = (props) => {
    */
   const { modalContent } = useContext(ModalContext)
   const { title, setNavigation } = useContext(NavigationContext)
-  console.log({ title })
 
   /*
    * Update navigation context with title and path
@@ -66,7 +72,7 @@ export const PageWrapper = (props) => {
   const [search, setSearch] = useState(false)
 
   // Helper object to pass props down (keeps things DRY)
-  const childProps = { footer, pageTitle }
+  const childProps = { footer, header, pageTitle }
 
   // Make layout prop into a (uppercase) component
   const Layout = layout

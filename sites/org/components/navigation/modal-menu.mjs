@@ -5,7 +5,7 @@ import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 
 export const ns = primaryNs
 
-export const ModalMenu = ({ app }) => {
+export const ModalMenu = () => {
   const { t } = useTranslation(ns)
 
   return (
@@ -20,11 +20,11 @@ export const ModalMenu = ({ app }) => {
         >
           <div className="w-full lg:w-1/2">
             <h3>{t('mainSections')}</h3>
-            <SectionsMenu app={app} />
+            <SectionsMenu />
           </div>
           <div className="w-full lg:w-1/2">
             <h3>{t('currentSection')}</h3>
-            <ActiveSection app={app} bare />
+            <ActiveSection bare />
           </div>
         </div>
       </div>

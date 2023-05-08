@@ -92,7 +92,8 @@ export const optionType = (option) => {
   return 'constant'
 }
 
-export const capitalize = (string) => string.charAt(0).toUpperCase() + string.slice(1)
+export const capitalize = (string) =>
+  typeof string === 'string' ? string.charAt(0).toUpperCase() + string.slice(1) : ''
 
 export const strapiImage = (
   img,

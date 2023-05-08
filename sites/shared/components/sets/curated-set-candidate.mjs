@@ -20,7 +20,7 @@ export const CuratedSetLacksMeasies = ({ set, design, t, language }) => (
   <ChoiceLink
     icon={<NoIcon className="w-10 h-10 text-error" />}
     title={<Title set={set} language={language} />}
-    href={`/sets/${set.id}`}
+    href={`/new/pattern/${design}/sets/${set.id}`}
   >
     <div className="flex flex-row gap-2 items-center">
       <WarningIcon className="w-6 h-6 shrink-0 text-error" />
@@ -29,21 +29,19 @@ export const CuratedSetLacksMeasies = ({ set, design, t, language }) => (
   </ChoiceLink>
 )
 
-export const SetSummary = ({ set, design, t }) => (
+export const CuratedSetSummary = ({ set, language, href }) => (
   <ChoiceLink
-    title={<Title set={set} />}
+    title={<Title set={set} language={language} />}
     icon={<OkIcon className="w-10 h-10 text-success" stroke={3} />}
-    href="/new/pattern"
-  >
-    <button className="btn btn-secondary w-full">Use it</button>
-  </ChoiceLink>
+    href={href}
+  />
 )
 
-export const CuratedSetCandidate = ({ set, design, requiredMeasies = [] }) => {
+export const CuratedSetCandidate = ({ set, design, requiredMeasies = [], href }) => {
   const { t, i18n } = useTranslation(['sets'])
   const { language } = i18n
 
-  const setProps = { set, design, t, language }
+  const setProps = { set, design, t, language, href }
 
   // Quick check for required measurements
   if (!set.measies || Object.keys(set.measies).length < requiredMeasies.length)

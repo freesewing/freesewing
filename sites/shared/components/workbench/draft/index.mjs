@@ -1,17 +1,16 @@
 import { SvgWrapper } from './svg.mjs'
 import { DraftError } from './error.mjs'
 
-export const LabDraft = (props) => {
-  const { app, draft, gist, updateGist, unsetGist, showInfo, feedback, hasRequiredMeasurements } =
-    props
+export const DraftView = ({ pattern, setView, gist, updateGist }) => {
+  //const { app, draft, gist, updateGist, unsetGist, showInfo, feedback, hasRequiredMeasurements } = props
 
-  if (!draft || !hasRequiredMeasurements) return null
+  if (!pattern) return null
 
   // Render as SVG
   if (gist?.renderer === 'svg') {
     let svg
     try {
-      svg = draft.render()
+      svg = pattern.render()
     } catch (error) {
       console.log('Failed to render design', error)
       return <DraftError error={error} {...props} />
@@ -22,7 +21,7 @@ export const LabDraft = (props) => {
   // Render as React
   let patternProps = {}
   try {
-    patternProps = draft.getRenderProps()
+    patternProps = pattern.getRenderProps()
   } catch (error) {
     console.log('Failed to get render props for design', error)
     return (
@@ -41,23 +40,23 @@ export const LabDraft = (props) => {
     errors.push(...set.error)
   }
 
+  console.log(patternProps)
+
   return (
     <>
       {errors.length > 0 ? (
         <DraftError
           {...{
-            draft,
+            pattern,
             patternProps,
             updateGist,
-            patternLogs: draft.store.logs,
-            setLogs: draft.setStores[0].logs,
+            patternLogs: pattern.store.logs,
+            setLogs: pattern.setStores[0].logs,
             errors,
           }}
         />
       ) : null}
-      <SvgWrapper
-        {...{ draft, patternProps, gist, updateGist, unsetGist, showInfo, app, feedback }}
-      />
+      <SvgWrapper {...{ pattern, patternProps, gist, updateGist }} />
     </>
   )
 }
