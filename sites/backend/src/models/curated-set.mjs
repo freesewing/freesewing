@@ -118,7 +118,16 @@ CuratedSetModel.prototype.allCuratedSets = async function () {
     log.warn(`Failed to search curated sets: ${err}`)
   }
   const list = []
-  for (const curatedSet of curatedSets) list.push(curatedSet)
+  for (const curatedSet of curatedSets) {
+    // FIXME: Convert object to JSON. See https://github.com/prisma/prisma/issues/3786
+    const asPojo = { ...curatedSet }
+    asPojo.measies = JSON.parse(asPojo.measies)
+    for (const lang of this.config.languages) {
+      const key = `tags${capitalize(lang)}`
+      asPojo[key] = JSON.parse(asPojo[key] || [])
+    }
+    list.push(asPojo)
+  }
 
   return list
 }
