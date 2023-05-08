@@ -29,24 +29,29 @@ export const PageWrapper = (props) => {
    */
   const [theme, setTheme] = useTheme()
   const [currentTheme, setCurrentTheme] = useState()
+  const [navupdates, setNavupdates] = useState(0)
   useEffect(() => setCurrentTheme(theme), [currentTheme, theme])
 
   /*
    * Contexts
    */
   const { modalContent } = useContext(ModalContext)
-  const { title, setTitle, setNavigation } = useContext(NavigationContext)
+  const { title, setNavigation } = useContext(NavigationContext)
+  console.log({ title })
 
   /*
    * Update navigation context with title and path
    */
   useEffect(() => {
-    setNavigation({
-      title: pageTitle,
-      locale,
-      path,
-    })
-  }, [path, title, pageTitle])
+    if (navupdates < 5) {
+      setNavigation({
+        title: pageTitle,
+        locale,
+        path,
+      })
+      setNavupdates(navupdates + 1)
+    } else console.warn('Suppressing navigation update in page wrapper to avoid render loop')
+  }, [path, pageTitle])
 
   /*
    * Hotkeys (keyboard actions)
@@ -61,7 +66,7 @@ export const PageWrapper = (props) => {
   const [search, setSearch] = useState(false)
 
   // Helper object to pass props down (keeps things DRY)
-  const childProps = { footer, title: pageTitle }
+  const childProps = { footer, pageTitle }
 
   // Make layout prop into a (uppercase) component
   const Layout = layout

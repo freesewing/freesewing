@@ -12,6 +12,7 @@ export const NavigationContext = React.createContext(defaultNavigationContext)
 
 export const NavigationContextProvider = ({ children }) => {
   function setNavigation(newValues) {
+    console.log('setting title to', newValues.title)
     setValue({
       ...value,
       ...newValues,

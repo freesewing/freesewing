@@ -27,8 +27,6 @@ const DynamicAuthWrapper = dynamic(
  * or set them manually.
  */
 const CuratorPage = ({ page }) => {
-  const { t } = useTranslation(['account'])
-
   return (
     <PageWrapper {...page}>
       <DynamicAuthWrapper requiredRole="curator">

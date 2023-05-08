@@ -1,6 +1,8 @@
 // Dependencies
 import orderBy from 'lodash.orderby'
 import { measurements } from 'site/prebuild/design-measurements.mjs'
+import { capitalize } from 'shared/utils.mjs'
+import { siteConfig } from 'site/site.config.mjs'
 // Context
 import { LoadingContext } from 'shared/context/loading-context.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
@@ -14,22 +16,31 @@ import { useToast } from 'shared/hooks/use-toast.mjs'
 import Link from 'next/link'
 import { PopoutWrapper } from 'shared/components/wrappers/popout.mjs'
 import { Collapse, useCollapseButton } from 'shared/components/collapse.mjs'
-import { TrashIcon, EditIcon } from 'shared/components/icons.mjs'
+import { TrashIcon, EditIcon, FilterIcon } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import Timeago from 'react-timeago'
-import { siteConfig } from 'site/site.config.mjs'
-import { capitalize } from 'shared/utils.mjs'
+import { Tag } from 'shared/components/tag.mjs'
 
 export const ns = ['toast', 'curate', 'sets', 'account']
 
-const Row = ({ title, children }) => (
+export const Row = ({ title, children }) => (
   <div className="flex flex-row flex-wrap items-center lg:gap-4 my-2">
     <div className="w-24 text-left md:text-right block md:inline font-bold pr-4">{title}</div>
     <div className="grow">{children}</div>
   </div>
 )
 
-const CuratedSet = ({ set, account, t, startLoading, stopLoading, backend, refresh, toast }) => {
+const CuratedSet = ({
+  set,
+  account,
+  t,
+  startLoading,
+  stopLoading,
+  backend,
+  refresh,
+  toast,
+  language,
+}) => {
   const { setModal } = useContext(ModalContext)
 
   const remove = async () => {
@@ -60,8 +71,7 @@ const CuratedSet = ({ set, account, t, startLoading, stopLoading, backend, refre
 
   return (
     <Collapse
-      title={set.nameEn}
-      openTitle={set.nameEn}
+      title={set[`name${capitalize(language)}`]}
       primary
       buttons={[
         <Link
@@ -103,7 +113,9 @@ const CuratedSet = ({ set, account, t, startLoading, stopLoading, backend, refre
             {set[`name${lang}`]}
           </Row>
         ))}
-      <Link href={`/curate/sets/${set.id}`}>edit</Link>
+      <Link href={`/curate/sets/${set.id}`} className="btn btn-secondary w-full">
+        edit
+      </Link>
     </Collapse>
   )
 }
@@ -115,12 +127,14 @@ export const CurateSets = () => {
   // Hooks
   const { account, token } = useAccount()
   const backend = useBackend(token)
-  const { t } = useTranslation('sets', 'curate', 'toast', 'account')
+  const { t, i18n } = useTranslation('sets', 'curate', 'toast', 'account')
+  const { language } = i18n
   const toast = useToast()
 
   // State
-  const [curatedSets, setCuratedSets] = useState({})
-  const [list, setList] = useState([])
+  const [curatedSets, setCuratedSets] = useState([])
+  const [filter, setFilter] = useState([])
+  const [tags, setTags] = useState([])
   const [reload, setReload] = useState(0)
 
   // Force a refresh
@@ -131,20 +145,72 @@ export const CurateSets = () => {
     const getCuratedSets = async () => {
       const result = await backend.getCuratedSets()
       if (result.success) {
-        const all = {}
-        for (const set of result.data.curatedSets) all[set.id] = set
+        const all = []
+        const allTags = new Set()
+        for (const set of result.data.curatedSets) {
+          all.push(set)
+          for (const tag of set[`tags${capitalize(language)}`]) allTags.add(tag)
+        }
         setCuratedSets(all)
+        setTags([...allTags])
       }
     }
     getCuratedSets()
   }, [reload])
 
+  const addFilter = (tag) => {
+    const newFilter = [...filter, tag]
+    setFilter(newFilter)
+  }
+
+  const removeFilter = (tag) => {
+    const newFilter = filter.filter((t) => t !== tag)
+    setFilter(newFilter)
+  }
+
+  const applyFilter = () => {
+    const newList = new Set()
+    for (const set of curatedSets) {
+      const setTags = []
+      for (const lang of siteConfig.languages) {
+        const key = `tags${capitalize(lang)}`
+        setTags.push(...set[key])
+      }
+      let match = 0
+      for (const tag of filter) {
+        if (setTags.includes(tag)) match++
+      }
+      if (match === filter.length) newList.add(set)
+    }
+
+    return [...newList]
+  }
+
+  const list = applyFilter()
+
   return (
     <div className="max-w-xl xl:pl-4">
-      {Object.keys(curatedSets).map((set) => (
+      {tags.map((tag) => (
+        <Tag onClick={() => addFilter(tag)}>{tag}</Tag>
+      ))}
+      <div className="flex flex-row items-center justify-between gap-2 my-2 p-2 px-4 border rounded-lg bg-secondary bg-opacity-10">
+        <FilterIcon className="w-6 h-6 text-secondary" />
+        <span>
+          {list.length} / {curatedSets.length}
+        </span>
+        <button onClick={() => setFilter([])} className="btn btn-secondary btn-sm">
+          clear
+        </button>
+      </div>
+      {filter.map((tag) => (
+        <Tag onClick={() => removeFilter(tag)} color="success" hoverColor="error">
+          {tag}
+        </Tag>
+      ))}
+      {list.map((set) => (
         <CuratedSet
-          set={curatedSets[set]}
-          {...{ account, t, startLoading, stopLoading, backend, refresh, toast }}
+          key={set.id}
+          {...{ set, account, t, startLoading, stopLoading, backend, refresh, toast, language }}
         />
       ))}
     </div>

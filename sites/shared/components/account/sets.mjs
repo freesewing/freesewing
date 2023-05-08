@@ -147,7 +147,7 @@ const EditField = (props) => {
 
 const noop = () => null
 
-const EditRow = (props) => (
+export const EditRow = (props) => (
   <Collapse
     color="secondary"
     openTitle={props.title}
@@ -178,7 +178,7 @@ const Mval = ({ m, val = false, imperial = false, className = '' }) =>
     )
   ) : null
 
-const MeasieRow = (props) => {
+export const MeasieRow = (props) => {
   const { t, m, mset } = props
 
   const isSet = typeof mset.measies?.[m] === 'undefined' ? false : true
@@ -377,7 +377,7 @@ const MeasieInput = ({ m, mset, backend, toast, refresh }) => {
   )
 }
 
-const EditImg = ({ t, mset, account, backend, toast, refresh }) => {
+const EditImg = ({ t, mset, account, backend, toast, refresh, curated = false }) => {
   const [img, setImg] = useState(mset.img)
 
   const onDrop = useCallback((acceptedFiles) => {
@@ -400,7 +400,9 @@ const EditImg = ({ t, mset, account, backend, toast, refresh }) => {
 
   const save = async () => {
     startLoading()
-    const result = await backend.updateSet(mset.id, { img })
+    const result = curated
+      ? await backend.updateCuratedSet(mset.id, { img })
+      : await backend.updateSet(mset.id, { img })
     if (result.success) {
       refresh()
       toast.for.settingsSaved()
@@ -641,7 +643,7 @@ const EditPublic = ({ t, mset, account, backend, toast, refresh }) => {
   )
 }
 
-const EditSectionTitle = ({ title }) => (
+export const EditSectionTitle = ({ title }) => (
   <h5 className="border border-solid border-b-2 border-r-0 border-l-0 border-t-0 border-primary mt-4 mb-2">
     {title}
   </h5>

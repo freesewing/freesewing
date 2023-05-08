@@ -205,6 +205,11 @@ export function useBackend(token = false) {
   backend.getCuratedSets = async () => responseHandler(await api.get(`/curated-sets`))
 
   /*
+   * Get curated measurements set
+   */
+  backend.getCuratedSet = async (id) => responseHandler(await api.get(`/curated-sets/${id}`))
+
+  /*
    * Remove curated measurements set
    */
   backend.removeCuratedMeasurementsSet = async (id) => {
