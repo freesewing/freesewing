@@ -65,7 +65,7 @@
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
     "@types/express": "^4.17.13",
-    "@types/node": "^18.0.0",
+    "@types/node": "^20.1.0",
     "@types/react": "^18.0.8",
     "all-contributors-cli": "^6.20.0",
     "autoprefixer": "^10.4.0",
