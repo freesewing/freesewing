@@ -137,7 +137,7 @@ plugintest:
 rehype-jargon:
   _:
     'unist-util-visit': &unist-util-visit '4.1.2'
-    'hast-util-from-html': '1.0.1'
+    'hast-util-from-html': '1.0.2'
 rehype-highlight-lines:
   _:
     'unist-util-remove': '3.1.1'
