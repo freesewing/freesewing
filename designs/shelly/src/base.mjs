@@ -18,19 +18,21 @@ function draftBase({
   snippets,
   Snippet,
 }) {
-  if (options.straightSides) options.hipsEase = options.chestEase
+  let hipsEase = options.hipsEase
+  if (options.straightSides) hipsEase = options.chestEase
 
   const armholeYPosition = measurements.hpsToWaistBack - measurements.waistToArmhole
-  let chest = measurements.chest
-  if (options.straightSides)
+  let chest = measurements.chest * (1 + options.chestEase)
+  if (options.straightSides) {
     chest = Math.max(
       measurements.chest * (1 + options.chestEase),
-      measurements.hips * (1 + options.hipsEase)
+      measurements.hips * (1 + hipsEase)
     )
+  }
   chest -= 4 * (options.raglanScoopMagnitude * armholeYPosition)
   const bodyLength = options.bodyLength * (measurements.hpsToWaistBack + measurements.waistToHips)
   const neckRadius = (measurements.neck * (1 + options.neckEase)) / (2 * Math.PI)
-  const hips = measurements.hips * (1 + options.hipsEase)
+  const hips = measurements.hips * (1 + hipsEase)
 
   store.set('neckRadius', neckRadius)
 
