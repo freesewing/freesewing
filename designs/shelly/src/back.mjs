@@ -43,6 +43,27 @@ function draftBack({
   const backNecklineToRaglanAngle = raglanAngle - (necklineAngleAtRaglan + 180)
   store.set('backNecklineToRaglanAngle', backNecklineToRaglanAngle)
 
+  const drawSide = () => {
+    if (options.straightSides)
+      return new Path().move(points.sideHem).line(points.armholeCornerScooped)
+    else
+      return new Path()
+        .move(points.sideHem)
+        .curve(points.sideCp1, points.sideCp2, points.armholeCornerScooped)
+  }
+
+  paths.saBase = drawSide()
+    .curve(points.armholeScoopCp1, points.armholeScoopCp2, points.armholeScoopEnd)
+    .line(points.neckShoulderCorner)
+    .curve(points.neckCP1, points.neckCP2, points.cfNeck)
+    .hide(true)
+
+  paths.foldBase = new Path().move(points.cfNeck).line(points.cfHem).hide(true)
+
+  paths.hemBase = new Path().move(points.cfHem).line(points.sideHem).hide(true)
+
+  paths.seam = paths.saBase.join(paths.foldBase).join(paths.hemBase).close().attr('class', 'fabric')
+
   if (paperless) {
     macro('vd', {
       from: points.cfNeck,

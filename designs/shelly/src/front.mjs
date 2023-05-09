@@ -21,7 +21,7 @@ function draftFront({
   const raglanAngle = store.get('raglanAngle')
   const neckRadius = store.get('neckRadius')
 
-  points.neckCenter = points.raglanCenter.shift(270, options.neckBalance * neckRadius)
+  //  points.neckCenter = points.raglanCenter.shift(270, options.neckBalance * neckRadius)
 
   points.neckShoulderCorner = utils.beamIntersectsCircle(
     points.neckCenter,
