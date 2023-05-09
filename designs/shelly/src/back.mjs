@@ -91,7 +91,7 @@ function draftBack({
   }
 
   if (complete) {
-    snippets.armholeScoopEnd = new Snippet('notch', points.armholeScoopEnd)
+    snippets.armholeScoopEnd = new Snippet('bnotch', points.armholeScoopEnd)
 
     points.title = new Point(
       points.armholeCorner.x / 2,
