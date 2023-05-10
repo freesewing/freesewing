@@ -1,7 +1,7 @@
 ---
 straightSides:
   title: Straight sides
-  description: Forms a tubular shirt, which is a shirt where the hips and chests are the same width and connected by a straight seam.
+  description: Forms a tubular shirt, which is a shirt where the hips and chest are the same width and connected by a straight seam.
 
 bodyHem:
   title: Body hem
@@ -25,7 +25,7 @@ hipsEase:
 
 neckbandLength:
   title: Neckband length
-  description: Controls how long the neckband is, as a percentage of the circumferance of the neckline.
+  description: Controls how long the neckband is, as a percentage of the circumference of the neckline.
 
 neckbandWidth:
   title: Neckband width

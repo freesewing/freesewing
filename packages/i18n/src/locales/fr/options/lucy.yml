@@ -5,6 +5,6 @@ length:
   title: Longueur
   description: Longueur (profondeur) de la poche
 edge:
-  title: Taper
-  description: Controls how much the pocket opening tapers inwards
+  title: Rétrécissement
+  description: Contrôle comment l'ouverture de la poche rétrécie à l'intérieur
 

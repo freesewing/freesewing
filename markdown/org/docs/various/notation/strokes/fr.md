@@ -8,7 +8,7 @@ Pour référence, voici les différentes épaisseurs de lignes disponibles :
 
 <Legend part="lineWidths">
 
-The different line widths
+Les différentes épaisseurs de ligne
 
 </Legend>
 
@@ -16,6 +16,6 @@ Et ici sont les différents styles de trait :
 
 <Legend part="lineStrokes">
 
-The different line strokes
+Les différents styles de trait
 
 </Legend>

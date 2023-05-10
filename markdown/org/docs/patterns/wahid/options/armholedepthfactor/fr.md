@@ -1,5 +1,5 @@
 - - -
-title: "Armhole depth factor"
+titre : "Profondeur d'emmanchure"
 - - -
 
 Cette option contrôle la profondeur de l'emmanchure.
