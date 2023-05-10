@@ -10,4 +10,4 @@ For compression clothes and swimwear, a 20:80 ratio of nylon/polyester to spande
 
 The raglan sleeves lend themselves well to using different colors/prints for the bodice and for the sleeves.
 
-With swim fabric/spandex, it is recommnded to make the neckband out of the same material used for the shirt. For less stretchy fabric, such as cotton jersey knit, ribbing is recommended.
+With swim fabric/spandex, it is recommended to make the neckband out of the same material used for the shirt. For less stretchy fabric, such as cotton jersey knit, ribbing is recommended.
