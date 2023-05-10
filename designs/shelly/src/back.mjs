@@ -119,6 +119,15 @@ function draftBack({
       (points.cfHem.y + points.armholeCornerScooped.y / 2) / 2
     )
     macro('title', { at: points.title, nr: 2, title: 'back' })
+
+    if (sa) {
+      paths.sa = new Path()
+        .move(points.cfHem)
+        .join(paths.hemBase.offset(sa * options.hemWidth * 100))
+        .join(paths.saBase.offset(sa))
+        .line(points.cfNeck)
+        .attr('class', 'fabric sa')
+    }
   }
 
   return part
