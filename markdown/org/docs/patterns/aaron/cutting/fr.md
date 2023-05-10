@@ -1,5 +1,5 @@
 - - -
-titre: "Débardeur (A-Shirt) Aaron : Instructions de coupe"
+title: "Débardeur (A-Shirt) Aaron : Instructions de coupe"
 - - -
 
 - Couper **1 dos** au pli
@@ -10,8 +10,8 @@ titre: "Débardeur (A-Shirt) Aaron : Instructions de coupe"
 
 #### Mises en garde
 
-- Il n'y a pas de marge au niveau des emmanchures
-- Il n'y a pas de marge au niveau de l'encolure
-- Il n'y a pas de marge au niveau de l'ourlet
+- Il n'y a pas de marge de couture au niveau des emmanchures
+- Il n'y a pas de marge de couture au niveau de l'encolure
+- Il n'y a pas de marge de couture au niveau de l'ourlet
 
 </Warning>

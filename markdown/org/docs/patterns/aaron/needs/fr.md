@@ -1,5 +1,5 @@
 - - -
-titre: "Débardeur Aaron (A-Shirt) : Ce dont vous avez besoin"
+title: "Débardeur Aaron (A-Shirt) : Ce dont vous avez besoin"
 - - -
 
 Pour réaliser Aaron, vous aurez besoin de :
