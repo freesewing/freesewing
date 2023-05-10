@@ -62,7 +62,7 @@ core:
     'lodash.unset': &_unset '4.5.2'
     'lodash.clonedeep': '^4.5.0'
   dev:
-    'eslint': &eslint '8.39.0'
+    'eslint': &eslint '8.40.0'
     'nyc': '15.1.0'
     'mocha': *mocha
     'chai': *chai
@@ -137,7 +137,7 @@ plugintest:
 rehype-jargon:
   _:
     'unist-util-visit': &unist-util-visit '4.1.2'
-    'hast-util-from-html': '1.0.1'
+    'hast-util-from-html': '1.0.2'
 rehype-highlight-lines:
   _:
     'unist-util-remove': '3.1.1'
@@ -188,8 +188,8 @@ yuri:
 
 backend:
   _:
-    '@aws-sdk/client-sesv2': '3.326.0'
-    '@prisma/client': &prisma '4.13.0'
+    '@aws-sdk/client-sesv2': '3.329.0'
+    '@prisma/client': &prisma '4.14.0'
     'bcryptjs': '2.4.3'
     'cors': '2.8.5'
     'crypto': '1.0.1'
@@ -201,10 +201,10 @@ backend:
     'passport': '0.6.0'
     'passport-http': '0.3.0'
     'passport-jwt': '4.0.1'
-    'pino': '8.11.0'
+    'pino': '8.12.1'
     'qrcode': '1.5.3'
     'swagger-ui-dist': '4.18.3'
-    'swagger-ui-express': '4.6.2'
+    'swagger-ui-express': '4.6.3'
   dev:
     'chai': *chai
     'chai-http': '4.3.0'
@@ -220,7 +220,7 @@ dev:
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': &mdxRuntime '2.0.0-next.9'
-    '@next/bundle-analyzer': &next '13.3.4'
+    '@next/bundle-analyzer': &next '13.4.1'
     '@tailwindcss/typography': &tailwindTypography '0.5.9'
     'algoliasearch': '4.17.0'
     'daisyui': &daisyui '2.51.6'
@@ -334,7 +334,7 @@ org:
 
 sanity:
   _:
-    '@sanity/vision': &sanity '3.10.0'
+    '@sanity/vision': &sanity '3.10.1'
     'react': *react
     'react-dom': *react
     'react-is': *react

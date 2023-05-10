@@ -1,12 +1,12 @@
 - - -
-titre: "Débardeur Aaron (A-Shirt) : Instructions de couture"
+title: "Débardeur Aaron (A-Shirt) : Instructions de couture"
 - - -
 
 ## Étape 1 : Faire les coutures d'assemblage
 
 ![Fermer les coutures latérales et les coutures d'épaule](step01.png)
 
-Placez le torse avant contre le torse arrière, endroit contre endroit. Assemblez les côtés et les épaules ensemble. Si vous possédez une surjeteuse, c'est le bon moment de l'utiliser . Si ce n'est pas le cas, finissez vos coutures autrement.
+Placez le torse avant contre le torse arrière, _endroit contre endroit_. Assemblez les côtés et les épaules ensemble. Si vous possédez une surjeteuse, c'est le bon moment de l'utiliser . Si ce n'est pas le cas, finissez vos coutures autrement.
 
 ## Étape 2 : Faire l'ourlet
 
@@ -42,11 +42,11 @@ Dans les deux cas, moins vous avez d'arrondi "serré", plus il sera facile de le
 
 </Note>
 
-Nous finirons par le trou du bras et du cou avec un [biais de jersey](/docs/sewing/knit-binding) (Remarque : pas une bande de jersey, il y a une différence, et elle est expliquée [ici](/docs/sewing/knit-binding)).
+Nous finirons par le trou du bras et du cou avec un [biais de jersey](/docs/sewing/knit-binding) (Remarque : pas une bande de jersey). il y a une différence, et elle est expliquée [ici](/docs/sewing/knit-binding)).
 
 <Note>
 
-C'est la seule partie de la fabrication de ce A-shirt qui nécessite un peu de pratique. Ne vous inquiétez pas, il vous suffit d'en faire quelques uns et vous serez un pro en un rien de temps.
+C'est la seule partie de la fabrication de ce débardeur (A-shirt) qui nécessite un peu de pratique. Ne vous inquiétez pas, il vous suffit d'en faire quelques uns et vous serez un pro en un rien de temps.
 
 </Note>
 
@@ -57,7 +57,7 @@ C'est la seule partie de la fabrication de ce A-shirt qui nécessite un peu de p
 La première chose à faire est de décider où démarrer/arrêter notre biais. Voici ce que je suggère :
 
 - Pour les emmanchures : à la couture latérale. Cela cachera notre couture sous le bras
-- Pour l'encolure : à l'arrière, au milieu. Vous pourriez vouloir marquer ceci avec une broche
+- Pour l'encolure : à l'arrière, au milieu. Vous pourriez vouloir marquer ceci avec une épingle
 
 ### Placer (démarrer) votre biais
 
@@ -67,7 +67,7 @@ Posez votre débardeur avec le bon côté vers le haut, et placez votre bande de
 
 Alignez le bord long de votre bande sur le bord de votre tissu de façon à ce que la bande repose sur le tissu (et non dans l'ouverture). Placez le coin sur votre point de départ.
 
-Décalez maintenant votre bande de reliure de 1 cm par rapport à votre point de départ. Ce petit surplus garantira que nous pourrons joindre les deux extrémités plus tard.
+Décalez maintenant votre bande de biais de 1 cm avant votre point de départ. Ce petit surplus garantira que nous pourrons joindre les deux extrémités plus tard.
 
 ### Assurez-vous de savoir où coudre
 
@@ -119,7 +119,7 @@ Pliez votre débardeur (A-shirt) de la façon dont il vous sera le plus facile p
 
 ![Coudre les extrémités du biais ensemble](step03h.png)
 
-Maintenant que vos extrémités de biais sont réunies, il est temps de terminer les 6 dernière cm du biais. Cousez-les en restant à 1,5cm du bord comme vous l'avez fait auparavant.
+Maintenant que vos extrémités de biais sont réunies, il est temps de terminer les 6 derniers cm du biais. Cousez-les en restant à 1,5cm du bord comme vous l'avez fait auparavant.
 
 ## Étape 4 : Replier le biais à l’intérieur et coudre
 

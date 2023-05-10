@@ -1,45 +1,44 @@
 - - -
-title: "Waralee wrap pants: Cutting Instructions"
+titre: "Pantalon portefeuille Waralee : Instructions de coupe"
 - - -
 
 <Note>
 
-Waralee consists of two mirrored pieces of fabric.
-They are basically big rectangles with pieces missing.
-As such, it is easier to print out the part you need to cut out and measure the rest,
-than it is to print out everything and cut the pattern the traditional way.
+Waralee se compose de deux pièces de tissu en miroir.
+Ce sont essentiellement des grands rectangles avec des pièces en moins.
+De fait, il est plus facile d'imprimer les parties qu'il faudra enlever et mesurer le reste que de tout imprimer et couper le patron de façon traditionnelle.
 
-That said, the pattern is available both ways. So you can print out the whole thing, tape all the pages together, and use that to cut out the fabric, if you prefer. But we recommend only printing the part that you need to cut out.
+Ceci étant dit, le modèle est disponible dans les deux sens. Ainsi, vous pouvez imprimer le tout, coller toutes les pages ensemble, et l'utiliser pour couper le tissu, si vous préférez. Mais nous vous recommandons de n'imprimer que la pièce que vous devez enlever.
 
-You will need to print out the pockets and pocket facings in the traditional way.
+Vous devrez imprimer les poches et les faces de poche de la manière traditionnelle.
 
 </Note>
 
-### Materials
+### Matériaux
 
-- **Main fabric**
-  - Cut **2 pants** parts.
-  - (Optional) Cut **2 Pocket** parts on the fold.
-  - Cut **4 backPocket** parts
-  - Cut **4 frontFacing** parts
-  - Cut **4 backFacing** parts
+- **Tissu principal**
+  - Couper **2 pièces de pantalon**.
+  - (Optionel) Couper** 2 pièces de poches dans le pli**.
+  - Couper **4 poches arrière**
+  - Couper **4 poches avant**
+  - Couper **4 faces arrière**
 
 <Note>
 
-You can cut the Pocket and backPocket parts out of a lining fabric if you prefer but this will only be needed if you deviate from the recommended main fabrics.
+Si vous préférez, vous pouvez couper les pièces de poche et de poche arrière dans un tissu de doublure mais cela ne sera nécessaire que si vous vous écartez des principaux tissus recommandés.
 
 </Note>
 
 <Tip>
 
-Enregistrer une arborescence.
-Comme il ne s'agit que de quelques rectangles (avec un côté incliné), vous pouvez simplement utiliser une règle pour couper la partie principale. Ensuite, vous utilisez la partie 2 pour couper la partie crochée. Enregistrer une arborescence.
+La pièce de patron 2 sert si vous voulez faire le pantalon sans tout imprimer.
+Comme il ne s'agit que de quelques rectangles (avec un côté incliné), vous pouvez simplement utiliser une règle pour couper la partie principale. Ensuite, vous utilisez la partie 2 pour couper la partie crochée. Sauvez les arbres.
 
-Part 2 has a negative seam allowance, since you'll be using it opposite of what you normally use the pattern parts for.
+Cette partie a une marge de couture négative, puisque vous l'utiliserez à l'opposé de ce pour quoi vous utilisez normalement les pièces de patron.
 
-If you opt for the cut-out method, use the paperless view to see all the dimensions of the pattern.
-You will need to cut a narrow strip out from what will become the front, and a small triangle and strip from what will become the back.
-And in the middle between these will be the little cut-out pattern piece.
-Make sure you measure this correctly, and you have the fabric squared before you start cutting.
+Si vous optez pour la méthode de découpe en négatif, utilisez la vue sans papier pour voir toutes les dimensions du motif.
+Vous devrez couper une bande étroite de ce qui deviendra le devant, et un petit triangle et une bande de ce qui deviendra le dos.
+Et au milieu entre elles se trouve la petite pièce de motif coupé.
+Assurez-vous de bien mesurer cela et d'avoir le tissus bien carré avant de commencer à couper.
 
 </Tip>
