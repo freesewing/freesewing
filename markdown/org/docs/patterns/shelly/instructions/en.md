@@ -40,7 +40,7 @@ For making t-shirts or other shirts with 2-way stretch, regular settings with a 
      - Neck ease: 25% to 100% (25% will still be a very snug neckband that will take some stretching to get on/off the head, because of how the neckband is constructed and because neckholes usually are quite a bit bigger than the neck to fit over the head.
 
    - Athletic shirt
-     - The author hasen't made one yet. If someone knows what eases to use, please let me know.
+     - The author hasn't made one yet. If someone knows what eases to use, please let me know.
 	 - Highly breathable fabric with some spandex/stretch is recommended.
 	 - Eases are somewhere between those for a compression shirt and a swim shirt.
 
