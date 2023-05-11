@@ -1,5 +1,5 @@
 - - -
-title: "Waistband width"
+titre : "Largeur de la ceinture"
 - - -
 
 ![Largeur de ceinture](waistbandwidth.svg)
