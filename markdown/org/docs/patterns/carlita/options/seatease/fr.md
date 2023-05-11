@@ -1,5 +1,5 @@
 - - -
-title: "Seat ease"
+titre : "Facilité d'assise"
 - - -
 
 ![Seat ease](./seatease.svg)
