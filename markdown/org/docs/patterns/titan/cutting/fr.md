@@ -2,12 +2,12 @@
 title: "Titan trouser block: Cutting Instructions"
 - - -
 
-**Main fabric**
+**Tissu principal**
 
 - Cut **2 front** parts with _good sides together_
 - Cut **2 back** parts with _good sides together_
 
-These cutting instructions are just for the default Titan block. Adjust your cutting accordingly if you have/are making changes to the block.
+These cutting instructions are just for the default Titan block. Ajustez votre coupe en conséquence si vous avez apporté des modifications au bloc.
 
 <Note>
 
