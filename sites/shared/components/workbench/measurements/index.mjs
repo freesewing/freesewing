@@ -104,7 +104,7 @@ export const WorkbenchMeasurements = ({ app, design, gist, updateGist, gistReady
         <>
           <h3>{t('optionalMeasurements')}</h3>
           {design.patternConfig.optionalMeasurements.map((m) => (
-            <MeasurementInput key={m} m={m} {...inputProps} />
+            <MeasurementInput key={m} m={m} optional={true} {...inputProps} />
           ))}
         </>
       )}
