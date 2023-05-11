@@ -1,5 +1,5 @@
 - - -
-title: "Number of buttons"
+titre : "Nombre de boutons"
 - - -
 
 ![Boutons](buttons.svg)
