@@ -2,7 +2,7 @@
 title: "Sandy circle skirt: Fabric Options"
 - - -
 
-### Main Fabric
+### Tissu principal
 
 A circle skirt is a very versatile garment and can be made from a variety of fabric. It all depends on your intended use and preferred style.
 
