@@ -14,7 +14,7 @@ To make Sandy, you will need the following:
 
 Due to the many different styles of Sandy it is difficult to precisely say what you need so we will go through some of the options.
 
-##### Main Fabric
+##### Tissu principal
 
 The length you require is dependant on how long and how full your circle skirt is, mid length and smaller should be sufficent with 2 - 2.5 metres whearas a floor length will require more. If in doubt buy a metre more than you think. Also don't be afraid to piece if your fabric is not wide or long enough, it is better to have an extra seam than not to use the fabric you like.
 
