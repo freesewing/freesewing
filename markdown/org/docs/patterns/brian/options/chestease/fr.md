@@ -1,5 +1,5 @@
 - - -
-title: "Chest ease"
+titre : "aisance thoracique"
 - - -
 
 ![The chest ease factor on Brian](./chestease.svg)
