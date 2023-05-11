@@ -1,5 +1,5 @@
 - - -
-title: "Shoulder seam shift: armhole side"
+titre : "Décalage de la couture d'épaule : côté de l'emmanchure"
 - - -
 
 Controls the shoulder seam location on the armhole side.
