@@ -1,5 +1,5 @@
 - - -
-title: "Hips ease"
+titre : "Aisance pour les hanches"
 - - -
 
 How much room do you want at the hips?
