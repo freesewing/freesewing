@@ -1,8 +1,8 @@
 - - -
-title: "Back neck cutout"
+titre : "Découpage du cou dans le dos"
 - - -
 
-Controls how deep the neck opening is cut out in the back of the garment. In other words, increasing this will shift the neck opening to the back.
+Contrôle la profondeur de l'ouverture de l'encolure dans le dos du vêtement. En d'autres termes, l'augmentation de cette mesure déplace l'ouverture du cou vers l'arrière.
 
 ## Effet de cette option sur le motif
 
