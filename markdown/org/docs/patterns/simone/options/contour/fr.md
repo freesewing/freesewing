@@ -1,5 +1,5 @@
 - - -
-title: "Contour"
+titre : "Contour"
 - - -
 
 Controls how sharply the extra room for breasts is removed again below the chest.
@@ -9,4 +9,4 @@ Controls how sharply the extra room for breasts is removed again below the chest
 
 ## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_contour_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_contour_sample.svg "Effet de cette option sur le modèle")
