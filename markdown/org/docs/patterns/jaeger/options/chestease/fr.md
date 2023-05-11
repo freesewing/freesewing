@@ -1,5 +1,5 @@
 - - -
-title: "Chest ease"
+titre : "aisance thoracique"
 - - -
 
 ![Aisance de poitrine](chestease.svg)
