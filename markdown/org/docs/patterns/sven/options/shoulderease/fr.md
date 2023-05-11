@@ -1,5 +1,5 @@
 - - -
-title: "Shoulder ease"
+titre : "Aisance d'épaule"
 - - -
 
 Controls the amount of ease on the shoulder to shoulder measurement.
@@ -8,4 +8,4 @@ This option allows you to create some extra ease at the shoulders which shifts t
 
 ## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](sven_shoulderease_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](sven_shoulderease_sample.svg "Effet de cette option sur le modèle")
