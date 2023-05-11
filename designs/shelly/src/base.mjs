@@ -148,15 +148,15 @@ function draftBase({
     })
   }
 
-  if (complete) {
-    points.cutonfoldFrom = points.cfNeck
-    points.cutonfoldTo = points.cfHem
-    macro('cutonfold', {
-      from: points.cutonfoldFrom,
-      to: points.cutonfoldTo,
-      grainline: true,
-    })
+  points.cutonfoldFrom = points.cfNeck
+  points.cutonfoldTo = points.cfHem
+  macro('cutonfold', {
+    from: points.cutonfoldFrom,
+    to: points.cutonfoldTo,
+    grainline: true,
+  })
 
+  if (complete) {
     points.title = new Point(
       points.armholeCorner.x / 2,
       (points.cfHem.y + points.armholeCornerScooped.y / 2) / 2

@@ -59,15 +59,16 @@ function draftNeckband({
       y: -(sa + 15),
     })
   }
-  if (complete) {
-    points.cutonfoldFrom = points.topLeftCorner
-    points.cutonfoldTo = points.bottomLeftCorner
-    macro('cutonfold', {
-      from: points.cutonfoldFrom,
-      to: points.cutonfoldTo,
-      grainline: true,
-    })
 
+  points.cutonfoldFrom = points.topLeftCorner
+  points.cutonfoldTo = points.bottomLeftCorner
+  macro('cutonfold', {
+    from: points.cutonfoldFrom,
+    to: points.cutonfoldTo,
+    grainline: true,
+  })
+
+  if (complete) {
     points.title = new Point(neckbandLength / 4, neckbandWidth / 2)
     macro('title', { at: points.title, nr: 4, title: 'neckband' })
 

@@ -251,16 +251,14 @@ function draftRaglanSleeve({
     })
   }
 
+  points.grainlineBottom = points.backSleeve.shiftFractionTowards(points.frontSleeve, 0.5)
+  points.grainlineTop = points.raglanCenter.shift(270, neckRadius)
+  macro('grainline', {
+    from: points.grainlineTop,
+    to: points.grainlineBottom,
+  })
+
   if (complete) {
-    points.grainlineBottom = points.backSleeve.shiftFractionTowards(points.frontSleeve, 0.5)
-    points.grainlineTop = points.raglanCenter.shift(270, neckRadius)
-
-    macro('grainline', {
-      from: points.grainlineTop,
-      to: points.grainlineBottom,
-    })
-
-    // notches
     snippets.frontArmholeScoopEnd = new Snippet('notch', points.frontArmholeScoopEnd)
     snippets.backArmholeScoopEnd = new Snippet('bnotch', points.backArmholeScoopEnd)
 
