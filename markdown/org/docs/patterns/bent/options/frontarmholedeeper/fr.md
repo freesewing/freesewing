@@ -1,5 +1,5 @@
 - - -
-title: "Front armhole extra cutout"
+titre : "Découpe supplémentaire à l'avant de l'emmanchure
 - - -
 
 How much the armhole is cut out deeper at the front, than the back.
