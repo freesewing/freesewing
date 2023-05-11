@@ -1,9 +1,9 @@
 - - -
-title: "Back neck cutout"
+titre : "Découpage du cou dans le dos"
 - - -
 
-Controls how deep the neck opening is cut out in the back of the garment. In other words, increasing this will shift the neck opening to the back.
+Contrôle la profondeur de l'ouverture de l'encolure dans le dos du vêtement. En d'autres termes, l'augmentation de cette mesure déplace l'ouverture du cou vers l'arrière.
 
 ## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlton_backneckcutout_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlton_backneckcutout_sample.svg "Effet de cette option sur le modèle")
