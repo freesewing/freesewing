@@ -2,13 +2,13 @@
 title: "Breanna body block: Cutting Instructions"
 - - -
 
-**Main fabric**
+**Tissu principal**
 
 - Cut **1 Front** part on the fold.
 - Cut **2 Back** parts.
 - Cut **2 Sleeve** parts, _good sides together_.
 
-These cutting instructions are just for the default Breanna block. Adjust your cutting accordingly if you have/are making changes to the block.
+These cutting instructions are just for the default Breanna block. Ajustez votre coupe en conséquence si vous avez apporté des modifications au bloc.
 
 <Tip>
 
