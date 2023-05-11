@@ -1,6 +1,5 @@
 // Hooks
-import { useEffect, useState, useMemo } from 'react'
-import { useGist } from 'shared/hooks/useGist'
+import { useEffect, useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useView } from 'shared/hooks/use-view.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
@@ -8,47 +7,44 @@ import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Dependencies
 import { pluginTheme } from '@freesewing/plugin-theme'
 import { pluginI18n } from '@freesewing/plugin-i18n'
-import { preloaders } from 'shared/components/workbench/preloaders.mjs'
+//import { preloaders } from 'shared/components/workbench/preloaders.mjs'
 import _set from 'lodash.set'
+import _unset from 'lodash.unset'
 // Components
-import { WorkbenchMenu } from 'shared/components/workbench/menu/index.mjs'
-import { DraftError } from 'shared/components/workbench/draft/error.mjs'
+//import { DraftError } from 'shared/components/workbench/pattern/error.mjs'
 import { Modal } from 'shared/components/modal/modal.mjs'
 import { ErrorBoundary } from 'shared/components/error/error-boundary.mjs'
 // Views
-import { WorkbenchMeasurements } from 'shared/components/workbench/measurements/index.mjs'
-import { LabSample } from 'shared/components/workbench/sample.mjs'
-import { ExportDraft } from 'shared/components/workbench/exporting/index.mjs'
-import { GistAsJson, GistAsYaml } from 'shared/components/workbench/gist.mjs'
-import { DraftLogs } from 'shared/components/workbench/logs.mjs'
-import { CutLayout } from 'shared/components/workbench/layout/cut/index.mjs'
-import { PrintLayout } from 'shared/components/workbench/layout/print/index.mjs'
-import { EditYaml } from 'shared/components/workbench/edit/index.mjs'
+//import { LabSample } from 'shared/components/workbench/sample.mjs'
+//import { ExportDraft } from 'shared/components/workbench/exporting/index.mjs'
+//import { GistAsJson, GistAsYaml } from 'shared/components/workbench/gist.mjs'
+//import { DraftLogs } from 'shared/components/workbench/logs.mjs'
+//import { CutLayout } from 'shared/components/workbench/layout/cut/index.mjs'
+//import { PrintLayout } from 'shared/components/workbench/layout/print/index.mjs'
+//import { EditYaml } from 'shared/components/workbench/edit/index.mjs'
 
 // Components
 import { WorkbenchHeader } from './header.mjs'
 import { ErrorView } from 'shared/components/error/view.mjs'
 // Views
-import { DraftView } from 'shared/components/workbench/draft/index.mjs'
+import { DraftView } from 'shared/components/workbench/views/draft/index.mjs'
 
 export const ns = ['workbench']
 
 const loadDefaultSettings = ({ locale = 'en', units = 'metric' }) => ({
-  settings: {
-    sa: 0,
-    scale: 1,
-    complete: true,
-    paperless: false,
-    margin: 2,
-    units,
-    locale,
-    embed: true,
-  },
-  renderer: 'react',
-  //saBool: false,
-  //saMm: 10,
-  //debug: true,
+  sa: 0,
+  scale: 1,
+  complete: true,
+  paperless: false,
+  margin: 2,
+  units,
+  locale,
+  embed: true,
 })
+
+const defaultUi = {
+  renderer: 'react',
+}
 
 const draftViews = ['draft', 'test']
 
@@ -59,20 +55,21 @@ export const Workbench = ({ design, Design, set = false }) => {
   const { account, token } = useAccount()
   const { backend } = useBackend(token)
 
-  const defaults = loadDefaultSettings({
+  const defaultSettings = loadDefaultSettings({
     units: account.imperial ? 'imperial' : 'metric',
     locale: language,
   })
-  if (set) defaults.settings.measurements = set.measies
+  if (set) defaultSettings.measurements = set.measies
 
   // State
   const [view, setView] = useView()
-  const [gist, setGist] = useState({ ...defaults, embed: true, renderer: 'react' })
+  const [settings, setSettings] = useState({ ...defaultSettings, embed: true })
+  const [ui, setUi] = useState({ ...defaultUi })
   const [error, setError] = useState(false)
 
   // Effects
   useEffect(() => {
-    if (set.measies) updateGist('settings.measurements', set.measies)
+    if (set.measies) update.settings('measurements', set.measies)
   }, [set])
 
   // Don't bother without a set or Design
@@ -87,18 +84,34 @@ export const Workbench = ({ design, Design, set = false }) => {
       </>
     )
 
-  // Helper method to update the gist
-  const updateGist = (path, val) => {
-    const newGist = { ...gist }
-    _set(newGist, path, val)
-    setGist(newGist)
+  // Helper methods for settings/ui updates
+  const update = {
+    settings: (path, val = 'unset') => {
+      const newSettings = { ...settings }
+      if (val === 'unset') {
+        if (Array.isArray(path) && Array.isArray(path[0])) {
+          for (const item of path) update.settings(...item)
+        } else _unset(newSettings, path)
+      } else _set(newSettings, path, val)
+      setSettings(newSettings)
+    },
+    ui: (path, val = 'unset') => {
+      const newUi = { ...ui }
+      if (val === 'unset') {
+        if (Array.isArray(path) && Array.isArray(path[0])) {
+          for (const item of path) update.ui(...item)
+        } else _unset(newUi, path)
+      } else _set(newUi, path, val)
+      setUi(newUi)
+    },
   }
 
   // Generate the pattern here so we can pass it down to both the view and the options menu
-  const pattern = draftViews.includes(view) ? new Design(gist.settings) : false
+  const pattern = draftViews.includes(view) ? new Design(settings) : false
+  const patternConfig = pattern.getConfig()
   if (pattern) {
     // add theme to svg renderer
-    if (gist.renderer === 'svg') {
+    if (ui.renderer === 'svg') {
       pattern.use(pluginI18n, { t })
       pattern.use(pluginTheme, { skipGrid: ['pages'] })
     }
@@ -115,14 +128,15 @@ export const Workbench = ({ design, Design, set = false }) => {
   return (
     <>
       <WorkbenchHeader setView={setView} view={view} />
-      {view === 'draft' && <DraftView {...{ pattern, setView, gist, updateGist }} />}
-      <p>view is {view}</p>
-      <button onClick={() => setView('alt')}>alt</button>
-      <button onClick={() => setView('draft')}>draft</button>
+      {view === 'draft' && (
+        <DraftView {...{ design, pattern, patternConfig, setView, update, settings, ui }} />
+      )}
+      <pre>{JSON.stringify(settings, null, 2)}</pre>
+      <pre>{JSON.stringify(ui, null, 2)}</pre>
     </>
   )
 }
-
+/*
 const views = {
   measurements: WorkbenchMeasurements,
   //draft: LabDraft,
@@ -157,7 +171,6 @@ const doPreload = async (preload, from, design, gist, setGist, setPreloaded) => 
  * This component wraps the workbench and is in charge of
  * keeping the gist state, which will trickle down
  * to all workbench subcomponents
- */
 export const WorkbenchWrapper = ({
   app,
   design,
@@ -290,3 +303,4 @@ export const WorkbenchWrapper = ({
     </LayoutComponent>
   )
 }
+ */

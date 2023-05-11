@@ -1,7 +1,7 @@
 import { useTranslation } from 'next-i18next'
 import { svgattrPlugin } from '@freesewing/plugin-svgattr'
-import { SvgWrapper } from './draft/svg.mjs'
-import { DraftError } from './draft/error.mjs'
+import { SvgWrapper } from './pattern/svg.mjs'
+import { DraftError } from './pattern/error.mjs'
 
 export const LabSample = ({ gist, draft, updateGist, unsetGist, showInfo, app, feedback }) => {
   const { t } = useTranslation(['workbench'])

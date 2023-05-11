@@ -20,7 +20,8 @@ export const SwipeWrapper = ({ children, app }) => {
     onSwipedRight: (evt) => {
       // Only process the first swipe event
       evt.event.stopPropagation()
-      setModal(<ModalMenu app={app} />)
+      // FIXME: Make this not be such a PITA
+      //setModal(<ModalMenu app={app} />)
     },
     trackMouse: true,
   })

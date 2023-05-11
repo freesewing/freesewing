@@ -45,8 +45,8 @@
  */
 import { useRef, useState, useEffect } from 'react'
 import { generateStackTransform } from '@freesewing/core'
-import { Part } from '../../draft/part.mjs'
-import { getProps, angle } from '../../draft/utils.mjs'
+import { Part } from '../../pattern/part.mjs'
+import { getProps, angle } from '../../pattern/utils.mjs'
 import { drag } from 'd3-drag'
 import { select } from 'd3-selection'
 import { Buttons } from './buttons.mjs'
