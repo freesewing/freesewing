@@ -4,7 +4,7 @@ title: "Hortensia handbag: Cutting Instructions"
 
 ### Materials
 
-- **Main fabric**
+- **Tissu principal**
   - Cut **2 SidePanel** parts
   - Cut **2 FrontBackPanel** parts
   - Cut **1 BottomPanel**
