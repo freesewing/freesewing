@@ -1,5 +1,5 @@
 - - -
-title: "Biceps ease"
+titre : "Aisance aux biceps"
 - - -
 
 ![Biceps ease](./bicepsease.svg)
