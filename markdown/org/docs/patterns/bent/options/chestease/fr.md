@@ -1,5 +1,5 @@
 - - -
-title: "Chest ease"
+titre : "aisance thoracique"
 - - -
 
 The amount of ease at your chest.
