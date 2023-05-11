@@ -1,5 +1,5 @@
 - - -
-title: "Armhole depth factor"
+titre : "Facteur de profondeur d'emmanchure"
 - - -
 
 ![Armhole depth factor](./armholedepthfactor.svg)
