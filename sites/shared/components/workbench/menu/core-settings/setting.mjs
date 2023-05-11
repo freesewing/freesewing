@@ -20,7 +20,6 @@ import { useTranslation } from 'next-i18next'
 const settings = {
   paperless: (props) => <SecText>{props.t(props.gist.paperless ? 'yes' : 'no')}</SecText>,
   complete: (props) => <SecText>{props.t(props.gist.complete ? 'yes' : 'no')}</SecText>,
-  debug: (props) => <SecText>{props.t(props.gist.debug ? 'yes' : 'no')}</SecText>,
   locale: (props) => <SecText>{props.t(`i18n:${props.gist.locale}`)}</SecText>,
   units: (props) => <SecText>{props.t(`${props.gist.units}Units`)}</SecText>,
   margin: (props) => <SecText raw={formatMm(props.gist.margin, props.gist.units)} />,
@@ -77,7 +76,7 @@ const inputs = {
 export const Setting = (props) => {
   const { t } = useTranslation(['app', 'i18n', 'settings'])
   if (props.setting === 'saBool') return <SaBoolSetting {...props} {...props.config} />
-  if (['paperless', 'complete', 'debug', 'xray'].indexOf(props.setting) !== -1)
+  if (['paperless', 'complete', 'xray'].indexOf(props.setting) !== -1)
     return <BoolSetting {...props} {...props.config} />
 
   const Input = inputs[props.setting]

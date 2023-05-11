@@ -43,9 +43,6 @@ export const settings = {
       svg: '@freesewing/core (SVG)',
     },
   },
-  debug: {
-    dflt: false,
-  },
 }
 
 export const CoreSettings = (props) => {
