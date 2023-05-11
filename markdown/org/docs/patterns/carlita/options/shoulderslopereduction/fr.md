@@ -1,5 +1,5 @@
 - - -
-title: "Shoulder slope reduction"
+titre : "Réduction de la pente d'épaule"
 - - -
 
 Reduces the shoulder slope to create extra room for shoulder padding.
