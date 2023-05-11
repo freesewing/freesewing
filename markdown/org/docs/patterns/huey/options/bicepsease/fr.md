@@ -1,5 +1,5 @@
 - - -
-title: "Biceps ease"
+titre : "Aisance aux biceps"
 - - -
 
 The amount of ease at your upper arm.
