@@ -81,6 +81,6 @@ Make sure the open side is folded neatly inside, then edge-stitch around the ent
 
 ### Étape 7 : Mettez votre masque ou faites-en une série
 
-That's it, you're done! You can now wear your mask.
+Voilà, vous avez fini ! You can now wear your mask.
 
 Even better, make a bunch so you can give others masks too.
