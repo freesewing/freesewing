@@ -1,5 +1,5 @@
 - - -
-title: "Sleeve length bonus"
+titre : "Surlongueur de longueur de manche"
 - - -
 
 Cette option contrôle la longueur des manches.
