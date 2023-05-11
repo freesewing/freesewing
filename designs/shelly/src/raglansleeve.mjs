@@ -22,6 +22,7 @@ function draftRaglanSleeve({
   macro,
   snippets,
   Snippet,
+  scale,
 }) {
   const armholeTweakFactor = options.armholeTweakFactor - options.raglanScoopMagnitude // How much larger to make the armhole as a proportion of the biceps measurement. The constant term is to account for the armhole being a bit wider than the biceps, while subtracting the raglan scoop is to adjust for the extra material that the scoop will insert.
   const bicepsPosition = options.bicepsPosition // How far the biceps measurement is along the arm. 0 means at the armhole. 1 means at the wrist.
@@ -265,9 +266,9 @@ function draftRaglanSleeve({
     points.title = new Point(0, points.backSleeve.y / 3)
     macro('title', { at: points.title, nr: 3, title: 'sleeve' })
 
-    points.logo = points.title.shift(-90, 70)
+    points.logo = points.title.shift(-90, 70 * scale)
     snippets.logo = new Snippet('logo', points.logo)
-    points.scalebox = points.logo.shift(-90, 70)
+    points.scalebox = points.logo.shift(-90, 70 * scale)
     macro('scalebox', { at: points.scalebox })
 
     if (sa) {

@@ -17,6 +17,7 @@ function draftBase({
   macro,
   snippets,
   Snippet,
+  scale,
 }) {
   let hipsEase = options.hipsEase
   if (options.straightSides) hipsEase = options.chestEase
@@ -163,7 +164,7 @@ function draftBase({
     )
     macro('title', { at: points.title, nr: 5, title: 'base' })
 
-    points.logo = points.title.shift(-90, 70)
+    points.logo = points.title.shift(-90, 70 * scale)
     snippets.logo = new Snippet('logo', points.logo)
 
     if (sa) {
