@@ -130,6 +130,11 @@ function draftBack({
     }
   }
 
+  const neckPath = new Path()
+    .move(points.neckShoulderCorner)
+    .curve(points.neckCP1, points.neckCP2, points.cfNeck)
+  store.set('neckLengthBack', neckPath.length())
+
   return part
 }
 

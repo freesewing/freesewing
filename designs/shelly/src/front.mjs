@@ -100,6 +100,11 @@ function draftFront({
     macro('title', { at: points.title, nr: 1, title: 'front' })
   }
 
+  const neckPath = new Path()
+    .move(points.neckShoulderCorner)
+    .curve(points.neckCP1, points.neckCP2, points.cfNeck)
+  store.set('neckLengthFront', neckPath.length())
+
   return part
 }
 

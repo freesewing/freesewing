@@ -92,26 +92,26 @@ function draftRaglanSleeve({
 
   const frontNecklineAngle = frontRaglanAngle + (180 - store.get('frontNecklineToRaglanAngle'))
   const backNecklineAngle = backRaglanAngle - (180 - store.get('backNecklineToRaglanAngle'))
-  points.neckCp1 = points.backNeck.shift(backNecklineAngle, neckSleeveWidth * (1 / 3))
-  points.neckCp2 = points.frontNeck.shift(frontNecklineAngle, neckSleeveWidth * (1 / 3))
+  points.neckCP1 = points.backNeck.shift(backNecklineAngle, neckSleeveWidth * (1 / 3))
+  points.neckCP2 = points.frontNeck.shift(frontNecklineAngle, neckSleeveWidth * (1 / 3))
 
   points.frontArmholeScooped = points.frontArmhole.shift(frontRaglanAngle - 90, scoopDepth)
-  points.frontArmholeScoopCp1 = points.frontArmhole.shift(
+  points.frontArmholeScoopCP1 = points.frontArmhole.shift(
     frontRaglanAngle + 180,
     (1 / 3) * scoopLength
   )
-  points.frontArmholeScoopCp2 = points.frontArmhole.shift(
+  points.frontArmholeScoopCP2 = points.frontArmhole.shift(
     frontRaglanAngle + 180,
     (2 / 3) * scoopLength
   )
   points.frontArmholeScoopEnd = points.frontArmhole.shift(frontRaglanAngle + 180, scoopLength)
 
   points.backArmholeScooped = points.backArmhole.shift(backRaglanAngle + 90, scoopDepth)
-  points.backArmholeScoopCp1 = points.backArmhole.shift(
+  points.backArmholeScoopCP1 = points.backArmhole.shift(
     backRaglanAngle + 180,
     (1 / 3) * scoopLength
   )
-  points.backArmholeScoopCp2 = points.backArmhole.shift(
+  points.backArmholeScoopCP2 = points.backArmhole.shift(
     backRaglanAngle + 180,
     (2 / 3) * scoopLength
   )
@@ -120,11 +120,11 @@ function draftRaglanSleeve({
   paths.saBase = new Path()
     .move(points.backSleeve)
     .line(points.backArmholeScooped)
-    .curve(points.backArmholeScoopCp1, points.backArmholeScoopCp2, points.backArmholeScoopEnd)
+    .curve(points.backArmholeScoopCP1, points.backArmholeScoopCP2, points.backArmholeScoopEnd)
     .line(points.backNeck)
-    .curve(points.neckCp1, points.neckCp2, points.frontNeck)
+    .curve(points.neckCP1, points.neckCP2, points.frontNeck)
     .line(points.frontArmholeScoopEnd)
-    .curve(points.frontArmholeScoopCp2, points.frontArmholeScoopCp1, points.frontArmholeScooped)
+    .curve(points.frontArmholeScoopCP2, points.frontArmholeScoopCP1, points.frontArmholeScooped)
     .line(points.frontSleeve)
     .hide(true)
 
@@ -279,6 +279,11 @@ function draftRaglanSleeve({
         .attr('class', 'fabric sa')
     }
   }
+
+  const neckPath = new Path()
+    .move(points.backNeck)
+    .curve(points.neckCP1, points.neckCP2, points.frontNeck)
+  store.set('neckLengthSide', neckPath.length())
 
   return part
 }

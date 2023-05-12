@@ -16,16 +16,19 @@ function draftNeckband({
   snippets,
   Snippet,
 }) {
-  const neckbandLength = store.get('neckRadius') * 2 * Math.PI * options.neckbandLength
+  const neckbandLength =
+    store.get('neckLengthFront') +
+    store.get('neckLengthBack') +
+    store.get('neckLengthSide') * options.neckbandLength
   const neckbandWidth = 2 * (options.neckbandWidth * measurements.neck)
 
   points.topLeftCorner = new Point(0, 0)
   points.bottomLeftCorner = new Point(0, neckbandWidth)
-  points.bottomRightCorner = new Point(neckbandLength / 2, neckbandWidth)
-  points.topRightCorner = new Point(neckbandLength / 2, 0)
+  points.bottomRightCorner = new Point(neckbandLength, neckbandWidth)
+  points.topRightCorner = new Point(neckbandLength, 0)
 
   points.leftCenter = new Point(0, neckbandWidth / 2)
-  points.rightCenter = new Point(neckbandLength / 2, neckbandWidth / 2)
+  points.rightCenter = new Point(neckbandLength, neckbandWidth / 2)
 
   paths.saBase = new Path()
     .move(points.bottomLeftCorner)
