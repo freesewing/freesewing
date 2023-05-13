@@ -4,9 +4,9 @@ titre: "Bloc corporel de Bent : Instructions de couture"
 
 <Note>
 
-###### Bent is a block, not a pattern
+###### Bent est un bloc, pas un motif
 
-A block is a basic shape on which other patterns are based.
+Un bloc est une forme de base sur laquelle se basent d'autres motifs.
 Ils sont parfois aussi appelés patrons de base, bien que les puristes soutiennent qu'un bloc et un patron de base sont des choses différentes.
 
 Les blocs ne sont généralement pas réalisés tels quels mais servent plutôt de base à d'autres modèles. Les instructions ci-dessous n'abordent donc pas en détail les fermetures ou les finitions et concernent le bloc Bent par défaut.
@@ -71,8 +71,8 @@ It is all up to you! Expérimentez et allez-y !
 
 ### Étape 3 : Créer un modèle en papier
 
-- Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
-- Now you have a pattern you can use to produce a garment.
+- Une fois que vous êtes satisfait de toutes vos modifications, retirer les épingles de votre maquette et créez un modèle de papier à partir de celle-ci.
+- Vous disposez à présent d'un modèle que vous pouvez utiliser pour produire un vêtement.
 
 <Note>
 
