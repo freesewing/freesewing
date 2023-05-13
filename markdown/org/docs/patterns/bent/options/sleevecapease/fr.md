@@ -2,7 +2,7 @@
 title: "Sleevecap ease"
 - - -
 
-How much sleevecap ease do you want?
+Combien d'aisance aux têtes de manches voulez-vous ?
 
 > #### ###### Pour quoi faire ?
 > 
