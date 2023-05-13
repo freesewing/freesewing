@@ -36,7 +36,7 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 
 ### Étape 2 : Essayez-le
 
-- Try it on and check the fit by pinning the front closed whilst wearing it.
+- Essayez-le et vérifiez la coupe en épinglant le devant tout en le portant.
 - Apportez les modifications nécessaires et essayez à nouveau le vêtement.
 - Répétez l'opération jusqu'à ce que vous soyez satisfait.
 
