@@ -4,7 +4,7 @@ titre : "Facteur de profondeur d'emmanchure"
 
 ![Armhole depth factor](./armholedepthfactor.svg)
 
-This controls the depth of the armhole, which in turn influences the sleevecap width.
+Cela permet de contrôler la profondeur de l'emmanchure qui, à son tour, influence la largeur de la manchette.
 
 ## Effet de cette option sur le motif
 
