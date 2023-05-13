@@ -2,7 +2,7 @@
 titre: "Aisance du col"
 - - -
 
-The amount of ease at your neck/collar.
+L'aisance au niveau du cou/col.
 
 ## Effet de cette option sur le motif
 
