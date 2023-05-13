@@ -4,8 +4,8 @@ import { useTranslation } from 'next-i18next'
 //Dependencies
 import { loadSettingsConfig } from './config.mjs'
 // Components
-import { SettingsIcon, ClearIcon } from 'shared/components/icons.mjs'
-import { Chevron } from 'shared/components/navigation/primary.mjs'
+import { SettingsIcon, ClearIcon, HelpIcon } from 'shared/components/icons.mjs'
+import Link from 'next/link'
 import {
   Li,
   Ul,
@@ -113,7 +113,11 @@ export const Setting = ({
   if (name === 'sabool') drillProps.samm = samm
 
   const buttons = []
-  const openButtons = []
+  const openButtons = [
+    <Link href={`/docs/core-settings/${name}`} className="btn btn-xs btn-ghost px-0">
+      <HelpIcon className="w-4 h-4" />
+    </Link>,
+  ]
   if (changed) {
     buttons.push(
       <button
@@ -175,12 +179,18 @@ export const CoreSettings = ({ design, update, settings, patternConfig, language
       color="primary"
       title={
         <div className="w-full flex flex-row gap2 items-center justify-between">
-          <span className="font-bold">{t('core-settings:coreSettings')}</span>
+          <span className="font-bold">{t('core-settings:coreSettings.t')}</span>
           <SettingsIcon className="w-6 h-6 text-primary" />
         </div>
       }
       openTitle={t('core-settings:coreSettings')}
+      openButtons={[
+        <Link href="/docs/core-settings/${name}" className="btn btn-xs btn-ghost px-0">
+          <HelpIcon className="w-4 h-4" />
+        </Link>,
+      ]}
     >
+      <p>{t('core-settings:coreSettings.d')}</p>
       {Object.keys(settingsConfig)
         .filter((name) => settingsConfig[name].control <= control)
         .map((name) => (
@@ -195,28 +205,5 @@ export const CoreSettings = ({ design, update, settings, patternConfig, language
           />
         ))}
     </Collapse>
-  )
-  return (
-    <Details open>
-      <TopSummary icon={<SettingsIcon className="w-6 h-6 text-primary" />}>
-        <TopSumTitle>{t('core-settings:coreSettings')}</TopSumTitle>
-        <Chevron />
-      </TopSummary>
-      <Ul>
-        {Object.keys(settingsConfig)
-          .filter((name) => settingsConfig[name].control <= control)
-          .map((name) => (
-            <Setting
-              key={name}
-              {...{ name, design, update, t, patternConfig }}
-              config={settingsConfig[name]}
-              current={settings[name]}
-              changed={wasChanged(settings[name], name, settingsConfig)}
-              samm={typeof settings.samm === 'undefined' ? settingsConfig.samm.dflt : settings.samm}
-              units={settings.units}
-            />
-          ))}
-      </Ul>
-    </Details>
   )
 }

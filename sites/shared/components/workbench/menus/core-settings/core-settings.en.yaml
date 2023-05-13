@@ -1,3 +1,6 @@
+coreSettings.t: Core Settings
+coreSettings.d: These settings are not specific to the design, but instead allow you to customize various parameters of the FreeSewing core library, which generates the design for you.
+designOptions.t: These options are specific to this design. You can use them to customize your pattern in a variety of ways.
 paperless.t: Paperless
 paperless.d: Trees are awesome, and taping together sewing patterns is not much fun. Try our paperless mode to avoid the need to print out your pattern altogether.
 samm.t: Seam Allowance Size
@@ -18,7 +21,6 @@ scale.t: Scale
 scale.d: Controls the overall line width, font size, and other elements that do not scale with the pattern's measurements
 renderer.t: Render Engine
 renderer.d: Controls how the pattern is rendered (drawn) on the screen
-coreSettings: Core Settings
 renderWithReact.t: Render with FreeSewing's React components
 renderWithReact.d: Render as SVG through our React components. Allows interactivity and is optimized for screen. Use this if you are not sure what to pick.
 renderWithCore.t: Render with Freesewing's Core library

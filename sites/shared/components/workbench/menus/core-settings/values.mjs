@@ -23,7 +23,13 @@ export const MarginSettingValue = ({ current, t, units, config }) => (
 export const OnlySettingValue = ({ current, config }) =>
   current ? current.length : config.parts.length
 
-export const SaMmSettingValue = ({ current, units }) => formatMm(current, units)
+export const SaMmSettingValue = ({ current, units, config }) => (
+  <span
+    dangerouslySetInnerHTML={{
+      __html: formatMm(typeof current === 'undefined' ? config.dflt : current, units),
+    }}
+  />
+)
 
 export const ScaleSettingValue = ({ current, config }) => (current ? current : config.dflt)
 

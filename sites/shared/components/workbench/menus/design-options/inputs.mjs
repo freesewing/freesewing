@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { ClearIcon, EditIcon } from 'shared/components/icons.mjs'
 import { useTranslation } from 'next-i18next'
 import { formatMm, round } from 'shared/utils.mjs'
+import { ChoiceButton } from 'shared/components/choice-button.mjs'
 
 const EditCount = (props) => (
   <div className="form-control mb-2 w-full">
@@ -110,42 +111,25 @@ export const ListOptionInput = ({ design, name, config, current, update, t }) =>
     setValue(dflt)
     update.settings(['options', name])
   }
-
   return (
-    <div className="py-4 mx-6 border-l-2 pl-2">
-      <div className="flex flex-row">
-        <div className="grow">
-          {list.map((choice) => (
-            <button
-              key={choice}
-              onClick={() => handleChange(choice)}
-              className={`
-                mr-1 mb-1 text-left text-lg w-full
-                ${
-                  choice === value
-                    ? choice === dflt
-                      ? 'text-secondary'
-                      : 'text-accent'
-                    : 'text-base-content'
-                }
-              `}
-            >
-              <span className="text-3xl mr-2 inline-block p-0 leading-3 translate-y-3">
-                <>&deg;</>
-              </span>
-              {doNotTranslate ? choice : t(`o_${design}:${name}.o.${choice}`)}
-            </button>
-          ))}
-        </div>
-        <button title={t('reset')} className="" disabled={current === dflt} onClick={reset}>
-          <span className={current === dflt ? 'text-base' : 'text-accent'}>
-            <ClearIcon />
-          </span>
-        </button>
-      </div>
-    </div>
+    <>
+      <p>{t(`${design}:o.${name}.d`)}</p>
+      {config.list.map((entry) => (
+        <ChoiceButton
+          key={entry}
+          title={t(`${design}:o.${config.choiceTitles[entry]}.t`)}
+          color={entry === config.dflt ? 'primary' : 'accent'}
+          active={current === entry}
+          onClick={() => handleChange(entry)}
+        >
+          {t(`core-settings:${config.choiceTitles[entry]}.d`)}
+        </ChoiceButton>
+      ))}
+    </>
   )
 }
+
+export const BoolOptionInput = ListOptionInput
 
 const EditOption = (props) => (
   <div className="form-control mb-2 w-full">
