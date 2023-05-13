@@ -2,17 +2,17 @@
 title: "Brian body block: Cutting Instructions"
 - - -
 
-**Main fabric**
+**Tissu principal**
 
 - Cut **1 Front** part on the fold.
 - Cut **1 Back** part on the fold.
-- Cut **2 Sleeve** parts.
+- Couper **2 pièces** de manche.
 
-These cutting instructions are just for the default Brian block. Adjust your cutting accordingly if you have/are making changes to the block.
+Ces instructions de coupe ne concernent que le bloc Brian par défaut. Ajustez votre coupe en conséquence si vous avez apporté des modifications au bloc.
 
 <Tip>
 
-If you do not have someone to help pin you into Brian then you may find it easier to Cut 2 Front parts with seam allowance and sew the backs up when constructing so you can pin in the front.
+Si vous n'avez personne pour vous aider à épingler Brian, vous trouverez peut-être plus facile de couper deux parties du devant avec une marge de couture et de coudre les dos lors de la construction afin de pouvoir épingler le devant.
 
 </Tip>
 

@@ -135,7 +135,7 @@ Use a safety pin to help thread the drawstring.
 
 ### Step 11: Enjoy!
 
-- That's it! Your all done! Now go feel warm and comfy in your new hoodie!
+- That's it! Vous avez terminé ! Now go feel warm and comfy in your new hoodie!
 
 <Note>
 

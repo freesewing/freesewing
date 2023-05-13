@@ -5,7 +5,7 @@ title: "Sandy circle skirt: Sewing Instructions"
 <Warning>
 
 Due to the different styles and configurations of Sandy you may find you need to skip or re-order certain steps.
-We're not going to go into a full explanation on how to create all the individual details that make up a circle skirt. These instructions assume that you know how to sew a zipper, construct pockets, etc. If not, there are numerous excellent articles available on the web, both in writen form, and on video. If you do get stuck, you can always reach out to [other FreeSewers](https://discord.freesewing.org/) in our discord.
+We're not going to go into a full explanation on how to create all the individual details that make up a circle skirt. Ces instructions supposent que vous sachiez coudre une fermeture à glissière, construire des poches, etc... If not, there are numerous excellent articles available on the web, both in writen form, and on video. If you do get stuck, you can always reach out to [other FreeSewers](https://discord.freesewing.org/) in our discord.
 
 </Warning>
 

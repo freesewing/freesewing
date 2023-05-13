@@ -1,5 +1,5 @@
 - - -
-title: "Brian body block"
+titre : "Bloc de corps de Brian"
 - - -
 
 <PatternDocs pattern='brian' />

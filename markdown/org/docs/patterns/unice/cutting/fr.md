@@ -4,7 +4,7 @@ title: "Unice undies: Cutting instructions"
 
 Unice consists of a front, a back, and a lined gusset.
 
-- **Main fabric**
+- **Tissu principal**
   - Cut **1 front**
   - Cut **1 back**
   - Cut **2 gusset**

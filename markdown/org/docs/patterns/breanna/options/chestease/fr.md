@@ -1,5 +1,5 @@
 - - -
-title: "Chest ease"
+titre : "aisance thoracique"
 - - -
 
 This option controls the ease at your chest.

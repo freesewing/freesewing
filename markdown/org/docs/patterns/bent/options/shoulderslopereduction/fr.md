@@ -1,5 +1,5 @@
 - - -
-title: "Shoulder slope reduction"
+titre : "Réduction de la pente d'épaule"
 - - -
 
 This pattern adapts to sloped shoulder by taking the shoulder slope measurment into account.

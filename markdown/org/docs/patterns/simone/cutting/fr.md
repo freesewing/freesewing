@@ -1,5 +1,5 @@
 - - -
-title: "Simone shirt: Cutting Instructions"
+titre : "Chemise Simone : Instructions de coupe"
 - - -
 
 <Note>

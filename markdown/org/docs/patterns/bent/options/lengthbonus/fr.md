@@ -1,5 +1,5 @@
 - - -
-title: "Length bonus"
+titre : "Longueur supplémentaire"
 - - -
 
 This option controls how far the block extend below your hips.

@@ -116,4 +116,4 @@ Set the grommets in the locations you marked earlier.
 
 ## Étape 11: Dresser le corset
 
-You’re done!
+C'est terminé !

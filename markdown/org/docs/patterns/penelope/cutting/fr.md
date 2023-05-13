@@ -10,7 +10,7 @@ Due to this, the cutting list does not specify how many back parts to cut as the
 
 </Note>
 
-**Main Fabric**
+**Tissu principal**
 
 - Cut **1 front** part on fold.
 - Cut **back** part(s).

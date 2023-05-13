@@ -1,12 +1,12 @@
 - - -
-title: "Simone shirt: Sewing Instructions"
+titre : "Chemise Simone : Instructions de couture"
 - - -
 
 ### Step 1: Bust Darts
 
 - Close the Front bust darts.
 
-### Step 2: Follow Simon's Instructions
+### Étape 2 : Suivez les instructions de Simon
 
 <Note>
 

@@ -1,5 +1,5 @@
 - - -
-title: "Collar ease"
+titre: "Aisance du col"
 - - -
 
 The amount of ease at your neck/collar.

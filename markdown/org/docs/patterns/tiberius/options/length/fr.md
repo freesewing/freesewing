@@ -1,5 +1,5 @@
 - - -
-title: "Length"
+titre : "Longueur"
 - - -
 
 Controls the length of the garment

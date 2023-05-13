@@ -1,5 +1,5 @@
 - - -
-title: "Chest ease"
+titre : "aisance thoracique"
 - - -
 
 Contrôle la quantité d'aisance de votre coffre

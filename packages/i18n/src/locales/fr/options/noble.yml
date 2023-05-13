@@ -8,8 +8,8 @@ waistEase:
   description: Contrôle la quantité d'aisance au niveau de la taille
   title: Aisance à la taille
 bustSpanEase:
-  description: Controls the amount of ease along the bust span
-  title: Bust span ease
+  description: Contrôle l'ampleur de l'aisance le long du buste
+  title: Aisance de l'écart poitrine
 backDartHeight:
   description: Hauteur de la pince de dos
   title: Contrôle la hauteur de la pince de dos
@@ -38,10 +38,10 @@ frontArmholeCurvature:
   title: Courbe de l'emmanchure avant
   description: Contrôle la profondeur du bas de la courbure d'emmanchure sur le devant
 frontArmholePitchDepth:
-  description: Controls how deep the armhole cuts into the front
+  description: Contrôle la profondeur de l'emmanchure sur le devant
   title: Profondeur du point de pivot de l'emmanchure avant
 backArmholePitchDepth:
-  description: Controls how deep the armhole cuts into the back
+  description: Contrôle la profondeur de l'emmanchure dans le dos
   title: Profondeur du point de pivot de l'emmanchure dos
 backNeckCutout:
   description: Contrôle la profondeur de l'encolure dans le dos

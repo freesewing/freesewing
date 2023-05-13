@@ -1,5 +1,5 @@
 - - -
-title: "Sleeve length bonus"
+titre : "Surlongueur de longueur de manche"
 - - -
 
 ![Bonus de longueur de manche](sleevelengthbonus.svg)

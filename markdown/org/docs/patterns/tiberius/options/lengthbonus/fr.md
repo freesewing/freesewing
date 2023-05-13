@@ -1,5 +1,5 @@
 - - -
-title: "Length bonus"
+titre : "Longueur supplémentaire"
 - - -
 
 Allows variation of the length of the garment

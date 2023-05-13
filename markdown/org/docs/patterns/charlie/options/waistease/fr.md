@@ -1,5 +1,5 @@
 - - -
-title: "Waist ease"
+titre : "aisance à la taille"
 - - -
 
 Controls the amount of ease at your waist.

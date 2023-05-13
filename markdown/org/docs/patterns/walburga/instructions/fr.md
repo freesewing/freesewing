@@ -34,4 +34,4 @@ If you cut slits, there will be no seam (or hem) allowance to finish the edge th
 
 ### Step 5: That's it!
 
-You're done! You could now appliqué/embroider/otherwise attach a symbol or heraldics of your choice onto your garment.
+C'est terminé ! You could now appliqué/embroider/otherwise attach a symbol or heraldics of your choice onto your garment.

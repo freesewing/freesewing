@@ -1,8 +1,8 @@
 - - -
-title: "Biceps ease"
+titre : "Aisance aux biceps"
 - - -
 
-The amount of ease at your upper arm.
+L'aisance au niveau de la partie supérieure du bras.
 
 ## Effet de cette option sur le motif
 

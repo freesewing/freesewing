@@ -4,7 +4,7 @@ title: "Hortensia handbag: What You Need"
 
 To make Hortensia, you will need the following:
 
-- Basic sewing supplies
+- Matériel de couture de base
 - About 0.5 - 2 metres (0.6 - 2.2 yards) of a suitable fabric ([see Hortensia Fabric options](/docs/patterns/hortensia/fabric/))
 - About 0.5 - 2 metres (0.6 - 2.2 yards) of lining fabric ([see Hortensia Fabric options](/docs/patterns/hortensia/fabric/))
 - A zipper shorter in length than the zipper panel and matching the [coil width](/docs/patterns/hortensia/options/zippersize/) selected

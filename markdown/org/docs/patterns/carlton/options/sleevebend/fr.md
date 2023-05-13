@@ -1,5 +1,5 @@
 - - -
-title: "Sleeve bend"
+titre : "Pli de manche"
 - - -
 
 ![Sleeve bend](./sleevebend.svg)

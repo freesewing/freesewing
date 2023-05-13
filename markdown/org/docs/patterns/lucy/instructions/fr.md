@@ -46,4 +46,4 @@ use a piece of tape as binding and tie, sewing it down to the top and leaving th
 
 ## Step 3: Enjoy!
 
-That's it! You're all done! Now go stuff your new pockets to the brim!
+That's it! Vous avez terminé ! Now go stuff your new pockets to the brim!

@@ -1,5 +1,5 @@
 - - -
-title: "Shoulder seam shift: collar side"
+titre : "Décalage de la couture d'épaule : côté col"
 - - -
 
 Contrôle l'emplacement de la couture des épaules sur le côté du col.

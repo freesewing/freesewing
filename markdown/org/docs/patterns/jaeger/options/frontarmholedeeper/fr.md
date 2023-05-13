@@ -1,11 +1,11 @@
 - - -
-title: "Front armhole extra cutout"
+titre : "Découpe supplémentaire à l'avant de l'emmanchure
 - - -
 
-Controls how much the front of the armhole is cut deeper into the garment than the back.
+Contrôle la profondeur de la coupe de l'avant de l'emmanchure par rapport à celle de l'arrière du vêtement.
 
-Since the human shoulder is more rounded at the front of the body, the sleeve(cap) is more rounded there too, and the armhole is typically cut deeper into the front of the garment than the back. This option controls how much deeper.
+Since the human shoulder is more rounded at the front of the body, the sleeve(cap) is more rounded there too, and the armhole is typically cut deeper into the front of the garment than the back. Cette option module de combien la découpe est plus profonde.
 
 ## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_frontarmholedeeper_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_frontarmholedeeper_sample.svg "Effet de cette option sur le modèle")

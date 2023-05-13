@@ -1,5 +1,5 @@
 - - -
-title: "Length bonus"
+titre : "Longueur supplémentaire"
 - - -
 
 Ajoute une longueur supplémentaire à la cravate.

@@ -15,7 +15,7 @@ Noble is based on the Bella body block
 
 </Note>
 
-### Step 1: Mock-up Construction
+### Etape 1 : Construction de la maquette
 
 - Sew the front inside to the front outside, good sides together.
 
@@ -38,19 +38,19 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 
 </Tip>
 
-### Step 2: Try it on
+### Étape 2 : Essayez-le
 
 - Try it on and check the fit by pinning the back closed whilst wearing it.
-- Make any alterations and try it on again.
-- Repeat until you are happy.
+- Apportez les modifications nécessaires et essayez à nouveau le vêtement.
+- Répétez l'opération jusqu'à ce que vous soyez satisfait.
 
 <Tip>
 
 If you do not have someone to help with pinning, you may find it easier to cut the front part in two with seam allowance rather than on a fold and sew the back seam up so that you can pin in the front when trying on.
 
-Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. Things like these are signs of where the pattern may need adjusting.
+Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Ajuster constamment l'épaule ? ect... Ces éléments sont des signes indiquant que le modèle doit être ajusté.
 
-Sometimes you may need to wear the mock-up for an extended amount of time to get a better sense of the fit so don't be afraid to walk around in it for a couple of hours.
+Il est parfois nécessaire de porter la maquette pendant un certain temps pour avoir une meilleure idée de la coupe, alors n'hésitez pas à vous promener avec pendant quelques heures.
 
 </Tip>
 
@@ -67,11 +67,11 @@ For instance:
 It is all up to you!
 - Add a collar
 
-It is all up to you! Experiment and go forth!
+It is all up to you! Expérimentez et allez-y !
 
 </Note>
 
-### Step 3: Make a paper pattern
+### Étape 3 : Créer un modèle en papier
 
 - Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
 - Now you have a pattern you can use to produce a garment.
