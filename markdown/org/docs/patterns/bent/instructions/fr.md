@@ -1,5 +1,5 @@
 - - -
-title: "Bent body Block: Sewing Instructions"
+titre: "Bloc corporel de Bent : Instructions de couture"
 - - -
 
 <Note>
@@ -15,7 +15,7 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 
 <Warning>
 
-As Bent is a block it does not have any closures. So the instructions below will explain how to make a Bent with a seam down the centre front so you can pin yourself into it.
+Comme Bent est un bloc, il n'y a pas de fermeture. So the instructions below will explain how to make a Bent with a seam down the centre front so you can pin yourself into it.
 
 </Warning>
 
