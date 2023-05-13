@@ -144,7 +144,7 @@ export const DesignOptionGroup = ({
 )
 
 export const DesignOptions = ({ design, patternConfig, settings, update, Option = false }) => {
-  const { t } = useTranslation(['optiongroups', design])
+  const { t } = useTranslation([design])
 
   // FIXME: Do we still care about passing in an Option component?
   if (!Option) Option = DesignOption

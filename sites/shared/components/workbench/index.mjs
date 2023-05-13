@@ -7,9 +7,8 @@ import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Dependencies
 import { pluginTheme } from '@freesewing/plugin-theme'
 import { pluginI18n } from '@freesewing/plugin-i18n'
+import { objUpdate } from 'shared/utils.mjs'
 //import { preloaders } from 'shared/components/workbench/preloaders.mjs'
-import _set from 'lodash.set'
-import _unset from 'lodash.unset'
 // Components
 //import { DraftError } from 'shared/components/workbench/pattern/error.mjs'
 import { Modal } from 'shared/components/modal/modal.mjs'
@@ -27,16 +26,11 @@ import { ErrorBoundary } from 'shared/components/error/error-boundary.mjs'
 import { WorkbenchHeader } from './header.mjs'
 import { ErrorView } from 'shared/components/error/view.mjs'
 // Views
-import { DraftView } from 'shared/components/workbench/views/draft/index.mjs'
+import { DraftView, ns as draftNs } from 'shared/components/workbench/views/draft/index.mjs'
 
-export const ns = ['workbench']
+export const ns = ['workbench', ...draftNs]
 
 const loadDefaultSettings = ({ locale = 'en', units = 'metric' }) => ({
-  sa: 0,
-  scale: 1,
-  complete: true,
-  paperless: false,
-  margin: 2,
   units,
   locale,
   embed: true,
@@ -86,24 +80,8 @@ export const Workbench = ({ design, Design, set = false }) => {
 
   // Helper methods for settings/ui updates
   const update = {
-    settings: (path, val = 'unset') => {
-      const newSettings = { ...settings }
-      if (val === 'unset') {
-        if (Array.isArray(path) && Array.isArray(path[0])) {
-          for (const item of path) update.settings(...item)
-        } else _unset(newSettings, path)
-      } else _set(newSettings, path, val)
-      setSettings(newSettings)
-    },
-    ui: (path, val = 'unset') => {
-      const newUi = { ...ui }
-      if (val === 'unset') {
-        if (Array.isArray(path) && Array.isArray(path[0])) {
-          for (const item of path) update.ui(...item)
-        } else _unset(newUi, path)
-      } else _set(newUi, path, val)
-      setUi(newUi)
-    },
+    settings: (path, val) => setSettings(objUpdate({ ...settings }, path, val)),
+    ui: (path, val) => setUi(objUpdate({ ...ui }, path, val)),
   }
 
   // Generate the pattern here so we can pass it down to both the view and the options menu
@@ -129,7 +107,10 @@ export const Workbench = ({ design, Design, set = false }) => {
     <>
       <WorkbenchHeader setView={setView} view={view} />
       {view === 'draft' && (
-        <DraftView {...{ design, pattern, patternConfig, setView, update, settings, ui }} />
+        <DraftView
+          {...{ design, pattern, patternConfig, setView, update, settings, ui, language }}
+          account={account}
+        />
       )}
       <pre>{JSON.stringify(settings, null, 2)}</pre>
       <pre>{JSON.stringify(ui, null, 2)}</pre>

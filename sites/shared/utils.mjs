@@ -1,6 +1,7 @@
 import get from 'lodash.get'
 import set from 'lodash.set'
 import orderBy from 'lodash.orderby'
+import unset from 'lodash.unset'
 
 // Generic rounding method
 export const round = (val, decimals = 1) =>
@@ -206,4 +207,18 @@ export const optionsMenuStructure = (options) => {
   }
 
   return menu
+}
+
+// Helper method to handle object updates
+export const objUpdate = (obj = {}, path, val = 'unset') => {
+  if (val === 'unset') {
+    if (Array.isArray(path) && Array.isArray(path[0])) {
+      for (const [ipath, ival = 'unset'] of path) {
+        if (ival === 'unset') unset(obj, ipath)
+        else set(obj, ipath, ival)
+      }
+    } else unset(obj, path)
+  } else set(obj, path, val)
+
+  return obj
 }

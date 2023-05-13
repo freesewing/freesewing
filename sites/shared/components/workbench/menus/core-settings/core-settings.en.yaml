@@ -1,0 +1,56 @@
+paperless.t: Paperless
+paperless.d: Trees are awesome, and taping together sewing patterns is not much fun. Try our paperless mode to avoid the need to print out your pattern altogether.
+samm.t: Seam Allowance Size
+samm.d: Controls the amount of seam allowance used in your pattern
+sabool.t: Include Seam Allowance
+sabool.d: Controls whether or not to include seam allowance in your pattern
+complete.t: Details
+complete.d: Controls how detailed the pattern is; Either a complete pattern with all details, or a basic outline of the pattern parts
+only.t: Contents
+only.d: Allows you to control which pattern parts will be included in your pattern
+locale.t: Language
+locale.d: Determines the language used on your pattern. This will not influence the language of the website, only of this specific pattern.
+units.t: Units
+units.d: This setting determines how unit are displayed on your pattern
+margin.t: Margin
+margin.d: Controls the margin around pattern parts
+scale.t: Scale
+scale.d: Controls the overall line width, font size, and other elements that do not scale with the pattern's measurements
+renderer.t: Render Engine
+renderer.d: Controls how the pattern is rendered (drawn) on the screen
+coreSettings: Core Settings
+renderWithReact.t: Render with FreeSewing's React components
+renderWithReact.d: Render as SVG through our React components. Allows interactivity and is optimized for screen. Use this if you are not sure what to pick.
+renderWithCore.t: Render with Freesewing's Core library
+renderWithCore.d: Render directly to SVG from Core. Allows no interactivity and is optimized for print. Use this if you want to know what it will look like when exported.
+de.t: German
+de.d: Use this to generate a German pattern
+en.t: English
+en.d: Use this to generate an English pattern
+es.t: Spanish
+es.d: Use this to generate a Spanish pattern
+fr.t: French
+fr.d: Use this to generate a French pattern
+nl.t: Dutch
+nl.d: Use this to generate a Dutch pattern
+yes: Yes
+no: No
+completeYes.t: Generate a complete pattern
+completeYes.d: This will generate a complete pattern with all notations, lines, markings. Use this if you are not certain what to choose.
+completeNo.t: Generate a pattern outline
+completeNo.d: Only generate the outline of the pattern parts. Use this if you are looking to use a lasercutter or have other specific needs.
+paperlessNo.t: Generate a regular pattern
+paperlessNo.d: This will generate a regular pattern, which you can then print out.
+paperlessYes.t: Generate a paperless pattern
+paperlessYes.d:  This generates a pattern with dimensions and a grid, which allows you to transfer it on fabric or another medium without the need to print out the pattern.
+metric: Metric
+imperial: Imperial
+metric.t: Use metric units
+metric.d: Use this if you use the metric system, and centimeters and millimeters are something you are familiar with. This is the best choice for most people around the world.
+imperial.t: Use imperial units
+imperial.d: Use this if inches and fractions or inches are more familiar to you then centimeters. This is often the preferred choice for people based in the UK & US.
+saNo.t: Do not include seam allowance
+saNo.d: This generates a pattern which does not include any seam allowance. The size of the seam allowance does not matter as no seam allowancce will be included.
+saYes.t: Include seam allowance
+saYes.d: This generates a pattern that will include seam allowance. The size of the seam allowance is set individually.
+

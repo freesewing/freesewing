@@ -1,17 +1,5 @@
 import Link from 'next/link'
 
-const btnClasses = {
-  dflt:
-    'btn w-full mt-2 btn-secondary ' +
-    'flex flex-row flex-nowrap items-center gap-4 py-4 h-auto ' +
-    'border border-secondary justify-start text-left bg-opacity-30',
-  active:
-    'btn-ghost bg-secondary hover:bg-secondary ' + 'hover:bg-opacity-30 hover:border-secondary',
-  inactive:
-    'hover:bg-opacity-20 hover:bg-secondary btn-ghost ' +
-    'border border-secondary hover:border hover:border-secondary',
-}
-
 export const ChoiceLink = ({ title = '', href = '', children, icon = null }) => {
   const linkProps = {
     href,

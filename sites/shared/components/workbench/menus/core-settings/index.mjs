@@ -1,67 +1,195 @@
-import { SettingsIcon } from 'shared/components/icons.mjs'
-import { Chevron } from 'shared/components/navigation/primary.mjs'
-import { Setting } from './setting.mjs'
-import { Ul, Details, TopSummary, TopSumTitle } from '../index.mjs'
+// Hooks
+import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
+//Dependencies
+import { loadSettingsConfig } from './config.mjs'
+// Components
+import { SettingsIcon, ClearIcon } from 'shared/components/icons.mjs'
+import { Chevron } from 'shared/components/navigation/primary.mjs'
+import {
+  Li,
+  Ul,
+  SumButton,
+  SumDiv,
+  Summary,
+  Deg,
+  SecText,
+  Details,
+  TopSummary,
+  TopSumTitle,
+} from '../index.mjs'
+import { Collapse } from 'shared/components/collapse.mjs'
+import {
+  CompleteSettingInput,
+  LocaleSettingInput,
+  MarginSettingInput,
+  OnlySettingInput,
+  PaperlessSettingInput,
+  RendererSettingInput,
+  SaBoolSettingInput,
+  SaMmSettingInput,
+  ScaleSettingInput,
+  UnitsSettingInput,
+} from './inputs.mjs'
+import {
+  CompleteSettingValue,
+  LocaleSettingValue,
+  MarginSettingValue,
+  OnlySettingValue,
+  PaperlessSettingValue,
+  RendererSettingValue,
+  SaBoolSettingValue,
+  SaMmSettingValue,
+  ScaleSettingValue,
+  UnitsSettingValue,
+} from './values.mjs'
 
-export const settings = {
-  paperless: {
-    dflt: false,
-  },
-  saBool: {
-    dflt: false,
-  },
-  saMm: {
-    min: 0,
-    max: 25,
-    dflt: 10,
-  },
-  complete: {
-    dflt: false,
-  },
-  only: {},
-  locale: {
-    list: ['de', 'en', 'es', 'fr', 'nl'],
-  },
-  units: {
-    list: ['metric', 'imperial'],
-  },
-  margin: {
-    min: 0,
-    max: 25,
-    dflt: 2,
-  },
-  scale: {
-    min: 0.1,
-    max: 5,
-    dflt: 1,
-  },
-  renderer: {
-    list: ['react', 'svg'],
-    titles: {
-      react: '<Draft /> (React)',
-      svg: '@freesewing/core (SVG)',
-    },
-  },
-  debug: {
-    dflt: false,
-  },
+// Facilitate lookup of the value component
+const values = {
+  complete: CompleteSettingValue,
+  locale: LocaleSettingValue,
+  margin: MarginSettingValue,
+  only: OnlySettingValue,
+  paperless: PaperlessSettingValue,
+  renderer: RendererSettingValue,
+  sabool: SaBoolSettingValue,
+  samm: SaMmSettingValue,
+  scale: ScaleSettingValue,
+  units: UnitsSettingValue,
 }
 
-export const CoreSettings = ({ design, update, settings }) => {
-  // FIXME: Update this namespace
-  const { t } = useTranslation(['app'])
+// Facilitate lookup of the input component
+const inputs = {
+  complete: CompleteSettingInput,
+  locale: LocaleSettingInput,
+  margin: MarginSettingInput,
+  only: OnlySettingInput,
+  paperless: PaperlessSettingInput,
+  renderer: RendererSettingInput,
+  sabool: SaBoolSettingInput,
+  samm: SaMmSettingInput,
+  scale: ScaleSettingInput,
+  units: UnitsSettingInput,
+}
+
+const CoreTitle = ({ name, t, changed, current = null, open = false }) => (
+  <div className={`flex flex-row gap-1 items-center w-full ${open ? '' : 'justify-between'}`}>
+    <span className="font-medium">
+      {t(`core-settings:${name}.t`)}
+      {open ? ':' : ''}
+    </span>
+    <span className="font-bold">{current}</span>
+  </div>
+)
+
+const wasChanged = (current, name, settingsConfig) => {
+  if (typeof current === 'undefined') return false
+  if (current === settingsConfig[name].dflt) return false
+
+  return true
+}
+
+export const Setting = ({
+  name,
+  config,
+  current,
+  update,
+  t,
+  samm,
+  units,
+  patternConfig,
+  settingsConfig,
+  changed,
+}) => {
+  const drillProps = { name, config, current, update, t, units, changed }
+
+  const Input = inputs[name]
+  const Value = values[name]
+
+  // Only setting requires the part list
+  if (name === 'only') drillProps.draftOrder = patternConfig.draftOrder
+  // aabool setting needs the samm setting
+  if (name === 'sabool') drillProps.samm = samm
+
+  const buttons = []
+  if (changed)
+    buttons.push(
+      <button className="btn btn-accent" onClick={() => update.settings([name], config.dflt)}>
+        <ClearIcon />
+      </button>
+    )
+
+  const titleProps = { name, t, current: <Value {...drillProps} /> }
 
   return (
+    <Collapse
+      color={changed ? 'accent' : 'secondary'}
+      openTitle={<CoreTitle open {...titleProps} />}
+      title={<CoreTitle {...titleProps} />}
+      buttons={buttons}
+    >
+      <Input {...drillProps} />
+    </Collapse>
+  )
+}
+
+export const ns = ['i18n', 'core-settings']
+
+export const CoreSettings = ({ design, update, settings, patternConfig, language, account }) => {
+  // FIXME: Update this namespace
+  const { t } = useTranslation(['i18n', 'core-settings', design])
+
+  const settingsConfig = loadSettingsConfig({ language, control: account?.control })
+  // Default control level is 2 (in case people are not logged in)
+  const control = account.control || 2
+
+  return (
+    <Collapse
+      bottom
+      color="primary"
+      title={
+        <div className="w-full flex flex-row gap2 items-center justify-between">
+          <span className="font-bold">{t('core-settings:coreSettings')}</span>
+          <SettingsIcon className="w-6 h-6 text-primary" />
+        </div>
+      }
+      openTitle={t('core-settings:coreSettings')}
+    >
+      {Object.keys(settingsConfig)
+        .filter((name) => settingsConfig[name].control <= control)
+        .map((name) => (
+          <Setting
+            key={name}
+            {...{ name, design, update, t, patternConfig }}
+            config={settingsConfig[name]}
+            current={settings[name]}
+            changed={wasChanged(settings[name], name, settingsConfig)}
+            samm={typeof settings.samm === 'undefined' ? settingsConfig.samm.dflt : settings.samm}
+            units={settings.units}
+          />
+        ))}
+    </Collapse>
+  )
+  return (
     <Details open>
-      <TopSummary icon={<SettingsIcon />}>
-        <TopSumTitle>{t('settings')}</TopSumTitle>
+      <TopSummary icon={<SettingsIcon className="w-6 h-6 text-primary" />}>
+        <TopSumTitle>{t('core-settings:coreSettings')}</TopSumTitle>
         <Chevron />
       </TopSummary>
       <Ul>
-        {Object.keys(settings).map((name) => (
-          <Setting key={name} {...{ name, design, t }} config={settings[name]} />
-        ))}
+        {Object.keys(settingsConfig)
+          .filter((name) => settingsConfig[name].control <= control)
+          .map((name) => (
+            <Setting
+              key={name}
+              {...{ name, design, update, t, patternConfig }}
+              config={settingsConfig[name]}
+              current={settings[name]}
+              changed={wasChanged(settings[name], name, settingsConfig)}
+              samm={typeof settings.samm === 'undefined' ? settingsConfig.samm.dflt : settings.samm}
+              units={settings.units}
+            />
+          ))}
       </Ul>
     </Details>
   )

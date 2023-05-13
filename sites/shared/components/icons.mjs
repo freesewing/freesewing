@@ -48,6 +48,12 @@ export const BriefcaseIcon = (props) => (
   </IconWrapper>
 )
 
+export const BulletIcon = (props) => (
+  <IconWrapper {...props}>
+    <circle cx="12" cy="12" r="8" />
+  </IconWrapper>
+)
+
 export const Camera = (props) => (
   <IconWrapper {...props}>
     <>

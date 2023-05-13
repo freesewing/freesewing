@@ -4,7 +4,7 @@ import { CloseIcon, DownIcon } from 'shared/components/icons.mjs'
 const OpenTitleButton = ({ title, toggle, color = 'primary' }) => (
   <button
     className={`flex flex-row items-center justify-between w-full
-      bg-${color} text-${color}-content px-4 py-1 text-lg font-bold`}
+      bg-${color} text-${color}-content px-4 py-1 text-lg font-medium`}
     onClick={toggle}
   >
     {title}
@@ -24,6 +24,7 @@ export const Collapse = ({
   toggle = false,
   toggleClasses = '',
   toggleIcon = '',
+  onClick = false,
 }) => {
   const [open, setOpen] = useState(opened)
 
@@ -42,7 +43,7 @@ export const Collapse = ({
       <div
         className={`shadow border-solid border-l-[6px] border-r-0 border-t-0 border-b-0 border-${color} min-h-12
             grow flex flex-row gap-4 py-1 px-4 items-center justify-start hover:cursor-pointer hover:bg-${color} hover:bg-opacity-20`}
-        onClick={() => setOpen(true)}
+        onClick={onClick ? onClick : () => setOpen(true)}
       >
         {title}
       </div>

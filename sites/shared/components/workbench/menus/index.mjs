@@ -1,9 +1,16 @@
-import { linkClasses } from 'shared/components/navigation/primary.mjs'
 import { DesignOptions } from './design-options/index.mjs'
-import { CoreSettings } from './core-settings/index.mjs'
+import { CoreSettings, ns as coreSettingsNs } from './core-settings/index.mjs'
 import { XrayMenu } from './xray/index.mjs'
 import { TestDesignOptions } from './test-design-options/index.mjs'
+import { BulletIcon } from 'shared/components/icons.mjs'
 
+export const linkClasses = `
+  text-base text-base-content sm:text-base-content
+  hover:text-secondary
+  sm:hover:text-secondary
+`
+
+export const ns = coreSettingsNs
 export const Ul = (props) => <ul className="pl-5 list-inside">{props.children}</ul>
 export const Li = (props) => (
   <li className="flex flex-row border-r-2 border-r-transparent hover:border-r-secondary">
@@ -15,9 +22,13 @@ export const Details = (props) => (
     {props.children}
   </details>
 )
-export const Deg = () => (
-  <span className="text-3xl inline-block p-0 leading-3 px-2 translate-y-3">&deg;</span>
+export const Deg = ({ changed }) => (
+  <BulletIcon
+    className={`w-2.5 h-2.5 inline-block p-0 mr-1  ${changed ? 'text-accent' : ''}`}
+    stroke={6}
+  />
 )
+
 export const NoSumDiv = (props) => (
   <div
     className={`
@@ -41,6 +52,7 @@ export const SumDiv = (props) => (
     hover:border-secondary
     sm:hover:border-secondary-focus
     text-base-content sm:text-base-content
+    py-2
   `}
   >
     {props.children}
@@ -54,7 +66,7 @@ export const Summary = (props) => (
     text-base-content
     sm:text-base-content
     hover:cursor-pointer
-    items-center
+    items-start
   `}
   >
     {props.children}
@@ -85,7 +97,7 @@ export const SumButton = (props) => (
     text-base-content
     sm:text-base-content
     hover:cursor-pointer
-    items-center
+    items-start
     mr-4
   `}
     onClick={props.onClick}
@@ -105,13 +117,27 @@ export const SecText = (props) =>
     <span className="text-secondary-focus">{props.children}</span>
   )
 
+export const AccentText = (props) =>
+  props.raw ? (
+    <span className="text-accent-focus" dangerouslySetInnerHTML={{ __html: props.raw }} />
+  ) : (
+    <span className="text-accent-focus">{props.children}</span>
+  )
+
+export const PrimaryText = (props) =>
+  props.raw ? (
+    <span className="text-primary-focus" dangerouslySetInnerHTML={{ __html: props.raw }} />
+  ) : (
+    <span className="text-primary-focus">{props.children}</span>
+  )
+
 export const DraftMenu = (props) => {
   const { design, patternConfig, settings, ui, update, Option = false } = props
 
   return (
     <nav className="grow mb-12">
       <DesignOptions {...props} />
-      <CoreSettings {...props} />
+      <CoreSettings {...{ design, update, settings, patternConfig }} />
       {ui.renderer === 'react' ? <XrayMenu {...props} /> : null}
     </nav>
   )
