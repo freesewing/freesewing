@@ -63,7 +63,7 @@ It is all up to you! Expérimentez et allez-y !
 ### Étape 3 : Créer un modèle en papier
 
 - Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
-- Now you have a pattern you can use to produce a garment.
+- Vous disposez à présent d'un modèle que vous pouvez utiliser pour produire un vêtement.
 
 <Note>
 
