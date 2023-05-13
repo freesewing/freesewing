@@ -4,7 +4,7 @@ titre: "aisance de manche"
 
 ![Cuff ease](./cuffease.svg)
 
-The amount of ease at your cuff/wrist.
+L'aisance au niveau du poignet.
 
 ## Effet de cette option sur le motif
 
