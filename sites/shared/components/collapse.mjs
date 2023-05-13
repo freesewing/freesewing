@@ -1,14 +1,19 @@
 import { useState } from 'react'
 import { CloseIcon, DownIcon } from 'shared/components/icons.mjs'
 
-const OpenTitleButton = ({ title, toggle, color = 'primary' }) => (
+const OpenTitleButton = ({ title, toggle, color = 'primary', openButtons = [] }) => (
   <button
     className={`flex flex-row items-center justify-between w-full
       bg-${color} text-${color}-content px-4 py-1 text-lg font-medium`}
     onClick={toggle}
   >
     {title}
-    <CloseIcon className="w-6 h-6 hover:opacity-40" stroke={3} />
+    <div className="flex flex-row items-center gap-2 z-5">
+      {openButtons}
+      <button className="btn btn-ghost btn-xs px-0" onClick={toggle}>
+        <CloseIcon stroke={3} />
+      </button>
+    </div>
   </button>
 )
 
@@ -25,11 +30,16 @@ export const Collapse = ({
   toggleClasses = '',
   toggleIcon = '',
   onClick = false,
+  openButtons = null,
 }) => {
   const [open, setOpen] = useState(opened)
 
   const titleBtn = open ? (
-    <OpenTitleButton title={openTitle || title} toggle={() => setOpen(false)} color={color} />
+    <OpenTitleButton
+      title={openTitle || title}
+      toggle={() => setOpen(false)}
+      {...{ color, openButtons }}
+    />
   ) : null
 
   return open ? (

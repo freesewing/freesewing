@@ -86,21 +86,24 @@ export const Workbench = ({ design, Design, set = false }) => {
 
   // Generate the pattern here so we can pass it down to both the view and the options menu
   const pattern = draftViews.includes(view) ? new Design(settings) : false
-  const patternConfig = pattern.getConfig()
-  if (pattern) {
-    // add theme to svg renderer
-    if (ui.renderer === 'svg') {
-      pattern.use(pluginI18n, { t })
-      pattern.use(pluginTheme, { skipGrid: ['pages'] })
-    }
 
-    // draft it for draft and event views. Other views may add plugins, etc and we don't want to draft twice
-    try {
-      pattern.draft()
-    } catch (error) {
-      console.log(error)
-      setError(<ErrorView>{JSON.stringify(error)}</ErrorView>)
-    }
+  // Return early if the pattern is not initialized yet
+  if (typeof pattern.getConfig !== 'function') return null
+
+  const patternConfig = pattern.getConfig()
+
+  if (ui.renderer === 'svg') {
+    // Add theme to svg renderer
+    pattern.use(pluginI18n, { t })
+    pattern.use(pluginTheme, { skipGrid: ['pages'] })
+  }
+
+  // Draft the pattern or die trying
+  try {
+    pattern.draft()
+  } catch (error) {
+    console.log(error)
+    setError(<ErrorView>{JSON.stringify(error)}</ErrorView>)
   }
 
   return (

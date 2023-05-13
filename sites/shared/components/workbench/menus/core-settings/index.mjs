@@ -72,9 +72,12 @@ const inputs = {
   units: UnitsSettingInput,
 }
 
-const CoreTitle = ({ name, t, changed, current = null, open = false }) => (
+const CoreTitle = ({ name, t, changed, current = null, open = false, emoji = '' }) => (
   <div className={`flex flex-row gap-1 items-center w-full ${open ? '' : 'justify-between'}`}>
     <span className="font-medium">
+      <span role="img" className="pr-2">
+        {emoji}
+      </span>
       {t(`core-settings:${name}.t`)}
       {open ? ':' : ''}
     </span>
@@ -106,20 +109,37 @@ export const Setting = ({
   const Input = inputs[name]
   const Value = values[name]
 
-  // Only setting requires the part list
-  if (name === 'only') drillProps.draftOrder = patternConfig.draftOrder
   // aabool setting needs the samm setting
   if (name === 'sabool') drillProps.samm = samm
 
   const buttons = []
-  if (changed)
+  const openButtons = []
+  if (changed) {
     buttons.push(
-      <button className="btn btn-accent" onClick={() => update.settings([name], config.dflt)}>
+      <button
+        className="btn btn-accent"
+        onClick={(evt) => {
+          evt.stopPropagation()
+          update.settings([name], config.dflt)
+        }}
+      >
         <ClearIcon />
       </button>
     )
+    openButtons.push(
+      <button
+        className="btn btn-ghost btn-xs px-0"
+        onClick={(evt) => {
+          evt.stopPropagation()
+          update.settings([name], config.dflt)
+        }}
+      >
+        <ClearIcon />
+      </button>
+    )
+  }
 
-  const titleProps = { name, t, current: <Value {...drillProps} /> }
+  const titleProps = { name, t, current: <Value {...drillProps} />, emoji: config.emoji }
 
   return (
     <Collapse
@@ -127,6 +147,7 @@ export const Setting = ({
       openTitle={<CoreTitle open {...titleProps} />}
       title={<CoreTitle {...titleProps} />}
       buttons={buttons}
+      openButtons={openButtons}
     >
       <Input {...drillProps} />
     </Collapse>
@@ -139,7 +160,12 @@ export const CoreSettings = ({ design, update, settings, patternConfig, language
   // FIXME: Update this namespace
   const { t } = useTranslation(['i18n', 'core-settings', design])
 
-  const settingsConfig = loadSettingsConfig({ language, control: account?.control })
+  const settingsConfig = loadSettingsConfig({
+    language,
+    control: account?.control,
+    sabool: settings.sabool,
+    parts: patternConfig.draftOrder,
+  })
   // Default control level is 2 (in case people are not logged in)
   const control = account.control || 2
 

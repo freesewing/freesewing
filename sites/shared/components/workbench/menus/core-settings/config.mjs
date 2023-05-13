@@ -1,17 +1,9 @@
-export const loadSettingsConfig = ({ language = 'en', units = 'metric' }) => ({
-  paperless: {
-    control: 2, // Show when control > 1
-    list: [0, 1],
-    choiceTitles: {
-      0: 'paperlessNo',
-      1: 'paperlessYes',
-    },
-    valueTitles: {
-      0: 'no',
-      1: 'yes',
-    },
-    dflt: 0,
-  },
+export const loadSettingsConfig = ({
+  language = 'en',
+  units = 'metric',
+  sabool = false,
+  parts = [],
+}) => ({
   sabool: {
     control: 2, // Show when control > 1
     list: [0, 1],
@@ -24,12 +16,30 @@ export const loadSettingsConfig = ({ language = 'en', units = 'metric' }) => ({
       1: 'yes',
     },
     dflt: 0,
+    emoji: '✂️',
   },
-  samm: {
+  samm: sabool
+    ? {
+        control: 2, // Show when control > 1
+        min: 0,
+        max: 25,
+        dflt: 10,
+        step: 0.1,
+      }
+    : false,
+  paperless: {
     control: 2, // Show when control > 1
-    min: 0,
-    max: 25,
-    dflt: 10,
+    list: [0, 1],
+    choiceTitles: {
+      0: 'paperlessNo',
+      1: 'paperlessYes',
+    },
+    valueTitles: {
+      0: 'no',
+      1: 'yes',
+    },
+    dflt: 0,
+    emoji: '🌲',
   },
   locale: {
     control: 3, // Show when control > 2
@@ -43,12 +53,13 @@ export const loadSettingsConfig = ({ language = 'en', units = 'metric' }) => ({
       nl: 'nl',
     },
     valueTitles: {
-      de: 'DE',
-      en: 'EN',
-      es: 'ES',
-      fr: 'FR',
-      nl: 'NL',
+      de: 'de.t',
+      en: 'en.t',
+      es: 'es.t',
+      fr: 'fr.t',
+      nl: 'nl.t',
     },
+    emoji: '🇺🇳',
   },
   units: {
     control: 3, // Show when control > 2
@@ -62,6 +73,7 @@ export const loadSettingsConfig = ({ language = 'en', units = 'metric' }) => ({
       metric: 'metric',
       imperial: 'imperial',
     },
+    emoji: '📐',
   },
   complete: {
     control: 4, // Show when control > 3
@@ -75,22 +87,29 @@ export const loadSettingsConfig = ({ language = 'en', units = 'metric' }) => ({
       0: 'no',
       1: 'yes',
     },
+    emoji: '🔎',
   },
   only: {
     control: 4, // Show when control > 3
     dflt: false,
-  },
-  margin: {
-    control: 4, // Show when control > 3
-    min: 0,
-    max: 25,
-    dflt: 2,
+    parts,
+    emoji: '🛍️',
   },
   scale: {
     control: 4, // Show when control > 3
     min: 0.1,
     max: 5,
     dflt: 1,
+    step: 0.1,
+    emoji: '🪆',
+  },
+  margin: {
+    control: 4, // Show when control > 3
+    min: 0,
+    max: 25,
+    dflt: 2,
+    step: 1,
+    emoji: '🔲',
   },
   renderer: {
     control: 4, // Show when control > 3
@@ -104,5 +123,6 @@ export const loadSettingsConfig = ({ language = 'en', units = 'metric' }) => ({
       svg: 'SVG',
     },
     dflt: 'react',
+    emoji: '🚀',
   },
 })

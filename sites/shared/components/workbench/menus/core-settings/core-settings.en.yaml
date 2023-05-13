@@ -6,8 +6,8 @@ sabool.t: Include Seam Allowance
 sabool.d: Controls whether or not to include seam allowance in your pattern
 complete.t: Details
 complete.d: Controls how detailed the pattern is; Either a complete pattern with all details, or a basic outline of the pattern parts
-only.t: Contents
-only.d: Allows you to control which pattern parts will be included in your pattern
+only.t: Included Parts
+only.d: Use this to control exactly which pattern parts will be included in your pattern
 locale.t: Language
 locale.d: Determines the language used on your pattern. This will not influence the language of the website, only of this specific pattern.
 units.t: Units
