@@ -1,5 +1,5 @@
 - - -
-title: "Breanna body block: Cutting Instructions"
+titre : "Bloc de corps Breanna : Instructions de coupe"
 - - -
 
 **Tissu principal**
