@@ -2,7 +2,7 @@
 titre : "Aisance aux biceps"
 - - -
 
-This option controls the ease at your upper arm/biceps.
+Cette option permet de contrôler l'aisance au niveau de la partie supérieure du bras/biceps.
 
 ## Effet de cette option sur le motif
 
