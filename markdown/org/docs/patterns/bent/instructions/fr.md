@@ -76,10 +76,10 @@ Tout dépend de vous ! Expérimentez et allez-y !
 
 <Note>
 
-It is best practice to make a paper pattern from the mock-up if you have made any alterations, as this will allow you to clean up any lines but also means you have a pattern that you can keep producing garments from.
+Si vous avez effectué des modifications, il est préférable de créer un modèle en papier à partir de la maquette, car cela vous permettra de nettoyer les lignes et de disposer d'un modèle à partir duquel vous pourrez continuer à produire des vêtements.
 
 </Note>
 
-### Bent is a block, looking for a finalised pattern?
+### Bent est un bloc, à la recherche d'un modèle finalisé ?
 
 > Here are some of the patterns based on Bent: [Carlton](/patterns/carlton), [Carlita](/patterns/carlita), and [Jaeger](/patterns/jaeger).
