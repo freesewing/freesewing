@@ -58,14 +58,14 @@ Il est parfois nécessaire de porter la maquette pendant un certain temps pour a
 <Note>
 
 N'oubliez pas de considérer Bent comme une base plutôt que comme un produit final, et ajustez donc ce dont vous avez besoin pour obtenir l'aspect désiré.  
-For instance:
+Par exemple :
 
-- Change the neck line
-- Add/change the closure allowances
-- Alter the hem style
-- Add a collar
+- Modifier la ligne d'encolure
+- Ajouter/modifier les marges de fermeture
+- Modifier le style de l'ourlet
+- Ajouter un col
 
-It is all up to you! Expérimentez et allez-y !
+Tout dépend de vous ! Expérimentez et allez-y !
 
 </Note>
 
