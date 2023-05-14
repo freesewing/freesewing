@@ -5,14 +5,14 @@ titre : "Bloc de corps Breanna : Instructions de coupe"
 **Tissu principal**
 
 - Cut **1 Front** part on the fold.
-- Cut **2 Back** parts.
+- Couper **2 parties** arrières.
 - Cut **2 Sleeve** parts, _good sides together_.
 
-These cutting instructions are just for the default Breanna block. Ajustez votre coupe en conséquence si vous avez apporté des modifications au bloc.
+Ces instructions de coupe ne concernent que le bloc Breanna par défaut. Ajustez votre coupe en conséquence si vous avez apporté des modifications au bloc.
 
 <Tip>
 
-If you do not have someone to help pin you into Breanna then you may find it easier to Cut 2 Front parts with seam allowance and sew the backs up when constructing so you can pin in the front.
+Si vous n'avez personne pour vous aider à épingler Breanna, vous trouverez peut-être plus facile de couper deux parties du devant avec une marge de couture et de coudre l'arrière lors de la construction afin de pouvoir épingler le devant.
 
 </Tip>
 
