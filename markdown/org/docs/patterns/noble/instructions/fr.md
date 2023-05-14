@@ -46,9 +46,9 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 
 <Tip>
 
-If you do not have someone to help with pinning, you may find it easier to cut the front part in two with seam allowance rather than on a fold and sew the back seam up so that you can pin in the front when trying on.
+Si vous n'avez personne pour vous aider à épingler, vous trouverez peut-être plus facile de couper le devant en deux avec la marge de couture plutôt que sur un pli et de coudre la couture du dos pour pouvoir épingler le devant.
 
-Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Ajuster constamment l'épaule ? ect... Ces éléments sont des signes indiquant que le modèle doit être ajusté.
+Soyez attentif à tout ce que vous faites en portant la maquette : la tirez-vous vers le bas ? Ajuster constamment l'épaule ? ect... Ces éléments sont des signes indiquant que le modèle doit être ajusté.
 
 Il est parfois nécessaire de porter la maquette pendant un certain temps pour avoir une meilleure idée de la coupe, alors n'hésitez pas à vous promener avec pendant quelques heures.
 
@@ -73,11 +73,11 @@ It is all up to you! Expérimentez et allez-y !
 
 ### Étape 3 : Créer un modèle en papier
 
-- Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
+- Une fois que vous êtes satisfait de toutes vos modifications, retirer les épingles de votre maquette et créez un modèle de papier à partir de celle-ci.
 - Vous disposez à présent d'un modèle que vous pouvez utiliser pour produire un vêtement.
 
 <Note>
 
-It is best practice to make a paper pattern from the mock-up if you have made any alterations, as this will allow you to clean up any lines but also means you have a pattern that you can keep producing garments from.
+Si vous avez effectué des modifications, il est préférable de créer un modèle en papier à partir de la maquette, car cela vous permettra de nettoyer les lignes et de disposer d'un modèle à partir duquel vous pourrez continuer à produire des vêtements.
 
 </Note>
