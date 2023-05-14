@@ -1,11 +1,11 @@
 - - -
-title: "Brian body block: Cutting Instructions"
+titre: "Bloc de corps pour Brian : Instructions de coupe"
 - - -
 
 **Tissu principal**
 
-- Cut **1 Front** part on the fold.
-- Cut **1 Back** part on the fold.
+- Couper **1 partie avant** dans le pli.
+- Coupez **1 partie arrière** sur le pli.
 - Couper **2 pièces** de manche.
 
 Ces instructions de coupe ne concernent que le bloc Brian par défaut. Ajustez votre coupe en conséquence si vous avez apporté des modifications au bloc.
