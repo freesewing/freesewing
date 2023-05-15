@@ -1,9 +1,10 @@
-import { prebuildMdx } from './mdx.mjs'
+import { prebuildDocs } from './docs.mjs'
+//import { prebuildMdx } from './mdx.mjs'
 import { prebuildNavigation } from './navigation.mjs'
 import { prebuildContributors } from './contributors.mjs'
 import { prebuildPatrons } from './patrons.mjs'
 import { prebuildI18n } from './i18n.mjs'
-import { prebuildLab } from './lab.mjs'
+//import { prebuildLab } from './lab.mjs'
 import { prebuildDesigns } from './designs.mjs'
 import { generateOgImage } from './og/index.mjs'
 
@@ -11,9 +12,9 @@ const run = async () => {
   const SITE = process.env.SITE || 'lab'
   if (SITE === 'org') {
     prebuildDesigns()
-    const mdxPages = await prebuildMdx(SITE)
+    const docPages = await prebuildDocs(SITE)
     const posts = {}
-    prebuildNavigation(mdxPages, posts, SITE)
+    prebuildNavigation(docPages, posts, SITE)
   } else if (SITE === 'dev') {
     const mdxPages = await prebuildMdx(SITE)
     if (process.env.GENERATE_OG_IMAGES) {

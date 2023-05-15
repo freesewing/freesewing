@@ -2,12 +2,11 @@
 
 # .env
 .env
-.key
+*.key
 
 # Plugins
 plugins/plugin-theme/src/bundle.css.js
 plugins/plugin-theme/css
-
 
 # Components package build artifacts
 packages/components/Blockquote
@@ -78,10 +77,10 @@ sites/sanity/.sanity
 # Sites prebuild artifacts
 sites/*/public/locales/*/*.json
 sites/*/public/feeds/*
+sites/*/pages/docs/*
 packages/new-design/shared/public/locales/*/*.json
 packages/new-design/shared/.gitignore
 packages/new-design/lib/banner.mjs
-
 # Translation files for NextJS
 # Remove this after we move to Node 16 and deprecate pattern-info
 #/home/joost/git/freesewing/packages/i18n/src/next/*/*.mjs

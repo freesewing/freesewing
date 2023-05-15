@@ -1,9 +1,13 @@
 // Hooks
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
+// Context
+import { ModalContext } from 'shared/context/modal-context.mjs'
 //Dependencies
 import { loadSettingsConfig } from './config.mjs'
 // Components
+import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
+import { DynamicMdx } from 'shared/components/dynamic-mdx.mjs'
 import { SettingsIcon, ClearIcon, HelpIcon } from 'shared/components/icons.mjs'
 import Link from 'next/link'
 import {
@@ -103,20 +107,24 @@ export const Setting = ({
   patternConfig,
   settingsConfig,
   changed,
+  loadDocs,
 }) => {
   const drillProps = { name, config, current, update, t, units, changed }
 
   const Input = inputs[name]
   const Value = values[name]
 
-  // aabool setting needs the samm setting
+  // sabool setting needs the samm setting
   if (name === 'sabool') drillProps.samm = samm
 
   const buttons = []
   const openButtons = [
-    <Link href={`/docs/core-settings/${name}`} className="btn btn-xs btn-ghost px-0">
+    <button
+      className="btn btn-xs btn-ghost px-0"
+      onClick={(evt) => loadDocs(evt, `site/draft/core-settings/${name}`)}
+    >
       <HelpIcon className="w-4 h-4" />
-    </Link>,
+    </button>,
   ]
   if (changed) {
     buttons.push(
@@ -158,11 +166,12 @@ export const Setting = ({
   )
 }
 
-export const ns = ['i18n', 'core-settings']
+export const ns = ['i18n', 'core-settings', 'modal']
 
 export const CoreSettings = ({ design, update, settings, patternConfig, language, account }) => {
   // FIXME: Update this namespace
   const { t } = useTranslation(['i18n', 'core-settings', design])
+  const { setModal } = useContext(ModalContext)
 
   const settingsConfig = loadSettingsConfig({
     language,
@@ -172,6 +181,17 @@ export const CoreSettings = ({ design, update, settings, patternConfig, language
   })
   // Default control level is 2 (in case people are not logged in)
   const control = account.control || 2
+
+  const loadDocs = (evt, path = 'site/draft/core-settings') => {
+    evt.stopPropagation()
+    setModal(
+      <ModalWrapper>
+        <div className="max-w-prose">
+          <DynamicMdx path={path} language={language} />
+        </div>
+      </ModalWrapper>
+    )
+  }
 
   return (
     <Collapse
@@ -185,9 +205,9 @@ export const CoreSettings = ({ design, update, settings, patternConfig, language
       }
       openTitle={t('core-settings:coreSettings')}
       openButtons={[
-        <Link href="/docs/core-settings/${name}" className="btn btn-xs btn-ghost px-0">
+        <button className="btn btn-xs btn-ghost px-0 z-10" onClick={(evt) => loadDocs(evt)}>
           <HelpIcon className="w-4 h-4" />
-        </Link>,
+        </button>,
       ]}
     >
       <p>{t('core-settings:coreSettings.d')}</p>
@@ -196,7 +216,7 @@ export const CoreSettings = ({ design, update, settings, patternConfig, language
         .map((name) => (
           <Setting
             key={name}
-            {...{ name, design, update, t, patternConfig }}
+            {...{ name, design, update, t, patternConfig, loadDocs }}
             config={settingsConfig[name]}
             current={settings[name]}
             changed={wasChanged(settings[name], name, settingsConfig)}

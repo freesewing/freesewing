@@ -52,11 +52,6 @@ const sitePages = (t = false, control = 99) => {
       s: 'showcase',
       o: 20,
     },
-    docs: {
-      t: t('sections:docs'),
-      s: 'docs',
-      o: 30,
-    },
     community: {
       t: t('sections:community'),
       s: 'community',
@@ -180,6 +175,8 @@ export const useNavigation = ({ path, locale }) => {
   const { account } = useAccount()
 
   const nav = { ...pbn[locale], ...sitePages(t, account?.control) }
+  // Set order on docs key (from from prebuild navigation)
+  nav.docs.o = 30
 
   // Creat crumbs array
   const crumbs = createCrumbs(path, nav)

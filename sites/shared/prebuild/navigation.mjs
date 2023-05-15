@@ -22,7 +22,7 @@ const loadTranslation = (locale) => {
 /*
  * Main method that does what needs doing
  */
-export const prebuildNavigation = (mdxPages, strapiPosts, site) => {
+export const prebuildNavigation = (docPages, strapiPosts, site) => {
   /*
    * Since this is written to disk and loaded as JSON, we minimize
    * the data to load by using the following 1-character keys:
@@ -33,13 +33,13 @@ export const prebuildNavigation = (mdxPages, strapiPosts, site) => {
    * s: slug without leading or trailing slash (/)
    */
   const nav = {}
-  for (const lang in mdxPages) {
+  for (const lang in docPages) {
     const translations = loadTranslation(lang)
     nav[lang] = {}
 
     // Handle MDX content
-    for (const slug of Object.keys(mdxPages[lang]).sort()) {
-      const page = mdxPages[lang][slug]
+    for (const slug of Object.keys(docPages[lang]).sort()) {
+      const page = docPages[lang][slug]
       const chunks = slug.split('/')
       const val = {
         t: page.t,

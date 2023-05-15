@@ -2,7 +2,6 @@ import path from 'path'
 import { designs, plugins } from '../../../config/software/index.mjs'
 // Remark plugins we want to use
 import remarkFrontmatter from 'remark-frontmatter'
-import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 import remarkGfm from 'remark-gfm'
 import remarkCopyLinkedFiles from 'remark-copy-linked-files'
 //import { remarkIntroPlugin } from './remark-intro-plugin.mjs'
@@ -28,23 +27,21 @@ const jargonTransform = (term, html) => `<details class="inline jargon-details">
   ${html}</div></details>`
 
 const getMdxConfig = ({ site, jargon }) => ({
-  extension: /\.mdx?$/,
+  extension: /\.(md|mdx)$/,
   options: {
     providerImportSource: '@mdx-js/react',
-    format: 'mdx',
     remarkPlugins: [
       remarkFrontmatter,
-      remarkMdxFrontmatter,
       remarkGfm,
       smartypants,
-      [
-        remarkCopyLinkedFiles,
-        {
-          destinationDir: path.resolve(`../${site}/public/mdx`),
-          //sourceDir: path.resolve(`../../markdown/${site}/${slug}`),
-          staticPath: '/mdx/',
-        },
-      ],
+      //[
+      //  remarkCopyLinkedFiles,
+      //  {
+      //    destinationDir: path.resolve(`../${site}/public/mdx`),
+      //    sourceDir: path.resolve(`../../markdown/${site}/${slug}`),
+      //    staticPath: '/mdx/',
+      //  },
+      //],
       //[remarkIntroPlugin, { intro }],
     ],
     rehypePlugins: [
@@ -108,13 +105,16 @@ const getMdxConfig = ({ site, jargon }) => ({
  * Parameters:
  *
  * site: one of 'dev', 'org', or 'lab'
- * jaron: an object holding jargon for each supported language
+ * remarkPlugins: Array of remark plugins to load
+ * srcPkgs: Array of folders in the monorepo/packages that should be aliased
+ * so they are loaded from source, rather than from a compiled bundle
  */
-const config = ({ site, jargon = {} }) => {
+const config = (site, jargon = {}) => {
   const mdxConfig = getMdxConfig({ site, jargon })
-  //const withMdx = mdxLoader(mdxConfig)
+  const withMdx = mdxLoader(mdxConfig)
+  console.log({ mdxConfig, withMdx })
 
-  return {
+  return withMdx({
     experimental: {
       externalDir: true,
     },
@@ -128,20 +128,19 @@ const config = ({ site, jargon = {} }) => {
       }
 
       // MDX support
-      config.module.rules.push({
-        test: /\.mdx?$/,
-        use: [
-          options.defaultLoaders.babel,
-          {
-            loader: '@mdx-js/loader',
-            //providerImportSource: '@mdx-js/react',
-            options: mdxConfig.options,
-            //  mdxConfig.
-            //  remarkPlugins: [remarkGfm, ...remarkPlugins],
-            //},
-          },
-        ],
-      })
+      //config.module.rules.push({
+      //  test: /\.md?$/,
+      //  use: [
+      //    options.defaultLoaders.babel,
+      //    {
+      //      loader: '@mdx-js/loader',
+      //      //providerImportSource: '@mdx-js/react',
+      //      options: {
+      //        remarkPlugins: [remarkGfm, ...remarkPlugins],
+      //      },
+      //    },
+      //  ],
+      //})
 
       // YAML support
       config.module.rules.push({
@@ -193,7 +192,7 @@ const config = ({ site, jargon = {} }) => {
 
       return config
     },
-  }
+  })
 }
 
 export default config

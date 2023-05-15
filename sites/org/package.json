@@ -16,7 +16,6 @@
   "scripts": {
     "build": "next build",
     "cibuild": "yarn build",
-    "clean": "rimraf pages/*.mjs && rimraf pages/*/*.mjs && rimraf pages/v/*/*.mjs",
     "dev": "next dev -p 8000",
     "develop": "next dev -p 8000",
     "i18n": "SITE=org node ../shared/prebuild/i18n-only.mjs",

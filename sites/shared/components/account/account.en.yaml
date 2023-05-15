@@ -1,39 +1,39 @@
 account: Account
-yourAccount: Your account
-newPattern: New pattern
+yourAccount: Your Account
+newPattern: New Pattern
 newSet: Create a new measurements set
 links: Links
 info: Info
 settings: Settings
 data: Data
-sets: Measurements sets
+sets: Measurements Sets
 patterns: Patterns
 actions: Actions
 created: Created
 updated: Updated
 expires: Expires
 
-yourProfile: Your profile
-yourPatterns: Your patterns
-yourSets: Your measurements sets
-signOut: Sign out
+yourProfile: Your Profile
+yourPatterns: Your Patterns
+yourSets: Your Measurements Sets
+signOut: Sign Out
 politeOhCrap: Oh fiddlesticks
 bio: Bio
-email: E-mail address
-github: Github username
+email: E-mail Address
+github: Github Username
 img: Profile image
 username: Username
-compare: Metricset comparison
+compare: Metricset Comparison
 consent: Consent & Privacy
-control: Power & Simplicity
+control: Power versus Simplicity
 imperial: Units
 units: Units
 apikeys: API Keys
-newsletter: Newsletter subscription
+newsletter: Newsletter Subscription
 password: Password
 newPasswordPlaceholder: Enter your new password here
 passwordPlaceholder: Enter your password here
-mfa: Two-Factor authentication
+mfa: Two-Factor Authentication
 mfaTipTitle: Please consider enabling Two-Factor Authentication
 mfaTipMsg: We do not enforce a password policy, but we do recommend you enable Two-Factor Authentication to keep your FreeSewing account safe.
 mfaEnabled: Two-Factor Authentication is enabled
@@ -71,14 +71,7 @@ reloadMsg2: This lets you reload your account data from the backend. It has the 
 # bio
 bioTitle: Tell people a little bit about yourself
 bioPreview: Bio Preview
-bioPlaceholder: "|
-I make clothes and shoes. I design sewing patterns. I write code. I run [FreeSewing](http://freesewing.org)
-
-我也在学中文
-
-Also: Introvert 🙊
-
-(he/him) or (they/them)"
+bioPlaceholder: I make clothes and shoes. I design sewing patterns. I write code. I run [FreeSewing](http://freesewing.org)
 
 # compare
 compareTitle: Are you comfortable with measurements sets being compared?
@@ -105,6 +98,9 @@ control5t: Get out of my way
 control5d: Reveals all features, removes all handrails and safety checks.
 controlShowMore: Show more options
 controlTitle: What do you prefer?
+controltip.d1: The <b>Power versus Simplicity</b> setting of your FreeSewing account will impact how you experience the FreeSewing website.
+controltip.d2: By default, some of the more advanced features of this site are hidden to make it more easy for new users to find their way.
+controltip.d3: If you want to sacrify some of that simplicy to gain more power, you can update your Power versus Simplicity setting accordingly.
 
 # img
 imgTitle: How about a picture?

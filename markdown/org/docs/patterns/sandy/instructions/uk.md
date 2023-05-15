@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sandy circle skirt: Sewing Instructions"
-- - -
+---
 
 <Warning>
 
@@ -51,8 +51,6 @@ Skip this step if:
 - Attach Lining to skirt at hem and opening by your preferred method.
 - _Baste_ Lining to skirt at waist.
 - Gather the waist if needed.
-
-<Note>
 
 ## Step 4: The waistband
 

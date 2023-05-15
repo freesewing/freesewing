@@ -4,9 +4,9 @@ import { pluginBundle } from '@freesewing/plugin-bundle'
 import { pluginFlip } from '@freesewing/plugin-flip'
 import { pluginGore } from '@freesewing/plugin-gore'
 import { Design } from '@freesewing/core'
-import { Svg } from '../workbench/draft/svg'
-import { Defs } from '../workbench/draft/defs'
-import { Stack } from '../workbench/draft/stack'
+//import { Svg } from '../workbench/draft/svg'
+//import { Defs } from '../workbench/draft/defs'
+//import { Stack } from '../workbench/draft/stack'
 import { useGist } from 'shared/hooks/useGist'
 import { useEffect } from 'react'
 import yaml from 'js-yaml'
@@ -111,6 +111,8 @@ export const TabbedExample = ({
   paperless,
   settings,
 }) => {
+  // FIXME: Deal with this later
+  return null
   if (settings)
     settings = {
       margin: 5,

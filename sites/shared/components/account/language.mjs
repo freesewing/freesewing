@@ -10,7 +10,7 @@ import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import { BackToAccountButton, Choice } from './shared.mjs'
 // Config
-import { siteConfig as conf } from 'site/freesewing.config.mjs'
+import { siteConfig as conf } from 'site/site.config.mjs'
 
 export const ns = ['account', 'locales', 'toast']
 
