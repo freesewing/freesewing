@@ -13,7 +13,5 @@ specific for a given design, these Core Settings are the same for every design.
 So you will find this menu always provides the same settings, regardless of
 what design you are generating a pattern for.
 
-<ReadMore />
-
 <ControlTip />
 

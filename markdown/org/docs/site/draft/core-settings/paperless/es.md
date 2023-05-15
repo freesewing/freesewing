@@ -1,8 +1,8 @@
 ---
-title: Using the site
+title: Paperless Patterns
 authors:
   - joostdecock
 ---
 
-<ReadMore />
+
 

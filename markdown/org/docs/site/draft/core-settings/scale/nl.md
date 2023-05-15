@@ -1,8 +1,8 @@
 ---
-title: Using the site
+title: Scale
 authors:
   - joostdecock
 ---
 
-<ReadMore />
+
 

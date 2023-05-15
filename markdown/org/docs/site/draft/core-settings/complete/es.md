@@ -1,8 +1,8 @@
 ---
-title: Using the site
+title: Pattern Details
 authors:
   - joostdecock
 ---
 
-<ReadMore />
+
 
