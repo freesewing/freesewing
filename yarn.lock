@@ -3804,10 +3804,10 @@
     lodash "^4.17.21"
     rxjs "^7.8.0"
 
-"@sanity/vision@3.10.1":
-  version "3.10.1"
-  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-3.10.1.tgz#b87252d1bc83d6ce565dd4163ba7ba260c29e046"
-  integrity sha512-bt7PUsQo/iPRKSLjgIJslWUpG40m1kkctao6gh0gBz1RHs7Ccjo98o+lElJpb8Gw5OqPKwUKXVRV073pU3U3hA==
+"@sanity/vision@3.10.3":
+  version "3.10.3"
+  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-3.10.3.tgz#e2ae7701ed3a17230753b636b8c316fb661ecbea"
+  integrity sha512-XGW/sYQuCQh5S8HbdIVcLQiO3qrXKvburuPNKQpTc48WjnYRkxj+qSnMjajvrphhaIk8LjLZnnx77QH6VCV5Ag==
   dependencies:
     "@codemirror/autocomplete" "^6.1.0"
     "@codemirror/commands" "^6.0.1"

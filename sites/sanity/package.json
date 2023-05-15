@@ -20,7 +20,7 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "@sanity/vision": "3.10.1",
+    "@sanity/vision": "3.10.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-is": "18.2.0",
