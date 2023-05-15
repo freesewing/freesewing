@@ -4,11 +4,7 @@ import { useState } from 'react'
 import { Spinner } from 'shared/components/spinner.mjs'
 import { PageLink } from 'shared/components/page-link.mjs'
 import { useTranslation } from 'next-i18next'
-import { MdxComponents } from 'shared/components/mdx/index.mjs'
-
-export const components = MdxComponents
-
-console.log('these are the', components)
+import { components } from 'shared/components/mdx/index.mjs'
 
 export const ns = ['modal']
 
@@ -49,11 +45,9 @@ export const DynamicMdx = ({ path = false, language = 'en' }) => {
 
   const MDX = mdx ? mdx : <Spinner className="w16 h-16 animate-spin text-primary" />
 
-  console.log({ components })
   return (
     <MdxWrapper {...{ path, language, ...frontmatter }}>
       <MDX components={components} />
-      <pre>{JSON.stringify(Object.keys(components), null, 2)}</pre>
     </MdxWrapper>
   )
 }
