@@ -17,14 +17,14 @@ confidence to explore further on your own.
 
 This is the **audiobook** format, with a total runtime of 01:43:17.
 
-This training is also available as a **[long read][text]** (20k 
+This training is also available as a **[long read][text]** (20k
 words) or **[video series][video]**.
 
 </Note>
 
 
 <iframe className="w-full aspect-[16/9]"
-  width="100%" height="300" scrolling="no" frameBorder="no" allow="autoplay" 
+  width="100%" height="300" scrolling="no" frameBorder="no" allow="autoplay"
 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1609337203&color=%23171717&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
   ></iframe>
 <div></div>
@@ -35,4 +35,3 @@ src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists
 [text]: /training/git/
 [audio]: /training/git/audio/
 [video]: /training/git/video/
-
