@@ -77,22 +77,10 @@ function draftRaglanSleeve({
     points.frontArmhole,
     store.get('frontNeckRadius')
   )
-  //  points.frontNeck = utils.beamIntersectsCircle(
-  //    points.neckCenter,
-  //    neckRadius,
-  //    points.raglanCenter,
-  //    points.frontArmhole
-  //  )[0]
   points.backNeck = points.raglanCenter.shiftTowards(
     points.backArmhole,
     store.get('backNeckRadius')
   )
-  //  points.backNeck = utils.beamIntersectsCircle(
-  //    points.neckCenter,
-  //    neckRadius,
-  //    points.raglanCenter,
-  //    points.backArmhole
-  //  )[1]
 
   const angleFrontNeck = points.neckCenter.angle(points.frontNeck)
   const angleBackNeck = points.neckCenter.angle(points.backNeck)
