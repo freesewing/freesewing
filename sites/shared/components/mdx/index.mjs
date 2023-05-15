@@ -2,7 +2,7 @@ import { Popout } from 'shared/components/popout.mjs'
 import { Highlight } from './highlight.mjs'
 import { YouTube } from './youtube.mjs'
 import { Figure } from './figure.mjs'
-//import { ReadMore } from './read-more.mjs'
+import { ReadMore } from './read-more.mjs'
 import { Tab, Tabs } from './tabs.mjs'
 import { TabbedExample as Example } from './tabbed-example.mjs'
 import { HttpMethod, HttpStatusCode } from './http.mjs'
@@ -18,7 +18,7 @@ export const components = {
   Fixme: (props) => <Popout {...props} fixme />,
   Link: (props) => <Popout {...props} link />,
   Note: (props) => <Popout {...props} note />,
-  ReadMore: (props) => <Popout fixme>ReadMore is not implemented (yet) in v3</Popout>,
+  ReadMore,
   Related: (props) => <Popout {...props} related />,
   Tip: (props) => <Popout {...props} tip />,
   Warning: (props) => <Popout {...props} warning />,

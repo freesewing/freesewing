@@ -1,15 +1,16 @@
 import get from 'lodash.get'
 import orderBy from 'lodash.orderby'
 import Link from 'next/link'
+import { useContext } from 'react'
+import { NavigationContext } from 'shared/context/navigation-context.mjs'
 
 // Helper method to filter out the real children
 const order = (obj) => orderBy(obj, ['o', 't'], ['asc', 'asc'])
 const currentChildren = (current) =>
   Object.values(order(current)).filter((entry) => typeof entry === 'object')
 
-export const ReadMore = ({ app, recurse = 0, slug = false }) => {
-  // Don't bother if we don't have the navigation tree in app
-  if (!app) return null
+export const ReadMore = ({ app, recurse = 0 }) => {
+  const { nav, slug } = useContext(NavigationContext)
 
   // Deal with recurse not being a number
   if (recurse) {
@@ -17,9 +18,7 @@ export const ReadMore = ({ app, recurse = 0, slug = false }) => {
     else recurse = 1
   }
 
-  const root =
-    slug && slug !== 'docs' ? get(app.state.nav, slug.split('/').slice(1)) : app.state.nav
-  console.log(root)
+  const root = slug && slug !== 'docs' ? get(nav, slug.split('/').slice(1)) : nav
 
   const list = []
   for (const page of currentChildren(root)) {
@@ -30,5 +29,6 @@ export const ReadMore = ({ app, recurse = 0, slug = false }) => {
       </li>
     )
   }
+
   return <ul>{list}</ul>
 }

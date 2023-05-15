@@ -1,1 +1,20 @@
+account: Account
 docs: Documentation
+controltip.t: Power versus Simplicity
+controltip.d1: The <b>Power versus Simplicity</b> setting of your FreeSewing account will impact how you experience the FreeSewing website.
+controltip.d2: By default, some of the more advanced features of this site are hidden to make it more easy for new users to find their way.
+controltip.d3: If you want to sacrify some of that simplicy to gain more power, you can update your Power versus Simplicity setting accordingly.
+helpWithDocs: Help us improve our documentation
+authors: Authors
+maintainers: Maintainers
+lastUpdated: Last updated
+editThisPage: Edit this page
+years: years
+months: months
+days: days
+oneDay: one day
+lessThanADay: less than a day
+ago: ago
+helpImproveDocs: Help us improve the FreeSewing documentation
+helpTranslateDocs: Help us translate the FreeSewing documentation
+learnMore: Learn more
