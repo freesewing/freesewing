@@ -30,6 +30,9 @@ function draftBack({
     points.armholeCorner
   )[1]
 
+  const neckShoulderRadius = points.raglanCenter.dist(points.neckShoulderCorner)
+  store.set('backNeckRadius', neckShoulderRadius)
+
   points.cfNeck = points.neckCenter.shift(270, neckRadius)
 
   const necklineAngleAtRaglan = points.cfNeck.angle(points.neckShoulderCorner) * 2
