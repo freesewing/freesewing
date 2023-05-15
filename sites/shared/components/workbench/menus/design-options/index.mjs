@@ -129,6 +129,12 @@ export const DesignOption = ({
   )
 }
 
+const emojis = {
+  fit: '👕',
+  style: '💃🏽',
+  dflt: '🕹️',
+}
+
 export const DesignOptionGroup = ({
   design,
   patternConfig,
@@ -140,10 +146,16 @@ export const DesignOptionGroup = ({
   t,
 }) => (
   <Collapse
+    bottom
     color="secondary"
     title={
       <div className="w-full flex flex-row gap2 items-center justify-between">
-        <span className="font-bold">{t(group)}</span>
+        <span className="font-bold">
+          <span role="img" className="pr-2">
+            {emojis[group] ? emojis[group] : emojis.dflt}
+          </span>
+          {t(group)}
+        </span>
         <OptionsIcon className="w-6 h-6 text-primary" />
       </div>
     }
