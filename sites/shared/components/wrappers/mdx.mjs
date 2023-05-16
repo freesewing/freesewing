@@ -24,11 +24,15 @@ const TimeAgo = ({ date, t }) => {
     .toDuration(['hours', 'days', 'months', 'years'])
     .toObject()
   let ago = ''
-  if (i.years > 0) ago += `${i.years} ${t('years')}, `
-  if (i.months > 0) ago += `${i.months} ${t('months')}, `
-  if (Math.floor(i.days) === 1) ago += `${t('oneDay')}`
-  else if (Math.floor(i.days) === 0) ago += `${t('lessThanADay')}`
-  else ago += `${Math.floor(i.days)} days`
+  if (i.years < 1 && i.months < 1) {
+    if (Math.floor(i.days) === 1) ago += `${t('oneDay')}`
+    else if (Math.floor(i.days) === 0) ago += `${t('lessThanADay')}`
+  } else {
+    if (i.years === 1) ago += `${i.years} ${t('year')}, `
+    else if (i.years > 1) ago += `${i.years} ${t('years')}, `
+    if (i.months === 1) ago += `${i.months} ${t('month')}`
+    else if (i.months > 1) ago += `${i.months} ${t('months')}`
+  }
 
   return `${ago} ${t('ago')}`
 }

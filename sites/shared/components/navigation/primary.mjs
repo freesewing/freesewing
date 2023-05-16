@@ -6,16 +6,18 @@ import {
   CommunityIcon,
   DesignIcon,
   DocsIcon,
-  GuideIcon,
   HelpIcon,
   RssIcon,
   ShowcaseIcon,
-  TutorialIcon,
   UserIcon,
   MeasureIcon,
   PageIcon,
   PrintIcon,
   TrophyIcon,
+  CodeIcon,
+  I18nIcon,
+  WrenchIcon,
+  FreeSewingIcon,
 } from 'shared/components/icons.mjs'
 import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
 
@@ -24,10 +26,14 @@ export const ns = ['sections']
 // List of icons matched to top-level slug
 export const icons = {
   // FreeSewing.dev
-  guides: (className = '') => <GuideIcon className={className} />,
-  howtos: (className = '') => <HelpIcon className={className} />,
-  reference: (className = '') => <DocsIcon className={className} />,
-  tutorials: (className = '') => <TutorialIcon className={className} />,
+  developers: (className = '') => <CodeIcon className={className} />,
+  designers: (className = '') => <DesignIcon className={className} />,
+  writers: (className = '') => <DocsIcon className={className} />,
+  translators: (className = '') => <I18nIcon className={className} />,
+  infrastructure: (className = '') => <WrenchIcon className={className} stroke={1.5} />,
+  teamwork: (className = '') => <CommunityIcon className={className} stroke={1.5} />,
+  about: (className = '') => <FreeSewingIcon className={className} stroke={1.5} />,
+
   // FreeSewing.org
   account: (className = '') => <UserIcon className={className} />,
   blog: (className = '') => <RssIcon className={className} stroke={3} />,
@@ -187,10 +193,11 @@ export const Icons = ({
   flex flex-col items-center`,
   linkStyle = {},
 }) => {
-  if (!app.state?.nav) return null
+  const { nav } = useContext(NavigationContext)
+  if (!nav) return null
 
   const output = []
-  for (const page of order(app.state.nav)) {
+  for (const page of order(nav)) {
     output.push(
       <li key={page.s}>
         <Link href={`/${page.s}`} className={linkClasses} title={page.t} style={linkStyle}>

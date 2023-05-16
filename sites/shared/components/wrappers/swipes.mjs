@@ -6,7 +6,7 @@ import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
 
 /* This component should wrap all swipeable content */
 export const SwipeWrapper = ({ children, app }) => {
-  const { setModal, clearModal } = useContext(ModalContext)
+  const { setModal, clearModal } = useContext(ModalContext) || {}
 
   /*
    * Swipe handling for the entire site

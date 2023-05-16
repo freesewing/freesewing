@@ -1,11 +1,19 @@
 import Head from 'next/head'
-import { Header } from 'site/components/header.mjs'
-import { Footer } from 'shared/components/footer/index.mjs'
-import { Search } from 'site/components/search.mjs'
+import { Header, ns as headerNs } from 'site/components/header/index.mjs'
+import { Footer, ns as footerNs } from 'shared/components/footer/index.mjs'
+import { Search, ns as searchNs } from 'site/components/search.mjs'
 
-export const ns = []
+export const ns = [...new Set([...headerNs, ...footerNs, ...searchNs])]
 
-export const LayoutWrapper = ({ app, children = [], search, setSearch, noSearch = false }) => {
+export const LayoutWrapper = ({
+  children = [],
+  search,
+  setSearch,
+  noSearch = false,
+  header = false,
+}) => {
+  const ChosenHeader = header ? header : Header
+
   return (
     <div
       className={`
@@ -17,7 +25,7 @@ export const LayoutWrapper = ({ app, children = [], search, setSearch, noSearch 
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Header app={app} setSearch={setSearch} />
+      <ChosenHeader setSearch={setSearch} />
       <main className="grow">{children}</main>
       {!noSearch && search && (
         <>
@@ -30,12 +38,12 @@ export const LayoutWrapper = ({ app, children = [], search, setSearch, noSearch 
           lg:max-w-4xl
         `}
           >
-            <Search app={app} search={search} setSearch={setSearch} />
+            <Search search={search} setSearch={setSearch} />
           </div>
           <div className="fixed top-0 left-0 w-full min-h-screen bg-neutral z-20 bg-opacity-70"></div>
         </>
       )}
-      <Footer app={app} />
+      <Footer />
     </div>
   )
 }

@@ -92,7 +92,10 @@ export const prebuildDocs = async (site) => {
   console.log(`Prebuilding docs pages for freesewing.${site}`)
 
   // Setup MDX root path
-  const mdxRoot = path.resolve('..', '..', 'markdown', site, 'docs')
+
+  const root = ['..', '..', 'markdown', site]
+  if (site === 'org') root.push('docs')
+  const mdxRoot = path.resolve(...root)
 
   // Load page template
   const template = fs.readFileSync(

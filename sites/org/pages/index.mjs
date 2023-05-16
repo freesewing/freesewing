@@ -7,9 +7,6 @@ import { PageWrapper } from 'shared/components/wrappers/page.mjs'
 import { Popout } from 'shared/components/popout.mjs'
 import { PageLink } from 'shared/components/page-link.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
-import MDX, { frontmatter } from 'markdown/docs/site/draft/core-settings/sabool/en.md'
-import { components } from 'shared/components/mdx/index.mjs'
-import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 
 /*
  * Each page MUST be wrapped in the PageWrapper component.
@@ -17,8 +14,6 @@ import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-
-console.log(MDX, frontmatter)
 const HomePage = ({ page }) => (
   <PageWrapper {...page} layout={BareLayout}>
     <Head>
@@ -29,9 +24,6 @@ const HomePage = ({ page }) => (
         <Popout fixme>
           Create homepage. Meanwhile check <PageLink href="/signup" txt="the signup flow" />
         </Popout>
-
-        <MdxWrapper {...{ MDX, frontmatter }} />
-        <MDX components={components} />
         <h2>What is FreeSewing?</h2>
         <small>(by ChatGPT)</small>
         <p>

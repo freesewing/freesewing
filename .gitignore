@@ -77,7 +77,6 @@ sites/sanity/.sanity
 # Sites prebuild artifacts
 sites/*/public/locales/*/*.json
 sites/*/public/feeds/*
-sites/*/pages/docs/*
 packages/new-design/shared/public/locales/*/*.json
 packages/new-design/shared/.gitignore
 packages/new-design/lib/banner.mjs
@@ -90,6 +89,17 @@ sites/lab/lib
 sites/lab/pages
 # but not the indexes
 !sites/lab/pages/*/index.js
+
+# dev auto-generated pages
+site/lab/pages/*
+# But not these
+404.mjs
+_app.mjs
+contact.mjs
+index.mjs
+
+# org auto-generated pages
+sites/org/pages/docs/*
 
 # Node dependencies
 node_modules

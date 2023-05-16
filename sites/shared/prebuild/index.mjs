@@ -16,7 +16,7 @@ const run = async () => {
     const posts = {}
     prebuildNavigation(docPages, posts, SITE)
   } else if (SITE === 'dev') {
-    const mdxPages = await prebuildMdx(SITE)
+    const docPages = await prebuildDocs(SITE)
     if (process.env.GENERATE_OG_IMAGES) {
       // Create og image for the home page
       await generateOgImage({
@@ -35,7 +35,7 @@ const run = async () => {
         lead: '404',
       })
     }
-    prebuildNavigation(mdxPages, false, SITE)
+    prebuildNavigation(docPages, false, SITE)
   } else await prebuildLab()
 
   await prebuildI18n(SITE)
