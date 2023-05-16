@@ -1,5 +1,5 @@
 - - -
-title: "Cuff ease"
+titre: "aisance de manche"
 - - -
 
 ![The cuff ease factor on Brian](./cuffease.svg)

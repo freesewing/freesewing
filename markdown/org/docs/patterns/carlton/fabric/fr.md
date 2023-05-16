@@ -2,7 +2,7 @@
 title: "Carlton coat: Fabric Options"
 - - -
 
-### Main Fabric
+### Tissu principal
 
 You want a fabric that has a bit of body that holds its shape. Generally **Wools** of **coating weight** will be the best choice as they will provide warmth and give shape to the coat. Other fabrics of **coating weight** should also work. However if you are looking for something more lightweight you could try **Linens** and lighter **Wools**, but you may need to face these fabrics to give them more body before construction. **Fleece** is a cheaper alternate to **Wools** but may note keep as long, if you are putting the effort into properly tailoring Carlton then you are gonna want to consider buying a fabric that will last for a long period of time.
 

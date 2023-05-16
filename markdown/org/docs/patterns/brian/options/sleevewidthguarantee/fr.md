@@ -1,5 +1,5 @@
 - - -
-title: "Sleeve width guarantee"
+titre : "Garantie de largeur de manche"
 - - -
 
 We first draft the arm opening, then we draft a sleeve to fit it.

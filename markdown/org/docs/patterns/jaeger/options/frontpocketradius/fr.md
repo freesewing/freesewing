@@ -9,4 +9,4 @@ The radius by which the front pocket is rounded.
 
 ## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_frontpocketradius_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_frontpocketradius_sample.svg "Effet de cette option sur le modèle")

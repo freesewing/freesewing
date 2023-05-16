@@ -159,6 +159,7 @@ function hugoSleeve({
       .curve(points.slopeFrontCp2, points.capQ4Cp2, points.bicepsLeft)
       .shiftAlong(store.get('notchFront'))
     snippets.frontNotch = new Snippet('notch', points.frontNotch)
+    snippets.shoulderNotch = new Snippet('notch', points.raglanTop)
     points.backNotch = new Path()
       .move(points.raglanTipBack)
       .curve(points.raglanTipBack, points.slopeBackCp2, points.slopeBack)

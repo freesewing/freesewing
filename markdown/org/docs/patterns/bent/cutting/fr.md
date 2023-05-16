@@ -9,7 +9,7 @@ title: "Bent body Block: Cutting Instructions"
 - Cut **2 Top sleeve** parts.
 - Cut **2 Under sleeve** parts.
 
-These cutting instructions are just for the default Bent block. Adjust your cutting accordingly if you have/are making changes to the block.
+These cutting instructions are just for the default Bent block. Ajustez votre coupe en conséquence si vous avez apporté des modifications au bloc.
 
 <Warning>
 

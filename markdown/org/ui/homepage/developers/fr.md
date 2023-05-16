@@ -3,7 +3,7 @@
 
 #### Vous êtes curieux de savoir comment ça marche ?
 
-FreeSewing est écrit en [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript). Our [core library](https://www.npmjs.com/package/@freesewing/core) and [patterns](/patterns) are available both for [NodeJS](https://nodejs.org/) and the browser.
+FreeSewing est écrit en [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript). No [bibliothèque de base](https://www.npmjs.com/package/@freesewing/core) et [patrons](/patterns) sont disponibles à la fois pour [NodeJS](https://nodejs.org/) et le navigateur.
 
 Nos sites Web sont construits avec [Gatsby](https://www.gatsbyjs.com/)/[React](https://reactjs.org/) et gracieusement hébergés par [Netlify](https://www.netlify.com/).
 
@@ -19,8 +19,8 @@ Notre [documentation de développeur](https://freesewing.dev) est disponible sur
 
 #### Vous souhaitez nous aider ?
 
-Awesome ❤️  
-The fastest thing to do is [join us on Discord](https://discord.freesewing.org/) where all the other contributors hang out.
+Génial ❤️  
+La chose la plus rapide à faire est de [nous rejoindre sur Discord](https://discord.freesewing.org/) où sont tous les autres contributeurs.
 
 Si vous n'êtes pas sûr de la façon dont vous pourriez contribuer, consultez [les moyens de contribuer](https://freesewing.dev/howtos/ways-to-contribute), vous verrez qu'il y a certainement quelque chose que vous pouvez faire pour aider.
 

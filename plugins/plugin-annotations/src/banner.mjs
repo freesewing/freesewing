@@ -12,8 +12,12 @@ export const bannerMacros = {
     }
     so.path.attr('data-text-dy', so.dy).attr('data-text-class', `${so.className} center`)
     const spacer = '&#160;'.repeat(so.spaces)
-    let banner = spacer
-    for (let i = 0; i < so.repeat; i++) banner += so.text + '&#160;'.repeat(so.spaces)
-    so.path.attr('data-text', banner)
+
+    for (let i = 0; i < so.repeat; i++) {
+      so.path.attr('data-text', spacer)
+      so.path.attr('data-text', so.text)
+    }
+
+    so.path.attr('data-text', spacer)
   },
 }

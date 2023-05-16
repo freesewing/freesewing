@@ -1,5 +1,5 @@
 - - -
-title: "Sleeve length bonus"
+titre : "Surlongueur de longueur de manche"
 - - -
 
 ![L'option bonus de longueur des manches sur Diana](./sleevelengthbonus.svg)

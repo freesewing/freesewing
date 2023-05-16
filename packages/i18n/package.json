@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/i18n",
-  "version": "3.0.0-alpha.8",
+  "version": "3.0.0-alpha.10",
   "description": "Translations for the FreeSewing project",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -44,11 +44,12 @@
     "wcibuild_step7": "node build.mjs"
   },
   "peerDependencies": {
-    "@freesewing/pattern-info": "3.0.0-alpha.8"
+    "@freesewing/pattern-info": "3.0.0-alpha.10"
   },
   "dependencies": {},
   "devDependencies": {
-    "js-yaml": "4.1.0"
+    "js-yaml": "4.1.0",
+    "recursive-readdir": "^2.2.3"
   },
   "files": [
     "dist/*",

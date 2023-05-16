@@ -97,7 +97,7 @@ export const ear = {
     lengthRatio: { pct: 55, min: 40, max: 60, menu: 'style' },
     earLength: { pct: 100, min: 80, max: 150, menu: 'style' },
     earWidth: { pct: 100, min: 80, max: 150, menu: 'style' },
-    buttonhole: { bool: false },
+    buttonhole: { bool: false, menu: 'style' },
   },
   plugins: [pluginBundle],
   draft: draftHolmesEar,

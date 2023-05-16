@@ -15,6 +15,7 @@ import {
   MeasureIcon,
   PageIcon,
   PrintIcon,
+  TrophyIcon,
 } from 'shared/components/icons.mjs'
 import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
 
@@ -36,6 +37,7 @@ export const icons = {
   community: (className = '') => <CommunityIcon className={className} />,
   sets: (className = '') => <MeasureIcon className={className} />,
   patterns: (className = '') => <PageIcon className={className} />,
+  training: (className = '') => <TrophyIcon className={className} />,
 }
 
 /* helper method to order nav entries */

@@ -1,5 +1,5 @@
 - - -
-title: "Collar ease"
+titre: "Aisance du col"
 - - -
 
 ![Collar ease](./collarease.svg)

@@ -1,7 +1,7 @@
 - - -
-title: "Waralee wrap pants: Fabric Options"
+titre: "Pantalon portefeuille Waralee : Option de tissus"
 - - -
 
-### Main Fabric
+### Tissu principal
 
-Wrap pants are a bit casual and perfect for warm weather. You can't go wrong with **linen** and **cotton** is a good option too. This is a type of wrap pants, which leaves the sides of your legs exposed at times. And as such, it is mostly worn in warmer weather, or inside. To get a good effect of the flowing of the legs, don't use very heavy materials. Good types of fabric are **linen**, and **linen blends**. These mostly have a nice drape and are cool. Heavy materials like denim are less useful so should be avoided.
+Les pantalons portefeuilles sont un peu décontractés et parfaits pour un temps chaud. Vous ne pouvez pas vous tromper avec du **lin** et le **coton** est également une bonne option. Il s'agit d'un type de pantalon portefeuille qui laisse parfois les côtés de vos jambes exposés. Et en tant que tel, il est principalement porté par temps plus chaud, ou à l'intérieur. Pour obtenir un bon effet de l'écoulement des jambes, n'utilisez pas de matériaux très lourds. Les bons types de tissu sont le **lin**, et le **lin mélangé**. Ils ont pour la plupart un beau drapé et sont cool. Les matériaux lourds comme le denim sont moins utiles et doivent donc être évités.

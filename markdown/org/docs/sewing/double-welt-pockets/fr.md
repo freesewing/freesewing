@@ -8,9 +8,9 @@ title: Poche passepoilée
 
 ## Apprenez les rabats avec David Page Coffin
 
-The November 2015 edition of [Seamwork Magazine](https://www.seamwork.com/) has a section called [Conquering the Welt](https://www.seamwork.com/issues/2015/11/conquering-the-welt) where David Page Coffin walks you through the construction of welt pockets.
+L'édition de novembre 2015 de [Seamwork Magazine](https://www.seamwork.com/) a une section appelée [A la conquête des rabats](https://www.seamwork.com/issues/2015/11/conquering-the-welt) où David Page Coffin vous guide à travers la construction de poches passepoilées.
 
-David has written various books on trouser and shirt construction, teaches online sewing classes, and hosts workshops throughout the US, and abroad.
+David a écrit plusieurs livres sur la construction de pantalons et de chemises, enseigne des cours de couture en ligne et organise des ateliers partout aux États-Unis et à l'étranger.
 
 David est un ami du site, et est de loin bien mieux placé que moi pour vous expliquer cela.
 

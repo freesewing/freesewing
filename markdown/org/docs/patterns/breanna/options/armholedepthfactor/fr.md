@@ -1,8 +1,8 @@
 - - -
-title: "Armhole depth factor"
+titre : "Facteur de profondeur d'emmanchure"
 - - -
 
-This option controls the depth of the armhole.
+Cette option permet de contrôler la profondeur de l'emmanchure.
 
 ## Effet de cette option sur le motif
 

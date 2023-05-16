@@ -1,5 +1,5 @@
 - - -
-title: "Cuff ease"
+titre: "aisance de manche"
 - - -
 
 ![Aisance de poignet](cuffease.svg)

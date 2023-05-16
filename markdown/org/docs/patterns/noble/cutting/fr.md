@@ -2,7 +2,7 @@
 title: "Noble body block: Cutting Instructions"
 ---
 
-**Main fabric**
+**Tissu principal**
 
 - Cut **1 Front Inside** part on the fold.
 - Cut **2 Front Outside** part.
@@ -16,7 +16,7 @@ title: "Noble body block: Cutting Instructions"
 
 - Cut **2 Back** part.
 
-These cutting instructions are just for the default Noble block. Adjust your cutting accordingly if you have/are making changes to the block.
+These cutting instructions are just for the default Noble block. Ajustez votre coupe en conséquence si vous avez apporté des modifications au bloc.
 
 <Tip>
 

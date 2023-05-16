@@ -1,5 +1,5 @@
 - - -
-title: "Hem style"
+title: "Style de l'ourlet"
 - - -
 
 ![Style d'ourlet](hemstyle.svg)

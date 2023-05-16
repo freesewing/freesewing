@@ -315,12 +315,15 @@ function titanFront({
   // Seamline
   paths.seam = drawPath().attr('class', 'fabric')
 
+  points.grainlineTop.y = points.styleWaistIn.y
+  macro('grainline', {
+    from: points.grainlineTop,
+    to: points.grainlineBottom,
+  })
+
+  store.cutlist.addCut()
+
   if (complete) {
-    points.grainlineTop.y = points.styleWaistIn.y
-    macro('grainline', {
-      from: points.grainlineTop,
-      to: points.grainlineBottom,
-    })
     points.logoAnchor = new Point(points.crotchSeamCurveStart.x / 2, points.fork.y)
     snippets.logo = new Snippet('logo', points.logoAnchor)
     points.titleAnchor = points.logoAnchor.shift(-90, 60)

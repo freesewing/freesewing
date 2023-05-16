@@ -126,14 +126,14 @@ export const back = {
     store.set('backArmholeLength', shared.armholeLength(points, Path))
     store.set('backArmholeToArmholePitch', shared.armholeToArmholePitch(points, Path))
 
+    macro('cutonfold', {
+      from: points.cbNeck,
+      to: points.cbHips,
+      grainline: true,
+    })
+
     // Complete pattern?
     if (complete) {
-      macro('cutonfold', {
-        from: points.cbNeck,
-        to: points.cbHips,
-        grainline: true,
-      })
-
       macro('title', { at: points.title, nr: 2, title: 'back' })
       snippets.armholePitchNotch = new Snippet('bnotch', points.armholePitch)
       paths.waist = new Path().move(points.cbWaist).line(points.waist).attr('class', 'help')

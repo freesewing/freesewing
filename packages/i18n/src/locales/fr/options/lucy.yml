@@ -1,10 +1,10 @@
 width:
-  title: Width
-  description: Width of the pocket
+  title: Largeur
+  description: Largeur de la poche
 length:
   title: Longueur
-  description: Length (depth) of the pocket
+  description: Longueur (profondeur) de la poche
 edge:
-  title: Taper
-  description: Controls how much the pocket opening tapers inwards
+  title: Rétrécissement
+  description: Contrôle comment l'ouverture de la poche rétrécie à l'intérieur
 

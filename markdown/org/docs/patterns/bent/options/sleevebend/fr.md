@@ -1,5 +1,5 @@
 - - -
-title: "Sleeve bend"
+titre : "Pli de manche"
 - - -
 
 The angle by which the sleeve bends at the elbow.

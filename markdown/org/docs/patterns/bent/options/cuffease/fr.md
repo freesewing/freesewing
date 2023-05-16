@@ -1,5 +1,5 @@
 - - -
-title: "Cuff ease"
+titre: "aisance de manche"
 - - -
 
 The amount of ease at your cuff/wrist.

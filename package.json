@@ -20,6 +20,7 @@
     "kickstart:windows": "npx lerna bootstrap && yarn wbuildall && yarn prepare && yarn tips",
     "cleanall": "lerna run clean",
     "test": "lerna run test",
+    "e2e": "lerna run e2e",
     "prettier": "npx prettier --write 'config/*' 'config/**/*' 'packages/**/src/*.mjs' 'packages/i18n/src/locales/**/*.*' 'packages/**/tests/*.mjs'",
     "reconfigure": "all-contributors generate && node --experimental-json-modules --no-warnings scripts/reconfigure.mjs",
     "prerelease": "lerna version --no-git-tag-version --no-push && yarn reconfigure && yarn buildall",
@@ -64,7 +65,7 @@
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
     "@types/express": "^4.17.13",
-    "@types/node": "^18.0.0",
+    "@types/node": "^20.1.0",
     "@types/react": "^18.0.8",
     "all-contributors-cli": "^6.20.0",
     "autoprefixer": "^10.4.0",
@@ -103,7 +104,7 @@
     "remark-lint-list-item-indent": "^3.1.1",
     "remark-preset-lint-consistent": "^5.1.1",
     "remark-preset-lint-recommended": "^6.1.2",
-    "rimraf": "^4.1.1",
+    "rimraf": "^5.0.0",
     "standard": "^17.0.0"
   },
   "workspaces": [
@@ -126,5 +127,6 @@
     "remark-preset-lint-consistent": "^5.1.1",
     "remark-preset-lint-recommended": "^6.1.2",
     "tailwindcss": "^3.0.7"
-  }
+  },
+  "packageManager": "yarn@1.22.19"
 }

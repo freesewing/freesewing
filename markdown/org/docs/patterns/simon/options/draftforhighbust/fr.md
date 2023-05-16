@@ -2,7 +2,7 @@
 title: Draft for high bust
 ---
 
-Draft the pattern for the high bust measurement (if available) rather than the (full) chest. This will result in a more fitted garment for people with breasts.
+Draft the pattern for the high bust measurement (if available) rather than the (full) chest. Il en résulte un vêtement plus ajusté pour les personnes ayant une poitrine.
 
 ## Effet de cette option sur le modèle
 

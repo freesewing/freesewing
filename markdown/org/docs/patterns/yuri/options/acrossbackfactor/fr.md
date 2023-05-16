@@ -6,4 +6,4 @@ Controls your across back width as a factor of your shoulder to shoulder measure
 
 ## Effet de cette option sur le patron
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](yuri_acrossbackfactor_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](yuri_acrossbackfactor_sample.svg "Effet de cette option sur le modèle")

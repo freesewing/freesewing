@@ -4,7 +4,7 @@ title: "Unice undies: What you need"
 
 To make Unice, you will need the following:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
+- [Matériel de couture de base](/docs/sewing/basic-sewing-supplies)
 - About 0.7 meters (0.8 yards) of a suitable fabric (see [Fabric options](/docs/patterns/unice/fabric))
 - About 3 meters (3.3 yards) of underwear elastic, such as picot elastic or fold over elastic
 

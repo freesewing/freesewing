@@ -129,4 +129,4 @@ You can _Edgestitch_ the waistband together like a modern waistband if you prefe
 
 ### Step 7: Enjoy!
 
-You're all done! Now go have a ride in your brilliant new cycling breeches!
+Vous avez terminé ! Now go have a ride in your brilliant new cycling breeches!

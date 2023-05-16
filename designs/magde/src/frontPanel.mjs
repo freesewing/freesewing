@@ -17,6 +17,7 @@ function draftFrontPanel({
   // Width is halved as this is cut on a fold
   const width = (options.size * 500) / 2
   const height = options.size * 300
+  const velcroWidth = options.size * 30
   const taperWidth = width * options.taperRatio
   const openingWidth = taperWidth * options.openingRatio
   const openingHeight = height * options.openingRatio
@@ -63,10 +64,10 @@ function draftFrontPanel({
       .setClass('note dotted')
     paths.velcro = paths.FrontOrganiserAlignment.join(
       new Path()
-        .move(new Point(points.falseFrontFlapRight.x, points.frontOpeningRight.y))
-        .line(new Point(points.falseFrontFlapRight.x, 0))
+        .move(new Point(points.frontOpeningRight.x + velcroWidth, points.frontOpeningRight.y))
+        .line(new Point(points.frontOpeningRight.x + velcroWidth, 0))
     ).setClass('various fill-various')
-    var midVelcroX = (points.frontOpeningRight.x + points.falseFrontFlapRight.x) / 2
+    var midVelcroX = points.frontOpeningRight.x + velcroWidth / 2
     paths.velcroLabel = new Path()
       .move(new Point(midVelcroX, points.frontOpeningRight.y))
       .line(new Point(midVelcroX, 0))

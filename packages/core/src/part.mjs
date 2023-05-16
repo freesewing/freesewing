@@ -295,6 +295,7 @@ Part.prototype.__getIdClosure = function () {
 
 /**
  * Copies point/path/snippet data from part orig into this
+ * Also sets the freeId
  *
  * @private
  * @param {object} orig - The original part to inject into this
@@ -307,6 +308,7 @@ Part.prototype.__inject = function (orig) {
     }
   }
 
+  this.freeId = orig.freeId
   for (let i in orig.points) this.points[i] = orig.points[i].clone()
   for (let i in orig.paths) {
     this.paths[i] = orig.paths[i].clone()
@@ -343,6 +345,8 @@ Part.prototype.__macroClosure = function (props) {
   const method = function (key, args) {
     const macro = utils.__macroName(key)
     if (typeof self[macro] === 'function') self[macro](args, props)
+    else if ('context' in self)
+      self.context.store.log.warning('Unknown macro `' + key + '` used in ' + self.name)
   }
 
   return method

@@ -5,7 +5,7 @@ title: "Sandy circle skirt: Sewing Instructions"
 <Warning>
 
 Due to the different styles and configurations of Sandy you may find you need to skip or re-order certain steps.
-We're not going to go into a full explanation on how to create all the individual details that make up a circle skirt. These instructions assume that you know how to sew a zipper, construct pockets, etc. If not, there are numerous excellent articles available on the web, both in writen form, and on video. If you do get stuck, you can always reach out to [other FreeSewers](https://discord.freesewing.org/) in our discord.
+We're not going to go into a full explanation on how to create all the individual details that make up a circle skirt. Ces instructions supposent que vous sachiez coudre une fermeture à glissière, construire des poches, etc... If not, there are numerous excellent articles available on the web, both in writen form, and on video. If you do get stuck, you can always reach out to [other FreeSewers](https://discord.freesewing.org/) in our discord.
 
 </Warning>
 
@@ -61,14 +61,14 @@ Sautez cette étape si :
 - Avec _les bonnes faces ensemble_, coudre l'interface ceinture / côté de la ceinture à la jupe. Si nécessaire, froncez la jupe jusqu'à la ceinture.
 - Si vous utilisez la ceinture incurvée, cousez la partie non interfacée à la partie interfacée. Découpez et coupez la couture, puis repassez la partie non interfacée vers le haut et à l'écart de la jupe.
 
-Il y aura des dépassements :
+There will be some overhangs:
 
 - Le côté que vous ne souhaitez pas faire chevaucher doit dépasser de votre marge de couture.
 - Le côté destiné à se chevaucher aura un plus grand débordement.
 - Si vous utilisez une patte de boutonnage, les deux côtés dépasseront de votre marge de couture.
 - Si vous utilisez une fermeture à glissière dans la ceinture, l'excédent le plus important devra être coupé au niveau de la marge de couture.
 
-__Insertion d'une fermeture à glissière dans la ceinture__
+__Inserting Zipper in Waistband__
 - If inserting a zipper into the waistband now is the time to do so, attach the zipper from the waistband fold line down. Ou à partir de la ligne de couture vers le bas pour une ceinture incurvée.
 - _Slipstitch_ or _Whipstitch_ the lining to the zipper at this point if you have not treated the lining and skirt as one at the opening.
 - Presser sous les surplombs.
@@ -77,7 +77,7 @@ __Insertion d'une fermeture à glissière dans la ceinture__
 - _Edgestitch_ the waistband in place.
 - Alternatively, _Slipstitch_ or _Whipstitch_ the waistband in place on the inside.
 
-__Autres fermetures__
+__Other closures__
 - Press the waistband _good sides together_ along fold-line. Or along seam-line for curved waistband.
 - Cousez les dépassements avec votre marge de couture.
 - Turn the waistband out and to the inside, Press.
@@ -102,14 +102,14 @@ __Autres fermetures__
 
 ## Étape 5 : Ourlet
 
-Si vous avez ourlé la jupe avec la doublure, vous pouvez sauter cette étape.
+If you have hemmed the skirt with the lining you can skip this step.
 
-Faites un ourlet sur la jupe de l'une des façons suivantes :
+Hem the skirt in one of the following ways:
 - Oubliez la marge de l'ourlet et assemblez le bord brut.
 - Bind the raw edge of the hem allowance, single fold the hem under and either _Topstitch_ or hand sew the hem in place.
 - Double fold the hem under and either _Topstitch_ or hand sew the hem in place. Vous avez peut-être entendu parler d'un ourlet roulé.
 
-<Note>  
+<Note>
 
 Il y a de nombreuses façons d'ourler le bas d'une jupe. Si vous avez une méthode préférée, utilisez-la ici.
 
@@ -117,7 +117,7 @@ Il y a de nombreuses façons d'ourler le bas d'une jupe. Si vous avez une métho
 
 ## Étape 6: Profitez-en!
 
-Vous avez terminé ! Now go enjoy your wonderful new skirt and try not to get too dizzy showing off it's fullness!
+You are all done! Now go enjoy your wonderful new skirt and try not to get too dizzy showing off it's fullness!
 
 <Note>
 

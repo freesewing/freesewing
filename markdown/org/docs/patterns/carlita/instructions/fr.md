@@ -29,7 +29,7 @@ Don't forget the seam allowance for these pieces when cutting if you are making 
 
 </Warning>
 
-##### Front and Side Shoulder
+##### Épaule avant et latérale
 
 - Trace off of **Front and Side** parts.
 - Tape together so the notches match and armhole is complete. Do not worry about connecting everything else, you just need the armhole.

@@ -1,10 +1,10 @@
 - - -
-titre : "aisance thoracique"
+title : "Aisance thoracique"
 - - -
 
 ![L'option d'aisance thoracique sur Aaron](./chestease.svg)
 
-Quel est l'espace dont vous avez besoin au niveau de la poitrine ?
+De quel espace avez vous besoin au niveau de la poitrine ?
 
 Quelle que soit la valeur que vous entrez ici, elle sera simplement ajoutée à votre tour de poitrine lors de l'élaboration du vêtement.
 
@@ -16,4 +16,4 @@ Quelle que soit la valeur que vous entrez ici, elle sera simplement ajoutée à 
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](aaron_chestease_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](aaron_chestease_sample.svg "Effet de cette option sur le patron")

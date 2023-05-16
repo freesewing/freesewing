@@ -1,6 +1,6 @@
 {
   "name": "rehype-jargon",
-  "version": "3.0.0-alpha.8",
+  "version": "3.0.0-alpha.10",
   "description": "A Rehype plugin for jargon terms",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -39,7 +39,7 @@
   "peerDependencies": {},
   "dependencies": {
     "unist-util-visit": "4.1.2",
-    "hast-util-from-html": "1.0.1"
+    "hast-util-from-html": "1.0.2"
   },
   "devDependencies": {},
   "files": [

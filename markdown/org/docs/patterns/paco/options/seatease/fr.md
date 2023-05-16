@@ -1,5 +1,5 @@
 - - -
-title: "Seat ease"
+titre : "Facilité d'assise"
 - - -
 
 Contrôle la quantité d'aisance à votre siège/bum.

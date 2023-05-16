@@ -1,5 +1,5 @@
 - - -
-title: "Charlie chinos: Cutting Instructions"
+title: "Charlie chinos: Instructions de coupe"
 - - -
 
 ##### Du tissu principal
@@ -8,7 +8,7 @@ title: "Charlie chinos: Cutting Instructions"
 - Partie **2**: **2 x** _avec de bons côtés ensemble_.
 - Partie **4**: **4 x**
 - Partie **6**: **2 x**
-- Part **8**: **4 x** (2 pairs _with good sides together_)
+- Partie **8**: **4 x** (2 paires _avec les bons côtés ensemble_)
 - Partie **9**: **2 x** _avec de bons côtés ensemble_
 - Partie **10**: **1 x** sur le pli
 - Partie **11**: **1 x** si vous créez une ceinture droite

@@ -240,12 +240,15 @@ function titanBack({
   // Paths
   paths.seam = drawPath().attr('class', 'fabric')
 
+  points.grainlineTop.y = points.styleWaistOut.y
+  macro('grainline', {
+    from: points.grainlineTop,
+    to: points.grainlineBottom,
+  })
+
+  store.cutlist.addCut()
+
   if (complete) {
-    points.grainlineTop.y = points.styleWaistOut.y
-    macro('grainline', {
-      from: points.grainlineTop,
-      to: points.grainlineBottom,
-    })
     macro('scalebox', { at: points.knee })
     points.logoAnchor = new Point(points.crossSeamCurveStart.x / 2, points.fork.y)
     snippets.logo = new Snippet('logo', points.logoAnchor)

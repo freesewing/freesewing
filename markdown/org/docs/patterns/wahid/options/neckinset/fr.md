@@ -1,5 +1,5 @@
 - - -
-title: "Neck inset"
+title:"Échancrure cou"
 - - -
 
 ![Échancrure cou](neckinset.svg)
@@ -16,4 +16,4 @@ La couture de l'épaule d'un gilet est généralement plus étroite que votre ch
 
 ## Effet de cette option sur le patron
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_neckinset_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_neckinset_sample.svg "Effet de cette option sur le patron")

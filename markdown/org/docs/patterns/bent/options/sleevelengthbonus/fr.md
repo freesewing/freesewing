@@ -1,5 +1,5 @@
 - - -
-title: "Sleeve length bonus"
+titre : "Surlongueur de longueur de manche"
 - - -
 
 The amount to extend the sleeve beyond the length of the sleeve in the base block.

@@ -8,7 +8,7 @@ If not using seamless follow the default list, If using seamless follow the seam
 
 </Note>
 
-**Main Fabric**
+**Tissu principal**
 
 - (If default) Cut **1 skirt** part on the fold.
 - (If seamless) Cut **1 skirt** part on double fold.

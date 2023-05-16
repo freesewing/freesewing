@@ -1,12 +1,12 @@
 hungry:
   title: Affamé
-  description: Changes the mouth shape to convey Hi is hungry
+  description: Change la forme de la bouche pour voir que Hi a faim
 nosePointiness:
-  title: Nose pointiness
-  description: Controls how pointy Hi's nose is
+  title: Forme pointue du nez
+  description: Contrôle comment le nez de Hi est pointu
 aggressive:
   title: Agressif
-  description: Give Hi pointy teeth, or not
+  description: Donnez des dents pointues à Hi, ou non
 size:
-  title: Size
-  description: Sharks come in all sizes, and so does Hi
+  title: Taille
+  description: Les requins sont disponibles dans toutes les tailles, tout comme Hi

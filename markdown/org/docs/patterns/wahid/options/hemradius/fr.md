@@ -1,5 +1,5 @@
 - - -
-title: "Hem radius"
+title: "Rayon de l'ourlet"
 - - -
 
 ![Rayon d'ourlet](hemradius.svg)

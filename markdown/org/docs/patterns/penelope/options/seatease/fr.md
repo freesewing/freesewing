@@ -1,5 +1,5 @@
 - - -
-title: "Seat ease"
+titre : "Facilité d'assise"
 - - -
 
 Quantité d'aisance autour de la partie la plus complète de votre bum.
