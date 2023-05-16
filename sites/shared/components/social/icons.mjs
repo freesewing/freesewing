@@ -10,6 +10,7 @@ import {
   TwitterIcon,
   OpenSourceIcon,
   CcByIcon,
+  YouTubeIcon,
 } from 'shared/components/icons.mjs'
 import { colors } from 'shared/components/wordmark.mjs'
 
@@ -18,9 +19,9 @@ const iconClasses = (i) => ({
 })
 
 const social = {
-  'All FreeSewing revenue goes to Doctors Without Borders': {
-    icon: <MsfIcon {...iconClasses(0)} />,
-    href: 'https://freesewing.org/docs/various/pledge/',
+  YouTube: {
+    icon: <YouTubeIcon {...iconClasses(0)} fill stroke={0} />,
+    href: 'https://www.youtube.com/channel/UCLAyxEL72gHvuKBpa-GmCvQ',
   },
   Discord: {
     icon: <DiscordIcon {...iconClasses(1)} />,
