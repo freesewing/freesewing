@@ -3585,6 +3585,21 @@
     golden-fleece "^1.0.9"
     pkg-dir "^5.0.0"
 
+"@sanity/cli@3.11.0":
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-3.11.0.tgz#2703eb838ef31be80c883bfc7f184bbf9db48412"
+  integrity sha512-9G6GQ/zBXZS8oBV4+70N4THmIUzdiksb8Wk3gx+I/W1rlbujyGJpr0lccWz0cDAO5hV9x26vb9k8lUBX2UV3dw==
+  dependencies:
+    "@babel/traverse" "^7.19.0"
+    "@vercel/frameworks" "1.4.2"
+    "@vercel/fs-detectors" "3.9.2"
+    chalk "^4.1.2"
+    esbuild "^0.16.5"
+    esbuild-register "^3.4.1"
+    get-it "^8.0.9"
+    golden-fleece "^1.0.9"
+    pkg-dir "^5.0.0"
+
 "@sanity/client@^5.2.0":
   version "5.4.2"
   resolved "https://registry.yarnpkg.com/@sanity/client/-/client-5.4.2.tgz#253b11d76a058de1fe6ec4f191d5872c7825fa80"
@@ -4468,6 +4483,11 @@
     "@uiw/codemirror-extensions-basic-setup" "4.19.16"
     codemirror "^6.0.0"
 
+"@vercel/error-utils@1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@vercel/error-utils/-/error-utils-1.0.10.tgz#6530e9c930d5cf4c7f96045ec3a0bccaf2e6b14c"
+  integrity sha512-nsKy2sy+pjUWyKI1V/XXKspVzHMYgSalmj5+EsKWFXZbnNZicqxNtMR94J8Hs7SB4TQxh0s4KhczJtL59AVGMg==
+
 "@vercel/error-utils@1.0.9":
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/@vercel/error-utils/-/error-utils-1.0.9.tgz#3bcbc050a3a592503c32ee345bd43478e477fe79"
@@ -4477,6 +4497,14 @@
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/@vercel/frameworks/-/frameworks-1.3.4.tgz#40d9e2c33e9b4ab2a5934688323b2e2a792b3cef"
   integrity sha512-a5E4T+V+GLGLKXhpqdyG4eoom1CUXr2H9PrXTf5lpWUq3MdU+TIzmTPu4EUyRq67V65KW9tZkoli1b99LM1x/Q==
+  dependencies:
+    "@iarna/toml" "2.2.3"
+    js-yaml "3.13.1"
+
+"@vercel/frameworks@1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@vercel/frameworks/-/frameworks-1.4.2.tgz#045ece9c9aa6247c4727dbf51a4ff4334f1b95e5"
+  integrity sha512-Fojv8RIhcNUbtRPa0bpw1ELQgZ2RXOn3SFQmtUnE5qtC62p1PXMTsLr2XyoHaXYXgTgEMID5I3HbokzPnmIinw==
   dependencies:
     "@iarna/toml" "2.2.3"
     js-yaml "3.13.1"
@@ -4495,10 +4523,33 @@
     minimatch "3.1.2"
     semver "6.1.1"
 
+"@vercel/fs-detectors@3.9.2":
+  version "3.9.2"
+  resolved "https://registry.yarnpkg.com/@vercel/fs-detectors/-/fs-detectors-3.9.2.tgz#859a2138c8a48c89068fcdeeb3fa022b69d050f0"
+  integrity sha512-fApNP4um51mB2DRe4DKmLlPpFiNrlShBNZdxf4sNx0hmempQ3g7BBirqKD66VWEFHRTmO3gctzuhNpBXVTD/+w==
+  dependencies:
+    "@vercel/error-utils" "1.0.10"
+    "@vercel/frameworks" "1.4.2"
+    "@vercel/routing-utils" "2.2.1"
+    glob "8.0.3"
+    js-yaml "4.1.0"
+    json5 "2.2.2"
+    minimatch "3.1.2"
+    semver "6.1.1"
+
 "@vercel/routing-utils@2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@vercel/routing-utils/-/routing-utils-2.2.0.tgz#05c807cc2798234d28327a6b24fc25ad84d80de9"
   integrity sha512-Ro90s1mStpbgu2HV8I4LFEKNG8GVxkWm238ebD/23BCO9/DxIJ3+wCzga8j8BMmG57x4etVlaHNV25bbzW5r2g==
+  dependencies:
+    path-to-regexp "6.1.0"
+  optionalDependencies:
+    ajv "^6.0.0"
+
+"@vercel/routing-utils@2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@vercel/routing-utils/-/routing-utils-2.2.1.tgz#c33a3859f4927c5f8483cb4455a6fb7cbf21778b"
+  integrity sha512-kzMZsvToDCDskNRZD71B9UAgstec7ujmlGH8cBEo6F/07VaFeji6GQdgd6Zwnrj+TvzQBggKoPQR64VkVY8Lzw==
   dependencies:
     path-to-regexp "6.1.0"
   optionalDependencies:
