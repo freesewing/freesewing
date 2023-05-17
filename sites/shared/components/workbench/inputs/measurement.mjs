@@ -11,7 +11,7 @@ import { measurementAsMm } from 'shared/utils.mjs'
  * m holds the measurement name. It's just so long to type
  * measurement and I always have some typo in it because dyslexia.
  */
-export const MeasurementInput = ({ m, gist, app, updateMeasurements, focus, optional }) => {
+export const MeasurementInput = ({ m, gist, app, updateMeasurements, focus, optional = false }) => {
   const { t } = useTranslation(['app', 'measurements'])
   const prefix = app.site === 'org' ? '' : 'https://freesewing.org'
   const title = t(`measurements:${m}`)
