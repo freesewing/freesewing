@@ -99,6 +99,27 @@ const NavIcons = ({ setModal, setSearch }) => {
   )
 }
 
+const Banner = () => (
+  <div
+    className={`
+      fixed top-0 lg:top-auto lg:top-0 left-auto m-auto w-full flex
+      z-30
+      opacity-60 hover:opacity-100
+
+     `}
+  >
+    <div className="bg-accent p-1 px-4 m-auto text-accent-content font-bold m-auto rounded-b-lg">
+      This is a <b>FreeSewing.dev</b> alpha version. If you spot a problem, please{' '}
+      <a
+        className="underline hover:text-secondary"
+        href="https://github.com/freesewing/freesewing/issues/4070"
+      >
+        report it in this issue
+      </a>
+    </div>
+  </div>
+)
+
 export const Header = ({ setSearch }) => {
   const { setModal } = useContext(ModalContext) || {}
   const { loading } = useContext(LoadingContext)
@@ -119,6 +140,9 @@ export const Header = ({ setSearch }) => {
     }
   }, [prevScrollPos, show])
 
+  // This adds the alpha banner
+  const BANNER = true
+
   return (
     <header
       className={`
@@ -131,6 +155,7 @@ export const Header = ({ setSearch }) => {
       drop-shadow-xl
     `}
     >
+      <Banner />
       <div className="m-auto md:px-8">
         <div className="p-0 flex flex-row gap-2 justify-between text-neutral-content items-center">
           {/* Non-mobile content */}
