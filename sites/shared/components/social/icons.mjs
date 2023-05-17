@@ -13,43 +13,44 @@ import {
   YouTubeIcon,
 } from 'shared/components/icons.mjs'
 import { colors } from 'shared/components/wordmark.mjs'
+import { social } from 'config/social.mjs'
 
 const iconClasses = (i) => ({
   className: `w-8 lg:w-12 h-8 lg:h-12 text-${colors[i]}-400 hover:text-neutral-content`,
 })
 
-const social = {
-  YouTube: {
-    icon: <YouTubeIcon {...iconClasses(0)} fill stroke={0} />,
+const socialList = {
+  MSF: {
+    icon: <MsfIcon {...iconClasses(0)} fill />,
     href: 'https://www.youtube.com/channel/UCLAyxEL72gHvuKBpa-GmCvQ',
   },
   Discord: {
     icon: <DiscordIcon {...iconClasses(1)} />,
-    href: 'https://discord.freesewing.org/',
+    href: social.Discord,
   },
   Instagram: {
     icon: <InstagramIcon {...iconClasses(2)} />,
-    href: 'https://instagram.com/freesewing_org',
+    href: social.Instagram,
   },
   Facebook: {
     icon: <FacebookIcon {...iconClasses(3)} />,
-    href: 'https://www.facebook.com/groups/627769821272714/',
+    href: social.Facebook,
   },
-  Github: {
+  GitHub: {
     icon: <GithubIcon {...iconClasses(4)} />,
-    href: 'https://github.com/freesewing',
+    href: social.GitHub,
   },
   Reddit: {
     icon: <RedditIcon {...iconClasses(5)} />,
-    href: 'https://www.reddit.com/r/freesewing/',
+    href: social.Reddit,
   },
   Twitter: {
     icon: <TwitterIcon {...iconClasses(6)} />,
-    href: 'https://twitter.com/freesewing_org',
+    href: social.Twitter,
   },
-  'Creative Commons content: CC-BY': {
-    icon: <CcByIcon {...iconClasses(7)} />,
-    href: 'https://creativecommons.org/licenses/by/2.0/',
+  YouTube: {
+    icon: <YouTubeIcon {...iconClasses(7)} fill stroke={0} />,
+    href: social.YouTube,
   },
   'Open Souce License: MIT': {
     icon: <OpenSourceIcon {...iconClasses(8)} />,
@@ -62,8 +63,8 @@ const social = {
 }
 
 export const SocialIcons = () =>
-  Object.keys(social).map((item) => (
-    <Link key={item} href={social[item].href} className="hover:text-secondary" title={item}>
-      {social[item].icon}
+  Object.keys(socialList).map((item) => (
+    <Link key={item} href={socialList[item].href} className="hover:text-secondary" title={item}>
+      {socialList[item].icon}
     </Link>
   ))

@@ -1,3 +1,5 @@
+import { social } from 'config/social.mjs'
+
 export const freeSewingConfig = {
   monorepo: 'https://github.com/freesewing/freesewing',
   backend: process.env.NEXT_PUBLIC_BACKEND,
@@ -37,4 +39,5 @@ export const freeSewingConfig = {
       notes: 2,
     },
   },
+  social,
 }
