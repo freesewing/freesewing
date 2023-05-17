@@ -3780,7 +3780,7 @@
     "@sanity/client" "^6.0.0"
     "@types/react" "^18.0.25"
 
-"@sanity/ui@^1.0.0", "@sanity/ui@^1.3.0", "@sanity/ui@^1.3.3":
+"@sanity/ui@^1.0.0", "@sanity/ui@^1.3.3":
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/@sanity/ui/-/ui-1.3.3.tgz#ec3b9aeb8be79f53d94406bbf80c806af1a47e7f"
   integrity sha512-fp5eyc6U760Mvg6wmiv0wOnX/uiPpFoPf4Ne9cJX6X80mk2/u2pOkXCuMuhfXmty3KP7uPZxkapD8atd7BaWIw==
@@ -3819,10 +3819,10 @@
     lodash "^4.17.21"
     rxjs "^7.8.0"
 
-"@sanity/vision@3.10.1":
-  version "3.10.1"
-  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-3.10.1.tgz#b87252d1bc83d6ce565dd4163ba7ba260c29e046"
-  integrity sha512-bt7PUsQo/iPRKSLjgIJslWUpG40m1kkctao6gh0gBz1RHs7Ccjo98o+lElJpb8Gw5OqPKwUKXVRV073pU3U3hA==
+"@sanity/vision@3.11.1":
+  version "3.11.1"
+  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-3.11.1.tgz#89776fdd851540611f0ec190420476a97e376da4"
+  integrity sha512-lHAhgRBLASpsEBgvr2Kz81w3XLEZppVaiTiEWknNaQaGYGdTeRxruj9iE1GLi3lQoIiUlnFdzmhHzMRaiidymg==
   dependencies:
     "@codemirror/autocomplete" "^6.1.0"
     "@codemirror/commands" "^6.0.1"
@@ -3836,7 +3836,7 @@
     "@rexxars/react-split-pane" "^0.1.93"
     "@sanity/color" "^2.1.20"
     "@sanity/icons" "^2.3.0"
-    "@sanity/ui" "^1.3.0"
+    "@sanity/ui" "^1.3.3"
     "@uiw/react-codemirror" "^4.11.4"
     hashlru "^2.3.0"
     is-hotkey "^0.1.6"
