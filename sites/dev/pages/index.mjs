@@ -38,6 +38,7 @@ const HomePage = ({ page }) => (
       <title>{title}</title>
     </Head>
     <div>
+      <Popout fixme>Create a new home page</Popout>
       <div className="py-1">
         <div className="max-w-7xl m-auto my-12 lg:my-32 px-4">
           <h2>FreeSewing 3</h2>
