@@ -7,19 +7,19 @@ Benjamin ist ein eher einfaches Schnittmuster, aber die von dir gewählten Optio
 ## Ohne Einstellband
 
 - **Oberstoff**
-  - Schneide **4 Knoten**
-  - Schneide **2 Kragenbänder**
+  - Cut **4 Bow** parts
+  - Cut **2 Collar Band** parts
 - **Einlage**
-  - Schneide **4 Einlagen-Knoten**
-  - Schneide **2 Einlagen-Kragenbänder**
+  - Cut **4 Bow** parts
+  - Cut **2 Collar Band** parts
 
 ## Mit Anpassungsband
 
 - **Oberstoff**
-  - Schneide **1 Knoten 1**
-  - Schneide **1 Knoten 2**
-  - Schneide **2 Knoten 3**
+  - Cut **1 Short Bow** part
+  - Cut **2 Medium Bow** parts
+  - Cut **1 Long Bow** part
 - **Einlage**
-  - Schneide **1 Einlagen-Knoten 1**
-  - Schneide **1 Einlagen-Knoten 2**
-  - Schneide **2 Einlagen-Knoten 3**
+  - Cut **1 Short Bow** part
+  - Cut **2 Medium Bow** parts
+  - Cut **1 Long Bow** part
