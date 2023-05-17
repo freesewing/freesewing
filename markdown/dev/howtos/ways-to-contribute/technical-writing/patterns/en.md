@@ -2,7 +2,7 @@
 title: Writing for freesewing.org
 ---
 
-A good way of contributing to FreeSewing  is writting documentation! 
+A good way of contributing to FreeSewing is writting documentation! 
 
 We don't have specific guidelines on how to write documentation. You can write as you feel fit as long as it's relevant and follows [our Code of Conduct](/guides/code-of-conduct/) and [our community standards](https://freesewing.org/docs/various/community-standards/).
 
