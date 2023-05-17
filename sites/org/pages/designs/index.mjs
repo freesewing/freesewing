@@ -2,7 +2,6 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { V3Wip } from 'shared/components/v3-wip.mjs'
 import { DesignPicker, ns as designNs } from 'shared/components/designs/design-picker.mjs'
 
 // Translation namespaces used on this page

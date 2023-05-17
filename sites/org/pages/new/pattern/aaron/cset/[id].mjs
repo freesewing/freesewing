@@ -1,7 +1,6 @@
 // Hooks
 import { useEffect, useState } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useTranslation } from 'next-i18next'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { Aaron } from '@freesewing/aaron'
@@ -24,7 +23,7 @@ const NewAaronPage = ({ page, id }) => {
       if (result.success) setSet(result.data.curatedSet)
     }
     getCuratedSet()
-  }, [id])
+  }, [id, backend])
 
   return (
     <PageWrapper {...page} title="Aaron" layout={WorkbenchLayout} header={Null}>

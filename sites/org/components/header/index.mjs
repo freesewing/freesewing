@@ -6,11 +6,9 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
 import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import {
-  CommunityIcon,
   DesignIcon,
   DocsIcon,
   MenuIcon,
-  RssIcon,
   SearchIcon,
   ShowcaseIcon,
   UserIcon,
@@ -20,7 +18,6 @@ import {
   PageIcon,
 } from 'shared/components/icons.mjs'
 import { Ribbon } from 'shared/components/ribbon.mjs'
-import Link from 'next/link'
 import { ModalThemePicker, ns as themeNs } from 'shared/components/modal/theme-picker.mjs'
 import { ModalLocalePicker, ns as localeNs } from 'shared/components/modal/locale-picker.mjs'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'

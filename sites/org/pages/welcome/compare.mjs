@@ -1,5 +1,3 @@
-// Hooks
-import { useTranslation } from 'next-i18next'
 // Dependencies
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -31,19 +29,15 @@ const DynamicCompare = dynamic(
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const WelcomeComparePage = ({ page }) => {
-  const { t } = useTranslation(namespaces)
-
-  return (
-    <PageWrapper {...page} layout={BareLayout} footer={false}>
-      <DynamicAuthWrapper>
-        <div className="m-auto max-w-lg text-center lg:mt-24 p-8">
-          <DynamicCompare title welcome />
-        </div>
-      </DynamicAuthWrapper>
-    </PageWrapper>
-  )
-}
+const WelcomeComparePage = ({ page }) => (
+  <PageWrapper {...page} layout={BareLayout} footer={false}>
+    <DynamicAuthWrapper>
+      <div className="m-auto max-w-lg text-center lg:mt-24 p-8">
+        <DynamicCompare title welcome />
+      </div>
+    </DynamicAuthWrapper>
+  </PageWrapper>
+)
 
 export default WelcomeComparePage
 

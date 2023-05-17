@@ -7,7 +7,7 @@ import { LoadingContext } from 'shared/context/loading-context.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
 import Link from 'next/link'
 
-export const ContinueButton = ({ app, btnProps = {}, link = false }) => {
+export const ContinueButton = ({ btnProps = {}, link = false }) => {
   // Context
   const { loading } = useContext(LoadingContext)
 

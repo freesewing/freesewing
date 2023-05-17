@@ -37,7 +37,7 @@ const DocsPage = ({ page, locale }) => {
       <Head>
         <meta property="og:title" content={frontmatter.title} key="title" />
         <meta property="og:type" content="article" key="type" />
-        <meta property="og:description" content="FIXME: handle intro" key="type" />
+        <meta property="og:description" content={intro} key="type" />
         <meta property="og:article:author" content="Joost De Cock" key="author" />
         <meta
           property="og:image"
@@ -57,7 +57,8 @@ const DocsPage = ({ page, locale }) => {
       <div className="flex flex-row-reverse flex-wrap xl:flex-nowrap justify-end">
         {frontmatter.toc && (
           <div className="mb-8 w-full xl:w-80 2xl:w-96 xl:pl-8 2xl:pl-16">
-            <TocWrapper toc={toc} />
+            {/* FIXME: Implement toc plugin to add it to the frontmatter */}
+            {/* <TocWrapper toc={frontmatter.toc} /> */}
           </div>
         )}
         <MdxWrapper {...{ MDX, frontmatter }} />

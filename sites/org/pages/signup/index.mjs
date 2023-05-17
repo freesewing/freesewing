@@ -36,7 +36,6 @@ const SignUpPage = ({ page }) => {
   const [email, setEmail] = useState('')
   const [emailValid, setEmailValid] = useState(false)
   const [result, setResult] = useState(false)
-  const [error, setError] = useState(null)
   const [loading, setLoading] = useState(false)
 
   const updateEmail = (evt) => {

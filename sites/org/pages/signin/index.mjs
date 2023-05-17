@@ -64,7 +64,7 @@ export const ButtonText = ({ children }) => (
  */
 const SignInPage = ({ page }) => {
   const { startLoading, stopLoading } = useContext(LoadingContext)
-  const { setAccount, setToken, seenUser, setSeenUser, clear } = useAccount()
+  const { setAccount, setToken, seenUser, setSeenUser } = useAccount()
   const { t } = useTranslation(['signin', 'signup', 'toast'])
   const backend = useBackend()
   const toast = useToast()
@@ -77,8 +77,6 @@ const SignInPage = ({ page }) => {
   const [signInFailed, setSignInFailed] = useState(false)
   const [magicLinkSent, setMagicLinkSent] = useState(false)
   const [seenBefore, setSeenBefore] = useState(false)
-
-  const clearUsername = () => setUsername(false)
 
   useEffect(() => {
     if (typeof window !== 'undefined' && signInFailed) {

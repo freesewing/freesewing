@@ -5,12 +5,13 @@ import { useTranslation } from 'next-i18next'
 import orderBy from 'lodash.orderby'
 import { colors } from 'site/components/header/index.mjs'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
+import { HelpIcon } from 'shared/components/icons.mjs'
 
 export const ns = sectionsNs
 
 export const SectionsMenu = () => {
   const { t } = useTranslation(ns)
-  const { sections = false, slug } = useContext(NavigationContext)
+  const { sections = false } = useContext(NavigationContext)
   if (!sections) return null
 
   // Ensure each page as an `o` key so we can put them in order

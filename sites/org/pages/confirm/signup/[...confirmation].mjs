@@ -15,7 +15,6 @@ import { BareLayout, ns as layoutNs } from 'site/components/layouts/bare.mjs'
 import { WelcomeWrapper } from 'site/components/wrappers/welcome.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
 import { Popout } from 'shared/components/popout.mjs'
-import { Robot } from 'shared/components/robot/index.mjs'
 import {
   GdprProfileDetails,
   GdprMeasurementsDetails,
@@ -24,6 +23,8 @@ import {
 
 // Translation namespaces used on this page
 const ns = Array.from(new Set([...pageNs, ...layoutNs, ...gdprNs, 'confirm', 'locales', 'themes']))
+
+const SignupLinkExpired = () => <Popout fixme>Implement SignupLinkExpired compnonent</Popout>
 
 const Checkbox = ({ value, setter, label, children = null }) => (
   <div
@@ -47,7 +48,7 @@ const Checkbox = ({ value, setter, label, children = null }) => (
 
 const ConfirmSignUpPage = () => {
   // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+  const { loading } = useContext(LoadingContext)
   const router = useRouter()
   // Get confirmation ID and check from url
   const [confirmationId, confirmationCheck] = router.asPath.slice(1).split('/').slice(2)
@@ -100,7 +101,7 @@ const ConfirmSignUpPage = () => {
     }
     // Call async method
     getConfirmation()
-  }, [])
+  }, [backend, confirmationCheck, confirmationID])
 
   // Short-circuit errors
   if (error)

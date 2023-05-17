@@ -1,12 +1,10 @@
 // Dependencies
-import orderBy from 'lodash.orderby'
 import { capitalize } from 'shared/utils.mjs'
 import { siteConfig } from 'site/site.config.mjs'
 import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
-import { measurements, isDegreeMeasurement } from 'config/measurements.mjs'
+import { measurements } from 'config/measurements.mjs'
 // Context
 import { LoadingContext } from 'shared/context/loading-context.mjs'
-import { ModalContext } from 'shared/context/modal-context.mjs'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
 // Hooks
 import { useState, useEffect, useContext } from 'react'
@@ -15,18 +13,41 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
 // Components
-import Link from 'next/link'
-import { PopoutWrapper } from 'shared/components/wrappers/popout.mjs'
-import { Collapse, useCollapseButton } from 'shared/components/collapse.mjs'
-import { ClearIcon, TrashIcon, EditIcon, FilterIcon } from 'shared/components/icons.mjs'
-import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
+import { Collapse } from 'shared/components/collapse.mjs'
+import { ClearIcon, EditIcon, FilterIcon } from 'shared/components/icons.mjs'
 import Timeago from 'react-timeago'
-import { Tag } from 'shared/components/tag.mjs'
-import { Row } from './index.mjs'
 import { PageLink } from 'shared/components/page-link.mjs'
-import { EditRow, MeasieRow } from 'shared/components/account/sets.mjs'
+import { MeasieRow } from 'shared/components/account/sets.mjs'
 
 export const ns = ['toast', 'curate', 'sets', 'account']
+
+const EditField = (props) => {
+  if (props.field === 'nameEn') return <EditName {...props} lang="en" />
+  if (props.field === 'nameDe') return <EditName {...props} lang="en" />
+  if (props.field === 'nameEs') return <EditName {...props} lang="en" />
+  if (props.field === 'nameFr') return <EditName {...props} lang="en" />
+  if (props.field === 'nameNl') return <EditName {...props} lang="en" />
+
+  return <p>FIXME: No edit component for this field</p>
+}
+export const EditRow = (props) => (
+  <Collapse
+    color="secondary"
+    openTitle={props.title}
+    title={
+      <>
+        <div className="w-24 text-left md:text-right block md:inline font-bold pr-4">
+          {props.title}
+        </div>
+        <div className="grow">{props.children}</div>
+      </>
+    }
+    toggle={<EditIcon />}
+    toggleClasses="btn btn-secondary"
+  >
+    <EditField field="name" {...props} />
+  </Collapse>
+)
 
 const EditImg = ({ set, t }) => {
   return (
@@ -42,13 +63,13 @@ const EditImg = ({ set, t }) => {
   )
 }
 
-const EditName = ({ set, t, lang }) => {
+const EditName = ({ mset, t, lang }) => {
   return (
     <Collapse
       title={
         <div className="flex flex-row items-center gap-2">
           <b>{`${t('name')} (${lang.toUpperCase()})`}</b>
-          {set[`name${capitalize(lang)}`]}
+          {mset[`name${capitalize(lang)}`]}
         </div>
       }
       primary
@@ -58,7 +79,7 @@ const EditName = ({ set, t, lang }) => {
         </button>,
       ]}
     >
-      {set[`name${capitalize(lang)}`]}
+      {mset[`name${capitalize(lang)}`]}
     </Collapse>
   )
 }

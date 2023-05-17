@@ -15,19 +15,15 @@ const namespaces = [...new Set(['tags', 'design', 'designs', ...pageNs])]
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const DesignsPage = ({ page }) => {
-  const { t } = useTranslation(['tags'])
-
-  return (
-    <PageWrapper {...page}>
-      <div className="flex flex-row flex-wrap gap-2">
-        {tags.sort().map((tag) => (
-          <DesignTag tag={tag} />
-        ))}
-      </div>
-    </PageWrapper>
-  )
-}
+const DesignsPage = ({ page }) => (
+  <PageWrapper {...page}>
+    <div className="flex flex-row flex-wrap gap-2">
+      {tags.sort().map((tag) => (
+        <DesignTag tag={tag} key={tag} />
+      ))}
+    </div>
+  </PageWrapper>
+)
 
 export default DesignsPage
 

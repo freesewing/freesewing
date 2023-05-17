@@ -11,15 +11,6 @@ import { DesignPicker, ns as designNs } from 'shared/components/designs/design-p
 // Translation namespaces used on this page
 const namespaces = [...new Set([...designNs, ...setsNs, ...authNs, ...pageNs])]
 
-const DesignList = () => {
-  const { t } = useTranslation(['patterns'])
-  const [list, setList] = useState(designs)
-
-  return list.map((d) => (
-    <ChoiceLink key={d} title={t(`${d}.t`)} href={`/new/pattern/${d}`}>{`${d}.d`}</ChoiceLink>
-  ))
-}
-
 /*
  * Each page MUST be wrapped in the PageWrapper component.
  * You also MUST spread props.page into this wrapper component

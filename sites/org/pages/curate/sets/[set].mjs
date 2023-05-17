@@ -1,18 +1,11 @@
 import dynamic from 'next/dynamic'
 // Hooks
-import { useEffect, useState, useContext } from 'react'
+import { useEffect, useState } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useAccount } from 'shared/hooks/use-account.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
-import { useRouter } from 'next/router'
-import { useTranslation } from 'next-i18next'
-// Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { capitalize } from 'shared/utils.mjs'
 // Components
-import Link from 'next/link'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { EditCuratedSet, ns as editNs } from 'site/components/curate/sets/edit.mjs'
 
@@ -36,13 +29,12 @@ const EditCuratedSetPage = ({ page, set }) => {
   useEffect(() => {
     const getCuratedSet = async () => {
       const result = await backend.getCuratedSet(set)
-      console.log(result)
       if (result.success) {
         setTitle(`# ${set}: ` + result.data.curatedSet[`name${capitalize(page?.locale || 'en')}`])
       }
     }
     getCuratedSet()
-  }, [set])
+  }, [set, backend, page?.locale])
 
   return (
     <PageWrapper {...page} title={title}>

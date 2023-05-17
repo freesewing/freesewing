@@ -58,7 +58,6 @@ const ConfirmSignInPage = ({ page }) => {
   const { t } = useTranslation(ns)
 
   const [error, setError] = useState(false)
-  const [ready, setReady] = useState(false)
 
   const storeAccount = async (data) => {
     if (data?.token && data?.account) {
@@ -85,7 +84,7 @@ const ConfirmSignInPage = ({ page }) => {
     }
     // Call async method
     getConfirmation()
-  }, [])
+  }, [backend, confirmationCheck, confirmationId, storeAccount])
 
   if (page) page.path = ['confirm', 'emailchange', confirmationId]
 

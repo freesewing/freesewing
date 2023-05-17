@@ -1,8 +1,6 @@
 // Dependencies
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-// Hooks
-import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { CurateSets, ns as curateNs } from 'site/components/curate/sets/index.mjs'

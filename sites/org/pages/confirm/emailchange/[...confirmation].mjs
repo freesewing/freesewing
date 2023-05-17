@@ -23,7 +23,7 @@ const ns = Array.from(new Set([...pageNs, 'account']))
 
 const ConfirmSignUpPage = ({ page }) => {
   // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+  const { startLoading, stopLoading } = useContext(LoadingContext)
 
   // Hooks
   const { setAccount, setToken, token } = useAccount()
@@ -67,7 +67,18 @@ const ConfirmSignUpPage = ({ page }) => {
     }
     // Call async methods
     if (token) confirmEmail()
-  }, [id, check, token])
+  }, [
+    id,
+    check,
+    token,
+    backend,
+    router,
+    setAccount,
+    setToken,
+    startLoading,
+    stopLoading,
+    toast.for,
+  ])
 
   // Update path with dynamic ID
   if (!page) return null

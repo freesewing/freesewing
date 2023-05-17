@@ -6,7 +6,7 @@ import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ChoiceLink } from 'shared/components/choice-link.mjs'
-import { KeyIcon, MeasureIcon, DesignIcon, PageIcon, PluginIcon } from 'shared/components/icons.mjs'
+import { MeasureIcon } from 'shared/components/icons.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
 
 // Translation namespaces used on this page
