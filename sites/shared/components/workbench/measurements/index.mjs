@@ -1,4 +1,4 @@
-import React, { useMemo, useEffect, useState } from 'react'
+import React, { useMemo, useEffect, useState, useCallback } from 'react'
 import { MeasurementInput } from '../inputs/measurement.mjs'
 import { adult, doll, giant } from '@freesewing/models'
 import {
@@ -21,15 +21,18 @@ export const WorkbenchMeasurements = ({ app, design, gist, updateGist, gistReady
   const { t } = useTranslation(['app', 'cfp'])
 
   // Method to handle measurement updates
-  const updateMeasurements = (value, m = false) => {
-    if (m === false) {
-      // Set all measurements
-      updateGist('measurements', value)
-    } else {
-      // Set one measurement
-      updateGist(['measurements', m], value)
-    }
-  }
+  const updateMeasurements = useCallback(
+    (value, m = false) => {
+      if (m === false) {
+        // Set all measurements
+        updateGist('measurements', value)
+      } else {
+        // Set one measurement
+        updateGist(['measurements', m], value)
+      }
+    },
+    [updateGist]
+  )
 
   const [firstInvalid, setFirstInvalid] = useState(undefined)
 
@@ -45,10 +48,13 @@ export const WorkbenchMeasurements = ({ app, design, gist, updateGist, gistReady
 
       setFirstInvalid(undefined)
     }
-  }, [gistReady])
+  }, [gistReady, design.patternConfig?.measurements, gist?.measurements])
 
   // Save us some typing
-  const inputProps = useMemo(() => ({ app, updateMeasurements, gist }), [app, gist])
+  const inputProps = useMemo(
+    () => ({ app, updateMeasurements, gist }),
+    [app, gist, updateMeasurements]
+  )
   const shortname = design.designConfig.data.name.replace('@freesewing/', '')
 
   return (
@@ -104,7 +110,7 @@ export const WorkbenchMeasurements = ({ app, design, gist, updateGist, gistReady
         <>
           <h3>{t('optionalMeasurements')}</h3>
           {design.patternConfig.optionalMeasurements.map((m) => (
-            <MeasurementInput key={m} m={m} {...inputProps} />
+            <MeasurementInput key={m} m={m} optional={true} {...inputProps} />
           ))}
         </>
       )}

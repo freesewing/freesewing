@@ -11,17 +11,22 @@ import { measurementAsMm } from 'shared/utils.mjs'
  * m holds the measurement name. It's just so long to type
  * measurement and I always have some typo in it because dyslexia.
  */
-export const MeasurementInput = ({ m, gist, app, updateMeasurements, focus }) => {
+export const MeasurementInput = ({ m, gist, app, updateMeasurements, focus, optional = false }) => {
   const { t } = useTranslation(['app', 'measurements'])
   const prefix = app.site === 'org' ? '' : 'https://freesewing.org'
   const title = t(`measurements:${m}`)
 
   const isDegree = isDegreeMeasurement(m)
-  const factor = useMemo(() => (isDegree ? 1 : gist.units == 'imperial' ? 25.4 : 10), [gist.units])
+  const factor = useMemo(
+    () => (isDegree ? 1 : gist.units == 'imperial' ? 25.4 : 10),
+    [gist.units, isDegree]
+  )
 
-  const isValValid = (val) =>
-    typeof val === 'undefined' || val === '' ? null : val != false && !isNaN(val)
-  const isValid = (newVal) => (typeof newVal === 'undefined' ? isValValid(val) : isValValid(newVal))
+  const isValValid = useCallback((val) => (val == false ? optional : !isNaN(val)), [optional])
+  const isValid = useCallback(
+    (newVal, val) => (typeof newVal === 'undefined' ? isValValid(val) : isValValid(newVal)),
+    [isValValid]
+  )
 
   const [val, setVal] = useState(gist.measurements?.[m] / factor || '')
 
@@ -52,15 +57,15 @@ export const MeasurementInput = ({ m, gist, app, updateMeasurements, focus }) =>
         }, 500)
       }
     },
-    [gist.units]
+    [gist.units, isDegree, isValid, m, updateMeasurements]
   )
 
   // use this for better update efficiency
-  const memoVal = useMemo(() => gist.measurements?.[m], [gist])
+  const memoVal = useMemo(() => gist.measurements?.[m], [gist, m])
   // track validity against the value and the units
   const valid = useMemo(
     () => isValid(isDegree ? val : measurementAsMm(val, gist.units)),
-    [val, gist.units]
+    [val, gist.units, isDegree, isValid]
   )
 
   // hook to update the value or format when the gist changes
