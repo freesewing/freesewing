@@ -265,7 +265,6 @@ module.exports = {
   // Pattern 7xl stroke width
   '--pattern-stroke-7xl': '20px',
 
-  // Pattern sampling styles
   '--pattern-sample-1': colors.red['500'],
   '--pattern-sample-2': colors.orange['500'],
   '--pattern-sample-3': colors.yellow['500'],
