@@ -56,7 +56,7 @@ const Ul = ({ children }) => (
 )
 
 const MetaData = ({ authors = [], maintainers = [], updated = '20220825', locale, slug, t }) => (
-  <div className="py-4 px-4 rounded-lg bg-secondary bg-opacity-20 shadow mb-4">
+  <div className="py-4 px-4 rounded-lg bg-secondary bg-opacity-10 shadow mb-4">
     {locale === 'en' ? (
       <div className="flex flex-row items-center gap-4 justify-between text-base-content mb-2">
         <span className="font-medium text-lg">{t('helpImproveDocs')}</span>
