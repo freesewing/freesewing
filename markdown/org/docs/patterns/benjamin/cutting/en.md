@@ -8,19 +8,19 @@ needs to be cut out. Below are two typical layouts.
 ## Without adjustment ribbon
 
 - **Main fabric**
-  - Cut **4 Knot**
-  - Cut **2 Collar band**
+  - Cut **4 Bow** parts
+  - Cut **2 Collar Band** parts
 - **Interfacing**
-  - Cut **4 interfacing knot**
-  - Cut **2 interfacing collar band**
+  - Cut **4 Bow** parts
+  - Cut **2 Collar Band** parts
 
 ## With adjustment ribbon
 
 - **Main fabric**
-  - Cut **1 Knot 1**
-  - Cut **1 Knot 2**
-  - Cut **2 Knot 3**
+  - Cut **1 Short Bow** part
+  - Cut **2 Medium Bow** parts
+  - Cut **1 Long Bow** part
 - **Interfacing**
-  - Cut **1 interfacing knot 1**
-  - Cut **1 interfacing knot 2**
-  - Cut **2 interfacing knot 3**
+  - Cut **1 Short Bow** part
+  - Cut **2 Medium Bow** parts
+  - Cut **1 Long Bow** part
