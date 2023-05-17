@@ -5,7 +5,7 @@ import { prebuildContributors } from './contributors.mjs'
 import { prebuildPatrons } from './patrons.mjs'
 import { prebuildI18n } from './i18n.mjs'
 //import { prebuildLab } from './lab.mjs'
-import { prebuildDesigns } from './designs.mjs'
+//import { prebuildDesigns } from './designs.mjs'
 import { generateOgImage } from './og/index.mjs'
 
 const run = async () => {
@@ -15,7 +15,8 @@ const run = async () => {
     await prebuildGitData(SITE)
     const docPages = await prebuildDocs(SITE)
     prebuildNavigation(docPages, false, SITE)
-    if (SITE === 'org') prebuildDesigns()
+    // FIXME: This breaks because it runs as prebuild but requires core to be built
+    //if (SITE === 'org') prebuildDesigns()
     if (process.env.GENERATE_OG_IMAGES) {
       // Create og image for the home page
       await generateOgImage({
