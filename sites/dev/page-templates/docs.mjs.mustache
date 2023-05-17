@@ -3,7 +3,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import Head from 'next/head'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
-//import { TocWrapper } from 'shared/components/wrappers/toc.mjs'
+import { TocWrapper } from 'shared/components/wrappers/toc.mjs'
 import { PageWrapper, ns } from 'shared/components/wrappers/page.mjs'
 // MDX content for each language
 import MDX, { frontmatter } from 'markdown/{{{ slug }}}/en.md'
@@ -41,7 +41,8 @@ const DocsPage = ({ page }) => {
       <div className="flex flex-row-reverse flex-wrap xl:flex-nowrap justify-end">
         {frontmatter.toc && (
           <div className="mb-8 w-full xl:w-80 2xl:w-96 xl:pl-8 2xl:pl-16">
-            <TocWrapper toc={toc} />
+            {/* FIXME: Implement toc plugin that adds it to frontmatter */}
+            <TocWrapper toc={frontmatter.toc} />
           </div>
         )}
         <MdxWrapper {...{ MDX, frontmatter }} />

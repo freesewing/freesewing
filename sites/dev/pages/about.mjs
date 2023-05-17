@@ -7,17 +7,6 @@ import { PageWrapper } from 'shared/components/wrappers/page.mjs'
 import { Popout } from 'shared/components/popout.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
 
-const Yes = () => (
-  <span role="img" className="pr-4">
-    ✅
-  </span>
-)
-const No = () => (
-  <span role="img" className="pr-4">
-    ❌
-  </span>
-)
-
 const ContactPage = ({ page }) => (
   <PageWrapper {...page}>
     <Head>
