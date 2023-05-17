@@ -1,6 +1,6 @@
 import { prebuildDocs } from './docs.mjs'
-//import { prebuildMdx } from './mdx.mjs'
 import { prebuildNavigation } from './navigation.mjs'
+import { prebuildGitData } from './git.mjs'
 import { prebuildContributors } from './contributors.mjs'
 import { prebuildPatrons } from './patrons.mjs'
 import { prebuildI18n } from './i18n.mjs'
@@ -10,13 +10,12 @@ import { generateOgImage } from './og/index.mjs'
 
 const run = async () => {
   const SITE = process.env.SITE || 'lab'
-  if (SITE === 'org') {
-    prebuildDesigns()
+  let docPages
+  if (['org', 'dev'].includes(SITE)) {
+    await prebuildGitData(SITE)
     const docPages = await prebuildDocs(SITE)
-    const posts = {}
-    prebuildNavigation(docPages, posts, SITE)
-  } else if (SITE === 'dev') {
-    const docPages = await prebuildDocs(SITE)
+    prebuildNavigation(docPages, false, SITE)
+    if (SITE === 'org') prebuildDesigns()
     if (process.env.GENERATE_OG_IMAGES) {
       // Create og image for the home page
       await generateOgImage({
@@ -35,7 +34,6 @@ const run = async () => {
         lead: '404',
       })
     }
-    prebuildNavigation(docPages, false, SITE)
   } else await prebuildLab()
 
   await prebuildI18n(SITE)

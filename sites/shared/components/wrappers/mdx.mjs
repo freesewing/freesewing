@@ -2,6 +2,7 @@
 import { components as baseComponents } from 'shared/components/mdx/index.mjs'
 // List of authors
 import { authors as allAuthors } from 'config/authors.mjs'
+import { docUpdates } from 'site/prebuild/doc-updates.mjs'
 // FreeSewing config
 import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
 // Components
@@ -55,7 +56,7 @@ const Ul = ({ children }) => (
 )
 
 const MetaData = ({ authors = [], maintainers = [], updated = '20220825', locale, slug, t }) => (
-  <div className="py-4 px-4 rounded-lg bg-secondary bg-opacity-5 shadow mb-4">
+  <div className="py-4 px-4 rounded-lg bg-secondary bg-opacity-20 shadow mb-4">
     {locale === 'en' ? (
       <div className="flex flex-row items-center gap-4 justify-between text-base-content mb-2">
         <span className="font-medium text-lg">{t('helpImproveDocs')}</span>
@@ -84,7 +85,7 @@ const MetaData = ({ authors = [], maintainers = [], updated = '20220825', locale
         {authors.length > 0 ? (
           <>
             <li className="list-none font-medium opacity-70 italic">{t('authors')}:</li>
-            <PersonList list={authors} />
+            <PersonList list={authors} slug={slug} />
           </>
         ) : null}
 
@@ -109,11 +110,16 @@ export const MdxWrapper = ({ MDX, frontmatter = {}, components = {} }) => {
   const allComponents = { ...baseComponents, ...components }
   const { locale, slug } = useContext(NavigationContext)
 
-  const { authors = [], maintainers = [] } = frontmatter || {}
+  const updates = docUpdates[slug] || {}
 
   return (
     <div className="text-primary mdx max-w-prose text-base-content max-w-prose text-base">
-      <MetaData {...frontmatter} {...{ locale, slug, t }} />
+      <MetaData
+        maintainers={frontmatter?.maintainers || []}
+        authors={updates?.authors || []}
+        lastUpdated={updates?.lastUpdates}
+        {...{ locale, slug, t }}
+      />
       <MDX components={allComponents} />
     </div>
   )
