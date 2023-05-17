@@ -9,7 +9,7 @@ import { useToast } from 'shared/hooks/use-toast.mjs'
 import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import { BackToAccountButton, Choice, Icons, welcomeSteps } from './shared.mjs'
-import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
+import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 
 export const ns = ['account', 'toast']
 

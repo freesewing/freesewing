@@ -6,14 +6,14 @@ import { useTranslation } from 'next-i18next'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { validateEmail, validateTld } from 'site/utils.mjs'
+import { validateEmail, validateTld } from 'shared/utils.mjs'
 // Components
 import Link from 'next/link'
 import { PageWrapper } from 'shared/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
-import { SusiWrapper } from 'site/components/wrappers/susi.mjs'
+import { SusiWrapper } from 'shared/components/wrappers/susi.mjs'
 import { Robot } from 'shared/components/robot/index.mjs'
-import { EmailValidButton } from 'site/components/buttons/email-valid-button.mjs'
+import { EmailValidButton } from 'shared/components/buttons/email-valid-button.mjs'
 import { LeftIcon, HelpIcon } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 

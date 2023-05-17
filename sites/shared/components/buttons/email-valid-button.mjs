@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { validateEmail, validateTld } from 'site/utils.mjs'
+import { validateEmail, validateTld } from 'shared/utils.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
 import { useTranslation } from 'next-i18next'
 import { EmailIcon, RightIcon, WarningIcon } from 'shared/components/icons.mjs'

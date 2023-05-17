@@ -6,7 +6,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard'
 import orderBy from 'lodash.orderby'
 import { measurements, isDegreeMeasurement } from 'config/measurements.mjs'
 import { measurementAsMm, formatMm } from 'shared/utils.mjs'
-import { measurements as designMeasurements } from 'site/prebuild/design-measurements.mjs'
+import { measurements as designMeasurements } from 'shared/prebuild/data/design-measurements.mjs'
 import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
 // Hooks
 import { useDropzone } from 'react-dropzone'

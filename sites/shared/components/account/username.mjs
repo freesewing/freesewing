@@ -11,7 +11,7 @@ import { LoadingContext } from 'shared/context/loading-context.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
 import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { OkIcon, NoIcon } from 'shared/components/icons.mjs'
-import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
+import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 
 export const ns = ['account', 'toast']
 

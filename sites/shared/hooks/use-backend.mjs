@@ -1,11 +1,12 @@
 import axios from 'axios'
 import process from 'process'
+import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
 
 /*
  * Helper methods to interact with the FreeSewing backend
  */
 const apiHandler = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_BACKEND || 'https://backend.freesewing.org',
+  baseURL: freeSewingConfig.backend,
   timeout: 3000,
 })
 

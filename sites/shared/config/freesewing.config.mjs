@@ -2,7 +2,7 @@ import { social } from 'config/social.mjs'
 
 export const freeSewingConfig = {
   monorepo: 'https://github.com/freesewing/freesewing',
-  backend: process.env.NEXT_PUBLIC_BACKEND,
+  backend: process.env.NEXT_PUBLIC_BACKEND || 'https://backend3.freesewing.org',
   maxWidth: 2800,
   account: {
     fields: {
