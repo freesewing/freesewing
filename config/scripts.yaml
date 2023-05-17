@@ -66,6 +66,7 @@ dev:
   clean: &nextClean 'rimraf prebuild/* && rimraf public/locales/*/* && rimraf public/feeds/*'
   dev: &nextDev 'next dev -p 8000'
   develop: *nextDev
+  i18n: "SITE=dev node ../shared/prebuild/i18n-only.mjs"
   lint: &nextLint 'next lint'
   prebuild: 'SITE=dev node --experimental-json-modules ../shared/prebuild/index.mjs'
   serve: "pm2 start npm --name 'dev' -- run start"
