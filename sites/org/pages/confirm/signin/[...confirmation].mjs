@@ -59,17 +59,16 @@ const ConfirmSignInPage = ({ page }) => {
 
   const [error, setError] = useState(false)
 
-  const storeAccount = async (data) => {
-    if (data?.token && data?.account) {
-      setToken(data.token)
-      setAccount(data.account)
-      router.push('/account')
-    } else {
-      setError(data)
-    }
-  }
-
   useEffect(() => {
+    const storeAccount = async (data) => {
+      if (data?.token && data?.account) {
+        setToken(data.token)
+        setAccount(data.account)
+        router.push('/account')
+      } else {
+        setError(data)
+      }
+    }
     // Async inside useEffect requires this approach
     const getConfirmation = async () => {
       // Reach out to backend
@@ -84,7 +83,7 @@ const ConfirmSignInPage = ({ page }) => {
     }
     // Call async method
     getConfirmation()
-  }, [backend, confirmationCheck, confirmationId, storeAccount])
+  }, [backend, confirmationCheck, confirmationId, router, setAccount, setToken])
 
   if (page) page.path = ['confirm', 'emailchange', confirmationId]
 

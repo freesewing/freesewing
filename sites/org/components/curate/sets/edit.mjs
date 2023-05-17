@@ -3,9 +3,10 @@ import { capitalize } from 'shared/utils.mjs'
 import { siteConfig } from 'site/site.config.mjs'
 import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
 import { measurements } from 'config/measurements.mjs'
+import { designMeasurements } from 'site/prebuild/design-measurements.mjs'
 // Context
 import { LoadingContext } from 'shared/context/loading-context.mjs'
-import { NavigationContext } from 'shared/context/navigation-context.mjs'
+import { ModalContext } from 'shared/context/modal-context.mjs'
 // Hooks
 import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
@@ -18,15 +19,27 @@ import { ClearIcon, EditIcon, FilterIcon } from 'shared/components/icons.mjs'
 import Timeago from 'react-timeago'
 import { PageLink } from 'shared/components/page-link.mjs'
 import { MeasieRow } from 'shared/components/account/sets.mjs'
+import { ModalDesignPicker } from 'shared/components/modal/design-picker.mjs'
 
 export const ns = ['toast', 'curate', 'sets', 'account']
 
 const EditField = (props) => {
   if (props.field === 'nameEn') return <EditName {...props} lang="en" />
-  if (props.field === 'nameDe') return <EditName {...props} lang="en" />
-  if (props.field === 'nameEs') return <EditName {...props} lang="en" />
-  if (props.field === 'nameFr') return <EditName {...props} lang="en" />
-  if (props.field === 'nameNl') return <EditName {...props} lang="en" />
+  if (props.field === 'nameDe') return <EditName {...props} lang="de" />
+  if (props.field === 'nameEs') return <EditName {...props} lang="es" />
+  if (props.field === 'nameFr') return <EditName {...props} lang="fr" />
+  if (props.field === 'nameNl') return <EditName {...props} lang="nl" />
+  if (props.field === 'notesEn') return <EditNotes {...props} lang="en" />
+  if (props.field === 'notesDe') return <EditNotes {...props} lang="de" />
+  if (props.field === 'notesEs') return <EditNotes {...props} lang="es" />
+  if (props.field === 'notesFr') return <EditNotes {...props} lang="fr" />
+  if (props.field === 'notesNl') return <EditNotes {...props} lang="nl" />
+  if (props.field === 'tagsEn') return <EditTags {...props} lang="en" />
+  if (props.field === 'tagsDe') return <EditTags {...props} lang="de" />
+  if (props.field === 'tagsEs') return <EditTags {...props} lang="es" />
+  if (props.field === 'tagsFr') return <EditTags {...props} lang="fr" />
+  if (props.field === 'tagsNl') return <EditTags {...props} lang="nl" />
+  if (props.field === 'img') return <EditImg {...props} />
 
   return <p>FIXME: No edit component for this field</p>
 }
@@ -49,7 +62,7 @@ export const EditRow = (props) => (
   </Collapse>
 )
 
-const EditImg = ({ set, t }) => {
+const EditImg = ({ t }) => {
   return (
     <Collapse
       title={t('img')}
@@ -84,7 +97,7 @@ const EditName = ({ mset, t, lang }) => {
   )
 }
 
-const EditNotes = ({ set, t, lang }) => {
+const EditNotes = ({ mset, t, lang }) => {
   return (
     <Collapse
       title={<b>{`${t('notes')} (${lang.toUpperCase()})`}</b>}
@@ -95,12 +108,12 @@ const EditNotes = ({ set, t, lang }) => {
         </button>,
       ]}
     >
-      {set[`name${capitalize(lang)}`]}
+      {mset[`name${capitalize(lang)}`]}
     </Collapse>
   )
 }
 
-const EditTags = ({ set, t, lang }) => {
+const EditTags = ({ mset, t, lang }) => {
   return (
     <Collapse
       title={<b>{`${t('tags')} (${lang.toUpperCase()})`}</b>}
@@ -111,7 +124,7 @@ const EditTags = ({ set, t, lang }) => {
         </button>,
       ]}
     >
-      {set[`name${capitalize(lang)}`]}
+      {mset[`name${capitalize(lang)}`]}
     </Collapse>
   )
 }
@@ -119,22 +132,25 @@ const EditTags = ({ set, t, lang }) => {
 export const EditCuratedSet = ({ id }) => {
   // Context
   const { startLoading, stopLoading } = useContext(LoadingContext)
-  const { setNavigation } = useContext(NavigationContext)
+  const { setModal } = useContext(ModalContext)
 
   // Hooks
   const { account, token } = useAccount()
   const backend = useBackend(token)
-  const { t, i18n } = useTranslation('sets', 'curate', 'toast', 'account')
-  const { language } = i18n
+  const {
+    t,
+    //i18n
+  } = useTranslation('sets', 'curate', 'toast', 'account')
+  //const { language } = i18n
   const toast = useToast()
 
   // State
   const [set, setSet] = useState([])
-  const [reload, setReload] = useState(0)
+  const [reload] = useState(0)
   const [filter, setFilter] = useState(false)
 
   // Force a refresh
-  const refresh = () => setReload(reload + 1)
+  //const refresh = () => setReload(reload + 1)
 
   // Effects
   useEffect(() => {
@@ -145,7 +161,7 @@ export const EditCuratedSet = ({ id }) => {
       }
     }
     getCuratedSet()
-  }, [reload])
+  }, [reload, backend, id])
 
   const editProps = {
     startLoading,

@@ -3,7 +3,6 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { tags } from 'shared/config/designs.mjs'
-import { useTranslation } from 'next-i18next'
 import { DesignTag } from 'shared/components/designs/tag.mjs'
 
 // Translation namespaces used on this page

@@ -101,7 +101,7 @@ const ConfirmSignUpPage = () => {
     }
     // Call async method
     getConfirmation()
-  }, [backend, confirmationCheck, confirmationID])
+  }, [backend, confirmationCheck, confirmationId])
 
   // Short-circuit errors
   if (error)

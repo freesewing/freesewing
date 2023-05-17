@@ -7,7 +7,7 @@ import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
 
 // Translation namespaces used on this page
-const namespaces = [...new Set(['account', ...authNs])]
+const ns = [...new Set(['account', ...authNs])]
 
 /*
  * Some things should never generated as SSR
@@ -44,7 +44,7 @@ export default WelcomePage
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale)),
+      ...(await serverSideTranslations(locale, ns)),
       page: {
         path: ['welcome'],
       },

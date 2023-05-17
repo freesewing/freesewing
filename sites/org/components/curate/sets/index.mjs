@@ -1,6 +1,4 @@
 // Dependencies
-import orderBy from 'lodash.orderby'
-import { measurements } from 'site/prebuild/design-measurements.mjs'
 import { capitalize } from 'shared/utils.mjs'
 import { siteConfig } from 'site/site.config.mjs'
 // Context
@@ -14,8 +12,7 @@ import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
 // Components
 import Link from 'next/link'
-import { PopoutWrapper } from 'shared/components/wrappers/popout.mjs'
-import { Collapse, useCollapseButton } from 'shared/components/collapse.mjs'
+import { Collapse } from 'shared/components/collapse.mjs'
 import { TrashIcon, EditIcon, FilterIcon } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import Timeago from 'react-timeago'
@@ -191,7 +188,9 @@ export const CurateSets = () => {
   return (
     <div className="max-w-xl xl:pl-4">
       {tags.map((tag) => (
-        <Tag onClick={() => addFilter(tag)}>{tag}</Tag>
+        <Tag onClick={() => addFilter(tag)} key={tag}>
+          {tag}
+        </Tag>
       ))}
       <div className="flex flex-row items-center justify-between gap-2 my-2 p-2 px-4 border rounded-lg bg-secondary bg-opacity-10">
         <FilterIcon className="w-6 h-6 text-secondary" />
@@ -203,7 +202,7 @@ export const CurateSets = () => {
         </button>
       </div>
       {filter.map((tag) => (
-        <Tag onClick={() => removeFilter(tag)} color="success" hoverColor="error">
+        <Tag onClick={() => removeFilter(tag)} color="success" hoverColor="error" key={tag}>
           {tag}
         </Tag>
       ))}
