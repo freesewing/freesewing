@@ -6,7 +6,6 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
 import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import {
-  HelpIcon,
   I18nIcon,
   SearchIcon,
   ThemeIcon,
@@ -19,7 +18,6 @@ import {
   FreeSewingIcon,
 } from 'shared/components/icons.mjs'
 import { Ribbon } from 'shared/components/ribbon.mjs'
-import Link from 'next/link'
 import { ModalThemePicker, ns as themeNs } from 'shared/components/modal/theme-picker.mjs'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
 
@@ -155,7 +153,7 @@ export const Header = ({ setSearch }) => {
       drop-shadow-xl
     `}
     >
-      <Banner />
+      {BANNER ? <Banner /> : null}
       <div className="m-auto md:px-8">
         <div className="p-0 flex flex-row gap-2 justify-between text-neutral-content items-center">
           {/* Non-mobile content */}

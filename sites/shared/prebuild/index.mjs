@@ -34,7 +34,8 @@ const run = async () => {
         lead: '404',
       })
     }
-  } else await prebuildLab()
+  }
+  //else await prebuildLab()
 
   await prebuildI18n(SITE)
   await prebuildContributors(SITE)
