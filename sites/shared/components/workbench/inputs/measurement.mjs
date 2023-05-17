@@ -19,10 +19,7 @@ export const MeasurementInput = ({ m, gist, app, updateMeasurements, focus, opti
   const isDegree = isDegreeMeasurement(m)
   const factor = useMemo(() => (isDegree ? 1 : gist.units == 'imperial' ? 25.4 : 10), [gist.units])
 
-  const isValValid = (val) => {
-    if (optional && val === 0) return true
-    return typeof val === 'undefined' || val === '' ? null : val != false && !isNaN(val)
-  }
+  const isValValid = (val) => (val == false ? optional : !isNaN(val))
   const isValid = (newVal) => (typeof newVal === 'undefined' ? isValValid(val) : isValValid(newVal))
 
   const [val, setVal] = useState(gist.measurements?.[m] / factor || '')
