@@ -84,7 +84,7 @@ lab:
   develop: *nextDev
   e2e: &e2e 'yarn playwright test'
   lint: *nextLint
-  prebuild: 'node --experimental-json-modules ../shared/prebuild/index.mjs'
+  prebuild: 'SITE=lab node --experimental-json-modules ../shared/prebuild/index.mjs'
   start: *nextStart
 
 org:

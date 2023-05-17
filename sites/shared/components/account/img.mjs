@@ -10,8 +10,8 @@ import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
 // Components
 import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
-import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
-import { SaveSettingsButton } from 'site/components/buttons/save-settings-button.mjs'
+import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
+import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
 
 export const ns = ['account', 'toast']
 

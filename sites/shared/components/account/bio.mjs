@@ -11,8 +11,8 @@ import { LoadingContext } from 'shared/context/loading-context.mjs'
 import Markdown from 'react-markdown'
 import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { Popout } from 'shared/components/popout.mjs'
-import { SaveSettingsButton } from 'site/components/buttons/save-settings-button.mjs'
-import { ContinueButton } from 'site/components/buttons/continue-button.mjs'
+import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
+import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 
 export const ns = ['account', 'toast']
 

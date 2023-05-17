@@ -1,7 +1,7 @@
 import fs_ from 'fs'
 import path from 'path'
 import { capitalize } from '../utils.mjs'
-import { designsByType, plugins, designs } from '../../../config/software/index.mjs'
+import { plugins, designs } from '../../../config/software/index.mjs'
 
 const fs = fs_.promises
 
@@ -16,28 +16,13 @@ const header = `/*
  *
  */`
 
-const pageTemplate = (design) => `${header}
-import { ${capitalize(design)} } from 'designs/${design}/src/index.mjs'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { WorkbenchPage } from 'site/page-templates/workbench.mjs'
-
-const Page = (props) => <WorkbenchPage {...props} design={${capitalize(design)}} version="next"/>
-export default Page
-
-export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale)),
-    }
-  }
-}
-`
-
 /*
  * Main method that does what needs doing
  */
 
 export const prebuildLab = async () => {
+  // FIXME: handle this
+  return
   const promises = []
   for (const section in designsByType) {
     // Iterate over sections

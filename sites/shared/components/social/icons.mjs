@@ -4,7 +4,7 @@ import {
   HelpIcon,
   DiscordIcon,
   FacebookIcon,
-  GithubIcon,
+  GitHubIcon,
   InstagramIcon,
   RedditIcon,
   TwitterIcon,
@@ -37,7 +37,7 @@ const socialList = {
     href: social.Facebook,
   },
   GitHub: {
-    icon: <GithubIcon {...iconClasses(4)} />,
+    icon: <GitHubIcon {...iconClasses(4)} />,
     href: social.GitHub,
   },
   Reddit: {

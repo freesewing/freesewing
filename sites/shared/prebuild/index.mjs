@@ -4,19 +4,19 @@ import { prebuildGitData } from './git.mjs'
 import { prebuildContributors } from './contributors.mjs'
 import { prebuildPatrons } from './patrons.mjs'
 import { prebuildI18n } from './i18n.mjs'
-//import { prebuildLab } from './lab.mjs'
-//import { prebuildDesigns } from './designs.mjs'
+import { prebuildLab } from './lab.mjs'
+import { prebuildDesigns } from './designs.mjs'
 import { generateOgImage } from './og/index.mjs'
 
 const run = async () => {
   const SITE = process.env.SITE || 'lab'
+  prebuildDesigns()
   let docPages
   if (['org', 'dev'].includes(SITE)) {
+    console.log('in orgdev')
     await prebuildGitData(SITE)
     const docPages = await prebuildDocs(SITE)
     prebuildNavigation(docPages, false, SITE)
-    // FIXME: This breaks because it runs as prebuild but requires core to be built
-    //if (SITE === 'org') prebuildDesigns()
     if (process.env.GENERATE_OG_IMAGES) {
       // Create og image for the home page
       await generateOgImage({
@@ -35,8 +35,9 @@ const run = async () => {
         lead: '404',
       })
     }
+  } else {
+    await prebuildLab()
   }
-  //else await prebuildLab()
 
   await prebuildI18n(SITE)
   await prebuildContributors(SITE)
@@ -44,4 +45,4 @@ const run = async () => {
   console.log()
 }
 
-run()
+//run()

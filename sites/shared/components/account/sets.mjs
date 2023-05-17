@@ -42,7 +42,7 @@ import { Tab } from './bio.mjs'
 import Timeago from 'react-timeago'
 import { Spinner } from 'shared/components/spinner.mjs'
 import Link from 'next/link'
-import { SaveSettingsButton } from 'site/components/buttons/save-settings-button.mjs'
+import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
 
 export const ns = ['account', 'patterns', 'toast']
 

@@ -9,7 +9,7 @@ import { useToast } from 'shared/hooks/use-toast.mjs'
 import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
-import { SaveSettingsButton } from 'site/components/buttons/save-settings-button.mjs'
+import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
 
 export const ns = ['account', 'toast']
 

@@ -123,6 +123,7 @@ sites/*/out
 sites/*/public/mdx
 sites/*/prebuild
 !sites/shared/prebuild
+sites/shared/prebuild/data
 sites/dev/public/og
 
 # misc

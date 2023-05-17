@@ -11,7 +11,7 @@ import { LoadingContext } from 'shared/context/loading-context.mjs'
 import Link from 'next/link'
 import { Popout } from 'shared/components/popout.mjs'
 import { BackToAccountButton } from './shared.mjs'
-import { SaveSettingsButton } from 'site/components/buttons/save-settings-button.mjs'
+import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
 import {
   GdprProfileDetails,
   GdprMeasurementsDetails,
