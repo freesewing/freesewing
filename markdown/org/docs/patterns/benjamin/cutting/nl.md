@@ -7,19 +7,19 @@ Benjamin is a rather simple pattern, but your options will determine what needs 
 ## Zonder aanpaslintje
 
 - **Buitenstof**
-  - Knip **4 Knoop**
-  - Knip **2 Kraagband**
+  - Cut **4 Bow** parts
+  - Cut **2 Collar Band** parts
 - **Tussenvoering**
-  - Knip **4 tussenvoering knoop**
-  - Knip **2 tussenvoering kraagband**
+  - Cut **4 Bow** parts
+  - Cut **2 Collar Band** parts
 
 ## Met aanpaslintje
 
 - **Buitenstof**
-  - Knip **1 Knoop 1**
-  - Knip **1 Knoop 2**
-  - Knip **2 Knoop 3**
+  - Cut **1 Short Bow** part
+  - Cut **2 Medium Bow** parts
+  - Cut **1 Long Bow** part
 - **Tussenvoering**
-  - Knip **1 tussenvoering knoop 1**
-  - Knip **1 tussenvoering knoop 2**
-  - Knip **2 tussenvoering knoop 3**
+  - Cut **1 Short Bow** part
+  - Cut **2 Medium Bow** parts
+  - Cut **1 Long Bow** part
