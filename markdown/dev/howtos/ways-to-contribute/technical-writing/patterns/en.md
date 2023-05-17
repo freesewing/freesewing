@@ -10,4 +10,4 @@ Once in a while you might see some documents using personal tone, such as `When 
 
 Whenever changing existing documents (be it extending, correcting errors, etc) try to preserve the tone. Don't rewrite the documents to solely change the tone.
 
-If you are writing a new document, pick the style you prefer!
+If you are writing new documentation, pick the style you prefer!
