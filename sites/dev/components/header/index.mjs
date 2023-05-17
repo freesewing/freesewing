@@ -47,28 +47,23 @@ const NavIcons = ({ setModal, setSearch }) => {
         <MenuIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
-      <NavButton href="/developers" label="For all developers" color={colors[1]}>
+      <NavButton href="/developers" label="Developers" color={colors[1]}>
         <CodeIcon className={iconSize} />
       </NavButton>
       <NavButton
         href="/designers"
-        label="For pattern designers and coders"
+        label="Designers"
         color={colors[2]}
         extraClasses="hidden lg:flex"
       >
         <DesignIcon className={iconSize} />
       </NavButton>
-      <NavButton
-        href="/writers"
-        label="For writers"
-        color={colors[3]}
-        extraClasses="hidden lg:flex"
-      >
+      <NavButton href="/writers" label="Writers" color={colors[3]} extraClasses="hidden lg:flex">
         <DocsIcon className={iconSize} />
       </NavButton>
       <NavButton
         href="/translators"
-        label="For translators"
+        label="Translators"
         color={colors[4]}
         extraClasses="hidden lg:flex"
       >
@@ -76,25 +71,20 @@ const NavIcons = ({ setModal, setSearch }) => {
       </NavButton>
       <NavButton
         href="/infrastructure"
-        label="FreeSewing Infrastrucure"
+        label="Infrastrucure"
         color={colors[5]}
         extraClasses="hidden lg:flex"
       >
         <WrenchIcon className={iconSize} stroke={1.5} />
       </NavButton>
-      <NavButton
-        href="/teamwork"
-        label="How to work as a team"
-        color={colors[5]}
-        extraClasses="hidden lg:flex"
-      >
+      <NavButton href="/teamwork" label="Teamwork" color={colors[6]} extraClasses="hidden lg:flex">
         <CommunityIcon className={iconSize} stroke={1.5} />
       </NavButton>
       <NavSpacer />
       <NavButton
         onClick={() => setModal(<ModalThemePicker />)}
         label={t('header:theme')}
-        color={colors[6]}
+        color={colors[7]}
       >
         <ThemeIcon className={iconSize} />
       </NavButton>
@@ -102,7 +92,7 @@ const NavIcons = ({ setModal, setSearch }) => {
         <SearchIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
-      <NavButton href="/about" label="About FreeSewing" color={colors[9]}>
+      <NavButton href="/about" label="About" color={colors[9]}>
         <FreeSewingIcon className={iconSize} />
       </NavButton>
     </>
