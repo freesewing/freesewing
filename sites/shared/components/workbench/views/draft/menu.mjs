@@ -21,7 +21,7 @@ export const DraftMenu = ({
   account,
 }) => (
   <nav className="grow mb-12">
-    <DesignOptions {...{ design, patternConfig, settings, update }} />
+    <DesignOptions {...{ design, patternConfig, settings, update, language, account }} />
     {account.control === 1 ? null : (
       <CoreSettings {...{ patternConfig, settings, update, language, account }} />
     )}

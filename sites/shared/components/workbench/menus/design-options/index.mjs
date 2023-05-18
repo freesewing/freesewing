@@ -1,8 +1,12 @@
 // Hooks
+import { useContext, useState } from 'react'
 import { useTranslation } from 'next-i18next'
+// Context
+import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
+import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { Collapse } from 'shared/components/collapse.mjs'
-import { OptionsIcon, ClearIcon } from 'shared/components/icons.mjs'
+import { OptionsIcon, ClearIcon, HelpIcon, EditIcon, CloseIcon } from 'shared/components/icons.mjs'
 import { Chevron } from 'shared/components/navigation/primary.mjs'
 import {
   Li,
@@ -35,6 +39,7 @@ import {
   MmOptionValue,
   PctOptionValue,
 } from './values.mjs'
+import { DynamicMdx } from 'shared/components/dynamic-mdx.mjs'
 
 export const ns = ['design-options']
 
@@ -60,6 +65,26 @@ const values = {
   pct: PctOptionValue,
 }
 
+// Emojis for option groups :)
+const emojis = {
+  fit: '👕',
+  style: '💃🏽',
+  dflt: '🕹️',
+}
+
+const GroupTitle = ({ group, t, open = false }) => (
+  <div className={`flex flex-row gap-1 items-center w-full ${open ? '' : 'justify-between'}`}>
+    <span className="font-medium">
+      <span role="img" className="pr-2">
+        {emojis[group] ? emojis[group] : emojis.dflt}
+      </span>
+      {t(`design-options:${group}.t`)}
+      {open ? ':' : ''}
+    </span>
+    <OptionsIcon className="w-6 h-6 text-primary" />
+  </div>
+)
+
 const ClearButton = ({ update, name, open }) => (
   <button
     className={`btn btn-accent ${open ? 'btn-xs px-0' : ''}`}
@@ -80,8 +105,10 @@ export const DesignOption = ({
   settings,
   update,
   t,
+  loadDocs,
   changed = false,
 }) => {
+  const [override, setOverride] = useState(false)
   const type = optionType(config)
   const Input = inputs[type]
   const Value = values[type]
@@ -106,7 +133,23 @@ export const DesignOption = ({
   }
 
   const buttons = []
-  const openButtons = []
+  const openButtons = [
+    <button className="btn btn-xs btn-ghost px-0" onClick={(evt) => loadDocs(evt, name)}>
+      <HelpIcon className="w-4 h-4" />
+    </button>,
+  ]
+  if (['pct'].includes(type))
+    openButtons.push(
+      <button
+        className="btn btn-xs btn-ghost px-0"
+        onClick={(evt) => {
+          evt.stopPropagation()
+          setOverride(!override)
+        }}
+      >
+        <EditIcon className={`w-6 h-6 ${override ? 'bg-base-100 text-accent rounded' : ''}`} />
+      </button>
+    )
   if (changed) {
     buttons.push(<ClearButton {...{ update, name }} />)
     openButtons.push(<ClearButton {...{ update, name }} open />)
@@ -124,15 +167,9 @@ export const DesignOption = ({
       openTitle={t(`${name}.t`)}
       {...{ buttons, openButtons }}
     >
-      <Input {...{ t, name, config, settings, current, design, update }} ot={t} />
+      <Input {...{ t, name, config, settings, current, design, update, override }} />
     </Collapse>
   )
-}
-
-const emojis = {
-  fit: '👕',
-  style: '💃🏽',
-  dflt: '🕹️',
 }
 
 export const DesignOptionGroup = ({
@@ -144,27 +181,13 @@ export const DesignOptionGroup = ({
   options,
   Option,
   t,
+  loadDocs,
 }) => (
-  <Collapse
-    bottom
-    color="secondary"
-    title={
-      <div className="w-full flex flex-row gap2 items-center justify-between">
-        <span className="font-bold">
-          <span role="img" className="pr-2">
-            {emojis[group] ? emojis[group] : emojis.dflt}
-          </span>
-          {t(group)}
-        </span>
-        <OptionsIcon className="w-6 h-6 text-primary" />
-      </div>
-    }
-    openTitle={t(group)}
-  >
+  <Collapse bottom color="secondary" title={<GroupTitle {...{ group, t }} />} openTitle={t(group)}>
     {Object.entries(options).map(([option, type]) =>
       typeof type === 'string' ? (
         <Option
-          {...{ t, design, update, settings }}
+          {...{ t, design, update, settings, loadDocs }}
           key={option}
           name={option}
           settings={settings}
@@ -174,7 +197,7 @@ export const DesignOptionGroup = ({
         />
       ) : (
         <OptionGroup
-          {...{ design, patternConfig, settings, update, Option, t }}
+          {...{ design, patternConfig, settings, update, Option, t, loadDocs }}
           group={option}
           options={type}
           key={option}
@@ -191,12 +214,35 @@ const wasChanged = (current, config) => {
   return true
 }
 
-export const DesignOptions = ({ design, patternConfig, settings, update, Option = false }) => {
+export const DesignOptions = ({
+  design,
+  patternConfig,
+  settings,
+  update,
+  language,
+  account,
+  Option = false,
+}) => {
   const { t } = useTranslation([design])
+  const { setModal } = useContext(ModalContext)
 
   // FIXME: Do we still care about passing in an Option component?
   if (!Option) Option = DesignOption
   const optionsMenu = optionsMenuStructure(patternConfig.options)
+
+  const loadDocs = (evt, option = false) => {
+    evt.stopPropagation()
+    setModal(
+      <ModalWrapper>
+        <div className="max-w-prose">
+          <DynamicMdx
+            path={`patterns/${design}/options/${option.toLowerCase()}`}
+            language={language}
+          />
+        </div>
+      </ModalWrapper>
+    )
+  }
 
   return (
     <Collapse
@@ -213,7 +259,7 @@ export const DesignOptions = ({ design, patternConfig, settings, update, Option 
       {Object.entries(optionsMenu).map(([group, option]) =>
         typeof option === 'string' ? (
           <Option
-            {...{ t, design, update, settings }}
+            {...{ t, design, update, settings, loadDocs }}
             key={group}
             name={group}
             current={settings.options?.[group]}
@@ -222,7 +268,7 @@ export const DesignOptions = ({ design, patternConfig, settings, update, Option 
           />
         ) : (
           <DesignOptionGroup
-            {...{ design, patternConfig, settings, update, group, Option, t }}
+            {...{ design, patternConfig, settings, update, group, Option, t, loadDocs }}
             options={option}
             key={group}
           />

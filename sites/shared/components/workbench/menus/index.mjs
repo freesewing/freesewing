@@ -136,7 +136,7 @@ export const DraftMenu = (props) => {
 
   return (
     <nav className="grow mb-12">
-      <DesignOptions {...props} />
+      <DesignOptions {...{ design, update, settings, patternConfig }} />
       <CoreSettings {...{ design, update, settings, patternConfig }} />
       {ui.renderer === 'react' ? <XrayMenu {...props} /> : null}
     </nav>

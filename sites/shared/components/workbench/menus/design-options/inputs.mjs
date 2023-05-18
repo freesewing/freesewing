@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ClearIcon, EditIcon } from 'shared/components/icons.mjs'
+import { EditIcon } from 'shared/components/icons.mjs'
 import { useTranslation } from 'next-i18next'
 import { formatMm, round } from 'shared/utils.mjs'
 import { ChoiceButton } from 'shared/components/choice-button.mjs'
@@ -70,14 +70,6 @@ export const CountOptionInput = ({ name, config, current, update, t }) => {
       <div className="flex flex-row justify-between">
         <span></span>
         <div>
-          <button
-            title={t('reset')}
-            className="btn btn-ghost btn-xs text-accent"
-            disabled={current === count}
-            onClick={reset}
-          >
-            <ClearIcon />
-          </button>
           <button
             title={t('editThing', { thing: '#' })}
             className={`
@@ -161,7 +153,17 @@ const EditOption = (props) => (
   </div>
 )
 
-export const PctOptionInput = ({ name, config, settings, current, update, t, type = 'pct' }) => {
+export const PctOptionInput = ({
+  name,
+  design,
+  config,
+  settings,
+  current,
+  update,
+  t,
+  type = 'pct',
+  override,
+}) => {
   const suffix = type === 'deg' ? '°' : '%'
   const factor = type === 'deg' ? 1 : 100
   const { max, min } = config
@@ -170,7 +172,6 @@ export const PctOptionInput = ({ name, config, settings, current, update, t, typ
   else current = current * factor
 
   const [value, setValue] = useState(current)
-  const [editOption, setEditOption] = useState(false)
 
   const handleChange = (evt) => {
     const newCurrent = evt.target.value
@@ -183,11 +184,11 @@ export const PctOptionInput = ({ name, config, settings, current, update, t, typ
   }
 
   return (
-    <div className="py-4 mx-6 border-l-2 pl-2">
-      <p className="m-0 p-0 px-2 mb-2 text-base-content opacity-60 italic">{t(`${name}.d`)}</p>
+    <>
+      <p>{t(`${design}:${name}.d`)}</p>
       <div className="flex flex-row justify-between">
-        {editOption ? (
-          <EditOption {...{ value, handleChange, min, max, setEditOption, t, suffix }} />
+        {override ? (
+          <EditOption {...{ value, handleChange, min, max, t, suffix }} />
         ) : (
           <>
             <span className="opacity-50">
@@ -215,34 +216,14 @@ export const PctOptionInput = ({ name, config, settings, current, update, t, typ
           ${current === dflt ? 'range-secondary' : 'range-accent'}
         `}
       />
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-row justify-around">
         <span className={current === dflt ? 'text-secondary' : 'text-accent'}>
           {config.toAbs && settings.measurements
             ? formatMm(config.toAbs(value / 100, settings))
             : ' '}
         </span>
-        <div>
-          <button
-            title={t('reset')}
-            className="btn btn-ghost btn-xs text-accent"
-            disabled={current === dflt}
-            onClick={reset}
-          >
-            <ClearIcon />
-          </button>
-          <button
-            title={t('editThing', { thing: suffix })}
-            className={`
-              btn btn-ghost btn-xs hover:text-secondary-focus
-              ${editOption ? 'text-accent' : 'text-secondary'}
-            `}
-            onClick={() => setEditOption(!editOption)}
-          >
-            <EditIcon />
-          </button>
-        </div>
       </div>
-    </div>
+    </>
   )
 }
 
