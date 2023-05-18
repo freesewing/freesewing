@@ -43,12 +43,12 @@ sites/lab/pages
 !sites/lab/pages/*/index.js
 
 # dev auto-generated pages
-site/dev/pages/*
+sites/dev/pages/*
 # But not these
-!site/dev/pages/404.mjs
-!site/dev/pages/_app.mjs
-!site/dev/pages/contact.mjs
-!site/dev/pages/index.mjs
+!sites/dev/pages/404.mjs
+!sites/dev/pages/_app.mjs
+!sites/dev/pages/contact.mjs
+!sites/dev/pages/index.mjs
 
 # org auto-generated pages
 sites/org/pages/docs/*
