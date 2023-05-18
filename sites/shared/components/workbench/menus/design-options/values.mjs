@@ -35,7 +35,7 @@ export const CountOptionValue = ({ name, config, current }) =>
   )
 
 export const ListOptionValue = ({ name, config, current, t }) => {
-  const translate = config.doNotTranslate ? (input) => input : (input) => t(`${option}.o.${input}`)
+  const translate = config.doNotTranslate ? (input) => input : (input) => t(`${name}.o.${input}`)
 
   return config.dflt == current || typeof current === 'undefined' ? (
     <span className="text-secondary-focus">{translate(config.dflt)}</span>

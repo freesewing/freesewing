@@ -67,16 +67,18 @@ const values = {
 
 // Emojis for option groups :)
 const emojis = {
+  advanced: '🤓',
   fit: '👕',
   style: '💃🏽',
   dflt: '🕹️',
+  groupDflt: '📁',
 }
 
 const GroupTitle = ({ group, t, open = false }) => (
   <div className={`flex flex-row gap-1 items-center w-full ${open ? '' : 'justify-between'}`}>
     <span className="font-medium">
       <span role="img" className="pr-2">
-        {emojis[group] ? emojis[group] : emojis.dflt}
+        {emojis[group] ? emojis[group] : emojis.groupDflt}
       </span>
       {t(`design-options:${group}.t`)}
       {open ? ':' : ''}
@@ -138,7 +140,7 @@ export const DesignOption = ({
       <HelpIcon className="w-4 h-4" />
     </button>,
   ]
-  if (['pct'].includes(type))
+  if (['pct', 'count'].includes(type))
     openButtons.push(
       <button
         className="btn btn-xs btn-ghost px-0"
@@ -196,7 +198,7 @@ export const DesignOptionGroup = ({
           changed={wasChanged(settings.options?.[option], patternConfig.options[option])}
         />
       ) : (
-        <OptionGroup
+        <DesignOptionGroup
           {...{ design, patternConfig, settings, update, Option, t, loadDocs }}
           group={option}
           options={type}

@@ -25,12 +25,11 @@ const EditCount = (props) => (
   </div>
 )
 
-export const CountOptionInput = ({ name, config, current, update, t }) => {
+export const CountOptionInput = ({ name, design, config, current, update, t, override }) => {
   const { count, max, min } = config
   if (typeof current === 'undefined') current = count
 
   const [value, setValue] = useState(current)
-  const [editCount, setEditCount] = useState(false)
 
   const handleChange = (evt) => {
     const newCurrent = evt.target.value
@@ -43,10 +42,11 @@ export const CountOptionInput = ({ name, config, current, update, t }) => {
   }
 
   return (
-    <div className="py-4 mx-6 border-l-2 pl-2">
+    <>
+      <p>{t(`${design}:o.${name}.d`)}</p>
       <div className="flex flex-row justify-between">
-        {editCount ? (
-          <EditCount {...{ value, handleChange, min, max, setEditCount, t }} />
+        {override ? (
+          <EditCount {...{ value, handleChange, min, max, t }} />
         ) : (
           <>
             <span className="opacity-50">{min}</span>
@@ -64,25 +64,10 @@ export const CountOptionInput = ({ name, config, current, update, t }) => {
         onChange={handleChange}
         className={`
           range range-sm mt-1
-          ${val === count ? 'range-secondary' : 'range-accent'}
+          ${current === count ? 'range-secondary' : 'range-accent'}
         `}
       />
-      <div className="flex flex-row justify-between">
-        <span></span>
-        <div>
-          <button
-            title={t('editThing', { thing: '#' })}
-            className={`
-              btn btn-ghost btn-xs hover:text-secondary-focus
-              ${editCount ? 'text-accent' : 'text-secondary'}
-            `}
-            onClick={() => setEditCount(!editCount)}
-          >
-            <EditIcon />
-          </button>
-        </div>
-      </div>
-    </div>
+    </>
   )
 }
 
