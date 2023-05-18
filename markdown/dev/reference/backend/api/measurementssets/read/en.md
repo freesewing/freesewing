@@ -1,32 +1,37 @@
 ---
-title: Create a Person
+title: Read a Measurements Set
 ---
 
-Creates a new Person.
+Reads an existing measurements set.
 
 ## Access control
 
-- [Permission level](/reference/backend/api/rbac) `3` or higher is required to create a Person
+The [Permission level](/reference/backend/api/rbac) required to read a
+measurements set depends on:
+
+- Whether the measurements set is  `public`
+- Who created the measurements set
+
+The details are outlined in the table below:
+
+|                  | Public People   | Non-Public People   |
+| ---------------: | :-------------: | :-----------------: |
+| **Your own**     | `0` or higher   | `4` or higher       |
+| **Other user's** | `0` or higher   | `5` or higher       |
 
 ## Endpoints
 
-Creating a new Person is possible via these endpoints:
+Reading a measurements set is possible via these endpoints:
 
 | Method    | Path | Authentication |
 | --------: | :--- | :------------- |
-| <Method post /> | `/people/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
-| <Method post /> | `/people/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
+| <Method get /> | `/people/:id/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
+| <Method get /> | `/people/:id/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
 
-## Request body
+## Request url
 
-| Property    | Type     | Description |
-| ----------: | :------- | :---------- |
-| `img`       | `string` | An image [data-uri][duri] to store with this Person |
-| `imperial`  | `boolean`| Whether this Person prefers imperial measurements (`true`) or not (`false`) |
-| `name`      | `string` | A name for the Person |
-| `notes`     | `string` | User notes for the person |
-| `measies`   | `object` | The measurements for this person |
-| `public`    | `string` | The name of the design this Pattern is an instance of |
+The url should contain the ID of the measurements set you wish to read.
+It replaces the `:id` placeholder in the [endpoints listed above](#endpoints).
 
 ## Response status codes
 
@@ -34,14 +39,15 @@ Possible status codes for these endpoints are:
 
 | Status code | Description |
 | ----------: | :---------- |
-| <StatusCode status="201"/> | success |
+| <StatusCode status="200"/> | success |
 | <StatusCode status="400"/> | the request was malformed |
 | <StatusCode status="401"/> | the request lacks authentication |
 | <StatusCode status="403"/> | authentication failed |
+| <StatusCode status="404"/> | API key not found |
 | <StatusCode status="500"/> | server error |
 
 <Note>
-If the status code is not <StatusCode status="201" /> the `error` property
+If the status code is not <StatusCode status="200" /> the `error` property
 in the response body should indicate the nature of the problem.
 </Note>
 
@@ -64,19 +70,8 @@ in the response body should indicate the nature of the problem.
 ## Example request
 
 ```js
-const person = await axios.post(
-  'https://backend.freesewing.org/people/jwt',
-  {
-    name: "Someone",
-    notes: "These are some notes",
-    measies: {
-      "chest": 930,
-      "neck": 360
-    },
-    public: true,
-    imperial: false,
-    img: "data:image/png;base64,iVBORw0KGgoAAAANSUhEU...truncated"
-  },
+const person = await axios.get(
+  'https://backend.freesewing.org/people/27/jwt',
   {
     headers: {
       Authorization: `Bearer ${token}`
@@ -86,7 +81,7 @@ const person = await axios.post(
 ```
 
 ## Example response
-```201.json
+```200.json
 {
   "result": "success",
   "person": {
@@ -106,5 +101,3 @@ const person = await axios.post(
   }
 }
 ```
-
-[duri]: https://en.wikipedia.org/wiki/Data_URI_scheme
