@@ -7,7 +7,7 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
 import { loadSettingsConfig } from './config.mjs'
 // Components
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
-import { DynamicMdx } from 'shared/components/dynamic-mdx.mjs'
+import { DynamicCoreSettingsDocs } from 'shared/components/dynamic-docs/core-settings.mjs'
 import { SettingsIcon, ClearIcon, HelpIcon } from 'shared/components/icons.mjs'
 import Link from 'next/link'
 import {
@@ -119,10 +119,7 @@ export const Setting = ({
 
   const buttons = []
   const openButtons = [
-    <button
-      className="btn btn-xs btn-ghost px-0"
-      onClick={(evt) => loadDocs(evt, `site/draft/core-settings/${name}`)}
-    >
+    <button className="btn btn-xs btn-ghost px-0" onClick={(evt) => loadDocs(evt, name)}>
       <HelpIcon className="w-4 h-4" />
     </button>,
   ]
@@ -182,12 +179,12 @@ export const CoreSettings = ({ design, update, settings, patternConfig, language
   // Default control level is 2 (in case people are not logged in)
   const control = account.control || 2
 
-  const loadDocs = (evt, path = 'site/draft/core-settings') => {
+  const loadDocs = (evt, setting = false) => {
     evt.stopPropagation()
     setModal(
       <ModalWrapper>
         <div className="max-w-prose">
-          <DynamicMdx path={path} language={language} />
+          <DynamicCoreSettingsDocs setting={setting} language={language} />
         </div>
       </ModalWrapper>
     )

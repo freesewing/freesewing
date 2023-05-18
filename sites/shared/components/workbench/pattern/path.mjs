@@ -1,6 +1,10 @@
-import { TextOnPath } from './text.mjs'
+// Dependencies
 import { getProps } from './utils.mjs'
 import { round, formatMm } from 'shared/utils.mjs'
+// Hooks
+import { useTranslation } from 'next-i18next'
+// Components
+import { TextOnPath } from './text.mjs'
 import { RawSpan } from 'shared/components/raw-span.mjs'
 
 export const pointCoords = (point) =>
@@ -106,12 +110,12 @@ export const svgProps = {
   style: { maxHeight: 'inherit', strokeLinecap: 'round', strokeLinejoin: 'round' },
 }
 
-const Line = (props) => {
-  const ops = props.path.ops
+const Line = ({ path, pathName, partName, i, units }) => {
+  const ops = path.ops
   const from = ops[0].to
   const to = ops[1].to
   const { topLeft, bottomRight, w, h, size } = pathDimensions(from, to)
-  const id = `${props.partName}_${props.pathName}_${props.i}`
+  const id = `${partName}_${pathName}_${i}`
 
   const xyProps = {
     className: 'stroke-neutral-content',
@@ -133,7 +137,7 @@ const Line = (props) => {
       <TextAlongPath
         id={`${id}_x`}
         size={size / 18}
-        txt={formatMm(bottomRight.x - topLeft.x, props.gist.units, 'notags')}
+        txt={formatMm(bottomRight.x - topLeft.x, units, 'notags')}
       />
       <path
         id={`${id}_y`}
@@ -143,7 +147,7 @@ const Line = (props) => {
       <TextAlongPath
         id={`${id}_y`}
         size={size / 18}
-        txt={formatMm(bottomRight.y - topLeft.y, props.gist.units, 'notags')}
+        txt={formatMm(bottomRight.y - topLeft.y, units, 'notags')}
       />
       <path
         id={id}
@@ -152,23 +156,19 @@ const Line = (props) => {
         strokeLinecap="round"
         strokeWidth={size / 100}
       />
-      <TextAlongPath
-        id={id}
-        size={size / 18}
-        txt={formatMm(props.path.length(), props.gist.units, 'notags')}
-      />
+      <TextAlongPath id={id} size={size / 18} txt={formatMm(path.length(), units, 'notags')} />
       <PointCircle point={from} size={size} />
       <PointCircle point={to} size={size} />
     </svg>
   )
 }
 
-const Curve = (props) => {
-  const ops = props.path.ops
+const Curve = ({ path, pathName, partName, i }) => {
+  const ops = path.ops
   const from = ops[0].to
   const { to, cp1, cp2 } = ops[1]
-  const { topLeft, w, h, size, bbox } = pathDimensions(from, to, cp1, cp2, props.path)
-  const id = `${props.partName}_${props.pathName}_${props.i}`
+  const { topLeft, w, h, size, bbox } = pathDimensions(from, to, cp1, cp2, path)
+  const id = `${partName}_${pathName}_${i}`
 
   const cpProps = {
     className: 'stroke-success',
@@ -198,7 +198,7 @@ const Curve = (props) => {
       <TextAlongPath
         id={`${id}_x`}
         size={size / 18}
-        txt={formatMm(bbox.bottomRight.x - bbox.topLeft.x, props.gist.units, 'notags')}
+        txt={formatMm(bbox.bottomRight.x - bbox.topLeft.x, units, 'notags')}
       />
       <path
         id={`${id}_y`}
@@ -208,7 +208,7 @@ const Curve = (props) => {
       <TextAlongPath
         id={`${id}_y`}
         size={size / 18}
-        txt={formatMm(bbox.bottomRight.y - bbox.topLeft.y, props.gist.units, 'notags')}
+        txt={formatMm(bbox.bottomRight.y - bbox.topLeft.y, units, 'notags')}
       />
       <path id={`${id}_cp1`} {...cpProps} d={`M ${from.x},${from.y} L ${cp1.x},${cp1.y}`} />
       <PointCircle point={cp1} size={size} className="stroke-success" />
@@ -222,20 +222,16 @@ const Curve = (props) => {
         strokeLinecap="round"
         strokeWidth={size / 100}
       />
-      <TextAlongPath
-        id={id}
-        size={size / 18}
-        txt={formatMm(props.path.length(), props.gist.units, 'notags')}
-      />
+      <TextAlongPath id={id} size={size / 18} txt={formatMm(path.length(), units, 'notags')} />
       <PointCircle point={from} size={size} />
       <PointCircle point={to} size={size} />
     </svg>
   )
 }
 
-const MiniPath = (props) => {
-  const bbox = props.path.bbox()
-  const id = `${props.partName}_${props.pathName}_mini}`
+const MiniPath = ({ path, pathName, partName, units }) => {
+  const bbox = path.bbox()
+  const id = `${partName}_${pathName}_mini}`
   const w = bbox.bottomRight.x - bbox.topLeft.x
   const h = bbox.bottomRight.y - bbox.topLeft.y
   const size = w > h ? w : h
@@ -266,7 +262,7 @@ const MiniPath = (props) => {
       <TextAlongPath
         id={`${id}_x`}
         size={size / 18}
-        txt={formatMm(bbox.bottomRight.x - bbox.topLeft.x, props.gist.units, 'notags')}
+        txt={formatMm(bbox.bottomRight.x - bbox.topLeft.x, units, 'notags')}
       />
       <path
         id={`${id}_y`}
@@ -276,27 +272,23 @@ const MiniPath = (props) => {
       <TextAlongPath
         id={`${id}_y`}
         size={size / 18}
-        txt={formatMm(bbox.bottomRight.y - bbox.topLeft.y, props.gist.units, 'notags')}
+        txt={formatMm(bbox.bottomRight.y - bbox.topLeft.y, units, 'notags')}
       />
       <path
         id={id}
-        d={props.path.asPathstring()}
+        d={path.asPathstring()}
         className="stroke-neutral-content"
         fill="none"
         strokeLinecap="round"
         strokeWidth={size / 100}
       />
-      <TextAlongPath
-        id={id}
-        size={size / 18}
-        txt={formatMm(props.path.length(), props.gist.units, 'notags')}
-      />
+      <TextAlongPath id={id} size={size / 18} txt={formatMm(path.length(), units, 'notags')} />
       <XrayPath {...props} />)
     </svg>
   )
 }
 
-const lineInfo = (props) => (
+const lineInfo = ({ path, partName, units, i }) => (
   <div className="p-4 border bg-neutral bg-opacity-60 shadow rounded-lg">
     <h5 className="text-neutral-content text-center pb-4">Line info</h5>
     <div className="flex flex-row flex-wrap">
@@ -304,46 +296,36 @@ const lineInfo = (props) => (
         <tbody>
           <Tr>
             <KeyTd>From</KeyTd>
-            <ValTd>{pointCoords(props.path.ops[0].to)}</ValTd>
+            <ValTd>{pointCoords(path.ops[0].to)}</ValTd>
           </Tr>
           <Tr>
             <KeyTd>To</KeyTd>
-            <ValTd>{pointCoords(props.path.ops[1].to)}</ValTd>
+            <ValTd>{pointCoords(path.ops[1].to)}</ValTd>
           </Tr>
           <Tr>
             <KeyTd>Length</KeyTd>
-            <ValTd>{formatMm(props.path.length(), props.gist.units, 'notags')}</ValTd>
+            <ValTd>{formatMm(path.length(), units, 'notags')}</ValTd>
           </Tr>
           <Tr>
             <KeyTd>Width</KeyTd>
             <ValTd>
-              <RawSpan
-                html={formatMm(
-                  Math.abs(props.path.ops[0].to.dx(props.path.ops[1].to)),
-                  props.gist.units
-                )}
-              />
+              <RawSpan html={formatMm(Math.abs(path.ops[0].to.dx(path.ops[1].to)), units)} />
             </ValTd>
           </Tr>
           <Tr>
             <KeyTd>Height</KeyTd>
             <ValTd>
-              <RawSpan
-                html={formatMm(
-                  Math.abs(props.path.ops[0].to.dy(props.path.ops[1].to)),
-                  props.gist.units
-                )}
-              />
+              <RawSpan html={formatMm(Math.abs(path.ops[0].to.dy(path.ops[1].to)), units)} />
             </ValTd>
           </Tr>
           <Tr>
             <KeyTd>Part</KeyTd>
-            <ValTd>{props.partName}</ValTd>
+            <ValTd>{partName}</ValTd>
           </Tr>
           <Tr>
             <KeyTd>Draw Op</KeyTd>
             <ValTd>
-              {props.i}/{props.ops.length}
+              {i}/{ops.length}
             </ValTd>
           </Tr>
         </tbody>
@@ -355,23 +337,20 @@ const lineInfo = (props) => (
   </div>
 )
 
-const XrayLine = (props) => (
+const XrayLine = ({ i, path, partName, units, showInfo }) => (
   <>
     <path
-      d={props.path.asPathstring()}
-      {...getProps(props.path)}
+      d={path.asPathstring()}
+      {...getProps(path)}
       className="opacity-0 stroke-4xl stroke-note hover:opacity-25 hover:cursor-pointer"
-      onClick={(evt) => {
-        evt.stopPropagation()
-        props.showInfo(lineInfo(props))
-      }}
+      onClick={(evt) => showInfo(evt, lineInfo({ path, partName, units, i }))}
     />
-    <EpCircle point={props.path.ops[0].to} />
-    <EpCircle point={props.path.ops[1].to} />
+    <EpCircle point={path.ops[0].to} />
+    <EpCircle point={path.ops[1].to} />
   </>
 )
 
-const curveInfo = (props) => (
+const curveInfo = ({ i, path, partName, units }) => (
   <div className="p-4 border bg-neutral bg-opacity-40 shadow rounded-lg">
     <h5 className="text-neutral-content text-center pb-4">Curve info</h5>
     <div className="flex flex-row flex-wrap">
@@ -379,56 +358,46 @@ const curveInfo = (props) => (
         <tbody>
           <Tr>
             <KeyTd>From</KeyTd>
-            <ValTd>{pointCoords(props.path.ops[0].to)}</ValTd>
+            <ValTd>{pointCoords(path.ops[0].to)}</ValTd>
           </Tr>
           <Tr>
             <KeyTd>Cp1</KeyTd>
-            <ValTd>{pointCoords(props.path.ops[1].cp1)}</ValTd>
+            <ValTd>{pointCoords(path.ops[1].cp1)}</ValTd>
           </Tr>
           <Tr>
             <KeyTd>Cp2</KeyTd>
-            <ValTd>{pointCoords(props.path.ops[1].cp2)}</ValTd>
+            <ValTd>{pointCoords(path.ops[1].cp2)}</ValTd>
           </Tr>
           <Tr>
             <KeyTd>To</KeyTd>
-            <ValTd>{pointCoords(props.path.ops[1].to)}</ValTd>
+            <ValTd>{pointCoords(path.ops[1].to)}</ValTd>
           </Tr>
           <Tr>
             <KeyTd>Length</KeyTd>
             <ValTd>
-              <RawSpan html={formatMm(props.path.length(), props.gist.units)} />
+              <RawSpan html={formatMm(path.length(), units)} />
             </ValTd>
           </Tr>
           <Tr>
             <KeyTd>Width</KeyTd>
             <ValTd>
-              <RawSpan
-                html={formatMm(
-                  Math.abs(props.path.ops[0].to.dx(props.path.ops[1].to)),
-                  props.gist.units
-                )}
-              />
+              <RawSpan html={formatMm(Math.abs(path.ops[0].to.dx(path.ops[1].to)), units)} />
             </ValTd>
           </Tr>
           <Tr>
             <KeyTd>Height</KeyTd>
             <ValTd>
-              <RawSpan
-                html={formatMm(
-                  Math.abs(props.path.ops[0].to.dy(props.path.ops[1].to)),
-                  props.gist.units
-                )}
-              />
+              <RawSpan html={formatMm(Math.abs(path.ops[0].to.dy(path.ops[1].to)), units)} />
             </ValTd>
           </Tr>
           <Tr>
             <KeyTd>Part</KeyTd>
-            <ValTd>{props.partName}</ValTd>
+            <ValTd>{partName}</ValTd>
           </Tr>
           <Tr>
             <KeyTd>Draw Op</KeyTd>
             <ValTd>
-              {props.i}/{props.ops.length}
+              {i}/{ops.length}
             </ValTd>
           </Tr>
         </tbody>
@@ -451,74 +420,71 @@ export const Attributes = ({ list }) =>
     </ul>
   ) : null
 
-export const pathInfo = (props) => {
-  const bbox = props.path.bbox()
+export const pathInfo = ({ pathName, path, partName, units, showInfo }) => {
+  const { t } = useTranslation(['workbench'])
+  const bbox = path.bbox()
 
   return (
     <div className="p-4 border bg-neutral bg-opacity-40 shadow rounded-lg">
-      <h5 className="text-neutral-content text-center pb-4">Path info</h5>
+      <h5 className="text-neutral-content text-center pb-4">{t('pathInfo')}</h5>
       <div className="flex flex-row flex-wrap overflow-scroll" style={{ maxHeight: '80vh' }}>
         <div>
           <table className="border-collapse h-fit">
             <tbody>
               <Tr>
-                <KeyTd>Name</KeyTd>
-                <ValTd>{props.pathName}</ValTd>
+                <KeyTd>{t('name')}</KeyTd>
+                <ValTd>{pathName}</ValTd>
               </Tr>
               <Tr>
-                <KeyTd>Length</KeyTd>
+                <KeyTd>{t('length')}</KeyTd>
                 <ValTd>
-                  <RawSpan html={formatMm(props.path.length(), props.gist.units)} />
+                  <RawSpan html={formatMm(path.length(), units)} />
                 </ValTd>
               </Tr>
               <Tr>
-                <KeyTd>Width</KeyTd>
+                <KeyTd>{t('width')}</KeyTd>
                 <ValTd>
-                  <RawSpan
-                    html={formatMm(Math.abs(bbox.bottomRight.x - bbox.topLeft.x), props.gist.units)}
-                  />
+                  <RawSpan html={formatMm(Math.abs(bbox.bottomRight.x - bbox.topLeft.x), units)} />
                 </ValTd>
               </Tr>
               <Tr>
-                <KeyTd>Height</KeyTd>
+                <KeyTd>{t('height')}</KeyTd>
                 <ValTd>
-                  <RawSpan
-                    html={formatMm(Math.abs(bbox.bottomRight.y - bbox.topLeft.y), props.gist.units)}
-                  />
+                  <RawSpan html={formatMm(Math.abs(bbox.bottomRight.y - bbox.topLeft.y), units)} />
                 </ValTd>
               </Tr>
               <Tr>
-                <KeyTd>Top Left</KeyTd>
+                <KeyTd>{t('topLeft')}</KeyTd>
                 <ValTd>{pointCoords(bbox.topLeft)}</ValTd>
               </Tr>
               <Tr>
-                <KeyTd>Bottom Right</KeyTd>
+                <KeyTd>{t('bottomRight')}</KeyTd>
                 <ValTd>{pointCoords(bbox.bottomRight)}</ValTd>
               </Tr>
               <Tr>
-                <KeyTd>Part</KeyTd>
-                <ValTd>{props.partName}</ValTd>
+                <KeyTd>{t('part')}</KeyTd>
+                <ValTd>{partName}</ValTd>
               </Tr>
               <Tr>
-                <KeyTd>Attributes</KeyTd>
+                <KeyTd>{t('attributes')}</KeyTd>
                 <ValTd>
-                  <Attributes list={props.path.attributes.list} />
+                  <Attributes list={path.attributes.list} />
                 </ValTd>
               </Tr>
             </tbody>
           </table>
           <div className="flex flex-row flex-wrap gap-2 mt-4">
-            <button className="btn btn-success" onClick={() => console.log(props.path)}>
+            <button className="btn btn-success" onClick={() => console.log(path)}>
               console.log(path)
             </button>
-            <button className="btn btn-success" onClick={() => console.table(props.path)}>
+            <button className="btn btn-success" onClick={() => console.table(path)}>
               console.table(path)
             </button>
           </div>
         </div>
         <table className="border-collapse h-fit">
           <tbody>
-            {props.path.ops.map((op, i) => (
+            {path.ops.map((op, i) => (
               <Tr key={i}>
                 <KeyTd>{i}</KeyTd>
                 <ValTd>
@@ -529,7 +495,7 @@ export const pathInfo = (props) => {
           </tbody>
         </table>
         <div className="max-w-md">
-          <MiniPath {...props} />
+          <MiniPath {...{ pathName, path, partName, units, showInfo }} />
         </div>
       </div>
     </div>
@@ -564,20 +530,17 @@ const PathOp = ({ op }) => {
   else return <strong>FIXME: unknown path operation type: {op.type}</strong>
 }
 
-const XrayCurve = (props) => {
-  const from = props.path.ops[0].to
-  const { cp1, cp2, to } = props.path.ops[1]
+const XrayCurve = ({ i, path, ops, units, showInfo }) => {
+  const from = path.ops[0].to
+  const { cp1, cp2, to } = path.ops[1]
 
   return (
     <>
       <path
-        d={props.path.asPathstring()}
-        {...getProps(props.path)}
+        d={path.asPathstring()}
+        {...getProps(path)}
         className="opacity-0 stroke-4xl stroke-lining hover:opacity-25 hover:cursor-pointer"
-        onClick={(evt) => {
-          evt.stopPropagation()
-          props.showInfo(curveInfo(props))
-        }}
+        onClick={(evt) => showInfo(evt, curveInfo({ i, path, partName, units }))}
       />
       <path d={`M ${from.x},${from.y} L ${cp1.x},${cp1.y}`} className="lining dotted" />
       <path d={`M ${to.x},${to.y} L ${cp2.x},${cp2.y}`} className="lining dotted" />
@@ -589,44 +552,27 @@ const XrayCurve = (props) => {
   )
 }
 
-const XrayPath = (props) => {
-  const classes = props.path.attributes.get('class')
+const XrayPath = ({ path, pathName, partName, units, showInfo }) => {
+  const classes = path.attributes.get('class')
   if (typeof classes === 'string' && classes.includes('noxray')) return null
-  const ops = props.path.divide()
+  const ops = path.divide()
 
   return (
     <g>
       <path
-        d={props.path.asPathstring()}
-        {...getProps(props.path)}
+        d={path.asPathstring()}
+        {...getProps(path)}
         className="opacity-0 stroke-7xl stroke-contrast hover:opacity-25 hover:cursor-pointer"
-        onClick={(evt) => {
-          evt.preventDefault()
-          props.showInfo(pathInfo(props))
-        }}
+        onClick={(evt) => showInfo(evt, pathInfo({ pathName, path, partName, units }))}
         markerStart="none"
         markerEnd="none"
       />
       {ops.length > 0
         ? ops.map((op, i) =>
             op.ops[1].type === 'curve' ? (
-              <XrayCurve
-                {...props}
-                path={op}
-                ops={ops}
-                i={i}
-                pathName={`${props.pathName}_test`}
-                key={i}
-              />
+              <XrayCurve path={op} ops={ops} i={i} pathName={`${pathName}_test`} key={i} />
             ) : (
-              <XrayLine
-                {...props}
-                path={op}
-                ops={ops}
-                i={i}
-                pathName={`${props.pathName}_test`}
-                key={i}
-              />
+              <XrayLine path={op} ops={ops} i={i} pathName={`${pathName}_test`} key={i} />
             )
           )
         : null}
@@ -634,8 +580,7 @@ const XrayPath = (props) => {
   )
 }
 
-export const Path = (props) => {
-  const { path, partName, pathName } = props
+export const Path = ({ pathName, path, partName, part, units, showInfo, ui, update }) => {
   if (path.hidden) return null
   const output = []
   const pathId = 'path-' + partName + '-' + pathName
@@ -650,8 +595,10 @@ export const Path = (props) => {
 
   output.push(<path id={pathId} key={pathId} d={d} {...getProps(path)} />)
   if (path.attributes.get('data-text'))
-    output.push(<TextOnPath key={'text-on-path-' + name} pathId={pathId} {...props} />)
-  if (props.gist._state?.xray?.enabled) output.push(<XrayPath {...props} key={'xpath' + pathId} />)
+    output.push(
+      <TextOnPath key={'text-on-path-' + name} pathId={pathId} {...{ path, ui, showInfo }} />
+    )
+  if (ui.xray?.enabled) output.push(<XrayPath key={'xpath' + pathId} />)
 
   return output
 }

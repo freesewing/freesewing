@@ -8,4 +8,15 @@ export: Export
 edit: Edit
 clear: Clear
 help: Help
-
+name: Name
+width: Width
+height: Height
+length: Length
+topLeft: Top Left
+bottomRight: Bottom Right
+attributes: Attributes
+showAllParts: Show all pattern parts
+showOnlyThisPart: Show only this pattern part
+partInfo: Pattern part info
+pathInfo: Path info
+part: Pattern part

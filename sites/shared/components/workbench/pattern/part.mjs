@@ -1,71 +1,76 @@
+// Dependencies
 import { forwardRef } from 'react'
+import { round } from 'shared/utils.mjs'
+import { getProps } from './utils.mjs'
+// Hooks
+import { useTranslation } from 'next-i18next'
+// Components
 import { Point } from './point.mjs'
 import { Snippet } from './snippet.mjs'
-import { getProps } from './utils.mjs'
-import { round } from 'shared/utils.mjs'
 import { Path, Tr, KeyTd, ValTd, Attributes, pointCoords } from './path.mjs'
 
-const partInfo = (props) => (
-  <div className="p-4 border bg-neutral bg-opacity-40 shadow rounded-lg">
-    <h5 className="text-neutral-content text-center pb-4">Part info</h5>
-    <table className="border-collapse h-fit">
-      <tbody>
-        <Tr>
-          <KeyTd>Name</KeyTd>
-          <ValTd>{props.partName}</ValTd>
-        </Tr>
-        <Tr>
-          <KeyTd>Width</KeyTd>
-          <ValTd>{round(props.part.width, 2)}mm</ValTd>
-        </Tr>
-        <Tr>
-          <KeyTd>Height</KeyTd>
-          <ValTd>{round(props.part.height, 2)}mm</ValTd>
-        </Tr>
-        <Tr>
-          <KeyTd>Top Left</KeyTd>
-          <ValTd>{pointCoords(props.part.topLeft)}</ValTd>
-        </Tr>
-        <Tr>
-          <KeyTd>Bottom Right</KeyTd>
-          <ValTd>{pointCoords(props.part.bottomRight)}</ValTd>
-        </Tr>
-        <Tr>
-          <KeyTd>Attributes</KeyTd>
-          <ValTd>
-            <Attributes list={props.part.attributes.list} />
-          </ValTd>
-        </Tr>
-      </tbody>
-    </table>
-    <div className="flex flex-row flex-wrap gap-2 mt-4">
-      {props.gist?.only && props.gist.only.length > 0 ? (
-        <button className="btn btn-primary" onClick={() => props.unsetGist(['only'])}>
-          Show all parts
-        </button>
-      ) : (
-        <button
-          className="btn btn-primary"
-          onClick={() => props.updateGist(['only'], [props.partName])}
-        >
-          Show only this part
-        </button>
-      )}
-      <button className="btn btn-success" onClick={() => console.log(props.part)}>
-        console.log(part)
-      </button>
-      <button className="btn btn-success" onClick={() => console.table(props.part.points)}>
-        console.table(part.points)
-      </button>
-      <button className="btn btn-success" onClick={() => console.table(props.part.paths)}>
-        console.table(part.paths)
-      </button>
-    </div>
-  </div>
-)
+const partInfo = ({ partName, part, settings, update }) => {
+  const { t } = useTranslation(['workbench'])
 
-const XrayPart = (props) => {
-  const { topLeft, bottomRight } = props.part
+  return (
+    <div className="p-4 border bg-neutral bg-opacity-40 shadow rounded-lg">
+      <h5 className="text-neutral-content text-center pb-4">{t('partInfo')}</h5>
+      <table className="border-collapse h-fit">
+        <tbody>
+          <Tr>
+            <KeyTd>{t('name')})</KeyTd>
+            <ValTd>{partName}</ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>{t('width')}</KeyTd>
+            <ValTd>{round(part.width, 2)}mm</ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>{t('height')}</KeyTd>
+            <ValTd>{round(part.height, 2)}mm</ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>{t('topLeft')}</KeyTd>
+            <ValTd>{pointCoords(part.topLeft)}</ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>{t('bottomRight')}</KeyTd>
+            <ValTd>{pointCoords(part.bottomRight)}</ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>{t('attributes')}</KeyTd>
+            <ValTd>
+              <Attributes list={part.attributes.list} />
+            </ValTd>
+          </Tr>
+        </tbody>
+      </table>
+      <div className="flex flex-row flex-wrap gap-2 mt-4">
+        {settings.only && settings.only.length > 0 ? (
+          <button className="btn btn-primary" onClick={() => update.settings(['only'])}>
+            {t('showAllParts')}
+          </button>
+        ) : (
+          <button className="btn btn-primary" onClick={() => update.settings(['only'], [partName])}>
+            {t('showOnlyThisPart')}
+          </button>
+        )}
+        <button className="btn btn-success" onClick={() => console.log(part)}>
+          console.log(part)
+        </button>
+        <button className="btn btn-success" onClick={() => console.table(part.points)}>
+          console.table(part.points)
+        </button>
+        <button className="btn btn-success" onClick={() => console.table(part.paths)}>
+          console.table(part.paths)
+        </button>
+      </div>
+    </div>
+  )
+}
+
+const XrayPart = ({ partName, part, settings, showInfo, update }) => {
+  const { topLeft, bottomRight } = part
 
   return (
     <g>
@@ -79,20 +84,15 @@ const XrayPart = (props) => {
         `}
         className={`peer stroke-note lashed opacity-30 hover:opacity-90 fill-fabric hover:cursor-pointer hover:stroke-mark`}
         style={{ fillOpacity: 0 }}
-        onClick={(evt) => {
-          evt.stopPropagation()
-          props.showInfo(partInfo(props))
-        }}
+        onClick={(evt) => showInfo(evt, partInfo({ partName, part, settings, update }))}
       />
     </g>
   )
 }
 
-export const PartInner = forwardRef((props, ref) => {
-  const { partName, part, gist, skipGrid } = props
-
+export const PartInner = forwardRef(({ partName, part, settings, showInfo, ui, update }, ref) => {
   const Grid =
-    gist.paperless && !skipGrid ? (
+    settings.paperless && !ui.skipGrid ? (
       <rect
         x={part.topLeft.x}
         y={part.topLeft.y}
@@ -106,33 +106,34 @@ export const PartInner = forwardRef((props, ref) => {
   return (
     <g ref={ref}>
       {Grid}
-      {gist._state?.xray?.enabled && <XrayPart {...props} />}
+      {ui.xray?.enabled && <XrayPart {...{ partName, part, settings, showInfo, update }} />}
       {Object.keys(part.paths).map((pathName) => (
         <Path
           key={pathName}
           pathName={pathName}
           path={part.paths[pathName]}
-          topLeft={props.part.topLeft}
-          bottomRight={props.part.bottomRight}
-          {...props}
+          topLeft={part.topLeft}
+          bottomRight={part.bottomRight}
+          units={settings.units}
+          {...{ partName, part, showInfo, ui, update }}
         />
       ))}
-      {Object.keys(props.part.points).map((pointName) => (
+      {Object.keys(part.points).map((pointName) => (
         <Point
           key={pointName}
           pointName={pointName}
-          point={props.part.points[pointName]}
-          topLeft={props.part.topLeft}
-          bottomRight={props.part.bottomRight}
-          {...props}
+          point={part.points[pointName]}
+          topLeft={part.topLeft}
+          bottomRight={part.bottomRight}
+          {...{ partName, part, settings, showInfo, ui, update }}
         />
       ))}
-      {Object.keys(props.part.snippets).map((snippetName) => (
+      {Object.keys(part.snippets).map((snippetName) => (
         <Snippet
           key={snippetName}
           snippetName={snippetName}
-          snippet={props.part.snippets[snippetName]}
-          {...props}
+          snippet={part.snippets[snippetName]}
+          {...{ partName, part, settings, showInfo, ui, update }}
         />
       ))}
     </g>
@@ -141,16 +142,12 @@ export const PartInner = forwardRef((props, ref) => {
 
 PartInner.displayName = 'PartInner'
 
-export const Part = (props) => {
-  const { partName, part } = props
-
-  return (
-    <g
-      {...getProps(part)}
-      id={`${part.context.settings.idPrefix || ''}part-${partName}`}
-      className={part.context.settings.idPrefix || ''}
-    >
-      <PartInner {...props} />
-    </g>
-  )
-}
+export const Part = ({ partName, part, settings, showInfo, ui, update }) => (
+  <g
+    {...getProps(part)}
+    id={`${part.context.settings.idPrefix || ''}part-${partName}`}
+    className={part.context.settings.idPrefix || ''}
+  >
+    <PartInner {...{ partName, part, settings, showInfo, ui, update }} />
+  </g>
+)

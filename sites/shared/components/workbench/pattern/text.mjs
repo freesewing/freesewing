@@ -1,53 +1,49 @@
 import { useTranslation } from 'next-i18next'
 import { Tr, KeyTd, ValTd, Attributes, pointCoords, pathInfo } from './path.mjs'
 
-const textInfo = (props) =>
-  props.point ? (
+const textInfo = ({ point, pointName, partName }) =>
+  point ? (
     <div className="p-4 border bg-neutral bg-opacity-60 shadow rounded-lg">
       <h5 className="text-neutral-content text-center pb-4">Text info</h5>
       <table className="border-collapse h-fit">
         <tbody>
           <Tr>
             <KeyTd>Coordinates</KeyTd>
-            <ValTd>{pointCoords(props.point)}</ValTd>
+            <ValTd>{pointCoords(point)}</ValTd>
           </Tr>
           <Tr>
             <KeyTd>Name</KeyTd>
-            <ValTd>{props.pointName}</ValTd>
+            <ValTd>{pointName}</ValTd>
           </Tr>
           <Tr>
             <KeyTd>Part</KeyTd>
-            <ValTd>{props.partName}</ValTd>
+            <ValTd>{partName}</ValTd>
           </Tr>
           <Tr>
             <KeyTd>Attributes</KeyTd>
             <ValTd>
-              <Attributes list={props.point.attributes.list} />
+              <Attributes list={point.attributes.list} />
             </ValTd>
           </Tr>
         </tbody>
       </table>
       <div className="flex flex-col flex-wrap gap-2 mt-4">
-        <button className="btn btn-success" onClick={() => console.log(props.point)}>
+        <button className="btn btn-success" onClick={() => console.log(point)}>
           console.log(point)
         </button>
-        <button className="btn btn-success" onClick={() => console.table(props.point)}>
+        <button className="btn btn-success" onClick={() => console.table(point)}>
           console.table(point)
         </button>
       </div>
     </div>
   ) : null
 
-const XrayText = (props) => (
-  <text x={props.point.x} y={props.point.y} {...props.attr}>
+const XrayText = ({ point, pointName, partName, attr, showInfo }) => (
+  <text x={point.x} y={point.y} {...attr}>
     <TextSpans
-      {...props}
       className="stroke-transparent stroke-4xl opacity-10 hover:cursor-pointer hover:stroke-secondary"
       style={{ strokeOpacity: 0.25 }}
-      onClick={(evt) => {
-        evt.stopPropagation()
-        props.showInfo(textInfo(props))
-      }}
+      onClick={(evt) => showInfo(evt, textInfo({ point, pointName, partName }))}
     />
   </text>
 )
@@ -90,57 +86,54 @@ const TextSpans = ({ point, className = '', style = {}, onClick = null }) => {
   return text
 }
 
-export const Text = (props) => {
-  const attr = props.point.attributes.asPropsIfPrefixIs('data-text-')
+export const Text = ({ point, ui, pointName, partName, showInfo }) => {
+  const attr = point.attributes.asPropsIfPrefixIs('data-text-')
 
   return (
     <>
-      <text x={props.point.x} y={props.point.y} {...attr}>
-        <TextSpans {...props} />
+      <text x={point.x} y={point.y} {...attr}>
+        <TextSpans point={point} />
       </text>
-      {props.gist._state?.xray?.enabled && <XrayText {...props} attr={attr} />}
+      {ui.xray?.enabled && <XrayText {...{ points, pointName, partName, attr, showInfo }} />}
     </>
   )
 }
 
-const XrayTextOnPath = (props) => (
+const XrayTextOnPath = ({ pathId, path, partName, attr, translated, units, showInfo }) => (
   <tspan
-    {...props.attr}
-    dangerouslySetInnerHTML={{ __html: props.translated }}
-    className={`${props.attr.className} no-fill stroke-transparent stroke-4xl opacity-10 hover:cursor-pointer hover:stroke-secondary`}
+    {...attr}
+    dangerouslySetInnerHTML={{ __html: translated }}
+    className={`${attr.className} no-fill stroke-transparent stroke-4xl opacity-10 hover:cursor-pointer hover:stroke-secondary`}
     style={{ strokeOpacity: 0.25 }}
-    onClick={(evt) => {
-      evt.stopPropagation()
-      props.showInfo(pathInfo(props))
-    }}
+    onClick={(evt) => showInfo(evt, pathInfo({ pathId, path, partName, units, showInfo }))}
   />
 )
 
-export const TextOnPath = (props) => {
+export const TextOnPath = ({ path, pathId, ui, showInfo }) => {
   const { t } = useTranslation(['plugin'])
   // Handle translation (and spaces)
   let translated = ''
-  for (let string of props.path.attributes.getAsArray('data-text')) {
+  for (let string of path.attributes.getAsArray('data-text')) {
     translated += t(string).replace(/&quot;/g, '"') + ' '
   }
   const textPathProps = {
-    xlinkHref: '#' + props.pathId,
+    xlinkHref: '#' + pathId,
     startOffset: '0%',
   }
-  const align = props.path.attributes.get('data-text-class')
+  const align = path.attributes.get('data-text-class')
   if (align && align.indexOf('center') > -1) textPathProps.startOffset = '50%'
   else if (align && align.indexOf('right') > -1) textPathProps.startOffset = '100%'
 
-  const attr = props.path.attributes.asPropsIfPrefixIs('data-text-')
+  const attr = path.attributes.asPropsIfPrefixIs('data-text-')
 
   return (
     <text>
       <textPath {...textPathProps}>
         <tspan {...attr} dangerouslySetInnerHTML={{ __html: translated }} />
       </textPath>
-      {props.gist._state?.xray?.enabled && (
+      {ui.xray?.enabled && (
         <textPath {...textPathProps}>
-          <XrayTextOnPath {...props} attr={attr} translated={translated} />
+          <XrayTextOnPath {...{ pathId, path, partName, units, showInfo, attr, translated }} />
         </textPath>
       )}
     </text>

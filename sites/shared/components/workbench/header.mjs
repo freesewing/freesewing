@@ -64,6 +64,7 @@ export const colors = [
   'yellow',
   'lime',
   'green',
+  'teal',
   'cyan',
   'blue',
   'indigo',

@@ -17,6 +17,7 @@ export const DraftView = ({
   <div className="flex flex-row items-top">
     <div className="w-2/3 shrink-0 grow lg:p-4">
       <Pattern {...{ pattern, setView, settings, ui, update }} />
+      <pre>{JSON.stringify(settings, null, 2)}</pre>
     </div>
     <div className="w-1/3 shrink grow-0 lg:p-4 max-w-2xl">
       <DraftMenu {...{ design, pattern, patternConfig, settings, ui, update, language, account }} />

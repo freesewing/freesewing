@@ -1,8 +1,14 @@
-import { forwardRef } from 'react'
+// Dependencies
+import { forwardRef, useContext } from 'react'
+// Context
+import { ModalContext } from 'shared/context/modal-context.mjs'
+// Components
 import { SizeMe } from 'react-sizeme'
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch'
 import { Defs } from './defs.mjs'
 import { Stack } from './stack.mjs'
+
+export const ns = ['workbench']
 
 export const Svg = forwardRef(
   (
@@ -69,9 +75,20 @@ Svg.displayName = 'Svg'
  */
 
 export const SvgWrapper = forwardRef((props, ref) => {
-  const { patternProps = false, gist, updateGist, unsetGist, showInfo, viewBox } = props
+  const { setModal } = useContext(ModalContext)
 
-  if (!patternProps) return null
+  const { renderProps = false, update, settings, ui } = props
+
+  if (!renderProps) return null
+
+  const showInfo = (evt, info = null) => {
+    evt.stopPropagation()
+    setModal(
+      <ModalWrapper>
+        <div className="max-w-prose">{info}</div>
+      </ModalWrapper>
+    )
+  }
 
   return (
     <SizeMe refreshRate={64}>
@@ -83,19 +100,24 @@ export const SvgWrapper = forwardRef((props, ref) => {
         >
           <TransformComponent>
             <div style={{ width: size.width + 'px' }} className="max-h-screen">
-              <Svg {...patternProps} viewBox={viewBox} embed={gist.embed} ref={ref}>
-                <Defs {...patternProps} />
-                <style>{`:root { --pattern-scale: ${gist.scale || 1}} ${
-                  patternProps.svg.style
+              <Svg
+                {...renderProps}
+                viewBox={`0 0 ${renderProps.width} ${renderProps.height}`}
+                embed={settings.embed}
+                ref={ref}
+              >
+                <Defs {...renderProps} />
+                <style>{`:root { --pattern-scale: ${settings.scale || 1}} ${
+                  renderProps.svg.style
                 }`}</style>
                 <g>
                   {props.children ||
-                    Object.keys(patternProps.stacks).map((stackName) => (
+                    Object.keys(renderProps.stacks).map((stackName) => (
                       <Stack
-                        {...{ gist, updateGist, unsetGist, showInfo, patternProps }}
+                        {...{ settings, showInfo, ui, update }}
                         key={stackName}
                         stackName={stackName}
-                        stack={patternProps.stacks[stackName]}
+                        stack={renderProps.stacks[stackName]}
                       />
                     ))}
                 </g>
