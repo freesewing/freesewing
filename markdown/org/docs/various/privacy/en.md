@@ -14,7 +14,7 @@ For clarity, we've broken this up in four different types of roles:
 - For **visitors of our website**, we store **[visitor data][v]**
 - For **subscribers to our newsletter**, we store **[subscriber data][s]**
 - For **users with an account** on our website, we store **[account data][a]**
-- For **users with an account that contains people**, we store **[people data][p]**
+- For **users with an account that contains measurements set data**, we store **[measurements set data][p]**
 
 Here are the relevant sections:
 
