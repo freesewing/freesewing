@@ -18,7 +18,7 @@ for.
 
 ### The `measies` property holds measurements
 
-These measurments should be structured as an object that can be used for the
+These measurements should be structured as an object that can be used for the
 `measurements` key in the [pattern settings
 object](/reference/settings/measurements).
 
