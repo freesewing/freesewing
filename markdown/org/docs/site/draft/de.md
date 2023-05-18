@@ -1,7 +1,5 @@
 ---
 title: Generating patterns
-authors:
-  - joostdecock
 ---
 
 Generating custom sewing patterns based on your measurments is the flagship feature of our website.

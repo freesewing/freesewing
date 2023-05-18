@@ -1,7 +1,5 @@
 ---
 title: Include Seam Allowance
-authors:
-  - joostdecock
 ---
 
 This [Core Setting][core-settings] controls whether or not to include seam

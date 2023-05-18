@@ -1,7 +1,5 @@
 ---
 title: Core Settings
-authors:
-  - joostdecock
 ---
 
 The **Core Settings** menu allows you to tweak various aspects of the

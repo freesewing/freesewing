@@ -1,7 +1,5 @@
 ---
 title: Language
-authors:
-  - joostdecock
 ---
 
 

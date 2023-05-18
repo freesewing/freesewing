@@ -1,7 +1,5 @@
 ---
 title: Seam Allowance Size
-authors:
-  - joostdecock
 ---
 
 This [Core Setting][core-settings] controls the base size of your seam

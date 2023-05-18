@@ -1,7 +1,5 @@
 ---
 title: Units
-authors:
-  - joostdecock
 ---
 
 

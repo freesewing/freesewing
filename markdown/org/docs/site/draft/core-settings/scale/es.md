@@ -1,7 +1,5 @@
 ---
 title: Scale
-authors:
-  - joostdecock
 ---
 
 

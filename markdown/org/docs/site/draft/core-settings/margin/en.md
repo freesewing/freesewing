@@ -1,7 +1,5 @@
 ---
 title: Margin
-authors:
-  - joostdecock
 ---
 
 

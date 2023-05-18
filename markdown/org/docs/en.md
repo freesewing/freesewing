@@ -1,8 +1,5 @@
 ---
 title: Documentation
-authors:
-  - joostdecock
-updated: 20230515
 ---
 
 Welcome to the FreeSewing documentation for makers. Here you will find all the [documentation for our various designs](/docs/designs) as
