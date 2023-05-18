@@ -7,19 +7,19 @@ Benjamin is a rather simple pattern, but your options will determine what needs 
 ## Sin cinta de ajuste
 
 - **Tela principal**
-  - Cortar **4 nudo**
-  - Corta **2 banda de collar**
+  - Cut **4 Bow** parts
+  - Cut **2 Collar Band** parts
 - **Interfaz**
-  - Corta **nudo de interfaz**
-  - Corta **2 banda de collar interface**
+  - Cut **4 Bow** parts
+  - Cut **2 Collar Band** parts
 
 ## Con cinta de ajuste
 
 - **Tela principal**
-  - Cortar **1 nudo 1**
-  - Cortar **1 nudo 2**
-  - Cortar **2 nudo 3**
+  - Cut **1 Short Bow** part
+  - Cut **2 Medium Bow** parts
+  - Cut **1 Long Bow** part
 - **Interfaz**
-  - Cortar **1 nudo de interfaz 1**
-  - Cortar **1 nudo de interfaz 2**
-  - Corta **2 nudo de interfaz 3**
+  - Cut **1 Short Bow** part
+  - Cut **2 Medium Bow** parts
+  - Cut **1 Long Bow** part

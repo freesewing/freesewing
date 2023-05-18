@@ -6,7 +6,7 @@ title: "Benjamin bow tie: Sewing Instructions"
 
 ### Präzision
 
-Since a bow tie is a rather small item, precission with sewing is key to a good result. Any slight difference between the upper and lower part of the bow will stand out. Um gute Ergebnisse zu erzielen, fand ich es immer sehr hilfreich, die Nahtlinie auf die Einlage zu übertragen und dieser beim Nähen zu folgen.
+Since a bow tie is a rather small item, precision with sewing is key to a good result. Any slight difference between the upper and lower part of the bow will stand out. Um gute Ergebnisse zu erzielen, fand ich es immer sehr hilfreich, die Nahtlinie auf die Einlage zu übertragen und dieser beim Nähen zu folgen.
 
 ### Setze das Bügeleisen weise ein
 
@@ -25,11 +25,23 @@ page on [Fabric grain](/docs/sewing/fabric-grain).
 
 </Note>
 
-### Fliegen-Einstellband
+### Bow tie adjustment ribbon and hardware
 
-Dieses Schnittmuster ermöglicht es dir, eine Fliege zu erstellen, die genau die richtige Länge für einen bestimmten Hals hat. Es ermöglicht es dir auch, eine Fliege zu erstellen, die ein Band und das nötige Zubehör hat, um die Fliege für verschiedene Hälse anpassbar zu machen. Das ist sehr nützlich, wenn deine Hemden nicht alle dasselbe Halsmaß/Kragenweite haben oder wenn du manchmal gerne Hemden trägst, die etwas mehr Zugabe am Hals haben.
+By default, this design makes a fixed-length bow tie that is the right length for a certain neck size. However, by enabling the Adjustment Ribbon option, it can also make a tie that uses an adjustment ribbon and hardware that makes the bow tie adjustable to different neck sizes. Das ist sehr nützlich, wenn deine Hemden nicht alle dasselbe Halsmaß/Kragenweite haben oder wenn du manchmal gerne Hemden trägst, die etwas mehr Zugabe am Hals haben.
 
-These ribbons can be found in the better haberdasheries or can be ordered online.
+These adjustment ribbons and bow tie hardware can be found in the better haberdasheries or can be ordered online.
+
+<Note>
+
+These instructions are for the type of adjustment ribbon that comes with
+holes at regular intervals, to be used in combination with two-piece
+hardware consisting of an oval loop part and a part with a smaller loop
+and attached T-shaped hook.
+
+There are other styles of bow tie ribbons and hardware, but their use is
+outside the scope of these instructions.
+
+</Note>
 
 ### Nahtzugabe
 
@@ -43,13 +55,15 @@ Apply interfacing to all parts where you feel it's needed.
 
 ### Ohne Einstellband
 
-#### Schritt 2: Den Knoten an das Kragenband annähen
+#### Step 2: Sew the bow to the collar band
 
-Put the collar band part on the bow tie knot part, right sides together. Align the ends of both parts. Now sew across the end to join the parts.
+Put one of the Collar Band parts on one of the Bow parts, right sides together. Align the ends of both parts. Now sew across the end to join the parts.
 
-![Sew the collar band to the knot](step12.png)
+![Sew the collar band to the bow](step12.png)
 
-Do this for each end on both collar bands.
+In a similar fashion, sew a second Bow part to the other end of the same Collar Band.
+
+Repeat these steps to sew the other 2 Bows to the other Collar Band.
 
 Press open all the seams.
 
@@ -59,23 +73,23 @@ You now have two identical single sided bow ties.
 
 ![Sew both sides together](step13.png)
 
-Lay both the sides you made on top of each other, right sides together. Nähe rundherum, aber lass dabei einen Bereich von 5cm in der Mitte des Kragenbandes offen. Durch diese Öffnung werden wir die Fliege auf rechts wenden.
+Lay both the sides you made on top of each other, right sides together. Sew all along the edges, but leave an area of 5 cm open in the middle of the collar band. Through this opening we will turn the bow tie right side out.
 
 #### Schritt 4: Wenden
 
 ![Clip seam allowance](step14.png)
 
-Schneide die Nahtzugabe an den üblichen Stellen zurück und mache kleine Schnitte, um glatte Kurven zu ermöglichen.
+Clip the seam allowance back in the usual spots and make little cuts to allow for a smooth curves.
 
-Verwende dann das hintere Ende einer großen Häkelnadel oder ein anderes, angemessen langes und schmales Objekt, um beide Seiten durch die kleine Öffnung auf rechts zu wenden. Beginne damit, die beiden Stoffteile am Ende der Schleife sanft auseinanderzuziehen. Dann drücke das Ende der Schleife zwischen die beiden Stoffteile. Drücke vorsichtig weiter, während du den Rest der Fliege über sie hinweg ziehst. This can be a tedious procedure. Lass dir Zeit und sei behutsam. It's easy to push too hard and rip stitches or fabric.
+Then use the back of a large crochet hook, or some other appropriately long skinny object, to turn the two sides right-side-out through the little opening. Start by gently pulling the two fabric pieces at the end of the bow apart. Then push the end of the bow up between the two pieces of fabric. Keep gently pushing while pulling the rest of the tie down over it. This can be a tedious procedure. Take your time and be gentle. It's easy to push too hard and rip stitches or fabric.
 
-Sobald du die Fliege auf rechts gewendet hast, drücke alle Ecken und Kanten nach außen bevor du die Fliege bügelst.
+Once you have the tie right side out, make sure you push all the corners and sides out before giving it a good press.
 
 #### Schritt 5: Schließen
 
 ![Closing the bow tie](step15.png)
 
-Das Einzige, was jetzt noch zu tun ist, ist die kleine Öffnung zu schließen, die wir zum Wenden verwendet haben. You can do this by hand with a slip stitch, or a ladder stitch. Or you can use the machine and stitch right at the edge of the band. Da diese Stelle normalerweise vom Kragen deines Hemdes verdeckt wird, wird es nicht so auffallen.
+Now all that is left is closing the little hole we used to turn the bow tie right side out. You can do this by hand with a slip stitch, or a ladder stitch. Or you can use the machine and stitch right at the edge of the band. Since this will normally be hidden by the collar of your shirt, it will not be all that obvious.
 
 Now give it one last press and admire your work.
 
@@ -85,9 +99,9 @@ Now give it one last press and admire your work.
 
 ![Sew the ribbon to part 1](step22.png)
 
-Der erste Schritt ist, das Einstellband an das kürzeste Teil der Schlaufen zu nähen. The ribbon should be 290mm long. Wenn es eine andere Länge hat, musst du sicherstellen, dass du es so ausrichtest, dass das Band und das kurze Schleifenteil zusammen so lang sind wie das lange Schleifenteil.
+The first thing to do is to sew the adjustment ribbon to the Short Bow part. The ribbon should be 290mm long. If it is different, you have to make sure that you align it such that the ribbon and short bow piece together are as long as the long bow piece.
 
-Put right sides of the short bow piece and the ribbon together.
+Put right sides of the Short Bow piece and the ribbon together.
 
 Now sew across the end to join the parts.
 
@@ -95,35 +109,42 @@ Now sew across the end to join the parts.
 
 ![Sew both sides together](step23.png)
 
-Lay both the parts of the medium bow on top of each other, right sides together. Und lege die lange Schleife auf das Band und den kurzen Schleifenteil, ebenso rechts auf rechts.
+Lay both of the Medium Bow parts on top of each other, right sides together.
 
-Sew all along, but leave the short ends open. Durch diese Öffnungen werden wir die Fliegenteile auf rechts wenden.
+Sew all along the edges, but leave the short end open. Through this opening we will turn the bow tie part right side out.
+
+Lay the Long Bow on top of the ribbon and Short Bow part, also right sides together.
+
+Again, sew all along the edges, leaving the short end open.
 
 #### Schritt 4: Wenden
 
 ![Clip seam allowance](step14.png)
 
-Schneide die Nahtzugabe an den üblichen Stellen zurück und mache kleine Schnitte, um glatte Kurven zu ermöglichen.
+Clip the seam allowance back in the usual spots and make little cuts to allow for a smooth curves.
 
-Verwende dann das hintere Ende einer großen Häkelnadel oder ein anderes, angemessen langes und schmales Objekt, um beide Teile durch die Enden auf rechts zu wenden. Beginne damit, die beiden Stoffteile am Ende der Schleife sanft auseinanderzuziehen. Dann drücke das Ende der Schleife zwischen die beiden Stoffteile. Drücke vorsichtig weiter, während du den Rest der Fliege über sie hinweg ziehst. This can be a tedious procedure. Lass dir Zeit und sei behutsam. It's easy to push too hard and rip stitches or fabric.
+Then use the back of a large crochet hook, or some other appropriately long skinny object, to turn the two parts right-side-out through the ends. Start by gently pulling the two fabric pieces at the end of the bow apart. Then push the end of the bow up between the two pieces of fabric. Keep gently pushing while pulling the rest of the tie down over it. This can be a tedious procedure. Take your time and be gentle. It's easy to push too hard and rip stitches or fabric.
 
-Sobald du ein Teil auf rechts gewendet hast, drücke alle Ecken und Kanten nach außen bevor du die Fliege bügelst.
+Once you have the part right side out, make sure you push all the corners and sides out before giving it a good press.
 
 Do this with both parts.
 
 #### Schritt 5: Zubehör hinzufügen
 
-Now we need to add the two pieces of hardware that make the bow tie adjustable. The oval looking piece will be attached to the part without the adjustment ribbon. And the piece with the T shaped attachment will go on the part with the ribbon.
+Now we need to add the two pieces of hardware that make the bow tie adjustable. The oval loop piece will be attached to the part without the adjustment ribbon. And, the piece with the T-hook will go on the part with the ribbon.
 
-First do the part without the ribbon. Das liegt daran, dass das Stoffende des Schleifenstückes durch die ovale Öffnung passen muss, bevor wir das Zubehör annähen. If you would do it in the other sequence, you may not be able to feed it through.
+First do the part without the ribbon. This is because the fabric tail of the ribbon piece will have to go through the oval part before sewing on its hardware. If you would do it in the other sequence, you may not be able to feed it through.
 
-To finish the ends, we're going to fold the fabric in three steps:
+To finish the ends, we're going to fold the fabric in three steps, before sewing it in a fourth step:
 
 ![Three steps to fold, one step to sew](step25.png)
 
-First we fold the side in under an angle. Dann falten wir das Ende darüber, mit einer kleinen Nahtzugabe, etwa 5mm. Then we fold it over again, for about 1cm. Finally we stick the oval ring under this last fold and stitch across.
+1. First we fold the sides in at an angle.
+2. Then we fold the end over by just a small seam allowance, something like 5 mm.
+3. Then we fold it over again, for about 1 cm.
+4. Finally we stick the oval loop under this last fold and stitch across.
 
-Now feed the ribbon piece through the oval part and finish it the same way.
+Now feed the adjustment ribbon piece through the oval loop, and attach the T-hook to the end of the ribbon, sewing it in the same way.
 
 Hook the T in one of the adjustment holes and your bow tie is done!
 

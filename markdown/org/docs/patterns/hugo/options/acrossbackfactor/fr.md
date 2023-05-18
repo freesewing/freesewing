@@ -2,7 +2,7 @@
 title: "Across back factor"
 - - -
 
-Controls your across back width as a factor of your shoulder to shoulder measurement
+Contrôle la largeur de votre dos en fonction de la mesure d'épaule à épaule
 
 ## Effet de cette option sur le motif
 

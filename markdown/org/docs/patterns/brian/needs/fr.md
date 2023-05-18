@@ -7,7 +7,7 @@ To make Brian, you will need the following:
 - Fourniture de base pour la couture
 - About 1.25 - 1.5 metres (1.4 - 1.7 yards) of a suitable fabric ([see Brian Fabric options](/docs/patterns/brian/fabric/))
 
-This list is for a default Brian Block. If you have/are making changes to the block you may need to get additional items such as closures, binding etc.
+This list is for a default Brian Block. Si vous avez apporté des modifications au bloc, vous devrez peut-être vous procurer des éléments supplémentaires tels que des fermetures, des reliures, etc.
 
 <Note>
 

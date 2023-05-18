@@ -1,13 +1,13 @@
 - - -
-title: "Breanna body block: What You Need"
+tirle: "Bloc de corps de Breanna: Ce dont tu as besoin"
 - - -
 
-To make Breanna, you will need the following:
+Pour préparer Breanna, vous aurez besoin des éléments suivants :
 
 - Fourniture de base pour la couture
-- About 1.25 - 1.5 metres (1.4 - 1.7 yards) of a suitable fabric ([see Breanna Fabric options](/docs/patterns/Breanna/fabric/))
+- Environ 1,25 à 1,5 mètre d'un tissu approprié ([voir les options de tissu Breanna](/docs/patterns/Breanna/fabric/))
 
-This list is for a default Breanna Block. If you have/are making changes to the block you may need to get additional items such as closures, binding etc.
+Cette liste est pour un le Block Breanna par défaut. Si vous avez apporté des modifications au bloc, vous devrez peut-être vous procurer des éléments supplémentaires tels que des fermetures, des reliures, etc.
 
 <Note>
 

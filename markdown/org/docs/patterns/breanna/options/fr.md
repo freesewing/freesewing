@@ -1,18 +1,18 @@
 - - -
-title: "Breanna body block: Design Options"
+titre: "Bloc de corps pour Breanna : Options de conception"
 - - -
 
 <PatternOptions pattern='breanna' />
 
 ## Comprendre la tête de manche
 
-The Breanna sleevecap was designed to be adaptable into different types of sleeves and garments. As a result, the sleevecap alone has 20 options to control its shape. Whereas that may seem a bit overwhelming at first, understanding how the sleevecap is drafted makes it easy to understand what all the individual options do.
+Le chapeau de manche Breanna a été conçu pour être adapté à différents types de manches et de vêtements. Par conséquent, le chapeau de manche à lui seul dispose de 20 options pour contrôler sa forme. Whereas that may seem a bit overwhelming at first, understanding how the sleevecap is drafted makes it easy to understand what all the individual options do.
 
 ### La bounding box (boîte englobante)
 
-The _bounding box_ of the sleevecap is a rectangle that is as wide as the sleeve, and as high as the sleevecap. Inside this box, we will construct our sleevecap later.
+The _bounding box_ of the sleevecap is a rectangle that is as wide as the sleeve, and as high as the sleevecap. La tête de manche va être construite dans ce rectangle.
 
-![The Breanna sleevecap](sleevecap.svg)
+![Le chapeau de manche Breanna](sleevecap.svg)
 
 The image above shows a sleevecap, starting at point 1, then going up until point 4, and then down again to point 2.
 
@@ -22,17 +22,17 @@ The image above shows a sleevecap, starting at point 1, then going up until poin
 
 Dans notre exemple, le devant de la manche est à droite. Mais comment le sait-on ?
 
-Alors que les patrons l'indiquent généralement par des repères (une seule encoche pour le devant, une double encoche pour l'arrière), on peut aussi repérer où se trouve le devant d'une tête de manche par sa forme plus courbe. La partie de la tête de manche qui sera placée à l'arrière est de forme plus aplatie. That's because the human shoulder
-is more pronounced and curved on the front of the body, thus the sleevecap is more curved
-there to fit the shoulder.
+Alors que les patrons l'indiquent généralement par des repères (une seule encoche pour le devant, une double encoche pour l'arrière), on peut aussi repérer où se trouve le devant d'une tête de manche par sa forme plus courbe. La partie de la tête de manche qui sera placée à l'arrière est de forme plus aplatie. C'est parce que l'épaule humaine
+est plus prononcée et plus incurvée sur le devant du corps, ce qui fait que l'embout de manche est plus incurvé
+pour s'adapter à l'épaule.
 
 </Note>
 
 The width of the sleevecap (and thus the width of the sleeve at the bottom of the armhole) is equal to the distance between points 1 and 2. That distance depends on the measurements of the model, the amount of ease, the cut of the garment and so on. For our sleevecap, all we need to know is that we start with a given width. And while that width can be influenced by other factors, we can not influence it by any of the sleevecap options.
 
-![Controlling the top of the sleevecap](sleevecaptop.svg)
+![Contrôle du haut de la tête de manche](sleevecaptop.svg)
 
-The height of the sleevecap is equal to the distance between points 3 and 4. The exact height is a trade-off between the measurments of the model, options, ease, sleevecap ease, and the fact that the sleeve ultimately has to fit the armhole. So the height may vary, and we don't control the exact value. But there are two options that control the shape of our sleevecap:
+La hauteur de la tête de manche est égale à la distance entre les points 3 et 4. The exact height is a trade-off between the measurments of the model, options, ease, sleevecap ease, and the fact that the sleeve ultimately has to fit the armhole. So the height may vary, and we don't control the exact value. Mais deux options permettent de contrôler la forme de notre tête de manche :
 
 - [Haut de tête de manche X](/docs/patterns/breanna/options/sleevecaptopfactorx/) : Contrôle la position horizontale des points 3 et 4
 - [Haut de tête de manche Y](/docs/patterns/breanna/options/sleevecaptopfactory/) : Contrôle la position verticale du point 4
@@ -41,9 +41,9 @@ In other words, point 4 can be made higher and lower and, perhaps less intutitiv
 
 ### Les points d'inflexion
 
-![Controlling the inflection points](sleevecapinflection.svg)
+![Contrôle des points d'inflexion](sleevecapinflection.svg)
 
-With points 1, 2, 3, and 4 in place, we have a box to draw our sleevecap in. Now it's time to map out our _inflection points_. These are points 5 and 6 on our drawing, and their placement is determined by the following 4 options:
+Avec les points 1, 2, 3 et 4 en place, nous avons un rectangle pour dessiner notre tête de manche. Now it's time to map out our _inflection points_. These are points 5 and 6 on our drawing, and their placement is determined by the following 4 options:
 
 - [Haut de tête de manche arrière X](/docs/patterns/breanna/options/sleevecapbackfactorx) : Contrôle la position horizontale du point 5
 - [Haut de tête de manche arrière Y](/docs/patterns/breanna/options/sleevecapbackfactory) : Contrôle la position verticale du point 5
@@ -60,9 +60,9 @@ Comme vous le voyez dans notre exemple, ces points ne se trouvent pas toujours s
 
 ![Contrôle des points d'ancrage](sleevecapanchor.svg)
 
-Ultimately, our sleevecap will be the combination of 5 curves. In addition to points 1 and 2, the four _anchor points_ that are marked in orange in our example will be the start/finish of those curves.
+En fin de compte, notre tête de manche sera la combinaison de 5 courbes. In addition to points 1 and 2, the four _anchor points_ that are marked in orange in our example will be the start/finish of those curves.
 
-The points are _offset_ perpendicular from the middle of a line between the two anchor points surrounding them. The offset for each point is controlled by these 4 options:
+The points are _offset_ perpendicular from the middle of a line between the two anchor points surrounding them. Le décalage pour chaque point est contrôlé par ces 4 options :
 
 - [Décalage de tête de manche Q1](/docs/patterns/breanna/options/sleevecapq1offset) : contrôle le décalage perpendiculaire à la ligne située entre les points 2 et 6
 - [Décalage de tête de manche Q2](/docs/patterns/breanna/options/sleevecapq2offset) : contrôle le décalage perpendiculaire à la ligne située entre les points 6 et 4
@@ -74,8 +74,7 @@ The points are _offset_ perpendicular from the middle of a line between the two 
 Notre manche est divisée en 4 quadrants. Nous commençons à l'avant (à droite dans notre exemple)
 avec le quadrant 1, en allant vers l'arrière pour finir avec le quatrième quadrant.
 
-Like the offset option, the last options to determine the shape of our sleevecap will just repeat so you can
-control each quarter individually.
+Comme l'option d'offset, les dernières options pour déterminer la forme de notre tête de manche vont se répéter pour que vous puissiez contrôler chaque quartier individuellement.
 
 </Note>
 
@@ -83,7 +82,7 @@ control each quarter individually.
 
 ![Contrôle des points d'ancrage](sleevecapspread.svg)
 
-Nous disposons maintenant de tous les points de départ et d'arrivée pour dessiner les 5 courbes qui constitueront nos capuchons de manche. What we're missing are the control points (see [our info on Bézier curves](https://freesewing.dev/concepts/beziercurves) to learn more about how curves are constructed). These are determined by the so-called _spread_.
+Nous disposons maintenant de tous les points de départ et d'arrivée pour dessiner les 5 courbes qui constitueront nos capuchons de manche. What we're missing are the control points (see [our info on Bézier curves](https://freesewing.dev/concepts/beziercurves) to learn more about how curves are constructed). Celles-ci sont déterminées par ce que l'on appelle _répartition_.
 
 For each of the anchor points (the ones marked in orange, not points 1 and 2) there is an option to control the spread upwards, and downwards:
 
@@ -111,4 +110,4 @@ While the sleevecap in Breanna (and all patterns that extend Breanna) have a lot
 - Ensuite, utilisez le décalage pour contrôler la pente de la courbe
 - Enfin, utilisez la répartition pour homogénéiser le tout
 
-What's important to remember is that you're only ever controlling the shape of the sleevecap. Whatever shape you design, it will be fitted to the armhole, meaning that its size can and will be adapted to make sure the sleeve fits the armscye. Toutefois, la forme que vous avez conçue sera toujours respectée.
+Il faut comprendre qu'on ne peut contrôler que la forme de la tête de manche. Whatever shape you design, it will be fitted to the armhole, meaning that its size can and will be adapted to make sure the sleeve fits the armscye. Toutefois, la forme que vous avez conçue sera toujours respectée.

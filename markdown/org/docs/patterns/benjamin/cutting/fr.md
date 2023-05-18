@@ -7,19 +7,19 @@ Benjamin est un modèle plutôt simple, mais vos options détermineront ce qui d
 ## Sans ruban d'ajustement
 
 - **Tissu principal**
-  - Couper **4 Nœud**
-  - Couper **2 bandes de col**
+  - Cut **4 Bow** parts
+  - Cut **2 Collar Band** parts
 - **Entoilage**
-  - Couper **4 entoilages de Nœud**
-  - Couper **2 entoilages de bandes de col**
+  - Cut **4 Bow** parts
+  - Cut **2 Collar Band** parts
 
 ## Avec ruban d'ajustement
 
 - **Tissu principal**
-  - Couper **1 Nœud 1**
-  - Couper **1 Nœud 2**
-  - Couper **2 Nœud 3**
+  - Cut **1 Short Bow** part
+  - Cut **2 Medium Bow** parts
+  - Cut **1 Long Bow** part
 - **Entoilage**
-  - Couper **1 entoilages de Nœud 1**
-  - Couper **1 entoilages de Nœud 2**
-  - Couper **2 entoilages de Nœud 3**
+  - Cut **1 Short Bow** part
+  - Cut **2 Medium Bow** parts
+  - Cut **1 Long Bow** part
