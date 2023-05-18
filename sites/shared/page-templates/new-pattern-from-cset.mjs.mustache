@@ -1,5 +1,5 @@
 // Hooks
-import { useEffect, useState, useMemo } from 'react'
+import { useEffect, useState } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -25,7 +25,7 @@ const New{{ Design }}FromCsetPage = ({ page, id }) => {
     }
     // Guard against loops as the backend object is recreated on each render
     if (set.id !== id) getCuratedSet()
-  }, [id, backend])
+  }, [id, set.id, backend])
 
   return (
     <PageWrapper {...page} title="{{ Design }}" layout={WorkbenchLayout} header={Null}>

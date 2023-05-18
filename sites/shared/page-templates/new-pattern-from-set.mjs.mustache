@@ -1,5 +1,5 @@
 // Hooks
-import { useEffect, useState, useMemo } from 'react'
+import { useEffect, useState } from 'react'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Dependencies
@@ -27,7 +27,7 @@ const New{{ Design }}FromSetPage = ({ page, id }) => {
     }
     // Guard against loops as the backend object is recreated on each render
     if (set.id !== id) getSet()
-  }, [id, backend])
+  }, [id, set.id, backend])
 
   return (
     <PageWrapper {...page} title="{{ Design }}" layout={WorkbenchLayout} header={Null}>
