@@ -16,13 +16,14 @@ import {
   I18nIcon,
   MeasureIcon,
   PageIcon,
+  PlusIcon,
 } from 'shared/components/icons.mjs'
 import { Ribbon } from 'shared/components/ribbon.mjs'
 import { ModalThemePicker, ns as themeNs } from 'shared/components/modal/theme-picker.mjs'
 import { ModalLocalePicker, ns as localeNs } from 'shared/components/modal/locale-picker.mjs'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
 
-import { NavButton, NavSpacer, colors } from 'shared/components/workbench/header.mjs'
+import { NavButton, NavSpacer, colors } from 'shared/components/header.mjs'
 
 export const ns = ['header', 'sections', ...themeNs, ...localeNs]
 
@@ -92,6 +93,9 @@ const NavIcons = ({ setModal, setSearch }) => {
       <NavSpacer />
       <NavButton href="/account" label={t('header:account')} color={colors[9]}>
         <UserIcon className={iconSize} />
+      </NavButton>
+      <NavButton href="/new" label={t('header:new')} color={colors[10]}>
+        <PlusIcon className={iconSize} />
       </NavButton>
     </>
   )
