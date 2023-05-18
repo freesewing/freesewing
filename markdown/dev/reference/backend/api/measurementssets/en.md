@@ -1,8 +1,8 @@
 ---
-title: People
+title: Measurements Sets
 ---
 
-A Person hold information and measurements on the people we generate patterns
+A measurements set holds information and measurements on the people we generate patterns
 for.
 
 ## Endpoints
@@ -13,8 +13,8 @@ for.
 
 ### The `imperial` property is a Boolean
 
-- If the `imperial` property is `false`, the person wants metric units.
-- If the `imperial` property is `true`, the person wants imperial units.
+- If the `imperial` property is `false`, the measurements set uses metric units.
+- If the `imperial` property is `true`, the measurements set uses imperial units.
 
 ### The `measies` property holds measurements
 

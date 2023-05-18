@@ -1,17 +1,17 @@
 ---
-title: Delete a Person
+title: Delete a Measurements Set
 ---
 
-Deletes an existing Person.
+Deletes an existing measurements set.
 
 ## Access control
 
-- [Permission level](/reference/backend/api/rbac) `3` or higher is required to delete a Person
-- [Permission level](/reference/backend/api/rbac) `8` is required to delete **another user's** Person
+- [Permission level](/reference/backend/api/rbac) `3` or higher is required to delete a measurements set
+- [Permission level](/reference/backend/api/rbac) `8` is required to delete **another user's** measurements set
 
 ## Endpoints
 
-Deleting a Person is possible via these endpoints:
+Deleting a measurements set is possible via these endpoints:
 
 | Method    | Path | Authentication |
 | --------: | :--- | :------------- |
@@ -20,7 +20,7 @@ Deleting a Person is possible via these endpoints:
 
 ## Request URL
 
-The URL should contain the ID of the Person you wish to remove.
+The URL should contain the ID of the measurements set you wish to remove.
 It replaces the `:id` placeholder in the [endpoints listed above](#endpoints).
 
 ## Response status codes
