@@ -2,7 +2,7 @@
 titre : "aisance thoracique"
 - - -
 
-The amount of ease at your chest.
+L'aisance au niveau de la poitrine.
 
 ## Effet de cette option sur le motif
 

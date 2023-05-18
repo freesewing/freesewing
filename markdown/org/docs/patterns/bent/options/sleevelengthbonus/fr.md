@@ -2,14 +2,14 @@
 titre : "Surlongueur de longueur de manche"
 - - -
 
-The amount to extend the sleeve beyond the length of the sleeve in the base block.
+La quantité pour allonger la manche au-delà de la longueur de la manche dans le bloc de base.
 
 <Note>
 
-#### This is not supposed to be zero
+#### Cette valeur n'est pas censée être nulle
 
-Setting this to zero will make the sleeve length the same as the base length of the Bent block,
-which is certainly too short for a coat.
+En mettant cette valeur à zéro, la longueur de la manche sera la même que la longueur de base du bloc Bent,
+ce qui est certainement trop court pour un manteau.
 Veuillez prendre note de la valeur par défaut et utiliser cela comme base pour allonger ou raccourcir la manche.
 
 </Note>

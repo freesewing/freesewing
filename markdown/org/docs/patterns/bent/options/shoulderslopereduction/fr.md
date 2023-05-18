@@ -2,9 +2,9 @@
 titre : "Réduction de la pente d'épaule"
 - - -
 
-This pattern adapts to sloped shoulder by taking the shoulder slope measurment into account.
+Ce patron s'adapte à la pente d'épaule en tenant compte de la mesure de la pente des épaules.
 
-However, for jackets or coats, you may want to create more room at the shoulders to allow for shoulder pads. This option lets you create extra room at the shoulders by reducing the amount the shoulders are sloped.
+Toutefois, pour les vestes ou les manteaux, il peut être nécessaire de créer plus d'espace au niveau des épaules pour permettre l'ajout d'épaulettes. Cette option vous permet de créer de la place supplémentaire sur les épaules en réduisant la pente des épaules.
 
 ## Effet de cette option sur le motif
 

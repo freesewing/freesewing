@@ -20,11 +20,11 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "@sanity/vision": "3.10.1",
+    "@sanity/vision": "3.11.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-is": "18.2.0",
-    "sanity": "3.10.1",
+    "sanity": "3.11.1",
     "styled-components": "5.3.10",
     "sanity-plugin-markdown": "4.1.0"
   },
@@ -33,7 +33,7 @@
     "eslint": "8.40.0",
     "prettier": "2.8.8",
     "typescript": "5.0.4",
-    "@sanity/cli": "3.10.1"
+    "@sanity/cli": "3.11.1"
   },
   "engines": {
     "node": ">=16.0.0",

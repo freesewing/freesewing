@@ -211,7 +211,7 @@ backend:
   dev:
     'chai': *chai
     'chai-http': '4.3.0'
-    'esbuild': '0.17.18'
+    'esbuild': '0.17.19'
     'mocha': *mocha
     'mocha-steps': '1.3.0'
     'nodemon': '2.0.22'
@@ -338,7 +338,7 @@ org:
 
 sanity:
   _:
-    '@sanity/vision': &sanity '3.10.1'
+    '@sanity/vision': &sanity '3.11.1'
     'react': *react
     'react-dom': *react
     'react-is': *react
@@ -350,7 +350,7 @@ sanity:
     'eslint': *eslint
     'prettier': '2.8.8'
     'typescript': '5.0.4'
-    '@sanity/cli': '3.10.1'
+    '@sanity/cli': '3.11.1'
 
 shared:
   _:

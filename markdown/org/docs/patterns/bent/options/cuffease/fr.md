@@ -2,7 +2,7 @@
 titre: "aisance de manche"
 - - -
 
-The amount of ease at your cuff/wrist.
+L'aisance au niveau du poignet.
 
 ## Effet de cette option sur le motif
 
