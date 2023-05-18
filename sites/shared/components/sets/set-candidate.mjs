@@ -32,10 +32,8 @@ export const SetSummary = ({ set, design, t }) => (
   <ChoiceLink
     title={<Title set={set} />}
     icon={<OkIcon className="w-10 h-10 text-success" stroke={3} />}
-    href="/new/pattern"
-  >
-    <button className="btn btn-secondary w-full">Use it</button>
-  </ChoiceLink>
+    href={`/new/pattern/${design}/set/${set.id}`}
+  ></ChoiceLink>
 )
 
 export const SetCandidate = ({ set, design, requiredMeasies = [] }) => {
