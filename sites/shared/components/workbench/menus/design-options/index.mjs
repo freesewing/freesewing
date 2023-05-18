@@ -39,7 +39,6 @@ import {
   MmOptionValue,
   PctOptionValue,
 } from './values.mjs'
-import { DynamicMdx } from 'shared/components/dynamic-mdx.mjs'
 
 export const ns = ['design-options']
 
@@ -135,11 +134,13 @@ export const DesignOption = ({
   }
 
   const buttons = []
-  const openButtons = [
-    <button className="btn btn-xs btn-ghost px-0" onClick={(evt) => loadDocs(evt, name)}>
-      <HelpIcon className="w-4 h-4" />
-    </button>,
-  ]
+  const openButtons = []
+  if (loadDocs)
+    openButtons.push(
+      <button className="btn btn-xs btn-ghost px-0" onClick={(evt) => loadDocs(evt, name)}>
+        <HelpIcon className="w-4 h-4" />
+      </button>
+    )
   if (['pct', 'count', 'deg'].includes(type))
     openButtons.push(
       <button
@@ -224,6 +225,7 @@ export const DesignOptions = ({
   language,
   account,
   Option = false,
+  DynamicDocs = false,
 }) => {
   const { t } = useTranslation([design])
   const { setModal } = useContext(ModalContext)
@@ -232,19 +234,21 @@ export const DesignOptions = ({
   if (!Option) Option = DesignOption
   const optionsMenu = optionsMenuStructure(patternConfig.options)
 
-  const loadDocs = (evt, option = false) => {
-    evt.stopPropagation()
-    setModal(
-      <ModalWrapper>
-        <div className="max-w-prose">
-          <DynamicMdx
-            path={`patterns/${design}/options/${option.toLowerCase()}`}
-            language={language}
-          />
-        </div>
-      </ModalWrapper>
-    )
-  }
+  const loadDocs = DynamicDocs
+    ? (evt, option = false) => {
+        evt.stopPropagation()
+        setModal(
+          <ModalWrapper>
+            <div className="max-w-prose">
+              <DynamicDocs
+                path={`patterns/${design}/options/${option.toLowerCase()}`}
+                language={language}
+              />
+            </div>
+          </ModalWrapper>
+        )
+      }
+    : false
 
   return (
     <Collapse

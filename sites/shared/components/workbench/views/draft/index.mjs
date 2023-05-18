@@ -13,13 +13,26 @@ export const DraftView = ({
   update,
   language,
   account,
+  DynamicDocs,
 }) => (
   <div className="flex flex-row items-tope">
     <div className="w-2/3 shrink-0 grow lg:p-4 sticky top-0">
       <Pattern {...{ pattern, setView, settings, ui, update }} />
     </div>
     <div className="w-1/3 shrink grow-0 lg:p-4 max-w-2xl h-screen overflow-scroll">
-      <DraftMenu {...{ design, pattern, patternConfig, settings, ui, update, language, account }} />
+      <DraftMenu
+        {...{
+          design,
+          pattern,
+          patternConfig,
+          settings,
+          ui,
+          update,
+          language,
+          account,
+          DynamicDocs,
+        }}
+      />
     </div>
   </div>
 )

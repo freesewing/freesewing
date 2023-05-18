@@ -10,6 +10,7 @@ import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Workbench, ns as wbNs } from 'shared/components/workbench/index.mjs'
 import { WorkbenchLayout } from 'site/components/layouts/workbench.mjs'
 import { Null } from 'shared/components/null.mjs'
+{{{ docs }}}
 
 // Translation namespaces used on this page
 const namespaces = [...new Set(['{{ design }}', ...wbNs, ...pageNs])]
@@ -30,7 +31,7 @@ const New{{ Design }}FromSetPage = ({ page, id }) => {
 
   return (
     <PageWrapper {...page} title="{{ Design }}" layout={WorkbenchLayout} header={Null}>
-      <Workbench design="{{ design }}" Design={ {{ Design }} } set={set} />
+      <Workbench design="{{ design }}" Design={ {{ Design }} } set={set} DynamicDocs={DynamicDocs}/>
     </PageWrapper>
   )
 }

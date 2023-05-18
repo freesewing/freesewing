@@ -166,6 +166,8 @@ const config = ({ site, jargon = {} }) => {
       config.resolve.alias.shared = path.resolve('../shared/')
       config.resolve.alias.site = path.resolve(`../${site}/`)
       config.resolve.alias.markdown = path.resolve(`../../markdown/${site}/`)
+      config.resolve.alias.orgmarkdown = path.resolve(`../../markdown/org/`)
+      config.resolve.alias.devmarkdown = path.resolve(`../../markdown/dev}/`)
       config.resolve.alias.config = path.resolve('../../config/')
       config.resolve.alias.designs = path.resolve('../../designs/')
       config.resolve.alias.plugins = path.resolve('../../plugins/')

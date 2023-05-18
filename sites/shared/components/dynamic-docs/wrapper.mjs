@@ -1,6 +1,5 @@
 import { PageLink } from 'shared/components/page-link.mjs'
 import { useTranslation } from 'next-i18next'
-import { components } from 'shared/components/mdx/index.mjs'
 
 export const ns = ['modal']
 

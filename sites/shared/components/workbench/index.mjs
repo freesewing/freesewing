@@ -42,7 +42,7 @@ const defaultUi = {
 
 const draftViews = ['draft', 'test']
 
-export const Workbench = ({ design, Design, set = false }) => {
+export const Workbench = ({ design, Design, set = false, DynamicDocs = false }) => {
   // Hooks
   const { t, i18n } = useTranslation(ns)
   const { language } = i18n
@@ -111,7 +111,17 @@ export const Workbench = ({ design, Design, set = false }) => {
       <WorkbenchHeader setView={setView} view={view} />
       {view === 'draft' && (
         <DraftView
-          {...{ design, pattern, patternConfig, setView, update, settings, ui, language }}
+          {...{
+            design,
+            pattern,
+            patternConfig,
+            setView,
+            update,
+            settings,
+            ui,
+            language,
+            DynamicDocs,
+          }}
           account={account}
         />
       )}

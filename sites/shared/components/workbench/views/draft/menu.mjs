@@ -19,12 +19,15 @@ export const DraftMenu = ({
   update,
   language,
   account,
+  DynamicDocs,
 }) => (
   <nav className="grow mb-12">
-    <DesignOptions {...{ design, patternConfig, settings, update, language, account }} />
+    <DesignOptions
+      {...{ design, patternConfig, settings, update, language, account, DynamicDocs }}
+    />
     {account.control === 1 ? null : (
-      <CoreSettings {...{ patternConfig, settings, update, language, account }} />
+      <CoreSettings {...{ patternConfig, settings, update, language, account, DynamicDocs }} />
     )}
-    {ui.renderer === 'react' && <XrayMenu {...{ ui, update }} />}
+    {ui.renderer === 'react' && <XrayMenu {...{ ui, update, DynamicDocs }} />}
   </nav>
 )

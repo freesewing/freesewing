@@ -7,7 +7,6 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
 import { loadSettingsConfig } from './config.mjs'
 // Components
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
-import { DynamicCoreSettingsDocs } from 'shared/components/dynamic-docs/core-settings.mjs'
 import { SettingsIcon, ClearIcon, HelpIcon } from 'shared/components/icons.mjs'
 import Link from 'next/link'
 import {
@@ -118,11 +117,13 @@ export const Setting = ({
   if (name === 'sabool') drillProps.samm = samm
 
   const buttons = []
-  const openButtons = [
-    <button className="btn btn-xs btn-ghost px-0" onClick={(evt) => loadDocs(evt, name)}>
-      <HelpIcon className="w-4 h-4" />
-    </button>,
-  ]
+  const openButtons = []
+  if (loadDocs)
+    openButtons.push(
+      <button className="btn btn-xs btn-ghost px-0" onClick={(evt) => loadDocs(evt, name)}>
+        <HelpIcon className="w-4 h-4" />
+      </button>
+    )
   if (changed) {
     buttons.push(
       <button
@@ -165,7 +166,15 @@ export const Setting = ({
 
 export const ns = ['i18n', 'core-settings', 'modal']
 
-export const CoreSettings = ({ design, update, settings, patternConfig, language, account }) => {
+export const CoreSettings = ({
+  design,
+  update,
+  settings,
+  patternConfig,
+  language,
+  account,
+  DynamicDocs,
+}) => {
   // FIXME: Update this namespace
   const { t } = useTranslation(['i18n', 'core-settings', design])
   const { setModal } = useContext(ModalContext)
@@ -179,16 +188,29 @@ export const CoreSettings = ({ design, update, settings, patternConfig, language
   // Default control level is 2 (in case people are not logged in)
   const control = account.control || 2
 
-  const loadDocs = (evt, setting = false) => {
-    evt.stopPropagation()
-    setModal(
-      <ModalWrapper>
-        <div className="max-w-prose">
-          <DynamicCoreSettingsDocs setting={setting} language={language} />
-        </div>
-      </ModalWrapper>
+  const loadDocs = DynamicDocs
+    ? (evt, setting = false) => {
+        evt.stopPropagation()
+        let path = `site/draft/core-settings`
+        if (setting) path += `/${setting}`
+        console.log(path)
+        setModal(
+          <ModalWrapper>
+            <div className="max-w-prose">
+              <DynamicDocs path={path} language={language} />
+            </div>
+          </ModalWrapper>
+        )
+      }
+    : false
+
+  const openButtons = []
+  if (loadDocs)
+    openButtons.push(
+      <button className="btn btn-xs btn-ghost px-0 z-10" onClick={(evt) => loadDocs(evt)}>
+        <HelpIcon className="w-4 h-4" />
+      </button>
     )
-  }
 
   return (
     <Collapse
@@ -201,11 +223,7 @@ export const CoreSettings = ({ design, update, settings, patternConfig, language
         </div>
       }
       openTitle={t('core-settings:coreSettings')}
-      openButtons={[
-        <button className="btn btn-xs btn-ghost px-0 z-10" onClick={(evt) => loadDocs(evt)}>
-          <HelpIcon className="w-4 h-4" />
-        </button>,
-      ]}
+      openButtons={openButtons}
     >
       <p>{t('core-settings:coreSettings.d')}</p>
       {Object.keys(settingsConfig)

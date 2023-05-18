@@ -22,7 +22,7 @@ const dynamicDocsFactory = (lang) => {
     const mdx = dynamic(
       () =>
         import(
-          `markdown/docs/site/draft/core-settings/${setting ? setting + '/' : ''}${lang}.md`
+          `orgmarkdown/docs/site/draft/core-settings/${setting ? setting + '/' : ''}${lang}.md`
         ).then((mod) => {
           setFrontmatter(mod.frontmatter)
           return mod
