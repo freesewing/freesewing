@@ -212,7 +212,7 @@ export const PctOptionInput = ({
   )
 }
 
-export const DegOptionInput = (props) => <DesignOptionPctInput {...props} type="deg" />
+export const DegOptionInput = (props) => <PctOptionInput {...props} type="deg" />
 export const MmOptionInput = () => (
   <span>FIXME: Mm options are deprecated. Please report this </span>
 )

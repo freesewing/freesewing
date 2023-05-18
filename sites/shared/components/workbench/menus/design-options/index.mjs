@@ -140,7 +140,7 @@ export const DesignOption = ({
       <HelpIcon className="w-4 h-4" />
     </button>,
   ]
-  if (['pct', 'count'].includes(type))
+  if (['pct', 'count', 'deg'].includes(type))
     openButtons.push(
       <button
         className="btn btn-xs btn-ghost px-0"
