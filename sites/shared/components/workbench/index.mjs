@@ -115,8 +115,6 @@ export const Workbench = ({ design, Design, set = false }) => {
           account={account}
         />
       )}
-      <pre>{JSON.stringify(settings, null, 2)}</pre>
-      <pre>{JSON.stringify(ui, null, 2)}</pre>
     </>
   )
 }
