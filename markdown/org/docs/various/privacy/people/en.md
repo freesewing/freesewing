@@ -1,5 +1,5 @@
 ---
-title: How we use your people data
+title: How we use measurements set data
 order: 40
 ---
 
