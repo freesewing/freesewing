@@ -8,6 +8,7 @@ We don't have specific guidelines on how to write documentation. You can write a
 
 Once in a while you might see some documentation using personal tone, such as `When pressing a seam, I like to lay it flat and ensure there are no folds ...`. While the impersonal tone is more common for documentation, the personal tone shows that FreeSewing is not a souless entity, but instead we are a community of awesome people! 
 
-Whenever changing existing documents (be it extending, correcting errors, etc) try to preserve the tone. Don't rewrite the documents to solely change the tone.
+Whenever changing existing documentation (be it extending, correcting errors, etc) try to preserve the tone. Don't rewrite the documentation to solely change the tone.
+There may be cases, however, that documentation may need to extensively changed. In such occasions, it may be a good idea to get in touch with the author. 
 
 If you are writing new documentation, pick the style you prefer!
