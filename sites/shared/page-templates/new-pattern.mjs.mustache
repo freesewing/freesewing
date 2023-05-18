@@ -14,13 +14,13 @@ const namespaces = [...new Set(['account', ...setsNs, ...authNs, ...pageNs])]
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const NewPatternPickSetPage = ({ page }) => (
+const New{{ Design }}PatternPickSetPage = ({ page }) => (
   <PageWrapper {...page}>
-    <SetPicker design="aaron" />
+    <SetPicker design="{{ design }}" />
   </PageWrapper>
 )
 
-export default NewPatternPickSetPage
+export default New{{ Design }}PatternPickSetPage
 
 export async function getStaticProps({ locale }) {
   return {
@@ -28,7 +28,7 @@ export async function getStaticProps({ locale }) {
       ...(await serverSideTranslations(locale, namespaces)),
       page: {
         locale,
-        path: ['new', 'pattern', 'aaron'],
+        path: ['new', 'pattern', '{{ design }}'],
       },
     },
   }

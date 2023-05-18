@@ -16,6 +16,16 @@ const header = `/*
  *
  */`
 
+const copyFromOrg = [
+  'pages/account',
+  'pages/confirm',
+  'pages/designs',
+  'pages/new',
+  'pages/signin',
+  'pages/signup',
+  'pages/welcome',
+]
+
 /*
  * Main method that does what needs doing
  */

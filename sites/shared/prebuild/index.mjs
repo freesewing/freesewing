@@ -5,6 +5,7 @@ import { prebuildContributors } from './contributors.mjs'
 import { prebuildPatrons } from './patrons.mjs'
 import { prebuildI18n } from './i18n.mjs'
 import { prebuildLab } from './lab.mjs'
+import { prebuildOrg } from './org.mjs'
 import { prebuildDesigns } from './designs.mjs'
 import { generateOgImage } from './og/index.mjs'
 
@@ -13,7 +14,6 @@ const run = async () => {
   prebuildDesigns()
   let docPages
   if (['org', 'dev'].includes(SITE)) {
-    console.log('in orgdev')
     await prebuildGitData(SITE)
     const docPages = await prebuildDocs(SITE)
     prebuildNavigation(docPages, false, SITE)
@@ -38,6 +38,7 @@ const run = async () => {
   } else {
     await prebuildLab()
   }
+  if (SITE === 'org') await prebuildOrg()
 
   await prebuildI18n(SITE)
   await prebuildContributors(SITE)
@@ -45,4 +46,4 @@ const run = async () => {
   console.log()
 }
 
-//run()
+run()

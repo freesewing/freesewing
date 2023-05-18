@@ -1,6 +1,6 @@
 // Hooks
 import { useEffect, useState, useMemo } from 'react'
-import { useAccount } frmo 'shared/hooks/use-account.mjs'
+import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -48,6 +48,13 @@ export async function getStaticProps({ locale, params }) {
         title: '',
       },
     },
+  }
+}
+
+export async function getStaticPaths() {
+  return {
+    paths: [],
+    fallback: true,
   }
 }
 

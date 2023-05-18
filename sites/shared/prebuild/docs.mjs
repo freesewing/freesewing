@@ -99,7 +99,7 @@ export const prebuildDocs = async (site) => {
 
   // Load page template
   const template = fs.readFileSync(
-    path.resolve('..', site, 'page-templates', `docs.mjs.mustache`),
+    path.resolve('..', 'shared', 'page-templates', `docs.mjs.mustache`),
     'utf-8'
   )
 
