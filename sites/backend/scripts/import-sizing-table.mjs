@@ -1,6 +1,4 @@
 import { PrismaClient } from '@prisma/client'
-import { encryption } from '../src/utils/crypto.mjs'
-import { verifyConfig } from '../src/config.mjs'
 import {
   cisFemaleAdult,
   cisMaleAdult,
@@ -10,7 +8,6 @@ import {
   cisMaleGiant,
 } from '../../../packages/models/src/index.mjs'
 const prisma = new PrismaClient()
-const config = verifyConfig()
 
 /*
  * Note: This will import the FreeSewing (v2) sizing table into the
