@@ -304,7 +304,7 @@ describe('Part', () => {
     const part = {
       name: 'test',
       draft: ({ options, part }) => {
-        if (options.test) return part
+        if (options.test === 'This should never match') return null
         else return part
       },
     }
@@ -321,7 +321,7 @@ describe('Part', () => {
     const part = {
       name: 'test',
       draft: ({ absoluteOptions, part }) => {
-        if (absoluteOptions.test) return part
+        if (absoluteOptions.test === 'this check should always fail') return null
         else return part
       },
     }
