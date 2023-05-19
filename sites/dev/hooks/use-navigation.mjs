@@ -1,12 +1,7 @@
-import { useContext, useEffect } from 'react'
-import { NavigationContext } from 'shared/context/navigation-context.mjs'
+import { useEffect } from 'react'
 import get from 'lodash.get'
 import { prebuildNavigation as pbn } from 'site/prebuild/navigation.mjs'
-import { useTranslation } from 'next-i18next'
 import orderBy from 'lodash.orderby'
-import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
-import { useAccount } from 'shared/hooks/use-account.mjs'
-import { designs, tags } from 'shared/config/designs.mjs'
 
 /*
  * prebuildNavvigation[locale] holds the navigation structure based on MDX content.
@@ -19,7 +14,7 @@ import { designs, tags } from 'shared/config/designs.mjs'
  * Note: Set 'c' to set the control level to hide things from users
  */
 
-const ns = ['account', 'sections', 'design', 'tags']
+export const ns = ['account', 'sections', 'design', 'tags']
 
 const sitePages = () => {
   const pages = {
