@@ -1,6 +1,6 @@
----
+- - -
 title: "Benjamin bow tie: Cutting Instructions"
----
+- - -
 
 Benjamin ist ein eher einfaches Schnittmuster, aber die von dir gewählten Optionen beeinflussen, was ausgeschnitten werden muss. Below are two typical layouts.
 
