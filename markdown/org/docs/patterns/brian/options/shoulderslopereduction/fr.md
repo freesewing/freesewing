@@ -1,6 +1,6 @@
----
+- - -
 titre : "Réduction de la pente d'épaule"
----
+- - -
 
 ![Shoulder slope reduction](./shoulderslopereduction.svg)
 
