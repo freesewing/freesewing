@@ -1,6 +1,6 @@
----
+- - -
 title: "Split yoke"
----
+- - -
 
 ![Empiècement dos à couture médiane ("split yoke")](splityoke.svg)
 
