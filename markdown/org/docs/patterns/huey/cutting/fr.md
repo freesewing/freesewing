@@ -1,6 +1,6 @@
----
+- - -
 title: "Huey hoodie: Cutting Instructions"
----
+- - -
 
 **Tissu principal**
 
