@@ -1,6 +1,6 @@
----
+- - -
 title: "Jaeger jacket: Sewing Instructions"
----
+- - -
 
 <Note>
 
