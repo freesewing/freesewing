@@ -1,6 +1,6 @@
----
+- - -
 titre : "T-shirt Teagan : Ce qu'il faut"
----
+- - -
 
 Pour fabriquer Téagan, vous aurez besoin des éléments suivants :
 
