@@ -1,5 +1,3 @@
-import { useContext, useEffect } from 'react'
-import { NavigationContext } from 'shared/context/navigation-context.mjs'
 import get from 'lodash.get'
 import { prebuildNavigation as pbn } from 'site/prebuild/navigation.mjs'
 import { useTranslation } from 'next-i18next'
