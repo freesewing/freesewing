@@ -1,6 +1,6 @@
----
+- - -
 titre : "Facteur de profondeur d'emmanchure"
----
+- - -
 
 ![The armhole depth factor on Brian](./armholedepthfactor.svg)
 
