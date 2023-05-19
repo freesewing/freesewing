@@ -1,6 +1,6 @@
----
+- - -
 title: "Style de nœud"
----
+- - -
 
 Quatre styles de nœud papillon différents !
 
