@@ -1,6 +1,6 @@
-- - -
+---
 title: "Buttonhole placket style"
-- - -
+---
 
 ![Estilo de la vista de los ojales](buttonholeplacketstyle.svg)
 

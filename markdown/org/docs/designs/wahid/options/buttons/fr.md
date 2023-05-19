@@ -1,6 +1,6 @@
-- - -
+---
 title: "Nombre de boutons"
-- - -
+---
 
 ![Boutons](buttons.svg)
 

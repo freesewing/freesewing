@@ -1,6 +1,6 @@
-- - -
+---
 title: "Elastic width"
-- - -
+---
 
 > #### What's the point?
 > 

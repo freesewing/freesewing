@@ -187,7 +187,7 @@ Path.prototype.clean = function () {
       if (!(op.cp1.sitsRoughlyOn(cur) && op.cp2.sitsRoughlyOn(cur) && op.to.sitsRoughlyOn(cur)))
         ops.push(ops)
     }
-    cur = op?.to
+    cur = op.to
   }
 
   if (ops.length < this.ops.length) this.ops = ops

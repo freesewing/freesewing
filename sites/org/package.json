@@ -43,7 +43,7 @@
     "next": "13.4.2",
     "react-dropzone": "14.2.3",
     "react-hotkeys-hook": "4.4.0",
-    "react-instantsearch-dom": "6.39.1",
+    "react-instantsearch-dom": "6.40.0",
     "react-hot-toast": "2.4.0",
     "react-markdown": "8.0.7",
     "react-swipeable": "7.0.0",
@@ -55,6 +55,7 @@
     "rehype-stringify": "9.0.3",
     "remark-copy-linked-files": "https://github.com/joostdecock/remark-copy-linked-files",
     "remark-gfm": "3.0.1",
+    "remark-mdx-frontmatter": "3.0.0",
     "use-persisted-state": "0.3.3",
     "yaml-loader": "0.8.0"
   },
@@ -66,6 +67,7 @@
     "postcss": "8.4.23",
     "playwright": "^1.32.3",
     "remark-extract-frontmatter": "3.2.0",
+    "remark-mdx-frontmatter": "3.0.0",
     "tailwindcss": "3.3.2",
     "yaml-loader": "0.8.0"
   },

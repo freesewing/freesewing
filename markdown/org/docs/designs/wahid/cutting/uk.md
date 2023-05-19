@@ -1,6 +1,6 @@
-- - -
+---
 title: "Wahid waistcoat: Cutting Instructions"
-- - -
+---
 
 - **Main fabric**
   - Cut **2 front(s)** with _good sides together_

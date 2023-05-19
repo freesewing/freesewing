@@ -1,6 +1,6 @@
-- - -
+---
 title: "Armhole depth factor"
-- - -
+---
 
 ![Tiefenfaktor des Armloches](./armholedepthfactor.svg)
 

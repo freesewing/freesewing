@@ -1,6 +1,6 @@
-- - -
+---
 title: "Florence face mask: Sewing Instructions"
-- - -
+---
 
 ### Paso 1: Une la costura central
 

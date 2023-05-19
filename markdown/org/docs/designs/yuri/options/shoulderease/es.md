@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shoulder ease"
-- - -
+---
 
 Controla la cantidad de facilidad en el hombro a medida del hombro.
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shoulder seam length"
-- - -
+---
 
 Die Länge der Schulternaht als Faktor deines Schulter-zu-Schulter-Maßes.
 

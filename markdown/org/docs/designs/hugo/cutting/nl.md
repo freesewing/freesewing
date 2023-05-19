@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hugo hoodie: Cutting Instructions"
-- - -
+---
 
 - **Buitenstof**
   - Knip **1 voorpand** aan de stofvouw

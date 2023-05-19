@@ -1,6 +1,6 @@
-- - -
+---
 title: "Wedge"
-- - -
+---
 
 Bepaalt de lengte van de kruisnaad.
 

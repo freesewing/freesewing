@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front scye dart"
-- - -
+---
 
 Este patrón viene con un dart de guinda predeterminado de 1 cm (piense en la oscuridad del orificio) en el frente.
 

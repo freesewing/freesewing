@@ -1,6 +1,6 @@
-- - -
+---
 titre: "Profondeur de la partie supérieure"
-- - -
+---
 
 ***
 

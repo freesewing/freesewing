@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap Q1 offset"
-- - -
+---
 
 ![Der Versatz im ersten Quartal der Ärmel](./sleevecapq1offset.svg)
 

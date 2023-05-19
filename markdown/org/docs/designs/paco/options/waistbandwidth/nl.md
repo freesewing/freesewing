@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waistband width"
-- - -
+---
 
 De breedte van de tailleband.
 

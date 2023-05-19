@@ -1,6 +1,6 @@
-- - -
+---
 title: "Tamiko top: Cutting Instructions"
-- - -
+---
 
 - **Oberstoff**
   - **1 Tamiko oben** auf der Falte schneiden

@@ -65,13 +65,6 @@ const send = async (test = true) => {
   const subscribers = await getSubscribers(test)
   const content = await asHtml(text)
   const inject = { content }
-  const smtp = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS,
-    },
-  })
 
   // Oh AWS your APIs are such a clusterfuck
   const client = new SESv2Client({ region: 'us-east-1' })
@@ -120,28 +113,11 @@ const send = async (test = true) => {
       })
       let result
       try {
-        result = await client.send(command)
+        await client.send(command)
       } catch (err) {
         console.log(err)
         return false
       }
-
-      // Via SMTP
-      /*
-      await smtp.sendMail({
-        from: '"FreeSewing" <info@freesewing.org>',
-        to: sub.email,
-        subject: 'FreeSewing newsletter: Summer 2022',
-        headers: {
-          Language: 'en',
-          'List-Owner': 'joost@joost.at',
-          'List-Subscribe': 'https://freesewing.org/community/newsletter/',
-          'List-Unsubscribe': unsub,
-        },
-        text,
-        html: body,
-      })
-      */
     }
     i++
   }

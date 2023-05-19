@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chest ease"
-- - -
+---
 
 ![De optie voor overwijdte borst bij Diana](./chestease.svg)
 

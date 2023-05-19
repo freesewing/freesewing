@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sandy circle skirt: Cutting Instructions"
-- - -
+---
 
 <Note>
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Force width"
-- - -
+---
 
 Breiteneinstellungen unabhängig von Einschränkungen anwenden
 

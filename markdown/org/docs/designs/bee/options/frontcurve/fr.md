@@ -1,6 +1,6 @@
-- - -
+---
 titre: "Courbe avant"
-- - -
+---
 
 ***
 

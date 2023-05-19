@@ -1,6 +1,6 @@
-- - -
+---
 title: "Carlita coat: Fabric Options"
-- - -
+---
 
 ### Main Fabric
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waist Band"
-- - -
+---
 
 Taille de la bande de taille
 

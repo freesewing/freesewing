@@ -43,7 +43,7 @@
     "react-copy-to-clipboard": "5.1.0",
     "react-dom": "18.2.0",
     "react-hotkeys-hook": "4.4.0",
-    "react-instantsearch-dom": "6.39.1",
+    "react-instantsearch-dom": "6.40.0",
     "react-markdown": "8.0.7",
     "react-swipeable": "7.0.0",
     "react-timeago": "7.1.0",
@@ -63,6 +63,7 @@
     "postcss": "8.4.23",
     "playwright": "^1.32.3",
     "remark-extract-frontmatter": "3.2.0",
+    "remark-mdx-frontmatter": "3.0.0",
     "tailwindcss": "3.3.2",
     "yaml-loader": "0.8.0"
   },

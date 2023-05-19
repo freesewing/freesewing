@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap top X"
-- - -
+---
 
 ![Die horizontale Position der Ärmel oben](./sleevecaptopfactorx.svg)
 

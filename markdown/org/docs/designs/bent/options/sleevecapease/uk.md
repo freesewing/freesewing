@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap ease"
-- - -
+---
 
 How much sleevecap ease do you want?
 

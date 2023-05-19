@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waistband position"
-- - -
+---
 
 ![Position des Taillenbundes](waistbandposition.svg)
 

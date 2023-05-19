@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waist Band"
-- - -
+---
 
 Tamaño de la banda de cintura
 

@@ -1,6 +1,6 @@
-- - -
-titre : "Découpe supplémentaire à l'avant de l'emmanchure
-- - -
+---
+titre : "Découpe supplémentaire à l'avant de l'emmanchure"
+---
 
 Contrôle la profondeur de la coupe de l'avant de l'emmanchure par rapport à celle de l'arrière du vêtement.
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Diana, das Wasserfallshirt: Stoffoptionen"
-- - -
+---
 
 Dies funktioniert am besten in einem dieser beiden Szenarien:
 

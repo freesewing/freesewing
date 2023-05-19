@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Largeur des épaules à l'avant (Bella)"
-- - -
+---
 
 ***
 

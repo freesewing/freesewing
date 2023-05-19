@@ -190,7 +190,7 @@ yuri:
 
 backend:
   _:
-    '@aws-sdk/client-sesv2': '3.332.0'
+    '@aws-sdk/client-sesv2': '3.335.0'
     '@prisma/client': &prisma '4.14.0'
     'bcryptjs': '2.4.3'
     'cors': '2.8.5'
@@ -235,7 +235,7 @@ dev:
     'react-copy-to-clipboard': &reactCopyToClipboard '5.1.0'
     'react-dom': *react
     'react-hotkeys-hook': &reactHotkeysHook '4.4.0'
-    'react-instantsearch-dom': &reactInstantsearchDom '6.39.1'
+    'react-instantsearch-dom': &reactInstantsearchDom '6.40.0'
     'react-markdown': &reactMarkdown '8.0.7'
     'react-swipeable': &reactSwipeable '7.0.0'
     'react-timeago': &reactTimeago '7.1.0'
@@ -254,6 +254,7 @@ dev:
     'postcss': &postcss '8.4.23'
     'playwright': '^1.32.3'
     'remark-extract-frontmatter': '3.2.0'
+    'remark-mdx-frontmatter': '3.0.0'
     'tailwindcss': &tailwindcss '3.3.2'
     'yaml-loader': '0.8.0'
 
@@ -277,7 +278,7 @@ lab:
     'd3-drag': '3.0.0'
     'd3-selection': '3.0.0'
     'daisyui': *daisyui
-    'i18next': &i18next '22.4.14'
+    'i18next': &i18next '22.5.0'
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
@@ -298,6 +299,7 @@ lab:
     'rehype-stringify': *rehypeStringify
     'remark-copy-linked-files': *remarkCopyLinkedFiles
     'remark-gfm': *remarkGfm
+    'remark-mdx-frontmatter': '3.0.0'
   dev:
     *nextSiteDevDependencies
 
@@ -332,6 +334,7 @@ org:
     'rehype-stringify': *rehypeStringify
     'remark-copy-linked-files': *remarkCopyLinkedFiles
     'remark-gfm': *remarkGfm
+    'remark-mdx-frontmatter': '3.0.0'
     'use-persisted-state': &use-persisted-state 0.3.3
     'yaml-loader': 0.8.0
   dev: *nextSiteDevDependencies

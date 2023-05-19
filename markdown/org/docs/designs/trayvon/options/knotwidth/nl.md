@@ -1,6 +1,6 @@
-- - -
+---
 title: "Knot width"
-- - -
+---
 
 ![Breedte knoop](knotwidth.svg)
 

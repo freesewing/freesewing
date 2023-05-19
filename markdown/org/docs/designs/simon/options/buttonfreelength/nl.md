@@ -1,6 +1,6 @@
-- - -
+---
 title: "Button free length"
-- - -
+---
 
 ![Lengte knooploos stuk](./buttonfreelength.svg)
 

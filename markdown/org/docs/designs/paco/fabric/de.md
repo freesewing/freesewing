@@ -1,6 +1,6 @@
-- - -
+---
 title: "Paco pants: Fabric Options"
-- - -
+---
 
 These work best in a lighter fabric with relatively good drape.
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Seperate button placket"
-- - -
+---
 
 ![Apart knopenpat](seperatebuttonplacket.svg)
 

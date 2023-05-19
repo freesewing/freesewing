@@ -1,6 +1,6 @@
-- - -
+---
 title: "Start of the cross seam curve"
-- - -
+---
 
 Bepaalt het begin van de kruisnaadcurve.
 

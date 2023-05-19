@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bust span ease"
-- - -
+---
 
 ***
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Neck inset"
-- - -
+---
 
 ![Inserción de cuello](neckinset.svg)
 

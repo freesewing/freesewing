@@ -4,6 +4,10 @@ import set from 'lodash.set'
 import orderBy from 'lodash.orderby'
 import unset from 'lodash.unset'
 
+// Method that returns a unique ID when all you need is an ID
+// but you can't be certain you have one
+export const getId = (id) => (id ? id : Date.now())
+
 // Generic rounding method
 export const round = (val, decimals = 1) =>
   Math.round(val * Math.pow(10, decimals)) / Math.pow(10, decimals)

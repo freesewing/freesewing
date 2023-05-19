@@ -1,6 +1,6 @@
-- - -
+---
 title: "Leg width"
-- - -
+---
 
 Legt die Weite des Hosenbeins fest.
 

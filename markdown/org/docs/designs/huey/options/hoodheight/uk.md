@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hood height"
-- - -
+---
 
 ![Hood height](./hoodheight.svg)
 

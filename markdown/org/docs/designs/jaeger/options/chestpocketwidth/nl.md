@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chest pocket width"
-- - -
+---
 
 ![Borstzakbreedte](chestpocketwidth.svg)
 

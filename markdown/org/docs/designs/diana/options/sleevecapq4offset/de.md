@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap Q4 offset"
-- - -
+---
 
 ![Der Versatz im vierten Quartal der Ärmel](./sleevecapq4offset.svg)
 

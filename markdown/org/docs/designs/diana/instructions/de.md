@@ -1,6 +1,6 @@
-- - -
+---
 title: "Diana, das Wasserfallshirt: Anleitung"
-- - -
+---
 
 ### Schritt 1: Versäubern der Nackennaht
 

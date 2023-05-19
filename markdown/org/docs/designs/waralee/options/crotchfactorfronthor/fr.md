@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front Crotch Factor Horizontal"
-- - -
+---
 
 Utilisé pour déplacer la courbe de la fourche avant horizontalement
 

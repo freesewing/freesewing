@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap Q4 upward spread"
-- - -
+---
 
 ![De opwaartse spreiding in het vierde quadrant van de mouwkop](./sleevecapq4spread1.svg)
 

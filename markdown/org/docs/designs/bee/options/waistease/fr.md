@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Aisance pour les hanches"
-- - -
+---
 
 ***
 

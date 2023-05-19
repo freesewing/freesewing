@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap Q2 offset"
-- - -
+---
 
 ![El desplazamiento en el segundo trimestre de la manga](./sleevecapq2offset.svg)
 

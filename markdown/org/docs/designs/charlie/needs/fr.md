@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chinos Charlie : Ce dont vous avez besoin"
-- - -
+---
 
 Pour fabriquer Charlie, vous aurez besoin des éléments suivants :
 

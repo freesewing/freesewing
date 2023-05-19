@@ -1,6 +1,6 @@
-- - -
+---
 title: "Armhole drop"
-- - -
+---
 
 Contrôle la profondeur de l'emmanchure
 

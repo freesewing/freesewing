@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hood closure"
-- - -
+---
 
 ![Hood closure](./hoodclosure.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar roll"
-- - -
+---
 
 ![Collar roll](collarroll.svg)
 

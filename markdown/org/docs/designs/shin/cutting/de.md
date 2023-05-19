@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shin swim trunks: Cutting Instructions"
-- - -
+---
 
 - **2 zurück** mit guten Seiten zusammen schneiden
 - **4 Fronten** 2 x 2 mit guten Seiten schneiden

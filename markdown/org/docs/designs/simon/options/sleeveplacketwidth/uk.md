@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleeve placket width"
-- - -
+---
 
 ![Sleeve placket width](sleeveplacketwidth.svg)
 

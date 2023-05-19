@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap top X"
-- - -
+---
 
 ![La position horizontale du haut de la tête de manche](./sleevecaptopfactorx.svg)
 

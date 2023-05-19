@@ -1,6 +1,6 @@
-- - -
+---
 title: "Side/Front placement"
-- - -
+---
 
 ![Positionnement latéral avant](sidefrontplacement.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Seperate buttonhole placket"
-- - -
+---
 
 ![Separate Knopflochleiste](seperatebuttonholeplacket.svg)
 

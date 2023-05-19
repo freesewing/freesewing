@@ -1,6 +1,6 @@
-- - -
+---
 title: "Start of the crotch seam curve"
-- - -
+---
 
 Bepaalt waar de kruisnaad begint te draaien, wat de pasvorm aan het kruisje beïnvloedt.
 

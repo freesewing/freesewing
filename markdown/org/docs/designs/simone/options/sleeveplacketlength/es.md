@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleeve placket length"
-- - -
+---
 
 ![Longitud de la vista de la manga](sleeveplacketlength.svg)
 

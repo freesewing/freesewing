@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cuff ease"
-- - -
+---
 
 Esta opción controla la facilidad de su muñeca.
 

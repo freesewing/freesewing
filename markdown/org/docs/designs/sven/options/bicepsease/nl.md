@@ -1,6 +1,6 @@
-- - -
+---
 title: "Biceps ease"
-- - -
+---
 
 ![Overwijdte biceps](bicepsease.svg)
 

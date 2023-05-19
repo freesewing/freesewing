@@ -1,6 +1,6 @@
-- - -
+---
 title: "Buttonhole guide"
-- - -
+---
 
 ***
 

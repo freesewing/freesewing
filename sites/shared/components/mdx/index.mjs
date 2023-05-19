@@ -7,8 +7,8 @@ import { Tab, Tabs } from './tabs.mjs'
 import { TabbedExample as Example } from './tabbed-example.mjs'
 import { HttpMethod, HttpStatusCode } from './http.mjs'
 import { ControlTip } from '../control/tip.mjs'
-
-const Fixme = () => <p>FIXME</p>
+import { Legend } from './legend.mjs'
+import { V3Wip } from '../v3-wip.mjs'
 
 export const components = {
   // Custom components
@@ -34,7 +34,10 @@ export const components = {
   Tab,
   Tabs,
   ControlTip,
-  // Example,
-  PatternDocs: Fixme,
-  PatternOptions: Fixme,
+  Example,
+  PatternDocs: V3Wip,
+  PatternOptions: V3Wip,
+  PatternMeasurements: V3Wip,
+  Gauge: V3Wip,
+  Legend,
 }

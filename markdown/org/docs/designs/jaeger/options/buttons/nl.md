@@ -1,6 +1,6 @@
-- - -
+---
 title: "Number of buttons"
-- - -
+---
 
 Bepaalt het aantal knoppen.
 

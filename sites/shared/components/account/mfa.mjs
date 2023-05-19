@@ -10,7 +10,7 @@ import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
 import { Popout } from 'shared/components/popout.mjs'
-import { Bullet } from 'site/components/bullet.mjs'
+import { Bullet } from 'shared/components/bullet.mjs'
 
 export const ns = ['account']
 

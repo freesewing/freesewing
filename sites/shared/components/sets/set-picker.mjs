@@ -1,6 +1,6 @@
 // Dependencies
 import orderBy from 'lodash.orderby'
-import { measurements } from 'site/prebuild/design-measurements.mjs'
+import { measurements } from 'shared/prebuild/data/design-measurements.mjs'
 import { siteConfig } from 'site/site.config.mjs'
 import { capitalize } from 'shared/utils.mjs'
 // Hooks

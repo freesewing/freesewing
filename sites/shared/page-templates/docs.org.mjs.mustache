@@ -74,14 +74,16 @@ export default DocsPage
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticProps({ locale }) {
+  const translation = await serverSideTranslations(locale, ['docs', ...ns])
+
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['docs', ...ns])),
       locale,
       page: {
         locale,
         path: {{{ slugArray }}},
       },
+      ...translation,
     },
   }
 }

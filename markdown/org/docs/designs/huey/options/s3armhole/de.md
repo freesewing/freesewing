@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shoulder seam shift: armhole side"
-- - -
+---
 
 Steuert die Position der Schulternaht auf der Armlochseite.
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cuff length"
-- - -
+---
 
 ![Manschettenlänge](cufflength.svg)
 

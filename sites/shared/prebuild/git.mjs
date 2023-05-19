@@ -34,8 +34,10 @@ export const getGitMetadata = async (file, site) => {
         key = gitToAuthor[email]
       }
     }
-    if (!key) throw `Git author email ${email} is unknown in the git-to-author table`
-    else authors.add(key)
+    if (!key) {
+      console.log({ email, author, slug })
+      throw `Git author email ${email} is unknown in the git-to-author table`
+    } else authors.add(key)
   }
 
   return {

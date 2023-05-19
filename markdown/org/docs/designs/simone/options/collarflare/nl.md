@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar flare"
-- - -
+---
 
 ![Spreiding kraag](collarflare.svg)
 

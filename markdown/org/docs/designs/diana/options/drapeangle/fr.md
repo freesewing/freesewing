@@ -1,6 +1,6 @@
-- - -
+---
 title: "Drape angle"
-- - -
+---
 
 ![L'option angulaire du drapé sur Diana](./drapeangle.svg)
 

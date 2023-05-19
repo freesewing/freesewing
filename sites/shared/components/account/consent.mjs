@@ -16,7 +16,7 @@ import {
   GdprProfileDetails,
   GdprMeasurementsDetails,
   ns as gdprNs,
-} from 'site/components/gdpr/details.mjs'
+} from 'shared/components/gdpr/details.mjs'
 
 export const ns = [...gdprNs, 'account', 'toast']
 

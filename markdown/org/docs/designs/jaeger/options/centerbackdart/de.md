@@ -1,6 +1,6 @@
-- - -
+---
 title: "Center back dart"
-- - -
+---
 
 ![Abnäher in der hinteren Mitte](centerbackdart.svg)
 

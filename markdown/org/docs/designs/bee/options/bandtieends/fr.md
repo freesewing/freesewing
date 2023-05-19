@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Attaches de bande (de poitrine)"
-- - -
+---
 
 ***
 
