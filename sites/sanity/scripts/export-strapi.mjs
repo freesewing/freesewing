@@ -10,7 +10,6 @@ import remarkFrontmatterExtractor from 'remark-extract-frontmatter'
 import yaml from 'yaml'
 import { remarkIntroPlugin } from '../../shared/mdx/remark-intro-plugin.mjs'
 
-
 /*
  * Helper method to extract the intro from a Strapi post
  *
@@ -18,19 +17,23 @@ import { remarkIntroPlugin } from '../../shared/mdx/remark-intro-plugin.mjs'
  *
  *  - body: the post's body (markdown content)
  */
-const postIntro = async markdown => await unified()
-  .use(remarkIntroPlugin)
-  .use(remarkParser)
-  .use(remarkCompiler)
-  .use(remarkFrontmatter)
-  .use(remarkFrontmatterExtractor, { yaml: yaml.parse })
-  .process(markdown)
+const postIntro = async (markdown) =>
+  await unified()
+    .use(remarkIntroPlugin)
+    .use(remarkParser)
+    .use(remarkCompiler)
+    .use(remarkFrontmatter)
+    .use(remarkFrontmatterExtractor, { yaml: yaml.parse })
+    .process(markdown)
 
 /*
  * Helper method to create the API url for retrieval of Strapi posts
  */
 const buildUrl = (type, site, lang) => {
-  if (type === 'blog') return `${strapiHost}/blogposts?_locale=${lang}&_sort=date:ASC&dev_${site === 'dev' ? 'eq' : 'ne'}=true`
+  if (type === 'blog')
+    return `${strapiHost}/blogposts?_locale=${lang}&_sort=date:ASC&dev_${
+      site === 'dev' ? 'eq' : 'ne'
+    }=true`
   if (type === 'showcase') return `${strapiHost}/showcaseposts?_locale=${lang}&_sort=date:ASC`
   if (type === 'newsletter') return `${strapiHost}/newsletters?_sort=date:ASC`
 }
@@ -43,8 +46,7 @@ export const getPosts = async (type, lang) => {
   let res
   try {
     res = await axios.get(buildUrl(type, 'org', lang))
-  }
-  catch (err) {
+  } catch (err) {
     console.log(`⚠️  Failed to load ${type} posts [${lang}]`)
   }
   const posts = {}
@@ -71,12 +73,12 @@ const transformBlogPost = async (p, lang) => {
   post.date = p.date
   post.author = 'joost'
   post.image = {
-    _type: "image",
-    _sanityAsset: `image@https://posts.freesewing.org${p.image.url}`
+    _type: 'image',
+    _sanityAsset: `image@https://posts.freesewing.org${p.image.url}`,
   }
   post.slug = {
     _type: 'slug',
-    current: p.slug
+    current: p.slug,
   }
 
   return post
@@ -89,14 +91,13 @@ const exportBlogPosts = async (lang) => {
   const posts = []
   const strapiPosts = await getPosts('blog', lang)
   for (const post of Object.values(strapiPosts)) {
-    posts.push((await transformBlogPost(post, lang)))
+    posts.push(await transformBlogPost(post, lang))
   }
   fs.writeFileSync(
     `./export/blog${lang}.ndjson`,
-    posts.map(post => JSON.stringify(post)).join("\n")
+    posts.map((post) => JSON.stringify(post)).join('\n')
   )
 }
-
 
 /*
  * Transforms a showcase post from strapi to sanity
@@ -112,13 +113,15 @@ const transformShowcasePost = async (p, lang) => {
   post.intro = p.intro || p.title
   post.date = p.date
   post.maker = 'joost'
-  post.image = [{
-    _type: "image",
-    _sanityAsset: `image@https://posts.freesewing.org${p.image.url}`
-  }]
+  post.image = [
+    {
+      _type: 'image',
+      _sanityAsset: `image@https://posts.freesewing.org${p.image.url}`,
+    },
+  ]
   post.slug = {
     _type: 'slug',
-    current: p.slug
+    current: p.slug,
   }
 
   return post
@@ -131,11 +134,11 @@ const exportShowcasePosts = async (lang) => {
   const posts = []
   const strapiPosts = await getPosts('showcase', lang)
   for (const post of Object.values(strapiPosts)) {
-    posts.push((await transformShowcasePost(post, lang)))
+    posts.push(await transformShowcasePost(post, lang))
   }
   fs.writeFileSync(
     `./export/showcase${lang}.ndjson`,
-    posts.map(post => JSON.stringify(post)).join("\n")
+    posts.map((post) => JSON.stringify(post)).join('\n')
   )
 }
 
@@ -153,7 +156,7 @@ const transformNewsletterPost = async (p) => {
   post.intro = p.intro || p.title
   post.slug = {
     _type: 'slug',
-    current: p.slug
+    current: p.slug,
   }
 
   return post
@@ -166,33 +169,29 @@ const exportNewsletterPosts = async (lang) => {
   const posts = []
   const strapiPosts = await getPosts('newsletter', 'en')
   for (const post of Object.values(strapiPosts)) {
-    posts.push((await transformNewsletterPost(post, lang)))
+    posts.push(await transformNewsletterPost(post))
   }
   fs.writeFileSync(
     `./export/newsletter.ndjson`,
-    posts.map(post => JSON.stringify(post)).join("\n")
+    posts.map((post) => JSON.stringify(post)).join('\n')
   )
 }
-
-
 
 /*
  * Main method that does what needs doing
  */
 const exportStrapi = async () => {
-
   // Say hi
   console.log()
   console.log(`Exporting content from Strapi`)
 
-  //for (const lang of ['en', 'es', 'fr', 'de', 'nl']) {
-  //  console.log(`  - Blog ${lang.toUpperCase()}`)
-  //  await exportBlogPosts(lang)
-  //  console.log(`  - Showcase ${lang.toUpperCase()}`)
-  //  await exportShowcasePosts(lang)
-  //}
+  for (const lang of ['en', 'es', 'fr', 'de', 'nl']) {
+    console.log(`  - Blog ${lang.toUpperCase()}`)
+    await exportBlogPosts(lang)
+    console.log(`  - Showcase ${lang.toUpperCase()}`)
+    await exportShowcasePosts(lang)
+  }
   await exportNewsletterPosts()
 }
-
 
 exportStrapi()
