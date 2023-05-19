@@ -1,6 +1,6 @@
----
+- - -
 titre: "aisance de manche"
----
+- - -
 
 ![Cuff ease](./cuffease.svg)
 
