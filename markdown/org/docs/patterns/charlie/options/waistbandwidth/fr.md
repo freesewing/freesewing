@@ -1,6 +1,6 @@
----
+- - -
 titre : "Largeur de la ceinture"
----
+- - -
 
 Controls the width of the waistband.
 
