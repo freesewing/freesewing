@@ -85,7 +85,9 @@ export const CuratedSetPicker = ({ design, language }) => {
     <>
       <h3>{t('curatedSets')}</h3>
       {tags.map((tag) => (
-        <Tag onClick={() => addFilter(tag)}>{tag}</Tag>
+        <Tag onClick={() => addFilter(tag)} tag={tag}>
+          {tag}
+        </Tag>
       ))}
       <div className="my-2 p-2 px-4 border rounded-lg bg-secondary bg-opacity-10 max-w-xl">
         <div className="flex flex-row items-center justify-between gap-2">
