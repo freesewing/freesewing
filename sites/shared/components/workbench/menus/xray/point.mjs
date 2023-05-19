@@ -1,5 +1,5 @@
-import { round } from 'shared/utils'
-import { XrayAttributes } from './attributes'
+//import { round } from 'shared/utils'
+//import { XrayAttributes } from './attributes'
 
 export const XrayPoint = ({ pointName, partName, draft, t }) => null
 /*{

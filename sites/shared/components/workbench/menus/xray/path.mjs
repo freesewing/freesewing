@@ -1,6 +1,6 @@
-import { formatMm } from 'shared/utils.mjs'
-import { XrayAttributes } from './attributes.mjs'
-import { XrayPathOps } from './path-ops.mjs'
+//import { formatMm } from 'shared/utils.mjs'
+//import { XrayAttributes } from './attributes.mjs'
+//import { XrayPathOps } from './path-ops.mjs'
 
 export const XrayPath = ({ pathName, partName, draft, units }) => null
 /*{

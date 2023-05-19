@@ -1,4 +1,4 @@
-import { Chevron } from 'shared/components/navigation/primary'
+//import { Chevron } from 'shared/components/navigation/primary'
 
 export const XrayAttributes = ({ attr = false, t }) => {
   return null

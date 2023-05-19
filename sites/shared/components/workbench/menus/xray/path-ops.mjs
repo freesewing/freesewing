@@ -1,7 +1,7 @@
-import { Chevron } from 'shared/components/navigation/primary'
-import { XrayPoint } from './point'
-
-const MoveLine = ({ op }) => <XrayPoint point={op.to} />
+//import { Chevron } from 'shared/components/navigation/primary'
+//import { XrayPoint } from './point'
+//
+//const MoveLine = ({ op }) => <XrayPoint point={op.to} />
 const Curve = ({ op }) => null
 /*
   ['cp1', 'cp2', 'to'].map((pnt) => (
