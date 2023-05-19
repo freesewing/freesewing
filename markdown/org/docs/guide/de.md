@@ -17,7 +17,7 @@ Das Lesen dieser Anleitung nimmt etwa 10 Minuten deiner Zeit in Anspruch, wird d
 
 Sounds good? Then let's dive right in:
 
-<ReadMore list />
+<ReadMore />
 
 <Tip>
 
