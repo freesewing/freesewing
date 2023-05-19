@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap top Y"
-- - -
+---
 
 ![La position verticale du haut de la tête de manche](./sleevecaptopfactory.svg)
 

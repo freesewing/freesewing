@@ -1,6 +1,6 @@
-- - -
+---
 title: "Button free length"
-- - -
+---
 
 ![Longueur sans bouton](./buttonfreelength.svg)
 

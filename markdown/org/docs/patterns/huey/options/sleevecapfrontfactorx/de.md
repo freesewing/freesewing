@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap front X"
-- - -
+---
 
 ![Die horizontale Position des vorderen Ablenkungspunkts](./sleevecapfrontfactorx.svg)
 

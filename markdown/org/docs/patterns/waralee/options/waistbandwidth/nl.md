@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waist Band"
-- - -
+---
 
 Grootte van de tailleband
 

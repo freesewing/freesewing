@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Aisance aux biceps"
-- - -
+---
 
 Cette option permet de contrôler l'aisance au niveau de la partie supérieure du bras/biceps.
 

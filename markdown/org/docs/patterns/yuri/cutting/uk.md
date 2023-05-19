@@ -1,6 +1,6 @@
-- - -
+---
 title: "Yuri hoodie: Cutting Instructions"
-- - -
+---
 
 - Cut **2 fronts** with _good sides together_
 - Cut **1 back** _on the fold_

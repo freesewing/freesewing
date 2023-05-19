@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waralee wrap pants: Fabric Options"
-- - -
+---
 
 ### Main Fabric
 

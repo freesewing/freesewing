@@ -54,7 +54,7 @@ model User {
   initial       String
   imperial      Boolean   @default(false)
   language      String    @default("en")
-  lastLogin     DateTime?
+  lastSignIn    DateTime?
   lusername     String    @unique
   mfaSecret     String    @default("")
   mfaEnabled    Boolean   @default(false)
@@ -105,3 +105,27 @@ model Set {
 
   @@index([userId])
 }
+
+model CuratedSet {
+  id        Int       @id @default(autoincrement())
+  createdAt DateTime  @default(now())
+  img       String?
+  nameDe    String    @default("")
+  nameEn    String    @default("")
+  nameEs    String    @default("")
+  nameFr    String    @default("")
+  nameNl    String    @default("")
+  notesDe   String    @default("")
+  notesEn   String    @default("")
+  notesEs   String    @default("")
+  notesFr   String    @default("")
+  notesNl   String    @default("")
+  tagsDe    String    @default("")
+  tagsEn    String    @default("")
+  tagsEs    String    @default("")
+  tagsFr    String    @default("")
+  tagsNl    String    @default("")
+  measies   String    @default("{}")
+  updatedAt DateTime @updatedAt
+}
+

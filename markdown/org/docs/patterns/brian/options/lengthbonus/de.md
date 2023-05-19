@@ -1,6 +1,6 @@
-- - -
+---
 title: "Length bonus"
-- - -
+---
 
 ![The length bonus option on Brian](./lengthbonus.svg)
 

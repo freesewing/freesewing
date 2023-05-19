@@ -1,6 +1,6 @@
-- - -
+---
 titre: "Longueur de la bande (lacets croisés dans le dos)"
-- - -
+---
 
 ***
 

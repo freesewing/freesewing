@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Surlongueur de longueur de manche"
-- - -
+---
 
 ![The sleeve length bonus option on Brian](./sleevelengthbonus.svg)
 

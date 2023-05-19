@@ -1,6 +1,6 @@
-- - -
+---
 title: "Width"
-- - -
+---
 
 Steuert die Breite des Kleidungsstückes
 

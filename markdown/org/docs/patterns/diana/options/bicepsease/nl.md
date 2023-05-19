@@ -1,6 +1,6 @@
-- - -
+---
 title: "Biceps ease"
-- - -
+---
 
 ![De optie voor overwijdte biceps bij Diana](./bicepsease.svg)
 

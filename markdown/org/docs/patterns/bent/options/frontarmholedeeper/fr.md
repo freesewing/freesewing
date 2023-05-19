@@ -1,6 +1,6 @@
-- - -
-titre : "Découpe supplémentaire à l'avant de l'emmanchure
-- - -
+---
+titre : "Découpe supplémentaire à l'avant de l'emmanchure"
+---
 
 De quelle différence la profondeur de l'emmanchure est plus importante sur le devant que sur le dos.
 

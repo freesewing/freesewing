@@ -1,6 +1,6 @@
-- - -
+---
 title: "Gathering"
-- - -
+---
 
 ![Kräuseln](gathering.svg)
 

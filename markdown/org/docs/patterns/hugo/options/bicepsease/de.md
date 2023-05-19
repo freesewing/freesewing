@@ -1,6 +1,6 @@
-- - -
+---
 weitenzugabe/Bequemlichkeitszugabe Oberarm
-- - -
+---
 
 Das Maß der Bequemlichkeitszugabe/Weitenzugabe am Oberarm.
 

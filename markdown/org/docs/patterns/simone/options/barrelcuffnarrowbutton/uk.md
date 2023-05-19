@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cuff narrow button"
-- - -
+---
 
 ![Barrel cuff narrow button](./barrelcuffnarrowbutton.svg)
 

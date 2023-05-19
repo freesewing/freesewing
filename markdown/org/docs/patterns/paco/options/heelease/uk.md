@@ -1,6 +1,6 @@
-- - -
+---
 title: "Heel ease"
-- - -
+---
 
 This controls the amount of ease at the instep, or heel.
 

@@ -1,41 +1,30 @@
 // Hooks
-import { useEffect, useState } from 'react'
-import { useApp } from 'site/hooks/useApp.mjs'
-import { useBackend } from 'site/hooks/useBackend.mjs'
+import { useEffect, useState, useContext } from 'react'
+import { useAccount } from 'shared/hooks/use-account.mjs'
+import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Link from 'next/link'
 // Components
-import { PageWrapper } from 'site/components/wrappers/page.mjs'
-import { BareLayout } from 'site/components/layouts/bare.mjs'
-import { WelcomeWrapper } from 'site/components/wrappers/welcome.mjs'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
+import { BareLayout, ns as layoutNs } from 'site/components/layouts/bare.mjs'
+import { WelcomeWrapper } from 'shared/components/wrappers/welcome.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
 import { Popout } from 'shared/components/popout.mjs'
-import { Robot } from 'shared/components/robot/index.mjs'
 import {
   GdprProfileDetails,
   GdprMeasurementsDetails,
   ns as gdprNs,
-} from 'site/components/gdpr/details.mjs'
+} from 'shared/components/gdpr/details.mjs'
 
 // Translation namespaces used on this page
-const ns = Array.from(new Set([...gdprNs, 'confirm', 'locales', 'themes']))
+const ns = Array.from(new Set([...pageNs, ...layoutNs, ...gdprNs, 'confirm', 'locales', 'themes']))
 
-export const SignupLinkExpired = () => {
-  const { t } = useTranslation('confirm')
-
-  return (
-    <div className="p-8 max-w-md">
-      <h1 className="text-center">{t('signupLinkExpired')}</h1>
-      <Robot pose="shrug" className="w-full" embed />
-      <Link className="btn btn-primary btn-lg w-full" href="/signup">
-        {t('signupAgain')}
-      </Link>
-    </div>
-  )
-}
+const SignupLinkExpired = () => <Popout fixme>Implement SignupLinkExpired compnonent</Popout>
 
 const Checkbox = ({ value, setter, label, children = null }) => (
   <div
@@ -57,11 +46,19 @@ const Checkbox = ({ value, setter, label, children = null }) => (
   </div>
 )
 
-const ConfirmSignUpPage = (props) => {
-  const app = useApp(props)
-  const backend = useBackend(app)
-  const { t } = useTranslation(ns)
+const ConfirmSignUpPage = () => {
+  // Context
+  const { loading } = useContext(LoadingContext)
   const router = useRouter()
+  // Get confirmation ID and check from url
+  const [confirmationId, confirmationCheck] = router.asPath.slice(1).split('/').slice(2)
+  const page = {
+    path: ['confirm', 'emailchange', confirmationId],
+  }
+
+  const { token, setAccount, setToken } = useAccount()
+  const backend = useBackend(token)
+  const { t } = useTranslation(ns)
 
   const [id, setId] = useState(false)
   const [pDetails, setPDetails] = useState(false)
@@ -78,10 +75,10 @@ const ConfirmSignUpPage = (props) => {
     if (profile && measurements) consent = 2
     if (profile && measurements && openData) consent = 3
     if (consent > 0 && id) {
-      const data = await backend.confirmSignup({ consent, id, ...app.loadHelpers })
-      if (data?.token && data?.account) {
-        app.setToken(data.token)
-        app.setAccount(data.account)
+      const result = await backend.confirmSignup({ consent, id })
+      if (result.success) {
+        setToken(result.data.token)
+        setAccount(result.data.account)
         router.push('/welcome')
       } else {
         // Something went wrong
@@ -93,13 +90,10 @@ const ConfirmSignUpPage = (props) => {
   useEffect(() => {
     // Async inside useEffect requires this approach
     const getConfirmation = async () => {
-      // Get confirmation ID and check from url
-      const [confirmationId, confirmationCheck] = router.asPath.slice(1).split('/').slice(2)
       // Reach out to backend
       const data = await backend.loadConfirmation({
         id: confirmationId,
         check: confirmationCheck,
-        ...app.loadHelpers,
       })
       if (data instanceof Error) setError(true)
       setReady(true)
@@ -107,13 +101,13 @@ const ConfirmSignUpPage = (props) => {
     }
     // Call async method
     getConfirmation()
-  }, [])
+  }, [backend, confirmationCheck, confirmationId])
 
   // Short-circuit errors
   if (error)
     return (
-      <PageWrapper app={app} title={t('joinFreeSewing')} layout={BareLayout} footer={false}>
-        <WelcomeWrapper theme={app.theme}>
+      <PageWrapper {...page} title={t('joinFreeSewing')} layout={BareLayout} footer={false}>
+        <WelcomeWrapper>
           <SignupLinkExpired />
         </WelcomeWrapper>
       </PageWrapper>
@@ -121,17 +115,17 @@ const ConfirmSignUpPage = (props) => {
 
   const partA = (
     <>
-      <h5 className="mt-8">{t('profileQuestion')}</h5>
+      <h5 className="mt-8">{t('gdpr:profileQuestion')}</h5>
       {pDetails ? <GdprProfileDetails /> : null}
       {profile ? (
-        <Checkbox value={profile} setter={setProfile} label={t('yesIDo')} />
+        <Checkbox value={profile} setter={setProfile} label={t('gdpr:yesIDo')} />
       ) : (
         <>
           <button
             className="btn btn-primary btn-lg w-full mt-4 flex flex-row items-center justify-between"
             onClick={() => setProfile(!profile)}
           >
-            {t('clickHere')}
+            {t('gdpr:clickHere')}
             <span>1/2</span>
           </button>
           <p className="text-center">
@@ -139,31 +133,31 @@ const ConfirmSignUpPage = (props) => {
               className="btn btn-neutral btn-ghost btn-sm"
               onClick={() => setPDetails(!pDetails)}
             >
-              {t(pDetails ? 'hideDetails' : 'showDetails')}
+              {t(pDetails ? 'gdpr:hideDetails' : 'gdpr:showDetails')}
             </button>
           </p>
-          <Popout warning>{t('noConsentNoAccount')}</Popout>
+          <Popout warning>{t('gdpr:noConsentNoAccount')}</Popout>
         </>
       )}
     </>
   )
   const partB = (
     <>
-      <h5 className="mt-8">{t('peopleQuestion')}</h5>
+      <h5 className="mt-8">{t('gdpr:setQuestion')}</h5>
       {mDetails ? <GdprMeasurementsDetails /> : null}
       {measurements ? (
-        <Checkbox value={measurements} setter={setMeasurements} label={t('yesIDo')} />
+        <Checkbox value={measurements} setter={setMeasurements} label={t('gdpr:yesIDo')} />
       ) : (
         <button
           className="btn btn-primary btn-lg w-full mt-4 flex flex-row items-center justify-between"
           onClick={() => setMeasurements(!measurements)}
         >
-          {t('clickHere')}
+          {t('gdpr:clickHere')}
           <span>2/2</span>
         </button>
       )}
       {mDetails && measurements ? (
-        <Checkbox value={openData} setter={setOpenData} label={t('openDataQuestion')} />
+        <Checkbox value={openData} setter={setOpenData} label={t('gdpr:openDataQuestion')} />
       ) : null}
       {measurements && !openData ? <Popout note>{t('openDataInfo')}</Popout> : null}
       {!measurements && (
@@ -173,23 +167,23 @@ const ConfirmSignUpPage = (props) => {
               className="btn btn-neutral btn-ghost btn-sm"
               onClick={() => setMDetails(!mDetails)}
             >
-              {t(mDetails ? 'hideDetails' : 'showDetails')}
+              {t(mDetails ? 'gdpr:hideDetails' : 'gdpr:showDetails')}
             </button>
           </p>
-          <Popout warning>{t('noConsentNoPatterns')}</Popout>
+          <Popout warning>{t('gdpr:noConsentNoPatterns')}</Popout>
         </>
       )}
     </>
   )
 
   return (
-    <PageWrapper app={app} title={t('joinFreeSewing')} layout={BareLayout} footer={false}>
-      <WelcomeWrapper theme={app.theme}>
+    <PageWrapper {...page} title={t('joinFreeSewing')} layout={BareLayout} footer={false}>
+      <WelcomeWrapper>
         {ready ? (
           <>
-            <h1>{t('privacyMatters')}</h1>
-            <p>{t('compliant')}</p>
-            <p>{t('consentWhyAnswer')}</p>
+            <h1>{t('gdpr:privacyMatters')}</h1>
+            <p>{t('gdpr:compliant')}</p>
+            <p>{t('gdpr:consentWhyAnswer')}</p>
             {partA}
             {profile && partB}
           </>
@@ -201,21 +195,21 @@ const ConfirmSignUpPage = (props) => {
             className="btn btn-primary btn-outline btn-lg w-full mt-4"
             onClick={createAccount}
           >
-            {t('createLimitedAccount')}
+            {t('gdpr:createLimitedAccount')}
           </button>
         )}
         {profile && measurements && (
           <button
             onClick={createAccount}
-            className={`btn btn-lg w-full mt-8 ${app.loading ? 'btn-accent' : 'btn-primary'}`}
+            className={`btn btn-lg w-full mt-8 ${loading ? 'btn-accent' : 'btn-primary'}`}
           >
-            {app.loading ? (
+            {loading ? (
               <>
                 <Spinner />
-                <span>{t('processing')}</span>
+                <span>{t('gdpr:processing')}</span>
               </>
             ) : (
-              <span>{t('createAccount')}</span>
+              <span>{t('gdpr:createAccount')}</span>
             )}
           </button>
         )}
@@ -225,6 +219,7 @@ const ConfirmSignUpPage = (props) => {
           </Link>
         </p>
       </WelcomeWrapper>
+      <br />
     </PageWrapper>
   )
 }

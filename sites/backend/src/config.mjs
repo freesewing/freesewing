@@ -7,6 +7,7 @@ import { measurements } from './measurements.mjs'
 import get from 'lodash.get'
 import { readFileSync, writeFileSync } from 'node:fs'
 import { postConfig } from '../local-config.mjs'
+import { roles } from '../../../config/roles.mjs'
 dotenv.config()
 
 // Allow these 2 to be imported
@@ -27,6 +28,8 @@ const envToBool = (input = 'no') => {
 
 // Construct config object
 const baseConfig = {
+  // Environment
+  env: process.env.NODE_ENV || 'development',
   // Feature flags
   use: {
     github: envToBool(process.env.BACKEND_ENABLE_GITHUB),
@@ -45,7 +48,7 @@ const baseConfig = {
   // Config
   api,
   apikeys: {
-    levels: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+    levels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
     expiryMaxSeconds: 365 * 24 * 3600,
   },
   avatars: {
@@ -71,17 +74,10 @@ const baseConfig = {
     service: process.env.BACKEND_MFA_SERVICE || 'FreeSewing',
   },
   port,
-  roles: {
-    levels: {
-      user: 4,
-      bughunter: 5,
-      support: 7,
-      admin: 8,
-    },
-    base: 'user',
-  },
+  roles,
   tests: {
     domain: process.env.BACKEND_TEST_DOMAIN || 'freesewing.dev',
+    production: envToBool(process.env.BACKEND_ALLOW_TESTS_IN_PRODUCTION),
   },
   website: {
     domain: process.env.BACKEND_WEBSITE_DOMAIN || 'freesewing.org',
@@ -197,6 +193,7 @@ const vars = {
   BACKEND_ENABLE_OAUTH_GITHUB: 'optional',
   BACKEND_ENABLE_OAUTH_GOOGLE: 'optional',
   BACKEND_ENABLE_TESTS: 'optional',
+  BACKEND_ALLOW_TESTS_IN_PRODUCTION: 'optional',
   BACKEND_ENABLE_DUMP_CONFIG_AT_STARTUP: 'optional',
 }
 
@@ -236,7 +233,7 @@ if (envToBool(process.env.BACKEND_ENABLE_OAUTH_GOOGLE)) {
   vars.BACKEND_OAUTH_GOOGLE_CLIENT_ID = 'required'
   vars.BACKEND_OAUTH_GOOGLE_CLIENT_SECRET = 'requiredSecret'
 }
-// Vars for unit tests
+// Vars for (unit) tests
 if (envToBool(process.env.BACKEND_ENABLE_TESTS)) {
   vars.BACKEND_TEST_DOMAIN = 'optional'
   vars.BACKEND_ENABLE_TESTS_EMAIL = 'optional'

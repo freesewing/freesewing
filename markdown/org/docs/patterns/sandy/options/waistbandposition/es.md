@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waistband position"
-- - -
+---
 
 ![Posición de la cinturilla](waistbandposition.svg)
 

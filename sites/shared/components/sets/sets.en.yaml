@@ -1,0 +1,10 @@
+setLacksMeasiesForDesign: "This set lacks required measurements to generate a { design } pattern."
+chooseSet: Please choose a set of measurements
+fsmtm: FreeSewing generates made-to-measure sewing patterns.
+patternForWhichSet: Which set of measurements should we generate a pattern for?
+yourSets: Your measurements sets
+bookmarkedSets: Measurements sets you've bookmarked
+curatedSets: FreeSewing's Curated Measurements Sets
+curatedSetsAbout: Sets of measurements curated by FreeSewing that you can use to test our platform, or your designs.
+curateCuratedSets: Curate our selection of Curated Measurements Sets
+useThisSet: Use this set of measurements

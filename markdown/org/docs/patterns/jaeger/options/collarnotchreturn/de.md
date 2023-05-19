@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar notch return"
-- - -
+---
 
 ![Kragenrückkehr](collarnotchreturn.svg)
 

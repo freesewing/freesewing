@@ -1,6 +1,6 @@
-- - -
+---
 title: "Walburga Wappenrock: What You Need"
-- - -
+---
 
 To make Walburga, you will need the following:
 

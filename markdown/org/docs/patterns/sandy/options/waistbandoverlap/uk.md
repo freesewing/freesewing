@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waistband overlap"
-- - -
+---
 
 ![Waistband overlap](waistbandoverlap.svg)
 

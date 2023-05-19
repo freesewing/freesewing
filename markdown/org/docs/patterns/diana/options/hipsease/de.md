@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hips ease"
-- - -
+---
 
 ![Die Hüfte Leichtigkeit auf Diana](./hipsease.svg)
 

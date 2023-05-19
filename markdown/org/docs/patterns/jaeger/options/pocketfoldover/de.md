@@ -1,6 +1,6 @@
-- - -
+---
 title: "Pocket fold-over"
-- - -
+---
 
 Steuert die Menge der Stoffe, die oben an der Pfadentasche gefaltet sind.
 

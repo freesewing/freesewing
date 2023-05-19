@@ -1,6 +1,6 @@
-- - -
+---
 title: "Albert apron: Fabric Options"
-- - -
+---
 
 An apron works best with a fabric that is sturdy, tightly woven, and easy to clean. Achte zusätzlich darauf, natürliche Fasern zu verwenden, und in jedem Fall etwas, das hitzebeständig ist.
 

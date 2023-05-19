@@ -1,6 +1,6 @@
-- - -
+---
 title: "Center front hem drop"
-- - -
+---
 
 ![Dobladillo delantero central](centerfronthemdrop.svg)
 

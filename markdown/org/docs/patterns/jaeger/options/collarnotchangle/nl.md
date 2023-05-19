@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar notch angle"
-- - -
+---
 
 ![Hoek inkeping kraag](collarnotchangle.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Ursula undies: Sewing Instructions"
-- - -
+---
 
 ### Schritt 1: Nähe die Vorderseite an das erste Zwickel-Stück
 

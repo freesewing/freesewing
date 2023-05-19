@@ -1,6 +1,6 @@
-- - -
+---
 title: "Biceps ease"
-- - -
+---
 
 ![The biceps ease option on Diana](./bicepsease.svg)
 

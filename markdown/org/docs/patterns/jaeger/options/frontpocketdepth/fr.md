@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front pocket depth"
-- - -
+---
 
 ![Profondeur des poches avant](frontpocketdepth.svg)
 

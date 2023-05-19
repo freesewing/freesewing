@@ -1,11 +1,13 @@
 import { log } from '../utils/log.mjs'
 import { setSetAvatar } from '../utils/sanity.mjs'
+import yaml from 'js-yaml'
 
 export function SetModel(tools) {
   this.config = tools.config
   this.prisma = tools.prisma
   this.decrypt = tools.decrypt
   this.encrypt = tools.encrypt
+  this.rbac = tools.rbac
   this.encryptedFields = ['measies', 'img', 'name', 'notes']
   this.clear = {} // For holding decrypted data
 
@@ -13,7 +15,7 @@ export function SetModel(tools) {
 }
 
 SetModel.prototype.guardedCreate = async function ({ body, user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (Object.keys(body).length < 1) return this.setResponse(400, 'postBodyMissing')
   if (!body.name || typeof body.name !== 'string') return this.setResponse(400, 'nameMissing')
 
@@ -27,6 +29,7 @@ SetModel.prototype.guardedCreate = async function ({ body, user }) {
   else data.notes = '--'
   if (body.public === true) data.public = true
   if (body.measies) data.measies = this.sanitizeMeasurements(body.measies)
+  else data.measies = {}
   data.imperial = body.imperial === true ? true : false
   data.userId = user.uid
   // Set this one initially as we need the ID to create a custom img via Sanity
@@ -39,7 +42,7 @@ SetModel.prototype.guardedCreate = async function ({ body, user }) {
   const img =
     this.config.use.sanity &&
     typeof body.img === 'string' &&
-    (!body.unittest || (body.unittest && this.config.use.tests?.sanity))
+    (!body.test || (body.test && this.config.use.tests?.sanity))
       ? await setSetAvatar(this.record.id, body.img)
       : false
 
@@ -84,11 +87,11 @@ SetModel.prototype.read = async function (where) {
  * Stores result in this.record
  */
 SetModel.prototype.guardedRead = async function ({ params, user }) {
-  if (user.level < 1) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   await this.read({ id: parseInt(params.id) })
-  if (this.record.userId !== user.uid && user.level < 5) {
+  if (this.record.userId !== user.uid && !this.rbac.bughunter(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
 
@@ -99,17 +102,33 @@ SetModel.prototype.guardedRead = async function ({ params, user }) {
 }
 
 /*
+ * Loads a measurements set from the database but only if it's public
+ *
+ * Stores result in this.record
+ */
+SetModel.prototype.publicRead = async function ({ params }) {
+  await this.read({ id: parseInt(params.id) })
+  if (this.record.public !== true) {
+    // Note that we return 404
+    // because we don't want to reveal that a non-public set exists.
+    return this.setResponse(404)
+  }
+
+  return this.setResponse(200, false, this.asPublicSet(), true)
+}
+
+/*
  * Clones a measurements set
  * In addition prepares it for returning the set data
  *
  * Stores result in this.record
  */
 SetModel.prototype.guardedClone = async function ({ params, user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   await this.read({ id: parseInt(params.id) })
-  if (this.record.userId !== user.uid && !this.record.public && user.level < 5) {
+  if (this.record.userId !== user.uid && !this.record.public && !this.rbac.support(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
 
@@ -136,7 +155,11 @@ SetModel.prototype.reveal = async function () {
   this.clear = {}
   if (this.record) {
     for (const field of this.encryptedFields) {
-      this.clear[field] = this.decrypt(this.record[field])
+      try {
+        this.clear[field] = this.decrypt(this.record[field])
+      } catch (err) {
+        console.log(err)
+      }
     }
   }
 
@@ -154,6 +177,22 @@ SetModel.prototype.cloak = function (data) {
   }
 
   return data
+}
+
+/*
+ * Helper method to decrypt data from a non-instantiated set
+ */
+SetModel.prototype.revealSet = function (mset) {
+  const clear = {}
+  for (const field of this.encryptedFields) {
+    try {
+      clear[field] = this.decrypt(mset[field])
+    } catch (err) {
+      //console.log(err)
+    }
+  }
+
+  return { ...mset, ...clear }
 }
 
 /*
@@ -193,10 +232,10 @@ SetModel.prototype.unguardedUpdate = async function (data) {
  * so we can't be certain it's safe
  */
 SetModel.prototype.guardedUpdate = async function ({ params, body, user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
   await this.read({ id: parseInt(params.id) })
-  if (this.record.userId !== user.uid && user.level < 8) {
+  if (this.record.userId !== user.uid && !this.rbac.admin(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
   const data = {}
@@ -238,7 +277,7 @@ SetModel.prototype.guardedUpdate = async function ({ params, body, user }) {
  * Removes the set - No questions asked
  */
 SetModel.prototype.unguardedDelete = async function () {
-  await this.prisma.set.delete({ here: { id: this.record.id } })
+  await this.prisma.set.delete({ where: { id: this.record.id } })
   this.record = null
   this.clear = null
 
@@ -249,17 +288,34 @@ SetModel.prototype.unguardedDelete = async function () {
  * Removes the set - Checks permissions
  */
 SetModel.prototype.guardedDelete = async function ({ params, user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   await this.read({ id: parseInt(params.id) })
-  if (this.record.userId !== user.uid && user.level < 8) {
+  if (this.record.userId !== user.uid && !this.rbac.admin(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
 
   await this.unguardedDelete()
 
   return this.setResponse(204, false)
+}
+
+/*
+ * Returns a list of sets for the user making the API call
+ */
+SetModel.prototype.userSets = async function (uid) {
+  if (!uid) return false
+  let sets
+  try {
+    sets = await this.prisma.set.findMany({ where: { userId: uid } })
+  } catch (err) {
+    log.warn(`Failed to search sets for user ${uid}: ${err}`)
+  }
+  const list = []
+  for (const set of sets) list.push(await this.revealSet(set))
+
+  return list
 }
 
 /*
@@ -273,17 +329,44 @@ SetModel.prototype.asSet = function () {
 }
 
 /*
+ * Returns record data fit for public publishing
+ */
+SetModel.prototype.asPublicSet = function () {
+  const data = {
+    author: 'FreeSewing.org',
+    type: 'measurementsSet',
+    about: 'Contains measurements in mm as well as metadata',
+    ...this.asSet(),
+  }
+  delete data.userId
+  data.measurements = data.measies
+  delete data.measies
+  data.units = data.imperial ? 'imperial' : 'metric'
+  delete data.imperial
+  delete data.public
+
+  return data
+}
+
+/*
  * Helper method to set the response code, result, and body
  *
  * Will be used by this.sendResponse()
  */
-SetModel.prototype.setResponse = function (status = 200, error = false, data = {}) {
+SetModel.prototype.setResponse = function (
+  status = 200,
+  error = false,
+  data = {},
+  rawData = false
+) {
   this.response = {
     status,
-    body: {
-      result: 'success',
-      ...data,
-    },
+    body: rawData
+      ? data
+      : {
+          result: 'success',
+          ...data,
+        },
   }
   if (status > 201) {
     this.response.body.error = error
@@ -295,18 +378,25 @@ SetModel.prototype.setResponse = function (status = 200, error = false, data = {
 }
 
 /*
- * Helper method to send response
+ * Helper method to send response (as JSON)
  */
 SetModel.prototype.sendResponse = async function (res) {
   return res.status(this.response.status).send(this.response.body)
 }
 
 /*
- * Update method to determine whether this request is
- * part of a unit test
+ * Helper method to send response as YAML
  */
-//UserModel.prototype.isUnitTest = function (body) {
-//  if (!body.unittest) return false
+SetModel.prototype.sendYamlResponse = async function (res) {
+  return res.status(this.response.status).type('yaml').send(yaml.dump(this.response.body))
+}
+
+/*
+ * Update method to determine whether this request is
+ * part of a test
+ */
+//UserModel.prototype.isTest = function (body) {
+//  if (!body.test) return false
 //  if (!this.clear.email.split('@').pop() === this.config.tests.domain) return false
 //  if (body.email && !body.email.split('@').pop() === this.config.tests.domain) return false
 //

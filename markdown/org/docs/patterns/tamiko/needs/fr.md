@@ -1,6 +1,6 @@
-- - -
+---
 title: "Top Tamiko : ce dont vous avez besoin"
-- - -
+---
 
 Pour faire Tamiko, vous aurez besoin des éléments suivants :
 

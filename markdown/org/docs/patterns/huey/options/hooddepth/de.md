@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hood depth"
-- - -
+---
 
 ![Kapuzentiefe](./hooddepth.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chest ease"
-- - -
+---
 
 ![Overwijdte borst](chestease.svg)
 

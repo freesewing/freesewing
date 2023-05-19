@@ -53,7 +53,8 @@ export const setup = async () => {
       result = await axios.post(`${store.config.api}/signup`, {
         email: store[acc].email,
         language: store[acc].language,
-        unittest: true,
+        test: true,
+        role: 'curator',
       })
     } catch (err) {
       console.log('Failed at first setup request', err)
@@ -80,7 +81,7 @@ export const setup = async () => {
         `${store.config.api}/apikeys/jwt`,
         {
           name: 'Test API key',
-          level: 4,
+          level: 5,
           expiresIn: 60,
         },
         {

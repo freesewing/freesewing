@@ -273,17 +273,17 @@ export const response = {
           example: false,
         },
         name: {
-          description: `The name of the Measurements Set exists solely to help you differentiate between your people.`,
+          description: `The name of the Measurements Set`,
           type: 'string',
           example: 'My bestie Ronda',
         },
         notes: {
-          description: `Any notes to be stored with the measurements set`,
+          description: `Any notes stored with the measurements set`,
           type: 'string',
           example: 'These are my notes. I can keep them alongside the measurements set. Handy!',
         },
         public: {
-          description: `Whether or not this pattern can be viewed/used by others`,
+          description: `Whether or not this measurements set can be viewed/used by others`,
           type: 'boolean',
           example: false,
         },
@@ -293,12 +293,135 @@ export const response = {
           example: { neck: 420 },
         },
         userId: {
-          description: `The unique ID of the User who created this pattern`,
+          description: `The unique ID of the User who owns this measurements set`,
           type: 'integer',
           example: 66,
         },
         updatedAt: {
           description: 'Timestamp of when the Pattern was last updated, in ISO 8601 format.',
+          type: 'string',
+          example: '2022-12-18T18:14:30.460Z',
+        },
+      },
+    },
+    curatedSet: {
+      description: 'Object holding the data of the curated measurements set',
+      type: 'object',
+      properties: {
+        id: {
+          description: `The Curated Measurements Set's unique ID`,
+          type: 'integer',
+          example: 666,
+        },
+        createdAt: {
+          description:
+            'Timestamp of when the Curated Measurement Set was created, in ISO 8601 format.',
+          type: 'string',
+          example: '2022-12-18T18:14:30.460Z',
+        },
+        img: {
+          description: `An image that was stored with this curated measurements set`,
+          type: 'string',
+          example: 'https://freesewing.org/avatar.svg',
+        },
+        nameEn: {
+          description: `The name of the Curated Measurements Set in English`,
+          type: 'string',
+          example: 'Example Measurements',
+        },
+        nameDe: {
+          description: `The name of the Curated Measurements Set in English`,
+          type: 'string',
+          example: 'Beispielmessungen',
+        },
+        nameEs: {
+          description: `The name of the Curated Measurements Set in English`,
+          type: 'string',
+          example: 'Medidas de ejemplo A',
+        },
+        nameFr: {
+          description: `The name of the Curated Measurements Set in English`,
+          type: 'string',
+          example: 'Mesures exemple A',
+        },
+        nameNl: {
+          description: `The name of the Curated Measurements Set in English`,
+          type: 'string',
+          example: 'Voorbeel maten  A',
+        },
+        notesEn: {
+          description: `Any notes to be stored with the measurements set`,
+          type: 'string',
+          example: 'These are the notes',
+        },
+        notesDe: {
+          description: `Any notes to be stored with the measurements set`,
+          type: 'string',
+          example: 'Das sind die Notizen A',
+        },
+        notesEs: {
+          description: `Any notes to be stored with the measurements set`,
+          type: 'string',
+          example: 'Estas son las notas',
+        },
+        notesFr: {
+          description: `Any notes to be stored with the measurements set`,
+          type: 'string',
+          example: 'Ce sont les notes A',
+        },
+        notesNl: {
+          description: `Any notes to be stored with the measurements set`,
+          type: 'string',
+          example: 'Dit zijn de notities A',
+        },
+        tagsEn: {
+          description: `A list of tags for the measurements set`,
+          type: 'array',
+          items: {
+            type: 'string',
+            example: 'cisFemale',
+          },
+        },
+        tagsDe: {
+          description: `A list of tags for the measurements set`,
+          type: 'array',
+          items: {
+            type: 'string',
+            example: 'cisFemale',
+          },
+        },
+        tagsEs: {
+          description: `A list of tags for the measurements set`,
+          type: 'array',
+          items: {
+            type: 'string',
+            example: 'cisFemale',
+          },
+        },
+        tagsFr: {
+          description: `A list of tags for the measurements set`,
+          type: 'array',
+          items: {
+            type: 'string',
+            example: 'cisFemale',
+          },
+        },
+        tagsNl: {
+          description: `A list of tags for the measurements set`,
+          type: 'array',
+          items: {
+            type: 'string',
+            example: 'cisFemale',
+          },
+        },
+        measies: {
+          description: `The measurements of this set`,
+          type: 'object',
+          example: { neck: 420 },
+        },
+        updatedAt: {
+          description:
+            'Timestamp of when the Curated Measurements Set was last updated, in ISO 8601 format.',
           type: 'string',
           example: '2022-12-18T18:14:30.460Z',
         },
@@ -391,8 +514,8 @@ Also: Introvert 🙊
           example: 'en',
           enum: ['en', 'es', 'de', 'fr', 'nl'],
         },
-        lastLogin: {
-          description: 'Timestamp of when the User last authenticated, in ISO 8601 format.',
+        lastSignIn: {
+          description: 'Timestamp of when the User last signed in, in ISO 8601 format.',
           type: 'string',
           example: '2022-12-18T18:14:30.460Z',
         },
@@ -462,7 +585,7 @@ for (const remove of [
   'email',
   'github',
   'initial',
-  'lastLogin',
+  'lastSignIn',
   'lusername',
   'mfaEnabled',
   'newsletter',
@@ -487,6 +610,7 @@ export const schemas = {
   apikey: response.body.apikey,
   pattern: response.body.pattern,
   set: response.body.set,
+  curatedSet: response.body.curatedSet,
   userAccount: response.body.userAccount,
   userProfile: response.body.userProfile,
 }

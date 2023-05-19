@@ -1,6 +1,6 @@
-- - -
+---
 title: "End style"
-- - -
+---
 
 ![Three different tip shapes](endstyle.svg)
 

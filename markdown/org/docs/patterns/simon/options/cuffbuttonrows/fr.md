@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cuff button rows"
-- - -
+---
 
 ![Rangée de boutons de manchette](cuffbuttonrows.svg)
 

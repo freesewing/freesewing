@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chest shaping"
-- - -
+---
 
 ![Chest shaping](chestshaping.svg)
 

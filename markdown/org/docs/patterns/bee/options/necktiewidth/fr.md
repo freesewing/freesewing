@@ -1,6 +1,6 @@
-- - -
+---
 title: "Largeur des bandes du cou "
-- - -
+---
 
 ***
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap back Y"
-- - -
+---
 
 ![De verticale locatie van het omslagpunt](./sleevecapbackfactory.svg)
 

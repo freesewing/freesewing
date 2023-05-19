@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bequemlichkeitszugabe Brust"
-- - -
+---
 
 Diese Variable beeinflusst die Weite an der Brust.
 

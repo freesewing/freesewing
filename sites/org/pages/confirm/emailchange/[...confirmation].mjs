@@ -1,69 +1,93 @@
 // Hooks
-import { useEffect, useState } from 'react'
-import { useApp } from 'site/hooks/useApp.mjs'
-import { useBackend } from 'site/hooks/useBackend.mjs'
-import { useToast } from 'site/hooks/useToast.mjs'
+import { useEffect, useState, useContext } from 'react'
+import { useBackend } from 'shared/hooks/use-backend.mjs'
+import { useAccount } from 'shared/hooks/use-account.mjs'
+import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Link from 'next/link'
 // Components
-import { PageWrapper, ns as pageNs } from 'site/components/wrappers/page.mjs'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
 import { Robot } from 'shared/components/robot/index.mjs'
-import { BackToAccountButton } from 'site/components/account/shared.mjs'
+import { BackToAccountButton } from 'shared/components/account/shared.mjs'
 import { HelpIcon } from 'shared/components/icons.mjs'
 
 // Translation namespaces used on this page
 const ns = Array.from(new Set([...pageNs, 'account']))
 
-const ConfirmSignUpPage = (props) => {
-  const app = useApp(props)
-  const backend = useBackend(app)
+const ConfirmSignUpPage = ({ page }) => {
+  // Context
+  const { startLoading, stopLoading } = useContext(LoadingContext)
+
+  // Hooks
+  const { setAccount, setToken, token } = useAccount()
+  const backend = useBackend()
   const toast = useToast()
   const { t } = useTranslation(ns)
   const router = useRouter()
-
-  const [error, setError] = useState(false)
-
   // Get confirmation ID and check from url
   const [id, check] = router.asPath.slice(1).split('/').slice(2)
 
+  // State
+  const [error, setError] = useState(false)
+
+  // Effects
   useEffect(() => {
     // Async inside useEffect requires this approach
     const confirmEmail = async () => {
-      app.startLoading()
-      const result = await backend.loadConfirmation({ id, check })
-      if (result?.result === 'success' && result.confirmation) {
-        const changed = await backend.updateAccount({
+      startLoading()
+      const confirmation = await backend.loadConfirmation({ id, check })
+      if (confirmation?.result === 'success' && confirmation.confirmation) {
+        const result = await backend.updateAccount({
           confirm: 'emailchange',
-          confirmation: result.confirmation.id,
-          check: result.confirmation.check,
+          confirmation: confirmation.confirmation.id,
+          check: confirmation.confirmation.check,
         })
-        if (changed) {
-          app.stopLoading()
+        if (result.success) {
+          setAccount(result.data.account)
+          setToken(result.data.token)
+          stopLoading()
           setError(false)
           toast.for.settingsSaved()
           router.push('/account')
         } else {
-          app.stopLoading()
+          stopLoading()
           setError(true)
         }
       } else {
-        app.stopLoading()
+        stopLoading()
         setError(true)
       }
     }
     // Call async methods
-    if (app.token) confirmEmail()
-  }, [id, check, app.token])
+    if (token) confirmEmail()
+  }, [
+    id,
+    check,
+    token,
+    backend,
+    router,
+    setAccount,
+    setToken,
+    startLoading,
+    stopLoading,
+    toast.for,
+  ])
+
+  // Update path with dynamic ID
+  if (!page) return null
+  if (page) page.path = ['confirm', 'emailchange', id]
 
   // Short-circuit errors
   if (error)
     return (
-      <PageWrapper app={app} title={t('account:politeOhCrap')} layout={BareLayout} footer={false}>
+      <PageWrapper {...page} title={t('account:politeOhCrap')} layout={BareLayout} footer={false}>
         <div className="max-w-md flex flex-col items-center m-auto justify-center h-screen text-center">
           <h1 className="text-center">{t('account:politeOhCrap')}</h1>
           <Robot pose="ohno" className="w-48" embed />
@@ -79,7 +103,7 @@ const ConfirmSignUpPage = (props) => {
     )
 
   return (
-    <PageWrapper app={app} title={t('account:oneMomentPlease')} layout={BareLayout} footer={false}>
+    <PageWrapper {...page} title={t('account:oneMomentPlease')} layout={BareLayout} footer={false}>
       <div className="max-w-md flex flex-col items-center m-auto justify-center h-screen text-center">
         <h1 className="text-center">{t('account:oneMomentPlease')}</h1>
         <p className="text-center">
@@ -96,6 +120,7 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, ns)),
+      page: { locale },
     },
   }
 }

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Across back factor"
-- - -
+---
 
 ![Across back factor](./acrossbackfactor.svg)
 

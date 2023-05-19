@@ -1,6 +1,6 @@
-- - -
+---
 title: "Ear flap width"
-- - -
+---
 
 ***
 

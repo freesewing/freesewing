@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap Q1 upward spread"
-- - -
+---
 
 ![La dispersión ascendente en el primer cuadrante de la manga](./sleevecapq1spread2.svg)
 

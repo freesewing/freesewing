@@ -1,6 +1,6 @@
-- - -
+---
 titre: "Bloc de corps pour Breanna : Options de conception"
-- - -
+---
 
 <PatternOptions pattern='breanna' />
 
@@ -86,14 +86,14 @@ Nous disposons maintenant de tous les points de départ et d'arrivée pour dessi
 
 For each of the anchor points (the ones marked in orange, not points 1 and 2) there is an option to control the spread upwards, and downwards:
 
-- [Répartition de tête de manche vers le bas Q1](/docs/patterns/breanna/options/sleevecapq1spread1) : contrôle la répartition vers le bas dans le premier quadrant<0><0>
-- [Répartition de tête de manche vers le haut Q1](/docs/patterns/breanna/options/sleevecapq1spread2) : contrôle la répartition vers le haut dans le premier quadrant<0><0>
-- [Répartition de tête de manche vers le bas Q2](/docs/patterns/breanna/options/sleevecapq2spread1) : contrôle la répartition vers le bas dans le deuxième quadrant<0><0>
-- [Répartition de tête de manche vers le haut Q2](/docs/patterns/breanna/options/sleevecapq2spread2) : contrôle la répartition vers le haut dans le deuxième quadrant<0><0>
-- [Répartition de tête de manche vers le haut Q3](/docs/patterns/breanna/options/sleevecapq3spread1) : contrôle la répartition vers le haut dans le troisième quadrant<0><0>
-- [Répartition de tête de manche vers le bas Q3](/docs/patterns/breanna/options/sleevecapq3spread2) : contrôle la répartition vers le bas dans le troisième quadrant<0><0>
-- [Répartition de tête de manche vers le haut Q4](/docs/patterns/breanna/options/sleevecapq4spread1) : contrôle la répartition vers le haut dans le quatrième quadrant<0><0>
-- [Répartition de tête de manche vers le bas Q4](/docs/patterns/breanna/options/sleevecapq4spread2) : contrôle la répartition vers le bas dans le quatrième quadrant<0><0>
+- [Répartition de tête de manche vers le bas Q1](/docs/patterns/breanna/options/sleevecapq1spread1) : contrôle la répartition vers le bas dans le premier quadrant
+- [Répartition de tête de manche vers le haut Q1](/docs/patterns/breanna/options/sleevecapq1spread2) : contrôle la répartition vers le haut dans le premier quadrant
+- [Répartition de tête de manche vers le bas Q2](/docs/patterns/breanna/options/sleevecapq2spread1) : contrôle la répartition vers le bas dans le deuxième quadrant
+- [Répartition de tête de manche vers le haut Q2](/docs/patterns/breanna/options/sleevecapq2spread2) : contrôle la répartition vers le haut dans le deuxième quadrant
+- [Répartition de tête de manche vers le haut Q3](/docs/patterns/breanna/options/sleevecapq3spread1) : contrôle la répartition vers le haut dans le troisième quadrant
+- [Répartition de tête de manche vers le bas Q3](/docs/patterns/breanna/options/sleevecapq3spread2) : contrôle la répartition vers le bas dans le troisième quadrant
+- [Répartition de tête de manche vers le haut Q4](/docs/patterns/breanna/options/sleevecapq4spread1) : contrôle la répartition vers le haut dans le quatrième quadrant
+- [Répartition de tête de manche vers le bas Q4](/docs/patterns/breanna/options/sleevecapq4spread2) : contrôle la répartition vers le bas dans le quatrième quadrant
 
 <Note>
 

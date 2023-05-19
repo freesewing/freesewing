@@ -1,6 +1,6 @@
-- - -
+---
 title: "Tip width"
-- - -
+---
 
 ![Ancho de la punta](tipwidth.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Biceps ease"
-- - -
+---
 
 ![Holgura del bíceps](bicepsease.svg)
 

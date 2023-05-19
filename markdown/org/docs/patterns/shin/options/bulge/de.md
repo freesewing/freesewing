@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bulge"
-- - -
+---
 
 Wie viel Platz möchten Sie vorne?
 

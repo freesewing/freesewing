@@ -66,6 +66,7 @@ dev:
   clean: &nextClean 'rimraf prebuild/* && rimraf public/locales/*/* && rimraf public/feeds/*'
   dev: &nextDev 'next dev -p 8000'
   develop: *nextDev
+  i18n: "SITE=dev node ../shared/prebuild/i18n-only.mjs"
   lint: &nextLint 'next lint'
   prebuild: 'SITE=dev node --experimental-json-modules ../shared/prebuild/index.mjs'
   serve: "pm2 start npm --name 'dev' -- run start"
@@ -83,7 +84,7 @@ lab:
   develop: *nextDev
   e2e: &e2e 'yarn playwright test'
   lint: *nextLint
-  prebuild: 'node --experimental-json-modules ../shared/prebuild/index.mjs'
+  prebuild: 'SITE=lab node --experimental-json-modules ../shared/prebuild/index.mjs'
   start: *nextStart
 
 org:

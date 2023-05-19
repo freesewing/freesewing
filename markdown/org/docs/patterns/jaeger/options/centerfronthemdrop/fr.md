@@ -1,6 +1,6 @@
-- - -
+---
 title: "Center front hem drop"
-- - -
+---
 
 ![Décalage de la longueur à l'avant](centerfronthemdrop.svg)
 

@@ -58,10 +58,10 @@ export const userTests = async (chai, config, expect, store) => {
         })
     })
 
-    step(`${store.icon('user')} Should not login with the wrong password`, (done) => {
+    step(`${store.icon('user')} Should not sign in with the wrong password`, (done) => {
       chai
         .request(config.api)
-        .post('/login')
+        .post('/signin')
         .send({
           username: store.account.username,
           password: store.account.username,
@@ -71,7 +71,7 @@ export const userTests = async (chai, config, expect, store) => {
           expect(res.type).to.equal('application/json')
           expect(res.charset).to.equal('utf-8')
           expect(res.body.result).to.equal(`error`)
-          expect(res.body.error).to.equal(`loginFailed`)
+          expect(res.body.error).to.equal(`signInFailed`)
           done()
         })
     })
@@ -108,10 +108,10 @@ export const userTests = async (chai, config, expect, store) => {
         })
     })
 
-    step(`${store.icon('user')} Should login with username and password`, (done) => {
+    step(`${store.icon('user')} Should sign in with username and password`, (done) => {
       chai
         .request(config.api)
-        .post('/login')
+        .post('/signin')
         .send({
           username: store.account.username,
           password: store.account.password,
@@ -131,10 +131,10 @@ export const userTests = async (chai, config, expect, store) => {
         })
     })
 
-    step(`${store.icon('user')} Should login with USERNAME and password`, (done) => {
+    step(`${store.icon('user')} Should sign in with USERNAME and password`, (done) => {
       chai
         .request(config.api)
-        .post('/login')
+        .post('/signin')
         .send({
           username: store.account.username.toUpperCase(),
           password: store.account.password,
@@ -154,10 +154,10 @@ export const userTests = async (chai, config, expect, store) => {
         })
     })
 
-    step(`${store.icon('user')} Should login with email and password`, (done) => {
+    step(`${store.icon('user')} Should sign in with email and password`, (done) => {
       chai
         .request(config.api)
-        .post('/login')
+        .post('/signin')
         .send({
           username: store.account.email,
           password: store.account.password,
@@ -177,10 +177,10 @@ export const userTests = async (chai, config, expect, store) => {
         })
     })
 
-    step(`${store.icon('user')} Should login with EMAIL and password`, (done) => {
+    step(`${store.icon('user')} Should signin with EMAIL and password`, (done) => {
       chai
         .request(config.api)
-        .post('/login')
+        .post('/signin')
         .send({
           username: store.account.email.toUpperCase(),
           password: store.account.password,
@@ -200,10 +200,10 @@ export const userTests = async (chai, config, expect, store) => {
         })
     })
 
-    step(`${store.icon('user')} Should login with id and password`, (done) => {
+    step(`${store.icon('user')} Should signin with id and password`, (done) => {
       chai
         .request(config.api)
-        .post('/login')
+        .post('/signin')
         .send({
           username: store.account.id,
           password: store.account.password,

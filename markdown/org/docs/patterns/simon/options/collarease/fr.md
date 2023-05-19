@@ -1,6 +1,6 @@
-- - -
+---
 titre: "Aisance du col"
-- - -
+---
 
 ![Aisance du col](collarease.svg)
 

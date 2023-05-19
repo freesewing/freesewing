@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Bloc de corps pour Breanna : Options de tissu"
-- - -
+---
 
 Si vous réalisez un Breanna par défaut pour voir comment il vous va, nous vous recommandons d'utiliser un tissu tel que le **Calico (Mousseline)** ou un tissu moins cher qui correspond au drapé et à l'élasticité du tissu avec lequel vous avez l'intention de réaliser la version finale du Breanna.
 

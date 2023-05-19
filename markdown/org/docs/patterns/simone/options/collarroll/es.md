@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar roll"
-- - -
+---
 
 ![Vuelta del cuello](collarroll.svg)
 

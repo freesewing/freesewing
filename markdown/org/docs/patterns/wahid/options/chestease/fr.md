@@ -1,6 +1,6 @@
-- - -
+---
 title:"Aisance de poitrine"
-- - -
+---
 
 ![Aisance de poitrine](chestease.svg)
 

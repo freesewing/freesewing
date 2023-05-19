@@ -1,6 +1,6 @@
-- - -
+---
 titre: "Longueur des liens de cou"
-- - -
+---
 
 ***
 

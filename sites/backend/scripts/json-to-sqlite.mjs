@@ -1,3 +1,4 @@
+/*
 import path from 'path'
 import fs from 'fs'
 import { PrismaClient } from '@prisma/client'
@@ -9,15 +10,15 @@ const prisma = new PrismaClient()
 const config = verifyConfig()
 const { encrypt, decrypt } = encryption(config.encryption.key)
 
-/*
- * Note: This is not intended to work for you
- *
- * This script imports a raw database dump of the current (v2)
- * FreeSewing backend and writes it to sqlite.
- *
- * This is not the kind of thing you should try to run yourself
- * because for one thing you do not have a raw database dump
- */
+//
+// Note: This is not intended to work for you
+//
+// This script imports a raw database dump of the current (v2)
+// FreeSewing backend and writes it to sqlite.
+//
+// This is not the kind of thing you should try to run yourself
+// because for one thing you do not have a raw database dump
+///
 
 // Dumped data folder
 const dir = '/home/joost/'
@@ -161,10 +162,10 @@ async function createUser(user) {
   data.userhandles[user.handle] = record.id
 }
 
-/*
- * Only migrate user data if the user was active in the last 12 months
- * Unless they are patrons. Keep patrons regardless coz patrons rock.
- */
+/
+// Only migrate user data if the user was active in the last 12 months
+// Unless they are patrons. Keep patrons regardless coz patrons rock.
+//
 function filterData(data) {
   let i = 0
   const filtered = {
@@ -194,18 +195,18 @@ function filterData(data) {
   return filtered
 }
 
-/*
- * Migrates role field
- */
+//
+// Migrates role field
+//
 function getRole(entry) {
   if (entry.handle === 'joost') return 'admin'
   if (entry.patron > 0) return 'patron'
   return 'user'
 }
 
-/*
- * Migrates consent field
- */
+//
+// Migrates consent field
+//
 function getConsent(entry) {
   let consent = 0
   if (entry.consent.profile) consent++
@@ -214,9 +215,9 @@ function getConsent(entry) {
   return consent
 }
 
-/*
- * Migrates person entry
- */
+//
+// Migrates person entry
+//
 function migratePerson(entry) {
   return {
     user: entry.user,
@@ -231,9 +232,9 @@ function migratePerson(entry) {
   }
 }
 
-/*
- * Migrates pattern entry
- */
+//
+// Migrates pattern entry
+//
 function migratePattern(entry) {
   return {
     handle: entry.handle,
@@ -246,12 +247,14 @@ function migratePattern(entry) {
   }
 }
 
-/*
- * Migrates subscriber entry
- */
+//
+// Migrates subscriber entry
+//
 function migrateSubscriber(entry) {
   return {
     createdAt: entry.created,
     email: entry.email,
   }
 }
+
+*/

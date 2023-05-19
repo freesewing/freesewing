@@ -178,7 +178,7 @@ function titanBack({
     let rotate = ['waistIn', 'waistOut']
     let saved = []
     let delta = crossSeamDelta()
-    let previous_delta = delta
+    let previous_delta
     let run = 0
     do {
       previous_delta = delta

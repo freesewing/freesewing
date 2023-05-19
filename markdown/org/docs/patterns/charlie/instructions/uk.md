@@ -1,6 +1,6 @@
-- - -
+---
 title: "Charlie chinos: Sewing Instructions"
-- - -
+---
 
 ## Step 1: Close the back dart
 

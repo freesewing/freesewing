@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sandy circle skirt: Sewing Instructions"
-- - -
+---
 
 <Warning>
 
@@ -52,7 +52,7 @@ Du machst eine nahtlose Version.
 - _Baste_ Lining to skirt at waist.
 - Bei Bedarf Die Weite in Falten legen.
 
-## Der Bund
+## Schritt 4: Der Bund
 
 ### Verschlüsse
 

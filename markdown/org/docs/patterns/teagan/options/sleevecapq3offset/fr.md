@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap Q3 offset"
-- - -
+---
 
 ![Le décalage dans le troisième trimestre de la tête de manche](./sleevecapq3offset.svg)
 

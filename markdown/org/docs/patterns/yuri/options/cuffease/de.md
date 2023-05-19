@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cuff ease"
-- - -
+---
 
 Diese Option steuert die Leichtigkeit am Handgelenk.
 

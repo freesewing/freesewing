@@ -1,6 +1,6 @@
-- - -
+---
 title: "Leg opening"
-- - -
+---
 
 Diese Option legt fest, wie hoch das Bein ausgeschnitten ist.
 

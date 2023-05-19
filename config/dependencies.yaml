@@ -90,8 +90,10 @@ hugo:
     '@freesewing/plugin-bust': *freesewing
 i18n:
   dev:
-    'js-yaml': '4.1.0'
+    'js-yaml': &jsyaml '4.1.0'
     'recursive-readdir': '^2.2.3'
+  peer:
+    '@freesewing/pattern-info': *freesewing
 jaeger:
   peer:
     '@freesewing/brian': *freesewing
@@ -195,6 +197,7 @@ backend:
     'crypto': '1.0.1'
     'dotenv': '16.0.3'
     'express': '4.18.2'
+    'js-yaml': *jsyaml
     'lodash.get': *_get
     'mustache': '4.2.0'
     'otplib': '12.0.1'
@@ -251,6 +254,7 @@ dev:
     'postcss': &postcss '8.4.23'
     'playwright': '^1.32.3'
     'remark-extract-frontmatter': '3.2.0'
+    'remark-mdx-frontmatter': '3.0.0'
     'tailwindcss': &tailwindcss '3.3.2'
     'yaml-loader': '0.8.0'
 
@@ -295,6 +299,7 @@ lab:
     'rehype-stringify': *rehypeStringify
     'remark-copy-linked-files': *remarkCopyLinkedFiles
     'remark-gfm': *remarkGfm
+    'remark-mdx-frontmatter': '3.0.0'
   dev:
     *nextSiteDevDependencies
 
@@ -329,6 +334,8 @@ org:
     'rehype-stringify': *rehypeStringify
     'remark-copy-linked-files': *remarkCopyLinkedFiles
     'remark-gfm': *remarkGfm
+    'remark-mdx-frontmatter': '3.0.0'
+    'use-persisted-state': &use-persisted-state 0.3.3
     'yaml-loader': 0.8.0
   dev: *nextSiteDevDependencies
 
@@ -351,6 +358,7 @@ sanity:
 shared:
   _:
     '@headlessui/react': *headlessUiReact
+    '@next/mdx': '13.4.2'
     '@resvg/resvg-js': '2.4.1'
     '@tailwindcss/typography': *tailwindTypography
     'Buffer': '0.0.0'
@@ -362,6 +370,8 @@ shared:
     'file-saver': '2.0.5'
     'front-matter': '4.0.2'
     'highlight.js': '11.8.0'
+    'jotai': '2.1.0'
+    'jotai-location': '0.5.1'
     'lodash.clonedeep': '4.5.0'
     'lodash.orderby': *_orderby
     'lodash.unset': *_unset
@@ -378,12 +388,15 @@ shared:
     'react-zoom-pan-pinch': '3.0.7'
     'rehype-autolink-headings': *rehypeAutolinkHeadings
     'rehype-highlight': *rehypeHighlight
+    'remark-frontmatter': '4.0.1'
+    'remark-mdx-frontmatter': '3.0.0'
     'remark-smartypants': '2.0.0'
     'sharp': '0.32.1'
     'svg-to-pdfkit': 'https://github.com/eriese/SVG-to-PDFKit'
     'tlds': '1.238.0'
     'to-vfile': '7.2.4'
     'unist-util-visit': *unist-util-visit
+    'use-persisted-state': *use-persisted-state
     'web-worker': '1.2.0'
   dev:
     'recursive-readdir': '^2.2.3'

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Gathering"
-- - -
+---
 
 ![Fronsen](gathering.svg)
 

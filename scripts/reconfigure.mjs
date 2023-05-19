@@ -6,12 +6,7 @@ import chalk from 'chalk'
 import mustache from 'mustache'
 import conf from '../lerna.json' assert { type: 'json' }
 const { version } = conf
-import {
-  software as software,
-  publishedTypes as types,
-  designs,
-  plugins,
-} from '../config/software/index.mjs'
+import { software, publishedTypes as types, designs, plugins } from '../config/software/index.mjs'
 import { buildOrder } from '../config/build-order.mjs'
 import rootPackageJson from '../package.json' assert { type: 'json' }
 import { capitalize } from '../packages/core/src/index.mjs'
@@ -466,7 +461,7 @@ function formatDate(date) {
 function validate() {
   for (const type in repo.dirs) {
     for (const dir of repo.dirs[type]) {
-      if (typeof software[dir] === 'undefined' || typeof software[dir].description !== 'string') {
+      if (typeof software?.[dir]?.description !== 'string') {
         log.write(chalk.redBright(` No description for package ${type}/${dir}` + '\n'))
         return false
       }

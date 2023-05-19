@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleeve vent length"
-- - -
+---
 
 Contrôle la longueur de l'évasion de la manche.
 

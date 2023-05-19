@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar bend"
-- - -
+---
 
 ![Kragenkrümmung](collarbend.svg)
 

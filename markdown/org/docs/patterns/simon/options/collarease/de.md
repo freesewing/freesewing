@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar ease"
-- - -
+---
 
 ![Kragen Zugabe](collarease.svg)
 

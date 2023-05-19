@@ -1,6 +1,6 @@
-- - -
+---
 title: "Teagan T-shirt: Cutting Instructions"
-- - -
+---
 
 - Schneiden Sie 1 zurück auf die Faltung.
 - Schneiden Sie 1 Front auf die Faltung.

@@ -11,6 +11,7 @@ export function UserModel(tools) {
   this.decrypt = tools.decrypt
   this.encrypt = tools.encrypt
   this.mfa = tools.mfa
+  this.rbac = tools.rbac
   this.mailer = tools.email
   this.Confirmation = new ConfirmationModel(tools)
   this.encryptedFields = ['bio', 'github', 'email', 'initial', 'img', 'mfaSecret']
@@ -69,7 +70,7 @@ UserModel.prototype.cloak = function (data) {
  * Stores result in this.record
  */
 UserModel.prototype.guardedRead = async function (where, { user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
   await this.read(where)
 
@@ -149,6 +150,10 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
   const ehash = hash(clean(body.email))
   const check = randomString()
   await this.read({ ehash })
+
+  // Check for unit tests only once
+  const isTest = this.isTest(body)
+
   if (this.exists) {
     /*
      * User already exists. However, if we return an error, then baddies can
@@ -182,20 +187,21 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
         userId: this.record.id,
       })
     }
-    // Always send email
-    await this.mailer.send({
-      template: type,
-      language: body.language,
-      to: this.clear.email,
-      replacements: {
-        actionUrl:
-          type === 'signup-aed'
-            ? false // No actionUrl for disabled accounts
-            : i18nUrl(body.language, `/confirm/${type}/${this.Confirmation.record.id}/${check}`),
-        whyUrl: i18nUrl(body.language, `/docs/faq/email/why-${type}`),
-        supportUrl: i18nUrl(body.language, `/patrons/join`),
-      },
-    })
+    // Send email unless it's a test and we don't want to send test emails
+    if (!isTest || this.config.tests.sendEmail)
+      await this.mailer.send({
+        template: type,
+        language: body.language,
+        to: this.clear.email,
+        replacements: {
+          actionUrl:
+            type === 'signup-aed'
+              ? false // No actionUrl for disabled accounts
+              : i18nUrl(body.language, `/confirm/${type}/${this.Confirmation.record.id}/${check}`),
+          whyUrl: i18nUrl(body.language, `/docs/faq/email/why-${type}`),
+          supportUrl: i18nUrl(body.language, `/patrons/join`),
+        },
+      })
 
     // Now return as if everything is fine
     return this.setResponse(201, false, { email: this.clear.email })
@@ -224,6 +230,8 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
       // Set this one initially as we need the ID to create a custom img via Sanity
       img: this.encrypt(this.config.avatars.user),
     }
+    // During tests, users can set their own permission level so you can test admin stuff
+    if (isTest && body.role) data.role = body.role
     this.record = await this.prisma.user.create({ data })
   } catch (err) {
     log.warn(err, 'Could not create user record')
@@ -255,7 +263,7 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
   })
 
   // Send signup email
-  if (!this.isUnitTest(body) || this.config.tests.sendEmail)
+  if (!this.isTest(body) || this.config.tests.sendEmail)
     await this.mailer.send({
       template: 'signup',
       language: this.language,
@@ -270,7 +278,7 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
       },
     })
 
-  return this.isUnitTest(body)
+  return this.isTest(body)
     ? this.setResponse(201, false, {
         email: this.clear.email,
         confirmation: this.confirmation.record.id,
@@ -279,42 +287,135 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
 }
 
 /*
- * Login based on username + password
+ * Sign in based on username + password
  */
-UserModel.prototype.passwordLogin = async function (req) {
+UserModel.prototype.passwordSignIn = async function (req) {
   if (Object.keys(req.body).length < 1) return this.setResponse(400, 'postBodyMissing')
   if (!req.body.username) return this.setResponse(400, 'usernameMissing')
   if (!req.body.password) return this.setResponse(400, 'passwordMissing')
 
   await this.find(req.body)
   if (!this.exists) {
-    log.warn(`Login attempt for non-existing user: ${req.body.username} from ${req.ip}`)
-    return this.setResponse(401, 'loginFailed')
+    log.warn(`Sign-in attempt for non-existing user: ${req.body.username} from ${req.ip}`)
+    return this.setResponse(401, 'signInFailed')
   }
 
   // Account found, check password
   const [valid, updatedPasswordField] = verifyPassword(req.body.password, this.record.password)
   if (!valid) {
     log.warn(`Wrong password for existing user: ${req.body.username} from ${req.ip}`)
-    return this.setResponse(401, 'loginFailed')
+    return this.setResponse(401, 'signInFailed')
   }
 
   // Check for MFA
   if (this.record.mfaEnabled) {
     if (!req.body.token) return this.setResponse(403, 'mfaTokenRequired')
     else if (!this.mfa.verify(req.body.token, this.clear.mfaSecret)) {
-      return this.setResponse(401, 'loginFailed')
+      return this.setResponse(401, 'signInFailed')
     }
   }
 
-  // Login success
-  log.info(`Login by user ${this.record.id} (${this.record.username})`)
+  // Sign in success
+  log.info(`Sign-in by user ${this.record.id} (${this.record.username})`)
   if (updatedPasswordField) {
     // Update the password field with a v3 hash
     await this.unguardedUpdate({ password: updatedPasswordField })
   }
 
-  return this.isOk() ? this.loginOk() : this.setResponse(401, 'loginFailed')
+  return this.isOk() ? this.signInOk() : this.setResponse(401, 'signInFailed')
+}
+
+/*
+ * Sign in based on a sign-in link
+ */
+UserModel.prototype.linkSignIn = async function (req) {
+  if (!req.params.id) return this.setResponse(400, 'signInIdMissing')
+  if (!req.params.check) return this.setResponse(400, 'signInCheckMissing')
+
+  // Retrieve confirmation record
+  await this.Confirmation.read({ id: req.params.id })
+
+  // Verify whether Confirmation exists
+  if (!this.Confirmation.exists) {
+    log.warn(`Could not find signin confirmation id ${req.params.id}`)
+    return this.setResponse(404)
+  }
+
+  // Verify whether Confirmation is of the right type
+  if (this.Confirmation.record.type !== 'signinlink') {
+    log.warn(`Confirmation mismatch; ${req.params.id} is not a signin id`)
+    return this.setResponse(404)
+  }
+
+  // Verify Confirmation check
+  if (this.Confirmation.clear.data.check !== req.params.check) {
+    log.warn(`Confirmation mismatch; ${req.params.check} did not match signin confirmation check`)
+    return this.setResponse(404)
+  }
+
+  // Looks good, load user
+  await this.read({ id: this.Confirmation.record.user.id })
+  if (this.error) return this
+
+  // Check for MFA
+  if (this.record.mfaEnabled) {
+    if (!req.body.token) return this.setResponse(403, 'mfaTokenRequired')
+    else if (!this.mfa.verify(req.body.token, this.clear.mfaSecret)) {
+      return this.setResponse(401, 'signInFailed')
+    }
+  }
+
+  // Before we return, remove the confirmation so it works only once
+  await this.Confirmation.unguardedDelete()
+
+  // Sign in success
+  log.info(`Sign-in by user ${this.record.id} (${this.record.username}) (via signin link)`)
+
+  return this.isOk() ? this.signInOk() : this.setResponse(401, 'signInFailed')
+}
+
+/*
+ * Send a magic link for user sign in
+ */
+UserModel.prototype.sendSigninlink = async function (req) {
+  if (Object.keys(req.body).length < 1) return this.setResponse(400, 'postBodyMissing')
+  if (!req.body.username) return this.setResponse(400, 'usernameMissing')
+
+  await this.find(req.body)
+  if (!this.exists) {
+    log.warn(`Magic link attempt for non-existing user: ${req.body.username} from ${req.ip}`)
+    return this.setResponse(401, 'signInFailed')
+  }
+
+  // Account found, create confirmation
+  const check = randomString()
+  this.confirmation = await this.Confirmation.create({
+    type: 'signinlink',
+    data: {
+      language: this.record.language,
+      check,
+    },
+    userId: this.record.id,
+  })
+  const isTest = this.isTest(req.body)
+  if (!isTest) {
+    // Send sign-in link email
+    await this.mailer.send({
+      template: 'signinlink',
+      language: this.record.language,
+      to: this.clear.email,
+      replacements: {
+        actionUrl: i18nUrl(
+          this.record.language,
+          `/confirm/signin/${this.Confirmation.record.id}/${check}`
+        ),
+        whyUrl: i18nUrl(this.record.language, `/docs/faq/email/why-signin-link`),
+        supportUrl: i18nUrl(this.record.language, `/patrons/join`),
+      },
+    })
+  }
+
+  return this.setResponse(200, 'emailSent')
 }
 
 /*
@@ -348,19 +449,19 @@ UserModel.prototype.confirm = async function ({ body, params }) {
   await this.read({ id: this.Confirmation.record.user.id })
   if (this.error) return this
 
-  // Update user status, consent, and last login
+  // Update user status, consent, and last sign in
   await this.unguardedUpdate({
     status: 1,
     consent: body.consent,
-    lastLogin: new Date(),
+    lastSignIn: new Date(),
   })
   if (this.error) return this
 
   // Before we return, remove the confirmation so it works only once
   await this.Confirmation.unguardedDelete()
 
-  // Account is now active, let's return a passwordless login
-  return this.loginOk()
+  // Account is now active, let's return a passwordless sign in
+  return this.signInOk()
 }
 
 /*
@@ -388,7 +489,7 @@ UserModel.prototype.unguardedUpdate = async function (data) {
  * so we can't be certain it's safe
  */
 UserModel.prototype.guardedUpdate = async function ({ body, user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
   const data = {}
   // Bio
@@ -428,7 +529,7 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
   // Now update the record
   await this.unguardedUpdate(this.cloak(data))
 
-  const isUnitTest = this.isUnitTest(body)
+  const isTest = this.isTest(body)
   if (typeof body.email === 'string' && this.clear.email !== clean(body.email)) {
     // Email change (requires confirmation)
     const check = randomString()
@@ -444,7 +545,7 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
       },
       userId: this.record.id,
     })
-    if (!isUnitTest || this.config.tests.sendEmail) {
+    if (!isTest || this.config.tests.sendEmail) {
       // Send confirmation email
       await this.mailer.send({
         template: 'emailchange',
@@ -496,8 +597,7 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
     result: 'success',
     account: this.asAccount(),
   }
-  if (isUnitTest && this.Confirmation.record?.id)
-    returnData.confirmation = this.Confirmation.record.id
+  if (isTest && this.Confirmation.record?.id) returnData.confirmation = this.Confirmation.record.id
 
   return this.setResponse(200, false, returnData)
 }
@@ -507,7 +607,7 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
  * user-provided data so we can't be certain it's safe
  */
 UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
-  if (user.level < 4) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.user(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
   if (body.mfa === true && this.record.mfaEnabled === true)
     return this.setResponse(400, 'mfaActive')
@@ -599,7 +699,7 @@ UserModel.prototype.asAccount = function () {
     imperial: this.record.imperial,
     initial: this.clear.initial,
     language: this.record.language,
-    lastLogin: this.record.lastLogin,
+    lastSignIn: this.record.lastSignIn,
     mfaEnabled: this.record.mfaEnabled,
     newsletter: this.record.newsletter,
     patron: this.record.patron,
@@ -661,11 +761,14 @@ UserModel.prototype.sendResponse = async function (res) {
 
 /*
  * Update method to determine whether this request is
- * part of a unit test
+ * part of a (unit) test
  */
-UserModel.prototype.isUnitTest = function (body) {
-  if (!body.unittest) return false
-  if (!this.clear.email.split('@').pop() === this.config.tests.domain) return false
+UserModel.prototype.isTest = function (body) {
+  // Disalowing tests in prodution is hard-coded to protect people from
+  if (this.config.env === 'production' && !this.config.tests.production) return false
+  if (!body.test) return false
+  if (this.clear?.email && !this.clear.email.split('@').pop() === this.config.tests.domain)
+    return false
   if (body.email && !body.email.split('@').pop() === this.config.tests.domain) return false
 
   return true
@@ -689,9 +792,9 @@ UserModel.prototype.isOk = function () {
 }
 
 /*
- * Helper method to return from successful login
+ * Helper method to return from successful sign in
  */
-UserModel.prototype.loginOk = function () {
+UserModel.prototype.signInOk = function () {
   return this.setResponse(200, false, {
     result: 'success',
     token: this.getToken(),

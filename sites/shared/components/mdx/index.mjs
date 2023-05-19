@@ -6,10 +6,11 @@ import { ReadMore } from './read-more.mjs'
 import { Tab, Tabs } from './tabs.mjs'
 import { TabbedExample as Example } from './tabbed-example.mjs'
 import { HttpMethod, HttpStatusCode } from './http.mjs'
+import { ControlTip } from '../control/tip.mjs'
+import { Legend } from './legend.mjs'
+import { V3Wip } from '../v3-wip.mjs'
 
-const Fixme = () => <p>FIXME</p>
-
-export const MdxComponents = (app = false) => ({
+export const components = {
   // Custom components
   Method: HttpMethod,
   StatusCode: HttpStatusCode,
@@ -17,13 +18,14 @@ export const MdxComponents = (app = false) => ({
   Fixme: (props) => <Popout {...props} fixme />,
   Link: (props) => <Popout {...props} link />,
   Note: (props) => <Popout {...props} note />,
-  ReadMore: (props) => <ReadMore {...props} app={app} slug={app.slug} />,
+  ReadMore,
   Related: (props) => <Popout {...props} related />,
   Tip: (props) => <Popout {...props} tip />,
   Warning: (props) => <Popout {...props} warning />,
   YouTube,
   pre: (props) => <Highlight {...props} />,
-  img: Figure,
+  // This Figure component causes hydration errors
+  //img: Figure,
   table: (props) => (
     <table {...props} className="mdx-table table-auto w-full">
       {props.children}
@@ -31,7 +33,11 @@ export const MdxComponents = (app = false) => ({
   ),
   Tab,
   Tabs,
-  Example: (props) => <Example {...props} app={app} />,
-  PatternDocs: Fixme,
-  PatternOptions: Fixme,
-})
+  ControlTip,
+  Example,
+  PatternDocs: V3Wip,
+  PatternOptions: V3Wip,
+  PatternMeasurements: V3Wip,
+  Gauge: V3Wip,
+  Legend,
+}

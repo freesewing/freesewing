@@ -1,6 +1,6 @@
-- - -
+---
 title: "Knot width"
-- - -
+---
 
 ![Knot width](knotwidth.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Seamless full circle"
-- - -
+---
 
 ![Seamless full circle](seamlessfullcircle.svg)
 

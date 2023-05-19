@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front shoulder width (Bella)"
-- - -
+---
 
 ***
 

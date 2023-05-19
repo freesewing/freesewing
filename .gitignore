@@ -2,63 +2,15 @@
 
 # .env
 .env
+*.key
 
 # Plugins
 plugins/plugin-theme/src/bundle.css.js
 plugins/plugin-theme/css
 
-
-# Components package build artifacts
-packages/components/Blockquote
-packages/components/Draft
-packages/components/DraftConfigurator
-packages/components/Emblem
-packages/components/Example
-packages/components/Footer
-packages/components/Icon
-packages/components/Legend
-packages/components/LineDrawing
-packages/components/Logo
-packages/components/Navbar
-packages/components/Render
-packages/components/Ogol
-packages/components/Robot
-packages/components/SampleConfigurator
-packages/components/Spinner
-packages/components/withGist
-packages/components/withLanguage
-packages/components/withStorage
-packages/components/Workbench
-
 # Code coverage reports
 packages/core/coverage
 packages/*/report
-
-# Utils package build artifacts
-packages/utils/backend
-packages/utils/camelCase
-packages/utils/capitalize
-packages/utils/convertSize
-packages/utils/cloneObject
-packages/utils/defaultGist
-packages/utils/defaultSa
-packages/utils/formatImperial
-packages/utils/formatMm
-packages/utils/isDegMeasurement
-packages/utils/measurementAsMm
-packages/utils/measurementDiffers
-packages/utils/neckstimate
-packages/utils/optionDefault
-packages/utils/optionType
-packages/utils/roundMm
-packages/utils/roundMmDown
-packages/utils/roundMmUp
-packages/utils/sliderStep
-packages/utils/smallestImperialStep
-packages/utils/storage
-packages/utils/tiler
-packages/utils/validateEmail
-packages/utils/validateTld
 
 # Any NPM or Yarn lock files
 designs/*/package-lock.json
@@ -80,7 +32,6 @@ sites/*/public/feeds/*
 packages/new-design/shared/public/locales/*/*.json
 packages/new-design/shared/.gitignore
 packages/new-design/lib/banner.mjs
-
 # Translation files for NextJS
 # Remove this after we move to Node 16 and deprecate pattern-info
 #/home/joost/git/freesewing/packages/i18n/src/next/*/*.mjs
@@ -91,6 +42,18 @@ sites/lab/pages
 # but not the indexes
 !sites/lab/pages/*/index.js
 
+# dev auto-generated pages
+sites/dev/pages/*
+# But not these
+!sites/dev/pages/404.mjs
+!sites/dev/pages/_app.mjs
+!sites/dev/pages/contact.mjs
+!sites/dev/pages/index.mjs
+
+# org auto-generated pages
+sites/org/pages/docs/*
+sites/org/pages/new/pattern/*
+
 # Node dependencies
 node_modules
 
@@ -98,7 +61,6 @@ node_modules
 dist
 build
 export
-packages/core/out
 
 # Prebuild files
 prebuild/*.json
@@ -113,6 +75,7 @@ sites/*/out
 sites/*/public/mdx
 sites/*/prebuild
 !sites/shared/prebuild
+sites/shared/prebuild/data
 sites/dev/public/og
 
 # misc

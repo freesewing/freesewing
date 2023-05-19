@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap Q1 downward spread"
-- - -
+---
 
 ![La propagation vers le bas dans le premier quadrant de la tête de manche](./sleevecapq1downwardspread.svg)
 

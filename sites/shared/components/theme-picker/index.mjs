@@ -3,10 +3,12 @@ import themes from 'shared/themes/index.js'
 import { ThemeIcon, DownIcon } from 'shared/components/icons.mjs'
 import { useTranslation } from 'next-i18next'
 import { Popover, Transition } from '@headlessui/react'
+import { useTheme } from 'shared/hooks/use-theme.mjs'
 
 export const ns = ['themes']
 
 export const ThemePicker = ({ app, iconOnly = false, bottom = false }) => {
+  const [theme, setTheme] = useTheme()
   const { t } = useTranslation(ns)
 
   return (
@@ -14,11 +16,14 @@ export const ThemePicker = ({ app, iconOnly = false, bottom = false }) => {
       {() => (
         <>
           <Popover.Button
-            className={`h-12 group border-0 inline-flex items-center px-3 text-base text-neural-content hover:bg-neutral-focus`}
+            className={`h-12 group border-0 inline-flex items-center px-3 text-base
+              text-neural-content hover:bg-secondary hover:bg-opacity-50`}
           >
             <ThemeIcon />
             {!iconOnly && (
-              <span className="ml-4 font-medium capitalize">{t(`${app.theme}Theme`)}</span>
+              <span className="ml-4 font-medium capitalize" suppressHydrationWarning={true}>
+                {t(`${theme}Theme`)}
+              </span>
             )}
             <DownIcon className={`ml-2 h-5 w-5 ${bottom ? 'rotate-180' : ''}`} aria-hidden="true" />
           </Popover.Button>
@@ -42,10 +47,17 @@ export const ThemePicker = ({ app, iconOnly = false, bottom = false }) => {
                     <button
                       data-theme={theme}
                       key={theme}
-                      onClick={() => app.setTheme(theme)}
-                      className="btn btn-primary"
+                      onClick={() => setTheme(theme)}
+                      className="btn bg-base-100 text-base-content hover:bg-base-100 hover:-ml-1"
                     >
-                      {t(`${theme}Theme`)}
+                      <span>{theme}</span>
+                      <span className="grow"></span>
+                      <div className="flex flex-shrink-0 flex-wrap gap-1 h-1/2">
+                        <div className="bg-primary w-2 rounded"></div>
+                        <div className="bg-secondary w-2 rounded"></div>
+                        <div className="bg-accent w-2 rounded"></div>
+                        <div className="bg-neutral w-2 rounded"></div>
+                      </div>
                     </button>
                   ))}
                 </div>

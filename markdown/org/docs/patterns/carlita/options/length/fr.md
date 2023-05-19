@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Longueur"
-- - -
+---
 
 ![Length](length.svg)
 

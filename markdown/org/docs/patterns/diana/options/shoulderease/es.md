@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shoulder ease"
-- - -
+---
 
 ![The shoulder ease option on Diana](./shoulderease.svg)
 

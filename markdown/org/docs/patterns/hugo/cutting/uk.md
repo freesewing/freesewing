@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hugo hoodie: Cutting Instructions"
-- - -
+---
 
 - **Main fabric**
   - Cut **1 front** on the fold

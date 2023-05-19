@@ -1,9 +1,10 @@
 name: Playwright Tests
+# While it's nice to test e2e tests, it's not all that useful to run them on alpha code
 on:
-  push:
+  IGNORE_push:
     branches:
       - develop
-  pull_request:
+  IGNORE_pull_request:
     branches:
       - develop
 jobs:

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Florence face mask: Sewing Instructions"
-- - -
+---
 
 ### Step 1: Join center seam
 

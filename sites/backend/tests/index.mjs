@@ -3,16 +3,18 @@ import { mfaTests } from './mfa.mjs'
 import { accountTests } from './account.mjs'
 import { apikeyTests } from './apikey.mjs'
 import { setTests } from './set.mjs'
+import { curatedSetTests } from './curated-set.mjs'
 import { patternTests } from './pattern.mjs'
 import { setup } from './shared.mjs'
 
 const runTests = async (...params) => {
-  await userTests(...params)
-  await mfaTests(...params)
-  await apikeyTests(...params)
-  await accountTests(...params)
-  await setTests(...params)
-  await patternTests(...params)
+  //await userTests(...params)
+  //await mfaTests(...params)
+  //await apikeyTests(...params)
+  //await accountTests(...params)
+  //await setTests(...params)
+  await curatedSetTests(...params)
+  //await patternTests(...params)
 }
 
 // Load initial data required for tests

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Length bonus"
-- - -
+---
 
 Steuert die Länge der gesamten Hose, was im Wesentlichen die Länge der Beine bedeutet.
 

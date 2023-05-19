@@ -1,6 +1,6 @@
-- - -
+---
 title: "Neckline drop"
-- - -
+---
 
 ![Caída del escote](necklinedrop.svg)
 

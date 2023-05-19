@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar notch depth"
-- - -
+---
 
 ![Diepte inkeping kraag](collarnotchdepth.svg)
 

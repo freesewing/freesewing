@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bruce boxer briefs: Fabric Options"
-- - -
+---
 
 You need a stretchy fabric for this pattern. Preferable something that is comfortable and soft to the touch, while allowing the skin to breathe.
 

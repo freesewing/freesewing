@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hugo hoodie: Cutting Instructions"
-- - -
+---
 
 - **Tissu principal**
   - Couper **1 devant** au pli

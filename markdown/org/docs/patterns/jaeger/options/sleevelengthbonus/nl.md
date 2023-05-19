@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleeve length bonus"
-- - -
+---
 
 ![Bonus mouwlengte](sleevelengthbonus.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Center front hem drop"
-- - -
+---
 
 ![Verlaging zoom vooraan](centerfronthemdrop.svg)
 

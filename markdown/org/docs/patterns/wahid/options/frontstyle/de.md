@@ -1,6 +1,6 @@
-- - -
+---
 title: "Neck opening style"
-- - -
+---
 
 ![Frontstil](frontstyle.svg)
 

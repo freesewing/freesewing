@@ -1,6 +1,12 @@
+import tlds from 'tlds/index.json' assert { type: 'json' }
 import get from 'lodash.get'
 import set from 'lodash.set'
 import orderBy from 'lodash.orderby'
+import unset from 'lodash.unset'
+
+// Method that returns a unique ID when all you need is an ID
+// but you can't be certain you have one
+export const getId = (id) => (id ? id : Date.now())
 
 // Generic rounding method
 export const round = (val, decimals = 1) =>
@@ -15,8 +21,8 @@ export const roundMm = (val, units) => {
 // Formatting for imperial values
 export const formatImperial = (neg, inch, numo = false, deno = false, format = 'html') => {
   if (format === 'html') {
-    if (numo) return `<span>${neg}${inch}"&nbsp;<sup>${numo}</sup>/<sub>${deno}</sub></span>`
-    else return `<span>${neg}${inch}"</span>`
+    if (numo) return `${neg}${inch}"&nbsp;<sup>${numo}</sup>/<sub>${deno}</sub>`
+    else return `${neg}${inch}"`
   } else if (format === 'notags') {
     if (numo) return `${neg}${inch}" ${numo}/${deno}`
     else return `${neg}${inch}"`
@@ -92,7 +98,8 @@ export const optionType = (option) => {
   return 'constant'
 }
 
-export const capitalize = (string) => string.charAt(0).toUpperCase() + string.slice(1)
+export const capitalize = (string) =>
+  typeof string === 'string' ? string.charAt(0).toUpperCase() + string.slice(1) : ''
 
 export const strapiImage = (
   img,
@@ -205,4 +212,34 @@ export const optionsMenuStructure = (options) => {
   }
 
   return menu
+}
+
+// Helper method to handle object updates
+export const objUpdate = (obj = {}, path, val = 'unset') => {
+  if (val === 'unset') {
+    if (Array.isArray(path) && Array.isArray(path[0])) {
+      for (const [ipath, ival = 'unset'] of path) {
+        if (ival === 'unset') unset(obj, ipath)
+        else set(obj, ipath, ival)
+      }
+    } else unset(obj, path)
+  } else set(obj, path, val)
+
+  return obj
+}
+
+/** Validates an email address for correct syntax */
+export const validateEmail = (email) => {
+  /* eslint-disable */
+  const re =
+    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  /* eslint-enable */
+  return re.test(email)
+}
+
+/** Validates the top level domain (TLT) for an email address */
+export const validateTld = (email) => {
+  const tld = email.split('@').pop().split('.').pop().toLowerCase()
+  if (tlds.indexOf(tld) === -1) return tld
+  else return true
 }

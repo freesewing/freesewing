@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hauteur du dos"
-- - -
+---
 
 ![L'option hauteur dos pour Bruce](./backrise.svg)
 

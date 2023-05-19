@@ -1,0 +1,6 @@
+---
+title: Pattern Details
+---
+
+
+

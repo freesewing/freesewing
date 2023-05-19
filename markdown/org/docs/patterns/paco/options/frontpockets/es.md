@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front pockets"
-- - -
+---
 
 Si incluir bolsillos frontales (en la costura lateral) o no.
 

@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Surlongueur de longueur de manche"
-- - -
+---
 
 ![Sleevelength bonus](./sleevelengthbonus.svg)
 
