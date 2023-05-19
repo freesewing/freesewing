@@ -8,7 +8,7 @@ import { useToast } from 'shared/hooks/use-toast.mjs'
 // Context
 import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Verification methods
-import { validateEmail, validateTld } from 'site/utils.mjs'
+import { validateEmail, validateTld } from 'shared/utils.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
 import { Popout } from 'shared/components/popout.mjs'

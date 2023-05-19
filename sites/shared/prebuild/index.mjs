@@ -13,7 +13,7 @@ const run = async () => {
   const linter = process.env.LINTER ? true : false
   if (linter) return true
   const SITE = process.env.SITE || 'lab'
-  //prebuildDesigns()
+  prebuildDesigns()
   let docPages
   if (['org', 'dev'].includes(SITE)) {
     await prebuildGitData(SITE)
