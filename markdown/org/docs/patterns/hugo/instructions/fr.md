@@ -1,6 +1,6 @@
----
+- - -
 title: "Hugo hoodie: Sewing Instructions"
----
+- - -
 
 <Note>
 
