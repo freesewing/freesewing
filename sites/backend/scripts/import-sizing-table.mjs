@@ -1,8 +1,5 @@
-import path from 'path'
-import fs from 'fs'
 import { PrismaClient } from '@prisma/client'
-import { hash, encryption } from '../src/utils/crypto.mjs'
-import { clean } from '../src/utils/index.mjs'
+import { encryption } from '../src/utils/crypto.mjs'
 import { verifyConfig } from '../src/config.mjs'
 import {
   cisFemaleAdult,
@@ -14,7 +11,6 @@ import {
 } from '../../../packages/models/src/index.mjs'
 const prisma = new PrismaClient()
 const config = verifyConfig()
-const { encrypt, decrypt } = encryption(config.encryption.key)
 
 /*
  * Note: This will import the FreeSewing (v2) sizing table into the
@@ -155,9 +151,8 @@ sets.push(
 importSets(sets)
 
 async function createSet(data) {
-  let record
   try {
-    record = await prisma.curatedSet.create({ data })
+    await prisma.curatedSet.create({ data })
   } catch (err) {
     console.log(err)
   }
