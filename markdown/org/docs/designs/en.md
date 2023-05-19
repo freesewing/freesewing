@@ -1,5 +1,5 @@
 ---
-title: Patterns
+title: Designs
 order: 300
 ---
 
