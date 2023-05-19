@@ -2,11 +2,9 @@
 title: Include Seam Allowance
 ---
 
-This [Core Setting][core-settings] controls whether or not to include seam
-allowance on your pattern.
+This [Core Setting][core-settings] controls whether or not to include seam allowance on your pattern.
 
-By default, seam allowance is not included. To generate a pattern with seam
-allowance, you should enable it by changing this option to **Yes**.
+By default, seam allowance is not included. To generate a pattern with seam allowance, you should enable it by changing this option to **Yes**.
 
 <Note>
 
@@ -19,5 +17,4 @@ However, for convenience, we've split this up into two different settings on the
 The latter will only be shown if you've enabled the former.
 
 </Note>
-
 [core-settings]: /docs/site/draft/core-settings/
