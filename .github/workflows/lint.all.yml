@@ -33,8 +33,10 @@ jobs:
           key: node_modules-${{ hashFiles('yarn.lock') }}
       - name: Install dependencies
         if: steps.cache_node_modules.outputs.cache-hit != 'true'
-        run: npx lerna kickstart
+        run: npx lerna bootstrap
         env:
           CI: true
+      - name: Buil all
+        run: yarn buildall
       - name: Run eslint
         run: npm run lint

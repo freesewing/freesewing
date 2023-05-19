@@ -39,9 +39,11 @@ jobs:
           key: node_modules-${{ hashFiles('yarn.lock') }}
       - name: Install dependencies
         if: steps.cache_node_modules.outputs.cache-hit != 'true'
-        run: npx lerna kickstart
+        run: npx lerna bootstrap
         env:
           CI: true
+      - name: Buil all
+        run: yarn buildall
       # Why are we prebuilding packages?
       #- name: Prebuild Packages
       #  run: npx lerna run prebuild
