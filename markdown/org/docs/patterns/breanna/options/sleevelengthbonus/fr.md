@@ -1,6 +1,6 @@
----
+- - -
 titre : "Surlongueur de longueur de manche"
----
+- - -
 
 This option controls how to lengthen the sleeves.
 
