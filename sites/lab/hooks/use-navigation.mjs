@@ -1,5 +1,3 @@
-import { useContext, useEffect } from 'react'
-import { NavigationContext } from 'shared/context/navigation-context.mjs'
 import get from 'lodash.get'
 import { useTranslation } from 'next-i18next'
 import orderBy from 'lodash.orderby'
