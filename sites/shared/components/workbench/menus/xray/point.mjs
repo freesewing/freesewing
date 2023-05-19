@@ -1,8 +1,8 @@
-import { Ul, Li, NoSumDiv, Deg } from 'shared/components/workbench/menus/index.mjs'
 import { round } from 'shared/utils'
 import { XrayAttributes } from './attributes'
 
-export const XrayPoint = ({ pointName, partName, draft, t }) => {
+export const XrayPoint = ({ pointName, partName, draft, t }) => null
+/*{
   const point = draft?.parts?.[partName]?.points?.[pointName]
 
   return point ? (
@@ -20,3 +20,4 @@ export const XrayPoint = ({ pointName, partName, draft, t }) => {
     </Ul>
   ) : null
 }
+*/

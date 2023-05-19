@@ -1,15 +1,9 @@
 import { Chevron } from 'shared/components/navigation/primary'
-import {
-  Ul,
-  Li,
-  Details,
-  Summary,
-  SumDiv,
-  NoSumDiv,
-  Deg,
-} from 'shared/components/workbench/menus/index.mjs'
 
 export const XrayAttributes = ({ attr = false, t }) => {
+  return null
+  // FIXME
+  /*
   if (!attr || !attr.list || Object.keys(attr.list).length < 1) return null
 
   return (
@@ -50,4 +44,5 @@ export const XrayAttributes = ({ attr = false, t }) => {
       </Details>
     </Li>
   )
+  */
 }

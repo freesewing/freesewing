@@ -12,7 +12,6 @@ import {
   UserIcon,
   MeasureIcon,
   PageIcon,
-  PrintIcon,
   TrophyIcon,
   CodeIcon,
   I18nIcon,
@@ -273,7 +272,7 @@ const getCrumb = (index, crumbs) => crumbs[index].s.split('/').pop()
 
 export const ActiveSection = () => {
   // Get navigation context
-  const { sections = false, crumbs = [], nav = {}, slug } = useContext(NavigationContext)
+  const { crumbs = [], nav = {}, slug } = useContext(NavigationContext)
 
   // Don't bother if we don't know where we are
   if (!crumbs || !Array.isArray(crumbs) || crumbs.length < 1) return null
@@ -281,7 +280,7 @@ export const ActiveSection = () => {
   let slice = 1
   let nodes = nav
   // Some sections are further trimmed
-  if (crumbs && crumbs[0].s === 'docs') {
+  if (crumbs[0].s === 'docs') {
     if (crumbs.length > 1 && crumbs[1].s === 'docs/faq') {
       slice = 2
       nodes = nav[getCrumb(1, crumbs)]
@@ -303,11 +302,9 @@ export const ActiveSection = () => {
 
   return (
     <div>
-      {crumbs ? (
-        <div className="pl-4 my-2">
-          <Breadcrumbs crumbs={crumbs.slice(0, slice)} />
-        </div>
-      ) : null}
+      <div className="pl-4 my-2">
+        <Breadcrumbs crumbs={crumbs.slice(0, slice)} />
+      </div>
       <div className="pr-2">
         <SubLevel hasChildren={1} nodes={nodes} active={slug} />
       </div>

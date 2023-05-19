@@ -1,7 +1,7 @@
 import { Popout } from 'shared/components/popout.mjs'
 import { Highlight } from './highlight.mjs'
 import { YouTube } from './youtube.mjs'
-import { Figure } from './figure.mjs'
+//import { Figure } from './figure.mjs'
 import { ReadMore } from './read-more.mjs'
 import { Tab, Tabs } from './tabs.mjs'
 import { TabbedExample as Example } from './tabbed-example.mjs'

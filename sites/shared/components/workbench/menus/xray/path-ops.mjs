@@ -1,17 +1,9 @@
 import { Chevron } from 'shared/components/navigation/primary'
-import {
-  Ul,
-  Li,
-  Details,
-  Summary,
-  SumDiv,
-  NoSumDiv,
-  Deg,
-} from 'shared/components/workbench/menus/index.mjs'
 import { XrayPoint } from './point'
 
 const MoveLine = ({ op }) => <XrayPoint point={op.to} />
-const Curve = ({ op }) =>
+const Curve = ({ op }) => null
+/*
   ['cp1', 'cp2', 'to'].map((pnt) => (
     <Li key={pnt}>
       <Details>
@@ -26,8 +18,10 @@ const Curve = ({ op }) =>
       </Details>
     </Li>
   ))
-
-const XrayPathOp = ({ op }) => (
+*/
+const XrayPathOp = ({ op }) => null
+/*
+ * (
   <Li>
     {op.type === 'close' ? (
       <NoSumDiv>
@@ -49,8 +43,10 @@ const XrayPathOp = ({ op }) => (
     )}
   </Li>
 )
-
-export const XrayPathOps = ({ ops = false }) => {
+*/
+export const XrayPathOps = ({ ops = false }) => null
+/*
+ * {
   if (!ops || ops.length < 1) return null
 
   return (
@@ -72,3 +68,4 @@ export const XrayPathOps = ({ ops = false }) => {
     </Li>
   )
 }
+*/

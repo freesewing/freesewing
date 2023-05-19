@@ -1,6 +1,5 @@
 import { Chevron } from 'shared/components/navigation/primary.mjs'
 import { ClearIcon, FilterIcon, SearchIcon } from 'shared/components/icons.mjs'
-import { Ul, Li, Details, Summary, SumDiv, Deg } from 'shared/components/workbench/menus/index.mjs'
 import { XrayPath } from './path.mjs'
 import { XrayPoint } from './point.mjs'
 import { useTranslation } from 'next-i18next'
@@ -12,6 +11,9 @@ const types = {
 
 export const XrayList = (props) => {
   const { t } = useTranslation(['app', 'parts'])
+  return null
+  // FIXME
+  /*
 
   const title = t(`parts:${props.partName}`) + ` (${props.partName})`
 
@@ -159,4 +161,5 @@ export const XrayList = (props) => {
       </Details>
     </Li>
   )
+  */
 }

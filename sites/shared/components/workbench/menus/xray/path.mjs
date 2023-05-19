@@ -1,9 +1,9 @@
-import { Ul, Li, NoSumDiv, Deg } from 'shared/components/workbench/menus/index.mjs'
 import { formatMm } from 'shared/utils.mjs'
 import { XrayAttributes } from './attributes.mjs'
 import { XrayPathOps } from './path-ops.mjs'
 
-export const XrayPath = ({ pathName, partName, draft, units }) => {
+export const XrayPath = ({ pathName, partName, draft, units }) => null
+/*{
   const path = draft?.parts?.[partName]?.paths?.[pathName]
 
   if (!path) return null
@@ -32,3 +32,4 @@ export const XrayPath = ({ pathName, partName, draft, units }) => {
     </Ul>
   )
 }
+*/

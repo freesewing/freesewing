@@ -10,6 +10,7 @@ export const Set = ({ name }) => {
   const { t } = useTranslation(ns)
 
   return <p>fixme</p>
+  /*
   return (
     <Link
       href={`/new/pattern/${name}`}
@@ -34,4 +35,5 @@ export const Set = ({ name }) => {
       </div>
     </Link>
   )
+  */
 }

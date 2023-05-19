@@ -1,8 +1,6 @@
 // Dependencies
 import { useState, useEffect, useContext, useCallback } from 'react'
 import { useTranslation } from 'next-i18next'
-import { DateTime } from 'luxon'
-import { CopyToClipboard } from 'react-copy-to-clipboard'
 import orderBy from 'lodash.orderby'
 import { measurements, isDegreeMeasurement } from 'config/measurements.mjs'
 import { measurementAsMm, formatMm } from 'shared/utils.mjs'
@@ -30,10 +28,7 @@ import {
   PlusIcon,
   OkIcon,
   NoIcon,
-  DownIcon,
-  CopyIcon,
   TrashIcon,
-  LeftIcon,
   EditIcon,
 } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
@@ -41,8 +36,6 @@ import Markdown from 'react-markdown'
 import { Tab } from './bio.mjs'
 import Timeago from 'react-timeago'
 import { Spinner } from 'shared/components/spinner.mjs'
-import Link from 'next/link'
-import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
 
 export const ns = ['account', 'patterns', 'toast']
 
@@ -70,7 +63,7 @@ export const NewSet = ({
   standalone = false,
 }) => {
   // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+  const { startLoading, stopLoading } = useContext(LoadingContext)
 
   // Hooks
   const router = useRouter()
@@ -95,11 +88,6 @@ export const NewSet = ({
       }
     } else toast.for.backendError()
     stopLoading()
-  }
-
-  // Helper method to clear inputs
-  const clear = () => {
-    setMset(false)
   }
 
   return (
@@ -144,8 +132,6 @@ const EditField = (props) => {
 
   return <p>FIXME: No edit component for this field</p>
 }
-
-const noop = () => null
 
 export const EditRow = (props) => (
   <Collapse
@@ -207,8 +193,8 @@ export const MeasieRow = (props) => {
 
 const MeasieInput = ({ m, mset, backend, toast, refresh }) => {
   const { t } = useTranslation(['measurements'])
-  const title = t(`measurements:${m}`)
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+  //const title = t(`measurements:${m}`)
+  const { startLoading, stopLoading } = useContext(LoadingContext)
 
   const isDegree = isDegreeMeasurement(m)
   const factor = isDegree ? 1 : mset.imperial ? 25.4 : 10
@@ -230,6 +216,7 @@ const MeasieInput = ({ m, mset, backend, toast, refresh }) => {
     setValid(isValid(useVal))
   }
 
+  /*
   const save = async () => {
     startLoading()
     const measies = {}
@@ -241,6 +228,7 @@ const MeasieInput = ({ m, mset, backend, toast, refresh }) => {
     } else toast.for.backendError()
     stopLoading()
   }
+  */
 
   const fraction = (i, base) => update({ target: { value: Math.floor(val) + i / base } })
 
@@ -554,7 +542,7 @@ const EditNotes = ({ t, mset, account, backend, toast, refresh }) => {
 
 const EditUnits = ({ t, mset, account, backend, toast, refresh }) => {
   const [selection, setSelection] = useState(mset?.imperial === true ? 'imperial' : 'metric')
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+  const { startLoading, stopLoading } = useContext(LoadingContext)
 
   const update = async (val) => {
     setSelection(val)
@@ -776,7 +764,7 @@ const EditMeasurementsSet = (props) => {
 
 const MeasurementsSet = ({ mset, t, account, backend, refresh }) => {
   // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+  const { startLoading, stopLoading } = useContext(LoadingContext)
   const { setModal } = useContext(ModalContext)
 
   // Hooks
@@ -864,9 +852,6 @@ const MeasurementsSet = ({ mset, t, account, backend, refresh }) => {
 
 // Component for the account/sets page
 export const Sets = ({ title = true }) => {
-  // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
-
   // Hooks
   const { account, token } = useAccount()
   const backend = useBackend(token)
