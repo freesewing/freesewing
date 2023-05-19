@@ -274,7 +274,7 @@ lab:
     'd3-drag': '3.0.0'
     'd3-selection': '3.0.0'
     'daisyui': *daisyui
-    'i18next': &i18next '22.4.14'
+    'i18next': &i18next '22.5.0'
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
