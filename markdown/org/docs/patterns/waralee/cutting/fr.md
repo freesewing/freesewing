@@ -1,6 +1,6 @@
----
+- - -
 titre: "Pantalon portefeuille Waralee : Instructions de coupe"
----
+- - -
 
 <Note>
 
