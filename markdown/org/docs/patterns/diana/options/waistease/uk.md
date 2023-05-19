@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waist ease"
-- - -
+---
 
 ![The waist ease option on Diana](./waistease.svg)
 

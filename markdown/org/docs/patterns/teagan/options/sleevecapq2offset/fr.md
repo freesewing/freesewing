@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap Q2 offset"
-- - -
+---
 
 ![Le décalage au deuxième trimestre de la tête de manche](./sleevecapq2offset.svg)
 

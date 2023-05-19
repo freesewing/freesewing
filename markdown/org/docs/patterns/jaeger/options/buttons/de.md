@@ -1,6 +1,6 @@
-- - -
+---
 title: "Number of buttons"
-- - -
+---
 
 Steuert die Anzahl der Schaltflächen.
 

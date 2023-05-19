@@ -1,6 +1,6 @@
-- - -
+---
 title: "Lunetius, die Lacerna: Zuschnitt"
-- - -
+---
 
 - Schneide **1 Lacerna**-Teil im Stoffbruch
 - oder Schneide **2 Lacerna**-Teile

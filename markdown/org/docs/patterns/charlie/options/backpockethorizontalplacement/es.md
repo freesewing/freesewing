@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back pocket horizontal placement"
-- - -
+---
 
 Controls the horizontal placement of the back pockets.
 

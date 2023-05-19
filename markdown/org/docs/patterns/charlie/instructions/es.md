@@ -1,6 +1,6 @@
-- - -
+---
 title: "Charlie chinos: Sewing Instructions"
-- - -
+---
 
 ## Paso 1: Cierra el dardo trasero
 

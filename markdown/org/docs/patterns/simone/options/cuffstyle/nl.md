@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cuff style"
-- - -
+---
 
 ![Stijl manchet](cuffstyle.svg)
 

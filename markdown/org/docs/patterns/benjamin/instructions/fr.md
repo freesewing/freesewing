@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Nœud papillon Benjamin : Instructions de couture"
-- - -
+---
 
 ## Notes et conseils
 

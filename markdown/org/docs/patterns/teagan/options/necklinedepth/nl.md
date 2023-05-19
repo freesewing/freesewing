@@ -1,6 +1,6 @@
-- - -
+---
 title: "Neckline depth"
-- - -
+---
 
 Bepaalt de diepte van de halsopening.
 

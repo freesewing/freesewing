@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waist band width"
-- - -
+---
 
 Die Breite des Taillenbundes.
 

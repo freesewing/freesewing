@@ -1,6 +1,6 @@
-- - -
+---
 title: "Neckline drop"
-- - -
+---
 
 ![Ausschnitt Tiefe](necklinedrop.svg)
 

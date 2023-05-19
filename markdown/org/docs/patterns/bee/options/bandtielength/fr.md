@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Longueur de la bande (poitrine)"
-- - -
+---
 
 ***
 

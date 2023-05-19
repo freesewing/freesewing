@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shoulder ease"
-- - -
+---
 
 Steuert die Höhe der Leichtigkeit auf der Schulter zu Schultermessung.
 

@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Facilité de l'aisance du buste"
-- - -
+---
 
 ***
 

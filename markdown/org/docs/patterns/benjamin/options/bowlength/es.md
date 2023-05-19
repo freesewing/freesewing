@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bow length"
-- - -
+---
 
 ![Bow length](bowlength.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleeve placket length"
-- - -
+---
 
 ![Довжина шліца](sleeveplacketlength.svg)
 

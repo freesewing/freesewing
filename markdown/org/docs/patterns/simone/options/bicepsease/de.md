@@ -1,6 +1,6 @@
-- - -
+---
 title: "Biceps ease"
-- - -
+---
 
 ![Bizeps Zugabe](./bicepsease.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Pocket width"
-- - -
+---
 
 ![Breedte van de zak](./pocketwidth.svg)
 

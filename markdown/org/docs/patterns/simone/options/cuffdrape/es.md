@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cuff drape"
-- - -
+---
 
 ![Plisado del puño](cuffdrape.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front cutaway start"
-- - -
+---
 
 ![Estrella de corte frontal](frontcutawaystart.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap Q3 upward spread"
-- - -
+---
 
 ![La propagation vers le haut dans le quadrant de la tête de manche](./sleevecapq3spread1.svg)
 

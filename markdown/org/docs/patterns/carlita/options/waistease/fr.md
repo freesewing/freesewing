@@ -1,6 +1,6 @@
-- - -
+---
 titre : "aisance à la taille"
-- - -
+---
 
 ![Waist ease](./waistease.svg)
 

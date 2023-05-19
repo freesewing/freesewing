@@ -1,6 +1,6 @@
-- - -
+---
 title: "Florence face mask: Sewing Instructions"
-- - -
+---
 
 ### Stap 1: Sluit de midden naad
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chest pocket angle"
-- - -
+---
 
 ![Hoek borstzak](chestpocketangle.svg)
 

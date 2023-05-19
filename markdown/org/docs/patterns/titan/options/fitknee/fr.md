@@ -1,6 +1,6 @@
-- - -
+---
 title: "Fit the knee"
-- - -
+---
 
 Contrôle la largeur des jambes.
 

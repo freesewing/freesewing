@@ -1,6 +1,6 @@
-- - -
+---
 title: "Teagan T-shirt: Sewing Instructions"
-- - -
+---
 
 ## Etape 1: Assemblez les coutures d'épaule
 

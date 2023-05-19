@@ -1,6 +1,6 @@
-- - -
+---
 title: "Benjamin bow tie: Fabric Options"
-- - -
+---
 
 The bow ties you find in the store are typically make out of silk or some imitation silk poly. So it will come as no surprise that those are good options. Jede Art von Stoff, der dir vom Muster oder Aussehen gefällt, kann ein Kandidat für eine Fliege werden. Die einzige wirkliche Einschränkung ist, dass die Fliege durch einen Schlauch von nur 2cm von innen nach außen gedreht werden muss. With some thicker fabrics, this will be a difficult proposition.
 

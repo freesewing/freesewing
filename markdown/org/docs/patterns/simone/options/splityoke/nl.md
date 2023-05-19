@@ -1,6 +1,6 @@
-- - -
+---
 title: "Split yoke"
-- - -
+---
 
 ![Tweedelige schouderpas](splityoke.svg)
 

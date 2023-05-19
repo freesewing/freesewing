@@ -1,6 +1,6 @@
-- - -
+---
 title: "Wedge"
-- - -
+---
 
 Legt die Länge der Kreuznaht fest.
 

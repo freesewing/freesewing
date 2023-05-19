@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bulge"
-- - -
+---
 
 ![The bulge option on Bruce](./bulge.svg)
 

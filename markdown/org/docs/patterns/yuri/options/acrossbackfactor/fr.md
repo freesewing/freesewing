@@ -1,6 +1,6 @@
-- - -
+---
 title: "Across back factor"
-- - -
+---
 
 Contrôle la largeur de votre dos en fonction de la mesure d'épaule à épaule
 

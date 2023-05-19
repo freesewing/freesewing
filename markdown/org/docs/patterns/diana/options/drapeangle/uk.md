@@ -1,6 +1,6 @@
-- - -
+---
 title: "Drape angle"
-- - -
+---
 
 ![The drape angle option on Diana](./drapeangle.svg)
 

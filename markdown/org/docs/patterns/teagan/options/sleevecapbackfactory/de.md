@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap back Y"
-- - -
+---
 
 ![Die vertikale Position des Rückenbiegepunkts](./sleevecapbackfactory.svg)
 

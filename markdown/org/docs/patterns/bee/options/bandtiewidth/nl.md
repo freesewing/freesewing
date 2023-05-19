@@ -1,6 +1,6 @@
-- - -
+---
 title: "Band (chest) tie width"
-- - -
+---
 
 ***
 

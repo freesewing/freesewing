@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chest ease"
-- - -
+---
 
 ![The chest ease option on Diana](./chestease.svg)
 

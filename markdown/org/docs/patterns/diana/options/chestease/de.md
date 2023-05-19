@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chest ease"
-- - -
+---
 
 ![Die Brustpflegeoption auf Diana](./chestease.svg)
 

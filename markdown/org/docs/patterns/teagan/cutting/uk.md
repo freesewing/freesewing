@@ -1,6 +1,6 @@
-- - -
+---
 title: "Teagan T-shirt: Cutting Instructions"
-- - -
+---
 
 - Cut 1 back on the fold.
 - Cut 1 front on the fold.

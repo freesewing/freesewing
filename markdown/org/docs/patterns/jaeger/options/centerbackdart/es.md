@@ -1,6 +1,6 @@
-- - -
+---
 title: "Center back dart"
-- - -
+---
 
 ![Pinza en el centro de la espalda](centerbackdart.svg)
 

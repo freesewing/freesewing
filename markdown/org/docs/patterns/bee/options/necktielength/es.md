@@ -1,6 +1,6 @@
-- - -
+---
 title: "Neck tie length"
-- - -
+---
 
 ***
 

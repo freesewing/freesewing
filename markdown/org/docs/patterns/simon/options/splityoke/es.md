@@ -1,6 +1,6 @@
-- - -
+---
 title: "Split yoke"
-- - -
+---
 
 ![Canesú partido](splityoke.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bloc du corps de Bella : Instructions de couture"
-- - -
+---
 
 <Note>
 

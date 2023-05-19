@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waist ease"
-- - -
+---
 
 Steuert die Menge an Leichtigkeit in Ihrer Taille.
 

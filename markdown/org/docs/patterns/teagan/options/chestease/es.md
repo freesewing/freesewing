@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chest ease"
-- - -
+---
 
 Controla la cantidad de facilidad en tu pecho
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hem style"
-- - -
+---
 
 ![Estilo del dobladillo](hemstyle.svg)
 

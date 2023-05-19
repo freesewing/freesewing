@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Chemise Simone : Options de tissu"
-- - -
+---
 
 <Note>
 

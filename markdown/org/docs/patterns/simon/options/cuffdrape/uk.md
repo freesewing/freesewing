@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cuff drape"
-- - -
+---
 
 ![Cuff drape](cuffdrape.svg)
 

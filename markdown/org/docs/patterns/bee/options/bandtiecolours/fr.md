@@ -1,6 +1,6 @@
-- - -
+---
 titre: Couleurs de la bande (sous poitrine)
-- - -
+---
 
 ***
 

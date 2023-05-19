@@ -1,6 +1,6 @@
-- - -
+---
 title: "Biceps ease"
-- - -
+---
 
 ![Die Beizeps-Leicht-Option auf Diana](./bicepsease.svg)
 

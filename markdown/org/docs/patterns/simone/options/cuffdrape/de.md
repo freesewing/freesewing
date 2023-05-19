@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cuff drape"
-- - -
+---
 
 ![Manschette drapieren](cuffdrape.svg)
 

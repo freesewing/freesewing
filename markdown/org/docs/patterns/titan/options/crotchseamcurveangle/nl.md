@@ -1,6 +1,6 @@
-- - -
+---
 title: "Crotch seam angle"
-- - -
+---
 
 Controls the angle of the crotch seam curve.
 

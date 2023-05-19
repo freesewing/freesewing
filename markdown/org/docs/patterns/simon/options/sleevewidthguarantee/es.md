@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleeve width guarantee"
-- - -
+---
 
 Primero elaboramos la abertura del brazo, luego preparamos una manga para encajarla.
 

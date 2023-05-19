@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleeve length bonus"
-- - -
+---
 
 ![Die Hülle-Bonusoption auf Diana](./sleevelengthbonus.svg)
 

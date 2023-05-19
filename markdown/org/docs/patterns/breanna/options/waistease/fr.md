@@ -1,6 +1,6 @@
-- - -
+---
 titre : "aisance à la taille"
-- - -
+---
 
 The amount of ease at the waist.
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hips ease"
-- - -
+---
 
 ![Holgura de cadera](./hipsease.svg)
 

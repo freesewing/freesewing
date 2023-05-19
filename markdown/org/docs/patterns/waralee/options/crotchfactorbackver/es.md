@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back Crotch Factor Vertical"
-- - -
+---
 
 Utilizado para mover verticalmente la curva de la parte trasera
 

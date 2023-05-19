@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back opening"
-- - -
+---
 
 ![The back opening option on Cathrin](./backopening.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Simon shirt: Cutting Instructions"
-- - -
+---
 
 - **Buitenstof**
   - Knip **1 linkervoorpand**

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Neckline width"
-- - -
+---
 
 Steuert die Breite des Halsausschnitts.
 

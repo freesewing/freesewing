@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap Q4 offset"
-- - -
+---
 
 ![Le décalage dans le quatrième trimestre de la tête de manche](./sleevecapq4offset.svg)
 

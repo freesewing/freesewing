@@ -1,6 +1,6 @@
-- - -
+---
 title: "Heel ease"
-- - -
+---
 
 Dit controleert de hoeveelheid overwijdte aan de plaats of heel.
 

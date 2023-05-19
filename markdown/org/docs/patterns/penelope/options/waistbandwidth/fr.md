@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waist band width"
-- - -
+---
 
 La largeur de la ceinture.
 

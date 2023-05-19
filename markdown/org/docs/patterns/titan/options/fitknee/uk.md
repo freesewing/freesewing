@@ -1,6 +1,6 @@
-- - -
+---
 title: "Fit the knee"
-- - -
+---
 
 Controls the width of the legs.
 

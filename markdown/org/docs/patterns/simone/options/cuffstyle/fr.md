@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cuff style"
-- - -
+---
 
 ![Style de bracelet](cuffstyle.svg)
 

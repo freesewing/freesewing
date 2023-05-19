@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cuff ease"
-- - -
+---
 
 ![Overwijdte manchet](cuffease.svg)
 

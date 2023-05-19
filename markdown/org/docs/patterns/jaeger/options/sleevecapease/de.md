@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap ease"
-- - -
+---
 
 ![Armkugel Zugabe](sleevecapease.svg)
 

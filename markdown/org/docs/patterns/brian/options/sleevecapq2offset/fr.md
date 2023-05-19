@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap Q2 offset"
-- - -
+---
 
 ***
 

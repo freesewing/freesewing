@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Aisance d'épaule"
-- - -
+---
 
 ![Shoulder ease](./shoulderease.svg)
 

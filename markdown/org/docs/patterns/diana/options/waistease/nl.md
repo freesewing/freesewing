@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waist ease"
-- - -
+---
 
 ![De optie voor overwijdte aan de taille bij Diana](./waistease.svg)
 

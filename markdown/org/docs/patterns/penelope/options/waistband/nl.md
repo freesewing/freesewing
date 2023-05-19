@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waist band"
-- - -
+---
 
 Voegt een tailleband toe aan het patroon.
 

@@ -1,6 +1,6 @@
-- - -
+---
 titre: "Gilet Aaron : Instructions de coupe"
-- - -
+---
 
 - **Tissu principal**
   - Couper **2 devant(s)** _endroit contre endroit_

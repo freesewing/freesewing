@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back rise"
-- - -
+---
 
 ![Elevación de la espalda](backrise.svg)
 

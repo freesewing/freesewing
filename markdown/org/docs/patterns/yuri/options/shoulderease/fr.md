@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Aisance d'épaule"
-- - -
+---
 
 Contrôle l'aisance sur la mesure épaule à épaule.
 
