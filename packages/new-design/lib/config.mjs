@@ -10,7 +10,7 @@ export const config = {
   // Repository to download from
   repo: process.env.FS_REPO || 'freesewing/freesewing',
   // Branch to download from
-  branch: process.env.FS_BRANCH || version,
+  branch: process.env.FS_BRANCH || `v${version}`,
   i18n: [
     'account',
     'common',
