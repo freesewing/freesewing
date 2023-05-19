@@ -99,7 +99,7 @@ export const prebuildDocs = async (site) => {
 
   // Load page template
   const template = fs.readFileSync(
-    path.resolve('..', 'shared', 'page-templates', `docs.mjs.mustache`),
+    path.resolve('..', 'shared', 'page-templates', `docs.${site}.mjs.mustache`),
     'utf-8'
   )
 
@@ -147,11 +147,11 @@ export const prebuildDocs = async (site) => {
           mustache.render(template, {
             slug,
             slugArray: JSON.stringify(slug.split('/')),
-            introEN: intros.en,
-            introES: intros.es,
-            introDE: intros.de,
-            introFR: intros.fr,
-            introNL: intros.nl,
+            introEN: intros.en || 'fixme',
+            introES: intros.es || 'fixme',
+            introDE: intros.de || 'fixme',
+            introFR: intros.fr || 'fixme',
+            introNL: intros.nl || 'fixme',
           })
         )
       }

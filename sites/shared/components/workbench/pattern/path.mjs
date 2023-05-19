@@ -1,6 +1,6 @@
 // Dependencies
 import { getProps } from './utils.mjs'
-import { round, formatMm } from 'shared/utils.mjs'
+import { round, formatMm, getId } from 'shared/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components
@@ -596,7 +596,11 @@ export const Path = ({ pathName, path, partName, part, units, showInfo, ui, upda
   output.push(<path id={pathId} key={pathId} d={d} {...getProps(path)} />)
   if (path.attributes.get('data-text'))
     output.push(
-      <TextOnPath key={'text-on-path-' + name} pathId={pathId} {...{ path, ui, showInfo }} />
+      <TextOnPath
+        key={'text-on-path-' + getId(pathId)}
+        pathId={pathId}
+        {...{ path, ui, showInfo }}
+      />
     )
   if (ui.xray?.enabled) output.push(<XrayPath key={'xpath' + pathId} />)
 

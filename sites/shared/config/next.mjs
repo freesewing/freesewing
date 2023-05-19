@@ -52,7 +52,7 @@ const getMdxConfig = ({ site, jargon }) => ({
       [
         rehypeHighlight,
         {
-          plainText: ['dot', 'http'],
+          plainText: ['dot', 'http', 'mermaid'],
           aliases: {
             javascript: [
               'design/src/index.mjs',

@@ -34,7 +34,7 @@ export const components = {
   Tab,
   Tabs,
   ControlTip,
-  // Example,
+  Example,
   PatternDocs: Fixme,
   PatternOptions: Fixme,
 }

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { icons, ns as sectionsNs } from 'shared/components/navigation/primary.mjs'
 import { useTranslation } from 'next-i18next'
 import orderBy from 'lodash.orderby'
-import { colors } from 'site/components/header/index.mjs'
+import { colors } from 'shared/components/header.mjs'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
 import { HelpIcon } from 'shared/components/icons.mjs'
 

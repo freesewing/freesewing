@@ -4,11 +4,10 @@ import { pluginBundle } from '@freesewing/plugin-bundle'
 import { pluginFlip } from '@freesewing/plugin-flip'
 import { pluginGore } from '@freesewing/plugin-gore'
 import { Design } from '@freesewing/core'
-//import { Svg } from '../workbench/draft/svg'
-//import { Defs } from '../workbench/draft/defs'
-//import { Stack } from '../workbench/draft/stack'
-import { useGist } from 'shared/hooks/useGist'
-import { useEffect } from 'react'
+import { Svg } from '../workbench/pattern/svg'
+import { Defs } from '../workbench/pattern/defs'
+import { Stack } from '../workbench/pattern/stack'
+import { useState, useEffect } from 'react'
 import yaml from 'js-yaml'
 
 // Get code from children
@@ -23,13 +22,8 @@ export const asText = (reactEl) => {
 }
 
 // The actual example
-const Example = ({ app, patternProps, xray = false }) => {
-  // State for gist
-  const gist = useMemo(() => {
-    const newGist = defaultGist('example-mdx', app.locale)
-    set(newGist, ['_state', 'xray', 'enabled'], xray)
-    return newGist
-  }, [xray, app.locale])
+const Example = ({ patternProps, tutorial, paperless, settings, showInfo, xray = false }) => {
+  const [ui, setUi] = useState({ renderer: 'react', xray: { enabled: xray } })
 
   if (patternProps.logs.pattern.error.length > 0 || patternProps.logs.sets[0].error.length > 0)
     return (
@@ -40,14 +34,13 @@ const Example = ({ app, patternProps, xray = false }) => {
     )
 
   return (
-    <Svg {...patternProps} embed={true}>
+    <Svg {...patternProps} settings={settings} embed={true}>
       <Defs {...patternProps} />
       <style>{`:root { --pattern-scale: 1} ${patternProps.svg.style}`}</style>
       <g>
         {Object.keys(patternProps.stacks).map((stackName) => (
           <Stack
-            {...{ app, gist, patternProps }}
-            showInfo={app.setPopup}
+            {...{ showInfo, patternProps, settings, ui }}
             key={stackName}
             stackName={stackName}
             stack={patternProps.stacks[stackName]}
@@ -98,7 +91,6 @@ const buildExample = (children, settings = { margin: 5 }, tutorial = false, pape
 
 // Wrapper component dealing with the tabs and code view
 export const TabbedExample = ({
-  app,
   children,
   caption,
   tutorial,
@@ -107,8 +99,6 @@ export const TabbedExample = ({
   paperless,
   settings,
 }) => {
-  // FIXME: Deal with this later
-  return null
   if (settings)
     settings = {
       margin: 5,
@@ -130,10 +120,10 @@ export const TabbedExample = ({
         <Tabs tabs="Code, Preview, X-Ray">
           <Tab key="code">{children}</Tab>
           <Tab key="preview">
-            <Example {...{ patternProps, tutorial, paperless, settings, app }} />
+            <Example {...{ patternProps, tutorial, paperless, settings }} />
           </Tab>
           <Tab key="xray">
-            <Example {...{ patternProps, tutorial, paperless, settings, app }} xray={true} />
+            <Example {...{ patternProps, tutorial, paperless, settings }} xray={true} />
           </Tab>
         </Tabs>
         {caption && (
@@ -148,11 +138,11 @@ export const TabbedExample = ({
     <div className="my-8">
       <Tabs tabs="Preview, Code, X-Ray">
         <Tab key="preview">
-          <Example {...{ patternProps, tutorial, paperless, settings, app }} />
+          <Example {...{ patternProps, tutorial, paperless, settings }} />
         </Tab>
         <Tab key="code">{children}</Tab>
         <Tab key="xray">
-          <Example {...{ patternProps, tutorial, paperless, settings, app }} xray={true} />
+          <Example {...{ patternProps, tutorial, paperless, settings }} xray={true} />
         </Tab>
       </Tabs>
       {caption && (
