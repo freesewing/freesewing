@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/new-design",
-  "version": "3.0.0-alpha.11",
+  "version": "3.0.0-alpha.12",
   "description": "Initializer package for a new FreeSewing design: npx @freesewing/new-design",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -30,6 +30,7 @@
     "wbuild": "node build.mjs",
     "wcibuild_step6": "node build.mjs"
   },
+  "peerDependencies": {},
   "dependencies": {
     "axios": "1.4.0",
     "chalk": "5.0.1",
@@ -39,6 +40,7 @@
     "prompts": "2.4.2",
     "recursive-readdir": "2.2.3"
   },
+  "devDependencies": {},
   "files": [
     "README.md",
     "package.json",
@@ -46,7 +48,8 @@
     "shared/**/*",
     "templates/**/*",
     "index.mjs",
-    "package.json"
+    "package.json",
+    "data.mjs"
   ],
   "publishConfig": {
     "access": "public",

@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/examples",
-  "version": "3.0.0-alpha.10",
+  "version": "3.0.0-alpha.12",
   "description": "A FreeSewing pattern holding examples for our documentation",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -41,17 +41,17 @@
     "wcibuild_step5": "node build.mjs"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0-alpha.10",
-    "@freesewing/plugin-bundle": "3.0.0-alpha.10",
-    "@freesewing/plugin-mirror": "3.0.0-alpha.10",
-    "@freesewing/plugin-gore": "3.0.0-alpha.10"
+    "@freesewing/core": "3.0.0-alpha.12",
+    "@freesewing/plugin-bundle": "3.0.0-alpha.12",
+    "@freesewing/plugin-mirror": "3.0.0-alpha.12",
+    "@freesewing/plugin-gore": "3.0.0-alpha.12"
   },
   "dependencies": {},
   "devDependencies": {
     "mocha": "10.2.0",
     "chai": "4.3.7",
-    "@freesewing/models": "3.0.0-alpha.10",
-    "@freesewing/plugin-timing": "3.0.0-alpha.10"
+    "@freesewing/models": "3.0.0-alpha.12",
+    "@freesewing/plugin-timing": "3.0.0-alpha.12"
   },
   "files": [
     "dist/*",
