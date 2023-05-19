@@ -1,6 +1,6 @@
----
+- - -
 titre : "Profondeur d'encolure"
----
+- - -
 
 ![Profondeur d'encolure](necklinedrop.svg)
 
