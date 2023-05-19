@@ -254,6 +254,7 @@ dev:
     'postcss': &postcss '8.4.23'
     'playwright': '^1.32.3'
     'remark-extract-frontmatter': '3.2.0'
+    'remark-mdx-frontmatter': '3.0.0'
     'tailwindcss': &tailwindcss '3.3.2'
     'yaml-loader': '0.8.0'
 
@@ -298,6 +299,7 @@ lab:
     'rehype-stringify': *rehypeStringify
     'remark-copy-linked-files': *remarkCopyLinkedFiles
     'remark-gfm': *remarkGfm
+    'remark-mdx-frontmatter': '3.0.0'
   dev:
     *nextSiteDevDependencies
 
@@ -332,6 +334,7 @@ org:
     'rehype-stringify': *rehypeStringify
     'remark-copy-linked-files': *remarkCopyLinkedFiles
     'remark-gfm': *remarkGfm
+    'remark-mdx-frontmatter': '3.0.0'
     'use-persisted-state': &use-persisted-state 0.3.3
     'yaml-loader': 0.8.0
   dev: *nextSiteDevDependencies
