@@ -1,6 +1,6 @@
----
+- - -
 titre : "Aisance aux biceps"
----
+- - -
 
 ![Biceps ease](./bicepsease.svg)
 
