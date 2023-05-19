@@ -63,6 +63,8 @@ export const prebuildOrg = async (site = 'org') => {
       )
     }
   }
+
+  return await Promise.all(promises)
 }
 
 prebuildOrg()

@@ -367,14 +367,13 @@ const EditImg = ({ t, mset, account, backend, toast, refresh, curated = false })
   }, [])
 
   const { getRootProps, getInputProps } = useDropzone({ onDrop })
-  const { startLoading, stopLoading } = useContext(LoadingContext)
 
-  const update = async (evt) => {
-    evt.preventDefault()
-    if (evt.target.value !== value) {
-      setValue(evt.target.value)
-    }
-  }
+  //const update = async (evt) => {
+  //  evt.preventDefault()
+  //  if (evt.target.value !== value) {
+  //    setValue(evt.target.value)
+  //  }
+  //}
 
   return (
     <div>
@@ -536,15 +535,15 @@ const EditUnits = ({ t, mset, account, backend, toast, refresh }) => {
     }
   }
 
-  const save = async () => {
-    startLoading()
-    const result = await backend.updateSet(mset.id, { name: value })
-    if (result.success) {
-      refresh()
-      toast.for.settingsSaved()
-    } else toast.for.backendError()
-    stopLoading()
-  }
+  //const save = async () => {
+  //  startLoading()
+  //  const result = await backend.updateSet(mset.id, { name: value })
+  //  if (result.success) {
+  //    refresh()
+  //    toast.for.settingsSaved()
+  //  } else toast.for.backendError()
+  //  stopLoading()
+  //}
 
   return (
     <>

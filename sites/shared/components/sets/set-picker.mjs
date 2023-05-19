@@ -85,7 +85,7 @@ export const CuratedSetPicker = ({ design, language }) => {
     <>
       <h3>{t('curatedSets')}</h3>
       {tags.map((tag) => (
-        <Tag onClick={() => addFilter(tag)} tag={tag}>
+        <Tag onClick={() => addFilter(tag)} tag={tag} key={tag}>
           {tag}
         </Tag>
       ))}

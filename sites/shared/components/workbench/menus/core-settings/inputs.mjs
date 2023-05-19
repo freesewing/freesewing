@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { formatMm } from 'shared/utils.mjs'
-import { ClearIcon } from 'shared/components/icons.mjs'
 import { ChoiceButton } from 'shared/components/choice-button.mjs'
 import orderBy from 'lodash.orderby'
 

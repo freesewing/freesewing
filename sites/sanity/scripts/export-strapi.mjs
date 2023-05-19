@@ -1,4 +1,3 @@
-import path from 'path'
 import fs from 'fs'
 import axios from 'axios'
 import { strapiHost } from '../../shared/config/freesewing.mjs'
@@ -165,7 +164,7 @@ const transformNewsletterPost = async (p) => {
 /*
  * Exports newsletter posts
  */
-const exportNewsletterPosts = async (lang) => {
+const exportNewsletterPosts = async () => {
   const posts = []
   const strapiPosts = await getPosts('newsletter', 'en')
   for (const post of Object.values(strapiPosts)) {

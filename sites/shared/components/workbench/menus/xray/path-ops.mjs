@@ -2,7 +2,7 @@
 //import { XrayPoint } from './point'
 //
 //const MoveLine = ({ op }) => <XrayPoint point={op.to} />
-const Curve = ({ op }) => null
+//const Curve = ({ op }) => null
 /*
   ['cp1', 'cp2', 'to'].map((pnt) => (
     <Li key={pnt}>
@@ -19,7 +19,7 @@ const Curve = ({ op }) => null
     </Li>
   ))
 */
-const XrayPathOp = ({ op }) => null
+//const XrayPathOp = ({ op }) => null
 /*
  * (
   <Li>

@@ -31,7 +31,7 @@ export const Workbench = ({ design, Design, set = false, DynamicDocs = false }) 
   // Hooks
   const { t, i18n } = useTranslation(ns)
   const { language } = i18n
-  const { account, token } = useAccount()
+  const { account } = useAccount()
 
   const defaultSettings = loadDefaultSettings({
     units: account.imperial ? 'imperial' : 'metric',

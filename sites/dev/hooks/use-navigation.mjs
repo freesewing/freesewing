@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import get from 'lodash.get'
 import { prebuildNavigation as pbn } from 'site/prebuild/navigation.mjs'
 import orderBy from 'lodash.orderby'
