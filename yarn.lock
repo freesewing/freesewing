@@ -16943,9 +16943,9 @@ remark-lint-list-item-content-indent@^3.0.0:
     unist-util-visit "^4.0.0"
 
 remark-lint-list-item-indent@^3.0.0, remark-lint-list-item-indent@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/remark-lint-list-item-indent/-/remark-lint-list-item-indent-3.1.1.tgz#1591d291a9f81c8f14219bdb63f226a5e9f271c3"
-  integrity sha512-OSTG64e52v8XBmmeT0lefpiAfCMYHJxMMUrMnhTjLVyWAbEO0vqqR5bLvfLwzK+P4nY2D/8XKku0hw35dM86Rw==
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/remark-lint-list-item-indent/-/remark-lint-list-item-indent-3.1.2.tgz#8b7e8eafe78ea2308c61ee9ff239ecf46b6f2bd6"
+  integrity sha512-tkrra1pxZVE4OVJGfN435u/v0ljruXU+dHzWiKDYeifquD4aWhJxvSApu7+FbE098D/4usVXgMxwFkNhrpZcSQ==
   dependencies:
     "@types/mdast" "^3.0.0"
     pluralize "^8.0.0"
