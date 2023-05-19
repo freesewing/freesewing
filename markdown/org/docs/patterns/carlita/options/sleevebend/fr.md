@@ -1,6 +1,6 @@
----
+- - -
 titre : "Pli de manche"
----
+- - -
 
 ![Sleeve bend](./sleevebend.svg)
 
