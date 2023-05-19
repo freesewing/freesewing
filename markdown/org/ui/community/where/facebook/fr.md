@@ -1,5 +1,5 @@
----
----
+- - -
+- - -
 
 Nous avons [un groupe Facebook FreeSewing](https://www.facebook.com/groups/627769821272714) que vous devriez rejoindre.
 
