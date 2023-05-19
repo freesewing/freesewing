@@ -1,6 +1,6 @@
----
+- - -
 titre : "aisance thoracique"
----
+- - -
 
 L'aisance au niveau de la poitrine.
 
