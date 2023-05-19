@@ -1,6 +1,6 @@
----
-titre : "Découpe supplémentaire à l'avant de l'emmanchure"
----
+- - -
+titre : "Découpe supplémentaire à l'avant de l'emmanchure
+- - -
 
 ![Front armhole extra cutout](./frontarmholedeeper.svg)
 
