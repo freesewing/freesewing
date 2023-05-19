@@ -10,7 +10,7 @@ import { prebuildDesigns } from './designs.mjs'
 import { generateOgImage } from './og/index.mjs'
 
 const run = async () => {
-  const linter = process.env.LINTER ? false : true
+  const linter = process.env.LINTER ? true : false
   if (linter) return true
   const SITE = process.env.SITE || 'lab'
   //prebuildDesigns()
