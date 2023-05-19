@@ -14,7 +14,6 @@ const run = async () => {
   if (linter) return true
   const SITE = process.env.SITE || 'lab'
   prebuildDesigns()
-  let docPages
   if (['org', 'dev'].includes(SITE)) {
     await prebuildGitData(SITE)
     const docPages = await prebuildDocs(SITE)

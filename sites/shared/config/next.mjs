@@ -15,7 +15,7 @@ import rehypeSlug from 'rehype-slug'
 import rehypeJargon from '../../../packages/rehype-jargon/src/index.mjs'
 import rehypeHighlightLines from '../../../packages/rehype-highlight-lines/src/index.mjs'
 // Webpack MDX loadder for NextJS
-import mdxLoader from '@next/mdx'
+//import mdxLoader from '@next/mdx'
 
 const jargonTransform = (term, html) => `<details class="inline jargon-details">
   <summary class="jargon-term">

@@ -2,11 +2,10 @@ import React, { useContext } from 'react'
 import { useSwipeable } from 'react-swipeable'
 import { useHotkeys } from 'react-hotkeys-hook'
 import { ModalContext } from 'shared/context/modal-context.mjs'
-import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
 
 /* This component should wrap all swipeable content */
 export const SwipeWrapper = ({ children, app }) => {
-  const { setModal, clearModal } = useContext(ModalContext) || {}
+  const { clearModal } = useContext(ModalContext) || {}
 
   /*
    * Swipe handling for the entire site

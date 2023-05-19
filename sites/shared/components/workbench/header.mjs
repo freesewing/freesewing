@@ -1,5 +1,5 @@
 // Hooks
-import { useState, useEffect, useContext } from 'react'
+import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
@@ -15,9 +15,7 @@ import {
   MenuIcon,
   OptionsIcon,
   PrintIcon,
-  SettingsIcon,
   UploadIcon,
-  WrenchIcon,
 } from 'shared/components/icons.mjs'
 import { Ribbon } from 'shared/components/ribbon.mjs'
 import Link from 'next/link'
@@ -71,7 +69,6 @@ export const colors = [
   'violet',
   'purple',
 ]
-const views = ['menu', 'draft', 'test', 'print', 'cut', 'save', 'export', 'edit', 'clear', 'help']
 
 const NavIcons = ({ setModal, setView, view }) => {
   const { t } = useTranslation(['header'])

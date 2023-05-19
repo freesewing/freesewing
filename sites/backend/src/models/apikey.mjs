@@ -42,7 +42,7 @@ ApikeyModel.prototype.sendResponse = async function (res) {
 
 ApikeyModel.prototype.verify = async function (key, secret) {
   await this.unguardedRead({ id: key })
-  const [valid] = await verifyPassword(secret, this.record.secret)
+  const [valid] = verifyPassword(secret, this.record.secret)
   this.verified = valid
 
   return this

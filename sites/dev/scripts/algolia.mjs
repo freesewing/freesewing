@@ -14,7 +14,6 @@ import fs from 'fs'
 import path from 'path'
 import algoliasearch from 'algoliasearch'
 import { unified } from 'unified'
-import { remark } from 'remark'
 import { visit } from 'unist-util-visit'
 import remarkParser from 'remark-parse'
 import remarkCompiler from 'remark-stringify'
@@ -98,7 +97,7 @@ const indexMarkdownContent = async () => {
 const run = async () => {
   if (process.env.VERCEL_ENV === 'production' || process.env.FORCE_ALGOLIA) {
     console.log()
-    //await clearIndex()
+    await clearIndex()
     await indexMarkdownContent()
     console.log()
   } else {

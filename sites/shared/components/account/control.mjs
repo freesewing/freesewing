@@ -15,7 +15,7 @@ export const ns = ['account', 'toast']
 
 export const ControlSettings = ({ title = false, welcome = false }) => {
   // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+  const { startLoading, stopLoading } = useContext(LoadingContext)
 
   // Hooks
   const { account, setAccount, token } = useAccount()

@@ -1,6 +1,5 @@
 import { useState, useEffect, useContext } from 'react'
 import { useSwipeable } from 'react-swipeable'
-import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 
 const slideClasses = {

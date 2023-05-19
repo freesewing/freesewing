@@ -18,7 +18,7 @@ export const userTests = async (chai, config, expect, store) => {
       email: 'test@freesewing.dev',
       language: 'fr',
     }
-    Object.keys(fields).map((key) => {
+    Object.keys(fields).forEach((key) => {
       it(`${store.icon('user')} Should not allow signup without ${key}`, (done) => {
         chai
           .request(config.api)

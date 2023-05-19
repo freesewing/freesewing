@@ -1,5 +1,4 @@
 import axios from 'axios'
-import process from 'process'
 import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
 
 /*

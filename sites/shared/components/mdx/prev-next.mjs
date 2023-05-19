@@ -2,7 +2,6 @@ import get from 'lodash.get'
 import orderBy from 'lodash.orderby'
 import Link from 'next/link'
 import { LeftIcon, RightIcon } from 'shared/components/icons.mjs'
-import { Popout } from 'shared/components/popout.mjs'
 
 // helper method to order nav entries
 const order = (obj) => orderBy(obj, ['o', 't'], ['asc', 'asc'])

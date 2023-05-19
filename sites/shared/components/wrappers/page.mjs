@@ -8,7 +8,6 @@ import { SwipeWrapper } from 'shared/components/wrappers/swipes.mjs'
 import { LayoutWrapper, ns as layoutNs } from 'site/components/wrappers/layout.mjs'
 import { DocsLayout, ns as docsNs } from 'site/components/layouts/docs.mjs'
 import { Feeds } from 'site/components/feeds.mjs'
-import { Spinner } from 'shared/components/spinner.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
 
@@ -43,7 +42,7 @@ export const PageWrapper = (props) => {
    * Contexts
    */
   const { modalContent } = useContext(ModalContext)
-  const { title, setNavigation } = useContext(NavigationContext)
+  const { setNavigation } = useContext(NavigationContext)
 
   /*
    * Update navigation context with title and path
