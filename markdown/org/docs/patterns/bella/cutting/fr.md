@@ -1,6 +1,6 @@
----
+- - -
 title: "Bloc de corps de Bella : Instructions de coupe"
----
+- - -
 
 **Tissu principal**
 
