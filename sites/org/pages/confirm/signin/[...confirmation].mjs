@@ -12,7 +12,7 @@ import { PageWrapper } from 'shared/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
 import { Robot } from 'shared/components/robot/index.mjs'
-import { FlexButtonText } from 'site/components/buttons/flex-button-text.mjs'
+import { FlexButtonText } from 'shared/components/buttons/flex-button-text.mjs'
 import { LeftIcon, KeyIcon } from 'shared/components/icons.mjs'
 
 // Translation namespaces used on this page

@@ -3,7 +3,7 @@ import { capitalize } from 'shared/utils.mjs'
 import { siteConfig } from 'site/site.config.mjs'
 import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
 import { measurements } from 'config/measurements.mjs'
-import { designMeasurements } from 'site/prebuild/design-measurements.mjs'
+import { measurements as designMeasurements } from 'shared/prebuild/data/design-measurements.mjs'
 // Context
 import { LoadingContext } from 'shared/context/loading-context.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'

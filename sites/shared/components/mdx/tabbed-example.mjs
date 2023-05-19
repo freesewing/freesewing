@@ -22,7 +22,14 @@ export const asText = (reactEl) => {
 }
 
 // The actual example
-const Example = ({ patternProps, tutorial, paperless, settings, showInfo, xray = false }) => {
+export const Example = ({
+  patternProps,
+  tutorial,
+  paperless,
+  settings,
+  showInfo,
+  xray = false,
+}) => {
   const [ui, setUi] = useState({ renderer: 'react', xray: { enabled: xray } })
 
   if (patternProps.logs.pattern.error.length > 0 || patternProps.logs.sets[0].error.length > 0)
