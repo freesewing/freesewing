@@ -1,8 +1,8 @@
 ---
-title: Draft for high bust
+title: Schnittkonstruktion für Oberbrustumfang
 ---
 
-Draft the pattern for the high bust measurement (if available) rather than the (full) chest. Das Kleidungsstück wird figurnaher ausfallen für Personen mit Brüsten.
+Erstelle das Schnittmuster augfgrund des Oberbrustumfanges (wenn vorhanden) und nicht nach dem Brustumfang (an der stärksten Stelle). Das Kleidungsstück wird figurnaher ausfallen für Personen mit Brüsten.
 
 ## Effekt dieser Option auf das Schnittmuster
 

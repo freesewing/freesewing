@@ -12,9 +12,9 @@ Esta estimación se basa en la circunstancia del cuello, por lo que no aparecer�
 
 <Note>
 
-##### This is a difficult area for us to work in
+##### Esta es una área difícil de trabajar en
 
-We want to help you get the best results, and that includes helping you spot issues with your measurements.
+Queremos ayudarte a obtener los mejores resultados. y eso incluye ayudarte a detectar problemas con tus mediciones.
 On the other hand, we in no way want to imply that someone's measurements are _wrong_ somehow.
 
 Somos un patrón muy incluyente de tamaño, y una cantidad desproporcionada de nuestros usuarios son personas que luchan por encontrar ropa o patrones de otras tiendas.

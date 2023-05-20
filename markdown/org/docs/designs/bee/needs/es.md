@@ -11,8 +11,8 @@ Para hacer Bee, necesitarás lo siguiente:
 
 <Note>
 
-La tela de forro solo es necesaria si quieres hacer este patrón reversible. If you don't, you only need the main fabric.  
-You can use a serger/overlocker to construct this pattern but it is not mandatory.  
-Ribbons/Tapes/Cords can be used instead of making custom ties. Just make sure to get more than you need and that you cut down to size after construction.
+La tela de forro solo es necesaria si quieres hacer este patrón reversible. Si no, sólo necesitas la tela principal.  
+Puedes usar una remalladora/overlocker para hacer este patrón, pero no es obligatorio.  
+Los lazos, cintas o cuerdas se pueden usar en lugar de hacer tiras a mano. Simplemente asegúrate de que tienes más de lo que necesitas y lo cortas a medida tras la construcción.
 
 </Note>

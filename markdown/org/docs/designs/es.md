@@ -1,5 +1,5 @@
 ---
-title: Patrones
+title: Diseños
 order: 300
 ---
 

@@ -15,8 +15,8 @@ Ik weet niet of de term **noblesse oblige** je bekend is, maar het betekent dat 
 
 Ik ben bevoorrecht, en dus heb ik verantwoordelijkheden. Ik ben zeer gelukkig dat ik in West-Europa ben geboren, dat ik goed werk heb en een dak boven mijn hoofd.
 
-Zou ik het geld kunnen gebruiken? Yes I could.  
-Do I need the money? Nee, eigenlijk niet.
+Zou ik het geld kunnen gebruiken? Ja, dat zou wel kunnen.  
+Heb ik het geld nodig? Nee, eigenlijk niet.
 
 ##### De waarde van jullie steun
 
@@ -28,7 +28,7 @@ Wanneer je een FreeSewing Patroon wordt, geef je meer dan geld. Voor mij is de h
 
 ##### De waarde van jullie geld
 
-It is not _just_ about the money. Maar dat wil niet zeggen dat geld niet belangrijk is. Integendeel.
+Het gaat niet _enkel_ om het geld. Maar dat wil niet zeggen dat geld niet belangrijk is. Integendeel.
 
 Geld inzamelen door iets te doen wat ik graag doe, en het dan doorgeven aan een goed doel, is wat mij op twee oren doet slapen.
 

@@ -2,10 +2,7 @@
 title: Seam Allowance Size
 ---
 
-This [Core Setting][core-settings] controls the base size of your seam
-allowance.  In other words, the default seam allowance will be this size. Other
-allowance that is intended to be wider, like hem allowance, will be a multiple
-of this size.
+This [Core Setting][core-settings] controls the base size of your seam allowance.  In other words, the default seam allowance will be this size. Other allowance that is intended to be wider, like hem allowance, will be a multiple of this size.
 
 <Note>
 
@@ -18,5 +15,4 @@ However, for convenience, we've split this up into two different settings on the
 The latter will only be shown if you've enabled the former.
 
 </Note>
-
 [core-settings]: /docs/site/draft/core-settings/

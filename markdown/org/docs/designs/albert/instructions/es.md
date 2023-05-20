@@ -9,18 +9,18 @@ title: "Albert apron: Sewing Instructions"
 - Aprieta el borde para el dobladillo de los lados y la parte inferior hacia el lado malo del tejido.
 - En el lado bueno, haz un pespunte cerca de donde el borde del dobladillo acaba en la parte de abajo, asegurándote de que coses sobre el dobladillo.
 - Sujeta el bolsillo con alfileres en el sitio usando las guías.
-- _Edgestitch_ the sides and bottom of the pocket leaving the top open. Asegúrate de hacer punto atrás al principio y al final para fijar el bolsillo correctamente.
+- Haz un _pespunte_ en los lados y parte de abajo del bolsillo, dejando la parte superior abierta. Asegúrate de hacer punto atrás al principio y al final para fijar el bolsillo correctamente.
 
 <Tip>
 
-If you have trouble catching the top hem we suggest to either _Baste_ close to the hem edge first, and use that as a guide when stitching on the right side or pin the hem edge down from the right side making sure the pins are parallel to the top edge and use them as a guide.
+Si tienes problemas para sujetar el borde superior, sugerimos que hilvanes cerca del borde superior primero y uses eso como guía cuando cosas por el lado bueno, o que pongas alfileres en el dobladillo desde el lado bueno paralelos al borde superior y los uses como guía.
 
 </Tip>
 
 <Note>
 
-There are multiple ways to sew a patch pocket so use the way you prefer if you do not like this one.  
-A fun thing you can do is embroider/stitch the pocket with the name of the person the apron is for or even a cute design. Just remember that aprons typically get dirty so don't go to overtop with it.
+Hay muchas formas de coser un bolsillo de parche, así que usa la que prefieras si no te gusta esta.  
+Una cosa divertida que puedes hacer es bordar en el bolsillo el nombre de la persona para la que es el delantal, o incluso bordar diseño mono. Pero recuerda que los delantales normalmente se ensucian, así que no te pases.
 
 </Note>
 
@@ -33,8 +33,8 @@ A fun thing you can do is embroider/stitch the pocket with the name of the perso
 
 <Note>
 
-It is recommended to hem the side seams before the top and bottom seams as they are narrower.  
-The side seams are narrow hems simply being the seam allowance folded over twice.
+Es recomendable hacer el dobladillo de los laterales antes que el superior y el inferior, que son más estrechos.  
+Los dobladillos laterales son estrechos y permiten doblar la tela dos veces.
 
 </Note>
 

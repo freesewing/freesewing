@@ -4,7 +4,7 @@ title: "Back dart height (Bella)"
 
 ***
 
-Controls the back dart height in the underlying Bella block Bee is based on
+Kontrolliert die Höhe der Rückenabnäher des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
 
 ## Effekt dieser Option auf das Schnittmuster
 

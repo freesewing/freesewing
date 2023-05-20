@@ -1,16 +1,16 @@
-canvas: Canvas
-cut: Cut
+canvas: Haardoek
+cut: Knip
 cuttingLayout: Suggested Cutting Layout
-fabric: Main Fabric
+fabric: Hoofd stof
 fabricSize: "{length} of {width} wide material"
 heavyCanvas: Heavy Canvas
-interfacing: Interfacing
-lining: Lining
+interfacing: Tussenvoering
+lining: Voering
 lmhCanvas: Light to Medium Hair Canvas
 mirrored: mirrored
-onFoldLower: on the fold
+onFoldLower: aan de stofvouw
 onFoldAndBias: folded on the bias
 onBias: on the bias
 plastic: Plastic
-ribbing: Ribbing
+ribbing: Boordstof
 edgeOfFabric: Edge of Fabric

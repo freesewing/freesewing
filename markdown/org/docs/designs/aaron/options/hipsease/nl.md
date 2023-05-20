@@ -2,11 +2,11 @@
 title: "Hips ease"
 ---
 
-![The hips ease option on Aaron](./hipsease.svg)
+![De optie voor overwijdte aan de heupen bij Aaron](./hipsease.svg)
 
-How much room do you want at the hips?
+Hoeveel ruimte wil je aan je heupen?
 
-Whatever value you provide here will simply be added to your hips circumference measurement when drafting the garment.
+De waarde die je hier geeft wordt toegevoegd aan je heupomtrek bij het tekenen van het patroon.
 
 > ##### Deze optie laat negatieve waarden toe.
 > 
@@ -14,4 +14,4 @@ Whatever value you provide here will simply be added to your hips circumference 
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_hipsease_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](aaron_hipsease_sample.svg "Effect van deze optie op het patroon")

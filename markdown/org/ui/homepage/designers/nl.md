@@ -14,7 +14,7 @@ When drafting or designing patterns or garments, it is common practice to start 
 
 Het aanpassen van het patroon voor een ander model is een vervelende taak, daarom worden patronen omhoog en omlaag beoordeeld om verschillende maten te dekken.
 
-But in a parametric sewing pattern, adapting to different sizes or models _just works_.
+Maar in een parametrisch naaipatroon, aanpassing aan verschillende maten of modellen _werkt gewoon_.
 
 #### Wat kan FreeSewing voor mij doen?
 

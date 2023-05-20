@@ -4,7 +4,7 @@ title: "Band Length (Cross back ties)"
 
 ***
 
-Controls the length of the band around your chest for the cross back ties variation of Bee
+Kontrolliert die Länge Brustbandes für die Variante von Bee mit gekreuzten Rückenträgern
 
 ## Effekt dieser Option auf das Schnittmuster
 

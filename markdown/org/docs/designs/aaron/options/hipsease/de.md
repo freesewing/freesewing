@@ -1,12 +1,12 @@
 ---
-title: "Hips ease"
+title: "Weitenzugabe Hüfte"
 ---
 
-![The hips ease option on Aaron](./hipsease.svg)
+![Die Hüftleiste-Option auf Aaron](./hipsease.svg)
 
-How much room do you want at the hips?
+Wie viel Weite brauchst du an der Hüfte?
 
-Whatever value you provide here will simply be added to your hips circumference measurement when drafting the garment.
+Welcher Wert auch immer Sie hier angeben, wird beim Entwurf des Kleidungsstückes einfach zu Ihrer Hüftumfangsmessung hinzugefügt.
 
 > ##### Diese Option erlaubt auch negative Werte.
 > 
@@ -14,4 +14,4 @@ Whatever value you provide here will simply be added to your hips circumference 
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_hipsease_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](aaron_hipsease_sample.svg "Effekt dieser Option auf das Schnittmuster")

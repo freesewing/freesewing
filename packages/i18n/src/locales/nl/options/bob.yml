@@ -2,11 +2,11 @@ neckRatio:
   title: Neck opening
   description: Controls the size of the neck opening relative to the bib size
 widthRatio:
-  title: Width
-  description: Controls the width of the bib
+  title: Breedte
+  description: Bepaalt de breedte van het slabbetje
 lengthRatio:
-  title: Length
-  description: Controls the length of the bib
+  title: Lengte
+  description: Bepaalt de lengte van het slabbetje
 headSize:
   title: Head size
   description: The head circumference you want the bib to accomodate

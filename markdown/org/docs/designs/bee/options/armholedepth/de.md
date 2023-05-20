@@ -4,7 +4,7 @@ title: "Armhole depth (Bella)"
 
 ***
 
-Controls the armhole depth in the underlying Bella block Bee is based on
+Kontrolliert die Tiefe des Armloches des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
 
 ## Effekt dieser Option auf das Schnittmuster
 
