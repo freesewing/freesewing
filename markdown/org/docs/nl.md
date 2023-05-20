@@ -16,10 +16,3 @@ developer/contributor docs, please refer to
 
 </Tip>
 
-<Fixme>
-
-We should diataxis our docs
-
-</Fixme>
-
-
