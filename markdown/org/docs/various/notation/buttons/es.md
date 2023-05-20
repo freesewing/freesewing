@@ -10,7 +10,7 @@ A button is shown on the left, and a buttonhole on the right
 
 </Legend>
 
-Snaps have a _stud_ and _socket_ part, and also look like the real thing:
+Las tomas tienen una parte del socket __ y _del stud_ y también se ven como lo real:
 
 <Legend part="snaps">
 
