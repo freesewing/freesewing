@@ -21,7 +21,8 @@
     "develop": "next dev -p 8000",
     "i18n": "SITE=org node ../shared/prebuild/i18n-only.mjs",
     "lint": "next lint",
-    "prebuild": "SITE=org node --experimental-json-modules ../shared/prebuild/index.mjs",
+    "buildsitedeps": "cd ../../ && yarn buildall && cd -",
+    "prebuild": "yarn buildsitedeps && SITE=org node --experimental-json-modules ../shared/prebuild/index.mjs",
     "start": "yarn prebuild && yarn dev"
   },
   "peerDependencies": {},
