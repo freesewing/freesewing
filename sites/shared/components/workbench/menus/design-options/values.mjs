@@ -6,9 +6,7 @@ export const PctOptionValue = ({ name, config, current, settings }) => {
   return (
     <span className={val === config.pct / 100 ? 'text-secondary-focus' : 'text-accent'}>
       {formatPercentage(val)}
-      {config?.toAbs && settings.measurements
-        ? ` | ${formatMm(config.toAbs(val, settings))}`
-        : null}
+      {config.toAbs && settings.measurements ? ` | ${formatMm(config.toAbs(val, settings))}` : null}
     </span>
   )
 }

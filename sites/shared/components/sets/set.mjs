@@ -1,15 +1,16 @@
-import Link from 'next/link'
-import { useTranslation } from 'next-i18next'
-import { Difficulty } from 'shared/components/designs/difficulty.mjs'
-import { designs } from 'shared/config/designs.mjs'
-import { DesignTag } from 'shared/components/designs/tag.mjs'
+//import Link from 'next/link'
+//import { useTranslation } from 'next-i18next'
+//import { Difficulty } from 'shared/components/designs/difficulty.mjs'
+//import { designs } from 'shared/config/designs.mjs'
+//import { DesignTag } from 'shared/components/designs/tag.mjs'
 
 export const ns = ['design', 'designs', 'tags']
 
 export const Set = ({ name }) => {
-  const { t } = useTranslation(ns)
+  //const { t } = useTranslation(ns)
 
   return <p>fixme</p>
+  /*
   return (
     <Link
       href={`/new/pattern/${name}`}
@@ -34,4 +35,5 @@ export const Set = ({ name }) => {
       </div>
     </Link>
   )
+  */
 }

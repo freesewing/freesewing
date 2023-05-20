@@ -1,5 +1,4 @@
 import { formatMm } from 'shared/utils.mjs'
-import { SecText, AccentText, PrimaryText } from 'shared/components/workbench/menus/index.mjs'
 
 const ListValue = ({ current, t, config, changed }) =>
   changed

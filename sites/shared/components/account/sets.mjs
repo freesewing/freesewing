@@ -1,8 +1,6 @@
 // Dependencies
 import { useState, useEffect, useContext, useCallback } from 'react'
 import { useTranslation } from 'next-i18next'
-import { DateTime } from 'luxon'
-import { CopyToClipboard } from 'react-copy-to-clipboard'
 import orderBy from 'lodash.orderby'
 import { measurements, isDegreeMeasurement } from 'config/measurements.mjs'
 import { measurementAsMm, formatMm } from 'shared/utils.mjs'
@@ -20,20 +18,15 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
 import { Collapse, useCollapseButton } from 'shared/components/collapse.mjs'
 import { BackToAccountButton, Choice } from './shared.mjs'
-import { WebLink } from 'shared/components/web-link.mjs'
 import { PageLink } from 'shared/components/page-link.mjs'
 import { ModalDesignPicker } from 'shared/components/modal/design-picker.mjs'
 import {
   FilterIcon,
   ClearIcon,
-  CloseIcon,
   PlusIcon,
   OkIcon,
   NoIcon,
-  DownIcon,
-  CopyIcon,
   TrashIcon,
-  LeftIcon,
   EditIcon,
 } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
@@ -41,8 +34,6 @@ import Markdown from 'react-markdown'
 import { Tab } from './bio.mjs'
 import Timeago from 'react-timeago'
 import { Spinner } from 'shared/components/spinner.mjs'
-import Link from 'next/link'
-import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
 
 export const ns = ['account', 'patterns', 'toast']
 
@@ -70,7 +61,7 @@ export const NewSet = ({
   standalone = false,
 }) => {
   // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+  const { startLoading, stopLoading } = useContext(LoadingContext)
 
   // Hooks
   const router = useRouter()
@@ -95,11 +86,6 @@ export const NewSet = ({
       }
     } else toast.for.backendError()
     stopLoading()
-  }
-
-  // Helper method to clear inputs
-  const clear = () => {
-    setMset(false)
   }
 
   return (
@@ -128,13 +114,6 @@ export const NewSet = ({
   )
 }
 
-const Row = ({ title, children }) => (
-  <div className="flex flex-row flex-wrap items-center lg:gap-4 my-2 hover:bg-primary hover:bg-opacity-10 rounded-lg p-2">
-    <div className="w-24 text-left md:text-right block md:inline font-bold pr-4">{title}</div>
-    <div className="grow">{children}</div>
-  </div>
-)
-
 const EditField = (props) => {
   if (props.field === 'name') return <EditName {...props} />
   if (props.field === 'notes') return <EditNotes {...props} />
@@ -144,8 +123,6 @@ const EditField = (props) => {
 
   return <p>FIXME: No edit component for this field</p>
 }
-
-const noop = () => null
 
 export const EditRow = (props) => (
   <Collapse
@@ -207,8 +184,7 @@ export const MeasieRow = (props) => {
 
 const MeasieInput = ({ m, mset, backend, toast, refresh }) => {
   const { t } = useTranslation(['measurements'])
-  const title = t(`measurements:${m}`)
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+  //const title = t(`measurements:${m}`)
 
   const isDegree = isDegreeMeasurement(m)
   const factor = isDegree ? 1 : mset.imperial ? 25.4 : 10
@@ -230,6 +206,7 @@ const MeasieInput = ({ m, mset, backend, toast, refresh }) => {
     setValid(isValid(useVal))
   }
 
+  /*
   const save = async () => {
     startLoading()
     const measies = {}
@@ -241,6 +218,7 @@ const MeasieInput = ({ m, mset, backend, toast, refresh }) => {
     } else toast.for.backendError()
     stopLoading()
   }
+  */
 
   const fraction = (i, base) => update({ target: { value: Math.floor(val) + i / base } })
 
@@ -389,26 +367,13 @@ const EditImg = ({ t, mset, account, backend, toast, refresh, curated = false })
   }, [])
 
   const { getRootProps, getInputProps } = useDropzone({ onDrop })
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
 
-  const update = async (evt) => {
-    evt.preventDefault()
-    if (evt.target.value !== value) {
-      setValue(evt.target.value)
-    }
-  }
-
-  const save = async () => {
-    startLoading()
-    const result = curated
-      ? await backend.updateCuratedSet(mset.id, { img })
-      : await backend.updateSet(mset.id, { img })
-    if (result.success) {
-      refresh()
-      toast.for.settingsSaved()
-    } else toast.for.backendError()
-    stopLoading()
-  }
+  //const update = async (evt) => {
+  //  evt.preventDefault()
+  //  if (evt.target.value !== value) {
+  //    setValue(evt.target.value)
+  //  }
+  //}
 
   return (
     <div>
@@ -554,7 +519,7 @@ const EditNotes = ({ t, mset, account, backend, toast, refresh }) => {
 
 const EditUnits = ({ t, mset, account, backend, toast, refresh }) => {
   const [selection, setSelection] = useState(mset?.imperial === true ? 'imperial' : 'metric')
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+  const { startLoading, stopLoading } = useContext(LoadingContext)
 
   const update = async (val) => {
     setSelection(val)
@@ -570,15 +535,15 @@ const EditUnits = ({ t, mset, account, backend, toast, refresh }) => {
     }
   }
 
-  const save = async () => {
-    startLoading()
-    const result = await backend.updateSet(mset.id, { name: value })
-    if (result.success) {
-      refresh()
-      toast.for.settingsSaved()
-    } else toast.for.backendError()
-    stopLoading()
-  }
+  //const save = async () => {
+  //  startLoading()
+  //  const result = await backend.updateSet(mset.id, { name: value })
+  //  if (result.success) {
+  //    refresh()
+  //    toast.for.settingsSaved()
+  //  } else toast.for.backendError()
+  //  stopLoading()
+  //}
 
   return (
     <>
@@ -604,7 +569,7 @@ const EditUnits = ({ t, mset, account, backend, toast, refresh }) => {
 
 const EditPublic = ({ t, mset, account, backend, toast, refresh }) => {
   const [selection, setSelection] = useState(mset.public)
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+  const { startLoading, stopLoading } = useContext(LoadingContext)
 
   const update = async (val) => {
     setSelection(val)
@@ -776,18 +741,11 @@ const EditMeasurementsSet = (props) => {
 
 const MeasurementsSet = ({ mset, t, account, backend, refresh }) => {
   // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+  const { startLoading, stopLoading } = useContext(LoadingContext)
   const { setModal } = useContext(ModalContext)
 
   // Hooks
   const toast = useToast()
-
-  const fields = {
-    id: 'ID',
-    name: t('name'),
-    level: t('keyLevel'),
-    createdAt: t('created'),
-  }
 
   const remove = async () => {
     startLoading()
@@ -864,9 +822,6 @@ const MeasurementsSet = ({ mset, t, account, backend, refresh }) => {
 
 // Component for the account/sets page
 export const Sets = ({ title = true }) => {
-  // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
-
   // Hooks
   const { account, token } = useAccount()
   const backend = useBackend(token)

@@ -77,7 +77,7 @@ const ConfirmSignInPage = ({ page }) => {
         check: confirmationCheck,
       })
       if (result?.data?.token) return storeAccount(result.data)
-      if (result.status === 404) return setError(404)
+      if (result?.status === 404) return setError(404)
 
       return setError(true)
     }

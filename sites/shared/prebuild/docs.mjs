@@ -1,7 +1,6 @@
-import path from 'path'
 import fs from 'fs'
+import path from 'path'
 import rdir from 'recursive-readdir'
-import mustache from 'mustache'
 import { unified } from 'unified'
 import remarkParser from 'remark-parse'
 import remarkCompiler from 'remark-stringify'
@@ -10,6 +9,7 @@ import remarkFrontmatterExtractor from 'remark-extract-frontmatter'
 import { readSync } from 'to-vfile'
 import yaml from 'js-yaml'
 import { mdIntro } from './md-intro.mjs'
+import { header } from './org.mjs'
 
 /*
  * There's an issue in crowdin where it changes the frontmatter marker:
@@ -89,25 +89,17 @@ export const fileToSlug = (file, site, lang) =>
 export const prebuildDocs = async (site) => {
   // Say hi
   console.log()
-  console.log(`Prebuilding docs pages for freesewing.${site}`)
+  console.log(`Compiling list of docs pages for freesewing.${site}`)
 
   // Setup MDX root path
-
   const root = ['..', '..', 'markdown', site]
   if (site === 'org') root.push('docs')
   const mdxRoot = path.resolve(...root)
-
-  // Load page template
-  const template = fs.readFileSync(
-    path.resolve('..', 'shared', 'page-templates', `docs.${site}.mjs.mustache`),
-    'utf-8'
-  )
 
   // Languages
   const locales = site === 'dev' ? ['en'] : ['en', 'fr', 'es', 'nl', 'de']
 
   const pages = {}
-
   // Loop over languages
   for (const lang of locales) {
     pages[lang] = {}
@@ -132,31 +124,29 @@ export const prebuildDocs = async (site) => {
       }
       const intros = {}
       intros[lang] = await mdIntro(lang, site, slug)
-      if (process.env.GENERATE_OG_IMAGES) {
-        // Create og image
-        await generateOgImage({ lang, site, slug, title: meta.data.title, intro: intros[lang] })
-      }
-
-      // Things to only do for English
-      if (lang === 'en') {
-        // Write page to disk
-        const dir = path.resolve('..', site, 'pages', ...slug.split('/'))
-        fs.mkdirSync(dir, { recursive: true })
-        fs.writeFileSync(
-          path.resolve(dir, `index.mjs`),
-          mustache.render(template, {
-            slug,
-            slugArray: JSON.stringify(slug.split('/')),
-            introEN: intros.en || 'fixme',
-            introES: intros.es || 'fixme',
-            introDE: intros.de || 'fixme',
-            introFR: intros.fr || 'fixme',
-            introNL: intros.nl || 'fixme',
-          })
-        )
-      }
+      //if (process.env.GENERATE_OG_IMAGES) {
+      //  // Create og image
+      //  await generateOgImage({ lang, site, slug, title: meta.data.title, intro: intros[lang] })
+      //}
     }
   }
+
+  // Write files with MDX paths
+  let allPaths = ``
+  for (const lang of locales) {
+    fs.writeFileSync(
+      path.resolve('..', site, 'prebuild', `mdx-paths.${lang}.mjs`),
+      `${header}export const mdxPaths = ${JSON.stringify(Object.keys(pages[lang]))}`
+    )
+    allPaths += `import { mdxPaths as ${lang} } from './mdx-paths.${lang}.mjs'` + '\n'
+  }
+  // Write umbrella file
+  fs.writeFileSync(
+    path.resolve('..', site, 'prebuild', `mdx-paths.mjs`),
+    `${allPaths}${header}
+
+export const mdxPaths = { ${locales.join(',')} }`
+  )
 
   return pages
 }

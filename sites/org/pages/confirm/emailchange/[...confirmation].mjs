@@ -82,7 +82,7 @@ const ConfirmSignUpPage = ({ page }) => {
 
   // Update path with dynamic ID
   if (!page) return null
-  if (page) page.path = ['confirm', 'emailchange', id]
+  page.path = ['confirm', 'emailchange', id]
 
   // Short-circuit errors
   if (error)

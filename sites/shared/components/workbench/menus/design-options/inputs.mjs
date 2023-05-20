@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import { EditIcon } from 'shared/components/icons.mjs'
-import { useTranslation } from 'next-i18next'
 import { formatMm, round } from 'shared/utils.mjs'
 import { ChoiceButton } from 'shared/components/choice-button.mjs'
 
@@ -36,10 +34,10 @@ export const CountOptionInput = ({ name, design, config, current, update, t, ove
     setValue(newCurrent)
     update.settings(['options', name], newCurrent)
   }
-  const reset = () => {
-    setValue(count)
-    update.settings(['options', name])
-  }
+  //const reset = () => {
+  //  setValue(count)
+  //  update.settings(['options', name])
+  //}
 
   return (
     <>
@@ -72,7 +70,7 @@ export const CountOptionInput = ({ name, design, config, current, update, t, ove
 }
 
 export const ListOptionInput = ({ design, name, config, current, update, t }) => {
-  const { dflt, list, doNotTranslate = false } = config
+  const { dflt } = config
   if (typeof current === 'undefined') current = dflt
 
   const [value, setValue] = useState(current)
@@ -163,10 +161,11 @@ export const PctOptionInput = ({
     setValue(newCurrent)
     update.settings(['options', name], newCurrent / factor)
   }
-  const reset = () => {
-    setValue(dflt)
-    update.settings(['options', name])
-  }
+
+  //const reset = () => {
+  //  setValue(dflt)
+  //  update.settings(['options', name])
+  //}
 
   return (
     <>

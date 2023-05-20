@@ -7,7 +7,6 @@ import remark2rehype from 'remark-rehype'
 import format from 'rehype-format'
 import html from 'rehype-stringify'
 import mustache from 'mustache'
-import nodemailer from 'nodemailer'
 import { testers } from '../config/newsletter-testers.mjs'
 import { fileURLToPath } from 'url'
 import { SESv2Client, SendEmailCommand } from '@aws-sdk/client-sesv2'
@@ -111,7 +110,6 @@ const send = async (test = true) => {
         //FromEmailAddressIdentityArn: "arn:aws:ses:us-east-1:550348293871:identity/freesewing.org",
         //ReplyToAddresses: us,
       })
-      let result
       try {
         await client.send(command)
       } catch (err) {

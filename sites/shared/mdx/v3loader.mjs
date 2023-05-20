@@ -1,4 +1,4 @@
-// We need fs and path to read from disk
+/*// We need fs and path to read from disk
 import fs from 'fs'
 import path from 'path'
 
@@ -20,16 +20,6 @@ import rehypeJargon from 'pkgs/rehype-jargon/src/index.mjs'
 import rehypeHighlightLines from 'pkgs/rehype-highlight-lines/src/index.mjs'
 // Simple frontmatter extractor
 import frontmatter from 'front-matter'
-/*
- * Summary: Loads markdown from disk and compiles it as MDX.
- *
- * @param (string) language - language to load (eg: 'en')
- * @param (string) site - site to load (either 'dev' or 'org')
- * @param (string) slug - slug of the page (eg: 'guides/patterns')
- *
- * @link https://mdxjs.com/guides/mdx-on-demand/
- *
- */
 
 const jargonTransform = (term, html) => `<details class="inline jargon-details">
   <summary class="jargon-term">
@@ -150,5 +140,5 @@ export const mdxLoader = async (language, site, slug, jargon) => {
   )
 
   return { mdx, intro, toc, frontmatter: frontmatter(md)?.attributes }
-  */
 }
+  */

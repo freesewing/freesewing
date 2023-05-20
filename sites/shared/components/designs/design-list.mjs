@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { designList, designs } from 'shared/config/designs.mjs'
 import { Design, ns as designNs } from 'shared/components/designs/design.mjs'
 
@@ -11,7 +10,7 @@ export const DesignList = ({ tag = false }) => {
   return (
     <div className="flex flex-row flex-wrap gap-2">
       {list.map((name) => (
-        <Design name={name} />
+        <Design name={name} key={name} />
       ))}
     </div>
   )

@@ -2,7 +2,6 @@ import execa from 'execa'
 import { gitToAuthor, authors as authorInfo } from '../../../config/authors.mjs'
 import path from 'path'
 import fs from 'fs'
-import rdir from 'recursive-readdir'
 import { getMdxFileList, fileToSlug } from './docs.mjs'
 
 const divider = '____'

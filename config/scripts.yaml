@@ -68,7 +68,8 @@ dev:
   develop: *nextDev
   i18n: "SITE=dev node ../shared/prebuild/i18n-only.mjs"
   lint: &nextLint 'next lint'
-  prebuild: 'SITE=dev node --experimental-json-modules ../shared/prebuild/index.mjs'
+  buildsitedeps: &buildsitedeps 'cd ../../ && yarn buildall && cd -'
+  prebuild: 'yarn buildsitedeps && SITE=dev node --experimental-json-modules ../shared/prebuild/index.mjs'
   serve: "pm2 start npm --name 'dev' -- run start"
   start: &nextStart 'yarn prebuild && yarn dev'
 
@@ -84,7 +85,8 @@ lab:
   develop: *nextDev
   e2e: &e2e 'yarn playwright test'
   lint: *nextLint
-  prebuild: 'SITE=lab node --experimental-json-modules ../shared/prebuild/index.mjs'
+  buildsitedeps: *buildsitedeps
+  prebuild: 'yarn buildsitedeps && SITE=lab node --experimental-json-modules ../shared/prebuild/index.mjs'
   start: *nextStart
 
 org:
@@ -95,7 +97,8 @@ org:
   develop: *nextDev
   i18n: 'SITE=org node ../shared/prebuild/i18n-only.mjs'
   lint: *nextLint
-  prebuild: 'SITE=org node --experimental-json-modules ../shared/prebuild/index.mjs'
+  buildsitedeps: *buildsitedeps
+  prebuild: 'yarn buildsitedeps && SITE=org node --experimental-json-modules ../shared/prebuild/index.mjs'
   start: *nextStart
 
 sanity:

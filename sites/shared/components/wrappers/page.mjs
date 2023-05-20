@@ -1,6 +1,6 @@
 // Dependencies
 import React, { useState, useEffect, useContext } from 'react'
-import { useHotkeys } from 'react-hotkeys-hook'
+//import { useHotkeys } from 'react-hotkeys-hook'
 // Hooks
 import { useTheme } from 'shared/hooks/use-theme.mjs'
 // Components
@@ -8,7 +8,6 @@ import { SwipeWrapper } from 'shared/components/wrappers/swipes.mjs'
 import { LayoutWrapper, ns as layoutNs } from 'site/components/wrappers/layout.mjs'
 import { DocsLayout, ns as docsNs } from 'site/components/layouts/docs.mjs'
 import { Feeds } from 'site/components/feeds.mjs'
-import { Spinner } from 'shared/components/spinner.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
 
@@ -31,45 +30,46 @@ export const PageWrapper = (props) => {
   const pageTitle = props.t ? props.t : props.title ? props.title : null
 
   /*
+   * Contexts
+   */
+  const { modalContent } = useContext(ModalContext)
+  const { setNavigation, slug } = useContext(NavigationContext)
+
+  /*
    * This forces a re-render upon initial bootstrap of the app
    * This is needed to avoid hydration errors because theme can't be set reliably in SSR
    */
-  const [theme, setTheme] = useTheme()
+  const [theme] = useTheme()
   const [currentTheme, setCurrentTheme] = useState()
   const [navupdates, setNavupdates] = useState(0)
   useEffect(() => setCurrentTheme(theme), [currentTheme, theme])
 
   /*
-   * Contexts
-   */
-  const { modalContent } = useContext(ModalContext)
-  const { title, setNavigation } = useContext(NavigationContext)
-
-  /*
    * Update navigation context with title and path
    */
   useEffect(() => {
-    if (navupdates < 5) {
+    // Only update if a new page was loaded
+    if (path.join('/') !== 'slug') {
       setNavigation({
         title: pageTitle,
         locale,
         path,
       })
       setNavupdates(navupdates + 1)
-    } else console.warn('Suppressing navigation update in page wrapper to avoid render loop')
-  }, [path, pageTitle])
+    }
+  }, [path, pageTitle, slug])
 
   /*
    * Hotkeys (keyboard actions)
    */
   // Trigger search with /
-  useHotkeys('/', (evt) => {
-    evt.preventDefault()
-    setSearch(true)
-  })
+  //useHotkeys('/', (evt) => {
+  //  evt.preventDefault()
+  //  setSearch(true)
+  //})
 
   // Search state
-  const [search, setSearch] = useState(false)
+  //const [search, setSearch] = useState(false)
 
   // Helper object to pass props down (keeps things DRY)
   const childProps = { footer, header, pageTitle }

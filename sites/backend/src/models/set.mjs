@@ -313,7 +313,7 @@ SetModel.prototype.userSets = async function (uid) {
     log.warn(`Failed to search sets for user ${uid}: ${err}`)
   }
   const list = []
-  for (const set of sets) list.push(await this.revealSet(set))
+  for (const set of sets) list.push(this.revealSet(set))
 
   return list
 }

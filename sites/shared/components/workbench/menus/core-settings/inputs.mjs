@@ -1,8 +1,5 @@
 import { useState } from 'react'
-import { useTranslation } from 'next-i18next'
-import { SecText, SumButton, Li, SumDiv, Deg } from 'shared/components/workbench/menus/index.mjs'
 import { formatMm } from 'shared/utils.mjs'
-import { ClearIcon } from 'shared/components/icons.mjs'
 import { ChoiceButton } from 'shared/components/choice-button.mjs'
 import orderBy from 'lodash.orderby'
 
@@ -202,10 +199,6 @@ export const SaMmSettingInput = ({ name, config, current, update, t, units }) =>
       [['sa'], newCurrent],
     ])
   }
-  const reset = () => {
-    update.settings([[['samm']], [['sa'], config.dflt]])
-    setValue(config.dflt)
-  }
 
   return (
     <>
@@ -238,7 +231,6 @@ export const SaBoolSettingInput = ({ config, current, update, t, samm, changed }
   if (typeof current === 'undefined') current = config.dflt
 
   const handleChange = (newCurrent) => {
-    const newSa = newCurrent ? samm : 0
     if (newCurrent === config.dflt) reset()
     else {
       update.settings([[['sabool'], newCurrent], [['sa']]])

@@ -3,13 +3,9 @@ import { components as baseComponents } from 'shared/components/mdx/index.mjs'
 // List of authors
 import { authors as allAuthors } from 'config/authors.mjs'
 import { docUpdates } from 'site/prebuild/doc-updates.mjs'
-// FreeSewing config
-import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
 // Components
 import { PageLink } from 'shared/components/page-link.mjs'
-import { WebLink } from 'shared/components/web-link.mjs'
 import { DateTime, Interval } from 'luxon'
-import { DocsIcon } from 'shared/components/icons.mjs'
 // Context
 import { useContext } from 'react'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
@@ -105,7 +101,7 @@ const MetaData = ({ authors = [], maintainers = [], updated = '20220825', locale
   </div>
 )
 
-export const MdxWrapper = ({ MDX, frontmatter = {}, components = {} }) => {
+export const MdxWrapper = ({ MDX = false, frontmatter = {}, components = {}, children = [] }) => {
   const { t } = useTranslation('docs')
   const allComponents = { ...baseComponents, ...components }
   const { locale, slug } = useContext(NavigationContext)
@@ -116,11 +112,11 @@ export const MdxWrapper = ({ MDX, frontmatter = {}, components = {} }) => {
     <div className="text-primary mdx max-w-prose text-base-content max-w-prose text-base">
       <MetaData
         maintainers={frontmatter?.maintainers || []}
-        authors={updates?.authors || []}
-        lastUpdated={updates?.lastUpdates}
+        authors={updates.authors || []}
+        lastUpdated={updates.lastUpdates}
         {...{ locale, slug, t }}
       />
-      <MDX components={allComponents} />
+      {MDX ? <MDX components={allComponents} /> : children}
     </div>
   )
 }

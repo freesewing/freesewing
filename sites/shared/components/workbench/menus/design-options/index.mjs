@@ -6,19 +6,7 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { Collapse } from 'shared/components/collapse.mjs'
-import { OptionsIcon, ClearIcon, HelpIcon, EditIcon, CloseIcon } from 'shared/components/icons.mjs'
-import { Chevron } from 'shared/components/navigation/primary.mjs'
-import {
-  Li,
-  Ul,
-  Details,
-  Summary,
-  SumDiv,
-  SumButton,
-  Deg,
-  TopSummary,
-  TopSumTitle,
-} from 'shared/components/workbench/menus/index.mjs'
+import { OptionsIcon, ClearIcon, HelpIcon, EditIcon } from 'shared/components/icons.mjs'
 import { optionsMenuStructure } from 'shared/utils.mjs'
 import { optionType } from 'shared/utils.mjs'
 import {

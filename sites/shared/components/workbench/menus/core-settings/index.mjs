@@ -1,5 +1,5 @@
 // Hooks
-import { useState, useContext } from 'react'
+import { useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
@@ -8,19 +8,6 @@ import { loadSettingsConfig } from './config.mjs'
 // Components
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { SettingsIcon, ClearIcon, HelpIcon } from 'shared/components/icons.mjs'
-import Link from 'next/link'
-import {
-  Li,
-  Ul,
-  SumButton,
-  SumDiv,
-  Summary,
-  Deg,
-  SecText,
-  Details,
-  TopSummary,
-  TopSumTitle,
-} from '../index.mjs'
 import { Collapse } from 'shared/components/collapse.mjs'
 import {
   CompleteSettingInput,
@@ -181,7 +168,7 @@ export const CoreSettings = ({
 
   const settingsConfig = loadSettingsConfig({
     language,
-    control: account?.control,
+    control: account.control,
     sabool: settings.sabool,
     parts: patternConfig.draftOrder,
   })

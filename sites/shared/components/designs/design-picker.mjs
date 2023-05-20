@@ -18,7 +18,7 @@ export const DesignPicker = () => {
       {Object.keys(translated)
         .sort()
         .map((d) => (
-          <Design name={translated[d]} />
+          <Design name={translated[d]} key={d} />
         ))}
     </div>
   )

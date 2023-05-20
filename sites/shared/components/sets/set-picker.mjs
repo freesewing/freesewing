@@ -19,7 +19,7 @@ export const ns = setNs
 
 export const CuratedSetPicker = ({ design, language }) => {
   // Hooks
-  const { account, token } = useAccount()
+  const { token } = useAccount()
   const backend = useBackend(token)
   const { t } = useTranslation('sets')
 
@@ -28,9 +28,6 @@ export const CuratedSetPicker = ({ design, language }) => {
   const [filter, setFilter] = useState([])
   const [tags, setTags] = useState([])
   const [reload, setReload] = useState(0)
-
-  // Force a refresh
-  const refresh = () => setReload(reload + 1)
 
   // Effects
   useEffect(() => {
@@ -88,7 +85,9 @@ export const CuratedSetPicker = ({ design, language }) => {
     <>
       <h3>{t('curatedSets')}</h3>
       {tags.map((tag) => (
-        <Tag onClick={() => addFilter(tag)}>{tag}</Tag>
+        <Tag onClick={() => addFilter(tag)} tag={tag} key={tag}>
+          {tag}
+        </Tag>
       ))}
       <div className="my-2 p-2 px-4 border rounded-lg bg-secondary bg-opacity-10 max-w-xl">
         <div className="flex flex-row items-center justify-between gap-2">
@@ -101,14 +100,14 @@ export const CuratedSetPicker = ({ design, language }) => {
           </button>
         </div>
         {filter.map((tag) => (
-          <Tag onClick={() => removeFilter(tag)} color="success" hoverColor="error">
+          <Tag onClick={() => removeFilter(tag)} color="success" hoverColor="error" key={tag}>
             {tag}
           </Tag>
         ))}
       </div>
       <div className="flex flex-row flex-wrap gap-2">
         {orderBy(list, ['name'], ['asc']).map((set) => (
-          <div className="w-full lg:w-96">
+          <div className="w-full lg:w-96" key={set.id}>
             <CuratedSetCandidate
               href={`/new/pattern/${design}/cset/${set.id}`}
               set={set}
@@ -124,7 +123,7 @@ export const CuratedSetPicker = ({ design, language }) => {
 
 export const UserSetPicker = ({ design, t, language }) => {
   // Hooks
-  const { account, token } = useAccount()
+  const { token } = useAccount()
   const backend = useBackend(token)
 
   // State
@@ -160,7 +159,7 @@ export const UserSetPicker = ({ design, t, language }) => {
         <>
           <div className="flex flex-row flex-wrap gap-2">
             {orderBy(sets, ['name'], ['asc']).map((set) => (
-              <div className="w-full lg:w-96">
+              <div className="w-full lg:w-96" key={set.id}>
                 <SetCandidate set={set} requiredMeasies={measurements[design]} design={design} />
               </div>
             ))}

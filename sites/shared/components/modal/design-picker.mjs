@@ -1,25 +1,9 @@
 // Dependencies
-import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
-import Link from 'next/link'
 // Components
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 
 export const ns = ['designs']
-
-const btnClasses = {
-  dflt:
-    'btn w-full mt-2 btn-secondary ' +
-    'flex flex-row flex-nowrap items-center gap-4 py-4 h-auto ' +
-    'border border-secondary justify-start text-left bg-opacity-30',
-  active:
-    'btn-ghost bg-secondary hover:bg-secondary ' + 'hover:bg-opacity-30 hover:border-secondary',
-  inactive:
-    'hover:bg-opacity-20 hover:bg-secondary btn-ghost ' +
-    'border border-secondary hover:border hover:border-secondary',
-}
-const spanClasses =
-  'p-2 w-8 h-8 shrink-0 rounded-full text-center p-0 py-2 bg-secondary text-secondary-content'
 
 export const ModalDesignPicker = ({
   modalWrapperProps = {},
@@ -41,6 +25,7 @@ export const ModalDesignPicker = ({
         <div className="flex flex-row p-4 w-full flex-wrap gap-2">
           {designs.map((d) => (
             <button
+              key={d}
               className={`btn w-64 btn-secondary flex flex-col flex-nowrap items-start
               gap-2 py-2 h-auto border border-secondary justify-start text-left bg-opacity-30
               hover:bg-opacity-20 hover:bg-secondary btn-ghost

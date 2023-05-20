@@ -9,7 +9,6 @@ import {
   RedditIcon,
   TwitterIcon,
   OpenSourceIcon,
-  CcByIcon,
   YouTubeIcon,
 } from 'shared/components/icons.mjs'
 import { colors } from 'shared/components/wordmark.mjs'
