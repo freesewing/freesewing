@@ -2,7 +2,7 @@
 title: Taille de la marge de couture
 ---
 
-Ce [Réglage de base][core-settings] contrôle la taille de base de votre couture.  En d'autres termes, la marge de couture par défaut sera de cette taille. Other allowance that is intended to be wider, like hem allowance, will be a multiple of this size.
+Ce [Réglage de base][core-settings] contrôle la taille de base de votre couture.  En d'autres termes, la marge de couture par défaut sera de cette taille. Toute autre marge destinée à être plus large, comme la marge d'ourlet, sera un multiple de cette taille.
 
 <Note>
 
