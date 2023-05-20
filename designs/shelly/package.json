@@ -52,7 +52,9 @@
   "dependencies": {},
   "devDependencies": {
     "mocha": "10.2.0",
-    "chai": "4.3.7"
+    "chai": "4.3.7",
+    "@freesewing/models": "3.0.0-alpha.9",
+    "@freesewing/plugin-timing": "3.0.0-alpha.9"
   },
   "files": [
     "dist/*",
