@@ -1,11 +1,11 @@
 ---
-title: Render Engine
+title: Moteur de Rendu
 ---
 
-This setting allows you to choose how your pattern will be rendered. In other words, how it will be drawn on the screen.  There are two options:
+Ce paramètre vous permet de choisir le mode de rendu de votre motif. Dans d'autres, c'est-à-dire la façon dont il sera dessiné à l'écran.  Vous avez 2 options :
 
-- `React` allows for more interactivity, and is optimized for displaying patterns on-screen
-- `SVG` does not allow interactivity like the `React` option does. Instead it is optimized for printing
+- `Réagir` permet plus d'interactivité et est optimisé pour l'affichage des patrons à l'écran
+- `SVG` ne permet pas d'interactivité comme l'option `Reaction` le fait. Au lieu de cela, il est optimisé pour l'impression
 
-By default, this website only uses SVG when you are exporting your pattern. While you are generating and tweaking your pattern, we use React, unless you use this setting to change that to SVG.
+Par défaut, ce site web n'utilise que le format SVG lorsque vous exportez votre motif. Pendant que vous générez et peaufinez votre modèle, nous utilisons Reaction, à moins que vous n'utilisiez ce paramètre pour le changer en SVG.
 
