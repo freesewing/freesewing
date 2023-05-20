@@ -1,9 +1,9 @@
 ---
-title: Draft for high bust
+title: Teken voor hoge buste
 ---
 
 Draft the pattern for the high bust measurement (if available) rather than the (full) chest. This will result in a more fitted garment for people with breasts.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_draftforhighbust_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](aaron_draftforhighbust_sample.svg "Effect van deze optie op het patroon")
