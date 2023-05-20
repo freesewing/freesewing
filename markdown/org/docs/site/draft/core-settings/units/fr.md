@@ -1,5 +1,5 @@
 ---
-title: Units
+title: Unités
 ---
 
 This controls the units used on your pattern. FreeSewing supports both metric and imperial units.
