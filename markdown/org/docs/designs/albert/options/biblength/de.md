@@ -2,8 +2,8 @@
 title: "Bib length"
 - - -
 
-Controls the length of the _bib_ part of your apron.
+Steuert die Länge des _Bib_ Teils deiner Schürze.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](albert_biblength_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](albert_biblength_sample.svg "Effekt dieser Variable auf das Schnittmuster")
