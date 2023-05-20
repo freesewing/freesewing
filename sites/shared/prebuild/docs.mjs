@@ -124,10 +124,10 @@ export const prebuildDocs = async (site) => {
       }
       const intros = {}
       intros[lang] = await mdIntro(lang, site, slug)
-      if (process.env.GENERATE_OG_IMAGES) {
-        // Create og image
-        await generateOgImage({ lang, site, slug, title: meta.data.title, intro: intros[lang] })
-      }
+      //if (process.env.GENERATE_OG_IMAGES) {
+      //  // Create og image
+      //  await generateOgImage({ lang, site, slug, title: meta.data.title, intro: intros[lang] })
+      //}
     }
   }
 
