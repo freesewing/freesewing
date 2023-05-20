@@ -16,10 +16,3 @@ la documentation pour les développeurs/contributeurs, veuillez plutôt vous ré
 
 </Tip>
 
-<Fixme>
-
-Nous devrions diataxiser nos documents
-
-</Fixme>
-
-
