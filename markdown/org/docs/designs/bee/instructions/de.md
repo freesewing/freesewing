@@ -123,6 +123,6 @@ You only need to do this step if making the band tie variant.
 
 - Thread the band tie through the gaps along the bottom edge of the cups, making sure the front sides of the cups are in the centre and that the main and lining sides are on the respective side.
 
-### Step 5: Enjoy!
+### Schritt 5: Viel Spaß mit deinem neuen Shirt!
 
 Hooray, your Bee Bikini Top is finished!
