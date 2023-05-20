@@ -42,7 +42,7 @@ export const PageWrapper = (props) => {
   //const [theme, setTheme] = useTheme()
   const [currentTheme, setCurrentTheme] = useState()
   const [navupdates, setNavupdates] = useState(0)
-  useEffect(() => setCurrentTheme(theme), [currentTheme, theme])
+  useEffect(() => setCurrentTheme(theme), [currentTheme])
 
   /*
    * Update navigation context with title and path
