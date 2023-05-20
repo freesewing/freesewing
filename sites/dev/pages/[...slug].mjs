@@ -1,5 +1,5 @@
 // Used in static paths
-import mdxMeta from 'site/prebuild/mdx.en.js'
+import { mdxPaths } from 'site/prebuild/mdx-paths.en.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Hooks
@@ -92,14 +92,12 @@ export async function getStaticProps({ params }) {
  *
  * On this page, it is returning a list of routes (think URLs) for all
  * the mdx (markdown) content.
- * That list comes from mdxMeta, which is build in the prebuild step
- * and contains paths, titles, and intro for all markdown.
  *
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticPaths() {
   return {
-    paths: Object.keys(mdxMeta).map((slug) => '/' + slug),
+    paths: mdxPaths.map((slug) => '/' + slug),
     fallback: false,
   }
 }

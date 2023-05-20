@@ -1,3 +1,4 @@
+import fs from 'fs'
 import path from 'path'
 import rdir from 'recursive-readdir'
 import { unified } from 'unified'
@@ -8,6 +9,7 @@ import remarkFrontmatterExtractor from 'remark-extract-frontmatter'
 import { readSync } from 'to-vfile'
 import yaml from 'js-yaml'
 import { mdIntro } from './md-intro.mjs'
+import { header } from './org.mjs'
 
 /*
  * There's an issue in crowdin where it changes the frontmatter marker:
@@ -128,6 +130,23 @@ export const prebuildDocs = async (site) => {
       //}
     }
   }
+
+  // Write files with MDX paths
+  let allPaths = ``
+  for (const lang of locales) {
+    fs.writeFileSync(
+      path.resolve('..', site, 'prebuild', `mdx-paths.${lang}.mjs`),
+      `${header}export const mdxPaths = ${JSON.stringify(Object.keys(pages[lang]))}`
+    )
+    allPaths += `import { mdxPaths as ${lang} } from './mdx-paths.${lang}.mjs'` + '\n'
+  }
+  // Write umbrella file
+  fs.writeFileSync(
+    path.resolve('..', site, 'prebuild', `mdx-paths.mjs`),
+    `${allPaths}${header}
+
+export const mdxPaths = { ${locales.join(',')} }`
+  )
 
   return pages
 }
