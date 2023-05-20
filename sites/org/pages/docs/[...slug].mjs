@@ -39,7 +39,7 @@ export const Loading = () => (
   <Spinner className="w-24 h-24 color-primary animate-spin m-auto mt-8" />
 )
 
-export const HeadInfo = ({ frontmatter, locale, slug }) => (
+const HeadInfo = ({ frontmatter, locale, slug }) => (
   <Head>
     <meta property="og:title" content={frontmatter.title} key="title" />
     <meta property="og:type" content="article" key="type" />
@@ -54,7 +54,7 @@ export const HeadInfo = ({ frontmatter, locale, slug }) => (
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:url" content={`https://freesewing.org/${slug}`} key="url" />
-    <meta property="og:locale" content="en" key="locale" />
+    <meta property="og:locale" content={locale} key="locale" />
     <meta property="og:site_name" content="freesewing.org" key="site" />
     <title>{frontmatter.title} - FreeSewing.org</title>
   </Head>

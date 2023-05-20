@@ -5,9 +5,8 @@ import { useState, useEffect } from 'react'
 // Components
 import { ns } from 'shared/components/wrappers/page.mjs'
 import { components } from 'shared/components/mdx/index.mjs'
-import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 //import { TocWrapper } from 'shared/components/wrappers/toc.mjs'
-import { Loading, HeadInfo, Page } from './[...slug].mjs'
+import { Loading, Page } from './[...slug].mjs'
 
 const DocsHomePage = ({ page, slug, locale }) => {
   // State
