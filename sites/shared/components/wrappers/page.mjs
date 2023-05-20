@@ -1,6 +1,6 @@
 // Dependencies
 import React, { useState, useEffect, useContext } from 'react'
-import { useHotkeys } from 'react-hotkeys-hook'
+//import { useHotkeys } from 'react-hotkeys-hook'
 // Hooks
 import { useTheme } from 'shared/hooks/use-theme.mjs'
 // Components

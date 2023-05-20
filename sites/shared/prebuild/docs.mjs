@@ -1,7 +1,5 @@
 import path from 'path'
-import fs from 'fs'
 import rdir from 'recursive-readdir'
-import mustache from 'mustache'
 import { unified } from 'unified'
 import remarkParser from 'remark-parse'
 import remarkCompiler from 'remark-stringify'
