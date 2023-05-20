@@ -39,10 +39,10 @@ export const PageWrapper = (props) => {
    * This forces a re-render upon initial bootstrap of the app
    * This is needed to avoid hydration errors because theme can't be set reliably in SSR
    */
-  //const [theme, setTheme] = useTheme()
+  const [theme] = useTheme()
   const [currentTheme, setCurrentTheme] = useState()
   const [navupdates, setNavupdates] = useState(0)
-  useEffect(() => setCurrentTheme(theme), [currentTheme])
+  useEffect(() => setCurrentTheme(theme), [currentTheme, theme])
 
   /*
    * Update navigation context with title and path
