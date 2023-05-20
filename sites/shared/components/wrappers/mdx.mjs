@@ -101,7 +101,7 @@ const MetaData = ({ authors = [], maintainers = [], updated = '20220825', locale
   </div>
 )
 
-export const MdxWrapper = ({ MDX, frontmatter = {}, components = {} }) => {
+export const MdxWrapper = ({ MDX = false, frontmatter = {}, components = {}, children = [] }) => {
   const { t } = useTranslation('docs')
   const allComponents = { ...baseComponents, ...components }
   const { locale, slug } = useContext(NavigationContext)
@@ -116,7 +116,7 @@ export const MdxWrapper = ({ MDX, frontmatter = {}, components = {} }) => {
         lastUpdated={updates.lastUpdates}
         {...{ locale, slug, t }}
       />
-      <MDX components={allComponents} />
+      {MDX ? <MDX components={allComponents} /> : children}
     </div>
   )
 }

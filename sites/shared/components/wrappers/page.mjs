@@ -30,6 +30,12 @@ export const PageWrapper = (props) => {
   const pageTitle = props.t ? props.t : props.title ? props.title : null
 
   /*
+   * Contexts
+   */
+  const { modalContent } = useContext(ModalContext)
+  const { setNavigation, slug } = useContext(NavigationContext)
+
+  /*
    * This forces a re-render upon initial bootstrap of the app
    * This is needed to avoid hydration errors because theme can't be set reliably in SSR
    */
@@ -39,24 +45,19 @@ export const PageWrapper = (props) => {
   useEffect(() => setCurrentTheme(theme), [currentTheme, theme])
 
   /*
-   * Contexts
-   */
-  const { modalContent } = useContext(ModalContext)
-  const { setNavigation } = useContext(NavigationContext)
-
-  /*
    * Update navigation context with title and path
    */
   useEffect(() => {
-    if (navupdates < 5) {
+    // Only update if a new page was loaded
+    if (path.join('/') !== 'slug') {
       setNavigation({
         title: pageTitle,
         locale,
         path,
       })
       setNavupdates(navupdates + 1)
-    } else console.warn('Suppressing navigation update in page wrapper to avoid render loop')
-  }, [path, pageTitle])
+    }
+  }, [path, pageTitle, slug])
 
   /*
    * Hotkeys (keyboard actions)

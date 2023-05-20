@@ -42,14 +42,6 @@ sites/lab/pages
 # but not the indexes
 !sites/lab/pages/*/index.js
 
-# dev auto-generated pages
-sites/dev/pages/*
-# But not these
-!sites/dev/pages/404.mjs
-!sites/dev/pages/_app.mjs
-!sites/dev/pages/contact.mjs
-!sites/dev/pages/index.mjs
-
 # org auto-generated pages
 sites/org/pages/docs/*
 sites/org/pages/new/pattern/*
