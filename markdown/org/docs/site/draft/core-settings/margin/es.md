@@ -1,5 +1,5 @@
 ---
-title: Margin
+title: Margen
 ---
 
 The margin setting controls how much space will be added around each pattern part when calculating the pattern layout.
