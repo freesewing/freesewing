@@ -2,7 +2,7 @@
 title: Mise à l'échelle
 ---
 
-The scale settings allow you to scale those parts of a pattern that do not scale with measurements. Things like logos, line widths, font sizes, and so on.
+Les paramètres d'échelle vous permettent de mettre à l'échelle les parties d'un motif qui ne s'adaptent pas aux mesures. Des éléments tels que les logos, la largeur des lignes, la taille des polices, etc.
 
-This setting was added at the requests of people who like to use our patterns to make doll clothes. When generating such a small pattern, the arrowheads, titles, and so on tend to obscure much of the pattern. This setting allows you to scale them down or -- if you so wich -- scale them up.
+Ce paramètre a été ajouté à la demande de personnes qui aiment utiliser nos patrons pour confectionner des vêtements de poupée. Lorsque l'on génère un motif aussi petit, les pointes de flèches, les titres, etc. ont tendance à masquer une grande partie du motif. Ce paramètre vous permet de les réduire ou, si vous le souhaitez, de les augmenter.
 
