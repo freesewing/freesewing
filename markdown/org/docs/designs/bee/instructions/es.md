@@ -28,7 +28,7 @@ The notches in this pattern act more like dots so **do not** clip them to mark t
 
 - With right sides together, sew one main neck tie to one lining neck tie leaving one of the short edges open.
 - Trim the seam allowances and clip the corners.
-- Turn inside out. Press.
+- Turn inside out. Alísala.
 
 <Note>Repeat this for the the remaining neck tie pieces</Note>
 
@@ -42,7 +42,7 @@ The notches in this pattern act more like dots so **do not** clip them to mark t
 - (Optional) Fold to the wrong side and _edgestitch_ the seam allowance down between notches on the front and side seams. Do not sew the allowances together.
 - With good sides together, sew the lining to the main fabric along the bottom, leaving a gap between the side notches making sure to reinforce the stitch at the either end.
 - Trim the seam allowances of the sewn edges whilst leaving the seam allowance between the notches. Clip the corners. You may also need to clip the curved seams.
-- Turn inside out by pulling the neck tie through one of the gaps. Press.
+- Turn inside out by pulling the neck tie through one of the gaps. Alísala.
 - (Optional) _edgestitch_ the top, sides and bottom of the cup leaving the gaps between the notches open.
 - Stitch along casing line to create band channel.
 
@@ -111,18 +111,18 @@ You only need to do this step if making the band tie variant.
 - Fold the band tie piece in half lengthwise, right sides and raw edges together.
 - Sew along the raw edges, leaving one of the short ends open.
 - Trim the seam allowances and clip the corners.
-- Turn inside out. Press.
+- Turn inside out. Alísala.
 
 #### Band Tie Two Colours Method
 
 - With right sides together, sew the main band tie to the lining neck tie leaving one of the short edges open.
 - Trim the seam allowances and clip the corners.
-- Turn inside out. Press.
+- Turn inside out. Alísala.
 
 ### Step 4: Putting it all together.
 
 - Thread the band tie through the gaps along the bottom edge of the cups, making sure the front sides of the cups are in the centre and that the main and lining sides are on the respective side.
 
-### Step 5: Enjoy!
+### Paso 5: ¡Disfrútalo!
 
 Hooray, your Bee Bikini Top is finished!
