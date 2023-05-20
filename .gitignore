@@ -43,7 +43,6 @@ sites/lab/pages
 !sites/lab/pages/*/index.js
 
 # org auto-generated pages
-sites/org/pages/docs/*
 sites/org/pages/new/pattern/*
 
 # Node dependencies
