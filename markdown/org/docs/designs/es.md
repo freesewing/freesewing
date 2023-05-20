@@ -1,5 +1,5 @@
 ---
-title: Designs
+title: Diseños
 order: 300
 ---
 
