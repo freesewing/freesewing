@@ -14,7 +14,7 @@ When drafting or designing patterns or garments, it is common practice to start 
 
 Adapting the pattern for a different model is a tedious task, which is why patterns are graded up and down to cover different sizes.
 
-But in a parametric sewing pattern, adapting to different sizes or models _just works_.
+Pero en un patrón de coser paramétrico, adaptarse a diferentes tallas o modelos _simplemente funciona_.
 
 #### ¿Qué puede hacer FreeSewing por mí?
 
