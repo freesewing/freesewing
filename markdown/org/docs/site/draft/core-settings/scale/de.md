@@ -1,5 +1,5 @@
 ---
-title: Scale
+title: Skalierung
 ---
 
 The scale settings allow you to scale those parts of a pattern that do not scale with measurements. Things like logos, line widths, font sizes, and so on.
