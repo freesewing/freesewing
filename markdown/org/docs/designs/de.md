@@ -1,5 +1,5 @@
 ---
-title: Designs
+title: Entwurf
 order: 300
 ---
 
