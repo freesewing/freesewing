@@ -48,7 +48,8 @@
     "shared/**/*",
     "templates/**/*",
     "index.mjs",
-    "package.json"
+    "package.json",
+    "data.mjs"
   ],
   "publishConfig": {
     "access": "public",
