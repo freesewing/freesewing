@@ -131,7 +131,11 @@ PatternRenderer.prototype.__pack = function () {
   }
   if (settings[activeSet].layout === true) {
     // some plugins will add a width constraint to the settings, but we can safely pass undefined if not
-    let size = pack(bins, { inPlace: true, maxWidth: settings[0].maxWidth })
+    let size = pack(bins, {
+      inPlace: true,
+      maxWidth: settings[0].maxWidth,
+      strictMax: settings[0].maxWidth ? true : false,
+    })
     this.autoLayout.width = size.width
     this.autoLayout.height = size.height
 
