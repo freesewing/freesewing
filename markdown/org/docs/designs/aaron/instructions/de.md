@@ -61,7 +61,7 @@ Das Erste, was wir tun müssen, ist, zu entscheiden, wo wir unser Einfassband an
 
 ### Platziere den Beginn deines Bandes
 
-![Place (the start of) your binding](step03b.png)
+![Platziere den Beginn deines Bandes](step03b.png)
 
 Lege dein A-Shirt mit der guten Seite nach oben und platzieren das Einfassband mit der guten Seite nach unten (also gute Seiten zusammen).
 
