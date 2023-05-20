@@ -1,6 +1,6 @@
-- - -
+---
 title: "Armhole drop"
-- - -
+---
 
 ![De diepte van het armsgat bij Aaron](./armholedrop.svg)
 

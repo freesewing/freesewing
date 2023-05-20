@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar angle"
-- - -
+---
 
 ![Angle du col](collarangle.svg)
 

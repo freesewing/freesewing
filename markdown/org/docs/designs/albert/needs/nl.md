@@ -1,6 +1,6 @@
-- - -
+---
 title: "Albert apron: What You Need"
-- - -
+---
 
 Om Albert te maken heb je het volgende nodig:
 

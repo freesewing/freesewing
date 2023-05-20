@@ -1,6 +1,6 @@
-- - -
+---
 title: "Gilet Wahid : ce dont vous avez besoin"
-- - -
+---
 
 Pour faire Wahid, vous aurez besoin des fournitures suivantes :
 

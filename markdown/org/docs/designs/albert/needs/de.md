@@ -1,6 +1,6 @@
-- - -
+---
 title: "Albert apron: What You Need"
-- - -
+---
 
 Um Albert zu erstellen, benötigst du Folgendes:
 

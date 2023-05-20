@@ -1,6 +1,6 @@
-- - -
+---
 title: "Poche pénienne"
-- - -
+---
 
 ![L'option poche pénienne pour Bruce](./bulge.svg)
 

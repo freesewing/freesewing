@@ -1,6 +1,6 @@
-- - -
+---
 title:"Échancrure cou"
-- - -
+---
 
 ![Échancrure cou](neckinset.svg)
 

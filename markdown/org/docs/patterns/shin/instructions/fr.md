@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shin swim trunks: Sewing Instructions"
-- - -
+---
 
 > ### Images à venir bientôt
 > 

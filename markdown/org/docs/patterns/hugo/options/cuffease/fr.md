@@ -1,6 +1,6 @@
-- - -
+---
 titre: "aisance de manche"
-- - -
+---
 
 This option controls the ease at your wrist.
 

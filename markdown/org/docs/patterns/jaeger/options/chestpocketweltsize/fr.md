@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chest pocket welt size"
-- - -
+---
 
 ![Taille du revers de la poche poitrine](chestpocketweltsize.svg)
 

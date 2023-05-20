@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shoulderstrap placement"
-- - -
+---
 
 ![Opción de colocación de la correa de hombro en Aaron](./shoulderstrapplacement.svg)
 

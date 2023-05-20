@@ -1,6 +1,6 @@
-- - -
+---
 title: "Weitenzugabe Hüfte"
-- - -
+---
 
 ![Die Hüftleiste-Option auf Aaron](./hipsease.svg)
 

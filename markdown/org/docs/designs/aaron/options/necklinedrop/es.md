@@ -1,6 +1,6 @@
-- - -
+---
 title: "Neckline drop"
-- - -
+---
 
 ![La opción de soltar línea de cuello en Aaron](./necklinedrop.svg)
 

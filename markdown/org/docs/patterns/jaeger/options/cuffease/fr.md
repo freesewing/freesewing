@@ -1,6 +1,6 @@
-- - -
+---
 titre: "aisance de manche"
-- - -
+---
 
 ![Aisance de poignet](cuffease.svg)
 

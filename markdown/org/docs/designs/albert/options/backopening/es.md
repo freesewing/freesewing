@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back opening"
-- - -
+---
 
 Controla la cantidad de apertura en la parte trasera del escritorio.
 

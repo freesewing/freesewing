@@ -1,6 +1,6 @@
-- - -
+---
 title: "Across back factor"
-- - -
+---
 
 ![Largeur du dos](acrossbackfactor.svg)
 

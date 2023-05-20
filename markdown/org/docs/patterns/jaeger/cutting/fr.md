@@ -1,6 +1,6 @@
-- - -
+---
 title: "Jaeger jacket: Cutting Instructions"
-- - -
+---
 
 - **Tissu principal**
   - Couper **2 faces** (partie 1)

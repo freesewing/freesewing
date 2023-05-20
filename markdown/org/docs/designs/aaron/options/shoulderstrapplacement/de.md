@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shoulderstrap placement"
-- - -
+---
 
 ![Die Option der Schultergurtplatzierung auf Aaron](./shoulderstrapplacement.svg)
 
