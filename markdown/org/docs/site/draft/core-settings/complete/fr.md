@@ -1,10 +1,10 @@
 ---
-title: Pattern Details
+title: Détails du modèle
 ---
 
 <Fixme> 
 
-This setting is likely to be revised prior to the release of v3
+Ce paramètre sera probablement révisé avant la sortie de la v3
 
 </Fixme>
 
