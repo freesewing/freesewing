@@ -1,16 +1,16 @@
-canvas: Canvas
-cut: Cut
+canvas: Lona
+cut: Cortar
 cuttingLayout: Suggested Cutting Layout
-fabric: Main Fabric
+fabric: Tela principal
 fabricSize: "{length} of {width} wide material"
 heavyCanvas: Heavy Canvas
-interfacing: Interfacing
-lining: Lining
+interfacing: Interfaz
+lining: Terminal
 lmhCanvas: Light to Medium Hair Canvas
 mirrored: mirrored
-onFoldLower: on the fold
+onFoldLower: en el pliegue
 onFoldAndBias: folded on the bias
 onBias: on the bias
-plastic: Plastic
-ribbing: Ribbing
+plastic: Plástico
+ribbing: Tejido acanalado
 edgeOfFabric: Edge of Fabric
