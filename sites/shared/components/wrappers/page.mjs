@@ -63,13 +63,13 @@ export const PageWrapper = (props) => {
    * Hotkeys (keyboard actions)
    */
   // Trigger search with /
-  useHotkeys('/', (evt) => {
-    evt.preventDefault()
-    setSearch(true)
-  })
+  //useHotkeys('/', (evt) => {
+  //  evt.preventDefault()
+  //  setSearch(true)
+  //})
 
   // Search state
-  const [search, setSearch] = useState(false)
+  //const [search, setSearch] = useState(false)
 
   // Helper object to pass props down (keeps things DRY)
   const childProps = { footer, header, pageTitle }
