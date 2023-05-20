@@ -89,25 +89,17 @@ export const fileToSlug = (file, site, lang) =>
 export const prebuildDocs = async (site) => {
   // Say hi
   console.log()
-  console.log(`Prebuilding docs pages for freesewing.${site}`)
+  console.log(`Compiling list of docs pages for freesewing.${site}`)
 
   // Setup MDX root path
-
   const root = ['..', '..', 'markdown', site]
   if (site === 'org') root.push('docs')
   const mdxRoot = path.resolve(...root)
-
-  // Load page template
-  const template = fs.readFileSync(
-    path.resolve('..', 'shared', 'page-templates', `docs.${site}.mjs.mustache`),
-    'utf-8'
-  )
 
   // Languages
   const locales = site === 'dev' ? ['en'] : ['en', 'fr', 'es', 'nl', 'de']
 
   const pages = {}
-
   // Loop over languages
   for (const lang of locales) {
     pages[lang] = {}
@@ -135,25 +127,6 @@ export const prebuildDocs = async (site) => {
       if (process.env.GENERATE_OG_IMAGES) {
         // Create og image
         await generateOgImage({ lang, site, slug, title: meta.data.title, intro: intros[lang] })
-      }
-
-      // Things to only do for English
-      if (lang === 'en') {
-        // Write page to disk
-        const dir = path.resolve('..', site, 'pages', ...slug.split('/'))
-        fs.mkdirSync(dir, { recursive: true })
-        fs.writeFileSync(
-          path.resolve(dir, `index.mjs`),
-          mustache.render(template, {
-            slug,
-            slugArray: JSON.stringify(slug.split('/')),
-            introEN: intros.en || 'fixme',
-            introES: intros.es || 'fixme',
-            introDE: intros.de || 'fixme',
-            introFR: intros.fr || 'fixme',
-            introNL: intros.nl || 'fixme',
-          })
-        )
       }
     }
   }

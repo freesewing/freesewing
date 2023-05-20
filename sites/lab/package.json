@@ -21,7 +21,8 @@
     "develop": "next dev -p 8000",
     "e2e": "yarn playwright test",
     "lint": "next lint",
-    "prebuild": "SITE=lab node --experimental-json-modules ../shared/prebuild/index.mjs",
+    "buildsitedeps": "cd ../../ && yarn buildall && cd -",
+    "prebuild": "yarn buildsitedeps && SITE=lab node --experimental-json-modules ../shared/prebuild/index.mjs",
     "start": "yarn prebuild && yarn dev"
   },
   "peerDependencies": {},
