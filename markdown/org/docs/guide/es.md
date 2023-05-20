@@ -12,10 +12,10 @@ Reading this guide will take about 10 minutes of your time now, to save you a bu
 - We'll tell you [what FreeSewing is][1] and [what freesewing.org is][2]
 - We'll tell you about our [made-to-measure sewing patterns][3] and what we mean by [_with breasts_ vs _without breasts_][4]
 - We'll cover [why you need an account][5] what we mean by [your people][6] or [your patterns][7], and we talk about [measurements][8]
-- We'll go over [how you can configure your patterns][9] with design and pattern options
-- Finally, we'll tell you [where you can get help][10] if you get stuck.
+- Te diremos [cómo puedes configurar tus patrones][9] con las opciones de diseño y de patrón
+- Finalmente, te diremos [dónde puedes obtener ayuda][10] si te quedas atascade.
 
-Sounds good? Then let's dive right in:
+¿Suena bien? Pues entremos de lleno:
 
 <ReadMore />
 
