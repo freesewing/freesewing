@@ -14,6 +14,7 @@ function draftHolmesEar({
   paperless,
   macro,
   absoluteOptions,
+  store,
   part,
 }) {
   // Design pattern here
@@ -34,9 +35,13 @@ function draftHolmesEar({
     .hide()
   paths.hemBase = new Path().move(points.bottomFlipped).line(points.bottom).hide()
   paths.seam = paths.saBase.join(paths.hemBase).close()
+
+  macro('grainline', { from: points.top, to: new Point(0, points.bottom.y) })
+
+  store.cutlist.addCut({ cut: 4 })
+
   // Complete?
   if (complete) {
-    macro('grainline', { from: points.top, to: new Point(0, points.bottom.y) })
     points.logo = new Point(-0.5 * points.bottom.x, 0.75 * points.bottom.y)
     snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.7)
     points.title = new Point(0.3 * points.bottom.x, 0.75 * points.bottom.y)
