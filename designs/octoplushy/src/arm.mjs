@@ -329,6 +329,6 @@ export const armSection1 = {
 }
 export const armSection2 = {
   name: 'octoplushy.armSection2',
-  after: headSection2,
+  after: [headSection2, headSection1],
   draft: (params) => octoplushyArmSection(1, params),
 }
