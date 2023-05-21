@@ -1,5 +1,5 @@
 // Used in static paths
-import mdxPaths from 'site/prebuild/mdx-paths.mjs'
+import { mdxPaths } from 'site/prebuild/mdx-paths.en.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Hooks
