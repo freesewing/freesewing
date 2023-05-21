@@ -17,6 +17,7 @@ import {
   I18nIcon,
   WrenchIcon,
   FreeSewingIcon,
+  HeartIcon,
 } from 'shared/components/icons.mjs'
 import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
 
@@ -25,13 +26,13 @@ export const ns = ['sections']
 // List of icons matched to top-level slug
 export const icons = {
   // FreeSewing.dev
-  developers: (className = '') => <CodeIcon className={className} />,
-  designers: (className = '') => <DesignIcon className={className} />,
-  writers: (className = '') => <DocsIcon className={className} />,
-  translators: (className = '') => <I18nIcon className={className} />,
-  infrastructure: (className = '') => <WrenchIcon className={className} stroke={1.5} />,
-  teamwork: (className = '') => <CommunityIcon className={className} stroke={1.5} />,
+  api: (className = '') => <DocsIcon className={className} />,
+  design: (className = '') => <DesignIcon className={className} />,
+  contribute: (className = '') => <CodeIcon className={className} />,
+  i18n: (className = '') => <I18nIcon className={className} />,
+  infra: (className = '') => <WrenchIcon className={className} stroke={1.5} />,
   about: (className = '') => <FreeSewingIcon className={className} stroke={1.5} />,
+  support: (className = '') => <HeartIcon className={className} stroke={1.5} fill />,
 
   // FreeSewing.org
   account: (className = '') => <UserIcon className={className} />,

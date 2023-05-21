@@ -16,6 +16,7 @@ import {
   DocsIcon,
   WrenchIcon,
   FreeSewingIcon,
+  HeartIcon,
 } from 'shared/components/icons.mjs'
 import { Ribbon } from 'shared/components/ribbon.mjs'
 import { ModalThemePicker, ns as themeNs } from 'shared/components/modal/theme-picker.mjs'
@@ -33,6 +34,14 @@ export const ns = ['header', 'sections', ...themeNs]
  * for translators
  * how to work as a team
  * about freesewing
+ *
+ *
+ * designers
+ * contributors
+ * api
+ * translation
+ * infra
+ * content
  * */
 
 const NavIcons = ({ setModal, setSearch }) => {
@@ -45,53 +54,43 @@ const NavIcons = ({ setModal, setSearch }) => {
         <MenuIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
-      <NavButton href="/developers" label="Developers" color={colors[1]}>
-        <CodeIcon className={iconSize} />
-      </NavButton>
-      <NavButton
-        href="/designers"
-        label="Designers"
-        color={colors[2]}
-        extraClasses="hidden lg:flex"
-      >
-        <DesignIcon className={iconSize} />
-      </NavButton>
-      <NavButton href="/writers" label="Writers" color={colors[3]} extraClasses="hidden lg:flex">
+      <NavButton href="/api" label="API Docs" color={colors[1]} extraClasses="hidden lg:flex">
         <DocsIcon className={iconSize} />
       </NavButton>
-      <NavButton
-        href="/translators"
-        label="Translators"
-        color={colors[4]}
-        extraClasses="hidden lg:flex"
-      >
+      <NavButton href="/design" label="Design" color={colors[2]} extraClasses="hidden lg:flex">
+        <DesignIcon className={iconSize} />
+      </NavButton>
+      <NavButton href="/contribute" label="Contribute" color={colors[3]}>
+        <CodeIcon className={iconSize} />
+      </NavButton>
+      <NavButton href="/i18n" label="Translate" color={colors[4]} extraClasses="hidden lg:flex">
         <I18nIcon className={iconSize} />
       </NavButton>
       <NavButton
-        href="/infrastructure"
+        href="/infra"
         label="Infrastrucure"
         color={colors[5]}
         extraClasses="hidden lg:flex"
       >
         <WrenchIcon className={iconSize} stroke={1.5} />
       </NavButton>
-      <NavButton href="/teamwork" label="Teamwork" color={colors[6]} extraClasses="hidden lg:flex">
-        <CommunityIcon className={iconSize} stroke={1.5} />
+      <NavSpacer />
+      <NavButton href="/about" label="About" color={colors[6]}>
+        <FreeSewingIcon className={iconSize} />
+      </NavButton>
+      <NavButton href="/support" label="Support" color={colors[7]}>
+        <HeartIcon className={iconSize} fill />
       </NavButton>
       <NavSpacer />
       <NavButton
         onClick={() => setModal(<ModalThemePicker />)}
         label={t('header:theme')}
-        color={colors[7]}
+        color={colors[8]}
       >
         <ThemeIcon className={iconSize} />
       </NavButton>
-      <NavButton onClick={() => setSearch(true)} label={t('header:search')} color={colors[8]}>
+      <NavButton onClick={() => setSearch(true)} label={t('header:search')} color={colors[9]}>
         <SearchIcon className={iconSize} />
-      </NavButton>
-      <NavSpacer />
-      <NavButton href="/about" label="About" color={colors[9]}>
-        <FreeSewingIcon className={iconSize} />
       </NavButton>
     </>
   )
