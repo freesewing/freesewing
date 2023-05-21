@@ -42,7 +42,7 @@ export const ReadMore = ({
   level = 0,
   pretty = false,
 }) => {
-  const { nav, slug } = useContext(NavigationContext)
+  const { nav } = useContext(NavigationContext)
   const { siteNav } = useNavigation()
 
   // Deal with recurse not being a number
@@ -54,7 +54,7 @@ export const ReadMore = ({
   // Deal with root being passed as true
   if (root === true) root = ''
 
-  const tree = getRoot[site](root, siteNav)
+  const tree = root ? getRoot[site](root, siteNav) : nav
   const list = []
   for (const page of currentChildren(tree)) {
     list.push(
