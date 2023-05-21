@@ -19,9 +19,11 @@ function octoplushyEye(
   }
 ) {
   if (options.type != 'squid' && options.type != 'octopus') {
+    part.hide()
     return part
   }
   if (partNumber > (options.type == 'squid' ? 1 : 2)) {
+    part.hide()
     return part
   }
 
