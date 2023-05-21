@@ -60,7 +60,7 @@ export const ReadMore = ({
     list.push(
       <li key={page.s}>
         <Link href={`/${page.s}`}>
-          <span className={getClasses(level)}>{page.t}</span>
+          <span className={pretty ? getClasses(level) : ''}>{page.t}</span>
         </Link>
         {recurse ? <ReadMore root={page.s} recurse={recurse} level={level + 1} /> : null}
       </li>
