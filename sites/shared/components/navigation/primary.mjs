@@ -186,7 +186,6 @@ const SubLevel = ({ nodes = {}, active = '' }) => (
 )
 
 export const Icons = ({
-  app,
   ulClasses = '',
   linkClasses = `grow text-lg lg:text-xl py-1 text-base-content sm:text-base-content
   hover:text-secondary sm:hover:text-secondary hover:cursor-pointer
