@@ -1,4 +1,7 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
+import { front } from './front.mjs'
+import { back } from './back.mjs'
+import { raglanSleeve } from './raglansleeve.mjs'
 
 function draftNeckband({
   Path,
@@ -90,6 +93,7 @@ export const neckband = {
   name: 'shelly.neckband',
   plugins: [pluginBundle],
   draft: draftNeckband,
+  after: [front, back, raglanSleeve],
   measurements: ['neck', 'chest', 'biceps', 'wrist'],
   options: {
     // How long the neckband should be, as a percentage of the length of the neck hole.
