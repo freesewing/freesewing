@@ -22,21 +22,20 @@ const currentChildren = (current) =>
   Object.values(order(current)).filter((entry) => typeof entry === 'object')
 
 const getRoot = {
-  dev: (slug, nav) => {
-    if (!slug || slug === 'docs') return nav
-    if (slug.indexOf('/') === -1) return nav[slug]
-    return get(nav, slug.split('/'))
+  dev: (root, nav) => {
+    if (!root) return nav
+    if (root.indexOf('/') === -1) return nav[root]
+    return get(nav, root.split('/'))
   },
-  org: (slug, nav) => {
+  org: (root, nav) => {
     // Fixme: make this work for org
-    if (!slug || slug === 'docs') return nav
-    if (slug.indexOf('/') === -1) return nav[slug]
-    return get(nav, slug.split('/'))
+    if (!root) return nav
+    if (root.indexOf('/') === -1) return nav[root]
+    return get(nav, root.split('/'))
   },
 }
 
 export const ReadMore = ({
-  app,
   recurse = 0,
   root = false,
   site = 'org',
