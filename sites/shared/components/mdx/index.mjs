@@ -8,6 +8,7 @@ import { TabbedExample as Example } from './tabbed-example.mjs'
 import { HttpMethod, HttpStatusCode } from './http.mjs'
 import { ControlTip } from '../control/tip.mjs'
 import { Legend } from './legend.mjs'
+import { DocsTitle } from './docs-title.mjs'
 import { V3Wip } from '../v3-wip.mjs'
 
 export const components = (site = 'org') => {
@@ -34,6 +35,7 @@ export const components = (site = 'org') => {
     Tabs,
     ControlTip,
     Example,
+    DocsTitle: (props) => <DocsTitle {...props} site={site} />,
   }
 
   return site === 'dev'
