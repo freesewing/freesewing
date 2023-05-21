@@ -32,6 +32,9 @@ function draftHortensiaBottompanel({
     .close()
     .attr('class', 'fabric')
 
+  store.cutlist.addCut({ cut: 1 })
+  store.cutlist.addCut({ cut: 1, material: 'lining' })
+
   // Complete?
   if (complete) {
     points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
