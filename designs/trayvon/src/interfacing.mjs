@@ -8,6 +8,8 @@ function trayvonInterfacingTail(params) {
   draftTieShape(params, store.get('backTip'), absoluteOptions.knotWidth)
   paths.seam.attributes.add('class', 'interfacing')
 
+  store.cutlist.addCut({ cut: 1, material: 'interfacing' })
+
   // Complete pattern?
   if (complete) {
     macro('title', {
@@ -33,11 +35,13 @@ function trayvonInterfacingTail(params) {
 }
 
 function trayvonInterfacingTip(params) {
-  const { paths, points, macro, complete, paperless, Path, absoluteOptions } = params
+  const { paths, points, macro, complete, paperless, Path, absoluteOptions, store } = params
 
   calculateHelpers(params)
   draftTieShape(params, absoluteOptions.tipWidth, absoluteOptions.knotWidth)
   paths.seam.attributes.add('class', 'interfacing')
+
+  store.cutlist.addCut({ cut: 1, material: 'interfacing' })
 
   // Complete pattern?
   if (complete) {

@@ -41,6 +41,8 @@ function trayvonLiningTail(params) {
     .close()
     .attr('class', 'lining')
 
+  store.cutlist.addCut({ cut: 1, material: 'lining' })
+
   // Complete pattern?
   if (complete) {
     macro('title', {
@@ -72,6 +74,7 @@ function trayvonLiningTip(params) {
     sa,
     snippets,
     absoluteOptions,
+    store,
   } = params
 
   calculateHelpers(params)
@@ -91,6 +94,8 @@ function trayvonLiningTip(params) {
     .line(points.tip)
     .close()
     .attr('class', 'lining')
+
+  store.cutlist.addCut({ cut: 1, material: 'lining' })
 
   // Complete pattern?
   if (complete) {

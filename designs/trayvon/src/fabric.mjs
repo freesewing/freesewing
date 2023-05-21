@@ -14,6 +14,8 @@ function trayvonFabricTail(params) {
   draftTieShape(params, store.get('backTip') * 2.5, absoluteOptions.knotWidth * 2.5, true)
   paths.seam.attributes.add('class', 'fabric')
 
+  store.cutlist.addCut({ cut: 1 })
+
   // Complete pattern?
   if (complete) {
     macro('title', {
@@ -62,11 +64,14 @@ function trayvonFabricTip(params) {
     sa,
     snippets,
     absoluteOptions,
+    store,
   } = params
 
   calculateHelpers(params)
   draftTieShape(params, absoluteOptions.tipWidth * 2.5, absoluteOptions.knotWidth * 2.5, true)
   paths.seam.attributes.add('class', 'fabric')
+
+  store.cutlist.addCut({ cut: 1 })
 
   // Complete pattern?
   if (complete) {
