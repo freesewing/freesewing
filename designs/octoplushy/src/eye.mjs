@@ -90,6 +90,14 @@ function octoplushyEye(
       .shiftFractionTowards(points.br, 0.5)
       .shiftFractionTowards(points.bl, 0.3)
   }
+
+  // If partNumber === 0, the part is "Eye" for octopus & squid only
+  // If partNumber === 1, the part is "Pupil" for octopus & squid only
+  // If partNumber === 2, the part is "Eyebrow" for octopus only
+  if (partNumber === 2) store.cutlist.addCut({ cut: 2, material: 'color1Top' })
+  if (partNumber === 1) store.cutlist.addCut({ cut: 2, material: 'black' })
+  if (partNumber === 0) store.cutlist.addCut({ cut: 2, material: 'white' })
+
   if (complete) {
     snippets.logo = new Snippet('logo', points.logo).attr('data-scale', logoScale)
 

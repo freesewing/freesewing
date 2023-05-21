@@ -195,6 +195,13 @@ function octoplushyArmSection(
     .join(paths.topRight)
     .close()
 
+  // If partNumber === 0, the part is "Leg"
+  // If partNumber === 1, the part is "Leg (a)" for squid only
+  store.cutlist.addCut({
+    cut: partNumber === 0 ? 8 : 2,
+    material: 'color2Bottom',
+  })
+
   // Complete?
   if (complete) {
     points.logo = points.armMiddle.shiftFractionTowards(points.armBottom, 0.08)

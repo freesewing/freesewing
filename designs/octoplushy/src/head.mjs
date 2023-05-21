@@ -387,6 +387,13 @@ function octoplushyHeadSection(
     .close()
     .attr('class', 'fabric')
 
+  // If partNumber === 0, the part is "Head"
+  // If partNumber === 1, the part is "Head (a)" for squid only
+  store.cutlist.addCut({
+    cut: partNumber === 0 ? 8 : 2,
+    material: 'color1Top',
+  })
+
   // Complete?
   if (complete) {
     points.logo = points.sectionTop.shiftFractionTowards(
@@ -624,12 +631,12 @@ const options = {
 export const headSection1 = {
   name: 'octoplushy.headSection1',
   options,
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: (params) => octoplushyHeadSection(0, params),
 }
 export const headSection2 = {
   name: 'octoplushy.headSection2',
   options,
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: (params) => octoplushyHeadSection(1, params),
 }
