@@ -60,7 +60,6 @@ function octoplushyEye(
       .curve(points.rightCp1, points.topCp2, points.top)
       .close()
       .attr('class', 'fabric')
-      .hide()
     points.logo = points.top.shiftFractionTowards(points.bottom, 0.3)
     points.titleAnchor = points.bottom
       .shiftFractionTowards(points.top, 0.25)
@@ -83,7 +82,6 @@ function octoplushyEye(
       .line(points.tl)
       .close()
       .attr('class', 'fabric')
-      .hide()
 
     points.logo = points.tl
       .shiftFractionTowards(points.bl, 0.5)
