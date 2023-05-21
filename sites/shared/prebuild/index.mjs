@@ -13,7 +13,7 @@ const run = async () => {
   if (process.env.LINTER) return true
   const FAST = process.env.FAST ? true : false
   const SITE = process.env.SITE || 'lab'
-  if (!FAST) prebuildDesigns()
+  prebuildDesigns()
   if (['org', 'dev'].includes(SITE)) {
     if (!FAST) await prebuildGitData(SITE)
     const docPages = await prebuildDocs(SITE)
