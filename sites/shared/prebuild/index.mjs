@@ -13,11 +13,11 @@ const run = async () => {
   if (process.env.LINTER) return true
   const FAST = process.env.FAST ? true : false
   const SITE = process.env.SITE || 'lab'
-  prebuildDesigns()
+  await prebuildDesigns()
   if (['org', 'dev'].includes(SITE)) {
     if (!FAST) await prebuildGitData(SITE)
     const docPages = await prebuildDocs(SITE)
-    prebuildNavigation(docPages, false, SITE)
+    await prebuildNavigation(docPages, false, SITE)
     if (!FAST && process.env.GENERATE_OG_IMAGES) {
       // Create og image for the home page
       await generateOgImage({
