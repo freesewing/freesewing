@@ -11,7 +11,6 @@ import {
   ThemeIcon,
   MenuIcon,
   DesignIcon,
-  CommunityIcon,
   CodeIcon,
   DocsIcon,
   WrenchIcon,
