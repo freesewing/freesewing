@@ -1,10 +1,10 @@
----
+- - -
 title: "Tiberius Tunica: Sewing Instructions"
----
+- - -
 
 <Note>
 
-Tiberius is a historically inspired pattern, and if you want more authenticity, handsewing is the way to go. Personally, I use a sewing machine. You do you.
+Tiberius is a historically inspired pattern, and if you want more authenticity, handsewing is the way to go. Personally, I use a sewing machine. Vous le faites.
 
 </Note>
 
@@ -28,6 +28,6 @@ If you opted for cutting the whole tunica out of one piece, carefully cut out th
 
 Hem the bottom of your garment. If you want to use decorative stitches, this is another place to use them.
 
-### Step 4: You're done!
+### Étape 4: Vous avez terminé !
 
 Pull on your tunica, belt it around your waist, play around with how you gather the fabric, and enjoy!
