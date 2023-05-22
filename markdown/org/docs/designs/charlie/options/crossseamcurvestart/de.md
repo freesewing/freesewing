@@ -6,15 +6,15 @@ Controls the start of the cross seam curve.
 
 <Note>
 
-Diese Kurve hat einen Einfluss auf die Stoffmenge an Ihrem Bum.
+This curve has an influence on the amount of fabric at your bum.
 
-Menschen mit einem geschmeidigeren Bum werden sich besser einstellen, indem sie dies erhöhen da die Kurve später beginnen wird,
-und dies wird weniger Stoffpooling am Bum.
+People with a flatter bum will get a better fit by increasing this, as the curve will start later,
+and this there will be less fabric pooling at the bum.
 
-Menschen mit einem runden Bum wollen dies vielleicht senken, um ein wenig mehr (horizontale) Raum für ihre Rückseite zu schaffen.
+People with a round bum might want to lower this to create a little more (horizontal) room for their behind.
 
 </Note>
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_crossseamcurvestart_sample.svg "Effect of this option on the pattern")
