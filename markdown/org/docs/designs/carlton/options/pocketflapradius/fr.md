@@ -6,6 +6,6 @@ title: "Pocket flap radius"
 
 Controls the radius with which the pocket flaps are rounded at the bottom.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlton_pocketflapradius_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlton_pocketflapradius_sample.svg "Effect of this option on the pattern")
