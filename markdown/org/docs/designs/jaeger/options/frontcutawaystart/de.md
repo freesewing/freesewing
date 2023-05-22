@@ -2,10 +2,10 @@
 title: "Front cutaway start"
 ---
 
-![Stern vorne](frontcutawaystart.svg)
+![Front cutaway start](frontcutawaystart.svg)
 
-Wie weit unter der unteren Taste beginnt die Vorderseite zu öffnen.
+How far below the lower button does the front start to open.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](jaeger_frontcutawaystart_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_frontcutawaystart_sample.svg "Effect of this option on the pattern")
