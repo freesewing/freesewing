@@ -4,9 +4,9 @@ title: "Brian body block: Cutting Instructions"
 
 **Main fabric**
 
-- Schneide **1 Vorderteil** im Stoffbruch.
+- Cut **1 Front** part on the fold.
 - Cut **1 Back** part on the fold.
-- Schneide **2 Ärmel**.
+- Cut **2 Sleeve** parts.
 
 These cutting instructions are just for the default Brian block. Adjust your cutting accordingly if you have/are making changes to the block.
 
@@ -18,11 +18,11 @@ If you do not have someone to help pin you into Brian then you may find it easie
 
 <Note>
 
-###### Brian ist ein Grundschnitt, kein Schnittmuster
+###### Brian is a block, not a pattern
 
-Ein Grundschnitt ist eine Grundform, auf der andere Schnittmuster basieren.
+A block is a basic shape on which other patterns are based.
 They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
 
-Grundschnitte werden in der Regel nicht so gemacht, wie sie sind, sondern dienen als Grundlage für andere Schnittmuster.
+Blocks are typically not made as-is but rather serve as a basis for other patterns.
 
 </Note>
