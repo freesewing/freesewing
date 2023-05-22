@@ -1,11 +1,11 @@
----
-title: "Ribbing height"
----
+- - -
+title: "Bündchen Breite (Höhe)"
+- - -
 
-![Ribbing height](ribbingheight.svg)
+![Bündchen-Höhe](ribbingheight.svg)
 
-The height of the ribbing at the hem and cuffs.
+Die Höhe des Balles am Saum und an den Manschetten.
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_ribbingheight_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](huey_ribbingheight_sample.svg "Effekt dieser Option auf das Schnittmuster")
