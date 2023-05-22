@@ -2,16 +2,16 @@
 title: "Chest ease"
 ---
 
-![Overwijdte borst](chestease.svg)
+![Chest ease](chestease.svg)
 
-Hoeveel ruimte wil je rond je borstkas?
+How much room do you want at the chest?
 
 <Note>
 
-Een gilet heeft geen mouwen, dus met een beetje overwijdte kom je al ver. Als je te veel toevoegt riskeer je te eindigen met gapende armsgaten.
+Given that a waistcoat has no arms, a little chest ease goes a long way. Add too much, and you'll end up with gaping armholes.
 
 </Note>
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](wahid_chestease_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_chestease_sample.svg "Effect of this option on the pattern")
