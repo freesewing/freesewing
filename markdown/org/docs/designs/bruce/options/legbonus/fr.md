@@ -1,11 +1,11 @@
 ---
-titre : "Longueur supplémentaire au niveau des jambes"
+title: "Leg length bonus"
 ---
 
-![L'option bonus longueur jambe pour Bruce](./legbonus.svg)
+![The leg bonus option on Bruce](./legbonus.svg)
 
-De combien voulez-vous allonger les jambes?
+How much do you want to lengthen the legs?
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bruce_legbonus_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bruce_legbonus_sample.svg "Effect of this option on the pattern")
