@@ -6,13 +6,13 @@ Determines the amount of sleevecap ease.
 
 <Note>
 
-La facilidad de manga determina cómo rodar las mangas desde el grifo.
-Más fácil hace que el riego de manga en la costura como usted ve en jaquetas de traje. Menos facilidad hace que la manga esté lisa.
+The amount of sleevecap ease determines how the sleeves rolls from the shouder.
+More ease makes the sleeve curl into the seam as you see on suit jackets. Less ease makes the sleeve lie flat.
 
-Para tejidos ligeros o tejidos, usted quiere poco a ningún manga fácil. Para tejidos más pesados se necesita más facilidad de manga.
+For light fabric or knits, you want little to no sleevecap ease. For heavier woven fabrics, you need more sleevecap ease.
 
 </Note>
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_sleevecapease_sample.svg "Effect of this option on the pattern")
