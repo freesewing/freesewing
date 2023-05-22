@@ -1,11 +1,11 @@
 ---
-title: "Onderste tailleband"
+title: "Lower waistband"
 ---
 
 ***
 
-Met deze optie kun je de tailleband onder je (natuurlijke) taille verlagen.
+This option allows you to lower the waistband below your (natural) waist.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](cornelius_waistbandbelowwaist_sample.svg "Effect van deze optie op het patroon")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](cornelius_waistbandbelowwaist_sample.svg "Effect of this option on the pattern")
