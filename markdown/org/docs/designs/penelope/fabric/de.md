@@ -6,7 +6,7 @@ title: "Penelope pencil skirt: Fabric Options"
 
 A pencil skirt is a rather formal cut, and most commonly is made in a suiting material. In other words, a **fine wool**. More casual options among **medium weight** fabrics include **cotton** or **denim**.
 
-Einen Stoff mit etwas Dehnbarkeit zu verwenden wird es einfacher machen, eine bequeme Passform zu bekommen, und dir mehr Bewegungsfreiheit geben, da Bleistiftröcke ziemlich eng sitzen. **Scuba** is often seen in pencil skirts as it is firm, has body but also stretchs.
+Using a fabric with some stretch will make it easier to get a comfortable fit and give you some more room to move about as pencil skirts fit rather tight. **Scuba** is often seen in pencil skirts as it is firm, has body but also stretchs.
 
 ### Lining Fabric
 
