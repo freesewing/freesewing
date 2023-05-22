@@ -1,11 +1,11 @@
 ---
-titre : "aisance thoracique"
+title: "Chest ease"
 ---
 
-![Aisance de poitrine](chestease.svg)
+![Chest ease](chestease.svg)
 
-La quantité d'aisance à votre poitrine.
+The amount of ease at your chest.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_chestease_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_chestease_sample.svg "Effect of this option on the pattern")
