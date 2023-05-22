@@ -2,10 +2,10 @@
 title: "Drape angle"
 ---
 
-![L'option angulaire du drapé sur Diana](./drapeangle.svg)
+![The drape angle option on Diana](./drapeangle.svg)
 
-Cette option contrôle la quantité de drapes de votre haut.
+This option controls the amount of drape of your top.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](diana_drapeangle_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_drapeangle_sample.svg "Effect of this option on the pattern")
