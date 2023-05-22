@@ -1,5 +1,5 @@
 ---
-titre: "Bloc du corps de Bella"
+title: "Bella body block"
 ---
 
 <PatternDocs pattern='bella' />
