@@ -17,7 +17,7 @@ export const Highlight = (props) => {
   if (props.children?.props?.className) {
     language = props.children.props.className.split('-').pop()
     if (language.indexOf('.') !== -1) {
-      [status, language] = language.split('.')
+      ;[status, language] = language.split('.')
     }
   }
 

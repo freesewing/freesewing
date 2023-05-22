@@ -6,6 +6,7 @@ export function PatternModel(tools) {
   this.prisma = tools.prisma
   this.decrypt = tools.decrypt
   this.encrypt = tools.encrypt
+  this.rbac = tools.rbac
   this.encryptedFields = ['data', 'img', 'name', 'notes', 'settings']
   this.clear = {} // For holding decrypted data
 
@@ -13,7 +14,7 @@ export function PatternModel(tools) {
 }
 
 PatternModel.prototype.guardedCreate = async function ({ body, user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.user(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (Object.keys(body).length < 2) return this.setResponse(400, 'postBodyMissing')
   if (!body.set) return this.setResponse(400, 'setMissing')
   if (typeof body.set !== 'number') return this.setResponse(400, 'setNotNumeric')
@@ -50,7 +51,7 @@ PatternModel.prototype.guardedCreate = async function ({ body, user }) {
   const img =
     this.config.use.sanity &&
     typeof body.img === 'string' &&
-    (!body.unittest || (body.unittest && this.config.use.tests?.sanity))
+    (!body.test || (body.test && this.config.use.tests?.sanity))
       ? await setPatternAvatar(this.record.id, body.img)
       : false
 
@@ -95,11 +96,11 @@ PatternModel.prototype.read = async function (where) {
  * Stores result in this.record
  */
 PatternModel.prototype.guardedRead = async function ({ params, user }) {
-  if (user.level < 1) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   await this.read({ id: parseInt(params.id) })
-  if (this.record.userId !== user.uid && user.level < 5) {
+  if (this.record.userId !== user.uid && !this.rbac.bughunter(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
 
@@ -116,11 +117,11 @@ PatternModel.prototype.guardedRead = async function ({ params, user }) {
  * Stores result in this.record
  */
 PatternModel.prototype.guardedClone = async function ({ params, user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   await this.read({ id: parseInt(params.id) })
-  if (this.record.userId !== user.uid && !this.record.public && user.level < 5) {
+  if (this.record.userId !== user.uid && !this.record.public && !this.rbac.support(support)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
 
@@ -204,10 +205,10 @@ PatternModel.prototype.unguardedUpdate = async function (data) {
  * so we can't be certain it's safe
  */
 PatternModel.prototype.guardedUpdate = async function ({ params, body, user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
   await this.read({ id: parseInt(params.id) })
-  if (this.record.userId !== user.uid && user.level < 8) {
+  if (this.record.userId !== user.uid && !this.rbac.admin(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
   const data = {}
@@ -248,11 +249,11 @@ PatternModel.prototype.unguardedDelete = async function () {
  * Removes the pattern - Checks permissions
  */
 PatternModel.prototype.guardedDelete = async function ({ params, user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   await this.read({ id: parseInt(params.id) })
-  if (this.record.userId !== user.uid && user.level < 8) {
+  if (this.record.userId !== user.uid && !this.rbac.admin(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
 

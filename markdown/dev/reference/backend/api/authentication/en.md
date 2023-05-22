@@ -24,7 +24,7 @@ endpoint:
 The use of JSON Web Tokens ([jwt](https://jwt.io)) is typically used in a
 browser context where we want to establish a *session*.
 
-To get a token, you must first authenticate at the [`/login`](/reference/backend/api/user/login) endpoint.
+To get a token, you must first authenticate at the [`/signin`](/reference/backend/api/user/signin) endpoint.
 You will receive a JSON Web Token (jwt) as part of the response.
 
 In subsequent API calls, you must then include this token in the

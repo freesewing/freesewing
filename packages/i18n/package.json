@@ -43,7 +43,9 @@
     "wbuild": "node build.mjs",
     "wcibuild_step7": "node build.mjs"
   },
-  "peerDependencies": {},
+  "peerDependencies": {
+    "@freesewing/pattern-info": "3.0.0-alpha.10"
+  },
   "dependencies": {},
   "devDependencies": {
     "js-yaml": "4.1.0",

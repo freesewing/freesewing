@@ -1,5 +1,5 @@
-- - -
-- - -
+---
+---
 
 #### Vous êtes curieux de savoir comment ça marche ?
 

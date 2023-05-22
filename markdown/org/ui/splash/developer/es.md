@@ -1,5 +1,5 @@
-- - -
-- - -
+---
+---
 
 ### Para desarrolladores
 

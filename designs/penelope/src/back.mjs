@@ -1,5 +1,5 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
-import { measurements, options, BuildMainShape } from './shape.mjs'
+import { measurements, optionalMeasurements, options, BuildMainShape } from './shape.mjs'
 
 function penelopeBack(params) {
   const {
@@ -135,6 +135,7 @@ function penelopeBack(params) {
 export const back = {
   name: 'penelope.back',
   measurements,
+  optionalMeasurements,
   options,
   plugins: [pluginBundle],
   draft: penelopeBack,

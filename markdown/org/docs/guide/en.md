@@ -20,7 +20,7 @@ to save you a bunch of questions later, and make sure you get the most out of ou
 
 Sounds good? Then let's dive right in:
 
-<ReadMore list />
+<ReadMore />
 
 <Tip>
 

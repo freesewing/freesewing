@@ -1,0 +1,196 @@
+account: Account
+yourAccount: Your Account
+newPattern: New Pattern
+newSet: Create a new measurements set
+links: Links
+info: Info
+settings: Settings
+data: Data
+sets: Measurements Sets
+patterns: Patterns
+actions: Actions
+created: Created
+updated: Updated
+expires: Expires
+
+yourProfile: Your Profile
+yourPatterns: Your Patterns
+yourSets: Your Measurements Sets
+signOut: Sign Out
+politeOhCrap: Oh fiddlesticks
+bio: Bio
+email: E-mail Address
+github: Github Username
+img: Profile image
+username: Username
+compare: Metricset Comparison
+consent: Consent & Privacy
+control: Power versus Simplicity
+imperial: Units
+units: Units
+apikeys: API Keys
+newsletter: Newsletter Subscription
+password: Password
+newPasswordPlaceholder: Enter your new password here
+passwordPlaceholder: Enter your password here
+mfa: Two-Factor Authentication
+mfaTipTitle: Please consider enabling Two-Factor Authentication
+mfaTipMsg: We do not enforce a password policy, but we do recommend you enable Two-Factor Authentication to keep your FreeSewing account safe.
+mfaEnabled: Two-Factor Authentication is enabled
+mfaDisabled: Two-Factor Authentication is disabled
+mfaSetup: Set up Two-Factor Authentication
+mfaAdd: Add FreeSewing to your Authenticator App by scanning the QR code above.
+confirmWithPassword: Please enter your password to confirm this action
+confirmWithMfa: Please enter a code from your Authenticator App to confirm this action
+enableMfa: Enable Two-Factor Authentication
+disableMfa: Disable Two-Factor Authentication
+language: Language
+developer: Developer
+
+reload: Reload account
+export: Export your data
+review: Review your consent
+restrict: Restrict processing of your data
+disable: Disable your account
+remove: Remove your account
+
+mdSupport: You can use markdown here
+or: or
+continue: Continue
+save: Save
+noThanks: No thanks
+areYouCertain: Are you certain?
+delete: Delete
+
+# reload
+nailedIt: Nailed it
+gone: Poof. Gone.
+reloadMsg1: The data stored in your browser can sometimes get out of sync with the data stored in our backend.
+reloadMsg2: This lets you reload your account data from the backend. It has the same effect as signin out, and then signing in again
+
+# bio
+bioTitle: Tell people a little bit about yourself
+bioPreview: Bio Preview
+bioPlaceholder: I make clothes and shoes. I design sewing patterns. I write code. I run [FreeSewing](http://freesewing.org)
+
+# compare
+compareTitle: Are you comfortable with measurements sets being compared?
+compareYes: Yes, in case it may help me
+compareYesd: |
+  We will occasionally show how your set of measurements compares to other measurements sets.
+  This allows us to detect potential problems in your measurements or patterns.
+compareNo: No, never compare
+compareNod: |
+  We will never compare your set of measurements to other measurements sets.
+  This will limit our ability to warn you about potential problems in your measurements sets or patterns.
+
+# control
+showMore: Show more
+control1t: Keep it as simple as possible
+control1d: Hides all but the most crucial features.
+control2t: Keep it simple, but not too simple
+control2d: Hides the majority of features.
+control3t: Balance simplicity with power
+control3d: Reveals the majority of features, but not all.
+control4t: Give me all powers, but keep me safe
+control4d: Reveals all features, keeps handrails and safety checks.
+control5t: Get out of my way
+control5d: Reveals all features, removes all handrails and safety checks.
+controlShowMore: Show more options
+controlTitle: What do you prefer?
+# img
+imgTitle: How about a picture?
+imgDragAndDropImageHere: Drag and drop an image here
+imgSelectImage: Select an image
+
+# newsletter
+newsletterTitle: Would you like to reveice the FreeSewing newsletter?
+newsletterYes: Yes, I would like to receive the newsletter
+newsletterYesd: Once every 3 months you'll receive an email from us with honest wholesome content. No tracking, no ads, no nonsense.
+newsletterNod: You can always change your mind later. But until you do, we will not send you any newsletters.
+
+# imperial
+metricUnits: Metric units (cm)
+metricUnitsd: Pick this if you prefer centimeters over inches.
+imperialUnits: Imperial units (inch)
+imperialUnitsd: Pick this if you prefer inches over centimeters.
+unitsTitle: Which units do you prefer?
+
+# username
+usernameTitle: What username would you like?
+usernameNotAvailable: Username is not available
+
+# email
+emailTitle: Where can we reach you in case we have a good reason for it (like when you forgot your password)?
+oneMoreThing: One more thing
+oneMomentPlease: One moment please
+emailChangeConfirmation: We have sent an E-mail to your new address to confirm this change.
+vagueError: Something went wrong, and we're not certain how to handle it. Please try again, or involve a human being for assistance.
+
+# github
+githubTitle: Enter your github username here to receive updates when you report a problem through this website.
+
+# languge
+languageTitle: Which language do you prefer?
+
+# password
+passwordTitle: Something only you know
+
+# api key
+newApikey: Generate a new API key
+keyNewInfo: Create a new API key to connect to the FreeSewing backend in an automated way.
+keyName: Key name
+keyNameDesc: A unique name for this API key. Only visible to you.
+keyExpires: Key expiration
+keyExpiresDesc: "The key will expire on:"
+keyLevel: Key permission level
+keyLevel0: Authenticate only
+keyLevel1: Read access to your own patterns and measurements sets
+keyLevel2: Read access to all your account data
+keyLevel3: Write access to your own patterns and measurements sets
+keyLevel4: Write access to all your account data
+keyLevel5: Read access to patterns and measurements sets of other users
+keyLevel6: Write access to patterns and measurements sets of other users
+keyLevel7: Write access to all account data of other users
+keyLevel8: Impersonate other users, full write access to all data
+cancel: Cancel
+keySecretWarning: This is the only time you can see the key secret, make sure to copy it.
+keyExpired: This API key has expired
+deleteKeyWarning: Removing an API key cannot be undone.
+
+new: New
+
+# sets
+name: Name
+setNameDesc: A name to identify this measurements set
+setNewInfo: Create a new set of measurements which you can then use to generate patterns for.
+notes: Notes
+setNotesDesc: Any notes you'd like to keep regarding this measurements set
+description: Description
+deleteSetWarning: Removing a measurements set cannot be undone.
+image: Image
+measies: Measurements
+setUnitsMsgTitle: This settings only applies to this measurement set
+setUnitsMsgDesc: |
+  These are the units we will use when updating or displaying the measurements in this set.
+  Everywhere else on this website, we will use the units preference set in your account.
+public: Public
+publicSet: Public measurements set
+privateSet: Private measurements set
+publicSetDesc: Others are allowed to use these measurements to generate or test patterns
+privateSetDesc: These measurments cannot be used by other users or visitors
+permalink: Permalink
+
+patternNew: Generate a new pattern
+patternNewInfo: Pick a design, add your measurements set, and we'll generate a made-to-measure sewing pattern for you.
+
+designNew: Create a new design
+designNewInfo: FreeSewing designs are small bundles of JavaScript code that generate patterns. It's not hard to create your own designs, and we have a detailed tutorial to get you started.
+
+pluginNew: Create a new plugin
+pluginNewInfo: FreeSewing's functionality can be further extended with plugins. Creating a plugin is easy, and we have a guide to take you from start to finish.
+
+newBasic: The basics
+newAdvanced: Go further
+
+generateANewThing: "Generate a new { thing }"

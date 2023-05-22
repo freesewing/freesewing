@@ -1,12 +1,12 @@
 ---
 headEase:
-  title: Head ease
-  description: The amount of ease around your head.
+  title: Holgura de cabeza
+  description: La cantidad de facilidad alrededor de tu cabeza.
 lengthRatio:
   title: Ratio de longitud
   description: Controls the length of the crown and ear flaps
 gores:
-  title: Number of gores
+  title: Número de paneles
   description: The number of gores used to construct the crown
 visorAngle:
   title: Visor angle

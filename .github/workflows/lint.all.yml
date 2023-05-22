@@ -36,5 +36,7 @@ jobs:
         run: npx lerna bootstrap
         env:
           CI: true
+      - name: Buil all
+        run: yarn buildall
       - name: Run eslint
         run: npm run lint

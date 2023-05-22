@@ -95,6 +95,8 @@ function draftHiBottomFin({
     .curve(points.bottomFin03cp1, points.bottomFin01cp2, points.bottomFin01)
     .close()
 
+  store.cutlist.addCut({ material: 'color1UpperBody' })
+
   // Complete?
   if (complete) {
     const finAttachment = new Path()

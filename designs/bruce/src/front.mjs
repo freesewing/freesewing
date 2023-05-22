@@ -67,7 +67,7 @@ function draftBruceFront({
 
   // Adjust tusk length to fit inset curve
   let delta = tuskDelta(Path, points, store)
-  let previous_delta = delta
+  let previous_delta
   const points_to_save = ['rightTuskRight', 'rightTuskLeft', 'curveRightCpBottom']
   let saved = []
   let stop = false

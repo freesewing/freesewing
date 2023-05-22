@@ -49,6 +49,7 @@ packageJson:
       - templates/**/*
       - index.mjs
       - package.json
+      - data.mjs
     module: '!'
   noble:
     author: woutervdub (https://github.com/woutervdub)

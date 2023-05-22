@@ -132,6 +132,8 @@ export const back = {
       grainline: true,
     })
 
+    store.cutlist.addCut({ cut: 1 })
+
     // Complete pattern?
     if (complete) {
       macro('title', { at: points.title, nr: 2, title: 'back' })

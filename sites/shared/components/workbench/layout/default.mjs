@@ -7,8 +7,8 @@ import get from 'lodash.get'
 import Link from 'next/link'
 import { PrimaryNavigation } from 'shared/components/navigation/primary.mjs'
 import { RightIcon, LeftIcon, FreeSewingIcon } from 'shared/components/icons.mjs'
-import { Header } from 'site/components/header.mjs'
-import { Footer } from 'site/components/footer.mjs'
+import { Header } from 'site/components/header/index.mjs'
+import { Footer } from 'shared/components/footer/index.mjs'
 import { Search } from 'site/components/search.mjs'
 
 export const PageTitle = ({ app, slug, title }) => {

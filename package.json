@@ -28,7 +28,7 @@
     "build": "yarn buildall",
     "wbuild": "yarn wbuildall",
     "testall": "node scripts/testall.js",
-    "lint": "lerna run --no-bail lint -- ",
+    "lint": "LINTER=1 lerna run --no-bail lint -- ",
     "qa": "yarn qa:prettier && yarn qa:lint",
     "qa:prettier": "npx prettier",
     "qa:lint": "npx eslint",

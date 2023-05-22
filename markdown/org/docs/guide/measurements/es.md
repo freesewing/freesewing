@@ -8,7 +8,7 @@ Tomar mediciones precisas es crucial para obtener buenos resultados con nuestros
 Hemos añadido algunos indicadores para ayudarle a detectar errores o problemas en sus mediciones.
 
 - Incluimos [estimaciones para sus diferentes mediciones][1]y destacamos aquellas medidas en las que una persona difiere significativamente de la estimación
-- Your models show [a graph of their body measurements][2] in comparison to our standard sizes
+- Sus modelos muestran [una gráfica de sus mediciones corporales][2] en comparación con nuestros tamaños estándar
 
 [1]: /docs/guide/measurements/estimates/
 

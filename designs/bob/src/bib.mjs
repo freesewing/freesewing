@@ -16,7 +16,7 @@ export const bib = {
     points,
     Path,
     paths,
-    optionalMeasurements,
+    measurements,
     options,
     macro,
     log,
@@ -27,7 +27,7 @@ export const bib = {
     part,
   }) => {
     // Head size
-    const head = (optionalMeasurements?.head || 360) * options.headSize
+    const head = (`head` in measurements ? measurements.head : 360) * options.headSize
 
     // Construct the neck opening
     let tweak = 1

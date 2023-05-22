@@ -3,7 +3,7 @@ title: Confirm an account
 ---
 
 Confirms a newly created User account.
-If confirmation is successful this will also result in a (passwordless) login.
+If confirmation is successful this will also result in a (passwordless) sign-in.
 
 ## Endpoints
 
@@ -61,7 +61,7 @@ in the response body should indicate the nature of the problem.
 | `account.imperial`  | Boolean| Whether or not the User prefers imperial units |
 | `account.initial`   | String | The E-mail address that the User was created with |
 | `account.language`  | String | The language preferred by the user |
-| `account.lastLogin` | String | Date string indicating them moment the User last logged in |
+| `account.lastSignIn`| String | Date string indicating them moment the User last signed in |
 | `account.mfaEnabled`| Boolean| Whether or not the User has MFA enabled |
 | `account.newsletter`| Boolean| Whether or not the User is subscribed to the FreeSewing newsletter |
 | `account.patron`    | Number | The level of patronage the user provides to FreeSewing |
@@ -97,7 +97,7 @@ const confirm = await axios.post(
     "imperial": false,
     "initial": "test_54c6856275aaa8a1@freesewing.dev",
     "language": "en",
-    "lastLogin": "2022-11-19T18:15:22.668Z",
+    "lastSignIn": "2022-11-19T18:15:22.668Z",
     "mfaEnabled": false,
     "newsletter": false,
     "patron": 0,

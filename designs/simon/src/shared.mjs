@@ -147,7 +147,7 @@ export const decorateBarrelCuff = (part) => {
   for (let i = 1; i <= options.cuffButtonRows; i++) {
     points['button' + i] = points.buttonLineTop.shiftFractionTowards(
       points.buttonLineBottom,
-      (1 / (options.cuffButtonRows + 1)) * i
+      (1 / (Number(options.cuffButtonRows) + 1)) * i
     )
     snippets['button' + i] = new Snippet('button', points['button' + i])
     points['buttonhole' + i] = new Point(points.buttonholeLineTop.x, points['button' + i].y)

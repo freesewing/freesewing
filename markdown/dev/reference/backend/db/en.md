@@ -91,7 +91,7 @@ In the tables below, the following symbols are used:
 |    | `imperial`  | Boolean | `false` |
 | 🔐 | `initial`   | String(ified JSON) | |
 |    | `language`  | String | `en` |
-|    | `lastLogin` | DateTime | |
+|    | `lastSignIn`| DateTime | |
 | ❄️  | `lusername` | String | |
 |    | `newsletter`| Boolean | `false` |
 | 🧂 | `password`  | String(ified JSON) | |
@@ -116,7 +116,7 @@ In the tables below, the following symbols are used:
   "imperial": 0,
   "initial": "{\"iv\":\"b48d8e4769e359cec69f53629c5ad4ce\",\"ct\":\"57211cdeb0c1d5641aae953b10058e8ad94604df8183a3f5c99517620858674696e1e988ccf8e527f132095c2f303a12\"}",
   "language": "en",
-  "lastLogin": 1668447881273,
+  "lastSignIn": 1668447881273,
   "lusername": "user-7",
   "newsletter": 0,
   "password": "{\"type\":\"v3\",\"hash\":\"bc5b64b1932a5d4a053777011a61a244e07edfe78eaa52beb56d08bf0ec3f8d8946e8749c872db5a03d5720e53b8da1d6df3ee12d96443d107c01dd2392e2848\",\"salt\":\"648d1218a93ded40ad42cc5bed603bcf\"}",

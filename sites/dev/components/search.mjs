@@ -15,6 +15,8 @@ import config from 'site/algolia.config.mjs'
 import Link from 'next/link'
 import { CloseIcon } from 'shared/components/icons.mjs'
 
+export const ns = ['search']
+
 const searchClient = algoliasearch(config.algolia.app, config.algolia.key)
 
 const Hits = (props) => {

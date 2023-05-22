@@ -1,8 +1,7 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  fontFamily:
-    '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+  fontFamily: "Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;",
 
   'base-100': colors.fuchsia['50'],
   'base-200': colors.neutral['200'],
@@ -22,7 +21,7 @@ module.exports = {
 
   neutral: colors.neutral['900'],
   'neutral-focus': colors.neutral['700'],
-  'neutral-content': colors.yellow['50'],
+  'neutral-content': colors.fuchsia['200'],
 
   info: colors.pink['400'],
   success: colors.green['600'],

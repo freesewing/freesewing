@@ -62,7 +62,7 @@ core:
     'lodash.unset': &_unset '4.5.2'
     'lodash.clonedeep': '^4.5.0'
   dev:
-    'eslint': &eslint '8.40.0'
+    'eslint': &eslint '8.41.0'
     'nyc': '15.1.0'
     'mocha': *mocha
     'chai': *chai
@@ -90,8 +90,10 @@ hugo:
     '@freesewing/plugin-bust': *freesewing
 i18n:
   dev:
-    'js-yaml': '4.1.0'
+    'js-yaml': &jsyaml '4.1.0'
     'recursive-readdir': '^2.2.3'
+  peer:
+    '@freesewing/pattern-info': *freesewing
 jaeger:
   peer:
     '@freesewing/brian': *freesewing
@@ -188,27 +190,28 @@ yuri:
 
 backend:
   _:
-    '@aws-sdk/client-sesv2': '3.329.0'
-    '@prisma/client': &prisma '4.14.0'
+    '@aws-sdk/client-sesv2': '3.336.0'
+    '@prisma/client': &prisma '4.14.1'
     'bcryptjs': '2.4.3'
     'cors': '2.8.5'
     'crypto': '1.0.1'
     'dotenv': '16.0.3'
     'express': '4.18.2'
+    'js-yaml': *jsyaml
     'lodash.get': *_get
     'mustache': '4.2.0'
     'otplib': '12.0.1'
     'passport': '0.6.0'
     'passport-http': '0.3.0'
     'passport-jwt': '4.0.1'
-    'pino': '8.12.1'
+    'pino': '8.14.1'
     'qrcode': '1.5.3'
     'swagger-ui-dist': '4.18.3'
     'swagger-ui-express': '4.6.3'
   dev:
     'chai': *chai
     'chai-http': '4.3.0'
-    'esbuild': '0.17.18'
+    'esbuild': '0.17.19'
     'mocha': *mocha
     'mocha-steps': '1.3.0'
     'nodemon': '2.0.22'
@@ -220,7 +223,7 @@ dev:
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': &mdxRuntime '2.0.0-next.9'
-    '@next/bundle-analyzer': &next '13.4.1'
+    '@next/bundle-analyzer': &next '13.4.3'
     '@tailwindcss/typography': &tailwindTypography '0.5.9'
     'algoliasearch': '4.17.0'
     'daisyui': &daisyui '2.51.6'
@@ -232,7 +235,7 @@ dev:
     'react-copy-to-clipboard': &reactCopyToClipboard '5.1.0'
     'react-dom': *react
     'react-hotkeys-hook': &reactHotkeysHook '4.4.0'
-    'react-instantsearch-dom': &reactInstantsearchDom '6.39.1'
+    'react-instantsearch-dom': &reactInstantsearchDom '6.40.0'
     'react-markdown': &reactMarkdown '8.0.7'
     'react-swipeable': &reactSwipeable '7.0.0'
     'react-timeago': &reactTimeago '7.1.0'
@@ -251,6 +254,7 @@ dev:
     'postcss': &postcss '8.4.23'
     'playwright': '^1.32.3'
     'remark-extract-frontmatter': '3.2.0'
+    'remark-mdx-frontmatter': '3.0.0'
     'tailwindcss': &tailwindcss '3.3.2'
     'yaml-loader': '0.8.0'
 
@@ -274,7 +278,7 @@ lab:
     'd3-drag': '3.0.0'
     'd3-selection': '3.0.0'
     'daisyui': *daisyui
-    'i18next': &i18next '22.4.14'
+    'i18next': &i18next '22.5.0'
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
@@ -295,6 +299,7 @@ lab:
     'rehype-stringify': *rehypeStringify
     'remark-copy-linked-files': *remarkCopyLinkedFiles
     'remark-gfm': *remarkGfm
+    'remark-mdx-frontmatter': '3.0.0'
   dev:
     *nextSiteDevDependencies
 
@@ -329,12 +334,14 @@ org:
     'rehype-stringify': *rehypeStringify
     'remark-copy-linked-files': *remarkCopyLinkedFiles
     'remark-gfm': *remarkGfm
+    'remark-mdx-frontmatter': '3.0.0'
+    'use-persisted-state': &use-persisted-state 0.3.3
     'yaml-loader': 0.8.0
   dev: *nextSiteDevDependencies
 
 sanity:
   _:
-    '@sanity/vision': &sanity '3.10.1'
+    '@sanity/vision': &sanity '3.11.1'
     'react': *react
     'react-dom': *react
     'react-is': *react
@@ -346,11 +353,12 @@ sanity:
     'eslint': *eslint
     'prettier': '2.8.8'
     'typescript': '5.0.4'
-    '@sanity/cli': '3.10.0'
+    '@sanity/cli': '3.11.1'
 
 shared:
   _:
     '@headlessui/react': *headlessUiReact
+    '@next/mdx': '13.4.3'
     '@resvg/resvg-js': '2.4.1'
     '@tailwindcss/typography': *tailwindTypography
     'Buffer': '0.0.0'
@@ -362,6 +370,8 @@ shared:
     'file-saver': '2.0.5'
     'front-matter': '4.0.2'
     'highlight.js': '11.8.0'
+    'jotai': '2.1.0'
+    'jotai-location': '0.5.1'
     'lodash.clonedeep': '4.5.0'
     'lodash.orderby': *_orderby
     'lodash.unset': *_unset
@@ -378,12 +388,15 @@ shared:
     'react-zoom-pan-pinch': '3.0.7'
     'rehype-autolink-headings': *rehypeAutolinkHeadings
     'rehype-highlight': *rehypeHighlight
+    'remark-frontmatter': '4.0.1'
+    'remark-mdx-frontmatter': '3.0.0'
     'remark-smartypants': '2.0.0'
     'sharp': '0.32.1'
     'svg-to-pdfkit': 'https://github.com/eriese/SVG-to-PDFKit'
     'tlds': '1.238.0'
     'to-vfile': '7.2.4'
     'unist-util-visit': *unist-util-visit
+    'use-persisted-state': *use-persisted-state
     'web-worker': '1.2.0'
   dev:
     'recursive-readdir': '^2.2.3'

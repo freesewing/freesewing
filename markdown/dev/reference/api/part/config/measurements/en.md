@@ -38,3 +38,12 @@ const part = {
 }
 ```
 
+<Tip>
+
+Although they are specified via the part configuration `optionalMeasurements`
+property, optional measurements are accessed via the 'measurements'
+settings property.
+
+(There is no `optionalMeasurements` settings property.)`
+
+</Tip>

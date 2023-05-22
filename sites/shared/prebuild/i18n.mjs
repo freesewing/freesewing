@@ -16,9 +16,13 @@ const locales = ['en', 'es', 'de', 'fr', 'nl']
  * code-adjacent translation source files
  */
 const sitesFolder = path.join(fileURLToPath(import.meta.url), '..', '..', '..')
-const folders = {
+export const folders = {
   org: [path.join(sitesFolder, 'org', 'pages'), path.join(sitesFolder, 'org', 'components')],
-  shared: [path.join(sitesFolder, 'shared', 'components')],
+  dev: [path.join(sitesFolder, 'dev', 'pages'), path.join(sitesFolder, 'dev', 'components')],
+  shared: [
+    path.join(sitesFolder, 'shared', 'components'),
+    path.join(sitesFolder, 'shared', 'i18n'),
+  ],
 }
 
 /*
@@ -39,9 +43,10 @@ const writeJson = async (site, locale, namespace, content) =>
  *  - site: the site folder to generate translations files for
  *
  */
-const getI18nFileList = async (site = 'org') => {
+const getI18nFileList = async (site) => {
   const dirs = [...folders.shared]
   if (site === 'org') dirs.push(...folders.org)
+  if (site === 'dev') dirs.push(...folders.dev)
 
   const allFiles = []
   for (const dir of dirs) {
@@ -77,12 +82,12 @@ const languageAndNamespaceFromFilename = (file) => {
 /*
  * Helper method to load a YAML file from disk
  */
-const loadYaml = (file) => {
+export const loadYaml = (file, complain = true) => {
   let data
   try {
     data = yaml.load(fs.readFileSync(file, 'utf-8'))
   } catch (err) {
-    console.log(err)
+    if (complain) console.log(err)
   }
 
   return data
@@ -159,7 +164,7 @@ export const prebuildI18n = async (site, only = false) => {
   }
 
   // Handle new code-adjacent translations
-  const files = await getI18nFileList('org')
+  const files = await getI18nFileList(site)
   const data = filesAsNamespaces(files)
   const namespaces = fixData(data)
   // Write out code-adjacent source files

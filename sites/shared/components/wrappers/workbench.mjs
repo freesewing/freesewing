@@ -1,26 +1,26 @@
 // Hooks
-import { useEffect, useState, useMemo } from 'react'
-import { useGist } from 'shared/hooks/useGist'
-import { useTranslation } from 'next-i18next'
-// Dependencies
-import { pluginTheme } from '@freesewing/plugin-theme'
-import { pluginI18n } from '@freesewing/plugin-i18n'
-import { preloaders } from 'shared/components/workbench/preloaders.mjs'
-// Components
-import { WorkbenchMenu } from 'shared/components/workbench/menu/index.mjs'
-import { DraftError } from 'shared/components/workbench/draft/error.mjs'
-import { Modal } from 'shared/components/modal.mjs'
-import { ErrorBoundary } from 'shared/components/error/error-boundary.mjs'
-// Views
-import { WorkbenchMeasurements } from 'shared/components/workbench/measurements/index.mjs'
-import { LabDraft } from 'shared/components/workbench/draft/index.mjs'
-import { LabSample } from 'shared/components/workbench/sample.mjs'
-import { ExportDraft } from 'shared/components/workbench/exporting/index.mjs'
-import { GistAsJson, GistAsYaml } from 'shared/components/workbench/gist.mjs'
-import { DraftLogs } from 'shared/components/workbench/logs.mjs'
-import { CutLayout } from 'shared/components/workbench/layout/cut/index.mjs'
-import { PrintLayout } from 'shared/components/workbench/layout/print/index.mjs'
-import { EditYaml } from 'shared/components/workbench/edit/index.mjs'
+//import { useEffect, useState, useMemo } from 'react'
+//import { useGist } from 'shared/hooks/useGist'
+//import { useTranslation } from 'next-i18next'
+//// Dependencies
+//import { pluginTheme } from '@freesewing/plugin-theme'
+//import { pluginI18n } from '@freesewing/plugin-i18n'
+//import { preloaders } from 'shared/components/workbench/preloaders.mjs'
+//// Components
+//import { WorkbenchMenu } from 'shared/components/workbench/menu/index.mjs'
+//import { DraftError } from 'shared/components/workbench/draft/error.mjs'
+//import { Modal } from 'shared/components/modal/modal.mjs'
+//import { ErrorBoundary } from 'shared/components/error/error-boundary.mjs'
+//// Views
+//import { WorkbenchMeasurements } from 'shared/components/workbench/measurements/index.mjs'
+//import { LabDraft } from 'shared/components/workbench/draft/index.mjs'
+//import { LabSample } from 'shared/components/workbench/sample.mjs'
+//import { ExportDraft } from 'shared/components/workbench/exporting/index.mjs'
+//import { GistAsJson, GistAsYaml } from 'shared/components/workbench/gist.mjs'
+//import { DraftLogs } from 'shared/components/workbench/logs.mjs'
+//import { CutLayout } from 'shared/components/workbench/layout/cut/index.mjs'
+//import { PrintLayout } from 'shared/components/workbench/layout/print/index.mjs'
+//import { EditYaml } from 'shared/components/workbench/edit/index.mjs'
 
 const views = {
   measurements: WorkbenchMeasurements,

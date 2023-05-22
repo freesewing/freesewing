@@ -1,0 +1,58 @@
+// Hooks
+import { useEffect, useState } from 'react'
+import { useBackend } from 'shared/hooks/use-backend.mjs'
+// Dependencies
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { {{ Design }} } from '@freesewing/{{ design }}'
+// Components
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
+import { Workbench, ns as wbNs } from 'shared/components/workbench/index.mjs'
+import { WorkbenchLayout } from 'site/components/layouts/workbench.mjs'
+import { Null } from 'shared/components/null.mjs'
+{{{ docs }}}
+
+// Translation namespaces used on this page
+const namespaces = [...new Set(['{{ design }}', ...wbNs, ...pageNs])]
+
+const New{{ Design }}FromCsetPage = ({ page, id }) => {
+  const backend = useBackend()
+  const [set, setSet] = useState(false)
+
+  useEffect(() => {
+    const getCuratedSet = async () => {
+      const result = await backend.getCuratedSet(id)
+      if (result.success) setSet(result.data.curatedSet)
+    }
+    // Guard against loops as the backend object is recreated on each render
+    if (set.id !== id) getCuratedSet()
+  }, [id, set.id, backend])
+
+  return (
+    <PageWrapper {...page} title="{{ Design }}" layout={WorkbenchLayout} header={Null}>
+      <Workbench design="{{ design }}" Design={ {{ Design }} } set={set} DynamicDocs={DynamicDocs}/>
+    </PageWrapper>
+  )
+}
+
+export default New{{ Design }}FromCsetPage
+
+export async function getStaticProps({ locale, params }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, namespaces)),
+      id: Number(params.id),
+      page: {
+        locale,
+        path: ['new', 'pattern', '{{ design }}', 'cset', params.id],
+        title: '',
+      },
+    },
+  }
+}
+
+export async function getStaticPaths() {
+  return {
+    paths: [],
+    fallback: true,
+  }
+}

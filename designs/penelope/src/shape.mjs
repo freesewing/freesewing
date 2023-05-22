@@ -38,21 +38,7 @@ export const options = {
 }
 
 export function BuildMainShape(
-  {
-    sa,
-    options,
-    measurements,
-    optionalMeasurements,
-    Point,
-    Path,
-    points,
-    paths,
-    store,
-    paperless,
-    macro,
-    part,
-    log,
-  },
+  { sa, options, measurements, Point, Path, points, paths, store, paperless, macro, part, log },
   frontPart
 ) {
   let skirtLength = measurements.waistToKnee * (1 + options.lengthBonus) // + options.hem;
@@ -82,14 +68,13 @@ export function BuildMainShape(
   store.set('nrOfDarts', nrOfDarts)
   store.set('dartSize', dartSize)
 
-  if (optionalMeasurements?.seatBack) {
-    seat = (frontPart ? seat - optionalMeasurements.seatBack : optionalMeasurements.seatBack) * 2
+  if ('seatBack' in measurements) {
+    seat = (frontPart ? seat - measurements.seatBack : measurements.seatBack) * 2
   } else {
     seat *= 1 + (frontPart ? -1 : 1) * options.sideSeamShiftPercentage
   }
-  if (optionalMeasurements?.waistBack) {
-    waist =
-      (frontPart ? waist - optionalMeasurements.waistBack : optionalMeasurements.waistBack) * 2
+  if ('waistBack' in measurements) {
+    waist = (frontPart ? waist - measurements.waistBack : measurements.waistBack) * 2
   } else {
     waist *= 1 + (frontPart ? -1 : 1) * options.sideSeamShiftPercentage
   }

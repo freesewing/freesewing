@@ -238,7 +238,7 @@ function titanFront({
 
   if (options.fitCrossSeam && options.fitCrossSeamFront) {
     let delta = crotchSeamDelta()
-    let previous_delta = delta
+    let previous_delta
     let rotate = ['waistIn', 'waistOut', 'cfWaist']
     let saved = []
     let run = 0

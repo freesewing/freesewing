@@ -57,11 +57,18 @@ function draftHiLowerTeeth({
     part
   )
 
+  store.cutlist.addCut({ cut: 1, material: 'color4Teeth' })
+
   // Complete?
   if (complete) {
     snippets.lowerTeeth = new Snippet('bnotch', points.lowerTeeth01)
 
     points.titleAnchor = points.lowerTeeth02.shiftFractionTowards(points.lowerTeeth03, 0.5) //.shiftFractionTowards(points.lowerTeeth01, 0.5)
+
+    // Bounding box to prevent title clipping
+    paths.bbox = new Path()
+      .move(points.lowerTeeth02)
+      .move(new Point(points.lowerTeeth03.x, points.lowerTeeth03.y * 1.75))
 
     macro('title', {
       at: points.titleAnchor,

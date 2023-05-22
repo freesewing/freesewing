@@ -60,10 +60,11 @@ module.exports = {
     {
       files: frontendFiles,
       excludedFiles: nodeFiles,
-      extends: ['next/core-web-vitals'],
-      env: {
-        // We can be stricter than 'next/core-web-vitals' is
-        node: false,
+      extends: ['next'],
+      settings: {
+        next: {
+          rootDir: 'sites/dev/',
+        },
       },
     },
     {
