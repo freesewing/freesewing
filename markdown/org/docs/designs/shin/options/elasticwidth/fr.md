@@ -2,12 +2,12 @@
 title: "Elastic width"
 ---
 
-> #### ###### Pour quoi faire ?
+> #### What's the point?
 > 
-> Cette option est étroitement liée à l'option **lever** qui détermine la hauteur de vos troncs de baignade sur votre taille.
+> This option is closely linked to the **rise** option that determines how high your swim trunks will rise on your waist.
 > 
-> La largeur de votre élastique doit être prise en compte, c'est à cela que sert l'option largeur d'élastique.
+> However, the width of your elastic is also a factor to take into account, so that's where this option comes in.
 
-## Effet de cette option sur le modèle
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](shin_elasticwidth_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](shin_elasticwidth_sample.svg "Effect of this option on the pattern")
