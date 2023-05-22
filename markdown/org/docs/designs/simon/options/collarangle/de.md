@@ -2,22 +2,22 @@
 title: "Collar angle"
 ---
 
-![Kragenwinkel](collarangle.svg)
+![Collar angle](collarangle.svg)
 
-Die Anzahl der Grad zwischen dem Kragenrand und der Körnung.
+The number of degrees between the collar edge and the grainline.
 
 <Note>
 
-###### Was ist der Punkt?
+###### What's the point?
 
-Zusammen mit der Kragenhöhe ist dies der wichtigste Faktor für den Kragenstil.
+Together with the collar height, this is the most important factor for the style of your collar.
 
-Höhere Werte bedeuten einen kürzeren Stil.
+Higher values mean a more cut-away style.
 
-Im Beispielbild liegt der obere Wert bei 80 Grad (Standard) und der untere Wert bei 110 Grad.
+In the example image, the top is 80 degrees (the default) and the bottom is 110 degrees.
 
 </Note>
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_collarangle_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarangle_sample.svg "Effect of this option on the pattern")
