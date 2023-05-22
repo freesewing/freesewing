@@ -1,11 +1,11 @@
----
+- - -
 title: "Front cutaway angle"
----
+- - -
 
-![Front cutaway angle](frontcutawayangle.svg)
+![Frontschnittwinkel](frontcutawayangle.svg)
 
-The angle by which the front opens up below the lower button.
+Der Winkel, mit dem sich die Front unter der unteren Taste öffnet.
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_frontcutawayangle_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](jaeger_frontcutawayangle_sample.svg "Effekt dieser Option auf das Schnittmuster")
