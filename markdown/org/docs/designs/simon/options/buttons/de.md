@@ -2,10 +2,10 @@
 title: "Number of buttons"
 ---
 
-![Knöpfe](buttons.svg)
+![Buttons](buttons.svg)
 
-Die Anzahl der Buttons auf Ihrem Hemd. Ohne Manschettenknöpfe und die optionale Extra-Taste.
+The number of buttons on your shirt. Excluding cuff buttons, and the optional extra top button.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_buttons_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_buttons_sample.svg "Effect of this option on the pattern")
