@@ -6,13 +6,13 @@ Controls the length of the entire trousers, which essentially means the length o
 
 <Note>
 
-Het instellen van deze waarde op nul zorgt ervoor dat de broek dezelfde lengte heeft als de [taille op de verdieping](/docs/maten/tailletofloor).
+Setting this to zero will make the trousers the same length as the [waist to floor](/docs/measurements/waisttofloor) measurement.
 
-Dit betekent niet dat de broek de vloer raakt, vanwege de curven van het lichaam en de manier waarop de stof afvoert,
-de broek zal langer moeten zijn dan dit om de vloer daadwerkelijk te raken.
+This does not mean that the trousers will hit the floor, since due to the curves of the body and the way the fabric drapes,
+the trousers will need to be longer than this to actually hit the floor.
 
 </Note>
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_lengthbonus_sample.svg "Effect of this option on the pattern")
