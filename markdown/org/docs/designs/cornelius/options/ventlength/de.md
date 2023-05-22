@@ -1,11 +1,11 @@
 ---
-title: "Ventillänge"
+title: "Vent length"
 ---
 
 ***
 
-Steuert die Länge des Schlot zwischen Manschette und Knie.
+Controls the length of vent between cuff and knee.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](cornelius_ventlength_sample.svg "Effekt dieser Option auf das Schnittmuster")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](cornelius_ventlength_sample.svg "Effect of this option on the pattern")
