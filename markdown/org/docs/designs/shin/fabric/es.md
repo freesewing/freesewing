@@ -6,6 +6,6 @@ Swim trunks should be made out of a material with stretch that is suitable for b
 
 Typically, this falls apart in a few categories:
 
-- Nylon mezclado con elastene, spandex, o lycra es suave y estirado. De esto es de lo que se hace la mayoría de los trajes de baño casuales.
-- El poliéster mezclado con PBT (polibutileno tereftal) es menos suave al tacto, pero resistente a la clorina y al agua salada. De esto es de lo que se fabrican muchos trajes de baño competitivos.
-- Neoprene, also known as scuba, is heavier and less stretchy. Son los trajes de buceo hechos a partir de ellos.
+- Nylon mixed with elastene, spandex, or lycra is soft and stretchy. This is what most casual swimwear is made from.
+- Polyester mixed with PBT (polybutylene terephthalate) is less soft to the touch, but resistant to chlorine and salt water. This is what a lot of competitive swimwear is made from.
+- Neoprene, also known as scuba, is heavier and less stretchy. It's the stuff scuba suits are made from.
