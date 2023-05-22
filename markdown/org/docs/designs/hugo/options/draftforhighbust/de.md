@@ -1,9 +1,9 @@
 ---
-title: Schnittkonstruktion für Oberbrustumfang
+title: Draft for high bust
 ---
 
-Erstelle das Schnittmuster augfgrund des Oberbrustumfanges (wenn vorhanden) und nicht nach dem Brustumfang (an der stärksten Stelle). Das Kleidungsstück wird figurnaher ausfallen für Menschen mit Brüsten.
+Draft the pattern for the high bust measurement (if available) rather than the (full) chest. This will result in a more fitted garment for people with breasts.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](hugo_draftforhighbust_sample.svg "Effekt dieser Option auf das Schnittmuster")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](hugo_draftforhighbust_sample.svg "Effect of this option on the pattern")
