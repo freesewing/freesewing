@@ -10,8 +10,8 @@ Make sure to pay attention to the inside of the fabric. Sweatshirt fabrics come 
 
 <Note>
 
-Vous n'avez pas à utiliser du tissu sweat. D'autres options sont disponibles, de la néoprène à la mode (aka le scuba) à un choix plus poilu comme le velour stretch (aka crushed velour en anglais).
+You don't have to use sweatshirt fabric. Other options are available, from fashion-forward neoprene (aka scuba) to a more eyebrow-rising choice like crushed velour (aka velvet).
 
-Ou si vous avez renoncé à l'élégance, vous pouvez opter pour le molleton ou la polaire.
+Or if you have given up on class, you could go for fleece.
 
 </Note>
