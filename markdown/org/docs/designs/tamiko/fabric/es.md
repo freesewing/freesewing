@@ -1,7 +1,7 @@
----
+- - -
 title: "Tamiko top: Fabric Options"
----
+- - -
 
-This pattern has a lot of unfinished edges, so you need something that does not ravel. And you want to go for something with a nice drape.
+Este patrón tiene muchos bordes inacabados, así que necesitas algo que no se cuelga. Y usted quiere ir a por algo con un buen borrón.
 
-Long story short, go for a knitted fabric, or some light scuba or something. No wovens.
+Larga historia corta, ir a un tejido tejido, o un poco de submarinismo o algo. No tejidos.
