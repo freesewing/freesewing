@@ -4,11 +4,11 @@ title: "Simon shirt"
 
 <Tip>
 
-##### Suivez la couture avec Kelly et Julian
+##### Follow the sew-along with Kelly and Julian
 
-Kelly Hogaboom et Julian Collins ont fait une couture de Simone, et ils ont des vidéos de
-toutes les étapes.
-Si vous cherchez à créer ce modèle, Kelly et Julian peuvent vous guider vers la fin.
+Kelly Hogaboom and Julian Collins did a Simon(e) sew-along, and they've got videos of
+all the steps.
+If you're looking to make this pattern, Kelly and Julian can guide you start to finish.
 
 You can find all the material's on Kelly's
 site: [#simonsayssew with kelly hogaboom & julian collins](https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
