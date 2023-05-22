@@ -2,10 +2,10 @@
 title: "Back vent length"
 ---
 
-![Lengte rugsplit](backventlength.svg)
+![Back vent length](backventlength.svg)
 
-Bepaalt de lengte van het rugsplit. Een lager cijfer leidt tot een korter split.
+Controls the length of the back vent. Lower numbers result in a shorter vent.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](jaeger_backventlength_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_backventlength_sample.svg "Effect of this option on the pattern")
