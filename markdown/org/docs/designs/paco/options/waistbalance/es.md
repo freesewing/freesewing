@@ -2,14 +2,14 @@
 title: "Waist balance"
 ---
 
-Controla la distribución de la tela entre las partes delanteras y traseras en la cintura.
+Controls the distribution of fabric between front and back parts at the waist.
 
-En cierto modo está de moda redactar un panel trasero más amplio en estos días. Doing so shifts the side seam forward which gives the illusion of being slimmer.
+It is somewhat in vogue to draft a larger back panel these days. Doing so shifts the side seam forward which gives the illusion of being slimmer.
 
 The side effect of shifting the side seam forward is that it's easy to get into the pockets that are located on the side seam.
 
-Esta opción le permite controlar este saldo.
+This option allows you to control this balance.
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](paco_waistbalance_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](paco_waistbalance_sample.svg "Effect of this option on the pattern")
