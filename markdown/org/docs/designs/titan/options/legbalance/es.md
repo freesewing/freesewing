@@ -2,9 +2,9 @@
 title: "Leg balance"
 ---
 
-Controla la proporción entre la parte frontal y trasera de las piernas.
+Controls the proportion between the front and back part of the legs.
 
-La parte trasera de las patas de los pantalones son siempre más anchas que la parte delantera. Esto controla en qué medida.
+The back of the trouser legs are always wider than the front. This controls by how much.
 
 <Note>
 
@@ -16,6 +16,6 @@ This trick is often used in womenswear jeans
 
 </Note>
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](titan_legbalance_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](titan_legbalance_sample.svg "Effect of this option on the pattern")
