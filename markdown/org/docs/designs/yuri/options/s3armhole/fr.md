@@ -1,6 +1,6 @@
----
+- - -
 titre : "Décalage de la couture d'épaule : côté de l'emmanchure"
----
+- - -
 
 Contrôle l'emplacement de la couture des épaules sur le côté du bras.
 
