@@ -11,8 +11,8 @@ You can use scraps of fabrics from your stash so don't worry about buying fabric
 ###### Bent is a block, not a pattern
 
 A block is a basic shape on which other patterns are based.
-Dit wordt soms ook een paspatroon genoemd, alhoewel puristen zeggen dat dit twee verschillende dingen zijn.
+They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
 
-Blokken worden meestal niet gemaakt zoals is, maar dienen als basis voor andere patronen.
+Blocks are typically not made as-is but rather serve as a basis for other patterns.
 
 </Note>
