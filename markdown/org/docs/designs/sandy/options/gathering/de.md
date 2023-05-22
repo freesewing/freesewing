@@ -1,11 +1,11 @@
----
+- - -
 title: "Gathering"
----
+- - -
 
-![Gathering](gathering.svg)
+![Kräuseln](gathering.svg)
 
-The percent by which the top of the skirt is longer than the bottom of the waistband. Give a value higher than 0 to pleat the skirt.
+Der Prozentsatz um welcher die Oberkante des Rockteils länger ist als die Unterkante des Bundes. Geben Sie einen Wert höher als 0, um den Rock zu verfehlen.
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](sandy_gathering_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](sandy_gathering_sample.svg "Effekt dieser Option auf das Schnittmuster")
