@@ -2,10 +2,10 @@
 title: "Hood angle"
 ---
 
-![Angle de capuche](./hoodangle.svg)
+![Hood angle](./hoodangle.svg)
 
-Contrôle l'angle de fixation de la capuche
+Controls the angle at which the hood is attached
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](huey_hoodangle_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_hoodangle_sample.svg "Effect of this option on the pattern")
