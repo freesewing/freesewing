@@ -1,21 +1,21 @@
----
+- - -
 title: "Collar roll"
----
+- - -
 
-![Collar roll](collarroll.svg)
+![Repli du col](collarroll.svg)
 
-How much the collar is taller than the collar stand at center back.
+Combien le collier est plus grand que le collier au centre du dos.
 
 <Note>
 
-###### What's the point?
+###### Pour quoi faire ?
 
-The collar starts upwards from the collar stand and then rolls over downwards. But it still needs to cover the collar stand. For that, it needs to be a bit longer.
+Le collier commence vers le haut à partir du pied du col, puis se roule vers le bas. Mais il doit encore couvrir le porte-col. Pour cela, il doit être un peu plus long.
 
-Increasing this does not make the collar higher (use the collar stand height for that) but rather makes it descend further down.
+Augmenter cela ne fait pas augmenter le collier (utiliser la hauteur du collier pour cela) mais plutôt le faire descendre plus loin.
 
 </Note>
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarroll_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_collarroll_sample.svg "Effet de cette option sur le modèle")
