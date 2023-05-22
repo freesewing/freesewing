@@ -1,11 +1,11 @@
 ---
-titre : "aisance à la taille"
+title: "Waist ease"
 ---
 
-Contrôle la quantité d'aisance au niveau de la taille.
+Controls the amount of ease at your waist.
 
 Even if you draft lower pants, this will still influence the ease at the top of your pants (the closure).
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](titan_waistease_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](titan_waistease_sample.svg "Effect of this option on the pattern")
