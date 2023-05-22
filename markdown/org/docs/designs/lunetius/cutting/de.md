@@ -1,17 +1,17 @@
 ---
-title: "Lunetius, die Lacerna: Zuschnitt"
+title: "Lunetius Lacerna: Cutting Instructions"
 ---
 
-- Schneide **1 Lacerna**-Teil im Stoffbruch
-- oder Schneide **2 Lacerna**-Teile
+- Cut **1 lacerna** part on the fold
+- or Cut **2 lacerna** parts
 
-Wie du Lunetius zuschneidest, hängt davon ab, welchen Stoff du gewählt hast. If you have enough fabric width you can cut it _on the fold_. If you don’t, you can cut two halves and later sew them together. To not have to later finish the centre back edge you can cut with the centre back edge on the selvage.
+The way to cut Lunetius is going to depend on what fabric you have chosen to use. If you have enough fabric width you can cut it _on the fold_. If you don’t, you can cut two halves and later sew them together. To not have to later finish the centre back edge you can cut with the centre back edge on the selvage.
 
-In der Römerzeit wurden viele Kleidungsstücke in Form gewoben, daher ist dies eine Stelle, wo du dir um historische Genauigkeit keine Sorgen machen musst (es sei denn, du willst Lunetius auch in Form weben).
+A lot of garments were woven to shape in the Roman era, so this is one aspect where you don’t need to worry about historical accuracy at all, unless you would like to weave your Lunetius to shape.
 
 <Comment by="Zee">In that case I salute you and please share the results \[in our discord\](https://discord.freesewing.org/)! </Comment>
 
-Wenn du mehr darüber erfahren willst, kannst du es nachlesen in:   
+If you want to learn more about this you can read about it in:  
 Granger-Taylor, H. (1982) _Weaving Clothes To Shape in the Ancient World: The Tunic and Toga of the Arringatore_ in Textile History 13 (1), pp 3-25
 
 ### On Historical Accuracy
