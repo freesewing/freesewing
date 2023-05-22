@@ -1,13 +1,13 @@
 ---
-title: "Armlochtiefe"
+title: "Armhole depth"
 ---
 
 ***
 
-![Der Effekt der Option Armlochtiefe auf das Schnittmuster](sample.png)
+![The effect of the armhole depth option on the pattern](sample.png)
 
-Die **Armlochtiefe** steuert die Tiefe des Armlochs.
+The **armhole depth** option controls the depth of the armhole.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bella_armholedepth_sample.svg "Effekt dieser Option auf das Schnittmuster")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_armholedepth_sample.svg "Effect of this option on the pattern")
