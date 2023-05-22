@@ -6,10 +6,10 @@ title: "Collar ease"
 
 Using the neck circumference is one part of getting a well-fitting bow tie. The other is how much collar ease you normally use for your shirts. Together they dictate how long the bow tie becomes.
 
-> #### Niet gebruikt met het aanpaslintje
+> #### Not used with the adjustment ribbon option
 > 
-> Deze optie wordt gebruikt om een precies passende vlinderdas te maken. Als je voor het aanpaslintje kiest wordt deze optie niet gebruikt.
+> This option is used to make a precise fitting bow tie. When you use the adjustment ribbon, this option is not used.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_collarease_sample.svg "Effect of this option on the pattern")
