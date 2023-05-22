@@ -2,10 +2,10 @@
 title: "Hem width"
 ---
 
-![Saumbreite](hemwidth.svg)
+![Hem width](hemwidth.svg)
 
-Die Breite des Saum.
+The width of the hem.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](sandy_hemwidth_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](sandy_hemwidth_sample.svg "Effect of this option on the pattern")
