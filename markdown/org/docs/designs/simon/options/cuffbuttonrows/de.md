@@ -1,17 +1,17 @@
----
+- - -
 title: "Cuff button rows"
----
+- - -
 
-![Cuff button rows](cuffbuttonrows.svg)
+![Manschettenknopfreihen](cuffbuttonrows.svg)
 
-Do you want a single button on your barrelcuff, or two?
+Möchten Sie eine einzelne Taste auf Ihrer Behältermanschette oder zwei?
 
 <Note>
 
-This does only apply to barrelcuffs. So if you picked a French cuff as cuff style this will be ignored.
+Dies gilt nur für Fässer. Wenn Sie also eine französische Manschette als Manschette wählen, wird dies ignoriert.
 
 </Note>
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_cuffbuttonrows_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_cuffbuttonrows_sample.svg "Effekt dieser Option auf das Schnittmuster")
