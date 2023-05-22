@@ -1,11 +1,11 @@
----
+- - -
 title: "Lapel start"
----
+- - -
 
-![Lapel start](lapelstart.svg)
+![Revers Beginn](lapelstart.svg)
 
-Location of the lapel break point (where the front opening starts). Lower values are closer to the waistline, higher values closer to the chestline.
+Die Lage des Hotels ist ideal für eine Städtereise oder für eine Städtereise. Niedrigere Werte sind näher an der Taille, höhere Werte näher an der Brustlinie.
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_lapelstart_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](jaeger_lapelstart_sample.svg "Effekt dieser Option auf das Schnittmuster")
