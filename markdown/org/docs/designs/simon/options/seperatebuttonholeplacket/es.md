@@ -1,11 +1,11 @@
----
+- - -
 title: "Seperate buttonhole placket"
----
+- - -
 
-![Seperate buttonhole placket](seperatebuttonholeplacket.svg)
+![Tapeta de ojal separada](seperatebuttonholeplacket.svg)
 
-Whether or not you want the buttonhole placket to be a seperate pattern part.
+Si desea o no que la placket del agujero del botón sea una parte separada del patrón.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_seperatebuttonholeplacket_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_seperatebuttonholeplacket_sample.svg "Efecto de esta opción en el patrón")
