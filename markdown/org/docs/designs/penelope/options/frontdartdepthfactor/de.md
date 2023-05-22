@@ -2,8 +2,8 @@
 title: "Front dart depth factor"
 ---
 
-Wie weit nach unten geht der vordere Dart vom Band. Dies ist ein Faktor der natürlichen Taille Zur Sitzmessung.
+How far down does the front dart go from the waistband. This is a factor of the natural waist To seat measurement.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](penelope_frontdartdepthfactor_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_frontdartdepthfactor_sample.svg "Effect of this option on the pattern")
