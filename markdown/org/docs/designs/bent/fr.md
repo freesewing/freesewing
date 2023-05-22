@@ -1,5 +1,5 @@
 ---
-titre : "Bloc corporel pour Bent"
+title: "Bent body Block"
 ---
 
 <PatternDocs pattern='bent' />
