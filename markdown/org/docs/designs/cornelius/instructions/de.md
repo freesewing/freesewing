@@ -1,6 +1,6 @@
----
+- - -
 title: "Cornelius cycling breeches: Sewing Instructions"
----
+- - -
 
 ### Step 1: The Front Pockets
 
@@ -79,7 +79,7 @@ If you are worried about a draft you can create a triangle piece of fabric that 
 
 </Note>
 
-#### Keystone
+#### Schlüsselstein
 
 - If using construct plackets for the leg slits.
 - Sew the plackets to the leg slits similar to how you would sew a sleeve cuff on a shirt.
@@ -127,6 +127,6 @@ You can _Edgestitch_ the waistband together like a modern waistband if you prefe
 
 - Sew the waistband and leg band buttons on.
 
-### Step 7: Enjoy!
+### Schritt 7: Viel Spaß mit deinem neuen Shirt!
 
-You're all done! Now go have a ride in your brilliant new cycling breeches!
+Sie sind fertig! Now go have a ride in your brilliant new cycling breeches!
