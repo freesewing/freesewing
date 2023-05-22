@@ -1,5 +1,5 @@
 ---
-title: Unice, die Unterhose
+title: Unice undies
 ---
 
 <PatternDocs pattern='unice' />
