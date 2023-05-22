@@ -1,33 +1,33 @@
 ---
-titre : "Nœud papillon Benjamin : Instructions de couture"
+title: "Benjamin bow tie: Sewing Instructions"
 ---
 
-## Notes et conseils
+## Notes and tips
 
-### Précision
+### Precision
 
-Since a bow tie is a rather small item, precision with sewing is key to a good result. Toute légère différence entre la partie supérieure et la partie inférieure du nœud se verra. Pour obtenir un excellent résultat, j'ai trouvé très utile de tracer les lignes de couture sur l'entoilage et de les suivre pendant la couture.
+Since a bow tie is a rather small item, precision with sewing is key to a good result. Any slight difference between the upper and lower part of the bow will stand out. To get a great result I found it very helpful to trace the actual seam lines onto the interfacing and follow that while sewing.
 
-### Repassez judicieusement
+### Press wisely
 
-Plus loin dans les étapes de construction, on vous demandera de repasser votre tissu. Faites attention à ne pas utiliser trop de chaleur sur un tissu délicat qui pourrait ne pas le supporter.
+Later in the construction steps, you will be asked to press your fabric. Please be careful that you are not using too much heat on a delicate fabric that can't handle it.
 
-C'est une bonne idée de faire des essais sur quelques morceaux de tissu avant de commencer. Cela vous permettra de déterminer le bon réglage de chaleur pour le tissu que vous utilisez.
+It's a good idea to try pressing some fabric scraps before you start. This will allow you to figure out what is a good heat setting for the fabric you are using.
 
-### Déterminez le sens du tissu
+### Choosing your grain
 
-Ce patron comprend un sens de droit fil. Ce droit fil est principalement là pour être utilisé avec l'entoilage. Puisque chaque pièce de patron est entoilée, le droit fil du tissu lui-même n'est pas si important. Vous pouvez même changer cela du standard pour un effet plus original.
+This pattern includes a grain line. This grain line is mostly there to be used with the interfacing. Since each pattern piece is interfaced, the grain line of the fabric itself is not so important. You can even change this from the standard for more informal impressions.
 
 <Note>
 
-Si tout cela semble très confus, puis-je suggérer de lire la page d'aide 
-sur [le droit fil de tissu](/docs/sewing/fabric-grain).
+If this all sounds very confusing, might I suggest reading the help
+page on [Fabric grain](/docs/sewing/fabric-grain).
 
 </Note>
 
 ### Bow tie adjustment ribbon and hardware
 
-By default, this design makes a fixed-length bow tie that is the right length for a certain neck size. However, by enabling the Adjustment Ribbon option, it can also make a tie that uses an adjustment ribbon and hardware that makes the bow tie adjustable to different neck sizes. Ceci est utile si toutes vos chemises n'ont pas les mêmes mesures de cou, ou si vous portez parfois des chemises avec plus d'aisance au cou.
+By default, this design makes a fixed-length bow tie that is the right length for a certain neck size. However, by enabling the Adjustment Ribbon option, it can also make a tie that uses an adjustment ribbon and hardware that makes the bow tie adjustable to different neck sizes. This is useful if not all of your shirts have the same neck measurements, or if you sometimes like shirts with more ease in the neck.
 
 These adjustment ribbons and bow tie hardware can be found in the better haberdasheries or can be ordered online.
 
@@ -43,21 +43,21 @@ outside the scope of these instructions.
 
 </Note>
 
-### Marge de couture
+### Seam allowance
 
-Puisque le nœud papillon est construit avec le tissu endroit contre endroit, tout l'ouvrage devra être retourné. Vous voulez probablement envisager d'utiliser une petite marge de couture de 6 mm (¼ pouces) pour réduire les surépaisseurs.
+Since the bow tie is constructed with the right sides of the fabric against each other, the whole thing will have to be turned inside out. You probably want to consider using a small seam allowance of 6mm (¼ inch) to reduce the bulk.
 
-## Montage
+## Construction
 
-### Étape 1 : Thermocoller l'entoilage
+### Step 1: Apply interfacing
 
-Appliquez de l'entoilage sur les pièces où vous pensez que c'est nécessaire.
+Apply interfacing to all parts where you feel it's needed.
 
-### Sans ruban d'ajustement
+### Without adjustment ribbon
 
 #### Step 2: Sew the bow to the collar band
 
-Put one of the Collar Band parts on one of the Bow parts, right sides together. Alignez les extrémités des deux parties. Maintenant coudre à travers les extrémités pour rejoindre les pièces.
+Put one of the Collar Band parts on one of the Bow parts, right sides together. Align the ends of both parts. Now sew across the end to join the parts.
 
 ![Sew the collar band to the bow](step12.png)
 
@@ -69,13 +69,13 @@ Press open all the seams.
 
 You now have two identical single sided bow ties.
 
-#### Étape 3 : Assemblez les deux côtés
+#### Step 3: Join both sides
 
 ![Sew both sides together](step13.png)
 
 Lay both the sides you made on top of each other, right sides together. Sew all along the edges, but leave an area of 5 cm open in the middle of the collar band. Through this opening we will turn the bow tie right side out.
 
-#### Étape 4 : Retourner
+#### Step 4: Turning
 
 ![Clip seam allowance](step14.png)
 
@@ -85,7 +85,7 @@ Then use the back of a large crochet hook, or some other appropriately long skin
 
 Once you have the tie right side out, make sure you push all the corners and sides out before giving it a good press.
 
-#### Étape 5 : Fermeture
+#### Step 5: Closing
 
 ![Closing the bow tie](step15.png)
 
@@ -93,9 +93,9 @@ Now all that is left is closing the little hole we used to turn the bow tie righ
 
 Now give it one last press and admire your work.
 
-### Avec ruban d'ajustement
+### With adjustment ribbon
 
-#### Étape 2 : Attacher le ruban
+#### Step 2: Attaching the ribbon
 
 ![Sew the ribbon to part 1](step22.png)
 
@@ -105,7 +105,7 @@ Put right sides of the Short Bow piece and the ribbon together.
 
 Now sew across the end to join the parts.
 
-#### Étape 3 : Assemblez les deux côtés
+#### Step 3: Join both sides
 
 ![Sew both sides together](step23.png)
 
@@ -117,7 +117,7 @@ Lay the Long Bow on top of the ribbon and Short Bow part, also right sides toget
 
 Again, sew all along the edges, leaving the short end open.
 
-#### Étape 4 : Retourner
+#### Step 4: Turning
 
 ![Clip seam allowance](step14.png)
 
@@ -129,7 +129,7 @@ Once you have the part right side out, make sure you push all the corners and si
 
 Do this with both parts.
 
-#### Étape 5 : Ajouter les accessoires d'ajustement
+#### Step 5: Add hardware
 
 Now we need to add the two pieces of hardware that make the bow tie adjustable. The oval loop piece will be attached to the part without the adjustment ribbon. And, the piece with the T-hook will go on the part with the ribbon.
 
