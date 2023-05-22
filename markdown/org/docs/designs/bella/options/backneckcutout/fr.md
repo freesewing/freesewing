@@ -1,13 +1,13 @@
 ---
-title: "Back neck cutout"
+title: "Arrondi de l'encolure au dos"
 ---
 
 ***
 
-![The effect of the back neck cutout option on the pattern](sample.png)
+![L'effet de l'option de découpe du cou arrière sur le motif](sample.png)
 
-The **back neck cutout** option controls how far the neck opening is scooped out at the back.
+L'option **de découpe du col arrière** contrôle jusqu'à quel point l'encolure est aillé à l'arrière.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_backneckcutout_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bella_backneckcutout_sample.svg "Effet de cette option sur le motif")
