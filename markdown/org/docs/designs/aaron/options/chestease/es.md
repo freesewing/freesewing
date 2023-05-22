@@ -1,6 +1,6 @@
----
+- - -
 title: "Chest ease"
----
+- - -
 
 ![La opción de facilidad del cofre en Aaron](./chestease.svg)
 
