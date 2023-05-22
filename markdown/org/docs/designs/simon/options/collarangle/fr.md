@@ -2,22 +2,22 @@
 title: "Collar angle"
 ---
 
-![Angle du col](collarangle.svg)
+![Collar angle](collarangle.svg)
 
-Le nombre de degrés entre le bord du col et la ligne de grain.
+The number of degrees between the collar edge and the grainline.
 
 <Note>
 
-###### Pour quoi faire ?
+###### What's the point?
 
-Avec la hauteur du col, c'est le facteur le plus important pour le style de votre col.
+Together with the collar height, this is the most important factor for the style of your collar.
 
-Des valeurs plus élevées signifient un style plus découpé.
+Higher values mean a more cut-away style.
 
-Dans l'image d'exemple, le haut est de 80 degrés par défaut et le bas est de 110 degrés.
+In the example image, the top is 80 degrees (the default) and the bottom is 110 degrees.
 
 </Note>
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_collarangle_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarangle_sample.svg "Effect of this option on the pattern")
