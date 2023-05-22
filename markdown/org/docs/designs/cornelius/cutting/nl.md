@@ -2,9 +2,9 @@
 title: "Cornelius cycling breeches: Cutting Instructions"
 ---
 
-### Materialen
+### Materials
 
-- **Buitenstof**
+- **Main fabric**
   - Cut **2 back** parts
   - Cut **2 front** parts
   - Cut **2 pocket facing** parts
@@ -13,7 +13,7 @@ title: "Cornelius cycling breeches: Cutting Instructions"
   - Cut **1 zipper guard** part on the fold
 - **Lining (Pocket) fabric**
   - Cut **2 pocket** parts
-- **Tussenvoering**
+- **Interfacing**
   - Cut **1 waistband** part on the fold
 
 <Note>
