@@ -54,7 +54,7 @@ export const ReadMore = ({
   // Deal with root being passed as true
   if (root === true) root = ''
 
-  const tree = root ? getRoot[site](root, siteNav) : getRoot[site](slug, siteNav)
+  const tree = root === false ? getRoot[site](slug, siteNav) : getRoot[site](root, siteNav)
 
   const list = []
   for (const page of currentChildren(tree)) {
@@ -63,7 +63,9 @@ export const ReadMore = ({
         <Link href={`/${page.s}`}>
           <span className={pretty ? getClasses(level) : ''}>{page.t}</span>
         </Link>
-        {recurse ? <ReadMore root={page.s} recurse={recurse} level={level + 1} /> : null}
+        {recurse ? (
+          <ReadMore root={page.s} level={level + 1} {...{ recurse, site, pretty }} />
+        ) : null}
       </li>
     )
   }
