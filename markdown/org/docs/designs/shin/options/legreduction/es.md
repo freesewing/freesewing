@@ -2,12 +2,12 @@
 title: "Leg reduction"
 ---
 
-La cantidad para reducir aún más el estiramiento en las patas (superior).
+The amount to further reduce the stretch at the (upper) legs.
 
-> #### ¿Cuál es la cuestión?
+> #### What's the point?
 > 
-> Esta opción hace que las piernas encajen más snugly que el resto de los troncos de natación para evitar el hueco.
+> This option makes the legs fit more snugly than the rest of your swimming trunks to avoid gaping.
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](shin_legreduction_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](shin_legreduction_sample.svg "Effect of this option on the pattern")
