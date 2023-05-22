@@ -8,12 +8,12 @@ You can make BIG bow ties, or small ones. This option allows you to change the v
 
 <Note>
 
-###### No se usa con el tipo de empatado cuadrado
+###### Not used with the Square bow tie type
 
-Esta opción se ignora con la opción de empatado cuadrado. Los lazos cuadrados de arco son tan anchos como el ancho del nudo.
+This option is ignored with the Square bow tie option. Square bow ties are as wide as the knot width.
 
 </Note>
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_tipwidth_sample.svg "Effect of this option on the pattern")
