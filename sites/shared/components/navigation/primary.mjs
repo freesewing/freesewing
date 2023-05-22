@@ -91,11 +91,18 @@ export const isActive = (slug, active) => {
   return result
 }
 
+const hasChildren = (page) => {
+  const keys = new Set([...Object.keys(page)])
+  for (const key of ['t', 's']) keys.delete(key)
+
+  return keys.size
+}
+
 // Component that renders a sublevel of navigation
 const SubLevel = ({ nodes = {}, active = '' }) => (
   <ul className="pl-5 list-inside">
     {currentChildren(nodes).map((child) =>
-      Object.keys(child).length > 4 ? (
+      hasChildren(child) ? (
         <li key={child.s} className="flex flex-row">
           <details className="grow" open={isActive(child.s, active)}>
             <summary
