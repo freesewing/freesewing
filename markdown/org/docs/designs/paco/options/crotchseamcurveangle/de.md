@@ -1,6 +1,6 @@
----
+- - -
 title: "Crotch seam angle"
----
+- - -
 
 Controls the angle of the crotch seam curve.
 
@@ -8,6 +8,6 @@ Controls the angle of the crotch seam curve.
 - Increasing this option will draft the crotch seam at 180 - the angle.
 
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](paco_crotchseamcurveangle_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](paco_crotchseamcurveangle_sample.svg "Effekt dieser Variable auf das Schnittmuster")
