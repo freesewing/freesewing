@@ -2,6 +2,10 @@
 title: "Waistband Curve"
 ---
 
-Bepaalt hoe gebogen de tailleband is.
+Controls how curved the waistband is.
 
-Als je dit verhoogt krijg je een kromme tailleband, waardoor het kleiner aan de bovenrand van de tailleband.
+Increasing this will give a curvier waistband, making it smaller at the top edge of the waistband.
+
+## Effect of this option on the pattern
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_waistbandcurve_sample.svg "Effect of this option on the pattern")
