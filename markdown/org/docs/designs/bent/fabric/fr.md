@@ -8,11 +8,11 @@ You can use scraps of fabrics from your stash so don't worry about buying fabric
 
 <Note>
 
-###### Bent is a block, not a pattern
+###### Bent est un bloc, pas un motif
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Un bloc est une forme de base sur laquelle se basent d'autres motifs.
+Ils sont parfois aussi appelés patrons de base, bien que les puristes soutiennent qu'un bloc et un patron de base sont des choses différentes.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Les patrons de base ne sont donc généralement pas utilisés tels quels, mais plutôt pour élaborer d'autres modèles.
 
 </Note>
