@@ -2,13 +2,13 @@
 title: "Buttonhole placket style"
 ---
 
-![Knopflochleiste Stil](buttonholeplacketstyle.svg)
+![Buttonhole placket style](buttonholeplacketstyle.svg)
 
-Wollen Sie einen klassischen Buttonlochplatz oder einen nahtlosen (manchmal auch französisch bezeichnet)?
+Do you want classic buttonhole placket, or a seamless one (sometimes called French style)?
 
 <Tip>
 
-Nahtlos ist weniger Arbeit, und es sieht großartig aus.
+Seamless is less work, and it looks great.
 
 </Tip>
 
@@ -18,6 +18,6 @@ As seamless is only possible on a _cut-on_ placket, this option is ignored if yo
 
 </Note>
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_buttonholeplacketstyle_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_buttonholeplacketstyle_sample.svg "Effect of this option on the pattern")
