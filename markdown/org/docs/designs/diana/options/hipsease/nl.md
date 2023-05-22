@@ -2,10 +2,10 @@
 title: "Hips ease"
 ---
 
-![De optie voor overwijdte heupen van Diana](./hipsease.svg)
+![The hips ease option on Diana](./hipsease.svg)
 
-Deze optie bepaalt de hoeveelheid overwijdte aan de heupen.
+This option controls the amount of ease at the hips.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](diana_hipsease_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_hipsease_sample.svg "Effect of this option on the pattern")
