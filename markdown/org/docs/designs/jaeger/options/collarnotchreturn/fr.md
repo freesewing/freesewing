@@ -2,10 +2,10 @@
 title: "Collar notch return"
 ---
 
-![Revers du col cranté](collarnotchreturn.svg)
+![Collar notch return](collarnotchreturn.svg)
 
-Contrôle la longueur du côté supérieur de l'encoche. 100% = même que la profondeur de l'encoche.
+Controls the length of the upper notch side. 100% = same as notch depth.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_collarnotchreturn_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_collarnotchreturn_sample.svg "Effect of this option on the pattern")
