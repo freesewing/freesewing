@@ -2,16 +2,16 @@
 title: "Trayvon tie: Cutting Instructions"
 ---
 
-- **Buitenstof**
-  - Knip **1 punt**
-  - Knip **1 staart**
-- **Voering**
-  - Knip **1 voering punt**
-  - Knip **1 voering staart**
-  - Knip **1 lus**
-- **Tussenvoering**
-  - Knip **1 tussenvoering punt**
-  - Knip **1 tussenvoering staart**
+- **Main fabric**
+  - Cut **1 tip**
+  - Cut **1 tail**
+- **Lining fabric**
+  - Cut **1 lining tip**
+  - Cut **1 lining tail**
+  - Cut **1 loop**
+- **Interfacing**
+  - Cut **1 interfacing tip**
+  - Cut **1 interfacing tail**
 
 <Warning>
 
@@ -25,16 +25,16 @@ title: "Trayvon tie: Cutting Instructions"
 
 <Tip>
 
-######Kies de draadrichting van je das
+###### Choosing your tie grain
 
-![Eén stof, verschillende draadrichting, verschillende dassen. Maak je geen zorgen over de regels, maak wat je leuk vindt](tie-grain.png)
+![One fabric, different grains, different ties. Don't worry about rules, make what you like](tie-grain.png)
 
-Dit patroon heeft geen draadrichting. Normaal gezien wordt de draadrichting op het patroon geprint om je te tonen hoe je het patroon op de stof moet leggen, afhankelijk van de draadrichting.
+This pattern does not include a grain line. The grain line is typically printed on the pattern to show you how to place your pattern on your fabric, relative to the fabric's grain.
 
-Voor een das is dit niet echt een regel, eerder een persoonlijke keuze. Daarom staat er geen draadrichting op het patroon. Je kan doen wat je wil.
+For a tie, how you do this is not so much a rule as it is a personal choice. As such, there is no grain line printed on the pattern. You can do what you want.
 
-Dit gezegd zijnde zijn veel dassen schuin van draad geknipt, aangezien dit het mooiste valt. Als je niet zeker bent wat te doen, knip je das dan misschien schuin van draad.
+That being said, a lot of ties are cut on bias, as this results in the best drape. If you are unsure what to do, consider cutting your tie on bias.
 
-Als dit allemaal erg verwarrend vindt kan ik je aanraden onze pagina over <a href="/en/docs/sewing/fabric-grain">Draadrichting</a> eens te bekijken).
+If this all sounds very confusing, might I suggest reading the help page on [Fabric grain](/docs/sewing/fabric-grain).
 
 </Tip>
