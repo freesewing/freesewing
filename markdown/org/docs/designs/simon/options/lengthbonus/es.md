@@ -2,23 +2,21 @@
 title: "Length bonus"
 ---
 
-![Bonus de longitud](lengthbonus.svg)
+![Length bonus](lengthbonus.svg)
 
-¿Cuánta camisa quieres ser capaz de pegar en tus pantalones?
+How much shirt do you want to be able to tuck in your trousers?
 
 <Note>
-
-###### ¿Cuál es el punto?
 
 ###### What's the point?
 
 Keeping your shirt tucked neatly in your trousers is why you need this extra length.
-Nadie necesita saber sobre ese tatuaje Justin Bieber en la parte inferior de la espalda.
+Nobody needs to know about that Justin Bieber tattoo on your lower back.
 
-Si quieres una camisa más casual para llevar sobre tus pantalones, querrás bajar esto.
+If you want a more casual shirt to wear over your trousers, you will want to lower this.
 
 </Note>
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_lengthbonus_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_lengthbonus_sample.svg "Effect of this option on the pattern")
