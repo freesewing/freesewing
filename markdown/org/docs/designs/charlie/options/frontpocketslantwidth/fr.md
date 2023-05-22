@@ -1,11 +1,11 @@
----
-title: "Front pocket slant width"
----
+- - -
+titre : "Largeur oblique de la poche avant"
+- - -
 
-Controls the width by which the front pocket slant cuts into the front panel.
+Contrôle la largeur par laquelle la poche avant glisse dans le panneau avant.
 
-Increasing this will give a more slanted pocket.
+Augmenter ceci donnera une poche plus inclinée.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_frontpocketslantwidth_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_frontpocketslantwidth_sample.svg "Effet de cette option sur le modèle")
