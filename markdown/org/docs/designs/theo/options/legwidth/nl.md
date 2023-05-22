@@ -2,18 +2,18 @@
 title: "Leg width"
 ---
 
-Bepaalt de breedte van de broekspijpen.
+Controls the width of the legs.
 
 <Note>
 
-Dit patroon kwam in twee variaties. Theodore en Theo, de laatste heeft een afgeslankte
-.
+This pattern used to come in two variations. Theodore, and Theo, the latter having
+a slimmer cut.
 
-Sinds FreeSewing v2.0 hebben we deze samengevoegd tot een enkel patroon en deze optie
-laat je toe om de breedte van de been te veranderen.
+Since FreeSewing v2.0 we've merged these into a single pattern and this option
+allows you to alter the leg width.
 
 </Note>
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](theo_legwidth_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](theo_legwidth_sample.svg "Effect of this option on the pattern")
