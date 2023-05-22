@@ -1,28 +1,28 @@
 ---
-titre: "Bloc de corps pour Brian : Instructions de coupe"
+title: "Brian body block: Cutting Instructions"
 ---
 
-**Tissu principal**
+**Main fabric**
 
-- Couper **1 partie avant** dans le pli.
-- Coupez **1 partie arrière** sur le pli.
-- Couper **2 pièces** de manche.
+- Cut **1 Front** part on the fold.
+- Cut **1 Back** part on the fold.
+- Cut **2 Sleeve** parts.
 
-Ces instructions de coupe ne concernent que le bloc Brian par défaut. Ajustez votre coupe en conséquence si vous avez apporté des modifications au bloc.
+These cutting instructions are just for the default Brian block. Adjust your cutting accordingly if you have/are making changes to the block.
 
 <Tip>
 
-Si vous n'avez personne pour vous aider à épingler Brian, vous trouverez peut-être plus facile de couper deux parties du devant avec une marge de couture et de coudre les dos lors de la construction afin de pouvoir épingler le devant.
+If you do not have someone to help pin you into Brian then you may find it easier to Cut 2 Front parts with seam allowance and sew the backs up when constructing so you can pin in the front.
 
 </Tip>
 
 <Note>
 
-###### Brian est un patron de base.
+###### Brian is a block, not a pattern
 
-Un patron de base est une forme basique de laquelle on part pour créer d'autres patrons.
-Ils sont parfois aussi appelés patrons de base, bien que les puristes soutiennent qu'un bloc et un patron de base sont des choses différentes.
+A block is a basic shape on which other patterns are based.
+They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
 
-Les patrons de base ne sont donc généralement pas utilisés tels quels, mais plutôt pour élaborer d'autres modèles.
+Blocks are typically not made as-is but rather serve as a basis for other patterns.
 
 </Note>
