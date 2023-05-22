@@ -1,11 +1,11 @@
----
+- - -
 title: "Waistband position"
----
+- - -
 
-![Waistband position](waistbandposition.svg)
+![Position des Taillenbundes](waistbandposition.svg)
 
-Where the waistband sits. 0% makes it sit on the natural waist, 100% makes it sit on the hips.
+Wo die Taille sitzt. 0% macht es sitzt auf der natürlichen Taille, 100% macht es sitzt auf den Hüften.
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](sandy_waistbandposition_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](sandy_waistbandposition_sample.svg "Effekt dieser Option auf das Schnittmuster")
