@@ -4,43 +4,43 @@ title: "Jaeger jacket: Sewing Instructions"
 
 <Note>
 
-###### Jaeger Dokumentation ist im Bau
+###### Jaeger documentation is under construction
 
-Diese Dokumentation ist noch nicht fertig.
+This documentation is not yet finished.
 
 </Note>
 
-## Konstruktion
+## Construction
 
-### Front-Dart schließen
+### Close the front darts
 
 ![Close the front darts](closeFrontDarts.svg)
 
-#### Doppelte falten
+#### Fold double
 
 Fold the front double with the good sides together and pin it down so the fold is neatly in the middle of the front dart.
 
-#### Nähen Dart
+#### Sew darts
 
 Sew the front dart close, taking care to have the dart stop at the correct top end. The bottom is not that important as it will be covered by the pockets. But the top end of the dart will be clearly visible, so please make sure to have it end at the same height at both sides.
 
-#### Öffnen und drücken
+#### Cut open and press
 
 Once the front darts are closed, cut open the dart at the back. You won't be able to cut it open all the way to the tip, but that's fine. Press open the darts where they are cut open, and press the rest to the side. Take care to only press from the back. Pressing from the front will likely mark your fabric.
 
-### Baue die Brusttasche
+### Construct the chest pocket
 
 ![Apply fusible interfacing to the back of the chest pocket](basteChestPocket.svg)
 
-#### Verwundbare Schnittstelle anwenden
+#### Apply fusible interfacing
 
 Apply a rectangular piece of light fusible interfacing around the chest pocket area so that it extends a few cm in all directions.
 
-> ##### Wir verwenden nicht fusible auf der ganzen Front
+> ##### We're not using fusible on the entire front
 > 
-> Sportcoats werden typischerweise aus etwas schwereren Stoffen hergestellt. That, and the fact that I prefer to use canvas rather than fusible interfacing, means that I don't interface the front with fusible.
+> Sportcoats are typically made from somewhat heavier fabrics. That, and the fact that I prefer to use canvas rather than fusible interfacing, means that I don't interface the front with fusible.
 
-#### Brust Weltenumriss, Markiere Endpunkte der oberen Linie
+#### Baste the chest welt outline, mark top line endpoints
 
 With the fusible in place, thread a needle and baste around the chest pocket to transfer the markings to the good side of the fabric.
 
@@ -48,45 +48,45 @@ This pocket differs from a traditional welt pocket. The welt extends above the p
 
 On the top line of your basted welt pocket, mark 0.5cm inwards from the corners of the top line.
 
-> Diese Punkte sind Noten auf dem vorderen Teil deines Musters.
+> These points are notches on the front part of your pattern.
 
 ![Close the chest pocket welt](foldChestPocketWelt.svg)
 
-#### Falten, drücken und nähen der Seitennaht der Welt
+#### Fold, press and sew the side seams of the welt
 
 Fold the welt double with the good sides together, and close the sides (sew the side seams).
 
-#### Nahtzugabe, drehen und drücken
+#### Trim seam allowance, turn and press
 
 Trim the seam allowances on the sides and especially limit the seam allowance towards the corner to avoid bulk.
 
 Turn inside out so the good side is out and press.
 
-> Achten Sie darauf, nicht zu überdrücken, da Sie von der guten Seite des Stoffes drücken.
+> Be careful not to overpress as you'll be pressing from the good side of the fabric.
 
-#### Füge die untere Linie der Welt ein, damit du weißt, wo du nähen solltest
+#### Baste the bottom line of the welt so you know where to sew
 
 Baste a stitching guide at the bottom of the welt to mark the welt/seam allowance boundary. This will be the line to sew on later.
 
-#### Nähen Sie die Welt nach vorne
+#### Sew the welt to the front
 
 ![Attach the chest pocket welt to the front](attachChestPocketWelt.svg)
 
 Place welt down on good side of front with the folded side downwards, and sew to bottom line. Make sure to stop and start exactly at the edge of the line you basted.
 
-#### Nähe die Brusttasche nach vorne
+#### Sew the chest pocket bag to the front
 
 ![Attach the chest pocket bag to the front](attachChestPocketBag.svg)
 
 Place the pocket bag down on the front. The front with good side up, but the pocket bag with bad side up. Make sure to have the longest side of the chest pocket bag on the highest side of the chest pocket.
 
-> Nur geschwemmte Brusttaschen haben eine höhere und untere Seite.
+> Only slanted chest pockets have a higher and lower side.
 
 Sew this in place along the top line. Remember this should be shorter than the bottom row of stitches to attach the welt, since you marked 0.5cm inwards from the corners.
 
-> Da die Tasche in der Regel ein rutschiger Stoff ist, sollten Sie ihn vor dem Nähen anheften oder einstoßen.
+> As the pocket back is typically some slippery fabric, you probably want to pin or baste this in place prior to sewing.
 
-#### Öffnen, drehen und drücken der Brust ausschneiden
+#### Cut open chest pocket opening, turn, and press
 
 ![Press the chest pocket](pressChestPocket.svg) Now cut open your welt in the middle of both seamlines. Don't cut to the edge, but create a trianngular shape there.
 
@@ -96,9 +96,9 @@ Get everything to lay nice and flat, and press.
 
 Now, bring the welt only to the front and get it to lie nice and flat. Press again from the back.
 
-> Widerstehen Sie dem Drang, dies von vornherein zu drücken.
+> Resist the urge to press this from the front.
 
-#### Beende die Brusttasche
+#### Finish the chest pocket
 
 ![Finish the chest pocket](finishChestPocket.svg)
 
@@ -110,7 +110,7 @@ Finally, close the pocket bag by sewing the sides. Do this by placing the front 
 
 Baste the chest pocket closed while we contruct the jacket.
 
-### Die Fronten vorbereiten
+### Prepare the fronts
 
 ![Prepare the canvas for the fronts](prepareCanvas.svg)
 
@@ -120,9 +120,9 @@ Cut out the front dart and close it with a zig-zag stitch, making sure not to le
 
 Cut out the chest canvas piece. Align it along the roll line, and baste it in place on front canvas piece.
 
-> Das Bruststück ist auf dem vorderen Teil Ihres Musters markiert.
+> The chest piece is marked on the front part of your pattern.
 
-#### Leinwand an die Fronten einfügen
+#### Baste canvas to the fronts
 
 ![Pad-stitching, you love that stuff, right?](padAndTape.svg)
 
@@ -131,7 +131,7 @@ Now baste the front canvas and chest piece to your front. Keep in mind that the 
 > Baste it a bit inwards from the seam line so you can fold it away when sewing these seams later.  
 > You don't want your canvas to get caught in the seams.
 
-#### Halten Sie Ihre Lapels fest
+#### Pad-stitch your lapels
 
 Time to feel like a real tailor, and pad-stitch those lapels.
 
@@ -139,27 +139,27 @@ Make sure to make the stitches a bit smaller towards the lapel tip, to make sure
 
 > If you're not sure how to pad-stitch the lapels, [let us know](https://discord.freesewing.org/) and we'll make an attempt to document it.
 
-#### Klebeband den Rand und die Rollenlinie
+#### Tape the lapel edge and roll line
 
 Now we are going to hand-sew tailor tape along the lapel edges of the front, and along the roll line. This will also secure the canvas to the front here and there.
 
 Keep in mind that:
 
-- Das Band entlang der Rollenlinie sollte innerhalb der Rollenlinie platziert werden.
-- Das Band entlang der Rollenlinie sollte etwa einen halben Zentimeter kürzer sein als die Distanz, die es umspannt. Die leichte Spannung, die dadurch entsteht, hilft der Lupe angenehm zu rollen und die Kontur zu Ihrem Körper.
-- Das Klebeband am Rand der Lupe sollte innerhalb der Nahtlinie platziert werden
+- The tape along the roll line should be placed inside the roll line.
+- The tape along the roll line should be about half a centimeter shorter than the distance it spans. The slight tension this creates helps the lapel roll nicely and contour to your body.
+- The tape along the lapel edge should be placed inside the seam line
 
-> ##### Nicht durch deinen Stoff nähen
+> ##### Don't sew through your fabric
 > 
 > While sewing the tape to your front, avoid pushing your needle all the way through your fabric so that your stitches will show on the front.
 > 
-> Gleichzeitig sollten Sie das Klebeband auch nicht nur auf Ihre Leinwand sichern. Instead, you should try to catch a few threads of your fabric on every stitch, so that the tape is secured in place, yet the stitches don't show at the front.
+> At the same time, you should not secure the tape only to your canvas either. Instead, you should try to catch a few threads of your fabric on every stitch, so that the tape is secured in place, yet the stitches don't show at the front.
 > 
-> Dies ist weniger ein Problem oberhalb des Bruchpunktes Ihrer Rasse, wo der Stoff auf der Rückseite des Lapels sein wird.
+> This is less of an issue above the break point of your lapel where the fabric will be on the backside of the lapel.
 
-### Körper schließen
+### Close the body
 
-#### Seitennaht schließen
+#### Close the side seams
 
 ![Close the sides](closeSides.svg)
 
@@ -169,15 +169,15 @@ Align the front/side seams, pin them in place if you feel like it, and sew them 
 Place this down with the good side up, and place your back on top with the good side down.  
 Align the back/side seams, pin them in place if you feel like it, and sew them togther.
 
-> Vergewissern Sie sich, dass die Leinwand nicht in der Naht gefangen wird.
+> Make sure the canvas does not get caught in the seam.
 
-> ##### Hinweis für Nähschlitten
+> ##### Note for sewing vents
 > 
-> Wenn Sie einen doppelten Schlot haben, wird diese Naht den Schlot enthalten.
+> If you have a double vent, this seam will contain the vent.
 > 
-> Nähen Sie den unteren Teil der Seitennaht und den seitlichen Teil, der den Schlot bildet. Nähen Sie danach nicht nach unten.
+> Sew the downward part of the side/back seam and the sideways part that forms the vent. Do not sew downwards after that.
 
-#### Rückennaht schließen
+#### Close the back seam
 
 ![Close the back seam](closeBack.svg)
 
@@ -185,16 +185,16 @@ Aling your two half-jackets with the good sides together, and close the back sea
 
 <Note>
 
-##### Hinweis zum Nähen
+##### Note for sewing vents
 
-Wenn Sie einen Schlot haben, wird diese Naht den Schlot enthalten.
+If you have a single vent, this seam will contain the vent.
 
-Nähen Sie den unteren Teil der RückenNaht und den seitlichen Teil, der den Schlot bildet.
-Nähen Sie danach nicht nach unten.
+Sew the downward part of the back seam and the sideways part that forms the vent.
+Do not sew downwards after that.
 
 </Note>
 
-#### Schulternähte schließen
+#### Close the shoulder seams
 
 ![Close the shoulder seams](closeShoulders.svg)
 
@@ -204,14 +204,14 @@ Make sure the canvas does not get caught in the seam.
 
 <Note>
 
-##### Die Schulternoten
+##### Align the shoulder notches
 
-ausrichten und die Schulternoten auf der Basis der Noten sorgfältig ausrichten.
-Aufgrund der unterschiedlichen Form der Rücken- und Frontplatten an der Nackenseite,
-sieht der Stoffrand anders aus. Wenn du diese Kanten ausrichtest, erhältst du nicht das
-was du brauchst.
+Make sure to carefully align the shoulders based on the notches.
+Because of the different shape of the back and front panels on the neck side,
+the fabric edge looks different. So aligning those edges will not give you
+what you need.
 
-Also achten Sie darauf, die Nocken auszurichten. Das ist es, wofür sie da sind.
+So make sure to align the notches. It's what they're there for.
 
 </Note>
 
