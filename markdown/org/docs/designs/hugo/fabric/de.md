@@ -1,17 +1,17 @@
----
+- - -
 title: "Hugo hoodie: Fabric Options"
----
+- - -
 
-You may find a dedicated sweatshirt/tracksuit fabric section in your fabric store of choice. If you don't, just head for the knitwear section and look for a thicker comfortable knit fabric.
+In einem Stoffgeschäft deiner Wahl findest du eine spezielle Sweatshirt-/Tracksuit Stoffabteilung. Wenn nicht, schaue einfach nach der Strickwarensektion und suche nach einem dickeren und bequemen Strickstoff.
 
-As far as fibers go, you can go all cotton, or opt for a poly or acryl cotton blend.
+Was die Fasern betrifft kannst du dich komplett für Baumwolle entscheiden oder eine Poly- oder Acryl-Baumwoll-Mischung nehmen.
 
-Make sure to pay attention to the inside of the fabric. Sweatshirt fabrics come in loopback and brushed back. If you want that OMG-it-feels-so-soft-on-my-skin feeling, go for brushed.
+Achte auf die Innenseite des Stoffes. Sweatshirt-Stoffe kommen in loopback und zurückgebürstet. Wenn du dieses OMG-es-fühlt-sich-so-weich-an-auf-meiner-Haut Gefühl haben willst, wähle gebürstet.
 
 <Note>
 
-You don't have to use sweatshirt fabric. Other options are available, from fashion-forward neoprene (aka scuba) to a more eyebrow-rising choice like crushed velour (aka velvet).
+Sie müssen keine Sweatshirt-Stoff verwenden. Andere Optionen sind verfügbar, von modischem Neopren (aka scuba) bis hin zu einer augenblicklicheren Wahl wie zerkleinerter Velour (aka Velvet).
 
-Or if you have given up on class, you could go for fleece.
+Oder wenn du die Klasse aufgegeben hast, kannst du nach Vlies gehen.
 
 </Note>
