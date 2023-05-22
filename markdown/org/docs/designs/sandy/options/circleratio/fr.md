@@ -2,10 +2,10 @@
 title: "Circle ratio"
 ---
 
-![Ratio circulaire](circleratio.svg)
+![Circle ratio](circleratio.svg)
 
-Le pourcentage d'une jupe circulaire. 100% fait une jupe pleine circulaire, 50% fait une jupe demi-cercle.
+The percent of a circle skirt. 100% makes a full circle skirt, 50% makes a half circle skirt.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](sandy_circleratio_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](sandy_circleratio_sample.svg "Effect of this option on the pattern")
