@@ -2,16 +2,16 @@
 title: "Chest ease"
 ---
 
-![Holgura de pecho](chestease.svg)
+![Chest ease](chestease.svg)
 
-¿Cuánto espacio quieres en el cofre?
+How much room do you want at the chest?
 
 <Note>
 
-Dado que un abrigo no tiene armas, una pequeña facilidad de pecho va muy lejos. Agrega demasiado, y terminarás con agujeros de armadura.
+Given that a waistcoat has no arms, a little chest ease goes a long way. Add too much, and you'll end up with gaping armholes.
 
 </Note>
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](wahid_chestease_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_chestease_sample.svg "Effect of this option on the pattern")
