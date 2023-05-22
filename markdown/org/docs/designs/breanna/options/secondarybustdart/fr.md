@@ -1,9 +1,9 @@
----
+- - -
 title: "Secondary bust dart"
----
+- - -
 
-Optionally include a secondary bust dart to distribute the shaping of the chest.
+Inclut éventuellement une poitrine secondaire pour répartir la mise en forme de la poitrine.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_secondarybustdart_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_secondarybustdart_sample.svg "Effet de cette option sur le modèle")
