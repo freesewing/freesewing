@@ -1,11 +1,11 @@
 ---
-title: "Style d'encolure"
+title: "Neck opening style"
 ---
 
-![Style devant](frontstyle.svg)
+![Front style](frontstyle.svg)
 
-Vous voulez un col droit classique ou un col arrondi ?
+Do you want a classic straight neckline, or a curved neckline?
 
-## Effet de cette option sur le patron
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_frontstyle_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_frontstyle_sample.svg "Effect of this option on the pattern")
