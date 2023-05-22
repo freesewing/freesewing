@@ -2,10 +2,10 @@
 title: "Center front hem drop"
 ---
 
-![Dobladillo delantero central](centerfronthemdrop.svg)
+![Center front hem drop](centerfronthemdrop.svg)
 
-¿Cuánto quieres que la parte delantera de tu ket sea más larga/inferior que la parte trasera?
+How much do you want the front of your jacket to be longer/lower than the back?
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](jaeger_centerfronthemdrop_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_centerfronthemdrop_sample.svg "Effect of this option on the pattern")
