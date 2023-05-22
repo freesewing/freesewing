@@ -2,10 +2,10 @@
 title: "Waistband width"
 ---
 
-![Anchura de la cinturilla](waistbandwidth.svg)
+![Waistband width](waistbandwidth.svg)
 
-La anchura de la cintura que desea en los pantalones.
+The width of the waistband you want on the trousers.
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](theo_waistbandwidth_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](theo_waistbandwidth_sample.svg "Effect of this option on the pattern")
