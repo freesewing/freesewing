@@ -2,10 +2,10 @@
 title: "Seperate button placket"
 ---
 
-![Tapeta de botones separada](seperatebuttonplacket.svg)
+![Seperate button placket](seperatebuttonplacket.svg)
 
-Si desea o no que la placket de botón sea una parte de patrón separada.
+Whether or not you want the button placket to be a seperate pattern part.
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_seperatebuttonplacket_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_seperatebuttonplacket_sample.svg "Effect of this option on the pattern")
