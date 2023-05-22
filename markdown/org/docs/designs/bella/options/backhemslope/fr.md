@@ -1,13 +1,13 @@
 ---
-title: "Pente de l'ourlet dos"
+title: "Back hem slope"
 ---
 
 ***
 
-![L'effet de l'option de pente de l'ourlet arrière sur le motif](sample.png)
+![The effect of the back hem slope option on the pattern](sample.png)
 
-L'option **d'ourlet arrière** contrôle la pente de l'ourlet à l'arrière.
+The **back hem slope** option controls the slope of the hem at the back.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bella_backhemslope_sample.svg "Effet de cette option sur le motif")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_backhemslope_sample.svg "Effect of this option on the pattern")
