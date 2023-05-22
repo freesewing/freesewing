@@ -1,11 +1,11 @@
----
-title: "Cuff ease"
----
+- - -
+titre: "aisance de manche"
+- - -
 
-![Cuff ease](cuffease.svg)
+![Aisance de poignet](cuffease.svg)
 
-The amount of ease at your cuff/wrist.
+L'ampleur d'aisance à votre poignet.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_cuffease_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_cuffease_sample.svg "Effet de cette option sur le modèle")
