@@ -1,11 +1,11 @@
----
+- - -
 title: "Collar notch return"
----
+- - -
 
-![Collar notch return](collarnotchreturn.svg)
+![Cuello muesca retorno](collarnotchreturn.svg)
 
-Controls the length of the upper notch side. 100% = same as notch depth.
+Controla la longitud del lado superior del muelle. 100% = igual a profundidad de tamiz.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_collarnotchreturn_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](jaeger_collarnotchreturn_sample.svg "Efecto de esta opción en el patrón")
