@@ -2,8 +2,8 @@
 title: "Hem radius"
 ---
 
-Steuert den Wert der den Saum am unteren Rand abgerundet wird.
+Controls the amount by which the hem is rounded at the front bottom.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](jaeger_hemradius_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_hemradius_sample.svg "Effect of this option on the pattern")
