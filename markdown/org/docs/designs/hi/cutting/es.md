@@ -1,17 +1,17 @@
 ---
-title: "Hi, tiburón: instrucciones de corte"
+title: "Hi the shark: Cutting Instructions"
 ---
 
-- **Color 1 (Parte superior del cuerpo; Tradicionalmente azul)**
-  - Corta **2 Cuerpo**
-  - Corta **2 Cola**
-  - Corta **2 Aleta Superior**
-  - Corta **2 Aleta inferior**
-- **Color 2 (Barriga; Tradicionalmente blanco)**
-  - Corta **1 Barriga**
-  - Corta **2 Parte Sobre la Boca**
-- **Color 3 (Boca; tradicionalmente rosa)**
-  - Corta **1 Boca**
-- **Color 4 (Dientes; tradicionalmente blancos)**
-  - Corta **1 Dientes Superiores**
-  - Corta **1 Dientes inferiores**
+- **Color 1 (Upper body; Traditionally blue)**
+  - Cut **2 Body**
+  - Cut **2 Tail**
+  - Cut **2 Top Fin**
+  - Cut **2 Bottom Fin**
+- **Color 2 (Belly; Traditionally white)**
+  - Cut **1 Belly**
+  - Cut **2 Above Mouth**
+- **Color 3 (Mouth; Traditionally pink)**
+  - Cut **1 Mouth**
+- **Color 4 (Teeth; Traditionally white)**
+  - Cut **1 Upper Teeth**
+  - Cut **1 Lower Teeth**
