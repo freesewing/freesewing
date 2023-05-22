@@ -1,13 +1,13 @@
----
+- - -
 title: "Charlie chinos: Fabric Options"
----
+- - -
 
-The obvious choice for Charlie chinos, is [chino fabric](https://en.wikipedia.org/wiki/Chino_cloth), which is a cotton twill fabric. These days it's often sold as a blend to a little bit of stretch, which is optional.
+Die offensichtliche Wahl für Charlie Chinos, ist [-Chino-Stoff](https://en.wikipedia.org/wiki/Chino_cloth), der ein Baumwoll-Tongewebe ist. Heutzutage ist es oft als Mischung zu etwas Stretch verkauft, was optional ist.
 
-But you have a lot of options here, and your choice of fabric will influence what sort of style these project.
+Aber Sie haben eine Menge Optionen hier, und Ihre Wahl des Stoffes wird beeinflussen, welche Art von Stil diese Projekte.
 
-Go for **wool** for the most classic look. Check the suiting section of your fabric store for options. If this is your first pair, some wool-poly blend is most likely going to be more budget-friendly. But don't let price alone guide you, buying some cheap whimsical fabric is the best way to come up with a shitty looking pair of trousers, and get frustrated in the process.
+Gehe für **Wolle** für den klassischsten Look. Überprüfen Sie den passenden Bereich Ihres Stoffes für Optionen. Wenn dies Ihr erstes Paar ist, wird eine Woll-Poly-Mischung wahrscheinlich budgetfreundlicher sein. Aber lassen Sie sich nicht allein von Preis leiten Der Kauf eines billigen Whimsical Stoffes ist der beste Weg, um ein schmutziges Paar von Hosen zu finden und frustriert in diesem Prozess.
 
-For **cotton**, go for a heavier weight. Cotton might also be a bit easier on the beginner than wool. If unsure what to use, ask for chino in the fabric store and simply pick a colour you like.
+Für **Baumwolle**gehen Sie auf ein schwereres Gewicht. Baumwolle kann auch am Anfänger etwas einfacher sein als Wolle. Wenn Sie sich nicht sicher sind, was Sie verwenden sollen, fragen Sie im Stoff nach dem Chinino und wählen Sie einfach eine Farbe, die Ihnen gefällt.
 
-Nothing beats **linen** on a hot summer day. It's fun to work with too, but it does wrinkle like a mofo, and even the most neatly made trousers look somewhat messy when made in linen. What I'm saying is, maybe not for your first pair.
+Nichts schlägt **Leinen** an einem heißen Sommertag. Es macht Spaß auch mit zu arbeiten, aber es faltet wie ein Mofo, und sogar die am besten hergestellte Hose sieht etwas chaotisch aus, wenn sie in Leinen gemacht wird. Was ich sage, ist vielleicht nicht für Ihr erstes Paar.
