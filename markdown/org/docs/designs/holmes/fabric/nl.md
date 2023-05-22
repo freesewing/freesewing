@@ -2,33 +2,33 @@
 title: "Holmes deerstalker hat: Fabric Options"
 ---
 
-### Hoofd stof
+### Main Fabric
 
-Voor de buitenstof van de hoed werkt een dikkere stof het beste om de hoed in vorm te houden. Als je liever een lichtere stof gebruikt kan je ook tussenvoering gebruiken voor extra stevigheid. Generally you want to use **wools** of coating weight but you can experiment with different weights and fabrics with the relevant interfacing.
-
-<Note>
-
-Bedrukt katoen is een keuze voor erg leuke hoedjes. Gebruik dan een dubbele laag stof voor elk patroondeel. Then interface it with a **medium firm interfacing**.
-
-</Note>
-
-### Voering
-
-Over het algemeen wil je een lichtgewicht stof zoals **zijpanden** of **Cotton Lawn** maar echt dat je het van elke stof kan maken die je geschikt acht voor de voering. Denk er gewoon aan dat het het beleg en de belangrijkste stof moet beschermen tegen je hoofd.
-
-### Tussenvoering
-
-Afhankelijk van de dikte van je hoofdstof en hoe goed het de vorm behoudt die je nodig hebt om je stof te integreren. If you are uncertain of whether your fabric requires interfacing, quickly _baste_ your crown pieces together and see if the crown stays up right when placed on a surface. Als het geen tussenvoering nodig heeft. Als vuistregel heb je over het algemeen een **middelstijve tussenvoering** nodig, maar als je stof vrij dun is, heb je misschien een stevigere tussenvoering nodig. If you are still uncertain you can face your crown pieces and once again _baste_ the crown pieces together and check how it looks on your head. Je kunt ofwel fusibele of niet-fusibele tussenvoering gebruiken. If using non-fusible interfacing you will want to flat line the interfacing to your pieces wih temporary _pad stitches_.
+For the main fabric of your hat, a thick fabric will work best to hold the shape but if you wanna go for a lighter fabric you can interface it to give it more body. Generally you want to use **wools** of coating weight but you can experiment with different weights and fabrics with the relevant interfacing.
 
 <Note>
 
-Als je probeert om een historisch accurate Holmes te maken kan je __tarlatan__ gebruiken, een lichtgewicht gestijfd katoen. Zorg er in alle geval voor dat je dan een stof met een natuurlijke vezel gebruikt.
+A fun thing to try is printed cotton. Just double up the main fabric so each piece is double thickness. Then interface it with a **medium firm interfacing**.
 
 </Note>
 
-### Invoegen van de visor
+### Lining Fabric
 
-Voor de bezoeker wil je een stug maar dun materiaal. Je kunt het ook proberen, **Millinery Buckram**, **Plastic Canvas**, **Plastic platen** or **EVA Foam**. U kunt **leren** gebruiken om te weten dat dit afhankelijk van de diepte een bezoeker kan maken en de bezoeker moeilijker te sluiten kan maken.
+Generally you want a lightweight fabric such as **Silks** or **Cotton Lawn** but really you can make it from any fabric you deem appropriate for lining. Just remember it needs to protect the facing and the main fabric from your head.
+
+### Interfacing
+
+Depending on your main fabric's thickness and how well it keeps its shape you may need to interface your fabric. If you are uncertain of whether your fabric requires interfacing, quickly _baste_ your crown pieces together and see if the crown stays up right when placed on a surface. If it doesn't it needs interfacing. As a rule of thumb you will generally need a **Medium Firm Interfacing** but if your fabric is quite thin you may need a firmer interfacing. If you are still uncertain you can face your crown pieces and once again _baste_ the crown pieces together and check how it looks on your head. You can either use fusible or non-fusible interfacing. If using non-fusible interfacing you will want to flat line the interfacing to your pieces wih temporary _pad stitches_.
+
+<Note>
+
+If you are trying to make a more Historical Holmes you can use **Tarlatan** which is a lightweight stiffened muslin. Just make sure you use natural fibres.
+
+</Note>
+
+### Visor Insert
+
+For the visor insert you want a firm but thin material. You may want to try either, **Millinery Buckram**, **Plastic Canvas**, **Plastic Sheets** or **EVA Foam**. You can use **Leather** just know that depending on depth this may create a thicker visor and may make the visor harder to close.
 
 <Note>
 
