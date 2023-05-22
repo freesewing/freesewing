@@ -1,5 +1,5 @@
 ---
-title: "Lucy, die Umbindetasche: Stoffoptionen"
+title: "Lucy tie-on pocket: Fabric Options"
 ---
 
 Because pockets were worn by people in every layer of society historically what they were made out of varied intensely. Some were made out of sturdy and plain fabrics, marked with the owners initials. Others were made out of lavish silks or richly embroidered.
