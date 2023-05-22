@@ -2,20 +2,20 @@
 title: "Sleeve length bonus"
 ---
 
-![Ärmel Längenzugabe](sleevelengthbonus.svg)
+![Sleeve length bonus](sleevelengthbonus.svg)
 
-Der Betrag, um den Ärmel über die Länge des Ärmels im Basisblock hinaus zu verlängern.
+The amount to extend the sleeve beyond the length of the sleeve in the base block.
 
 <Note>
 
-###### Dies soll nicht Null sein
+###### This is not supposed to be zero
 
-Wenn diese Einstellung auf Null gesetzt wird, wird die Hülsenlänge gleich der Basislänge des Schloßblocks sein,
-ist für einen Mantel sicher zu kurz.
-Bitte beachten Sie den Standardwert und verwenden Sie dies als Grundlage, um den Ärmel zu verlängern oder zu verkürzen.
+Setting this to zero will make the sleeve length the same as the base length of the Bent block,
+which is certainly too short for a coat.
+Please take note of the default value and use that as a basis to lengthen or shorten the sleeve.
 
 </Note>
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](jaeger_sleevelengthbonus_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_sleevelengthbonus_sample.svg "Effect of this option on the pattern")
