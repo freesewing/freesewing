@@ -1,5 +1,5 @@
 ---
-titre : "Nœud papillon Benjamin"
+title: "Benjamin bow tie"
 ---
 
 <PatternDocs pattern='benjamin' />
