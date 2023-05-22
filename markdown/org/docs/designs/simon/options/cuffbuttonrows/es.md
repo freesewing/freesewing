@@ -2,16 +2,16 @@
 title: "Cuff button rows"
 ---
 
-![Hileras de botones en los puños](cuffbuttonrows.svg)
+![Cuff button rows](cuffbuttonrows.svg)
 
-¿Quieres un solo botón en tu cuchillo de barras, o dos?
+Do you want a single button on your barrelcuff, or two?
 
 <Note>
 
-Esto sólo se aplica a los barriles. Así que si eliges un corte francés como estilo de taza, esto será ignorado.
+This does only apply to barrelcuffs. So if you picked a French cuff as cuff style this will be ignored.
 
 </Note>
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_cuffbuttonrows_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_cuffbuttonrows_sample.svg "Effect of this option on the pattern")
