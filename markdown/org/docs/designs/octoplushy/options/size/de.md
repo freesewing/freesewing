@@ -1,9 +1,9 @@
 ---
-title: "Größe"
+title: "Size"
 ---
 
-Octoplushy kann in verschiedenen Größen hergestellt werden. Die Standardgröße hat eine Kopfgröße von ca. 15cm und 25cm lange Beine. Dies ist ein Prozentsatz dieser Standardlänge.
+Octoplushy can be made in different sizes. The default has a head size of about 15cm, and 25cm long legs. This is a percentage of this default length.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](octoplushy_size_sample.svg "Effekt dieser Option auf das Schnittmuster")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](octoplushy_size_sample.svg "Effect of this option on the pattern")
