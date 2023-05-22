@@ -1,7 +1,7 @@
 ---
-title: "Diana, das Wasserfallshirt: Zuschnitt"
+title: "Diana draped top: Cutting Instructions"
 ---
 
-- Schneide **1 Rückenteil** im Stoffbruch
-- Schneide **1 Vorderteil** im Stoffbruch
-- Schneide **2 Ärmel** mit _guten Seiten zusammen_
+- Cut **1 back** on the fold
+- Cut **1 front** on the fold
+- Cut **2 sleeves** with _good sides together_
