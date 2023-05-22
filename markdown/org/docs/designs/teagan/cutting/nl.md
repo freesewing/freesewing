@@ -2,13 +2,13 @@
 title: "Teagan T-shirt: Cutting Instructions"
 ---
 
-- Knip 1 achteraan de stofvouw.
-- Knip 1 voorpand aan de stofvouw.
-- Knip 2 mouwen _met de goede kanten op elkaar_
-  - Als je de mouwen apart knipt, vergeet dan niet dat de een een spiegelbeeld van de ander moet zijn.
-- Knip 1 strop voor halsopening. Het moet 6 cm breed zijn en de lengte van je halsopening.
+- Cut 1 back on the fold.
+- Cut 1 front on the fold.
+- Cut 2 sleeves _with good sides together_
+  - If you cut sleeves separately, remember that one has to be a mirror image of the other.
+- Cut 1 strip for neck opening. It should be 6 cm wide and the length of your neck opening.
 
-## Opmerkingen
+## Caveats
 
-- Er is geen naadwaarde aan de halsopening.
-- Er is extra toeslag aan de zoom en armsgaten.
+- There is no seam allowance on the neck opening.
+- There is extra hem allowance at the hem and armholes.
