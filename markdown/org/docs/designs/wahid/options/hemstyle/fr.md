@@ -1,11 +1,11 @@
----
-title: "Hem style"
----
+- - -
+title: "Style de l'ourlet"
+- - -
 
-![Hem style](hemstyle.svg)
+![Style d'ourlet](hemstyle.svg)
 
-Do you want a classic hemline, or a rounded hemline?
+Vous voulez un ourlet classique ou un ourlet arrondi ?
 
-## Effect of this option on the pattern
+## Effet de cette option sur le patron
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_hemstyle_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_hemstyle_sample.svg "Effet de cette option sur le modèle")
