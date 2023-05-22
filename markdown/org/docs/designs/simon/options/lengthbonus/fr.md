@@ -1,22 +1,22 @@
 ---
-titre : "Longueur supplémentaire"
+title: "Length bonus"
 ---
 
-![Supplément de longueur](lengthbonus.svg)
+![Length bonus](lengthbonus.svg)
 
-Combien de chemise voulez-vous pouvoir enfoncer dans votre pantalon?
+How much shirt do you want to be able to tuck in your trousers?
 
 <Note>
 
-###### Pour quoi faire ?
+###### What's the point?
 
-Garder votre chemise bien enfoncée dans votre pantalon est la raison pour laquelle vous avez besoin de cette longueur supplémentaire.
-Personne n'a besoin de savoir que le tatouage Justin Bieber sur le bas du dos.
+Keeping your shirt tucked neatly in your trousers is why you need this extra length.
+Nobody needs to know about that Justin Bieber tattoo on your lower back.
 
-Si vous voulez une chemise plus décontractée à porter sur votre pantalon, vous voudrez la diminuer.
+If you want a more casual shirt to wear over your trousers, you will want to lower this.
 
 </Note>
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_lengthbonus_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_lengthbonus_sample.svg "Effect of this option on the pattern")
