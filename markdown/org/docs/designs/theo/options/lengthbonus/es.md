@@ -2,10 +2,10 @@
 title: "Length bonus"
 ---
 
-![Bonus de longitud](lengthbonus.svg)
+![Length bonus](lengthbonus.svg)
 
-Esta opción alargará las piernas de sus pantalones.
+This option will lengthen the legs of your trousers.
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](theo_lengthbonus_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](theo_lengthbonus_sample.svg "Effect of this option on the pattern")
