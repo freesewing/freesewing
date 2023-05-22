@@ -10,8 +10,8 @@ Make sure to pay attention to the inside of the fabric. Sweatshirt fabrics come 
 
 <Note>
 
-Sie müssen keine Sweatshirt-Stoff verwenden. Andere Optionen sind verfügbar, von modischem Neopren (aka scuba) bis hin zu einer augenblicklicheren Wahl wie zerkleinerter Velour (aka Velvet).
+You don't have to use sweatshirt fabric. Other options are available, from fashion-forward neoprene (aka scuba) to a more eyebrow-rising choice like crushed velour (aka velvet).
 
-Oder wenn du die Klasse aufgegeben hast, kannst du nach Vlies gehen.
+Or if you have given up on class, you could go for fleece.
 
 </Note>
