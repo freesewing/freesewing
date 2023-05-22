@@ -2,8 +2,8 @@
 title: "Back vent"
 ---
 
-Dies fügt einen Schlot auf die Rückseite des Rock hinzu.
+This adds a vent to the back of the skirt.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](penelope_backvent_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_backvent_sample.svg "Effect of this option on the pattern")
