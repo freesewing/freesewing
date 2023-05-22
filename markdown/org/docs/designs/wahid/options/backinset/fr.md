@@ -1,20 +1,20 @@
----
-title: "Back inset"
----
+- - -
+title:"Échancrure dos"
+- - -
 
-![Back inset](backinset.svg)
+![Échancrure emmanchure arrière](backinset.svg)
 
-How far do you want your waistcoat armhole to curve inwards on the back side?
+Jusqu'où voulez-vous que l'emmanchure de votre gilet se courbe côté dos ?
 
 <Note>
 
-###### What's the point?
+###### Pour quoi faire ?
 
-The armhole of your waistcoat can curve further inward, given that there is no sleeve attached to it.
-This influences the style of the waistcoat.
+L'emmanchure de votre gilet peut se courber plus vers l'intérieur, étant donné qu'il n'y a pas de manche fixée.
+Cela influence le style du gilet.
 
 </Note>
 
-## Effect of this option on the pattern
+## Effet de cette option sur le patron
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_backinset_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_backinset_sample.svg "Effet de cette option sur le modèle")
