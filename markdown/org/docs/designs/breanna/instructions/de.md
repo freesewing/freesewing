@@ -4,10 +4,10 @@ title: "Breanna body block: Sewing Instructions"
 
 <Note>
 
-###### Breanna ist ein Grundschnitt, kein Schnittmuster
+###### Breanna is a block, not a pattern
 
-Ein Grundschnitt ist eine Grundform, auf der andere Schnittmuster basieren.
-Sie werden manchmal auch als Schläger bezeichnet, obwohl Puristen argumentieren, dass ein Block und ein Schläger verschiedene Dinge sind.
+A block is a basic shape on which other patterns are based.
+They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
 
 Blocks are typically not made as-is but rather serve as a basis for other patterns so the instructions below will not go in depth about closures or finishes and are for the default Breanna block.
 
@@ -15,8 +15,8 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 
 ### Step 1: Mock-up Construction
 
-- Schließe die vorderen Abnäher.
-- Schließe die hinteren Abnäher.
+- Close the front darts.
+- Close the back darts.
 - Sew the front to the backs at the shoulders _good sides together_.
 - Matching notches, sew the sleeves to the shoulder _good sides together_.
 - Sew the side seams _good sides together_.
@@ -33,7 +33,7 @@ If you are making adjustments you may wish to sew the seams _wrong sides togethe
 
 </Tip>
 
-### Schritt 2: Anprobieren
+### Step 2: Try it on
 
 - Try it on and check the fit by pinning the back closed whilst wearing it.
 - Make any alterations and try it on again.
@@ -63,7 +63,7 @@ It is all up to you! Experiment and go forth!
 
 </Note>
 
-### Schritt 3: Erstelle ein Papierschnittmuster
+### Step 3: Make a paper pattern
 
 - Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
 - Now you have a pattern you can use to produce a garment.
