@@ -2,8 +2,8 @@
 title: "Hem bonus"
 ---
 
-Cette option réduira la circonférence de la jupe à l'ourlet. Pourcentage de la mesure du siège.
+This option will reduce the circumference of the skirt at the hem. Percentage of the seat measurement.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](penelope_hembonus_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_hembonus_sample.svg "Effect of this option on the pattern")
