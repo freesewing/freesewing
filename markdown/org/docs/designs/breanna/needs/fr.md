@@ -1,21 +1,21 @@
 ---
-tirle: "Bloc de corps de Breanna: Ce dont tu as besoin"
+title: "Breanna body block: What You Need"
 ---
 
-Pour préparer Breanna, vous aurez besoin des éléments suivants :
+To make Breanna, you will need the following:
 
-- Fourniture de base pour la couture
-- Environ 1,25 à 1,5 mètre d'un tissu approprié ([voir les options de tissu Breanna](/docs/patterns/Breanna/fabric/))
+- Basic sewing supplies
+- About 1.25 - 1.5 metres (1.4 - 1.7 yards) of a suitable fabric ([see Breanna Fabric options](/docs/patterns/Breanna/fabric/))
 
-Cette liste est pour un le Block Breanna par défaut. Si vous avez apporté des modifications au bloc, vous devrez peut-être vous procurer des éléments supplémentaires tels que des fermetures, des reliures, etc.
+This list is for a default Breanna Block. If you have/are making changes to the block you may need to get additional items such as closures, binding etc.
 
 <Note>
 
-###### Breanna est un bloc, pas un patron
+###### Breanna is a block, not a pattern
 
-Un bloc est une forme de bas sur laquelle d'autres patrons sont basés.
-Ils sont parfois aussi appelés patrons de base, bien que les puristes soutiennent qu'un bloc et un patron de base sont des choses différentes.
+A block is a basic shape on which other patterns are based.
+They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
 
-Les patrons de base ne sont donc généralement pas utilisés tels quels, mais plutôt pour élaborer d'autres modèles.
+Blocks are typically not made as-is but rather serve as a basis for other patterns.
 
 </Note>
