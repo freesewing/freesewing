@@ -1,17 +1,17 @@
----
+- - -
 title: "Trayvon tie: Cutting Instructions"
----
+- - -
 
-- **Main fabric**
-  - Cut **1 tip**
-  - Cut **1 tail**
-- **Lining fabric**
-  - Cut **1 lining tip**
-  - Cut **1 lining tail**
-  - Cut **1 loop**
-- **Interfacing**
-  - Cut **1 interfacing tip**
-  - Cut **1 interfacing tail**
+- **Oberstoff**
+  - **1 Tipp schneiden**
+  - **1 Schwanz schneiden**
+- **Futterstoff**
+  - **1 Futter Tipp schneiden**
+  - **1 Futter schneiden**
+  - **1 Schleife schneiden**
+- **Einlage**
+  - **1 Schnittstellenkopf** schneiden
+  - **1 Schnittstellenschwanz**
 
 <Warning>
 
@@ -25,16 +25,16 @@ title: "Trayvon tie: Cutting Instructions"
 
 <Tip>
 
-###### Choosing your tie grain
+###### Wählen Sie Ihr Krawattenkorn
 
-![One fabric, different grains, different ties. Don't worry about rules, make what you like](tie-grain.png)
+![Ein Stoff, verschiedene Körnungen, verschiedene Krawatten. Keine Sorge um Regeln, mach was dir gefällt](tie-grain.png)
 
-This pattern does not include a grain line. The grain line is typically printed on the pattern to show you how to place your pattern on your fabric, relative to the fabric's grain.
+Dieses Muster enthält keine Kornlinie. Die Kornlinie wird typischerweise auf das Muster gedruckt, um Ihnen zu zeigen, wie Sie Ihr Muster im Vergleich zum Korn des Stoffes auf Ihrem Stoff platzieren.
 
-For a tie, how you do this is not so much a rule as it is a personal choice. As such, there is no grain line printed on the pattern. You can do what you want.
+Für einen Bruder, wie man das macht, ist nicht so sehr eine Regel, sondern eine persönliche Entscheidung. So wird auf dem Muster keine Kornlinie gedruckt. Sie können tun, was Sie wollen.
 
-That being said, a lot of ties are cut on bias, as this results in the best drape. If you are unsure what to do, consider cutting your tie on bias.
+Allerdings werden viele Bindungen an die Voreingenommenheit gekürzt, da sich daraus die beste Lösung ergibt. Wenn Sie sich nicht sicher sind, was zu tun ist, sollten Sie Ihre Krawatte auf Voreingenommenheit reduzieren.
 
-If this all sounds very confusing, might I suggest reading the help page on [Fabric grain](/docs/sewing/fabric-grain).
+Wenn das alles sehr verwirrend klingt, würde ich vorschlagen, die Hilfeseite auf [Stoffkorn](/docs/nähing/Stoffkorn) zu lesen.
 
 </Tip>
