@@ -1,10 +1,10 @@
----
+- - -
 title: "Penelope pencil skirt: What You Need"
----
+- - -
 
-To make Penelope, you will need the following:
+Um Penelope zu erstellen, benötigst du Folgendes:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
+- [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
 - About 1 meter (1.1 yards) of a suitable main fabric ([see Penelope Fabric options](/docs/patterns/penelope/fabric))
 - An invisible or regular closed end zipper
 - Some interfacing for the waistband (if using) and maybe for the vent and hem
