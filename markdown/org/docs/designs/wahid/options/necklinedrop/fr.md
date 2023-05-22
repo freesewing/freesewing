@@ -1,11 +1,11 @@
 ---
-titre : "Profondeur d'encolure"
+title: "Neckline drop"
 ---
 
-![Profondeur d'encolure](necklinedrop.svg)
+![Neckline drop](necklinedrop.svg)
 
-Cette option vous permet de descendre votre encolure sous la valeur par défaut.
+This options allows you to lower your neckline below the default.
 
-## Effet de cette option sur le patron
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_necklinedrop_sample.svg "Effet de cette option sur le patron")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_necklinedrop_sample.svg "Effect of this option on the pattern")
