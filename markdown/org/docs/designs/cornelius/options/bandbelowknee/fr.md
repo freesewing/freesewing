@@ -1,11 +1,11 @@
 ---
-title: "Bracelet sous le genou"
+title: "Cuff below knee"
 ---
 
 ***
 
-Contrôle la distance à laquelle le bracelet se place sous le genou.
+Controls how far the cuff will sit below your knee.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](cornelius_bandbelowknee_sample.svg "Effet de cette option sur le motif")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](cornelius_bandbelowknee_sample.svg "Effect of this option on the pattern")
