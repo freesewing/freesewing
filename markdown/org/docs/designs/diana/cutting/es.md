@@ -1,7 +1,7 @@
----
+- - -
 title: "Diana draped top: Cutting Instructions"
----
+- - -
 
-- Cut **1 back** on the fold
-- Cut **1 front** on the fold
-- Cut **2 sleeves** with _good sides together_
+- Corta **1 trasero** al lomo
+- Corta **1 delantero** al lomo
+- Cortar **2 mangas ** _derecho con derecho_
