@@ -1,6 +1,6 @@
----
+- - -
 title: "Carlton coat: Sewing Instructions"
----
+- - -
 
 ### Step 1: Draft and Cut the missing Lining and Facing Parts
 
@@ -54,7 +54,7 @@ Don't forget the seam allowance for these pieces when cutting if you are making 
 - Remove the seam allowamces (if included) of the upper piece.
 - The upper piece is now the **Back shoulder** part.
 
-#### Cutting
+#### Corte
 
 - Cut all the parts above from their respective fabrics/facings. ([see Carlton Cutting](/docs/patterns/carlton/cutting/))
 
