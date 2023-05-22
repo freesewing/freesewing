@@ -1,17 +1,17 @@
----
-title: "Chest ease"
----
+- - -
+title:"Aisance de poitrine"
+- - -
 
-![Chest ease](chestease.svg)
+![Aisance de poitrine](chestease.svg)
 
-How much room do you want at the chest?
+Combien d'aisance voulez-vous pour le buste ?
 
 <Note>
 
-Given that a waistcoat has no arms, a little chest ease goes a long way. Add too much, and you'll end up with gaping armholes.
+Étant donné qu'un gilet n'a pas de manches, une faible aisance de poitrine offre déjà un bon confort. Ajoutez-en trop, et vous finirez avec des emmanchures béantes.
 
 </Note>
 
-## Effect of this option on the pattern
+## Effet de cette option sur le patron
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_chestease_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_chestease_sample.svg "Effet de cette option sur le modèle")
