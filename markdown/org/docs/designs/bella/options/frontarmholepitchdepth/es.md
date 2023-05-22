@@ -1,13 +1,13 @@
 ---
-title: "Front armhole pitch depth"
+title: "Profundidad del tono del orificio delantero"
 ---
 
 ***
 
-![The effect of the front armhole pitch depth option on the pattern](sample.png)
+![El efecto de la opción de profundidad del tono del orificio frontal en el patrón](sample.png)
 
-The **front armhole pitch depth** option controls the vertical position of the armhole pitch point at the front.
+La opción **profundidad de zanqueo del orificio frontal** controla la posición vertical del punto de zanja del orificio de armadura.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_frontarmholepitchdepth_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bella_frontarmholepitchdepth_sample.svg "Efecto de esta opción en el patrón")
