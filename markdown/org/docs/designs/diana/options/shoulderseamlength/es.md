@@ -1,11 +1,11 @@
----
+- - -
 title: "Shoulder seam length"
----
+- - -
 
-![The shoulder seam length option on Diana](./shoulderseamlength.svg)
+![La opción de longitud de costura del hombro en Diana](./shoulderseamlength.svg)
 
-This option determines how wide the neck opening is, by controllign the length of the shoulder seam.
+Esta opción determina la anchura de la abertura del cuello, controlando la longitud de la costura del hombro.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_shoulderseamlength_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](diana_shoulderseamlength_sample.svg "Efecto de esta opción en el patrón")
