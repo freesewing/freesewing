@@ -2,10 +2,10 @@
 title: "Chest pocket angle"
 ---
 
-![Angle de poche de poitrine](chestpocketangle.svg)
+![Chest pocket angle](chestpocketangle.svg)
 
-Angle d'inclinaison de la poche de poitrine.
+The angle under which the chest pocket is placed.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_chestpocketangle_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_chestpocketangle_sample.svg "Effect of this option on the pattern")
