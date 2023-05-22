@@ -1,9 +1,9 @@
----
+- - -
 title: "Collar roll"
----
+- - -
 
-Controls the amount of roll in the collar; how much the topcollar is higher than the undercollar.
+Controla la cantidad de rollo en el cuello; cuánto más alto es el cuello superior al cuello inferior.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_collarroll_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](jaeger_collarroll_sample.svg "Efecto de esta opción en el patrón")
