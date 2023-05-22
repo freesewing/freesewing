@@ -4,26 +4,26 @@ title: "Trayvon tie: Sewing Instructions"
 
 <Tip>
 
-###### Nur der Tipp
+###### Just the tip
 
-ist der empfindlichste Teil der Krawatte.
-Wenn du noch nie eine Bindung gemacht hast Ich empfehle Ihnen, ein paar Krawattenspitzen im Schrottgewebe zu machen, bevor Sie Schere und Nadeln zu Ihrem schönen Krawattengewebe nehmen.
+The tip is the most sensitive part of the tie.
+If you have never made a tie before, I would advise you to make a few tie tips in scrap fabric before taking scissors and needles to your nice tie fabric.
 
-Um Tipps zu üben führen führen Sie Konstruktionen Schritt 1 bis 4 ein paar Male, bis Sie den Hang davon.
+To practice tip-making, execute constructions steps 1 through 4 a couple of times until you get the hang of it.
 
 </Tip>
 
 <Tip>
 
-###### Drücke weise
+###### Press wisely
 
-später in den Bauschritten, du wirst aufgefordert, deinen Stoff zu drücken. Bitte achten Sie darauf, dass Sie nicht zu viel Wärme auf einem empfindlichen Stoff verwenden, der es nicht verarbeiten kann.
+Later in the construction steps, you will be asked to press your fabric. Please be careful that you are not using too much heat on a delicate fabric that can't handle it.
 
-Es ist immer eine gute Idee, dein Bügeleisen auf ein paar Stoffresten zu testen. Auf diese Weise können Sie herausfinden, was eine gute Wärmeeinstellung für den Stoff, den Sie verwenden.
+It's a good idea to try pressing some fabric scraps before you start. This will allow you to figure out what is a good heat setting for the fabric you are using.
 
 </Tip>
 
-### Schritt 1: Nähen Sie die erste Seite Ihres Krawattenschwanzes
+### Step 1: Sew the first side of your tie tail
 
 ![Sew the first side of the tie tail](step01.png)
 
@@ -35,7 +35,7 @@ Sew in place, starting precisely at the matched notch, along the edge. Make sure
 
 Two notches are now fixed the same spot.
 
-### Schritt 2: Nähen Sie die zweite Seite Ihres Krawattenschwanzes
+### Step 2: Sew the second side of your tie tail
 
 ![Sew the second side of your tie tail](step02.png)
 
@@ -47,7 +47,7 @@ Sew in place, starting precisely at the matched notch, making sure to get a stra
 
 Now, all three notches are fixed the same spot.
 
-### Schritt 3: Beende den Krawatten
+### Step 3: Finish the tie tail
 
 ![Finish the tie tail](step03.png)
 
@@ -55,7 +55,7 @@ Fold your tie open so that the two seams you made in step 1 and 2 lie on top of 
 
 Sew the point where the three notches and your two seams converge to the folded edge of the Fabric tip (part 4, on the left in the image).
 
-### Schritt 4: Schalte den Schwanz inside-out und überprüfe deine Arbeit
+### Step 4: Turn the tail inside-out and inspect your work
 
 ![Turn the tail inside-out and inspect your work](step04.png)
 
@@ -69,7 +69,7 @@ The seam where the tie fabric meets the tie lining does not sit at the edge of t
 
 If you managed to do all of this, you can do it again for the tip of your tie.
 
-### Schritt 5: Nähen Sie die erste Seite Ihrer Krawatte
+### Step 5: Sew the first side of your tie tip
 
 ![Sew the first side of your tie tip](step01.png)
 
@@ -81,7 +81,7 @@ Sew in place, starting precisely at the matched notch, along the edge. Make sure
 
 Two notches are now fixed the same spot.
 
-### Schritt 6: Nähen Sie die zweite Seite Ihres Krawattentipps
+### Step 6: Sew the second side of your tie tip
 
 ![Sew the second side of your tie tip](step02.png)
 
@@ -93,7 +93,7 @@ Sew in place, starting precisely at the matched notch, making sure to get a stra
 
 Now, all three notches are fixed the same spot.
 
-### Schritt 7: Beende den Krawatte Tipp
+### Step 7: Finish the tie tip
 
 ![Finish the tie tip](step03.png)
 
@@ -101,7 +101,7 @@ Fold your tie open so that the two seams you made in step 5 and 6 lie on top of 
 
 Sew the point where the three notches and your two seams converge to the folded edge of the Fabric tip (part 3, on the left in the image).
 
-### Schritt 8: Schalte den Tipp inside-out und überprüfe deine Arbeit
+### Step 8: Turn the tip inside-out and inspect your work
 
 ![Turn the tip inside-out and inspect your work](step04.png)
 
@@ -113,27 +113,27 @@ Your tip should look like the picture, with a sharp point and straight edges.
 
 The seam where the tie fabric meets the tie lining does not sit at the edge of the tie but it sits a bit back, staying out of sight.
 
-### Schritt 9: Join the tie interfacing
+### Step 9: Join the tie interfacing
 
 ![Join the tie interfacing](step09.png)
 
 Join Interfacing tip (piece 1) and Interfacing tail (piece 2) together on the non-pointy side, matching the notch.
 
-> **Or don't** To be honest, I never join the interfacing. Ich lasse nur beide Hälften ohne Anhang.
+> **Or don't** To be honest, I never join the interfacing. I just leave both halves unattached.
 > 
-> Auf diese Weise können Sie nie die Länge Ihrer Bindung falsch halten und Sie können die Schnittstellen einfach übereinander schieben. Darüber hinaus erzeugt es weniger Massen in der Mitte und es ist weniger Arbeit.
+> This way, you can never get the length of your tie wrong, and you can just slide the interfacing parts over each other. In addition, it creates less bulk in the middle, and it's less work.
 > 
-> Also kannst du diesen Schritt einfach überspringen, es ist was ich tue.
+> So you can just skip this step, it's what I do.
 
-### Schritt 10: Schließe dich dem Stoff an
+### Step 10: Join the tie fabric
 
 ![Join the tie fabric](step10.png)
 
-> Mit der Nähung der Schnittstelle wird nun die Länge unserer Krawatte festgelegt. Messen Sie die Krawatte zu Spitze und stellen Sie sicher, dass Sie die Stoffstücke in der richtigen Länge verbinden.
+> With the interfacing sewn together, the length of our tie is now determined. Measure the tie tip to tip, and make sure that you join the fabric pieces at the correct length.
 
 Join the tip and tail fabric together on the non-pointy side.
 
-### Schritt 11: Stelle deine Schlingschleife her
+### Step 11: Make your tie loop
 
 ![Make your tie loop](step11.png)
 
@@ -145,11 +145,11 @@ Make sure to have one edge a little bit shorter. This will be the back side.
 
 While folding, reach for your iron and give it a good press so things stay in place. Also press the final loop before sewing it.
 
-> Vorsicht beim Drängen, denken Sie an den dringenden Rat, den ich vorhin gegeben habe
+> Careful when pressing, remember the pressing advice I gave earlier
 
 When you're happy with how you folded and pressed your loop, hand-sew along the edge with a slipstitch to keep things in place.
 
-### Schritt 12: Ordnen Sie Ihre Bindung an
+### Step 12: Assemble your tie
 
 ![Assemble your tie](step12.png)
 
@@ -157,7 +157,7 @@ Time to start putting things together. Place your tie on a flat surface, good si
 
 Now take your tie interfacing, and place it in your tie with the seam allowance in the middle facing upwards. Make sure to slide it between your fabric and lining on each side, all the way to the tip.
 
-### Schritt 13: Fallen und drücken Sie Ihr Krawatt
+### Step 13: Fold and press your tie
 
 ![Fold and press your tie](step13.png)
 
@@ -167,19 +167,19 @@ You want to fold it snugly around the interfacing, but without moving the interf
 
 When you're done, press your fold. Because of the tie interfacing, you're not pressing a sharp crease here, the main point is to shape the fabric to be more eager to stay folder around the interfacing.
 
-> Da wir hier keine scharfe Frechheit drücken, sondern den Stoff stärker formen, funktioniert ein Dampfeisen am besten.
+> As we are not pressing a sharp crease here, but more shaping the fabric, a steam iron works best.
 
 When you have completed one side, fold back the other side, and steam again.
 
 Finally, fold back the top layer along the middle of your tie, and press in place. This time, you are making a sharp crease along the middle of the tie.
 
-> Um den Unterschied zwischen den beiden letzten Falten zu klären, Ich habe eine dunkle Linie in das Bild eingefügt, die den Rand des Stoffes markiert.
+> To clarify the difference between the two last folds, I have included a dark line in the image that marks the edge of the fabric, or fold.
 > 
-> Wie Sie sehen, falten wir zum ersten Mal den Stoff zurück, und er erstreckt sich über die Mitte der Krawatte.
+> As you can see, the first time we merely fold the fabric back, and it extends passed the center of the tie.
 > 
-> Beim zweiten Mal falten wir sie wieder in der Mitte, dem Ort, an dem wir sie nähen.
+> The second time, we fold it back again in the middle, the place where we'll sew it in place.
 
-### Schritt 14: Bereite die Schleife vor
+### Step 14: Prepare the loop
 
 ![Prepare the loop](step14.png)
 
@@ -189,21 +189,21 @@ Mark the point where the loop ends join, and sew them together.
 
 Finally, press your loop open so the seam sits in the middle, and the ends point to one side.
 
-### Schritt 15: Steckstich und Schleife einfügen
+### Step 15: Slip stitch tie, and insert loop
 
 ![Slip-stitch tie, and insert loop](step15.png)
 
 Use a slip stitch to hand sew your tie all along the length of the back.
 
-> Ihr Rutschstich sollte nur den Stoff auf der Rückseite fangen. Refrain von der Ausführung durch die Krawatten-Schnittstelle.
+> Your slip stitch should only catch the tie fabric on the back. Refrain from running it through the tie interfacing.
 > 
-> Seien Sie vorsichtig, wenn Sie den Stich zu tief, es könnte auf der Vorderseite zeigen und zerstören Sie Ihre Krawatte.
+> Be careful for is you run the stitch too deep, it might show on the front, and ruin your tie.
 
 Make sure to slide in your loop, somewhere around 1/5th of the tie length, starting from the tip.
 
 Use your slip stitch to secure the loop in place on the center seam; we'll fix the edges of the loop in the next step.
 
-### Schritt 16: Sichere die Schleifenkanten
+### Step 16: Secure the loop edges
 
 ![Secure the loop edges](step16.png)
 
@@ -213,7 +213,7 @@ Make sure to sew only the bottom layer of the loop, so the stitches don't show o
 
 And, once again, be careful not to run your stitches through your tie. Be shallow.
 
-### Schritt 17: Trimmen und aufräumen
+### Step 17: Trim and clean up
 
 ![Trim and clean up](step17.png)
 
