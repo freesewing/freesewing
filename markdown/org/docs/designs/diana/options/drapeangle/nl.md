@@ -2,10 +2,10 @@
 title: "Drape angle"
 ---
 
-![De optie voor de hoek van de drapage van Diana](./drapeangle.svg)
+![The drape angle option on Diana](./drapeangle.svg)
 
-Deze optie bepaalt de hoeveelheid drapage van je top.
+This option controls the amount of drape of your top.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](diana_drapeangle_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_drapeangle_sample.svg "Effect of this option on the pattern")
