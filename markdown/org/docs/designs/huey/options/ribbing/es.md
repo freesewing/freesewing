@@ -1,11 +1,11 @@
----
+- - -
 title: "Ribbing"
----
+- - -
 
-![Ribbing](./ribbing.svg)
+![Tejido acanalado](./ribbing.svg)
 
-Whether to include ribbing or not.
+Si incluir la costilla o no.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_ribbing_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](huey_ribbing_sample.svg "Efecto de esta opción en el patrón")
