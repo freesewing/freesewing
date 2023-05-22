@@ -1,13 +1,13 @@
----
-title: "Wahid waistcoat: Fabric Options"
----
+- - -
+title: "Gilet Wahid : Options de tissu"
+- - -
 
-All suiting fabrics are a great choice for your waistcoats. Any fabric shop that's worth your business should have a suiting section. You can just walk in, ask where you can find the fabric for suits, and pick out something you like.
+Tous les tissus de costumes sont un très bon choix pour votre gilet. Toute boutique en tissu qui se respecte devrait avoir une catégorie avec du tissu pour costume. Vous pouvez simplement entrer, demander où vous pouvez trouver le tissu pour des costumes, et choisir quelque chose que vous aimez.
 
-These fabrics are typically wool, but you can also be a bit more creative and go for something else.
+Ces tissus sont généralement en laine, mais vous pouvez aussi être un peu plus créatif et opter pour autre chose.
 
 <Note>
 
-You do need a bit of weight though. Denim is fine, some light cotton is not.
+Vous avez cependant besoin d'un peu de poids. Le Denim est très bien, contrairement au coton léger.
 
 </Note>
