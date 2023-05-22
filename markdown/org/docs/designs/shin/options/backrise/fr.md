@@ -1,13 +1,13 @@
----
-title: "Back rise"
----
+- - -
+title: "Hauteur du dos"
+- - -
 
-How much extra rise do you want at the back?
+Combien de hauteur supplémentaire voulez-vous au dos ?
 
-This factor will raise the waist at the back of your swim trunks only.
+Ce facteur soulèvera la taille à l'arrière de vos troncs de baignade seulement.
 
-> If you want to raise the waist overall, that's what the **rise** option does
+> Si vous voulez augmenter la hauteur partout, voir l'option **hauteur**
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](shin_backrise_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](shin_backrise_sample.svg "Effet de cette option sur le modèle")
