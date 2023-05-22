@@ -2,10 +2,10 @@
 title: "Waistband width"
 ---
 
-![Anchura de la cinturilla](waistbandwidth.svg)
+![Waistband width](waistbandwidth.svg)
 
-El ancho de la cintura
+The width of the waistband
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](sandy_waistbandwidth_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](sandy_waistbandwidth_sample.svg "Effect of this option on the pattern")
