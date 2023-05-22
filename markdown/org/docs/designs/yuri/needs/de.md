@@ -1,11 +1,11 @@
----
+- - -
 title: "Yuri hoodie: What You Need"
----
+- - -
 
-To make Yuri, you will need the following:
+Um Yuri zu erstellen, benötigst du Folgendes:
 
 - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
-- About 2.5 meters (2.8 yards) of a suitable fabric ([see Fabric options](/docs/patterns/yuri/fabric))
+- Etwa 2.5 cm (2.8") eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/patterns/yuri/fabric))
 - 2 große Tasten
 
 <Note>
