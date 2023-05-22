@@ -1,13 +1,13 @@
 ---
-title: "Hintere Armlochkrümmung"
+title: "Back armhole curvature"
 ---
 
 ***
 
-![Der Effekt der Krümmung des hinteren Armlochs auf das Schnittmuster](sample.png)
+![The effect of the back armhole curvature option on the pattern](sample.png)
 
-Die **Rückenarmlochkrümmung** steuert wie viel das Rüstungsloch am unteren Ende des Rückens geschoppt wird.
+The **back armhole curvature** option controls how much the armhole is scooped at out the bottom in the back.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bella_backarmholecurvature_sample.svg "Effekt dieser Option auf das Schnittmuster")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_backarmholecurvature_sample.svg "Effect of this option on the pattern")
