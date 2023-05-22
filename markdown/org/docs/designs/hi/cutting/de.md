@@ -1,5 +1,5 @@
 ---
-title: "Hi the shark: Cutting Instructions"
+title: "Hi, der Hai: Zuschnitt"
 ---
 
 - **Color 1 (Upper body; Traditionally blue)**
