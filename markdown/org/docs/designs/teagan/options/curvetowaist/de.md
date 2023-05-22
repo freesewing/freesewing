@@ -4,12 +4,12 @@ title: "Curve to waist"
 
 Choose this option to draft Teagan to curve towards your waist before curving towards the hips.
 
-Wenn das Taillenmass (plus Bequemlichkeitszugabe) kleiner ist als das Hüftmass (plus Zugabe) erzeugt das eine Sanduhrform, wie bei figurbetonten (fitted)- oder Damen- T-shirts üblich. (Im Gegensatz zu gerade geschnitten oder unisex).
+If waist measurement (plus ease) is smaller than hips (plus ease), this creates an hourglass shape such as found in 'fitted' or 'ladies' T-shirts (as opposed to 'regular' or 'unisex').
 
 <Note>
-Diese Option kann auch verwendet werden, wenn die Taillenmessung die Hüftmessung überschreitet. Dies führt jedoch zu einer nicht standardmäßigen T-Shirt-Form, die möglicherweise nicht angezogen werden kann.
+This option can also be used when the waist measurement exceeds the hip measurement, but this results in a non-standard T-shirt shape which may be impossible to put on.
 </Note>
 
-## Effekt dieser Variable auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](teagan_curvetowaist_sample.svg "Effekt dieser Variable auf das Schnittmuster")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](teagan_curvetowaist_sample.svg "Effect of this option on the pattern")
