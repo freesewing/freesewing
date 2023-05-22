@@ -34,8 +34,14 @@ export const getGitMetadata = async (file, site) => {
       }
     }
     if (!key) {
-      console.log({ email, author, slug })
-      throw `Git author email ${email} is unknown in the git-to-author table`
+      if (typeof email === 'undefined' && typeof email === 'undefined') {
+        // This means files lack git history (they are new and haven't been committed yet)
+        authors.add('unknown')
+      } else {
+        // There is a git history, but the author is not known
+        console.log({ email, author, slug })
+        throw `Git author email ${email} is unknown in the git-to-author table`
+      }
     } else authors.add(key)
   }
 
