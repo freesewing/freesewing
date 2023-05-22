@@ -1,11 +1,11 @@
----
-title: "Wahid waistcoat: What You Need"
----
+- - -
+title: "Gilet Wahid : ce dont vous avez besoin"
+- - -
 
-To make Wahid, you will need the following:
+Pour faire Wahid, vous aurez besoin des fournitures suivantes :
 
-- Basic sewing supplies
-- About 1 meter (1.1 yards) of a suitable fabric ([see Fabric options](/docs/patterns/wahid/fabric))
-- About 1 meter (1.1 yards) of lining fabric
-- Fusible interfacing
-- Buttons
+- Fournitures de base pour la couture
+- Environ 1 m (1.1 yards) d'un tissu adapté ([voir Options de tissu](/docs/patterns/wahid/fabric))
+- Environ 1 mètre (1.1 yards) de tissu de doublure
+- Entoilage thermocollant
+- Boutons
