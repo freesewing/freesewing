@@ -1,13 +1,13 @@
 ---
-title: "Bust span ease"
+title: "Aisance de l'écart poitrine"
 ---
 
 ***
 
-The **bust span ease** option controls how much ease is applied to the bust span.
+L'option **de facilité** de la boussole contrôle la quantité de facilité appliquée à la boussole.
 
-<Note>This will not add ease to the garment, but merely influence the bust point</Note>
+<Note>Cela ne facilitera pas le vêtement, mais seulement le point de buste</Note>
 
-## Effect of this option on the pattern
+## Effet de cette option sur le modèle
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_bustspanease_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](noble_bustspanease_sample.svg "Effet de cette option sur le modèle")
