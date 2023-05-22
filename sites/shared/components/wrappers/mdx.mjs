@@ -54,7 +54,7 @@ const Ul = ({ children }) => (
 const MetaData = ({ authors = [], maintainers = [], updated = '20220825', locale, slug, t }) => (
   <div className="py-4 px-4 rounded-lg bg-secondary bg-opacity-10 shadow mb-4">
     {locale === 'en' ? (
-      <div className="flex flex-row items-center gap-4 justify-between text-base-content mb-2">
+      <div className="flex flex-row flex-wrap items-center gap-4 justify-between text-base-content mb-2">
         <span className="font-medium text-lg">{t('helpImproveDocs')}</span>
         <a
           href={`https://github.dev/freesewing/freesewing/blob/develop/markdown/org/${slug}/en.md`}
@@ -65,7 +65,7 @@ const MetaData = ({ authors = [], maintainers = [], updated = '20220825', locale
         </a>
       </div>
     ) : (
-      <div className="flex flex-row items-center gap-4 justify-between text-base-content mb-2">
+      <div className="flex flex-row flex-wrap items-center gap-4 justify-between text-base-content mb-2">
         <span className="font-medium text-lg">{t('helpTranslateDocs')}</span>
         <a
           href={`https://freesewing.dev/guides/translation`}

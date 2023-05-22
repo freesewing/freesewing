@@ -58,16 +58,17 @@ export const ReadMore = ({
 
   const list = []
   for (const page of currentChildren(tree)) {
-    list.push(
-      <li key={page.s}>
-        <Link href={`/${page.s}`}>
-          <span className={pretty ? getClasses(level) : ''}>{page.t}</span>
-        </Link>
-        {recurse ? (
-          <ReadMore root={page.s} level={level + 1} {...{ recurse, site, pretty }} />
-        ) : null}
-      </li>
-    )
+    if (page.t !== 'spacer')
+      list.push(
+        <li key={page.s} className="break-all">
+          <Link href={`/${page.s}`}>
+            <span className={pretty ? getClasses(level) : ''}>{page.t}</span>
+          </Link>
+          {recurse ? (
+            <ReadMore root={page.s} level={level + 1} {...{ recurse, site, pretty }} />
+          ) : null}
+        </li>
+      )
   }
 
   return <ul>{list}</ul>
