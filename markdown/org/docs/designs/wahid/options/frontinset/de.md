@@ -2,19 +2,19 @@
 title: "Front inset"
 ---
 
-![Vorderseite Ausschnitt](frontinset.svg)
+![Front inset](frontinset.svg)
 
-Wie weit soll sich die Weste an der Vorderseite nach innen bewegen?
+How far do you want your waistcoat armhole to curve inwards on the front?
 
 <Note>
 
-###### Was ist der Punkt?
+###### What's the point?
 
-Das Armloch deiner Weste kann weiter nach innen gebogen werden, da keine Ärmel an ihr befestigt ist.
-Dies beeinflusst den Stil der Weste.
+The armhole of your waistcoat can curve further inward, given that there is no sleeve attached to it.
+This influences the style of the waistcoat.
 
 </Note>
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](wahid_frontinset_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_frontinset_sample.svg "Effect of this option on the pattern")
