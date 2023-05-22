@@ -2,8 +2,8 @@
 title: "Length bonus"
 ---
 
-Controla la longitud de la cabeza. Porcentaje de la cintura natural a medida de rodilla.
+This controls the length of the skirt. Percentage of the natural waist to knee measurement.
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](penelope_lengthbonus_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_lengthbonus_sample.svg "Effect of this option on the pattern")
