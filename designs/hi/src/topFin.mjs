@@ -75,6 +75,8 @@ function draftHiTopFin({
       .length()
   )
 
+  store.cutlist.addCut({ material: 'color1UpperBody' })
+
   // Complete?
   if (complete) {
     paths.body = new Path()
