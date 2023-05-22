@@ -14,7 +14,7 @@ Additionally, silk and silk imitation is slippery and tricky to work with. If th
 
 Just make sure you pick a fabric that does not stretch or lose its shape easily. You want your tie to look sharp, not saggy.
 
-## Ligne de cravate
+## Tie lining
 
 The lining of the tie is the bit that is used at the tip to cover up the back. If you are not sure what I mean, look at the back of the tip of an existing tie. See that rectangular patch of fabric you can see there? That is the tie lining.
 
@@ -24,7 +24,7 @@ Make sure your lining drapes at least as good as your tie fabric, so that it doe
 
 When in doubt, go for imitation silk. Do make sure to pick something that is a nice match, or contrast, with your tie fabric.
 
-## Interfaçage des cravates
+## Tie interfacing
 
 Your tie interfacing is the skeleton of your tie. It is the part that sits in the middle and that you will only see while constructing your tie.
 
@@ -34,8 +34,8 @@ While you can get by with an alternative, like some wool fabric, or flannel, I t
 
 <Note>
 
-Tant que vous gardez votre cravate à l'écart des ciseaux et des fanatiques de la servitude, votre cravate surdurera sans effort votre cravate. Alors regardez dans votre armoire (ou dans le magasin de bienfaisance/magasin d'épargne) cette vieille cravate avec la tache sur elle, et démontez-le pour récupérer l'interfacage de la cravate.
+As long as you keep your tie away from scissors and bondage fanatics, your tie interfacing will effortlessly outlast your tie. So look in your wardrobe (or the charity shop/thrift store) for that old tie with the stain on it, and take it apart to salvage the tie interfacing.
 
-Tant que la cravate que vous voulez faire n'est pas plus large ou plus longue que celle que vous recyclez, vous avez votre cravate juste là.
+As long as the tie you want to make is not wider or longer than the one you are recycling, you have your tie interfacing right there.
 
 </Note>
