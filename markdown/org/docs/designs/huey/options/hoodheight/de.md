@@ -1,11 +1,11 @@
----
+- - -
 title: "Hood height"
----
+- - -
 
-![Hood height](./hoodheight.svg)
+![Kapuzenhöhe](./hoodheight.svg)
 
-Controls the height of the hood.
+Steuert die Höhe der Kapuze.
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_hoodheight_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](huey_hoodheight_sample.svg "Effekt dieser Option auf das Schnittmuster")
