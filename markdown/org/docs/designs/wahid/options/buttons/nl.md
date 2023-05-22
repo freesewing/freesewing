@@ -2,10 +2,10 @@
 title: "Number of buttons"
 ---
 
-![Knopen](buttons.svg)
+![Buttons](buttons.svg)
 
-Hoeveel knopen wil je?
+How many buttons do you want?
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](wahid_buttons_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_buttons_sample.svg "Effect of this option on the pattern")
