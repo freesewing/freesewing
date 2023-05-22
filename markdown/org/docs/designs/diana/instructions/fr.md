@@ -67,4 +67,4 @@ trimming close to the stitching.
 
 ### Step 7: Enjoy!
 
-Vous avez terminé ! Now go enjoy your new top!
+You're all done! Now go enjoy your new top!
