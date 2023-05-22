@@ -1,15 +1,15 @@
----
+- - -
 title: "Back vent"
----
+- - -
 
-![Back vent](backvent.svg)
+![Fentes arrière](backvent.svg)
 
-How do you like your back vents?
+Comment aimez-vous vos fentes de dos ?
 
-- Two back vents (shown on the left)
-- One central back vent (shown in the middle)
-- No back vents (shown on the right)
+- Deux fentes arrières (affichées à gauche)
+- Un panneau arrière central (affiché au milieu)
+- Pas de fentes arrière (affichées à droite)
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_backvent_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_backvent_sample.svg "Effet de cette option sur le modèle")
