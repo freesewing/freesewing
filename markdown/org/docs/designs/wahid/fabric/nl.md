@@ -8,6 +8,6 @@ These fabrics are typically wool, but you can also be a bit more creative and go
 
 <Note>
 
-Je stof heeft wel wat gewicht nodig. Denim is ok, een licht katoentje niet.
+You do need a bit of weight though. Denim is fine, some light cotton is not.
 
 </Note>
