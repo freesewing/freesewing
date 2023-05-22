@@ -2,10 +2,10 @@
 title: "Chest shaping"
 ---
 
-![Courbe du col poitrine](chestshaping.svg)
+![Chest shaping](chestshaping.svg)
 
-La quantité verticale de découpage & de la face supérieure pour former le coffre, en tant que facteur de circonférence de la poitrine.
+The vertical amount to slash & spread the upper front panel to shape the chest, as a factor of your chest circumference.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_chestshaping_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_chestshaping_sample.svg "Effect of this option on the pattern")
