@@ -1,6 +1,6 @@
----
+- - -
 title: "Cuff narrow button"
----
+- - -
 
 ![Bouton supplémentaire pour poignet classique](./barrelcuffnarrowbutton.svg)
 
