@@ -2,10 +2,10 @@
 title: "Front pocket depth"
 ---
 
-![Profundidad de bolsillo frontal](frontpocketdepth.svg)
+![Front pocket depth](frontpocketdepth.svg)
 
-La profundidad de los bolsillos delanteros, como factor del espacio entre la cintura y el hem.
+The depth of the front pockets, as a factor of the space between your waist and hem.
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](jaeger_frontpocketdepth_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_frontpocketdepth_sample.svg "Effect of this option on the pattern")
