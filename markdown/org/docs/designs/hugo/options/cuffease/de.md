@@ -1,9 +1,9 @@
 ---
-title: "Bequemlichkeitszugabe Bündchen"
+title: "Cuff ease"
 ---
 
-Diese Variable beeinflusst die Weite an deinem Handgelenk.
+This option controls the ease at your wrist.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](hugo_cuffease_sample.svg "Effekt dieser Variable auf das Schnittmuster")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](hugo_cuffease_sample.svg "Effect of this option on the pattern")
