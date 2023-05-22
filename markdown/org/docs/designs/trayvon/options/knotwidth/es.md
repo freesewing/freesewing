@@ -2,18 +2,18 @@
 title: "Knot width"
 ---
 
-![Ancho de nudo](knotwidth.svg)
+![Knot width](knotwidth.svg)
 
-La anchura del nudo es la anchura en medio de la corbata, donde se hace el nudo.
+The knot width is the width in the middle of the tie, where you make the knot.
 
-Cuán ancho es su corbata en el medio influirá en la corbata no. Ir ancho para nudos grandes y gruesos, ir estrecho para nudos pequeños.
+How wide your tie is in the middle will influence the tie knot. Go wide for big and bulky knots, go narrow for small knots.
 
 <Note>
 
-No hacer que el ancho del nudo sea mayor que el ancho de la punta
+Do not make the knot width larger than the tip width
 
 </Note>
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](trayvon_knotwidth_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](trayvon_knotwidth_sample.svg "Effect of this option on the pattern")
