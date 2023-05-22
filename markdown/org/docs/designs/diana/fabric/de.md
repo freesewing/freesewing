@@ -1,8 +1,8 @@
 ---
-title: "Diana, das Wasserfallshirt: Stoffoptionen"
+title: "Diana draped top: Fabric Options"
 ---
 
-Dies funktioniert am besten in einem dieser beiden Szenarien:
+This top works best in one of these two scenarios:
 
-- Verwende einen dehnbaren Stoff und wähle minimale Zugabe
-- Oder verwende einen nicht-dehnbaren Stoff mit gutem _Fall_; dann solltest du mehr Zugabe hinzugeben. Gut fließende Stoffe können im schrägen Fadenlauf zugeschnitten werden, um einen Körper-betonten Effekt zu erzielen
+- Use a stretch fabric, and choose minimal ease
+- Or use a non-stretch fabric with good _drape_, in which case you'll want to add more ease. Flowy fabrics can be cut on the bias for a body-hugging effect
