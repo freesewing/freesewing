@@ -2,50 +2,50 @@
 title: "Holmes deerstalker hat: Sewing Instructions"
 ---
 
-### Stap 1: Voorbereiden van de stukjes
+### Step 1: Prepping the Pieces
 
 - If needed, Interface the crown and half the ear flap pieces.
-- If not already done so, it is recommended to mark the seam lines on your fabric pieces by either a temporary marker or by thread marking. Dit is voor een preciezere naad die essentieel is voor de bouw van hoed.
+- If not already done so, it is recommended to mark the seam lines on your fabric pieces by either a temporary marker or by thread marking. This is for a more precise sew which is key for hat construction.
 
 <Tip>
 
-Draadmarkering maakt het mogelijk om de naadlijn aan zowel de rechterals de verkeerde kant te zien.
+Thread marking allows for the seam line to be seen on both the right and wrong sides.
 
 </Tip>
 
 <Note>
 
-Zelfs als je de kroon aan het gezicht geeft, wil je de oorklappen misschien niet aankijken als je wilt dat ze minder rigide zijn bij het aan banden leggen.
+Even if you face the crown you may not want to face the ear flaps if you want them to be less rigid when tieing down.
 
 </Note>
 
 <Warning>
 
-Deze instructies gaan ervan uit dat je naadlijnen hebt gemarkeerd. Ze kunnen moeilijker te volgen zijn als u deze stap overslaat.
+These instructions assume you have marked your seam lines. They may be harder to follower if you skip this step.
 
 </Warning>
 
-### Stap 2: De Kroon
+### Step 2: The Crown
 
 - With right sides together, matching seam lines and peaks, sew two crown pieces together.
-- Press seams open. Je moest hiervoor een kleerham gebruiken, als je er geen hebt, kun je flannels of handdoeken gebruiken.
+- Press seams open. You made need to use a tailors ham for this, if you do not have one you can use flannels or towels instead.
 - (Optional) _Edgestitch_ both sides of the seam, making sure to catch the seam allowances.
-- Repeat until you have two halves. Als de helft van het aantal kroon een raar getal is, moet je aan elke helft één stuk naaien. bv. Als je 6 kroon stukjes hebt, maak je twee helften van 3 stikken aan elkaar vast.
-- With right sides together, matchinig seam lines and peaks, sew the two halves together. Het is mogelijk dat het makkelijker is om de piek samen te doorstikken door bulk of precisie. Deze naad wordt verwezen naar de "middelste kroonnaad" die verder gaat.
+- Repeat until you have two halves. If half the number of crown pieces is an odd number you will have to sew a single piece to each half. e.g. If you have 6 crown pieces, you make two halves of 3 sewing one piece to two sewn together pieces.
+- With right sides together, matchinig seam lines and peaks, sew the two halves together. You may find it easier to handstitch the peak together due to bulk or for precision. This seam will be refered to as the "centre crown seam" going forward.
 - (Optional) _Edgestitch_ both sides of the centre crown seam, making sure to catch the seam allowances.
 
 <Note>
 
-Afhankelijk van je naadwaarde wil je misschien naden bijknippen terwijl je bulk gaat verminderen.
+Depending on your seam allowance you may want to trim seams as you go to reduce bulk.
 
 </Note>
 
-### Stap 3: De ar-Flaps
+### Step 3: The Ear Flaps
 
-#### Ear Flaps met Grenzen
+#### Ear Flaps with Ties
 
-- Cut two 12" (30cm) - 16" (40cm) length of ribbon. Daar zal naar worden verwezen naarmate de banden vorderen.
-- _Baste_ a tie to the right side of an ear flap (the interfaced one if using). Herhaal voor andere stropdassen.
+- Cut two 12" (30cm) - 16" (40cm) length of ribbon. These will be refered to as ties going forward.
+- _Baste_ a tie to the right side of an ear flap (the interfaced one if using). Repeat for other tie.
 - With right sides together, matching seam lines, sew a tie ear flap to a non-tie ear flap.
 - Clip and trim seam allowance.
 - Turn inside out and press.
@@ -55,7 +55,7 @@ Afhankelijk van je naadwaarde wil je misschien naden bijknippen terwijl je bulk 
 
 <Tip>
 
-Als je onzeker bent over de lengte van je stropdassen duurt 1 meter (39") en knip ze in de helft. Gebruik deze helft als de stropdassen in de bovenstaande instructies. De stropdassen zijn aan het einde af, zodat je de lengte dan kunt aanpassen.
+If you are uncertain about the length you want for your ties take 1 metre (39") of ribbon and cut it in half. Use these halves as the ties in the instructions above. The ties are finished at the end so you can adjust the lengths then.
 
 </Tip>
 
@@ -66,9 +66,9 @@ If you prefer you can make your custom ties with fabric, [see Holmes cutting](/d
 
 </Note>
 
-#### Ear Flaps met knoopsgaten
+#### Ear Flaps with Buttonholes
 
-- Face the backs of two of the buttonholes. (Dit is niet nodig als er al twee flaps met elkaar vervlochten zijn)
+- Face the backs of two of the buttonholes. (This is not needed if two flaps have already been interfaced)
 - With right sides together, matching seam lines, sew two ear flap pieces together (one interfaced, one not).
 - Clip and trim seam allowance.
 - Turn inside out and press.
@@ -79,7 +79,7 @@ If you prefer you can make your custom ties with fabric, [see Holmes cutting](/d
 
 <Warning>
 
-De oorklappen moeten lang genoeg zijn om de bovenkant van het piek te overschrijden, zodat ze kunnen worden gedaan met een knop op het piek. Gebruik deze methode niet als je geen knop bovenaan gebruikt.
+The ear flaps will need to be long enough to go over the top of the peak so they can be done up by a button on the peak. Do not use this method if you are not using a button on the top.
 
 </Warning>
 
@@ -91,11 +91,11 @@ It is recommended to at least _topstitch_ the ear flaps but this may not be desi
 
 </Note>
 
-### Stap 4: De Visors
+### Step 4: The Visors
 
-Er zijn twee methoden voor de bouw van de bezoekers. Dit is te wijten aan de verschillende materialen waarvan de bezoeker kan worden gemaakt. Methode 1 is voor materialen die niet beschadigd worden door een naald of ijzer. Methode 2 is voor materialen die beschadigd worden door een naald of ijzer. Lees beide methodes om te bepalen welke het beste voor jou is.
+There are two methods for constructing the visors. This is due to the different types of materials the visor inserts can be made of. Method 1 is for materials that will not be damaged by a needle or iron. Method 2 is for materials that will be damaged by a needle or iron. Read both methods to determine which is best for you to use.
 
-#### De Visors Methode 1
+#### The Visors Method 1
 
 - Place visor insert on one visor piece inside seam lines.
 - Temporarily secure visor insert to visor with temporary _pad Stitches_. This will be refered to as "faced visor" going forward.
@@ -108,17 +108,17 @@ Er zijn twee methoden voor de bouw van de bezoekers. Dit is te wijten aan de ver
 
 <Warning>
 
-Wees voorzichtig met de warmte van een ijzer wanneer je bepaalde invoegmaterialen gebruikt. Je wilt de Bezoeker niet smelten en zowel de stof schade toebrengen.
+Be careful with the heat of an iron when using certain insert materials. You do not want to melt the Visor Insert and damage both it and the fabric.
 
 </Warning>
 
 <Note>
 
-Als je liever zou zien dat je tijdelijk de bezoeker bevestigt, dan moet je anders naaien en een naald door het materiaal doen hangen. Zorg ervoor dat het bij het verwijderen of toepassen geen schade toebrengt aan de stof van je hoed.
+If preferred you can temporarily attach the visor insert another way that does not require hand sewing and putting a needle through the material. Just make sure it does not damage your hat fabric when removing or applying.
 
 </Note>
 
-#### De Visors Methode 2
+#### The Visors Method 2
 
 - With rights sides together, matching seam lines and centre fronts, sew the outer curver of two visor pieces together.
 - Notch and trim (if needed) the outer curve making sure not to clip the stitching. (You may wish to turn and check the shape before this step)
@@ -128,11 +128,11 @@ Als je liever zou zien dat je tijdelijk de bezoeker bevestigt, dan moet je ander
 - _Baste_ as close as you can to the inner curve of the visor insert, making sure you pull the fabric tightly over the outer edge as you sew.
 - Repeat for the remaining visor pieces.
 
-### Stap 5: Buurderij en Eten
+### Step 5: Assembly and Lining
 
-Eens te meer zijn er twee methodes voor de definitieve vergadering en de aansluiting. Lees beide methodes zorgvuldig om te bepalen wat het beste voor u is.
+Once again there are two methods for final assembly and lining. Read both methods carefully to determine which is best for you.
 
-#### Montage- en inspraakmethode 1
+#### Assembly and Lining Method 1
 
 - Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).
 - Sew ear flap to the crown along seam lines.
@@ -145,13 +145,13 @@ Eens te meer zijn er twee methodes voor de definitieve vergadering en de aanslui
 - Press the seam allowances inwards, making sure the stitching is not visible on the outside.
 - (Optional) Loosely _whipstitch_ the seams to the inside of the crown making sure the stitching does not show on the outside.
 - Construct lining the same way as the crown ommitting _edgestitching_.
-- Fold and Press under the bottom seam allowance of the lining. Je vindt dat je onder meer moet indrukken om te voorkomen dat de voering wordt weergegeven. You may also find you need to _baste_ the seam allowance down.
+- Fold and Press under the bottom seam allowance of the lining. You may find you need to press under more to prevent the lining from showing. You may also find you need to _baste_ the seam allowance down.
 - Matching centre crown seams and panel seams, pin the lining into the hat wrong sides together. Placing the folded edge along the stitching lines.
 - _Slipstitch_ or _whipstitch_ the lining to the seam allowance of the hat.
 - Remove lining basting if used.
-- (Optional) _Tack_ the peak of the lining to the peak of the crown. Dit om te voorkomen dat de voering uitvalt.
+- (Optional) _Tack_ the peak of the lining to the peak of the crown. This is to help prevent the lining from falling out.
 
-#### Montage- en inspraakmethode 2
+#### Assembly and Lining Method 2
 
 - Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).
 - _Baste_ the ear flap to the crown along seam lines
@@ -161,18 +161,18 @@ Eens te meer zijn er twee methodes voor de definitieve vergadering en de aanslui
 - (Optional) Machine-baste the visor to the crown along seam lines.
 - Repeat for the remaining visor on the opposite side of the centre crown seam.
 - Construct lining the same way as the crown ommitting _edgestitching_ and leaving a gap in the centre lining seam large enough to turn the hat.
-- With right sides together, matching centre crown seams, panel seams and seam lines. Stik de voering aan de kroon langs de naadlijnen. Als je grootmoedig bent kun je de voering naden of beide naden bijknippen.
+- With right sides together, matching centre crown seams, panel seams and seam lines. Sew the lining to the the crown along seam lines. If bulky you may want to trim either the lining seams or both seams.
 - Turn hat inside out, pressing lining to inside.
 - (Optional/Alternate) _Understitch_ lining.
 - Slipstitch lining opening closed.
 - (Optional/Alternate) _Topstitch_ or _Edgestitch_ along the outside of the hat, catching the lining on the inside making sure it is not peaking whilst you sew.
-- (Optional) _Tack_ the peak of the lining to the peak of the crown. Dit om te voorkomen dat de voering uitvalt.
+- (Optional) _Tack_ the peak of the lining to the peak of the crown. This is to help prevent the lining from falling out.
 
 <Note>
 
 **For both Assembly and Lining Methods**
 
-You can attach the visors on first, just make sure the visors are under the ear flaps if there is any overlap. Het is gewoon of je de bezoeker liever onderduikt, of dat de oor flaps onderduikt, zoals in de instructies.
+You can attach the visors on first, just make sure the visors are under the ear flaps if there is any overlap. It is simply whether you prefer the visors to be underneath or prefer the ear flaps to be underneath like in the instructions.
 
 </Note>
 
@@ -180,7 +180,7 @@ You can attach the visors on first, just make sure the visors are under the ear 
 
 **For both Assembly and Lining Methods**
 
-If you are having trouble dealing with the curves of the visors, sew a stitching line an 1/8" (3mm) from the basting line in the seam allowance of the visor and clip to it. Dit zou het makkelijker moeten maken om de bezoeker vorm te geven. Zorg ervoor dat je deze stiksel en de clips verbergt wanneer je de voering bevestigt.
+If you are having trouble dealing with the curves of the visors, sew a stitching line an 1/8" (3mm) from the basting line in the seam allowance of the visor and clip to it. This should make it easier to bend the visor to shape. Just make sure to hide this stitching and the clips when attaching the lining.
 
 </Tip>
 
@@ -188,22 +188,22 @@ If you are having trouble dealing with the curves of the visors, sew a stitching
 
 **For both Assembly and Lining Methods**
 
-Assembly and Lining instructions are written with a 6 panelled Holmes in mind. Je kunt de plaatsing van bezoekers en stukjes oor verschillend vinden voor andere gegenummerde broekzakken. As a rule of thumb generally the centre front of the visor is always on the centre crown seam so go from there if struggling.
+Assembly and Lining instructions are written with a 6 panelled Holmes in mind. You may find the placement of visors and ear flap pieces are different for other numbered panelled Holmes. As a rule of thumb generally the centre front of the visor is always on the centre crown seam so go from there if struggling.
 
 </Warning>
 
-### Stap 6: Afgerond Ties
+### Step 6: Finishing Ties
 
-Als je je stropdassen niet hebt geknipt bij het bouwen van de oorvlakken, is het nu tijd om dat te doen. Als je aangepaste stropdassen met stof maakt, hoef je deze stappen niet te doen. Lees beide methodes nog eens zorgvuldig door en kies wat voor jou het beste is.
+If you did not cut your ties down when constructing the ear flaps, now is the time to do so. If you made custom ties with fabric then you do not need to do these steps. Again read through both methods carefully and pick which is the best for you.
 
-#### Voltooi Ties Methode 1
+#### Finishing Ties Method 1
 
 - Fold the ends of a tie in half and cut a triangle out from the corner to the fold.
 - Unfold.
 - If you are worried about the ties fraying you can use fray check or equivalent.
 - Repeat for the remaining tie.
 
-#### Voltooien van Ties Methode 2
+#### Finishing Ties Method 2
 
 - Fold under 1/8" (3mm) and another 1/8" (3mm) on one of the ties. Pin if needed.
 - _Whipstitch_ the folded edge down to the tie
@@ -211,13 +211,13 @@ Als je je stropdassen niet hebt geknipt bij het bouwen van de oorvlakken, is het
 
 <Note>
 
-Om te bepalen op welke manier je de dassen wilt vouwen, is het mogelijk dat het makkelijker is om de oorvezels eerst vast te naaien. Over het algemeen wil je dat de vouw aan de onderkant van de das ligt, maar zoals altijd is het persoonlijke voorkeur.
+To determine which way you want to fold the ties, you may find it easier to tie the ear flaps up first. Generally you want the fold to be on the underside of the ties but as always it is personal preference.
 
 </Note>
 
-### Stap 7: Knop
+### Step 7: Button
 
-Tenzij je de knoopsgatenvlakken doet hoef je geen knop aan te naaien, maar het kan handig zijn als je de naad van de kroon wilt verbergen.
+Unless you are doing the Buttonhole Ear Flaps you do not have to sew a button on but it may be useful if you want to hide any misaligned seams at the crown peak.
 
 - Construct a covered button.
 - Attach the button via the shank to the peak of the crown doing your best to keep it in the middle of the seams.
@@ -225,14 +225,14 @@ Tenzij je de knoopsgatenvlakken doet hoef je geen knop aan te naaien, maar het k
 
 <Note>
 
-Hoewel het zeker facultatief is, vind je misschien dat er een knop ontbreekt bij de hoed om het uiterlijk af te maken. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what is missing. Neem dit permanent toe als het is.
-Terwijl een gedekte knop wordt aanbevolen, kunt u elke knop gebruiken die u wilt, voel je vrij om te experimenteren!
+Whilst certainly optional, you may find that a button is what is missing from the hat to finish the look. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what is missing. If it is, attach it permanently.
+Whilst a covered button is recommeneded you can use whatever button you desire, feel free to experiment!
 
 </Note>
 
-### Stap 8: Geniet van je nieuwe hoed!
+### Step 8: Enjoy your new hat!
 
-Dat is het! Je bent allemaal klaar. Geniet nu van de wereld in je geweldige nieuwe hoed terwijl je misschien een of twee misdaad opslaat!
+That's it! You're all done. Now enjoy the world in your wonderful new hat whilst maybe solving a crime or two!
 
 <Note>
 
