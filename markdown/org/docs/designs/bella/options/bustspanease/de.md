@@ -1,15 +1,15 @@
 ---
-title: "Büstenumfang leicht"
+title: "Bust span ease"
 ---
 
 ***
 
-![Der Effekt der Bust-Spannen-Option auf das Schnittmuster](sample.png)
+![The effect of the bust span ease option on the pattern](sample.png)
 
-Die **Bustumpfschlanke** Option bestimmt, wie viel Leichtigkeit auf den Bustumpfbereich angewendet wird.
+The **bust span ease** option controls how much ease is applied to the bust span.
 
-<Note>Dies wird das Kleidungsstück nicht leicht machen, sondern nur den Büstenpunkt beeinflussen</Note>
+<Note>This will not add ease to the garment, but merely influence the bust point</Note>
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bella_bustspanease_sample.svg "Effekt dieser Option auf das Schnittmuster")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_bustspanease_sample.svg "Effect of this option on the pattern")
