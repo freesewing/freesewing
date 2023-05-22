@@ -6,10 +6,10 @@ title: "End style"
 
 In addition to having four different bow tie styles, each style can be individualized with three different tip options:
 
-- Recht
-- Puntig
-- Rond
+- Straight
+- Pointed
+- Round
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_endstyle_sample.svg "Effect of this option on the pattern")
