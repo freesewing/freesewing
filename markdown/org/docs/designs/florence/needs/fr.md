@@ -1,10 +1,10 @@
 ---
-title: "Florence face mask: What You Need"
+title: "Masque Florence : Ce qu'il faut"
 ---
 
-To make a Florence face mask, you will need the following:
+Pour créer un masque Florence, vous aurez besoin du matériel suivant :
 
-- Basic sewing supplies
-- About 15 cm (6") of a suitable fabric ([see Fabric options](/docs/patterns/florence/fabric/))
-- About 15 cm (6") of lining fabric
-- About 1.6 meters (1.8 yards) of ribbon cut in 4 equal parts
+- Fourniture de base pour la couture
+- Environ 15 cm (6") d'un tissu adapté ([voir Options de tissu](/docs/patterns/florence/fabric/))
+- Tissu de doublure d'environ 15 cm (6")
+- Environ 1,6 mètre de ruban coupé en 4 parties égales
