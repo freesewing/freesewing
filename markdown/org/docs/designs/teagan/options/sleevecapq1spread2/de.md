@@ -2,16 +2,17 @@
 title: "Sleevecap Q1 upward spread"
 ---
 
-![Die Aufwärtsverteilung im ersten Quadranten der Ärmel](./sleevecapq1spread2.svg)
+![The upward spread in the first quadrant of the sleevecap](./sleevecapq1spread2.svg)
 
-Diese Option steuert die Aufwärtsverteilung im ersten Quadranten der Ärmel.
+This option controls the upward spread in the first quadrant of the sleevecap.
 
 <Tip>
 
-Siehe [die Armkugel verstehen](/docs/patterns/brian/options#understanding-the-sleevecap) für eine detaillierte Erklärung, wie die Armkugel konstruiert wird und wie die einzelnen Optionen ihre Form beeinflussen.
+See [understanding the sleevecap](/docs/patterns/brian/options#understanding-the-sleevecap) for an in-depth
+look into how the sleevecap is constructed and the influence of the different options on its shape.
 
 </Tip>
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](teagan_sleevecapq1spread2_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](teagan_sleevecapq1spread2_sample.svg "Effect of this option on the pattern")
