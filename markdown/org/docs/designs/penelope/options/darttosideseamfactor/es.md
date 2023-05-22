@@ -1,9 +1,9 @@
----
+- - -
 title: "Dart to side seam factor"
----
+- - -
 
-Percentage of how much of the hip to waist reduction has to be taken in by the darts versus the side seam.
+Porcentaje de cuánta de la reducción de cadera a cintura se toma de las pinzas con respecto a las costuras laterales.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_darttosideseamfactor_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](penelope_darttosideseamfactor_sample.svg "Efecto de esta opción en el patrón")
