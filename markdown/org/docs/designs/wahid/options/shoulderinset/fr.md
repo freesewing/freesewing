@@ -1,19 +1,19 @@
 ---
-title:"Largeur d'épaule"
+title: "Shoulder inset"
 ---
 
-![Largeur d'épaule](shoulderinset.svg)
+![Shoulder inset](shoulderinset.svg)
 
-Jusqu'où voulez-vous que votre gilet s'éloigne de votre épaule au niveau de votre couture d'épaule ? La valeur par défaut est 2 cm.
+How far do you want your waistcoat to sit away from your shoulder on the shoulder seam? The default is 2cm.
 
 <Note>
 
-###### Pour quoi faire ?
+###### What's the point?
 
-La couture de l'épaule d'un gilet est généralement plus étroite que votre chemise. Cette option permet de contrôler cette largeur (sur le côté de l'épaule).
+The shoulder seam of a waistcoat is typically more narrow than your shirt. This option controls how narrow it gets (on the shoulder side).
 
 </Note>
 
-## Effet de cette option sur le patron
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_shoulderinset_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_shoulderinset_sample.svg "Effect of this option on the pattern")
