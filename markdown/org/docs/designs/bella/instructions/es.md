@@ -4,10 +4,10 @@ title: "Bella body block: Sewing Instructions"
 
 <Note>
 
-###### Bella es un bloque, no un patrón
+###### Bella is a block, not a pattern
 
-Un bloque es una forma básica en la que se basan otros patrones.
-A veces también se llaman trampas, aunque los puristas argumentarán que un bloque y una inclinación son cosas diferentes.
+A block is a basic shape on which other patterns are based.
+They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
 
 Blocks are typically not made as-is but rather serve as a basis for other patterns so the instructions below will not go in depth about closures or finishes and are for the default Bella block.
 
@@ -16,13 +16,13 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 ### Step 1: Mock-up Construction
 
 - Close the front bust and waist darts.
-- Cerrar los dardos traseros.
-- Sew the front to the backs at the shoulders good sides together.
-- Sew the front to the backs at the side seams good sides together.
+- Close the back darts.
+- Sew the front to the backs at the shoulders _good sides together_.
+- Sew the front to the backs at the side seams _good sides together_.
 
 <Tip>
 
-If you are making adjustments you may wish to sew the seams wrong sides together to make them easier to adjust.
+If you are making adjustments you may wish to sew the seams _wrong sides together_ to make them easier to adjust.
 
 </Tip>
 
@@ -30,13 +30,13 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 
 - Try it on and check the fit by pinning the back closed whilst wearing it.
 - Make any alterations and try it on again.
-- Repite hasta que te satisfaga.
+- Repeat until you are happy.
 
 <Tip>
 
 If you do not have someone to help with pinning, you may find it easier to cut the front part in two with seam allowance rather than on a fold and sew the back seam up so that you can pin in the front when trying on.
 
-Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. etc. etc. Cosas como estas son signos de que el patrón puede necesitar ajustes.
+Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. Things like these are signs of where the pattern may need adjusting.
 
 Sometimes you may need to wear the mock-up for an extended amount of time to get a better sense of the fit so don't be afraid to walk around in it for a couple of hours.
 
