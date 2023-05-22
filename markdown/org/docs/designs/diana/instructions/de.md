@@ -1,68 +1,70 @@
 ---
-title: "Diana, das Wasserfallshirt: Anleitung"
+title: "Diana draped top: Sewing Instructions"
 ---
 
-### Schritt 1: Versäubern der Nackennaht
+### Step 1: Finish the back neckline
 
-- Schneide einen 3cm breiten Streifen in der Länge deiner Nackenlinie aus dem Shirtstoff zu.
-- Bügle diesen auf der Längsseite ca. 1cm um.
+- Cut a strip of main fabric the length of your back neckline, and around 3 cm wide.
+- Press a fold into this strip, 1 cm from the edge.
 
 <Tip>
 
-Schneide den Streifen bei gewebten Stoffen als Schrägband zu.  
-Schneide den Streifen bei gestrickten Stoffen (Jersey) so zu, dass sich der Streifen längs stärker dehnen lässt.
+For woven fabric make this a bias cut strip.  
+For knit fabric make a strip with the stretch of the fabric running along the long edge.
 
 </Tip>
 
-- Leg den Streifen _rechts auf rechts_ mit der ungebügelten Seite an die Nackenlinie.
-- Näh den Streifen fest und versäubere die Kante.
-- Klapp den Streifen über die Naht und _steppe_ diesen fest.
+- With _good sides together_ align the non-folded edge of the strip with the back neckline.
+- Sew the strip to the back neckline and trim the seam.
+- Turn the strip to the wrong side of the fabric and _topstitch_ along the folded edge to keep it in place.
 
-### Schritt 2: Schulternähte
+### Step 2: Close shoulder seams
 
-![Diese Zeichnung war einfach zu schön, um sie nicht zu benutzen](neckline.jpg)
+![This drawing was too nice not to use](neckline.jpg)
 
-- Versäubere die Kante des Ausschnitts je nach Stoffeigenschaften (wenn er nicht ausfranst, kannst du ihn einfach so lassen).
-- Leg die Schulternähte vom vorderen und hinteren Stoffteil _rechts auf rechts_ aufeinander.
-- Falte die Nahtzugabe des Ausschnitts über die linke Seite des Rückenteils.
-
-<Note>
-
-Wenn du einen sehr leichten Webstoff benutzt, kannst du diese Kante zusätzlich falten, sodass ein schmaler doppelter Saum entsteht (eventuell vorher bügeln).
-
-</Note>
-
-- Achte beim Zusammennähen der Schultern darauf, die offene Kante der Nackennaht in der Falte festzunähen.
-- Wende das Shirt und bügle die Naht flach.
-
-### Schritt 3: Ausschnitt versäubern
-
-- Bügle den Saum, der durch die Falten an den Schultern entstanden ist, gleichmäßig um und steppe ihn knappkantig ab.
-
-### Schritt 4: Ärmel annähen
-
-Der Ärmel wird flach eingesetzt, das heißt, dass zuerst das Armloch genäht wird und danach der Ärmel und die Seitennaht in einem Zug geschlossen werden.
-
-- Stecke den Ärmel _rechts auf rechts_ an das Armloch und achte auf die Markierungen.
-- Wenn nötig, kann der Ärmel etwas eingehalten werden, sodass die Markierungen genau aufeinander liegen.
-- Zusammennähen, versäubern und bügeln.
-- Das Gleiche beim zweiten Ärmel wiederholen.
-
-### Schritt 5: Seitennaht und Ärmel schließen
-
-- Steck Vorder- und Rückenteil _rechts auf rechts_ zusammen und achte darauf, dass die Armlöcher genau aufeinander liegen.
-- Zusammennähen, versäubern und bügeln.
-
-### Schritt 6: Saum
-
-- Versäubere die Ärmel und den Saum je nach Stoffeigenschaften.
+- Finish the raw edge on the front neckline in a way that suits your fabric (if it doesn’t fray, you can leave it unfinished).
+- With _good sides together_, place the front on the back aligning the shoulder seams.
+- Fold the front neckline seam allowance over to the wrong side of the back.
 
 <Note>
 
-Das kann entweder ein klassischer Saum sein, bei dem der Stoff zweimal umgeklappt und abgesteppt wird. Der Stoff kann aber auch mit einer Overlock oder einem Zickzackstich versäubert werden und nur einmal umgeklappt und festgesteppt werden. Bei Stoffen, die nicht fransen kann die Kante auch einfach nur umgeklappt und festgenäht werden.
+If you have a lightweight woven fabric you can fold this edge up again, so it will form a narrow double hem afterwards (it can help to press these folds first).
 
 </Note>
 
-### Schritt 7: Viel Spaß mit deinem neuen Shirt!
+- Stitch the shoulder seam, enclosing the raw edge of the back neckline in the fold.
+- Turn to the right side and press.
 
-Fertig! Viel Spaß mit deinem neuen Shirt!
+### Step 3: Finish front neckline
+
+- Press the hem formed in your fabric by the folds you made at the shoulder seam when you closed the shoulder and topstitch close to the edge.
+
+### Step 4: Attach sleeves
+
+The sleeve will be inserted flat, meaning the armhole seam will be sewn first and the sleeve and side seam will be closed in one go.
+
+- With _good sides together_, matching notches, pin the sleeve head along the armhole.
+- If necessary, ease in the sleeve head at the top, between the notches.
+- Sew, finish and press the seam.
+- Repeat for other sleeve.
+
+### Step 5: Close side and sleeve seam
+
+- With _good sides together_ pin the front to the back along the sleeve and side seams, making sure to line up the armhole seams.
+- Sew, finish and press the seam.
+
+### Step 6: Hem
+
+- Finish the sleeves and bottom hems in a way that works with your fabric choice.
+
+<Note>
+
+Again, this can mean folding the hem under twice and _topstitching_, finishing the raw edge with a serger
+or zig zag stitch and folding it under once or leaving the edge raw, folding it under once and
+trimming close to the stitching.
+
+</Note>
+
+### Step 7: Enjoy!
+
+You're all done! Now go enjoy your new top!
