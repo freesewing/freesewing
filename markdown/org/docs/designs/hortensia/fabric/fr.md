@@ -2,7 +2,7 @@
 title: "Hortensia handbag: Fabric Options"
 ---
 
-### Tissu principal
+### Main Fabric
 
 The key fabric choices for Hortensia are non-stretch, durable and strong enough to hold items.
 
