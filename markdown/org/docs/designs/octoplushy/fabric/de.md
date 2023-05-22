@@ -1,5 +1,5 @@
 ---
-title: "Octoplushy, der plüschige Oktopus: Stoffoptionen"
+title: "Octoplushy, the plushy octopus: Fabric Options"
 ---
 
 ## Main and Contrast Body Fabrics (Upper body and legs, belly and underside legs)
