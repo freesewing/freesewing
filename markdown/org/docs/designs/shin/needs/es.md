@@ -4,12 +4,12 @@ title: "Shin swim trunks: What You Need"
 
 To make Shin, you will need the following:
 
-- Suministros básicos de costura
+- Basic sewing supplies
 - About 0.75 meters (0.8 yards) of a suitable fabric ([see Fabric options](/docs/patterns/shin/fabric))
-- dos eyelets y una cadena de dibujo
+- two eyelets and a drawstring
 
-> ## Un serger/overlock es bueno, pero opcional
+> ## A serger/overlock is nice, but optional
 > 
-> Al igual que con todas las telas estiradas, un serpiente o un overlock le hará la vida más fácil.
+> As with all stretch fabrics, a serger/overlock will make your life easier.
 > 
-> Si no tienes una no te desesperes. Realmente no la necesitas. Puede utilizar otra técnica para las costuras de estiramiento, como un punto zig-zag, una aguja gemela o un hilo elástico.
+> If you do not have one of those, don't despair. You don't really need it. You can use another technique for stretch seams, such as a zig-zag stich, twin needle, or elastic thread.
