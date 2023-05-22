@@ -1,9 +1,9 @@
----
+- - -
 title: "Front cutaway end"
----
+- - -
 
-Increasing this will make the front cutaway stay closer to the center front
+En augmentant cette valeur, l'arrondi du pan se terminera plus proche du milieu devant
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_frontcutawayend_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_frontcutawayend_sample.svg "Effet de cette option sur le modèle")
