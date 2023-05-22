@@ -2,10 +2,10 @@
 title: "Pocket"
 ---
 
-![Deze optie bepaalt of de voorzak al dan niet toegevoegd is](./pocket.svg)
+![This option controls whether or not to include the front pouch pocket](./pocket.svg)
 
-Wil je een zak (vooraan) of niet?
+Do you want front (pouch) pocket or not?
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](huey_pocket_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_pocket_sample.svg "Effect of this option on the pattern")
