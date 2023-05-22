@@ -2,10 +2,10 @@
 title: "Waistband shape"
 ---
 
-![Forme de ceinture](waistbandshape.svg)
+![Waistband shape](waistbandshape.svg)
 
-La forme de la ceinture. Droit facilite les choses, mais une ceinture arrondie s’adapte à votre corps si vous avez une juste différence entre la taille et les circonférences.
+The shape of the waistband. Straight makes things easier, but a rounded waistband adapts to your body if you have a fair difference between waist and hips circumferences.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](sandy_waistbandshape_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](sandy_waistbandshape_sample.svg "Effect of this option on the pattern")
