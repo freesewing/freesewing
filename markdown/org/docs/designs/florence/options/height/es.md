@@ -2,10 +2,10 @@
 title: "Height"
 ---
 
-![Opción de altura](./height.svg)
+![Height option](./height.svg)
 
-Controla la altura de la mascarilla.
+Controls the height of your face mask.
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](florence_height_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](florence_height_sample.svg "Effect of this option on the pattern")
