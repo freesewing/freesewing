@@ -1,6 +1,6 @@
----
+- - -
 title: "Cuff drape"
----
+- - -
 
 ![Drapé du bas de manche](cuffdrape.svg)
 
