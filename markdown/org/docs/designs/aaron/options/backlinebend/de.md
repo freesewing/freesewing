@@ -1,6 +1,6 @@
----
+- - -
 title: "Back armhole shape"
----
+- - -
 
 ![Die Rückenarmlochform auf Aaron](./backlinebend.svg)
 
