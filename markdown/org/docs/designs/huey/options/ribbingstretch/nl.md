@@ -2,10 +2,10 @@
 title: "Ribbing stretch"
 ---
 
-![Stretch boordstof](./ribbingstretch.svg)
+![Ribbing stretch](./ribbingstretch.svg)
 
-Bepaalt de hoeveelheid stretch die te voorzien is in de boord
+Controls the amount of stretch to foresee in the ribbing.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](huey_ribbingstretch_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_ribbingstretch_sample.svg "Effect of this option on the pattern")
