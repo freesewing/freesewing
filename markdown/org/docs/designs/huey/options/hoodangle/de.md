@@ -2,10 +2,10 @@
 title: "Hood angle"
 ---
 
-![Winkel der Kapuze](./hoodangle.svg)
+![Hood angle](./hoodangle.svg)
 
-Steuert den Winkel, mit welchem die Kapuze angebracht wird
+Controls the angle at which the hood is attached
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](huey_hoodangle_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_hoodangle_sample.svg "Effect of this option on the pattern")
