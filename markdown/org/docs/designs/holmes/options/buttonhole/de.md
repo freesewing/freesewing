@@ -6,6 +6,6 @@ title: "Buttonhole guide"
 
 Adds a buttonhole to the ear flap to help you draft the buttonhole ear flap variant
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](holmes_buttonhole_sample.svg "Effekt dieser Option auf das Schnittmuster")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](holmes_buttonhole_sample.svg "Effect of this option on the pattern")
