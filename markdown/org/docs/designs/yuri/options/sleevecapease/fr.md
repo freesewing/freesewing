@@ -1,6 +1,6 @@
----
-title: "Sleevecap ease"
----
+- - -
+titre : "Aisance de la tête de manche"
+- - -
 
 Détermine l'aisance au niveau de la tête de manche.
 
