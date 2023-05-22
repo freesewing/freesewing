@@ -2,11 +2,11 @@
 title: "Waist height"
 ---
 
-Controla la altura de la cintura, donde:
+Controls the height of the waist, where:
 
-- 100% : La cintura de los pantalones se encuentra en la cintura
-- 0% : La cintura de los pantalones se encuentra en la línea de cadera
+- 100% : The waist of the trousers sits at the waist line
+- 0% : The waist of the trousers sits at the hip line
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](paco_waistheight_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](paco_waistheight_sample.svg "Effect of this option on the pattern")
