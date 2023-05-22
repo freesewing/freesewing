@@ -1,8 +1,8 @@
----
+- - -
 title: "Neckline"
----
+- - -
 
-Controls whether or not to draft a neck opening
+Contrôle si oui ou non il faut tracer un encolure
 
 ## Effet de cette option sur le motif
 
