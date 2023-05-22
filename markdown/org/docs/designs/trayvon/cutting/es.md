@@ -2,16 +2,16 @@
 title: "Trayvon tie: Cutting Instructions"
 ---
 
-- **Tela principal**
-  - Corta **1 consejo**
-  - Cortar **1 cola**
-- **Tela fina**
-  - Corta **1 punta de alineación**
-  - Cortar **1 cola de forro**
-  - Cortar **1 bucle**
-- **Interfaz**
-  - Corta **1 consejo de interfaz**
-  - Corta **1 cola de interfaz**
+- **Main fabric**
+  - Cut **1 tip**
+  - Cut **1 tail**
+- **Lining fabric**
+  - Cut **1 lining tip**
+  - Cut **1 lining tail**
+  - Cut **1 loop**
+- **Interfacing**
+  - Cut **1 interfacing tip**
+  - Cut **1 interfacing tail**
 
 <Warning>
 
@@ -25,16 +25,16 @@ title: "Trayvon tie: Cutting Instructions"
 
 <Tip>
 
-###### Escoger tu grano de empatado
+###### Choosing your tie grain
 
-![Un tejido, diferentes granos y diferentes vínculos. No te preocupes por las reglas, haz lo que quieras](tie-grain.png)
+![One fabric, different grains, different ties. Don't worry about rules, make what you like](tie-grain.png)
 
-Este patrón no incluye una línea de grano. La línea de grano se imprime típicamente en el patrón para mostrar cómo colocar su patrón en su tejido, en relación con el grano de la tela.
+This pattern does not include a grain line. The grain line is typically printed on the pattern to show you how to place your pattern on your fabric, relative to the fabric's grain.
 
-Para un empate, cómo hacer esto no es tanto una regla sino una elección personal. Como tal, no hay ninguna línea de grano impresa en el patrón. Puedes hacer lo que quieras.
+For a tie, how you do this is not so much a rule as it is a personal choice. As such, there is no grain line printed on the pattern. You can do what you want.
 
-Dicho esto, se cortan muchos lazos con la parcialidad, ya que esto resulta en el mejor borrado. Si no está seguro de qué hacer, considere cortar su corbata con sesgo.
+That being said, a lot of ties are cut on bias, as this results in the best drape. If you are unsure what to do, consider cutting your tie on bias.
 
-Si todo esto suena muy confuso, podría sugerir leer la página de ayuda en [Fabric grain](/docs/cowing/tel-grain).
+If this all sounds very confusing, might I suggest reading the help page on [Fabric grain](/docs/sewing/fabric-grain).
 
 </Tip>
