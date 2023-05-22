@@ -2,31 +2,29 @@
 title: "Charlie chinos: Cutting Instructions"
 ---
 
-##### De tela principal
+##### From main fabric
 
-- Parte **1**: **2 x** _con buenos lados juntos_.
-- Parte **2**: **2 x** _con buenos lados juntos_.
-- Parte **4**: **4 x**
-- Parte **6**: **2 x**
+- Part **1**: **2 x** _with good sides together_.
+- Part **2**: **2 x** _with good sides together_.
+- Part **4**: **4 x**
+- Part **6**: **2 x**
 - Part **8**: **4 x** (2 pairs _with good sides together_)
-- Parte **9**: **2 x** _con buenos lados juntos_
-- Parte **10**: **1 x** en plegado
-- Parte **11**: **1 x** si hace una pulsera recta
-- Parte **11**: **2 x** _con buenos lados juntos_ si hace una cintura curvada
-- Parte **12**: **1 x**
+- Part **9**: **2 x** _with good sides together_
+- Part **10**: **1 x** on the fold
+- Part **11**: **1 x** if making a straight waistband
+- Part **11**: **2 x** _with good sides together_ if making a curved waistband
+- Part **12**: **1 x**
 
-##### Desde el revestimiento (o cualquier material adecuado para bolsas de bolsa)
+##### From lining (or any material suitable for pocket bags)
 
-- Parte **5**: **2 x**
-- Parte **7**: **2 x**
+- Part **5**: **2 x**
+- Part **7**: **2 x**
 
-##### Desde interfaz fusible
+##### From fusible interfacing
 
-- Parte **3**: **2 x**
+- Part **3**: **2 x**
 
 <Tip>
-
-##### ¿Un guión de color tal vez?
 
 ##### A dash of color perhaps?
 
