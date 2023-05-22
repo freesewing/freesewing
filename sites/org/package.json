@@ -41,7 +41,7 @@
     "lodash.orderby": "4.6.0",
     "lodash.set": "4.3.2",
     "luxon": "3.3.0",
-    "next": "13.4.2",
+    "next": "13.4.3",
     "react-dropzone": "14.2.3",
     "react-hotkeys-hook": "4.4.0",
     "react-instantsearch-dom": "6.40.0",
