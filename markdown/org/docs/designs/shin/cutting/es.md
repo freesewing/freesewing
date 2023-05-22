@@ -2,14 +2,14 @@
 title: "Shin swim trunks: Cutting Instructions"
 ---
 
-- Corta **2 espaldas** con buenos lados juntos
-- Corta **4 frontales** 2 x 2 con buenos lados juntos
-- Corta **1 cintura**
+- Cut **2 backs** with good sides together
+- Cut **4 fronts** 2 x 2 with good sides together
+- Cut **1 waistband**
 
-## Cañadas
+## Caveats
 
-- Para ahorrar papel, la cintura no se imprime completamente en el patrón, ya que es un rectángulo largo. Así que busque el indicador de longitud, y corte un rectángulo de ese tamaño.
-- La franquicia del hem es el doble de la franquicia estándar de costura.
+- To save paper, the waistband is not completely printed on the pattern since it's just a long rectangle. So look for the length indicator, and cut out a rectangle of that size.
+- The hem allowance is double the standard seam allowance.
 
 Shin is a very simply pattern, and consists of two main parts plus the waistband.
 
@@ -19,6 +19,6 @@ Below is a typical draft layout:
 
 <Tip>
 
-La [guía de notación de patrones][1] explica todas las diferentes marcas y líneas de tu borrador.
+The [pattern notation guide][1] explains all the different markings and lines on your draft.
 
 </Tip>
