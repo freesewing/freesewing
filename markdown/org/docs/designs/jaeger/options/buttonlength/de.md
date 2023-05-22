@@ -1,9 +1,9 @@
----
+- - -
 title: "Button length"
----
+- - -
 
-Controls the length over which the buttons are spaced. In other words, the length from the top to bottom buttons.
+Bestimmt die Länge über die die Tasten abgelegt werden. Mit anderen Worten, die Länge von oben bis unten Buttons.
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_buttonlength_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](jaeger_buttonlength_sample.svg "Effekt dieser Variable auf das Schnittmuster")
