@@ -1,11 +1,11 @@
----
-title: "Biceps ease"
----
+- - -
+titre : "Aisance aux biceps"
+- - -
 
-![The biceps ease option on Diana](./bicepsease.svg)
+![L'option de facilité biceps sur Diana](./bicepsease.svg)
 
-This option controls the fit at your upper arm, and influences the depth of the armhole.
+Cette option permet de contrôler l'ajustement à votre bras supérieur et influence la profondeur de votre armure.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_bicepsease_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](diana_bicepsease_sample.svg "Effet de cette option sur le modèle")
