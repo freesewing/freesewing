@@ -1,11 +1,11 @@
----
-title: "Waist ease"
----
+- - -
+titre : "aisance à la taille"
+- - -
 
-![The waist ease option on Diana](./waistease.svg)
+![L'option d'assouplissement de la taille sur Diana](./waistease.svg)
 
-This option controls the amount of ease at the waist.
+Cette option permet de contrôler la quantité d'aisance à la taille.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_waistease_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](diana_waistease_sample.svg "Effet de cette option sur le modèle")
