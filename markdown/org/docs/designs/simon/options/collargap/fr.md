@@ -1,17 +1,17 @@
----
+- - -
 title: "Collar gap"
----
+- - -
 
-![Collar gap](collargap.svg)
+![Écart du col](collargap.svg)
 
-Distance the collar sits apart when closed.
+La distance entre le collier et le collier est séparée lorsqu'il est fermé.
 
 <Note>
 
-This is really mostly a style choice, but a wider collar gap (together with the collar angle) can accomodate a wider tie (knot).
+Il s'agit surtout d'un choix de style, mais un plus grand écart de collier (avec l'angle du col) peut accueillir une cravate plus large (nœud).
 
 </Note>
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collargap_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_collargap_sample.svg "Effet de cette option sur le modèle")
