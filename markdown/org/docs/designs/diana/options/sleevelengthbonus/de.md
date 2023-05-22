@@ -1,11 +1,11 @@
----
-title: "Sleeve length bonus"
----
+- - -
+title: "Längenzugabe Ärmel"
+- - -
 
-![The sleeve length bonus option on Diana](./sleevelengthbonus.svg)
+![Die Hülle-Bonusoption auf Diana](./sleevelengthbonus.svg)
 
-This option determines the length of the sleeves.
+Diese Option legt die Länge der Ärmel fest.
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_sleevelengthbonus_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](diana_sleevelengthbonus_sample.svg "Effekt dieser Option auf das Schnittmuster")
