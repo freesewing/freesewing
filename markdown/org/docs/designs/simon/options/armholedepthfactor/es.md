@@ -2,10 +2,10 @@
 title: "Armhole depth factor"
 ---
 
-![Factor de profundidad de la sisa](./armholedepthfactor.svg)
+![Armhole depth factor](./armholedepthfactor.svg)
 
-Esta opción controla la profundidad del agujero de armadura.
+This option controls the depth of the armhole.
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_armholedepthfactor_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_armholedepthfactor_sample.svg "Effect of this option on the pattern")
