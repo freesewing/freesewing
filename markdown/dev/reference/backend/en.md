@@ -1,12 +1,26 @@
 ---
-title: FreeSewing Backend
+title: Backend REST API
 ---
 
 This is the reference documentation for the FreeSewing backend REST API.
 
-<Fixme>
+<Fixme compact>
 This documentation is under construction as we are re-working this API for v3.
 </Fixme>
+
+## REST API docs
+
+<ReadMore />
+
+<Tip>
+
+##### Also available as OpenAPI specification
+
+The backend hosts its own auto-generated (Swagger) documentation based
+on the OpenAPI specification (v3): [backend3.freesewing.org/docs/
+](https://backend3.freesewing.org/docs/)
+
+</Tip>
 
 ## About the FreeSewing backend
 
@@ -36,10 +50,6 @@ We will monitor the use of our backend API and we may at any moment decide to
 revoke API keys if we feel the use is beyond what we can or want to support.
 
 </Warning>
-
-## REST API docs
-
-<ReadMore />
 
 ## Database schema
 

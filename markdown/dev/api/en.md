@@ -5,17 +5,15 @@ title: API Docs
 Welcome to the FreeSewing API documentation, you can find information for 
 the following APIs here:
 
-## FreeSewing Core API
+## [<DocsTitle slug="reference/api" />](/reference/api)
 
-The [FreeSewing Core API docs](/reference/api) hold the reference documentation
-for our core library for parametric pattern design.
+Reference documentation for our core library for parametric pattern design:
 
-If you're looking to design patterns with FreeSewing, you may want to bookmark 
-this.
+<ReadMore root="reference/api" />
 
-## FreeSewing Backend API
+## [<DocsTitle slug="reference/backend" />](/reference/backend)
 
-The [FreeSewing Backend API docs](https://backend3.freesewing.org/docs/) is 
-auto-generated from this API's OpenAPI v3 specification and hosted on the backend itself.
+Reference documentation for our backend and its REST API:
 
+<ReadMore root="reference/backend" />
 
