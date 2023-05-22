@@ -2,27 +2,27 @@
 title: "Theo trousers: Cutting Instructions"
 ---
 
-- **Tissu principal**
-  - Couper **2 dos** avec de bons côtés ensemble
-  - Couper **2 front(s)** avec de bons côtés ensemble
-  - Couper **1 ceinture à gauche**
-  - Couper **1 ceinture à droite**
-  - Couper **2 pièce(s) de mouche** avec de bons côtés ensemble
-  - Couper **2 pièce(s) de côté** avec de bons côtés ensemble
-  - Coupez **4 faces de poche arrière**
-  - Coupez **boucle ceinture 8**
-- **Doublure**
-  - Couper **2 doublures avant** avec de bons côtés ensemble
-  - Couper **1 ceinture**
-  - Couper **1 bande de taille**
-  - Couper **1 bouclier volant**
-  - Coupez **4 sacs de poche avant** 2x2 avec les bons côtés ensemble (**voir les avertissements ci-dessous**)
-  - Couper **2 sac(s) de poche intérieure arrière**
-  - Coupez **2 sacs de poche extérieurs**
-- **Entoilage**
-  - Couper **1 ceinture en interfacant à gauche**
-  - Couper **1 ceinture en interfacant à droite**
-  - Coupez **4 interfaces(s) de poche arrière**
+- **Main fabric**
+  - Cut **2 back(s)** with good sides together
+  - Cut **2 front(s)** with good sides together
+  - Cut **1 waistband left**
+  - Cut **1 waistband right**
+  - Cut **2 fly piece(s)** with good sides together
+  - Cut **2 side piece(s)** with good sides together
+  - Cut **4 back pocket facing(s)**
+  - Cut **8 belt loop(s)**
+- **Lining**
+  - Cut **2 front lining(s)** with good sides together
+  - Cut **1 waistband lining left**
+  - Cut **1 waistband lining right**
+  - Cut **1 fly shield**
+  - Cut **4 front pocket bag(s)** 2x2 with good sides together (**see caveats below**)
+  - Cut **2 back inner pocket bag(s)**
+  - Cut **2 back outer pocket bag(s)**
+- **Interfacing**
+  - Cut **1 waistband interfacing left**
+  - Cut **1 waistband interfacing right**
+  - Cut **4 back pocket interfacing(s)**
 
 <Warning>
 
@@ -33,6 +33,6 @@ title: "Theo trousers: Cutting Instructions"
 - There are two variations of the front pocket bag. You need to cut out two of each:
   - Cut two of the complete piece
   - Cut two with only extending up to the dashed line at the left
-- The **back inner pocket bag** and **back outer pocket bag** are very similar. Assurez-vous de les marquer correctement afin de ne pas les confondre.
+- The **back inner pocket bag** and **back outer pocket bag** are very similar. Make sure to mark them correctly so you don't confuse them.
 
 </Warning>
