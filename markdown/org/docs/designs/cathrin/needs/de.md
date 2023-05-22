@@ -14,6 +14,6 @@ Sample supplies list:
 - About 0.5 meters (0.6 yards) of outer fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
 - Boning
 - Grommets (size 2)
-- Ungefähr 2 Meter Voreinstellung
-- Etwa 3 Meter Schnürung
+- About 2 meters of bias tape
+- About 3 meters of lacing
 - Tools: Grommet setter, awl
