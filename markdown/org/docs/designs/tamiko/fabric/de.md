@@ -1,7 +1,7 @@
----
+- - -
 title: "Tamiko top: Fabric Options"
----
+- - -
 
-This pattern has a lot of unfinished edges, so you need something that does not ravel. And you want to go for something with a nice drape.
+Dieses Muster hat viele unfertige Kanten, so dass Sie etwas brauchen, das nicht verrät. Und Sie wollen für etwas mit einem netten Drap gehen.
 
-Long story short, go for a knitted fabric, or some light scuba or something. No wovens.
+Lange Geschichte kurz, gehen Sie nach einem Strickgewebe, oder etwas Licht oder etwas. Keine Webs.
