@@ -2,14 +2,14 @@
 title: "Bent body Block: Cutting Instructions"
 ---
 
-**Oberstoff**
+**Main fabric**
 
-- Schneide **1 Vorderteil** im Stoffbruch.
+- Cut **1 Front** part on the fold.
 - Cut **1 Back** part on the fold.
 - Cut **2 Top sleeve** parts.
 - Cut **2 Under sleeve** parts.
 
-These cutting instructions are just for the default Bent block. Passe deinen Zuschnitt entsprechend an, falls du Änderungen am Grundschnitt vornimmst.
+These cutting instructions are just for the default Bent block. Adjust your cutting accordingly if you have/are making changes to the block.
 
 <Warning>
 
@@ -22,8 +22,8 @@ As Bent is a block it does not have any closures. If you are making a test Bent 
 ###### Bent is a block, not a pattern
 
 A block is a basic shape on which other patterns are based.
-Sie werden manchmal auch als Schläger bezeichnet, obwohl Puristen argumentieren, dass ein Block und ein Schläger verschiedene Dinge sind.
+They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
 
-Grundschnitte werden in der Regel nicht so gemacht, wie sie sind, sondern dienen als Grundlage für andere Schnittmuster.
+Blocks are typically not made as-is but rather serve as a basis for other patterns.
 
 </Note>
