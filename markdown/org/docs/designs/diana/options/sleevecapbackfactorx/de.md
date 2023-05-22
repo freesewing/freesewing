@@ -1,18 +1,17 @@
----
+- - -
 title: "Sleevecap back X"
----
+- - -
 
-![The horizontal location of the back inflection point](./sleevecapbackfactorx.svg)
+![Die horizontale Position des Rückenbiegepunkts](./sleevecapbackfactorx.svg)
 
-This option controls the horizontal placement of the sleevecap inflection point at the back of the sleeve.
+Diese Option steuert die horizontale Platzierung der Ärmelschaltung auf der Rückseite des Ärmels.
 
 <Tip>
 
-See [understanding the sleevecap](/docs/patterns/brian/options#understanding-the-sleevecap) for an in-depth
-look into how the sleevecap is constructed and the influence of the different options on its shape.
+Siehe [die Armkugel verstehen](/docs/patterns/brian/options#understanding-the-sleevecap) für eine detaillierte Erklärung, wie die Armkugel konstruiert wird und wie die einzelnen Optionen ihre Form beeinflussen.
 
 </Tip>
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_sleevecapbackfactorx_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](diana_sleevecapbackfactorx_sample.svg "Effekt dieser Option auf das Schnittmuster")
