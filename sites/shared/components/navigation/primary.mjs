@@ -6,7 +6,6 @@ import {
   CommunityIcon,
   DesignIcon,
   DocsIcon,
-  HelpIcon,
   RssIcon,
   ShowcaseIcon,
   UserIcon,
@@ -18,6 +17,7 @@ import {
   WrenchIcon,
   FreeSewingIcon,
   HeartIcon,
+  BulletIcon,
 } from 'shared/components/icons.mjs'
 import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
 
@@ -43,7 +43,6 @@ export const icons = {
   community: (className = '') => <CommunityIcon className={className} />,
   sets: (className = '') => <MeasureIcon className={className} />,
   patterns: (className = '') => <PageIcon className={className} />,
-  training: (className = '') => <TrophyIcon className={className} />,
 }
 
 /* helper method to order nav entries */
@@ -207,7 +206,7 @@ export const Icons = ({
     output.push(
       <li key={page.s}>
         <Link href={`/${page.s}`} className={linkClasses} title={page.t} style={linkStyle}>
-          {icons[page.s] ? icons[page.s]('w-14 h-14') : <HelpIcon />}
+          {icons[page.s] ? icons[page.s]('w-14 h-14') : <BulletIcon />}
           <span className="font-bold">{page.t}</span>
         </Link>
       </li>
@@ -216,6 +215,13 @@ export const Icons = ({
 
   return <ul className={ulClasses}>{output}</ul>
 }
+
+export const Spacer = () => (
+  <hr
+    className={`pb-2 mt-2 border-2 border-solid border-neutral
+    border-b-0 border-r-0 border-l-0`}
+  />
+)
 
 export const MainSections = () => {
   const { sections = false, slug } = useContext(NavigationContext)
@@ -228,47 +234,52 @@ export const MainSections = () => {
     const txt = (
       <>
         {icons[page.s] ? (
-          icons[page.s](`w-6 h-6 ${act ? 'text-secondary-content' : ''}`)
+          icons[page.s](`w-6 h-6 ${act ? 'text-base-100 opacity-70' : ''}`)
         ) : (
-          <HelpIcon />
+          <BulletIcon fill={act} className={`w-6 h-6 ${act ? 'text-base-100 opacity-70' : ''}`} />
         )}
         <span className={`font-bold ${act ? 'text-secondary-content' : ''}`}>{page.t}</span>
       </>
     )
 
-    const item = (
-      <li key={page.s}>
-        {act ? (
-          <span
-            className={`
+    const item =
+      page.t === 'spacer' ? (
+        <li key={page.s} className="opacity-10">
+          <Spacer />
+        </li>
+      ) : (
+        <li key={page.s}>
+          {act ? (
+            <span
+              className={`
+                  flex flex-row gap-4 items-center
+                  text-secondary-content
+                  hover:text-base-content
+                  bg-secondary
+                  p-2 px-4 rounded
+                  bg-base-200
+                  rounded-none
+                `}
+              title={page.t}
+            >
+              {txt}
+            </span>
+          ) : (
+            <Link
+              href={`/${page.s}`}
+              className={`
                 flex flex-row gap-4 items-center
-                text-secondary-content
-                hover:text-base-content
-                bg-secondary
+                hover:bg-secondary hover:bg-opacity-25 hover:cursor-pointer
                 p-2 px-4 rounded
-                bg-base-200
                 rounded-none
               `}
-            title={page.t}
-          >
-            {txt}
-          </span>
-        ) : (
-          <Link
-            href={`/${page.s}`}
-            className={`
-              flex flex-row gap-4 items-center
-              hover:bg-secondary hover:bg-opacity-25 hover:cursor-pointer
-              p-2 px-4 rounded
-              rounded-none
-            `}
-            title={page.t}
-          >
-            {txt}
-          </Link>
-        )}
-      </li>
-    )
+              title={page.t}
+            >
+              {txt}
+            </Link>
+          )}
+        </li>
+      )
     output.push(item)
   }
 
