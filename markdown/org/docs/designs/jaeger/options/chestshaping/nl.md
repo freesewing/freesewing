@@ -2,10 +2,10 @@
 title: "Chest shaping"
 ---
 
-![Borstvorming](chestshaping.svg)
+![Chest shaping](chestshaping.svg)
 
-De verticale hoeveelheid die moet worden afgebroken & verspreid het bovenste voorpaneel om de kist te vormen, als een factor van je borstomtrek.
+The vertical amount to slash & spread the upper front panel to shape the chest, as a factor of your chest circumference.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](jaeger_chestshaping_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_chestshaping_sample.svg "Effect of this option on the pattern")
