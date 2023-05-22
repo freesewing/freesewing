@@ -2,9 +2,9 @@
 title: "Leg balance"
 ---
 
-Bepaalt de verhouding tussen de voor- en achterkant van de broekspijpen.
+Controls the proportion between the front and back part of the legs.
 
-De achterkant van de broekspijpen zijn altijd breder dan de voorkant. Hoeveel controleert dit dan?
+The back of the trouser legs are always wider than the front. This controls by how much.
 
 <Note>
 
@@ -16,6 +16,6 @@ This trick is often used in womenswear jeans
 
 </Note>
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](titan_legbalance_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](titan_legbalance_sample.svg "Effect of this option on the pattern")
