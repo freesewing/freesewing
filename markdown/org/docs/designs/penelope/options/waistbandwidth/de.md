@@ -2,8 +2,8 @@
 title: "Waist band width"
 ---
 
-Die Breite des Taillenbundes.
+The width of the waist band.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](penelope_waistbandwidth_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_waistbandwidth_sample.svg "Effect of this option on the pattern")
