@@ -2,10 +2,10 @@
 title: "Length bonus"
 ---
 
-![Längenzugabe](lengthbonus.svg)
+![Length bonus](lengthbonus.svg)
 
-Die Länge des Rocks.
+The length of the skirt.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](sandy_lengthbonus_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](sandy_lengthbonus_sample.svg "Effect of this option on the pattern")
