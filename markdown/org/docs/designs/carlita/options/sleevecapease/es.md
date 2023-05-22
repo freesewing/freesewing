@@ -6,14 +6,14 @@ title: "Sleevecap ease"
 
 How much sleevecap ease do you want?
 
-> #### ¿Cuál es la cuestión?
+> #### What's the point?
 > 
-> La facilidad de manga determina cómo rodar las mangas desde el grifo.
+> The amount of sleevecap ease determines how the sleeves rolls from the shouder.
 > 
-> Más facilidad hace que la manga se cuelgue en la costura como esperarías de un abrigo. Menos facilidad hace que la manga sea más lisa.
+> More ease makes the sleeve curl into the seam as you would expect from a coat. Less ease makes the sleeve lie flatter.
 
-> Cuanto más ligero sea tu tejido, menos mangas te guste fácilmente.
+> The lighter your fabric, the less sleevecap ease you want.
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_sleevecapease_sample.svg "Effect of this option on the pattern")
