@@ -2,18 +2,18 @@
 title: "Leg width"
 ---
 
-Controla la anchura de la pernera.
+Controls the width of the legs.
 
 <Note>
 
-Este patrón solía venir en dos variaciones. Teodoro y Theo, estos últimos tienen
-un corte más delgado.
+This pattern used to come in two variations. Theodore, and Theo, the latter having
+a slimmer cut.
 
-Como FreeSewing v2.0 los hemos combinado en un único patrón y esta opción
-le permite modificar el ancho de la pierna.
+Since FreeSewing v2.0 we've merged these into a single pattern and this option
+allows you to alter the leg width.
 
 </Note>
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](theo_legwidth_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](theo_legwidth_sample.svg "Effect of this option on the pattern")
