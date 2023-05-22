@@ -1,13 +1,13 @@
 ---
-title: "Profundidad del orificio"
+title: "Armhole depth"
 ---
 
 ***
 
-![El efecto de la opción de profundidad del orificio sobre el patrón](sample.png)
+![The effect of the armhole depth option on the pattern](sample.png)
 
-La opción **de profundidad de armadura** controla la profundidad del orificio de armadura.
+The **armhole depth** option controls the depth of the armhole.
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bella_armholedepth_sample.svg "Efecto de esta opción en el patrón")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_armholedepth_sample.svg "Effect of this option on the pattern")
