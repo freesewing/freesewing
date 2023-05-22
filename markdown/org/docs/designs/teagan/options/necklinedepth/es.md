@@ -1,9 +1,9 @@
----
+- - -
 title: "Neckline depth"
----
+- - -
 
-Controls the depth of the neck opening.
+Controla la profundidad de la apertura del cuello.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](teagan_necklinedepth_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](teagan_necklinedepth_sample.svg "Efecto de esta opción en el patrón")
