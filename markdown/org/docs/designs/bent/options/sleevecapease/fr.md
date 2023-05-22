@@ -2,16 +2,16 @@
 title: "Sleevecap ease"
 ---
 
-Combien d'aisance aux têtes de manches voulez-vous ?
+How much sleevecap ease do you want?
 
-> #### ###### Pour quoi faire ?
+> #### What's the point?
 > 
-> La quantité d'aisance de la tête de manche détermine comment les manches seront bombées à l'épaule.
+> The amount of sleevecap ease determines how the sleeves rolls from the shoulder.
 > 
-> Plus d'aisance rendra la manche plus courbée au niveau de la couture comme vous vous y attendriez sur un manteau. Moins d'aisance aura une manche au tombé plus plat.
+> More ease makes the sleeve curl into the seam as you would expect from a coat. Less ease makes the sleeve lie flatter.
 
-> Plus votre tissu est léger, moins vous nécessitez d'aisance de tête de manche.
+> The lighter your fabric, the less sleevecap ease you want.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bent_sleevecapease_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bent_sleevecapease_sample.svg "Effect of this option on the pattern")
