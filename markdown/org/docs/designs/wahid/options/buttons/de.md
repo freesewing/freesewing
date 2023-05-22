@@ -1,11 +1,11 @@
----
+- - -
 title: "Number of buttons"
----
+- - -
 
-![Buttons](buttons.svg)
+![Knöpfe](buttons.svg)
 
-How many buttons do you want?
+Wie viele Tasten möchtest du?
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_buttons_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](wahid_buttons_sample.svg "Effekt dieser Option auf das Schnittmuster")
