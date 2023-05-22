@@ -2,18 +2,18 @@
 title: "Cuff narrow button"
 ---
 
-![Botón estrecho de corte de cañón](./barrelcuffnarrowbutton.svg)
+![Barrel cuff narrow button](./barrelcuffnarrowbutton.svg)
 
-¿Quieres un botón adicional para subir el corte más fuertemente?
+Do you want an extra button to button up your cuff more tightly?
 
-Si estás usando tu camisa bajo un jersey o cardíaco (muñeca) este botón te permite hacer tu corte más estrecho, por lo que no se agota todo feo.
+If you are wearing your shirt under a tight-fitting (at the wrist) sweater or cardigan, this button allows you to make your cuff more narrow, so it doesn't bunch up all ugly.
 
 <Note>
 
-Esto sólo se aplica a los barriles. Así que si eliges un corte francés como estilo de taza, esto será ignorado.
+This does only apply to barrelcuffs. So if you picked a French cuff as cuff style this will be ignored.
 
 </Note>
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_barrelcuffnarrowbutton_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_barrelcuffnarrowbutton_sample.svg "Effect of this option on the pattern")
