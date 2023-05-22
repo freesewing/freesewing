@@ -2,11 +2,11 @@
 title: "Elastic width"
 ---
 
-> #### Waarom?
+> #### What's the point?
 > 
-> Deze optie hangt samen met de **hoogte** optie die bepaalt hoe hoog je zwembroek in je taille zit.
+> This option is closely linked to the **rise** option that determines how high your swim trunks will rise on your waist.
 > 
-> De breedte van je elastiek heeft hier echter ook invloed op, en daarom is deze optie van belang.
+> However, the width of your elastic is also a factor to take into account, so that's where this option comes in.
 
 ## Effect of this option on the pattern
 
