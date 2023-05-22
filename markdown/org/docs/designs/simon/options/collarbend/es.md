@@ -1,17 +1,17 @@
----
+- - -
 title: "Collar bend"
----
+- - -
 
-![Collar bend](collarbend.svg)
+![Inclinación del cuello](collarbend.svg)
 
-How much the collar bends (on the collar stand side), rather than being straight.
+Cuánto se doblan el cuello (en el cuello está de lado), en lugar de ser recto.
 
 <Note>
 
-This influences how the collar lies against the collar stand.
+Esto influye en la forma en que se encuentra el cuello contra el cuello.
 
 </Note>
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarbend_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_collarbend_sample.svg "Efecto de esta opción en el patrón")
