@@ -1,11 +1,11 @@
----
+- - -
 title: "Circle ratio"
----
+- - -
 
-![Circle ratio](circleratio.svg)
+![Porcentaje de círculo](circleratio.svg)
 
-The percent of a circle skirt. 100% makes a full circle skirt, 50% makes a half circle skirt.
+El porcentaje de una pista circular. 100% hace una travesía de círculo completo, 50% hace una travesía de medio círculo.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](sandy_circleratio_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](sandy_circleratio_sample.svg "Efecto de esta opción en el patrón")
