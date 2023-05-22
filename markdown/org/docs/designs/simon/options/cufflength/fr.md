@@ -1,17 +1,17 @@
----
-title: "Cuff length"
----
+- - -
+titre : "Longueur du poignet"
+- - -
 
-![Cuff length](cufflength.svg)
+![Longueur de poignet](cufflength.svg)
 
-The length of your cuffs.
+La longueur de vos poignets.
 
 <Note>
 
-This will not influence the total length of your sleeve.
+Cela n'influencera pas la durée totale de votre manche.
 
 </Note>
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_cufflength_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_cufflength_sample.svg "Effet de cette option sur le modèle")
