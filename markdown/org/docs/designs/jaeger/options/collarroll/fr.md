@@ -2,8 +2,8 @@
 title: "Collar roll"
 ---
 
-Contrôle la quantité de rouleau dans le collier ; à quel point le collier est supérieur au col inférieur.
+Controls the amount of roll in the collar; how much the topcollar is higher than the undercollar.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_collarroll_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_collarroll_sample.svg "Effect of this option on the pattern")
