@@ -1,6 +1,6 @@
----
+- - -
 title: "Strap length"
----
+- - -
 
 Bepaalt de lengte van de bandjes op je schort.
 
