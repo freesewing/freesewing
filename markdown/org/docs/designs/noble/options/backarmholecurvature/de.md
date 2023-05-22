@@ -1,11 +1,11 @@
 ---
-title: "Back armhole curvature"
+title: "Hintere Armlochkrümmung"
 ---
 
 ***
 
-The **back armhole curvature** option controls how much the armhole is scooped at out the bottom in the back.
+Die **Rückenarmlochkrümmung** steuert wie viel das Rüstungsloch am unteren Ende des Rückens geschoppt wird.
 
-## Effect of this option on the pattern
+## Effekt dieser Variable auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_backarmholecurvature_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](noble_backarmholecurvature_sample.svg "Effekt dieser Option auf das Schnittmuster")
