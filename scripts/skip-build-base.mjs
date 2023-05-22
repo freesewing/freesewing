@@ -1,6 +1,8 @@
 import process from 'node:process'
 import { execSync } from 'child_process'
 
+const branchesToNeverBuild = ['i18n']
+
 export const shouldSkipBuild = (siteName, checkFolders = '../shared .') => {
   console.log('Skip build script version 1.1.0')
 
@@ -21,6 +23,11 @@ export const shouldSkipBuild = (siteName, checkFolders = '../shared .') => {
   if (branch === 'develop') {
     console.log('✅ - Develop build - Proceed to build')
     process.exit(1)
+  }
+
+  // Do not build branches that should never be build
+  for (const skip of branchesToNeverBuild) {
+    if (branch.match(skip)) return process.exit(1)
   }
 
   // Do not build commits that have [vercel skip] in the message
