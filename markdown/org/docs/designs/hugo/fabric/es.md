@@ -10,8 +10,8 @@ Make sure to pay attention to the inside of the fabric. Sweatshirt fabrics come 
 
 <Note>
 
-No tienes que usar tela de sudadera. Hay otras opciones disponibles, desde neopreno de moda (aka scuba) hasta una opción más llamativa como velour triturado (aka terciopelo).
+You don't have to use sweatshirt fabric. Other options are available, from fashion-forward neoprene (aka scuba) to a more eyebrow-rising choice like crushed velour (aka velvet).
 
-O si usted ha renunciado a la clase, podría ir a por la pulga.
+Or if you have given up on class, you could go for fleece.
 
 </Note>
