@@ -1,20 +1,22 @@
----
+- - -
 title: "Back inset"
----
+- - -
 
-![Back inset](backinset.svg)
+![Inserción trasera](backinset.svg)
 
-How far do you want your waistcoat armhole to curve inwards on the back side?
+¿Hasta dónde quieres que tu armadura de cintura se curva hacia adentro en la parte trasera?
 
 <Note>
+
+###### ¿Cuál es el punto?
 
 ###### What's the point?
 
 The armhole of your waistcoat can curve further inward, given that there is no sleeve attached to it.
-This influences the style of the waistcoat.
+Esto influye en el estilo de la cintura.
 
 </Note>
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_backinset_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](wahid_backinset_sample.svg "Efecto de esta opción en el patrón")
