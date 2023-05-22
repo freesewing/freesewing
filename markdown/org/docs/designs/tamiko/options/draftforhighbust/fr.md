@@ -2,8 +2,8 @@
 title: Draft for high bust
 ---
 
-Draft the pattern for the high bust measurement (if available) rather than the (full) chest. Il en résulte un vêtement plus ajusté pour les personnes ayant une poitrine.
+Draft the pattern for the high bust measurement (if available) rather than the (full) chest. This will result in a more fitted garment for people with breasts.
 
-## Effet de cette option sur le modèle
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](tamiko_draftforhighbust_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](tamiko_draftforhighbust_sample.svg "Effect of this option on the pattern")
