@@ -1,11 +1,11 @@
 ---
-title: "Hintere Abnäher"
+title: "Back darts"
 ---
 
 ***
 
-Standardmäßig wird das Muster die Darts wieder hinzufügen, wenn sie benötigt werden. Aber Sie können auch wählen, immer oder nie, Rücken-Darts.
+By default, the pattern will add back darts when they are needed. But you can also choose to always, or never, have back darts.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_backdarts_sample.svg "Effekt dieser Option auf das Schnittmuster")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_backdarts_sample.svg "Effect of this option on the pattern")
