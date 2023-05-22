@@ -8,7 +8,7 @@ Bow ties are more whimsical than normal ties, so having a fun pattern or loud co
 
 Silk and silk imitation is slippery and tricky to work with. This can be compensated for with a fusible interfacing.
 
-## Interfaz
+## Interfacing
 
 Depending on the fabric you chose for your bow tie, you will probably need interfacing. Interfacing comes in two main types: fusible and sew-in.
 
