@@ -2,21 +2,19 @@
 title: "Front inset"
 ---
 
-![Inserción delantera](frontinset.svg)
+![Front inset](frontinset.svg)
 
-¿Hasta dónde quieres que tu armadura de cintura se curva hacia adentro en el frente?
+How far do you want your waistcoat armhole to curve inwards on the front?
 
 <Note>
-
-###### ¿Cuál es el punto?
 
 ###### What's the point?
 
 The armhole of your waistcoat can curve further inward, given that there is no sleeve attached to it.
-Esto influye en el estilo de la cintura.
+This influences the style of the waistcoat.
 
 </Note>
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](wahid_frontinset_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_frontinset_sample.svg "Effect of this option on the pattern")
