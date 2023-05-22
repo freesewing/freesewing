@@ -1,13 +1,13 @@
 ---
-title: "Courbure de l'emmanchure arrière"
+title: "Back armhole curvature"
 ---
 
 ***
 
-![L'effet de l'option courbure du blindage arrière sur le motif](sample.png)
+![The effect of the back armhole curvature option on the pattern](sample.png)
 
-L'option **de courbure du blindage arrière** contrôle combien le blindage est déployé en bas dans le dos.
+The **back armhole curvature** option controls how much the armhole is scooped at out the bottom in the back.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bella_backarmholecurvature_sample.svg "Effet de cette option sur le motif")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_backarmholecurvature_sample.svg "Effect of this option on the pattern")
