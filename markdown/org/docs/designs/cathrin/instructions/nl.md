@@ -4,19 +4,19 @@ title: "Cathrin corset: Sewing Instructions"
 
 <Note>
 
-#### Er zijn veel manieren om een korset
+#### There are many ways to construct a corset
 
-te maken. Deze instructies zijn slechts één manier. Met deze methode raad ik aan om een ruimere naadwaarde van ten minste 1,5 cm te gebruiken, zodat je boningrails comfortabel binnen de naadwaarde passen.
+These instructions are just one way. With this method, I recommend using a wider seam allowance of at least 1.5cm so that your boning channels fit comfortably inside the seam allowance.
 
-Beginnende korsettenmakers zouden de tutorials van [Sidney Eileen](http://www.sidneyeileen.com), die verschillende bouwmethodes toont, moeten lezen. [Foundations Revealed](https://www.foundationsrevealed.com) is een paywall site voor corset makers, met enkele gratis uitzonderlijke artikelen voor niet-leden.
+Beginner corset makers should read the tutorials written by [Sidney Eileen](http://www.sidneyeileen.com), who demonstrates several different construction methods. [Foundations Revealed](https://www.foundationsrevealed.com) is a paywall site for corset makers, with several exceptional articles free for non members.
 
 #### Check the original tutorial
 
-This pattern is based on [this tutorial by Cathrin Alen](https://katafalk.wordpress.com/2010/06/24/underbust-pattern-tutorial/). Cathrin heeft ook [dit informatieve bericht over het maken van korsets](https://katafalk.wordpress.com/2009/05/05/03how-i-sew-korsets/) op haar blog, die je misschien nuttig vindt.
+This pattern is based on [this tutorial by Cathrin Alen](https://katafalk.wordpress.com/2010/06/24/underbust-pattern-tutorial/). Cathrin also has [this informative post on making corsets](https://katafalk.wordpress.com/2009/05/03/how-i-sew-corsets/) on her blog which you might find helpful.
 
 </Note>
 
-## Stap 1: Stik de boningrails in het midden
+## Step 1: Sew boning channels in center front
 
 ![Place outer Panel 1 on core Panel 1, bad sides together](step01.png)
 
@@ -24,7 +24,7 @@ Start with the center front pieces. For an 11-panel Cathrin, this will be Panel 
 
 With a small stitch width (I set mine to “2”), sew a line straight down the center front. Then sew two boning channels to either side, allowing a bit of extra space, about 2mm, in addition to the width of your boning.
 
-## Stap 2: Bevestig het eerste zijpaneel
+## Step 2: Attach the first side panel
 
 ![Attach Panel 2](step02.png)
 
@@ -40,7 +40,7 @@ Match up the four layers of fabric at the narrowest part, _good sides together_,
 
 Sew the seam.
 
-## Stap 3: Stik de beenrails
+## Step 3: Sew the boning channel
 
 ![Press flat and sew boning channel](step03.png)
 
@@ -50,7 +50,7 @@ Edgestitch right along the folded edge, just 1-2mm from the seam line. Sew slowl
 
 Topstitch another seam parallel to the first seam, allowing a bit of extra space, about 3mm, in addition to the width of your boning.
 
-## Stap 4: Bevestig het volgende paneel
+## Step 4: Attach the next panel
 
 ![Attach Panel 3](step04.png)
 
@@ -64,7 +64,7 @@ Match up the four layers of fabric at the narrowest part, _good sides together_,
 
 Sew the seam.
 
-## Stap 5: Stik nog een botten kanaal
+## Step 5: Sew another boning channel
 
 ![Press flat and sew boning channel](step05.png)
 
@@ -76,7 +76,7 @@ Topstitch another seam parallel to the first seam, allowing a bit of extra space
 
 This new boning channel should look just like the one you made attaching Panel 2 to Panel 1.
 
-## Stap 6: Blijf de zijpanelen bevestigen
+## Step 6: Continue attaching the side panels
 
 Continue attaching panels, creating a boning channel in each seam. Attach Panel 4 to Panel, Panel 5 to Panel 4, and finally Panel 6 to Panel 5.
 
@@ -86,7 +86,7 @@ Repeat these steps on the other side.
 
 ![All panels on both sides](step06b.png)
 
-## Stap 7: Werk het korset terug af
+## Step 7: Finish the corset back
 
 With all of your panels connected, you’re working with the flat sides of each Panel 6.
 
@@ -108,14 +108,14 @@ Repeat on the other side.
 
 Insert boning in all of the channels.
 
-## Stap 9: Koppel de boven- en onderkant
+## Step 9: Bind the top and bottom
 
 Use bias tape or ribbon to bind the top and bottom edges of the corset.
 
-## Stap 10: Stel de grommets in
+## Step 10: Set the grommets
 
 Set the grommets in the locations you marked earlier.
 
-## Stap 11: Lace het korset
+## Step 11: Lace the corset
 
 You’re done!
