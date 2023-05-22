@@ -1,53 +1,53 @@
 ---
-title: "Jaeger, das Sakko: Zuschnitt"
+title: "Jaeger jacket: Cutting Instructions"
 ---
 
-- **Oberstoff**
-  - Schneide **2 Vorderteile** (Teil 1)
-  - Schneide **2 Vorderbesatze** (halte Ausschau nach der Besatz-/Futterabgrenzung auf dem Vorderteil)
-  - Schneide **2 Rückenteile** (Teil 2)
-  - Schneide **2 Seiten** (Teil 3)
-  - Schneide **2 Oberärmel** (Teil 4)
-  - Schneide **2 Unterärmel** (Teil 5)
-  - Schneide **1 Kragen** (Teil 6)
-  - Schneide **1 Kragensteg** (Teil 8)
-  - Schneide **2 Taschen** (Teil 9)
-  - Schneide **1 Brusttaschenpaspel** (Teil 10)
-- **Futterstoff**
-  - Schneide **2 Vorderteile** (Teil 1)
-  - Schneide **2 Vorderfutter** (halte Ausschau nach der Besatz-/Futterabgrenzung auf dem Vorderteil und vergiss nicht, die Erweiterung für den Besatz der inneren Tasche anzufügen)
-  - Schneide **2 Rückenteile** (Teil 2)
-  - Schneide **2 Seiten** (Teil 3)
-  - Schneide **2 Oberärmel** (Teil 4) Hinweis: Einige Leute verwenden gerne anderes Futter für die Ärmel
-  - Schneide **2 Unterärmel** (Teil 5) Hinweis: Einige Leute verwenden gerne anderes Futter für die Ärmel
-  - Schneide **2 Brusttaschenbeutel** (Teil 11)
-  - Schneide **2 Paspeln für die innere Tasche **
-  - Schneide **2 Taschenbeutel für die innere Tasche** (Teil 13)
-- **Einlage**
-  - Schneide **2 Vorderteile** im schrägen Fadenlauf (Teil 1) Hinweis: Keine Nahtzugabe hinzufügen
-  - Schneide **2 Brustteile** im schrägen Fadenlauf. Halte Ausschau nach der Markierung auf dem Vorderteil. Hinweis: Keine Nahtzugabe hinzufügen
-- **Stoff für Unterkragen**
-  - Schneide **2 Unterkragen** (Teil 7)
+- **Main fabric**
+  - Cut **2 fronts** (part 1)
+  - Cut **2 front facings** (look for the facing/lining boundary on the front part)
+  - Cut **2 backs** (part 2)
+  - Cut **2 sides** (part 3)
+  - Cut **2 topsleeves** (part 4)
+  - Cut **2 undersleeves** (part 5)
+  - Cut **1 collar** (part 6)
+  - Cut **1 collarstand** (part 8)
+  - Cut **2 pockets** (part 9)
+  - Cut **1 chest pocket welt** (part 10)
+- **lining fabric**
+  - Cut **2 fronts** (part 1)
+  - Cut **2 front linings** (look for the facing/lining boundary on the front part, and don't forget to attach the inner pocket facing extension)
+  - Cut **2 backs** (part 2)
+  - Cut **2 sides** (part 3)
+  - Cut **2 topsleeves** (part 4) Note: Some people like to use different lining for the sleeves
+  - Cut **2 undersleeves** (part 5) Note: Some people like to use different lining for the sleeves
+  - Cut **2 chest pocket bags** (part 11)
+  - Cut **2 inner pocket welts**
+  - Cut **2 inner pocket bags** (part 13)
+- **Canvas**
+  - Cut **2 fronts** on bias (part 1) Note: Don't include seam allowance
+  - Cut **2 chest pieces** on bias. Look for the indication on the front part. Note: Don't include seam allowance
+- **Undercollar fabric**
+  - Cut **2 undercollars** (part 7)
 
 <Note>
 
-###### Gute Seiten zusammen, oder Stoffmuster genau aufeinander abstimmen?
+###### Good sides together, or precise pattern matching?
 
-Wenn du zwei Teile ausschneidest, kannst du sie [mit guten Seiten zusammen](/docs/sewing/good-sides-together) ausschneiden.
-Wenn der Stoff jedoch ein Muster hat, ziehe ich es vor, sie einzeln auszuschneiden, damit ich das Abstimmen der Muster aufeinander genau kontrollieren kann.
+When cutting out two, you can cut them [good sides together](/docs/sewing/good-sides-together).
+However, when working with fabric with a pattern, I prefer to cut them individually to finely control the pattern matching.
 
-Wenn du die Teile einzeln ausschneidest, musst du daran denken, dass sie Spiegelbilder voneinander sein müssen. Wende also entweder dein Schnittmuster oder deinen Stoff, wenn du das zweite Teil ausschneidest.
+When you cut them individually, remember that they need to be mirror images of each other. So flip either your pattern or your fabric over when cutting the second one.
 
 </Note>
 
 <Warning>
 
-###### Hinweise zum Zuschnitt
+###### Cutting caveats
 
-- Das Brustteil ist auf dem Vorderteil eingezeichnet.
-- Beim Schneiden der Einlage keine Nahtzugabe hinzufügen und im schrägen Fadenlauf zuschneiden.
-- Der Besatz und das Futter für das Vorderteil sind auf dem Vorderteil eingezeichnet. Sie teilen das Vorderteil entlang der Begrenzungslinie in zwei Teile. Du kannst das Schnittmuster für das Vorderteil entlang dieser Linie auseinander schneiden, nachdem du deinen Oberstoff zugeschnitten hast. Die Erweiterung für die innere Tasche ist separat aufgedruckt und du kannst sie wieder an die richtige Stelle kleben, nachdem du die Teile ausgeschnitten hast. **Vergiss nicht, an dieser Grenznaht bei sowohl dem Besatz als auch beim Futter Nahtzugabe hinzuzufügen**.
+- The chest piece is marked on the front.
+- Don't include seam allowance when cutting out canvas, and cut it on bias.
+- The front facing and lining is marked on the front piece. They split the front part in two along the boundary line. You can cut the front part along that line after cutting out the front from the main fabric. The inner pocket extension for the facing is printed separately, and you can tape it back in its place after cutting the pattern piece. **Do not forget to add seam allowance to both the facing and the lining for this boundary seam**.
 
-![Übertrage den Besatz und das Futter für das Vorderteil](cuttingCaveat.svg)
+![Trace the front facing and lining from the front part](cuttingCaveat.svg)
 
 </Warning>
