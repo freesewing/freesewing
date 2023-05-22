@@ -50,7 +50,7 @@ It's worth double-checking that you are using the proper fin pieces, as Hi's pec
 ## Step 3: The Belly
 
 - With _good sides together_ sew the two aboveMouth pieces together along the larger straight edge.
-- Sew the teeth pieces to the mouth, matching notches and making sure the teeth face towards the centre of the mouth. These will now be treated as one.
+- Sew the teeth to the mouth, matching notches. These will now be treated as one.
 - Sew the darts on the belly, trim away any excess fabric.
 - With _good sides together_ sew the aboveMouth pieces to the mouth, matching notches, being careful not to catch the teeth in the seam allowances.
 - With _good sides together_ sew the joined mouth and aboveMouth to the belly piece, matching notches.
@@ -63,9 +63,9 @@ It's worth double-checking that you are using the proper fin pieces, as Hi's pec
 
 ## Step 5: Stuffing
 
-- Fill the plush toy with stuffing through the opening you left below the tail, making sure to fill the tail and fins well before adding too much stuffing in the body itself.
+- Fill the plush toy with stuffing through the opening you left in the tail. Make sure to fill the tail and fins well before adding too much stuffing in the body itself.
 - _Slipsticth_ or _whipstitch_ the opening closed.
 
-## Step 6: Enjoy!
+## Étape 6: Profitez-en!
 
 That's it you are all done now go adventure the oceans with your new Hi!
