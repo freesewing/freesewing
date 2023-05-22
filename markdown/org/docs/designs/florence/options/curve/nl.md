@@ -2,10 +2,10 @@
 title: "Curve"
 ---
 
-![Kromme optie](./curve.svg)
+![Curve option](./curve.svg)
 
-Bepaalt de curve van de bovenrand van je gezichtsmasker.
+Controls the curve of the upper edge of your face mask.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](florence_curve_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](florence_curve_sample.svg "Effect of this option on the pattern")
