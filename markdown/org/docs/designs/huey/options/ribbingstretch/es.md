@@ -1,11 +1,11 @@
----
+- - -
 title: "Ribbing stretch"
----
+- - -
 
-![Ribbing stretch](./ribbingstretch.svg)
+![Extensión de tejido acanalado](./ribbingstretch.svg)
 
-Controls the amount of stretch to foresee in the ribbing.
+Controla la cantidad de estiramiento a preesee en la cinta.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_ribbingstretch_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](huey_ribbingstretch_sample.svg "Efecto de esta opción en el patrón")
