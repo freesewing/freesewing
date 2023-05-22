@@ -1,11 +1,11 @@
----
+- - -
 title: "Front pocket width"
----
+- - -
 
-![Front pocket width](frontpocketwidth.svg)
+![Largeur des poches avant](frontpocketwidth.svg)
 
-The front of the chest pocket, as a factor of your chest circumference.
+L'avant de la poche de la poitrine, en tant que facteur de la circonférence de votre poitrine.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_frontpocketwidth_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_frontpocketwidth_sample.svg "Effet de cette option sur le modèle")
