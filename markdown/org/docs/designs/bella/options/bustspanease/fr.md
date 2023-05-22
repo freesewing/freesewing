@@ -1,15 +1,15 @@
 ---
-title: "Aisance de l'écart poitrine"
+title: "Bust span ease"
 ---
 
 ***
 
-![L'effet de l'option d'assouplissement de la poussière sur le patron](sample.png)
+![The effect of the bust span ease option on the pattern](sample.png)
 
-L'option **de facilité** de la boussole contrôle la quantité de facilité appliquée à la boussole.
+The **bust span ease** option controls how much ease is applied to the bust span.
 
-<Note>Cela ne facilitera pas le vêtement, mais seulement le point de buste</Note>
+<Note>This will not add ease to the garment, but merely influence the bust point</Note>
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bella_bustspanease_sample.svg "Effet de cette option sur le motif")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_bustspanease_sample.svg "Effect of this option on the pattern")
