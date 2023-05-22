@@ -1,9 +1,9 @@
 ---
-title: "Back exposure"
+title: "Hintere Freilegung"
 ---
 
-This option controls the amount of exposed skin on the back.
+Diese Option steuert die Menge der exponierten Haut auf der Rückseite.
 
-## Effect of this option on the pattern
+## Effekt dieser Variable auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](unice_backexposure_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](unice_backexposure_sample.svg "Effekt dieser Option auf das Schnittmuster")
