@@ -4,8 +4,8 @@ title: "Shoulder ease"
 
 Controls the amount of ease on the shoulder to shoulder measurement.
 
-Diese Option erlaubt es dir, etwas zusätzliche Zugabe an den Schultern hinzuzufügen, was die Schulternaht mehr nach außen und von der Schulter herunter bewegt. Dadurch wird zusätzlicher Raum für zusätzliche Kleidungsschichten oder gepolsterte Schultern geschaffen.
+This option allows you to create some extra ease at the shoulders which shifts the shoulder seam more outwards and off the shoulder. Thereby creating extra room for extra layers of clothing underneath, or more shaped/padded shoulders.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_shoulderease_sample.svg "Effect of this option on the pattern")
