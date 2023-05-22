@@ -1,11 +1,11 @@
----
+- - -
 title: "Grainline position"
----
+- - -
 
-Controls the position of the grainline.
+Steuert die Position der Körnlinie.
 
-You can use this to shift the grainline inward or outward if that works better for your body.
+Hiermit können Sie die Kornlinie nach innen oder nach außen verschieben, wenn das besser für Ihren Körper funktioniert.
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](paco_grainlineposition_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](paco_grainlineposition_sample.svg "Effekt dieser Option auf das Schnittmuster")
