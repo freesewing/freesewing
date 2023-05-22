@@ -1,9 +1,9 @@
----
+- - -
 title: "Back waist dip"
----
+- - -
 
-This option controls how much the back waist curves (revealing more or less skin).
+Cette option permet de contrôler la quantité de courbes de taille arrière (révélant plus ou moins de peau).
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](ursula_backdip_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](ursula_backdip_sample.svg "Effet de cette option sur le modèle")
