@@ -1,24 +1,24 @@
----
+- - -
 title: "Tiberius Tunica: Cutting Instructions"
----
+- - -
 
 <Tip>
 
 ##### Use the power of the _paperless_ option - do _not_ print this pattern
 
-Tiberius is just a big rectangle, so printing the pattern out is a bit of a waste. Save a tree, toggle the [paperless](/docs/guide/options/paperless) option, and copy the dimensions to your fabric, while respecting the grainline.
+Tiberius is just a big rectangle, so printing the pattern out is a bit of a waste. Rette einen Baum, aktiviere die [papierlos](/docs/guide/options/paperless)-Option und übertrage die Dimensionen auf deinen Stoff, unter Beachtung des Fadenlaufs.
 
 </Tip>
 
-Tiberius consists of only one part, the _tunica_, that will act as a pattern for both front and back pieces.
+Tiberius besteht aus nur einem Teil, der _tunica_, welche sowohl für Vorder- als auch Rückenteil als Schnittmuster dient.
 
-- cut _2 tunicae_, _on the fold_
+- schneide _2 tunicae_, _im Stoffbruch_
 
 <Note>
 
 ##### Notes
 
-You have two options here: Either you cut your tunica in two pieces as described above, or you cut it in only one piece. Historically speaking, the time period or location you're aiming for can make a difference (ancient Rome vs. ancient Greece, for example). If you care about authenticity, I suggest researching this a bit.
+You have two options here: Either you cut your tunica in two pieces as described above, or you cut it in only one piece. Historisch gesehen spielt die Zeitperiode und der geographische Ort hierbei eine Rolle (beispielsweise antikes Rom vs. antikes Griechenland). Wenn dir Authentizität wichtig ist, forsche hier am besten etwas nach.
 
 </Note>
 
