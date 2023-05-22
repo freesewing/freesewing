@@ -1,6 +1,6 @@
----
+- - -
 title: "Aaron, das A-Shirt: Stoffoptionen"
----
+- - -
 
 Ein A-Shirt ist im wesentlichen Unterwäsche. Und in dieser Hinsicht willst du etwas Bequemes, das sich auf der Haut gut anfühlt und atmungsaktiv ist.
 
