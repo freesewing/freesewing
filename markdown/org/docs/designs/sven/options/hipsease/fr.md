@@ -1,10 +1,10 @@
 ---
-title: "Hips ease"
+title: "Aisance au niveau des hanches"
 ---
 
 ***
 
-Controls the amount of ease at your hips (the bottom of the sweater)
+Contrôle la quantité d'aisance à vos hanches (au bas du sweat)
 
 ## Effet de cette option sur le modèle
 
