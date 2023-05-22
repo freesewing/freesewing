@@ -1,22 +1,22 @@
----
-title: "Center back dart"
----
+- - -
+title:"Pince milieu dos"
+- - -
 
-![Centerback dart](centerbackdart.svg)
+![Pince milieu dos](centerbackdart.svg)
 
-Since nobody has a perfectly straight back, this pattern tapers in with 0.5 cm at the center back of your neck.
+Étant donné que personne n'a un dos parfaitement droit, ce patron est prévu avec une pince de 0,5 cm au centre du cou.
 
 <Note>
 
-###### What's the point?
+###### Pour quoi faire ?
 
-If your back slumps forward a bit, fabric tends to pool at the back of your neck. With no sleeves or collar, this causes your neckline to gape.
-This option tapers the fabric inwards at the back of your neck. It does so by 0.5 cm by default, but you can increase or decrease that value.
+Si votre dos se courbe un peu, le tissu a tendance à bailler au niveau de votre cou. En l'absence de manches ou de col, votre encolure peut bailler.
+Cette option permet de plaquer le tissu à l'arrière de votre cou. Il le fait de 0,5 cm par défaut, mais vous pouvez augmenter ou diminuer cette valeur.
 
-Technically this is not a dart, but I wasn't sure how else to call it. Suggestions welcome.
+Techniquement, ce n'est pas une pince, mais je ne savais pas comment l'appeler autrement. Vos suggestions sont les bienvenues.
 
 </Note>
 
-## Effect of this option on the pattern
+## Effet de cette option sur le patron
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_centerbackdart_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_centerbackdart_sample.svg "Effet de cette option sur le modèle")
