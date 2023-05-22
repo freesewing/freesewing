@@ -2,10 +2,10 @@
 title: "Cuff ease"
 ---
 
-![Manschette Zugabe](cuffease.svg)
+![Cuff ease](cuffease.svg)
 
-Die Menge an Leichtigkeit am Manschetten/Handgelenk.
+The amount of ease at your cuff/wrist.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](jaeger_cuffease_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_cuffease_sample.svg "Effect of this option on the pattern")
