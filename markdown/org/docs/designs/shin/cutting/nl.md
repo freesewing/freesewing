@@ -2,14 +2,14 @@
 title: "Shin swim trunks: Cutting Instructions"
 ---
 
-- Knip **2 rugpanden** met de goede kanten op elkaar
-- Knip **4 voorpanden** 2 x 2 met de goede kanten op elkaar
-- Knip **1 tailleband**
+- Cut **2 backs** with good sides together
+- Cut **4 fronts** 2 x 2 with good sides together
+- Cut **1 waistband**
 
-## Opmerkingen
+## Caveats
 
-- Om minder papier te verbruiken wordt de tailleband niet helemaal geprint, aangezien het gewoon een lange rechthoek is. Dus kijk uit voor de aangegeven lengte en knip een rechthoek van dat formaat.
-- De zoomwaarde is twee keer de standaard naadwaarde.
+- To save paper, the waistband is not completely printed on the pattern since it's just a long rectangle. So look for the length indicator, and cut out a rectangle of that size.
+- The hem allowance is double the standard seam allowance.
 
 Shin is a very simply pattern, and consists of two main parts plus the waistband.
 
@@ -19,6 +19,6 @@ Below is a typical draft layout:
 
 <Tip>
 
-De [patroonnotatie handleiding][1] legt alle verschillende markeringen en lijnen op je patroon uit.
+The [pattern notation guide][1] explains all the different markings and lines on your draft.
 
 </Tip>
