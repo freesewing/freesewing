@@ -2,35 +2,35 @@
 title: "Teagan T-shirt: Sewing Instructions"
 ---
 
-## Stap 1: Sluit de schoudernaden
+## Step 1: Close the shoulder seams
 
 ![Close the shoulder seams](step01.svg)
 
-- Leg het voor- en achterpand op elkaar met [goede kanten op elkaar](/docs/sewing/good-sides-together). Leg de schoudernaden gelijk.
-- Lock de schoudernaden of stik ze met een smalle (~2 mm) zigzagsteek aan de standaard naadwaarde.
+- Place the front and back on top of each other with [good sides together](/docs/sewing/good-sides-together). Align the shoulder seams.
+- Serge the shoulder seams, or stitch them with a narrow (~2 mm) zigzag stitch at the standard seam allowance.
 
 <Note>
-Optioneel: In een draaiknop kun je ervoor kiezen om de schoudernaden te versterken door duidelijk elastiek langs de naad aan de binnenkant te stikken. Op een T-shirt ondersteunen de schoudernaden het grootste gewicht van het kledingstuk. Versterking is niet vereist, maar het kan de schoudernaden niet na verloop van tijd uitrekken.
+Optional: In a drapier knit, you may choose to reinforce the shoulder seams by stitching clear elastic along the seam on the inside. On a T-shirt, the shoulder seams support most of the weight of the garment. Reinforcing is not required, but it can keep the shoulder seams from stretching over time.
 </Note>
 
-## Stap 2: Zet de mouwen in
+## Step 2: Set in the sleeves
 
 ![Set in sleeves](step02.svg)
 
-- Leg je aan elkaar bevestigde voor- en achterpand neer met de goede kant naar boven.
-- Identificeer de voor- en achterkanten van elke mouw. (Dit is hoe je de linker mouw van rechts scheidt.) On your paper pattern piece, the front side of the sleeve is to the right.
-- Leg een mouw bovenop de voor- en achterkant, met de goede kant naar beneden.
-- Leg de bovenkant van de mouwkop gelijk met de schoudernaad. Zorg dat de voor- en achterkant van de mouw gelijk staan met de voor- en achterpanden van je shirt.
-- Speld de mouw op z'n plaats langs het hele armsgat. Er is een beetje extra stof in de mouwkop, wat betekent dat de mouwkop iets langer is dan het armsgat. Verbeter het bovenste deel van de mouwkop tijdens het spelden.
-- Stik/lock de gespelde mouw op z'n plaats.
-- Herhaal voor de andere mouw.
+- Place your now attached front and back with the good side up.
+- Identify the front and back sides of each of your sleeves. (This is how you separate the left sleeve from the right.) On your paper pattern piece, the front side of the sleeve is to the right.
+- Place a sleeve on top of the front and back, with the good side down.
+- Align the top of the sleevecap with the shoulder seam. Make sure that the front and back of the sleeve are aligned with the front and back pieces of your shirt.
+- Pin sleeve in place along the entire armhole. There’s a bit of sleevecap ease, which means that the sleevehead is slightly longer than the armhole. Ease in the top part of the sleeve head while pinning.
+- Sew/serge your pinned sleeve in place.
+- Repeat for the other sleeve.
 
 ## Step 3: Sew the neck finish
 
 There are two options for the neck finish on Teagan: a knit band or knit binding. Knit band is what you typically see on store-bought T-shirts, whereas knit binding is the finish you'll find on the Aaron A-Tank. Directions for both are given here.
 
 <Note>
-Dit is de meest complexe stap in het maken van een T-shirt in Teagan, maar het vereist slechts een beetje praktijk. Maak je geen zorgen, het enige wat je hoeft te doen is een paar van deze maken en je zal binnen een tijdsbestek een pro zijn.
+This is the most complex step in making the Teagan T-shirt, but it just requires a bit of practice. Don’t worry, all you need to do is make a couple of these and you’ll be a pro in no time.
 </Note>
 
 ### Option 1: knit band finish
@@ -85,7 +85,7 @@ Hurray! You've finished the trickiest part! Optionally, you can secure the raw e
 
 <Tip>
 
-Een uitgebreidere manier om te springen is te vinden in de [Aaron Instuctions](/docs/patterns/aaron/instructies).
+A more extensive how-to on knit binding can be found in the [Aaron Instuctions](/docs/patterns/aaron/instructions).
 
 </Tip>
 
@@ -149,7 +149,7 @@ On the inside of your T-shirt, trim back the knit binding just outside of your s
 
 </Note>
 
-## Stap 4: Sluit de zijnaden en mouwen
+## Step 4: Close the side seams and sleeves
 
 ![Close the side seams and sleeves](step04.svg)
 
@@ -158,7 +158,7 @@ On the inside of your T-shirt, trim back the knit binding just outside of your s
 - Serge/sew the side seam and continue sewing to close the arms all the way to the sleeve hem.
 - Repeat on the other side.
 
-## Stap 5: Werk de zoom en mouwen af
+## Step 5: Finish hem and sleeves
 
 ![Finish hem and sleeves](step05.svg)
 
