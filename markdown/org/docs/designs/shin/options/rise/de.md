@@ -2,10 +2,10 @@
 title: "Rise"
 ---
 
-Diese Option steuert die Überhöhe der Taille.
+This option controls the overal height of the waist.
 
-> Je höher der Aufstieg, desto höher deine Taille.
+> The higher the rise, the higher your waist.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](shin_rise_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](shin_rise_sample.svg "Effect of this option on the pattern")
