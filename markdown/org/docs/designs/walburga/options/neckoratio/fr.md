@@ -1,8 +1,8 @@
----
+- - -
 title: "Neck opening shape"
----
+- - -
 
-controls the shape of the neck opening
+contrôle la forme de l'encolure
 
 ## Effet de cette option sur le motif
 
