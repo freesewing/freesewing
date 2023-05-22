@@ -1,5 +1,5 @@
 ---
-title: Entwurf
+title: Schnittmuster
 order: 300
 ---
 
