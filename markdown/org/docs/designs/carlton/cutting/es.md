@@ -1,6 +1,6 @@
----
+- - -
 title: "Carlton coat: Cutting Instructions"
----
+- - -
 
 <Note>
 
@@ -8,12 +8,12 @@ Certain parts have to be drafted off of the existing parts. How to draft these a
 
 </Note>
 
-### Materials
+### Materiales
 
-- **Main fabric**
+- **Tela principal**
   - Cut **2 Front** parts
   - Cut **2 Front facing** parts
-  - Cut **2 Back** parts
+  - Cut **2 Back** part
   - Cut **2 topsleeve** parts
   - Cut **2 undersleeve** parts
   - Cut **2 tail** parts
@@ -32,9 +32,9 @@ If your main fabric is quite lightweight and flimsy you may need to interface al
 
 </Note>
 
-- **Lining fabric**
+- **Tela fina**
   - Cut **2 Front lining** parts
-  - Cut **2 Back** parts
+  - Cut **2 Back** part
   - Cut **2 topsleeve** parts
   - Cut **2 undersleeve** parts
   - Cut **2 tail** parts
