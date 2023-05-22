@@ -1,11 +1,11 @@
 ---
-titre : "Pli de manche"
+title: "Sleeve bend"
 ---
 
-![Courbe de manche](sleevebend.svg)
+![Sleeve bend](sleevebend.svg)
 
-La courbure au coude de votre manche.
+The bend at the elbow of your sleeve.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_sleevebend_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_sleevebend_sample.svg "Effect of this option on the pattern")
