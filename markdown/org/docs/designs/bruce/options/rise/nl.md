@@ -6,8 +6,8 @@ title: "Rise"
 
 This option controls the overal height of the waist.
 
-> Hoe hoger de hoogte, hoe hoger je taille.
+> The higher the rise, the higher your waist.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](bruce_rise_sample.svg "Effect of this option on the pattern")
