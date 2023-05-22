@@ -8,6 +8,6 @@ These fabrics are typically wool, but you can also be a bit more creative and go
 
 <Note>
 
-Sie brauchen jedoch ein bisschen Gewicht. Denim ist in Ordnung, einige leichte Baumwolle nicht.
+You do need a bit of weight though. Denim is fine, some light cotton is not.
 
 </Note>
