@@ -2,8 +2,8 @@
 title: "Flare"
 ---
 
-El ángulo por el cual la prenda se arrastra desde el pecho hacia abajo.
+The angle by which the garment flares out from your chest downwards.
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](tamiko_flare_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](tamiko_flare_sample.svg "Effect of this option on the pattern")
