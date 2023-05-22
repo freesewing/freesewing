@@ -1,11 +1,11 @@
----
+- - -
 title: "Pocket height"
----
+- - -
 
-![Pocket height](./pocketheight.svg)
+![Hauteur de la poche](./pocketheight.svg)
 
-Controls the height of the front pocket.
+Contrôle la hauteur de la poche avant.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_pocketheight_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](huey_pocketheight_sample.svg "Effet de cette option sur le modèle")
