@@ -1,11 +1,11 @@
 ---
-titre : "Aisance pour les hanches"
+title: "Hips ease"
 ---
 
-![L'option de facilité des hanches sur Diana](./hipsease.svg)
+![The hips ease option on Diana](./hipsease.svg)
 
-Cette option permet de contrôler la quantité d'aisance des hanches.
+This option controls the amount of ease at the hips.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](diana_hipsease_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_hipsease_sample.svg "Effect of this option on the pattern")
