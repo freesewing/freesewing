@@ -1,11 +1,11 @@
 ---
-titre: "Courbe avant"
+title: "Front curve"
 ---
 
 ***
 
-Contrôle la courbure du devant du bikini
+Controls the curvature of the front of the bikini cup
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bee_frontcurve_sample.svg "Effet de cette option sur le motif")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_frontcurve_sample.svg "Effect of this option on the pattern")
