@@ -2,10 +2,10 @@
 title: "Ribbing stretch"
 ---
 
-![Bündchen-Elastizität](./ribbingstretch.svg)
+![Ribbing stretch](./ribbingstretch.svg)
 
-Kontrolliert die Menge der Strecke, die im Band vorauszusehen ist.
+Controls the amount of stretch to foresee in the ribbing.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](huey_ribbingstretch_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_ribbingstretch_sample.svg "Effect of this option on the pattern")
