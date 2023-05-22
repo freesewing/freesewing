@@ -1,6 +1,6 @@
----
+- - -
 title: "Collar angle"
----
+- - -
 
 ![Ángulo del pico del cuello](collarangle.svg)
 
@@ -22,4 +22,4 @@ En la imagen de ejemplo, la parte superior es de 80 grados (el valor por defecto
 
 ## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_collarangle_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_collarangle_sample.svg "Efecto de esta opción en el patrón")
