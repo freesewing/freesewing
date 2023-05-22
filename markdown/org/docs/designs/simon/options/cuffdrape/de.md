@@ -2,19 +2,19 @@
 title: "Cuff drape"
 ---
 
-![Manschette drapieren](cuffdrape.svg)
+![Cuff drape](cuffdrape.svg)
 
-Wie sehr das Ende des Ärmels ist größer als der Handgelenk.
+How much the end of the sleeve is wider than the wrist.
 
 <Note>
 
-Dies ändert das Aussehen der Ärmel ein wenig.
+This changes the look of the sleeve a bit.
 More drape makes the sleeve wider and gives you a more _blousy_ effect, whereas less drape makes the sleeve more narrow.
 
-Das Drape wird mit Falten in die Manschette gearbeitet.
+The drape will be worked into the cuff with pleats.
 
 </Note>
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_cuffdrape_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_cuffdrape_sample.svg "Effect of this option on the pattern")
