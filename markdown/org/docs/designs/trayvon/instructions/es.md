@@ -4,26 +4,26 @@ title: "Trayvon tie: Sewing Instructions"
 
 <Tip>
 
-###### Solo la punta
+###### Just the tip
 
-La punta es la parte más sensible del empate.
-Si nunca has hecho un empate antes, Le aconsejo que haga algunas puntas de empatado en tela de basura antes de llevar tijeras y agujas a su agradable tejido de empate.
+The tip is the most sensitive part of the tie.
+If you have never made a tie before, I would advise you to make a few tie tips in scrap fabric before taking scissors and needles to your nice tie fabric.
 
-Para practicar la elaboración de consejos, ejecute las construcciones pasos 1 a 4 un par de veces hasta que se le cuelgue el colmillo.
+To practice tip-making, execute constructions steps 1 through 4 a couple of times until you get the hang of it.
 
 </Tip>
 
 <Tip>
 
-###### Presiona sabiamente
+###### Press wisely
 
-Más tarde en los pasos de construcción, se te pedirá que presiones tu tela. Por favor, tenga cuidado de no utilizar demasiado calor en un tejido delicado que no puede manejarlo.
+Later in the construction steps, you will be asked to press your fabric. Please be careful that you are not using too much heat on a delicate fabric that can't handle it.
 
-Es una buena idea intentar presionar algunos restos de tela antes de empezar. Esto le permitirá averiguar qué es un buen ajuste de calor para el tejido que está utilizando.
+It's a good idea to try pressing some fabric scraps before you start. This will allow you to figure out what is a good heat setting for the fabric you are using.
 
 </Tip>
 
-### Paso 1: Pase el primer lado de su cola de empatado
+### Step 1: Sew the first side of your tie tail
 
 ![Sew the first side of the tie tail](step01.png)
 
@@ -35,7 +35,7 @@ Sew in place, starting precisely at the matched notch, along the edge. Make sure
 
 Two notches are now fixed the same spot.
 
-### Paso 2: Pase el segundo lado de su cola de empatado
+### Step 2: Sew the second side of your tie tail
 
 ![Sew the second side of your tie tail](step02.png)
 
@@ -47,7 +47,7 @@ Sew in place, starting precisely at the matched notch, making sure to get a stra
 
 Now, all three notches are fixed the same spot.
 
-### Paso 3: Termina la cola de empatado
+### Step 3: Finish the tie tail
 
 ![Finish the tie tail](step03.png)
 
@@ -55,7 +55,7 @@ Fold your tie open so that the two seams you made in step 1 and 2 lie on top of 
 
 Sew the point where the three notches and your two seams converge to the folded edge of the Fabric tip (part 4, on the left in the image).
 
-### Paso 4: Da la cola en el interior e inspecciona tu trabajo
+### Step 4: Turn the tail inside-out and inspect your work
 
 ![Turn the tail inside-out and inspect your work](step04.png)
 
@@ -69,7 +69,7 @@ The seam where the tie fabric meets the tie lining does not sit at the edge of t
 
 If you managed to do all of this, you can do it again for the tip of your tie.
 
-### Paso 5: Empata la primera cara de tu punta de empata
+### Step 5: Sew the first side of your tie tip
 
 ![Sew the first side of your tie tip](step01.png)
 
@@ -81,7 +81,7 @@ Sew in place, starting precisely at the matched notch, along the edge. Make sure
 
 Two notches are now fixed the same spot.
 
-### Paso 6: Agarra el segundo lado de tu punta de empatado
+### Step 6: Sew the second side of your tie tip
 
 ![Sew the second side of your tie tip](step02.png)
 
@@ -93,7 +93,7 @@ Sew in place, starting precisely at the matched notch, making sure to get a stra
 
 Now, all three notches are fixed the same spot.
 
-### Paso 7: Termina la punta de la corbata
+### Step 7: Finish the tie tip
 
 ![Finish the tie tip](step03.png)
 
@@ -101,7 +101,7 @@ Fold your tie open so that the two seams you made in step 5 and 6 lie on top of 
 
 Sew the point where the three notches and your two seams converge to the folded edge of the Fabric tip (part 3, on the left in the image).
 
-### Paso 8: Vuelve la punta dentro e inspecciona tu trabajo
+### Step 8: Turn the tip inside-out and inspect your work
 
 ![Turn the tip inside-out and inspect your work](step04.png)
 
@@ -113,27 +113,27 @@ Your tip should look like the picture, with a sharp point and straight edges.
 
 The seam where the tie fabric meets the tie lining does not sit at the edge of the tie but it sits a bit back, staying out of sight.
 
-### Paso 9: Únete a la interfaz de empatado
+### Step 9: Join the tie interfacing
 
 ![Join the tie interfacing](step09.png)
 
 Join Interfacing tip (piece 1) and Interfacing tail (piece 2) together on the non-pointy side, matching the notch.
 
-> **Or don't** To be honest, I never join the interfacing. Dejo las dos mitades sin ajustes.
+> **Or don't** To be honest, I never join the interfacing. I just leave both halves unattached.
 > 
-> De esta manera, nunca se puede malinterpretar la longitud de la corbata, y sólo se puede deslizar las partes que se interrelacionan entre sí. Además, crea menos masa en el medio, y es menos trabajo.
+> This way, you can never get the length of your tie wrong, and you can just slide the interfacing parts over each other. In addition, it creates less bulk in the middle, and it's less work.
 > 
-> Así que puedes saltarte este paso, es lo que hago.
+> So you can just skip this step, it's what I do.
 
-### Paso 10: Únete a la tela de empatado
+### Step 10: Join the tie fabric
 
 ![Join the tie fabric](step10.png)
 
-> Con la interfacción coser juntos, la longitud de nuestra corbata ahora está determinada. Medir la punta de la corbata a la punta y asegurarse de que usted se une a las piezas de la tela a la longitud correcta.
+> With the interfacing sewn together, the length of our tie is now determined. Measure the tie tip to tip, and make sure that you join the fabric pieces at the correct length.
 
 Join the tip and tail fabric together on the non-pointy side.
 
-### Paso 11: Haz tu bucle de empatado
+### Step 11: Make your tie loop
 
 ![Make your tie loop](step11.png)
 
@@ -145,11 +145,11 @@ Make sure to have one edge a little bit shorter. This will be the back side.
 
 While folding, reach for your iron and give it a good press so things stay in place. Also press the final loop before sewing it.
 
-> Cuidado al pulsar, recuerda el consejo que di anteriormente
+> Careful when pressing, remember the pressing advice I gave earlier
 
 When you're happy with how you folded and pressed your loop, hand-sew along the edge with a slipstitch to keep things in place.
 
-### Paso 12: ensamblar tu corbata
+### Step 12: Assemble your tie
 
 ![Assemble your tie](step12.png)
 
@@ -157,7 +157,7 @@ Time to start putting things together. Place your tie on a flat surface, good si
 
 Now take your tie interfacing, and place it in your tie with the seam allowance in the middle facing upwards. Make sure to slide it between your fabric and lining on each side, all the way to the tip.
 
-### Paso 13: Doble y presiona tu empata
+### Step 13: Fold and press your tie
 
 ![Fold and press your tie](step13.png)
 
@@ -167,19 +167,19 @@ You want to fold it snugly around the interfacing, but without moving the interf
 
 When you're done, press your fold. Because of the tie interfacing, you're not pressing a sharp crease here, the main point is to shape the fabric to be more eager to stay folder around the interfacing.
 
-> Como no estamos presionando un pliegue afilado aquí, sino más dando forma a la tela, un hierro a vapor funciona mejor.
+> As we are not pressing a sharp crease here, but more shaping the fabric, a steam iron works best.
 
 When you have completed one side, fold back the other side, and steam again.
 
 Finally, fold back the top layer along the middle of your tie, and press in place. This time, you are making a sharp crease along the middle of the tie.
 
-> Para aclarar la diferencia entre los dos últimos pliegues, He incluido una línea oscura en la imagen que marca el borde del tejido, o doblar.
+> To clarify the difference between the two last folds, I have included a dark line in the image that marks the edge of the fabric, or fold.
 > 
-> Como se puede ver, la primera vez que doblamos la tela hacia atrás, y se extiende por encima del centro de la corbata.
+> As you can see, the first time we merely fold the fabric back, and it extends passed the center of the tie.
 > 
-> La segunda vez, la volvemos a doblar en el medio, el lugar donde la cosecharemos en su lugar.
+> The second time, we fold it back again in the middle, the place where we'll sew it in place.
 
-### Paso 14: Prepara el bucle
+### Step 14: Prepare the loop
 
 ![Prepare the loop](step14.png)
 
@@ -189,21 +189,21 @@ Mark the point where the loop ends join, and sew them together.
 
 Finally, press your loop open so the seam sits in the middle, and the ends point to one side.
 
-### Paso 15: Deslizar empate, e insertar bucle
+### Step 15: Slip stitch tie, and insert loop
 
 ![Slip-stitch tie, and insert loop](step15.png)
 
 Use a slip stitch to hand sew your tie all along the length of the back.
 
-> Tu slipch solo debería atrapar la tela de la corbata en la espalda. Refrain de ejecutarlo a través de la interfaz de empate.
+> Your slip stitch should only catch the tie fabric on the back. Refrain from running it through the tie interfacing.
 > 
-> Ten cuidado por si corres la banda demasiado profunda, puede que se muestre en el frente, y arruine tu corbata.
+> Be careful for is you run the stitch too deep, it might show on the front, and ruin your tie.
 
 Make sure to slide in your loop, somewhere around 1/5th of the tie length, starting from the tip.
 
 Use your slip stitch to secure the loop in place on the center seam; we'll fix the edges of the loop in the next step.
 
-### Paso 16: Asegure los bordes del bucle
+### Step 16: Secure the loop edges
 
 ![Secure the loop edges](step16.png)
 
@@ -213,7 +213,7 @@ Make sure to sew only the bottom layer of the loop, so the stitches don't show o
 
 And, once again, be careful not to run your stitches through your tie. Be shallow.
 
-### Paso 17: Recortar y limpiar
+### Step 17: Trim and clean up
 
 ![Trim and clean up](step17.png)
 
