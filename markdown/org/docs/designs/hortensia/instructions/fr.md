@@ -1,6 +1,6 @@
----
+- - -
 title: "Hortensia handbag: Sewing Instructions"
----
+- - -
 
 ### (Optional) Step 1: Face the main fabric
 
@@ -17,47 +17,47 @@ title: "Hortensia handbag: Sewing Instructions"
 - If needed, face your straps.
 - Fold the straps in half lengthwise with _good sides matching_.
 - Sew the raw edges together making sure to leave a gap for turning.
-- Turn inside out.
+- Retourner à l'envers.
 - _Slipstich_ the opening closed.
 - Alternatively _Edgestitch_ all the edges.
 - Attach one strap to the front panel and one strap to the back panel by sewing a rectangle and a cross.
 
 <Warning>
 
-The placement of the straps are not on the pattern and need to be determined. You may need to baste the zipper panel to the front and back panels to help figure out the placement.
+L'emplacement des bretelles ne figure pas sur le patron et doit être déterminé. Il se peut que vous deviez coller le panneau de la fermeture à glissière aux panneaux du devant et du dos pour vous aider à déterminer l'emplacement.
 
 </Warning>
 
 <Note>
 
-If using bag strap webbing instead of fabric made straps do the following,
+Si vous utilisez des sangles de sac au lieu de sangles en tissu, procédez comme suit,
 
-- Cut the webbing to the the length of the straps with seam allowance.
-- Press under the short edge seam allowance.
-- Attach the webbing the same way as the fabric straps.
+- Coupez la sangle à la longueur des lanières avec la marge de couture.
+- Repassez sous le surplus de couture du bord court.
+- Fixez la sangle de la même manière que les sangles en tissu.
 
 </Note>
 
-### Step 4: The zipper
+### Étape 4 : La fermeture éclair
 
-- Insert the zipper into the zipper panel making sure that the zipper pull is on the _good side_.
+- Insérez la fermeture à glissière dans le panneau de fermeture à glissière en veillant à ce que la tirette soit du _bon côté_.
 
-### (Optional) Step 5: Construct tabs.
+### (Facultatif) Étape 5 : Construire les onglets.
 
-- Construct tabs the same as the straps just shorter.
-- _Baste_ the tabs _good sides together_ to the short edges of the zipper panel so the tabs face inward.
+- Les languettes sont construites de la même manière que les sangles, mais elles sont plus courtes.
+- _Coller_ les languettes _endroit contre endroit_ sur les bords courts du panneau de la fermeture à glissière de façon à ce que les languettes soient tournées vers l'intérieur.
 
 <Tip>
 
-We recommend the tabs to be about a quarter length of the straps.
+Nous recommandons que les languettes soient environ un quart de la longueur des bretelles.
 
 </Tip>
 
-### Step 6: Attach the zipper panel
+### Étape 6 : Fixer la fermeture à glissière
 
-- With _good sides together_ sew the zipper panel to the front and pack panels. We will now refer to this as **the tube**.
+- Avec _l'endroit contre endroit_, coudre le panneau de la fermeture à glissière aux panneaux du devant et d'emballage. Nous l'appellerons désormais **les tubes**.
 
-### Step 7: Prep the side panels
+### Étape 7 : Préparation des panneaux latéraux
 
 - Press under the top seam allowance of the side panel reinforcement parts.
 - Place the side panel reinforcement parts on top of the side panels matching the raw edges.
@@ -78,7 +78,7 @@ It is recommended to leave the gap for turning on the side rather than the top o
 
 </Note>
 
-### Step 9: Lining
+### Étape 9 : Doublure
 
 - With _good sides together_ sew the front and back lining panels to the bottom lining panel.
 - With _good sides together_ attach the lining side panels.
@@ -87,6 +87,6 @@ It is recommended to leave the gap for turning on the side rather than the top o
 - Place the lining inside the bag _wrong sides facing_ eachother.
 - _Slipstitch_ or _Whipstitch_ the lining to the zipper panel.
 
-### Step 10: Enjoy!
+### Étape 10: Profitez-en!
 
-That's it! You are all done! Now go enjoy you new bag!
+Voilà! Vous avez terminé ! Now go enjoy you new bag!
