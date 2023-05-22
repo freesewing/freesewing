@@ -1,12 +1,12 @@
----
+- - -
 title: "Shoulder seam shift: armhole side"
----
+- - -
 
-Controls the shoulder seam location on the armhole side.
+Steuert die Position der Schulternaht auf der Armlochseite.
 
-- Increase this option to shift the shoulder seam forward on the armhole side
-- Decrease this option to shift the shoulder seam backward on the armhole side
+- Erhöhe diese Option, um die SchulterNaht auf der Armlochseite vorwärts zu verschieben
+- Verringere diese Option, um die SchulterNaht rückwärts auf der Armlochseite zu verschieben
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bent_s3armhole_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](bent_s3armhole_sample.svg "Effekt dieser Variable auf das Schnittmuster")
