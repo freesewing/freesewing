@@ -1,20 +1,19 @@
----
+- - -
 title: "Sleevecap Q4 offset"
----
+- - -
 
 ***
 
-![The offset in the fourth quarter of the sleevecap](./sleevecapq4offset.svg)
+![Der Versatz im vierten Quartal der Ärmel](./sleevecapq4offset.svg)
 
-This option controls the offset in the fourth quadrant of the sleevecap.
+Diese Option steuert den Versatz im vierten Quadranten der Ärmel.
 
 <Tip>
 
-See [understanding the sleevecap](/docs/patterns/brian/options#understanding-the-sleevecap) for an in-depth
-look into how the sleevecap is constructed and the influence of the different options on its shape.
+Siehe [die Armkugel verstehen](/docs/patterns/brian/options#understanding-the-sleevecap) für eine detaillierte Erklärung, wie die Armkugel konstruiert wird und wie die einzelnen Optionen ihre Form beeinflussen.
 
 </Tip>
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_sleevecapq4offset_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](brian_sleevecapq4offset_sample.svg "Effekt dieser Option auf das Schnittmuster")
