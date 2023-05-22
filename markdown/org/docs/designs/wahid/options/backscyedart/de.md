@@ -1,22 +1,22 @@
----
+- - -
 title: "Back scye dart"
----
+- - -
 
-![Back scye dart](backscyedart.svg)
+![Rückwärtige Armlochabnäher](backscyedart.svg)
 
-This pattern comes with a default 0.5 cm scye dart (think armhole dart) on the back. You can increase or decrease the dart to influence the armhole.
+Dieses Muster kommt mit einem standardmäßigen 0,5 cm Scye Dart (denken Sie an Armlochdart) auf der Rückseite. Du kannst den Dart erhöhen oder verringern, um die Rüstung zu beeinflussen.
 
 <Note>
 
-###### What's the point?
+###### Was ist der Punkt?
 
-The point of this dart is to make sure the armhole lies flat against your body, rather than gape.
-Given that there is no sleeve, a gaping armhole is particularly unsightly.
+Der Sinn dieses Darts ist es, sicherzustellen, dass das Armloch flach gegen deinen Körper liegt und nicht gegen deinen Gang.
+Angesichts der Tatsache, dass es keine Ärmel gibt, ist ein klaffendes Rüstungsloch besonders unschön.
 
-While this dart is used to shape the pattern, you don't have to sew the dart because it's incorporated in the shoulder seam line.
+Während dieser Dart benutzt wird, um das Muster zu formen, müssen Sie den Dart nicht nähen, da er in die Schulternahtlinie integriert ist.
 
 </Note>
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_backscyedart_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](wahid_backscyedart_sample.svg "Effekt dieser Option auf das Schnittmuster")
