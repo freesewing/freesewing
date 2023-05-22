@@ -1,5 +1,5 @@
 ---
-title: Hi the shark
+title: Hi, der Hai
 ---
 
 <PatternDocs pattern='hi' />
