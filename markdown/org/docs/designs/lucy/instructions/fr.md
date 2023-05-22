@@ -1,5 +1,5 @@
 ---
-title: "Lucy tie-on pocket: Sewing Instructions"
+title: "Lucy: Instructions"
 ---
 
 <Note>
@@ -20,7 +20,7 @@ If you prefer you can _french seam_ the outer edges of the pocket bag together.
 
 </Note>
 
-## Step 2: Binding the top edge and ties.
+## bind the top and thread a tie through the binding
 
 There are two methods for binding the top edge. One leaves the side edges of the top binding open so the ties can be threaded through. The second uses the tape for the ties to bind the top edge. Read through both methods carefully and decide which one you wish to use.
 
@@ -34,7 +34,7 @@ There are two methods for binding the top edge. One leaves the side edges of the
 
 <Tip>
 
-To make sure the binding is long enough, instead of cutting the binding down you can fold under one edge and stitch the binding to the top edge but before getting to other end fold under and trim the other edge of the binding then continue the stitching.
+use a piece of tape as binding and tie, sewing it down to the top and leaving the ends free
 
 </Tip>
 
@@ -44,6 +44,6 @@ To make sure the binding is long enough, instead of cutting the binding down you
 - Bind the top edge of the pocket bag whilst leaving the remainder of tape free.
 - Finish the tape ends.
 
-## Step 3: Enjoy!
+## Étape 3: Profitez-en!
 
-That's it! You're all done! Now go stuff your new pockets to the brim!
+Voilà! Vous avez terminé ! Now go stuff your new pockets to the brim!
