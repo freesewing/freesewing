@@ -2,10 +2,10 @@
 title: "Center front hem drop"
 ---
 
-![Décalage de la longueur à l'avant](centerfronthemdrop.svg)
+![Center front hem drop](centerfronthemdrop.svg)
 
-Combien voulez-vous que le devant de votre veste soit plus long/inférieur au dos?
+How much do you want the front of your jacket to be longer/lower than the back?
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_centerfronthemdrop_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_centerfronthemdrop_sample.svg "Effect of this option on the pattern")
