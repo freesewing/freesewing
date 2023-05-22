@@ -1,12 +1,12 @@
----
+- - -
 title: "Inner pocket depth"
----
+- - -
 
 How deep you would like the inner pocket to be.
 
 - Increase this option to make a deeper inner pocket
 - Decrease this option to make a shallower inner pocket
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_innerpocketdepth_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](jaeger_innerpocketdepth_sample.svg "Effekt dieser Variable auf das Schnittmuster")
