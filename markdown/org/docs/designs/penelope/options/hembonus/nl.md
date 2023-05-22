@@ -2,8 +2,8 @@
 title: "Hem bonus"
 ---
 
-Deze optie vermindert de omtrek van de rok aan de zoom. Percentage van de zitvlakmeting.
+This option will reduce the circumference of the skirt at the hem. Percentage of the seat measurement.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](penelope_hembonus_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_hembonus_sample.svg "Effect of this option on the pattern")
