@@ -1,9 +1,9 @@
----
+- - -
 title: "Inner pocket depth"
----
+- - -
 
-Controls the depth of the inner pocket.
+Contrôle la profondeur de la poche intérieure.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlton_innerpocketdepth_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlton_innerpocketdepth_sample.svg "Effet de cette option sur le modèle")
