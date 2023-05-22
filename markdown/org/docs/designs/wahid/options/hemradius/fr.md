@@ -1,11 +1,11 @@
 ---
-title: "Rayon de l'ourlet"
+title: "Hem radius"
 ---
 
-![Rayon d'ourlet](hemradius.svg)
+![Hem radius](hemradius.svg)
 
-Détermine le rayon de l'ourlet si vous avez choisi un ourlet arrondi.
+Determines the radius of the hem if you opted for a rounded hem.
 
-## Effet de cette option sur le patron
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_hemradius_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_hemradius_sample.svg "Effect of this option on the pattern")
