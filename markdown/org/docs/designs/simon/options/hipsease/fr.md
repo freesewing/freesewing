@@ -1,11 +1,11 @@
 ---
-titre : "Aisance pour les hanches"
+title: "Hips ease"
 ---
 
-![Aisance des hanches](hipsease.svg)
+![Hips ease](hipsease.svg)
 
-Combien d'aisance voulez-vous pour les hanches ?
+How much room do you want at the hips?
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_hipsease_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_hipsease_sample.svg "Effect of this option on the pattern")
