@@ -2,20 +2,20 @@
 title: "Draft for high bust"
 ---
 
-Kies deze optie om Teagan te tekenen naar je hoge bustemeting, in plaats van je volledige borstomtrek.
+Choose this option to draft Teagan to your high bust measurement, rather than your full chest circumference.
 
-Deze optie is specifiek voor mensen met borsten. Enabling it will draft Teagan to your high bust measurement and let ease and stretch fit your breasts.
+This option is specifically for people with breasts. Enabling it will draft Teagan to your high bust measurement and let ease and stretch fit your breasts.
 
-Dit geeft je wat over het algemeen wordt beschouwd als een vleiende pasvorm.
+This gives you what is generally considered to be a more flattering fit.
 
-Als u deze optie niet inschakelt, Teagan zal voornamelijk worden gemaakt voor een lichaam zonder borsten dat dezelfde borstomtrek heeft als je lichaam met borsten. Dit zorgt voor een hoop extra stof aan de borst en armsgaten waardoor het T-shirt er als een slechte pasvorm uitziet.
+If you don't enable this option, Teagan will essentially be drafted for a body without breasts that has the same chest circumference as your body with breasts. This will cause a bunch of extra fabric at the chest and armholes that will make the T-shirt look like a poor fit.
 
 Enable this option and we'll draft to your high bust, fitting your body without breasts as it were, and then allowing your breasts to fill out the T-shirt's ease (and possibly stretch depending on your high bust / bust ratio).
 
 <Note>
-Deze optie heeft geen effect wanneer er geen hoge bustemeting wordt gegeven
+This option has no effect when there's no high bust measurement provided
 </Note>
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](teagan_draftforhighbust_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](teagan_draftforhighbust_sample.svg "Effect of this option on the pattern")
