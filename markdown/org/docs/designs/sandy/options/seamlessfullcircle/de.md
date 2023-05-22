@@ -1,10 +1,10 @@
----
+- - -
 title: "Seamless full circle"
----
+- - -
 
-![Seamless full circle](seamlessfullcircle.svg)
+![Nahtloser Vollkreis](seamlessfullcircle.svg)
 
-Select 'yes' for a seamless circle, which is cut on a double fold. Since it has no openings, you'll need an elastic waistband.
+Wählen Sie 'Ja' für einen nahtlosen Kreis, der auf ein doppeltes Falten zugeschnitten wird. Da es keine Öffnungen hat, brauchen Sie ein elastisches Band.
 
 <Note>
 
@@ -14,6 +14,6 @@ Select 'yes' for a seamless circle, which is cut on a double fold. Since it has 
 
 </Note>
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](sandy_seamlessfullcircle_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](sandy_seamlessfullcircle_sample.svg "Effekt dieser Option auf das Schnittmuster")
