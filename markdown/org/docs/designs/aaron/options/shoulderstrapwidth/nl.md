@@ -1,6 +1,6 @@
----
+- - -
 title: "Shoulderstrap width"
----
+- - -
 
 ![De optie voor de breedte van de schouderband bij Aaron](./shoulderstrapwidth.svg)
 
