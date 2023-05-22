@@ -2,11 +2,11 @@
 title: "Florence face mask: Cutting Instructions"
 ---
 
-Florence only has one part, the _mask_. Dit is de helft van het masker, dus zullen we er twee nodig hebben. Daarnaast willen we een buitenste en binnenste laag van stof zodat we er in totaal vier nodig hebben:
+Florence only has one part, the _mask_. This is half of the mask, so we will need two of them. In addition, we want an outer and inner layer of fabric, so we'll need four in total:
 
-- **Buitenstof**
-  - Knip **2 maskers** delen
-- **Voering**
-  - Knip **2 maskers** delen
+- **Main fabric**
+  - Cut **2 masks** parts
+- **Lining fabric**
+  - Cut **2 masks** parts
 
-Als je dezelfde stof in en uit gebruikt (wat prima is), knip dan **4 masker** delen.
+If you're using the same fabric in and out (which is fine) then simply cut **4 mask** parts.
