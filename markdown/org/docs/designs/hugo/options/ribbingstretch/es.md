@@ -1,12 +1,12 @@
----
+- - -
 title: "Ribbing stretch"
----
+- - -
 
-![Ribbing stretch on Hugo](./ribbingstretch.svg)
+![Ribbing en Hugo](./ribbingstretch.svg)
 
-This option allows you to tweak the stretch of your ribbing.
+Esta opción le permite ajustar el estiramiento de su ribbing.
 
-If you choose 90% (for example) for every 10cm of ribbing, we'll only draft 9cm. This way, 9cm of ribbing will be stretched to 10cm.
+Si usted elige el 90% (por ejemplo) por cada 10 cm de ribbing, sólo borraremos 9 cm. De esta manera, 9cm de ribbing se estirará a 10cm.
 
 <Note>
 
@@ -15,6 +15,6 @@ you need to stretch out to get to 10 cm with a _good_ stretch.
 
 </Note>
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](hugo_ribbingstretch_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](hugo_ribbingstretch_sample.svg "Efecto de esta opción en el patrón")
