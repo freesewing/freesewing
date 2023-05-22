@@ -2,10 +2,10 @@
 title: "Circle ratio"
 ---
 
-![Kreisverhältnis](circleratio.svg)
+![Circle ratio](circleratio.svg)
 
-Der Prozentsatz eines Kreisrock Rock. 100% macht einen vollen Kreis Rock, 50% macht einen Halbkreisrock Rock.
+The percent of a circle skirt. 100% makes a full circle skirt, 50% makes a half circle skirt.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](sandy_circleratio_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](sandy_circleratio_sample.svg "Effect of this option on the pattern")
