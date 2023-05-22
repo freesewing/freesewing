@@ -2,10 +2,10 @@
 title: "Button placket width"
 ---
 
-![Breedte knopenpat](buttonplacketwidth.svg)
+![Button placket width](buttonplacketwidth.svg)
 
-De breedte van het knopenpat.
+The width of your button placket.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_buttonplacketwidth_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_buttonplacketwidth_sample.svg "Effect of this option on the pattern")
