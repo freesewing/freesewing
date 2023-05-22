@@ -1,17 +1,17 @@
----
+- - -
 title: "Sleevecap ease"
----
+- - -
 
-How much sleevecap ease do you want?
+Wie viel Ärmel-Leichtigkeit möchtest du?
 
-> #### What's the point?
+> #### Was ist der Punkt?
 > 
-> The amount of sleevecap ease determines how the sleeves rolls from the shoulder.
+> Die Menge an Ärmelleicht bestimmt, wie die Ärmel von der Schulter rollen.
 > 
-> More ease makes the sleeve curl into the seam as you would expect from a coat. Less ease makes the sleeve lie flatter.
+> Mehr Leichtigkeit macht die Ärmelkurve in die Naht, wie man es von einem Fell erwarten würde. Weniger Leichtigkeit macht die Ärmel flacher.
 
-> The lighter your fabric, the less sleevecap ease you want.
+> Je leichter Ihr Stoff, desto weniger Ärmel Sie wollen.
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bent_sleevecapease_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](bent_sleevecapease_sample.svg "Effekt dieser Variable auf das Schnittmuster")
