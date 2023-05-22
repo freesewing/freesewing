@@ -20,8 +20,9 @@ import {
 import { Ribbon } from 'shared/components/ribbon.mjs'
 import { ModalThemePicker, ns as themeNs } from 'shared/components/modal/theme-picker.mjs'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
+import { Search } from 'site/components/search.mjs'
 
-import { NavButton, NavSpacer, colors } from 'shared/components/workbench/header.mjs'
+import { NavButton, NavSpacer, colors } from 'shared/components/header.mjs'
 
 export const ns = ['header', 'sections', ...themeNs]
 
@@ -88,7 +89,7 @@ const NavIcons = ({ setModal, setSearch }) => {
       >
         <ThemeIcon className={iconSize} />
       </NavButton>
-      <NavButton onClick={() => setSearch(true)} label={t('header:search')} color={colors[9]}>
+      <NavButton href="/search" label={t('header:search')} color={colors[9]}>
         <SearchIcon className={iconSize} />
       </NavButton>
     </>
@@ -100,11 +101,9 @@ const Banner = () => (
     className={`
       fixed top-0 lg:top-auto lg:top-0 left-auto m-auto w-full flex
       z-30
-      opacity-60 hover:opacity-100
-
      `}
   >
-    <div className="bg-accent p-1 px-4 m-auto text-accent-content font-bold m-auto rounded-b-lg">
+    <div className="bg-accent bg-opacity-60 hover:bg-opacity-100 p-1 px-4 m-auto text-accent-content font-bold m-auto rounded-b-lg">
       This is a <b>FreeSewing.dev</b> alpha version. If you spot a problem, please{' '}
       <a
         className="underline hover:text-secondary"
