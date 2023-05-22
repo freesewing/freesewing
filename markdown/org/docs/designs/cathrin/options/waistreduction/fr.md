@@ -1,11 +1,11 @@
----
-title: "Waist reduction"
----
+- - -
+titre : "Réduction du tour de taille"
+- - -
 
-![The waist reduction option on Cathrin](./waistreduction.svg)
+![Option de réduction de la taille sur Cathrin](./waistreduction.svg)
 
-The amount you want the corset to be smaller than your natural waist. In other words, how much do you want it to squeeze you.
+La quantité que vous voulez que le corset soit plus petit que votre taille naturelle. En d'autres termes, combien voulez-vous qu'il vous presse.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_waistreduction_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](cathrin_waistreduction_sample.svg "Effet de cette option sur le modèle")
