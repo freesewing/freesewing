@@ -1,6 +1,6 @@
----
+- - -
 title: "Penelope pencil skirt: Cutting Instructions"
----
+- - -
 
 <Note>
 
@@ -10,7 +10,7 @@ Due to this, the cutting list does not specify how many back parts to cut as the
 
 </Note>
 
-**Main Fabric**
+**Tissu principal**
 
 - Cut **1 front** part on fold.
 - Cut **back** part(s).
@@ -27,13 +27,13 @@ Due to this, the cutting list does not specify how many back parts to cut as the
 
 </Note>
 
-**Interfacing**
+**Entoilage**
 
 - Cut **1 waistband** part on the fold.
 
 <Tip>
 
-When you cut out a piece on the fold, remember that the fold does not need to be in the middle of the fabric.
-Choosing the placement of your pieces wisely can greatly reduce the amount of fabric you need for your skirt.
+Lorsque vous découpez une pièce sur le pli, rappelez-vous que le pli n'a pas besoin d'être au milieu du tissu.
+Choisir le placement de vos pièces judicieusement peut réduire considérablement la quantité de tissu dont vous avez besoin pour votre jupe.
 
 </Tip>
