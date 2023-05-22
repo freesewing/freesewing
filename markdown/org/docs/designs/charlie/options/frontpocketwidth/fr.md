@@ -1,9 +1,9 @@
----
-title: "Front pocket width"
----
+- - -
+titre : "Largeur de la poche avant"
+- - -
 
-Controls the width of the front pocket bag. In other words, how far the pocket bag extends towards the center front of the trousers.
+Contrôle la largeur du sac de poche avant. En d'autres termes, jusqu'où le sac de poche s'étend vers le centre devant du pantalon.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_frontpocketwidth_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_frontpocketwidth_sample.svg "Effet de cette option sur le modèle")
