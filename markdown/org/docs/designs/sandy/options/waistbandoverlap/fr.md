@@ -1,11 +1,11 @@
----
+- - -
 title: "Waistband overlap"
----
+- - -
 
-![Waistband overlap](waistbandoverlap.svg)
+![Chevauchement de la ceinture](waistbandoverlap.svg)
 
-The length of the overlap between the ends of the waistband, to allow a button. 0 means no overlap, for example to place a zipper that goes all the way to the top of the waistband.
+La longueur du chevauchement entre les extrémités de la ceinture, pour permettre un bouton. 0 signifie aucun chevauchement, par exemple pour placer une fermeture à glissière qui va jusqu'au sommet de la ceinture.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](sandy_waistbandoverlap_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](sandy_waistbandoverlap_sample.svg "Effet de cette option sur le modèle")
