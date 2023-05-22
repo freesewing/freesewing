@@ -1,21 +1,21 @@
----
+- - -
 title: "Sleeve length bonus"
----
+- - -
 
-![Sleeve length bonus](sleevelengthbonus.svg)
+![Longitud extra de manga](sleevelengthbonus.svg)
 
-The amount to extend the sleeve beyond the length of the sleeve in the base block.
+La cantidad para extender la manga más allá de la longitud de la manga en el bloque base.
 
 <Note>
 
-###### This is not supposed to be zero
+###### Esto no se supone que sea cero
 
-Setting this to zero will make the sleeve length the same as the base length of the Bent block,
-which is certainly too short for a coat.
-Please take note of the default value and use that as a basis to lengthen or shorten the sleeve.
+Establecer esto a cero hará que la longitud de la manga sea la misma que la longitud base del bloque de plegado,
+que es sin duda demasiado corto para un abrigo.
+Tenga en cuenta el valor por defecto y utilice esto como base para alargar o acortar la manga.
 
 </Note>
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_sleevelengthbonus_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](jaeger_sleevelengthbonus_sample.svg "Efecto de esta opción en el patrón")
