@@ -1,17 +1,17 @@
----
+- - -
 title: "Collar stand curve"
----
+- - -
 
-![Collarstand curve](collarstandcurve.svg)
+![Kollarstand Kurve](collarstandcurve.svg)
 
-How much the collar stand curves up at the edges.
+Wie sehr sich der Kragen an den Rändern verformt.
 
 <Note>
 
-You can tweak this to make sure the edges of your collar stand at the front or nicely horizontal.
+Sie können dies anpassen, um sicherzustellen, dass die Ränder Ihres Kragens vorne oder schön horizontal.
 
 </Note>
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarstandcurve_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_collarstandcurve_sample.svg "Effekt dieser Option auf das Schnittmuster")
