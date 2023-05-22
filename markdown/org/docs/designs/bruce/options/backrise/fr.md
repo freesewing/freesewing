@@ -1,15 +1,15 @@
 ---
-title: "Hauteur du dos"
+title: "Back rise"
 ---
 
-![L'option hauteur dos pour Bruce](./backrise.svg)
+![The back rise option on Bruce](./backrise.svg)
 
-Combien de hauteur supplémentaire voulez-vous au dos ?
+How much extra rise do you want at the back?
 
-Ce facteur augmentera la hauteur seulement à l'arrière de votre boxer.
+This factor will raise the waist at the back of your boxers only.
 
-> Si vous voulez augmenter la hauteur partout, voir l'option **hauteur**
+> If you want to raise the waist overall, that's what the **rise** option does
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bruce_backrise_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bruce_backrise_sample.svg "Effect of this option on the pattern")
