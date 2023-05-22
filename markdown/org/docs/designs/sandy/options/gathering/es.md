@@ -2,10 +2,10 @@
 title: "Gathering"
 ---
 
-![Fruncido](gathering.svg)
+![Gathering](gathering.svg)
 
-El porcentaje por el que la parte superior de la falda es más largo que la parte inferior de la cinturilla. Dar un valor superior a 0 para plegar la cabeza.
+The percent by which the top of the skirt is longer than the bottom of the waistband. Give a value higher than 0 to pleat the skirt.
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](sandy_gathering_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](sandy_gathering_sample.svg "Effect of this option on the pattern")
