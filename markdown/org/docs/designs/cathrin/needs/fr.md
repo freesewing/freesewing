@@ -12,8 +12,8 @@ Sample supplies list:
 
 - About 0.5 meters (0.6 yards) of core fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
 - About 0.5 meters (0.6 yards) of outer fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
-- Assaisonnement
+- Boning
 - Grommets (size 2)
-- Environ 2 mètres de bande de biais
-- Environ 3 mètres de lacage
+- About 2 meters of bias tape
+- About 3 meters of lacing
 - Tools: Grommet setter, awl
