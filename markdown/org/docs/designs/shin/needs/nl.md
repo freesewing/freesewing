@@ -4,12 +4,12 @@ title: "Shin swim trunks: What You Need"
 
 To make Shin, you will need the following:
 
-- Basis naaimateriaal
+- Basic sewing supplies
 - About 0.75 meters (0.8 yards) of a suitable fabric ([see Fabric options](/docs/patterns/shin/fabric))
-- Twee vetergaatjes en een koordje
+- two eyelets and a drawstring
 
-> ## Een overlockmachine is handig, maar optioneel
+> ## A serger/overlock is nice, but optional
 > 
-> Zoals met alle gebreide en elastische stoffen maakt een overlock het leven eenvoudiger.
+> As with all stretch fabrics, a serger/overlock will make your life easier.
 > 
-> Als je geen overlock hebt, geen zorg. Je hebt het niet echt nodig. Je kan een andere techniek gebruiken voor het naaien van elastische naden, zoals een zigzagsteek, tweelingnaald of elastisch garen.
+> If you do not have one of those, don't despair. You don't really need it. You can use another technique for stretch seams, such as a zig-zag stich, twin needle, or elastic thread.
