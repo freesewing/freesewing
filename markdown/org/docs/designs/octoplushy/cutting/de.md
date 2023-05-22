@@ -1,22 +1,22 @@
 ---
-title: "Octoplushy, der plüschige Oktopus: Zuschnitt"
+title: "Octoplushy, the plushy octopus: Cutting Instructions"
 ---
 
-- **Farbe 1 (Oberer Körper, oberes Teil der Beine & Kopf)**
-  - **Octoplushy, Oktopus & Tintenfisch**
-    - Schneide **8 Kopf**teile
-  - **Nur Oktopus**
-    - Schneide **2 Augenbrauen**teile
-  - **Nur Tintenfisch**
-    - Schneide **2 Kopf (a)**-Teile
+- **Color 1 (Upper body, top of legs & head)**
+  - **Octoplushy, Octopus & Squid**
+    - Cut **8 head** parts
+  - **Octopus only**
+    - Cut **2 eyebrow** parts
+  - **Squid only**
+    - Cut **2 head (a)** parts
 
-- **Farbe 2 (Bauch, unteres Teil der Beine)**
-  - **Octoplushy, Oktopus & Tintenfisch**
-    - Schneide **8 Bein**teile
-  - **Nur Tintenfisch**
-    - Schneide **2 Bein (a)**-Teile
+- **Color 2 (Belly, bottom of legs)**
+  - **Octoplushy, Octopus & Squid**
+    - Cut **8 leg** parts
+  - **Squid only**
+    - Cut **2 leg (a)** parts
 
-- **Stoff für Augen**
-  - **Oktopus & Tintenfisch**
-    - Schneide **2 Augen (weiß)**
-    - Schneide **2 Pupillen (schwarz)**
+- **Eyes Fabric**
+  - **Octopus & Squid**
+    - Cut **2 eye (white)** parts
+    - Cut **2 pupil (black)** parts
