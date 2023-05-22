@@ -1,6 +1,6 @@
----
+- - -
 title: "Carlton coat: Cutting Instructions"
----
+- - -
 
 <Note>
 
@@ -8,16 +8,16 @@ Certain parts have to be drafted off of the existing parts. How to draft these a
 
 </Note>
 
-### Materials
+### Matériaux
 
-- **Main fabric**
+- **Tissu principal**
   - Cut **2 Front** parts
   - Cut **2 Front facing** parts
-  - Cut **2 Back** parts
+  - Couper **2 parties** arrières
   - Cut **2 topsleeve** parts
   - Cut **2 undersleeve** parts
   - Cut **2 tail** parts
-  - Cut **4 belt** parts
+  - Couper **4 parties** de ceinture
   - Cut **2 Collar stand** parts
   - Cut **2 collar** parts on the fold or Cut the upper collar on the fold and the under collar on the bias
   - Cut **2 cuffFacing** parts
@@ -28,13 +28,13 @@ Certain parts have to be drafted off of the existing parts. How to draft these a
 
 <Note>
 
-If your main fabric is quite lightweight and flimsy you may need to interface all the parts with a lightweight interfacing.
+Si votre tissu principal est assez léger et fragile, vous devrez peut-être interfacer toutes les parties avec un entoilage léger.
 
 </Note>
 
-- **Lining fabric**
+- **Tissu de doublure**
   - Cut **2 Front lining** parts
-  - Cut **2 Back** parts
+  - Couper **2 parties** arrières
   - Cut **2 topsleeve** parts
   - Cut **2 undersleeve** parts
   - Cut **2 tail** parts
@@ -57,6 +57,6 @@ If your main fabric is quite lightweight and flimsy you may need to interface al
 
 <Note>
 
-The canvas parts need to be cut nett (without seam allowances).
+Les pièces de toile doivent être coupées nettes (sans marge de couture).
 
 </Note>
