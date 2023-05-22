@@ -17,7 +17,7 @@ const run = async () => {
   if (['org', 'dev'].includes(SITE)) {
     if (!FAST) await prebuildGitData(SITE)
     const docPages = await prebuildDocs(SITE)
-    await prebuildNavigation(docPages, false, SITE)
+    prebuildNavigation(docPages, false, SITE)
     if (!FAST && process.env.GENERATE_OG_IMAGES) {
       // Create og image for the home page
       await generateOgImage({
