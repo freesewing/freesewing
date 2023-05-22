@@ -1,26 +1,25 @@
----
+- - -
 title: "Button free length"
----
+- - -
 
-![Button free length](./buttonfreelength.svg)
+![Freie Länge Knopf](./buttonfreelength.svg)
 
-How much before your waistband do you want your last button to sit?
+Wie viel vor deinem Taillenband möchtest du mit deinem letzten Button sitzen?
 
 <Note>
 
-###### What's the point?
+###### Was ist der Punkt?
 
-Having buttons below your waistband is considered by many to be an annoyance.
-They get caught up in your belt, and complicate bathroom breaks.
+Knöpfe unter dem Taillenband werden von vielen als Ärger angesehen.
+Sie werden in Ihrem Gürtel aufgefangen und verkomplizieren Badeinbrüche.
 
-By default, the last button sits 1cm above your waistband,
-but this option allows you to move it further upwards for that shirt you are going to wear with those high-waisted trousers.
+Wenn Sie Tasten unter Ihrer Taille haben möchten, können Sie das.
 
-If you want to have buttons below your waistband, you can. You should enter a negative value here,
+Wenn Sie Tasten unter Ihrer Taille haben möchten, können Sie das. You should enter a negative value here,
 making sure it's within the length bonus you have available.
 
 </Note>
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_buttonfreelength_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_buttonfreelength_sample.svg "Effekt dieser Option auf das Schnittmuster")
