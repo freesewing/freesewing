@@ -1,13 +1,13 @@
 ---
-title: "Slant del orificio trasero"
+title: "Back armhole slant"
 ---
 
 ***
 
-![El efecto de la opción de inclinación del orificio trasero sobre el patrón](sample.png)
+![The effect of the back armhole slant option on the pattern](sample.png)
 
 The **back armhole slant** slightly rotates the armhole around the back pitch point.
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bella_backarmholeslant_sample.svg "Efecto de esta opción en el patrón")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_backarmholeslant_sample.svg "Effect of this option on the pattern")
