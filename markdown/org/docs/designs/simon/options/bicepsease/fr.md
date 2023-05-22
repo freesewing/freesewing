@@ -1,27 +1,27 @@
 ---
-titre : "Aisance aux biceps"
+title: "Biceps ease"
 ---
 
-![Aisance au niveau des biceps](./bicepsease.svg)
+![Biceps ease](./bicepsease.svg)
 
-Combien voulez-vous d'aisance pour la manche, par rapport à votre tour de bras (haut du bras) ?
+How much do you want the sleeve to be wider than your upperarm circumference?
 
 <Note>
 
-###### Pour quoi faire ?
+###### What's the point?
 
-Ce sont en fait les hommes à bras musclés qui préfèrent une coupe ajustée. Pour attirer l'attention sur leurs bras.
+It's actually men with big arms who prefer a tighter fit, and thus less ease here. That's because it draws attention to their strong upper arms.
 
-Si vos bras sont moins musclés, vous préférerez sans doute plus d'aisance.
+If your upper arms are more skinny, you'll want some more ease here to smooth things out a bit.
 
 </Note>
 
 <Warning>
 
-Nous nous efforcerons de respecter votre choix ici, mais la priorité est d'ajuster la manche à l'emmanchure.
+We will try to respect your choice here, but out priority is to fit the sleeve in the armhole.
 
 </Warning>
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_bicepsease_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_bicepsease_sample.svg "Effect of this option on the pattern")
