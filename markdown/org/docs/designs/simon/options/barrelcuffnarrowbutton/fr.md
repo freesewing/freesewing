@@ -2,18 +2,18 @@
 title: "Cuff narrow button"
 ---
 
-![Bouton supplémentaire pour poignet classique](./barrelcuffnarrowbutton.svg)
+![Barrel cuff narrow button](./barrelcuffnarrowbutton.svg)
 
-Voulez-vous un bouton en plus pour que le boutonnage de votre poignet soit plus serré ?
+Do you want an extra button to button up your cuff more tightly?
 
-Si vous portez votre chemise sous un pull ou un sweat serré aux poignets, ce bouton vous permet de rendre votre poignet de chemise plus étroit, et d'éviter qu'il ne dépasse de façon disgracieuse.
+If you are wearing your shirt under a tight-fitting (at the wrist) sweater or cardigan, this button allows you to make your cuff more narrow, so it doesn't bunch up all ugly.
 
 <Note>
 
-Cela ne s'applique qu'aux poignets classiques. Donc si vous avez choisi un poignet mousquetaire, ceci ne s'applique pas.
+This does only apply to barrelcuffs. So if you picked a French cuff as cuff style this will be ignored.
 
 </Note>
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_barrelcuffnarrowbutton_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_barrelcuffnarrowbutton_sample.svg "Effect of this option on the pattern")
