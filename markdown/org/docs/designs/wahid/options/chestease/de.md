@@ -1,17 +1,17 @@
----
-title: "Chest ease"
----
+- - -
+title: "Bequemlichkeitszugabe Brust"
+- - -
 
-![Chest ease](chestease.svg)
+![Brustzugabe](chestease.svg)
 
-How much room do you want at the chest?
+Wie viel Platz möchtest du an der Brust haben?
 
 <Note>
 
-Given that a waistcoat has no arms, a little chest ease goes a long way. Add too much, and you'll end up with gaping armholes.
+Da eine Weste keine Arme hat, geht eine kleine Brustpflege sehr weit. Fügen Sie zu viel hinzu, und Sie werden am Ende klaffende Rüstungen haben.
 
 </Note>
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_chestease_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](wahid_chestease_sample.svg "Effekt dieser Option auf das Schnittmuster")
