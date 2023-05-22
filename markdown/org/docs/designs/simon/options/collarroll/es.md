@@ -2,22 +2,20 @@
 title: "Collar roll"
 ---
 
-![Vuelta del cuello](collarroll.svg)
+![Collar roll](collarroll.svg)
 
-Cuánto el cuello es más alto que el cuello se encuentra en el centro de la espalda.
+How much the collar is taller than the collar stand at center back.
 
 <Note>
 
-###### ¿Cuál es el punto?
-
 ###### What's the point?
 
-The collar starts upwards from the collar stand and then rolls over downwards. Pero todavía tiene que cubrir la posición del cuello. Para ello, tiene que ser un poco más largo.
+The collar starts upwards from the collar stand and then rolls over downwards. But it still needs to cover the collar stand. For that, it needs to be a bit longer.
 
-Incrementar esto no hace que el cuello sea más alto (use la altura del cuello para eso), sino que más bien hace que descienda más abajo.
+Increasing this does not make the collar higher (use the collar stand height for that) but rather makes it descend further down.
 
 </Note>
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_collarroll_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarroll_sample.svg "Effect of this option on the pattern")
