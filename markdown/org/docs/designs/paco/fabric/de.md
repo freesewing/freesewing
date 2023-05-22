@@ -11,13 +11,13 @@ For the opposite effect, less casual and more style, you can consider a silk ble
 
 <Tip>
 
-###### Einige Dinge, um
+###### Some things to avoid
 
-zu vermeiden, widersteht der Versuchung, diese in Leinen zu machen.
-Während Leinen ist das Go-to für heiße Sommertage Ich empfehle es nicht für diese Hosen
-, da sie mit einer elastischen Taille oder Manschetten ausgestattet sind, was die Faltenhaut bedeutet.
-Verwenden Sie eines der anderen Designs mit einer eingebauten Taille, wenn Sie möchten, Leinenhose.
+Resist the temptation to make these in linen.
+While linen is the go-to for hot summer days, I would not recommend it for these pants
+as they come with an elasticated waist/cuffs, which means wrinkle hell.
+Use one of out other designs with a fitted waist if you want linen pants.
 
-Vermeiden Sie auch die Auswahl eines Stoffes mit einer Menge Stretch, denn es wird die Dinge komplizieren, wenn Sie die elastischen installieren.
+Also avoid picking a fabric with a lot of stretch, for it will complicate matters when you're installing the elastic.
 
 </Tip>
