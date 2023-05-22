@@ -1,17 +1,17 @@
----
+- - -
 title: "Collar stand curve"
----
+- - -
 
-![Collarstand curve](collarstandcurve.svg)
+![Curva de Collarstand](collarstandcurve.svg)
 
-How much the collar stand curves up at the edges.
+Cuánto se sitúan las curvas de cuello en los bordes.
 
 <Note>
 
-You can tweak this to make sure the edges of your collar stand at the front or nicely horizontal.
+Puede ajustar esto para asegurarse de que los bordes de su cuello se sitúan en la parte delantera o bien horizontal.
 
 </Note>
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarstandcurve_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_collarstandcurve_sample.svg "Efecto de esta opción en el patrón")
