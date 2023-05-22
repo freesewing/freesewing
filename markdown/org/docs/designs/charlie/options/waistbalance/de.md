@@ -10,6 +10,6 @@ The side effect of shifting the side seam forward is that it's easy to get into 
 
 This option allows you to control this balance.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_waistbalance_sample.svg "Effect of this option on the pattern")
