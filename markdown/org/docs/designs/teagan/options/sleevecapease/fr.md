@@ -2,17 +2,17 @@
 title: "Sleevecap ease"
 ---
 
-Détermine la quantité de tête de manche facilement.
+Determines the amount of sleevecap ease.
 
 <Note>
 
-La quantité de facilité du tête de manche détermine comment les manches roulent à partir du crayon.
-Plus de facilité rend la boucle de manche dans la couture comme vous le voyez sur des vestes de costume. Moins de facilité rend la couche de manche plate.
+The amount of sleevecap ease determines how the sleeves rolls from the shouder.
+More ease makes the sleeve curl into the seam as you see on suit jackets. Less ease makes the sleeve lie flat.
 
-Pour les tissus légers ou les tricots, vous ne voulez pas de tête de manche facilement. Pour les tissus plus lourds, vous avez besoin de plus de facilité.
+For light fabric or knits, you want little to no sleevecap ease. For heavier woven fabrics, you need more sleevecap ease.
 
 </Note>
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](teagan_sleevecapease_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](teagan_sleevecapease_sample.svg "Effect of this option on the pattern")
