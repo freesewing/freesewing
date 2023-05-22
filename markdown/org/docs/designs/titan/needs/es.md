@@ -4,7 +4,7 @@ title: "Titan trouser block: What You Need"
 
 To make Titan, you will need the following:
 
-- Suministros básicos de costura
+- Basic sewing supplies
 - About 1.5 meters (1.7 yards) of suitable fabric ([see Titan Fabric options](/docs/patterns/titan/fabric))
 
 <Note>
