@@ -84,6 +84,6 @@ Those who are more confident can do this with the needle down on their machine b
 - Stuff the plushy through the opening in the legs.
 - Hand sew the opening closed.
 
-## Step 4: Enjoy!
+## Paso 4: ¡Disfrútalo!
 
 - That's it you are all done now go explore the depths of the oceans with your new Octoplushy!
