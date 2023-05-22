@@ -1,14 +1,14 @@
----
+- - -
 title: "Button placket style"
----
+- - -
 
-![Button placket style](buttonplacketstyle.svg)
+![Style de patte de boutonnage](buttonplacketstyle.svg)
 
-Do you want the button placket to be sewn in place (classic style), or folded back and held in place by the buttons (seamless style)?
+Voulez-vous que la patte de boutons soit cousue en place (style classique), ou bien pliée dos et maintenue en place par les boutons (style transparent)?
 
 <Tip>
 
-Seamless is less work, and it looks great.
+La patte de boutonnage à gorge cachée est plus facile, et a un très beau rendu.
 
 </Tip>
 
@@ -18,6 +18,6 @@ As seamless is only possible on a _cut-on_ placket, this option is ignored if yo
 
 </Note>
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_buttonplacketstyle_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_buttonplacketstyle_sample.svg "Effet de cette option sur le modèle")
