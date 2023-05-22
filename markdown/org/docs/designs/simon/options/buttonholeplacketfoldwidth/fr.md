@@ -2,19 +2,19 @@
 title: "Buttonhole placket fold width"
 ---
 
-![Largeur du pli de la patte de boutonnage (côté boutonnières)](buttonholeplacketfoldwidth.svg)
+![Buttonhole placket fold width](buttonholeplacketfoldwidth.svg)
 
-La largeur du pli sur une patte de boutonnage (côté boutonnière) classique.
+The width of the fold on a classic style buttonhole placket.
 
 <Note>
 
-Si vous avez un tissu à motif répétitif (rayures ou carreaux par exemple), vous pouvez régler le pli à la moitié de la largeur de votre motif.
-De cette façon, les raccords seront parfaits.
+If you have a fabric with a pattern (striped or checkers for example) you can set the fold to half the width of your repeating pattern.
+This way, your pattern will match perfectly.
 
-Ceci s'applique uniquement à une patte classique. N'en tenez donc pas compte si vous avez opté pour une patte de boutonnière sans couture.
+This only applies to a classic placket. So it will be ignored if you opted for a seamless buttonhole placket style.
 
 </Note>
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_buttonholeplacketfoldwidth_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_buttonholeplacketfoldwidth_sample.svg "Effect of this option on the pattern")
