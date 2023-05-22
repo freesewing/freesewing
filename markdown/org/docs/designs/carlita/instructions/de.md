@@ -93,3 +93,8 @@ Below are some notes from [@AnnekeCaramin](/users/AnnekeCaramin) who
 - Turn hem up, press and baste into place. Sew hem with an invisible stitch, then hand sew lining hem to coat.
 - Mark buttonholes on coat front and belt pieces. Make buttonholes and attach buttons.
 - Remove all basting still present, put on your coat, give yourself a pat on the back and then sleep for three weeks.
+
+
+#### Other notes
+
+- Sew an arrowhead tack in the triangular area above the back pleat. This area is marked on the pattern by dashed lines and a bnotch at the triangle top. The arrowhead tack reinforces the pleat seam.
