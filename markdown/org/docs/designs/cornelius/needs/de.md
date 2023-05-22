@@ -4,7 +4,7 @@ title: "Cornelius cycling breeches: What You Need"
 
 To make Cornelius, you will need the following:
 
-- Grundlegendes Nähzubehör
+- Basic sewing supplies
 - About 2 metres (2.2 yards) of a suitable fabric ([see Cornelius Fabric options](/docs/patterns/cornelius/fabric/))
 - About 0.5 metres (0.6 yards) of lining fabric ([see Cornelius Fabric options](/docs/patterns/cornelius/fabric/))
 - Interfacing for the waistband ([see Cornelius Fabric options](/docs/patterns/cornelius/fabric/))
