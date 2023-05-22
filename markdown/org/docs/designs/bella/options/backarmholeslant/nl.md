@@ -1,13 +1,13 @@
 ---
-title: "Schuin armsgat achter"
+title: "Back armhole slant"
 ---
 
 ***
 
-![Het effect van de schuine armsgat op het patroon](sample.png)
+![The effect of the back armhole slant option on the pattern](sample.png)
 
-Het **armsgat schuin in de rug** draait een beetje het armsgat rond het punt achter de toonhoogte.
+The **back armhole slant** slightly rotates the armhole around the back pitch point.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bella_backarmholeslant_sample.svg "Effect van deze optie op het patroon")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_backarmholeslant_sample.svg "Effect of this option on the pattern")
