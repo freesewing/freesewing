@@ -2,10 +2,10 @@
 title: "Sleeve bend"
 ---
 
-![Ärmelkrümmung](sleevebend.svg)
+![Sleeve bend](sleevebend.svg)
 
-Die Biegung am Ellenbogen Ihres Ärmels.
+The bend at the elbow of your sleeve.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](jaeger_sleevebend_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_sleevebend_sample.svg "Effect of this option on the pattern")
