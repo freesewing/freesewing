@@ -1,11 +1,11 @@
 ---
-title: "Courbe de l'emmanchure avant"
+title: "Front armhole curvature"
 ---
 
 ***
 
-Contrôle la profondeur du bas de l'emmanchure sur le devant
+Controls how deep the armhole is scooped out at the front bottom
 
-## Effet de cette option sur le modèle
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bella_frontarmholecurvature_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_frontarmholecurvature_sample.svg "Effect of this option on the pattern")
