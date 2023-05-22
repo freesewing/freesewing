@@ -1,11 +1,11 @@
 ---
-title: "Réduction de la poitrine (Bella)"
+title: "Full chest reduction (Bella)"
 ---
 
 ***
 
-Contrôle la réduction du thorax dans le bloc Bella sur lequel est basé Bee
+Controls the full chest reduction in the underlying Bella block Bee is based on
 
-## Effet de cette option sur le modèle
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bee_fullchesteasereduction_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_fullchesteasereduction_sample.svg "Effect of this option on the pattern")
