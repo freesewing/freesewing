@@ -1,11 +1,11 @@
----
+- - -
 title: "Front cutaway start"
----
+- - -
 
-![Front cutaway start](frontcutawaystart.svg)
+![Estrella de corte frontal](frontcutawaystart.svg)
 
-How far below the lower button does the front start to open.
+Cuánto tan bajo el botón inferior empieza la parte frontal a abrir.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_frontcutawaystart_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](jaeger_frontcutawaystart_sample.svg "Efecto de esta opción en el patrón")
