@@ -1,5 +1,5 @@
 ---
-title: "Hi the shark: Design Options"
+title: "Hi, der Hai: Schnittmusteroptionen"
 ---
 
 <PatternOptions pattern='hi' />
