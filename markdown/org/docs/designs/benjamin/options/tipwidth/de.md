@@ -1,19 +1,19 @@
----
+- - -
 title: "Tip width"
----
+- - -
 
-![Bow ties Wide and Narrow](tipwidth.svg)
+![Fliegen breit und schmal](tipwidth.svg)
 
-You can make BIG bow ties, or small ones. This option allows you to change the vertical size of the bows. Make them larger to be more flamboyant, or small for a more subdued style.
+Du kannst GROSSE Fliegen machen, oder kleine. Diese Option erlaubt es dir, die vertikale Größe der Fliege zu ändern. Mach sie größer, um flamboyanter zu sein, oder kleiner für einen etwas gedämpfteren Stil.
 
 <Note>
 
-###### Not used with the Square bow tie type
+##### Nicht verwendet beim Fliegen-Stil "Rechteck"
 
-This option is ignored with the Square bow tie option. Square bow ties are as wide as the knot width.
+Diese Option wird ignoriert beim rechteckigem Fliegen-Stil. Rechteckige Fliegen sind so breit wie die Knotenbreite.
 
 </Note>
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_tipwidth_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](benjamin_tipwidth_sample.svg "Effekt dieser Option auf das Schnittmuster")
