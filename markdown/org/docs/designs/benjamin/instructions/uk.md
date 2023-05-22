@@ -43,7 +43,7 @@ outside the scope of these instructions.
 
 </Note>
 
-### Припуск на шов
+### Seam allowance
 
 Since the bow tie is constructed with the right sides of the fabric against each other, the whole thing will have to be turned inside out. You probably want to consider using a small seam allowance of 6mm (¼ inch) to reduce the bulk.
 
