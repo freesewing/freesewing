@@ -14,7 +14,7 @@ Additionally, silk and silk imitation is slippery and tricky to work with. If th
 
 Just make sure you pick a fabric that does not stretch or lose its shape easily. You want your tie to look sharp, not saggy.
 
-## Tie Futter
+## Tie lining
 
 The lining of the tie is the bit that is used at the tip to cover up the back. If you are not sure what I mean, look at the back of the tip of an existing tie. See that rectangular patch of fabric you can see there? That is the tie lining.
 
@@ -24,7 +24,7 @@ Make sure your lining drapes at least as good as your tie fabric, so that it doe
 
 When in doubt, go for imitation silk. Do make sure to pick something that is a nice match, or contrast, with your tie fabric.
 
-## Bindungsschnittstelle
+## Tie interfacing
 
 Your tie interfacing is the skeleton of your tie. It is the part that sits in the middle and that you will only see while constructing your tie.
 
@@ -34,8 +34,8 @@ While you can get by with an alternative, like some wool fabric, or flannel, I t
 
 <Note>
 
-Solange du deine Krawatte von Scheren und Bondage Fanatikern fernhältst, wird deine Krawattenschnittstelle deine Krawatte mühelos überdauern. Schauen Sie also in Ihrem Kleiderschrank (oder in Ihrem Charity-Laden/Sparsamkeit) nach dieser alten Krawatte mit dem Fleck darauf. und zerstückeln um die Bindungsschnittstelle zu retten.
+As long as you keep your tie away from scissors and bondage fanatics, your tie interfacing will effortlessly outlast your tie. So look in your wardrobe (or the charity shop/thrift store) for that old tie with the stain on it, and take it apart to salvage the tie interfacing.
 
-Solange die Krawatte nicht größer oder länger ist als die, die Sie recyceln, Sie haben Ihre Krawatte Schnittstelle genau dort.
+As long as the tie you want to make is not wider or longer than the one you are recycling, you have your tie interfacing right there.
 
 </Note>
