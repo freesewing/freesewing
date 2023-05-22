@@ -1,11 +1,11 @@
----
-title: "Lapel reduction"
----
+- - -
+titre : "Réduction de revers"
+- - -
 
-Controls how much the lapel tip goes inwards.
+Contrôle combien la pointe de la patte va à l'intérieur.
 
-It is common to have the edge of the lapels not be entirely straight, but rather turn inwards a bit towards the top of the lapels. This option controls by how much it does that.
+It is common to have the edge of the lapels not be entirely straight, but rather turn inwards a bit towards the top of the lapels. Cette option contrôle dans quelle mesure elle fait cela.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_lapelreduction_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlita_lapelreduction_sample.svg "Effet de cette option sur le modèle")
