@@ -2,20 +2,20 @@
 title: "Bella body block: What You Need"
 ---
 
-Para hacer Bella, necesitarás lo siguiente:
+To make Bella, you will need the following:
 
-- Suministros básicos de costura
+- Basic sewing supplies
 - About 0.5 metres (0.6 yards) of a suitable fabric ([see Bella Fabric options](/docs/patterns/bella/fabric/))
 
 This list is for a default Bella Block. If you have/are making changes to the block you may need to get additional items such as closures, binding etc.
 
 <Note>
 
-###### Bella es un bloque, no un patrón
+###### Bella is a block, not a pattern
 
-Un bloque es una forma básica en la que se basan otros patrones.
-A veces también se llaman trampas, aunque los puristas argumentarán que un bloque y una inclinación son cosas diferentes.
+A block is a basic shape on which other patterns are based.
+They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
 
-Los bloques normalmente no se hacen as-is sino que sirven como base para otros patrones.
+Blocks are typically not made as-is but rather serve as a basis for other patterns.
 
 </Note>
