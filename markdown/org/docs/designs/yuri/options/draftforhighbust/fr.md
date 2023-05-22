@@ -1,8 +1,8 @@
 ---
-title: Draft for high bust
+title: Dessiner pour la poitrine
 ---
 
-Draft the pattern for the high bust measurement (if available) rather than the (full) chest. Il en résulte un vêtement plus ajusté pour les personnes ayant une poitrine.
+Dessiner le patron pour la mesure de la poitrine (si disponible) plutôt que pour le torse (entier). Il en résulte un vêtement plus ajusté pour les personnes ayant une poitrine.
 
 ## Effet de cette option sur le modèle
 
