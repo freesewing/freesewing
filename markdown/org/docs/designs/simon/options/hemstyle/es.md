@@ -2,14 +2,14 @@
 title: "Hem style"
 ---
 
-![Estilo del dobladillo](hemstyle.svg)
+![Hem style](hemstyle.svg)
 
-¿Qué estilo de la línea de hem quieres?
+What style of hem line do you want?
 
 - Straight
-- Béisbol
-- Cortado
+- Baseball
+- Slashed
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_hemstyle_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_hemstyle_sample.svg "Effect of this option on the pattern")
