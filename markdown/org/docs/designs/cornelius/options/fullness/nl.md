@@ -1,11 +1,11 @@
 ---
-title: "Volle"
+title: "Fullness"
 ---
 
 ***
 
-Beïnvloedt het gemak op de benen voor een losser stijl.
+Influences the ease on the legs for a looser style.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](cornelius_fullness_sample.svg "Effect van deze optie op het patroon")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](cornelius_fullness_sample.svg "Effect of this option on the pattern")
