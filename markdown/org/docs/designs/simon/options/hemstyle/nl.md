@@ -2,14 +2,14 @@
 title: "Hem style"
 ---
 
-![Vorm zoom](hemstyle.svg)
+![Hem style](hemstyle.svg)
 
-Wat voor zoom wil je?
+What style of hem line do you want?
 
-- Recht
+- Straight
 - Baseball
-- Gehashd
+- Slashed
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_hemstyle_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_hemstyle_sample.svg "Effect of this option on the pattern")
