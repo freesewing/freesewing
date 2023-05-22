@@ -2,10 +2,10 @@
 title: "Chest pocket placement"
 ---
 
-![Plaatsting borstzak](chestpocketplacement.svg)
+![Chest pocket placement](chestpocketplacement.svg)
 
-Plaats van de borstzak in verhouding met een kwart van je borstomtrek. Een hoger nummer schuift de zak naar opzij.
+Location of the chest pocket as a proportion a quarter of your chest circumference. Higher numbers move it more to the side.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](jaeger_chestpocketplacement_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_chestpocketplacement_sample.svg "Effect of this option on the pattern")
