@@ -4,18 +4,18 @@ title: "Bent body Block: What You Need"
 
 To make Bent, you will need the following:
 
-- Basic sewing supplies
+- Fourniture de base pour la couture
 - About 1.5 - 2 metres (1.7 - 2.2 yards) of a suitable fabric ([see Bent Fabric options](/docs/patterns/bent/fabric/))
 
-This list is for a default Bent Block. If you have/are making changes to the block you may need to get additional items such as closures, binding etc.
+This list is for a default Bent Block. Si vous avez apporté des modifications au bloc, vous devrez peut-être vous procurer des éléments supplémentaires tels que des fermetures, des reliures, etc.
 
 <Note>
 
-###### Bent is a block, not a pattern
+###### Bent est un bloc, pas un motif
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Un bloc est une forme de base sur laquelle se basent d'autres motifs.
+Ils sont parfois aussi appelés patrons de base, bien que les puristes soutiennent qu'un bloc et un patron de base sont des choses différentes.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Les patrons de base ne sont donc généralement pas utilisés tels quels, mais plutôt pour élaborer d'autres modèles.
 
 </Note>
