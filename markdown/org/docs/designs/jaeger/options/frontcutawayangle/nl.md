@@ -2,10 +2,10 @@
 title: "Front cutaway angle"
 ---
 
-![Hoek uitsnijding vooraan](frontcutawayangle.svg)
+![Front cutaway angle](frontcutawayangle.svg)
 
-De hoek waaronder het voorpand opent onder de laagste knoop.
+The angle by which the front opens up below the lower button.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](jaeger_frontcutawayangle_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_frontcutawayangle_sample.svg "Effect of this option on the pattern")
