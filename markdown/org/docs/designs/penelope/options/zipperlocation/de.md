@@ -1,9 +1,9 @@
----
+- - -
 title: "Zipper location"
----
+- - -
 
-Controls the location of the zipper. Either at the back seam, or at the side seam
+Steuert den Standort des Reißverschlusses. Entweder an der RückenNaht oder an der Seitennaht
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_zipperlocation_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](penelope_zipperlocation_sample.svg "Effekt dieser Variable auf das Schnittmuster")
