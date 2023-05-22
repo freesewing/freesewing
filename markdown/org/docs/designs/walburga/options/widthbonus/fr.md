@@ -1,8 +1,8 @@
----
+- - -
 title: "Width bonus"
----
+- - -
 
-Allows variation of the width of the garment
+Permet de varier la largeur du vêtement
 
 ## Effet de cette option sur le motif
 
