@@ -1,11 +1,11 @@
----
-title: "Hips ease"
----
+- - -
+titre : "Aisance pour les hanches"
+- - -
 
-![Hips ease](hipsease.svg)
+![Aisance des hanches](hipsease.svg)
 
-The amount of ease at your hips.
+La marge d'aisance aux hanches.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_hipsease_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_hipsease_sample.svg "Effet de cette option sur le modèle")
