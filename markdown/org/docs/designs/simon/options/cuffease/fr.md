@@ -1,21 +1,21 @@
----
-title: "Cuff ease"
----
+- - -
+titre: "aisance de manche"
+- - -
 
-![Cuff ease](cuffease.svg)
+![Aisance de poignet](cuffease.svg)
 
-Determines how much the cuff is larger than your wrist.
+Détermine la quantité de manche plus grande que votre poignet.
 
-Change this option to give yourself more or less room at the wrist.
+Changez cette option pour vous donner plus ou moins de place au poignet.
 
 <Note>
 
-You might want more if you want the shirt cuff to fit over a bulky watch. Less room might be better if you want to wear the shirt under an overgarment like a sweater.
+Vous en voudrez peut-être plus si vous voulez que le manchon tienne sur une montre encombrante. Moins de place pourrait être préférable si vous voulez porter la chemise sous un vêtement comme un chandail.
 
-Those wanting to wear their shirt under a sweater should also have a look at the barrelcuff narrow button option.
+Ceux qui veulent porter leur chemise sous un chandail devraient également jeter un coup d'œil à l'option bouton étroit.
 
 </Note>
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_cuffease_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_cuffease_sample.svg "Effet de cette option sur le modèle")
