@@ -1,11 +1,11 @@
----
+- - -
 title: "Chest pocket width"
----
+- - -
 
-![Chest pocket width](chestpocketwidth.svg)
+![Ancho bolsillo del pecho](chestpocketwidth.svg)
 
-The width of the chest pocket, as a factor of your chest circumference.
+La anchura de la bolsa de pecho, como factor de la circunstancia del pecho.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_chestpocketwidth_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](jaeger_chestpocketwidth_sample.svg "Efecto de esta opción en el patrón")
