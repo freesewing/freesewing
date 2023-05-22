@@ -1,13 +1,13 @@
 ---
-title: "Back armhole pitch depth"
+title: "Profondeur du point de pivot de l'emmanchure dos"
 ---
 
 ***
 
-![The effect of the back armhole pitch depth option on the pattern](sample.png)
+![L'effet de l'option de profondeur de la hauteur de l'armure arrière sur le motif](sample.png)
 
-The **back armhole pitch depth** option controls the vertical position of the armhole pitch point at the back.
+L'option **de profondeur de pas d'armure** contrôle la position verticale du point de pas d'arsenal à l'arrière.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_backarmholepitchdepth_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bella_backarmholepitchdepth_sample.svg "Effet de cette option sur le motif")
