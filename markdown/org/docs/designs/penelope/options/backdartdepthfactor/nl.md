@@ -2,8 +2,8 @@
 title: "Back dart depth factor"
 ---
 
-Hoe ver de neep achteraan van de tailleband gaat. Dit is een factor van de Natuurlijke taille to Seat-maat.
+How far down does the back dart go from the waistband. This is a factor of the Natural Waist To Seat measurement.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](penelope_backdartdepthfactor_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_backdartdepthfactor_sample.svg "Effect of this option on the pattern")
