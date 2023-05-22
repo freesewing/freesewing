@@ -18,11 +18,11 @@ If you do not have someone to help pin you into Breanna then you may find it eas
 
 <Note>
 
-###### Breanna is een blok, geen patroon
+###### Breanna is a block, not a pattern
 
-Een blok is een basisvorm waarop andere patronen zijn gebaseerd.
-Dit wordt soms ook een paspatroon genoemd, alhoewel puristen zeggen dat dit twee verschillende dingen zijn.
+A block is a basic shape on which other patterns are based.
+They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
 
-Blokken worden meestal niet gemaakt zoals is, maar dienen als basis voor andere patronen.
+Blocks are typically not made as-is but rather serve as a basis for other patterns.
 
 </Note>
