@@ -10,6 +10,6 @@ Since the shape and height of the sleevecap are more important than the width, w
 
 To avoid the sleeve getting too narrow, we only adapt a portion of the sleeve width. This option allows you to control how much of the sleeve width is guaranteed. Increasing this option will allow us less of the width to play with to fit the sleeve. This way, the resulting sleeve will be closer to the theoretical sleeve width, and we will instead modify (more of) the sleevecap height to fit the sleeve.
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_sleevewidthguarantee_sample.svg "Effect of this option on the pattern")
