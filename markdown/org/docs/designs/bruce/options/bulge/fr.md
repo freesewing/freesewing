@@ -1,15 +1,15 @@
 ---
-title: "Poche pénienne"
+title: "Bulge"
 ---
 
-![L'option poche pénienne pour Bruce](./bulge.svg)
+![The bulge option on Bruce](./bulge.svg)
 
-Quel est l'espace dont vous avez besoin au niveau de la poche frontale ?
+How much room do you want in the front pouch?
 
-Cette option augmentera la pince avant, créant ainsi plus de place à l'avant.
+This option will increase the front dart, thereby creating more room in the front.
 
-> Si c'est de l'aisance verticale que vous voulez, voir l'option **hauteur**
+> If it's vertical room you're looking for, that's what the **rise** option does
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bruce_bulge_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bruce_bulge_sample.svg "Effect of this option on the pattern")
