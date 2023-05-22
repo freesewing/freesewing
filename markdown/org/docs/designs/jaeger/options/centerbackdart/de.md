@@ -1,11 +1,11 @@
----
+- - -
 title: "Center back dart"
----
+- - -
 
-![Center back dart](centerbackdart.svg)
+![Abnäher in der hinteren Mitte](centerbackdart.svg)
 
-The reduction at the center back from shoulders to neck, which accomodates for a curved upper back.
+Die Reduktion im Zentrum von Schultern auf Hals, die für einen geschwungenen oberen Rücken aufnehmen.
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_centerbackdart_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](jaeger_centerbackdart_sample.svg "Effekt dieser Option auf das Schnittmuster")
