@@ -1,11 +1,11 @@
----
+- - -
 title: "Hips ease"
----
+- - -
 
-![Hips ease](hipsease.svg)
+![Holgura de cadera](hipsease.svg)
 
-How much room do you want at the hips?
+¿Cuánto espacio quieres en la cadera?
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_hipsease_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_hipsease_sample.svg "Efecto de esta opción en el patrón")
