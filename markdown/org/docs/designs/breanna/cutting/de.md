@@ -4,9 +4,9 @@ title: "Breanna body block: Cutting Instructions"
 
 **Main fabric**
 
-- Schneide **1 Vorderteil** im Stoffbruch.
-- Schneide **2 Rückteile**.
-- Schneide **2 Ärmel** mit _guten Seiten zusammen_.
+- Cut **1 Front** part on the fold.
+- Cut **2 Back** parts.
+- Cut **2 Sleeve** parts, _good sides together_.
 
 These cutting instructions are just for the default Breanna block. Adjust your cutting accordingly if you have/are making changes to the block.
 
@@ -18,11 +18,11 @@ If you do not have someone to help pin you into Breanna then you may find it eas
 
 <Note>
 
-###### Breanna ist ein Block, kein Muster
+###### Breanna is a block, not a pattern
 
-Ein Block ist eine Grundform, auf der andere Muster basieren.
-Sie werden manchmal auch als Schläger bezeichnet, obwohl Puristen argumentieren, dass ein Block und ein Schläger verschiedene Dinge sind.
+A block is a basic shape on which other patterns are based.
+They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
 
-Grundschnitte werden in der Regel nicht so gemacht, wie sie sind, sondern dienen als Grundlage für andere Schnittmuster.
+Blocks are typically not made as-is but rather serve as a basis for other patterns.
 
 </Note>
