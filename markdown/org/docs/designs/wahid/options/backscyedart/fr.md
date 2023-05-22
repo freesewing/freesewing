@@ -1,22 +1,22 @@
 ---
-title:"Pince de carrure dos"
+title: "Back scye dart"
 ---
 
-![Pince de carrure dos](backscyedart.svg)
+![Back scye dart](backscyedart.svg)
 
-Ce patron est prévu avec une pince de 0.5 cm (pince d'emmanchure) par défaut sur le dos. Vous pouvez augmenter ou diminuer la pince pour modifier l'emmanchure.
+This pattern comes with a default 0.5 cm scye dart (think armhole dart) on the back. You can increase or decrease the dart to influence the armhole.
 
 <Note>
 
-###### Pour quoi faire ?
+###### What's the point?
 
-Le but de cette pince est de s'assurer que l'emmanchure se pose à plat contre votre corps, plutôt que de la bailler.
-Etant donné qu’il n’y a pas de manche, une emmanchure qui baille c'est particulièrement disgracieux.
+The point of this dart is to make sure the armhole lies flat against your body, rather than gape.
+Given that there is no sleeve, a gaping armhole is particularly unsightly.
 
-Bien que cette pince soit utilisée pour façonner le patron, vous n'avez pas à coudre la pince parce qu'elle est incorporée dans la ligne de couture des épaules.
+While this dart is used to shape the pattern, you don't have to sew the dart because it's incorporated in the shoulder seam line.
 
 </Note>
 
-## Effet de cette option sur le patron
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_backscyedart_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_backscyedart_sample.svg "Effect of this option on the pattern")
