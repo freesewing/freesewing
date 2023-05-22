@@ -1,11 +1,11 @@
----
+- - -
 title: "Chest shaping"
----
+- - -
 
-![Chest shaping](chestshaping.svg)
+![Brustformung](chestshaping.svg)
 
-The vertical amount to slash & spread the upper front panel to shape the chest, as a factor of your chest circumference.
+Der vertikale Betrag für den Schrägstrich & verteilt die obere Frontplatte, um die Truhe zu formen, als Faktor deines Brustumfangs.
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_chestshaping_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](jaeger_chestshaping_sample.svg "Effekt dieser Option auf das Schnittmuster")
