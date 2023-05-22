@@ -1,20 +1,20 @@
----
+- - -
 title: "Wahid waistcoat: Cutting Instructions"
----
+- - -
 
-- **Main fabric**
-  - Cut **2 front(s)** with _good sides together_
-  - Cut **2 back(s)** with _good sides together_
-  - Cut **2 front facing(s)** with _good sides together_
-  - Cut **2 pocket welt(s)** with _good sides together_
-  - Cut **2 pocket facing(s)** with _good sides together_
-- **Lining fabric**
-  - Cut **2 front lining(s)** with _good sides together_
-  - Cut **2 back(s)** with _good sides together_
-  - Cut **2 pocket bag(s)** with _good sides together_
-- **Interfacing**
-  - Cut **2 front(s)** with _good sides together_
-  - Cut **2 pocket interfacing(s)**
+- **Tela principal**
+  - Corta **2 frente(s)** con _lados buenos juntos_
+  - Corta **2 atrás(s)** con _lados buenos juntos_
+  - Corta **2 frontal(es)** con _lados buenos juntos_
+  - Corta **2 soldado(s) de bolsillo** con _lados buenos juntos_
+  - Corta **2 cara(s) de bolsillo** con _lados buenos juntos_
+- **Tela fina**
+  - Corta **2 frontales** con _lados buenos juntos_
+  - Corta **2 atrás(s)** con _lados buenos juntos_
+  - Corta **2 bolsas de bolsillo** con _lados buenos juntos_
+- **Interfaz**
+  - Corta **2 frente(s)** con _lados buenos juntos_
+  - Corta **2 interfaz(es) de bolsillo**
 
 <Warning>
 
