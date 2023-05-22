@@ -1,13 +1,13 @@
 ---
-title: "Front-Armloch-Tiefe"
+title: "Front armhole pitch depth"
 ---
 
 ***
 
-![Der Effekt der Pitch-Tiefe-Option auf das Schnittmuster](sample.png)
+![The effect of the front armhole pitch depth option on the pattern](sample.png)
 
-Die Option **Vorderarmlochtiefe** steuert die vertikale Position des Armlochpunktes vorne.
+The **front armhole pitch depth** option controls the vertical position of the armhole pitch point at the front.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bella_frontarmholepitchdepth_sample.svg "Effekt dieser Option auf das Schnittmuster")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_frontarmholepitchdepth_sample.svg "Effect of this option on the pattern")
