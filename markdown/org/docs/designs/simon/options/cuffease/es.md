@@ -2,20 +2,20 @@
 title: "Cuff ease"
 ---
 
-![Holgura de muñeca](cuffease.svg)
+![Cuff ease](cuffease.svg)
 
-Determina cuánto más grande es el corte que tu muñeca.
+Determines how much the cuff is larger than your wrist.
 
-Cambie esta opción para darse más o menos espacio en la muñeca.
+Change this option to give yourself more or less room at the wrist.
 
 <Note>
 
-Tal vez quieras más si quieres que el corte de la camisa se ajuste a un reloj masivo. The room was very small and the bed was very small.
+You might want more if you want the shirt cuff to fit over a bulky watch. Less room might be better if you want to wear the shirt under an overgarment like a sweater.
 
-Aquellos que quieran llevar su camisa bajo un jersey también deberían echar un vistazo a la opción de botón estrecho de barril.
+Those wanting to wear their shirt under a sweater should also have a look at the barrelcuff narrow button option.
 
 </Note>
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_cuffease_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_cuffease_sample.svg "Effect of this option on the pattern")
