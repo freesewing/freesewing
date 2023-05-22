@@ -2,8 +2,8 @@
 title: "Start of the crotch seam curve"
 ---
 
-Bepaalt waar de kruisnaad begint te draaien, wat de pasvorm aan het kruisje beïnvloedt.
+Controls where the crotch seam starts to curve, which influences the fit at your crotch.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](titan_crotchseamcurvestart_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](titan_crotchseamcurvestart_sample.svg "Effect of this option on the pattern")
