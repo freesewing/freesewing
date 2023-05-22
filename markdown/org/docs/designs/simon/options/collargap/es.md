@@ -2,16 +2,16 @@
 title: "Collar gap"
 ---
 
-![Espaciado del cuello](collargap.svg)
+![Collar gap](collargap.svg)
 
-Distancia el cuello se sienta al cerrar.
+Distance the collar sits apart when closed.
 
 <Note>
 
-Esto es en realidad una elección de estilo, pero un hueco de cuello más ancho (junto con el ángulo de cuello) puede dar lugar a una corbata más ancha (nudo).
+This is really mostly a style choice, but a wider collar gap (together with the collar angle) can accomodate a wider tie (knot).
 
 </Note>
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_collargap_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collargap_sample.svg "Effect of this option on the pattern")
