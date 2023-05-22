@@ -4,17 +4,17 @@ title: "Bruce boxer briefs: Cutting Instructions"
 
 Bruce consists of a back, and two sides, insets and fronts.
 
-- **Tela principal**
-  - Corta **1 trasero** al lomo
-  - Cortar **2 frentes**
-  - Corta **2 insets**
-  - Cortar **2 lados**
+- **Main fabric**
+  - Cut **1 back** on the fold
+  - Cut **2 fronts**
+  - Cut **2 insets**
+  - Cut **2 sides**
 
 <Warning>
 
-###### Cuerdas
+###### Caveats
 
-- **atrás**: Permiso extra para la pierna
-- **frontal**: Corta esto **dos veces**
+- **back**: Extra hem allowance at the leg
+- **front**: Cut this **twice**
 
 </Warning>
