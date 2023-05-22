@@ -1,13 +1,13 @@
 ---
-title: "Büstendart-Kurve"
+title: "Bust dart curve"
 ---
 
 ***
 
-![Der Effekt der Bust-Dart-Kurve auf das Schnittmuster](sample.png)
+![The effect of the bust dart curve option on the pattern](sample.png)
 
-Die **Bust-Dart-Kurve** steuert die Krümmung des Bust-Darts. Von gerade bis leicht gebogen.
+The **bust dart curve** option controls the curvature of the bust dart. From straight to slightly curved.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bella_bustdartcurve_sample.svg "Effekt dieser Option auf das Schnittmuster")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_bustdartcurve_sample.svg "Effect of this option on the pattern")
