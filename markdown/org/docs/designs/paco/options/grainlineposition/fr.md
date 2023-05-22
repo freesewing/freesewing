@@ -2,10 +2,10 @@
 title: "Grainline position"
 ---
 
-Contrôle la position de la ligne de grain.
+Controls the position of the grainline.
 
-Vous pouvez l'utiliser pour déplacer la ligne de grainline vers l'intérieur ou vers l'extérieur si cela fonctionne mieux pour votre corps.
+You can use this to shift the grainline inward or outward if that works better for your body.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](paco_grainlineposition_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](paco_grainlineposition_sample.svg "Effect of this option on the pattern")
