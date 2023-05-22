@@ -1,19 +1,19 @@
 ---
-title: "Largeur des pointes"
+title: "Tip width"
 ---
 
-![Nœuds papillons Larges et Fins](tipwidth.svg)
+![Bow ties Wide and Narrow](tipwidth.svg)
 
-Vous pouvez faire des GROS ou des petits nœuds papillons. Cette option vous permet de changer la taille verticale des extrémités du nœud. Faites-les plus grand pour être plus flamboyant, ou petit pour un style plus discret.
+You can make BIG bow ties, or small ones. This option allows you to change the vertical size of the bows. Make them larger to be more flamboyant, or small for a more subdued style.
 
 <Note>
 
-###### Non utilisé avec le type de nœud carré
+###### Not used with the Square bow tie type
 
-Cette option est ignorée avec l'option de nœud carré. Les nœuds papillon carrés sont aussi larges que la largeur du nœud.
+This option is ignored with the Square bow tie option. Square bow ties are as wide as the knot width.
 
 </Note>
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](benjamin_tipwidth_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_tipwidth_sample.svg "Effect of this option on the pattern")
