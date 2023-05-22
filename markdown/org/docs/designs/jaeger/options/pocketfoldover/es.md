@@ -1,9 +1,9 @@
----
+- - -
 title: "Pocket fold-over"
----
+- - -
 
-Controls the amount of main fabric that's folded over at the top of the path pockets.
+Controla la cantidad de tela principal que se pliega en la parte superior de los bolsillos de ruta.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_pocketfoldover_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](jaeger_pocketfoldover_sample.svg "Efecto de esta opción en el patrón")
