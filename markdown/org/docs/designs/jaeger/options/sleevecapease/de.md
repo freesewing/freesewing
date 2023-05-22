@@ -1,11 +1,11 @@
----
+- - -
 title: "Sleevecap ease"
----
+- - -
 
-![Sleevecap ease](sleevecapease.svg)
+![Armkugel Zugabe](sleevecapease.svg)
 
-The ease on the sleevecap.
+Die Leichtigkeit auf der Ärmel.
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_sleevecapease_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](jaeger_sleevecapease_sample.svg "Effekt dieser Option auf das Schnittmuster")
