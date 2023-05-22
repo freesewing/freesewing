@@ -1,11 +1,11 @@
----
+- - -
 title: "Biceps ease"
----
+- - -
 
-![The biceps ease option on Diana](./bicepsease.svg)
+![La opción de holgura de sisa en Diana](./bicepsease.svg)
 
-This option controls the fit at your upper arm, and influences the depth of the armhole.
+Esta opción controla el ajuste en el brazo superior e influye en la profundidad de la sisa.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_bicepsease_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](diana_bicepsease_sample.svg "Efecto de esta opción en el patrón")
