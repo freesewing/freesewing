@@ -1,5 +1,5 @@
 ---
-title: "Hi the shark: Required Measurements"
+title: "Hi, der Hai: Erforderliche Maße"
 ---
 
 <Note>
