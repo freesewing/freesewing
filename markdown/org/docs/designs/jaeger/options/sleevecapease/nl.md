@@ -2,10 +2,10 @@
 title: "Sleevecap ease"
 ---
 
-![Extra ruimte mouwkop](sleevecapease.svg)
+![Sleevecap ease](sleevecapease.svg)
 
-De extra stof in de mouwkop.
+The ease on the sleevecap.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](jaeger_sleevecapease_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_sleevecapease_sample.svg "Effect of this option on the pattern")
