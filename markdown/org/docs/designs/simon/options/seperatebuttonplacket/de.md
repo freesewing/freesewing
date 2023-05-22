@@ -2,10 +2,10 @@
 title: "Seperate button placket"
 ---
 
-![Separate Knopfleiste](seperatebuttonplacket.svg)
+![Seperate button placket](seperatebuttonplacket.svg)
 
-Gibt an, ob der Schaltflächen-Platzhalter ein separates Musterteil sein soll.
+Whether or not you want the button placket to be a seperate pattern part.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_seperatebuttonplacket_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_seperatebuttonplacket_sample.svg "Effect of this option on the pattern")
