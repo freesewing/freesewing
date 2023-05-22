@@ -1,11 +1,11 @@
----
-title: "Waistband width"
----
+- - -
+titre : "Largeur de la ceinture"
+- - -
 
-![Waistband width](waistbandwidth.svg)
+![Largeur de ceinture](waistbandwidth.svg)
 
-The width of the waistband you want on the trousers.
+La largeur de la ceinture que vous voulez sur le pantalon.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](theo_waistbandwidth_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](theo_waistbandwidth_sample.svg "Effet de cette option sur le modèle")
