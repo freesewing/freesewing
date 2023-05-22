@@ -2,8 +2,8 @@
 title: "Knee ease"
 ---
 
-Bepaalt de hoeveelheid overwijdte aan je knies, wat ook de breedte van de broekspijpen bepaalt.
+Controls the amount of ease at your knees, which also determines the width of the trouser legs.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](titan_kneeease_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](titan_kneeease_sample.svg "Effect of this option on the pattern")
