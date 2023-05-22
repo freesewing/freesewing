@@ -1,19 +1,19 @@
 ---
-title: "Largeur du nœud"
+title: "Knot width"
 ---
 
-![Largeur du nœud](knotwidth.svg)
+![Knot width](knotwidth.svg)
 
-La largeur du nœud est la largeur au milieu du nœud papillon, où vous faites le nœud.
+The knot width is the width in the middle of the bow tie, where you make the knot.
 
-La largeur de votre nœud papillon influencera la taille du nœud. Une grande largeur conviendra mieux à un nœud papillon avec des bouts plus larges.
+How wide your bow tie is in the middle will influence the tie knot. Bigger works better with larger bow ties.
 
 <Note>
 
-Avec le type carré de nœud papillon, cette valeur déterminera également la largeur des pointes
+With the Square type bow tie, this value also dictates the width of the tips
 
 </Note>
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](benjamin_knotwidth_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_knotwidth_sample.svg "Effect of this option on the pattern")
