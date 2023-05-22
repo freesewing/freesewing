@@ -2,8 +2,8 @@
 title: "Elastic stretch"
 ---
 
-Pas deze optie aan voor meer of minder elastische.
+Adjust this option for more or less stretchy elastic.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](ursula_elasticstretch_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](ursula_elasticstretch_sample.svg "Effect of this option on the pattern")
