@@ -1,11 +1,11 @@
 ---
-titre : "Réduction de la pente d'épaule"
+title: "Shoulder slope reduction"
 ---
 
-![Réduction de la pente d'épaule](shoulderslopereduction.svg)
+![Shoulder slope reduction](shoulderslopereduction.svg)
 
-La quantité par laquelle la pente des épaules est réduite pour permettre un ajustement aux épaules.
+The amount by which the shoulder slope is reduced to allow for shoulder padding.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_shoulderslopereduction_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_shoulderslopereduction_sample.svg "Effect of this option on the pattern")
