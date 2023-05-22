@@ -2,20 +2,20 @@
 title: "Sleeve length bonus"
 ---
 
-![Bonus mouwlengte](sleevelengthbonus.svg)
+![Sleeve length bonus](sleevelengthbonus.svg)
 
-Hoeveel langer de mouw moet worden dan de mouw van de basisvorm.
+The amount to extend the sleeve beyond the length of the sleeve in the base block.
 
 <Note>
 
-###### Dit mag niet 0 zijn
+###### This is not supposed to be zero
 
-Als je dit op nul zet, wordt de mouw dezelfde lengte als de basis lengte van het Bent blok,
-die zeker te kort is voor een jas.
-Let op de standaardwaarde en gebruik dat als basis om de mouw korter of langer te maken.
+Setting this to zero will make the sleeve length the same as the base length of the Bent block,
+which is certainly too short for a coat.
+Please take note of the default value and use that as a basis to lengthen or shorten the sleeve.
 
 </Note>
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](jaeger_sleevelengthbonus_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_sleevelengthbonus_sample.svg "Effect of this option on the pattern")
