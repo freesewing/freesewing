@@ -2,10 +2,10 @@
 title: "Shoulder seam length"
 ---
 
-![Die Option der Schulternahtlänge auf Diana](./shoulderseamlength.svg)
+![The shoulder seam length option on Diana](./shoulderseamlength.svg)
 
-Diese Option legt fest, wie weit die Halsöffnung ist, indem sie die Länge der Schulternaht kontrolliert.
+This option determines how wide the neck opening is, by controllign the length of the shoulder seam.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](diana_shoulderseamlength_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_shoulderseamlength_sample.svg "Effect of this option on the pattern")
