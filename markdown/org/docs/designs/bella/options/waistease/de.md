@@ -1,13 +1,13 @@
 ---
-title: "Waist ease"
+title: "Taillenzugabe"
 ---
 
 ***
 
-![The effect of the waist ease option on the pattern](sample.png)
+![Der Effekt der Taillenerleichterungsoption auf das Schnittmuster](sample.png)
 
-The **waist ease** option controls the amount of ease at your waist.
+Die Option **Taille Leichtigkeit** steuert die Menge der Leichtigkeit in deiner Taille.
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_waistease_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bella_waistease_sample.svg "Effekt dieser Option auf das Schnittmuster")
