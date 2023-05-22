@@ -1,13 +1,13 @@
 ---
-titre : "Longueur supplémentaire"
+title: "Length bonus"
 ---
 
 ![The length bonus option on Brian](./lengthbonus.svg)
 
-Cette option permet de contrôler jusqu'à quel point le bloc se prolonge sous vos hanches.
+This option controls how far the block extend below your hips.
 
-> Notez que par défaut, ce bloc est aussi long que ta ligne de hanche, qui est presque certainement trop courte pour le vêtement final.
+> Note that by default this block is as long as your hip line, which is almost certainly too short for the final garment.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_lengthbonus_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_lengthbonus_sample.svg "Effect of this option on the pattern")
