@@ -1,13 +1,13 @@
 ---
-title: "Curva darda de busto"
+title: "Bust dart curve"
 ---
 
 ***
 
-![El efecto de la opción de la curva de polvo sobre el patrón](sample.png)
+![The effect of the bust dart curve option on the pattern](sample.png)
 
-La opción **curva de polvo** controla la curva del polvo De recto a ligeramente curvado.
+The **bust dart curve** option controls the curvature of the bust dart. From straight to slightly curved.
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bella_bustdartcurve_sample.svg "Efecto de esta opción en el patrón")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_bustdartcurve_sample.svg "Effect of this option on the pattern")
