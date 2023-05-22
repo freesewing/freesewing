@@ -10,7 +10,7 @@ Certain parts have to be drafted off of the existing parts. How to draft these a
 
 ### Materials
 
-- **Tissu principal**
+- **Main fabric**
   - Cut **2 Front** parts
   - Cut **2 Side** parts
   - Cut **2 Front facing** parts
