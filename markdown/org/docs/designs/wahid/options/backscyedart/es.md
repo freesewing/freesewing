@@ -1,22 +1,24 @@
----
+- - -
 title: "Back scye dart"
----
+- - -
 
-![Back scye dart](backscyedart.svg)
+![Pinza posterior de la sisa](backscyedart.svg)
 
-This pattern comes with a default 0.5 cm scye dart (think armhole dart) on the back. You can increase or decrease the dart to influence the armhole.
+Este patrón viene con un dart de guinda por defecto de 0,5 cm (piense en la oscuridad del orificio) en la parte trasera. Puedes aumentar o disminuir el dardo para influir en el agujero de armadura.
 
 <Note>
+
+###### ¿Cuál es el punto?
 
 ###### What's the point?
 
 The point of this dart is to make sure the armhole lies flat against your body, rather than gape.
-Given that there is no sleeve, a gaping armhole is particularly unsightly.
+Dado que no hay manga, un enorme agujero de brazo es particularmente desconcertante.
 
-While this dart is used to shape the pattern, you don't have to sew the dart because it's incorporated in the shoulder seam line.
+Mientras que este dardo se utiliza para dar forma al patrón, no es necesario coser el dardo, ya que está incorporado en la línea de costura de hombro.
 
 </Note>
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_backscyedart_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](wahid_backscyedart_sample.svg "Efecto de esta opción en el patrón")
