@@ -2,10 +2,10 @@
 title: "Front cutaway angle"
 ---
 
-![Angle de coupe avant](frontcutawayangle.svg)
+![Front cutaway angle](frontcutawayangle.svg)
 
-L'angle par lequel l'avant s'ouvre sous le bouton inférieur.
+The angle by which the front opens up below the lower button.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_frontcutawayangle_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_frontcutawayangle_sample.svg "Effect of this option on the pattern")
