@@ -1,13 +1,13 @@
 ---
-title: "Rückseitendart-Höhe"
+title: "Back dart height"
 ---
 
 ***
 
-![Der Effekt der Dart Höhe des Rückens auf das Schnittmuster](sample.png)
+![The effect of the back dart height option on the pattern](sample.png)
 
 The **back dart height** option controls the height (length if you will) of the back dart.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bella_backdartheight_sample.svg "Effekt dieser Option auf das Schnittmuster")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_backdartheight_sample.svg "Effect of this option on the pattern")
