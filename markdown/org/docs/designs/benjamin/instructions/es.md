@@ -2,19 +2,19 @@
 title: "Benjamin bow tie: Sewing Instructions"
 ---
 
-## Notas y consejos
+## Notes and tips
 
-### Precisión
+### Precision
 
 Since a bow tie is a rather small item, precision with sewing is key to a good result. Any slight difference between the upper and lower part of the bow will stand out. To get a great result I found it very helpful to trace the actual seam lines onto the interfacing and follow that while sewing.
 
-### Presione sabiamente
+### Press wisely
 
 Later in the construction steps, you will be asked to press your fabric. Please be careful that you are not using too much heat on a delicate fabric that can't handle it.
 
 It's a good idea to try pressing some fabric scraps before you start. This will allow you to figure out what is a good heat setting for the fabric you are using.
 
-### Eligiendo tu grano
+### Choosing your grain
 
 This pattern includes a grain line. This grain line is mostly there to be used with the interfacing. Since each pattern piece is interfaced, the grain line of the fabric itself is not so important. You can even change this from the standard for more informal impressions.
 
@@ -43,17 +43,17 @@ outside the scope of these instructions.
 
 </Note>
 
-### Margen de costura
+### Seam allowance
 
 Since the bow tie is constructed with the right sides of the fabric against each other, the whole thing will have to be turned inside out. You probably want to consider using a small seam allowance of 6mm (¼ inch) to reduce the bulk.
 
-## Construcción
+## Construction
 
-### Paso 1: Aplicar interfaz
+### Step 1: Apply interfacing
 
 Apply interfacing to all parts where you feel it's needed.
 
-### Sin cinta de ajuste
+### Without adjustment ribbon
 
 #### Step 2: Sew the bow to the collar band
 
@@ -69,13 +69,13 @@ Press open all the seams.
 
 You now have two identical single sided bow ties.
 
-#### Paso 3: Unirse a ambos lados
+#### Step 3: Join both sides
 
 ![Sew both sides together](step13.png)
 
 Lay both the sides you made on top of each other, right sides together. Sew all along the edges, but leave an area of 5 cm open in the middle of the collar band. Through this opening we will turn the bow tie right side out.
 
-#### Paso 4: girando
+#### Step 4: Turning
 
 ![Clip seam allowance](step14.png)
 
@@ -85,7 +85,7 @@ Then use the back of a large crochet hook, or some other appropriately long skin
 
 Once you have the tie right side out, make sure you push all the corners and sides out before giving it a good press.
 
-#### Paso 5: Cerrando
+#### Step 5: Closing
 
 ![Closing the bow tie](step15.png)
 
@@ -93,9 +93,9 @@ Now all that is left is closing the little hole we used to turn the bow tie righ
 
 Now give it one last press and admire your work.
 
-### Con cinta de ajuste
+### With adjustment ribbon
 
-#### Paso 2: Adjuntar la cinta
+#### Step 2: Attaching the ribbon
 
 ![Sew the ribbon to part 1](step22.png)
 
@@ -105,7 +105,7 @@ Put right sides of the Short Bow piece and the ribbon together.
 
 Now sew across the end to join the parts.
 
-#### Paso 3: Unirse a ambos lados
+#### Step 3: Join both sides
 
 ![Sew both sides together](step23.png)
 
@@ -117,7 +117,7 @@ Lay the Long Bow on top of the ribbon and Short Bow part, also right sides toget
 
 Again, sew all along the edges, leaving the short end open.
 
-#### Paso 4: girando
+#### Step 4: Turning
 
 ![Clip seam allowance](step14.png)
 
@@ -129,7 +129,7 @@ Once you have the part right side out, make sure you push all the corners and si
 
 Do this with both parts.
 
-#### Paso 5: Añadir hardware
+#### Step 5: Add hardware
 
 Now we need to add the two pieces of hardware that make the bow tie adjustable. The oval loop piece will be attached to the part without the adjustment ribbon. And, the piece with the T-hook will go on the part with the ribbon.
 
