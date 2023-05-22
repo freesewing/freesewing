@@ -2,16 +2,16 @@
 title: "Collar stand width"
 ---
 
-![Ancho del soporte](collarstandwidth.svg)
+![Collarstand width](collarstandwidth.svg)
 
-La altura de tu soporte de cuello.
+The height of your collar stand.
 
 <Note>
 
-Este es el parámetro principal para cambiar la altura total de su cuello. Esto por defecto es un cuello moderno, relativamente delgado, pero se puede aplicar hasta el estilo Karl Lagerfeld.
+This is the main parameter to change the overall height of your collar. This defaults to a modern relatively slim collar, but you can crank it up all the way to Karl Lagerfeld style.
 
 </Note>
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_collarstandwidth_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarstandwidth_sample.svg "Effect of this option on the pattern")
