@@ -5,25 +5,28 @@ title: "Jaeger jacket: What You Need"
 To make Jaeger, you will need the following:
 
 - About 2.5 meters (2.8 yards) of a suitable fabric (see [Fabric options](#fabric-options))
-- Tissu doublé, tissu de doublure à manches différent
-- Deux boutons plus gros pour le devant et 8 boutons pour les manches
-- Un peu d'interface légère et fusible pour l'application locale
-- Toile pour les devants et le col
-- Ruban de tailleur pour les bords avant
-- Quelques domettes pour l'intersection
-- Tapis d'épaule
-- Remontage de la tête de manche avec toile si possible
-- Tissu de sous-col
+- Lining fabric, optionally different sleeve lining fabric
+- Two larger buttons for the front, and 8 buttons for the sleeves
+- A bit of lightweight fusible interfacing for local enforcement
+- Canvas for the fronts and collar
+- Tailor's tape for the front edges
+- Some domette for interlining
+- Shoulder pads
+- Sleevehead wadding, with canvas if possible
+- Undercollar fabric
 
 <Note>
+
+###### Where to get all this stuff
+
+Making Jaeger is a fun and rewarning project, but getting all the required bits
+and pieces can be challenging.
 
 That is because this kind of project is somewhat more ambitious than the
 typical home sewing project, and as a result, your local haberdashery is
 unlikely to stock all of these things.
 
-Si vous savez où les obtenir, génial.
-
-Si vous savez où les obtenir, génial. If not, some (quality) suppliers
+If you know where to get them, great. If not, some (quality) suppliers
 sometimes sell a **Jacket trim pack** that includes everything you need.
 
 Below is a list of suppliers we are aware of where you can get this.
