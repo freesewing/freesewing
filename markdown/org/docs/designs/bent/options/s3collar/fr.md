@@ -1,12 +1,12 @@
 ---
-titre : "Décalage de la couture d'épaule : côté col"
+title: "Shoulder seam shift: collar side"
 ---
 
 Controls the shoulder seam location on the collar side.
 
-- Augmentez cette option pour déplacer la couture de l'épaule vers l'avant sur le col
-- Diminuer cette option pour déplacer la couture de l'épaule vers l'arrière sur le col
+- Increase this option to shift the shoulder seam forward on the collar side
+- Decrease this option to shift the shoulder seam backward on the collar side
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bent_s3collar_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bent_s3collar_sample.svg "Effect of this option on the pattern")
