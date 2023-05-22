@@ -1,20 +1,19 @@
----
-title: "Bruce boxer briefs: Cutting Instructions"
----
+- - -
+title: "Boxer Bruce : Instructions de coupe"
+- - -
 
-Bruce consists of a back, and two sides, insets and fronts.
+Bruce se compose d'un dos, et de deux côtés, inserts et devants.
 
-- **Main fabric**
-  - Cut **1 back** on the fold
-  - Cut **2 fronts**
-  - Cut **2 insets**
-  - Cut **2 sides**
+- **Tissu principal**
+  - Couper **1 dos** au pli
+  - Couper **2 faces**
+  - Couper **2 inserts**
+  - Couper **2 côtés**
 
 <Warning>
 
-###### Caveats
-
-- **back**: Extra hem allowance at the leg
-- **front**: Cut this **twice**
+###### Mise en garde
+- **dos** : marge de couture supplémentaire pour l'ourlet jambe
+- **devant** : Coupez **deux fois**
 
 </Warning>
