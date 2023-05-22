@@ -4,7 +4,7 @@ title: "Bruce boxer briefs: Sewing Instructions"
 
 <YouTube id='PL1gv5yv3DoZME1xe5fBEHd0rKPW_xNpF3' playlist />
 
-### Schritt 1: Rückteil an erstes Seitenteil anbringen
+### Step 1: Join back to first side
 
 ![Join back to first side](step01.png)
 
@@ -17,11 +17,11 @@ and the right side attached to the front & inset. The notches will also help you
 
 Serge them together, taking into account that the seam allowance is 1cm. So aim the outside needle of your serger 1cm from the edge of your fabric.
 
-> Falls metrische Einheiten nicht dein Ding sind: 1cm entsprechen 3/8 inch.
+> If metric is not your bag, 1 cm is 3/8 inch.
 
-> Einige Serger haben einen Hebel zur Wahl zwischen flachen Nähten oder gebündelten Nähten. Wenn Sie vorhaben, später zu starten (siehe Schritt 6), stellen Sie sicher, dass Sie flache Nähte wählen.
+> Some sergers have a lever to choose between flat seams, or bundled up seams. If you plan to topstitch later (see Step 6), make sure to choose flat seams.
 
-### Schritt 2: Rückteil an zweites Seitenteil anbringen
+### Step 2: Join back to second side
 
 ![Join back to second side](step02.png)
 
@@ -29,15 +29,15 @@ Align the other side of the back (piece 1) with the second side (piece 3) making
 
 Serge them together, as you did on the other side.
 
-> Rücken und Seite sind jetzt miteinander verbunden. Lassen Sie sie einen Moment beiseite, während wir unsere Aufmerksamkeit auf die anderen Stücke richten.
+> The back and sides are now joined together. Put them aside for a moment as we turn our attention to the other pieces.
 
-### Schritt 3: ersten Einsatz an Vorderteile anbringen
+### Step 3: Join first inset and fronts
 
 ![Start at one end](step03-a.png) ![Continue to align the pieces as you move on](step03-b.png) ![Until you reach the other end](step03-c.png)
 
 Joining the inset (piece 4) with the fronts (piece 2) requires you to serge them together across their curvy edges.
 
-> Denken Sie daran, dass Sie zwei Fronten haben. Man muss sie einander übereinander setzen und sie als eine doppelte Front behandeln.
+> Remember that you have two fronts. You have to put them on top of each other and treat it as one double-layered front.
 
 Faced with a tricky seam like this, you might reach for your pins or basting thread, but don't. Pinning or basting this will make it harder to sew.
 
@@ -53,22 +53,22 @@ If the difference is too big however, just leave it. It will get cut off when we
 
 <Note>
 
-Dies ist wahrscheinlich die härteste Naht im Muster. Nehmen Sie es langsam, und Sie sind in Ordnung.
+This is probably the hardest seam in the pattern. Take it slow, and you'll be fine.
 
 </Note>
 
 <Tip>
 
-###### Oder fügen Sie diese Nähte durch das Sandwichen zwischen den Fronten
+###### Or enclose these seams by sandwiching them between the fronts
 
-ein, während es ein bisschen mehr Arbeit ist Sie können diese Naht einschließen, wenn Sie die Einfügungen zu einem der vorderen Teile zuerst einfügen
-und nähen Sie dann die vorderen Stücke zusammen mit den ineinander gehängten Einsätzen.
+While it's a bit more work, you can enclose this seam if you baste the insets to a single one of the front pieces first,
+and then sew your front pieces together with the insets sandwiched inside.
 
-Nähen Sie die Frontdarts separat und drehen Sie die ganze Sache nach draußen, und Sie haben eine schöne nahtlose Verpackungsfläche vorne.
+Sew the front darts separately and turn the whole thing inside out, and you have a nice seamless package area in front.
 
 </Tip>
 
-### Schritt 4: zweiten Einsatz an Vorderteile anbringen
+### Step 4: Join second inset and fronts
 
 ![Join second inset and fronts](step03-d.png)
 
@@ -76,11 +76,11 @@ After you have joined the first inset and the fronts, continue with the second o
 
 With the fronts and insets joined together, you are left with 3 parts:
 
-- die miteinander verbundenen Vorderteile und Einsätze
-- die miteinander verbunden Seiten- und Rückteile
-- der Gummizug
+- The joined insets and fronts
+- The joined sides and back
+- The elastic
 
-### Schritt 5: vordere Abnäher schließen
+### Step 5: Close the fronts dart
 
 ![Close the fronts dart](step05.png)
 
@@ -90,21 +90,21 @@ Serge the sides of the tusks to close the fronts dart. For best results, start a
 
 <Tip>
 
-##### Halte diese Naht weg von meinem ...
+###### Keep that seam away from my ...
 
-Alternativ kannst du die Abnäher auf jeden Teil einzeln schließen, damit beide Nähte innen umschlossen sind.
-Vermutlich ist es für die tragende Person angenehmer, in diesem Bereich keine exponierte Naht zu haben.
+Alternatively, sew the darts on each piece individually so that both seams are folded inside.
+Arguably, not having an exposed seam in this area is more comfortable for the wearer.
 
 </Tip>
 
-### Schritt 6: Optional: Topstitch
+### Step 6: Optional: Topstitch
 
 ![Boxers with (left) and without topstitching](step06.jpg)
 
 <Note>
 
-Dieser Schritt ist optional. Die Stitching fügt einen visuellen Effekt hinzu, der die einzelnen Musterstücke hervorhebt.
-Es ist schön, einen festen Stoff visuell zu zerbrechen, aber wenn Sie einen Druck verwenden oder wenn Sie farbig blockieren, wollen Sie vielleicht nicht aufstocken.
+This step is optional. Topstitching adds a visual effect that emphasizes the individual pattern pieces.
+It's nice to visually break up a solid fabric, but if you're using a print, or when you're colour-blocking, you might want to not topstitch.
 
 </Note>
 
@@ -114,31 +114,31 @@ If you topstitch, simply do it for every seam, making sure to do so with a flexi
 
 <Tip>
 
-Beim Aufstiften der Naht, die den Frontdart geschlossen hat, von unten beginnen,
-und lassen Sie die Aufstecknähte ganz nach oben laufen, wohin die Taille kommt.
-Die Naht stoppt auf halbem Wege (wo der Dart endet), aber die Aufstiftung sollte fortgesetzt werden.
+When topstitching the seam that closed the fronts dart, start from the bottom,
+and let the topstitching run all the way to the top, where the waistband will come.
+The seam stops halfway through (where the dart ends) but your topstitching should continue.
 
 </Tip>
 
-### Schritt 7: erstes Seitenteil an Vorderteile anbringen
+### Step 7: Join the first side to the fronts
 
 ![Join the first side to the fronts](step07.png)
 
 Align the side edge of the first side with the edge made up of the fronts+inset (good sides together as usual) and serge them together.
 
-### Schritt 8: zweites Seitenteil an Vorderteile anbringen
+### Step 8: Join the second side to the fronts
 
 ![Join the second side to the fronts](step08.png)
 
 Do the same for the second side.
 
-### Schritt 9: Optional: Topstitch
+### Step 9: Optional: Topstitch
 
 ![Boxers with (left) and without topstitching](step06.jpg)
 
 If you've topstitched before, make sure to do the same now for the seams you made in step 7 and 8.
 
-### Schritt 10: Beende die Crotchseam
+### Step 10: Finish the crotchseam
 
 ![Finish the crotchseam](step10.png)
 
@@ -148,13 +148,13 @@ The notches on the back piece will help you. There's the center notch, and the o
 
 <Tip>
 
-Es ist einfacher, im mittleren Punkt zu starten und Ihren Weg auf eine Seite zu arbeiten. Dann von der Mitte wieder beginnen, um die andere Seite zu tun.
+It's easier to start in the middle point and work your way to one side. Then start from the middle again to do the other side.
 
-Nimm es langsam und sei **sehr bewusst**, wo deine Sergerklinge schneiden wird.
+Take it slow, and be **very aware** of where your serger blade is cutting into.
 
 </Tip>
 
-### Schritt 11: säume das erste Bein
+### Step 11: Hem the first leg
 
 ![Hem the first leg](step11.png)
 
@@ -162,19 +162,19 @@ Time to hem the legs. Hem them as you would do any other stretchy knit. Go for a
 
 <Note>
 
-Ich finde, dass Säumen immer sehr viel einfacher ist, wenn die Teile zuerst festgesteckt werden.
-Falte also deinen Saum zurück, und stecke ihn fest.
-Noch besser: Stecke beide Beine fest und nähe erst dann, wenn es dir das Aussehen gefällt.
+I feel that hemming is much easier when you pin things in place first.
+So fold back your hem, and pin it in place.
+Even better: pin both legs in place and only sew when you're happy with how it looks.
 
 </Note>
 
-### Schritt 12: säume das zweite Bein
+### Step 12: Hem the second leg
 
 ![Hem the second leg](step12.png)
 
 You know it makes sense.
 
-### Schritt 13: forme den Gummizug zu einer Schlaufe
+### Step 13: Make your elastic into a loop
 
 ![Make your elastic into a loop](step13.png)
 
@@ -182,14 +182,14 @@ Sew both ends of your elastic together with good sides together.
 
 <Note>
 
-###### Nicht sicher, wie lang dein Gummizug sein muss?
+###### Not sure how much elastic you need?
 
-Einfach die Elastik in die Taille einwickeln, wo sie am Ende sitzt, und bis sie sich richtig fühlt.
-Machen Sie eine Markierung, wo die Kantengelenke, fügen Sie 2cm Naht erlaubt, und das ist Ihre Länge.
+Simply wrap your elastic around your waist where it would end up sitting, and tighten it until it feels right.
+Make a mark of where the edge joins, add 2cm seam allowance, and that's your length.
 
 </Note>
 
-### Schritt 14: Gummizug an Taille befestigen
+### Step 14: Attach elastic to waist
 
 ![Attach elastic to waist](step14.png)
 
@@ -201,16 +201,16 @@ If you're using a coverlock, put the elastic on top of the good side of the fabr
 
 <Tip>
 
-Die Länge deines Gummizuges wird wahrscheinlich anders sein als die Länge des Stoffes, weil beide sich unterschiedlich weit dehnen lassen.
-Feststecken wird dir dabei helfen, eine gleichmäßige Dehnung zu erzielen.
+The length of your elastic will probably difffer from the fabric length, as they stretch differently.
+Pinning will help you achieve an even stretch.
 
-Teile sowohl deinen Gummizug als auch dein Bund deiner Shorts in 4 (oder 8) Teile auf. Stecke Gummi und Stoff an diesen Stellen zusammen.
+Divide both your elastic and boxer waistline into 4 (or 8) parts. Pin elastic and fabric together at these points.
 
-Während des Nähens dehnst du nun sowohl Gummi als auch Stoff zwischen den Stecknadeln, wobei du die Stecknadeln Stück für Stück entfernst.
+While sewing, stretch elastic and fabric together between each set of pins, removing the pins as you move on.
 
 </Tip>
 
-### Schritt 15: Trimmen und bereinigen
+### Step 15: Trim and clean up
 
 ![Yay! You've made it](step15.png)
 
