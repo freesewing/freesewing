@@ -1,7 +1,7 @@
 ---
-title: "Hi, tiburón: Medidas necesarias"
+title: "Hi the shark: Required Measurements"
 ---
 
 <Note>
-Hi no requiere de ninguna medida
+Hi does not require any measurements
 </Note>
