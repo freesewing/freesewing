@@ -1,11 +1,11 @@
----
+- - -
 title: "Waist ease"
----
+- - -
 
-![The waist ease option on Diana](./waistease.svg)
+![La opción de holgura de cintura en Diana](./waistease.svg)
 
-This option controls the amount of ease at the waist.
+Esta opción controla la holgura en la cintura.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_waistease_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](diana_waistease_sample.svg "Efecto de esta opción en el patrón")
