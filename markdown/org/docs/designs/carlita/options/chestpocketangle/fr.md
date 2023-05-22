@@ -1,9 +1,9 @@
----
-title: "Chest pocket angle"
----
+- - -
+titre : "Angle de la poche thoracique"
+- - -
 
-Controls the slant of the chest pocket.
+Contrôle la taille de la poitrine de la poitrine.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_chestpocketangle_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlita_chestpocketangle_sample.svg "Effet de cette option sur le modèle")
