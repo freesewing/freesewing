@@ -1,9 +1,9 @@
----
-title: "Length bonus"
----
+- - -
+titre : "Longueur supplémentaire"
+- - -
 
-This controls the length of the skirt. Percentage of the natural waist to knee measurement.
+Cela contrôle la longueur de la jupe. Pourcentage de la taille naturelle à la mesure du genou.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_lengthbonus_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](penelope_lengthbonus_sample.svg "Effet de cette option sur le modèle")
