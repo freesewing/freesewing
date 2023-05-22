@@ -1,13 +1,13 @@
 ---
-title: "Hauteur de pince dos"
+title: "Back dart height"
 ---
 
 ***
 
-![L'effet de l'option de hauteur de la jauge arrière sur le motif](sample.png)
+![The effect of the back dart height option on the pattern](sample.png)
 
-L'option **hauteur de la pince arrière** contrôle la hauteur (la longueur si vous voulez) de la pince arrière.
+The **back dart height** option controls the height (length if you will) of the back dart.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bella_backdartheight_sample.svg "Effet de cette option sur le motif")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_backdartheight_sample.svg "Effect of this option on the pattern")
