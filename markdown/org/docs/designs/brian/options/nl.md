@@ -4,11 +4,11 @@ title: "Brian body block: Design Options"
 
 <PatternOptions pattern='brian' />
 
-## De mouwkop begrijpen
+## Understanding the sleevecap
 
 In version 2 of FreeSewing, the sleevecap of Brian was redesigned to be more adaptable to different types of sleeves and garments. As a result, the sleevecap alone now has 20 options to control its shape. Whereas that may seem a bit overwhelming at first, understanding how the sleevecap is drafted makes it easy to understand what all the individual options do.
 
-### De grenzendoos
+### The bounding box
 
 The _bounding box_ of the sleevecap is a rectangle that is as wide as the sleeve, and as high as the sleevecap. Inside this box, we will construct our sleevecap later.
 
@@ -18,14 +18,14 @@ The image above shows a sleevecap, starting at point 1, then going up until poin
 
 <Note>
 
-###### Het vinden van de voorkant van de mouw(cap)
+###### Finding out which is the front of the sleeve(cap)
 
-In ons voorbeeld staat de voorkant van de mouwkop aan de rechterkant. Maar hoe zou u dat weten?
+In our example, the front of the sleevecap is on the right hand side. But how would you know?
 
-Terwijl patronen meestal een indicatie hebben die aangeeft welke kant is (een enkel merkteken
-betekent het voorpand, overwegende dat een dubbele inkeping de achterkant betekent, kan je ook
-de voorkant van een mouwkop herkennen omdat het meer gebogen is. De achterkant van de
-mouwkop wordt ook gebogen, maar het is een vlakke curve. That's because the human shoulder
+While patterns typically have an indication that shows which side is which (a single notch
+means the front, whereas a double notch means the back), you can also
+recognize the front side of a sleevecap because it is more curved. The backside of the
+sleevecap will also be curved, but it's a flatter curve. That's because the human shoulder
 is more pronounced and curved on the front of the body, thus the sleevecap is more curved
 there to fit the shoulder.
 
@@ -37,30 +37,30 @@ The width of the sleevecap (and thus the width of the sleeve at the bottom of th
 
 The height of the sleevecap is equal to the distance between points 3 and 4. The exact height is a trade-off between the measurments of the model, options, ease, sleevecap ease, and the fact that the sleeve ultimately has to fit the armhole. So the height may vary, and we don't control the exact value. But there are two options that control the shape of our sleevecap:
 
-- [Mouwkop top X](/docs/patterns/brian/options/sleevecaptopfactorx/) : Bepaalt de horizontale plaatsing van punt 3 en 4
-- [Mouwkop top Y](/docs/patterns/brian/options/sleevecaptopfactory/) : Bepaalt de verticale plaatsing van punt 4
+- [Sleevecap top X](/docs/patterns/brian/options/sleevecaptopfactorx/) : Controls the horizontal placement of point 3 and 4
+- [Sleevecap top Y](/docs/patterns/brian/options/sleevecaptopfactory/) : Controls the vertical placement of point 4
 
 In other words, point 4 can be made higher and lower and, perhaps less intutitively, it can also be changed to lie more to the right or the left, rather than smack in the middle as in our example.
 
-### De inflectiepunten
+### The inflection points
 
 ![Controlling the inflection points](sleevecapinflection.svg)
 
 With points 1, 2, 3, and 4 in place, we have a box to draw our sleevecap in. Now it's time to map out our _inflection points_. These are points 5 and 6 on our drawing, and their placement is determined by the following 4 options:
 
-- [Mouwkop X](/docs/patterns/brian/options/sleevecapbackfactorx) : Bepaalt de horizontale plaatsing van punt 5
-- [Mouwkop Y](/docs/patterns/brian/options/sleevecapbackfactory) : Bepaalt de verticale plaatsing van punt 5
-- [Mouwkop X](/docs/patterns/brian/options/sleevecapbackfactorx) : Bepaalt de horizontale plaatsing van punt 6
-- [Mouwkop Y](/docs/patterns/brian/options/sleevecapbackfactory) : Bepaalt de verticale plaatsing van punt 6
+- [Sleevecap back X](/docs/patterns/brian/options/sleevecapbackfactorx) : Controls the horizontal placement of point 5
+- [Sleevecap back Y](/docs/patterns/brian/options/sleevecapbackfactory) : Controls the vertical placement of point 5
+- [Sleevecap front X](/docs/patterns/brian/options/sleevecapbackfactorx) : Controls the horizontal placement of point 6
+- [Sleevecap front Y](/docs/patterns/brian/options/sleevecapbackfactory) : Controls the vertical placement of point 6
 
 <Note>
 
-Zoals u in ons voorbeeld ziet, liggen deze punten niet altijd op onze mouwlijn. In plaats daarvan
-helpen ze bij het creëren van punten die altijd op de mouwkop liggen: de ankerpunten.
+As you see in our example, these points do not always lie on our sleevecap line. Instead, they
+are instrumental in creating the points that always lie on the sleevecap: the anchor points.
 
 </Note>
 
-### De ankerpunten
+### The anchor points
 
 ![Controlling the anchor points](sleevecapanchor.svg)
 
@@ -68,22 +68,22 @@ Ultimately, our sleevecap will be the combination of 5 curves. In addition to po
 
 The points are _offset_ perpendicular from the middle of a line between the two anchor points surrounding them. The offset for each point is controlled by these 4 options:
 
-- [Mouwkop Q1 offset](/docs/patterns/brian/options/sleevecapq1offset) : Bepaalt de offset loopendicular naar de lijn van punt 2 tot 6
-- [Mouwkop Q2 offset](/docs/patterns/brian/options/sleevecapq2offset) : Bepaalt de offset perpendicular naar de lijn van punt 6 tot 4
-- [Mouwkop Q3 offset](/docs/patterns/brian/options/sleevecapq3offset) : Bepaalt de offset perpendicular naar de lijn van punt 4 tot 5
-- [Mouwkop Q4 offset](/docs/patterns/brian/options/sleevecapq3offset) : Bepaalt de offset perpendicular naar de lijn van punt 5 tot 1
+- [Sleevecap Q1 offset](/docs/patterns/brian/options/sleevecapq1offset) : Controls the offset perpendicular to the line from points 2 to 6
+- [Sleevecap Q2 offset](/docs/patterns/brian/options/sleevecapq2offset) : Controls the offset perpendicular to the line from points 6 to 4
+- [Sleevecap Q3 offset](/docs/patterns/brian/options/sleevecapq3offset) : Controls the offset perpendicular to the line from points 4 to 5
+- [Sleevecap Q4 offset](/docs/patterns/brian/options/sleevecapq3offset) : Controls the offset perpendicular to the line from points 5 to 1
 
 <Note>
 
-We hebben onze mouwkop in 4 kwartalen verdeeld. We starten vooraan (rechts in ons voorbeeld)
-met kwart 1. en doe onze weg naar de rug om te eindigen met kwart 4.
+We've divided our sleevecap into 4 quarters. We start at the front (the right in our example)
+with quarter 1, and make our way to the back to end with quarter 4.
 
 Like the offset option, the last options to determine the shape of our sleevecap will just repeat so you can
 control each quarter individually.
 
 </Note>
 
-### De spreiding
+### The spread
 
 ![Controlling the anchor points](sleevecapspread.svg)
 
@@ -91,21 +91,21 @@ We now have all the start and end points to draw the 5 curves that will make up 
 
 For each of the anchor points (the ones marked in orange, not points 1 and 2) there is an option to control the spread upwards, and downwards:
 
-- [Mouwkop Q1 neerwaardse spreiding](/docs/patterns/brian/options/sleevecapq1spread1) : Bepaalt de neerwaartse spreiding in het eerste kwartaal
-- [Mouwkop Q1 opwaardse spreiding](/docs/patterns/brian/options/sleevecapq1spread2) : Bepaalt de opwaartse spreiding in het eerste kwartaal
-- [Mouwkop Q2 neerwaardse spreiding](/docs/patterns/brian/options/sleevecapq2spread1) : Bepaalt de neerwaartse spreiding in het tweede kwartaal
-- [Mouwkop Q2 opwaartse spreiding](/docs/patterns/brian/options/sleevecapq2spread2) : Bepaalt de opwaartse spreiding in het tweede kwartaal
-- [Mouwkop Q3 opwaartse spreiding](/docs/patterns/brian/options/sleevecapq3spread1) : Bepaalt de opwaartse spreiding in het derde kwartaal
-- [Mouwkop Q3 neerwaardse spreiding](/docs/patterns/brian/options/sleevecapq3spread2) : Bepaalt de neerwaartse spreiding in het derde kwartaal
-- [Mouwkop Q4 opwaartse spreiding](/docs/patterns/brian/options/sleevecapq4spread1) : Bepaalt de opwaartse spreiding in het vierde kwartaal
-- [Mouwkop Q4 neerwaardse spreiding](/docs/patterns/brian/options/sleevecapq4spread2) : Bepaalt de neerwaartse spreiding in het vierde kwartaal
+- [Sleevecap Q1 downward spread](/docs/patterns/brian/options/sleevecapq1spread1) : Controls the downward spread in the first quarter
+- [Sleevecap Q1 upward spread](/docs/patterns/brian/options/sleevecapq1spread2) : Controls the upward spread in the first quarter
+- [Sleevecap Q2 downward spread](/docs/patterns/brian/options/sleevecapq2spread1) : Controls the downward spread in the second quarter
+- [Sleevecap Q2 upward spread](/docs/patterns/brian/options/sleevecapq2spread2) : Controls the upward spread in the second quarter
+- [Sleevecap Q3 upward spread](/docs/patterns/brian/options/sleevecapq3spread1) : Controls the upward spread in the third quarter
+- [Sleevecap Q3 downward spread](/docs/patterns/brian/options/sleevecapq3spread2) : Controls the downward spread in the third quarter
+- [Sleevecap Q4 upward spread](/docs/patterns/brian/options/sleevecapq4spread1) : Controls the upward spread in the fourth quarter
+- [Sleevecap Q4 downward spread](/docs/patterns/brian/options/sleevecapq4spread2) : Controls the downward spread in the fourth quarter
 
 <Note>
 
-Attensieve lezers zullen hebben opgemerkt dat punt 4 geen ankerpunt is. Met andere woorden, er is geen garantie
-dat het op de mouwkop zal liggen. Dit betekent ook dat de opwaartse spreiding in kwartaal 2 en 3
-de hoogte van de mouwkop zal beïnvloeden. Verminder de opwaartse spread, en de curve zal onder punt 4 duiken. Verhoog het en
-de curve zal daarboven stijgen.
+Attentive readers will have noticed that point 4 is not an anchor point. In other words, there is no guarantee
+that it will lie on the sleevecap line. Which also means that the upwards spread in quarters 2 and 3 will influence
+the height of the sleevecap. Reduce the upwards spread, and the curve will dip below point 4. Increase it and
+the curve will rise above it.
 
 </Note>
 
@@ -113,9 +113,9 @@ de curve zal daarboven stijgen.
 
 While the sleevecap in Brian (and all patterns that extend Brian) have a lot of options, understanding how the sleevecap is constructed can help you design the exact sleevecap shape you want. To do so:
 
-- Begin met het plaatsen van de bovenkant van je mouwkop
-- Bepaal dan de invoegpunten
-- Vervolgens, gebruik de offset om de kracht van de curve te controleren
-- Tot slot gebruik je de spreiding om de zaken vlot te trekken
+- Start with placing the top of your sleevecap
+- Then determine the inflection points
+- Next, use the offset to control the steepness of the curve
+- Finally, use the spread to smooth things out
 
 What's important to remember is that you're only ever controlling the shape of the sleevecap. Whatever shape you design, it will be fitted to the armhole, meaning that its size can and will be adapted to make sure the sleeve fits the armscye. However, the shape you design will always be respected.
