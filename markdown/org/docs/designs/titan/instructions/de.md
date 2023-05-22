@@ -4,9 +4,9 @@ title: "Titan trouser block: Sewing Instructions"
 
 <Note>
 
-###### Titan ist ein Grundschnitt, kein Schnittmuster
+###### Titan is a block, not a pattern
 
-Ein Grundschnitt ist eine Grundform, auf der andere Schnittmuster basieren.
+A block is a basic shape on which other patterns are based.
 They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
 
 Blocks are typically not made as-is but rather serve as a basis for other patterns so the instructions below will not go in depth about closures or finishes and are for the default Titan block.
@@ -17,7 +17,7 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 
 - Join the outseam (the seam that runs along the side of your leg) of the front and back.
 - Join the inseam (the seam the runs along the inside of your legs) of the front and back.
-- Du hast jetzt ein Bein. Wiederhole die Schritte für das andere Bein, **und stelle dabei sicher, dass die beiden Beine Spiegelbilder voneinander sind**.
+- You now have a leg. Repeat for the other leg, **making certain they are mirror images of each other**.
 - Turn one leg with the good side in, and the other with the good side out.
 - Now tuck the _good side out_ into the _good side in_ leg, so that they have their _good sides together_.
 - Align and sew the cross seam.
@@ -34,7 +34,7 @@ If you are making adjustments you may wish to sew the seams _wrong sides togethe
 
 </Tip>
 
-### Schritt 2: Anprobieren
+### Step 2: Try it on
 
 - Try it on and check the fit by pinning the front closed whilst wearing it.
 - Make any alterations and try it on again.
@@ -42,7 +42,7 @@ If you are making adjustments you may wish to sew the seams _wrong sides togethe
 
 <Tip>
 
-Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. Solche Dinge sind Zeichen dafür, wo das Schnittmuster möglicherweise angepasst werden muss.
+Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. Things like these are signs of where the pattern may need adjusting.
 
 Sometimes you may need to wear the mock-up for an extended amount of time to get a better sense of the fit so don't be afraid to walk around in it for a couple of hours.
 
@@ -63,10 +63,10 @@ It is all up to you! Experiment and go forth!
 
 </Note>
 
-### Schritt 3: Erstelle ein Papierschnittmuster
+### Step 3: Make a paper pattern
 
 - Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
-- Jetzt hast du ein Schnittmuster, das du verwenden kannst um Kleidungsstücke herzustellen.
+- Now you have a pattern you can use to produce a garment.
 
 <Note>
 
