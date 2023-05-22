@@ -2,10 +2,10 @@
 title: "Hips ease"
 ---
 
-![La opción de holgura de cadera en Diana](./hipsease.svg)
+![The hips ease option on Diana](./hipsease.svg)
 
-Esta opción controla la holgura en la cadera.
+This option controls the amount of ease at the hips.
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](diana_hipsease_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_hipsease_sample.svg "Effect of this option on the pattern")
