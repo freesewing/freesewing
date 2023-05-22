@@ -1,15 +1,15 @@
----
+- - -
 title: "Back vent"
----
+- - -
 
-![Back vent](backvent.svg)
+![Abertura trasera](backvent.svg)
 
-How do you like your back vents?
+¿Cómo te gustan las ventanillas traseras?
 
-- Two back vents (shown on the left)
-- One central back vent (shown in the middle)
-- No back vents (shown on the right)
+- Dos ventiladores traseros (mostrados a la izquierda)
+- Un ventilador trasero central (mostrado en el medio)
+- No hay resguardos (se muestra a la derecha)
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_backvent_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](jaeger_backvent_sample.svg "Efecto de esta opción en el patrón")
