@@ -11,13 +11,13 @@ For the opposite effect, less casual and more style, you can consider a silk ble
 
 <Tip>
 
-###### Algunas cosas para evitar
+###### Some things to avoid
 
-Resiste la tentación para hacer estas en lino.
-Mientras que la ropa de cama es el go-to de los días calurosos de verano, No lo recomiendo para estos pantalones
-ya que vienen con cinturas/tazas elasticadas, lo que significa infierno.
-Utilice uno de los otros diseños con una cintura equipada si desea pantalones de lino.
+Resist the temptation to make these in linen.
+While linen is the go-to for hot summer days, I would not recommend it for these pants
+as they come with an elasticated waist/cuffs, which means wrinkle hell.
+Use one of out other designs with a fitted waist if you want linen pants.
 
-También evita elegir una tela con mucho estiramiento, ya que complicará las cosas cuando estés instalando el elástico.
+Also avoid picking a fabric with a lot of stretch, for it will complicate matters when you're installing the elastic.
 
 </Tip>
