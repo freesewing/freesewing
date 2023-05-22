@@ -17,7 +17,7 @@
   "peerDependencies": {},
   "dependencies": {
     "@headlessui/react": "1.7.14",
-    "@next/mdx": "13.4.2",
+    "@next/mdx": "13.4.3",
     "@resvg/resvg-js": "2.4.1",
     "@tailwindcss/typography": "0.5.9",
     "Buffer": "0.0.0",
