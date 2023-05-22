@@ -1,9 +1,9 @@
----
+- - -
 title: "Head ease"
----
+- - -
 
-The amount of ease around your head.
+Die Menge an Leichtigkeit um den Kopf.
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](florent_headease_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](florent_headease_sample.svg "Effekt dieser Variable auf das Schnittmuster")
