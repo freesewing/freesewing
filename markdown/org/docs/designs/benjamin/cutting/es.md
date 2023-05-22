@@ -1,25 +1,25 @@
----
+- - -
 title: "Benjamin bow tie: Cutting Instructions"
----
+- - -
 
-Benjamin is a rather simple pattern, but your options will determine what needs to be cut out. Below are two typical layouts.
+Benjamin is a rather simple pattern, but your options will determine what needs to be cut out. A continuación se muestran dos diseños típicos.
 
-## Without adjustment ribbon
+## Sin cinta de ajuste
 
-- **Main fabric**
+- **Tela principal**
   - Cut **4 Bow** parts
   - Cut **2 Collar Band** parts
-- **Interfacing**
+- **Interfaz**
   - Cut **4 Bow** parts
   - Cut **2 Collar Band** parts
 
-## With adjustment ribbon
+## Con cinta de ajuste
 
-- **Main fabric**
+- **Tela principal**
   - Cut **1 Short Bow** part
   - Cut **2 Medium Bow** parts
   - Cut **1 Long Bow** part
-- **Interfacing**
+- **Interfaz**
   - Cut **1 Short Bow** part
   - Cut **2 Medium Bow** parts
   - Cut **1 Long Bow** part
