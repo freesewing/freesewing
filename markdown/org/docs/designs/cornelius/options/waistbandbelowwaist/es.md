@@ -1,11 +1,11 @@
 ---
-title: "Lower waistband"
+title: "Banda inferior"
 ---
 
 ***
 
-This option allows you to lower the waistband below your (natural) waist.
+Esta opción te permite bajar la cintura debajo de tu cintura (natural).
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](cornelius_waistbandbelowwaist_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](cornelius_waistbandbelowwaist_sample.svg "Efecto de esta opción en el patrón")
