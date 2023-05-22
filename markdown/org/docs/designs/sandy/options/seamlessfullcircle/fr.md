@@ -1,10 +1,10 @@
----
+- - -
 title: "Seamless full circle"
----
+- - -
 
-![Seamless full circle](seamlessfullcircle.svg)
+![Cercle entier sans couture](seamlessfullcircle.svg)
 
-Select 'yes' for a seamless circle, which is cut on a double fold. Since it has no openings, you'll need an elastic waistband.
+Sélectionnez 'oui' pour un cercle transparent, qui est coupé sur un double pli. Comme il n'a pas d'ouvertures, vous aurez besoin d'une bande de taille élastique.
 
 <Note>
 
@@ -14,6 +14,6 @@ Select 'yes' for a seamless circle, which is cut on a double fold. Since it has 
 
 </Note>
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](sandy_seamlessfullcircle_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](sandy_seamlessfullcircle_sample.svg "Effet de cette option sur le modèle")
