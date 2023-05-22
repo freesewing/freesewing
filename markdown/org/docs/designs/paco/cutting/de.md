@@ -7,21 +7,21 @@ title: "Paco pants: Cutting Instructions"
 ###### Cut out only what you need
 
 Depending on the choices you made in your pattern, you may not need all parts.
-Wenn ein Musterteil nicht gedruckt wird, bedeutet das, dass Sie es nicht benötigen.
+If a pattern part is not printed, it means you don't need it.
 
 </Tip>
 
-- Aus Deinem Hauptstoff:
-  - 2x **Teil 1**: Dies ist die Rückseite. Schneiden Sie diese aus Ihrem **Hauptstoff** mit _guten Seiten zusammen_
-  - 2x **Teil 2**: Dies ist die Frontplatte. Schneiden Sie diese aus Ihrem **Hauptstoff** mit _guten Seiten zusammen_
-  - 2x **Teil 3**: Das ist die Bänder. Schneiden Sie es aus Ihrem **Haupt-Stoff**
-  - 2x **Teil 4**: Das ist die Knöchelschicht. Schneiden Sie diese aus Ihrem **Haupt-Stoff** mit _guten Seiten zusammen_ (nicht erforderlich, wenn Sie kein elastisches Hemd haben)
-  - 2x **Teil 7**: Das ist die hintere Taschenwelle. Schneiden Sie 2 davon aus Ihrem **Hauptstoff** mit _guten Seiten zusammen_
-- Aus Deinem Futter-Stoff:
-  - 2x **Teil 5**: Dies ist die Vordertasche Tasche. Schneiden Sie diese aus Ihrem **-Futter-Stoff** _auf der Falte_ (nicht erforderlich, wenn Sie keine Vordertaschen haben)
-  - 2x **Teil 6**: Dies ist die hintere Tasche. Schneiden Sie 2 davon aus Ihrem **-Futter-Stoff** _auf der Falte_
-- Von Schnittstellen:
-  - 2x **Teil 8**: Dies ist die Back-Tasche Welt-Schnittstelle. 2 davon von **Schnittstelle**
+- From your main fabric:
+  - 2x **part 1**: This is the back panel. Cut these from your **main fabric** with _good sides together_
+  - 2x **part 2**: This is the front panel. Cut these from your **main fabric** with _good sides together_
+  - 2x **part 3**: This is the waistband. Cut it from your **main fabric**
+  - 2x **part 4**: This is the ankle cuff. Cut these, from your **main fabric** with _good sides together_ (not needed if your chose not to have an elasticated hem)
+  - 2x **part 7**: This is the back pocket welt. Cut 2 of these from your **main fabric** with _good sides together_
+- From your lining fabric:
+  - 2x **part 5**: This is the front pocket bag. Cut these, from your **lining fabric** _on the fold_ (not needed if you chose to not have front pockets)
+  - 2x **part 6**: This is the back pocket bag. Cut 2 of these from your **lining fabric** _on the fold_
+- From interfacing:
+  - 2x **part 8**: This is the back pocket welt interfacing. Cut 2 of these from **interfacing**
 
 <Warning>
 
