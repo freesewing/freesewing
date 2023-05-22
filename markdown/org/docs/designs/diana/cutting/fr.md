@@ -2,6 +2,6 @@
 title: "Diana draped top: Cutting Instructions"
 ---
 
-- Couper **1 dos** au pli
-- Couper **1 devant** au pli
+- Cut **1 back** on the fold
+- Cut **1 front** on the fold
 - Cut **2 sleeves** with _good sides together_
