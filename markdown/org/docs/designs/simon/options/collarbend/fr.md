@@ -2,16 +2,16 @@
 title: "Collar bend"
 ---
 
-![Courbure du col](collarbend.svg)
+![Collar bend](collarbend.svg)
 
-Combien le col se plie (sur le côté du col) plutôt que d'être droit.
+How much the collar bends (on the collar stand side), rather than being straight.
 
 <Note>
 
-Cela influence la façon dont le collier se trouve contre le col.
+This influences how the collar lies against the collar stand.
 
 </Note>
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_collarbend_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarbend_sample.svg "Effect of this option on the pattern")
