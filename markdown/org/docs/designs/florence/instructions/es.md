@@ -2,20 +2,20 @@
 title: "Florence face mask: Sewing Instructions"
 ---
 
-### Paso 1: Une la costura central
+### Step 1: Join center seam
 
 Join the curved seam that is center of our mask by placing the _good sides together_ and sewing them in place.
 
 ![Join the center seam](step1.svg)
 
-<Note>Repite este paso tanto para la tela exterior (principal) como para la tela interior (forro).</Note>
+<Note>Repeat this step for both the outer (main) fabric, and the inner (lining) fabric.</Note>
 
-### Paso 2 (opcional): Plancha la costura central
+### Step 2 (optional): Press the center seam
 
 <Note>
 
-Este paso no tiene valor funcional, sólo hará que tu mascarilla se vea mejor.
-Así que si te da igual, siéntete libre de saltártelo.
+This step has no functional value, it will only make your mask look better.
+So if you're not too bothered about that, feel free to skip it.
 
 </Note>
 
@@ -23,23 +23,24 @@ Press the seam allowance on the center seam open so the seam lies nice and flat.
 
 As this is a curved seam, it won't lay flat. But you can approach it with your iron from one side, then do the second half from the other side. Alternatively, you can use a tailor's ham or cushion to press.
 
-<Note>Repite este paso tanto para la tela exterior (principal) como para la tela interior (forro).</Note>
+<Note>Repeat this step for both the outer (main) fabric, and the inner (lining) fabric.</Note>
 
-### Paso 3: Cosa la tela exterior al forro y una las cintas
+### Step 3: Sew the outer to the inner fabric and attach ribbons
 
 ![Join the inner to the outer fabric](step3.svg)
 
 Now we will sew the inner (lining) fabric to the outer (main) fabric, and attach the ribbons all in one step.
 
-- Pon el forro hacia abajo con el lado derecho hacia arriba.
-- Luego, pon dos cintas en las esquinas de un lado (como en nuestro ejemplo) para que sobresalgan un poco de la mascarilla, pero la cinta se extiende hacia dentro.
-- Ahora pon la tela principal encima con el derecho hacia abajo. You should now have both layers of your mask on top of each other with _good sides together_ and two ribbons sandwiched between them
-- Pon alfileres a través de las cintas y las capas de tela para mantenerlas en su lugar
-- Ahora haz lo mismo en el otro lado
+- Place your lining fabric down with the good side up.
+- Then, place two ribbons on the corners of one side (right in our example) so that they peak out just a bit from the mask, but the ribbon extends inwards.
+- Now place the main fabric on top of this with the good side town. You should now have both layers of your mask on top of each other with _good sides together_ and two ribbons sandwiched between them
+- Pin through ribbons and layers to keep them in place
+- Now do the same on the other side
 
 <Tip>
 
-A medida que coges práctica, encontrarás que no necesitas poner alfileres puedes insertar las cintas cuando te acercas a la esquina.
+As you get some practice, you will find you don't need to pin this and can just insert the
+ribbons as you approach a corner.
 
 </Tip>
 
@@ -47,30 +48,30 @@ Now sew around the mask, making sure to leave one side open so we can turn the m
 
 <Warning>
 
-Ten cuidado de no atrapar ninguna de las cintas en la costura aparte de donde deben estar cosidas.
-Guíalas a través de la abertura que dejaste en un lado, o mételas entre
-las capas de la mascarilla para mantenerlas apartadas.
+Be careful not to catch any of the ribbons in the seam apart from where you want them to.
+Either guide them through the opening you leave on one side, or bunch them up in between
+the masks of your layer to keep them out of the way.
 
 </Warning>
 
-### Paso 4: Vuelve la máscara dentro
+### Step 4: Turn the mask inside-out
 
 Actually, your mask is inside-out now, so turning it inside out will mean we get it outside-out, or regular.
 
 Just reach in through the side your left open and carefully pull the mask through to turn it.
 
-### Paso 5 (opcional): Plancha la mascarilla
+### Step 5 (optional): Press the mask
 
 <Note>
 
-Este paso no tiene valor funcional, sólo hará que tu mascarilla se vea mejor.
-Así que si te da igual, siéntete libre de saltártelo.
+This step has little functional value, it will only make your mask look better.
+So if you're not too bothered about that, feel free to skip it.
 
 </Note>
 
 Now that the mask is as it should be, it's time to press it. Before doing so, make sure to fold the seam allowance of the side we left open inwards, so that we press it flat as if it was sewn.
 
-### Paso 6: Cierra el lado abierto de la máscara y cose alrededor del borde
+### Step 6: Close open side of the mask and edge-stitch around the edge
 
 ![Edge-stitch around the mask](step6.svg)
 
@@ -80,7 +81,7 @@ We are not merely going to close the opening, but also edge-stitch around the en
 
 Make sure the open side is folded neatly inside, then edge-stitch around the entire mask.
 
-### Paso 7: Usa tu máscara o haz un montón
+### Step 7: Wear your mask or make a bunch
 
 That's it, you're done! You can now wear your mask.
 
