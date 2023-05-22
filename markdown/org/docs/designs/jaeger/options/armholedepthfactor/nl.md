@@ -2,10 +2,10 @@
 title: "Armhole depth factor"
 ---
 
-![Diepte armsgat factor](armholedepthfactor.svg)
+![Armhole depth factor](armholedepthfactor.svg)
 
-Dit controleert de diepte van het armsgat, wat vervolgens de breedte van de mouwkop beïnvloedt.
+This controls the depth of the armhole, which in turn influences the sleevecap width.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](jaeger_armholedepthfactor_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_armholedepthfactor_sample.svg "Effect of this option on the pattern")
