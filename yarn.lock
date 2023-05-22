@@ -178,10 +178,10 @@
     "@aws-sdk/types" "3.329.0"
     tslib "^2.5.0"
 
-"@aws-sdk/client-sesv2@3.335.0":
-  version "3.335.0"
-  resolved "https://registry.yarnpkg.com/@aws-sdk/client-sesv2/-/client-sesv2-3.335.0.tgz#eaf87805e4d60d3422a655564095c14e2411269a"
-  integrity sha512-c827XJ6fm1eDM1/ih6coKyAKSGW+PfBErpaKU5iIFGfZFoFuio63VipipL7qjOkBQPqrwAEnDncKalP/ksF2LA==
+"@aws-sdk/client-sesv2@3.336.0":
+  version "3.336.0"
+  resolved "https://registry.yarnpkg.com/@aws-sdk/client-sesv2/-/client-sesv2-3.336.0.tgz#677a0ef06ef6d484167821dd062e14bcdfb7c838"
+  integrity sha512-I9dXMhnhIAMvqXOgLkQDr72ADy/bKT8XaFbfhIZiz+VO+GPF3ra9X31fBemvXiu0OSA3Isf7coHCI5zmj6rOBw==
   dependencies:
     "@aws-crypto/sha256-browser" "3.0.0"
     "@aws-crypto/sha256-js" "3.0.0"
