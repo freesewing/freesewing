@@ -1,11 +1,11 @@
 ---
-title: "Kuff unter dem Knie"
+title: "Cuff below knee"
 ---
 
 ***
 
-Steuert wie weit die Manschette unter dem Knie sitzt.
+Controls how far the cuff will sit below your knee.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](cornelius_bandbelowknee_sample.svg "Effekt dieser Option auf das Schnittmuster")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](cornelius_bandbelowknee_sample.svg "Effect of this option on the pattern")
