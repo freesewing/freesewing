@@ -1,11 +1,11 @@
----
-title: "Biceps ease"
----
+- - -
+weitenzugabe/Bequemlichkeitszugabe Oberarm
+- - -
 
-![The biceps ease option on Diana](./bicepsease.svg)
+![Die Beizeps-Leicht-Option auf Diana](./bicepsease.svg)
 
-This option controls the fit at your upper arm, and influences the depth of the armhole.
+Diese Option steuert die Passung an deinem oberen Arm und beeinflusst die Tiefe des Armlochs.
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_bicepsease_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](diana_bicepsease_sample.svg "Effekt dieser Option auf das Schnittmuster")
