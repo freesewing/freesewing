@@ -2,18 +2,18 @@
 title: "Knot width"
 ---
 
-![Breedte knoop](knotwidth.svg)
+![Knot width](knotwidth.svg)
 
-De breedte van de knoop is de breedte in het midden van de das, waar je de knoop maakt.
+The knot width is the width in the middle of the tie, where you make the knot.
 
-De breedte van je das in het midden heeft invloed op de knoop van de das. Ga breed voor grote en dikke knopen, ga smal voor kleinere knopen.
+How wide your tie is in the middle will influence the tie knot. Go wide for big and bulky knots, go narrow for small knots.
 
 <Note>
 
-Maak de breedte van de knoop niet groter dan de breedte van de punt
+Do not make the knot width larger than the tip width
 
 </Note>
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](trayvon_knotwidth_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](trayvon_knotwidth_sample.svg "Effect of this option on the pattern")
