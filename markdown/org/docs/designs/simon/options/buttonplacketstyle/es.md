@@ -1,14 +1,14 @@
----
+- - -
 title: "Button placket style"
----
+- - -
 
-![Button placket style](buttonplacketstyle.svg)
+![Estilo de la vista de los botones](buttonplacketstyle.svg)
 
-Do you want the button placket to be sewn in place (classic style), or folded back and held in place by the buttons (seamless style)?
+¿Quiere que la placa de los botones se coja en su lugar (estilo clásico), o se pliega hacia atrás y se mantiene en su lugar por los botones (estilo sin costura)?
 
 <Tip>
 
-Seamless is less work, and it looks great.
+Sin fisuras es menos trabajo y se ve genial.
 
 </Tip>
 
@@ -18,6 +18,6 @@ As seamless is only possible on a _cut-on_ placket, this option is ignored if yo
 
 </Note>
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_buttonplacketstyle_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_buttonplacketstyle_sample.svg "Efecto de esta opción en el patrón")
