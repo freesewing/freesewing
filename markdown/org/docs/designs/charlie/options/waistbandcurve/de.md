@@ -2,6 +2,10 @@
 title: "Waistband Curve"
 ---
 
-Steuert die Kurven der Taille.
+Controls how curved the waistband is.
 
-Dies zu erhöhen wird eine kurvenförmige Weste geben, die sie am oberen Rand der Weste kleiner macht.
+Increasing this will give a curvier waistband, making it smaller at the top edge of the waistband.
+
+## Effect of this option on the pattern
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_waistbandcurve_sample.svg "Effect of this option on the pattern")
