@@ -1,11 +1,11 @@
----
+- - -
 title: "Ankle/Hem elastic width"
----
+- - -
 
 If you're using an elasticated hem at the ankle, use this to set the width of the elastic you'll use.
 
-In other words, this will control the height of the cuff.
+En otras palabras, esto controlará la altura del cerdo.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](paco_ankleelastic_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](paco_ankleelastic_sample.svg "Efecto de esta opción en el patrón")
