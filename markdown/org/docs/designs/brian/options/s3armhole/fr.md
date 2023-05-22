@@ -1,12 +1,12 @@
 ---
-titre : "Décalage de la couture d'épaule : côté de l'emmanchure"
+title: "Shoulder seam shift: armhole side"
 ---
 
 Controls the shoulder seam location on the armhole side.
 
-- Augmentez cette option pour déplacer la couture de l'épaule vers l'avant sur le côté de l'armurier
-- Diminuer cette option pour déplacer la couture de l'épaule vers l'arrière sur le côté du bracelet
+- Increase this option to shift the shoulder seam forward on the armhole side
+- Decrease this option to shift the shoulder seam backward on the armhole side
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_s3armhole_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_s3armhole_sample.svg "Effect of this option on the pattern")
