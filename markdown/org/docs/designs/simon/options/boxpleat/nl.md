@@ -1,11 +1,11 @@
 ---
-title: "Stolpplooi"
+title: "Box pleat"
 ---
 
 ***
 
-Voegt een doosje aan de rug toe.
+Adds a box pleat to the back.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_boxpleat_sample.svg "Effect van deze optie op het patroon")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_boxpleat_sample.svg "Effect of this option on the pattern")
