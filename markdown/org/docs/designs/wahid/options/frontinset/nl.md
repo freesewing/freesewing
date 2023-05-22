@@ -2,19 +2,19 @@
 title: "Front inset"
 ---
 
-![Insnede voorpand](frontinset.svg)
+![Front inset](frontinset.svg)
 
-Hoe ver wil je dat het armsgat van je gilet op het voorpand naar binnen gaat?
+How far do you want your waistcoat armhole to curve inwards on the front?
 
 <Note>
 
-###### Waarom?
+###### What's the point?
 
-Het armsgat van je gilet kan verder naar binnen buigen, aangezien er geen mouw ingezet wordt.
-Dit heeft invloed op de stijl van je gilet.
+The armhole of your waistcoat can curve further inward, given that there is no sleeve attached to it.
+This influences the style of the waistcoat.
 
 </Note>
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](wahid_frontinset_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_frontinset_sample.svg "Effect of this option on the pattern")
