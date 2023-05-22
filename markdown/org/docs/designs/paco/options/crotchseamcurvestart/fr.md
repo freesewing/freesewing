@@ -2,8 +2,8 @@
 title: "Start of the crotch seam curve"
 ---
 
-Contrôle où la couture de crochage commence à être courbée, ce qui influe sur l'ajustement à votre crotch.
+Controls where the crotch seam starts to curve, which influences the fit at your crotch.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](paco_crotchseamcurvestart_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](paco_crotchseamcurvestart_sample.svg "Effect of this option on the pattern")
