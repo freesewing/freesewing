@@ -2,8 +2,8 @@
 title: "Knee ease"
 ---
 
-Steuert die Leichtigkeit in den Knien, die auch die Breite der Hosenbeine bestimmt.
+Controls the amount of ease at your knees, which also determines the width of the trouser legs.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](titan_kneeease_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](titan_kneeease_sample.svg "Effect of this option on the pattern")
