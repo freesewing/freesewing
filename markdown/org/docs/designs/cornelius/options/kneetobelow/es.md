@@ -1,11 +1,11 @@
 ---
-title: "Longitud del puño"
+title: "Cuff length"
 ---
 
 ***
 
-Controla la longitud del corte.
+Controls the length of the cuff.
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](cornelius_kneetobelow_sample.svg "Efecto de esta opción en el patrón")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](cornelius_kneetobelow_sample.svg "Effect of this option on the pattern")
