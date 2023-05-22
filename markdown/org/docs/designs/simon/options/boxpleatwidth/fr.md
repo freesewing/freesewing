@@ -1,11 +1,11 @@
 ---
-title: "Largeur du pli plat"
+title: "Box pleat width"
 ---
 
 ***
 
-Contrôle la largeur du pli (optionnel) à l'arrière.
+Controls the width of the (optional) box pleat at the back.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_boxpleatwidth_sample.svg "Effet de cette option sur le motif")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_boxpleatwidth_sample.svg "Effect of this option on the pattern")
