@@ -1,9 +1,9 @@
----
+- - -
 title: "Inner pocket width"
----
+- - -
 
-The width of the inner pocket.
+La largeur de la poche intérieure.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_innerpocketwidth_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_innerpocketwidth_sample.svg "Effet de cette option sur le modèle")
