@@ -2,7 +2,7 @@
 title: "Huey hoodie: Cutting Instructions"
 ---
 
-**Tissu principal**
+**Main fabric**
 
 - Cut **2 front** parts
 - Cut **1 back** part on the fold
