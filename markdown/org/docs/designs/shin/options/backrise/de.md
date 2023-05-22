@@ -2,12 +2,12 @@
 title: "Back rise"
 ---
 
-Wie viel zusätzlicher Aufstieg wollen Sie zurück?
+How much extra rise do you want at the back?
 
-Dieser Faktor erhöht die Taille nur an der Rückseite deiner Schwimmstämme.
+This factor will raise the waist at the back of your swim trunks only.
 
-> Wenn du die Taille insgesamt erhöhen möchtest, das ist die Option **Aufstieg**
+> If you want to raise the waist overall, that's what the **rise** option does
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](shin_backrise_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](shin_backrise_sample.svg "Effect of this option on the pattern")
