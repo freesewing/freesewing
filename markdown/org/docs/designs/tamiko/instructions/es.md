@@ -1,16 +1,16 @@
----
+- - -
 title: "Tamiko top: Sewing Instructions"
----
+- - -
 
 ### Paso 1: Termina la costura del orificio
 
-![Finsh the armhole seam](step03.png)
+![Encender la costura del orificio](step03.png)
 
-- Finish the armhole seam with a narrow hem.
+- Termina la costura del orificio con un tubo estrecho.
 
 ### Paso 2: Termina la parte superior
 
-![Sew the three seamlines that are marked on your draft](step04.png)
+![Marca las tres líneas de costura que están marcadas en tu borrador](step04.png)
 
 <Note>
 
@@ -19,8 +19,8 @@ De esta manera, tu parte superior no puede desplazarse mientras lo terminamos.
 
 </Note>
 
-- Sew the three seamlines that are marked on your draft. F-H, C and I-J in the diagram, represented by lines and notches on the pattern.
+- Define las tres líneas de costura que están marcadas en tu borrador. F-H, C and I-J in the diagram, represented by lines and notches on the pattern.
 
-### Step 3: Enjoy!
+### Paso 3: ¡Disfrútalo!
 
 Now enjoy your new top and it's zero waste properties!
