@@ -2,18 +2,18 @@
 title: "Tip width"
 ---
 
-![Breedte punt](tipwidth.svg)
+![Tip width](tipwidth.svg)
 
-De breedte van de punt is de breedte aan de punt van de das.
+The tip width is the width at the tip of the tie.
 
-Hoe breed je das is aan de punt is een stijlkeuze.
+How wide your tie is at the tip is a style choice.
 
 <Note>
 
-Maak de breedte van de punt niet smaller dan de breedte van de knoop
+Do not make the tip width smaller than the knot width
 
 </Note>
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](trayvon_tipwidth_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](trayvon_tipwidth_sample.svg "Effect of this option on the pattern")
