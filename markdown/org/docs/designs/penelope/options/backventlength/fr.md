@@ -2,8 +2,8 @@
 title: "Back vent length"
 ---
 
-Ceci contrôle la longueur du ventilateur arrière en pourcentage de la longueur de la jupe.
+This controls the length of the back vent as a percentage of the skirt length.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](penelope_backventlength_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_backventlength_sample.svg "Effect of this option on the pattern")
