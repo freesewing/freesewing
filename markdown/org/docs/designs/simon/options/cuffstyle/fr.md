@@ -2,17 +2,17 @@
 title: "Cuff style"
 ---
 
-![Style de bracelet](cuffstyle.svg)
+![Cuff style](cuffstyle.svg)
 
-Quel style de manche voulez-vous ?
+What style of cuff do you want?
 
-- Poignet classique rond
-- Emmanchure de tonneau de chambre
-- Poignet classique carré
-- Poignet mousquetaire rond
-- Emmanchure française de Chamfer
-- Poignet mousquetaire carré
+- Rounded barrel cuff
+- Chamfer barrel cuff
+- Straight barrel cuff
+- Rounded French cuff
+- Chamfer French cuff
+- Straight French cuff
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_cuffstyle_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_cuffstyle_sample.svg "Effect of this option on the pattern")
