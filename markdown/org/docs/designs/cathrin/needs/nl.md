@@ -14,6 +14,6 @@ Sample supplies list:
 - About 0.5 meters (0.6 yards) of outer fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
 - Boning
 - Grommets (size 2)
-- Ongeveer 2 meter biaslint
-- Ongeveer 3 meter van het uitlopen
+- About 2 meters of bias tape
+- About 3 meters of lacing
 - Tools: Grommet setter, awl
