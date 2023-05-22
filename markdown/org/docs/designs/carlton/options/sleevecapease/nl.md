@@ -6,14 +6,14 @@ title: "Sleevecap ease"
 
 How much sleevecap ease do you want?
 
-> #### Waarom?
+> #### What's the point?
 > 
-> De hoeveelheid extra ruimte in de mouwkop bepaalt hoe de mouw over de schouder valt.
+> The amount of sleevecap ease determines how the sleeves rolls from the shouder.
 > 
-> Meer ruimte zorgt voor een ronde mouwkop, zoals je zou zien op een jas. Minder ruimte geeft de mouw een platter aanzicht.
+> More ease makes the sleeve curl into the seam as you would expect from a coat. Less ease makes the sleeve lie flatter.
 
-> Hoe lichter je stof, hoe minder extra ruimte je wil toevoegen.
+> The lighter your fabric, the less sleevecap ease you want.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlton_sleevecapease_sample.svg "Effect of this option on the pattern")
