@@ -2,10 +2,10 @@
 title: "Button placket width"
 ---
 
-![Anchura de la vista de los botones](buttonplacketwidth.svg)
+![Button placket width](buttonplacketwidth.svg)
 
-El ancho de la posición de su botón.
+The width of your button placket.
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_buttonplacketwidth_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_buttonplacketwidth_sample.svg "Effect of this option on the pattern")
