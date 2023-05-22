@@ -1,20 +1,20 @@
----
+- - -
 title: "Bruce boxer briefs: Cutting Instructions"
----
+- - -
 
-Bruce consists of a back, and two sides, insets and fronts.
+Bruce besteht aus einer Rückseite, und jeweils zwei Seitenteilen, Einsätzen und Vorderteilen.
 
-- **Main fabric**
-  - Cut **1 back** on the fold
-  - Cut **2 fronts**
-  - Cut **2 insets**
-  - Cut **2 sides**
+- **Oberstoff**
+  - Schneide **1 Rückseite** im Stoffbruch
+  - Schneide **2 Vorderteile**
+  - Schneide **2 Einsätze**
+  - Schneide **2 Seitenteile**
 
 <Warning>
 
-###### Caveats
+###### Vorbehalte
 
-- **back**: Extra hem allowance at the leg
-- **front**: Cut this **twice**
+- **Rückseite**: extra Saumzugabe am Bein
+- **Vorderteil**: schneide dies **zweimal**
 
 </Warning>
