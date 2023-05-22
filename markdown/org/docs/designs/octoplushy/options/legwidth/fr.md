@@ -1,9 +1,9 @@
 ---
-title: "Leg Width"
+title: "Largeur des jambes"
 ---
 
-The width of the legs can be adjusted.
+La largeur des jambes peut être ajustée.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le modèle
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](octoplushy_legwidth_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](octoplushy_legwidth_sample.svg "Effet de cette option sur le modèle")
