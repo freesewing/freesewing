@@ -1,17 +1,17 @@
 ---
-title:"Pince de carrure avant"
+title: "Front scye dart"
 ---
 
-Ce patron est prévu avec une pince de 1 cm (pensez pince d'emmanchure) par défaut sur le devant.
+This pattern comes with a default 1 cm scye dart (think armhole dart) at the front.
 
-Vous pouvez augmenter ou diminuer la pince pour modifier l'emmanchure.
+You can increase or decrease the dart to influence the armhole.
 
-> #### ###### Pour quoi faire ?
+> #### What's the point?
 > 
-> Le but de cette pince est de s'assurer que l'emmanchure se pose à plat contre votre corps, plutôt que de la bailler. Etant donné qu’il n’y a pas de manche, une emmanchure qui baille c'est particulièrement disgracieux.
+> The point of this dart is to make sure the armhole lies flat against your body, rather than gape. Given that there is no sleeve, a gaping armhole is particularly unsightly.
 
-> Bien que cette pince soit utilisée pour façonner le patron, vous n'avez pas à coudre la pince parce qu'elle est incorporée dans la pince du devant.
+> While this dart is used to shape the pattern, you don't have to sew the dart because it's incorporated in the front dart.
 
-## Effet de cette option sur le patron
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_frontscyedart_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_frontscyedart_sample.svg "Effect of this option on the pattern")
