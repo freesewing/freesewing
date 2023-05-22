@@ -2,11 +2,11 @@
 title: "Shoulder seam shift: collar side"
 ---
 
-Controla la ubicación de la costura del hombro en el lado del cuello.
+Controls the shoulder seam location on the collar side.
 
-- Aumenta esta opción para desplazar la costura del hombro hacia adelante en el lado del cuello
-- Disminuye esta opción para desplazar la costura del hombro hacia atrás en el lado del cuello
+- Increase this option to shift the shoulder seam forward on the collar side
+- Decrease this option to shift the shoulder seam backward on the collar side
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](huey_s3collar_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_s3collar_sample.svg "Effect of this option on the pattern")
