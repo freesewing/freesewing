@@ -1,9 +1,9 @@
----
+- - -
 title: "Bruce boxer briefs: Fabric Options"
----
+- - -
 
-You need a stretchy fabric for this pattern. Preferable something that is comfortable and soft to the touch, while allowing the skin to breathe.
+Necesitas un tejido estirado para este patrón. Preferible algo que es cómodo y suave al tacto, permitiendo al mismo tiempo que la piel respire.
 
-I personally think that nothing can beat rayon for this pattern, although you can do with some other knit too, like jersey.
+Personalmente creo que nada puede batir el rayon para este patrón, aunque también se puede hacer con otros tejidos, como la jersey.
 
-When in doubt, go for rayon.
+En caso de duda, vaya a la rayon.
