@@ -1,6 +1,6 @@
----
+- - -
 title : "Chute d'emmanchure"
----
+- - -
 
 ![L'option de descente d'emmanchure sur Aaron](./armholedrop.svg)
 
