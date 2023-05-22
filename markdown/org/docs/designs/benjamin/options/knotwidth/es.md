@@ -10,10 +10,10 @@ How wide your bow tie is in the middle will influence the tie knot. Bigger works
 
 <Note>
 
-Con el empatado del tipo Cuadrado, este valor también dicta el ancho de las puntas
+With the Square type bow tie, this value also dictates the width of the tips
 
 </Note>
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_knotwidth_sample.svg "Effect of this option on the pattern")
