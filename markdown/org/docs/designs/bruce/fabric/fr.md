@@ -1,9 +1,9 @@
 ---
-title: "Boxer Bruce : Options de tissu"
+title: "Bruce boxer briefs: Fabric Options"
 ---
 
-Vous avez besoin d'un tissu extensible pour ce modèle. Préférez quelque chose de confortable et doux au toucher, et qui permette à la peau de respirer.
+You need a stretchy fabric for this pattern. Preferable something that is comfortable and soft to the touch, while allowing the skin to breathe.
 
-Je pense personnellement que rien ne vaut la viscose (rayonne) pour ce modèle, même si vous pouvez utiliser un autre tissu en maille, comme le jersey.
+I personally think that nothing can beat rayon for this pattern, although you can do with some other knit too, like jersey.
 
-En cas de doute, choisissez la viscose.
+When in doubt, go for rayon.
