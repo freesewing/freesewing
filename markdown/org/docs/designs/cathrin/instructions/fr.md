@@ -4,17 +4,19 @@ title: "Cathrin corset: Sewing Instructions"
 
 <Note>
 
-#### Il y a plusieurs façons de construire un corset
+#### There are many ways to construct a corset
 
-Ces instructions ne sont qu'une seule façon. Grâce à cette méthode, je recommande d'utiliser une plus grande marge de couture d'au moins 1,5 cm afin que vos canaux de fixation s'intègrent confortablement à l'intérieur de la marge de couture.
+These instructions are just one way. With this method, I recommend using a wider seam allowance of at least 1.5cm so that your boning channels fit comfortably inside the seam allowance.
 
-Les fabricants de corsets débutants devraient lire les tutoriels écrits par [Sidney Eileen](http://www.sidneyeileen.com), qui montrent plusieurs méthodes de construction différentes. [Foundations Revealed](https://www.foundationsrevealed.com) est un site paywall pour les créateurs de corseaux, avec plusieurs articles exceptionnels gratuits pour les non-membres.
+Beginner corset makers should read the tutorials written by [Sidney Eileen](http://www.sidneyeileen.com), who demonstrates several different construction methods. [Foundations Revealed](https://www.foundationsrevealed.com) is a paywall site for corset makers, with several exceptional articles free for non members.
 
-Cathrin a également [cet article informatif sur la création de corsets](https://katafalk.wordpress.com/2009/05/03/how-i-sew-corsets/) sur son blog que vous pourriez trouver utile. Cathrin a également [cet article informatif sur la création de corsets](https://katafalk.wordpress.com/2009/05/03/how-i-sew-corsets/) sur son blog que vous pourriez trouver utile.
+#### Check the original tutorial
+
+This pattern is based on [this tutorial by Cathrin Alen](https://katafalk.wordpress.com/2010/06/24/underbust-pattern-tutorial/). Cathrin also has [this informative post on making corsets](https://katafalk.wordpress.com/2009/05/03/how-i-sew-corsets/) on her blog which you might find helpful.
 
 </Note>
 
-## Étape 1 : Coudre les canaux de fixation au centre de l'avant
+## Step 1: Sew boning channels in center front
 
 ![Place outer Panel 1 on core Panel 1, bad sides together](step01.png)
 
@@ -22,7 +24,7 @@ Start with the center front pieces. For an 11-panel Cathrin, this will be Panel 
 
 With a small stitch width (I set mine to “2”), sew a line straight down the center front. Then sew two boning channels to either side, allowing a bit of extra space, about 2mm, in addition to the width of your boning.
 
-## Étape 2 : Attacher le premier panneau latéral
+## Step 2: Attach the first side panel
 
 ![Attach Panel 2](step02.png)
 
@@ -38,7 +40,7 @@ Match up the four layers of fabric at the narrowest part, _good sides together_,
 
 Sew the seam.
 
-## Étape 3 : Coudre le canal de fixation
+## Step 3: Sew the boning channel
 
 ![Press flat and sew boning channel](step03.png)
 
@@ -48,7 +50,7 @@ Edgestitch right along the folded edge, just 1-2mm from the seam line. Sew slowl
 
 Topstitch another seam parallel to the first seam, allowing a bit of extra space, about 3mm, in addition to the width of your boning.
 
-## Étape 4 : Attacher le panneau suivant
+## Step 4: Attach the next panel
 
 ![Attach Panel 3](step04.png)
 
@@ -62,7 +64,7 @@ Match up the four layers of fabric at the narrowest part, _good sides together_,
 
 Sew the seam.
 
-## Étape 5 : Coudre un autre canal de liaison
+## Step 5: Sew another boning channel
 
 ![Press flat and sew boning channel](step05.png)
 
@@ -74,7 +76,7 @@ Topstitch another seam parallel to the first seam, allowing a bit of extra space
 
 This new boning channel should look just like the one you made attaching Panel 2 to Panel 1.
 
-## Étape 6 : Continuer à attacher les panneaux latéraux
+## Step 6: Continue attaching the side panels
 
 Continue attaching panels, creating a boning channel in each seam. Attach Panel 4 to Panel, Panel 5 to Panel 4, and finally Panel 6 to Panel 5.
 
@@ -84,7 +86,7 @@ Repeat these steps on the other side.
 
 ![All panels on both sides](step06b.png)
 
-## Étape 7 : Terminer le retour du corset
+## Step 7: Finish the corset back
 
 With all of your panels connected, you’re working with the flat sides of each Panel 6.
 
@@ -106,14 +108,14 @@ Repeat on the other side.
 
 Insert boning in all of the channels.
 
-## Étape 9 : Lier le haut et le bas
+## Step 9: Bind the top and bottom
 
 Use bias tape or ribbon to bind the top and bottom edges of the corset.
 
-## Étape 10: Définir les grommets
+## Step 10: Set the grommets
 
 Set the grommets in the locations you marked earlier.
 
-## Étape 11: Dresser le corset
+## Step 11: Lace the corset
 
-C'est terminé !
+You’re done!
