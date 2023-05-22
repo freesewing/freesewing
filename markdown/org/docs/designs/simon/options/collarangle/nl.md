@@ -2,22 +2,22 @@
 title: "Collar angle"
 ---
 
-![Hoek kraag](collarangle.svg)
+![Collar angle](collarangle.svg)
 
-Hoeveel graden tussen de rand van de kraag en de draadrichting.
+The number of degrees between the collar edge and the grainline.
 
 <Note>
 
-###### Waarom?
+###### What's the point?
 
-Samen met de hoogte van de kraag is dit de belangrijkste factor voor de stijl van je kraag.
+Together with the collar height, this is the most important factor for the style of your collar.
 
-Een grotere waarde zorgt voor een meer weggeknipte look.
+Higher values mean a more cut-away style.
 
-In dit voorbeeld is de bovenste versie 80° (de standaard) en de onderste 110°.
+In the example image, the top is 80 degrees (the default) and the bottom is 110 degrees.
 
 </Note>
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_collarangle_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarangle_sample.svg "Effect of this option on the pattern")
