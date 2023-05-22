@@ -2,6 +2,6 @@
 title: "Florent flat cap: Fabric Options"
 ---
 
-For the main fabric of your cap, a thick fabric will shape better, but if you go for a lighter fabric, you can interface it to give it more body.
+Für den Hauptstoff deiner Kappe wird ein dicker Stoff besser formen aber wenn Sie für einen leichteren Stoff gehen, können Sie es so zu geben, dass es mehr Körper.
 
-The lining can be anything, but it is usually something light and nice.
+Das Futter kann alles sein, aber es ist in der Regel etwas leicht und schön.
