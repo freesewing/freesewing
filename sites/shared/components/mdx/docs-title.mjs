@@ -1,5 +1,6 @@
 import get from 'lodash.get'
 import { useNavigation } from 'site/hooks/use-navigation.mjs'
+import Link from 'next/link'
 
 const getPage = {
   dev: (slug, nav) => get(nav, slug.split('/')),
@@ -17,3 +18,9 @@ export const DocsTitle = ({ slug, className = '', site = 'org' }) => {
 
   return page ? <span className={className}>{page.t}</span> : null
 }
+
+export const DocsLink = (props) => (
+  <Link href={`${props.site === 'org' ? '/docs/' : ''}${props.slug}`}>
+    <DocsTitle {...props} />
+  </Link>
+)
