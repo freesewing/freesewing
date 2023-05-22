@@ -4,8 +4,8 @@ title: "Band (chest) tie ends"
 
 ***
 
-Si prefieres que las puntas de la cinta alrededor del pecho sean planas o acaben en punta
+Whether you like straight or pointy ends on the tie around your chest
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bee_bandtieends_sample.svg "Efecto de esta opción en el patrón")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_bandtieends_sample.svg "Effect of this option on the pattern")
