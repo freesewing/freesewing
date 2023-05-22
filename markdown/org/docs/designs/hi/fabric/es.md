@@ -1,17 +1,17 @@
 ---
-title: "Hi, tiburón: Opciones de tela"
+title: "Hi the shark: Fabric Options"
 ---
 
-## Telas principales y de contraste (Parte superior del cuerpo, barriga y boca)
+## Main and Contrast Body Fabrics (Upper body, belly and mouth)
 
-Este peluche se ha pensado con la idea de tener telas de tres colores: una para la parte superior del cuerpo, una para la barriga y un trozo pequeño para la boca. Si no quieres comprar tela extra para la boca, es una pieza tan pequeña que seguramente puedas utilizar un retal de la tela que uses para la parte superior del cuerpo o la barriga.
+This plush toy is intended to have three different coloured fabrics, one for the upper body, one for the belly, and a smaller piece for the mouth. If you don't wish to purchase additional fabric just for the mouth, it's a small enough piece that you can likely use a scrap from the upper body or belly fabric.
 
-Hi ha sido diseñado con el uso de tela de peluche en mente, del que están hechos la mayoría de peluches, pero también podrías usar tela polar, fieltro, tela vaquera, pana o cualquier tela medianamente pesada. Telas finas o con caída probablemente no mantengan la forma de Hi correctamente una vez rellenado. Tejidos con elasticidad en los dos sentidos funcionan mejor que las telas con elasticidad en un sentido, pero en este caso la dirección del elástico debería ir perpendicular a la urdimbre.
+Hi is designed for faux fur fabric, which most plush toys are made from, but you could also use polar fleece, felt, denim, corduroy, or anything moderately heavy. Lightweight or drapey fabrics may not hold Hi's shape well when stuffed. Fabrics with a two-way stretch will work better than wovens, the stretch should be perpendicular to the grainline.
 
-## Tela para los dientes
+## Teeth Fabric
 
-Los bordes de los dientes van sueltos, así que deberías utilizar una tela que no se deshilache, por ejemplo fieltro.
+The teeth edges are left raw, so should be made from a fabric that does not unravel such as felt.
 
-## Relleno
+## Stuffing
 
-Puesto que se trata de un peluche, lo tendremos que rellenar. En la mayoría de casos querrás utilizar relleno de fibra de poliéster, pero si tienes muchos retales podrías utilizar retales hechos tiras o triturados. Pero ten en cuenta que esto será más pesado y menos blando que la fibra de poliéster. También vale la pena valorar si tu Hi corre el riesgo de mancharse o de querer darse un baño. No todas las opciones de relleno son lavables.
+Since this is a plush toy, it will need to be stuffed with material. Most of the time you'll want to use polyester fiberfill (polyfill), but if you have a lot of fabric scraps, you can use shredded scrap fabric. However this may be heavier and less soft than fiberfill. It's also worth thinking about whether your Hi may be at risk of getting dirty, or want to go for a swim, as not all stuffing options are washable.
