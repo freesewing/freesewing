@@ -1,11 +1,11 @@
 ---
-title: "Unterer Taillenband"
+title: "Lower waistband"
 ---
 
 ***
 
-Mit dieser Option kannst du das Taillenband unter deine (natürliche) Taille senken.
+This option allows you to lower the waistband below your (natural) waist.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](cornelius_waistbandbelowwaist_sample.svg "Effekt dieser Option auf das Schnittmuster")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](cornelius_waistbandbelowwaist_sample.svg "Effect of this option on the pattern")
