@@ -1,9 +1,9 @@
----
-title: "Hem radius"
----
+- - -
+title: "Rayon de l'ourlet"
+- - -
 
-Controls the amount by which the hem is rounded at the front bottom.
+Contrôle la quantité par laquelle l'ourlet est arrondi au fond avant.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_hemradius_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_hemradius_sample.svg "Effet de cette option sur le modèle")
