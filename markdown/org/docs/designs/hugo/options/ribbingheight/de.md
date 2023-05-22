@@ -1,9 +1,9 @@
 ---
-title: "Bündchen Breite (Höhe)"
+title: "Ribbing height"
 ---
 
-Die Breite (Höhe) des Bündchens am Bauchbund und den Ärmelbündchen.
+The height of the ribbing at the hem and cuffs.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](hugo_ribbingheight_sample.svg "Effekt dieser Variable auf das Schnittmuster")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](hugo_ribbingheight_sample.svg "Effect of this option on the pattern")
