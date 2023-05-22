@@ -1,11 +1,11 @@
----
+- - -
 title: "Theo trousers: Fabric Options"
----
+- - -
 
-You have a lot of options here, but keep in mind that these are classic cut trousers. In other words, do not use stretch, denim, pleather of that sort of thing. Safe bets are wool, cotton, or linen, possibly blended with some synthetic.
+Aquí tienes muchas opciones, pero ten en cuenta que son pantalones de corte clásicos. En otras palabras, no utilice estiramiento, denim, pliegue de ese tipo de cosas. Las apuestas seguras son lana, algodón o lino, posiblemente mezcladas con algún sintético.
 
-For **wool**, look in the suiting section of your fabric store. If this is your first pair, some wool-poly blend is most likely going to be more budget-friendly. But don't let price alone guide you, buying some cheap whimsical fabric is the best way to come up with a shitty looking pair of trousers, and get frustrated in the process.
+Para **lana**, mira en la sección de traje de tu tienda de tejidos. Si este es su primer par, lo más probable es que alguna mezcla de polo de lana sea más amigable con el presupuesto. Pero no dejes que el precio te guíe, comprar algún tipo de tela caprichosa barata es la mejor manera de crear un par de pantalones de apariencia mierda y dejarse frustrar en el proceso.
 
-For **cotton**, go for a heavier weight. Cotton might also be a bit easier on the beginner than wool. If unsure what to use, ask for chino in the fabric store and simply pick a colour you like.
+Para **algodón**, vaya a un peso más pesado. El algodón también podría ser un poco más fácil para los principiantes que la lana. Si no está seguro de qué usar, pregunte por el chino en la tienda de tejidos y simplemente escoja el color que quiera.
 
-Nothing beats **linen** on a hot summer day. It's fun to work with too, but it does wrinkle like a mofo, and even the most neatly made trousers look somewhat messy when made in linen. What I'm saying is, maybe not for your first pair.
+Nada pega a **lino** en un día caluroso de verano. Es divertido trabajar también con él, pero se envuelve como un mofo, y hasta los pantalones más bien hechos se ven un poco desordenados cuando se fabrican en lino. Lo que estoy diciendo es, tal vez no para su primer par.
