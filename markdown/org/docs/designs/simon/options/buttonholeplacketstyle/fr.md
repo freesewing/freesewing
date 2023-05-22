@@ -1,14 +1,14 @@
----
+- - -
 title: "Buttonhole placket style"
----
+- - -
 
-![Buttonhole placket style](buttonholeplacketstyle.svg)
+![Style de patte de boutonnage (côté boutonnières)](buttonholeplacketstyle.svg)
 
-Do you want classic buttonhole placket, or a seamless one (sometimes called French style)?
+Voulez-vous une patte de boutonnière classique, ou une patte à gorge cachée (parfois appelée "de style français") ?
 
 <Tip>
 
-Seamless is less work, and it looks great.
+La patte de boutonnage à gorge cachée est plus facile, et a un très beau rendu.
 
 </Tip>
 
@@ -18,6 +18,6 @@ As seamless is only possible on a _cut-on_ placket, this option is ignored if yo
 
 </Note>
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_buttonholeplacketstyle_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_buttonholeplacketstyle_sample.svg "Effet de cette option sur le modèle")
