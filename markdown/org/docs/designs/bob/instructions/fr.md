@@ -43,6 +43,6 @@ Next, install the snaps on the straps, as indicated on the pattern.
 
 If you don't have or want snaps, you can also use a button + buttonhole.
 
-## Étape 4: Vous avez terminé !
+## Step 4: You're done!
 
 That was easy 😃
