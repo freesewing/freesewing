@@ -2,35 +2,35 @@
 title: "Teagan T-shirt: Sewing Instructions"
 ---
 
-## Paso 1: Cierra las costuras del hombro
+## Step 1: Close the shoulder seams
 
 ![Close the shoulder seams](step01.svg)
 
-- Coloca el frente y la parte trasera sobre el otro con [buenos lados juntos](/docs/sewing/good-sides-together). Alinear las costuras del hombro.
-- Servir las costuras del hombro o unirlas con un zigzag estrecho (~2 mm) en la costura estándar.
+- Place the front and back on top of each other with [good sides together](/docs/sewing/good-sides-together). Align the shoulder seams.
+- Serge the shoulder seams, or stitch them with a narrow (~2 mm) zigzag stitch at the standard seam allowance.
 
 <Note>
-Opcional: En un tejedor más apretado, puede optar por reforzar las costuras del hombro pegando elástico claro a lo largo de la costura en el interior. En una camiseta, las costuras del hombro soportan la mayor parte del peso de la prenda. El refuerzo no es necesario, pero puede evitar que las costuras del hombro se estiren con el paso del tiempo.
+Optional: In a drapier knit, you may choose to reinforce the shoulder seams by stitching clear elastic along the seam on the inside. On a T-shirt, the shoulder seams support most of the weight of the garment. Reinforcing is not required, but it can keep the shoulder seams from stretching over time.
 </Note>
 
-## Paso 2: Establecer en mangas
+## Step 2: Set in the sleeves
 
 ![Set in sleeves](step02.svg)
 
-- Coloca tu ahora unido frente y atrás con el lado bueno arriba.
-- Identifique los lados delanteros y traseros de cada una de sus mangas. (Así es como separas la manga izquierda de la derecha.) (Así es como separas la manga izquierda de la derecha.) (Así es como separas la manga izquierda de la derecha.) On your paper pattern piece, the front side of the sleeve is to the right.
-- Coloque una manga en la parte superior de la parte frontal y trasera, con el lado bueno abajo.
-- Alínea la parte superior de la manga con la costura del hombro. Asegúrate de que la parte delantera y trasera de la manga esté alineada con las partes delanteras y traseras de tu camiseta.
-- Pin manga en su lugar a lo largo de todo el orificio. Hay un poco de facilidad de mangas, lo que significa que la cabeza de manga es un poco más larga que el orificio. Eche en la parte superior de la cabeza de manga mientras se pincha.
-- Coser / servir tu manga anclada en su lugar.
-- Repita para la otra manga.
+- Place your now attached front and back with the good side up.
+- Identify the front and back sides of each of your sleeves. (This is how you separate the left sleeve from the right.) On your paper pattern piece, the front side of the sleeve is to the right.
+- Place a sleeve on top of the front and back, with the good side down.
+- Align the top of the sleevecap with the shoulder seam. Make sure that the front and back of the sleeve are aligned with the front and back pieces of your shirt.
+- Pin sleeve in place along the entire armhole. There’s a bit of sleevecap ease, which means that the sleevehead is slightly longer than the armhole. Ease in the top part of the sleeve head while pinning.
+- Sew/serge your pinned sleeve in place.
+- Repeat for the other sleeve.
 
 ## Step 3: Sew the neck finish
 
 There are two options for the neck finish on Teagan: a knit band or knit binding. Knit band is what you typically see on store-bought T-shirts, whereas knit binding is the finish you'll find on the Aaron A-Tank. Directions for both are given here.
 
 <Note>
-Este es el paso más complejo para hacer la camisa de Teagan, pero sólo requiere un poco de práctica. No te preocupes, todo lo que tienes que hacer es hacer un par de estos y serás un profesional en poco tiempo.
+This is the most complex step in making the Teagan T-shirt, but it just requires a bit of practice. Don’t worry, all you need to do is make a couple of these and you’ll be a pro in no time.
 </Note>
 
 ### Option 1: knit band finish
@@ -77,7 +77,7 @@ Now it's time to sew the ends of our knit band together.
 
 - Now that your band ends are joined together, it’s time to finish the last 6 cm, by stretching and sewing down the band as you did for the rest.
 
-Hurray! You've finished the trickiest part! Hurray! You've finished the trickiest part! Optionally, you can secure the raw edges by stitching them down to the T-shirt fabric, just inside the knit band with a sig-zag or coverlock stitch. This is not required, but it is a detail that you'll see on many ready-to-wear T-shirts, and it can help your neck band lie flat.
+Hurray! You've finished the trickiest part! Optionally, you can secure the raw edges by stitching them down to the T-shirt fabric, just inside the knit band with a sig-zag or coverlock stitch. This is not required, but it is a detail that you'll see on many ready-to-wear T-shirts, and it can help your neck band lie flat.
 
 ![Sew down knit band to secure](step03i.svg)
 
@@ -85,7 +85,7 @@ Hurray! You've finished the trickiest part! Hurray! You've finished the trickies
 
 <Tip>
 
-Se puede encontrar una forma más extensa de enlazar en la [Instucciones de Aaron](/docs/patterns/aaron/instructions).
+A more extensive how-to on knit binding can be found in the [Aaron Instuctions](/docs/patterns/aaron/instructions).
 
 </Tip>
 
@@ -149,7 +149,7 @@ On the inside of your T-shirt, trim back the knit binding just outside of your s
 
 </Note>
 
-## Paso 4: Cierre las costuras y mangas laterales
+## Step 4: Close the side seams and sleeves
 
 ![Close the side seams and sleeves](step04.svg)
 
@@ -158,7 +158,7 @@ On the inside of your T-shirt, trim back the knit binding just outside of your s
 - Serge/sew the side seam and continue sewing to close the arms all the way to the sleeve hem.
 - Repeat on the other side.
 
-## Paso 5: Termina el corte y mangas
+## Step 5: Finish hem and sleeves
 
 ![Finish hem and sleeves](step05.svg)
 
