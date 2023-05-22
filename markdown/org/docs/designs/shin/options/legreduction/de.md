@@ -2,12 +2,12 @@
 title: "Leg reduction"
 ---
 
-Der Betrag, um die Streckung an den obersten Beinen weiter zu reduzieren.
+The amount to further reduce the stretch at the (upper) legs.
 
-> #### Was ist der Punkt?
+> #### What's the point?
 > 
-> Mit dieser Option passen die Beine schlanker als der Rest der Schwimmstämme, um Lücken zu vermeiden.
+> This option makes the legs fit more snugly than the rest of your swimming trunks to avoid gaping.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](shin_legreduction_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](shin_legreduction_sample.svg "Effect of this option on the pattern")
