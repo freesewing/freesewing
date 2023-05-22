@@ -9,6 +9,6 @@ It is common to have the edge of the lapels not be entirely straight, but rather
 - Increase this option to shift the lapel tip inward
 - Decrease this option to shift the lapel tip outward
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_lapelreduction_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_lapelreduction_sample.svg "Effect of this option on the pattern")
