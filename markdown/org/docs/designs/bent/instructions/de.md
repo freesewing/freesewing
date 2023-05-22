@@ -7,7 +7,7 @@ title: "Bent body Block: Sewing Instructions"
 ###### Bent is a block, not a pattern
 
 A block is a basic shape on which other patterns are based.
-Sie werden manchmal auch als Schläger bezeichnet, obwohl Puristen argumentieren, dass ein Block und ein Schläger verschiedene Dinge sind.
+They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
 
 Blocks are typically not made as-is but rather serve as a basis for other patterns so the instructions below will not go in depth about closures or finishes and are for the default Bent block.
 
@@ -39,7 +39,7 @@ If you are making adjustments you may wish to sew the seams _wrong sides togethe
 
 </Tip>
 
-### Schritt 2: Anprobieren
+### Step 2: Try it on
 
 - Try it on and check the fit by pinning the front closed whilst wearing it.
 - Make any alterations and try it on again.
@@ -68,7 +68,7 @@ It is all up to you! Experiment and go forth!
 
 </Note>
 
-### Schritt 3: Erstelle ein Papierschnittmuster
+### Step 3: Make a paper pattern
 
 - Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
 - Now you have a pattern you can use to produce a garment.
@@ -81,4 +81,4 @@ It is best practice to make a paper pattern from the mock-up if you have made an
 
 ### Bent is a block, looking for a finalised pattern?
 
-> Hier sind einige der Schnittmuster, die auf Bent basieren: [Carlton](/patterns/carlton), [Carlita](/patterns/carlita), und [Jaeger](/patterns/jaeger).
+> Here are some of the patterns based on Bent: [Carlton](/patterns/carlton), [Carlita](/patterns/carlita), and [Jaeger](/patterns/jaeger).
