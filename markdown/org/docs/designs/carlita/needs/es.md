@@ -17,6 +17,6 @@ To make Carlita, you will need the following:
 
 <Warning>
 
-Carlita has a lot of pieces! Carlita has a lot of pieces! These lengths are estimates, you may need more or less depending on your size but if in doubt add an extra 0.5 to 1 metre of fabric. Carlita has a lot of pieces! These lengths are estimates, you may need more or less depending on your size but if in doubt add an extra 0.5 to 1 metre of fabric.
+Carlita has a lot of pieces! These lengths are estimates, you may need more or less depending on your size but if in doubt add an extra 0.5 to 1 metre of fabric.
 
 </Warning>
