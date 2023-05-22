@@ -1,11 +1,11 @@
----
+- - -
 title: "Front dart placement"
----
+- - -
 
-![Front dart placement](frontdartplacement.svg)
+![Colocación de la pinza delantera](frontdartplacement.svg)
 
-Location of the front dart as a proportion of your chest circumference. Higher numbers move it more to the side.
+Ubicación del dardo delantero como proporción de la circunstancia del pecho. Los números más altos lo mueven más al lado.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_frontdartplacement_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](jaeger_frontdartplacement_sample.svg "Efecto de esta opción en el patrón")
