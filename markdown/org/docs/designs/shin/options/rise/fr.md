@@ -2,10 +2,10 @@
 title: "Rise"
 ---
 
-Cette option permet de contrôler la hauteur générale de la taille.
+This option controls the overal height of the waist.
 
-> Plus la valeur est élevée, plus la taille est haute.
+> The higher the rise, the higher your waist.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](shin_rise_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](shin_rise_sample.svg "Effect of this option on the pattern")
