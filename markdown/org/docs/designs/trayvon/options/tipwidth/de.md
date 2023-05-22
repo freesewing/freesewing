@@ -1,19 +1,19 @@
----
+- - -
 title: "Tip width"
----
+- - -
 
-![Tip width](tipwidth.svg)
+![Spitzenbreite](tipwidth.svg)
 
-The tip width is the width at the tip of the tie.
+Die Breite der Spitze ist die Breite an der Spitze der Krawatte.
 
-How wide your tie is at the tip is a style choice.
+Wie weit Ihr Krawatte an der Spitze ist, ist eine Wahl im Stil.
 
 <Note>
 
-Do not make the tip width smaller than the knot width
+Die Breite der Spitze nicht kleiner als die Knotenbreite
 
 </Note>
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](trayvon_tipwidth_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](trayvon_tipwidth_sample.svg "Effekt dieser Option auf das Schnittmuster")
