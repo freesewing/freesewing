@@ -4,6 +4,6 @@ title: "Hugo hoodie: What You Need"
 
 To make Hugo, you will need the following:
 
-- Basis naaimateriaal
+- Basic sewing supplies
 - About 2 meters (2.2 yards) of a suitable fabric ([see Fabric options](/docs/patterns/hugo/fabric))
-- Boordstof voor de zoom en manchetten
+- Ribbing fabric for the hem and cuffs
