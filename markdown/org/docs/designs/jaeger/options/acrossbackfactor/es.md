@@ -2,10 +2,10 @@
 title: "Across back factor"
 ---
 
-![Factor de ancho de espalda](acrossbackfactor.svg)
+![Across back factor](acrossbackfactor.svg)
 
-Controla el ancho de espalda como un factor de la medida de hombro a hombro
+Controls your across back width as a factor of your shoulder to shoulder measurement
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](jaeger_acrossbackfactor_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_acrossbackfactor_sample.svg "Effect of this option on the pattern")
