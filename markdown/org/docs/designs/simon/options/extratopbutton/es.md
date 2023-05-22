@@ -2,25 +2,25 @@
 title: "Extra top button"
 ---
 
-![Botón extra superior](extratopbutton.svg)
+![Extra top button](extratopbutton.svg)
 
-¿Quiere un botón adicional entre el botón frontal superior y el botón de pie de cuello?
+Do you want an extra button between the top front button and collar stand button?
 
 <Note>
 
-###### ¿Por qué un botón extra?
+###### Why an extra button?
 
-Este botón adicional le permite deshacer el botón de cuello con su camisa relativamente cerrada.
+This extra button allows you to undo your collar button with your shirt staying relatively closed.
 
-Es un botón adicional que querrás si planeas seguir teniendo un buen aspecto en la barra después de tu día de trabajo con tu botón superior deshacer y tu corbata algo suelta.
-El botón extra también es genial si llevas la camisa debajo de una prenda con el botón superior deshacer. Por ejemplo, bajo un suéter.
+It's an extra button you'll want if you plan to still look good in the bar after your work day with your top button undone and your tie somewhat loose.
+The extra button is also great if you are wearing your shirt under an overgarment with the top button undone. For example, under a sweater.
 
-No incluya el botón superior si desea un aspecto más casual.
+Do not include the top button if you want a more casual look.
 
-Este botón adicional se añade al número de botones en la parte delantera. No sustituye a otro botón.
+This extra button is added to the number of buttons on the front. It does not replace another button.
 
 </Note>
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_extratopbutton_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_extratopbutton_sample.svg "Effect of this option on the pattern")
