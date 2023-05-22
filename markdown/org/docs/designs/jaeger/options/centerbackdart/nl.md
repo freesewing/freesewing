@@ -2,10 +2,10 @@
 title: "Center back dart"
 ---
 
-![Middenrug neep](centerbackdart.svg)
+![Center back dart](centerbackdart.svg)
 
-De reductie aan de middenrug, van schouders naar nek, die aanpast voor een gebogen bovenrug.
+The reduction at the center back from shoulders to neck, which accomodates for a curved upper back.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](jaeger_centerbackdart_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_centerbackdart_sample.svg "Effect of this option on the pattern")
