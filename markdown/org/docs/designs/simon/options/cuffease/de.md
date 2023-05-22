@@ -2,20 +2,20 @@
 title: "Cuff ease"
 ---
 
-![Manschette Zugabe](cuffease.svg)
+![Cuff ease](cuffease.svg)
 
-Legt fest, wieviel die Manschette größer ist als dein Handgelenk.
+Determines how much the cuff is larger than your wrist.
 
-Ändern Sie diese Option, um Ihnen mehr oder weniger Platz im Handgelenk zu geben.
+Change this option to give yourself more or less room at the wrist.
 
 <Note>
 
-Vielleicht möchtest du mehr, wenn du möchtest, dass die Hemdschicht über eine sperrige Uhr passt. Das Zimmer war sehr klein, aber das Personal war sehr freundlich und hilfsbereit.
+You might want more if you want the shirt cuff to fit over a bulky watch. Less room might be better if you want to wear the shirt under an overgarment like a sweater.
 
-Wer sein Shirt unter einem Pullover tragen möchte, sollte sich auch die Schmalspurtaste der Fässer ansehen.
+Those wanting to wear their shirt under a sweater should also have a look at the barrelcuff narrow button option.
 
 </Note>
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_cuffease_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_cuffease_sample.svg "Effect of this option on the pattern")
