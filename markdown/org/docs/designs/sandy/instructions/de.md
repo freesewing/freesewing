@@ -15,79 +15,79 @@ Due to seamless and closure Sandy's needing different constructions we have sepa
 
 </Note>
 
-## Schritt 1: Vorbereitung des Rocks
+## Step 1: Prepping the Skirt
 
-- Nähe die Rock-Naht  _rechts auf rechts_ zusammen bis dahin, wo die Öffnung für den Verschluss beginnen soll.
+- If including a closure, sew the skirt seam  _good sides together_ up to where you intend the opening to start.
 - Add Pockets if using.
 - If using lining, prep the same as the skirt.
 - _Finish_ seams if not lining.
 
 <Note>
 
-Taschen sind in Sandy nicht enthalten, da sie standardmäßig nur eine Naht oder gar keine Nähte hat.
+Pockets are not included in Sandy as it has one seam by default or no seams at all.
 
-Wenn du Naht-Taschen haben möchtest, kannst du das Rock- Schnittmuster teilen, um Nähte zu erzeugen, in die du die Taschen einfügen kannst. Wenn du es in Drittel (standard) oder Hälften teilst, entstehen Seitennähte, in die du die Nahttaschen einfügen kannst. Vergiss nicht, Nahtzugaben an den Schnittlinien hinzuzufügen.
+If you would like inseam pockets you can cut the skirt pattern piece into multiple pieces rather than a single one to create seams to insert them into. Cutting it into thirds (for default) or two (for seamless) will give you two sideseams for two inseam pockets, just don't forget to add back seam allowance to the cut lines if including.
 
-Wenn du keine zusätzlichen Nähte erstellen möchtest, aber trotzdem Taschen haben möchtest, kannst du eine Tasche aufsetzen, oder wenn du dich abenteuerlich fühlst, kannst du auch Paspeltaschen nähen.
+If you do not wish to create additional seams but still wish to have pockets, you can use Patch Pockets or if you are feeling adventurous, you can use Welt Pockets.
 
 </Note>
 
-## Schritt 2: Bereite die Öffnung vor
+## Step 2: Prep the opening
 
 - Insert zipper or placket into opening if using.
-- If not using, press the openings seam allowance to the inside and _Edgestitch_/_Topstitch_ in place. Nach Wunsch kannst du die Naht absteppen.
+- If not using, press the openings seam allowance to the inside and _Edgestitch_/_Topstitch_ in place. You may also wish to continue the topstitching down the seam.
 
 <Note>
 
-Überspringe diesen Schritt, wenn:
-- du den Reißverschluss in den Bund einfügen möchtest.
-Du machst eine nahtlose Version.
+Skip this step if:
+- You are including the zipper in the waistband.
+- You are making a seamless version.
 
 </Note>
 
-## Schritt 3: Wenden
+## Step 3: Lining
 
-- (optional) du kannst ein Zwischenfutter mit einem steiferen oder festeren Material erstellen.
+- (Optional) Interline the skirt with a stiffer or stronger fabric.
 - Attach Lining to skirt at hem and opening by your preferred method.
 - _Baste_ Lining to skirt at waist.
-- Bei Bedarf Die Weite in Falten legen.
+- Gather the waist if needed.
 
-## Schritt 4: Der Bund
+## Step 4: The waistband
 
-### Verschlüsse
+### Closures
 
-- Verstärke den Bund der Länge nach auf einer Hälfte. Oder verstärke eines der gebogenen Bundteile.
-- Presse an der Seite, die nicht verstärkt ist, die Nahtzugabe nach unten um. Zurückschneiden. Hefte den Bruch, wenn nötig.
-- Nähe den verstärkten Teil des Bundes _rechts auf rechts_ an den Rock. Falls nötig, lege ein paar Falten.
-- Wenn du den gebogenen Bund nähst, nähe die Bundteile mit Verstärkung rechts auf rechts auf die Teile ohne Verstärkung. Schneide die Nahtzugabe zurück, schneide sie ein und presse den nicht verstärkten Teil nach oben und weg vom Rock.
+- Interface/stiffen half the waistband part lengthwise. Or interface/stiffen one of the curved waistband parts.
+- Press under the seam allowance on the long edge of the waistband that is not interfaced. Trim. _Baste_ the fold in place if needed.
+- With _good sides together_ sew the interfaced waistband/side of the waistband to the skirt. Gather the skirt down to the waistband if needed.
+- If using the curved waistband sew the non-interfaced part to the interfaced part. Trim and clip seam and press the non-interfaced part up and away from the skirt.
 
 There will be some overhangs:
 
-- Die Seite, die nicht zu sehen sein soll, sollte bei der Nahtzugabe überstehen.
+- The side you wish not to overlap should be overhang by your seam allowance.
 - The side intended to overlap will have a greater overhang.
 - If using a placket, both sides will overhang by your seam allowance.
-- Wenn du einen Reißverschluss einnähst, muss die überlappende Nahtzugabe eingekürzt werden.
+- If using a zipper in the waistband the greater overhang will need to be trimmed to the seam allowance.
 
 __Inserting Zipper in Waistband__
-- Wenn du einen Reißverschluss einnähen willst, ist jetzt der richtige Zeitpunkt, den Reißverschluss von der Bruchlinie am Bund nach unten anzunähen. Oder von der Nahtlinie aus für den gebogenen Bund.
+- If inserting a zipper into the waistband now is the time to do so, attach the zipper from the waistband fold line down. Or from seam-line down for curved waistband.
 - _Slipstitch_ or _Whipstitch_ the lining to the zipper at this point if you have not treated the lining and skirt as one at the opening.
 - Press under overhangs.
-- Presse den Bund _links auf links_ entlang des Bruches. Oder entlang der Nahtlinie bei gebogenen Bund.
+- Press the waistband _wrong sides together_ along fold-line. Or along seam-line for curved waistband.
 - Slipstitch_ or _Whipstitch_ the overhang edges to the zipper.
-- Steppe den Bund knappkantig ab.
-- Alternativ kannst du den Bund von der Innneseite mit _Slipstitch_ oder _Whipstitch_ heften.
+- _Edgestitch_ the waistband in place.
+- Alternatively, _Slipstitch_ or _Whipstitch_ the waistband in place on the inside.
 
 __Other closures__
-- Presse den Bund _links auf links_ entlang des Bruches. Oder entlang der Nahtlinie bei gebogenen Bund.
+- Press the waistband _good sides together_ along fold-line. Or along seam-line for curved waistband.
 - Sew the overhangs with your seam allowance.
-- Wende den Bund, bügeln.
+- Turn the waistband out and to the inside, Press.
 - _Egdestitch_ the waistband in place, this should also close the gap of the over-lap.
 - Alternatively, _Slipstich_ or _Whipstitch_ the waistband in place on the inside and close the gap of the over-lap with _Slipstiching_.
-- Fügen Sie Snaps, Kleiderhaken oder Knopf und Knopfloch hinzu, was auch immer dein bevorzugter Verschluss des Bundübertritts ist.
+- Add snaps, dress hooks or button and buttonhole, whatever is your preferred closure to the waistband overhang.
 
-### Nahtlos
+### Seamless
 
-- If curved waistband with _good sides together_ sew the two waistbands together along the shortest curved edge. Nahtzugaben auseinanderbügeln, einkürzen und einschneiden.
+- If curved waistband with _good sides together_ sew the two waistbands together along the shortest curved edge. Press away from one another, Trim and clip the seam.
 - With _good sides together_ sew the waistband together along the short seams, leaving a gap for the elastic that will be on the inside.
 - Press under the seam allowance on the long edge of the waistband that is intended to be on the inside.
 - With _good sides together_ attach the waistband to the skirt along the unpressed seam. Trim seam.
