@@ -1,11 +1,11 @@
----
+- - -
 title: "Collar notch depth"
----
+- - -
 
-![Collar notch depth](collarnotchdepth.svg)
+![Profundidad de la muesca del cuello](collarnotchdepth.svg)
 
-Depth of the collar notch.
+Profundidad de la muesca del cuello.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_collarnotchdepth_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](jaeger_collarnotchdepth_sample.svg "Efecto de esta opción en el patrón")
