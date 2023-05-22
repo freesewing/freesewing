@@ -1,11 +1,11 @@
----
+- - -
 title: "Ribbing stretch"
----
+- - -
 
-![Ribbing stretch](./ribbingstretch.svg)
+![Élasticité du bord côte](./ribbingstretch.svg)
 
-Controls the amount of stretch to foresee in the ribbing.
+Contrôle la quantité d'élasticité à prévoir dans le bord côte.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_ribbingstretch_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](huey_ribbingstretch_sample.svg "Effet de cette option sur le modèle")
