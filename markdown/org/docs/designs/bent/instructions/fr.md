@@ -1,85 +1,84 @@
 ---
-titre: "Bloc corporel de Bent : Instructions de couture"
+title: "Bent body Block: Sewing Instructions"
 ---
 
 <Note>
 
-###### Bent est un bloc, pas un motif
+###### Bent is a block, not a pattern
 
-Un bloc est une forme de base sur laquelle se basent d'autres motifs.
-Ils sont parfois aussi appelés patrons de base, bien que les puristes soutiennent qu'un bloc et un patron de base sont des choses différentes.
+A block is a basic shape on which other patterns are based.
+They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
 
-Les blocs ne sont généralement pas réalisés tels quels mais servent plutôt de base à d'autres modèles. Les instructions ci-dessous n'abordent donc pas en détail les fermetures ou les finitions et concernent le bloc Bent par défaut.
+Blocks are typically not made as-is but rather serve as a basis for other patterns so the instructions below will not go in depth about closures or finishes and are for the default Bent block.
 
 </Note>
 
 <Warning>
 
-Comme Bent est un bloc, il n'y a pas de fermeture. Les instructions ci-dessous expliquent donc comment fabriquer un Bent avec une couture au milieu du devant pour que vous puissiez vous y épingler sur vous.
+As Bent is a block it does not have any closures. So the instructions below will explain how to make a Bent with a seam down the centre front so you can pin yourself into it.
 
 </Warning>
 
-### Etape 1 : Construction de la maquette
+### Step 1: Mock-up Construction
 
-- Sew the fronts to the back at the shoulder seams good sides together.
-- Sew the fronts to the back at the side seams good sides together.
-- Sew the under sleeves to the top sleeves good sides together along the side seams.
-- Attach the sleeves to the body, good sides together and sew them in the round.
+- Sew the fronts to the back at the shoulder seams _good sides together_.
+- Sew the fronts to the back at the side seams _good sides together_.
+- Sew the under sleeves to the top sleeves _good sides together_ along the side seams.
+- Attach the sleeves to the body, _good sides together_ and sew them in the round.
 
 <Note>
 
-Il peut être nécessaire d'assouplir les manches pour les ajuster.
+You may need to ease/gather the sleeves to fit.
 
-You may need to ease/gather the sleeves to fit.\
 You may need to leave the bottom of one of the sleeve seams open to put the garment on.
 
 </Note>
 <Tip>
 
-If you are making adjustments you may wish to sew the seams wrong sides together to make them easier to adjust.
+If you are making adjustments you may wish to sew the seams _wrong sides together_ to make them easier to adjust.
 
 </Tip>
 
-### Étape 2 : Essayez-le
+### Step 2: Try it on
 
-- Essayez-le et vérifiez la coupe en épinglant le devant tout en le portant.
-- Apportez les modifications nécessaires et essayez à nouveau le vêtement.
-- Répétez l'opération jusqu'à ce que vous soyez satisfait.
+- Try it on and check the fit by pinning the front closed whilst wearing it.
+- Make any alterations and try it on again.
+- Repeat until you are happy.
 
 <Tip>
 
-Si vous n'avez personne pour vous aider à épingler les retouches, vous pouvez utiliser un manequin de couture pour épingler les retouches qui sont difficiles à faire en place. N'oubliez pas de l'essayer ensuite pour vous assurer qu'il vous va bien.
+If you do not have someone to help with pinning alterations, you can use a dressform to pin any alterations that are hard to do on person. Just remember to try it on after to make sure it fits you.
 
-Soyez attentif à tout ce que vous faites en portant la maquette : la tirez-vous vers le bas ? Ajuster constamment l'épaule ? ect... Ces éléments sont des signes indiquant que le modèle doit être ajusté.
+Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. Things like these are signs of where the pattern may need adjusting.
 
-Il est parfois nécessaire de porter la maquette pendant un certain temps pour avoir une meilleure idée de la coupe, alors n'hésitez pas à vous promener avec pendant quelques heures.
+Sometimes you may need to wear the mock-up for an extended amount of time to get a better sense of the fit so don't be afraid to walk around in it for a couple of hours.
 
 </Tip>
 <Note>
 
-N'oubliez pas de considérer Bent comme une base plutôt que comme un produit final, et ajustez donc ce dont vous avez besoin pour obtenir l'aspect désiré.  
-Par exemple :
+Remember to treat Bent as a basis rather than a final product, so adjust what you need to get the desired look.  
+For instance:
 
-- Modifier la ligne d'encolure
-- Ajouter/modifier les marges de fermeture
-- Modifier le style de l'ourlet
-- Ajouter un col
+- Change the neck line
+- Add/change the closure allowances
+- Alter the hem style
+- Add a collar
 
-Tout dépend de vous ! Expérimentez et allez-y !
+It is all up to you! Experiment and go forth!
 
 </Note>
 
-### Étape 3 : Créer un modèle en papier
+### Step 3: Make a paper pattern
 
-- Une fois que vous êtes satisfait de toutes vos modifications, retirer les épingles de votre maquette et créez un modèle de papier à partir de celle-ci.
-- Vous disposez à présent d'un modèle que vous pouvez utiliser pour produire un vêtement.
+- Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
+- Now you have a pattern you can use to produce a garment.
 
 <Note>
 
-Si vous avez effectué des modifications, il est préférable de créer un modèle en papier à partir de la maquette, car cela vous permettra de nettoyer les lignes et de disposer d'un modèle à partir duquel vous pourrez continuer à produire des vêtements.
+It is best practice to make a paper pattern from the mock-up if you have made any alterations, as this will allow you to clean up any lines but also means you have a pattern that you can keep producing garments from.
 
 </Note>
 
-### Bent est un bloc, à la recherche d'un modèle finalisé ?
+### Bent is a block, looking for a finalised pattern?
 
 > Here are some of the patterns based on Bent: [Carlton](/patterns/carlton), [Carlita](/patterns/carlita), and [Jaeger](/patterns/jaeger).
