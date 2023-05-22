@@ -2,10 +2,10 @@
 title: "Heel ease"
 ---
 
-Dies steuert die Menge der Leichtigkeit statt an der Stelle oder Ferse.
+This controls the amount of ease at the instep, or heel.
 
-Vergrößern Sie dies, um es einfacher zu machen, in und aus Ihrer Hose zu kommen.
+Increase this to make it easier to get in and out of your pants.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](paco_heelease_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](paco_heelease_sample.svg "Effect of this option on the pattern")
