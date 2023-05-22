@@ -2,10 +2,10 @@
 title: "Pocket"
 ---
 
-![Diese Option bestimmt, ob die Tasche vorne eingeschlossen werden soll oder nicht](./pocket.svg)
+![This option controls whether or not to include the front pouch pocket](./pocket.svg)
 
-Willst du die Tasche vorne (Beutel) oder nicht?
+Do you want front (pouch) pocket or not?
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](huey_pocket_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_pocket_sample.svg "Effect of this option on the pattern")
