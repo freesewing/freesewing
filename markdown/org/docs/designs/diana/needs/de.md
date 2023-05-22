@@ -1,19 +1,19 @@
----
-title: "Diana draped top: What You Need"
----
+- - -
+title: "Diana, das Wasserfallshirt: Was du brauchst"
+- - -
 
-To make Diana, you will need the following:
+Um Diana zu erstellen, benötigst du Folgendes:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 1.5 meters (1.7 yards) (or half of that if it's wide enough to fit the sleeves next to the body) of a suitable fabric ([see Fabric options](/docs/patterns/diana/fabric))
+- [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
+- Etwa 1.5m (1.7 yards) eines geeigneten Stoffes (oder die Hälfte davon, wenn der Stoff breit genug für Ärmel und Vorder- und Rückenteil ist) ([siehe Stoffoptionen](/docs/patterns/diana/fabric))
 
 <Note>
 
-#### A serger/overlock is nice, but optional
+#### Ein Serger/Overlock ist schön, aber optional
 
-As with all knitwear and stretch fabrics, a serger/overlock will make your life easier.
+Wie bei allen Strickwaren und Stretchgeweben wird dir ein Serger/Overlock das Leben erleichtern.
 
-If you do not have one of those, don't despair. You don't really need it.
-Because these side seams and shoulder seams won't get stretched out, you can just sew them with a regular straight stitch.
+Wenn du keine/n hast, musst du aber nicht verzweifeln. Du brauchst sie nicht unbedingt.
+Da die Seiten- und Schulternähte nicht gedehnt werden, kannst du sie mit einem gewöhnlichen Geradstich nähen.
 
 </Note>
