@@ -2,12 +2,12 @@
 title: "Bulge"
 ---
 
-Combien de place voulez-vous à l'avant ?
+How much room do you want in the front?
 
-Augmenter ceci créera plus de place sur le devant.
+Increasing this will creating more room in the front.
 
-> Si c'est de l'aisance verticale que vous voulez, voir l'option **hauteur**
+> If it's vertical room you're looking for, that's what the **rise** option does
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](shin_bulge_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](shin_bulge_sample.svg "Effect of this option on the pattern")
