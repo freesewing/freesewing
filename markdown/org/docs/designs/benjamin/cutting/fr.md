@@ -1,25 +1,25 @@
 ---
-titre : "Nœud papillon Benjamin : Instructions de coupe"
+title: "Benjamin bow tie: Cutting Instructions"
 ---
 
-Benjamin est un modèle plutôt simple, mais vos options détermineront ce qui doit être coupé. Vous trouverez ci-dessous deux schémas types.
+Benjamin is a rather simple pattern, but your options will determine what needs to be cut out. Below are two typical layouts.
 
-## Sans ruban d'ajustement
+## Without adjustment ribbon
 
-- **Tissu principal**
+- **Main fabric**
   - Cut **4 Bow** parts
   - Cut **2 Collar Band** parts
-- **Entoilage**
+- **Interfacing**
   - Cut **4 Bow** parts
   - Cut **2 Collar Band** parts
 
-## Avec ruban d'ajustement
+## With adjustment ribbon
 
-- **Tissu principal**
+- **Main fabric**
   - Cut **1 Short Bow** part
   - Cut **2 Medium Bow** parts
   - Cut **1 Long Bow** part
-- **Entoilage**
+- **Interfacing**
   - Cut **1 Short Bow** part
   - Cut **2 Medium Bow** parts
   - Cut **1 Long Bow** part
