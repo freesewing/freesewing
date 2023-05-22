@@ -2,25 +2,25 @@
 title: "Extra top button"
 ---
 
-![Extra knoop bovenaan](extratopbutton.svg)
+![Extra top button](extratopbutton.svg)
 
-Wil je een extra knoop tussen de bovenste knoop vooraan en de knoop aan de kraagstaander?
+Do you want an extra button between the top front button and collar stand button?
 
 <Note>
 
-###### Waarom een extra knoop?
+###### Why an extra button?
 
-Deze extra knoop zorgt dat je je kraag kan losmaken terwijl je hemd toch relatief gesloten blijft.
+This extra button allows you to undo your collar button with your shirt staying relatively closed.
 
-Het is een extra knoop die je kan gebruiken als je er na het werk op café nog steeds goed wil uitzien, met je bovenste knoop en je das los.
-De extra knoop is ook geweldig als je je hemd onder een ander kledingstuk draagt met de bovenste knoop los. Onder een trui bijvoorbeeld.
+It's an extra button you'll want if you plan to still look good in the bar after your work day with your top button undone and your tie somewhat loose.
+The extra button is also great if you are wearing your shirt under an overgarment with the top button undone. For example, under a sweater.
 
-Laat deze knoop weg als je een eerder casual uitzicht wil.
+Do not include the top button if you want a more casual look.
 
-Deze extra knoop wordt toegevoegd aan het aantal knopen vooraan. Hij vervangt geen andere knoop.
+This extra button is added to the number of buttons on the front. It does not replace another button.
 
 </Note>
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_extratopbutton_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_extratopbutton_sample.svg "Effect of this option on the pattern")
