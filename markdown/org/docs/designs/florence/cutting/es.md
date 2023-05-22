@@ -2,11 +2,11 @@
 title: "Florence face mask: Cutting Instructions"
 ---
 
-Florence only has one part, the _mask_. This is half of the mask, so we will need two of them. In addition, we want an outer and inner layer of fabric, so we'll need four in total:
+Florencia solo tiene una parte, la máscara __. Ésto es la mitad de la máscara, así que necesitaremos dos. Además, queremos una capa experior y un forro, así que necesitaremos cuatro en total:
 
-- **Main fabric**
-  - Cut **2 masks** parts
-- **Lining fabric**
-  - Cut **2 masks** parts
+- **Tela principal**
+  - Corta **2 partes** de mascarilla
+- **Tela fina**
+  - Corta **2 partes** de mascarilla
 
-If you're using the same fabric in and out (which is fine) then simply cut **4 mask** parts.
+Si estás usando la misma tela dentro y fuera (lo cual está bien) sólo tienes que cortar **4 partes** de la mascarilla.
