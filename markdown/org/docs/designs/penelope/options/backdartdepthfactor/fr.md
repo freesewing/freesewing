@@ -1,9 +1,9 @@
----
+- - -
 title: "Back dart depth factor"
----
+- - -
 
-How far down does the back dart go from the waistband. This is a factor of the Natural Waist To Seat measurement.
+Jusqu’où va le dart arrière de la ceinture. Ceci est un facteur de la mesure de la taille naturelle de siège.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_backdartdepthfactor_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](penelope_backdartdepthfactor_sample.svg "Effet de cette option sur le modèle")
