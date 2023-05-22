@@ -8,11 +8,11 @@ This option controls the downward spread in the first quadrant of the sleevecap.
 
 <Tip>
 
-Zie [begrijp de mouwkop](/docs/patterns/brian/options#understanding-the-sleevecap) voor een diepgaande
-kijk hoe de mouwkop is opgebouwd en hoe de invloed van de verschillende opties op de vorm eruit ziet.
+See [understanding the sleevecap](/docs/patterns/brian/options#understanding-the-sleevecap) for an in-depth
+look into how the sleevecap is constructed and the influence of the different options on its shape.
 
 </Tip>
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_sleevecapq1spread1_sample.svg "Effect of this option on the pattern")
