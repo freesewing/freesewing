@@ -1,6 +1,6 @@
----
+- - -
 title: "Back opening"
----
+- - -
 
 Steuert die Höhe der Öffnung auf der Rückseite Ihrer Schürze.
 
