@@ -1,19 +1,19 @@
----
+- - -
 title: "Tip width"
----
+- - -
 
-![Tip width](tipwidth.svg)
+![Ancho de la punta](tipwidth.svg)
 
-The tip width is the width at the tip of the tie.
+El ancho de la punta es el ancho en la punta del empate.
 
-How wide your tie is at the tip is a style choice.
+Cuán ancho es su corbata en la punta es una elección de estilo.
 
 <Note>
 
-Do not make the tip width smaller than the knot width
+No hacer que el ancho de la punta sea menor que el ancho del nudo
 
 </Note>
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](trayvon_tipwidth_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](trayvon_tipwidth_sample.svg "Efecto de esta opción en el patrón")
