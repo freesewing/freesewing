@@ -30,7 +30,7 @@ const getRoot = {
   org: (root, nav) => {
     // Fixme: make this work for org
     if (!root) return nav
-    if (root.indexOf('/') === -1) return nav[root]
+    if (root.indexOf('/') === -1) return get(nav, ['docs', root])
     return get(nav, root.split('/'))
   },
 }
@@ -42,7 +42,7 @@ export const ReadMore = ({
   level = 0,
   pretty = false,
 }) => {
-  const { nav } = useContext(NavigationContext)
+  const { slug } = useContext(NavigationContext)
   const { siteNav } = useNavigation()
 
   // Deal with recurse not being a number
@@ -54,7 +54,8 @@ export const ReadMore = ({
   // Deal with root being passed as true
   if (root === true) root = ''
 
-  const tree = root ? getRoot[site](root, siteNav) : nav
+  const tree = root ? getRoot[site](root, siteNav) : getRoot[site](slug, siteNav)
+
   const list = []
   for (const page of currentChildren(tree)) {
     list.push(
