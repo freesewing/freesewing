@@ -1,13 +1,13 @@
 ---
-title: "Diepte armsgat"
+title: "Armhole depth"
 ---
 
 ***
 
-![Het effect van de diepte van het armsgat op het patroon](sample.png)
+![The effect of the armhole depth option on the pattern](sample.png)
 
-De **armsgat** optie bepaalt de diepte van het armsgat.
+The **armhole depth** option controls the depth of the armhole.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bella_armholedepth_sample.svg "Effect van deze optie op het patroon")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_armholedepth_sample.svg "Effect of this option on the pattern")
