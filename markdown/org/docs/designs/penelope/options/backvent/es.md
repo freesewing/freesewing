@@ -2,8 +2,8 @@
 title: "Back vent"
 ---
 
-Esto añade un respiro a la parte posterior de la sombra.
+This adds a vent to the back of the skirt.
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](penelope_backvent_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_backvent_sample.svg "Effect of this option on the pattern")
