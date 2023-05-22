@@ -2,21 +2,21 @@
 title: "Benjamin bow tie: Sewing Instructions"
 ---
 
-## Anmerkungen und Hinweise
+## Notes and tips
 
-### Präzision
+### Precision
 
-Since a bow tie is a rather small item, precision with sewing is key to a good result. Any slight difference between the upper and lower part of the bow will stand out. Um gute Ergebnisse zu erzielen, fand ich es immer sehr hilfreich, die Nahtlinie auf die Einlage zu übertragen und dieser beim Nähen zu folgen.
+Since a bow tie is a rather small item, precision with sewing is key to a good result. Any slight difference between the upper and lower part of the bow will stand out. To get a great result I found it very helpful to trace the actual seam lines onto the interfacing and follow that while sewing.
 
-### Setze das Bügeleisen weise ein
+### Press wisely
 
-Later in the construction steps, you will be asked to press your fabric. Sei dabei bitte vorsichtig, damit du deinen womöglich empfindlichen Stoff nicht zu viel Hitze aussetzt.
+Later in the construction steps, you will be asked to press your fabric. Please be careful that you are not using too much heat on a delicate fabric that can't handle it.
 
-It's a good idea to try pressing some fabric scraps before you start. Dies erlaubt dir, die richtigen Hitzeeinstellungen für den verwendeten Stoff zu finden.
+It's a good idea to try pressing some fabric scraps before you start. This will allow you to figure out what is a good heat setting for the fabric you are using.
 
-### Fadenlauf wählen
+### Choosing your grain
 
-This pattern includes a grain line. Der Fadenlauf ist hier größtenteils dafür gedacht, um mit der Einlage verwendet zu werden. Da jedes Teil des Schnittmusters mit Einlage versehen wird, ist der Fadenlauf des Oberstoffes nicht so wichtig. Du kannst hier auch vom Standard abweichen, um einen informelleren Eindruck zu erzeugen.
+This pattern includes a grain line. This grain line is mostly there to be used with the interfacing. Since each pattern piece is interfaced, the grain line of the fabric itself is not so important. You can even change this from the standard for more informal impressions.
 
 <Note>
 
@@ -27,7 +27,7 @@ page on [Fabric grain](/docs/sewing/fabric-grain).
 
 ### Bow tie adjustment ribbon and hardware
 
-By default, this design makes a fixed-length bow tie that is the right length for a certain neck size. However, by enabling the Adjustment Ribbon option, it can also make a tie that uses an adjustment ribbon and hardware that makes the bow tie adjustable to different neck sizes. Das ist sehr nützlich, wenn deine Hemden nicht alle dasselbe Halsmaß/Kragenweite haben oder wenn du manchmal gerne Hemden trägst, die etwas mehr Zugabe am Hals haben.
+By default, this design makes a fixed-length bow tie that is the right length for a certain neck size. However, by enabling the Adjustment Ribbon option, it can also make a tie that uses an adjustment ribbon and hardware that makes the bow tie adjustable to different neck sizes. This is useful if not all of your shirts have the same neck measurements, or if you sometimes like shirts with more ease in the neck.
 
 These adjustment ribbons and bow tie hardware can be found in the better haberdasheries or can be ordered online.
 
@@ -43,17 +43,17 @@ outside the scope of these instructions.
 
 </Note>
 
-### Nahtzugabe
+### Seam allowance
 
-Da die Fliege mit den rechten Seiten des Stoffes zueinander konstruiert wird, muss das Ganze am Ende von innen nach außen gedreht werden. Du solltest vielleicht erwägen, eine kleinere Nahtzugabe wie 6mm (¼ inch) zu verwenden, um die Menge an Stoff zu reduzieren.
+Since the bow tie is constructed with the right sides of the fabric against each other, the whole thing will have to be turned inside out. You probably want to consider using a small seam allowance of 6mm (¼ inch) to reduce the bulk.
 
-## Konstruktion
+## Construction
 
-### Schritt 1: Einlage einsetzen
+### Step 1: Apply interfacing
 
 Apply interfacing to all parts where you feel it's needed.
 
-### Ohne Einstellband
+### Without adjustment ribbon
 
 #### Step 2: Sew the bow to the collar band
 
@@ -69,13 +69,13 @@ Press open all the seams.
 
 You now have two identical single sided bow ties.
 
-#### Schritt 3: Beide Seiten zusammenfügen
+#### Step 3: Join both sides
 
 ![Sew both sides together](step13.png)
 
 Lay both the sides you made on top of each other, right sides together. Sew all along the edges, but leave an area of 5 cm open in the middle of the collar band. Through this opening we will turn the bow tie right side out.
 
-#### Schritt 4: Wenden
+#### Step 4: Turning
 
 ![Clip seam allowance](step14.png)
 
@@ -85,7 +85,7 @@ Then use the back of a large crochet hook, or some other appropriately long skin
 
 Once you have the tie right side out, make sure you push all the corners and sides out before giving it a good press.
 
-#### Schritt 5: Schließen
+#### Step 5: Closing
 
 ![Closing the bow tie](step15.png)
 
@@ -93,9 +93,9 @@ Now all that is left is closing the little hole we used to turn the bow tie righ
 
 Now give it one last press and admire your work.
 
-### Mit Anpassungsband
+### With adjustment ribbon
 
-#### Schritt 2: Das Band anfügen
+#### Step 2: Attaching the ribbon
 
 ![Sew the ribbon to part 1](step22.png)
 
@@ -105,7 +105,7 @@ Put right sides of the Short Bow piece and the ribbon together.
 
 Now sew across the end to join the parts.
 
-#### Schritt 3: Beide Seiten zusammenfügen
+#### Step 3: Join both sides
 
 ![Sew both sides together](step23.png)
 
@@ -117,7 +117,7 @@ Lay the Long Bow on top of the ribbon and Short Bow part, also right sides toget
 
 Again, sew all along the edges, leaving the short end open.
 
-#### Schritt 4: Wenden
+#### Step 4: Turning
 
 ![Clip seam allowance](step14.png)
 
@@ -129,7 +129,7 @@ Once you have the part right side out, make sure you push all the corners and si
 
 Do this with both parts.
 
-#### Schritt 5: Zubehör hinzufügen
+#### Step 5: Add hardware
 
 Now we need to add the two pieces of hardware that make the bow tie adjustable. The oval loop piece will be attached to the part without the adjustment ribbon. And, the piece with the T-hook will go on the part with the ribbon.
 
