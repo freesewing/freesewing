@@ -1,13 +1,13 @@
 ---
-title: "High bust width"
+title: "Largeur de buste supérieur"
 ---
 
 ***
 
-![The effect of the high bust width option on the pattern](sample.png)
+![L'effet de l'option de largeur de poitrine haute sur le motif](sample.png)
 
-The **high bust width** option allows you to tweak the high bust width at the front.
+L'option **grande largeur de poitrine** vous permet de modifier la largeur de la poitrine à l'avant.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_highbustwidth_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bella_highbustwidth_sample.svg "Effet de cette option sur le motif")
