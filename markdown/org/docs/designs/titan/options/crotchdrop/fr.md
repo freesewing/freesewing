@@ -2,11 +2,11 @@
 title: "Crotch drop"
 ---
 
-Contrôle à quel point la croche est abaissée.
+Controls by how much the crotch is lowered.
 
 Lowering the crotch makes for a more casual fit.  
 A signigicantly lowered crotched can also be a style choice.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](titan_crotchdrop_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](titan_crotchdrop_sample.svg "Effect of this option on the pattern")
