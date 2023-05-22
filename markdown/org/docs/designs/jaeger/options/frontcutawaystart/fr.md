@@ -2,10 +2,10 @@
 title: "Front cutaway start"
 ---
 
-![Départ de l'arrondi de coupe avant](frontcutawaystart.svg)
+![Front cutaway start](frontcutawaystart.svg)
 
-Jusqu'où en dessous du bouton inférieur fait le début de l'ouverture.
+How far below the lower button does the front start to open.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_frontcutawaystart_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_frontcutawaystart_sample.svg "Effect of this option on the pattern")
