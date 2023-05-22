@@ -1,10 +1,10 @@
 ---
-title: "Octoplushy, der plüschige Oktopus: Was du brauchst"
+title: "Octoplushy, the plushy octopus: What You Need"
 ---
 
-Um Octoplushy zu erstellen, benötigst du Folgendes:
+To make Octoplushy, you will need the following:
 
-- [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
+- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
 - About 1 meter (1.1 yards) of a suitable fabric (Upper body) ([see Octoplushy Fabric options](/docs/patterns/octoplushy/fabric/))
 - About 0.75 meters (0.85 yards) of a suitable fabric (Belly) ([see Octoplushy Fabric options](/docs/patterns/octoplushy/fabric/))
 - Either 2 buttons or a small piece of suitable unraveling, fabric for the eyes of the Octoplushy version
