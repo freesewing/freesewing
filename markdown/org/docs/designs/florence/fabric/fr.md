@@ -11,7 +11,7 @@ In addition, we want the inside to be comfortable on our skin. So here I'd sugge
 Note that fabric that is _breathable_ is not the same as fabric your can breath through.
 There's many so-called waterproof breathable fabrics — or MBFs — that are used for outdoor gear because they
 repel water and are _breathable_ but would make a poor choice for a face mask.
-Ne cherchez pas à utiliser votre parapluie par exemple. C'est probablement un tissu à travers lequel vous pouvez respirer,
-mais seulement avec un effort substantiel, ce qui ne conviendrait pas pour notre masque facial.
+Look no further than your umbrella for an example. Chances are it's more from a fabric you can breath through,
+but only with substantial effort, which would not work for our face mask.
 
 </Note>
