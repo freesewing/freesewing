@@ -1,15 +1,15 @@
 ---
-title: "Cuff style"
+title: "Style de bracelet"
 ---
 
 ***
 
-This pattern supports three different cuff styles:
+Ce patron supporte trois styles de bracelet différents :
 
-- **Traditional**: A single buttoned _curved_ band with a pointed edge.
-- **Elegant**: A single buttoned _straight_ band with a pointed edge.
-- **Keystone**: A slightly curved band that is wider than the others using 3 buttons rather than 1. This one is based of off the one in the Keystone Draft this pattern is based on.
+- **Traditionnel** : Une bande _courbée_ à un seul bouton avec un bord pointu.
+- **Elégant** : Une bande _droite_ à un seul bouton avec un bord pointu.
+- **Keystone** : Une bande légèrement incurvée, plus large que les autres, utilisant 3 boutons au lieu d'un. Celui-ci est basé sur celui du projet de Keystone dont s'inspire ce modèle.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](cornelius_cuffstyle_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](cornelius_cuffstyle_sample.svg "Effet de cette option sur le motif")
