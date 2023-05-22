@@ -1,19 +1,19 @@
----
+- - -
 title: "Fit the knee"
----
+- - -
 
-Controls the width of the legs.
+Legt die Weite des Hosenbeins fest.
 
 <Note>
 
-This pattern used to come in two variations. Theodore, and Theo, the latter having
-a slimmer cut.
+Dieses Muster kam früher in zwei Variationen. Theodore und Theo, letztere haben
+einen schlankeren Schnitt.
 
-Since FreeSewing v2.0 we've merged these into a single pattern and this option
-allows you to alter the leg width.
+Seit FreeSewing v2.0 haben wir diese in ein einzelnes Muster zusammengeführt. Mit dieser Option
+können Sie die Beinbreite ändern.
 
 </Note>
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](titan_fitknee_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](titan_fitknee_sample.svg "Effekt dieser Variable auf das Schnittmuster")
