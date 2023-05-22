@@ -10,8 +10,8 @@ Make sure to pay attention to the inside of the fabric. Sweatshirt fabrics come 
 
 <Note>
 
-Je moet geen sweaterstof gebruiken. Er zijn andere opties, van überhip neopreen (of scuba) tot totaal onsubtiel crash fluweel.
+You don't have to use sweatshirt fabric. Other options are available, from fashion-forward neoprene (aka scuba) to a more eyebrow-rising choice like crushed velour (aka velvet).
 
-Of ga voor fleece als je alle pretentie opgegeven hebt.
+Or if you have given up on class, you could go for fleece.
 
 </Note>
