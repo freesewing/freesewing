@@ -178,10 +178,10 @@
     "@aws-sdk/types" "3.329.0"
     tslib "^2.5.0"
 
-"@aws-sdk/client-sesv2@3.335.0":
-  version "3.335.0"
-  resolved "https://registry.yarnpkg.com/@aws-sdk/client-sesv2/-/client-sesv2-3.335.0.tgz#eaf87805e4d60d3422a655564095c14e2411269a"
-  integrity sha512-c827XJ6fm1eDM1/ih6coKyAKSGW+PfBErpaKU5iIFGfZFoFuio63VipipL7qjOkBQPqrwAEnDncKalP/ksF2LA==
+"@aws-sdk/client-sesv2@3.336.0":
+  version "3.336.0"
+  resolved "https://registry.yarnpkg.com/@aws-sdk/client-sesv2/-/client-sesv2-3.336.0.tgz#677a0ef06ef6d484167821dd062e14bcdfb7c838"
+  integrity sha512-I9dXMhnhIAMvqXOgLkQDr72ADy/bKT8XaFbfhIZiz+VO+GPF3ra9X31fBemvXiu0OSA3Isf7coHCI5zmj6rOBw==
   dependencies:
     "@aws-crypto/sha256-browser" "3.0.0"
     "@aws-crypto/sha256-js" "3.0.0"
@@ -2870,6 +2870,13 @@
   dependencies:
     glob "7.1.7"
 
+"@next/mdx@13.4.2":
+  version "13.4.2"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-13.4.2.tgz#2ec40024969feccca386e841d4ae675bfe25436b"
+  integrity sha512-AT/gxEGkKOwceFSTvoa97vAJh0KsDcw+oW1UFTW4e0zcJCmvieniJoq+JHLMzKoyfC9VjozeCR9yGAchZrli1A==
+  dependencies:
+    source-map "^0.7.0"
+
 "@next/swc-darwin-arm64@13.4.2":
   version "13.4.2"
   resolved "https://registry.yarnpkg.com/@next/swc-darwin-arm64/-/swc-darwin-arm64-13.4.2.tgz#d0b497df972bd02eee3bc823d6a76c2cc8b733ef"
@@ -4486,6 +4493,11 @@
     "@codemirror/theme-one-dark" "^6.0.0"
     "@uiw/codemirror-extensions-basic-setup" "4.19.16"
     codemirror "^6.0.0"
+
+"@use-it/event-listener@^0.1.2":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@use-it/event-listener/-/event-listener-0.1.7.tgz#443a9b6df87f2f2961b74d42997ce723a7078623"
+  integrity sha512-hgfExDzUU9uTRTPDCpw2s9jWTxcxmpJya3fK5ADpf5VDpSy8WYwY/kh28XE0tUcbsljeP8wfan48QvAQTSSa3Q==
 
 "@vercel/error-utils@1.0.10":
   version "1.0.10"
@@ -8547,6 +8559,14 @@ estree-util-to-js@^1.1.0:
     astring "^1.8.0"
     source-map "^0.7.0"
 
+estree-util-value-to-estree@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/estree-util-value-to-estree/-/estree-util-value-to-estree-3.0.1.tgz#0b7b5d6b6a4aaad5c60999ffbc265a985df98ac5"
+  integrity sha512-b2tdzTurEIbwRh+mKrEcaWfu1wgb8J1hVsgREg7FFiecWwK/PhO8X0kyc+0bIcKNtD4sqxIdNoRy6/p/TvECEA==
+  dependencies:
+    "@types/estree" "^1.0.0"
+    is-plain-obj "^4.0.0"
+
 estree-util-visit@^1.0.0:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/estree-util-visit/-/estree-util-visit-1.2.1.tgz#8bc2bc09f25b00827294703835aabee1cc9ec69d"
@@ -11401,6 +11421,16 @@ jiti@^1.18.2:
   version "1.18.2"
   resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.18.2.tgz#80c3ef3d486ebf2450d9335122b32d121f2a83cd"
   integrity sha512-QAdOptna2NYiSSpv0O/BwoHBSmz4YhpzJHyi+fnMRTXFjp7B8i/YG5Z8IfusxB1ufjcD2Sre1F3R+nX3fvy7gg==
+
+jotai-location@0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/jotai-location/-/jotai-location-0.5.1.tgz#1a08b683cd7823ce57f7fef8b98335f1ce5c7105"
+  integrity sha512-6b34X6PpUaXmHCcyxdMFUHgRLUEp+SFHq9UxHbg5HxHC1LddVyVZbPJI+P15+SOQJcUTH3KrsIeKmeLko+Vw/A==
+
+jotai@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/jotai/-/jotai-2.1.0.tgz#b1a9525345518453802e4a64d99e2800598bab76"
+  integrity sha512-fR82PtHAmEQrc/daMEYGc4EteW96/b6wodtDSCzLvoJA/6y4YG70er4hh2f8CYwYjqwQ0eZUModGfG4DmwkTyQ==
 
 js-base64@^2.1.9:
   version "2.6.4"
@@ -16785,7 +16815,7 @@ remark-extract-frontmatter@3.2.0:
   resolved "https://registry.yarnpkg.com/remark-extract-frontmatter/-/remark-extract-frontmatter-3.2.0.tgz#bab57f599114f233702dea819431eec28e708656"
   integrity sha512-PmYwNCo0cMAUV3oAGg5Hn6YSZgiSDwVdxLJmPIZ804aYuvE5mAzozo5AkO0C8ELroWrtN/f9zzb0jqFPBkMnwg==
 
-remark-frontmatter@^4.0.1:
+remark-frontmatter@4.0.1, remark-frontmatter@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/remark-frontmatter/-/remark-frontmatter-4.0.1.tgz#84560f7ccef114ef076d3d3735be6d69f8922309"
   integrity sha512-38fJrB0KnmD3E33a5jZC/5+gGAC2WKNiPw1/fdXJvijBlhA7RCsvJklrYJakS0HedninvaCYW8lQGf9C918GfA==
@@ -17121,6 +17151,18 @@ remark-lint@^9.0.0:
     "@types/mdast" "^3.0.0"
     remark-message-control "^7.0.0"
     unified "^10.1.0"
+
+remark-mdx-frontmatter@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/remark-mdx-frontmatter/-/remark-mdx-frontmatter-3.0.0.tgz#302e68cf0d5992225b7c936d6e0a7aec7b1b9452"
+  integrity sha512-Tnkz8n/fxZGKMBaFJa5jKumJPpuTr9eZF+u+4UcnlUNmUQP3h8ZwgaTzIvkVb6QjG6QE0itsP5JjWnkEBz8IJw==
+  dependencies:
+    "@types/mdast" "^3.0.0"
+    estree-util-is-identifier-name "^2.0.0"
+    estree-util-value-to-estree "^3.0.0"
+    toml "^3.0.0"
+    unified "^10.0.0"
+    yaml "^2.0.0"
 
 remark-mdx@2.0.0-next.9:
   version "2.0.0-next.9"
@@ -19176,6 +19218,11 @@ toidentifier@1.0.1:
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.1.tgz#3be34321a88a820ed1bd80dfaa33e479fbb8dd35"
   integrity sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==
 
+toml@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/toml/-/toml-3.0.0.tgz#342160f1af1904ec9d204d03a5d61222d762c5ee"
+  integrity sha512-y/mWCZinnvxjTKYhJ+pYxwD0mRLVvOtdS2Awbgxln6iEnt4rk0yBxeSBHkGJcPucRiG0e55mwWp+g/05rsrd6w==
+
 totalist@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/totalist/-/totalist-1.1.0.tgz#a4d65a3e546517701e3e5c37a47a70ac97fe56df"
@@ -19909,6 +19956,13 @@ use-hot-module-reload@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/use-hot-module-reload/-/use-hot-module-reload-1.0.3.tgz#fb2fbc062a99fbc173cec35086048ee7578318dc"
   integrity sha512-Wk/sjFhOF+a6PkovJvDAT3c8yE1DluZsSB3L+gTS8pM4ht2yg/LqBj4YLwnYJSdPnFqGWvu93CMdso8bcKw36A==
+
+use-persisted-state@0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/use-persisted-state/-/use-persisted-state-0.3.3.tgz#5e0f2236967cec7c34de33abc07ae6818e7c7451"
+  integrity sha512-pCNlvYC8+XjRxwnIut4teGC9f2p9aD88R8OGseQGZa2dvqG/h1vEGk1vRE1IZG0Vf161UDpn+NlW4+UGubQflQ==
+  dependencies:
+    "@use-it/event-listener" "^0.1.2"
 
 use-sidecar@^1.1.2:
   version "1.1.2"
