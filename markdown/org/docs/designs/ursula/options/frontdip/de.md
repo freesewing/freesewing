@@ -2,8 +2,8 @@
 title: "Front waist dip"
 ---
 
-Diese Option bestimmt, wie sehr die Vordertaillenkurven (mehr oder weniger Haut) sind.
+This option controls how much the front waist curves (revealing more or less skin).
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](ursula_frontdip_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](ursula_frontdip_sample.svg "Effect of this option on the pattern")
