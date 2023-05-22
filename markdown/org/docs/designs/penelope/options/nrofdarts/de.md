@@ -2,8 +2,8 @@
 title: "Number of darts"
 ---
 
-Die Anzahl der Darts im Muster. Das Maximum ist 2, aber diese Option kann durch das Muster reduziert werden, wenn die Berechnungen zu kleine Darts erzeugen.
+The number of darts used in the pattern. The maximum is 2, but this option can be reduced by the pattern if the calculations create darts that are too small.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](penelope_nrofdarts_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_nrofdarts_sample.svg "Effect of this option on the pattern")
