@@ -2,8 +2,8 @@
 title: "Dart to side seam factor"
 ---
 
-Hoeveel van de reductie van heupen naar taille door de nepen ingenomen wordt, tegenover de zijnaad, uitgedrukt in een percentage.
+Percentage of how much of the hip to waist reduction has to be taken in by the darts versus the side seam.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](penelope_darttosideseamfactor_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_darttosideseamfactor_sample.svg "Effect of this option on the pattern")
