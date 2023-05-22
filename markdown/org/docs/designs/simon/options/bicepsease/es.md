@@ -2,28 +2,26 @@
 title: "Biceps ease"
 ---
 
-![Holgura del bíceps](./bicepsease.svg)
+![Biceps ease](./bicepsease.svg)
 
-¿Cuánto quiere que la manga sea más ancha que la cirugía de su arma?
+How much do you want the sleeve to be wider than your upperarm circumference?
 
 <Note>
 
-###### ¿Cuál es el punto?
-
 ###### What's the point?
 
-It's actually men with big arms who prefer a tighter fit, and thus less ease here. Esto se debe a que llama la atención sobre sus fuertes brazos.
+It's actually men with big arms who prefer a tighter fit, and thus less ease here. That's because it draws attention to their strong upper arms.
 
-Si tus brazos superiores son más despellejados, necesitarás más facilidad para suavizar las cosas un poco.
+If your upper arms are more skinny, you'll want some more ease here to smooth things out a bit.
 
 </Note>
 
 <Warning>
 
-Intentaremos respetar su elección aquí, pero la prioridad es encajar la manga en el orificio.
+We will try to respect your choice here, but out priority is to fit the sleeve in the armhole.
 
 </Warning>
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_bicepsease_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_bicepsease_sample.svg "Effect of this option on the pattern")
