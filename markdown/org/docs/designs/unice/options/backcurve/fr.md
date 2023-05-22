@@ -1,8 +1,8 @@
 ---
-title: "Back Curve"
+title: "Courbe arrière"
 ---
 
-Together with the "Back waist dip" option, this option controls how much the back waist curves (revealing more or less skin). For this option, the curve is achieved by slanting the pattern piece and allowing the fabric to conform to the body shape. (For fabric with horizontal stripes, the stripes would remain continuous but would dip around the waist.)
+Associée à l'option "Creusement de la taille du dos", cette option permet de contrôler l'ampleur de la courbure de la taille du dos (révélant plus ou moins de peau). Pour cette option, la courbe est obtenue en inclinant le patron et en permettant au tissu d'épouser la forme du corps. (Pour les tissus à rayures horizontales, les rayures restent continues mais s'inclinent au niveau de la taille)
 
-When this option is used, the shape of the back pattern piece does not fully convey the shape when worn. The projected dip at the back center of the waist can be found in the info generated together with the pattern.
+Lorsque cette option est utilisée, la forme de la pièce de patron du dos ne rend pas complètement la forme lorsqu'elle est portée. Le creux projeté au centre arrière de la taille peut être trouvé dans les informations générées avec le patron.
 
