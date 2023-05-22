@@ -1,5 +1,5 @@
 ---
-title: "Lucy, die Umbindetasche: Anleitungen"
+title: "Lucy tie-on pocket: Sewing Instructions"
 ---
 
 <Note>
