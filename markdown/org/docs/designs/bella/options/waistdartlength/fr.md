@@ -1,13 +1,13 @@
 ---
-title: "Waist dart length"
+title: "Longueur de la pince de taille"
 ---
 
 ***
 
-![The effect of the waist dart length option on the pattern](sample.png)
+![L'effet de l'option de la longueur de la taille sur le patron](sample.png)
 
-The **waist dart length** option controls the length of the waist dart towards the bust.
+L'option **longueur de la tige de taille** contrôle la longueur du dart de taille vers le bust.
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_waistdartlength_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bella_waistdartlength_sample.svg "Effet de cette option sur le motif")
