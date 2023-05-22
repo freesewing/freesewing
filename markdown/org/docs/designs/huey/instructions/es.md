@@ -1,10 +1,10 @@
----
+- - -
 title: "Huey hoodie: Sewing Instructions"
----
+- - -
 
 <Note>
 
-This pattern can be sewn with or with out a overlocker/serger. If not using a overlocker or serger you will have to _Finish_ the seams.
+Este patrón se puede coser con o con un overlocker/serger. If not using a overlocker or serger you will have to _Finish_ the seams.
 
 </Note>
 
@@ -82,7 +82,7 @@ A neckband can be useful to stablise and cover the neck seams but it is optional
 
 ### Step 7: Attaching the waistband
 
-- Fold the waistband in half lengthwise matching wrong sides. Press.
+- Fold the waistband in half lengthwise matching wrong sides. Alísala.
 - With _good sides_ together sew the waistband to the bottom of the back and front.
 - Press the seam allowance up.
 - _Topstitch_ or _Edgestitch_ waistband seam allowance to the body.
@@ -92,7 +92,7 @@ A neckband can be useful to stablise and cover the neck seams but it is optional
 - With _good sides together_ sew the short egdes of the cuffs together to create two bands.
 - Press open the seam allowances.
 - (Optional) _Edgestitch_ the seam allowances down.
-- Fold the cuffs in half lengthwise matching wrong sides. Press.
+- Fold the cuffs in half lengthwise matching wrong sides. Alísala.
 - Matching seams and raw edges, pin the cuffs to the sleeves _good sides together_.
 - Sew the cuffs to the sleeves.
 - Press the seam allowances up.
@@ -103,7 +103,7 @@ A neckband can be useful to stablise and cover the neck seams but it is optional
 - If need be, face the front edges of the hoodie.
 - Unzip the zipper part way.
 - Fold the top of the zipper tape down to the _good side_ of the zipper tape. Trim if need be.
-- Pin the zipper along one of the front edges of the hood, front and waistband. Making sure the zipper pull is faced the _good sides_ of the hoodie and the bottoms are lined up. The zipper teeth should just be slightly over the seam line with the edge of the tape either matching or being slightly over from the hoodie edge.
+- Pin the zipper along one of the front edges of the hood, front and waistband. The zipper teeth should just be slightly over the seam line with the edge of the tape either matching or being slightly over from the hoodie edge. Making sure the zipper pull is faced the _good sides_ of the hoodie and the bottoms are lined up.
 - Using a zipper foot stitch the zipper to the hoodie using you seam allownace width. When you reach the zipper pull, stop, put your needle down, lift the presser foot, pull the zipper pull past the presser foot, lower the presser foot. Then you can continue sewing the seam.
 - Unzip the zipper.
 - Pin and sew the unattached zipper tape to the other side of the hoodie the same way.
@@ -133,13 +133,13 @@ Use a safety pin to help thread the drawstring.
 
 </Tip>
 
-### Step 11: Enjoy!
+### Paso 11: ¡Disfrútalo!
 
-- That's it! Your all done! Now go feel warm and comfy in your new hoodie!
+- ¡Eso es todo! Your all done! Now go feel warm and comfy in your new hoodie!
 
 <Note>
 
-This patterns was featured in [issue 27 of HackSpace magazine](https://hackspace.raspberrypi.org/issues/27),
-the article includes instructions too, so you may want to have a look at it.
+Estos patrones fueron destacados en el [número 27 de la revista HackSpace](https://hackspace.raspberrypi. rg/issues/27),
+el artículo también incluye instrucciones, así que tal vez quieras echarle un vistazo.
 
 </Note>
