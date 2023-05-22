@@ -2,8 +2,8 @@
 title: "Back vent length"
 ---
 
-Dies steuert die Länge des hinteren Schlotes als Prozentsatz der Röhrenlänge.
+This controls the length of the back vent as a percentage of the skirt length.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](penelope_backventlength_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_backventlength_sample.svg "Effect of this option on the pattern")
