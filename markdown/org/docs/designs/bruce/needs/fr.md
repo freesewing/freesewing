@@ -1,10 +1,10 @@
 ---
-titre: "Boxer Bruce : Ce dont tu as besoin"
+title: "Bruce boxer briefs: What You Need"
 ---
 
-Pour réaliser Bruce, vous aurez besoin de :
+To make Bruce, you will need the following:
 
-- Fourniture de base pour la couture
-- Environ 1 mètre (1.1 yards) d'un tissu adapté ([voir Options de tissu](/docs/patterns/bruce/fabric/))
-- Un élastique assez large (3 cm (1.2 pouce) ou plus) pour mettre autour de votre taille
-- Unu surjeteuse, bien que vous puissiez survivre sans
+- Basic sewing supplies
+- About 1 meter (1.1 yards) of a suitable fabric ([see Fabric options](/docs/patterns/bruce/fabric/))
+- Enough wide (3cm (1.2 inch) or wider) elastic to fit around your waist
+- A serger, although you can survive without one
