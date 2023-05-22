@@ -1,17 +1,17 @@
----
+- - -
 title: "Adjustment ribbon"
----
+- - -
 
-![Traditional or adjustable](adjustmentribbon.svg)
+![Traditionell oder einstellbar](adjustmentribbon.svg)
 
-With Benjamin, you can make a traditional fixed size bow tie. And you can make one that incorporates an adjustment ribbon. These are ribbons and pieces of hardware that allow you to change the neck size of the bow tie. Very handy when you have shirts with different neck sizes, or if you have different ease in the collar for some.
+Mit Benjamin kannst du eine traditionelle Fliege mit fester Größe erstellen. Und du kannst eine erstellen, die ein Einstellband integriert hat. Das sind Bänder und Zubehörteile, die dafür da sind, um die Halsgröße/Kragenweite der Fliege zu verstellen. Sehr praktisch, wenn du Hemden mit verschiedenen Kragenweiten hast, oder manche mit unterschiedlichen Zugaben im Kragen.
 
 <Tip>
 
-This is a great option if you decide to make a bow tie for someone else as a gift.
+Dies ist eine ausgezeichnete Option, wenn du jemanden eine selbst genähte Fliege schenken willst.
 
 </Tip>
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_adjustmentribbon_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](benjamin_adjustmentribbon_sample.svg "Effekt dieser Option auf das Schnittmuster")
