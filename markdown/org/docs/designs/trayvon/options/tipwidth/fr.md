@@ -2,18 +2,18 @@
 title: "Tip width"
 ---
 
-![Largeur de la pointe](tipwidth.svg)
+![Tip width](tipwidth.svg)
 
-La largeur de la pointe est la largeur à la pointe de la cravate.
+The tip width is the width at the tip of the tie.
 
-La largeur de votre cravate à la pointe est un choix de style.
+How wide your tie is at the tip is a style choice.
 
 <Note>
 
-Ne pas rendre la largeur de la pointe plus petite que la largeur du nœud
+Do not make the tip width smaller than the knot width
 
 </Note>
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](trayvon_tipwidth_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](trayvon_tipwidth_sample.svg "Effect of this option on the pattern")
