@@ -1,23 +1,23 @@
----
+- - -
 title: "Benjamin bow tie: Fabric Options"
----
+- - -
 
-The bow ties you find in the store are typically make out of silk or some imitation silk poly. So it will come as no surprise that those are good options. Any type of fabric that you like the pattern or looks of can become a candidate for a bow tie. The only real limitation is that the bow tie will have to be turned inside out through a tube that is only 2cm across. With some thicker fabrics, this will be a difficult proposition.
+Die Fliegen, die du in Geschäften findest, bestehen typischerweise aus Seide oder einer Art von Seidenimitation aus Polyester. Deswegen ist es wohl keine Überraschung, dass dies gute Optionen sind. Jede Art von Stoff, der dir vom Muster oder Aussehen gefällt, kann ein Kandidat für eine Fliege werden. Die einzige wirkliche Einschränkung ist, dass die Fliege durch einen Schlauch von nur 2cm von innen nach außen gedreht werden muss. Bei einigen dickeren Stoffen wird das ein schwieriges Unterfangen.
 
-Bow ties are more whimsical than normal ties, so having a fun pattern or loud colour is not as much of a problem as it would be with a regular tie.
+Fliegen sind etwas schrulliger als normale Krawatten, deswegen wird ein lustiges Muster oder eine knallige Farbe nicht so problematisch wie bei einer regulären Krawatte.
 
-Silk and silk imitation is slippery and tricky to work with. This can be compensated for with a fusible interfacing.
+Seide und Seidenimitat sind rutschig und schwierig zu verarbeiten. Das kann mit Bügeleinlage kompensiert werden.
 
-## Interfacing
+## Einlage
 
-Depending on the fabric you chose for your bow tie, you will probably need interfacing. Interfacing comes in two main types: fusible and sew-in.
+Je nach gewähltem Oberstoff für die Fliege wirst du wahrscheinlich etwas Einlage brauchen. Einlage gibt es meistens in zwei Varianten: Bügeleinlage und Einlage zum Einnähen.
 
-The fusible variety has some adhesive attached to one side that is activated with the heat of your iron. This attaches the interfacing to the fabric and the two can then be used as one. Fusible interfacing can be a great option if your fabric allows the heat required, and you use a quality interfacing. Some lesser quality interfacings can have the adhesive detach, and this shows as bubbles on the fabric surface later on in the life of your bow tie. Good quality interfacings and correctly following the guidelines for adhering the interfacing will not present these problems.
+Bügeleinlage hat eine Art Kleber auf einer Seite, der durch die Hitze deines Bügeleisens aktiviert wird. Dies befestigt die Einlage am Stoff und die beiden können zusammen verwendet werden, als wären sie nur eine Lage. Bügeleinlage kann eine gute Option sein, wenn dein Stoff der Hitze widerstehen kann und du eine Einlage guter Qualität verwendest. Bei einigen Bügeleinlagen geringerer Qualität kann es vorkommen, dass sich der Kleber löst, was sich dann später im Leben deiner Fliege als Blasen auf der Oberfläche des Oberstoffes bemerkbar macht. Bei Verwendung von Bügeleinlage guter Qualität und bei korrekter Anbringung werden diese Probleme nicht auftreten.
 
-Sew-in interfacing is sew into place before the fabric pieces are used. You attach the interfacing to the fabric by sewing the two together inside the seam allowance. If you use a seam allowance of 6mm, you will sew the interfacing at 3mm. Anything may work as a sew-in interfacing, including an extra layer of the same fabric.
+Bügeleinlage zum Einnähen wird an der richtigen Position festgenäht, bevor die Stoffteile vernäht werden. Die Einlage wird an den Oberstoff angebracht, indem du die beiden innerhalb der Nahtzugabe zusammennähst. Wenn du eine Nahtzugabe von 6mm verwendest, wird die Einlage bei 3mm vernäht. Fast alles kann als Einlage zum Einnähen verwendet werden, einschließlich einer zusätzlichen Schicht desselben Stoffes.
 
-The key part of the interfacing is to give your bow tie the structure you like. You can have a bow tie that stands proud and crisp. Or one that droops a bit at the tips. This is all about your preference.
+Die Hauptfunktion der Einlage ist es, deiner Fliege die Struktur zu geben, die du möchtest. Du kannst eine Fliege nähen, die stolz aufrecht steht. Oder eine, die die Spitzen etwas hängen lässt. Es kommt nur darauf an, was dir lieber ist.
 
-It is good to experiment with the interfacing on a scrap piece of your fabric, specially with the fusible kind. You want to make sure you get the structure you like before committing it to your pattern pieces.
+Es ist eine gute Idee, etwas mit der Einlage auf einem Stoffrest herumzuexperimentieren, besonders bei der Bügelvariante. Du möchtest sichergehen, dass du die Struktur bekommst, die du haben willst, bevor du sie auf deinen Schnittteilen verewigst.
 
-Although the pattern calls for applying interfacing to all parts, if you have thick or stiff fabric, you may be able to only do one side, or no sides at all.
+Auch wenn das Schnittmuster für alle Teile eine Einlage fordert, recht es bei dickem oder steifem Stoff eventuell, wenn du nur eine oder gar keine Seite mit Einlage versiehst.
