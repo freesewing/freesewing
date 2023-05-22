@@ -2,14 +2,14 @@
 title: "Back vent"
 ---
 
-![Hinterer Gehschlitz](backvent.svg)
+![Back vent](backvent.svg)
 
-Wie gefällt Ihnen Ihre Rückenventilierung?
+How do you like your back vents?
 
-- Zwei hintere Schlote (links angezeigt)
-- Ein zentraler hinterer Schlot (in der Mitte angezeigt)
-- Keine Rückenschlitze (rechts angezeigt)
+- Two back vents (shown on the left)
+- One central back vent (shown in the middle)
+- No back vents (shown on the right)
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](jaeger_backvent_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_backvent_sample.svg "Effect of this option on the pattern")
