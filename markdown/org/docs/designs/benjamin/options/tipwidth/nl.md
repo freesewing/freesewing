@@ -8,12 +8,12 @@ You can make BIG bow ties, or small ones. This option allows you to change the v
 
 <Note>
 
-###### Niet gebruikt met het vierkante vlinderdas
+###### Not used with the Square bow tie type
 
-Deze optie wordt genegeerd met de optie voor de vierkante vlinders. Vierkante vlinderdassen zijn even breed and de breedte van de knoop.
+This option is ignored with the Square bow tie option. Square bow ties are as wide as the knot width.
 
 </Note>
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_tipwidth_sample.svg "Effect of this option on the pattern")
