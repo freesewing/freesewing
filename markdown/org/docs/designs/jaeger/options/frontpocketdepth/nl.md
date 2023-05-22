@@ -2,10 +2,10 @@
 title: "Front pocket depth"
 ---
 
-![Diepte zak](frontpocketdepth.svg)
+![Front pocket depth](frontpocketdepth.svg)
 
-De diepte van de voorzakken, als een factor van de ruimte tussen taille en zoom.
+The depth of the front pockets, as a factor of the space between your waist and hem.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](jaeger_frontpocketdepth_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_frontpocketdepth_sample.svg "Effect of this option on the pattern")
