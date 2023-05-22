@@ -1,16 +1,16 @@
----
+- - -
 title: "Bow style"
----
+- - -
 
-Four different bow tie styles!
+Cuatro tipos de corbatas de arco diferentes!
 
-Benjamin allows you to make four different bow ties.
+Benjamin te permite hacer cuatro lazos de arco diferentes.
 
-- Contemporary Diamond
-- Traditional Butterfly
-- Classic Square
-- Whimsical Wide Square
+- Diamantes contemporáneo
+- Mariposa tradicional
+- Cuadrado clásico
+- Cuadrado ancho caprichoso
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_bowstyle_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](benjamin_bowstyle_sample.svg "Efecto de esta opción en el patrón")
