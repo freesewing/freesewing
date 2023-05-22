@@ -2,17 +2,17 @@
 title: "Sleevecap front X"
 ---
 
-![De horizontale locatie van het tussenpunt](./sleevecapfrontfactorx.svg)
+![The horizontal location of the front inflection point](./sleevecapfrontfactorx.svg)
 
-Deze optie bepaalt de horizontale plaatsing van het tussenpunt aan de voorkant van de mouw.
+This option controls the horizontal placement of the sleevecap inflection point at the front of the sleeve.
 
 <Tip>
 
-Zie [begrijp de mouwkop](/docs/patterns/brian/options#understanding-the-sleevecap) voor een diepgaande
-kijk hoe de mouwkop is opgebouwd en hoe de invloed van de verschillende opties op de vorm eruit ziet.
+See [understanding the sleevecap](/docs/patterns/brian/options#understanding-the-sleevecap) for an in-depth
+look into how the sleevecap is constructed and the influence of the different options on its shape.
 
 </Tip>
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](teagan_sleevecapfrontfactorx_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](teagan_sleevecapfrontfactorx_sample.svg "Effect of this option on the pattern")
