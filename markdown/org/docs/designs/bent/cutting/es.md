@@ -2,7 +2,7 @@
 title: "Bent body Block: Cutting Instructions"
 ---
 
-**Tela principal**
+**Main fabric**
 
 - Cut **1 Front** part on the fold.
 - Cut **1 Back** part on the fold.
@@ -22,8 +22,8 @@ As Bent is a block it does not have any closures. If you are making a test Bent 
 ###### Bent is a block, not a pattern
 
 A block is a basic shape on which other patterns are based.
-A veces también se llaman trampas, aunque los puristas argumentarán que un bloque y una inclinación son cosas diferentes.
+They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
 
-Los bloques normalmente no se hacen as-is sino que sirven como base para otros patrones.
+Blocks are typically not made as-is but rather serve as a basis for other patterns.
 
 </Note>
