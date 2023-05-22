@@ -1,8 +1,8 @@
----
+- - -
 title: "Sven sweatshirt: Cutting Instructions"
----
+- - -
 
-Sven is a very simply pattern, and consists of two main parts plus some strips for the neck and armhole binding.
+Sven ist ein sehr einfaches Muster, das aus zwei Hauptteilen und einigen Streifen für die Hals- und Armlochbindung besteht.
 
 - **Oberstoff**
   - **1 zurück** auf die Falte schneiden
