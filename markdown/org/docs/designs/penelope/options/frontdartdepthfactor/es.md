@@ -2,8 +2,8 @@
 title: "Front dart depth factor"
 ---
 
-Que tan abajo va el dardo delantero de la cintura. Este es un factor de la cintura natural Para medir el asiento.
+How far down does the front dart go from the waistband. This is a factor of the natural waist To seat measurement.
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](penelope_frontdartdepthfactor_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_frontdartdepthfactor_sample.svg "Effect of this option on the pattern")
