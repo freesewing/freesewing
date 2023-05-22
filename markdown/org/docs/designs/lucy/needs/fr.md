@@ -4,7 +4,7 @@ title: "Lucy tie-on pocket: What You Need"
 
 To make Lucy, you will need the following:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
+- [Matériel de couture de base](/docs/sewing/basic-sewing-supplies)
 - About 0.5 meters (0.6 yards) of suitable fabric ([see Fabric options](/docs/patterns/lucy/fabric))
 - About 0.5 meters (0.6 yards) of fabric if using a lining
 - About 2 meters (2.2 yards) of bias binding or strips of fabric if binding the edges
