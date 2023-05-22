@@ -2,12 +2,12 @@
 title: "Bella body block: Cutting Instructions"
 ---
 
-**Oberstoff**
+**Main fabric**
 
-- Schneide **1 Vorderteil** im Stoffbruch.
-- Schneide **2 Rückteile**.
+- Cut **1 Front** part on the fold.
+- Cut **2 Back** parts.
 
-Diese Anleitung ist nur für den Bella-Grundschnitt mit Standardeinstellungen. Passe deinen Zuschnitt entsprechend an, falls du Änderungen am Grundschnitt vornimmst.
+These cutting instructions are just for the default Bella block. Adjust your cutting accordingly if you have/are making changes to the block.
 
 <Tip>
 
@@ -17,11 +17,11 @@ If you do not have someone to help pin you into Bella then you may find it easie
 
 <Note>
 
-###### Bella ist ein Grundschnitt, kein Schnittmuster
+###### Bella is a block, not a pattern
 
-Ein Grundschnitt ist eine Grundform, auf der andere Schnittmuster basieren.
-Sie werden manchmal auch als Schläger bezeichnet, obwohl Puristen argumentieren, dass ein Block und ein Schläger verschiedene Dinge sind.
+A block is a basic shape on which other patterns are based.
+They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
 
-Grundschnitte werden in der Regel nicht so gemacht, wie sie sind, sondern dienen als Grundlage für andere Schnittmuster.
+Blocks are typically not made as-is but rather serve as a basis for other patterns.
 
 </Note>
