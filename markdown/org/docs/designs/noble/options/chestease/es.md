@@ -1,11 +1,11 @@
 ---
-title: "Chest ease"
+title: "Holgura de pecho"
 ---
 
 ***
 
-The **chest ease** option controls the amount of ease at the fullest part of your chest.
+La opción de **facilidad de cofre** controla la cantidad de facilidad en la parte más completa del cofre.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_chestease_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción al superponer varias variantes que tienen un valor diferente para esta opción](noble_chestease_sample.svg "Efecto de esta opción en el patrón")
