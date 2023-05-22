@@ -2,35 +2,35 @@
 title: "Teagan T-shirt: Sewing Instructions"
 ---
 
-## Schritt 1: Schließe die Schulternähte
+## Step 1: Close the shoulder seams
 
 ![Close the shoulder seams](step01.svg)
 
-- Platzieren Sie die Vorder- und Rückseite mit [guten Seiten zusammen](/docs/sewing/good-sides-together) oben. Die Schulternaht ausrichten.
-- Servieren Sie die Schulternaht oder nähen Sie sie mit einer schmalen Zickzack-Zickzack-Nähte nach der üblichen Nahtzugabe.
+- Place the front and back on top of each other with [good sides together](/docs/sewing/good-sides-together). Align the shoulder seams.
+- Serge the shoulder seams, or stitch them with a narrow (~2 mm) zigzag stitch at the standard seam allowance.
 
 <Note>
-Optional: In einem Drapierstrick können Sie die Schulternähte durch das Nähen der Naht an der Innenseite festigen. Auf einem T-Shirt unterstützen die Schulternähte den Großteil des Gewichts des Kleidungsstücks. Verstärkungen sind nicht erforderlich, aber sie können die Schulternähte davor bewahren, sich im Laufe der Zeit auszudehnen.
+Optional: In a drapier knit, you may choose to reinforce the shoulder seams by stitching clear elastic along the seam on the inside. On a T-shirt, the shoulder seams support most of the weight of the garment. Reinforcing is not required, but it can keep the shoulder seams from stretching over time.
 </Note>
 
-## Schritt 2: In den Ärmeln setzen
+## Step 2: Set in the sleeves
 
 ![Set in sleeves](step02.svg)
 
-- Platzieren Sie Ihre jetzt befestigte Vorder- und Rückseite mit der guten Seite.
-- Identifizieren Sie die Vorder- und Rückseite jeder Ihrer Ärmel. (So trennen Sie den linken Ärmel von rechts.) On your paper pattern piece, the front side of the sleeve is to the right.
-- Platzieren Sie einen Ärmel oben auf der Vorder- und Rückseite mit der guten Seite.
-- Legen Sie die Oberseite der Ärmel mit der Schulternaht an. Vergewissern Sie sich, dass Vorder- und Rückseite des Ärmels mit den Vorder- und Rückenteilen Ihres Hemdes ausgerichtet sind.
-- Pin Sleeve am Platz entlang des gesamten Armlochs. Es gibt ein bisschen Ärmel Leichtigkeit, was bedeutet, dass der Ärmelkopf etwas länger ist als das Armloch. Leicht im oberen Teil des Ärmelkopfes während der Pinning.
-- Nähen Sie Ihren angehefteten Ärmel in Platz.
-- Wiederholen für den anderen Ärmel.
+- Place your now attached front and back with the good side up.
+- Identify the front and back sides of each of your sleeves. (This is how you separate the left sleeve from the right.) On your paper pattern piece, the front side of the sleeve is to the right.
+- Place a sleeve on top of the front and back, with the good side down.
+- Align the top of the sleevecap with the shoulder seam. Make sure that the front and back of the sleeve are aligned with the front and back pieces of your shirt.
+- Pin sleeve in place along the entire armhole. There’s a bit of sleevecap ease, which means that the sleevehead is slightly longer than the armhole. Ease in the top part of the sleeve head while pinning.
+- Sew/serge your pinned sleeve in place.
+- Repeat for the other sleeve.
 
 ## Step 3: Sew the neck finish
 
 There are two options for the neck finish on Teagan: a knit band or knit binding. Knit band is what you typically see on store-bought T-shirts, whereas knit binding is the finish you'll find on the Aaron A-Tank. Directions for both are given here.
 
 <Note>
-Dies ist der komplexeste Schritt bei der Herstellung des Teagan T-Shirts, aber es erfordert nur ein bisschen Übung. Keine Sorge, alles was Sie tun müssen, ist ein paar davon zu machen und Sie werden schnell ein Profi werden.
+This is the most complex step in making the Teagan T-shirt, but it just requires a bit of practice. Don’t worry, all you need to do is make a couple of these and you’ll be a pro in no time.
 </Note>
 
 ### Option 1: knit band finish
@@ -85,7 +85,7 @@ Hurray! You've finished the trickiest part! Optionally, you can secure the raw e
 
 <Tip>
 
-Eine ausführlichere Anleitung zur Strickbindung findest du in den [Aaron Instuctions](/docs/patterns/aaron/instructions).
+A more extensive how-to on knit binding can be found in the [Aaron Instuctions](/docs/patterns/aaron/instructions).
 
 </Tip>
 
@@ -149,7 +149,7 @@ On the inside of your T-shirt, trim back the knit binding just outside of your s
 
 </Note>
 
-## Schritt 4: Schließe die Seitennaht und Ärmel
+## Step 4: Close the side seams and sleeves
 
 ![Close the side seams and sleeves](step04.svg)
 
@@ -158,7 +158,7 @@ On the inside of your T-shirt, trim back the knit binding just outside of your s
 - Serge/sew the side seam and continue sewing to close the arms all the way to the sleeve hem.
 - Repeat on the other side.
 
-## Schritt 5: Saum und Ärmel beenden
+## Step 5: Finish hem and sleeves
 
 ![Finish hem and sleeves](step05.svg)
 
