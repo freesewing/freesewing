@@ -1,5 +1,5 @@
 ---
-title: "Diana, das Wasserfallshirt"
+title: "Diana draped top"
 ---
 
 <PatternDocs pattern='diana' />
