@@ -2,10 +2,10 @@
 title: "Chest ease"
 ---
 
-![Die Brustpflegeoption auf Diana](./chestease.svg)
+![The chest ease option on Diana](./chestease.svg)
 
-Diese Option steuert die Leichtigkeit an deiner Truhe.
+This option controls the ease at your chest.
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](diana_chestease_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_chestease_sample.svg "Effect of this option on the pattern")
