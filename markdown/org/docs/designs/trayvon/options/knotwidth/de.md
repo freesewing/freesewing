@@ -1,19 +1,19 @@
----
+- - -
 title: "Knot width"
----
+- - -
 
-![Knot width](knotwidth.svg)
+![Knotenbreite](knotwidth.svg)
 
-The knot width is the width in the middle of the tie, where you make the knot.
+Die Knotenbreite ist die Breite in der Mitte der Krawatte, wo Sie den Knoten machen.
 
-How wide your tie is in the middle will influence the tie knot. Go wide for big and bulky knots, go narrow for small knots.
+Wie weit Ihr Krawatte in der Mitte ist, wird den Krawatten beeinflussen. Gehen Sie weit für große und sperrige Knoten, gehen Sie schmal für kleine Knoten.
 
 <Note>
 
-Do not make the knot width larger than the tip width
+Knotenbreite nicht größer als die Breite der Spitze machen
 
 </Note>
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](trayvon_knotwidth_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](trayvon_knotwidth_sample.svg "Effekt dieser Option auf das Schnittmuster")
