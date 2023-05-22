@@ -1,11 +1,11 @@
----
+- - -
 title: "Buttonhole guide"
----
+- - -
 
 ***
 
-Adds a buttonhole to the ear flap to help you draft the buttonhole ear flap variant
+Ajoute une boutonnière au rabat d'oreille pour vous aider à tracer la variante du rabat de l'oreille avec boutonnière
 
-## Effect of this option on the pattern
+## Effet de cette option sur le motif
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](holmes_buttonhole_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](holmes_buttonhole_sample.svg "Effet de cette option sur le motif")
