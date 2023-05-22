@@ -2,11 +2,11 @@
 title: "Ribbing stretch"
 ---
 
-![Stretch boordstof over Hugo](./ribbingstretch.svg)
+![Ribbing stretch on Hugo](./ribbingstretch.svg)
 
-Met deze optie kan je de stretch van je boord aanpassen.
+This option allows you to tweak the stretch of your ribbing.
 
-Als je (bijvoorbeeld) 90% kiest, tekenen we voor elke 10 cm boord maar 9 cm. Zo wordt 9 cm boord uitgerokken tot 10 cm.
+If you choose 90% (for example) for every 10cm of ribbing, we'll only draft 9cm. This way, 9cm of ribbing will be stretched to 10cm.
 
 <Note>
 
@@ -15,6 +15,6 @@ you need to stretch out to get to 10 cm with a _good_ stretch.
 
 </Note>
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](hugo_ribbingstretch_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](hugo_ribbingstretch_sample.svg "Effect of this option on the pattern")
