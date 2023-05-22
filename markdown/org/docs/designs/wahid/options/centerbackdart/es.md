@@ -2,23 +2,21 @@
 title: "Center back dart"
 ---
 
-![Centroretroceso](centerbackdart.svg)
+![Centerback dart](centerbackdart.svg)
 
-Puesto que nadie tiene una perfectamente recta, este patrón se atenúa con 0,5 cm en la parte central de la parte trasera del cuello.
+Since nobody has a perfectly straight back, this pattern tapers in with 0.5 cm at the center back of your neck.
 
 <Note>
 
-###### ¿Cuál es el punto?
-
 ###### What's the point?
 
-If your back slumps forward a bit, fabric tends to pool at the back of your neck. Sin mangas ni cuello, esto hace que tu línea de cuello se recolecte.
-Esta opción reduce el tejido hacia adentro en la parte trasera del cuello. Lo hace en 0,5 cm por defecto, pero puede aumentar o disminuir ese valor.
+If your back slumps forward a bit, fabric tends to pool at the back of your neck. With no sleeves or collar, this causes your neckline to gape.
+This option tapers the fabric inwards at the back of your neck. It does so by 0.5 cm by default, but you can increase or decrease that value.
 
-Técnicamente esto no es un dardo, pero no estaba seguro de cómo llamarlo. Sugerencias bienvenidas.
+Technically this is not a dart, but I wasn't sure how else to call it. Suggestions welcome.
 
 </Note>
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](wahid_centerbackdart_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_centerbackdart_sample.svg "Effect of this option on the pattern")
