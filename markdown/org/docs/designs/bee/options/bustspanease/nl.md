@@ -6,6 +6,6 @@ title: "Bust span ease"
 
 Controls the bust span ease in the underlying Bella block Bee is based on
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bee_bustspanease_sample.svg "Effect van deze optie op het patroon")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_bustspanease_sample.svg "Effect of this option on the pattern")
