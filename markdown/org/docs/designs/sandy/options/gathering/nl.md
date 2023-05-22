@@ -2,10 +2,10 @@
 title: "Gathering"
 ---
 
-![Fronsen](gathering.svg)
+![Gathering](gathering.svg)
 
-Met hoeveel procent de bovenrand van de rok langer is dan de onderrand van de tailleband. Geef een waarde hoger dan 0 om plooien in de rok te maken.
+The percent by which the top of the skirt is longer than the bottom of the waistband. Give a value higher than 0 to pleat the skirt.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](sandy_gathering_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](sandy_gathering_sample.svg "Effect of this option on the pattern")
