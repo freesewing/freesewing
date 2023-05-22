@@ -6,10 +6,10 @@ title: "Front rise"
 
 How high do you want the corset to rise up at the center front.
 
-> Cette hausse se produit au centre du front entre vos seins. Ne le surmontez pas ou le bord de votre corset se glissera dans vos seins.
+> This rise occurs center front between your breasts. Don't overdo it or the edge of your corset will push into your breasts.
 
-> Cette option permet également des valeurs négatives. Ils feront baisser le front central.
+> This option also allows negative values. They will cause the center front to be lowered.
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](cathrin_frontrise_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_frontrise_sample.svg "Effect of this option on the pattern")
