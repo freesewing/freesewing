@@ -1,13 +1,13 @@
 ---
-title: "Overwijdte taille"
+title: "Waist ease"
 ---
 
 ***
 
-![Het effect van de optie overwijdte taille op het patroon](sample.png)
+![The effect of the waist ease option on the pattern](sample.png)
 
-De optie **taille overwijdte** bepaalt de hoeveelheid overwijdte aan je taille.
+The **waist ease** option controls the amount of ease at your waist.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bella_waistease_sample.svg "Effect van deze optie op het patroon")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_waistease_sample.svg "Effect of this option on the pattern")
