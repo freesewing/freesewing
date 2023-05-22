@@ -10,7 +10,7 @@ When shopping online, it can be harder to get a good idea of what you're looking
 
 Without wanting to start an encyclopedia of fabrics here, here are some terms you may come across when shopping for shirt fabric online.
 
-## Laken of popeline
+## Broadcloth or poplin
 
 Broadcloth is the way to go for that white shirt for your job interview or wedding.
 
@@ -18,7 +18,7 @@ Broadcloth (frequently referred to as poplin) is a simple weave and results in a
 
 It's typically a lighter fabric and in light colours can tend to be a bit transparent.
 
-## Keper
+## Twill
 
 You can recognize twill fabrics by their characteristic diagonal texture from the weave.
 
@@ -26,7 +26,7 @@ It drapes more easily than broadcloth, wrinkles less and when it does, is easier
 
 The flip side of the coin is that it won't give you that starchy crisp vibe that broadcloth can.
 
-## Oxford
+## Pinpoint
 
 Pinpoint is the work horse of shirt fabrics. Typically they produce a heavier and thicker . and thus more durable . fabric.
 
@@ -44,19 +44,19 @@ Denim needs no introduction. It's the stuff your jeans are made from.
 
 Technically a twill fabric (look for the signature diagonal texture) denim is produced in much lighter weights than the ones your jeans are made from. Those are the ones you can use for a shirt.
 
-## Flanel
+## Flannel
 
 From Curt Cobain to the hipsters at your local coffee shop, they all swear by flannel shirts.
 
 Warmer than any other option here, flannel comes typically in brushed cotton though you might find it with added wool for extra warmth.
 
-## Linnen
+## Linen
 
 Linen wrinkles like a mofo, but you can't beat it for safari looks.
 
 The reason you associate it with adventures in tropical climates is that linen breaths like nothing else and will keep you coolest of all.
 
-## Draaddichtheid
+## Thread count
 
 A higher thread count means a smoother (and more expensive) fabric.
 
@@ -64,7 +64,7 @@ Thread count is expressed in numbers, like 60s, 80s, 100s and so on to 300s and 
 
 There's a catch though. Numbers above 100s are typically made by twisting two yarns together. Like a 160s thread count means that two 80s yarns were twisted together for the thread.
 
-## Eendraads of tweedraads
+## Single ply or Two ply
 
 If a thread is made up of two yarns (see thread count above) we call that Two ply.
 
