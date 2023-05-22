@@ -2,20 +2,20 @@
 title: "Cuff ease"
 ---
 
-![Overwijdte manchet](cuffease.svg)
+![Cuff ease](cuffease.svg)
 
-Bepaalt hoeveel groter de manchet is dan je pols.
+Determines how much the cuff is larger than your wrist.
 
-Pas deze optie aan om jezelf meer of minder ruimte te geven aan de pols.
+Change this option to give yourself more or less room at the wrist.
 
 <Note>
 
-Je wil misschien meer als je wil dat de manchet over een groot horloge past. Minder ruimte is beter als je het hemd ergens onder wil dragen, bijvoorbeeld een trui.
+You might want more if you want the shirt cuff to fit over a bulky watch. Less room might be better if you want to wear the shirt under an overgarment like a sweater.
 
-Zij die hun hemd onder een trui willen dragen moeten ook eens kijken naar de optie voor een extra versmallende knoop.
+Those wanting to wear their shirt under a sweater should also have a look at the barrelcuff narrow button option.
 
 </Note>
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_cuffease_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_cuffease_sample.svg "Effect of this option on the pattern")
