@@ -2,14 +2,14 @@
 title: "Hem style"
 ---
 
-![Style d'ourlet](hemstyle.svg)
+![Hem style](hemstyle.svg)
 
-Quel style de ligne d'ourlet voulez-vous ?
+What style of hem line do you want?
 
-- Droit
+- Straight
 - Baseball
-- Taillé
+- Slashed
 
-## Effet de cette option sur le motif
+## Effect of this option on the pattern
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_hemstyle_sample.svg "Effet de cette option sur le modèle")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_hemstyle_sample.svg "Effect of this option on the pattern")
