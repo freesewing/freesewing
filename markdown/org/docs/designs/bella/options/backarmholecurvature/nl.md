@@ -1,13 +1,13 @@
 ---
-title: "Kromming armsgat achter"
+title: "Back armhole curvature"
 ---
 
 ***
 
-![Het effect van de kromming armsgat op het patroon](sample.png)
+![The effect of the back armhole curvature option on the pattern](sample.png)
 
-De **armsgat kromming** optie bepaalt hoeveel het armsgat op de onderkant van de rug gesneden is.
+The **back armhole curvature** option controls how much the armhole is scooped at out the bottom in the back.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bella_backarmholecurvature_sample.svg "Effect van deze optie op het patroon")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_backarmholecurvature_sample.svg "Effect of this option on the pattern")
