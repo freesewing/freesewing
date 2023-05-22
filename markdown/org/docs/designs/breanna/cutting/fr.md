@@ -1,28 +1,28 @@
 ---
-titre : "Bloc de corps Breanna : Instructions de coupe"
+title: "Breanna body block: Cutting Instructions"
 ---
 
-**Tissu principal**
+**Main fabric**
 
 - Cut **1 Front** part on the fold.
-- Couper **2 parties** arrières.
+- Cut **2 Back** parts.
 - Cut **2 Sleeve** parts, _good sides together_.
 
-Ces instructions de coupe ne concernent que le bloc Breanna par défaut. Ajustez votre coupe en conséquence si vous avez apporté des modifications au bloc.
+These cutting instructions are just for the default Breanna block. Adjust your cutting accordingly if you have/are making changes to the block.
 
 <Tip>
 
-Si vous n'avez personne pour vous aider à épingler Breanna, vous trouverez peut-être plus facile de couper deux parties du devant avec une marge de couture et de coudre l'arrière lors de la construction afin de pouvoir épingler le devant.
+If you do not have someone to help pin you into Breanna then you may find it easier to Cut 2 Front parts with seam allowance and sew the backs up when constructing so you can pin in the front.
 
 </Tip>
 
 <Note>
 
-###### Breanna est un bloc, pas un patron
+###### Breanna is a block, not a pattern
 
-Un bloc est une forme de bas sur laquelle d'autres patrons sont basés.
-Ils sont parfois aussi appelés patrons de base, bien que les puristes soutiennent qu'un bloc et un patron de base sont des choses différentes.
+A block is a basic shape on which other patterns are based.
+They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
 
-Les patrons de base ne sont donc généralement pas utilisés tels quels, mais plutôt pour élaborer d'autres modèles.
+Blocks are typically not made as-is but rather serve as a basis for other patterns.
 
 </Note>
