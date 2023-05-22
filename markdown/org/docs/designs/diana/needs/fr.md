@@ -4,16 +4,16 @@ title: "Diana draped top: What You Need"
 
 To make Diana, you will need the following:
 
-- [Fourniture de base pour la couture](/docs/sewing/basic-sewing-supplies)
+- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
 - About 1.5 meters (1.7 yards) (or half of that if it's wide enough to fit the sleeves next to the body) of a suitable fabric ([see Fabric options](/docs/patterns/diana/fabric))
 
 <Note>
 
-#### Une surjeteuse serait un plus, mais reste en option
+#### A serger/overlock is nice, but optional
 
-Comme pour tous les mailles et étoffes, une surjeteuse vous facilitera la vie.
+As with all knitwear and stretch fabrics, a serger/overlock will make your life easier.
 
-Si vous n'en avez pas, ne désespérez pas. Vous n'en avez pas vraiment besoin.
-Parce que ces coutures latérales et les coutures d'épaule ne seront pas étirées, vous pouvez simplement les coudre avec une couture droite normale.
+If you do not have one of those, don't despair. You don't really need it.
+Because these side seams and shoulder seams won't get stretched out, you can just sew them with a regular straight stitch.
 
 </Note>
