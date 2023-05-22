@@ -1,13 +1,13 @@
 ---
-title: "Back hem slope"
+title: "Hinterer Saum Hang"
 ---
 
 ***
 
-![The effect of the back hem slope option on the pattern](sample.png)
+![Der Effekt der Option Rücken-Shape auf das Schnittmuster](sample.png)
 
-The **back hem slope** option controls the slope of the hem at the back.
+Die Option **Rücksaum** steuert die Neigung des Saum auf der Rückseite.
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_backhemslope_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bella_backhemslope_sample.svg "Effekt dieser Option auf das Schnittmuster")
