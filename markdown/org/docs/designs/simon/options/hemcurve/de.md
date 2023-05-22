@@ -1,19 +1,19 @@
----
+- - -
 title: "Hem curve"
----
+- - -
 
-![Hem curve](hemcurve.svg)
+![Saumkurve](hemcurve.svg)
 
-How much do you want the hem to curve upwards?
+Wie viel soll sich der Saum nach oben bewegen?
 
 <Note>
 
-- This applies only to the baseball and slashed hem styles. If you chose a straight hem, this will be ignored.
-- This value can never be more than the length bonus. If it is, it will silently be set to the length bonus value.
-- If you set this to zero, you'll get a straight hem regardless of what hem style you pick.
+- Dies gilt nur für den Baseball- und den geschlitzten Saum Stil. Wenn du einen geraden Saum gewählt hast, wird dies ignoriert.
+This value can never be more than the length bonus. Wenn dies der Fall ist, wird er stillschweigend auf den Längen-Bonuswert gesetzt.
+If you set this to zero, you'll get a straight hem regardless of what hem style you pick.
 
 </Note>
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_hemcurve_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_hemcurve_sample.svg "Effekt dieser Option auf das Schnittmuster")
