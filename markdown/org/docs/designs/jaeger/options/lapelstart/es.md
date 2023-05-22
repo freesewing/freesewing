@@ -1,11 +1,11 @@
----
+- - -
 title: "Lapel start"
----
+- - -
 
-![Lapel start](lapelstart.svg)
+![Inicio de la solapa](lapelstart.svg)
 
-Location of the lapel break point (where the front opening starts). Lower values are closer to the waistline, higher values closer to the chestline.
+Ubicación del punto de ruptura del lapel (donde comienza la apertura delantera). Los valores más bajos están más cerca de la cintura, valores más altos más cercanos al castillo.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_lapelstart_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](jaeger_lapelstart_sample.svg "Efecto de esta opción en el patrón")
