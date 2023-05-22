@@ -2,20 +2,20 @@
 title: "Collar roll"
 ---
 
-![Kragenrolle](collarroll.svg)
+![Collar roll](collarroll.svg)
 
-Wie hoch der Kragen ist höher als der Kragen im Zentrum hinten.
+How much the collar is taller than the collar stand at center back.
 
 <Note>
 
-###### Was ist der Punkt?
+###### What's the point?
 
-Der Kragen beginnt vom Kragenstand nach oben und rollt dann nach unten. Aber es muss noch die Kragenständer abdecken. Dafür muss es etwas länger sein.
+The collar starts upwards from the collar stand and then rolls over downwards. But it still needs to cover the collar stand. For that, it needs to be a bit longer.
 
-Dies erhöht den Kragen nicht (verwenden Sie dafür die Kragenhöhe), sondern führt zu einem weiteren Abstieg nach unten.
+Increasing this does not make the collar higher (use the collar stand height for that) but rather makes it descend further down.
 
 </Note>
 
-## Effekt dieser Option auf das Schnittmuster
+## Effect of this option on the pattern
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_collarroll_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarroll_sample.svg "Effect of this option on the pattern")
