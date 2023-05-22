@@ -2,8 +2,8 @@
 title: "Length bonus"
 ---
 
-Bepaalt hoeveel langer dan het standaard wil dat je T-shirt is.
+Controls how much longer than the default you want your T-shirt to be.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](teagan_lengthbonus_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](teagan_lengthbonus_sample.svg "Effect of this option on the pattern")
