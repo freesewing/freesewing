@@ -18,40 +18,46 @@ export const ns = ['account', 'sections', 'design', 'tags']
 const sitePages = () => {
   const pages = {
     // Top-level pages that are the sections menu
-    developers: {
-      t: 'For all Developers',
-      s: 'developers',
+    api: {
+      t: 'API Documentation',
+      s: 'api',
       o: 10,
     },
-    designers: {
-      t: 'For Pattern Designers & Coders',
-      s: 'designers',
+    design: {
+      t: 'Design Sewing Patterns',
+      s: 'design',
+      o: 10,
+    },
+    contribute: {
+      t: 'Contribute to FreeSewing',
+      s: 'contribute',
       o: 20,
     },
-    writers: {
-      t: 'For Writers',
-      s: 'writers',
-      o: 30,
-    },
-    translators: {
-      t: 'For Translators',
-      s: 'translators',
+    i18n: {
+      t: 'Help Translate FreeSewing',
+      s: 'i18n',
       o: 40,
     },
-    infrastructure: {
+    infra: {
       t: 'FreeSewing Infrastructure',
-      s: 'infrastructure',
+      s: 'infra',
       o: 50,
-    },
-    teamwork: {
-      t: 'Open Source & Teamwork',
-      s: 'teamwork',
-      o: 60,
     },
     about: {
       t: 'About FreeSewing',
       s: 'about',
-      o: 99,
+      o: 60,
+    },
+    support: {
+      t: 'Support FreeSewing',
+      s: 'support',
+      o: 70,
+    },
+    sitemap: {
+      t: 'Sitemap',
+      s: 'sitemap',
+      o: 70,
+      h: 1,
     },
   }
   return pages
@@ -78,7 +84,8 @@ const createSections = (nav) => {
   return orderBy(sections, ['o', 't'])
 }
 
-export const useNavigation = ({ path, locale = 'en' }) => {
+export const useNavigation = (params = {}) => {
+  const { path = [], locale = 'en' } = params
   const nav = { ...pbn[locale], ...sitePages() }
   // Hide top-level documentation entries
   for (const page of ['tutorials', 'guides', 'howtos', 'reference', 'training']) {
@@ -95,5 +102,6 @@ export const useNavigation = ({ path, locale = 'en' }) => {
     slug: path.join('/'),
     nav: path.length > 1 ? get(nav, path[0]) : path.length === 0 ? sections : nav[path[0]],
     title: crumbs.length > 0 ? crumbs.slice(-1)[0].t : '',
+    siteNav: nav,
   }
 }

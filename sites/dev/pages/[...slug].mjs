@@ -28,7 +28,7 @@ const DocsPage = ({ page, slug }) => {
       import(`../../../markdown/dev/${slug}/en.md`).then((mod) => {
         setFrontmatter(mod.frontmatter)
         const Component = mod.default
-        setMDX(<Component components={components} />)
+        setMDX(<Component components={components('dev')} />)
       })
     }
     loadMDX()

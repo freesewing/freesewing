@@ -1,5 +1,5 @@
 // Used in static paths
-import mdxPaths from 'site/prebuild/mdx.paths.js'
+import { mdxPaths } from 'site/prebuild/mdx-paths.en.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Hooks
@@ -86,7 +86,7 @@ const EnDocsPage = ({ page, slug }) => {
       import(`../../../../markdown/org/${slug}/en.md`).then((mod) => {
         setFrontmatter(mod.frontmatter)
         const Component = mod.default
-        setMDX(<Component components={components} />)
+        setMDX(<Component components={components('org')} />)
       })
     }
     loadMDX()

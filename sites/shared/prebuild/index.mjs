@@ -10,15 +10,15 @@ import { prebuildDesigns } from './designs.mjs'
 import { generateOgImage } from './og/index.mjs'
 
 const run = async () => {
-  const linter = process.env.LINTER ? true : false
-  if (linter) return true
+  if (process.env.LINTER) return true
+  const FAST = process.env.FAST ? true : false
   const SITE = process.env.SITE || 'lab'
-  prebuildDesigns()
+  await prebuildDesigns()
   if (['org', 'dev'].includes(SITE)) {
-    await prebuildGitData(SITE)
+    if (!FAST) await prebuildGitData(SITE)
     const docPages = await prebuildDocs(SITE)
     prebuildNavigation(docPages, false, SITE)
-    if (process.env.GENERATE_OG_IMAGES) {
+    if (!FAST && process.env.GENERATE_OG_IMAGES) {
       // Create og image for the home page
       await generateOgImage({
         lang: 'en',
@@ -42,8 +42,10 @@ const run = async () => {
   if (SITE === 'org') await prebuildOrg()
 
   await prebuildI18n(SITE)
-  await prebuildContributors(SITE)
-  await prebuildPatrons(SITE)
+  if (!FAST) {
+    await prebuildContributors(SITE)
+    await prebuildPatrons(SITE)
+  }
   console.log()
 }
 

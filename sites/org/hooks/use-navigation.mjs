@@ -100,6 +100,11 @@ const sitePages = (t = false, control = 99) => {
       s: 'profile',
       h: 1,
     },
+    sitemap: {
+      t: t('sitemap'),
+      s: 'sitemap',
+      h: 1,
+    },
 
     // Not translated, this is a developer page
     typography: {
@@ -168,7 +173,8 @@ const createSections = (nav) => {
   return orderBy(sections, ['o', 't'])
 }
 
-export const useNavigation = ({ path, locale }) => {
+export const useNavigation = (params = {}) => {
+  const { path = [], locale = 'en' } = params
   const { t } = useTranslation(ns)
   const { account } = useAccount()
 
@@ -186,5 +192,6 @@ export const useNavigation = ({ path, locale }) => {
     slug: path.join('/'),
     nav: path.length > 1 ? get(nav, path[0]) : path.length === 0 ? sections : nav[path[0]],
     title: crumbs.length > 0 ? crumbs.slice(-1)[0].t : '',
+    siteNav: nav,
   }
 }
