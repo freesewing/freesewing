@@ -112,8 +112,8 @@ export const MdxWrapper = ({ MDX = false, frontmatter = {}, components = {}, chi
     <div className="text-primary mdx max-w-prose text-base-content max-w-prose text-base">
       <MetaData
         maintainers={frontmatter?.maintainers || []}
-        authors={updates.authors || []}
-        lastUpdated={updates.lastUpdates}
+        authors={updates.a || []}
+        updated={updates.u}
         {...{ locale, slug, t }}
       />
       {MDX ? <MDX components={allComponents} /> : children}

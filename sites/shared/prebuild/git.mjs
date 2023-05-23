@@ -73,7 +73,7 @@ export const prebuildGitData = async (site) => {
   // Loop over files
   for (const file of list) {
     const { lastUpdated, authors, slug } = await getGitMetadata(file, site)
-    pages[slug] = { lastUpdated, authors: [...authors] }
+    pages[slug] = { u: lastUpdated, a: [...authors] }
   }
   // Write page to disk
   const dir = path.resolve('..', site, 'prebuild')
@@ -86,7 +86,7 @@ export const prebuildGitData = async (site) => {
   // How about some stats
   const stats = {}
   for (const slug in pages) {
-    for (const author of pages[slug].authors) {
+    for (const author of pages[slug].a) {
       if (typeof stats[author] === 'undefined') stats[author] = 0
       stats[author]++
     }
