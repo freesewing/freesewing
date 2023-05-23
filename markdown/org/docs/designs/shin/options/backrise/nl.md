@@ -1,13 +1,13 @@
----
+- - -
 title: "Back rise"
----
+- - -
 
-How much extra rise do you want at the back?
+Hoeveel extra hoogte wil je achteraan?
 
-This factor will raise the waist at the back of your swim trunks only.
+Deze factor zal de taille enkel aan de achterkant van je zwembroek verhogen.
 
-> If you want to raise the waist overall, that's what the **rise** option does
+> Als je de taille in het algemeen wil verhogen, dat is wat de **hoogte** optie doet
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](shin_backrise_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](shin_backrise_sample.svg "Effect van deze optie op het patroon")
