@@ -1,13 +1,13 @@
 ---
-title: "Bust span ease"
+title: "Overwijdte bustenwijdte"
 ---
 
 ***
 
-The **bust span ease** option controls how much ease is applied to the bust span.
+De **bustewijdte overwijdte** optie bepaalt hoeveel overwijdte wordt toegepast op de bustewijdte.
 
-<Note>This will not add ease to the garment, but merely influence the bust point</Note>
+<Note>Dit maakt het kledingstuk niet gemakkelijker, maar beïnvloedt alleen het bustepunt</Note>
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_bustspanease_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](noble_bustspanease_sample.svg "Effect van deze optie op het patroon")
