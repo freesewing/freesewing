@@ -1,11 +1,11 @@
----
+- - -
 title: "Chest pocket angle"
----
+- - -
 
-![Chest pocket angle](chestpocketangle.svg)
+![Hoek borstzak](chestpocketangle.svg)
 
-The angle under which the chest pocket is placed.
+De hoek van de borstzak.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_chestpocketangle_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](jaeger_chestpocketangle_sample.svg "Effect van deze optie op het patroon")
