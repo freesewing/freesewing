@@ -1,11 +1,11 @@
----
+- - -
 title: "Theo trousers: What You Need"
----
+- - -
 
-To make Theodore, you will need the following:
+Om Theodore te maken heb je het volgende nodig:
 
-- Basic sewing supplies
+- Basis naaimateriaal
 - About 2 meters (2.2 yards) of a suitable fabric ([see Fabric options](/docs/patterns/theo/fabric))
 - About 1 meter (1.1 yards) of lining fabric
-- Fusible interfacing for back pockets and waistband
-- A zipper, button and hook for the fly
+- Kleefbare tussenvoering voor de achterzakken en tailleband
+- Een rits, knoop en broekhaak voor de gulp
