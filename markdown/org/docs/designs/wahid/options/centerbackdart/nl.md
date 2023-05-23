@@ -1,22 +1,22 @@
----
+- - -
 title: "Center back dart"
----
+- - -
 
-![Centerback dart](centerbackdart.svg)
+![Middenrug neep](centerbackdart.svg)
 
-Since nobody has a perfectly straight back, this pattern tapers in with 0.5 cm at the center back of your neck.
+Niemand heeft een kaarsrechte rug, dus dit patroon gaat aan de nek 0.5 cm naar binnen.
 
 <Note>
 
-###### What's the point?
+###### Waarom?
 
-If your back slumps forward a bit, fabric tends to pool at the back of your neck. With no sleeves or collar, this causes your neckline to gape.
-This option tapers the fabric inwards at the back of your neck. It does so by 0.5 cm by default, but you can increase or decrease that value.
+Als je rug een beetje naar voor gebogen is kan het gebeuren dat je een teveel aan stof hebt aan je nek. Zonder mouwen of kraag zorgt dit dat je halslijn gaat openstaan.
+Deze optie zorgt dat er een beetje stof aan de achterkant van de nek weggenomen wordt. Het doet dit standaard met 0,5 cm, maar je kan die waarde verhogen of verlagen.
 
-Technically this is not a dart, but I wasn't sure how else to call it. Suggestions welcome.
+Dit is eigenlijk geen neep, maar ik wist niet zeker hoe het te benoemen. Suggesties zijn welkom.
 
 </Note>
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_centerbackdart_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](wahid_centerbackdart_sample.svg "Effect van deze optie op het patroon")
