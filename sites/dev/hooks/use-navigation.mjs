@@ -75,6 +75,12 @@ const sitePages = () => {
       o: 270,
       h: 1,
     },
+    contact: {
+      t: 'Contact FreeSewing',
+      s: 'contact',
+      o: 270,
+      h: 1,
+    },
   }
   return pages
 }
