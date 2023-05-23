@@ -38,7 +38,7 @@ const HomePage = ({ page }) => (
     </Head>
 
     <div className="max-w-7xl m-auto">
-      <h2>FreeSewing Developer & Contributor Documentation</h2>
+      <h2>FreeSewing Documentation for Developers & Contributors</h2>
       <div className="flex flex-row flex-wrap gap-4 justify-between">
         <div className="max-w-xl">
           <Popout note>
@@ -77,16 +77,19 @@ const HomePage = ({ page }) => (
     <div className="max-w-7xl m-auto">
       <h2>Using FreeSewing: TL;DR</h2>
       <div className="flex flex-row flex-wrap gap-4 justify-between">
-        <div className="max-w-xl">
+        <div className="max-w-xl w-full">
           <h3>
-            Got node? <span role="img">🤔</span>
+            1. To go fast, go alone <span role="img">🚀</span>
           </h3>
           <p>
-            All you need is <strong>NodeJS</strong>; Then run the following command in a terminal:
+            All you need is <strong>NodeJS</strong>; Then run:
           </p>
           <Highlight language="shell">npx @freesewing/new-design@next</Highlight>
-          <p>This command will setup the FreeSewing development environment for you.</p>
+          <p>This command will setup the stand-along FreeSewing development environment for you.</p>
           <Popout tip compact>
+            Use this if you want to do your own thing, and not contribute to FreeSewing
+          </Popout>
+          <Popout note compact>
             Refer to our{' '}
             <PageLink
               href="/tutorials/getting-started-linux/dev-setup"
@@ -95,9 +98,40 @@ const HomePage = ({ page }) => (
             for more info on setting up your development environment.
           </Popout>
         </div>
+        <div className="max-w-xl w-full">
+          <h3>
+            2. To go far, go together <span role="img">🧑‍🤝‍🧑</span>
+          </h3>
+          <p>
+            First,{' '}
+            <a href="https://github.com/freesewing/freesewing/fork">fork our monorepo on GitHub</a>,
+            then run:
+          </p>
+          <Highlight language="shell">
+            git clone &lt;url to your fork&gt;
+            <br />
+            cd freesewing
+            <br />
+            yarn kickstart
+          </Highlight>
+          <p>
+            These commands will clone your fork of{' '}
+            <a href="https://github.com/freesewing/freesewing">
+              the freesewing/freesewing repository on GitHub
+            </a>{' '}
+            and set it up for development.
+          </p>
+          <Popout tip compact>
+            Use this if you want to contribute to FreeSewing, for the betterment of all involved
+          </Popout>
+          <Popout note compact>
+            Refer to our <PageLink href="/infra" txt="infrastructure documentation" /> for more
+            details about how to work with our monorepo.
+          </Popout>
+        </div>
         <div className="max-w-xl">
           <h3>
-            Need help? <span role="img">🤯</span>
+            3. Need help? <span role="img">🤯</span>
           </h3>
           <p>
             When you have questions or find yourself scratching your head you can{' '}
