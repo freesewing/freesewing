@@ -1,11 +1,11 @@
----
+- - -
 title: "Collar notch return"
----
+- - -
 
-![Collar notch return](collarnotchreturn.svg)
+![Kraag inkeping terugloop](collarnotchreturn.svg)
 
-Controls the length of the upper notch side. 100% = same as notch depth.
+Bepaalt de lengte van het bovenste been van de inkeping. 100% = identiek aan diepte inkeping.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_collarnotchreturn_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](jaeger_collarnotchreturn_sample.svg "Effect van deze optie op het patroon")
