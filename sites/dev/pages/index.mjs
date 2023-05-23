@@ -74,7 +74,7 @@ const HomePage = ({ page }) => (
       </div>
     </div>
 
-    <div className="max-w-7xl m-auto px-4">
+    <div className="max-w-7xl m-auto">
       <h2>Using FreeSewing: TL;DR</h2>
       <div className="flex flex-row flex-wrap gap-4 justify-between">
         <div className="max-w-xl">
@@ -112,7 +112,7 @@ const HomePage = ({ page }) => (
       </div>
     </div>
 
-    <div className="w-full m-auto lg:my-32">
+    <div className="m-auto -mx-4">
       <div
         className="bg-cover bg-neutral w-full bg-center shadow p-4 py-12"
         style={{ backgroundImage: 'url(/support.jpg)' }}
@@ -130,7 +130,7 @@ const HomePage = ({ page }) => (
           </p>
           <a
             role="button"
-            className="btn btn-accent btn-wide ml-4 mb-8"
+            className="btn btn-accent px-12 ml-4 mb-8"
             href="https://freesewing.org/patrons/join"
           >
             Become a Patron
