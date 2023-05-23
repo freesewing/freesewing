@@ -1,11 +1,11 @@
----
+- - -
 title: "Collar notch depth"
----
+- - -
 
-![Collar notch depth](collarnotchdepth.svg)
+![Diepte inkeping kraag](collarnotchdepth.svg)
 
-Depth of the collar notch.
+Diepte van de inkeping van de kraag.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_collarnotchdepth_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](jaeger_collarnotchdepth_sample.svg "Effect van deze optie op het patroon")
