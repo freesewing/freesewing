@@ -1,6 +1,6 @@
----
+- - -
 title: "Theo trousers: Fabric Options"
----
+- - -
 
 You have a lot of options here, but keep in mind that these are classic cut trousers. In other words, do not use stretch, denim, pleather of that sort of thing. Safe bets are wool, cotton, or linen, possibly blended with some synthetic.
 
