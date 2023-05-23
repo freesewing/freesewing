@@ -1,9 +1,9 @@
----
+- - -
 title: "Back waist dip"
----
+- - -
 
-This option controls how much the back waist curves (revealing more or less skin).
+Deze optie bepaalt hoeveel de omgekeerde golfcurves (min of meer skin) onthullen.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](ursula_backdip_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](ursula_backdip_sample.svg "Effect van deze optie op het patroon")
