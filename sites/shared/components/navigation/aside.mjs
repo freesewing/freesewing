@@ -5,6 +5,7 @@ export const ns = navNs
 export const AsideNavigation = ({ mobileOnly = false, before = [], after = [] }) => (
   <aside
     className={`
+    hidden lg:block
     fixed top-0 right-0 h-screen
     overflow-y-auto z-20
     bg-base-100 text-base-content
@@ -13,7 +14,6 @@ export const AsideNavigation = ({ mobileOnly = false, before = [], after = [] })
     lg:w-auto
     lg:sticky lg:relative lg:transform-none
     lg:justify-center
-    lg:border lg:border-dashed lg:border-l-0 lg:border-t-0 lg:border-b-0 lg:border-r-1 lg:border-base-300
     lg:bg-base-300 lg:bg-opacity-10
     lg:pt-16
     ${mobileOnly ? 'block lg:hidden w-full ' : ''}
@@ -22,7 +22,7 @@ export const AsideNavigation = ({ mobileOnly = false, before = [], after = [] })
     <div className="w-screen lg:w-auto">
       {before}
       <MainSections />
-      <div className="border border-l-0 border-r-0 border-b-0 border-dashed border-base-300 mt-4 pt-4">
+      <div className="mt-4 pt-4">
         <ActiveSection />
       </div>
       {after}

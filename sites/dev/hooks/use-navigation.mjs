@@ -53,10 +53,26 @@ const sitePages = () => {
       s: 'support',
       o: 70,
     },
+    spacer1: {
+      t: 'spacer',
+      o: 100,
+      b: 1,
+    },
+    spacer2: {
+      t: 'spacer',
+      o: 2000,
+      b: 1,
+    },
+    search: {
+      t: 'Search',
+      s: 'search',
+      o: 270,
+      h: 1,
+    },
     sitemap: {
       t: 'Sitemap',
       s: 'sitemap',
-      o: 70,
+      o: 270,
       h: 1,
     },
   }
@@ -76,7 +92,7 @@ const createSections = (nav) => {
   const sections = {}
   for (const slug of Object.keys(nav)) {
     const entry = nav[slug]
-    const val = { t: entry.t, s: entry.s }
+    const val = { t: entry.t, s: entry.s, b: entry.b }
     if (entry.o) val.o = entry.o
     if (!entry.h) sections[slug] = val
   }
@@ -87,10 +103,12 @@ const createSections = (nav) => {
 export const useNavigation = (params = {}) => {
   const { path = [], locale = 'en' } = params
   const nav = { ...pbn[locale], ...sitePages() }
-  // Hide top-level documentation entries
+  // Make top-level documentation entries appear in b-list
   for (const page of ['tutorials', 'guides', 'howtos', 'reference', 'training']) {
-    nav[page].h = 1
+    nav[page].o = 1000
+    nav[page].b = 1
   }
+  nav.contact.h = 1
 
   // Creat crumbs array
   const crumbs = createCrumbs(path, nav)

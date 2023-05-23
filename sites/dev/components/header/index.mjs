@@ -20,8 +20,9 @@ import {
 import { Ribbon } from 'shared/components/ribbon.mjs'
 import { ModalThemePicker, ns as themeNs } from 'shared/components/modal/theme-picker.mjs'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
+import { Search } from 'site/components/search.mjs'
 
-import { NavButton, NavSpacer, colors } from 'shared/components/workbench/header.mjs'
+import { NavButton, NavSpacer, colors } from 'shared/components/header.mjs'
 
 export const ns = ['header', 'sections', ...themeNs]
 
@@ -59,7 +60,12 @@ const NavIcons = ({ setModal, setSearch }) => {
       <NavButton href="/design" label="Design" color={colors[2]} extraClasses="hidden lg:flex">
         <DesignIcon className={iconSize} />
       </NavButton>
-      <NavButton href="/contribute" label="Contribute" color={colors[3]}>
+      <NavButton
+        href="/contribute"
+        label="Contribute"
+        color={colors[3]}
+        extraClasses="hidden lg:flex"
+      >
         <CodeIcon className={iconSize} />
       </NavButton>
       <NavButton href="/i18n" label="Translate" color={colors[4]} extraClasses="hidden lg:flex">
@@ -74,10 +80,10 @@ const NavIcons = ({ setModal, setSearch }) => {
         <WrenchIcon className={iconSize} stroke={1.5} />
       </NavButton>
       <NavSpacer />
-      <NavButton href="/about" label="About" color={colors[6]}>
+      <NavButton href="/about" label="About" color={colors[6]} extraClasses="hidden lg:flex">
         <FreeSewingIcon className={iconSize} />
       </NavButton>
-      <NavButton href="/support" label="Support" color={colors[7]}>
+      <NavButton href="/support" label="Support" color={colors[7]} extraClasses="hidden lg:flex">
         <HeartIcon className={iconSize} fill />
       </NavButton>
       <NavSpacer />
@@ -88,33 +94,12 @@ const NavIcons = ({ setModal, setSearch }) => {
       >
         <ThemeIcon className={iconSize} />
       </NavButton>
-      <NavButton onClick={() => setSearch(true)} label={t('header:search')} color={colors[9]}>
+      <NavButton href="/search" label={t('header:search')} color={colors[9]}>
         <SearchIcon className={iconSize} />
       </NavButton>
     </>
   )
 }
-
-const Banner = () => (
-  <div
-    className={`
-      fixed top-0 lg:top-auto lg:top-0 left-auto m-auto w-full flex
-      z-30
-      opacity-60 hover:opacity-100
-
-     `}
-  >
-    <div className="bg-accent p-1 px-4 m-auto text-accent-content font-bold m-auto rounded-b-lg">
-      This is a <b>FreeSewing.dev</b> alpha version. If you spot a problem, please{' '}
-      <a
-        className="underline hover:text-secondary"
-        href="https://github.com/freesewing/freesewing/issues/4070"
-      >
-        report it in this issue
-      </a>
-    </div>
-  </div>
-)
 
 export const Header = ({ setSearch }) => {
   const { setModal } = useContext(ModalContext) || {}
@@ -136,9 +121,6 @@ export const Header = ({ setSearch }) => {
     }
   }, [prevScrollPos, show])
 
-  // This adds the alpha banner
-  const BANNER = true
-
   return (
     <header
       className={`
@@ -151,7 +133,6 @@ export const Header = ({ setSearch }) => {
       drop-shadow-xl
     `}
     >
-      {BANNER ? <Banner /> : null}
       <div className="m-auto md:px-8">
         <div className="p-0 flex flex-row gap-2 justify-between text-neutral-content items-center">
           {/* Non-mobile content */}

@@ -30,7 +30,7 @@ const getRoot = {
   org: (root, nav) => {
     // Fixme: make this work for org
     if (!root) return nav
-    if (root.indexOf('/') === -1) return nav[root]
+    if (root.indexOf('/') === -1) return get(nav, ['docs', root])
     return get(nav, root.split('/'))
   },
 }
@@ -42,7 +42,7 @@ export const ReadMore = ({
   level = 0,
   pretty = false,
 }) => {
-  const { nav } = useContext(NavigationContext)
+  const { slug } = useContext(NavigationContext)
   const { siteNav } = useNavigation()
 
   // Deal with recurse not being a number
@@ -54,17 +54,21 @@ export const ReadMore = ({
   // Deal with root being passed as true
   if (root === true) root = ''
 
-  const tree = root ? getRoot[site](root, siteNav) : nav
+  const tree = root === false ? getRoot[site](slug, siteNav) : getRoot[site](root, siteNav)
+
   const list = []
   for (const page of currentChildren(tree)) {
-    list.push(
-      <li key={page.s}>
-        <Link href={`/${page.s}`}>
-          <span className={pretty ? getClasses(level) : ''}>{page.t}</span>
-        </Link>
-        {recurse ? <ReadMore root={page.s} recurse={recurse} level={level + 1} /> : null}
-      </li>
-    )
+    if (page.t !== 'spacer')
+      list.push(
+        <li key={page.s} className="break-all">
+          <Link href={`/${page.s}`}>
+            <span className={pretty ? getClasses(level) : ''}>{page.t}</span>
+          </Link>
+          {recurse ? (
+            <ReadMore root={page.s} level={level + 1} {...{ recurse, site, pretty }} />
+          ) : null}
+        </li>
+      )
   }
 
   return <ul>{list}</ul>
