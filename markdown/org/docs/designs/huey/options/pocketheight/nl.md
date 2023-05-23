@@ -1,11 +1,11 @@
----
+- - -
 title: "Pocket height"
----
+- - -
 
-![Pocket height](./pocketheight.svg)
+![Zak hoogte](./pocketheight.svg)
 
-Controls the height of the front pocket.
+Bepaalt de hoogte van de voorzak.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_pocketheight_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](huey_pocketheight_sample.svg "Effect van deze optie op het patroon")
