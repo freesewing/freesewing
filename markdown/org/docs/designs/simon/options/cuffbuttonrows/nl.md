@@ -1,17 +1,17 @@
----
+- - -
 title: "Cuff button rows"
----
+- - -
 
-![Cuff button rows](cuffbuttonrows.svg)
+![Rijen knopen op manchet](cuffbuttonrows.svg)
 
-Do you want a single button on your barrelcuff, or two?
+Wil je een enkele knoop op je manchet, of twee?
 
 <Note>
 
-This does only apply to barrelcuffs. So if you picked a French cuff as cuff style this will be ignored.
+Dit is alleen van toepassing om de klassieke manhet. Dus als je een Franse manchet gekozen hebt wordt dit genegeerd.
 
 </Note>
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_cuffbuttonrows_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_cuffbuttonrows_sample.svg "Effect van deze optie op het patroon")
