@@ -1,9 +1,9 @@
----
+- - -
 title: "Length bonus"
----
+- - -
 
-This controls the length of the skirt. Percentage of the natural waist to knee measurement.
+Hiermee wordt de lengte van de rok bepaald. Percentage van de natuurlijke taille tot kniemaat.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_lengthbonus_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](penelope_lengthbonus_sample.svg "Effect van deze optie op het patroon")
