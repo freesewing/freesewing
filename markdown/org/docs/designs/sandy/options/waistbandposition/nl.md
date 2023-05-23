@@ -1,11 +1,11 @@
----
+- - -
 title: "Waistband position"
----
+- - -
 
-![Waistband position](waistbandposition.svg)
+![Positie tailleband](waistbandposition.svg)
 
-Where the waistband sits. 0% makes it sit on the natural waist, 100% makes it sit on the hips.
+Waar de tailleband zit. 0% zet de tailleband aan de natuurlijke taille, 100% plaatst hem op de heupen.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](sandy_waistbandposition_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](sandy_waistbandposition_sample.svg "Effect van deze optie op het patroon")
