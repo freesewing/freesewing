@@ -25,7 +25,7 @@ export const Highlight = (props) => {
   if (language === 'mermaid') return <Mermaid>{props.children}</Mermaid>
 
   const preProps = {
-    className: `language-${language} hljs text-base lg:text-lg whitespace-pre overflow-scroll pr-4`,
+    className: `language-${language} hljs text-base lg:text-lg whitespace-break-spaces overflow-scroll pr-4`,
   }
   if (props.raw) preProps.dangerouslySetInnerHTML = { __html: props.raw }
 
