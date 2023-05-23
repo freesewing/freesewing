@@ -4,16 +4,16 @@ title: "Unice undies: Cutting instructions"
 
 Unice consists of a front, a back, and a lined gusset.
 
-- **Main fabric**
-  - Cut **1 front**
-  - Cut **1 back**
-  - Cut **2 gusset**
+- **Buitenstof**
+  - Knip **1 voorpand**
+  - Knip **1 rugpand**
+  - Knip **2 gusset**
 
 <Note>
 
 ##### Notes
 
-- Unice is a great scrap buster. If you have fabric scraps from making a [Teagan t-shirt](/designs/teagan/) or anything from a jersey fabric that has good stretch, this is a good way to use those up.
-- You can use the same fabric for the whole garment, including the gusset lining. Some people prefer to use a cotton jersey instead to line the gusset. If you want to do that, cut **1 gusset** from your main fabric and **1 gusset** from your lining fabric.
+- Unice is a great scrap buster. Als je stof restjes hebt van het maken van een [Teagan t-shirt](/ontwerpen/teagan/) of iets van een jersey stof die een goede stretch heeft, Dit is een goede manier om die te gebruiken.
+- Je kunt dezelfde stof gebruiken voor het hele kledingstuk, inclusief de gussetvoering Sommige mensen gebruiken liever een katoenen jersey om de gusset te lijnen. Als je dat wilt doen, knip je **1 glansset** van je hoofdstof en **1 glansset** van de voering stof.
 
 </Note>
