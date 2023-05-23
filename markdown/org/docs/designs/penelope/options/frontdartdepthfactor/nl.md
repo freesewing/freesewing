@@ -1,9 +1,9 @@
----
+- - -
 title: "Front dart depth factor"
----
+- - -
 
-How far down does the front dart go from the waistband. This is a factor of the natural waist To seat measurement.
+Hoe ver de neep vooraan van de tailleband naar beneden gaat. Dit is een factor van de natuurlijke taille tot zittingsmaat.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_frontdartdepthfactor_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](penelope_frontdartdepthfactor_sample.svg "Effect van deze optie op het patroon")
