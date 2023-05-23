@@ -1,27 +1,27 @@
----
+- - -
 title: "Biceps ease"
----
+- - -
 
-![Biceps ease](./bicepsease.svg)
+![Overwijdte biceps](./bicepsease.svg)
 
-How much do you want the sleeve to be wider than your upperarm circumference?
+Hoeveel wijder dan je bovenarmomtrek wil je dat de mouw is?
 
 <Note>
 
-###### What's the point?
+###### Waarom?
 
-It's actually men with big arms who prefer a tighter fit, and thus less ease here. That's because it draws attention to their strong upper arms.
+Het zijn juist mannen met grote armen die liever een aansluitende pasvorm, en dus minder overwijdte willen. Dit is omdat een strakke mouw de aandacht vestigt op hun sterke bovenarmen.
 
-If your upper arms are more skinny, you'll want some more ease here to smooth things out a bit.
+Als je bovenarmen wat mager zijn wil je hier misschien een beetje extra stof om alles wat te balanceren.
 
 </Note>
 
 <Warning>
 
-We will try to respect your choice here, but out priority is to fit the sleeve in the armhole.
+We proberen je keuze hier te respecteren, maar onze prioriteit is zorgen dat de mouw in het armsgat past.
 
 </Warning>
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_bicepsease_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_bicepsease_sample.svg "Effect van deze optie op het patroon")
