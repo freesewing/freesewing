@@ -75,12 +75,6 @@ const sitePages = () => {
       o: 270,
       h: 1,
     },
-    contact: {
-      t: 'Contact FreeSewing',
-      s: 'contact',
-      o: 270,
-      h: 1,
-    },
   }
   return pages
 }
@@ -109,11 +103,12 @@ const createSections = (nav) => {
 export const useNavigation = (params = {}) => {
   const { path = [], locale = 'en' } = params
   const nav = { ...pbn[locale], ...sitePages() }
-  // Hide top-level documentation entries
+  // Make top-level documentation entries appear in b-list
   for (const page of ['tutorials', 'guides', 'howtos', 'reference', 'training']) {
     nav[page].o = 1000
     nav[page].b = 1
   }
+  nav.contact.h = 1
 
   // Creat crumbs array
   const crumbs = createCrumbs(path, nav)
