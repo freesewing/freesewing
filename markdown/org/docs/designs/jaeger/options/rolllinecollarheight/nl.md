@@ -1,11 +1,11 @@
----
+- - -
 title: "Roll-line collar height"
----
+- - -
 
-![Roll line collar height](rolllinecollarheight.svg)
+![Hoogte breuklijn kraag](rolllinecollarheight.svg)
 
-The amount by which the roll line hugs the neck.
+Hoe hoog de breuklijn van de kraag in de nek valt.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_rolllinecollarheight_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](jaeger_rolllinecollarheight_sample.svg "Effect van deze optie op het patroon")
