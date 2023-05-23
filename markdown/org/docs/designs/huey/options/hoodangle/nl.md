@@ -1,11 +1,11 @@
----
+- - -
 title: "Hood angle"
----
+- - -
 
-![Hood angle](./hoodangle.svg)
+![Capuchon hoek](./hoodangle.svg)
 
-Controls the angle at which the hood is attached
+Bepaalt de hoek waaronder de capuchon is geplaatst
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_hoodangle_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](huey_hoodangle_sample.svg "Effect van deze optie op het patroon")
