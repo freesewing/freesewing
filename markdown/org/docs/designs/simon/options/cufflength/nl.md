@@ -1,17 +1,17 @@
----
+- - -
 title: "Cuff length"
----
+- - -
 
-![Cuff length](cufflength.svg)
+![Lengte manchet](cufflength.svg)
 
-The length of your cuffs.
+De lengte van de manchetten.
 
 <Note>
 
-This will not influence the total length of your sleeve.
+Dit heeft geen invloed op de totale lengte van je mouw.
 
 </Note>
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_cufflength_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_cufflength_sample.svg "Effect van deze optie op het patroon")
