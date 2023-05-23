@@ -1,19 +1,19 @@
----
+- - -
 title: "Cuff narrow button"
----
+- - -
 
-![Barrel cuff narrow button](./barrelcuffnarrowbutton.svg)
+![Klassieke manchet smalle knoop](./barrelcuffnarrowbutton.svg)
 
-Do you want an extra button to button up your cuff more tightly?
+Wil je een extra knoop om je manchet iets strakker vast te knopen?
 
-If you are wearing your shirt under a tight-fitting (at the wrist) sweater or cardigan, this button allows you to make your cuff more narrow, so it doesn't bunch up all ugly.
+Als je je hemd onder een strakke (of toch aan de pols) trui of cardigan wil dragen kan je met deze knoop je manchet smaller maken, zodat die niet opfrommelt in je mouw.
 
 <Note>
 
-This does only apply to barrelcuffs. So if you picked a French cuff as cuff style this will be ignored.
+Dit is alleen van toepassing om de klassieke manhet. Dus als je een Franse manchet gekozen hebt wordt dit genegeerd.
 
 </Note>
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_barrelcuffnarrowbutton_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_barrelcuffnarrowbutton_sample.svg "Effect van deze optie op het patroon")
