@@ -1,9 +1,9 @@
----
+- - -
 title: "Neckline depth"
----
+- - -
 
-Controls the depth of the neck opening.
+Bepaalt de diepte van de halsopening.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](teagan_necklinedepth_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](teagan_necklinedepth_sample.svg "Effect van deze optie op het patroon")
