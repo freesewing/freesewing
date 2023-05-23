@@ -1,5 +1,5 @@
 ---
-title: "Hi the shark: Required Measurements"
+title: "Hi shark plush toy: Required Measurements"
 ---
 
 <Note>
