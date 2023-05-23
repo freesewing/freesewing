@@ -1,17 +1,17 @@
----
+- - -
 title: "Collar flare"
----
+- - -
 
-![Collar flare](collarflare.svg)
+![Spreiding kraag](collarflare.svg)
 
-How much the collar flares out (at the collar edge side), rather than being straight.
+Hoeveel de kraag verbreedt (aan de rand van de kraag) in plaats van recht te zijn.
 
 <Note>
 
-This influences the length of your collar tips.
+Dit heeft invloed op de lengte van de punten van je kraag.
 
 </Note>
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarflare_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_collarflare_sample.svg "Effect van deze optie op het patroon")
