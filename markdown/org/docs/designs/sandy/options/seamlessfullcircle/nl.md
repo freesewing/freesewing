@@ -1,10 +1,10 @@
----
+- - -
 title: "Seamless full circle"
----
+- - -
 
-![Seamless full circle](seamlessfullcircle.svg)
+![Naadloze volledige cirkel](seamlessfullcircle.svg)
 
-Select 'yes' for a seamless circle, which is cut on a double fold. Since it has no openings, you'll need an elastic waistband.
+Kies 'ja' voor een naadloze cirkel, die aan een dubbele stofvouw geknipt wordt. Aangezien er geen opening is voor een rits heb je een elastische tailleband nodig.
 
 <Note>
 
@@ -14,6 +14,6 @@ Select 'yes' for a seamless circle, which is cut on a double fold. Since it has 
 
 </Note>
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](sandy_seamlessfullcircle_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](sandy_seamlessfullcircle_sample.svg "Effect van deze optie op het patroon")
