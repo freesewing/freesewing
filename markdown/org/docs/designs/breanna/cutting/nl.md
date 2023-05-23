@@ -1,11 +1,11 @@
----
+- - -
 title: "Breanna body block: Cutting Instructions"
----
+- - -
 
-**Main fabric**
+**Buitenstof**
 
 - Cut **1 Front** part on the fold.
-- Cut **2 Back** parts.
+- Cut **2 Back** part.
 - Cut **2 Sleeve** parts, _good sides together_.
 
 These cutting instructions are just for the default Breanna block. Adjust your cutting accordingly if you have/are making changes to the block.
@@ -18,11 +18,11 @@ If you do not have someone to help pin you into Breanna then you may find it eas
 
 <Note>
 
-###### Breanna is a block, not a pattern
+###### Breanna is een blok, geen patroon
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Een blok is een basisvorm waarop andere patronen zijn gebaseerd.
+Dit wordt soms ook een paspatroon genoemd, alhoewel puristen zeggen dat dit twee verschillende dingen zijn.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Blokken worden meestal niet gemaakt zoals is, maar dienen als basis voor andere patronen.
 
 </Note>
