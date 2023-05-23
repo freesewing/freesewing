@@ -1,11 +1,11 @@
----
+- - -
 title: "Waistband overlap"
----
+- - -
 
-![Waistband overlap](waistbandoverlap.svg)
+![Overlap Tailleband](waistbandoverlap.svg)
 
-The length of the overlap between the ends of the waistband, to allow a button. 0 means no overlap, for example to place a zipper that goes all the way to the top of the waistband.
+Hoe lang de overlapping van de uiteindes van de tailleband moet zijn, om plaats te maken voor een knoop. O betekent geen overlapping, om bijvoorbeeld een rits te gebruiken die tot helemaal bovenaan de tailleband komt.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](sandy_waistbandoverlap_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](sandy_waistbandoverlap_sample.svg "Effect van deze optie op het patroon")
