@@ -1,10 +1,10 @@
----
+- - -
 title: "Huey hoodie: Sewing Instructions"
----
+- - -
 
 <Note>
 
-This pattern can be sewn with or with out a overlocker/serger. If not using a overlocker or serger you will have to _Finish_ the seams.
+Dit patroon kan met of met een overlocker/overlock worden gestikt. If not using a overlocker or serger you will have to _Finish_ the seams.
 
 </Note>
 
@@ -103,7 +103,7 @@ A neckband can be useful to stablise and cover the neck seams but it is optional
 - If need be, face the front edges of the hoodie.
 - Unzip the zipper part way.
 - Fold the top of the zipper tape down to the _good side_ of the zipper tape. Trim if need be.
-- Pin the zipper along one of the front edges of the hood, front and waistband. Making sure the zipper pull is faced the _good sides_ of the hoodie and the bottoms are lined up. The zipper teeth should just be slightly over the seam line with the edge of the tape either matching or being slightly over from the hoodie edge.
+- Pin the zipper along one of the front edges of the hood, front and waistband. The zipper teeth should just be slightly over the seam line with the edge of the tape either matching or being slightly over from the hoodie edge. Making sure the zipper pull is faced the _good sides_ of the hoodie and the bottoms are lined up.
 - Using a zipper foot stitch the zipper to the hoodie using you seam allownace width. When you reach the zipper pull, stop, put your needle down, lift the presser foot, pull the zipper pull past the presser foot, lower the presser foot. Then you can continue sewing the seam.
 - Unzip the zipper.
 - Pin and sew the unattached zipper tape to the other side of the hoodie the same way.
@@ -135,11 +135,11 @@ Use a safety pin to help thread the drawstring.
 
 ### Step 11: Enjoy!
 
-- That's it! Your all done! Now go feel warm and comfy in your new hoodie!
+- Dat is het! Your all done! Now go feel warm and comfy in your new hoodie!
 
 <Note>
 
-This patterns was featured in [issue 27 of HackSpace magazine](https://hackspace.raspberrypi.org/issues/27),
-the article includes instructions too, so you may want to have a look at it.
+Deze patronen waren te zien in [issue 27 of HackSpace magazine](https://hackspace.raspberrypi. rg/issues/27),
+het artikel bevat ook instructies, dus je kunt het eens bekijken.
 
 </Note>
