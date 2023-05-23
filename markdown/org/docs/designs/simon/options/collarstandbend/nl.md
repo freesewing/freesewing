@@ -1,11 +1,11 @@
----
+- - -
 title: "Collar stand bend"
----
+- - -
 
-![Collarstand bend](collarstandbend.svg)
+![Kromming staander](collarstandbend.svg)
 
-How much the collar stand bends in the middle, rather than being straight. This influences how your collar will sit around your neck.
+Hoeveel de kraagstaander buigt in het midden, in plaats van recht te zijn. Dit beïnvloedt hoe de kraag rond je nek zit.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarstandbend_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_collarstandbend_sample.svg "Effect van deze optie op het patroon")
