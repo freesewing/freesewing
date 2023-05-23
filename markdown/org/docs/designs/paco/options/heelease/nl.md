@@ -1,11 +1,11 @@
----
+- - -
 title: "Heel ease"
----
+- - -
 
-This controls the amount of ease at the instep, or heel.
+Dit controleert de hoeveelheid overwijdte aan de plaats of heel.
 
-Increase this to make it easier to get in and out of your pants.
+Verhoog dit om het gemakkelijker te maken om binnen en uit je broek te komen.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](paco_heelease_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](paco_heelease_sample.svg "Effect van deze optie op het patroon")
