@@ -1,13 +1,13 @@
----
+- - -
 title: "Leg reduction"
----
+- - -
 
-The amount to further reduce the stretch at the (upper) legs.
+Hoeveel smaller de (boven)benen moeten worden.
 
-> #### What's the point?
+> #### Waarom?
 > 
-> This option makes the legs fit more snugly than the rest of your swimming trunks to avoid gaping.
+> Deze optie maakt de pijpen strakker dan de rest van je zwembroek om te voorkomen dat ze openstaan.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](shin_legreduction_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](shin_legreduction_sample.svg "Effect van deze optie op het patroon")
