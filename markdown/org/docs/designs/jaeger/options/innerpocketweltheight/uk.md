@@ -1,6 +1,6 @@
----
+- - -
 title: "Inner pocket welt height"
----
+- - -
 
 Controls the width of the inner pocket welts.
 
