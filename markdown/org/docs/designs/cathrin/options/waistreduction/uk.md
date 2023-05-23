@@ -1,6 +1,6 @@
----
+- - -
 title: "Waist reduction"
----
+- - -
 
 ![The waist reduction option on Cathrin](./waistreduction.svg)
 
