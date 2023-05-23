@@ -1,21 +1,21 @@
----
+- - -
 title: "Collar roll"
----
+- - -
 
-![Collar roll](collarroll.svg)
+![Omval kraag](collarroll.svg)
 
-How much the collar is taller than the collar stand at center back.
+Hoeveel hoger de kraag is dan de kraagstaander aan de middenrug.
 
 <Note>
 
-###### What's the point?
+###### Waarom?
 
-The collar starts upwards from the collar stand and then rolls over downwards. But it still needs to cover the collar stand. For that, it needs to be a bit longer.
+De kraag gaat vanaf de kraagstaander omhoog en rolt dan om naar beneden. Maar hij moet wel de kraagstaander bedekken. Daarom moet hij iets langer zijn.
 
-Increasing this does not make the collar higher (use the collar stand height for that) but rather makes it descend further down.
+Door dit getal te verhogen maak je de kraag niet hoger (gebruik daarvoor de hoogte van de kraagstaander) maar zorgt dat hij lager komt.
 
 </Note>
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarroll_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_collarroll_sample.svg "Effect van deze optie op het patroon")
