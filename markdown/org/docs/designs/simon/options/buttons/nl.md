@@ -1,11 +1,11 @@
----
+- - -
 title: "Number of buttons"
----
+- - -
 
-![Buttons](buttons.svg)
+![Knopen](buttons.svg)
 
-The number of buttons on your shirt. Excluding cuff buttons, and the optional extra top button.
+Het aantal knopen aan je hemd. Knopen aan de manchetten worden niet meegeteld, een optionele extra knoop bovenaan ook niet.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_buttons_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_buttons_sample.svg "Effect van deze optie op het patroon")
