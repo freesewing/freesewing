@@ -1,16 +1,16 @@
----
+- - -
 title: "Bow style"
----
+- - -
 
-Four different bow tie styles!
+Vier verschillende stijlen van vlinderdas!
 
-Benjamin allows you to make four different bow ties.
+Benjamin laat je vier verschillende vlinderdassen maken.
 
-- Contemporary Diamond
-- Traditional Butterfly
-- Classic Square
-- Whimsical Wide Square
+- Hedendaagse diamant
+- Traditionele vinder
+- Klassiek vierkant
+- Speels wijd vierkant
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_bowstyle_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](benjamin_bowstyle_sample.svg "Effect van deze optie op het patroon")
