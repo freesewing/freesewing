@@ -1,22 +1,22 @@
----
+- - -
 title: "Back rise"
----
+- - -
 
-![Back rise](backrise.svg)
+![Hoogte achter](backrise.svg)
 
-This raises the waist of your trousers at the back.
+Dit verhoogt de taille van je broek achteraan.
 
 <Note>
 
-This trouser pattern is based on the drafting method of Winifred Aldrich.
-One complain I often get is that the back of the trousers is too low.
-It's a valid complaint too, it is low.
+Dit broekpatroon is gebaseerd op de tekenmethode van Winifred Aldrich.
+Een klacht die ik vaak krijg is dat de broek achteraan te laag is.
+De klacht is gegrond, ze is laag.
 
-This option allows you to mitigate that, without dramatic changes to the pattern.
-It allows you to simply raise the back of the trousers.
+Deze optie staat je toe dat aan te passen, zonder het patroon dramatisch te veranderen.
+Je kan gewoon de achterkant van de broek wat hoger maken.
 
 </Note>
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](theo_backrise_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](theo_backrise_sample.svg "Effect van deze optie op het patroon")
