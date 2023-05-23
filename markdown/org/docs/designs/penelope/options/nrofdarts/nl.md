@@ -1,9 +1,9 @@
----
+- - -
 title: "Number of darts"
----
+- - -
 
-The number of darts used in the pattern. The maximum is 2, but this option can be reduced by the pattern if the calculations create darts that are too small.
+Het aantal nepen dat gebruikt wordt in het patroon. Het maximum is 2, maar deze optie kan worden verlaagd door het patroon als de berekeningen te kleine nepen veroorzaken.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_nrofdarts_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](penelope_nrofdarts_sample.svg "Effect van deze optie op het patroon")
