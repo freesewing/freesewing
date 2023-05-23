@@ -1,11 +1,11 @@
----
+- - -
 title: "Collar height"
----
+- - -
 
-![Collar height](collarheight.svg)
+![Hoogte kraag](collarheight.svg)
 
-This is the collar height at the back of the neck and can never be less than twice the roll line collar height.
+Dit is de hoogte van de kraag aan de achterkant van de nek. Dit kan nooit minder zijn dan twee keer de kraaghoogte tot aan de breuklijn.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_collarheight_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](jaeger_collarheight_sample.svg "Effect van deze optie op het patroon")
