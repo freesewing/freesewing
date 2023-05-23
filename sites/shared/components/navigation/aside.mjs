@@ -2,10 +2,10 @@ import { MainSections, ActiveSection, ns as navNs } from './primary.mjs'
 
 export const ns = navNs
 
-export const AsideNavigation = ({ mobileOnly = false, before = [], after = [] }) => null
-/*(
+export const AsideNavigation = ({ mobileOnly = false, before = [], after = [] }) => (
   <aside
     className={`
+    hidden lg:block
     fixed top-0 right-0 h-screen
     overflow-y-auto z-20
     bg-base-100 text-base-content
@@ -29,4 +29,3 @@ export const AsideNavigation = ({ mobileOnly = false, before = [], after = [] })
     </div>
   </aside>
 )
-*/

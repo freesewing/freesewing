@@ -2,6 +2,7 @@ import { useContext } from 'react'
 // Components
 import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
+import { AsideNavigation } from 'shared/components/navigation/aside.mjs'
 
 export const ns = []
 
@@ -10,7 +11,8 @@ export const DocsLayout = ({ children = [], pageTitle = false }) => {
 
   return (
     <div className="grid grid-cols-4 m-auto justify-center place-items-stretch lg:mt-16">
-      <section className="col-span-4 lg:col-span-3 py-8 pg:py-24 px-4 lg:pl-8 bg-base-50">
+      <AsideNavigation />
+      <section className="col-span-4 lg:col-span-3 py-8 lg:py-16 px-4 lg:pl-8 bg-base-50">
         {title && (
           <div className="xl:pl-4">
             <Breadcrumbs crumbs={crumbs} title={pageTitle ? pageTitle : title} />
