@@ -1,9 +1,9 @@
 ---
-title: "Lucy tie-on pocket: Cutting Instructions"
+title: "Lucy: Cutting"
 ---
 
-- Cut **2 pocket** parts
-- Cut pocket slit into **1 pocket** part
+- cut two pocket pieces
+- cut pocket slit into one pocket piece
 
 #### Historical context
 
