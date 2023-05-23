@@ -1,6 +1,6 @@
----
+- - -
 title: "Yuri hoodie: Sewing Instructions"
----
+- - -
 
 <Note>
 
@@ -75,7 +75,7 @@ Dit is slechts één zoommethode, als je de voorkeur geeft aan een andere manier
 
 ## Stap 7: Bereid voedsel en kap voor
 
-Follow this step twice, once for the outer hood and once for the lining hood.
+Volg deze stap twee keer, één keer voor de buitenste kap en één keer voor de voering kap.
 
 - Stik de lange rand van het kap aan de buitenrand van een van de kap aan elkaar.
 - Stik de resterende lange rand van het kap centrum aan de buitenrand van de andere kap aan elkaar.
@@ -92,7 +92,7 @@ Het is aanbevolen om de **afwerkingsmethode** voor deze stap te gebruiken, ongea
 
 - With _good sides together_, pin the Outside and Lining Hoods together matching the seams.
 - Stik de gepinde rand samen.
-- Knip de naadwaarde bij op 1 cm (3/8 inch) als de naadwaarde groter is en je niet hebt gebruikt en overlocker/overlocker/overlock hebt. Otherwise _do not_ trim the seam.
+- Knip de naadwaarde bij op 1 cm (3/8 inch) als de naadwaarde groter is en je niet hebt gebruikt en overlocker/overlocker/overlock hebt. Anders _knip de naad niet_ bij.
 - Keer de goede kanten van de kap uit en strijk de buitenrand plat.
 - Stik langs de rand van de kap, ongeveer 1,5 - 2 cm (5/8 - 3/4 inch) van de rand. Zorg ervoor dat je omstiksel door de naadwaarde van de buitenste rand gaat, maar niet door de naadwaarde gaat. Dit maakt een decoratieve rand met de naadwaarde van de naadwaarde van de naadwaarde een beetje de rand van de rand maakt.
 - Met ruwe randen samen, verwierp je de bodem van de kap. Je kunt dit doen met een overlocker/serger of een ritz of een stiksel op een gewone machine.
@@ -111,8 +111,8 @@ Als je de decoratieve rand niet wilt hebben, Misschien wil je de voering nog ond
 
 <Note>
 
-Whilst marked optional, it is recommended to do this step as it creates a neater and stronger finish around the neck.
-You can also make a folded band so the neckband does not have a raw edge but this may be bulky. You will also need to make sure the folded edge extends slightly longer than 1cm to be caught when attaching and topstitching the hood but not so long that it flaps about.
+Terwijl het een optioneel gemarkeerde stap is, wordt aangeraden deze stap te doen omdat het een naaste en sterkere afwerking rond de nek creëert.
+Je kan ook een geplooide band maken zodat de nekband geen onbewerkte rand heeft, maar dit kan bulky zijn. Je moet er ook voor zorgen dat de geplooide rand iets langer is dan 1 cm om te worden bevestigd en de kap aan te stikken, maar niet zo lang dat het over draait.
 
 </Note>
 
@@ -135,8 +135,8 @@ Als je een overlocker/overlock gebruikt om de capuchon te bevestigen die je miss
 
 <Note>
 
-If you are worried that topstitching the neckband with a straight stitch will not give enough stretch you can always topstitch it with a narrow zig-zag or appropriate stretch stitch of your choosing.
-If you are not using a neckband you will want to finish the seam with **Finishing Method 2** and topstitch with 6mm (1/4 inch) instead of 1cm (3/8 inch).
+Als je bang bent dat het stikken van de halslijn met een rechte steek niet genoeg stretch geeft, dan kan je hem altijd omstikken met een smalle zigzag, of met een juiste elassteek naar keuze.
+Als je geen halsband gebruikt, wil je de naad afwerken met **afwerkingsmethode 2** en doorsteek met 6 mm (1/4 inch) in plaats van 1 cm (3/8 inch).
 
 </Note>
 
@@ -149,4 +149,4 @@ If you are not using a neckband you will want to finish the seam with **Finishin
 
 ## Stap 12: Ta-daaa
 
-Enjoy your Yuri!
+Geniet van je Yuri!
