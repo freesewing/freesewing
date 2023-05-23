@@ -25,5 +25,5 @@ order: 40
 - We publish an open data set of measurements, containing fully anonymized data.
 
 <Note>
-This data is stored for anybody with an account on our website which contains one or more people.
+This data is stored for anybody with an account on our website which contains one or more measurements sets.
 </Note>
