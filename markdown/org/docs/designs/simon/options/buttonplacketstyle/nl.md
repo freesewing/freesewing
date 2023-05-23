@@ -1,14 +1,14 @@
----
+- - -
 title: "Button placket style"
----
+- - -
 
-![Button placket style](buttonplacketstyle.svg)
+![Stijl knopenpat](buttonplacketstyle.svg)
 
-Do you want the button placket to be sewn in place (classic style), or folded back and held in place by the buttons (seamless style)?
+Wil je dat het knopenpat vastgenaaid wordt (klassieke stijl), of omgeplooid en op zijn plaats gehouden met knopen (naadloze stijl)?
 
 <Tip>
 
-Seamless is less work, and it looks great.
+Naadloos is minder werk, en ziet er geweldig uit.
 
 </Tip>
 
@@ -18,6 +18,6 @@ As seamless is only possible on a _cut-on_ placket, this option is ignored if yo
 
 </Note>
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_buttonplacketstyle_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_buttonplacketstyle_sample.svg "Effect van deze optie op het patroon")
