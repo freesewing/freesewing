@@ -1,11 +1,11 @@
----
+- - -
 title: "Theo trousers: Fabric Options"
----
+- - -
 
-You have a lot of options here, but keep in mind that these are classic cut trousers. In other words, do not use stretch, denim, pleather of that sort of thing. Safe bets are wool, cotton, or linen, possibly blended with some synthetic.
+Je hebt hier veel opties, maar hou in je achterhoofd dat dit een klassiek model van broek is. In andere woorden, gebruik geen stretchstof, denim, nepleer of andere onzin. Veilige opties zijn wol, katoen of linnen, eventueel gemengd met iets synthetisch.
 
-For **wool**, look in the suiting section of your fabric store. If this is your first pair, some wool-poly blend is most likely going to be more budget-friendly. But don't let price alone guide you, buying some cheap whimsical fabric is the best way to come up with a shitty looking pair of trousers, and get frustrated in the process.
+Als je **wol** wil, kijk dan in de afdeling met pakstoffen van je stoffenwinkel. Voor een eerste paar is een wol-polyestermix een budgetvriendelijke optie. Maar focus niet te hard op de prijs, een goedkoop stofje is de beste manier om met een mottige broek en een hoop frustraties te eindigen.
 
-For **cotton**, go for a heavier weight. Cotton might also be a bit easier on the beginner than wool. If unsure what to use, ask for chino in the fabric store and simply pick a colour you like.
+Als je **katoen** wil, kies dan een zwaardere stof. Katoen is ook wat makkelijker voor een beginner dan wol. Als je niet zeker bent over wat te gebruiken, vraag dan om chino stof in de stoffenwinkel en kies een kleurtje.
 
-Nothing beats **linen** on a hot summer day. It's fun to work with too, but it does wrinkle like a mofo, and even the most neatly made trousers look somewhat messy when made in linen. What I'm saying is, maybe not for your first pair.
+Niets beter dan **linen** op een hete zomerdag. Het is ook fijn om mee te werken, maar kreukt als de pest, en zelfs de best genaaide broeken zien er een beetje rommelig uit in linnen. Wat ik wil zeggen is: misschien niet voor je eerste paar.
