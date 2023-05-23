@@ -1,9 +1,9 @@
----
+- - -
 title: "Sleeve ease"
----
+- - -
 
-Controls the amount of ease at the sleeve/your arm.
+Bepaalt de hoeveelheid overwijdte aan de mouw/arm.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](teagan_sleeveease_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](teagan_sleeveease_sample.svg "Effect van deze optie op het patroon")
