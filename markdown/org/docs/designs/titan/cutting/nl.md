@@ -1,8 +1,8 @@
----
+- - -
 title: "Titan trouser block: Cutting Instructions"
----
+- - -
 
-**Main fabric**
+**Buitenstof**
 
 - Cut **2 front** parts with _good sides together_
 - Cut **2 back** parts with _good sides together_
@@ -14,8 +14,8 @@ These cutting instructions are just for the default Titan block. Adjust your cut
 ###### Titan is a block, not a pattern
 
 A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Dit wordt soms ook een paspatroon genoemd, alhoewel puristen zeggen dat dit twee verschillende dingen zijn.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Blokken worden meestal niet gemaakt zoals is, maar dienen als basis voor andere patronen.
 
 </Note>
