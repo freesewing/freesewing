@@ -87,7 +87,7 @@ describe('Crossbox Plugin Tests', () => {
     const Test = new Design({ plugins: [annotationsPlugin], parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    const c = pattern.parts[0].test.points.textAnchor
+    const c = pattern.parts[0].test.points['1textAnchor']
     expect(c.attributes.get('data-text')).to.equal('test')
   })
 })
