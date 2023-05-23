@@ -1,8 +1,8 @@
----
+- - -
 title: "Hortensia handbag: Fabric Options"
----
+- - -
 
-### Main Fabric
+### Hoofd stof
 
 The key fabric choices for Hortensia are non-stretch, durable and strong enough to hold items.
 
@@ -14,6 +14,6 @@ If you find that the fabric you want to use is a bit too thin or flimsy you can 
 
 </Note>
 
-### Lining Fabric
+### Voering
 
 On the flipside the lining does not need to be as strong and simply needs to cover the raw seams and protect the outer fabric. If you want something fancy you can go for **Silks** and **Satins** but **Cotton** linings will do just as well. Bear in mind what you intend to store in the bag. If you intend to carry a lot you should go for something less prone to tearing, if you are only using it for knick-knacks and small personal items you can get away with fancier fabrics such as silks. The lining is also an opportunity to use up any fabrics in your stash that you don't like or don't have a use for as it will be hidden in the final product and only you will know/see.
