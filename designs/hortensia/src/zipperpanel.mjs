@@ -30,6 +30,8 @@ function draftHortensiaZipperpanel({
     .close()
     .attr('class', 'fabric')
 
+  store.cutlist.addCut({ cut: 1 })
+
   // Complete?
   if (complete) {
     paths.text = new Path()

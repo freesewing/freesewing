@@ -48,16 +48,17 @@ function draftFlorentBrimBottom({
     .close()
     .attr('class', 'fabric')
 
+  macro('grainline', {
+    from: points.outerMid,
+    to: points.innerMid,
+  })
+
   if (complete) {
     points.title = points.innerMid.shiftFractionTowards(points.outerMidCp2, 0.35)
     macro('title', {
       at: points.title,
       nr: 3,
       title: 'brimBottom',
-    })
-    macro('grainline', {
-      from: points.outerMid,
-      to: points.innerMid,
     })
     macro('sprinkle', {
       snippet: 'notch',
