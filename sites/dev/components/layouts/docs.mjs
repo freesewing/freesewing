@@ -16,7 +16,7 @@ export const DocsLayout = ({ children = [], pageTitle = false }) => {
         {title && (
           <div className="xl:pl-4">
             <Breadcrumbs crumbs={crumbs} title={pageTitle ? pageTitle : title} />
-            <h1 className="break-words">{pageTitle ? pageTitle : title}</h1>
+            <h1 className="break-words searchme">{pageTitle ? pageTitle : title}</h1>
           </div>
         )}
         <div className="xl:pl-4">{children}</div>
