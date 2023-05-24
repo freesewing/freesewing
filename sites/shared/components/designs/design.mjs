@@ -12,9 +12,13 @@ export const Design = ({ name }) => {
     <div
       className={`flex flex-col flex-nowrap items-start justify-start gap-2 pt-2 pb-4 h-auto w-96
           btn btn-secondary btn-ghost border border-secondary
-          hover:bg-opacity-20 hover:bg-secondary hover:border hover:border-secondary`}
+          hover:bg-opacity-20 hover:bg-secondary hover:border hover:border-secondary
+          relative`}
     >
-      <Link href={`/new/pattern/${name}`} className="static w-full h-full">
+      <Link
+        href={`/new/pattern/${name}`}
+        className="w-full h-full before:absolute before:inset-y-0 before:inset-x-0"
+      >
         <h5 className="flex flex-row items-center justify-between w-full">
           <span>{t(`designs:${name}.t`)}</span>
           <span className="flex flex-col items-end">
