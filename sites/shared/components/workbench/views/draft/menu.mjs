@@ -6,9 +6,9 @@ import {
   CoreSettings,
   ns as coreMenuNs,
 } from 'shared/components/workbench/menus/core-settings/index.mjs'
-import { XrayMenu } from 'shared/components/workbench/menus/xray/index.mjs'
+import { XrayMenu, ns as xrayNs } from 'shared/components/workbench/menus/xray/index.mjs'
 
-export const ns = [...coreMenuNs, ...designMenuNs]
+export const ns = [...coreMenuNs, ...designMenuNs, ...xrayNs]
 
 export const DraftMenu = ({
   design,

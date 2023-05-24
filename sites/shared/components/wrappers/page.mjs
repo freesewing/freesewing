@@ -49,7 +49,7 @@ export const PageWrapper = (props) => {
    */
   useEffect(() => {
     // Only update if a new page was loaded
-    if (path.join('/') !== 'slug') {
+    if (path.join('/') !== slug) {
       setNavigation({
         title: pageTitle,
         locale,

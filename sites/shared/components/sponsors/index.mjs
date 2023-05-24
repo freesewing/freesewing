@@ -15,10 +15,9 @@ export const Sponsors = () => {
   return Object.keys(sponsors).map((sponsor) => {
     const Component = sponsors[sponsor]
     return (
-      <div className="flex flex-col items-center gap-4">
+      <div className="flex flex-col items-center gap-4" key={sponsor}>
         <span className="opacity-70 text-sm">{t(sponsor.toLowerCase())}</span>
         <a
-          key={sponsor}
           title={t(sponsor.toLowerCase())}
           href={`https://www.${sponsor.toLowerCase()}.com/?utm_source=freesewing&utm_campaign=oss`}
         >
