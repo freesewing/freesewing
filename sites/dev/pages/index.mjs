@@ -7,7 +7,6 @@ import { Popout } from 'shared/components/popout.mjs'
 import { PageLink } from 'shared/components/page-link.mjs'
 import { Highlight } from 'shared/components/mdx/highlight.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
-import { DocsLink } from 'shared/components/mdx/docs-title.mjs'
 
 const title = 'Welcome to FreeSewing.dev'
 

@@ -11,7 +11,6 @@ import {
   UserIcon,
   MeasureIcon,
   PageIcon,
-  TrophyIcon,
   CodeIcon,
   I18nIcon,
   WrenchIcon,

@@ -20,7 +20,6 @@ import {
 import { Ribbon } from 'shared/components/ribbon.mjs'
 import { ModalThemePicker, ns as themeNs } from 'shared/components/modal/theme-picker.mjs'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
-import { Search } from 'site/components/search.mjs'
 
 import { NavButton, NavSpacer, colors } from 'shared/components/header.mjs'
 
@@ -44,7 +43,7 @@ export const ns = ['header', 'sections', ...themeNs]
  * content
  * */
 
-const NavIcons = ({ setModal, setSearch }) => {
+const NavIcons = ({ setModal }) => {
   const { t } = useTranslation(['header'])
   const iconSize = 'h-6 w-6 lg:h-12 lg:w-12'
 
@@ -101,7 +100,7 @@ const NavIcons = ({ setModal, setSearch }) => {
   )
 }
 
-export const Header = ({ setSearch }) => {
+export const Header = () => {
   const { setModal } = useContext(ModalContext) || {}
   const { loading } = useContext(LoadingContext)
   const [prevScrollPos, setPrevScrollPos] = useState(0)
@@ -137,12 +136,12 @@ export const Header = ({ setSearch }) => {
         <div className="p-0 flex flex-row gap-2 justify-between text-neutral-content items-center">
           {/* Non-mobile content */}
           <div className="hidden lg:flex lg:px-2 flex-row items-center justify-center w-full">
-            <NavIcons setModal={setModal} setSearch={setSearch} />
+            <NavIcons setModal={setModal} />
           </div>
 
           {/* Mobile content */}
           <div className="flex lg:hidden flex-row items-center justify-between w-full">
-            <NavIcons setModal={setModal} setSearch={setSearch} />
+            <NavIcons setModal={setModal} />
           </div>
         </div>
       </div>
