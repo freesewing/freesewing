@@ -2,6 +2,9 @@
 title: Infrastructure
 ---
 
-Are you looking to use FreeSewing to design parametric sewing patterns? 
+FreeSewing has a bunch of moving parts and if you're new to the project you may
+initially struggle to figure out how it all works together.
 
-<Fixme>Write docs here</Fixme>
+Below is info that shall hopefully help you make sense of it all..
+
+<Fixme compact>Write infrastructure docs here</Fixme>

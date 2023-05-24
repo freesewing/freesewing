@@ -48,7 +48,7 @@ carlton:
     '@freesewing/plugin-bust': *freesewing
 charlie:
   peer:
-    '@freesewing/plugin-bartack': *freesewing
+    '@freesewing/plugin-annotations': *freesewing
     '@freesewing/plugin-mirror': *freesewing
     '@freesewing/titan': *freesewing
     '@freesewing/snapseries': *freesewing
@@ -92,8 +92,6 @@ i18n:
   dev:
     'js-yaml': &jsyaml '4.1.0'
     'recursive-readdir': '^2.2.3'
-  peer:
-    '@freesewing/pattern-info': *freesewing
 jaeger:
   peer:
     '@freesewing/brian': *freesewing
@@ -135,7 +133,6 @@ plugintest:
     '@freesewing/plugin-sprinkle': *freesewing
     '@freesewing/plugin-svgattr': *freesewing
     '@freesewing/plugin-theme': *freesewing
-    '@freesewing/plugin-validate': *freesewing
 rehype-jargon:
   _:
     'unist-util-visit': &unist-util-visit '4.1.2'
@@ -190,7 +187,7 @@ yuri:
 
 backend:
   _:
-    '@aws-sdk/client-sesv2': '3.336.0'
+    '@aws-sdk/client-sesv2': '3.338.0'
     '@prisma/client': &prisma '4.14.1'
     'bcryptjs': '2.4.3'
     'cors': '2.8.5'
@@ -236,6 +233,7 @@ dev:
     'react-dom': *react
     'react-hotkeys-hook': &reactHotkeysHook '4.4.0'
     'react-instantsearch-dom': &reactInstantsearchDom '6.40.0'
+    'react-instantsearch-hooks-web': '6.44.0'
     'react-markdown': &reactMarkdown '8.0.7'
     'react-swipeable': &reactSwipeable '7.0.0'
     'react-timeago': &reactTimeago '7.1.0'
@@ -287,7 +285,7 @@ lab:
     'react': *react
     'react-copy-to-clipboard': *reactCopyToClipboard
     'react-hotkeys-hook': *reactHotkeysHook
-    'react-i18next': &reactI18next '12.2.2'
+    'react-i18next': &reactI18next '12.3.1'
     'react-instantsearch-dom': *reactInstantsearchDom
     'react-markdown': *reactMarkdown
     'react-swipeable': *reactSwipeable
@@ -400,3 +398,4 @@ shared:
     'web-worker': '1.2.0'
   dev:
     'recursive-readdir': '^2.2.3'
+    'html-to-text': '^9.0.5'

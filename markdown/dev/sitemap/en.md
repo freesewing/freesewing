@@ -2,4 +2,4 @@
 title: Sitemap
 ---
 
-<ReadMore recurse root pretty />
+<ReadMore recurse root />

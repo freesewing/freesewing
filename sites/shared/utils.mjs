@@ -243,3 +243,14 @@ export const validateTld = (email) => {
   if (tlds.indexOf(tld) === -1) return tld
   else return true
 }
+
+export const nsMerge = (...args) => {
+  const ns = new Set()
+  for (const arg of args) {
+    if (typeof arg === 'string') ns.add(arg)
+    else if (Array.isArray(arg)) ns.add(nsMerge(...arg))
+    else console.log('Unexpected namespect type:', { arg })
+  }
+
+  return [...ns]
+}

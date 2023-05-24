@@ -59,7 +59,8 @@
     "web-worker": "1.2.0"
   },
   "devDependencies": {
-    "recursive-readdir": "^2.2.3"
+    "recursive-readdir": "^2.2.3",
+    "html-to-text": "^9.0.5"
   },
   "engines": {
     "node": ">=16.0.0",

@@ -69,7 +69,7 @@ export const Workbench = ({ design, Design, set = false, DynamicDocs = false }) 
   }
 
   // Generate the pattern here so we can pass it down to both the view and the options menu
-  const pattern = draftViews.includes(view) ? new Design(settings) : false
+  const pattern = settings.measurements && draftViews.includes(view) ? new Design(settings) : false
 
   // Return early if the pattern is not initialized yet
   if (typeof pattern.getConfig !== 'function') return null
