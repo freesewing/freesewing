@@ -116,7 +116,7 @@ export const MdxWrapper = ({ MDX = false, frontmatter = {}, components = {}, chi
         updated={updates.u}
         {...{ locale, slug, t }}
       />
-      {MDX ? <MDX components={allComponents} /> : children}
+      <div className="searchme">{MDX ? <MDX components={allComponents} /> : children}</div>
     </div>
   )
 }
