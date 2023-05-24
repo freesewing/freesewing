@@ -107,7 +107,11 @@ export const Setting = ({
   const openButtons = []
   if (loadDocs)
     openButtons.push(
-      <button className="btn btn-xs btn-ghost px-0" onClick={(evt) => loadDocs(evt, name)}>
+      <button
+        className="btn btn-xs btn-ghost px-0"
+        key="help"
+        onClick={(evt) => loadDocs(evt, name)}
+      >
         <HelpIcon className="w-4 h-4" />
       </button>
     )
@@ -115,6 +119,7 @@ export const Setting = ({
     buttons.push(
       <button
         className="btn btn-accent"
+        key="clear"
         onClick={(evt) => {
           evt.stopPropagation()
           update.settings([name], config.dflt)
@@ -126,6 +131,7 @@ export const Setting = ({
     openButtons.push(
       <button
         className="btn btn-ghost btn-xs px-0"
+        key="clear"
         onClick={(evt) => {
           evt.stopPropagation()
           update.settings([name], config.dflt)
@@ -194,7 +200,11 @@ export const CoreSettings = ({
   const openButtons = []
   if (loadDocs)
     openButtons.push(
-      <button className="btn btn-xs btn-ghost px-0 z-10" onClick={(evt) => loadDocs(evt)}>
+      <button
+        className="btn btn-xs btn-ghost px-0 z-10"
+        key="help"
+        onClick={(evt) => loadDocs(evt)}
+      >
         <HelpIcon className="w-4 h-4" />
       </button>
     )

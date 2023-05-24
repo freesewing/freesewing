@@ -48,7 +48,7 @@ carlton:
     '@freesewing/plugin-bust': *freesewing
 charlie:
   peer:
-    '@freesewing/plugin-bartack': *freesewing
+    '@freesewing/plugin-annotations': *freesewing
     '@freesewing/plugin-mirror': *freesewing
     '@freesewing/titan': *freesewing
     '@freesewing/snapseries': *freesewing
@@ -92,8 +92,6 @@ i18n:
   dev:
     'js-yaml': &jsyaml '4.1.0'
     'recursive-readdir': '^2.2.3'
-  peer:
-    '@freesewing/pattern-info': *freesewing
 jaeger:
   peer:
     '@freesewing/brian': *freesewing
@@ -135,7 +133,6 @@ plugintest:
     '@freesewing/plugin-sprinkle': *freesewing
     '@freesewing/plugin-svgattr': *freesewing
     '@freesewing/plugin-theme': *freesewing
-    '@freesewing/plugin-validate': *freesewing
 rehype-jargon:
   _:
     'unist-util-visit': &unist-util-visit '4.1.2'
