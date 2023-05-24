@@ -26,7 +26,7 @@ import { NavButton, NavSpacer, colors } from 'shared/components/workbench/header
 
 export const ns = ['header', 'sections', ...themeNs, ...localeNs]
 
-const NavIcons = ({ setModal, setSearch }) => {
+const NavIcons = ({ setModal }) => {
   const { t } = useTranslation(['header'])
   const iconSize = 'h-6 w-6 lg:h-12 lg:w-12'
 
@@ -64,7 +64,7 @@ const NavIcons = ({ setModal, setSearch }) => {
       >
         <DocsIcon className={iconSize} />
       </NavButton>
-      <NavButton onClick={() => setSearch(true)} label={t('header:sourceCode')} color={colors[5]}>
+      <NavButton href="/code" label={t('sections:code')} color={colors[5]}>
         <GitHubIcon className={iconSize} />
       </NavButton>
       <NavButton href="/account" label={t('header:account')} color={colors[6]}>

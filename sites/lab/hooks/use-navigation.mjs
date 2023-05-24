@@ -45,7 +45,7 @@ const sitePages = (t = false, control = 99) => {
     },
     code: {
       t: t('sections:code'),
-      s: 'blog',
+      s: 'code',
       o: 50,
     },
     account: {
@@ -145,5 +145,6 @@ export const useNavigation = ({ path, locale }) => {
     slug: path.join('/'),
     nav: path.length > 1 ? get(nav, path[0]) : path.length === 0 ? sections : nav[path[0]],
     title: crumbs.length > 0 ? crumbs.slice(-1)[0].t : '',
+    siteNav: nav,
   }
 }
