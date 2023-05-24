@@ -16892,9 +16892,9 @@ remark-lint-code-block-style@^3.0.0:
     unist-util-visit "^4.0.0"
 
 remark-lint-emphasis-marker@^3.0.0, remark-lint-emphasis-marker@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/remark-lint-emphasis-marker/-/remark-lint-emphasis-marker-3.1.1.tgz#3f3336ba4be97b8296eb1019338237d61b4e3db8"
-  integrity sha512-VduuT+KAr0vA78xBLJdIcenCQja4mAd81aNACfdz7BUPLphIQa84D5uzl+nZatSaCXLebCNp5jP/bzVUsBmRKw==
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/remark-lint-emphasis-marker/-/remark-lint-emphasis-marker-3.1.2.tgz#f86034ce0641fcf38590a4cd83e310d491be6390"
+  integrity sha512-hPZ8vxZrIfxmLA5B66bA8y3PdHjcCQuaLsySIqi5PM2DkpN6a7zAP3v1znyRSaYJ1ANVWcu00/0bNzuUjflGCA==
   dependencies:
     "@types/mdast" "^3.0.0"
     unified "^10.0.0"
