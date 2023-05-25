@@ -3594,21 +3594,6 @@
     get-random-values-esm "^1.0.0"
     lodash "^4.17.21"
 
-"@sanity/cli@3.11.1":
-  version "3.11.1"
-  resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-3.11.1.tgz#29ca8d6db03ce05f43d209aeae6a43874c357af1"
-  integrity sha512-DSudmGPeltqD90TxEoFDPGlBa77uItn9xxShroZisZXh7RI8OU0aiP0/tkYiqLdhX+dWTuel9gea4485kuy4tg==
-  dependencies:
-    "@babel/traverse" "^7.19.0"
-    "@vercel/frameworks" "1.4.2"
-    "@vercel/fs-detectors" "3.9.2"
-    chalk "^4.1.2"
-    esbuild "^0.16.5"
-    esbuild-register "^3.4.1"
-    get-it "^8.0.9"
-    golden-fleece "^1.0.9"
-    pkg-dir "^5.0.0"
-
 "@sanity/cli@3.11.2":
   version "3.11.2"
   resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-3.11.2.tgz#2d590a380dca5be3aae111af0f99cee37266366b"
