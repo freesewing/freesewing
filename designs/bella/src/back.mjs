@@ -320,30 +320,34 @@ export const back = {
           to: points.waistCenter,
           y: points.waistCenter.y + sa + 15,
         })
-        macro('hd', {
-          from: points.cbNeck,
-          to: points.dartBottomLeft,
-          y: points.waistCenter.y + sa + 30,
-        })
-        macro('hd', {
-          from: points.cbNeck,
-          to: points.dartBottomRight,
-          y: points.waistCenter.y + sa + 45,
-        })
-        macro('hd', {
-          from: points.dartBottomLeft,
-          to: points.dartBottomRight,
-          y: points.waistCenter.y + sa + 15,
-        })
+        let dimensionsOffset = 0
+        if (backDartWidth > 0) {
+          dimensionsOffset = 30
+          macro('hd', {
+            from: points.cbNeck,
+            to: points.dartBottomLeft,
+            y: points.waistCenter.y + sa + 30,
+          })
+          macro('hd', {
+            from: points.cbNeck,
+            to: points.dartBottomRight,
+            y: points.waistCenter.y + sa + 45,
+          })
+          macro('hd', {
+            from: points.dartBottomLeft,
+            to: points.dartBottomRight,
+            y: points.waistCenter.y + sa + 15,
+          })
+        }
         macro('hd', {
           from: points.cbNeck,
           to: points.waistSide,
-          y: points.waistCenter.y + sa + 60,
+          y: points.waistCenter.y + sa + 30 + dimensionsOffset,
         })
         macro('hd', {
           from: points.cbNeck,
           to: points.armhole,
-          y: points.waistCenter.y + sa + 75,
+          y: points.waistCenter.y + sa + 45 + dimensionsOffset,
         })
         macro('vd', {
           from: points.waistSide,
