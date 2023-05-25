@@ -102,9 +102,13 @@ export const back = {
       points.dartTip.x
     )
     let backDartWidth = reduction * (1 - options.backCenterWaistReduction * 0.5)
-    if (backDartWidth < 0) {
+    if (backDartWidth <= 0) {
       backDartWidth = 0
-      log.info('Bella: Back dart is not necessary (width is 0.0 mm/inches).')
+      log.info(
+        '`' +
+          part.name +
+          '`: Back dart omitted (because the calculated dart width was 0.0 mm/inches or less).'
+      )
     }
     points.dartBottomLeft = points.dartBottomCenter.shift(180, backDartWidth / 2)
     points.dartBottomRight = points.dartBottomLeft.rotate(180, points.dartBottomCenter)
@@ -231,8 +235,12 @@ export const back = {
       .move(points.cbNeck)
       .curve_(points.cbNeckCp2, points.waistCenter)
       .line(points.dartBottomLeft)
-      .curve_(points.dartLeftCp, points.dartTip)
-      ._curve(points.dartRightCp, points.dartBottomRight)
+    if (backDartWidth > 0)
+      paths.seam
+        .curve_(points.dartLeftCp, points.dartTip)
+        ._curve(points.dartRightCp, points.dartBottomRight)
+    else paths.seam.line(points.dartBottomRight)
+    paths.seam
       .line(points.waistSide)
       .curve_(points.waistSideCp2, points.armhole)
       .curve(points.armholeCp2, points.armholePitchCp1, points.armholePitch)
