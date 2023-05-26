@@ -3,6 +3,20 @@ import { PatternModel } from '../models/pattern.mjs'
 export function PatternsController() {}
 
 /*
+ * Get a list of patterns
+ * See: https://freesewing.dev/reference/backend/api
+ */
+PatternsController.prototype.list = async (req, res, tools) => {
+  const Pattern = new PatternModel(tools)
+  const patterns = await Pattern.userPatterns(req.user.uid)
+
+  if (patterns) Pattern.setResponse(200, 'success', { patterns })
+  else Pattern.setResponse(404, 'notFound')
+
+  return Pattern.sendResponse(res)
+}
+
+/*
  * Create a pattern
  * See: https://freesewing.dev/reference/backend/api
  */

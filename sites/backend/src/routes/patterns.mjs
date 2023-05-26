@@ -7,6 +7,14 @@ const bsc = ['basic', { session: false }]
 export function patternsRoutes(tools) {
   const { app, passport } = tools
 
+  // Get patterns for the authenticate user
+  app.get('/patterns/jwt', passport.authenticate(...jwt), (req, res) =>
+    Patterns.list(req, res, tools)
+  )
+  app.get('/patterns/key', passport.authenticate(...bsc), (req, res) =>
+    Patterns.list(req, res, tools)
+  )
+
   // Create pattern
   app.post('/patterns/jwt', passport.authenticate(...jwt), (req, res) =>
     Patterns.create(req, res, tools)

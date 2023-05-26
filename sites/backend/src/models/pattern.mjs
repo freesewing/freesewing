@@ -13,6 +13,23 @@ export function PatternModel(tools) {
   return this
 }
 
+/*
+ * Returns a list of sets for the user making the API call
+ */
+PatternModel.prototype.userPatterns = async function (uid) {
+  if (!uid) return false
+  let patterns
+  try {
+    patterns = await this.prisma.pattern.findMany({ where: { userId: uid } })
+  } catch (err) {
+    log.warn(`Failed to search patterns for user ${uid}: ${err}`)
+  }
+  const list = []
+  for (const pattern of patterns) list.push(this.revealPattern(pattern))
+
+  return list
+}
+
 PatternModel.prototype.guardedCreate = async function ({ body, user }) {
   if (!this.rbac.user(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (Object.keys(body).length < 2) return this.setResponse(400, 'postBodyMissing')
@@ -245,7 +262,7 @@ PatternModel.prototype.guardedUpdate = async function ({ params, body, user }) {
  * Removes the pattern - No questions asked
  */
 PatternModel.prototype.unguardedDelete = async function () {
-  await this.prisma.pattern.delete({ here: { id: this.record.id } })
+  await this.prisma.pattern.delete({ where: { id: this.record.id } })
   this.record = null
   this.clear = null
 
@@ -256,7 +273,7 @@ PatternModel.prototype.unguardedDelete = async function () {
  * Removes the pattern - Checks permissions
  */
 PatternModel.prototype.guardedDelete = async function ({ params, user }) {
-  if (this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   await this.read({ id: parseInt(params.id) })
@@ -277,6 +294,22 @@ PatternModel.prototype.asPattern = function () {
     ...this.record,
     ...this.clear,
   }
+}
+
+/*
+ * Helper method to decrypt data from a non-instantiated pattern
+ */
+PatternModel.prototype.revealPattern = function (pattern) {
+  const clear = {}
+  for (const field of this.encryptedFields) {
+    try {
+      clear[field] = this.decrypt(pattern[field])
+    } catch (err) {
+      //console.log(err)
+    }
+  }
+
+  return { ...pattern, ...clear }
 }
 
 /*
