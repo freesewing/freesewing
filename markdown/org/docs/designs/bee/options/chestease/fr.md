@@ -1,11 +1,11 @@
 ---
-title: "Chest ease"
+title: "Aisance de poitrine"
 ---
 
 ***
 
-Controls the chest ease in the underlying Bella block Bee is based on
+Contrôle l'aisance de la poitrine dans le bloc de Bella sur lequel est basé Bee
 
 ## Effet de cette option sur le modèle
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_chestease_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bee_chestease_sample.svg "Effet de cette option sur le modèle")
