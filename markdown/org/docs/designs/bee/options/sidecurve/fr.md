@@ -1,11 +1,11 @@
 ---
-title: "Side curve"
+title: "Courbe latérale"
 ---
 
 ***
 
-Controls the curvature of the side of the bikini cup
+Contrôle la courbure du côté du bonnet du bikini
 
-## Effect of this option on the pattern
+## Effet de cette option sur le modèle
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_sidecurve_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bee_sidecurve_sample.svg "Effet de cette option sur le modèle")
