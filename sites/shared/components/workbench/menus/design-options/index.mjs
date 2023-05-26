@@ -10,14 +10,14 @@ import { OptionsIcon, ClearIcon, HelpIcon, EditIcon } from 'shared/components/ic
 import { optionsMenuStructure } from 'shared/utils.mjs'
 import { optionType } from 'shared/utils.mjs'
 import {
-  BoolOptionInput,
-  ConstantOptionInput,
-  CountOptionInput,
-  DegOptionInput,
-  ListOptionInput,
-  MmOptionInput,
-  PctOptionInput,
-} from './inputs.mjs'
+  BoolInput,
+  ConstantInput,
+  SliderInput,
+  DegInput,
+  ListInput,
+  MmInput,
+  PctInput,
+} from '../shared/inputs.mjs'
 import {
   BoolOptionValue,
   ConstantOptionValue,
@@ -27,18 +27,20 @@ import {
   MmOptionValue,
   PctOptionValue,
 } from './values.mjs'
+import { WorkbenchMenu, useDocsLoader, wasChanged } from '../shared/index.mjs'
+import { MenuItem, ItemTitle, MenuItemGroup } from '../shared/menu-item.mjs'
 
 export const ns = ['design-options']
 
 // Facilitate lookup of the input component
 const inputs = {
-  bool: BoolOptionInput,
-  constant: ConstantOptionInput,
-  count: CountOptionInput,
-  deg: DegOptionInput,
-  list: ListOptionInput,
-  mm: MmOptionInput,
-  pct: PctOptionInput,
+  bool: BoolInput,
+  constant: ConstantInput,
+  count: SliderInput,
+  deg: DegInput,
+  list: ListInput,
+  mm: MmInput,
+  pct: PctInput,
 }
 
 // Facilitate lookup of the value component
@@ -61,33 +63,7 @@ const emojis = {
   groupDflt: '📁',
 }
 
-const GroupTitle = ({ group, t, open = false }) => (
-  <div className={`flex flex-row gap-1 items-center w-full ${open ? '' : 'justify-between'}`}>
-    <span className="font-medium">
-      <span role="img" className="pr-2">
-        {emojis[group] ? emojis[group] : emojis.groupDflt}
-      </span>
-      {t(`design-options:${group}.t`)}
-      {open ? ':' : ''}
-    </span>
-    <OptionsIcon className="w-6 h-6 text-primary" />
-  </div>
-)
-
-const ClearButton = ({ update, name, open }) => (
-  <button
-    className={`btn btn-accent ${open ? 'btn-xs px-0' : ''}`}
-    onClick={(evt) => {
-      evt.stopPropagation()
-      update.settings(['options', name])
-    }}
-  >
-    <ClearIcon />
-  </button>
-)
-
 export const DesignOption = ({
-  design,
   name,
   current,
   config,
@@ -97,10 +73,10 @@ export const DesignOption = ({
   loadDocs,
   changed = false,
 }) => {
-  const [override, setOverride] = useState(false)
   const type = optionType(config)
   const Input = inputs[type]
   const Value = values[type]
+  const allowOverride = ['pct', 'count', 'deg'].includes(type)
 
   // Hide option?
   if (config?.hide || (typeof config?.hide === 'function' && config.hide(settings))) return null
@@ -121,45 +97,22 @@ export const DesignOption = ({
     }
   }
 
-  const buttons = []
-  const openButtons = []
-  if (loadDocs)
-    openButtons.push(
-      <button className="btn btn-xs btn-ghost px-0" onClick={(evt) => loadDocs(evt, name)}>
-        <HelpIcon className="w-4 h-4" />
-      </button>
-    )
-  if (['pct', 'count', 'deg'].includes(type))
-    openButtons.push(
-      <button
-        className="btn btn-xs btn-ghost px-0"
-        onClick={(evt) => {
-          evt.stopPropagation()
-          setOverride(!override)
-        }}
-      >
-        <EditIcon className={`w-6 h-6 ${override ? 'bg-base-100 text-accent rounded' : ''}`} />
-      </button>
-    )
-  if (changed) {
-    buttons.push(<ClearButton {...{ update, name }} />)
-    openButtons.push(<ClearButton {...{ update, name }} open />)
-  }
-
   return (
-    <Collapse
-      color={changed ? 'accent' : 'secondary'}
-      title={
-        <div className="w-full flex flex-row gap2 items-center justify-between">
-          <span className="font-bold">{t(`${name}.t`)}</span>
-          <Value {...{ t, name, config, current, design, settings }} />
-        </div>
-      }
-      openTitle={t(`${name}.t`)}
-      {...{ buttons, openButtons }}
-    >
-      <Input {...{ t, name, config, settings, current, design, update, override }} />
-    </Collapse>
+    <MenuItem
+      {...{
+        name,
+        config,
+        current,
+        updater: update.settings,
+        updatePath: ['options'],
+        t,
+        changed,
+        loadDocs,
+        Input,
+        Value,
+        allowOverride,
+      }}
+    />
   )
 }
 
@@ -170,27 +123,33 @@ export const DesignOptionGroup = ({
   update,
   group,
   options,
-  Option,
   t,
   loadDocs,
-  topLevel = false,
 }) => (
   <Collapse
     bottom
-    color={topLevel ? 'primary' : 'secondary'}
-    title={<GroupTitle {...{ group, t }} />}
+    color="secondary"
+    title={
+      <ItemTitle
+        {...{
+          name: group,
+          t,
+          emoji: emojis[group] ? emojis[group] : emojis.groupDflt,
+        }}
+      />
+    }
     openTitle={t(group)}
   >
     {Object.entries(options).map(([option, type]) =>
       typeof type === 'string' ? (
-        <Option
+        <DesignOption
           {...{ t, design, update, settings, loadDocs }}
           key={option}
           name={option}
           settings={settings}
           current={settings.options?.[option]}
           config={patternConfig.options[option]}
-          changed={wasChanged(settings.options?.[option], patternConfig.options[option])}
+          changed={wasChanged(settings.options?.[option], option, patternConfig.options)}
         />
       ) : (
         <DesignOptionGroup
@@ -204,78 +163,50 @@ export const DesignOptionGroup = ({
   </Collapse>
 )
 
-const wasChanged = (current, config) => {
-  if (typeof current === 'undefined') return false
-  if (current === config.dflt) return false
-
-  return true
-}
-
 export const DesignOptions = ({
   design,
   patternConfig,
   settings,
   update,
   language,
-  Option = false,
+  account,
   DynamicDocs = false,
-  control,
 }) => {
-  const { t } = useTranslation([design])
-  const { setModal } = useContext(ModalContext)
-
-  // FIXME: Do we still care about passing in an Option component?
-  if (!Option) Option = DesignOption
+  const menuNs = [`o_${design}`, ...ns]
+  const { t } = useTranslation(menuNs)
   const optionsMenu = optionsMenuStructure(patternConfig.options)
-
-  const loadDocs = DynamicDocs
-    ? (evt, option = false) => {
-        evt.stopPropagation()
-        setModal(
-          <ModalWrapper>
-            <div className="max-w-prose">
-              <DynamicDocs
-                path={`patterns/${design}/options/${option.toLowerCase()}`}
-                language={language}
-              />
-            </div>
-          </ModalWrapper>
-        )
-      }
-    : false
+  const getDocsPath = (option) =>
+    `patterns/${design}/options${option ? '/' + option.toLowerCase() : ''}`
+  const loadDocs = useDocsLoader(DynamicDocs, getDocsPath, language)
 
   return (
-    <>
-      <div className="px-2 mt-8">
-        {control > 4 ? null : (
-          <>
-            <h5 className="flex flex-row gap-2 items-center">
-              <OptionsIcon />
-              <span>{t('design-options:designOptions')}</span>
-            </h5>
-            <p>{t('design-options:designOptions.d')}</p>
-          </>
-        )}
-      </div>
-      {Object.entries(optionsMenu).map(([group, option]) =>
-        typeof option === 'string' ? (
-          <Option
-            {...{ t, design, update, settings, loadDocs }}
-            key={group}
-            name={group}
-            current={settings.options?.[group]}
-            config={patternConfig.options[group]}
-            changed={wasChanged(settings.option?.[group], patternConfig.options[group])}
-          />
-        ) : (
-          <DesignOptionGroup
-            {...{ design, patternConfig, settings, update, group, Option, t, loadDocs }}
-            options={option}
-            key={group}
-            topLevel
-          />
-        )
-      )}
-    </>
+    <WorkbenchMenu
+      {...{
+        name: 'design-options:designOptions',
+        updater: update.settings,
+        ns: menuNs,
+        Icon: OptionsIcon,
+        inputs,
+        values,
+        currentValues: settings.options,
+        language,
+        DynamicDocs,
+        getDocsPath,
+      }}
+    >
+      <MenuItemGroup
+        {...{
+          wrapped: false,
+          groupConfig: patternConfig.options,
+          currents: settings.options,
+          items: optionsMenu,
+          Item: DesignOption,
+          loadDocs,
+          itemProps: { design, update, settings },
+          emojis,
+          t,
+        }}
+      />
+    </WorkbenchMenu>
   )
 }

@@ -2,89 +2,107 @@ import { useState } from 'react'
 import { formatMm } from 'shared/utils.mjs'
 import { ChoiceButton } from 'shared/components/choice-button.mjs'
 import orderBy from 'lodash.orderby'
+import { ListInput, SliderInput, BoolInput } from '../shared/inputs.mjs'
 
 // Shared input for list inputs
-export const ListSetting = ({ name, config, current, update, t, setUi }) => {
-  if (typeof current === 'undefined') current = config.dflt
-
-  const handleChange = (newCurrent) => {
-    if (newCurrent === config.dflt) reset()
-    else {
-      if (setUi) update.ui(setUi, newCurrent)
-      else update.settings([name], newCurrent)
-    }
-  }
-
-  const reset = () => {
-    update.settings([name])
-  }
-
-  return (
-    <>
-      <p>{t(`core-settings:${name}.d`)}</p>
-      {config.list.map((entry) => (
-        <ChoiceButton
-          key={entry}
-          title={t(`core-settings:${config.choiceTitles[entry]}.t`)}
-          color={entry === config.dflt ? 'primary' : 'accent'}
-          active={current === entry}
-          onClick={() => handleChange(entry)}
-        >
-          {t(`core-settings:${config.choiceTitles[entry]}.d`)}
-        </ChoiceButton>
-      ))}
-    </>
-  )
-}
+export const ListSetting = ({ name, config, current, updater, t }) => (
+  <ListInput
+    {...{
+      name,
+      config,
+      current,
+      dflt: config.dflt,
+      updater,
+      t,
+    }}
+  />
+)
 
 // Shared input for mm inputs
-export const MmSetting = ({ name, config, current, update, t, units }) => {
-  if (typeof current === 'undefined') current = config.dflt
+export const MmSetting = ({ name, config, current, updater, t, units }) => (
+  <SliderInput
+    {...{
+      name,
+      config,
+      current,
+      dlft: config.dflt,
+      updater,
+      t,
+      valFormatter: (val) => formatMm(val, units),
+      step: config.step,
+    }}
+  />
+)
+// {
+//   if (typeof current === 'undefined') current = config.dflt
 
-  const [value, setValue] = useState(current)
+//   const [value, setValue] = useState(current)
 
-  const handleChange = (evt) => {
-    const newCurrent = parseFloat(evt.target.value)
+//   const handleChange = (evt) => {
+//     const newCurrent = parseFloat(evt.target.value)
 
-    if (newCurrent === config.dflt) reset()
-    else {
-      update.settings([name], newCurrent)
-      setValue(newCurrent)
-    }
-  }
-  const reset = () => {
-    update.settings([name])
-    setValue(config.dflt)
-  }
+//     if (newCurrent === config.dflt) reset()
+//     else {
+//       update.settings([name], newCurrent)
+//       setValue(newCurrent)
+//     }
+//   }
+//   const reset = () => {
+//     update.settings([name])
+//     setValue(config.dflt)
+//   }
 
-  return <SliderSetting {...{ name, config, current, update, t, value, handleChange, units }} mm />
-}
+//   return <SliderSetting {...{ name, config, current, update, t, value, handleChange, units }} mm />
+// }
 
 // Shared input for number inputs
-export const NrSetting = ({ name, config, current, update, t }) => {
-  if (typeof current === 'undefined') current = config.dflt
+export const NrSetting = ({ name, config, current, updater, t }) => (
+  <SliderInput
+    {...{
+      name,
+      config,
+      current,
+      dflt: config.dflt,
+      updater: (path, newVal) => updater(path, parseFloat(newVal)),
+      t,
+      step: config.step,
+    }}
+  />
+)
+// {
+//   if (typeof current === 'undefined') current = config.dflt
 
-  const [value, setValue] = useState(current)
+//   const [value, setValue] = useState(current)
 
-  const handleChange = (evt) => {
-    const newCurrent = parseFloat(evt.target.value)
+//   const handleChange = (evt) => {
+//     const newCurrent = parseFloat(evt.target.value)
 
-    if (newCurrent === config.dflt) reset()
-    else {
-      update.settings([name], newCurrent)
-      setValue(newCurrent)
-    }
-  }
-  const reset = () => {
-    update.settings([name])
-    setValue(config.dflt)
-  }
+//     if (newCurrent === config.dflt) reset()
+//     else {
+//       update.settings([name], newCurrent)
+//       setValue(newCurrent)
+//     }
+//   }
+//   const reset = () => {
+//     update.settings([name])
+//     setValue(config.dflt)
+//   }
 
-  return <SliderSetting {...{ name, config, current, update, t, value, handleChange }} />
-}
+//   return <SliderSetting {...{ name, config, current, update, t, value, handleChange }} />
+// }
 
 // Shared component for slider inputs
-const SliderSetting = ({ name, config, current, t, value, handleChange, units, mm = false }) => (
+const SliderSetting = ({
+  name,
+  config,
+  current,
+  updater,
+  t,
+  value,
+  handleChange,
+  units,
+  mm = false,
+}) => (
   <>
     <p>{t(`core-settings:${name}.d`)}</p>
     <div className="flex flex-row justify-between">
@@ -114,22 +132,22 @@ const SliderSetting = ({ name, config, current, t, value, handleChange, units, m
 export const LocaleSettingInput = (props) => <ListSetting {...props} />
 export const UnitsSettingInput = (props) => <ListSetting {...props} />
 
-export const UnitsSettingInputs = ({ name, config, current, update, t }) => (
-  <ListSetting
-    {...{ name, config, current, update, t }}
-    list={config.list.map((key) => ({
-      key,
-      title: t(`${key}Units`),
-    }))}
-  />
-)
+export const UnitsSettingInputs = (props) => {
+  props.config.list = props.list.map((key) => ({
+    key,
+    title: props.t(`${key}Units`),
+  }))
+
+  return <ListSetting {...props} />
+}
 
 export const MarginSettingInput = (props) => <MmSetting {...props} />
 export const ScaleSettingInput = (props) => <NrSetting {...props} />
+export const RendererSettingInput = (props) => <ListSetting {...props} />
 export const CompleteSettingInput = (props) => <ListSetting {...props} />
 export const PaperlessSettingInput = (props) => <ListSetting {...props} />
 
-export const OnlySettingInput = ({ config, current, update, t, design }) => {
+export const OnlySettingInput = ({ name, config, current, updater, t, draftOrder, design }) => {
   const partNames = config.parts.map((part) => ({
     id: part,
     t: t(`${design}:${part}.t`),
@@ -142,11 +160,11 @@ export const OnlySettingInput = ({ config, current, update, t, design }) => {
     if (newParts.has(part)) newParts.delete(part)
     else newParts.add(part)
     if (newParts.size < 1) reset()
-    else update.settings(['only'], [...newParts])
+    else updater(['only'], [...newParts])
   }
 
   const reset = () => {
-    update.settings(['only'])
+    updater(['only'])
   }
 
   return (
@@ -171,7 +189,7 @@ export const OnlySettingInput = ({ config, current, update, t, design }) => {
   )
 }
 
-export const SaMmSettingInput = ({ config, current, update, t, units }) => {
+export const SaMmSettingInput = ({ name, config, current, updater, t, units }) => {
   const { dflt, min, max } = config
   if (typeof current === 'undefined') current = config.dflt
 
@@ -180,7 +198,7 @@ export const SaMmSettingInput = ({ config, current, update, t, units }) => {
   const handleChange = (evt) => {
     const newCurrent = parseFloat(evt.target.value)
     setValue(newCurrent)
-    update.settings([
+    updater([
       [['samm'], newCurrent],
       [['sa'], newCurrent],
     ])
@@ -213,21 +231,18 @@ export const SaMmSettingInput = ({ config, current, update, t, units }) => {
   )
 }
 
-export const SaBoolSettingInput = ({ config, current, update, t, samm }) => {
+export const SaBoolSettingInput = ({ config, current, updater, t, samm, changed }) => {
   if (typeof current === 'undefined') current = config.dflt
 
   const handleChange = (newCurrent) => {
     if (newCurrent === config.dflt) reset()
     else {
-      update.settings([
-        [['sabool'], newCurrent],
-        [['sa'], samm],
-      ])
+      updater([[['sabool'], newCurrent], [['sa']]])
     }
   }
 
   const reset = () => {
-    update.settings([[['sabool']], [['sa']]])
+    updater([[['sabool']], [['sa']]])
   }
 
   return (
