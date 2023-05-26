@@ -1,11 +1,11 @@
 ---
-title: "Band (chest) tie length"
+title: "Longueur de la bande (sous poitrine)"
 ---
 
 ***
 
-Controls the length of the tie around your chest
+Contrôle la longueur des bandes autour de votre poitrine
 
 ## Effet de cette option sur le modèle
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_bandtielength_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bee_bandtielength_sample.svg "Effet de cette option sur le modèle")
