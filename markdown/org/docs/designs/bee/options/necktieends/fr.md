@@ -1,11 +1,11 @@
 ---
-title: "Neck tie ends"
+title: "Extrémités des bandes de cou"
 ---
 
 ***
 
-Whether you like straight or pointy ends on the ties around your neck
+Que vous aimiez les extrémités droites ou pointues sur les liens autour de votre cou
 
-## Effect of this option on the pattern
+## Effet de cette option sur le modèle
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_necktieends_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bee_necktieends_sample.svg "Effet de cette option sur le modèle")
