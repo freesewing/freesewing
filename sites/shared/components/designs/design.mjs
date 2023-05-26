@@ -6,8 +6,13 @@ import { DesignTag } from 'shared/components/designs/tag.mjs'
 
 export const ns = ['design', 'designs', 'tags']
 
-export const Design = ({ name }) => {
+const defaultLink = (design) => `/new/pattern/${design}`
+
+export const Design = ({ name, hrefBuilder = false }) => {
   const { t } = useTranslation(ns)
+
+  const getHref = hrefBuilder ? hrefBuilder : defaultLink
+
   return (
     <div
       className={`flex flex-col flex-nowrap items-start justify-start gap-2 pt-2 pb-4 h-auto w-96
@@ -16,7 +21,7 @@ export const Design = ({ name }) => {
           relative`}
     >
       <Link
-        href={`/new/pattern/${name}`}
+        href={getHref(name)}
         className="w-full h-full before:absolute before:inset-y-0 before:inset-x-0"
       >
         <h5 className="flex flex-row items-center justify-between w-full">

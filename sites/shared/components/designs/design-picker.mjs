@@ -5,7 +5,7 @@ import { useTranslation } from 'next-i18next'
 
 export const ns = designNs
 
-export const DesignPicker = () => {
+export const DesignPicker = ({ hrefBuilder = false }) => {
   const { t } = useTranslation('designs')
   const [list, setList] = useState(Object.keys(designs))
 
@@ -18,7 +18,7 @@ export const DesignPicker = () => {
       {Object.keys(translated)
         .sort()
         .map((d) => (
-          <Design name={translated[d]} key={d} />
+          <Design name={translated[d]} key={d} hrefBuilder={hrefBuilder} />
         ))}
     </div>
   )

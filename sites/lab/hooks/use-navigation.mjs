@@ -95,10 +95,6 @@ const sitePages = (t = false, control = 99) => {
     s: `account/reload`,
   }
   for (const design in designs) {
-    pages.designs[design] = {
-      t: t(`designs:${design}.t`),
-      s: `designs/${design}`,
-    }
     pages.new.pattern[design] = {
       t: t(`account:generateANewThing`, { thing: t(`designs:${design}.t`) }),
       s: `new/patterns/${design}`,
