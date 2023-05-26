@@ -103,10 +103,16 @@ export const back = {
       points.waistSide,
       points.dartTip.x
     )
-    points.dartBottomLeft = points.dartBottomCenter.shift(
-      180,
-      (reduction * (1 - options.backCenterWaistReduction * 0.5)) / 2
-    )
+    let backDartWidth = reduction * (1 - options.backCenterWaistReduction * 0.5)
+    if (backDartWidth <= 0) {
+      backDartWidth = 0
+      log.info(
+        '`' +
+          part.name +
+          '`: Back dart omitted (because the calculated dart width was 0.0 mm/inches or less).'
+      )
+    }
+    points.dartBottomLeft = points.dartBottomCenter.shift(180, backDartWidth / 2)
     points.dartBottomRight = points.dartBottomLeft.rotate(180, points.dartBottomCenter)
     points.dartLeftCp = points.dartBottomLeft.shift(
       90,
@@ -244,8 +250,12 @@ export const back = {
       .move(points.cbNeck)
       .curve_(points.cbNeckCp2, points.waistCenter)
       .line(points.dartBottomLeft)
-      .curve_(points.dartLeftCp, points.dartTip)
-      ._curve(points.dartRightCp, points.dartBottomRight)
+    if (backDartWidth > 0)
+      paths.seam
+        .curve_(points.dartLeftCp, points.dartTip)
+        ._curve(points.dartRightCp, points.dartBottomRight)
+    else paths.seam.line(points.dartBottomRight)
+    paths.seam
       .line(points.waistSide)
       .curve_(points.waistSideCp2, points.armhole)
       .curve(points.armholeCp2, points.armholePitchCp1, points.armholePitch)
@@ -310,30 +320,34 @@ export const back = {
           to: points.waistCenter,
           y: points.waistCenter.y + sa + 15,
         })
-        macro('hd', {
-          from: points.cbNeck,
-          to: points.dartBottomLeft,
-          y: points.waistCenter.y + sa + 30,
-        })
-        macro('hd', {
-          from: points.cbNeck,
-          to: points.dartBottomRight,
-          y: points.waistCenter.y + sa + 45,
-        })
-        macro('hd', {
-          from: points.dartBottomLeft,
-          to: points.dartBottomRight,
-          y: points.waistCenter.y + sa + 15,
-        })
+        let dimensionsOffset = 0
+        if (backDartWidth > 0) {
+          dimensionsOffset = 30
+          macro('hd', {
+            from: points.cbNeck,
+            to: points.dartBottomLeft,
+            y: points.waistCenter.y + sa + 30,
+          })
+          macro('hd', {
+            from: points.cbNeck,
+            to: points.dartBottomRight,
+            y: points.waistCenter.y + sa + 45,
+          })
+          macro('hd', {
+            from: points.dartBottomLeft,
+            to: points.dartBottomRight,
+            y: points.waistCenter.y + sa + 15,
+          })
+        }
         macro('hd', {
           from: points.cbNeck,
           to: points.waistSide,
-          y: points.waistCenter.y + sa + 60,
+          y: points.waistCenter.y + sa + 30 + dimensionsOffset,
         })
         macro('hd', {
           from: points.cbNeck,
           to: points.armhole,
-          y: points.waistCenter.y + sa + 75,
+          y: points.waistCenter.y + sa + 45 + dimensionsOffset,
         })
         macro('vd', {
           from: points.waistSide,
