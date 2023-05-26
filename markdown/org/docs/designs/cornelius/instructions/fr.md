@@ -41,7 +41,7 @@ titre : "Culotte de cycliste Cornélius : Instructions de couture"
 
 <Tip>
 
-When sewing the left flap down on the outside, you may find it best to make a template to help you.
+Lorsque vous cousez le rabat gauche sur l'extérieur, il est préférable de faire un gabarit pour vous aider.
 
 </Tip>
 
