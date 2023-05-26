@@ -44,9 +44,6 @@ export const prebuildOrg = async (site = 'org') => {
     },
   }
 
-  // Only add docs to org pages
-  const docs = site === 'org' ? withDocs : withoutDocs
-
   for (const design in designs) {
     // Generate new/pattern/design pages
     for (const page in pages) {
@@ -54,7 +51,7 @@ export const prebuildOrg = async (site = 'org') => {
       promises.push(
         fs.writeFile(
           pages[page].file(design),
-          mustache.render(pages[page].page, { docs, design, Design: capitalize(design) })
+          mustache.render(pages[page].page, { design, Design: capitalize(design) })
         )
       )
     }
