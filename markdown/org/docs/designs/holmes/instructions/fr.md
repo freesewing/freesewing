@@ -1,10 +1,10 @@
 ---
-title: "Holmes deerstalker hat: Sewing Instructions"
+title: "Chapeau de Holmes : Instructions de couture"
 ---
 
 ### Étape 1 : Préparation des morceaux
 
-- If needed, Interface the crown and half the ear flap pieces.
+- Si nécessaire, interfacez la couronne et la moitié des morceaux de rabat d'oreille.
 - Si ce n'est pas déjà fait, il est recommandé de marquer les lignes de couture de vos pièces de tissu par un marqueur temporaire ou par un marquage du fil. Ceci est pour une couture plus précise qui est la clé pour la construction de chapeaux.
 
 <Tip>
@@ -27,12 +27,12 @@ Ces instructions supposent que vous avez marqué vos lignes de couture. Ils peuv
 
 ### Étape 2 : La Couronne
 
-- With right sides together, matching seam lines and peaks, sew two crown pieces together.
-- Press seams open. Vous avez fait besoin d'utiliser un jambon tailleur pour cela, si vous n'en avez pas, vous pouvez utiliser des flanques ou des serviettes à la place.
-- (Optional) _Edgestitch_ both sides of the seam, making sure to catch the seam allowances.
-- Repeat until you have two halves. Si la moitié du nombre de pièces de couronne est un nombre impair, vous devrez coudre une pièce à chaque moitié. Par exemple, si vous avez 6 pièces de couronne, vous fabriquez deux moitiés de 3 pièces cousues ensemble à deux pièces.
-- With right sides together, matchinig seam lines and peaks, sew the two halves together. Il peut être plus facile de broder le sommet ensemble en raison de la masse ou de la précision. Cette couture sera désignée comme la « couture de couronne centrale » qui va de l'avant.
-- (Optional) _Edgestitch_ both sides of the centre crown seam, making sure to catch the seam allowances.
+- Endroit contre endroit, en faisant coïncider les lignes de couture et les pointes, coudre les deux pièces de la couronne ensemble.
+- Ouvrez les coutures au fer. Vous avez fait besoin d'utiliser un jambon tailleur pour cela, si vous n'en avez pas, vous pouvez utiliser des flanques ou des serviettes à la place.
+- (Facultatif) _Piquer au bord_ des deux côtés de la couture, en veillant à attraper les surplus de couture.
+- Répétez l'opération jusqu'à ce que vous ayez deux moitiés. Si la moitié du nombre de pièces de couronne est un nombre impair, vous devrez coudre une pièce à chaque moitié. Par exemple, si vous avez 6 pièces de couronne, vous fabriquez deux moitiés de 3 pièces cousues ensemble à deux pièces.
+- Endroit contre endroit, en faisant correspondre les lignes de couture et les pointes, coudre les deux moitiés ensemble. Il peut être plus facile de broder le sommet ensemble en raison de la masse ou de la précision. Cette couture sera désignée comme la « couture de couronne centrale » qui va de l'avant.
+- (Facultatif) _Piquer au bord_ des deux côtés de la couture de la couronne centrale, en veillant à attraper les surplus de couture.
 
 <Note>
 
@@ -44,14 +44,14 @@ Selon votre marge de couture, vous pourriez vouloir couper les coutures au fur e
 
 #### Flaps des oreilles avec des cravates
 
-- Cut two 12" (30cm) - 16" (40cm) length of ribbon. Ils seront désignés comme des liens à venir.
-- _Baste_ a tie to the right side of an ear flap (the interfaced one if using). Répéter pour une autre cravate.
-- With right sides together, matching seam lines, sew a tie ear flap to a non-tie ear flap.
-- Clip and trim seam allowance.
+- Coupez deux longueurs de ruban de 30 cm (12") à 40 cm (16"). Ils seront désignés comme des liens à venir.
+- _Collez_ une cravate sur le côté droit d'un rabat d'oreille (celui qui est interfacé si vous l'utilisez). Répéter pour une autre cravate.
+- Endroit contre endroit, en faisant coïncider les lignes de couture, coudre un rabat d'oreille à un rabat d'oreille non attaché.
+- Couper et ajuster le surplus de couture.
 - Retourner et presser.
-- (Optional) _Topstitch_ or _edgestitch_ the folded edge.
-- _Baste_ the raw edges together.
-- Repeat for the remaining ear flap.
+- (Facultatif) _Surpique_ ou _piquer en biais_ le bord plié.
+- _Collez_ les bords bruts ensemble.
+- Répéter l'opération pour l'autre rabat de l'oreille.
 
 <Tip>
 
@@ -62,18 +62,18 @@ If you are uncertain about the length you want for you ties take 1 metre (39") o
 <Note>
 
 Les longueurs ci-dessus sont des recommandations donc n'hésitez pas à aller aussi longtemps ou aussi court que vous le souhaitez avec les attaches.  
-If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.
+Si vous préférez, vous pouvez fabriquer vos liens personnalisées avec du tissu, [voir Holmes cutting](/docs/patterns/holmes/cutting/) pour plus d'informations.
 
 </Note>
 
 #### Flaps de l'oreille avec trous de boutons
 
-- Face the backs of two of the buttonholes. (Ce n'est pas nécessaire si deux flaps ont déjà été interfacés)
-- With right sides together, matching seam lines, sew two ear flap pieces together (one interfaced, one not).
-- Clip and trim seam allowance.
+- Placez le dos de deux des boutonnières. (Ce n'est pas nécessaire si deux flaps ont déjà été interfacés)
+- Endroit contre endroit, en faisant coïncider les lignes de couture, coudre deux morceaux de rabat d'oreille (l'un interfacé, l'autre non).
+- Couper et ajuster le surplus de couture.
 - Retourner et presser.
 - (Optional) _Topstitch_ or _Edgestitch_ the folded edge.
-- _Baste_ the raw edges together.
+- _Collez_ les bords bruts ensemble.
 - Cousez la boutonnière selon votre méthode préférée.
 - Répéter l'opération pour l'autre rabat de l'oreille.
 
@@ -85,9 +85,9 @@ Les clapets de l'oreille devront être assez longs pour dépasser le sommet de l
 
 <Note>
 
-**For both Ear Flaps with Ties and Button Holes**
+**Pour les deux rabats d'oreilles avec attaches et trous pour boutons**
 
-It is recommended to at least _topstitch_ the ear flaps but this may not be desirable with certain patterns so has been marked as optional.
+Il est recommandé d'au moins _coudre_ les rabats d'oreilles, mais cela peut ne pas être souhaitable avec certains modèles, c'est pourquoi nous l'avons indiqué comme optionnel.
 
 </Note>
 
@@ -97,8 +97,8 @@ There are two methods for constructing the bill. This is due to the different ty
 
 #### The Bill Method 1
 
-- Place visor insert on one visor piece inside seam lines.
-- Temporarily secure visor insert to visor with temporary _pad Stitches_. This will be refered to as "faced visor" going forward.
+- Placer l'insert de visière sur une pièce de la visière à l'intérieur des lignes de couture.
+- Fixer temporairement l'insert de visière à la visière à l'aide de _points de fixation_ temporaires. Il s'agira dorénavant de la "visière".
 - _Baste_ along the seam line of the inner curve of the faced visor, making sure not to catch the visor insert.
 - With right sides together, matching seam lines and centre fronts, sew the faced visor to another visor piece along the outer curve close to the visor insert, making sure not to catch the visor Insert.
 - Notch and trim the outer curve making sure not to clip the stitching. (You may wish to turn and check the shape before this step)
