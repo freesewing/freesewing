@@ -2,7 +2,17 @@ import { prebuildOrg } from './org.mjs'
 import path from 'path'
 import fse from 'fs-extra'
 
-const copyFromOrg = ['account', 'confirm', 'designs', 'new', 'signin', 'signup', 'welcome']
+const copyFromOrg = [
+  'account',
+  'confirm',
+  'designs',
+  'new',
+  'patterns',
+  'sets',
+  'signin',
+  'signup',
+  'welcome',
+]
 
 const copyOrgFiles = () => {
   const to = path.resolve('..', 'lab', 'pages')

@@ -8,8 +8,10 @@ import { Popout } from 'shared/components/popout.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
 import { siteConfig } from 'site/site.config.mjs'
 import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
+import { ChoiceLink } from 'shared/components/choice-link.mjs'
+import { GitHubIcon, CodeIcon } from 'shared/components/icons.mjs'
 
-const ns = [...pageNs, 'labdocs']
+const ns = [...pageNs, 'labcode']
 
 const RepoLink = ({ href = false }) =>
   href ? (
@@ -32,13 +34,23 @@ const DocsPage = ({ page }) => {
   return (
     <PageWrapper {...page}>
       <div className="max-w-prose">
-        <p>All of the FreeSewing source code is available in our monorepo:</p>
-        <RepoLink href={freeSewingConfig.monorepo} />
-        {siteConfig.repo !== freeSewingConfig.monorepo ? (
-          <>
-            <p>In addition, this particular lab instance has additional source code hosted at:</p>
+        <ChoiceLink
+          title={t('labcode:fscode')}
+          href={freeSewingConfig.monorepo}
+          icon={<GitHubIcon className="w-8 h-8" />}
+        >
+          <p>{t('labcode:monorepo')}:</p>
+          <RepoLink href={freeSewingConfig.monorepo} />
+        </ChoiceLink>
+        {true || siteConfig.repo !== freeSewingConfig.monorepo ? (
+          <ChoiceLink
+            title={t('labcode:lab')}
+            href={freeSewingConfig.monorepo}
+            icon={<CodeIcon className="w-8 h-8" />}
+          >
+            <p>{t('labcode:labrepo')}:</p>
             <RepoLink href={siteConfig.repo} />
-          </>
+          </ChoiceLink>
         ) : null}
       </div>
     </PageWrapper>
