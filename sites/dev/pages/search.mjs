@@ -1,8 +1,6 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
 // Components
-import Head from 'next/head'
 import { PageWrapper } from 'shared/components/wrappers/page.mjs'
 import { Search } from 'site/components/search.mjs'
 import { Popout } from 'shared/components/popout.mjs'

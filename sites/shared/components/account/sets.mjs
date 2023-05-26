@@ -52,7 +52,6 @@ export const StandAloneNewSet = () => {
 
 export const NewSet = ({
   t,
-  account,
   refresh,
   closeCollapseButton,
   backend,
@@ -68,7 +67,6 @@ export const NewSet = ({
 
   // State
   const [name, setName] = useState('')
-  const [mset, setMset] = useState(false)
 
   // Helper method to create a new set
   const createSet = async () => {
@@ -80,7 +78,6 @@ export const NewSet = ({
       toast.success(<span>{t('nailedIt')}</span>)
       if (standalone) router.push('/account/sets/')
       else {
-        setMset(result.data.set)
         refresh()
         closeCollapseButton()
       }
@@ -182,7 +179,7 @@ export const MeasieRow = (props) => {
   )
 }
 
-const MeasieInput = ({ m, mset, backend, toast, refresh }) => {
+const MeasieInput = ({ m, mset }) => {
   const { t } = useTranslation(['measurements'])
   //const title = t(`measurements:${m}`)
 
@@ -206,8 +203,9 @@ const MeasieInput = ({ m, mset, backend, toast, refresh }) => {
     setValid(isValid(useVal))
   }
 
-  /*
   const save = async () => {
+    // FIXME
+    /*
     startLoading()
     const measies = {}
     measies[m] = val * factor
@@ -217,8 +215,8 @@ const MeasieInput = ({ m, mset, backend, toast, refresh }) => {
       toast.for.settingsSaved()
     } else toast.for.backendError()
     stopLoading()
-  }
   */
+  }
 
   const fraction = (i, base) => update({ target: { value: Math.floor(val) + i / base } })
 
@@ -355,7 +353,7 @@ const MeasieInput = ({ m, mset, backend, toast, refresh }) => {
   )
 }
 
-const EditImg = ({ t, mset, account, backend, toast, refresh, curated = false }) => {
+const EditImg = ({ t, mset, account }) => {
   const [img, setImg] = useState(mset.img)
 
   const onDrop = useCallback((acceptedFiles) => {
@@ -374,6 +372,9 @@ const EditImg = ({ t, mset, account, backend, toast, refresh, curated = false })
   //    setValue(evt.target.value)
   //  }
   //}
+  const save = () => {
+    // FIXME
+  }
 
   return (
     <div>
@@ -407,7 +408,7 @@ const EditImg = ({ t, mset, account, backend, toast, refresh, curated = false })
   )
 }
 
-const EditName = ({ t, mset, account, backend, toast, refresh }) => {
+const EditName = ({ t, mset, backend, toast, refresh }) => {
   const [value, setValue] = useState(mset.name)
   const { loading, startLoading, stopLoading } = useContext(LoadingContext)
 
@@ -453,7 +454,7 @@ const EditName = ({ t, mset, account, backend, toast, refresh }) => {
   )
 }
 
-const EditNotes = ({ t, mset, account, backend, toast, refresh }) => {
+const EditNotes = ({ t, mset, backend, toast, refresh }) => {
   const [value, setValue] = useState(mset.notes)
   const [activeTab, setActiveTab] = useState('edit')
   const { loading, startLoading, stopLoading } = useContext(LoadingContext)
@@ -517,7 +518,7 @@ const EditNotes = ({ t, mset, account, backend, toast, refresh }) => {
   )
 }
 
-const EditUnits = ({ t, mset, account, backend, toast, refresh }) => {
+const EditUnits = ({ t, mset, backend, toast, refresh }) => {
   const [selection, setSelection] = useState(mset?.imperial === true ? 'imperial' : 'metric')
   const { startLoading, stopLoading } = useContext(LoadingContext)
 
@@ -567,7 +568,7 @@ const EditUnits = ({ t, mset, account, backend, toast, refresh }) => {
   )
 }
 
-const EditPublic = ({ t, mset, account, backend, toast, refresh }) => {
+const EditPublic = ({ t, mset, backend, toast, refresh }) => {
   const [selection, setSelection] = useState(mset.public)
   const { startLoading, stopLoading } = useContext(LoadingContext)
 
@@ -860,7 +861,7 @@ export const Sets = ({ title = true }) => {
       >
         <NewSet {...{ t, account, backend, toast, refresh, closeCollapseButton }} title={false} />
       </CollapseButton>
-      <BackToAccountButton loading={loading} />
+      <BackToAccountButton />
     </div>
   )
 }

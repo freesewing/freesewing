@@ -42,7 +42,7 @@ const run = async () => {
   }
   if (SITE === 'org') await prebuildOrg()
 
-  //await prebuildI18n(SITE)
+  await prebuildI18n(SITE)
   if (!FAST) {
     await prebuildContributors(SITE)
     await prebuildPatrons(SITE)

@@ -45,7 +45,7 @@ const sitePages = (t = false, control = 99) => {
     },
     code: {
       t: t('sections:code'),
-      s: 'blog',
+      s: 'code',
       o: 50,
     },
     account: {
@@ -95,10 +95,6 @@ const sitePages = (t = false, control = 99) => {
     s: `account/reload`,
   }
   for (const design in designs) {
-    pages.designs[design] = {
-      t: t(`designs:${design}.t`),
-      s: `designs/${design}`,
-    }
     pages.new.pattern[design] = {
       t: t(`account:generateANewThing`, { thing: t(`designs:${design}.t`) }),
       s: `new/patterns/${design}`,
@@ -129,7 +125,7 @@ const createSections = (nav) => {
   return orderBy(sections, ['o', 't'])
 }
 
-export const useNavigation = ({ path, locale }) => {
+export const useNavigation = ({ path }) => {
   const { t } = useTranslation(ns)
   const { account } = useAccount()
 
@@ -145,5 +141,6 @@ export const useNavigation = ({ path, locale }) => {
     slug: path.join('/'),
     nav: path.length > 1 ? get(nav, path[0]) : path.length === 0 ? sections : nav[path[0]],
     title: crumbs.length > 0 ? crumbs.slice(-1)[0].t : '',
+    siteNav: nav,
   }
 }

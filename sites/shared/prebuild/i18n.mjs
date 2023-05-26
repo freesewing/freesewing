@@ -19,6 +19,7 @@ const sitesFolder = path.join(fileURLToPath(import.meta.url), '..', '..', '..')
 export const folders = {
   org: [path.join(sitesFolder, 'org', 'pages'), path.join(sitesFolder, 'org', 'components')],
   dev: [path.join(sitesFolder, 'dev', 'pages'), path.join(sitesFolder, 'dev', 'components')],
+  lab: [path.join(sitesFolder, 'lab', 'pages'), path.join(sitesFolder, 'lab', 'components')],
   shared: [
     path.join(sitesFolder, 'shared', 'components'),
     path.join(sitesFolder, 'shared', 'i18n'),
@@ -47,6 +48,7 @@ const getI18nFileList = async (site) => {
   const dirs = [...folders.shared]
   if (site === 'org') dirs.push(...folders.org)
   if (site === 'dev') dirs.push(...folders.dev)
+  if (site === 'lab') dirs.push(...folders.lab)
 
   const allFiles = []
   for (const dir of dirs) {

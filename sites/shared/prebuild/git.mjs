@@ -34,7 +34,7 @@ export const getGitMetadata = async (file, site) => {
       }
     }
     if (!key) {
-      if (typeof email === 'undefined' && typeof email === 'undefined') {
+      if (typeof email === 'undefined') {
         // This means files lack git history (they are new and haven't been committed yet)
         authors.add('unknown')
       } else {

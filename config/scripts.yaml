@@ -84,6 +84,7 @@ lab:
   clean: 'rimraf pages/*.mjs && rimraf pages/*/*.mjs && rimraf pages/v/*/*.mjs'
   dev: *nextDev
   develop: *nextDev
+  i18n: 'SITE=lab node ../shared/prebuild/i18n-only.mjs'
   e2e: &e2e 'yarn playwright test'
   lint: *nextLint
   buildsitedeps: *buildsitedeps
