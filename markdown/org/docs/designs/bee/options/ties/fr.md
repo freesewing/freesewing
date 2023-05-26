@@ -1,10 +1,10 @@
 ---
-title: "Ties"
+title: "Liens"
 ---
 
 ***
 
-Whether to includes ties, yes or no
+S'il faut inclure les liens, ou pas
 
 ## Effect of this option on the pattern
 
