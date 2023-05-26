@@ -1,11 +1,11 @@
 ---
-title: "Bottom depth"
+title: "Profondeur inférieure"
 ---
 
 ***
 
-Controls how far the bikini cup extends downwards
+Contrôle la longueur du bikini vers le bas
 
 ## Effet de cette option sur le modèle
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_bottomcupdepth_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bee_bottomcupdepth_sample.svg "Effet de cette option sur le modèle")
