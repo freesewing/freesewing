@@ -1,11 +1,11 @@
 ---
-title: "Front curve"
+title: "Courbe frontale"
 ---
 
 ***
 
-Controls the curvature of the front of the bikini cup
+Contrôle la courbure du devant du bonnet du bikini
 
 ## Effet de cette option sur le modèle
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_frontcurve_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bee_frontcurve_sample.svg "Effet de cette option sur le modèle")
