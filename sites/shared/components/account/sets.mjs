@@ -408,7 +408,7 @@ const EditImg = ({ t, mset, account }) => {
   )
 }
 
-const EditName = ({ t, mset, account, backend, toast, refresh }) => {
+const EditName = ({ t, mset, backend, toast, refresh }) => {
   const [value, setValue] = useState(mset.name)
   const { loading, startLoading, stopLoading } = useContext(LoadingContext)
 
@@ -454,7 +454,7 @@ const EditName = ({ t, mset, account, backend, toast, refresh }) => {
   )
 }
 
-const EditNotes = ({ t, mset, account, backend, toast, refresh }) => {
+const EditNotes = ({ t, mset, backend, toast, refresh }) => {
   const [value, setValue] = useState(mset.notes)
   const [activeTab, setActiveTab] = useState('edit')
   const { loading, startLoading, stopLoading } = useContext(LoadingContext)
@@ -518,7 +518,7 @@ const EditNotes = ({ t, mset, account, backend, toast, refresh }) => {
   )
 }
 
-const EditUnits = ({ t, mset, account, backend, toast, refresh }) => {
+const EditUnits = ({ t, mset, backend, toast, refresh }) => {
   const [selection, setSelection] = useState(mset?.imperial === true ? 'imperial' : 'metric')
   const { startLoading, stopLoading } = useContext(LoadingContext)
 
@@ -568,7 +568,7 @@ const EditUnits = ({ t, mset, account, backend, toast, refresh }) => {
   )
 }
 
-const EditPublic = ({ t, mset, account, backend, toast, refresh }) => {
+const EditPublic = ({ t, mset, backend, toast, refresh }) => {
   const [selection, setSelection] = useState(mset.public)
   const { startLoading, stopLoading } = useContext(LoadingContext)
 
