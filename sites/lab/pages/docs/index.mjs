@@ -5,7 +5,8 @@ import Head from 'next/head'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Popout } from 'shared/components/popout.mjs'
-import { WebLink } from 'shared/components/web-link.mjs'
+import { ChoiceLink } from 'shared/components/choice-link.mjs'
+import { DocsIcon } from 'shared/components/icons.mjs'
 
 const ns = [...pageNs, 'labdocs']
 
@@ -27,14 +28,20 @@ const DocsPage = ({ page }) => {
             <br />
             {t('labdocs:see')}:
           </p>
-          <h2>
-            <WebLink href="https://freesewing.org/" txt="FreeSewing.org" />
-          </h2>
-          <p>{t('labdocs:orgDocs')}</p>
-          <h2>
-            <WebLink href="https://freesewing.dev/" txt="FreeSewing.dev" />
-          </h2>
-          <p>{t('labdocs:devDocs')}</p>
+          <ChoiceLink
+            title="FreeSewing.org"
+            href="https://freesewing.org/docs"
+            icon={<DocsIcon className="w-8 h-8" />}
+          >
+            <p>{t('labdocs:orgDocs')}</p>
+          </ChoiceLink>
+          <ChoiceLink
+            title="FreeSewing.dev"
+            href="https://freesewing.dev/"
+            icon={<DocsIcon className="w-8 h-8" />}
+          >
+            <p>{t('labdocs:devDocs')}</p>
+          </ChoiceLink>
           <Popout note compact>
             {t('labdocs:enOnly')}
           </Popout>
