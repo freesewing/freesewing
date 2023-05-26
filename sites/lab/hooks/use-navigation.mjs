@@ -125,7 +125,7 @@ const createSections = (nav) => {
   return orderBy(sections, ['o', 't'])
 }
 
-export const useNavigation = ({ path, locale }) => {
+export const useNavigation = ({ path }) => {
   const { t } = useTranslation(ns)
   const { account } = useAccount()
 

@@ -15,7 +15,6 @@ const copyFromOrg = [
 ]
 
 const copyOrgFiles = () => {
-  const to = path.resolve('..', 'lab', 'pages')
   for (const folder of copyFromOrg) {
     fse.copySync(
       path.resolve('..', 'org', 'pages', folder),

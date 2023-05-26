@@ -13,9 +13,6 @@ export const header = `/*
  */
 `
 
-const withDocs = `import { DynamicOrgDocs as DynamicDocs } from 'shared/components/dynamic-docs/org.mjs'`
-const withoutDocs = `const DynamicDocs = false`
-
 const loadTemplate = async (name) =>
   await fs.readFile(path.resolve('..', 'shared', 'page-templates', name), 'utf-8')
 

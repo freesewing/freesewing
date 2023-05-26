@@ -7,11 +7,10 @@ export const ns = designNs
 
 export const DesignPicker = ({ hrefBuilder = false }) => {
   const { t } = useTranslation('designs')
-  const [list, setList] = useState(Object.keys(designs))
 
   // Need to sort designs by their translated title
   const translated = {}
-  for (const d of list) translated[t(`${d}.t`)] = d
+  for (const d in designs) translated[t(`${d}.t`)] = d
 
   return (
     <div className="flex flex-row flex-wrap gap-2">

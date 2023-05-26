@@ -1,10 +1,8 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
-import Head from 'next/head'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { Popout } from 'shared/components/popout.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
 import { siteConfig } from 'site/site.config.mjs'
 import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
@@ -42,7 +40,7 @@ const DocsPage = ({ page }) => {
           <p>{t('labcode:monorepo')}:</p>
           <RepoLink href={freeSewingConfig.monorepo} />
         </ChoiceLink>
-        {true || siteConfig.repo !== freeSewingConfig.monorepo ? (
+        {siteConfig.repo !== freeSewingConfig.monorepo ? (
           <ChoiceLink
             title={t('labcode:lab')}
             href={freeSewingConfig.monorepo}
