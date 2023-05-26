@@ -61,6 +61,7 @@ const SaveNewPattern = ({
       settings,
     }
     if (data.settings.measurements) delete data.settings.measurements
+    if (data.settings.embed) delete data.settings.embed
     if (info.from === 'set' && info.fromId) data.set = Number(info.fromId)
     else if (info.from === 'cset' && info.fromId) data.cset = Number(info.fromId)
     else return toast.error(<span>¯\_(ツ)_/¯</span>)
