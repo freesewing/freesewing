@@ -860,7 +860,7 @@ export const Sets = ({ title = true }) => {
       >
         <NewSet {...{ t, account, backend, toast, refresh, closeCollapseButton }} title={false} />
       </CollapseButton>
-      <BackToAccountButton loading={loading} />
+      <BackToAccountButton />
     </div>
   )
 }
