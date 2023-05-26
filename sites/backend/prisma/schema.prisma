@@ -80,6 +80,8 @@ model Pattern {
   notes     String
   set       Set?  @relation(fields: [setId], references: [id])
   setId     Int?
+  cset      CuratedSet?  @relation(fields: [csetId], references: [id])
+  csetId    Int?
   public    Boolean  @default(false)
   settings  String
   user      User     @relation(fields: [userId], references: [id])
@@ -126,6 +128,7 @@ model CuratedSet {
   tagsFr    String    @default("")
   tagsNl    String    @default("")
   measies   String    @default("{}")
+  patterns  Pattern[]
   updatedAt DateTime @updatedAt
 }
 

@@ -16,8 +16,11 @@ export function PatternModel(tools) {
 PatternModel.prototype.guardedCreate = async function ({ body, user }) {
   if (!this.rbac.user(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (Object.keys(body).length < 2) return this.setResponse(400, 'postBodyMissing')
-  if (!body.set) return this.setResponse(400, 'setMissing')
-  if (typeof body.set !== 'number') return this.setResponse(400, 'setNotNumeric')
+  if (!body.set && !body.cset) return this.setResponse(400, 'setOrCsetMissing')
+  if (typeof body.set !== 'undefined' && typeof body.set !== 'number')
+    return this.setResponse(400, 'setNotNumeric')
+  if (typeof body.cset !== 'undefined' && typeof body.cset !== 'number')
+    return this.setResponse(400, 'csetNotNumeric')
   if (typeof body.settings !== 'object') return this.setResponse(400, 'settingsNotAnObject')
   if (body.data && typeof body.data !== 'object') return this.setResponse(400, 'dataNotAnObject')
   if (!body.design && !body.data?.design) return this.setResponse(400, 'designMissing')
@@ -26,9 +29,13 @@ PatternModel.prototype.guardedCreate = async function ({ body, user }) {
   // Prepare data
   const data = {
     design: body.design,
-    setId: body.set,
     settings: body.settings,
   }
+  if (data.settings.measurements) delete data.settings.measurements
+  if (body.set) data.setId = body.set
+  else if (body.cset) data.csetId = body.cset
+  else return this.setResponse(400, 'setOrCsetMissing')
+
   // Data (will be encrypted, so always set _some_ value)
   if (typeof body.data === 'object') data.data = body.data
   else data.data = {}

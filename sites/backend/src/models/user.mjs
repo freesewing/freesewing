@@ -187,6 +187,12 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
         userId: this.record.id,
       })
     }
+    // Set th action url based on the account status
+    let actionUrl = false
+    if (this.record.status === 0)
+      actionUrl = i18nUrl(body.language, `/confirm/${type}/${this.Confirmation.record.id}/${check}`)
+    else if (this.record.status === 1)
+      actionUrl = i18nUrl(body.language, `/confirm/signin/${this.Confirmation.record.id}/${check}`)
     // Send email unless it's a test and we don't want to send test emails
     if (!isTest || this.config.tests.sendEmail)
       await this.mailer.send({
@@ -194,10 +200,7 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
         language: body.language,
         to: this.clear.email,
         replacements: {
-          actionUrl:
-            type === 'signup-aed'
-              ? false // No actionUrl for disabled accounts
-              : i18nUrl(body.language, `/confirm/${type}/${this.Confirmation.record.id}/${check}`),
+          actionUrl,
           whyUrl: i18nUrl(body.language, `/docs/faq/email/why-${type}`),
           supportUrl: i18nUrl(body.language, `/patrons/join`),
         },
@@ -342,7 +345,7 @@ UserModel.prototype.linkSignIn = async function (req) {
   }
 
   // Verify whether Confirmation is of the right type
-  if (this.Confirmation.record.type !== 'signinlink') {
+  if (!['signinlink', 'signup-aea'].includes(this.Confirmation.record.type)) {
     log.warn(`Confirmation mismatch; ${req.params.id} is not a signin id`)
     return this.setResponse(404)
   }
