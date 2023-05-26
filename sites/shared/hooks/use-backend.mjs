@@ -223,5 +223,11 @@ export function useBackend(token = false) {
     return response && response.status === 204 ? true : false
   }
 
+  /*
+   * Create pattern
+   */
+  backend.createPattern = async (data) =>
+    responseHandler(await api.post(`/patterns/jwt`, data, auth), 201)
+
   return backend
 }

@@ -26,7 +26,8 @@ const New{{ Design }}FromSetPage = ({ page, id }) => {
       if (result.success) setSet(result.data.set)
     }
     // Guard against loops as the backend object is recreated on each render
-    if (set.id !== id) getSet()
+    if (set === false) getSet()
+    else if (set.id && set.id !== id) getSet()
   }, [id, set.id, backend])
 
   return (

@@ -15,7 +15,7 @@ export const DraftView = ({
   account,
   DynamicDocs,
 }) => (
-  <div className="flex flex-row items-tope">
+  <div className="flex flex-row">
     <div className="w-2/3 shrink-0 grow lg:p-4 sticky top-0">
       <Pattern {...{ pattern, setView, settings, ui, update }} />
     </div>

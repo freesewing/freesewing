@@ -12,8 +12,9 @@ import { WorkbenchHeader } from './header.mjs'
 import { ErrorView } from 'shared/components/error/view.mjs'
 // Views
 import { DraftView, ns as draftNs } from 'shared/components/workbench/views/draft/index.mjs'
+import { SaveView, ns as saveNs } from 'shared/components/workbench/views/save/index.mjs'
 
-export const ns = ['workbench', ...draftNs]
+export const ns = ['workbench', ...draftNs, ...saveNs]
 
 const loadDefaultSettings = ({ locale = 'en', units = 'metric' }) => ({
   units,
@@ -68,47 +69,51 @@ export const Workbench = ({ design, Design, set = false, DynamicDocs = false }) 
     ui: (path, val) => setUi(objUpdate({ ...ui }, path, val)),
   }
 
-  // Generate the pattern here so we can pass it down to both the view and the options menu
-  const pattern = settings.measurements && draftViews.includes(view) ? new Design(settings) : false
+  // Deal with each view
+  const viewProps = {
+    account,
+    design,
+    setView,
+    update,
+    settings,
+    ui,
+    language,
+    DynamicDocs,
+  }
+  let viewContent = null
 
-  // Return early if the pattern is not initialized yet
-  if (typeof pattern.getConfig !== 'function') return null
+  // Draft view
+  if (view === 'draft') {
+    // Generate the pattern here so we can pass it down to both the view and the options menu
+    const pattern =
+      settings.measurements && draftViews.includes(view) ? new Design(settings) : false
 
-  const patternConfig = pattern.getConfig()
+    // Return early if the pattern is not initialized yet
+    if (typeof pattern.getConfig !== 'function') return null
 
-  if (ui.renderer === 'svg') {
-    // Add theme to svg renderer
-    pattern.use(pluginI18n, { t })
-    pattern.use(pluginTheme, { skipGrid: ['pages'] })
+    const patternConfig = pattern.getConfig()
+    if (ui.renderer === 'svg') {
+      // Add theme to svg renderer
+      pattern.use(pluginI18n, { t })
+      pattern.use(pluginTheme, { skipGrid: ['pages'] })
+    }
+    // Draft the pattern or die trying
+    try {
+      pattern.draft()
+    } catch (error) {
+      console.log(error)
+      setError(<ErrorView>{JSON.stringify(error)}</ErrorView>)
+    }
+    viewContent = <DraftView {...viewProps} {...{ pattern, patternConfig }} />
   }
 
-  // Draft the pattern or die trying
-  try {
-    pattern.draft()
-  } catch (error) {
-    console.log(error)
-    setError(<ErrorView>{JSON.stringify(error)}</ErrorView>)
-  }
+  // Save view
+  else if (view === 'save') viewContent = <SaveView {...viewProps} />
 
   return (
     <>
       <WorkbenchHeader setView={setView} view={view} />
-      {view === 'draft' && (
-        <DraftView
-          {...{
-            design,
-            pattern,
-            patternConfig,
-            setView,
-            update,
-            settings,
-            ui,
-            language,
-            DynamicDocs,
-          }}
-          account={account}
-        />
-      )}
+      {viewContent}
     </>
   )
 }
