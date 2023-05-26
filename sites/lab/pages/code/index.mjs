@@ -29,7 +29,7 @@ const RepoLink = ({ href = false }) =>
  * or set them manually.
  */
 const DocsPage = ({ page }) => {
-  const { t, i18n } = useTranslation(ns)
+  const { t } = useTranslation(ns)
 
   return (
     <PageWrapper {...page}>
