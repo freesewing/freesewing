@@ -49,9 +49,9 @@ export const checkNodeVersion = () => {
 
 // Helper method to validate the design name
 const validateDesignName = (name) => {
-  if (/^([a-z0-9][a-z0-9_\-]*)$/.test(name)) return true
+  if (/^([a-z][a-z0-9_\-]*)$/.test(name)) return true
   else
-    return ' 🙈 Please use only lowercase letters, digits, underscores, or hyphens. Names must start with a lowercase letter or digit. 🤷'
+    return ' 🙈 Please use only lowercase letters, digits, underscores, or hyphens. Names must start with a lowercase letter. 🤷'
 }
 
 // Gets user input to figure out what to do

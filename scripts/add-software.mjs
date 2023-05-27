@@ -223,9 +223,9 @@ function validateDesignName(name) {
   )
     return `Sorry but ${name} is already taken so you'll need to pick something else`
 
-  if (/^([a-z0-9][a-z0-9_\-]*)$/.test(name)) return true
+  if (/^([a-z][a-z0-9_\-]*)$/.test(name)) return true
   else
-    return ' 🙈 Please use only lowercase letters, digits, underscores, or hyphens. Names must start with a lowercase letter or digit. 🤷'
+    return ' 🙈 Please use only lowercase letters, digits, underscores, or hyphens. Names must start with a lowercase letter. 🤷'
 }
 
 function validatePluginName(name) {
