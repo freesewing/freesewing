@@ -3,7 +3,7 @@ import { useState, useEffect, useContext, useCallback } from 'react'
 import { useTranslation } from 'next-i18next'
 import orderBy from 'lodash.orderby'
 import { measurements, isDegreeMeasurement } from 'config/measurements.mjs'
-import { measurementAsMm, formatMm } from 'shared/utils.mjs'
+import { measurementAsMm, formatMm, capitalize } from 'shared/utils.mjs'
 import { measurements as designMeasurements } from 'shared/prebuild/data/design-measurements.mjs'
 import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
 // Hooks
@@ -137,8 +137,6 @@ export const EditRow = (props) => (
         <div className="grow">{props.children}</div>
       </>
     }
-    toggle={<EditIcon />}
-    toggleClasses="btn btn-secondary"
   >
     <EditField field="name" {...props} />
   </Collapse>
@@ -372,10 +370,10 @@ const EditPattern = (props) => {
   const { account, pattern, t, setModal } = props
 
   return (
-    <div className="p-4">
+    <div className="p-2 lg:p-4">
       {/* Meta info */}
       {account.control > 2 ? (
-        <div className="flex flex-row gap-4 text-sm items-center justify-center mb-2">
+        <div className="flex flex-row gap-2 text-sm items-center justify-center mb-2">
           <div className="flex flex-row gap-2 items-center">
             <b>{t('permalink')}:</b>
             {pattern.public ? (
@@ -395,7 +393,7 @@ const EditPattern = (props) => {
 
       {/* JSON & YAML links */}
       {account.control > 3 ? (
-        <div className="flex flex-row gap-4 text-sm items-center justify-center">
+        <div className="flex flex-row gap-2 text-sm items-center justify-center">
           <a
             className="badge badge-secondary font-bold"
             href={`${conf.backend}/sets/${pattern.id}.json`}
@@ -492,11 +490,44 @@ const Pattern = ({ pattern, t, account, backend, refresh }) => {
       title={
         <>
           <img src={pattern.img} className="w-10 mask mask-squircle bg-neutral aspect-square" />
-          <span>{pattern.name}</span>
+          <div className="flex flex-col lg:flex-row lg:flex-wrap lg:gap-2 lg:justify-between w-full">
+            {pattern.set?.img && (
+              <img
+                src={pattern.set.img}
+                className="w-10 mask mask-squircle bg-neutral aspect-square"
+              />
+            )}
+            {pattern.cset?.img && (
+              <img
+                src={pattern.cset.img}
+                className="w-10 mask mask-squircle bg-neutral aspect-square"
+              />
+            )}
+            <b>{capitalize(pattern.design)}</b>
+            <span>{pattern.name}</span>
+            {pattern.set?.name && <span>{pattern.set.name}</span>}
+            {pattern.cset?.nameEn && <span>{pattern.cset.nameEn}</span>}
+          </div>
         </>
       }
-      openTitle={pattern.name}
+      openTitle={`${capitalize(pattern.design)} | ${pattern.name}`}
       buttons={[
+        <Link
+          key="edit"
+          className="btn btn-secondary hover:text-secondary-content border-0 hidden lg:flex"
+          href={`/patterns/${pattern.id}/edit#view="draft"`}
+          title={t('removePattern')}
+        >
+          <SettingsIcon />
+        </Link>,
+        <Link
+          key="export"
+          className="btn btn-primary hover:text-primary-content border-0 hidden lg:flex"
+          href={`/patterns/${pattern.id}/edit#view="export"`}
+          title={t('removePattern')}
+        >
+          <DownloadIcon />
+        </Link>,
         <button
           key="rm"
           className="btn btn-error hover:text-error-content border-0"
@@ -560,7 +591,7 @@ export const Patterns = ({ standAlone = false }) => {
   }
 
   return (
-    <div className="max-w-2xl xl:pl-4">
+    <div className="max-w-4xl xl:pl-4">
       {orderBy(patterns, ['name'], ['asc']).map((pattern) => (
         <Pattern {...{ account, pattern, t, backend, refresh }} key={pattern.id} />
       ))}

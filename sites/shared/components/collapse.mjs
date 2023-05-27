@@ -46,7 +46,7 @@ export const Collapse = ({
   return open ? (
     <div className={`shadow border-solid border-2 rounded-lg border-${color} my-2`}>
       {top ? titleBtn : null}
-      <div className="p-4">{children}</div>
+      <div className="p-2 lg:p-4">{children}</div>
       {bottom ? titleBtn : null}
     </div>
   ) : (
