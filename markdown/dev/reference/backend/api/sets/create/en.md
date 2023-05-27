@@ -14,18 +14,18 @@ Creating a new measurements set is possible via these endpoints:
 
 | Method    | Path | Authentication |
 | --------: | :--- | :------------- |
-| <Method post /> | `/people/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
-| <Method post /> | `/people/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
+| <Method post /> | `/sets/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
+| <Method post /> | `/sets/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
 
 ## Request body
 
 | Property    | Type     | Description |
 | ----------: | :------- | :---------- |
-| `img`       | `string` | An image [data-uri][duri] to store with this Person |
-| `imperial`  | `boolean`| Whether this Person prefers imperial measurements (`true`) or not (`false`) |
-| `name`      | `string` | A name for the Person |
-| `notes`     | `string` | User notes for the person |
-| `measies`   | `object` | The measurements for this person |
+| `img`       | `string` | An image [data-uri][duri] to store with this measurements set |
+| `imperial`  | `boolean`| Whether this measurements set uses imperial measurements (`true`) or not (`false`) |
+| `name`      | `string` | A name for the measurements set |
+| `notes`     | `string` | User notes for the measurements set |
+| `measies`   | `object` | The measurements for this measurements set |
 | `public`    | `string` | The name of the design this Pattern is an instance of |
 
 ## Response status codes
@@ -51,21 +51,21 @@ in the response body should indicate the nature of the problem.
 | ------------------- | -------- | ----------- |
 | `result`            | String | Either `success` or `error` |
 | `error`             | String | Will give info on the nature of the error. Only set if an error occurred. |
-| `person.id`         | Number | The ID of the Person |
-| `person.createdAt`  | String | Date string indicating the moment the Person was created |
-| `person.img`        | String | The URL to the image stored with this Person |
-| `person.name`       | String | The name of the Person |
-| `person.notes`      | String | The notes stored with the Person |
-| `person.userId`     | Number | The ID of the user who created the Person |
-| `person.measies`    | Object | The measurements of the Person |
-| `person.public`     | Boolean| Indicates whether the Person is publicly accessible or not |
-| `person.updatedAt`  | String | Date string indicating the last time the Person was updated |
+| `set.id`         | Number | The ID of the measurements set |
+| `set.createdAt`  | String | Date string indicating the moment the measurements set was created |
+| `set.img`        | String | The URL to the image stored with this measurements set |
+| `set.name`       | String | The name of the measurements set |
+| `set.notes`      | String | The notes stored with the measurements set |
+| `set.userId`     | Number | The ID of the user who created the measurements set |
+| `set.measies`    | Object | The measurements of the measurements set |
+| `set.public`     | Boolean| Indicates whether the measurements set is publicly accessible or not |
+| `set.updatedAt`  | String | Date string indicating the last time the measurements set was updated |
 
 ## Example request
 
 ```js
 const person = await axios.post(
-  'https://backend.freesewing.org/people/jwt',
+  'https://backend.freesewing.org/sets/jwt',
   {
     name: "Someone",
     notes: "These are some notes",
@@ -89,7 +89,7 @@ const person = await axios.post(
 ```201.json
 {
   "result": "success",
-  "person": {
+  "set": {
     "id": 27,
     "createdAt": "2022-11-19T17:36:41.342Z",
     "img": "https://cdn.sanity.io/images/hl5bw8cj/production/a1565c8c6c70cfe7ea0fdf5c65501cd885adbe78-200x187.png",
