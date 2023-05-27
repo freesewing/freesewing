@@ -2,13 +2,13 @@
 title: Stack
 ---
 
-A Stack object represents a layer within a pattern, holding one or
-more parts..
+A Stack object represents a collection of parts within a pattern.
+Stacks are used when laying out the pattern.
 
 <Related>
 
 See [Stacks](/guides/patterns/stacks)
-for information about how stacks are used in a pattern
+for information about how stacks are used in a pattern.
 
 </Related>
 
@@ -25,7 +25,7 @@ of the stack.
 
 Stack objects come with the following properties:
 
-- `attributes` : An [Attributes](/reference/api/attributes) instance holding the point's attributes
+- `attributes` : An [Attributes](/reference/api/attributes) instance holding the stack's attributes
 - `parts` : A set of parts in the stack
 - `name` : The name of the stack
 - `topleft` : A [Point](/reference/api/point) that is the top left of the stack's bounding box

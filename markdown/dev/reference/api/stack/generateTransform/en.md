@@ -2,7 +2,7 @@
 title: Stack.generateTransform()
 ---
 
-The `Stack.generateTransform()` method generates transforms for the stack,
+The `Stack.generateTransform()` method generates SVG transforms for the stack,
 sets them as attributes, and returns the original stack.
 
 

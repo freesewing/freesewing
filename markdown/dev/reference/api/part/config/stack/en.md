@@ -32,10 +32,16 @@ This is because parts in the stack are drafted within the same stack
 space.
 
 Otherwise, if the `stack` property is not present, the default behavior
-is to assign the part to its own stack.
-The part will not overlap other parts in drafting and printing layouts.
-This is because it is the only part drafted within its stack and
-because stacks do not overlap other stacks.
+is to use the part's name as its stack name.
+
+- In a draft with only one set, this will result in each part having its
+own stack.
+With a default layout, the part will not overlap other parts because it is
+the only part drafted within its stack and stacks do not overlap.
+
+- In a draft with multiple sets, this will result in parts of the same name
+using the same stack.
+This is how we achieve the layered look of parts in sample drafts.
 
 <Related>
 

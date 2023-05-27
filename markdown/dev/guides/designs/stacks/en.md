@@ -5,8 +5,8 @@ order: 110
 
 [Stacks](/reference/api/stack) come into play when laying out a pattern.
 The FreeSewing core library, by default, will handle the layout of a pattern
-for you by placing all parts next to each other in as small a space as
-possible.
+for you by placing all parts into stacks and arranging the stacks in as
+small a space as possible.
 
 That is _typically_ what you want, but not always. For example, when sampling
 you want parts to be stacked on top of each other:
@@ -44,7 +44,9 @@ Under the hood, sampling uses multiple sets of settings and then uses stacks
 to place them on top of each other.  But this functionality is also available
 to patterns designers who want to use it.
 
-Essentially, stacks behave as layers. Parts that are on the same _stack_ will be stacked on top of each other in the layout.
+Essentially, a stack is a collection of parts.
+Parts in a stack act as layers, and they will be stacked directly on top
+of each other.
 
 You can stack parts from the same set, or from different sets.
 
@@ -52,9 +54,10 @@ You can stack parts from the same set, or from different sets.
 
 <Note>
 
-In the vast majority of cases you won't be using any stacks, or the stacking
-will be handled for you by the core library (like in the sampling example
-above).
+In the vast majority of cases, stacks will be handled for you by the
+core library (like in the sampling example above).
+By default, parts are added to a stack with the same name as the part,
+so you only need to specify a stack if you want a different behavior.
 
 </Note>
 
