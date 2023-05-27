@@ -107,7 +107,7 @@ export const getChoices = async () => {
             await prompts({
               type: 'text',
               name: 'name',
-              message: 'What name would you like the design to have? 🏷️ ([a-z0-9_-] only)',
+              message: 'What name would you like the design to have? 🏷️ ([a-z0-9_\\-] only)',
               validate: validateDesignName,
             })
           ).name
