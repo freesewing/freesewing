@@ -20,7 +20,13 @@ PatternModel.prototype.userPatterns = async function (uid) {
   if (!uid) return false
   let patterns
   try {
-    patterns = await this.prisma.pattern.findMany({ where: { userId: uid } })
+    patterns = await this.prisma.pattern.findMany({
+      where: { userId: uid },
+      include: {
+        set: true,
+        cset: true,
+      },
+    })
   } catch (err) {
     log.warn(`Failed to search patterns for user ${uid}: ${err}`)
   }
