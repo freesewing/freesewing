@@ -64,7 +64,7 @@ function simoneFbaFront({
    * When you do an FBA on an existing pattern for womenswear, the bust point is assumed
    * to be incorrect (since the pattern is drafted for smaller breasts).
    * In our case, we know for a fact that the bust point is in the correct location because
-   * it's based on the model's measurements. (bust span and high point shoulder (HPS) to bust).
+   * it's based on the measurements set. (bust span and high point shoulder (HPS) to bust).
    * So we need to find the bust point that would end up in the right place AFTER we do the FBA
    * For this, we'll just rotate it FBARot in the other direction
    * In other words, we are pre-rotating points.bust now, so it gets rotated

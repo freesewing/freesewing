@@ -25,8 +25,8 @@ Reading a measurements set is possible via these endpoints:
 
 | Method    | Path | Authentication |
 | --------: | :--- | :------------- |
-| <Method get /> | `/people/:id/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
-| <Method get /> | `/people/:id/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
+| <Method get /> | `/sets/:id/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
+| <Method get /> | `/sets/:id/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
 
 ## Request url
 
@@ -57,21 +57,21 @@ in the response body should indicate the nature of the problem.
 | ------------------- | -------- | ----------- |
 | `result`            | String | Either `success` or `error` |
 | `error`             | String | Will give info on the nature of the error. Only set if an error occurred. |
-| `person.id`         | Number | The ID of the Person |
-| `person.createdAt`  | String | Date string indicating the moment the Person was created |
-| `person.img`        | String | The URL to the image stored with this Person |
-| `person.name`       | String | The name of the Person |
-| `person.notes`      | String | The notes stored with the Person |
-| `person.userId`     | Number | The ID of the user who created the Person |
-| `person.measies`    | Object | The measurements of the Person |
-| `person.public`     | Boolean| Indicates whether the Person is publicly accessible or not |
-| `person.updatedAt`  | String | Date string indicating the last time the Person was updated |
+| `set.id`         | Number | The ID of the measurements set |
+| `set.createdAt`  | String | Date string indicating the moment the measurements set was created |
+| `set.img`        | String | The URL to the image stored with this measurements set |
+| `set.name`       | String | The name of the measurements set |
+| `set.notes`      | String | The notes stored with the measurements set |
+| `set.userId`     | Number | The ID of the user who created the measurements set |
+| `set.measies`    | Object | The measurements of the measurements set |
+| `set.public`     | Boolean| Indicates whether the measurements set is publicly accessible or not |
+| `set.updatedAt`  | String | Date string indicating the last time the measurements set was updated |
 
 ## Example request
 
 ```js
-const person = await axios.get(
-  'https://backend.freesewing.org/people/27/jwt',
+const set = await axios.get(
+  'https://backend.freesewing.org/sets/27/jwt',
   {
     headers: {
       Authorization: `Bearer ${token}`
@@ -84,7 +84,7 @@ const person = await axios.get(
 ```200.json
 {
   "result": "success",
-  "person": {
+  "set": {
     "id": 27,
     "createdAt": "2022-11-19T17:36:41.342Z",
     "img": "https://cdn.sanity.io/images/hl5bw8cj/production/a1565c8c6c70cfe7ea0fdf5c65501cd885adbe78-200x187.png",

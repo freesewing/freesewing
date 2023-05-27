@@ -15,8 +15,8 @@ Deleting a measurements set is possible via these endpoints:
 
 | Method    | Path | Authentication |
 | --------: | :--- | :------------- |
-| <Method delete /> | `/people/:id/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
-| <Method delete /> | `/people/:id/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
+| <Method delete /> | `/sets/:id/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
+| <Method delete /> | `/sets/:id/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
 
 ## Request URL
 
@@ -39,7 +39,7 @@ Possible status codes for these endpoints are:
 
 ```js
 await axios.delete(
-  'https://backend.freesewing.org/people/27/jwt',
+  'https://backend.freesewing.org/sets/27/jwt',
   {
     headers: {
       Authorization: `Bearer ${token}`
