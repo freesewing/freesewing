@@ -45,7 +45,7 @@ to place them on top of each other.  But this functionality is also available
 to patterns designers who want to use it.
 
 Essentially, a stack is a collection of parts.
-Parts in a stack act as layers, and they will be stacked directly on top
+Parts in a stack act as layers and will be stacked directly on top
 of each other.
 
 You can stack parts from the same set, or from different sets.
