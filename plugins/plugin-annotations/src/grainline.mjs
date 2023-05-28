@@ -16,7 +16,7 @@ export const grainlineDefs = [
   },
 ]
 
-const dflts = { text: 'grainline' }
+const dflts = { text: 'grainline', detail: true }
 
 // Export hooks and macros
 export const grainlineHooks = {
@@ -28,7 +28,7 @@ export const grainlineHooks = {
 }
 
 export const grainlineMacros = {
-  grainline: function (so = {}, { points, paths, Path, complete, setGrain }) {
+  grainline: function (so = {}, { points, paths, Path, complete, store, setGrain }) {
     let prefix
     if (so.id) {
       prefix = '_' + so.id
@@ -56,7 +56,7 @@ export const grainlineMacros = {
     // store in cutlist
     store.cutlist.setGrain(so.from.angle(so.to))
 
-    if (complete) {
+    if ((complete && so.detail) || !so.detail) {
       points[id + 'From'] = so.from.shiftFractionTowards(so.to, 0.05)
       points[id + 'To'] = so.to.shiftFractionTowards(so.from, 0.05)
       paths[id] = new Path()

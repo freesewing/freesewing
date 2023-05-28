@@ -1,6 +1,6 @@
 // Export macros
 export const bannerboxMacros = {
-  bannerbox: function (so, { Point, paths, Path, getId, macro }) {
+  bannerbox: function (so, { Point, paths, Path, getId, macro, complete }) {
     // Spread so settings into defaults
     so = {
       topLeft: new Point(0, 0),
@@ -12,8 +12,10 @@ export const bannerboxMacros = {
       dy: 4,
       spaces: 12,
       repeat: 99,
+      detail: true,
       ...so,
     }
+    if ((complete && so.detail) || !so.detail) {
     const offset = Math.sqrt(2 * Math.pow(so.margin, 2))
     const id = getId()
     paths[id] = new Path()
@@ -33,5 +35,6 @@ export const bannerboxMacros = {
       spaces: so.spaces,
       dy: so.dy,
     })
+  }
   },
 }

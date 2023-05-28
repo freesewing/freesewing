@@ -34,10 +34,11 @@ export const pleatMacros = {
     so = {
       margin: 35,
       reverse: false,
+      detail: true,
       ...so,
     }
 
-    if (complete) {
+    if ((complete && so.detail) || !so.detail) {
       points[id + 'From'] = so.from
       points[id + 'To'] = so.to
       points[id + 'FromIn'] = points[id + 'From'].shift(

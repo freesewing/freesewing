@@ -36,5 +36,6 @@ export const base = {
       menu: 'tests',
     },
     false: { bool: false, menu: 'tests' },
+    isDetail: { bool: true, menu: 'tests' },
   },
 }

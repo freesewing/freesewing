@@ -1,4 +1,4 @@
-const titleMacro = function (so, { points, scale, locale, store }) {
+const titleMacro = function (so, { points, scale, locale, store, complete }) {
   let prefix
   if (so.id) {
     prefix = '_' + so.id
@@ -33,9 +33,11 @@ const titleMacro = function (so, { points, scale, locale, store }) {
     rotation: 0,
     cutlist: true,
     align: 'left',
+    detail: true,
   }
 
   so = { ...defaults, ...so }
+  if ((complete && so.detail) || !so.detail) {
   so.scale = so.scale * scale
   const validAlignments = ['left', 'right', 'center']
   const alignment = validAlignments.includes(so.align) ? ' ' + so.align : ' left'
@@ -114,6 +116,7 @@ const titleMacro = function (so, { points, scale, locale, store }) {
     `${exportDate}@ ${hours}:${mins}`,
     'text-sm' + alignment
   )
+  }
 }
 
 // Export macros

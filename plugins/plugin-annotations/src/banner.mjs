@@ -1,6 +1,6 @@
 // Export macros
 export const bannerMacros = {
-  banner: function (so) {
+  banner: function (so, { complete }) {
     // Mix defaults with settings object
     so = {
       text: '',
@@ -8,8 +8,10 @@ export const bannerMacros = {
       spaces: 12,
       repeat: 10,
       className: '',
+      detail: true,
       ...so,
     }
+if ((complete && so.detail) || !so.detail) {
     so.path.attr('data-text-dy', so.dy).attr('data-text-class', `${so.className} center`)
     const spacer = '&#160;'.repeat(so.spaces)
 
@@ -19,5 +21,6 @@ export const bannerMacros = {
     }
 
     so.path.attr('data-text', spacer)
+  }
   },
 }
