@@ -1,26 +1,21 @@
 // Export macros
 export const scaleboxMacros = {
   scalebox: function (so, { store, points, paths, scale, Point, Path }) {
+    let prefix
+    if (so.id) {
+      prefix = '_' + so.id
+    } else {
+      prefix = ''
+    }
+    const id = prefix + '_scalebox'
     // Passing `false` will remove the scalebox
     if (so === false) {
-      for (let id of [
-        '__scaleboxMetricTopLeft',
-        '__scaleboxMetricTopRight',
-        '__scaleboxMetricBottomRight',
-        '__scaleboxMetricBottomLeft',
-        '__scaleboxImperialTopLeft',
-        '__scaleboxImperialTopRight',
-        '__scaleboxImperialBottomRight',
-        '__scaleboxImperialBottomLeft',
-        '__scaleboxLead',
-        '__scaleboxTitle',
-        '__scaleboxText',
-        '__scaleboxLink',
-        '__scaleboxMetric',
-        '__scaleboxImperial',
-      ])
-        delete points[id]
-      for (let id of ['__scaleboxMetric', '__scaleboxImperial']) delete paths[id]
+      for (const pointName in points) {
+        if (pointName.match('_scalebox')) delete points[pointName]
+      }
+      for (const pathName in paths) {
+        if (pathName.match('_scalebox')) delete paths[pathName]
+      }
       return true
     }
 
@@ -66,64 +61,59 @@ export const scaleboxMacros = {
     const imperialDisplayHeight = imperialSizes[scaleIndex][3]
 
     // Box points
-    points.__scaleboxMetricTopLeft = new Point(
-      so.at.x - metricWidth / 2,
-      so.at.y - metricHeight / 2
-    )
-    points.__scaleboxMetricTopRight = new Point(
-      so.at.x + metricWidth / 2,
-      so.at.y - metricHeight / 2
-    )
-    points.__scaleboxMetricBottomLeft = new Point(
+    points[id + 'MetricTopLeft'] = new Point(so.at.x - metricWidth / 2, so.at.y - metricHeight / 2)
+    points[id + 'MetricTopRight'] = new Point(so.at.x + metricWidth / 2, so.at.y - metricHeight / 2)
+    points[id + 'MetricBottomLeft'] = new Point(
       so.at.x - metricWidth / 2,
       so.at.y + metricHeight / 2
     )
-    points.__scaleboxMetricBottomRight = new Point(
+    points[id + 'MetricBottomRight'] = new Point(
       so.at.x + metricWidth / 2,
       so.at.y + metricHeight / 2
     )
-    points.__scaleboxImperialTopLeft = new Point(
+    points[id + 'ImperialTopLeft'] = new Point(
       so.at.x - imperialWidth / 2,
       so.at.y - imperialHeight / 2
     )
-    points.__scaleboxImperialTopRight = new Point(
+    points[id + 'ImperialTopRight'] = new Point(
       so.at.x + imperialWidth / 2,
       so.at.y - imperialHeight / 2
     )
-    points.__scaleboxImperialBottomLeft = new Point(
+    points[id + 'ImperialBottomLeft'] = new Point(
       so.at.x - imperialWidth / 2,
       so.at.y + imperialHeight / 2
     )
-    points.__scaleboxImperialBottomRight = new Point(
+    points[id + 'ImperialBottomRight'] = new Point(
       so.at.x + imperialWidth / 2,
       so.at.y + imperialHeight / 2
     )
     // Text anchor points
-    points.__scaleboxLead = new Point(so.at.x - 45 * scale, so.at.y - 15 * scale)
-    points.__scaleboxTitle = points.__scaleboxLead.shift(-90, 10 * scale)
-    points.__scaleboxText = points.__scaleboxTitle.shift(-90, 12 * scale)
-    points.__scaleboxLink = points.__scaleboxText.shift(-90, 5 * scale)
-    points.__scaleboxMetric = new Point(so.at.x, so.at.y + 20 * scale)
-    points.__scaleboxImperial = new Point(so.at.x, so.at.y + 24 * scale)
+    points[id + 'Lead'] = new Point(so.at.x - 45 * scale, so.at.y - 15 * scale)
+    points[id + 'Title'] = points[id + 'Lead'].shift(-90, 10 * scale)
+    points[id + 'Text'] = points[id + 'Title'].shift(-90, 12 * scale)
+    points[id + 'Link'] = points[id + 'Text'].shift(-90, 5 * scale)
+    points[id + 'Metric'] = new Point(so.at.x, so.at.y + 20 * scale)
+    points[id + 'Imperial'] = new Point(so.at.x, so.at.y + 24 * scale)
     // Rotation
     if (so.rotate) {
       so.rotate = Number(so.rotate)
       let toRotate = [
-        '__scaleboxMetricTopLeft',
-        '__scaleboxMetricTopRight',
-        '__scaleboxMetricBottomLeft',
-        '__scaleboxMetricBottomRight',
-        '__scaleboxImperialTopLeft',
-        '__scaleboxImperialTopRight',
-        '__scaleboxImperialBottomLeft',
-        '__scaleboxImperialBottomRight',
-        '__scaleboxLead',
-        '__scaleboxTitle',
-        '__scaleboxText',
-        '__scaleboxLink',
-        '__scaleboxMetric',
-        '__scaleboxImperial',
+        id + 'MetricTopLeft',
+        id + 'MetricTopRight',
+        id + 'MetricBottomLeft',
+        id + 'MetricBottomRight',
+        id + 'ImperialTopLeft',
+        id + 'ImperialTopRight',
+        id + 'ImperialBottomLeft',
+        id + 'ImperialBottomRight',
+        id + 'Lead',
+        id + 'Title',
+        id + 'Text',
+        id + 'Link',
+        id + 'Metric',
+        id + 'Imperial',
       ]
+
       for (let pid of toRotate) points[pid] = points[pid].rotate(so.rotate, so.at)
       for (let pid of toRotate.slice(8)) {
         points[pid].attributes.set(
@@ -133,52 +123,52 @@ export const scaleboxMacros = {
       }
     }
     // Paths
-    paths.__scaleboxImperial = new Path()
+    paths[id + 'Imperial'] = new Path()
       .attr('class', 'scalebox imperial fill-current')
-      .move(points.__scaleboxImperialTopLeft)
-      .line(points.__scaleboxImperialBottomLeft)
-      .line(points.__scaleboxImperialBottomRight)
-      .line(points.__scaleboxImperialTopRight)
+      .move(points[id + 'ImperialTopLeft'])
+      .line(points[id + 'ImperialBottomLeft'])
+      .line(points[id + 'ImperialBottomRight'])
+      .line(points[id + 'ImperialTopRight'])
       .close()
-    paths.__scaleboxMetric = new Path()
+    paths[id + 'Metric'] = new Path()
       .attr('class', 'scalebox metric fill-bg')
-      .move(points.__scaleboxMetricTopLeft)
-      .line(points.__scaleboxMetricBottomLeft)
-      .line(points.__scaleboxMetricBottomRight)
-      .line(points.__scaleboxMetricTopRight)
+      .move(points[id + 'MetricTopLeft'])
+      .line(points[id + 'MetricBottomLeft'])
+      .line(points[id + 'MetricBottomRight'])
+      .line(points[id + 'MetricTopRight'])
       .close()
     // Lead
-    points.__scaleboxLead = points.__scaleboxLead
+    points[id + 'Lead'] = points[id + 'Lead']
       .attr('data-text', so.lead || 'FreeSewing')
       .attr('data-text-class', 'text-sm')
     // Title
-    if (so.title) points.__scaleboxTitle.attributes.set('data-text', so.title)
+    if (so.title) points[id + 'Title'].attributes.set('data-text', so.title)
     else {
       let name = store.data?.name || 'No Name'
       if (name.indexOf('@freesewing/') !== -1) name = name.replace('@freesewing/', '')
-      points.__scaleboxTitle = points.__scaleboxTitle
+      points[id + 'Title'] = points[id + 'Title']
         .attr('data-text', name)
         .attr('data-text', 'v' + (store.data?.version || 'No Version'))
     }
-    points.__scaleboxTitle.attributes.add('data-text-class', 'text-lg')
+    points[id + 'Title'].attributes.add('data-text-class', 'text-lg')
     // Text
     if (typeof so.text === 'string') {
-      points.__scaleboxText.attr('data-text', so.text)
+      points[id + 'Text'].attr('data-text', so.text)
     } else {
-      points.__scaleboxText.attr('data-text', 'supportFreesewingBecomeAPatron')
-      points.__scaleboxLink = points.__scaleboxLink
+      points[id + 'Text'].attr('data-text', 'supportFreesewingBecomeAPatron')
+      points[id + 'Link'] = points[id + 'Link']
         .attr('data-text', 'freesewing.org/patrons/join')
         .attr('data-text-class', 'text-sm fill-note')
     }
-    points.__scaleboxText.attr('data-text-class', 'text-xs').attr('data-text-lineheight', 4)
+    points[id + 'Text'].attr('data-text-class', 'text-xs').attr('data-text-lineheight', 4)
     // Instructions
-    points.__scaleboxMetric = points.__scaleboxMetric
+    points[id + 'Metric'] = points[id + 'Metric']
       .attr('data-text', 'theWhiteInsideOfThisBoxShouldMeasure')
       .attr('data-text', `${metricDisplayWidth}`)
       .attr('data-text', 'x')
       .attr('data-text', `${metricDisplayHeight}`)
       .attr('data-text-class', 'text-xs center')
-    points.__scaleboxImperial = points.__scaleboxImperial
+    points[id + 'Imperial'] = points[id + 'Imperial']
       .attr('data-text', 'theBlackOutsideOfThisBoxShouldMeasure')
       .attr('data-text', `${imperialDisplayWidth}`)
       .attr('data-text', 'x')
@@ -186,22 +176,21 @@ export const scaleboxMacros = {
       .attr('data-text-class', 'text-xs center ')
   },
   miniscale(so, { points, paths, scale, Point, Path }) {
+    let prefix
+    if (so.id) {
+      prefix = '_' + so.id
+    } else {
+      prefix = ''
+    }
+    const id = prefix + '_miniscale'
     // Passing `false` will remove the miniscale
     if (so === false) {
-      for (const id of [
-        '__miniscaleMetricTopLeft',
-        '__miniscaleMetricTopRight',
-        '__miniscaleMetricBottomRight',
-        '__miniscaleMetricBottomLeft',
-        '__miniscaleImperialTopLeft',
-        '__miniscaleImperialTopRight',
-        '__miniscaleImperialBottomRight',
-        '__miniscaleImperialBottomLeft',
-        '__miniscaleMetric',
-        '__miniscaleImperial',
-      ])
-        delete points[id]
-      for (const id of ['__miniscaleMetric', '__miniscaleImperial']) delete paths[id]
+      for (const pointName in points) {
+        if (pointName.match('_miniscale')) delete points[pointName]
+      }
+      for (const pathName in paths) {
+        if (pathName.match('_miniscale')) delete paths[pathName]
+      }
       return true
     }
 
@@ -222,31 +211,31 @@ export const scaleboxMacros = {
     const metricDisplaySize = sizes[scaleIndex][1]
     const imperialDisplaySize = sizes[scaleIndex][3]
     // Box points
-    points.__miniscaleMetricTopLeft = new Point(so.at.x - m, so.at.y - m)
-    points.__miniscaleMetricTopRight = new Point(so.at.x + m, so.at.y - m)
-    points.__miniscaleMetricBottomLeft = new Point(so.at.x - m, so.at.y + m)
-    points.__miniscaleMetricBottomRight = new Point(so.at.x + m, so.at.y + m)
-    points.__miniscaleImperialTopLeft = new Point(so.at.x - i, so.at.y - i)
-    points.__miniscaleImperialTopRight = new Point(so.at.x + i, so.at.y - i)
-    points.__miniscaleImperialBottomLeft = new Point(so.at.x - i, so.at.y + i)
-    points.__miniscaleImperialBottomRight = new Point(so.at.x + i, so.at.y + i)
+    points[id + 'MetricTopLeft'] = new Point(so.at.x - m, so.at.y - m)
+    points[id + 'MetricTopRight'] = new Point(so.at.x + m, so.at.y - m)
+    points[id + 'MetricBottomLeft'] = new Point(so.at.x - m, so.at.y + m)
+    points[id + 'MetricBottomRight'] = new Point(so.at.x + m, so.at.y + m)
+    points[id + 'ImperialTopLeft'] = new Point(so.at.x - i, so.at.y - i)
+    points[id + 'ImperialTopRight'] = new Point(so.at.x + i, so.at.y - i)
+    points[id + 'ImperialBottomLeft'] = new Point(so.at.x - i, so.at.y + i)
+    points[id + 'ImperialBottomRight'] = new Point(so.at.x + i, so.at.y + i)
     // Text anchor points
-    points.__miniscaleMetric = new Point(so.at.x, so.at.y - 2 * scale)
-    points.__miniscaleImperial = new Point(so.at.x, so.at.y + 8 * scale)
+    points[id + 'Metric'] = new Point(so.at.x, so.at.y - 2 * scale)
+    points[id + 'Imperial'] = new Point(so.at.x, so.at.y + 8 * scale)
     // Rotation
     if (so.rotate) {
       so.rotate = Number(so.rotate)
       let toRotate = [
-        '__miniscaleMetricTopLeft',
-        '__miniscaleMetricTopRight',
-        '__miniscaleMetricBottomLeft',
-        '__miniscaleMetricBottomRight',
-        '__miniscaleImperialTopLeft',
-        '__miniscaleImperialTopRight',
-        '__miniscaleImperialBottomLeft',
-        '__miniscaleImperialBottomRight',
-        '__miniscaleMetric',
-        '__miniscaleImperial',
+        id + 'MetricTopLeft',
+        id + 'MetricTopRight',
+        id + 'MetricBottomLeft',
+        id + 'MetricBottomRight',
+        id + 'ImperialTopLeft',
+        id + 'ImperialTopRight',
+        id + 'ImperialBottomLeft',
+        id + 'ImperialBottomRight',
+        id + 'Metric',
+        id + 'Imperial',
       ]
       for (const pid of toRotate) points[pid] = points[pid].rotate(so.rotate, so.at)
       for (const pid of toRotate.slice(8)) {
@@ -257,25 +246,25 @@ export const scaleboxMacros = {
       }
     }
     // Paths
-    paths.__miniscaleImperial = new Path()
+    paths[id + 'Imperial'] = new Path()
       .attr('class', 'scalebox imperial fill-current')
-      .move(points.__miniscaleImperialTopLeft)
-      .line(points.__miniscaleImperialBottomLeft)
-      .line(points.__miniscaleImperialBottomRight)
-      .line(points.__miniscaleImperialTopRight)
+      .move(points[id + 'ImperialTopLeft'])
+      .line(points[id + 'ImperialBottomLeft'])
+      .line(points[id + 'ImperialBottomRight'])
+      .line(points[id + 'ImperialTopRight'])
       .close()
-    paths.__miniscaleMetric = new Path()
+    paths[id + 'Metric'] = new Path()
       .attr('class', 'scalebox metric fill-bg')
-      .move(points.__miniscaleMetricTopLeft)
-      .line(points.__miniscaleMetricBottomLeft)
-      .line(points.__miniscaleMetricBottomRight)
-      .line(points.__miniscaleMetricTopRight)
+      .move(points[id + 'MetricTopLeft'])
+      .line(points[id + 'MetricBottomLeft'])
+      .line(points[id + 'MetricBottomRight'])
+      .line(points[id + 'MetricTopRight'])
       .close()
     // Text
-    points.__miniscaleMetric = points.__miniscaleMetric
+    points[id + 'Metric'] = points[id + 'Metric']
       .attr('data-text', `${metricDisplaySize} x ${metricDisplaySize}`)
       .attr('data-text-class', 'text-xs center')
-    points.__miniscaleImperial = points.__miniscaleImperial
+    points[id + 'Imperial'] = points[id + 'Imperial']
       .attr('data-text', `${imperialDisplaySize} x ${imperialDisplaySize}`)
       .attr('data-text-class', 'text-xs center ')
   },

@@ -56,6 +56,7 @@ const pluginAnnotations = ({
       from: points.crossbox_a,
       to: points.crossbox_b,
       text: options.crossboxText ? 'crossbox' : false,
+      id: 'id',
     })
     macro('bannerbox', {
       topLeft: points.crossbox_a,
@@ -269,11 +270,12 @@ const pluginAnnotations = ({
     y -= 20
     points.gl_a = new Point(x, y)
     points.gl_b = new Point(x + 90, y)
-    macro('grainline', { from: points.gl_a, to: points.gl_b })
+    macro('grainline', { from: points.gl_a, to: points.gl_b, id: 'id' })
     macro('bannerbox', {
       topLeft: points.gl_a,
       bottomRight: points.gl_b,
       text: 'macro = grainline',
+      id: 'id',
       margin,
       ...store.get('bannerbox.macro'),
     })
@@ -302,6 +304,7 @@ const pluginAnnotations = ({
     macro('miniscale', {
       at: points.miniscale,
       rotate: options.scaleboxRotation,
+      id: 'id',
     })
     macro('bannerbox', {
       topLeft: new Point(303, 133),
@@ -318,6 +321,7 @@ const pluginAnnotations = ({
     const scaleboxOptions = {
       at: points.scalebox,
       rotate: options.scaleboxRotation,
+      id: 'id',
     }
     if (options.scaleboxText === 'custom') scaleboxOptions.text = 'Custom text here'
     else if (options.scaleboxText === 'suppress') scaleboxOptions.text = ''
@@ -391,6 +395,16 @@ const pluginAnnotations = ({
     })
   }
 
+  if (options.false) {
+    macro('cutonfold', false)
+    macro('grainline', false)
+    macro('miniscale', false)
+    macro('pleat', false)
+    macro('scalebox', false)
+    macro('sewtogether', false)
+    macro('title', false)
+  }
+
   return part
 }
 
@@ -420,7 +434,7 @@ export const annotations = {
     dimensionsEndMarker: { bool: true, menu: 'annotations.dimensions' },
     dimensionsStartMarker: { bool: true, menu: 'annotations.dimensions' },
     // Logo
-    logoScale: { pct: 100, min: 10, max: 200, menu: 'annptations.logo' },
+    logoScale: { pct: 100, min: 10, max: 200, menu: 'annotations.logo' },
     logoRotate: { deg: 0, min: -360, max: 360, menu: 'annotations.logo' },
     // Pleat
     pleatMargin: { count: 35, min: 0, max: 50, menu: 'annotations.pleat' },
