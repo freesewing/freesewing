@@ -421,6 +421,7 @@ const pluginAnnotations = ({
   }
 
   if (options.false) {
+    macro('crossbox', false)
     macro('cutonfold', false)
     macro('grainline', false)
     macro('miniscale', false)

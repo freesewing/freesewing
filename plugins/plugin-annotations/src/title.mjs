@@ -44,14 +44,14 @@ const titleMacro = function (so, { points, scale, locale, store, complete }) {
 
   let overwrite = true
   if (so.append) overwrite = false
-  points[id + 'titleNr'] = so.at
+  points[id + 'Nr'] = so.at
     .clone()
     .attr('data-text', so.nr, overwrite)
     .attr('data-text-class', 'text-4xl fill-note font-bold' + alignment)
     .attr('data-text-transform', transform(so.at))
 
   if (so.title) {
-    points[id + 'titleName'] = nextPoint(
+    points[id + 'Name'] = nextPoint(
       so.title,
       'text-lg fill-current font-bold' + alignment
     )
@@ -84,7 +84,7 @@ const titleMacro = function (so, { points, scale, locale, store, complete }) {
         cutPoint.addText('plugin:from').addText('plugin:' + material)
 
         // save and shift
-        points[`_${prefix}_titleCut_${material}_${c}`] = cutPoint
+        points[id + 'Cut'] = cutPoint
         shift += 8
       })
     }
@@ -92,10 +92,10 @@ const titleMacro = function (so, { points, scale, locale, store, complete }) {
 
   let name = store.data?.name || 'No Name'
   name = name.replace('@freesewing/', '')
-  points[id + 'titlePattern'] = nextPoint(name, 'fill-note' + alignment)
+  points[id + 'Pattern'] = nextPoint(name, 'fill-note' + alignment)
   if (store.data.for) {
     shift += 8
-    points[id + 'titleFor'] = nextPoint(
+    points[id + 'For'] = nextPoint(
       `( ${store.data.for} )`,
       'fill-current font-bold' + alignment
     )

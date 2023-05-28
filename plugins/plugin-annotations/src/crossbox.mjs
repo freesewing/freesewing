@@ -1,57 +1,78 @@
 // Export macros
 export const crossboxMacros = {
-  crossbox: function (so, { points, Point, paths, Path, getId, complete }) {
+  crossbox: function (so, { points, Point, paths, Path, complete }) {
+    let prefix
+    if (so.id) {
+      prefix = '_' + so.id
+    } else {
+      prefix = ''
+    }
+    const id = prefix + '_crossbox'
+
+    if (so === false) {
+      for (const pointName in points) {
+        if (pointName.match('_crossbox')) delete points[pointName]
+      }
+      for (const pathName in paths) {
+        if (pathName.match('_crossbox')) delete paths[pathName]
+      }
+      // setCutonfold relies on plugin-cutlist
+      if (typeof setCutonfold === 'function') {
+        setCutonfold(false) // Restore default
+      }
+      return true
+    }
+
     so = {
       detail: true,
       ...so,
     }
 
     if ((complete && so.detail) || !so.detail) {
-      let id = getId()
       let shiftFraction = 0.1
-      points[id + '_boxTopLeft'] = so.from.copy()
-      points[id + '_boxBottomRight'] = so.to.copy()
-      points[id + '_boxTopRight'] = new Point(so.to.x, so.from.y)
-      points[id + '_boxBottomLeft'] = new Point(so.from.x, so.to.y)
+      points[id + 'TopLeft'] = so.from.copy()
+      points[id + 'BottomRight'] = so.to.copy()
+      points[id + 'TopRight'] = new Point(so.to.x, so.from.y)
+      points[id + 'BottomLeft'] = new Point(so.from.x, so.to.y)
 
-      points[id + '_topCrossTL'] = points[id + '_boxTopLeft'].shiftFractionTowards(
-        points[id + '_boxBottomRight'],
+      points[id + 'TopCrossTL'] = points[id + 'TopLeft'].shiftFractionTowards(
+        points[id + 'BottomRight'],
         shiftFraction
       )
-      points[id + '_topCrossTR'] = points[id + '_boxTopRight'].shiftFractionTowards(
-        points[id + '_boxBottomLeft'],
+      points[id + 'TopCrossTR'] = points[id + 'TopRight'].shiftFractionTowards(
+        points[id + 'BottomLeft'],
         shiftFraction
       )
-      points[id + '_topCrossBL'] = points[id + '_boxBottomLeft'].shiftFractionTowards(
-        points[id + '_boxTopRight'],
+      points[id + 'TopCrossBL'] = points[id + 'BottomLeft'].shiftFractionTowards(
+        points[id + 'TopRight'],
         shiftFraction
       )
-      points[id + '_topCrossBR'] = points[id + '_boxBottomRight'].shiftFractionTowards(
-        points[id + '_boxTopLeft'],
+      points[id + 'TopCrossBR'] = points[id + 'BottomRight'].shiftFractionTowards(
+        points[id + 'TopLeft'],
         shiftFraction
       )
 
-      paths[id + 'crossBox'] = new Path()
-        .move(points[id + '_boxTopLeft'])
-        .line(points[id + '_boxTopRight'])
-        .line(points[id + '_boxBottomRight'])
-        .line(points[id + '_boxBottomLeft'])
-        .line(points[id + '_boxTopLeft'])
+      paths[id] = new Path()
+        .move(points[id + 'TopLeft'])
+        .line(points[id + 'TopRight'])
+        .line(points[id + 'BottomRight'])
+        .line(points[id + 'BottomLeft'])
+        .line(points[id + 'TopLeft'])
         .close()
         .attr('class', 'lining dotted stroke-sm')
-      paths[id + '_topCross'] = new Path()
-        .move(points[id + '_topCrossTL'])
-        .line(points[id + '_topCrossBR'])
-        .line(points[id + '_topCrossTR'])
-        .line(points[id + '_topCrossBL'])
-        .line(points[id + '_topCrossTL'])
-        .line(points[id + '_topCrossTR'])
-        .move(points[id + '_topCrossBR'])
-        .line(points[id + '_topCrossBL'])
+      paths[id + 'TopCross'] = new Path()
+        .move(points[id + 'TopCrossTL'])
+        .line(points[id + 'TopCrossBR'])
+        .line(points[id + 'TopCrossTR'])
+        .line(points[id + 'TopCrossBL'])
+        .line(points[id + 'TopCrossTL'])
+        .line(points[id + 'TopCrossTR'])
+        .move(points[id + 'TopCrossBR'])
+        .line(points[id + 'TopCrossBL'])
         .attr('class', 'lining dotted stroke-sm')
       if (typeof so.text === 'string') {
-        points.textAnchor = points[id + '_boxTopLeft']
-          .shiftFractionTowards(points[id + '_boxBottomRight'], 0.5)
+        points[id + 'textAnchor'] = points[id + 'TopLeft']
+          .shiftFractionTowards(points[id + 'BottomRight'], 0.5)
           .attr('data-text', so.text)
           .attr('data-text-class', 'center')
       }
