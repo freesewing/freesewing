@@ -13,7 +13,14 @@ export const pleatDefs = [
 // Export macros
 export const pleatMacros = {
   pleat: function (so, { points, paths, Path, complete, scale }) {
-    const prefix = (so.prefix || '') + '_pleat'
+    let prefix
+    if (so.id) {
+      prefix = '_' + so.id
+    } else {
+      prefix = ''
+    }
+
+    const id = prefix + '_pleat'
 
     if (so === false) {
       for (const pointName in points) {
@@ -31,34 +38,34 @@ export const pleatMacros = {
     }
 
     if (complete) {
-      points[prefix + 'From'] = so.from
-      points[prefix + 'To'] = so.to
-      points[prefix + 'FromIn'] = points[prefix + 'From'].shift(
+      points[id + 'From'] = so.from
+      points[id + 'To'] = so.to
+      points[id + 'FromIn'] = points[id + 'From'].shift(
         so.from.shiftTowards(so.to, 0.1).angle(so.from) + 270,
         so.margin * scale
       )
-      points[prefix + 'ToIn'] = points[prefix + 'To'].shift(
+      points[id + 'ToIn'] = points[id + 'To'].shift(
         so.from.shiftTowards(so.to, 0.1).angle(so.to) + 90,
         so.margin * scale
       )
-      paths[prefix + 'PleatFrom'] = new Path()
-        .move(points[prefix + 'From'])
-        .line(points[prefix + 'FromIn'])
+      paths[id + 'PleatFrom'] = new Path()
+        .move(points[id + 'From'])
+        .line(points[id + 'FromIn'])
         .attr('class', 'note' + (so.reverse ? ' dashed' : ''))
-      paths[prefix + 'PleatTo'] = new Path()
-        .move(points[prefix + 'To'])
-        .line(points[prefix + 'ToIn'])
+      paths[id + 'PleatTo'] = new Path()
+        .move(points[id + 'To'])
+        .line(points[id + 'ToIn'])
         .attr('class', 'note' + (so.reverse ? '' : ' dashed'))
-      paths[prefix + 'PleatArrow'] = new Path()
+      paths[id + 'PleatArrow'] = new Path()
         .move(
-          points[prefix + (so.reverse ? 'To' : 'From')].shiftFractionTowards(
-            points[prefix + (so.reverse ? 'ToIn' : 'FromIn')],
+          points[id + (so.reverse ? 'To' : 'From')].shiftFractionTowards(
+            points[id + (so.reverse ? 'ToIn' : 'FromIn')],
             0.25
           )
         )
         .line(
-          points[prefix + (so.reverse ? 'From' : 'To')].shiftFractionTowards(
-            points[prefix + (so.reverse ? 'FromIn' : 'ToIn')],
+          points[id + (so.reverse ? 'From' : 'To')].shiftFractionTowards(
+            points[id + (so.reverse ? 'FromIn' : 'ToIn')],
             0.25
           )
         )

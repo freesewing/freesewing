@@ -147,6 +147,7 @@ const pluginAnnotations = ({
       margin: options.cutonfoldMargin,
       offset: options.cutonfoldOffset,
       grainline: options.cutonfoldGrainline,
+      id: 'id',
     })
     macro('bannerbox', {
       topLeft: points.cof_a.shift(90, 10),
@@ -286,6 +287,7 @@ const pluginAnnotations = ({
       to: points.pleat_b,
       margin: options.pleatMargin,
       reverse: options.pleatReverse,
+      id: 'id',
     })
     macro('bannerbox', {
       topLeft: points.pleat_a.shift(-90, 5),
@@ -339,6 +341,7 @@ const pluginAnnotations = ({
       to: points.st_c,
       hinge: options.sewtogetherHinge,
       middle: options.sewtogetherMiddle ? points.st_b : null,
+      id: 'id',
     })
     macro('bannerbox', {
       topLeft: new Point(x, y - 30),
@@ -356,7 +359,7 @@ const pluginAnnotations = ({
       at: points.title,
       nr: options.titleNr,
       title: options.titleTitle ? 'Title here' : false,
-      prefix: 'prefix',
+      id: 'id',
       rotation: options.titleRotate,
       scale: options.titleScale,
     })

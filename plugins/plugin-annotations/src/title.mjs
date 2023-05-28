@@ -1,5 +1,13 @@
 const titleMacro = function (so, { points, scale, locale, store }) {
-  const prefix = (so.prefix || '') + '_title'
+  let prefix
+  if (so.id) {
+    prefix = '_' + so.id
+  } else {
+    prefix = ''
+  }
+
+  const id = prefix + '_title'
+
   // Passing `false` will remove the title
   if (so === false) {
     for (const pointName in points) {
@@ -34,14 +42,14 @@ const titleMacro = function (so, { points, scale, locale, store }) {
 
   let overwrite = true
   if (so.append) overwrite = false
-  points[prefix + 'titleNr'] = so.at
+  points[id + 'titleNr'] = so.at
     .clone()
     .attr('data-text', so.nr, overwrite)
     .attr('data-text-class', 'text-4xl fill-note font-bold' + alignment)
     .attr('data-text-transform', transform(so.at))
 
   if (so.title) {
-    points[prefix + 'titleName'] = nextPoint(
+    points[id + 'titleName'] = nextPoint(
       so.title,
       'text-lg fill-current font-bold' + alignment
     )
@@ -82,10 +90,10 @@ const titleMacro = function (so, { points, scale, locale, store }) {
 
   let name = store.data?.name || 'No Name'
   name = name.replace('@freesewing/', '')
-  points[prefix + 'titlePattern'] = nextPoint(name, 'fill-note' + alignment)
+  points[id + 'titlePattern'] = nextPoint(name, 'fill-note' + alignment)
   if (store.data.for) {
     shift += 8
-    points[prefix + 'titleFor'] = nextPoint(
+    points[id + 'titleFor'] = nextPoint(
       `( ${store.data.for} )`,
       'fill-current font-bold' + alignment
     )
@@ -102,7 +110,7 @@ const titleMacro = function (so, { points, scale, locale, store }) {
     month: 'short',
     day: 'numeric',
   })
-  points[prefix + 'ExportDate'] = nextPoint(
+  points[id + 'ExportDate'] = nextPoint(
     `${exportDate}@ ${hours}:${mins}`,
     'text-sm' + alignment
   )
