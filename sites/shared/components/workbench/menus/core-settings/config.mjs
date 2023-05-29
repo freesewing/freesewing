@@ -1,3 +1,10 @@
+import { measurementAsMm } from 'shared/utils.mjs'
+
+export const defaultSamm = (units, inMm = true) => {
+  const dflt = units === 'metric' ? 1 : 0.5
+  return inMm ? measurementAsMm(dflt, units) : dflt
+}
+
 export const loadSettingsConfig = ({
   language = 'en',
   units = 'metric',
@@ -22,9 +29,9 @@ export const loadSettingsConfig = ({
     ? {
         control: 2, // Show when control > 1
         min: 0,
-        max: 25,
-        dflt: 10,
-        step: 0.1,
+        max: units === 'metric' ? 2.5 : 2,
+        dflt: defaultSamm(units, false),
+        step: units === 'metric' ? 0.1 : 0.125,
       }
     : false,
   paperless: {
@@ -62,7 +69,7 @@ export const loadSettingsConfig = ({
     emoji: '🇺🇳',
   },
   units: {
-    control: 3, // Show when control > 2
+    control: 1, // Show when control > 2
     list: ['metric', 'imperial'],
     dflt: units,
     choiceTitles: {
@@ -106,9 +113,9 @@ export const loadSettingsConfig = ({
   margin: {
     control: 4, // Show when control > 3
     min: 0,
-    max: 25,
-    dflt: 2,
-    step: 1,
+    max: units === 'metric' ? 2.5 : 2.5,
+    dflt: units === 'metric' ? 0.2 : 0.125,
+    step: units === 'metric' ? 0.1 : 0.125,
     emoji: '🔲',
   },
 })

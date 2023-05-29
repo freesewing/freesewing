@@ -24,7 +24,7 @@ export const useDocsLoader = (DynamicDocs, getDocsPath, language) => {
 }
 
 export const WorkbenchMenu = ({
-  updater,
+  updateFunc,
   updatePath = [],
   ns,
   Icon,
@@ -40,8 +40,7 @@ export const WorkbenchMenu = ({
   language,
   children,
 }) => {
-  // FIXME: Update this namespace
-  const { t } = useTranslation(ns)
+  const { t, i18n } = useTranslation(ns)
 
   const loadDocs = useDocsLoader(DynamicDocs, getDocsPath, language)
 
@@ -81,7 +80,7 @@ export const WorkbenchMenu = ({
                 name,
                 config: config[name],
                 current: currentValues[name],
-                updater,
+                updateFunc,
                 updatePath,
                 t,
                 passProps,
@@ -89,6 +88,7 @@ export const WorkbenchMenu = ({
                 loadDocs,
                 Input: inputs[name],
                 Value: values[name],
+                i18n: i18n,
               }}
             />
           ))}

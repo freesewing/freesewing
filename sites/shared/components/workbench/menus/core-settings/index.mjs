@@ -4,7 +4,7 @@ import { useTranslation } from 'next-i18next'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
 //Dependencies
-import { loadSettingsConfig } from './config.mjs'
+import { loadSettingsConfig, defaultSamm } from './config.mjs'
 // Components
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { SettingsIcon, ClearIcon, HelpIcon } from 'shared/components/icons.mjs'
@@ -78,17 +78,17 @@ export const CoreSettings = ({
 
   const settingsConfig = loadSettingsConfig({
     language,
-    control: account.control,
+    units: settings.units,
     sabool: settings.sabool,
     parts: patternConfig.draftOrder,
   })
   // Default control level is 2 (in case people are not logged in)
-  const control = account.control || 2
+  const control = account.control || 5
 
   return (
     <WorkbenchMenu
       {...{
-        updater: update.settings,
+        updateFunc: update.settings,
         ns,
         Icon: SettingsIcon,
         name: 'coreSettings',
@@ -98,7 +98,7 @@ export const CoreSettings = ({
         values,
         currentValues: settings,
         passProps: {
-          samm: typeof settings.samm === 'undefined' ? settingsConfig.samm.dflt : settings.samm,
+          samm: typeof settings.samm === 'undefined' ? defaultSamm(settings.units) : settings.samm,
           units: settings.units,
         },
         language,

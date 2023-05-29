@@ -103,7 +103,7 @@ export const DesignOption = ({
         name,
         config,
         current,
-        updater: update.settings,
+        updateFunc: update.settings,
         updatePath: ['options'],
         t,
         changed,
@@ -111,6 +111,7 @@ export const DesignOption = ({
         Input,
         Value,
         allowOverride,
+        passProps: { settings },
       }}
     />
   )
@@ -183,7 +184,7 @@ export const DesignOptions = ({
     <WorkbenchMenu
       {...{
         name: 'design-options:designOptions',
-        updater: update.settings,
+        updateFunc: update.settings,
         ns: menuNs,
         Icon: OptionsIcon,
         inputs,
@@ -196,7 +197,7 @@ export const DesignOptions = ({
     >
       <MenuItemGroup
         {...{
-          wrapped: false,
+          collapsible: false,
           groupConfig: patternConfig.options,
           currents: settings.options,
           items: optionsMenu,

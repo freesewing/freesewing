@@ -1,6 +1,6 @@
 import { ClearIcon, HelpIcon, EditIcon } from 'shared/components/icons.mjs'
 import { Collapse } from 'shared/components/collapse.mjs'
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 
 export const wasChanged = (current, name, settingsConfig) => {
   if (typeof current === 'undefined') return false
@@ -26,7 +26,7 @@ export const MenuItem = ({
   name,
   config,
   current,
-  updater,
+  updateFunc,
   updatePath = [],
   t,
   passProps = {},
@@ -37,17 +37,23 @@ export const MenuItem = ({
   allowOverride = false,
 }) => {
   const [override, setOverride] = useState(false)
-  const drillProps = {
-    name,
-    config,
-    current,
-    updater,
-    t,
-    changed,
-    updatePath,
-    override,
-    ...passProps,
-  }
+  const [reset, setReset] = useState(() => () => updateFunc([...updatePath, name]))
+
+  const drillProps = useMemo(
+    () => ({
+      name,
+      config,
+      current,
+      updateFunc,
+      t,
+      changed,
+      updatePath,
+      override,
+      setReset,
+      ...passProps,
+    }),
+    [name, config, current, updateFunc, t, changed, updatePath, override, setReset, passProps]
+  )
 
   const buttons = []
   const openButtons = []
@@ -81,7 +87,7 @@ export const MenuItem = ({
         key="clear"
         onClick={(evt) => {
           evt.stopPropagation()
-          updater([...updatePath, name], config.dflt)
+          reset()
         }}
       >
         <ClearIcon />
@@ -93,7 +99,7 @@ export const MenuItem = ({
         key="clear"
         onClick={(evt) => {
           evt.stopPropagation()
-          updater([...updatePath, name], config.dflt)
+          reset()
         }}
       >
         <ClearIcon />
@@ -117,7 +123,7 @@ export const MenuItem = ({
 }
 
 export const MenuItemGroup = ({
-  wrapped = true,
+  collapsible = true,
   name,
   groupConfig,
   currents = {},
@@ -149,7 +155,7 @@ export const MenuItemGroup = ({
       <MenuItemGroup
         key={itemName}
         {...{
-          wrapped: true,
+          collapsible: true,
           name: itemName,
           groupConfig,
           currents,
@@ -164,7 +170,7 @@ export const MenuItemGroup = ({
     )
   })
 
-  return wrapped ? (
+  return collapsible ? (
     <Collapse
       bottom
       color="secondary"
@@ -177,7 +183,16 @@ export const MenuItemGroup = ({
           }}
         />
       }
-      openTitle={t(name)}
+      openTitle={
+        <ItemTitle
+          open
+          {...{
+            name,
+            t,
+            emoji: emojis[name] || emojis.dflt,
+          }}
+        />
+      }
     >
       {content}
     </Collapse>
