@@ -21,10 +21,10 @@ export const roundMm = (val, units) => {
 // Formatting for imperial values
 export const formatImperial = (neg, inch, numo = false, deno = false, format = 'html') => {
   if (format === 'html') {
-    if (numo) return `${neg}${inch}"&nbsp;<sup>${numo}</sup>/<sub>${deno}</sub>`
+    if (numo) return `${neg}${inch}&nbsp;<sup>${numo}</sup>/<sub>${deno}</sub>"`
     else return `${neg}${inch}"`
   } else if (format === 'notags') {
-    if (numo) return `${neg}${inch}" ${numo}/${deno}`
+    if (numo) return `${neg}${inch} ${numo}/${deno}"`
     else return `${neg}${inch}"`
   } else {
     if (numo) return `${neg}${inch} ${numo}/${deno}`
@@ -54,7 +54,7 @@ export const formatFraction128 = (fraction, format = 'html') => {
     rest = fraction - inches
   }
   let fraction128 = Math.round(rest * 128)
-  if (fraction128 == 0) return formatImperial(negative, inches, false, false, format)
+  if (fraction128 == 0) return formatImperial(negative, 0, false, false, format)
 
   for (let i = 1; i < 7; i++) {
     const numoFactor = Math.pow(2, 7 - i)
@@ -148,6 +148,9 @@ export const getCrumbs = (app, slug = false) => {
 
   return crumbs
 }
+
+export const measurementAsUnits = (mmValue, units = 'metric') =>
+  mmValue / (units === 'imperial' ? 25.4 : 10)
 
 export const measurementAsMm = (value, units = 'metric') => {
   if (typeof value === 'number') return value * (units === 'imperial' ? 25.4 : 10)

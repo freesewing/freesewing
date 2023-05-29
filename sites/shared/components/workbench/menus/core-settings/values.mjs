@@ -1,34 +1,20 @@
-import { formatMm } from 'shared/utils.mjs'
+import { ListValue, MmValue, PlainValue, HighlightedValue } from '../shared/values'
 
-const ListValue = ({ current, t, config, changed }) =>
-  changed
-    ? t(`core-settings:${config.valueTitles[current]}`)
-    : t(`core-settings:${config.valueTitles[config.dflt]}`)
-
+export const RendererSettingValue = ListValue
 export const LocaleSettingValue = ListValue
 export const CompleteSettingValue = ListValue
 export const PaperlessSettingValue = ListValue
 export const SaBoolSettingValue = ListValue
+export const UnitsSettingValue = ListValue
 
-export const MarginSettingValue = ({ current, units, config }) => (
-  <span
-    dangerouslySetInnerHTML={{
-      __html: formatMm(typeof current === 'undefined' ? config.dflt : current, units),
-    }}
-  />
+export const MarginSettingValue = MmValue
+export const SaMmSettingValue = MmValue
+
+export const ScaleSettingValue = PlainValue
+
+export const OnlySettingValue = ({ current, config }) => (
+  <HighlightedValue changed={current !== undefined}>
+    {' '}
+    {current ? current.length : config.parts.length}{' '}
+  </HighlightedValue>
 )
-
-export const OnlySettingValue = ({ current, config }) =>
-  current ? current.length : config.parts.length
-
-export const SaMmSettingValue = ({ current, units, config }) => (
-  <span
-    dangerouslySetInnerHTML={{
-      __html: formatMm(typeof current === 'undefined' ? config.dflt : current, units),
-    }}
-  />
-)
-
-export const ScaleSettingValue = ({ current, config }) => (current ? current : config.dflt)
-
-export const UnitsSettingValue = ({ current, t }) => t(`core-settings:${current}`)

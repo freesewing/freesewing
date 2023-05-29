@@ -1,53 +1,40 @@
 import { formatMm, formatPercentage } from 'shared/utils.mjs'
-
-export const PctOptionValue = ({ name, config, current, settings }) => {
+import { ListValue, HighlightedValue, PlainValue } from '../shared/values'
+export const PctOptionValue = ({ name, config, current, settings, changed }) => {
   const val = typeof current === 'undefined' ? config.pct / 100 : current
 
   return (
-    <span className={val === config.pct / 100 ? 'text-secondary-focus' : 'text-accent'}>
+    <HighlightedValue changed={changed}>
       {formatPercentage(val)}
       {config.toAbs && settings.measurements ? ` | ${formatMm(config.toAbs(val, settings))}` : null}
-    </span>
+    </HighlightedValue>
   )
 }
 
-export const BoolOptionValue = ({ name, config, current, t }) => {
-  const dflt = config.bool
-  current = current === undefined ? dflt : current
-  return (
-    <span
-      className={
-        dflt == current || typeof current === 'undefined' ? 'text-secondary-focus' : 'text-accent'
-      }
-    >
-      {current ? t('yes') : t('no')}
-    </span>
-  )
-}
+export const BoolOptionValue = ({ name, config, current, t, changed }) => (
+  <ListValue
+    {...{
+      current: current === undefined ? current : Number(current),
+      t,
+      config: { ...config, dflt: Number(config.bool) },
+      changed,
+    }}
+  />
+)
 
-export const CountOptionValue = ({ name, config, current }) =>
-  config.count == current || typeof current === 'undefined' ? (
-    <span className="text-secondary-focus">{config.count}</span>
-  ) : (
-    <span className="text-accent">{current}</span>
-  )
+export const CountOptionValue = ({ config, current, changed }) => (
+  <PlainValue {...{ current, changed, config: { ...config, dflt: config.count } }} />
+)
 
-export const ListOptionValue = ({ name, config, current, t }) => {
+export const ListOptionValue = ({ name, config, current, t, changed }) => {
   const translate = config.doNotTranslate ? (input) => input : (input) => t(`${name}.o.${input}`)
-
-  return config.dflt == current || typeof current === 'undefined' ? (
-    <span className="text-secondary-focus">{translate(config.dflt)}</span>
-  ) : (
-    <span className="text-accent">{translate(current)}</span>
-  )
+  const value = translate(changed ? current : config.dflt)
+  return <HighlightedValue changed={changed}> {value} </HighlightedValue>
 }
 
-export const DegOptionValue = ({ name, config, current }) =>
-  config.deg == current || typeof current === 'undefined' ? (
-    <span className="text-secondary-focus">{config.deg}&deg;</span>
-  ) : (
-    <span className="text-accent">{current}&deg;</span>
-  )
+export const DegOptionValue = ({ config, current, changed }) => (
+  <HighlightedValue changed={changed}> {changed ? current : config.deg}&deg;</HighlightedValue>
+)
 
 export const MmOptionValue = () => (
   <span className="text-error">FIXME: No MmOptionvalue implemented</span>
