@@ -39,7 +39,7 @@ const inputs = {
   count: SliderInput,
   deg: DegInput,
   list: ListInput,
-  mm: MmInput,
+  mm: () => <span>FIXME: Mm options are deprecated. Please report this </span>,
   pct: PctInput,
 }
 
@@ -68,7 +68,7 @@ export const DesignOption = ({
   current,
   config,
   settings,
-  update,
+  updateFunc,
   t,
   loadDocs,
   changed = false,
@@ -81,30 +81,13 @@ export const DesignOption = ({
   // Hide option?
   if (config?.hide || (typeof config?.hide === 'function' && config.hide(settings))) return null
 
-  if (type === 'bool') {
-    config = {
-      ...config,
-      list: [0, 1],
-      choiceTitles: {
-        0: `${name}No`,
-        1: `${name}Yes`,
-      },
-      valueTitles: {
-        0: 'no',
-        1: 'yes',
-      },
-      dflt: config.dflt ? 1 : 0,
-    }
-  }
-
   return (
     <MenuItem
       {...{
         name,
         config,
         current,
-        updateFunc: update.settings,
-        updatePath: ['options'],
+        updateFunc,
         t,
         changed,
         loadDocs,
@@ -116,53 +99,6 @@ export const DesignOption = ({
     />
   )
 }
-
-export const DesignOptionGroup = ({
-  design,
-  patternConfig,
-  settings,
-  update,
-  group,
-  options,
-  t,
-  loadDocs,
-}) => (
-  <Collapse
-    bottom
-    color="secondary"
-    title={
-      <ItemTitle
-        {...{
-          name: group,
-          t,
-          emoji: emojis[group] ? emojis[group] : emojis.groupDflt,
-        }}
-      />
-    }
-    openTitle={t(group)}
-  >
-    {Object.entries(options).map(([option, type]) =>
-      typeof type === 'string' ? (
-        <DesignOption
-          {...{ t, design, update, settings, loadDocs }}
-          key={option}
-          name={option}
-          settings={settings}
-          current={settings.options?.[option]}
-          config={patternConfig.options[option]}
-          changed={wasChanged(settings.options?.[option], option, patternConfig.options)}
-        />
-      ) : (
-        <DesignOptionGroup
-          {...{ design, patternConfig, settings, update, Option, t, loadDocs }}
-          group={option}
-          options={type}
-          key={option}
-        />
-      )
-    )}
-  </Collapse>
-)
 
 export const DesignOptions = ({
   design,
@@ -183,31 +119,19 @@ export const DesignOptions = ({
   return (
     <WorkbenchMenu
       {...{
-        name: 'design-options:designOptions',
-        updateFunc: update.settings,
-        ns: menuNs,
-        Icon: OptionsIcon,
-        inputs,
-        values,
+        config: optionsMenu,
         currentValues: settings.options,
-        language,
         DynamicDocs,
+        emojis,
         getDocsPath,
+        Icon: OptionsIcon,
+        Item: DesignOption,
+        name: 'design-options:designOptions',
+        language,
+        ns: menuNs,
+        passProps: { settings },
+        updateFunc: (name, value) => update.settings(['options', name], value),
       }}
-    >
-      <MenuItemGroup
-        {...{
-          collapsible: false,
-          groupConfig: patternConfig.options,
-          currents: settings.options,
-          items: optionsMenu,
-          Item: DesignOption,
-          loadDocs,
-          itemProps: { design, update, settings },
-          emojis,
-          t,
-        }}
-      />
-    </WorkbenchMenu>
+    />
   )
 }

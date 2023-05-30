@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { Collapse } from 'shared/components/collapse.mjs'
-import { MenuItem, wasChanged } from './menu-item.mjs'
+import { MenuItemGroup, wasChanged } from './menu-item.mjs'
 import { useTranslation } from 'next-i18next'
 import { HelpIcon } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
@@ -25,7 +25,6 @@ export const useDocsLoader = (DynamicDocs, getDocsPath, language) => {
 
 export const WorkbenchMenu = ({
   updateFunc,
-  updatePath = [],
   ns,
   Icon,
   name,
@@ -38,6 +37,8 @@ export const WorkbenchMenu = ({
   DynamicDocs = false,
   getDocsPath = () => {},
   language,
+  emojis,
+  Item,
   children,
 }) => {
   const { t, i18n } = useTranslation(ns)
@@ -69,29 +70,24 @@ export const WorkbenchMenu = ({
       openTitle={t(`${name}.t`)}
       openButtons={openButtons}
     >
-      <p>{t('core-settings:coreSettings.d')}</p>
-      {children ||
-        Object.keys(config)
-          .filter((name) => config[name].control <= control)
-          .map((name) => (
-            <MenuItem
-              key={name}
-              {...{
-                name,
-                config: config[name],
-                current: currentValues[name],
-                updateFunc,
-                updatePath,
-                t,
-                passProps,
-                changed: wasChanged(currentValues[name], name, config),
-                loadDocs,
-                Input: inputs[name],
-                Value: values[name],
-                i18n: i18n,
-              }}
-            />
-          ))}
+      {children || (
+        <MenuItemGroup
+          {...{
+            collapsible: false,
+            control,
+            currentValues,
+            structure: config,
+            Item,
+            values,
+            inputs,
+            loadDocs,
+            passProps,
+            updateFunc,
+            emojis,
+            t,
+          }}
+        />
+      )}
     </Collapse>
   )
 }

@@ -12,46 +12,26 @@ export const PaperlessSettingInput = ListInput
 
 export const MarginSettingInput = MmInput
 export const ScaleSettingInput = SliderInput
-export const OnlySettingInput = ({ name, config, current, updateFunc, t, draftOrder, design }) => {
-  const partNames = config.parts.map((part) => ({
-    id: part,
-    t: t(`${design}:${part}.t`),
-    d: t(`${design}:${part}.d`),
-  }))
+export const OnlySettingInput = (props) => {
+  props.config.choiceTitles = {}
+  props.config.list.forEach((p) => (props.config.choiceTitles[p] = p))
 
-  const togglePart = (part) => {
-    const parts = current || []
-    const newParts = new Set(parts)
-    if (newParts.has(part)) newParts.delete(part)
-    else newParts.add(part)
-    if (newParts.size < 1) reset()
-    else updateFunc(['only'], [...newParts])
-  }
+  const onlyUpdateFunc = useCallback(
+    (path, part) => {
+      if (part === undefined) return props.updateFunc(path, part)
 
-  const reset = () => {
-    updateFunc(['only'])
-  }
+      let newParts = new Set(props.current || [])
+      if (newParts.has(part)) newParts.delete(part)
+      else newParts.add(part)
+      if (newParts.size < 1) newParts = undefined
+      else newParts = [...newParts]
 
-  return (
-    <>
-      <p>{t(`core-settings:only.d`)}</p>
-      {orderBy(partNames, ['name'], ['asc']).map((part) => {
-        const included = Array.isArray(current) ? (current.includes(part.id) ? true : false) : true
-
-        return (
-          <ChoiceButton
-            key={part.id}
-            title={part.t}
-            color={included ? 'secondary' : 'accent'}
-            active={included}
-            onClick={() => togglePart(part.id)}
-          >
-            {part.d}
-          </ChoiceButton>
-        )
-      })}
-    </>
+      props.updateFunc(path, newParts)
+    },
+    [props.updateFunc, props.current]
   )
+
+  return <ListInput {...props} updateFunc={onlyUpdateFunc} />
 }
 
 export const SaMmSettingInput = (props) => {

@@ -99,6 +99,7 @@ export const loadSettingsConfig = ({
   only: {
     control: 4, // Show when control > 3
     dflt: false,
+    list: parts,
     parts,
     emoji: '🛍️',
   },

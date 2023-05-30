@@ -1,7 +1,7 @@
 import { formatMm, formatPercentage } from 'shared/utils.mjs'
 import { ListValue, HighlightedValue, PlainValue } from '../shared/values'
 export const PctOptionValue = ({ name, config, current, settings, changed }) => {
-  const val = typeof current === 'undefined' ? config.pct / 100 : current
+  const val = changed ? current : config.pct / 100
 
   return (
     <HighlightedValue changed={changed}>
@@ -23,7 +23,7 @@ export const BoolOptionValue = ({ name, config, current, t, changed }) => (
 )
 
 export const CountOptionValue = ({ config, current, changed }) => (
-  <PlainValue {...{ current, changed, config: { ...config, dflt: config.count } }} />
+  <PlainValue {...{ current, changed, dflt: config.count }} />
 )
 
 export const ListOptionValue = ({ name, config, current, t, changed }) => {

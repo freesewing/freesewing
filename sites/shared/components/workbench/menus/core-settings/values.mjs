@@ -1,4 +1,4 @@
-import { ListValue, MmValue, PlainValue, HighlightedValue } from '../shared/values'
+import { ListValue, MmValue, PlainValue } from '../shared/values'
 
 export const RendererSettingValue = ListValue
 export const LocaleSettingValue = ListValue
@@ -10,11 +10,14 @@ export const UnitsSettingValue = ListValue
 export const MarginSettingValue = MmValue
 export const SaMmSettingValue = MmValue
 
-export const ScaleSettingValue = PlainValue
+export const ScaleSettingValue = ({ current, config, changed }) => (
+  <PlainValue current={current} dflt={config.dflt} changed={changed} />
+)
 
 export const OnlySettingValue = ({ current, config }) => (
-  <HighlightedValue changed={current !== undefined}>
-    {' '}
-    {current ? current.length : config.parts.length}{' '}
-  </HighlightedValue>
+  <PlainValue
+    current={current?.length}
+    dflt={config.parts.length}
+    changed={current !== undefined}
+  />
 )
