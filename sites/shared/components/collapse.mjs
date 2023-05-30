@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { CloseIcon } from 'shared/components/icons.mjs'
+import Link from 'next/link'
 
 const OpenTitleButton = ({ title, toggle, color = 'primary', openButtons = [] }) => (
   <div
@@ -32,6 +33,7 @@ export const Collapse = ({
   toggleIcon = '',
   onClick = false,
   openButtons = null,
+  className = '',
 }) => {
   const [open, setOpen] = useState(opened)
 
@@ -50,7 +52,7 @@ export const Collapse = ({
       {bottom ? titleBtn : null}
     </div>
   ) : (
-    <div className={`flex flex-row gap-2 my-4 items-center`}>
+    <div className={`flex flex-row gap-2 my-4 items-center ${className}`}>
       <div
         className={`shadow border-solid border-l-[6px] border-r-0 border-t-0 border-b-0 border-${color} min-h-12
             grow flex flex-row gap-4 py-1 px-4 items-center justify-start hover:cursor-pointer hover:bg-${color} hover:bg-opacity-20`}
@@ -68,6 +70,24 @@ export const Collapse = ({
     </div>
   )
 }
+
+export const MimicCollapseLink = ({
+  title,
+  buttons = [],
+  color = 'primary',
+  href = '/',
+  className = '',
+}) => (
+  <Link className={`flex flex-row gap-2 my-4 items-center ${className}`} href={href}>
+    <div
+      className={`shadow border-solid border-l-[6px] border-r-0 border-t-0 border-b-0 border-${color} min-h-12
+          grow flex flex-row gap-4 py-1 px-4 items-center justify-start hover:cursor-pointer hover:bg-${color} hover:bg-opacity-20`}
+    >
+      {title}
+    </div>
+    {buttons}
+  </Link>
+)
 
 export const useCollapseButton = (props) => {
   // Shared state

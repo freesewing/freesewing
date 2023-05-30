@@ -224,6 +224,11 @@ export function useBackend(token = false) {
   }
 
   /*
+   * Get pattern
+   */
+  backend.getPattern = async (id) => responseHandler(await api.get(`/patterns/${id}/jwt`, auth))
+
+  /*
    * Get patterns
    */
   backend.getPatterns = async () => responseHandler(await api.get(`/patterns/jwt`, auth))
@@ -248,6 +253,11 @@ export function useBackend(token = false) {
    */
   backend.updatePattern = async (id, data) =>
     responseHandler(await api.patch(`/patterns/${id}/jwt`, data, auth))
+
+  /*
+   * Create GitHub issue
+   */
+  backend.createIssue = async (data) => responseHandler(await api.post(`/issues`, data), 201)
 
   return backend
 }

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { CloseIcon } from 'shared/components/icons.mjs'
+import { useTranslation } from 'next-i18next'
 
 const colors = {
   comment: 'secondary',
@@ -12,7 +13,10 @@ const colors = {
   none: '',
 }
 
+export const ns = ['popout']
+
 export const Popout = (props) => {
+  const { t } = useTranslation(ns)
   const [hide, setHide] = useState(false)
   if (hide) return null
 
@@ -35,7 +39,7 @@ export const Popout = (props) => {
         `}
       >
         <div className={`font-bold uppercase text-${color}`}>
-          <span>{type}</span>
+          <span>{t(`popout:${type}`)}</span>
           <span className="px-3">|</span>
         </div>
         <div className="popout-content">{props.noP ? props.children : <p>{props.children}</p>}</div>

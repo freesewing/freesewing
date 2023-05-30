@@ -18,7 +18,7 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
 import Link from 'next/link'
 import { PageLink } from 'shared/components/page-link.mjs'
-import { Collapse, useCollapseButton } from 'shared/components/collapse.mjs'
+import { Collapse, useCollapseButton, MimicCollapseLink } from 'shared/components/collapse.mjs'
 import { BackToAccountButton, Choice } from './shared.mjs'
 import { ModalDesignPicker } from 'shared/components/modal/design-picker.mjs'
 import {
@@ -32,6 +32,7 @@ import {
   SettingsIcon,
   DownloadIcon,
   LinkIcon,
+  PageIcon,
 } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import Markdown from 'react-markdown'
@@ -154,8 +155,9 @@ const Mval = ({ m, val = false, imperial = false, className = '' }) =>
     )
   ) : null
 
-const EditImg = ({ t, pattern, account }) => {
+const EditImg = ({ t, pattern, account, backend, toast, refresh }) => {
   const [img, setImg] = useState(pattern.img)
+  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
 
   const onDrop = useCallback((acceptedFiles) => {
     const reader = new FileReader()
@@ -167,14 +169,14 @@ const EditImg = ({ t, pattern, account }) => {
 
   const { getRootProps, getInputProps } = useDropzone({ onDrop })
 
-  //const update = async (evt) => {
-  //  evt.preventDefault()
-  //  if (evt.target.value !== value) {
-  //    setValue(evt.target.value)
-  //  }
-  //}
-  const save = () => {
-    // FIXME
+  const save = async () => {
+    startLoading()
+    const result = await backend.updatePattern(pattern.id, { img })
+    if (result.success) {
+      toast.for.settingsSaved()
+      refresh()
+    } else toast.for.backendError()
+    stopLoading()
   }
 
   return (
@@ -396,13 +398,13 @@ const EditPattern = (props) => {
         <div className="flex flex-row gap-2 text-sm items-center justify-center">
           <a
             className="badge badge-secondary font-bold"
-            href={`${conf.backend}/sets/${pattern.id}.json`}
+            href={`${conf.backend}/patterns/${pattern.id}.json`}
           >
             JSON
           </a>
           <a
             className="badge badge-success font-bold"
-            href={`${conf.backend}/sets/${pattern.id}.yaml`}
+            href={`${conf.backend}/patterns/${pattern.id}.yaml`}
           >
             YAML
           </a>
@@ -483,83 +485,107 @@ const Pattern = ({ pattern, t, account, backend, refresh }) => {
     )
   }
 
-  return (
-    <Collapse
-      primary
-      top
-      title={
-        <>
-          <img src={pattern.img} className="w-10 mask mask-squircle bg-neutral aspect-square" />
-          <div className="flex flex-col lg:flex-row lg:flex-wrap lg:gap-2 lg:justify-between w-full">
-            {pattern.set?.img && (
-              <img
-                src={pattern.set.img}
-                className="w-10 mask mask-squircle bg-neutral aspect-square"
-              />
-            )}
-            {pattern.cset?.img && (
-              <img
-                src={pattern.cset.img}
-                className="w-10 mask mask-squircle bg-neutral aspect-square"
-              />
-            )}
-            <b>{capitalize(pattern.design)}</b>
-            <span>{pattern.name}</span>
-            {pattern.set?.name && <span>{pattern.set.name}</span>}
-            {pattern.cset?.nameEn && <span>{pattern.cset.nameEn}</span>}
-          </div>
-        </>
-      }
-      openTitle={`${capitalize(pattern.design)} | ${pattern.name}`}
-      buttons={[
-        <Link
-          key="edit"
-          className="btn btn-secondary hover:text-secondary-content border-0 hidden lg:flex"
-          href={`/patterns/${pattern.id}/edit#view="draft"`}
-          title={t('removePattern')}
-        >
-          <SettingsIcon />
-        </Link>,
-        <Link
-          key="export"
-          className="btn btn-primary hover:text-primary-content border-0 hidden lg:flex"
-          href={`/patterns/${pattern.id}/edit#view="export"`}
-          title={t('removePattern')}
-        >
-          <DownloadIcon />
-        </Link>,
-        <button
-          key="rm"
-          className="btn btn-error hover:text-error-content border-0"
-          onClick={account.control > 4 ? remove : removeModal}
-          title={t('removePattern')}
-        >
-          <TrashIcon />
-        </button>,
-      ]}
-    >
-      <EditPattern {...{ t, pattern, account, backend, toast, refresh, setModal }} />
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
-        <Link
-          key="draft"
-          className="btn btn-secondary w-full"
-          href={`/patterns/${pattern.id}/edit#view="draft"`}
-          title={t('draftPattern')}
-        >
-          <SettingsIcon />
-          <span className="pl-2">{t('draftPattern')}</span>
-        </Link>
-        <Link
-          key="download"
-          className="btn btn-primary w-full"
-          href={`/patterns/${pattern.id}/edit#view="export"`}
-          title={t('exportPattern')}
-        >
-          <DownloadIcon />
-          <span className="pl-2">{t('exportPattern')}</span>
-        </Link>
+  const title = (
+    <>
+      <img src={pattern.img} className="w-10 mask mask-squircle bg-neutral aspect-square" />
+      <div className="flex flex-col lg:flex-row lg:flex-wrap lg:gap-2 lg:justify-between w-full">
+        {pattern.set?.img && (
+          <img src={pattern.set.img} className="w-10 mask mask-squircle bg-neutral aspect-square" />
+        )}
+        {pattern.cset?.img && (
+          <img
+            src={pattern.cset.img}
+            className="w-10 mask mask-squircle bg-neutral aspect-square"
+          />
+        )}
+        <b>{capitalize(pattern.design)}</b>
+        <span>{pattern.name}</span>
+        {pattern.set?.name && <span>{pattern.set.name}</span>}
+        {pattern.cset?.nameEn && <span>{pattern.cset.nameEn}</span>}
       </div>
-    </Collapse>
+    </>
+  )
+
+  return (
+    <>
+      <MimicCollapseLink
+        href={`/patterns/${pattern.id}`}
+        className="block lg:hidden"
+        title={title}
+      />
+      <Collapse
+        primary
+        top
+        className="hidden lg:flex"
+        title={title}
+        openTitle={`${capitalize(pattern.design)} | ${pattern.name}`}
+        buttons={[
+          <Link
+            key="view"
+            className="btn btn-success hover:text-success-content border-0 hidden lg:flex"
+            href={`/patterns/${pattern.id}`}
+            title={t('showPattern')}
+          >
+            <PageIcon />
+          </Link>,
+          <Link
+            key="edit"
+            className="btn btn-secondary hover:text-secondary-content border-0 hidden lg:flex"
+            href={`/patterns/${pattern.id}/edit#view="draft"`}
+            title={t('removePattern')}
+          >
+            <SettingsIcon />
+          </Link>,
+          <Link
+            key="export"
+            className="btn btn-primary hover:text-primary-content border-0 hidden lg:flex"
+            href={`/patterns/${pattern.id}/edit#view="export"`}
+            title={t('removePattern')}
+          >
+            <DownloadIcon />
+          </Link>,
+          <button
+            key="rm"
+            className="btn btn-error hover:text-error-content border-0"
+            onClick={account.control > 4 ? remove : removeModal}
+            title={t('removePattern')}
+          >
+            <TrashIcon />
+          </button>,
+        ]}
+      >
+        <EditPattern {...{ t, pattern, account, backend, toast, refresh, setModal }} />
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
+          <Link
+            key="view"
+            className="btn btn-success w-full"
+            href={`/patterns/${pattern.id}`}
+            title={t('showPattern')}
+          >
+            <PageIcon />
+            <span className="pl-2">{t('showPattern')}</span>
+          </Link>
+          <Link
+            key="draft"
+            className="btn btn-secondary w-full"
+            href={`/patterns/${pattern.id}/edit#view="draft"`}
+            title={t('draftPattern')}
+          >
+            <SettingsIcon />
+            <span className="pl-2">{t('draftPattern')}</span>
+          </Link>
+          <Link
+            key="download"
+            className="btn btn-primary w-full"
+            href={`/patterns/${pattern.id}/edit#view="export"`}
+            title={t('exportPattern')}
+          >
+            <DownloadIcon />
+            <span className="pl-2">{t('exportPattern')}</span>
+          </Link>
+        </div>
+      </Collapse>
+    </>
   )
 }
 

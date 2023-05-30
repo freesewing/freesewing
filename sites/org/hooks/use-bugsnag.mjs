@@ -1,3 +1,12 @@
+import Bugsnag from '@bugsnag/js'
+import { siteConfig } from 'site/site.config.mjs'
+import { useAccount } from 'shared/hooks/use-account.mjs'
+
+Bugsnag.start({
+  apiKey: siteConfig.bugsnag.key,
+  collectUserIp: false,
+})
+
 /*
  * Dumb method to generate a unique (enough) ID for submissions to bugsnag
  */
@@ -19,14 +28,20 @@ function createErrorId() {
  * The hook
  */
 export function useBugsnag(bugsnag) {
-  const reportError = (err) => {
+  const { account } = useAccount()
+  const reportError = async (err, data = false) => {
     const id = createErrorId()
-    bugsnag.notify(err, (evt) => {
-      evt.setUser(account.username ? account.username : '__visitor')
+    await Bugsnag.notify(err, (evt) => {
+      evt.setUser(account.id ? account.id : '__visitor')
       evt.context = id
+      if (data) evt.addMetadata('info', data)
+      console.log(evt)
     })
 
-    return id
+    return {
+      id,
+      url: `https://app.bugsnag.com/freesewing/org/errors?filters[search]=${id}&sort=last_seen`,
+    }
   }
 
   return reportError

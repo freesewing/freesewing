@@ -1,4 +1,5 @@
 import { log } from '../utils/log.mjs'
+import { capitalize } from '../utils/index.mjs'
 import { setPatternAvatar } from '../utils/sanity.mjs'
 import yaml from 'js-yaml'
 
@@ -110,7 +111,13 @@ PatternModel.prototype.unguardedCreate = async function (data) {
  */
 PatternModel.prototype.read = async function (where) {
   try {
-    this.record = await this.prisma.pattern.findUnique({ where })
+    this.record = await this.prisma.pattern.findUnique({
+      where,
+      include: {
+        set: true,
+        cset: true,
+      },
+    })
   } catch (err) {
     log.warn({ err, where }, 'Could not read pattern')
   }
@@ -201,6 +208,18 @@ PatternModel.prototype.reveal = async function () {
     for (const field of this.encryptedFields) {
       this.clear[field] = this.decrypt(this.record[field])
     }
+  }
+
+  // Parse JSON content
+  if (this.record.cset) {
+    for (const lang of this.config.languages) {
+      const key = `tags${capitalize(lang)}`
+      if (this.record.cset[key]) this.record.cset[key] = JSON.parse(this.record.cset[key])
+    }
+    if (this.record.cset.measies) this.record.cset.measies = JSON.parse(this.record.cset.measies)
+  }
+  if (this.record.set) {
+    if (this.record.set.measies) this.record.set.measies = JSON.parse(this.record.set.measies)
   }
 
   return this
