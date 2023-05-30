@@ -37,7 +37,6 @@ const createSections = (nav) => {
 const buildNavState = (value, siteNav, extra = []) => {
   for (const [path, data] of extra) {
     siteNav = objUpdate(siteNav, path, data)
-    console.log('adding', path, data, siteNav.patterns)
   }
   const obj = {
     siteNav,
@@ -46,7 +45,6 @@ const buildNavState = (value, siteNav, extra = []) => {
     slug: value.path.join('/'),
   }
   obj.title = obj.crumbs.length > 0 ? obj.crumbs.slice(-1)[0].t : ''
-  console.log(obj)
 
   return obj
 }

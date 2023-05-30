@@ -29,7 +29,9 @@ export const Popout = (props) => {
 
   return props.compact ? (
     <div
-      className={`relative my-8 bg-${color} bg-opacity-5 -ml-4 -mr-4 sm:ml-0 sm:mr-0 ${className}`}
+      className={`relative ${
+        props.dense ? 'my-1' : 'my-8'
+      } bg-${color} bg-opacity-5 -ml-4 -mr-4 sm:ml-0 sm:mr-0 ${className}`}
     >
       <div
         className={`
@@ -39,8 +41,12 @@ export const Popout = (props) => {
         `}
       >
         <div className={`font-bold uppercase text-${color}`}>
-          <span>{t(`popout:${type}`)}</span>
-          <span className="px-3">|</span>
+          {props.title || (
+            <>
+              <span>{t(`popout:${type}`)}</span>
+              <span className="px-3">|</span>
+            </>
+          )}
         </div>
         <div className="popout-content">{props.noP ? props.children : <p>{props.children}</p>}</div>
       </div>
