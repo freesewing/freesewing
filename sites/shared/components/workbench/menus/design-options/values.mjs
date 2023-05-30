@@ -1,6 +1,6 @@
 import { formatMm, formatPercentage } from 'shared/utils.mjs'
 import { ListValue, HighlightedValue, PlainValue } from '../shared/values'
-export const PctOptionValue = ({ name, config, current, settings, changed }) => {
+export const PctOptionValue = ({ config, current, settings, changed }) => {
   const val = changed ? current : config.pct / 100
 
   return (
@@ -11,7 +11,7 @@ export const PctOptionValue = ({ name, config, current, settings, changed }) => 
   )
 }
 
-export const BoolOptionValue = ({ name, config, current, t, changed }) => (
+export const BoolOptionValue = ({ config, current, t, changed }) => (
   <ListValue
     {...{
       current: current === undefined ? current : Number(current),

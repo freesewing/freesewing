@@ -19,7 +19,9 @@ export const ListValue = ({ current, t, config, changed }) => {
   return <HighlightedValue changed={changed}>{t(key)}</HighlightedValue>
 }
 
-export const MmValue = ({ current, t, config, units, changed }) => (
+export const BoolValue = ListValue
+
+export const MmValue = ({ current, config, units, changed }) => (
   <HighlightedValue changed={changed}>
     <span
       dangerouslySetInnerHTML={{

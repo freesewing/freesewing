@@ -1,12 +1,5 @@
-// Hooks
-import { useContext, useState } from 'react'
-import { useTranslation } from 'next-i18next'
-// Context
-import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
-import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
-import { Collapse } from 'shared/components/collapse.mjs'
-import { OptionsIcon, ClearIcon, HelpIcon, EditIcon } from 'shared/components/icons.mjs'
+import { OptionsIcon } from 'shared/components/icons.mjs'
 import { optionsMenuStructure } from 'shared/utils.mjs'
 import { optionType } from 'shared/utils.mjs'
 import {
@@ -15,7 +8,6 @@ import {
   SliderInput,
   DegInput,
   ListInput,
-  MmInput,
   PctInput,
 } from '../shared/inputs.mjs'
 import {
@@ -27,8 +19,8 @@ import {
   MmOptionValue,
   PctOptionValue,
 } from './values.mjs'
-import { WorkbenchMenu, useDocsLoader, wasChanged } from '../shared/index.mjs'
-import { MenuItem, ItemTitle, MenuItemGroup } from '../shared/menu-item.mjs'
+import { WorkbenchMenu } from '../shared/index.mjs'
+import { MenuItem } from '../shared/menu-item.mjs'
 
 export const ns = ['design-options']
 
@@ -110,16 +102,15 @@ export const DesignOptions = ({
   DynamicDocs = false,
 }) => {
   const menuNs = [`o_${design}`, ...ns]
-  const { t } = useTranslation(menuNs)
   const optionsMenu = optionsMenuStructure(patternConfig.options)
   const getDocsPath = (option) =>
     `patterns/${design}/options${option ? '/' + option.toLowerCase() : ''}`
-  const loadDocs = useDocsLoader(DynamicDocs, getDocsPath, language)
 
   return (
     <WorkbenchMenu
       {...{
         config: optionsMenu,
+        control: account.control,
         currentValues: settings.options,
         DynamicDocs,
         emojis,

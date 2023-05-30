@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { Collapse } from 'shared/components/collapse.mjs'
-import { MenuItemGroup, wasChanged } from './menu-item.mjs'
+import { MenuItemGroup } from './menu-item.mjs'
 import { useTranslation } from 'next-i18next'
 import { HelpIcon } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
@@ -41,7 +41,7 @@ export const WorkbenchMenu = ({
   Item,
   children,
 }) => {
-  const { t, i18n } = useTranslation(ns)
+  const { t } = useTranslation(ns)
 
   const loadDocs = useDocsLoader(DynamicDocs, getDocsPath, language)
 
