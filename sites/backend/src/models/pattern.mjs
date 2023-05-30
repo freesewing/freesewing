@@ -145,8 +145,12 @@ PatternModel.prototype.publicRead = async function ({ params }) {
 PatternModel.prototype.guardedRead = async function ({ params, user }) {
   if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
+  if (typeof params.id !== 'undefined' && !Number(params.id))
+    return this.setResponse(403, 'idNotNumeric')
 
   await this.read({ id: parseInt(params.id) })
+  if (!this.record) return this.setResponse(404, 'notFound')
+
   if (this.record.userId !== user.uid && !this.rbac.bughunter(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
