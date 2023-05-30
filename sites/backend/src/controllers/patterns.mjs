@@ -70,3 +70,14 @@ PatternsController.prototype.clone = async (req, res, tools) => {
 
   return Pattern.sendResponse(res)
 }
+
+/*
+ * Read a public pattern
+ * See: https://freesewing.dev/reference/backend/api
+ */
+PatternsController.prototype.readPublic = async (req, res, tools, format = 'json') => {
+  const Pattern = new PatternModel(tools)
+  await Pattern.publicRead(req)
+
+  return format === 'yaml' ? Pattern.sendYamlResponse(res) : Pattern.sendResponse(res)
+}

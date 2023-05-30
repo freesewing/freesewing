@@ -1,5 +1,6 @@
 import { log } from '../utils/log.mjs'
 import { setPatternAvatar } from '../utils/sanity.mjs'
+import yaml from 'js-yaml'
 
 export function PatternModel(tools) {
   this.config = tools.config
@@ -117,6 +118,22 @@ PatternModel.prototype.read = async function (where) {
   this.reveal()
 
   return this.setExists()
+}
+
+/*
+ * Loads a pattern from the database but only if it's public
+ *
+ * Stores result in this.record
+ */
+PatternModel.prototype.publicRead = async function ({ params }) {
+  await this.read({ id: parseInt(params.id) })
+  if (this.record.public !== true) {
+    // Note that we return 404
+    // because we don't want to reveal that a non-public pattern exists.
+    return this.setResponse(404)
+  }
+
+  return this.setResponse(200, false, this.asPublicPattern(), true)
 }
 
 /*
@@ -314,6 +331,8 @@ PatternModel.prototype.revealPattern = function (pattern) {
       //console.log(err)
     }
   }
+  if (pattern.set) delete pattern.set.measies
+  if (pattern.cset) delete pattern.cset.measies
 
   return { ...pattern, ...clear }
 }
@@ -323,13 +342,20 @@ PatternModel.prototype.revealPattern = function (pattern) {
  *
  * Will be used by this.sendResponse()
  */
-PatternModel.prototype.setResponse = function (status = 200, error = false, data = {}) {
+PatternModel.prototype.setResponse = function (
+  status = 200,
+  error = false,
+  data = {},
+  rawData = false
+) {
   this.response = {
     status,
-    body: {
-      result: 'success',
-      ...data,
-    },
+    body: rawData
+      ? data
+      : {
+          result: 'success',
+          ...data,
+        },
   }
   if (status > 201) {
     this.response.body.error = error
@@ -345,4 +371,26 @@ PatternModel.prototype.setResponse = function (status = 200, error = false, data
  */
 PatternModel.prototype.sendResponse = async function (res) {
   return res.status(this.response.status).send(this.response.body)
+}
+
+/*
+ * Helper method to send response as YAML
+ */
+PatternModel.prototype.sendYamlResponse = async function (res) {
+  return res.status(this.response.status).type('yaml').send(yaml.dump(this.response.body))
+}
+
+/*
+ * Returns record data fit for public publishing
+ */
+PatternModel.prototype.asPublicPattern = function () {
+  const data = {
+    author: 'FreeSewing.org',
+    type: 'pattern',
+    ...this.asPattern(),
+  }
+  delete data.userId
+  delete data.public
+
+  return data
 }

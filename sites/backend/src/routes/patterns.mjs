@@ -54,4 +54,8 @@ export function patternsRoutes(tools) {
   app.delete('/patterns/:id/key', passport.authenticate(...bsc), (req, res) =>
     Patterns.delete(req, res, tools)
   )
+
+  // Read a public pattern as JSON or YAML (no auth needed, but will only work for public patterns)
+  app.get('/patterns/:id.json', (req, res) => Patterns.readPublic(req, res, tools, 'json'))
+  app.get('/patterns/:id.yaml', (req, res) => Patterns.readPublic(req, res, tools, 'yaml'))
 }
