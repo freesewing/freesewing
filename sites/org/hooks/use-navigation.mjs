@@ -1,10 +1,9 @@
-import get from 'lodash.get'
 import { prebuildNavigation as pbn } from 'site/prebuild/navigation.mjs'
 import { useTranslation } from 'next-i18next'
-import orderBy from 'lodash.orderby'
 import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { designs, tags } from 'shared/config/designs.mjs'
+import { objUpdate } from 'shared/utils.mjs'
 
 /*
  * prebuildNavvigation[locale] holds the navigation structure based on MDX content.
@@ -152,46 +151,18 @@ const sitePages = (t = false, control = 99) => {
   return pages
 }
 
-const createCrumbs = (path, nav) =>
-  path.map((crumb, i) => {
-    const entry = get(nav, path.slice(0, i + 1), { t: 'no-title', s: path.join('/') })
-    const val = { t: entry.t, s: entry.s }
-    if (entry.o) val.o = entry.o
-
-    return val
-  })
-
-const createSections = (nav) => {
-  const sections = {}
-  for (const slug of Object.keys(nav)) {
-    const entry = nav[slug]
-    const val = { t: entry.t, s: entry.s }
-    if (entry.o) val.o = entry.o
-    if (!entry.h) sections[slug] = val
-  }
-
-  return orderBy(sections, ['o', 't'])
-}
-
-export const useNavigation = (params = {}) => {
+export const useNavigation = (params = {}, extra = []) => {
   const { path = [], locale = 'en' } = params
   const { t } = useTranslation(ns)
   const { account } = useAccount()
 
-  const nav = { ...pbn[locale], ...sitePages(t, account?.control) }
-  // Set order on docs key (from from prebuild navigation)
-  nav.docs.o = 30
-
-  // Creat crumbs array
-  const crumbs = createCrumbs(path, nav)
-  const sections = createSections(nav)
-
-  return {
-    crumbs,
-    sections,
-    slug: path.join('/'),
-    nav: path.length > 1 ? get(nav, path[0]) : path.length === 0 ? sections : nav[path[0]],
-    title: crumbs.length > 0 ? crumbs.slice(-1)[0].t : '',
-    siteNav: nav,
+  const navigation = { ...pbn[locale], ...sitePages(t, account?.control) }
+  for (const [_path, _data] of extra) {
+    objUpdate(navigation, _path, _data)
   }
+
+  // Set order on docs key (from from prebuild navigation)
+  navigation.docs.o = 30
+
+  return navigation
 }
