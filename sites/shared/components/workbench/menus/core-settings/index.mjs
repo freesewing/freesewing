@@ -82,28 +82,28 @@ export const CoreSettings = ({
     sabool: settings.sabool,
     parts: patternConfig.draftOrder,
   })
-  // Default control level is 2 (in case people are not logged in)
-  const control = account.control || 5
+
+  const control = account.control
 
   return (
     <WorkbenchMenu
       {...{
-        updateFunc: update.settings,
-        ns,
-        Icon: SettingsIcon,
-        name: 'coreSettings',
         config: settingsConfig,
         control,
-        inputs,
-        values,
         currentValues: settings,
+        DynamicDocs,
+        getDocsPath: (setting) => `site/draft/core-settings${setting ? `/${setting}` : ''}`,
+        Icon: SettingsIcon,
+        inputs,
+        language,
+        name: 'coreSettings',
+        ns,
         passProps: {
           samm: typeof settings.samm === 'undefined' ? defaultSamm(settings.units) : settings.samm,
           units: settings.units,
         },
-        language,
-        DynamicDocs,
-        getDocsPath: (setting) => `site/draft/core-settings${setting ? `/${setting}` : ''}`,
+        updateFunc: update.settings,
+        values,
       }}
     />
   )

@@ -29,17 +29,17 @@ const EditCount = (props) => (
   </div>
 )
 
-const useSharedHandlers = ({ dflt, updateFunc, updatePath, name, setReset }) => {
-  const reset = useCallback(() => updateFunc([...updatePath, name]), [updatePath, updateFunc, name])
+const useSharedHandlers = ({ dflt, updateFunc, name, setReset }) => {
+  const reset = useCallback(() => updateFunc(name), [updateFunc, name])
 
   const handleChange = useCallback(
     (newCurrent) => {
       if (newCurrent === dflt) reset()
       else {
-        updateFunc([...updatePath, name], newCurrent)
+        updateFunc(name, newCurrent)
       }
     },
-    [dflt, updateFunc, updatePath, name]
+    [dflt, updateFunc, name]
   )
 
   useEffect(() => setReset(() => reset), [reset, setReset])
@@ -47,20 +47,10 @@ const useSharedHandlers = ({ dflt, updateFunc, updatePath, name, setReset }) => 
   return { handleChange, reset }
 }
 
-export const ListInput = ({
-  name,
-  config,
-  current,
-  updateFunc,
-  updatePath = [],
-  compact = false,
-  t,
-  setReset,
-}) => {
+export const ListInput = ({ name, config, current, updateFunc, compact = false, t, setReset }) => {
   const { handleChange, reset, set } = useSharedHandlers({
     dflt: config.dflt,
     updateFunc,
-    updatePath,
     name,
     setReset,
   })
@@ -86,7 +76,23 @@ export const ListInput = ({
   )
 }
 
-export const BoolInput = ListInput
+export const BoolInput = (props) => {
+  const boolConfig = {
+    list: [0, 1],
+    choiceTitles: {
+      0: `${props.name}No`,
+      1: `${props.name}Yes`,
+    },
+    valueTitles: {
+      0: 'no',
+      1: 'yes',
+    },
+    dflt: props.config.dflt ? 1 : 0,
+    ...props.config,
+  }
+
+  return <ListInput {...props} config={boolConfig} />
+}
 
 const EditInputValue = (props) => (
   <div className="form-control mb-2 w-full">
@@ -123,7 +129,6 @@ export const SliderInput = ({
   config,
   current,
   updateFunc,
-  updatePath = [],
   t,
   override,
   suffix = '',
@@ -136,7 +141,6 @@ export const SliderInput = ({
     current,
     dflt: config.dflt,
     updateFunc,
-    updatePath,
     name,
     setReset,
   })
@@ -192,8 +196,7 @@ export const SliderInput = ({
 export const PctInput = ({ config, settings, current, updateFunc, type = 'pct', ...rest }) => {
   const suffix = type === 'deg' ? '°' : '%'
   const factor = type === 'deg' ? 1 : 100
-  const dflt = config[type]
-  let pctCurrent = typeof current === 'undefined' ? dflt : current * factor
+  let pctCurrent = typeof current === 'undefined' ? config.dflt : current * factor
 
   const valFormatter = (val) => round(val)
   const pctUpdateFunc = useCallback(
@@ -208,7 +211,6 @@ export const PctInput = ({ config, settings, current, updateFunc, type = 'pct', 
         config: {
           ...config,
           step: 0.1,
-          dflt,
         },
         current: pctCurrent,
         updateFunc: pctUpdateFunc,
@@ -217,7 +219,7 @@ export const PctInput = ({ config, settings, current, updateFunc, type = 'pct', 
       }}
     >
       <div className="flex flex-row justify-around">
-        <span className={current === dflt ? 'text-secondary' : 'text-accent'}>
+        <span className={current === config.dflt ? 'text-secondary' : 'text-accent'}>
           {config.toAbs && settings.measurements
             ? formatMm(config.toAbs(current / factor, settings))
             : ' '}
@@ -238,6 +240,7 @@ export const MmInput = (props) => {
     },
     [props.updateFunc, props.units]
   )
+
   return (
     <SliderInput
       {...{

@@ -2,9 +2,9 @@ import { ClearIcon, HelpIcon, EditIcon } from 'shared/components/icons.mjs'
 import { Collapse } from 'shared/components/collapse.mjs'
 import { useState, useMemo } from 'react'
 
-export const wasChanged = (current, name, settingsConfig) => {
+export const wasChanged = (current, config) => {
   if (typeof current === 'undefined') return false
-  if (current === settingsConfig[name].dflt) return false
+  if (current === config.dflt) return false
 
   return true
 }
@@ -16,18 +16,17 @@ export const ItemTitle = ({ name, t, changed, current = null, open = false, emoj
         {emoji}
       </span>
       {t(`${name}.t`)}
-      {open ? ':' : ''}
     </span>
     <span className="font-bold">{current}</span>
   </div>
 )
 
+const openButtonClass = 'btn btn-xs btn-ghost px-0'
 export const MenuItem = ({
   name,
   config,
   current,
   updateFunc,
-  updatePath = [],
   t,
   passProps = {},
   changed,
@@ -35,9 +34,10 @@ export const MenuItem = ({
   Input,
   Value,
   allowOverride = false,
+  control = Infinity,
 }) => {
   const [override, setOverride] = useState(false)
-  const [reset, setReset] = useState(() => () => updateFunc([...updatePath, name]))
+  const [reset, setReset] = useState(() => () => updateFunc(name))
 
   const drillProps = useMemo(
     () => ({
@@ -47,23 +47,20 @@ export const MenuItem = ({
       updateFunc,
       t,
       changed,
-      updatePath,
       override,
       setReset,
       ...passProps,
     }),
-    [name, config, current, updateFunc, t, changed, updatePath, override, setReset, passProps]
+    [name, config, current, updateFunc, t, changed, override, setReset, passProps]
   )
+
+  if (config.control && config.control > control) return null
 
   const buttons = []
   const openButtons = []
   if (loadDocs)
     openButtons.push(
-      <button
-        className="btn btn-xs btn-ghost px-0"
-        key="help"
-        onClick={(evt) => loadDocs(evt, name)}
-      >
+      <button className={openButtonClass} key="help" onClick={(evt) => loadDocs(evt, name)}>
         <HelpIcon className="w-4 h-4" />
       </button>
     )
@@ -71,7 +68,7 @@ export const MenuItem = ({
     openButtons.push(
       <button
         key="edit"
-        className="btn btn-xs btn-ghost px-0"
+        className={openButtonClass}
         onClick={(evt) => {
           evt.stopPropagation()
           setOverride(!override)
@@ -81,10 +78,9 @@ export const MenuItem = ({
       </button>
     )
   if (changed) {
-    buttons.push(
+    const ResetButton = ({ open }) => (
       <button
-        className="btn btn-accent"
-        key="clear"
+        className={open ? openButtonClass : 'btn btn-accent'}
         onClick={(evt) => {
           evt.stopPropagation()
           reset()
@@ -93,18 +89,8 @@ export const MenuItem = ({
         <ClearIcon />
       </button>
     )
-    openButtons.push(
-      <button
-        className="btn btn-ghost btn-xs px-0"
-        key="clear"
-        onClick={(evt) => {
-          evt.stopPropagation()
-          reset()
-        }}
-      >
-        <ClearIcon />
-      </button>
-    )
+    buttons.push(<ResetButton key="clear" />)
+    openButtons.push(<ResetButton open key="clear" />)
   }
 
   const titleProps = { name, t, current: <Value {...drillProps} />, emoji: config.emoji }
@@ -124,29 +110,37 @@ export const MenuItem = ({
 
 export const MenuItemGroup = ({
   collapsible = true,
+  control,
   name,
-  groupConfig,
-  currents = {},
-  items,
+  currentValues = {},
+  structure,
   Item = MenuItem,
+  values = {},
+  inputs = {},
   loadDocs,
-  itemProps = {},
+  passProps = {},
   emojis = {},
+  updateFunc,
   t,
 }) => {
-  const content = Object.entries(items).map(([itemName, item]) => {
-    if (typeof item === 'string')
+  const content = Object.entries(structure).map(([itemName, item]) => {
+    if (itemName === 'isMenu' || item === false) return null
+    if (!item.isMenu)
       return (
         <Item
           key={itemName}
           {...{
             name: itemName,
-            current: currents[itemName],
-            config: groupConfig[itemName],
-            changed: wasChanged(currents[itemName], itemName, groupConfig),
+            current: currentValues[itemName],
+            config: item,
+            control,
+            changed: wasChanged(currentValues[itemName], item),
+            Value: values[itemName],
+            Input: inputs[itemName],
             t,
             loadDocs,
-            ...itemProps,
+            updateFunc,
+            passProps,
           }}
         />
       )
@@ -156,43 +150,34 @@ export const MenuItemGroup = ({
         key={itemName}
         {...{
           collapsible: true,
+          control,
           name: itemName,
-          groupConfig,
-          currents,
-          items: item,
+          currentValues,
+          structure: item,
           Item,
+          values,
+          inputs,
           loadDocs,
-          itemProps,
+          passProps,
           emojis,
+          updateFunc,
           t,
         }}
       />
     )
   })
 
+  const titleProps = {
+    name,
+    t,
+    emoji: emojis[name] || emojis.dflt,
+  }
   return collapsible ? (
     <Collapse
       bottom
       color="secondary"
-      title={
-        <ItemTitle
-          {...{
-            name,
-            t,
-            emoji: emojis[name] || emojis.dflt,
-          }}
-        />
-      }
-      openTitle={
-        <ItemTitle
-          open
-          {...{
-            name,
-            t,
-            emoji: emojis[name] || emojis.dflt,
-          }}
-        />
-      }
+      title={<ItemTitle {...titleProps} />}
+      openTitle={<ItemTitle open {...titleProps} />}
     >
       {content}
     </Collapse>
