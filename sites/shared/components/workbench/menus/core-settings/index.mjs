@@ -1,14 +1,7 @@
-// Hooks
-import { useContext } from 'react'
-import { useTranslation } from 'next-i18next'
-// Context
-import { ModalContext } from 'shared/context/modal-context.mjs'
 //Dependencies
 import { loadSettingsConfig, defaultSamm } from './config.mjs'
 // Components
-import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
-import { SettingsIcon, ClearIcon, HelpIcon } from 'shared/components/icons.mjs'
-import { Collapse } from 'shared/components/collapse.mjs'
+import { SettingsIcon } from 'shared/components/icons.mjs'
 import {
   CompleteSettingInput,
   LocaleSettingInput,
@@ -66,7 +59,6 @@ const inputs = {
 export const ns = ['core-settings', 'modal']
 
 export const CoreSettings = ({
-  design,
   update,
   settings,
   patternConfig,
@@ -74,8 +66,6 @@ export const CoreSettings = ({
   account,
   DynamicDocs,
 }) => {
-  const { setModal } = useContext(ModalContext)
-
   const settingsConfig = loadSettingsConfig({
     language,
     units: settings.units,
@@ -83,13 +73,11 @@ export const CoreSettings = ({
     parts: patternConfig.draftOrder,
   })
 
-  const control = account.control
-
   return (
     <WorkbenchMenu
       {...{
         config: settingsConfig,
-        control,
+        control: account.control,
         currentValues: settings,
         DynamicDocs,
         getDocsPath: (setting) => `site/draft/core-settings${setting ? `/${setting}` : ''}`,

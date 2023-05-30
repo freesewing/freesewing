@@ -9,7 +9,7 @@ export const wasChanged = (current, config) => {
   return true
 }
 
-export const ItemTitle = ({ name, t, changed, current = null, open = false, emoji = '' }) => (
+export const ItemTitle = ({ name, t, current = null, open = false, emoji = '' }) => (
   <div className={`flex flex-row gap-1 items-center w-full ${open ? '' : 'justify-between'}`}>
     <span className="font-medium">
       <span role="img" className="pr-2">

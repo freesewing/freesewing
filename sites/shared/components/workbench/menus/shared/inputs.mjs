@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useEffect, useCallback } from 'react'
 import {
   formatMm,
   round,
@@ -39,16 +39,18 @@ const useSharedHandlers = ({ dflt, updateFunc, name, setReset }) => {
         updateFunc(name, newCurrent)
       }
     },
-    [dflt, updateFunc, name]
+    [dflt, updateFunc, name, reset]
   )
 
-  useEffect(() => setReset(() => reset), [reset, setReset])
+  useEffect(() => {
+    if (typeof setReset === 'function') setReset(() => reset)
+  }, [reset, setReset])
 
   return { handleChange, reset }
 }
 
 export const ListInput = ({ name, config, current, updateFunc, compact = false, t, setReset }) => {
-  const { handleChange, reset, set } = useSharedHandlers({
+  const { handleChange } = useSharedHandlers({
     dflt: config.dflt,
     updateFunc,
     name,
@@ -94,36 +96,6 @@ export const BoolInput = (props) => {
   return <ListInput {...props} config={boolConfig} />
 }
 
-const EditInputValue = (props) => (
-  <div className="form-control mb-2 w-full">
-    <label className="label">
-      <span className="label-text text-base-content">
-        {props.min}
-        {props.suffix}
-      </span>
-      <span className="label-text font-bold text-base-content">
-        {props.value}
-        {props.suffix}
-      </span>
-      <span className="label-text text-base-content">
-        {props.max}
-        {props.suffix}
-      </span>
-    </label>
-    <label className="input-group input-group-sm">
-      <input
-        type="number"
-        className={`
-          input input-sm input-bordered grow text-base-content
-        `}
-        value={props.value}
-        onChange={props.handleChange}
-      />
-      <span className="text-base-content font-bold">{props.suffix}</span>
-    </label>
-  </div>
-)
-
 export const SliderInput = ({
   name,
   config,
@@ -137,7 +109,7 @@ export const SliderInput = ({
   children,
 }) => {
   const { max, min } = config
-  const { handleChange, reset } = useSharedHandlers({
+  const { handleChange } = useSharedHandlers({
     current,
     dflt: config.dflt,
     updateFunc,
@@ -201,7 +173,7 @@ export const PctInput = ({ config, settings, current, updateFunc, type = 'pct', 
   const valFormatter = (val) => round(val)
   const pctUpdateFunc = useCallback(
     (path, newVal) => updateFunc(path, newVal === undefined ? undefined : newVal / factor),
-    [updateFunc]
+    [updateFunc, factor]
   )
 
   return (
@@ -232,24 +204,24 @@ export const PctInput = ({ config, settings, current, updateFunc, type = 'pct', 
 export const DegInput = (props) => <PctInput {...props} type="deg" />
 
 export const MmInput = (props) => {
+  const { units, updateFunc, current } = props
   const mmUpdateFunc = useCallback(
     (path, newCurrent) => {
       const calcCurrent =
-        typeof newCurrent === 'undefined' ? undefined : measurementAsMm(newCurrent, props.units)
-      props.updateFunc(path, calcCurrent)
+        typeof newCurrent === 'undefined' ? undefined : measurementAsMm(newCurrent, units)
+      updateFunc(path, calcCurrent)
     },
-    [props.updateFunc, props.units]
+    [updateFunc, units]
   )
 
   return (
     <SliderInput
       {...{
         ...props,
-        current:
-          props.current === undefined ? undefined : measurementAsUnits(props.current, props.units),
+        current: current === undefined ? undefined : measurementAsUnits(current, units),
         updateFunc: mmUpdateFunc,
-        valFormatter: (val) => (props.units === 'imperial' ? formatFraction128(val, null) : val),
-        suffix: props.units === 'imperial' ? '"' : 'cm',
+        valFormatter: (val) => (units === 'imperial' ? formatFraction128(val, null) : val),
+        suffix: units === 'imperial' ? '"' : 'cm',
       }}
     />
   )
