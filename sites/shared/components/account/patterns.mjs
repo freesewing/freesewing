@@ -197,7 +197,7 @@ const EditImg = ({ t, pattern, account, backend, toast, refresh }) => {
           <input {...getInputProps()} />
           <p className="hidden lg:block p-0 m-0">{t('imgDragAndDropImageHere')}</p>
           <p className="hidden lg:block p-0 my-2">{t('or')}</p>
-          <button className={`btn btn-secondary btn-outline mt-4 w-64`}>
+          <button className={`btn btn-secondary btn-outline mt-4 px-8`}>
             {t('imgSelectImage')}
           </button>
         </div>
@@ -233,7 +233,7 @@ const EditName = ({ t, pattern, backend, toast, refresh }) => {
   }
 
   return (
-    <div className="flex flex-row gap-2">
+    <div className="flex flex-col lg:flex-row gap-2">
       <input
         value={value}
         onChange={update}

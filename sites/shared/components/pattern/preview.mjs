@@ -15,5 +15,5 @@ export const PatternPreview = ({ design, settings }) => {
     console.log(err)
   }
 
-  return <div dangerouslySetInnerHTML={{ __html: svg }} />
+  return <figure dangerouslySetInnerHTML={{ __html: svg }} />
 }

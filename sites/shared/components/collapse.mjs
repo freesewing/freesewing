@@ -2,10 +2,18 @@ import { useState } from 'react'
 import { CloseIcon } from 'shared/components/icons.mjs'
 import Link from 'next/link'
 
-const OpenTitleButton = ({ title, toggle, color = 'primary', openButtons = [] }) => (
+const OpenTitleButton = ({
+  title,
+  toggle,
+  color = 'primary',
+  openButtons = [],
+  bottom = false,
+}) => (
   <div
     role="button"
-    className={`flex flex-row items-center justify-between w-full
+    className={`flex flex-row items-center justify-between w-full ${
+      top ? 'lg:rounded-t-lg' : 'lg:rounded-b-lg'
+    }
       bg-${color} text-${color}-content px-4 py-1 text-lg font-medium`}
     onClick={toggle}
   >
@@ -37,19 +45,22 @@ export const Collapse = ({
 }) => {
   const [open, setOpen] = useState(opened)
 
-  const titleBtn = open ? (
-    <OpenTitleButton
-      title={openTitle || title}
-      toggle={() => setOpen(false)}
-      {...{ color, openButtons }}
-    />
-  ) : null
+  const TitleBtn = ({ bottom }) =>
+    open ? (
+      <OpenTitleButton
+        title={openTitle || title}
+        toggle={() => setOpen(false)}
+        {...{ color, openButtons, bottom }}
+      />
+    ) : null
 
   return open ? (
-    <div className={`shadow border-solid border-2 rounded-lg border-${color} my-2`}>
-      {top ? titleBtn : null}
+    <div
+      className={`shadow border-solid border border-l-0 border-r-0 border-b-2 lg:border-l lg:border-r lg:border-b lg:rounded-lg border-${color} my-4 -mx-4 lg:mx-0`}
+    >
+      {top ? <TitleBtn /> : null}
       <div className="p-2 lg:p-4">{children}</div>
-      {bottom ? titleBtn : null}
+      {bottom ? <TitleBtn bottom /> : null}
     </div>
   ) : (
     <div className={`flex flex-row gap-2 my-4 items-center ${className}`}>
@@ -111,7 +122,7 @@ export const useCollapseButton = (props) => {
     ) : null
 
     return open ? (
-      <div className={`shadow border-solid border-2 rounded-lg border-${color} mb-2 mt-4`}>
+      <div className={`shadow border-solid border rounded-lg border-${color} mb-2 mt-4`}>
         {top ? titleBtn : null}
         <div className="p-4">{children}</div>
         {bottom ? titleBtn : null}
