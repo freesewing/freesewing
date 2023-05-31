@@ -152,7 +152,7 @@ export const frontSideDart = {
       points.bust,
       points.bustDartMiddle,
       points.armhole,
-      points.bustDartTop
+      points.sideHem
     )
     points.bustDartCpTop = points.bust
       .shiftFractionTowards(points.bustDartTop, 0.666)
