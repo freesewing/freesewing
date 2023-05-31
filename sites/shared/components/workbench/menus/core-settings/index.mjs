@@ -146,7 +146,7 @@ export const Setting = ({
 
   return (
     <Collapse
-      color={changed ? 'accent' : 'secondary'}
+      color={changed ? 'accent' : 'primary'}
       openTitle={<CoreTitle open {...titleProps} />}
       title={<CoreTitle {...titleProps} />}
       buttons={buttons}
@@ -167,26 +167,27 @@ export const CoreSettings = ({
   language,
   account,
   DynamicDocs,
+  control,
 }) => {
   // FIXME: Update this namespace
   const { t } = useTranslation(['i18n', 'core-settings', design])
   const { setModal } = useContext(ModalContext)
 
+  // For the simplest experience, not core settings are shown at all
+  if (control < 2) return null
+
   const settingsConfig = loadSettingsConfig({
     language,
-    control: account.control,
+    control,
     sabool: settings.sabool,
     parts: patternConfig.draftOrder,
   })
-  // Default control level is 2 (in case people are not logged in)
-  const control = account.control || 2
 
   const loadDocs = DynamicDocs
     ? (evt, setting = false) => {
         evt.stopPropagation()
         let path = `site/draft/core-settings`
         if (setting) path += `/${setting}`
-        console.log(path)
         setModal(
           <ModalWrapper>
             <div className="max-w-prose">
@@ -210,19 +211,20 @@ export const CoreSettings = ({
     )
 
   return (
-    <Collapse
-      bottom
-      color="primary"
-      title={
-        <div className="w-full flex flex-row gap2 items-center justify-between">
-          <span className="font-bold">{t('core-settings:coreSettings.t')}</span>
-          <SettingsIcon className="w-6 h-6 text-primary" />
-        </div>
-      }
-      openTitle={t('core-settings:coreSettings')}
-      openButtons={openButtons}
-    >
-      <p>{t('core-settings:coreSettings.d')}</p>
+    <>
+      <div className="px-2 mt-8">
+        {control > 4 ? (
+          <div className="border-t border-solid border-base-300 pb-2 mx-36"></div>
+        ) : (
+          <>
+            <h5 className="flex flex-row gap-2 items-center">
+              <SettingsIcon />
+              <span>{t('core-settings:coreSettings')}</span>
+            </h5>
+            <p>{t('core-settings:coreSettings.d')}</p>
+          </>
+        )}
+      </div>
       {Object.keys(settingsConfig)
         .filter((name) => settingsConfig[name].control <= control)
         .map((name) => (
@@ -236,6 +238,6 @@ export const CoreSettings = ({
             units={settings.units}
           />
         ))}
-    </Collapse>
+    </>
   )
 }

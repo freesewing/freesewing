@@ -10,17 +10,12 @@ import { objUpdate } from 'shared/utils.mjs'
 // Components
 import { WorkbenchHeader } from './header.mjs'
 import { ErrorView } from 'shared/components/error/view.mjs'
+import { ModalSpinner } from 'shared/components/modal/spinner.mjs'
 // Views
 import { DraftView, ns as draftNs } from 'shared/components/workbench/views/draft/index.mjs'
 import { SaveView, ns as saveNs } from 'shared/components/workbench/views/save/index.mjs'
 
-export const ns = ['workbench', ...draftNs, ...saveNs]
-
-const loadDefaultSettings = ({ locale = 'en', units = 'metric' }) => ({
-  units,
-  locale,
-  embed: true,
-})
+export const ns = ['account', 'workbench', ...draftNs, ...saveNs]
 
 const defaultUi = {
   renderer: 'react',
@@ -28,31 +23,32 @@ const defaultUi = {
 
 const draftViews = ['draft', 'test']
 
-export const Workbench = ({ design, Design, set = false, DynamicDocs = false }) => {
+export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) => {
   // Hooks
   const { t, i18n } = useTranslation(ns)
   const { language } = i18n
   const { account } = useAccount()
 
-  const defaultSettings = loadDefaultSettings({
-    units: account.imperial ? 'imperial' : 'metric',
-    locale: language,
-  })
-  if (set) defaultSettings.measurements = set.measies
-
   // State
   const [view, setView] = useView()
-  const [settings, setSettings] = useState({ ...defaultSettings, embed: true })
-  const [ui, setUi] = useState({ ...defaultUi })
+  const [settings, setSettings] = useState({ ...baseSettings, embed: true })
+  const [ui, setUi] = useState(defaultUi)
   const [error, setError] = useState(false)
 
-  // Effects
+  // Effect
   useEffect(() => {
-    if (set.measies) update.settings('measurements', set.measies)
-  }, [set])
+    // Force re-render when baseSettings changes. Required when they are loaded async.
+    setSettings({ ...baseSettings, embed: true })
+  }, [baseSettings])
 
-  // Don't bother without a set or Design
-  if (!set || !Design) return null
+  // Helper methods for settings/ui updates
+  const update = {
+    settings: (path, val) => setSettings(objUpdate({ ...settings }, path, val)),
+    ui: (path, val) => setUi(objUpdate({ ...ui }, path, val)),
+  }
+
+  // Don't bother without a Design
+  if (!Design) return <ModalSpinner />
 
   // Short-circuit errors early
   if (error)
@@ -62,13 +58,7 @@ export const Workbench = ({ design, Design, set = false, DynamicDocs = false }) 
         {error}
       </>
     )
-
-  // Helper methods for settings/ui updates
-  const update = {
-    settings: (path, val) => setSettings(objUpdate({ ...settings }, path, val)),
-    ui: (path, val) => setUi(objUpdate({ ...ui }, path, val)),
-  }
-
+  console.log(baseSettings)
   // Deal with each view
   const viewProps = {
     account,
@@ -108,7 +98,7 @@ export const Workbench = ({ design, Design, set = false, DynamicDocs = false }) 
   }
 
   // Save view
-  else if (view === 'save') viewContent = <SaveView {...viewProps} />
+  else if (view === 'save') viewContent = <SaveView {...viewProps} from={from} />
 
   return (
     <>

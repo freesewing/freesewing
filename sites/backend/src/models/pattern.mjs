@@ -2,6 +2,7 @@ import { log } from '../utils/log.mjs'
 import { capitalize } from '../utils/index.mjs'
 import { setPatternAvatar } from '../utils/sanity.mjs'
 import yaml from 'js-yaml'
+import { SetModel } from './set.mjs'
 
 export function PatternModel(tools) {
   this.config = tools.config
@@ -11,6 +12,7 @@ export function PatternModel(tools) {
   this.rbac = tools.rbac
   this.encryptedFields = ['data', 'img', 'name', 'notes', 'settings']
   this.clear = {} // For holding decrypted data
+  this.Set = new SetModel(tools)
 
   return this
 }
@@ -218,8 +220,8 @@ PatternModel.prototype.reveal = async function () {
     }
     if (this.record.cset.measies) this.record.cset.measies = JSON.parse(this.record.cset.measies)
   }
-  if (this.record.set) {
-    if (this.record.set.measies) this.record.set.measies = JSON.parse(this.record.set.measies)
+  if (this.record?.set) {
+    this.record.set = this.Set.revealSet(this.record.set)
   }
 
   return this

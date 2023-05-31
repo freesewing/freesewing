@@ -625,7 +625,6 @@ export const Patterns = ({ standAlone = false }) => {
         {t('createANewPattern')}
       </Link>
       {standAlone ? null : <BackToAccountButton />}
-      <pre>{JSON.stringify(patterns, null, 2)}</pre>
     </div>
   )
 }

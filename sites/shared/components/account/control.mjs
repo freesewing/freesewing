@@ -13,7 +13,7 @@ import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 
 export const ns = ['account', 'toast']
 
-export const ControlSettings = ({ title = false, welcome = false }) => {
+export const ControlSettings = ({ title = false, welcome = false, noBack = false }) => {
   // Context
   const { startLoading, stopLoading } = useContext(LoadingContext)
 
@@ -50,25 +50,16 @@ export const ControlSettings = ({ title = false, welcome = false }) => {
   return (
     <div className="max-w-xl">
       {title ? <h1 className="text-4xl">{t('controlTitle')}</h1> : null}
-      {[1, 2, 3, 4, 5].map((val) => {
-        if (selection === 1 && val > 2) return null
-        if (selection === 2 && val > 3) return null
-        if (selection === 3 && val > 4) return null
-        if (selection === 5 && val < 4) return null
-        else
-          return (
-            <Choice val={val} t={t} update={update} current={selection} key={val}>
-              <span className="block text-lg leading-5">
-                {selection === 1 && val === 2 ? t('showMore') : t(`control${val}t`)}
-              </span>
-              {selection > 1 ? (
-                <span className="block text-normal font-light normal-case pt-1 leading-5">
-                  {t(`control${val}d`)}
-                </span>
-              ) : null}
-            </Choice>
-          )
-      })}
+      {[1, 2, 3, 4, 5].map((val) => (
+        <Choice val={val} t={t} update={update} current={selection} key={val}>
+          <span className="block text-lg leading-5">{t(`control${val}t`)}</span>
+          {selection > 1 ? (
+            <span className="block text-normal font-light normal-case pt-1 leading-5">
+              {t(`control${val}d`)}
+            </span>
+          ) : null}
+        </Choice>
+      ))}
       {welcome ? (
         <>
           <ContinueButton btnProps={{ href: nextHref }} link />
@@ -86,7 +77,7 @@ export const ControlSettings = ({ title = false, welcome = false }) => {
             </>
           ) : null}
         </>
-      ) : (
+      ) : noBack ? null : (
         <BackToAccountButton />
       )}
     </div>

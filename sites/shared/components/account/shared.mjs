@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import {
   CogIcon,
-  ControlIcon,
+  FingerprintIcon as ControlIcon,
   NewsletterIcon,
   UnitsIcon,
   CompareIcon,

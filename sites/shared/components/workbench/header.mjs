@@ -11,7 +11,7 @@ import {
   ClearIcon,
   CodeIcon,
   CutIcon,
-  HelpIcon,
+  FingerprintIcon,
   MenuIcon,
   OptionsIcon,
   PrintIcon,
@@ -20,6 +20,8 @@ import {
 import { Ribbon } from 'shared/components/ribbon.mjs'
 import Link from 'next/link'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
+import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
+import { ControlSettings } from 'shared/components/account/control.mjs'
 
 export const ns = ['workbench', 'sections']
 
@@ -150,8 +152,19 @@ const NavIcons = ({ setModal, setView, view }) => {
         <ClearIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
-      <NavButton href="/account" label={t('workbench:help')} color={colors[9]}>
-        <HelpIcon className={iconSize} />
+      <NavButton
+        label={t('workbench:control')}
+        color={colors[9]}
+        onClick={() =>
+          setModal(
+            <ModalWrapper>
+              <ControlSettings noBack title />
+              <div className="mb-3"></div>
+            </ModalWrapper>
+          )
+        }
+      >
+        <FingerprintIcon className={iconSize} />
       </NavButton>
     </>
   )
