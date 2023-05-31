@@ -12,7 +12,7 @@ const OpenTitleButton = ({
   <div
     role="button"
     className={`flex flex-row items-center justify-between w-full ${
-      top ? 'lg:rounded-t-lg' : 'lg:rounded-b-lg'
+      bottom ? 'lg:rounded-b-lg' : 'lg:rounded-t-lg'
     }
       bg-${color} text-${color}-content px-4 py-1 text-lg font-medium`}
     onClick={toggle}

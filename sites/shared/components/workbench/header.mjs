@@ -8,10 +8,10 @@ import { LoadingContext } from 'shared/context/loading-context.mjs'
 import {
   BeakerIcon,
   BriefcaseIcon,
-  ClearIcon,
   CodeIcon,
   CutIcon,
-  FingerprintIcon,
+  HelpIcon,
+  HomeIcon,
   MenuIcon,
   OptionsIcon,
   PrintIcon,
@@ -20,8 +20,6 @@ import {
 import { Ribbon } from 'shared/components/ribbon.mjs'
 import Link from 'next/link'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
-import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
-import { ControlSettings } from 'shared/components/account/control.mjs'
 
 export const ns = ['workbench', 'sections']
 
@@ -40,6 +38,7 @@ export const NavButton = ({
       active ? 'font-heavy' : ''
     }`
   const span = <span className="block font-bold hidden 2xl:block">{label}</span>
+  console.log('in button', label, onClick)
 
   return onClick ? (
     <button {...{ onClick, className }} title={label}>
@@ -143,37 +142,27 @@ const NavIcons = ({ setModal, setView, view }) => {
       >
         <CodeIcon className={iconSize} />
       </NavButton>
-      <NavButton
-        onClick={() => setView('clear')}
-        label={t('workbench:clear')}
-        color={colors[8]}
-        extraClasses="hidden lg:flex"
-      >
-        <ClearIcon className={iconSize} />
-      </NavButton>
       <NavSpacer />
       <NavButton
-        label={t('workbench:control')}
-        color={colors[9]}
-        onClick={() =>
-          setModal(
-            <ModalWrapper>
-              <ControlSettings noBack title />
-              <div className="mb-3"></div>
-            </ModalWrapper>
-          )
-        }
+        label={t('workbench:help')}
+        color={colors[8]}
+        href="/docs/site/draft"
+        extraClasses="hidden lg:flex"
       >
-        <FingerprintIcon className={iconSize} />
+        <HelpIcon className={iconSize} />
+      </NavButton>
+      <NavButton label={t('workbench:home')} color={colors[9]} href="/">
+        <HomeIcon className={iconSize} />
       </NavButton>
     </>
   )
 }
 
-export const WorkbenchHeader = ({ view, setView }) => {
+export const WorkbenchHeader = ({ view, setView, update }) => {
   const { setModal } = useContext(ModalContext)
   const { loading } = useContext(LoadingContext)
   const [show, setShow] = useState(true)
+  console.log('header', update)
 
   return (
     <header
@@ -196,7 +185,7 @@ export const WorkbenchHeader = ({ view, setView }) => {
 
           {/* Mobile content */}
           <div className="flex lg:hidden flex-row items-center justify-between w-full">
-            <NavIcons setModal={setModal} setView={setView} />
+            <NavIcons {...{ setModal, setView, update }} />
           </div>
         </div>
       </div>

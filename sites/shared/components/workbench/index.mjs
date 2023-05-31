@@ -38,6 +38,7 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) =
   // Effect
   useEffect(() => {
     // Force re-render when baseSettings changes. Required when they are loaded async.
+    console.log('in effect')
     setSettings({ ...baseSettings, embed: true })
   }, [baseSettings])
 
@@ -54,11 +55,11 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) =
   if (error)
     return (
       <>
-        <WorkbenchHeader setView={setView} />
+        <WorkbenchHeader {...{ view, setView, update }} />
         {error}
       </>
     )
-  console.log(baseSettings)
+
   // Deal with each view
   const viewProps = {
     account,
@@ -102,7 +103,7 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) =
 
   return (
     <>
-      <WorkbenchHeader setView={setView} view={view} />
+      <WorkbenchHeader {...{ view, setView, update }} />
       {viewContent}
     </>
   )

@@ -1,0 +1,11 @@
+uiSettings.t: UI Preferences
+uiSettings.d: These preferences control the UI (User Interface) aspects of our online pattern drafting environment.
+renderer.t: Render Engine
+renderer.d: Controls how the pattern is rendered (drawn) on the screen
+renderWithReact.t: Render with FreeSewing's React components
+renderWithReact.d: Render as SVG through our React components. Allows interactivity and is optimized for screen. Use this if you are not sure what to pick.
+renderWithCore.t: Render with Freesewing's Core library
+renderWithCore.d: Render directly to SVG from Core. Allows no interactivity and is optimized for print. Use this if you want to know what it will look like when exported.
+control.t: User Experience
+control.d: Which user experience do you prefer? Please note that this is an account setting, so it will impact the entire website.
+

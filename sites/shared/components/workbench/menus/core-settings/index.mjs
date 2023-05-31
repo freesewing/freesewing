@@ -62,7 +62,7 @@ const inputs = {
   units: UnitsSettingInput,
 }
 
-const CoreTitle = ({ name, t, changed, current = null, open = false, emoji = '' }) => (
+export const CoreTitle = ({ name, t, changed, current = null, open = false, emoji = '' }) => (
   <div className={`flex flex-row gap-1 items-center w-full ${open ? '' : 'justify-between'}`}>
     <span className="font-medium">
       <span role="img" className="pr-2">
@@ -94,6 +94,7 @@ export const Setting = ({
   settingsConfig,
   changed,
   loadDocs,
+  control,
 }) => {
   const drillProps = { name, config, current, update, t, units, changed }
 
@@ -143,6 +144,36 @@ export const Setting = ({
   }
 
   const titleProps = { name, t, current: <Value {...drillProps} />, emoji: config.emoji }
+
+  const boolSettings = ['sabool', 'paperless', 'details']
+
+  if (control > 4) {
+    // Save gurus some clicks
+    if (boolSettings.includes(name))
+      return (
+        <Collapse
+          color={changed ? 'accent' : 'primary'}
+          title={<CoreTitle {...titleProps} />}
+          onClick={() => update.settings([name], current ? 0 : 1)}
+        />
+      )
+    if (name === 'units')
+      return (
+        <Collapse
+          color={changed ? 'accent' : 'primary'}
+          title={<CoreTitle {...titleProps} />}
+          onClick={() => update.settings([name], current === 'metric' ? 'imperial' : 'metric')}
+        />
+      )
+    if (name === 'renderer')
+      return (
+        <Collapse
+          color={changed ? 'accent' : 'primary'}
+          title={<CoreTitle {...titleProps} />}
+          onClick={() => update.ui([name], current === 'svg' ? 'react' : 'svg')}
+        />
+      )
+  }
 
   return (
     <Collapse
@@ -230,7 +261,7 @@ export const CoreSettings = ({
         .map((name) => (
           <Setting
             key={name}
-            {...{ name, design, update, t, patternConfig, loadDocs }}
+            {...{ name, design, update, t, patternConfig, loadDocs, control }}
             config={settingsConfig[name]}
             current={settings[name]}
             changed={wasChanged(settings[name], name, settingsConfig)}

@@ -111,18 +111,4 @@ export const loadSettingsConfig = ({
     step: 1,
     emoji: '🔲',
   },
-  renderer: {
-    control: 4, // Show when control > 3
-    list: ['react', 'svg'],
-    choiceTitles: {
-      react: 'renderWithReact',
-      svg: 'renderWithCore',
-    },
-    valueTitles: {
-      react: 'React',
-      svg: 'SVG',
-    },
-    dflt: 'react',
-    emoji: '🚀',
-  },
 })

@@ -6,9 +6,9 @@ import {
   CoreSettings,
   ns as coreMenuNs,
 } from 'shared/components/workbench/menus/core-settings/index.mjs'
-import { XrayMenu, ns as xrayNs } from 'shared/components/workbench/menus/xray/index.mjs'
+import { UiSettings, ns as uiNs } from 'shared/components/workbench/menus/ui-settings/index.mjs'
 
-export const ns = [...coreMenuNs, ...designMenuNs, ...xrayNs]
+export const ns = [...coreMenuNs, ...designMenuNs, ...uiNs]
 
 export const DraftMenu = ({
   design,
@@ -38,7 +38,7 @@ export const DraftMenu = ({
     <nav className="grow mb-12">
       <DesignOptions {...menuProps} />
       <CoreSettings {...menuProps} />
-      <XrayMenu {...menuProps} ui={ui} />
+      <UiSettings {...menuProps} ui={ui} />
     </nav>
   )
 }

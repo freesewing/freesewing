@@ -6,7 +6,7 @@ cutLayout: Cut Layout
 save: Save
 export: Export
 edit: Edit
-clear: Clear
+reset: Reset
 help: Help
 name: Name
 width: Width
@@ -20,4 +20,3 @@ showOnlyThisPart: Show only this pattern part
 partInfo: Pattern part info
 pathInfo: Path info
 part: Pattern part
-control: Experience

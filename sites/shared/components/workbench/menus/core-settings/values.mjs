@@ -5,7 +5,6 @@ const ListValue = ({ current, t, config, changed }) =>
     ? t(`core-settings:${config.valueTitles[current]}`)
     : t(`core-settings:${config.valueTitles[config.dflt]}`)
 
-export const RendererSettingValue = ListValue
 export const LocaleSettingValue = ListValue
 export const CompleteSettingValue = ListValue
 export const PaperlessSettingValue = ListValue

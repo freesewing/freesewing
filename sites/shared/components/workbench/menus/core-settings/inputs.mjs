@@ -4,7 +4,7 @@ import { ChoiceButton } from 'shared/components/choice-button.mjs'
 import orderBy from 'lodash.orderby'
 
 // Shared input for list inputs
-export const ListSetting = ({ name, list, config, current, update, t }) => {
+export const ListSetting = ({ name, list, config, current, update, t, setUi }) => {
   if (typeof current === 'undefined') current = config.dflt
 
   const [value, setValue] = useState(current)
@@ -12,7 +12,8 @@ export const ListSetting = ({ name, list, config, current, update, t }) => {
   const handleChange = (newCurrent) => {
     if (newCurrent === config.dflt) reset()
     else {
-      update.settings([name], newCurrent)
+      if (setUi) update.ui(setUi, newCurrent)
+      else update.settings([name], newCurrent)
       setValue(newCurrent)
     }
   }
@@ -139,7 +140,6 @@ export const UnitsSettingInputs = ({ name, config, current, update, t }) => (
 
 export const MarginSettingInput = (props) => <MmSetting {...props} />
 export const ScaleSettingInput = (props) => <NrSetting {...props} />
-export const RendererSettingInput = (props) => <ListSetting {...props} />
 export const CompleteSettingInput = (props) => <ListSetting {...props} />
 export const PaperlessSettingInput = (props) => <ListSetting {...props} />
 

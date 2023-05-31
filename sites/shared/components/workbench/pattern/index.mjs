@@ -5,7 +5,7 @@ export const Pattern = ({ pattern, setView, settings, ui, update }) => {
 
   // Render as SVG
   return ui.renderer === 'svg' ? (
-    <div dangerouslySetInnerHTML={{ __html: patern.render() }} />
+    <div dangerouslySetInnerHTML={{ __html: pattern.render() }} />
   ) : (
     <SvgWrapper renderProps={pattern.getRenderProps()} {...{ update, settings, ui }} />
   )
