@@ -127,7 +127,7 @@ export const frontSideDart = {
     )
     // Prevent bust dart from being located above the armhole
     if (points.bustDartTop.y < points.armhole.y) {
-      points.bustDartTop = points.armhole
+      points.bustDartTop = points.armhole.clone()
       log.info(
         part.name +
           ' Restricted bust dart angle to prevent the dart from starting above the armhole.'
