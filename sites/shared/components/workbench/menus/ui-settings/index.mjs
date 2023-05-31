@@ -1,4 +1,4 @@
-import { XrayIcon } from 'shared/components/icons.mjs'
+import { DesktopIcon } from 'shared/components/icons.mjs'
 //import { ConsoleLog } from './log.mjs'
 //import { XrayReset } from './reset.mjs'
 //import { XrayList } from './list.mjs'
@@ -187,7 +187,7 @@ export const UiSettings = ({
         ) : (
           <>
             <h5 className="flex flex-row gap-2 items-center">
-              <XrayIcon />
+              <DesktopIcon />
               <span>{t('ui-settings:uiSettings')}</span>
             </h5>
             <p>{t('ui-settings:uiSettings.d')}</p>
