@@ -211,7 +211,7 @@ PatternModel.prototype.reveal = async function () {
   }
 
   // Parse JSON content
-  if (this.record.cset) {
+  if (this.record?.cset) {
     for (const lang of this.config.languages) {
       const key = `tags${capitalize(lang)}`
       if (this.record.cset[key]) this.record.cset[key] = JSON.parse(this.record.cset[key])
@@ -259,6 +259,10 @@ PatternModel.prototype.unguardedUpdate = async function (data) {
     this.record = await this.prisma.pattern.update({
       where: { id: this.record.id },
       data,
+      include: {
+        set: true,
+        cset: true,
+      },
     })
   } catch (err) {
     log.warn(err, 'Could not update pattern record')
