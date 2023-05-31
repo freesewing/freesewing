@@ -8,6 +8,16 @@ import {
 } from 'shared/utils.mjs'
 import { ChoiceButton } from 'shared/components/choice-button.mjs'
 
+/*******************************************************************************************
+ * This file contains the base components to be used by inputs in menus in the workbench
+ * For the purposes of our menus, we have two main types:
+ * Sliders for changing numbers
+ * Lists for changing everything else
+ *
+ * Inputs that deal with more specific use cases should wrap one of the above base inputs
+ *******************************************************************************************/
+
+/** A component that shows a number input to edit a value */
 const EditCount = (props) => (
   <div className="form-control mb-2 w-full">
     <label className="label">
@@ -29,6 +39,15 @@ const EditCount = (props) => (
   </div>
 )
 
+/**
+ * A hook to get the change handler for an input.
+ * Also sets the reset function on a parent component
+ * @param  {Number|String|Boolean} options.dflt       the default value for the input
+ * @param  {Function}              options.updateFunc the onChange
+ * @param  {string}                options.name       the name of the property being changed
+ * @param  {Function}              options.setReset   the setReset function passed from the parent component
+ * @return {ret.handleChange}                         the change handler for the input
+ */
 const useSharedHandlers = ({ dflt, updateFunc, name, setReset }) => {
   const reset = useCallback(() => updateFunc(name), [updateFunc, name])
 
@@ -49,6 +68,16 @@ const useSharedHandlers = ({ dflt, updateFunc, name, setReset }) => {
   return { handleChange, reset }
 }
 
+/**
+ * An input for selecting and item from a list
+ * @param  {String}  options.name       the name of the property this input changes
+ * @param  {Object}  options.config     configuration for the input
+ * @param  {String|Number}  options.current    the current value of the input
+ * @param  {Function}  options.updateFunc the function called by the event handler to update the value
+ * @param  {Boolean} options.compact    include descriptions with the list items?
+ * @param  {Function}  options.t          translation function
+ * @param  {Function}  options.setReset   a setter for the reset function on the parent component
+ */
 export const ListInput = ({ name, config, current, updateFunc, compact = false, t, setReset }) => {
   const { handleChange } = useSharedHandlers({
     dflt: config.dflt,
@@ -78,6 +107,7 @@ export const ListInput = ({ name, config, current, updateFunc, compact = false, 
   )
 }
 
+/** A boolean version of {@see ListInput} that sets up the necessary configuration */
 export const BoolInput = (props) => {
   const boolConfig = {
     list: [0, 1],
@@ -96,6 +126,18 @@ export const BoolInput = (props) => {
   return <ListInput {...props} config={boolConfig} />
 }
 
+/**
+ * An input component that uses a slider to change a number value
+ * @param  {String}   options.name         the name of the property being changed by the input
+ * @param  {Object}   options.config       configuration for the input
+ * @param  {Number}   options.current      the current value of the input
+ * @param  {Function}   options.updateFunc   the function called by the event handler to update the value
+ * @param  {Function}   options.t            translation function
+ * @param  {Boolean}   options.override     open the text input to allow override of the slider?
+ * @param  {String}   options.suffix       a suffix to append to value labels
+ * @param  {Function} options.valFormatter a function that accepts a value and formats it for display as a label
+ * @param  {Function}   options.setReset     a setter for the reset function on the parent component
+ */
 export const SliderInput = ({
   name,
   config,
@@ -107,6 +149,7 @@ export const SliderInput = ({
   valFormatter = (val) => val,
   setReset,
   children,
+  changed,
 }) => {
   const { max, min } = config
   const { handleChange } = useSharedHandlers({
@@ -117,7 +160,7 @@ export const SliderInput = ({
     setReset,
   })
 
-  let currentOrDefault = current === undefined ? config.dflt : current
+  let currentOrDefault = changed ? current : config.dflt
 
   return (
     <>
@@ -153,7 +196,7 @@ export const SliderInput = ({
       </div>
       <input
         type="range"
-        {...{ min, max, value: currentOrDefault, step: config.step }}
+        {...{ min, max, value: currentOrDefault, step: config.step || 0.1 }}
         onChange={(evt) => handleChange(evt.target.value)}
         className={`
           range range-sm mt-1
@@ -165,12 +208,10 @@ export const SliderInput = ({
   )
 }
 
-export const PctInput = ({ config, settings, current, updateFunc, type = 'pct', ...rest }) => {
-  const suffix = type === 'deg' ? '°' : '%'
-  const factor = type === 'deg' ? 1 : 100
-  let pctCurrent = typeof current === 'undefined' ? config.dflt : current * factor
-
-  const valFormatter = (val) => round(val)
+/** A {@see SliderInput} to handle percentage values */
+export const PctInput = ({ current, changed, updateFunc, ...rest }) => {
+  const factor = 100
+  let pctCurrent = changed ? current * factor : current
   const pctUpdateFunc = useCallback(
     (path, newVal) => updateFunc(path, newVal === undefined ? undefined : newVal / factor),
     [updateFunc, factor]
@@ -180,28 +221,18 @@ export const PctInput = ({ config, settings, current, updateFunc, type = 'pct', 
     <SliderInput
       {...{
         ...rest,
-        config: {
-          ...config,
-          step: 0.1,
-        },
         current: pctCurrent,
         updateFunc: pctUpdateFunc,
-        suffix,
-        valFormatter,
+        suffix: '%',
+        valFormatter: round,
+        changed,
       }}
-    >
-      <div className="flex flex-row justify-around">
-        <span className={current === config.dflt ? 'text-secondary' : 'text-accent'}>
-          {config.toAbs && settings.measurements
-            ? formatMm(config.toAbs(current / factor, settings))
-            : ' '}
-        </span>
-      </div>
-    </SliderInput>
+    />
   )
 }
 
-export const DegInput = (props) => <PctInput {...props} type="deg" />
+/** A {@see SliderInput} to handle degree values */
+export const DegInput = (props) => <SliderInput {...props} suffix="°" valFormatter={round} />
 
 export const MmInput = (props) => {
   const { units, updateFunc, current } = props
@@ -227,4 +258,5 @@ export const MmInput = (props) => {
   )
 }
 
+/** A placeholder for an input to handle constant values */
 export const ConstantInput = () => <p>FIXME: Constant options are not implemented (yet)</p>

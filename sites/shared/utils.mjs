@@ -149,6 +149,7 @@ export const getCrumbs = (app, slug = false) => {
   return crumbs
 }
 
+/** convert a millimeter value to a Number value in the given units */
 export const measurementAsUnits = (mmValue, units = 'metric') =>
   mmValue / (units === 'imperial' ? 25.4 : 10)
 
@@ -199,7 +200,7 @@ export const optionsMenuStructure = (options) => {
     if (typeof option === 'object') {
       option.dflt = option.dflt || option[optionType(option)]
       if (option.menu) {
-        set(menu, `${option.menu}.isMenu`, true)
+        set(menu, `${option.menu}.isGroup`, true)
         set(menu, `${option.menu}.${option.name}`, option)
       } else if (typeof option.menu === 'undefined') {
         console.log(
