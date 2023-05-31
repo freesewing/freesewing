@@ -114,7 +114,7 @@ export const loadSettingsConfig = ({
   margin: {
     control: 4, // Show when control > 3
     min: 0,
-    max: units === 'metric' ? 2.5 : 2.5,
+    max: 2.5,
     dflt: units === 'metric' ? 0.2 : 0.125,
     step: units === 'metric' ? 0.1 : 0.125,
     emoji: '🔲',

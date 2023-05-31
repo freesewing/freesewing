@@ -1,11 +1,5 @@
 import { useEffect, useCallback } from 'react'
-import {
-  formatMm,
-  round,
-  measurementAsMm,
-  measurementAsUnits,
-  formatFraction128,
-} from 'shared/utils.mjs'
+import { round, measurementAsMm, measurementAsUnits, formatFraction128 } from 'shared/utils.mjs'
 import { ChoiceButton } from 'shared/components/choice-button.mjs'
 
 /*******************************************************************************************
