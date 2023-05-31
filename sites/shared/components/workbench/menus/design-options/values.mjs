@@ -1,5 +1,7 @@
 import { formatMm, formatPercentage } from 'shared/utils.mjs'
-import { ListValue, HighlightedValue, PlainValue } from '../shared/values'
+import { ListValue, HighlightedValue, PlainValue, BoolValue } from '../shared/values'
+
+/** Displays the current percentatge value, and the absolute value if configured */
 export const PctOptionValue = ({ config, current, settings, changed }) => {
   const val = changed ? current : config.pct / 100
 
@@ -11,34 +13,30 @@ export const PctOptionValue = ({ config, current, settings, changed }) => {
   )
 }
 
-export const BoolOptionValue = ({ config, current, t, changed }) => (
-  <ListValue
-    {...{
-      current: current === undefined ? current : Number(current),
-      t,
-      config: { ...config, dflt: Number(config.bool) },
-      changed,
-    }}
-  />
-)
+/** Displays a boolean value */
+export const BoolOptionValue = BoolValue
 
+/** Displays a count value*/
 export const CountOptionValue = ({ config, current, changed }) => (
   <PlainValue {...{ current, changed, dflt: config.count }} />
 )
 
-export const ListOptionValue = ({ name, config, current, t, changed }) => {
-  const translate = config.doNotTranslate ? (input) => input : (input) => t(`${name}.o.${input}`)
-  const value = translate(changed ? current : config.dflt)
-  return <HighlightedValue changed={changed}> {value} </HighlightedValue>
-}
+/** Displays a list option value */
+export const ListOptionValue = (props) => (
+  <ListValue {...props} t={(input) => props.t(`${props.name}.o.${input}`)} />
+)
 
+/** Displays a degree value */
 export const DegOptionValue = ({ config, current, changed }) => (
   <HighlightedValue changed={changed}> {changed ? current : config.deg}&deg;</HighlightedValue>
 )
 
+/** Displays the MmOptions are not supported */
 export const MmOptionValue = () => (
-  <span className="text-error">FIXME: No MmOptionvalue implemented</span>
+  <span className="text-error">FIXME: No Mm Options are not supported</span>
 )
+
+/** Displays that constant values are not implemented in the front end */
 export const ConstantOptionValue = () => (
   <span className="text-error">FIXME: No ConstantOptionvalue implemented</span>
 )

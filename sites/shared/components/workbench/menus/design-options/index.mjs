@@ -1,7 +1,7 @@
 // Components
 import { OptionsIcon } from 'shared/components/icons.mjs'
 import { optionsMenuStructure } from 'shared/utils.mjs'
-import { optionType } from 'shared/utils.mjs'
+import { optionType, formatMm } from 'shared/utils.mjs'
 import {
   BoolInput,
   ConstantInput,
@@ -24,6 +24,22 @@ import { MenuItem } from '../shared/menu-item.mjs'
 
 export const ns = ['design-options']
 
+const PctOptionInput = (props) => {
+  const { config, settings, changed } = props
+  const currentOrDefault = changed ? props.current : config.dflt / 100
+  return (
+    <PctInput {...props}>
+      <div className="flex flex-row justify-around">
+        <span className={changed ? 'text-accent' : 'text-secondary'}>
+          {config.toAbs && settings.measurements
+            ? formatMm(config.toAbs(currentOrDefault, settings))
+            : ' '}
+        </span>
+      </div>
+    </PctInput>
+  )
+}
+
 // Facilitate lookup of the input component
 const inputs = {
   bool: BoolInput,
@@ -32,7 +48,7 @@ const inputs = {
   deg: DegInput,
   list: ListInput,
   mm: () => <span>FIXME: Mm options are deprecated. Please report this </span>,
-  pct: PctInput,
+  pct: PctOptionInput,
 }
 
 // Facilitate lookup of the value component
@@ -55,16 +71,13 @@ const emojis = {
   groupDflt: '📁',
 }
 
-export const DesignOption = ({
-  name,
-  current,
-  config,
-  settings,
-  updateFunc,
-  t,
-  loadDocs,
-  changed = false,
-}) => {
+/**
+ * A wrapper for {@see MenuItem} to handle design option-specific business
+ * @param  {Object}    options.config   the config for the item
+ * @param  {Object}    options.settings core settings
+ * @param  {Object} options.rest     the rest of the props
+ */
+export const DesignOption = ({ config, settings, ...rest }) => {
   const type = optionType(config)
   const Input = inputs[type]
   const Value = values[type]
@@ -76,22 +89,26 @@ export const DesignOption = ({
   return (
     <MenuItem
       {...{
-        name,
         config,
-        current,
-        updateFunc,
-        t,
-        changed,
-        loadDocs,
+        ...rest,
         Input,
         Value,
         allowOverride,
-        passProps: { settings },
       }}
     />
   )
 }
 
+/**
+ * The design options menu
+ * @param  {String}  options.design        the name of the design
+ * @param  {Object}  options.patternConfig the configuration from the pattern
+ * @param  {Object}  options.settings      core settings
+ * @param  {Object}  options.update        settings and ui update functions
+ * @param  {String}  options.language      the menu language
+ * @param  {Object}  options.account       the user account data
+ * @param  {Boolean|React.component} options.DynamicDocs   A docs component
+ */
 export const DesignOptions = ({
   design,
   patternConfig,

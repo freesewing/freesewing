@@ -58,6 +58,15 @@ const inputs = {
 
 export const ns = ['core-settings', 'modal']
 
+/**
+ * The core settings menu
+ * @param  {Object} options.update        settings and ui update functions
+ * @param  {Object} options.settings      core settings
+ * @param  {Object} options.patternConfig the configuration from the pattern
+ * @param  {String} options.language      the menu language
+ * @param  {Object} options.account       the user account data
+ * @param  {Boolean|React.Com options.DynamicDocs   A docs component
+ */
 export const CoreSettings = ({
   update,
   settings,

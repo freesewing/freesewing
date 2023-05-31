@@ -2,13 +2,26 @@ import { ClearIcon, HelpIcon, EditIcon } from 'shared/components/icons.mjs'
 import { Collapse } from 'shared/components/collapse.mjs'
 import { useState, useMemo } from 'react'
 
+/**
+ * Check to see if a value is different from its default
+ * @param  {Number|String|Boolean} current the current value
+ * @param  {Object} config  configuration containing a dflt key
+ * @return {Boolean}         was the value changed?
+ */
 export const wasChanged = (current, config) => {
   if (typeof current === 'undefined') return false
   if (current === config.dflt) return false
 
   return true
 }
-
+/**
+ * A generic component to present the title of a menu item
+ * @param  {String}  options.name    the name of the item, to act as its translation key
+ * @param  {Function}  options.t       the translation function
+ * @param  {String|React.Component}  options.current a  the current value, or a Value component to display it
+ * @param  {Boolean} options.open    is the menu item open?
+ * @param  {String}  options.emoji   the emoji icon of the menu item
+ */
 export const ItemTitle = ({ name, t, current = null, open = false, emoji = '' }) => (
   <div className={`flex flex-row gap-1 items-center w-full ${open ? '' : 'justify-between'}`}>
     <span className="font-medium">
@@ -21,7 +34,25 @@ export const ItemTitle = ({ name, t, current = null, open = false, emoji = '' })
   </div>
 )
 
+/** @type {String} class to apply to buttons on open menu items */
 const openButtonClass = 'btn btn-xs btn-ghost px-0'
+
+/**
+ * A generic component for handling a menu item.
+ * Wraps the given input in a {@see Collapse} with the appropriate buttons
+ * @param  {String}  options.name       the name of the item, for using as a key
+ * @param  {Object}  options.config     the configuration for the input
+ * @param  {Sting|Boolean|Number}  options.current    the current value of the item
+ * @param  {Function}  options.updateFunc the function that will be called by event handlers to update the value
+ * @param  {Function}  options.t          the translation function
+ * @param  {Object}  options.passProps  props to pass to the Input component
+ * @param  {Boolean}  changed            has the value changed from default?
+ * @param  {Function}  loadDocs           a function to load documentation for the item into a modal
+ * @param  {React.Component}  Input              the input component this menu item will use
+ * @param  {React.Component}  Value              a value display component this menu item will use
+ * @param  {Boolean} allowOverride      all a text input to be used to override the given input component
+ * @param  {Number}  control            the user-defined control level
+ */
 export const MenuItem = ({
   name,
   config,
@@ -36,9 +67,12 @@ export const MenuItem = ({
   allowOverride = false,
   control = Infinity,
 }) => {
+  // state for knowing whether the override input should be shown
   const [override, setOverride] = useState(false)
+  // store the reset function in state because the Input may set a custom one
   const [reset, setReset] = useState(() => () => updateFunc(name))
 
+  // generate properties to pass to the Input
   const drillProps = useMemo(
     () => ({
       name,
@@ -48,14 +82,16 @@ export const MenuItem = ({
       t,
       changed,
       override,
-      setReset,
+      setReset, // allow setting of the reset function
       ...passProps,
     }),
     [name, config, current, updateFunc, t, changed, override, setReset, passProps]
   )
 
+  // don't render if this item is more advanced than the user has chosen to see
   if (config.control && config.control > control) return null
 
+  // get buttons for open and closed states
   const buttons = []
   const openButtons = []
   if (loadDocs)
@@ -93,6 +129,7 @@ export const MenuItem = ({
     openButtons.push(<ResetButton open key="clear" />)
   }
 
+  // props to pass to the ItemTitle
   const titleProps = { name, t, current: <Value {...drillProps} />, emoji: config.emoji }
 
   return (
@@ -108,6 +145,24 @@ export const MenuItem = ({
   )
 }
 
+/**
+ * A component for recursively displaying groups of menu items.
+ * Accepts any object where menu item configurations are keyed by name
+ * Items that are group headings are expected to have an isGroup: true property
+ * @param  {Boolean} options.collapsible   Should this group be collapsible (use false for the top level of a menu)
+ * @param  {Number}  options.control       the user-defined control level
+ * @param  {String}  options.name          the name of the group or item
+ * @param  {Object}  options.currentValues a map of current values for items in the group, keyed by name
+ * @param  {Object}  structure             the configuration for the group.
+ * @param  {React.Component}  Item                  the component to use for menu items
+ * @param  {Object}  values                a map of Value display components to be used by menu items in the group
+ * @param  {Object}  inputs                a map of Input components to be used by menu items in the group
+ * @param  {Function}  loadDocs              a function to load item documentation into a modal
+ * @param  {Object}  passProps             properties to pass to Inputs within menu items
+ * @param  {Object}  emojis                a map of emojis to use as icons for groups or items
+ * @param  {Function}  updateFunc            the function called by change handlers on inputs within menu items
+ * @param  {Function}  t                     translation function
+ */
 export const MenuItemGroup = ({
   collapsible = true,
   control,
@@ -123,9 +178,13 @@ export const MenuItemGroup = ({
   updateFunc,
   t,
 }) => {
+  // map the entries in the structure
   const content = Object.entries(structure).map(([itemName, item]) => {
-    if (itemName === 'isMenu' || item === false) return null
-    if (!item.isMenu)
+    // if it's the isGroup property, or it is false, it shouldn't be shown
+    if (itemName === 'isGroup' || item === false) return null
+
+    // if the item is not a menu, it's an Item
+    if (!item.isGroup)
       return (
         <Item
           key={itemName}
@@ -145,6 +204,7 @@ export const MenuItemGroup = ({
         />
       )
 
+    // otherwise, it's a group
     return (
       <MenuItemGroup
         key={itemName}
@@ -167,21 +227,26 @@ export const MenuItemGroup = ({
     )
   })
 
-  const titleProps = {
-    name,
-    t,
-    emoji: emojis[name] || emojis.dflt,
+  // if it should be wrapped in a collapsible
+  if (collapsible) {
+    // props to give to the group title
+    const titleProps = {
+      name,
+      t,
+      emoji: emojis[name] || emojis.dflt,
+    }
+    return (
+      <Collapse
+        bottom
+        color="secondary"
+        title={<ItemTitle {...titleProps} />}
+        openTitle={<ItemTitle open {...titleProps} />}
+      >
+        {content}
+      </Collapse>
+    )
   }
-  return collapsible ? (
-    <Collapse
-      bottom
-      color="secondary"
-      title={<ItemTitle {...titleProps} />}
-      openTitle={<ItemTitle open {...titleProps} />}
-    >
-      {content}
-    </Collapse>
-  ) : (
-    content
-  )
+
+  //otherwise just return the content
+  return content
 }
