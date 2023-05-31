@@ -25,7 +25,7 @@ const dynamicDocsFactory = (lang) => {
     const MDX = mdx ? mdx : <Spinner className="w16 h-16 animate-spin text-primary" />
 
     return (
-      <MdxWrapper {...frontmatter} path={`site/draft/core-settings`} language={lang}>
+      <MdxWrapper {...frontmatter} path={path} language={lang}>
         <MDX components={components} />
       </MdxWrapper>
     )

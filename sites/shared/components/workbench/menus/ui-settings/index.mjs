@@ -1,16 +1,20 @@
-import { DesktopIcon } from 'shared/components/icons.mjs'
+//Dependencies
+import { loadSettingsConfig } from './config.mjs'
+// Hooks
+import { useContext } from 'react'
+import { useTranslation } from 'next-i18next'
+import { Popout } from 'shared/components/popout.mjs'
+// Context
+import { ModalContext } from 'shared/context/modal-context.mjs'
+// Components
+import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
+import { Collapse } from 'shared/components/collapse.mjs'
+import { HelpIcon, DesktopIcon } from 'shared/components/icons.mjs'
+import { ControlSettingInput, RendererSettingInput, XRaySettingInput } from './inputs.mjs'
+import { ControlSettingValue, RendererSettingValue, XRaySettingValue } from './values.mjs'
 //import { ConsoleLog } from './log.mjs'
 //import { XrayReset } from './reset.mjs'
 //import { XrayList } from './list.mjs'
-import { useTranslation } from 'next-i18next'
-import { Popout } from 'shared/components/popout.mjs'
-//Dependencies
-import { loadSettingsConfig } from './config.mjs'
-// Components
-import { Collapse } from 'shared/components/collapse.mjs'
-import { HelpIcon } from 'shared/components/icons.mjs'
-import { ControlSettingInput, RendererSettingInput, XRaySettingInput } from './inputs.mjs'
-import { ControlSettingValue, RendererSettingValue, XRaySettingValue } from './values.mjs'
 
 export const ns = ['ui-settings']
 
@@ -59,6 +63,7 @@ export const Setting = ({
   loadDocs,
   control,
   ui,
+  setModal,
 }) => {
   const drillProps = { name, config, current, update, t, changed, control }
 
@@ -147,6 +152,7 @@ export const UiSettings = ({
   DynamicDocs,
 }) => {
   const { t } = useTranslation(ns)
+  const { setModal } = useContext(ModalContext)
 
   const settingsConfig = loadSettingsConfig()
 
