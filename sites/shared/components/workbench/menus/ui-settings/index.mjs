@@ -3,13 +3,12 @@ import { loadSettingsConfig } from './config.mjs'
 // Hooks
 import { useContext } from 'react'
 import { useTranslation } from 'next-i18next'
-import { Popout } from 'shared/components/popout.mjs'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { Collapse } from 'shared/components/collapse.mjs'
-import { HelpIcon, DesktopIcon } from 'shared/components/icons.mjs'
+import { HelpIcon, DesktopIcon, ClearIcon } from 'shared/components/icons.mjs'
 import { ControlSettingInput, RendererSettingInput, XRaySettingInput } from './inputs.mjs'
 import { ControlSettingValue, RendererSettingValue, XRaySettingValue } from './values.mjs'
 //import { ConsoleLog } from './log.mjs'
@@ -39,7 +38,7 @@ const wasChanged = (current, name, settingsConfig) => {
   return true
 }
 
-export const UiTitle = ({ name, t, changed, current = null, open = false, emoji = '' }) => (
+export const UiTitle = ({ name, t, current = null, open = false, emoji = '' }) => (
   <div className={`flex flex-row gap-1 items-center w-full ${open ? '' : 'justify-between'}`}>
     <span className="font-medium">
       <span role="img" className="pr-2">
@@ -52,19 +51,7 @@ export const UiTitle = ({ name, t, changed, current = null, open = false, emoji 
   </div>
 )
 
-export const Setting = ({
-  name,
-  config,
-  current,
-  update,
-  t,
-  settingsConfig,
-  changed,
-  loadDocs,
-  control,
-  ui,
-  setModal,
-}) => {
+export const Setting = ({ name, config, current, update, t, changed, loadDocs, control, ui }) => {
   const drillProps = { name, config, current, update, t, changed, control }
 
   // Don't bother with X-Ray in SVG mode
@@ -114,8 +101,6 @@ export const Setting = ({
 
   const titleProps = { name, t, current: <Value {...drillProps} />, emoji: config.emoji }
 
-  const boolSettings = ['sabool', 'paperless', 'details']
-
   if (control > 4) {
     // Save gurus some clicks
     if (name === 'renderer')
@@ -141,16 +126,7 @@ export const Setting = ({
   )
 }
 
-export const UiSettings = ({
-  design,
-  update,
-  settings,
-  ui,
-  account,
-  control,
-  language,
-  DynamicDocs,
-}) => {
+export const UiSettings = ({ design, update, settings, ui, control, language, DynamicDocs }) => {
   const { t } = useTranslation(ns)
   const { setModal } = useContext(ModalContext)
 
@@ -182,8 +158,6 @@ export const UiSettings = ({
         <HelpIcon className="w-4 h-4" />
       </button>
     )
-
-  const toggleXray = () => update.ui(['xray', 'enabled'], ui?.xray?.enabled ? false : true)
 
   return (
     <>

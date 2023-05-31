@@ -62,7 +62,7 @@ const inputs = {
   units: UnitsSettingInput,
 }
 
-export const CoreTitle = ({ name, t, changed, current = null, open = false, emoji = '' }) => (
+export const CoreTitle = ({ name, t, current = null, open = false, emoji = '' }) => (
   <div className={`flex flex-row gap-1 items-center w-full ${open ? '' : 'justify-between'}`}>
     <span className="font-medium">
       <span role="img" className="pr-2">
@@ -90,8 +90,6 @@ export const Setting = ({
   t,
   samm,
   units,
-  patternConfig,
-  settingsConfig,
   changed,
   loadDocs,
   control,
@@ -196,7 +194,6 @@ export const CoreSettings = ({
   settings,
   patternConfig,
   language,
-  account,
   DynamicDocs,
   control,
 }) => {

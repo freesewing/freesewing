@@ -38,7 +38,6 @@ export const Collapse = ({
   opened = false,
   toggle = false,
   toggleClasses = '',
-  toggleIcon = '',
   onClick = false,
   openButtons = null,
   className = '',
@@ -100,7 +99,7 @@ export const MimicCollapseLink = ({
   </Link>
 )
 
-export const useCollapseButton = (props) => {
+export const useCollapseButton = () => {
   // Shared state
   const [open, setOpen] = useState(false)
 

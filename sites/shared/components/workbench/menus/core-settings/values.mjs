@@ -10,7 +10,7 @@ export const CompleteSettingValue = ListValue
 export const PaperlessSettingValue = ListValue
 export const SaBoolSettingValue = ListValue
 
-export const MarginSettingValue = ({ current, t, units, config }) => (
+export const MarginSettingValue = ({ current, units, config }) => (
   <span
     dangerouslySetInnerHTML={{
       __html: formatMm(typeof current === 'undefined' ? config.dflt : current, units),
@@ -31,4 +31,4 @@ export const SaMmSettingValue = ({ current, units, config }) => (
 
 export const ScaleSettingValue = ({ current, config }) => (current ? current : config.dflt)
 
-export const UnitsSettingValue = ({ current, t, units }) => t(`core-settings:${current}`)
+export const UnitsSettingValue = ({ current, t }) => t(`core-settings:${current}`)

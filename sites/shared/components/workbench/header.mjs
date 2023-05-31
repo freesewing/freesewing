@@ -161,8 +161,6 @@ const NavIcons = ({ setModal, setView, view }) => {
 export const WorkbenchHeader = ({ view, setView, update }) => {
   const { setModal } = useContext(ModalContext)
   const { loading } = useContext(LoadingContext)
-  const [show, setShow] = useState(true)
-  console.log('header', update)
 
   return (
     <header
@@ -172,7 +170,7 @@ export const WorkbenchHeader = ({ view, setView, update }) => {
       w-full
       z-30
       transition-transform
-      ${show || loading ? '' : 'fixed bottom-0 lg:top-0 left-0 translate-y-36 lg:-translate-y-36'}
+      ${loading ? '' : 'fixed bottom-0 lg:top-0 left-0 translate-y-36 lg:-translate-y-36'}
       drop-shadow-xl
     `}
     >

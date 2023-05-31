@@ -4,7 +4,7 @@ import { ChoiceButton } from 'shared/components/choice-button.mjs'
 import orderBy from 'lodash.orderby'
 
 // Shared input for list inputs
-export const ListSetting = ({ name, list, config, current, update, t, setUi }) => {
+export const ListSetting = ({ name, config, current, update, t, setUi }) => {
   if (typeof current === 'undefined') current = config.dflt
 
   const [value, setValue] = useState(current)

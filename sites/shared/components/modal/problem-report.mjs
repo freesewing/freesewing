@@ -5,7 +5,6 @@ import { useContext, useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useRouter } from 'next/router'
 import { useBugsnag } from 'site/hooks/use-bugsnag.mjs'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
@@ -13,7 +12,6 @@ import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { ChoiceButton } from 'shared/components/choice-button.mjs'
-import { Popout } from 'shared/components/popout.mjs'
 import { CopyToClipboard } from 'shared/components/copy-to-clipboard.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
@@ -60,7 +58,7 @@ const patronInfo = (account) =>
 
 `
 
-const issueTemplate = ({ isPublic, account, title, data, bug = { id: 'unknown', url: '#' } }) => `
+const issueTemplate = ({ isPublic, account, data, bug = { id: 'unknown', url: '#' } }) => `
 ${patronInfo(account)}
 
 - **Site**: ${siteConfig.site}
@@ -114,11 +112,7 @@ export const ModalProblemReport = ({ title, data }) => {
   const backend = useBackend()
 
   // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
   const { clearModal, setModal } = useContext(ModalContext)
-
-  // State
-  const [result, setResult] = useState(null)
 
   // Helper method to create an issue
   const createIssue = async ({ title, body, labels }) => {
@@ -174,7 +168,7 @@ export const ModalProblemReport = ({ title, data }) => {
       body: issueTemplate({ isPublic: true, account, title, data, bug }),
       labels: ['problem-report', 'public-report'],
     }
-    if (account.patron) labels.push('impacts-patron')
+    if (account.patron) issueData.labels.push('impacts-patron')
     const issue = await createIssue(issueData)
     setModal(<ModalResult {...{ bug, issue, t, clearModal }} />)
   }

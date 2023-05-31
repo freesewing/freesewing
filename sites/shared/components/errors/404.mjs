@@ -5,7 +5,6 @@ import { Popout } from 'shared/components/popout.mjs'
 import { MegaphoneIcon } from 'shared/components/icons.mjs'
 import { useTranslation } from 'next-i18next'
 import { ModalProblemReport } from 'shared/components/modal/problem-report.mjs'
-import Link from 'next/link'
 
 export const ns = ['errors']
 

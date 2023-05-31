@@ -2,9 +2,7 @@
 import { useState, useEffect, useContext, useCallback } from 'react'
 import { useTranslation } from 'next-i18next'
 import orderBy from 'lodash.orderby'
-import { measurements, isDegreeMeasurement } from 'config/measurements.mjs'
-import { measurementAsMm, formatMm, capitalize } from 'shared/utils.mjs'
-import { measurements as designMeasurements } from 'shared/prebuild/data/design-measurements.mjs'
+import { formatMm, capitalize } from 'shared/utils.mjs'
 import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
 // Hooks
 import { useDropzone } from 'react-dropzone'
@@ -22,16 +20,11 @@ import { Collapse, useCollapseButton, MimicCollapseLink } from 'shared/component
 import { BackToAccountButton, Choice } from './shared.mjs'
 import { ModalDesignPicker } from 'shared/components/modal/design-picker.mjs'
 import {
-  FilterIcon,
-  ClearIcon,
-  PlusIcon,
   OkIcon,
   NoIcon,
   TrashIcon,
-  EditIcon,
   SettingsIcon,
   DownloadIcon,
-  LinkIcon,
   PageIcon,
 } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
@@ -119,7 +112,6 @@ export const NewSet = ({
 const EditField = (props) => {
   if (props.field === 'name') return <EditName {...props} />
   if (props.field === 'notes') return <EditNotes {...props} />
-  if (props.field === 'imperial') return <EditUnits {...props} />
   if (props.field === 'public') return <EditPublic {...props} />
   if (props.field === 'img') return <EditImg {...props} />
 
@@ -143,21 +135,9 @@ export const EditRow = (props) => (
   </Collapse>
 )
 
-const Mval = ({ m, val = false, imperial = false, className = '' }) =>
-  val ? (
-    isDegreeMeasurement(m) ? (
-      <span>{val}°</span>
-    ) : (
-      <span
-        dangerouslySetInnerHTML={{ __html: formatMm(val, imperial ? 'imperial' : 'metric') }}
-        className={className}
-      />
-    )
-  ) : null
-
 const EditImg = ({ t, pattern, account, backend, toast, refresh }) => {
   const [img, setImg] = useState(pattern.img)
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+  const { startLoading, stopLoading } = useContext(LoadingContext)
 
   const onDrop = useCallback((acceptedFiles) => {
     const reader = new FileReader()

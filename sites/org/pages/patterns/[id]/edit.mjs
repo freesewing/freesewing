@@ -33,7 +33,7 @@ const EditPatternPage = ({ page, id }) => {
     // Guard against loops as the backend object is recreated on each render
     if (pattern === false) getPattern()
     else if (pattern.id && pattern.id !== id) getPattern()
-  }, [id, pattern.id, backend])
+  }, [id, pattern, backend])
 
   const baseSettings = pattern
     ? {

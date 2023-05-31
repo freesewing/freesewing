@@ -1,5 +1,4 @@
 import fetch from 'node-fetch'
-import { log } from '../utils/log.mjs'
 import { UserModel } from './user.mjs'
 
 export function IssueModel(tools) {

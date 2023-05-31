@@ -1,5 +1,4 @@
 import { IssueModel } from '../models/issue.mjs'
-import { UserModel } from '../models/user.mjs'
 
 export function IssuesController() {}
 

@@ -12,7 +12,7 @@ import { components } from 'shared/components/mdx/index.mjs'
  * This will return a language-specific component
  */
 const dynamicDocsFactory = (lang) => {
-  return function ({ path }) {
+  return function DynamicDocs({ path }) {
     const [frontmatter, setFrontmatter] = useState({})
     const mdx = dynamic(
       () =>

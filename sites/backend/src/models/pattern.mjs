@@ -181,7 +181,7 @@ PatternModel.prototype.guardedClone = async function ({ params, user }) {
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   await this.read({ id: parseInt(params.id) })
-  if (this.record.userId !== user.uid && !this.record.public && !this.rbac.support(support)) {
+  if (this.record.userId !== user.uid && !this.record.public && !this.rbac.support(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
 

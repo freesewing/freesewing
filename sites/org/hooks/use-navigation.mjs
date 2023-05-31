@@ -152,7 +152,7 @@ const sitePages = (t = false, control = 99) => {
 }
 
 export const useNavigation = (params = {}, extra = []) => {
-  const { path = [], locale = 'en' } = params
+  const { locale = 'en' } = params
   const { t } = useTranslation(ns)
   const { account } = useAccount()
 

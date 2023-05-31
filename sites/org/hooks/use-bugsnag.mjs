@@ -27,7 +27,7 @@ function createErrorId() {
 /*
  * The hook
  */
-export function useBugsnag(bugsnag) {
+export function useBugsnag() {
   const { account } = useAccount()
   const reportError = async (err, data = false) => {
     const id = createErrorId()

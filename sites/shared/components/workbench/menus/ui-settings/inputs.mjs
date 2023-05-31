@@ -3,7 +3,7 @@ import { ChoiceButton } from 'shared/components/choice-button.mjs'
 import { ControlSettings } from 'shared/components/account/control.mjs'
 
 // Shared input for list inputs
-export const ListSetting = ({ name, list, config, current, update, t }) => {
+export const ListSetting = ({ name, config, current, update, t }) => {
   if (typeof current === 'undefined') current = config.dflt
 
   const [value, setValue] = useState(current)

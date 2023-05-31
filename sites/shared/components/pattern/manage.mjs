@@ -7,7 +7,6 @@ import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
 // Context
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
-import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import Markdown from 'react-markdown'
 import { Spinner } from 'shared/components/spinner.mjs'
@@ -31,30 +30,16 @@ import { EditRow } from 'shared/components/account/patterns.mjs'
 
 export const ns = [...ns404, 'toast']
 
-const ManageOwnPattern = ({ pattern }) => {
-  return <p>Manage own pattern</p>
-}
-
-const ManagePublicPattern = ({ pattern }) => {
-  return <p>Manage public pattern</p>
-}
-
-const AccessDenied = ({ pattern }) => {
-  return <p>Access Denied</p>
-}
-
 export const ManagePattern = ({ id = false }) => {
   // Context
   const { addPages } = useContext(NavigationContext)
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
 
   // State
   const [pattern, setPattern] = useState({})
   const [error, setError] = useState(false)
-  const [fresh, setFresh] = useState(0)
 
   // Hooks
-  const { account, setAccount, token } = useAccount()
+  const { account, token } = useAccount()
   const backend = useBackend(token)
   const { t, i18n } = useTranslation(ns)
   const { language } = i18n
@@ -216,7 +201,7 @@ export const ManagePattern = ({ id = false }) => {
           <button
             className="btn btn-error w-full"
             title={t('exportPattern')}
-            onClick={() => setModal(<p>fixme: implement this</p>)}
+            onClick={() => console.log('fixme: implement this')}
           >
             <TrashIcon />
             <span className="pl-2">{t('removePattern')}</span>
