@@ -1,28 +1,28 @@
-import { OptionsIcon } from 'shared/components/icons.mjs'
-import { Chevron } from 'shared/components/navigation/primary.mjs'
-import { Option } from './option.mjs'
-import { useTranslation } from 'next-i18next'
-import { optionsMenuStructure } from 'shared/utils.mjs'
-import { adult, doll, giant } from '@freesewing/models'
+// import { OptionsIcon } from 'shared/components/icons.mjs'
+// import { Chevron } from 'shared/components/navigation/primary.mjs'
+// import { Option } from './option.mjs'
+// import { useTranslation } from 'next-i18next'
+// import { optionsMenuStructure } from 'shared/utils.mjs'
+// import { adult, doll, giant } from '@freesewing/models'
 
-const groups = { adult, doll, giant }
+// const groups = { adult, doll, giant }
 
-const SampleDesignOption = (props) => {
-  const { t } = useTranslation(['app'])
+// const SampleDesignOption = (props) => {
+//   const { t } = useTranslation(['app'])
 
-  return (
-    <Option
-      updateGist={props.updateGist}
-      option={props.option}
-      design={props.design}
-      active={props.gist.sample?.option}
-      label={t(`o_${props.design.designConfig.data.name}:${props.option}.t`)}
-      sampleSettings={{ type: 'option', option: props.option }}
-    />
-  )
-}
+//   return (
+//     <Option
+//       updateGist={props.updateGist}
+//       option={props.option}
+//       design={props.design}
+//       active={props.gist.sample?.option}
+//       label={t(`o_${props.design.designConfig.data.name}:${props.option}.t`)}
+//       sampleSettings={{ type: 'option', option: props.option }}
+//     />
+//   )
+// }
 
-export const TestDesignOptions = (props) => {
+export const TestDesignOptions = () => {
   return <span> FIXME: Implement Sample Options </span>
   // const { t } = useTranslation(['app'])
   // const optionsMenu = optionsMenuStructure(props.design.patternConfig.options)
