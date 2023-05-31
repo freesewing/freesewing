@@ -15,6 +15,7 @@ export const cup = {
     sideCurve: { pct: 0, min: -50, max: 50, menu: 'fit' },
     frontCurve: { pct: 0, min: -50, max: 50, menu: 'fit' },
     bellaGuide: { bool: false, menu: 'fit' },
+    bustDartAngle: 0,
   },
   draft: ({
     store,
