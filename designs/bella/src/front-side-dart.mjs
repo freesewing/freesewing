@@ -184,11 +184,11 @@ export const frontSideDart = {
     )
     points.waistDartLeftCp = points.waistDartLeft.shift(
       90,
-      points.waistDartHem.dist(points.bust) / 2
+      (points.waistDartHem.dist(points.bust) / 2) * options.waistDartCurve
     )
     points.waistDartRightCp = points.waistDartRight.shift(
       90,
-      points.waistDartHem.dist(points.bust) / 2
+      (points.waistDartHem.dist(points.bust) / 2) * options.waistDartCurve
     )
 
     paths.seam = new Path()
