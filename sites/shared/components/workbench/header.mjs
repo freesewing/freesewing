@@ -1,5 +1,5 @@
 // Hooks
-import { useState, useContext } from 'react'
+import { useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'

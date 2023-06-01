@@ -2,7 +2,7 @@
 import { useState, useEffect, useContext, useCallback } from 'react'
 import { useTranslation } from 'next-i18next'
 import orderBy from 'lodash.orderby'
-import { formatMm, capitalize } from 'shared/utils.mjs'
+import { capitalize } from 'shared/utils.mjs'
 import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
 // Hooks
 import { useDropzone } from 'react-dropzone'
@@ -16,9 +16,8 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
 import Link from 'next/link'
 import { PageLink } from 'shared/components/page-link.mjs'
-import { Collapse, useCollapseButton, MimicCollapseLink } from 'shared/components/collapse.mjs'
+import { Collapse, MimicCollapseLink } from 'shared/components/collapse.mjs'
 import { BackToAccountButton, Choice } from './shared.mjs'
-import { ModalDesignPicker } from 'shared/components/modal/design-picker.mjs'
 import {
   OkIcon,
   NoIcon,
@@ -349,7 +348,7 @@ export const EditSectionTitle = ({ title }) => (
 )
 
 const EditPattern = (props) => {
-  const { account, pattern, t, setModal } = props
+  const { account, pattern, t } = props
 
   return (
     <div className="p-2 lg:p-4">
@@ -575,8 +574,7 @@ export const Patterns = ({ standAlone = false }) => {
   const { account, token } = useAccount()
   const backend = useBackend(token)
   const { t } = useTranslation(ns)
-  const toast = useToast()
-  const { CollapseButton, closeCollapseButton } = useCollapseButton()
+  const { CollapseButton } = useCollapseButton()
 
   // State
   const [patterns, setPatterns] = useState([])

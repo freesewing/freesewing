@@ -45,7 +45,7 @@ const EditPatternPage = ({ page, id }) => {
   return (
     <PageWrapper {...page} layout={WorkbenchLayout} header={Null}>
       <Workbench
-        design={pattern.design}
+        design={pattern?.design}
         from={{ type: 'pattern', data: pattern }}
         {...{ Design, DynamicDocs, baseSettings }}
       />

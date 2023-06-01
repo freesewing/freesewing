@@ -15,7 +15,6 @@ import {
   MarginSettingInput,
   OnlySettingInput,
   PaperlessSettingInput,
-  RendererSettingInput,
   SaBoolSettingInput,
   SaMmSettingInput,
   ScaleSettingInput,
@@ -27,7 +26,6 @@ import {
   MarginSettingValue,
   OnlySettingValue,
   PaperlessSettingValue,
-  RendererSettingValue,
   SaBoolSettingValue,
   SaMmSettingValue,
   ScaleSettingValue,
@@ -41,7 +39,6 @@ const values = {
   margin: MarginSettingValue,
   only: OnlySettingValue,
   paperless: PaperlessSettingValue,
-  renderer: RendererSettingValue,
   sabool: SaBoolSettingValue,
   samm: SaMmSettingValue,
   scale: ScaleSettingValue,
@@ -55,7 +52,6 @@ const inputs = {
   margin: MarginSettingInput,
   only: OnlySettingInput,
   paperless: PaperlessSettingInput,
-  renderer: RendererSettingInput,
   sabool: SaBoolSettingInput,
   samm: SaMmSettingInput,
   scale: ScaleSettingInput,
@@ -225,18 +221,6 @@ export const CoreSettings = ({
         )
       }
     : false
-
-  const openButtons = []
-  if (loadDocs)
-    openButtons.push(
-      <button
-        className="btn btn-xs btn-ghost px-0 z-10"
-        key="help"
-        onClick={(evt) => loadDocs(evt)}
-      >
-        <HelpIcon className="w-4 h-4" />
-      </button>
-    )
 
   return (
     <>

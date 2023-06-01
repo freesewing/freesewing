@@ -9,8 +9,8 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { Collapse } from 'shared/components/collapse.mjs'
 import { HelpIcon, DesktopIcon, ClearIcon } from 'shared/components/icons.mjs'
-import { ControlSettingInput, RendererSettingInput, XRaySettingInput } from './inputs.mjs'
-import { ControlSettingValue, RendererSettingValue, XRaySettingValue } from './values.mjs'
+import { ControlSettingInput, RendererSettingInput } from './inputs.mjs'
+import { ControlSettingValue, RendererSettingValue } from './values.mjs'
 //import { ConsoleLog } from './log.mjs'
 //import { XrayReset } from './reset.mjs'
 //import { XrayList } from './list.mjs'
@@ -146,18 +146,6 @@ export const UiSettings = ({ design, update, settings, ui, control, language, Dy
         )
       }
     : false
-
-  const openButtons = []
-  if (loadDocs)
-    openButtons.push(
-      <button
-        className="btn btn-xs btn-ghost px-0 z-10"
-        key="help"
-        onClick={(evt) => loadDocs(evt)}
-      >
-        <HelpIcon className="w-4 h-4" />
-      </button>
-    )
 
   return (
     <>
