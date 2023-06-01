@@ -103,7 +103,7 @@ export const back = {
 ...
 
   const frontTook = store.get(['timing', 'parts', 'aaron.front', 'took'])
-  log.info('The aaron.front part took ' + frontTook + ' µs to draft.')
+  log.info('The aaron.front part took ' + frontTook + ' ms to draft.')
 
   log.info(JSON.stringify(store.timing))
 
