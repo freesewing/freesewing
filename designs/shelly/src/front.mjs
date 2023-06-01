@@ -93,6 +93,8 @@ function draftFront({
     })
   }
 
+  store.cutlist.addCut({ cut: 1 })
+
   if (complete) {
     snippets.armholeScoopEnd = new Snippet('notch', points.armholeScoopEnd)
 
