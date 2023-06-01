@@ -79,7 +79,7 @@ export const Setting = ({ name, config, current, update, t, changed, loadDocs, c
         key="clear"
         onClick={(evt) => {
           evt.stopPropagation()
-          update.settings([name], config.dflt)
+          update.ui([name], config.dflt)
         }}
       >
         <ClearIcon />
@@ -91,7 +91,7 @@ export const Setting = ({ name, config, current, update, t, changed, loadDocs, c
         key="clear"
         onClick={(evt) => {
           evt.stopPropagation()
-          update.settings([name], config.dflt)
+          update.ui([name], config.dflt)
         }}
       >
         <ClearIcon />
@@ -170,7 +170,7 @@ export const UiSettings = ({ design, update, settings, ui, control, language, Dy
             {...{ name, design, update, t, loadDocs, control, ui }}
             config={settingsConfig[name]}
             current={ui[name]}
-            changed={wasChanged(settings[name], name, settingsConfig)}
+            changed={wasChanged(ui[name], name, settingsConfig)}
           />
         ))}
     </>
