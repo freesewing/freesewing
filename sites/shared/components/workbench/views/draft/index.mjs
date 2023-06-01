@@ -1,4 +1,4 @@
-import { Pattern as ReactPattern } from 'pkgs/react-components/src/pattern/index.mjs'
+import { PanZoomPattern as ReactPattern } from 'shared/components/workbench/pan-zoom-pattern.mjs'
 import { DraftMenu, ns as menuNs } from './menu.mjs'
 
 export const ns = menuNs
@@ -24,9 +24,6 @@ export const DraftView = ({
       console.log(err)
     }
   } else output = <ReactPattern renderProps={pattern.getRenderProps()} />
-
-  console.log(pattern.getRenderProps())
-  return <pre>{JSON.stringify(pattern.getRenderProps(), null, 2)}</pre>
 
   return (
     <div className="flex flex-row">
