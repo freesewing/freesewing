@@ -64,7 +64,7 @@ export const loadSettingsConfig = ({
   units: {
     control: 3, // Show when control > 2
     list: ['metric', 'imperial'],
-    dflt: 'metric',
+    dflt: units,
     choiceTitles: {
       metric: 'metric',
       imperial: 'imperial',
@@ -110,19 +110,5 @@ export const loadSettingsConfig = ({
     dflt: 2,
     step: 1,
     emoji: '🔲',
-  },
-  renderer: {
-    control: 4, // Show when control > 3
-    list: ['react', 'svg'],
-    choiceTitles: {
-      react: 'renderWithReact',
-      svg: 'renderWithCore',
-    },
-    valueTitles: {
-      react: 'React',
-      svg: 'SVG',
-    },
-    dflt: 'react',
-    emoji: '🚀',
   },
 })

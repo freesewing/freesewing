@@ -223,5 +223,41 @@ export function useBackend(token = false) {
     return response && response.status === 204 ? true : false
   }
 
+  /*
+   * Get pattern
+   */
+  backend.getPattern = async (id) => responseHandler(await api.get(`/patterns/${id}/jwt`, auth))
+
+  /*
+   * Get patterns
+   */
+  backend.getPatterns = async () => responseHandler(await api.get(`/patterns/jwt`, auth))
+
+  /*
+   * Create pattern
+   */
+  backend.createPattern = async (data) =>
+    responseHandler(await api.post(`/patterns/jwt`, data, auth), 201)
+
+  /*
+   * Remove pattern
+   */
+  backend.removePattern = async (id) => {
+    const response = await api.delete(`/patterns/${id}/jwt`, auth)
+
+    return response && response.status === 204 ? true : false
+  }
+
+  /*
+   * Generic update pattern set method
+   */
+  backend.updatePattern = async (id, data) =>
+    responseHandler(await api.patch(`/patterns/${id}/jwt`, data, auth))
+
+  /*
+   * Create GitHub issue
+   */
+  backend.createIssue = async (data) => responseHandler(await api.post(`/issues`, data), 201)
+
   return backend
 }

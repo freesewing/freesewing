@@ -19,12 +19,6 @@ margin.t: Margin
 margin.d: Controls the margin around pattern parts
 scale.t: Scale
 scale.d: Controls the overall line width, font size, and other elements that do not scale with the pattern's measurements
-renderer.t: Render Engine
-renderer.d: Controls how the pattern is rendered (drawn) on the screen
-renderWithReact.t: Render with FreeSewing's React components
-renderWithReact.d: Render as SVG through our React components. Allows interactivity and is optimized for screen. Use this if you are not sure what to pick.
-renderWithCore.t: Render with Freesewing's Core library
-renderWithCore.d: Render directly to SVG from Core. Allows no interactivity and is optimized for print. Use this if you want to know what it will look like when exported.
 de.t: German
 de.d: Use this to generate a German pattern
 en.t: English

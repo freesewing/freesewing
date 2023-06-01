@@ -38,6 +38,12 @@ export const freeSewingConfig = {
       units: 2,
       notes: 2,
     },
+    patterns: {
+      name: 1,
+      img: 2,
+      public: 3,
+      notes: 2,
+    },
   },
   social,
 }

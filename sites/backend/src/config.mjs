@@ -62,6 +62,9 @@ const baseConfig = {
   encryption: {
     key: encryptionKey,
   },
+  github: {
+    token: process.env.BACKEND_GITHUB_TOKEN,
+  },
   jwt: {
     secretOrKey: encryptionKey,
     issuer: process.env.BACKEND_JWT_ISSUER || 'freesewing.org',
@@ -84,7 +87,6 @@ const baseConfig = {
     scheme: process.env.BACKEND_WEBSITE_SCHEME || 'https',
   },
   oauth: {},
-  github: {},
 }
 
 /*

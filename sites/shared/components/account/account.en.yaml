@@ -25,7 +25,7 @@ img: Profile image
 username: Username
 compare: Metricset Comparison
 consent: Consent & Privacy
-control: Power versus Simplicity
+control: User Experience
 imperial: Units
 units: Units
 apikeys: API Keys
@@ -97,7 +97,7 @@ control4d: Reveals all features, keeps handrails and safety checks.
 control5t: Get out of my way
 control5d: Reveals all features, removes all handrails and safety checks.
 controlShowMore: Show more options
-controlTitle: What do you prefer?
+controlTitle: Which user experience do you prefer?
 # img
 imgTitle: How about a picture?
 imgDragAndDropImageHere: Drag and drop an image here

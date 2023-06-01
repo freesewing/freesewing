@@ -173,8 +173,14 @@ export const DesignOptionGroup = ({
   Option,
   t,
   loadDocs,
+  topLevel = false,
 }) => (
-  <Collapse bottom color="secondary" title={<GroupTitle {...{ group, t }} />} openTitle={t(group)}>
+  <Collapse
+    bottom
+    color={topLevel ? 'primary' : 'secondary'}
+    title={<GroupTitle {...{ group, t }} />}
+    openTitle={t(group)}
+  >
     {Object.entries(options).map(([option, type]) =>
       typeof type === 'string' ? (
         <Option
@@ -211,9 +217,9 @@ export const DesignOptions = ({
   settings,
   update,
   language,
-  account,
   Option = false,
   DynamicDocs = false,
+  control,
 }) => {
   const { t } = useTranslation([design])
   const { setModal } = useContext(ModalContext)
@@ -239,17 +245,18 @@ export const DesignOptions = ({
     : false
 
   return (
-    <Collapse
-      bottom
-      color="primary"
-      title={
-        <div className="w-full flex flex-row gap2 items-center justify-between">
-          <span className="font-bold">{t('design-options:designOptions')}</span>
-          <OptionsIcon className="w-6 h-6 text-primary" />
-        </div>
-      }
-      openTitle={t('design-options:designOptions')}
-    >
+    <>
+      <div className="px-2 mt-8">
+        {control > 4 ? null : (
+          <>
+            <h5 className="flex flex-row gap-2 items-center">
+              <OptionsIcon />
+              <span>{t('design-options:designOptions')}</span>
+            </h5>
+            <p>{t('design-options:designOptions.d')}</p>
+          </>
+        )}
+      </div>
       {Object.entries(optionsMenu).map(([group, option]) =>
         typeof option === 'string' ? (
           <Option
@@ -265,9 +272,10 @@ export const DesignOptions = ({
             {...{ design, patternConfig, settings, update, group, Option, t, loadDocs }}
             options={option}
             key={group}
+            topLevel
           />
         )
       )}
-    </Collapse>
+    </>
   )
 }

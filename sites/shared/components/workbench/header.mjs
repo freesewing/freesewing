@@ -1,17 +1,16 @@
 // Hooks
-import { useState, useContext } from 'react'
+import { useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
-import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import {
   BeakerIcon,
   BriefcaseIcon,
-  ClearIcon,
   CodeIcon,
   CutIcon,
   HelpIcon,
+  HomeIcon,
   MenuIcon,
   OptionsIcon,
   PrintIcon,
@@ -141,26 +140,24 @@ const NavIcons = ({ setModal, setView, view }) => {
       >
         <CodeIcon className={iconSize} />
       </NavButton>
+      <NavSpacer />
       <NavButton
-        onClick={() => setView('clear')}
-        label={t('workbench:clear')}
+        label={t('workbench:help')}
         color={colors[8]}
+        href="/docs/site/draft"
         extraClasses="hidden lg:flex"
       >
-        <ClearIcon className={iconSize} />
-      </NavButton>
-      <NavSpacer />
-      <NavButton href="/account" label={t('workbench:help')} color={colors[9]}>
         <HelpIcon className={iconSize} />
+      </NavButton>
+      <NavButton label={t('workbench:home')} color={colors[9]} href="/">
+        <HomeIcon className={iconSize} />
       </NavButton>
     </>
   )
 }
 
-export const WorkbenchHeader = ({ view, setView }) => {
+export const WorkbenchHeader = ({ view, setView, update }) => {
   const { setModal } = useContext(ModalContext)
-  const { loading } = useContext(LoadingContext)
-  const [show, setShow] = useState(true)
 
   return (
     <header
@@ -170,7 +167,6 @@ export const WorkbenchHeader = ({ view, setView }) => {
       w-full
       z-30
       transition-transform
-      ${show || loading ? '' : 'fixed bottom-0 lg:top-0 left-0 translate-y-36 lg:-translate-y-36'}
       drop-shadow-xl
     `}
     >
@@ -183,7 +179,7 @@ export const WorkbenchHeader = ({ view, setView }) => {
 
           {/* Mobile content */}
           <div className="flex lg:hidden flex-row items-center justify-between w-full">
-            <NavIcons setModal={setModal} setView={setView} />
+            <NavIcons {...{ setModal, setView, update }} />
           </div>
         </div>
       </div>

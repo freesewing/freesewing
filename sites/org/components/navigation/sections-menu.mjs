@@ -17,13 +17,12 @@ export const SectionsMenu = () => {
   // Ensure each page as an `o` key so we can put them in order
   const sortableSections = sections.map((s) => ({ ...s, o: s.o ? s.o : s.t }))
   const output = []
+  let i = 1
   for (const page of orderBy(sortableSections, ['o', 't'])) {
     const item = (
       <Link
         key={page.s}
-        className={`bg-${
-          colors[page.s]
-        }-400 p-0 rounded shadow hover:shadow-lg w-full bg-opacity-70 hover:bg-opacity-100 text-neutral-900
+        className={`bg-${colors[i]}-400 p-0 rounded shadow hover:shadow-lg w-full bg-opacity-70 hover:bg-opacity-100 text-neutral-900
             `}
         href={`/${page.s}`}
         title={page.t}
@@ -39,6 +38,7 @@ export const SectionsMenu = () => {
         </div>
       </Link>
     )
+    i++
     output.push(item)
   }
 

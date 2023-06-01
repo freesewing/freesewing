@@ -63,7 +63,7 @@ export const ImgSettings = ({ title = false, welcome = false }) => {
           <input {...getInputProps()} />
           <p className="hidden lg:block p-0 m-0">{t('imgDragAndDropImageHere')}</p>
           <p className="hidden lg:block p-0 my-2">{t('or')}</p>
-          <button className={`btn btn-secondary btn-outline mt-4 w-64`}>
+          <button className={`btn btn-secondary btn-outline mt-4 px-8`}>
             {t('imgSelectImage')}
           </button>
         </div>
@@ -71,7 +71,7 @@ export const ImgSettings = ({ title = false, welcome = false }) => {
 
       {welcome ? (
         <>
-          <button className={`btn btn-secondary mt-4 w-64`} onClick={save} disabled={!img}>
+          <button className={`btn btn-secondary mt-4 px-8`} onClick={save} disabled={!img}>
             {t('save')}
           </button>
           <ContinueButton btnProps={{ href: nextHref }} link />

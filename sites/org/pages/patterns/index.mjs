@@ -3,7 +3,6 @@ import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { Popout } from 'shared/components/popout.mjs'
 
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
 import { ns as setsNs } from 'shared/components/account/sets.mjs'
@@ -20,23 +19,26 @@ const DynamicAuthWrapper = dynamic(
   { ssr: false }
 )
 
+const DynamicPatterns = dynamic(
+  () => import('shared/components/account/patterns.mjs').then((mod) => mod.Patterns),
+  { ssr: false }
+)
+
 /*
  * Each page MUST be wrapped in the PageWrapper component.
  * You also MUST spread props.page into this wrapper component
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const SetsIndexPage = ({ page }) => (
+const PatternsIndexPage = ({ page }) => (
   <PageWrapper {...page}>
     <DynamicAuthWrapper>
-      <Popout fixme compact>
-        This page has not been created yet
-      </Popout>
+      <DynamicPatterns standAlone={1} />
     </DynamicAuthWrapper>
   </PageWrapper>
 )
 
-export default SetsIndexPage
+export default PatternsIndexPage
 
 export async function getStaticProps({ locale }) {
   return {

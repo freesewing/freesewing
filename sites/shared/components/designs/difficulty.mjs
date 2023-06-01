@@ -8,10 +8,10 @@ const colors = ['violet', 'green-500', 'yellow-300', 'amber-500', 'orange-500', 
 
 const five = [0, 1, 2, 3, 4]
 
-export const Difficulty = ({ score = 0 }) => (
+export const Difficulty = ({ score = 0, color = false }) => (
   <div className="flex flex-row">
     {five.map((i) => (
-      <Circle key={i} color={colors[score]} off={i < score ? false : true} />
+      <Circle key={i} color={color ? color : colors[score]} off={i < score ? false : true} />
     ))}
   </div>
 )

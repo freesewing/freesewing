@@ -10,16 +10,12 @@ import { objUpdate } from 'shared/utils.mjs'
 // Components
 import { WorkbenchHeader } from './header.mjs'
 import { ErrorView } from 'shared/components/error/view.mjs'
+import { ModalSpinner } from 'shared/components/modal/spinner.mjs'
 // Views
 import { DraftView, ns as draftNs } from 'shared/components/workbench/views/draft/index.mjs'
+import { SaveView, ns as saveNs } from 'shared/components/workbench/views/save/index.mjs'
 
-export const ns = ['workbench', ...draftNs]
-
-const loadDefaultSettings = ({ locale = 'en', units = 'metric' }) => ({
-  units,
-  locale,
-  embed: true,
-})
+export const ns = ['account', 'workbench', ...draftNs, ...saveNs]
 
 const defaultUi = {
   renderer: 'react',
@@ -27,40 +23,24 @@ const defaultUi = {
 
 const draftViews = ['draft', 'test']
 
-export const Workbench = ({ design, Design, set = false, DynamicDocs = false }) => {
+export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) => {
   // Hooks
   const { t, i18n } = useTranslation(ns)
   const { language } = i18n
   const { account } = useAccount()
 
-  const defaultSettings = loadDefaultSettings({
-    units: account.imperial ? 'imperial' : 'metric',
-    locale: language,
-  })
-  if (set) defaultSettings.measurements = set.measies
-
   // State
   const [view, setView] = useView()
-  const [settings, setSettings] = useState({ ...defaultSettings, embed: true })
-  const [ui, setUi] = useState({ ...defaultUi })
+  const [settings, setSettings] = useState({ ...baseSettings, embed: true })
+  const [ui, setUi] = useState(defaultUi)
   const [error, setError] = useState(false)
 
-  // Effects
+  // Effect
   useEffect(() => {
-    if (set.measies) update.settings('measurements', set.measies)
-  }, [set])
-
-  // Don't bother without a set or Design
-  if (!set || !Design) return null
-
-  // Short-circuit errors early
-  if (error)
-    return (
-      <>
-        <WorkbenchHeader setView={setView} />
-        {error}
-      </>
-    )
+    // Force re-render when baseSettings changes. Required when they are loaded async.
+    console.log('in effect')
+    setSettings({ ...baseSettings, embed: true })
+  }, [baseSettings])
 
   // Helper methods for settings/ui updates
   const update = {
@@ -68,47 +48,63 @@ export const Workbench = ({ design, Design, set = false, DynamicDocs = false }) 
     ui: (path, val) => setUi(objUpdate({ ...ui }, path, val)),
   }
 
-  // Generate the pattern here so we can pass it down to both the view and the options menu
-  const pattern = settings.measurements && draftViews.includes(view) ? new Design(settings) : false
+  // Don't bother without a Design
+  if (!Design) return <ModalSpinner />
 
-  // Return early if the pattern is not initialized yet
-  if (typeof pattern.getConfig !== 'function') return null
+  // Short-circuit errors early
+  if (error)
+    return (
+      <>
+        <WorkbenchHeader {...{ view, setView, update }} />
+        {error}
+      </>
+    )
 
-  const patternConfig = pattern.getConfig()
+  // Deal with each view
+  const viewProps = {
+    account,
+    design,
+    setView,
+    update,
+    settings,
+    ui,
+    language,
+    DynamicDocs,
+  }
+  let viewContent = null
 
-  if (ui.renderer === 'svg') {
-    // Add theme to svg renderer
-    pattern.use(pluginI18n, { t })
-    pattern.use(pluginTheme, { skipGrid: ['pages'] })
+  // Draft view
+  if (view === 'draft') {
+    // Generate the pattern here so we can pass it down to both the view and the options menu
+    const pattern =
+      settings.measurements && draftViews.includes(view) ? new Design(settings) : false
+
+    // Return early if the pattern is not initialized yet
+    if (typeof pattern.getConfig !== 'function') return null
+
+    const patternConfig = pattern.getConfig()
+    if (ui.renderer === 'svg') {
+      // Add theme to svg renderer
+      pattern.use(pluginI18n, { t })
+      pattern.use(pluginTheme, { skipGrid: ['pages'] })
+    }
+    // Draft the pattern or die trying
+    try {
+      pattern.draft()
+    } catch (error) {
+      console.log(error)
+      setError(<ErrorView>{JSON.stringify(error)}</ErrorView>)
+    }
+    viewContent = <DraftView {...viewProps} {...{ pattern, patternConfig }} />
   }
 
-  // Draft the pattern or die trying
-  try {
-    pattern.draft()
-  } catch (error) {
-    console.log(error)
-    setError(<ErrorView>{JSON.stringify(error)}</ErrorView>)
-  }
+  // Save view
+  else if (view === 'save') viewContent = <SaveView {...viewProps} from={from} />
 
   return (
     <>
-      <WorkbenchHeader setView={setView} view={view} />
-      {view === 'draft' && (
-        <DraftView
-          {...{
-            design,
-            pattern,
-            patternConfig,
-            setView,
-            update,
-            settings,
-            ui,
-            language,
-            DynamicDocs,
-          }}
-          account={account}
-        />
-      )}
+      <WorkbenchHeader {...{ view, setView, update }} />
+      {viewContent}
     </>
   )
 }

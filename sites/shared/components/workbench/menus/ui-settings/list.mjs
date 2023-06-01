@@ -9,7 +9,7 @@
 //  points: XrayPoint,
 //}
 
-export const XrayList = (props) => {
+export const XrayList = () => {
   //const { t } = useTranslation(['app', 'parts'])
   return null
   // FIXME

@@ -24,7 +24,8 @@ const New{{ Design }}FromCsetPage = ({ page, id }) => {
       if (result.success) setSet(result.data.curatedSet)
     }
     // Guard against loops as the backend object is recreated on each render
-    if (set.id !== id) getCuratedSet()
+    if (set === false) getCuratedSet()
+    else if (set.id && set.id !== id) getCuratedSet()
   }, [id, set.id, backend])
 
   return (

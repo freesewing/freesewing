@@ -91,6 +91,7 @@ SetModel.prototype.guardedRead = async function ({ params, user }) {
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   await this.read({ id: parseInt(params.id) })
+  if (!this.record) return this.setResponse(404)
   if (this.record.userId !== user.uid && !this.rbac.bughunter(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }

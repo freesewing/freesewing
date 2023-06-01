@@ -23,7 +23,7 @@ export const ModalMenu = () => {
             <SectionsMenu />
           </div>
           <div className="w-full lg:w-1/2">
-            <h3>{t('currentSection')}</h3>
+            <h3>{t('youAreHere')}</h3>
             <ActiveSection bare />
           </div>
         </div>
