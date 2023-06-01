@@ -27,10 +27,15 @@ Stack.prototype.addPart = function (part) {
 }
 
 /* Returns a stack object suitbale for renderprops */
-Stack.prototype.asProps = function () {
+Stack.prototype.asRenderProps = function () {
   return {
-    ...this,
-    parts: [...this.parts],
+    name: this.name,
+    attributes: this.attributes.asRenderProps(),
+    topLeft: this.topLeft,
+    bottomRight: this.bottomRight,
+    width: this.width,
+    height: this.height,
+    parts: [...this.parts].map((part) => part.asRenderProps()),
   }
 }
 

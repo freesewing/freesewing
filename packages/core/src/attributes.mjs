@@ -55,6 +55,23 @@ Attributes.prototype.asPropsIfPrefixIs = function (prefix = '') {
 }
 
 /**
+ * Returns attributes as an object suitable for inclusion in renderprops
+ *
+ * @return {object} attributes - A plain object representing the attributes
+ */
+Attributes.prototype.asRenderProps = function () {
+  return {
+    list: this.list,
+    forSvg: this.render(),
+    forCss: this.renderAsCss(),
+    circle: this.getAsArray('data-circle'),
+    circleProps: this.asPropsIfPrefixIs('data-circle-'),
+    text: this.getAsArray('data-text'),
+    textProps: this.asPropsIfPrefixIs('data-text-'),
+  }
+}
+
+/**
  * Return a deep copy of this
  *
  * @return {object} this - The Attributes instance

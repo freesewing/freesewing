@@ -33,46 +33,23 @@ PatternRenderer.prototype.getRenderProps = function () {
   this.__startRender()
   this.svg.__runHooks('preRender')
 
-  let props = {
-    svg: this.svg,
+  const props = {
+    svg: this.svg.asRenderProps(),
     width: this.pattern.width,
     height: this.pattern.height,
     autoLayout: this.pattern.autoLayout,
     settings: this.pattern.settings,
-    parts: [],
     stacks: {},
-  }
-
-  for (const partSet of this.pattern.parts) {
-    const setPartProps = {}
-    for (let partName in partSet) {
-      const part = partSet[partName]
-      if (!part.hidden) {
-        setPartProps[partName] = {
-          ...partSet[partName].asProps(),
-          store: this.pattern.setStores[part.set],
-        }
-      } else if (this.pattern.setStores[part.set]) {
-        this.pattern.setStores[part.set].log.info(
-          `Part ${partName} is hidden in set ${part.set}. Not adding to render props`
-        )
-      }
-    }
-    props.parts.push(setPartProps)
   }
 
   for (let s in this.pattern.stacks) {
     if (!this.pattern.__isStackHidden(s)) {
-      props.stacks[s] = this.pattern.stacks[s].asProps()
+      props.stacks[s] = this.pattern.stacks[s].asRenderProps()
     } else this.pattern.store.log.info(`Stack ${s} is hidden. Skipping in render props.`)
   }
 
-  props.logs = {
-    pattern: this.pattern.store.logs,
-    sets: this.pattern.setStores.map((store) => store.logs),
-  }
-
   this.svg.__runHooks('postRender')
+
   return props
 }
 
