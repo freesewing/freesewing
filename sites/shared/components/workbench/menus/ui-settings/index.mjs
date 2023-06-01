@@ -9,8 +9,8 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { Collapse } from 'shared/components/collapse.mjs'
 import { HelpIcon, DesktopIcon, ClearIcon } from 'shared/components/icons.mjs'
-import { ControlSettingInput, RendererSettingInput } from './inputs.mjs'
-import { ControlSettingValue, RendererSettingValue } from './values.mjs'
+import { ControlSettingInput, RendererSettingInput, XRaySettingInput } from './inputs.mjs'
+import { ControlSettingValue, RendererSettingValue, XRaySettingValue } from './values.mjs'
 //import { ConsoleLog } from './log.mjs'
 //import { XrayReset } from './reset.mjs'
 //import { XrayList } from './list.mjs'
@@ -21,14 +21,14 @@ export const ns = ['ui-settings']
 const values = {
   control: ControlSettingValue,
   renderer: RendererSettingValue,
-  //xray: XRaySettingValue,
+  xray: XRaySettingValue,
 }
 
 // Facilitate lookup of the input component
 const inputs = {
   control: ControlSettingInput,
   renderer: RendererSettingInput,
-  //xray: XRaySettingInput,
+  xray: XRaySettingInput,
 }
 
 const wasChanged = (current, name, settingsConfig) => {
@@ -167,7 +167,7 @@ export const UiSettings = ({ design, update, settings, ui, control, language, Dy
         .map((name) => (
           <Setting
             key={name}
-            {...{ name, design, update, t, loadDocs, control }}
+            {...{ name, design, update, t, loadDocs, control, ui }}
             config={settingsConfig[name]}
             current={ui[name]}
             changed={wasChanged(settings[name], name, settingsConfig)}
