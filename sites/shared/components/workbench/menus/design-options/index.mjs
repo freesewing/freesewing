@@ -217,7 +217,6 @@ export const DesignOptions = ({
   settings,
   update,
   language,
-  account,
   Option = false,
   DynamicDocs = false,
   control,

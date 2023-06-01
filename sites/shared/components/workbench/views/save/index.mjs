@@ -219,16 +219,7 @@ const SaveExistingPattern = ({
   )
 }
 
-export const SaveView = ({
-  design,
-  setView,
-  settings,
-  ui,
-  update,
-  language,
-  DynamicDocs,
-  from = false,
-}) => {
+export const SaveView = ({ design, settings, from = false }) => {
   // Hooks
   const { t } = useTranslation(ns)
   const { token } = useAccount()

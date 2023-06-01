@@ -12,7 +12,6 @@ export const ns = [...coreMenuNs, ...designMenuNs, ...uiNs]
 
 export const DraftMenu = ({
   design,
-  pattern,
   patternConfig,
   settings,
   ui,

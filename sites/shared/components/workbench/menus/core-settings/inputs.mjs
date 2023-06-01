@@ -7,20 +7,16 @@ import orderBy from 'lodash.orderby'
 export const ListSetting = ({ name, config, current, update, t, setUi }) => {
   if (typeof current === 'undefined') current = config.dflt
 
-  const [value, setValue] = useState(current)
-
   const handleChange = (newCurrent) => {
     if (newCurrent === config.dflt) reset()
     else {
       if (setUi) update.ui(setUi, newCurrent)
       else update.settings([name], newCurrent)
-      setValue(newCurrent)
     }
   }
 
   const reset = () => {
     update.settings([name])
-    setValue(config.dflt)
   }
 
   return (
@@ -88,17 +84,7 @@ export const NrSetting = ({ name, config, current, update, t }) => {
 }
 
 // Shared component for slider inputs
-const SliderSetting = ({
-  name,
-  config,
-  current,
-  update,
-  t,
-  value,
-  handleChange,
-  units,
-  mm = false,
-}) => (
+const SliderSetting = ({ name, config, current, t, value, handleChange, units, mm = false }) => (
   <>
     <p>{t(`core-settings:${name}.d`)}</p>
     <div className="flex flex-row justify-between">
@@ -143,7 +129,7 @@ export const ScaleSettingInput = (props) => <NrSetting {...props} />
 export const CompleteSettingInput = (props) => <ListSetting {...props} />
 export const PaperlessSettingInput = (props) => <ListSetting {...props} />
 
-export const OnlySettingInput = ({ name, config, current, update, t, draftOrder, design }) => {
+export const OnlySettingInput = ({ config, current, update, t, design }) => {
   const partNames = config.parts.map((part) => ({
     id: part,
     t: t(`${design}:${part}.t`),
@@ -185,7 +171,7 @@ export const OnlySettingInput = ({ name, config, current, update, t, draftOrder,
   )
 }
 
-export const SaMmSettingInput = ({ name, config, current, update, t, units }) => {
+export const SaMmSettingInput = ({ config, current, update, t, units }) => {
   const { dflt, min, max } = config
   if (typeof current === 'undefined') current = config.dflt
 
@@ -227,13 +213,16 @@ export const SaMmSettingInput = ({ name, config, current, update, t, units }) =>
   )
 }
 
-export const SaBoolSettingInput = ({ config, current, update, t, samm, changed }) => {
+export const SaBoolSettingInput = ({ config, current, update, t, samm }) => {
   if (typeof current === 'undefined') current = config.dflt
 
   const handleChange = (newCurrent) => {
     if (newCurrent === config.dflt) reset()
     else {
-      update.settings([[['sabool'], newCurrent], [['sa']]])
+      update.settings([
+        [['sabool'], newCurrent],
+        [['sa'], samm],
+      ])
     }
   }
 

@@ -175,22 +175,16 @@ export const ModalProblemReport = ({ title, data }) => {
   return (
     <ModalWrapper>
       <div className="grid gap-2 p-4 grid-cols-1 max-w-lg w-full">
-        {result ? (
-          result
-        ) : (
-          <>
-            <h2>{t('errors:newReport')}</h2>
-            <ChoiceButton title={t('privateReport.t')} onClick={reportPrivate}>
-              <p>{t('privateReport.d')}</p>
-            </ChoiceButton>
-            <ChoiceButton title={t('publicReport.t')} onClick={reportPublic}>
-              <p>{t('publicReport.d')}</p>
-            </ChoiceButton>
-            <button className="btn btn-neutral mt-4" onClick={clearModal}>
-              {t('cancel')}
-            </button>
-          </>
-        )}
+        <h2>{t('errors:newReport')}</h2>
+        <ChoiceButton title={t('privateReport.t')} onClick={reportPrivate}>
+          <p>{t('privateReport.d')}</p>
+        </ChoiceButton>
+        <ChoiceButton title={t('publicReport.t')} onClick={reportPublic}>
+          <p>{t('publicReport.d')}</p>
+        </ChoiceButton>
+        <button className="btn btn-neutral mt-4" onClick={clearModal}>
+          {t('cancel')}
+        </button>
       </div>
     </ModalWrapper>
   )
