@@ -21,14 +21,14 @@ export const ns = ['ui-settings']
 const values = {
   control: ControlSettingValue,
   renderer: RendererSettingValue,
-  xray: XRaySettingValue,
+  //xray: XRaySettingValue,
 }
 
 // Facilitate lookup of the input component
 const inputs = {
   control: ControlSettingInput,
   renderer: RendererSettingInput,
-  xray: XRaySettingInput,
+  //xray: XRaySettingInput,
 }
 
 const wasChanged = (current, name, settingsConfig) => {
