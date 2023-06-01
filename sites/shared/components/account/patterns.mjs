@@ -574,7 +574,6 @@ export const Patterns = ({ standAlone = false }) => {
   const { account, token } = useAccount()
   const backend = useBackend(token)
   const { t } = useTranslation(ns)
-  const { CollapseButton } = useCollapseButton()
 
   // State
   const [patterns, setPatterns] = useState([])
