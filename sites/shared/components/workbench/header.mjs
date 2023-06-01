@@ -174,7 +174,6 @@ export const WorkbenchHeader = ({ view, setView, update }) => {
         <div className="p-0 flex flex-row gap-2 justify-between text-neutral-content items-center">
           {/* Non-mobile content */}
           <div className="hidden lg:flex lg:px-2 flex-row items-center justify-center w-full">
-            hello?
             <NavIcons setModal={setModal} setView={setView} view={view} />
           </div>
 
