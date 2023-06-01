@@ -6,5 +6,5 @@ const ListValue = ({ current, t, config, changed }) =>
     : t(`ui-settings:${config.valueTitles[config.dflt]}`)
 
 export const RendererSettingValue = ListValue
-export const XRaySettingValue = ListValue
+export const InspectSettingValue = ListValue
 export const ControlSettingValue = ({ control }) => <Difficulty score={control} color="primary" />

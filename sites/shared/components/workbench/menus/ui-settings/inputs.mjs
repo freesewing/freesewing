@@ -56,4 +56,4 @@ export const RendererSettingInput = ({ name, config, current, update, t }) => (
   />
 )
 
-export const XRaySettingInput = (props) => <ListSetting {...props} />
+export const InspectSettingInput = (props) => <ListSetting {...props} />

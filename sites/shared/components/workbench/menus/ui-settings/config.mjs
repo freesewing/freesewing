@@ -17,12 +17,12 @@ export const loadSettingsConfig = () => ({
     dflt: 'react',
     emoji: '🚀',
   },
-  xray: {
+  inspect: {
     control: 4, // Show when control > 3
     list: [0, 1],
     choiceTitles: {
-      0: 'xrayNo',
-      1: 'xrayYes',
+      0: 'inspectNo',
+      1: 'inspectYes',
     },
     valueTitles: {
       0: 'no',

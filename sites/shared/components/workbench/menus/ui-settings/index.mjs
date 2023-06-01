@@ -9,8 +9,8 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { Collapse } from 'shared/components/collapse.mjs'
 import { HelpIcon, DesktopIcon, ClearIcon } from 'shared/components/icons.mjs'
-import { ControlSettingInput, RendererSettingInput, XRaySettingInput } from './inputs.mjs'
-import { ControlSettingValue, RendererSettingValue, XRaySettingValue } from './values.mjs'
+import { ControlSettingInput, RendererSettingInput, InspectSettingInput } from './inputs.mjs'
+import { ControlSettingValue, RendererSettingValue, InspectSettingValue } from './values.mjs'
 //import { ConsoleLog } from './log.mjs'
 //import { XrayReset } from './reset.mjs'
 //import { XrayList } from './list.mjs'
@@ -21,14 +21,14 @@ export const ns = ['ui-settings']
 const values = {
   control: ControlSettingValue,
   renderer: RendererSettingValue,
-  xray: XRaySettingValue,
+  inspect: InspectSettingValue,
 }
 
 // Facilitate lookup of the input component
 const inputs = {
   control: ControlSettingInput,
   renderer: RendererSettingInput,
-  xray: XRaySettingInput,
+  inspect: InspectSettingInput,
 }
 
 const wasChanged = (current, name, settingsConfig) => {
@@ -54,8 +54,8 @@ export const UiTitle = ({ name, t, current = null, open = false, emoji = '' }) =
 export const Setting = ({ name, config, current, update, t, changed, loadDocs, control, ui }) => {
   const drillProps = { name, config, current, update, t, changed, control }
 
-  // Don't bother with X-Ray in SVG mode
-  if (name === 'xray' && ui.renderer === 'svg') return null
+  // Don't bother with inspect in SVG mode
+  if (name === 'inspect' && ui.renderer === 'svg') return null
 
   const Input = inputs[name]
   const Value = values[name]
