@@ -242,6 +242,13 @@
       "difficulty": 3,
       "tags": ["bottoms", "skirts"]
     },
+    "shelly": {
+      "description": "A FreeSewing pattern for a raglan shirt, perfect for swimshirts",
+      "code": "Thrunic",
+      "design": "Thrunic",
+      "difficulty": 2,
+      "tags": ["tops", "swimwear"]
+    },
     "shin": {
       "description": "A FreeSewing pattern for swim trunks",
       "code": "Joost De Cock",

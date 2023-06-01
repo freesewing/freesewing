@@ -69,6 +69,8 @@ packageJson:
     private: true
   sandy:
     author: AlfaLyr (https://github.com/alfalyr)
+  shelly:
+    author: Thrunic (https://github.com/Thrunic)
   tiberius: *starf
   unice:
     author: Anna Puk (https://github.com/anna-puk)
