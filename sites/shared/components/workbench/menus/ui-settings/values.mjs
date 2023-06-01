@@ -7,4 +7,4 @@ const ListValue = ({ current, t, config, changed }) =>
 
 export const RendererSettingValue = ListValue
 export const XRaysValue = ListValue
-export const ControlSettingValue = ({ control }) => <Difficulty score={control} />
+export const ControlSettingValue = ({ control }) => <Difficulty score={control} color="primary" />
