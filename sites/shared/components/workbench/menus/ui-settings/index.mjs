@@ -167,7 +167,7 @@ export const UiSettings = ({ design, update, settings, ui, control, language, Dy
         .map((name) => (
           <Setting
             key={name}
-            {...{ name, design, update, t, loadDocs, control, ui }}
+            {...{ name, design, update, t, loadDocs, control }}
             config={settingsConfig[name]}
             current={ui[name]}
             changed={wasChanged(ui[name], name, settingsConfig)}
