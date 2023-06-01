@@ -3,7 +3,6 @@ import { useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
-import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import {
   BeakerIcon,
@@ -38,7 +37,6 @@ export const NavButton = ({
       active ? 'font-heavy' : ''
     }`
   const span = <span className="block font-bold hidden 2xl:block">{label}</span>
-  console.log('in button', label, onClick)
 
   return onClick ? (
     <button {...{ onClick, className }} title={label}>
@@ -160,7 +158,6 @@ const NavIcons = ({ setModal, setView, view }) => {
 
 export const WorkbenchHeader = ({ view, setView, update }) => {
   const { setModal } = useContext(ModalContext)
-  const { loading } = useContext(LoadingContext)
 
   return (
     <header
@@ -170,7 +167,6 @@ export const WorkbenchHeader = ({ view, setView, update }) => {
       w-full
       z-30
       transition-transform
-      ${loading ? '' : 'fixed bottom-0 lg:top-0 left-0 translate-y-36 lg:-translate-y-36'}
       drop-shadow-xl
     `}
     >
@@ -178,6 +174,7 @@ export const WorkbenchHeader = ({ view, setView, update }) => {
         <div className="p-0 flex flex-row gap-2 justify-between text-neutral-content items-center">
           {/* Non-mobile content */}
           <div className="hidden lg:flex lg:px-2 flex-row items-center justify-center w-full">
+            hello?
             <NavIcons setModal={setModal} setView={setView} view={view} />
           </div>
 
