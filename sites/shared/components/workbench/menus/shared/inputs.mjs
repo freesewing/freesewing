@@ -229,7 +229,7 @@ export const PctInput = ({ current, changed, updateFunc, ...rest }) => {
 export const DegInput = (props) => <SliderInput {...props} suffix="°" valFormatter={round} />
 
 export const MmInput = (props) => {
-  const { units, updateFunc, current } = props
+  const { units, updateFunc, current, config } = props
   const mmUpdateFunc = useCallback(
     (path, newCurrent) => {
       const calcCurrent =
@@ -239,10 +239,14 @@ export const MmInput = (props) => {
     [updateFunc, units]
   )
 
+  // add a default step that's appropriate to the unit. can be overwritten by config
+  const defaultStep = units === 'metric' ? 0.1 : 0.125
+
   return (
     <SliderInput
       {...{
         ...props,
+        config: { step: defaultStep, ...config },
         current: current === undefined ? undefined : measurementAsUnits(current, units),
         updateFunc: mmUpdateFunc,
         valFormatter: (val) => (units === 'imperial' ? formatFraction128(val, null) : val),
