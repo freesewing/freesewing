@@ -45,7 +45,7 @@ This is how we achieve the layered look of parts in sample drafts.
 
 <Related>
 
-Please see [Stacks](/guides/patterns/stacks) in the Pattern Guide for
+Please see [Stacks](/guides/designs/stacks) in the Design Guide for
 more information about how stacks can be used.
 
 </Related>

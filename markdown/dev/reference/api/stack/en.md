@@ -7,7 +7,7 @@ Stacks are used when laying out the pattern.
 
 <Related>
 
-See [Stacks](/guides/patterns/stacks)
+See [Stacks](/guides/designs/stacks)
 for information about how stacks are used in a pattern.
 
 </Related>
