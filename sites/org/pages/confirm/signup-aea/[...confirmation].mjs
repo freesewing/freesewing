@@ -4,8 +4,6 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
-// Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
@@ -28,7 +26,7 @@ const ActiveSignUpPage = () => {
     path: ['confirm', 'emailchange', confirmationId],
   }
 
-  const { token, setAccount, setToken } = useAccount()
+  const { token } = useAccount()
   const backend = useBackend(token)
   const { t } = useTranslation(ns)
 
@@ -64,7 +62,7 @@ const ActiveSignUpPage = () => {
     <PageWrapper {...page} title={t('joinFreeSewing')} layout={BareLayout} footer={false}>
       <WelcomeWrapper>
         <Spinner className="w-16 h-16 m-auto text-primary animate-spin mt-12" />
-        <pre>{JSON.stringify()}</pre>
+        <pre>{JSON.stringify(id)}</pre>
       </WelcomeWrapper>
       <br />
     </PageWrapper>
