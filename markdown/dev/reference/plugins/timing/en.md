@@ -47,7 +47,7 @@ Units and types depend on whether the pattern is generated in a browser
 or via Node.js.
 
 - If the pattern is generated in a browser,
-start timestamps are in microseconds, draft times are in milliseconds,
+both start timestamps and draft times are in milliseconds,
 and the values are Numbers.
 
 - If the pattern is generated via Node.js,
