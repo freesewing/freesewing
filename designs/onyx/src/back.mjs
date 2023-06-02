@@ -52,7 +52,7 @@ function draftBack({
     .curve(points.upperLegCp2, points.seatCp1, points.seat)
     .curve(points.seatCp2, points.hipsCp1, points.hips)
     .curve(points.hipsCp2, points.waistCp1, points.waist)
-    .line(points.armpitCornerScooped)
+    .curve(points.waistCp2, points.armpitCornerScooped, points.armpitCornerScooped)
     .curve(points.armpitScoopCp1, points.armpitScoopCp2, points.armpitScoopEnd)
     .line(points.neckShoulderCorner)
     .curve(points.neckCp1, points.neckCp2, points.cfNeck)
@@ -144,6 +144,8 @@ function draftBack({
       from: points.cutonfoldFrom,
       to: points.cutonfoldTo,
     })
+
+  store.cutlist.addCut({ cut: 1 })
 
   if (complete) {
     snippets.armpitScoopEnd = new Snippet('bnotch', points.armpitScoopEnd)

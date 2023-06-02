@@ -65,6 +65,8 @@ function draftZipperGuard({
     grainline: true,
   })
 
+  store.cutlist.addCut({ cut: 1 })
+
   if (complete) {
     points.title = new Point(zipperGuardWidth / 2, zipperGuardLength / 2)
     macro('title', { at: points.title, nr: 6, title: 'zipper guard' })

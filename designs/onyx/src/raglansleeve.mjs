@@ -255,6 +255,8 @@ function draftRaglanSleeve({
     to: points.grainlineBottom,
   })
 
+  store.cutlist.addCut({ cut: 2 })
+
   if (complete) {
     snippets.frontArmholeScoopEnd = new Snippet('notch', points.frontArmholeScoopEnd)
     snippets.backArmholeScoopEnd = new Snippet('bnotch', points.backArmholeScoopEnd)

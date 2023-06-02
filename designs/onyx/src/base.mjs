@@ -289,6 +289,7 @@ export const base = {
     'chest',
     'waist',
     'hips',
+    'seat',
     'waistToHips',
     'hpsToWaistBack',
     'hpsToWaistFront',
@@ -312,7 +313,6 @@ export const base = {
     legHemEase: { pct: 0, min: -40, max: 100, menu: 'fit' },
     // If set to true, makes a tubular body based on the chest, ignoring the hips measurements and options.
     straightSides: { bool: true, menu: 'advanced' },
-    hipsEase: { pct: 0, min: -30, max: 75, menu: 'advanced' },
     // How long the legs on the garment are. 20-60% for shorts, 100% for pants that touch the floor.
     legLength: { pct: 20, min: 20, max: 120, menu: 'style' },
     // How far the neck hole is shifted towards the front. +100% means it's entirely on the front, -100% means it's entirely on the back, and 0 means the front and back are the same.
