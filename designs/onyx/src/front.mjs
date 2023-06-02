@@ -106,13 +106,14 @@ function draftFront({
       to: points.cutonfoldTo,
       grainline: true,
     })
-  } else
+    store.cutlist.addCut({ cut: 1 })
+  } else {
     macro('grainline', {
       from: points.cutonfoldFrom,
       to: points.cutonfoldTo,
     })
-
-  store.cutlist.addCut({ cut: 1 })
+    store.cutlist.addCut({ cut: 2 })
+  }
 
   if (complete) {
     if (zipperLength > 0) {

@@ -101,10 +101,10 @@ function draftBase({
   )
 
   // Control Points
-  points.cfCrotchCp2 = points.cfCrotch.shift(0, crotchScoopWidth / 3)
+  points.cfCrotchCp2 = points.cfCrotch.shift(0, crotchScoopWidth / 2)
   points.crotchEndCp1 = points.crotchEnd.shift(
     points.inseamHem.angle(points.crotchEnd),
-    crotchScoopLength / 3
+    crotchScoopLength / 2
   )
 
   const hemSeatDirection = points.outseamHem.angle(points.seat)
