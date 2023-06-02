@@ -235,7 +235,7 @@ dev:
     'react-instantsearch-dom': &reactInstantsearchDom '6.40.0'
     'react-instantsearch-hooks-web': '6.44.1'
     'react-markdown': &reactMarkdown '8.0.7'
-    'react-swipeable': &reactSwipeable '7.0.0'
+    'react-swipeable': &reactSwipeable '7.0.1'
     'react-timeago': &reactTimeago '7.1.0'
     'rehype-autolink-headings': &rehypeAutolinkHeadings '6.1.1'
     'rehype-highlight': &rehypeHighlight '6.0.0'
