@@ -102,6 +102,7 @@ export const PartInner = forwardRef(({ partName, part, settings, showInfo, ui, u
         fill={'url(#grid-' + partName + ')'}
       />
     ) : null
+  console.log({ part })
 
   return (
     <g ref={ref}>

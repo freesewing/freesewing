@@ -164,6 +164,17 @@ Pattern.prototype.getRenderProps = function () {
   return new PatternRenderer(this).getRenderProps()
 }
 
+/** Returns the pattern logs
+ *
+ * @return {object} logs - The Pattern logs
+ */
+Pattern.prototype.getLogs = function () {
+  return {
+    pattern: this.store.logs,
+    sets: this.setStores.map((store) => store.logs),
+  }
+}
+
 //////////////
 // Sampling //
 //////////////

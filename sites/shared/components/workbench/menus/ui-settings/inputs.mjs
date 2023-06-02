@@ -20,6 +20,6 @@ export const ControlSettingInput = (props) => {
 
 export const inputs = {
   renderer: ListInput,
-  xray: BoolInput,
+  inspect: BoolInput,
   control: ControlSettingInput,
 }

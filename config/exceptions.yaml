@@ -6,6 +6,7 @@ customBuild:
   - new-design
   - prettier-config
   - plugin-bundle
+  - react-components
   - rehype-jargon
   - rehype-highlight-lines
 skipTests:

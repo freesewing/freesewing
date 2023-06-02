@@ -13,7 +13,7 @@ export const ns = ['ui-settings']
 const values = {
   control: ControlSettingValue,
   renderer: RendererSettingValue,
-  xray: XRaySettingValue,
+  inspect: InspectSettingValue,
 }
 
 const UiSetting = ({ name, control, ...rest }) => (
