@@ -5,16 +5,9 @@ import { WorkbenchMenu } from '../shared/index.mjs'
 import { MenuItem } from '../shared/menu-item.mjs'
 import { DesktopIcon } from 'shared/components/icons.mjs'
 import { inputs } from './inputs.mjs'
-import { ControlSettingValue, RendererSettingValue, XRaySettingValue } from './values.mjs'
+import { values } from './values.mjs'
 
 export const ns = ['ui-settings']
-
-// Facilitate lookup of the value component
-const values = {
-  control: ControlSettingValue,
-  renderer: RendererSettingValue,
-  xray: XRaySettingValue,
-}
 
 const UiSetting = ({ name, control, ...rest }) => (
   <MenuItem
