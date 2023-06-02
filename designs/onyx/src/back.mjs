@@ -133,13 +133,15 @@ function draftBack({
 
   points.cutonfoldFrom = points.cfNeck.shift(0, points.armpitCornerScooped.x / 8)
   points.cutonfoldTo = points.cfCrotch.shift(0, points.armpitCornerScooped.x / 8)
-  if (options.backOnFold)
+  if (options.backOnFold) {
+    points.cutonfoldFrom.x = 0
+    points.cutonfoldTo.x = 0
     macro('cutonfold', {
       from: points.cutonfoldFrom,
       to: points.cutonfoldTo,
       grainline: true,
     })
-  else
+  } else
     macro('grainline', {
       from: points.cutonfoldFrom,
       to: points.cutonfoldTo,
