@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import { ChoiceButton } from 'shared/components/choice-button.mjs'
-import { ControlSettings } from 'shared/components/account/control.mjs'
 import { ListInput, BoolInput } from '../shared/inputs'
 import { useControlState } from 'shared/components/account/control.mjs'
 
