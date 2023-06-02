@@ -47,7 +47,7 @@ export const withinPartBounds = (point, part) =>
     : false
 
 export const getId = ({
-  settings,
+  settings = {},
   stackName = false,
   partName = false,
   pathName = false,

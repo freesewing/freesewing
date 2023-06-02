@@ -6,12 +6,8 @@ export const Stack = ({ stackName, stack, settings, components, t }) => {
 
   return (
     <Group {...getProps(stack)}>
-      {[...stack.parts].map((part) => (
-        <Part
-          {...{ settings, components, t, part, stackName }}
-          key={part.name}
-          partName={part.name}
-        />
+      {[...stack.parts].map((part, key) => (
+        <Part {...{ settings, components, t, part, stackName, key }} />
       ))}
     </Group>
   )

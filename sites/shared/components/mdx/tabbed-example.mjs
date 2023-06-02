@@ -5,8 +5,8 @@ import { pluginFlip } from '@freesewing/plugin-flip'
 import { pluginGore } from '@freesewing/plugin-gore'
 import { Design } from '@freesewing/core'
 import { Svg } from 'pkgs/react-components/src/index.mjs'
-import { Defs } from '../workbench/pattern/defs'
-import { Stack } from '../workbench/pattern/stack'
+//import { Defs } from '../workbench/pattern/defs'
+//import { Stack } from '../workbench/pattern/stack'
 import { useState, useEffect } from 'react'
 import yaml from 'js-yaml'
 
@@ -40,22 +40,26 @@ export const Example = ({
       </div>
     )
 
-  return (
-    <Svg {...patternProps} settings={settings} embed={true}>
-      <Defs {...patternProps} />
-      <style>{`:root { --pattern-scale: 1} ${patternProps.svg.style}`}</style>
-      <g>
-        {Object.keys(patternProps.stacks).map((stackName) => (
-          <Stack
-            {...{ showInfo, patternProps, settings, ui }}
-            key={stackName}
-            stackName={stackName}
-            stack={patternProps.stacks[stackName]}
-          />
-        ))}
-      </g>
-    </Svg>
-  )
+  return null
+
+  // FIXME
+
+  //return (
+  //  <Svg {...patternProps} settings={settings} embed={true}>
+  //    <Defs {...patternProps} />
+  //    <style>{`:root { --pattern-scale: 1} ${patternProps.svg.style}`}</style>
+  //    <g>
+  //      {Object.keys(patternProps.stacks).map((stackName) => (
+  //        <Stack
+  //          {...{ showInfo, patternProps, settings, ui }}
+  //          key={stackName}
+  //          stackName={stackName}
+  //          stack={patternProps.stacks[stackName]}
+  //        />
+  //      ))}
+  //    </g>
+  //  </Svg>
+  //)
 }
 
 // Returns a FreeSewing draft based on code in children

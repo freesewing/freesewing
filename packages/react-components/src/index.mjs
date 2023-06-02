@@ -1,3 +1,4 @@
+// Components
 import { Pattern as PatternComponent } from './pattern/index.mjs'
 import { Svg as SvgComponent } from './pattern/svg.mjs'
 import { Defs as DefsComponent } from './pattern/defs.mjs'
@@ -9,6 +10,8 @@ import { Snippet as SnippetComponent } from './pattern/snippet.mjs'
 import { Path as PathComponent } from './pattern/path.mjs'
 import { Grid as GridComponent } from './pattern/grid.mjs'
 import { Text as TextComponent, TextOnPath as TextOnPathComponent } from './pattern/text.mjs'
+// Pattern Utils
+import { getProps, withinPartBounds, getId, translateStrings } from './pattern/utils.mjs'
 
 /*
  * Export all components as named exports
@@ -25,3 +28,13 @@ export const Snippet = SnippetComponent
 export const Grid = GridComponent
 export const Text = TextComponent
 export const TextOnPath = TextOnPathComponent
+
+/*
+ * Export pattern utils
+ */
+export const utils = {
+  getProps,
+  withinPartBounds,
+  getId,
+  translateStrings,
+}

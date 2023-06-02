@@ -255,146 +255,6 @@
   svg.freesewing.pattern circle.fill-note {
     @apply fs-fill-note;
   }
-  .fs-stroke-color-0 {
-    stroke: var(--pattern-color-0);
-  }
-  .fs-stroke-color-1 {
-    stroke: var(--pattern-color-1);
-  }
-  .fs-stroke-color-2 {
-    stroke: var(--pattern-color-2);
-  }
-  .fs-stroke-color-3 {
-    stroke: var(--pattern-color-3);
-  }
-  .fs-stroke-color-4 {
-    stroke: var(--pattern-color-4);
-  }
-  .fs-stroke-color-5 {
-    stroke: var(--pattern-color-5);
-  }
-  .fs-stroke-color-6 {
-    stroke: var(--pattern-color-6);
-  }
-  .fs-stroke-color-7 {
-    stroke: var(--pattern-color-7);
-  }
-  .fs-stroke-color-8 {
-    stroke: var(--pattern-color-8);
-  }
-  .fs-stroke-color-9 {
-    stroke: var(--pattern-color-9);
-  }
-  svg.freesewing.pattern circle.stroke-color-0,
-  svg.freesewing.pattern path.stroke-color-0 {
-    @apply fs-stroke-color-0;
-  }
-  svg.freesewing.pattern circle.stroke-color-1,
-  svg.freesewing.pattern path.stroke-color-1 {
-    @apply fs-stroke-color-1;
-  }
-  svg.freesewing.pattern circle.stroke-color-2,
-  svg.freesewing.pattern path.stroke-color-2 {
-    @apply fs-stroke-color-2;
-  }
-  svg.freesewing.pattern circle.stroke-color-3,
-  svg.freesewing.pattern path.stroke-color-3 {
-    @apply fs-stroke-color-3;
-  }
-  svg.freesewing.pattern circle.stroke-color-4,
-  svg.freesewing.pattern path.stroke-color-4 {
-    @apply fs-stroke-color-4;
-  }
-  svg.freesewing.pattern circle.stroke-color-5,
-  svg.freesewing.pattern path.stroke-color-5 {
-    @apply fs-stroke-color-5;
-  }
-  svg.freesewing.pattern circle.stroke-color-6,
-  svg.freesewing.pattern path.stroke-color-6 {
-    @apply fs-stroke-color-6;
-  }
-  svg.freesewing.pattern circle.stroke-color-7,
-  svg.freesewing.pattern path.stroke-color-7 {
-    @apply fs-stroke-color-7;
-  }
-  svg.freesewing.pattern circle.stroke-color-8,
-  svg.freesewing.pattern path.stroke-color-8 {
-    @apply fs-stroke-color-8;
-  }
-  svg.freesewing.pattern circle.stroke-color-9,
-  svg.freesewing.pattern path.stroke-color-9 {
-    @apply fs-stroke-color-9;
-  }
-  .fs-fill-color-0 {
-    fill: var(--pattern-color-0);
-  }
-  .fs-fill-color-1 {
-    fill: var(--pattern-color-1);
-  }
-  .fs-fill-color-2 {
-    fill: var(--pattern-color-2);
-  }
-  .fs-fill-color-3 {
-    fill: var(--pattern-color-3);
-  }
-  .fs-fill-color-4 {
-    fill: var(--pattern-color-4);
-  }
-  .fs-fill-color-5 {
-    fill: var(--pattern-color-5);
-  }
-  .fs-fill-color-6 {
-    fill: var(--pattern-color-6);
-  }
-  .fs-fill-color-7 {
-    fill: var(--pattern-color-7);
-  }
-  .fs-fill-color-8 {
-    fill: var(--pattern-color-8);
-  }
-  .fs-fill-color-9 {
-    fill: var(--pattern-color-9);
-  }
-  svg.freesewing.pattern circle.fill-color-0,
-  svg.freesewing.pattern path.fill-color-0 {
-    @apply fs-fill-color-0;
-  }
-  svg.freesewing.pattern circle.fill-color-1,
-  svg.freesewing.pattern path.fill-color-1 {
-    @apply fs-fill-color-1;
-  }
-  svg.freesewing.pattern circle.fill-color-2,
-  svg.freesewing.pattern path.fill-color-2 {
-    @apply fs-fill-color-2;
-  }
-  svg.freesewing.pattern circle.fill-color-3,
-  svg.freesewing.pattern path.fill-color-3 {
-    @apply fs-fill-color-3;
-  }
-  svg.freesewing.pattern circle.fill-color-4,
-  svg.freesewing.pattern path.fill-color-4 {
-    @apply fs-fill-color-4;
-  }
-  svg.freesewing.pattern circle.fill-color-5,
-  svg.freesewing.pattern path.fill-color-5 {
-    @apply fs-fill-color-5;
-  }
-  svg.freesewing.pattern circle.fill-color-6,
-  svg.freesewing.pattern path.fill-color-6 {
-    @apply fs-fill-color-6;
-  }
-  svg.freesewing.pattern circle.fill-color-7,
-  svg.freesewing.pattern path.fill-color-7 {
-    @apply fs-fill-color-7;
-  }
-  svg.freesewing.pattern circle.fill-color-8,
-  svg.freesewing.pattern path.fill-color-8 {
-    @apply fs-fill-color-8;
-  }
-  svg.freesewing.pattern circle.fill-color-9,
-  svg.freesewing.pattern path.fill-color-9 {
-    @apply fs-fill-color-9;
-  }
 
   .fs-fill-bg {
     fill: var(--pattern-bg);
@@ -413,6 +273,22 @@
   }
   .fill-opacity-50 {
     fill-opacity: 0.5;
+  }
+  .pulse-fill {
+    fill: currentColor;
+    animation: pulsefill 3s infinite;
+  }
+}
+
+@keyframes pulsefill {
+  0% {
+    fill-opacity: 0;
+  }
+  50% {
+    fill-opacity: 0.3;
+  }
+  100% {
+    fill-opacity: 0;
   }
 }
 
