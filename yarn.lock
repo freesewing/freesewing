@@ -13057,10 +13057,10 @@ merge2@^1.2.3, merge2@^1.3.0, merge2@^1.4.1:
   resolved "https://registry.yarnpkg.com/merge2/-/merge2-1.4.1.tgz#4368892f885e907455a6fd7dc55c0c9d404990ae"
   integrity sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==
 
-mermaid@10.2.0:
-  version "10.2.0"
-  resolved "https://registry.yarnpkg.com/mermaid/-/mermaid-10.2.0.tgz#72c87fd321dcc687ff6db91a25e86e244c846e1a"
-  integrity sha512-mYKXlH9ngKdMsJ87VYMdlDZXS+MXDAGKPf3XzDf2vvAPnmRoFm7GFebemOAOWYI1bWSECDyoWTGwesWe6mW1Cw==
+mermaid@10.2.1:
+  version "10.2.1"
+  resolved "https://registry.yarnpkg.com/mermaid/-/mermaid-10.2.1.tgz#5183c956a64e1ed9cf0122cec6c6cb4900521966"
+  integrity sha512-gziwXLuAidRxPJxcA0LqPhToirGZ2J2gD+UrDEtGNeKb98BtcQde28UUcCUCmNplkQOwE7oynrzKcMe9i29AMw==
   dependencies:
     "@braintree/sanitize-url" "^6.0.2"
     cytoscape "^3.23.0"
