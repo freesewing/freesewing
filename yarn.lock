@@ -3607,21 +3607,6 @@
     get-random-values-esm "^1.0.0"
     lodash "^4.17.21"
 
-"@sanity/cli@3.11.3":
-  version "3.11.3"
-  resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-3.11.3.tgz#1c6edb7bc9ddb930e406f1bde622baf93494f7e4"
-  integrity sha512-wKnsOOk40ErAGe1rzxpqk0vGWd3R9hK7z0BxPI04ejzCIK7sAmJnMROuyubSpWuWRzgf1FHdnsEkD8UPBdFYhA==
-  dependencies:
-    "@babel/traverse" "^7.19.0"
-    "@vercel/frameworks" "1.4.2"
-    "@vercel/fs-detectors" "3.9.2"
-    chalk "^4.1.2"
-    esbuild "^0.16.5"
-    esbuild-register "^3.4.1"
-    get-it "^8.0.9"
-    golden-fleece "^1.0.9"
-    pkg-dir "^5.0.0"
-
 "@sanity/cli@3.11.5":
   version "3.11.5"
   resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-3.11.5.tgz#ee4f4fc4a17e8e348b089481f70f5ca01415739f"
@@ -4366,9 +4351,9 @@
     "@types/react" "*"
 
 "@types/react@*", "@types/react@>=16", "@types/react@^18.0.25", "@types/react@^18.0.8":
-  version "18.2.7"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.7.tgz#dfb4518042a3117a045b8c222316f83414a783b3"
-  integrity sha512-ojrXpSH2XFCmHm7Jy3q44nXDyN54+EYKP2lBhJ2bqfyPj6cIUW/FZW/Csdia34NQgq7KYcAlHi5184m4X88+yw==
+  version "18.2.8"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.8.tgz#a77dcffe4e9af148ca4aa8000c51a1e8ed99e2c8"
+  integrity sha512-lTyWUNrd8ntVkqycEEplasWy2OxNlShj3zqS0LuB1ENUGis5HodmhM7DtCoUGbxj3VW/WsGA0DUhpG6XrM7gPA==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
