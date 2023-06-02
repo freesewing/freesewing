@@ -1,9 +1,5 @@
 import { Difficulty } from 'shared/components/designs/difficulty.mjs'
-
-const ListValue = ({ current, t, config, changed }) =>
-  changed
-    ? t(`ui-settings:${config.valueTitles[current]}`)
-    : t(`ui-settings:${config.valueTitles[config.dflt]}`)
+import { ListValue } from '../shared/values.mjs'
 
 export const RendererSettingValue = ListValue
 export const InspectSettingValue = ListValue

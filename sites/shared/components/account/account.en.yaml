@@ -86,16 +86,16 @@ compareNod: |
 
 # control
 showMore: Show more
-control1t: Keep it as simple as possible
-control1d: Hides all but the most crucial features.
-control2t: Keep it simple, but not too simple
-control2d: Hides the majority of features.
-control3t: Balance simplicity with power
-control3d: Reveals the majority of features, but not all.
-control4t: Give me all powers, but keep me safe
-control4d: Reveals all features, keeps handrails and safety checks.
-control5t: Get out of my way
-control5d: Reveals all features, removes all handrails and safety checks.
+control1.t: Keep it as simple as possible
+control1.d: Hides all but the most crucial features.
+control2.t: Keep it simple, but not too simple
+control2.d: Hides the majority of features.
+control3.t: Balance simplicity with power
+control3.d: Reveals the majority of features, but not all.
+control4.t: Give me all powers, but keep me safe
+control4.d: Reveals all features, keeps handrails and safety checks.
+control5.t: Get out of my way
+control5.d: Reveals all features, removes all handrails and safety checks.
 controlShowMore: Show more options
 controlTitle: Which user experience do you prefer?
 # img

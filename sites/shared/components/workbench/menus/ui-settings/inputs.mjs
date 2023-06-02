@@ -1,59 +1,25 @@
 import { useState } from 'react'
 import { ChoiceButton } from 'shared/components/choice-button.mjs'
 import { ControlSettings } from 'shared/components/account/control.mjs'
+import { ListInput, BoolInput } from '../shared/inputs'
+import { useControlState } from 'shared/components/account/control.mjs'
 
-// Shared input for list inputs
-export const ListSetting = ({ name, config, current, update, t }) => {
-  if (typeof current === 'undefined') current = config.dflt
+export const ControlSettingInput = (props) => {
+  const { selection, update } = useControlState()
 
-  const [value, setValue] = useState(current)
-
-  const handleChange = (newCurrent) => {
-    if (newCurrent === config.dflt) reset()
-    else {
-      update.ui([name], newCurrent)
-      setValue(newCurrent)
-    }
-  }
-
-  const reset = () => {
-    update.ui([name])
-    setValue(config.dflt)
-  }
-
+  props.config.dflt = selection
   return (
-    <>
-      <p>{t(`ui-settings:${name}.d`)}</p>
-      {config.list.map((entry) => (
-        <ChoiceButton
-          key={entry}
-          title={t(`ui-settings:${config.choiceTitles[entry]}.t`)}
-          color={entry === config.dflt ? 'primary' : 'accent'}
-          active={current === entry}
-          onClick={() => handleChange(entry)}
-        >
-          {t(`ui-settings:${config.choiceTitles[entry]}.d`)}
-        </ChoiceButton>
-      ))}
-    </>
+    <ListInput
+      {...props}
+      updateFunc={(path, newVal) => update(newVal)}
+      current={selection}
+      compact={selection < 2}
+    />
   )
 }
 
-export const ControlSettingInput = ({ t, name }) => (
-  <>
-    <p>{t(`ui-settings:${name}.d`)}</p>
-    <ControlSettings noBack />
-  </>
-)
-
-export const RendererSettingInput = ({ name, config, current, update, t }) => (
-  <ListSetting
-    {...{ name, config, current, update, t }}
-    list={config.list.map((key) => ({
-      key,
-      title: key,
-    }))}
-  />
-)
-
-export const InspectSettingInput = (props) => <ListSetting {...props} />
+export const inputs = {
+  renderer: ListInput,
+  xray: BoolInput,
+  control: ControlSettingInput,
+}
