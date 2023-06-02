@@ -130,7 +130,7 @@ export const MenuItem = ({
   }
 
   if (allowToggle) {
-    buttons.push(<ListToggle {...{ config, changed, updateFunc, name }} />)
+    buttons.push(<ListToggle key="toggle" {...{ config, changed, updateFunc, name }} />)
   }
 
   // props to pass to the ItemTitle

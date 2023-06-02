@@ -44,9 +44,8 @@ const useSharedHandlers = ({ dflt, updateFunc, name }) => {
   return useCallback(
     (newCurrent) => {
       if (newCurrent === dflt) newCurrent = undefined
-      else {
-        updateFunc(name, newCurrent)
-      }
+
+      updateFunc(name, newCurrent)
     },
     [dflt, updateFunc, name]
   )
@@ -110,8 +109,8 @@ export const ListInput = ({ name, config, current, updateFunc, compact = false, 
         return (
           <ChoiceButton
             key={entry}
-            title={t(`${titleKey}${compact ? '' : '.t'}`)}
-            color={entry === config.dflt ? 'primary' : 'accent'}
+            title={t(`${titleKey}.t`)}
+            color={entry === config.dflt ? 'primary' : 'secondary'}
             active={changed ? current === entry : entry === config.dflt}
             onClick={() => handleChange(entry)}
           >
