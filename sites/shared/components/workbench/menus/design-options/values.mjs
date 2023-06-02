@@ -13,9 +13,6 @@ export const PctOptionValue = ({ config, current, settings, changed }) => {
   )
 }
 
-/** Displays a boolean value */
-export const BoolOptionValue = BoolValue
-
 /** Displays a count value*/
 export const CountOptionValue = ({ config, current, changed }) => (
   <PlainValue {...{ current, changed, dflt: config.count }} />
@@ -40,3 +37,14 @@ export const MmOptionValue = () => (
 export const ConstantOptionValue = () => (
   <span className="text-error">FIXME: No ConstantOptionvalue implemented</span>
 )
+
+// Facilitate lookup of the value component
+export const values = {
+  bool: BoolValue,
+  constant: ConstantOptionValue,
+  count: CountOptionValue,
+  deg: DegOptionValue,
+  list: ListOptionValue,
+  mm: MmOptionValue,
+  pct: PctOptionValue,
+}

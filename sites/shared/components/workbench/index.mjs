@@ -23,7 +23,7 @@ const defaultUi = {
 
 const draftViews = ['draft', 'test']
 
-export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) => {
+export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from, set }) => {
   // Hooks
   const { t, i18n } = useTranslation(ns)
   const { language } = i18n
@@ -39,8 +39,8 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) =
   useEffect(() => {
     // Force re-render when baseSettings changes. Required when they are loaded async.
     console.log('in effect')
-    setSettings({ ...baseSettings, embed: true })
-  }, [baseSettings])
+    setSettings({ ...baseSettings, embed: true, measurements: set.measies })
+  }, [baseSettings, set])
 
   // Helper methods for settings/ui updates
   const update = {

@@ -1,66 +1,13 @@
 // Components
 import { OptionsIcon } from 'shared/components/icons.mjs'
-import { optionsMenuStructure } from 'shared/utils.mjs'
-import { optionType, formatMm } from 'shared/utils.mjs'
-import {
-  BoolInput,
-  ConstantInput,
-  SliderInput,
-  DegInput,
-  ListInput,
-  PctInput,
-} from '../shared/inputs.mjs'
-import {
-  BoolOptionValue,
-  ConstantOptionValue,
-  CountOptionValue,
-  DegOptionValue,
-  ListOptionValue,
-  MmOptionValue,
-  PctOptionValue,
-} from './values.mjs'
+import { optionsMenuStructure, optionType } from 'shared/utils.mjs'
+
+import { values } from './values.mjs'
+import { inputs } from './inputs.mjs'
 import { WorkbenchMenu } from '../shared/index.mjs'
 import { MenuItem } from '../shared/menu-item.mjs'
 
 export const ns = ['design-options']
-
-const PctOptionInput = (props) => {
-  const { config, settings, changed } = props
-  const currentOrDefault = changed ? props.current : config.dflt / 100
-  return (
-    <PctInput {...props}>
-      <div className="flex flex-row justify-around">
-        <span className={changed ? 'text-accent' : 'text-secondary'}>
-          {config.toAbs && settings.measurements
-            ? formatMm(config.toAbs(currentOrDefault, settings))
-            : ' '}
-        </span>
-      </div>
-    </PctInput>
-  )
-}
-
-// Facilitate lookup of the input component
-const inputs = {
-  bool: BoolInput,
-  constant: ConstantInput,
-  count: SliderInput,
-  deg: DegInput,
-  list: ListInput,
-  mm: () => <span>FIXME: Mm options are deprecated. Please report this </span>,
-  pct: PctOptionInput,
-}
-
-// Facilitate lookup of the value component
-const values = {
-  bool: BoolOptionValue,
-  constant: ConstantOptionValue,
-  count: CountOptionValue,
-  deg: DegOptionValue,
-  list: ListOptionValue,
-  mm: MmOptionValue,
-  pct: PctOptionValue,
-}
 
 // Emojis for option groups :)
 const emojis = {
@@ -77,11 +24,13 @@ const emojis = {
  * @param  {Object}    options.settings core settings
  * @param  {Object} options.rest     the rest of the props
  */
-export const DesignOption = ({ config, settings, ...rest }) => {
+const DesignOption = ({ config, settings, control, ...rest }) => {
   const type = optionType(config)
   const Input = inputs[type]
   const Value = values[type]
   const allowOverride = ['pct', 'count', 'deg'].includes(type)
+  const allowToggle =
+    (control > 3 && type === 'bool') || (type == 'list' && config.list.length === 2)
 
   // Hide option?
   if (config?.hide || (typeof config?.hide === 'function' && config.hide(settings))) return null
@@ -90,10 +39,12 @@ export const DesignOption = ({ config, settings, ...rest }) => {
     <MenuItem
       {...{
         config,
+        control,
         ...rest,
         Input,
         Value,
         allowOverride,
+        allowToggle,
       }}
     />
   )

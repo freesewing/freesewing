@@ -1,6 +1,7 @@
 import { ClearIcon, HelpIcon, EditIcon } from 'shared/components/icons.mjs'
 import { Collapse } from 'shared/components/collapse.mjs'
 import { useState, useMemo } from 'react'
+import { ListToggle } from './inputs.mjs'
 
 /**
  * Check to see if a value is different from its default
@@ -10,7 +11,7 @@ import { useState, useMemo } from 'react'
  */
 export const wasChanged = (current, config) => {
   if (typeof current === 'undefined') return false
-  if (current === config.dflt) return false
+  if (current == config.dflt) return false
 
   return true
 }
@@ -65,27 +66,26 @@ export const MenuItem = ({
   Input,
   Value,
   allowOverride = false,
+  allowToggle = false,
   control = Infinity,
 }) => {
   // state for knowing whether the override input should be shown
   const [override, setOverride] = useState(false)
-  // store the reset function in state because the Input may set a custom one
-  const [reset, setReset] = useState(() => () => updateFunc(name))
 
   // generate properties to pass to the Input
   const drillProps = useMemo(
     () => ({
       name,
       config,
+      control,
       current,
       updateFunc,
       t,
       changed,
       override,
-      setReset, // allow setting of the reset function
       ...passProps,
     }),
-    [name, config, current, updateFunc, t, changed, override, setReset, passProps]
+    [name, config, current, updateFunc, t, changed, override, passProps, control]
   )
 
   // don't render if this item is more advanced than the user has chosen to see
@@ -113,13 +113,13 @@ export const MenuItem = ({
         <EditIcon className={`w-6 h-6 ${override ? 'bg-base-100 text-accent rounded' : ''}`} />
       </button>
     )
-  if (changed) {
+  if (changed && !allowToggle) {
     const ResetButton = ({ open }) => (
       <button
         className={open ? openButtonClass : 'btn btn-accent'}
         onClick={(evt) => {
           evt.stopPropagation()
-          reset()
+          updateFunc(name)
         }}
       >
         <ClearIcon />
@@ -127,6 +127,10 @@ export const MenuItem = ({
     )
     buttons.push(<ResetButton key="clear" />)
     openButtons.push(<ResetButton open key="clear" />)
+  }
+
+  if (allowToggle) {
+    buttons.push(<ListToggle {...{ config, changed, updateFunc, name }} />)
   }
 
   // props to pass to the ItemTitle

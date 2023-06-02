@@ -2,61 +2,44 @@
 import { loadSettingsConfig, defaultSamm } from './config.mjs'
 // Components
 import { SettingsIcon } from 'shared/components/icons.mjs'
-import {
-  CompleteSettingInput,
-  LocaleSettingInput,
-  MarginSettingInput,
-  OnlySettingInput,
-  PaperlessSettingInput,
-  RendererSettingInput,
-  SaBoolSettingInput,
-  SaMmSettingInput,
-  ScaleSettingInput,
-  UnitsSettingInput,
-} from './inputs.mjs'
-import {
-  CompleteSettingValue,
-  LocaleSettingValue,
-  MarginSettingValue,
-  OnlySettingValue,
-  PaperlessSettingValue,
-  RendererSettingValue,
-  SaBoolSettingValue,
-  SaMmSettingValue,
-  ScaleSettingValue,
-  UnitsSettingValue,
-} from './values.mjs'
 import { WorkbenchMenu } from '../shared/index.mjs'
-
-// Facilitate lookup of the value component
-const values = {
-  complete: CompleteSettingValue,
-  locale: LocaleSettingValue,
-  margin: MarginSettingValue,
-  only: OnlySettingValue,
-  paperless: PaperlessSettingValue,
-  renderer: RendererSettingValue,
-  sabool: SaBoolSettingValue,
-  samm: SaMmSettingValue,
-  scale: ScaleSettingValue,
-  units: UnitsSettingValue,
-}
-
-// Facilitate lookup of the input component
-const inputs = {
-  complete: CompleteSettingInput,
-  locale: LocaleSettingInput,
-  margin: MarginSettingInput,
-  only: OnlySettingInput,
-  paperless: PaperlessSettingInput,
-  renderer: RendererSettingInput,
-  sabool: SaBoolSettingInput,
-  samm: SaMmSettingInput,
-  scale: ScaleSettingInput,
-  units: UnitsSettingInput,
-}
+import { MenuItem } from '../shared/menu-item.mjs'
+// input components and event handlers
+import { inputs, handlers } from './inputs.mjs'
+// values
+import { values } from './values.mjs'
 
 export const ns = ['core-settings', 'modal']
+
+/** A wrapper for {@see MenuItem} to handle core settings-specific business */
+const CoreSetting = ({ name, config, control, updateFunc, current, passProps, ...rest }) => {
+  // is toggling allowed?
+  const allowToggle = control > 3 && config.list?.length === 2
+
+  const handlerArgs = {
+    updateFunc,
+    current,
+    config,
+    ...passProps,
+  }
+  // get the appropriate event handler if there is one
+  const handler = handlers[name] ? handlers[name](handlerArgs) : updateFunc
+
+  return (
+    <MenuItem
+      {...{
+        name,
+        config,
+        control,
+        current,
+        passProps,
+        ...rest,
+        allowToggle,
+        updateFunc: handler,
+      }}
+    />
+  )
+}
 
 /**
  * The core settings menu
@@ -82,6 +65,11 @@ export const CoreSettings = ({
     parts: patternConfig.draftOrder,
   })
 
+  const passProps = {
+    samm: typeof settings.samm === 'undefined' ? defaultSamm(settings.units) : settings.samm,
+    units: settings.units,
+  }
+
   return (
     <WorkbenchMenu
       {...{
@@ -95,12 +83,10 @@ export const CoreSettings = ({
         language,
         name: 'coreSettings',
         ns,
-        passProps: {
-          samm: typeof settings.samm === 'undefined' ? defaultSamm(settings.units) : settings.samm,
-          units: settings.units,
-        },
+        passProps,
         updateFunc: update.settings,
         values,
+        Item: CoreSetting,
       }}
     />
   )
