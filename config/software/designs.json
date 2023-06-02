@@ -221,6 +221,13 @@
       "difficulty": 1,
       "tags": ["tops", "coats", "historical"]
     },
+    "onyx": {
+      "description": "A FreeSewing pattern that needs a description",
+      "code": "Coder name",
+      "design": "Designer name",
+      "difficulty": 1,
+      "tags": ["tagname"]
+    },
     "paco": {
       "description": "A FreeSewing pattern for summer pants",
       "code": "Joost De Cock",
