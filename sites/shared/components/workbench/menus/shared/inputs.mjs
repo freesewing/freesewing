@@ -1,4 +1,4 @@
-import { useEffect, useCallback } from 'react'
+import { useCallback, useMemo } from 'react'
 import { round, measurementAsMm, measurementAsUnits, formatFraction128 } from 'shared/utils.mjs'
 import { ChoiceButton } from 'shared/components/choice-button.mjs'
 
@@ -35,31 +35,55 @@ const EditCount = (props) => (
 
 /**
  * A hook to get the change handler for an input.
- * Also sets the reset function on a parent component
  * @param  {Number|String|Boolean} options.dflt       the default value for the input
  * @param  {Function}              options.updateFunc the onChange
  * @param  {string}                options.name       the name of the property being changed
- * @param  {Function}              options.setReset   the setReset function passed from the parent component
- * @return {ret.handleChange}                         the change handler for the input
+ * @return the change handler for the input
  */
-const useSharedHandlers = ({ dflt, updateFunc, name, setReset }) => {
-  const reset = useCallback(() => updateFunc(name), [updateFunc, name])
-
-  const handleChange = useCallback(
+const useSharedHandlers = ({ dflt, updateFunc, name }) => {
+  return useCallback(
     (newCurrent) => {
-      if (newCurrent === dflt) reset()
+      if (newCurrent === dflt) newCurrent = undefined
       else {
         updateFunc(name, newCurrent)
       }
     },
-    [dflt, updateFunc, name, reset]
+    [dflt, updateFunc, name]
   )
+}
 
-  useEffect(() => {
-    if (typeof setReset === 'function') setReset(() => reset)
-  }, [reset, setReset])
+/** get the configuration that allows a boolean value to use the list input */
+const useBoolConfig = (name, config) => {
+  return useMemo(
+    () => ({
+      list: [false, true],
+      choiceTitles: {
+        false: `${name}No`,
+        true: `${name}Yes`,
+      },
+      valueTitles: {
+        false: 'no',
+        true: 'yes',
+      },
+      ...config,
+    }),
+    [name, config]
+  )
+}
 
-  return { handleChange, reset }
+/** a toggle input for list/boolean values */
+export const ListToggle = ({ config, changed, updateFunc, name }) => {
+  const boolConfig = useBoolConfig(name, config)
+  const handleChange = useSharedHandlers({ dflt: boolConfig.dflt, updateFunc, name })
+
+  const dfltIndex = boolConfig.list.indexOf(boolConfig.dflt)
+
+  const doToggle = () =>
+    handleChange(boolConfig.list[changed ? dfltIndex : Math.abs(dfltIndex - 1)])
+
+  const checked = boolConfig.dflt == false ? changed : !changed
+
+  return <input type="checkbox" className="toggle" checked={checked} onChange={doToggle} />
 }
 
 /**
@@ -70,14 +94,12 @@ const useSharedHandlers = ({ dflt, updateFunc, name, setReset }) => {
  * @param  {Function}  options.updateFunc the function called by the event handler to update the value
  * @param  {Boolean} options.compact    include descriptions with the list items?
  * @param  {Function}  options.t          translation function
- * @param  {Function}  options.setReset   a setter for the reset function on the parent component
  */
-export const ListInput = ({ name, config, current, updateFunc, compact = false, t, setReset }) => {
-  const { handleChange } = useSharedHandlers({
+export const ListInput = ({ name, config, current, updateFunc, compact = false, t, changed }) => {
+  const handleChange = useSharedHandlers({
     dflt: config.dflt,
     updateFunc,
     name,
-    setReset,
   })
 
   return (
@@ -90,7 +112,7 @@ export const ListInput = ({ name, config, current, updateFunc, compact = false, 
             key={entry}
             title={t(`${titleKey}${compact ? '' : '.t'}`)}
             color={entry === config.dflt ? 'primary' : 'accent'}
-            active={current === entry}
+            active={changed ? current === entry : entry === config.dflt}
             onClick={() => handleChange(entry)}
           >
             {compact ? null : t(`${titleKey}.d`)}
@@ -103,19 +125,8 @@ export const ListInput = ({ name, config, current, updateFunc, compact = false, 
 
 /** A boolean version of {@see ListInput} that sets up the necessary configuration */
 export const BoolInput = (props) => {
-  const boolConfig = {
-    list: [0, 1],
-    choiceTitles: {
-      0: `${props.name}No`,
-      1: `${props.name}Yes`,
-    },
-    valueTitles: {
-      0: 'no',
-      1: 'yes',
-    },
-    dflt: props.config.dflt ? 1 : 0,
-    ...props.config,
-  }
+  const { name, config } = props
+  const boolConfig = useBoolConfig(name, config)
 
   return <ListInput {...props} config={boolConfig} />
 }
@@ -146,7 +157,7 @@ export const SliderInput = ({
   changed,
 }) => {
   const { max, min } = config
-  const { handleChange } = useSharedHandlers({
+  const handleChange = useSharedHandlers({
     current,
     dflt: config.dflt,
     updateFunc,

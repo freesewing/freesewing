@@ -1,26 +1,33 @@
-import { useCallback } from 'react'
 import { measurementAsMm } from 'shared/utils.mjs'
 import { ListInput, SliderInput, BoolInput, MmInput } from '../shared/inputs.mjs'
 
-export const LocaleSettingInput = ListInput
-export const UnitsSettingInput = ListInput
-export const RendererSettingInput = ListInput
-export const CompleteSettingInput = ListInput
-export const PaperlessSettingInput = ListInput
-
-export const MarginSettingInput = MmInput
-export const ScaleSettingInput = SliderInput
-
 /** an input for the 'only' setting. toggles individual parts*/
-export const OnlySettingInput = (props) => {
-  const { config, updateFunc, current } = props
+const OnlySettingInput = (props) => {
+  const { config } = props
 
   // set up choice titles
   config.choiceTitles = {}
   config.list.forEach((p) => (config.choiceTitles[p] = p))
 
-  // make an update function that toggles the parts
-  const onlyUpdateFunc = useCallback(
+  return <ListInput {...props} />
+}
+
+export const inputs = {
+  complete: ListInput,
+  locale: ListInput,
+  margin: MmInput,
+  only: OnlySettingInput,
+  paperless: BoolInput,
+  sabool: BoolInput,
+  samm: MmInput,
+  scale: SliderInput,
+  units: BoolInput,
+}
+
+/** custom event handlers for inputs that need them */
+export const handlers = {
+  only:
+    ({ updateFunc, current }) =>
     (path, part) => {
       // if there's no part being set, it's a reset
       if (part === undefined) return updateFunc(path, part)
@@ -37,18 +44,8 @@ export const OnlySettingInput = (props) => {
 
       updateFunc(path, newParts)
     },
-    [updateFunc, current]
-  )
-
-  return <ListInput {...props} updateFunc={onlyUpdateFunc} />
-}
-
-/** An input for the samm setting */
-export const SaMmSettingInput = (props) => {
-  const { updateFunc, units, config } = props
-
-  // the update function to switch the 'sa' setting along with samm
-  const mmUpdateFunc = useCallback(
+  samm:
+    ({ updateFunc, config, units }) =>
     (_path, newCurrent) => {
       // convert to millimeters if there's a value
       newCurrent = newCurrent === undefined ? measurementAsMm(config.dflt, units) : newCurrent
@@ -58,25 +55,8 @@ export const SaMmSettingInput = (props) => {
         [['sa'], newCurrent],
       ])
     },
-    [updateFunc, units, config.dflt]
-  )
-
-  return (
-    <MmInput
-      {...{
-        ...props,
-        updateFunc: mmUpdateFunc,
-      }}
-    />
-  )
-}
-
-/** An input for the sabool setting */
-export const SaBoolSettingInput = (props) => {
-  const { updateFunc, samm } = props
-
-  // the update function to toggle the 'sa' setting based on 'sabool'
-  const saUpdateFunc = useCallback(
+  sabool:
+    ({ updateFunc, samm }) =>
     (_path, newCurrent) => {
       updateFunc([
         // update sabool to the new current
@@ -85,16 +65,4 @@ export const SaBoolSettingInput = (props) => {
         [['sa'], newCurrent ? samm : undefined],
       ])
     },
-    [updateFunc, samm]
-  )
-
-  return (
-    <BoolInput
-      {...{
-        ...props,
-        name: 'sabool',
-        updateFunc: saUpdateFunc,
-      }}
-    />
-  )
 }
