@@ -346,6 +346,19 @@ Point.prototype.translate = function (x, y) {
   return p
 }
 
+/**
+ * Returns a point as an object suitable for inclusion in renderprops
+ *
+ * @return {object} point - A plain object representing the point
+ */
+Point.prototype.asRenderProps = function () {
+  return {
+    x: this.x,
+    y: this.y,
+    attributes: this.attributes.asRenderProps(),
+  }
+}
+
 //////////////////////////////////////////////
 //            PRIVATE METHODS               //
 //////////////////////////////////////////////

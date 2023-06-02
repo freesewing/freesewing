@@ -173,7 +173,7 @@ describe('Pattern', () => {
       layout: { stacks: { test: { flipX: true } }, width: 300, height: 400 },
     })
     const props = pattern.draft().getRenderProps()
-    expect(props.stacks.test.attributes.get('transform')).to.equal('scale(-1, 1)')
+    expect(props.stacks.test.attributes.list.transform[0]).to.equal('scale(-1, 1)')
     expect(props.width).to.equal(300)
     expect(props.height).to.equal(400)
   })

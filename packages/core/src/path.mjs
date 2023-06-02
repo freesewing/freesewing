@@ -112,6 +112,25 @@ Path.prototype.asPathstring = function () {
 }
 
 /**
+ * Returns a path as an object suitable for inclusion in renderprops
+ *
+ * @return {object} path - A plain object representing the path
+ */
+Path.prototype.asRenderProps = function () {
+  return {
+    attributes: this.attributes.asRenderProps(),
+    hidden: this.hidden,
+    name: this.name,
+    ops: this.ops,
+    topLeft: this.topLeft,
+    bottomRight: this.bottomRight,
+    width: this.bottomRight.x - this.topLeft.x,
+    height: this.bottomRight.y - this.topLeft.y,
+    d: this.asPathstring(),
+  }
+}
+
+/**
  * Chainable way to add an attribute
  *
  * @param {string} name - Name of the attribute to add
