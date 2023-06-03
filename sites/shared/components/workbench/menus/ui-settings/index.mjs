@@ -103,12 +103,16 @@ export const Setting = ({ name, config, current, update, t, changed, loadDocs, c
 
   if (control > 4) {
     // Save gurus some clicks
-    if (name === 'renderer')
+    const onClick = {
+      renderer: () => (current === 'svg' ? update.ui([name]) : update.ui([name], 'svg')),
+      inspect: () => (current === 1 ? update.ui([name]) : update.ui([name], 1)),
+    }
+    if (['renderer', 'inspect'].includes(name))
       return (
         <Collapse
           color={changed ? 'accent' : 'primary'}
           title={<UiTitle {...titleProps} />}
-          onClick={() => (current === 'svg' ? update.ui([name]) : update.ui([name], 'svg'))}
+          onClick={onClick[name]}
         />
       )
   }
@@ -149,9 +153,9 @@ export const UiSettings = ({ design, update, settings, ui, control, language, Dy
 
   return (
     <>
-      <div className="px-2 mt-8">
+      <div className="px-2">
         {control > 4 ? (
-          <div className="border-t border-solid border-base-300 pb-2 mx-36"></div>
+          <div className="border-t border-solid border-base-300 mx-36"></div>
         ) : (
           <>
             <h5 className="flex flex-row gap-2 items-center">

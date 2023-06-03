@@ -278,6 +278,10 @@
     fill: currentColor;
     animation: pulsefill 3s infinite;
   }
+  .pulse-stroke {
+    stroke: currentColor;
+    animation: pulsestroke 3s infinite;
+  }
 }
 
 @keyframes pulsefill {
@@ -289,6 +293,17 @@
   }
   100% {
     fill-opacity: 0;
+  }
+}
+@keyframes pulsestroke {
+  0% {
+    stroke-opacity: 0;
+  }
+  50% {
+    stroke-opacity: 0.3;
+  }
+  100% {
+    stroke-opacity: 0;
   }
 }
 

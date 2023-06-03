@@ -224,9 +224,9 @@ export const CoreSettings = ({
 
   return (
     <>
-      <div className="px-2 mt-8">
+      <div className="px-2">
         {control > 4 ? (
-          <div className="border-t border-solid border-base-300 pb-2 mx-36"></div>
+          <div className="border-t border-solid border-base-300 mx-36"></div>
         ) : (
           <>
             <h5 className="flex flex-row gap-2 items-center">

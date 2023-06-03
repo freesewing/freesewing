@@ -246,7 +246,7 @@ export const DesignOptions = ({
 
   return (
     <>
-      <div className="px-2 mt-8">
+      <div className="px-2">
         {control > 4 ? null : (
           <>
             <h5 className="flex flex-row gap-2 items-center">
