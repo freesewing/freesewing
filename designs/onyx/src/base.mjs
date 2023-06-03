@@ -19,8 +19,15 @@ function draftBase({
   Snippet,
   scale,
 }) {
-  const hpsToWaist = (measurements.hpsToWaistBack + measurements.hpsToWaistFront) / 2
-  const verticalTrunk = hpsToWaist * 2 + measurements.crossSeam
+  const hpsToWaist =
+    (measurements.hpsToWaistBack + measurements.hpsToWaistFront) / 2 +
+    measurements.waistToArmpit * options.outseamEase
+  const hpsToHips = hpsToWaist + measurements.waistToHips * (1 + options.outseamEase)
+  const hpsToSeat = hpsToWaist + measurements.waistToSeat * (1 + options.outseamEase)
+  const hpsToUpperLeg = hpsToWaist + measurements.waistToUpperLeg * (1 + options.outseamEase)
+  const waistToArmpit = measurements.waistToArmpit * (1 + options.outseamEase)
+  const rawHpsToWaist = (measurements.hpsToWaistBack + measurements.hpsToWaistFront) / 2
+  const verticalTrunk = (rawHpsToWaist * 2 + measurements.crossSeam) * (1 + options.centerSeamEase)
   store.set('verticalTrunk', verticalTrunk)
   const crotchGussetWidth = verticalTrunk * options.crotchGussetWidth
   store.set('crotchGussetWidth', crotchGussetWidth)
@@ -34,9 +41,9 @@ function draftBase({
   store.set('neckbandWidth', neckbandWidth)
 
   const legLength = options.legLength * measurements.inseam
-  const totalLength = hpsToWaist + measurements.waistToUpperLeg + legLength
+  const totalLength = hpsToUpperLeg + legLength
 
-  const armpitYPosition = measurements.hpsToWaistBack - measurements.waistToArmpit
+  const armpitYPosition = hpsToWaist - waistToArmpit
   let chest = measurements.chest * (1 + options.chestEase)
   chest -= 4 * (options.raglanScoopMagnitude * armpitYPosition)
   const neckRadius = (measurements.neck * (1 + options.neckEase)) / (2 * Math.PI)
@@ -74,10 +81,7 @@ function draftBase({
   points.cfNeck = points.neckCenter.shift(270, neckRadius)
   points.cfCrotch = new Point(0, (verticalTrunk - crotchGussetWidth) / 2)
   points.crotchEnd = new Point(crotchScoopWidth, points.cfCrotch.y + crotchScoopLength)
-  points.upperLeg = new Point(
-    upperLeg / 2 - crotchGussetWidth / 2,
-    hpsToWaist + measurements.waistToUpperLeg
-  )
+  points.upperLeg = new Point(upperLeg / 2 - crotchGussetWidth / 2, hpsToUpperLeg)
   const legBalance =
     (points.upperLeg.x - points.crotchEnd.x - legHemCircumference / 2) *
     (1 - options.legTaperPosition)
@@ -86,8 +90,8 @@ function draftBase({
     totalLength
   )
   points.outseamHem = new Point(points.upperLeg.x - legBalance, totalLength)
-  points.seat = new Point(seat / 4, hpsToWaist + measurements.waistToSeat)
-  points.hips = new Point(hips / 4, hpsToWaist + measurements.waistToHips)
+  points.seat = new Point(seat / 4, hpsToSeat)
+  points.hips = new Point(hips / 4, hpsToHips)
   points.waist = new Point(waist / 4, hpsToWaist)
 
   const raglanAngle = points.neckShoulderCorner.angle(points.armpitCorner)
@@ -311,6 +315,10 @@ export const base = {
     upperLegEase: { pct: 0, min: -40, max: 50, menu: 'fit' },
     // How much ease to have where the leg ends, wherever that may be.
     legHemEase: { pct: 0, min: -40, max: 100, menu: 'fit' },
+    // How much vertical ease (stretch out/compress) to put in the center seams/crotch.
+    centerSeamEase: { pct: 0, min: -20, max: 50, menu: 'fit' },
+    // How much vertical ease (stretch out/compress) to put in the outseam, from the armpit to the upper leg (use legLength to adjust below that point, and sleeveEase for the armhole). Will generally be zero or slightly positive for wovens, and slightly negative for stretch fabrics.
+    outseamEase: { pct: 0, min: -20, max: 5, menu: 'fit' },
     // If set to true, makes a tubular body based on the chest, ignoring the hips measurements and options.
     straightSides: { bool: true, menu: 'advanced' },
     // How long the legs on the garment are. 20-60% for shorts, 100% for pants that touch the floor.
