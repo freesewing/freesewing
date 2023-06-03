@@ -28,10 +28,8 @@ export const Inspector = ({
 
   return (
     <>
-      <div className="px-2 mt-8">
-        {control > 4 ? (
-          <div className="border-t border-solid border-base-300 pb-2 mx-36"></div>
-        ) : (
+      <div className="px-2">
+        {control > 4 ? null : (
           <>
             <h5 className="flex flex-row gap-2 items-center">
               <WrenchIcon />
@@ -44,6 +42,7 @@ export const Inspector = ({
       {Object.values(inspector.data.show).map((props) => (
         <Collapse {...props} />
       ))}
+      {control > 4 ? <div className="border-t border-solid border-base-300 mx-36"></div> : null}
     </>
   )
 }

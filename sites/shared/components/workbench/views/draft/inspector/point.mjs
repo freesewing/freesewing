@@ -1,10 +1,6 @@
-// Hooks
-import { useState, useEffect, useContext } from 'react'
-// Context
-import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
 import { Point as ShowPoint, Text, Circle, utils } from 'pkgs/react-components/src/index.mjs'
-import { Tr, KeyTd, ValTd, Attributes, pointCoords, useInfoLoader, KeyValTable } from './shared.mjs'
+import { Attributes, pointCoords, KeyValTable } from './shared.mjs'
 import { round } from 'shared/utils.mjs'
 import { TrashIcon, PrintIcon, SearchIcon } from 'shared/components/icons.mjs'
 
@@ -142,21 +138,7 @@ const InspectPoint = ({
     </g>
   )
 }
-/*
-  title,
-  openTitle = false,
-  children = [],
-  buttons = [],
-  top = true,
-  bottom = false,
-  color = 'primary',
-  opened = false,
-  toggle = false,
-  toggleClasses = '',
-  onClick = false,
-  openButtons = null,
-  className = '',
-*/
+
 export const Point = ({
   stackName,
   pointName,
@@ -169,19 +151,12 @@ export const Point = ({
   update,
   inspector,
 }) => {
-  const showInfo = useInfoLoader()
-
   // Don't include parts outside the part bounding box
   if (!withinPartBounds(point, part)) return null
 
-  const pointProps = { stackName, pointName, part, point, settings, components, t }
-
   return (
     <>
-      <ShowPoint
-        {...pointProps}
-        {...{ stackName, pointName, part, point, settings, components, t }}
-      />
+      <ShowPoint {...{ stackName, pointName, part, point, settings, components, t }} />
       <InspectPoint
         {...{ point, pointName, stackName, inspector, t, part }}
         scale={settings.scale}

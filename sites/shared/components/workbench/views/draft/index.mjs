@@ -46,6 +46,7 @@ export const DraftView = ({
       setInspect(newInspect)
     },
     data: inspect,
+    pattern: pattern,
   }
 
   let output = null
