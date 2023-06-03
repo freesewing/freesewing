@@ -67,6 +67,7 @@ export const DesignOptions = ({
   update,
   language,
   account,
+  isFirst = true,
   DynamicDocs = false,
 }) => {
   const menuNs = [`o_${design}`, ...ns]
@@ -85,6 +86,7 @@ export const DesignOptions = ({
         getDocsPath,
         Icon: OptionsIcon,
         Item: DesignOption,
+        isFirst,
         name: 'design-options:designOptions',
         language,
         ns: menuNs,

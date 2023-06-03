@@ -158,14 +158,16 @@ export const MenuItem = ({
  * @param  {String}  options.name          the name of the group or item
  * @param  {Object}  options.currentValues a map of current values for items in the group, keyed by name
  * @param  {Object}  structure             the configuration for the group.
- * @param  {React.Component}  Item                  the component to use for menu items
+ * @param  {React.Component}  Icon         the icon to display next to closed groups
+ * @param  {React.Component}  Item         the component to use for menu items
  * @param  {Object}  values                a map of Value display components to be used by menu items in the group
  * @param  {Object}  inputs                a map of Input components to be used by menu items in the group
- * @param  {Function}  loadDocs              a function to load item documentation into a modal
+ * @param  {Function}  loadDocs            a function to load item documentation into a modal
  * @param  {Object}  passProps             properties to pass to Inputs within menu items
  * @param  {Object}  emojis                a map of emojis to use as icons for groups or items
- * @param  {Function}  updateFunc            the function called by change handlers on inputs within menu items
- * @param  {Function}  t                     translation function
+ * @param  {Function}  updateFunc          the function called by change handlers on inputs within menu items
+ * @param  {Boolean}  topLevel             is this group the top level group? false for nested
+ * @param  {Function}  t                   translation function
  */
 export const MenuItemGroup = ({
   collapsible = true,
@@ -173,6 +175,7 @@ export const MenuItemGroup = ({
   name,
   currentValues = {},
   structure,
+  Icon,
   Item = MenuItem,
   values = {},
   inputs = {},
@@ -180,6 +183,7 @@ export const MenuItemGroup = ({
   passProps = {},
   emojis = {},
   updateFunc,
+  topLevel = false,
   t,
 }) => {
   // map the entries in the structure
@@ -214,10 +218,13 @@ export const MenuItemGroup = ({
         key={itemName}
         {...{
           collapsible: true,
+          // it's the top level if the previous level was top but not wrapped
+          topLevel: topLevel && !collapsible,
           control,
           name: itemName,
           currentValues,
           structure: item,
+          Icon,
           Item,
           values,
           inputs,
@@ -237,13 +244,18 @@ export const MenuItemGroup = ({
     const titleProps = {
       name,
       t,
-      emoji: emojis[name] || emojis.dflt,
+      emoji: emojis[name] || emojis.groupDflt,
     }
     return (
       <Collapse
         bottom
-        color="secondary"
-        title={<ItemTitle {...titleProps} />}
+        color={topLevel ? 'primary' : 'secondary'}
+        title={
+          <ItemTitle
+            {...titleProps}
+            current={Icon ? <Icon className="w-6 h-6 text-primary" /> : ''}
+          />
+        }
         openTitle={<ItemTitle open {...titleProps} />}
       >
         {content}

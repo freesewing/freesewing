@@ -38,8 +38,8 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from, set
   // Effect
   useEffect(() => {
     // Force re-render when baseSettings changes. Required when they are loaded async.
-    setSettings({ ...baseSettings, embed: true, measurements: set.measies })
-  }, [baseSettings, set])
+    setSettings({ ...baseSettings, embed: true })
+  }, [baseSettings])
 
   // Helper methods for settings/ui updates
   const update = {

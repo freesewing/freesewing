@@ -65,6 +65,7 @@ export const WorkbenchMenu = ({
   language,
   emojis,
   Item,
+  isFirst,
   children,
 }) => {
   // get translation for the menu
@@ -87,26 +88,34 @@ export const WorkbenchMenu = ({
     )
 
   return (
-    <Collapse
-      bottom
-      color="primary"
-      title={
-        <div className="w-full flex flex-row gap2 items-center justify-between">
-          <span className="font-bold">{t(`${name}.t`)}</span>
-          <Icon className="w-6 h-6 text-primary" />
-        </div>
-      }
-      openTitle={t(`${name}.t`)}
-      openButtons={openButtons}
-    >
+    <>
+      <div className="px-2" key="header">
+        {control > 4 ? (
+          isFirst ? (
+            ''
+          ) : (
+            <div className="border-t border-solid border-base-300 mx-36"></div>
+          )
+        ) : (
+          <>
+            <h5 className="flex flex-row gap-2 items-center">
+              <Icon />
+              <span>{t(`${name}`)}</span>
+            </h5>
+            <p>{t(`${name}.d`)}</p>
+          </>
+        )}
+      </div>
       {children || (
         <MenuItemGroup
           {...{
             collapsible: false,
+            topLevel: true,
             control,
             currentValues,
             structure: config,
             Item,
+            Icon,
             values,
             inputs,
             loadDocs,
@@ -117,6 +126,6 @@ export const WorkbenchMenu = ({
           }}
         />
       )}
-    </Collapse>
+    </>
   )
 }
