@@ -5,7 +5,6 @@ import { prebuildContributors } from './contributors.mjs'
 import { prebuildPatrons } from './patrons.mjs'
 import { prebuildI18n } from './i18n.mjs'
 import { prebuildLab } from './lab.mjs'
-import { prebuildOrg } from './org.mjs'
 import { prebuildDesigns } from './designs.mjs'
 import { prebuildFavicon } from './favicon.mjs'
 import { generateOgImage } from './og/index.mjs'
@@ -40,7 +39,6 @@ const run = async () => {
   } else {
     await prebuildLab()
   }
-  if (SITE === 'org') await prebuildOrg()
 
   await prebuildI18n(SITE)
   if (!FAST) {

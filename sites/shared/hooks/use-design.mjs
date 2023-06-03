@@ -97,3 +97,5 @@ const designs = {
 }
 
 export const useDesign = (design) => (designs[design] ? designs[design] : false)
+
+export const collection = Object.keys(designs)

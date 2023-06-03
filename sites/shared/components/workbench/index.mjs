@@ -48,7 +48,7 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from, set
   }
 
   // Don't bother without a Design
-  if (!Design) return <ModalSpinner />
+  if (!Design || !baseSettings) return <ModalSpinner />
 
   // Short-circuit errors early
   if (error)
