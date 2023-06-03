@@ -1,4 +1,3 @@
-import { prebuildOrg } from './org.mjs'
 import path from 'path'
 import fse from 'fs-extra'
 
@@ -25,6 +24,5 @@ const copyOrgFiles = () => {
 }
 
 export const prebuildLab = async () => {
-  await prebuildOrg('lab')
   copyOrgFiles()
 }
