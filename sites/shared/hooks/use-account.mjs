@@ -8,9 +8,9 @@ const usePersistedToken = createPersistedState('fs-token')
 const usePersistedSeenUser = createPersistedState('fs-seen-user')
 
 /*
- * Make it possible to always check for account.username
+ * Make it possible to always check for account.username and account.control
  */
-const noAccount = { username: false }
+const noAccount = { username: false, control: 2 }
 
 /*
  * The useAccount hook

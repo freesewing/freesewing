@@ -22,8 +22,7 @@ export const DraftMenu = ({
   DynamicDocs,
   inspector = false,
 }) => {
-  // Default control level is 2 (in case people are not logged in)
-  const control = account.control || 2
+  const control = account.control
   const menuProps = {
     design,
     patternConfig,

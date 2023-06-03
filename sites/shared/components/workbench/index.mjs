@@ -23,7 +23,7 @@ const defaultUi = {
 
 const draftViews = ['draft', 'test']
 
-export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) => {
+export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from, set }) => {
   // Hooks
   const { t, i18n } = useTranslation(ns)
   const { language } = i18n

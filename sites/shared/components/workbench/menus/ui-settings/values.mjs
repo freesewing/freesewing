@@ -1,10 +1,8 @@
 import { Difficulty } from 'shared/components/designs/difficulty.mjs'
+import { ListValue } from '../shared/values.mjs'
 
-const ListValue = ({ current, t, config, changed }) =>
-  changed
-    ? t(`ui-settings:${config.valueTitles[current]}`)
-    : t(`ui-settings:${config.valueTitles[config.dflt]}`)
-
-export const RendererSettingValue = ListValue
-export const InspectSettingValue = ListValue
-export const ControlSettingValue = ({ control }) => <Difficulty score={control} color="primary" />
+export const values = {
+  renderer: ListValue,
+  inspect: ListValue,
+  control: ({ control }) => <Difficulty score={control} color="primary" />,
+}
