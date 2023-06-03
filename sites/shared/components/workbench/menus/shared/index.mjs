@@ -1,5 +1,4 @@
 import { useContext } from 'react'
-import { Collapse } from 'shared/components/collapse.mjs'
 import { MenuItemGroup } from './menu-item.mjs'
 import { useTranslation } from 'next-i18next'
 import { HelpIcon } from 'shared/components/icons.mjs'
@@ -73,19 +72,6 @@ export const WorkbenchMenu = ({
 
   // get a documentation loader
   const loadDocs = useDocsLoader(DynamicDocs, getDocsPath, language)
-
-  // get the appropriate buttons for the menu
-  const openButtons = []
-  if (loadDocs)
-    openButtons.push(
-      <button
-        className="btn btn-xs btn-ghost px-0 z-10"
-        key="help"
-        onClick={(evt) => loadDocs(evt)}
-      >
-        <HelpIcon className="w-4 h-4" />
-      </button>
-    )
 
   return (
     <>
