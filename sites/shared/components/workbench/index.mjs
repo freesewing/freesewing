@@ -14,16 +14,22 @@ import { ModalSpinner } from 'shared/components/modal/spinner.mjs'
 // Views
 import { DraftView, ns as draftNs } from 'shared/components/workbench/views/draft/index.mjs'
 import { SaveView, ns as saveNs } from 'shared/components/workbench/views/save/index.mjs'
+import { PrintView, ns as printNs } from 'shared/components/workbench/views/print/index.mjs'
 
-export const ns = ['account', 'workbench', ...draftNs, ...saveNs]
+export const ns = ['account', 'workbench', ...draftNs, ...saveNs, ...printNs]
 
 const defaultUi = {
   renderer: 'react',
 }
 
+const views = {
+  draft: DraftView,
+  print: PrintView,
+}
+
 const draftViews = ['draft', 'test']
 
-export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from, set }) => {
+export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) => {
   // Hooks
   const { t, i18n } = useTranslation(ns)
   const { language } = i18n
@@ -72,33 +78,38 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from, set
   }
   let viewContent = null
 
-  // Draft view
-  if (view === 'draft') {
-    // Generate the pattern here so we can pass it down to both the view and the options menu
-    const pattern =
-      settings.measurements && draftViews.includes(view) ? new Design(settings) : false
+  switch (view) {
+    // Save view
+    case 'save':
+      viewContent = <SaveView {...viewProps} from={from} />
+      break
+    default: {
+      // Generate the pattern here so we can pass it down to both the view and the options menu
+      const pattern = settings.measurements !== undefined && new Design(settings)
 
-    // Return early if the pattern is not initialized yet
-    if (typeof pattern.getConfig !== 'function') return null
+      // Return early if the pattern is not initialized yet
+      if (typeof pattern.getConfig !== 'function') return null
 
-    const patternConfig = pattern.getConfig()
-    if (ui.renderer === 'svg') {
-      // Add theme to svg renderer
-      pattern.use(pluginI18n, { t })
-      pattern.use(pluginTheme, { skipGrid: ['pages'] })
+      const patternConfig = pattern.getConfig()
+      if (ui.renderer === 'svg') {
+        // Add theme to svg renderer
+        pattern.use(pluginI18n, { t })
+        pattern.use(pluginTheme, { skipGrid: ['pages'] })
+      }
+
+      if (draftViews.includes(view)) {
+        // Draft the pattern or die trying
+        try {
+          pattern.draft()
+        } catch (error) {
+          console.log(error)
+          setError(<ErrorView>{JSON.stringify(error)}</ErrorView>)
+        }
+      }
+      const View = views[view]
+      viewContent = <View {...viewProps} {...{ pattern, patternConfig }} />
     }
-    // Draft the pattern or die trying
-    try {
-      pattern.draft()
-    } catch (error) {
-      console.log(error)
-      setError(<ErrorView>{JSON.stringify(error)}</ErrorView>)
-    }
-    viewContent = <DraftView {...viewProps} {...{ pattern, patternConfig }} />
   }
-
-  // Save view
-  else if (view === 'save') viewContent = <SaveView {...viewProps} from={from} />
 
   return (
     <>

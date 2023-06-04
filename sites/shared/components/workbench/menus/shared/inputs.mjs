@@ -45,7 +45,7 @@ const useSharedHandlers = ({ dflt, updateFunc, name }) => {
     (newCurrent) => {
       if (newCurrent === dflt) newCurrent = undefined
 
-      updateFunc(name, newCurrent)
+      updateFunc([name], newCurrent)
     },
     [dflt, updateFunc, name]
   )
