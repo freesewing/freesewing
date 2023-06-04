@@ -50,7 +50,7 @@ Svg.prototype.asRenderProps = function () {
     layout: this.layout,
     body: this.body,
     style: this.style,
-    defs: this.defs,
+    defs: this.defs.asRenderProps(),
   }
 }
 
