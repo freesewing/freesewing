@@ -3,11 +3,10 @@ import { getId, getProps } from './utils.mjs'
 
 export const PartInner = forwardRef(
   ({ stackName, partName, part, settings, components, t }, ref) => {
-    const { Group, Grid, Path, Point, Snippet } = components
+    const { Group, Path, Point, Snippet } = components
 
     return (
       <Group ref={ref} id={getId({ settings, stackName, partName, name: 'inner' })}>
-        {settings.paperless ? <Grid /> : null}
         {Object.keys(part.paths).map((pathName) => (
           <Path
             key={pathName}

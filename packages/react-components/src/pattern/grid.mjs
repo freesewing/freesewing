@@ -1,12 +1,12 @@
 import React from 'react'
 
-export const Grid = ({ part, partName, settings }) => (
+export const Grid = ({ stack, stackName }) => (
   <rect
-    x={part.topLeft.x}
-    y={part.topLeft.y}
-    width={part.width}
-    height={part.height}
+    x={stack.topLeft.x}
+    y={stack.topLeft.y}
+    width={stack.width}
+    height={stack.height}
     className="grid"
-    fill={'url(#grid-' + partName + ')'}
+    fill={'url(#grid-' + stackName + ')'}
   />
 )

@@ -11,14 +11,13 @@ export const Defs = (props) => {
   let defs = props.svg.defs.forSvg
   if (props.settings[0].paperless) {
     defs += grids[props.settings[0].units || 'metric']
-    for (let p in props.parts[0]) {
+    for (let stack in props.stacks) {
+      const part = props.stacks[stack].parts[0]
       let anchor = { x: 0, y: 0 }
-      if (typeof props.parts[0][p].points.gridAnchor !== 'undefined')
-        anchor = props.parts[0][p].points.gridAnchor
-      else if (typeof props.parts[0][p].points.anchor !== 'undefined')
-        anchor = props.parts[0][p].points.anchor
+      if (typeof part.points.gridAnchor !== 'undefined') anchor = part.points.gridAnchor
+      else if (typeof part.points.anchor !== 'undefined') anchor = part.points.anchor
 
-      defs += `<pattern id="grid-${p}" key="grid-${p}" xlink:href="#grid" x="${anchor.x}" y="${anchor.y}" />`
+      defs += `<pattern id="grid-${stack}" key="grid-${stack}" xlink:href="#grid" x="${anchor.x}" y="${anchor.y}" />`
     }
   }
 
