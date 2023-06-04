@@ -33,6 +33,25 @@ export const KeyValTable = ({ rows }) => (
 export const pointCoords = (point) =>
   point ? `[${round(point.x, 1)}, ${round(point.y, 1)}]` : null
 
+export const banner = (text) => {
+  let banner = ''
+  const spacer = '&#160;'.repeat(50)
+  for (let i = 0; i < 200; i++) banner += spacer + text
+
+  return banner + spacer
+}
+
+export const PathBanner = ({ text, id }) => (
+  <text className="opacity-50 hover:opacity-100 hover:bold text-xs hover:opacity-100" dy="-1">
+    <textPath xlinkHref={`#${id}`} startOffset="0%">
+      <tspan dangerouslySetInnerHTML={{ __html: banner(text) }} />
+    </textPath>
+  </text>
+)
+
+export const bboxD = ({ topLeft, bottomRight }) =>
+  `M ${topLeft.x} ${topLeft.y} L ${topLeft.x} ${bottomRight.y} L ${bottomRight.x} ${bottomRight.y} L ${bottomRight.x} ${topLeft.y} z`
+
 export const Tr = ({ children }) => <tr className="border border-base-300">{children}</tr>
 export const KeyTd = ({ children }) => <td className="p-3 text-right">{children}:</td>
 export const ValTd = ({ children }) => <td className="p-3">{children}</td>

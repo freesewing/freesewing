@@ -1,6 +1,6 @@
 // Components
 import { Path as ShowPath, utils } from 'pkgs/react-components/src/index.mjs'
-import { Attributes, pointCoords, KeyValTable } from './shared.mjs'
+import { Attributes, pointCoords, KeyValTable, PathBanner } from './shared.mjs'
 import { round, formatMm } from 'shared/utils.mjs'
 import { TrashIcon, PrintIcon, SearchIcon } from 'shared/components/icons.mjs'
 import { Path as CorePath } from '@freesewing/core'
@@ -245,6 +245,7 @@ const InspectPath = ({ stackName, pathName, path, part, settings, t, inspector }
         <path d={path.d} className="stroke-3xl text-warning pulse-stroke" />
       ) : null}
       <path
+        id={id}
         d={path.d}
         {...getProps(path)}
         className="opacity-0 stroke-5xl text-primary hover:opacity-25 hover:cursor-pointer"
@@ -255,6 +256,7 @@ const InspectPath = ({ stackName, pathName, path, part, settings, t, inspector }
       {ops.map((op, i) => (
         <InspectOp key={i} {...{ i, op, t, path, stackName, pathName, inspector }} />
       ))}
+      <PathBanner id={id} text={pathName} />
     </g>
   )
 }

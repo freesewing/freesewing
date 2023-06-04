@@ -82,7 +82,9 @@ export const ListToggle = ({ config, changed, updateFunc, name }) => {
 
   const checked = boolConfig.dflt == false ? changed : !changed
 
-  return <input type="checkbox" className="toggle" checked={checked} onChange={doToggle} />
+  return (
+    <input type="checkbox" className="toggle toggle-sm" checked={checked} onChange={doToggle} />
+  )
 }
 
 /**
