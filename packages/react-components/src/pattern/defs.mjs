@@ -7,7 +7,8 @@ const grids = {
 }
 
 export const Defs = (props) => {
-  let defs = props.svg.defs.render()
+  if (!props.svg) return null
+  let defs = props.svg.defs.forSvg
   if (props.settings[0].paperless) {
     defs += grids[props.settings[0].units || 'metric']
     for (let p in props.parts[0]) {

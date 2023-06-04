@@ -14,7 +14,9 @@ export const Path = ({ stackName, pathName, path, partName, part, settings, comp
   return (
     <>
       <path id={pathId} d={path.d} {...getProps(path)} />
-      {path.attributes.text.length > 0 ? <TextOnPath {...{ path, pathId, t }} /> : null}
+      {path.attributes.text && path.attributes.text.length > 0 ? (
+        <TextOnPath {...{ path, pathId, t }} />
+      ) : null}
     </>
   )
 
