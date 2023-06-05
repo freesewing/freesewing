@@ -126,7 +126,7 @@ Part.prototype.setHidden = function (hidden = false) {
  */
 Part.prototype.shorthand = function () {
   const complete = this.context.settings?.complete ? true : false
-  const paperless = this.context.settings?.paperless === true ? true : false
+  const paperless = this.context.settings?.paperless ? true : false
   const sa = this.context.settings?.complete ? this.context.settings?.sa || 0 : 0
   const shorthand = {
     complete,
