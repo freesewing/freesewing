@@ -7,16 +7,21 @@ import { PdfMaker } from './pdf-maker'
 
 /** when the worker receives data from the page, do the appropriate export */
 addEventListener('message', async (e) => {
-  const { format, gist, svg } = e.data
+  const { format, settings, svg } = e.data
   // handle export by type
   try {
-    if (format === 'json') return exportJson(gist)
-    if (format === 'yaml') return exportYaml(gist)
-    if (format === 'github gist') return exportGithubGist(gist)
-
-    if (format === 'svg') return exportSvg(svg)
-
-    await exportPdf(e.data)
+    switch (format) {
+      case 'json':
+        return exportJson(settings)
+      case 'yaml':
+        return exportYaml(settings)
+      case 'github gist':
+        return exportGithubGist(settings)
+      case 'svg':
+        return exportSvg(svg)
+      default:
+        return await exportPdf(e.data)
+    }
   } catch (e) {
     postMessage({ success: false, error: e })
     close()
@@ -37,9 +42,9 @@ const exportBlob = (blobContent, type) => {
   postSuccess(blob)
 }
 
-const exportJson = (gist) => exportBlob(JSON.stringify(gist, null, 2), 'application/json')
+const exportJson = (settings) => exportBlob(JSON.stringify(settings, null, 2), 'application/json')
 
-const exportYaml = (gist) => exportBlob(yaml.dump(gist), 'application/x-yaml')
+const exportYaml = (settings) => exportBlob(yaml.dump(settings), 'application/x-yaml')
 
 const exportSvg = (svg) => exportBlob(svg, 'image/svg+xml')
 

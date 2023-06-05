@@ -2,7 +2,7 @@ import { PrintIcon } from 'shared/components/icons.mjs'
 import { WorkbenchMenu } from 'shared/components/workbench/menus/shared/index.mjs'
 import { ListInput, BoolInput, MmInput } from 'shared/components/workbench/menus/shared/inputs.mjs'
 import { ListValue, BoolValue, MmValue } from 'shared/components/workbench/menus/shared/values.mjs'
-import { loadPrintConfig } from './config.mjs'
+import { loadPrintConfig, printSettingsPath } from './config.mjs'
 import get from 'lodash.get'
 
 const inputs = {
@@ -23,18 +23,17 @@ const values = {
 
 export const ns = ['print']
 
-export const settingsPath = ['layout', 'print', 'page']
 export const PrintSettings = ({ update, settings, ui, account }) => {
   const config = loadPrintConfig(settings.units)
   const passProps = { units: settings.units }
-  const updateFunc = (name, newVal) => update.ui([...settingsPath, name], newVal)
+  const updateFunc = (name, newVal) => update.ui([...printSettingsPath, name], newVal)
 
   return (
     <WorkbenchMenu
       {...{
         config,
         control: account.control,
-        currentValues: get(ui, settingsPath, {}),
+        currentValues: get(ui, printSettingsPath, {}),
         Icon: PrintIcon,
         inputs,
         values,

@@ -1,5 +1,7 @@
 import { measurementAsMm } from 'shared/utils.mjs'
 
+export const printSettingsPath = ['print', 'pages']
+
 export const defaultPrintSettings = (units, inMm = true) => {
   const margin = units === 'imperial' ? 0.5 : 1
   return {
@@ -10,7 +12,7 @@ export const defaultPrintSettings = (units, inMm = true) => {
     cutlist: true,
   }
 }
-const sizes = ['a4', 'a3', 'a2', 'a1', 'a0', 'letter', 'tabloid']
+const sizes = ['a4', 'a3', 'a2', 'a1', 'a0', 'letter', 'legal', 'tabloid']
 export const loadPrintConfig = (units) => {
   const defaults = defaultPrintSettings(units, false)
   const config = {
@@ -24,6 +26,14 @@ export const loadPrintConfig = (units) => {
     orientation: {
       control: 2,
       list: ['portrait', 'landscape'],
+      choiceTitles: {
+        portrait: 'portrait',
+        landscape: 'landscape',
+      },
+      valueTitles: {
+        portrait: 'portrait',
+        landscape: 'landscape',
+      },
       dflt: defaults.orientation,
     },
     margin: {

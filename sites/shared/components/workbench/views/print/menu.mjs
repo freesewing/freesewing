@@ -7,10 +7,13 @@ import {
   ns as coreMenuNs,
 } from 'shared/components/workbench/menus/core-settings/index.mjs'
 import { PrintSettings, ns as printMenuNs } from './settings.mjs'
+import { PrintActions } from './actions.mjs'
+
 export const ns = [...coreMenuNs, ...designMenuNs, ...printMenuNs]
 
 export const PrintMenu = ({
   design,
+  pattern,
   patternConfig,
   settings,
   ui,
@@ -18,7 +21,7 @@ export const PrintMenu = ({
   language,
   account,
   DynamicDocs,
-  inspector = false,
+  exportIt,
 }) => {
   const control = account.control
   const menuProps = {
@@ -31,9 +34,9 @@ export const PrintMenu = ({
     DynamicDocs,
     control,
   }
-
   return (
     <nav className="grow mb-12">
+      <PrintActions {...menuProps} ui={ui} exportIt={exportIt} />
       <PrintSettings {...menuProps} ui={ui} />
       <DesignOptions {...menuProps} />
       <CoreSettings {...menuProps} />

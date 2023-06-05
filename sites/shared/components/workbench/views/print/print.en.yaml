@@ -1,0 +1,41 @@
+showMovableButtons: Buttons
+printSettings: Print Settings
+printSettings.d: These settings control aspects of the page for PDF export and printing
+size.t: Paper Size
+size.d: Choose a size of paper
+a4.t: A4
+a4.d: 210 x 297 mm
+a3.t: A3
+a3.d: 297 × 420 mm
+a2.t: A2
+a2.d: 420 × 594 mm
+a1.t: A1
+a1.d: 594 × 841 mm
+a0.t: A0
+a0.d: 841 × 1189 mm
+letter.t: Letter
+letter.d: 8.5 x 11 in
+legal.t: Legal
+legal.d: 8.5 x 14 in
+tabloid.t: Tabloid
+tabloid.d: 11 x 17 in
+cutlist.t: Include Cutting Layouts
+cutlist.d: Should images of the suggested cutting layouts for each fabric be included in the exported PDF?
+cutlistNo.t: Do not include cutting layouts
+cutlistNo.d: Exported PDFs will not include any suggested cutting layouts
+cutlistYes.t: Include cutting layouts
+cutlistYes.d: Exported PDFs will include a page for each fabric used by the pattern listing how much of the fabric is needed and suggesting a layout for cutting out the appropriate pieces
+coverPage.t: Include Cover Page
+coverPage.d: Should the exported PDF include a cover page?
+coverPageYes.t: Include a cover page
+coverPageYes.d: Add a cover page to the exported PDF including information about the pattern and an image of the entire assembled layout
+coverPageNo.t: Do not include a cover page
+coverPageNo.d: Exported PDFs will skip the cover page
+margin.t: Page Margin
+margin.d: How much margin should pages of the PDF have? This is useful for making sure that all content is within the margins of your printer. It also controls how much adjacent pages will overlap.
+orientation.t: Page Orientation
+orientation.d: Which direction should the pages be rotated?
+portrait.t: Portrait
+portrait.d: Pages will be longer than they are wide
+landscape.t: Landscape
+landscape.d: Pages will be wider than they are long

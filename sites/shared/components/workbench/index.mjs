@@ -75,6 +75,7 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) =
     ui,
     language,
     DynamicDocs,
+    Design,
   }
   let viewContent = null
 

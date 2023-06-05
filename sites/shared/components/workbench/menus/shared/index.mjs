@@ -51,7 +51,7 @@ export const useDocsLoader = (DynamicDocs, getDocsPath, language) => {
 export const WorkbenchMenu = ({
   updateFunc,
   ns,
-  Icon,
+  Icon = () => null,
   name,
   config,
   control,

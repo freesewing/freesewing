@@ -1,20 +1,19 @@
 import { useTranslation } from 'next-i18next'
 import { CutLayoutSettings } from './settings.mjs'
-import { Draft } from '../draft/index.mjs'
-import { fabricPlugin } from '../plugin-layout-part.mjs'
+// import { Draft } from '../draft/index.mjs'
+import { fabricPlugin } from 'shared/plugins/plugin-layout-part.mjs'
 import { cutLayoutPlugin } from './plugin-cut-layout.mjs'
 import { pluginAnnotations } from '@freesewing/plugin-annotations'
 import { measurementAsMm } from 'shared/utils.mjs'
 import { useEffect } from 'react'
 import get from 'lodash.get'
 
-export const fabricSettingsOrDefault = (gist, fabric) => {
-  const isImperial = gist.units === 'imperial'
-  const sheetHeight = measurementAsMm(isImperial ? 36 : 100, gist.units)
-  const gistSettings = get(gist, ['_state', 'layout', 'forCutting', 'fabric', fabric])
-  const sheetWidth = gistSettings?.sheetWidth || measurementAsMm(isImperial ? 54 : 120, gist.units)
-  const grainDirection =
-    gistSettings?.grainDirection === undefined ? 90 : gistSettings.grainDirection
+export const fabricSettingsOrDefault = (units, ui, fabric) => {
+  const isImperial = units === 'imperial'
+  const sheetHeight = measurementAsMm(isImperial ? 36 : 100, units)
+  const uiSettings = get(ui, ['cut', 'fabric', fabric], {})
+  const sheetWidth = uiSettings.sheetWidth || measurementAsMm(isImperial ? 54 : 120, units)
+  const grainDirection = uiSettings.grainDirection === undefined ? 90 : uiSettings.grainDirection
 
   return { activeFabric: fabric, sheetWidth, grainDirection, sheetHeight }
 }
@@ -109,7 +108,7 @@ export const CutLayout = (props) => {
             ))}
           </div>
         ) : null}
-        <Draft
+        {/* <Draft
           draft={draft}
           gist={gist}
           updateGist={updateGist}
@@ -119,7 +118,7 @@ export const CutLayout = (props) => {
           layoutPart="fabric"
           layoutType={['cuttingLayout', fabricSettings.activeFabric]}
           layoutSetType="forCutting"
-        />
+        />*/}
       </div>
     </div>
   ) : null

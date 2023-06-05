@@ -1,4 +1,4 @@
-import { addToOnly } from '../plugin-layout-part.mjs'
+import { addToOnly } from 'shared/plugins/plugin-layout-part.mjs'
 import { pluginMirror } from '@freesewing/plugin-mirror'
 const prefix = 'mirroredOnFold'
 

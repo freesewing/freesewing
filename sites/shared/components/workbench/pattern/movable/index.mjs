@@ -12,7 +12,7 @@ export const MovablePattern = ({
   renderProps,
   patternConfig,
   settings,
-  ui,
+  showButtons = true,
   update,
   bgProps = {},
   fitImmovable = false,
@@ -96,7 +96,7 @@ export const MovablePattern = ({
         movable: !immovable.includes(stackName),
         layout: layout.stacks[stackName],
         updateLayout,
-        showButtons: get(ui, 'showMovableButtons', true),
+        showButtons,
       }}
     />
   )

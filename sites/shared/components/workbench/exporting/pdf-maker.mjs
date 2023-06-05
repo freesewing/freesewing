@@ -22,7 +22,7 @@ export class PdfMaker {
   /**	the svg as text to embed in the pdf */
   svg
   /** the document configuration */
-  settings
+  pageSettings
   /** the pdfKit instance that is writing the document */
   pdf
   /** the export buffer to hold pdfKit output */
@@ -51,8 +51,8 @@ export class PdfMaker {
   pageCount = 0
   lineLevel = 50
 
-  constructor({ svg, settings, pages, strings, cutLayouts }) {
-    this.settings = settings
+  constructor({ svg, pageSettings, pages, strings, cutLayouts }) {
+    this.pageSettings = pageSettings
     this.pagesWithContent = pages.withContent
     this.svg = svg
     this.strings = strings
@@ -60,7 +60,7 @@ export class PdfMaker {
 
     this.initPdf()
 
-    this.margin = this.settings.margin * mmToPoints // margin is in mm because it comes from us, so we convert it to points
+    this.margin = this.pageSettings.margin * mmToPoints // margin is in mm because it comes from us, so we convert it to points
     this.pageHeight = this.pdf.page.height - this.margin * 2 // this is in points because it comes from pdfKit
     this.pageWidth = this.pdf.page.width - this.margin * 2 // this is in points because it comes from pdfKit
 
@@ -77,8 +77,8 @@ export class PdfMaker {
   initPdf() {
     // instantiate with the correct size and orientation
     this.pdf = new PDFDocument({
-      size: this.settings.size.toUpperCase(),
-      layout: this.settings.orientation,
+      size: this.pageSettings.size.toUpperCase(),
+      layout: this.pageSettings.orientation,
     })
 
     // PdfKit wants to flush the buffer on each new page.
@@ -117,7 +117,7 @@ export class PdfMaker {
   /** generate the cover page for the pdf */
   async generateCoverPage() {
     // don't make one if it's not requested
-    if (!this.settings.coverPage) {
+    if (!this.pageSettings.coverPage) {
       return
     }
 
@@ -185,7 +185,7 @@ export class PdfMaker {
 
   /** generate all cutting layout pages */
   async generateCutLayoutPages() {
-    if (!this.settings.cutlist || !this.cutLayouts) return
+    if (!this.pageSettings.cutlist || !this.cutLayouts) return
 
     for (const fabric in this.cutLayouts) {
       this.nextPage()
