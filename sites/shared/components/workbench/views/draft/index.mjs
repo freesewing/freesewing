@@ -50,6 +50,7 @@ export const DraftView = ({
   }
 
   let output = null
+  let renderProps = false
   if (ui.renderer === 'svg') {
     try {
       const __html = pattern.render()
@@ -58,10 +59,11 @@ export const DraftView = ({
       console.log(err)
     }
   } else {
+    renderProps = pattern.getRenderProps()
     output = ui.inspect ? (
-      <InspectorPattern renderProps={pattern.getRenderProps()} inspector={inspector} />
+      <InspectorPattern {...{ renderProps, inspector }} />
     ) : (
-      <ShowPattern renderProps={pattern.getRenderProps()} />
+      <ShowPattern {...{ renderProps, inspector }} />
     )
   }
 
@@ -81,6 +83,7 @@ export const DraftView = ({
             account,
             DynamicDocs,
             inspector,
+            renderProps,
           }}
         />
       </div>

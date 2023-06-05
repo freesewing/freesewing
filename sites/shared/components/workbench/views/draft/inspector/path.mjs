@@ -67,90 +67,7 @@ const RevealPath = ({ path, pathName, id, inspector }) => (
   <path d={path.d} className="stroke-3xl text-warning pulse-stroke" />
 )
 
-const InspectOp = ({ stackName, pathName, op, i, inspector, t, path }) => {
-  const id = utils.getId({ stackName, pathName, settings: { idPrefix: `pathOp-${i}-` } })
-  const info = {
-    id,
-    title: (
-      <div className="flex flex-row justify-between w-full">
-        <span>
-          <b className="capitalize">{op.ops[1].type}</b>: {pathName} | {stackName}
-        </span>
-      </div>
-    ),
-    buttons: [
-      <button key={1} className="btn btn-error" onClick={(evt) => inspector.hide(id)}>
-        <TrashIcon />
-      </button>,
-    ],
-    openButtons: [
-      <button
-        className="btn btn-xs btn-ghost px-0"
-        key="log"
-        onClick={(evt) => {
-          evt.stopPropagation()
-          console.log(op)
-        }}
-      >
-        <PrintIcon className="w-4 h-4" />
-      </button>,
-      <button
-        className="btn btn-xs btn-ghost px-0"
-        key="reveal"
-        onClick={(evt) => {
-          evt.stopPropagation()
-          inspector.reveal(id)
-        }}
-      >
-        <SearchIcon className="w-4 h-4" />
-      </button>,
-      <button
-        className="btn btn-xs btn-ghost px-0"
-        key="remove"
-        onClick={(evt) => {
-          evt.stopPropagation()
-          inspector.hide(id)
-        }}
-      >
-        <TrashIcon className="w-4 h-4" />
-      </button>,
-    ],
-    children: (
-      <KeyValTable
-        rows={[
-          ['Type', op.ops[1].type],
-          ['Path', pathName],
-          ['Stack', stackName],
-          [t('topLeft'), pointCoords(op.topLeft)],
-          [t('bottomRight'), pointCoords(op.bottomRight)],
-          [t('width'), formatMm(op.width)],
-          [t('height'), formatMm(op.height)],
-          [t('length'), formatMm(op.length)],
-        ]}
-      />
-    ),
-    color: 'secondary',
-  }
-
-  return (
-    <>
-      {inspector.data.reveal[id] ? (
-        <path d={op.d} className="stroke-3xl text-warning pulse-stroke" />
-      ) : null}
-      {op.ops[1].type === 'curve' ? <InspectCurveOp op={op} /> : null}
-      <path
-        d={op.d}
-        className="opacity-0 stroke-3xl text-secondary hover:opacity-25 hover:cursor-pointer"
-        onClick={(evt) => inspector.show(info)}
-      />
-    </>
-  )
-}
-
-const InspectPath = ({ stackName, pathName, path, part, settings, t, inspector }) => {
-  const classes = path.attributes.list.class
-  if (typeof classes === 'string' && classes.includes('skip-inspector')) return null
-
+export const pathInfo = ({ id, pathName, stackName, path, inspector, t }) => {
   // Pull the instantiated path from the pattern
   const pathObj = [...inspector.pattern.stacks[stackName].parts][0].paths[pathName]
   const ops = pathObj.divide().map((p) => {
@@ -166,8 +83,7 @@ const InspectPath = ({ stackName, pathName, path, part, settings, t, inspector }
     }
   })
 
-  const id = utils.getId({ stackName, pathName, settings: { idPrefix: 'path-' } })
-  const info = {
+  return {
     id,
     title: (
       <div className="flex flex-row justify-between w-full">
@@ -238,6 +154,12 @@ const InspectPath = ({ stackName, pathName, path, part, settings, t, inspector }
     ),
     color: 'primary',
   }
+}
+
+const InspectPath = ({ stackName, pathName, path, part, settings, t, inspector }) => {
+  const classes = path.attributes.list.class
+  if (typeof classes === 'string' && classes.includes('skip-inspector')) return null
+  const id = utils.getId({ stackName, pathName, settings: { idPrefix: 'path-' } })
 
   return (
     <g>
@@ -249,13 +171,12 @@ const InspectPath = ({ stackName, pathName, path, part, settings, t, inspector }
         d={path.d}
         {...getProps(path)}
         className="opacity-0 stroke-5xl text-primary hover:opacity-25 hover:cursor-pointer"
-        onClick={(evt) => inspector.show(info)}
+        onClick={(evt) =>
+          inspector.show(pathInfo({ id, pathName, stackName, path, pathObj, t, ops, inspector }))
+        }
         markerStart="none"
         markerEnd="none"
       />
-      {ops.map((op, i) => (
-        <InspectOp key={i} {...{ i, op, t, path, stackName, pathName, inspector }} />
-      ))}
       <PathBanner id={id} text={pathName} />
     </g>
   )

@@ -39,6 +39,72 @@ const Cross = ({ point, color = 'primary' }) => (
   />
 )
 
+export const pointInfo = ({ id, pointName, stackName, point, inspector, t }) => ({
+  id,
+  title: (
+    <div className="flex flex-row justify-between w-full">
+      <span>
+        <b>Point</b>: {pointName} | {stackName}
+      </span>
+      {pointCoords(point)}
+    </div>
+  ),
+  openTitle: (
+    <span>
+      <b>Point</b>: {pointName} | {stackName}
+    </span>
+  ),
+  buttons: [
+    <button key={1} className="btn btn-error" onClick={(evt) => inspector.hide(id)}>
+      <TrashIcon />
+    </button>,
+  ],
+  openButtons: [
+    <button
+      className="btn btn-xs btn-ghost px-0"
+      key="log"
+      onClick={(evt) => {
+        evt.stopPropagation()
+        console.log(point)
+      }}
+    >
+      <PrintIcon className="w-4 h-4" />
+    </button>,
+    <button
+      className="btn btn-xs btn-ghost px-0"
+      key="reveal"
+      onClick={(evt) => {
+        evt.stopPropagation()
+        inspector.reveal(id)
+      }}
+    >
+      <SearchIcon className="w-4 h-4" />
+    </button>,
+    <button
+      className="btn btn-xs btn-ghost px-0"
+      key="remove"
+      onClick={(evt) => {
+        evt.stopPropagation()
+        inspector.hide(id)
+      }}
+    >
+      <TrashIcon className="w-4 h-4" />
+    </button>,
+  ],
+  children: (
+    <KeyValTable
+      rows={[
+        [t('coordinates'), pointCoords(point)],
+        [t('name'), pointName],
+        ['Stack', stackName],
+        [t('attributes'), <Attributes list={point.attributes.list} />],
+        ['id', id],
+      ]}
+    />
+  ),
+  color: 'accent',
+})
+
 const InspectPoint = ({
   point,
   part,
@@ -50,70 +116,6 @@ const InspectPoint = ({
   color = 'lining',
 }) => {
   const id = utils.getId({ stackName, pointName, settings: { idPrefix: 'point-' } })
-  const info = {
-    id,
-    title: (
-      <div className="flex flex-row justify-between w-full">
-        <span>
-          <b>Point</b>: {pointName} | {stackName}
-        </span>
-        {pointCoords(point)}
-      </div>
-    ),
-    openTitle: (
-      <span>
-        <b>Point</b>: {pointName} | {stackName}
-      </span>
-    ),
-    buttons: [
-      <button key={1} className="btn btn-error" onClick={(evt) => inspector.hide(id)}>
-        <TrashIcon />
-      </button>,
-    ],
-    openButtons: [
-      <button
-        className="btn btn-xs btn-ghost px-0"
-        key="log"
-        onClick={(evt) => {
-          evt.stopPropagation()
-          console.log(point)
-        }}
-      >
-        <PrintIcon className="w-4 h-4" />
-      </button>,
-      <button
-        className="btn btn-xs btn-ghost px-0"
-        key="reveal"
-        onClick={(evt) => {
-          evt.stopPropagation()
-          inspector.reveal(id)
-        }}
-      >
-        <SearchIcon className="w-4 h-4" />
-      </button>,
-      <button
-        className="btn btn-xs btn-ghost px-0"
-        key="remove"
-        onClick={(evt) => {
-          evt.stopPropagation()
-          inspector.hide(id)
-        }}
-      >
-        <TrashIcon className="w-4 h-4" />
-      </button>,
-    ],
-    children: (
-      <KeyValTable
-        rows={[
-          [t('coordinates'), pointCoords(point)],
-          [t('name'), pointName],
-          ['Stack', stackName],
-          [t('attributes'), <Attributes list={point.attributes.list} />],
-        ]}
-      />
-    ),
-    color: 'accent',
-  }
 
   return (
     <g>
@@ -130,7 +132,9 @@ const InspectPoint = ({
         cy={point.y}
         r={5 * scale}
         className={`opacity-0 stroke-${color} fill-${color} hover:opacity-25 hover:cursor-pointer hover:opacity-30`}
-        onClick={(evt) => inspector.show(info)}
+        onClick={(evt) =>
+          inspector.show(pointInfo({ id, stackName, pointName, point, inspector, t }))
+        }
       />
       {inspector.data.reveal[id] ? (
         <RevealPoint {...{ point, pointName, scale, part, id, inspector }} />
