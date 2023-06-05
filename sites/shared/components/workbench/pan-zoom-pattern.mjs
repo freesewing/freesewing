@@ -58,7 +58,7 @@ export const PanZoomPattern = forwardRef((props, ref) => {
         >
           <TransformComponent>
             <div style={{ width: size.width + 'px' }} className="max-h-screen">
-              <Pattern {...{ t, ref, components, renderProps }} />
+              <Pattern {...{ t, components, renderProps }} ref={ref} />
             </div>
           </TransformComponent>
         </TransformWrapper>

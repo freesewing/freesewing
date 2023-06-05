@@ -84,8 +84,9 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) =
       viewContent = <SaveView {...viewProps} from={from} />
       break
     default: {
+      const layout = ui.layouts?.[view] || settings.layout || true
       // Generate the pattern here so we can pass it down to both the view and the options menu
-      const pattern = settings.measurements !== undefined && new Design(settings)
+      const pattern = settings.measurements !== undefined && new Design({ layout, ...settings })
 
       // Return early if the pattern is not initialized yet
       if (typeof pattern.getConfig !== 'function') return null
@@ -107,7 +108,7 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) =
         }
       }
       const View = views[view]
-      viewContent = <View {...viewProps} {...{ pattern, patternConfig }} />
+      viewContent = <View {...{ ...viewProps, pattern, patternConfig }} />
     }
   }
 

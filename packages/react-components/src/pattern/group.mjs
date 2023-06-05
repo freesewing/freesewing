@@ -1,3 +1,7 @@
-import React from 'react'
+import { forwardRef } from 'react'
 
-export const Group = (props) => <g {...props}>{props.children}</g>
+export const Group = forwardRef((props, ref) => (
+  <g {...props} ref={ref}>
+    {props.children}
+  </g>
+))
