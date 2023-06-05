@@ -17,7 +17,7 @@ const namespaces = [...new Set([...designNs, ...setsNs, ...authNs, ...pageNs])]
  */
 const NewSetPage = ({ page }) => (
   <PageWrapper {...page}>
-    <DesignPicker hrefBuilder={(design) => `/new/pattern/${design}`} />
+    <DesignPicker />
   </PageWrapper>
 )
 
