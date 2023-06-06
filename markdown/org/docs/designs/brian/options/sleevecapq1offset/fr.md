@@ -1,12 +1,12 @@
----
-title: "Sleevecap Q1 offset"
----
+- - -
+titre : "décalage Q1 de la tête de manche"
+- - -
 
 ***
 
-![The offset in the first quarter of the sleevecap](./sleevecapq1offset.svg)
+![Le décalage au premier quartier de la tête de manche](./sleevecapq1offset.svg)
 
-This option controls the offset in the first quadrant of the sleevecap.
+Cette option contrôle le décalage dans le premier quadrant de la tête de manche.
 
 <Tip>
 
