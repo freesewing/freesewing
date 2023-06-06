@@ -18,7 +18,7 @@ titre : "Culotte de cycliste Cornélius : Instructions de couture"
 
 </Note>
 
-### Step 2: The Fly
+### Étape 2 : La mouche
 
 - En partant du haut, endroit contre endroit, _Batir_ le long de la ligne volante en s'arrêtant à l'encoche de la couture de l'entrejambe.
 - À partir de l'endroit où vous avez terminé le bâti, cousez la couture de l'entrejambe en veillant à fixer vos points à l'endroit où le bâti se termine.
@@ -26,16 +26,16 @@ titre : "Culotte de cycliste Cornélius : Instructions de couture"
 - Posez les devants, endroit contre endroit, de façon à ce que les côtés droits des rabats soient tournés vers vous.
 - Poser la fermeture à glissière, face vers le haut, sur les rabats avant, le côté gauche de la fermeture à glissière touchant la couture, le bas de la bande droite de la fermeture à glissière se trouvant sur le rabat incurvé.
 - Cousez la bande de fermeture à glissière droite sur le rabat droit, près des dents de la fermeture à glissière, à l'aide d'un pied pour fermeture à glissière. Ne le cousez pas sur le devant lui-même !
-- Pull the zipper to the left so the right flap is pulled over.
-- Pin the left zipper tape to the left flap.
-- Sew the left zipper tape to left flap close to the zipper teeth using a zipper foot. Don't sew it to the front itself!
+- Tirez la fermeture Éclair ver la gauche pour que le rabat droit soit tiré au-dessus.
+- Épinglez le ruban de fermeture gauche sur le rabat gauche.
+- Cousez la bande de fermeture à glissière gauche sur le rabat gauche, près des dents de la fermeture à glissière, à l'aide d'un pied pour fermeture à glissière. Ne le cousez pas sur le devant lui-même !
 - Fold the zipper guard in half wrong sides together.
 - Lay the zipper guard on the right flap, right sides touching.
 - Sew the zipper guard to the right flap, _Finish_ the right side to your liking.
-- _Finish_ the left side of the left flap to your liking.
-- Unpick the basted part of the front seam.
+- _Terminez_ le côté gauche du rabat gauche à votre goût.
+- Enlevez les points de bâti sur la couture avant.
 - _Topstitch_ the right flap down, away from the now unpicked seam, as far down as you can.
-- Pin/_Baste_ the zipper protector over to the right side to keep it out of the way for the next step
+- Épinglez/_Bâtissez_ le protecteur à fermeture Éclair sur le côté droit pour le garder hors du passage pour l'étape suivante
 - On the outside side, sew the left flap down to the left, following the curved line.
 - On the outside side, _Bar-Tack_ where you like them for reinforcement.
 
