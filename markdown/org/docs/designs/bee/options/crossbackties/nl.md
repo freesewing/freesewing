@@ -22,6 +22,6 @@ The band tie is thread through casings in the cups and ties with itself at the b
 The band tie and casing on the cups are replaced by a band which is sewn with loops in the back.  
 The neck ties are longer and cross over each other in the back, then go through the loops in the band and then tie with one another.
 
-## Effect van deze optie op het patroon
+## Effect of this option on the pattern
 
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_crossbackties_sample.svg "Effect of this option on the pattern")
