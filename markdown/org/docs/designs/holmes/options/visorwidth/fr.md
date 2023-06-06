@@ -1,10 +1,10 @@
 ---
-title: "Visor width"
+title: "Largeur de la visière"
 ---
 
 ***
 
-Controls the width of the visor
+Contrôle la largeur de la visière
 
 ## Effet de cette option sur le motif
 
