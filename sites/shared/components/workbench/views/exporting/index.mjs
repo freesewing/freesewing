@@ -21,7 +21,6 @@ export const ExportView = ({ settings, ui, design, Design }) => {
   const { t } = useTranslation(ns)
   const doExport = (format) => {
     setLink(false)
-    setError(false)
     setFormat(format)
     handleExport({
       format,
