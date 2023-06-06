@@ -1,8 +1,8 @@
 ---
-title: "Florence face mask: Cutting Instructions"
+title: "Masque Florence : Instructions de coupe"
 ---
 
-Florence only has one part, the _mask_. Elle correspond à la moitié du masque, donc nous en aurons besoin de deux. Comme nous voulons deux épaisseurs (une extérieure et une intérieure), nous aurons donc besoin de quatre pièces au total :
+Florence n'a qu'une seule pièce, le _masque_. Elle correspond à la moitié du masque, donc nous en aurons besoin de deux. Comme nous voulons deux épaisseurs (une extérieure et une intérieure), nous aurons donc besoin de quatre pièces au total :
 
 - **Tissu principal**
   - Couper **2 pièces** du masque
