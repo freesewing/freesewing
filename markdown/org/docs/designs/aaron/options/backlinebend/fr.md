@@ -1,6 +1,6 @@
----
+- - -
 title : "Forme de l'emmanchure du dos"
----
+- - -
 
 ![L'option de la forme de l'emmanchure du dos sur Aaron](./backlinebend.svg)
 
