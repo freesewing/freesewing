@@ -1,5 +1,5 @@
----
-title: "Cornelius cycling breeches: Design Options"
----
+- - -
+titre : "Culotte cycliste Cornélius : Options de conception"
+- - -
 
 <PatternOptions pattern='cornelius' />
