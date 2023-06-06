@@ -1,3 +1,5 @@
+import React from 'react'
+
 export const getProps = (obj) => {
   /** I can't believe it but there seems to be no method on NPM todo this */
   const cssKey = (key) => {
@@ -34,16 +36,6 @@ export const getProps = (obj) => {
   }
 
   return props
-}
-
-export const dx = (pointA, pointB) => pointB.x - pointA.x
-export const dy = (pointA, pointB) => pointB.y - pointA.y
-export const rad2deg = (radians) => radians * 57.29577951308232
-export const angle = (pointA, pointB) => {
-  let rad = Math.atan2(-1 * dy(pointA, pointB), dx(pointA, pointB))
-  while (rad < 0) rad += 2 * Math.PI
-
-  return rad2deg(rad)
 }
 
 export const withinPartBounds = (point, part) =>

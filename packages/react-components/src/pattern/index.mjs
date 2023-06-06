@@ -1,4 +1,4 @@
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 // Components that can be swizzled
 import { Svg as DefaultSvg } from './svg.mjs'
 import { Defs as DefaultDefs } from './defs.mjs'
