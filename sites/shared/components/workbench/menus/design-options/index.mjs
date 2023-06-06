@@ -10,7 +10,7 @@ import { MenuItem } from '../shared/menu-item.mjs'
 export const ns = ['design-options']
 
 // Emojis for option groups :)
-const emojis = {
+export const emojis = {
   advanced: '🤓',
   fit: '👕',
   style: '💃🏽',
