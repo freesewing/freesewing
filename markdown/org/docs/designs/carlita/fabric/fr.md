@@ -1,39 +1,39 @@
----
-title: "Carlita coat: Fabric Options"
----
+- - -
+titre: "Manteau Carlita: Options d'étoffe"
+- - -
 
 ### Tissu principal
 
-You want a fabric that has a bit of body that holds its shape. Generally **Wools** of **coating weight** will be the best choice as they will provide warmth and give shape to the coat. Other fabrics of **coating weight** should also work. However if you are looking for something more lightweight you could try **Linens** and lighter **Wools**, but you may need to face these fabrics to give them more body before construction. **Fleece** is a cheaper alternate to **Wools** but may note keep as long, if you are putting the effort into properly tailoring Carlita then you are gonna want to consider buying a fabric that will last for a long period of time.
+Vous voulez un tissu qui ait un peu de corps et qui tienne la route. En général, les **laines** d'un **poids d'enduction** constituent le meilleur choix, car elles apportent de la chaleur et donnent de la forme au manteau. D'autres tissus de **poids d'enduction** devraient également convenir. Toutefois, si vous recherchez quelque chose de plus léger, vous pouvez essayer les **Linges** et les **Laines** plus légères, mais il vous faudra peut-être surfiler ces tissus pour leur donner plus de corps avant la construction. **La laine polaire** est moins chère que la **laine**, mais elle ne se conserve pas aussi longtemps. Si vous vous efforcez de bien confectionner Carlita, vous devrez envisager d'acheter un tissu qui durera longtemps.
 
 <Note>
 
-Remember that this pattern is intended to be a winter coat so you need to consider warmth when choosing your fabric.
+N'oubliez pas que ce modèle est destiné à être un manteau d'hiver et que vous devez donc tenir compte de sa chaleur lorsque vous choisissez votre tissu.
 
 </Note>
 
-### Linings and Pocket Bags
+### Doublures et sacs de poche
 
-Lightweight **Cottons** such as **Cotton Silesia**, **Cotton Lawn** or **Glazed Cottons** should do for the body lining but you may find that you require **Silks** or similar for the sleeve linings to reduce friction and make it easier to take on and off over the arms. **Silks** can also be used for the body as well but the **Cotton** will be more durable in the long run. Pocket bags should be out of **Cotton** or something that is strong enough to hold the weight of the intended items you wish to carry in them. **Printed Cottons** are a fun thing to try but if your main fabric is quite bulky you may find they add to much weight.
+Lightweight **Cottons** such as **Cotton Silesia**, **Cotton Lawn** or **Glazed Cottons** should do for the body lining but you may find that you require **Silks** or similar for the sleeve linings to reduce friction and make it easier to take on and off over the arms. Les **Soies** peuvent également être utilisés pour le corps, mais le **Coton** sera plus durable à long terme. Les sacs de poche doivent être fabriqués en **Coton** ou dans un matériau suffisamment résistant pour supporter le poids des objets que vous souhaitez transporter. **Les cotons imprimés** sont amusants à essayer, mais si votre tissu principal est assez volumineux, vous trouverez peut-être qu'ils ajoutent trop de poids.
 
 <Tip>
 
-As per usual with Linings it is really down to your prefered lining materials but if you are new to lining a coat we suggest to use the **Cotton** options for the body and pockets and use the **Silk** option for the sleeves.
+Comme d'habitude avec les doublures, c'est vraiment à vous de choisir le matériau de doublure que vous préférez, mais si vous n'avez jamais doublé un manteau, nous vous suggérons d'utiliser les options **Coton** pour le corps et les poches et d'utiliser les options **Soie* pour le corps et les poches.
 
 </Tip>
 
-### Facings
+### Façades
 
-We recommend **Hair canvases**. You may be tempted to use modern interfacing but hair canvases will provide the best results. You will want a combination of different weight hair canvases such as lightweight to medium weight **Tailors Canvas** and heavyweight **Horsehair Canvas**. A common misconception is that you have to use horsehair canvas for all of it, but this is not the case and really is only needed for areas that need the most structure such as the front shoulder but are often too stiff for other parts. Tailors canvas is generally used for the majority of facing a coat.
+Nous recommandons les **Toiles à cheveux**. Vous pourriez être tenté d'utiliser un entoilage moderne, mais les toiles à cheveux donneront les meilleurs résultats. Vous aurez besoin d'une combinaison de toiles à cheveux de différents poids, telles que les toiles de **tailleur** légères à moyennes et les **toiles lourdes** à poils de cheval. On pense souvent à tort qu'il faut utiliser de la toile de crin pour l'ensemble de l'ouvrage, mais ce n'est pas le cas et ce n'est vraiment nécessaire que pour les zones qui ont le plus besoin d'être structurées, comme l'épaule avant. La toile de tailleur est généralement utilisée pour la majeure partie de l'habillage d'un manteau.
 
 <Tip>
 
-You can use fusible or non-fusible facings but you may find that you still need to flatline the facing and fabric pieces together with basting stitches, even after fusing for the best results.
+Vous pouvez utiliser des parements thermocollants ou non thermocollants, mais il se peut que vous ayez besoin d'aplanir le parement et les pièces de tissu à l'aide de points de bâti, même après le thermocollage, pour obtenir les meilleurs résultats.
 
 </Tip>
 
 <Note>
 
-Certain hair canvases, such as **Horsehair canvas** can have stiff hairs that can poke out of the fabric so will require tape like tailors tape to prevent this from happening.
+Certaines toiles à poils, telles que **La toile en Poils de cheval**, peuvent avoir des poils raides qui peuvent sortir du tissu et nécessitent donc du ruban adhésif comme du ruban de tailleur pour éviter cela.
 
 </Note>
