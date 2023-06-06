@@ -1,6 +1,6 @@
----
+- - -
 title: "Largeur des pointes"
----
+- - -
 
 ![Nœuds papillons Larges et Fins](tipwidth.svg)
 
