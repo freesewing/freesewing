@@ -51,7 +51,7 @@ export const accountTests = async (chai, config, expect, store) => {
         })
       }
 
-      // Update password - Check with login
+      // Update password - Check with sign in
       const password = store.randomString()
       it(`${store.icon('user', auth)} Should update the password (${auth})`, (done) => {
         const body = {}
@@ -79,11 +79,11 @@ export const accountTests = async (chai, config, expect, store) => {
       it(`${store.icon(
         'user',
         auth
-      )} Should be able to login with the updated password (${auth})`, (done) => {
+      )} Should be able to sign in with the updated password (${auth})`, (done) => {
         const body = {}
         chai
           .request(config.api)
-          .post(`/login`)
+          .post(`/signin`)
           .send({
             username: store.account.username,
             password,
@@ -122,11 +122,11 @@ export const accountTests = async (chai, config, expect, store) => {
       it(`${store.icon(
         'user',
         auth
-      )} Should be able to login with the original password (${auth})`, (done) => {
+      )} Should be able to sign in with the original password (${auth})`, (done) => {
         const body = {}
         chai
           .request(config.api)
-          .post(`/login`)
+          .post(`/signin`)
           .send({
             username: store.account.username,
             password: store.account.password,
@@ -232,7 +232,7 @@ export const accountTests = async (chai, config, expect, store) => {
             )
             .send({
               email: `updating_${store.randomString()}@${store.config.tests.domain}`,
-              unittest: true,
+              test: true,
             })
             .end((err, res) => {
               expect(err === null).to.equal(true)
@@ -287,7 +287,7 @@ export const accountTests = async (chai, config, expect, store) => {
           )
           .send({
             email: store.account.email,
-            unittest: true,
+            test: true,
           })
           .end((err, res) => {
             expect(err === null).to.equal(true)

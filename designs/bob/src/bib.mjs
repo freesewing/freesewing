@@ -16,7 +16,7 @@ export const bib = {
     points,
     Path,
     paths,
-    optionalMeasurements,
+    measurements,
     options,
     macro,
     log,
@@ -24,10 +24,11 @@ export const bib = {
     snippets,
     Snippet,
     paperless,
+    store,
     part,
   }) => {
     // Head size
-    const head = (optionalMeasurements?.head || 360) * options.headSize
+    const head = (`head` in measurements ? measurements.head : 360) * options.headSize
 
     // Construct the neck opening
     let tweak = 1
@@ -178,6 +179,8 @@ export const bib = {
     log.info(['biasTapeLength', { mm: paths.seam.length() }])
     log.info(['fabricHeight', { mm: points.tipRightTopStart.dy(points.bottomLeftEnd) }])
     log.info(['fabricWidth', { mm: points.bottomLeftStart.dx(points.bottomRightEnd) }])
+
+    store.cutlist.addCut({ cut: 1 })
 
     // Complete?
     if (complete) {

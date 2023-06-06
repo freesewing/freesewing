@@ -23,6 +23,8 @@ module.exports = {
    * Note that we're using a system font stack here.
    * That means we're not loading any fonts in the browser,
    * but rather relying on what the user has available locally.
+   *
+   * You can get more font stacks here: https://modernfontstacks.com/
    */
   fontFamily:
     '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',

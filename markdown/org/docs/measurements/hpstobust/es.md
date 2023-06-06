@@ -21,10 +21,10 @@ El punto de esta medida es localizar la parte más completa de su busto vertical
 
 Pero eso significa que distorsionas la longitud que intentas medir al levantar el brazo del mismo lado. Pero eso significa que distorsionas la longitud que intentas medir al levantar el brazo del mismo lado.
 Pero eso significa que distorsionas la longitud que intentas medir al levantar el brazo del mismo lado.
-You might not think there is a difference, but all is connected in the world of physiology, and
-doing this could lead to an error of ~2.5cm (~1 inch) in your measurement.  
-Simply switch your hands around, and you get a more accurate measurement.
+Tal vez no creas que haya una diferencia, pero todo está conectado en el mundo de la siología, y
+hacer esto podría llevar a un error de ~2. cm (~1 pulgada) en su medición.  
+Simplemente cambie las manos y obtenga una medición más precisa.
 
-For best results, get a second person to take your measurements (if possible).
+Para obtener mejores resultados, consiga que una segunda persona tome sus mediciones (si es posible).
 
 </Tip>

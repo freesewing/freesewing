@@ -66,6 +66,8 @@ export const back = {
     log,
     part,
   }) => {
+    let adjustment_warning = false
+
     // Get to work
     points.cbNeck = new Point(0, measurements.neck * options.backNeckCutout)
     points.hps = new Point(measurements.neck * options.neckWidthBack, 0)
@@ -166,14 +168,21 @@ export const back = {
     }
 
     // Store the back width at bust level
-    points.bustCenter = utils.curveIntersectsY(
-      points.cbNeck,
-      points.cbNeckCp2,
-      points.waistCenter,
-      points.waistCenter,
-      measurements.hpsToBust
-    )
-    if (!points.bustCenter) log.error('Could not find bust height in center seam of back part')
+    if (measurements.hpsToBust < points.waistCenter.y) {
+      points.bustCenter = utils.curveIntersectsY(
+        points.cbNeck,
+        points.cbNeckCp2,
+        points.waistCenter,
+        points.waistCenter,
+        measurements.hpsToBust
+      )
+    } else {
+      log.warning(
+        'Unable to place bust above waist on center back seam. Using waist height instead.'
+      )
+      adjustment_warning = true
+      points.bustCenter = points.waistCenter.clone()
+    }
     if (points.bustCenter.y < points.armhole.y) {
       points.sideArmhole = points.armhole.clone()
       let sideArmholeTemp = new Path()
@@ -186,7 +195,7 @@ export const back = {
         points.sideArmhole,
         measurements.hpsToBust
       )
-    } else {
+    } else if (measurements.hpsToBust < points.waistSide.y) {
       points.bustSide = utils.curveIntersectsY(
         points.waistSide,
         points.waistSideCp2,
@@ -194,12 +203,15 @@ export const back = {
         points.armhole,
         measurements.hpsToBust
       )
+    } else {
+      log.warning('Unable to place bust above waist on side back seam. Using waist height instead.')
+      adjustment_warning = true
+      points.bustSide = points.waistSide.clone()
     }
-    if (!points.bustSide) log.error('Could not find bust height in side seam of back part')
     if (points.bustCenter.y < points.dartTip.y) {
       points.bustDartLeft = points.bustCenter.clone()
       points.bustDartLeft.x = points.dartTip.x
-    } else {
+    } else if (measurements.hpsToBust < points.dartBottomLeft.y) {
       points.bustDartLeft = utils.curveIntersectsY(
         points.dartBottomLeft,
         points.dartLeftCp,
@@ -207,8 +219,11 @@ export const back = {
         points.dartTip,
         measurements.hpsToBust
       )
+    } else {
+      log.warning('Unable to adjust bottom of dart on back part. Using unadjusted dart instead.')
+      adjustment_warning = true
+      points.bustDartLeft = points.dartBottomLeft.clone()
     }
-    if (!points.bustDartLeft) log.error('Could not find bust height in back dart')
     points.bustDartRight = points.bustDartLeft.flipX(points.dartTip)
     // Store things we'll need in the front parts
     store.set(
@@ -370,6 +385,17 @@ export const back = {
       }
     }
 
+    if (adjustment_warning)
+      log.warning(
+        'We were not able to generate the Back pattern piece correctly. ' +
+          'Manual fitting and alteration of this and other pattern pieces ' +
+          'are likely to be needed. ' +
+          'First, please retake your measurements and generate a new ' +
+          'pattern using the new measurements. ' +
+          'If you still see this warning with the new pattern, then please ' +
+          'make a test garment, check fit, and make alterations as ' +
+          'necessary before trying to make the final garment.'
+      )
     return part
   },
 }

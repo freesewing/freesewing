@@ -13,6 +13,7 @@ function draftHolmesGore({
   sa,
   paperless,
   absoluteOptions,
+  store,
   part,
 }) {
   //Radius of the head
@@ -29,17 +30,20 @@ function draftHolmesGore({
     prefix: 'gore_',
   })
 
+  macro('cutonfold', {
+    from: points.p0,
+    to: points.gore_p1.shift(180, 20),
+    offset: -points.gore_p2.y / 6,
+    grainline: true,
+  })
+
+  store.cutlist.addCut({ cut: Number(options.gores) })
+  store.cutlist.addCut({ cut: Number(options.gores), material: 'lining' })
+
   // Complete?
   if (complete) {
     points.title = new Point(points.gore_p1.x / 10, points.gore_p2.y / 1.8)
     macro('title', { at: points.title, nr: 1, title: 'crown', scale: 0.5 })
-
-    macro('cutonfold', {
-      from: points.p0,
-      to: points.gore_p1.shift(180, 20),
-      offset: -points.gore_p2.y / 6,
-      grainline: true,
-    })
 
     if (sa) {
       paths.saCurve = new Path()

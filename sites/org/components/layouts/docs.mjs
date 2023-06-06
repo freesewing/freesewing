@@ -1,32 +1,25 @@
-import { useRouter } from 'next/router'
-import { AsideNavigation } from 'site/components/navigation/aside.mjs'
+import { useContext } from 'react'
+// Components
+import { AsideNavigation, ns as navNs } from 'shared/components/navigation/aside.mjs'
 import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
+import { NavigationContext } from 'shared/context/navigation-context.mjs'
 
-export const DocsLayout = ({ app, title = false, children = [], crumbs = [] }) => {
-  const router = useRouter()
-  const slug = router.asPath.slice(1)
+export const ns = navNs
+
+export const DocsLayout = ({ children = [], pageTitle = false }) => {
+  const { title, crumbs } = useContext(NavigationContext)
 
   return (
-    <div className="m-auto flex flex-row justify-start">
-      <section
-        className={`
-        w-0 lg:w-1/3 flex flex-row justify-end
-        border-0 py-20
-        md:px-4
-        bg-base-200
-        shrink-0
-        md:border-r md:border-base-300
-        lg:block
-        `}
-      >
-        <AsideNavigation app={app} slug={slug} />
-      </section>
-      <section className="py-8 lg:py-16 px-6 xl:pl-8 2xl:pl-16 w-full max-w-2xl">
-        <div>
-          <Breadcrumbs crumbs={crumbs} />
-          {title && <h1>{title}</h1>}
-          {children}
-        </div>
+    <div className="grid grid-cols-4 mx-auto justify-center place-items-stretch lg:mt-16">
+      <AsideNavigation />
+      <section className="col-span-4 lg:col-span-3 py-8 lg:py-24 px-4 lg:pl-8 bg-base-50">
+        {title && (
+          <div className="xl:pl-4">
+            <Breadcrumbs crumbs={crumbs} title={pageTitle ? pageTitle : title} />
+            <h1 className="break-words">{pageTitle ? pageTitle : title}</h1>
+          </div>
+        )}
+        <div className="xl:pl-4">{children}</div>
       </section>
     </div>
   )

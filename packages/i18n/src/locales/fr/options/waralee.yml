@@ -9,8 +9,8 @@ hemWidth:
   title: Taille des ourlets
   description: Taille de l'ourlet au bas du pantalon
 waistbandWidth:
-  title: Bande de taille
-  description: Taille de la bande de taille
+  title: Ceinture
+  description: Taille de la ceinture
 waistRaise:
   title: Hauteur de taille
   description: Combien il faut élever la taille de la mesure de hauteur d'assise, ce qui influence la profondeur de la coupe de l'entre-jambe.

@@ -1,8 +1,8 @@
 ---
-title: Why are seam allowances tapered?
+title: Warum sind die Nahtzugaben abgeschrägt?
 ---
 
-Freesewing generates the seam allowances by offsetting from the seam paths. This means that when there is a corner in your pattern and the two offset seam allowances converge, it would require a lot more code to make the offset seam allowance come to a point. Instead, the offset seam allowances come to the end of the seam paths and then are connected in a straight line, making a trimmed or tapered corner.
+Freesewing generiert die Nahtzugaben als Außenlinie zur Nahtlinie. Das heißt, dass es in den Ecken der Schnittteile, wo die Nahtzugaben als spitze Zusammentreffen müssten, der Aufwand in der Programmierung deutlich größer würde. Deshalb endet die Nahtzugabe jeweils mit der Nahtlinie und ihre Enden werden miteinander verbunden, wodurch die angeschnittene Ecke entsteht.
 
-If you want you could simply cut the seam allowance corners fully when cutting your printed pattern or when cutting your fabric. You do not have to cut along the tapered lines. 
+Wenn Sie möchten, können Sie beim Schneiden Ihres Schnittmusters oder beim Schneiden des Stoffes einfach die Ecken spitz zulaufend ergänzen. Sie müssen nicht entlang der eingekürzten Ecke, also der Linie entlang schneiden. 
 

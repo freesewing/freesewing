@@ -1,5 +1,5 @@
 ---
-title: Scale
+title: Escala
 ---
 
 The scale factor can be used to scale down (or up) everything that is not the actual pattern itself. Things like font sizes, arrow sizes, logos, scalebox, line width and so on.

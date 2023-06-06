@@ -52,6 +52,19 @@ Snippet.prototype.clone = function () {
   return clone
 }
 
+/**
+ * Returns a snippet as an object suitable for inclusion in renderprops
+ *
+ * @return {object} snippet - A plain object representing the snippet
+ */
+Snippet.prototype.asRenderProps = function () {
+  return {
+    def: this.def,
+    anchor: this.anchor.asRenderProps(),
+    attributes: this.attributes.asRenderProps(),
+  }
+}
+
 //////////////////////////////////////////////
 //            PRIVATE METHODS               //
 //////////////////////////////////////////////

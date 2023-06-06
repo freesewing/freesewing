@@ -395,6 +395,14 @@ function draftHiBody({
   // Reduce precision as size goes up coz performance
   store.set('tolerance', options.size < 1 ? 1 : options.size * 100)
 
+  points.grainlineFrom = points.body13.shiftFractionTowards(points.body03, 0.5)
+  macro('grainline', {
+    from: points.grainlineFrom,
+    to: points.body03,
+  })
+
+  store.cutlist.addCut({ material: 'color1UpperBody' })
+
   // Complete?
   if (complete) {
     points.bodyTailSnippet = new Path()
@@ -458,12 +466,6 @@ function draftHiBody({
       from: points.body13,
       to: points.body01,
       d: -5,
-    })
-
-    points.grainlineFrom = points.body13.shiftFractionTowards(points.body03, 0.5)
-    macro('grainline', {
-      from: points.grainlineFrom,
-      to: points.body03,
     })
 
     points.titleAnchor = points.body04.shiftFractionTowards(points.body17, 0.4)

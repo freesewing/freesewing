@@ -3,15 +3,6 @@ import http from 'passport-http'
 import jwt from 'passport-jwt'
 import { ApikeyModel } from './models/apikey.mjs'
 
-const levelFromRole = (role) => {
-  if (role === 'user') return 4
-  if (role === 'bughunter') return 5
-  if (role === 'support') return 6
-  if (role === 'admin') return 8
-
-  return 0
-}
-
 function loadExpressMiddleware(app) {
   app.use(cors())
 }
@@ -36,7 +27,7 @@ function loadPassportMiddleware(passport, tools) {
         return done(null, {
           ...jwt_payload,
           uid: jwt_payload._id,
-          level: levelFromRole(jwt_payload.role),
+          level: tools.config.roles.levels[jwt_payload.role] || 0,
         })
       }
     )

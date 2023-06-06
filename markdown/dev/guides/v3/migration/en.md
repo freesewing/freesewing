@@ -11,7 +11,15 @@ The focus on this guide is on our core library, our designs, our monorepo, and
 other topics of interest to developers.  It does not cover any changes to our
 website(s) or other more user-facing aspects.
 
-<Fixme compact>This guide is a work in process</Fixme>
+<Fixme compact>
+
+This guide is a work in process.
+ToDo:
+
+- part level transforms
+- config overloading
+
+</Fixme>
 
 ## Breaking changes
 

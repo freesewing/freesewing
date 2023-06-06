@@ -1,0 +1,142 @@
+---
+aaron:
+  description: Aaron est un débardeur ou marcel
+  title: Débardeur Aaron (A-shirt)
+albert:
+  description: Albert est un tablier.
+  title: Tablier Albert
+bee:
+  description: Bee est un haut de bikini
+  title: Haut de bikini Bee
+bella:
+  description: Bella est un bloc corporel de base pour les personnes qui ont le sein.
+  title: Buste de base Bella
+benjamin:
+  description: Benjamin est un nœud papillon avec 4 possibilités de styles différents.
+  title: Nœud papillon Benjamin
+bent:
+  description: Ce bloc d'emmanchure en deux parties est la base de nos modèles de manteau et de veste.
+  title: Patron de base Bent
+bob:
+  description: Voici le bavoir que vous pouvez créer en suivant notre tutoriel de design
+  title: Bob le bavoir
+breanna:
+  description: Breanna est un bloc corporel de base pour les personnes qui ont un sein.
+  title: Haut Breanna
+brian:
+  description: Brian est un bloc corporel de base pour les personnes sans sein.
+  title: Patron de base Brian
+bruce:
+  description: Bruce est un boxer confortable et élégant.
+  title: Boxer Bruce
+carlita:
+  description: 'La version pour les seins de notre manteau Carlton, aka manteau Sherlock Holmes.'
+  title: Manteau Carlita
+carlton:
+  description: 'Pour le cosplay de Sherlock Holmes, ou juste un très beau manteau.'
+  title: Manteau Carlton
+cathrin:
+  description: Cathrin est un corset sous-poitrine ou un serre-taille.
+  title: Corset Cathrin
+charlie:
+  description: Charlie est un modèle de pantalon en chino.
+  title: Charlie chinos
+cornelius:
+  description: Cornelius est une culotte de cyclisme basé sur la méthode Keystone.
+  title: Culotte de cyclisme Cornelius
+diana:
+  description: Diana est un top avec un col drapé.
+  title: Haut drapé Diana
+florent:
+  description: 'Florent est une casquette plate, une casquette arrondie avec un petit bord raide à l''avant.'
+  title: Casquette plate Florent
+florence:
+  description: 'Florence est un masque facial.'
+  title: Masque Florence
+hi:
+  description: Le requin le plus amical du monde
+  title: Hi le requin
+holmes:
+  description: 'Pour un cosplay Sherlock Holmes, ou juste un joli manteau.'
+  title: Casquette de détective Holmes
+hortensia:
+  description: 'Hortensia est un sac à main.'
+  title: Sac à main Hortensia
+huey:
+  description: Huey est un sweat à capuche zippé avec poches avant optionnelles.
+  title: Sweat zippé à capuche Huey
+hugo:
+  description: Hugo est un sweat à capuche avec des manches raglan.
+  title: Sweat à capuche Hugo
+jaeger:
+  description: Jaeger est une veste de sport de style manteau avec deux boutons et des poches plaquées.
+  title: Veste Jaeger
+lucy:
+  description: Lucy est une poche historique que vous pouvez nouer autour de votre taille.
+  title: Poche à nouer Lucy
+lunetius:
+  description: Lunetius est une lacerne, un manteau romain historique
+  title: Lacerne Lunetius
+noble:
+  description: Noble est un bloc de corps avec des coutures prince(sse)
+  title: Bloc de corps Noble
+octoplushy:
+  description: Un compagnon à plusieurs bras pour des câlins de haut niveau
+  title: Octoplushy la pieuvre
+paco:
+  description: Paco est un pantalon d'été décontracté mais élégant.
+  title: Pantalon Paco
+penelope:
+  description: Penelope est une jupe crayon avec ou sans fente dans le dos.
+  title: Jupe crayon Penelope
+sandy:
+  description: Sandy est un patron de jupe cercle adaptable.
+  title: Jupe cercle Sandy
+shin:
+  description: Les tiges sont des maillots de bain athlétiques.
+  title: Boxer de bain Shin
+simon:
+  description: Simon est un modèle de chemise très adaptable pour les personnes sans sein.
+  title: Chemise Simon
+simone:
+  description: Simone est Simon, adapté pour les poitrines avec seins.
+  title: Chemise Simone
+sven:
+  description: Sven est un sweat simple.
+  title: Sweat Sven
+tamiko:
+  description: Tamiko est un top zéro déchet.
+  title: Top Tamiko
+teagan:
+  description: Teagan est un T-shirt ajusté.
+  title: T-shirt Teagan
+theo:
+  description: Theo est un patron de pantalon classique.
+  title: Pantalon Theo
+tiberius:
+  description: Tiberius est une tunique romaine historique
+  title: Tunique Tiberius
+titan:
+  description: Titan est un patron de base de pantalon sans pinces.
+  title: Bloc de pantalon Titan
+trayvon:
+  description: Trayvon est une cravate qui ne fait pas d'économies pour un résultat professionnel.
+  title: Cravate Trayvon
+unice:
+  description: Unice est une variante d'Ursula ; un modèle de sous-vêtements basique et hautement personnalisable.
+  title: Sous-vêtements Unice
+ursula:
+  description: Ursula est un motif basique et hautement personnalisable.
+  title: Unités d'Ursula
+wahid:
+  description: Wahid est un gilet classique ajusté.
+  title: Gilet Wahid
+walburga:
+  description: Walburga est un tabard/surcot, un vêtement historique de l'Europe médiévale
+  title: Tabard Walburga
+waralee:
+  description: Waralee sont des pantalons enveloppés.
+  title: Pantalon portefeuille Waralee
+yuri:
+  description: Yuri est un cardigan chic basé sur les sweats Huey & Hugo
+  title: Sweat à capuche Yuri

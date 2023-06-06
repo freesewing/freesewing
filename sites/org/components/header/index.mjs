@@ -1,13 +1,109 @@
-import { useState, useEffect } from 'react'
-import { ThemePicker, ns as themeNs } from 'shared/components/theme-picker/index.mjs'
-import { LocalePicker, ns as localeNs } from 'shared/components/locale-picker/index.mjs'
-import { CloseIcon, MenuIcon, SearchIcon } from 'shared/components/icons.mjs'
+// Hooks
+import { useState, useEffect, useContext } from 'react'
+import { useTranslation } from 'next-i18next'
+// Context
+import { ModalContext } from 'shared/context/modal-context.mjs'
+import { LoadingContext } from 'shared/context/loading-context.mjs'
+// Components
+import {
+  DesignIcon,
+  DocsIcon,
+  MenuIcon,
+  SearchIcon,
+  ShowcaseIcon,
+  UserIcon,
+  ThemeIcon,
+  I18nIcon,
+  MeasureIcon,
+  PageIcon,
+  PlusIcon,
+} from 'shared/components/icons.mjs'
 import { Ribbon } from 'shared/components/ribbon.mjs'
-import { WordMark } from 'shared/components/wordmark.mjs'
+import { ModalThemePicker, ns as themeNs } from 'shared/components/modal/theme-picker.mjs'
+import { ModalLocalePicker, ns as localeNs } from 'shared/components/modal/locale-picker.mjs'
+import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
 
-export const ns = [...new Set([...themeNs, ...localeNs])]
+import { NavButton, NavSpacer, colors } from 'shared/components/header.mjs'
 
-export const Header = ({ app, setSearch }) => {
+export const ns = ['header', 'sections', ...themeNs, ...localeNs]
+
+const NavIcons = ({ setModal, setSearch }) => {
+  const { t } = useTranslation(['header'])
+  const iconSize = 'h-6 w-6 lg:h-12 lg:w-12'
+
+  return (
+    <>
+      <NavButton onClick={() => setModal(<ModalMenu />)} label={t('header:menu')} color={colors[0]}>
+        <MenuIcon className={iconSize} />
+      </NavButton>
+      <NavSpacer />
+      <NavButton href="/designs" label={t('header:designs')} color={colors[1]}>
+        <DesignIcon className={iconSize} />
+      </NavButton>
+      <NavButton
+        href="/patterns"
+        label={t('header:patterns')}
+        color={colors[2]}
+        extraClasses="hidden lg:flex"
+      >
+        <PageIcon className={iconSize} />
+      </NavButton>
+      <NavButton
+        href="/sets"
+        label={t('header:sets')}
+        color={colors[3]}
+        extraClasses="hidden lg:flex"
+      >
+        <MeasureIcon className={iconSize} />
+      </NavButton>
+      <NavButton
+        href="/showcase"
+        label={t('header:showcase')}
+        color={colors[4]}
+        extraClasses="hidden lg:flex"
+      >
+        <ShowcaseIcon className={iconSize} />
+      </NavButton>
+      <NavButton
+        href="/docs"
+        label={t('header:docs')}
+        color={colors[5]}
+        extraClasses="hidden lg:flex"
+      >
+        <DocsIcon className={iconSize} />
+      </NavButton>
+      <NavSpacer />
+      <NavButton
+        onClick={() => setModal(<ModalThemePicker />)}
+        label={t('header:theme')}
+        color={colors[6]}
+      >
+        <ThemeIcon className={iconSize} />
+      </NavButton>
+      <NavButton
+        onClick={() => setModal(<ModalLocalePicker />)}
+        label={t('header:language')}
+        color={colors[7]}
+      >
+        <I18nIcon className={iconSize} />
+      </NavButton>
+      <NavButton onClick={() => setSearch(true)} label={t('header:search')} color={colors[8]}>
+        <SearchIcon className={iconSize} />
+      </NavButton>
+      <NavSpacer />
+      <NavButton href="/account" label={t('header:account')} color={colors[9]}>
+        <UserIcon className={iconSize} />
+      </NavButton>
+      <NavButton href="/new" label={t('header:new')} color={colors[10]}>
+        <PlusIcon className={iconSize} />
+      </NavButton>
+    </>
+  )
+}
+
+export const Header = ({ setSearch }) => {
+  const { setModal } = useContext(ModalContext)
+  const { loading } = useContext(LoadingContext)
   const [prevScrollPos, setPrevScrollPos] = useState(0)
   const [show, setShow] = useState(true)
 
@@ -33,64 +129,24 @@ export const Header = ({ app, setSearch }) => {
       w-full
       z-30
       transition-transform
-      ${
-        show || app.loading
-          ? ''
-          : 'fixed bottom-0 lg:top-0 left-0 translate-y-20 lg:-translate-y-20'
-      }
+      ${show || loading ? '' : 'fixed bottom-0 lg:top-0 left-0 translate-y-36 lg:-translate-y-36'}
       drop-shadow-xl
     `}
     >
       <div className="m-auto md:px-8">
         <div className="p-0 flex flex-row gap-2 justify-between text-neutral-content items-center">
-          <div className="flex flex-row items-center">
-            <button
-              className={`
-                btn btn-sm
-                text-neutral-content bg-transparent
-                lg:hidden
-                h-12
-              `}
-              onClick={app.togglePrimaryMenu}
-            >
-              {app.primaryMenu ? <CloseIcon /> : <MenuIcon />}
-            </button>
-            <div className="hidden lg:block lg:pl-2">
-              <WordMark />
-            </div>
+          {/* Non-mobile content */}
+          <div className="hidden lg:flex lg:px-2 flex-row items-center justify-center w-full">
+            <NavIcons setModal={setModal} setSearch={setSearch} />
           </div>
-          <div className="flex flex-row items-center lg:hidden">
-            <WordMark />
-          </div>
-          <div className="flex flex-row items-center lg:hidden pr-2">
-            <button onClick={() => setSearch(true)} className="btn btn-sm">
-              <SearchIcon />
-            </button>
-          </div>
-          <div className="hidden lg:flex lg:flex-row gap-2 grow"></div>
-          <div className="hidden lg:flex flex-row items-center">
-            <ThemePicker app={app} />
-            <LocalePicker app={app} />
-            <button
-              className={`
-                btn btn-ghost btn-sm h-12
-                hidden lg:flex
-                flex-row gap-4
-                justify-between
-                rounded-none
-                hover:bg-neutral-focus
-              `}
-              onClick={() => setSearch(true)}
-            >
-              <SearchIcon />
-              <kbd className="normal-case text-xs -ml-2 font-medium px-1.5 rounded opacity-80 border border-neutral-content">
-                /
-              </kbd>
-            </button>
+
+          {/* Mobile content */}
+          <div className="flex lg:hidden flex-row items-center justify-between w-full">
+            <NavIcons setModal={setModal} setSearch={setSearch} />
           </div>
         </div>
       </div>
-      <Ribbon loading={app.loading} theme={app.theme} />
+      <Ribbon />
     </header>
   )
 }

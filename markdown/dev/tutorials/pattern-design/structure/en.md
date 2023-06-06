@@ -26,7 +26,7 @@ If you'd like to learn about those other files and folders, here's what they do:
 ### files
 
 - `next.config.mjs`: The [NextJS][next] configuration file
-- `next-i18next.config.js`: The configuration file for [next-i18next][i81n] which handles translation within NextJS
+- `next-i18next.config.js`: The configuration file for [next-i18next][i18n] which handles translation within NextJS
 - `package.json`: Every Node.js project has a [package.json][pkg] file which holds important metadata and lists dependencies
 - `package-lock.json`: This *lockfile* will only exist if we use the npm package manager
 - `postcss.config.js`: Configuration file for [PostCSS][postcss], a tool to transform CSS with JavaScript
@@ -39,3 +39,4 @@ If you'd like to learn about those other files and folders, here's what they do:
 [yarn]: https://yarnpkg.com/
 [pkg]: https://docs.npmjs.com/cli/v8/configuring-npm/package-json
 [react]: https://reactjs.org/
+[i18n]: https://next.i18next.com

@@ -15,20 +15,19 @@ confidence to explore further on your own.
 
 <Note>
 
-This is the **video series** format.
+This is the **video series** format, with an approximate total runtime of 01:43:17.
 
-This training is also available as a **[long read][text]** (20k 
+This training is also available as a **[long read][text]** (20k
 words) or **[audiobook][audio]**.
 
 </Note>
 
-<iframe class="w-full aspect-[16/9]" 
+<iframe class="w-full aspect-[16/9]"
   src="https://www.youtube.com/embed/videoseries?list=PL1gv5yv3DoZNIPVAlZRGPEB0fBvflO-xN"
   frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   allowfullscreen
 />
 
 [text]: /training/git/
 [audio]: /training/git/audio/
-

@@ -1,22 +1,24 @@
-import { prebuildMdx } from './mdx.mjs'
-import { prebuildStrapi } from './strapi.mjs'
+import { prebuildDocs } from './docs.mjs'
 import { prebuildNavigation } from './navigation.mjs'
+import { prebuildGitData } from './git.mjs'
 import { prebuildContributors } from './contributors.mjs'
 import { prebuildPatrons } from './patrons.mjs'
 import { prebuildI18n } from './i18n.mjs'
 import { prebuildLab } from './lab.mjs'
+import { prebuildDesigns } from './designs.mjs'
+import { prebuildFavicon } from './favicon.mjs'
 import { generateOgImage } from './og/index.mjs'
 
 const run = async () => {
-  console.log('in run')
+  if (process.env.LINTER) return true
+  const FAST = process.env.FAST ? true : false
   const SITE = process.env.SITE || 'lab'
-  if (SITE === 'org') {
-    const mdxPages = await prebuildMdx(SITE)
-    const [posts] = await prebuildStrapi(SITE)
-    prebuildNavigation(mdxPages, posts, SITE)
-  } else if (SITE === 'dev') {
-    const mdxPages = await prebuildMdx(SITE)
-    if (process.env.GENERATE_OG_IMAGES) {
+  await prebuildDesigns()
+  if (['org', 'dev'].includes(SITE)) {
+    if (!FAST) await prebuildGitData(SITE)
+    const docPages = await prebuildDocs(SITE)
+    prebuildNavigation(docPages, false, SITE)
+    if (!FAST && process.env.GENERATE_OG_IMAGES) {
       // Create og image for the home page
       await generateOgImage({
         lang: 'en',
@@ -34,12 +36,16 @@ const run = async () => {
         lead: '404',
       })
     }
-    prebuildNavigation(mdxPages, false, SITE)
-  } else await prebuildLab()
+  } else {
+    await prebuildLab()
+  }
 
   await prebuildI18n(SITE)
-  await prebuildContributors(SITE)
-  await prebuildPatrons(SITE)
+  if (!FAST) {
+    await prebuildContributors(SITE)
+    await prebuildPatrons(SITE)
+    await prebuildFavicon(SITE)
+  }
   console.log()
 }
 

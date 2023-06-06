@@ -38,7 +38,7 @@ Le biais de jersey est moins commun, mais souvent utilisé sur les maillots de c
 > 
 > Sur un T-shirt, l'élargissement de la bande au cou réduira la taille de l'encolure. Si vous voulez une bande plus large, vous devrez couper un trou plus grand dans votre t-shirt.
 > 
-> On an undershirt, if you want the knitwear binding at the neck to be wider, it will not make the neck opening smaller. Au lieu de cela, le biais se posera plus loin sur le tissu principal du maillot de corps.
+> Sur un maillot de corps, si vous voulez que le biais à l'encolure soit plus large, cela ne réduira pas l'encolure. Au lieu de cela, le biais se posera plus loin sur le tissu principal du maillot de corps.
 
 ## Pourquoi le biais sur une maille doit être extensible
 

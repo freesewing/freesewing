@@ -21,8 +21,8 @@ cuffEase:
   title: Holgura de muñeca
   description: La cantidad de holgura en la muñeca.
 draftForHighBust:
-  title: Draft for high bust
-  description: Draft the pattern for the high bust measurement (if available) rather than the (full) chest. This will result in a more fitted garment for people with breasts.
+  title: Borrador para alta caída
+  description: Borra el patrón para la medición alta del polvo (si está disponible) en lugar del cofre (completo). Esto dará lugar a una prenda más ajustada para las personas con senos.
 frontArmholeDeeper:
   title: Sujetador delantero extra recorte
   description: '¿Cuánto quieres que se corte la sisa delantera más allá de la espalda?'

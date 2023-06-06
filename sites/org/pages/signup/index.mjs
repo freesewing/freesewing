@@ -1,18 +1,21 @@
 // Hooks
-import { useState } from 'react'
-import { useApp } from 'site/hooks/useApp.mjs'
-import { useBackend } from 'site/hooks/useBackend.mjs'
+import { useState, useContext } from 'react'
+import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useTranslation } from 'next-i18next'
+// Context
+import { ModalContext } from 'shared/context/modal-context.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { validateEmail, validateTld } from 'site/utils.mjs'
+import { validateEmail, validateTld } from 'shared/utils.mjs'
 // Components
 import Link from 'next/link'
-import { PageWrapper } from 'site/components/wrappers/page.mjs'
+import { PageWrapper } from 'shared/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
-import { SusiWrapper } from 'site/components/wrappers/susi.mjs'
+import { SusiWrapper } from 'shared/components/wrappers/susi.mjs'
 import { Robot } from 'shared/components/robot/index.mjs'
-import { EmailValidButton } from 'site/components/buttons/email-valid-button.mjs'
+import { EmailValidButton } from 'shared/components/buttons/email-valid-button.mjs'
+import { LeftIcon, HelpIcon } from 'shared/components/icons.mjs'
+import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 
 // Translation namespaces used on this page
 const namespaces = ['signup', 'errors']
@@ -23,15 +26,17 @@ const DarkLink = ({ href, txt }) => (
   </Link>
 )
 
-const SignUpPage = (props) => {
-  const app = useApp(props)
-  const backend = useBackend(app)
-  const { t } = useTranslation(namespaces)
+const SignUpPage = ({ page }) => {
+  // Context
+  const { setModal } = useContext(ModalContext)
+
+  const backend = useBackend()
+  const { t, i18n } = useTranslation(namespaces)
 
   const [email, setEmail] = useState('')
   const [emailValid, setEmailValid] = useState(false)
   const [result, setResult] = useState(false)
-  const [error, setError] = useState(null)
+  const [loading, setLoading] = useState(false)
 
   const updateEmail = (evt) => {
     const value = evt.target.value
@@ -42,28 +47,50 @@ const SignUpPage = (props) => {
 
   const signupHandler = async (evt) => {
     evt.preventDefault()
+    setLoading(true)
     if (!emailValid) return
     let res
     try {
       res = await backend.signUp({
         email,
-        language: app.locale,
+        language: i18n.language,
         setResult,
       })
     } catch (err) {
-      setError(app.error(err))
       // Here to keep the stupid linter happy
-      console.log(error)
+      console.log(err)
     }
-    if (res.result === 'success') setResult('success')
-    else setResult('fail')
+    if (res.data.result === 'success') setResult('success')
+    else {
+      setModal(
+        <ModalWrapper bg="base-100 lg:bg-base-300">
+          <div className="bg-base-100 rounded-lg p-4 lg:px-8 max-w-xl lg:shadow-lg">
+            <h3>An error occured while trying to process your request</h3>
+            <Robot pose="ohno" className="m-auto w-56" embed />
+            <p className="text-lg">{t('err2')}</p>
+            <p className="text-lg">{t('err3')}</p>
+            <div className="flex flex-row gap-4 items-center justify-center p-8 flex-wrap">
+              <button className="btn btn-primary px-8" onClick={() => setResult(false)}>
+                <LeftIcon />
+                <span className="pl-2">{t('back')}</span>
+              </button>
+              <Link href="/support" className="btn btn-primary btn-outline px-8">
+                <HelpIcon />
+                <span className="pl-2">{t('contact')}</span>
+              </Link>
+            </div>
+          </div>
+        </ModalWrapper>
+      )
+    }
+    setLoading(false)
   }
 
-  const loadingClasses = app.loading ? 'opacity-50' : ''
+  const loadingClasses = loading ? 'opacity-50' : ''
 
   return (
-    <PageWrapper app={app} title={t('joinFreeSewing')} layout={BareLayout} footer={false}>
-      <SusiWrapper theme={app.theme} error={result && result !== 'success'}>
+    <PageWrapper {...page} title={t('joinFreeSewing')} layout={BareLayout} footer={false}>
+      <SusiWrapper error={result && result !== 'success'}>
         <h1 className={`text-neutral-content font-light text-3xl mb-0 pb-0 ${loadingClasses}`}>
           {result ? (
             result === 'success' ? (
@@ -75,6 +102,7 @@ const SignUpPage = (props) => {
             <span>{t('joinFreeSewing')}!</span>
           )}
         </h1>
+
         {result ? (
           result === 'success' ? (
             <>
@@ -121,9 +149,9 @@ const SignUpPage = (props) => {
               />
               <EmailValidButton
                 email={email}
-                app={app}
                 t={t}
                 validText={t('emailSignupLink')}
+                invalidText={t('pleaseProvideValidEmail')}
                 btnProps={{ type: 'submit' }}
               />
             </form>
@@ -145,6 +173,9 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale)),
+      page: {
+        path: ['signup'],
+      },
     },
   }
 }

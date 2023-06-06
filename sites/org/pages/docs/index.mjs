@@ -1,56 +1,49 @@
-// Hooks
-import { useApp } from 'site/hooks/useApp.mjs'
 // Dependencies
-import Head from 'next/head'
-import { mdxLoader } from 'shared/mdx/loader.mjs'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+// Hooks
+import { useState, useEffect } from 'react'
 // Components
-import { PageWrapper } from 'site/components/wrappers/page.mjs'
-import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
-import { ReadMore } from 'shared/components/mdx/read-more.mjs'
-import { jargon } from 'site/jargon.mjs'
+import { ns } from 'shared/components/wrappers/page.mjs'
+import { components } from 'shared/components/mdx/index.mjs'
+//import { TocWrapper } from 'shared/components/wrappers/toc.mjs'
+import { Loading, Page } from './[...slug].mjs'
 
-const DocsPage = ({ title, mdx, bugsnag }) => {
-  const app = useApp({ bugsnag })
-  const fullTitle = title + ' - FreeSewing.org'
+const DocsHomePage = ({ page, slug, locale }) => {
+  // State
+  const [frontmatter, setFrontmatter] = useState({ title: 'FreeSewing.org' })
+  const [MDX, setMDX] = useState(<Loading />)
 
-  // We don't need all MDX components here, just ReadMore
-  const components = {
-    ReadMore: (props) => <ReadMore {...props} app={app} slug="docs" recurse />,
-  }
+  /* Load MDX dynamically */
+  useEffect(() => {
+    const loadMDX = async () => {
+      import(`../../../../markdown/org/docs/${locale}.md`).then((mod) => {
+        setFrontmatter(mod.frontmatter)
+        const Component = mod.default
+        setMDX(<Component components={components} />)
+      })
+    }
+    loadMDX()
+  }, [slug])
 
-  return (
-    <PageWrapper app={app} title={title}>
-      <Head>
-        <title>{fullTitle}</title>
-      </Head>
-      <div className="w-full">
-        <MdxWrapper mdx={mdx} app={app} components={components} />
-      </div>
-    </PageWrapper>
-  )
+  return <Page {...{ page, slug, frontmatter, MDX, locale }} />
 }
 
-export default DocsPage
+export default DocsHomePage
 
 /*
  * getStaticProps() is used to fetch data at build-time.
- *
- * On this page, it is loading the mdx (markdown) content
- * from the markdown file on disk.
- *
- * This, in combination with getStaticPaths() below means this
- * page will be used to render/generate all markdown/mdx content.
- *
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticProps({ locale }) {
-  const { mdx, frontmatter } = await mdxLoader(locale, 'org', ['docs'], jargon[locale])
-  const { title = 'FIXME: Please give this page a title' } = frontmatter
-
   return {
     props: {
-      mdx,
-      title,
+      ...(await serverSideTranslations('en', ['docs', ...ns])),
+      slug: 'docs',
+      locale,
+      page: {
+        locale,
+        path: ['docs'],
+      },
     },
   }
 }

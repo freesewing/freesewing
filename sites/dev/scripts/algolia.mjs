@@ -1,10 +1,8 @@
 /*
  * This will update (replace really) the Algolia index with the
- * current website contents. Or at least the markdown and Strapi
- * content
+ * current website contents. Or at least the markdown content.
  *
- * It expects the following environment vars to be set in a
- * .env file in the 'sites/dev' folder:
+ * It expects the following environment vars to be set:
  *
  * ALGOLIA_API_WRITE_KEY -> Needs permission to index/create/delete
  *
@@ -14,7 +12,6 @@ import fs from 'fs'
 import path from 'path'
 import algoliasearch from 'algoliasearch'
 import { unified } from 'unified'
-import { remark } from 'remark'
 import { visit } from 'unist-util-visit'
 import remarkParser from 'remark-parse'
 import remarkCompiler from 'remark-stringify'
@@ -24,15 +21,18 @@ import remarkRehype from 'remark-rehype'
 import rehypeSanitize from 'rehype-sanitize'
 import rehypeStringify from 'rehype-stringify'
 import yaml from 'yaml'
-import { getMdxFileList } from '../../shared/prebuild/mdx.mjs'
-import config from '../algolia.config.mjs'
+import { getMdxFileList } from '../../shared/prebuild/docs.mjs'
+import { siteConfig } from '../site.config.mjs'
+import { compile } from 'html-to-text'
 dotenv.config()
+
+const convert = compile()
 
 /*
  * Initialize Algolia client
  */
-const client = algoliasearch(config.algolia.app, process.env.ALGOLIA_API_WRITE_KEY)
-const index = client.initIndex(config.algolia.index)
+const client = algoliasearch(siteConfig.algolia.app, process.env.ALGOLIA_API_WRITE_KEY)
+const index = client.initIndex(siteConfig.algolia.index)
 
 /*
  * Loads markdown from disk and compiles it into HTML for indexing
@@ -66,8 +66,20 @@ const markdownLoader = async (file) => {
  */
 const clearIndex = async () => {
   console.log(`🗑️  Clearing index`)
-  await index.clearObjects()
+  try {
+    await index.clearObjects()
+  } catch (err) {
+    console.log(err)
+  }
 }
+
+const splitContent = (content) =>
+  content.body.split('<h2>').map((chunk, i) => ({
+    ...content,
+    objectID: `${content.objectID}-${i}`,
+    title: content.title + ' / ' + chunk.split('</h2>')[0],
+    body: convert(chunk.split('</h2>').slice(1).join('</h2>')),
+  }))
 
 /*
  * Get and index markdown content
@@ -83,9 +95,17 @@ const indexMarkdownContent = async () => {
   const list = await getMdxFileList(mdxRoot, 'en')
   const pages = []
 
+  // max page size
+  const MAX = 1500
+
   for (const file of list) {
     const content = await markdownLoader(file)
-    pages.push(content)
+    if (content.body.length < MAX)
+      pages.push({
+        ...content,
+        body: convert(content.body),
+      })
+    else pages.push(...splitContent(content))
   }
   // Index markdown to Algolia
   await index.clearObjects()
@@ -98,7 +118,7 @@ const indexMarkdownContent = async () => {
 const run = async () => {
   if (process.env.VERCEL_ENV === 'production' || process.env.FORCE_ALGOLIA) {
     console.log()
-    //await clearIndex()
+    await clearIndex()
     await indexMarkdownContent()
     console.log()
   } else {

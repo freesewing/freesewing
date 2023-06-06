@@ -1,6 +1,8 @@
 import { ThemePicker } from 'shared/components/theme-picker/index.mjs'
 import { LocalePicker } from 'shared/components/locale-picker/index.mjs'
 
+export const ns = ['']
+
 export const BeforeNav = ({ app }) => (
   <>
     <div className="md:hidden flex flex-row flex-wrap sm:flex-nowrap gap-2 mb-2">

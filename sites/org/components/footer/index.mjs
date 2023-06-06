@@ -6,6 +6,7 @@ import { CCByLogo } from 'shared/components/logos/cc-by.mjs'
 import { Ribbon } from 'shared/components/ribbon.mjs'
 import { WordMark } from 'shared/components/wordmark.mjs'
 import { useTranslation } from 'next-i18next'
+import { useTheme } from 'shared/hooks/use-theme.mjs'
 import { freeSewingConfig } from 'site/freesewing.config.mjs'
 import {
   HelpIcon,
@@ -52,10 +53,11 @@ export const ns = ['footer']
  */
 export const Footer = ({ app }) => {
   const { t } = useTranslation(ns)
+  const { theme } = useTheme()
 
   return (
     <footer className="bg-neutral">
-      <Ribbon loading={app.loading} theme={app.theme} />
+      <Ribbon loading={app.state.loading} theme={theme} />
       <div className="grid grid-cols-1 lg:grid-cols-4 py-12 2xl:py-20 text-neutral-content px-4">
         {/* First col - CC & MIT */}
         <div className="mb-20 order-1 mt-20 2xl:mt-0 2xl:mb-0">

@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { Stack } from './stack.mjs'
-import { SvgWrapper } from '../../draft/svg.mjs'
-import { PartInner } from '../../draft/part.mjs'
+import { SvgWrapper } from '../../pattern/svg.mjs'
+import { PartInner } from '../../pattern/part.mjs'
 import get from 'lodash.get'
 
 export const Draft = (props) => {

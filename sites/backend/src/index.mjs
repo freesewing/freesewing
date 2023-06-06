@@ -15,6 +15,8 @@ import { loadExpressMiddleware, loadPassportMiddleware } from './middleware.mjs'
 import { encryption } from './utils/crypto.mjs'
 // Multi-Factor Authentication (MFA)
 import { mfa } from './utils/mfa.mjs'
+// Role-Based Access Control (RBAC)
+import { rbac } from './utils/rbac.mjs'
 // Email
 import { mailer } from './utils/email.mjs'
 // Swagger
@@ -36,6 +38,7 @@ const tools = {
   ...encryption(config.encryption.key),
   ...mfa(config.mfa),
   ...mailer(config),
+  ...rbac(config.roles),
   config,
 }
 

@@ -1,19 +1,11 @@
-// Hooks
-import { useRouter } from 'next/router'
-// Components
-import { Header } from 'site/components/header.mjs'
-import { Footer } from 'site/components/footer.mjs'
+import Head from 'next/head'
+import { Header, ns as headerNs } from 'site/components/header/index.mjs'
+import { Footer, ns as footerNs } from 'shared/components/footer/index.mjs'
 
-export const LayoutWrapper = ({ app, children = [] }) => {
-  const startNavigation = () => {
-    app.startLoading()
-    // Force close of menu on mobile if it is open
-    if (app.primaryMenu) app.setPrimaryMenu(false)
-  }
+export const ns = [...new Set([...headerNs, ...footerNs])]
 
-  const router = useRouter()
-  router.events?.on('routeChangeStart', startNavigation)
-  router.events?.on('routeChangeComplete', app.stopLoading)
+export const LayoutWrapper = ({ children = [], header = false }) => {
+  const ChosenHeader = header ? header : Header
 
   return (
     <div
@@ -23,9 +15,12 @@ export const LayoutWrapper = ({ app, children = [] }) => {
     bg-base-100
     `}
     >
-      <Header app={app} />
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <ChosenHeader />
       <main className="grow">{children}</main>
-      <Footer app={app} />
+      <Footer />
     </div>
   )
 }

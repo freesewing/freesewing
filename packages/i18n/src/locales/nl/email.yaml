@@ -1,22 +1,22 @@
 ---
-emailChangeActionText: 'Confirm your new E-mail address'
+emailChangeActionText: 'Bevestig uw nieuwe e-mailadres'
 emailChangeCopy1: 'You requested to change the E-mail address linked to your account at FreeSewing.org.'
 emailChangeCopy2: 'Before we do that, you need to confirm your new E-mail address. Please click the link below to do that:'
-emailChangeHiddenIntro: "Let's confirm your new E-mail address"
-emailChangeTitle: 'Please confirm your new E-mail address'
+emailChangeHiddenIntro: "Laten we uw nieuwe e-mailadres bevestigen"
+emailChangeTitle: 'Bevestig uw nieuwe e-mailadres'
 emailChangeWhy: 'You received this E-mail because you changed the E-mail address linked to your account on FreeSewing.org'
 goodbyeCopy1: "If you'd like to share why you're leaving, you can reply to this message."
 goodbyeCopy2: "From our side, we won't bother you again."
 goodbyeTitle: 'Thank you for giving FreeSewing a chance'
 goodbyeWhy: 'You received this E-mail as a final farewell after removing your account on FreeSewing.org'
-passwordResetActionText: 'Re-gain access to your account'
+passwordResetActionText: 'Krijg toegang tot uw account'
 passwordResetCopy1: 'You forgot your password for your account at FreeSewing.org.'
 passwordResetCopy2: 'Click the link below to reset your password:'
-passwordResetHeaderOpeningLine: "Don't worry, these things happen to all of us"
-passwordResetHiddenIntro: 'Re-gain access to your account'
-passwordResetSubject: 'Re-gain access to your account on freesewing.org'
-passwordResetTitle: 'Reset your password, and re-gain access to your account'
-passwordResetWhy: 'You received this E-mail because you requested to reset your password on freesewing.org'
+passwordResetHeaderOpeningLine: "Maak je geen zorgen, deze dingen gebeuren met ons allemaal"
+passwordResetHiddenIntro: 'Krijg toegang tot uw account'
+passwordResetSubject: 'Krijg toegang tot uw account op freesewing.org'
+passwordResetTitle: 'Stel uw wachtwoord opnieuw in en verkrijg opnieuw toegang tot uw account'
+passwordResetWhy: 'U hebt deze e-mail ontvangen omdat u heeft gevraagd om uw wachtwoord opnieuw in te stellen op freesewing.org'
 questionsJustReply: "Zit je met vragen? Stuur ze dan als antwoord op deze E-mail. Ik ben steeds bereid om een handje te helpen. 🙂"
 signupActionText: 'Bevestig je E-mail adres'
 signupCopy1: 'Thank you for signing up at FreeSewing.org.'

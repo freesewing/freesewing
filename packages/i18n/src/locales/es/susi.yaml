@@ -10,7 +10,7 @@ signInHere: Sign in here
 signUpHere: Sign up here
 emailUsernameId: Email address, username, or user ID
 welcomeName: 'Welcome { name }'
-password: Password
+password: Contraseña
 processing: Processing
 emailSent: Email sent
-somethingWentWrong: Something went wrong
+somethingWentWrong: Algo salió mal

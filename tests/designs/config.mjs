@@ -1,17 +1,11 @@
 import { measurements } from '@freesewing/models'
-import designs from "../../config/software/designs.json" assert { type: 'json' }
+import designs from '../../config/software/designs.json' assert { type: 'json' }
 import chai from 'chai'
 
 const expect = chai.expect
 
-export const getShortName = name => name.split('/').pop()
-export const getFamily = design => {
-  for (const fam in designs) {
-    if (Object.keys(designs[fam]).indexOf(design) !== -1) return fam
-  }
-
-  return false
-}
+export const getShortName = (name) => name.split('/').pop()
+export const isUtilityDesign = (name) => typeof designs[name].tags === 'undefined'
 
 // These are ok to use mm options
 const mmAllowed = ['rendertest']
@@ -41,35 +35,26 @@ export const testPatternConfig = (Pattern) => {
     if (chunks.length > 3) {
       expect(designConfig.data.version.split('.').length).to.equal(4)
       expect(chunks[2]).to.contain.oneOf(['-alpha', '-beta', '-rc'])
-    }
-    else expect(designConfig.version.split('.').length).to.equal(3)
+    } else expect(designConfig.version.split('.').length).to.equal(3)
   })
 
   it('Monorepo data:', () => true)
   // Store these for re-use
   const name = getShortName(designConfig.data.name)
-  const family = getFamily(name)
   it(`  - 'name' should be resolvable to a short name`, () => {
     expect(typeof name).to.equal('string')
     expect(name.length > 1).to.be.true
   })
-  it(`  - Short name should be in a known design family`, () => {
-    expect(typeof family).to.equal('string')
-    expect(typeof designs[family]).to.equal('object')
-    expect(typeof designs[family][name]).to.equal('object')
-  })
-  const meta = designs[family][name]
+  const meta = designs[name]
   it(`  - 'description' should be set and be a string of reasonable length`, () => {
     expect(typeof meta.description).to.equal('string')
     expect(meta.description.length > 15).to.be.true
     expect(meta.description.length < 280).to.be.true
   })
   // Config tests for non-utility patterns only
-  if (family !== 'utilities') {
+  if (typeof designs[name].tags !== 'undefined') {
     it(`  - 'design' should be set and be a string of reasonable length`, () => {
-      const people = Array.isArray(meta.design)
-        ? meta.design
-        : [ meta.design ]
+      const people = Array.isArray(meta.design) ? meta.design : [meta.design]
       for (const person of people) {
         expect(typeof person).to.equal('string')
         expect(person.length > 2).to.be.true
@@ -77,9 +62,7 @@ export const testPatternConfig = (Pattern) => {
       }
     })
     it(`  - 'code' should be set and be a string of reasonable length`, () => {
-      const people = Array.isArray(meta.code)
-        ? meta.code
-        : [ meta.code ]
+      const people = Array.isArray(meta.code) ? meta.code : [meta.code]
       for (const person of people) {
         expect(typeof person).to.equal('string')
         expect(person.length > 2).to.be.true
@@ -88,11 +71,11 @@ export const testPatternConfig = (Pattern) => {
     })
     it(`  - 'dfficulty' should be set and be a [1-5] number`, () => {
       expect(typeof meta.difficulty).to.equal('number')
-      expect([1,2,3,4,5].indexOf(meta.difficulty) === -1).to.be.false
+      expect([1, 2, 3, 4, 5].indexOf(meta.difficulty) === -1).to.be.false
     })
   }
 
-  if (family !== 'utilities') {
+  if (!isUtilityDesign(name)) {
     // Ensure required measurements are known measurements
     it('Required measurements:', () => true)
     for (const measurement of patternConfig.measurements || []) {
@@ -115,7 +98,8 @@ export const testPatternConfig = (Pattern) => {
     const type = typeof option
     if (type === 'object' && typeof option.pct !== 'undefined') {
       it(`    - If it has a 'menu' property, it should be a string or method`, () => {
-        if (option.menu) expect(['string','function'].indexOf(typeof option.menu) === -1).to.equal(false)
+        if (option.menu)
+          expect(['string', 'function'].indexOf(typeof option.menu) === -1).to.equal(false)
       })
       // Percentage option
       it(`  - '${name}' is a percentage option`, () => true)
@@ -158,7 +142,7 @@ export const testPatternConfig = (Pattern) => {
       })
       if (mmAllowed.indexOf(getShortName(designConfig.data.name)) === -1) {
         it(`    - Patterns should not use mm options`, () => {
-          expect("Does not use mm").to.be.true
+          expect('Does not use mm').to.be.true
         })
       }
     } else if (type === 'object' && typeof option.bool !== 'undefined') {
@@ -202,6 +186,4 @@ export const testPatternConfig = (Pattern) => {
       it(`  - '${name}' is a static string`, () => true)
     }
   }
-
 }
-

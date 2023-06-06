@@ -10,7 +10,7 @@ A button is shown on the left, and a buttonhole on the right
 
 </Legend>
 
-Snaps have a _stud_ and _socket_ part, and also look like the real thing:
+Drukknopen hebben een _bol_ en een _hol_deel, en zien er ook uit zoals in het echt:
 
 <Legend part="snaps">
 

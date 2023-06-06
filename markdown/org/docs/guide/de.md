@@ -15,9 +15,9 @@ Das Lesen dieser Anleitung nimmt etwa 10 Minuten deiner Zeit in Anspruch, wird d
 - Wir befassen uns damit, [wie du deine Schnittmuster mit Design- und Schnittmusteroptionen konfigurieren][9] kannst
 - Schlussendlich erklären wir dir, [wo du Hilfe finden kannst,][10] solltest du einmal nicht weiterkommen.
 
-Sounds good? Then let's dive right in:
+Klingt das gut? Dann fangen wir einfach direkt an:
 
-<ReadMore list />
+<ReadMore />
 
 <Tip>
 

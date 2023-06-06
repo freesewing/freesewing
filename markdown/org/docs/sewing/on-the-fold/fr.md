@@ -2,9 +2,9 @@
 title: Au pli
 ---
 
-When you have a pattern piece that is symmetric, the instructions might tell you that it is to be cut _on the fold_.
+Quand vous avez un patron qui est symétrique, les instructions peuvent vous demander de le couper _au pli_.
 
-This means that only half the pattern piece is printed, and you should cut it out by folding your fabric, and aligning the line that is _on the fold_ with the fold line indicated on the pattern.
+Cela signifie que la moitié seulement de la pièce de patron est imprimée, et que vous devriez la couper en pliant votre tissu, en alignant la ligne qui est _sur le pli_ à la ligne du pli renseignée sur le patron.
 
 La ligne de pli est indiquée avec une double flèche, comme dans cet exemple :
 
