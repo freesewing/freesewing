@@ -1,8 +1,8 @@
----
-title: "Belt loops"
----
+- - -
+titre : "Passants de ceinture"
+- - -
 
-Constrol how many beltloops we'll generate.
+Constrol le nombre de convoyeurs que nous allons générer.
 
 ## Effet de cette option sur le motif
 
