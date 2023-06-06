@@ -1,12 +1,12 @@
----
+- - -
 title: "Hugo hoodie: Sewing Instructions"
----
+- - -
 
 <Note>
 
-###### Documentation under construction
+###### Documentation sur le montage
 
-First the good news: There's a video series that shows how to make Hugo from start to finish.
+Première bonne nouvelle : il y a une série de vidéos qui montre comment faire Hugo du début à la fin.
 Faites défiler vers le bas, elle est intégré dans cette page.
 
 Maintenant, la mauvaise nouvelle : Les instructions écrites pour Hugo ne sont pas encore complètes.
@@ -15,9 +15,9 @@ Maintenant, la mauvaise nouvelle : Les instructions écrites pour Hugo ne sont p
 
 ## Vidéo
 
-Text a bit dry for you? I try to make videos available as part of the pattern documentation.
+Le texte est un peu concis pour vous ? J'essaie de rendre les vidéos disponibles comme partie intégrante de la documentation du patron.
 
-This 6-episode series shows you how to make your hoodie start to finish:
+Cette série de 6 épisodes vous montre comment réaliser votre sweat à capuche du début à la fin :
 
 <YouTube id='PL1gv5yv3DoZOHLjisuD1JcUPTkFy_IGGO' playlist />
 
@@ -44,9 +44,9 @@ This 6-episode series shows you how to make your hoodie start to finish:
 
 ### Étape 3 : Fixer les manches
 
-- The side of the sleeve with the pointy edge at top is the back of the sleeve piece.  It is also marked by a double notch on the pattern.
+- Le côté de la manche avec le bord pointu en haut est l'arrière de la manche.  Il est également marqué par une double encoche sur le patron.
 
-- Match good sides of the sleeve seam to good sides of the front, matching the single notch on front to single notch on the sleeve piece. Stitch the seam.  Do this for both sleeve pieces.
+- Placez le devant de la manche sur le devant du sweat endroit contre endroit en faisant correspondre les repères du devant et de la manche. Coudre.  Faites cela pour les deux pièces de manche.
 
 - Pour terminer la couture, vous pouvez utiliser une de ces méthodes :
 
@@ -92,7 +92,7 @@ This 6-episode series shows you how to make your hoodie start to finish:
 
 ### Step 8: Preparing a Neckband and Attaching the Hood
 
-- Cut a cross-wise strip of fabric out of your main fabric, your neck opening + 2cm (3/4 inch) long and triple your neck seam allowance wide.
+- Coupez une bande de tissu dans votre tissu principal, de la longueur de votre encolure + 2 cm (3/4 po) et de la largeur égale au triple de votre marge de couture au cou.
 - Pliez endroit contre endroit la pièce d'encolure et la coudre à 1 cm sur le côté court afin de créer une bande circulaire.
 - À partir du dos, faites correspondre l'extérieur de la capuche et le dos de l'encolure, endroit contre endroit. Alignez le panneau de capuche à l'arrière du cou.
 - Épinglez tout le tour de l'encolure jusqu'au devant.
