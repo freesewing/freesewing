@@ -1,6 +1,6 @@
----
+- - -
 title: "Bib length"
----
+- - -
 
 Controla la longitud de la _bis_ parte del aprendedor.
 
