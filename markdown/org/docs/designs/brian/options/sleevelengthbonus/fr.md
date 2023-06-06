@@ -1,10 +1,10 @@
----
+- - -
 titre : "Surlongueur de longueur de manche"
----
+- - -
 
-![The sleeve length bonus option on Brian](./sleevelengthbonus.svg)
+![L'option bonus longueur de manche pour Brian](./sleevelengthbonus.svg)
 
-This option controls how to lengthen the sleeves.
+Cette option contrôle la longueur des manches.
 
 ## Effet de cette option sur le motif
 
