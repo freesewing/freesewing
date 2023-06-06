@@ -179,10 +179,7 @@ export const MeasieRow = (props) => {
   )
 }
 
-const MeasieInput = ({ m, mset }) => {
-  const { t } = useTranslation(['measurements'])
-  //const title = t(`measurements:${m}`)
-
+const MeasieInput = ({ t, m, mset, startLoading, stopLoading, backend, refresh, toast }) => {
   const isDegree = isDegreeMeasurement(m)
   const factor = isDegree ? 1 : mset.imperial ? 25.4 : 10
 
@@ -205,7 +202,6 @@ const MeasieInput = ({ m, mset }) => {
 
   const save = async () => {
     // FIXME
-    /*
     startLoading()
     const measies = {}
     measies[m] = val * factor
@@ -215,7 +211,6 @@ const MeasieInput = ({ m, mset }) => {
       toast.for.settingsSaved()
     } else toast.for.backendError()
     stopLoading()
-  */
   }
 
   const fraction = (i, base) => update({ target: { value: Math.floor(val) + i / base } })
@@ -353,7 +348,7 @@ const MeasieInput = ({ m, mset }) => {
   )
 }
 
-const EditImg = ({ t, mset, account }) => {
+const EditImg = ({ t, mset, account, backend, startLoading, stopLoading, toast, refresh }) => {
   const [img, setImg] = useState(mset.img)
 
   const onDrop = useCallback((acceptedFiles) => {
@@ -366,14 +361,14 @@ const EditImg = ({ t, mset, account }) => {
 
   const { getRootProps, getInputProps } = useDropzone({ onDrop })
 
-  //const update = async (evt) => {
-  //  evt.preventDefault()
-  //  if (evt.target.value !== value) {
-  //    setValue(evt.target.value)
-  //  }
-  //}
-  const save = () => {
-    // FIXME
+  const save = async () => {
+    startLoading()
+    const result = await backend.updateSet(mset.id, { img })
+    if (result.success) {
+      toast.for.settingsSaved()
+      refresh()
+    } else toast.for.backendError()
+    stopLoading()
   }
 
   return (
@@ -408,9 +403,8 @@ const EditImg = ({ t, mset, account }) => {
   )
 }
 
-const EditName = ({ t, mset, backend, toast, refresh }) => {
+const EditName = ({ t, mset, backend, toast, refresh, loading, startLoading, stopLoading }) => {
   const [value, setValue] = useState(mset.name)
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
 
   const update = async (evt) => {
     evt.preventDefault()
@@ -454,10 +448,9 @@ const EditName = ({ t, mset, backend, toast, refresh }) => {
   )
 }
 
-const EditNotes = ({ t, mset, backend, toast, refresh }) => {
+const EditNotes = ({ t, mset, backend, toast, refresh, loading, startLoading, stopLoading }) => {
   const [value, setValue] = useState(mset.notes)
   const [activeTab, setActiveTab] = useState('edit')
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
 
   const update = async (evt) => {
     evt.preventDefault()
@@ -518,9 +511,8 @@ const EditNotes = ({ t, mset, backend, toast, refresh }) => {
   )
 }
 
-const EditUnits = ({ t, mset, backend, toast, refresh }) => {
+const EditUnits = ({ t, mset, backend, toast, refresh, startLoading, stopLoading }) => {
   const [selection, setSelection] = useState(mset?.imperial === true ? 'imperial' : 'metric')
-  const { startLoading, stopLoading } = useContext(LoadingContext)
 
   const update = async (val) => {
     setSelection(val)
@@ -568,9 +560,8 @@ const EditUnits = ({ t, mset, backend, toast, refresh }) => {
   )
 }
 
-const EditPublic = ({ t, mset, backend, toast, refresh }) => {
+const EditPublic = ({ t, mset, backend, toast, refresh, startLoading, stopLoading }) => {
   const [selection, setSelection] = useState(mset.public)
-  const { startLoading, stopLoading } = useContext(LoadingContext)
 
   const update = async (val) => {
     setSelection(val)
@@ -617,12 +608,14 @@ export const EditSectionTitle = ({ title }) => (
 
 const EditMeasurementsSet = (props) => {
   const [filter, setFilter] = useState(false)
-  const { mset, t, setModal } = props
+  const { mset, t, setModal, startLoading, stopLoading, toast, refresh, backend } = props
 
   const filterMeasurements = () => {
     if (!filter) return measurements.map((m) => t(`measurements:${m}`)).sort()
     else return designMeasurements[filter].map((m) => t(`measurements:${m}`)).sort()
   }
+
+  const saveProps = { t, startLoading, stopLoading, toast, refresh, backend }
 
   return (
     <div className="p-4">
@@ -667,20 +660,20 @@ const EditMeasurementsSet = (props) => {
       <EditSectionTitle title={t('data')} />
 
       {/* Name is always shown */}
-      <EditRow title={t('name')} field="name" {...props}>
+      <EditRow title={t('name')} field="name" {...props} {...saveProps}>
         {mset.name}
       </EditRow>
 
       {/* img: Control level determines whether or not to show this */}
       {props.account.control >= conf.account.sets.img ? (
-        <EditRow title={t('image')} field="img" {...props}>
+        <EditRow title={t('image')} field="img" {...props} {...saveProps}>
           <img src={mset.img} className="w-10 mask mask-squircle bg-neutral aspect-square" />
         </EditRow>
       ) : null}
 
       {/* public: Control level determines whether or not to show this */}
       {props.account.control >= conf.account.sets.public ? (
-        <EditRow title={t('public')} field="public" {...props}>
+        <EditRow title={t('public')} field="public" {...props} {...saveProps}>
           <div className="flex flex-row gap-2">
             {mset.public ? (
               <>
@@ -697,14 +690,14 @@ const EditMeasurementsSet = (props) => {
 
       {/* units: Control level determines whether or not to show this */}
       {props.account.control >= conf.account.sets.units ? (
-        <EditRow title={t('units')} field="imperial" {...props}>
+        <EditRow title={t('units')} field="imperial" {...props} {...saveProps}>
           {mset.imperial ? t('imperialUnits') : t('metricUnits')}
         </EditRow>
       ) : null}
 
       {/* notes: Control level determines whether or not to show this */}
       {props.account.control >= conf.account.sets.notes ? (
-        <EditRow title={t('notes')} field="notes" {...props}>
+        <EditRow title={t('notes')} field="notes" {...props} {...saveProps}>
           <Markdown>{mset.notes}</Markdown>
         </EditRow>
       ) : null}
@@ -734,7 +727,7 @@ const EditMeasurementsSet = (props) => {
         </button>
       </div>
       {filterMeasurements().map((m) => (
-        <MeasieRow key={m} m={m} {...props} />
+        <MeasieRow key={m} {...props} {...saveProps} />
       ))}
     </div>
   )
@@ -796,7 +789,9 @@ const MeasurementsSet = ({ mset, t, account, backend, refresh }) => {
         </button>,
       ]}
     >
-      <EditMeasurementsSet {...{ t, mset, account, backend, toast, refresh, setModal }} />
+      <EditMeasurementsSet
+        {...{ t, mset, account, backend, toast, refresh, setModal, startLoading, stopLoading }}
+      />
     </Collapse>
   )
 }
