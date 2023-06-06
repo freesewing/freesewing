@@ -1,70 +1,69 @@
----
-title: "Diana draped top: Sewing Instructions"
----
+- - -
+titre : "Haut drapé Diana : Instructions de couture"
+- - -
 
-### Step 1: Finish the back neckline
+### Étape 1 : Finir l'encolure du dos
 
-- Cut a strip of main fabric the length of your back neckline, and around 3 cm wide.
-- Press a fold into this strip, 1 cm from the edge.
+- Découpez une bande de tissu principal de la longueur de l'encolure du dos et d'une largeur d'environ 3 cm.
+- Pressez un pli dans cette bande, à 1 cm du bord.
 
 <Tip>
 
-For woven fabric make this a bias cut strip.  
-For knit fabric make a strip with the stretch of the fabric running along the long edge.
+Pour les tissus tissés, il s'agit d'une bande coupée dans le sens de la largeur.  
+Pour les tissus à mailles, faites une bande avec l'élasticité du tissu le long du bord long.
 
 </Tip>
 
-- With _good sides together_ align the non-folded edge of the strip with the back neckline.
-- Sew the strip to the back neckline and trim the seam.
-- Turn the strip to the wrong side of the fabric and _topstitch_ along the folded edge to keep it in place.
+- Endroit contre endroit, alignez le bord non plié de la bande avec l'encolure du dos.
+- Coudre la bande à l'encolure arrière et couper la couture.
+- Retournez la bande sur l'envers du tissu et _piquez_ le long du bord plié pour la maintenir en place.
 
-### Step 2: Close shoulder seams
+### Étape 2 : Fermer les coutures d'épaule
 
-![This drawing was too nice not to use](neckline.jpg)
+![Ce dessin était trop beau pour ne pas utiliser](neckline.jpg)
 
-- Finish the raw edge on the front neckline in a way that suits your fabric (if it doesn’t fray, you can leave it unfinished).
-- With _good sides together_, place the front on the back aligning the shoulder seams.
-- Fold the front neckline seam allowance over to the wrong side of the back.
-
-<Note>
-
-If you have a lightweight woven fabric you can fold this edge up again, so it will form a narrow double hem afterwards (it can help to press these folds first).
-
-</Note>
-
-- Stitch the shoulder seam, enclosing the raw edge of the back neckline in the fold.
-- Turn to the right side and press.
-
-### Step 3: Finish front neckline
-
-- Press the hem formed in your fabric by the folds you made at the shoulder seam when you closed the shoulder and topstitch close to the edge.
-
-### Step 4: Attach sleeves
-
-The sleeve will be inserted flat, meaning the armhole seam will be sewn first and the sleeve and side seam will be closed in one go.
-
-- With _good sides together_, matching notches, pin the sleeve head along the armhole.
-- If necessary, ease in the sleeve head at the top, between the notches.
-- Sew, finish and press the seam.
-- Repeat for other sleeve.
-
-### Step 5: Close side and sleeve seam
-
-- With _good sides together_ pin the front to the back along the sleeve and side seams, making sure to line up the armhole seams.
-- Sew, finish and press the seam.
-
-### Step 6: Hem
-
-- Finish the sleeves and bottom hems in a way that works with your fabric choice.
+- Finissez le bord brut de l'encolure avant d'une manière adaptée à votre tissu (s'il ne s'effiloche pas, vous pouvez le laisser inachevé).
+- Avec _l'endroit contre endroit_, placez le devant sur le dos en alignant les coutures des épaules.
+- Placer la couture de l'encolure avant sur le mauvais côté du dos.
 
 <Note>
 
-Again, this can mean folding the hem under twice and _topstitching_, finishing the raw edge with a serger
-or zig zag stitch and folding it under once or leaving the edge raw, folding it under once and
-trimming close to the stitching.
+Si vous avez un tissu léger, vous pouvez encore replier ce bord vers le haut, de manière à former un double ourlet étroit par la suite (il peut être utile de repasser ces plis au préalable).
 
 </Note>
 
-### Step 7: Enjoy!
+- Séparez la couture de l'épaule en enfermant le bord brut de l'encolure arrière dans le pli.
+- Tourner à droite et presser.
 
-Vous avez terminé ! Now go enjoy your new top!
+### Étape 3 : Finition de l'encolure avant
+
+- Appuyez sur l'ourlet formé dans votre tissu par les plis que vous avez faits à la couture de l'épaule lorsque vous avez fermé l'épaule et le dessus à proximité du bord.
+
+### Étape 4 : Fixer les manches
+
+La manche sera insérée à plat, ce qui signifie que la couture de l'emmanchure sera cousue en premier et que la manche et la couture latérale seront fermées en une seule fois.
+
+- _ Endroit contre endroit _ épingler la tête de manche le long de l'emmanchure, en faisant coïncider les encoches.
+- Si nécessaire, adoucissez la tête de manche en haut, entre les entailles.
+- Courir, finir et presser la couture.
+- Répéter l'opération pour l'autre manche.
+
+### Étape 5 : Fermer la couture du côté et de la manche
+
+- _ Endroit contre endroit_ Epinglez le devant au dos le long des manches et des coutures latérales, en veillant à aligner les coutures de l'emmanchure.
+- Courir, finir et presser la couture.
+
+### Étape 6 : Ourlet
+
+- Finissez les manches et les ourlets du bas d'une manière qui fonctionne avec votre choix de tissu.
+
+<Note>
+
+Là encore, il peut s'agir de replier l'ourlet deux fois et de faire une surpiqûre, en finissant le bord brut avec une surjeteuse
+ou un point zig zag et le replier une fois ou laisser le bord brut, le replier une fois et couper près de la couture.
+
+</Note>
+
+### Étape 7: Profitez-en!
+
+Vous avez terminé ! Maintenant, profitez de votre nouveau haut !
