@@ -26,7 +26,7 @@ export const ns = ['print']
 export const PrintSettings = ({ update, settings, ui, account }) => {
   const config = loadPrintConfig(settings.units)
   const passProps = { units: settings.units }
-  const updateFunc = (name, newVal) => update.ui([...printSettingsPath, name], newVal)
+  const updateFunc = (path, newVal) => update.ui([...printSettingsPath, ...path], newVal)
 
   return (
     <WorkbenchMenu

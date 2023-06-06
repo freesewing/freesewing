@@ -15,8 +15,9 @@ import { ModalSpinner } from 'shared/components/modal/spinner.mjs'
 import { DraftView, ns as draftNs } from 'shared/components/workbench/views/draft/index.mjs'
 import { SaveView, ns as saveNs } from 'shared/components/workbench/views/save/index.mjs'
 import { PrintView, ns as printNs } from 'shared/components/workbench/views/print/index.mjs'
+import { CutView, ns as cutNs } from 'shared/components/workbench/views/cut/index.mjs'
 
-export const ns = ['account', 'workbench', ...draftNs, ...saveNs, ...printNs]
+export const ns = ['account', 'workbench', ...draftNs, ...saveNs, ...printNs, ...cutNs]
 
 const defaultUi = {
   renderer: 'react',
@@ -25,6 +26,7 @@ const defaultUi = {
 const views = {
   draft: DraftView,
   print: PrintView,
+  cut: CutView,
 }
 
 const draftViews = ['draft', 'test']

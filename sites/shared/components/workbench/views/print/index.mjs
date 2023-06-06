@@ -1,4 +1,4 @@
-import { useEffect, useState, useContext } from 'react'
+import { useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 import { pagesPlugin } from 'shared/plugins/plugin-layout-part.mjs'
 import {
@@ -9,18 +9,36 @@ import get from 'lodash.get'
 import { MovablePattern } from 'shared/components/workbench/pattern/movable/index.mjs'
 import { PrintMenu, ns as menuNs } from './menu.mjs'
 import { defaultPrintSettings, printSettingsPath } from './config.mjs'
-import { PrintIcon, RightIcon, ClearIcon, ExportIcon } from 'shared/components/icons.mjs'
+import { PrintIcon, RightIcon } from 'shared/components/icons.mjs'
 import { LoadingContext } from 'shared/context/loading-context.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
 
 const viewNs = ['print', ...exportNs]
 export const ns = [...viewNs, ...menuNs]
 
+const PageCounter = ({ pattern }) => {
+  const pages = pattern.setStores[0].get('pages', {})
+  const { cols, rows, count } = pages
+
+  return (
+    <div className="flex flex-row font-bold items-center text-2xl justify-center ">
+      <PrintIcon />
+      <span className="ml-2">{count}</span>
+      <span className="mx-6 opacity-50">|</span>
+      <RightIcon />
+      <span className="ml-2">{cols}</span>
+      <span className="mx-6 opacity-50">|</span>
+      <div className="rotate-90">
+        <RightIcon />
+      </div>
+      <span className="ml-2">{rows}</span>
+    </div>
+  )
+}
 export const PrintView = ({
   design,
   pattern,
   patternConfig,
-  setView,
   settings,
   ui,
   update,
@@ -50,7 +68,6 @@ export const PrintView = ({
   } catch (err) {
     console.log(err)
   }
-  const bgProps = { fill: 'none' }
 
   const exportIt = () => {
     handleExport({
@@ -67,29 +84,15 @@ export const PrintView = ({
     })
   }
 
-  let name = design
-  const pages = pattern.setStores[0].get('pages', {})
-  const { cols, rows, count } = pages
   return (
     <div>
       <div className="flex flex-row">
         <div className="w-2/3 shrink-0 grow lg:p-4 sticky top-0">
-          <div className="flex justify-between">
+          <div className="flex justify-between items-baseline">
             <h2 className="capitalize">
-              {t('layoutThing', { thing: name }) + ' ' + t('forPrinting')}
+              {t('layoutThing', { thing: design }) + ' ' + t('forPrinting')}
             </h2>
-            <div className="flex flex-row font-bold items-center text-2xl justify-center ">
-              <PrintIcon />
-              <span className="ml-2">{count}</span>
-              <span className="mx-6 opacity-50">|</span>
-              <RightIcon />
-              <span className="ml-2">{cols}</span>
-              <span className="mx-6 opacity-50">|</span>
-              <div className="rotate-90">
-                <RightIcon />
-              </div>
-              <span className="ml-2">{rows}</span>
-            </div>
+            <PageCounter pattern={pattern} />
           </div>
           <MovablePattern
             {...{

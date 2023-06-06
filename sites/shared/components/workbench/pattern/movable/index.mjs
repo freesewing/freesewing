@@ -1,20 +1,11 @@
 import { useRef } from 'react'
-import { Stack } from './stack.mjs'
-// import { SvgWrapper } from '../../pattern/svg.mjs'
-// import { PartInner } from '../../pattern/part.mjs'
 import { PanZoomPattern } from 'shared/components/workbench/pan-zoom-pattern.mjs'
 import { MovableStack } from './stack.mjs'
-import get from 'lodash.get'
 
 export const MovablePattern = ({
-  design,
-  pattern,
   renderProps,
-  patternConfig,
-  settings,
   showButtons = true,
   update,
-  bgProps = {},
   fitImmovable = false,
   immovable = [],
   layoutPath,
@@ -68,10 +59,6 @@ export const MovablePattern = ({
     }
   }
 
-  const viewBox = layout.topLeft
-    ? `${layout.topLeft.x} ${layout.topLeft.y} ${layout.width} ${layout.height}`
-    : false
-
   const sortedStacks = {}
   Object.keys(renderProps.stacks)
     .sort((a, b) => {
@@ -90,13 +77,13 @@ export const MovablePattern = ({
       {...{
         stackName,
         stack,
-        settings,
         components,
         t,
         movable: !immovable.includes(stackName),
         layout: layout.stacks[stackName],
         updateLayout,
         showButtons,
+        settings,
       }}
     />
   )

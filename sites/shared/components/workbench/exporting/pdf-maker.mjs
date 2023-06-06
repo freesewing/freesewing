@@ -170,8 +170,8 @@ export class PdfMaker {
   }
 
   /** generate the title for a cutting layout page */
-  async generateCutLayoutTitle(fabricTitle, fabricDimensions) {
-    this.addText(this.strings.cuttingLayout, 12, 2).addText(fabricTitle, 28)
+  async generateCutLayoutTitle(materialTitle, materialDimensions) {
+    this.addText(this.strings.cuttingLayout, 12, 2).addText(materialTitle, 28)
 
     this.pdf.lineWidth(1)
     this.pdf
@@ -180,16 +180,16 @@ export class PdfMaker {
       .stroke()
 
     this.lineLevel += 5
-    this.addText(fabricDimensions, 16)
+    this.addText(materialDimensions, 16)
   }
 
   /** generate all cutting layout pages */
   async generateCutLayoutPages() {
     if (!this.pageSettings.cutlist || !this.cutLayouts) return
 
-    for (const fabric in this.cutLayouts) {
+    for (const material in this.cutLayouts) {
       this.nextPage()
-      const { title, dimensions, svg } = this.cutLayouts[fabric]
+      const { title, dimensions, svg } = this.cutLayouts[material]
       await this.generateCutLayoutTitle(title, dimensions)
       await this.generateSvgPage(svg)
     }

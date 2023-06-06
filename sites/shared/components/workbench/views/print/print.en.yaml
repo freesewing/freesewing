@@ -1,4 +1,3 @@
-showMovableButtons: Buttons
 printSettings: Print Settings
 printSettings.d: These settings control aspects of the page for PDF export and printing
 size.t: Paper Size
@@ -20,11 +19,11 @@ legal.d: 8.5 x 14 in
 tabloid.t: Tabloid
 tabloid.d: 11 x 17 in
 cutlist.t: Include Cutting Layouts
-cutlist.d: Should images of the suggested cutting layouts for each fabric be included in the exported PDF?
+cutlist.d: Should images of the suggested cutting layouts for each material be included in the exported PDF?
 cutlistNo.t: Do not include cutting layouts
 cutlistNo.d: Exported PDFs will not include any suggested cutting layouts
 cutlistYes.t: Include cutting layouts
-cutlistYes.d: Exported PDFs will include a page for each fabric used by the pattern listing how much of the fabric is needed and suggesting a layout for cutting out the appropriate pieces
+cutlistYes.d: Exported PDFs will include a page for each material used by the pattern listing how much of the material is needed and suggesting a layout for cutting out the appropriate pieces
 coverPage.t: Include Cover Page
 coverPage.d: Should the exported PDF include a cover page?
 coverPageYes.t: Include a cover page

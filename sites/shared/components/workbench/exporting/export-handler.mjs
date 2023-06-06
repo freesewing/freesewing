@@ -2,11 +2,11 @@ import Worker from 'web-worker'
 import fileSaver from 'file-saver'
 import { themePlugin } from '@freesewing/plugin-theme'
 import { pluginI18n } from '@freesewing/plugin-i18n'
-import { pagesPlugin, fabricPlugin } from 'shared/plugins/plugin-layout-part.mjs'
+import { pagesPlugin, materialPlugin } from 'shared/plugins/plugin-layout-part.mjs'
 import { pluginAnnotations } from '@freesewing/plugin-annotations'
-import { cutLayoutPlugin } from '../layout/cut/plugin-cut-layout.mjs'
-import { fabricSettingsOrDefault } from '../layout/cut/index.mjs'
-import { useFabricLength } from '../layout/cut/settings.mjs'
+import { cutLayoutPlugin } from 'shared/plugins/plugin-cut-layout.mjs'
+import { materialSettingsOrDefault } from 'shared/components/workbench/views/cut/hooks.mjs'
+import { useMaterialLength } from 'shared/components/workbench/views/cut/hooks.mjs'
 import { capitalize, formatMm } from 'shared/utils.mjs'
 import {
   defaultPrintSettings,
@@ -14,7 +14,7 @@ import {
 } from 'shared/components/workbench/views/print/config.mjs'
 import get from 'lodash.get'
 
-export const ns = ['plugin', 'common']
+export const ns = ['cut', 'plugin', 'common']
 export const exportTypes = {
   exportForPrinting: ['a4', 'a3', 'a2', 'a1', 'a0', 'letter', 'tabloid'],
   exportForEditing: ['svg', 'pdf'],
@@ -48,39 +48,39 @@ const themedPattern = (Design, settings, overwrite, format, t) => {
  * @param  {Object} settings    the settings
  * @param  {string} format  the export format this pattern will be prepared for
  * @param  {function} t       the i18n function
- * @return {Object}         a dictionary of svgs and related translation strings, keyed by fabric
+ * @return {Object}         a dictionary of svgs and related translation strings, keyed by material
  */
 const generateCutLayouts = (pattern, Design, settings, format, t, ui) => {
-  // get the fabrics from the already drafted base pattern
-  const fabrics = pattern.setStores[pattern.activeSet].cutlist.getCutFabrics(
+  // get the materials from the already drafted base pattern
+  const materials = pattern.setStores[pattern.activeSet].cutlist.getCutFabrics(
     pattern.settings[0]
-  ) || ['fabric']
-  if (!fabrics.length) return
+  ) || ['material']
+  if (!materials.length) return
 
   const isImperial = settings.units === 'imperial'
   const cutLayouts = {}
-  // each fabric
-  fabrics.forEach((f) => {
-    // get the settings and layout for that fabric
-    const fabricSettings = fabricSettingsOrDefault(settings.units, ui, f)
-    const fabricLayout = get(ui, ['layouts', 'cut', f], true)
+  // each material
+  materials.forEach((f) => {
+    // get the settings and layout for that material
+    const materialSettings = materialSettingsOrDefault(settings.units, ui, f)
+    const materialLayout = get(ui, ['layouts', 'cut', f], true)
 
     // make a new pattern
-    const fabricPattern = themedPattern(Design, settings, { layout: fabricLayout }, format, t)
-      // add cut layout plugin and fabric plugin
-      .use(cutLayoutPlugin(f, fabricSettings.grainDirection))
-      .use(fabricPlugin({ ...fabricSettings, printStyle: true, setPatternSize: 'width' }))
+    const materialPattern = themedPattern(Design, settings, { layout: materialLayout }, format, t)
+      // add cut layout plugin and material plugin
+      .use(cutLayoutPlugin(f, materialSettings.grainDirection))
+      .use(materialPlugin({ ...materialSettings, printStyle: true, setPatternSize: 'width' }))
 
     // draft and render
-    fabricPattern.draft()
-    const svg = fabricPattern.render()
+    materialPattern.draft()
+    const svg = materialPattern.render()
     // include translations
     cutLayouts[f] = {
       svg,
-      title: t('plugin:' + f),
-      dimensions: t('plugin:fabricSize', {
-        width: formatMm(fabricSettings.sheetWidth, settings.units, 'notags'),
-        length: useFabricLength(isImperial, fabricPattern.height, 'notags'),
+      title: t('cut:' + f),
+      dimensions: t('cut:materialSize', {
+        width: formatMm(materialSettings.sheetWidth, settings.units, 'notags'),
+        length: useMaterialLength(isImperial, materialPattern.height, 'notags'),
         interpolation: { escapeValue: false },
       }),
     }
@@ -160,7 +160,6 @@ export const handleExport = async ({
     }
 
     try {
-      throw new Error('bad bad bad')
       // add pages to pdf exports
       if (format !== 'svg') {
         pattern.use(
@@ -177,7 +176,7 @@ export const handleExport = async ({
           design: capitalize(design),
           tagline: t('common:sloganCome') + '. ' + t('common:sloganStay'),
           url: window.location.href,
-          cuttingLayout: t('plugin:cuttingLayout'),
+          cuttingLayout: t('cut:cuttingLayout'),
         }
       }
 

@@ -85,9 +85,7 @@ export const ListToggle = ({ config, changed, updateFunc, name }) => {
   return (
     <input
       type="checkbox"
-      className={`toggle toggle-sm ${
-        checked && !boolConfig.dflt ? 'toggle-accent' : 'toggle-secondary'
-      }`}
+      className={`toggle toggle-sm ${changed ? 'toggle-accent' : 'toggle-secondary'}`}
       checked={checked}
       onChange={doToggle}
     />
@@ -276,4 +274,25 @@ export const MmInput = (props) => {
 }
 
 /** A placeholder for an input to handle constant values */
-export const ConstantInput = () => <p>FIXME: Constant options are not implemented (yet)</p>
+export const ConstantInput = ({
+  type = 'number',
+  name,
+  current,
+  updateFunc,
+  t,
+  changed,
+  config,
+}) => (
+  <>
+    <p>{t(`${name}.d`)}</p>
+    <input
+      type={type}
+      className={`
+      input input-bordered w-full text-base-content
+      input-${changed ? 'secondary' : 'accent'}
+    `}
+      value={changed ? current : config.dflt}
+      onChange={(evt) => updateFunc([name], evt.target.value)}
+    />
+  </>
+)

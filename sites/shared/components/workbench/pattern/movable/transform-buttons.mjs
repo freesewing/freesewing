@@ -1,6 +1,5 @@
 import { useTranslation } from 'next-i18next'
 import { ClearIcon } from 'shared/components/icons.mjs'
-import get from 'lodash.get'
 
 const Triangle = ({ transform = 'translate(0,0)', fill = 'currentColor' }) => (
   <path
@@ -54,20 +53,19 @@ const Button = ({ onClickCb, transform, Icon, children }) => {
   )
 }
 
-export const ShowButtonsToggle = ({ gist, layoutSetType, updateGist }) => {
+export const ShowButtonsToggle = ({ ui, update }) => {
   const { t } = useTranslation('workbench')
-  const path = ['_state', 'layout', layoutSetType, 'showButtons']
-  const showButtons = get(gist, path, true)
-  const setShowButtons = () => updateGist(path, !showButtons)
-
+  const hideButtons = (evt) => {
+    update.ui('hideMovableButtons', !evt.target.checked)
+  }
   return (
-    <label htmlFor="showButtons" className="label">
-      <span className="mr-2">{t('showButtons')}</span>
+    <label className="label cursor-pointer">
+      <span className="label-text text-lg mr-2">{t('showMovableButtons')}</span>
       <input
         type="checkbox"
         className="toggle toggle-primary"
-        checked={showButtons}
-        onChange={setShowButtons}
+        checked={!ui.hideMovableButtons}
+        onChange={hideButtons}
       />
     </label>
   )

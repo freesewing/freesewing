@@ -13,7 +13,6 @@ export const ns = [...coreMenuNs, ...designMenuNs, ...printMenuNs]
 
 export const PrintMenu = ({
   design,
-  pattern,
   patternConfig,
   settings,
   ui,

@@ -13,7 +13,7 @@ export const PartInner = forwardRef(
             path={part.paths[pathName]}
             topLeft={part.topLeft}
             bottomRight={part.bottomRight}
-            units={settings.units}
+            units={settings[0].units}
             {...{ stackName, partName, pathName, part, settings, components, t }}
           />
         ))}

@@ -53,10 +53,10 @@ export const pagesPlugin = ({ size = 'a4', ...settings }) => {
   return basePlugin({ ...settings, sheetWidth, sheetHeight })
 }
 
-export const fabricPlugin = (settings) => {
+export const materialPlugin = (settings) => {
   return basePlugin({
     ...settings,
-    partName: 'fabric',
+    partName: 'material',
     responsiveColumns: false,
   })
 }
