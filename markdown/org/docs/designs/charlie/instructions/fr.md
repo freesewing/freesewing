@@ -140,7 +140,7 @@ Assurez-vous que tout est bien aligné. Coudre ensuite du haut de la taille jusq
 
 Déplacez maintenant à l'encoche inférieure de la tige de poche, et cousez à partir de là jusqu'au bas des jambes.
 
-![Couture extérieure cousue à partir de l'encoche de la poche inférieure vers le bas](step05b.svg)
+![Couture extérieure cousue à partir de l'encoche de poche inférieure vers le bas](step05b.svg)
 
 ### Repassez sur la couture extérieure ouverte
 
@@ -156,7 +156,7 @@ Sortez le fond de poche pour qu'il se prolonge à l'extérieur de la jambe de pa
 
 Assurez-vous de finir le point où la couture des jambes se termine.
 
-![Sac à pochettes, fermé par couture](step06a.svg)
+![Sac à poche, fermé par couture](step06a.svg)
 
 ### Terminer les bords des poches
 
