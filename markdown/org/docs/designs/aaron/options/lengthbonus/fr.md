@@ -1,6 +1,6 @@
----
+- - -
 title: "Bonus de longueur"
----
+- - -
 
 ![L'option de bonus de longueur sur Aaron](./lengthbonus.svg)
 
