@@ -1,6 +1,6 @@
----
+- - -
 title: "Hauteur"
----
+- - -
 
 ![L'option hauteur pour Bruce](./rise.svg)
 
