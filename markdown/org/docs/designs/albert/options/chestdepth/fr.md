@@ -1,6 +1,6 @@
----
+- - -
 titre : "Longueur de la sangle"
----
+- - -
 
 Contrôle la longueur des sangles sur votre tablier.
 
