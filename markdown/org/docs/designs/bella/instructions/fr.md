@@ -28,9 +28,8 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 
 <Note>
 
-Bella has a back dart only when it is needed, based on the measurements
-and design options.
-If the back dart is not needed then it will be omitted from the pattern.
+Bella a une pince à l'arrière seulement quand c'est nécessaire, basé sur les mesures et les options de style.
+Si la pince arrière n'est pas nécessaire alors elle ne sera pas incluse dans le patron.
 
 </Note>
 
@@ -52,7 +51,7 @@ Il est parfois nécessaire de porter la maquette pendant un certain temps pour a
 
 <Note>
 
-N'oubliez pas de considérer Bella comme une base plutôt que comme un produit final, et ajustez donc ce dont vous avez besoin pour obtenir l'aspect désiré.  
+N'oubliez pas de considérer Bella comme une base plutôt que comme un produit final, donc ajustez ce dont vous avez besoin pour obtenir l'aspect désiré.  
 Par exemple :
 
 - Modifier la ligne d'encolure
