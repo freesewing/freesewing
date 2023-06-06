@@ -1,10 +1,10 @@
----
-title: "Sleevecap ease"
----
+- - -
+titre : "Aisance de la tête de manche"
+- - -
 
-![Sleevecap ease](./sleevecapease.svg)
+![Aisance tête de manche](./sleevecapease.svg)
 
-How much sleevecap ease do you want?
+Combien d'aisance aux têtes de manches voulez-vous ?
 
 > #### ###### Pour quoi faire ?
 > 
