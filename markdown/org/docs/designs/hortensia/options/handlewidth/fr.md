@@ -1,8 +1,8 @@
----
+- - -
 title: "Handle width"
----
+- - -
 
-Controls the width of the handle.
+Contrôle la largeur de l'anse.
 
 <Tip>
 
