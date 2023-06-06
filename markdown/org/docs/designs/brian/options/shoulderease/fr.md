@@ -1,8 +1,8 @@
----
+- - -
 titre : "Aisance d'épaule"
----
+- - -
 
-![Shoulder ease](./shoulderease.svg)
+![Aisance des épaules](./shoulderease.svg)
 
 Contrôle l'ampleur de l'aisance sur la mesure d'épaule à épaule.
 
