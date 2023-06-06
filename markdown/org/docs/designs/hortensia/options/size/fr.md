@@ -1,8 +1,8 @@
----
+- - -
 title: "Size"
----
+- - -
 
-Controls the overall size of the handbag.
+Contrôle la taille globale du sac à main.
 
 Rather than using measurements, Hortensia's size is determined by scaling fixed values.
 
