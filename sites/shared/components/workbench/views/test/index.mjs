@@ -3,7 +3,7 @@ import { PanZoomPattern } from 'shared/components/workbench/pan-zoom-pattern.mjs
 import { TestMenu, ns as menuNs } from './menu.mjs'
 import { objUpdate } from 'shared/utils.mjs'
 
-export const ns = []
+export const ns = menuNs
 
 export const TestView = ({
   design,

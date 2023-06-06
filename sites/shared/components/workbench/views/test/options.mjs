@@ -7,38 +7,39 @@ import {
 import { OptionsIcon } from 'shared/components/icons.mjs'
 import { optionsMenuStructure, optionType } from 'shared/utils.mjs'
 
-const TestOptionInput = ({ config, changed, name, t, updateFunc }) => {
+export const ns = ['test-view', ...designMenuNs]
+
+const SampleInput = ({ changed, name, t, updateFunc, type }) => {
   return (
     <>
-      <p>{t(`${name}.d`)}</p>
+      <p>{t([`${name}.d`, ''])}</p>
       <div className="text-center">
         <button
           className={`btn btn-primary`}
           disabled={changed}
           onClick={() => updateFunc([name], true)}
         >
-          {' '}
-          {t('testThisOption')}
+          {t(`testThis.${type}`)}
         </button>
       </div>
     </>
   )
 }
-const TestOption = ({ name, passProps, ...rest }) => {
+
+export const SampleItem = ({ name, passProps, ...rest }) => {
   return (
     <MenuItem
       {...{
         ...rest,
         name,
         passProps,
-        changed: passProps.settings.sample?.option === name,
-        Input: TestOptionInput,
+        changed: passProps.settings.sample?.[passProps.type] === name,
+        Input: SampleInput,
       }}
     />
   )
 }
 
-export const ns = [...designMenuNs]
 export const TestOptions = ({
   design,
   patternConfig,
@@ -52,7 +53,7 @@ export const TestOptions = ({
   const menuNs = [`o_${design}`, ...ns]
   const optionsMenu = optionsMenuStructure(patternConfig.options)
   const getDocsPath = (option) =>
-    `patterns/${design}/options${option ? '/' + option.toLowerCase() : ''}`
+    `designs/${design}/options${option ? '/' + option.toLowerCase() : ''}`
   return (
     <WorkbenchMenu
       {...{
@@ -62,12 +63,12 @@ export const TestOptions = ({
         emojis,
         getDocsPath,
         Icon: OptionsIcon,
-        Item: TestOption,
+        Item: SampleItem,
         isFirst,
-        name: 'design-options:designOptions',
+        name: 'designOptions',
         language,
         ns: menuNs,
-        passProps: { settings },
+        passProps: { settings, type: 'option' },
         updateFunc: (path, value) => {
           if (value) update.settings(['sample'], { type: 'option', option: path[0] })
           else update.settings(['sample'])

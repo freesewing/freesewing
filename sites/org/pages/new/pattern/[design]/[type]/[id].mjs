@@ -14,7 +14,7 @@ import { Null } from 'shared/components/null.mjs'
 import { DynamicOrgDocs as DynamicDocs } from 'site/components/dynamic-org-docs.mjs'
 
 // Translation namespaces used on this page
-const namespaces = [...new Set(['aaron', ...wbNs, ...pageNs])]
+const namespaces = [...new Set([...wbNs, ...pageNs])]
 
 const loadMeasurements = async ({ type, id, backend }) => {
   if (!type) return false
@@ -61,7 +61,7 @@ export default NewAaronFromSetPage
 export async function getStaticProps({ locale, params }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, namespaces)),
+      ...(await serverSideTranslations(locale, [`o_${params.design}`, ...namespaces])),
       id: Number(params.id),
       design: params.design,
       type: params.type,

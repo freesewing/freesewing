@@ -1,0 +1,4 @@
+testThis.option: Test this option
+testThis.measurement: Test this measurement
+measurements.d: Test the effect of a measurement on the way this pattern looks
+designOptions.d: Test the effect of an option on the way this pattern looks
