@@ -1,14 +1,14 @@
----
+- - -
 titre : "Garantie de largeur de manche"
----
+- - -
 
-We first draft the arm opening, then we draft a sleeve to fit it.
+On commence par une ébauche de l'emmanchure, puis d'une manche qui s'y ajuste.
 
-When all goes well, the sleeve fits perfectly, and this option is not relevant. However, if/when the sleeve does not perfectly fit the arm opening, we need to adapt it.
+Quand tout va bien, la manche s'ajuste parfaitement, et cette option n'est pas nécessaire. Cependant, si la manche ne s'ajuste pas parfaitement à l'emmanchure, il faut l'adapter.
 
 Since the shape and height of the sleevecap are more important than the width, we tend to prefer adjusting the width to fit the sleevecap.
 
-To avoid the sleeve getting too narrow, we only adapt a portion of the sleeve width. This option allows you to control how much of the sleeve width is guaranteed. Increasing this option will allow us less of the width to play with to fit the sleeve. This way, the resulting sleeve will be closer to the theoretical sleeve width, and we will instead modify (more of) the sleevecap height to fit the sleeve.
+Mais pour éviter que la manche ne devienne trop étroite, on n'adapte la largeur de la manche que dans une certaine limite. Cette option vous permet de contrôler la largeur de la manche qu'on ne touchera pas. Plus cette valeur augmente, moins la largeur de manche modifiable est importante. This way, the resulting sleeve will be closer to the theoretical sleeve width, and we will instead modify (more of) the sleevecap height to fit the sleeve.
 
 ## Effet de cette option sur le motif
 
