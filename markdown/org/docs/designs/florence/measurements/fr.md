@@ -1,5 +1,5 @@
----
-title: "Florence face mask: Required Measurements"
----
+- - -
+titre : "Masque Florence : Mesures nécessaires"
+- - -
 
 <PatternMeasurements pattern='florence' />
