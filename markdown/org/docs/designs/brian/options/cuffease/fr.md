@@ -1,10 +1,10 @@
----
+- - -
 titre: "aisance de manche"
----
+- - -
 
-![The cuff ease factor on Brian](./cuffease.svg)
+![L'aisance aux poignets pour Brian](./cuffease.svg)
 
-This option controls the ease at your wrist.
+Cette option contrôle l'aisance au niveau des poignets.
 
 ## Effet de cette option sur le motif
 
