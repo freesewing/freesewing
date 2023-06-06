@@ -1,23 +1,23 @@
----
-title: "Cornelius cycling breeches: Cutting Instructions"
----
+- - -
+titre : "Culotte de cycliste Cornélius : Instructions de coupe"
+- - -
 
 ### Matériaux
 
 - **Tissu principal**
-  - Cut **2 back** parts
-  - Cut **2 front** parts
-  - Cut **2 pocket facing** parts
-  - Cut **2 waistband** parts on the fold
-  - Cut **4 leg band** parts
-  - Cut **1 zipper guard** part on the fold
-- **Lining (Pocket) fabric**
-  - Cut **2 pocket** parts
+  - Couper **2 parties arrière**
+  - Couper **2 parties frontales**
+  - Couper **2 pièces ** de poches de parement
+  - Couper **2 parties de la ceinture** sur le pli
+  - Couper **4 parties **de la bande de jambe
+  - Couper **1 protection de fermeture éclair** sur le pli
+- **Tissu de doublure (poche)**
+  - cut two pocket pieces
 - **Entoilage**
-  - Cut **1 waistband** part on the fold
+  - Couper **1 partie ** de la ceinture sur le pli
 
 <Note>
 
-If your main fabric is quite lightweight and flimsy you may need to interface the leg bands with a light interfacing.
+Si votre tissu principal est assez léger et fragile, vous devrez peut-être interfacer les bandes de jambe avec un entoilage léger.
 
 </Note>
