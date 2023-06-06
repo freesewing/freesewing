@@ -16,8 +16,9 @@ import { DraftView, ns as draftNs } from 'shared/components/workbench/views/draf
 import { SaveView, ns as saveNs } from 'shared/components/workbench/views/save/index.mjs'
 import { PrintView, ns as printNs } from 'shared/components/workbench/views/print/index.mjs'
 import { CutView, ns as cutNs } from 'shared/components/workbench/views/cut/index.mjs'
+import { EditView, ns as editNs } from './views/edit/index.mjs'
 
-export const ns = ['account', 'workbench', ...draftNs, ...saveNs, ...printNs, ...cutNs]
+export const ns = ['account', 'workbench', ...draftNs, ...saveNs, ...printNs, ...cutNs, ...editNs]
 
 const defaultUi = {
   renderer: 'react',
@@ -27,6 +28,7 @@ const views = {
   draft: DraftView,
   print: PrintView,
   cut: CutView,
+  edit: EditView,
 }
 
 const draftViews = ['draft', 'test']
@@ -85,6 +87,9 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) =
     // Save view
     case 'save':
       viewContent = <SaveView {...viewProps} from={from} />
+      break
+    case 'edit':
+      viewContent = <EditView {...viewProps} setSettings={setSettings} />
       break
     default: {
       const layout = ui.layouts?.[view] || settings.layout || true
