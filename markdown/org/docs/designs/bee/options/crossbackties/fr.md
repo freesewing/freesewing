@@ -1,12 +1,12 @@
 ---
-titre: "Lacets croisés"
+title: "Bandes croisées dans le dos"
 ---
 
 ***
 
 Une variante de Bee, où les lacets du cou et les bandes se croisent et se nouent dans le dos en formant une boucle qui remplace le bandeau
 
-#### Par défaut
+#### Défaut
 
 - 2 attaches du cou
 - 1 bande
@@ -22,6 +22,6 @@ Le lien de la bande est enfilé dans les bonnets et se noue dans le dos
 La bande et l'enveloppe des bonnets sont remplacés par une bande cousue avec des boucles dans le dos.  
 Les attaches de cou sont plus longues et se croisent dans le dos, puis passent dans les boucles de la bande et se nouent l'une à l'autre.
 
-## Effet de cette option sur le motif
+## Effet de cette option sur le modèle
 
 ![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bee_crossbackties_sample.svg "Effet de cette option sur le modèle")
