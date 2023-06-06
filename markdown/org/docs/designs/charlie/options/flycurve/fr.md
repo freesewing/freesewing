@@ -1,5 +1,5 @@
 - - -
-title: "Fly curve"
+titre: "Courbe de la mouche"
 - - -
 
 Ceci contrôle la courbure de la couture J-moule.
