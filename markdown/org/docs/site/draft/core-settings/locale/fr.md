@@ -2,9 +2,9 @@
 title: Langue
 ---
 
-This controls the language that will be used to translate text on your pattern.
+Ceci contrôle la langue qui sera utilisée pour traduire du texte sur votre patron.
 
-FreeSewing currently supports the following languages:
+FreeSewing prend actuellement en charge les langues suivantes :
 
 - Anglais
 - Espagnol
@@ -12,5 +12,5 @@ FreeSewing currently supports the following languages:
 - Allemand
 - Néerlandais
 
-You can picks any of these and your pattern will be translated in this language.
+Vous pouvez choisir l'une de ces langues et votre modèle sera traduit dans cette langue.
 
