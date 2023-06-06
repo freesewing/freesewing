@@ -1,6 +1,6 @@
----
+- - -
 titre : "Aisance aux biceps"
----
+- - -
 
 ![L'option de facilité biceps sur Diana](./bicepsease.svg)
 
