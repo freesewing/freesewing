@@ -1,9 +1,9 @@
----
-title: "Cathrin corset: Fabric Options"
----
+- - -
+titre : "Corset Cathrin : Options de tissu"
+- - -
 
-Corsets must be made from fabric with no stretch at all. The fabric designed for corset making is called coutil. Although coutil is expensive, not much is needed for a corset. Some cheaper alternatives include canvas, denim and cotton ticking. However, these will stretch over time and are not suitable for any garment with a large waist reduction: they are not strong enough. They are good options for testing the pattern to see how it fits on you. For corsets made from silk and cotton and other fancy fabrics, you need to use several layers - the fabric you want to be seen, on top of a layer of coutil or other strength layer, and perhaps also a third layer made out of lining which will sit next to the body.
+Les corsets doivent être fabriqués à partir de tissu sans étirement. Le tissu conçu pour la fabrication du corset est appelé coutil. Le coutil est cher, pas grand chose à faire pour un corset. Certaines alternatives moins chères incluent la toile, le denim et le coton. Cependant, elles s’étireront au fil du temps et ne sont pas adaptées à un vêtement avec une réduction de la taille: elles ne sont pas assez fortes. Ce sont de bonnes options pour tester le patron pour voir comment il s'adapte à vous. Pour les corsets faits de soie, de coton et d'autres tissus fantaisistes, vous devez utiliser plusieurs couches - le tissu que vous voulez voir, au dessus d'une couche de coutil ou d'une autre couche de force, et peut-être aussi une troisième couche faite de doublure qui s'assied à côté du corps.
 
-For the core fabric, you need a strong fabric, such as coutil, canvas, or denim.
+Pour le tissu de base, vous avez besoin d'un tissu solide, comme le coutil, la toile ou le denim.
 
-For the outer fabric, you can use most non-stretch fabrics, such as linen, cotton, or silk.
+Pour le tissu extérieur, vous pouvez utiliser la plupart des tissus non étirés, comme le lin, le coton ou la soie.
