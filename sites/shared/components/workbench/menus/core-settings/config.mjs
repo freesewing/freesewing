@@ -71,7 +71,7 @@ export const loadSettingsConfig = ({
   units: {
     control: 1, // Show when control > 2
     list: ['metric', 'imperial'],
-    dflt: units,
+    dflt: 'metric',
     choiceTitles: {
       metric: 'metric',
       imperial: 'imperial',

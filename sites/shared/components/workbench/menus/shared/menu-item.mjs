@@ -119,7 +119,7 @@ export const MenuItem = ({
         className={open ? openButtonClass : 'btn btn-accent'}
         onClick={(evt) => {
           evt.stopPropagation()
-          updateFunc(name)
+          updateFunc([name])
         }}
       >
         <ClearIcon />

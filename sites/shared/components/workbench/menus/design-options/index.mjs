@@ -91,7 +91,7 @@ export const DesignOptions = ({
         language,
         ns: menuNs,
         passProps: { settings },
-        updateFunc: (name, value) => update.settings(['options', name], value),
+        updateFunc: (name, value) => update.settings(['options', ...name], value),
       }}
     />
   )

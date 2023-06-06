@@ -9,6 +9,7 @@ export const sizes = {
   a1: [594, 841],
   a0: [841, 1188],
   letter: [215.9, 279.4],
+  legal: [215.9, 355.6],
   tabloid: [279.4, 431.8],
 }
 
@@ -52,10 +53,10 @@ export const pagesPlugin = ({ size = 'a4', ...settings }) => {
   return basePlugin({ ...settings, sheetWidth, sheetHeight })
 }
 
-export const fabricPlugin = (settings) => {
+export const materialPlugin = (settings) => {
   return basePlugin({
     ...settings,
-    partName: 'fabric',
+    partName: 'material',
     responsiveColumns: false,
   })
 }
@@ -206,7 +207,9 @@ const basePlugin = ({
       const { points, Point, paths, Path, part, macro, store } = shorthand
       let count = 0
       let withContent = {}
-      part.topLeft = so.layout.topLeft || { x: 0, y: 0 }
+      part.topLeft = so.layout.topLeft
+        ? new Point(so.layout.topLeft.x, so.layout.topLeft.y)
+        : new Point(0, 0)
 
       // get the layout from the pattern
       const { layout } = so
@@ -265,7 +268,7 @@ const basePlugin = ({
             const br = points[`${pageName}-br`]
             part.width = br.x
             part.height = br.y
-            part.bottomRight = { x: br.x, y: br.y }
+            part.bottomRight = new Point(br.x, br.y)
           }
 
           if (!printStyle) {

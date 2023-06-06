@@ -14,23 +14,23 @@ export const ExportDraft = ({ gist, design, app }) => {
     setLink(false)
     setError(false)
     setFormat(format)
-    handleExport(
-      format,
-      gist,
-      design,
-      t,
-      app,
-      (e) => {
-        if (e.data.link) {
-          setLink(e.data.link)
-        }
-      },
-      (e) => {
-        if (e.data?.error) {
-          setError(true)
-        }
-      }
-    )
+    // handleExport(
+    //   format,
+    //   gist,
+    //   design,
+    //   t,
+    //   app,
+    //   (e) => {
+    //     if (e.data.link) {
+    //       setLink(e.data.link)
+    //     }
+    //   },
+    //   (e) => {
+    //     if (e.data?.error) {
+    //       setError(true)
+    //     }
+    //   }
+    // )
   }
 
   return (
