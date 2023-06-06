@@ -120,7 +120,7 @@ Coudre de la taille vers le bas à droite jusqu'au cran qui indique où s'arrêt
 
 Repassez maintenant les bords de la poche avant, tant sur le panneau arrière que sur le panneau avant, de sorte que le pli soit net.
 
-![Poche frontale pressée en biais](step04d.svg)
+![Poche frontale repassée en diagonale](step04d.svg)
 
 ## Étape 5 : Fermer la couture extérieure
 
@@ -227,7 +227,7 @@ Il y a une marge de couture supplémentaire qui coule le long de la mouche. Nous
 
 ### Fixer la face de la mouche
 
-Coudre la mouche face à gauche. Placer les deux côtés l'un contre l'autre, en alignant le haut.
+Coudre la mouche face à gauche. Placer les deux côtés endroit contre endroit, en alignant le haut.
 
 ### Tuck in the tip of the fly facing
 
@@ -287,7 +287,7 @@ Pour plus d'efficacité, nous fabriquerons une longue bande de boucle de courroi
 
 </Note>
 
-Couper une bande de 80 cm de long et de 2,8 cm de large.
+Couper une bande de 80 cm de long (32 po) et de 2,8 cm de large (1 1/8 po).
 
 Serge (ou zigzag) le bord long de la bande des deux côtés.
 
@@ -369,7 +369,7 @@ Cela accrochera l'arrière de la ceinture que nous avons fait pour aller un peu 
 
 Il est préférable que les passants de ceinture soient un peu plus larges que la ceinture, afin d'accueillir des ceintures plus larges.
 
-Pour ce faire, laissez la ceinture à plat et cousez-la avec un point d'arrêt situé à environ 1,5 cm sous la ceinture.
+Pour ce faire, mettez la ceinture à plat et cousez-la avec un point d'arrêt situé à environ 1,5 cm (un demi pouce) sous la ceinture.
 
 ### Pliez vers le haut, vers le bas, et coudez vers le bas
 
