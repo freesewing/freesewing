@@ -1,6 +1,6 @@
----
-title: "Cathrin corset: Sewing Instructions"
----
+- - -
+titre : "Corset Cathrin : Instructions de couture"
+- - -
 
 <Note>
 
@@ -16,103 +16,103 @@ Cathrin a également [cet article informatif sur la création de corsets](https:
 
 ## Étape 1 : Coudre les canaux de fixation au centre de l'avant
 
-![Place outer Panel 1 on core Panel 1, bad sides together](step01.png)
+![Placez le panneau extérieur 1 sur le panneau de base 1, les mauvais côtés ensemble](step01.png)
 
-Start with the center front pieces. For an 11-panel Cathrin, this will be Panel 1. Place the outer Panel 1 on the core Panel 1, bad sides together.
+Commencez par les pièces avant centrales. Pour un Cathrin de 11 panneaux, ce sera le Panel 1. Placez le panneau extérieur 1 sur le panneau de base 1, les mauvais côtés ensemble.
 
-With a small stitch width (I set mine to “2”), sew a line straight down the center front. Then sew two boning channels to either side, allowing a bit of extra space, about 2mm, in addition to the width of your boning.
+Avec une petite largeur de point (je mets la mienne à « 2 »), coudre une ligne en bas du devant central. Coudre ensuite deux canaux de fixation de chaque côté, ce qui laisse un peu d'espace supplémentaire, environ 2 mm, en plus de la largeur de la bonde.
 
 ## Étape 2 : Attacher le premier panneau latéral
 
-![Attach Panel 2](step02.png)
+![Attacher le panneau 2](step02.png)
 
-Take the next piece. For an 11-panel Cathrin, this will be Panel 2.
+Prenez la pièce suivante. Pour un Cathrin à 11 panneaux, ce sera le panel 2.
 
-Place the outer Panel 2 on the outer Panel 1, _good sides together_.
+Placez le panneau extérieur 2 sur le panneau extérieur 1, _de bons côtés ensemble_.
 
-Place the core Panel 2 on the core Panel 1, _good sides together_.
+Placez le panneau de base 2 sur le panneau de base 1, _de bons côtés ensemble_.
 
-Ensure that the four layers of fabric line up perfectly. Double check that you haven’t mixed up pattern pieces or flipped any over by mistake.
+Assurez-vous que les quatre couches de tissu sont parfaitement alignées. Vérifiez à deux reprises que vous n’avez pas mélangé des pièces de motif ou bien que vous ne les avez pas retournés par erreur.
 
-Match up the four layers of fabric at the narrowest part, _good sides together_, and pin. Then match the top and bottom of each panel and pin. Finally, pin the rest of the edge in place. Use as many pins as needed to make sure the panels stay perfectly aligned.
+Faites correspondre les quatre couches de tissu à la partie la plus étroite, _de bons côtés ensemble_, et épinglez. Ensuite correspondez au haut et au bas de chaque panneau et à l'épingle. Enfin, épingler le reste du bord en place. Utilisez autant de broches que nécessaire pour vous assurer que les panneaux restent parfaitement alignés.
 
-Sew the seam.
+Coudre la couture.
 
 ## Étape 3 : Coudre le canal de fixation
 
-![Press flat and sew boning channel](step03.png)
+![Appuyer sur un canal plat et coudre](step03.png)
 
-Press both layers of Panel 2 away from the center, using the iron to ease the material where the seams curve.
+Appuyez sur les deux couches du Panneau 2 loin du centre, en utilisant le fer pour faciliter le matériau où les coutures sont courbes.
 
-Edgestitch right along the folded edge, just 1-2mm from the seam line. Sew slowly and keep an eye on the stitching to ensure that the distance is kept even at all times. The purpose of adding this topstitch line is to relieve some stress from the connecting seam.
+Edgestitch droit le long du bord plié, à seulement 1-2mm de la ligne de couture. Coudre lentement et garder un œil sur le piquage pour que la distance soit maintenue même en tout temps. Le but de cette ligne de toppitch est de soulager le stress de la couture de connexion.
 
-Topstitch another seam parallel to the first seam, allowing a bit of extra space, about 3mm, in addition to the width of your boning.
+Toppoint une autre couture parallèle à la première couture, permettant un peu d'espace supplémentaire, environ 3mm, en plus de la largeur de votre collage.
 
 ## Étape 4 : Attacher le panneau suivant
 
-![Attach Panel 3](step04.png)
+![Attacher le panneau 3](step04.png)
 
-Take the next piece. For an 11-panel Cathrin, this will be Panel 3.
+Prenez la pièce suivante. Pour un Cathrin de 11 panneaux, ce sera le Groupe d'étude 3.
 
-Place the outer Panel 3 on the outer Panel 2, _good sides together_.
+Placez le panneau extérieur 3 sur le panneau extérieur 2, _de bons côtés ensemble_.
 
-Place the core Panel 3 on the core Panel 2, _good sides together_.
+Placez le panneau de base 3 sur le panneau de base 2, _de bons côtés ensemble_.
 
-Match up the four layers of fabric at the narrowest part, _good sides together_, and pin. Then match the top and bottom of each panel and pin. Finally, pin the rest of the edge in place. Use as many pins as needed to make sure the panels stay perfectly aligned.
+Faites correspondre les quatre couches de tissu à la partie la plus étroite, _de bons côtés ensemble_, et épinglez. Ensuite correspondez au haut et au bas de chaque panneau et à l'épingle. Enfin, épingler le reste du bord en place. Utilisez autant de broches que nécessaire pour vous assurer que les panneaux restent parfaitement alignés.
 
-Sew the seam.
+Coudre la couture.
 
 ## Étape 5 : Coudre un autre canal de liaison
 
-![Press flat and sew boning channel](step05.png)
+![Appuyer sur un canal plat et coudre](step05.png)
 
-Press both layers of Panel 3 away from the center, using the iron to ease the material where the seams curve.
+Appuyez sur les deux couches du Panneau 3 loin du centre, en utilisant le fer pour faciliter le matériau où les coutures sont courbes.
 
-Edgestitch right along the folded edge, just 1-2mm from the seam line.
+Edgestitch droit le long du bord plié, à seulement 1-2mm de la ligne de couture.
 
-Topstitch another seam parallel to the first seam, allowing a bit of extra space, about 2mm, in addition to the width of your boning.
+Toppoint une autre couture parallèle à la première couture, permettant un peu d'espace supplémentaire, environ 2mm, en plus de la largeur de votre collage.
 
-This new boning channel should look just like the one you made attaching Panel 2 to Panel 1.
+Ce nouveau canal de fixation devrait ressembler à celui que vous avez créé pour attacher le panneau 2 au panneau 1.
 
 ## Étape 6 : Continuer à attacher les panneaux latéraux
 
-Continue attaching panels, creating a boning channel in each seam. Attach Panel 4 to Panel, Panel 5 to Panel 4, and finally Panel 6 to Panel 5.
+Continuez à attacher des panneaux, en créant un canal de fixation dans chaque couture. Attachez le panneau 4 au panneau, le panneau 5 au panneau 4, et enfin le panneau 6 au panneau 5.
 
-![All panels on one side](step06.png)
+![Tous les panneaux d'un côté](step06.png)
 
-Repeat these steps on the other side.
+Répétez ces étapes de l'autre côté.
 
-![All panels on both sides](step06b.png)
+![Tous les panneaux des deux côtés](step06b.png)
 
 ## Étape 7 : Terminer le retour du corset
 
-With all of your panels connected, you’re working with the flat sides of each Panel 6.
+Avec tous vos panneaux connectés, vous travaillez avec les côtés plats de chaque panneau 6.
 
-Fold the seam allowance of both pieces inward so that the seam allowance is hidden. Press flat, then top stitch close to the edge.
+Plier la marge de couture des deux pièces à l'intérieur de sorte que la marge de couture soit cachée. Presser à plat, puis au sommet près du bord.
 
-Topstitch another seam next to the edgestitched seam, allowing a bit of extra space, about 2mm, in addition to the width of your boning.
+Coudre une autre couture à côté de la couture arêtée, ce qui laisse un peu d'espace supplémentaire, environ 2 mm, en plus de la largeur de la couture.
 
-![First channel on the back](step07.png)
+![![First channel on the back](etape 7)](step07.png)
 
-Mark the locations of your grommets. (Don’t insert them yet. Just mark the fabric where you’ll place them, and make sure you’re creating a strip suited to the width of your grommets.)
+Marquez l'emplacement de vos grommets. (Ne les insérez pas encore. Marquez simplement le tissu où vous les placerez et assurez-vous de créer une bande adaptée à la largeur de vos grommets.)
 
-Top stitch on the opposite side of the grommet markings, then shift and topstitch another seam parallel to the topstitched seam, again leaving enough space for the boning.
+Couture supérieure sur le côté opposé des marquages grommet, puis débranchez et brodez une autre couture parallèle à la couture surpiquée, laissant encore assez d'espace pour le collage.
 
-![Grommet strip and second channel](step07b.png)
+![Bande de Grommet et deuxième canal](step07b.png)
 
-Repeat on the other side.
+Répéter de l'autre côté.
 
 ## Step 8: Insert boning
 
-Insert boning in all of the channels.
+Insérez la liaison dans tous les canaux.
 
 ## Étape 9 : Lier le haut et le bas
 
-Use bias tape or ribbon to bind the top and bottom edges of the corset.
+Utilisez du ruban ou du ruban pour lier les bords supérieurs et inférieurs du corset.
 
 ## Étape 10: Définir les grommets
 
-Set the grommets in the locations you marked earlier.
+Définissez les grommets dans les emplacements que vous avez indiqués précédemment.
 
 ## Étape 11: Dresser le corset
 
