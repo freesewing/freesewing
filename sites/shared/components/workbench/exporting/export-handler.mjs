@@ -54,7 +54,7 @@ const generateCutLayouts = (pattern, Design, settings, format, t, ui) => {
   // get the materials from the already drafted base pattern
   const materials = pattern.setStores[pattern.activeSet].cutlist.getCutFabrics(
     pattern.settings[0]
-  ) || ['material']
+  ) || ['fabric']
   if (!materials.length) return
 
   const isImperial = settings.units === 'imperial'
