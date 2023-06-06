@@ -1,5 +1,5 @@
----
----
+- - -
+- - -
 
 Our Twitter account is [@freesewing\_org](https://twitter.com/freesewing_org). Volg ons voor updates op nieuwe patroonreleases, maken van community en ander nieuws.
 
