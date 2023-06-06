@@ -1,8 +1,8 @@
----
+- - -
 titre : "Aisance aux biceps"
----
+- - -
 
-![The biceps ease factor on Brian](./bicepsease.svg)
+![L'aisance au biceps pour Brian](./bicepsease.svg)
 
 L'aisance au niveau de la partie supérieure du bras.
 
