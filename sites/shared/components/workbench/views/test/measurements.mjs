@@ -5,7 +5,6 @@ import { SampleItem } from './options.mjs'
 export const ns = ['measurements', 'test-view', 'workbench']
 
 export const TestMeasurements = ({
-  design,
   patternConfig,
   settings,
   update,

@@ -5,7 +5,7 @@ import {
   ns as designMenuNs,
 } from 'shared/components/workbench/menus/design-options/index.mjs'
 import { OptionsIcon } from 'shared/components/icons.mjs'
-import { optionsMenuStructure, optionType } from 'shared/utils.mjs'
+import { optionsMenuStructure } from 'shared/utils.mjs'
 
 export const ns = ['test-view', ...designMenuNs]
 
