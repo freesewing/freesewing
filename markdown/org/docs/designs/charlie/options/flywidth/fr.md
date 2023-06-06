@@ -1,8 +1,8 @@
----
-title: "Fly width"
----
+- - -
+titre: "Largeur de la mouche"
+- - -
 
-Controls how far the fly's J-seam is offset from the fly edge.
+Contrôle la distance de la couture J-de la mouche par rapport au bord de la mouche.
 
 ## Effet de cette option sur le motif
 
