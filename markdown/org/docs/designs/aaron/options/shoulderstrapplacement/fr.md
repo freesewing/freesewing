@@ -1,6 +1,6 @@
----
+- - -
 titre : "Placement des bretelles"
----
+- - -
 
 ![L'option de placement des bretelles d'épaule sur Aaron](./shoulderstrapplacement.svg)
 
