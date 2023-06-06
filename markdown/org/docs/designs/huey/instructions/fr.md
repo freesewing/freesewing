@@ -1,10 +1,10 @@
----
+- - -
 title: "Huey hoodie: Sewing Instructions"
----
+- - -
 
 <Note>
 
-This pattern can be sewn with or with out a overlocker/serger. If not using a overlocker or serger you will have to _Finish_ the seams.
+Ce patron peut être cousu avec ou avec une surjeteuse. If not using a overlocker or serger you will have to _Finish_ the seams.
 
 </Note>
 
@@ -82,7 +82,7 @@ A neckband can be useful to stablise and cover the neck seams but it is optional
 
 ### Step 7: Attaching the waistband
 
-- Fold the waistband in half lengthwise matching wrong sides. Press.
+- Fold the waistband in half lengthwise matching wrong sides. Repasser.
 - With _good sides_ together sew the waistband to the bottom of the back and front.
 - Press the seam allowance up.
 - _Topstitch_ or _Edgestitch_ waistband seam allowance to the body.
@@ -92,7 +92,7 @@ A neckband can be useful to stablise and cover the neck seams but it is optional
 - With _good sides together_ sew the short egdes of the cuffs together to create two bands.
 - Press open the seam allowances.
 - (Optional) _Edgestitch_ the seam allowances down.
-- Fold the cuffs in half lengthwise matching wrong sides. Press.
+- Fold the cuffs in half lengthwise matching wrong sides. Repasser.
 - Matching seams and raw edges, pin the cuffs to the sleeves _good sides together_.
 - Sew the cuffs to the sleeves.
 - Press the seam allowances up.
@@ -133,13 +133,13 @@ Use a safety pin to help thread the drawstring.
 
 </Tip>
 
-### Step 11: Enjoy!
+### Étape 11: Profitez-en!
 
-- That's it! Vous avez terminé ! Now go feel warm and comfy in your new hoodie!
+- Voilà! Vous avez terminé ! Now go feel warm and comfy in your new hoodie!
 
 <Note>
 
-This patterns was featured in [issue 27 of HackSpace magazine](https://hackspace.raspberrypi.org/issues/27),
-the article includes instructions too, so you may want to have a look at it.
+Ce patron a été mis en vedette dans le [numéro 27 du magazine HackSpace ](https://hackspace.raspberrypi.org/issues/27),
+l'article contient également des instructions, donc vous pouvez vouloir le consulter.
 
 </Note>
