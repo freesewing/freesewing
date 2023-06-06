@@ -77,7 +77,6 @@ dragAndDropImageHere: Drag and drop an image here, or select one manually with t
 emailAddress: E-mail address
 emailWorksToo: "If you don't know your username, you can also use your E-mail address to login"
 enterEmailPickPassword: Enter your E-mail address, and pick a password
-export: Export
 exportTiledPDF: Export tiled PDF
 faq: Frequently asked questions
 fieldRemoved: '{field} removed'
@@ -260,8 +259,6 @@ recreate: Recreate
 recreateThing: Recreate {thing}
 recreateThingForPerson: Recreate {thing} for {person}
 seeYouLaterUser: See you later {user}
-exportForPrinting: Export for printing
-exportForEditing: Export for editing
 startWithNeckTitle: Start with the neck circumference
 startWithNeckDescription: Based on your neck circumference, we can help you spot mistakes in your measurements.
 whatYouNeed: What you need
@@ -275,7 +272,6 @@ loadingMagic: We are loading the magic
 estimate: Estimate
 actual: Actual
 weEstimateYM2B: 'We estimate your {measurement} to be around:'
-exportAsData: Export as data
 availablePatterns: Available patterns
 browseCollection: Browse collection
 browseYourPatterns: Browse your patterns
@@ -307,9 +303,7 @@ cloneDescription: Recreate an exact copy, using the measurements of the original
 furtherReading: Further reading
 saveAsNewPattern: Save As New Pattern
 saveAsNewPattern-txt: Store (a copy of) this pattern in your FreeSewing account
-exportPattern: Export pattern
 printPattern: Print pattern
-exportPattern-txt: Export a PDF suitable for your printer, or download this pattern in a variety of formats
 editThing: 'Edit {thing}'
 editPattern-txt: Load this pattern in the pattern editor
 featureRequiresAccount: This feature requires a FreeSewing account

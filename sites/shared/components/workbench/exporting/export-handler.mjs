@@ -16,7 +16,7 @@ import get from 'lodash.get'
 
 export const ns = ['cut', 'plugin', 'common']
 export const exportTypes = {
-  exportForPrinting: ['a4', 'a3', 'a2', 'a1', 'a0', 'letter', 'tabloid'],
+  exportForPrinting: ['a4', 'a3', 'a2', 'a1', 'a0', 'letter', 'legal', 'tabloid'],
   exportForEditing: ['svg', 'pdf'],
   exportAsData: ['json', 'yaml', 'github gist'],
 }
@@ -191,13 +191,13 @@ export const handleExport = async ({
       if (format !== 'svg' && pageSettings.cutlist) {
         workerArgs.cutLayouts = generateCutLayouts(pattern, Design, settings, format, t, ui)
       }
-
-      // post a message to the worker with all needed data
-      worker.postMessage(workerArgs)
     } catch (err) {
       console.log(err)
       if (typeof stopLoading === 'function') stopLoading()
       onError && onError(err)
     }
   }
+
+  // post a message to the worker with all needed data
+  worker.postMessage(workerArgs)
 }
