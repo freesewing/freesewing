@@ -1,0 +1,39 @@
+---
+compliant: Freesewing.org respektiert deine Privatsphäre und deine Rechte. Wir wenden die Datenschutzgrundverordnung (DSGVO) der Europäischen Union (EU) an.
+consent: Einwilligungen
+consentForModelData: Einwilligung für Modelldaten
+consentForProfileData: Einwilligung für Profildaten
+consentGiven: Einwilligung erteilt
+consentNotGiven: Einwilligung nicht erteilt
+consentWhyAnswer: Die Verarbeitung deiner personenbezogenen Daten benötigt im Rahmen der DSGVO deine Einwilligung, also deine Erlaubnis.
+createMyAccount: Meinen Account erstellen
+furtherReading: Weiterführende Informationen
+modelQuestion: Gibst du deine Einwilligung zur Verarbeitung deiner Modelldaten?
+modelWarning: Wenn du diese Einwilligung widerrufst, wirst du keinen Zugriff mehr auf deine Modelldaten haben und es werden alle Funktionen deaktiviert, die von diesen abhängen.
+modelWhatAnswer: Für jedes Modell deren <b>Maße</b> und <b>Brusteinstellungen</b>.
+modelWhatAnswerOptional: 'Optional: Ein Modell-<b>Bild</b> und der <b>Name</b>, den du deinem Modell gibst.'
+modelWhatQuestion: Was sind Modelldaten?
+modelWhyAnswer: 'Zum Erstellen von <b>maßgeschneiderten Schnittmustern</b> benötigen wir <b>Körpermaße</b>.'
+noConsentNoAccount: Ohne diese Einwilligung können wir deinen Account nicht erstellen
+noConsentNoPatterns: Ohne diese Einwilligung kannst du keine Schnittmuster erstellen
+noIDoNot: 'Nein, mache ich nicht'
+openDataInfo: Diese Daten werden verwendet, um die menschliche Form in all ihren Formen zu studieren und zu verstehen, sodass wir bessere Schnittmuster und besser passende Kleidungsstücke erhalten. Auch wenn diese Daten anonymisiert sind, hast du das Recht, dem zu widersprechen.
+openDataQuestion: Teile anonymisierte Maße als freie Daten (open data)
+profileQuestion: Gibst du deine Einwilligung zur Verarbeitung deiner Profildaten?
+profileShareAnswer: '<b>Nein</b>, niemals.'
+profileTimingAnswer: '<b>12 Monate</b> nach deinem letzten Login oder bis du <b>deinen Account entfernst</b> oder bis du diese Einwilligung <b>widerrufst</b>.'
+profileWarning: Durch den Widerruf dieser Einwilligung werden alle deine Daten entfernt. Es hat den gleichen Effekt wie das Entfernen deines Accounts.
+profileWhatAnswerOptional: 'Optional: ein <b>Profilbild</b>, eine <b>Beschreibung über dich</b>, und <b>Accounts bei sozialen Medien</b>'
+profileWhatAnswer: 'Deine <b>E-Mail-Adresse</b>, <b>Benutzername</b> und <b>Passwort</b>.'
+profileWhatQuestion: Was sind Profildaten?
+profileWhyAnswer: 'Um dich <b>zu authentifizieren</b>, dich zu <b>kontaktieren</b> wenn nötig, und um eine <b>Community</b> aufzubauen.'
+readMore: Weitere Informationen findest du in unserer Datenschutzerklärung.
+readRights: Lies mehr über deine Rechte für weitere Informationen.
+revokeConsent: Einwilligung widerrufen
+shareQuestion: Teilen wir sie mit anderen?
+timingQuestion: Für wie lange behalten wir sie?
+whatYouNeedToKnow: Was du wissen musst
+whyQuestion: Warum brauchen wir sie?
+yesIDoObject: 'Ja, ich widerspreche'
+yesIDo: 'Ja, das mache ich'
+openData: 'Hinweis: Freesewing veröffentlicht anonymisierte Maße als freie Daten (open data) für wissenschaftliche Forschung. Du hast das Recht, dem zu widersprechen'
