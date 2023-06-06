@@ -1,12 +1,12 @@
----
+- - -
 title: "Hugo hoodie: Fabric Options"
----
+- - -
 
-You may find a dedicated sweatshirt/tracksuit fabric section in your fabric store of choice. If you don't, just head for the knitwear section and look for a thicker comfortable knit fabric.
+Vous pouvez trouver une section spéciale pour le tissu sweat dans votre magasin de tissus. Si vous n'en avez pas, il suffit de vous diriger vers la section mailles/Jersey et de chercher un tissu plus épais et confortable.
 
-As far as fibers go, you can go all cotton, or opt for a poly or acryl cotton blend.
+En ce qui concerne les fibres, vous pouvez prendre du 100% coton, ou opter pour un mélange de coton de polyester ou d'acrylique.
 
-Make sure to pay attention to the inside of the fabric. Sweatshirt fabrics come in loopback and brushed back. If you want that OMG-it-feels-so-soft-on-my-skin feeling, go for brushed.
+Faites attention à l'intérieur du tissu. Les tissus de Sweatshirt sont en boucle et grattés. Si vous voulez une sensation super douce sur votre peau, optez pour l'envers gratté.
 
 <Note>
 
