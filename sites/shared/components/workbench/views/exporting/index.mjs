@@ -15,7 +15,7 @@ export const ns = ['exporting', exportNs]
 export const ExportView = ({ settings, ui, design, Design }) => {
   const [link, setLink] = useState(false)
   const [format, setFormat] = useState(false)
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+  const { startLoading, stopLoading } = useContext(LoadingContext)
   const toast = useToast()
 
   const { t } = useTranslation(ns)
