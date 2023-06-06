@@ -4,8 +4,8 @@ title: "Band (chest) tie length colours"
 
 ***
 
-Sobre si quieres la cinta alrededor del pecho de un solo color o de dos colores
+Whether you want single color tie around your chest, or dual-coloured ones
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bee_bandtiecolours_sample.svg "Efecto de esta opción en el patrón")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_bandtiecolours_sample.svg "Effect of this option on the pattern")
