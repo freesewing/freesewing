@@ -1,5 +1,5 @@
 - - -
-titre : "Passages de ceinture"
+titre : "Passants de ceinture"
 - - -
 
 Constrol le nombre de convoyeurs que nous allons générer.
