@@ -1,6 +1,6 @@
----
+- - -
 title: "Back armhole shape"
----
+- - -
 
 ![De vorm van het armsgat op de rug van Aaron](./backlinebend.svg)
 
