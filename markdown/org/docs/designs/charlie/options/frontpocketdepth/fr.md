@@ -1,8 +1,8 @@
----
-title: "Front pocket depth"
----
+- - -
+titre : "Profondeur de la poche avant"
+- - -
 
-Controls the depth of the front pocket bag.
+Contrôle la profondeur du sac de poche avant.
 
 ## Effet de cette option sur le motif
 
