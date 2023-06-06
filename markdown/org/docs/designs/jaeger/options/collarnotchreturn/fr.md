@@ -1,6 +1,6 @@
----
+- - -
 title: "Collar notch return"
----
+- - -
 
 ![Revers du col cranté](collarnotchreturn.svg)
 
