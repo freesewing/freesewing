@@ -29,7 +29,7 @@ class GistValidator {
 
   /** check that the required measurements are all there and the correct type */
   validateMeasurements() {
-    if (!this.givenGist.measurements) {
+    if (!this.givenGist.measurements && this.design.patternConfig.measurements.length) {
       this.errors.measurements = 'MissingMeasurements'
       this.valid = false
       return
