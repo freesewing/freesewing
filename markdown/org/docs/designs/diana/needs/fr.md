@@ -1,11 +1,11 @@
----
-title: "Diana draped top: What You Need"
----
+- - -
+titre : "Haut drapé Diana : Ce qu'il faut"
+- - -
 
-To make Diana, you will need the following:
+Pour faire de Diana, vous aurez besoin des éléments suivants :
 
 - [Fourniture de base pour la couture](/docs/sewing/basic-sewing-supplies)
-- About 1.5 meters (1.7 yards) (or half of that if it's wide enough to fit the sleeves next to the body) of a suitable fabric ([see Fabric options](/docs/patterns/diana/fabric))
+- Environ 1,5 mètre (ou la moitié s'il est assez large pour que les manches tiennent près du corps) d'un tissu approprié ([Voir les options de tissu](/docs/patterns/diana/fabric))
 
 <Note>
 
