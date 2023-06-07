@@ -17,6 +17,7 @@ For making t-shirts or other shirts with 2-way stretch, regular settings with a 
 </Note>
 
 ### Step 0: Customizing and fitting your pattern
+
  - Select an appropriate sleeve length.
    - 10-30% for short sleeves.
    - 75% for 3/4 length sleeves.
