@@ -1,60 +1,45 @@
-import { defaultGist } from 'shared/components/workbench/gist.mjs'
-
-/** A utility for validating a gist against a design */
-class GistValidator {
-  givenGist
-  design
+/** A utility for validating a gist against a patternConfig */
+class SettingsValidator {
+  givenSettings
+  patternConfig
   errors
   valid = true
 
-  setGist(givenGist, design) {
-    this.givenGist = givenGist
-    this.design = design
+  setGist(givenSettings, patternConfig) {
+    this.givenSettings = givenSettings
+    this.patternConfig = patternConfig
     this.errors = {}
     this.valid = true
   }
 
-  /** check that the settings all exist and are all of the right type */
-  validateSettings() {
-    for (const key in defaultGist) {
-      if (this.givenGist[key] === undefined) {
-        this.errors[key] = 'MissingSetting'
-        this.valid = false
-      } else if (typeof this.givenGist[key] !== typeof defaultGist[key]) {
-        this.errors[key] = 'TypeError'
-        this.valid = false
-      }
-    }
-  }
-
   /** check that the required measurements are all there and the correct type */
   validateMeasurements() {
-    if (!this.givenGist.measurements && this.design.patternConfig.measurements.length) {
+    if (!this.givenSettings.measurements && this.patternConfig.measurements.length) {
       this.errors.measurements = 'MissingMeasurements'
       this.valid = false
       return
     }
 
     this.errors.measurements = {}
-    for (const m of this.design.patternConfig.measurements || []) {
-      if (this.givenGist.measurements[m] === undefined) {
+    for (const m of this.patternConfig.measurements || []) {
+      if (this.givenSettings.measurements[m] === undefined) {
         this.errors.measurements[m] = 'MissingMeasurement'
         this.valid = false
-      } else if (isNaN(this.givenGist.measurements[m])) {
+      } else if (isNaN(this.givenSettings.measurements[m])) {
         this.errors.measurements[m] = 'TypeError'
         this.valid = false
       }
     }
   }
 
-  /** check validit of any options that are included */
+  /** check validity of any options that are included */
   validateOptions() {
     this.errors.options = {}
-    const configOpts = this.design.patternConfig.options
-    const gistOpts = this.givenGist.options
-    for (const o in gistOpts) {
+    const configOpts = this.patternConfig.options
+    const settingsOpts = this.givenSettings.options
+    for (const o in settingsOpts) {
       const configOpt = configOpts[o]
-      const gistOpt = gistOpts[o]
+      const settingsOpt = settingsOpts[o]
       // if the option doesn't exist on the pattern
       if (!configOpt) {
         this.errors.options[o] = 'UnknownOption'
@@ -65,20 +50,20 @@ class GistValidator {
       }
       // if it's a list option but the selection isn't in the list, mark it an unknown selection
       else if (configOpt.list !== undefined) {
-        if (!configOpt.list.includes(gistOpt) && gistOpt != configOpt.dflt)
+        if (!configOpt.list.includes(settingsOpt) && settingsOpt != configOpt.dflt)
           this.error.options[o] = 'UnknownOptionSelection'
       }
       // if it's a boolean option but the gist value isn't a boolean. mark a type error
       else if (configOpts[o].bool !== undefined) {
-        if (typeof gistOpt !== 'boolean') this.errors.options[o] = 'TypeError'
+        if (typeof settingsOpt !== 'boolean') this.errors.options[o] = 'TypeError'
       }
       // all other options are numbers, so check it's a number
-      else if (isNaN(gistOpt)) {
+      else if (isNaN(settingsOpt)) {
         this.errors.options[o] = 'TypeError'
       }
       // if still no error, check the bounds
       else {
-        const checkNum = configOpt.pct ? gistOpt * 100 : gistOpt
+        const checkNum = configOpt.pct ? settingsOpt * 100 : settingsOpt
         if (checkNum < configOpt.min || checkNum > configOpt.max) {
           this.errors.options[o] = 'RangeError'
         }
@@ -90,7 +75,6 @@ class GistValidator {
 
   /** run all validations */
   validate() {
-    this.validateSettings()
     this.validateMeasurements()
     this.validateOptions()
 
@@ -98,10 +82,10 @@ class GistValidator {
   }
 }
 
-const validator = new GistValidator()
+const validator = new SettingsValidator()
 
 /** make and run a gist validator */
-export function validateGist(givenGist, design) {
-  validator.setGist(givenGist, design)
+export function validateSettings(givenSettings, patternConfig) {
+  validator.setGist(givenSettings, patternConfig)
   return validator.validate()
 }
