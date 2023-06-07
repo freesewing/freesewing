@@ -8,6 +8,6 @@ For swim shirts, rash guards, compression shirts, athletic shirts, and other per
 
 For compression clothes and swimwear, a 20:80 ratio of nylon/polyester to spandex/elastane is recommended. More elastic fabrics allow for greater negative ease, will give better mobility, and will be more forgiving to measurement/design errors.
 
-The raglan sleeves lend themselves well to using different colors/prints for the bodice and for the sleeves.
+The raglan sleeves lend themselves well to using different colors/prints for the body and for the sleeves.
 
 With swim fabric/spandex, it is recommended to make the neckband out of the same material used for the shirt. For less stretchy fabric, such as cotton jersey knit, ribbing is recommended.
