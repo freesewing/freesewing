@@ -14,9 +14,19 @@ import { DynamicOrgDocs as DynamicDocs } from 'site/components/dynamic-org-docs.
 
 // Translation namespaces used on this page
 const namespaces = [...new Set([...wbNs, ...pageNs])]
+const allowedTypes = ['set', 'cset']
 
 const loadMeasurements = async ({ type, id, backend }) => {
   if (!type) return false
+  
+   //fallback for bad inputs
+  let safeType = type
+  let safeId = id
+  if (!allowedTypes.includes(type) || isNaN(id)) {
+    safeType = 'cset'
+    safeId = '1'
+  }
+  
   const method = {
     set: backend.getSet,
     cset: backend.getCuratedSet,
@@ -26,14 +36,8 @@ const loadMeasurements = async ({ type, id, backend }) => {
     cset: 'curatedSet',
   }
 
-  //fallback for bad inputs
-  if (!Object.prototype.hasOwnProperty.call(method, type)) {
-    type = 'cset'
-    id = 1
-  }
-
-  const result = await method[type](id)
-  if (result.success) return result.data[key[type]]
+  const result = await method[safeType](safeId)
+  if (result.success) return result.data[key[safeType]]
   else return false
 }
 
