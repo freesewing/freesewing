@@ -62,8 +62,10 @@ For making t-shirts or other shirts with 2-way stretch, regular settings with a 
 </Fixme>
 
    - Sweatshirt
+<Fixme>
      - The author hasn't made one yet. If someone knows what eases to use, please let me know.
-	 - Eases will be similar to that for a t-shirt, or a little larger.
+	   - Eases will be similar to that for a t-shirt, or a little larger.
+</Fixme>
 
  - The neckband length will be mostly determined by the material of the neckband. Stretch fabric will generally use a length of around 80%. Less stretchy fabric will be longer, but always shorter than 100%, and ribbed knit (traditional t-shirt neckbands) are around 60-70%.
 
