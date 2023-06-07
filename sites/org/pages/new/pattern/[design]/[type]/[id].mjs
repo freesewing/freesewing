@@ -5,7 +5,6 @@ import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useDesign } from 'shared/hooks/use-design.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { Aaron } from '@freesewing/aaron'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Workbench, ns as wbNs } from 'shared/components/workbench/index.mjs'
@@ -14,7 +13,7 @@ import { Null } from 'shared/components/null.mjs'
 import { DynamicOrgDocs as DynamicDocs } from 'site/components/dynamic-org-docs.mjs'
 
 // Translation namespaces used on this page
-const namespaces = [...new Set(['aaron', ...wbNs, ...pageNs])]
+const namespaces = [...new Set([...wbNs, ...pageNs])]
 
 const loadMeasurements = async ({ type, id, backend }) => {
   if (!type) return false
@@ -31,7 +30,7 @@ const loadMeasurements = async ({ type, id, backend }) => {
   else return false
 }
 
-const NewAaronFromSetPage = ({ page, id, design, type }) => {
+const NewDesignFromSetPage = ({ page, id, design, type }) => {
   const { token } = useAccount()
   const backend = useBackend(token)
   const [set, setSet] = useState(false)
@@ -45,7 +44,7 @@ const NewAaronFromSetPage = ({ page, id, design, type }) => {
     }
     if (set === false) getSet()
     else if (set?.id && set.id !== id) getSet()
-  }, [id, type, backend])
+  }, [id, type, backend, set])
 
   const baseSettings = set?.measies ? { measurements: set.measies } : null
 
@@ -56,12 +55,12 @@ const NewAaronFromSetPage = ({ page, id, design, type }) => {
   )
 }
 
-export default NewAaronFromSetPage
+export default NewDesignFromSetPage
 
 export async function getStaticProps({ locale, params }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, namespaces)),
+      ...(await serverSideTranslations(locale, [`o_${params.design}`, ...namespaces])),
       id: Number(params.id),
       design: params.design,
       type: params.type,
