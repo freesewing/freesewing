@@ -20,7 +20,17 @@ import { EditView, ns as editNs } from './views/edit/index.mjs'
 import { TestView, ns as testNs } from 'shared/components/workbench/views/test/index.mjs'
 import { ExportView, ns as exportNs } from 'shared/components/workbench/views/exporting/index.mjs'
 
-export const ns = ['account', 'workbench', ...draftNs, ...saveNs, ...printNs, ...cutNs, ...testNs]
+export const ns = [
+  'account',
+  'workbench',
+  ...draftNs,
+  ...saveNs,
+  ...printNs,
+  ...cutNs,
+  ...editNs,
+  ...testNs,
+  ...exportNs,
+]
 
 const defaultUi = {
   renderer: 'react',
