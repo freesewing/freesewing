@@ -10,7 +10,7 @@ All seams, including the neckband, can be done with the same stitch, whether it 
 
 Hems are optional (since knit doesn't fray), but if you do make hems, make sure they can stretch.
 
-Make sure to use a stitch that can stretch. If sewing stretch fabric, adjust your tension to allow for extra stretch. On a serger, this will usually mean lowering the needle tension, especially the right needle, and adjusting the looper tension as needed to keep the stitch looking decent. On a regular sewing machine, lower the tension. Test your choice of stitch first on scrap fabric, and try to pop the test seam by stretching the seam along its length. It should only pop after stretching quite a bit. If it pops too easily, keep playing with your stitches/tension settings until you get something that can survive some abuse.
+Make sure to use a stitch that can stretch. If sewing stretch fabric, adjust your tension to allow for extra stretch. On a serger, this will usually mean lowering the needle tension, especially the right needle, and adjusting the looper tension as needed to keep the stitch looking decent. On a regular sewing machine, lower the tension. Test your choice of stitch first on scrap fabric, and try to shap the test seam by stretching the seam along its length. It should only snap after stretching quite a bit. If it pops too easily, keep playing with your stitches/tension settings until you get something that can survive some abuse.
 
 For making t-shirts or other shirts with 2-way stretch, regular settings with a stitch that stretches should be fine.
 
@@ -26,7 +26,7 @@ For making t-shirts or other shirts with 2-way stretch, regular settings with a 
 
  - Select an appropriate body length.
    - Up to 80% or so will produce a crop top.
-   - 100% ends at the waistband of most pants, with no overlap.
+   - 100% ends at top of the hip bone.
    - 120% will produce a typical t-shirt.
    - 140% will produce a somewhat longer shirt that is less prone to untucking or riding up.
    - 200%+ can be used to make a simple t-shirt dress. It's suggested that you set straight sides to false, and adjust the side shape (under advanced options) for t-shirt dresses.
@@ -67,7 +67,7 @@ For making t-shirts or other shirts with 2-way stretch, regular settings with a 
 	   - Eases will be similar to that for a t-shirt, or a little larger.
 </Fixme>
 
- - The neckband length will be mostly determined by the material of the neckband. Stretch fabric will generally use a length of around 80%. Less stretchy fabric will be longer, but always shorter than 100%, and ribbed knit (traditional t-shirt neckbands) are around 60-70%.
+ - The neckband length will be mostly determined by the material of the neckband. Stretch fabric will generally use a length of around 80%. Less stretchy fabric will be longer, but always shorter than 100%, and ribbed knit (recommended for t-shirt neckbands) are around 60-70%.
 
 ### Step 1: Forming the body and attaching the sleeves
 
@@ -81,7 +81,7 @@ For making t-shirts or other shirts with 2-way stretch, regular settings with a 
 - Turn the shirt _good-side_-out
 - Mark the quarter points on your neckband with ball point pins, clips, or chalk.
 - Do the same around the neck hole, marking the center of the front, the center of the back, and the midpoints on either sleeve.
-- With _good sides together_, line up the unfinished edges of the neckband with the edge of the neck hole, and line up the quarter points of the neckband with the quarter points of the neck hole. Pin or clip the neckband around the neck hole.
+- With _good sides together_, line up the unfinished edges of the neckband with the edge of the neck hole, and line up the quarter points of the neckband with the quarter points of the neck hole. Stretch the neckband as needed to have all the points line up. Pin or clip the neckband around the neck hole.
  - Sew carefully around the neck hole, making sure to sew through all 3 layers.
  - Turn the neckband over. It should lay flat.
 
@@ -99,3 +99,5 @@ For making t-shirts or other shirts with 2-way stretch, regular settings with a 
 - Hem the sleeves and/or the bottom of the shirt using a single-fold hem. Using a twin needle will add some stretch to the stitching, but in either case the use of a stretch stitch is still recommended for high-stretch fabrics.
 - Alternatively, you can overlock or serge the raw edge _without_ folding it over to give it a little bit of substance without adding as much bulk as a folded hem, or you can make a rolled hem.
 - Or you can leave the edges unfinished, particularly if it's swim fabric or some other fabric that does not fray at all.
+
+### Step 5: Enjoy your new shirt!
