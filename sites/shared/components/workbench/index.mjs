@@ -18,6 +18,7 @@ import { PrintView, ns as printNs } from 'shared/components/workbench/views/prin
 import { CutView, ns as cutNs } from 'shared/components/workbench/views/cut/index.mjs'
 import { EditView, ns as editNs } from './views/edit/index.mjs'
 import { TestView, ns as testNs } from 'shared/components/workbench/views/test/index.mjs'
+import { ExportView, ns as exportNs } from 'shared/components/workbench/views/exporting/index.mjs'
 
 export const ns = ['account', 'workbench', ...draftNs, ...saveNs, ...printNs, ...cutNs, ...testNs]
 
@@ -29,6 +30,7 @@ const views = {
   draft: DraftView,
   print: PrintView,
   cut: CutView,
+  export: ExportView,
   edit: EditView,
   test: TestView,
 }
@@ -89,6 +91,9 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) =
     // Save view
     case 'save':
       viewContent = <SaveView {...viewProps} from={from} />
+      break
+    case 'export':
+      viewContent = <ExportView {...viewProps} />
       break
     case 'edit':
       viewContent = <EditView {...viewProps} setSettings={setSettings} />
