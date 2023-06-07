@@ -19,14 +19,6 @@ const allowedTypes = ['set', 'cset']
 const loadMeasurements = async ({ type, id, backend }) => {
   if (!type) return false
   
-   //fallback for bad inputs
-  let safeType = type
-  let safeId = id
-  if (!allowedTypes.includes(type) || isNaN(id)) {
-    safeType = 'cset'
-    safeId = '1'
-  }
-  
   const method = {
     set: backend.getSet,
     cset: backend.getCuratedSet,
@@ -36,8 +28,8 @@ const loadMeasurements = async ({ type, id, backend }) => {
     cset: 'curatedSet',
   }
 
-  const result = await method[safeType](safeId)
-  if (result.success) return result.data[key[safeType]]
+  const result = await method[type](id)
+  if (result.success) return result.data[key[type]]
   else return false
 }
 
@@ -74,7 +66,7 @@ export async function getStaticProps({ locale, params }) {
       ...(await serverSideTranslations(locale, [`o_${params.design}`, ...namespaces])),
       id: Number(params.id),
       design: params.design,
-      type: params.type,
+      type: allowedTypes.includes(params.type) ? params.type : 'set',
       page: {
         locale,
         path: ['new', 'pattern', params.design, 'set', params.id],
