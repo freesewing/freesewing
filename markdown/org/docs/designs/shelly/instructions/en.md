@@ -56,8 +56,10 @@ For making t-shirts or other shirts with 2-way stretch, regular settings with a 
 	 - Neck ease: 50 to 150% (mostly a style decision). Ease under 50% isn't recommended unless you like very snug neckbands.
 
    - T-shirt
+<Fixme>
      - The author hasn't made one yet. If someone knows what eases to use, please let me know.
-	 - Eases will be quite a bit more larger (more positive) than for other shirt types.
+	   - Eases will be quite a bit more larger (more positive) than for other shirt types.
+</Fixme>
 
    - Sweatshirt
      - The author hasn't made one yet. If someone knows what eases to use, please let me know.
