@@ -25,6 +25,13 @@ const loadMeasurements = async ({ type, id, backend }) => {
     set: 'set',
     cset: 'curatedSet',
   }
+
+  //fallback for bad inputs
+  if (!Object.prototype.hasOwnProperty.call(method, type)) {
+    type = 'cset'
+    id = 1
+  }
+
   const result = await method[type](id)
   if (result.success) return result.data[key[type]]
   else return false

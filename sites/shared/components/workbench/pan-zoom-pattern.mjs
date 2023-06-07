@@ -1,9 +1,8 @@
 // Dependencies
-import { forwardRef, useContext } from 'react'
+import { forwardRef } from 'react'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Context
-import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
 import { SizeMe } from 'react-sizeme'
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch'
@@ -32,21 +31,11 @@ export const ns = ['workbench']
  * Also still to see how this will work with SSR
  */
 export const PanZoomPattern = forwardRef((props, ref) => {
-  const { setModal } = useContext(ModalContext)
   const { t } = useTranslation(ns)
 
-  const { renderProps = false, components = {}, update, settings, ui } = props
+  const { renderProps = false, components = {} } = props
 
   if (!renderProps) return null
-
-  const showInfo = (evt, info = null) => {
-    evt.stopPropagation()
-    setModal(
-      <ModalWrapper>
-        <div className="max-w-prose">{info}</div>
-      </ModalWrapper>
-    )
-  }
 
   return (
     <SizeMe refreshRate={64}>
@@ -66,3 +55,5 @@ export const PanZoomPattern = forwardRef((props, ref) => {
     </SizeMe>
   )
 })
+
+PanZoomPattern.displayName = 'PanZoomPattern'
