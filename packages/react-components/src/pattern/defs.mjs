@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
 
 const style = ` style="fill: none; stroke: currentColor;" `
@@ -16,6 +17,9 @@ export const Defs = (props) => {
       let anchor = { x: 0, y: 0 }
       if (typeof part.points.gridAnchor !== 'undefined') anchor = part.points.gridAnchor
       else if (typeof part.points.anchor !== 'undefined') anchor = part.points.anchor
+
+      if (isNaN(anchor.x)) anchor.x = 0
+      if (isNaN(anchor.y)) anchor.y = 0
 
       defs += `<pattern id="grid-${stack}" key="grid-${stack}" xlink:href="#grid" x="${anchor.x}" y="${anchor.y}" />`
     }

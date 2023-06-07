@@ -45,6 +45,8 @@ rehype-jargon:
   lint: "npx eslint 'src/*.mjs'"
 snapseries:
   lint: "npx eslint 'src/*.mjs'"
+react-components:
+  lint: "eslint 'src/**/*.mjs'"
 
 # Sites go here
 backend:

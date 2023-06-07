@@ -1,7 +1,8 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
 import { withinPartBounds } from './utils.mjs'
 
-export const Point = ({ stackName, partName, pointName, part, point, settings, components, t }) => {
+export const Point = ({ stackName, partName, pointName, part, point, components, t }) => {
   // Don't include points outside the part bounding box
   if (!withinPartBounds(point, part)) return null
 
