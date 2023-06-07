@@ -78,7 +78,7 @@ For making t-shirts or other shirts with 2-way stretch, regular settings with a 
 
 - With _good sides together_, fold the neckband in half long ways (so it's half as long) and sew it into a loop.
 - With _wrong sides together_, fold the neckband in half short ways (so it's half as wide).
-- Turn the shirt right-side-out
+- Turn the shirt _good-side_-out
 - Mark the quarter points on your neckband with ball point pins, clips, or chalk.
 - Do the same around the neck hole, marking the center of the front, the center of the back, and the midpoints on either sleeve.
 - With _good sides together_, line up the unfinished edges of the neckband with the edge of the neck hole, and line up the quarter points of the neckband with the quarter points of the neck hole. Pin or clip the neckband around the neck hole.
