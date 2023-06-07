@@ -22,6 +22,7 @@ For making t-shirts or other shirts with 2-way stretch, regular settings with a 
    - 75% for 3/4 length sleeves.
    - 100% for long sleeves (to the wrist).
    - 115% is a good value if making a shirt with thumb holes (extends to the knuckles)
+
  - Select an appropriate body length.
    - Up to 80% or so will produce a crop top.
    - 100% ends at the waistband of most pants, with no overlap.
