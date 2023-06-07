@@ -12,13 +12,15 @@ import { WorkbenchHeader } from './header.mjs'
 import { ErrorView } from 'shared/components/error/view.mjs'
 import { ModalSpinner } from 'shared/components/modal/spinner.mjs'
 // Views
-import { DraftView, ns as draftNs } from './views/draft/index.mjs'
-import { SaveView, ns as saveNs } from './views/save/index.mjs'
-import { PrintView, ns as printNs } from './views/print/index.mjs'
-import { CutView, ns as cutNs } from './views/cut/index.mjs'
-import { ExportView, ns as exportNs } from './views/exporting/index.mjs'
+import { DraftView, ns as draftNs } from 'shared/components/workbench/views/draft/index.mjs'
+import { SaveView, ns as saveNs } from 'shared/components/workbench/views/save/index.mjs'
+import { PrintView, ns as printNs } from 'shared/components/workbench/views/print/index.mjs'
+import { CutView, ns as cutNs } from 'shared/components/workbench/views/cut/index.mjs'
+import { EditView, ns as editNs } from './views/edit/index.mjs'
+import { TestView, ns as testNs } from 'shared/components/workbench/views/test/index.mjs'
+import { ExportView, ns as exportNs } from 'shared/components/workbench/views/exporting/index.mjs'
 
-export const ns = ['account', 'workbench', ...draftNs, ...saveNs, ...printNs, ...cutNs, ...exportNs]
+export const ns = ['account', 'workbench', ...draftNs, ...saveNs, ...printNs, ...cutNs, ...testNs]
 
 const defaultUi = {
   renderer: 'react',
@@ -29,9 +31,11 @@ const views = {
   print: PrintView,
   cut: CutView,
   export: ExportView,
+  edit: EditView,
+  test: TestView,
 }
 
-const draftViews = ['draft', 'test']
+const draftViews = ['draft']
 
 export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) => {
   // Hooks
@@ -90,6 +94,9 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) =
       break
     case 'export':
       viewContent = <ExportView {...viewProps} />
+      break
+    case 'edit':
+      viewContent = <EditView {...viewProps} setSettings={setSettings} />
       break
     default: {
       const layout = ui.layouts?.[view] || settings.layout || true
