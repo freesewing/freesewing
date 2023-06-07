@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { forwardRef } from 'react'
 
 export const Group = forwardRef((props, ref) => (
@@ -5,3 +6,5 @@ export const Group = forwardRef((props, ref) => (
     {props.children}
   </g>
 ))
+
+Group.displayName = 'Group'

@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
 import { forwardRef } from 'react'
 
@@ -39,3 +40,5 @@ export const Svg = forwardRef(
     )
   }
 )
+
+Svg.displayName = 'Svg'

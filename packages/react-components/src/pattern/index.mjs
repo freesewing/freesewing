@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { forwardRef } from 'react'
 // Components that can be swizzled
 import { Svg as DefaultSvg } from './svg.mjs'
@@ -84,3 +85,5 @@ export const Pattern = forwardRef(
     )
   }
 )
+
+Pattern.displayName = 'Pattern'

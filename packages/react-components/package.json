@@ -31,12 +31,14 @@
     "vbuild": "VERBOSE=1 node build.mjs",
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
-    "lint": "npx eslint 'src/**' 'tests/*.mjs'",
+    "lint": "eslint 'src/**/*.mjs'",
     "cibuild_step6": "node build.mjs",
     "wbuild": "node build.mjs",
     "wcibuild_step6": "node build.mjs"
   },
-  "peerDependencies": {},
+  "peerDependencies": {
+    "react": ">=14"
+  },
   "dependencies": {},
   "devDependencies": {},
   "files": [

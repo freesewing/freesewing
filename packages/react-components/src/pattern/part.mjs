@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { forwardRef } from 'react'
 import { getId, getProps } from './utils.mjs'
 
@@ -37,6 +38,8 @@ export const PartInner = forwardRef(
     )
   }
 )
+
+PartInner.displayName = 'PartInner'
 
 export const Part = ({ stackName, partName, part, settings, components, t }) => {
   const { Group } = components
