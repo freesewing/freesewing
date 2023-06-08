@@ -1,10 +1,10 @@
 ---
-title: "Back neck cutout"
+title: "Arrondi de l'encolure dos"
 ---
 
 ***
 
-The **back neck cutout** option controls how far the neck opening is scooped out at the back.
+L'option **de découpe du col arrière** contrôle jusqu'à quel point l'encolure est aillé à l'arrière.
 
 ## Effet de cette option sur le modèle
 
