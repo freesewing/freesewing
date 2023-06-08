@@ -1,6 +1,6 @@
----
+- - -
 title: "Waistband shape"
----
+- - -
 
 ![Vorm tailleband](waistbandshape.svg)
 
@@ -8,4 +8,4 @@ De vorm van de tailleband. Recht maakt het leven makkelijker, maar een tailleban
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](sandy_waistbandshape_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](sandy_waistbandshape_sample.svg "Effect van deze optie op het patroon")
