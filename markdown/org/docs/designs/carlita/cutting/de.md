@@ -1,6 +1,6 @@
----
+- - -
 title: "Carlita coat: Cutting Instructions"
----
+- - -
 
 <Note>
 
@@ -8,13 +8,13 @@ Certain parts have to be drafted off of the existing parts. How to draft these a
 
 </Note>
 
-### Materials
+### Materialien
 
-- **Main fabric**
+- **Oberstoff**
   - Cut **2 Front** parts
   - Cut **2 Side** parts
   - Cut **2 Front facing** parts
-  - Cut **2 Back** parts
+  - Schneide **2 Rückteile**
   - Cut **2 topsleeve** parts
   - Cut **2 undersleeve** parts
   - Cut **2 tail** parts
@@ -33,10 +33,10 @@ If your main fabric is quite lightweight and flimsy you may need to interface al
 
 </Note>
 
-- **Lining fabric**
+- **Futterstoff**
   - Cut **2 Front lining** parts
   - Cut **2 Side** parts
-  - Cut **2 Back** parts
+  - Schneide **2 Rückteile**
   - Cut **2 topsleeve** parts
   - Cut **2 undersleeve** parts
   - Cut **2 tail** parts
