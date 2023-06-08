@@ -1,9 +1,9 @@
----
+- - -
 title: "Cuff length"
----
+- - -
 
-Controls the length (height if you wish) of the cuffs.
+Steuert die Länge (Höhe wenn Sie wollen) der Manschetten.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_cufflength_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](carlita_cufflength_sample.svg "Effekt dieser Variable auf das Schnittmuster")
