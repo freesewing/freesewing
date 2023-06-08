@@ -2,6 +2,6 @@
 title: "Unice undies: Fabric options"
 ---
 
-You need a fabric with plenty of horizontal and vertical stretch (sometimes called “four-way stretch”) for this pattern. Preferably something that is comfortable, soft, and breathable.
+Je hebt een stof nodig met veel horizontale en verticale stretch (soms "vierweg stretch") voor dit patroon. Bij voorkeur iets dat comfortabel, zacht en adembaar is.
 
-Recommended fabrics include stretch jerseys, stretch mesh, stretch knits, or most fabrics with at least 5% spandex. For example, modal (rayon) jersey with spandex.
+Aanbevolen stoffen zijn stretch jerseys, stretch mesh, stretch gebreken, of de meeste stoffen met ten minste 5% spandex. Zoals modale (rayon) jersey met spandex.
