@@ -78,7 +78,6 @@ dragAndDropImageHere: Sleep een afbeelding hierheen of selecteer er handmatig ee
 emailAddress: Email adres
 emailWorksToo: "Als je je gebruikersnaam niet meer weet, vul dan je email adres in, dat werkt ook"
 enterEmailPickPassword: Voer je email adres in, en kies een wachtwoord
-export: Exporteren
 exportTiledPDF: Gepagineerde PDF exporteren
 faq: Vaak gestelde vragen
 fieldRemoved: '{field} verwijderd'
@@ -261,8 +260,6 @@ recreate: Opnieuw aanmaken
 recreateThing: Maak {thing} opnieuw
 recreateThingForPerson: Maak {thing} opnieuw voor {person}
 seeYouLaterUser: Tot later {user}
-exportForPrinting: Exporteren om te printen
-exportForEditing: Exporteren om te bewerken
 startWithNeckTitle: Begin met de omtrek van de hals
 startWithNeckDescription: We kunnen je helpen fouten in je maten te vinden, gebaseerd op je halsomtrek.
 whatYouNeed: Wat je nodig hebt
@@ -276,7 +273,6 @@ loadingMagic: De magie is aan het laden
 estimate: Schatting
 actual: Feitelijk
 weEstimateYM2B: 'We schatten uw {measurement} op ongeveer:'
-exportAsData: Exporteer als data
 availablePatterns: Beschikbare patronen
 browseCollection: Grasduin door de collectie
 browseYourPatterns: Snuister door jouw patronen
@@ -308,9 +304,7 @@ cloneDescription: Maak een exacte kopie die de maten van het originele patroon g
 furtherReading: Meer lezen
 saveAsNewPattern: Bewaar Als Nieuw Patroon
 saveAsNewPattern-txt: Sla (een kopie van) dit patroon op in je FreeSewing account
-exportPattern: Patroon exporteren
 printPattern: Print patroon
-exportPattern-txt: Exporteer een PDF geschikt voor jouw printer, of download dit patroon in verschillende formaten
 editThing: 'Bewerk {thing}'
 editPattern-txt: Laad dit patroon in de patroonbewerker
 featureRequiresAccount: Deze functie vereist een FreeSewing account
