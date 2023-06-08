@@ -1,8 +1,8 @@
 ---
-title: "Elastic stretch"
+title: "Etendue élastique"
 ---
 
-Adjust this option for more or less stretchy elastic.
+Ajustez cette option pour une élastique plus ou moins extensive.
 
 ## Effet de cette option sur le modèle
 
