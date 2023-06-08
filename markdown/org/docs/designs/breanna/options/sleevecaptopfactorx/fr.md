@@ -1,10 +1,10 @@
----
+- - -
 title: "Sleevecap top X"
----
+- - -
 
-![The horizontal location of the sleevecap top](./sleevecaptopfactorx.svg)
+![L'emplacement horizontal du haut du chapeau de manche](./sleevecaptopfactorx.svg)
 
-This option controls the horizontal placement of the sleevecap top.
+Cette option contrôle la position horizontale du dessus du tête de manche.
 
 <Tip>
 
