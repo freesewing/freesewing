@@ -1,11 +1,11 @@
----
+- - -
 title: "Leg stretch"
----
+- - -
 
-![The leg stretch option on Bruce](./legstretch.svg)
+![Opción de estiramiento de piernas en Bruce](./legstretch.svg)
 
-The amount of stretch at the (upper) legs.
+La cantidad de estiramiento en las piernas (superior).
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bruce_legstretch_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bruce_legstretch_sample.svg "Efecto de esta opción en el patrón")
