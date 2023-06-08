@@ -1,6 +1,6 @@
----
+- - -
 title: "Center back dart"
----
+- - -
 
 ![Middenrug neep](centerbackdart.svg)
 
@@ -19,4 +19,4 @@ Dit is eigenlijk geen neep, maar ik wist niet zeker hoe het te benoemen. Suggest
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](wahid_centerbackdart_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](wahid_centerbackdart_sample.svg "Effect van deze optie op het patroon")
