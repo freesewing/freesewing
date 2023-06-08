@@ -1,10 +1,10 @@
----
+- - -
 title: "Ear flap length"
----
+- - -
 
 ***
 
-Controls the length of the ear flaps independently from the crown pieces
+Steuert die Länge der Ohrklappen unabhängig von den Kronenstücken
 
 ## Effekt dieser Option auf das Schnittmuster
 
