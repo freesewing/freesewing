@@ -1,12 +1,12 @@
----
+- - -
 title: "Florence face mask: Sewing Instructions"
----
+- - -
 
 ### Paso 1: Une la costura central
 
-Join the curved seam that is center of our mask by placing the _good sides together_ and sewing them in place.
+Une la costura curvada en el centro de nuestra mascarilla colocando los _derechos juntos_ y cosiéndolos.
 
-![Join the center seam](step1.svg)
+![Une la costura central](step1.svg)
 
 <Note>Repite este paso tanto para la tela exterior (principal) como para la tela interior (forro).</Note>
 
@@ -19,15 +19,15 @@ Así que si te da igual, siéntete libre de saltártelo.
 
 </Note>
 
-Press the seam allowance on the center seam open so the seam lies nice and flat.
+Plancha la costura en la costura central abierta para que quede bonita y plana.
 
-As this is a curved seam, it won't lay flat. But you can approach it with your iron from one side, then do the second half from the other side. Alternatively, you can use a tailor's ham or cushion to press.
+Como ésta es una costura curvada, no quedará plana. Pero se puede acercar la plancha desde al lado, y después hacer la segunda mitad desde el otro. Alternativamente, puede utilizar un jamón o cojín para prensa.
 
 <Note>Repite este paso tanto para la tela exterior (principal) como para la tela interior (forro).</Note>
 
 ### Paso 3: Cosa la tela exterior al forro y una las cintas
 
-![Join the inner to the outer fabric](step3.svg)
+![Una el forro a la tela exterior](step3.svg)
 
 Now we will sew the inner (lining) fabric to the outer (main) fabric, and attach the ribbons all in one step.
 
@@ -43,7 +43,7 @@ A medida que coges práctica, encontrarás que no necesitas poner alfileres pued
 
 </Tip>
 
-Now sew around the mask, making sure to leave one side open so we can turn the mask inside-out later.
+Ahora cose alrededor de la mascarilla asegurándote de dejar un lado abierto para poder girarla hacia adentro más tarde.
 
 <Warning>
 
@@ -55,9 +55,9 @@ las capas de la mascarilla para mantenerlas apartadas.
 
 ### Paso 4: Vuelve la máscara dentro
 
-Actually, your mask is inside-out now, so turning it inside out will mean we get it outside-out, or regular.
+Ahora, tu mascarilla está hacia adentro, así que tenemos que darle la vuelta.
 
-Just reach in through the side your left open and carefully pull the mask through to turn it.
+Simplemente tira de la tela a través de la abertura que dejaste antes.
 
 ### Paso 5 (opcional): Plancha la mascarilla
 
@@ -68,20 +68,20 @@ Así que si te da igual, siéntete libre de saltártelo.
 
 </Note>
 
-Now that the mask is as it should be, it's time to press it. Before doing so, make sure to fold the seam allowance of the side we left open inwards, so that we press it flat as if it was sewn.
+Ahora que la mascarilla está terminada, es hora de plancharla. Before doing so, make sure to fold the seam allowance of the side we left open inwards, so that we press it flat as if it was sewn.
 
 ### Paso 6: Cierra el lado abierto de la máscara y cose alrededor del borde
 
-![Edge-stitch around the mask](step6.svg)
+![Cose alrededor del borde de la mascarilla](step6.svg)
 
-Now it's time to close the side of our mask the we left open to turn it inside out.
+Ahora es el momento de cerrar el lado de nuestra mascarilla que dejamos abierto para girarla hacia fuera.
 
 We are not merely going to close the opening, but also edge-stitch around the entire mask to give our mask some extra stability, and keep the lining at the back.
 
-Make sure the open side is folded neatly inside, then edge-stitch around the entire mask.
+Asegúrate de que el lado abierto esté plegado de forma clara en el interior, y luego cose alrededor de toda la máscara.
 
 ### Paso 7: Usa tu máscara o haz un montón
 
-That's it, you're done! You can now wear your mask.
+¡Eso es todo! Ahora puedes ponerte tu máscara.
 
-Even better, make a bunch so you can give others masks too.
+Aún mejor, haz un montón para que también puedas darles mascarillas a otros.
