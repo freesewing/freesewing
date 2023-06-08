@@ -1,6 +1,6 @@
----
+- - -
 title: "Ribbing height"
----
+- - -
 
 ![Hauteur de bord côte](ribbingheight.svg)
 
