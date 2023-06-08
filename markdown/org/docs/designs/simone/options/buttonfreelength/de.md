@@ -1,6 +1,6 @@
----
+- - -
 title: "Button free length"
----
+- - -
 
 ![Freie Länge Knopf](./buttonfreelength.svg)
 
@@ -22,4 +22,4 @@ making sure it's within the length bonus you have available.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_buttonfreelength_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_buttonfreelength_sample.svg "Effekt dieser Option auf das Schnittmuster")
