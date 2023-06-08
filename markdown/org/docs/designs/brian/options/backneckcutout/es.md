@@ -1,11 +1,11 @@
----
+- - -
 title: "Back neck cutout"
----
+- - -
 
-![Back neck cutout](./backneckcutout.svg)
+![Cuello trasero recortado](./backneckcutout.svg)
 
-Controls how deep the neck opening is cut out in the back of the garment. In other words, increasing this will shift the neck opening to the back.
+Controla la profundidad de la abertura del cuello en la parte posterior de la prenda. En otras palabras, aumentar esto desplazará la apertura del cuello hacia la espalda.
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_backneckcutout_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](brian_backneckcutout_sample.svg "Efecto de esta opción en el patrón")
