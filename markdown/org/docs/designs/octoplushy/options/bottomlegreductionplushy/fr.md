@@ -1,8 +1,8 @@
 ---
-title: "Bottom Leg Reduction (Octoplushy)"
+title: "Réduction des jambes du bas (Octoplushy)"
 ---
 
-This setting adjusts the difference in length between the top and the bottom fabric of the legs. The bigger the difference, the more the legs will want to curl.
+Ce paramètre permet de régler la différence de longueur entre le tissu supérieur et le tissu inférieur des pieds. Plus la différence est importante, plus les jambes ont envie de s'enrouler.
 
 ## Effet de cette option sur le modèle
 
