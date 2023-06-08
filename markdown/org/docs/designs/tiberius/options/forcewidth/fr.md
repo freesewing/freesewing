@@ -1,8 +1,8 @@
----
+- - -
 title: "Force width"
----
+- - -
 
-Apply width settings regardless of constraints
+Appliquer les paramètres de largeur indépendamment des contraintes
 
 ## Effet de cette option sur le motif
 
