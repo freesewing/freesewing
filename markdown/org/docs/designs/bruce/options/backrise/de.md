@@ -1,15 +1,15 @@
----
+- - -
 title: "Back rise"
----
+- - -
 
-![The back rise option on Bruce](./backrise.svg)
+![Die Rückenaufstiegsoption auf Bruce](./backrise.svg)
 
-How much extra rise do you want at the back?
+Wie viel zusätzlicher Aufstieg wollen Sie zurück?
 
-This factor will raise the waist at the back of your boxers only.
+Dieser Faktor erhöht die Taille nur auf der Rückseite Ihrer Boxer.
 
 > Wenn du die Taille insgesamt erhöhen möchtest, das ist die Option **Aufstieg**
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bruce_backrise_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bruce_backrise_sample.svg "Effekt dieser Option auf das Schnittmuster")
