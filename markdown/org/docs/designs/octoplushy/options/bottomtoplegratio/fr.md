@@ -1,8 +1,8 @@
 ---
-title: "Bottom to Top Leg Ratio"
+title: "Rapport entre le bas et le haut de la jambe"
 ---
 
-This setting adjusts the ratio between the top and the bottom of the legs. The lower the ration, the more fabric will be associated with the top of the leg. 100% makes both the top and the bottom the same.
+Ce paramètre permet de régler le rapport entre le haut et le bas des jambes. Plus le rapport est faible, plus le tissu sera associé à la partie supérieure de la jambe. 100% rend le haut et le bas identiques.
 
 ## Effet de cette option sur le modèle
 
