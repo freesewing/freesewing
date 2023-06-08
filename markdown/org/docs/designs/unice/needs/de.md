@@ -4,18 +4,18 @@ title: "Unice undies: What you need"
 
 To make Unice, you will need the following:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
+- [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
 - About 0.7 meters (0.8 yards) of a suitable fabric (see [Fabric options](/docs/patterns/unice/fabric))
 - About 3 meters (3.3 yards) of underwear elastic, such as picot elastic or fold over elastic
 
 <Tip>
 
-##### Binding methods may affect the seam allowance
+##### Bindungsmethoden können die Nahterlaubnis
 
-If using fold over elastic (FOE) or doing knit binding, you may wish to trim away the seam allowance at the legs and waist before cutting. If you keep the seam allowance, the finished product will have a slightly higher waist and slightly smaller leg openings.
+beeinflussen, wenn Falten über elastisch (FOE) verwendet wird oder Strickverbindung, Sie können vor dem Schneiden die Naht an den Beinen und die Taille abschneiden wollen. Wenn du die Nahtzugabe beibehältst, wird das fertige Produkt eine etwas höhere Taille und etwas kleinere Beinöffnungen haben.
 
-##### A serger/overlock is nice, but optional
+##### Overlocks (Serger) sind schön, aber optional
 
-As with all knitwear and stretch fabrics, a serger/overlock will make your life easier. If you do not have one of those, don't despair. You don't really need it. You can just sew Unice with a zigzag stitch.
+Wie bei allen Strickwaren und Stretchgeweben wird dir eine Overlock (Serger) das Leben erleichtern. Wenn du keine hast, musst du aber nicht verzweifeln. Du brauchst sie nicht unbedingt. You can just sew Unice with a zigzag stitch.
 
 </Tip>
