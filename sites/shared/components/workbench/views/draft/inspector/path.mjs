@@ -110,7 +110,7 @@ export const pathInfo = ({ id, pathName, stackName, path, inspector, t }) => {
           rows={[
             [t('name'), pathName],
             ['Stack', stackName],
-            [t('attributes'), <Attributes list={path.attributes.list} />],
+            [t('attributes'), <Attributes list={path.attributes.list} key="a" />],
             [t('topLeft'), pointCoords(path.topLeft)],
             [t('bottomRight'), pointCoords(path.bottomRight)],
             [t('width'), formatMm(path.width)],
@@ -125,7 +125,7 @@ export const pathInfo = ({ id, pathName, stackName, path, inspector, t }) => {
   }
 }
 
-const InspectPath = ({ stackName, pathName, path, part, settings, t, inspector }) => {
+const InspectPath = ({ stackName, pathName, path, t, inspector }) => {
   const classes = path.attributes.list.class
   if (typeof classes === 'string' && classes.includes('skip-inspector')) return null
   const id = utils.getId({ stackName, pathName, settings: { idPrefix: 'path-' } })
@@ -138,7 +138,7 @@ const InspectPath = ({ stackName, pathName, path, part, settings, t, inspector }
         className={`hover:opacity-20 text-primary hover:cursor-pointer ${
           inspector.data.reveal[id] ? 'pulse-stroke stroke-3xl' : 'opacity-0 stroko-0 stroke-5xl'
         }`}
-        onClick={(evt) => inspector.show(pathInfo({ id, pathName, stackName, path, t, inspector }))}
+        onClick={() => inspector.show(pathInfo({ id, pathName, stackName, path, t, inspector }))}
         markerStart="none"
         markerEnd="none"
       />
@@ -146,18 +146,7 @@ const InspectPath = ({ stackName, pathName, path, part, settings, t, inspector }
   )
 }
 
-export const Path = ({
-  stackName,
-  pathName,
-  part,
-  path,
-  settings,
-  components,
-  t,
-  ui,
-  update,
-  inspector,
-}) => (
+export const Path = ({ stackName, pathName, part, path, settings, components, t, inspector }) => (
   <>
     <InspectPath {...{ stackName, pathName, path, part, settings, t, inspector }} />
     <ShowPath {...{ stackName, pathName, path, part, settings, components, t }} />

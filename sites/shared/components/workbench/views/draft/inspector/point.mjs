@@ -52,7 +52,7 @@ export const pointInfo = ({ id, pointName, stackName, point, inspector, t }) => 
     </span>
   ),
   buttons: [
-    <button key={1} className="btn btn-error" onClick={(evt) => inspector.hide(id)}>
+    <button key={1} className="btn btn-error" onClick={() => inspector.hide(id)}>
       <TrashIcon />
     </button>,
   ],
@@ -94,7 +94,7 @@ export const pointInfo = ({ id, pointName, stackName, point, inspector, t }) => 
         [t('coordinates'), pointCoords(point)],
         [t('name'), pointName],
         ['Stack', stackName],
-        [t('attributes'), <Attributes list={point.attributes.list} />],
+        [t('attributes'), <Attributes list={point.attributes.list} key="a" />],
         ['id', id],
       ]}
     />
@@ -145,8 +145,6 @@ export const Point = ({
   settings,
   components,
   t,
-  ui,
-  update,
   inspector,
 }) => {
   // Don't include parts outside the part bounding box

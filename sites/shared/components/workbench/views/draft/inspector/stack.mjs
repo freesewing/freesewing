@@ -1,9 +1,7 @@
 import { Stack as ShowStack, utils } from 'pkgs/react-components/src/index.mjs'
-import { Attributes, pointCoords, KeyValTable } from './shared.mjs'
+import { pointCoords, KeyValTable } from './shared.mjs'
 import { TrashIcon, PrintIcon, SearchIcon } from 'shared/components/icons.mjs'
 import { formatMm } from 'shared/utils.mjs'
-
-const { getId } = utils
 
 export const stackInfo = ({ stackName, stack, inspector, id, t }) => ({
   id,
@@ -15,7 +13,7 @@ export const stackInfo = ({ stackName, stack, inspector, id, t }) => ({
     </div>
   ),
   buttons: [
-    <button key={1} className="btn btn-error" onClick={(evt) => inspector.hide(id)}>
+    <button key={1} className="btn btn-error" onClick={() => inspector.hide(id)}>
       <TrashIcon />
     </button>,
   ],
@@ -65,7 +63,7 @@ export const stackInfo = ({ stackName, stack, inspector, id, t }) => ({
   color: 'secondary',
 })
 
-export const InspectStack = ({ stackName, stack, settings, t, inspector }) => {
+export const InspectStack = ({ stackName, stack, t, inspector }) => {
   const id = utils.getId({ stackName, settings: { idPrefix: `stack-` } })
 
   const reveal = inspector.data.reveal[id] ? true : false
@@ -82,7 +80,7 @@ export const InspectStack = ({ stackName, stack, settings, t, inspector }) => {
           ${reveal ? 'stroko-80 filo-5' : 'stroko-30 filo-0'}
           hover:stroko-90 hover:filo-5 hover:cursor-pointer hover:stroke-3xl `}
         style={{ illOpacity: reveal ? 0.3 : 0.1 }}
-        onClick={(evt) => {
+        onClick={() => {
           inspector.reveal(id)
           inspector.show(stackInfo({ stackName, stack, inspector, id, t }))
         }}
