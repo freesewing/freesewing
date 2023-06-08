@@ -1,11 +1,11 @@
----
+- - -
 title: "Contour"
----
+- - -
 
-Controls how sharply the princess seam will correct once it's passed the fullness of your breasts.
+Bepaalt hoe scherp de prinsessennaad naar binnen keert zodra ze voorbij het volste punt van de borst komt.
 
-A high factor will smooth the curve, resulting in a less fitted coat that's easier to sew. A low factor will sharpen the curve, resulting in a more fitted coat, with a princess seam that's harder to sew.
+Een hoge factor maakt de curve zachter, met als resultaat een minder aansluitende naad en een jas die makkelijker te naaien is. Een lage factor zal de curve verscherpen, wat resulteert in een meer aansluitende jas, met een prinsessennaad die moeilijker te naaien is.
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_contour_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](carlita_contour_sample.svg "Effect van deze optie op het patroon")
