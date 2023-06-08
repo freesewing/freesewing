@@ -1,10 +1,10 @@
----
+- - -
 title: "Wahid waistcoat: Fabric Options"
----
+- - -
 
-All suiting fabrics are a great choice for your waistcoats. Any fabric shop that's worth your business should have a suiting section. You can just walk in, ask where you can find the fabric for suits, and pick out something you like.
+Todos los tejidos de traje son una gran opción para tus cinturones. Cualquier tienda de tejidos que valga la pena su negocio debe tener una sección de traje. Solo puedes entrar, preguntar dónde puedes encontrar la tela para los trajes, y elegir algo que te guste.
 
-These fabrics are typically wool, but you can also be a bit more creative and go for something else.
+Estos tejidos son típicamente lana, pero también puedes ser un poco más creativo y buscar otra cosa.
 
 <Note>
 
