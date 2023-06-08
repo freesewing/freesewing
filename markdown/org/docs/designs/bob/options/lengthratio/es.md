@@ -1,8 +1,8 @@
 ---
-title: Length ratio
+title: Ratio de longitud
 ---
 
-Controls the length of the bib.
+Controla la longitud de la bib.
 
 - Increase the percentage to lengthen the bib.
 - Decrease the percentage to shorten the bib.
