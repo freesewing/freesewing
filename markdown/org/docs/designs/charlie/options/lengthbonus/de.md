@@ -1,8 +1,8 @@
----
-title: "Length bonus"
----
+- - -
+title: "Längenzugabe"
+- - -
 
-Controls the length of the entire trousers, which essentially means the length of the legs.
+Steuert die Länge der gesamten Hose, was im Wesentlichen die Länge der Beine bedeutet.
 
 <Note>
 
@@ -15,4 +15,4 @@ Die Hose muss länger sein, um auf den Boden zu kommen.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_lengthbonus_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](charlie_lengthbonus_sample.svg "Effekt dieser Variable auf das Schnittmuster")
