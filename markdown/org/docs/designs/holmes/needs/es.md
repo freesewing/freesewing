@@ -8,7 +8,7 @@ Para hacer Holmes, necesitarás lo siguiente:
 - About 0.5 metres (0.6 yards) of a suitable fabric ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
 - About 0.5 metres (0.6 yards) of lining fabric ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
 - A rigid material for the bill insert ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
-- (Optional) About 1 metre of 1" (2.5cm) crossgrain ribbon or petersham.
+- (Opcional) Aproximadamente 1 metros de 1" (2.5cm) cinta cruzada o petersham.
 - (Opcional) 1 botón cubierto sobre 3/4" (2cm) - 7/8" (2.2cm)
 
 <Note>
