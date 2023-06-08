@@ -1,8 +1,8 @@
----
+- - -
 title: "Horizontal button spacing"
----
+- - -
 
-Controls how far the double rows of front buttons are set apart.
+Contrôle la distance entre les deux rangées de boutons avant.
 
 ## Effet de cette option sur le motif
 
