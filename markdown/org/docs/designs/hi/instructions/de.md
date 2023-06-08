@@ -66,6 +66,6 @@ It's worth double-checking that you are using the proper fin pieces, as Hi's pec
 - Fill the plush toy with stuffing through the opening you left below the tail, making sure to fill the tail and fins well before adding too much stuffing in the body itself.
 - _Slipsticth_ or _whipstitch_ the opening closed.
 
-## Step 6: Enjoy!
+## Schritt 6: Viel Spaß!
 
 That's it you are all done now go adventure the oceans with your new Hi!
