@@ -1,6 +1,6 @@
----
+- - -
 title: "Diana draped top: Sewing Instructions"
----
+- - -
 
 ### Step 1: Finish the back neckline
 
@@ -15,16 +15,16 @@ For knit fabric make a strip with the stretch of the fabric running along the lo
 </Tip>
 
 - With _good sides together_ align the non-folded edge of the strip with the back neckline.
-- Sew the strip to the back neckline and trim the seam.
+- Difundir la tira hacia el cuello trasero y recortar la costura.
 - Turn the strip to the wrong side of the fabric and _topstitch_ along the folded edge to keep it in place.
 
-### Step 2: Close shoulder seams
+### Paso 2: Cerrar costuras del hombro
 
-![This drawing was too nice not to use](neckline.jpg)
+![Este dibujo fue demasiado agradable para no usarlo](neckline.jpg)
 
 - Finish the raw edge on the front neckline in a way that suits your fabric (if it doesn’t fray, you can leave it unfinished).
 - With _good sides together_, place the front on the back aligning the shoulder seams.
-- Fold the front neckline seam allowance over to the wrong side of the back.
+- Doblar la costura del cuello frontal hacia el lado equivocado de la espalda.
 
 <Note>
 
@@ -32,30 +32,30 @@ If you have a lightweight woven fabric you can fold this edge up again, so it wi
 
 </Note>
 
-- Stitch the shoulder seam, enclosing the raw edge of the back neckline in the fold.
-- Turn to the right side and press.
+- Unir la costura del hombro, encerrando el borde crudo del cuello trasero en el pliegue.
+- Gire a la derecha y prensa.
 
 ### Step 3: Finish front neckline
 
-- Press the hem formed in your fabric by the folds you made at the shoulder seam when you closed the shoulder and topstitch close to the edge.
+- Presione el hem formado en su tela por los pliegues que hizo a la costura del hombro cuando cerró el hombro y la parte superior cerca del borde.
 
 ### Step 4: Attach sleeves
 
 The sleeve will be inserted flat, meaning the armhole seam will be sewn first and the sleeve and side seam will be closed in one go.
 
 - With _good sides together_, matching notches, pin the sleeve head along the armhole.
-- If necessary, ease in the sleeve head at the top, between the notches.
-- Sew, finish and press the seam.
+- Si es necesario, aléjese en la cabeza de manga en la parte superior, entre las escamas.
+- Coser, terminar y presionar la costura.
 - Repeat for other sleeve.
 
 ### Step 5: Close side and sleeve seam
 
 - With _good sides together_ pin the front to the back along the sleeve and side seams, making sure to line up the armhole seams.
-- Sew, finish and press the seam.
+- Coser, terminar y presionar la costura.
 
 ### Step 6: Hem
 
-- Finish the sleeves and bottom hems in a way that works with your fabric choice.
+- Termina las mangas y los sombreros de fondo de una manera que funcione con tu elección.
 
 <Note>
 
@@ -65,6 +65,6 @@ trimming close to the stitching.
 
 </Note>
 
-### Step 7: Enjoy!
+### Paso 7: ¡Disfrútalo!
 
-You're all done! Now go enjoy your new top!
+Todo listo! Now go enjoy your new top!
