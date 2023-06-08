@@ -1,10 +1,10 @@
----
+- - -
 title: "Sleevecap front X"
----
+- - -
 
-![The horizontal location of the front inflection point](./sleevecapfrontfactorx.svg)
+![L'emplacement horizontal du point de flexion avant](./sleevecapfrontfactorx.svg)
 
-This option controls the horizontal placement of the sleevecap inflection point at the front of the sleeve.
+Cette option permet de contrôler la position horizontale du point de flexion du tête de manche à l'avant de la manche.
 
 <Tip>
 
