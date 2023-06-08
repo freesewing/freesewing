@@ -1,8 +1,8 @@
 ---
-title: Length ratio
+title: Ratio de longueur
 ---
 
-Controls the length of the bib.
+Contrôle la longueur du bavoir.
 
 - Increase the percentage to lengthen the bib.
 - Decrease the percentage to shorten the bib.
