@@ -1,6 +1,6 @@
----
+- - -
 title: "Elastic width"
----
+- - -
 
 > #### Waarom?
 > 
@@ -8,6 +8,6 @@ title: "Elastic width"
 > 
 > De breedte van je elastiek heeft hier echter ook invloed op, en daarom is deze optie van belang.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](shin_elasticwidth_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](shin_elasticwidth_sample.svg "Effect van deze optie op het patroon")
