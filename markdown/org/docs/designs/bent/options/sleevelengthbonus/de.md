@@ -1,19 +1,19 @@
----
-title: "Sleeve length bonus"
----
+- - -
+title: "Längenzugabe Ärmel"
+- - -
 
-The amount to extend the sleeve beyond the length of the sleeve in the base block.
+Der Betrag, um den Ärmel über die Länge des Ärmels im Basisblock hinaus zu verlängern.
 
 <Note>
 
-#### This is not supposed to be zero
+#### Dies soll nicht Null sein
 
-Setting this to zero will make the sleeve length the same as the base length of the Bent block,
-which is certainly too short for a coat.
+Wenn diese Einstellung auf Null gesetzt wird, wird die Hülsenlänge gleich der Basislänge des Schloßblocks sein,
+ist für einen Mantel sicher zu kurz.
 Bitte beachten Sie den Standardwert und verwenden Sie dies als Grundlage, um den Ärmel zu verlängern oder zu verkürzen.
 
 </Note>
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bent_sleevelengthbonus_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](bent_sleevelengthbonus_sample.svg "Effekt dieser Variable auf das Schnittmuster")
