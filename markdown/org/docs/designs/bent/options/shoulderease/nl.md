@@ -1,9 +1,9 @@
----
+- - -
 title: "Shoulder ease"
----
+- - -
 
-The amount of ease across the shoulders. When making a coat or jacket, you want to foresee more ease so one can wear layers under the coat/jacket.
+De hoeveelheid overwijdte aan de schouders. When making a coat or jacket, you want to foresee more ease so one can wear layers under the coat/jacket.
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bent_shoulderease_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bent_shoulderease_sample.svg "Effect van deze optie op het patroon")
