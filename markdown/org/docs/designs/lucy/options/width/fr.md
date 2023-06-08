@@ -1,5 +1,5 @@
 ---
-title: Width
+title: Largeur
 ---
 
 This option determines the width of the pocket overall.
