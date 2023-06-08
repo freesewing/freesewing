@@ -1,8 +1,8 @@
 ---
-title: Shoulder slope reduction
+title: Réduction de la pente d'épaule
 ---
 
-The amount by which the shoulder slope is reduced to allow for shoulder padding.
+La quantité par laquelle la pente des épaules est réduite pour permettre un ajustement aux épaules.
 
 ## Effet de cette option sur le modèle
 
