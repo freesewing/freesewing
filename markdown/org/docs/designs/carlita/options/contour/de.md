@@ -1,11 +1,11 @@
----
+- - -
 title: "Contour"
----
+- - -
 
-Controls how sharply the princess seam will correct once it's passed the fullness of your breasts.
+Legt fest, wie scharf die Prinzessin Naht korrigiert, sobald sie die Fülle Ihrer Brüste überschritten hat.
 
-A high factor will smooth the curve, resulting in a less fitted coat that's easier to sew. A low factor will sharpen the curve, resulting in a more fitted coat, with a princess seam that's harder to sew.
+Ein hoher Faktor glättet die Kurve, was zu einem weniger eingebauten Mantel führt, das leichter zu nähen ist. Ein niedriger Faktor wird die Kurve schärfen, was zu einem besser ausgerüsteten Fell mit einer Prinzessin Naht führt, die schwerer zu nähen ist.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_contour_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](carlita_contour_sample.svg "Effekt dieser Option auf das Schnittmuster")
