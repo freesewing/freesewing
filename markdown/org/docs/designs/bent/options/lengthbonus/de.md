@@ -1,11 +1,11 @@
----
-title: "Length bonus"
----
+- - -
+title: "Längenzugabe"
+- - -
 
-This option controls how far the block extend below your hips.
+Diese Option bestimmt, wie weit sich der Block unterhalb der Hüfte erstreckt.
 
 > Beachten Sie, dass dieser Block standardmäßig so lange ist, wie Ihre Hüftlinie, die fast sicher zu kurz für das letzte Kleidungsstück ist.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bent_lengthbonus_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](bent_lengthbonus_sample.svg "Effekt dieser Variable auf das Schnittmuster")
