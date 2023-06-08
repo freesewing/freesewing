@@ -1,8 +1,8 @@
----
+- - -
 titre : "aisance à la taille"
----
+- - -
 
-The amount of ease at the waist.
+L'ampleur d'aisance à votre taille.
 
 ## Effet de cette option sur le motif
 
