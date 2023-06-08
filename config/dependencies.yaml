@@ -134,6 +134,8 @@ plugintest:
     '@freesewing/plugin-svgattr': *freesewing
     '@freesewing/plugin-theme': *freesewing
 react-components:
+  _:
+    html-react-parser: "^4.0.0"
   peer:
     react: '>=14'
 rehype-jargon:
