@@ -2,21 +2,21 @@
 title: "Noble body block: Cutting Instructions"
 ---
 
-**Main fabric**
+**Oberstoff**
 
 - Cut **1 Front Inside** part on the fold.
 - Cut **2 Front Outside** parts.
 
-### Shoulder dart
+### Schulterabnäher
 
 - Cut **2 Back Inside** parts.
 - Cut **2 Back Outside** parts.
 
 ### Armhole dart
 
-- Cut **2 Back** parts.
+- Schneide **2 Rückteile**.
 
-These cutting instructions are just for the default Noble block. Adjust your cutting accordingly if you have/are making changes to the block.
+These cutting instructions are just for the default Noble block. Passe deinen Zuschnitt entsprechend an, falls du Änderungen am Grundschnitt vornimmst.
 
 <Tip>
 
@@ -29,8 +29,8 @@ If you do not have someone to help pin you into Noble then you may find it easie
 ###### Noble is a block, not a pattern
 
 A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Sie werden manchmal auch als Schläger bezeichnet, obwohl Puristen argumentieren, dass ein Block und ein Schläger verschiedene Dinge sind.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Grundschnitte werden in der Regel nicht so gemacht, wie sie sind, sondern dienen als Grundlage für andere Schnittmuster.
 
 </Note>
