@@ -1,8 +1,8 @@
----
+- - -
 title: "Ribbing height"
----
+- - -
 
-The height of the ribbing at the hem and cuffs.
+La hauteur de la bande à l'ourlet du bas et aux poignets.
 
 ## Effet de cette option sur le motif
 
