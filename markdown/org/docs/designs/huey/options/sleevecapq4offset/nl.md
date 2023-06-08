@@ -1,6 +1,6 @@
----
+- - -
 title: "Sleevecap Q4 offset"
----
+- - -
 
 ![De compensatie in het vierde kwartaal van de mouwkop](./sleevecapq4offset.svg)
 
@@ -15,4 +15,4 @@ kijk hoe de mouwkop is opgebouwd en hoe de invloed van de verschillende opties o
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](huey_sleevecapq4offset_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](huey_sleevecapq4offset_sample.svg "Effect van deze optie op het patroon")
