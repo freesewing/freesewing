@@ -1,8 +1,8 @@
----
+- - -
 title: "Bruce boxer briefs: Cutting Instructions"
----
+- - -
 
-Bruce consists of a back, and two sides, insets and fronts.
+Bruce bestaat uit een achterkant, en twee zijden, inzetstukken en voorkanten.
 
 - **Buitenstof**
   - Knip **1 rugpand** aan de stofvouw
