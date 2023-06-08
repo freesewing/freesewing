@@ -1,9 +1,9 @@
----
+- - -
 title: "Across back factor"
----
+- - -
 
-Controls your across back width as a factor of your shoulder to shoulder measurement
+Steuert die Rückenbreite als Faktor der Schultermessung
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_acrossbackfactor_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](diana_acrossbackfactor_sample.svg "Effekt dieser Variable auf das Schnittmuster")
