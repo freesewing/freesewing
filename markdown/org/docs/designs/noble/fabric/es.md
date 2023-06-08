@@ -11,8 +11,8 @@ You can use scraps of fabrics from your stash so don't worry about buying fabric
 ###### Noble is a block, not a pattern
 
 A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+A veces también se llaman trampas, aunque los puristas argumentarán que un bloque y una inclinación son cosas diferentes.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Los bloques normalmente no se hacen as-is sino que sirven como base para otros patrones.
 
 </Note>
