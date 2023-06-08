@@ -1,6 +1,6 @@
----
+- - -
 title: "Back rise"
----
+- - -
 
 ![Elevación de la espalda](backrise.svg)
 
@@ -19,4 +19,4 @@ Te permite simplemente levantar la espalda de los pantalones.
 
 ## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](theo_backrise_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](theo_backrise_sample.svg "Efecto de esta opción en el patrón")
