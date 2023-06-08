@@ -1,6 +1,6 @@
----
+- - -
 title: "Start of the cross seam curve"
----
+- - -
 
 Steuert den Start der Quernahtkurve.
 
@@ -17,4 +17,4 @@ Menschen mit einem runden Bum wollen dies vielleicht senken, um ein wenig mehr (
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](titan_crossseamcurvestart_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](titan_crossseamcurvestart_sample.svg "Effekt dieser Variable auf das Schnittmuster")
