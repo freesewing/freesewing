@@ -1,6 +1,6 @@
----
+- - -
 title: "Sleevecap Q2 offset"
----
+- - -
 
 ![Der Versatz im zweiten Quartal der Ärmel](./sleevecapq2offset.svg)
 
@@ -14,4 +14,4 @@ Siehe [die Armkugel verstehen](/docs/patterns/brian/options#understanding-the-sl
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](diana_sleevecapq2offset_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](diana_sleevecapq2offset_sample.svg "Effekt dieser Option auf das Schnittmuster")
