@@ -1,6 +1,6 @@
----
+- - -
 titre : "Aisance des hanches"
----
+- - -
 
 ![Aisance des hanches](hipsease.svg)
 
