@@ -1,10 +1,10 @@
----
+- - -
 title: "Sleevecap Q4 downward spread"
----
+- - -
 
-![The downward spread in the fourth quadrant of the sleevecap](./sleevecapq4spread2.svg)
+![La propagation vers le bas dans le quatrième quadrant de la tête de manche](./sleevecapq4spread2.svg)
 
-This option controls the downward spread in the fourth quadrant of the sleevecap.
+Cette option permet de contrôler la propagation vers le bas dans le quatrième quadrant de la tête de manche.
 
 <Tip>
 
