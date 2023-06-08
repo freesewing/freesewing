@@ -1,8 +1,8 @@
----
+- - -
 title: "Pocket height"
----
+- - -
 
-Controls the height/depth of the pockets.
+Contrôle la hauteur/profondeur des poches.
 
 ## Effet de cette option sur le motif
 
