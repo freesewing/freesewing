@@ -1,6 +1,6 @@
----
+- - -
 title: "Neck inset"
----
+- - -
 
 ![Insnede nek](neckinset.svg)
 
@@ -16,4 +16,4 @@ De schoudernaad van een gilet is gewoonlijk smaller dan die van je hemd. Deze op
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](wahid_neckinset_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](wahid_neckinset_sample.svg "Effect van deze optie op het patroon")
