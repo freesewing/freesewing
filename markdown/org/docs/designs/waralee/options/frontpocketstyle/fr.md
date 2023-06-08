@@ -1,5 +1,5 @@
 ---
-title: "Front pocket style"
+title: "Style de poche avant"
 ---
 
-Change the front pocket from welt pocket to one that is hidden in the front seam.
+Remplacer la poche avant par une poche cachée dans la couture avant.
