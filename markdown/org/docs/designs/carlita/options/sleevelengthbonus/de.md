@@ -1,10 +1,10 @@
----
-title: "Sleeve length bonus"
----
+- - -
+title: "Längenzugabe Ärmel"
+- - -
 
-![Sleevelength bonus](./sleevelengthbonus.svg)
+![Sleevelength Bonus](./sleevelengthbonus.svg)
 
-The amount to extend the sleeve beyond the length of the sleeve in the base block.
+Der Betrag, um den Ärmel über die Länge des Ärmels im Basisblock hinaus zu verlängern.
 
 <Note>
 
@@ -18,4 +18,4 @@ Bitte beachten Sie den Standardwert und verwenden Sie dies als Grundlage, um den
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_sleevelengthbonus_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](carlita_sleevelengthbonus_sample.svg "Effekt dieser Option auf das Schnittmuster")
