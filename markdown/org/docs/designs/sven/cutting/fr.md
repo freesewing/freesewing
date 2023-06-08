@@ -1,8 +1,8 @@
----
+- - -
 title: "Sven sweatshirt: Cutting Instructions"
----
+- - -
 
-Sven is a very simply pattern, and consists of two main parts plus some strips for the neck and armhole binding.
+Sven est un motif très simple et se compose de deux parties principales et de quelques bandes pour le cou et le blindage.
 
 - **Tissu principal**
   - Couper **1 dos** au pli
