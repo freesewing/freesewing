@@ -1,10 +1,10 @@
 ---
-title: "Cuff ease"
+title: "Aisance de poignet"
 ---
 
 ***
 
-The amount of ease at your wrist.
+L'ampleur d'aisance à votre poignet.
 
 ## Effet de cette option sur le modèle
 
