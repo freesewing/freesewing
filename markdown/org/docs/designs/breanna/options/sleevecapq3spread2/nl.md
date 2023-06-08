@@ -1,10 +1,10 @@
----
+- - -
 title: "Sleevecap Q3 downward spread"
----
+- - -
 
-![The downward spread in the third quadrant of the sleevecap](./sleevecapq3spread2.svg)
+![De neerwaartse spreiding in de derde quadrant van de mouwkop](./sleevecapq3spread2.svg)
 
-This option controls the downward spread in the third quadrant of the sleevecap.
+Deze optie controleert de neerwaartse spreiding in de derde quadrant van de mouwkop.
 
 <Tip>
 
@@ -15,4 +15,4 @@ kijk hoe de mouwkop is opgebouwd en hoe de invloed van de verschillende opties o
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_sleevecapq3spread2_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](breanna_sleevecapq3spread2_sample.svg "Effect van deze optie op het patroon")
