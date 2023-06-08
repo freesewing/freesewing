@@ -4,10 +4,10 @@ import { pluginBundle } from '@freesewing/plugin-bundle'
 import { pluginFlip } from '@freesewing/plugin-flip'
 import { pluginGore } from '@freesewing/plugin-gore'
 import { Design } from '@freesewing/core'
-import { Svg } from '../workbench/pattern/svg'
-import { Defs } from '../workbench/pattern/defs'
-import { Stack } from '../workbench/pattern/stack'
-import { useState, useEffect } from 'react'
+// import { Svg } from 'pkgs/react-components/src/index.mjs'
+//import { Defs } from '../workbench/pattern/defs'
+//import { Stack } from '../workbench/pattern/stack'
+// import { useState } from 'react'
 import yaml from 'js-yaml'
 
 // Get code from children
@@ -24,13 +24,11 @@ export const asText = (reactEl) => {
 // The actual example
 export const Example = ({
   patternProps,
-  tutorial,
-  paperless,
-  settings,
-  showInfo,
-  xray = false,
+  // settings,
+  // showInfo,
+  // xray = false,
 }) => {
-  const [ui, setUi] = useState({ renderer: 'react', xray: { enabled: xray } })
+  // const [ui, setUi] = useState({ renderer: 'react', xray: { enabled: xray } })
 
   if (patternProps.logs.pattern.error.length > 0 || patternProps.logs.sets[0].error.length > 0)
     return (
@@ -40,22 +38,26 @@ export const Example = ({
       </div>
     )
 
-  return (
-    <Svg {...patternProps} settings={settings} embed={true}>
-      <Defs {...patternProps} />
-      <style>{`:root { --pattern-scale: 1} ${patternProps.svg.style}`}</style>
-      <g>
-        {Object.keys(patternProps.stacks).map((stackName) => (
-          <Stack
-            {...{ showInfo, patternProps, settings, ui }}
-            key={stackName}
-            stackName={stackName}
-            stack={patternProps.stacks[stackName]}
-          />
-        ))}
-      </g>
-    </Svg>
-  )
+  return null
+
+  // FIXME
+
+  //return (
+  //  <Svg {...patternProps} settings={settings} embed={true}>
+  //    <Defs {...patternProps} />
+  //    <style>{`:root { --pattern-scale: 1} ${patternProps.svg.style}`}</style>
+  //    <g>
+  //      {Object.keys(patternProps.stacks).map((stackName) => (
+  //        <Stack
+  //          {...{ showInfo, patternProps, settings, ui }}
+  //          key={stackName}
+  //          stackName={stackName}
+  //          stack={patternProps.stacks[stackName]}
+  //        />
+  //      ))}
+  //    </g>
+  //  </Svg>
+  //)
 }
 
 // Returns a FreeSewing draft based on code in children
@@ -127,10 +129,10 @@ export const TabbedExample = ({
         <Tabs tabs="Code, Preview, X-Ray">
           <Tab key="code">{children}</Tab>
           <Tab key="preview">
-            <Example {...{ patternProps, tutorial, paperless, settings }} />
+            <Example {...{ patternProps, settings }} />
           </Tab>
           <Tab key="xray">
-            <Example {...{ patternProps, tutorial, paperless, settings }} xray={true} />
+            <Example {...{ patternProps, settings }} xray={true} />
           </Tab>
         </Tabs>
         {caption && (
@@ -145,11 +147,11 @@ export const TabbedExample = ({
     <div className="my-8">
       <Tabs tabs="Preview, Code, X-Ray">
         <Tab key="preview">
-          <Example {...{ patternProps, tutorial, paperless, settings }} />
+          <Example {...{ patternProps, settings }} />
         </Tab>
         <Tab key="code">{children}</Tab>
         <Tab key="xray">
-          <Example {...{ patternProps, tutorial, paperless, settings }} xray={true} />
+          <Example {...{ patternProps, settings }} xray={true} />
         </Tab>
       </Tabs>
       {caption && (

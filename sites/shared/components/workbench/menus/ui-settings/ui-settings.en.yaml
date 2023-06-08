@@ -8,4 +8,11 @@ renderWithCore.t: Render with Freesewing's Core library
 renderWithCore.d: Render directly to SVG from Core. Allows no interactivity and is optimized for print. Use this if you want to know what it will look like when exported.
 control.t: User Experience
 control.d: Which user experience do you prefer? Please note that this is an account setting, so it will impact the entire website.
-
+inspect.t: Inspect
+inspect.d: Enabling this will allow you to drill down into the pattern, and pull up information about its various parts, paths, and points.
+inspectNo.t: Disable the inspector
+inspectNo.d: This is the default, the pattern inspector is disabled and the pattern is displayed as usual.
+inspectYes.t: Enable the inspector
+inspectYes.d: With the pattern inspector enabled and the React rendering engine selected, we will add interactivity to the pattern to allow you to inspect the various elements that make up the pattern.
+no: No
+yes: Yes

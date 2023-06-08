@@ -1,57 +1,50 @@
 import { formatMm, formatPercentage } from 'shared/utils.mjs'
+import { ListValue, HighlightedValue, PlainValue, BoolValue } from '../shared/values'
 
-export const PctOptionValue = ({ name, config, current, settings }) => {
-  const val = typeof current === 'undefined' ? config.pct / 100 : current
+/** Displays the current percentatge value, and the absolute value if configured */
+export const PctOptionValue = ({ config, current, settings, changed }) => {
+  const val = changed ? current : config.pct / 100
 
   return (
-    <span className={val === config.pct / 100 ? 'text-secondary-focus' : 'text-accent'}>
+    <HighlightedValue changed={changed}>
       {formatPercentage(val)}
       {config.toAbs && settings.measurements ? ` | ${formatMm(config.toAbs(val, settings))}` : null}
-    </span>
+    </HighlightedValue>
   )
 }
 
-export const BoolOptionValue = ({ name, config, current, t }) => {
-  const dflt = config.bool
-  current = current === undefined ? dflt : current
-  return (
-    <span
-      className={
-        dflt == current || typeof current === 'undefined' ? 'text-secondary-focus' : 'text-accent'
-      }
-    >
-      {current ? t('yes') : t('no')}
-    </span>
-  )
-}
-
-export const CountOptionValue = ({ name, config, current }) =>
-  config.count == current || typeof current === 'undefined' ? (
-    <span className="text-secondary-focus">{config.count}</span>
-  ) : (
-    <span className="text-accent">{current}</span>
-  )
-
-export const ListOptionValue = ({ name, config, current, t }) => {
-  const translate = config.doNotTranslate ? (input) => input : (input) => t(`${name}.o.${input}`)
-
-  return config.dflt == current || typeof current === 'undefined' ? (
-    <span className="text-secondary-focus">{translate(config.dflt)}</span>
-  ) : (
-    <span className="text-accent">{translate(current)}</span>
-  )
-}
-
-export const DegOptionValue = ({ name, config, current }) =>
-  config.deg == current || typeof current === 'undefined' ? (
-    <span className="text-secondary-focus">{config.deg}&deg;</span>
-  ) : (
-    <span className="text-accent">{current}&deg;</span>
-  )
-
-export const MmOptionValue = () => (
-  <span className="text-error">FIXME: No MmOptionvalue implemented</span>
+/** Displays a count value*/
+export const CountOptionValue = ({ config, current, changed }) => (
+  <PlainValue {...{ current, changed, dflt: config.count }} />
 )
+
+/** Displays a list option value */
+export const ListOptionValue = (props) => (
+  <ListValue {...props} t={(input) => props.t(`${props.name}.o.${input}`)} />
+)
+
+/** Displays a degree value */
+export const DegOptionValue = ({ config, current, changed }) => (
+  <HighlightedValue changed={changed}> {changed ? current : config.deg}&deg;</HighlightedValue>
+)
+
+/** Displays the MmOptions are not supported */
+export const MmOptionValue = () => (
+  <span className="text-error">FIXME: No Mm Options are not supported</span>
+)
+
+/** Displays that constant values are not implemented in the front end */
 export const ConstantOptionValue = () => (
   <span className="text-error">FIXME: No ConstantOptionvalue implemented</span>
 )
+
+// Facilitate lookup of the value component
+export const values = {
+  bool: BoolValue,
+  constant: ConstantOptionValue,
+  count: CountOptionValue,
+  deg: DegOptionValue,
+  list: ListOptionValue,
+  mm: MmOptionValue,
+  pct: PctOptionValue,
+}

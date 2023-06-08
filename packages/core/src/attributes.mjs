@@ -60,15 +60,22 @@ Attributes.prototype.asPropsIfPrefixIs = function (prefix = '') {
  * @return {object} attributes - A plain object representing the attributes
  */
 Attributes.prototype.asRenderProps = function () {
-  return {
+  const props = {
     list: this.list,
     forSvg: this.render(),
-    forCss: this.renderAsCss(),
-    circle: this.getAsArray('data-circle'),
-    circleProps: this.asPropsIfPrefixIs('data-circle-'),
-    text: this.getAsArray('data-text'),
-    textProps: this.asPropsIfPrefixIs('data-text-'),
   }
+  const circle = this.getAsArray('data-circle')
+  if (circle) {
+    props.circle = circle
+    props.circleProps = this.asPropsIfPrefixIs('data-circle-')
+  }
+  const text = this.getAsArray('data-text')
+  if (text) {
+    props.text = text
+    props.textProps = this.asPropsIfPrefixIs('data-text-')
+  }
+
+  return props
 }
 
 /**

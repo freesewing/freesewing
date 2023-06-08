@@ -133,6 +133,9 @@ plugintest:
     '@freesewing/plugin-sprinkle': *freesewing
     '@freesewing/plugin-svgattr': *freesewing
     '@freesewing/plugin-theme': *freesewing
+react-components:
+  peer:
+    react: '>=14'
 rehype-jargon:
   _:
     'unist-util-visit': &unist-util-visit '4.1.2'

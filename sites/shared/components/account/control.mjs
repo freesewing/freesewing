@@ -13,7 +13,8 @@ import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 
 export const ns = ['account', 'toast']
 
-export const ControlSettings = ({ title = false, welcome = false, noBack = false }) => {
+/** state handlers for any input that changes the control setting */
+export const useControlState = () => {
   // Context
   const { startLoading, stopLoading } = useContext(LoadingContext)
 
@@ -21,24 +22,38 @@ export const ControlSettings = ({ title = false, welcome = false, noBack = false
   const { account, setAccount, token } = useAccount()
   const backend = useBackend(token)
   const toast = useToast()
-  const { t } = useTranslation(ns)
 
   // State
-  const [selection, setSelection] = useState(account.control || 2)
+  const [selection, setSelection] = useState(account.control)
 
   // Method to update the control setting
   const update = async (control) => {
     if (control !== selection) {
-      startLoading()
-      const result = await backend.updateAccount({ control })
-      if (result.success) {
+      if (token) {
+        startLoading()
+        const result = await backend.updateAccount({ control })
+        if (result.success) {
+          setSelection(control)
+          toast.for.settingsSaved()
+          setAccount(result.data.account)
+        } else toast.for.backendError()
+        stopLoading()
+      }
+      //fallback for guest users
+      else {
+        setAccount({ ...account, control })
         setSelection(control)
-        toast.for.settingsSaved()
-        setAccount(result.data.account)
-      } else toast.for.backendError()
-      stopLoading()
+      }
     }
   }
+
+  return { selection, update }
+}
+
+export const ControlSettings = ({ title = false, welcome = false, noBack = false }) => {
+  const { t } = useTranslation(ns)
+
+  const { selection, update } = useControlState()
 
   // Helper to get the link to the next onboarding step
   const nextHref = welcome
@@ -52,10 +67,10 @@ export const ControlSettings = ({ title = false, welcome = false, noBack = false
       {title ? <h1 className="text-4xl">{t('controlTitle')}</h1> : null}
       {[1, 2, 3, 4, 5].map((val) => (
         <Choice val={val} t={t} update={update} current={selection} key={val}>
-          <span className="block text-lg leading-5">{t(`control${val}t`)}</span>
+          <span className="block text-lg leading-5">{t(`control${val}.t`)}</span>
           {selection > 1 ? (
             <span className="block text-normal font-light normal-case pt-1 leading-5">
-              {t(`control${val}d`)}
+              {t(`control${val}.d`)}
             </span>
           ) : null}
         </Choice>

@@ -1,0 +1,4 @@
+yamlEditViewTitleThing: 'Edit Pattern Configuration for {thing}'
+yamlEditViewError: Issues with YAML
+yamlEditViewErrorDesc: We saved your input, but it might not work for the following reasons
+save: Save Settings
