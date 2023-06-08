@@ -1,6 +1,6 @@
----
+- - -
 title: "Zipper size"
----
+- - -
 
 What size zipper the pattern uses to draft.
 
@@ -29,4 +29,4 @@ If in doubt, or if the size of your zipper is unavailable use the size that is s
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](hortensia_zippersize_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](hortensia_zippersize_sample.svg "Effect van deze optie op het patroon")
