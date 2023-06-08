@@ -1,9 +1,9 @@
----
+- - -
 title: "Front scye dart"
----
+- - -
 
-The amount to take out in a dart at the front of the armhole.
+De hoeveelheid die verwijderd wordt met een neep aan de voorkant van het armsgat.
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_frontscyedart_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](breanna_frontscyedart_sample.svg "Effect van deze optie op het patroon")
