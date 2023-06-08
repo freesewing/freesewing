@@ -1,8 +1,8 @@
----
+- - -
 title: "Crotch seam bend"
----
+- - -
 
-Controls the curvature of the croth seam, which influences the fit at your crotch.
+Contrôle la courbure de la couture du croth, qui influence l'ajustement à votre croûte.
 
 ## Effet de cette option sur le motif
 
