@@ -1,6 +1,6 @@
----
+- - -
 title: "Ribbing stretch"
----
+- - -
 
 ![Stretch boordstof over Hugo](./ribbingstretch.svg)
 
@@ -17,4 +17,4 @@ you need to stretch out to get to 10 cm with a _good_ stretch.
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](hugo_ribbingstretch_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](hugo_ribbingstretch_sample.svg "Effect van deze optie op het patroon")
