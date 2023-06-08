@@ -78,7 +78,6 @@ dragAndDropImageHere: Glissez et déposez une image ici, ou sélectionnez-en une
 emailAddress: Adresse mail
 emailWorksToo: "Si vous ne connaissez pas votre nom d'utilisateur, votre adresse mail fonctionne également"
 enterEmailPickPassword: Saisissez votre adresse mail et choisissez un mot de passe
-export: Exporter
 exportTiledPDF: Exporter un PDF paginé
 faq: Foire Aux Questions (FAQ)
 fieldRemoved: '{field} supprimé'
@@ -261,8 +260,6 @@ recreate: Recréer
 recreateThing: Recréer {thing}
 recreateThingForPerson: Recréer {thing} pour {person}
 seeYouLaterUser: À plus tard {user}
-exportForPrinting: Exporter pour l'impression
-exportForEditing: Exporter pour édition
 startWithNeckTitle: Commencer par le tour de cou
 startWithNeckDescription: En se basant sur votre tour de cou, nous pouvons vous aider à repérer des erreurs dans vos mesures.
 whatYouNeed: Ce dont vous avez besoin
@@ -276,7 +273,6 @@ loadingMagic: En cours de chargement
 estimate: Estimation
 actual: Réel
 weEstimateYM2B: 'Nous estimons que votre {measurement} est environ :'
-exportAsData: Exporter en tant que données
 availablePatterns: Patrons disponibles
 browseCollection: Parcourez votre collection
 browseYourPatterns: Choisissez votre patron
@@ -308,9 +304,7 @@ cloneDescription: Recréer une copie exacte, en utilisant les mesures du patron 
 furtherReading: Lire plus
 saveAsNewPattern: Enregistrer en tant que nouveau patron
 saveAsNewPattern-txt: Stocker (une copie de) ce patron sur votre compte FreeSewing
-exportPattern: Exporter le patron
 printPattern: Imprimer le patron
-exportPattern-txt: Exporter au format PDF adapté à votre imprimante, ou télécharger ce modèle dans une variété de formats
 editThing: 'Modifier {thing}'
 editPattern-txt: Charger ce patron dans l'éditeur de patron
 featureRequiresAccount: Cette fonctionnalité nécessite un compte FreeSewing
