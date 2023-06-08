@@ -1,10 +1,10 @@
 ---
-title: "Back armhole curvature"
+title: "Courbure de l'emmanchure arrière"
 ---
 
 ***
 
-The **back armhole curvature** option controls how much the armhole is scooped at out the bottom in the back.
+L'option **de courbure du blindage arrière** contrôle combien le blindage est déployé en bas dans le dos.
 
 ## Effet de cette option sur le modèle
 
