@@ -1,6 +1,6 @@
----
+- - -
 title: "Cornelius cycling breeches: Sewing Instructions"
----
+- - -
 
 ### Step 1: The Front Pockets
 
@@ -69,7 +69,7 @@ Use the method of the cuff style you chose as they are different depending on wh
 - Press the bands and seam allowance down and away from leg. Trim the seam allowance to reduce bulk.
 - Press the top seam allowance to the wrong side of the remaining leg band pieces. Trim the top seam allowance.
 - With right sides together sew the remaining leg and pieces to the attached leg bands along the bottoms and sides.
-- Turn the leg bands out. Press.
+- Turn the leg bands out. Alísala.
 - _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
 - Sew the buttonhole. The buttons will be sewn later.
 
@@ -88,7 +88,7 @@ If you are worried about a draft you can create a triangle piece of fabric that 
 - Press the bands and seam allowance down and away from leg. Trim the seam allowance to reduce bulk.
 - Press the top seam allowance to the wrong side of the remaining leg band pieces. Trim the top seam allowance.
 - With right sides together sew the remaining leg and pieces to the attached leg bands along the bottoms and sides.
-- Turn the leg bands out. Press.
+- Turn the leg bands out. Alísala.
 - _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
 - Sew the buttonhole. The buttons will be sewn later.
 
@@ -113,7 +113,7 @@ You can _Edgestitch_ the leg bands together like a modern waistband if you prefe
 - Press the waistband and seam allowance up and away from leg. Trim the seam allowance to reduce bulk.
 - Press the bottom seam allowance to the wrong side of the remaining waistband piece. Trim the bottom seam allowance.
 - With right sides together sew the remaining waistband to the faced waistband along the top and sides.
-- Turn the waistband out. Press.
+- Turn the waistband out. Alísala.
 - _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
 - Sew the buttonhole. The buttons will be sewn later.
 
@@ -127,6 +127,6 @@ You can _Edgestitch_ the waistband together like a modern waistband if you prefe
 
 - Sew the waistband and leg band buttons on.
 
-### Step 7: Enjoy!
+### Paso 7: ¡Disfrútalo!
 
 Todo listo! Now go have a ride in your brilliant new cycling breeches!
