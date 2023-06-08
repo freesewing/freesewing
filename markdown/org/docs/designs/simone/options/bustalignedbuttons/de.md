@@ -1,12 +1,12 @@
 ---
-title: "Bust-aligned buttons"
+title: "Auf Brusthöhe ausgerichtete Knöpfe"
 ---
 
 Select an optional bust-aligned button spacing strategy.
 
-- Even spacing
-- Split spacing
-- Disabled
+- Gleichmäßiger Abstand
+- Abstand aufteilen
+- Deaktiviert
 
 By default bust-aligned button spacing is "Disabled", and center front buttons are spaced without regard to the bustline. Choosing "Even spacing" or "Split spacing" will ensure that there is a button positioned on the bustline to prevent possible gaping.
 
