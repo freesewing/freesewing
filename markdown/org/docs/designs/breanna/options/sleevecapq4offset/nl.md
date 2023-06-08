@@ -1,10 +1,10 @@
----
+- - -
 title: "Sleevecap Q4 offset"
----
+- - -
 
-![The offset in the fourth quarter of the sleevecap](./sleevecapq4offset.svg)
+![De compensatie in het vierde kwartaal van de mouwkop](./sleevecapq4offset.svg)
 
-This option controls the offset in the fourth quadrant of the sleevecap.
+Deze optie bepaalt de offset in de vierde quadrant van de mouwkop.
 
 <Tip>
 
@@ -15,4 +15,4 @@ kijk hoe de mouwkop is opgebouwd en hoe de invloed van de verschillende opties o
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_sleevecapq4offset_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](breanna_sleevecapq4offset_sample.svg "Effect van deze optie op het patroon")
