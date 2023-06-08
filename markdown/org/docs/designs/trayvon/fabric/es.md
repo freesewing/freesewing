@@ -1,36 +1,36 @@
----
+- - -
 title: "Trayvon tie: Fabric Options"
----
+- - -
 
 ## Tie fabric
 
-The ties you find in the store are typically made out of silk or some imitation silk poly. So it will come as no surprise that those are good options.
+Los lazos que se encuentran en la tienda son típicamente hechos de seda o de algún polo de imitación de seda. Por lo tanto, no sorprenderá que se trate de buenas opciones.
 
-In general, you want something with good drape so that your tie hangs nicely. Cutting your tie on bias can help here too.
+En general, usted quiere algo con un buen tapón para que su corbata se cuelga bien. Cortar tu corbata en el sesgo también puede ayudar aquí.
 
-Personally, I like using different fabrics for ties. Things like denim or corduroy make great ties, while being a bit different from the run-of-the-mill store-bought tie.
+Personalmente, me gusta usar diferentes tejidos para los lazos. Cosas como denim o corduroy hacen grandes lazos, mientras que son un poco diferentes de la corbata comprada en la tienda de fábrica.
 
-Additionally, silk and silk imitation is slippery and tricky to work with. If this your first tie, consider an alternative fabric that is more forgiving.
+Además, la imitación de la seda y la seda es deslizante y complicado de trabajar. Si esta es su primera corbata, considere un tejido alternativo que sea más perdonable.
 
-Just make sure you pick a fabric that does not stretch or lose its shape easily. You want your tie to look sharp, not saggy.
+Simplemente asegúrese de elegir un tejido que no se estire o pierda su forma fácilmente. Quieres que tu corbata se vea nítida, no saggy.
 
 ## Tie de revestimiento
 
-The lining of the tie is the bit that is used at the tip to cover up the back. If you are not sure what I mean, look at the back of the tip of an existing tie. See that rectangular patch of fabric you can see there? That is the tie lining.
+El revestimiento de la corbata es el bit que se utiliza en la punta para ocultar la espalda. Si no estás seguro de lo que quiero decir, mira en la parte posterior de la punta de un empate existente. ¿Ves ese parche rectangular de tela que puedes ver allí? Ése es el corbato.
 
-Your tie lining will add an extra fabric inside a part of your tie. So it is important to avoid bulk. Go for something thin, even when using a thicker tie fabric.
+Tu revestimiento de empatado añadirá un tejido extra dentro de una parte de tu empate. Por lo tanto, es importante evitar el grueso. Ve por algo delgado, incluso usando una tela de corbata más gruesa.
 
-Make sure your lining drapes at least as good as your tie fabric, so that it doesn't interfere with the drape of your tie.
+Asegúrate de que tus tapones de forro sean tan buenos como tu tela de corbata, de modo que no interfiera con el tapón de tu corbata.
 
-When in doubt, go for imitation silk. Do make sure to pick something that is a nice match, or contrast, with your tie fabric.
+Cuando esté en duda, vaya a la seda de imitación. Asegúrate de elegir algo que sea un buen encuentro, o en contraste, con tu tela de corbata.
 
 ## Interfaz de tiro
 
-Your tie interfacing is the skeleton of your tie. It is the part that sits in the middle and that you will only see while constructing your tie.
+Tu vinculación es el esqueleto de tu corbata. Es la parte que se encuentra en el medio y que sólo verás mientras construyes tu corbata.
 
-Tie interfacing can be notoriously hard to get. The best tie interfacing is soft, fuzzy woven lambswool, but I have yet to walk into a fabric store that carries this.
+La interfaz de ties puede ser notoriamente difícil de obtener. La mejor interfaz de empatado es un lambswool suave y difuso, pero todavía no he entrado en una tienda de tejido que lleva esto.
 
-While you can get by with an alternative, like some wool fabric, or flannel, I typically re-use the interfacing from an old tie.
+Mientras que usted puede arreglárselas con una alternativa, como alguna tela de lana o flannel, típicamente reutilizo la interfaz de una corbata antigua.
 
 <Note>
 
