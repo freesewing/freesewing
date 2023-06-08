@@ -1,8 +1,8 @@
 ---
-title: "Leg opening"
+title: "Ouverture des jambes"
 ---
 
-This option controls how high the leg is cut-out.
+Cette option permet de contrôler la hauteur de la jambe.
 
 ## Effet de cette option sur le modèle
 
