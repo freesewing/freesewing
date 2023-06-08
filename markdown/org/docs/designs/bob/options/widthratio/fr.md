@@ -1,8 +1,8 @@
 ---
-title: Width ratio
+title: Ratio de largeur
 ---
 
-Controls the width of the bib.
+Contrôle la largeur du bavoir.
 
 - Increase the percentage to widen the width of the bib.
 - Decrease the precentage to constrict the width of the bib.
