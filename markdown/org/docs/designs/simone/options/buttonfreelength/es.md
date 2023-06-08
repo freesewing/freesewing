@@ -1,6 +1,6 @@
----
+- - -
 title: "Button free length"
----
+- - -
 
 ![Longitud sin botones](./buttonfreelength.svg)
 
@@ -25,4 +25,4 @@ making sure it's within the length bonus you have available.
 
 ## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_buttonfreelength_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_buttonfreelength_sample.svg "Efecto de esta opción en el patrón")
