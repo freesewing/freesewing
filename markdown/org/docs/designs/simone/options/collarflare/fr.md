@@ -1,6 +1,6 @@
----
+- - -
 title: "Collar flare"
----
+- - -
 
 ![Évasement du col](collarflare.svg)
 
