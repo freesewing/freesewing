@@ -1,6 +1,6 @@
----
+- - -
 title: "Front scye dart"
----
+- - -
 
 Dit patroon komt met een standaard neepje van 1 cm in het armsgat aan het voorpand.
 
@@ -14,4 +14,4 @@ Je kan deze neep groter of kleiner maken om het armsgat te beïnvloeden.
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](wahid_frontscyedart_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](wahid_frontscyedart_sample.svg "Effect van deze optie op het patroon")
