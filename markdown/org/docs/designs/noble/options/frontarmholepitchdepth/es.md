@@ -1,11 +1,11 @@
 ---
-title: "Front armhole pitch depth"
+title: "Profundidad del tono del orificio delantero"
 ---
 
 ***
 
-The **front armhole pitch depth** option controls the vertical position of the armhole pitch point at the front.
+La opción **profundidad de zanqueo del orificio frontal** controla la posición vertical del punto de zanja del orificio de armadura.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_frontarmholepitchdepth_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción al superponer varias variantes que tienen un valor diferente para esta opción](noble_frontarmholepitchdepth_sample.svg "Efecto de esta opción en el patrón")
