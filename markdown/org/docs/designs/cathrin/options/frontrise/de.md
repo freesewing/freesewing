@@ -1,10 +1,10 @@
----
+- - -
 title: "Front rise"
----
+- - -
 
-![The front rise option on Cathrin](./frontrise.svg)
+![Die Front-Up-Option auf Cathrin](./frontrise.svg)
 
-How high do you want the corset to rise up at the center front.
+Wie hoch soll das Korsett an der Vorderseite aufsteigen.
 
 > Dieser Aufstieg tritt in der Mitte zwischen den Brüsten auf. Übertreiben Sie es nicht oder der Rand Ihres Korsetts schiebt in Ihre Brüste.
 
@@ -12,4 +12,4 @@ How high do you want the corset to rise up at the center front.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_frontrise_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](cathrin_frontrise_sample.svg "Effekt dieser Option auf das Schnittmuster")
