@@ -1,9 +1,9 @@
----
+- - -
 title: "Cathrin corset: Fabric Options"
----
+- - -
 
-Corsets must be made from fabric with no stretch at all. The fabric designed for corset making is called coutil. Although coutil is expensive, not much is needed for a corset. Some cheaper alternatives include canvas, denim and cotton ticking. However, these will stretch over time and are not suitable for any garment with a large waist reduction: they are not strong enough. They are good options for testing the pattern to see how it fits on you. For corsets made from silk and cotton and other fancy fabrics, you need to use several layers - the fabric you want to be seen, on top of a layer of coutil or other strength layer, and perhaps also a third layer made out of lining which will sit next to the body.
+Korsetten moeten gemaakt worden van stof die geen enkele stretch heeft. De stof speciaal gemaakt voor korsetten heet coutil. Hoewel coutil duur is, heb je niet veel nodig voor een korset. Een aantal goedkopere alternatieven zijn canvas, denim en meubelstoffen. Deze rekken met de tijd echter uit en zijn niet geschikt voor eender welk kledingstuk dat de taille echt moet versmallen: ze zijn niet sterk genoeg. Het zijn goede opties om het patroon te testen en te zien hoe het je past. Voor korsetten gemaakt van zijde en katoen of andere chique stoffen heb je meerdere lagen nodig- de stof die je zichtbaar wil bovenop een laag coutil of andere sterke laag, en misschien ook een derde laag met een voering die tegen de huid komt.
 
-For the core fabric, you need a strong fabric, such as coutil, canvas, or denim.
+Voor de kernstof heb je een sterke stof nodig, zoals coutil, canvas of denim.
 
-For the outer fabric, you can use most non-stretch fabrics, such as linen, cotton, or silk.
+Voor de buitenstof kan je de meeste niet-elastische stoffen gebruiken, zoals linen, katoen of kelder.
