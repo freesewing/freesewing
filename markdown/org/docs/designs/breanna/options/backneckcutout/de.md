@@ -1,9 +1,9 @@
----
-title: "Back neck cutout"
----
+- - -
+title: "Rückenhalsausschnitt"
+- - -
 
-Controls how deep the neck opening is cut out in the back of the garment. In other words, increasing this will shift the neck opening to the back.
+Beeinflusst die Tiefe des Halsausschnitts im Rückenteil. Mit anderen Worten, wenn man diesen erhöht, wird der Halsausschnitt hinten weiter.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_backneckcutout_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](breanna_backneckcutout_sample.svg "Effekt dieser Variable auf das Schnittmuster")
