@@ -44,6 +44,6 @@ To make sure the binding is long enough, instead of cutting the binding down you
 - Bind the top edge of the pocket bag whilst leaving the remainder of tape free.
 - Finish the tape ends.
 
-## Step 3: Enjoy!
+## Schritt 3: Viel Spaß!
 
-That's it! You're all done! Now go stuff your new pockets to the brim!
+Das war's! Fertig! Now go stuff your new pockets to the brim!
