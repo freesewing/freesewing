@@ -2759,10 +2759,10 @@
     resolve-cwd "^3.0.0"
     update-notifier "^5.0.1"
 
-"@maizzle/framework@4.4.5":
-  version "4.4.5"
-  resolved "https://registry.yarnpkg.com/@maizzle/framework/-/framework-4.4.5.tgz#517a0b6ad623102eec29d9120b80ae96ec070494"
-  integrity sha512-y6un3DnK2rloW9klOX5S5XXYTvxGI8R+AGfS+OlIsYotawpeRoiI1GI4jgDxXxzl5MZ/MIIZrK3143XVTmzpcg==
+"@maizzle/framework@4.4.6":
+  version "4.4.6"
+  resolved "https://registry.yarnpkg.com/@maizzle/framework/-/framework-4.4.6.tgz#90b1a2a727c4c7f2497bec1a7b14b9cbd09ee748"
+  integrity sha512-3GNDrrtqBcQD4YpVbuC5TgTNEVHP8D0v9v3ff5U96ZM0aYTM6552c1u9N2OeocoqrYEhaqtHBeqMaPfYCnoU/A==
   dependencies:
     "@maizzle/cli" "^1.5.1"
     autoprefixer "^10.4.14"
