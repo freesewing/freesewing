@@ -44,6 +44,6 @@ use a piece of tape as binding and tie, sewing it down to the top and leaving th
 - Bind the top edge of the pocket bag whilst leaving the remainder of tape free.
 - Finish the tape ends.
 
-## Step 3: Enjoy!
+## Étape 3: Profitez-en!
 
-That's it! Vous avez terminé ! Now go stuff your new pockets to the brim!
+Voilà! Vous avez terminé ! Now go stuff your new pockets to the brim!
