@@ -1,8 +1,8 @@
 ---
-title: "Leg Width"
+title: "Largeur des jambes"
 ---
 
-The width of the legs can be adjusted.
+La largeur des jambes peut être ajustée.
 
 ## Effet de cette option sur le modèle
 
