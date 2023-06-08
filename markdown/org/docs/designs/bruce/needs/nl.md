@@ -1,8 +1,8 @@
----
+- - -
 title: "Bruce boxer briefs: What You Need"
----
+- - -
 
-To make Bruce, you will need the following:
+Om Bruce te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
 - About 1 meter (1.1 yards) of a suitable fabric ([see Fabric options](/docs/patterns/bruce/fabric/))
