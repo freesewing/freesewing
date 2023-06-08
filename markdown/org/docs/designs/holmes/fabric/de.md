@@ -4,11 +4,11 @@ title: "Holmes deerstalker hat: Fabric Options"
 
 ### Hauptstoff
 
-For the main fabric of your hat, a thick fabric will work best to hold the shape but if you wanna go for a lighter fabric you can interface it to give it more body. Generally you want to use **wools** of coating weight but you can experiment with different weights and fabrics with the relevant interfacing.
+Für den Hauptstoff deines Hutes Ein dicker Stoff wird am besten funktionieren, um die Form zu halten, aber wenn du einen leichteren Stoff suchen möchtest, kannst du ihn so einstellen, dass er mehr Körper erhält. Generally you want to use **wools** of coating weight but you can experiment with different weights and fabrics with the relevant interfacing.
 
 <Note>
 
-A fun thing to try is printed cotton. Just double up the main fabric so each piece is double thickness. Then interface it with a **medium firm interfacing**.
+Eine lustige Sache zu versuchen, ist die Baumwolle. Verdoppeln Sie einfach den Hauptstoff, so dass jedes Stück ist doppelte Dicke. Then interface it with a **medium firm interfacing**.
 
 </Note>
 
@@ -22,7 +22,7 @@ Abhängig von der Dicke Ihres Stoffes und wie gut er seine Form beibehält, kön
 
 <Note>
 
-If you are trying to make a more Historical Holmes you can use **Tarlatan** which is a lightweight stiffened muslin. Just make sure you use natural fibres.
+If you are trying to make a more Historical Holmes you can use **Tarlatan** which is a lightweight stiffened muslin. Vergewissern Sie sich, dass Sie natürliche Fasern verwenden.
 
 </Note>
 
@@ -32,6 +32,6 @@ For the bill insert you want a firm but thin material. Sie können auch versuche
 
 <Note>
 
-Just remember. All of these are recommendations. If you want to use something different go for it!
+Denken Sie daran. All dies sind Empfehlungen. Wenn Sie etwas anderes verwenden wollen, gehen Sie dafür ein!
 
 </Note>
