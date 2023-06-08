@@ -1,9 +1,9 @@
----
+- - -
 title: "Cuff length"
----
+- - -
 
-Controls the length (height if you wish) of the cuffs.
+Bepaalt de lengte (hoogte indien gewenst) van de manchetten.
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlton_cufflength_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](carlton_cufflength_sample.svg "Effect van deze optie op het patroon")
