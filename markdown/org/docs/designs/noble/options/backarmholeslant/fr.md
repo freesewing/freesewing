@@ -1,10 +1,10 @@
 ---
-title: "Back armhole slant"
+title: "Inclinaison d'emmanchure dos"
 ---
 
 ***
 
-The **back armhole slant** slightly rotates the armhole around the back pitch point.
+Le blindage **de l'arrière** tourne légèrement l'armure autour du point d'inclinaison arrière.
 
 ## Effet de cette option sur le modèle
 
