@@ -1,5 +1,5 @@
 ---
-title: Head size
+title: Taille de la tête
 ---
 
 Controls the size of the bib, as it will be drafted to fit this head circumference.
