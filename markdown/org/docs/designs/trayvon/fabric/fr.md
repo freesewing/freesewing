@@ -1,36 +1,36 @@
----
+- - -
 title: "Trayvon tie: Fabric Options"
----
+- - -
 
 ## Tie fabric
 
-The ties you find in the store are typically made out of silk or some imitation silk poly. So it will come as no surprise that those are good options.
+Les liens que vous trouvez dans le magasin sont généralement faits de soie ou de poly de soie d'imitation. Il ne sera donc pas surprenant que ce soient de bonnes options.
 
-In general, you want something with good drape so that your tie hangs nicely. Cutting your tie on bias can help here too.
+En général, vous voulez quelque chose avec un bon drap, de sorte que votre cravate est bien suspendue. Couper votre cravate sur un parti pris peut vous aider ici aussi.
 
-Personally, I like using different fabrics for ties. Things like denim or corduroy make great ties, while being a bit different from the run-of-the-mill store-bought tie.
+Personnellement, j'aime utiliser différents tissus pour les attaches. Des choses comme le denim ou le corduroy font de grandes liens, tout en étant un peu différent de la cravate du magasin du ruisseau.
 
-Additionally, silk and silk imitation is slippery and tricky to work with. If this your first tie, consider an alternative fabric that is more forgiving.
+En outre, l'imitation de la soie et de la soie est glissante et délicate à utiliser. Si cette cravate est votre première cravate, pensez à un tissu alternatif plus pardonnant.
 
-Just make sure you pick a fabric that does not stretch or lose its shape easily. You want your tie to look sharp, not saggy.
+Il suffit de choisir un tissu qui ne s'étire pas ou ne perd pas sa forme facilement. Vous voulez que votre cravate apparaisse nette, pas agacée.
 
 ## Ligne de cravate
 
-The lining of the tie is the bit that is used at the tip to cover up the back. If you are not sure what I mean, look at the back of the tip of an existing tie. See that rectangular patch of fabric you can see there? That is the tie lining.
+La doublure de la cravate est le bit qui est utilisé à la pointe pour couvrir le dos. Si vous n'êtes pas sûr de ce que je veux dire, regardez l'arrière de la pointe d'une cravate existante. Voyez cette tache rectangulaire de tissu que vous pouvez voir là-bas? Telle est la ligne d'égalité.
 
-Your tie lining will add an extra fabric inside a part of your tie. So it is important to avoid bulk. Go for something thin, even when using a thicker tie fabric.
+Votre doublure de cravate ajoutera un tissu supplémentaire dans une partie de votre cravate. Il est donc important d'éviter les encombrements. Partez pour quelque chose de mince, même si vous utilisez un tissu de cravate plus épais.
 
-Make sure your lining drapes at least as good as your tie fabric, so that it doesn't interfere with the drape of your tie.
+Assurez-vous que vos draps de doublure sont au moins aussi bons que votre tissu de cravate, afin qu'il n'interfère pas avec le drapé de votre cravate.
 
-When in doubt, go for imitation silk. Do make sure to pick something that is a nice match, or contrast, with your tie fabric.
+En cas de doute, allez pour la soie d'imitation. Assurez-vous de choisir quelque chose qui correspond à un joli assortiment ou contraste avec le tissu de votre cravate.
 
 ## Interfaçage des cravates
 
-Your tie interfacing is the skeleton of your tie. It is the part that sits in the middle and that you will only see while constructing your tie.
+Votre cravate est le squelette de votre cravate. C'est la partie qui se trouve au milieu et que vous ne verrez que lors de la construction de votre cravate.
 
-Tie interfacing can be notoriously hard to get. The best tie interfacing is soft, fuzzy woven lambswool, but I have yet to walk into a fabric store that carries this.
+L'interfaçage des liaisons peut être notoirement difficile à obtenir. La meilleure interface de cravate est un agneau doux et flou tissé, mais je n'ai pas encore à entrer dans un magasin de tissu qui porte ceci.
 
-While you can get by with an alternative, like some wool fabric, or flannel, I typically re-use the interfacing from an old tie.
+Bien que vous puissiez vous débrouiller avec une alternative, comme un tissu de laine ou un flanque, je réutilise généralement l'interface à partir d'une cravate ancienne.
 
 <Note>
 
