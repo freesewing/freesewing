@@ -1,11 +1,11 @@
----
+- - -
 title: "Sven sweatshirt: What You Need"
----
+- - -
 
-To make Sven, you will need the following:
+Um Sven zu erstellen, benötigst du Folgendes:
 
 - Grundlegendes Nähzubehör
-- About 1.75 meters (1.9 yards) of a suitable fabric ([see Fabric options](#fabric-options))
+- Etwa 1.75 cm (1.9") eines geeigneten Stoffes ([siehe Stoffoptionen](#fabric-options))
 - Ribbing Stoff für die Manschetten und Nackenöffnung
 
 <Note>
