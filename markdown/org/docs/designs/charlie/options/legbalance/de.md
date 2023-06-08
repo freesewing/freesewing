@@ -1,15 +1,15 @@
----
+- - -
 title: "Leg balance"
----
+- - -
 
-Controls the proportion between the front and back part of the legs.
+Steuert den Anteil zwischen Vorder- und Rückenteil der Beine.
 
-The back of the trouser legs are always wider than the front. This controls by how much.
+Die Rückseite der Hosenbeine ist immer breiter als die Vorderseite. Das kontrolliert wie viel.
 
 <Note>
 
-Increasing this will make the front leg panel narrower.  
-This makes the wearer look more skinny.
+Dies zu erhöhen wird die Vorderbeinplatte verkleinern.  
+Dadurch wird der Träger eher dünn aussehen.
 
 This trick is often used in womenswear jeans
 (now you know why you can't find womenswear jeans with functional front pockets).
@@ -18,4 +18,4 @@ This trick is often used in womenswear jeans
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_legbalance_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](charlie_legbalance_sample.svg "Effekt dieser Option auf das Schnittmuster")
