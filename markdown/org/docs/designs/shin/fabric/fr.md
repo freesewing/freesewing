@@ -1,10 +1,10 @@
----
+- - -
 title: "Shin swim trunks: Fabric Options"
----
+- - -
 
-Swim trunks should be made out of a material with stretch that is suitable for being in the water.
+Les troncs de nage doivent être fabriqués à partir d'un matériau avec étirement qui convient à être dans l'eau.
 
-Typically, this falls apart in a few categories:
+Généralement, cela se décompose dans quelques catégories :
 
 - Le nylon mélangé avec élastene, spandex ou lycra est doux et étiré. C'est de cela que sont fabriqués les maillots de bain les plus décontractés.
 - Le polyester mélangé avec le PBT (polybutylène téréphtalate) est moins souple au toucher, mais résistant au chlore et à l'eau salée. C'est de cela que l'on fabrique beaucoup de maillots de bain compétitifs.
