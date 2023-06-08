@@ -1,8 +1,8 @@
----
+- - -
 title: "Inner pocket welt height"
----
+- - -
 
-Controls the size of the welts on the inner pocket.
+Contrôle la taille des joints sur la poche intérieure.
 
 ## Effet de cette option sur le motif
 
