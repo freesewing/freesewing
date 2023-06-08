@@ -1,11 +1,11 @@
 ---
-title: "Front shoulder width"
+title: "Schouderbreedte vooraan"
 ---
 
 ***
 
-The **front shoulder width** option controls the width of the shoulders at the front, relative to the back.
+De optie **breedte van de voorste schouder** bepaalt de breedte van de schouders vooraan ten opzichte van de achterkant.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_frontshoulderwidth_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](noble_frontshoulderwidth_sample.svg "Effect van deze optie op het patroon")
