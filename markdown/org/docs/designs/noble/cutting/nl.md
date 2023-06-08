@@ -2,12 +2,12 @@
 title: "Noble body block: Cutting Instructions"
 ---
 
-**Main fabric**
+**Buitenstof**
 
 - Cut **1 Front Inside** part on the fold.
 - Cut **2 Front Outside** part.
 
-### Shoulder dart
+### Schouder neep
 
 - Cut **2 Back Inside** part.
 - Cut **2 Back Outside** part.
@@ -29,8 +29,8 @@ If you do not have someone to help pin you into Noble then you may find it easie
 ###### Noble is a block, not a pattern
 
 A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Dit wordt soms ook een paspatroon genoemd, alhoewel puristen zeggen dat dit twee verschillende dingen zijn.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Blokken worden meestal niet gemaakt zoals is, maar dienen als basis voor andere patronen.
 
 </Note>
