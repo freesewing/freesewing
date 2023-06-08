@@ -1,8 +1,8 @@
----
+- - -
 title: "Bruce boxer briefs: What You Need"
----
+- - -
 
-To make Bruce, you will need the following:
+Para hacer Bruce, necesitarás lo siguiente:
 
 - Suministros básicos de costura
 - About 1 meter (1.1 yards) of a suitable fabric ([see Fabric options](/docs/patterns/bruce/fabric/))
