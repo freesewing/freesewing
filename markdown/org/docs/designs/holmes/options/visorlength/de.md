@@ -1,10 +1,10 @@
----
+- - -
 title: "Visor length"
----
+- - -
 
 ***
 
-Controls the length of the visor
+Steuert die Länge des Mützenschirms
 
 ## Effekt dieser Option auf das Schnittmuster
 
