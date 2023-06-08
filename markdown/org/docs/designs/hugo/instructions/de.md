@@ -1,6 +1,6 @@
----
+- - -
 title: "Hugo hoodie: Sewing Instructions"
----
+- - -
 
 <Note>
 
@@ -46,7 +46,7 @@ Diese Reihe an 6 Episoden zeigt dir, wie du deinen Hoodie von Anfang bis Ende n�
 
 - Die Seite des Ärmels mit der höheren/spitzeren Kante oben ist die Rückseite des Ärmels.  Sie ist auch durch einen doppelten Knips auf dem Schnittmuster gekennzeichnet.
 
-- Nähe den vorderen Ärmel rechts auf rechts auf das Vorderteil. Die (einfachen) Knipse am Vorderteil und am Ärmel liegen aufeinander. Stitch the seam.  Do this for both sleeve pieces.
+- Nähe den vorderen Ärmel rechts auf rechts auf das Vorderteil. Die (einfachen) Knipse am Vorderteil und am Ärmel liegen aufeinander. Nähen Sie die Naht.  Tun Sie dies für beide Ärmel.
 
 - Um die Naht zu beenden, können Sie eine dieser Methoden verwenden:
 
@@ -92,7 +92,7 @@ Diese Reihe an 6 Episoden zeigt dir, wie du deinen Hoodie von Anfang bis Ende n�
 
 ### Step 8: Preparing a Neckband and Attaching the Hood
 
-- Cut a cross-wise strip of fabric out of your main fabric, your neck opening + 2cm (3/4 inch) long and triple your neck seam allowance wide.
+- Schneiden Sie einen quer gerichteten Stoffstreifen aus Ihrem Hauptstoff, Ihre Nackenöffnung + 2cm lang (3/4 Zoll) und dreifachen Sie Ihren Nackennaht breit.
 - Platziere gute Seiten zusammen auf das Halsbindungsstück, Dann nähen Sie eine Naht von 1 cm entlang der kurzen Seite, um die Bindung zu einem Rundband zu machen.
 - Von der Rückseite bis zur rechten Seite der Halslinie passen. Legen Sie die Kapuzenleiste an die Rückseite der Halslinie an.
 - An der Vorderseite arbeiten und die Kapuze an den Hals befestigen.
