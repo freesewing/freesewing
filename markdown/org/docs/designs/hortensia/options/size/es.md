@@ -1,8 +1,8 @@
----
+- - -
 title: "Size"
----
+- - -
 
-Controls the overall size of the handbag.
+Controla el tamaño total del bolso.
 
 Rather than using measurements, Hortensia's size is determined by scaling fixed values.
 
@@ -25,4 +25,4 @@ Turn on paperless to see the measurements of the handbag. This will help you to 
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](hortensia_size_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](hortensia_size_sample.svg "Efecto de esta opción en el patrón")
