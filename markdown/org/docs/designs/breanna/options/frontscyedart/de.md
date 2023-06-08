@@ -1,9 +1,9 @@
----
+- - -
 title: "Front scye dart"
----
+- - -
 
-The amount to take out in a dart at the front of the armhole.
+Die Menge, die in einem Abnäher an der Vorderseite des Armlochs entnommen werden muss.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_frontscyedart_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](breanna_frontscyedart_sample.svg "Effekt dieser Variable auf das Schnittmuster")
