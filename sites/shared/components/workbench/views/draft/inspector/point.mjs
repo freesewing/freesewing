@@ -10,14 +10,14 @@ const RevealPoint = ({ point, pointName, scale, part, id, inspector }) => {
   const r = 15 * scale
   const { x, y } = point
   const { topLeft, bottomRight } = part
-  const classes = `stroke-sm stroke-lining`
+  const classes = `stroke-sm stroke-contrast`
   return (
     <g>
       <circle
         cx={x}
         cy={y}
         r={r}
-        className={`${classes} fill-lining pulse-fill hover:cursor-pointer`}
+        className={`${classes} fill-contrast pulse-fill hover:cursor-pointer`}
         onClick={() => inspector.reveal(id)}
       />
       <path
@@ -26,7 +26,7 @@ const RevealPoint = ({ point, pointName, scale, part, id, inspector }) => {
       m 0 ${2 * r} L ${x} ${bottomRight.y}
       M ${topLeft.x} ${y} L ${x - r} ${y}
       m ${2 * r} 0 L ${bottomRight.x} ${y}`}
-        className={`${classes} lashed`}
+        className={`stroke-xl stroke-contrast lashed opacity-30`}
       />
     </g>
   )
@@ -34,7 +34,7 @@ const RevealPoint = ({ point, pointName, scale, part, id, inspector }) => {
 
 const Cross = ({ point, color = 'primary' }) => (
   <path
-    d={`M ${point.x - 2},${point.y - 2} l 4,4 m -4,0 l 4,-4`}
+    d={`M ${point.x - 1.5},${point.y - 1.5} l 3,3 m -3,0 l 3,-3`}
     className={`stroke-xs ${color}`}
   />
 )
@@ -113,19 +113,12 @@ const InspectPoint = ({
   scale = 1,
   t,
   inspector,
-  color = 'lining',
+  color = 'contrast',
 }) => {
   const id = utils.getId({ stackName, pointName, settings: { idPrefix: 'point-' } })
 
   return (
     <g>
-      <circle cx={point.x} cy={point.y} r={2 * scale} className={`stroke-xs stroke-${color}`} />
-      <circle
-        cx={point.x}
-        cy={point.y}
-        r={2 * scale}
-        className={`stroke-xs fill-${color} opacity-10`}
-      />
       <Cross {...{ point, color }} />
       <circle
         cx={point.x}
@@ -135,6 +128,12 @@ const InspectPoint = ({
         onClick={(evt) =>
           inspector.show(pointInfo({ id, stackName, pointName, point, inspector, t }))
         }
+      />
+      <circle
+        cx={point.x}
+        cy={point.y}
+        r={2 * scale}
+        className={`stroke-sm hover:stroke-3xl stroke-${color}`}
       />
       {inspector.data.reveal[id] ? (
         <RevealPoint {...{ point, pointName, scale, part, id, inspector }} />

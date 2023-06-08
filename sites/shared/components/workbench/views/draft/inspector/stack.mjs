@@ -1,5 +1,5 @@
 import { Stack as ShowStack, utils } from 'pkgs/react-components/src/index.mjs'
-import { Attributes, pointCoords, KeyValTable, PathBanner, bboxD } from './shared.mjs'
+import { Attributes, pointCoords, KeyValTable } from './shared.mjs'
 import { TrashIcon, PrintIcon, SearchIcon } from 'shared/components/icons.mjs'
 import { formatMm } from 'shared/utils.mjs'
 
@@ -67,22 +67,27 @@ export const stackInfo = ({ stackName, stack, inspector, id, t }) => ({
 
 export const InspectStack = ({ stackName, stack, settings, t, inspector }) => {
   const id = utils.getId({ stackName, settings: { idPrefix: `stack-` } })
-  const d = bboxD({ ...stack })
+
+  const reveal = inspector.data.reveal[id] ? true : false
 
   return (
-    <g transform={stack.attributes.list.transform[0]}>
-      {inspector.data.reveal[id] ? (
-        <path d={d} className="stroke-3xl text-warning pulse-stroke" />
-      ) : null}
-      <path
-        d={d}
-        id={id}
-        className={`stroke-note lashed opacity-30 fill-fabric hover:opacity-90 hover:cursor-pointer hover:stroke-mark hover:stroke-3xl`}
-        style={{ fillOpacity: 0 }}
-        onClick={(evt) => inspector.show(stackInfo({ stackName, stack, inspector, id, t }))}
+    <>
+      <rect
+        transform={stack.attributes.list.transform[0]}
+        x={stack.topLeft.x}
+        y={stack.topLeft.y}
+        width={stack.width}
+        height={stack.height}
+        className={`stroke-secondary fill-secondary lashed
+          ${reveal ? 'stroko-80 filo-5' : 'stroko-30 filo-0'}
+          hover:stroko-90 hover:filo-5 hover:cursor-pointer hover:stroke-3xl `}
+        style={{ illOpacity: reveal ? 0.3 : 0.1 }}
+        onClick={(evt) => {
+          inspector.reveal(id)
+          inspector.show(stackInfo({ stackName, stack, inspector, id, t }))
+        }}
       />
-      <PathBanner id={id} text={stackName} />
-    </g>
+    </>
   )
 }
 

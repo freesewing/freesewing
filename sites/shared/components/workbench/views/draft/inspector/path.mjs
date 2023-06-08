@@ -163,21 +163,16 @@ const InspectPath = ({ stackName, pathName, path, part, settings, t, inspector }
 
   return (
     <g>
-      {inspector.data.reveal[id] ? (
-        <path d={path.d} className="stroke-3xl text-warning pulse-stroke" />
-      ) : null}
       <path
-        id={id}
         d={path.d}
         {...getProps(path)}
-        className="opacity-0 stroke-5xl text-primary hover:opacity-25 hover:cursor-pointer"
-        onClick={(evt) =>
-          inspector.show(pathInfo({ id, pathName, stackName, path, pathObj, t, ops, inspector }))
-        }
+        className={`hover:opacity-20 text-primary hover:cursor-pointer ${
+          inspector.data.reveal[id] ? 'pulse-stroke stroke-3xl' : 'opacity-0 stroko-0 stroke-5xl'
+        }`}
+        onClick={(evt) => inspector.show(pathInfo({ id, pathName, stackName, path, t, inspector }))}
         markerStart="none"
         markerEnd="none"
       />
-      <PathBanner id={id} text={pathName} />
     </g>
   )
 }
@@ -195,7 +190,7 @@ export const Path = ({
   inspector,
 }) => (
   <>
-    <ShowPath {...{ stackName, pathName, path, part, settings, components, t }} />
     <InspectPath {...{ stackName, pathName, path, part, settings, t, inspector }} />
+    <ShowPath {...{ stackName, pathName, path, part, settings, components, t }} />
   </>
 )
