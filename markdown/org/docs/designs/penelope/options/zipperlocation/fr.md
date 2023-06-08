@@ -1,6 +1,6 @@
----
+- - -
 title: "Zipper location"
----
+- - -
 
 Contrôle l'emplacement du zipper. Soit à la couture arrière, soit à la couture latérale
 
