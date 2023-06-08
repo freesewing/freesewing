@@ -1,8 +1,8 @@
----
+- - -
 title: "Clavi"
----
+- - -
 
-Whether or not to include guides for clavi
+Inclure ou non des guides pour la bande de pourpre
 
 ## Effet de cette option sur le motif
 
