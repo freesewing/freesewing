@@ -1,11 +1,11 @@
----
+- - -
 title: "Shoulder ease"
----
+- - -
 
-![The shoulder ease option on Diana](./shoulderease.svg)
+![Die Schulterleicht-Option auf Diana](./shoulderease.svg)
 
-This option controls the position of your shoulder seam.
+Diese Option steuert die Position Ihrer Schulternaht.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_shoulderease_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](diana_shoulderease_sample.svg "Effekt dieser Option auf das Schnittmuster")
