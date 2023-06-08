@@ -1,6 +1,6 @@
----
+- - -
 title: "Yuri hoodie: Sewing Instructions"
----
+- - -
 
 <Note>
 
@@ -75,7 +75,7 @@ Il ne s'agit là que d'une méthode d'ourlet, si vous préférez une autre faço
 
 ## Étape 7 : Préparer la doublure et l'extérieur de la capuche
 
-Follow this step twice, once for the outer hood and once for the lining hood.
+Suivez cette étape deux fois, une fois pour la capuche extérieure et une fois pour la doublure de la capuche.
 
 - Endroit contre endroit, coudre le bord long du centre de la capuche vers le bord extérieur des côtés de la capuche.
 - Endroit contre endroit, coudre le bord long restant du centre de la capuche vers le bord extérieur de l'autre côté de la capuche.
@@ -92,7 +92,7 @@ Il est recommandé d'utiliser **la méthode de finition 1** pour cette étape, q
 
 - _Endroit contre endroit_, épinglez la capuche extérieure et la capuche de doublure en faisant correspondre les coutures.
 - Coudre le bord épinglé ensemble.
-- Couper la marge de couture à 1 cm (3/8 po) si la marge de couture que vous avez choisie est plus grande et que vous n'avez pas utilisée et que vous n'avez pas de surjeteuse. Otherwise _do not_ trim the seam.
+- Couper la marge de couture à 1 cm (3/8 po) si la marge de couture que vous avez choisie est plus grande et que vous n'avez pas utilisée et que vous n'avez pas de surjeteuse. Sinon _ne pas_ couper la la marge.
 - Retournez la capuche vers l'extérieur et repassez les coutures à plat.
 - Sur l'extérieur, surpiquez le long du bord de la capuche, à environ 1,5 - 2cm (5/8 - 3/4 pouces) du bord. Assurez-vous que votre surpiqûre doit proche mais ne prenne pas les marges de couture du bord extérieur de la capuche. Cela créera une bordure décorative, avec la marge de couture proche en rendant la bordure un peu bombée.
 - Avec des bords bruts ensemble, surpiquez ou surjetez le bas de la capuche. Vous pouvez le faire avec une surjeteuse ou un point ziz-zag ou un point overlock sur une machine ordinaire.
@@ -149,4 +149,4 @@ Si vous n'utilisez pas de bande d'encolure vous voudrez finir la couture avec **
 
 ## Etape 12 : Ta-daaa
 
-Enjoy your Yuri!
+Profitez de votre Yuri!
