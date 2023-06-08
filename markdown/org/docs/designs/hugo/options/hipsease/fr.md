@@ -1,8 +1,8 @@
----
+- - -
 titre : "Aisance pour les hanches"
----
+- - -
 
-How much room do you want at the hips?
+Combien d'aisance voulez-vous pour les hanches ?
 
 ## Effet de cette option sur le motif
 
