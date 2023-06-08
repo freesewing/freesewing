@@ -1,11 +1,11 @@
 ---
-title: "High bust width"
+title: "Hoge buste-breedte"
 ---
 
 ***
 
-The **high bust width** option allows you to tweak the high bust width at the front.
+De **hoge bustebreedte** optie maakt het mogelijk om de bustebreedte aan het voorpand aan te passen.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_highbustwidth_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](noble_highbustwidth_sample.svg "Effect van deze optie op het patroon")
