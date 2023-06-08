@@ -1,5 +1,5 @@
 ---
-title: "Noble body block"
+title: "Bloc de corps Noble"
 ---
 
 <PatternDocs pattern='noble' />
