@@ -1,8 +1,8 @@
----
+- - -
 title: "Cross seam bend"
----
+- - -
 
-Controls the curvature of the cross seam curve.
+Contrôle la courbure de la courbe de couture croisée.
 
 <Note>
 
