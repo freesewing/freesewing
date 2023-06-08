@@ -1,21 +1,21 @@
----
+- - -
 title: "Bruce boxer briefs: Sewing Instructions"
----
+- - -
 
 <YouTube id='PL1gv5yv3DoZME1xe5fBEHd0rKPW_xNpF3' playlist />
 
 ### Paso 1: Vuelve al primer lado
 
-![Join back to first side](step01.png)
+![Volver al primer lado](step01.png)
 
-Align the side of the back (piece 1) with the side (piece 3) making sure to put the good sides together. Since the side (piece 3) is symmetric, you can't go wrong.
+Alinear el lado de la parte trasera (parte 1) con el lado (parte 3) asegurándose de juntar los lados buenos. Since the side (piece 3) is symmetric, you can't go wrong.
 
 <Tip>
 If you look at the part 3 (the side) with the text so you can read it, then then left side should be attached to the back,
 and the right side attached to the front & inset. The notches will also help you figure it out.
 </Tip>
 
-Serge them together, taking into account that the seam allowance is 1cm. So aim the outside needle of your serger 1cm from the edge of your fabric.
+Servir juntos teniendo en cuenta que la franquicia de costura es 1cm. Así que apriete la aguja exterior de su serger a 1cm del borde de su tejido.
 
 > Si la métrica no es su bolsa, 1 cm es de 3/8 pulgadas.
 
@@ -23,33 +23,33 @@ Serge them together, taking into account that the seam allowance is 1cm. So aim 
 
 ### Paso 2: Vuelve al segundo lado
 
-![Join back to second side](step02.png)
+![Volver al segundo lado](step02.png)
 
 Align the other side of the back (piece 1) with the second side (piece 3) making sure to put the good sides together. Again, because the side (piece 3) is not symmetric, be careful to correctly match them.
 
-Serge them together, as you did on the other side.
+Servir juntos, como hizo usted en el otro lado.
 
 > La espalda y los lados ahora se unen. Pongámoslos a un momento mientras dirigimos nuestra atención a las otras piezas.
 
 ### Paso 3: Únete al primer recuadro y frontales
 
-![Start at one end](step03-a.png) ![Continue to align the pieces as you move on](step03-b.png) ![Until you reach the other end](step03-c.png)
+![Comenzar en un final](step03-a.png) ![Continúa alineando las piezas a medida que avanzas](step03-b.png) ![Hasta llegar al otro extremo](step03-c.png)
 
-Joining the inset (piece 4) with the fronts (piece 2) requires you to serge them together across their curvy edges.
+Unirse al recuadro (pieza 4) con los frontales (pieza 2) requiere que los sirvas juntos a través de sus bordes curvos.
 
 > Recuerde que tiene dos frentes. Tienes que ponerlas encima y tratarlas como un frente de doble capa.
 
-Faced with a tricky seam like this, you might reach for your pins or basting thread, but don't. Pinning or basting this will make it harder to sew.
+Enfrentado a una costura complicada como ésta, usted podría llegar a los pines o al bastar el hilo, pero no. Fijar o derribar esto hará que sea más difícil coser.
 
-Instead, start at the top of the curved seam, aligning the pieces as shown, and slowly serge them together a few cm.
+En lugar de ello, empiece en la parte superior de la costura curvada, alineando las piezas como se muestra y sirviéndolas lentamente unos cuantos cm.
 
-As you move along, manipulate the fabric to make sure both edges stay on top of each other as you feed them through your serger.
+A medida que se mueve, manipule la tela para asegurarse de que ambos bordes se mantengan sobre los demás mientras se alimentan a través de su sarga.
 
-As you manipulate the fabric to get it aligned properly, it's easy to stretch one part more than the other. The notch in the curved edge can help you make sure you're keeping things even.
+A medida que se manipula el tejido para que se alinee adecuadamente, es fácil estirar una parte más que la otra. La escalera en el borde curvado puede ayudarle a asegurarse de que mantiene las cosas igualmente.
 
-Once you've passed the notch, things will get easier. This would also be a good time to compare the remaining length of the curved seams. If one is a bit longer than the other, simply stretch the shorter one until they match up.
+Una vez que haya superado, las cosas se harán más fáciles. También sería un buen momento para comparar la longitud restante de las costuras curvas. Si uno es un poco más largo que el otro, simplemente estira el más corto hasta que igualen.
 
-If the difference is too big however, just leave it. It will get cut off when we do the crotchseam.
+Sin embargo, si la diferencia es demasiado grande, simplemente déjenla. It will get cut off when we do the crotchseam.
 
 <Note>
 
@@ -70,11 +70,11 @@ Mantenga los dardos delanteros por separado y dé la vuelta a toda la cosa, y us
 
 ### Paso 4: Unirse al segundo recuadro y frontales
 
-![Join second inset and fronts](step03-d.png)
+![Unir segundo recuadro y frontales](step03-d.png)
 
-After you have joined the first inset and the fronts, continue with the second one.
+Después de que te hayas unido a la primera entrada y a los frentes, continúa con la segunda.
 
-With the fronts and insets joined together, you are left with 3 parts:
+Con los frontales e inets unidos juntos, quedas con 3 partes:
 
 - Los conjuntos y frontales unidos
 - Los lados unidos y atrás
@@ -82,11 +82,11 @@ With the fronts and insets joined together, you are left with 3 parts:
 
 ### Paso 5: Cerrar el dart de frontales
 
-![Close the fronts dart](step05.png)
+![Cerrar el dart frontal](step05.png)
 
-Fold the fronts double along the center fronts line, so that the tusks at the bottom line up.
+Doblar los frentes doble a lo largo de la línea frontal central, de modo que los colmillos en la línea inferior hacia arriba.
 
-Serge the sides of the tusks to close the fronts dart. For best results, start at the top of the seam (where the fabric is folded) and work your way to the bottom.
+Servir los lados de los colmillos para cerrar el dart de los frentes. Para obtener mejores resultados, empiece en la parte superior de la costura (donde se pliega la tela) y trabaje hasta el fondo.
 
 <Tip>
 
@@ -99,7 +99,7 @@ Puede decirse que no tener una costura expuesta en esta zona es más cómodo par
 
 ### Paso 6: Opcional: Topstitch
 
-![Boxers with (left) and without topstitching](step06.jpg)
+![Cajas con (izquierda) y sin empalmar](step06.jpg)
 
 <Note>
 
@@ -108,9 +108,9 @@ Es bueno romper visualmente una tela sólida, pero si estás usando una impresi�
 
 </Note>
 
-If you want to topstitch your serged seams for visual effect, you should do so now.
+Si desea unir sus costuras sergeadas para el efecto visual, debería hacerlo ahora.
 
-If you topstitch, simply do it for every seam, making sure to do so with a flexible stitch. You can use a zig-zag stitch or twin needle if you don't have a coverlock or specific flexible stitch setting.
+Si usted se une, simplemente hágalo por cada costura, asegurándose de hacerlo con una stitch flexible. Puedes usar una ranura zig-zag o una aguja gemela si no tienes un candado o un ajuste de stitch flexible específico.
 
 <Tip>
 
@@ -122,29 +122,29 @@ La costura se detiene a mitad de camino (donde termina el dardo), pero la parte 
 
 ### Paso 7: Únete al primer lado de los frentes
 
-![Join the first side to the fronts](step07.png)
+![Únete al primer lado de los frentes](step07.png)
 
-Align the side edge of the first side with the edge made up of the fronts+inset (good sides together as usual) and serge them together.
+Alinear el borde lateral del primer lado con el borde formado por los frontos+inset (buenos lados juntos como de costumbre) y sirvan juntos.
 
 ### Paso 8: Únete al segundo lado de los frentes
 
-![Join the second side to the fronts](step08.png)
+![Únete al segundo lado de los frentes](step08.png)
 
-Do the same for the second side.
+Haga lo mismo con el segundo lado.
 
 ### Paso 9: Opcional: Enrollar
 
-![Boxers with (left) and without topstitching](step06.jpg)
+![Cajas con (izquierda) y sin empalmar](step06.jpg)
 
-If you've topstitched before, make sure to do the same now for the seams you made in step 7 and 8.
+Si has topstitched antes, asegúrate de hacer lo mismo ahora para las costuras que has hecho en los pasos 7 y 8.
 
 ### Paso 10: Termina la costura de crotchseam
 
-![Finish the crotchseam](step10.png)
+![Terminar la costura](step10.png)
 
-We will now serge the arched opening in the back part to the front parts of the boxers, made up of the fronts and insets.
+Ahora seremos la abertura arqueada en la parte posterior a las partes delanteras de los boxeadores, formados por los frentes e insets.
 
-The notches on the back piece will help you. There's the center notch, and the other two notches should match up with where the fronts and inset pieces are joined.
+Las muñecas de la parte trasera te ayudarán. Está el centro y las otras dos muelles deben coincidir con donde se unen los frontales y las piezas de incrustación.
 
 <Tip>
 
@@ -156,9 +156,9 @@ Tomalo lento, y sé **muy conocido** de dónde corta tu espada serger.
 
 ### Paso 11: Hem la primera pierna
 
-![Hem the first leg](step11.png)
+![Hem la primera pierna](step11.png)
 
-Time to hem the legs. Hem them as you would do any other stretchy knit. Go for a flexible stitch. You can use a zig-zag stitch or twin needle if you don't have a coverlock or specific flexible stich setting.
+Es hora de cortar las piernas. Cámbielos como lo harías con cualquier otro tejido. Vaya a un stitch flexible. Puedes usar una ranura zig-zag o una aguja gemela si no tienes un candado o un ajuste flexible específico.
 
 <Note>
 
@@ -170,15 +170,15 @@ Aún mejor: anclar las dos piernas en el lugar y sólo coser cuando estés conte
 
 ### Paso 12: Hem la segunda pierna
 
-![Hem the second leg](step12.png)
+![Hem la segunda pierna](step12.png)
 
-You know it makes sense.
+Ustedes saben que tiene sentido.
 
 ### Paso 13: Haz tu elástico en un bucle
 
-![Make your elastic into a loop](step13.png)
+![Haz que tu elástico se convierta en un ciclo](step13.png)
 
-Sew both ends of your elastic together with good sides together.
+Difunde ambos extremos de su elástico junto con buenos lados juntos.
 
 <Note>
 
@@ -192,13 +192,13 @@ Haz una marca de dónde se une el borde, añade 2 cm de costura, y esa es tu lon
 
 ### Paso 14: Adjuntar elástico a cintura
 
-![Attach elastic to waist](step14.png)
+![Adjuntar elástico a cintura](step14.png)
 
-Attach the elastic to the waist.
+Adjuntar el elástico a la cintura.
 
-Do so good sides together if you're using a flexible stitch or twin needle on a conventional sewing machine.
+Hacer tan buenos lados juntos si se utiliza una tirita flexible o una aguja gemela en una máquina de coser convencional.
 
-If you're using a coverlock, put the elastic on top of the good side of the fabric.
+Si estás usando una cubierta, pon el elástico en la parte superior del buen lado de la tela.
 
 <Tip>
 
@@ -215,4 +215,4 @@ Al coser, estira elástica y teje juntos entre cada conjunto de pines quitando l
 
 ![Yay! Yay! Yay! You've made it](step15.png)
 
-Trim any excess fabric you might have at elastic or hem, and any loose threads.
+Recorta cualquier tejido excedente que puedas tener en elástico o en el tubo, y cualquier hilo suelto.
