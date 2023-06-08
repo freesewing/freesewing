@@ -1,6 +1,6 @@
----
+- - -
 title: "Cathrin corset: Sewing Instructions"
----
+- - -
 
 <Note>
 
@@ -10,112 +10,112 @@ te maken. Deze instructies zijn slechts één manier. Met deze methode raad ik a
 
 Beginnende korsettenmakers zouden de tutorials van [Sidney Eileen](http://www.sidneyeileen.com), die verschillende bouwmethodes toont, moeten lezen. [Foundations Revealed](https://www.foundationsrevealed.com) is een paywall site voor corset makers, met enkele gratis uitzonderlijke artikelen voor niet-leden.
 
-#### Check the original tutorial
+#### Bekijk de originele tutorial
 
-This pattern is based on [this tutorial by Cathrin Alen](https://katafalk.wordpress.com/2010/06/24/underbust-pattern-tutorial/). Cathrin heeft ook [dit informatieve bericht over het maken van korsets](https://katafalk.wordpress.com/2009/05/05/03how-i-sew-korsets/) op haar blog, die je misschien nuttig vindt.
+Dit patroon is gebaseerd op [deze tutorial van Cathrin Alen](https://katafalk.wordpress.com/2010/06/24/underbust-pattern-tutorial/). Cathrin heeft ook [dit informatieve bericht over het maken van korsets](https://katafalk.wordpress.com/2009/05/05/03how-i-sew-korsets/) op haar blog, die je misschien nuttig vindt.
 
 </Note>
 
 ## Stap 1: Stik de boningrails in het midden
 
-![Place outer Panel 1 on core Panel 1, bad sides together](step01.png)
+![Plaats buitenpaneel 1 op kern Paneel 1, slechte kanten op elkaar](step01.png)
 
-Start with the center front pieces. For an 11-panel Cathrin, this will be Panel 1. Place the outer Panel 1 on the core Panel 1, bad sides together.
+Begin met de middelste voorpand. Voor een 11-paneel Kathrin, zal dit paneel paneel 1 zijn. Plaats het buitenpaneel 1 op het kern paneel 1, slechte kanten op elkaar.
 
-With a small stitch width (I set mine to “2”), sew a line straight down the center front. Then sew two boning channels to either side, allowing a bit of extra space, about 2mm, in addition to the width of your boning.
+Met een kleine naaimachbreedte (ik zet mijn op “2”), naai een rechte lijn aan het middenvoor. Stik dan twee beenkanalen aan beide zijden, wat een beetje extra ruimte geeft, ongeveer 2 mm, in aanvulling op de breedte van de boning.
 
 ## Stap 2: Bevestig het eerste zijpaneel
 
-![Attach Panel 2](step02.png)
+![Bevestig Paneel 2](step02.png)
 
-Take the next piece. For an 11-panel Cathrin, this will be Panel 2.
+Sla het volgende stuk. Voor een 11-paneel Kathrin zal dit paneel 2 zijn.
 
-Place the outer Panel 2 on the outer Panel 1, _good sides together_.
+Plaats het buitenpaneel 2 in het buitenpaneel 1, _goede kanten op elkaar_.
 
-Place the core Panel 2 on the core Panel 1, _good sides together_.
+Plaats de core Panel 2 in het core Panel 1, _goede kanten op elkaar_.
 
-Ensure that the four layers of fabric line up perfectly. Double check that you haven’t mixed up pattern pieces or flipped any over by mistake.
+Zorg ervoor dat de vier lagen stof perfect omhoog. Controleer twee: je hebt patroondelen niet gemengd of per ongeluk omgedraaid.
 
-Match up the four layers of fabric at the narrowest part, _good sides together_, and pin. Then match the top and bottom of each panel and pin. Finally, pin the rest of the edge in place. Use as many pins as needed to make sure the panels stay perfectly aligned.
+Combineer de vier lagen stof aan het smalste gedeelte, _goede kanten op elkaar_, en speld. Vervolgens de bovenkant en onderkant van elk paneel en pin overeenkomen. Speld ten slotte de rest van de rand vast. Gebruik zoveel spelden als nodig om ervoor te zorgen dat de panelen perfect op elkaar zijn afgestemd.
 
-Sew the seam.
+Stik de naad.
 
 ## Stap 3: Stik de beenrails
 
-![Press flat and sew boning channel](step03.png)
+![Strijk plat en stik het botingkanaal](step03.png)
 
-Press both layers of Panel 2 away from the center, using the iron to ease the material where the seams curve.
+Strijk beide lagen van Paneel 2 uit de buurt van het midden, met behulp van het ijzer om het materiaal waar de curve nadert aan te vullen.
 
-Edgestitch right along the folded edge, just 1-2mm from the seam line. Sew slowly and keep an eye on the stitching to ensure that the distance is kept even at all times. The purpose of adding this topstitch line is to relieve some stress from the connecting seam.
+Stik rechts langs de geplooide rand, slechts 1-2mm van de naadlijn. Stik langzaam en let op het stiksel om ervoor te zorgen dat de afstand te allen tijde bewaard wordt. Het doel van het toevoegen van deze doorpitlijn is om wat stress van de aansluitnaad te verlichten.
 
-Topstitch another seam parallel to the first seam, allowing a bit of extra space, about 3mm, in addition to the width of your boning.
+Stik een andere naad parallel aan de eerste naad, wat een beetje extra spatie, ongeveer 3 mm, naast de breedte van je boning.
 
 ## Stap 4: Bevestig het volgende paneel
 
-![Attach Panel 3](step04.png)
+![Bevestig Paneel 3](step04.png)
 
-Take the next piece. For an 11-panel Cathrin, this will be Panel 3.
+Sla het volgende stuk. Voor een 11-paneel Kathrin zal dit paneel 3 zijn.
 
-Place the outer Panel 3 on the outer Panel 2, _good sides together_.
+Plaats het buitenpaneel 3 op het buitenpaneel 2, _goede kanten op elkaar_.
 
-Place the core Panel 3 on the core Panel 2, _good sides together_.
+Plaats de core Panel 3 in de kern Paneel 2, _goede kanten op elkaar_.
 
-Match up the four layers of fabric at the narrowest part, _good sides together_, and pin. Then match the top and bottom of each panel and pin. Finally, pin the rest of the edge in place. Use as many pins as needed to make sure the panels stay perfectly aligned.
+Combineer de vier lagen stof aan het smalste gedeelte, _goede kanten op elkaar_, en speld. Vervolgens de bovenkant en onderkant van elk paneel en pin overeenkomen. Speld ten slotte de rest van de rand vast. Gebruik zoveel spelden als nodig om ervoor te zorgen dat de panelen perfect op elkaar zijn afgestemd.
 
-Sew the seam.
+Stik de naad.
 
 ## Stap 5: Stik nog een botten kanaal
 
-![Press flat and sew boning channel](step05.png)
+![Strijk plat en stik het botingkanaal](step05.png)
 
-Press both layers of Panel 3 away from the center, using the iron to ease the material where the seams curve.
+Strijk beide lagen van Paneel 3 uit de buurt van het midden, met behulp van het ijzer om het materiaal waar de curve nadert aan te vullen.
 
-Edgestitch right along the folded edge, just 1-2mm from the seam line.
+Stik rechts langs de geplooide rand, slechts 1-2mm van de naadlijn.
 
-Topstitch another seam parallel to the first seam, allowing a bit of extra space, about 2mm, in addition to the width of your boning.
+Stik nog een andere naad parallel met de eerste naad, wat een beetje extra spatie, ongeveer 2 mm, naast de breedte van je boning.
 
-This new boning channel should look just like the one you made attaching Panel 2 to Panel 1.
+Deze nieuwe verbindingskanaal zou er net zo uit moeten zien als degene die je Paneel 2 aan Paneel 1 heeft bevestigd.
 
 ## Stap 6: Blijf de zijpanelen bevestigen
 
-Continue attaching panels, creating a boning channel in each seam. Attach Panel 4 to Panel, Panel 5 to Panel 4, and finally Panel 6 to Panel 5.
+Ga door met het koppelen van panelen, het maken van een boning kanaal in elke naad. Bevestig Panel 4 aan Panel, Panel 5 aan Panel, Paneel 4 en tenslotte Paneel 6 aan Paneel 5.
 
-![All panels on one side](step06.png)
+![Alle panelen aan één kant](step06.png)
 
-Repeat these steps on the other side.
+Herhaal deze stappen aan de andere kant.
 
-![All panels on both sides](step06b.png)
+![Alle panelen aan beide kanten](step06b.png)
 
 ## Stap 7: Werk het korset terug af
 
-With all of your panels connected, you’re working with the flat sides of each Panel 6.
+Met al uw panelen bent u verbonden met de platte kanten van elk paneel 6.
 
-Fold the seam allowance of both pieces inward so that the seam allowance is hidden. Press flat, then top stitch close to the edge.
+Plooi de naadwaarde van beide stukken naar binnen zodat de naadwaarde verborgen is. Strijk plat, stiksel dan dicht bij de rand.
 
-Topstitch another seam next to the edgestitched seam, allowing a bit of extra space, about 2mm, in addition to the width of your boning.
+Stik een andere naad door naast de gestikte naad, wat ruimte ongeveer 2 mm, naast de breedte van je boning.
 
-![First channel on the back](step07.png)
+![Eerste kanaal op de achterkant](step07.png)
 
-Mark the locations of your grommets. (Don’t insert them yet. Just mark the fabric where you’ll place them, and make sure you’re creating a strip suited to the width of your grommets.)
+Markeer de locaties van uw grommets. (voeg ze nog niet in. Markeer de stof waar je ze plaatst, en zorg ervoor dat je een strip maakt die past bij de breedte van je grommets.)
 
-Top stitch on the opposite side of the grommet markings, then shift and topstitch another seam parallel to the topstitched seam, again leaving enough space for the boning.
+Sierstiksel aan de andere kant van de markeringen met gromm, schuif en steek een andere naad door parallel met de bovengestikte naad, weer genoeg ruimte over voor de boning.
 
-![Grommet strip and second channel](step07b.png)
+![Grommet strip en tweede kanaal](step07b.png)
 
-Repeat on the other side.
+Herhaal aan de andere kant.
 
 ## Step 8: Insert boning
 
-Insert boning in all of the channels.
+Voeg boning toe in alle kanalen.
 
 ## Stap 9: Koppel de boven- en onderkant
 
-Use bias tape or ribbon to bind the top and bottom edges of the corset.
+Gebruik biaslint of lint om de bovenste en onderste randen van het korset te binden.
 
 ## Stap 10: Stel de grommets in
 
-Set the grommets in the locations you marked earlier.
+Stel de grommets in op de locaties die u eerder hebt gemarkeerd.
 
 ## Stap 11: Lace het korset
 
-You’re done!
+Je bent klaar!
