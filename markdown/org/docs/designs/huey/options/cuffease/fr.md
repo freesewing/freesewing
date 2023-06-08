@@ -1,8 +1,8 @@
----
+- - -
 titre: "aisance de manche"
----
+- - -
 
-This option controls the ease at your wrist.
+Cette option contrôle l'aisance au niveau des poignets.
 
 ## Effet de cette option sur le motif
 
