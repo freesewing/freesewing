@@ -1,10 +1,10 @@
----
+- - -
 title: "Sleevecap ease"
----
+- - -
 
-![Sleevecap ease](./sleevecapease.svg)
+![Holgura de la parte superior de la manga](./sleevecapease.svg)
 
-How much sleevecap ease do you want?
+¿Cuánta facilidad de manga quieres?
 
 > #### ¿Cuál es la cuestión?
 > 
@@ -16,4 +16,4 @@ How much sleevecap ease do you want?
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlton_sleevecapease_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](carlton_sleevecapease_sample.svg "Efecto de esta opción en el patrón")
