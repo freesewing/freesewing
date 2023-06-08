@@ -78,7 +78,6 @@ dragAndDropImageHere: Du kannst das Bild hier per Drag-and-Drop ablegen oder es 
 emailAddress: E-Mail-Adresse
 emailWorksToo: "Falls du deinen Benutzername nicht weißt: deine E-Mail-Adresse funktioniert auch"
 enterEmailPickPassword: Gib deine E-Mail Adresse ein und wähle ein Passwort
-export: Exportieren
 exportTiledPDF: Exportieren als paginiertes PDF
 faq: Häufig gestellte Fragen
 fieldRemoved: '{field} entfernt'
@@ -261,8 +260,6 @@ recreate: Neu erstellen
 recreateThing: '{thing} neu erstellen'
 recreateThingForPerson: '{thing} für {person} neu erstellen'
 seeYouLaterUser: Bis später, {user}
-exportForPrinting: Für den Druck exportieren
-exportForEditing: Für die Bearbeitung exportieren
 startWithNeckTitle: Beginne mit dem Halsumfang
 startWithNeckDescription: Auf Basis deines Halsumfangs können wir dir helfen, Fehler in deinen Maßen zu erkennen.
 whatYouNeed: Was du brauchst
@@ -276,7 +273,6 @@ loadingMagic: Wir sind dabei, die Magie zu laden
 estimate: Schätzung
 actual: Tatsächlich
 weEstimateYM2B: 'Wir schätzen {measurement} von dir auf etwa:'
-exportAsData: Als Daten exportieren
 availablePatterns: Verfügbare Schnittmuster
 browseCollection: Sammlung durchsuchen
 browseYourPatterns: Deine Schnittmuster durchsuchen
@@ -308,9 +304,7 @@ cloneDescription: Erstelle eine exakte Kopie mit den Maßen des Originalschnittm
 furtherReading: Weiterführende Informationen
 saveAsNewPattern: Als neues Schnittmuster speichern
 saveAsNewPattern-txt: (Eine Kopie von diesem) Schnittmuster in deinem FreeSewing-Account speichern
-exportPattern: Schnittmuster exportieren
 printPattern: Schnittmuster drucken
-exportPattern-txt: Ein für deinen Heimdrucker geeignetes PDF exportieren, oder das Schnittmuster in verschiedenen Formaten herunterladen
 editThing: '{thing} bearbeiten'
 editPattern-txt: Dieses Schnittmuster im Schnittmuster-Editor laden
 featureRequiresAccount: Diese Funktion erfordert einen FreeSewing-Account
