@@ -1,8 +1,8 @@
----
+- - -
 title: "Chest pocket height"
----
+- - -
 
-Controls the height/size of the chest pocket.
+Contrôle la hauteur/taille de la poche de poitrine.
 
 ## Effet de cette option sur le motif
 
