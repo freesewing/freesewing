@@ -1,6 +1,6 @@
----
+- - -
 title: "Across back factor"
----
+- - -
 
 ![Rugwijdte factor](./acrossbackfactor.svg)
 
@@ -8,4 +8,4 @@ Geeft controle over de breedte van je rug als een factor van je schouder tot sch
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_acrossbackfactor_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_acrossbackfactor_sample.svg "Effect van deze optie op het patroon")
