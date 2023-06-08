@@ -1,13 +1,13 @@
----
+- - -
 title: "Paco pants: Fabric Options"
----
+- - -
 
-These work best in a lighter fabric with relatively good drape.
+Diese arbeiten am besten in einem leichteren Stoff mit relativ guter Ziehung.
 
-A light cotton, or chambray are particularly well-suited.  
-Rayon or jersey will work too, but will give it a more casual-look.
+Eine leichte Baumwolle oder Kammerpflanzen sind besonders gut geeignet.  
+Rayon oder Trikot werden auch funktionieren, aber sie wird einen eher zufälligen Effekt haben.
 
-For the opposite effect, less casual and more style, you can consider a silk blend or light wool.
+Für den gegenteiligen Effekt, weniger lässig und mehr Stil, können Sie eine Seidenmischung oder leichte Wolle in Betracht ziehen.
 
 <Tip>
 
