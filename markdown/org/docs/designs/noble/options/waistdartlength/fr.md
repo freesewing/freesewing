@@ -1,10 +1,10 @@
 ---
-title: "Waist dart length"
+title: "Longueur de la pince de taille"
 ---
 
 ***
 
-The **waist dart length** option controls the length of the waist dart towards the bust.
+L'option **longueur de la tige de taille** contrôle la longueur du dart de taille vers le bust.
 
 ## Effet de cette option sur le modèle
 
