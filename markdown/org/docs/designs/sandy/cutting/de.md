@@ -1,6 +1,6 @@
----
+- - -
 title: "Sandy circle skirt: Cutting Instructions"
----
+- - -
 
 <Note>
 
@@ -8,7 +8,7 @@ If not using seamless follow the default list, If using seamless follow the seam
 
 </Note>
 
-**Main Fabric**
+**Hauptstoff**
 
 - (If default) Cut **1 skirt** part on the fold.
 - (If seamless) Cut **1 skirt** part on double fold.
@@ -20,6 +20,6 @@ If not using seamless follow the default list, If using seamless follow the seam
 - (If default) Cut **1 skirt** part on the fold.
 - (If seamless) Cut **1 skirt** part on double fold.
 
-**Interfacing**
+**Einlage**
 
 - Cut **1 waistband** part.
