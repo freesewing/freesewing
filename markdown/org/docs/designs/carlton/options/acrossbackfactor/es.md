@@ -1,11 +1,11 @@
----
+- - -
 title: "Across back factor"
----
+- - -
 
-![Across back factor](./acrossbackfactor.svg)
+![Factor de ancho de espalda](./acrossbackfactor.svg)
 
-Controls your across back width as a factor of your shoulder to shoulder measurement
+Controla tu anchura trasera como un factor de tu hombro a la medición del hombro
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlton_acrossbackfactor_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](carlton_acrossbackfactor_sample.svg "Efecto de esta opción en el patrón")
