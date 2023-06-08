@@ -68,7 +68,7 @@ export const pathInfo = ({ id, pathName, stackName, path, inspector, t }) => {
       </span>
     ),
     buttons: [
-      <button key={1} className="btn btn-error" onClick={(evt) => inspector.hide(id)}>
+      <button key={1} className="btn btn-error" onClick={() => inspector.hide(id)}>
         <TrashIcon />
       </button>,
     ],
