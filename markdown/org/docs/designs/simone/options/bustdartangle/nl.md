@@ -1,12 +1,12 @@
----
+- - -
 title: "Bust dart angle"
----
+- - -
 
-Controls the angle by which the (side) bust dart slopes downward.
+Bepaalt de hoek waarin de busteneep vanuit de zijnaad naar beneden wijst.
 
 - Increase this option to angle the bust darts downwards and towards the floor
 - Decrease this option to angle the bust darts upwards and towards the armscye
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_bustdartangle_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_bustdartangle_sample.svg "Effect van deze optie op het patroon")
