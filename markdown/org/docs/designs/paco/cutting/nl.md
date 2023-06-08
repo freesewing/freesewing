@@ -1,12 +1,12 @@
----
+- - -
 title: "Paco pants: Cutting Instructions"
----
+- - -
 
 <Tip>
 
-###### Cut out only what you need
+###### Knip alleen wat je nodig hebt
 
-Depending on the choices you made in your pattern, you may not need all parts.
+Afhankelijk van de keuzes die je hebt gemaakt in je patroon, heb je mogelijk niet alle onderdelen nodig.
 Als een patroondeel niet is afgedrukt, betekent dit dat je het niet nodig hebt.
 
 </Tip>
