@@ -86,19 +86,6 @@ const PaperlessDefs = ({ units = 'metric', stacks }) =>
     <MetricPaperlessDefs stacks={stacks} />
   )
 
-export const _Defs = (props) => {
-  if (!props.svg) return null
-
-  return (
-    <>
-      {props.svg.defs.forSvg ? sanitize(props.svg.defs.forSvg) : null}
-      {props.settings[0].paperless ? (
-        <PaperlessDefs units={props.settings[0]?.units} stacks={props.stacks} />
-      ) : null}
-    </>
-  )
-}
-
 export const Defs = (props) =>
   props.svg ? (
     <defs>
