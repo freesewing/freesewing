@@ -1,8 +1,8 @@
----
+- - -
 title: "Benjamin bow tie: What You Need"
----
+- - -
 
-To make Benjamin, you will need the following:
+Para hacer Benjamin, necesitarás lo siguiente:
 
 - Suministros básicos de costura
 - About 0.5 meters (0.6 yards) of a suitable fabric ([see Fabric options](/docs/patterns/benjamin/fabric/)). Left over pieces of a recent project could work too.
