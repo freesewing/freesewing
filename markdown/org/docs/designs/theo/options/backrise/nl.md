@@ -1,6 +1,6 @@
----
+- - -
 title: "Back rise"
----
+- - -
 
 ![Hoogte achter](backrise.svg)
 
@@ -19,4 +19,4 @@ Je kan gewoon de achterkant van de broek wat hoger maken.
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](theo_backrise_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](theo_backrise_sample.svg "Effect van deze optie op het patroon")
