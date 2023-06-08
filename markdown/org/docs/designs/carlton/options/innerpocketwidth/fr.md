@@ -1,8 +1,8 @@
----
+- - -
 title: "Inner pocket width"
----
+- - -
 
-Controls the width of the inner pocket.
+Contrôle la largeur de la poche intérieure.
 
 ## Effet de cette option sur le motif
 
