@@ -1,8 +1,8 @@
 ---
-title: "Gusset length"
+title: "Longueur du Gusset"
 ---
 
-This option controls the length of the gusset.
+Cette option contrôle la longueur du gusset.
 
 ## Effet de cette option sur le modèle
 
