@@ -1,11 +1,11 @@
----
+- - -
 title: "Across back factor"
----
+- - -
 
-![The across back option on Brian](./acrossbackfactor.svg)
+![Die umgekehrte zurück Option auf Brian](./acrossbackfactor.svg)
 
-Controls your across back width as a factor of your shoulder to shoulder measurement
+Beeinflusst das Verhältnis zwischen Rücken- und Schulterweite measurement
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_acrossbackfactor_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](brian_acrossbackfactor_sample.svg "Effekt dieser Option auf das Schnittmuster")
