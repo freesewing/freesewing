@@ -1,35 +1,8 @@
 // Components
 import { Path as ShowPath, utils } from 'pkgs/react-components/src/index.mjs'
-import { Attributes, pointCoords, KeyValTable, PathBanner } from './shared.mjs'
-import { round, formatMm } from 'shared/utils.mjs'
+import { Attributes, pointCoords, KeyValTable } from './shared.mjs'
+import { formatMm } from 'shared/utils.mjs'
 import { TrashIcon, PrintIcon, SearchIcon } from 'shared/components/icons.mjs'
-import { Path as CorePath } from '@freesewing/core'
-
-const { withinPartBounds, getId, getProps } = utils
-
-const CpCircle = ({ point }) => (
-  <circle cx={point.x} cy={point.y} r={2.5} className="stroke-contrast dotted stroke-sm no-fill" />
-)
-
-const EpCircle = ({ point }) => (
-  <circle cx={point.x} cy={point.y} r={2.5} className="stroke-note no-fill stroke-sm" />
-)
-
-const InspectCurveOp = ({ op }) => {
-  const from = op.ops[0].to
-  const { cp1, cp2, to } = op.ops[1]
-
-  return (
-    <>
-      <path d={`M ${from.x},${from.y} L ${cp1.x},${cp1.y}`} className="contrast dotted stroke-sm" />
-      <path d={`M ${to.x},${to.y} L ${cp2.x},${cp2.y}`} className="contrast dotted stroke-sm" />
-      <CpCircle point={cp1} />
-      <CpCircle point={cp2} />
-      <EpCircle point={from} />
-      <EpCircle point={to} />
-    </>
-  )
-}
 
 const Op = ({ op, len, i }) => (
   <tr
@@ -61,10 +34,6 @@ const Ops = ({ ops, path }) => (
       })}
     </tbody>
   </table>
-)
-
-const RevealPath = ({ path, pathName, id, inspector }) => (
-  <path d={path.d} className="stroke-3xl text-warning pulse-stroke" />
 )
 
 export const pathInfo = ({ id, pathName, stackName, path, inspector, t }) => {
@@ -165,7 +134,7 @@ const InspectPath = ({ stackName, pathName, path, part, settings, t, inspector }
     <g>
       <path
         d={path.d}
-        {...getProps(path)}
+        {...utils.getProps(path)}
         className={`hover:opacity-20 text-primary hover:cursor-pointer ${
           inspector.data.reveal[id] ? 'pulse-stroke stroke-3xl' : 'opacity-0 stroko-0 stroke-5xl'
         }`}

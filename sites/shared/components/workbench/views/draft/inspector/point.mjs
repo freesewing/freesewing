@@ -1,12 +1,9 @@
 // Components
-import { Point as ShowPoint, Text, Circle, utils } from 'pkgs/react-components/src/index.mjs'
+import { Point as ShowPoint, utils } from 'pkgs/react-components/src/index.mjs'
 import { Attributes, pointCoords, KeyValTable } from './shared.mjs'
-import { round } from 'shared/utils.mjs'
 import { TrashIcon, PrintIcon, SearchIcon } from 'shared/components/icons.mjs'
 
-const { withinPartBounds, getId, getProps } = utils
-
-const RevealPoint = ({ point, pointName, scale, part, id, inspector }) => {
+const RevealPoint = ({ point, scale, part, id, inspector }) => {
   const r = 15 * scale
   const { x, y } = point
   const { topLeft, bottomRight } = part
@@ -125,9 +122,7 @@ const InspectPoint = ({
         cy={point.y}
         r={5 * scale}
         className={`opacity-0 stroke-${color} fill-${color} hover:opacity-25 hover:cursor-pointer hover:opacity-30`}
-        onClick={(evt) =>
-          inspector.show(pointInfo({ id, stackName, pointName, point, inspector, t }))
-        }
+        onClick={() => inspector.show(pointInfo({ id, stackName, pointName, point, inspector, t }))}
       />
       <circle
         cx={point.x}
@@ -155,7 +150,7 @@ export const Point = ({
   inspector,
 }) => {
   // Don't include parts outside the part bounding box
-  if (!withinPartBounds(point, part)) return null
+  if (!utils.withinPartBounds(point, part)) return null
 
   return (
     <>

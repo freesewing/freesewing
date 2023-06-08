@@ -1,8 +1,7 @@
 // Hooks
-import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 // Components
-import { FilterIcon, WrenchIcon, ClearIcon, HelpIcon } from 'shared/components/icons.mjs'
+import { WrenchIcon } from 'shared/components/icons.mjs'
 import { Collapse } from 'shared/components/collapse.mjs'
 // Dependencies
 import { utils } from 'pkgs/react-components/src/index.mjs'
@@ -142,18 +141,7 @@ const StackFinder = ({ renderProps, inspector, t }) => {
   )
 }
 
-export const Inspector = ({
-  design,
-  update,
-  settings,
-  patternConfig,
-  language,
-  DynamicDocs,
-  control,
-  ui,
-  inspector,
-  renderProps,
-}) => {
+export const Inspector = ({ control, inspector, renderProps }) => {
   // FIXME: Update this namespace
   const { t } = useTranslation(ns)
 
@@ -171,8 +159,8 @@ export const Inspector = ({
         )}
       </div>
       <StackFinder {...{ renderProps, inspector, t }} />
-      {Object.values(inspector.data.show).map((props) => (
-        <Collapse {...props} />
+      {Object.values(inspector.data.show).map((props, i) => (
+        <Collapse {...props} key={i} />
       ))}
       {control > 4 ? <div className="border-t border-solid border-base-300 mx-36"></div> : null}
     </>

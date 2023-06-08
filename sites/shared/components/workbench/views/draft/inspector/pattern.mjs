@@ -1,5 +1,4 @@
 // Hooks
-import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 // Components
 import { PanZoomPattern } from 'shared/components/workbench/pan-zoom-pattern.mjs'
