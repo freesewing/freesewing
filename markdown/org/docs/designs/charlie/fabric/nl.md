@@ -1,13 +1,13 @@
----
+- - -
 title: "Charlie chinos: Fabric Options"
----
+- - -
 
-The obvious choice for Charlie chinos, is [chino fabric](https://en.wikipedia.org/wiki/Chino_cloth), which is a cotton twill fabric. These days it's often sold as a blend to a little bit of stretch, which is optional.
+De voor de hand liggende keuze voor Charlie chinos, is [chinostof](https://en.wikipedia.org/wiki/Chino_cloth), een katoenen twill stof. Tegenwoordig wordt het vaak verkocht als een mengeling aan een beetje stretch, wat optioneel is.
 
-But you have a lot of options here, and your choice of fabric will influence what sort of style these project.
+Maar je hebt hier veel opties en je keuze aan stof zal invloed hebben op wat voor stijl dit project is.
 
-Go for **wool** for the most classic look. Check the suiting section of your fabric store for options. If this is your first pair, some wool-poly blend is most likely going to be more budget-friendly. But don't let price alone guide you, buying some cheap whimsical fabric is the best way to come up with a shitty looking pair of trousers, and get frustrated in the process.
+Ga voor **wol** voor de meest klassieke uitstraling. Controleer het paksel gedeelte van je stoffenwinkel op opties. Voor een eerste paar is een wol-polyestermix een budgetvriendelijke optie. Maar focus niet te hard op de prijs, een goedkoop stofje is de beste manier om met een mottige broek en een hoop frustraties te eindigen.
 
-For **cotton**, go for a heavier weight. Cotton might also be a bit easier on the beginner than wool. If unsure what to use, ask for chino in the fabric store and simply pick a colour you like.
+Als je **katoen** wil, kies dan een zwaardere stof. Katoen is ook wat makkelijker voor een beginner dan wol. Als je niet zeker bent over wat te gebruiken, vraag dan om chino stof in de stoffenwinkel en kies een kleurtje.
 
-Nothing beats **linen** on a hot summer day. It's fun to work with too, but it does wrinkle like a mofo, and even the most neatly made trousers look somewhat messy when made in linen. What I'm saying is, maybe not for your first pair.
+Niets beter dan **linen** op een hete zomerdag. Het is ook fijn om mee te werken, maar kreukt als de pest, en zelfs de best genaaide broeken zien er een beetje rommelig uit in linnen. Wat ik wil zeggen is: misschien niet voor je eerste paar.
