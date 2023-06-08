@@ -1,6 +1,6 @@
----
+- - -
 title: "Inner pocket welt height"
----
+- - -
 
 Controls the width of the inner pocket welts.
 
@@ -9,4 +9,4 @@ Controls the width of the inner pocket welts.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_innerpocketweltheight_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](jaeger_innerpocketweltheight_sample.svg "Effekt dieser Variable auf das Schnittmuster")
