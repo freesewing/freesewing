@@ -1,14 +1,14 @@
----
+- - -
 title: "Lapel reduction"
----
+- - -
 
-How much the tip of the lapels turns inwards.
+Mate waarin het einde van de revers weer inwaards keren.
 
-It is common to have the edge of the lapels not be entirely straight, but rather turn inwards a bit towards the top of the lapels. This option controls by how much it does that.
+Het komt vaak voor dat de rand van de lapels niet helemaal recht is, maar eerder draai een beetje naar binnen in de top van de lapels. Deze optie controleert hoeveel dat doet.
 
 - Increase this option to shift the lapel tip inward
 - Decrease this option to shift the lapel tip outward
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_lapelreduction_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](jaeger_lapelreduction_sample.svg "Effect van deze optie op het patroon")
