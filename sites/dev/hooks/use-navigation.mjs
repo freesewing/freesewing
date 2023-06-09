@@ -1,6 +1,4 @@
-import get from 'lodash.get'
 import { prebuildNavigation as pbn } from 'site/prebuild/navigation.mjs'
-import orderBy from 'lodash.orderby'
 
 /*
  * prebuildNavvigation[locale] holds the navigation structure based on MDX content.
@@ -79,27 +77,6 @@ const sitePages = () => {
   return pages
 }
 
-const createCrumbs = (path, nav) =>
-  path.map((crumb, i) => {
-    const entry = get(nav, path.slice(0, i + 1), { t: 'no-title', s: path.join('/') })
-    const val = { t: entry.t, s: entry.s }
-    if (entry.o) val.o = entry.o
-
-    return val
-  })
-
-const createSections = (nav) => {
-  const sections = {}
-  for (const slug of Object.keys(nav)) {
-    const entry = nav[slug]
-    const val = { t: entry.t, s: entry.s, b: entry.b }
-    if (entry.o) val.o = entry.o
-    if (!entry.h) sections[slug] = val
-  }
-
-  return orderBy(sections, ['o', 't'])
-}
-
 export const useNavigation = (params = {}) => {
   const { path = [], locale = 'en' } = params
   const nav = { ...pbn[locale], ...sitePages() }
@@ -110,16 +87,5 @@ export const useNavigation = (params = {}) => {
   }
   nav.contact.h = 1
 
-  // Creat crumbs array
-  const crumbs = createCrumbs(path, nav)
-  const sections = createSections(nav)
-
-  return {
-    crumbs,
-    sections,
-    slug: path.join('/'),
-    nav: path.length > 1 ? get(nav, path[0]) : path.length === 0 ? sections : nav[path[0]],
-    title: crumbs.length > 0 ? crumbs.slice(-1)[0].t : '',
-    siteNav: nav,
-  }
+  return nav
 }
