@@ -1,6 +1,6 @@
----
+- - -
 title: "Front dart length"
----
+- - -
 
 Controls how close the **front waist darts** approach the bust points.
 
