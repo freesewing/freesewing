@@ -442,6 +442,34 @@ export function lineIntersectsCurve(start, end, from, cp1, cp2, to) {
 }
 
 /**
+ * Helper method to merge translation files from different designs
+ *
+ * @param {object} translations - One or more translation objects
+ * @return {object} result - A merged object of translations
+ */
+export function mergeI18n(designs, options) {
+  const i18n = {}
+  for (const design of designs) {
+    for (const lang in design) {
+      const obj = design[lang]
+      if (typeof i18n[lang] === 'undefined') i18n[lang] = {}
+      if (obj.t) i18n[lang].t = obj.t
+      if (obj.d) i18n[lang].d = obj.d
+      for (const section of 'spo') {
+        if (obj[section]) {
+          if (typeof i18n[lang][section] === 'undefined') i18n[lang][section] = {}
+          for (const [key, val] of Object.entries(obj[section])) {
+            if (__keepTranslation(key, options[section])) i18n[lang][section][key] = val
+          }
+        }
+      }
+    }
+  }
+
+  return i18n
+}
+
+/**
  * Helper method to calculate abolute option value based on a measurement
  *
  * @param {string} measurement - The measurement to base the calculation on
@@ -679,6 +707,25 @@ export function __isCoord(value) {
  */
 export function __macroName(name) {
   return `__macro_${name}`
+}
+
+/**
+ * Returns true if we want to keep the translation
+ * Called by mergeI18n
+ *
+ * @private
+ * @param {string} key - The translation key
+ * @param {object} options - The options (for this particular section of the translation file)
+ * @return {bool} result - Whether or not to keep the translation
+ */
+function __keepTranslation(key, options) {
+  // Drop it?
+  if (options.drop && options.drop.includes(key)) return false
+  // Keep only some and not this one?
+  if (options.keep && !options.keep.includes(key)) return false
+
+  // Keep it
+  return true
 }
 
 /**
