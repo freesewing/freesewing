@@ -1,6 +1,6 @@
----
+- - -
 title: "Number of panels"
----
+- - -
 
 ![The panels option on Cathrin](./panels.svg)
 
