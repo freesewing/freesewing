@@ -1,6 +1,6 @@
----
+- - -
 title: "Titan trouser block: Sewing Instructions"
----
+- - -
 
 <Note>
 
