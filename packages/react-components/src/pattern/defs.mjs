@@ -91,7 +91,7 @@ export const Defs = (props) =>
     <defs>
       {props.svg.defs.forSvg ? sanitize(props.svg.defs.forSvg) : null}
       {props.settings[0].paperless ? (
-        <PaperlessDefs units={props.settings[0]?.units} stacks={props.stacks} />
+        <PaperlessDefs units={props.settings[0].units} stacks={props.stacks} />
       ) : null}
     </defs>
   ) : null
