@@ -19,55 +19,9 @@ import {
 import { Ribbon } from 'shared/components/ribbon.mjs'
 import Link from 'next/link'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
+import { NavButton, NavSpacer, colors } from 'shared/components/header.mjs'
 
 export const ns = ['workbench', 'sections']
-
-export const NavButton = ({
-  href,
-  label,
-  color,
-  children,
-  onClick = false,
-  extraClasses = '',
-  active = false,
-}) => {
-  const className =
-    'border-0 px-1 lg:px-4 text-base py-3 lg:py-4 text-center flex flex-col items-center 2xl:w-36 ' +
-    `hover:bg-${color}-400 text-${color}-400 hover:text-neutral grow lg:grow-0 relative ${extraClasses} ${
-      active ? 'font-heavy' : ''
-    }`
-  const span = <span className="block font-bold hidden 2xl:block">{label}</span>
-
-  return onClick ? (
-    <button {...{ onClick, className }} title={label}>
-      {children}
-      {span}
-    </button>
-  ) : (
-    <Link {...{ href, className }} title={label}>
-      {children}
-      {span}
-    </Link>
-  )
-}
-
-export const NavSpacer = () => (
-  <div className="hidden lg:block text-base lg:text-4xl font-thin opacity-30 px-0.5 lg:px-2">|</div>
-)
-
-export const colors = [
-  'red',
-  'orange',
-  'yellow',
-  'lime',
-  'green',
-  'teal',
-  'cyan',
-  'blue',
-  'indigo',
-  'violet',
-  'purple',
-]
 
 const NavIcons = ({ setModal, setView, view }) => {
   const { t } = useTranslation(['header'])
@@ -173,7 +127,7 @@ export const WorkbenchHeader = ({ view, setView, update }) => {
       <div className="m-auto md:px-8">
         <div className="p-0 flex flex-row gap-2 justify-between text-neutral-content items-center">
           {/* Non-mobile content */}
-          <div className="hidden lg:flex lg:px-2 flex-row items-center justify-center w-full">
+          <div className="hidden lg:flex lg:flex-row lg:justify-between items-center xl:justify-center w-full">
             <NavIcons setModal={setModal} setView={setView} view={view} />
           </div>
 
