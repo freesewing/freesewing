@@ -192,7 +192,7 @@ yuri:
 
 backend:
   _:
-    '@aws-sdk/client-sesv2': '3.345.0'
+    '@aws-sdk/client-sesv2': '3.348.0'
     '@prisma/client': &prisma '4.15.0'
     'bcryptjs': '2.4.3'
     'cors': '2.8.5'
@@ -263,7 +263,7 @@ dev:
 
 email:
   _:
-    '@maizzle/framework': '4.4.5'
+    '@maizzle/framework': '4.4.6'
     'tailwindcss-box-shadow': '2.0.1'
     'tailwindcss-email-variants': '2.0.2'
     'tailwindcss-mso': '1.3.0'
@@ -281,7 +281,7 @@ lab:
     'd3-drag': '3.0.0'
     'd3-selection': '3.0.0'
     'daisyui': *daisyui
-    'i18next': &i18next '22.5.0'
+    'i18next': &i18next '22.5.1'
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
@@ -308,8 +308,8 @@ lab:
 
 org:
   _:
-    '@bugsnag/js': &bugsnag 7.18.0
-    '@bugsnag/plugin-react': *bugsnag
+    '@bugsnag/js': &bugsnag 7.20.2
+    '@bugsnag/plugin-react': 7.19.0
     '@mdx-js/loader': *mdx
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
@@ -326,7 +326,7 @@ org:
     'react-dropzone': '14.2.3'
     'react-hotkeys-hook': *reactHotkeysHook
     'react-instantsearch-dom': *reactInstantsearchDom
-    'react-hot-toast': 2.4.0
+    'react-hot-toast': 2.4.1
     'react-markdown': *reactMarkdown
     'react-swipeable': *reactSwipeable
     'react-timeago': *reactTimeago
@@ -344,7 +344,7 @@ org:
 
 sanity:
   _:
-    '@sanity/vision': &sanity '3.11.5'
+    '@sanity/vision': &sanity '3.12.0'
     'react': *react
     'react-dom': *react
     'react-is': *react
@@ -356,7 +356,7 @@ sanity:
     'eslint': *eslint
     'prettier': '2.8.8'
     'typescript': '5.1.3'
-    '@sanity/cli': '3.11.5'
+    '@sanity/cli': '3.12.0'
 
 shared:
   _:
@@ -388,7 +388,7 @@ shared:
     'react-markdown': *reactMarkdown
     'react-sizeme': '3.0.2'
     'react-timeago': *reactTimeago
-    'react-zoom-pan-pinch': '3.0.7'
+    'react-zoom-pan-pinch': '3.0.8'
     'rehype-autolink-headings': *rehypeAutolinkHeadings
     'rehype-highlight': *rehypeHighlight
     'remark-frontmatter': '4.0.1'
@@ -396,7 +396,7 @@ shared:
     'remark-smartypants': '2.0.0'
     'sharp': '0.32.1'
     'svg-to-pdfkit': 'https://github.com/eriese/SVG-to-PDFKit'
-    'tlds': '1.238.0'
+    'tlds': '1.239.0'
     'to-vfile': '7.2.4'
     'unist-util-visit': *unist-util-visit
     'use-persisted-state': *use-persisted-state
