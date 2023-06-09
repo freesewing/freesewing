@@ -1,6 +1,6 @@
----
+- - -
 title: "Trayvon tie: Sewing Instructions"
----
+- - -
 
 <Tip>
 
