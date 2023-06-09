@@ -101,3 +101,5 @@ For making t-shirts or other shirts with 2-way stretch, regular settings with a 
 - Or you can leave the edges unfinished, particularly if it's swim fabric or some other fabric that does not fray at all.
 
 ### Step 5: Enjoy your new shirt!
+
+- It's time to take your new shirt for a swim, or to show it off at the beach!
