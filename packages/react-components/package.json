@@ -39,7 +39,9 @@
   "peerDependencies": {
     "react": ">=14"
   },
-  "dependencies": {},
+  "dependencies": {
+    "html-react-parser": "^4.0.0"
+  },
   "devDependencies": {},
   "files": [
     "dist/*",
