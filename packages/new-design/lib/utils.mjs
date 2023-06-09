@@ -49,8 +49,9 @@ export const checkNodeVersion = () => {
 
 // Helper method to validate the design name
 const validateDesignName = (name) => {
-  if (/^([a-z]+)$/.test(name)) return true
-  else return ' 🙈 Please use only [a-z], no spaces, no capitals, no nothing 🤷'
+  if (/^([a-z][a-z0-9_]*)$/.test(name)) return true
+  else
+    return ' 🙈 Please use only lowercase letters, digits, or underscores. Names must start with a lowercase letter. 🤷'
 }
 
 // Gets user input to figure out what to do
@@ -106,7 +107,7 @@ export const getChoices = async () => {
             await prompts({
               type: 'text',
               name: 'name',
-              message: 'What name would you like the design to have? 🏷️ ([a-z] only)',
+              message: 'What name would you like the design to have? 🏷️ ([a-z0-9_] only)',
               validate: validateDesignName,
             })
           ).name
