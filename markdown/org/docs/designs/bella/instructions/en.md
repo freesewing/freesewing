@@ -26,6 +26,14 @@ If you are making adjustments you may wish to sew the seams _wrong sides togethe
 
 </Tip>
 
+<Note>
+
+Bella has a back dart only when it is needed, based on the measurements
+and design options.
+If the back dart is not needed then it will be omitted from the pattern.
+
+</Note>
+
 ### Step 2: Try it on
 
 - Try it on and check the fit by pinning the back closed whilst wearing it.

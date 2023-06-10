@@ -10,7 +10,6 @@ export const DraftView = ({
   design,
   pattern,
   patternConfig,
-  setView,
   settings,
   ui,
   update,

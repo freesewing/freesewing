@@ -54,7 +54,7 @@ export const formatFraction128 = (fraction, format = 'html') => {
     rest = fraction - inches
   }
   let fraction128 = Math.round(rest * 128)
-  if (fraction128 == 0) return formatImperial(negative, 0, false, false, format)
+  if (fraction128 == 0) return formatImperial(negative, inches, false, false, format)
 
   for (let i = 1; i < 7; i++) {
     const numoFactor = Math.pow(2, 7 - i)

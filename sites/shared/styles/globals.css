@@ -135,48 +135,64 @@
   .fs-stroke-note {
     stroke: var(--pattern-note);
   }
+  svg.freesewing.pattern rect.fabric,
+  svg.freesewing.pattern rect.stroke-fabric,
   svg.freesewing.pattern path.fabric,
   svg.freesewing.pattern path.stroke-fabric,
   svg.freesewing.pattern circle.fabric,
   svg.freesewing.pattern circle.stroke-fabric {
     @apply fs-stroke-fabric;
   }
+  svg.freesewing.pattern rect.lining,
+  svg.freesewing.pattern rect.stroke-lining,
   svg.freesewing.pattern path.lining,
   svg.freesewing.pattern path.stroke-lining,
   svg.freesewing.pattern circle.lining,
   svg.freesewing.pattern circle.stroke-lining {
     @apply fs-stroke-lining;
   }
+  svg.freesewing.pattern rect.interfacing,
+  svg.freesewing.pattern rect.stroke-interfacing,
   svg.freesewing.pattern path.interfacing,
   svg.freesewing.pattern path.stroke-interfacing,
   svg.freesewing.pattern circle.interfacing,
   svg.freesewing.pattern circle.stroke-interfacing {
     @apply fs-stroke-interfacing;
   }
+  svg.freesewing.pattern rect.canvas,
+  svg.freesewing.pattern rect.stroke-canvas,
   svg.freesewing.pattern path.canvas,
   svg.freesewing.pattern path.stroke-canvas,
   svg.freesewing.pattern circle.canvas,
   svg.freesewing.pattern circle.stroke-canvas {
     @apply fs-stroke-canvas;
   }
+  svg.freesewing.pattern rect.various,
+  svg.freesewing.pattern rect.stroke-various,
   svg.freesewing.pattern path.various,
   svg.freesewing.pattern path.stroke-various,
   svg.freesewing.pattern circle.various,
   svg.freesewing.pattern circle.stroke-various {
     @apply fs-stroke-various;
   }
+  svg.freesewing.pattern rect.mark,
+  svg.freesewing.pattern rect.stroke-mark,
   svg.freesewing.pattern path.mark,
   svg.freesewing.pattern path.stroke-mark,
   svg.freesewing.pattern circle.mark,
   svg.freesewing.pattern circle.stroke-mark {
     @apply fs-stroke-mark;
   }
+  svg.freesewing.pattern rect.contrast,
+  svg.freesewing.pattern rect.stroke-contrast,
   svg.freesewing.pattern path.contrast,
   svg.freesewing.pattern path.stroke-contrast,
   svg.freesewing.pattern circle.contrast,
   svg.freesewing.pattern circle.stroke-contrast {
     @apply fs-stroke-contrast;
   }
+  svg.freesewing.pattern rect.note,
+  svg.freesewing.pattern rect.stroke-note,
   svg.freesewing.pattern path.note,
   svg.freesewing.pattern path.stroke-note,
   svg.freesewing.pattern circle.note,
@@ -207,48 +223,56 @@
   .fs-fill-note {
     fill: var(--pattern-note);
   }
+  svg.freesewing.pattern rect.fill-fabric,
   svg.freesewing.pattern path.fill-fabric,
   svg.freesewing.pattern text.fill-fabric,
   svg.freesewing.pattern tspan.fill-fabric,
   svg.freesewing.pattern circle.fill-fabric {
     @apply fs-fill-fabric;
   }
+  svg.freesewing.pattern rect.fill-lining,
   svg.freesewing.pattern text.fill-lining,
   svg.freesewing.pattern tspan.fill-lining,
   svg.freesewing.pattern path.fill-lining,
   svg.freesewing.pattern circle.fill-lining {
     @apply fs-fill-lining;
   }
+  svg.freesewing.pattern rect.fill-interfacing,
   svg.freesewing.pattern text.fill-interfacing,
   svg.freesewing.pattern tspan.fill-interfacing,
   svg.freesewing.pattern path.fill-interfacing,
   svg.freesewing.pattern circle.fill-interfacing {
     @apply fs-fill-interfacing;
   }
+  svg.freesewing.pattern rect.fill-canvas,
   svg.freesewing.pattern text.fill-canvas,
   svg.freesewing.pattern tspan.fill-canvas,
   svg.freesewing.pattern path.fill-canvas,
   svg.freesewing.pattern circle.fill-canvas {
     @apply fs-fill-canvas;
   }
+  svg.freesewing.pattern rect.fill-various,
   svg.freesewing.pattern text.fill-various,
   svg.freesewing.pattern tspan.fill-various,
   svg.freesewing.pattern path.fill-various,
   svg.freesewing.pattern circle.fill-various {
     @apply fs-fill-various;
   }
+  svg.freesewing.pattern rect.fill-mark,
   svg.freesewing.pattern path.fill-mark,
   svg.freesewing.pattern text.fill-mark,
   svg.freesewing.pattern tspan.fill-mark,
   svg.freesewing.pattern circle.fill-mark {
     @apply fs-fill-mark;
   }
+  svg.freesewing.pattern rect.fill-contrast,
   svg.freesewing.pattern text.fill-contrast,
   svg.freesewing.pattern tspan.fill-contrast,
   svg.freesewing.pattern path.fill-contrast,
   svg.freesewing.pattern circle.fill-contrast {
     @apply fs-fill-contrast;
   }
+  svg.freesewing.pattern rect.fill-note,
   svg.freesewing.pattern text.fill-note,
   svg.freesewing.pattern tspan.fill-note,
   svg.freesewing.pattern path.fill-note,
@@ -282,6 +306,78 @@
     stroke: currentColor;
     animation: pulsestroke 3s infinite;
   }
+  .stroko-0 {
+    stroke-opacity: 0;
+  }
+  .stroko-5 {
+    stroke-opacity: 0.05;
+  }
+  .stroko-10 {
+    stroke-opacity: 0.1;
+  }
+  .stroko-20 {
+    stroke-opacity: 0.2;
+  }
+  .stroko-30 {
+    stroke-opacity: 0.3;
+  }
+  .stroko-40 {
+    stroke-opacity: 0.4;
+  }
+  .stroko-50 {
+    stroke-opacity: 0.5;
+  }
+  .stroko-60 {
+    stroke-opacity: 0.6;
+  }
+  .stroko-70 {
+    stroke-opacity: 0.7;
+  }
+  .stroko-80 {
+    stroke-opacity: 0.8;
+  }
+  .stroko-90 {
+    stroke-opacity: 0.9;
+  }
+  .stroko-100 {
+    stroke-opacity: 1;
+  }
+  .filo-0 {
+    fill-opacity: 0;
+  }
+  .filo-5 {
+    fill-opacity: 0.05;
+  }
+  .filo-10 {
+    fill-opacity: 0.1;
+  }
+  .filo-20 {
+    fill-opacity: 0.2;
+  }
+  .filo-30 {
+    fill-opacity: 0.3;
+  }
+  .filo-40 {
+    fill-opacity: 0.4;
+  }
+  .filo-50 {
+    fill-opacity: 0.5;
+  }
+  .filo-60 {
+    fill-opacity: 0.6;
+  }
+  .filo-70 {
+    fill-opacity: 0.7;
+  }
+  .filo-80 {
+    fill-opacity: 0.8;
+  }
+  .filo-90 {
+    fill-opacity: 0.9;
+  }
+  .filo-100 {
+    fill-opacity: 1;
+  }
 }
 
 @keyframes pulsefill {
@@ -289,7 +385,7 @@
     fill-opacity: 0;
   }
   50% {
-    fill-opacity: 0.3;
+    fill-opacity: 0.1;
   }
   100% {
     fill-opacity: 0;

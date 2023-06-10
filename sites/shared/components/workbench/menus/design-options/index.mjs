@@ -10,7 +10,7 @@ import { MenuItem } from '../shared/menu-item.mjs'
 export const ns = ['design-options']
 
 // Emojis for option groups :)
-const emojis = {
+export const emojis = {
   advanced: '🤓',
   fit: '👕',
   style: '💃🏽',
@@ -91,7 +91,7 @@ export const DesignOptions = ({
         language,
         ns: menuNs,
         passProps: { settings },
-        updateFunc: (name, value) => update.settings(['options', name], value),
+        updateFunc: (name, value) => update.settings(['options', ...name], value),
       }}
     />
   )

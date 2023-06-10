@@ -25,11 +25,11 @@ export const wasChanged = (current, config) => {
  */
 export const ItemTitle = ({ name, t, current = null, open = false, emoji = '' }) => (
   <div className={`flex flex-row gap-1 items-center w-full ${open ? '' : 'justify-between'}`}>
-    <span className="font-medium">
+    <span className="font-medium capitalize">
       <span role="img" className="pr-2">
         {emoji}
       </span>
-      {t(`${name}.t`)}
+      {t([`${name}.t`, name])}
     </span>
     <span className="font-bold">{current}</span>
   </div>
@@ -63,8 +63,8 @@ export const MenuItem = ({
   passProps = {},
   changed,
   loadDocs,
-  Input,
-  Value,
+  Input = () => {},
+  Value = () => {},
   allowOverride = false,
   allowToggle = false,
   control = Infinity,
@@ -119,7 +119,7 @@ export const MenuItem = ({
         className={open ? openButtonClass : 'btn btn-accent'}
         onClick={(evt) => {
           evt.stopPropagation()
-          updateFunc(name)
+          updateFunc([name])
         }}
       >
         <ClearIcon />

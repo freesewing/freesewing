@@ -1,7 +1,6 @@
 import { useContext } from 'react'
 import { MenuItemGroup } from './menu-item.mjs'
 import { useTranslation } from 'next-i18next'
-import { HelpIcon } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 
@@ -51,7 +50,7 @@ export const useDocsLoader = (DynamicDocs, getDocsPath, language) => {
 export const WorkbenchMenu = ({
   updateFunc,
   ns,
-  Icon,
+  Icon = () => null,
   name,
   config,
   control,

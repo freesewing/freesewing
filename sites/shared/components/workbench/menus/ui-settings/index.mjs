@@ -18,7 +18,7 @@ const UiSetting = ({ name, control, ...rest }) => (
   />
 )
 
-export const UiSettings = ({ design, update, settings, ui, control, language, DynamicDocs }) => {
+export const UiSettings = ({ update, ui, control, language, DynamicDocs }) => {
   const settingsConfig = loadSettingsConfig(ui)
 
   return (

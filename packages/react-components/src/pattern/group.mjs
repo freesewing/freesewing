@@ -1,3 +1,10 @@
-import React from 'react'
+// eslint-disable-next-line no-unused-vars
+import React, { forwardRef } from 'react'
 
-export const Group = (props) => <g {...props}>{props.children}</g>
+export const Group = forwardRef((props, ref) => (
+  <g {...props} ref={ref}>
+    {props.children}
+  </g>
+))
+
+Group.displayName = 'Group'

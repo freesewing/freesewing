@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
 import { getProps } from './utils.mjs'
 
@@ -8,7 +9,7 @@ export const Stack = ({ stackName, stack, settings, components, t }) => {
     <Group {...getProps(stack)}>
       {settings[0].paperless ? <Grid {...{ stack, stackName }} /> : null}
       {[...stack.parts].map((part, key) => (
-        <Part {...{ settings, components, t, part, stackName, key }} />
+        <Part {...{ settings, components, t, part, stackName }} key={key} />
       ))}
     </Group>
   )

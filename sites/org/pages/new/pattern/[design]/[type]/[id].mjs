@@ -5,19 +5,19 @@ import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useDesign } from 'shared/hooks/use-design.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { Aaron } from '@freesewing/aaron'
+import { nsMerge } from 'shared/utils.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Workbench, ns as wbNs } from 'shared/components/workbench/index.mjs'
 import { WorkbenchLayout } from 'site/components/layouts/workbench.mjs'
 import { Null } from 'shared/components/null.mjs'
 import { DynamicOrgDocs as DynamicDocs } from 'site/components/dynamic-org-docs.mjs'
+import { VagueError, ns as errorNs } from 'shared/components/errors/vague.mjs'
 
 // Translation namespaces used on this page
-const namespaces = [...new Set(['aaron', ...wbNs, ...pageNs])]
+const namespaces = nsMerge(errorNs, wbNs, pageNs)
 
 const loadMeasurements = async ({ type, id, backend }) => {
-  if (!type) return false
   const method = {
     set: backend.getSet,
     cset: backend.getCuratedSet,
@@ -26,26 +26,40 @@ const loadMeasurements = async ({ type, id, backend }) => {
     set: 'set',
     cset: 'curatedSet',
   }
+  if (!type || !method[type]) return false
+
   const result = await method[type](id)
   if (result.success) return result.data[key[type]]
   else return false
 }
 
-const NewAaronFromSetPage = ({ page, id, design, type }) => {
+const NewDesignFromSetPage = ({ page, id, design, type }) => {
   const { token } = useAccount()
   const backend = useBackend(token)
   const [set, setSet] = useState(false)
+  const [error, setError] = useState(false)
   const Design = useDesign(design)
 
   useEffect(() => {
     // Guard against loops as the backend object is recreated on each render
     const getSet = async () => {
       const data = await loadMeasurements({ type, id, backend })
-      setSet(data)
+      if (data) setSet(data)
+      else setError(true)
     }
     if (set === false) getSet()
     else if (set?.id && set.id !== id) getSet()
-  }, [id, type, backend])
+  }, [id, type, backend, set])
+
+  // Short-circuit errors
+  if (error)
+    return (
+      <PageWrapper {...page} title={false}>
+        <div className="max-w-lg flex flex-col items-center m-auto justify-center text-center">
+          <VagueError />
+        </div>
+      </PageWrapper>
+    )
 
   const baseSettings = set?.measies ? { measurements: set.measies } : null
 
@@ -56,12 +70,12 @@ const NewAaronFromSetPage = ({ page, id, design, type }) => {
   )
 }
 
-export default NewAaronFromSetPage
+export default NewDesignFromSetPage
 
 export async function getStaticProps({ locale, params }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, namespaces)),
+      ...(await serverSideTranslations(locale, [`o_${params.design}`, ...namespaces])),
       id: Number(params.id),
       design: params.design,
       type: params.type,

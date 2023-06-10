@@ -3,7 +3,7 @@ title: Files and folder structure
 order: 110
 ---
 
-Inside out `tutorial` folder, the `design/src` folder holds the source code for
+Inside our `tutorial` folder, the `design/src` folder holds the source code for
 the new pattern we will create.
 
 We can safely ignore all other files and folders, as they are part of the

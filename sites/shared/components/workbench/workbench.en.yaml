@@ -17,6 +17,7 @@ bottomRight: Bottom Right
 attributes: Attributes
 showAllParts: Show all pattern parts
 showOnlyThisPart: Show only this pattern part
+showMovableButtons: Buttons
 partInfo: Pattern part info
 pathInfo: Path info
 part: Pattern part

@@ -20,6 +20,7 @@ const frontendFiles = [
   `**/pages/**/*.${jsSuffixes}`,
   `**/page-templates/**/*.${jsSuffixes}`,
   `packages/i18n/**/*.md/*.${jsSuffixes}`,
+  `packages/react-components/**/*.${jsSuffixes}`,
 ]
 
 module.exports = {
