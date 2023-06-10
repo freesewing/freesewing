@@ -12,6 +12,7 @@ import { Carlita } from '@freesewing/carlita'
 import { Carlton } from '@freesewing/carlton'
 import { Cathrin } from '@freesewing/cathrin'
 import { Charlie } from '@freesewing/charlie'
+import { Collab } from '@freesewing/collab'
 import { Cornelius } from '@freesewing/cornelius'
 import { Diana } from '@freesewing/diana'
 import { Florence } from '@freesewing/florence'
@@ -61,6 +62,7 @@ const designs = {
   carlton: Carlton,
   cathrin: Cathrin,
   charlie: Charlie,
+  collab: Collab,
   cornelius: Cornelius,
   diana: Diana,
   florence: Florence,

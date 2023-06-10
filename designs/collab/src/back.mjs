@@ -1,15 +1,19 @@
-function draft({ Point, points, Path, paths, store, part, measurements, options }) {
-  //store.set('hips', hips)
-  //store.set('frontHips', hips * options.frontHalf)
-  //store.set('backHips',  hips * (1 - options.frontHalf))
-  //const seat = measurements.seat * options.seatEase
-  //store.set('seat', seat)
-  //store.set('frontSeat', seat * options.frontHalf)
-  //store.set('backSeat', seat * (1 - options.frontHalf))
-  //store.set('hipsToSeat', measurements.waistToSeat - measurements.waistToHips)
-  //store.set('hipsToUpperLeg', measurements.waistToUpperLeg - measurements.waistToHips)
-  //store.set('seatToUpperLeg', measurements.waistToUpperLeg - measurements.waistToSeat)
-
+function draft({
+  Point,
+  points,
+  Path,
+  paths,
+  store,
+  part,
+  measurements,
+  options,
+  complete,
+  sa,
+  paperless,
+  snippets,
+  Snippet,
+  macro,
+}) {
   points.topLeft = new Point(0, 0)
   points.topCp = new Point(store.get('backQuarterHips') / 2, 0)
   points.topRight = new Point(store.get('backQuarterHips'), store.get('hips') * 0.01)
@@ -22,7 +26,7 @@ function draft({ Point, points, Path, paths, store, part, measurements, options 
 
   console.log(store.get('hipsQuarterReduction'), measurements, options)
 
-  paths.tmp = new Path()
+  paths.seam = new Path()
     .move(points.topLeft)
     .line(points.bottomLeft)
     .line(points.bottomRight)
@@ -30,15 +34,9 @@ function draft({ Point, points, Path, paths, store, part, measurements, options 
     ._curve(points.topCp, points.topLeft)
 
   // Complete?
-  /*
   if (complete) {
-
     points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
     snippets.logo = new Snippet('logo', points.logo)
-    points.text = points.logo
-      .shift(-90, w / 8)
-      .attr('data-text', 'hello')
-      .attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -48,17 +46,21 @@ function draft({ Point, points, Path, paths, store, part, measurements, options 
   // Paperless?
   if (paperless) {
     macro('hd', {
+      from: points.topLeft,
+      to: points.topRight,
+      y: points.topLeft.y - sa - 15,
+    })
+    macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
       y: points.bottomLeft.y + sa + 15,
     })
-    macro('vd', {
-      from: points.bottomRight,
-      to: points.topRight,
-      x: points.topRight.x + sa + 15,
-    })
+    // macro('vd', {
+    //   from: points.bottomRight,
+    //   to: points.topRight,
+    //   x: points.topRight.x + sa + 15,
+    // })
   }
-  */
 
   return part
 }

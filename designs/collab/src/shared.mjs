@@ -24,10 +24,12 @@ function draft({ store, measurements, options, part }) {
 export const shared = {
   name: 'shared',
   measurements: ['hips', 'seat', 'waistToHips', 'waistToSeat', 'waistToUpperLeg'],
+  hide: { self: true },
   options: {
-    // Constants
-    frontHalf: 0.55,
-    // Ease at the hips
+    /*
+     * Fit options
+     */
+    // Amount of ease at the hips
     hipsEase: {
       pct: 0,
       min: -5,
@@ -35,7 +37,7 @@ export const shared = {
       menu: 'fit',
       ...pctBasedOn('hips'),
     },
-    // Ease at the seat
+    // Amount of ease at the seat
     seatEase: {
       pct: 5,
       min: 0,
@@ -43,22 +45,34 @@ export const shared = {
       menu: 'fit',
       ...pctBasedOn('seat'),
     },
-    // Minimal dart width
+    /*
+     * Advanced options
+     */
+    // Percentage of the full circumference that should be made up
+    // by the front panels. Increasing this will shift the side seams
+    // to the back, which increases space for the pockets. However if
+    // you shift them too far, the pocket opening sits too far to the
+    // side and becomes difficult to access. The default 60% is a good
+    // average.
+    frontHalf: {
+      pct: 60,
+      min: 50,
+      max: 65,
+      menu: 'advanced',
+    },
+    // Minimal dart width. Below this width, we don't create darts but
+    // instead do all shaping in the side seams.
     minDartWidth: {
       pct: 2,
       min: 0.5,
       max: 4,
       menu: 'advanced',
-      toAbs: (pct, settings) => {
-        const result =
-          (pct *
-            settings.measurements.hips *
-            (1 + settings.options.hipsEase) *
-            (1 - settings.options.frontHalf)) /
-          2
-        console.log({ pct, settings, result })
-        return result
-      },
+      toAbs: (pct, settings) =>
+        (pct *
+          settings.measurements.hips *
+          (1 + settings.options.hipsEase) *
+          (1 - settings.options.frontHalf)) /
+        2,
       fromAbs: (mm, settings) =>
         (settings.measurements.hips *
           (1 + settings.options.hipsEase) *
