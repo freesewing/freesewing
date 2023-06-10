@@ -7,7 +7,7 @@ import { NavigationContext } from 'shared/context/navigation-context.mjs'
 export const ns = navNs
 
 export const DocsLayout = ({ children = [], pageTitle = false }) => {
-  const { title, crumbs } = useContext(NavigationContext)
+  const { crumbs } = useContext(NavigationContext)
 
   return (
     <div className="grid grid-cols-4 mx-auto justify-center place-items-stretch lg:mt-16">
