@@ -15,8 +15,8 @@ export const DocsLayout = ({ children = [], pageTitle = false }) => {
       <section className="col-span-4 lg:col-span-3 py-8 lg:py-24 px-4 lg:pl-8 bg-base-50">
         {pageTitle && (
           <div className="xl:pl-4">
-            <Breadcrumbs crumbs={crumbs} title={pageTitle ? pageTitle : title} />
-            <h1 className="break-words">{pageTitle ? pageTitle : title}</h1>
+            <Breadcrumbs crumbs={crumbs} title={pageTitle} />
+            <h1 className="break-words">{pageTitle}</h1>
           </div>
         )}
         <div className="xl:pl-4">{children}</div>
