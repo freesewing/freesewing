@@ -44,9 +44,6 @@ jobs:
           CI: true
       - name: Buil all
         run: yarn buildall
-      # Why are we prebuilding packages?
-      #- name: Prebuild Packages
-      #  run: npx lerna run prebuild
       - name: Run eslint
         run: |
           changed_files="$(git diff --name-only origin/${{ github.base_ref }})"
