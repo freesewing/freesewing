@@ -1,6 +1,4 @@
-import get from 'lodash.get'
 import { useTranslation } from 'next-i18next'
-import orderBy from 'lodash.orderby'
 import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { designs } from 'shared/config/designs.mjs'
@@ -104,43 +102,9 @@ const sitePages = (t = false, control = 99) => {
   return pages
 }
 
-const createCrumbs = (path, nav) =>
-  path.map((crumb, i) => {
-    const entry = get(nav, path.slice(0, i + 1), { t: 'no-title', s: path.join('/') })
-    const val = { t: entry.t, s: entry.s }
-    if (entry.o) val.o = entry.o
-
-    return val
-  })
-
-const createSections = (nav) => {
-  const sections = {}
-  for (const slug of Object.keys(nav)) {
-    const entry = nav[slug]
-    const val = { t: entry.t, s: entry.s }
-    if (entry.o) val.o = entry.o
-    if (!entry.h) sections[slug] = val
-  }
-
-  return orderBy(sections, ['o', 't'])
-}
-
 export const useNavigation = ({ path }) => {
   const { t } = useTranslation(ns)
   const { account } = useAccount()
 
-  const nav = sitePages(t, account?.control)
-
-  // Create crumbs array
-  const crumbs = createCrumbs(path, nav)
-  const sections = createSections(nav)
-
-  return {
-    crumbs,
-    sections,
-    slug: path.join('/'),
-    nav: path.length > 1 ? get(nav, path[0]) : path.length === 0 ? sections : nav[path[0]],
-    title: crumbs.length > 0 ? crumbs.slice(-1)[0].t : '',
-    siteNav: nav,
-  }
+  return sitePages(t, account.control)
 }

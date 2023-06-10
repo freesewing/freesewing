@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useTranslation } from 'next-i18next'
 import { PanZoomPattern as ShowPattern } from 'shared/components/workbench/pan-zoom-pattern.mjs'
 import { InspectorPattern } from './inspector/pattern.mjs'
 import { DraftMenu, ns as menuNs } from './menu.mjs'
@@ -16,12 +17,15 @@ export const DraftView = ({
   language,
   account,
   DynamicDocs,
+  setView,
+  view,
 }) => {
   // State for inspector
   const [inspect, setInspect] = useState({
     show: {},
     reveal: {},
   })
+
   const inspector = {
     show: (data) => {
       const newInspect = { ...inspect }
@@ -83,6 +87,8 @@ export const DraftView = ({
             DynamicDocs,
             inspector,
             renderProps,
+            view,
+            setView,
           }}
         />
       </div>
