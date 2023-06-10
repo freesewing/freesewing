@@ -103,6 +103,7 @@ const DraftError = ({ err, t }) => {
   return (
     <>
       {data}
+      {t('alsoLogged')}
       {details ? (
         <>
           <h6>{t('stackTrace')}</h6>

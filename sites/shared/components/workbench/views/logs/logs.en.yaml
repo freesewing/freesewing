@@ -9,3 +9,4 @@ designVarUndefined: We were unable to draft this pattern because { var } is unde
 otherVarUndefined:  The { var } variable is undefined.
 checkForDetailsOrClick: Check { file } for details or { click }.
 stacktrace: Stack trace
+alsoLogged: We have also logged this error to the console of your browser so you can inpect it further.
