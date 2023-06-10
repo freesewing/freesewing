@@ -78,7 +78,7 @@ const sitePages = () => {
 }
 
 export const useNavigation = (params = {}) => {
-  const { path = [], locale = 'en' } = params
+  const { locale = 'en' } = params
   const nav = { ...pbn[locale], ...sitePages() }
   // Make top-level documentation entries appear in b-list
   for (const page of ['tutorials', 'guides', 'howtos', 'reference', 'training']) {
