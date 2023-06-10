@@ -38,7 +38,7 @@ jobs:
         lookup-only: true
     - name: Install dependencies
       if: steps.diff.outputs.files && steps.cache_node_modules.outputs.cache-hit != 'true'
-      run: npx lerna bootstrap
+      run: yarn install
       env:
         CI: true
 

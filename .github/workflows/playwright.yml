@@ -25,7 +25,7 @@ name: Playwright Tests
 #        key: node_modules-${{ hashFiles('yarn.lock') }}
 #    - name: Install dependencies
 #      if: steps.cache_node_modules.outputs.cache-hit != 'true'
-#      run: npx lerna bootstrap
+#      run: yarn install
 #    - name: Install Playwright Browsers
 #      run: yarn playwright install --with-deps
 #    - name: Run Playwright tests
