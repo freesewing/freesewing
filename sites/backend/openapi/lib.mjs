@@ -273,7 +273,7 @@ export const response = {
           example: false,
         },
         name: {
-          description: `The name of the Measurements Set exists solely to help you differentiate between your people.`,
+          description: `The name of the Measurements Set exists solely to help you differentiate between measurements sets.`,
           type: 'string',
           example: 'My bestie Ronda',
         },

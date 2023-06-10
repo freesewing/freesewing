@@ -12,11 +12,11 @@ There are two different models to authenticate, as user, or with an API key.
 The API keys have more granularity, their permission levels are:
 
  - `0`: No permissions. Can only login but not do anything (used for testing)
- - `1`: Read access to own people/patterns data
+ - `1`: Read access to own measurements sets/patterns data
  - `2`: Read access to all account data
- - `3`: Write access to own people/pattern data
+ - `3`: Write access to own measurements sets/pattern data
  - `4`: Write access to all own account data (this is the `user` role)
- - `5`: Read access to people/pattern data of all users (this is the `bughunter` role)
+ - `5`: Read access to measurements sets/pattern data of all users (this is the `bughunter` role)
  - `6`: Read access to all account data of all users
  - `7`: Read access to all account data of all users + Write access for specific support functions (this is the `support` role)
  - `8`: Write access to all account data of all users (this is the `admin` role)
