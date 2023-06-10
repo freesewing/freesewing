@@ -17,7 +17,6 @@ import {
   UploadIcon,
 } from 'shared/components/icons.mjs'
 import { Ribbon } from 'shared/components/ribbon.mjs'
-import Link from 'next/link'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
 import { NavButton, NavSpacer, colors } from 'shared/components/header.mjs'
 
