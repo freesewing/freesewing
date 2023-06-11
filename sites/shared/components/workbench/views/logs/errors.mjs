@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import { WebLink } from 'shared/components/web-link.mjs'
-import { Trans } from 'react-i18next'
 import Markdown from 'react-markdown'
 
 // If these vars are missing, we suspect they are not desctructured in the draft method
