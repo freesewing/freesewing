@@ -78,13 +78,13 @@ const DesignsVarUndefined = ({ missing, err, t }) => (
 )
 
 // Some other var not being defined
-const OtherVarUndefined = ({ missing, err, t }) => (
+const OtherVarUndefined = ({ details, setDetails, missing, err, t }) => (
   <div key={missing}>
     <Markdown>{t('otherVarUndefined', { missing, interpolation })}</Markdown>
     <br />
     <Markdown>
       {t('checkForDetailsOrClick', {
-        file: stack[0],
+        file: err.stack[0],
         click: '',
         interpolation,
       })}
@@ -108,7 +108,7 @@ const DraftError = ({ err, t }) => {
         data.push(<DesignsVarUndefined {...{ err, missing, t }} />)
         if (knownVars.includes(missing))
           data.push(<NotDestructured key="nd" {...{ details, setDetails, err, missing, t }} />)
-      } else data.push(<OtherVarUndefined {...{ err, missing, t }} />)
+      } else data.push(<OtherVarUndefined {...{ details, setDetails, err, missing, t }} />)
     }
   }
 

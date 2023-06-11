@@ -14,7 +14,7 @@ const colors = {
 const DraftLogEntry = ({ type, line, t }) => {
   // Some lines are arrays, handle each entry individually
   if (Array.isArray(line))
-    return line.reverse().map((l, key) => <DraftLogEntry line={l} {...{ t, type, key }} />)
+    return line.reverse().map((l, key) => <DraftLogEntry key={key} line={l} {...{ t, type }} />)
 
   let title = 'Unsure how to treat this error'
   const data = []
@@ -53,7 +53,7 @@ const DraftLogs = ({ type, t, lines = [] }) =>
     <>
       <h3>{t(type)}</h3>
       {lines.reverse().map((line, key) => (
-        <DraftLogEntry {...{ type, key, line, t }} />
+        <DraftLogEntry key={key} {...{ type, line, t }} />
       ))}
     </>
   ) : null
@@ -68,16 +68,7 @@ const extractLogs = (pattern) => {
   return logs
 }
 
-export const LogView = ({
-  pattern,
-  patternConfig,
-  settings,
-  ui,
-  update,
-  language,
-  account,
-  DynamicDocs,
-}) => {
+export const LogView = ({ pattern, settings }) => {
   const { t } = useTranslation(ns)
 
   try {
@@ -91,7 +82,7 @@ export const LogView = ({
     <div className="max-w-4xl mx-auto px-4 pb-8">
       <h1>{t('logs')}</h1>
       {Object.entries(logs).map(([type, lines], key) => (
-        <DraftLogs {...{ type, lines, t, key }} />
+        <DraftLogs key={key} {...{ type, lines, t }} />
       ))}
     </div>
   )
