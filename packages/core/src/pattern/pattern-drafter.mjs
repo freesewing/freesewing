@@ -1,6 +1,6 @@
 import { PatternDraftQueue } from './pattern-draft-queue.mjs'
 import { Part } from '../part.mjs'
-import { __macroName } from '../utils.mjs'
+import { __macroName, mergeOptions } from '../utils.mjs'
 
 /**
  * A class to handle drafting a pattern
@@ -202,7 +202,11 @@ PatternDrafter.prototype.__loadAbsoluteOptionsSet = function (set) {
  */
 PatternDrafter.prototype.__snappedPercentageOption = function (optionName, set) {
   const conf = this.pattern.config.options[optionName]
-  const abs = conf.toAbs(this.pattern.settings[set].options[optionName], this.pattern.settings[set])
+  const abs = conf.toAbs(
+    this.pattern.settings[set].options[optionName],
+    this.pattern.settings[set],
+    mergeOptions(this.pattern.settings[set], this.pattern.config.options)
+  )
   // Handle units-specific config - Side-step immutability for the snap conf
   let snapConf = conf.snap
   if (!Array.isArray(snapConf) && snapConf.metric && snapConf.imperial)
