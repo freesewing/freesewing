@@ -376,7 +376,7 @@ Pattern.prototype.__runHooks = function (hookName, data = false) {
   if (data === false) data = this
   let hooks = this.plugins.hooks[hookName]
   if (hooks.length > 0) {
-    this.store.log.debug(`Running \`${hookName}\` hooks`)
+    this.store.log.debug(`🪝 Running \`${hookName}\` hooks`)
     for (let hook of hooks) {
       hook.method(data, hook.data)
     }

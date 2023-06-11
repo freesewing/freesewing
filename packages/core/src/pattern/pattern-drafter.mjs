@@ -26,7 +26,7 @@ PatternDrafter.prototype.draft = function () {
     this.pattern.setStores[set] = this.pattern.__createSetStore()
     this.__useSet(set)
 
-    this.activeStore.log.debug(`Initialized store for set \`${set}\``)
+    this.activeStore.log.debug(`🗃️ Initialized store for set \`${set}\``)
     this.pattern.__runHooks('preSetDraft')
     this.activeStore.log.debug(`📐 Drafting pattern for set \`${set}\``)
 
@@ -119,7 +119,7 @@ PatternDrafter.prototype.__createPartForSet = function (partName, set = 0) {
   // Handle inject/inheritance
   const parent = this.pattern.config.inject[partName]
   if (typeof parent === 'string') {
-    this.activeStore.log.debug(`Creating part \`${partName}\` from part \`${parent}\``)
+    this.activeStore.log.debug(`🪆 Creating part \`${partName}\` from part \`${parent}\``)
     try {
       this.pattern.parts[set][partName].__inject(this.pattern.parts[set][parent])
     } catch (err) {
