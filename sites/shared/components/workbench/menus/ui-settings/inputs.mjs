@@ -16,8 +16,6 @@ export const ControlSettingInput = (props) => {
 }
 
 const ViewInput = (props) => {
-  const { selection, update } = useControlState()
-
   props.config.dflt = props.view
   return (
     <ListInput

@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import { useTranslation } from 'next-i18next'
-import { NoIcon as ErrorIcon } from 'shared/components/icons.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
 
 const knownVars = [
@@ -88,7 +86,6 @@ const DraftError = ({ err, t }) => {
   // Leave this here, it's intentional. We log the error to you can inpect it.
   console.log(err)
 
-  const msg = err.toString()
   if (err.name === 'ReferenceError') {
     if (err.message.includes('is not defined')) {
       const missing = err.message.split(' ').shift()

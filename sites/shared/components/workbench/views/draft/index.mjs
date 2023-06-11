@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react'
-import { useTranslation } from 'next-i18next'
+import { useState } from 'react'
 import { PanZoomPattern as ShowPattern } from 'shared/components/workbench/pan-zoom-pattern.mjs'
 import { InspectorPattern } from './inspector/pattern.mjs'
 import { DraftMenu, ns as menuNs } from './menu.mjs'
