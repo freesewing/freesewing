@@ -1,4 +1,4 @@
-export const loadSettingsConfig = (settings) => {
+export const loadSettingsConfig = (settings, view) => {
   const uiSettings = {
     control: {
       control: 1, // Show when control > 0
@@ -33,6 +33,30 @@ export const loadSettingsConfig = (settings) => {
       },
       dflt: 0,
       emoji: '🔬',
+    },
+    view: {
+      control: 3,
+      list: ['draft', 'test', 'print', 'cut', 'save', 'export', 'logs'],
+      dflt: view,
+      emoji: '👀',
+      choiceTitles: {
+        draft: 'draft',
+        test: 'test',
+        print: 'print',
+        cut: 'cut',
+        save: 'save',
+        export: 'export',
+        logs: 'logs',
+      },
+      valueTitles: {
+        draft: 'draft',
+        test: 'test',
+        print: 'print',
+        cut: 'cut',
+        save: 'save',
+        export: 'export',
+        logs: 'logs',
+      },
     },
   }
 

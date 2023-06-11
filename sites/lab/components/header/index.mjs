@@ -22,7 +22,7 @@ import { ModalThemePicker, ns as themeNs } from 'shared/components/modal/theme-p
 import { ModalLocalePicker, ns as localeNs } from 'shared/components/modal/locale-picker.mjs'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
 
-import { NavButton, NavSpacer, colors } from 'shared/components/workbench/header.mjs'
+import { NavButton, NavSpacer, colors } from 'shared/components/header.mjs'
 
 export const ns = ['header', 'sections', ...themeNs, ...localeNs]
 

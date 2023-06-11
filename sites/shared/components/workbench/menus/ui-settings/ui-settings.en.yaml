@@ -16,3 +16,28 @@ inspectYes.t: Enable the inspector
 inspectYes.d: With the pattern inspector enabled and the React rendering engine selected, we will add interactivity to the pattern to allow you to inspect the various elements that make up the pattern.
 no: No
 yes: Yes
+draft: Draft
+test: Test
+print: Print layout
+cut: Cut Layout
+save: Save
+export: Export
+edit: Edit
+draft.t: Draft your pattern
+draft.d: Launches FreeSewing flagship pattern editor, where you can tweak your pattern to your heart's desire
+test.t: Test your pattern
+test.d: See how your pattern adapts to changes in options, or measurements
+print.t: Print Layout
+print.d: Allows you to arrange your pattern pieces so you can printing your pattern on as little pages as possible
+cut.t: Cutting layout
+cut.d: Allows you to arrange your pattern pieces so you can determine exactly how much fabric you need to make it.
+save.t: Save your pattern
+save.d: Save the current pattern to your FreeSewing account
+export.t: Export your pattern
+export.d: Allows you to export this pattern to a variety of formats
+logs.t: Pattern logs
+logs.d: Allows you to browse the pattern logs to see what exactly happened while drafting this pattern
+edit.t: Hand-edit the pattern settings
+edit.d: This allows you to hand-edit the pattern settings, giving you full control over how your pattern will be drafted
+view: View
+view.d: These are the various views you can pick from. Includes those views available via the navigation bar or menu, and some additional ones

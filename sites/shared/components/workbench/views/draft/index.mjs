@@ -16,12 +16,15 @@ export const DraftView = ({
   language,
   account,
   DynamicDocs,
+  setView,
+  view,
 }) => {
   // State for inspector
   const [inspect, setInspect] = useState({
     show: {},
     reveal: {},
   })
+
   const inspector = {
     show: (data) => {
       const newInspect = { ...inspect }
@@ -83,6 +86,8 @@ export const DraftView = ({
             DynamicDocs,
             inspector,
             renderProps,
+            view,
+            setView,
           }}
         />
       </div>

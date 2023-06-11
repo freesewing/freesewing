@@ -31,7 +31,7 @@ describe('Pattern', () => {
     pattern.draft()
     expect(pattern.setStores[0].logs.error.length).to.equal(1)
     expect(pattern.setStores[0].logs.error[0]).to.equal(
-      'Unable to draft pattern part __test__. Part.draft() is not callable'
+      'Unable to draft pattern part `test`. Part.draft() is not callable'
     )
   })
 
@@ -45,7 +45,7 @@ describe('Pattern', () => {
     pattern.draft()
     expect(pattern.setStores[0].logs.error.length).to.equal(1)
     expect(pattern.setStores[0].logs.error[0]).to.equal(
-      'Result of drafting part test was undefined. Did you forget to return the part?'
+      'Result of drafting part `test` was undefined. Did you forget to return the part?'
     )
   })
 
@@ -156,7 +156,7 @@ describe('Pattern', () => {
     const pattern = new design()
     pattern.draft().render()
     expect(pattern.setStores[0].logs.error.length).to.equal(1)
-    expect(pattern.setStores[0].logs.error[0][0]).to.equal('Unable to draft part `test` (set 0)')
+    expect(pattern.setStores[0].logs.error[0][0]).to.equal('Unable to draft part `test` (set `0`)')
   })
 
   it('Handle layout object', () => {

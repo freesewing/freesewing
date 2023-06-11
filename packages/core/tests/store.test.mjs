@@ -77,14 +77,14 @@ describe('Store', () => {
   it('Should log a warning when trying to extend a protected method via the constructor', () => {
     const store = new Store([['get', () => false]])
     expect(store.logs.warning.length).to.equal(1)
-    expect(store.logs.warning[0]).to.equal('You cannot overwrite store.get()')
+    expect(store.logs.warning[0]).to.equal('You cannot overwrite `store.get()`')
   })
 
   it('Should log a warning when trying to extend a protected method via the extend', () => {
     const store = new Store()
     store.extend([['get', () => false]])
     expect(store.logs.warning.length).to.equal(1)
-    expect(store.logs.warning[0]).to.equal('You cannot overwrite store.get()')
+    expect(store.logs.warning[0]).to.equal('You cannot overwrite `store.get()`')
   })
 
   it('Should extend the store with a new method via the constructor', () => {
