@@ -442,6 +442,29 @@ export function lineIntersectsCurve(start, end, from, cp1, cp2, to) {
 }
 
 /**
+ * Helper method to merge passed in options with default options from the pattern config
+ *
+ * @param {object} settings - The settings passed to the pattern
+ * @param {object} optionsConfig - The pattern's options config
+ * @return {object} result - An object with the merged options and their values
+ */
+export function mergeOptions(settings, optionsConfig) {
+  const merged = typeof settings.options === 'undefined' ? {} : { ...settings.option }
+  for (const [key, option] of Object.entries(optionsConfig)) {
+    if (typeof option === 'object') {
+      if (typeof option.pct !== 'undefined') merged[key] = option.pct / 100
+      else if (typeof option.mm !== 'undefined') merged[key] = option.mm
+      else if (typeof option.deg !== 'undefined') merged[key] = option.deg
+      else if (typeof option.count !== 'undefined') merged[key] = option.count
+      else if (typeof option.bool !== 'undefined') merged[key] = option.bool
+      else if (typeof option.dflt !== 'undefined') merged[key] = option.dflt
+    } else merged[key] = option
+  }
+
+  return merged
+}
+
+/**
  * Helper method to calculate abolute option value based on a measurement
  *
  * @param {string} measurement - The measurement to base the calculation on

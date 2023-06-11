@@ -1,14 +1,19 @@
 import { formatMm, formatPercentage } from 'shared/utils.mjs'
 import { ListValue, HighlightedValue, PlainValue, BoolValue } from '../shared/values'
+import { mergeOptions } from '@freesewing/core'
 
 /** Displays the current percentatge value, and the absolute value if configured */
-export const PctOptionValue = ({ config, current, settings, changed }) => {
+export const PctOptionValue = ({ config, current, settings, changed, patternConfig }) => {
   const val = changed ? current : config.pct / 100
 
   return (
     <HighlightedValue changed={changed}>
       {formatPercentage(val)}
-      {config.toAbs && settings.measurements ? ` | ${formatMm(config.toAbs(val, settings))}` : null}
+      {config.toAbs && settings.measurements
+        ? ` | ${formatMm(
+            config.toAbs(val, settings, mergeOptions(settings, patternConfig.options))
+          )}`
+        : null}
     </HighlightedValue>
   )
 }
