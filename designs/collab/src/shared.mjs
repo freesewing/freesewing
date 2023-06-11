@@ -26,10 +26,13 @@ export const shared = {
   measurements: ['hips', 'seat', 'waistToHips', 'waistToSeat', 'waistToUpperLeg'],
   hide: { self: true },
   options: {
+    // Fit options
+
     /*
-     * Fit options
+     * Amount of ease at the hips.
+     * By default this has no ease + elasticated waist (partially) because this
+     * is supposed to support cargo without sliding down. (belt is better, but still).
      */
-    // Amount of ease at the hips
     hipsEase: {
       pct: 0,
       min: -5,
@@ -37,7 +40,10 @@ export const shared = {
       menu: 'fit',
       ...pctBasedOn('hips'),
     },
-    // Amount of ease at the seat
+    /*
+     * Amount of ease at the seat.
+     * Needs to be sufficient to allow dexterity but not so much that it's to flared
+     */
     seatEase: {
       pct: 5,
       min: 0,
@@ -45,43 +51,83 @@ export const shared = {
       menu: 'fit',
       ...pctBasedOn('seat'),
     },
+
+    // Advanced options
+
     /*
-     * Advanced options
+     * The dart length.
+     * Is a factor between the distance between the hipline and seatline
      */
-    // Percentage of the full circumference that should be made up
-    // by the front panels. Increasing this will shift the side seams
-    // to the back, which increases space for the pockets. However if
-    // you shift them too far, the pocket opening sits too far to the
-    // side and becomes difficult to access. The default 60% is a good
-    // average.
+    dartLength: {
+      pct: 65,
+      min: 40,
+      max: 85,
+      menu: 'advanced',
+      toAbs: (value, { measurements }, mergedOptions) =>
+        value * (measurements.waistToSeat - measurements.waistToHips),
+      fromAbs: (value) => (measurements.waistToSeat - measurements.waistToHips) / value,
+    },
+    /*
+     * The dart width.
+     * Doesn't influence fit, but rather determines how much shaping is done in the darts
+     */
+    dartWidth: {
+      pct: 5,
+      min: 4,
+      max: 8,
+      menu: 'advanced',
+      toAbs: (value, { measurements }, mergedOptions) => value * (measurements.hips / 4),
+      fromAbs: (value) => measurements.hips / 4 / value,
+    },
+    /*
+     *  Percentage of the full circumference that should be made up
+     *  by the front panels. Increasing this will shift the side seams
+     *  to the back, which increases space for the pockets. However if
+     *  you shift them too far, the pocket opening sits too far to the
+     *  side and becomes difficult to access. The default 60% is a good
+     *  average.
+     */
     frontHalf: {
-      pct: 60,
+      pct: 55,
       min: 50,
-      max: 65,
+      max: 60,
       menu: 'advanced',
     },
-    // Minimal dart width. Below this width, we don't create darts but
-    // instead do all shaping in the side seams.
+    /*
+     * Minimal dart width. Below this width, we don't create darts but
+     * instead do all shaping in the side seams.
+     */
     minDartWidth: {
       pct: 2,
       min: 0.5,
       max: 4,
       menu: 'advanced',
-      toAbs: (pct, { settings }, mergedOptions) => {
-        console.log('in toAbs', { settings, mergedOptions })
-        return
-        ;(pct *
+      toAbs: (pct, settings, mergedOptions) =>
+        (pct *
           settings.measurements.hips *
-          (1 + settings.options.hipsEase) *
-          (1 - settings.options.frontHalf)) /
-          2
-      },
+          (1 + mergedOptions.hipsEase) *
+          (1 - mergedOptions.frontHalf)) /
+        2,
       fromAbs: (mm, settings) =>
         (settings.measurements.hips *
           (1 + settings.options.hipsEase) *
           (1 - settings.options.frontHalf)) /
         2 /
         mm,
+    },
+    /*
+     * How much the waist should slant downward at the front (and up at the back)
+     * This is based on a model with a perfectly horizontal waistline.
+     * However, people who -- as Sir Mix A Lot would say -- got (more) back benefit
+     * from a sloped waistline that raises up at teh back and dips lower at the front.
+     * This option facilitates that.
+     */
+    waistSlant: {
+      pct: 0,
+      min: 0,
+      max: 2,
+      menu: 'advanced',
+      ...pctBasedOn('hips'),
     },
   },
   plugins: [pluginBundle],
