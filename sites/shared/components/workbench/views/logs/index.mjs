@@ -1,5 +1,6 @@
 import { useTranslation } from 'next-i18next'
 import { analyzeDraftLogLine } from './errors.mjs'
+import Markdown from 'react-markdown'
 
 export const ns = ['logs']
 
@@ -34,10 +35,12 @@ const DraftLogEntry = ({ type, line, t }) => {
           flex flex-col items-start
         `}
       >
-        <div className={`flex flex-row gap-1 py-1`}>
+        <div className={`flex flex-row gap-1 py-1 pattern-logs`}>
           <span className={`hidden lg:block font-bold uppercase text-${colors[type]}`}>{type}</span>
           <span className={`hidden lg:block font-bold text-${colors[type]}`}>|</span>
-          <span className="font-medium px-2 lg:px-0">{title}</span>
+          <span className="font-medium px-2 lg:px-0">
+            <Markdown>{title}</Markdown>
+          </span>
         </div>
         <div className="popout-content pl-2">{data}</div>
       </div>

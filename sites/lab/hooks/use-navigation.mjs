@@ -102,7 +102,7 @@ const sitePages = (t = false, control = 99) => {
   return pages
 }
 
-export const useNavigation = ({ path }) => {
+export const useNavigation = () => {
   const { t } = useTranslation(ns)
   const { account } = useAccount()
 

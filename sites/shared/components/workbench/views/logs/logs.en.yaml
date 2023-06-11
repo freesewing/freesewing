@@ -3,10 +3,11 @@ error: Error messages
 warning: Warning messages
 info: Info messages
 debug: Debug messages
-seeLinkOrClick: See {{ link }} or { click }
-notDesctructured: This most likely means that { var } was not desctructured as a draft method parameter.
-designVarUndefined: We were unable to draft this pattern because { var } is undefined in { file }
-otherVarUndefined:  The { var } variable is undefined.
-checkForDetailsOrClick: Check { file } for details or { click }.
+seeLinkOrClick: See { link } or { click }
+notDestructured: This most likely means that `{ missing }` was not desctructured as a draft method parameter.
+designVarUndefined: We were unable to draft this pattern because `{ missing }` is undefined in `{ file }`
+otherVarUndefined:  The `{ missing }` variable is undefined.
+checkForDetailsOrClick: Check `{ file }` for details or { click }.
 stacktrace: Stack trace
 alsoLogged: We have also logged this error to the console of your browser so you can inpect it further.
+clickHereForStackTrace: click here to show the stack trace
