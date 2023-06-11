@@ -15,10 +15,10 @@ function draft({
   macro,
 }) {
   points.topLeft = new Point(0, 0)
-  points.topCp = new Point(store.get('backQuarterHips') / 2, 0)
-  points.topRight = new Point(store.get('backQuarterHips'), store.get('hips') * 0.01)
+  points.topCp = new Point(store.get('frontQuarterHips') / 2, 0)
+  points.topRight = new Point(store.get('frontQuarterHips'), store.get('hips') * 0.01)
   points.bottomLeft = new Point(0, points.topRight.y + store.get('hipsToUpperLeg'))
-  points.bottomRight = new Point(store.get('backQuarterSeat'), points.bottomLeft.y)
+  points.bottomRight = new Point(store.get('frontQuarterSeat'), points.bottomLeft.y)
 
   // Reduction from hips to seat
   const reduce = store.get('hipsQuarterReduction')
@@ -63,4 +63,4 @@ function draft({
   return part
 }
 
-export const back = { name: 'back', draft: draft }
+export const front = { name: 'front', draft: draft }

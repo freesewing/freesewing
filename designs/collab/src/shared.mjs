@@ -67,12 +67,15 @@ export const shared = {
       min: 0.5,
       max: 4,
       menu: 'advanced',
-      toAbs: (pct, settings) =>
-        (pct *
+      toAbs: (pct, { settings }, mergedOptions) => {
+        console.log('in toAbs', { settings, mergedOptions })
+        return
+        ;(pct *
           settings.measurements.hips *
           (1 + settings.options.hipsEase) *
           (1 - settings.options.frontHalf)) /
-        2,
+          2
+      },
       fromAbs: (mm, settings) =>
         (settings.measurements.hips *
           (1 + settings.options.hipsEase) *
