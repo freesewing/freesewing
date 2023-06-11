@@ -378,6 +378,19 @@
   .filo-100 {
     fill-opacity: 1;
   }
+
+  /*
+   * Deal with markdown formatting in pattern logs
+   */
+  .pattern-logs p {
+    @apply p-0 m-0 inline;
+  }
+  .pattern-logs a {
+    @apply text-secondary font-medium hover:underline hover:cursor-pointer hover:text-secondary-focus;
+  }
+  .pattern-logs code {
+    @apply px-1 rounded font-bold bg-neutral bg-opacity-10 font-mono;
+  }
 }
 
 @keyframes pulsefill {

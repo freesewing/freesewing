@@ -19,6 +19,7 @@ import { CutView, ns as cutNs } from 'shared/components/workbench/views/cut/inde
 import { EditView, ns as editNs } from './views/edit/index.mjs'
 import { TestView, ns as testNs } from 'shared/components/workbench/views/test/index.mjs'
 import { ExportView, ns as exportNs } from 'shared/components/workbench/views/exporting/index.mjs'
+import { LogView, ns as logNs } from 'shared/components/workbench/views/logs/index.mjs'
 
 export const ns = [
   'account',
@@ -30,6 +31,7 @@ export const ns = [
   ...editNs,
   ...testNs,
   ...exportNs,
+  ...logNs,
 ]
 
 const defaultUi = {
@@ -43,6 +45,7 @@ const views = {
   export: ExportView,
   edit: EditView,
   test: TestView,
+  logs: LogView,
 }
 
 const draftViews = ['draft']
@@ -87,6 +90,7 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) =
   const viewProps = {
     account,
     design,
+    view,
     setView,
     update,
     settings,
@@ -127,6 +131,9 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) =
         // Draft the pattern or die trying
         try {
           pattern.draft()
+          const errors = [...pattern.store.logs.error]
+          for (const store of pattern.setStores) errors.push(...store.logs.error)
+          if (errors.length > 0) setView('logs')
         } catch (error) {
           console.log(error)
           setError(<ErrorView>{JSON.stringify(error)}</ErrorView>)

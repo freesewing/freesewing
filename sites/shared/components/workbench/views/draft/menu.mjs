@@ -22,6 +22,8 @@ export const DraftMenu = ({
   DynamicDocs,
   inspector = false,
   renderProps,
+  view,
+  setView,
 }) => {
   const control = account.control
   const menuProps = {
@@ -40,7 +42,7 @@ export const DraftMenu = ({
       {ui.inspect ? <Inspector {...menuProps} {...{ ui, inspector, renderProps }} /> : null}
       <DesignOptions {...menuProps} />
       <CoreSettings {...menuProps} />
-      <UiSettings {...menuProps} ui={ui} />
+      <UiSettings {...menuProps} {...{ ui, view, setView }} />
     </nav>
   )
 }

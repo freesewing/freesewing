@@ -5,4 +5,5 @@ export const values = {
   renderer: ListValue,
   inspect: ListValue,
   control: ({ control }) => <Difficulty score={control} color="primary" />,
+  view: ListValue,
 }

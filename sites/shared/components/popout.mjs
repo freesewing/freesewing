@@ -7,6 +7,7 @@ const colors = {
   note: 'primary',
   tip: 'accent',
   warning: 'error',
+  error: 'error',
   fixme: 'warning',
   link: 'secondary',
   related: 'info',
