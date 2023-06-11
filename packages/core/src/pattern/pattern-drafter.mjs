@@ -174,18 +174,26 @@ PatternDrafter.prototype.__createPartWithContext = function (name, set) {
 PatternDrafter.prototype.__loadAbsoluteOptionsSet = function (set) {
   for (const optionName in this.pattern.settings[set].options) {
     const option = this.pattern.config.options[optionName]
-    if (
-      typeof option !== 'undefined' &&
-      typeof option.snap !== 'undefined' &&
-      option.toAbs instanceof Function
-    ) {
-      this.pattern.settings[set].absoluteOptions[optionName] = this.__snappedPercentageOption(
-        optionName,
-        set
-      )
-      this.pattern.setStores[set].log.debug(
-        `🧲 Snapped __${optionName}__ to \`${this.pattern.settings[set].absoluteOptions[optionName]}\` for set __${set}__`
-      )
+    if (typeof option !== 'undefined' && option.toAbs instanceof Function) {
+      if (typeof option.snap !== 'undefined') {
+        this.pattern.settings[set].absoluteOptions[optionName] = this.__snappedPercentageOption(
+          optionName,
+          set
+        )
+        this.pattern.setStores[set].log.debug(
+          `🧲 Snapped __${optionName}__ to \`${this.pattern.settings[set].absoluteOptions[optionName]}\` for set __${set}__`
+        )
+      } else {
+        const abs = option.toAbs(
+          this.pattern.settings[set].options[optionName],
+          this.pattern.settings[set],
+          mergeOptions(this.pattern.settings[set], this.pattern.config.options)
+        )
+        this.pattern.settings[set].absoluteOptions[optionName] = abs
+        this.pattern.setStores[set].log.debug(
+          `🧮 Absolute value of \`${optionName}\` option is \`${abs}\` for set __${set}__`
+        )
+      }
     }
   }
 
