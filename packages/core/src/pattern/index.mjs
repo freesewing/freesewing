@@ -314,7 +314,11 @@ Pattern.prototype.__init = function () {
   // Merges default options with user provided ones
   this.__loadOptionDefaults()
 
-  this.store.log.info(`Pattern initialized. Draft order is: ${this.config.draftOrder.join(', ')}`)
+  this.store.log.info(
+    `Pattern initialized. Draft order is: ${this.config.draftOrder
+      .map((item) => `\`${item}\``)
+      .join(', ')}`
+  )
 
   this.__runHooks('postInit')
   this.__initialized = true

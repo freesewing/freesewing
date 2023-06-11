@@ -26,9 +26,9 @@ PatternDrafter.prototype.draft = function () {
     this.pattern.setStores[set] = this.pattern.__createSetStore()
     this.__useSet(set)
 
-    this.activeStore.log.debug(`Initialized store for set ${set}`)
+    this.activeStore.log.debug(`Initialized store for set \`${set}\``)
     this.pattern.__runHooks('preSetDraft')
-    this.activeStore.log.debug(`📐 Drafting pattern for set ${set}`)
+    this.activeStore.log.debug(`📐 Drafting pattern for set \`${set}\``)
 
     // Create parts container
     this.pattern.parts[set] = {}
@@ -69,7 +69,7 @@ PatternDrafter.prototype.draftPartForSet = function (partName, set) {
   const configPart = this.pattern.config.parts?.[partName]
   if (typeof configPart?.draft !== 'function') {
     this.activeStore.log.error(
-      `Unable to draft pattern part __${partName}__. Part.draft() is not callable`
+      `Unable to draft pattern part \`${partName}\`. Part.draft() is not callable`
     )
     return
   }
@@ -84,7 +84,7 @@ PatternDrafter.prototype.draftPartForSet = function (partName, set) {
 
     if (typeof result === 'undefined') {
       this.activeStore.log.error(
-        `Result of drafting part ${partName} was undefined. Did you forget to return the part?`
+        `Result of drafting part \`${partName}\` was undefined. Did you forget to return the part?`
       )
     } else {
       // hide if necessary
@@ -95,7 +95,7 @@ PatternDrafter.prototype.draftPartForSet = function (partName, set) {
     }
     return result
   } catch (err) {
-    this.activeStore.log.error([`Unable to draft part \`${partName}\` (set ${set})`, err])
+    this.activeStore.log.error([`Unable to draft part \`${partName}\` (set \`${set}\`)`, err])
   }
 }
 
@@ -112,7 +112,7 @@ PatternDrafter.prototype.__createPartForSet = function (partName, set = 0) {
     throw new Error('malicious attempt at altering Object.prototype. Stopping action')
   }
   // Create parts
-  this.activeStore.log.debug(`📦 Creating part \`${partName}\` (set ${set})`)
+  this.activeStore.log.debug(`📦 Creating part \`${partName}\` (set \`${set}\`)`)
   this.pattern.parts[set][partName] =
     this.pattern.parts[set][partName] || this.__createPartWithContext(partName, set)
 
