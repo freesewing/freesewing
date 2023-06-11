@@ -52,6 +52,16 @@ export const shared = {
       ...pctBasedOn('seat'),
     },
 
+    // Style options
+
+    waistbandWidth: {
+      pct: 4.5,
+      min: 2,
+      max: 10,
+      menu: 'style',
+      ...pctBasedOn('hips'),
+    },
+
     // Advanced options
 
     /*
@@ -128,6 +138,20 @@ export const shared = {
       max: 2,
       menu: 'advanced',
       ...pctBasedOn('hips'),
+    },
+
+    /*
+     * How much the waistband should overlap at the front
+     * Typically, this works fine when it's the same value as waistbandWidth
+     * However, users who opt for a very wide waistband may want to lower this
+     */
+    waistbandOverlap: {
+      pct: 100,
+      min: 50,
+      max: 120,
+      menu: 'advanced',
+      toAbs: (pct, { measurements }, mergedOptions) =>
+        pct * mergedOptions.waistbandWidth * measurements.hips,
     },
   },
   plugins: [pluginBundle],

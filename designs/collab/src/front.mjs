@@ -1,4 +1,4 @@
-function draft({
+function draftFront({
   Point,
   points,
   Path,
@@ -19,7 +19,10 @@ function draft({
   points.topLeft = new Point(0, 0)
   points.topCp = new Point(store.get('frontQuarterHips') / 2, 0)
   points.topRight = new Point(store.get('frontQuarterHips'), absoluteOptions.waistSlant * -1)
-  points.bottomLeft = new Point(0, points.topRight.y + store.get('hipsToUpperLeg'))
+  points.bottomLeft = new Point(
+    0,
+    points.topRight.y + store.get('hipsToUpperLeg') - absoluteOptions.waistbandWidth
+  )
   points.bottomRight = new Point(store.get('frontQuarterSeat'), points.bottomLeft.y)
 
   /*
@@ -60,8 +63,29 @@ function draft({
     paths.cb = new Path()
       .move(points.bottomLeft)
       .line(points.topLeft)
-      .addText('centerFront', 'center fill-note')
+      .addClass('hidden')
+      .addText('centerFront', 'center fill-note text-sm')
       .attr('data-text-dy', 8)
+    paths.side = new Path()
+      .move(points.bottomRight)
+      .line(points.topRight)
+      .addClass('hidden')
+      .addText('sideSeam', 'center fill-note text-sm')
+      .attr('data-text-dy', -1)
+    paths.hem = new Path()
+      .move(points.bottomLeft)
+      .line(points.bottomRight)
+      .addClass('hidden')
+      .addText('hem', 'center fill-note text-sm')
+      .attr('data-text-dy', -1)
+    points.topRight
+      .addText('attachWaistband', 'fill-note right text-sm')
+      .attr('data-text-dy', 8)
+      .attr('data-text-dx', -8)
+    points.topLeft
+      .addText('attachWaistband', 'fill-note left text-sm')
+      .attr('data-text-dy', 8)
+      .attr('data-text-dx', 8)
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -90,4 +114,4 @@ function draft({
   return part
 }
 
-export const front = { name: 'front', draft: draft }
+export const front = { name: 'front', draft: draftFront }

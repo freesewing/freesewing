@@ -20,11 +20,15 @@ function draftBack({
 }) {
   /*
    * We start with drawing a simple skirt outline for the back panel
+   * We just have to take the waistband into account
    */
   points.topLeft = new Point(0, 0)
   points.topCp = new Point(store.get('backQuarterHips') / 2, 0)
   points.topRight = new Point(store.get('backQuarterHips'), absoluteOptions.waistSlant)
-  points.bottomLeft = new Point(0, points.topRight.y + store.get('hipsToUpperLeg'))
+  points.bottomLeft = new Point(
+    0,
+    points.topRight.y + store.get('hipsToUpperLeg') - absoluteOptions.waistbandWidth
+  )
   points.bottomRight = new Point(store.get('backQuarterSeat'), points.bottomLeft.y)
 
   // Reduction from hips to seat
@@ -116,8 +120,28 @@ function draftBack({
     paths.cb = new Path()
       .move(points.bottomLeft)
       .line(points.topLeft)
-      .addText('centerBack', 'center fill-note')
+      .addText('centerBack', 'center fill-note text-sm')
       .attr('data-text-dy', 8)
+    paths.side = new Path()
+      .move(points.bottomRight)
+      .line(points.topRight)
+      .addClass('hidden')
+      .addText('sideSeam', 'center fill-note text-sm')
+      .attr('data-text-dy', -1)
+    paths.hem = new Path()
+      .move(points.bottomLeft)
+      .line(points.bottomRight)
+      .addClass('hidden')
+      .addText('hem', 'center fill-note text-sm')
+      .attr('data-text-dy', -1)
+    points.topRight
+      .addText('attachWaistband', 'fill-note right text-sm')
+      .attr('data-text-dy', 8)
+      .attr('data-text-dx', -8)
+    points.topLeft
+      .addText('attachWaistband', 'fill-note left text-sm')
+      .attr('data-text-dy', 8)
+      .attr('data-text-dx', 8)
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
