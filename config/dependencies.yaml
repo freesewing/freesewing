@@ -225,7 +225,7 @@ dev:
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': &mdxRuntime '2.0.0-next.9'
-    '@next/bundle-analyzer': &next '13.4.4'
+    '@next/bundle-analyzer': &next '13.4.5'
     '@tailwindcss/typography': &tailwindTypography '0.5.9'
     'algoliasearch': '4.17.1'
     'daisyui': &daisyui '3.0.3'
