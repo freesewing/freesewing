@@ -43,7 +43,7 @@
     "lodash.get": "4.4.2",
     "lodash.orderby": "4.6.0",
     "lodash.set": "4.3.2",
-    "next": "13.4.4",
+    "next": "13.4.5",
     "next-i18next": "13.3.0",
     "react": "18.2.0",
     "react-copy-to-clipboard": "5.1.0",
