@@ -24,7 +24,7 @@ export const TestView = ({
 
   const title = t('testThing', { design, thing: t(settings.sample?.[settings.sample.type]) })
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row ml-0 lg:ml-10">
       <div className="w-2/3 shrink-0 grow lg:p-4 sticky top-0">
         <h2 className="capitalize">{title}</h2>
         <PanZoomPattern {...{ renderProps }} />

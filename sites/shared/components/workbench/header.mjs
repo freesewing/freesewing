@@ -1,5 +1,5 @@
 // Hooks
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { useTranslation } from 'next-i18next'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
@@ -15,31 +15,63 @@ import {
   OptionsIcon,
   PrintIcon,
   UploadIcon,
+  RightIcon,
+  LeftIcon,
+  DocsIcon,
+  SearchIcon,
 } from 'shared/components/icons.mjs'
 import { Ribbon } from 'shared/components/ribbon.mjs'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
-import { NavButton, NavSpacer, colors } from 'shared/components/header.mjs'
+import Link from 'next/link'
 
 export const ns = ['workbench', 'sections']
 
-const NavIcons = ({ setModal, setView, view }) => {
+export const NavButton = ({
+  href,
+  label,
+  children,
+  onClick = false,
+  active = false,
+  extraClasses = 'bg-neutral text-neutral-content hover:bg-secondary hover:text-secondary-content',
+}) => {
+  const className = `w-full flex flex-row items-center px-4 py-2 ${extraClasses} ${
+    active ? 'text-secondary' : ''
+  }`
+  const span = <span className="font-bold block grow text-left">{label}</span>
+
+  return onClick ? (
+    <button {...{ onClick, className }} title={label}>
+      {span}
+      {children}
+    </button>
+  ) : (
+    <Link {...{ href, className }} title={label}>
+      {span}
+      {children}
+    </Link>
+  )
+}
+
+const NavIcons = ({ setModal, setView, setDense, dense, view }) => {
   const { t } = useTranslation(['header'])
-  const iconSize = 'h-6 w-6 lg:h-12 lg:w-12'
+  const iconSize = 'h-6 w-6 grow-0'
 
   return (
     <>
       <NavButton
-        onClick={() => setModal(<ModalMenu />)}
-        label={t('workbench:menu')}
-        color={colors[0]}
+        onClick={() => setDense(!dense)}
+        label={t('workbench:collapse')}
+        extraClasses="text-success bg-neutral hover:bg-success hover:text-neutral"
       >
-        <MenuIcon className={iconSize} />
+        {dense ? (
+          <RightIcon className={`${iconSize} animate-bounce-right`} stroke={4} />
+        ) : (
+          <LeftIcon className={`${iconSize} animate-bounce-right`} stroke={4} />
+        )}
       </NavButton>
-      <NavSpacer />
       <NavButton
         onClick={() => setView('draft')}
         label={t('workbench:draft')}
-        color={colors[1]}
         active={view === 'draft'}
       >
         <OptionsIcon className={iconSize} />
@@ -47,63 +79,61 @@ const NavIcons = ({ setModal, setView, view }) => {
       <NavButton
         onClick={() => setView('test')}
         label={t('workbench:test')}
-        color={colors[2]}
-        extraClasses="hidden lg:flex"
+        active={view === 'test'}
       >
         <BeakerIcon className={iconSize} />
       </NavButton>
       <NavButton
         onClick={() => setView('print')}
         label={t('workbench:printLayout')}
-        color={colors[3]}
-        extraClasses="hidden lg:flex"
+        active={view === 'print'}
       >
         <PrintIcon className={iconSize} />
       </NavButton>
       <NavButton
         onClick={() => setView('cut')}
         label={t('workbench:cutLayout')}
-        color={colors[4]}
-        extraClasses="hidden lg:flex"
+        active={view === 'cut'}
       >
         <CutIcon className={iconSize} />
       </NavButton>
-      <NavSpacer />
       <NavButton
         onClick={() => setView('save')}
         label={t('workbench:save')}
-        color={colors[5]}
-        extraClasses="hidden lg:flex"
+        active={view === 'save'}
       >
         <UploadIcon className={iconSize} />
       </NavButton>
       <NavButton
         onClick={() => setView('export')}
         label={t('workbench:export')}
-        color={colors[6]}
-        extraClasses="hidden lg:flex"
+        active={view === 'export'}
       >
         <BriefcaseIcon className={iconSize} />
       </NavButton>
       <NavButton
         onClick={() => setView('edit')}
         label={t('workbench:edit')}
-        color={colors[7]}
-        extraClasses="hidden lg:flex"
+        active={view === 'edit'}
       >
         <CodeIcon className={iconSize} />
       </NavButton>
-      <NavSpacer />
       <NavButton
-        label={t('workbench:help')}
-        color={colors[8]}
-        href="/docs/site/draft"
-        extraClasses="hidden lg:flex"
+        onClick={() => setView('logs')}
+        label={t('workbench:logs')}
+        active={view === 'logs'}
       >
-        <HelpIcon className={iconSize} />
+        <DocsIcon className={iconSize} />
       </NavButton>
-      <NavButton label={t('workbench:home')} color={colors[9]} href="/">
-        <HomeIcon className={iconSize} />
+      <NavButton
+        onClick={() => setView('inspect')}
+        label={t('workbench:inspector')}
+        active={view === 'inspect'}
+      >
+        <SearchIcon className={iconSize} />
+      </NavButton>
+      <NavButton label={t('workbench:help')} href="/docs/site/draft">
+        <HelpIcon className={iconSize} />
       </NavButton>
     </>
   )
@@ -111,32 +141,24 @@ const NavIcons = ({ setModal, setView, view }) => {
 
 export const WorkbenchHeader = ({ view, setView, update }) => {
   const { setModal } = useContext(ModalContext)
+  const [dense, setDense] = useState(true)
 
   return (
     <header
       className={`
-      fixed bottom-0 lg:bottom-auto lg:top-0 left-0
+      hidden lg:block lg:fixed lg:top-0 lg:left-0
       bg-neutral
-      w-full
-      z-30
+      w-64 h-screen
+      z-10
       transition-transform
       drop-shadow-xl
+      pt-28
+      ${dense ? '-translate-x-52' : ''}
     `}
     >
-      <div className="m-auto md:px-8">
-        <div className="p-0 flex flex-row gap-2 justify-between text-neutral-content items-center">
-          {/* Non-mobile content */}
-          <div className="hidden lg:flex lg:flex-row lg:justify-between items-center xl:justify-center w-full">
-            <NavIcons setModal={setModal} setView={setView} view={view} />
-          </div>
-
-          {/* Mobile content */}
-          <div className="flex lg:hidden flex-row items-center justify-between w-full">
-            <NavIcons {...{ setModal, setView, update }} />
-          </div>
-        </div>
+      <div className="hidden lg:flex lg:flex-col lg:justify-between items-center w-full">
+        <NavIcons {...{ setModal, setView, setDense, dense, view }} />
       </div>
-      <Ribbon />
     </header>
   )
 }

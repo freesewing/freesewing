@@ -64,7 +64,7 @@ const NewDesignFromSetPage = ({ page, id, design, type }) => {
   const baseSettings = set?.measies ? { measurements: set.measies } : null
 
   return (
-    <PageWrapper {...page} title={design} layout={WorkbenchLayout} header={Null}>
+    <PageWrapper {...page} title={design} layout={WorkbenchLayout}>
       <Workbench {...{ design, Design, set, DynamicDocs, baseSettings }} />
     </PageWrapper>
   )
