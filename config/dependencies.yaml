@@ -212,7 +212,7 @@ backend:
     'swagger-ui-express': '4.6.3'
   dev:
     'chai': *chai
-    'chai-http': '4.3.0'
+    'chai-http': '4.4.0'
     'esbuild': '0.17.19'
     'mocha': *mocha
     'mocha-steps': '1.3.0'
