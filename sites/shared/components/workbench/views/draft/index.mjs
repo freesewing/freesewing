@@ -70,7 +70,7 @@ export const DraftView = ({
   }
 
   return (
-    <div className="flex flex-row ml-0 lg:ml-10">
+    <div className="flex flex-row">
       <div className="w-2/3 shrink-0 grow lg:p-4 sticky top-0">{output}</div>
       <div className="w-1/3 shrink grow-0 lg:p-4 max-w-2xl h-screen overflow-scroll">
         <DraftMenu
