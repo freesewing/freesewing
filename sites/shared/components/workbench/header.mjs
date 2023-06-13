@@ -142,18 +142,17 @@ const NavIcons = ({ setModal, setView, setDense, dense, view }) => {
 export const WorkbenchHeader = ({ view, setView, update }) => {
   const { setModal } = useContext(ModalContext)
   const [dense, setDense] = useState(true)
+  //${dense ? '' : 'translate-x-52'}
 
   return (
     <header
       className={`
-      hidden lg:block lg:fixed lg:top-0 lg:left-0
+      hidden lg:block
       bg-neutral
-      w-64 h-screen
-      z-10
-      transition-transform
+      w-64 min-h-screen pt-4
+      transition-all
       drop-shadow-xl
-      pt-28
-      ${dense ? '-translate-x-52' : ''}
+      ${dense ? '-ml-52' : 'ml-0'}
     `}
     >
       <div className="hidden lg:flex lg:flex-col lg:justify-between items-center w-full">
