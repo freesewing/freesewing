@@ -35,7 +35,7 @@
     "@mdx-js/react": "2.3.0",
     "@mdx-js/runtime": "2.0.0-next.9",
     "@tailwindcss/typography": "0.5.9",
-    "algoliasearch": "4.17.1",
+    "algoliasearch": "4.17.2",
     "react-copy-to-clipboard": "5.1.0",
     "daisyui": "3.1.0",
     "lodash.get": "4.4.2",
