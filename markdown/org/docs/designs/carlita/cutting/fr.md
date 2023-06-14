@@ -40,18 +40,18 @@ Si votre tissu principal est assez léger et fragile, vous devrez peut-être int
   - Couper **2 parties de manche supérieure**
   - Couper **2 parties du manche inférieure**
   - Couper **2 parties de queue**
-  - Cut **2 innerPocketBag** parts
+  - Couper ** 2 sacs de poche intérieure**
   - Cut **1 innerPocketTab** parts
-  - Cut **2 pocketLining** parts
-  - Cut **2 chestPocketBag** parts
+  - Couper **2 doublures de poche **
+  - Couper **2 sacs de poche de poitrine**
 - **Toile pour cheveux légers à moyens**
   - Couper **2 parties frontales**
   - Couper **2 pièces latérales**
   - Couper **1 Pièce de collier**
   - Couper **2 parties de col** dans le biais et coudre ensemble
   - Couper **2 parties de manche**
-  - Cut **2 pocketFlap** parts
-  - Cut **2 chestPocketWelt** parts
+  - Couper **2 rabats de poche**
+  - Couper **2 parmentures de poche de poitrine**
   - Découper **2 parties de la ceinture de poche intérieure**
 - **Toile lourde à cheveux**
   - Découpage de **2 parties de l'épaule avant**
