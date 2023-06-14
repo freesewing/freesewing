@@ -23,9 +23,9 @@ Certaines parties doivent être esquissées à partir des pièces existantes. La
   - Couper **2 parties de col** sur le pli ou Couper le col supérieur sur le pli et le col inférieur dans le biais
   - Couper **2 parties de manche**
   - Couper **2 pièces de poche**
-  - Cut **4 pocketFlap** parts
-  - Cut **2 chestPocketWelt** parts
-  - Cut **2 innerPocketWelt** parts
+  - Couper **4 rabats de poche**
+  - Couper **2 parmentures de poche de poitrine**
+  - Couper ** 2 parmentures de poche intérieure**
 
 <Note>
 
