@@ -6,7 +6,7 @@ import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ChoiceLink } from 'shared/components/choice-link.mjs'
-import { MeasureIcon } from 'shared/components/icons.mjs'
+import { MeasieIcon } from 'shared/components/icons.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
 
 // Translation namespaces used on this page
@@ -36,7 +36,7 @@ const CuratorPage = ({ page }) => {
         <div className="max-w-lg">
           <ChoiceLink
             title={t('sets:curatedSets')}
-            icon={<MeasureIcon className="w-10 h-10 text-secondary" />}
+            icon={<MeasieIcon className="w-10 h-10 text-secondary" />}
             href="/curate/sets"
           >
             {t('sets:curateCuratedSets')}

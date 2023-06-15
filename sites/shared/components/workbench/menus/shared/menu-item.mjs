@@ -23,12 +23,10 @@ export const wasChanged = (current, config) => {
  * @param  {Boolean} options.open    is the menu item open?
  * @param  {String}  options.emoji   the emoji icon of the menu item
  */
-export const ItemTitle = ({ name, t, current = null, open = false, emoji = '' }) => (
+export const ItemTitle = ({ name, t, current = null, open = false, emoji = '', Icon = false }) => (
   <div className={`flex flex-row gap-1 items-center w-full ${open ? '' : 'justify-between'}`}>
-    <span className="font-medium capitalize">
-      <span role="img" className="pr-2">
-        {emoji}
-      </span>
+    <span className="font-medium capitalize flex flex-row gap-2">
+      {Icon ? <Icon /> : <span role="img">{emoji}</span>}
       {t([`${name}.t`, name])}
     </span>
     <span className="font-bold">{current}</span>
@@ -134,7 +132,13 @@ export const MenuItem = ({
   }
 
   // props to pass to the ItemTitle
-  const titleProps = { name, t, current: <Value {...drillProps} />, emoji: config.emoji }
+  const titleProps = {
+    name,
+    t,
+    current: <Value {...drillProps} />,
+    emoji: config.emoji,
+    Icon: config.icon,
+  }
 
   return (
     <Collapse
