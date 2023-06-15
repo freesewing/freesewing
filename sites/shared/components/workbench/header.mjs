@@ -141,7 +141,7 @@ const NavIcons = ({ setView, setDense, dense, view }) => {
   )
 }
 
-export const WorkbenchHeader = ({ view, setView, update }) => {
+export const WorkbenchHeader = ({ view, setView }) => {
   const [dense, setDense] = useState(true)
 
   return (
