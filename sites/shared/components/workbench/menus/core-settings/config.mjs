@@ -1,4 +1,14 @@
 import { measurementAsMm } from 'shared/utils.mjs'
+import {
+  SaIcon,
+  ScaleIcon,
+  PaperlessIcon,
+  I18nIcon,
+  UnitsIcon,
+  DetailIcon,
+  IncludeIcon,
+  MarginIcon,
+} from 'shared/components/icons.mjs'
 
 export const defaultSamm = (units, inMm = true) => {
   const dflt = units === 'metric' ? 1 : 0.5
@@ -23,7 +33,7 @@ export const loadSettingsConfig = ({
       1: 'yes',
     },
     dflt: 0,
-    emoji: '✂️',
+    icon: SaIcon,
   },
   samm: sabool
     ? {
@@ -32,6 +42,7 @@ export const loadSettingsConfig = ({
         max: units === 'metric' ? 2.5 : 2,
         dflt: defaultSamm(units, false),
         step: units === 'metric' ? 0.1 : 0.125,
+        icon: SaIcon,
       }
     : false,
   paperless: {
@@ -46,7 +57,7 @@ export const loadSettingsConfig = ({
       1: 'yes',
     },
     dflt: 0,
-    emoji: '🌲',
+    icon: PaperlessIcon,
   },
   locale: {
     control: 3, // Show when control > 2
@@ -66,7 +77,7 @@ export const loadSettingsConfig = ({
       fr: 'fr.t',
       nl: 'nl.t',
     },
-    emoji: '🇺🇳',
+    icon: I18nIcon,
   },
   units: {
     control: 1, // Show when control > 2
@@ -80,7 +91,7 @@ export const loadSettingsConfig = ({
       metric: 'metric',
       imperial: 'imperial',
     },
-    emoji: '📐',
+    icon: UnitsIcon,
   },
   complete: {
     control: 4, // Show when control > 3
@@ -94,14 +105,14 @@ export const loadSettingsConfig = ({
       0: 'no',
       1: 'yes',
     },
-    emoji: '🔎',
+    icon: DetailIcon,
   },
   only: {
     control: 4, // Show when control > 3
     dflt: false,
     list: parts,
     parts,
-    emoji: '🛍️',
+    icon: IncludeIcon,
   },
   scale: {
     control: 4, // Show when control > 3
@@ -109,7 +120,7 @@ export const loadSettingsConfig = ({
     max: 5,
     dflt: 1,
     step: 0.1,
-    emoji: '🪆',
+    icon: ScaleIcon,
   },
   margin: {
     control: 4, // Show when control > 3
@@ -117,6 +128,6 @@ export const loadSettingsConfig = ({
     max: 2.5,
     dflt: units === 'metric' ? 0.2 : 0.125,
     step: units === 'metric' ? 0.1 : 0.125,
-    emoji: '🔲',
+    icon: MarginIcon,
   },
 })
