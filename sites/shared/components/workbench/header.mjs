@@ -60,7 +60,7 @@ const NavIcons = ({ setModal, setView, setDense, dense, view }) => {
     <>
       <NavButton
         onClick={() => setDense(!dense)}
-        label={t('workbench:collapse')}
+        label={t('workbench:viewMenu')}
         extraClasses="text-success bg-neutral hover:bg-success hover:text-neutral"
       >
         {dense ? (
@@ -71,14 +71,14 @@ const NavIcons = ({ setModal, setView, setDense, dense, view }) => {
       </NavButton>
       <NavButton
         onClick={() => setView('draft')}
-        label={t('workbench:draft')}
+        label={t('workbench:draftPattern')}
         active={view === 'draft'}
       >
         <OptionsIcon className={iconSize} />
       </NavButton>
       <NavButton
         onClick={() => setView('test')}
-        label={t('workbench:test')}
+        label={t('workbench:testPattern')}
         active={view === 'test'}
       >
         <BeakerIcon className={iconSize} />
@@ -99,40 +99,40 @@ const NavIcons = ({ setModal, setView, setDense, dense, view }) => {
       </NavButton>
       <NavButton
         onClick={() => setView('save')}
-        label={t('workbench:save')}
+        label={t('workbench:savePattern')}
         active={view === 'save'}
       >
         <UploadIcon className={iconSize} />
       </NavButton>
       <NavButton
         onClick={() => setView('export')}
-        label={t('workbench:export')}
+        label={t('workbench:exportPattern')}
         active={view === 'export'}
       >
         <BriefcaseIcon className={iconSize} />
       </NavButton>
       <NavButton
         onClick={() => setView('edit')}
-        label={t('workbench:edit')}
+        label={t('workbench:editSettings')}
         active={view === 'edit'}
       >
         <CodeIcon className={iconSize} />
       </NavButton>
       <NavButton
         onClick={() => setView('logs')}
-        label={t('workbench:logs')}
+        label={t('workbench:patternLogs')}
         active={view === 'logs'}
       >
         <DocsIcon className={iconSize} />
       </NavButton>
       <NavButton
         onClick={() => setView('inspect')}
-        label={t('workbench:inspector')}
+        label={t('workbench:patternInspector')}
         active={view === 'inspect'}
       >
         <SearchIcon className={iconSize} />
       </NavButton>
-      <NavButton label={t('workbench:help')} href="/docs/site/draft">
+      <NavButton label={t('workbench:docs')} href="/docs/site/draft">
         <HelpIcon className={iconSize} />
       </NavButton>
     </>

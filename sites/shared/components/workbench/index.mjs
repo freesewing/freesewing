@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useView } from 'shared/hooks/use-view.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
+import { useControlState } from 'shared/components/account/control.mjs'
 // Dependencies
 import { pluginTheme } from '@freesewing/plugin-theme'
 import { pluginI18n } from '@freesewing/plugin-i18n'
@@ -20,6 +21,7 @@ import { EditView, ns as editNs } from './views/edit/index.mjs'
 import { TestView, ns as testNs } from 'shared/components/workbench/views/test/index.mjs'
 import { ExportView, ns as exportNs } from 'shared/components/workbench/views/exporting/index.mjs'
 import { LogView, ns as logNs } from 'shared/components/workbench/views/logs/index.mjs'
+import { InspectView, ns as inspectNs } from 'shared/components/workbench/views/inspect/index.mjs'
 
 export const ns = [
   'account',
@@ -46,15 +48,17 @@ const views = {
   edit: EditView,
   test: TestView,
   logs: LogView,
+  inspect: InspectView,
 }
 
-const draftViews = ['draft']
+const draftViews = ['draft', 'inspect']
 
 export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) => {
   // Hooks
   const { t, i18n } = useTranslation(ns)
   const { language } = i18n
   const { account } = useAccount()
+  const controlState = useControlState()
 
   // State
   const [view, setView] = useView()
@@ -72,6 +76,17 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) =
   const update = {
     settings: (path, val) => setSettings(objUpdate({ ...settings }, path, val)),
     ui: (path, val) => setUi(objUpdate({ ...ui }, path, val)),
+    toggleSa: () => {
+      if (settings.sabool) {
+        const mm = settings.sa
+        setSettings(objUpdate({ ...settings }, ['sabool'], 0))
+        setSettings(objUpdate({ ...settings }, ['sa'], 0))
+      } else {
+        setSettings(objUpdate({ ...settings }, ['sabool'], 1))
+        setSettings(objUpdate({ ...settings }, ['sa'], settings.samm))
+      }
+    },
+    setControl: controlState.update,
   }
 
   // Don't bother without a Design

@@ -15,20 +15,7 @@ export const ControlSettingInput = (props) => {
   )
 }
 
-const ViewInput = (props) => {
-  props.config.dflt = props.view
-  return (
-    <ListInput
-      {...props}
-      updateFunc={(path, newVal) => props.setView(newVal)}
-      current={props.view}
-    />
-  )
-}
-
 export const inputs = {
   renderer: ListInput,
-  inspect: BoolInput,
   control: ControlSettingInput,
-  view: ViewInput,
 }
