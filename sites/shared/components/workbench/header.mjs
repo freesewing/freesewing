@@ -10,8 +10,6 @@ import {
   CodeIcon,
   CutIcon,
   HelpIcon,
-  HomeIcon,
-  MenuIcon,
   OptionsIcon,
   PrintIcon,
   UploadIcon,
@@ -21,8 +19,6 @@ import {
   SearchIcon,
   MeasieIcon,
 } from 'shared/components/icons.mjs'
-import { Ribbon } from 'shared/components/ribbon.mjs'
-import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
 import Link from 'next/link'
 
 export const ns = ['workbench', 'sections']

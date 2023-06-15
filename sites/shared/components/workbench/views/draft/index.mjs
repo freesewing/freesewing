@@ -1,12 +1,8 @@
-import { useState } from 'react'
 import { PanZoomPattern as ShowPattern } from 'shared/components/workbench/pan-zoom-pattern.mjs'
 import { DraftMenu, ns as menuNs } from './menu.mjs'
-import { objUpdate } from 'shared/utils.mjs'
 import {
-  SettingsIcon,
   PaperlessIcon,
   SaIcon,
-  DesktopIcon,
   RocketIcon,
   BulletIcon,
   UnitsIcon,
@@ -65,7 +61,7 @@ export const DraftViewHeader = ({ update, settings, ui, control }) => {
       <Spacer />
       <div className="flex flex-row items-center">
         {[1, 2, 3, 4, 5].map((score) => (
-          <button onClick={() => update.setControl(score)} className="text-primary">
+          <button onClick={() => update.setControl(score)} className="text-primary" key={score}>
             <BulletIcon fill={control >= score ? true : false} />
           </button>
         ))}

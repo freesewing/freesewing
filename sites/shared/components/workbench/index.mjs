@@ -80,13 +80,24 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) =
     settings: (path, val) => setSettings(objUpdate({ ...settings }, path, val)),
     ui: (path, val) => setUi(objUpdate({ ...ui }, path, val)),
     toggleSa: () => {
-      if (settings.sabool) {
-        const mm = settings.sa
-        setSettings(objUpdate({ ...settings }, ['sabool'], 0))
-        setSettings(objUpdate({ ...settings }, ['sa'], 0))
-      } else {
-        setSettings(objUpdate({ ...settings }, ['sabool'], 1))
-        setSettings(objUpdate({ ...settings }, ['sa'], settings.samm))
+      const sa = settings.samm || (account.imperial ? 15.3125 : 10)
+      if (settings.sabool)
+        setSettings(
+          objUpdate({ ...settings }, [
+            [['sabool'], 0],
+            [['sa'], 0],
+            [['samm'], sa],
+          ])
+        )
+      else {
+        const sa = settings.samm || (account.imperial ? 15.3125 : 10)
+        setSettings(
+          objUpdate({ ...settings }, [
+            [['sabool'], 1],
+            [['sa'], sa],
+            [['samm'], sa],
+          ])
+        )
       }
     },
     setControl: controlState.update,
