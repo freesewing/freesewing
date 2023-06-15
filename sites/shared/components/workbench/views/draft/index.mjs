@@ -9,7 +9,7 @@ import {
   DesktopIcon,
   RocketIcon,
   BulletIcon,
-  MeasureIcon,
+  UnitsIcon,
   DetailIcon,
 } from 'shared/components/icons.mjs'
 
@@ -28,7 +28,7 @@ const Spacer = () => <span className="opacity-50">|</span>
 
 export const DraftViewHeader = ({ update, settings, ui, control }) => {
   return (
-    <div className="flex flex-row gap-4 py-2 w-full bg-neutral text-neutral-content items-center justify-center">
+    <div className="flex flex-row gap-4 py-4 mt-2 pt-4 w-full bg-neutral text-neutral-content items-center justify-center">
       <div className="flex flex-row items-center gap-4">
         <IconButton
           Icon={SaIcon}
@@ -53,8 +53,8 @@ export const DraftViewHeader = ({ update, settings, ui, control }) => {
         <IconButton
           Icon={
             settings.units !== 'imperial'
-              ? MeasureIcon
-              : ({ className }) => <MeasureIcon className={`${className} rotate-180 w-6 h-6`} />
+              ? UnitsIcon
+              : ({ className }) => <UnitsIcon className={`${className} rotate-180 w-6 h-6`} />
           }
           dflt={settings.units !== 'imperial'}
           onClick={() =>

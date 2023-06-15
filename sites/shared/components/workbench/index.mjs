@@ -22,7 +22,7 @@ import { TestView, ns as testNs } from 'shared/components/workbench/views/test/i
 import { ExportView, ns as exportNs } from 'shared/components/workbench/views/exporting/index.mjs'
 import { LogView, ns as logNs } from 'shared/components/workbench/views/logs/index.mjs'
 import { InspectView, ns as inspectNs } from 'shared/components/workbench/views/inspect/index.mjs'
-
+import { MeasiesView, ns as measiesNs } from 'shared/components/workbench/views/measies/index.mjs'
 export const ns = [
   'account',
   'workbench',
@@ -34,6 +34,8 @@ export const ns = [
   ...testNs,
   ...exportNs,
   ...logNs,
+  ...inspectNs,
+  ...measiesNs,
 ]
 
 const defaultUi = {
@@ -49,6 +51,7 @@ const views = {
   test: TestView,
   logs: LogView,
   inspect: InspectView,
+  measies: MeasiesView,
 }
 
 const draftViews = ['draft', 'inspect']

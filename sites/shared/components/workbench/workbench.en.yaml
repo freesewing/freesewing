@@ -25,7 +25,9 @@ draftPattern: Draft pattern
 testPattern: Test pattern
 savePattern: Save pattern
 exportPattern: Export pattern
-editSettings: Edit settings
+editSettings: Edit configuration
 patternLogs: Pattern logs
 patternInspector: Pattern Inspector
 docs: Documentation
+configurePattern: Configure pattern
+measies: Measurements

@@ -19,6 +19,7 @@ import {
   LeftIcon,
   DocsIcon,
   SearchIcon,
+  MeasieIcon,
 } from 'shared/components/icons.mjs'
 import { Ribbon } from 'shared/components/ribbon.mjs'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
@@ -71,10 +72,17 @@ const NavIcons = ({ setModal, setView, setDense, dense, view }) => {
       </NavButton>
       <NavButton
         onClick={() => setView('draft')}
-        label={t('workbench:draftPattern')}
+        label={t('workbench:configurePattern')}
         active={view === 'draft'}
       >
         <OptionsIcon className={iconSize} />
+      </NavButton>
+      <NavButton
+        onClick={() => setView('measies')}
+        label={t('workbench:measies')}
+        active={view === 'measies'}
+      >
+        <MeasieIcon className={iconSize} />
       </NavButton>
       <NavButton
         onClick={() => setView('test')}
