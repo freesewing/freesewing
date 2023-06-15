@@ -9,7 +9,7 @@ import {
   RssIcon,
   ShowcaseIcon,
   UserIcon,
-  MeasureIcon,
+  MeasieIcon,
   PageIcon,
   CodeIcon,
   I18nIcon,
@@ -41,7 +41,7 @@ export const icons = {
   docs: (className = '') => <DocsIcon className={className} />,
   showcase: (className = '') => <ShowcaseIcon className={className} />,
   community: (className = '') => <CommunityIcon className={className} />,
-  sets: (className = '') => <MeasureIcon className={className} />,
+  sets: (className = '') => <MeasieIcon className={className} />,
   patterns: (className = '') => <PageIcon className={className} />,
 
   // Lab
