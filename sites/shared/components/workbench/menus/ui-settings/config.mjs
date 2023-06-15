@@ -1,4 +1,4 @@
-export const loadSettingsConfig = (settings, view) => {
+export const loadSettingsConfig = () => {
   const uiSettings = {
     control: {
       control: 1, // Show when control > 0

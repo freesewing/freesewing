@@ -19,7 +19,6 @@ export const DraftMenu = ({
   language,
   account,
   DynamicDocs,
-  renderProps,
   view,
   setView,
 }) => {

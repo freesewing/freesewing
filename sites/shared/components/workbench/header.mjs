@@ -1,8 +1,6 @@
 // Hooks
-import { useContext, useState } from 'react'
+import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
-// Context
-import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
 import {
   BeakerIcon,
@@ -49,7 +47,7 @@ export const NavButton = ({
   )
 }
 
-const NavIcons = ({ setModal, setView, setDense, dense, view }) => {
+const NavIcons = ({ setView, setDense, dense, view }) => {
   const { t } = useTranslation(['header'])
   const iconSize = 'h-6 w-6 grow-0'
 
@@ -144,9 +142,7 @@ const NavIcons = ({ setModal, setView, setDense, dense, view }) => {
 }
 
 export const WorkbenchHeader = ({ view, setView, update }) => {
-  const { setModal } = useContext(ModalContext)
   const [dense, setDense] = useState(true)
-  //${dense ? '' : 'translate-x-52'}
 
   return (
     <header
@@ -160,7 +156,7 @@ export const WorkbenchHeader = ({ view, setView, update }) => {
     `}
     >
       <div className="hidden lg:flex lg:flex-col lg:justify-between items-center w-full">
-        <NavIcons {...{ setModal, setView, setDense, dense, view }} />
+        <NavIcons {...{ setView, setDense, dense, view }} />
       </div>
     </header>
   )
