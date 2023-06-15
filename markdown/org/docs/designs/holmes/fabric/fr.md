@@ -1,5 +1,5 @@
 ---
-title: "Holmes deerstalker hat: Fabric Options"
+title: "Casquette de détective Holmes : Options de tissus"
 ---
 
 ### Tissu principal
