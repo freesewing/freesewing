@@ -72,7 +72,7 @@ Si vous préférez, vous pouvez fabriquer vos liens personnalisées avec du tiss
 - Endroit contre endroit, en faisant coïncider les lignes de couture, coudre deux morceaux de rabat d'oreille (l'un interfacé, l'autre non).
 - Couper et ajuster le surplus de couture.
 - Retourner et presser.
-- (Optional) _Topstitch_ or _Edgestitch_ the folded edge.
+- (Facultatif) _Surpiquer_ ou _piquer en biais_ le bord plié.
 - _Collez_ les bords bruts ensemble.
 - Cousez la boutonnière selon votre méthode préférée.
 - Répéter l'opération pour l'autre rabat de l'oreille.
@@ -99,8 +99,8 @@ There are two methods for constructing the bill. This is due to the different ty
 
 - Placer l'insert de visière sur une pièce de la visière à l'intérieur des lignes de couture.
 - Fixer temporairement l'insert de visière à la visière à l'aide de _points de fixation_ temporaires. Il s'agira dorénavant de la "visière".
-- _Baste_ along the seam line of the inner curve of the faced visor, making sure not to catch the visor insert.
-- With right sides together, matching seam lines and centre fronts, sew the faced visor to another visor piece along the outer curve close to the visor insert, making sure not to catch the visor Insert.
+- _Batir_ le long de la ligne de couture de la courbe intérieure de la visière, assurez-vous de ne pas prendre l'insert de la visière.
+- Bons côtés ensemble, couture et centres alignés, coudre la visière a une autre pièce de visière le long de la courbe extérieur près de l'insert de la visière, en s'assurant de ne pas piquer dans l'insert.
 - Notch and trim the outer curve making sure not to clip the stitching. (You may wish to turn and check the shape before this step)
 - Retourner et presser. Making sure that the seam allowances are on top of not under the visor insert.
 - Using the previous basting line as a guide, _baste_ the opening closed.
