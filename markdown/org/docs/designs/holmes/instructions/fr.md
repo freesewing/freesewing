@@ -101,10 +101,10 @@ There are two methods for constructing the bill. This is due to the different ty
 - Fixer temporairement l'insert de visière à la visière à l'aide de _points de fixation_ temporaires. Il s'agira dorénavant de la "visière".
 - _Batir_ le long de la ligne de couture de la courbe intérieure de la visière, assurez-vous de ne pas prendre l'insert de la visière.
 - Bons côtés ensemble, couture et centres alignés, coudre la visière a une autre pièce de visière le long de la courbe extérieur près de l'insert de la visière, en s'assurant de ne pas piquer dans l'insert.
-- Notch and trim the outer curve making sure not to clip the stitching. (You may wish to turn and check the shape before this step)
-- Retourner et presser. Making sure that the seam allowances are on top of not under the visor insert.
-- Using the previous basting line as a guide, _baste_ the opening closed.
-- Repeat this for remaining visor pieces.
+- Fendre et découper la courbe extérieure en s'assurant de ne pas couper la couture. (Vous pourrez avoir envie de retourner et vérifier la forme avant cette étape)
+- Retourner et presser. Vérifiez que les marges de coutures sont sur le dessus et pas sous l'insert de visière.
+- En utilisant la précédente ligne de bâtis comme guide, _bâtissez_ l'ouverture pour la refermer.
+- Répéter ceci pour les pièces de visière restantes.
 
 <Warning>
 
@@ -120,8 +120,8 @@ If preferred you can temporarily attach the bill insert another way that does no
 
 #### The Bill Method 2
 
-- With rights sides together, matching seam lines and centre fronts, sew the outer curver of two visor pieces together.
-- Notch and trim (if needed) the outer curve making sure not to clip the stitching. (You may wish to turn and check the shape before this step)
+- Endroit contre endroit, en faisant coïncider les lignes de couture et les centres avant, coudre les deux pièces de la visière ensemble.
+- Fendre et découper(si besoin) la courbe extérieure en s'assurant de ne pas couper la couture. (Vous pourrez avoir envie de retourner et vérifier la forme avant cette étape)
 - Retourner et presser.
 - Insert visor insert in to sewn visor tightly so there is no gap on the outer curver and the seam allowances are all one on side of the visor insert. This will be the upper side of the visor.
 - Pin the inner curve together making sure that the outer edge is pulled tightly over the visor insert.
