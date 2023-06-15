@@ -29,14 +29,14 @@ titre : "Culotte de cycliste Cornélius : Instructions de couture"
 - Tirez la fermeture Éclair ver la gauche pour que le rabat droit soit tiré au-dessus.
 - Épinglez le ruban de fermeture gauche sur le rabat gauche.
 - Cousez la bande de fermeture à glissière gauche sur le rabat gauche, près des dents de la fermeture à glissière, à l'aide d'un pied pour fermeture à glissière. Ne le cousez pas sur le devant lui-même !
-- Fold the zipper guard in half wrong sides together.
-- Lay the zipper guard on the right flap, right sides touching.
-- Sew the zipper guard to the right flap, _Finish_ the right side to your liking.
+- Pliez le protège fermeture en deux mauvais côtés ensemble.
+- Placez le protège fermeture sur le rabat droit, en faisant toucher les côtés droits.
+- Coudre le protège fermeture sur le rabat droit, _Terminer_ le côté droit a votre convenance.
 - _Terminez_ le côté gauche du rabat gauche à votre goût.
 - Enlevez les points de bâti sur la couture avant.
-- _Topstitch_ the right flap down, away from the now unpicked seam, as far down as you can.
+- _Surpiquer_ le rabas droit vers le bas, loin de la couture maintenant non épinglée, au plus loin que vous le pouvez.
 - Épinglez/_Bâtissez_ le protecteur à fermeture Éclair sur le côté droit pour le garder hors du passage pour l'étape suivante
-- On the outside side, sew the left flap down to the left, following the curved line.
+- Sur le côté extérieur, coudre le rabat de gauche vers la gauche, en suivant la ligne courbée.
 - On the outside side, _Bar-Tack_ where you like them for reinforcement.
 
 <Tip>
@@ -47,7 +47,7 @@ Lorsque vous cousez le rabat gauche sur l'extérieur, il est préférable de fai
 
 <Note>
 
-If you wish to orientate the fly the other way change the left to right and right to left in the steps above.  
+Si vous voulez orienter la mouche dans l'autre sens changez la gauche par la droite dans les étapes précédentes.  
 Si vous voulez quelque chose de plus historique, omettez la fermeture à glissière et faites une braguette à boutonnière à la place.
 
 </Note>
