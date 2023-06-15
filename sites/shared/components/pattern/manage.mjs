@@ -19,7 +19,7 @@ import {
   OkIcon,
   NoIcon,
   DesignIcon,
-  MeasureIcon,
+  MeasieIcon,
 } from 'shared/components/icons.mjs'
 import { capitalize } from 'shared/utils.mjs'
 import Link from 'next/link'
@@ -102,7 +102,7 @@ export const ManagePattern = ({ id = false }) => {
             {pattern.design}
           </Link>
         </Popout>
-        <Popout link compact dense title={<MeasureIcon className="flex h-6 w-6 mr-4" />}>
+        <Popout link compact dense title={<MeasieIcon className="flex h-6 w-6 mr-4" />}>
           <Link
             className="capitalize font-bold hover:underline hover:pointer-cursor"
             href={pattern.set ? `/sets/${pattern.set.id}` : `/csets/${pattern.cset.id}`}

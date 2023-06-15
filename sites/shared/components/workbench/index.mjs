@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useView } from 'shared/hooks/use-view.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
+import { useControlState } from 'shared/components/account/control.mjs'
 // Dependencies
 import { pluginTheme } from '@freesewing/plugin-theme'
 import { pluginI18n } from '@freesewing/plugin-i18n'
@@ -20,7 +21,8 @@ import { EditView, ns as editNs } from './views/edit/index.mjs'
 import { TestView, ns as testNs } from 'shared/components/workbench/views/test/index.mjs'
 import { ExportView, ns as exportNs } from 'shared/components/workbench/views/exporting/index.mjs'
 import { LogView, ns as logNs } from 'shared/components/workbench/views/logs/index.mjs'
-
+import { InspectView, ns as inspectNs } from 'shared/components/workbench/views/inspect/index.mjs'
+import { MeasiesView, ns as measiesNs } from 'shared/components/workbench/views/measies/index.mjs'
 export const ns = [
   'account',
   'workbench',
@@ -32,6 +34,8 @@ export const ns = [
   ...testNs,
   ...exportNs,
   ...logNs,
+  ...inspectNs,
+  ...measiesNs,
 ]
 
 const defaultUi = {
@@ -46,15 +50,18 @@ const views = {
   edit: EditView,
   test: TestView,
   logs: LogView,
+  inspect: InspectView,
+  measies: MeasiesView,
 }
 
-const draftViews = ['draft']
+const draftViews = ['draft', 'inspect']
 
 export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) => {
   // Hooks
   const { t, i18n } = useTranslation(ns)
   const { language } = i18n
   const { account } = useAccount()
+  const controlState = useControlState()
 
   // State
   const [view, setView] = useView()
@@ -72,6 +79,28 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) =
   const update = {
     settings: (path, val) => setSettings(objUpdate({ ...settings }, path, val)),
     ui: (path, val) => setUi(objUpdate({ ...ui }, path, val)),
+    toggleSa: () => {
+      const sa = settings.samm || (account.imperial ? 15.3125 : 10)
+      if (settings.sabool)
+        setSettings(
+          objUpdate({ ...settings }, [
+            [['sabool'], 0],
+            [['sa'], 0],
+            [['samm'], sa],
+          ])
+        )
+      else {
+        const sa = settings.samm || (account.imperial ? 15.3125 : 10)
+        setSettings(
+          objUpdate({ ...settings }, [
+            [['sabool'], 1],
+            [['sa'], sa],
+            [['samm'], sa],
+          ])
+        )
+      }
+    },
+    setControl: controlState.update,
   }
 
   // Don't bother without a Design
@@ -145,9 +174,11 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) =
   }
 
   return (
-    <>
-      <WorkbenchHeader {...{ view, setView, update }} />
-      {viewContent}
-    </>
+    <div className="flex flex-row">
+      <div className="grow-no shrink-no">
+        <WorkbenchHeader {...{ view, setView, update }} />
+      </div>
+      <div className="grow">{viewContent}</div>
+    </div>
   )
 }

@@ -39,7 +39,9 @@ export const TextOnPath = ({ path, pathId, t }) => {
     startOffset: '0%',
   }
   const translated = translateStrings(t, path.attributes.text)
-  const align = path.attributes.list['data-text-class'].join(' ')
+  const align = path.attributes.list['data-text-class']
+    ? path.attributes.list['data-text-class'].join(' ')
+    : false
   if (align && align.indexOf('center') > -1) textPathProps.startOffset = '50%'
   else if (align && align.indexOf('right') > -1) textPathProps.startOffset = '100%'
 

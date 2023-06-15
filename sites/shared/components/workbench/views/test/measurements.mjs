@@ -1,5 +1,5 @@
 import { WorkbenchMenu } from 'shared/components/workbench/menus/shared/index.mjs'
-import { MeasureIcon } from 'shared/components/icons.mjs'
+import { MeasieIcon } from 'shared/components/icons.mjs'
 import { SampleItem } from './options.mjs'
 
 export const ns = ['measurements', 'test-view', 'workbench']
@@ -22,7 +22,7 @@ export const TestMeasurements = ({
         control: account.control,
         DynamicDocs,
         getDocsPath,
-        Icon: MeasureIcon,
+        Icon: MeasieIcon,
         Item: SampleItem,
         name: 'measurements',
         language,

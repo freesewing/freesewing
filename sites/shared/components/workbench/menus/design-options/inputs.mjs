@@ -1,4 +1,5 @@
 import { formatMm } from 'shared/utils.mjs'
+import { mergeOptions } from '@freesewing/core'
 import {
   BoolInput,
   ConstantInput,
@@ -16,7 +17,13 @@ const PctOptionInput = (props) => {
       <div className="flex flex-row justify-around">
         <span className={changed ? 'text-accent' : 'text-secondary'}>
           {config.toAbs && settings.measurements
-            ? formatMm(config.toAbs(currentOrDefault, settings))
+            ? formatMm(
+                config.toAbs(
+                  currentOrDefault,
+                  settings,
+                  mergeOptions(settings, props.patternConfig.options)
+                )
+              )
             : ' '}
         </span>
       </div>
