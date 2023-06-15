@@ -6,7 +6,7 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ChoiceLink } from 'shared/components/choice-link.mjs'
-import { KeyIcon, MeasureIcon, DesignIcon, PageIcon, PluginIcon } from 'shared/components/icons.mjs'
+import { KeyIcon, MeasieIcon, DesignIcon, PageIcon, PluginIcon } from 'shared/components/icons.mjs'
 
 // Translation namespaces used on this page
 // Note that we include the account namespace here for the 'new' keyword
@@ -39,7 +39,7 @@ const NewIndexPage = ({ page }) => {
 
         <ChoiceLink
           title={t('newSet')}
-          icon={<MeasureIcon className="w-10 h-10 text-secondary" />}
+          icon={<MeasieIcon className="w-10 h-10 text-secondary" />}
           href="/new/set"
         >
           {t('setNewInfo')}
