@@ -21,6 +21,7 @@ export const components = (site = 'org') => {
     ReadMore: (props) => <ReadMore {...props} site={site} />,
     Related: (props) => <Popout {...props} related />,
     Tip: (props) => <Popout {...props} tip />,
+    Tldr: (props) => <Popout {...props} tldr />,
     Warning: (props) => <Popout {...props} warning />,
     YouTube,
     pre: (props) => <Highlight {...props} />,
