@@ -43,7 +43,7 @@ export const ReadMore = ({
   pretty = false,
 }) => {
   const { slug } = useContext(NavigationContext)
-  const { siteNav } = useNavigation()
+  const siteNav = useNavigation()
 
   // Deal with recurse not being a number
   if (recurse && recurse !== true) {
