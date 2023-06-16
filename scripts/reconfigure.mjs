@@ -99,7 +99,9 @@ fs.writeFileSync(path.join(repo.path, 'CHANGELOG.md'), changelog('global'))
 // Step 5: Generate build script for published software
 log.write(chalk.blueBright('Generating buildall node script...'))
 const buildSteps = buildOrder.map((step, i) => `lerna run cibuild_step${i}`)
-const buildAllCommand = 'npm run reconfigure && ' + buildSteps.join(' && ')
+// Can we skip reconfigure?
+//const buildAllCommand = 'npm run reconfigure && ' + buildSteps.join(' && ')
+const buildAllCommand = buildSteps.join(' && ')
 const newRootPkgJson = { ...rootPackageJson }
 newRootPkgJson.scripts.buildall = buildAllCommand
 newRootPkgJson.scripts.wbuildall = buildAllCommand.replace(/cibuild/g, 'wcibuild')
