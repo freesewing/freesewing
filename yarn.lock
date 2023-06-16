@@ -3013,10 +3013,10 @@
   dependencies:
     glob "7.1.7"
 
-"@next/mdx@13.4.4":
-  version "13.4.4"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-13.4.4.tgz#84bac297e118733fd9b9644bb5b6c9459cf1c2c9"
-  integrity sha512-MtaZs0i1sE4lYEhOi0Ttha4EWjA3FwOIQSnhmn8jgAho4yjtVfQYjJjVcQ9wJkMxrzmjHeOz1LsDhDp0bO3Z9Q==
+"@next/mdx@13.4.6":
+  version "13.4.6"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-13.4.6.tgz#beb1257357373b8652bedebea218cd38f762f3e7"
+  integrity sha512-t00S06jW17dWROGsy4Y/6u+1npaTO5LBjP1a+Fag6uQnpoicG1BmZLv7FtmM9KHGW3GF1gWPpaj4GiaOYzHrYQ==
   dependencies:
     source-map "^0.7.0"
 
