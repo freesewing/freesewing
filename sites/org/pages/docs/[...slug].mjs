@@ -10,7 +10,7 @@ import { PageWrapper, ns } from 'shared/components/wrappers/page.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
 import { components } from 'shared/components/mdx/index.mjs'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
-//import { TocWrapper } from 'shared/components/wrappers/toc.mjs'
+import { Toc } from 'shared/components/mdx/toc.mjs'
 
 /*
  * PLEASE READ THIS BEFORE YOU TRY TO REFACTOR THIS PAGE
@@ -64,10 +64,9 @@ export const Page = ({ page, frontmatter, slug, locale, MDX }) => (
   <PageWrapper {...page} title={frontmatter.title}>
     <HeadInfo {...{ frontmatter, locale, slug }} />
     <div className="flex flex-row-reverse flex-wrap xl:flex-nowrap justify-end">
-      {false && frontmatter.toc && (
+      {frontmatter.toc && frontmatter.toc.length > 0 && (
         <div className="mb-8 w-full xl:w-80 2xl:w-96 xl:pl-8 2xl:pl-16">
-          {/* FIXME: Implement toc plugin to add it to the frontmatter */}
-          {/* <TocWrapper toc={frontmatter.toc} /> */}
+          <Toc toc={frontmatter.toc} wrap />
         </div>
       )}
       <MdxWrapper>{MDX}</MdxWrapper>
@@ -106,7 +105,7 @@ const FrDocsPage = ({ page, slug }) => {
       import(`../../../../markdown/org/${slug}/fr.md`).then((mod) => {
         setFrontmatter(mod.frontmatter)
         const Component = mod.default
-        setMDX(<Component components={components} />)
+        setMDX(<Component components={components('org')} />)
       })
     }
     loadMDX()
@@ -126,7 +125,7 @@ const EsDocsPage = ({ page, slug }) => {
       import(`../../../../markdown/org/${slug}/es.md`).then((mod) => {
         setFrontmatter(mod.frontmatter)
         const Component = mod.default
-        setMDX(<Component components={components} />)
+        setMDX(<Component components={components('org')} />)
       })
     }
     loadMDX()
@@ -146,7 +145,7 @@ const DeDocsPage = ({ page, slug }) => {
       import(`../../../../markdown/org/${slug}/de.md`).then((mod) => {
         setFrontmatter(mod.frontmatter)
         const Component = mod.default
-        setMDX(<Component components={components} />)
+        setMDX(<Component components={components('org')} />)
       })
     }
     loadMDX()
@@ -166,7 +165,7 @@ const NlDocsPage = ({ page, slug }) => {
       import(`../../../../markdown/org/${slug}/nl.md`).then((mod) => {
         setFrontmatter(mod.frontmatter)
         const Component = mod.default
-        setMDX(<Component components={components} />)
+        setMDX(<Component components={components('org')} />)
       })
     }
     loadMDX()
