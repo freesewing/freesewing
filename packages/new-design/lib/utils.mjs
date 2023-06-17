@@ -8,7 +8,7 @@ import prompts from 'prompts'
 import { oraPromise } from 'ora'
 import { execa } from 'execa'
 import axios from 'axios'
-import { fileURLToPath } from 'url'
+import { fileURLToPath, pathToFileURL } from 'url'
 
 // Current working directory
 let filename
@@ -439,7 +439,7 @@ export const createEnvironment = async (choices) => {
     shared: (await rdir(config.source.shared)).map((file) => relative(config.source.shared, file)),
   }
 
-  config.templateData = await import(config.source.templateData)
+  config.templateData = await import(pathToFileURL(config.source.templateData))
   // does this base have parts with a lot of attending config?
   config.complexParts = typeof config.templateData.parts[0] === 'object'
 

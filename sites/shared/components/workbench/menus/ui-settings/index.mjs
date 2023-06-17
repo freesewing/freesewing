@@ -13,13 +13,13 @@ const UiSetting = ({ name, control, ...rest }) => (
   <MenuItem
     {...rest}
     name={name}
-    allowToggle={name !== 'control' && control > 3}
+    allowToggle={!['control', 'view'].includes(name) && control > 3}
     control={control}
   />
 )
 
-export const UiSettings = ({ update, ui, control, language, DynamicDocs }) => {
-  const settingsConfig = loadSettingsConfig(ui)
+export const UiSettings = ({ update, ui, control, language, DynamicDocs, view, setView }) => {
+  const settingsConfig = loadSettingsConfig()
 
   return (
     <WorkbenchMenu
@@ -37,6 +37,7 @@ export const UiSettings = ({ update, ui, control, language, DynamicDocs }) => {
         name: 'uiSettings',
         ns,
         updateFunc: update.ui,
+        passProps: { view, setView },
       }}
     />
   )

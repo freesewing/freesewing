@@ -8,7 +8,7 @@ import { TabbedExample as Example } from './tabbed-example.mjs'
 import { HttpMethod, HttpStatusCode } from './http.mjs'
 import { ControlTip } from '../control/tip.mjs'
 import { Legend } from './legend.mjs'
-import { DocsTitle, DocsLink } from './docs-title.mjs'
+import { DocsTitle, DocsLink } from './docs-helpers.mjs'
 import { V3Wip } from '../v3-wip.mjs'
 
 export const components = (site = 'org') => {
@@ -21,6 +21,7 @@ export const components = (site = 'org') => {
     ReadMore: (props) => <ReadMore {...props} site={site} />,
     Related: (props) => <Popout {...props} related />,
     Tip: (props) => <Popout {...props} tip />,
+    Tldr: (props) => <Popout {...props} tldr />,
     Warning: (props) => <Popout {...props} warning />,
     YouTube,
     pre: (props) => <Highlight {...props} />,

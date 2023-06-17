@@ -90,7 +90,7 @@ export const DesignOptions = ({
         name: 'design-options:designOptions',
         language,
         ns: menuNs,
-        passProps: { settings },
+        passProps: { settings, patternConfig },
         updateFunc: (name, value) => update.settings(['options', ...name], value),
       }}
     />

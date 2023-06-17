@@ -106,8 +106,12 @@ const StackFinder = ({ renderProps, inspector, t }) => {
   return (
     <>
       <div className="flex flex-col gap-2 items-center mb-4">
-        <select className="select select-bordered w-full" onChange={findStack}>
-          <option disabled selected>
+        <select
+          className="select select-bordered w-full"
+          onChange={findStack}
+          defaultValue="__title"
+        >
+          <option disabled value="__title">
             Stacks
           </option>
           {orderBy(all.stacks, ['label'], ['asc']).map((stack) => (
@@ -116,8 +120,12 @@ const StackFinder = ({ renderProps, inspector, t }) => {
             </option>
           ))}
         </select>
-        <select className="select select-bordered w-full" onChange={findPath}>
-          <option disabled selected>
+        <select
+          className="select select-bordered w-full"
+          onChange={findPath}
+          defaultvalue="__title"
+        >
+          <option disabled value="__title">
             Paths
           </option>
           {orderBy(all.paths, ['label'], ['asc']).map((path) => (
@@ -126,8 +134,12 @@ const StackFinder = ({ renderProps, inspector, t }) => {
             </option>
           ))}
         </select>
-        <select className="select select-bordered w-full" onChange={findPoint}>
-          <option disabled selected>
+        <select
+          className="select select-bordered w-full"
+          onChange={findPoint}
+          defaultValue="__title"
+        >
+          <option disabled value="__title">
             Points
           </option>
           {orderBy(all.points, ['label'], ['asc']).map((point) => (

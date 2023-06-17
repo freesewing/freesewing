@@ -1,5 +1,5 @@
 import { Legend as LegendDesign } from '@freesewing/legend'
-import { Example } from './tabbed-example.mjs'
+import { TabbedExample as Example } from './tabbed-example.mjs'
 
 export const Legend = ({ caption = false, part = '', children = null }) => {
   const settings = {

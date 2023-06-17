@@ -1,10 +1,13 @@
-export const loadSettingsConfig = (settings) => {
+import { RocketIcon, ControlIcon } from 'shared/components/icons.mjs'
+
+export const loadSettingsConfig = () => {
   const uiSettings = {
     control: {
       control: 1, // Show when control > 0
       emoji: '🖥️',
       list: [1, 2, 3, 4, 5],
       choiceTitles: {},
+      icon: ControlIcon,
     },
     renderer: {
       control: 4, // Show when control > 3
@@ -18,21 +21,7 @@ export const loadSettingsConfig = (settings) => {
         svg: 'SVG',
       },
       dflt: 'react',
-      emoji: '🚀',
-    },
-    inspect: settings.renderer !== 'svg' && {
-      control: 4, // Show when control > 3
-      list: [0, 1],
-      choiceTitles: {
-        0: 'inspectNo',
-        1: 'inspectYes',
-      },
-      valueTitles: {
-        0: 'no',
-        1: 'yes',
-      },
-      dflt: 0,
-      emoji: '🔬',
+      icon: RocketIcon,
     },
   }
 

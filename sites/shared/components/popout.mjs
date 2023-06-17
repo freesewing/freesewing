@@ -7,9 +7,11 @@ const colors = {
   note: 'primary',
   tip: 'accent',
   warning: 'error',
+  error: 'error',
   fixme: 'warning',
   link: 'secondary',
   related: 'info',
+  tldr: 'info',
   none: '',
 }
 
@@ -63,7 +65,9 @@ export const Popout = (props) => {
       >
         <div className={`font-bold flex flex-row gap-1 items-end justify-between`}>
           <div>
-            <span className={`font-bold uppercase text-${color}`}>{type}</span>
+            <span className={`font-bold uppercase text-${color}`}>
+              {type === 'tldr' ? 'TL;DR' : type}
+            </span>
             <span className={`font-normal text-base text-${color}`}>
               {type === 'comment' && (
                 <>

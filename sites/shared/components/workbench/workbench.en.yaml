@@ -21,3 +21,13 @@ showMovableButtons: Buttons
 partInfo: Pattern part info
 pathInfo: Path info
 part: Pattern part
+draftPattern: Draft pattern
+testPattern: Test pattern
+savePattern: Save pattern
+exportPattern: Export pattern
+editSettings: Edit configuration
+patternLogs: Pattern logs
+patternInspector: Pattern Inspector
+docs: Documentation
+configurePattern: Configure pattern
+measies: Measurements

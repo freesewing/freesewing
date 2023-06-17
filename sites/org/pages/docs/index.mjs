@@ -19,11 +19,11 @@ const DocsHomePage = ({ page, slug, locale }) => {
       import(`../../../../markdown/org/docs/${locale}.md`).then((mod) => {
         setFrontmatter(mod.frontmatter)
         const Component = mod.default
-        setMDX(<Component components={components} />)
+        setMDX(<Component components={components('org')} />)
       })
     }
     loadMDX()
-  }, [slug])
+  }, [slug, locale])
 
   return <Page {...{ page, slug, frontmatter, MDX, locale }} />
 }

@@ -727,7 +727,7 @@ const EditMeasurementsSet = (props) => {
         </button>
       </div>
       {filterMeasurements().map((m) => (
-        <MeasieRow key={m} {...props} {...saveProps} />
+        <MeasieRow key={m} m={m} {...props} {...saveProps} />
       ))}
     </div>
   )

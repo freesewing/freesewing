@@ -14,7 +14,7 @@ import {
   UserIcon,
   ThemeIcon,
   I18nIcon,
-  MeasureIcon,
+  MeasieIcon,
   PageIcon,
   PlusIcon,
 } from 'shared/components/icons.mjs'
@@ -54,7 +54,7 @@ const NavIcons = ({ setModal, setSearch }) => {
         color={colors[3]}
         extraClasses="hidden lg:flex"
       >
-        <MeasureIcon className={iconSize} />
+        <MeasieIcon className={iconSize} />
       </NavButton>
       <NavButton
         href="/showcase"

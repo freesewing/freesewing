@@ -1,4 +1,4 @@
-import { ListInput, BoolInput } from '../shared/inputs'
+import { ListInput } from '../shared/inputs'
 import { useControlState } from 'shared/components/account/control.mjs'
 
 export const ControlSettingInput = (props) => {
@@ -17,6 +17,5 @@ export const ControlSettingInput = (props) => {
 
 export const inputs = {
   renderer: ListInput,
-  inspect: BoolInput,
   control: ControlSettingInput,
 }

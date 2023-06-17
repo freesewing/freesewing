@@ -16,7 +16,7 @@ import { Circle as DefaultCircle } from './circle.mjs'
 /*
  * Allow people to swizzle these components
  */
-const defaultComponents = {
+export const defaultPatternComponents = {
   Svg: DefaultSvg,
   Defs: DefaultDefs,
   Group: DefaultGroup,
@@ -46,7 +46,7 @@ export const Pattern = forwardRef(
 
     // Merge default and swizzled components
     components = {
-      ...defaultComponents,
+      ...defaultPatternComponents,
       ...components,
     }
 

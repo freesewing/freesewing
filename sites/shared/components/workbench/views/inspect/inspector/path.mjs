@@ -21,11 +21,13 @@ const Op = ({ op, len, i }) => (
 const Ops = ({ ops, path }) => (
   <table className="text-sm border-collapse h-fit border w-full border-primary shadow">
     <thead className="bg-primary bg-opacity-30">
-      <th className="text-right">Type</th>
-      <th>To</th>
-      <th>Cp1</th>
-      <th>Cp2</th>
-      <th>Length</th>
+      <tr>
+        <th className="text-right">Type</th>
+        <th>To</th>
+        <th>Cp1</th>
+        <th>Cp2</th>
+        <th>Length</th>
+      </tr>
     </thead>
     <tbody>
       {path.ops.map((op, i) => {
