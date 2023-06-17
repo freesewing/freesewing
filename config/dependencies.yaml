@@ -314,6 +314,8 @@ org:
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': *mdxRuntime
+    '@portabletext/react': '^1.0.6'
+    '@sanity/client': '^6.1.2'
     '@tailwindcss/typography': *tailwindTypography
     'algoliasearch': *algoliasearch
     'react-copy-to-clipboard': 5.1.0
@@ -323,6 +325,7 @@ org:
     'lodash.set': *_set
     'luxon': '3.3.0'
     'next': *next
+    'next-sanity': '^4.3.3'
     'react-dropzone': '14.2.3'
     'react-hotkeys-hook': *reactHotkeysHook
     'react-instantsearch-dom': *reactInstantsearchDom

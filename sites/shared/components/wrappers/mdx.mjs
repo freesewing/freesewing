@@ -6,6 +6,7 @@ import { docUpdates } from 'site/prebuild/doc-updates.mjs'
 // Components
 import { PageLink } from 'shared/components/page-link.mjs'
 import { DateTime, Interval } from 'luxon'
+import ReactMarkdown from 'react-markdown'
 // Context
 import { useContext } from 'react'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
@@ -16,7 +17,7 @@ import { useTranslation } from 'next-i18next'
 //import { PrevNext } from '../mdx/prev-next.mjs'
 //
 //
-const TimeAgo = ({ date, t }) => {
+export const TimeAgo = ({ date, t }) => {
   const i = Interval.fromDateTimes(DateTime.fromISO(date), DateTime.now())
     .toDuration(['hours', 'days', 'months', 'years'])
     .toObject()
@@ -101,9 +102,22 @@ const MetaData = ({ authors = [], maintainers = [], updated = '20220825', locale
   </div>
 )
 
+export const PlainMdxWrapper = ({ MDX = false, components = {}, compile, children }) => {
+  const allComponents = { ...baseComponents, ...components }
+  const compiledMdx = MDX ? (
+    <MDX components={allComponents} />
+  ) : compile ? (
+    <ReactMarkdown components={allComponents}>{children}</ReactMarkdown>
+  ) : (
+    children
+  )
+
+  return <div className="searchme">{compiledMdx}</div>
+}
+
 export const MdxWrapper = ({ MDX = false, frontmatter = {}, components = {}, children = [] }) => {
   const { t } = useTranslation('docs')
-  const allComponents = { ...baseComponents, ...components }
+
   const { locale, slug } = useContext(NavigationContext)
 
   const updates = docUpdates[slug] || {}
@@ -116,7 +130,7 @@ export const MdxWrapper = ({ MDX = false, frontmatter = {}, components = {}, chi
         updated={updates.u}
         {...{ locale, slug, t }}
       />
-      <div className="searchme">{MDX ? <MDX components={allComponents} /> : children}</div>
+      <PlainMdxWrapper {...{ MDX, components, children }} />
     </div>
   )
 }
