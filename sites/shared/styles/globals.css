@@ -588,3 +588,10 @@ input[type='range']::-moz-range-track {
 .range {
   border-radius: 1rem;
 }
+
+/*
+ * Smooth scrolling
+ */
+html {
+  scroll-behavior: smooth;
+}

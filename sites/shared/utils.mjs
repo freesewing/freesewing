@@ -276,3 +276,7 @@ export const shortDate = (locale = 'en', timestamp = false) => {
 
   return ts.toLocaleDateString(locale, options)
 }
+
+export const scrollTo = (id) => {
+  if (document) document.getElementById(id).scrollIntoView()
+}

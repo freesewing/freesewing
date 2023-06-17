@@ -6,7 +6,7 @@ import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 import remarkGfm from 'remark-gfm'
 import remarkCopyLinkedFiles from 'remark-copy-linked-files'
 //import { remarkIntroPlugin } from './remark-intro-plugin.mjs'
-//import mdxPluginToc from './mdx-plugin-toc.mjs'
+import mdxPluginToc from '../mdx/mdx-plugin-toc.mjs'
 import smartypants from 'remark-smartypants'
 // Rehype plugins we want to use
 import rehypeHighlight from 'rehype-highlight'
@@ -46,6 +46,7 @@ const getMdxConfig = ({ site, jargon }) => ({
         },
       ],
       //[remarkIntroPlugin, { intro }],
+      mdxPluginToc,
     ],
     rehypePlugins: [
       [rehypeJargon, { jargon, transform: jargonTransform }],

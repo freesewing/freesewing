@@ -1,30 +1,69 @@
-import {toc} from 'mdast-util-toc'
+import { toc } from 'mdast-util-toc'
+import GithubSlugger from 'github-slugger'
 
-const headings = {
-  en: 'Table of contents',
-  fr: 'Table des matières',
-  nl: 'Inhoudsopgave',
-  es: 'Tabla de contenido',
-  de: 'Inhaltsverzeichnis'
+const defaultOptions = {
+  maxDepth: 4,
 }
+
+const nodeAsTocEntry = (node, slugger) => ({
+  text: node.children[0].value,
+  level: node.depth,
+  slug: slugger.slug(node.children[0].value),
+})
+
+const extractToc = (node, options, slugger) => {
+  const toc = []
+  for (const el of node.children.filter((node) => node.type === 'heading')) {
+    if (el.depth <= options.maxDepth) toc.push(nodeAsTocEntry(el, slugger))
+  }
+
+  return toc
+}
+
+const asObjectPropertyString = (key, val) => ({
+  type: 'Property',
+  method: false,
+  shorthand: false,
+  computed: false,
+  kind: 'init',
+  key: { type: 'Literal', value: key },
+  value: { type: 'Literal', value: val },
+})
+
+const tocAsProperty = (toc) => ({
+  type: 'Property',
+  method: false,
+  shorthand: false,
+  computed: false,
+  kind: 'init',
+  key: { type: 'Literal', value: 'toc' },
+  value: {
+    type: 'ArrayExpression',
+    elements: toc.map((entry) => ({
+      type: 'ObjectExpression',
+      properties: [
+        asObjectPropertyString('title', entry.text || 'FIXME: Title not found in toc'),
+        asObjectPropertyString('level', entry.level),
+        asObjectPropertyString('slug', entry.slug),
+      ],
+    })),
+  },
+})
 
 export default function mdxToc(options = {}) {
   return (node) => {
-    const result = toc(node, { heading: false })
+    const slugger = new GithubSlugger()
+    options = { ...defaultOptions, options }
+    const esm = node.children.filter((child) => child.type === 'mdxjsEsm')
+    if (
+      esm &&
+      esm.length === 1 &&
+      esm[0].data?.estree?.body?.[0]?.declaration?.declarations?.[0]?.init?.properties
+    )
+      esm[0].data.estree.body[0].declaration.declarations[0].init.properties.push(
+        tocAsProperty(extractToc(node, options, slugger))
+      )
 
-    if (result.map) node.children = [
-      {
-        type: 'heading',
-        depth: 4,
-        children: [{
-          type: 'text',
-          value: headings[options.language || 'en']
-        }]
-      },
-      result.map
-    ]
-    else node.children = []
-
-    return
+    return node
   }
 }
