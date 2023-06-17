@@ -1,6 +1,6 @@
 // Components
 import { Path } from '../pattern/path.mjs'
-import { getProps, getId } from '../pattern/utils.mjs'
+import { getProps } from '../pattern/utils.mjs'
 
 const coords = (point) => `${point.x},${point.y}`
 
