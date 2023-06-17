@@ -8,7 +8,7 @@ const Cp = ({ at }) => (
   <circle cx={at.x} cy={at.y} r={0.75} className="stroke-md opacity-50  text-warning" />
 )
 
-const Xray = ({ stackName, pathName, path, t, inspector }) => {
+const Xray = ({ path }) => {
   const output = []
   let prev
   let i = 0
@@ -47,7 +47,7 @@ export const PathXray = ({
   inspector,
 }) => (
   <>
-    <Xray {...{ stackName, pathName, path, part, settings, t, inspector }} />
+    <Xray path={path} />
     <Path {...{ stackName, pathName, path, part, settings, components, t }} />
   </>
 )
