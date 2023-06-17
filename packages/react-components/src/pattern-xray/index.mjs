@@ -1,37 +1,19 @@
 // eslint-disable-next-line no-unused-vars
 import React, { forwardRef } from 'react'
+import { defaultPatternComponents } from '../pattern/index.mjs'
 // Components that can be swizzled
-import { Svg as DefaultSvg } from './svg.mjs'
-import { Defs as DefaultDefs } from './defs.mjs'
-import { Group as DefaultGroup } from './group.mjs'
-import { Stack as DefaultStack } from './stack.mjs'
-import { Part as DefaultPart } from './part.mjs'
-import { Point as DefaultPoint } from './point.mjs'
-import { Snippet as DefaultSnippet } from './snippet.mjs'
-import { Path as DefaultPath } from './path.mjs'
-import { Grid as DefaultGrid } from './grid.mjs'
-import { Text as DefaultText, TextOnPath as DefaultTextOnPath } from './text.mjs'
-import { Circle as DefaultCircle } from './circle.mjs'
-
+import { PointXray } from './point.mjs'
+import { PathXray } from './path.mjs'
 /*
  * Allow people to swizzle these components
  */
-export const defaultPatternComponents = {
-  Svg: DefaultSvg,
-  Defs: DefaultDefs,
-  Group: DefaultGroup,
-  Stack: DefaultStack,
-  Part: DefaultPart,
-  Point: DefaultPoint,
-  Path: DefaultPath,
-  Snippet: DefaultSnippet,
-  Grid: DefaultGrid,
-  Text: DefaultText,
-  TextOnPath: DefaultTextOnPath,
-  Circle: DefaultCircle,
+export const defaultPatternXrayComponents = {
+  ...defaultPatternComponents,
+  Point: PointXray,
+  Path: PathXray,
 }
 
-export const Pattern = forwardRef(
+export const PatternXray = forwardRef(
   (
     {
       renderProps = false,
@@ -46,7 +28,7 @@ export const Pattern = forwardRef(
 
     // Merge default and swizzled components
     components = {
-      ...defaultPatternComponents,
+      ...defaultPatternXrayComponents,
       ...components,
     }
 
@@ -86,4 +68,4 @@ export const Pattern = forwardRef(
   }
 )
 
-Pattern.displayName = 'Pattern'
+PatternXray.displayName = 'PatternXray'
