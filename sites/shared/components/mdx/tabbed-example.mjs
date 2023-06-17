@@ -5,7 +5,7 @@ import { pluginFlip } from '@freesewing/plugin-flip'
 import { pluginGore } from '@freesewing/plugin-gore'
 import { Design } from '@freesewing/core'
 import yaml from 'js-yaml'
-import { Pattern } from '@freesewing/react-components'
+import { Pattern, PatternXray } from '@freesewing/react-components'
 
 // Get code from children
 export const asText = (reactEl) => {
@@ -16,19 +16,6 @@ export const asText = (reactEl) => {
   if (typeof reactEl.props.children === 'object') return asText(reactEl.props.children)
 
   return ''
-}
-
-// The actual example
-export const Example = ({ renderProps, logs }) => {
-  if (!renderProps) return null
-
-  return logs.pattern.error.length > 0 || logs.sets[0].error.length > 0 ? (
-    <div className="max-w-full p-4">
-      <pre>fixme: Errors logged. Please implement log view</pre>
-    </div>
-  ) : (
-    <Pattern {...{ renderProps }} />
-  )
 }
 
 // Returns a FreeSewing pattern based on code in children
@@ -69,6 +56,28 @@ const buildPattern = (children, settings = { margin: 5 }, tutorial = false, pape
   return new design(settings)
 }
 
+// Handles display of pattern in mormal or xray mode
+const ShowPattern = ({ renderProps, logs, mode = 'normal' }) => {
+  if (!renderProps) return null
+
+  if (logs.pattern.error.length > 0 || logs.sets[0].error.length > 0)
+    return (
+      <div className="max-w-full p-4">
+        <pre>fixme: Errors logged. Please implement log view</pre>
+      </div>
+    )
+
+  if (mode === 'xray')
+    return (
+      <>
+        <p>xray</p>
+        <PatternXray {...{ renderProps }} />
+      </>
+    )
+
+  return <Pattern {...{ renderProps }} />
+}
+
 // Wrapper component dealing with the tabs and code view
 export const TabbedExample = ({
   children,
@@ -91,10 +100,12 @@ export const TabbedExample = ({
   // Check that it's a valid pattern
   if (!pattern.sample) return null
 
-  const renderProps = settings.sample
-    ? pattern.sample().getRenderProps()
-    : pattern.draft().getRenderProps()
-  const logs = pattern.getLogs()
+  const patternProps = {
+    renderProps: settings.sample
+      ? pattern.sample().getRenderProps()
+      : pattern.draft().getRenderProps(),
+    logs: pattern.getLogs(),
+  }
 
   if (tutorial && !previewFirst)
     return (
@@ -102,10 +113,10 @@ export const TabbedExample = ({
         <Tabs tabs="Code, Preview, X-Ray">
           <Tab key="code">{children}</Tab>
           <Tab key="preview">
-            <Example {...{ renderProps, settings, logs }} />
+            <ShowPattern {...patternProps} />
           </Tab>
           <Tab key="xray">
-            <Example {...{ renderProps, settings, logs }} xray={true} />
+            <ShowPattern {...patternProps} mode="xray" />
           </Tab>
         </Tabs>
         {caption && (
@@ -120,11 +131,11 @@ export const TabbedExample = ({
     <div className="my-8">
       <Tabs tabs="Preview, Code, X-Ray">
         <Tab key="preview">
-          <Example {...{ renderProps, settings, logs }} />
+          <ShowPattern {...patternProps} />
         </Tab>
         <Tab key="code">{children}</Tab>
         <Tab key="xray">
-          <Example {...{ renderProps, settings, logs }} xray={true} />
+          <ShowPattern {...patternProps} mode="xray" />
         </Tab>
       </Tabs>
       {caption && (
