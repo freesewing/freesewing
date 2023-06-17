@@ -345,6 +345,7 @@ org:
 sanity:
   _:
     '@sanity/vision': &sanity '3.12.0'
+    'easymde': '2.16.0'
     'react': *react
     'react-dom': *react
     'react-is': *react
