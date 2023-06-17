@@ -362,7 +362,7 @@ sanity:
 shared:
   _:
     '@headlessui/react': *headlessUiReact
-    '@next/mdx': '13.4.4'
+    '@next/mdx': '13.4.6'
     '@resvg/resvg-js': '2.4.1'
     '@tailwindcss/typography': *tailwindTypography
     'Buffer': '0.0.0'
