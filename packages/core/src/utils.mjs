@@ -459,7 +459,7 @@ export function mergeI18n(designs, options) {
         if (obj[section]) {
           if (typeof i18n[lang][section] === 'undefined') i18n[lang][section] = {}
           for (const [key, val] of Object.entries(obj[section])) {
-            if (__keepTranslation(key, options[section])) i18n[lang][section][key] = val
+            if (__keepTranslation(key, options?.[section])) i18n[lang][section][key] = val
           }
         }
       }
