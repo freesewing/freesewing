@@ -278,5 +278,6 @@ export const shortDate = (locale = 'en', timestamp = false) => {
 }
 
 export const scrollTo = (id) => {
+  // eslint-disable-next-line no-undef
   if (document) document.getElementById(id).scrollIntoView()
 }
