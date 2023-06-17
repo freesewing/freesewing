@@ -1,4 +1,3 @@
-import { toc } from 'mdast-util-toc'
 import GithubSlugger from 'github-slugger'
 
 const defaultOptions = {

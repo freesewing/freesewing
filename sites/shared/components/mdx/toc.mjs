@@ -25,8 +25,9 @@ export const Toc = ({ toc = [], wrap = false }) => {
       <select
         className="block lg:hidden max-w-full select select-secondary"
         onChange={(evt) => scrollTo(evt.target.value)}
+        defaultValue="_"
       >
-        <option selected>{t('toc')}</option>
+        <option value="_">{t('toc')}</option>
         {toc.map((entry, i) => {
           const space = []
           for (let i = 1; i <= entry.level; i++) space.push(<Spacer key={i} />)
