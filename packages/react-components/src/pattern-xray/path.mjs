@@ -36,16 +36,7 @@ const Xray = ({ path }) => {
   return output
 }
 
-export const PathXray = ({
-  stackName,
-  pathName,
-  part,
-  path,
-  settings,
-  components,
-  t,
-  inspector,
-}) => (
+export const PathXray = ({ stackName, pathName, part, path, settings, components, t }) => (
   <>
     <Xray path={path} />
     <Path {...{ stackName, pathName, path, part, settings, components, t }} />
