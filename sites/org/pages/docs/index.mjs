@@ -23,7 +23,7 @@ const DocsHomePage = ({ page, slug, locale }) => {
       })
     }
     loadMDX()
-  }, [slug])
+  }, [slug, locale])
 
   return <Page {...{ page, slug, frontmatter, MDX, locale }} />
 }
