@@ -33,6 +33,7 @@ new-design:
   wbuild: '!'
   lint: "npx eslint 'lib/*.mjs'"
   mbuild: '!'
+  prebuild: 'node ./prebuild.mjs'
   test: '!'
   testci: '!'
   vbuild: '!'
