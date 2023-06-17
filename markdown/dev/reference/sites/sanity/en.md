@@ -12,6 +12,15 @@ guide](/guides/content/sanity).
 
 The Sanity content scheme is stored in `sites/sanity/schema` in our monorepo.
 
+## Datasets
+
+We use two datasets:
+
+- `site-data` holds blog and showcase posts in all languages, as well as
+  newsletter editions. This dataset is publicly avaialble.
+- `user-data` holds images uploaded by users, such as for their account image,
+  or measurements set image. This dataset is not publicly available.
+
 ## Sanity studio
 
 The `sites/sanity` folder holds an instance of Sanity Studio -- the frontend to
@@ -44,11 +53,10 @@ This instance is setup to work with our production data.
 
 ## Sanity API
 
-
 The following data is required to interact with Sanity:
 
 - Project ID: `hl5bw8cj`
-- Dataset: `production`
+- Dataset: `site-content`
 
 With that and [the API reference
 documentation](https://www.sanity.io/docs/reference) you should be able to get
