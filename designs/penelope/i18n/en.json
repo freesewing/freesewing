@@ -1,7 +1,122 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
+  "t": "Penelope pencil skirt",
+  "d": "Penelope is a pencil skirt with or without a vent in the back.",
+  "p": {
+    "back": "Back",
+    "backBase": "Back base",
+    "backPocketWelt": "Back pocket welt",
+    "base": "Base",
+    "bentBack": "Bent back",
+    "bentBase": "Bent base",
+    "bentFront": "Bent front",
+    "bentSleeve": "Bent sleeve",
+    "bentTopSleeve": "Bent top sleeve",
+    "bentUnderSleeve": "Bent under sleeve",
+    "buttonholePlacket": "Buttonhole placket",
+    "buttonPlacket": "Button placket",
+    "collar": "Collar",
+    "collarStand": "Collar stand",
+    "cuff": "Cuff",
+    "fabricTail": "Fabric tail",
+    "fabricTip": "Fabric tip",
+    "frontBase": "Front base",
+    "frontFacing": "Front facing",
+    "front": "Front",
+    "frontLeft": "Front left",
+    "frontLining": "Front lining",
+    "frontRight": "Front right",
+    "gusset": "Gusset",
+    "hoodCenter": "Hood center",
+    "hood": "Hood",
+    "hoodSide": "Hood side",
+    "inset": "Inset",
+    "interfacingTail": "Interfacing tail",
+    "interfacingTip": "Interfacing tip",
+    "liningTail": "Lining tail",
+    "liningTip": "Lining tip",
+    "loop": "Loop",
+    "panel1": "Panel 1",
+    "panel2": "Panel 2",
+    "panel3": "Panel 3",
+    "panel4": "Panel 4",
+    "panel5": "Panel 5",
+    "panel6": "Panel 6",
+    "panels": "Panels",
+    "pocketBag": "Pocket bag",
+    "pocketFacing": "Pocket facing",
+    "pocketInterfacing": "Pocket interfacing",
+    "pocket": "Pocket",
+    "pocketWelt": "Pocket welt",
+    "side": "Side",
+    "sleeveBase": "Sleeve base",
+    "sleevecap": "Sleevecap",
+    "sleevePlacketOverlap": "Sleeve placket overlap",
+    "sleevePlacketUnderlap": "Sleeve placket underlap",
+    "sleeve": "Sleeve",
+    "topSleeve": "Topsleeve",
+    "top": "Top",
+    "underCollar": "Under collar",
+    "underSleeve": "Undersleeve",
+    "waistband": "Waistband",
+    "yoke": "Yoke"
+  },
   "s": {},
-  "o": {}
+  "o": {
+    "backDartDepthFactor": {
+      "t": "Back dart depth factor",
+      "d": "How far down does the back dart go from the waistband. This is a factor of the Natural Waist To Seat measurement."
+    },
+    "backVent": {
+      "t": "Back vent",
+      "d": "Add a vent in the back of the skirt."
+    },
+    "backVentLength": {
+      "t": "Back vent length",
+      "d": "Length of the Back Vent as a percentage of the skirt length."
+    },
+    "dartToSideSeamFactor": {
+      "t": "Dart to side seam factor",
+      "d": "Percentage of how much of the hip to waist reduction has to be taken in by the darts versus the side seam."
+    },
+    "frontDartDepthFactor": {
+      "t": "Front dart depth factor",
+      "d": "How far down does the front dart go from the waistband. This is a factor of the Natural Waist To Seat measurement."
+    },
+    "hem": {
+      "t": "Size of the hem",
+      "d": "The size of the hem. Measurement in absolute values."
+    },
+    "hemBonus": {
+      "t": "Hem bonus",
+      "d": "This option will reduce the circumference of the skirt at the hem. Percentage of the Seat measurement."
+    },
+    "lengthBonus": {
+      "t": "Length bonus",
+      "d": "This sets the length of the skirt. Percentage of the Natural Waist to Knee measurement."
+    },
+    "nrOfDarts": {
+      "t": "Number of darts",
+      "d": "The number of darts used in the pattern. Maximum is 2. This option can be reduced by the pattern if the calculations create darts that are too small."
+    },
+    "seatEase": {
+      "t": "Seat ease",
+      "d": "Amount of ease at the seat level."
+    },
+    "waistBand": {
+      "t": "Waist band",
+      "d": "Add a waistband to the pattern."
+    },
+    "waistBandWidth": {
+      "t": "Waist band width",
+      "d": "The width of the waist band."
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Amount of ease at the waist level."
+    },
+    "zipperLocation": {
+      "t": "Zipper location",
+      "d": "The location of the zipper."
+    }
+  }
 }

@@ -1,7 +1,118 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
+  "t": "Breanna, patrón base de torso con pechos",
+  "d": "Breanna es un patrón base de torso para personas con pechos.",
+  "p": {
+    "back": "Atrás",
+    "backBase": "Base trasera",
+    "backPocketWelt": "Ribete del bolsillo trasero",
+    "base": "Base",
+    "bentBack": "Trasero Bent",
+    "bentBase": "Base Bent",
+    "bentFront": "Frente Bent",
+    "bentSleeve": "Manga Bent",
+    "bentTopSleeve": "Manga superior Bent",
+    "bentUnderSleeve": "Manga debajo Bent",
+    "buttonholePlacket": "Tapeta de ojal",
+    "buttonPlacket": "Tapeta de botones",
+    "collar": "Cuello",
+    "collarStand": "Soporte de collar",
+    "cuff": "Cuffnl",
+    "fabricTail": "Cola de tela",
+    "fabricTip": "Punta de tela",
+    "frontBase": "Base delantera",
+    "frontFacing": "Delantero mirando hacia",
+    "front": "Frente",
+    "frontLeft": "Delantero izquierdo",
+    "frontLining": "Delantero revestimiento",
+    "frontRight": "Frente derecho",
+    "gusset": "Gusset",
+    "hoodCenter": "Centro de la capucha",
+    "hood": "Capucha",
+    "hoodSide": "Lado de la capucha",
+    "inset": "Recuadro",
+    "interfacingTail": "Cola de entretela",
+    "interfacingTip": "Punta de entretela",
+    "liningTail": "Cola de revestimiento",
+    "liningTip": "Punta de revestimiento",
+    "loop": "Lazo",
+    "panel1": "Panel 1",
+    "panel2": "Panel 2",
+    "panel3": "Panel 3",
+    "panel4": "Panel 4",
+    "panel5": "Panel 5",
+    "panel6": "Panel 6",
+    "panels": "Paneles",
+    "pocketBag": "Bolsa de bolsillo",
+    "pocketFacing": "Cara de bolsillo",
+    "pocketInterfacing": "Entretela de bolsillo",
+    "pocket": "Bolsillo",
+    "pocketWelt": "Ribete de bolsillo",
+    "side": "Lado",
+    "sleeveBase": "Base de la manga",
+    "sleevecap": "Funda de manga",
+    "sleevePlacketOverlap": "Top de manga tapeta",
+    "sleevePlacketUnderlap": "Parte inferior de la tapeta de la manga",
+    "sleeve": "Manga",
+    "topSleeve": "Manga superior",
+    "top": "Arriba",
+    "underCollar": "Debajo del cuello",
+    "underSleeve": "Manga debajo",
+    "waistband": "Pretina",
+    "yoke": "Yugo"
+  },
   "s": {},
-  "o": {}
+  "o": {
+    "shoulderDart": {
+      "t": "Dardo de hombro",
+      "d": "Incluir o no un dardo en el hombro para redondear la espalda"
+    },
+    "shoulderDartSize": {
+      "t": "Tamaño dart de hombro",
+      "d": "El tamaño del dart del hombro"
+    },
+    "shoulderDartLength": {
+      "t": "Longitud del dart del hombro",
+      "d": "La longitud del dart del hombro"
+    },
+    "waistDart": {
+      "t": "Dardo de Waist",
+      "d": "Incluir o no un dardo en la cintura para redondear la espalda"
+    },
+    "waistDartSize": {
+      "t": "Tamaño dart de Waist",
+      "d": "El tamaño del dardo de la cintura"
+    },
+    "waistDartLength": {
+      "t": "Longitud del dart de Waist",
+      "d": "La longitud del dardo de la cintura"
+    },
+    "verticalEase": {
+      "t": "Fácil vertical",
+      "d": "La cantidad de facilidad para distribuir a lo largo de la ropa"
+    },
+    "waistEase": {
+      "t": "Holgura de cintura",
+      "d": "La cantidad de facilidad en la cintura"
+    },
+    "primaryBustDart": {
+      "t": "Dardo de busto",
+      "d": "Donde colocar el polvo para dar forma al cofre"
+    },
+    "primaryBustDartLength": {
+      "t": "Longitud del dart del polvo",
+      "d": "La longitud del polvo"
+    },
+    "secondaryBustDart": {
+      "t": "Armadura de polvo secundaria",
+      "d": "Opcionalmente incluye un polvo secundario para distribuir la forma del cofre"
+    },
+    "secondaryBustDartLength": {
+      "t": "Longitud del polvo secundario",
+      "d": "La longitud del polvo secundario"
+    },
+    "primaryBustDartShaping": {
+      "t": "Dardos de busto que conforman",
+      "d": "Controla el equilibrio entre los dardos principales y secundarios"
+    }
+  }
 }

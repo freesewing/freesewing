@@ -1,7 +1,134 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
+  "t": "Charlie, chinos",
+  "d": "Charlie es un patrón de pantalón tipo chinos.",
+  "p": {
+    "back": "Atrás",
+    "backBase": "Base trasera",
+    "backPocketWelt": "Ribete del bolsillo trasero",
+    "base": "Base",
+    "bentBack": "Trasero Bent",
+    "bentBase": "Base Bent",
+    "bentFront": "Frente Bent",
+    "bentSleeve": "Manga Bent",
+    "bentTopSleeve": "Manga superior Bent",
+    "bentUnderSleeve": "Manga debajo Bent",
+    "buttonholePlacket": "Tapeta de ojal",
+    "buttonPlacket": "Tapeta de botones",
+    "collar": "Cuello",
+    "collarStand": "Soporte de collar",
+    "cuff": "Cuffnl",
+    "fabricTail": "Cola de tela",
+    "fabricTip": "Punta de tela",
+    "frontBase": "Base delantera",
+    "frontFacing": "Delantero mirando hacia",
+    "front": "Frente",
+    "frontLeft": "Delantero izquierdo",
+    "frontLining": "Delantero revestimiento",
+    "frontRight": "Frente derecho",
+    "gusset": "Gusset",
+    "hoodCenter": "Centro de la capucha",
+    "hood": "Capucha",
+    "hoodSide": "Lado de la capucha",
+    "inset": "Recuadro",
+    "interfacingTail": "Cola de entretela",
+    "interfacingTip": "Punta de entretela",
+    "liningTail": "Cola de revestimiento",
+    "liningTip": "Punta de revestimiento",
+    "loop": "Lazo",
+    "panel1": "Panel 1",
+    "panel2": "Panel 2",
+    "panel3": "Panel 3",
+    "panel4": "Panel 4",
+    "panel5": "Panel 5",
+    "panel6": "Panel 6",
+    "panels": "Paneles",
+    "pocketBag": "Bolsa de bolsillo",
+    "pocketFacing": "Cara de bolsillo",
+    "pocketInterfacing": "Entretela de bolsillo",
+    "pocket": "Bolsillo",
+    "pocketWelt": "Ribete de bolsillo",
+    "side": "Lado",
+    "sleeveBase": "Base de la manga",
+    "sleevecap": "Funda de manga",
+    "sleevePlacketOverlap": "Top de manga tapeta",
+    "sleevePlacketUnderlap": "Parte inferior de la tapeta de la manga",
+    "sleeve": "Manga",
+    "topSleeve": "Manga superior",
+    "top": "Arriba",
+    "underCollar": "Debajo del cuello",
+    "underSleeve": "Manga debajo",
+    "waistband": "Pretina",
+    "yoke": "Yugo"
+  },
   "s": {},
-  "o": {}
+  "o": {
+    "backPocketHorizontalPlacement": {
+      "t": "Colocación horizontal del bolsillo trasero",
+      "d": "Controla la posición horizontal del bolsillo trasero"
+    },
+    "backPocketVerticalPlacement": {
+      "t": "Colocación vertical del bolsillo trasero",
+      "d": "Controla la posición vertical del bolsillo trasero"
+    },
+    "backPocketWidth": {
+      "t": "Ancho del bolsillo trasero",
+      "d": "Controla el ancho del bolsillo trasero"
+    },
+    "backPocketDepth": {
+      "t": "Profundidad del bolsillo trasero",
+      "d": "Controla la profundidad del bolsillo trasero"
+    },
+    "backPocketFacing": {
+      "t": "Back pocket facing",
+      "d": "Controls whether or not to include facing on the back pockets"
+    },
+    "frontPocketSlantDepth": {
+      "t": "Profundidad delantera de bolsillo",
+      "d": "Controla la profundidad de la capa delantera del bolsillo"
+    },
+    "frontPocketSlantWidth": {
+      "t": "Anchura del bolsillo delantero",
+      "d": "Controla el ancho de la franja del bolsillo (delante)"
+    },
+    "frontPocketSlantRound": {
+      "t": "Pócket delantero slant round",
+      "d": "Controla qué tan lejos del final del esclavizado empezamos a redondear hacia el exterior"
+    },
+    "frontPocketSlantBend": {
+      "t": "Pócket delantero inclinado",
+      "d": "Controla el radio por el cual redondeamos el bolsillo hacia el exterior"
+    },
+    "frontPocketWidth": {
+      "t": "Ancho bolsillo frontal",
+      "d": "Controla el ancho de la bolsa de bolsillo frontal"
+    },
+    "frontPocketDepth": {
+      "t": "Profundidad de bolsillo frontal",
+      "d": "Controla la profundidad de la bolsa de bolsillo frontal"
+    },
+    "frontPocketFacing": {
+      "t": "Pócket frontal",
+      "d": "Controla hasta qué punto la cara del bolsillo se extiende a la bolsa de bolsillo"
+    },
+    "beltLoops": {
+      "t": "Bucles de cinturón",
+      "d": "Controla la cantidad de bucles de cinta"
+    },
+    "flyCurve": {
+      "t": "Curva de vuelo",
+      "d": "Controla la curvatura de la mosca J-costura"
+    },
+    "flyLength": {
+      "t": "Longitud del vuelo",
+      "d": "Controla la longitud de la mosca"
+    },
+    "flyWidth": {
+      "t": "Fly width",
+      "d": "Controla hasta qué punto la costura J del desplazamiento del borde de la mosca"
+    },
+    "waistbandCurve": {
+      "t": "Curva de Waistband",
+      "d": "Controla lo curvada que es la banda de cintura."
+    }
+  }
 }

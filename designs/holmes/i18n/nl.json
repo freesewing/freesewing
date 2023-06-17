@@ -1,7 +1,102 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
+  "t": "Holmes deerstanker hoed",
+  "d": "Voor als je Sherlock Holmes wil spelen, of gewoon een leuk hoedje zoekt.",
+  "p": {
+    "back": "Achterzijde",
+    "backBase": "Basis rug",
+    "backPocketWelt": "Back pocket welt",
+    "base": "Basis",
+    "bentBack": "Achterzijde Bent",
+    "bentBase": "Basis Bent",
+    "bentFront": "Voorzijde Bent",
+    "bentSleeve": "Mouw Bent",
+    "bentTopSleeve": "Bovenmouw Bent",
+    "bentUnderSleeve": "Ondermouw Bent",
+    "buttonholePlacket": "Knoopsgatenpat",
+    "buttonPlacket": "Knopenpat",
+    "collar": "Kraag",
+    "collarStand": "Kraagstaander",
+    "cuff": "Manchet",
+    "fabricTail": "Stof staart",
+    "fabricTip": "Stof tip",
+    "frontBase": "Basis voorzijde",
+    "frontFacing": "Beleg vooraan",
+    "front": "Voorzijde",
+    "frontLeft": "Voorzijde links",
+    "frontLining": "Voering vooraan",
+    "frontRight": "Voorzijde rechts",
+    "gusset": "Gusset",
+    "hoodCenter": "Midden kap",
+    "hood": "Capuchon",
+    "hoodSide": "Zijkant kap",
+    "inset": "Inzet",
+    "interfacingTail": "Interfacing staart",
+    "interfacingTip": "Interfacing tip",
+    "liningTail": "Voering staart",
+    "liningTip": "Voering tip",
+    "loop": "Lus",
+    "panel1": "Deel 1",
+    "panel2": "Deel 2",
+    "panel3": "Deel 3",
+    "panel4": "Deel 4",
+    "panel5": "Deel 5",
+    "panel6": "Deel 6",
+    "panels": "Panelen",
+    "pocketBag": "Binnenzak",
+    "pocketFacing": "Zak beleg",
+    "pocketInterfacing": "Tussenvoering zak",
+    "pocket": "Zak",
+    "pocketWelt": "Paspel zak",
+    "side": "Zijkant",
+    "sleeveBase": "Basis mouw",
+    "sleevecap": "Mouwkop",
+    "sleevePlacketOverlap": "Mouwsplit boven",
+    "sleevePlacketUnderlap": "Mouwsplit onder",
+    "sleeve": "Mouw",
+    "topSleeve": "Bovenmouw",
+    "top": "Top",
+    "underCollar": "Onderkraag",
+    "underSleeve": "Ondermouw",
+    "waistband": "Tailleband",
+    "yoke": "Schouderpas"
+  },
   "s": {},
-  "o": {}
+  "o": {
+    "headEase": {
+      "t": "Overwijdte hoofd",
+      "d": "De hoeveelheid overwijdte rond je hoofd."
+    },
+    "lengthRatio": {
+      "t": "Lengteratio",
+      "d": "Controls the length of the crown and ear flaps"
+    },
+    "gores": {
+      "t": "Aantal panden",
+      "d": "The number of gores used to construct the crown"
+    },
+    "visorAngle": {
+      "t": "Visor hoek",
+      "d": "The arc angle used to draft the inner curve of the visor"
+    },
+    "visorWidth": {
+      "t": "Visor breedte",
+      "d": "Bepaalt de breedte van de visor"
+    },
+    "earLength": {
+      "t": "Ear flap length",
+      "d": "Controls the length of the ear flaps independently from the crown pieces"
+    },
+    "earWidth": {
+      "t": "Ear flap width",
+      "d": "Controls the width of the ear flaps"
+    },
+    "buttonhole": {
+      "t": "Buttonhole guide",
+      "d": "Adds a buttonhole to the ear flap to help you draft the buttonhole ear flap variant"
+    },
+    "visorLength": {
+      "t": "Visor lengte",
+      "d": "Bepaalt de lengte van de visor"
+    }
+  }
 }

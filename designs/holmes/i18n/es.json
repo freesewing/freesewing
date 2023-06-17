@@ -1,7 +1,102 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
+  "t": "Holmes, sombrero deerstalker o cervadora",
+  "d": "Para un cosplay de Sherlock Holmes o simplemente un sombrero bonito.",
+  "p": {
+    "back": "Atrás",
+    "backBase": "Base trasera",
+    "backPocketWelt": "Ribete del bolsillo trasero",
+    "base": "Base",
+    "bentBack": "Trasero Bent",
+    "bentBase": "Base Bent",
+    "bentFront": "Frente Bent",
+    "bentSleeve": "Manga Bent",
+    "bentTopSleeve": "Manga superior Bent",
+    "bentUnderSleeve": "Manga debajo Bent",
+    "buttonholePlacket": "Tapeta de ojal",
+    "buttonPlacket": "Tapeta de botones",
+    "collar": "Cuello",
+    "collarStand": "Soporte de collar",
+    "cuff": "Cuffnl",
+    "fabricTail": "Cola de tela",
+    "fabricTip": "Punta de tela",
+    "frontBase": "Base delantera",
+    "frontFacing": "Delantero mirando hacia",
+    "front": "Frente",
+    "frontLeft": "Delantero izquierdo",
+    "frontLining": "Delantero revestimiento",
+    "frontRight": "Frente derecho",
+    "gusset": "Gusset",
+    "hoodCenter": "Centro de la capucha",
+    "hood": "Capucha",
+    "hoodSide": "Lado de la capucha",
+    "inset": "Recuadro",
+    "interfacingTail": "Cola de entretela",
+    "interfacingTip": "Punta de entretela",
+    "liningTail": "Cola de revestimiento",
+    "liningTip": "Punta de revestimiento",
+    "loop": "Lazo",
+    "panel1": "Panel 1",
+    "panel2": "Panel 2",
+    "panel3": "Panel 3",
+    "panel4": "Panel 4",
+    "panel5": "Panel 5",
+    "panel6": "Panel 6",
+    "panels": "Paneles",
+    "pocketBag": "Bolsa de bolsillo",
+    "pocketFacing": "Cara de bolsillo",
+    "pocketInterfacing": "Entretela de bolsillo",
+    "pocket": "Bolsillo",
+    "pocketWelt": "Ribete de bolsillo",
+    "side": "Lado",
+    "sleeveBase": "Base de la manga",
+    "sleevecap": "Funda de manga",
+    "sleevePlacketOverlap": "Top de manga tapeta",
+    "sleevePlacketUnderlap": "Parte inferior de la tapeta de la manga",
+    "sleeve": "Manga",
+    "topSleeve": "Manga superior",
+    "top": "Arriba",
+    "underCollar": "Debajo del cuello",
+    "underSleeve": "Manga debajo",
+    "waistband": "Pretina",
+    "yoke": "Yugo"
+  },
   "s": {},
-  "o": {}
+  "o": {
+    "headEase": {
+      "t": "Holgura de cabeza",
+      "d": "La cantidad de facilidad alrededor de tu cabeza."
+    },
+    "lengthRatio": {
+      "t": "Ratio de longitud",
+      "d": "Controls the length of the crown and ear flaps"
+    },
+    "gores": {
+      "t": "Número de paneles",
+      "d": "The number of gores used to construct the crown"
+    },
+    "visorAngle": {
+      "t": "Visor angle",
+      "d": "The arc angle used to draft the inner curve of the visor"
+    },
+    "visorWidth": {
+      "t": "Visor width",
+      "d": "Controls the width of the visor"
+    },
+    "earLength": {
+      "t": "Ear flap length",
+      "d": "Controls the length of the ear flaps independently from the crown pieces"
+    },
+    "earWidth": {
+      "t": "Ear flap width",
+      "d": "Controls the width of the ear flaps"
+    },
+    "buttonhole": {
+      "t": "Buttonhole guide",
+      "d": "Adds a buttonhole to the ear flap to help you draft the buttonhole ear flap variant"
+    },
+    "visorLength": {
+      "t": "Visor length",
+      "d": "Controls the length of the visor"
+    }
+  }
 }

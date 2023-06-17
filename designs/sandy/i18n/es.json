@@ -1,7 +1,98 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
+  "t": "Sandy, falda de vuelo",
+  "d": "Sandy es un patrón de falda de vuelo circular adaptable.",
+  "p": {
+    "back": "Atrás",
+    "backBase": "Base trasera",
+    "backPocketWelt": "Ribete del bolsillo trasero",
+    "base": "Base",
+    "bentBack": "Trasero Bent",
+    "bentBase": "Base Bent",
+    "bentFront": "Frente Bent",
+    "bentSleeve": "Manga Bent",
+    "bentTopSleeve": "Manga superior Bent",
+    "bentUnderSleeve": "Manga debajo Bent",
+    "buttonholePlacket": "Tapeta de ojal",
+    "buttonPlacket": "Tapeta de botones",
+    "collar": "Cuello",
+    "collarStand": "Soporte de collar",
+    "cuff": "Cuffnl",
+    "fabricTail": "Cola de tela",
+    "fabricTip": "Punta de tela",
+    "frontBase": "Base delantera",
+    "frontFacing": "Delantero mirando hacia",
+    "front": "Frente",
+    "frontLeft": "Delantero izquierdo",
+    "frontLining": "Delantero revestimiento",
+    "frontRight": "Frente derecho",
+    "gusset": "Gusset",
+    "hoodCenter": "Centro de la capucha",
+    "hood": "Capucha",
+    "hoodSide": "Lado de la capucha",
+    "inset": "Recuadro",
+    "interfacingTail": "Cola de entretela",
+    "interfacingTip": "Punta de entretela",
+    "liningTail": "Cola de revestimiento",
+    "liningTip": "Punta de revestimiento",
+    "loop": "Lazo",
+    "panel1": "Panel 1",
+    "panel2": "Panel 2",
+    "panel3": "Panel 3",
+    "panel4": "Panel 4",
+    "panel5": "Panel 5",
+    "panel6": "Panel 6",
+    "panels": "Paneles",
+    "pocketBag": "Bolsa de bolsillo",
+    "pocketFacing": "Cara de bolsillo",
+    "pocketInterfacing": "Entretela de bolsillo",
+    "pocket": "Bolsillo",
+    "pocketWelt": "Ribete de bolsillo",
+    "side": "Lado",
+    "sleeveBase": "Base de la manga",
+    "sleevecap": "Funda de manga",
+    "sleevePlacketOverlap": "Top de manga tapeta",
+    "sleevePlacketUnderlap": "Parte inferior de la tapeta de la manga",
+    "sleeve": "Manga",
+    "topSleeve": "Manga superior",
+    "top": "Arriba",
+    "underCollar": "Debajo del cuello",
+    "underSleeve": "Manga debajo",
+    "waistband": "Pretina",
+    "yoke": "Yugo"
+  },
   "s": {},
-  "o": {}
+  "o": {
+    "waistbandWidth": {
+      "t": "Anchura de la cinturilla",
+      "d": "Controla la anchura de la cinturilla."
+    },
+    "waistbandPosition": {
+      "t": "Posición de la cinturilla",
+      "d": "Controla la posición de la cinturilla."
+    },
+    "waistbandShape": {
+      "t": "Forma de la cinturilla",
+      "d": "Si quieres una cinturilla recta o curvada."
+    },
+    "circleRatio": {
+      "t": "Porcentaje de círculo",
+      "d": "El porcentaje de círculo que quieres que tenga la falda."
+    },
+    "waistbandOverlap": {
+      "t": "Superposición de la cinturilla",
+      "d": "La cantidad en la que los extremos de la cinturilla se superponen."
+    },
+    "gathering": {
+      "t": "Fruncido",
+      "d": "El porcentaje por el que la parte superior de la falda es más largo que la parte inferior de la cinturilla."
+    },
+    "seamlessFullCircle": {
+      "t": "Círculo completo sin costura",
+      "d": "Permite una falda de círculo completo sin costuras."
+    },
+    "hemWidth": {
+      "t": "Hem width",
+      "d": "Anchura del dobladillo"
+    }
+  }
 }

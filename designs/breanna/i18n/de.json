@@ -1,7 +1,118 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
+  "t": "Breanna, ein Grundschnitt",
+  "d": "Breanna ist ein Grundschnitt für Personen mit Brüsten.",
+  "p": {
+    "back": "Rückseite",
+    "backBase": "Rückseite Basis",
+    "backPocketWelt": "Paspel der hinteren Tasche",
+    "base": "Basis",
+    "bentBack": "Rückseite Bent",
+    "bentBase": "Basis Bent",
+    "bentFront": "Vorderseite Bent",
+    "bentSleeve": "Ärmel Bent",
+    "bentTopSleeve": "Oberarmel Bent",
+    "bentUnderSleeve": "Unterarmel Bent",
+    "buttonholePlacket": "Knopflochleiste",
+    "buttonPlacket": "Knopfleiste",
+    "collar": "Kragen",
+    "collarStand": "Kragensteg",
+    "cuff": "Manschette",
+    "fabricTail": "Stoffschwanz",
+    "fabricTip": "Stoffspitze",
+    "frontBase": "Vorderseite Basis",
+    "frontFacing": "Besatz Vorderseite",
+    "front": "Vorderseite",
+    "frontLeft": "Vorderseite links",
+    "frontLining": "Futter Vorderseite",
+    "frontRight": "Vorderseite rechts",
+    "gusset": "Zwickel",
+    "hoodCenter": "Mitte der Kapuze",
+    "hood": "Kapuze",
+    "hoodSide": "Kapuzenseite",
+    "inset": "Einsatz",
+    "interfacingTail": "Einlageschwanz",
+    "interfacingTip": "Einlagespitze",
+    "liningTail": "Futterschwanz",
+    "liningTip": "Futterspitze",
+    "loop": "Schleife",
+    "panel1": "Teil 1",
+    "panel2": "Teil 2",
+    "panel3": "Teil 3",
+    "panel4": "Teil 4",
+    "panel5": "Teil 5",
+    "panel6": "Teil 6",
+    "panels": "Teile",
+    "pocketBag": "Taschenbeutel",
+    "pocketFacing": "Taschenbesatz",
+    "pocketInterfacing": "Tascheneinlage",
+    "pocket": "Tasche",
+    "pocketWelt": "Taschenpaspel",
+    "side": "Seite",
+    "sleeveBase": "Ärmel Basis",
+    "sleevecap": "Armkugel",
+    "sleevePlacketOverlap": "Übertritt der Ärmelleiste",
+    "sleevePlacketUnderlap": "Untertritt der Ärmelleiste",
+    "sleeve": "Ärmel",
+    "topSleeve": "Oberärmel",
+    "top": "Oberteil",
+    "underCollar": "Unterkragen",
+    "underSleeve": "Unterärmel",
+    "waistband": "Bund",
+    "yoke": "Passe"
+  },
   "s": {},
-  "o": {}
+  "o": {
+    "shoulderDart": {
+      "t": "Schulterabnäher",
+      "d": "Ob ein Abnäher an der Schulter zur Abrundung des Rückens hinzugefügt werden soll oder nicht"
+    },
+    "shoulderDartSize": {
+      "t": "Größe der Schulterabnäher",
+      "d": "Größe des Schulterabnähers"
+    },
+    "shoulderDartLength": {
+      "t": "Länge des Schulterabnähers",
+      "d": "Die Länge des Abnähers an der Schulter"
+    },
+    "waistDart": {
+      "t": "Taillenabnäher",
+      "d": "Ob ein Abnäher an der Taille zur Abrundung des Rückens hinzugefügt werden soll oder nicht"
+    },
+    "waistDartSize": {
+      "t": "Größe des Taillenabnähers",
+      "d": "Die Größe des Abnähers an der Taille"
+    },
+    "waistDartLength": {
+      "t": "Länge des Taillenabnähers",
+      "d": "Die Länge des Abnähers an der Taille"
+    },
+    "verticalEase": {
+      "t": "Vertikale Zugabe",
+      "d": "Die Menge an Zugabe, die über die Länge des Kleidungsstückes verteilt wird"
+    },
+    "waistEase": {
+      "t": "Taillenzugabe",
+      "d": "Die Menge an Bequemlichkeits-/Bewegungszugabe an der Taille"
+    },
+    "primaryBustDart": {
+      "t": "Brustabnäher",
+      "d": "Wo der Büstendart platziert wird, um die Brust zu formen"
+    },
+    "primaryBustDartLength": {
+      "t": "Länge des Brustabnähers",
+      "d": "Die Länge des Abnähers an der Brust"
+    },
+    "secondaryBustDart": {
+      "t": "Sekundärer Brustabnäher",
+      "d": "Optional einen sekundären Büstendart zur Verteilung der Form der Brust"
+    },
+    "secondaryBustDartLength": {
+      "t": "Länge des sekundären Brustabnähers",
+      "d": "Die Länge des sekundären Abnähers an der Brust"
+    },
+    "primaryBustDartShaping": {
+      "t": "Formgebung der Brustabnäher",
+      "d": "Steuert die Balance zwischen den sekundären und den Hauptbrustabnähern"
+    }
+  }
 }

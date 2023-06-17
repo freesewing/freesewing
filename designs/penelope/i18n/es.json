@@ -1,7 +1,122 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
+  "t": "Penelope, falda de tubo",
+  "d": "Penelope es una falda de tubo una gorra de lápiz con o sin apertura en la parte de atrás.",
+  "p": {
+    "back": "Atrás",
+    "backBase": "Base trasera",
+    "backPocketWelt": "Ribete del bolsillo trasero",
+    "base": "Base",
+    "bentBack": "Trasero Bent",
+    "bentBase": "Base Bent",
+    "bentFront": "Frente Bent",
+    "bentSleeve": "Manga Bent",
+    "bentTopSleeve": "Manga superior Bent",
+    "bentUnderSleeve": "Manga debajo Bent",
+    "buttonholePlacket": "Tapeta de ojal",
+    "buttonPlacket": "Tapeta de botones",
+    "collar": "Cuello",
+    "collarStand": "Soporte de collar",
+    "cuff": "Cuffnl",
+    "fabricTail": "Cola de tela",
+    "fabricTip": "Punta de tela",
+    "frontBase": "Base delantera",
+    "frontFacing": "Delantero mirando hacia",
+    "front": "Frente",
+    "frontLeft": "Delantero izquierdo",
+    "frontLining": "Delantero revestimiento",
+    "frontRight": "Frente derecho",
+    "gusset": "Gusset",
+    "hoodCenter": "Centro de la capucha",
+    "hood": "Capucha",
+    "hoodSide": "Lado de la capucha",
+    "inset": "Recuadro",
+    "interfacingTail": "Cola de entretela",
+    "interfacingTip": "Punta de entretela",
+    "liningTail": "Cola de revestimiento",
+    "liningTip": "Punta de revestimiento",
+    "loop": "Lazo",
+    "panel1": "Panel 1",
+    "panel2": "Panel 2",
+    "panel3": "Panel 3",
+    "panel4": "Panel 4",
+    "panel5": "Panel 5",
+    "panel6": "Panel 6",
+    "panels": "Paneles",
+    "pocketBag": "Bolsa de bolsillo",
+    "pocketFacing": "Cara de bolsillo",
+    "pocketInterfacing": "Entretela de bolsillo",
+    "pocket": "Bolsillo",
+    "pocketWelt": "Ribete de bolsillo",
+    "side": "Lado",
+    "sleeveBase": "Base de la manga",
+    "sleevecap": "Funda de manga",
+    "sleevePlacketOverlap": "Top de manga tapeta",
+    "sleevePlacketUnderlap": "Parte inferior de la tapeta de la manga",
+    "sleeve": "Manga",
+    "topSleeve": "Manga superior",
+    "top": "Arriba",
+    "underCollar": "Debajo del cuello",
+    "underSleeve": "Manga debajo",
+    "waistband": "Pretina",
+    "yoke": "Yugo"
+  },
   "s": {},
-  "o": {}
+  "o": {
+    "backDartDepthFactor": {
+      "t": "Factor de la pinza trasera",
+      "d": "Hasta dónde llega la pinza trasera desde la cintura. Es proporción de la medida cintura natural a asiento."
+    },
+    "backVent": {
+      "t": "Ventilación posterior",
+      "d": "Añade una avertura en la parte trasera de la falda."
+    },
+    "backVentLength": {
+      "t": "Longitud de ventilación posterior",
+      "d": "Longitud de la abertura trasera como porcentaje de la longitud de la falda."
+    },
+    "dartToSideSeamFactor": {
+      "t": "Factor pinza a costura lateral",
+      "d": "Porcentaje de cuánta de la reducción de cadera a cintura se toma de las pinzas con respecto a las costuras laterales."
+    },
+    "frontDartDepthFactor": {
+      "t": "Factor de la pinza delantera",
+      "d": "Hasta dónde llega la pinza delantera desde la cintura. Es proporción de la medida cintura natural a asiento."
+    },
+    "hem": {
+      "t": "Anchura del dobladillo",
+      "d": "El tamaño del dobladillo. Medida en valores absolutos."
+    },
+    "hemBonus": {
+      "t": "Bonus del dobladillo",
+      "d": "Esta opción reduce la circunferencia de la falda en el dobladillo. Porcentaje de la medida de asiento."
+    },
+    "lengthBonus": {
+      "t": "Extra de longitud",
+      "d": "Esto ajusta la longitud de la falda. Porcentaje de la medida de cintura natural a rodilla."
+    },
+    "nrOfDarts": {
+      "t": "Número de pinzas",
+      "d": "El número de pinzas usadas en el patrón. El máximo es 2. Esta opción puede ser reducida por el patrón si los cálculos crean pinzas demasiado pequeñas."
+    },
+    "seatEase": {
+      "t": "Facilidad de asiento",
+      "d": "La holgura al nivel del asiento."
+    },
+    "waistBand": {
+      "t": "Cinturilla",
+      "d": "Añade una cinturilla al patrón."
+    },
+    "waistBandWidth": {
+      "t": "Anchura de la cinturilla",
+      "d": "La anchura de la cinturilla."
+    },
+    "waistEase": {
+      "t": "Holgura de cintura",
+      "d": "La holgura al nivel de la cintura."
+    },
+    "zipperLocation": {
+      "t": "Ubicación de la cremallera",
+      "d": "La ubicación de la cremallera."
+    }
+  }
 }

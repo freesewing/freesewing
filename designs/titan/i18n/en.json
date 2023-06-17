@@ -1,7 +1,126 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
+  "t": "Titan trouser block",
+  "d": "Titan is a dartless trouser block.",
+  "p": {
+    "back": "Back",
+    "backBase": "Back base",
+    "backPocketWelt": "Back pocket welt",
+    "base": "Base",
+    "bentBack": "Bent back",
+    "bentBase": "Bent base",
+    "bentFront": "Bent front",
+    "bentSleeve": "Bent sleeve",
+    "bentTopSleeve": "Bent top sleeve",
+    "bentUnderSleeve": "Bent under sleeve",
+    "buttonholePlacket": "Buttonhole placket",
+    "buttonPlacket": "Button placket",
+    "collar": "Collar",
+    "collarStand": "Collar stand",
+    "cuff": "Cuff",
+    "fabricTail": "Fabric tail",
+    "fabricTip": "Fabric tip",
+    "frontBase": "Front base",
+    "frontFacing": "Front facing",
+    "front": "Front",
+    "frontLeft": "Front left",
+    "frontLining": "Front lining",
+    "frontRight": "Front right",
+    "gusset": "Gusset",
+    "hoodCenter": "Hood center",
+    "hood": "Hood",
+    "hoodSide": "Hood side",
+    "inset": "Inset",
+    "interfacingTail": "Interfacing tail",
+    "interfacingTip": "Interfacing tip",
+    "liningTail": "Lining tail",
+    "liningTip": "Lining tip",
+    "loop": "Loop",
+    "panel1": "Panel 1",
+    "panel2": "Panel 2",
+    "panel3": "Panel 3",
+    "panel4": "Panel 4",
+    "panel5": "Panel 5",
+    "panel6": "Panel 6",
+    "panels": "Panels",
+    "pocketBag": "Pocket bag",
+    "pocketFacing": "Pocket facing",
+    "pocketInterfacing": "Pocket interfacing",
+    "pocket": "Pocket",
+    "pocketWelt": "Pocket welt",
+    "side": "Side",
+    "sleeveBase": "Sleeve base",
+    "sleevecap": "Sleevecap",
+    "sleevePlacketOverlap": "Sleeve placket overlap",
+    "sleevePlacketUnderlap": "Sleeve placket underlap",
+    "sleeve": "Sleeve",
+    "topSleeve": "Topsleeve",
+    "top": "Top",
+    "underCollar": "Under collar",
+    "underSleeve": "Undersleeve",
+    "waistband": "Waistband",
+    "yoke": "Yoke"
+  },
   "s": {},
-  "o": {}
+  "o": {
+    "kneeEase": {
+      "t": "Knee ease",
+      "d": "Controls the amout of ease at the knee"
+    },
+    "waistHeight": {
+      "t": "Waist height",
+      "d": "Controls the height of the waist, 100% = waist height, 0% = hip height"
+    },
+    "lengthBonus": {
+      "t": "Length bonus",
+      "d": "Controls the length of the trousers"
+    },
+    "crotchDrop": {
+      "t": "Crotch drop",
+      "d": "Lowers the crotch for a more relaxed fit"
+    },
+    "fitKnee": {
+      "t": "Fit the knee",
+      "d": "Fits the legs from based on the knee circumference, rather than seat circumference"
+    },
+    "legBalance": {
+      "t": "Leg balance",
+      "d": "Controls the ratio between front and back panel of the leg"
+    },
+    "crossSeamCurveStart": {
+      "t": "Start of the cross seam curve",
+      "d": "Controls how far into the cross seam we start to curve"
+    },
+    "crossSeamCurveBend": {
+      "t": "Cross seam bend",
+      "d": "Controls the curvature of the cross seam"
+    },
+    "crossSeamCurveAngle": {
+      "t": "Cross seam angle",
+      "d": "Controls the angle of the cross seam"
+    },
+    "crotchSeamCurveStart": {
+      "t": "Start of the crotch seam curve",
+      "d": "Controls how far into the crotch seam we start to curve"
+    },
+    "crotchSeamCurveBend": {
+      "t": "Crotch seam bend",
+      "d": "Controls the curvature of the crotch seam"
+    },
+    "crotchSeamCurveAngle": {
+      "t": "Crotch seam angle",
+      "d": "Controls the angle of the crotch seam"
+    },
+    "waistBalance": {
+      "t": "Waist balance",
+      "d": "Controls the horizontal position of the waist relative to the seat"
+    },
+    "waistbandWidth": {
+      "t": "Waistband width",
+      "d": "The width of the waistband"
+    },
+    "grainlinePosition": {
+      "t": "Grainline position",
+      "d": "Controls the horizontal position of the leg relative to the seat"
+    }
+  }
 }

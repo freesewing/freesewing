@@ -1,7 +1,101 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
-  "s": {},
-  "o": {}
+  "t": "Cornelius, pantalones cortos de ciclista",
+  "d": "Cornelius son pantalones cortos de ciclista basados en el método de bocetado Keystone.",
+  "p": {
+    "back": "Atrás",
+    "backBase": "Base trasera",
+    "backPocketWelt": "Ribete del bolsillo trasero",
+    "base": "Base",
+    "bentBack": "Trasero Bent",
+    "bentBase": "Base Bent",
+    "bentFront": "Frente Bent",
+    "bentSleeve": "Manga Bent",
+    "bentTopSleeve": "Manga superior Bent",
+    "bentUnderSleeve": "Manga debajo Bent",
+    "buttonholePlacket": "Tapeta de ojal",
+    "buttonPlacket": "Tapeta de botones",
+    "collar": "Cuello",
+    "collarStand": "Soporte de collar",
+    "cuff": "Cuffnl",
+    "fabricTail": "Cola de tela",
+    "fabricTip": "Punta de tela",
+    "frontBase": "Base delantera",
+    "frontFacing": "Delantero mirando hacia",
+    "front": "Frente",
+    "frontLeft": "Delantero izquierdo",
+    "frontLining": "Delantero revestimiento",
+    "frontRight": "Frente derecho",
+    "gusset": "Gusset",
+    "hoodCenter": "Centro de la capucha",
+    "hood": "Capucha",
+    "hoodSide": "Lado de la capucha",
+    "inset": "Recuadro",
+    "interfacingTail": "Cola de entretela",
+    "interfacingTip": "Punta de entretela",
+    "liningTail": "Cola de revestimiento",
+    "liningTip": "Punta de revestimiento",
+    "loop": "Lazo",
+    "panel1": "Panel 1",
+    "panel2": "Panel 2",
+    "panel3": "Panel 3",
+    "panel4": "Panel 4",
+    "panel5": "Panel 5",
+    "panel6": "Panel 6",
+    "panels": "Paneles",
+    "pocketBag": "Bolsa de bolsillo",
+    "pocketFacing": "Cara de bolsillo",
+    "pocketInterfacing": "Entretela de bolsillo",
+    "pocket": "Bolsillo",
+    "pocketWelt": "Ribete de bolsillo",
+    "side": "Lado",
+    "sleeveBase": "Base de la manga",
+    "sleevecap": "Funda de manga",
+    "sleevePlacketOverlap": "Top de manga tapeta",
+    "sleevePlacketUnderlap": "Parte inferior de la tapeta de la manga",
+    "sleeve": "Manga",
+    "topSleeve": "Manga superior",
+    "top": "Arriba",
+    "underCollar": "Debajo del cuello",
+    "underSleeve": "Manga debajo",
+    "waistband": "Pretina",
+    "yoke": "Yugo"
+  },
+  "s": {
+    "Vent": "Ventilador",
+    "PocketFacing": "Cara de bolsillo"
+  },
+  "o": {
+    "fullness": {
+      "t": "Cumplimiento",
+      "d": "Controla la integridad de los breeches"
+    },
+    "waistbandBelowWaist": {
+      "t": "Banda inferior",
+      "d": "Porcentaje para mover la cintura debajo de la cintura actual"
+    },
+    "waistReduction": {
+      "t": "Reducción de cintura",
+      "d": "Porcentaje para reducir la cintura"
+    },
+    "cuffWidth": {
+      "t": "Cuff width",
+      "d": "Ancho del corte de la pierna"
+    },
+    "cuffStyle": {
+      "t": "Estilo del puño",
+      "d": "Estilo del corte de la pierna"
+    },
+    "bandBelowKnee": {
+      "t": "Corta debajo de la rodilla",
+      "d": "Controla la distancia del corte desde la rodilla"
+    },
+    "kneeToBelow": {
+      "t": "Longitud del puño",
+      "d": "Controla la rigidez del corte en comparación con la rodilla"
+    },
+    "ventLength": {
+      "t": "Longitud del ventilador",
+      "d": "Controla la longitud del ventilador entre la rodilla y el corte"
+    }
+  }
 }

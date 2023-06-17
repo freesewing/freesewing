@@ -1,7 +1,93 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
-  "s": {},
-  "o": {}
+  "t": "Bruce boxershort",
+  "d": "Bruce is een boxershort die zowel comfortabel als stylish is.",
+  "p": {
+    "back": "Achterzijde",
+    "backBase": "Basis rug",
+    "backPocketWelt": "Back pocket welt",
+    "base": "Basis",
+    "bentBack": "Achterzijde Bent",
+    "bentBase": "Basis Bent",
+    "bentFront": "Voorzijde Bent",
+    "bentSleeve": "Mouw Bent",
+    "bentTopSleeve": "Bovenmouw Bent",
+    "bentUnderSleeve": "Ondermouw Bent",
+    "buttonholePlacket": "Knoopsgatenpat",
+    "buttonPlacket": "Knopenpat",
+    "collar": "Kraag",
+    "collarStand": "Kraagstaander",
+    "cuff": "Manchet",
+    "fabricTail": "Stof staart",
+    "fabricTip": "Stof tip",
+    "frontBase": "Basis voorzijde",
+    "frontFacing": "Beleg vooraan",
+    "front": "Voorzijde",
+    "frontLeft": "Voorzijde links",
+    "frontLining": "Voering vooraan",
+    "frontRight": "Voorzijde rechts",
+    "gusset": "Gusset",
+    "hoodCenter": "Midden kap",
+    "hood": "Capuchon",
+    "hoodSide": "Zijkant kap",
+    "inset": "Inzet",
+    "interfacingTail": "Interfacing staart",
+    "interfacingTip": "Interfacing tip",
+    "liningTail": "Voering staart",
+    "liningTip": "Voering tip",
+    "loop": "Lus",
+    "panel1": "Deel 1",
+    "panel2": "Deel 2",
+    "panel3": "Deel 3",
+    "panel4": "Deel 4",
+    "panel5": "Deel 5",
+    "panel6": "Deel 6",
+    "panels": "Panelen",
+    "pocketBag": "Binnenzak",
+    "pocketFacing": "Zak beleg",
+    "pocketInterfacing": "Tussenvoering zak",
+    "pocket": "Zak",
+    "pocketWelt": "Paspel zak",
+    "side": "Zijkant",
+    "sleeveBase": "Basis mouw",
+    "sleevecap": "Mouwkop",
+    "sleevePlacketOverlap": "Mouwsplit boven",
+    "sleevePlacketUnderlap": "Mouwsplit onder",
+    "sleeve": "Mouw",
+    "topSleeve": "Bovenmouw",
+    "top": "Top",
+    "underCollar": "Onderkraag",
+    "underSleeve": "Ondermouw",
+    "waistband": "Tailleband",
+    "yoke": "Schouderpas"
+  },
+  "s": {
+    "inset": "Inzet",
+    "side": "Zijkant"
+  },
+  "o": {
+    "bulge": {
+      "t": "Kruisstuk",
+      "d": "Maak de hoek groter voor meer ruimte in het kruisstuk."
+    },
+    "legBonus": {
+      "t": "Bonus beenlengte",
+      "d": "Extra lengte om aan de benen toe te voegen."
+    },
+    "rise": {
+      "t": "Hoogte",
+      "d": "Hoeveelheid waarmee de taille verhoogd wordt. Een negatieve waarde zal de taille verlagen."
+    },
+    "stretch": {
+      "t": "Rek",
+      "d": "Hoeveel kleiner de omtrek is dan je lichaamsmaten. In andere woorden, hoe strak alles zit."
+    },
+    "legStretch": {
+      "t": "Stretch pijp",
+      "d": "For best results, you want to fit your legs a bit more snugly — say no to gaping."
+    },
+    "backRise": {
+      "t": "Hoogte achter",
+      "d": "Het percentage waarmee de taille verhoogd wordt aan de rug."
+    }
+  }
 }

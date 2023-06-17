@@ -9,36 +9,95 @@
   },
   "o": {
     "armholeDrop": {
-      "t": "Armhole drop",
-      "d": "Lower the armhole by this amount. Negative values will raise it."
+      "t": "Caída de la sisa",
+      "d": "Baja la sisa esta cantidad. Valores negativos la elevan."
     },
     "backlineBend": {
-      "t": "Back armhole shape",
-      "d": "Determines the shape/bend of the back of the armholes."
+      "t": "Forma posterior de la sisa",
+      "d": "Determina la forma/curva de la parte posterior de la sisa."
     },
     "hipsEase": {
-      "t": "Hips ease",
-      "d": "The amount of ease at your hips."
+      "t": "Holgura de cadera",
+      "d": "La cantidad de holgura en la cadera."
     },
     "necklineBend": {
-      "t": "Neckline shape",
-      "d": "Determines the shape/bend of the neckline at the front."
+      "t": "Forma del cuello",
+      "d": "Determina la forma/curva del cuello en el frente."
     },
     "necklineDrop": {
-      "t": "Neckline drop",
-      "d": "The amount the neck is cutout at the front."
+      "t": "Caída del escote",
+      "d": "La cantidad de cuello que se corta en el frente."
     },
     "shoulderStrapPlacement": {
-      "t": "Shoulderstrap placement",
-      "d": "Determines whether the shoulder strap is placed closer to the neck (lower numbers) or the shoulder (higher numbers)."
+      "t": "Posición de los tirantes",
+      "d": "Determina si los tirantes se colocan cerca del cuello (números más bajos) o del hombro (números más altos)."
     },
     "shoulderStrapWidth": {
-      "t": "Shoulderstrap width",
-      "d": "The width of the shoulder straps."
+      "t": "Anchura de los tirantes",
+      "d": "La anchura de los tirantes."
     },
     "stretchFactor": {
-      "t": "Stretch",
-      "d": "Determines the horizontal negative ease."
+      "t": "Extensión",
+      "d": "Determina la holgura negativa horizontal."
     }
+  },
+  "p": {
+    "back": "Atrás",
+    "backBase": "Base trasera",
+    "backPocketWelt": "Ribete del bolsillo trasero",
+    "base": "Base",
+    "bentBack": "Trasero Bent",
+    "bentBase": "Base Bent",
+    "bentFront": "Frente Bent",
+    "bentSleeve": "Manga Bent",
+    "bentTopSleeve": "Manga superior Bent",
+    "bentUnderSleeve": "Manga debajo Bent",
+    "buttonholePlacket": "Tapeta de ojal",
+    "buttonPlacket": "Tapeta de botones",
+    "collar": "Cuello",
+    "collarStand": "Soporte de collar",
+    "cuff": "Cuffnl",
+    "fabricTail": "Cola de tela",
+    "fabricTip": "Punta de tela",
+    "frontBase": "Base delantera",
+    "frontFacing": "Delantero mirando hacia",
+    "front": "Frente",
+    "frontLeft": "Delantero izquierdo",
+    "frontLining": "Delantero revestimiento",
+    "frontRight": "Frente derecho",
+    "gusset": "Gusset",
+    "hoodCenter": "Centro de la capucha",
+    "hood": "Capucha",
+    "hoodSide": "Lado de la capucha",
+    "inset": "Recuadro",
+    "interfacingTail": "Cola de entretela",
+    "interfacingTip": "Punta de entretela",
+    "liningTail": "Cola de revestimiento",
+    "liningTip": "Punta de revestimiento",
+    "loop": "Lazo",
+    "panel1": "Panel 1",
+    "panel2": "Panel 2",
+    "panel3": "Panel 3",
+    "panel4": "Panel 4",
+    "panel5": "Panel 5",
+    "panel6": "Panel 6",
+    "panels": "Paneles",
+    "pocketBag": "Bolsa de bolsillo",
+    "pocketFacing": "Cara de bolsillo",
+    "pocketInterfacing": "Entretela de bolsillo",
+    "pocket": "Bolsillo",
+    "pocketWelt": "Ribete de bolsillo",
+    "side": "Lado",
+    "sleeveBase": "Base de la manga",
+    "sleevecap": "Funda de manga",
+    "sleevePlacketOverlap": "Top de manga tapeta",
+    "sleevePlacketUnderlap": "Parte inferior de la tapeta de la manga",
+    "sleeve": "Manga",
+    "topSleeve": "Manga superior",
+    "top": "Arriba",
+    "underCollar": "Debajo del cuello",
+    "underSleeve": "Manga debajo",
+    "waistband": "Pretina",
+    "yoke": "Yugo"
   }
 }

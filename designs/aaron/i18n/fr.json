@@ -9,36 +9,95 @@
   },
   "o": {
     "armholeDrop": {
-      "t": "Armhole drop",
-      "d": "Lower the armhole by this amount. Negative values will raise it."
+      "t": "Abaissement d'emmanchure",
+      "d": "Il s'agit d'abaisser l'emmanchure avec cette valeur. Les valeurs négatives la remonteront."
     },
     "backlineBend": {
-      "t": "Back armhole shape",
-      "d": "Determines the shape/bend of the back of the armholes."
+      "t": "Forme de l'arrière des emmanchures",
+      "d": "Détermine la forme/courbure de l'arrière des emmanchures."
     },
     "hipsEase": {
-      "t": "Hips ease",
-      "d": "The amount of ease at your hips."
+      "t": "Aisance des hanches",
+      "d": "La marge d'aisance aux hanches."
     },
     "necklineBend": {
-      "t": "Neckline shape",
-      "d": "Determines the shape/bend of the neckline at the front."
+      "t": "Forme de l'encolure",
+      "d": "Détermine la forme/courbure du devant de l'encolure."
     },
     "necklineDrop": {
-      "t": "Neckline drop",
-      "d": "The amount the neck is cutout at the front."
+      "t": "Profondeur d'encolure",
+      "d": "Détermine de combien abaisser l’encolure l'avant."
     },
     "shoulderStrapPlacement": {
-      "t": "Shoulderstrap placement",
-      "d": "Determines whether the shoulder strap is placed closer to the neck (lower numbers) or the shoulder (higher numbers)."
+      "t": "Position de la bretelle",
+      "d": "Détermine si la bretelle est placée plus près du cou (chiffres les plus bas) ou de l’épaule (chiffres les plus élevés)."
     },
     "shoulderStrapWidth": {
-      "t": "Shoulderstrap width",
-      "d": "The width of the shoulder straps."
+      "t": "Largeur de la bretelle",
+      "d": "Détermine la largeur des bretelles."
     },
     "stretchFactor": {
-      "t": "Stretch",
-      "d": "Determines the horizontal negative ease."
+      "t": "Élasticité",
+      "d": "Détermine a quantité d'aisance négative en largeur."
     }
+  },
+  "p": {
+    "back": "Retour",
+    "backBase": "Base dos",
+    "backPocketWelt": "Poche arrière passepoilée",
+    "base": "Base",
+    "bentBack": "Dos de Bent",
+    "bentBase": "Base de Bent",
+    "bentFront": "Avant de Bent",
+    "bentSleeve": "Manche de Bent",
+    "bentTopSleeve": "Partie supérieure de la manche de Bent",
+    "bentUnderSleeve": "Partie inférieure de la manche de Bent",
+    "buttonholePlacket": "Patte de boutonnière",
+    "buttonPlacket": "Patte de boutonnage",
+    "collar": "Collier",
+    "collarStand": "Support de collier",
+    "cuff": "Manchette",
+    "fabricTail": "Queue en tissu",
+    "fabricTip": "Pointe en tissu",
+    "frontBase": "Base avant",
+    "frontFacing": "Doublure avant",
+    "front": "Avant",
+    "frontLeft": "Avant gauche",
+    "frontLining": "Doublure avant",
+    "frontRight": "Avant droit",
+    "gusset": "Soufflet",
+    "hoodCenter": "Capuchon centre",
+    "hood": "Capuche",
+    "hoodSide": "Capuchon côté",
+    "inset": "Encart",
+    "interfacingTail": "Entoilage de queue",
+    "interfacingTip": "Entoilage de pointe",
+    "liningTail": "Doublure de queue",
+    "liningTip": "Doublure de pointe",
+    "loop": "Boucle",
+    "panel1": "Pièce 1",
+    "panel2": "Pièce 2",
+    "panel3": "Pièce 3",
+    "panel4": "Pièce 4",
+    "panel5": "Pièce 5",
+    "panel6": "Pièce 6",
+    "panels": "Pièces",
+    "pocketBag": "Sac de poche",
+    "pocketFacing": "Parement de poche",
+    "pocketInterfacing": "Entoilage de poche",
+    "pocket": "Poche",
+    "pocketWelt": "Rabat de poche",
+    "side": "Côté",
+    "sleeveBase": "Base de manche",
+    "sleevecap": "Capuchon de manche",
+    "sleevePlacketOverlap": "Patte de manche haut",
+    "sleevePlacketUnderlap": "Patte de manche bas",
+    "sleeve": "Manche",
+    "topSleeve": "Haut de manche",
+    "top": "Haut",
+    "underCollar": "Sous-col",
+    "underSleeve": "Sous-manche",
+    "waistband": "Ceinture",
+    "yoke": "Empiècement"
   }
 }

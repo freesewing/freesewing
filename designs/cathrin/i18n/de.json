@@ -1,7 +1,98 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
+  "t": "Cathrin, das Korsett",
+  "d": "Cathrin ist ein Unterbrustkorsett oder Taillentrainer.",
+  "p": {
+    "back": "Rückseite",
+    "backBase": "Rückseite Basis",
+    "backPocketWelt": "Paspel der hinteren Tasche",
+    "base": "Basis",
+    "bentBack": "Rückseite Bent",
+    "bentBase": "Basis Bent",
+    "bentFront": "Vorderseite Bent",
+    "bentSleeve": "Ärmel Bent",
+    "bentTopSleeve": "Oberarmel Bent",
+    "bentUnderSleeve": "Unterarmel Bent",
+    "buttonholePlacket": "Knopflochleiste",
+    "buttonPlacket": "Knopfleiste",
+    "collar": "Kragen",
+    "collarStand": "Kragensteg",
+    "cuff": "Manschette",
+    "fabricTail": "Stoffschwanz",
+    "fabricTip": "Stoffspitze",
+    "frontBase": "Vorderseite Basis",
+    "frontFacing": "Besatz Vorderseite",
+    "front": "Vorderseite",
+    "frontLeft": "Vorderseite links",
+    "frontLining": "Futter Vorderseite",
+    "frontRight": "Vorderseite rechts",
+    "gusset": "Zwickel",
+    "hoodCenter": "Mitte der Kapuze",
+    "hood": "Kapuze",
+    "hoodSide": "Kapuzenseite",
+    "inset": "Einsatz",
+    "interfacingTail": "Einlageschwanz",
+    "interfacingTip": "Einlagespitze",
+    "liningTail": "Futterschwanz",
+    "liningTip": "Futterspitze",
+    "loop": "Schleife",
+    "panel1": "Teil 1",
+    "panel2": "Teil 2",
+    "panel3": "Teil 3",
+    "panel4": "Teil 4",
+    "panel5": "Teil 5",
+    "panel6": "Teil 6",
+    "panels": "Teile",
+    "pocketBag": "Taschenbeutel",
+    "pocketFacing": "Taschenbesatz",
+    "pocketInterfacing": "Tascheneinlage",
+    "pocket": "Tasche",
+    "pocketWelt": "Taschenpaspel",
+    "side": "Seite",
+    "sleeveBase": "Ärmel Basis",
+    "sleevecap": "Armkugel",
+    "sleevePlacketOverlap": "Übertritt der Ärmelleiste",
+    "sleevePlacketUnderlap": "Untertritt der Ärmelleiste",
+    "sleeve": "Ärmel",
+    "topSleeve": "Oberärmel",
+    "top": "Oberteil",
+    "underCollar": "Unterkragen",
+    "underSleeve": "Unterärmel",
+    "waistband": "Bund",
+    "yoke": "Passe"
+  },
   "s": {},
-  "o": {}
+  "o": {
+    "panels": {
+      "t": "Anzahl der Schnittteile",
+      "d": "Die Anzahl der zu erstellenden Schnittteile. Mehr Schnittteile passen kurvenreicheren Modellen besser."
+    },
+    "waistReduction": {
+      "t": "Taillenreduzierung",
+      "d": "Der Betrag, um den das Korsett deine Taille einschnüren soll."
+    },
+    "backOpening": {
+      "t": "Hintere Öffnung",
+      "d": "Öffnung in der hinteren Mitte"
+    },
+    "backRise": {
+      "t": "Anstieg hinten",
+      "d": "Wie stark sich die hinteren Schnittteile von den Armen bis zur hinteren Mitte erstrecken."
+    },
+    "backDrop": {
+      "t": "Rückenabsenkung",
+      "d": "Wie weit sich die hinteren Schnittteile von den Hüften in Richtung Rückenmitte absenken. Negative Werte heben den Rücken an."
+    },
+    "frontRise": {
+      "t": "Frontanstieg",
+      "d": "Aufstieg der Frontteile in der Mitte zwischen den Brüsten. Negative Werte verringern sie."
+    },
+    "frontDrop": {
+      "t": "Frontabsenkung",
+      "d": "Wie weit sich die Frontteile von Ihrer Hüfte in Richtung Ihrer Mittelfront absenken."
+    },
+    "hipRise": {
+      "t": "Hüftanstieg",
+      "d": "Wie stark die Seitenteile auf den Hüften stehen."
+    }
+  }
 }

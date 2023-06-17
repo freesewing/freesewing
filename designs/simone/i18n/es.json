@@ -1,7 +1,90 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
+  "t": "Simone, camisa",
+  "d": "Simone es Simón, una patrón de camisa, adaptado para gente con pechos.",
+  "p": {
+    "back": "Atrás",
+    "backBase": "Base trasera",
+    "backPocketWelt": "Ribete del bolsillo trasero",
+    "base": "Base",
+    "bentBack": "Trasero Bent",
+    "bentBase": "Base Bent",
+    "bentFront": "Frente Bent",
+    "bentSleeve": "Manga Bent",
+    "bentTopSleeve": "Manga superior Bent",
+    "bentUnderSleeve": "Manga debajo Bent",
+    "buttonholePlacket": "Tapeta de ojal",
+    "buttonPlacket": "Tapeta de botones",
+    "collar": "Cuello",
+    "collarStand": "Soporte de collar",
+    "cuff": "Cuffnl",
+    "fabricTail": "Cola de tela",
+    "fabricTip": "Punta de tela",
+    "frontBase": "Base delantera",
+    "frontFacing": "Delantero mirando hacia",
+    "front": "Frente",
+    "frontLeft": "Delantero izquierdo",
+    "frontLining": "Delantero revestimiento",
+    "frontRight": "Frente derecho",
+    "gusset": "Gusset",
+    "hoodCenter": "Centro de la capucha",
+    "hood": "Capucha",
+    "hoodSide": "Lado de la capucha",
+    "inset": "Recuadro",
+    "interfacingTail": "Cola de entretela",
+    "interfacingTip": "Punta de entretela",
+    "liningTail": "Cola de revestimiento",
+    "liningTip": "Punta de revestimiento",
+    "loop": "Lazo",
+    "panel1": "Panel 1",
+    "panel2": "Panel 2",
+    "panel3": "Panel 3",
+    "panel4": "Panel 4",
+    "panel5": "Panel 5",
+    "panel6": "Panel 6",
+    "panels": "Paneles",
+    "pocketBag": "Bolsa de bolsillo",
+    "pocketFacing": "Cara de bolsillo",
+    "pocketInterfacing": "Entretela de bolsillo",
+    "pocket": "Bolsillo",
+    "pocketWelt": "Ribete de bolsillo",
+    "side": "Lado",
+    "sleeveBase": "Base de la manga",
+    "sleevecap": "Funda de manga",
+    "sleevePlacketOverlap": "Top de manga tapeta",
+    "sleevePlacketUnderlap": "Parte inferior de la tapeta de la manga",
+    "sleeve": "Manga",
+    "topSleeve": "Manga superior",
+    "top": "Arriba",
+    "underCollar": "Debajo del cuello",
+    "underSleeve": "Manga debajo",
+    "waistband": "Pretina",
+    "yoke": "Yugo"
+  },
   "s": {},
-  "o": {}
+  "o": {
+    "bustAlignedButtons": {
+      "t": "Bust-aligned buttons",
+      "d": "Optional button spacing strategies to ensure a button at the bustline"
+    },
+    "bustDartAngle": {
+      "t": "Ángulo de dardos de polvo",
+      "d": "Controla el ángulo por el cual el (lado) dardos de polvo tiene pendiente descendente"
+    },
+    "bustDartLength": {
+      "t": "Longitud del dart del polvo",
+      "d": "Controla cómo se acerca el polvo al punto de busto"
+    },
+    "contour": {
+      "t": "Contorno",
+      "d": "Controla cómo se elimina de nuevo el espacio extra para los senos debajo del cofre"
+    },
+    "frontDarts": {
+      "t": "Dardos delanteros",
+      "d": "Incluya o no las artes frontales"
+    },
+    "frontDartLength": {
+      "t": "Longitud del dart frontal",
+      "d": "Controla cómo se acerca el dardo frontal al punto de polvo"
+    }
+  }
 }

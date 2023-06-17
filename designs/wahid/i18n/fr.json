@@ -1,7 +1,122 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
+  "t": "Gilet Wahid",
+  "d": "Wahid est un gilet classique ajusté.",
+  "p": {
+    "back": "Retour",
+    "backBase": "Base dos",
+    "backPocketWelt": "Poche arrière passepoilée",
+    "base": "Base",
+    "bentBack": "Dos de Bent",
+    "bentBase": "Base de Bent",
+    "bentFront": "Avant de Bent",
+    "bentSleeve": "Manche de Bent",
+    "bentTopSleeve": "Partie supérieure de la manche de Bent",
+    "bentUnderSleeve": "Partie inférieure de la manche de Bent",
+    "buttonholePlacket": "Patte de boutonnière",
+    "buttonPlacket": "Patte de boutonnage",
+    "collar": "Collier",
+    "collarStand": "Support de collier",
+    "cuff": "Manchette",
+    "fabricTail": "Queue en tissu",
+    "fabricTip": "Pointe en tissu",
+    "frontBase": "Base avant",
+    "frontFacing": "Doublure avant",
+    "front": "Avant",
+    "frontLeft": "Avant gauche",
+    "frontLining": "Doublure avant",
+    "frontRight": "Avant droit",
+    "gusset": "Soufflet",
+    "hoodCenter": "Capuchon centre",
+    "hood": "Capuche",
+    "hoodSide": "Capuchon côté",
+    "inset": "Encart",
+    "interfacingTail": "Entoilage de queue",
+    "interfacingTip": "Entoilage de pointe",
+    "liningTail": "Doublure de queue",
+    "liningTip": "Doublure de pointe",
+    "loop": "Boucle",
+    "panel1": "Pièce 1",
+    "panel2": "Pièce 2",
+    "panel3": "Pièce 3",
+    "panel4": "Pièce 4",
+    "panel5": "Pièce 5",
+    "panel6": "Pièce 6",
+    "panels": "Pièces",
+    "pocketBag": "Sac de poche",
+    "pocketFacing": "Parement de poche",
+    "pocketInterfacing": "Entoilage de poche",
+    "pocket": "Poche",
+    "pocketWelt": "Rabat de poche",
+    "side": "Côté",
+    "sleeveBase": "Base de manche",
+    "sleevecap": "Capuchon de manche",
+    "sleevePlacketOverlap": "Patte de manche haut",
+    "sleevePlacketUnderlap": "Patte de manche bas",
+    "sleeve": "Manche",
+    "topSleeve": "Haut de manche",
+    "top": "Haut",
+    "underCollar": "Sous-col",
+    "underSleeve": "Sous-manche",
+    "waistband": "Ceinture",
+    "yoke": "Empiècement"
+  },
   "s": {},
-  "o": {}
+  "o": {
+    "backScyeDart": {
+      "t": "Pince de carrure",
+      "d": "La valeur à retirer dans une pince de carrure (à l'emmanchure arrière)."
+    },
+    "frontScyeDart": {
+      "t": "Pince d'emmanchure",
+      "d": "La quantité à retirer de la pince à l'avant de l'emmanchure."
+    },
+    "pocketLocation": {
+      "t": "Emplacement de poche",
+      "d": "Détermine l'emplacement de la poche"
+    },
+    "pocketWidth": {
+      "t": "Largeur de poche",
+      "d": "Détermine la largeur de la poche"
+    },
+    "weltHeight": {
+      "t": "Hauteur du revers de poche",
+      "d": "Détermine la hauteur du revers de poche"
+    },
+    "necklineDrop": {
+      "t": "Décolleté",
+      "d": "Détermine la profondeur d'encolure sur le devant"
+    },
+    "frontStyle": {
+      "t": "Style d'encolure",
+      "d": "Style de l'encolure"
+    },
+    "hemStyle": {
+      "t": "Type d'ourlet",
+      "d": "Style de l'ourlet avant"
+    },
+    "hemRadius": {
+      "t": "Arrondi d'ourlet",
+      "d": "Rayon avec lequel l'ourlet est arrondi"
+    },
+    "backInset": {
+      "t": "Échancrure emmanchure arrière",
+      "d": "A quel point l'arrière de l'emmanchure est coupée vers l'intérieur"
+    },
+    "frontInset": {
+      "t": "Échancrure emmanchure avant",
+      "d": "A quel point l'avant de l'emmanchure est coupée vers l'intérieur"
+    },
+    "shoulderInset": {
+      "t": "Réduction d'épaule",
+      "d": "A quel point la couture d'épaule est éloignée des épaules"
+    },
+    "neckInset": {
+      "t": "Échancrure cou",
+      "d": "A quel point la couture d'épaule est éloignée du cou"
+    },
+    "pocketAngle": {
+      "t": "Angle de poche",
+      "d": "Angle de l'ouverture de poche"
+    }
+  }
 }

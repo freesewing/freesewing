@@ -1,7 +1,102 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
+  "t": "Nœud papillon Benjamin",
+  "d": "Benjamin est un nœud papillon avec 4 possibilités de styles différents.",
+  "p": {
+    "back": "Retour",
+    "backBase": "Base dos",
+    "backPocketWelt": "Poche arrière passepoilée",
+    "base": "Base",
+    "bentBack": "Dos de Bent",
+    "bentBase": "Base de Bent",
+    "bentFront": "Avant de Bent",
+    "bentSleeve": "Manche de Bent",
+    "bentTopSleeve": "Partie supérieure de la manche de Bent",
+    "bentUnderSleeve": "Partie inférieure de la manche de Bent",
+    "buttonholePlacket": "Patte de boutonnière",
+    "buttonPlacket": "Patte de boutonnage",
+    "collar": "Collier",
+    "collarStand": "Support de collier",
+    "cuff": "Manchette",
+    "fabricTail": "Queue en tissu",
+    "fabricTip": "Pointe en tissu",
+    "frontBase": "Base avant",
+    "frontFacing": "Doublure avant",
+    "front": "Avant",
+    "frontLeft": "Avant gauche",
+    "frontLining": "Doublure avant",
+    "frontRight": "Avant droit",
+    "gusset": "Soufflet",
+    "hoodCenter": "Capuchon centre",
+    "hood": "Capuche",
+    "hoodSide": "Capuchon côté",
+    "inset": "Encart",
+    "interfacingTail": "Entoilage de queue",
+    "interfacingTip": "Entoilage de pointe",
+    "liningTail": "Doublure de queue",
+    "liningTip": "Doublure de pointe",
+    "loop": "Boucle",
+    "panel1": "Pièce 1",
+    "panel2": "Pièce 2",
+    "panel3": "Pièce 3",
+    "panel4": "Pièce 4",
+    "panel5": "Pièce 5",
+    "panel6": "Pièce 6",
+    "panels": "Pièces",
+    "pocketBag": "Sac de poche",
+    "pocketFacing": "Parement de poche",
+    "pocketInterfacing": "Entoilage de poche",
+    "pocket": "Poche",
+    "pocketWelt": "Rabat de poche",
+    "side": "Côté",
+    "sleeveBase": "Base de manche",
+    "sleevecap": "Capuchon de manche",
+    "sleevePlacketOverlap": "Patte de manche haut",
+    "sleevePlacketUnderlap": "Patte de manche bas",
+    "sleeve": "Manche",
+    "topSleeve": "Haut de manche",
+    "top": "Haut",
+    "underCollar": "Sous-col",
+    "underSleeve": "Sous-manche",
+    "waistband": "Ceinture",
+    "yoke": "Empiècement"
+  },
   "s": {},
-  "o": {}
+  "o": {
+    "adjustmentRibbon": {
+      "t": "Ruban d'ajustement",
+      "d": "Si vous souhaitez inclure ou non un ruban d'ajustement"
+    },
+    "bandLength": {
+      "t": "Longueur de bande",
+      "d": "Longueur de la bande"
+    },
+    "tipWidth": {
+      "t": "Largeur de pointe",
+      "d": "Largeur des pointes"
+    },
+    "knotWidth": {
+      "t": "Largeur du noeud",
+      "d": "Largeur du nœud"
+    },
+    "bowLength": {
+      "t": "Longueur de nœud",
+      "d": "Longueur du nœud (lorsqu'il est noué)"
+    },
+    "bowStyle": {
+      "t": "Style de nœud",
+      "d": "Style du nœud"
+    },
+    "endStyle": {
+      "t": "Style de l'extrémité",
+      "d": "Style des extrémités du noeud"
+    },
+    "collarEase": {
+      "t": "Aisance du col",
+      "d": "La quantité d'aisance à votre cou"
+    },
+    "ribbonWidth": {
+      "t": "Largeur du ruban d'ajustement",
+      "d": "Largeur du ruban"
+    }
+  }
 }

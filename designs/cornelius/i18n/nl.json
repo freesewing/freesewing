@@ -1,7 +1,101 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
-  "s": {},
-  "o": {}
+  "t": "Cornelius fietsen boren",
+  "d": "Cornelius zijn broeders aan het fietsen op basis van de methode van Sleutelsteen.",
+  "p": {
+    "back": "Achterzijde",
+    "backBase": "Basis rug",
+    "backPocketWelt": "Back pocket welt",
+    "base": "Basis",
+    "bentBack": "Achterzijde Bent",
+    "bentBase": "Basis Bent",
+    "bentFront": "Voorzijde Bent",
+    "bentSleeve": "Mouw Bent",
+    "bentTopSleeve": "Bovenmouw Bent",
+    "bentUnderSleeve": "Ondermouw Bent",
+    "buttonholePlacket": "Knoopsgatenpat",
+    "buttonPlacket": "Knopenpat",
+    "collar": "Kraag",
+    "collarStand": "Kraagstaander",
+    "cuff": "Manchet",
+    "fabricTail": "Stof staart",
+    "fabricTip": "Stof tip",
+    "frontBase": "Basis voorzijde",
+    "frontFacing": "Beleg vooraan",
+    "front": "Voorzijde",
+    "frontLeft": "Voorzijde links",
+    "frontLining": "Voering vooraan",
+    "frontRight": "Voorzijde rechts",
+    "gusset": "Gusset",
+    "hoodCenter": "Midden kap",
+    "hood": "Capuchon",
+    "hoodSide": "Zijkant kap",
+    "inset": "Inzet",
+    "interfacingTail": "Interfacing staart",
+    "interfacingTip": "Interfacing tip",
+    "liningTail": "Voering staart",
+    "liningTip": "Voering tip",
+    "loop": "Lus",
+    "panel1": "Deel 1",
+    "panel2": "Deel 2",
+    "panel3": "Deel 3",
+    "panel4": "Deel 4",
+    "panel5": "Deel 5",
+    "panel6": "Deel 6",
+    "panels": "Panelen",
+    "pocketBag": "Binnenzak",
+    "pocketFacing": "Zak beleg",
+    "pocketInterfacing": "Tussenvoering zak",
+    "pocket": "Zak",
+    "pocketWelt": "Paspel zak",
+    "side": "Zijkant",
+    "sleeveBase": "Basis mouw",
+    "sleevecap": "Mouwkop",
+    "sleevePlacketOverlap": "Mouwsplit boven",
+    "sleevePlacketUnderlap": "Mouwsplit onder",
+    "sleeve": "Mouw",
+    "topSleeve": "Bovenmouw",
+    "top": "Top",
+    "underCollar": "Onderkraag",
+    "underSleeve": "Ondermouw",
+    "waistband": "Tailleband",
+    "yoke": "Schouderpas"
+  },
+  "s": {
+    "Vent": "Vuur",
+    "PocketFacing": "Zak beleg"
+  },
+  "o": {
+    "fullness": {
+      "t": "Volle",
+      "d": "Bepaalt de volledigheid van de broeders"
+    },
+    "waistbandBelowWaist": {
+      "t": "Onderste tailleband",
+      "d": "Percentage om de tailleband onder de tailleband te bewegen"
+    },
+    "waistReduction": {
+      "t": "Reductie taille",
+      "d": "Percentage om de tailleband te verminderen"
+    },
+    "cuffWidth": {
+      "t": "Cuff width",
+      "d": "Breedte van de manchet"
+    },
+    "cuffStyle": {
+      "t": "Stijl manchet",
+      "d": "Stijl van de manchet"
+    },
+    "bandBelowKnee": {
+      "t": "Manchet onder knie",
+      "d": "Bepaalt de afstand tussen de manchet en de knie"
+    },
+    "kneeToBelow": {
+      "t": "Lengte manchet",
+      "d": "Bepaalt de dikte van de manchet in vergelijking met de knie"
+    },
+    "ventLength": {
+      "t": "Vent lengte",
+      "d": "Bepaalt de lengte van de vent tussen de knie en de manchet"
+    }
+  }
 }

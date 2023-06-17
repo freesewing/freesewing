@@ -1,7 +1,134 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
+  "t": "Charlie, die Chinos",
+  "d": "Charlie ist ein Schnittmuster für Chinos.",
+  "p": {
+    "back": "Rückseite",
+    "backBase": "Rückseite Basis",
+    "backPocketWelt": "Paspel der hinteren Tasche",
+    "base": "Basis",
+    "bentBack": "Rückseite Bent",
+    "bentBase": "Basis Bent",
+    "bentFront": "Vorderseite Bent",
+    "bentSleeve": "Ärmel Bent",
+    "bentTopSleeve": "Oberarmel Bent",
+    "bentUnderSleeve": "Unterarmel Bent",
+    "buttonholePlacket": "Knopflochleiste",
+    "buttonPlacket": "Knopfleiste",
+    "collar": "Kragen",
+    "collarStand": "Kragensteg",
+    "cuff": "Manschette",
+    "fabricTail": "Stoffschwanz",
+    "fabricTip": "Stoffspitze",
+    "frontBase": "Vorderseite Basis",
+    "frontFacing": "Besatz Vorderseite",
+    "front": "Vorderseite",
+    "frontLeft": "Vorderseite links",
+    "frontLining": "Futter Vorderseite",
+    "frontRight": "Vorderseite rechts",
+    "gusset": "Zwickel",
+    "hoodCenter": "Mitte der Kapuze",
+    "hood": "Kapuze",
+    "hoodSide": "Kapuzenseite",
+    "inset": "Einsatz",
+    "interfacingTail": "Einlageschwanz",
+    "interfacingTip": "Einlagespitze",
+    "liningTail": "Futterschwanz",
+    "liningTip": "Futterspitze",
+    "loop": "Schleife",
+    "panel1": "Teil 1",
+    "panel2": "Teil 2",
+    "panel3": "Teil 3",
+    "panel4": "Teil 4",
+    "panel5": "Teil 5",
+    "panel6": "Teil 6",
+    "panels": "Teile",
+    "pocketBag": "Taschenbeutel",
+    "pocketFacing": "Taschenbesatz",
+    "pocketInterfacing": "Tascheneinlage",
+    "pocket": "Tasche",
+    "pocketWelt": "Taschenpaspel",
+    "side": "Seite",
+    "sleeveBase": "Ärmel Basis",
+    "sleevecap": "Armkugel",
+    "sleevePlacketOverlap": "Übertritt der Ärmelleiste",
+    "sleevePlacketUnderlap": "Untertritt der Ärmelleiste",
+    "sleeve": "Ärmel",
+    "topSleeve": "Oberärmel",
+    "top": "Oberteil",
+    "underCollar": "Unterkragen",
+    "underSleeve": "Unterärmel",
+    "waistband": "Bund",
+    "yoke": "Passe"
+  },
   "s": {},
-  "o": {}
+  "o": {
+    "backPocketHorizontalPlacement": {
+      "t": "Horizontale Platzierung der hinteren Tasche",
+      "d": "Steuert die horizontale Platzierung der hinteren Tasche"
+    },
+    "backPocketVerticalPlacement": {
+      "t": "Vertikale Platzierung der hinteren Tasche",
+      "d": "Steuert die vertikale Platzierung der hinteren Tasche"
+    },
+    "backPocketWidth": {
+      "t": "Breite der hinteren Tasche",
+      "d": "Steuert die Breite der hinteren Tasche"
+    },
+    "backPocketDepth": {
+      "t": "Tiefe der hinteren Tasche",
+      "d": "Steuert die Tiefe der hinteren Tasche"
+    },
+    "backPocketFacing": {
+      "t": "Besatz der hinteren Tasche",
+      "d": "Legt fest, ob die hinteren Taschen Besatz haben sollen oder nicht"
+    },
+    "frontPocketSlantDepth": {
+      "t": "Vordertasche Schrägtiefe",
+      "d": "Steuert die Tiefe des (vorder) Taschenschlitzes"
+    },
+    "frontPocketSlantWidth": {
+      "t": "Fronttasche Schrägbreite",
+      "d": "Steuert die Breite des (vorder) Taschenschlitzes"
+    },
+    "frontPocketSlantRound": {
+      "t": "Vordertaschenschlitzrunde",
+      "d": "Stellt fest, wie weit wir vom Ende der Schrägheit entfernt anfangen in das Aussennaht zu runden"
+    },
+    "frontPocketSlantBend": {
+      "t": "Vordertaschenschräg Biegen",
+      "d": "Steuert den Radius, mit dem wir die Taschenschiebung in die Außennaht umdrehen"
+    },
+    "frontPocketWidth": {
+      "t": "Breite der Fronttasche",
+      "d": "Steuert die Breite der Vordertasche"
+    },
+    "frontPocketDepth": {
+      "t": "Tiefe der Vordertasche",
+      "d": "Steuert die Tiefe der Vordertasche"
+    },
+    "frontPocketFacing": {
+      "t": "Fronttasche",
+      "d": "Legt fest, wie weit die Tasche in die Tasche hineinreicht"
+    },
+    "beltLoops": {
+      "t": "Gürtelschlaufen",
+      "d": "Steuert die Anzahl der Gürtelschlaufen"
+    },
+    "flyCurve": {
+      "t": "Flugkurve",
+      "d": "Steuert die Krümmung der Fliege J-Naht"
+    },
+    "flyLength": {
+      "t": "Fluglänge",
+      "d": "Steuert die Länge der Fliege"
+    },
+    "flyWidth": {
+      "t": "Fly width",
+      "d": "Bestimmt, wie weit die J-Naht-Versatz vom Fliegenrand entfernt ist"
+    },
+    "waistbandCurve": {
+      "t": "Taillenband Kurve",
+      "d": "Steuert die Kurven der Taille."
+    }
+  }
 }

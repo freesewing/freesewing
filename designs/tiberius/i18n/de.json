@@ -1,7 +1,106 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
+  "t": "Tiberius, die Tunica",
+  "d": "Tiberius ist eine historische römische Tunika",
+  "p": {
+    "back": "Rückseite",
+    "backBase": "Rückseite Basis",
+    "backPocketWelt": "Paspel der hinteren Tasche",
+    "base": "Basis",
+    "bentBack": "Rückseite Bent",
+    "bentBase": "Basis Bent",
+    "bentFront": "Vorderseite Bent",
+    "bentSleeve": "Ärmel Bent",
+    "bentTopSleeve": "Oberarmel Bent",
+    "bentUnderSleeve": "Unterarmel Bent",
+    "buttonholePlacket": "Knopflochleiste",
+    "buttonPlacket": "Knopfleiste",
+    "collar": "Kragen",
+    "collarStand": "Kragensteg",
+    "cuff": "Manschette",
+    "fabricTail": "Stoffschwanz",
+    "fabricTip": "Stoffspitze",
+    "frontBase": "Vorderseite Basis",
+    "frontFacing": "Besatz Vorderseite",
+    "front": "Vorderseite",
+    "frontLeft": "Vorderseite links",
+    "frontLining": "Futter Vorderseite",
+    "frontRight": "Vorderseite rechts",
+    "gusset": "Zwickel",
+    "hoodCenter": "Mitte der Kapuze",
+    "hood": "Kapuze",
+    "hoodSide": "Kapuzenseite",
+    "inset": "Einsatz",
+    "interfacingTail": "Einlageschwanz",
+    "interfacingTip": "Einlagespitze",
+    "liningTail": "Futterschwanz",
+    "liningTip": "Futterspitze",
+    "loop": "Schleife",
+    "panel1": "Teil 1",
+    "panel2": "Teil 2",
+    "panel3": "Teil 3",
+    "panel4": "Teil 4",
+    "panel5": "Teil 5",
+    "panel6": "Teil 6",
+    "panels": "Teile",
+    "pocketBag": "Taschenbeutel",
+    "pocketFacing": "Taschenbesatz",
+    "pocketInterfacing": "Tascheneinlage",
+    "pocket": "Tasche",
+    "pocketWelt": "Taschenpaspel",
+    "side": "Seite",
+    "sleeveBase": "Ärmel Basis",
+    "sleevecap": "Armkugel",
+    "sleevePlacketOverlap": "Übertritt der Ärmelleiste",
+    "sleevePlacketUnderlap": "Untertritt der Ärmelleiste",
+    "sleeve": "Ärmel",
+    "topSleeve": "Oberärmel",
+    "top": "Oberteil",
+    "underCollar": "Unterkragen",
+    "underSleeve": "Unterärmel",
+    "waistband": "Bund",
+    "yoke": "Passe"
+  },
   "s": {},
-  "o": {}
+  "o": {
+    "headRatio": {
+      "t": "Kopfgrößenverhältnis",
+      "d": "Steuert die Größe der Kopföffnung"
+    },
+    "armholeDrop": {
+      "t": "Armlochabsenkung",
+      "d": "Steuert die Tiefe des Armloches"
+    },
+    "lengthBonus": {
+      "t": "Längenzugabe",
+      "d": "Erlaubt Variation der Länge des Kleidungsstücks"
+    },
+    "widthBonus": {
+      "t": "Breitenzugabe",
+      "d": "Erlaubt Variation der Breite des Kleidungsstücks"
+    },
+    "clavi": {
+      "t": "Clavi",
+      "d": "Legt fest, ob Hilfslinien für Clavi enthalten sind oder nicht"
+    },
+    "clavusLocation": {
+      "t": "Positionierung der Clavi",
+      "d": "Steuert die Position der Clavi"
+    },
+    "clavusWidth": {
+      "t": "Breite der Clavi",
+      "d": "Steuert die Breite der Clavi"
+    },
+    "length": {
+      "t": "Länge",
+      "d": "Steuert die Länge des Kleidungsstückes"
+    },
+    "width": {
+      "t": "Breite",
+      "d": "Steuert die Breite des Kleidungsstückes"
+    },
+    "forceWidth": {
+      "t": "Breite erzwingen",
+      "d": "Breiteneinstellungen unabhängig von Einschränkungen anwenden"
+    }
+  }
 }

@@ -1,7 +1,101 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
-  "s": {},
-  "o": {}
+  "t": "Cornelius, die Kniebundhose zum Radfahren",
+  "d": "Cornelius ist eine Kniebundhose zum Fahrradfahren, basierend auf der Entwurfsmethode nach Keystone.",
+  "p": {
+    "back": "Rückseite",
+    "backBase": "Rückseite Basis",
+    "backPocketWelt": "Paspel der hinteren Tasche",
+    "base": "Basis",
+    "bentBack": "Rückseite Bent",
+    "bentBase": "Basis Bent",
+    "bentFront": "Vorderseite Bent",
+    "bentSleeve": "Ärmel Bent",
+    "bentTopSleeve": "Oberarmel Bent",
+    "bentUnderSleeve": "Unterarmel Bent",
+    "buttonholePlacket": "Knopflochleiste",
+    "buttonPlacket": "Knopfleiste",
+    "collar": "Kragen",
+    "collarStand": "Kragensteg",
+    "cuff": "Manschette",
+    "fabricTail": "Stoffschwanz",
+    "fabricTip": "Stoffspitze",
+    "frontBase": "Vorderseite Basis",
+    "frontFacing": "Besatz Vorderseite",
+    "front": "Vorderseite",
+    "frontLeft": "Vorderseite links",
+    "frontLining": "Futter Vorderseite",
+    "frontRight": "Vorderseite rechts",
+    "gusset": "Zwickel",
+    "hoodCenter": "Mitte der Kapuze",
+    "hood": "Kapuze",
+    "hoodSide": "Kapuzenseite",
+    "inset": "Einsatz",
+    "interfacingTail": "Einlageschwanz",
+    "interfacingTip": "Einlagespitze",
+    "liningTail": "Futterschwanz",
+    "liningTip": "Futterspitze",
+    "loop": "Schleife",
+    "panel1": "Teil 1",
+    "panel2": "Teil 2",
+    "panel3": "Teil 3",
+    "panel4": "Teil 4",
+    "panel5": "Teil 5",
+    "panel6": "Teil 6",
+    "panels": "Teile",
+    "pocketBag": "Taschenbeutel",
+    "pocketFacing": "Taschenbesatz",
+    "pocketInterfacing": "Tascheneinlage",
+    "pocket": "Tasche",
+    "pocketWelt": "Taschenpaspel",
+    "side": "Seite",
+    "sleeveBase": "Ärmel Basis",
+    "sleevecap": "Armkugel",
+    "sleevePlacketOverlap": "Übertritt der Ärmelleiste",
+    "sleevePlacketUnderlap": "Untertritt der Ärmelleiste",
+    "sleeve": "Ärmel",
+    "topSleeve": "Oberärmel",
+    "top": "Oberteil",
+    "underCollar": "Unterkragen",
+    "underSleeve": "Unterärmel",
+    "waistband": "Bund",
+    "yoke": "Passe"
+  },
+  "s": {
+    "Vent": "Schlitz",
+    "PocketFacing": "Taschenbesatz"
+  },
+  "o": {
+    "fullness": {
+      "t": "Fülle",
+      "d": "Steuert die Fülle der Hosen"
+    },
+    "waistbandBelowWaist": {
+      "t": "Unterer Taillenband",
+      "d": "Prozentsatz um die Taille unter die aktuelle Taille zu bewegen"
+    },
+    "waistReduction": {
+      "t": "Taillenreduzierung",
+      "d": "Prozentsatz um die Taille zu reduzieren"
+    },
+    "cuffWidth": {
+      "t": "Cuff width",
+      "d": "Breite der Beinschicht"
+    },
+    "cuffStyle": {
+      "t": "Manschettenstil",
+      "d": "Stil der Beinmanschette"
+    },
+    "bandBelowKnee": {
+      "t": "Kuff unter dem Knie",
+      "d": "Steuert die Manschettendistanz vom Knie"
+    },
+    "kneeToBelow": {
+      "t": "Manschettenlänge",
+      "d": "Steuert die Dichtheit der Manschette im Vergleich zum Knie"
+    },
+    "ventLength": {
+      "t": "Ventillänge",
+      "d": "Steuert die Länge des Schlot zwischen Knie und Manschette"
+    }
+  }
 }

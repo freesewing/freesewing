@@ -1,7 +1,118 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
+  "t": "Breanna basispatroon",
+  "d": "Breanna is een basislichaam voor mensen met borsten.",
+  "p": {
+    "back": "Achterzijde",
+    "backBase": "Basis rug",
+    "backPocketWelt": "Back pocket welt",
+    "base": "Basis",
+    "bentBack": "Achterzijde Bent",
+    "bentBase": "Basis Bent",
+    "bentFront": "Voorzijde Bent",
+    "bentSleeve": "Mouw Bent",
+    "bentTopSleeve": "Bovenmouw Bent",
+    "bentUnderSleeve": "Ondermouw Bent",
+    "buttonholePlacket": "Knoopsgatenpat",
+    "buttonPlacket": "Knopenpat",
+    "collar": "Kraag",
+    "collarStand": "Kraagstaander",
+    "cuff": "Manchet",
+    "fabricTail": "Stof staart",
+    "fabricTip": "Stof tip",
+    "frontBase": "Basis voorzijde",
+    "frontFacing": "Beleg vooraan",
+    "front": "Voorzijde",
+    "frontLeft": "Voorzijde links",
+    "frontLining": "Voering vooraan",
+    "frontRight": "Voorzijde rechts",
+    "gusset": "Gusset",
+    "hoodCenter": "Midden kap",
+    "hood": "Capuchon",
+    "hoodSide": "Zijkant kap",
+    "inset": "Inzet",
+    "interfacingTail": "Interfacing staart",
+    "interfacingTip": "Interfacing tip",
+    "liningTail": "Voering staart",
+    "liningTip": "Voering tip",
+    "loop": "Lus",
+    "panel1": "Deel 1",
+    "panel2": "Deel 2",
+    "panel3": "Deel 3",
+    "panel4": "Deel 4",
+    "panel5": "Deel 5",
+    "panel6": "Deel 6",
+    "panels": "Panelen",
+    "pocketBag": "Binnenzak",
+    "pocketFacing": "Zak beleg",
+    "pocketInterfacing": "Tussenvoering zak",
+    "pocket": "Zak",
+    "pocketWelt": "Paspel zak",
+    "side": "Zijkant",
+    "sleeveBase": "Basis mouw",
+    "sleevecap": "Mouwkop",
+    "sleevePlacketOverlap": "Mouwsplit boven",
+    "sleevePlacketUnderlap": "Mouwsplit onder",
+    "sleeve": "Mouw",
+    "topSleeve": "Bovenmouw",
+    "top": "Top",
+    "underCollar": "Onderkraag",
+    "underSleeve": "Ondermouw",
+    "waistband": "Tailleband",
+    "yoke": "Schouderpas"
+  },
   "s": {},
-  "o": {}
+  "o": {
+    "shoulderDart": {
+      "t": "Schouder neep",
+      "d": "Wel of niet een neep aan de schouder aan de schouder aan de achterkant"
+    },
+    "shoulderDartSize": {
+      "t": "Grootte schouder neep",
+      "d": "De grootte van de schouderneep"
+    },
+    "shoulderDartLength": {
+      "t": "Lengte schouder neep",
+      "d": "De lengte van de schouderneep"
+    },
+    "waistDart": {
+      "t": "Taille neep",
+      "d": "Of je een neep aan de taille wilt aanlaten om de achterkant af te ronden"
+    },
+    "waistDartSize": {
+      "t": "Grootte neep taille",
+      "d": "De grootte van de neep van de taille"
+    },
+    "waistDartLength": {
+      "t": "Lengte neep taille",
+      "d": "De lengte van de neep van de taille"
+    },
+    "verticalEase": {
+      "t": "Verticale overwijdte",
+      "d": "De hoeveelheid overwijdte om te verdelen over de lengte van het kledingstuk"
+    },
+    "waistEase": {
+      "t": "Overwijdte taille",
+      "d": "De hoeveelheid overwijdte aan de taille"
+    },
+    "primaryBustDart": {
+      "t": "Bust neep",
+      "d": "Waar moet je de buikneep plaatsen om de borst vorm te geven"
+    },
+    "primaryBustDartLength": {
+      "t": "Lengte busteneep",
+      "d": "De lengte van de bustenneep"
+    },
+    "secondaryBustDart": {
+      "t": "Secundaire bustenneep",
+      "d": "Voeg optioneel een secundaire bustenneep toe om de vormgeving van de borst te verdelen"
+    },
+    "secondaryBustDartLength": {
+      "t": "Secundaire lengte bustenneep",
+      "d": "De lengte van de secundaire bustenneep"
+    },
+    "primaryBustDartShaping": {
+      "t": "Bust nepen vormgeving",
+      "d": "Bepaalt het evenwicht tussen de hoofd- en secundaire busteennepen"
+    }
+  }
 }

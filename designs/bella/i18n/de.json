@@ -1,7 +1,142 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
+  "t": "Bella, ein Grundschnitt",
+  "d": "Bella ist ein Grundschnitt für Personen mit Brüsten.",
+  "p": {
+    "back": "Rückseite",
+    "backBase": "Rückseite Basis",
+    "backPocketWelt": "Paspel der hinteren Tasche",
+    "base": "Basis",
+    "bentBack": "Rückseite Bent",
+    "bentBase": "Basis Bent",
+    "bentFront": "Vorderseite Bent",
+    "bentSleeve": "Ärmel Bent",
+    "bentTopSleeve": "Oberarmel Bent",
+    "bentUnderSleeve": "Unterarmel Bent",
+    "buttonholePlacket": "Knopflochleiste",
+    "buttonPlacket": "Knopfleiste",
+    "collar": "Kragen",
+    "collarStand": "Kragensteg",
+    "cuff": "Manschette",
+    "fabricTail": "Stoffschwanz",
+    "fabricTip": "Stoffspitze",
+    "frontBase": "Vorderseite Basis",
+    "frontFacing": "Besatz Vorderseite",
+    "front": "Vorderseite",
+    "frontLeft": "Vorderseite links",
+    "frontLining": "Futter Vorderseite",
+    "frontRight": "Vorderseite rechts",
+    "gusset": "Zwickel",
+    "hoodCenter": "Mitte der Kapuze",
+    "hood": "Kapuze",
+    "hoodSide": "Kapuzenseite",
+    "inset": "Einsatz",
+    "interfacingTail": "Einlageschwanz",
+    "interfacingTip": "Einlagespitze",
+    "liningTail": "Futterschwanz",
+    "liningTip": "Futterspitze",
+    "loop": "Schleife",
+    "panel1": "Teil 1",
+    "panel2": "Teil 2",
+    "panel3": "Teil 3",
+    "panel4": "Teil 4",
+    "panel5": "Teil 5",
+    "panel6": "Teil 6",
+    "panels": "Teile",
+    "pocketBag": "Taschenbeutel",
+    "pocketFacing": "Taschenbesatz",
+    "pocketInterfacing": "Tascheneinlage",
+    "pocket": "Tasche",
+    "pocketWelt": "Taschenpaspel",
+    "side": "Seite",
+    "sleeveBase": "Ärmel Basis",
+    "sleevecap": "Armkugel",
+    "sleevePlacketOverlap": "Übertritt der Ärmelleiste",
+    "sleevePlacketUnderlap": "Untertritt der Ärmelleiste",
+    "sleeve": "Ärmel",
+    "topSleeve": "Oberärmel",
+    "top": "Oberteil",
+    "underCollar": "Unterkragen",
+    "underSleeve": "Unterärmel",
+    "waistband": "Bund",
+    "yoke": "Passe"
+  },
   "s": {},
-  "o": {}
+  "o": {
+    "chestEase": {
+      "t": "Brustumfangszugabe",
+      "d": "Steuert die Größe der Zugabe zum Brustumfang"
+    },
+    "waistEase": {
+      "t": "Taillenzugabe",
+      "d": "Steuert die Menge an Leichtigkeit in deiner Taille"
+    },
+    "bustSpanEase": {
+      "t": "Zugabe seitlicher Brustbereich",
+      "d": "Steuert die Größe der (horizontalen) Zugabe, zu deinem seitlichen Brustbereich, \nwenn Brustpunkt berechnet wird."
+    },
+    "shoulderToShoulderEase": {
+      "t": "Zugabe des Schulterabstandes",
+      "d": "Kontrolliert die Menge an Zugabe zwischen deinen Schultern. Liegt inital bei -0,5%, da Bella ein Grundschnitt erfüllt, welcher in der Branche verwendet wird."
+    },
+    "fullChestEaseReduction": {
+      "t": "Verringerung der Brustumfangszugabe",
+      "d": "Ermöglicht es dir den Spielraum an der Brust zu verringern, um dort einen engeren Sitz zu ermöglichen"
+    },
+    "backDartHeight": {
+      "t": "Höhe Rückenabnäher",
+      "d": "Steuert die Höhe des Rückenabnähers"
+    },
+    "bustDartLength": {
+      "t": "Länge des Brustabnähers",
+      "d": "Steuert die Länge des Brustabnähers"
+    },
+    "waistDartLength": {
+      "t": "Länge des Taillenabnähers",
+      "d": "Steuert die Länge des Taillenabnähers"
+    },
+    "bustDartCurve": {
+      "t": "Rundung Brustabnäher",
+      "d": "Steuert die Krümmung des Büstendarts"
+    },
+    "armholeDepth": {
+      "t": "Armlochtiefe",
+      "d": "Steuert die Tiefe des Armloches"
+    },
+    "backArmholeSlant": {
+      "t": "Hintere Armlochschiebung",
+      "d": "Dreht das Armloch leicht in seinem Drehpunkt"
+    },
+    "frontArmholeCurvature": {
+      "t": "Vordere Armlochkrümmung",
+      "d": "Steuert wie tief das Armloch nach vorne unten ausgeschnitten ist"
+    },
+    "backArmholeCurvature": {
+      "t": "Hintere Armlochkrümmung",
+      "d": "Steuert wie tief das Armloch nach hinten unten ausgeschnitten ist"
+    },
+    "frontArmholePitchDepth": {
+      "t": "Vordere Armlochtiefe",
+      "d": "Stellt die horizontale Position des Vorderarmlochpunktes fest"
+    },
+    "backArmholePitchDepth": {
+      "t": "Rückenarmloch-Tiefe",
+      "d": "Stellt die horizontale Position des Rückenlochpunktes fest"
+    },
+    "backNeckCutout": {
+      "t": "Ausschnitt im Nacken",
+      "d": "Steuert, wie tief der Nackenausschnit am Rücken ausfällt"
+    },
+    "backHemSlope": {
+      "t": "Neigung des hinteren Saumes",
+      "d": "Steuert den Hang des Saum auf der Rückseite"
+    },
+    "frontShoulderWidth": {
+      "t": "Vordere Schulterbreite",
+      "d": "Steuert die Schmalheit der vorderen Schultern relativ zum Rücken"
+    },
+    "highBustWidth": {
+      "t": "Oberbrustweite",
+      "d": "Erlaubt es dir die Oberbrustweite vorne zu optimieren"
+    }
+  }
 }

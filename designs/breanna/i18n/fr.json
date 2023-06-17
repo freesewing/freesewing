@@ -1,7 +1,118 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
+  "t": "Haut Breanna",
+  "d": "Breanna est un bloc corporel de base pour les personnes qui ont un sein.",
+  "p": {
+    "back": "Retour",
+    "backBase": "Base dos",
+    "backPocketWelt": "Poche arrière passepoilée",
+    "base": "Base",
+    "bentBack": "Dos de Bent",
+    "bentBase": "Base de Bent",
+    "bentFront": "Avant de Bent",
+    "bentSleeve": "Manche de Bent",
+    "bentTopSleeve": "Partie supérieure de la manche de Bent",
+    "bentUnderSleeve": "Partie inférieure de la manche de Bent",
+    "buttonholePlacket": "Patte de boutonnière",
+    "buttonPlacket": "Patte de boutonnage",
+    "collar": "Collier",
+    "collarStand": "Support de collier",
+    "cuff": "Manchette",
+    "fabricTail": "Queue en tissu",
+    "fabricTip": "Pointe en tissu",
+    "frontBase": "Base avant",
+    "frontFacing": "Doublure avant",
+    "front": "Avant",
+    "frontLeft": "Avant gauche",
+    "frontLining": "Doublure avant",
+    "frontRight": "Avant droit",
+    "gusset": "Soufflet",
+    "hoodCenter": "Capuchon centre",
+    "hood": "Capuche",
+    "hoodSide": "Capuchon côté",
+    "inset": "Encart",
+    "interfacingTail": "Entoilage de queue",
+    "interfacingTip": "Entoilage de pointe",
+    "liningTail": "Doublure de queue",
+    "liningTip": "Doublure de pointe",
+    "loop": "Boucle",
+    "panel1": "Pièce 1",
+    "panel2": "Pièce 2",
+    "panel3": "Pièce 3",
+    "panel4": "Pièce 4",
+    "panel5": "Pièce 5",
+    "panel6": "Pièce 6",
+    "panels": "Pièces",
+    "pocketBag": "Sac de poche",
+    "pocketFacing": "Parement de poche",
+    "pocketInterfacing": "Entoilage de poche",
+    "pocket": "Poche",
+    "pocketWelt": "Rabat de poche",
+    "side": "Côté",
+    "sleeveBase": "Base de manche",
+    "sleevecap": "Capuchon de manche",
+    "sleevePlacketOverlap": "Patte de manche haut",
+    "sleevePlacketUnderlap": "Patte de manche bas",
+    "sleeve": "Manche",
+    "topSleeve": "Haut de manche",
+    "top": "Haut",
+    "underCollar": "Sous-col",
+    "underSleeve": "Sous-manche",
+    "waistband": "Ceinture",
+    "yoke": "Empiècement"
+  },
   "s": {},
-  "o": {}
+  "o": {
+    "shoulderDart": {
+      "t": "Pince d'épaule",
+      "d": "S'il faut ou non inclure une pince à l'épaule pour arrondir le dos"
+    },
+    "shoulderDartSize": {
+      "t": "Taille de la pince de l'épaule",
+      "d": "La taille de la pince d'épaule"
+    },
+    "shoulderDartLength": {
+      "t": "Longueur de la pince de l'épaule",
+      "d": "La longueur de la pince d'épaule"
+    },
+    "waistDart": {
+      "t": "Pince de taille",
+      "d": "S'il faut ou non inclure une pince à la taille pour arrondir le dos"
+    },
+    "waistDartSize": {
+      "t": "Taille de la pince de taille",
+      "d": "La taille de la pince de taille"
+    },
+    "waistDartLength": {
+      "t": "Longueur de la pince de taille",
+      "d": "La longueur de la pince de taille"
+    },
+    "verticalEase": {
+      "t": "Aisance verticale",
+      "d": "La quantité d'aisance à répartir sur la longueur du vêtement"
+    },
+    "waistEase": {
+      "t": "Aisance à la taille",
+      "d": "L'ampleur d'aisance à votre taille"
+    },
+    "primaryBustDart": {
+      "t": "Pince poitrine",
+      "d": "Où placer la pince poitrine pour s'adapter à la poitrine"
+    },
+    "primaryBustDartLength": {
+      "t": "Longueur des pinces poitrine",
+      "d": "La longueur de la pince de poitrine"
+    },
+    "secondaryBustDart": {
+      "t": "Pince poitrine secondaire",
+      "d": "Inclut éventuellement une poitrine secondaire pour répartir la mise en forme de la poitrine"
+    },
+    "secondaryBustDartLength": {
+      "t": "Longueur de la pince poitrine secondaire",
+      "d": "La longueur de la pince poitrine secondaire"
+    },
+    "primaryBustDartShaping": {
+      "t": "Forme des pinces poitrine",
+      "d": "Contrôle l'équilibre entre les pinces de buste principale et secondaire"
+    }
+  }
 }

@@ -1,7 +1,82 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
+  "t": "Unice undies",
+  "d": "Unice is a variant of Ursula; A basic, highly-customizable underwear pattern.",
+  "p": {
+    "back": "Atrás",
+    "backBase": "Base trasera",
+    "backPocketWelt": "Ribete del bolsillo trasero",
+    "base": "Base",
+    "bentBack": "Trasero Bent",
+    "bentBase": "Base Bent",
+    "bentFront": "Frente Bent",
+    "bentSleeve": "Manga Bent",
+    "bentTopSleeve": "Manga superior Bent",
+    "bentUnderSleeve": "Manga debajo Bent",
+    "buttonholePlacket": "Tapeta de ojal",
+    "buttonPlacket": "Tapeta de botones",
+    "collar": "Cuello",
+    "collarStand": "Soporte de collar",
+    "cuff": "Cuffnl",
+    "fabricTail": "Cola de tela",
+    "fabricTip": "Punta de tela",
+    "frontBase": "Base delantera",
+    "frontFacing": "Delantero mirando hacia",
+    "front": "Frente",
+    "frontLeft": "Delantero izquierdo",
+    "frontLining": "Delantero revestimiento",
+    "frontRight": "Frente derecho",
+    "gusset": "Gusset",
+    "hoodCenter": "Centro de la capucha",
+    "hood": "Capucha",
+    "hoodSide": "Lado de la capucha",
+    "inset": "Recuadro",
+    "interfacingTail": "Cola de entretela",
+    "interfacingTip": "Punta de entretela",
+    "liningTail": "Cola de revestimiento",
+    "liningTip": "Punta de revestimiento",
+    "loop": "Lazo",
+    "panel1": "Panel 1",
+    "panel2": "Panel 2",
+    "panel3": "Panel 3",
+    "panel4": "Panel 4",
+    "panel5": "Panel 5",
+    "panel6": "Panel 6",
+    "panels": "Paneles",
+    "pocketBag": "Bolsa de bolsillo",
+    "pocketFacing": "Cara de bolsillo",
+    "pocketInterfacing": "Entretela de bolsillo",
+    "pocket": "Bolsillo",
+    "pocketWelt": "Ribete de bolsillo",
+    "side": "Lado",
+    "sleeveBase": "Base de la manga",
+    "sleevecap": "Funda de manga",
+    "sleevePlacketOverlap": "Top de manga tapeta",
+    "sleevePlacketUnderlap": "Parte inferior de la tapeta de la manga",
+    "sleeve": "Manga",
+    "topSleeve": "Manga superior",
+    "top": "Arriba",
+    "underCollar": "Debajo del cuello",
+    "underSleeve": "Manga debajo",
+    "waistband": "Pretina",
+    "yoke": "Yugo"
+  },
   "s": {},
-  "o": {}
+  "o": {
+    "fabricStretchX": {
+      "t": "Elasticidad de la tela (horizontal)",
+      "d": "Ajusta esto para telas más o menos elásticas"
+    },
+    "fabricStretchY": {
+      "t": "Elasticidad de la tela (vertical)",
+      "d": "Ajusta esto para telas más o menos elásticas"
+    },
+    "adjustStretch": {
+      "t": "Ajuste por elasticidad",
+      "d": "En esta opción puedes poner la elasticidad total del tejido tanto en horizontal como en vertical. Cuando se deshabilita, los valores de elasticidad se usan tal cual"
+    },
+    "useCrossSeam": {
+      "t": "Usa el tiro completo",
+      "d": "Cuando se habilita, la altura total de las piezas del patrón combinadas será la misma que la medida del tiro completo menos las elevaciones frontales y traseras. Cuando se deshabilita, la altura total dependerá de la opción del molde medio o pieza de refuerzo."
+    }
+  }
 }

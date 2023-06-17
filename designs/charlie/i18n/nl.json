@@ -1,7 +1,134 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
+  "t": "Charlie chinos",
+  "d": "Charlie is een chino broekpatroon.",
+  "p": {
+    "back": "Achterzijde",
+    "backBase": "Basis rug",
+    "backPocketWelt": "Back pocket welt",
+    "base": "Basis",
+    "bentBack": "Achterzijde Bent",
+    "bentBase": "Basis Bent",
+    "bentFront": "Voorzijde Bent",
+    "bentSleeve": "Mouw Bent",
+    "bentTopSleeve": "Bovenmouw Bent",
+    "bentUnderSleeve": "Ondermouw Bent",
+    "buttonholePlacket": "Knoopsgatenpat",
+    "buttonPlacket": "Knopenpat",
+    "collar": "Kraag",
+    "collarStand": "Kraagstaander",
+    "cuff": "Manchet",
+    "fabricTail": "Stof staart",
+    "fabricTip": "Stof tip",
+    "frontBase": "Basis voorzijde",
+    "frontFacing": "Beleg vooraan",
+    "front": "Voorzijde",
+    "frontLeft": "Voorzijde links",
+    "frontLining": "Voering vooraan",
+    "frontRight": "Voorzijde rechts",
+    "gusset": "Gusset",
+    "hoodCenter": "Midden kap",
+    "hood": "Capuchon",
+    "hoodSide": "Zijkant kap",
+    "inset": "Inzet",
+    "interfacingTail": "Interfacing staart",
+    "interfacingTip": "Interfacing tip",
+    "liningTail": "Voering staart",
+    "liningTip": "Voering tip",
+    "loop": "Lus",
+    "panel1": "Deel 1",
+    "panel2": "Deel 2",
+    "panel3": "Deel 3",
+    "panel4": "Deel 4",
+    "panel5": "Deel 5",
+    "panel6": "Deel 6",
+    "panels": "Panelen",
+    "pocketBag": "Binnenzak",
+    "pocketFacing": "Zak beleg",
+    "pocketInterfacing": "Tussenvoering zak",
+    "pocket": "Zak",
+    "pocketWelt": "Paspel zak",
+    "side": "Zijkant",
+    "sleeveBase": "Basis mouw",
+    "sleevecap": "Mouwkop",
+    "sleevePlacketOverlap": "Mouwsplit boven",
+    "sleevePlacketUnderlap": "Mouwsplit onder",
+    "sleeve": "Mouw",
+    "topSleeve": "Bovenmouw",
+    "top": "Top",
+    "underCollar": "Onderkraag",
+    "underSleeve": "Ondermouw",
+    "waistband": "Tailleband",
+    "yoke": "Schouderpas"
+  },
   "s": {},
-  "o": {}
+  "o": {
+    "backPocketHorizontalPlacement": {
+      "t": "Plaatsing horizontale achterzak",
+      "d": "Bepaalt de horizontale plaatsing van de achterzak"
+    },
+    "backPocketVerticalPlacement": {
+      "t": "Verticale plaatsing achterzak",
+      "d": "Bepaalt de verticale plaatsing van de achterzak"
+    },
+    "backPocketWidth": {
+      "t": "Breedte achterzak",
+      "d": "Bepaalt de breedte van de achterzak"
+    },
+    "backPocketDepth": {
+      "t": "Diepte achterzak",
+      "d": "Bepaalt de diepte van de achterzak"
+    },
+    "backPocketFacing": {
+      "t": "Back pocket facing",
+      "d": "Controls whether or not to include facing on the back pockets"
+    },
+    "frontPocketSlantDepth": {
+      "t": "Diepte voorzak",
+      "d": "Bepaalt de diepte van de voorste zakopening"
+    },
+    "frontPocketSlantWidth": {
+      "t": "Schouderstuk voorzak breedte",
+      "d": "Bepaalt de breedte van de voorste zakopening"
+    },
+    "frontPocketSlantRound": {
+      "t": "Schuine zakdeel rond",
+      "d": "Bepaalt hoe ver we van het einde van de schuine lijn beginnen met afronden in de outnaad"
+    },
+    "frontPocketSlantBend": {
+      "t": "Schuine zakopening",
+      "d": "Bepaalt de straal waarmee we het zakdeel op de rand afstemmen"
+    },
+    "frontPocketWidth": {
+      "t": "Breedte zak",
+      "d": "Bepaalt de breedte van het voorste zakdeel"
+    },
+    "frontPocketDepth": {
+      "t": "Diepte zak",
+      "d": "Bepaalt de diepte van het voorzakdeel"
+    },
+    "frontPocketFacing": {
+      "t": "Beleg zak",
+      "d": "Bepaalt hoever het beleg van de zak zich uitstrekt tot het zakdeel"
+    },
+    "beltLoops": {
+      "t": "Rand lussen",
+      "d": "Bepaalt de hoeveelheid riemlusjes"
+    },
+    "flyCurve": {
+      "t": "Vlieg curve",
+      "d": "Bepaalt de kromming van de gulpnaad"
+    },
+    "flyLength": {
+      "t": "Vlieg lengte",
+      "d": "Bepaalt de lengte van de gulp"
+    },
+    "flyWidth": {
+      "t": "Fly width",
+      "d": "Bepaalt hoe ver de J-naad van de rand van de gulp af staat"
+    },
+    "waistbandCurve": {
+      "t": "Tailleband curve",
+      "d": "Bepaalt hoe gebogen de tailleband is."
+    }
+  }
 }

@@ -1,7 +1,122 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
+  "t": "Wahid, chaleco",
+  "d": "Wahid es el clásico chaleco entallado.",
+  "p": {
+    "back": "Atrás",
+    "backBase": "Base trasera",
+    "backPocketWelt": "Ribete del bolsillo trasero",
+    "base": "Base",
+    "bentBack": "Trasero Bent",
+    "bentBase": "Base Bent",
+    "bentFront": "Frente Bent",
+    "bentSleeve": "Manga Bent",
+    "bentTopSleeve": "Manga superior Bent",
+    "bentUnderSleeve": "Manga debajo Bent",
+    "buttonholePlacket": "Tapeta de ojal",
+    "buttonPlacket": "Tapeta de botones",
+    "collar": "Cuello",
+    "collarStand": "Soporte de collar",
+    "cuff": "Cuffnl",
+    "fabricTail": "Cola de tela",
+    "fabricTip": "Punta de tela",
+    "frontBase": "Base delantera",
+    "frontFacing": "Delantero mirando hacia",
+    "front": "Frente",
+    "frontLeft": "Delantero izquierdo",
+    "frontLining": "Delantero revestimiento",
+    "frontRight": "Frente derecho",
+    "gusset": "Gusset",
+    "hoodCenter": "Centro de la capucha",
+    "hood": "Capucha",
+    "hoodSide": "Lado de la capucha",
+    "inset": "Recuadro",
+    "interfacingTail": "Cola de entretela",
+    "interfacingTip": "Punta de entretela",
+    "liningTail": "Cola de revestimiento",
+    "liningTip": "Punta de revestimiento",
+    "loop": "Lazo",
+    "panel1": "Panel 1",
+    "panel2": "Panel 2",
+    "panel3": "Panel 3",
+    "panel4": "Panel 4",
+    "panel5": "Panel 5",
+    "panel6": "Panel 6",
+    "panels": "Paneles",
+    "pocketBag": "Bolsa de bolsillo",
+    "pocketFacing": "Cara de bolsillo",
+    "pocketInterfacing": "Entretela de bolsillo",
+    "pocket": "Bolsillo",
+    "pocketWelt": "Ribete de bolsillo",
+    "side": "Lado",
+    "sleeveBase": "Base de la manga",
+    "sleevecap": "Funda de manga",
+    "sleevePlacketOverlap": "Top de manga tapeta",
+    "sleevePlacketUnderlap": "Parte inferior de la tapeta de la manga",
+    "sleeve": "Manga",
+    "topSleeve": "Manga superior",
+    "top": "Arriba",
+    "underCollar": "Debajo del cuello",
+    "underSleeve": "Manga debajo",
+    "waistband": "Pretina",
+    "yoke": "Yugo"
+  },
   "s": {},
-  "o": {}
+  "o": {
+    "backScyeDart": {
+      "t": "Pinza posterior de la sisa",
+      "d": "La cantidad a reducir en una pinza en la parte posterior de la sisa."
+    },
+    "frontScyeDart": {
+      "t": "Pinza frontal de la sisa",
+      "d": "La cantidad a reducir en una pinza en el frente de la sisa."
+    },
+    "pocketLocation": {
+      "t": "Ubicación de bolsillo",
+      "d": "Determina la colocación del bolsillo"
+    },
+    "pocketWidth": {
+      "t": "Anchura de bolsillo",
+      "d": "La anchura del bolsillo"
+    },
+    "weltHeight": {
+      "t": "Altura de verdugón del bolsillo",
+      "d": "La altura de verdugón del bolsillo."
+    },
+    "necklineDrop": {
+      "t": "Caída del cuello",
+      "d": "Determina lo bajo que cae la línea de cuello en la parte delantera"
+    },
+    "frontStyle": {
+      "t": "Estilo de la apertura del cuello",
+      "d": "Estilo de apertura del cuello"
+    },
+    "hemStyle": {
+      "t": "Estilo del dobladillo",
+      "d": "Estilo del dobladillo delantero"
+    },
+    "hemRadius": {
+      "t": "Radio del dobladillo",
+      "d": "Radio por el que el dobladillo es redondeado"
+    },
+    "backInset": {
+      "t": "Inserción trasera",
+      "d": "Cuánto de la parte de atrás de la sisa se corta hacia el interior"
+    },
+    "frontInset": {
+      "t": "Inserción delantera",
+      "d": "Cuánto de la parte de delante de la sisa se corta hacia el interior"
+    },
+    "shoulderInset": {
+      "t": "Inserción de hombro",
+      "d": "Cuánto la costura del hombro se recorta hacia el interior en el hombro"
+    },
+    "neckInset": {
+      "t": "Inserción de cuello",
+      "d": "Cuánto de la costura del hombro se corta hacia el interior en el cuello"
+    },
+    "pocketAngle": {
+      "t": "Ángulo del bolsillo",
+      "d": "Ángulo del forro del bolsillo"
+    }
+  }
 }

@@ -9,36 +9,95 @@
   },
   "o": {
     "armholeDrop": {
-      "t": "Armhole drop",
-      "d": "Lower the armhole by this amount. Negative values will raise it."
+      "t": "Armlochabsenkung",
+      "d": "Senkt das Armloch um diesen Wert. Negative Werte erhöhen es."
     },
     "backlineBend": {
-      "t": "Back armhole shape",
-      "d": "Determines the shape/bend of the back of the armholes."
+      "t": "Hintere Armlochform",
+      "d": "Bestimmt die Form / Krümmung der Rückseite der Armlöcher."
     },
     "hipsEase": {
-      "t": "Hips ease",
-      "d": "The amount of ease at your hips."
+      "t": "Bequemlichkeitszugabe Hüfte",
+      "d": "Die Menge an Bequemlichkeits-/Bewegungszugabe an deinen Hüften."
     },
     "necklineBend": {
-      "t": "Neckline shape",
-      "d": "Determines the shape/bend of the neckline at the front."
+      "t": "Ausschnittsform",
+      "d": "Bestimmt die Form / Krümmung des Halsausschnitts vorne."
     },
     "necklineDrop": {
-      "t": "Neckline drop",
-      "d": "The amount the neck is cutout at the front."
+      "t": "Ausschnitt Tiefe",
+      "d": "Wie tief der Ausschnitt vorne geht."
     },
     "shoulderStrapPlacement": {
-      "t": "Shoulderstrap placement",
-      "d": "Determines whether the shoulder strap is placed closer to the neck (lower numbers) or the shoulder (higher numbers)."
+      "t": "Platzierung der Schulterträger",
+      "d": "Bestimmt, ob der Schulterträger näher am Hals (niedrigere Zahlen), oder näher an der Schulter (höhere Zahlen) liegt."
     },
     "shoulderStrapWidth": {
-      "t": "Shoulderstrap width",
-      "d": "The width of the shoulder straps."
+      "t": "Breite der Schulterträger",
+      "d": "Die Breite der Schulterträger."
     },
     "stretchFactor": {
-      "t": "Stretch",
-      "d": "Determines the horizontal negative ease."
+      "t": "Dehnung",
+      "d": "Bestimmt die horizontale negative Bewegungszugabe."
     }
+  },
+  "p": {
+    "back": "Rückseite",
+    "backBase": "Rückseite Basis",
+    "backPocketWelt": "Paspel der hinteren Tasche",
+    "base": "Basis",
+    "bentBack": "Rückseite Bent",
+    "bentBase": "Basis Bent",
+    "bentFront": "Vorderseite Bent",
+    "bentSleeve": "Ärmel Bent",
+    "bentTopSleeve": "Oberarmel Bent",
+    "bentUnderSleeve": "Unterarmel Bent",
+    "buttonholePlacket": "Knopflochleiste",
+    "buttonPlacket": "Knopfleiste",
+    "collar": "Kragen",
+    "collarStand": "Kragensteg",
+    "cuff": "Manschette",
+    "fabricTail": "Stoffschwanz",
+    "fabricTip": "Stoffspitze",
+    "frontBase": "Vorderseite Basis",
+    "frontFacing": "Besatz Vorderseite",
+    "front": "Vorderseite",
+    "frontLeft": "Vorderseite links",
+    "frontLining": "Futter Vorderseite",
+    "frontRight": "Vorderseite rechts",
+    "gusset": "Zwickel",
+    "hoodCenter": "Mitte der Kapuze",
+    "hood": "Kapuze",
+    "hoodSide": "Kapuzenseite",
+    "inset": "Einsatz",
+    "interfacingTail": "Einlageschwanz",
+    "interfacingTip": "Einlagespitze",
+    "liningTail": "Futterschwanz",
+    "liningTip": "Futterspitze",
+    "loop": "Schleife",
+    "panel1": "Teil 1",
+    "panel2": "Teil 2",
+    "panel3": "Teil 3",
+    "panel4": "Teil 4",
+    "panel5": "Teil 5",
+    "panel6": "Teil 6",
+    "panels": "Teile",
+    "pocketBag": "Taschenbeutel",
+    "pocketFacing": "Taschenbesatz",
+    "pocketInterfacing": "Tascheneinlage",
+    "pocket": "Tasche",
+    "pocketWelt": "Taschenpaspel",
+    "side": "Seite",
+    "sleeveBase": "Ärmel Basis",
+    "sleevecap": "Armkugel",
+    "sleevePlacketOverlap": "Übertritt der Ärmelleiste",
+    "sleevePlacketUnderlap": "Untertritt der Ärmelleiste",
+    "sleeve": "Ärmel",
+    "topSleeve": "Oberärmel",
+    "top": "Oberteil",
+    "underCollar": "Unterkragen",
+    "underSleeve": "Unterärmel",
+    "waistband": "Bund",
+    "yoke": "Passe"
   }
 }

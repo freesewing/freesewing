@@ -1,7 +1,106 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
+  "t": "Tiberius, túnica",
+  "d": "Tiberius es una túnica romana histórica.",
+  "p": {
+    "back": "Atrás",
+    "backBase": "Base trasera",
+    "backPocketWelt": "Ribete del bolsillo trasero",
+    "base": "Base",
+    "bentBack": "Trasero Bent",
+    "bentBase": "Base Bent",
+    "bentFront": "Frente Bent",
+    "bentSleeve": "Manga Bent",
+    "bentTopSleeve": "Manga superior Bent",
+    "bentUnderSleeve": "Manga debajo Bent",
+    "buttonholePlacket": "Tapeta de ojal",
+    "buttonPlacket": "Tapeta de botones",
+    "collar": "Cuello",
+    "collarStand": "Soporte de collar",
+    "cuff": "Cuffnl",
+    "fabricTail": "Cola de tela",
+    "fabricTip": "Punta de tela",
+    "frontBase": "Base delantera",
+    "frontFacing": "Delantero mirando hacia",
+    "front": "Frente",
+    "frontLeft": "Delantero izquierdo",
+    "frontLining": "Delantero revestimiento",
+    "frontRight": "Frente derecho",
+    "gusset": "Gusset",
+    "hoodCenter": "Centro de la capucha",
+    "hood": "Capucha",
+    "hoodSide": "Lado de la capucha",
+    "inset": "Recuadro",
+    "interfacingTail": "Cola de entretela",
+    "interfacingTip": "Punta de entretela",
+    "liningTail": "Cola de revestimiento",
+    "liningTip": "Punta de revestimiento",
+    "loop": "Lazo",
+    "panel1": "Panel 1",
+    "panel2": "Panel 2",
+    "panel3": "Panel 3",
+    "panel4": "Panel 4",
+    "panel5": "Panel 5",
+    "panel6": "Panel 6",
+    "panels": "Paneles",
+    "pocketBag": "Bolsa de bolsillo",
+    "pocketFacing": "Cara de bolsillo",
+    "pocketInterfacing": "Entretela de bolsillo",
+    "pocket": "Bolsillo",
+    "pocketWelt": "Ribete de bolsillo",
+    "side": "Lado",
+    "sleeveBase": "Base de la manga",
+    "sleevecap": "Funda de manga",
+    "sleevePlacketOverlap": "Top de manga tapeta",
+    "sleevePlacketUnderlap": "Parte inferior de la tapeta de la manga",
+    "sleeve": "Manga",
+    "topSleeve": "Manga superior",
+    "top": "Arriba",
+    "underCollar": "Debajo del cuello",
+    "underSleeve": "Manga debajo",
+    "waistband": "Pretina",
+    "yoke": "Yugo"
+  },
   "s": {},
-  "o": {}
+  "o": {
+    "headRatio": {
+      "t": "Head ratio",
+      "d": "Controls the size of the head opening"
+    },
+    "armholeDrop": {
+      "t": "Caída de la sisa",
+      "d": "Controla la profundidad del orificio"
+    },
+    "lengthBonus": {
+      "t": "Bonus de longitud",
+      "d": "Allows variation of the length of the garment"
+    },
+    "widthBonus": {
+      "t": "Width bonus",
+      "d": "Allows variation of the width of the garment"
+    },
+    "clavi": {
+      "t": "Clavi",
+      "d": "Whether or not to include guides for clavi"
+    },
+    "clavusLocation": {
+      "t": "Clavus location",
+      "d": "Controls the location of the clavi"
+    },
+    "clavusWidth": {
+      "t": "Clavus width",
+      "d": "Controls the width of the clavi"
+    },
+    "length": {
+      "t": "Longitud",
+      "d": "Controls the length of the garment"
+    },
+    "width": {
+      "t": "Anchura",
+      "d": "Controls the width of the garment"
+    },
+    "forceWidth": {
+      "t": "Force width",
+      "d": "Apply width settings regardless of constraints"
+    }
+  }
 }

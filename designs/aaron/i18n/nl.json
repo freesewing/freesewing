@@ -9,36 +9,95 @@
   },
   "o": {
     "armholeDrop": {
-      "t": "Armhole drop",
-      "d": "Lower the armhole by this amount. Negative values will raise it."
+      "t": "Diepte armsgat",
+      "d": "Verlaag het armsgat met deze hoeveelheid. Een negatieve waarde maakt het hoger."
     },
     "backlineBend": {
-      "t": "Back armhole shape",
-      "d": "Determines the shape/bend of the back of the armholes."
+      "t": "Vorm armsgat achteraan",
+      "d": "Bepaalt de vorm/curve van de achterkant van het armsgat."
     },
     "hipsEase": {
-      "t": "Hips ease",
-      "d": "The amount of ease at your hips."
+      "t": "Overwijdte heup",
+      "d": "De hoeveelheid overwijdte aan je heupen."
     },
     "necklineBend": {
-      "t": "Neckline shape",
-      "d": "Determines the shape/bend of the neckline at the front."
+      "t": "Vorm halslijn",
+      "d": "Bepaalt de vorm/kromming van de halslijn aan het middenvoor."
     },
     "necklineDrop": {
-      "t": "Neckline drop",
-      "d": "The amount the neck is cutout at the front."
+      "t": "Diepte halslijn",
+      "d": "De hoeveelheid waarmee de halslijn vooraan weggesneden wordt."
     },
     "shoulderStrapPlacement": {
-      "t": "Shoulderstrap placement",
-      "d": "Determines whether the shoulder strap is placed closer to the neck (lower numbers) or the shoulder (higher numbers)."
+      "t": "Plaatsing schouderbandjes",
+      "d": "Bepaalt of de schouderbandjes dichter bij de nek (lager cijfer) of dichter bij de schouder (hoger cijfer) geplaatst worden."
     },
     "shoulderStrapWidth": {
-      "t": "Shoulderstrap width",
-      "d": "The width of the shoulder straps."
+      "t": "Breedte schouderband",
+      "d": "De breedte van de schouderbandjes."
     },
     "stretchFactor": {
-      "t": "Stretch",
-      "d": "Determines the horizontal negative ease."
+      "t": "Rek",
+      "d": "Bepaalt hoeveel kleiner de horizontale omtrek is dan je lichaamsmaten. In andere woorden, hoe strak alles zit."
     }
+  },
+  "p": {
+    "back": "Achterzijde",
+    "backBase": "Basis rug",
+    "backPocketWelt": "Back pocket welt",
+    "base": "Basis",
+    "bentBack": "Achterzijde Bent",
+    "bentBase": "Basis Bent",
+    "bentFront": "Voorzijde Bent",
+    "bentSleeve": "Mouw Bent",
+    "bentTopSleeve": "Bovenmouw Bent",
+    "bentUnderSleeve": "Ondermouw Bent",
+    "buttonholePlacket": "Knoopsgatenpat",
+    "buttonPlacket": "Knopenpat",
+    "collar": "Kraag",
+    "collarStand": "Kraagstaander",
+    "cuff": "Manchet",
+    "fabricTail": "Stof staart",
+    "fabricTip": "Stof tip",
+    "frontBase": "Basis voorzijde",
+    "frontFacing": "Beleg vooraan",
+    "front": "Voorzijde",
+    "frontLeft": "Voorzijde links",
+    "frontLining": "Voering vooraan",
+    "frontRight": "Voorzijde rechts",
+    "gusset": "Gusset",
+    "hoodCenter": "Midden kap",
+    "hood": "Capuchon",
+    "hoodSide": "Zijkant kap",
+    "inset": "Inzet",
+    "interfacingTail": "Interfacing staart",
+    "interfacingTip": "Interfacing tip",
+    "liningTail": "Voering staart",
+    "liningTip": "Voering tip",
+    "loop": "Lus",
+    "panel1": "Deel 1",
+    "panel2": "Deel 2",
+    "panel3": "Deel 3",
+    "panel4": "Deel 4",
+    "panel5": "Deel 5",
+    "panel6": "Deel 6",
+    "panels": "Panelen",
+    "pocketBag": "Binnenzak",
+    "pocketFacing": "Zak beleg",
+    "pocketInterfacing": "Tussenvoering zak",
+    "pocket": "Zak",
+    "pocketWelt": "Paspel zak",
+    "side": "Zijkant",
+    "sleeveBase": "Basis mouw",
+    "sleevecap": "Mouwkop",
+    "sleevePlacketOverlap": "Mouwsplit boven",
+    "sleevePlacketUnderlap": "Mouwsplit onder",
+    "sleeve": "Mouw",
+    "topSleeve": "Bovenmouw",
+    "top": "Top",
+    "underCollar": "Onderkraag",
+    "underSleeve": "Ondermouw",
+    "waistband": "Tailleband",
+    "yoke": "Schouderpas"
   }
 }

@@ -1,7 +1,122 @@
 {
-  "t": "",
-  "d": "",
-  "p": {},
+  "t": "Pantalon portefeuille Waralee",
+  "d": "Waralee sont des pantalons enveloppés.",
+  "p": {
+    "back": "Retour",
+    "backBase": "Base dos",
+    "backPocketWelt": "Poche arrière passepoilée",
+    "base": "Base",
+    "bentBack": "Dos de Bent",
+    "bentBase": "Base de Bent",
+    "bentFront": "Avant de Bent",
+    "bentSleeve": "Manche de Bent",
+    "bentTopSleeve": "Partie supérieure de la manche de Bent",
+    "bentUnderSleeve": "Partie inférieure de la manche de Bent",
+    "buttonholePlacket": "Patte de boutonnière",
+    "buttonPlacket": "Patte de boutonnage",
+    "collar": "Collier",
+    "collarStand": "Support de collier",
+    "cuff": "Manchette",
+    "fabricTail": "Queue en tissu",
+    "fabricTip": "Pointe en tissu",
+    "frontBase": "Base avant",
+    "frontFacing": "Doublure avant",
+    "front": "Avant",
+    "frontLeft": "Avant gauche",
+    "frontLining": "Doublure avant",
+    "frontRight": "Avant droit",
+    "gusset": "Soufflet",
+    "hoodCenter": "Capuchon centre",
+    "hood": "Capuche",
+    "hoodSide": "Capuchon côté",
+    "inset": "Encart",
+    "interfacingTail": "Entoilage de queue",
+    "interfacingTip": "Entoilage de pointe",
+    "liningTail": "Doublure de queue",
+    "liningTip": "Doublure de pointe",
+    "loop": "Boucle",
+    "panel1": "Pièce 1",
+    "panel2": "Pièce 2",
+    "panel3": "Pièce 3",
+    "panel4": "Pièce 4",
+    "panel5": "Pièce 5",
+    "panel6": "Pièce 6",
+    "panels": "Pièces",
+    "pocketBag": "Sac de poche",
+    "pocketFacing": "Parement de poche",
+    "pocketInterfacing": "Entoilage de poche",
+    "pocket": "Poche",
+    "pocketWelt": "Rabat de poche",
+    "side": "Côté",
+    "sleeveBase": "Base de manche",
+    "sleevecap": "Capuchon de manche",
+    "sleevePlacketOverlap": "Patte de manche haut",
+    "sleevePlacketUnderlap": "Patte de manche bas",
+    "sleeve": "Manche",
+    "topSleeve": "Haut de manche",
+    "top": "Haut",
+    "underCollar": "Sous-col",
+    "underSleeve": "Sous-manche",
+    "waistband": "Ceinture",
+    "yoke": "Empiècement"
+  },
   "s": {},
-  "o": {}
+  "o": {
+    "backPocket": {
+      "t": "Poche arrière",
+      "d": "S'il faut inclure une poche arrière ou non"
+    },
+    "frontPocket": {
+      "t": "Poche avant",
+      "d": "Inclure ou non des poches avant"
+    },
+    "hemWidth": {
+      "t": "Taille des ourlets",
+      "d": "Taille de l'ourlet au bas du pantalon"
+    },
+    "waistbandWidth": {
+      "t": "Ceinture",
+      "d": "Taille de la ceinture"
+    },
+    "waistRaise": {
+      "t": "Hauteur de taille",
+      "d": "Combien il faut élever la taille de la mesure de hauteur d'assise, ce qui influence la profondeur de la coupe de l'entre-jambe."
+    },
+    "crotchBack": {
+      "t": "Fourche arrière",
+      "d": "Le pourcentage de la circonférence d'assise à l'arrière. Cela crée plus ou moins d'espace entre la couture latérale et le dos."
+    },
+    "crotchFront": {
+      "t": "Fourche avant",
+      "d": "Le pourcentage de la circonférence d'assise à l'avant. Cela crée plus ou moins d'espace entre la couture latérale et le devant."
+    },
+    "crotchFactorBackHor": {
+      "t": "Reculer la fourche arrière",
+      "d": "Utilisé pour déplacer la courbe de la fourche arrière horizontalement"
+    },
+    "crotchFactorBackVer": {
+      "t": "Remonter la fourche arrière",
+      "d": "Utilisé pour déplacer la courbe de la fourche arrière verticalement"
+    },
+    "crotchFactorFrontHor": {
+      "t": "Avancer la fourche avant",
+      "d": "Utilisé pour déplacer la courbe de la fourche avant horizontalement"
+    },
+    "crotchFactorFrontVer": {
+      "t": "Remonter la fourche avant",
+      "d": "Utilisé pour déplacer la courbe de la fourche avant verticalement"
+    },
+    "waistOverlap": {
+      "t": "Chevauchement de la ceinture",
+      "d": "Cela indique combien vous voulez que les pans de la jambe se chevauchent à la taille. Un réglage de 0 les ferait rencontrer à la couture latérale, et un cadre de 100 les fait se rencontrer à l'avant/arrière."
+    },
+    "legShortening": {
+      "t": "Réduction des jambes",
+      "d": "Cela indique la longueur du pantalon. C'est un facteur de la mesure de l'entrejambe. Plus la valeur est grande, plus elle sera retirée de la longueur."
+    },
+    "backRaise": {
+      "t": "Élévation arrière",
+      "d": "Ce réglage lève la taille dans le dos, la taille ne se pose pas horizontalement, mais est inclinée à l'arrière. Ce réglage vous permet de la relever dans le dos si vous en avez besoin pour un bon ajustement."
+    }
+  }
 }
