@@ -26,6 +26,15 @@ export const shared = {
   measurements: ['hips', 'seat', 'waistToHips', 'waistToSeat', 'waistToUpperLeg'],
   hide: { self: true },
   options: {
+    // Constants
+
+    /*
+     * How much the edge of the waistband/skirt should surpass center front on the
+     * buttonhole side, which is the side that is facing outwards.
+     * As a percentage of the hips measurements. Default is 1.3%.
+     */
+    surpassCf: 0.015,
+
     // Fit options
 
     /*
@@ -55,7 +64,7 @@ export const shared = {
     // Style options
 
     waistbandWidth: {
-      pct: 4.5,
+      pct: 4.4,
       min: 2,
       max: 10,
       menu: 'style',
