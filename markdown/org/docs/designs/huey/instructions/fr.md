@@ -78,21 +78,21 @@ A neckband can be useful to stablise and cover the neck seams but it is optional
 - _Finish_ seam if not using neckband then proceed to Step 7.
 - Press neckband down.
 - On outside _Topstitch_ neckband in place.
-- On inside, trim neckband down to topstitching.
+- À l'intérieur, coupez la bande de cou vers le bas pour le surfiler.
 
-### Step 7: Attaching the waistband
+### Étape 7 : Attacher la ceinture
 
-- Fold the waistband in half lengthwise matching wrong sides. Repasser.
-- With _good sides_ together sew the waistband to the bottom of the back and front.
-- Press the seam allowance up.
+- Pliez la ceinture en 2 dans le sens de la longueur envers contre envers. Repasser.
+- Avec _bons côtés_ ensemble coudre la ceinture au bas du dos et de l'avant.
+- Repassez la couture vers le haut.
 - _Topstitch_ or _Edgestitch_ waistband seam allowance to the body.
 
-### Step 8: Attching the cuffs
+### Étape 8 : Attacher les poignets
 
-- With _good sides together_ sew the short egdes of the cuffs together to create two bands.
-- Press open the seam allowances.
+- Avec _bons côtés ensemble,_ coudre cotés courts des poignets pour créer deux bandes.
+- Repasser pour ouvrir la marge de couture.
 - (Optional) _Edgestitch_ the seam allowances down.
-- Fold the cuffs in half lengthwise matching wrong sides. Repasser.
+- Pliez les poignets en 2 dans le sens de la longueur envers contre envers. Repasser.
 - Matching seams and raw edges, pin the cuffs to the sleeves _good sides together_.
 - Sew the cuffs to the sleeves.
 - Press the seam allowances up.
