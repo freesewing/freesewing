@@ -1,4 +1,5 @@
 // Components
+// Pattern
 import { Pattern as PatternComponent } from './pattern/index.mjs'
 import { Svg as SvgComponent } from './pattern/svg.mjs'
 import { Defs as DefsComponent } from './pattern/defs.mjs'
@@ -12,6 +13,8 @@ import { Grid as GridComponent } from './pattern/grid.mjs'
 import { Text as TextComponent, TextOnPath as TextOnPathComponent } from './pattern/text.mjs'
 // Pattern Utils
 import { getProps, withinPartBounds, getId, translateStrings } from './pattern/utils.mjs'
+// PatternXray
+import { PatternXray as PatternXrayComponent } from './pattern-xray/index.mjs'
 
 /*
  * Export all components as named exports
@@ -28,6 +31,7 @@ export const Snippet = SnippetComponent
 export const Grid = GridComponent
 export const Text = TextComponent
 export const TextOnPath = TextOnPathComponent
+export const PatternXray = PatternXrayComponent
 
 /*
  * Export pattern utils

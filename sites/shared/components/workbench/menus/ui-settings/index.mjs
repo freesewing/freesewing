@@ -19,7 +19,7 @@ const UiSetting = ({ name, control, ...rest }) => (
 )
 
 export const UiSettings = ({ update, ui, control, language, DynamicDocs, view, setView }) => {
-  const settingsConfig = loadSettingsConfig(ui, view)
+  const settingsConfig = loadSettingsConfig()
 
   return (
     <WorkbenchMenu

@@ -13,7 +13,7 @@ const getPage = {
 }
 
 export const DocsTitle = ({ slug, className = '', site = 'org' }) => {
-  const { siteNav } = useNavigation()
+  const siteNav = useNavigation()
   const page = getPage[site](slug, siteNav)
 
   return page ? <span className={className}>{page.t}</span> : null

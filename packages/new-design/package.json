@@ -26,6 +26,9 @@
     "tips": "node ../../scripts/help.mjs",
     "lint": "npx eslint 'lib/*.mjs'",
     "i18n-only": "SITE=\"new-design/shared\" node ../../sites/shared/prebuild/i18n-only.mjs",
+    "prebuild": "node ./prebuild.mjs",
+    "precibuild_step6": "node ./prebuild.mjs",
+    "prewbuild": "node ./prebuild.mjs",
     "cibuild_step6": "node build.mjs",
     "wbuild": "node build.mjs",
     "wcibuild_step6": "node build.mjs"

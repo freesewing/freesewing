@@ -24,7 +24,7 @@
     "prettier": "npx prettier --write 'config/*' 'config/**/*' 'packages/**/src/*.mjs' 'packages/i18n/src/locales/**/*.*' 'packages/**/tests/*.mjs'",
     "reconfigure": "all-contributors generate && node --experimental-json-modules --no-warnings scripts/reconfigure.mjs",
     "prerelease": "lerna version --no-git-tag-version --no-push && yarn reconfigure && yarn buildall",
-    "buildall": "npm run reconfigure && lerna run cibuild_step0 && lerna run cibuild_step1 && lerna run cibuild_step2 && lerna run cibuild_step3 && lerna run cibuild_step4 && lerna run cibuild_step5 && lerna run cibuild_step6 && lerna run cibuild_step7",
+    "buildall": "lerna run cibuild_step0 && lerna run cibuild_step1 && lerna run cibuild_step2 && lerna run cibuild_step3 && lerna run cibuild_step4 && lerna run cibuild_step5 && lerna run cibuild_step6 && lerna run cibuild_step7",
     "build": "yarn buildall",
     "wbuild": "yarn wbuildall",
     "testall": "node scripts/testall.js",
@@ -43,7 +43,7 @@
     "checkdocs": "remark markdown --quiet --frail",
     "strapi:translate": "node scripts/strapi-en-to-other.mjs",
     "fixdocs": "remark markdown --quiet --frail --output",
-    "wbuildall": "npm run reconfigure && lerna run wcibuild_step0 && lerna run wcibuild_step1 && lerna run wcibuild_step2 && lerna run wcibuild_step3 && lerna run wcibuild_step4 && lerna run wcibuild_step5 && lerna run wcibuild_step6 && lerna run wcibuild_step7",
+    "wbuildall": "lerna run wcibuild_step0 && lerna run wcibuild_step1 && lerna run wcibuild_step2 && lerna run wcibuild_step3 && lerna run wcibuild_step4 && lerna run wcibuild_step5 && lerna run wcibuild_step6 && lerna run wcibuild_step7",
     "prepare": "husky install"
   },
   "repository": {
