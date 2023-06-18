@@ -1,14 +1,14 @@
 ---
-title: "Holmes deerstalker hat: What You Need"
+title: "Chapeau de détective Holmes : Ce dont vous avez besoin"
 ---
 
 Pour faire des Holmes, vous aurez besoin des éléments suivants :
 
 - Fourniture de base pour la couture
-- About 0.5 metres (0.6 yards) of a suitable fabric ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
-- About 0.5 metres (0.6 yards) of lining fabric ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
+- Environ 0,5 mètre (0,6 yard) d'un tissu approprié ([voir Options de tissu Holmes](/docs/patterns/holmes/fabric/))
+- Environ 0,5 mètre (0.6 yards) de tissu de doublure ([voir Options de tissu Holmes](/docs/patterns/holmes/fabric/))
 - A rigid material for the bill insert ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
-- (Optional) About 1 metre of 1" (2.5cm) crossgrain ribbon or petersham.
+- (Facultatif) Environ 1 mètre de ruban ou petersham de grain croisé de 1" (2,5 cm).
 - (Facultatif) 1 bouton couvert d'environ 3/4" (2cm) - 7/8" (22cm)
 
 <Note>
