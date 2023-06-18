@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useView } from 'shared/hooks/use-view.mjs'
+import { usePatternSettings } from 'shared/hooks/use-pattern-settings.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useControlState } from 'shared/components/account/control.mjs'
 // Dependencies
@@ -65,14 +66,21 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) =
 
   // State
   const [view, setView] = useView()
-  const [settings, setSettings] = useState({ ...baseSettings, embed: true })
+  const [settings, setSettings] = usePatternSettings()
   const [ui, setUi] = useState(defaultUi)
   const [error, setError] = useState(false)
+  const [mounted, setMounted] = useState(false)
 
   // Effect
   useEffect(() => {
-    // Force re-render when baseSettings changes. Required when they are loaded async.
-    setSettings({ ...baseSettings, embed: true })
+    /*
+     * baseSettings can be loaded async.
+     * So we need be careful when to trust the state in the URL or when to use the one from props.
+     */
+    if (!mounted && !settings && baseSettings) {
+      setMounted(true)
+      setSettings({ ...baseSettings, embed: true })
+    }
   }, [baseSettings])
 
   // Helper methods for settings/ui updates
