@@ -123,10 +123,10 @@ If preferred you can temporarily attach the bill insert another way that does no
 - Endroit contre endroit, en faisant coïncider les lignes de couture et les centres avant, coudre les deux pièces de la visière ensemble.
 - Fendre et découper(si besoin) la courbe extérieure en s'assurant de ne pas couper la couture. (Vous pourrez avoir envie de retourner et vérifier la forme avant cette étape)
 - Retourner et presser.
-- Insert visor insert in to sewn visor tightly so there is no gap on the outer curver and the seam allowances are all one on side of the visor insert. This will be the upper side of the visor.
-- Pin the inner curve together making sure that the outer edge is pulled tightly over the visor insert.
-- _Baste_ as close as you can to the inner curve of the visor insert, making sure you pull the fabric tightly over the outer edge as you sew.
-- Repeat for the remaining visor pieces.
+- Insérer l'insert de visière pour coudre la visière fermement de sorte qu'il n'y ait pas de trou sur la courbe extérieure et que les marges de coutures sont sur le côté de l'insert de visière. Ce sera la partie haute de la visière.
+- Épingler la courbe intérieure ensemble en s'assurant que le bord extérieur soit bien tiré au-dessus de l'insert de visière.
+- _Collez_ aussi près que possible de la courbe intérieure de l'insert de visière, en vous assurant de bien tirer le tissu sur le bord extérieur pendant que vous cousez.
+- Répéter ceci pour les pièces de visière restantes.
 
 ### Étape 5 : Assemblage et doublure
 
@@ -134,9 +134,9 @@ Une fois de plus, il y a deux méthodes pour l'assemblage et la doublure finales
 
 #### Méthode de montage et de doublure 1
 
-- Les centres d'appariement et les lignes de couture alignent le rabat à droite de l'un des panneaux qui ne fait pas partie de la couture centrale de la couronne. Making sure the faced side is placed against the crown (if faced).
-- Sew ear flap to the crown along seam lines.
-- Repeat for the remaining ear flap on the opposite side of the crown.
+- Les centres d'appariement et les lignes de couture alignent le rabat à droite de l'un des panneaux qui ne fait pas partie de la couture centrale de la couronne. Veiller à ce que le côté face soit placé contre la couronne (s'il s'agit d'une face).
+- Cousez le rabat de l'oreille à la couronne le long des lignes de couture.
+- Répétez l'opération pour le rabat d'oreille restant sur le côté opposé de la couronne.
 - Aligner le centre avant de la visière avec le côté droit de la couture centrale de la couronne en s'assurant que l'insert de la visière se trouve en bas.
 - Bâtissez à la main la visière sur la couronne en faisant coïncider les lignes de bâti de la visière avec les lignes de couture de la couronne. Il est plus facile de _bâtir_ le centre vers le bas d'abord, puis de travailler du centre vers l'extérieur.
 - Coudre la visière à la couronne le long des lignes de couture. Vous trouverez peut-être plus facile de coudre la visière à la main de façon permanente plutôt que d'utiliser une machine.
