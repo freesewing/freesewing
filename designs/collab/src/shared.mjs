@@ -21,6 +21,23 @@ function draft({ store, measurements, options, part }) {
   return part
 }
 
+/*
+ * Helper method like pctBasedOn, but using quarter hips for measurement
+ */
+const pctBasedOnQhips = () => ({
+  toAbs: (value, { measurements }, mergedOptions) => value * (measurements.hips / 4),
+  fromAbs: (value) => measurements.hips / 4 / value,
+})
+
+/*
+ * Helper method like pctBasedOn, but using hips to upperleg
+ */
+const pctBasedOnHipsToUleg = () => ({
+  toAbs: (value, { measurements }, mergedOptions) =>
+    value * (measurements.waistToUpperLeg - measurements.waistToHips),
+  fromAbs: (value) => (measurements.waistToUpperLeg - measurements.waistToHips) / value,
+})
+
 export const shared = {
   name: 'collab:shared',
   measurements: ['hips', 'seat', 'waistToHips', 'waistToSeat', 'waistToUpperLeg'],
@@ -49,6 +66,7 @@ export const shared = {
       menu: 'fit',
       ...pctBasedOn('hips'),
     },
+
     /*
      * Amount of ease at the seat.
      * Needs to be sufficient to allow dexterity but not so much that it's to flared
@@ -72,13 +90,36 @@ export const shared = {
     },
 
     // Pocket options
-    frontPocketStart: {
-      pct: 20,
-      min: 10,
-      max: 30,
+
+    /*
+     * Controls the curvature of the front pocket opening
+     */
+    frontPocketOpeningBend: {
+      pct: 80,
+      min: 0,
+      max: 100,
       menu: 'pockets',
-      toAbs: (value, { measurements }, mergedOptions) => value * (measurements.hips / 4),
-      fromAbs: (value) => measurements.hips / 4 / value,
+    },
+
+    /*
+     * Controls the depth of the front pocket opening as a factor of
+     * waistToUpperLeg - waistToHip
+     */
+    frontPocketOpeningDepth: {
+      pct: 33,
+      min: 25,
+      max: 45,
+      menu: 'pockets',
+      ...pctBasedOnQhips(),
+    },
+
+    // Pocket options
+    frontPocketOpeningStart: {
+      pct: 33,
+      min: 25,
+      max: 45,
+      menu: 'pockets',
+      ...pctBasedOnQhips(),
     },
 
     // Advanced options
@@ -106,20 +147,28 @@ export const shared = {
       min: 4,
       max: 8,
       menu: 'advanced',
-      toAbs: (value, { measurements }, mergedOptions) => value * (measurements.hips / 4),
-      fromAbs: (value) => measurements.hips / 4 / value,
+      ...pctBasedOnQhips(),
     },
 
+    /*
+     * The fly length.
+     */
+    flyLength: {
+      pct: 75,
+      min: 50,
+      max: 85,
+      menu: 'advanced',
+      ...pctBasedOnHipsToUleg(),
+    },
     /*
      * The fly width.
      */
     flyWidth: {
-      pct: 5,
-      min: 4,
-      max: 8,
+      pct: 16,
+      min: 10,
+      max: 22,
       menu: 'advanced',
-      toAbs: (value, { measurements }, mergedOptions) => value * (measurements.hips / 4),
-      fromAbs: (value) => measurements.hips / 4 / value,
+      ...pctBasedOnQhips(),
     },
 
     /*
@@ -136,6 +185,17 @@ export const shared = {
       max: 60,
       menu: 'advanced',
     },
+
+    /*
+     * Curvature of the J-Seam bend
+     */
+    jseamBend: {
+      pct: 65,
+      min: 50,
+      max: 100,
+      menu: 'advanced',
+    },
+
     /*
      * Minimal dart width. Below this width, we don't create darts but
      * instead do all shaping in the side seams.

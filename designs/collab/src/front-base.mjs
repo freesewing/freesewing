@@ -1,7 +1,7 @@
 import { back } from './back.mjs'
 
 export const xOnWaist = (x, part) => {
-  const { options, utils, points } = part.shorthand()
+  const { options, utils, points, Point } = part.shorthand()
 
   return options.waistSlant
     ? utils.curveIntersectsX(points.topLeft, points.topCp, points.topRight, points.topRight, x)
@@ -102,5 +102,6 @@ function draftFrontBase({
 export const frontBase = {
   name: 'collab:frontBase',
   draft: draftFrontBase,
+  hide: { self: true },
   after: back,
 }
