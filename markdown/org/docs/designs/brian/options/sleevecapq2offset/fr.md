@@ -1,5 +1,5 @@
 - - -
-title: "Sleevecap Q2 offset"
+title: "décalage Q2 de la tête de manche"
 - - -
 
 ***
