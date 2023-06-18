@@ -6,7 +6,7 @@ import { objUpdate } from 'shared/utils.mjs'
 
 export const ns = menuNs
 
-export const DraftView = ({
+export const InspectView = ({
   design,
   pattern,
   patternConfig,
@@ -62,11 +62,7 @@ export const DraftView = ({
     }
   } else {
     renderProps = pattern.getRenderProps()
-    output = ui.inspect ? (
-      <InspectorPattern {...{ renderProps, inspector }} />
-    ) : (
-      <ShowPattern {...{ renderProps, inspector }} />
-    )
+    output = <InspectorPattern {...{ renderProps, inspector }} />
   }
 
   return (
