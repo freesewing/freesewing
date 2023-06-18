@@ -1,3 +1,5 @@
+import { shared } from './shared.mjs'
+
 /*
  * This function drafts the back panel of the skirt
  */
@@ -113,7 +115,7 @@ function draftBack({
     points.title = points.logo.shift(-90, 70)
     macro('title', {
       at: points.title,
-      nr: 2,
+      nr: 3,
       title: 'back',
     })
 
@@ -170,4 +172,8 @@ function draftBack({
   return part
 }
 
-export const back = { name: 'back', draft: draftBack }
+export const back = {
+  name: 'collab:back',
+  draft: draftBack,
+  after: shared,
+}

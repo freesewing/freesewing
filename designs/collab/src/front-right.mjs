@@ -1,4 +1,6 @@
-function draftFront({
+import { frontBase } from './back.mjs'
+
+function draftFrontRight({
   Point,
   points,
   Path,
@@ -37,6 +39,11 @@ function draftFront({
   points.trueBottomRight = points.topRight.shiftTowards(points.bottomRight, store.get('sideSeam'))
   points.trueBottomLeft = new Point(0, points.trueBottomRight.y)
 
+  // Front pockets
+  //points.frontPocketStart = (options.waistSlant > 0)
+  //  ? utils.curveIntersectsY(
+  //    points.points.topLeft
+
   // Seamline
   paths.seam = new Path()
     .move(points.topLeft)
@@ -56,8 +63,8 @@ function draftFront({
     points.title = points.logo.shift(-90, 70)
     macro('title', {
       at: points.title,
-      nr: 1,
-      title: 'front',
+      nr: 2,
+      title: 'frontRight',
     })
 
     paths.cb = new Path()
@@ -114,4 +121,8 @@ function draftFront({
   return part
 }
 
-export const front = { name: 'front', draft: draftFront }
+export const frontRight = {
+  name: 'collab:frontRight',
+  draft: draftFrontRight,
+  from: frontBase,
+}

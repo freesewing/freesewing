@@ -3,14 +3,16 @@ import { data } from '../data.mjs'
 // Parts
 import { shared } from './shared.mjs'
 import { back } from './back.mjs'
-import { front } from './front.mjs'
+import { frontBase } from './front-base.mjs'
+import { frontLeft } from './front-left.mjs'
+import { frontRight } from './front-right.mjs'
 import { waistband } from './waistband.mjs'
 
 // Create new design
 const Collab = new Design({
   data,
-  parts: [shared, back, front, waistband],
+  parts: [shared, back, frontBase, frontLeft, frontRight, waistband],
 })
 
 // Named exports
-export { shared, back, front, waistband, Collab }
+export { shared, back, frontBase, frontLeft, frontRight, waistband, Collab }

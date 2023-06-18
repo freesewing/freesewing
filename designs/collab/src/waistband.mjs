@@ -1,3 +1,5 @@
+import { shared } from './shared.mjs'
+
 function draftWaistband({
   Point,
   points,
@@ -126,4 +128,8 @@ function draftWaistband({
   return part
 }
 
-export const waistband = { name: 'waistband', draft: draftWaistband }
+export const waistband = {
+  name: 'collab:waistband',
+  draft: draftWaistband,
+  after: shared,
+}

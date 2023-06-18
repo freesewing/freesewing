@@ -22,7 +22,7 @@ function draft({ store, measurements, options, part }) {
 }
 
 export const shared = {
-  name: 'shared',
+  name: 'collab:shared',
   measurements: ['hips', 'seat', 'waistToHips', 'waistToSeat', 'waistToUpperLeg'],
   hide: { self: true },
   options: {
@@ -71,6 +71,16 @@ export const shared = {
       ...pctBasedOn('hips'),
     },
 
+    // Pocket options
+    frontPocketStart: {
+      pct: 20,
+      min: 10,
+      max: 30,
+      menu: 'pockets',
+      toAbs: (value, { measurements }, mergedOptions) => value * (measurements.hips / 4),
+      fromAbs: (value) => measurements.hips / 4 / value,
+    },
+
     // Advanced options
 
     /*
@@ -86,6 +96,7 @@ export const shared = {
         value * (measurements.waistToSeat - measurements.waistToHips),
       fromAbs: (value) => (measurements.waistToSeat - measurements.waistToHips) / value,
     },
+
     /*
      * The dart width.
      * Doesn't influence fit, but rather determines how much shaping is done in the darts
@@ -98,6 +109,19 @@ export const shared = {
       toAbs: (value, { measurements }, mergedOptions) => value * (measurements.hips / 4),
       fromAbs: (value) => measurements.hips / 4 / value,
     },
+
+    /*
+     * The fly width.
+     */
+    flyWidth: {
+      pct: 5,
+      min: 4,
+      max: 8,
+      menu: 'advanced',
+      toAbs: (value, { measurements }, mergedOptions) => value * (measurements.hips / 4),
+      fromAbs: (value) => measurements.hips / 4 / value,
+    },
+
     /*
      *  Percentage of the full circumference that should be made up
      *  by the front panels. Increasing this will shift the side seams
