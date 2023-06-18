@@ -1,25 +1,25 @@
 - - -
-title: "Hortensia handbag: Sewing Instructions"
+title: "Sac à main Hortensia : Instructions de couture"
 - - -
 
-### (Optional) Step 1: Face the main fabric
+### (Optionnel) Étape 1 : Entoiler le tissu principal
 
-- If needed, Interface your main fabric pieces.
+- Au besoin, entoiler vos pièces de tissu principal.
 
-### Step 2: Sew the front and back panels to the bottom
+### Étape 2 : Coudre les panneaux avant et arrière à celui du bas
 
-- With _good sides together_ sew the front and back panels to the bottom panel.
-- Press the seam allowances towards the bottom panel.
-- On the outside _Edgestitch_ the seam allowance to the bottom panel.
+- _Endroit contre endroit,_ coudre les panneaux avant et arrière sur le panneau du bas.
+- Repassez la marge de couture vers le panneau du bas.
+- Sur l'extérieur _surpiquer_ la marge de couture sur le panneau du bas.
 
-### Step 3: Create and attach straps
+### Étape 3 : Créer et attacher les sangles
 
-- If needed, face your straps.
-- Fold the straps in half lengthwise with _good sides matching_.
-- Sew the raw edges together making sure to leave a gap for turning.
+- Au besoin, entoiler vos sangles.
+- Repliez les sangles en deux dans le sens de la longueur _endroit contre endroit_.
+- Coudre les bords bruts ensemble en laissant un vide pour tourner.
 - Retourner à l'envers.
 - _Slipstich_ the opening closed.
-- Alternatively _Edgestitch_ all the edges.
+- Alternativement _surpiquer_ les bords.
 - Attach one strap to the front panel and one strap to the back panel by sewing a rectangle and a cross.
 
 <Warning>
