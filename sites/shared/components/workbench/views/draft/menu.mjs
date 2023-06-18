@@ -7,9 +7,8 @@ import {
   ns as coreMenuNs,
 } from 'shared/components/workbench/menus/core-settings/index.mjs'
 import { UiSettings, ns as uiNs } from 'shared/components/workbench/menus/ui-settings/index.mjs'
-import { Inspector, ns as inspectorNs } from './inspector/menu.mjs'
 
-export const ns = [...coreMenuNs, ...designMenuNs, ...uiNs, inspectorNs]
+export const ns = [...coreMenuNs, ...designMenuNs, ...uiNs]
 
 export const DraftMenu = ({
   design,
@@ -20,8 +19,6 @@ export const DraftMenu = ({
   language,
   account,
   DynamicDocs,
-  inspector = false,
-  renderProps,
   view,
   setView,
 }) => {
@@ -39,7 +36,6 @@ export const DraftMenu = ({
 
   return (
     <nav className="grow mb-12">
-      {ui.inspect ? <Inspector {...menuProps} {...{ ui, inspector, renderProps }} /> : null}
       <DesignOptions {...menuProps} />
       <CoreSettings {...menuProps} />
       <UiSettings {...menuProps} {...{ ui, view, setView }} />

@@ -1,6 +1,5 @@
 import fs from 'fs'
 import axios from 'axios'
-import { strapiHost } from '../../shared/config/freesewing.mjs'
 import { unified } from 'unified'
 import remarkParser from 'remark-parse'
 import remarkCompiler from 'remark-stringify'
@@ -8,6 +7,8 @@ import remarkFrontmatter from 'remark-frontmatter'
 import remarkFrontmatterExtractor from 'remark-extract-frontmatter'
 import yaml from 'yaml'
 import { remarkIntroPlugin } from '../../shared/mdx/remark-intro-plugin.mjs'
+
+const strapiHost = 'https://posts.freesewing.org'
 
 /*
  * Helper method to extract the intro from a Strapi post
@@ -70,7 +71,7 @@ const transformBlogPost = async (p, lang) => {
   for (const field of asIs) post[field] = p[field]
   post.intro = p.intro || p.title
   post.date = p.date
-  post.author = 'joost'
+  post.author = 1
   post.image = {
     _type: 'image',
     _sanityAsset: `image@https://posts.freesewing.org${p.image.url}`,
@@ -111,7 +112,7 @@ const transformShowcasePost = async (p, lang) => {
   for (const field of asIs) post[field] = p[field]
   post.intro = p.intro || p.title
   post.date = p.date
-  post.maker = 'joost'
+  post.maker = 1
   post.image = [
     {
       _type: 'image',
