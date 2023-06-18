@@ -12,7 +12,7 @@ import {
   UserIcon,
   ThemeIcon,
   I18nIcon,
-  MeasureIcon,
+  MeasieIcon,
   PageIcon,
   GitHubIcon,
   PlusIcon,
@@ -53,7 +53,7 @@ const NavIcons = ({ setModal }) => {
         color={colors[3]}
         extraClasses="hidden lg:flex"
       >
-        <MeasureIcon className={iconSize} />
+        <MeasieIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
       <NavButton
@@ -128,7 +128,7 @@ export const Header = ({ setSearch }) => {
       <div className="m-auto md:px-8">
         <div className="p-0 flex flex-row gap-2 justify-between text-neutral-content items-center">
           {/* Non-mobile content */}
-          <div className="hidden lg:flex lg:px-2 flex-row items-center justify-center w-full">
+          <div className="hidden lg:flex lg:flex-row lg:justify-between items-center xl:justify-center w-full">
             <NavIcons setModal={setModal} setSearch={setSearch} />
           </div>
 
