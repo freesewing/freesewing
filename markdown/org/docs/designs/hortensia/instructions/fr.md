@@ -83,10 +83,10 @@ It is recommended to leave the gap for turning on the side rather than the top o
 - With _good sides together_ sew the front and back lining panels to the bottom lining panel.
 - With _good sides together_ attach the lining side panels.
 - Press under the top seam allowances.
-- Alernatively you can bind the top edges.
-- Place the lining inside the bag _wrong sides facing_ eachother.
+- Alernativement vous pouvez mettre un biais sur les bords supérieurs.
+- Placez la doublure à l'intérieur du sac _envers contre envers_.
 - _Slipstitch_ or _Whipstitch_ the lining to the zipper panel.
 
 ### Étape 10: Profitez-en!
 
-Voilà! Vous avez terminé ! Now go enjoy you new bag!
+Voilà! Vous avez terminé ! Maintenant, profitez de votre nouveau sac !
