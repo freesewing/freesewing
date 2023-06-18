@@ -20,7 +20,7 @@ title: "Sac à main Hortensia : Instructions de couture"
 - Retourner à l'envers.
 - _Slipstich_ the opening closed.
 - Alternativement _surpiquer_ les bords.
-- Attach one strap to the front panel and one strap to the back panel by sewing a rectangle and a cross.
+- Attachez une sangle sur le panneau avant et une sangle sur le panneau arrière en cousant un rectangle et une croix.
 
 <Warning>
 
@@ -80,9 +80,9 @@ It is recommended to leave the gap for turning on the side rather than the top o
 
 ### Étape 9 : Doublure
 
-- With _good sides together_ sew the front and back lining panels to the bottom lining panel.
-- With _good sides together_ attach the lining side panels.
-- Press under the top seam allowances.
+- _Endroit contre endroit,_ coudre les panneaux avant et arrière de la doublure sur le panneau de doublure du bas.
+- _Endroit contre endroit_attachez les panneaux de côté de la doublure.
+- Repassez vers le bas les marges de couture.
 - Alernativement vous pouvez mettre un biais sur les bords supérieurs.
 - Placez la doublure à l'intérieur du sac _envers contre envers_.
 - _Slipstitch_ or _Whipstitch_ the lining to the zipper panel.
