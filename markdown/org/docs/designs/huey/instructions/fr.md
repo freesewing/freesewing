@@ -31,22 +31,22 @@ If you don't wish to add a drawstring you can skip to Step 4.
   - The hole should be about 1.5-2cm from the edge of the fabric. This is to keep your seam allowance out of the way.
   - The hole should be located slightly up from the bottom of the inner curve. This is to keep it away from the front seams.
 - On the wrong side of the fabric, face where you are making the hole to stabilise the fabric.
-- Make a buttonhole at your mark either by hand or by your machine's method.
-- Alternatively construct or use eyelets at the mark.
+- Faites une boutonnière à votre marque, soit à la main, soit a la machine.
+- Vous pouvez aussi construire ou utiliser des œillets à la marque.
 
 <Tip>
 
-If you don't have or don't wish to use any interfacing you can use a scrap piece of sturdy fabric such as denim.
+Si vous n'avez pas ou ne souhaitez pas utiliser d'entoilage, vous pouvez utiliser un morceau de tissu robuste tel que le denim.
 
 </Tip>
 
 <Note>
 
-The drawstrings will be threaded after the hoodie is constructed.
+Les cordons seront enfilés après la construction du sweat à capuche.
 
 </Note>
 
-### Step 4: Prepping the hood
+### Etape 4 : Préparation de la capuche
 
 - With _good sides together_, matching sets, sew the hood pieces together along the outer curve edge.
 - With _good sides together_, matching seams, sew the inner hood to the outer hood along the inner curve edge.
