@@ -4,9 +4,9 @@ title: "Nombre de pans"
 
 ***
 
-Controls the number of panels there are in the crown
+Contrôle le nombre de panneaux dans la couronne
 
-![Illustration showing the effect of this option](gores.svg)
+![Illustration montrant l'effet de cette option](gores.svg)
 
 ## Effet de cette option sur le motif
 
