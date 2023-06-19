@@ -4201,17 +4201,10 @@
   resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.3.4.tgz#e913e8175db8307d78b4e8fa690408ba6b65dee4"
   integrity sha512-KnRanxnpfpjUTqTCXslZSEdLfXExwgNxYPdiO2WGUj8+HDjFi8R3k5RVKPeSCzLjCcshCAtVO2QBbVuAV4kTnw==
 
-"@types/codemirror@^5.60.4":
+"@types/codemirror@^5.60.4", "@types/codemirror@~5.60.5":
   version "5.60.8"
   resolved "https://registry.yarnpkg.com/@types/codemirror/-/codemirror-5.60.8.tgz#b647d04b470e8e1836dd84b2879988fc55c9de68"
   integrity sha512-VjFgDF/eB+Aklcy15TtOTLQeMjTo07k7KAjql8OK5Dirr7a6sJY4T1uVBDuTVG9VEmn1uUsohOpYnVfgC6/jyw==
-  dependencies:
-    "@types/tern" "*"
-
-"@types/codemirror@~5.60.5":
-  version "5.60.7"
-  resolved "https://registry.yarnpkg.com/@types/codemirror/-/codemirror-5.60.7.tgz#efbb78e5e79f90c6762c2127c02096648e600808"
-  integrity sha512-QXIC+RPzt/1BGSuD6iFn6UMC9TDp+9hkOANYNPVsjjrDdzKphfRkwQDKGp2YaC54Yhz0g6P5uYTCCibZZEiMAA==
   dependencies:
     "@types/tern" "*"
 
@@ -4384,10 +4377,10 @@
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.194.tgz#b71eb6f7a0ff11bff59fc987134a093029258a76"
   integrity sha512-r22s9tAS7imvBt2lyHC9B8AGwWnXaYb1tY09oyLkXDs4vArpYJzw09nj8MLx5VfciBPGIb+ZwG0ssYnEPJxn/g==
 
-"@types/marked@^3.0.1":
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/@types/marked/-/marked-3.0.3.tgz#37878f405d5f0cff0e6128cea330bd0aa8df8cb3"
-  integrity sha512-ZgAr847Wl68W+B0sWH7F4fDPxTzerLnRuUXjUpp1n4NjGSs8hgPAjAp7NQIXblG34MXTrf5wWkAK8PVJ2LIlVg==
+"@types/marked@^4.0.7":
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/@types/marked/-/marked-4.3.1.tgz#45fb6dfd47afb595766c71ed7749ead23f137de3"
+  integrity sha512-vSSbKZFbNktrQ15v7o1EaH78EbWV+sPQbPjHG+Cp8CaNcPFUEfjZ0Iml/V0bFDwsTlYe8o6XC5Hfdp91cqPV2g==
 
 "@types/mdast@^3.0.0":
   version "3.0.11"
@@ -7988,16 +7981,16 @@ easy-extender@^2.3.4:
   dependencies:
     lodash "^4.17.10"
 
-easymde@2.16.0:
-  version "2.16.0"
-  resolved "https://registry.yarnpkg.com/easymde/-/easymde-2.16.0.tgz#631608e51565430c469be56c6aef1c0ead748495"
-  integrity sha512-RNeb+JGCBfbhlyuwGfBqImt3lWeb8sy/3AH7O7IRk0N6YMwVXIKAam5Ph2H4cbjHl1mkAJ/ssxqbytLQvZsISA==
+easymde@2.18.0:
+  version "2.18.0"
+  resolved "https://registry.yarnpkg.com/easymde/-/easymde-2.18.0.tgz#ff1397d07329b1a7b9187d2d0c20766fa16b3b1b"
+  integrity sha512-IxVVUxNWIoXLeqtBU4BLc+eS/ScYhT1Dcb6yF5Wchoj1iXAV+TIIDWx+NCaZhY7RcSHqDPKllbYq7nwGKILnoA==
   dependencies:
     "@types/codemirror" "^5.60.4"
-    "@types/marked" "^3.0.1"
+    "@types/marked" "^4.0.7"
     codemirror "^5.63.1"
     codemirror-spell-checker "1.1.2"
-    marked "^3.0.4"
+    marked "^4.1.0"
 
 eazy-logger@^4.0.1:
   version "4.0.1"
@@ -12905,10 +12898,10 @@ markdown-table@^3.0.0:
   resolved "https://registry.yarnpkg.com/markdown-table/-/markdown-table-3.0.3.tgz#e6331d30e493127e031dd385488b5bd326e4a6bd"
   integrity sha512-Z1NL3Tb1M9wH4XESsCDEksWoKTdlUafKc4pt0GRwjUyXaCFZ+dc3g2erqB6zm3szA2IUSi7VnPI+o/9jnxh9hw==
 
-marked@^3.0.4:
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-3.0.8.tgz#2785f0dc79cbdc6034be4bb4f0f0a396bd3f8aeb"
-  integrity sha512-0gVrAjo5m0VZSJb4rpL59K1unJAMb/hm8HRXqasD8VeC8m91ytDPMritgFSlKonfdt+rRYYpP/JfLxgIX8yoSw==
+marked@^4.1.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-4.3.0.tgz#796362821b019f734054582038b116481b456cf3"
+  integrity sha512-PRsaiG84bK+AMvxziE/lCFss8juXjNaWzVbN5tXAm4XjeaS9NAHhop+PjQxz2A9h8Q4M/xGmzP8vqNwy6JeK0A==
 
 matcher@^4.0.0:
   version "4.0.0"
