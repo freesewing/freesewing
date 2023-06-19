@@ -115,7 +115,7 @@ function draftBack({
     points.title = points.logo.shift(-90, 70)
     macro('title', {
       at: points.title,
-      nr: 3,
+      nr: 1,
       title: 'back',
     })
 
