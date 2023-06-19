@@ -5,25 +5,29 @@ import { useTranslation } from 'next-i18next'
 
 const namespaces = [...sanityNs]
 
-const BlogPostPage = (props) => {
+const ShowcasePage = (props) => {
   return <SanityPageWrapper {...props} namespaces={namespaces} />
 }
 
 /*
  * getStaticProps() is used to fetch data at build-time.
  *
- * On this page, it is loading the blog content from strapi.
+ * On this page, it is loading the showcase content from strapi.
  *
  * This, in combination with getStaticPaths() below means this
- * page will be used to render/generate all blog content.
+ * page will be used to render/generate all showcase content.
  *
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticProps({ params, locale }) {
   const { slug } = params
-  const post = await sanityLoader({ type: 'blog', language: locale, slug })
+  const post = await sanityLoader({ type: 'showcase', language: locale, slug })
     .then((data) => data[0])
     .catch((err) => console.log(err))
+
+  const designs = [post.design1 || null]
+  if (post.design2 && post.design2.length > 2) designs.push(post.design2)
+  if (post.design3 && post.design3.length > 2) designs.push(post.design3)
 
   return {
     props: {
@@ -33,15 +37,15 @@ export async function getStaticProps({ params, locale }) {
         title: post.title,
         date: post.date,
         caption: post.caption,
-        image: sanityImage(post.image),
+        image: sanityImage(post.image[0]),
+        designs,
       },
       // FIXME load the author separately
       author: {
-        displayname: post.author,
-        // slug: post.author.slug,
-        // about: post.author.about,
-        // image: strapiImage(post.author.picture, ['small']),
-        // about: post.author.about,
+        displayname: post.maker,
+        // slug: post.maker.slug,
+        // image: strapiImage(post.maker.picture, ['small']),
+        // ...(await mdxCompiler(post.maker.about)),
       },
       ...(await serverSideTranslations(locale, namespaces)),
     },
@@ -49,8 +53,8 @@ export async function getStaticProps({ params, locale }) {
 }
 
 export const getStaticPaths = async () => {
-  const paths = await sanityLoader({ language: 'en', type: 'blog' })
-    .then((data) => data.map((post) => `/blog/${post.slug.current}`))
+  const paths = await sanityLoader({ language: 'en', type: 'showcase' })
+    .then((data) => data.map((post) => `/showcase/${post.slug.current}`))
     .catch((err) => console.log(err))
 
   return {
@@ -65,4 +69,4 @@ export const getStaticPaths = async () => {
   }
 }
 
-export default BlogPostPage
+export default ShowcasePage

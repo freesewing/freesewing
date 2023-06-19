@@ -102,20 +102,20 @@ const MetaData = ({ authors = [], maintainers = [], updated = '20220825', locale
   </div>
 )
 
-export const PlainMdxWrapper = ({ MDX = false, components = {}, compile, children }) => {
-  const allComponents = { ...baseComponents, ...components }
-  const compiledMdx = MDX ? (
-    <MDX components={allComponents} />
-  ) : compile ? (
-    <ReactMarkdown components={allComponents}>{children}</ReactMarkdown>
-  ) : (
-    children
-  )
+export const PlainMdxWrapper = ({ MDX = false, components = {}, children, site = 'org' }) => {
+  const allComponents = { ...baseComponents(site), ...components }
+  const CompiledMdx = MDX ? <MDX components={allComponents} /> : children || ''
 
-  return <div className="searchme">{compiledMdx}</div>
+  return <div className="searchme">{MDX ? <MDX components={allComponents} /> : children}</div>
 }
 
-export const MdxWrapper = ({ MDX = false, frontmatter = {}, components = {}, children = [] }) => {
+export const MdxWrapper = ({
+  MDX = false,
+  frontmatter = {},
+  components = {},
+  children = [],
+  site = 'org',
+}) => {
   const { t } = useTranslation('docs')
 
   const { locale, slug } = useContext(NavigationContext)

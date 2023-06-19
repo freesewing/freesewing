@@ -3,7 +3,7 @@ import { createClient, groq } from 'next-sanity'
 const sanityId = process.env.SANITY_PROJECT || 'hl5bw8cj'
 
 let sanityClient
-export const sanityLoader = ({ query, language, type, slug }) => {
+export const sanityLoader = ({ query, language, type, slug, order }) => {
   sanityClient =
     sanityClient ||
     createClient({
@@ -18,6 +18,10 @@ export const sanityLoader = ({ query, language, type, slug }) => {
     query = `*[_type == "${type}${language}"`
     if (slug) query += ` && slug.current == "${slug}"`
     query += ']'
+  }
+
+  if (order) {
+    query += ` | order(${order})`
   }
 
   return sanityClient.fetch(query)

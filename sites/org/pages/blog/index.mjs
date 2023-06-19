@@ -1,6 +1,6 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { sanityLoader, sanityImage } from 'shared/sanity.mjs'
+import { sanityLoader, sanityImage } from 'site/components/sanity/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components
