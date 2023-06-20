@@ -5,16 +5,24 @@ import { MeasiesEditor } from './editor.mjs'
 import { Popout } from 'shared/components/popout.mjs'
 import { designMeasurements } from 'shared/utils.mjs'
 import { useTranslation } from 'next-i18next'
+import { useToast } from 'shared/hooks/use-toast.mjs'
+
 export const ns = ['wbmeasies', ...authNs, setsNs]
 
 const tabNames = ['chooseNew', 'editCurrent']
 export const MeasiesView = ({ design, Design, settings, update, missingMeasurements, setView }) => {
   const { t } = useTranslation(['wbmeasies'])
+  const toast = useToast()
+
   const tabs = tabNames.map((n) => t(n)).join(',')
 
   const loadMeasurements = (set) => {
-    update.settings(['measurements'], designMeasurements(Design, set.measies))
+    update.settings([
+      [['measurements'], designMeasurements(Design, set.measies)],
+      [['units'], set.imperial ? 'imperial' : 'metric'],
+    ])
     setView('draft')
+    toast.success(t('updatedMeasurements'))
   }
 
   return (
