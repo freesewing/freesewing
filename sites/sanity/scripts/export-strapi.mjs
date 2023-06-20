@@ -65,7 +65,7 @@ const transformBlogPost = async (p, lang) => {
   const asIs = ['title', 'linktitle', 'caption', 'body']
 
   const post = {
-    _id: `${lang}.blog.${p.slug}`,
+    _id: `${lang}--blog--${p.slug}`,
     _type: `blog${lang}`,
   }
   for (const field of asIs) post[field] = p[field]
@@ -106,7 +106,7 @@ const transformShowcasePost = async (p, lang) => {
   const asIs = ['title', 'caption', 'body']
 
   const post = {
-    _id: `${lang}.showcase.${p.slug}`,
+    _id: `${lang}--showcase--${p.slug}`,
     _type: `showcase${lang}`,
   }
   for (const field of asIs) post[field] = p[field]
@@ -149,7 +149,7 @@ const transformNewsletterPost = async (p) => {
   const asIs = ['title', 'body']
 
   const post = {
-    _id: `newsletter.${p.slug}`,
+    _id: `newsletter--${p.slug}`,
     _type: 'newsletter',
   }
   for (const field of asIs) post[field] = p[field]

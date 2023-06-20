@@ -27,6 +27,7 @@ module.exports = {
   extends: 'eslint:recommended',
   env: {
     es2021: true,
+    node: true,
   },
   // Required when using experimental EcmaScript features
   parser: '@babel/eslint-parser',

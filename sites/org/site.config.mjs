@@ -7,6 +7,9 @@ export const siteConfig = {
   bugsnag: {
     key: '1b3a900d6ebbfd071975e39b534e1ff5',
   },
+  sanity: {
+    project: process.env.SANITY_PROJECT || 'hl5bw8cj',
+  },
   languages: ['en', 'es', 'de', 'fr', 'nl'],
   site: 'FreeSewing.org',
 }

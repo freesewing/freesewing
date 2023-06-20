@@ -1,3 +1,4 @@
+import { ChoiceButton } from 'shared/components/choice-button.mjs'
 import { ChoiceLink } from 'shared/components/choice-link.mjs'
 import { OkIcon, NoIcon, WarningIcon } from 'shared/components/icons.mjs'
 import { useTranslation } from 'next-i18next'
@@ -16,26 +17,37 @@ const Title = ({ set, language }) => (
   </div>
 )
 
-export const CuratedSetLacksMeasies = ({ set, design, t, language }) => (
-  <ChoiceLink
-    icon={<NoIcon className="w-10 h-10 text-error" />}
-    title={<Title set={set} language={language} />}
-    href={`/new/pattern/${design}/sets/${set.id}`}
-  >
+export const CuratedSetLacksMeasies = ({ set, design, t, language, href, clickHandler }) => {
+  const inner = (
     <div className="flex flex-row gap-2 items-center">
       <WarningIcon className="w-6 h-6 shrink-0 text-error" />
       <span>{t('setLacksMeasiesForDesign', { design: t(`designs:${design}.t`) })}</span>
     </div>
-  </ChoiceLink>
-)
+  )
+  const wrapProps = {
+    icon: <NoIcon className="w-10 h-10 text-error" />,
+    title: <Title {...{ set, language }} />,
+  }
+  if (clickHandler) wrapProps.onClick = clickHandler
+  else if (href) wrapProps.href = href
 
-export const CuratedSetSummary = ({ set, language, href }) => (
-  <ChoiceLink
-    title={<Title set={set} language={language} />}
-    icon={<OkIcon className="w-10 h-10 text-success" stroke={3} />}
-    href={href}
-  />
-)
+  const Component = clickHandler ? ChoiceButton : ChoiceLink
+
+  return <Component {...wrapProps}></Component>
+}
+
+export const CuratedSetSummary = ({ set, language, href, clickHandler }) => {
+  const wrapProps = {
+    icon: <OkIcon className="w-10 h-10 text-success" />,
+    title: <Title {...{ set, language }} />,
+  }
+  if (clickHandler) wrapProps.onClick = clickHandler
+  else if (href) wrapProps.href = href
+
+  const Component = clickHandler ? ChoiceButton : ChoiceLink
+
+  return <Component {...wrapProps}></Component>
+}
 
 export const CuratedSetCandidate = ({ set, design, requiredMeasies = [], href }) => {
   const { t, i18n } = useTranslation(['sets'])

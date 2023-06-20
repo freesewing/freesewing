@@ -4,6 +4,7 @@ import React, { useState, useEffect, useContext } from 'react'
 // Hooks
 import { useTheme } from 'shared/hooks/use-theme.mjs'
 // Components
+import Head from 'next/head'
 import { SwipeWrapper } from 'shared/components/wrappers/swipes.mjs'
 import { LayoutWrapper, ns as layoutNs } from 'site/components/wrappers/layout.mjs'
 import { DocsLayout, ns as docsNs } from 'site/components/layouts/docs.mjs'
@@ -80,6 +81,11 @@ export const PageWrapper = (props) => {
   // Return wrapper
   return (
     <SwipeWrapper>
+      {pageTitle && (
+        <Head>
+          <meta property="og:title" content={pageTitle} key="title" />
+        </Head>
+      )}
       <div
         data-theme={currentTheme} // This facilitates CSS selectors
         key={currentTheme} // This forces the data-theme update

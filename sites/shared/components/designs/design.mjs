@@ -6,7 +6,7 @@ import { DesignTag } from 'shared/components/designs/tag.mjs'
 
 export const ns = ['design', 'designs', 'tags']
 
-const defaultLink = (design) => `/new/pattern/${design}`
+const defaultLink = (design) => `/new/${design}`
 
 export const Design = ({ name, hrefBuilder = false }) => {
   const { t } = useTranslation(ns)
