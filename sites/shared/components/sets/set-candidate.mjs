@@ -15,11 +15,11 @@ const Title = ({ set }) => (
   </div>
 )
 
-export const SetLacksMeasies = ({ set, design, t }) => (
+export const SetLacksMeasies = ({ set, design, t, hrefBuilder }) => (
   <ChoiceLink
     icon={<NoIcon className="w-10 h-10 text-error" />}
     title={<Title set={set} />}
-    href={`/sets/${set.id}`}
+    href={hrefBuilder(design, set)}
   >
     <div className="flex flex-row gap-2 items-center">
       <WarningIcon className="w-6 h-6 shrink-0 text-error" />
@@ -28,18 +28,18 @@ export const SetLacksMeasies = ({ set, design, t }) => (
   </ChoiceLink>
 )
 
-export const SetSummary = ({ set, design, t }) => (
+export const SetSummary = ({ set, design, t, hrefBuilder }) => (
   <ChoiceLink
     title={<Title set={set} />}
     icon={<OkIcon className="w-10 h-10 text-success" stroke={3} />}
-    href={`/new/pattern/${design}/set/${set.id}`}
+    href={hrefBuilder(design, set)}
   ></ChoiceLink>
 )
 
-export const SetCandidate = ({ set, design, requiredMeasies = [] }) => {
+export const SetCandidate = ({ set, design, requiredMeasies = [], hrefBuilder }) => {
   const { t } = useTranslation(['sets'])
 
-  const setProps = { set, design, t }
+  const setProps = { set, design, t, hrefBuilder }
 
   // Quick check for required measurements
   if (!set.measies || Object.keys(set.measies).length < requiredMeasies.length)

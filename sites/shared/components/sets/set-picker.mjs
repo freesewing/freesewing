@@ -17,7 +17,7 @@ import { FilterIcon } from 'shared/components/icons.mjs'
 
 export const ns = setNs
 
-export const CuratedSetPicker = ({ design, language }) => {
+export const CuratedSetPicker = ({ design, language, hrefBuilder }) => {
   // Hooks
   const { token } = useAccount()
   const backend = useBackend(token)
@@ -109,10 +109,8 @@ export const CuratedSetPicker = ({ design, language }) => {
         {orderBy(list, ['name'], ['asc']).map((set) => (
           <div className="w-full lg:w-96" key={set.id}>
             <CuratedSetCandidate
-              href={`/new/pattern/${design}/cset/${set.id}`}
-              set={set}
               requiredMeasies={measurements[design]}
-              design={design}
+              {...{ set, design, hrefBuilder }}
             />
           </div>
         ))}
@@ -121,7 +119,7 @@ export const CuratedSetPicker = ({ design, language }) => {
   )
 }
 
-export const UserSetPicker = ({ design, t, language }) => {
+export const UserSetPicker = ({ design, t, language, hrefBuilder }) => {
   // Hooks
   const { token } = useAccount()
   const backend = useBackend(token)
@@ -160,7 +158,10 @@ export const UserSetPicker = ({ design, t, language }) => {
           <div className="flex flex-row flex-wrap gap-2">
             {orderBy(sets, ['name'], ['asc']).map((set) => (
               <div className="w-full lg:w-96" key={set.id}>
-                <SetCandidate set={set} requiredMeasies={measurements[design]} design={design} />
+                <SetCandidate
+                  requiredMeasies={measurements[design]}
+                  {...{ set, design, hrefBuilder }}
+                />
               </div>
             ))}
           </div>
@@ -174,18 +175,18 @@ export const UserSetPicker = ({ design, t, language }) => {
   )
 }
 
-export const BookmarkedSetPicker = ({ design, t }) => (
+export const BookmarkedSetPicker = ({ design, t, hrefBuilder }) => (
   <>
     <h3>{t('bookmarkedSets')}</h3>
     <PopoutWrapper fixme>Implement bookmarked set picker (also implement bookmarks)</PopoutWrapper>
   </>
 )
 
-export const SetPicker = ({ design }) => {
+export const SetPicker = ({ design, hrefBuilder = false }) => {
   const { t, i18n } = useTranslation('sets')
   const { language } = i18n
 
-  const pickerProps = { design, t, language }
+  const pickerProps = { design, t, language, hrefBuilder }
 
   return (
     <>

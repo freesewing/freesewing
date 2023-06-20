@@ -281,3 +281,12 @@ export const scrollTo = (id) => {
   // eslint-disable-next-line no-undef
   if (document) document.getElementById(id).scrollIntoView()
 }
+
+export const hasRequiredMeasurements = (Design, measies = {}) => {
+  const missing = []
+  for (const m of Design.patternConfig?.measurements || []) {
+    if (typeof measies[m] === 'undefined') missing.push(m)
+  }
+
+  return [missing.length === 0, missing]
+}
