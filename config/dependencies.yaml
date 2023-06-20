@@ -192,7 +192,7 @@ yuri:
 
 backend:
   _:
-    '@aws-sdk/client-sesv2': '3.352.0'
+    '@aws-sdk/client-sesv2': '3.354.0'
     '@prisma/client': &prisma '4.15.0'
     'bcryptjs': '2.4.3'
     'cors': '2.8.5'
