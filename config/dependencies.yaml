@@ -208,7 +208,7 @@ backend:
     'passport-jwt': '4.0.1'
     'pino': '8.14.1'
     'qrcode': '1.5.3'
-    'swagger-ui-dist': '4.19.0'
+    'swagger-ui-dist': '5.1.0'
     'swagger-ui-express': '4.6.3'
   dev:
     'chai': *chai
