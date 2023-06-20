@@ -1,9 +1,8 @@
 // Hooks
-import { useState, useEffect, useContext } from 'react'
+import { useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
-import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import {
   DesignIcon,
@@ -18,7 +17,7 @@ import {
   PageIcon,
   PlusIcon,
 } from 'shared/components/icons.mjs'
-import { Ribbon } from 'shared/components/ribbon.mjs'
+import { HeaderWrapper } from 'shared/components/wrappers/header.mjs'
 import { ModalThemePicker, ns as themeNs } from 'shared/components/modal/theme-picker.mjs'
 import { ModalLocalePicker, ns as localeNs } from 'shared/components/modal/locale-picker.mjs'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
@@ -101,38 +100,10 @@ const NavIcons = ({ setModal, setSearch }) => {
   )
 }
 
-export const Header = ({ setSearch }) => {
+export const Header = ({ setSearch, show }) => {
   const { setModal } = useContext(ModalContext)
-  const { loading } = useContext(LoadingContext)
-  const [prevScrollPos, setPrevScrollPos] = useState(0)
-  const [show, setShow] = useState(true)
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const handleScroll = () => {
-        const curScrollPos = typeof window !== 'undefined' ? window.pageYOffset : 0
-        if (curScrollPos >= prevScrollPos) {
-          if (show && curScrollPos > 20) setShow(false)
-        } else setShow(true)
-        setPrevScrollPos(curScrollPos)
-      }
-      window.addEventListener('scroll', handleScroll)
-      return () => window.removeEventListener('scroll', handleScroll)
-    }
-  }, [prevScrollPos, show])
-
   return (
-    <header
-      className={`
-      fixed bottom-0 lg:bottom-auto lg:top-0 left-0
-      bg-neutral
-      w-full
-      z-30
-      transition-transform
-      ${show || loading ? '' : 'fixed bottom-0 lg:top-0 left-0 translate-y-36 lg:-translate-y-36'}
-      drop-shadow-xl
-    `}
-    >
+    <HeaderWrapper setSearch={setSearch} show={show}>
       <div className="m-auto md:px-8">
         <div className="p-0 flex flex-row gap-2 justify-between text-neutral-content items-center">
           {/* Non-mobile content */}
@@ -146,7 +117,6 @@ export const Header = ({ setSearch }) => {
           </div>
         </div>
       </div>
-      <Ribbon />
-    </header>
+    </HeaderWrapper>
   )
 }
