@@ -1,6 +1,5 @@
-import { createClient, groq } from 'next-sanity'
-
-const sanityId = process.env.SANITY_PROJECT || 'hl5bw8cj'
+import { createClient } from 'next-sanity'
+import { siteConfig } from 'site/site.config.mjs'
 
 let sanityClient
 export const sanityLoader = ({ query, language, type, slug, order }) => {
@@ -29,5 +28,5 @@ export const sanityLoader = ({ query, language, type, slug, order }) => {
 
 export const sanityImage = (image, dataset = 'site-content') => {
   const [, assetName, origSize, format] = image.asset._ref.split('-')
-  return `https://cdn.sanity.io/images/${sanityId}/${dataset}/${assetName}-${origSize}.${format}`
+  return `https://cdn.sanity.io/images/${siteConfig.sanity.projectt}/${dataset}/${assetName}-${origSize}.${format}`
 }

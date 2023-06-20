@@ -8,14 +8,15 @@ export const useEvaledMdx = (mdxStr = '') => {
   const [mdxModule, setMdxModule] = useState(false)
 
   useEffect(() => {
-    ;(async () => {
+    const runEffect = async () => {
       const code = await compile(mdxStr, {
         outputFormat: 'function-body',
         development: false,
       })
       const evaled = await run(code, runtime)
       setMdxModule(() => evaled.default)
-    })()
+    }
+    runEffect()
   }, [mdxStr])
 
   return mdxModule

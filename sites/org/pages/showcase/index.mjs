@@ -1,12 +1,10 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
-import { useMemo } from 'react'
 import { sanityLoader, sanityImage } from 'site/components/sanity/utils.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import Link from 'next/link'
-import { TimeAgo } from 'shared/components/wrappers/mdx.mjs'
 
 // Translation namespaces used on this page
 const namespaces = [...new Set(['common', 'designs', ...pageNs])]

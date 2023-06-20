@@ -1,7 +1,7 @@
 import { compile, run } from '@mdx-js/mdx'
 import * as runtime from 'react/jsx-runtime' // Production.
 
-import { useState, useEffect, Fragment } from 'react'
+import { useState, useEffect } from 'react'
 
 export const useEvaledMdx = (mdxStr = '') => {
   const [mdxModule, setMdxModule] = useState(false)

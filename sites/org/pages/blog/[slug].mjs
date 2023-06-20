@@ -1,7 +1,6 @@
 import { SanityPageWrapper, ns as sanityNs } from 'site/components/sanity/page-wrapper.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { sanityLoader, sanityImage } from 'site/components/sanity/utils.mjs'
-import { useTranslation } from 'next-i18next'
 
 const namespaces = [...sanityNs]
 

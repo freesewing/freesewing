@@ -6,7 +6,6 @@ import { docUpdates } from 'site/prebuild/doc-updates.mjs'
 // Components
 import { PageLink } from 'shared/components/page-link.mjs'
 import { DateTime, Interval } from 'luxon'
-import ReactMarkdown from 'react-markdown'
 // Context
 import { useContext } from 'react'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
@@ -104,7 +103,6 @@ const MetaData = ({ authors = [], maintainers = [], updated = '20220825', locale
 
 export const PlainMdxWrapper = ({ MDX = false, components = {}, children, site = 'org' }) => {
   const allComponents = { ...baseComponents(site), ...components }
-  const CompiledMdx = MDX ? <MDX components={allComponents} /> : children || ''
 
   return <div className="searchme">{MDX ? <MDX components={allComponents} /> : children}</div>
 }
