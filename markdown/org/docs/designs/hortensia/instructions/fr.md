@@ -64,7 +64,7 @@ Nous recommandons que les languettes soient environ un quart de la longueur des 
 - _Edgestitch_ the folded edge of the reinforcement parts to the side panels.
 - _Baste_ the raw edges together.
 
-### Step 8: Attach the side panels to the tube
+### Étape 8 : Fixer les panneaux latéraux au tube
 
 - With _good sides together_ sew the side panels to the tube matching notches to the bottom and zipper panel seams.
 - If binding the edges rather than turning, sew with _wrong sides together_ instead.
