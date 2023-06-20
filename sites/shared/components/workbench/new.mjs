@@ -152,7 +152,7 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
       viewContent = <EditView {...viewProps} setSettings={setSettings} />
       break
     case 'measies':
-      viewContent = <MeasiesView {...viewProps} {...{ setSettings, missingMeasurements }} />
+      viewContent = <MeasiesView {...viewProps} {...{ missingMeasurements }} />
       break
     default: {
       const layout = ui.layouts?.[view] || settings.layout || true

@@ -17,7 +17,7 @@ import { FilterIcon } from 'shared/components/icons.mjs'
 
 export const ns = setNs
 
-export const CuratedSetPicker = ({ design, language, hrefBuilder }) => {
+export const CuratedSetPicker = ({ design, language, href, clickHandler }) => {
   // Hooks
   const { token } = useAccount()
   const backend = useBackend(token)
@@ -110,7 +110,7 @@ export const CuratedSetPicker = ({ design, language, hrefBuilder }) => {
           <div className="w-full lg:w-96" key={set.id}>
             <CuratedSetCandidate
               requiredMeasies={measurements[design]}
-              {...{ set, design, hrefBuilder }}
+              {...{ set, design, href, clickHandler }}
             />
           </div>
         ))}
@@ -119,7 +119,7 @@ export const CuratedSetPicker = ({ design, language, hrefBuilder }) => {
   )
 }
 
-export const UserSetPicker = ({ design, t, language, hrefBuilder }) => {
+export const UserSetPicker = ({ design, t, language, href, clickHandler }) => {
   // Hooks
   const { token } = useAccount()
   const backend = useBackend(token)
@@ -160,7 +160,7 @@ export const UserSetPicker = ({ design, t, language, hrefBuilder }) => {
               <div className="w-full lg:w-96" key={set.id}>
                 <SetCandidate
                   requiredMeasies={measurements[design]}
-                  {...{ set, design, hrefBuilder }}
+                  {...{ set, design, href, clickHandler }}
                 />
               </div>
             ))}
@@ -175,25 +175,26 @@ export const UserSetPicker = ({ design, t, language, hrefBuilder }) => {
   )
 }
 
-export const BookmarkedSetPicker = ({ design, t, hrefBuilder }) => (
+export const BookmarkedSetPicker = ({ design, t, href = false, clickHandler = false }) => (
   <>
     <h3>{t('bookmarkedSets')}</h3>
     <PopoutWrapper fixme>Implement bookmarked set picker (also implement bookmarks)</PopoutWrapper>
   </>
 )
 
-export const SetPicker = ({ design, hrefBuilder = false }) => {
+export const SetPicker = ({ design, href = false, clickHandler = false }) => {
   const { t, i18n } = useTranslation('sets')
   const { language } = i18n
 
-  const pickerProps = { design, t, language, hrefBuilder }
+  const pickerProps = { design, t, language, href, clickHandler }
 
   return (
     <>
       <h2>{t('chooseSet')}</h2>
       <UserSetPicker {...pickerProps} />
-      <BookmarkedSetPicker {...pickerProps} />
-      <CuratedSetPicker {...pickerProps} />
     </>
   )
 }
+
+//<BookmarkedSetPicker {...pickerProps} />
+//<CuratedSetPicker {...pickerProps} />

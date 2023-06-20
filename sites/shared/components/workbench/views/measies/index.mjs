@@ -3,12 +3,18 @@ import { useTranslation } from 'next-i18next'
 import { SetPicker, ns as setsNs } from 'shared/components/sets/set-picker.mjs'
 import { Tab } from 'shared/components/account/bio.mjs'
 import { Popout } from 'shared/components/popout.mjs'
+import { designMeasurements } from 'shared/utils.mjs'
 
 export const ns = ['wbmeasies']
 
-export const MeasiesView = ({ design, missingMeasurements, settings }) => {
+export const MeasiesView = ({ design, Design, missingMeasurements, settings, update }) => {
   const { t, i18n } = useTranslation(ns)
   const [activeTab, setActiveTab] = useState('pick')
+
+  // Handle loading measurements
+  const loadMeasurements = (set) => {
+    update.settings(['measurements'], designMeasurements(Design, set.measies))
+  }
 
   // Shared props for tabs
   const tabProps = { activeTab, setActiveTab, t }
@@ -41,7 +47,7 @@ export const MeasiesView = ({ design, missingMeasurements, settings }) => {
         <Tab id="pick" {...tabProps} />
         <Tab id="edit" {...tabProps} />
       </div>
-      {activeTab === 'pick' && <SetPicker design={design} />}
+      {activeTab === 'pick' && <SetPicker design={design} clickHandler={loadMeasurements} />}
       {activeTab === 'edit' && <pre>{JSON.stringify(settings, null, 2)}</pre>}
     </div>
   )
