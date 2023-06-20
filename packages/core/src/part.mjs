@@ -176,7 +176,7 @@ Part.prototype.shorthand = function () {
     get: function (measurements, name) {
       if (typeof measurements[name] === 'undefined')
         self.context.store.log.warning(
-          `Tried to access \`measurements.${name}\` but it is \`undefined\``
+          `${self.name} tried to access \`measurements.${name}\` but it is \`undefined\``
         )
       return Reflect.get(...arguments)
     },
