@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import { Header, ns as headerNs } from 'site/components/header/index.mjs'
 import { Footer, ns as footerNs } from 'shared/components/footer/index.mjs'
@@ -14,6 +15,23 @@ export const LayoutWrapper = ({
 }) => {
   const ChosenHeader = header ? header : Header
 
+  const [prevScrollPos, setPrevScrollPos] = useState(0)
+  const [showHeader, setShowHeader] = useState(true)
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const handleScroll = () => {
+        const curScrollPos = typeof window !== 'undefined' ? window.pageYOffset : 0
+        if (curScrollPos >= prevScrollPos) {
+          if (showHeader && curScrollPos > 20) setShowHeader(false)
+        } else setShowHeader(true)
+        setPrevScrollPos(curScrollPos)
+      }
+      window.addEventListener('scroll', handleScroll)
+      return () => window.removeEventListener('scroll', handleScroll)
+    }
+  }, [prevScrollPos, showHeader])
+
   return (
     <div
       className={`
@@ -25,14 +43,22 @@ export const LayoutWrapper = ({
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <ChosenHeader setSearch={setSearch} />
-      <main className="grow">{children}</main>
+      <ChosenHeader show={showHeader} />
+
+      <main
+        className={`grow transition-margin duration-300 ease-in-out ${
+          showHeader ? 'lg:mt-24 ' : 'lg:mt-4'
+        }`}
+      >
+        {children}
+      </main>
+
       {!noSearch && search && (
         <>
           <div
             className={`
-          fixed w-full max-h-screen bg-base-100 top-0 z-30 pt-0 pb-16 px-8
-          md:rounded-lg md:top-24
+          w-full max-h-screen bg-base-100 top-0 z-30 pt-0 pb-16 px-8
+          md:rounded-lg
           md:max-w-xl md:m-auto md:inset-x-12
           md:max-w-2xl
           lg:max-w-4xl
