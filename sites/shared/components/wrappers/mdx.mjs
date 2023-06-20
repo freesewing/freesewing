@@ -16,7 +16,7 @@ import { useTranslation } from 'next-i18next'
 //import { PrevNext } from '../mdx/prev-next.mjs'
 //
 //
-const TimeAgo = ({ date, t }) => {
+export const TimeAgo = ({ date, t }) => {
   const i = Interval.fromDateTimes(DateTime.fromISO(date), DateTime.now())
     .toDuration(['hours', 'days', 'months', 'years'])
     .toObject()
@@ -101,9 +101,21 @@ const MetaData = ({ authors = [], maintainers = [], updated = '20220825', locale
   </div>
 )
 
-export const MdxWrapper = ({ MDX = false, frontmatter = {}, components = {}, children = [] }) => {
+export const PlainMdxWrapper = ({ MDX = false, components = {}, children, site = 'org' }) => {
+  const allComponents = { ...baseComponents(site), ...components }
+
+  return <div className="searchme">{MDX ? <MDX components={allComponents} /> : children}</div>
+}
+
+export const MdxWrapper = ({
+  MDX = false,
+  frontmatter = {},
+  components = {},
+  children = [],
+  site = 'org',
+}) => {
   const { t } = useTranslation('docs')
-  const allComponents = { ...baseComponents, ...components }
+
   const { locale, slug } = useContext(NavigationContext)
 
   const updates = docUpdates[slug] || {}
@@ -116,7 +128,7 @@ export const MdxWrapper = ({ MDX = false, frontmatter = {}, components = {}, chi
         updated={updates.u}
         {...{ locale, slug, t }}
       />
-      <div className="searchme">{MDX ? <MDX components={allComponents} /> : children}</div>
+      <PlainMdxWrapper {...{ MDX, components, children }} />
     </div>
   )
 }
