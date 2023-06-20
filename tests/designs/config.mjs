@@ -1,4 +1,4 @@
-import { measurements } from '@freesewing/models'
+import { measurements, cisFemaleAdult28 } from '@freesewing/models'
 import designs from '../../config/software/designs.json' assert { type: 'json' }
 import chai from 'chai'
 
@@ -89,6 +89,28 @@ export const testPatternConfig = (Pattern) => {
         expect(measurements.indexOf(measurement)).to.not.equal(-1)
       })
     }
+    it('Requests all measurements it uses', () => {
+      const requested = {}
+      const patternMeasies = patternConfig.measurements.concat(patternConfig.optionalMeasurements)
+      for (let measurement of patternMeasies) {
+        requested[measurement] = cisFemaleAdult28[measurement]
+      }
+
+      const draft = new Pattern({
+        measurements: requested,
+      }).draft()
+
+      const missWarnings = draft.setStores[0].logs.warning.filter((w, i, a) => {
+        return w.match(/tried to access \`measurements/) && a.indexOf(w) === i
+      })
+      chai.assert(
+        missWarnings.length === 0,
+        `expected part to request all used measurements. \nThe following measurements were requested in the config: ${patternMeasies.join(
+          ', '
+        )} \nbut got the following warnings: \n${missWarnings.join('\n')}
+        `
+      )
+    })
   }
 
   // Test validity of the pattern's options
