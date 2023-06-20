@@ -1,15 +1,7 @@
 import { isDegreeMeasurement } from 'config/measurements.mjs'
 import { measurementAsMm, formatMm } from 'shared/utils.mjs'
-import { Collapse, useCollapseButton } from 'shared/components/collapse.mjs'
-import {
-  FilterIcon,
-  ClearIcon,
-  PlusIcon,
-  OkIcon,
-  NoIcon,
-  TrashIcon,
-  EditIcon,
-} from 'shared/components/icons.mjs'
+import { Collapse } from 'shared/components/collapse.mjs'
+import { PlusIcon, EditIcon } from 'shared/components/icons.mjs'
 import { useState } from 'react'
 export const ns = ['account']
 
