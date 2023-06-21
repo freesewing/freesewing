@@ -57,7 +57,7 @@ export const CutMenu = ({
     <nav className="grow mb-12">
       <CutActions update={update} ui={ui} materialSettings={materialSettings} />
       <CutSettings {...menuProps} ui={ui} materialSettings={materialSettings} />
-      <DesignOptions {...menuProps} />
+      <DesignOptions {...menuProps} isFirst={false} />
       <CoreSettings {...menuProps} />
     </nav>
   )
