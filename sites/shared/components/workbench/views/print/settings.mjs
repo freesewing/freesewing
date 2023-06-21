@@ -41,6 +41,7 @@ export const PrintSettings = ({ update, settings, ui, account }) => {
         ns,
         passProps,
         updateFunc,
+        isFirst: true,
       }}
     />
   )

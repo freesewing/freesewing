@@ -11,7 +11,7 @@ import {
 } from 'shared/components/icons.mjs'
 
 export const defaultSamm = (units, inMm = true) => {
-  const dflt = units === 'metric' ? 1 : 0.5
+  const dflt = units === 'imperial' ? 0.5 : 1
   return inMm ? measurementAsMm(dflt, units) : dflt
 }
 

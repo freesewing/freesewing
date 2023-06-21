@@ -64,6 +64,7 @@ export const CutSettings = ({ update, settings, account, materialSettings }) => 
         ns,
         passProps,
         updateFunc,
+        isFirst: true,
       }}
     />
   )
