@@ -48,10 +48,16 @@ function draftWaistband({
     .line(points.topLeft)
     .addClass('fabric')
 
-  paths.fold = new Path().move(points.midLeft).line(points.midRight).addClass('help note')
-
   // Complete?
   if (complete) {
+    paths.fold = new Path().move(points.midLeft).line(points.midRight).addClass('help note')
+    macro('banner', {
+      path: paths.fold,
+      text: 'foldHere',
+      className: 'text-sm fill-note',
+      repeat: 50,
+    })
+
     points.logo = points.topLeft
       .shiftFractionTowards(points.bottomLeft, 0.65)
       .shift(0, points.topRight.x / 2)

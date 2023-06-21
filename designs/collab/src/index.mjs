@@ -7,12 +7,13 @@ import { frontBase } from './front-base.mjs'
 import { frontLeft } from './front-left.mjs'
 import { frontRight } from './front-right.mjs'
 import { waistband } from './waistband.mjs'
+import { flyShield } from './fly-shield.mjs'
 
 // Create new design
 const Collab = new Design({
   data,
-  parts: [shared, back, frontBase, frontLeft, frontRight, waistband],
+  parts: [shared, back, frontBase, frontLeft, frontRight, waistband, flyShield],
 })
 
 // Named exports
-export { shared, back, frontBase, frontLeft, frontRight, waistband, Collab }
+export { shared, back, frontBase, frontLeft, frontRight, waistband, flyShield, Collab }

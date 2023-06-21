@@ -31,6 +31,11 @@ function draftFrontLeft({
     .line(points.jseamTop)
     .addClass('note dashed stroke-sm')
     .addText('jSeam', 'text-sm center fill-note')
+
+  // Store the J-Seam dimensions to construct the fly shield later
+  store.set('jseamWidth', points.jseamCorner.x)
+  store.set('jseamHeight', points.jseamCorner.y)
+
   paths.flyFold = new Path()
     .move(points.jseamBottom)
     .line(points.topLeft)
