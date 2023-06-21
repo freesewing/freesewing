@@ -401,7 +401,7 @@ shared:
     'remark-smartypants': '2.0.0'
     'sharp': '0.32.1'
     'svg-to-pdfkit': 'https://github.com/eriese/SVG-to-PDFKit'
-    'tlds': '1.239.0'
+    'tlds': '1.240.0'
     'to-vfile': '7.2.4'
     'unist-util-visit': *unist-util-visit
     'use-persisted-state': *use-persisted-state
