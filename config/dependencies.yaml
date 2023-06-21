@@ -192,12 +192,12 @@ yuri:
 
 backend:
   _:
-    '@aws-sdk/client-sesv2': '3.352.0'
+    '@aws-sdk/client-sesv2': '3.354.0'
     '@prisma/client': &prisma '4.15.0'
     'bcryptjs': '2.4.3'
     'cors': '2.8.5'
     'crypto': '1.0.1'
-    'dotenv': '16.1.4'
+    'dotenv': '16.3.1'
     'express': '4.18.2'
     'js-yaml': *jsyaml
     'lodash.get': *_get
@@ -213,7 +213,7 @@ backend:
   dev:
     'chai': *chai
     'chai-http': '4.4.0'
-    'esbuild': '0.18.2'
+    'esbuild': '0.18.5'
     'mocha': *mocha
     'mocha-steps': '1.3.0'
     'nodemon': '2.0.22'
@@ -228,7 +228,7 @@ dev:
     '@next/bundle-analyzer': &next '13.4.6'
     '@tailwindcss/typography': &tailwindTypography '0.5.9'
     'algoliasearch': '4.17.2'
-    'daisyui': &daisyui '3.1.0'
+    'daisyui': &daisyui '3.1.1'
     'lodash.get': *_get
     'lodash.orderby': &_orderby '4.6.0'
     'lodash.set': *_set
@@ -238,7 +238,7 @@ dev:
     'react-dom': *react
     'react-hotkeys-hook': &reactHotkeysHook '4.4.0'
     'react-instantsearch-dom': &reactInstantsearchDom '6.40.0'
-    'react-instantsearch-hooks-web': '6.44.2'
+    'react-instantsearch-hooks-web': '6.44.3'
     'react-markdown': &reactMarkdown '8.0.7'
     'react-swipeable': &reactSwipeable '7.0.1'
     'react-timeago': &reactTimeago '7.1.0'
@@ -314,6 +314,8 @@ org:
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': *mdxRuntime
+    '@portabletext/react': '^1.0.6'
+    '@sanity/client': '^6.1.2'
     '@tailwindcss/typography': *tailwindTypography
     'algoliasearch': *algoliasearch
     'react-copy-to-clipboard': 5.1.0
@@ -323,6 +325,7 @@ org:
     'lodash.set': *_set
     'luxon': '3.3.0'
     'next': *next
+    'next-sanity': '^4.3.3'
     'react-dropzone': '14.2.3'
     'react-hotkeys-hook': *reactHotkeysHook
     'react-instantsearch-dom': *reactInstantsearchDom
@@ -344,8 +347,8 @@ org:
 
 sanity:
   _:
-    '@sanity/vision': &sanity '3.12.0'
-    'easymde': '2.16.0'
+    '@sanity/vision': &sanity '3.12.2'
+    'easymde': '2.18.0'
     'react': *react
     'react-dom': *react
     'react-is': *react
