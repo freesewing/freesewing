@@ -33,7 +33,7 @@ export const CuratedSetLacksMeasies = ({ set, design, t, language, href, clickHa
 
   const Component = clickHandler ? ChoiceButton : ChoiceLink
 
-  return <Component {...wrapProps}></Component>
+  return <Component {...wrapProps}>{inner}</Component>
 }
 
 export const CuratedSetSummary = ({ set, language, href, clickHandler }) => {
