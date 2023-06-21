@@ -10,7 +10,6 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Components
 import { SetCandidate, ns as setNs } from 'shared/components/sets/set-candidate.mjs'
-import { CuratedSetCandidate } from 'shared/components/sets/curated-set-candidate.mjs'
 import { PopoutWrapper } from 'shared/components/wrappers/popout.mjs'
 import { Tag } from 'shared/components/tag.mjs'
 import { FilterIcon } from 'shared/components/icons.mjs'
@@ -21,7 +20,7 @@ export const CuratedSetPicker = ({ design, language, href, clickHandler }) => {
   // Hooks
   const { token } = useAccount()
   const backend = useBackend(token)
-  const { t } = useTranslation('sets')
+  const { t, i18n } = useTranslation('sets')
 
   // State
   const [curatedSets, setCuratedSets] = useState([])
@@ -107,9 +106,9 @@ export const CuratedSetPicker = ({ design, language, href, clickHandler }) => {
       <div className="flex flex-row flex-wrap gap-2">
         {orderBy(list, ['name'], ['asc']).map((set) => (
           <div className="w-full lg:w-96" key={set.id}>
-            <CuratedSetCandidate
+            <SetCandidate
               requiredMeasies={measurements[design]}
-              {...{ set, design, href, clickHandler }}
+              {...{ set, design, href, clickHandler, language: i18n.language }}
             />
           </div>
         ))}
@@ -140,7 +139,7 @@ export const UserSetPicker = ({ design, t, href, clickHandler }) => {
   }, [])
 
   return Object.keys(sets).length < 1 ? (
-    <PopoutWrapper tip>
+    <PopoutWrapper tip noP>
       <h5>{t('patternForWhichSet')}</h5>
       <p>{t('fsmtm')}</p>
     </PopoutWrapper>
@@ -186,6 +185,7 @@ export const SetPicker = ({ design, href = false, clickHandler = false }) => {
     <>
       <h2>{t('chooseSet')}</h2>
       <UserSetPicker {...pickerProps} />
+      <CuratedSetPicker {...pickerProps} />
     </>
   )
 }
