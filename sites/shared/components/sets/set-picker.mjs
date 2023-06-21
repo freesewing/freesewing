@@ -169,14 +169,14 @@ export const UserSetPicker = ({ design, t, href, clickHandler }) => {
   )
 }
 
-export const BookmarkedSetPicker = ({ design, t }) => (
+export const BookmarkedSetPicker = ({ t }) => (
   <>
     <h3>{t('bookmarkedSets')}</h3>
     <PopoutWrapper fixme>Implement bookmarked set picker (also implement bookmarks)</PopoutWrapper>
   </>
 )
 
-export const SetPicker = ({ href = false, clickHandler = false }) => {
+export const SetPicker = ({ design, href = false, clickHandler = false }) => {
   const { t, i18n } = useTranslation('sets')
   const { language } = i18n
 
