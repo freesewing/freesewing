@@ -213,7 +213,7 @@ backend:
   dev:
     'chai': *chai
     'chai-http': '4.4.0'
-    'esbuild': '0.18.5'
+    'esbuild': '0.18.6'
     'mocha': *mocha
     'mocha-steps': '1.3.0'
     'nodemon': '2.0.22'
