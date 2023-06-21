@@ -43,15 +43,6 @@ export const shared = {
   measurements: ['hips', 'seat', 'waistToHips', 'waistToSeat', 'waistToUpperLeg'],
   hide: { self: true },
   options: {
-    // Constants
-
-    /*
-     * How much the edge of the waistband/skirt should surpass center front on the
-     * buttonhole side, which is the side that is facing outwards.
-     * As a percentage of the hips measurements. Default is 1.3%.
-     */
-    surpassCf: 0.015,
-
     // Fit options
 
     /*
@@ -114,12 +105,32 @@ export const shared = {
     },
 
     // Pocket options
+    backPocketHeight: {
+      pct: 70,
+      min: 60,
+      max: 85,
+      menu: 'pockets',
+    },
     frontPocketOpeningStart: {
       pct: 33,
       min: 25,
       max: 45,
       menu: 'pockets',
       ...pctBasedOnQhips(),
+    },
+
+    // Width of the front attachment
+    frontAttachmentWidth: {
+      pct: 95,
+      min: 80,
+      max: 110,
+      menu: 'pockets',
+    },
+    pocketChamferSize: {
+      pct: 15,
+      min: 5,
+      max: 25,
+      menu: 'pockets',
     },
 
     // Advanced options

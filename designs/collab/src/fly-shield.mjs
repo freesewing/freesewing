@@ -1,5 +1,3 @@
-import { frontLeft } from './front-left.mjs'
-
 function draftFlyShield({
   Point,
   points,
@@ -17,8 +15,8 @@ function draftFlyShield({
   macro,
   absoluteOptions,
 }) {
-  const w = store.get('jseamWidth')
-  const h = store.get('jseamHeight') * 1.05
+  const w = absoluteOptions.flyWidth
+  const h = absoluteOptions.flyLength * 1.05
 
   points.topLeft = new Point(0, 0)
   points.topMid = new Point(w, 0)
@@ -27,7 +25,7 @@ function draftFlyShield({
   points.bottomMid = new Point(w, h)
   points.bottomRight = new Point(2 * w, h)
 
-  paths.seamLine = new Path()
+  paths.seam = new Path()
     .move(points.topLeft)
     .line(points.bottomLeft)
     .line(points.bottomRight)
@@ -47,10 +45,18 @@ function draftFlyShield({
     })
 
     points.logo = new Point(w, h / 2)
-    snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.5)
+    snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.75)
+
+    points.title = points.topLeft.shiftFractionTowards(points.logo, 0.5)
+    macro('title', {
+      at: points.title,
+      nr: 4,
+      title: 'flyShield',
+      scale: 0.6,
+    })
 
     if (sa) {
-      //  paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
   }
 
@@ -64,5 +70,4 @@ function draftFlyShield({
 export const flyShield = {
   name: 'collab:flyShield',
   draft: draftFlyShield,
-  after: frontLeft,
 }

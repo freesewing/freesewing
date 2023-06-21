@@ -20,33 +20,43 @@ function draftBack({
   macro,
   absoluteOptions,
 }) {
+  // Reduction from hips to seat
+  const reduce = store.get('hipsQuarterReduction')
+  // Minimal dart that we consider suitable for sewing
+  const minDart = absoluteOptions.minDartWidth
+  /*
+   * Do we need to add darts?
+   * Shaping happens at both back panels, so everthing we take out is doubled.
+   * In addition, shaping happens on both side seam and dart, so doubled again
+   * So only if the total reduction is more than 4x the minimal dart width do we add darts
+   */
+  store.set(
+    'darts',
+    store.get('hipsQuarterReduction') > 4 * absoluteOptions.minDartWidth ? true : false
+  )
+  // How much shaping should we add in the panel?
+  const shaping = store.get('darts') ? reduce - absoluteOptions.dartWidth * 2 : reduce
+
   /*
    * We start with drawing a simple skirt outline for the back panel
    * We just have to take the waistband into account
    */
-  points.topLeft = new Point(0, 0)
+  points.topLeft = new Point(shaping / 2, 0)
   points.topCp = new Point(store.get('backQuarterHips') / 2, 0)
-  points.topRight = new Point(store.get('backQuarterHips'), absoluteOptions.waistSlant)
+  points.topRight = new Point(
+    points.topLeft.x + store.get('backQuarterHips'),
+    absoluteOptions.waistSlant
+  )
   points.bottomLeft = new Point(
     0,
     points.topRight.y + store.get('hipsToUpperLeg') - absoluteOptions.waistbandWidth
   )
   points.bottomRight = new Point(store.get('backQuarterSeat'), points.bottomLeft.y)
 
-  // Reduction from hips to seat
-  const reduce = store.get('hipsQuarterReduction')
-  // Minimal dart that we consider suitable for sewing
-  const minDart = absoluteOptions.minDartWidth
-
   /*
    * Add back darts, but only if they are not too narrow to sew
-   * Shaping happens at both back panels, so everthing we take out is doubled.
-   * In addition, shaping happens on both side seam and dart, so doubled again
-   * So only if the total reduction is more than 4x the minimal dart width do we add darts
    */
-  if (store.get('hipsQuarterReduction') > 4 * absoluteOptions.minDartWidth) {
-    // Let's make it easy to know we've added darts but setting it in the store
-    store.set('darts', true)
+  if (store.get('darts')) {
     /*
      * To find the top of the dart is easy if the waistline is a straight line.
      * However, if the `waistSlant` option is non-zero, the waistline will be a curve.
@@ -81,10 +91,6 @@ function draftBack({
      * smooth out
      */
     points.topRight = points.dartRight.shiftOutwards(points.topRight, absoluteOptions.dartWidth * 2)
-    /*
-     * We do half of the same for the bottom to ensure a nice balance in the skirt
-     */
-    points.bottomRight = points.bottomRight.shift(0, absoluteOptions.dartWidth)
   }
 
   // Seamline
@@ -100,8 +106,8 @@ function draftBack({
       .line(points.dartLeft)
       .join(paths.hipLine.split(points.dartLeft).pop())
   } else paths.seam._curve(points.topCp, points.topLeft)
-  // Apply CSS classes
-  paths.seam.addClass('fabric')
+  // Apply CSS classes and close
+  paths.seam.addClass('fabric').close()
 
   // Store the side seam length so we can match it in the front part
   store.set('sideSeam', points.topRight.dist(points.bottomRight))
@@ -146,7 +152,16 @@ function draftBack({
       .attr('data-text-dx', 8)
 
     if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+      // We need a version without the dart as the SA base
+      paths.saBase = new Path()
+        .move(points.topLeft)
+        .line(points.bottomLeft)
+        .line(points.bottomRight)
+        .line(points.topRight)
+        .join(paths.hipLine)
+        .close()
+        .hide()
+      paths.sa = paths.saBase.offset(sa).attr('class', 'fabric sa')
     }
   }
 

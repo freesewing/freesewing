@@ -18,26 +18,20 @@ function draftWaistband({
   absoluteOptions,
 }) {
   // Edge of the waistband on the buttonhole side
-  points.topLeft = new Point(0, 0)
-  points.bottomLeft = new Point(0, absoluteOptions.waistbandWidth * 2)
+  points.topLeft = new Point(absoluteOptions.flyWidth * -1, 0)
+  points.bottomLeft = new Point(points.topLeft.x, absoluteOptions.waistbandWidth * 2)
 
-  // Center front on the buttonhole side
-  points.cfLeftTop = new Point(store.get('hips') * options.surpassCf, 0)
-  points.cfLeftBottom = new Point(points.cfLeftTop.x, points.bottomLeft.y)
-
-  // Center front on button side
-  points.cfRightTop = points.cfLeftTop.shift(0, store.get('hips'))
-  points.cfRightBottom = new Point(points.cfRightTop.x, points.cfLeftBottom.y)
+  // Fly shield edge on the buttonhole side
+  points.flyTop = new Point(0, 0)
+  points.flyBottom = new Point(0, points.bottomLeft.y)
 
   // Edge of the waistband on the button side
-  points.topRight = new Point(
-    store.get('hips') + absoluteOptions.waistbandWidth * options.waistbandOverlap,
-    0
-  )
-  points.bottomLeft = new Point(0, absoluteOptions.waistbandWidth * 2)
+  points.topRight = new Point(store.get('hips'), points.topLeft.y)
   points.bottomRight = new Point(points.topRight.x, points.bottomLeft.y)
-  points.midLeft = new Point(0, points.bottomLeft.y / 2)
-  points.midRight = new Point(points.topRight.x, points.bottomLeft.y / 2)
+
+  // Fold in the middle
+  points.midLeft = new Point(points.topLeft.x, points.bottomLeft.y / 2)
+  points.midRight = new Point(points.topRight.x, points.midLeft.y)
 
   // Seamline
   paths.seam = new Path()
@@ -46,6 +40,7 @@ function draftWaistband({
     .line(points.bottomRight)
     .line(points.topRight)
     .line(points.topLeft)
+    .close()
     .addClass('fabric')
 
   // Complete?
@@ -63,38 +58,33 @@ function draftWaistband({
       .shift(0, points.topRight.x / 2)
     snippets.logo = new Snippet('logo', points.logo)
 
-    points.title = points.logo.shift(-90, 70)
+    points.title = points.logo.shift(0, 70)
     macro('title', {
       at: points.title,
-      nr: 1,
-      title: 'front',
+      nr: 7,
+      title: 'waistband',
     })
 
-    paths.cfLeft = new Path()
-      .move(points.cfLeftBottom)
-      .line(points.cfLeftTop)
+    paths.flyEdge = new Path()
+      .move(points.flyBottom)
+      .line(points.flyTop)
       .addClass('note dashed')
-      .addText('centerFront', 'text-sm fill-note center')
-    paths.cfRight = new Path()
-      .move(points.cfRightBottom)
-      .line(points.cfRightTop)
-      .addClass('dashed note')
-      .addText('centerFront', 'text-sm fill-note center')
+      .addText('flyEdge', 'text-sm fill-note center')
 
-    points.button = points.midRight.shiftFractionTowards(points.cfRightBottom, 0.5)
+    // Button hole
+    points.buttonhole = points.midLeft
+      .shiftFractionTowards(points.flyBottom, 0.5)
+      .shift(180, absoluteOptions.waistbandWidth / 12)
+    snippets.buttonhole = new Snippet('buttonhole-start', points.buttonhole)
+      .attr('data-scale', absoluteOptions.waistbandWidth / 16)
+      .attr('data-rotate', 90)
+
+    // Button
+    points.button = new Point(points.topRight.x - absoluteOptions.flyWidth / 2, points.buttonhole.y)
     snippets.button = new Snippet('button', points.button).attr(
       'data-scale',
       absoluteOptions.waistbandWidth / 16
     )
-
-    // Button hold on waistband
-    points.buttonhole = new Point(points.cfLeftTop.x, points.button.y).shift(
-      180,
-      absoluteOptions.waistbandWidth / 16
-    )
-    snippets.buttonhole = new Snippet('buttonhole-start', points.buttonhole)
-      .attr('data-scale', absoluteOptions.waistbandWidth / 16)
-      .attr('data-rotate', 90)
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -102,12 +92,12 @@ function draftWaistband({
   }
 
   // Paperless?
-  if (paperless) {
+  if (false && paperless) {
     let y = points.topLeft.y - 15 - sa
     // Length
-    macro('hd', { y, from: points.topLeft, to: points.cfLeftTop })
-    macro('hd', { y, from: points.cfLeftTop, to: points.cfRightTop })
-    macro('hd', { y, from: points.cfRightTop, to: points.topRight })
+    macro('hd', { y, from: points.topLeft, to: points.flyTop })
+    macro('hd', { y, from: points.flyTop, to: points.flyTop })
+    macro('hd', { y, from: points.flyTop, to: points.topRight })
     y -= 15
     macro('hd', { y, from: points.topLeft, to: points.topRight })
     // Button

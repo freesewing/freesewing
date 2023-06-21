@@ -55,6 +55,26 @@ export const drawHemNote = (part) => {
     .attr('data-text-dy', -1)
 }
 
+export const drawPocketBag = (part) => {
+  const { paths, Path, points } = part.shorthand()
+
+  ;(paths.pocketbag = new Path()
+    .move(points.frontPocketBagStart)
+    .line(points.frontPocketBagHem)
+    .addClass('note dashed stroke-sm')),
+    (paths.pocketfacingBoundary = new Path()
+      .move(points.frontPocketFacingCenter)
+      .line(points.frontPocketFacingSide)
+      .addClass('note dashed stroke-sm')
+      .addText('pocketFacing', 'fill-note center text-sm')),
+    (paths.pocketbagBoundary = new Path()
+      .move(points.frontPocketFacingCenter)
+      .line(points.frontPocketFacingSide)
+      .addClass('hidden')
+      .addText('pocketBag', 'fill-note center text-sm')
+      .attr('data-text-dy', 6))
+}
+
 export const splitFrontWaist = (part) => {
   const { paths, points, Path, options } = part.shorthand()
   // Handle the split of the waitline at the pocket openinig
@@ -87,23 +107,21 @@ function draftFrontBase({
   absoluteOptions,
   utils,
 }) {
+  // How much shaping should we add in the panel?
+  const shaping = store.get('hipsQuarterReduction')
+
   // Simple skirt outline for the front panel
-  points.topLeft = new Point(0, 0)
+  points.topLeft = new Point(shaping / 2, 0)
   points.topCp = new Point(store.get('frontQuarterHips') / 2, 0)
-  points.topRight = new Point(store.get('frontQuarterHips'), absoluteOptions.waistSlant * -1)
+  points.topRight = new Point(
+    points.topLeft.x + store.get('frontQuarterHips'),
+    absoluteOptions.waistSlant * -1
+  )
   points.bottomLeft = new Point(
     0,
     points.topRight.y + store.get('hipsToUpperLeg') - absoluteOptions.waistbandWidth
   )
   points.bottomRight = new Point(store.get('frontQuarterSeat'), points.bottomLeft.y)
-
-  /*
-   * If there's darts at the back, we need to reduce the front hem length
-   * because we lengthened the back hem to keep the skirt balanced
-   */
-  if (store.get('darts')) {
-    points.bottomRight = points.bottomRight.shift(180, absoluteOptions.dartWidth)
-  }
 
   // True the side seam
   points.trueBottomRight = points.topRight.shiftTowards(points.bottomRight, store.get('sideSeam'))
@@ -112,10 +130,15 @@ function draftFrontBase({
   /*
    * Construct the fly J-seam - see paths.jseam
    */
-  points.jseamTop = xOnWaist(absoluteOptions.flyWidth, part)
-  points.jseamBottom = new Point(0, absoluteOptions.flyLength)
-  points.jseamCorner = new Point(points.jseamTop.x, points.jseamBottom.y)
-  points.jseamCurveStart = new Point(points.jseamTop.x, points.jseamBottom.y - points.jseamTop.x)
+  points.jseamTop = xOnWaist(points.topLeft.x + absoluteOptions.flyWidth, part)
+  points.jseamBottom = points.topLeft.shiftTowards(points.bottomLeft, absoluteOptions.flyLength)
+  points.jseamCorner = points.jseamBottom
+    .shiftTowards(points.topLeft, absoluteOptions.flyWidth)
+    .rotate(-90, points.jseamBottom)
+  points.jseamCurveStart = points.jseamCorner.shiftTowards(
+    points.jseamTop,
+    absoluteOptions.flyWidth
+  )
   points.jseamCpTop = points.jseamCorner.shiftFractionTowards(
     points.jseamCurveStart,
     1 - options.jseamBend
@@ -128,15 +151,19 @@ function draftFrontBase({
   /*
    * Construct the fly extention (fe) - see paths.seam
    */
-  for (const p of [
-    'jseamTop',
-    'jseamBottom',
-    'jseamCorner',
-    'jseamCurveStart',
-    'jseamCpTop',
-    'jseamCpBottom',
-  ])
-    points[`${p}Fe`] = points[p].flipX()
+  macro('mirror', {
+    clone: true,
+    mirror: [points.jseamBottom, points.topLeft],
+    points: [
+      'jseamTop',
+      'jseamBottom',
+      'jseamCorner',
+      'jseamCurveStart',
+      'jseamCpTop',
+      'jseamCpBottom',
+    ],
+    nameFormat: (name) => `${name}Fe`, //Fe = Fly extension
+  })
 
   /*
    * Construct the front pocket cutout
@@ -158,6 +185,17 @@ function draftFrontBase({
     1 - options.frontPocketOpeningBend
   )
 
+  /*
+   * Front pocket bag/facing outline
+   */
+  points.frontPocketBagStart = points.frontPocketStart.shiftFractionTowards(points.jseamTop, 0.4)
+  points.frontPocketBagHem = new Point(points.frontPocketBagStart.x, points.bottomRight.y)
+  points.frontPocketFacingSide = points.frontPocketSide.shiftFractionTowards(points.topRight, -0.4)
+  points.frontPocketFacingCenter = new Point(
+    points.frontPocketBagStart.x,
+    points.frontPocketFacingSide.y
+  )
+
   // Paths
   splitFrontWaist(part) // Handle the split of the waitline at the pocket openinig
   paths.seam = drawSeamLine(part) // Seamline
@@ -177,6 +215,7 @@ function draftFrontBase({
       title: 'frontBase',
     })
 
+    drawPocketBag(part)
     paths.side = drawSideNote(part)
     paths.hem = drawHemNote(part)
     points.topRight

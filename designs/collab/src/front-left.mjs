@@ -23,7 +23,6 @@ function draftFrontLeft({
    * Now we adapt it for the left panel
    * Left/Right is always from the vantage point the wearer
    */
-
   // J-Seam
   paths.jseam = new Path()
     .move(points.jseamBottom)

@@ -6,6 +6,7 @@ import {
   drawSeamLine,
   drawSideNote,
   drawHemNote,
+  drawPocketBag,
 } from './front-base.mjs'
 
 function draftFrontRight({
@@ -42,6 +43,7 @@ function draftFrontRight({
 
   // Complete?
   if (complete) {
+    drawPocketBag(part)
     paths.side = drawSideNote(part)
     paths.hem = drawHemNote(part).reverse(true)
 
