@@ -19643,10 +19643,10 @@ tiny-warning@^1.0.3:
   resolved "https://registry.yarnpkg.com/tiny-warning/-/tiny-warning-1.0.3.tgz#94a30db453df4c643d0fd566060d60a875d84754"
   integrity sha512-lBN9zLN/oAf68o3zNXYrdCt1kP8WsiGW8Oo2ka41b2IM5JL/S1CTyX1rW0mb/zSuJun0ZUrDxx4sqvYS2FWzPA==
 
-tlds@1.239.0:
-  version "1.239.0"
-  resolved "https://registry.yarnpkg.com/tlds/-/tlds-1.239.0.tgz#99c61a8a22c1252cfb563ef1cfd367b537ff62e6"
-  integrity sha512-lhiymAloYTizXVGDVnplwjQK2YkiB30k5bbeZlyZ6u2vbG4q7re+fwTlOeliCcfiqvmK3yv9savLIFzfKjAVQg==
+tlds@1.240.0:
+  version "1.240.0"
+  resolved "https://registry.yarnpkg.com/tlds/-/tlds-1.240.0.tgz#3d3d776d97aa079e43ef4d2f9ef9845e55cff08e"
+  integrity sha512-1OYJQenswGZSOdRw7Bql5Qu7uf75b+F3HFBXbqnG/ifHa0fev1XcG+3pJf3pA/KC6RtHQzfKgIf1vkMlMG7mtQ==
 
 tmp@^0.0.33:
   version "0.0.33"
