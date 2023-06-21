@@ -8,7 +8,7 @@ import { useControlState } from 'shared/components/account/control.mjs'
 // Dependencies
 import { pluginTheme } from '@freesewing/plugin-theme'
 import { pluginI18n } from '@freesewing/plugin-i18n'
-import { objUpdate } from 'shared/utils.mjs'
+import { objUpdate, hasRequiredMeasurements } from 'shared/utils.mjs'
 // Components
 import { WorkbenchHeader } from './header.mjs'
 import { ErrorView } from 'shared/components/error/view.mjs'
@@ -24,6 +24,7 @@ import { ExportView, ns as exportNs } from 'shared/components/workbench/views/ex
 import { LogView, ns as logNs } from 'shared/components/workbench/views/logs/index.mjs'
 import { InspectView, ns as inspectNs } from 'shared/components/workbench/views/inspect/index.mjs'
 import { MeasiesView, ns as measiesNs } from 'shared/components/workbench/views/measies/index.mjs'
+
 export const ns = [
   'account',
   'workbench',
@@ -57,7 +58,7 @@ const views = {
 
 const draftViews = ['draft', 'inspect']
 
-export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) => {
+export const Workbench = ({ design, Design, DynamicDocs }) => {
   // Hooks
   const { t, i18n } = useTranslation(ns)
   const { language } = i18n
@@ -70,18 +71,23 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) =
   const [ui, setUi] = useState(defaultUi)
   const [error, setError] = useState(false)
   const [mounted, setMounted] = useState(false)
+  const [missingMeasurements, setMissingMeasurements] = useState(false)
 
-  // Effect
+  // set mounted on mount
+  useEffect(() => setMounted(true), [setMounted])
+
   useEffect(() => {
-    /*
-     * baseSettings can be loaded async.
-     * So we need be careful when to trust the state in the URL or when to use the one from props.
-     */
-    if (!mounted && !settings && baseSettings) {
-      setMounted(true)
-      setSettings({ ...baseSettings, embed: true })
+    // protect against loops
+    if (!mounted) return
+
+    const [ok, missing] = hasRequiredMeasurements(Design, settings.measurements)
+    if (ok) setMissingMeasurements(false)
+    // Force the measurements view if we have missing measurements
+    else {
+      setMissingMeasurements(missing)
+      if (view !== 'measies') setView('measies')
     }
-  }, [baseSettings])
+  }, [Design, settings.measurements, mounted, view])
 
   // Helper methods for settings/ui updates
   const update = {
@@ -112,7 +118,7 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) =
   }
 
   // Don't bother without a Design
-  if (!Design || !baseSettings) return <ModalSpinner />
+  if (!Design) return <ModalSpinner />
 
   // Short-circuit errors early
   if (error)
@@ -141,13 +147,16 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) =
   switch (view) {
     // Save view
     case 'save':
-      viewContent = <SaveView {...viewProps} from={from} />
+      viewContent = <SaveView {...viewProps} />
       break
     case 'export':
       viewContent = <ExportView {...viewProps} />
       break
     case 'edit':
       viewContent = <EditView {...viewProps} setSettings={setSettings} />
+      break
+    case 'measies':
+      viewContent = <MeasiesView {...viewProps} {...{ missingMeasurements }} />
       break
     default: {
       const layout = ui.layouts?.[view] || settings.layout || true
@@ -182,8 +191,8 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) =
   }
 
   return (
-    <div className="flex flex-row content-stretch">
-      <div className="grow-0 shrink-0">
+    <div className="flex flex-row">
+      <div className="grow-no shrink-no">
         <WorkbenchHeader {...{ view, setView, update }} />
       </div>
       <div className="grow">{viewContent}</div>

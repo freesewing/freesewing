@@ -10,7 +10,7 @@ export const DocsLayout = ({ children = [], pageTitle = false }) => {
   const { title, crumbs } = useContext(NavigationContext)
 
   return (
-    <div className="grid grid-cols-4 m-auto justify-center place-items-stretch lg:mt-16">
+    <div className="grid grid-cols-4 m-auto justify-center place-items-stretch">
       <AsideNavigation />
       <section className="col-span-4 lg:col-span-3 py-8 lg:py-16 px-4 lg:pl-8 bg-base-50">
         {title && (

@@ -4,6 +4,8 @@ import { siteConfig } from 'site/site.config.mjs'
 import Link from 'next/link'
 import { ClearIcon } from 'shared/components/icons.mjs'
 
+export const ns = ['search']
+
 const searchClient = algoliasearch(siteConfig.algolia.app, siteConfig.algolia.key)
 
 const Hit = (props) => (

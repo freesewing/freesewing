@@ -67,15 +67,7 @@ const ShowPattern = ({ renderProps, logs, mode = 'normal' }) => {
       </div>
     )
 
-  if (mode === 'xray')
-    return (
-      <>
-        <p>xray</p>
-        <PatternXray {...{ renderProps }} />
-      </>
-    )
-
-  return <Pattern {...{ renderProps }} />
+  return mode === 'xray' ? <PatternXray {...{ renderProps }} /> : <Pattern {...{ renderProps }} />
 }
 
 // Wrapper component dealing with the tabs and code view
