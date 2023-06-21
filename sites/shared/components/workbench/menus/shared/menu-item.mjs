@@ -95,7 +95,7 @@ export const MenuItem = ({
   if (loadDocs)
     openButtons.push(
       <button className={openButtonClass} key="help" onClick={(evt) => loadDocs(evt, name)}>
-        <HelpIcon className="w-4 h-4" />
+        <HelpIcon className="w-6 h-6" />
       </button>
     )
   if (allowOverride)
