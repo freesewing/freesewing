@@ -415,7 +415,7 @@ function simoneFbaFront({
 export const fbaFront = {
   name: 'simone.fbaFront',
   from: front,
-  measurements: ['highBust'],
+  measurements: ['highBust', 'bustSpan', 'hpsToBust'],
   hide: {
     self: true,
     from: true,
