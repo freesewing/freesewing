@@ -1,3 +1,7 @@
 changeMeasies: Change Pattern Measurements
 editCurrent: Edit Current Measurements
 chooseNew: Choose a New Measurements Set
+weLackSomeMeasies: We lack { nr } measurements to create this pattern
+youCanPickOrEnter: You can either pick a measurements set, or enter them by hand, but we cannot proceed without these measurements.
+measiesOk: We have all required measurements to create this pattern.
+

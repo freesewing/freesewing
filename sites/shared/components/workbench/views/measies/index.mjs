@@ -30,22 +30,19 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
       <h1 className="max-w-6xl m-auto text-center">{t('measurements')}</h1>
       {missingMeasurements ? (
         <Popout note>
-          <h5>We lack {missingMeasurements.length} measurements to create this pattern:</h5>
+          <h5>{t('weLackSomeMeasies')}:</h5>
           <ul className="list list-inside list-disc ml-4">
             {missingMeasurements.map((m) => (
               <li key={m}>{m}</li>
             ))}
           </ul>
           <p>
-            <b>
-              You can either pick a measurements set, or enter them by hand, but we cannot proceed
-              without these measurements.
-            </b>
+            <b>{t('youCanPickOrEnter')}</b>
           </p>
         </Popout>
       ) : (
         <Popout tip>
-          <h5>We have all required measurements to create this pattern.</h5>
+          <h5>t{'measiesOk'}</h5>
         </Popout>
       )}
       <Tabs tabs={tabs}>

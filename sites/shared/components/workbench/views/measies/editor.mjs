@@ -2,7 +2,6 @@ import { MeasieInput, ns as inputNs } from 'shared/components/sets/measie-input.
 import { useTranslation } from 'next-i18next'
 
 export const ns = ['wbmeasies', ...inputNs]
-const emptyFunc = () => {}
 
 export const MeasiesEditor = ({ Design, settings, update }) => {
   const { t } = useTranslation(ns)
@@ -15,10 +14,7 @@ export const MeasiesEditor = ({ Design, settings, update }) => {
   return (
     <div>
       {Design.patternConfig.measurements.map((m) => (
-        <MeasieInput
-          {...{ t, m, mset, onUpdate, startLoading: emptyFunc, stopLoading: emptyFunc }}
-          key={m}
-        >
+        <MeasieInput {...{ t, m, mset, onUpdate }} key={m}>
           <span className="label">{t(m)}</span>
         </MeasieInput>
       ))}

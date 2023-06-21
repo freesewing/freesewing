@@ -24,8 +24,10 @@ const heightClasses = {
   16: 'h-6',
   32: 'h-4',
 }
+
 const fractionClasses =
   'w-full border-2 border-solid border-base-100 hover:border-secondary bg-secondary rounded bg-opacity-50 hover:bg-opacity-100'
+
 const FractionButtons = ({ t, fraction }) => (
   <div className="flex flex-row mt-1 content-center items-center justify-around">
     <span className="text-xs inline-block pr-2">{t('fractions')}</span>
@@ -34,8 +36,8 @@ const FractionButtons = ({ t, fraction }) => (
         let denom = 32
         let num = i + 1
 
-        for (var n = 4; n > 0; n--) {
-          let fac = Math.pow(2, n)
+        for (let n = 4; n > 0; n--) {
+          const fac = Math.pow(2, n)
           if (num % fac === 0) {
             denom = 32 / fac
             num = num / fac
@@ -47,7 +49,7 @@ const FractionButtons = ({ t, fraction }) => (
           <span className="group w-[3.125%] relative" key={i}>
             <button
               className={`${heightClasses[denom]} ${fractionClasses}`}
-              title={`${num}/${denom}"`}
+              title={`${num}/${denom}″`}
               onClick={() => fraction(num, denom)}
             />
             <span className="group-hover:visible invisible text-xs text-center absolute left-0 -bottom-6">{`${num}/${denom}"`}</span>
@@ -57,10 +59,11 @@ const FractionButtons = ({ t, fraction }) => (
     </div>
   </div>
 )
+
 export const MeasieRow = (props) => {
   const { t, m, mset } = props
 
-  const isSet = typeof mset.measies?.[m] === 'undefined' ? false : true
+  const isSet = typeof mset.measies?.[m] !== 'undefined'
 
   return (
     <Collapse
@@ -88,13 +91,13 @@ export const MeasieInput = ({
   t,
   m,
   mset,
-  startLoading,
-  stopLoading,
   backend,
   refresh,
   toast,
   children,
   onUpdate,
+  startLoading = () => null,
+  stopLoading = () => null,
 }) => {
   const isDegree = isDegreeMeasurement(m)
   const factor = isDegree ? 1 : mset.imperial ? 25.4 : 10
@@ -110,7 +113,7 @@ export const MeasieInput = ({
   const update = (evt) => {
     setVal(evt.target.value)
 
-    let useVal = isDegree
+    const useVal = isDegree
       ? evt.target.value
       : measurementAsMm(evt.target.value, mset.imperial ? 'imperial' : 'metric')
     const validUpdate = isValid(useVal)
