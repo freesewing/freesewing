@@ -27,7 +27,6 @@ export const CuratedSetPicker = ({ design, language, href, clickHandler }) => {
   const [curatedSets, setCuratedSets] = useState([])
   const [filter, setFilter] = useState([])
   const [tags, setTags] = useState([])
-  const [reload, setReload] = useState(0)
 
   // Effects
   useEffect(() => {
@@ -45,7 +44,7 @@ export const CuratedSetPicker = ({ design, language, href, clickHandler }) => {
       }
     }
     getCuratedSets()
-  }, [reload])
+  }, [])
 
   const addFilter = (tag) => {
     const newFilter = [...filter, tag]
@@ -119,14 +118,13 @@ export const CuratedSetPicker = ({ design, language, href, clickHandler }) => {
   )
 }
 
-export const UserSetPicker = ({ design, t, language, href, clickHandler }) => {
+export const UserSetPicker = ({ design, t, href, clickHandler }) => {
   // Hooks
   const { token } = useAccount()
   const backend = useBackend(token)
 
   // State
   const [sets, setSets] = useState({})
-  const [list, setList] = useState([])
 
   // Effects
   useEffect(() => {
@@ -140,10 +138,6 @@ export const UserSetPicker = ({ design, t, language, href, clickHandler }) => {
     }
     getSets()
   }, [])
-
-  // Need to sort designs by their translated title
-  const translated = {}
-  for (const d of list) translated[t(`${d}.t`)] = d
 
   return Object.keys(sets).length < 1 ? (
     <PopoutWrapper tip>
@@ -175,7 +169,7 @@ export const UserSetPicker = ({ design, t, language, href, clickHandler }) => {
   )
 }
 
-export const BookmarkedSetPicker = ({ design, t, href = false, clickHandler = false }) => (
+export const BookmarkedSetPicker = ({ t }) => (
   <>
     <h3>{t('bookmarkedSets')}</h3>
     <PopoutWrapper fixme>Implement bookmarked set picker (also implement bookmarks)</PopoutWrapper>

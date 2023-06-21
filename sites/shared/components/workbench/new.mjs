@@ -73,17 +73,21 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
   const [mounted, setMounted] = useState(false)
   const [missingMeasurements, setMissingMeasurements] = useState(false)
 
+  // set mounted on mount
+  useEffect(() => setMounted(true), [setMounted])
+
   useEffect(() => {
-    // Force the measurements view if we have missing measurements
+    // protect against loops
+    if (!mounted) return
+
     const [ok, missing] = hasRequiredMeasurements(Design, settings.measurements)
     if (ok) setMissingMeasurements(false)
+    // Force the measurements view if we have missing measurements
     else {
-      // Guard against loops
-      if (JSON.stringify(missing) !== JSON.stringify(missingMeasurements))
-        setMissingMeasurements(missing)
+      setMissingMeasurements(missing)
       if (view !== 'measies') setView('measies')
     }
-  }, [Design, settings.measurements, missingMeasurements, view])
+  }, [Design, settings.measurements, mounted, view])
 
   // Helper methods for settings/ui updates
   const update = {
@@ -143,7 +147,7 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
   switch (view) {
     // Save view
     case 'save':
-      viewContent = <SaveView {...viewProps} from={from} />
+      viewContent = <SaveView {...viewProps} />
       break
     case 'export':
       viewContent = <ExportView {...viewProps} />

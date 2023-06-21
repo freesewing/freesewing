@@ -35,7 +35,7 @@ export const SetLacksMeasies = ({ set, design, t, href, clickHandler }) => {
   return <Component {...wrapProps}>{inner}</Component>
 }
 
-export const SetSummary = ({ set, design, t, href, clickHandler }) => {
+export const SetSummary = ({ set, href, clickHandler }) => {
   const wrapProps = {
     icon: <OkIcon className="w-10 h-10 text-success" />,
     title: <Title set={set} />,
