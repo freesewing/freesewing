@@ -1,10 +1,13 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { sanityImage } from 'site/components/sanity/utils.mjs'
+// Hooks
 import { useTranslation } from 'next-i18next'
-import { sanityLoader, sanityImage } from 'site/components/sanity/utils.mjs'
+import { useSanityPagination } from 'site/hooks/use-sanity-pagination.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import Link from 'next/link'
+import { Pagination } from 'shared/components/navigation/pagination.mjs'
 
 // Translation namespaces used on this page
 const namespaces = [...new Set(['common', 'designs', ...pageNs])]
@@ -37,22 +40,41 @@ export const PreviewTile = ({ img, slug, title }) => (
 //   )
 // }
 
-// FIXME paginate
-const Posts = ({ posts }) => (
-  <div className="grid grid-cols-1 gap-4 xl:gap-8 lg:grid-cols-2 xl:grid-cols-3 lg:pr-4 xl:pr-8">
-    {posts.map((post) => (
-      <PreviewTile img={post.image} slug={post.slug} title={post.title} key={post.slug} />
-    ))}
-  </div>
-)
+const Posts = ({ posts, locale }) => {
+  posts.forEach((post) => {
+    // for (const design of post.designs) {
+    //   if (typeof designs[design] === 'undefined') designs[design] = []
+    //   designs[design].push(post)
+    // }
+
+    previews.push(
+      <PreviewTile
+        img={sanityImage(post.image[0]) + '?fit=clip&w=400'}
+        slug={post.slug.current}
+        title={post.title}
+        key={post.slug.current}
+      />
+    )
+  })
+
+  return (
+    <div className="grid grid-cols-1 gap-4 xl:gap-8 lg:grid-cols-2 xl:grid-cols-3 lg:pr-4 xl:pr-8">
+      {previews}
+    </div>
+  )
+}
 
 const ShowcaseIndexPage = (props) => {
   const { t } = useTranslation()
-  const { posts } = props
+  const { posts, page, totalPages, setPage } = useSanityPagination('showcase', props.page.locale)
+
   // const designKeys = useMemo(() => Object.keys(designs).sort(), [designs])
   return (
     <PageWrapper title={t('showcase')} {...props.page}>
-      <Posts posts={posts} />
+      <div className="text-center">
+        <Posts locale={props.page.locale} posts={posts} />
+        <Pagination {...{ current: page, total: totalPages, hrefBuilder, setPage }} />
+      </div>
     </PageWrapper>
   )
 }
@@ -60,34 +82,10 @@ const ShowcaseIndexPage = (props) => {
 export default ShowcaseIndexPage
 
 export async function getStaticProps({ locale }) {
-  const posts = await sanityLoader({
-    language: locale,
-    type: 'showcase',
-    order: 'date desc',
-  }).catch((err) => console.log(err))
-
-  const designs = {}
-  const propPosts = []
-  posts.forEach((post) => {
-    // for (const design of post.designs) {
-    //   if (typeof designs[design] === 'undefined') designs[design] = []
-    //   designs[design].push(post)
-    // }
-
-    propPosts.push({
-      slug: post.slug.current,
-      title: post.title,
-      date: post.date,
-      // FIXME get the authors separately
-      author: post.maker,
-      image: sanityImage(post.image[0]) + '?fit=clip&w=400',
-    })
-  })
-
   return {
     props: {
-      posts: propPosts,
-      designs,
+      // posts: propPosts,
+      // designs,
       ...(await serverSideTranslations(locale, namespaces)),
       page: {
         locale,

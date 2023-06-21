@@ -28,5 +28,5 @@ export const sanityLoader = ({ query, language, type, slug, order }) => {
 
 export const sanityImage = (image, dataset = 'site-content') => {
   const [, assetName, origSize, format] = image.asset._ref.split('-')
-  return `https://cdn.sanity.io/images/${siteConfig.sanity.projectt}/${dataset}/${assetName}-${origSize}.${format}`
+  return `https://cdn.sanity.io/images/${siteConfig.sanity.project}/${dataset}/${assetName}-${origSize}.${format}`
 }
