@@ -182,8 +182,8 @@ export const Workbench = ({ design, Design, baseSettings, DynamicDocs, from }) =
   }
 
   return (
-    <div className="flex flex-row">
-      <div className="grow-no shrink-no">
+    <div className="flex flex-row content-stretch">
+      <div className="grow-0 shrink-0">
         <WorkbenchHeader {...{ view, setView, update }} />
       </div>
       <div className="grow">{viewContent}</div>

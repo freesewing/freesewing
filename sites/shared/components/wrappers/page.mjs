@@ -6,7 +6,7 @@ import { useTheme } from 'shared/hooks/use-theme.mjs'
 // Components
 import Head from 'next/head'
 import { SwipeWrapper } from 'shared/components/wrappers/swipes.mjs'
-import { LayoutWrapper, ns as layoutNs } from 'site/components/wrappers/layout.mjs'
+import { LayoutWrapper, ns as layoutNs } from 'shared/components/wrappers/layout.mjs'
 import { DocsLayout, ns as docsNs } from 'site/components/layouts/docs.mjs'
 import { Feeds } from 'site/components/feeds.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
@@ -58,7 +58,7 @@ export const PageWrapper = (props) => {
       })
       setNavupdates(navupdates + 1)
     }
-  }, [path, pageTitle, slug])
+  }, [path, pageTitle, slug, locale, navupdates, setNavigation])
 
   /*
    * Hotkeys (keyboard actions)
