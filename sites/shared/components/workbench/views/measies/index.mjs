@@ -42,7 +42,7 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
         </Popout>
       ) : (
         <Popout tip>
-          <h5>t{'measiesOk'}</h5>
+          <h5>{t('measiesOk')}</h5>
         </Popout>
       )}
       <Tabs tabs={tabs}>

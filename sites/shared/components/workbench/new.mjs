@@ -147,7 +147,7 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
   switch (view) {
     // Save view
     case 'save':
-      viewContent = <SaveView {...viewProps} from={from} />
+      viewContent = <SaveView {...viewProps} />
       break
     case 'export':
       viewContent = <ExportView {...viewProps} />
