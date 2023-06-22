@@ -1,4 +1,4 @@
-import { formatMm, formatFraction128, measurementAsUnits } from 'shared/utils.mjs'
+import { formatMm } from 'shared/utils.mjs'
 
 /*********************************************************************************************************
  * This file contains the base components to be used for displaying values in menu titles in the workbench

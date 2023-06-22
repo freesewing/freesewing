@@ -87,7 +87,7 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
       setMissingMeasurements(missing)
       if (view !== 'measies') setView('measies')
     }
-  }, [Design, settings.measurements, mounted, view])
+  }, [Design, settings.measurements, mounted, view, setView])
 
   // Helper methods for settings/ui updates
   const update = {

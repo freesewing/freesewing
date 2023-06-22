@@ -1,4 +1,3 @@
-import { measurementAsMm } from 'shared/utils.mjs'
 import { ListInput, SliderInput, BoolInput, MmInput } from '../shared/inputs.mjs'
 
 /** an input for the 'only' setting. toggles individual parts*/
@@ -45,10 +44,10 @@ export const handlers = {
       updateFunc(path, newParts)
     },
   samm:
-    ({ updateFunc, config, units }) =>
+    ({ updateFunc, config }) =>
     (_path, newCurrent) => {
       // convert to millimeters if there's a value
-      const sa = newCurrent === undefined ? config.dflt : newCurrent
+      newCurrent = newCurrent === undefined ? config.dflt : newCurrent
       // update both values to match
       updateFunc([
         [['samm'], newCurrent],
