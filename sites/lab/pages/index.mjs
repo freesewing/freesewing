@@ -5,10 +5,10 @@ import { useTranslation } from 'next-i18next'
 // Components
 import Head from 'next/head'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { Popout } from 'shared/components/popout.mjs'
+import { Popout, ns as popoutNs } from 'shared/components/popout.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
 
-const ns = ['lab', ...pageNs]
+const ns = ['lab', ...pageNs, ...popoutNs]
 /*
  * Each page MUST be wrapped in the PageWrapper component.
  * You also MUST spread props.page into this wrapper component

@@ -37,7 +37,7 @@ export const PrintMenu = ({
     <nav className="grow mb-12">
       <PrintActions {...menuProps} ui={ui} exportIt={exportIt} />
       <PrintSettings {...menuProps} ui={ui} />
-      <DesignOptions {...menuProps} />
+      <DesignOptions {...menuProps} isFirst={false} />
       <CoreSettings {...menuProps} />
     </nav>
   )

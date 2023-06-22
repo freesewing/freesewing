@@ -54,7 +54,7 @@ export const formatFraction128 = (fraction, format = 'html') => {
     rest = fraction - inches
   }
   let fraction128 = Math.round(rest * 128)
-  if (fraction128 == 0) return formatImperial(negative, inches, false, false, format)
+  if (fraction128 == 0) return formatImperial(negative, inches || fraction128, false, false, format)
 
   for (let i = 1; i < 7; i++) {
     const numoFactor = Math.pow(2, 7 - i)
@@ -198,7 +198,9 @@ export const optionsMenuStructure = (options) => {
   // Fixme: One day we should sort this based on the translation
   for (const option of orderBy(sorted, ['menu', 'name'], ['asc'])) {
     if (typeof option === 'object') {
-      option.dflt = option.dflt || option[optionType(option)]
+      const oType = optionType(option)
+      option.dflt = option.dflt || option[oType]
+      if (oType === 'pct') option.dflt /= 100
       if (option.menu) {
         set(menu, `${option.menu}.isGroup`, true)
         set(menu, `${option.menu}.${option.name}`, option)
