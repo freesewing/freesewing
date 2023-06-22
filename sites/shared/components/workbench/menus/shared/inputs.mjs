@@ -220,7 +220,7 @@ export const SliderInput = ({
 }
 
 /** A {@see SliderInput} to handle percentage values */
-export const PctInput = ({ current, changed, updateFunc, ...rest }) => {
+export const PctInput = ({ current, changed, updateFunc, config, ...rest }) => {
   const factor = 100
   let pctCurrent = changed ? current * factor : current
   const pctUpdateFunc = useCallback(
@@ -232,6 +232,7 @@ export const PctInput = ({ current, changed, updateFunc, ...rest }) => {
     <SliderInput
       {...{
         ...rest,
+        config: { ...config, dflt: config.dflt * factor },
         current: pctCurrent,
         updateFunc: pctUpdateFunc,
         suffix: '%',
@@ -257,13 +258,17 @@ export const MmInput = (props) => {
   )
 
   // add a default step that's appropriate to the unit. can be overwritten by config
-  const defaultStep = units === 'metric' ? 0.1 : 0.125
+  const defaultStep = units === 'imperial' ? 0.125 : 0.1
 
   return (
     <SliderInput
       {...{
         ...props,
-        config: { step: defaultStep, ...config },
+        config: {
+          step: defaultStep,
+          ...config,
+          dflt: measurementAsUnits(config.dflt, units),
+        },
         current: current === undefined ? undefined : measurementAsUnits(current, units),
         updateFunc: mmUpdateFunc,
         valFormatter: (val) => (units === 'imperial' ? formatFraction128(val, null) : val),
