@@ -1,14 +1,16 @@
 // Dependencies
-import { forwardRef, useState, useContext, useEffect } from 'react'
+import { forwardRef, useContext } from 'react'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Context
-import { PanZoomContext } from 'shared/components/workbench/pattern/pan-zoom-context.mjs'
+import {
+  PanZoomContext,
+  PanZoomCapture,
+} from 'shared/components/workbench/pattern/pan-zoom-context.mjs'
 // Components
 import { SizeMe } from 'react-sizeme'
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch'
 import { Pattern } from 'pkgs/react-components/src/index.mjs'
-import { ClearIcon } from 'shared/components/icons.mjs'
 
 export const ns = ['workbench']
 
@@ -36,7 +38,7 @@ export const PanZoomPattern = forwardRef((props, ref) => {
   const { t } = useTranslation(ns)
 
   const { renderProps = false, components = {} } = props
-  const { zoomed, onTransformed, setZoomFunctions } = useContext(PanZoomContext)
+  const { onTransformed, setZoomFunctions } = useContext(PanZoomContext)
 
   if (!renderProps) return null
 
@@ -50,22 +52,16 @@ export const PanZoomPattern = forwardRef((props, ref) => {
           doubleClick={{ mode: 'reset' }}
           onTransformed={onTransformed}
         >
-          {({ resetTransform, zoomIn, zoomOut, instance }) => {
-            useEffect(() => {
-              if (typeof setZoomFunctions === 'function') {
-                setZoomFunctions({ resetTransform, zoomIn, zoomOut })
-                console.log('setting')
-              }
-            }, [])
-
-            return (
+          {({ resetTransform, zoomIn, zoomOut }) => (
+            <>
+              <PanZoomCapture {...{ setZoomFunctions, resetTransform, zoomIn, zoomOut }} />
               <TransformComponent>
                 <div style={{ width: size.width + 'px' }} className="max-h-screen">
                   <Pattern {...{ t, components, renderProps }} ref={ref} />
                 </div>
               </TransformComponent>
-            )
-          }}
+            </>
+          )}
         </TransformWrapper>
       )}
     </SizeMe>
