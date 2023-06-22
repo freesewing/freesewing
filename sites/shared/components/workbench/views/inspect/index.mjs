@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { InspectorPattern } from './inspector/pattern.mjs'
 import { DraftMenu, ns as menuNs } from './menu.mjs'
 import { objUpdate } from 'shared/utils.mjs'
-import { DraftViewHeader } from '../draft/index.mjs'
+import { ViewHeader } from '../view-header.mjs'
 
 export const ns = menuNs
 
