@@ -13,6 +13,11 @@ config.redirects = async () => {
       destination: '/blog/page/1',
       permanent: false,
     },
+    {
+      source: '/showcase',
+      destination: '/showcase/page/1',
+      permanent: false,
+    },
   ]
 }
 

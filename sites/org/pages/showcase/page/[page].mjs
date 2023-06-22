@@ -1,9 +1,8 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { sanityImage } from 'site/components/sanity/utils.mjs'
+import { sanityImage, numPerPage, sanityLoader } from 'site/components/sanity/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
-import { useSanityPagination } from 'site/hooks/use-sanity-pagination.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import Link from 'next/link'
@@ -65,16 +64,15 @@ const Posts = ({ posts }) => {
   )
 }
 
-const ShowcaseIndexPage = (props) => {
+const ShowcaseIndexPage = ({ posts, page, current, total }) => {
   const { t } = useTranslation()
-  const { posts, page, totalPages, setPage } = useSanityPagination('showcase', props.page.locale)
 
   // const designKeys = useMemo(() => Object.keys(designs).sort(), [designs])
   return (
-    <PageWrapper title={t('showcase')} {...props.page}>
+    <PageWrapper title={t('showcase')} {...page}>
       <div className="text-center">
-        <Posts locale={props.page.locale} posts={posts} />
-        <Pagination {...{ current: page, total: totalPages, setPage }} />
+        <Posts locale={page.locale} posts={posts} />
+        <Pagination {...{ current, total }} />
       </div>
     </PageWrapper>
   )
@@ -82,17 +80,43 @@ const ShowcaseIndexPage = (props) => {
 
 export default ShowcaseIndexPage
 
-export async function getStaticProps({ locale }) {
+export async function getStaticProps({ locale, params }) {
+  const allPosts = await sanityLoader({
+    language: locale,
+    type: 'showcase',
+    order: 'date desc',
+    filters: '{_id, date, slug, title, maker, image}',
+  })
+  const pageNum = parseInt(params.page)
+
   return {
     props: {
-      // posts: propPosts,
       // designs,
+      posts: allPosts.slice(numPerPage * (pageNum - 1), numPerPage * pageNum),
+      current: pageNum,
+      total: allPosts.length,
       ...(await serverSideTranslations(locale, namespaces)),
       page: {
         locale,
         // title: 'Freesewing Blog',
-        path: ['showcase'],
+        path: ['showcase', 'page', params.page],
       },
     },
+  }
+}
+
+const locales = ['', 'de', 'es', 'fr', 'nl']
+export const getStaticPaths = async () => {
+  const numPosts = await sanityLoader({ query: `count(*[_type == "showcaseen"])` })
+  const numPages = Math.ceil(numPosts / numPerPage)
+  const paths = []
+  for (let i = 0; i < numPerPage; i++) {
+    const pathName = `/showcase/page/${i + 1}`
+    locales.forEach((l) => paths.push(`${l.length ? '/' : ''}${l}${pathName}`))
+  }
+
+  return {
+    paths,
+    fallback: false,
   }
 }
