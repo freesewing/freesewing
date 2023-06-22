@@ -3,7 +3,7 @@ import { DraftMenu, ns as menuNs } from './menu.mjs'
 import { ViewHeader, ns as headerNs } from 'shared/components/workbench/views/view-header.mjs'
 import { PanZoomContextProvider } from 'shared/components/workbench/pattern/pan-zoom-context.mjs'
 
-export const ns = menuNs
+export const ns = [menuNs, ...headerNs]
 
 export const DraftView = ({
   design,

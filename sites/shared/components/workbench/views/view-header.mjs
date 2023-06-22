@@ -12,7 +12,7 @@ import {
   ClearIcon,
 } from 'shared/components/icons.mjs'
 
-export const ns = ['common']
+export const ns = ['common', 'core-settings', 'ui-settings']
 
 const ZoomInIcon = (props) => (
   <IconWrapper {...props}>
@@ -27,15 +27,17 @@ const ZoomOutIcon = (props) => (
 )
 
 const IconButton = ({ Icon, onClick, dflt = true, title, hide = false }) => (
-  <button
-    onClick={onClick}
-    className={`text-${dflt ? 'neutral-content' : 'accent'} hover:text-secondary-focus ${
-      hide ? 'invisible' : ''
-    }`}
-    title={title}
-  >
-    <Icon />
-  </button>
+  <div className="tooltip tooltip-bottom tooltip-primary flex items-center" data-tip={title}>
+    <button
+      onClick={onClick}
+      className={`text-${dflt ? 'neutral-content' : 'accent'} hover:text-secondary-focus ${
+        hide ? 'invisible' : ''
+      }`}
+      title={title}
+    >
+      <Icon />
+    </button>
+  </div>
 )
 
 const ZoomButtons = ({ t }) => {
@@ -71,7 +73,7 @@ const Spacer = () => <span className="opacity-50">|</span>
 export const ViewHeader = ({ update, settings, ui, control, setSettings }) => {
   const { t } = useTranslation(ns)
   return (
-    <div className="flex flex-row flex-wrap gap-4 py-4 mt-2 pt-4 w-full bg-neutral text-neutral-content items-center justify-center">
+    <div className="flex flex-row flex-wrap gap-4 py-4 pt-4 w-full bg-neutral text-neutral-content items-center justify-center lg:sticky top-0 z-20">
       <ZoomButtons t={t} />
       <Spacer />
       <div className="flex flex-row items-center gap-4">
@@ -79,11 +81,13 @@ export const ViewHeader = ({ update, settings, ui, control, setSettings }) => {
           Icon={SaIcon}
           dflt={settings.sabool ? false : true}
           onClick={() => update.toggleSa()}
+          title={t('core-settings:sabool.t')}
         />
         <IconButton
           Icon={PaperlessIcon}
           dflt={settings.paperless ? false : true}
           onClick={() => update.settings(['paperless'], !settings.paperless)}
+          title={t('core-settings:paperless.t')}
         />
         <IconButton
           Icon={DetailIcon}
@@ -94,6 +98,7 @@ export const ViewHeader = ({ update, settings, ui, control, setSettings }) => {
               typeof settings.complete === 'undefined' ? 0 : settings.complete ? 0 : 1
             )
           }
+          title={t('core-settings:complete.t')}
         />
         <IconButton
           Icon={
@@ -105,10 +110,14 @@ export const ViewHeader = ({ update, settings, ui, control, setSettings }) => {
           onClick={() =>
             update.settings(['units'], settings.units === 'imperial' ? 'metric' : 'imperial')
           }
+          title={t('core-settings:units.t')}
         />
       </div>
       <Spacer />
-      <div className="flex flex-row items-center">
+      <div
+        className="tooltip tooltip-primary tooltip-bottom flex flex-row items-center"
+        data-tip={t('ui-settings:control.t')}
+      >
         {[1, 2, 3, 4, 5].map((score) => (
           <button onClick={() => update.setControl(score)} className="text-primary" key={score}>
             <BulletIcon fill={control >= score ? true : false} />
@@ -121,6 +130,7 @@ export const ViewHeader = ({ update, settings, ui, control, setSettings }) => {
           Icon={RocketIcon}
           dflt={ui.renderer !== 'svg'}
           onClick={() => update.ui(['renderer'], ui.renderer === 'react' ? 'svg' : 'react')}
+          title={t('ui-settings:renderer.t')}
         />
       </div>
       <Spacer />
