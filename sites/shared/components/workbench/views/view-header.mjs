@@ -68,10 +68,10 @@ const ZoomButtons = ({ t }) => {
 
 const Spacer = () => <span className="opacity-50">|</span>
 
-export const ViewHeader = ({ update, settings, ui, control }) => {
+export const ViewHeader = ({ update, settings, ui, control, setSettings }) => {
   const { t } = useTranslation(ns)
   return (
-    <div className="flex flex-row gap-4 py-4 mt-2 pt-4 w-full bg-neutral text-neutral-content items-center justify-center">
+    <div className="flex flex-row flex-wrap gap-4 py-4 mt-2 pt-4 w-full bg-neutral text-neutral-content items-center justify-center">
       <ZoomButtons t={t} />
       <Spacer />
       <div className="flex flex-row items-center gap-4">
@@ -122,6 +122,15 @@ export const ViewHeader = ({ update, settings, ui, control }) => {
           dflt={ui.renderer !== 'svg'}
           onClick={() => update.ui(['renderer'], ui.renderer === 'react' ? 'svg' : 'react')}
         />
+      </div>
+      <Spacer />
+      <div className="flex flex-row items-center gap-4">
+        <button
+          onClick={setSettings}
+          className={`btn btn-sm btn-outline btn-secondary hover:text-secondary-focus`}
+        >
+          <ClearIcon /> {t('clearSettings')}
+        </button>
       </div>
     </div>
   )
