@@ -54,14 +54,14 @@ export const SetCandidate = ({
   const { t } = useTranslation(['sets', design])
 
   let hasMeasies = true
-  const setMeasies = Object.keys(set.measies)
+  const setMeasies = set.measies && Object.keys(set.measies)
   // Quick check for required measurements
   if (!set.measies || setMeasies.length < requiredMeasies.length) hasMeasies = false
 
   // Proper check for required measurements
   if (hasMeasies) {
     for (const m of requiredMeasies) {
-      if (!Object.keys(set.measies).includes(m)) {
+      if (!setMeasies.includes(m)) {
         hasMeasies = false
         break
       }
