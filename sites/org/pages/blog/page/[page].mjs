@@ -1,9 +1,8 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { sanityImage } from 'site/components/sanity/utils.mjs'
+import { sanityImage, numPerPage, sanityLoader } from 'site/components/sanity/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
-import { useSanityPagination } from 'site/hooks/use-sanity-pagination.mjs'
 // Components
 import Link from 'next/link'
 import { TimeAgo } from 'shared/components/wrappers/mdx.mjs'
@@ -74,33 +73,59 @@ const Preview = ({ post, t }) => (
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const BlogIndexPage = (props) => {
+const BlogIndexPage = ({ posts, page, current, total }) => {
   const { t } = useTranslation()
-  const { posts, page, totalPages, setPage } = useSanityPagination('blog', props.page.locale)
 
   return (
-    <PageWrapper {...props.page}>
+    <PageWrapper {...page}>
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3 max-w-7xl lg:pr-4 xl:pr-6">
         {posts.map((post) => (
           <Preview post={post} t={t} key={post.slug.current} />
         ))}
       </div>
-      <Pagination {...{ current: page, total: totalPages, setPage }} />
+      <Pagination {...{ current, total }} />
     </PageWrapper>
   )
 }
 
 export default BlogIndexPage
 
-export async function getStaticProps({ locale }) {
+export async function getStaticProps({ locale, params }) {
+  const allPosts = await sanityLoader({
+    language: locale,
+    type: 'blog',
+    order: 'date desc',
+    filters: '{_id, date, slug, title, author, image}',
+  })
+  const pageNum = parseInt(params.page)
+
   return {
     props: {
+      posts: allPosts.slice(numPerPage * (pageNum - 1), numPerPage * pageNum),
+      current: pageNum,
+      total: allPosts.length,
       ...(await serverSideTranslations(locale, namespaces)),
       page: {
         locale,
         // title: 'Freesewing Blog',
-        path: ['blog'],
+        path: ['blog', 'page', params.page],
       },
     },
+  }
+}
+
+const locales = ['', 'de', 'es', 'fr', 'nl']
+export const getStaticPaths = async () => {
+  const numPosts = await sanityLoader({ query: `count(*[_type == "blogen"])` })
+  const numPages = Math.ceil(numPosts / numPerPage)
+  const paths = []
+  for (let i = 0; i < numPerPage; i++) {
+    const pathName = `/blog/page/${i + 1}`
+    locales.forEach((l) => paths.push(`${l.length ? '/' : ''}${l}${pathName}`))
+  }
+
+  return {
+    paths,
+    fallback: false,
   }
 }

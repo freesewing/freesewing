@@ -6,6 +6,15 @@ import { jargon } from './jargon.mjs'
 
 let config = configBuilder({ site: 'org', jargon })
 config.i18n = i18nConfig.i18n
+config.redirects = async () => {
+  return [
+    {
+      source: '/blog',
+      destination: '/blog/page/1',
+      permanent: false,
+    },
+  ]
+}
 
 // Say hi
 console.log(banner + '\n')

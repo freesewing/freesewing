@@ -4,34 +4,24 @@ import { LeftIcon, DoubleLeftIcon, RightIcon, DoubleRightIcon } from 'shared/com
 
 const pageButtonClasses = 'btn btn-primary btn-ghost text-base leading-none'
 
-const PageButton = ({ pageNum, label, title, hrefBuilder, onClick, visible = true }) => (
+const PageButton = ({ pageNum, label, title, hrefBuilder, visible = true }) => (
   <Link
     className={`${pageButtonClasses} ${visible ? 'join-item' : 'invisible'}`}
     href={hrefBuilder(pageNum)}
-    onClick={onClick(pageNum)}
     title={title || label}
   >
     {label}
   </Link>
 )
 
-const defaultHrefBuilder = (pageNum) => `#page=${pageNum}`
+const defaultHrefBuilder = (pageNum) => `${pageNum}`
 
-export const Pagination = ({ current, total, hrefBuilder = defaultHrefBuilder, setPage }) => {
+export const Pagination = ({ current, total, hrefBuilder = defaultHrefBuilder }) => {
   const { t } = useTranslation('common')
   const prevButtons = []
   const nextButtons = []
 
-  // an obnoxious workaround to keep urls on links but have the atom actually update when we change pages
-  const onClick = (pageNum) => (e) => {
-    if (typeof setPage === 'function') {
-      e.preventDefault()
-      setPage(pageNum)
-      window.scroll(0, 0)
-    }
-  }
-
-  const buttonProps = { hrefBuilder, onClick }
+  const buttonProps = { hrefBuilder }
   for (let i = 1; i < 4; i++) {
     const isEnd = i === 3
 
