@@ -41,6 +41,18 @@ function draftBackPocket({
   points.chamferLeftTop = points.chamferLeft.rotate(90, points.pocketBottomLeft)
   points.chamferRightTop = new Point(points.pocketBottomRight.x, points.chamferLeftTop.y)
 
+  // Draw the pocket flap
+  points.flapTopLeft = points.pocketTopRight.shiftFractionTowards(points.pocketTopLeft, 1.02)
+  points.flapTopRight = points.pocketTopLeft.shiftFractionTowards(points.pocketTopRight, 1.02)
+  points.flapBottomLeft = points.flapTopLeft.shift(
+    -90,
+    points.flapTopLeft.dy(points.pocketBottomLeft) / 3
+  )
+  points.flapBottomRight = points.flapTopRight.shift(
+    -90,
+    points.flapTopLeft.dy(points.pocketBottomLeft) / 4
+  )
+
   // Paths
   paths.backSeam = paths.seam
   paths.backSeam.hide()

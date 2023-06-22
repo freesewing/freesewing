@@ -13,6 +13,7 @@ import { frontPocketFacing } from './front-pocket-facing.mjs'
 import { frontAttachment } from './front-attachment.mjs'
 import { frontAttachmentFacing } from './front-attachment-facing.mjs'
 import { backPocket } from './back-pocket.mjs'
+import { backPocketFlap } from './back-pocket-flap.mjs'
 
 // Create new design
 const Collab = new Design({
@@ -30,6 +31,7 @@ const Collab = new Design({
     frontAttachment,
     frontAttachmentFacing,
     backPocket,
+    backPocketFlap,
   ],
 })
 
@@ -47,5 +49,6 @@ export {
   frontAttachment,
   frontAttachmentFacing,
   backPocket,
+  backPocketFlap,
   Collab,
 }

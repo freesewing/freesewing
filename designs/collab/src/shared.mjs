@@ -71,6 +71,18 @@ export const shared = {
     },
 
     // Style options
+    /*
+     * The length as a percentage of the hips to upper leg measurements
+     */
+    length: {
+      pct: 40,
+      min: 0,
+      max: 80,
+      menu: 'style',
+      toAbs: (value, { measurements }, mergedOptions) =>
+        (1 + value) * (measurements.waistToUpperLeg - measurements.waistToHips),
+      fromAbs: (value) => (measurements.waistToUpperLeg - measurements.waistToHips) / (1 + value),
+    },
 
     waistbandWidth: {
       pct: 4.4,

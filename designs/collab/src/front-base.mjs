@@ -117,10 +117,7 @@ function draftFrontBase({
     points.topLeft.x + store.get('frontQuarterHips'),
     absoluteOptions.waistSlant * -1
   )
-  points.bottomLeft = new Point(
-    0,
-    points.topRight.y + store.get('hipsToUpperLeg') - absoluteOptions.waistbandWidth
-  )
+  points.bottomLeft = new Point(0, points.topRight.y + absoluteOptions.length)
   points.bottomRight = new Point(store.get('frontQuarterSeat'), points.bottomLeft.y)
 
   // True the side seam
