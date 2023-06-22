@@ -136,7 +136,7 @@ export const ViewHeader = ({ update, settings, ui, control, setSettings }) => {
       <Spacer />
       <div className="flex flex-row items-center gap-4">
         <button
-          onClick={setSettings}
+          onClick={() => setSettings({})}
           className={`btn btn-sm btn-outline btn-secondary hover:text-secondary-focus`}
         >
           <ClearIcon /> {t('clearSettings')}
