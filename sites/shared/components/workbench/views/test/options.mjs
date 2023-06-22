@@ -1,5 +1,4 @@
 import { useRef } from 'react'
-import { MenuItem } from 'shared/components/workbench/menus/shared/menu-item.mjs'
 import { WorkbenchMenu } from 'shared/components/workbench/menus/shared/index.mjs'
 import {
   emojis,
@@ -10,26 +9,10 @@ import { optionsMenuStructure } from 'shared/utils.mjs'
 
 export const ns = ['test-view', ...designMenuNs]
 
-const SampleInput = ({ changed, name, t, updateFunc, type }) => {
-  return (
-    <>
-      <p>{t([`${name}.d`, ''])}</p>
-      <div className="text-center">
-        <button
-          className={`btn btn-primary`}
-          disabled={changed}
-          onClick={() => updateFunc([name], true)}
-        >
-          {t(`testThis.${type}`)}
-        </button>
-      </div>
-    </>
-  )
-}
-
 const closedClasses = `border-r-0 border-t-0 border-b-0 hover:cursor-pointer hover:bg-secondary border-secondary hover:bg-opacity-20`
 const openClasses = `border-l-0 border-r-0 border-b-2 lg:border lg:rounded-lg border-primary`
-export const SampleItem = ({ name, passProps, t, updateFunc, ...rest }) => {
+
+export const SampleItem = ({ name, passProps, t, updateFunc }) => {
   const input = useRef(null)
   const checked = passProps.settings.sample?.[passProps.type] === name
   const onChange = (evt) => {
@@ -63,15 +46,6 @@ export const SampleItem = ({ name, passProps, t, updateFunc, ...rest }) => {
         </div>
       )}
     </div>
-    // <MenuItem
-    //   {...{
-    //     ...rest,
-    //     name,
-    //     passProps,
-    //     changed: passProps.settings.sample?.[passProps.type] === name,
-    //     Input: SampleInput,
-    //   }}
-    // />
   )
 }
 
