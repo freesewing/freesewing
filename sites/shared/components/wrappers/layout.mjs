@@ -38,6 +38,8 @@ export const LayoutWrapper = ({
     flex flex-col justify-between
     min-h-screen
     bg-base-100
+    group/layout
+    header-${showHeader ? 'shown' : 'hidden'}
     `}
     >
       <Head>
@@ -46,8 +48,7 @@ export const LayoutWrapper = ({
       <ChosenHeader show={showHeader} />
 
       <main
-        className={`grow transition-margin duration-300 ease-in-out ${
-          showHeader ? 'lg:mt-24 ' : 'lg:mt-4'
+        className={`grow transition-margin duration-300 ease-in-out lg:group-[.header-shown]/layout:mt-24 lg:mt-4
         }`}
       >
         {children}
