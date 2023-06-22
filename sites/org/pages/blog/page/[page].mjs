@@ -119,7 +119,7 @@ export const getStaticPaths = async () => {
   const numPosts = await sanityLoader({ query: `count(*[_type == "blogen"])` })
   const numPages = Math.ceil(numPosts / numPerPage)
   const paths = []
-  for (let i = 0; i < numPerPage; i++) {
+  for (let i = 0; i < numPages; i++) {
     const pathName = `/blog/page/${i + 1}`
     locales.forEach((l) => paths.push(`${l.length ? '/' : ''}${l}${pathName}`))
   }
