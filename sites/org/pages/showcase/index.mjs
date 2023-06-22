@@ -40,7 +40,8 @@ export const PreviewTile = ({ img, slug, title }) => (
 //   )
 // }
 
-const Posts = ({ posts, locale }) => {
+const Posts = ({ posts }) => {
+  const previews = []
   posts.forEach((post) => {
     // for (const design of post.designs) {
     //   if (typeof designs[design] === 'undefined') designs[design] = []
@@ -73,7 +74,7 @@ const ShowcaseIndexPage = (props) => {
     <PageWrapper title={t('showcase')} {...props.page}>
       <div className="text-center">
         <Posts locale={props.page.locale} posts={posts} />
-        <Pagination {...{ current: page, total: totalPages, hrefBuilder, setPage }} />
+        <Pagination {...{ current: page, total: totalPages, setPage }} />
       </div>
     </PageWrapper>
   )

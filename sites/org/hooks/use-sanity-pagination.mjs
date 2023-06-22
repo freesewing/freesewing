@@ -40,7 +40,7 @@ export const useSanityPagination = (type, language) => {
     if (cache.current[page]) {
       setPosts(cache.current[page])
     } else {
-      fetchPage(page)
+      fetchPage()
     }
   }, [mounted, setMounted, page, type, language, setPosts])
 
