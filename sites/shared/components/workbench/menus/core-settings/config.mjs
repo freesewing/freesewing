@@ -39,9 +39,8 @@ export const loadSettingsConfig = ({
     ? {
         control: 2, // Show when control > 1
         min: 0,
-        max: units === 'metric' ? 2.5 : 2,
-        dflt: defaultSamm(units, false),
-        step: units === 'metric' ? 0.1 : 0.125,
+        max: units === 'imperial' ? 2 : 2.5,
+        dflt: defaultSamm(units),
         icon: SaIcon,
       }
     : false,
@@ -126,8 +125,7 @@ export const loadSettingsConfig = ({
     control: 4, // Show when control > 3
     min: 0,
     max: 2.5,
-    dflt: units === 'metric' ? 0.2 : 0.125,
-    step: units === 'metric' ? 0.1 : 0.125,
+    dflt: measurementAsMm(units === 'imperial' ? 0.125 : 0.2, units),
     icon: MarginIcon,
   },
 })

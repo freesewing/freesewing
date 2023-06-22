@@ -48,7 +48,7 @@ export const handlers = {
     ({ updateFunc, config, units }) =>
     (_path, newCurrent) => {
       // convert to millimeters if there's a value
-      newCurrent = newCurrent === undefined ? measurementAsMm(config.dflt, units) : newCurrent
+      const sa = newCurrent === undefined ? config.dflt : newCurrent
       // update both values to match
       updateFunc([
         [['samm'], newCurrent],
