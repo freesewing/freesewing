@@ -43,7 +43,7 @@ export const CuratedSetPicker = ({ design, language, href, clickHandler }) => {
       }
     }
     getCuratedSets()
-  }, [])
+  }, [backend, language])
 
   const addFilter = (tag) => {
     const newFilter = [...filter, tag]
@@ -136,7 +136,7 @@ export const UserSetPicker = ({ design, t, href, clickHandler }) => {
       }
     }
     getSets()
-  }, [])
+  })
 
   return Object.keys(sets).length < 1 ? (
     <PopoutWrapper tip noP>
