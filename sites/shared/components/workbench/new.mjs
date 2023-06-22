@@ -137,6 +137,7 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
     setView,
     update,
     settings,
+    setSettings,
     ui,
     language,
     DynamicDocs,

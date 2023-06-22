@@ -10,6 +10,7 @@ export const DraftView = ({
   pattern,
   patternConfig,
   settings,
+  setSettings,
   ui,
   update,
   language,
@@ -41,6 +42,7 @@ export const DraftView = ({
             ui,
             update,
             control: account.control,
+            setSettings,
           }}
         />
         <div className="flex flex-row">
