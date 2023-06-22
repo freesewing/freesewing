@@ -59,7 +59,8 @@ export const CutView = ({
   )
 
   useEffect(() => {
-    if (!materialList.includes(materialSettings.activeMaterial)) setActiveMaterial(materialList[0])
+    if (materialList.length && !materialList.includes(materialSettings.activeMaterial))
+      setActiveMaterial(materialList[0])
   }, [materialSettings, materialList, setActiveMaterial])
 
   return (
