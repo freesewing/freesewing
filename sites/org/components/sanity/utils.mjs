@@ -3,7 +3,7 @@ import { siteConfig } from 'site/site.config.mjs'
 
 let sanityClient
 const cache = {}
-export const sanityLoader = async ({ query, language, type, slug, order }) => {
+export const sanityLoader = async ({ query, language, type, slug, order, filters = '' }) => {
   sanityClient =
     sanityClient ||
     createClient({
@@ -23,6 +23,8 @@ export const sanityLoader = async ({ query, language, type, slug, order }) => {
   if (order) {
     query += ` | order(${order})`
   }
+
+  query += filters
 
   if (cache[query]) return cache[query]
 
