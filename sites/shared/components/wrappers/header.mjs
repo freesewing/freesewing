@@ -14,7 +14,7 @@ export const HeaderWrapper = ({ show, children }) => {
       z-30
       transition-transform
       duration-300 ease-in-out
-      ${show || loading ? '' : 'bottom-0 lg:top-0 left-0 translate-y-36 lg:-translate-y-36'}
+      ${show || loading ? '' : 'translate-y-36 lg:-translate-y-36'}
       drop-shadow-xl
     `}
     >
@@ -24,3 +24,5 @@ export const HeaderWrapper = ({ show, children }) => {
     </header>
   )
 }
+
+export const shownHeaderSelector = 'group-[.header-shown]/layout:'

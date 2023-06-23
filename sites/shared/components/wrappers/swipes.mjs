@@ -14,7 +14,7 @@ export const SwipeWrapper = ({ children, app }) => {
     onSwipedLeft: (evt) => {
       // Only process the first swipe event
       evt.event.stopPropagation()
-      clearModal()
+      // clearModal()
     },
     onSwipedRight: (evt) => {
       // Only process the first swipe event

@@ -19,21 +19,25 @@ export const ModalWrapper = ({
   bare = false,
   keepOpenOnClick = false,
   slideFrom = 'left',
+  keepOpenOnSwipe = false,
 }) => {
   const { clearModal } = useContext(ModalContext)
   const [animate, setAnimate] = useState(true)
 
-  const swipeActions = {}
   const close = (evt) => {
     // Only process the first swipe event
     if (evt?.event) evt.event.stopPropagation()
     setAnimate(true)
     window.setTimeout(() => clearModal(), 150)
   }
-  if (slideFrom === 'left') swipeActions.onSwipedLeft = close
-  else if (slideFrom === 'right') swipeActions.onSwipedRight = close
-  else if (slideFrom === 'top') swipeActions.onSwipedUp = close
-  else if (slideFrom === 'bottom') swipeActions.onSwipedDown = close
+
+  const swipeActions = {}
+  if (!keepOpenOnSwipe) {
+    if (slideFrom === 'left') swipeActions.onSwipedLeft = close
+    else if (slideFrom === 'right') swipeActions.onSwipedRight = close
+    else if (slideFrom === 'top') swipeActions.onSwipedUp = close
+    else if (slideFrom === 'bottom') swipeActions.onSwipedDown = close
+  }
 
   const swipeHandlers = useSwipeable({
     ...swipeActions,
@@ -63,7 +67,7 @@ export const ModalWrapper = ({
         children
       ) : (
         <div
-          className={`bg-base-100 p-4 lg:px-8 lg:rounded-lg lg:shadow-lg max-h-100 overflow-auto`}
+          className={`bg-base-100 p-4 lg:px-8 lg:rounded-lg lg:shadow-lg max-h-full overflow-auto`}
         >
           {children}
         </div>

@@ -12,7 +12,7 @@ const OpenTitleButton = ({
   <div
     role="button"
     className={`flex flex-row items-center justify-between w-full ${
-      bottom ? 'lg:rounded-b-lg' : 'lg:rounded-t-lg'
+      bottom ? 'rounded-b-lg' : 'rounded-t-lg'
     }
       bg-${color} text-${color}-content px-4 py-1 text-lg font-medium`}
     onClick={toggle}
@@ -54,11 +54,15 @@ export const Collapse = ({
     ) : null
 
   return open ? (
-    <div
-      className={`shadow border-solid border border-l-0 border-r-0 border-b-2 lg:border-l lg:border-r lg:border-b lg:rounded-lg border-${color} my-4 -mx-4 lg:mx-0`}
-    >
+    <div className={`shadow my-4 w-full mx-auto  lg:mx-0`}>
       {top ? <TitleBtn /> : null}
-      <div className="p-2 lg:p-4">{children}</div>
+      <div
+        className={`p-2 lg:p-4 border-solid border border-${color} ${
+          !bottom ? 'rounded-b-lg' : ''
+        } ${!top ? 'rounded-t-lg' : ''}`}
+      >
+        {children}
+      </div>
       {bottom ? <TitleBtn bottom /> : null}
     </div>
   ) : (
