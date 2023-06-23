@@ -12,9 +12,10 @@ import { defaultPrintSettings, printSettingsPath } from './config.mjs'
 import { PrintIcon, RightIcon } from 'shared/components/icons.mjs'
 import { LoadingContext } from 'shared/context/loading-context.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
+import { PatternWithMenu, ns as wrapperNs } from '../pattern-with-menu.mjs'
 
 const viewNs = ['print', ...exportNs]
-export const ns = [...viewNs, ...menuNs]
+export const ns = [...viewNs, ...menuNs, ...wrapperNs]
 
 const PageCounter = ({ pattern }) => {
   const pages = pattern.setStores[0].get('pages', {})
@@ -40,6 +41,7 @@ export const PrintView = ({
   pattern,
   patternConfig,
   settings,
+  setSettings,
   ui,
   update,
   language,
@@ -85,15 +87,22 @@ export const PrintView = ({
   }
 
   return (
-    <div>
-      <div className="flex flex-row">
-        <div className="w-2/3 shrink-0 grow lg:p-4 sticky top-0">
-          <div className="flex justify-between items-baseline">
-            <h2 className="capitalize">
+    <PatternWithMenu
+      {...{
+        settings,
+        ui,
+        update,
+        control: account.control,
+        setSettings,
+        title: (
+          <div className="flex lg:justify-between items-baseline flex-wrap px-2">
+            <h2 className="text-center lg:text-left capitalize">
               {t('layoutThing', { thing: design }) + ' ' + t('forPrinting')}
             </h2>
             <PageCounter pattern={pattern} />
           </div>
+        ),
+        pattern: (
           <MovablePattern
             {...{
               renderProps,
@@ -103,8 +112,8 @@ export const PrintView = ({
               showButtons: !ui.hideMovableButtons,
             }}
           />
-        </div>
-        <div className="w-1/3 shrink grow-0 lg:p-4 max-w-2xl h-screen overflow-scroll">
+        ),
+        menu: (
           <PrintMenu
             {...{
               design,
@@ -119,8 +128,8 @@ export const PrintView = ({
               exportIt,
             }}
           />
-        </div>
-      </div>
-    </div>
+        ),
+      }}
+    />
   )
 }

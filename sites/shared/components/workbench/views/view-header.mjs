@@ -77,17 +77,8 @@ export const ViewHeader = ({ update, settings, ui, control, setSettings }) => {
   const { t } = useTranslation(ns)
   return (
     <div
-      className={`flex sticky top-0 z-20 lg:${shownHeaderSelector}top-24 transition-[top] duration-300 ease-in-out drawer`}
+      className={`hidden lg:flex sticky top-0 z-20 lg:${shownHeaderSelector}top-24 transition-[top] duration-300 ease-in-out drawer`}
     >
-      <label htmlFor="view-header" className="btn btn-primary btn-circle m-2 swap">
-        <input type="checkbox" id="view-header" />
-        <span className="swap-off">
-          <WrenchIcon />
-        </span>
-        <span className="swap-on">
-          <CloseIcon />
-        </span>
-      </label>
       <div className="hidden lg:flex flex-row flex-wrap gap-4 py-4 pt-4 w-full bg-neutral text-neutral-content items-center justify-center">
         <ZoomButtons t={t} />
         <Spacer />

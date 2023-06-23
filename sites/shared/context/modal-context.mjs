@@ -7,7 +7,6 @@ export const ModalContextProvider = ({ children }) => {
     __setModal({
       ...__modal,
       modalContent: null,
-      modalProps: {},
     })
   }
 
@@ -15,23 +14,13 @@ export const ModalContextProvider = ({ children }) => {
     __setModal({
       ...__modal,
       modalContent: content,
-      modalProps: props,
-    })
-  }
-
-  function setModalProps(props = {}) {
-    __setModal({
-      ...__modal,
-      modalProps: props,
     })
   }
 
   const [__modal, __setModal] = useState({
     setModal,
     clearModal,
-    setModalProps,
     modalContent: null,
-    modalProps: {},
   })
 
   return <ModalContext.Provider value={__modal}>{children}</ModalContext.Provider>

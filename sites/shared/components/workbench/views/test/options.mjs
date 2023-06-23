@@ -21,7 +21,7 @@ export const SampleItem = ({ name, passProps, t, updateFunc }) => {
 
   return (
     <div
-      className={`collapse my-2 shadow border-solid border-l-[6px] min-h-10 rounded-none
+      className={`collapse my-2 shadow border-solid border-l-[6px] min-h-10 rounded-none w-full
          ${checked ? openClasses : closedClasses}`}
     >
       <input

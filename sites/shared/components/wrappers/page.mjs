@@ -33,7 +33,7 @@ export const PageWrapper = (props) => {
   /*
    * Contexts
    */
-  const { modalContent, modalProps } = useContext(ModalContext)
+  const { modalContent } = useContext(ModalContext)
   const { setNavigation, slug } = useContext(NavigationContext)
 
   /*
@@ -94,7 +94,7 @@ export const PageWrapper = (props) => {
         <LayoutWrapper {...childProps}>
           {Layout ? <Layout {...childProps}>{children}</Layout> : children}
         </LayoutWrapper>
-        {typeof modalContent === 'function' ? modalContent(modalProps) : modalContent}
+        {typeof modalContent === 'function' ? modalContent() : modalContent}
       </div>
     </SwipeWrapper>
   )

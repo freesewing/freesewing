@@ -19,7 +19,7 @@ const CutActions = ({ update, ui, materialSettings }) => {
   const resetLayout = () => update.ui(['layouts', 'cut', materialSettings.activeMaterial])
 
   return (
-    <div className="mt-2 mb-4">
+    <div>
       <div className="flex justify-evenly flex-col lg:flex-row">
         <ShowButtonsToggle update={update} ui={ui} />
         <button className="btn btn-primary btn-outline" onClick={resetLayout}>
