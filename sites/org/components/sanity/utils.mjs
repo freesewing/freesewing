@@ -28,7 +28,6 @@ export const sanityLoader = async ({ query, language, type, slug, order, filters
 
   if (cache[query]) return cache[query]
 
-  console.warn('making a sanity request', query)
   const result = await sanityClient.fetch(query)
   cache[query] = result
   return result
@@ -38,5 +37,8 @@ export const sanityImage = (image, dataset = 'site-content') => {
   const [, assetName, origSize, format] = image.asset._ref.split('-')
   return `https://cdn.sanity.io/images/${siteConfig.sanity.project}/${dataset}/${assetName}-${origSize}.${format}`
 }
+
+export const sanitySiteImage = (image) => sanityImage(image, 'site-content')
+export const sanityUserImage = (image) => sanityImage(image, 'user-content')
 
 export const numPerPage = 12

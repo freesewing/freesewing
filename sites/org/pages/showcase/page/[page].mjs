@@ -1,12 +1,13 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { sanityImage, numPerPage, sanityLoader } from 'site/components/sanity/utils.mjs'
+import { sanitySiteImage, numPerPage, sanityLoader } from 'site/components/sanity/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import Link from 'next/link'
 import { Pagination } from 'shared/components/navigation/pagination.mjs'
+import { siteConfig } from 'site/site.config.mjs'
 
 // Translation namespaces used on this page
 const namespaces = [...new Set(['common', 'designs', ...pageNs])]
@@ -49,7 +50,7 @@ const Posts = ({ posts }) => {
 
     previews.push(
       <PreviewTile
-        img={sanityImage(post.image[0]) + '?fit=clip&w=400'}
+        img={sanitySiteImage(post.image[0]) + '?fit=clip&w=400'}
         slug={post.slug.current}
         title={post.title}
         key={post.slug.current}
@@ -105,14 +106,13 @@ export async function getStaticProps({ locale, params }) {
   }
 }
 
-const locales = ['', 'de', 'es', 'fr', 'nl']
 export const getStaticPaths = async () => {
   const numPosts = await sanityLoader({ query: `count(*[_type == "showcaseen"])` })
   const numPages = Math.ceil(numPosts / numPerPage)
   const paths = []
   for (let i = 0; i < numPages; i++) {
     const pathName = `/showcase/page/${i + 1}`
-    locales.forEach((l) => paths.push(`${l.length ? '/' : ''}${l}${pathName}`))
+    siteConfig.languages.forEach((l) => paths.push(`${l.length ? '/' : ''}${l}${pathName}`))
   }
 
   return {

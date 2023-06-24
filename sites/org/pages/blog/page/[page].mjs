@@ -1,6 +1,6 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { sanityImage, numPerPage, sanityLoader } from 'site/components/sanity/utils.mjs'
+import { sanitySiteImage, numPerPage, sanityLoader } from 'site/components/sanity/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components
@@ -8,6 +8,7 @@ import Link from 'next/link'
 import { TimeAgo } from 'shared/components/wrappers/mdx.mjs'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Pagination } from 'shared/components/navigation/pagination.mjs'
+import { siteConfig } from 'site/site.config.mjs'
 
 // Translation namespaces used on this page
 const namespaces = [...new Set(['designs', ...pageNs])]
@@ -21,11 +22,11 @@ const textShadow = {
 
 const Preview = ({ post, t }) => (
   <div className="shadow rounded-lg">
-    <Link href={`blog/${post.slug.current}`} className="hover:underline">
+    <Link href={`/blog/${post.slug.current}`} className="hover:underline">
       <div
         className="bg-base-100 w-full h-full overflow-hidden shadow flex flex-column items-center rounded-lg"
         style={{
-          backgroundImage: `url(${sanityImage(post.image) + '?fit=clip&w=400'})`,
+          backgroundImage: `url(${sanitySiteImage(post.image) + '?fit=clip&w=400'})`,
           backgroundSize: 'cover',
         }}
       >
@@ -114,14 +115,13 @@ export async function getStaticProps({ locale, params }) {
   }
 }
 
-const locales = ['', 'de', 'es', 'fr', 'nl']
 export const getStaticPaths = async () => {
   const numPosts = await sanityLoader({ query: `count(*[_type == "blogen"])` })
   const numPages = Math.ceil(numPosts / numPerPage)
   const paths = []
   for (let i = 0; i < numPages; i++) {
     const pathName = `/blog/page/${i + 1}`
-    locales.forEach((l) => paths.push(`${l.length ? '/' : ''}${l}${pathName}`))
+    siteConfig.languages.forEach((l) => paths.push(`${l.length ? '/' : ''}${l}${pathName}`))
   }
 
   return {
