@@ -1,5 +1,24 @@
 import { back } from './back.mjs'
 
+/*
+ * This is the exported part object
+ */
+export const frontBase = {
+  name: 'collab:frontBase', // The name in design::part format
+  draft: draftFrontBase, // The method to call to draft this part
+  hide: { self: true }, // This part is hidden by default
+  after: back, // Draw the (imported) back part prior to drafting this part
+}
+
+/*
+ * A helper method to find a point on the (potentially curved) waistline for a
+ * given X coordinate
+ *
+ * @param {x} number - The X-coordinate to find the intersection with the waist
+ * for
+ * @return {point} Point - A Point object that lies at the intersection of the
+ * waist with x
+ */
 export const xOnWaist = (x, part) => {
   const { options, utils, points, Point } = part.shorthand()
 
@@ -8,6 +27,19 @@ export const xOnWaist = (x, part) => {
     : new Point(x, points.topLeft.y)
 }
 
+/*
+ * A helper method to draw the corner of the front where the pocket goes
+ *
+ * This is abstracted into a method because we need to draft two fronts that
+ * are mirror images of one another. If we mirror them, the entire path will be
+ * mirrored, including text and so on.  So this method allows us to mirror
+ * first, then call this method again to draw the non-mirrored path using the
+ * mirrored points, which is what we want.
+ *
+ * @param {part} Part - The current part object
+ *
+ * @return {path} Path - The path object that was drawn
+ */
 export const drawCornerPath = (part) => {
   const { Path, points, paths } = part.shorthand()
 
@@ -18,6 +50,19 @@ export const drawCornerPath = (part) => {
     .addClass('note dashed stroke-sm')
 }
 
+/*
+ * A helper method to draw the corner of the front where the pocket goes
+ *
+ * This is abstracted into a method because we need to draft two fronts that
+ * are mirror images of one another. If we mirror them, the entire path will be
+ * mirrored, including text and so on.  So this method allows us to mirror
+ * first, then call this method again to draw the non-mirrored path using the
+ * mirrored points, which is what we want.
+ *
+ * @param {part} Part - The current part object
+ *
+ * @return {path} Path - The path object that was drawn
+ */
 export const drawSeamLine = (part) => {
   const { Path, points, paths } = part.shorthand()
 
@@ -33,6 +78,19 @@ export const drawSeamLine = (part) => {
     .addClass('fabric')
 }
 
+/*
+ * A helper method to draw a note on the side seam
+ *
+ * This is abstracted into a method because we need to draft two fronts that
+ * are mirror images of one another. If we mirror them, the entire path will be
+ * mirrored, including text and so on.  So this method allows us to mirror
+ * first, then call this method again to draw the non-mirrored path using the
+ * mirrored points, which is what we want.
+ *
+ * @param {part} Part - The current part object
+ *
+ * @return {path} Path - The path object that was drawn
+ */
 export const drawSideNote = (part) => {
   const { Path, points } = part.shorthand()
 
@@ -44,6 +102,19 @@ export const drawSideNote = (part) => {
     .attr('data-text-dy', -1)
 }
 
+/*
+ * A helper method to draw a note on the hem seam
+ *
+ * This is abstracted into a method because we need to draft two fronts that
+ * are mirror images of one another. If we mirror them, the entire path will be
+ * mirrored, including text and so on.  So this method allows us to mirror
+ * first, then call this method again to draw the non-mirrored path using the
+ * mirrored points, which is what we want.
+ *
+ * @param {part} Part - The current part object
+ *
+ * @return {path} Path - The path object that was drawn
+ */
 export const drawHemNote = (part) => {
   const { Path, points } = part.shorthand()
 
@@ -55,6 +126,20 @@ export const drawHemNote = (part) => {
     .attr('data-text-dy', -1)
 }
 
+/*
+ * A helper method to draw a the pocket outline
+ *
+ * This is abstracted into a method because we need to draft two fronts that
+ * are mirror images of one another. If we mirror them, the entire path will be
+ * mirrored, including text and so on.  So this method allows us to mirror
+ * first, then call this method again to draw the non-mirrored path using the
+ * mirrored points, which is what we want.
+ *
+ * @param {part} Part - The current part object
+ * @param {reverse} bool - Indicates whether we are drawing the reversed version or not
+ *
+ * @return {path} Path - The path object that was drawn
+ */
 export const drawPocketBag = (part, reverse) => {
   const { paths, Path, points } = part.shorthand()
 
@@ -75,6 +160,13 @@ export const drawPocketBag = (part, reverse) => {
     .attr('data-text-dy', 6)
 }
 
+/*
+ * A helper method to split the front waist at the point the pocket cutout starts
+ *
+ * Does not return, but mutates the part object
+ *
+ * @param {part} Part - The current part object
+ */
 export const splitFrontWaist = (part) => {
   const { paths, points, Path, options } = part.shorthand()
   // Handle the split of the waitline at the pocket openinig
@@ -89,6 +181,9 @@ export const splitFrontWaist = (part) => {
   paths.frontWaistCenter = halves[1].hide()
 }
 
+/*
+ * This function drafts the back panel of the skirt
+ */
 function draftFrontBase({
   Point,
   points,
@@ -107,10 +202,14 @@ function draftFrontBase({
   absoluteOptions,
   utils,
 }) {
-  // How much shaping should we add in the panel?
+  /*
+   * How much shaping should we add in the panel?
+   */
   const shaping = store.get('hipsQuarterReduction')
 
-  // Simple skirt outline for the front panel
+  /*
+   * Simple skirt outline for the front panel
+   */
   points.topLeft = new Point(shaping / 2, 0)
   points.topCp = new Point(store.get('frontQuarterHips') / 2, 0)
   points.topRight = new Point(
@@ -120,7 +219,19 @@ function draftFrontBase({
   points.bottomLeft = new Point(0, points.topRight.y + absoluteOptions.length)
   points.bottomRight = new Point(store.get('frontQuarterSeat'), points.bottomLeft.y)
 
-  // True the side seam
+  /*
+   * Store the waist length so we can accurately notch the waistband
+   */
+  store.set(
+    'frontHipLength',
+    options.waistSlant
+      ? new Path().move(points.topLeft).curve_(points.topCp, points.topRight).length()
+      : points.topLeft.dx(points.topRight)
+  )
+
+  /*
+   * True the side seam
+   */
   points.trueBottomRight = points.topRight.shiftTowards(points.bottomRight, store.get('sideSeam'))
   points.trueBottomLeft = new Point(0, points.trueBottomRight.y)
 
@@ -193,17 +304,25 @@ function draftFrontBase({
     points.frontPocketFacingSide.y
   )
 
-  // Paths
+  /*
+   * Paths
+   */
   splitFrontWaist(part) // Handle the split of the waitline at the pocket openinig
   paths.seam = drawSeamLine(part) // Seamline
 
   // Complete?
   if (complete) {
+    /*
+     * Add the logo
+     */
     points.logo = points.topLeft
       .shiftFractionTowards(points.bottomLeft, 0.3)
       .shift(0, points.topRight.x / 3)
     snippets.logo = new Snippet('logo', points.logo)
 
+    /*
+     * Add the title
+     */
     points.title = points.logo.shift(-90, 70)
     macro('title', {
       at: points.title,
@@ -211,22 +330,19 @@ function draftFrontBase({
       title: 'frontBase',
     })
 
+    /*
+     * Add various helper paths
+     */
     paths.corner = drawCornerPath(part) // Pocket corner
-    drawPocketBag(part)
-    paths.side = drawSideNote(part)
-    paths.hem = drawHemNote(part)
+    drawPocketBag(part) // Pocket bag
+    paths.side = drawSideNote(part) // Note on side seam
+    paths.hem = drawHemNote(part) // Note on hem
 
-    if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-    }
+    /*
+     * Add seam allowance only if requested
+     */
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
   }
 
   return part
-}
-
-export const frontBase = {
-  name: 'collab:frontBase',
-  draft: draftFrontBase,
-  hide: { self: true },
-  after: back,
 }

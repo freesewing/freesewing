@@ -1,6 +1,15 @@
 import { shared } from './shared.mjs'
 
 /*
+ * This is the exported part object
+ */
+export const back = {
+  name: 'collab:back', // The name in design::part format
+  draft: draftBack, // The method to call to draft this part
+  after: shared, // Indicate the `shared` part (see import above) needs to be drafted prior to this part
+}
+
+/*
  * This function drafts the back panel of the skirt
  */
 function draftBack({
@@ -10,7 +19,6 @@ function draftBack({
   paths,
   store,
   part,
-  measurements,
   options,
   complete,
   sa,
@@ -20,9 +28,15 @@ function draftBack({
   macro,
   absoluteOptions,
 }) {
-  // Reduction from hips to seat
+  /*
+   * How much we need to reduce from seat to hips
+   */
   const reduce = store.get('hipsQuarterReduction')
-  // Minimal dart that we consider suitable for sewing
+
+  /*
+   * Minimal dart that we consider suitable for sewing
+   * Below this value, we forego darts and handle all shaping in the seams
+   */
   const minDart = absoluteOptions.minDartWidth
 
   /*
@@ -36,7 +50,9 @@ function draftBack({
     store.get('hipsQuarterReduction') > 4 * absoluteOptions.minDartWidth ? true : false
   )
 
-  // How much shaping should we add in the panel?
+  /*
+   * How much shaping should we add in the panel?
+   */
   const shaping = store.get('darts') ? reduce - absoluteOptions.dartWidth * 2 : reduce
 
   /*
@@ -63,6 +79,11 @@ function draftBack({
       : new Path().move(points.topRight).line(points.topLeft).hide()
 
   /*
+   * Store the waist length so we can accurately notch the waistband
+   */
+  store.set('backHipLength', paths.hipLine.length())
+
+  /*
    * Add back darts, but only if they are not too narrow to sew
    */
   if (store.get('darts')) {
@@ -78,7 +99,7 @@ function draftBack({
     /*
      * Now open up the dart
      */
-    const len = paths.hipLine.length()
+    const len = store.get('backHipLength')
     points.dartRight = paths.hipLine.shiftAlong(len / 2 - absoluteOptions.dartWidth)
     points.dartLeft = paths.hipLine.shiftAlong(len / 2 + absoluteOptions.dartWidth)
     /*
@@ -147,10 +168,15 @@ function draftBack({
       .line(points.dartLeft)
       .join(paths.hipLine.split(points.dartLeft).pop())
   } else paths.seam._curve(points.topCp, points.topLeft)
-  // Apply CSS classes and close the seamline path
+
+  /*
+   * Apply CSS classes and close the seamline path
+   */
   paths.seam.addClass('fabric').close()
 
-  // Store the side seam length so we can match it in the front part
+  /*
+   * Store the side seam length so we can match it in the front part
+   */
   store.set('sideSeam', points.topRight.dist(points.bottomRight))
 
   /*
@@ -359,10 +385,4 @@ function draftBack({
   }
 
   return part
-}
-
-export const back = {
-  name: 'collab:back',
-  draft: draftBack,
-  after: shared,
 }

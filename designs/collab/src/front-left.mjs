@@ -1,5 +1,22 @@
 import { frontBase, xOnWaist } from './front-base.mjs'
 
+/*
+ * This is the exported part object
+ */
+export const frontLeft = {
+  name: 'collab:frontLeft', // Name in design::part format
+  draft: draftFrontLeft, // Method to call to draft this part
+  from: frontBase, // Draft this part starting from (the imported) frontBase
+}
+
+/*
+ * This function drafts the left front panel of the skirt
+ *
+ * Basic outline was drafted in frontBase
+ * Now we adapt it for the left panel
+ *
+ * Note that Left/Right is always from the vantage point the wearer
+ */
 function draftFrontLeft({
   Point,
   points,
@@ -7,7 +24,6 @@ function draftFrontLeft({
   paths,
   store,
   part,
-  measurements,
   options,
   complete,
   sa,
@@ -15,19 +31,16 @@ function draftFrontLeft({
   snippets,
   Snippet,
   macro,
-  absoluteOptions,
-  utils,
 }) {
   /*
-   * Basic outline was drafted in frontBase
-   * Now we adapt it for the left panel
-   * Left/Right is always from the vantage point the wearer
+   * Store the J-Seam dimensions to construct the fly shield later
    */
-  // Store the J-Seam dimensions to construct the fly shield later
   store.set('jseamWidth', points.jseamCorner.x)
   store.set('jseamHeight', points.jseamCorner.y)
 
-  // Seamline
+  /*
+   * The Seamline
+   */
   paths.seam = new Path()
     .move(points.topLeft)
     .line(points.jseamTopFe)
@@ -44,7 +57,9 @@ function draftFrontLeft({
 
   // Complete?
   if (complete) {
-    // J-Seam
+    /*
+     * The J-Seam
+     */
     paths.jseam = new Path()
       .move(points.jseamBottom)
       .curve(points.jseamCpBottom, points.jseamCpTop, points.jseamCurveStart)
@@ -52,18 +67,26 @@ function draftFrontLeft({
       .addClass('note dashed stroke-sm')
       .addText('jSeam', 'text-sm center fill-note')
 
-    // Fly fold line
+    /*
+     * The fly fold line
+     */
     paths.flyFold = new Path()
       .move(points.jseamBottom)
       .line(points.topLeft)
       .addClass('note help stroke-sm')
 
+    /*
+     * Add a 'fold here' note along the fold line
+     */
     macro('banner', {
       path: paths.flyFold,
       text: 'foldHere',
       className: 'text-sm fill-note',
     })
 
+    /*
+     * Add a grainline indicator
+     */
     points.grainlineTop = points.jseamTop.shiftFractionTowards(points.topLeft, 0.5)
     points.grainlineBottom = new Point(points.grainlineTop.x, points.bottomLeft.y)
     macro('grainline', {
@@ -71,14 +94,18 @@ function draftFrontLeft({
       to: points.grainlineTop,
     })
 
-    // Overwrite title from frontBase
+    /*
+     * Overwrite title from frontBase to add our own title
+     */
     macro('title', {
       at: points.title,
       nr: 2,
       title: 'frontLeft',
     })
 
-    // Overwrite logo from frontBase
+    /*
+     * Overwrite logo from frontBase to add our own logo in the place we want
+     */
     points.logo = points.frontPocketCurveStart.shiftFractionTowards(points.bottomRight, 0.5)
     snippets.logo = new Snippet('logo', points.logo)
     if (sa) {
@@ -94,7 +121,9 @@ function draftFrontLeft({
     })
   }
 
-  // Paperless?
+  /*
+   * Add dimentions for paperless only when needed
+   */
   if (paperless) {
     macro('hd', {
       from: points.jseamTopFe,
@@ -168,10 +197,4 @@ function draftFrontLeft({
   }
 
   return part
-}
-
-export const frontLeft = {
-  name: 'collab:frontLeft',
-  draft: draftFrontLeft,
-  from: frontBase,
 }
