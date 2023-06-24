@@ -5,12 +5,13 @@ import { CloseIcon, WrenchIcon } from 'shared/components/icons.mjs'
 import { shownHeaderSelector } from 'shared/components/wrappers/header.mjs'
 
 const defaultClasses = 'w-1/3 shrink grow-0 lg:p-4 max-w-2xl h-full overflow-scroll'
-const defaultButtonClasses = ' bottom-12 right-0'
+const defaultButtonClasses = 'bottom-24 mb-16'
 export const MenuWrapper = ({
   children,
   wrapperClass = defaultClasses,
   buttonClass = defaultButtonClasses,
   Icon = WrenchIcon,
+  keepOpenOnClick = true,
 }) => {
   const { setModal, clearModal, modalContent } = useContext(ModalContext)
   const [modalOpen, setModalOpen] = useState(false)
@@ -23,12 +24,9 @@ export const MenuWrapper = ({
       }
 
       return (
-        <ModalWrapper slideFrom="right" keepOpenOnClick keepOpenOnSwipe>
+        <ModalWrapper slideFrom="right" keepOpenOnClick={keepOpenOnClick} keepOpenOnSwipe>
           <div className="mb-16">{children}</div>
-          <button
-            className="btn btn-primary btn-circle fixed bottom-4 right-4"
-            onClick={closeModal}
-          >
+          <button className="btn btn-accent btn-circle fixed bottom-4 right-4" onClick={closeModal}>
             <CloseIcon />
           </button>
         </ModalWrapper>
@@ -54,7 +52,7 @@ export const MenuWrapper = ({
   return (
     <>
       <button
-        className={`btn btn-primary btn-circle m-4 z-20 lg:hidden ${buttonClass} absolute`}
+        className={`btn btn-accent btn-circle m-4 z-20 lg:hidden -ml-16 self-end ${buttonClass} sticky`}
         onClick={onClick}
       >
         <Icon />{' '}

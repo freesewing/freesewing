@@ -22,13 +22,26 @@ import { MenuWrapper } from 'shared/components/workbench/menus/shared/menu-wrapp
 
 export const ns = ['workbench', 'sections']
 
+const icons = {
+  test: BeakerIcon,
+  export: BriefcaseIcon,
+  edit: CodeIcon,
+  cut: CutIcon,
+  draft: OptionsIcon,
+  print: PrintIcon,
+  save: UploadIcon,
+  logs: DocsIcon,
+  inspect: SearchIcon,
+  measies: MeasieIcon,
+}
+
 export const NavButton = ({
   href,
   label,
   children,
   onClick = false,
   active = false,
-  extraClasses = 'bg-neutral text-neutral-content hover:bg-secondary hover:text-secondary-content',
+  extraClasses = 'lg:bg-neutral lg:text-neutral-content lg:hover:bg-secondary lg:hover:text-secondary-content hover:text-secondary',
 }) => {
   const className = `w-full flex flex-row items-center px-4 py-2 ${extraClasses} ${
     active ? 'text-secondary' : ''
@@ -57,7 +70,7 @@ const NavIcons = ({ setView, setDense, dense, view }) => {
       <NavButton
         onClick={() => setDense(!dense)}
         label={t('workbench:viewMenu')}
-        extraClasses="text-success bg-neutral hover:bg-success hover:text-neutral"
+        extraClasses="hidden lg:block text-success bg-neutral hover:bg-success hover:text-neutral"
       >
         {dense ? (
           <RightIcon
@@ -149,14 +162,15 @@ export const WorkbenchHeader = ({ view, setView }) => {
   const [dense, setDense] = useState(true)
   return (
     <MenuWrapper
-      Icon={BeakerIcon}
+      Icon={icons[view]}
       wrapperClass={`h-full w-64 min-h-screen pt-4
         bg-neutral
 
         transition-all
         drop-shadow-xl
         ${dense ? '-ml-52' : 'ml-0'}`}
-      buttonClass={`right-0 bottom-28`}
+      buttonClass={`order-last bottom-16`}
+      keepOpenOnClick={false}
     >
       <header
         className={`

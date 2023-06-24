@@ -192,7 +192,7 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
   }
 
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row min-h-screen">
       <WorkbenchHeader {...{ view, setView, update }} />
       <div className="grow">{viewContent}</div>
     </div>
