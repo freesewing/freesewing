@@ -392,7 +392,6 @@ shared:
     'react': *react
     'react-dom': *react
     'react-markdown': *reactMarkdown
-    'react-sizeme': '3.0.2'
     'react-timeago': *reactTimeago
     'react-zoom-pan-pinch': '3.0.8'
     'rehype-autolink-headings': *rehypeAutolinkHeadings
