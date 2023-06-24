@@ -82,7 +82,7 @@ export const CutView = ({
           </div>
         ),
         pattern: (
-          <div className="my-4">
+          <div className="my-4 grow">
             {materialList.length > 1 ? (
               <div className="tabs">
                 {materialList.map((title) => (

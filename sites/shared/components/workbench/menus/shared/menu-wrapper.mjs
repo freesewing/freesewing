@@ -17,9 +17,9 @@ export const MenuWrapper = ({ children }) => {
 
       return (
         <ModalWrapper slideFrom="right" keepOpenOnClick keepOpenOnSwipe>
-          {children}
+          <div className="mb-16">{children}</div>
           <button
-            className="btn btn-primary btn-circle sticky bottom-2 float-right"
+            className="btn btn-primary btn-circle fixed bottom-4 right-4"
             onClick={closeModal}
           >
             <CloseIcon />

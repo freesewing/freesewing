@@ -25,7 +25,7 @@ export const PatternWithMenu = ({
           setSettings,
         }}
       />
-      <div className="flex flex-col lg:flex-row grow max-h-[90vh] lg:my-4">
+      <div className="flex flex-col lg:flex-row grow lg:max-h-[90vh] max-h-[calc(100vh-3rem)] h-full py-4 lg:mt-6">
         <div className="lg:w-2/3 flex flex-col h-full grow px-4">
           {title}
           {pattern}
