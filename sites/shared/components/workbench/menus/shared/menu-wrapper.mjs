@@ -4,7 +4,14 @@ import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { CloseIcon, WrenchIcon } from 'shared/components/icons.mjs'
 import { shownHeaderSelector } from 'shared/components/wrappers/header.mjs'
 
-export const MenuWrapper = ({ children }) => {
+const defaultClasses = 'w-1/3 shrink grow-0 lg:p-4 max-w-2xl h-full overflow-scroll'
+const defaultButtonClasses = ' bottom-12 right-0'
+export const MenuWrapper = ({
+  children,
+  wrapperClass = defaultClasses,
+  buttonClass = defaultButtonClasses,
+  Icon = WrenchIcon,
+}) => {
   const { setModal, clearModal, modalContent } = useContext(ModalContext)
   const [modalOpen, setModalOpen] = useState(false)
 
@@ -47,14 +54,12 @@ export const MenuWrapper = ({ children }) => {
   return (
     <>
       <button
-        className={`btn btn-primary btn-circle sticky  m-4 bottom-16 self-end lg:hidden`}
+        className={`btn btn-primary btn-circle m-4 z-20 lg:hidden ${buttonClass} absolute`}
         onClick={onClick}
       >
-        <WrenchIcon />{' '}
+        <Icon />{' '}
       </button>
-      <div className="hidden lg:block w-1/3 shrink grow-0 lg:p-4 max-w-2xl h-full overflow-scroll">
-        {children}
-      </div>
+      <div className={`hidden lg:block ${wrapperClass}`}>{children}</div>
     </>
   )
 }

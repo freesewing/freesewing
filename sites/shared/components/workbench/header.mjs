@@ -18,6 +18,7 @@ import {
   MeasieIcon,
 } from 'shared/components/icons.mjs'
 import Link from 'next/link'
+import { MenuWrapper } from 'shared/components/workbench/menus/shared/menu-wrapper.mjs'
 
 export const ns = ['workbench', 'sections']
 
@@ -147,24 +148,30 @@ const NavIcons = ({ setView, setDense, dense, view }) => {
 export const WorkbenchHeader = ({ view, setView }) => {
   const [dense, setDense] = useState(true)
   return (
-    <header
-      className={`
-      h-full w-64 min-h-screen pt-4
-      bg-neutral
+    <MenuWrapper
+      Icon={BeakerIcon}
+      wrapperClass={`h-full w-64 min-h-screen pt-4
+        bg-neutral
 
-      transition-all
-      drop-shadow-xl
-      ${dense ? '-ml-52' : 'ml-0'}
-      group
-    `}
+        transition-all
+        drop-shadow-xl
+        ${dense ? '-ml-52' : 'ml-0'}`}
+      buttonClass={`right-0 bottom-28`}
     >
-      <div
+      <header
         className={`
-      flex flex-col
-      items-center w-full sticky top-4 lg:top-28`}
+        sticky top-4 lg:top-28
+        group
+      `}
       >
-        <NavIcons {...{ setView, setDense, dense, view }} />
-      </div>
-    </header>
+        <div
+          className={`
+        flex flex-col
+        items-center w-full `}
+        >
+          <NavIcons {...{ setView, setDense, dense, view }} />
+        </div>
+      </header>
+    </MenuWrapper>
   )
 }
