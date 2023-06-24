@@ -43,7 +43,7 @@ function draftFrontRight({
 
   // Complete?
   if (complete) {
-    drawPocketBag(part)
+    drawPocketBag(part, true)
     paths.side = drawSideNote(part)
     paths.hem = drawHemNote(part).reverse(true)
 
@@ -52,6 +52,15 @@ function draftFrontRight({
       at: points.title,
       nr: 3,
       title: 'frontRight',
+    })
+
+    snippets.notch = new Snippet('notch', points.frontPocketBagStart)
+
+    points.grainlineTop = points.topLeft.shiftFractionTowards(points.jseamTop, 0.5)
+    points.grainlineBottom = new Point(points.grainlineTop.x, points.bottomLeft.y)
+    macro('grainline', {
+      from: points.grainlineBottom,
+      to: points.grainlineTop,
     })
 
     // Overwrite logo from frontBase
@@ -65,20 +74,67 @@ function draftFrontRight({
   // Paperless?
   if (paperless) {
     macro('hd', {
-      from: points.topLeft,
-      to: points.topRight,
-      y: points.topLeft.y - sa - 15,
-    })
-    macro('hd', {
-      from: points.bottomLeft,
-      to: points.bottomRight,
+      from: points.trueBottomRight,
+      to: points.bottomLeft,
       y: points.bottomLeft.y + sa + 15,
     })
-    // macro('vd', {
-    //   from: points.bottomRight,
-    //   to: points.topRight,
-    //   x: points.topRight.x + sa + 15,
-    // })
+    macro('hd', {
+      from: points.frontPocketBagStart,
+      to: points.topLeft,
+      y: points.frontPocketStart.y - sa - 15,
+    })
+    macro('hd', {
+      from: points.frontPocketStart,
+      to: points.topLeft,
+      y: points.frontPocketStart.y - sa - 30,
+    })
+    macro('hd', {
+      from: points.frontPocketSide,
+      to: points.frontPocketStart,
+      y: points.frontPocketStart.y - sa - 15,
+    })
+    macro('hd', {
+      from: points.frontPocketStart,
+      to: points.trueBottomLeft,
+      y: points.frontPocketStart.y - sa - 45,
+    })
+    macro('hd', {
+      from: points.trueBottomRight,
+      to: points.frontPocketStart,
+      y: points.frontPocketStart.y - sa - 30,
+    })
+    macro('vd', {
+      from: points.trueBottomRight,
+      to: points.frontPocketSide,
+      x: points.bottomRight.x - sa - 15,
+    })
+    macro('vd', {
+      from: points.bottomLeft,
+      to: points.frontPocketSide,
+      x: points.bottomRight.x - sa - 30,
+    })
+    macro('vd', {
+      from: points.bottomLeft,
+      to: points.frontPocketStart,
+      x: points.bottomRight.x - sa - 45,
+    })
+    macro('vd', {
+      from: points.bottomLeft,
+      to: points.topLeft,
+      x: points.bottomLeft.x + sa + 15,
+    })
+    if (options.waistSlant) {
+      macro('vd', {
+        from: points.bottomLeft,
+        to: points.topRight,
+        x: points.bottomRight.x - sa - 60,
+      })
+      macro('vd', {
+        from: points.bottomLeft,
+        to: points.frontPocketStart,
+        x: points.bottomLeft.x + sa + 30,
+      })
+    }
   }
 
   return part

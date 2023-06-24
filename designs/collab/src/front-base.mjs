@@ -55,24 +55,24 @@ export const drawHemNote = (part) => {
     .attr('data-text-dy', -1)
 }
 
-export const drawPocketBag = (part) => {
+export const drawPocketBag = (part, reverse) => {
   const { paths, Path, points } = part.shorthand()
 
-  ;(paths.pocketbag = new Path()
+  paths.pocketbag = new Path()
     .move(points.frontPocketBagStart)
     .line(points.frontPocketBagHem)
-    .addClass('note dashed stroke-sm')),
-    (paths.pocketfacingBoundary = new Path()
-      .move(points.frontPocketFacingCenter)
-      .line(points.frontPocketFacingSide)
-      .addClass('note dashed stroke-sm')
-      .addText('pocketFacing', 'fill-note center text-sm')),
-    (paths.pocketbagBoundary = new Path()
-      .move(points.frontPocketFacingCenter)
-      .line(points.frontPocketFacingSide)
-      .addClass('hidden')
-      .addText('pocketBag', 'fill-note center text-sm')
-      .attr('data-text-dy', 6))
+    .addClass('note dashed stroke-sm')
+  paths.pocketfacingBoundary = new Path()
+    .move(reverse ? points.frontPocketFacingSide : points.frontPocketFacingCenter)
+    .line(reverse ? points.frontPocketFacingCenter : points.frontPocketFacingSide)
+    .addClass('note dashed stroke-sm')
+    .addText('pocketFacing', 'fill-note center text-sm')
+  paths.pocketbagBoundary = new Path()
+    .move(reverse ? points.frontPocketFacingSide : points.frontPocketFacingCenter)
+    .line(reverse ? points.frontPocketFacingCenter : points.frontPocketFacingSide)
+    .addClass('hidden')
+    .addText('pocketBag', 'fill-note center text-sm')
+    .attr('data-text-dy', 6)
 }
 
 export const splitFrontWaist = (part) => {
@@ -196,7 +196,6 @@ function draftFrontBase({
   // Paths
   splitFrontWaist(part) // Handle the split of the waitline at the pocket openinig
   paths.seam = drawSeamLine(part) // Seamline
-  paths.corner = drawCornerPath(part) // Pocket corner
 
   // Complete?
   if (complete) {
@@ -212,17 +211,10 @@ function draftFrontBase({
       title: 'frontBase',
     })
 
+    paths.corner = drawCornerPath(part) // Pocket corner
     drawPocketBag(part)
     paths.side = drawSideNote(part)
     paths.hem = drawHemNote(part)
-    points.topRight
-      .addText('attachWaistband', 'fill-note right text-sm')
-      .attr('data-text-dy', 8)
-      .attr('data-text-dx', -8)
-    points.topLeft
-      .addText('attachWaistband', 'fill-note left text-sm')
-      .attr('data-text-dy', 8)
-      .attr('data-text-dx', 8)
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')

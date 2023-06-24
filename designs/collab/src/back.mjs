@@ -253,6 +253,16 @@ function draftBack({
       .attr('data-text-dx', 8)
 
     /*
+     * Add (back) notches
+     */
+    const notches = ['pocketTopLeft', 'pocketTopRight']
+    if (store.get('darts')) notches.push('dartLeft', 'dartRight', 'dartTip')
+    macro('sprinkle', {
+      snippet: 'bnotch',
+      on: notches,
+    })
+
+    /*
      * Does the user want seam allowance (sa) included on the pattern?
      */
     if (sa) {
@@ -320,6 +330,16 @@ function draftBack({
       })
     }
     if (store.get('darts')) {
+      macro('hd', {
+        from: points.topLeft,
+        to: points.dartLeft,
+        y: points.topLeft.y + 15,
+      })
+      macro('hd', {
+        from: points.dartRight,
+        to: points.topRight,
+        y: points.topLeft.y + 15,
+      })
       macro('hd', {
         from: points.dartLeft,
         to: points.dartRight,

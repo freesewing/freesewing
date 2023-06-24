@@ -49,6 +49,7 @@ function draftFrontAttachment({
     .line(points.waistRight)
     .line(points.waistLeft)
     .close()
+    .addClass('various')
 
   // Clean up a bit
   delete paths.corner
@@ -92,7 +93,7 @@ function draftFrontAttachment({
     })
 
     if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+      paths.sa = paths.seam.offset(sa).attr('class', 'various sa')
     }
   }
 
