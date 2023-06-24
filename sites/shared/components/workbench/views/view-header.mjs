@@ -11,6 +11,7 @@ import {
   IconWrapper,
   ClearIcon,
 } from 'shared/components/icons.mjs'
+import { ClearAllButton } from 'shared/components/workbench/menus/core-settings/index.mjs'
 
 export const ns = ['common', 'core-settings', 'ui-settings']
 
@@ -73,74 +74,73 @@ const Spacer = () => <span className="opacity-50">|</span>
 export const ViewHeader = ({ update, settings, ui, control, setSettings }) => {
   const { t } = useTranslation(ns)
   return (
-    <div className="flex flex-row flex-wrap gap-4 py-4 pt-4 w-full bg-neutral text-neutral-content items-center justify-center lg:sticky top-0 z-20 lg:group-[.header-shown]/layout:top-24 transition-[top] duration-300 ease-in-out">
-      <ZoomButtons t={t} />
-      <Spacer />
-      <div className="flex flex-row items-center gap-4">
-        <IconButton
-          Icon={SaIcon}
-          dflt={settings.sabool ? false : true}
-          onClick={() => update.toggleSa()}
-          title={t('core-settings:sabool.t')}
-        />
-        <IconButton
-          Icon={PaperlessIcon}
-          dflt={settings.paperless ? false : true}
-          onClick={() => update.settings(['paperless'], !settings.paperless)}
-          title={t('core-settings:paperless.t')}
-        />
-        <IconButton
-          Icon={DetailIcon}
-          dflt={settings.complete}
-          onClick={() =>
-            update.settings(
-              ['complete'],
-              typeof settings.complete === 'undefined' ? 0 : settings.complete ? 0 : 1
-            )
-          }
-          title={t('core-settings:complete.t')}
-        />
-        <IconButton
-          Icon={
-            settings.units !== 'imperial'
-              ? UnitsIcon
-              : ({ className }) => <UnitsIcon className={`${className} rotate-180 w-6 h-6`} />
-          }
-          dflt={settings.units !== 'imperial'}
-          onClick={() =>
-            update.settings(['units'], settings.units === 'imperial' ? 'metric' : 'imperial')
-          }
-          title={t('core-settings:units.t')}
-        />
-      </div>
-      <Spacer />
-      <div
-        className="tooltip tooltip-primary tooltip-bottom flex flex-row items-center"
-        data-tip={t('ui-settings:control.t')}
-      >
-        {[1, 2, 3, 4, 5].map((score) => (
-          <button onClick={() => update.setControl(score)} className="text-primary" key={score}>
-            <BulletIcon fill={control >= score ? true : false} />
-          </button>
-        ))}
-      </div>
-      <Spacer />
-      <div className="flex flex-row items-center gap-4">
-        <IconButton
-          Icon={RocketIcon}
-          dflt={ui.renderer !== 'svg'}
-          onClick={() => update.ui(['renderer'], ui.renderer === 'react' ? 'svg' : 'react')}
-          title={t('ui-settings:renderer.t')}
-        />
-      </div>
-      <Spacer />
-      <div className="flex flex-row items-center gap-4">
-        <button
-          onClick={() => setSettings({})}
-          className={`btn btn-sm btn-outline btn-secondary hover:text-secondary-focus`}
+    <div
+      className={`flex flex-row flex-wrap gap-4 py-4 pt-4 w-full bg-neutral text-neutral-content items-center justify-center lg:sticky top-0 z-20 lg:group-[.header-shown]/layout:top-24 transition-[top] duration-300 ease-in-out`}
+    >
+      <div className="hidden lg:flex flex-row flex-wrap gap-4 py-4 pt-4 w-full bg-neutral text-neutral-content items-center justify-center">
+        <ZoomButtons t={t} />
+        <Spacer />
+        <div className="flex flex-row items-center gap-4">
+          <IconButton
+            Icon={SaIcon}
+            dflt={settings.sabool ? false : true}
+            onClick={() => update.toggleSa()}
+            title={t('core-settings:sabool.t')}
+          />
+          <IconButton
+            Icon={PaperlessIcon}
+            dflt={settings.paperless ? false : true}
+            onClick={() => update.settings(['paperless'], !settings.paperless)}
+            title={t('core-settings:paperless.t')}
+          />
+          <IconButton
+            Icon={DetailIcon}
+            dflt={settings.complete}
+            onClick={() =>
+              update.settings(
+                ['complete'],
+                typeof settings.complete === 'undefined' ? 0 : settings.complete ? 0 : 1
+              )
+            }
+            title={t('core-settings:complete.t')}
+          />
+          <IconButton
+            Icon={
+              settings.units !== 'imperial'
+                ? UnitsIcon
+                : ({ className }) => <UnitsIcon className={`${className} rotate-180 w-6 h-6`} />
+            }
+            dflt={settings.units !== 'imperial'}
+            onClick={() =>
+              update.settings(['units'], settings.units === 'imperial' ? 'metric' : 'imperial')
+            }
+            title={t('core-settings:units.t')}
+          />
+        </div>
+        <Spacer />
+        <div
+          className="tooltip tooltip-primary tooltip-bottom flex flex-row items-center"
+          data-tip={t('ui-settings:control.t')}
         >
-          <ClearIcon /> {t('clearSettings')}
-        </button>
+          {[1, 2, 3, 4, 5].map((score) => (
+            <button onClick={() => update.setControl(score)} className="text-primary" key={score}>
+              <BulletIcon fill={control >= score ? true : false} />
+            </button>
+          ))}
+        </div>
+        <Spacer />
+        <div className="flex flex-row items-center gap-4">
+          <IconButton
+            Icon={RocketIcon}
+            dflt={ui.renderer !== 'svg'}
+            onClick={() => update.ui(['renderer'], ui.renderer === 'react' ? 'svg' : 'react')}
+            title={t('ui-settings:renderer.t')}
+          />
+        </div>
+        <Spacer />
+        <div className="flex flex-row items-center gap-4">
+          <ClearAllButton setSettings={setSettings} compact />
+        </div>
       </div>
     </div>
   )

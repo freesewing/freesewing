@@ -12,6 +12,7 @@ export const InspectView = ({
   pattern,
   patternConfig,
   settings,
+  setSettings,
   ui,
   update,
   language,
@@ -72,6 +73,7 @@ export const InspectView = ({
         <ViewHeader
           {...{
             settings,
+            setSettings,
             ui,
             update,
             control: account.control,
@@ -86,6 +88,7 @@ export const InspectView = ({
                 pattern,
                 patternConfig,
                 settings,
+                setSettings,
                 ui,
                 update,
                 language,

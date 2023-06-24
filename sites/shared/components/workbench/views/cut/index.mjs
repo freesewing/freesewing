@@ -38,6 +38,7 @@ export const CutView = ({
   design,
   patternConfig,
   settings,
+  setSettings,
   ui,
   update,
   language,
@@ -113,6 +114,7 @@ export const CutView = ({
               account,
               DynamicDocs,
               materialSettings,
+              setSettings,
             }}
           />
         </div>
