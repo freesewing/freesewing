@@ -1,6 +1,18 @@
 import { frontBase } from './front-base.mjs'
 import { capitalize } from '@freesewing/core'
 
+/*
+ * This is the exported part object
+ */
+export const waistband = {
+  name: 'collab:waistband', // The name in design::part format
+  draft: draftWaistband, // The method to call to draft this part
+  after: frontBase, // Draft this part starting from the (imported) frontBase part
+}
+
+/*
+ * This function drafts the waistband of the skirt
+ */
 function draftWaistband({
   Point,
   points,
@@ -108,6 +120,14 @@ function draftWaistband({
   points.cbLoopTopRight = points.cbLoopTopLeft.flipX()
   points.cbLoopBottomLeft = new Point(points.cbLoopTopLeft.x, points.cbBottom.y)
   points.cbLoopBottomRight = points.cbLoopBottomLeft.flipX()
+
+  /*
+   * We want to add an attachment here that can hold a mobile phone
+   * However, we want to refrain from puttin it over any belt loops so let's
+   * see how wide it can be (max) and store that for re-use later when drafting
+   * the back attachment
+   */
+  store.set('backAttachmentMaxWidth', points.leftSideLoopTopRight.dx(points.leftBackLoopTopLeft))
 
   /*
    * Seamline
@@ -349,10 +369,4 @@ function draftWaistband({
   }
 
   return part
-}
-
-export const waistband = {
-  name: 'collab:waistband',
-  draft: draftWaistband,
-  after: frontBase,
 }

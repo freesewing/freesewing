@@ -14,6 +14,10 @@ import { frontAttachment } from './front-attachment.mjs'
 import { frontAttachmentFacing } from './front-attachment-facing.mjs'
 import { backPocket } from './back-pocket.mjs'
 import { backPocketFlap } from './back-pocket-flap.mjs'
+import { backAttachmentBack } from './back-attachment-back.mjs'
+import { backAttachmentFront } from './back-attachment-front.mjs'
+import { backAttachmentFlap } from './back-attachment-flap.mjs'
+//import { backAttachmentSide } from './back-attachment-side.mjs'
 
 // Create new design
 const Collab = new Design({
@@ -32,6 +36,10 @@ const Collab = new Design({
     frontAttachmentFacing,
     backPocket,
     backPocketFlap,
+    backAttachmentBack,
+    backAttachmentFront,
+    backAttachmentFlap,
+    //backAttachmentSide
   ],
 })
 
@@ -50,5 +58,9 @@ export {
   frontAttachmentFacing,
   backPocket,
   backPocketFlap,
+  backAttachmentBack,
+  backAttachmentFront,
+  backAttachmentFlap,
+  //backAttachmentSide,
   Collab,
 }

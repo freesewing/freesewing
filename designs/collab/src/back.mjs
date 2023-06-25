@@ -128,11 +128,11 @@ function draftBack({
   points.pocketTopLeft = new Point(points.pocketBottomLeft.x, points.pocketTopRight.y)
   points.chamferLeft = points.pocketBottomLeft.shiftFractionTowards(
     points.pocketBottomRight,
-    options.pocketChamferSize
+    options.backPocketChamferSize
   )
   points.chamferRight = points.pocketBottomRight.shiftFractionTowards(
     points.pocketBottomLeft,
-    options.pocketChamferSize
+    options.backPocketChamferSize
   )
   points.chamferLeftTop = points.chamferLeft.rotate(90, points.pocketBottomLeft)
   points.chamferRightTop = new Point(points.pocketBottomRight.x, points.chamferLeftTop.y)
@@ -314,11 +314,13 @@ function draftBack({
   if (paperless) {
     if (points.topLeft.x > points.bottomLeft.x) {
       macro('hd', {
+        id: 'bottomWidth',
         from: points.bottomLeft,
         to: points.bottomRight,
         y: points.bottomLeft.y + 3 * sa + 30,
       })
       macro('hd', {
+        id: 'topLeftToBottomWidth',
         from: points.topLeft,
         to: points.bottomRight,
         y: points.bottomLeft.y + 3 * sa + 15,
@@ -329,27 +331,32 @@ function draftBack({
         y: points.topLeft.y - sa - 15,
       })
       macro('hd', {
+        id: 'topWidth',
         from: points.bottomLeft,
         to: points.topRight,
         y: points.topLeft.y - sa - 30,
       })
     } else {
       macro('hd', {
+        id: 'bottomWidth',
         from: points.bottomLeft,
         to: points.bottomRight,
         y: points.bottomLeft.y + 3 * sa + 15,
       })
       macro('hd', {
+        id: 'topLeftToBottomWidth',
         from: points.topLeft,
         to: points.bottomRight,
         y: points.bottomLeft.y + 3 * sa + 30,
       })
       macro('hd', {
+        id: 'bottomLeftToTopWidth',
         from: points.bottomLeft,
         to: points.topRight,
         y: points.topLeft.y - sa - 15,
       })
       macro('hd', {
+        id: 'topWidth',
         from: points.topLeft,
         to: points.topRight,
         y: points.topLeft.y - sa - 30,
@@ -357,27 +364,32 @@ function draftBack({
     }
     if (store.get('darts')) {
       macro('hd', {
+        id: 'topLeftToDartWidth',
         from: points.topLeft,
         to: points.dartLeft,
         y: points.topLeft.y + 15,
       })
       macro('hd', {
+        id: 'topRightToDartWidth',
         from: points.dartRight,
         to: points.topRight,
         y: points.topLeft.y + 15,
       })
       macro('hd', {
+        id: 'dartWidth',
         from: points.dartLeft,
         to: points.dartRight,
         y: points.dartTip.y + 15,
       })
       macro('vd', {
+        id: 'dartLength',
         from: points.dartTip,
         to: points.dartRight,
         x: points.dartRight.x + 15,
       })
     }
     macro('vd', {
+      id: 'rightHeight',
       from: points.bottomRight,
       to: points.topRight,
       x: points.topRight.x + sa + 15,

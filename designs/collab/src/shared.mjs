@@ -133,12 +133,33 @@ export const shared = {
       max: 85,
       menu: 'pockets',
     },
+    backPocketChamferSize: {
+      pct: 15,
+      min: 5,
+      max: 25,
+      menu: 'pockets',
+    },
     frontPocketOpeningStart: {
       pct: 33,
       min: 25,
       max: 45,
       menu: 'pockets',
       ...pctBasedOnQhips(),
+    },
+
+    // Width of the back attachment
+    backAttachmentWidth: {
+      pct: 40,
+      min: 25,
+      max: 55,
+      menu: 'pockets',
+      ...pctBasedOnQhips(),
+    },
+    backAttachmentDepth: {
+      pct: 190,
+      min: 100,
+      max: 220,
+      menu: 'pockets',
     },
 
     // Width of the front attachment
@@ -148,7 +169,13 @@ export const shared = {
       max: 110,
       menu: 'pockets',
     },
-    pocketChamferSize: {
+    frontAttachmentChamferSize: {
+      pct: 15,
+      min: 5,
+      max: 25,
+      menu: 'pockets',
+    },
+    backAttachmentFlapChamferSize: {
       pct: 15,
       min: 5,
       max: 25,
