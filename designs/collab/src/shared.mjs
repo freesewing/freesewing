@@ -92,6 +92,16 @@ export const shared = {
       ...pctBasedOn('hips'),
     },
 
+    beltloopWidth: {
+      pct: 40,
+      min: 20,
+      max: 60,
+      menu: 'style',
+      toAbs: (value, { measurements }, mergedOptions) =>
+        value * measurements.hips * mergedOptions.waistbandWidth,
+      fromAbs: (value) => (measurements.hips * mergedOptions.waistbandWidth) / value,
+    },
+
     // Pocket options
 
     /*

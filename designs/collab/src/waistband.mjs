@@ -1,4 +1,5 @@
 import { frontBase } from './front-base.mjs'
+import { capitalize } from '@freesewing/core'
 
 function draftWaistband({
   Point,
@@ -42,42 +43,81 @@ function draftWaistband({
   /*
    * Add the overlap at the button side (right)
    */
-  points.leftEdgeTop = points.leftFrontTop.shift(180, absoluteOptions.flyWidth)
-  points.leftEdgeBottom = new Point(points.leftEdgeTop.x, points.cbBottom.y)
-
-  /*
-   * Edge of the waistband on the buttonhole side
-   */
-  points.topLeft = new Point(absoluteOptions.flyWidth * -1, 0)
-  points.bottomLeft = new Point(points.topLeft.x, absoluteOptions.waistbandWidth * 2)
-
-  /*
-   * Fly shield edge on the buttonhole side
-   */
-  points.flyTop = new Point(0, 0)
-  points.flyBottom = new Point(0, points.bottomLeft.y)
-
-  /*
-   * Edge of the waistband on the button side
-   */
-  points.topRight = new Point(store.get('hips'), points.topLeft.y)
-  points.bottomRight = new Point(points.topRight.x, points.bottomLeft.y)
+  points.rightEdgeTop = points.rightFrontTop.shift(0, absoluteOptions.flyWidth)
+  points.rightEdgeBottom = new Point(points.rightEdgeTop.x, points.cbBottom.y)
 
   /*
    * Fold in the middle
    */
-  points.midLeft = new Point(points.leftEdgeTop.x, points.cbBottom.y / 2)
-  points.midRight = new Point(points.rightFrontTop.x, points.midLeft.y)
+  points.midLeft = new Point(points.leftFrontTop.x, points.cbBottom.y / 2)
+  points.midRight = new Point(points.rightEdgeTop.x, points.midLeft.y)
+
+  /*
+   * Location of the buttonhole
+   */
+  points.buttonhole = points.leftFrontBottom
+    .shiftFractionTowards(points.leftFrontTop, 0.25)
+    .shift(0, absoluteOptions.waistbandWidth / 4)
+
+  /*
+   * Location of the button
+   */
+  points.button = new Point(
+    points.rightEdgeTop.x - absoluteOptions.flyWidth / 2,
+    points.buttonhole.y
+  )
+
+  /*
+   * Indicate the location of the belt loops
+   */
+  points.leftBackLoopTop = points.cbTop.shiftFractionTowards(points.leftSideTop, 0.5)
+  points.leftSideLoopTop = points.leftSideTop.shiftFractionTowards(points.leftFrontTop, 0.06)
+  points.leftFrontLoopTop = points.leftSideTop.shiftFractionTowards(points.leftFrontTop, 0.53)
+  for (const key of ['Back', 'Side', 'Front']) {
+    points[`left${key}LoopBottom`] = new Point(points[`left${key}LoopTop`].x, points.cbBottom.y)
+    points[`right${key}LoopTop`] = points[`left${key}LoopTop`].flipX()
+    points[`right${key}LoopBottom`] = new Point(points[`right${key}LoopTop`].x, points.cbBottom.y)
+    /*
+     * Also add points on the left and right edge of the beltloop
+     * so we can draw the path later
+     */
+    for (const side of ['left', 'right']) {
+      points[`${side}${key}LoopTopLeft`] = points[`${side}${key}LoopTop`].shift(
+        180,
+        absoluteOptions.beltloopWidth / 2
+      )
+      points[`${side}${key}LoopTopRight`] = points[`${side}${key}LoopTop`].shift(
+        0,
+        absoluteOptions.beltloopWidth / 2
+      )
+      points[`${side}${key}LoopBottomLeft`] = points[`${side}${key}LoopBottom`].shift(
+        180,
+        absoluteOptions.beltloopWidth / 2
+      )
+      points[`${side}${key}LoopBottomRight`] = points[`${side}${key}LoopBottom`].shift(
+        0,
+        absoluteOptions.beltloopWidth / 2
+      )
+    }
+  }
+
+  /*
+   * Center back belt loop is different (a large wide one)
+   */
+  points.cbLoopTopLeft = points.cbTop.shiftFractionTowards(points.leftBackLoopTop, 0.5)
+  points.cbLoopTopRight = points.cbLoopTopLeft.flipX()
+  points.cbLoopBottomLeft = new Point(points.cbLoopTopLeft.x, points.cbBottom.y)
+  points.cbLoopBottomRight = points.cbLoopBottomLeft.flipX()
 
   /*
    * Seamline
    */
   paths.seam = new Path()
-    .move(points.leftEdgeTop)
-    .line(points.leftEdgeBottom)
-    .line(points.rightFrontBottom)
-    .line(points.rightFrontTop)
-    .line(points.leftEdgeTop)
+    .move(points.leftFrontTop)
+    .line(points.leftFrontBottom)
+    .line(points.rightEdgeBottom)
+    .line(points.rightEdgeTop)
+    .line(points.leftFrontTop)
     .close()
     .addClass('fabric')
 
@@ -127,9 +167,6 @@ function draftWaistband({
     /*
      * Add the button hole
      */
-    points.buttonhole = points.midLeft
-      .shiftFractionTowards(points.leftFrontBottom, 0.5)
-      .shift(180, absoluteOptions.waistbandWidth / 12)
     snippets.buttonhole = new Snippet('buttonhole-start', points.buttonhole)
       .attr('data-scale', absoluteOptions.waistbandWidth / 16)
       .attr('data-rotate', 90)
@@ -137,10 +174,6 @@ function draftWaistband({
     /*
      * Add the button
      */
-    points.button = new Point(
-      points.rightFrontTop.x - absoluteOptions.flyWidth / 2,
-      points.buttonhole.y
-    )
     snippets.button = new Snippet('button', points.button).attr(
       'data-scale',
       absoluteOptions.waistbandWidth / 16
@@ -164,48 +197,27 @@ function draftWaistband({
     })
 
     /*
-     * Indicate the location of the belt loops
+     * Indicate location of the belt loops
      */
-    const loopSpacing = {
-      1: 0.26,
-      2: 0.52,
-      3: 0.78,
+    for (const key of ['Back', 'Side', 'Front']) {
+      for (const side of ['left', 'right']) {
+        paths[`beltLoop${capitalize(side)}${key}`] = new Path()
+          .move(points[`${side}${key}LoopTopLeft`])
+          .line(points[`${side}${key}LoopBottomLeft`])
+          .move(points[`${side}${key}LoopBottomRight`])
+          .line(points[`${side}${key}LoopTopRight`])
+          .addClass('note stroke-sm dashed')
+      }
     }
-    for (const loop of [1, 2, 3]) {
-      points[`loopLeft${loop}`] = points.topLeft.shiftFractionTowards(points.cbTop, 0.26 * loop)
-      points[`loopRight${loop}`] = points[`loopLeft${loop}`].flipX(points.cbTop)
-    }
-    // Shift the first point on the button side to take the waistband overlap into account
 
-    macro('hd', {
-      from: points.topLeft,
-      to: points.loopLeft1,
-      y: points.loopLeft1.y - sa - 15,
-    })
-    macro('hd', {
-      from: points.loopLeft1,
-      to: points.loopLeft2,
-      y: points.loopLeft1.y - sa - 15,
-    })
-    macro('hd', {
-      from: points.loopLeft2,
-      to: points.loopLeft3,
-      y: points.loopLeft1.y - sa - 15,
-    })
-    macro('hd', {
-      from: points.loopRight3,
-      to: points.loopRight2,
-      y: points.loopLeft1.y - sa - 15,
-    })
-    macro('hd', {
-      from: points.loopRight2,
-      to: points.loopRight1,
-      y: points.loopLeft1.y - sa - 15,
-    })
-    macro('hd', {
-      from: points.loopRight1,
-      to: points.button,
-      y: points.loopLeft1.y - sa - 15,
+    /*
+     * Add a grainline indicator
+     */
+    points.grainlineTop = points.leftFrontTop.shiftFractionTowards(points.leftFrontLoopTop, 0.5)
+    points.grainlineBottom = new Point(points.grainlineTop.x, points.cbBottom.y)
+    macro('grainline', {
+      from: points.grainlineBottom,
+      to: points.grainlineTop,
     })
 
     /*
@@ -216,34 +228,124 @@ function draftWaistband({
 
   /*
    * Only add paperless indicators when requested
+   * Check the id for a description of each dimension
    */
   if (paperless) {
-    let y = points.topLeft.y - 15 - sa
-    // Length
-    //macro('hd', { y, from: points.topLeft, to: points.flyTop })
-    //macro('hd', { y, from: points.flyTop, to: points.flyTop })
-    //macro('hd', { y, from: points.flyTop, to: points.topRight })
-    y -= 15
-    macro('hd', { y, from: points.topLeft, to: points.topRight })
-    // Button
     macro('hd', {
-      from: points.button,
-      to: points.bottomRight,
-      y: points.bottomRight.y + 15 + sa,
+      id: 'frontLeft',
+      from: points.leftFrontBottom,
+      to: points.leftSideBottom,
+      y: points.cbBottom.y + 15 + sa,
+    })
+    macro('hd', {
+      id: 'backLeft',
+      from: points.leftSideBottom,
+      to: points.cbBottom,
+      y: points.cbBottom.y + 15 + sa,
+    })
+    macro('hd', {
+      id: 'backRight',
+      from: points.cbBottom,
+      to: points.rightSideBottom,
+      y: points.cbBottom.y + 15 + sa,
+    })
+    macro('hd', {
+      id: 'frontRight',
+      from: points.rightSideBottom,
+      to: points.rightFrontBottom,
+      y: points.cbBottom.y + 15 + sa,
+    })
+    macro('hd', {
+      id: 'overlapRight',
+      from: points.rightFrontBottom,
+      to: points.rightEdgeBottom,
+      y: points.cbBottom.y + 15 + sa,
+    })
+    macro('hd', {
+      id: 'leftHalf',
+      from: points.leftFrontBottom,
+      to: points.cbBottom,
+      y: points.cbBottom.y + 30 + sa,
+    })
+    macro('hd', {
+      id: 'rightHalf',
+      from: points.cbBottom,
+      to: points.rightFrontBottom,
+      y: points.cbBottom.y + 30 + sa,
+    })
+    macro('hd', {
+      id: 'fullLength',
+      from: points.leftFrontBottom,
+      to: points.rightEdgeBottom,
+      y: points.cbBottom.y + 45 + sa,
     })
     macro('vd', {
-      from: points.bottomRight,
+      id: 'buttonHeight',
+      from: points.rightEdgeBottom,
       to: points.button,
-      x: points.bottomRight.x + 15 + sa,
+      x: points.rightEdgeBottom.x + 15 + sa,
     })
-    // Buttonhole
-    let x = points.topLeft.x - 15 - sa
-    macro('vd', { x, from: points.bottomLeft, to: points.buttonhole })
-    // Width
-    x -= 15
-    macro('vd', { x, from: points.bottomLeft, to: points.midLeft })
-    x -= 15
-    macro('vd', { x, from: points.bottomLeft, to: points.topLeft })
+    macro('vd', {
+      id: 'buttonHoleHeight',
+      from: points.leftFrontBottom,
+      to: points.buttonhole,
+      x: points.leftFrontBottom.x - sa - 15,
+    })
+    macro('vd', {
+      id: 'fullWidth',
+      from: points.leftFrontBottom,
+      to: points.leftFrontTop,
+      x: points.leftFrontBottom.x - sa - 30,
+      scale: 0.5,
+    })
+    macro('hd', {
+      id: 'belLoopLeftFront',
+      from: points.leftFrontTop,
+      to: points.leftFrontLoopTop,
+      y: points.cbTop.y - 30 - sa,
+    })
+    macro('hd', {
+      id: 'beltloopLeftSide',
+      from: points.leftFrontLoopTop,
+      to: points.leftSideLoopTop,
+      y: points.cbTop.y - 30 - sa,
+    })
+    macro('hd', {
+      id: 'beltloopLeftBack',
+      from: points.leftSideLoopTop,
+      to: points.leftBackLoopTop,
+      y: points.cbTop.y - 30 - sa,
+    })
+    macro('hd', {
+      id: 'beltloopLeftCb',
+      from: points.leftBackLoopTop,
+      to: points.cbTop,
+      y: points.cbTop.y - 30 - sa,
+    })
+    macro('hd', {
+      id: 'beltloopRightCb',
+      from: points.cbTop,
+      to: points.rightBackLoopTop,
+      y: points.cbTop.y - 30 - sa,
+    })
+    macro('hd', {
+      id: 'beltloopRightBack',
+      from: points.rightBackLoopTop,
+      to: points.rightSideLoopTop,
+      y: points.cbTop.y - 30 - sa,
+    })
+    macro('hd', {
+      id: 'beltloopRightSide',
+      from: points.rightSideLoopTop,
+      to: points.rightFrontLoopTop,
+      y: points.cbTop.y - 30 - sa,
+    })
+    macro('hd', {
+      id: 'beltloopRightFront',
+      from: points.rightFrontLoopTop,
+      to: points.rightFrontTop,
+      y: points.cbTop.y - 30 - sa,
+    })
   }
 
   return part
