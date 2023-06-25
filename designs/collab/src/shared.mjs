@@ -189,9 +189,9 @@ export const shared = {
      * Is a factor between the distance between the hipline and seatline
      */
     dartLength: {
-      pct: 65,
-      min: 40,
-      max: 85,
+      pct: 90,
+      min: 50,
+      max: 100,
       menu: 'advanced',
       toAbs: (value, { measurements }, mergedOptions) =>
         value * (measurements.waistToSeat - measurements.waistToHips),
