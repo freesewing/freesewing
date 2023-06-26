@@ -4,7 +4,7 @@ import {
   emojis,
   ns as designMenuNs,
 } from 'shared/components/workbench/menus/design-options/index.mjs'
-import { OptionsIcon, BeakerIcon } from 'shared/components/icons.mjs'
+import { OptionsIcon } from 'shared/components/icons.mjs'
 import { optionsMenuStructure } from 'shared/utils.mjs'
 
 export const ns = ['test-view', ...designMenuNs]
@@ -33,15 +33,20 @@ export const SampleItem = ({ name, passProps, t, updateFunc }) => {
         className="min-h-0"
       />
       <div
-        className={`collapse-title flex item-center p-2 h-auto min-h-0 ${
-          checked ? 'bg-primary' : ''
+        className={`collapse-title flex items-center p-2 h-auto min-h-0 ${
+          checked ? 'bg-primary text-primary-content' : ''
         }`}
       >
-        {checked && <BeakerIcon />}
+        <input
+          ref={input}
+          type="radio"
+          checked={checked}
+          className="radio radio-primary mr-2 radio-sm"
+        />
         <span className="ml-2">{t([name + '.t', name])}</span>
       </div>
       {t(name + '.d', '') && (
-        <div className="collapse-content bg-neutral h-auto pb-0">
+        <div className="collapse-content h-auto pb-0">
           <p>{t(name + '.d', '')}</p>
         </div>
       )}

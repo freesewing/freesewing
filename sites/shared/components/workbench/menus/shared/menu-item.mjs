@@ -111,24 +111,27 @@ export const MenuItem = ({
         <EditIcon className={`w-6 h-6 ${override ? 'bg-base-100 text-accent rounded' : ''}`} />
       </button>
     )
+  const ResetButton = ({ open, disabled = false }) => (
+    <button
+      className={`${open ? openButtonClass : 'btn btn-accent'} disabled:bg-opacity-0`}
+      disabled={disabled}
+      onClick={(evt) => {
+        evt.stopPropagation()
+        updateFunc([name])
+      }}
+    >
+      <ClearIcon />
+    </button>
+  )
+
   if (changed && !allowToggle) {
-    const ResetButton = ({ open }) => (
-      <button
-        className={open ? openButtonClass : 'btn btn-accent'}
-        onClick={(evt) => {
-          evt.stopPropagation()
-          updateFunc([name])
-        }}
-      >
-        <ClearIcon />
-      </button>
-    )
     buttons.push(<ResetButton key="clear" />)
-    openButtons.push(<ResetButton open key="clear" />)
   }
 
   if (allowToggle) {
     buttons.push(<ListToggle key="toggle" {...{ config, changed, updateFunc, name }} />)
+  } else {
+    openButtons.push(<ResetButton open disabled={!changed} key="clear" />)
   }
 
   // props to pass to the ItemTitle

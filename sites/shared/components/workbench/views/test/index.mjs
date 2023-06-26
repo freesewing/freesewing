@@ -10,6 +10,7 @@ export const TestView = ({
   design,
   pattern,
   settings,
+  setSettings,
   ui,
   update,
   language,
@@ -31,6 +32,7 @@ export const TestView = ({
         <ViewHeader
           {...{
             settings,
+            setSettings,
             ui,
             update,
             control: account.control,
@@ -48,6 +50,7 @@ export const TestView = ({
                 pattern,
                 patternConfig,
                 settings,
+                setSettings,
                 ui,
                 update,
                 language,

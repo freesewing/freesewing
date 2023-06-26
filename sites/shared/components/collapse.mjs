@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { CloseIcon } from 'shared/components/icons.mjs'
+import { DownIcon } from 'shared/components/icons.mjs'
 import Link from 'next/link'
 
 const OpenTitleButton = ({
@@ -17,12 +17,11 @@ const OpenTitleButton = ({
       bg-${color} text-${color}-content px-4 py-1 text-lg font-medium`}
     onClick={toggle}
   >
-    {title}
+    {<DownIcon className="rotate-180 w-6 h-6 mr-4" />}
+    {!bottom && title}
     <div className="flex flex-row items-center gap-2 z-5">
       {openButtons}
-      <button className="btn btn-ghost btn-xs px-0" onClick={toggle}>
-        <CloseIcon stroke={3} />
-      </button>
+      <button className="btn btn-ghost btn-xs px-0" onClick={toggle}></button>
     </div>
   </div>
 )
@@ -68,15 +67,15 @@ export const Collapse = ({
             grow flex flex-row gap-4 py-1 px-4 items-center justify-start hover:cursor-pointer hover:bg-${color} hover:bg-opacity-20`}
         onClick={onClick ? onClick : () => setOpen(true)}
       >
-        {title}
+        <DownIcon /> {title}
+        {toggle ? (
+          <button onClick={() => setOpen(true)} className={toggleClasses}>
+            {toggle}
+          </button>
+        ) : (
+          buttons
+        )}
       </div>
-      {toggle ? (
-        <button onClick={() => setOpen(true)} className={toggleClasses}>
-          {toggle}
-        </button>
-      ) : (
-        buttons
-      )}
     </div>
   )
 }
