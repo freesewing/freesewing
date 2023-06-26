@@ -5,7 +5,7 @@ import { useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useBugsnag } from 'site/hooks/use-bugsnag.mjs'
+import { useBugsnag } from 'shared/hooks/use-bugsnag.mjs'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
