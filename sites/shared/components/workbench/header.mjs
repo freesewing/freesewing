@@ -70,7 +70,7 @@ const NavIcons = ({ setView, setDense, dense, view }) => {
       <NavButton
         onClick={() => setDense(!dense)}
         label={t('workbench:viewMenu')}
-        extraClasses="hidden lg:block text-success bg-neutral hover:bg-success hover:text-neutral"
+        extraClasses="hidden lg:flex text-success bg-neutral hover:bg-success hover:text-neutral"
       >
         {dense ? (
           <RightIcon
@@ -163,9 +163,9 @@ export const WorkbenchHeader = ({ view, setView }) => {
   return (
     <MenuWrapper
       Icon={icons[view]}
-      wrapperClass={`h-full w-64 min-h-screen pt-4
+      wrapperClass={`w-64 min-h-screen pt-4
         bg-neutral
-
+        shrink-0 grow-0 self-stretch
         transition-all
         drop-shadow-xl
         ${dense ? '-ml-52' : 'ml-0'}`}
