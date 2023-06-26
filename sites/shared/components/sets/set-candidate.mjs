@@ -2,7 +2,7 @@ import { ChoiceButton } from 'shared/components/choice-button.mjs'
 import { ChoiceLink } from 'shared/components/choice-link.mjs'
 import { OkIcon, NoIcon, WarningIcon } from 'shared/components/icons.mjs'
 import { useTranslation } from 'next-i18next'
-import { capitalize } from 'shared/utils.mjs'
+import { capitalize, hasRequiredMeasurements } from 'shared/utils.mjs'
 import Image from 'next/image'
 
 export const ns = ['sets']
@@ -52,22 +52,8 @@ export const SetCandidate = ({
   language,
 }) => {
   const { t } = useTranslation(['sets', design])
-
-  let hasMeasies = true
-  const setMeasies = set.measies && Object.keys(set.measies)
-  // Quick check for required measurements
-  if (!set.measies || setMeasies.length < requiredMeasies.length) hasMeasies = false
-
-  // Proper check for required measurements
-  if (hasMeasies) {
-    for (const m of requiredMeasies) {
-      if (!setMeasies.includes(m)) {
-        hasMeasies = false
-        break
-      }
-    }
-  }
-
+  const [hasMeasies, missingMeasies] = hasRequiredMeasurements(requiredMeasies, set.measies, true)
   const setProps = { set, design, t, href, clickHandler, hasMeasies, language }
+
   return <SetSummary {...setProps} />
 }
