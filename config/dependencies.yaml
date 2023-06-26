@@ -227,7 +227,7 @@ dev:
     '@mdx-js/runtime': &mdxRuntime '2.0.0-next.9'
     '@next/bundle-analyzer': &next '13.4.7'
     '@tailwindcss/typography': &tailwindTypography '0.5.9'
-    'algoliasearch': '4.17.2'
+    'algoliasearch': '4.18.0'
     'daisyui': &daisyui '3.1.1'
     'lodash.get': *_get
     'lodash.orderby': &_orderby '4.6.0'
@@ -276,7 +276,7 @@ lab:
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': *mdxRuntime
     '@tailwindcss/typography': *tailwindTypography
-    'algoliasearch': &algoliasearch '4.17.2'
+    'algoliasearch': &algoliasearch '4.18.0'
     'd3-dispatch': '3.0.1'
     'd3-drag': '3.0.0'
     'd3-selection': '3.0.0'
