@@ -23,7 +23,11 @@ export const DraftView = ({
   if (ui.renderer === 'svg') {
     try {
       const __html = pattern.render()
-      output = <div dangerouslySetInnerHTML={{ __html }} />
+      output = (
+        <ShowPattern>
+          <div className="w-full h-full" dangerouslySetInnerHTML={{ __html }} />
+        </ShowPattern>
+      )
     } catch (err) {
       console.log(err)
     }
@@ -47,6 +51,7 @@ export const DraftView = ({
               design,
               pattern,
               patternConfig,
+              setSettings,
               settings,
               ui,
               update,

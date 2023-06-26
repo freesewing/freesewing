@@ -82,6 +82,7 @@ export const InspectView = ({
               pattern,
               patternConfig,
               settings,
+              setSettings,
               ui,
               update,
               language,

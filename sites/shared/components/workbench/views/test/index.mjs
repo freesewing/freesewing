@@ -9,11 +9,11 @@ export const TestView = ({
   design,
   pattern,
   settings,
+  setSettings,
   ui,
   update,
   language,
   account,
-  setSettings,
   DynamicDocs,
 }) => {
   const { t } = useTranslation(ns)
@@ -42,6 +42,7 @@ export const TestView = ({
               pattern,
               patternConfig,
               settings,
+              setSettings,
               ui,
               update,
               language,

@@ -13,6 +13,7 @@ import {
   WrenchIcon,
   CloseIcon,
 } from 'shared/components/icons.mjs'
+import { ClearAllButton } from 'shared/components/workbench/menus/core-settings/index.mjs'
 import { shownHeaderSelector } from 'shared/components/wrappers/header.mjs'
 
 export const ns = ['common', 'core-settings', 'ui-settings']
@@ -77,7 +78,7 @@ export const ViewHeader = ({ update, settings, ui, control, setSettings }) => {
   const { t } = useTranslation(ns)
   return (
     <div
-      className={`hidden lg:flex sticky top-0 z-20 lg:${shownHeaderSelector}top-24 transition-[top] duration-300 ease-in-out drawer`}
+      className={`hidden lg:flex sticky top-0 z-20 lg:${shownHeaderSelector}top-24 transition-[top] duration-300 ease-in-out`}
     >
       <div className="hidden lg:flex flex-row flex-wrap gap-4 py-4 pt-4 w-full bg-neutral text-neutral-content items-center justify-center">
         <ZoomButtons t={t} />
@@ -141,12 +142,7 @@ export const ViewHeader = ({ update, settings, ui, control, setSettings }) => {
         </div>
         <Spacer />
         <div className="flex flex-row items-center gap-4">
-          <button
-            onClick={() => setSettings({})}
-            className={`btn btn-sm btn-outline btn-secondary hover:text-secondary-focus`}
-          >
-            <ClearIcon /> {t('clearSettings')}
-          </button>
+          <ClearAllButton setSettings={setSettings} compact />
         </div>
       </div>
     </div>

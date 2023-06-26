@@ -119,6 +119,7 @@ export const PrintView = ({
               design,
               pattern,
               patternConfig,
+              setSettings,
               settings,
               ui,
               update,

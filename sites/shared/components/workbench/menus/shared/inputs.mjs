@@ -85,9 +85,10 @@ export const ListToggle = ({ config, changed, updateFunc, name }) => {
   return (
     <input
       type="checkbox"
-      className={`toggle toggle-sm ${changed ? 'toggle-accent' : 'toggle-secondary'}`}
+      className={`toggle ${changed ? 'toggle-accent' : 'toggle-secondary'}`}
       checked={checked}
       onChange={doToggle}
+      onClick={(evt) => evt.stopPropagation()}
     />
   )
 }

@@ -39,13 +39,13 @@ export const CutView = ({
   design,
   patternConfig,
   settings,
+  setSettings,
   ui,
   update,
   language,
   account,
   DynamicDocs,
   Design,
-  setSettings,
 }) => {
   const { t } = useTranslation(['workbench', 'plugin'])
 
@@ -122,6 +122,7 @@ export const CutView = ({
               account,
               DynamicDocs,
               materialSettings,
+              setSettings,
             }}
           />
         ),

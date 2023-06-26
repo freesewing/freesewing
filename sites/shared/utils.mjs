@@ -284,17 +284,19 @@ export const scrollTo = (id) => {
   if (document) document.getElementById(id).scrollIntoView()
 }
 
-export const designMeasurements = (Design, measies = {}) => {
+const structureMeasurementsAsDesign = (measurements) => ({ patternConfig: { measurements } })
+
+export const designMeasurements = (Design, measies = {}, DesignIsMeasurementsPojo = false) => {
+  if (DesignIsMeasurementsPojo) Design = structureMeasurementsAsDesign(Design)
   const measurements = {}
   for (const m of Design.patternConfig?.measurements || []) measurements[m] = measies[m]
   for (const m of Design.patternConfig?.optionalMeasurements || []) measurements[m] = measies[m]
 
-  console.log({ Design, measurements, measies })
-
   return measurements
 }
 
-export const hasRequiredMeasurements = (Design, measies = {}) => {
+export const hasRequiredMeasurements = (Design, measies = {}, DesignIsMeasurementsPojo = false) => {
+  if (DesignIsMeasurementsPojo) Design = structureMeasurementsAsDesign(Design)
   const missing = []
   for (const m of Design.patternConfig?.measurements || []) {
     if (typeof measies[m] === 'undefined') missing.push(m)

@@ -1,12 +1,14 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { sanityLoader, sanityImage } from 'site/components/sanity/utils.mjs'
+import { sanitySiteImage, numPerPage, sanityLoader } from 'site/components/sanity/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components
 import Link from 'next/link'
 import { TimeAgo } from 'shared/components/wrappers/mdx.mjs'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
+import { Pagination } from 'shared/components/navigation/pagination.mjs'
+import { siteConfig } from 'site/site.config.mjs'
 
 // Translation namespaces used on this page
 const namespaces = [...new Set(['designs', ...pageNs])]
@@ -20,11 +22,11 @@ const textShadow = {
 
 const Preview = ({ post, t }) => (
   <div className="shadow rounded-lg">
-    <Link href={`blog/${post.slug}`} className="hover:underline">
+    <Link href={`/blog/${post.slug.current}`} className="hover:underline">
       <div
         className="bg-base-100 w-full h-full overflow-hidden shadow flex flex-column items-center rounded-lg"
         style={{
-          backgroundImage: `url(${post.image})`,
+          backgroundImage: `url(${sanitySiteImage(post.image) + '?fit=clip&w=400'})`,
           backgroundSize: 'cover',
         }}
       >
@@ -72,42 +74,58 @@ const Preview = ({ post, t }) => (
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const BlogIndexPage = ({ page, posts }) => {
+const BlogIndexPage = ({ posts, page, current, total }) => {
   const { t } = useTranslation()
+
   return (
     <PageWrapper {...page}>
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3 max-w-7xl lg:pr-4 xl:pr-6">
         {posts.map((post) => (
-          <Preview post={post} t={t} key={post.slug} />
+          <Preview post={post} t={t} key={post.slug.current} />
         ))}
       </div>
+      <Pagination {...{ current, total }} />
     </PageWrapper>
   )
 }
 
 export default BlogIndexPage
 
-export async function getStaticProps({ locale }) {
-  const posts = await sanityLoader({ language: locale, type: 'blog' }).catch((err) =>
-    console.log(err)
-  )
+export async function getStaticProps({ locale, params }) {
+  const allPosts = await sanityLoader({
+    language: locale,
+    type: 'blog',
+    order: 'date desc',
+    filters: '{_id, date, slug, title, author, image}',
+  })
+  const pageNum = parseInt(params.page)
 
   return {
     props: {
-      posts: posts.map((post) => ({
-        slug: post.slug.current,
-        title: post.title,
-        date: post.date,
-        // FIXME get the authors separately
-        author: post.author,
-        image: sanityImage(post.image) + '?fit=clip&w=400',
-      })),
+      posts: allPosts.slice(numPerPage * (pageNum - 1), numPerPage * pageNum),
+      current: pageNum,
+      total: allPosts.length,
       ...(await serverSideTranslations(locale, namespaces)),
       page: {
         locale,
         // title: 'Freesewing Blog',
-        path: ['blog'],
+        path: ['blog', 'page', params.page],
       },
     },
+  }
+}
+
+export const getStaticPaths = async () => {
+  const numPosts = await sanityLoader({ query: `count(*[_type == "blogen"])` })
+  const numPages = Math.ceil(numPosts / numPerPage)
+  const paths = []
+  for (let i = 0; i < numPages; i++) {
+    const pathName = `/blog/page/${i + 1}`
+    siteConfig.languages.forEach((l) => paths.push(`${l.length ? '/' : ''}${l}${pathName}`))
+  }
+
+  return {
+    paths,
+    fallback: false,
   }
 }

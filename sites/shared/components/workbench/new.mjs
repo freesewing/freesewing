@@ -162,7 +162,8 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
     default: {
       const layout = ui.layouts?.[view] || settings.layout || true
       // Generate the pattern here so we can pass it down to both the view and the options menu
-      const pattern = settings.measurements !== undefined && new Design({ layout, ...settings })
+      const pattern =
+        settings.measurements !== undefined && new Design({ layout, embed: true, ...settings })
 
       // Return early if the pattern is not initialized yet
       if (typeof pattern.getConfig !== 'function') return null

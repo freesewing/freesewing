@@ -34,7 +34,7 @@ export const PanZoomPattern = forwardRef((props, ref) => {
         wrapperClass={'pan-zoom-pattern'}
         id="pan-zoom-pattern"
       >
-        <Pattern {...{ t, components, renderProps }} ref={ref} />
+        {props.children || <Pattern {...{ t, components, renderProps }} ref={ref} />}
       </TransformComponent>
     </TransformWrapper>
   )
