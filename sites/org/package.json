@@ -37,7 +37,7 @@
     "@portabletext/react": "^1.0.6",
     "@sanity/client": "^6.1.2",
     "@tailwindcss/typography": "0.5.9",
-    "algoliasearch": "4.17.2",
+    "algoliasearch": "4.18.0",
     "react-copy-to-clipboard": "5.1.0",
     "daisyui": "3.1.1",
     "jotai": "2.1.1",

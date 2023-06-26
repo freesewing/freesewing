@@ -35,7 +35,7 @@
     "@mdx-js/runtime": "2.0.0-next.9",
     "@next/bundle-analyzer": "13.4.7",
     "@tailwindcss/typography": "0.5.9",
-    "algoliasearch": "4.17.2",
+    "algoliasearch": "4.18.0",
     "daisyui": "3.1.1",
     "lodash.get": "4.4.2",
     "lodash.orderby": "4.6.0",
