@@ -50,16 +50,23 @@ export function Part() {
  *
  * @return {object} part - A plain object representing the part
  */
-Part.prototype.asProps = function () {
+Part.prototype.asRenderProps = function () {
+  const paths = {}
+  for (const i in this.paths) paths[i] = this.paths[i].asRenderProps()
+  const points = {}
+  for (const i in this.points) points[i] = this.points[i].asRenderProps()
+  const snippets = {}
+  for (const i in this.snippets) snippets[i] = this.snippets[i].asRenderProps()
+
   return {
-    paths: this.paths,
-    points: this.points,
-    snippets: this.snippets,
-    attributes: this.attributes,
+    paths,
+    points,
+    snippets,
+    attributes: this.attributes.asRenderProps(),
     height: this.height,
     width: this.width,
-    bottomRight: this.bottomRight,
-    topLeft: this.topLeft,
+    bottomRight: this.bottomRight.asRenderProps(),
+    topLeft: this.topLeft.asRenderProps(),
   }
 }
 
@@ -119,7 +126,7 @@ Part.prototype.setHidden = function (hidden = false) {
  */
 Part.prototype.shorthand = function () {
   const complete = this.context.settings?.complete ? true : false
-  const paperless = this.context.settings?.paperless === true ? true : false
+  const paperless = this.context.settings?.paperless ? true : false
   const sa = this.context.settings?.complete ? this.context.settings?.sa || 0 : 0
   const shorthand = {
     complete,
@@ -169,7 +176,7 @@ Part.prototype.shorthand = function () {
     get: function (measurements, name) {
       if (typeof measurements[name] === 'undefined')
         self.context.store.log.warning(
-          `Tried to access \`measurements.${name}\` but it is \`undefined\``
+          `${self.name} tried to access \`measurements.${name}\` but it is \`undefined\``
         )
       return Reflect.get(...arguments)
     },
@@ -345,6 +352,8 @@ Part.prototype.__macroClosure = function (props) {
   const method = function (key, args) {
     const macro = utils.__macroName(key)
     if (typeof self[macro] === 'function') self[macro](args, props)
+    else if ('context' in self)
+      self.context.store.log.warning('Unknown macro `' + key + '` used in ' + self.name)
   }
 
   return method

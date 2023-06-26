@@ -1,4 +1,3 @@
-import path from 'path'
 import fs from 'fs'
 import prompts from 'prompts'
 import chalk from 'chalk'

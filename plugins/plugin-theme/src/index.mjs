@@ -37,8 +37,8 @@ export const plugin = {
         }
         if (paperless) {
           svg.pattern.settings[0].units === 'imperial'
-            ? (svg.defs += grid.imperial)
-            : (svg.defs += grid.metric)
+            ? svg.defs.setIfUnset('grid', grid.imperial)
+            : svg.defs.setIfUnset('grid', grid.metric)
           const parts = svg.pattern.parts[svg.pattern.activeSet]
           const skipGrid = data.skipGrid || []
           for (const key in parts) {
@@ -48,9 +48,10 @@ export const plugin = {
               let anchor = new Point(0, 0)
               if (typeof points.gridAnchor !== 'undefined') anchor = part.points.gridAnchor
               else if (typeof points.anchor !== 'undefined') anchor = part.points.anchor
-              svg.defs += `<pattern id="grid_${key}" `
-              svg.defs += `xlink:href="#grid" x="${anchor.x}" y="${anchor.y}">`
-              svg.defs += '</pattern>'
+              svg.defs.setIfUnset(
+                'grid_' + key,
+                `<pattern id="grid_${key}" xlink:href="#grid" x="${anchor.x}" y="${anchor.y}"></pattern>'`
+              )
               paths[getId()] = new Path()
                 .move(part.topLeft)
                 .line(new Point(part.topLeft.x, part.bottomRight.y))

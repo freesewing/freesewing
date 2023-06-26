@@ -3,7 +3,7 @@ dartPosition:
   title: Position Abnäher
 chestEase:
   description: Controls the amount of ease at the chest
-  title: Chest ease
+  title: Brustumfangszugabe
 waistEase:
   description: Controls the amount of ease at the waist
   title: Taillenzugabe
@@ -30,7 +30,7 @@ armholeDepth:
   title: Armlochtiefe
 backArmholeSlant:
   description: Controls the slant of the armhole at the back
-  title: Back armhole slant
+  title: Hintere Armlochschiebung
 backArmholeCurvature:
   description: Controls how deep the armhole is scooped out at the back
   title: Hintere Armlochkrümmung
@@ -54,7 +54,7 @@ frontShoulderWidth:
   title: Vordere Schulterbreite
 highBustWidth:
   description: Controls the width of the high bust
-  title: High bust width
+  title: Oberbrustweite
 shoulderToShoulderEase:
   description: Steuert die Menge an Zugabe entlang des Schulter-zu-Schulter Maßes
   title: Zugabe des Schulterabstandes

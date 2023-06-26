@@ -85,6 +85,8 @@ function draftHiAboveMouth({
   store.set('aboveMouthBottomLength', paths.bellyAndMouthAttachment.length())
   store.set('aboveMouthFinLength', points.aboveMouth02.dist(points.aboveMouth03))
 
+  store.cutlist.addCut({ material: 'color2Belly' })
+
   // Complete?
   if (complete) {
     points.aboveMouthSnippet = new Path()

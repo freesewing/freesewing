@@ -2,8 +2,8 @@
 title: Gérer votre abonnement dans votre compte
 ---
 
-As a registered user, you can [manage your newsletter settings in your account][1].
+En tant qu'utilisateur enregistré, vous pouvez [gérer vos paramètres de newsletter dans votre compte][1].
 
-If you'd like to sign up a different email address as the one linked to your account, you can do so below.
+Si vous souhaitez vous enregistrer avec une adresse e-mail différente que celle liée à votre compte, vous pouvez le faire ci-dessous.
 
 [1]: /account/settings/newsletter/

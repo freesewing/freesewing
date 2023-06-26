@@ -60,6 +60,8 @@ function draftHiUpperTeeth({
   )
   //createTeeth(paths.seam, 18 * options.size, 9 * options.size, 15, options.aggressive, paths.teeth)
 
+  store.cutlist.addCut({ cut: 1, material: 'color4Teeth' })
+
   // Complete?
   if (complete) {
     snippets.upperTeeth = new Snippet('bnotch', points.upperTeeth01)

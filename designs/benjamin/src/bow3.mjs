@@ -34,6 +34,9 @@ function draftBenjaminBow3({
     .attr('class', 'fabric')
     .unhide()
 
+  store.cutlist.addCut({ cut: 1 })
+  store.cutlist.addCut({ cut: 1, material: 'interfacing' })
+
   if (complete) {
     // Paperless?
     if (paperless) {
@@ -49,7 +52,7 @@ function draftBenjaminBow3({
     macro('title', {
       at: points.titleAnchor,
       nr: 3,
-      title: 'bowTie',
+      title: 'Long Bow',
       scale: store.get('tipWidth') / 75,
     })
   }

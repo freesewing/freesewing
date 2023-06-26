@@ -12,6 +12,7 @@ function draft({
   sa,
   paperless,
   macro,
+  store,
   part,
 }) {
   // Pocket seams here
@@ -55,6 +56,8 @@ function draft({
     .line(points.centerRight)
     .line(points.centerLeft)
     .close()
+
+  store.cutlist.addCut()
 
   // Complete?
   if (complete) {

@@ -1,0 +1,25 @@
+welcome: Welcome
+welcomeBackName: "Welcome back { name }"
+emailUsernameId: "Your Email address, Username, or User #"
+password: Your Password
+dontHaveAnAccount: Don't have an account yet?
+signIn: Sign in
+signInToThing: "Sign in to { thing }"
+usePassword: Use your password
+signUpHere: Sign up here
+processing: Processing
+signInFailed: Sign in failed
+somethingWentWrong: Something went wrong
+back: Back to sign in
+contact: Contact support
+err2: Unfortunately, we cannot recover from this error, we need a human being to look into this.
+err3: Feel free to try again, or reach out to support so we can assist you.
+emailSignInLink: Email me a sign in link
+usernameMissing: Please provide your username
+passwordMissing: Please provide your password
+emailMissing: Please provide your E-mail address
+regainAccess: Re-gain access
+notFound: No such user was found
+clickSigninLink: Click the sign-in link in that email to sign in to your FreeSewing account.
+oneMomentPlease: One moment please
+

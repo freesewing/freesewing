@@ -11,18 +11,18 @@ armLength:
   title: Longueur des bras
   description: Contrôle la longueur des bras
 neckWidth:
-  title: Neck width
-  description: Determines the width at the neck
+  title: Largeur du cou
+  description: Détermine la largeur du cou
 armTaper:
-  title: Arm tapering
-  description: Controls the amount by which the arms taper
+  title: Spirales des bras
+  description: Contrôle la quantité de spirales que les tentacules font
 bottomTopArmRatio:
-  title: Bottom/Top arm ratio
-  description: "FIXME: No idea what this does"
+  title: Ratio entre le bras supérieur et inférieur
+  description: "FIXME: Aucune idée de ce que cela fait"
 bottomArmReduction:
-  title: Bottom arm reduction
-  description: "FIXME: No idea what this does"
+  title: Réduction du bras inférieur
+  description: "FIXME: Aucune idée de ce que cela fait"
 bottomArmReductionPlushy:
-  title: Bottom arm reduction (plushy)
-  description: "FIXME: No idea what this does"
+  title: Réduction du bras inférieur (en peluche)
+  description: "FIXME: Aucune idée de ce que cela fait"
 

@@ -36,12 +36,15 @@ function draftBenjaminRibbon({
     .close()
     .attr('class', 'fabric')
 
+  store.cutlist.addCut()
+  store.cutlist.addCut({ cut: 2, material: 'interfacing' })
+
   if (complete) {
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     macro('title', {
       at: points.titleAnchor,
       nr: 2,
-      title: 'ribbon',
+      title: 'Collar Band',
       scale: 0.3,
     })
 

@@ -2,6 +2,7 @@ import chai from 'chai'
 import chaiString from 'chai-string'
 import { Svg } from '../src/svg.mjs'
 import { Design, Attributes } from '../src/index.mjs'
+import { Defs } from '../src/defs.mjs'
 import { version } from '../data.mjs'
 import render from './fixtures/render.mjs'
 
@@ -42,7 +43,7 @@ describe('Svg', () => {
     expect(svg.freeId).to.equal(0)
     expect(svg.body).to.equal('')
     expect(svg.style).to.equal('')
-    expect(svg.defs).to.equal('')
+    expect(svg.defs).to.be.an.instanceof(Defs)
     expect(svg.prefix).to.equal('<?xml version="1.0" encoding="UTF-8" standalone="no"?>')
     expect(svg.attributes.get('xmlns')).to.equal('http://www.w3.org/2000/svg')
     expect(svg.attributes.get('xmlns:svg')).to.equal('http://www.w3.org/2000/svg')

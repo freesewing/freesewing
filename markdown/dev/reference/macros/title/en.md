@@ -9,6 +9,7 @@ It is provided by the [annotations plugin](/reference/plugins/annotations).
 
 ```js
 macro('title', {
+  String align,
   Boolean append,
   Point at,
   Boolean cutlist
@@ -51,6 +52,7 @@ macro('title', {
 
 | Property   | Default | Type                | Description |
 | ----------:| :-----: | ------------------- | ----------- |
+| `align'    | 'left'  | String              | Horizontal text alignment. Valid values: 'left', 'right', 'center' |
 | `append`   | `false` | Boolean             | Set this to `true` to append the `nr` to any text already set in Point `at`'s attributes, rather than overwrite it |
 | `at`       |         | [Point](/reference/api/point) | The point at which to insert the title |
 | `cutlist`  | `true`  | Boolean             | Whether to include cutting instructions |

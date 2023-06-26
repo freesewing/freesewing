@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/hugo",
-  "version": "3.0.0-alpha.9",
+  "version": "3.0.0-alpha.10",
   "description": "A FreeSewing pattern for a hooded jumper with raglan sleeves",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -46,17 +46,17 @@
     "wcibuild_step5": "node build.mjs"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0-alpha.9",
-    "@freesewing/plugin-bundle": "3.0.0-alpha.9",
-    "@freesewing/brian": "3.0.0-alpha.9",
-    "@freesewing/plugin-bust": "3.0.0-alpha.9"
+    "@freesewing/core": "3.0.0-alpha.10",
+    "@freesewing/plugin-bundle": "3.0.0-alpha.10",
+    "@freesewing/brian": "3.0.0-alpha.10",
+    "@freesewing/plugin-bust": "3.0.0-alpha.10"
   },
   "dependencies": {},
   "devDependencies": {
     "mocha": "10.2.0",
     "chai": "4.3.7",
-    "@freesewing/models": "3.0.0-alpha.9",
-    "@freesewing/plugin-timing": "3.0.0-alpha.9"
+    "@freesewing/models": "3.0.0-alpha.10",
+    "@freesewing/plugin-timing": "3.0.0-alpha.10"
   },
   "files": [
     "dist/*",

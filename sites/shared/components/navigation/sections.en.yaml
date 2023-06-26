@@ -1,0 +1,35 @@
+blog: Blog
+blogAbout: News and updates from the FreeSewing community
+showcase: Showcase
+showcaseAbout: Examples and inspiration from the FreeSewing community using our designs
+docs: Documentation
+docsAbout: In-depth documenation for all our designs, our website, and much more
+account: Account
+accountAbout: Manage your account settings and preferences, and your presonal data
+designs: Designs
+designsAbout: Our library of designs that you can turn into made-to-measure patterns with a few clicks
+community: Community
+communityAbout: More information about the peope behind FreeSewing and where to fine like-minded makers
+apiAbout: Documentation for our core API library and our backend REST API.
+designAbout: Everything you need to know to start designing parametric sewing patterns.
+contributeAbout: Looking to contribute to FreeSewing? Right this way.
+i18nAbout: Documenation about how FreeSewing is translated into multiple languages.
+infraAbout: Documentation about FreeSewing's infrastructure and moving parts.
+aboutAbout: Not sure what this FreeSewing this is? Then start here.
+supportAbout: Support FreeSewing. Or learn where you can turn to for support.
+guidesAbout: Guides tell a story to further your understanding of a specific topic.
+tutorialsAbout: Tutorials are lessons that lead you through a series of steps to complete a project.
+howtosAbout: Howtos give you concrete steps to solve a common problem or challenge.
+referenceAbout: Reference holds technical descriptions of the underlying technology and how to make use of it.
+trainingAbout: Training materials are the most in-depth and strive to teach you a new skill.
+mainSections: Main sections
+currentSection: Current section
+sets: Measurements Sets
+patterns: Patterns
+curate: Curate
+curateSets: Curate Sets
+code: Code
+patternsAbout: Lists the patterns that you have stored in your FreeSewing account
+setsAbout: Lists the measurements sets that you have stored in your FreeSewing account
+codeAbout: Here you can find (links to) the Freesewing source code
+

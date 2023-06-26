@@ -1,5 +1,5 @@
-- - -
-- - -
+---
+---
 
 ##### Suscríbete a nuestro boletín
 

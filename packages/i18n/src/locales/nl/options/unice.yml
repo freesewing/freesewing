@@ -1,9 +1,9 @@
 fabricStretchX:
   title: Fabric stretch (horizontal)
-  description: Adjust this for more or less stretchy fabrics
+  description: Pas dit aan voor meer of minder elastische stoffen
 fabricStretchY:
   title: Fabric stretch (vertical)
-  description: Adjust this for more or less stretchy fabrics
+  description: Pas dit aan voor meer of minder elastische stoffen
 adjustStretch:
   title: Adjust stretch
   description: This option you to put in the maximum stretch that the fabric will allow in both horizontal and vertical directions; When disabled, the stretch values are used as-is

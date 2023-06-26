@@ -3,6 +3,8 @@ import { usersRoutes } from './users.mjs'
 import { setsRoutes } from './sets.mjs'
 import { patternsRoutes } from './patterns.mjs'
 import { confirmationsRoutes } from './confirmations.mjs'
+import { curatedSetsRoutes } from './curated-sets.mjs'
+import { issuesRoutes } from './issues.mjs'
 
 export const routes = {
   apikeysRoutes,
@@ -10,4 +12,6 @@ export const routes = {
   setsRoutes,
   patternsRoutes,
   confirmationsRoutes,
+  curatedSetsRoutes,
+  issuesRoutes,
 }

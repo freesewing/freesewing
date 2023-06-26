@@ -72,6 +72,8 @@ function draftHiMouth({
       .length()
   )
 
+  store.cutlist.addCut({ cut: 1, material: 'color3Mouth' })
+
   // Complete?
   if (complete) {
     points.mouthUpperTeeth1 = new Path()

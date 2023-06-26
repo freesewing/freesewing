@@ -54,7 +54,7 @@ yarn new plugin
 ### Step by step
 
 <Comment by="joost">
-These docs assume you have git installed. 
+These docs assume you have git installed.
 But if you're running Linux, you have git, right?
 </Comment>
 
@@ -154,12 +154,10 @@ If you're not certain what to pick, just mash some keys, it doesn't matter.
 
 #### What package manager to use
 
-Choose `yarn`. Currently, `npm` does not work.
+You may wish to choose `yarn` since that is the package manager
+that we use when doing work in the monorepo,
+and many of our tutorials are written to use `yarn`.
+However, it doesn't really matter.
+You can choose either `yarn` or `npm` as you wish.
 
 </Note>
-
-<Fixme compact>
-The `npm` issue issue should be fixed by the time v3 is released.
-The _What package manager to use_ section will need to be updated at that
-time.
-</Fixme>

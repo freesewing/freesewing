@@ -1,18 +1,24 @@
 import { useState } from 'react'
 import { CloseIcon } from 'shared/components/icons.mjs'
+import { useTranslation } from 'next-i18next'
 
 const colors = {
   comment: 'secondary',
   note: 'primary',
   tip: 'accent',
   warning: 'error',
+  error: 'error',
   fixme: 'warning',
   link: 'secondary',
   related: 'info',
+  tldr: 'info',
   none: '',
 }
 
+export const ns = ['popout']
+
 export const Popout = (props) => {
+  const { t } = useTranslation(ns)
   const [hide, setHide] = useState(false)
   if (hide) return null
 
@@ -25,7 +31,9 @@ export const Popout = (props) => {
 
   return props.compact ? (
     <div
-      className={`relative my-8 bg-${color} bg-opacity-5 -ml-4 -mr-4 sm:ml-0 sm:mr-0 ${className}`}
+      className={`relative ${
+        props.dense ? 'my-1' : 'my-8'
+      } bg-${color} bg-opacity-5 -ml-4 -mr-4 sm:ml-0 sm:mr-0 ${className}`}
     >
       <div
         className={`
@@ -35,8 +43,12 @@ export const Popout = (props) => {
         `}
       >
         <div className={`font-bold uppercase text-${color}`}>
-          <span>{type}</span>
-          <span className="px-3">|</span>
+          {props.title || (
+            <>
+              <span>{t(`popout:${type}`)}</span>
+              <span className="px-3">|</span>
+            </>
+          )}
         </div>
         <div className="popout-content">{props.noP ? props.children : <p>{props.children}</p>}</div>
       </div>
@@ -53,7 +65,9 @@ export const Popout = (props) => {
       >
         <div className={`font-bold flex flex-row gap-1 items-end justify-between`}>
           <div>
-            <span className={`font-bold uppercase text-${color}`}>{type}</span>
+            <span className={`font-bold uppercase text-${color}`}>
+              {type === 'tldr' ? 'TL;DR' : type}
+            </span>
             <span className={`font-normal text-base text-${color}`}>
               {type === 'comment' && (
                 <>

@@ -2,7 +2,7 @@
 title: "¿De qué se habla con o sin mamas?"
 ---
 
-Some people get confused by the terms _with breasts_ and _without breasts_.
+Algunas personas se confunden con los términos _con los senos_ y _sin pechos_.
 
 Utilizamos estos términos como una manera de incluir el género para preguntar si una persona tiene pechos o no.
 
@@ -10,9 +10,9 @@ Utilizamos estos términos como una manera de incluir el género para preguntar 
 
 Casi todas las empresas de prendas de vestir tienen dos categorías principales para su ropa de vestir: ropa para hombres y para mujeres. Estos diseños de prendas suelen estar basados en el cuerpo ideal o medio. Meaning, for womenswear, the designer will likely make a garment for a body with breasts, narrow shoulders, a smaller waist and wide hips.
 
-These characteristics are generally thought of as _the typical characteristics of a woman's body_. However, we believe it is best to stay away from this; no body is average and we want to build a gender-inclusive environment.
+Estas características generalmente se piensan como _las características típicas del cuerpo de una mujer_. However, we believe it is best to stay away from this; no body is average and we want to build a gender-inclusive environment.
 
-We do not want to exclude anyone and we think that _body shape ≠ gender_. That's why we use the terminology **with breasts** and **without breasts**, simply asking whether a person has breast tissue or not.
+No queremos excluir a nadie y pensamos que _cuerpo forma =género_. That's why we use the terminology **with breasts** and **without breasts**, simply asking whether a person has breast tissue or not.
 
 ##### Cómo se aplica a los patrones
 

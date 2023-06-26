@@ -10,6 +10,7 @@ function draftBenjaminBow1({
   sa,
   store,
   paperless,
+  options,
   part,
 }) {
   points.bandBottomLeft = points.bandBottomLeft.shift(0, 0)
@@ -31,6 +32,14 @@ function draftBenjaminBow1({
     .attr('class', 'fabric')
     .unhide()
 
+  if (options.adjustmentRibbon) {
+    store.cutlist.addCut({ cut: 1 })
+    store.cutlist.addCut({ cut: 1, material: 'interfacing' })
+  } else {
+    store.cutlist.addCut({ cut: 4 })
+    store.cutlist.addCut({ cut: 4, material: 'interfacing' })
+  }
+
   if (complete) {
     // Paperless?
     if (paperless) {
@@ -46,7 +55,7 @@ function draftBenjaminBow1({
     macro('title', {
       at: points.titleAnchor,
       nr: 1,
-      title: 'bowTie',
+      title: options.adjustmentRibbon ? 'Short Bow' : 'Bow',
       scale: store.get('tipWidth') / 75,
     })
     points.scaleboxAnchor = points.bandTopLeft.shift(30, 80)

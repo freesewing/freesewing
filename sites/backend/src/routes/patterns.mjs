@@ -7,6 +7,14 @@ const bsc = ['basic', { session: false }]
 export function patternsRoutes(tools) {
   const { app, passport } = tools
 
+  // Get patterns for the authenticate user
+  app.get('/patterns/jwt', passport.authenticate(...jwt), (req, res) =>
+    Patterns.list(req, res, tools)
+  )
+  app.get('/patterns/key', passport.authenticate(...bsc), (req, res) =>
+    Patterns.list(req, res, tools)
+  )
+
   // Create pattern
   app.post('/patterns/jwt', passport.authenticate(...jwt), (req, res) =>
     Patterns.create(req, res, tools)
@@ -46,4 +54,8 @@ export function patternsRoutes(tools) {
   app.delete('/patterns/:id/key', passport.authenticate(...bsc), (req, res) =>
     Patterns.delete(req, res, tools)
   )
+
+  // Read a public pattern as JSON or YAML (no auth needed, but will only work for public patterns)
+  app.get('/patterns/:id.json', (req, res) => Patterns.readPublic(req, res, tools, 'json'))
+  app.get('/patterns/:id.yaml', (req, res) => Patterns.readPublic(req, res, tools, 'yaml'))
 }

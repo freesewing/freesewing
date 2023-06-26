@@ -21,8 +21,8 @@ function draftFrontOrganiserBase({
   const openingHeight = height * options.openingRatio
 
   points.origin = new Point(0, 0)
-  points.bottomRight = new Point(openingWidth, openingHeight)
-  points.bottomLeft = new Point(0, openingHeight)
+  points.bottomRight = new Point(openingWidth, openingHeight * 0.9)
+  points.bottomLeft = new Point(0, openingHeight * 0.9)
   points.topRight = new Point(openingWidth, 0)
 
   paths.seam = new Path()

@@ -1,8 +1,8 @@
 width:
-  title: Width
+  title: Anchura
   description: Width of the pocket
 length:
-  title: Length
+  title: Longitud
   description: Length (depth) of the pocket
 edge:
   title: Taper

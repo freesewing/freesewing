@@ -11,12 +11,15 @@ function draftBentTopSleeve({
   snippets,
   Snippet,
   sa,
+  store,
   part,
 }) {
   // Extract seamline from sleeve
   delete paths.us
   paths.seam = paths.ts.clone().attr('class', 'fabric', true)
   delete paths.ts
+
+  store.cutlist.addCut()
 
   // Complete?
   if (complete) {

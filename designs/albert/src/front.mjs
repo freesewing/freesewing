@@ -126,6 +126,11 @@ export const front = {
       .attr('data-text', 'hem')
       .attr('data-text-class', 'text-xs center')
 
+    macro('cutonfold', {
+      from: points.topCOF,
+      to: points.bottomCOF,
+    })
+
     // Complete?
     if (complete) {
       points.logo = points.topRightBack.shiftFractionTowards(points.pocketRightBottom, 0.5)
@@ -153,11 +158,6 @@ export const front = {
       if (sa) {
         paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
       }
-
-      macro('cutonfold', {
-        from: points.topCOF,
-        to: points.bottomCOF,
-      })
     }
 
     // Paperless?

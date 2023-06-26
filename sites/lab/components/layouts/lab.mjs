@@ -1,6 +1,8 @@
 import { ThemePicker } from 'shared/components/theme-picker/index.mjs'
 import { LocalePicker } from 'shared/components/locale-picker/index.mjs'
 
+export const ns = ['']
+
 export const BeforeNav = ({ app }) => (
   <>
     <div className="md:hidden flex flex-row flex-wrap sm:flex-nowrap gap-2 mb-2">
@@ -12,7 +14,7 @@ export const BeforeNav = ({ app }) => (
 )
 
 export const LabLayout = ({ app, AltMenu, children = [] }) => (
-  <div className="py-24 lg:py-36 flex flex-row">
+  <div className="pb-24 flex flex-row">
     <div className="w-full xl:w-3/4 px-8">{children}</div>
     <aside
       className={`

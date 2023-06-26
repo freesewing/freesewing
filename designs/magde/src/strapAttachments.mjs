@@ -73,7 +73,7 @@ function draftStrapAttachments({
       at: new Point(webbingSize, webbingSize),
       cutlist: true,
       title: 'Strap Attachment',
-      nr: '4',
+      nr: '5',
       scale: 0.3,
     })
 

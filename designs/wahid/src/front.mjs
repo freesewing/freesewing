@@ -22,6 +22,14 @@ import {
   lengthBonus,
   acrossBackFactor,
   frontArmholeDeeper,
+  bicepsEase,
+  collarEase,
+  cuffEase,
+  shoulderEase,
+  s3Collar,
+  s3Armhole,
+  shoulderSlopeReduction,
+  backNeckCutout,
 } from './options.mjs'
 
 function wahidFront({
@@ -517,6 +525,14 @@ export const front = {
     lengthBonus,
     acrossBackFactor,
     frontArmholeDeeper,
+    bicepsEase,
+    collarEase,
+    cuffEase,
+    shoulderEase,
+    s3Collar,
+    s3Armhole,
+    shoulderSlopeReduction,
+    backNeckCutout,
   },
   draft: wahidFront,
 }

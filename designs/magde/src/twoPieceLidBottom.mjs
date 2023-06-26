@@ -35,10 +35,10 @@ function draftTwoPieceLidBottom({
 
   // Complete?
   if (complete) {
-    // macro('cutonfold', {
-    //   from: points.lidTopLeft,
-    //   to: points.lidSeamLeft,
-    // })
+    macro('cutonfold', {
+      from: points.origin,
+      to: points.lidSeamLeft,
+    })
 
     points.label = new Point(points.lidSeamRight.x / 3, points.lidSeamRight.y / 1.5)
 

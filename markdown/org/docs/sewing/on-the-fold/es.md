@@ -2,7 +2,7 @@
 title: En el pliegue
 ---
 
-When you have a pattern piece that is symmetric, the instructions might tell you that it is to be cut _on the fold_.
+Cuando tienes un patrón que es simétrico, las instrucciones pueden decirte que se debe cortar _en el pliegue_.
 
 This means that only half the pattern piece is printed, and you should cut it out by folding your fabric, and aligning the line that is _on the fold_ with the fold line indicated on the pattern.
 

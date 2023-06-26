@@ -7,10 +7,10 @@ frontPocket:
   description: Si se añado un bolsillo frontal o no
 hemWidth:
   title: Hem size
-  description: Size of the hem at the bottom of the pants
+  description: Tamaño de la temperatura en la parte inferior de los pantalones
 waistbandWidth:
-  title: Waist Band
-  description: Size of the waist band
+  title: Banda de Waist
+  description: Tamaño de la banda de cintura
 waistRaise:
   title: Aumento de Waist
   description: Cuánto elevar la cintura a partir de la medición de profundidad del asiento, lo que influye en la profundidad del corte de los cojines.

@@ -40,13 +40,13 @@ If you chose `banana`, you'll have a folder named `banana`.
 You can ignore all other subfolders and files; they are part of the development environment.)
 
 To start the development environment, enter the folder that was created
-and run `npm run dev` (or `yarn dev` if you're using Yarn as a package manager).
+and run `yarn dev` (or `npm run dev` if you're using npm as a package manager).
 
 Then open your browser and go to http://localhost:8000
 
 <Tip>
 The development environment will watch for any changes you make to
-the pattern's source code or configuration. 
+the pattern's source code or configuration.
 When you do, it will update automatically in your browser.
 </Tip>
 

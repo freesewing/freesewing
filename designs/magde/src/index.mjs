@@ -11,7 +11,8 @@ import { backPanel } from './backPanel.mjs'
 import { lidOnePiece } from './lidOnePiece.mjs'
 import { twoPieceLidTop } from './twoPieceLidTop.mjs'
 import { twoPieceLidBottom } from './twoPieceLidBottom.mjs'
-import { lidLiner } from './lidLiner.mjs'
+import { sidePanel } from './sidePanel.mjs'
+import { internalOrganiser } from './internalOrganiser.mjs'
 import { strapAttachments } from './strapAttachments.mjs'
 
 // Create new design
@@ -27,7 +28,8 @@ const Magde = new Design({
     twoPieceLidBottom,
     strapAttachments,
     bodyLiner,
-    lidLiner,
+    sidePanel,
+    internalOrganiser,
   ],
 })
 

@@ -1,8 +1,8 @@
 size:
-  title: Size
+  title: Maat
   description: Controls the overall size
 type:
-  title: Type
+  title: Soort
   description: Allows you to choose one of the variants of this design
 armWidth:
   title: Arm width

@@ -84,6 +84,8 @@ export const strap = {
       .attr('data-text', 'fold')
       .attr('data-text-class', 'text-xs center')
 
+    store.cutlist.addCut()
+
     // Complete?
     if (complete) {
       points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)

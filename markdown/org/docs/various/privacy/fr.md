@@ -10,10 +10,10 @@ Nous sommes convaincus que ça prouve notre engagement en faveur de la protectio
 
 Pour plus de clarté, nous avons divisé ceci en quatre types de rôles différents :
 
-- For **visitors of our website**, we store **[visitor data][v]**
-- For **subscribers to our newsletter**, we store **[subscriber data][s]**
-- For **users with an account** on our website, we store **[account data][a]**
-- For **users with an account that contains people**, we store **[people data][p]**
+- Pour **les visiteurs de notre site**, nous stockons **[les données des visiteurs][v]**
+- Pour **les abonnés à notre newsletter**, nous stockons **[les données d'abonné][s]**
+- Pour **utilisateurs ayant un compte** sur notre site web, nous stockons **[les données de compte][a]**
+- Pour **utilisateurs avec un compte qui contient des personnes**, nous stockons **[les données de personnes][p]**
 
 Voici les sections pertinentes :
 

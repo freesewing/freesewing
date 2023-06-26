@@ -66,6 +66,8 @@ export const back = {
     log,
     part,
   }) => {
+    let adjustment_warning = false
+
     // Get to work
     points.cbNeck = new Point(0, measurements.neck * options.backNeckCutout)
     points.hps = new Point(measurements.neck * options.neckWidthBack, 0)
@@ -101,10 +103,16 @@ export const back = {
       points.waistSide,
       points.dartTip.x
     )
-    points.dartBottomLeft = points.dartBottomCenter.shift(
-      180,
-      (reduction * (1 - options.backCenterWaistReduction * 0.5)) / 2
-    )
+    let backDartWidth = reduction * (1 - options.backCenterWaistReduction * 0.5)
+    if (backDartWidth <= 0) {
+      backDartWidth = 0
+      log.info(
+        '`' +
+          part.name +
+          '`: Back dart omitted (because the calculated dart width was 0.0 mm/inches or less).'
+      )
+    }
+    points.dartBottomLeft = points.dartBottomCenter.shift(180, backDartWidth / 2)
     points.dartBottomRight = points.dartBottomLeft.rotate(180, points.dartBottomCenter)
     points.dartLeftCp = points.dartBottomLeft.shift(
       90,
@@ -166,14 +174,21 @@ export const back = {
     }
 
     // Store the back width at bust level
-    points.bustCenter = utils.curveIntersectsY(
-      points.cbNeck,
-      points.cbNeckCp2,
-      points.waistCenter,
-      points.waistCenter,
-      measurements.hpsToBust
-    )
-    if (!points.bustCenter) log.error('Could not find bust height in center seam of back part')
+    if (measurements.hpsToBust < points.waistCenter.y) {
+      points.bustCenter = utils.curveIntersectsY(
+        points.cbNeck,
+        points.cbNeckCp2,
+        points.waistCenter,
+        points.waistCenter,
+        measurements.hpsToBust
+      )
+    } else {
+      log.warning(
+        'Unable to place bust above waist on center back seam. Using waist height instead.'
+      )
+      adjustment_warning = true
+      points.bustCenter = points.waistCenter.clone()
+    }
     if (points.bustCenter.y < points.armhole.y) {
       points.sideArmhole = points.armhole.clone()
       let sideArmholeTemp = new Path()
@@ -186,7 +201,7 @@ export const back = {
         points.sideArmhole,
         measurements.hpsToBust
       )
-    } else {
+    } else if (measurements.hpsToBust < points.waistSide.y) {
       points.bustSide = utils.curveIntersectsY(
         points.waistSide,
         points.waistSideCp2,
@@ -194,12 +209,15 @@ export const back = {
         points.armhole,
         measurements.hpsToBust
       )
+    } else {
+      log.warning('Unable to place bust above waist on side back seam. Using waist height instead.')
+      adjustment_warning = true
+      points.bustSide = points.waistSide.clone()
     }
-    if (!points.bustSide) log.error('Could not find bust height in side seam of back part')
     if (points.bustCenter.y < points.dartTip.y) {
       points.bustDartLeft = points.bustCenter.clone()
       points.bustDartLeft.x = points.dartTip.x
-    } else {
+    } else if (measurements.hpsToBust < points.dartBottomLeft.y) {
       points.bustDartLeft = utils.curveIntersectsY(
         points.dartBottomLeft,
         points.dartLeftCp,
@@ -207,8 +225,11 @@ export const back = {
         points.dartTip,
         measurements.hpsToBust
       )
+    } else {
+      log.warning('Unable to adjust bottom of dart on back part. Using unadjusted dart instead.')
+      adjustment_warning = true
+      points.bustDartLeft = points.dartBottomLeft.clone()
     }
-    if (!points.bustDartLeft) log.error('Could not find bust height in back dart')
     points.bustDartRight = points.bustDartLeft.flipX(points.dartTip)
     // Store things we'll need in the front parts
     store.set(
@@ -229,8 +250,12 @@ export const back = {
       .move(points.cbNeck)
       .curve_(points.cbNeckCp2, points.waistCenter)
       .line(points.dartBottomLeft)
-      .curve_(points.dartLeftCp, points.dartTip)
-      ._curve(points.dartRightCp, points.dartBottomRight)
+    if (backDartWidth > 0)
+      paths.seam
+        .curve_(points.dartLeftCp, points.dartTip)
+        ._curve(points.dartRightCp, points.dartBottomRight)
+    else paths.seam.line(points.dartBottomRight)
+    paths.seam
       .line(points.waistSide)
       .curve_(points.waistSideCp2, points.armhole)
       .curve(points.armholeCp2, points.armholePitchCp1, points.armholePitch)
@@ -253,6 +278,11 @@ export const back = {
       .close()
       .hide()
 
+    macro('grainline', {
+      from: new Point(points.hps.x / 2, points.shoulder.y),
+      to: new Point(points.hps.x / 2, points.waistSide.y),
+    })
+
     store.cutlist.addCut()
 
     if (complete) {
@@ -261,10 +291,6 @@ export const back = {
         nr: 2,
         title: 'back',
         at: points.titleAnchor,
-      })
-      macro('grainline', {
-        from: new Point(points.hps.x / 2, points.shoulder.y),
-        to: new Point(points.hps.x / 2, points.waistSide.y),
       })
       macro('sprinkle', {
         snippet: 'bnotch',
@@ -294,30 +320,34 @@ export const back = {
           to: points.waistCenter,
           y: points.waistCenter.y + sa + 15,
         })
-        macro('hd', {
-          from: points.cbNeck,
-          to: points.dartBottomLeft,
-          y: points.waistCenter.y + sa + 30,
-        })
-        macro('hd', {
-          from: points.cbNeck,
-          to: points.dartBottomRight,
-          y: points.waistCenter.y + sa + 45,
-        })
-        macro('hd', {
-          from: points.dartBottomLeft,
-          to: points.dartBottomRight,
-          y: points.waistCenter.y + sa + 15,
-        })
+        let dimensionsOffset = 0
+        if (backDartWidth > 0) {
+          dimensionsOffset = 30
+          macro('hd', {
+            from: points.cbNeck,
+            to: points.dartBottomLeft,
+            y: points.waistCenter.y + sa + 30,
+          })
+          macro('hd', {
+            from: points.cbNeck,
+            to: points.dartBottomRight,
+            y: points.waistCenter.y + sa + 45,
+          })
+          macro('hd', {
+            from: points.dartBottomLeft,
+            to: points.dartBottomRight,
+            y: points.waistCenter.y + sa + 15,
+          })
+        }
         macro('hd', {
           from: points.cbNeck,
           to: points.waistSide,
-          y: points.waistCenter.y + sa + 60,
+          y: points.waistCenter.y + sa + 30 + dimensionsOffset,
         })
         macro('hd', {
           from: points.cbNeck,
           to: points.armhole,
-          y: points.waistCenter.y + sa + 75,
+          y: points.waistCenter.y + sa + 45 + dimensionsOffset,
         })
         macro('vd', {
           from: points.waistSide,
@@ -369,6 +399,17 @@ export const back = {
       }
     }
 
+    if (adjustment_warning)
+      log.warning(
+        'We were not able to generate the Back pattern piece correctly. ' +
+          'Manual fitting and alteration of this and other pattern pieces ' +
+          'are likely to be needed. ' +
+          'First, please retake your measurements and generate a new ' +
+          'pattern using the new measurements. ' +
+          'If you still see this warning with the new pattern, then please ' +
+          'make a test garment, check fit, and make alterations as ' +
+          'necessary before trying to make the final garment.'
+      )
     return part
   },
 }

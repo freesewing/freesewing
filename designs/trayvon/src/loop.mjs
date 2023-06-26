@@ -25,6 +25,8 @@ function trayvonFabricLoop({
     .close()
     .attr('class', 'fabric')
 
+  store.cutlist.addCut({ cut: 1, material: 'lining' })
+
   if (complete) {
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
 

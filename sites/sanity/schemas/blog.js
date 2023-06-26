@@ -1,7 +1,7 @@
 export const blogSchemaBuilder = (lang) => ({
   name: `blog${lang}`,
   type: 'document',
-	title: `Blog ${lang.toUpperCase()}`,
+  title: `Blog ${lang.toUpperCase()}`,
   fields: [
     {
       name: 'title',
@@ -19,7 +19,7 @@ export const blogSchemaBuilder = (lang) => ({
       title: 'Slug',
       options: {
         source: 'title',
-      }
+      },
     },
     {
       name: 'date',
@@ -49,7 +49,7 @@ export const blogSchemaBuilder = (lang) => ({
     {
       name: 'author',
       title: 'Author',
-      type: 'string',
-    }
-  ]
+      type: 'number',
+    },
+  ],
 })

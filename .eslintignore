@@ -8,6 +8,7 @@
 *.md
 *.prisma
 *.css
+*.mustache
 Dockerfile
 .git
 .env

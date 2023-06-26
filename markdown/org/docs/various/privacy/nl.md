@@ -10,10 +10,10 @@ We hebben er vertrouwen in dat ons engagement voor privacy aangetoond zal worden
 
 Voor de duidelijkheid hebben we dit in vier verschillende rollen opgesplitst:
 
-- For **visitors of our website**, we store **[visitor data][v]**
-- For **subscribers to our newsletter**, we store **[subscriber data][s]**
-- For **users with an account** on our website, we store **[account data][a]**
-- For **users with an account that contains people**, we store **[people data][p]**
+- Voor **bezoekers van onze website**slaan we **[bezoekersgegevens op][v]**
+- Voor **abonnees op onze nieuwsbrief**slaan we **[ontvangersgegevens op][s]**
+- Voor **gebruikers met een account** op onze website slaan we **[account gegevens op][a]**
+- Voor **gebruikers met een account met mensen**slaan we **[personen gegevens op][p]**
 
 Hier zijn de relevante secties:
 

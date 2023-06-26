@@ -132,6 +132,9 @@ function draftHortensiaSidepanel({
     .close()
     .attr('class', 'fabric')
 
+  store.cutlist.addCut()
+  store.cutlist.addCut({ material: 'lining' })
+
   // Complete?
   if (complete) {
     if (options.size > 0.4) {

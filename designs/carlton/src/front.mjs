@@ -483,7 +483,7 @@ export const front = {
   name: 'carlton.front',
   from: bentFront,
   hide: hidePresets.HIDE_TREE,
-  measurements: ['waist', 'waistToFloor', 'waistToSeat'],
+  measurements: ['waist', 'waistToFloor', 'waistToSeat', 'seat'],
   options: {
     chestEase: { pct: 10, min: 5, max: 20, menu: 'fit' },
     buttonSpacingHorizontal: { pct: 43.5, min: 15, max: 60, menu: 'style' },

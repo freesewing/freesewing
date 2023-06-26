@@ -2,18 +2,18 @@
 title: Boutons, boutonnières, et boutons pressions
 ---
 
-Buttons and buttonholes may come in different sizes, but always have the same shape that represents how they look in real life:
+Les boutons et boutonnières peuvent avoir des tailles différentes, mais ont toujours la même forme que celle à quoi ils ressemblent dans la vie réelle :
 
 <Legend part="buttons">
 
-A button is shown on the left, and a buttonhole on the right
+Un bouton est affiché à gauche, et une boutonnière à droite
 
 </Legend>
 
-Snaps have a _stud_ and _socket_ part, and also look like the real thing:
+Les boutons pressions ont une partie _mâle_ et _femelle_ et ressemblent également à la réalité :
 
 <Legend part="snaps">
 
-A snap stud is shown on the left, and a snap socket on the right
+La partie mâle des boutons-pression est affiché à gauche, et celle femelle à droite
 
 </Legend>

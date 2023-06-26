@@ -35,6 +35,8 @@ function draftHortensiaSidepanelreinforcement({
     .close()
     .attr('class', 'fabric')
 
+  store.cutlist.addCut()
+
   // Complete?
   if (complete) {
     points.title = points.topLeft

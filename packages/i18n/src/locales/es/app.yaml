@@ -70,7 +70,7 @@ dolls: Dolls
 download: Descargar
 draft: Boceto
 draftPattern: 'Trazar {pattern} '
-testPattern: 'Test {pattern}'
+testPattern: 'Prueba {pattern}'
 draftPatternForModel: 'Trazar {pattern} para {model} '
 drafts: Bocetos
 draftSettings: Ajustes del boceto

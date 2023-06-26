@@ -2,7 +2,7 @@
 title: Dimensions
 ---
 
-When you opt for a _paperless_ pattern, your pattern will come with dimensions:
+Lorsque vous optez pour un patron _sans papier_, votre patron est fourni avec des dimensions :
 
 <Legend part="dimension">
 

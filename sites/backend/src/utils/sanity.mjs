@@ -37,7 +37,7 @@ export const setPatternAvatar = async (id, data) => setAvatar('pattern', id, dat
 export async function setAvatar(type, id, data) {
   // Step 1: Upload the image as asset
   const [contentType, binary] = b64ToBinaryWithType(data)
-  if (contentType && binary) {
+  if (contentType) {
     const img = await axios.post(`${config.api}/assets/images/${config.dataset}`, binary, {
       headers: {
         ...headers,
