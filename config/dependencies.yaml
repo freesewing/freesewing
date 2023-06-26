@@ -320,6 +320,8 @@ org:
     'algoliasearch': *algoliasearch
     'react-copy-to-clipboard': 5.1.0
     'daisyui': *daisyui
+    'jotai': &jotai '2.1.1'
+    'jotai-location': &jotai-location '0.5.1'
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
@@ -378,8 +380,8 @@ shared:
     'front-matter': '4.0.2'
     'highlight.js': '11.8.0'
     'github-slugger': '2.0.0'
-    'jotai': '2.1.1'
-    'jotai-location': '0.5.1'
+    'jotai': *jotai
+    'jotai-location': *jotai-location
     'lodash.clonedeep': '4.5.0'
     'lodash.orderby': *_orderby
     'lodash.unset': *_unset
