@@ -10,8 +10,6 @@ import {
   DetailIcon,
   IconWrapper,
   ClearIcon,
-  WrenchIcon,
-  CloseIcon,
 } from 'shared/components/icons.mjs'
 import { ClearAllButton } from 'shared/components/workbench/menus/core-settings/index.mjs'
 import { shownHeaderSelector } from 'shared/components/wrappers/header.mjs'

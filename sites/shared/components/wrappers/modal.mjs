@@ -46,7 +46,7 @@ export const ModalWrapper = ({
 
   useEffect(() => {
     if (animate) setAnimate(false)
-  }, [children])
+  }, [children, animate])
 
   // CSS classes for animation
   const animation = animate

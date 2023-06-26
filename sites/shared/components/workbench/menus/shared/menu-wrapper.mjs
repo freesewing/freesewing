@@ -2,7 +2,6 @@ import { useContext, useState, useEffect, useCallback } from 'react'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { CloseIcon, WrenchIcon } from 'shared/components/icons.mjs'
-import { shownHeaderSelector } from 'shared/components/wrappers/header.mjs'
 
 const defaultClasses = 'w-1/3 shrink grow-0 lg:p-4 max-w-2xl h-full overflow-scroll'
 const defaultButtonClasses = 'bottom-24 mb-16'
@@ -16,34 +15,31 @@ export const MenuWrapper = ({
   const { setModal, clearModal, modalContent } = useContext(ModalContext)
   const [modalOpen, setModalOpen] = useState(false)
 
-  const Modal = useCallback(
-    (props) => {
-      const closeModal = () => {
-        setModalOpen(false)
-        clearModal()
-      }
+  const Modal = useCallback(() => {
+    const closeModal = () => {
+      setModalOpen(false)
+      clearModal()
+    }
 
-      return (
-        <ModalWrapper slideFrom="right" keepOpenOnClick={keepOpenOnClick} keepOpenOnSwipe>
-          <div className="mb-16">{children}</div>
-          <button className="btn btn-accent btn-circle fixed bottom-4 right-4" onClick={closeModal}>
-            <CloseIcon />
-          </button>
-        </ModalWrapper>
-      )
-    },
-    [children]
-  )
+    return (
+      <ModalWrapper slideFrom="right" keepOpenOnClick={keepOpenOnClick} keepOpenOnSwipe>
+        <div className="mb-16">{children}</div>
+        <button className="btn btn-accent btn-circle fixed bottom-4 right-4" onClick={closeModal}>
+          <CloseIcon />
+        </button>
+      </ModalWrapper>
+    )
+  }, [children, clearModal, keepOpenOnClick])
 
   useEffect(() => {
     if (!modalOpen) return
 
     setModal(Modal)
-  }, [modalOpen, Modal])
+  }, [modalOpen, Modal, setModal])
 
   useEffect(() => {
     if (modalContent === null) setModalOpen(false)
-  }, [modalContent])
+  }, [modalContent, setModalOpen])
 
   const onClick = () => {
     setModalOpen(true)

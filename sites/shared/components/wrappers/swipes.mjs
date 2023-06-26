@@ -11,7 +11,7 @@ const checkEvent = (evt) => {
 }
 
 /* This component should wrap all swipeable content */
-export const SwipeWrapper = ({ children, app }) => {
+export const SwipeWrapper = ({ children }) => {
   const { clearModal } = useContext(ModalContext) || {}
 
   /*

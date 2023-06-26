@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState, useEffect, useRef } from 'react'
+import { useCallback, useMemo, useState, useEffect } from 'react'
 import { round, measurementAsMm, measurementAsUnits, formatFraction128 } from 'shared/utils.mjs'
 import { ChoiceButton } from 'shared/components/choice-button.mjs'
 import debounce from 'lodash.debounce'
