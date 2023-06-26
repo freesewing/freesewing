@@ -286,7 +286,7 @@ lab:
     'lodash.orderby': *_orderby
     'lodash.set': *_set
     'next': *next
-    'next-i18next': &nextI18next '13.3.0'
+    'next-i18next': &nextI18next '14.0.0'
     'react': *react
     'react-copy-to-clipboard': *reactCopyToClipboard
     'react-hotkeys-hook': *reactHotkeysHook
