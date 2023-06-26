@@ -1,8 +1,9 @@
 // Dependencies
-import { forwardRef } from 'react'
+import { forwardRef, useContext } from 'react'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Context
+import { PanZoomContext } from 'shared/components/workbench/pattern/pan-zoom-context.mjs'
 // Components
 import { SizeMe } from 'react-sizeme'
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch'
@@ -34,8 +35,7 @@ export const PanZoomPattern = forwardRef((props, ref) => {
   const { t } = useTranslation(ns)
 
   const { renderProps = false, components = {} } = props
-
-  if (!renderProps) return null
+  const { onTransformed, setZoomFunctions } = useContext(PanZoomContext)
 
   return (
     <SizeMe refreshRate={64}>
@@ -44,10 +44,13 @@ export const PanZoomPattern = forwardRef((props, ref) => {
           minScale={0.1}
           centerZoomedOut={true}
           wheel={{ activationKeys: ['Control'] }}
+          doubleClick={{ mode: 'reset' }}
+          onTransformed={onTransformed}
+          onInit={setZoomFunctions}
         >
           <TransformComponent>
             <div style={{ width: size.width + 'px' }} className="max-h-screen">
-              <Pattern {...{ t, components, renderProps }} ref={ref} />
+              {props.children || <Pattern {...{ t, components, renderProps }} ref={ref} />}
             </div>
           </TransformComponent>
         </TransformWrapper>

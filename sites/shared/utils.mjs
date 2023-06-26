@@ -54,7 +54,7 @@ export const formatFraction128 = (fraction, format = 'html') => {
     rest = fraction - inches
   }
   let fraction128 = Math.round(rest * 128)
-  if (fraction128 == 0) return formatImperial(negative, inches, false, false, format)
+  if (fraction128 == 0) return formatImperial(negative, inches || fraction128, false, false, format)
 
   for (let i = 1; i < 7; i++) {
     const numoFactor = Math.pow(2, 7 - i)
@@ -198,7 +198,9 @@ export const optionsMenuStructure = (options) => {
   // Fixme: One day we should sort this based on the translation
   for (const option of orderBy(sorted, ['menu', 'name'], ['asc'])) {
     if (typeof option === 'object') {
-      option.dflt = option.dflt || option[optionType(option)]
+      const oType = optionType(option)
+      option.dflt = option.dflt || option[oType]
+      if (oType === 'pct') option.dflt /= 100
       if (option.menu) {
         set(menu, `${option.menu}.isGroup`, true)
         set(menu, `${option.menu}.${option.name}`, option)
@@ -280,4 +282,25 @@ export const shortDate = (locale = 'en', timestamp = false) => {
 export const scrollTo = (id) => {
   // eslint-disable-next-line no-undef
   if (document) document.getElementById(id).scrollIntoView()
+}
+
+const structureMeasurementsAsDesign = (measurements) => ({ patternConfig: { measurements } })
+
+export const designMeasurements = (Design, measies = {}, DesignIsMeasurementsPojo = false) => {
+  if (DesignIsMeasurementsPojo) Design = structureMeasurementsAsDesign(Design)
+  const measurements = {}
+  for (const m of Design.patternConfig?.measurements || []) measurements[m] = measies[m]
+  for (const m of Design.patternConfig?.optionalMeasurements || []) measurements[m] = measies[m]
+
+  return measurements
+}
+
+export const hasRequiredMeasurements = (Design, measies = {}, DesignIsMeasurementsPojo = false) => {
+  if (DesignIsMeasurementsPojo) Design = structureMeasurementsAsDesign(Design)
+  const missing = []
+  for (const m of Design.patternConfig?.measurements || []) {
+    if (typeof measies[m] === 'undefined') missing.push(m)
+  }
+
+  return [missing.length === 0, missing]
 }

@@ -38,6 +38,7 @@ export const CutView = ({
   design,
   patternConfig,
   settings,
+  setSettings,
   ui,
   update,
   language,
@@ -59,7 +60,8 @@ export const CutView = ({
   )
 
   useEffect(() => {
-    if (!materialList.includes(materialSettings.activeMaterial)) setActiveMaterial(materialList[0])
+    if (materialList.length && !materialList.includes(materialSettings.activeMaterial))
+      setActiveMaterial(materialList[0])
   }, [materialSettings, materialList, setActiveMaterial])
 
   return (
@@ -112,6 +114,7 @@ export const CutView = ({
               account,
               DynamicDocs,
               materialSettings,
+              setSettings,
             }}
           />
         </div>

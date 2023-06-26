@@ -59,7 +59,10 @@ const NavIcons = ({ setView, setDense, dense, view }) => {
         extraClasses="text-success bg-neutral hover:bg-success hover:text-neutral"
       >
         {dense ? (
-          <RightIcon className={`${iconSize} animate-bounce-right`} stroke={4} />
+          <RightIcon
+            className={`${iconSize} group-hover:animate-[bounceright_1s_infinite] animate-[bounceright_1s_5]`}
+            stroke={4}
+          />
         ) : (
           <LeftIcon className={`${iconSize} animate-bounce-right`} stroke={4} />
         )}
@@ -143,19 +146,23 @@ const NavIcons = ({ setView, setDense, dense, view }) => {
 
 export const WorkbenchHeader = ({ view, setView }) => {
   const [dense, setDense] = useState(true)
-
   return (
     <header
       className={`
-      hidden lg:block
+      h-full w-64 min-h-screen pt-4
       bg-neutral
-      w-64 min-h-screen pt-4
+
       transition-all
       drop-shadow-xl
       ${dense ? '-ml-52' : 'ml-0'}
+      group
     `}
     >
-      <div className="hidden lg:flex lg:flex-col lg:justify-between items-center w-full">
+      <div
+        className={`
+      flex flex-col
+      items-center w-full sticky top-4 lg:top-28`}
+      >
         <NavIcons {...{ setView, setDense, dense, view }} />
       </div>
     </header>

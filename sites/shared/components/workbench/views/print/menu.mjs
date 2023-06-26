@@ -4,6 +4,7 @@ import {
 } from 'shared/components/workbench/menus/design-options/index.mjs'
 import {
   CoreSettings,
+  ClearAllButton,
   ns as coreMenuNs,
 } from 'shared/components/workbench/menus/core-settings/index.mjs'
 import { PrintSettings, ns as printMenuNs } from './settings.mjs'
@@ -14,6 +15,7 @@ export const ns = [...coreMenuNs, ...designMenuNs, ...printMenuNs]
 export const PrintMenu = ({
   design,
   patternConfig,
+  setSettings,
   settings,
   ui,
   update,
@@ -37,8 +39,9 @@ export const PrintMenu = ({
     <nav className="grow mb-12">
       <PrintActions {...menuProps} ui={ui} exportIt={exportIt} />
       <PrintSettings {...menuProps} ui={ui} />
-      <DesignOptions {...menuProps} />
+      <DesignOptions {...menuProps} isFirst={false} />
       <CoreSettings {...menuProps} />
+      <ClearAllButton setSettings={setSettings} />
     </nav>
   )
 }

@@ -5,6 +5,7 @@ import {
 } from 'shared/components/workbench/menus/design-options/index.mjs'
 import {
   CoreSettings,
+  ClearAllButton,
   ns as coreMenuNs,
 } from 'shared/components/workbench/menus/core-settings/index.mjs'
 import { CutSettings, ns as cutNs } from './settings.mjs'
@@ -41,6 +42,7 @@ export const CutMenu = ({
   account,
   DynamicDocs,
   materialSettings,
+  setSettings,
 }) => {
   const control = account.control
   const menuProps = {
@@ -57,8 +59,9 @@ export const CutMenu = ({
     <nav className="grow mb-12">
       <CutActions update={update} ui={ui} materialSettings={materialSettings} />
       <CutSettings {...menuProps} ui={ui} materialSettings={materialSettings} />
-      <DesignOptions {...menuProps} />
+      <DesignOptions {...menuProps} isFirst={false} />
       <CoreSettings {...menuProps} />
+      <ClearAllButton setSettings={setSettings} />
     </nav>
   )
 }

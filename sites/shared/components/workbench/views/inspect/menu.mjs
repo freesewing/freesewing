@@ -4,6 +4,7 @@ import {
 } from 'shared/components/workbench/menus/design-options/index.mjs'
 import {
   CoreSettings,
+  ClearAllButton,
   ns as coreMenuNs,
 } from 'shared/components/workbench/menus/core-settings/index.mjs'
 import { UiSettings, ns as uiNs } from 'shared/components/workbench/menus/ui-settings/index.mjs'
@@ -14,6 +15,7 @@ export const ns = [...coreMenuNs, ...designMenuNs, ...uiNs, inspectorNs]
 export const DraftMenu = ({
   design,
   patternConfig,
+  setSettings,
   settings,
   ui,
   update,
@@ -39,10 +41,11 @@ export const DraftMenu = ({
 
   return (
     <nav className="grow mb-12">
-      {ui.inspect ? <Inspector {...menuProps} {...{ ui, inspector, renderProps }} /> : null}
+      <Inspector {...menuProps} {...{ ui, inspector, renderProps }} />
       <DesignOptions {...menuProps} />
       <CoreSettings {...menuProps} />
       <UiSettings {...menuProps} {...{ ui, view, setView }} />
+      <ClearAllButton setSettings={setSettings} />
     </nav>
   )
 }

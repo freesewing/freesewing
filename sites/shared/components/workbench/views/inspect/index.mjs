@@ -1,16 +1,18 @@
 import { useState } from 'react'
-import { PanZoomPattern as ShowPattern } from 'shared/components/workbench/pan-zoom-pattern.mjs'
 import { InspectorPattern } from './inspector/pattern.mjs'
 import { DraftMenu, ns as menuNs } from './menu.mjs'
 import { objUpdate } from 'shared/utils.mjs'
+import { ViewHeader } from '../view-header.mjs'
+import { PanZoomContextProvider } from 'shared/components/workbench/pattern/pan-zoom-context.mjs'
 
 export const ns = menuNs
 
-export const DraftView = ({
+export const InspectView = ({
   design,
   pattern,
   patternConfig,
   settings,
+  setSettings,
   ui,
   update,
   language,
@@ -62,35 +64,45 @@ export const DraftView = ({
     }
   } else {
     renderProps = pattern.getRenderProps()
-    output = ui.inspect ? (
-      <InspectorPattern {...{ renderProps, inspector }} />
-    ) : (
-      <ShowPattern {...{ renderProps, inspector }} />
-    )
+    output = <InspectorPattern {...{ renderProps, inspector }} />
   }
 
   return (
-    <div className="flex flex-row">
-      <div className="w-2/3 shrink-0 grow lg:p-4 sticky top-0">{output}</div>
-      <div className="w-1/3 shrink grow-0 lg:p-4 max-w-2xl h-screen overflow-scroll">
-        <DraftMenu
+    <PanZoomContextProvider>
+      <div className="flex flex-col">
+        <ViewHeader
           {...{
-            design,
-            pattern,
-            patternConfig,
             settings,
+            setSettings,
             ui,
             update,
-            language,
-            account,
-            DynamicDocs,
-            inspector,
-            renderProps,
-            view,
-            setView,
+            control: account.control,
           }}
         />
+        <div className="flex flex-row">
+          <div className="w-2/3 shrink-0 grow lg:p-4 sticky top-0">{output}</div>
+          <div className="w-1/3 shrink grow-0 lg:p-4 max-w-2xl h-screen overflow-scroll">
+            <DraftMenu
+              {...{
+                design,
+                pattern,
+                patternConfig,
+                settings,
+                setSettings,
+                ui,
+                update,
+                language,
+                account,
+                DynamicDocs,
+                inspector,
+                renderProps,
+                view,
+                setView,
+              }}
+            />
+          </div>
+        </div>
       </div>
-    </div>
+    </PanZoomContextProvider>
   )
 }

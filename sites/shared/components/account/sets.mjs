@@ -2,8 +2,7 @@
 import { useState, useEffect, useContext, useCallback } from 'react'
 import { useTranslation } from 'next-i18next'
 import orderBy from 'lodash.orderby'
-import { measurements, isDegreeMeasurement } from 'config/measurements.mjs'
-import { measurementAsMm, formatMm } from 'shared/utils.mjs'
+import { measurements } from 'config/measurements.mjs'
 import { measurements as designMeasurements } from 'shared/prebuild/data/design-measurements.mjs'
 import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
 // Hooks
@@ -23,7 +22,6 @@ import { ModalDesignPicker } from 'shared/components/modal/design-picker.mjs'
 import {
   FilterIcon,
   ClearIcon,
-  PlusIcon,
   OkIcon,
   NoIcon,
   TrashIcon,
@@ -34,6 +32,7 @@ import Markdown from 'react-markdown'
 import { Tab } from './bio.mjs'
 import Timeago from 'react-timeago'
 import { Spinner } from 'shared/components/spinner.mjs'
+import { MeasieRow } from 'shared/components/sets/measie-input.mjs'
 
 export const ns = ['account', 'patterns', 'toast']
 
@@ -139,214 +138,6 @@ export const EditRow = (props) => (
     <EditField field="name" {...props} />
   </Collapse>
 )
-
-const Mval = ({ m, val = false, imperial = false, className = '' }) =>
-  val ? (
-    isDegreeMeasurement(m) ? (
-      <span>{val}°</span>
-    ) : (
-      <span
-        dangerouslySetInnerHTML={{ __html: formatMm(val, imperial ? 'imperial' : 'metric') }}
-        className={className}
-      />
-    )
-  ) : null
-
-export const MeasieRow = (props) => {
-  const { t, m, mset } = props
-
-  const isSet = typeof mset.measies?.[m] === 'undefined' ? false : true
-
-  return (
-    <Collapse
-      color="secondary"
-      openTitle={t(m)}
-      title={
-        <>
-          <div className="grow text-left md:text-right block md:inline font-bold pr-4">{t(m)}</div>
-          {isSet ? (
-            <Mval m={m} val={mset.measies[m]} imperial={mset.imperial} className="w-1/3" />
-          ) : (
-            <div className="w-1/3" />
-          )}
-        </>
-      }
-      toggle={isSet ? <EditIcon /> : <PlusIcon />}
-      toggleClasses={`btn ${isSet ? 'btn-secondary' : 'btn-neutral bg-opacity-50'}`}
-    >
-      <MeasieInput {...props} />
-    </Collapse>
-  )
-}
-
-const MeasieInput = ({ t, m, mset, startLoading, stopLoading, backend, refresh, toast }) => {
-  const isDegree = isDegreeMeasurement(m)
-  const factor = isDegree ? 1 : mset.imperial ? 25.4 : 10
-
-  const isValValid = (val) =>
-    typeof val === 'undefined' || val === '' ? null : val != false && !isNaN(val)
-  const isValid = (newVal) => (typeof newVal === 'undefined' ? isValValid(val) : isValValid(newVal))
-
-  const [val, setVal] = useState(mset.measies?.[m] / factor || '')
-  const [valid, setValid] = useState(isValid(mset.measies?.[m] / factor || ''))
-
-  // Update onChange
-  const update = (evt) => {
-    setVal(evt.target.value)
-
-    let useVal = isDegree
-      ? evt.target.value
-      : measurementAsMm(evt.target.value, mset.imperial ? 'imperial' : 'metric')
-    setValid(isValid(useVal))
-  }
-
-  const save = async () => {
-    // FIXME
-    startLoading()
-    const measies = {}
-    measies[m] = val * factor
-    const result = await backend.updateSet(mset.id, { measies })
-    if (result.success) {
-      refresh()
-      toast.for.settingsSaved()
-    } else toast.for.backendError()
-    stopLoading()
-  }
-
-  const fraction = (i, base) => update({ target: { value: Math.floor(val) + i / base } })
-
-  if (!m) return null
-
-  const fractionClasses =
-    'h-3 border-2 border-solid border-base-100 hover:border-secondary bg-secondary rounded bg-opacity-50 hover:bg-opacity-100'
-
-  return (
-    <div className="form-control mb-2 flex flex-row flexwrap gap-2">
-      <div className="flex flex-col items-center">
-        <label className="input-group w-full">
-          <input
-            type="text"
-            className={`
-              input input-bordered text-base-content border-r-0 w-full
-              ${valid === false && 'input-error'}
-              ${valid === true && 'input-success'}
-            `}
-            value={val}
-            onChange={update}
-          />
-          {mset.imperial ? (
-            <span
-              className={`bg-transparent border-y
-              ${valid === false && 'border-error text-neutral-content'}
-              ${valid === true && 'border-success text-neutral-content'}
-              ${valid === null && 'border-base-200 text-base-content'}
-         `}
-            >
-              <Mval
-                imperial={true}
-                val={val * 25.4}
-                m={m}
-                className="text-base-content bg-transparent text-success text-xs font-bold p-0"
-              />
-            </span>
-          ) : null}
-          <span
-            role="img"
-            className={`bg-transparent border-y
-            ${valid === false && 'border-error text-neutral-content'}
-            ${valid === true && 'border-success text-neutral-content'}
-            ${valid === null && 'border-base-200 text-base-content'}
-         `}
-          >
-            {valid === true && '👍'}
-            {valid === false && '🤔'}
-          </span>
-          <span
-            className={`
-            ${valid === false && 'bg-error text-neutral-content'}
-            ${valid === true && 'bg-success text-neutral-content'}
-            ${valid === null && 'bg-base-200 text-base-content'}
-         `}
-          >
-            {isDegree ? '° ' : mset.imperial ? 'in' : 'cm'}
-          </span>
-        </label>
-        {mset.imperial ? (
-          <div className="w-full mt-2">
-            <div className="flex flex-row items-center">
-              <span className="text-xs inline-block w-8 text-right pr-2">
-                <sup>1</sup>/<sub>2</sub>
-              </span>
-              <button
-                className={`w-[50%] ${fractionClasses}`}
-                title={`1/2"`}
-                onClick={() => fraction(1, 2)}
-              />
-            </div>
-            <div className="flex flex-row">
-              <span className="text-xs inline-block w-8 text-right pr-2">
-                <sup>1</sup>/<sub>4</sub>
-              </span>
-              {[1, 2, 3].map((i) => (
-                <button
-                  key={i}
-                  className={`w-[25%] ${fractionClasses}`}
-                  title={`${i}1/4"`}
-                  onClick={() => fraction(i, 4)}
-                />
-              ))}
-            </div>
-            <div className="flex flex-row">
-              <span className="text-xs inline-block w-8 text-right pr-2">
-                <sup>1</sup>/<sub>8</sub>
-              </span>
-              {[1, 2, 3, 4, 5, 6, 7].map((i) => (
-                <button
-                  key={i}
-                  className={`w-[12.5%] ${fractionClasses}`}
-                  title={`${i}1/8"`}
-                  onClick={() => fraction(i, 8)}
-                />
-              ))}
-            </div>
-            <div className="flex flex-row mt-1">
-              <span className="text-xs inline-block w-8 text-right pr-2">
-                <sup>1</sup>/<sub>16</sub>
-              </span>
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map((i) => (
-                <button
-                  key={i}
-                  className={`w-[6.25%] ${fractionClasses}`}
-                  title={`${i}1/16"`}
-                  onClick={() => fraction(i, 16)}
-                />
-              ))}
-            </div>
-            <div className="flex flex-row mt-1">
-              <span className="text-xs inline-block w-8 text-right pr-2">
-                <sup>1</sup>/<sub>32</sub>
-              </span>
-              {[
-                1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,
-                24, 25, 26, 27, 28, 29, 30, 31,
-              ].map((i) => (
-                <button
-                  key={i}
-                  className={`w-[3.125%] ${fractionClasses}`}
-                  title={`${i}/32"`}
-                  onClick={() => fraction(i, 32)}
-                />
-              ))}
-            </div>
-          </div>
-        ) : null}
-      </div>
-      <button className="btn btn-secondary w-24" onClick={save} disabled={!valid}>
-        {t('save')}
-      </button>
-    </div>
-  )
-}
 
 const EditImg = ({ t, mset, account, backend, startLoading, stopLoading, toast, refresh }) => {
   const [img, setImg] = useState(mset.img)
