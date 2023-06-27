@@ -320,7 +320,7 @@ org:
     'algoliasearch': *algoliasearch
     'react-copy-to-clipboard': 5.1.0
     'daisyui': *daisyui
-    'jotai': &jotai '2.1.1'
+    'jotai': &jotai '2.2.1'
     'jotai-location': &jotai-location '0.5.1'
     'lodash.get': *_get
     'lodash.orderby': *_orderby
