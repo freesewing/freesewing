@@ -237,7 +237,7 @@ dev:
     'react-copy-to-clipboard': &reactCopyToClipboard '5.1.0'
     'react-dom': *react
     'react-hotkeys-hook': &reactHotkeysHook '4.4.0'
-    'react-instantsearch-dom': &reactInstantsearchDom '6.40.0'
+    'react-instantsearch-dom': &reactInstantsearchDom '6.40.1'
     'react-instantsearch-hooks-web': '6.45.0'
     'react-markdown': &reactMarkdown '8.0.7'
     'react-swipeable': &reactSwipeable '7.0.1'
