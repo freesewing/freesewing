@@ -80,6 +80,7 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
     // protect against loops
     if (!mounted) return
 
+    setMounted(true)
     const [ok, missing] = hasRequiredMeasurements(Design, settings.measurements)
     if (ok) setMissingMeasurements(false)
     // Force the measurements view if we have missing measurements
@@ -117,8 +118,11 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
     setControl: controlState.update,
   }
 
-  // Don't bother without a Design
-  if (!Design) return <ModalSpinner />
+  // wait for mount. this helps prevent hydration issues
+  if (!mounted) return <ModalSpinner />
+
+  // Warn that the design is somehow missing
+  if (!Design) return <ErrorView>{t('workbench.noDesignFound')}</ErrorView>
 
   // Short-circuit errors early
   if (error)
@@ -163,7 +167,8 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
       const layout = ui.layouts?.[view] || settings.layout || true
       // Generate the pattern here so we can pass it down to both the view and the options menu
       const pattern =
-        settings.measurements !== undefined && new Design({ layout, embed: true, ...settings })
+        (Design.patternConfig.measurements.length === 0 || settings.measurements !== undefined) &&
+        new Design({ layout, embed: true, ...settings })
 
       // Return early if the pattern is not initialized yet
       if (typeof pattern.getConfig !== 'function') return null
