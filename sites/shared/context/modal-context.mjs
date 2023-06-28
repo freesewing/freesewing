@@ -3,14 +3,14 @@ import React, { useState } from 'react'
 export const ModalContext = React.createContext(null)
 
 export const ModalContextProvider = ({ children }) => {
-  function clearModal(fromSwipe = false) {
+  function clearModal() {
     __setModal({
       ...__modal,
       modalContent: null,
     })
   }
 
-  function setModal(content, props = {}) {
+  function setModal(content) {
     __setModal({
       ...__modal,
       modalContent: content,
