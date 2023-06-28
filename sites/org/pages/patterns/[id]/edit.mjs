@@ -7,7 +7,7 @@ import { useDesign } from 'shared/hooks/use-design.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { Workbench, ns as wbNs } from 'shared/components/workbench/index.mjs'
+import { Workbench, ns as wbNs } from 'shared/components/workbench/new.mjs'
 import { WorkbenchLayout } from 'site/components/layouts/workbench.mjs'
 import { Null } from 'shared/components/null.mjs'
 import { DynamicOrgDocs as DynamicDocs } from 'site/components/dynamic-org-docs.mjs'
