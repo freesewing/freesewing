@@ -395,7 +395,7 @@ shared:
     'react-markdown': *reactMarkdown
     'react-sizeme': '3.0.2'
     'react-timeago': *reactTimeago
-    'react-zoom-pan-pinch': '3.0.8'
+    'react-zoom-pan-pinch': '3.1.0'
     'rehype-autolink-headings': *rehypeAutolinkHeadings
     'rehype-highlight': *rehypeHighlight
     'remark-frontmatter': '4.0.1'
