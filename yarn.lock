@@ -2741,21 +2741,21 @@
   resolved "https://registry.yarnpkg.com/@juggle/resize-observer/-/resize-observer-3.4.0.tgz#08d6c5e20cf7e4cc02fd181c4b0c225cd31dbb60"
   integrity sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==
 
-"@lerna/child-process@7.1.0":
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/@lerna/child-process/-/child-process-7.1.0.tgz#c3bde37e38822e0506e1ff3cda8b206417b2cf43"
-  integrity sha512-NmpwxygdVW2xprCNNgZ9d6P/pRlaXX2vfUynYNS+jsv7Q2uDZSdW86kjwEgbWyjSu7quZsmpQLqpl6PnfFl82g==
+"@lerna/child-process@7.1.1":
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/@lerna/child-process/-/child-process-7.1.1.tgz#60eddd6dc4b6ba0fd51851c78b6dbdc4e1614220"
+  integrity sha512-mR8PaTkckYPLmEBG2VsVsJq2UuzEvjXevOB1rKLKUZ/dPCGcottVhbiEzTxickc+s7Y/1dTTLn/1BKj3B1a5BA==
   dependencies:
     chalk "^4.1.0"
     execa "^5.0.0"
     strong-log-transformer "^2.1.0"
 
-"@lerna/create@7.1.0":
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/@lerna/create/-/create-7.1.0.tgz#0bf1911ca1bfd6cea9820aaeefe7fd1136f52a26"
-  integrity sha512-qmj1c9J9AmMdiZW7akK7PVhUK3rwHnOgOBrz7TL0eoHsCE9kda+5VWiKFKSyDqq2zSai+a5OZU/pfkaPm8FygA==
+"@lerna/create@7.1.1":
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/@lerna/create/-/create-7.1.1.tgz#2af94afb01971c1b594c06347b6998607aefe5c4"
+  integrity sha512-1PY2OgwGxp7b91JzLKEhONVl69mCt1IyYEc6pzKy3Sv+UOdeK2QFq1SX/85hNOR3iitiyZ75bNWUTcBly1ZlZg==
   dependencies:
-    "@lerna/child-process" "7.1.0"
+    "@lerna/child-process" "7.1.1"
     dedent "0.7.0"
     fs-extra "^11.1.1"
     init-package-json "5.0.0"
@@ -3599,21 +3599,6 @@
   dependencies:
     get-random-values-esm "^1.0.0"
     lodash "^4.17.21"
-
-"@sanity/cli@3.12.2":
-  version "3.12.2"
-  resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-3.12.2.tgz#97812bae4d017afcd801c27de28b4053af506ab6"
-  integrity sha512-4V9p8CQTmR5lpVFzs9Z7lSUDQ5zUP8snFiU0Iy+X8YM2Nk9XHhb2YEVYy+UdvPjFny4BMdfGIZew7XXmMbu5PA==
-  dependencies:
-    "@babel/traverse" "^7.19.0"
-    "@vercel/frameworks" "1.4.2"
-    "@vercel/fs-detectors" "3.9.2"
-    chalk "^4.1.2"
-    esbuild "^0.16.5"
-    esbuild-register "^3.4.1"
-    get-it "^8.0.9"
-    golden-fleece "^1.0.9"
-    pkg-dir "^5.0.0"
 
 "@sanity/cli@3.13.0":
   version "3.13.0"
@@ -12007,12 +11992,12 @@ leac@^0.6.0:
   integrity sha512-y+SqErxb8h7nE/fiEX07jsbuhrpO9lL8eca7/Y1nuWV2moNlXhyd59iDGcRf6moVyDMbmTNzL40SUyrFU/yDpg==
 
 lerna@^7.0.2:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/lerna/-/lerna-7.1.0.tgz#68855362c8a18f2c9ce14c01793076d2f7aea7c0"
-  integrity sha512-fY1EctsuP21eR7F9zmnqcdtBRkzvsoAOVYzjrtQQXYt9hlyA14RvjQJIF7R54t+T60As7kFYNgw2PHsC3orV2w==
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/lerna/-/lerna-7.1.1.tgz#6703062e6c4ddefdaf41e8890e9200690924fd71"
+  integrity sha512-rjivAl3bYu2+lWOi90vy0tYFgwBYPMiNkR/DuEWZC08wle5dsbOZ/SlXeLk9+kzbF89Bt5P6p+qF78A2tJsWPA==
   dependencies:
-    "@lerna/child-process" "7.1.0"
-    "@lerna/create" "7.1.0"
+    "@lerna/child-process" "7.1.1"
+    "@lerna/create" "7.1.1"
     "@npmcli/run-script" "6.0.2"
     "@nx/devkit" ">=16.1.3 < 17"
     "@octokit/plugin-enterprise-rest" "6.0.1"
@@ -17918,7 +17903,7 @@ semver@7.3.4:
   dependencies:
     lru-cache "^6.0.0"
 
-semver@7.5.2:
+semver@7.5.2, semver@^7.0.0, semver@^7.1.1, semver@^7.3.2, semver@^7.3.4, semver@^7.3.5, semver@^7.3.7, semver@^7.3.8, semver@^7.5.0:
   version "7.5.2"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.2.tgz#5b851e66d1be07c1cdaf37dfc856f543325a2beb"
   integrity sha512-SoftuTROv/cRjCze/scjGyiDtcUyxw1rgYQSZY7XTmtR5hX+dm76iDbTH8TkLPHCQmlbQVSSbNZCPM2hb0knnQ==
@@ -17929,13 +17914,6 @@ semver@^6.0.0, semver@^6.1.1, semver@^6.1.2, semver@^6.2.0, semver@^6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
-
-semver@^7.0.0, semver@^7.1.1, semver@^7.3.2, semver@^7.3.4, semver@^7.3.5, semver@^7.3.7, semver@^7.3.8, semver@^7.5.0:
-  version "7.5.0"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.0.tgz#ed8c5dc8efb6c629c88b23d41dc9bf40c1d96cd0"
-  integrity sha512-+XC0AD/R7Q2mPSRuy2Id0+CGTZ98+8f+KvwirxOKIEyid+XSx6HbC63p+O4IndTHuX5Z+JxQ0TghCkO5Cg/2HA==
-  dependencies:
-    lru-cache "^6.0.0"
 
 semver@~7.0.0:
   version "7.0.0"
