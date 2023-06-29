@@ -1,4 +1,4 @@
-import { useContext, useEffect, useMemo } from 'react'
+import { useContext, useMemo } from 'react'
 import { PanZoomContext } from 'shared/components/workbench/pattern/pan-zoom-context.mjs'
 import { useMobileAction } from 'shared/context/mobile-menubar-context.mjs'
 import { useTranslation } from 'next-i18next'
@@ -80,10 +80,12 @@ export const ViewHeader = ({ update, settings, ui, control, setSettings }) => {
   const { t } = useTranslation(ns)
   const { zoomFunctions, zoomed } = useContext(PanZoomContext)
 
+  // make the zoom buttons so we can pass them to the mobile menubar
   const headerZoomButtons = useMemo(
     () => <ZoomButtons {...{ t, zoomFunctions, zoomed }} />,
     [zoomed, t, zoomFunctions]
   )
+  // add the zoom buttons as an action on the mobile menubar
   useMobileAction('zoom', { order: 0, actionContent: headerZoomButtons })
 
   return (

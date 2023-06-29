@@ -76,6 +76,7 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
 
   const setView = useCallback(
     (newView) => {
+      // hacky little way to scroll to the top but keep the menu hidden if it was hidden
       const endScroll = Math.min(window.scrollY, 21)
       window.scrollTo({ top: 0, behavior: 'instant' })
       _setView(newView)

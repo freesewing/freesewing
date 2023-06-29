@@ -4,6 +4,7 @@ import { MenuWrapper } from 'shared/components/workbench/menus/shared/menu-wrapp
 
 export const ns = headerNs
 
+/** a layout for views that include a drafted pattern, a sidebar menu, and the draft view header */
 export const PatternWithMenu = ({
   settings,
   ui,

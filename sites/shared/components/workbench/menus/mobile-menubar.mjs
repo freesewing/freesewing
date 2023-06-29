@@ -5,18 +5,25 @@ import { CloseIcon } from 'shared/components/icons.mjs'
 import { MobileMenubarContext } from 'shared/context/mobile-menubar-context.mjs'
 import { shownHeaderSelector } from 'shared/components/wrappers/header.mjs'
 
+/**
+ * A component to display menu buttons and actions in mobile.
+ * Draws its contents from items added to the {@link MobileMenubarContext}
+ * @returns
+ */
 export const MobileMenubar = () => {
   const { setModal, clearModal, modalContent } = useContext(ModalContext)
   const { menus, actions } = useContext(MobileMenubarContext)
   const [selectedModal, setSelectedModal] = useState(false)
 
+  // get the content of the selected modal because this is what will be changing if there are updates
   const selectedMenu = menus[selectedModal]
 
+  // when the content changes, or the selection changes
   useEffect(() => {
     // there's no selected modal, we're in the clear
     if (!selectedModal) return
 
-    // otherwise, set the modal and keep an internal record of having opened it
+    // generate a new modal with the content
     const Modal = () => {
       const closeModal = () => {
         setSelectedModal(false)
@@ -40,9 +47,11 @@ export const MobileMenubar = () => {
       )
     }
 
+    // set it
     setModal(Modal)
   }, [selectedMenu, selectedModal, clearModal, setModal])
 
+  // clear the selection if the modal was cleared externally
   useEffect(() => {
     if (modalContent === null) {
       setSelectedModal(false)
@@ -52,14 +61,14 @@ export const MobileMenubar = () => {
   return (
     <div
       className={`
-    lg:hidden
-    ${shownHeaderSelector('bottom-16')} 
-    sticky bottom-0 w-20 -ml-20 self-end
-    duration-300 transition-all 
-    flex flex-col-reverse gap-4
-    z-20
-    mobile-menubar
-    `}
+      lg:hidden
+      ${shownHeaderSelector('bottom-16')} 
+      sticky bottom-0 w-20 -ml-20 self-end
+      duration-300 transition-all 
+      flex flex-col-reverse gap-4
+      z-20
+      mobile-menubar
+      `}
     >
       {Object.keys(menus)
         .sort((a, b) => menus[a].order - menus[b].order)
