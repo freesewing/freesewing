@@ -44,11 +44,11 @@ const IconButton = ({ Icon, onClick, dflt = true, title, hide = false, extraClas
 )
 
 const smZoomClasses =
-  '[.mobile-menubar_&]:btn [.mobile-menubar_&]:btn-secondary [.mobile-menubar_&]:btn-circle'
+  '[.mobile-menubar_&]:btn [.mobile-menubar_&]:btn-secondary [.mobile-menubar_&]:btn-circle [.mobile-menubar_&]:my-2'
 const ZoomButtons = ({ t, zoomFunctions, zoomed }) => {
   if (!zoomFunctions) return null
   return (
-    <div className="flex flex-col lg:flex-row items-center lg:content-center gap-4">
+    <div className="flex flex-col lg:flex-row items-center lg:content-center lg:gap-4">
       <IconButton
         Icon={ClearIcon}
         onClick={zoomFunctions.reset}

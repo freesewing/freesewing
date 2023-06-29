@@ -22,13 +22,13 @@ export const ModalWrapper = ({
   keepOpenOnSwipe = false,
 }) => {
   const { clearModal } = useContext(ModalContext)
-  const [animate, setAnimate] = useState(true)
+  const [animate, setAnimate] = useState('in')
 
   const close = (evt) => {
     // Only process the first swipe event
     if (evt?.event) evt.event.stopPropagation()
-    setAnimate(true)
-    window.setTimeout(() => clearModal(), 150)
+    setAnimate('out')
+    window.setTimeout(clearModal, 150)
   }
 
   const swipeActions = {}
@@ -45,8 +45,9 @@ export const ModalWrapper = ({
   })
 
   useEffect(() => {
-    if (animate) setAnimate(false)
-  }, [children, animate])
+    // only turn off animation if it's animating in
+    if (animate === 'in') setAnimate(false)
+  }, [animate])
 
   // CSS classes for animation
   const animation = animate

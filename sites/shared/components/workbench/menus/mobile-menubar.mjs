@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect, useCallback, useMemo } from 'react'
+import { useContext, useState, useEffect } from 'react'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { CloseIcon } from 'shared/components/icons.mjs'
@@ -12,34 +12,36 @@ export const MobileMenubar = () => {
 
   const selectedMenu = menus[selectedModal]
 
-  const Modal = useCallback(() => {
-    const closeModal = () => {
-      setSelectedModal(false)
-      clearModal()
-    }
-
-    return (
-      <ModalWrapper
-        slideFrom="right"
-        keepOpenOnClick={selectedMenu.keepOpenOnClick}
-        keepOpenOnSwipe
-      >
-        <div className="mb-16">{selectedMenu.menuContent}</div>
-        <button
-          className="btn btn-accent btn-circle fixed bottom-4 right-4 z-20"
-          onClick={closeModal}
-        >
-          <CloseIcon />
-        </button>
-      </ModalWrapper>
-    )
-  }, [selectedMenu, clearModal])
-
   useEffect(() => {
+    // there's no selected modal, we're in the clear
     if (!selectedModal) return
 
+    // otherwise, set the modal and keep an internal record of having opened it
+    const Modal = () => {
+      const closeModal = () => {
+        setSelectedModal(false)
+        clearModal()
+      }
+
+      return (
+        <ModalWrapper
+          slideFrom="right"
+          keepOpenOnClick={selectedMenu.keepOpenOnClick}
+          keepOpenOnSwipe
+        >
+          <div className="mb-16">{selectedMenu.menuContent}</div>
+          <button
+            className="btn btn-accent btn-circle fixed bottom-4 right-4 z-20"
+            onClick={closeModal}
+          >
+            <CloseIcon />
+          </button>
+        </ModalWrapper>
+      )
+    }
+
     setModal(Modal)
-  }, [selectedModal, Modal, setModal])
+  }, [selectedMenu, selectedModal, clearModal, setModal])
 
   useEffect(() => {
     if (modalContent === null) {

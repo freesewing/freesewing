@@ -74,5 +74,5 @@ export const useMobileAction = (key, content) => {
     addAction(key, content)
 
     return () => removeAction(key)
-  }, [content, key, addAction, removeAction])
+  }, [...Object.values(content), key, addAction, removeAction])
 }
