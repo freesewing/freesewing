@@ -17,7 +17,7 @@ function senyaBottom({
   part,
   log,
 }) {
-  let topCircumverence = measurements.waist
+  let topCircumverence = measurements.underbust
   let fullLength =
     measurements.hpsToWaistBack -
     waistlineHeight(
