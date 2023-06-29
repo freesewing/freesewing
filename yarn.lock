@@ -3616,9 +3616,9 @@
     pkg-dir "^5.0.0"
 
 "@sanity/client@^6.0.0", "@sanity/client@^6.1.1", "@sanity/client@^6.1.2":
-  version "6.1.3"
-  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-6.1.3.tgz#94b87b1de78b041fb85cc489fefc03304c353e3b"
-  integrity sha512-asO/AvN+/D1Ljd6UNPWlo/toeO6SmZdsxyl+fJdLfI9by4svp/K3hD4Qy2DXXmwOfGYqGSH7etv2lnRhu+C5YA==
+  version "6.1.4"
+  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-6.1.4.tgz#cdaa43974724375a30e6cf31a43548566d11fd2e"
+  integrity sha512-4kmzbexANM6eHQevgtaqFbzQLXtK1oXsSr7ED2ztp8LQbt4aryruEvQavbiQ91m4Dfi78uLhBQ2fV5lPEPVNFw==
   dependencies:
     "@sanity/eventsource" "^5.0.0"
     get-it "^8.1.0"
