@@ -7,7 +7,7 @@ import { shownHeaderSelector } from 'shared/components/wrappers/header.mjs'
 
 export const MobileMenubar = () => {
   const { setModal, clearModal, modalContent } = useContext(ModalContext)
-  const { menus } = useContext(MobileMenubarContext)
+  const { menus, actions } = useContext(MobileMenubarContext)
   const [selectedModal, setSelectedModal] = useState(false)
 
   const selectedMenu = menus[selectedModal]
@@ -24,7 +24,7 @@ export const MobileMenubar = () => {
         keepOpenOnClick={selectedMenu.keepOpenOnClick}
         keepOpenOnSwipe
       >
-        <div className="mb-16">{selectedMenu.MenuContent}</div>
+        <div className="mb-16">{selectedMenu.menuContent}</div>
         <button
           className="btn btn-accent btn-circle fixed bottom-4 right-4 z-20"
           onClick={closeModal}
@@ -53,7 +53,10 @@ export const MobileMenubar = () => {
     lg:hidden
     ${shownHeaderSelector('bottom-16')} 
     sticky bottom-0 w-20 -ml-20 self-end
-    duration-300 transition-all flex flex-col-reverse
+    duration-300 transition-all 
+    flex flex-col-reverse gap-4
+    z-20
+    mobile-menubar
     `}
     >
       {Object.keys(menus)
@@ -63,13 +66,18 @@ export const MobileMenubar = () => {
           return (
             <button
               key={m}
-              className="btn btn-accent btn-circle mx-4 my-2 z-20"
+              className="btn btn-accent btn-circle mx-4"
               onClick={() => setSelectedModal(m)}
             >
               <Icon />
             </button>
           )
         })}
+      {Object.keys(actions)
+        .sort((a, b) => actions[a].order - actions[b].order)
+        .map((a) => (
+          <div key={a}>{actions[a].actionContent}</div>
+        ))}
     </div>
   )
 }

@@ -14,7 +14,7 @@ export const MenuWrapper = ({
   const menuProps = useMemo(
     () => ({
       Icon,
-      MenuContent: children,
+      menuContent: children,
       keepOpenOnClick,
       type,
       order,

@@ -1,5 +1,6 @@
-import { useContext } from 'react'
+import { useContext, useEffect, useMemo } from 'react'
 import { PanZoomContext } from 'shared/components/workbench/pattern/pan-zoom-context.mjs'
+import { useMobileAction } from 'shared/context/mobile-menubar-context.mjs'
 import { useTranslation } from 'next-i18next'
 import {
   PaperlessIcon,
@@ -28,13 +29,13 @@ const ZoomOutIcon = (props) => (
   </IconWrapper>
 )
 
-const IconButton = ({ Icon, onClick, dflt = true, title, hide = false }) => (
+const IconButton = ({ Icon, onClick, dflt = true, title, hide = false, extraClasses = '' }) => (
   <div className="tooltip tooltip-bottom tooltip-primary flex items-center" data-tip={title}>
     <button
       onClick={onClick}
       className={`text-${dflt ? 'neutral-content' : 'accent'} hover:text-secondary-focus ${
         hide ? 'invisible' : ''
-      }`}
+      } ${extraClasses}`}
       title={title}
     >
       <Icon />
@@ -42,29 +43,32 @@ const IconButton = ({ Icon, onClick, dflt = true, title, hide = false }) => (
   </div>
 )
 
-const ZoomButtons = ({ t }) => {
-  const { zoomFunctions, zoomed } = useContext(PanZoomContext)
-
+const smZoomClasses =
+  '[.mobile-menubar_&]:btn [.mobile-menubar_&]:btn-secondary [.mobile-menubar_&]:btn-circle'
+const ZoomButtons = ({ t, zoomFunctions, zoomed }) => {
   if (!zoomFunctions) return null
   return (
-    <div className="flex flex-row content-center gap-4">
+    <div className="flex flex-col lg:flex-row items-center lg:content-center gap-4">
       <IconButton
         Icon={ClearIcon}
         onClick={zoomFunctions.reset}
         title={t('resetZoom')}
         hide={!zoomed}
+        extraClasses={smZoomClasses}
       />
       <IconButton
         Icon={ZoomOutIcon}
         onClick={() => zoomFunctions.zoomOut()}
         title={t('zoomOut')}
         dflt
+        extraClasses={smZoomClasses}
       />
       <IconButton
         Icon={ZoomInIcon}
         onClick={() => zoomFunctions.zoomIn()}
         title={t('zoomIn')}
         dflt
+        extraClasses={smZoomClasses}
       />
     </div>
   )
@@ -74,12 +78,22 @@ const Spacer = () => <span className="opacity-50">|</span>
 
 export const ViewHeader = ({ update, settings, ui, control, setSettings }) => {
   const { t } = useTranslation(ns)
+  const { zoomFunctions, zoomed } = useContext(PanZoomContext)
+
+  const headerZoomButtons = useMemo(
+    () => <ZoomButtons {...{ t, zoomFunctions, zoomed }} />,
+    [zoomed, t, zoomFunctions]
+  )
+  useMobileAction('zoom', { order: 0, actionContent: headerZoomButtons })
+
   return (
     <div
-      className={`hidden lg:flex sticky top-0 z-20 lg:${shownHeaderSelector}top-24 transition-[top] duration-300 ease-in-out`}
+      className={`hidden lg:flex sticky top-0 z-20 ${shownHeaderSelector(
+        'lg:top-24'
+      )} transition-[top] duration-300 ease-in-out`}
     >
       <div className="hidden lg:flex flex-row flex-wrap gap-4 py-4 pt-4 w-full bg-neutral text-neutral-content items-center justify-center">
-        <ZoomButtons t={t} />
+        {headerZoomButtons}
         <Spacer />
         <div className="flex flex-row items-center gap-4">
           <IconButton
