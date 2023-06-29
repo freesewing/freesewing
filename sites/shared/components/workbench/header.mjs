@@ -171,6 +171,8 @@ export const WorkbenchHeader = ({ view, setView }) => {
         ${dense ? '-ml-52' : 'ml-0'}`}
       buttonClass={`order-last bottom-16`}
       keepOpenOnClick={false}
+      order={0}
+      type="nav"
     >
       <header
         className={`

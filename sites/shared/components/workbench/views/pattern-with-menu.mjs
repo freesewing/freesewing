@@ -30,7 +30,7 @@ export const PatternWithMenu = ({
           {title}
           {pattern}
         </div>
-        {menu && <MenuWrapper>{menu}</MenuWrapper>}
+        {menu && <MenuWrapper order={1}>{menu}</MenuWrapper>}
       </div>
     </div>
   </PanZoomContextProvider>

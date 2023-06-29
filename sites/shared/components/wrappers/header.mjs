@@ -25,4 +25,8 @@ export const HeaderWrapper = ({ show, children }) => {
   )
 }
 
-export const shownHeaderSelector = 'group-[.header-shown]/layout:'
+const shownHeaderClasses = {
+  'bottom-16': 'group-[.header-shown]/layout:bottom-16',
+}
+
+export const shownHeaderSelector = (cls) => shownHeaderClasses[cls]

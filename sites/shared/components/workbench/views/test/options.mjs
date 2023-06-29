@@ -42,6 +42,7 @@ export const SampleItem = ({ name, passProps, t, updateFunc }) => {
           type="radio"
           checked={checked}
           className="radio radio-primary mr-2 radio-sm"
+          readOnly
         />
         <span className="ml-2">{t([name + '.t', name])}</span>
       </div>
