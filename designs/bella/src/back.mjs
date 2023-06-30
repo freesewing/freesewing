@@ -37,7 +37,7 @@ export const back = {
     bustDartLength: { pct: 90, min: 75, max: 100, menu: 'darts' },
     waistDartLength: { pct: 90, min: 75, max: 100, menu: 'darts' },
     bustDartAngle: { count: 0, min: -20, max: 55, menu: 'darts' },
-    waistDartCurve: { pct: 100, min: 0, max: 100, menu: 'darts' },
+    waistDartCurve: { pct: 100, min: -100, max: 100, menu: 'darts' },
     // Armhole
     armholeDepth: { pct: 44, min: 38, max: 46, menu: 'armhole' },
     backArmholeCurvature: { pct: 63, min: 50, max: 85, menu: 'armhole' },

@@ -184,12 +184,26 @@ export const frontSideDart = {
     )
     points.waistDartLeftCp = points.waistDartLeft.shift(
       90,
-      (points.waistDartHem.dist(points.bust) / 2) * options.waistDartCurve
+      points.waistDartHem.dist(points.bust) / 2
     )
     points.waistDartRightCp = points.waistDartRight.shift(
       90,
-      (points.waistDartHem.dist(points.bust) / 2) * options.waistDartCurve
+      points.waistDartHem.dist(points.bust) / 2
     )
+
+    // Modify waist dart curvature per options
+    points.waistDartLeftMid = new Path()
+      .move(points.bust)
+      .line(points.waistDartLeft)
+      .shiftFractionAlong(0.5)
+    points.waistDartRightMid = new Path()
+      .move(points.bust)
+      .line(points.waistDartRight)
+      .shiftFractionAlong(0.5)
+    const waistDartCpWidth =
+      points.waistDartLeftMid.dist(points.waistDartLeftCp) * options.waistDartCurve
+    points.waistDartLeftCp.x = points.waistDartLeftMid.x - waistDartCpWidth
+    points.waistDartRightCp.x = points.waistDartRightMid.x + waistDartCpWidth
 
     paths.seam = new Path()
       .move(points.cfHem)
