@@ -285,6 +285,7 @@ lab:
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
+    'lodash.debouce': '^4.0.8'
     'next': *next
     'next-i18next': &nextI18next '14.0.0'
     'react': *react
@@ -393,7 +394,6 @@ shared:
     'react': *react
     'react-dom': *react
     'react-markdown': *reactMarkdown
-    'react-sizeme': '3.0.2'
     'react-timeago': *reactTimeago
     'react-zoom-pan-pinch': '3.1.0'
     'rehype-autolink-headings': *rehypeAutolinkHeadings

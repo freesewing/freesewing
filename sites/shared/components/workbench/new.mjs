@@ -1,5 +1,5 @@
 // Hooks
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useView } from 'shared/hooks/use-view.mjs'
 import { usePatternSettings } from 'shared/hooks/use-pattern-settings.mjs'
@@ -13,6 +13,7 @@ import { objUpdate, hasRequiredMeasurements } from 'shared/utils.mjs'
 import { WorkbenchHeader } from './header.mjs'
 import { ErrorView } from 'shared/components/error/view.mjs'
 import { ModalSpinner } from 'shared/components/modal/spinner.mjs'
+import { MobileMenubar } from './menus/mobile-menubar.mjs'
 // Views
 import { DraftView, ns as draftNs } from 'shared/components/workbench/views/draft/index.mjs'
 import { SaveView, ns as saveNs } from 'shared/components/workbench/views/save/index.mjs'
@@ -66,12 +67,23 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
   const controlState = useControlState()
 
   // State
-  const [view, setView] = useView()
+  const [view, _setView] = useView()
   const [settings, setSettings] = usePatternSettings()
   const [ui, setUi] = useState(defaultUi)
   const [error, setError] = useState(false)
   const [mounted, setMounted] = useState(false)
   const [missingMeasurements, setMissingMeasurements] = useState(false)
+
+  const setView = useCallback(
+    (newView) => {
+      // hacky little way to scroll to the top but keep the menu hidden if it was hidden
+      const endScroll = Math.min(window.scrollY, 21)
+      window.scrollTo({ top: 0, behavior: 'instant' })
+      _setView(newView)
+      window.scroll({ top: endScroll })
+    },
+    [_setView]
+  )
 
   // set mounted on mount
   useEffect(() => setMounted(true), [setMounted])
@@ -126,6 +138,7 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
       <>
         <WorkbenchHeader {...{ view, setView, update }} />
         {error}
+        <MobileMenubar />
       </>
     )
 
@@ -193,11 +206,10 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
   }
 
   return (
-    <div className="flex flex-row">
-      <div className="grow-no shrink-no">
-        <WorkbenchHeader {...{ view, setView, update }} />
-      </div>
+    <div className="flex flex-row min-h-screen">
+      <WorkbenchHeader {...{ view, setView, update }} />
       <div className="grow">{viewContent}</div>
+      <MobileMenubar />
     </div>
   )
 }

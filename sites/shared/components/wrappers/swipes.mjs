@@ -3,8 +3,15 @@ import { useSwipeable } from 'react-swipeable'
 import { useHotkeys } from 'react-hotkeys-hook'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 
+const checkEvent = (evt) => {
+  // don't stop events on the pan-zoom-pattern
+  if (evt.event.target.closest('.pan-zoom-pattern') === null) {
+    evt.event.stopPropagation()
+  }
+}
+
 /* This component should wrap all swipeable content */
-export const SwipeWrapper = ({ children, app }) => {
+export const SwipeWrapper = ({ children }) => {
   const { clearModal } = useContext(ModalContext) || {}
 
   /*
@@ -13,12 +20,12 @@ export const SwipeWrapper = ({ children, app }) => {
   const swipeHandlers = useSwipeable({
     onSwipedLeft: (evt) => {
       // Only process the first swipe event
-      evt.event.stopPropagation()
-      clearModal()
+      checkEvent(evt)
+      // clearModal()
     },
     onSwipedRight: (evt) => {
       // Only process the first swipe event
-      evt.event.stopPropagation()
+      checkEvent(evt)
       // FIXME: Make this not be such a PITA
       //setModal(<ModalMenu app={app} />)
     },

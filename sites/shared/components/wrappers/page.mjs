@@ -94,7 +94,7 @@ export const PageWrapper = (props) => {
         <LayoutWrapper {...childProps}>
           {Layout ? <Layout {...childProps}>{children}</Layout> : children}
         </LayoutWrapper>
-        {modalContent}
+        {typeof modalContent === 'function' ? modalContent() : modalContent}
       </div>
     </SwipeWrapper>
   )

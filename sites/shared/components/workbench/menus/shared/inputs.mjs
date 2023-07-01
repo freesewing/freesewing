@@ -1,6 +1,7 @@
-import { useCallback, useMemo } from 'react'
+import { useCallback, useMemo, useState, useEffect } from 'react'
 import { round, measurementAsMm, measurementAsUnits, formatFraction128 } from 'shared/utils.mjs'
 import { ChoiceButton } from 'shared/components/choice-button.mjs'
+import debounce from 'lodash.debounce'
 
 /*******************************************************************************************
  * This file contains the base components to be used by inputs in menus in the workbench
@@ -44,7 +45,6 @@ const useSharedHandlers = ({ dflt, updateFunc, name }) => {
   return useCallback(
     (newCurrent) => {
       if (newCurrent === dflt) newCurrent = undefined
-
       updateFunc([name], newCurrent)
     },
     [dflt, updateFunc, name]
@@ -138,6 +138,35 @@ export const BoolInput = (props) => {
   return <ListInput {...props} config={boolConfig} />
 }
 
+export const useDebouncedHandlers = ({ handleChange, changed, current, config }) => {
+  // hold onto what we're showing as the value so that the input doesn't look unresponsive
+  const [displayVal, setDisplayVal] = useState(changed ? current : config.dflt)
+
+  // the debounce function needs to be it's own memoized value so we can flush it on unmount
+  const debouncer = useMemo(() => debounce(handleChange, 200), [handleChange])
+
+  // this is the change handler
+  const debouncedHandleChange = useCallback(
+    (newVal) => {
+      // always set the display
+      setDisplayVal(newVal)
+      // debounce the actual update
+      debouncer(newVal)
+    },
+    [setDisplayVal, debouncer]
+  )
+
+  // immediately call the debounced function on unmount so we don't miss an update
+  useEffect(() => debouncer.flush, [debouncer])
+
+  // set the display val to the current value when it gets changed
+  useEffect(() => {
+    setDisplayVal(changed ? current : config.dflt)
+  }, [changed, current, config])
+
+  return { debouncedHandleChange, displayVal }
+}
+
 /**
  * An input component that uses a slider to change a number value
  * @param  {String}   options.name         the name of the property being changed by the input
@@ -172,7 +201,12 @@ export const SliderInput = ({
     setReset,
   })
 
-  let currentOrDefault = changed ? current : config.dflt
+  const { debouncedHandleChange, displayVal } = useDebouncedHandlers({
+    handleChange,
+    current,
+    changed,
+    config,
+  })
 
   return (
     <>
@@ -181,8 +215,8 @@ export const SliderInput = ({
         {override ? (
           <EditCount
             {...{
-              current: currentOrDefault,
-              handleChange: (evt) => handleChange(evt.target.value),
+              current: displayVal,
+              handleChange: (evt) => debouncedHandleChange(evt.target.value),
               min,
               max,
               t,
@@ -195,10 +229,10 @@ export const SliderInput = ({
             </span>
             <span
               className={`font-bold ${
-                currentOrDefault === config.dflt ? 'text-secondary' : 'text-accent'
+                displayVal === config.dflt ? 'text-secondary' : 'text-accent'
               }`}
             >
-              <span dangerouslySetInnerHTML={{ __html: valFormatter(currentOrDefault) + suffix }} />
+              <span dangerouslySetInnerHTML={{ __html: valFormatter(displayVal) + suffix }} />
             </span>
             <span className="opacity-50">
               <span dangerouslySetInnerHTML={{ __html: valFormatter(max) + suffix }} />
@@ -208,11 +242,11 @@ export const SliderInput = ({
       </div>
       <input
         type="range"
-        {...{ min, max, value: currentOrDefault, step: config.step || 0.1 }}
-        onChange={(evt) => handleChange(evt.target.value)}
+        {...{ min, max, value: displayVal, step: config.step || 0.1 }}
+        onChange={(evt) => debouncedHandleChange(evt.target.value)}
         className={`
           range range-sm mt-1
-          ${currentOrDefault === config.dflt ? 'range-secondary' : 'range-accent'}
+          ${changed ? 'range-accent' : 'range-secondary'}
         `}
       />
       {children}

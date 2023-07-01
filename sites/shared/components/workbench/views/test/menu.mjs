@@ -24,7 +24,7 @@ export const TestMenu = ({
   }
 
   return (
-    <nav className="grow mb-12">
+    <nav>
       <TestOptions {...menuProps} />
       <TestMeasurements {...menuProps} />
     </nav>
