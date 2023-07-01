@@ -34,4 +34,17 @@ const Magde = new Design({
 })
 
 // Named exports
-export { bodyLiner, Magde }
+export {
+  backPanel,
+  frontPanel,
+  frontOrganiserBase,
+  frontOrganiserFront,
+  lidOnePiece,
+  twoPieceLidTop,
+  twoPieceLidBottom,
+  strapAttachments,
+  bodyLiner,
+  sidePanel,
+  internalOrganiser,
+  Magde,
+}
