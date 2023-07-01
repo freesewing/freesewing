@@ -36,7 +36,7 @@
     "@next/bundle-analyzer": "13.4.7",
     "@tailwindcss/typography": "0.5.9",
     "algoliasearch": "4.18.0",
-    "daisyui": "3.1.6",
+    "daisyui": "3.1.7",
     "lodash.get": "4.4.2",
     "lodash.orderby": "4.6.0",
     "lodash.set": "4.3.2",
