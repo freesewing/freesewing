@@ -2,6 +2,7 @@
   "t": "Bent body Block",
   "d": "This two-part sleeve block is the basis of our coat and jacket patterns.",
   "p": {
+    "sleeve": "Sleeve",
     "topSleeve": "Topsleeve",
     "underSleeve": "Undersleeve"
   },

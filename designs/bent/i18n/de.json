@@ -2,6 +2,7 @@
   "t": "Bent, ein Grundschnitt",
   "d": "Dieser zweiteilige Ärmel-Grundschnitt ist die Grundlage für unsere Mäntel- und Jackenschnitte.",
   "p": {
+    "sleeve": "Sleeve",
     "topSleeve": "Oberärmel",
     "underSleeve": "Unterärmel"
   },

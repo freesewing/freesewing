@@ -2,6 +2,7 @@
   "t": "Bent, patrón base de chaqueta",
   "d": "Este patrón base con mangas de dos partes es la base de nuestros patrones de chaqueta y abrigo.",
   "p": {
+    "sleeve": "Sleeve",
     "topSleeve": "Manga superior",
     "underSleeve": "Manga debajo"
   },
