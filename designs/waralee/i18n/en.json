@@ -7,6 +7,7 @@
     "facings": "Facings",
     "mini": "Mini",
     "pants": "Pants",
+    "pantsProto": "FIXME: Give this part a name",
     "pocket": "Pocket",
     "strapBack": "Strap back",
     "strapFront": "Strap front",
@@ -70,6 +71,26 @@
     "backRaise": {
       "t": "Back Raise",
       "d": "This setting raises the waist in the back. Our waist does not sit horizontally, but is angled up at the back. This seting allows you to raise this in the back if you need it for a good fit."
+    },
+    "fitWaist": {
+      "t": "FIXME: Give this option a name",
+      "d": "FIXME: Give this option a description"
+    },
+    "frontPocketStyle": {
+      "t": "FIXME: Give this option a name",
+      "d": "FIXME: Give this option a description"
+    },
+    "knotInFront": {
+      "t": "FIXME: Give this option a name",
+      "d": "FIXME: Give this option a description"
+    },
+    "separateWaistband": {
+      "t": "FIXME: Give this option a name",
+      "d": "FIXME: Give this option a description"
+    },
+    "showMini": {
+      "t": "FIXME: Give this option a name",
+      "d": "FIXME: Give this option a description"
     }
   }
 }
