@@ -14,7 +14,15 @@ const Aaron = new Design({
 // Merge translations
 const i18n = mergeI18n([brianI18n, aaronI18n], {
   p: { keep: ['front', 'back'] },
-  o: { keep: [...Object.keys(back.options), ...Object.keys(front.options)] },
+  o: {
+    keep: [
+      ...Object.keys(back.options),
+      ...Object.keys(front.options),
+      'cuffEase',
+      's3Collar',
+      's3Armhole',
+    ],
+  },
   s: { drop: [] },
 })
 
