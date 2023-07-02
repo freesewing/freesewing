@@ -18,6 +18,8 @@ import { chestPocketBag } from './chestpocketbag.mjs'
 import { innerPocketWelt } from './innerpocketwelt.mjs'
 import { innerPocketBag } from './innerpocketbag.mjs'
 import { innerPocketTab } from './innerpockettab.mjs'
+// Translation
+import { i18n } from '../i18n/index.mjs'
 
 // Create design
 const Carlton = new Design({
@@ -63,4 +65,5 @@ export {
   innerPocketBag,
   innerPocketTab,
   Carlton,
+  i18n,
 }
