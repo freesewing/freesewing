@@ -1,8 +1,0 @@
----
-shoulderSeamLength:
-  title: Longitud de la costura de hombro
-  description: Controla la longitud de la costura de hombro
-drapeAngle:
-  title: Ángulo del drapeado
-  description: Controla la cantidad de drapeado
-
