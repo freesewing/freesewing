@@ -68,6 +68,22 @@
     "pocketAngle": {
       "t": "Pocket angle",
       "d": "Angle of the pocket slant"
+    },
+    "buttons": {
+      "t": "Buttons",
+      "d": "The amount of buttons to use."
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls the amount of ease at the waist."
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at the hips."
+    },
+    "centerBackDart": {
+      "t": "Center back dart",
+      "d": "Whether or not to include a center back dart to fit a rounded back."
     }
   }
 }
