@@ -21,6 +21,10 @@
       "t": "Front pockets",
       "d": "Whether or not to add front pockets on the side seam"
     },
+    "frontPocketFlapSize": {
+      "t": "Front pocket flap size",
+      "d": "This option controls the front pocket flap size, but it is not exposed to the UI"
+    },
     "backPockets": {
       "t": "Back pockets",
       "d": "Whether or not to add welt pockets to the back"
