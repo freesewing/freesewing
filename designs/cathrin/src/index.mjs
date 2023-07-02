@@ -10,6 +10,8 @@ import { panel6 } from './panel6.mjs'
 // Skeleton parts for export
 import { base } from './base.mjs'
 import { panels } from './panels.mjs'
+// Translation
+import { i18n } from '../i18n/index.mjs'
 
 // Create design
 const Cathrin = new Design({
@@ -18,4 +20,4 @@ const Cathrin = new Design({
 })
 
 // Named exports
-export { base, panels, panel1, panel2, panel3, panel4, panel5, panel6, Cathrin }
+export { base, panels, panel1, panel2, panel3, panel4, panel5, panel6, Cathrin, i18n }
