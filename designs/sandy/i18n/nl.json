@@ -31,6 +31,10 @@
       "t": "Fronsen",
       "d": "Met hoeveel procent de bovenrand van de rok langer is dan de onderrand van de tailleband."
     },
+    "lengthBonus": {
+      "t": "Length bonus",
+      "d": "Determines how long the skirt will be."
+    },
     "seamlessFullCircle": {
       "t": "Naadloze volledige cirkel",
       "d": "Maakt een naadloze volle cirkelrok mogelijk."

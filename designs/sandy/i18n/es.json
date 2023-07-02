@@ -31,6 +31,10 @@
       "t": "Fruncido",
       "d": "El porcentaje por el que la parte superior de la falda es más largo que la parte inferior de la cinturilla."
     },
+    "lengthBonus": {
+      "t": "Length bonus",
+      "d": "Determines how long the skirt will be."
+    },
     "seamlessFullCircle": {
       "t": "Círculo completo sin costura",
       "d": "Permite una falda de círculo completo sin costuras."

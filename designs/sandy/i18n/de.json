@@ -31,6 +31,10 @@
       "t": "Kräuseln",
       "d": "Der Prozentsatz um welcher die Oberkante des Rockteils länger ist als die Unterkante des Bundes."
     },
+    "lengthBonus": {
+      "t": "Length bonus",
+      "d": "Determines how long the skirt will be."
+    },
     "seamlessFullCircle": {
       "t": "Nahtloser Vollkreis",
       "d": "Aktiviert einen nahtlosen Vollkreis für das Rockteil."

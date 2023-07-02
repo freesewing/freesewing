@@ -31,6 +31,10 @@
       "t": "Gathering",
       "d": "The percent by which the top of the skirt is longer than the bottom of the waistband."
     },
+    "lengthBonus": {
+      "t": "Length bonus",
+      "d": "Determines how long the skirt will be."
+    },
     "seamlessFullCircle": {
       "t": "Seamless full circle",
       "d": "Enables a seamless full circle skirt."

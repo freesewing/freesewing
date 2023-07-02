@@ -31,6 +31,10 @@
       "t": "Fronçage",
       "d": "Le pourcent par lequel le tissu du haut de la jupe est plus long que celui du bas de la ceinture."
     },
+    "lengthBonus": {
+      "t": "Length bonus",
+      "d": "Determines how long the skirt will be."
+    },
     "seamlessFullCircle": {
       "t": "Cercle entier sans couture",
       "d": "Permet une jupe totalement circulaire sans couture."
