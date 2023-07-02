@@ -166,6 +166,22 @@
     "hemRadius": {
       "t": "Hem radius",
       "d": "The amount by which the hem is rounded"
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at your hips"
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls the amount of ease at your waist"
+    },
+    "buttons": {
+      "t": "Number of buttons",
+      "d": "Controls the amount of buttons"
+    },
+    "collarRoll": {
+      "t": "Collar roll",
+      "d": "Controls the amount of roll in the collar; how much the topcollar is higher than the undercollar."
     }
   }
 }
