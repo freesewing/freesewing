@@ -1,6 +1,6 @@
 {
-  "t": "Haut Breanna",
-  "d": "Breanna est un bloc corporel de base pour les personnes qui ont un sein.",
+  "t": "Breanna body block",
+  "d": "Breanna is a basic body block for people with breasts.",
   "p": {
     "back": "Back",
     "base": "Base",
@@ -11,57 +11,181 @@
   },
   "s": {},
   "o": {
+    "acrossBackFactor": {
+      "t": "Across back factor",
+      "d": "Controls your across back width as a factor of your shoulder to shoulder measurement."
+    },
+    "armholeDepthFactor": {
+      "t": "Armhole depth factor",
+      "d": "Controls the depth of the armhole. Higher values make a deeper armhole."
+    },
+    "backNeckCutout": {
+      "t": "Back neck cutout",
+      "d": "How deep the neck is cut out at the back"
+    },
+    "bicepsEase": {
+      "t": "Biceps ease",
+      "d": "The amount of ease at your upper arm. Note that while we try to respect this, fitting the sleeve to the armhole takes precedence over respecting the exact amount of ease."
+    },
+    "collarEase": {
+      "t": "Collar ease",
+      "d": "The amount of ease around your neck"
+    },
+    "chestEase": {
+      "t": "Chest ease",
+      "d": "The amount of ease at your chest."
+    },
+    "cuffEase": {
+      "t": "Cuff ease",
+      "d": "The amount of ease at your wrist."
+    },
+    "frontArmholeDeeper": {
+      "t": "Front armhole extra cutout",
+      "d": "How much do you want the front armhole to be cut out deeper than the back."
+    },
+    "frontScyeDart": {
+      "t": "Front scye dart",
+      "d": "Controls the dart at the front of the arm opening. This can help control gaping at the armhole."
+    },
     "shoulderDart": {
-      "t": "Pince d'épaule",
-      "d": "S'il faut ou non inclure une pince à l'épaule pour arrondir le dos"
+      "t": "Shoulder dart",
+      "d": "Whether or not to inlude a dart at the shoulder to round the back"
     },
     "shoulderDartSize": {
-      "t": "Taille de la pince de l'épaule",
-      "d": "La taille de la pince d'épaule"
+      "t": "Shoulder dart size",
+      "d": "The size of the shoulder dart"
     },
     "shoulderDartLength": {
-      "t": "Longueur de la pince de l'épaule",
-      "d": "La longueur de la pince d'épaule"
+      "t": "Shoulder dart length",
+      "d": "The length of the shoulder dart"
+    },
+    "shoulderEase": {
+      "t": "Shoulder ease",
+      "d": "The amount of ease at your shoulder. This increases the shoulder to shoulder distance to accommodate additional layers or thickness."
+    },
+    "shoulderSlopeReduction": {
+      "t": "Shoulder slope reduction",
+      "d": "The amount by which the shoulder slope is reduced to allow for shoulder padding."
+    },
+    "sleeveLengthBonus": {
+      "t": "Sleeve length bonus",
+      "d": "The amount to lengthen the sleeve. A negative value will shorten it."
+    },
+    "sleevecapEase": {
+      "t": "Sleevecap ease",
+      "d": "The amount by which the sleevecap seam is longer than the armhole seam."
+    },
+    "sleevecapTopFactorX": {
+      "t": "Sleevecap top X",
+      "d": "Controls the horizontal location of the sleevecap top."
+    },
+    "sleevecapTopFactorY": {
+      "t": "Sleevecap top Y",
+      "d": "Controls the height of the sleevecap. A higher value results in a higher and more narrow sleevecap."
+    },
+    "sleevecapBackFactorX": {
+      "t": "Sleevecap back X",
+      "d": "Controls the placement of the sleevecap back pitchpoint on the X-axis (horizontal)"
+    },
+    "sleevecapBackFactorY": {
+      "t": "Sleevecap back Y",
+      "d": "Controls the placement of the sleevecap back pitchpoint on the Y-axis (vertical)"
+    },
+    "sleevecapFrontFactorX": {
+      "t": "Sleevecap front X",
+      "d": "Controls the placement of the sleevecap front pitchpoint on the X-axis (horizontal)"
+    },
+    "sleevecapFrontFactorY": {
+      "t": "Sleevecap front Y",
+      "d": "Controls the placement of the sleevecap front pitchpoint on the Y-axis (vertical)"
+    },
+    "sleevecapQ1Offset": {
+      "t": "Sleevecap Q1 offset",
+      "d": "Controls the curvature of the sleevecap in the first quadrant (front armhole)"
+    },
+    "sleevecapQ2Offset": {
+      "t": "Sleevecap Q2 offset",
+      "d": "Controls the curvature of the sleevecap in the second quadrant (front shoulder)"
+    },
+    "sleevecapQ3Offset": {
+      "t": "Sleevecap Q3 offset",
+      "d": "Controls the curvature of the sleevecap in the third quadrant (back shoulder)"
+    },
+    "sleevecapQ4Offset": {
+      "t": "Sleevecap Q4 offset",
+      "d": "Controls the curvature of the sleevecap in the fourth quadrant (back armhole)"
+    },
+    "sleevecapQ1Spread1": {
+      "t": "Sleevecap Q1 downward spread",
+      "d": "Controls the spread of the sleevecap first quadrant curvature towards the armhole"
+    },
+    "sleevecapQ1Spread2": {
+      "t": "Sleevecap Q1 upward spread",
+      "d": "Controls the spread of the sleevecap first quadrant curvature towards the shoulder"
+    },
+    "sleevecapQ2Spread1": {
+      "t": "Sleevecap Q2 downward spread",
+      "d": "Controls the spread of the sleevecap second quadrant curvature towards the armhole"
+    },
+    "sleevecapQ2Spread2": {
+      "t": "Sleevecap Q2 upward spread",
+      "d": "Controls the spread of the sleevecap second quadrant curvature towards the shoulder"
+    },
+    "sleevecapQ3Spread1": {
+      "t": "Sleevecap Q3 upward spread",
+      "d": "Controls the spread of the sleevecap third quadrant curvature towards the shoulder"
+    },
+    "sleevecapQ3Spread2": {
+      "t": "Sleevecap Q3 downward spread",
+      "d": "Controls the spread of the sleevecap third quadrant curvature towards the armhole"
+    },
+    "sleevecapQ4Spread1": {
+      "t": "Sleevecap Q4 upward spread",
+      "d": "Controls the spread of the sleevecap fourth quadrant curvature towards the shoulder"
+    },
+    "sleevecapQ4Spread2": {
+      "t": "Sleevecap Q4 downward spread",
+      "d": "Controls the spread of the sleevecap fourth quadrant curvature towards the armhole"
     },
     "waistDart": {
-      "t": "Pince de taille",
-      "d": "S'il faut ou non inclure une pince à la taille pour arrondir le dos"
+      "t": "Waist dart",
+      "d": "Whether or not to inlude a dart at the waist to round the back"
     },
     "waistDartSize": {
-      "t": "Taille de la pince de taille",
-      "d": "La taille de la pince de taille"
+      "t": "Waist dart size",
+      "d": "The size of the waist dart"
     },
     "waistDartLength": {
-      "t": "Longueur de la pince de taille",
-      "d": "La longueur de la pince de taille"
+      "t": "Waist dart length",
+      "d": "The length of the waist dart"
     },
     "verticalEase": {
-      "t": "Aisance verticale",
-      "d": "La quantité d'aisance à répartir sur la longueur du vêtement"
+      "t": "Vertical ease",
+      "d": "The amount of ease to distribute along the length of the garment"
     },
     "waistEase": {
-      "t": "Aisance à la taille",
-      "d": "L'ampleur d'aisance à votre taille"
+      "t": "Waist ease",
+      "d": "The amount of ease at the waist"
     },
     "primaryBustDart": {
-      "t": "Pince poitrine",
-      "d": "Où placer la pince poitrine pour s'adapter à la poitrine"
+      "t": "Bust dart",
+      "d": "Where to place the bust dart to shape the chest"
     },
     "primaryBustDartLength": {
-      "t": "Longueur des pinces poitrine",
-      "d": "La longueur de la pince de poitrine"
+      "t": "Bust dart length",
+      "d": "The length of the bust dart"
     },
     "secondaryBustDart": {
-      "t": "Pince poitrine secondaire",
-      "d": "Inclut éventuellement une poitrine secondaire pour répartir la mise en forme de la poitrine"
+      "t": "Secondary bust dart",
+      "d": "Optionally include a secondary bust dart to distribute the shaping of the chest"
     },
     "secondaryBustDartLength": {
-      "t": "Longueur de la pince poitrine secondaire",
-      "d": "La longueur de la pince poitrine secondaire"
+      "t": "Secondary bust dart length",
+      "d": "The length of the secondary bust dart"
     },
     "primaryBustDartShaping": {
-      "t": "Forme des pinces poitrine",
-      "d": "Contrôle l'équilibre entre les pinces de buste principale et secondaire"
+      "t": "Bust darts shaping",
+      "d": "Controls the balance between the main and secondary bust darts"
     }
   }
 }
