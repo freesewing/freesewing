@@ -15,6 +15,14 @@
     "drapeAngle": {
       "t": "Ángulo del drapeado",
       "d": "Controla la cantidad de drapeado"
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at your hips"
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls the amount of ease at your waist"
     }
   }
 }

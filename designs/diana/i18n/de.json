@@ -15,6 +15,14 @@
     "drapeAngle": {
       "t": "Fallwinkel",
       "d": "Steuert die Stärke des Fallwinkels"
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at your hips"
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls the amount of ease at your waist"
     }
   }
 }
