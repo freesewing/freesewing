@@ -1,5 +1,5 @@
 import { adult, doll, giant } from '@freesewing/models'
-import { getShortName } from './config.mjs'
+import { getShortName, isUtilityDesign } from './config.mjs'
 import chai from 'chai'
 
 const expect = chai.expect
@@ -52,7 +52,7 @@ export const testPatternSampling = (Pattern, log = false) => {
     }
   }
 
-  if (['rendertest', 'tutorial', 'examples'].indexOf(design) === -1) {
+  if (!isUtilityDesign(design)) {
     /*
      * Sample different measurements
      */
@@ -74,9 +74,7 @@ export const testPatternSampling = (Pattern, log = false) => {
         })
       }
     })
-  }
 
-  if (['rendertest', 'tutorial', 'examples'].indexOf(design) === -1) {
     /*
      * Sample different options
      */
@@ -100,9 +98,7 @@ export const testPatternSampling = (Pattern, log = false) => {
         }
       }
     })
-  }
 
-  if (['rendertest', 'tutorial', 'examples'].indexOf(design) === -1) {
     /*
      * Sample pattern for different models
      */
@@ -123,9 +119,7 @@ export const testPatternSampling = (Pattern, log = false) => {
         })
       }
     })
-  }
 
-  if (['rendertest', 'tutorial', 'examples'].indexOf(design) === -1) {
     if (deprecated.indexOf(design) === -1) {
       /*
        * Sample pattern for doll & giant

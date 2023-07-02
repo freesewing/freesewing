@@ -6,7 +6,6 @@ const expect = chai.expect
 
 export const getShortName = (name) => name.split('/').pop()
 export const isUtilityDesign = (name) => typeof designs[name].tags === 'undefined'
-
 // These are ok to use mm options
 const mmAllowed = ['rendertest']
 
