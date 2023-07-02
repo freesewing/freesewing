@@ -33,6 +33,18 @@
     "necklineWidth": {
       "t": "Largeur d'encolure",
       "d": "Contrôle la largeur de l'encolure."
+    },
+    "curveToWaist": {
+      "t": "Fit the waist",
+      "d": "Whether or not to fit the waist or rahter only fit chest and hips."
+    },
+    "curvedWaistEase": {
+      "t": "Waist ease",
+      "d": "Ease at the waist (only applies when the waist is fitted)."
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Ease at the hips."
     }
   }
 }
