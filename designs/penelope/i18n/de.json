@@ -20,6 +20,10 @@
       "t": "Rückenlüftungslänge",
       "d": "Die Länge des Bewegungschlitzes hinten als ein Prozentsatz der Gesamtrocklänge."
     },
+    "curvedDarts": {
+      "t": "Curved darts",
+      "d": "Whether or not to used curved darts."
+    },
     "dartToSideSeamFactor": {
       "t": "Abnäher zu Seitennaht Faktor",
       "d": "Prozentuales Verhältnis wieviel der Reduktion von der Hüftweite zur Taille über die Abnäher und wieviel über die Seitennäht erzielt wurde."

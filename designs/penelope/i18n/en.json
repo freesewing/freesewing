@@ -20,6 +20,10 @@
       "t": "Back vent length",
       "d": "Length of the Back Vent as a percentage of the skirt length."
     },
+    "curvedDarts": {
+      "t": "Curved darts",
+      "d": "Whether or not to used curved darts."
+    },
     "dartToSideSeamFactor": {
       "t": "Dart to side seam factor",
       "d": "Percentage of how much of the hip to waist reduction has to be taken in by the darts versus the side seam."

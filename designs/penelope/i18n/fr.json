@@ -20,6 +20,10 @@
       "t": "Longueur de fente arrière",
       "d": "Longueur de la fente dos par rapport à la longueur de la jupe."
     },
+    "curvedDarts": {
+      "t": "Curved darts",
+      "d": "Whether or not to used curved darts."
+    },
     "dartToSideSeamFactor": {
       "t": "Pince de côté",
       "d": "Pourcentage de la part de la réduction de la hanche à la taille par rapport à la couture latérale."
