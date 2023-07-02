@@ -24,6 +24,14 @@
     "useCrossSeam": {
       "t": "Use crossseam",
       "d": "When enabled, the total height of the pattern pieces combined will match the cross seam length minus the front and back rise. When disabled, the total height depends on the gusset length option."
+    },
+    "backCurve": {
+      "t": "FIXME: Back curve",
+      "d": "FIXME: Provide description"
+    },
+    "frontCurve": {
+      "t": "FIXME: Back curve",
+      "d": "FIXME: Provide description"
     }
   }
 }
