@@ -35,7 +35,7 @@ export const testPatternI18n = (Pattern, i18n) => {
       it(`  - The parts (p) object should exist`, () => {
         expect(typeof i18n.en.p).to.equal('object')
       })
-      for (const [key, val] of Object.entries(i18n.en.p)) {
+      for (const key of Object.keys(i18n.en.p)) {
         it(`  - The translation of p.${key} should be a non-empty string`, () => {
           expect(typeof i18n.en.p[key]).to.equal('string')
           expect(i18n.en.p[key].length).to.be.above(1)
@@ -52,7 +52,7 @@ export const testPatternI18n = (Pattern, i18n) => {
       it(`  - The options (o) object should exist`, () => {
         expect(typeof i18n.en.o).to.equal('object')
       })
-      for (const [key, val] of Object.entries(i18n.en.o)) {
+      for (const key of Object.keys(i18n.en.o)) {
         it(`  - The translation of o.${key}.t should be a non-empty string`, () => {
           expect(typeof i18n.en.o[key].t).to.equal('string')
           expect(i18n.en.o[key].t.length).to.be.above(1)
