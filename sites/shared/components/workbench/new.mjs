@@ -61,7 +61,7 @@ const draftViews = ['draft', 'inspect']
 
 export const Workbench = ({ design, Design, DynamicDocs }) => {
   // Hooks
-  const { t, i18n } = useTranslation(ns)
+  const { t, i18n } = useTranslation([...ns, design])
   const { language } = i18n
   const { account } = useAccount()
   const controlState = useControlState()
@@ -189,7 +189,7 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
       const patternConfig = pattern.getConfig()
       if (ui.renderer === 'svg') {
         // Add theme to svg renderer
-        pattern.use(pluginI18n, { t })
+        pattern.use(pluginI18n, (key) => t(key, { ns: design }))
         pattern.use(pluginTheme, { skipGrid: ['pages'] })
       }
 
