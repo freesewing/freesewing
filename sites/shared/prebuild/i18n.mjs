@@ -149,8 +149,8 @@ const fixData = (rawData) => {
  */
 const patternTranslationAsNamespace = (i18n, language) => {
   const pojo = {
-    t: i18n.t,
-    d: i18n.d,
+    t: i18n[language].t,
+    d: i18n[language].d,
   }
   for (const [key, val] of Object.entries(i18n[language].s)) {
     pojo[key] = val
@@ -187,10 +187,16 @@ export const prebuildI18n = async (site, only = false) => {
   /*
    * Handle design translations
    */
+  const designNs = {}
   for (const design in designs) {
     for (const language of languages) {
+      if (typeof designNs[language] === 'undefined') designNs[language] = {}
       // Write out design namespace files
-      writeJson(site, language, design, patternTranslationAsNamespace(designs[design], language))
+      const content = patternTranslationAsNamespace(designs[design], language)
+      designNs[language][`${design}.t`] = content.t
+      designNs[language][`${design}.d`] = content.d
+      writeJson(site, language, design, content)
     }
   }
+  for (const language of languages) writeJson(site, language, 'designs', designNs[language])
 }
