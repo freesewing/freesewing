@@ -21,7 +21,7 @@ export const testPatternI18n = (Pattern, i18n) => {
     })
     it(`  - The design should have a translated description`, () => {
       expect(typeof i18n.en.d).to.equal('string')
-      expect(i18n.en.t.length).to.be.above(8)
+      expect(i18n.en.d.length).to.be.above(8)
     })
     if (!isUtilityDesign(name)) {
       it(`  - The strings (s) object should exist`, () => {
