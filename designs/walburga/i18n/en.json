@@ -2,6 +2,7 @@
   "t": "Walburga Wappenrock",
   "d": "Walburga is a tabard/surcoat, a historical garment from medieval Europe",
   "p": {
+    "base": "Base",
     "back": "Back",
     "front": "Front"
   },
