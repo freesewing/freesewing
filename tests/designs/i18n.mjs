@@ -1,4 +1,3 @@
-import designs from '../../config/software/designs.json' assert { type: 'json' }
 import { isUtilityDesign, getShortName } from './config.mjs'
 import chai from 'chai'
 
@@ -27,7 +26,7 @@ export const testPatternI18n = (Pattern, i18n) => {
       it(`  - The strings (s) object should exist`, () => {
         expect(typeof i18n.en.s).to.equal('object')
       })
-      for (const [key, val] of Object.entries(i18n.en.s)) {
+      for (const key of Object.keys(i18n.en.s)) {
         it(`  - The translation of s.${key} should be a non-empty string`, () => {
           expect(typeof i18n.en.s[key]).to.equal('string')
           expect(i18n.en.s[key].length).to.be.above(1)

@@ -168,9 +168,7 @@ const patternTranslationAsNamespace = (i18n, language) => {
 /*
  * The method that does the actual work
  */
-export const prebuildI18n = async (site, only = false) => {
-  const i18n = {}
-
+export const prebuildI18n = async (site) => {
   /*
    * Handle code-adjacent translations (for React components and so on)
    */
@@ -183,7 +181,6 @@ export const prebuildI18n = async (site, only = false) => {
     for (const namespace in namespaces)
       writeJson(site, language, namespace, namespaces[namespace][language])
   }
-
   /*
    * Handle design translations
    */
