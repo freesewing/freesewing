@@ -1,27 +1,27 @@
-import { Design } from '@freesewing/core'
+import { Design, mergeI18n } from '@freesewing/core'
 import { data } from '../data.mjs'
-// Parts
 import { front } from './front.mjs'
 import { side } from './side.mjs'
-// Inherited parts
-import { back } from '@freesewing/carlton'
-import { tail } from '@freesewing/carlton'
-import { belt } from '@freesewing/carlton'
-import { topSleeve } from '@freesewing/carlton'
-import { underSleeve } from '@freesewing/carlton'
-import { collarStand } from '@freesewing/carlton'
-import { collar } from '@freesewing/carlton'
-import { cuffFacing } from '@freesewing/carlton'
-import { pocket } from '@freesewing/carlton'
-import { pocketFlap } from '@freesewing/carlton'
-import { pocketLining } from '@freesewing/carlton'
-import { chestPocketWelt } from '@freesewing/carlton'
-import { chestPocketBag } from '@freesewing/carlton'
-import { innerPocketWelt } from '@freesewing/carlton'
-import { innerPocketBag } from '@freesewing/carlton'
-import { innerPocketTab } from '@freesewing/carlton'
-// Translation
-import { i18n } from '../i18n/index.mjs'
+import {
+  back,
+  tail,
+  belt,
+  topSleeve,
+  underSleeve,
+  collarStand,
+  collar,
+  cuffFacing,
+  pocket,
+  pocketFlap,
+  pocketLining,
+  chestPocketWelt,
+  chestPocketBag,
+  innerPocketWelt,
+  innerPocketBag,
+  innerPocketTab,
+  i18n as carltonI18n,
+} from '@freesewing/carlton'
+import { i18n as carlitaI18n } from '../i18n/index.mjs'
 
 // Create new design
 const Carlita = new Design({
@@ -46,6 +46,13 @@ const Carlita = new Design({
     innerPocketBag,
     innerPocketTab,
   ],
+})
+
+// Merge translations
+const i18n = mergeI18n([carltonI18n, carlitaI18n], {
+  p: { drop: [] },
+  o: { drop: [] },
+  s: { drop: [] },
 })
 
 // Named exports
