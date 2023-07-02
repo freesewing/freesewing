@@ -90,6 +90,10 @@
     "shoulderToShoulderEase": {
       "t": "Shoulder to shoulder ease",
       "d": "Controls the amount of ease along the shoulder to shoulder measurement"
+    },
+    "fullChestEaseReduction": {
+      "t": "Full chest ease reduction",
+      "d": "FIXME: Document this option"
     }
   }
 }
