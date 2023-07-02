@@ -10,5 +10,10 @@
     "sleeve": "Sleeve"
   },
   "s": {},
-  "o": {}
+  "o": {
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at the hips"
+    }
+  }
 }
