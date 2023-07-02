@@ -63,7 +63,9 @@ export const testPatternI18n = (Pattern, i18n) => {
           expect(i18n.en.o[key].d.length).to.be.above(1)
         })
       }
-      for (const option of options.filter((o) => typeof o === 'object')) {
+      for (const option of options.filter(
+        (o) => typeof Pattern.patternConfig.options[o] === 'object'
+      )) {
         it(`  - The option title for the "${option}" option should be a non-empty string`, () => {
           expect(typeof i18n.en.o[option].t).to.equal('string')
           expect(i18n.en.o[option].t.length).to.be.above(1)
