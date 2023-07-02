@@ -40,7 +40,7 @@ export const DraftMenu = ({
   }
 
   return (
-    <nav className="grow mb-12">
+    <nav>
       <Inspector {...menuProps} {...{ ui, inspector, renderProps }} />
       <DesignOptions {...menuProps} />
       <CoreSettings {...menuProps} />

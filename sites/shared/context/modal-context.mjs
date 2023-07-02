@@ -4,11 +4,17 @@ export const ModalContext = React.createContext(null)
 
 export const ModalContextProvider = ({ children }) => {
   function clearModal() {
-    __setModal({ setModal, clearModal, modalContent: null })
+    __setModal({
+      ...__modal,
+      modalContent: null,
+    })
   }
 
   function setModal(content) {
-    __setModal({ setModal, clearModal, modalContent: content })
+    __setModal({
+      ...__modal,
+      modalContent: content,
+    })
   }
 
   const [__modal, __setModal] = useState({

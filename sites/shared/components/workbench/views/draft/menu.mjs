@@ -37,7 +37,7 @@ export const DraftMenu = ({
   }
 
   return (
-    <nav className="grow mb-12">
+    <nav>
       <DesignOptions {...menuProps} />
       <CoreSettings {...menuProps} />
       <UiSettings {...menuProps} {...{ ui, view, setView }} />
