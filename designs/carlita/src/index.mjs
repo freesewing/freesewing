@@ -49,11 +49,7 @@ const Carlita = new Design({
 })
 
 // Merge translations
-const i18n = mergeI18n([carltonI18n, carlitaI18n], {
-  p: { drop: [] },
-  o: { drop: [] },
-  s: { drop: [] },
-})
+const i18n = mergeI18n([carltonI18n, carlitaI18n])
 
 // Named exports
 export {
