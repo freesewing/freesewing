@@ -1,5 +1,6 @@
 import { Design } from '@freesewing/core'
 import { data } from '../data.mjs'
+import { i18n } from '../i18n/index.mjs'
 import { back } from './back.mjs'
 import { front } from './front.mjs'
 import { sleeve } from './sleeve.mjs'
@@ -17,4 +18,16 @@ const Hugo = new Design({
 })
 
 // Named exports
-export { back, front, sleeve, pocket, pocketFacing, hoodSide, hoodCenter, waistband, cuff, Hugo }
+export {
+  back,
+  front,
+  sleeve,
+  pocket,
+  pocketFacing,
+  hoodSide,
+  hoodCenter,
+  waistband,
+  cuff,
+  Hugo,
+  i18n,
+}
