@@ -14,6 +14,8 @@ import { backPocketWelt } from './back-pocket-welt.mjs'
 import { flyFacing } from './fly-facing.mjs'
 import { flyExtension } from './fly-extension.mjs'
 import { beltLoops } from './beltloops.mjs'
+// Translation
+import { i18n } from '../i18n/index.mjs'
 
 // Create design
 const Charlie = new Design({
@@ -51,4 +53,5 @@ export {
   flyExtension,
   beltLoops,
   Charlie,
+  i18n,
 }
