@@ -147,6 +147,10 @@
       "t": "Style d'ourlet",
       "d": "Le style de l'ourlet de la chemise."
     },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at the hips."
+    },
     "roundBack": {
       "t": "Arrondi arrière",
       "d": "Pour installer un rond-point arrière, cela ajoute de la longueur au centre du dos (au yoke) que les foulards de vers les côtés."

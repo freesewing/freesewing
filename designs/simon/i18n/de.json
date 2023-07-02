@@ -147,6 +147,10 @@
       "t": "Saumstil",
       "d": "Der Stil des Hemdsaumes."
     },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at the hips."
+    },
     "roundBack": {
       "t": "Runder Rücken",
       "d": "Damit die Passform für einen runde(re)n Rücken besser ist, fügt diese Option etwas Länge in der hinteren Mitte (an der Passe) hinzu, die sich zu den Seiten hin verjüngt."

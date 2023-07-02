@@ -147,6 +147,10 @@
       "t": "Vorm zoom",
       "d": "De vorm van de zoom van het hemd."
     },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at the hips."
+    },
     "roundBack": {
       "t": "Rond terug af",
       "d": "Om een round(er) achteraan te passen voegt dit de lengte aan het midden (aan de schouderpas) toe die richting de zijkanten kort."

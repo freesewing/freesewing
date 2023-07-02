@@ -147,6 +147,10 @@
       "t": "Estilo del dobladillo",
       "d": "El estilo del dobladillo."
     },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at the hips."
+    },
     "roundBack": {
       "t": "Retroceso",
       "d": "Para encajar un redondo(er) hacia atrás, esto añade longitud al centro de atrás (en el yo) que se atenúa hacia los lados."

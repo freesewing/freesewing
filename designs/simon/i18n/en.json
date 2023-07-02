@@ -147,6 +147,10 @@
       "t": "Hem style",
       "d": "The style of the shirt hem."
     },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at the hips."
+    },
     "roundBack": {
       "t": "Round back",
       "d": "To fit a round(er) back, this adds length to the center back (at the yoke) that tapers of towards the sides."
