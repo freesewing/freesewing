@@ -2,6 +2,7 @@
   "t": "Benjamin, pajarita",
   "d": "Benjamin es un patrón de pajarita con cuatro formas a elegir.",
   "p": {
+    "base": "Base",
     "bow1": "Pajarita",
     "bow2": "Pajarita",
     "bow3": "Pajarita",

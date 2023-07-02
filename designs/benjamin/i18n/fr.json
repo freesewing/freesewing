@@ -2,6 +2,7 @@
   "t": "Nœud papillon Benjamin",
   "d": "Benjamin est un nœud papillon avec 4 possibilités de styles différents.",
   "p": {
+    "base": "Base",
     "bow1": "Nœud",
     "bow2": "Nœud",
     "bow3": "Nœud",

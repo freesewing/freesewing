@@ -2,6 +2,7 @@
   "t": "Benjamin bow tie",
   "d": "Benjamin is a bow tie pattern with four different shape options.",
   "p": {
+    "base": "Base",
     "bow1": "Bow",
     "bow2": "Bow",
     "bow3": "Bow",

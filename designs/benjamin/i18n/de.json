@@ -2,6 +2,7 @@
   "t": "Benjamin, die Fliege",
   "d": "Benjamin ist eine Schleife - oder Fliege - mit vier unterschiedlichen Formvariationen.",
   "p": {
+    "base": "Base",
     "bow1": "Fliege",
     "bow2": "Fliege",
     "bow3": "Fliege",
