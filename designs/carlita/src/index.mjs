@@ -20,6 +20,8 @@ import { chestPocketBag } from '@freesewing/carlton'
 import { innerPocketWelt } from '@freesewing/carlton'
 import { innerPocketBag } from '@freesewing/carlton'
 import { innerPocketTab } from '@freesewing/carlton'
+// Translation
+import { i18n } from '../i18n/index.mjs'
 
 // Create new design
 const Carlita = new Design({
@@ -67,4 +69,5 @@ export {
   innerPocketBag,
   innerPocketTab,
   Carlita,
+  i18n,
 }
