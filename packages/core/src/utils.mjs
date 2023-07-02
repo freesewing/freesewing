@@ -444,7 +444,8 @@ export function lineIntersectsCurve(start, end, from, cp1, cp2, to) {
 /**
  * Helper method to merge translation files from different designs
  *
- * @param {object} translations - One or more translation objects
+ * @param {array} designs - One or more translation objects for designs
+ * @param {object} options - Configuration object for how to merge these designs
  * @return {object} result - A merged object of translations
  */
 export function mergeI18n(designs, options) {
@@ -743,9 +744,9 @@ export function __macroName(name) {
  */
 function __keepTranslation(key, options) {
   // Drop it?
-  if (options.drop && options.drop.includes(key)) return false
+  if (options?.drop && options.drop.includes(key)) return false
   // Keep only some and not this one?
-  if (options.keep && !options.keep.includes(key)) return false
+  if (options?.keep && !options.keep.includes(key)) return false
 
   // Keep it
   return true
