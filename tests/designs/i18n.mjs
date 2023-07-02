@@ -62,6 +62,9 @@ export const testPatternI18n = (Pattern, i18n) => {
           expect(typeof i18n.en.o[key].d).to.equal('string')
           expect(i18n.en.o[key].d.length).to.be.above(1)
         })
+        it(`  - The translation of o.${key} should correspond to a known option`, () => {
+          expect(options.includes(key)).to.equal(true)
+        })
       }
       for (const option of options.filter(
         (o) => typeof Pattern.patternConfig.options[o] === 'object'
