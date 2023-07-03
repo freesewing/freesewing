@@ -285,7 +285,6 @@ lab:
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
-    'lodash.debouce': '^4.0.8'
     'next': *next
     'next-i18next': &nextI18next '14.0.0'
     'react': *react
@@ -328,7 +327,6 @@ org:
     'lodash.set': *_set
     'luxon': '3.3.0'
     'next': *next
-    'next-sanity': '^4.3.3'
     'react-dropzone': '14.2.3'
     'react-hotkeys-hook': *reactHotkeysHook
     'react-instantsearch-dom': *reactInstantsearchDom
@@ -384,6 +382,7 @@ shared:
     'jotai': *jotai
     'jotai-location': *jotai-location
     'lodash.clonedeep': '4.5.0'
+    'lodash.debounce': '^4.0.8'
     'lodash.orderby': *_orderby
     'lodash.unset': *_unset
     'lodash.get': *_get

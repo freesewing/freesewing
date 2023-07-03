@@ -15,7 +15,8 @@ export const NavigationContext = React.createContext(defaultNavigationContext)
 
 const createCrumbs = (path, nav) =>
   path.map((crumb, i) => {
-    const entry = get(nav, path.slice(0, i + 1), { t: 'no-actual-title', s: path.join('/') })
+    const slice = path.slice(0, i + 1)
+    const entry = get(nav, slice, { t: 'no-actual-title', s: slice.join('/') })
     const val = { t: entry.t, s: entry.s }
     if (entry.o) val.o = entry.o
 

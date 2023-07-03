@@ -30,7 +30,7 @@ const getRoot = {
   org: (root, nav) => {
     // Fixme: make this work for org
     if (!root) return nav
-    if (root.indexOf('/') === -1) return get(nav, ['docs', root])
+    if (root.indexOf('/') === -1) return get(nav, root)
     return get(nav, root.split('/'))
   },
 }
@@ -41,9 +41,10 @@ export const ReadMore = ({
   site = 'org',
   level = 0,
   pretty = false,
+  ignoreControl,
 }) => {
   const { slug } = useContext(NavigationContext)
-  const siteNav = useNavigation()
+  const siteNav = useNavigation({ ignoreControl })
 
   // Deal with recurse not being a number
   if (recurse && recurse !== true) {
@@ -65,7 +66,11 @@ export const ReadMore = ({
             <span className={pretty ? getClasses(level) : ''}>{page.t}</span>
           </Link>
           {recurse ? (
-            <ReadMore root={page.s} level={level + 1} {...{ recurse, site, pretty }} />
+            <ReadMore
+              root={page.s}
+              level={level + 1}
+              {...{ recurse, site, pretty, ignoreControl }}
+            />
           ) : null}
         </li>
       )

@@ -99,8 +99,7 @@ export async function getStaticProps({ locale, params }) {
       ...(await serverSideTranslations(locale, namespaces)),
       page: {
         locale,
-        // title: 'Freesewing Blog',
-        path: ['showcase', 'page', params.page],
+        path: ['showcase'],
       },
     },
   }

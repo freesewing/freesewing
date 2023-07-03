@@ -9,6 +9,8 @@ export const siteConfig = {
   },
   sanity: {
     project: process.env.SANITY_PROJECT || 'hl5bw8cj',
+    dataset: 'site-content',
+    apiVersion: '2023-06-17',
   },
   languages: ['en', 'es', 'de', 'fr', 'nl'],
   site: 'FreeSewing.org',

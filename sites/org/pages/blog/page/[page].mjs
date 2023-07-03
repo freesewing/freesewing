@@ -11,7 +11,7 @@ import { Pagination } from 'shared/components/navigation/pagination.mjs'
 import { siteConfig } from 'site/site.config.mjs'
 
 // Translation namespaces used on this page
-const namespaces = [...new Set(['designs', ...pageNs])]
+const namespaces = [...new Set(['designs', 'sections', ...pageNs])]
 
 const textShadow = {
   style: {
@@ -78,7 +78,7 @@ const BlogIndexPage = ({ posts, page, current, total }) => {
   const { t } = useTranslation()
 
   return (
-    <PageWrapper {...page}>
+    <PageWrapper {...page} t={t('sections:blog')}>
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3 max-w-7xl lg:pr-4 xl:pr-6">
         {posts.map((post) => (
           <Preview post={post} t={t} key={post.slug.current} />
@@ -108,8 +108,7 @@ export async function getStaticProps({ locale, params }) {
       ...(await serverSideTranslations(locale, namespaces)),
       page: {
         locale,
-        // title: 'Freesewing Blog',
-        path: ['blog', 'page', params.page],
+        path: ['blog'],
       },
     },
   }

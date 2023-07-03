@@ -1,6 +1,6 @@
 import { SanityPageWrapper, ns as sanityNs } from 'site/components/sanity/page-wrapper.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { sanityLoader, sanityImage } from 'site/components/sanity/utils.mjs'
+import { sanityLoader, sanitySiteImage } from 'site/components/sanity/utils.mjs'
 
 const namespaces = [...sanityNs]
 
@@ -36,7 +36,7 @@ export async function getStaticProps({ params, locale }) {
         title: post.title,
         date: post.date,
         caption: post.caption,
-        image: sanityImage(post.image[0]),
+        image: sanitySiteImage(post.image[0]),
         designs,
       },
       // FIXME load the author separately
@@ -47,6 +47,10 @@ export async function getStaticProps({ params, locale }) {
         // ...(await mdxCompiler(post.maker.about)),
       },
       ...(await serverSideTranslations(locale, namespaces)),
+      page: {
+        locale,
+        path: ['showcase', slug],
+      },
     },
   }
 }
