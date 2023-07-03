@@ -18,7 +18,7 @@ const run = async () => {
   if (['org', 'dev'].includes(SITE)) {
     if (!FAST) await prebuildGitData(SITE)
     const docPages = await prebuildDocs(SITE)
-    const sanityPosts = await loadSanityPosts(SITE, FAST)
+    const sanityPosts = await loadSanityPosts(SITE)
     prebuildNavigation(docPages, sanityPosts, SITE)
     if (!FAST && process.env.GENERATE_OG_IMAGES) {
       // Create og image for the home page

@@ -2,7 +2,7 @@ import { createClient } from '@sanity/client'
 import { siteConfig } from '../../org/site.config.mjs'
 
 /** load all sanity posts in a format usable by the nav prebuild */
-export const loadSanityPosts = (SITE, FAST) => {
+export const loadSanityPosts = (SITE) => {
   if (SITE !== 'org') return false
 
   const filter = `{title, "linktitle": coalesce(linktitle, title), "slug": slug.current, date}`
