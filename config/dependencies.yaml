@@ -314,7 +314,6 @@ org:
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': *mdxRuntime
-    '@portabletext/react': '^1.0.6'
     '@sanity/client': '^6.1.2'
     '@tailwindcss/typography': *tailwindTypography
     'algoliasearch': *algoliasearch
@@ -348,7 +347,7 @@ org:
 
 sanity:
   _:
-    '@sanity/vision': &sanity '3.14.0'
+    '@sanity/vision': &sanity '3.14.1'
     'easymde': '2.18.0'
     'react': *react
     'react-dom': *react
