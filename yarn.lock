@@ -2720,10 +2720,10 @@
   dependencies:
     glob "7.1.7"
 
-"@next/mdx@13.4.7":
-  version "13.4.7"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-13.4.7.tgz#d139b43deb4361be890ee631d7d6bd6cd11d95a1"
-  integrity sha512-btb4ym4Gz72ACQjSlK+AsJRx5IYcS9O0FgUWK4/+9AJxLQtr5XNOAfpy1ioLqXG7REVvwWAea4z6Hp0agwc+Vg==
+"@next/mdx@13.4.8":
+  version "13.4.8"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-13.4.8.tgz#c95db83778a94f144812d006a64f0e2b72c57c92"
+  integrity sha512-8h0mjPlSKC/KpREJOVhVht6cjXDp5oGBiJw6lYVbRBlFcGSLEt4aehHw8y/aZ2a5o2SThAjh5QOlVbeCz2N1ug==
   dependencies:
     source-map "^0.7.0"
 
@@ -3345,21 +3345,6 @@
   dependencies:
     get-random-values-esm "^1.0.0"
     lodash "^4.17.21"
-
-"@sanity/cli@3.14.0":
-  version "3.14.0"
-  resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-3.14.0.tgz#586feffd120a013353df2ce9bcd5c38528c93579"
-  integrity sha512-n496YfLUmJ91jfd5GYjZ13OOYG1sfxmTN2YqrwNA7H1poWPKvvCfX9eC3H4qxc7mug+u0CiEnrxMTVTqdzVqvQ==
-  dependencies:
-    "@babel/traverse" "^7.19.0"
-    "@vercel/frameworks" "1.4.2"
-    "@vercel/fs-detectors" "3.9.2"
-    chalk "^4.1.2"
-    esbuild "^0.16.5"
-    esbuild-register "^3.4.1"
-    get-it "^8.0.9"
-    golden-fleece "^1.0.9"
-    pkg-dir "^5.0.0"
 
 "@sanity/cli@3.14.1":
   version "3.14.1"
