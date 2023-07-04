@@ -285,7 +285,7 @@ lab:
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
-    'lodash.debouce': '^4.0.8'
+    'lodash.debounce': '^4.0.8'
     'next': *next
     'next-i18next': &nextI18next '14.0.0'
     'react': *react

@@ -1,0 +1,20 @@
+{
+  "t": "Bent body Block",
+  "d": "This two-part sleeve block is the basis of our coat and jacket patterns.",
+  "p": {
+    "sleeve": "Sleeve",
+    "topSleeve": "Topsleeve",
+    "underSleeve": "Undersleeve"
+  },
+  "s": {},
+  "o": {
+    "sleeveBend": {
+      "t": "Sleeve bend",
+      "d": "Controls the bend of the sleeve at the elbow."
+    },
+    "sleevecapHeight": {
+      "t": "Sleevecap height",
+      "d": "Controls the height of the sleevecap."
+    }
+  }
+}

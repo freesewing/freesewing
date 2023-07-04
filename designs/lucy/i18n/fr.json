@@ -1,0 +1,22 @@
+{
+  "t": "Poche à nouer Lucy",
+  "d": "Lucy est une poche historique que vous pouvez nouer autour de votre taille.",
+  "p": {
+    "pocket": "Poche"
+  },
+  "s": {},
+  "o": {
+    "width": {
+      "t": "Largeur",
+      "d": "Largeur de la poche"
+    },
+    "length": {
+      "t": "Longueur",
+      "d": "Longueur (profondeur) de la poche"
+    },
+    "edge": {
+      "t": "Rétrécissement",
+      "d": "Contrôle comment l'ouverture de la poche rétrécie à l'intérieur"
+    }
+  }
+}

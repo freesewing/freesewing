@@ -1,5 +1,6 @@
 import { Design } from '@freesewing/core'
 import { data } from '../data.mjs'
+import { i18n } from '../i18n/index.mjs'
 import { pants } from './pants.mjs'
 import { cutout } from './cutout.mjs'
 import { pocket } from './pocket.mjs'
@@ -41,4 +42,5 @@ export {
   strapBack,
   pantsProto,
   Waralee,
+  i18n,
 }

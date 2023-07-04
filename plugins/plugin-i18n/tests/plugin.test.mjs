@@ -5,10 +5,8 @@ import { plugin } from '../src/index.mjs'
 const expect = chai.expect
 
 const content = {
-  strings: {
-    en: {
-      testString: 'This is a test string for the i18n plugin',
-    },
+  en: {
+    testString: 'This is a test string for the i18n plugin',
   },
 }
 
@@ -31,6 +29,6 @@ describe('I18n Plugin Tests', () => {
     const Pattern = new Design({ parts: [part] })
     const pattern = new Pattern()
     const svg = pattern.draft().render()
-    expect(svg).to.contain(content.strings.en.testString)
+    expect(svg).to.contain(content.en.testString)
   })
 })

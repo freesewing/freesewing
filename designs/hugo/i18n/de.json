@@ -1,0 +1,29 @@
+{
+  "t": "Hugo, der Hoodie",
+  "d": "Hugo ist ein Kapuzensweatshirt mit Raglanärmeln.",
+  "p": {
+    "back": "Back",
+    "cuff": "Cuff",
+    "front": "Front",
+    "hoodCenter": "Hood center",
+    "hoodSide": "Hood side",
+    "pocket": "Pocket",
+    "pocketFacing": "Pocket facing",
+    "sleeve": "Sleeve",
+    "waistband": "Waistband"
+  },
+  "s": {
+    "cuff": "Manschette",
+    "hoodCenter": "Mitte der Kapuze",
+    "hoodSide": "Kapuzenseite",
+    "pocketFacing": "Taschenbesatz",
+    "pocket": "Tasche",
+    "waistband": "Bund"
+  },
+  "o": {
+    "hipsEase": {
+      "t": "Zugabe Hüfte",
+      "d": "Die Menge an Bequemlichkeitszugabe an deinen Hüften."
+    }
+  }
+}

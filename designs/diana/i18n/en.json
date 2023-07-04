@@ -1,0 +1,28 @@
+{
+  "t": "Diana draped top",
+  "d": "Diana is a top with a draped neckline.",
+  "p": {
+    "back": "Back",
+    "front": "Front",
+    "sleeve": "Sleeve"
+  },
+  "s": {},
+  "o": {
+    "shoulderSeamLength": {
+      "t": "Shoulder seam length",
+      "d": "Controls the length of the shoulder seam"
+    },
+    "drapeAngle": {
+      "t": "Drape angle",
+      "d": "Controls the amount of drape"
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at your hips"
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls the amount of ease at your waist"
+    }
+  }
+}

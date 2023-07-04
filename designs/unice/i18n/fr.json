@@ -1,0 +1,29 @@
+{
+  "t": "Sous-vêtements Unice",
+  "d": "Unice est une variante d'Ursula ; un modèle de sous-vêtements basique et hautement personnalisable.",
+  "p": {
+    "back": "Retour",
+    "elastic": "Elastic",
+    "front": "Avant",
+    "gusset": "Soufflet"
+  },
+  "s": {},
+  "o": {
+    "fabricStretchX": {
+      "t": "Élasticité du tissu (horizontale)",
+      "d": "Ajuster ceci pour des tissus plus ou moins élastiques"
+    },
+    "fabricStretchY": {
+      "t": "Élasticité du tissu (verticale)",
+      "d": "Ajuster ceci pour des tissus plus ou moins élastiques"
+    },
+    "adjustStretch": {
+      "t": "Ajuster l'élasticité",
+      "d": "Cette option vous permet de mettre le maximum d'élasticité que le tissu autorise a l'horizontal et à la verticale. Quand désactivée les valeurs d'élasticité sont utilisés comme si"
+    },
+    "useCrossSeam": {
+      "t": "Utiliser l'intersection des coutures",
+      "d": "Lorsque cette option est activée, la hauteur totale des pièces du patron combinées correspondra à la longueur de la couture transversale moins la hauteur du devant et du dos. Lorsqu'elle est désactivée, la hauteur totale dépend de l'option de longueur du gousset."
+    }
+  }
+}

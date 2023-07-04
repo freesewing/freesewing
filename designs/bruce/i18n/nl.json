@@ -1,0 +1,37 @@
+{
+  "t": "Bruce boxershort",
+  "d": "Bruce is een boxershort die zowel comfortabel als stylish is.",
+  "p": {
+    "back": "Achterzijde",
+    "frontFacing": "Beleg vooraan",
+    "inset": "Inzet",
+    "side": "Zijkant"
+  },
+  "s": {},
+  "o": {
+    "bulge": {
+      "t": "Kruisstuk",
+      "d": "Maak de hoek groter voor meer ruimte in het kruisstuk."
+    },
+    "legBonus": {
+      "t": "Bonus beenlengte",
+      "d": "Extra lengte om aan de benen toe te voegen."
+    },
+    "rise": {
+      "t": "Hoogte",
+      "d": "Hoeveelheid waarmee de taille verhoogd wordt. Een negatieve waarde zal de taille verlagen."
+    },
+    "stretch": {
+      "t": "Rek",
+      "d": "Hoeveel kleiner de omtrek is dan je lichaamsmaten. In andere woorden, hoe strak alles zit."
+    },
+    "legStretch": {
+      "t": "Stretch pijp",
+      "d": "For best results, you want to fit your legs a bit more snugly — say no to gaping."
+    },
+    "backRise": {
+      "t": "Hoogte achter",
+      "d": "Het percentage waarmee de taille verhoogd wordt aan de rug."
+    }
+  }
+}

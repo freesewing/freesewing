@@ -1,5 +1,6 @@
 import { Design } from '@freesewing/core'
 import { data } from '../data.mjs'
+import { i18n } from '../i18n/index.mjs'
 
 // Parts
 import { gore } from './gore.mjs'
@@ -13,4 +14,4 @@ const Holmes = new Design({
 })
 
 // Named exports
-export { gore, visor, ear, Holmes }
+export { gore, visor, ear, Holmes, i18n }

@@ -1,0 +1,90 @@
+{
+  "t": "Charlie chinos",
+  "d": "Charlie is a chino trouser pattern.",
+  "p": {
+    "back": "Back",
+    "backPocket": "Back pocket",
+    "backPocketFacing": "Back pocket facing",
+    "backPocketInterfacing": "Back pocket interfacing",
+    "backPocketWelt": "Back pocket welt",
+    "beltLoops": "Beltloops",
+    "flyExtension": "Fly extension",
+    "flyFacing": "Fly facing",
+    "front": "Front",
+    "frontPocket": "Front pocket",
+    "frontPocketFacing": "Front pocket facing",
+    "waistband": "Waistband",
+    "waistbandCurved": "Curved waistband"
+  },
+  "s": {},
+  "o": {
+    "backPocketHorizontalPlacement": {
+      "t": "Back pocket horizontal placement",
+      "d": "Controls the horizontal placement of the back pocket"
+    },
+    "backPocketVerticalPlacement": {
+      "t": "Back pocket vertical placement",
+      "d": "Controls the vertical placement of the back pocket"
+    },
+    "backPocketWidth": {
+      "t": "Back pocket width",
+      "d": "Controls the width of the back pocket"
+    },
+    "backPocketDepth": {
+      "t": "Back pocket depth",
+      "d": "Controls the depth of the back pocket"
+    },
+    "backPocketFacing": {
+      "t": "Back pocket facing",
+      "d": "Controls whether or not to include facing on the back pockets"
+    },
+    "frontPocketSlantDepth": {
+      "t": "Front pocket slant depth",
+      "d": "Controls the depth of the (front) pocket slant"
+    },
+    "frontPocketSlantWidth": {
+      "t": "Front pocket slant width",
+      "d": "Controls the width of the (front) pocket slant"
+    },
+    "frontPocketSlantRound": {
+      "t": "Front pocket slant round",
+      "d": "Controls how far from the end of the slant we start rounding into the outseam"
+    },
+    "frontPocketSlantBend": {
+      "t": "Front pocket slant bend",
+      "d": "Controls the radius by which we round the pocket slant into the outseam"
+    },
+    "frontPocketWidth": {
+      "t": "Front pocket width",
+      "d": "Controls the width of the front pocket bag"
+    },
+    "frontPocketDepth": {
+      "t": "Front pocket depth",
+      "d": "Controls the depth of the front pocket bag"
+    },
+    "frontPocketFacing": {
+      "t": "Front pocket facing",
+      "d": "Controls how far the pocket facing extends into the pocket bag"
+    },
+    "beltLoops": {
+      "t": "Belt loops",
+      "d": "Controls the amount of belt loops"
+    },
+    "flyCurve": {
+      "t": "Fly curve",
+      "d": "Controls the curvature of the fly J-seam"
+    },
+    "flyLength": {
+      "t": "Fly length",
+      "d": "Controls the length of the fly"
+    },
+    "flyWidth": {
+      "t": "Fly width",
+      "d": "Controls how far the J-seam of offset from the fly edge"
+    },
+    "waistbandCurve": {
+      "t": "Waistband Curve",
+      "d": "Controls how curved the waistband is."
+    }
+  }
+}

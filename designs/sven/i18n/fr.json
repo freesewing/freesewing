@@ -1,0 +1,30 @@
+{
+  "t": "Sweat Sven",
+  "d": "Sven est un sweat simple.",
+  "p": {
+    "back": "Retour",
+    "cuff": "Manchette",
+    "front": "Avant",
+    "sleeve": "Manche",
+    "waistband": "Ceinture"
+  },
+  "s": {},
+  "o": {
+    "hipsEase": {
+      "t": "Aisance des hanches",
+      "d": "Contrôle la quantité d'aisance à vos hanches (au bas du sweat)"
+    },
+    "ribbing": {
+      "t": "Bord côte",
+      "d": "Faut-il finir l'ourlet et les poignets avec un tissu pour bordures"
+    },
+    "ribbingHeight": {
+      "t": "Hauteur de bord côte",
+      "d": "La hauteur du tissu pour le bord côte sur les poignets et le bas du sweat."
+    },
+    "ribbingStretch": {
+      "t": "Élasticité du bord côte",
+      "d": "L'élasticité du bord côte sur les poignets et le bas."
+    }
+  }
+}

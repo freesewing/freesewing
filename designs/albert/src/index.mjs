@@ -3,6 +3,7 @@ import { data } from '../data.mjs'
 import { front } from './front.mjs'
 import { pocket } from './pocket.mjs'
 import { strap } from './strap.mjs'
+import { i18n } from '../i18n/index.mjs'
 
 // Setup our new design
 const Albert = new Design({
@@ -11,4 +12,4 @@ const Albert = new Design({
 })
 
 // Named exports
-export { front, pocket, strap, Albert }
+export { front, pocket, strap, Albert, i18n }

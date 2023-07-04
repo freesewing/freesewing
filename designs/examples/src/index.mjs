@@ -2,6 +2,7 @@ import { Design } from '@freesewing/core'
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { gorePlugin } from '@freesewing/plugin-gore'
 import { data } from '../data.mjs'
+import { i18n } from '../i18n/index.mjs'
 
 // Stacks
 import {
@@ -50,4 +51,7 @@ export {
   // Settings
   settings_sa,
   Examples,
+
+  // Translation
+  i18n,
 }

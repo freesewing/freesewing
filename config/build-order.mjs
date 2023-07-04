@@ -9,7 +9,6 @@ import { designs, plugins, packages } from './software/index.mjs'
 const first = ['core', 'remark-jargon', 'snapseries']
 const blocks = ['brian', 'titan', 'bella', 'breanna']
 const extended = ['bent', 'simon', 'carlton', 'ursula']
-const last = ['i18n']
 
 export const buildOrder = [
   // First build FreeSewing core library and config-helpers
@@ -31,7 +30,5 @@ export const buildOrder = [
   Object.keys(designs).filter((id) => [...blocks, ...extended].indexOf(id) === -1),
 
   // Finally build the rest of the packages
-  Object.keys(packages).filter((id) => first.indexOf(id) === -1 && last.indexOf(id) === -1),
-
-  last,
+  Object.keys(packages).filter((id) => first.indexOf(id) === -1),
 ]

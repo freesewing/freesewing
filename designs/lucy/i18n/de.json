@@ -1,0 +1,22 @@
+{
+  "t": "Lucy, die Umbindetasche",
+  "d": "Lucy ist eine historische Tasche, die du um deine Taille binden kannst.",
+  "p": {
+    "pocket": "Tasche"
+  },
+  "s": {},
+  "o": {
+    "width": {
+      "t": "Breite",
+      "d": "Breite der Tasche"
+    },
+    "length": {
+      "t": "Länge",
+      "d": "Länge (Tiefe) der Tasche"
+    },
+    "edge": {
+      "t": "Abschrägung",
+      "d": "Steuert, wie sehr die Öffnung der Tasche nach innen abgeschrägt ist"
+    }
+  }
+}

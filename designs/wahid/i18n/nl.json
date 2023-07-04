@@ -1,0 +1,73 @@
+{
+  "t": "Wahid gilet",
+  "d": "Wahid is een klassiek aansluitend gilet.",
+  "p": {
+    "back": "Achterzijde",
+    "front": "Voorzijde",
+    "frontFacing": "Beleg vooraan",
+    "frontLining": "Voering vooraan",
+    "pocketBag": "Binnenzak",
+    "pocketFacing": "Zak beleg",
+    "pocketInterfacing": "Tussenvoering zak",
+    "pocketWelt": "Paspel zak"
+  },
+  "s": {},
+  "o": {
+    "backScyeDart": {
+      "t": "Achterste armsgat neep",
+      "d": "De hoeveelheid die verwijderd wordt met een neep aan de achterkant van het armsgat."
+    },
+    "frontScyeDart": {
+      "t": "Neep armsgat voor",
+      "d": "De hoeveelheid die verwijderd wordt met een neep aan de voorkant van het armsgat."
+    },
+    "pocketLocation": {
+      "t": "Locatie van de zak",
+      "d": "Bepaalt de locatie van de zak"
+    },
+    "pocketWidth": {
+      "t": "Breedte van de zak",
+      "d": "Bepaalt de breedte van de zak"
+    },
+    "weltHeight": {
+      "t": "Hoogte paspel zak",
+      "d": "De hoogte van de paspel van de zak"
+    },
+    "necklineDrop": {
+      "t": "Hoogte halslijn",
+      "d": "Bepaalt hoe laag de halslijn vooraan wordt"
+    },
+    "frontStyle": {
+      "t": "Stijl halsopening",
+      "d": "Stijl van de halsopening"
+    },
+    "hemStyle": {
+      "t": "Vorm zoom",
+      "d": "De vorm van de zoom vooraan"
+    },
+    "hemRadius": {
+      "t": "Ronding zoom",
+      "d": "De straal van de ronding van de zoom"
+    },
+    "backInset": {
+      "t": "Insnede rug",
+      "d": "Hoeveel het armsgat achteraan naar binnen gaat"
+    },
+    "frontInset": {
+      "t": "Insnede voorpand",
+      "d": "Hoeveel het armsgat vooraan naar binnen gaat"
+    },
+    "shoulderInset": {
+      "t": "Insnede schouder",
+      "d": "Hoeveel de schoudernaad aan de schouder naar binnen gaat"
+    },
+    "neckInset": {
+      "t": "Insnede nek",
+      "d": "Hoeveel de schoudernaad aan de hals naar binnen gaat"
+    },
+    "pocketAngle": {
+      "t": "Hoek zak",
+      "d": "De hoek van de zakopening"
+    }
+  }
+}

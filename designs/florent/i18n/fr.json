@@ -1,0 +1,18 @@
+{
+  "t": "Casquette plate Florent",
+  "d": "Florent est une casquette plate, une casquette arrondie avec un petit bord raide à l'avant.",
+  "p": {
+    "brimBottom": "Brim bottom",
+    "brimInterfacing": "Brim interfacing",
+    "brimTop": "Brim Top",
+    "side": "Side",
+    "top": "Top"
+  },
+  "s": {},
+  "o": {
+    "headEase": {
+      "t": "Aisance de tour de tête",
+      "d": "La quantité d'aisance autour de votre tête"
+    }
+  }
+}

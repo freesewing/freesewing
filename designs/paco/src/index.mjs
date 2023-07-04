@@ -1,5 +1,7 @@
-import { Design } from '@freesewing/core'
+import { Design, mergeI18n } from '@freesewing/core'
 import { data } from '../data.mjs'
+import { i18n as titanI18n } from '@freesewing/titan'
+import { i18n as pacoI18n } from '../i18n/index.mjs'
 import { back } from './back.mjs'
 import { front } from './front.mjs'
 import { cuff } from './cuff.mjs'
@@ -24,6 +26,9 @@ const Paco = new Design({
   ],
 })
 
+// Merge translations
+const i18n = mergeI18n([titanI18n, pacoI18n])
+
 // Named exports
 export {
   back,
@@ -35,4 +40,5 @@ export {
   backPocketWeltInterfacing,
   waistband,
   Paco,
+  i18n,
 }

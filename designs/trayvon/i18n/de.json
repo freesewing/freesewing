@@ -1,0 +1,24 @@
+{
+  "t": "Trayvon, die Krawatte",
+  "d": "Trayvon ist eine Krawatte, die für ein professionelles Ergebnis an keiner Ecke spart.",
+  "p": {
+    "fabricLoop": "Fabric loop",
+    "fabricTail": "Stoffschwanz",
+    "fabricTip": "Stoffspitze",
+    "interfacingTail": "Einlageschwanz",
+    "interfacingTip": "Einlagespitze",
+    "liningTail": "Futterschwanz",
+    "liningTip": "Futterspitze"
+  },
+  "s": {},
+  "o": {
+    "tipWidth": {
+      "t": "Spitzenbreite",
+      "d": "Die Breite deiner Krawatte an der Spitze"
+    },
+    "knotWidth": {
+      "t": "Knotenbreite",
+      "d": "Die Breite deiner Krawatte am Knoten"
+    }
+  }
+}

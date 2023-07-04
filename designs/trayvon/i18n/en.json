@@ -1,0 +1,28 @@
+{
+  "t": "Trayvon tie",
+  "d": "Trayvon is a tie that cuts no corners for a professional result.",
+  "p": {
+    "fabricLoop": "Fabric loop",
+    "fabricTail": "Fabric tail",
+    "fabricTip": "Fabric tip",
+    "interfacingTail": "Interfacing tail",
+    "interfacingTip": "Interfacing tip",
+    "liningTail": "Lining tail",
+    "liningTip": "Lining tip"
+  },
+  "s": {},
+  "o": {
+    "tipWidth": {
+      "t": "Tip width",
+      "d": "The width of your tie at the tip"
+    },
+    "knotWidth": {
+      "t": "Knot width",
+      "d": "The width of your tie at the knot"
+    },
+    "lengthBonus": {
+      "t": "Length bonus",
+      "d": "How much longer than the default length to make the tie."
+    }
+  }
+}

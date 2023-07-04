@@ -1,0 +1,47 @@
+{
+  "t": "Sandy circle skirt",
+  "d": "Sandy is an adaptable circle skirt pattern.",
+  "p": {
+    "skirt": "Skirt",
+    "waistband": "Waistband"
+  },
+  "s": {},
+  "o": {
+    "waistbandWidth": {
+      "t": "Waistband width",
+      "d": "Controls the width of the waistband."
+    },
+    "waistbandPosition": {
+      "t": "Waistband position",
+      "d": "Controls the position of the waistband."
+    },
+    "waistbandShape": {
+      "t": "Waistband shape",
+      "d": "Whether you want a straight or shaped waistband."
+    },
+    "circleRatio": {
+      "t": "Circle ratio",
+      "d": "The percentage of a circle you want the skirt to be."
+    },
+    "waistbandOverlap": {
+      "t": "Waistband overlap",
+      "d": "The amount by which the waistband overlaps."
+    },
+    "gathering": {
+      "t": "Gathering",
+      "d": "The percent by which the top of the skirt is longer than the bottom of the waistband."
+    },
+    "lengthBonus": {
+      "t": "Length bonus",
+      "d": "Determines how long the skirt will be."
+    },
+    "seamlessFullCircle": {
+      "t": "Seamless full circle",
+      "d": "Enables a seamless full circle skirt."
+    },
+    "hemWidth": {
+      "t": "Hem width",
+      "d": "Width of the hem"
+    }
+  }
+}

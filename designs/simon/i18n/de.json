@@ -1,0 +1,187 @@
+{
+  "t": "Simon, das Hemd",
+  "d": "Simon ist ein sehr anpassbares Hemdenschnittmuster für Personen ohne Brüste.",
+  "p": {
+    "back": "Rückseite",
+    "buttonholePlacket": "Knopflochleiste",
+    "buttonPlacket": "Knopfleiste",
+    "collar": "Kragen",
+    "collarStand": "Kragensteg",
+    "cuff": "Manschette",
+    "front": "Vorderseite",
+    "frontLeft": "Vorderseite links",
+    "frontRight": "Vorderseite rechts",
+    "sleevePlacketOverlap": "Übertritt der Ärmelleiste",
+    "sleevePlacketUnderlap": "Untertritt der Ärmelleiste",
+    "sleeve": "Ärmel",
+    "yoke": "Passe"
+  },
+  "s": {
+    "buttonholePlacket": "Knopflochleiste",
+    "buttonPlacket": "Knopfleiste",
+    "collarAndUndercollar": "Kragen und Unterkragen",
+    "collarStand": "Kragensteg",
+    "cutUndercollarSlightlySmaller": "Unterkragen etwas kleiner schneiden",
+    "frontLeft": "Vorne links",
+    "frontRight": "Vorne rechts",
+    "sideOfTheCollarStand": "Seite des Kragenstegs",
+    "sleevePlacketOverlap": "Übertritt der Ärmelleiste",
+    "sleevePlacketUnderlap": "Untertritt der Ärmelleiste",
+    "yoke": "Passe",
+    "matchHere": "Stoffe entlang dieser Linie aufeinander abpassen"
+  },
+  "o": {
+    "backDarts": {
+      "t": "Hintere Abnäher",
+      "d": "Ob Abnäher am Rücken eingefügt werden sollen oder nicht"
+    },
+    "backDartShaping": {
+      "t": "Formgebung der hinteren Abnäher",
+      "d": "Wie stark die hinteren Abnäher die Figur betonen"
+    },
+    "barrelCuffNarrowButton": {
+      "t": "Manschette schmaler Knopf",
+      "d": "Gibt an, ob ein Knopf hinzugefügt wird, um die Manschetten enger zu binden. Diese Option ist nur für Einfachmanschetten relevant."
+    },
+    "boxPleat": {
+      "t": "Kellerfalte",
+      "d": "Ob eine Kellerfalte am Rückenteil eingefügt wird oder nicht"
+    },
+    "boxPleatWidth": {
+      "t": "Kellerfaltenweite",
+      "d": "Gesamtbreite der Kellerfalte"
+    },
+    "boxPleatFold": {
+      "t": "Kellerfalte Falz",
+      "d": "Der Betrag, um den die Kellerfalte nach innen gefaltet wird"
+    },
+    "buttonPlacketStyle": {
+      "t": "Knopfleiste Stil",
+      "d": "Stil der Knopfleiste."
+    },
+    "buttonPlacketWidth": {
+      "t": "Knopfleiste Breite",
+      "d": "Breite der Knopfleiste."
+    },
+    "buttonFreeLength": {
+      "t": "Freie Länge Knopf",
+      "d": "Wie viel am unteren Ende der Verschlussleiste knopf-frei bleiben soll."
+    },
+    "buttonholePlacketFoldWidth": {
+      "t": "Knopflochleiste Falzbreite",
+      "d": "Breite der Falz der Knopflochleiste."
+    },
+    "buttonholePlacketStyle": {
+      "t": "Knopflochleiste Stil",
+      "d": "Stil der Knoplochfleiste."
+    },
+    "buttonholePlacketWidth": {
+      "t": "Knopflochleiste Breite",
+      "d": "Breite der Knopflochleiste."
+    },
+    "buttons": {
+      "t": "Anzahl der Knöpfe",
+      "d": "Die Anzahl der Knöpfe am vorderen Verschluss."
+    },
+    "collarAngle": {
+      "t": "Kragenwinkel",
+      "d": "Der Winkel der Kragenspitzen."
+    },
+    "collarBend": {
+      "t": "Kragenkrümmung",
+      "d": "Die Krümmung des Kragens."
+    },
+    "collarFlare": {
+      "t": "Kragenausstellung",
+      "d": "Wie weit die Kragenspitzen ausgestellt sind."
+    },
+    "collarGap": {
+      "t": "Kragenlücke",
+      "d": "Der Spalt zwischen den beiden Kragenenden."
+    },
+    "collarRoll": {
+      "t": "Kragenrolle",
+      "d": "Der Betrag, um den der Oberkragen größer ist als der Unterkragen."
+    },
+    "collarStandBend": {
+      "t": "Kragenstegbiegung",
+      "d": "Die Biegung des Kragensstegs."
+    },
+    "collarStandCurve": {
+      "t": "Kragenstegkrümmung",
+      "d": "Die Krümmung des Kragensstegs."
+    },
+    "collarStandWidth": {
+      "t": "Kragenstegbreite",
+      "d": "Breite des Kragenstegs."
+    },
+    "cuffButtonRows": {
+      "t": "Manschettenknopfreihen",
+      "d": "Gibt an, ob eine einzelne oder doppelte Reihe von Manschettenknöpfen erstellt werden soll. Diese Option ist nur für Einfachmanschetten relevant."
+    },
+    "cuffDrape": {
+      "t": "Manschette drapieren",
+      "d": "Der Betrag, um den der Ärmel breiter ist als die Manschette, an der Stelle wo sie zusammengefügt werden."
+    },
+    "cuffLength": {
+      "t": "Manschettenlänge",
+      "d": "Die Länge der Manschetten."
+    },
+    "cuffStyle": {
+      "t": "Manschettenstil",
+      "d": "Der Stil der Manschetten."
+    },
+    "extraTopButton": {
+      "t": "Zusätzlicher oberer Knopf",
+      "d": "Gibt an, ob am vorderen Verschluss ein zusätzlicher oberer Knopf hinzugefügt werden soll."
+    },
+    "ffsa": {
+      "t": "Flachgeplagte Naht erlaubt",
+      "d": "Die Anzahl der Nahtzuschüsse für geflochtene Nähte im Verhältnis zum regulären Nahtzuschuss"
+    },
+    "hemCurve": {
+      "t": "Saumkurve",
+      "d": "Die Höhe der Kurve an einem abgerundeten Saum."
+    },
+    "hemStyle": {
+      "t": "Saumstil",
+      "d": "Der Stil des Hemdsaumes."
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at the hips."
+    },
+    "roundBack": {
+      "t": "Runder Rücken",
+      "d": "Damit die Passform für einen runde(re)n Rücken besser ist, fügt diese Option etwas Länge in der hinteren Mitte (an der Passe) hinzu, die sich zu den Seiten hin verjüngt."
+    },
+    "seperateButtonholePlacket": {
+      "t": "Separate Knopflochleiste",
+      "d": "Eine separate Knopflochleiste entwerfen."
+    },
+    "seperateButtonPlacket": {
+      "t": "Separate Knopfleiste",
+      "d": "Eine separate Knopfleiste entwerfen"
+    },
+    "sleevePlacketLength": {
+      "t": "Ärmelleistenlänge",
+      "d": "Die Länge der Ärmelleiste."
+    },
+    "sleevePlacketWidth": {
+      "t": "Ärmelleiste Breite",
+      "d": "Die Breite der Ärmelleiste."
+    },
+    "splitYoke": {
+      "t": "Geteilte Passe",
+      "d": "Ob eine geteilte oder normale Passe erstellt werden soll."
+    },
+    "waistEase": {
+      "t": "Taillenzugabe",
+      "d": "Der Betrag, der an deiner (natürlichen) Taille als Bequemlichkeits-/Bewegslichkeitszugabe zugegeben wird."
+    },
+    "yokeHeight": {
+      "t": "Passenhöhe",
+      "d": "Steuert die Höhe der Passe"
+    }
+  }
+}

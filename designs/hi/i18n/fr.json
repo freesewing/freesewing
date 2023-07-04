@@ -1,0 +1,34 @@
+{
+  "t": "Hi le requin",
+  "d": "Le requin le plus amical du monde",
+  "p": {
+    "aboveMouth": "Above mouth",
+    "belly": "Belly",
+    "body": "Body",
+    "bottomFin": "Bottom fin",
+    "lowerTeeth": "Lower teetch",
+    "mouth": "Mouth",
+    "tail": "Tail",
+    "topFin": "Top fin",
+    "upperTeeth": "Upper teeth"
+  },
+  "s": {},
+  "o": {
+    "hungry": {
+      "t": "Affamé",
+      "d": "Change la forme de la bouche pour voir que Hi a faim"
+    },
+    "nosePointiness": {
+      "t": "Forme pointue du nez",
+      "d": "Contrôle comment le nez de Hi est pointu"
+    },
+    "aggressive": {
+      "t": "Agressif",
+      "d": "Donnez des dents pointues à Hi, ou non"
+    },
+    "size": {
+      "t": "Taille",
+      "d": "Les requins sont disponibles dans toutes les tailles, tout comme Hi"
+    }
+  }
+}

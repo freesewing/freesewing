@@ -27,7 +27,7 @@ export default NewDesignPage
 export async function getStaticProps({ locale, params }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, [`o_${params.design}`, ...namespaces])),
+      ...(await serverSideTranslations(locale, [params.design, ...namespaces])),
       design: params.design,
       page: {
         locale,

@@ -1,0 +1,50 @@
+{
+  "t": "Tunique Tiberius",
+  "d": "Tiberius est une tunique romaine historique",
+  "p": {
+    "tunica": "Tunica"
+  },
+  "s": {},
+  "o": {
+    "headRatio": {
+      "t": "Ratio tête",
+      "d": "Contrôle la taille de l'ouverture de la tête"
+    },
+    "armholeDrop": {
+      "t": "Abaissement d'emmanchure",
+      "d": "Contrôle la profondeur de l'emmanchure"
+    },
+    "lengthBonus": {
+      "t": "Supplément de longueur",
+      "d": "Permet de varier la longueur du vêtement"
+    },
+    "widthBonus": {
+      "t": "Bonus de largeur",
+      "d": "Permet de varier la largeur du vêtement"
+    },
+    "clavi": {
+      "t": "Bande de pourpre",
+      "d": "Inclure ou non des guides pour la bande de pourpre"
+    },
+    "clavusLocation": {
+      "t": "Emplacement de la bande de pourpre",
+      "d": "Contrôle la localisation de la bande de pourpre"
+    },
+    "clavusWidth": {
+      "t": "Largeur de la bande de pourpre",
+      "d": "Contrôle la largeur de la bande de pourpre"
+    },
+    "length": {
+      "t": "Longueur",
+      "d": "Contrôle la longueur du vêtement"
+    },
+    "width": {
+      "t": "Largeur",
+      "d": "Contrôle la largeur du vêtement"
+    },
+    "forceWidth": {
+      "t": "Forcer la largeur",
+      "d": "Appliquer les paramètres de largeur indépendamment des contraintes"
+    }
+  }
+}

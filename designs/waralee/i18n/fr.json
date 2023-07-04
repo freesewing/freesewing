@@ -1,0 +1,75 @@
+{
+  "t": "Pantalon portefeuille Waralee",
+  "d": "Waralee sont des pantalons enveloppés.",
+  "p": {
+    "backPocket": "Back pocket",
+    "cutout": "Cutout",
+    "facings": "Facings",
+    "mini": "Mini",
+    "pants": "Pants",
+    "pocket": "Pocket",
+    "strapBack": "Strap back",
+    "strapFront": "Strap front",
+    "waistbandBack": "Waistband back",
+    "waistbandFront": "Waistband front"
+  },
+  "s": {},
+  "o": {
+    "backPocket": {
+      "t": "Poche arrière",
+      "d": "S'il faut inclure une poche arrière ou non"
+    },
+    "frontPocket": {
+      "t": "Poche avant",
+      "d": "Inclure ou non des poches avant"
+    },
+    "hemWidth": {
+      "t": "Taille des ourlets",
+      "d": "Taille de l'ourlet au bas du pantalon"
+    },
+    "waistbandWidth": {
+      "t": "Ceinture",
+      "d": "Taille de la ceinture"
+    },
+    "waistRaise": {
+      "t": "Hauteur de taille",
+      "d": "Combien il faut élever la taille de la mesure de hauteur d'assise, ce qui influence la profondeur de la coupe de l'entre-jambe."
+    },
+    "crotchBack": {
+      "t": "Fourche arrière",
+      "d": "Le pourcentage de la circonférence d'assise à l'arrière. Cela crée plus ou moins d'espace entre la couture latérale et le dos."
+    },
+    "crotchFront": {
+      "t": "Fourche avant",
+      "d": "Le pourcentage de la circonférence d'assise à l'avant. Cela crée plus ou moins d'espace entre la couture latérale et le devant."
+    },
+    "crotchFactorBackHor": {
+      "t": "Reculer la fourche arrière",
+      "d": "Utilisé pour déplacer la courbe de la fourche arrière horizontalement"
+    },
+    "crotchFactorBackVer": {
+      "t": "Remonter la fourche arrière",
+      "d": "Utilisé pour déplacer la courbe de la fourche arrière verticalement"
+    },
+    "crotchFactorFrontHor": {
+      "t": "Avancer la fourche avant",
+      "d": "Utilisé pour déplacer la courbe de la fourche avant horizontalement"
+    },
+    "crotchFactorFrontVer": {
+      "t": "Remonter la fourche avant",
+      "d": "Utilisé pour déplacer la courbe de la fourche avant verticalement"
+    },
+    "waistOverlap": {
+      "t": "Chevauchement de la ceinture",
+      "d": "Cela indique combien vous voulez que les pans de la jambe se chevauchent à la taille. Un réglage de 0 les ferait rencontrer à la couture latérale, et un cadre de 100 les fait se rencontrer à l'avant/arrière."
+    },
+    "legShortening": {
+      "t": "Réduction des jambes",
+      "d": "Cela indique la longueur du pantalon. C'est un facteur de la mesure de l'entrejambe. Plus la valeur est grande, plus elle sera retirée de la longueur."
+    },
+    "backRaise": {
+      "t": "Élévation arrière",
+      "d": "Ce réglage lève la taille dans le dos, la taille ne se pose pas horizontalement, mais est inclinée à l'arrière. Ce réglage vous permet de la relever dans le dos si vous en avez besoin pour un bon ajustement."
+    }
+  }
+}

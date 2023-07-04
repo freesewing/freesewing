@@ -1,6 +1,5 @@
 {
   "core": "A library for creating made-to-measure sewing patterns",
-  "i18n": "Translations for the FreeSewing project",
   "models": "Body measurements data for a range of default sizes",
   "new-design": "Initializer package for a new FreeSewing design: npx @freesewing/new-design",
   "prettier-config": "FreeSewing's shared configuration for prettier",
