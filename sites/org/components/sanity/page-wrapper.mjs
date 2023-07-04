@@ -7,6 +7,8 @@ import { Author } from './author.mjs'
 import { TimeAgo } from 'shared/components/wrappers/mdx.mjs'
 import { SanityMdxWrapper } from './mdx-wrapper.mjs'
 import { useTranslation } from 'next-i18next'
+import { siteConfig } from 'site/site.config.mjs'
+import { sanityLoader } from 'site/components/sanity/utils.mjs'
 
 export const ns = ['common', 'posts', ...pageNs]
 
@@ -77,4 +79,22 @@ export const SanityPageWrapper = ({
       </article>
     </PageWrapper>
   )
+}
+
+export const getSanityStaticPaths = (type) => {
+  return async () => {
+    const filter = `{"slug": slug.current, _type}`
+    const query = `
+      *[_type in [${siteConfig.languages.map((l) => `"${type}${l}"`).join(', ')}]] ${filter}`
+
+    const allPosts = await sanityLoader({ query }).catch((err) => console.log(err))
+
+    return {
+      paths: allPosts.map((p) => {
+        const lng = p._type.replace(type, '')
+        return `${lng === 'en' ? '' : '/' + lng}/${type}/${p.slug}`
+      }),
+      fallback: false,
+    }
+  }
 }

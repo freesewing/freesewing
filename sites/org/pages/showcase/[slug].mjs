@@ -1,4 +1,8 @@
-import { SanityPageWrapper, ns as sanityNs } from 'site/components/sanity/page-wrapper.mjs'
+import {
+  SanityPageWrapper,
+  getSanityStaticPaths,
+  ns as sanityNs,
+} from 'site/components/sanity/page-wrapper.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { sanityLoader, sanitySiteImage } from 'site/components/sanity/utils.mjs'
 
@@ -55,21 +59,6 @@ export async function getStaticProps({ params, locale }) {
   }
 }
 
-export const getStaticPaths = async () => {
-  const paths = await sanityLoader({ language: 'en', type: 'showcase' })
-    .then((data) => data.map((post) => `/showcase/${post.slug.current}`))
-    .catch((err) => console.log(err))
-
-  return {
-    paths: [
-      ...paths,
-      ...paths.map((p) => `/de${p}`),
-      ...paths.map((p) => `/es${p}`),
-      ...paths.map((p) => `/fr${p}`),
-      ...paths.map((p) => `/nl${p}`),
-    ],
-    fallback: false,
-  }
-}
+export const getStaticPaths = getSanityStaticPaths('showcase')
 
 export default ShowcasePage

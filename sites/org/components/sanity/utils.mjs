@@ -10,8 +10,7 @@ export const sanityLoader = async ({ query, language, type, slug, order, filters
       projectId: siteConfig.sanity.project,
       dataset: siteConfig.sanity.dataset,
       apiVersion: siteConfig.sanity.apiVersion,
-      // token: process.env.SANITY_TOKEN,
-      useCdn: false,
+      useCdn: true,
     })
 
   if (!query) {
