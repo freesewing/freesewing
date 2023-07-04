@@ -5,10 +5,11 @@ export const plugin = {
   version,
   hooks: {
     insertText: (locale, text, t, pattern) => {
-      if (t instanceof Function) return t(text)
+      if (t instanceof Function) return t(text, locale)
+      else if (typeof t[locale] === 'object') return t[locale][text] || text
       else {
         const msg =
-          "No translation method was passed to the i18n plugin. This plugin won't do anything without a translation method"
+          "No translation method or object was passed to the i18n plugin. This plugin won't do anything without that"
         if (pattern?.store?.log?.warning) {
           if (!pattern.store.get(['plugins', 'plugin-i18n', 'missingMethodWarning'])) {
             pattern.store.set(['plugins', 'plugin-i18n', 'missingMethodWarning'], true)
