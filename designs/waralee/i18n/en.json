@@ -1,0 +1,96 @@
+{
+  "t": "Waralee wrap pants",
+  "d": "Waralee are wrap pants.",
+  "p": {
+    "backPocket": "Back pocket",
+    "cutout": "Cutout",
+    "facings": "Facings",
+    "mini": "Mini",
+    "pants": "Pants",
+    "pantsProto": "FIXME: Give this part a name",
+    "pocket": "Pocket",
+    "strapBack": "Strap back",
+    "strapFront": "Strap front",
+    "waistbandBack": "Waistband back",
+    "waistbandFront": "Waistband front"
+  },
+  "s": {},
+  "o": {
+    "backPocket": {
+      "t": "Back pocket",
+      "d": "Whether to include a back pocket or not"
+    },
+    "frontPocket": {
+      "t": "Front pocket",
+      "d": "Whether to include a front pocket or not"
+    },
+    "hemWidth": {
+      "t": "Hem size",
+      "d": "Size of the hem at the bottom of the pants"
+    },
+    "waistbandWidth": {
+      "t": "Waist Band",
+      "d": "Size of the waist band"
+    },
+    "waistRaise": {
+      "t": "Waist Raise",
+      "d": "How much to raise the waist from the seat depth measurement. This influences the depth of the crotch cut-out."
+    },
+    "crotchBack": {
+      "t": "Crotch Back",
+      "d": "The percentage of the seat circumference that the back crotch needs to occupy. This creates more or less space between the side seam and the back."
+    },
+    "crotchFront": {
+      "t": "Crotch Front",
+      "d": "The percentage of the seat circumference that the front crotch needs to occupy. This creates more or less space between the side seam and the front."
+    },
+    "crotchFactorBackHor": {
+      "t": "Back Crotch Factor Horizontal",
+      "d": "Used to move the curve of the crotch in the back horizontally"
+    },
+    "crotchFactorBackVer": {
+      "t": "Back Crotch Factor Vertical",
+      "d": "Used to move the curve of the crotch in the back vertically"
+    },
+    "crotchFactorFrontHor": {
+      "t": "Front Crotch Factor Horizontal",
+      "d": "Used to move the curve of the crotch in the front horizontally"
+    },
+    "crotchFactorFrontVer": {
+      "t": "Front Crotch Factor Vertical",
+      "d": "Used to move the curve of the crotch in the front vertically"
+    },
+    "waistOverlap": {
+      "t": "Waist Overlap",
+      "d": "This dicates how much you want the leg flaps to overlap at the waist. A setting of 0 would have them meet at the side seam, and a setting of 100 makes them meet at the front/back."
+    },
+    "legShortening": {
+      "t": "Leg Shortening",
+      "d": "This dictates how long the pants will be. It is a factor of the inseam measurement. The larger the value, the more that will be taken off the length."
+    },
+    "backRaise": {
+      "t": "Back Raise",
+      "d": "This setting raises the waist in the back. Our waist does not sit horizontally, but is angled up at the back. This seting allows you to raise this in the back if you need it for a good fit."
+    },
+    "fitWaist": {
+      "t": "FIXME: Give this option a name",
+      "d": "FIXME: Give this option a description"
+    },
+    "frontPocketStyle": {
+      "t": "FIXME: Give this option a name",
+      "d": "FIXME: Give this option a description"
+    },
+    "knotInFront": {
+      "t": "FIXME: Give this option a name",
+      "d": "FIXME: Give this option a description"
+    },
+    "separateWaistband": {
+      "t": "FIXME: Give this option a name",
+      "d": "FIXME: Give this option a description"
+    },
+    "showMini": {
+      "t": "FIXME: Give this option a name",
+      "d": "FIXME: Give this option a description"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "t": "Cathrin corset",
+  "d": "Cathrin is an underbust corset or waist trainer.",
+  "p": {
+    "base": "Base",
+    "panel1": "Panel 1",
+    "panel2": "Panel 2",
+    "panel3": "Panel 3",
+    "panel4": "Panel 4",
+    "panel5": "Panel 5",
+    "panel6": "Panel 6",
+    "panels": "Panels"
+  },
+  "s": {},
+  "o": {
+    "panels": {
+      "t": "Number of panels",
+      "d": "The number of panels to draft. More panels are better to fit a curvier model."
+    },
+    "waistReduction": {
+      "t": "Waist reduction",
+      "d": "The amount by which you want the corset to pinch your waist."
+    },
+    "backOpening": {
+      "t": "Back opening",
+      "d": "Opening at the center back closure."
+    },
+    "backRise": {
+      "t": "Back rise",
+      "d": "How much the back panels rise from your arms to your center back."
+    },
+    "backDrop": {
+      "t": "Back drop",
+      "d": "How much the back panels lower from your hips towards your center back. Negative values will raise the back."
+    },
+    "frontRise": {
+      "t": "Front rise",
+      "d": "Rise of the front panels at center front, between your breasts. Negative values will lower them."
+    },
+    "frontDrop": {
+      "t": "Front drop",
+      "d": "How much the front panels lower from your hips towards your center front."
+    },
+    "hipRise": {
+      "t": "Hip rise",
+      "d": "How much the side panels rise on your hips."
+    }
+  }
+}

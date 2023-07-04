@@ -1,0 +1,18 @@
+{
+  "t": "Florent, boina",
+  "d": "Florent es una boina, redondeada, con una pequeña visera rígida en en la parte de delante.",
+  "p": {
+    "brimBottom": "Brim bottom",
+    "brimInterfacing": "Brim interfacing",
+    "brimTop": "Brim Top",
+    "side": "Side",
+    "top": "Top"
+  },
+  "s": {},
+  "o": {
+    "headEase": {
+      "t": "Holgura de cabeza",
+      "d": "La cantidad de holgura alrededor de la cabeza"
+    }
+  }
+}

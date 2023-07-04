@@ -1,0 +1,37 @@
+{
+  "t": "Pantalon Paco",
+  "d": "Paco est un pantalon d'été décontracté mais élégant.",
+  "p": {
+    "back": "Back",
+    "backPocketBag": "Back pocket bag",
+    "backPocketWelt": "Back pocket welt",
+    "backPocketWeltInterfacing": "Bacl pocket welt interfacing",
+    "cuff": "Cuff",
+    "front": "Front",
+    "frontPocketBag": "Front pocket bag",
+    "waistband": "Waistband"
+  },
+  "s": {},
+  "o": {
+    "heelEase": {
+      "t": "Aisance de talon",
+      "d": "La quantité d'aisance à votre talon (au passage la jambe de pantalon)"
+    },
+    "frontPockets": {
+      "t": "Poches avant",
+      "d": "Si oui ou non ajouter des poches avant sur la couture latérale"
+    },
+    "backPockets": {
+      "t": "Poches arrière",
+      "d": "Si oui ou non ajouter des poches à l'arrière"
+    },
+    "elasticatedHem": {
+      "t": "Ourlet élastiqué",
+      "d": "Si vous voulez ou non un ourlet élastiqué"
+    },
+    "ankleElastic": {
+      "t": "Largeur élastique de cheville/ourlet",
+      "d": "Largeur de l'élastique (optionnel) à la cheville/ourlet"
+    }
+  }
+}

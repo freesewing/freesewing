@@ -1,0 +1,87 @@
+{
+  "t": "Bella body block",
+  "d": "Bella is a basic body block for people with breasts.",
+  "p": {
+    "back": "Back",
+    "frontSideDart": "Front"
+  },
+  "s": {},
+  "o": {
+    "chestEase": {
+      "t": "Chest ease",
+      "d": "Controls the amount of ease at the fullest part of your chest"
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls the amount of ease at your waist"
+    },
+    "bustSpanEase": {
+      "t": "Bust span ease",
+      "d": "Controls the amount of (horizontal) ease added to your bust span when locating the bust point."
+    },
+    "shoulderToShoulderEase": {
+      "t": "Shoulder to Shoulder ease",
+      "d": "Controls the amount of ease between your shoulders. Initially set to -.5% because Bella implements a block that is used in the industry."
+    },
+    "fullChestEaseReduction": {
+      "t": "Full chest ease reduction",
+      "d": "Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area"
+    },
+    "backDartHeight": {
+      "t": "Back dart height",
+      "d": "Controls the height of the back dart"
+    },
+    "bustDartLength": {
+      "t": "Bust dart length",
+      "d": "Controls the length of the bust dart"
+    },
+    "waistDartLength": {
+      "t": "Waist dart length",
+      "d": "Controls the length of the waist dart"
+    },
+    "bustDartCurve": {
+      "t": "Bust dart curve",
+      "d": "Controls the curvature of the bust dart"
+    },
+    "armholeDepth": {
+      "t": "Armhole depth",
+      "d": "Controls the depth of the armhole"
+    },
+    "backArmholeSlant": {
+      "t": "Back armhole slant",
+      "d": "Slightly rotates the armhole around its pitch point"
+    },
+    "frontArmholeCurvature": {
+      "t": "Front armhole curvature",
+      "d": "Controls how deep the armhole is scooped out at the front bottom"
+    },
+    "backArmholeCurvature": {
+      "t": "Back armhole curvature",
+      "d": "Controls how deep the armhole is scooped out at the back bottom"
+    },
+    "frontArmholePitchDepth": {
+      "t": "Front armhole pitch depth",
+      "d": "Tweaks the horizontal placement of the front armhole pitch point"
+    },
+    "backArmholePitchDepth": {
+      "t": "Back armhole pitch depth",
+      "d": "Tweaks the horizontal placement of the back armhole pitch point"
+    },
+    "backNeckCutout": {
+      "t": "Back neck cutout",
+      "d": "Controls how deep the neck opening is scooped out at at the back"
+    },
+    "backHemSlope": {
+      "t": "Back hem slope",
+      "d": "Controls the slope of the hem at the back"
+    },
+    "frontShoulderWidth": {
+      "t": "Front shoulder width",
+      "d": "Controls the narrowness of the front shoulders relative to the back"
+    },
+    "highBustWidth": {
+      "t": "High bust width",
+      "d": "Allows you to tweak the hight bust width at the front"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "t": "Chemise Simone",
+  "d": "Simone est Simon, adapté pour les poitrines avec seins.",
+  "p": {
+    "back": "Retour",
+    "buttonholePlacket": "Patte de boutonnière",
+    "buttonPlacket": "Patte de boutonnage",
+    "collar": "Collier",
+    "collarStand": "Support de collier",
+    "cuff": "Manchette",
+    "fbaFront": "FBA Avant",
+    "front": "Avant",
+    "frontLeft": "Avant gauche",
+    "frontRight": "Avant droit",
+    "sleevePlacketOverlap": "Patte de manche haut",
+    "sleevePlacketUnderlap": "Patte de manche bas",
+    "yoke": "Empiècement"
+  },
+  "s": {},
+  "o": {
+    "bustAlignedButtons": {
+      "t": "Boutons alignés sur le buste",
+      "d": "Stratégies optionnelles d'espacement des boutons pour assurer un bouton au niveau de la ligne de buste"
+    },
+    "bustDartAngle": {
+      "t": "Angle des pinces poitrine",
+      "d": "Contrôle l'angle par lequel la pince poitrine (sur le côté) s'incline vers le bas"
+    },
+    "bustDartLength": {
+      "t": "Longueur des pinces poitrine",
+      "d": "Contrôle à quel point la pince poitrine sera proche de l'apex du buste (la pointe des seins)"
+    },
+    "contour": {
+      "t": "Angle des découpes princesses",
+      "d": "Contrôle à quel point le volume sera réduit sous les seins"
+    },
+    "frontDarts": {
+      "t": "Pinces de taille",
+      "d": "Inclure ou non des pinces de taille"
+    },
+    "frontDartLength": {
+      "t": "Longueur des pinces de taille",
+      "d": "Contrôle à quel point la pince de taille sera proche de l'apex du buste (la pointe des seins)"
+    }
+  }
+}

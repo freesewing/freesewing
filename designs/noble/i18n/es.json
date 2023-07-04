@@ -1,0 +1,95 @@
+{
+  "t": "Noble, patrón base de torso",
+  "d": "Noble es un patrón base de torso con corte de príncipe o princesa",
+  "p": {
+    "backInside": "Back inside",
+    "backOutside": "Back outside",
+    "backPoints": "Back base",
+    "frontInside": "Front inside",
+    "frontOutside": "Front outside",
+    "frontPoints": "Front base"
+  },
+  "s": {},
+  "o": {
+    "dartPosition": {
+      "t": "Posición de la pinza",
+      "d": "Controls whether to split at the shoulder or armhole"
+    },
+    "chestEase": {
+      "t": "Holgura de pecho",
+      "d": "Controls the amount of ease at the chest"
+    },
+    "waistEase": {
+      "t": "Holgura de cintura",
+      "d": "Controls the amount of ease at the waist"
+    },
+    "bustSpanEase": {
+      "t": "Holgura alrededor del busto",
+      "d": "Controls the amount of ease along the bust span"
+    },
+    "backDartHeight": {
+      "t": "Controla la altura del dart posterior",
+      "d": "Altura del dart trasero"
+    },
+    "waistDartLength": {
+      "t": "Longitud del dart de Waist",
+      "d": "Controla la longitud del dardo de la cintura"
+    },
+    "shoulderDartPosition": {
+      "t": "Shoulder dart position",
+      "d": "Controls the position of the shoulder dart"
+    },
+    "upperDartLength": {
+      "t": "Upper dart length",
+      "d": "Controls the length of the upper dart"
+    },
+    "armholeDartPosition": {
+      "t": "Armhole dart position",
+      "d": "Controls the position of the armhole dart"
+    },
+    "armholeDepth": {
+      "t": "Profundidad del orificio",
+      "d": "Controla la profundidad del orificio"
+    },
+    "backArmholeSlant": {
+      "t": "Slant del orificio trasero",
+      "d": "Controls the slant of the armhole at the back"
+    },
+    "backArmholeCurvature": {
+      "t": "Curvatura del orificio trasero",
+      "d": "Controls how deep the armhole is scooped out at the back"
+    },
+    "frontArmholeCurvature": {
+      "t": "Front armhole curvature",
+      "d": "Controls how deep the armhole is scooped out at the front bottom"
+    },
+    "frontArmholePitchDepth": {
+      "t": "Profundidad del tono del orificio delantero",
+      "d": "Controls how deep the armhole cuts into the front"
+    },
+    "backArmholePitchDepth": {
+      "t": "Profundidad del tono del orificio trasero",
+      "d": "Controls how deep the armhole cuts into the back"
+    },
+    "backNeckCutout": {
+      "t": "Corte trasero del cuello",
+      "d": "Controls how deep the neck is cutout in the back"
+    },
+    "backHemSlope": {
+      "t": "Pendiente trasera",
+      "d": "Constrols the slope of the back hem"
+    },
+    "frontShoulderWidth": {
+      "t": "Ancho del hombro frontal",
+      "d": "Controls how much width is added to the shoulder in the front"
+    },
+    "highBustWidth": {
+      "t": "Ancho de bust alto",
+      "d": "Controls the width of the high bust"
+    },
+    "shoulderToShoulderEase": {
+      "t": "Shoulder to shoulder ease",
+      "d": "Controls the amount of ease along the shoulder to shoulder measurement"
+    }
+  }
+}

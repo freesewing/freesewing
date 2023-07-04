@@ -1,0 +1,36 @@
+{
+  "t": "Albert apron",
+  "d": "Albert is an apron.",
+  "p": {
+    "front": "Front",
+    "pocket": "Pocket",
+    "strap": "Strap"
+  },
+  "s": {},
+  "o": {
+    "backOpening": {
+      "t": "Back opening",
+      "d": "Controls the opening at the back of the apron"
+    },
+    "chestDepth": {
+      "t": "Strap length",
+      "d": "Controls the length of the straps"
+    },
+    "lengthBonus": {
+      "t": "Length bonus",
+      "d": "Controls the length of the apron"
+    },
+    "bibLength": {
+      "t": "Bib length",
+      "d": "Controls the length of the bib"
+    },
+    "bibWidth": {
+      "t": "Bib width",
+      "d": "Controls the width of the bib"
+    },
+    "strapWidth": {
+      "t": "Strap width",
+      "d": "Controls the width of the strap"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "t": "Sac à main Hortensia",
+  "d": "Hortensia est un sac à main.",
+  "p": {
+    "bottompanel": "Bottom panel",
+    "frontpanel": "Front panel",
+    "sidepanel": "Side panel",
+    "sidepanelreinforcement": "Side panel reinforcement",
+    "strap": "Strap",
+    "zipperpanel": "Zipper panel"
+  },
+  "s": {
+    "SidePanel": "Panneau latéral",
+    "FrontBackPanel": "Panneau avant et arrière",
+    "BottomPanel": "Panneau inférieur",
+    "ZipperPanel": "Panneau de zip",
+    "Strap": "Référence",
+    "strapLength": "Longueur des anses",
+    "handleWidth": "Largeur des anses",
+    "zipperSize": "Taille standard de zip",
+    "SidePanelReinforcement": "Panneau de renforcement latéral"
+  },
+  "o": {
+    "size": {
+      "t": "Taille",
+      "d": "Contrôle la taille globale du sac à main"
+    },
+    "zipperSize": {
+      "t": "Taille du Zip",
+      "d": "Quelle taille de zip utliser"
+    },
+    "strapLength": {
+      "t": "Longueur du lien",
+      "d": "Contrôle la longueur des anses"
+    },
+    "handleWidth": {
+      "t": "Largeur d'anse",
+      "d": "Contrôle la largeur de l'anse"
+    }
+  }
+}

@@ -1,15 +1,10 @@
-import { build } from '../../../packages/i18n/src/prebuild.mjs'
-import { denyList } from '../../../packages/i18n/scripts/prebuilder.mjs'
 import fs from 'fs'
 import path from 'path'
 import rdir from 'recursive-readdir'
 import yaml from 'js-yaml'
 import { fileURLToPath } from 'url'
-
-/*
- * List of supported languages
- */
-const locales = ['en', 'es', 'de', 'fr', 'nl']
+import languages from '../../../config/languages.json' assert { type: 'json' }
+import { designs } from '../i18n/designs.mjs'
 
 /*
  * This is where we configure what folders we should check for
@@ -29,11 +24,13 @@ export const folders = {
 /*
  * Helper method to write out JSON files for translation sources
  */
-const writeJson = async (site, locale, namespace, content) =>
+const writeJson = async (site, locale, namespace, content) => {
+  fs.mkdirSync(path.resolve('..', site, 'public', 'locales', locale), { recursive: true })
   fs.writeFileSync(
     path.resolve('..', site, 'public', 'locales', locale, `${namespace}.json`),
     JSON.stringify(content)
   )
+}
 
 /*
  * Helper method to get a list of code-adjecent translation files in a folder.
@@ -63,7 +60,7 @@ const getI18nFileList = async (site) => {
 
   // Filter out the language files
   return allFiles
-    .filter((file) => locales.map((loc) => `.${loc}.yaml`).includes(file.slice(-8)))
+    .filter((file) => languages.map((loc) => `.${loc}.yaml`).includes(file.slice(-8)))
     .sort()
 }
 
@@ -131,8 +128,8 @@ const fixData = (rawData) => {
       throw `No English data for namespace ${namespace}. Bailing out`
     }
     data[namespace] = { en: nsdata.en }
-    // Complete other locales
-    for (const lang of locales.filter((loc) => loc !== 'en')) {
+    // Complete other langauges
+    for (const lang of languages.filter((loc) => loc !== 'en')) {
       if (typeof nsdata[lang] === 'undefined') data[namespace][lang] = nsdata.en
       else {
         for (const key of Object.keys(data[namespace].en)) {
@@ -147,32 +144,56 @@ const fixData = (rawData) => {
 }
 
 /*
- * The method that does the actual work
+ * Converst a pattern translation file to a namespace structure
+ * for a given language
  */
-export const prebuildI18n = async (site, only = false) => {
-  const filter = site === 'dev' ? (loc) => loc === 'en' : (loc) => denyList.indexOf(loc) === -1
-  const locales = await build(filter, only)
-
-  console.log(`copying them to ${site}`, Object.keys(locales))
-
-  const languages = {}
-  Object.keys(locales).forEach((l) => (languages[l] = locales[l].i18n[l]))
-  for (const locale in locales) {
-    // Only English for dev site
-    const loc = locales[locale]
-    // Fan out into namespaces
-    for (const namespace in loc) writeJson(site, locale, namespace, loc[namespace])
-    writeJson(site, locale, 'locales', languages)
+const patternTranslationAsNamespace = (i18n, language) => {
+  const pojo = {
+    t: i18n[language].t,
+    d: i18n[language].d,
+  }
+  for (const [key, val] of Object.entries(i18n[language].s)) {
+    pojo[key] = val
+  }
+  for (const [key, val] of Object.entries(i18n[language].p)) {
+    pojo[key] = val
+  }
+  for (const [key, val] of Object.entries(i18n[language].o)) {
+    pojo[`${key}.t`] = val.t
+    pojo[`${key}.d`] = val.d
   }
 
-  // Handle new code-adjacent translations
+  return pojo
+}
+/*
+ * The method that does the actual work
+ */
+export const prebuildI18n = async (site) => {
+  /*
+   * Handle code-adjacent translations (for React components and so on)
+   */
   const files = await getI18nFileList(site)
   const data = filesAsNamespaces(files)
   const namespaces = fixData(data)
   // Write out code-adjacent source files
-  for (const locale in locales) {
+  for (const language of languages) {
     // Fan out into namespaces
     for (const namespace in namespaces)
-      writeJson(site, locale, namespace, namespaces[namespace][locale])
+      writeJson(site, language, namespace, namespaces[namespace][language])
   }
+  /*
+   * Handle design translations
+   */
+  const designNs = {}
+  for (const design in designs) {
+    for (const language of languages) {
+      if (typeof designNs[language] === 'undefined') designNs[language] = {}
+      // Write out design namespace files
+      const content = patternTranslationAsNamespace(designs[design], language)
+      designNs[language][`${design}.t`] = content.t
+      designNs[language][`${design}.d`] = content.d
+      writeJson(site, language, design, content)
+    }
+  }
+  for (const language of languages) writeJson(site, language, 'designs', designNs[language])
 }

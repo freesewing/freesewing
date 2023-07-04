@@ -1,0 +1,87 @@
+{
+  "t": "Bella, ein Grundschnitt",
+  "d": "Bella ist ein Grundschnitt für Personen mit Brüsten.",
+  "p": {
+    "back": "Rückseite",
+    "frontSideDart": "Vorderseite"
+  },
+  "s": {},
+  "o": {
+    "chestEase": {
+      "t": "Brustumfangszugabe",
+      "d": "Steuert die Größe der Zugabe zum Brustumfang"
+    },
+    "waistEase": {
+      "t": "Taillenzugabe",
+      "d": "Steuert die Menge an Leichtigkeit in deiner Taille"
+    },
+    "bustSpanEase": {
+      "t": "Zugabe seitlicher Brustbereich",
+      "d": "Steuert die Größe der (horizontalen) Zugabe, zu deinem seitlichen Brustbereich, \nwenn Brustpunkt berechnet wird."
+    },
+    "shoulderToShoulderEase": {
+      "t": "Zugabe des Schulterabstandes",
+      "d": "Kontrolliert die Menge an Zugabe zwischen deinen Schultern. Liegt inital bei -0,5%, da Bella ein Grundschnitt erfüllt, welcher in der Branche verwendet wird."
+    },
+    "fullChestEaseReduction": {
+      "t": "Verringerung der Brustumfangszugabe",
+      "d": "Ermöglicht es dir den Spielraum an der Brust zu verringern, um dort einen engeren Sitz zu ermöglichen"
+    },
+    "backDartHeight": {
+      "t": "Höhe Rückenabnäher",
+      "d": "Steuert die Höhe des Rückenabnähers"
+    },
+    "bustDartLength": {
+      "t": "Länge des Brustabnähers",
+      "d": "Steuert die Länge des Brustabnähers"
+    },
+    "waistDartLength": {
+      "t": "Länge des Taillenabnähers",
+      "d": "Steuert die Länge des Taillenabnähers"
+    },
+    "bustDartCurve": {
+      "t": "Rundung Brustabnäher",
+      "d": "Steuert die Krümmung des Büstendarts"
+    },
+    "armholeDepth": {
+      "t": "Armlochtiefe",
+      "d": "Steuert die Tiefe des Armloches"
+    },
+    "backArmholeSlant": {
+      "t": "Hintere Armlochschiebung",
+      "d": "Dreht das Armloch leicht in seinem Drehpunkt"
+    },
+    "frontArmholeCurvature": {
+      "t": "Vordere Armlochkrümmung",
+      "d": "Steuert wie tief das Armloch nach vorne unten ausgeschnitten ist"
+    },
+    "backArmholeCurvature": {
+      "t": "Hintere Armlochkrümmung",
+      "d": "Steuert wie tief das Armloch nach hinten unten ausgeschnitten ist"
+    },
+    "frontArmholePitchDepth": {
+      "t": "Vordere Armlochtiefe",
+      "d": "Stellt die horizontale Position des Vorderarmlochpunktes fest"
+    },
+    "backArmholePitchDepth": {
+      "t": "Rückenarmloch-Tiefe",
+      "d": "Stellt die horizontale Position des Rückenlochpunktes fest"
+    },
+    "backNeckCutout": {
+      "t": "Ausschnitt im Nacken",
+      "d": "Steuert, wie tief der Nackenausschnit am Rücken ausfällt"
+    },
+    "backHemSlope": {
+      "t": "Neigung des hinteren Saumes",
+      "d": "Steuert den Hang des Saum auf der Rückseite"
+    },
+    "frontShoulderWidth": {
+      "t": "Vordere Schulterbreite",
+      "d": "Steuert die Schmalheit der vorderen Schultern relativ zum Rücken"
+    },
+    "highBustWidth": {
+      "t": "Oberbrustweite",
+      "d": "Erlaubt es dir die Oberbrustweite vorne zu optimieren"
+    }
+  }
+}

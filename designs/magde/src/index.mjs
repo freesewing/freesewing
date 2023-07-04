@@ -1,7 +1,6 @@
-//
-
 import { Design } from '@freesewing/core'
 import { data } from '../data.mjs'
+import { i18n } from '../i18n/index.mjs'
 // Parts
 import { bodyLiner } from './bodyLiner.mjs'
 import { frontPanel } from './frontPanel.mjs'
@@ -34,4 +33,18 @@ const Magde = new Design({
 })
 
 // Named exports
-export { bodyLiner, Magde }
+export {
+  backPanel,
+  frontPanel,
+  frontOrganiserBase,
+  frontOrganiserFront,
+  lidOnePiece,
+  twoPieceLidTop,
+  twoPieceLidBottom,
+  strapAttachments,
+  bodyLiner,
+  sidePanel,
+  internalOrganiser,
+  Magde,
+  i18n,
+}

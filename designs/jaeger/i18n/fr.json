@@ -1,0 +1,187 @@
+{
+  "t": "Veste Jaeger",
+  "d": "Jaeger est une veste de sport de style manteau avec deux boutons et des poches plaquées.",
+  "p": {
+    "backBase": "Back base",
+    "chestPocketBag": "Chest pocket bag",
+    "chestPocketWelt": "Chest pocket welt",
+    "collar": "Collar",
+    "collarStand": "Collar stand",
+    "frontBase": "Front base",
+    "innerPocketBag": "Inner pocket bag",
+    "innerPocketWelt": "Inner pocket welt",
+    "pocket": "Pocket",
+    "pocketLining": "Pocket lining",
+    "side": "Side",
+    "topSleeve": "Top sleeve",
+    "underCollar": "Under collar",
+    "underSleeve": "Under sleeve"
+  },
+  "s": {},
+  "o": {
+    "centerBackDart": {
+      "t": "Pinces milieu dos",
+      "d": "Fléchette au centre du cou pour accommoder un dos arrondi"
+    },
+    "sleeveVentLength": {
+      "t": "Longueur de la fente des manches",
+      "d": "Longueur de la fente des manches"
+    },
+    "sleeveVentWidth": {
+      "t": "Largeur de la fente des manches",
+      "d": "Largeur de la fente des manches"
+    },
+    "chestShaping": {
+      "t": "Courbe du col poitrine",
+      "d": "Quantité de mise en forme pour la courbe de la poitrine"
+    },
+    "frontDartPlacement": {
+      "t": "Emplacement des pinces devant",
+      "d": "Emplacement des pinces devant"
+    },
+    "frontOverlap": {
+      "t": "Chevauchement avant",
+      "d": "Taux de chevauchement du pan des boutonnières vers le pan des boutons (largeur de la croisure)"
+    },
+    "sideFrontPlacement": {
+      "t": "Placement latéral/avant",
+      "d": "L'emplacement de la séparation côté / devant"
+    },
+    "chestPocketDepth": {
+      "t": "Profondeur de la poche de poitrine",
+      "d": "La profondeur de la poche de poitrine"
+    },
+    "chestPocketWidth": {
+      "t": "Largeur de la poche poitrine",
+      "d": "Largeur de la poche poitrine"
+    },
+    "chestPocketPlacement": {
+      "t": "Emplacement poche de poitrine",
+      "d": "L'emplacement de la poche de poitrine"
+    },
+    "chestPocketAngle": {
+      "t": "Angle de poche de poitrine",
+      "d": "Angle d'inclinaison de la poche de poitrine"
+    },
+    "chestPocketWeltSize": {
+      "t": "Taille du revers de la poche poitrine",
+      "d": "La taille du revers de la poche de poitrine"
+    },
+    "frontPocketPlacement": {
+      "t": "Emplacement des poches avant",
+      "d": "Positionnement des poches avant"
+    },
+    "frontPocketWidth": {
+      "t": "Largeur des poches avant",
+      "d": "La largeur des poches avant"
+    },
+    "frontPocketDepth": {
+      "t": "Profondeur des poches avant",
+      "d": "La profondeur des poches avant"
+    },
+    "frontPocketRadius": {
+      "t": "Arrondi des poches avant",
+      "d": "Le rayon par lequel la poche avant est arrondie"
+    },
+    "innerPocketPlacement": {
+      "t": "Placement de la poche intérieure",
+      "d": "L'emplacement de la poche intérieure"
+    },
+    "innerPocketWidth": {
+      "t": "Largeur de la poche intérieure",
+      "d": "La largeur de la poche intérieure"
+    },
+    "innerPocketDepth": {
+      "t": "Profondeur de la poche intérieure",
+      "d": "La profondeur de la poche intérieure"
+    },
+    "innerPocketWeltHeight": {
+      "t": "Hauteur du revers de la poche intérieure",
+      "d": "La hauteur du revers de la poche intérieure"
+    },
+    "pocketFoldover": {
+      "t": "Recouvrement de la poche",
+      "d": "Montant de recouvrement du tissu principal sur la poche"
+    },
+    "centerFrontHemDrop": {
+      "t": "Décalage de la longueur à l'avant",
+      "d": "La valeur par laquelle la longueur de l'avant est abaissée"
+    },
+    "backVent": {
+      "t": "Fente dos",
+      "d": "Nombre de fentes à l'arrière"
+    },
+    "backVentLength": {
+      "t": "Longueur de la fente arrière",
+      "d": "La longueur du ou des fente(s) arrière(s)"
+    },
+    "buttonLength": {
+      "t": "Longueur de boutonnage",
+      "d": "La distance sur laquelle les boutons sont répartis"
+    },
+    "frontCutawayAngle": {
+      "t": "Angle de coupe avant",
+      "d": "L'angle de découpe du pan avant"
+    },
+    "frontCutawayStart": {
+      "t": "Départ de l'arrondi de coupe avant",
+      "d": "L'endroit où le pan de la veste commence à s'ouvrir vers l'ourlet du bas"
+    },
+    "frontCutawayEnd": {
+      "t": "Fin de l'arrondi de coupe avant",
+      "d": "En augmentant cette valeur, l'arrondi du pan se terminera plus proche du milieu devant"
+    },
+    "collarSpread": {
+      "t": "Écartement du col",
+      "d": "L'écartement du col contrôle la position des pointes du col - plus c'est grand, plus elles seront vers les épaules"
+    },
+    "lapelStart": {
+      "t": "Début des revers",
+      "d": "Emplacement où les revers démarrent sur le milieu devant"
+    },
+    "lapelReduction": {
+      "t": "Réduction de revers",
+      "d": "Combien la pointe des revers se réduit vers l'intérieur"
+    },
+    "collarHeight": {
+      "t": "Hauteur du col",
+      "d": "Hauteur du col"
+    },
+    "collarNotchDepth": {
+      "t": "Profondeur du col cranté",
+      "d": "Profondeur du col cranté"
+    },
+    "collarNotchAngle": {
+      "t": "Angle du col cranté",
+      "d": "Angle du col cranté"
+    },
+    "collarNotchReturn": {
+      "t": "Revers du col cranté",
+      "d": "Combien le col dépasse du cran, par rapport au revers du bas"
+    },
+    "rollLineCollarHeight": {
+      "t": "Hauteur de la ligne de cassure du col",
+      "d": "Combien la ligne de cassure épouse le cou"
+    },
+    "hemRadius": {
+      "t": "Rayon d'ourlet",
+      "d": "Le montant par lequel l'ourlet est arrondi"
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at your hips"
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls the amount of ease at your waist"
+    },
+    "buttons": {
+      "t": "Number of buttons",
+      "d": "Controls the amount of buttons"
+    },
+    "collarRoll": {
+      "t": "Collar roll",
+      "d": "Controls the amount of roll in the collar; how much the topcollar is higher than the undercollar."
+    }
+  }
+}

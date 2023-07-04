@@ -1,0 +1,187 @@
+{
+  "t": "Chemise Simon",
+  "d": "Simon est un modèle de chemise très adaptable pour les personnes sans sein.",
+  "p": {
+    "back": "Retour",
+    "buttonholePlacket": "Patte de boutonnière",
+    "buttonPlacket": "Patte de boutonnage",
+    "collar": "Collier",
+    "collarStand": "Support de collier",
+    "cuff": "Manchette",
+    "front": "Avant",
+    "frontLeft": "Avant gauche",
+    "frontRight": "Avant droit",
+    "sleevePlacketOverlap": "Patte de manche haut",
+    "sleevePlacketUnderlap": "Patte de manche bas",
+    "sleeve": "Manche",
+    "yoke": "Empiècement"
+  },
+  "s": {
+    "buttonholePlacket": "Patte de boutonnage - boutonnières",
+    "buttonPlacket": "Patte de boutonnage - boutons",
+    "collarAndUndercollar": "Col et sous-col",
+    "collarStand": "Pied de col",
+    "cutUndercollarSlightlySmaller": "Couper le sous-col légèrement plus petit",
+    "frontLeft": "Avant gauche",
+    "frontRight": "Avant droit",
+    "sideOfTheCollarStand": "Côté du pied de col",
+    "sleevePlacketOverlap": "Patte de manche supérieure",
+    "sleevePlacketUnderlap": "Patte de manche inférieure",
+    "yoke": "Empiècement",
+    "matchHere": "Aligner le tissu le long de cette ligne"
+  },
+  "o": {
+    "backDarts": {
+      "t": "Pinces dos",
+      "d": "Inclure ou non des pinces au dos"
+    },
+    "backDartShaping": {
+      "t": "Forme de la pince dos",
+      "d": "L'ajustement résultant des pinces du dos"
+    },
+    "barrelCuffNarrowButton": {
+      "t": "Bouton de resserrage de poignet",
+      "d": "Détermine si on va inclure un bouton pour rendre les poignets de manche plus étroits. Cette option n'est pertinente que pour les poignets de manche classiques."
+    },
+    "boxPleat": {
+      "t": "Pli plat",
+      "d": "Inclure ou non un pli plat au dos"
+    },
+    "boxPleatWidth": {
+      "t": "Largeur du pli plat",
+      "d": "Largeur totale du pli plat"
+    },
+    "boxPleatFold": {
+      "t": "Repli du pli plat",
+      "d": "La largeur du pli plat repliée à l'intérieur"
+    },
+    "buttonPlacketStyle": {
+      "t": "Style de patte de boutonnage",
+      "d": "Style de la patte de boutonnage"
+    },
+    "buttonPlacketWidth": {
+      "t": "Largeur de patte de boutonnage - côté boutons",
+      "d": "Largeur de la patte de boutonnage sur le côté des boutons."
+    },
+    "buttonFreeLength": {
+      "t": "Longueur sans bouton",
+      "d": "Quelle distance laisser sans bouton à partir du bas devant de la chemise ."
+    },
+    "buttonholePlacketFoldWidth": {
+      "t": "Largeur du pli de la patte de boutonnage (côté boutonnières)",
+      "d": "Largeur du pli de la gorge (patte de boutonnage, du côté des boutonnières)."
+    },
+    "buttonholePlacketStyle": {
+      "t": "Style de patte de boutonnage (côté boutonnières)",
+      "d": "Style de la gorge (patte de boutonnage, côté boutonnières)."
+    },
+    "buttonholePlacketWidth": {
+      "t": "Largeur de patte de boutonnage (côté boutonnières)",
+      "d": "Largeur de la gorge (patte de boutonnage, côté des boutonnières)."
+    },
+    "buttons": {
+      "t": "Nombre de boutons",
+      "d": "Le nombre de boutons sur la fermeture avant."
+    },
+    "collarAngle": {
+      "t": "Angle du col",
+      "d": "L'angle des pointes de col."
+    },
+    "collarBend": {
+      "t": "Courbure du col",
+      "d": "La courbure du col."
+    },
+    "collarFlare": {
+      "t": "Évasement du col",
+      "d": "L'évasement des pointes du col."
+    },
+    "collarGap": {
+      "t": "Écart du col",
+      "d": "L'écart entre les deux extrémités du col."
+    },
+    "collarRoll": {
+      "t": "Repli du col",
+      "d": "La valeur rendant le tombant du col plus large que le pied de col."
+    },
+    "collarStandBend": {
+      "t": "Courbure centrale du pied de col",
+      "d": "La courbure centrale du pied de col."
+    },
+    "collarStandCurve": {
+      "t": "Courbe des extrémités du pied de col",
+      "d": "La courbe des extrémités du pied de col."
+    },
+    "collarStandWidth": {
+      "t": "Largeur du pied de col",
+      "d": "Largeur du porte-col."
+    },
+    "cuffButtonRows": {
+      "t": "Rangée de boutons de manchette",
+      "d": "Simple ou double rangée de boutons de poignet. Cette option n'est pertinente que pour les poignets classiques."
+    },
+    "cuffDrape": {
+      "t": "Drapé du bas de manche",
+      "d": "Il s'agit de la largeur supplémentaire de tissu de la manche par rapport au poignet, à l'endroit où ils sont joints."
+    },
+    "cuffLength": {
+      "t": "Longueur de bracelet",
+      "d": "La longueur des poignets."
+    },
+    "cuffStyle": {
+      "t": "Style de bracelet",
+      "d": "Style de poignets."
+    },
+    "extraTopButton": {
+      "t": "Bouton supérieur supplémentaire",
+      "d": "Inclure ou non un bouton supplémentaire en haut de fermeture avant."
+    },
+    "ffsa": {
+      "t": "Couture abattu à plat autorisée",
+      "d": "La quantité de la marge de couture sur les coutures abattues en proportion de la marge de couture normale"
+    },
+    "hemCurve": {
+      "t": "Courbe de l'ourlet",
+      "d": "La hauteur de l'arrondi sur un ourlet arrondi."
+    },
+    "hemStyle": {
+      "t": "Style d'ourlet",
+      "d": "Le style de l'ourlet de la chemise."
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at the hips."
+    },
+    "roundBack": {
+      "t": "Arrondi arrière",
+      "d": "Pour installer un rond-point arrière, cela ajoute de la longueur au centre du dos (au yoke) que les foulards de vers les côtés."
+    },
+    "seperateButtonholePlacket": {
+      "t": "Gorge (Patte de boutonnières) séparée",
+      "d": "Dessinez une gorge (patte de boutonnières) séparée."
+    },
+    "seperateButtonPlacket": {
+      "t": "Patte de boutonnage séparée",
+      "d": "Dessinez une patte de boutonnage séparée"
+    },
+    "sleevePlacketLength": {
+      "t": "Longueur de la patte de manche",
+      "d": "La longueur de la patte de manche"
+    },
+    "sleevePlacketWidth": {
+      "t": "Largeur de la patte de manche",
+      "d": "La largeur de la patte de manche"
+    },
+    "splitYoke": {
+      "t": "Empiècement dos à couture médiane (\"split yoke\")",
+      "d": "Dessiner un empiècement divisé ou classique (une seule pièce)."
+    },
+    "waistEase": {
+      "t": "Aisance à la taille",
+      "d": "La quantité d'aisance à votre taille (naturelle)."
+    },
+    "yokeHeight": {
+      "t": "Hauteur du yoke",
+      "d": "Contrôle la hauteur du joug"
+    }
+  }
+}

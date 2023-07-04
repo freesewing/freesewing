@@ -1,0 +1,44 @@
+{
+  "t": "Huey, sudadera con capucha",
+  "d": "Huey es una sudadera con capucha, cremallera y bolsillos delanteros opcionales.",
+  "p": {
+    "back": "Back",
+    "cuff": "Cuff",
+    "front": "Front",
+    "hood": "Hood",
+    "pocket": "Pocket",
+    "sleeve": "Sleeve",
+    "waistband": "Waistband"
+  },
+  "s": {},
+  "o": {
+    "pocket": {
+      "t": "Bolsillo",
+      "d": "Si se añade un bolsillo delantero o no"
+    },
+    "pocketHeight": {
+      "t": "Altura de bolsillo",
+      "d": "Controla la altura del bolsillo"
+    },
+    "hoodHeight": {
+      "t": "Altura de capucha",
+      "d": "Controla la altura del capucha"
+    },
+    "hoodCutback": {
+      "t": "Recorta capucha",
+      "d": "Controla cómo abrir el capó se recorta"
+    },
+    "hoodClosure": {
+      "t": "Cierre de capucha",
+      "d": "Controla la parte del capó que forma parte del cierre frontal"
+    },
+    "hoodDepth": {
+      "t": "Profundidad de capucha",
+      "d": "Controla la profundidad del capucha"
+    },
+    "hoodAngle": {
+      "t": "Angulo de capucha",
+      "d": "Controla el ángulo en el que la capucha es unida"
+    }
+  }
+}

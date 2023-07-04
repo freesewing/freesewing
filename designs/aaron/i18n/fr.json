@@ -1,0 +1,45 @@
+{
+  "t": "Aaron A-Shirt",
+  "d": "Aaron is an athletic shirt or tank top.",
+  "s": {
+    "cutOneStripToFinishTheNeckOpening": "Cut one strip to finish the neck opening",
+    "cutTwoStripsToFinishTheArmholes": "Cut two strips to finish the armholes",
+    "length": "Length",
+    "width": "Width"
+  },
+  "o": {
+    "armholeDrop": {
+      "t": "Abaissement d'emmanchure",
+      "d": "Il s'agit d'abaisser l'emmanchure avec cette valeur. Les valeurs négatives la remonteront."
+    },
+    "backlineBend": {
+      "t": "Forme de l'arrière des emmanchures",
+      "d": "Détermine la forme/courbure de l'arrière des emmanchures."
+    },
+    "hipsEase": {
+      "t": "Aisance des hanches",
+      "d": "La marge d'aisance aux hanches."
+    },
+    "necklineBend": {
+      "t": "Forme de l'encolure",
+      "d": "Détermine la forme/courbure du devant de l'encolure."
+    },
+    "necklineDrop": {
+      "t": "Profondeur d'encolure",
+      "d": "Détermine de combien abaisser l’encolure l'avant."
+    },
+    "shoulderStrapPlacement": {
+      "t": "Position de la bretelle",
+      "d": "Détermine si la bretelle est placée plus près du cou (chiffres les plus bas) ou de l’épaule (chiffres les plus élevés)."
+    },
+    "shoulderStrapWidth": {
+      "t": "Largeur de la bretelle",
+      "d": "Détermine la largeur des bretelles."
+    },
+    "stretchFactor": {
+      "t": "Élasticité",
+      "d": "Détermine a quantité d'aisance négative en largeur."
+    }
+  },
+  "p": {}
+}

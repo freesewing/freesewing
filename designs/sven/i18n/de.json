@@ -1,0 +1,30 @@
+{
+  "t": "Sven, der Pullover",
+  "d": "Sven ist ein einfacher Pullover.",
+  "p": {
+    "back": "Rückseite",
+    "cuff": "Manschette",
+    "front": "Vorderseite",
+    "sleeve": "Ärmel",
+    "waistband": "Bund"
+  },
+  "s": {},
+  "o": {
+    "hipsEase": {
+      "t": "Zugabe Hüfte",
+      "d": "Steuert die Menge an Zugabe an deinen Hüften (am unteren Ende des Pullovers)"
+    },
+    "ribbing": {
+      "t": "Bündchen",
+      "d": "Ob Saum und Manschetten mit Bündchen abschließen oder nicht."
+    },
+    "ribbingHeight": {
+      "t": "Bündchen-Höhe",
+      "d": "Die Höhe der Bündchen"
+    },
+    "ribbingStretch": {
+      "t": "Bündchen-Elastizität",
+      "d": "Die Menge an negativer Zugabe für die an Manschetten und Saum verwendeten Bündchen."
+    }
+  }
+}

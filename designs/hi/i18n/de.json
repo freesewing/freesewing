@@ -1,0 +1,34 @@
+{
+  "t": "Hi, der Hai",
+  "d": "Der freundlichste Hai der Welt",
+  "p": {
+    "aboveMouth": "Above mouth",
+    "belly": "Belly",
+    "body": "Body",
+    "bottomFin": "Bottom fin",
+    "lowerTeeth": "Lower teetch",
+    "mouth": "Mouth",
+    "tail": "Tail",
+    "topFin": "Top fin",
+    "upperTeeth": "Upper teeth"
+  },
+  "s": {},
+  "o": {
+    "hungry": {
+      "t": "Hungrig",
+      "d": "Ändert die Mundform, um zu vermitteln, dass Hi hungrig ist"
+    },
+    "nosePointiness": {
+      "t": "Nasenspitzigkeit",
+      "d": "Steuert, wie spitz die Nase von Hi ist"
+    },
+    "aggressive": {
+      "t": "Aggressiv",
+      "d": "Gibt Hi spitze Zähne, oder nicht"
+    },
+    "size": {
+      "t": "Größe",
+      "d": "Haie gibt es in allen Größen, und Hi genauso"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "t": "Bruce, die Retroshorts",
+  "d": "Bruce sind bequeme und stylische Retroshorts.",
+  "p": {
+    "back": "Rückseite",
+    "front": "Vorderseite",
+    "inset": "Einsatz",
+    "side": "Seite"
+  },
+  "s": {},
+  "o": {
+    "bulge": {
+      "t": "Wölbung",
+      "d": "Vergrößert den Winkel, um mehr Platz in der vorderen Tasche zu schaffen."
+    },
+    "legBonus": {
+      "t": "Beinlängen-Bonus",
+      "d": "Zusätzliche Länge für die Beine."
+    },
+    "rise": {
+      "t": "Anstieg",
+      "d": "Betrag, um den die Taille angehoben wird. Ein negativer Wert senkt sie ab."
+    },
+    "stretch": {
+      "t": "Dehnung",
+      "d": "Die Menge an negativer Bewegungszugabe."
+    },
+    "legStretch": {
+      "t": "Bein Dehnung",
+      "d": "Das beste Ergebnis erzielst du, wenn du den Sitz der Beine etwas enger machst — Sag Nein zu klaffenden Lücken."
+    },
+    "backRise": {
+      "t": "Hintere Anstieg",
+      "d": "Betrag, um den die Taille hinten angehoben wird."
+    }
+  }
+}

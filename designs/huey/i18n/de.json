@@ -1,0 +1,44 @@
+{
+  "t": "Huey, der Hoodie",
+  "d": "Huey ist ein Hoodie mit Reißverschluss und optionalen Taschen auf der Vorderseite.",
+  "p": {
+    "back": "Back",
+    "cuff": "Cuff",
+    "front": "Front",
+    "hood": "Hood",
+    "pocket": "Pocket",
+    "sleeve": "Sleeve",
+    "waistband": "Waistband"
+  },
+  "s": {},
+  "o": {
+    "pocket": {
+      "t": "Tasche",
+      "d": "Legt fest, ob vordere Taschen integriert werden oder nicht"
+    },
+    "pocketHeight": {
+      "t": "Taschenhöhe",
+      "d": "Steuert die Höhe der Tasche"
+    },
+    "hoodHeight": {
+      "t": "Kapuzenhöhe",
+      "d": "Steuert die Höhe der Kapuze"
+    },
+    "hoodCutback": {
+      "t": "Kapuzenausschnitt",
+      "d": "Leg fest, wie weit die Öffnung der Kapuze zurückgeschnitten wird"
+    },
+    "hoodClosure": {
+      "t": "Kapuzenverschluss",
+      "d": "Legt fest, wie viel von der der Kapuze zum vorderen Verschluss gehört"
+    },
+    "hoodDepth": {
+      "t": "Kapuzentiefe",
+      "d": "Steuert die Tiefe der Kapuze"
+    },
+    "hoodAngle": {
+      "t": "Winkel der Kapuze",
+      "d": "Steuert den Winkel, mit welchem die Kapuze angebracht wird"
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import { Design } from '@freesewing/core'
 import { data } from '../data.mjs'
+import { i18n } from '../i18n/index.mjs'
 import { top } from './top.mjs'
 
 // Setup our new design
@@ -9,4 +10,4 @@ const Tamiko = new Design({
 })
 
 // Named exports
-export { top, Tamiko }
+export { top, Tamiko, i18n }

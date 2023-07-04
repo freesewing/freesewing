@@ -2701,10 +2701,10 @@
   resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-2.0.0-next.1.tgz#b17a046ed5cb1b13e75b29740504ec53a7e0b016"
   integrity sha512-F36kWTFdFXrbNIsM77dhVwYZsZonUIKHkYyYgnuw1NWskBfEn1ET5B5Z5mm58ckKNf7SimchnxR9sKCCtH38WA==
 
-"@next/bundle-analyzer@13.4.7":
-  version "13.4.7"
-  resolved "https://registry.yarnpkg.com/@next/bundle-analyzer/-/bundle-analyzer-13.4.7.tgz#9c57d03c002f135fb7e3a68924aebf149e9db541"
-  integrity sha512-cIcU07u6WdDUF1nrFYOSPvx/pie8euxSnWB1Y/XMYj2g5ls+iyaDr/ChyZugD5hNW754x0NFy1CwzpObA0bffQ==
+"@next/bundle-analyzer@13.4.8":
+  version "13.4.8"
+  resolved "https://registry.yarnpkg.com/@next/bundle-analyzer/-/bundle-analyzer-13.4.8.tgz#731b7ab8a5e0b3a91fbe937d71fd95b21eeafc2c"
+  integrity sha512-4lqwlBquxLmnuGvBGNRZUphIM+yIhzz/ARBNHA0MwzmGpqyZ4wAAZa26aHMPW50pdmwWGOr1fZYiWZM0rqx6bQ==
   dependencies:
     webpack-bundle-analyzer "4.7.0"
 
@@ -2713,17 +2713,17 @@
   resolved "https://registry.yarnpkg.com/@next/env/-/env-13.4.7.tgz#ca12d341edb128ca70384635bd2794125ffb1c01"
   integrity sha512-ZlbiFulnwiFsW9UV1ku1OvX/oyIPLtMk9p/nnvDSwI0s7vSoZdRtxXNsaO+ZXrLv/pMbXVGq4lL8TbY9iuGmVw==
 
-"@next/eslint-plugin-next@13.4.7":
-  version "13.4.7"
-  resolved "https://registry.yarnpkg.com/@next/eslint-plugin-next/-/eslint-plugin-next-13.4.7.tgz#7efeff2af76be0d9a176a957da21e3710b2e79cf"
-  integrity sha512-ANEPltxzXbyyG7CvqxdY4PmeM5+RyWdAJGufTHnU+LA/i3J6IDV2r8Z4onKwskwKEhwqzz5lMaSYGGXLyHX+mg==
+"@next/eslint-plugin-next@13.4.8":
+  version "13.4.8"
+  resolved "https://registry.yarnpkg.com/@next/eslint-plugin-next/-/eslint-plugin-next-13.4.8.tgz#2aa7a0bbfc87fbed5aa0e938d0d16dca85061ee4"
+  integrity sha512-cmfVHpxWjjcETFt2WHnoFU6EmY69QcPJRlRNAooQlNe53Ke90vg1Ci/dkPffryJZaxxiRziP9bQrV8lDVCn3Fw==
   dependencies:
     glob "7.1.7"
 
-"@next/mdx@13.4.7":
-  version "13.4.7"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-13.4.7.tgz#d139b43deb4361be890ee631d7d6bd6cd11d95a1"
-  integrity sha512-btb4ym4Gz72ACQjSlK+AsJRx5IYcS9O0FgUWK4/+9AJxLQtr5XNOAfpy1ioLqXG7REVvwWAea4z6Hp0agwc+Vg==
+"@next/mdx@13.4.8":
+  version "13.4.8"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-13.4.8.tgz#c95db83778a94f144812d006a64f0e2b72c57c92"
+  integrity sha512-8h0mjPlSKC/KpREJOVhVht6cjXDp5oGBiJw6lYVbRBlFcGSLEt4aehHw8y/aZ2a5o2SThAjh5QOlVbeCz2N1ug==
   dependencies:
     source-map "^0.7.0"
 
@@ -8333,12 +8333,12 @@ escodegen@^2.0.0:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-next@13.4.7, eslint-config-next@^13.0.6:
-  version "13.4.7"
-  resolved "https://registry.yarnpkg.com/eslint-config-next/-/eslint-config-next-13.4.7.tgz#59c48ecb37175ccc057f621a07af894cc931574f"
-  integrity sha512-+IRAyD0+J1MZaTi9RQMPUfr6Q+GCZ1wOkK6XM52Vokh7VI4R6YFGOFzdkEFHl4ZyIX4FKa5vcwUP2WscSFNjNQ==
+eslint-config-next@13.4.8, eslint-config-next@^13.0.6:
+  version "13.4.8"
+  resolved "https://registry.yarnpkg.com/eslint-config-next/-/eslint-config-next-13.4.8.tgz#f2683d278ae72f7cf8854d571b05cce3bfd84143"
+  integrity sha512-2hE0b6lHuhtHBX8VgEXi8v4G8PVrPUBMOSLCTq8qtcQ2qQOX7+uBOLK2kU4FD2qDZzyXNlhmuH+WLT5ptY4XLA==
   dependencies:
-    "@next/eslint-plugin-next" "13.4.7"
+    "@next/eslint-plugin-next" "13.4.8"
     "@rushstack/eslint-patch" "^1.1.3"
     "@typescript-eslint/parser" "^5.42.0"
     eslint-import-resolver-node "^0.3.6"

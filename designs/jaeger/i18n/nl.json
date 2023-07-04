@@ -1,0 +1,187 @@
+{
+  "t": "Jaeger jasje",
+  "d": "Jaeger is a sport coat style jacket with two buttons and patch pockets.",
+  "p": {
+    "backBase": "Back base",
+    "chestPocketBag": "Chest pocket bag",
+    "chestPocketWelt": "Chest pocket welt",
+    "collar": "Collar",
+    "collarStand": "Collar stand",
+    "frontBase": "Front base",
+    "innerPocketBag": "Inner pocket bag",
+    "innerPocketWelt": "Inner pocket welt",
+    "pocket": "Pocket",
+    "pocketLining": "Pocket lining",
+    "side": "Side",
+    "topSleeve": "Top sleeve",
+    "underCollar": "Under collar",
+    "underSleeve": "Under sleeve"
+  },
+  "s": {},
+  "o": {
+    "centerBackDart": {
+      "t": "Middenrug neep",
+      "d": "Neep midden in het midden van je nek om een afgeronde rug op te vangen"
+    },
+    "sleeveVentLength": {
+      "t": "Lengte mouwvent",
+      "d": "De lengte van de mouwvent"
+    },
+    "sleeveVentWidth": {
+      "t": "Breedte mouwvent",
+      "d": "De breedte van de mouwvent"
+    },
+    "chestShaping": {
+      "t": "Borstvorming",
+      "d": "Hoeveelheid vormgeving voor de borstcurve"
+    },
+    "frontDartPlacement": {
+      "t": "Plaatsing neep vooraan",
+      "d": "Locatie van de nepen vooraan"
+    },
+    "frontOverlap": {
+      "t": "Overlap voorzijde",
+      "d": "De mate waaarin de stof verder reikt dat de sluitingsknopen"
+    },
+    "sideFrontPlacement": {
+      "t": "Voor/Zijkant plaatsing",
+      "d": "De grens tussen het voor en zij paneel"
+    },
+    "chestPocketDepth": {
+      "t": "Borstzakdiepte",
+      "d": "De diepte van de borstzak"
+    },
+    "chestPocketWidth": {
+      "t": "Borstzakbreedte",
+      "d": "De breedte van de borstzak"
+    },
+    "chestPocketPlacement": {
+      "t": "Plaatsting borstzak",
+      "d": "De locatie van de borszak"
+    },
+    "chestPocketAngle": {
+      "t": "Hoek borstzak",
+      "d": "De hoek van de borstzak"
+    },
+    "chestPocketWeltSize": {
+      "t": "Afmeting paspel borstzak",
+      "d": "Grootte van de paspel van de borstzak"
+    },
+    "frontPocketPlacement": {
+      "t": "Plaatsing voorzak",
+      "d": "Plaatsing van de zakken"
+    },
+    "frontPocketWidth": {
+      "t": "Breedte voorzak",
+      "d": "Breedte van de zakken"
+    },
+    "frontPocketDepth": {
+      "t": "Diepte zak",
+      "d": "Diepte van de zakken"
+    },
+    "frontPocketRadius": {
+      "t": "Ronding zak",
+      "d": "De mate waarin de zakken zijn afgerond"
+    },
+    "innerPocketPlacement": {
+      "t": "Plaatsing binnenzak",
+      "d": "De locatie van de binnenzakken"
+    },
+    "innerPocketWidth": {
+      "t": "Breedte binnenzak",
+      "d": "De breedte van de binnenzakken"
+    },
+    "innerPocketDepth": {
+      "t": "Diepte binnenzak",
+      "d": "De diepte van de binnenzakken"
+    },
+    "innerPocketWeltHeight": {
+      "t": "Paspel binnenzak",
+      "d": "de maat van de paspel van de binnenzakken"
+    },
+    "pocketFoldover": {
+      "t": "Zak overvouw",
+      "d": "De mate waarin de hoofstof doorloopt binnenin de zakken"
+    },
+    "centerFrontHemDrop": {
+      "t": "Verlaging zoom vooraan",
+      "d": "De mate waarin de zoom vooraan verlaagd is"
+    },
+    "backVent": {
+      "t": "Split achter",
+      "d": "Het aantal vents achteraan"
+    },
+    "backVentLength": {
+      "t": "Lengte split achter",
+      "d": "De lengte van de vent(s) achteraan"
+    },
+    "buttonLength": {
+      "t": "Lengte knopen",
+      "d": "De lengte waarover de knopen zijn gespreid"
+    },
+    "frontCutawayAngle": {
+      "t": "Hoek uitsnijding vooraan",
+      "d": "De hoek waaronder de voorzijde wordt weggesneden naar de zoom toe"
+    },
+    "frontCutawayStart": {
+      "t": "Start uitsnijding vooraan",
+      "d": "De plaats waar de voorzijde begint te verlopen naar de zoom toe"
+    },
+    "frontCutawayEnd": {
+      "t": "Einde uitsnijding vooraan",
+      "d": "Door dit te verhogen blijft de verloping vooraan bij het midden"
+    },
+    "collarSpread": {
+      "t": "Spreiding kraag",
+      "d": "De kraagspreiding bepaalt hoe de kraag over de schouders valt"
+    },
+    "lapelStart": {
+      "t": "Start revers",
+      "d": "Start van de revers"
+    },
+    "lapelReduction": {
+      "t": "Reductie revers",
+      "d": "Mate waarin het einde van de revers weer inwaards keren"
+    },
+    "collarHeight": {
+      "t": "Hoogte kraag",
+      "d": "De hoogte van de kraag"
+    },
+    "collarNotchDepth": {
+      "t": "Diepte inkeping kraag",
+      "d": "Diepte van de inkeping van de kraag"
+    },
+    "collarNotchAngle": {
+      "t": "Hoek inkeping kraag",
+      "d": "Hoek van de inkeping van de kraag"
+    },
+    "collarNotchReturn": {
+      "t": "Kraag inkeping terugloop",
+      "d": "De mate waarin de kraag terugkomt na de inkeping, in vergelijking met de revers"
+    },
+    "rollLineCollarHeight": {
+      "t": "Rollijn kraaghoogte",
+      "d": "Hoeveel de kraag de nek omhelst"
+    },
+    "hemRadius": {
+      "t": "Straal zoom",
+      "d": "De mate waarin de zoom is afgerond"
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at your hips"
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls the amount of ease at your waist"
+    },
+    "buttons": {
+      "t": "Number of buttons",
+      "d": "Controls the amount of buttons"
+    },
+    "collarRoll": {
+      "t": "Collar roll",
+      "d": "Controls the amount of roll in the collar; how much the topcollar is higher than the undercollar."
+    }
+  }
+}

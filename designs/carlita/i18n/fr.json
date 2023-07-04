@@ -1,0 +1,15 @@
+{
+  "t": "Manteau Carlita",
+  "d": "La version pour les seins de notre manteau Carlton, aka manteau Sherlock Holmes.",
+  "p": {
+    "front": "Avant",
+    "side": "Côté"
+  },
+  "s": {},
+  "o": {
+    "contour": {
+      "t": "Contour",
+      "d": "Contrôle à quel point la courbe de la découpe princesse sera saillante ou adoucie."
+    }
+  }
+}

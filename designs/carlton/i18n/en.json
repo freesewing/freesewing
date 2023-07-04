@@ -1,0 +1,138 @@
+{
+  "t": "Carlton coat",
+  "d": "For Sherlock Holmes cosplay, or just a really nice coat.",
+  "p": {
+    "back": "Back",
+    "belt": "Belt",
+    "chestPocketWelt": "Chest pocket welt",
+    "chestPocketBag": "Chest pocket bag",
+    "collar": "Collar",
+    "collarStand": "Collar stand",
+    "cuffFacing": "Cuff facing",
+    "front": "Front",
+    "innerPocketBag": "Inner pocket bag",
+    "innerPocketTab": "Inner pocket tab",
+    "innerPocketWelt": "Inner pocket welt",
+    "pocketFlap": "Pocket flap",
+    "pocketLining": "Pocket lining",
+    "pocket": "Pocket",
+    "tail": "Tail",
+    "topSleeve": "Topsleeve",
+    "underSleeve": "Undersleeve"
+  },
+  "s": {},
+  "o": {
+    "seatEase": {
+      "t": "Seat ease",
+      "d": "Amount of ease around your bum"
+    },
+    "pocketPlacementHorizontal": {
+      "t": "Horizontal pocket placement",
+      "d": "The (horizontal) location of the pockets"
+    },
+    "pocketPlacementVertical": {
+      "t": "Vertical pocket placement",
+      "d": "The (vertical) location of the pockets"
+    },
+    "collarHeight": {
+      "t": "Collar height",
+      "d": "Height of the collar"
+    },
+    "length": {
+      "t": "Length",
+      "d": "Total length"
+    },
+    "pocketFlapRadius": {
+      "t": "Pocket flap radius",
+      "d": "The amount by which the pocket flap is rounded"
+    },
+    "pocketRadius": {
+      "t": "Pocket radius",
+      "d": "The amount by which the pocket is rounded"
+    },
+    "chestPocketHeight": {
+      "t": "Chest pocket height",
+      "d": "Height of the chest pocket"
+    },
+    "beltWidth": {
+      "t": "Belt width",
+      "d": "Width of the belt"
+    },
+    "buttonSpacingHorizontal": {
+      "t": "Horizontal button spacing",
+      "d": "Horizontal spacing of the buttons, also determines the front closure overlap"
+    },
+    "lapelReduction": {
+      "t": "Lapel reduction",
+      "d": "Controls how much the lapel tip goes inwards."
+    },
+    "frontOverlap": {
+      "t": "Front overlap",
+      "d": "Controls how much the right and left front of the garment overlap at the center front."
+    },
+    "pocketHeight": {
+      "t": "Pocket height",
+      "d": "Controls the height of the front pockets"
+    },
+    "pocketWidth": {
+      "t": "Pocket width",
+      "d": "Controls the width of the front pockets"
+    },
+    "chestPocketPlacement": {
+      "t": "Chest pocket placement",
+      "d": "Controls the location of the chest pocket."
+    },
+    "chestPocketAngle": {
+      "t": "Chest pocket angle",
+      "d": "Controls the slant of the chest pocket."
+    },
+    "chestPocketWidth": {
+      "t": "Chest pocket width",
+      "d": "Controls the width of the chest pocket."
+    },
+    "innerPocketPlacement": {
+      "t": "Inner pocket placement",
+      "d": "Controls the location of the inner pocket."
+    },
+    "innerPocketDepth": {
+      "t": "Inner pocket depth",
+      "d": "Controls the depth of the inner pocket."
+    },
+    "innerPocketWidth": {
+      "t": "Inner pocket width",
+      "d": "Controls the width of the inner pocket."
+    },
+    "innerPocketWeltHeight": {
+      "t": "Inner pocket welt height",
+      "d": "Controls the height of the inner pocket welts."
+    },
+    "sleeveBend": {
+      "t": "Sleeve bend",
+      "d": "The angle of the sleeve at the elbow."
+    },
+    "sleevecapHeight": {
+      "t": "Sleevecap height",
+      "d": "Controls the height of the sleevecap."
+    },
+    "sleevecapEase": {
+      "t": "Sleevecap ease",
+      "d": "Controls the amount of sleevecap ease."
+    },
+    "cuffLength": {
+      "t": "Cuff length",
+      "d": "Controls the length (height if you wish) of the cuffs."
+    },
+    "collarFlare": {
+      "t": "Collar flare",
+      "d": "Controls the flare of the collar by altering the fall length (between the neck and the tips) of the collar."
+    },
+    "collarSpread": {
+      "t": "Collar spread",
+      "d": "Controls how close the collar lies to the neck."
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls the amount of ease at your waist."
+    }
+  }
+}

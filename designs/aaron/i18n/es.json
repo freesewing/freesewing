@@ -1,0 +1,45 @@
+{
+  "t": "Aaron A-Shirt",
+  "d": "Aaron is an athletic shirt or tank top.",
+  "s": {
+    "cutOneStripToFinishTheNeckOpening": "Cut one strip to finish the neck opening",
+    "cutTwoStripsToFinishTheArmholes": "Cut two strips to finish the armholes",
+    "length": "Length",
+    "width": "Width"
+  },
+  "o": {
+    "armholeDrop": {
+      "t": "Caída de la sisa",
+      "d": "Baja la sisa esta cantidad. Valores negativos la elevan."
+    },
+    "backlineBend": {
+      "t": "Forma posterior de la sisa",
+      "d": "Determina la forma/curva de la parte posterior de la sisa."
+    },
+    "hipsEase": {
+      "t": "Holgura de cadera",
+      "d": "La cantidad de holgura en la cadera."
+    },
+    "necklineBend": {
+      "t": "Forma del cuello",
+      "d": "Determina la forma/curva del cuello en el frente."
+    },
+    "necklineDrop": {
+      "t": "Caída del escote",
+      "d": "La cantidad de cuello que se corta en el frente."
+    },
+    "shoulderStrapPlacement": {
+      "t": "Posición de los tirantes",
+      "d": "Determina si los tirantes se colocan cerca del cuello (números más bajos) o del hombro (números más altos)."
+    },
+    "shoulderStrapWidth": {
+      "t": "Anchura de los tirantes",
+      "d": "La anchura de los tirantes."
+    },
+    "stretchFactor": {
+      "t": "Extensión",
+      "d": "Determina la holgura negativa horizontal."
+    }
+  },
+  "p": {}
+}

@@ -1,0 +1,90 @@
+{
+  "t": "Charlie chinos",
+  "d": "Charlie is een chino broekpatroon.",
+  "p": {
+    "back": "Back",
+    "backPocket": "Back pocket",
+    "backPocketFacing": "Back pocket facing",
+    "backPocketInterfacing": "Back pocket interfacing",
+    "backPocketWelt": "Back pocket welt",
+    "beltLoops": "Beltloops",
+    "flyExtension": "Fly extension",
+    "flyFacing": "Fly facing",
+    "front": "Front",
+    "frontPocket": "Front pocket",
+    "frontPocketFacing": "Front pocket facing",
+    "waistband": "Waistband",
+    "waistbandCurved": "Curved waistband"
+  },
+  "s": {},
+  "o": {
+    "backPocketHorizontalPlacement": {
+      "t": "Plaatsing horizontale achterzak",
+      "d": "Bepaalt de horizontale plaatsing van de achterzak"
+    },
+    "backPocketVerticalPlacement": {
+      "t": "Verticale plaatsing achterzak",
+      "d": "Bepaalt de verticale plaatsing van de achterzak"
+    },
+    "backPocketWidth": {
+      "t": "Breedte achterzak",
+      "d": "Bepaalt de breedte van de achterzak"
+    },
+    "backPocketDepth": {
+      "t": "Diepte achterzak",
+      "d": "Bepaalt de diepte van de achterzak"
+    },
+    "backPocketFacing": {
+      "t": "Back pocket facing",
+      "d": "Controls whether or not to include facing on the back pockets"
+    },
+    "frontPocketSlantDepth": {
+      "t": "Diepte voorzak",
+      "d": "Bepaalt de diepte van de voorste zakopening"
+    },
+    "frontPocketSlantWidth": {
+      "t": "Schouderstuk voorzak breedte",
+      "d": "Bepaalt de breedte van de voorste zakopening"
+    },
+    "frontPocketSlantRound": {
+      "t": "Schuine zakdeel rond",
+      "d": "Bepaalt hoe ver we van het einde van de schuine lijn beginnen met afronden in de outnaad"
+    },
+    "frontPocketSlantBend": {
+      "t": "Schuine zakopening",
+      "d": "Bepaalt de straal waarmee we het zakdeel op de rand afstemmen"
+    },
+    "frontPocketWidth": {
+      "t": "Breedte zak",
+      "d": "Bepaalt de breedte van het voorste zakdeel"
+    },
+    "frontPocketDepth": {
+      "t": "Diepte zak",
+      "d": "Bepaalt de diepte van het voorzakdeel"
+    },
+    "frontPocketFacing": {
+      "t": "Beleg zak",
+      "d": "Bepaalt hoever het beleg van de zak zich uitstrekt tot het zakdeel"
+    },
+    "beltLoops": {
+      "t": "Rand lussen",
+      "d": "Bepaalt de hoeveelheid riemlusjes"
+    },
+    "flyCurve": {
+      "t": "Vlieg curve",
+      "d": "Bepaalt de kromming van de gulpnaad"
+    },
+    "flyLength": {
+      "t": "Vlieg lengte",
+      "d": "Bepaalt de lengte van de gulp"
+    },
+    "flyWidth": {
+      "t": "Fly width",
+      "d": "Bepaalt hoe ver de J-naad van de rand van de gulp af staat"
+    },
+    "waistbandCurve": {
+      "t": "Tailleband curve",
+      "d": "Bepaalt hoe gebogen de tailleband is."
+    }
+  }
+}
