@@ -39,6 +39,26 @@
     "hoodAngle": {
       "t": "Hood angle",
       "d": "Controls the angle at which the hood is attached"
+    },
+    "ribbing": {
+      "t": "Ribbing",
+      "d": "Whether or not to include ribbing on the pattern."
+    },
+    "ribbingHeight": {
+      "t": "Ribbing height",
+      "d": "Controls the height of the ribbing"
+    },
+    "ribbingStretch": {
+      "t": "Ribbing stretch",
+      "d": "Use this to adapt the pattern to how stretchy the ribbing that you are using is."
+    },
+    "hipsEase": {
+      "t": "Hops ease",
+      "d": "Controls the amount of ease at the hips"
+    },
+    "pocketWidth": {
+      "t": "Pocket width",
+      "d": "Controls the width of the pocket"
     }
   }
 }
