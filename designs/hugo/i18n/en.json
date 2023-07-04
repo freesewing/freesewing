@@ -21,6 +21,14 @@
     "waistband": "Waistband"
   },
   "o": {
+    "ribbingHeight": {
+      "t": "Ribbing height",
+      "d": "Controls the height of the ribbing"
+    },
+    "ribbingStretch": {
+      "t": "Ribbing stretch",
+      "d": "Use this to adapt the pattern to how stretchy the ribbing that you are using is."
+    },
     "hipsEase": {
       "t": "Hips ease",
       "d": "The amount of ease at your hips."
