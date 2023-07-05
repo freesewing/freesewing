@@ -93,3 +93,8 @@ Below are some notes from [@AnnekeCaramin](/users/AnnekeCaramin) who
 - Convierte la tumba, pulsa y pulsa en su lugar. Empuje el cabello con una tapa invisible, luego coser a mano el cabo de revestimiento para recubrir.
 - Marca los orificios de los botones en la parte delantera y en las cintas. Hacer agujeros de botones y adjuntar botones.
 - Retire todos los golpes aún presentes, pon en tu abrigo, dándote una palmadita en la espalda y luego duerme durante tres semanas.
+
+
+#### Other notes
+
+- Sew an arrowhead tack in the triangular area above the back pleat. This area is marked on the pattern by dashed lines and a bnotch at the triangle top. The arrowhead tack reinforces the pleat seam.
