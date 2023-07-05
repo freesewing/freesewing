@@ -1,4 +1,4 @@
-import { createClient } from 'next-sanity'
+import { createClient } from '@sanity/client'
 import { siteConfig } from 'site/site.config.mjs'
 
 let sanityClient
@@ -7,11 +7,10 @@ export const sanityLoader = async ({ query, language, type, slug, order, filters
   sanityClient =
     sanityClient ||
     createClient({
-      projectId: 'hl5bw8cj',
-      dataset: 'site-content',
-      apiVersion: '2023-06-17',
-      // token: process.env.SANITY_TOKEN,
-      useCdn: false,
+      projectId: siteConfig.sanity.project,
+      dataset: siteConfig.sanity.dataset,
+      apiVersion: siteConfig.sanity.apiVersion,
+      useCdn: true,
     })
 
   if (!query) {

@@ -16,7 +16,7 @@ import { objUpdate } from 'shared/utils.mjs'
  * Note: Set 'c' to set the control level to hide things from users
  */
 
-const ns = ['account', 'sections', 'design', 'tags']
+export const ns = ['account', 'sections', 'design', 'tags', 'designs']
 
 const sitePages = (t = false, control = 99) => {
   // Handle t not being present
@@ -44,20 +44,10 @@ const sitePages = (t = false, control = 99) => {
       s: 'sets',
       o: 16,
     },
-    showcase: {
-      t: t('sections:showcase'),
-      s: 'showcase',
-      o: 20,
-    },
     community: {
       t: t('sections:community'),
       s: 'community',
       o: 40,
-    },
-    blog: {
-      t: t('sections:blog'),
-      s: 'blog',
-      o: 50,
     },
     account: {
       t: t('sections:account'),
@@ -132,13 +122,13 @@ const sitePages = (t = false, control = 99) => {
     s: `account/reload`,
   }
   for (const design in designs) {
-    pages.designs[design] = {
-      t: t(`designs:${design}.t`),
-      s: `designs/${design}`,
-    }
+    // pages.designs[design] = {
+    //   t: t(`designs:${design}.t`),
+    //   s: `designs/${design}`,
+    // }
     pages.new.pattern[design] = {
       t: t(`account:generateANewThing`, { thing: t(`designs:${design}.t`) }),
-      s: `new/patterns/${design}`,
+      s: `new/${design}`,
     }
   }
   for (const tag of tags) {
@@ -152,11 +142,14 @@ const sitePages = (t = false, control = 99) => {
 }
 
 export const useNavigation = (params = {}, extra = []) => {
-  const { locale = 'en' } = params
+  const { locale = 'en', ignoreControl } = params
   const { t } = useTranslation(ns)
   const { account } = useAccount()
 
-  const navigation = { ...pbn[locale], ...sitePages(t, account?.control) }
+  const navigation = {
+    ...pbn[locale],
+    ...sitePages(t, ignoreControl ? undefined : account.control),
+  }
   for (const [_path, _data] of extra) {
     objUpdate(navigation, _path, _data)
   }

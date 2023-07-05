@@ -1,6 +1,10 @@
-import { SanityPageWrapper, ns as sanityNs } from 'site/components/sanity/page-wrapper.mjs'
+import {
+  SanityPageWrapper,
+  getSanityStaticPaths,
+  ns as sanityNs,
+} from 'site/components/sanity/page-wrapper.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { sanityLoader, sanityImage } from 'site/components/sanity/utils.mjs'
+import { sanityLoader, sanitySiteImage } from 'site/components/sanity/utils.mjs'
 
 const namespaces = [...sanityNs]
 
@@ -32,7 +36,7 @@ export async function getStaticProps({ params, locale }) {
         title: post.title,
         date: post.date,
         caption: post.caption,
-        image: sanityImage(post.image),
+        image: sanitySiteImage(post.image),
       },
       // FIXME load the author separately
       author: {
@@ -43,25 +47,15 @@ export async function getStaticProps({ params, locale }) {
         // about: post.author.about,
       },
       ...(await serverSideTranslations(locale, namespaces)),
+      page: {
+        locale,
+        title: post.title,
+        path: ['blog', slug],
+      },
     },
   }
 }
 
-export const getStaticPaths = async () => {
-  const paths = await sanityLoader({ language: 'en', type: 'blog' })
-    .then((data) => data.map((post) => `/blog/${post.slug.current}`))
-    .catch((err) => console.log(err))
-
-  return {
-    paths: [
-      ...paths,
-      ...paths.map((p) => `/de${p}`),
-      ...paths.map((p) => `/es${p}`),
-      ...paths.map((p) => `/fr${p}`),
-      ...paths.map((p) => `/nl${p}`),
-    ],
-    fallback: false,
-  }
-}
+export const getStaticPaths = getSanityStaticPaths('blog')
 
 export default BlogPostPage

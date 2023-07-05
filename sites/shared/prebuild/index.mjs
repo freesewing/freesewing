@@ -8,6 +8,7 @@ import { prebuildLab } from './lab.mjs'
 import { prebuildDesigns } from './designs.mjs'
 import { prebuildFavicon } from './favicon.mjs'
 import { generateOgImage } from './og/index.mjs'
+import { loadSanityPosts } from './sanity.mjs'
 
 const run = async () => {
   if (process.env.LINTER) return true
@@ -17,7 +18,8 @@ const run = async () => {
   if (['org', 'dev'].includes(SITE)) {
     if (!FAST) await prebuildGitData(SITE)
     const docPages = await prebuildDocs(SITE)
-    prebuildNavigation(docPages, false, SITE)
+    const sanityPosts = await loadSanityPosts(SITE)
+    prebuildNavigation(docPages, sanityPosts, SITE)
     if (!FAST && process.env.GENERATE_OG_IMAGES) {
       // Create og image for the home page
       await generateOgImage({

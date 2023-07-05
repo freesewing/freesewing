@@ -10,7 +10,7 @@ const future = new Date('10-12-2026').getTime()
 const loadTranslation = (locale) => {
   let data
   try {
-    data = loadYaml(`${folders.shared}/navigation/sections.${locale}.yaml`, false)
+    data = loadYaml(`${folders.shared[0]}/navigation/sections.${locale}.yaml`, false)
   } catch (err) {
     data = {}
   }
@@ -22,7 +22,7 @@ const loadTranslation = (locale) => {
 /*
  * Main method that does what needs doing
  */
-export const prebuildNavigation = (docPages, strapiPosts, site) => {
+export const prebuildNavigation = (docPages, sanityPosts, site) => {
   /*
    * Since this is written to disk and loaded as JSON, we minimize
    * the data to load by using the following 1-character keys:
@@ -50,19 +50,19 @@ export const prebuildNavigation = (docPages, strapiPosts, site) => {
     }
 
     // Handle strapi content
-    for (const type in strapiPosts) {
+    for (const type in sanityPosts) {
       set(nav, [lang, type], {
-        t: translations[type] ? translations[type] : type,
+        t: translations[type] || type,
         l: type,
         s: type,
-        o: translations[type] ? translations[type] : type,
+        o: type === 'blog' ? 50 : 20,
       })
-      for (const [slug, page] of Object.entries(strapiPosts[type][lang])) {
-        const chunks = slug.split('/')
+      for (const page of sanityPosts[type][lang]) {
+        const chunks = page.slug.split('/')
         set(nav, [lang, type, ...chunks], {
           t: page.title,
           l: page.linktitle,
-          s: type + '/' + slug,
+          s: type + '/' + page.slug,
           o: (future - new Date(page.date).getTime()) / 100000,
         })
       }
