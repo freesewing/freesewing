@@ -1,5 +1,5 @@
 ---
-title: Patterns
+title: Дизайни
 order: 300
 ---
 
