@@ -93,3 +93,8 @@ Voici quelques notes de [@AnnekeCaramin](/users/AnnekeCaramin) qui
 - Transformez l'ourlet, appuyez et badigeonnez en place. Coudre l'ourlet avec un point invisible, puis coudre à la main ourle à l'enrober.
 - Marquer les trous de boutons sur les pièces avant et ceinture. Faire des trous de boutons et attacher des boutons.
 - Retirez tous les arêtes encore présentes, enfilez votre manteau, donnez-vous une tape dans le dos et dormez pendant trois semaines.
+
+
+#### Other notes
+
+- Sew an arrowhead tack in the triangular area above the back pleat. This area is marked on the pattern by dashed lines and a bnotch at the triangle top. The arrowhead tack reinforces the pleat seam.
