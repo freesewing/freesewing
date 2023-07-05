@@ -319,6 +319,8 @@ org:
     'algoliasearch': *algoliasearch
     'react-copy-to-clipboard': 5.1.0
     'daisyui': *daisyui
+    'echarts': 5.4.2
+    'echarts-for-react': 3.0.2
     'jotai': &jotai '2.2.1'
     'jotai-location': &jotai-location '0.5.1'
     'lodash.get': *_get
