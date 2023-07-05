@@ -93,3 +93,8 @@ Below are some notes from [@AnnekeCaramin](/users/AnnekeCaramin) who
 - Draai de zoom omhoog, strijk en drieg naar zijn plaats. Stik de zoom met een onzichtbare steek en stik de voering aan de jas.
 - Markeer knoopsgaten op voorpand en riemstukken. Maak knoopsgaten en voeg knoppen.
 - Verwijder alle driegen die nog aanwezig zijn, doe aan je jas, geef jezelf een pat op de rug en vervolgens drie weken slapen.
+
+
+#### Other notes
+
+- Sew an arrowhead tack in the triangular area above the back pleat. This area is marked on the pattern by dashed lines and a bnotch at the triangle top. The arrowhead tack reinforces the pleat seam.
