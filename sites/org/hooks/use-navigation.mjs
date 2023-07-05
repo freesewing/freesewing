@@ -89,6 +89,11 @@ const sitePages = (t = false, control = 99) => {
       s: 'profile',
       h: 1,
     },
+    translation: {
+      t: t('translation'),
+      s: 'translation',
+      h: 1,
+    },
     sitemap: {
       t: t('sitemap'),
       s: 'sitemap',
