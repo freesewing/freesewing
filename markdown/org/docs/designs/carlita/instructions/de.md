@@ -93,3 +93,8 @@ Below are some notes from [@AnnekeCaramin](/users/AnnekeCaramin) who
 - Drehen Sie den Saum hoch, drücken und rüsten Sie ihn ein. Nähen Saum mit unsichtbarem Nähen, dann Handnäht-Futter Saum zu Mantel.
 - Knöpflöcher auf Vorder- und Gurtstücken markieren. Knopflöcher erstellen und Tasten anhängen.
 - Entfernen Sie alle noch vorhandenen, legen Sie Ihren Mantel, geben Sie sich ein Pat auf der Rückseite und schlafen Sie dann für drei Wochen.
+
+
+#### Other notes
+
+- Sew an arrowhead tack in the triangular area above the back pleat. This area is marked on the pattern by dashed lines and a bnotch at the triangle top. The arrowhead tack reinforces the pleat seam.
