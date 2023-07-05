@@ -24,7 +24,7 @@ const loadTranslationStatus = async (setter) => {
   }
 }
 
-const Status = ({ done, approved, language }) => {
+const Status = ({ done, approved }) => {
   const option = {
     series: [
       {

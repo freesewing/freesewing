@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import * as echarts from 'echarts'
 import ReactECharts from 'echarts-for-react'
 import { Popout } from 'shared/components/popout.mjs'
