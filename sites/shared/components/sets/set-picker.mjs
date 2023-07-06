@@ -136,7 +136,7 @@ export const UserSetPicker = ({ design, t, href, clickHandler }) => {
       }
     }
     getSets()
-  })
+  }, [backend])
 
   return Object.keys(sets).length < 1 ? (
     <PopoutWrapper tip noP>
