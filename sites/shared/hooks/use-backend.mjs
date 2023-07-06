@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
+import { useMemo } from 'react'
 
 /*
  * Helper methods to interact with the FreeSewing backend
@@ -65,199 +66,239 @@ const responseHandler = (response, expectedStatus = 200, expectData = true) => {
   return { success: false, response }
 }
 
-export function useBackend(token = false) {
-  /*
-   * Set up authentication headers
-   */
-  const auth = token ? { headers: { Authorization: 'Bearer ' + token } } : {}
+function Backend(auth) {
+  this.auth = auth
+}
 
+/*
+ * backend.signUp: User signup
+ */
+Backend.prototype.signUp = async function ({ email, language }) {
+  return responseHandler(await api.post('/signup', { email, language }), 201)
+}
+
+/*
+ * Backend.prototype.loadConfirmation: Load a confirmation
+ */
+Backend.prototype.loadConfirmation = async function ({ id, check }) {
+  return responseHandler(await api.get(`/confirmations/${id}/${check}`))
+}
+/*
+ * Backend.prototype.confirmSignup: Confirm a signup
+ */
+Backend.prototype.confirmSignup = async function ({ id, consent }) {
+  return responseHandler(await api.post(`/confirm/signup/${id}`, { consent }))
+}
+
+/*
+ * Backend.prototype.signIn: User signin/login
+ */
+Backend.prototype.signIn = async function ({ username, password = false, token = false }) {
+  return password === false
+    ? responseHandler(await api.post('/signinlink', { username }))
+    : responseHandler(await api.post('/signin', { username, password, token }))
+}
+
+/*
+ * Backend.prototype.signInFromLink: Trade in sign-in link id & check for JWT token
+ */
+Backend.prototype.signInFromLink = async function ({ id, check }) {
+  return responseHandler(await api.post(`/signinlink/${id}/${check}`))
+}
+
+/*
+ * Generic update account method
+ */
+Backend.prototype.updateAccount = async function (data) {
+  return responseHandler(await api.patch(`/account/jwt`, data, this.auth))
+}
+
+/*
+ * Checks whether a username is available
+ */
+Backend.prototype.isUsernameAvailable = async function (username) {
+  const response = await api.post(`/available/username/jwt`, { username }, this.auth)
+
+  // 404 means username is available, which is success in this case
+  return response.status === 404
+    ? { success: true, data: false, available: true, response }
+    : { success: false, available: false, response }
+}
+
+/*
+ * Remove account method
+ */
+Backend.prototype.removeAccount = async function () {
+  return responseHandler(await api.delete(`/account/jwt`, this.auth))
+}
+/*
+ * Enable MFA
+ */
+Backend.prototype.enableMfa = async function () {
+  return responseHandler(await api.post(`/account/mfa/jwt`, { mfa: true }, this.auth))
+}
+
+/*
+ * Confirm MFA
+ */
+Backend.prototype.confirmMfa = async function (data) {
+  return responseHandler(await api.post(`/account/mfa/jwt`, { ...data, mfa: true }, this.auth))
+}
+
+/*
+ * Disable MFA
+ */
+Backend.prototype.disableMfa = async function (data) {
+  return responseHandler(
+    await await api.post(`/account/mfa/jwt`, { ...data, mfa: false }, this.auth)
+  )
+}
+
+/*
+ * Reload account
+ */
+Backend.prototype.reloadAccount = async function () {
+  return responseHandler(await await api.get(`/whoami/jwt`, this.auth))
+}
+/*
+ * Create API key
+ */
+Backend.prototype.createApikey = async function (data) {
+  return responseHandler(await api.post(`/apikeys/jwt`, data, this.auth), 201)
+}
+
+/*
+ * Get API keys
+ */
+Backend.prototype.getApikeys = async function () {
+  return responseHandler(await api.get(`/apikeys/jwt`, this.auth))
+}
+
+/*
+ * Remove API key
+ */
+Backend.prototype.removeApikey = async function (id) {
+  const response = await api.delete(`/apikeys/${id}/jwt`, this.auth)
+
+  return response && response.status === 204 ? true : false
+}
+
+/*
+ * Get measurements sets
+ */
+Backend.prototype.getSets = async function () {
+  return responseHandler(await api.get(`/sets/jwt`, this.auth))
+}
+
+/*
+ * Get measurements set
+ */
+Backend.prototype.getSet = async function (id) {
+  return responseHandler(await api.get(`/sets/${id}/jwt`, this.auth))
+}
+
+/*
+ * Create measurements set
+ */
+Backend.prototype.createSet = async function (data) {
+  return responseHandler(await api.post(`/sets/jwt`, data, this.auth), 201)
+}
+
+/*
+ * Remove measurements set
+ */
+Backend.prototype.removeSet = async function (id) {
+  const response = await api.delete(`/sets/${id}/jwt`, this.auth)
+
+  return response && response.status === 204 ? true : false
+}
+
+/*
+ * Generic update measurements set method
+ */
+Backend.prototype.updateSet = async function (id, data) {
+  return responseHandler(await api.patch(`/sets/${id}/jwt`, data, this.auth))
+}
+
+/*
+ * Get curated measurements sets
+ */
+Backend.prototype.getCuratedSets = async function () {
+  return responseHandler(await api.get(`/curated-sets`))
+}
+
+/*
+ * Get curated measurements set
+ */
+Backend.prototype.getCuratedSet = async function (id) {
+  return responseHandler(await api.get(`/curated-sets/${id}`))
+}
+
+/*
+ * Remove curated measurements set
+ */
+Backend.prototype.removeCuratedMeasurementsSet = async function (id) {
+  const response = await api.delete(`/curated-sets/${id}/jwt`, this.auth)
+
+  return response && response.status === 204 ? true : false
+}
+
+/*
+ * Get pattern
+ */
+Backend.prototype.getPattern = async function (id) {
+  return responseHandler(await api.get(`/patterns/${id}/jwt`, this.auth))
+}
+
+/*
+ * Get patterns
+ */
+Backend.prototype.getPatterns = async function () {
+  return responseHandler(await api.get(`/patterns/jwt`, this.auth))
+}
+
+/*
+ * Create pattern
+ */
+Backend.prototype.createPattern = async function (data) {
+  return responseHandler(await api.post(`/patterns/jwt`, data, this.auth), 201)
+}
+
+/*
+ * Remove pattern
+ */
+Backend.prototype.removePattern = async function (id) {
+  const response = await api.delete(`/patterns/${id}/jwt`, this.auth)
+
+  return response && response.status === 204 ? true : false
+}
+
+/*
+ * Generic update pattern set method
+ */
+Backend.prototype.updatePattern = async function (id, data) {
+  return responseHandler(await api.patch(`/patterns/${id}/jwt`, data, this.auth))
+}
+
+/*
+ * Create GitHub issue
+ */
+Backend.prototype.createIssue = async function (data) {
+  return responseHandler(await api.post(`/issues`, data), 201)
+}
+
+export function useBackend(token = false) {
   /*
    * This backend object is what we'll end up returning
    */
-  const backend = {}
+  const backend = useMemo(() => {
+    /*
+     * Set up authentication headers
+     */
+    const auth = token ? { headers: { Authorization: 'Bearer ' + token } } : {}
 
-  /*
-   * backend.signUp: User signup
-   */
-  backend.signUp = async ({ email, language }) =>
-    responseHandler(await api.post('/signup', { email, language }), 201)
-
-  /*
-   * backend.loadConfirmation: Load a confirmation
-   */
-  backend.loadConfirmation = async ({ id, check }) =>
-    responseHandler(await api.get(`/confirmations/${id}/${check}`))
-
-  /*
-   * backend.confirmSignup: Confirm a signup
-   */
-  backend.confirmSignup = async ({ id, consent }) =>
-    responseHandler(await api.post(`/confirm/signup/${id}`, { consent }))
-
-  /*
-   * backend.signIn: User signin/login
-   */
-  backend.signIn = async ({ username, password = false, token = false }) =>
-    password === false
-      ? responseHandler(await api.post('/signinlink', { username }))
-      : responseHandler(await api.post('/signin', { username, password, token }))
-
-  /*
-   * backend.signInFromLink: Trade in sign-in link id & check for JWT token
-   */
-  backend.signInFromLink = async ({ id, check }) =>
-    responseHandler(await api.post(`/signinlink/${id}/${check}`))
-
-  /*
-   * Generic update account method
-   */
-  backend.updateAccount = async (data) =>
-    responseHandler(await api.patch(`/account/jwt`, data, auth))
-
-  /*
-   * Checks whether a username is available
-   */
-  backend.isUsernameAvailable = async (username) => {
-    const response = await api.post(`/available/username/jwt`, { username }, auth)
-
-    // 404 means username is available, which is success in this case
-    return response.status === 404
-      ? { success: true, data: false, available: true, response }
-      : { success: false, available: false, response }
-  }
-
-  /*
-   * Remove account method
-   */
-  backend.removeAccount = async () => responseHandler(await api.delete(`/account/jwt`, auth))
-
-  /*
-   * Enable MFA
-   */
-  backend.enableMfa = async () =>
-    responseHandler(await api.post(`/account/mfa/jwt`, { mfa: true }, auth))
-
-  /*
-   * Confirm MFA
-   */
-  backend.confirmMfa = async (data) =>
-    responseHandler(await api.post(`/account/mfa/jwt`, { ...data, mfa: true }, auth))
-
-  /*
-   * Disable MFA
-   */
-  backend.disableMfa = async (data) =>
-    responseHandler(await await api.post(`/account/mfa/jwt`, { ...data, mfa: false }, auth))
-
-  /*
-   * Reload account
-   */
-  backend.reloadAccount = async () => responseHandler(await await api.get(`/whoami/jwt`, auth))
-
-  /*
-   * Create API key
-   */
-  backend.createApikey = async (data) =>
-    responseHandler(await api.post(`/apikeys/jwt`, data, auth), 201)
-
-  /*
-   * Get API keys
-   */
-  backend.getApikeys = async () => responseHandler(await api.get(`/apikeys/jwt`, auth))
-
-  /*
-   * Remove API key
-   */
-  backend.removeApikey = async (id) => {
-    const response = await api.delete(`/apikeys/${id}/jwt`, auth)
-
-    return response && response.status === 204 ? true : false
-  }
-
-  /*
-   * Get measurements sets
-   */
-  backend.getSets = async () => responseHandler(await api.get(`/sets/jwt`, auth))
-
-  /*
-   * Get measurements set
-   */
-  backend.getSet = async (id) => responseHandler(await api.get(`/sets/${id}/jwt`, auth))
-
-  /*
-   * Create measurements set
-   */
-  backend.createSet = async (data) => responseHandler(await api.post(`/sets/jwt`, data, auth), 201)
-
-  /*
-   * Remove measurements set
-   */
-  backend.removeSet = async (id) => {
-    const response = await api.delete(`/sets/${id}/jwt`, auth)
-
-    return response && response.status === 204 ? true : false
-  }
-
-  /*
-   * Generic update measurements set method
-   */
-  backend.updateSet = async (id, data) =>
-    responseHandler(await api.patch(`/sets/${id}/jwt`, data, auth))
-
-  /*
-   * Get curated measurements sets
-   */
-  backend.getCuratedSets = async () => responseHandler(await api.get(`/curated-sets`))
-
-  /*
-   * Get curated measurements set
-   */
-  backend.getCuratedSet = async (id) => responseHandler(await api.get(`/curated-sets/${id}`))
-
-  /*
-   * Remove curated measurements set
-   */
-  backend.removeCuratedMeasurementsSet = async (id) => {
-    const response = await api.delete(`/curated-sets/${id}/jwt`, auth)
-
-    return response && response.status === 204 ? true : false
-  }
-
-  /*
-   * Get pattern
-   */
-  backend.getPattern = async (id) => responseHandler(await api.get(`/patterns/${id}/jwt`, auth))
-
-  /*
-   * Get patterns
-   */
-  backend.getPatterns = async () => responseHandler(await api.get(`/patterns/jwt`, auth))
-
-  /*
-   * Create pattern
-   */
-  backend.createPattern = async (data) =>
-    responseHandler(await api.post(`/patterns/jwt`, data, auth), 201)
-
-  /*
-   * Remove pattern
-   */
-  backend.removePattern = async (id) => {
-    const response = await api.delete(`/patterns/${id}/jwt`, auth)
-
-    return response && response.status === 204 ? true : false
-  }
-
-  /*
-   * Generic update pattern set method
-   */
-  backend.updatePattern = async (id, data) =>
-    responseHandler(await api.patch(`/patterns/${id}/jwt`, data, auth))
-
-  /*
-   * Create GitHub issue
-   */
-  backend.createIssue = async (data) => responseHandler(await api.post(`/issues`, data), 201)
+    return new Backend(auth)
+  }, [token])
 
   return backend
 }
