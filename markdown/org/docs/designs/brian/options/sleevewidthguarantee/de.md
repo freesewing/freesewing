@@ -1,15 +1,15 @@
----
+- - -
 title: "Sleeve width guarantee"
----
+- - -
 
-We first draft the arm opening, then we draft a sleeve to fit it.
+Wir entwerfen zuerst die Armöffnung, dann entwerfen wir einen Ärmel zu ihr passen.
 
-When all goes well, the sleeve fits perfectly, and this option is not relevant. However, if/when the sleeve does not perfectly fit the arm opening, we need to adapt it.
+Wenn alles gut geht, passt der Ärmel perfekt, und diese Option ist nicht relevant. Allerdings, wenn/wenn der Ärmel nicht perfekt passt der Arm Öffnung, müssen wir es anpassen.
 
 Since the shape and height of the sleevecap are more important than the width, we tend to prefer adjusting the width to fit the sleevecap.
 
-To avoid the sleeve getting too narrow, we only adapt a portion of the sleeve width. This option allows you to control how much of the sleeve width is guaranteed. Increasing this option will allow us less of the width to play with to fit the sleeve. This way, the resulting sleeve will be closer to the theoretical sleeve width, and we will instead modify (more of) the sleevecap height to fit the sleeve.
+Um zu vermeiden, dass der Ärmel zu eng wird, passen wir nur einen Teil der Ärmelbreite an. Mit dieser Option können Sie einstellen, wie viel der Ärmelbreite garantiert ist. Wenn wir diese Option vergrößern, können wir weniger von der Breite zu spielen mit dem Ärmel passen. This way, the resulting sleeve will be closer to the theoretical sleeve width, and we will instead modify (more of) the sleevecap height to fit the sleeve.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_sleevewidthguarantee_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](brian_sleevewidthguarantee_sample.svg "Effekt dieser Option auf das Schnittmuster")
