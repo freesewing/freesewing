@@ -1,12 +1,12 @@
----
+- - -
 title: "Sleevecap top Y"
----
+- - -
 
 ***
 
-![The vertical location of the sleevecap top](./sleevecaptopfactory.svg)
+![De verticale locatie van de bovenkant van de mouwkop](./sleevecaptopfactory.svg)
 
-This option controls the vertical placement of the sleevecap top.
+Deze optie bepaalt de verticale plaatsing van de mouwkop.
 
 <Tip>
 
@@ -17,4 +17,4 @@ kijk hoe de mouwkop is opgebouwd en hoe de invloed van de verschillende opties o
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_sleevecaptopfactory_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](brian_sleevecaptopfactory_sample.svg "Effect van deze optie op het patroon")
