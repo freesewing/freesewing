@@ -1,6 +1,6 @@
----
+- - -
 title: "Bloc du corps de Bella : Instructions de couture"
----
+- - -
 
 <Note>
 
@@ -26,6 +26,13 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 
 </Tip>
 
+<Note>
+
+Bella a une pince à l'arrière seulement quand c'est nécessaire, basé sur les mesures et les options de style.
+Si la pince arrière n'est pas nécessaire alors elle ne sera pas incluse dans le patron.
+
+</Note>
+
 ### Étape 2 : Essayez-le
 
 - Essayez-le et vérifiez la coupe en épinglant le dos tout en le portant.
@@ -44,7 +51,7 @@ Il est parfois nécessaire de porter la maquette pendant un certain temps pour a
 
 <Note>
 
-N'oubliez pas de considérer Bella comme une base plutôt que comme un produit final, et ajustez donc ce dont vous avez besoin pour obtenir l'aspect désiré.  
+N'oubliez pas de considérer Bella comme une base plutôt que comme un produit final, donc ajustez ce dont vous avez besoin pour obtenir l'aspect désiré.  
 Par exemple :
 
 - Modifier la ligne d'encolure
