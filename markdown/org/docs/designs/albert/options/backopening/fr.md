@@ -1,6 +1,6 @@
----
+- - -
 titre : "Ouverture du dos"
----
+- - -
 
 Contrôle la quantité d'ouverture à l'arrière de votre tablier.
 
