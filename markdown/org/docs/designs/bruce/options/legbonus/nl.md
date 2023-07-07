@@ -1,11 +1,11 @@
----
+- - -
 title: "Leg length bonus"
----
+- - -
 
-![The leg bonus option on Bruce](./legbonus.svg)
+![De optie voor bonus beenlengte bij Bruce](./legbonus.svg)
 
-How much do you want to lengthen the legs?
+Hoeveel langer wil je de benen maken?
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bruce_legbonus_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bruce_legbonus_sample.svg "Effect van deze optie op het patroon")
