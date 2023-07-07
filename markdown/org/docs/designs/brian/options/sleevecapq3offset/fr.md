@@ -1,12 +1,12 @@
----
-title: "Sleevecap Q3 offset"
----
+- - -
+title: "décalage Q3 de la tête de manche"
+- - -
 
 ***
 
-![The offset in the third quarter of the sleevecap](./sleevecapq3offset.svg)
+![Le décalage dans le troisième quadrant de la tête de manche](./sleevecapq3offset.svg)
 
-This option controls the offset in the third quadrant of the sleevecap.
+Cette option contrôle le décalage dans le troisième quadrant de la tête de manche.
 
 <Tip>
 
