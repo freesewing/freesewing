@@ -1,8 +1,8 @@
----
-title: "Cuff length"
----
+- - -
+titre : "Longueur du poignet"
+- - -
 
-Controls the length (height if you wish) of the cuffs.
+Contrôle la longueur (hauteur si vous le souhaitez) des poignets.
 
 ## Effet de cette option sur le motif
 
