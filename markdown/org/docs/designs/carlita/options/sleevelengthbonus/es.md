@@ -1,10 +1,10 @@
----
+- - -
 title: "Sleeve length bonus"
----
+- - -
 
-![Sleevelength bonus](./sleevelengthbonus.svg)
+![Bono de matrícula](./sleevelengthbonus.svg)
 
-The amount to extend the sleeve beyond the length of the sleeve in the base block.
+La cantidad para extender la manga más allá de la longitud de la manga en el bloque base.
 
 <Note>
 
@@ -18,4 +18,4 @@ Tenga en cuenta el valor por defecto y utilice esto como base para alargar o aco
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_sleevelengthbonus_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](carlita_sleevelengthbonus_sample.svg "Efecto de esta opción en el patrón")
