@@ -1,9 +1,9 @@
----
+- - -
 title: "Inner pocket depth"
----
+- - -
 
-Controls the depth of the inner pocket.
+Steuert die Tiefe der inneren Tasche.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_innerpocketdepth_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](carlita_innerpocketdepth_sample.svg "Effekt dieser Variable auf das Schnittmuster")
