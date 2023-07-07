@@ -1,11 +1,11 @@
----
+- - -
 title: "Cuff ease"
----
+- - -
 
-![The cuff ease factor on Brian](./cuffease.svg)
+![El factor de facilidad de corte en Brian](./cuffease.svg)
 
-This option controls the ease at your wrist.
+Esta opción controla la facilidad de su muñeca.
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_cuffease_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](brian_cuffease_sample.svg "Efecto de esta opción en el patrón")
