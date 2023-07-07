@@ -1,6 +1,6 @@
----
+- - -
 title: "Neckline drop"
----
+- - -
 
 ![De optie voor de diepte van de halslijn bij Aaron](./necklinedrop.svg)
 
