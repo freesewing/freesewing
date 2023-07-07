@@ -1,6 +1,6 @@
----
+- - -
 title: "Carlita coat: Sewing Instructions"
----
+- - -
 
 ### Step 1: Draft and Cut the missing Lining and Facing Parts
 
@@ -46,7 +46,7 @@ Don't forget the seam allowance for these pieces when cutting if you are making 
 - Remove the seam allowamces (if included) of the upper piece.
 - The upper piece is now the **Back shoulder** part.
 
-#### Cutting
+#### Вирізання
 
 - Cut all the parts above from their respective fabrics/facings. ([see Carlita Cutting](/docs/patterns/carlita/cutting/))
 
@@ -93,3 +93,8 @@ Below are some notes from [@AnnekeCaramin](/users/AnnekeCaramin) who
 - Turn hem up, press and baste into place. Sew hem with an invisible stitch, then hand sew lining hem to coat.
 - Mark buttonholes on coat front and belt pieces. Make buttonholes and attach buttons.
 - Remove all basting still present, put on your coat, give yourself a pat on the back and then sleep for three weeks.
+
+
+#### Other notes
+
+- Sew an arrowhead tack in the triangular area above the back pleat. This area is marked on the pattern by dashed lines and a bnotch at the triangle top. The arrowhead tack reinforces the pleat seam.
