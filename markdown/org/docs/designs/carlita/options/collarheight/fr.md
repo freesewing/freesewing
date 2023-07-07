@@ -1,10 +1,10 @@
----
-title: "Collar height"
----
+- - -
+titre: "Hauteur du col"
+- - -
 
-![Collar height](collarheight.svg)
+![Hauteur du col](collarheight.svg)
 
-Controls the height of the collar.
+Contrôle la hauteur du col.
 
 ## Effet de cette option sur le motif
 
