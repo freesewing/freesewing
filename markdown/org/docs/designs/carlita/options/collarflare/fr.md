@@ -1,11 +1,11 @@
----
-title: "Collar flare"
----
+- - -
+titre : "Col évasé"
+- - -
 
-Controls the flare of the collar by altering the fall length (between the neck and the points) of the collar.
+Contrôle l'évasement du col en modifiant la longueur de chute (entre le cou et les pointes) du col.
 
-- Increase this option to increase the fall length.
-- Decrease this option to decrease the fall length.
+- Augmentez cette option pour augmenter la longueur de la chute.
+- Diminuez cette option pour réduire la longueur de la chute.
 
 ## Effet de cette option sur le motif
 
