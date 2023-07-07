@@ -1,8 +1,8 @@
----
-title: "Vertical pocket placement"
----
+- - -
+titre: "Placement vertical de la poche"
+- - -
 
-Controls the location of the pockets vertically (higher or lower).
+Contrôle l'emplacement des poches verticalement (plus ou moins haut).
 
 ## Effet de cette option sur le motif
 
