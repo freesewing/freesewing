@@ -1,6 +1,6 @@
----
+- - -
 title: "Brian body block: Design Options"
----
+- - -
 
 <PatternOptions pattern='brian' />
 
@@ -10,9 +10,9 @@ In version 2 of FreeSewing, the sleevecap of Brian was redesigned to be more ada
 
 ### De grenzendoos
 
-The _bounding box_ of the sleevecap is a rectangle that is as wide as the sleeve, and as high as the sleevecap. Inside this box, we will construct our sleevecap later.
+The _bounding box_ of the sleevecap is a rectangle that is as wide as the sleeve, and as high as the sleevecap. Binnen deze doos bouwen we onze mouwkop.
 
-![The Brian sleevecap](sleevecap.svg)
+![De Brian Mouwkop](sleevecap.svg)
 
 The image above shows a sleevecap, starting at point 1, then going up until point 4, and then down again to point 2.
 
@@ -33,9 +33,9 @@ there to fit the shoulder.
 
 The width of the sleevecap (and thus the width of the sleeve at the bottom of the armhole) is equal to the distance between points 1 and 2. That distance depends on the measurements of the model, the amount of ease, the cut of the garment and so on. For our sleevecap, all we need to know is that we start with a given width. And while that width can be influenced by other factors, we can not influence it by any of the sleevecap options.
 
-![Controlling the top of the sleevecap](sleevecaptop.svg)
+![Onderdeel de bovenkant van de mouwkop](sleevecaptop.svg)
 
-The height of the sleevecap is equal to the distance between points 3 and 4. The exact height is a trade-off between the measurments of the model, options, ease, sleevecap ease, and the fact that the sleeve ultimately has to fit the armhole. So the height may vary, and we don't control the exact value. But there are two options that control the shape of our sleevecap:
+De hoogte van de mouwkop is gelijk aan de afstand tussen de punten 3 en 4. The exact height is a trade-off between the measurments of the model, options, ease, sleevecap ease, and the fact that the sleeve ultimately has to fit the armhole. So the height may vary, and we don't control the exact value. Maar er zijn twee opties die de vorm van onze mouwkop bepalen:
 
 - [Mouwkop top X](/docs/patterns/brian/options/sleevecaptopfactorx/) : Bepaalt de horizontale plaatsing van punt 3 en 4
 - [Mouwkop top Y](/docs/patterns/brian/options/sleevecaptopfactory/) : Bepaalt de verticale plaatsing van punt 4
@@ -44,9 +44,9 @@ In other words, point 4 can be made higher and lower and, perhaps less intutitiv
 
 ### De inflectiepunten
 
-![Controlling the inflection points](sleevecapinflection.svg)
+![De inkoppelingspunten regelen](sleevecapinflection.svg)
 
-With points 1, 2, 3, and 4 in place, we have a box to draw our sleevecap in. Now it's time to map out our _inflection points_. These are points 5 and 6 on our drawing, and their placement is determined by the following 4 options:
+Met de punten 1, 2, 3 en 4 hebben we een doos om onze mouwkop in te trekken. Now it's time to map out our _inflection points_. These are points 5 and 6 on our drawing, and their placement is determined by the following 4 options:
 
 - [Mouwkop X](/docs/patterns/brian/options/sleevecapbackfactorx) : Bepaalt de horizontale plaatsing van punt 5
 - [Mouwkop Y](/docs/patterns/brian/options/sleevecapbackfactory) : Bepaalt de verticale plaatsing van punt 5
@@ -62,11 +62,11 @@ helpen ze bij het creëren van punten die altijd op de mouwkop liggen: de ankerp
 
 ### De ankerpunten
 
-![Controlling the anchor points](sleevecapanchor.svg)
+![Controleren van de ankerpunten](sleevecapanchor.svg)
 
-Ultimately, our sleevecap will be the combination of 5 curves. In addition to points 1 and 2, the four _anchor points_ that are marked in orange in our example will be the start/finish of those curves.
+Uiteindelijk zal onze mouwkop de combinatie van 5 curves zijn. In addition to points 1 and 2, the four _anchor points_ that are marked in orange in our example will be the start/finish of those curves.
 
-The points are _offset_ perpendicular from the middle of a line between the two anchor points surrounding them. The offset for each point is controlled by these 4 options:
+The points are _offset_ perpendicular from the middle of a line between the two anchor points surrounding them. De offset voor elk punt wordt bepaald door deze 4 opties:
 
 - [Mouwkop Q1 offset](/docs/patterns/brian/options/sleevecapq1offset) : Bepaalt de offset loopendicular naar de lijn van punt 2 tot 6
 - [Mouwkop Q2 offset](/docs/patterns/brian/options/sleevecapq2offset) : Bepaalt de offset perpendicular naar de lijn van punt 6 tot 4
@@ -85,9 +85,9 @@ control each quarter individually.
 
 ### De spreiding
 
-![Controlling the anchor points](sleevecapspread.svg)
+![Controleren van de ankerpunten](sleevecapspread.svg)
 
-We now have all the start and end points to draw the 5 curves that will make up our sleevecaps. What we're missing are the control points (see [our info on Bézier curves](https://freesewing.dev/concepts/beziercurves) to learn more about how curves are constructed). These are determined by the so-called _spread_.
+We hebben nu alle start- en eindpunten om de 5 curves te tekenen die samen onze mouwkoppen zullen vormen. What we're missing are the control points (see [our info on Bézier curves](https://freesewing.dev/concepts/beziercurves) to learn more about how curves are constructed). Deze worden bepaald door de zogenaamde _spread_.
 
 For each of the anchor points (the ones marked in orange, not points 1 and 2) there is an option to control the spread upwards, and downwards:
 
@@ -111,11 +111,11 @@ de curve zal daarboven stijgen.
 
 ### Takeaways
 
-While the sleevecap in Brian (and all patterns that extend Brian) have a lot of options, understanding how the sleevecap is constructed can help you design the exact sleevecap shape you want. To do so:
+While the sleevecap in Brian (and all patterns that extend Brian) have a lot of options, understanding how the sleevecap is constructed can help you design the exact sleevecap shape you want. Om dit te doen:
 
 - Begin met het plaatsen van de bovenkant van je mouwkop
 - Bepaal dan de invoegpunten
 - Vervolgens, gebruik de offset om de kracht van de curve te controleren
 - Tot slot gebruik je de spreiding om de zaken vlot te trekken
 
-What's important to remember is that you're only ever controlling the shape of the sleevecap. Whatever shape you design, it will be fitted to the armhole, meaning that its size can and will be adapted to make sure the sleeve fits the armscye. However, the shape you design will always be respected.
+Wat belangrijk is om te onthouden is dat je alleen de vorm van de mouwkop controleert. Whatever shape you design, it will be fitted to the armhole, meaning that its size can and will be adapted to make sure the sleeve fits the armscye. De vorm die u aanmaakt zal echter altijd worden gerespecteerd.
