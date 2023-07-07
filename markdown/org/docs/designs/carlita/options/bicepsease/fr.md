@@ -1,8 +1,8 @@
----
+- - -
 titre : "Aisance aux biceps"
----
+- - -
 
-![Biceps ease](./bicepsease.svg)
+![Aisance au niveau des biceps](./bicepsease.svg)
 
 L'aisance au niveau de la partie supérieure du bras.
 
