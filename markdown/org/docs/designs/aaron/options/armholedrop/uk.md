@@ -1,6 +1,6 @@
----
+- - -
 title: "Armhole drop"
----
+- - -
 
 ![The armhole drop option on Aaron](./armholedrop.svg)
 
