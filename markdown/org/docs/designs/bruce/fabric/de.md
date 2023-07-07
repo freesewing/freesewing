@@ -1,9 +1,9 @@
----
+- - -
 title: "Bruce boxer briefs: Fabric Options"
----
+- - -
 
-You need a stretchy fabric for this pattern. Preferable something that is comfortable and soft to the touch, while allowing the skin to breathe.
+Für dieses Schnittmuster benötigst du einen dehnbaren Stoff. Vorzugsweise etwas Bequemes und Weiches, das dazu die Haut atmen lässt.
 
-I personally think that nothing can beat rayon for this pattern, although you can do with some other knit too, like jersey.
+Ich persönlich denke, dass Rayon für dieses Schnittmuster unschlagbar ist, auch wenn es sich natürlich auch aus einem anderen Strickstoff nähen lässt, wie beispielsweise Jersey.
 
-When in doubt, go for rayon.
+Im Zweifelsfall wähle Rayon.
