@@ -1,12 +1,12 @@
----
+- - -
 title: "Knot width"
----
+- - -
 
-![Knot width](knotwidth.svg)
+![Ancho de nudo](knotwidth.svg)
 
-The knot width is the width in the middle of the bow tie, where you make the knot.
+La anchura del nudo es la anchura en medio de la corbata de arco, donde se hace el nudo.
 
-How wide your bow tie is in the middle will influence the tie knot. Bigger works better with larger bow ties.
+La anchura de su corbata de arco en el medio influirá en la corbata no. Bigger funciona mejor con lazos de arco más grandes.
 
 <Note>
 
@@ -16,4 +16,4 @@ Con el empatado del tipo Cuadrado, este valor también dicta el ancho de las pun
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_knotwidth_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](benjamin_knotwidth_sample.svg "Efecto de esta opción en el patrón")
