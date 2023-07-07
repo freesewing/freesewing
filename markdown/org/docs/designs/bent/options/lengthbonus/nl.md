@@ -1,11 +1,11 @@
----
+- - -
 title: "Length bonus"
----
+- - -
 
-This option controls how far the block extend below your hips.
+Deze optie bepaalt hoeveel lager dan je heuplijn het basispatroon komt.
 
 > Dit basispatroon komt standaard tot aan je heuplijn, wat bijna gegarandeerd te kort zal zijn voor het uiteindelijke kledingstuk.
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bent_lengthbonus_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bent_lengthbonus_sample.svg "Effect van deze optie op het patroon")
