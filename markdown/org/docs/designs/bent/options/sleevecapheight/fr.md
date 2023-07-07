@@ -1,8 +1,8 @@
----
-title: "Sleevecap height"
----
+- - -
+titre : "Hauteur de la tête de manche"
+- - -
 
-This factor controls the height of the sleevecap.
+Ce facteur contrôle la hauteur de la tête de manche.
 
 ## Effet de cette option sur le motif
 
