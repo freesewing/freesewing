@@ -1,10 +1,10 @@
----
-title: "Pocket radius"
----
+- - -
+titre: "Rayon de poche"
+- - -
 
-![Pocket radius](pocketradius.svg)
+![Arrondi de poche](pocketradius.svg)
 
-Controls the radius with which the pockets are rounded at the bottom.
+Contrôle le rayon avec lequel les poches sont arrondies en bas.
 
 ## Effet de cette option sur le motif
 
