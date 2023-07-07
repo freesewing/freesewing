@@ -1,12 +1,12 @@
----
+- - -
 title: "Sleevecap top X"
----
+- - -
 
 ***
 
-![The horizontal location of the sleevecap top](./sleevecaptopfactorx.svg)
+![La ubicación horizontal de la parte superior de manga](./sleevecaptopfactorx.svg)
 
-This option controls the horizontal placement of the sleevecap top.
+Esta opción controla la colocación horizontal de la parte superior de la manga.
 
 <Tip>
 
@@ -17,4 +17,4 @@ en profundidad cómo se construye la manga y la influencia de las diferentes opc
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_sleevecaptopfactorx_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](brian_sleevecaptopfactorx_sample.svg "Efecto de esta opción en el patrón")
