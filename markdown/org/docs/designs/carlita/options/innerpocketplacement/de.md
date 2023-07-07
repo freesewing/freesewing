@@ -1,9 +1,9 @@
----
+- - -
 title: "Inner pocket placement"
----
+- - -
 
-Controls the location of the inner pocket.
+Steuert den Ort der inneren Tasche.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_innerpocketplacement_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](carlita_innerpocketplacement_sample.svg "Effekt dieser Variable auf das Schnittmuster")
