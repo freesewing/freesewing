@@ -1,6 +1,6 @@
----
-title: "Sleevecap ease"
----
+- - -
+titre : "Aisance de la tête de manche"
+- - -
 
 Combien d'aisance aux têtes de manches voulez-vous ?
 
