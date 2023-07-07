@@ -1,11 +1,11 @@
----
+- - -
 title: "Bow length"
----
+- - -
 
-![Bow length](bowlength.svg)
+![Lengte strik](bowlength.svg)
 
-You can make wide bow ties, or narrow ones. This option allows you to change the horizontal size of the bows. Make them larger to be more flamboyant, or small for a more subdued style.
+Je kan brede strikken maken, of voor smaller gaan. Deze optie laat toe de horizontale maat van de strik aan de passen. Make them larger to be more flamboyant, or small for a more subdued style.
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_bowlength_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](benjamin_bowlength_sample.svg "Effect van deze optie op het patroon")
