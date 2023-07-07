@@ -1,6 +1,6 @@
----
+- - -
 titre : "Tablier Albert : Options de tissu"
----
+- - -
 
 Pour un tablier, il est préférable d'utiliser un tissu solide, tissé serré et facile à nettoyer. En outre, veillez à opter pour une fibre naturelle et, dans tous les cas, pour un produit qui soit résistant à la chaleur.
 
