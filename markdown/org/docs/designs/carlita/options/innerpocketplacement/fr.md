@@ -1,8 +1,8 @@
----
-title: "Inner pocket placement"
----
+- - -
+titre : "Placement de la poche intérieure"
+- - -
 
-Controls the location of the inner pocket.
+Contrôle l'emplacement de la poche intérieure.
 
 ## Effet de cette option sur le motif
 
