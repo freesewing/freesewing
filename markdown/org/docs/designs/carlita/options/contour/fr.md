@@ -1,10 +1,10 @@
----
-title: "Contour"
----
+- - -
+titre : "Contour"
+- - -
 
-Controls how sharply the princess seam will correct once it's passed the fullness of your breasts.
+Contrôle la netteté de la couture de la princesse quand elle aura réussi la plénitude de vos seins.
 
-A high factor will smooth the curve, resulting in a less fitted coat that's easier to sew. A low factor will sharpen the curve, resulting in a more fitted coat, with a princess seam that's harder to sew.
+Un facteur élevé adoucit la courbe, ce qui donne un manteau moins ajusté et plus facile à coudre. Un faible facteur aiguisera la courbe, ce qui donnera un manteau plus ajusté, avec une couture de princesse plus difficile à coudre.
 
 ## Effet de cette option sur le motif
 
