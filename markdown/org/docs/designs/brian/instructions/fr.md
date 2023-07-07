@@ -1,6 +1,6 @@
----
+- - -
 title : "Brian body block : Instructions de couture"
----
+- - -
 
 <Note>
 
@@ -49,14 +49,14 @@ Il est parfois nécessaire de porter la maquette pendant un certain temps pour a
 
 <Note>
 
-Remember to treat Brian as a basis rather than a final product, so adjust what you need to get the desired look.  
-For instance:
+N'oubliez pas de considérer Brian comme une base plutôt que comme un produit final, et ajustez donc ce dont vous avez besoin pour obtenir l'aspect désiré.  
+Par exemple :
 
-- Change the neck line
-- Add/change the closure allowances
-- Add a collar
+- Modifier la ligne d'encolure
+- Ajouter/modifier les marges de fermeture
+- Ajouter un col
 
-It is all up to you! Expérimentez et allez-y !
+Tout dépend de vous ! Expérimentez et allez-y !
 
 </Note>
 
