@@ -1,6 +1,6 @@
----
+- - -
 title: "Collar angle"
----
+- - -
 
 ![Hoek kraag](collarangle.svg)
 
@@ -20,4 +20,4 @@ In dit voorbeeld is de bovenste versie 80° (de standaard) en de onderste 110°.
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_collarangle_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_collarangle_sample.svg "Effect van deze optie op het patroon")
