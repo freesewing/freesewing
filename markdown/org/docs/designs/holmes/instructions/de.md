@@ -5,7 +5,7 @@ title: "Holmes deerstalker hat: Sewing Instructions"
 ### Schritt 1: Vorbereitung der Teile
 
 - If needed, Interface the crown and half the ear flap pieces.
-- If not already done so, it is recommended to mark the seam lines on your fabric pieces by either a temporary marker or by thread marking. Dies ist für eine präzisere Nähte, die für den Hutbau entscheidend ist.
+- Wenn noch nicht erledigt Es wird empfohlen, die Nahtlinien auf Ihren Stoffstücken entweder durch eine vorübergehende Markierung oder durch Fadenmarkierung zu markieren. Dies ist für eine präzisere Nähte, die für den Hutbau entscheidend ist.
 
 <Tip>
 
@@ -61,7 +61,7 @@ If you are uncertain about the length you want for you ties take 1 metre (39") o
 
 <Note>
 
-The lengths above are recommendations so feel free to go as long or as short as you like with the ties.  
+Die oben genannten Längen sind Empfehlungen, so fühlen Sie sich frei zu gehen so lange oder so kurz wie Sie wollen mit den Krawatten.  
 If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.
 
 </Note>
@@ -134,7 +134,7 @@ Wieder einmal gibt es zwei Methoden für Endmontage und Verkleidung. Lesen Sie b
 
 #### Montage- und Lining-Methode 1
 
-- Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).
+- Matchings Center und Nahtlinien richten die Ohrklappe an die rechte Seite einer der Platten an, die nicht zur Mitte der KronenNaht gehört. Making sure the faced side is placed against the crown (if faced).
 - Sew ear flap to the crown along seam lines.
 - Repeat for the remaining ear flap on the opposite side of the crown.
 - Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.
@@ -153,7 +153,7 @@ Wieder einmal gibt es zwei Methoden für Endmontage und Verkleidung. Lesen Sie b
 
 #### Montage- und Verbindungsmethode 2
 
-- Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).
+- Matchings Center und Nahtlinien richten die Ohrklappe an die rechte Seite einer der Platten an, die nicht zur Mitte der KronenNaht gehört. Making sure the faced side is placed against the crown (if faced).
 - _Baste_ the ear flap to the crown along seam lines
 - Repeat for the remaining ear flap on the opposite side of the crown.
 - Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.
@@ -236,8 +236,8 @@ Das war's! Sie sind fertig. Genießen Sie jetzt die Welt in Ihrem wunderbaren ne
 
 <Note>
 
-Remember these instructions are just guidelines so don't worry if you want to construct the hat differently.  
-The Diagrams are yet to be made for this pattern so in the mean time if you need a visual aid, watch the YouTube video that inspired this pattern:
+Denken Sie daran, dass diese Anweisungen nur Richtlinien sind, also machen Sie sich keine Sorgen, wenn Sie den Hut anders konstruieren möchten.  
+Die Diagramme müssen noch für dieses Muster erstellt werden, also in der Zwischenzeit, wenn Sie eine visuelle Hilfe benötigen schaue dir das YouTube-Video an, das dieses Muster inspiriert hat:
 
 </Note>
 
