@@ -1,6 +1,6 @@
----
+- - -
 title: "Collar height"
----
+- - -
 
 ![Hauteur du col](collarheight.svg)
 
