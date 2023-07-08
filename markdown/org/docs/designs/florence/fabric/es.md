@@ -1,10 +1,10 @@
----
+- - -
 title: "Florence face mask: Fabric Options"
----
+- - -
 
-The goal of our mask is to stop droplets. So you want to go for something that filters those out. Then again, you need to be able to breath through your mask, so we want fabric that breathes, without letting droplets through.
+El objetivo de nuestra mascarilla es parar las gotitas. Así que quieres algo que las mantenga fuera. Además, necesitas poder respirar a través de la mascarilla, así que queremos una mascarilla que sea transpirable pero que no deje pasar las gotitas.
 
-In addition, we want the inside to be comfortable on our skin. So here I'd suggest a tightly woven cotton or viscose/rayon. For the outter fabric, cotton again, or a tightly woven wool.
+Además, queremos que el interior sea cómodo en piel. Así que sugeriría un dejido denso de algodón o viscosa/rayón. Para la tela exterior, también algodón, o una lana tejida bien apretada.
 
 <Note>
 
