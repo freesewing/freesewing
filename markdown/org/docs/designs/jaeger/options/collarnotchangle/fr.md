@@ -1,6 +1,6 @@
----
+- - -
 title: "Collar notch angle"
----
+- - -
 
 ![Angle du col cranté](collarnotchangle.svg)
 
