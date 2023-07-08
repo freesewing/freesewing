@@ -1,6 +1,6 @@
----
+- - -
 title: "Extra top button"
----
+- - -
 
 ![Extra knoop bovenaan](extratopbutton.svg)
 
@@ -23,4 +23,4 @@ Deze extra knoop wordt toegevoegd aan het aantal knopen vooraan. Hij vervangt ge
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_extratopbutton_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_extratopbutton_sample.svg "Effect van deze optie op het patroon")
