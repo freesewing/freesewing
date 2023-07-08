@@ -1,11 +1,11 @@
----
+- - -
 title: "Tamiko top: Cutting Instructions"
----
+- - -
 
 - **Oberstoff**
   - **1 Tamiko oben** auf der Falte schneiden
 
-Tamiko is a zero-waste pattern. It's a rectangle that's cut out on the fold. Not more than that. There's only one part to this top, we will simply refer to it at the **Tamiko top**. It needs to be cut on the fold along the bottom.
+Tamiko ist ein Null-Abfall-Muster. Es ist ein Rechteck, das ausgeschnitten auf der Klappe. Mehr als das. Es gibt nur einen Teil an dieser Spitze, wir werden es einfach an der **Tamiko Spitze** verweisen. Sie muss auf dem Boden entlang der Falte geschnitten werden.
 
 <Note>
 
