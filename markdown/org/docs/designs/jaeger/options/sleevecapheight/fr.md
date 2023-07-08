@@ -1,6 +1,6 @@
----
-title: "Sleevecap height"
----
+- - -
+titre : "Hauteur de la tête de manche"
+- - -
 
 Ce facteur contrôle la hauteur de la tête de manche.
 
