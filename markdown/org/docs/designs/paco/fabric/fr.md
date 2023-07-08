@@ -1,6 +1,6 @@
----
+- - -
 title: "Paco pants: Fabric Options"
----
+- - -
 
 Un meilleur résultat est obtenu avec un tissu léger avec drapage relativement bon.
 
