@@ -1,9 +1,9 @@
----
-title: "Length bonus"
----
+- - -
+title: "Längenzugabe"
+- - -
 
-The amount to lengthen the garment by. A negative value will shorten it.
+Der Betrag, um den das Kleidungsstück verlängert werden soll. Ein negativer Wert verkürzt das Schnittteil.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_lengthbonus_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](huey_lengthbonus_sample.svg "Effekt dieser Variable auf das Schnittmuster")
