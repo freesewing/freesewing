@@ -1,5 +1,5 @@
----
----
+- - -
+- - -
 
 Puedes referirte a [r/freesewing](https://www.reddit.com/r/freesewing/) en Reddit, donde encontrarás gente de la comunidad pasando el rato.
 
