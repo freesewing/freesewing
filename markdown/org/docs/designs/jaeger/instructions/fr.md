@@ -1,6 +1,6 @@
----
+- - -
 title: "Jaeger jacket: Sewing Instructions"
----
+- - -
 
 <Note>
 
@@ -14,27 +14,27 @@ Cette documentation n'est pas encore terminée.
 
 ### Fermer les fléchettes avant
 
-![Close the front darts](closeFrontDarts.svg)
+![Fermer les fléchettes avant](closeFrontDarts.svg)
 
 #### Plier le double
 
-Fold the front double with the good sides together and pin it down so the fold is neatly in the middle of the front dart.
+Repliez le double avant avec les bons côtés ensemble et enfoncez-le pour que le pli soit bien au milieu de la flèche avant.
 
 #### Coudre les fléchettes
 
-Sew the front dart close, taking care to have the dart stop at the correct top end. The bottom is not that important as it will be covered by the pockets. But the top end of the dart will be clearly visible, so please make sure to have it end at the same height at both sides.
+Coudre la dart avant à côté, en prenant soin d'avoir l'arrêt de dart à l'extrémité du haut correcte. Le bas n'est pas aussi important qu'il sera couvert par les poches. Mais le haut du dart sera clairement visible, donc assurez-vous d'avoir une fin à la même hauteur des deux côtés.
 
 #### Couper et presser
 
-Once the front darts are closed, cut open the dart at the back. You won't be able to cut it open all the way to the tip, but that's fine. Press open the darts where they are cut open, and press the rest to the side. Take care to only press from the back. Pressing from the front will likely mark your fabric.
+Une fois que les fléchettes avant sont fermées, coupez la fléchette au dos. Vous ne serez pas en mesure de le couper tout au long de la route, mais c'est bien. Appuyez sur ouvrir les fléchettes où elles sont coupées ouvertes, et appuyez sur le reste sur le côté. Faites attention à n'appuyer que sur le dos. Une pression à partir de l'avant marquera probablement votre tissu.
 
 ### Construire la poche de poitrine
 
-![Apply fusible interfacing to the back of the chest pocket](basteChestPocket.svg)
+![Appliquer une interface fusible à l'arrière de la poche thoracique](basteChestPocket.svg)
 
 #### Appliquer une interface fusible
 
-Apply a rectangular piece of light fusible interfacing around the chest pocket area so that it extends a few cm in all directions.
+Appliquez une pièce rectangulaire qui peut être fusionnée autour de la zone de poche de poitrine pour qu'elle s'étende de quelques cm dans toutes les directions.
 
 > ##### Nous n'utilisons pas de fusible sur toute la face avant
 > 
@@ -44,96 +44,96 @@ Apply a rectangular piece of light fusible interfacing around the chest pocket a
 
 With the fusible in place, thread a needle and baste around the chest pocket to transfer the markings to the good side of the fabric.
 
-This pocket differs from a traditional welt pocket. The welt extends above the pocket opening. This hides the pocket bag without the need for facings. The top part of the opening is also smaller than the welt, allowing you to slip-stitch it closed.
+Cette poche se distingue de la poche traditionnelle de soudure. Le joint se prolonge au-dessus de l'ouverture de la poche. Ceci cache le sac de poche sans avoir besoin de visages. La partie supérieure de l'ouverture est également plus petite que la soudure, ce qui vous permet de la faire glisser.
 
-On the top line of your basted welt pocket, mark 0.5cm inwards from the corners of the top line.
+Sur la ligne supérieure de votre poche de soudure bâclée, marquez 0,5cm à l'intérieur à partir des coins de la ligne supérieure.
 
 > Ces points sont des entailles sur la partie avant de votre patron.
 
-![Close the chest pocket welt](foldChestPocketWelt.svg)
+![Fermer la poche thoracique](foldChestPocketWelt.svg)
 
 #### Plier, presser et coudre les coutures latérales de la soudure
 
-Fold the welt double with the good sides together, and close the sides (sew the side seams).
+Plier le double de la couture avec les bons côtés ensemble, et fermer les côtés (coudre les coutures latérales).
 
 #### Ajuster la marge de couture, tourner et appuyer sur
 
-Trim the seam allowances on the sides and especially limit the seam allowance towards the corner to avoid bulk.
+Couper les droits de couture sur les côtés et limiter en particulier la marge de couture vers le coin pour éviter les encombrements.
 
-Turn inside out so the good side is out and press.
+Retournez à l'intérieur de sorte que le bon côté est sorti et presse.
 
 > Faites attention à ne pas trop presser car vous appuierez sur le bon côté du tissu.
 
 #### Collez la ligne inférieure de la soudure pour savoir où coudre
 
-Baste a stitching guide at the bottom of the welt to mark the welt/seam allowance boundary. This will be the line to sew on later.
+Collez un guide de couture au fond de la soudure pour marquer les limites de la marge de couture/couture. Ce sera la ligne à coudre plus tard.
 
 #### Coudre le joint à l'avant
 
-![Attach the chest pocket welt to the front](attachChestPocketWelt.svg)
+![Fixer la poche thoracique à l'avant](attachChestPocketWelt.svg)
 
-Place welt down on good side of front with the folded side downwards, and sew to bottom line. Make sure to stop and start exactly at the edge of the line you basted.
+Placez le long vers le bas sur le bon côté de l'avant avec le côté plié vers le bas, et coudez vers le bas. Assurez-vous d'arrêter et de commencer exactement au bord de la ligne que vous avez choisie.
 
 #### Coudre le sac de poche à l'avant
 
-![Attach the chest pocket bag to the front](attachChestPocketBag.svg)
+![Attacher le sac de poche de poitrine à l'avant](attachChestPocketBag.svg)
 
-Place the pocket bag down on the front. The front with good side up, but the pocket bag with bad side up. Make sure to have the longest side of the chest pocket bag on the highest side of the chest pocket.
+Placez le sac de poche vers le bas. Le devant avec un bon côté vers le haut, mais le sac de poche avec un mauvais côté vers le haut. Assurez-vous d'avoir le côté le plus long du sac de poche de poitrine sur le côté le plus haut de la poche de poitrine.
 
 > Seules les poches de poitrine inclinées ont un côté supérieur et inférieur.
 
-Sew this in place along the top line. Remember this should be shorter than the bottom row of stitches to attach the welt, since you marked 0.5cm inwards from the corners.
+Coudre ceci en place le long de la ligne supérieure. Remember this should be shorter than the bottom row of stitches to attach the welt, since you marked 0.5cm inwards from the corners.
 
 > Comme le dossier de poche est généralement un tissu glissant, vous voudrez probablement épingler ou basculer ce tissu avant de coudre.
 
 #### Coupez l'ouverture de la poche du coffre, tournez et appuyez sur
 
-![Press the chest pocket](pressChestPocket.svg) Now cut open your welt in the middle of both seamlines. Don't cut to the edge, but create a trianngular shape there.
+![Appuyez sur la poitrine](pressChestPocket.svg) Coupez maintenant votre soudure au milieu des deux coutures. Ne coupez pas au bord, mais créez une forme trianngulaire là-bas.
 
-Flip the pocket bag and welt to the backside by passing both of them through the opening you just created.
+Retournez le sac de poche et tendez à l'arrière en passant les deux à travers l'ouverture que vous venez de créer.
 
-Get everything to lay nice and flat, and press.
+Obtenez tout ce qui est nécessaire pour rester beau et plat, et pressez.
 
-Now, bring the welt only to the front and get it to lie nice and flat. Press again from the back.
+Maintenant, amenez la soudure seulement à l'avant et mettez-la à coucher gentil et plat. Appuyez à nouveau depuis le dos.
 
 > Résistez à l'envie d'insister sur ce point de l'avant.
 
 #### Terminer la poche de poitrine
 
-![Finish the chest pocket](finishChestPocket.svg)
+![Terminer la poche de poitrine](finishChestPocket.svg)
 
 On the backside, fold the pocket bag double and sew it to the pocket welt below the existing seamline of the welt.
 
-Thread a needle and hand-finish the chest pocket by sewing down the sides of the welt to the front panel (don't let your stitches show on the front).
+Feuilletez une aiguille et finissez la poche de poitrine en cousant les côtés de la soudure vers le panneau avant (ne laissez pas vos points apparaître à l'avant).
 
-Finally, close the pocket bag by sewing the sides. Do this by placing the front down with the good side up. Then fold over each side and sew the pocket bag. While sewing these sides, make sure to catch those triangular little pieces of the opening. This will reinforce the pocket opening.
+Enfin, fermez le sac de poche en couturant les côtés. Faites cela en plaçant le devant vers le bas avec le bon côté vers le haut. Pliez ensuite sur chaque côté et coudez le sac de poche. Lors de la couture de ces côtés, assurez-vous d'attraper ces petits morceaux triangulaires de l'ouverture. Cela renforcera l'ouverture de la poche.
 
-Baste the chest pocket closed while we contruct the jacket.
+Collez la poche de poitrine fermée pendant que nous fabriquons la veste.
 
 ### Préparer les devants
 
-![Prepare the canvas for the fronts](prepareCanvas.svg)
+![Préparer la toile pour les façades](prepareCanvas.svg)
 
-Cut out the front canvas piece in a light and supple canvas placed on the bias. Cut out the entire front.
+Découpez la toile avant dans une toile légère et souple placée sur le biais de la pendule. Coupez tout le front.
 
-Cut out the front dart and close it with a zig-zag stitch, making sure not to let the canvas overlap.
+Coupez la poitrine avant et fermez-la avec une couture en zig-zag, en veillant à ne pas laisser la toile se chevaucher.
 
-Cut out the chest canvas piece. Align it along the roll line, and baste it in place on front canvas piece.
+Découpez la toile de la poitrine. Alignez-le le long de la ligne de rouleau et bâtissez-le en place sur la toile avant.
 
 > La pièce de la poitrine est marquée sur la partie avant de votre patron.
 
 #### Glisser la toile vers les faces
 
-![Pad-stitching, you love that stuff, right?](padAndTape.svg)
+![Couture de pad, tu aimes ce truc, n'est-ce pas?](padAndTape.svg)
 
-Now baste the front canvas and chest piece to your front. Keep in mind that the canvas has no seam allowance.
+Désormais, bâtissez la toile avant et la pièce de la poitrine sur votre devant. Gardez à l'esprit que la toile n'a pas de marge de couture.
 
 > Baste it a bit inwards from the seam line so you can fold it away when sewing these seams later.  
 > You don't want your canvas to get caught in the seams.
 
 #### Coupez vos genoux
 
-Time to feel like a real tailor, and pad-stitch those lapels.
+Il est temps de se sentir comme un vrai tailleur, et de broder ces lapins.
 
 Make sure to make the stitches a bit smaller towards the lapel tip, to make sure it lies flat against the chest, curling a bit inward instead of outward.
 
@@ -141,9 +141,9 @@ Make sure to make the stitches a bit smaller towards the lapel tip, to make sure
 
 #### Ruban le bord du tour et la ligne de rouleau
 
-Now we are going to hand-sew tailor tape along the lapel edges of the front, and along the roll line. This will also secure the canvas to the front here and there.
+Nous allons maintenant coudre à la main du ruban de couture le long des bords du bord avant et le long de la ligne de rouleau. Cela permettra également de sécuriser la toile à l'avant ici et là.
 
-Keep in mind that:
+Gardez à l'esprit que :
 
 - Le ruban le long de la ligne de rouleau doit être placé à l'intérieur de la ligne de roulement.
 - Le ruban le long de la ligne de rouleau devrait être environ un demi-centimètre plus court que la distance qu'il couvre. La légère tension que cela crée aide le roulement de la patte de façon agréable et le contour de votre corps.
@@ -161,13 +161,11 @@ Keep in mind that:
 
 #### Fermer les coutures latérales
 
-![Close the sides](closeSides.svg)
+![Fermer les côtés](closeSides.svg)
 
-Place your front with the good side up, and your side on it with the good side down.  
-Align the front/side seams, pin them in place if you feel like it, and sew them togther.
+Place your front with the good side up, and your side on it with the good side down. Align the front/side seams, pin them in place if you feel like it, and sew them togther.
 
-Place this down with the good side up, and place your back on top with the good side down.  
-Align the back/side seams, pin them in place if you feel like it, and sew them togther.
+Place this down with the good side up, and place your back on top with the good side down. Align the back/side seams, pin them in place if you feel like it, and sew them togther.
 
 > Assurez-vous que la toile ne soit pas prise dans la couture.
 
@@ -179,9 +177,9 @@ Align the back/side seams, pin them in place if you feel like it, and sew them t
 
 #### Fermer la couture arrière
 
-![Close the back seam](closeBack.svg)
+![Fermer la couture arrière](closeBack.svg)
 
-Aling your two half-jackets with the good sides together, and close the back seam.
+Avoir vos deux demi-vestes avec les bons côtés ensemble, et fermer la couture arrière.
 
 <Note>
 
@@ -196,11 +194,11 @@ Ne couchez pas vers le bas après cela.
 
 #### Fermer les coutures d'épaule
 
-![Close the shoulder seams](closeShoulders.svg)
+![Fermer les coutures d'épaule](closeShoulders.svg)
 
-Align the shoulder seams with good sides together, and sew them together.
+Alignez les coutures des épaules avec de bons côtés ensemble, et courez-les ensemble.
 
-Make sure the canvas does not get caught in the seam.
+Assurez-vous que la toile ne soit pas prise dans la couture.
 
 <Note>
 
@@ -231,7 +229,7 @@ Make sure the outside collarstand and under collar are alligend and sew together
 ![make small cuts in SA around collar](collarCuts.svg)
 
 
-### Sleeves
+### Manches
 Sew the uppersleeve to the undersleeve untill the split
 
 #### Create the split at the eng of the sleeve
@@ -247,7 +245,7 @@ Please see images at the front pockets for details
 
 Locate the position of the pocket on the left inner lining with basting Add some fusible interfacting around the area Draw the pocket on the interfacing. Add the  welts to the upper and lower side of the pocket Sew the welts on the line on both sides of the pocket. Make use the welts end exactly on top of eachother. Cut the pocket entrance to about 1 or 2 cm from the end. Cut the last part diagonally so you get a fish bone fcut Turn the welts inside out, baste and press Turn the triangles inside out, baste and press Sew around the pocket to put everything in place Take the pocketbag, sew it to the lower welt and the other part to the upper welt (See: chest pocket)
 
-### Lining
+### Doublure
 Sew the lining back seam untill the split Sew the figure seams in the front parts Add the whole lining together (front, side, back) Add the from lining to the front facing. LEave about 5cm open from the bottom Close the shoulders Add the inside collar stand to the uppercollar and add to the lining jacket Make small cuts in the neckline and the corners Add upper to lower sleeves Add sleeves to lining jacket
 
 ### Close it up
