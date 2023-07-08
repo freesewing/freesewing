@@ -1,8 +1,8 @@
----
-title: "Front scye dart"
----
+- - -
+title:"Pince de carrure avant"
+- - -
 
-The amount to take out in a dart at the front of the armhole.
+La quantité à retirer de la pince à l'avant de l'emmanchure.
 
 ## Effet de cette option sur le motif
 
