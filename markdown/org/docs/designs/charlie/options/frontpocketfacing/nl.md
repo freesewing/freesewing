@@ -1,11 +1,11 @@
----
+- - -
 title: "Front pocket facing"
----
+- - -
 
-Controls the boundary between the front pocket facing and pocket bag.
+Bepaalt de grens tussen het beleg van de voorzak en het zakdeel.
 
 Increase this to use more facing, which means you'll have to look deeper into the pocket to start seeing the pocket bag material.
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_frontpocketfacing_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](charlie_frontpocketfacing_sample.svg "Effect van deze optie op het patroon")
