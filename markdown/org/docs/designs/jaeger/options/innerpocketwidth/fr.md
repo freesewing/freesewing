@@ -1,8 +1,8 @@
----
+- - -
 title: "Inner pocket width"
----
+- - -
 
-The width of the inner pocket.
+La largeur de la poche intérieure.
 
 ## Effet de cette option sur le motif
 
