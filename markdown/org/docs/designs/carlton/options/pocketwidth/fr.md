@@ -1,8 +1,8 @@
----
-title: "Pocket width"
----
+- - -
+title: "Largeur de poche"
+- - -
 
-Controls the width of the pockets.
+Contrôle la largeur des poches.
 
 ## Effet de cette option sur le motif
 
