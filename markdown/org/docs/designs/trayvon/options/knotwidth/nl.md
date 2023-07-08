@@ -1,6 +1,6 @@
----
+- - -
 title: "Knot width"
----
+- - -
 
 ![Breedte knoop](knotwidth.svg)
 
@@ -16,4 +16,4 @@ Maak de breedte van de knoop niet groter dan de breedte van de punt
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](trayvon_knotwidth_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](trayvon_knotwidth_sample.svg "Effect van deze optie op het patroon")
