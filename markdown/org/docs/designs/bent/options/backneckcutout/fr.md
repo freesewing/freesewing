@@ -1,8 +1,8 @@
----
+- - -
 titre : "Découpage du cou dans le dos"
----
+- - -
 
-![Back neck cutout](backneckcutout.svg)
+![Découpe arrière de cou](backneckcutout.svg)
 
 Contrôle la profondeur de l'ouverture de l'encolure dans le dos du vêtement. En d'autres termes, l'augmentation de cette mesure déplace l'ouverture du cou vers l'arrière.
 
