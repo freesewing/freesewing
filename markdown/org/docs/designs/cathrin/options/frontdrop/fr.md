@@ -1,10 +1,10 @@
----
-title: "Front drop"
----
+- - -
+titre: "Bas devant"
+- - -
 
-![The front drop option on Cathrin](./frontdrop.svg)
+![L'option de dépôt avant sur Cathrin](./frontdrop.svg)
 
-This option determines how far the center front will be lowered at the bottom of your corset.
+Cette option détermine la distance à laquelle le centre devant sera abaissé au bas de votre corset.
 
 > Si vous abaissez trop, la séance risque de devenir un problème.
 
