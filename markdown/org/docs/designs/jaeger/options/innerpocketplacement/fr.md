@@ -1,8 +1,8 @@
----
+- - -
 title: "Inner pocket placement"
----
+- - -
 
-The location of the inner pocket.
+L'emplacement de la poche intérieure.
 
 - Increase this option to shift the inner pocket towards the side seam
 - Decrease this option to shift the inner pocket towards the centre front
