@@ -1,11 +1,11 @@
----
+- - -
 title: "Back pocket vertical placement"
----
+- - -
 
-Controls the vertical placement of the back pockets.
+Bepaalt de verticale plaatsing van de achterzakken.
 
-Either closer to the waistband, or higher. Or further from the waistband, or lower.
+Of dichter bij de tailleband, of hoger. Of verder van de tailleband, of lager.
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_backpocketverticalplacement_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](charlie_backpocketverticalplacement_sample.svg "Effect van deze optie op het patroon")
