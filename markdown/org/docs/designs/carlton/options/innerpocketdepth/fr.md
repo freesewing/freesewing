@@ -1,8 +1,8 @@
----
+- - -
 title: "Inner pocket depth"
----
+- - -
 
-Controls the depth of the inner pocket.
+Contrôle la profondeur de la poche intérieure.
 
 ## Effet de cette option sur le motif
 
