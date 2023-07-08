@@ -1,6 +1,6 @@
----
+- - -
 title: "Length bonus"
----
+- - -
 
 Bepaalt de lengte van de gehele broek, wat in wezen de lengte van de benen betekent.
 
@@ -15,4 +15,4 @@ de broek zal langer moeten zijn dan dit om de vloer daadwerkelijk te raken.
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](titan_lengthbonus_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](titan_lengthbonus_sample.svg "Effect van deze optie op het patroon")
