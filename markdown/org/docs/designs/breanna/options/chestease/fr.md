@@ -1,8 +1,8 @@
----
+- - -
 titre : "aisance thoracique"
----
+- - -
 
-This option controls the ease at your chest.
+Cette option contrôle l'aisance au niveau de la poitrine.
 
 ## Effet de cette option sur le motif
 
