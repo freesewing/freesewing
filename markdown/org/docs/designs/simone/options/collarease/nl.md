@@ -1,6 +1,6 @@
----
+- - -
 title: "Collar ease"
----
+- - -
 
 ![Overwijdte kraag](collarease.svg)
 
@@ -10,4 +10,4 @@ Als je het gevoel krijgt dat een kraag je verstikt kan je jezelf een beetje meer
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_collarease_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_collarease_sample.svg "Effect van deze optie op het patroon")
