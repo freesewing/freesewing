@@ -1,6 +1,6 @@
----
+- - -
 title: "Sleevecap Q2 downward spread"
----
+- - -
 
 ![Die Abwärtsverteilung im zweiten Quadranten der Ärmel](./sleevecapq2spread1.svg)
 
@@ -14,4 +14,4 @@ Siehe [die Armkugel verstehen](/docs/patterns/brian/options#understanding-the-sl
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_sleevecapq2spread1_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_sleevecapq2spread1_sample.svg "Effekt dieser Option auf das Schnittmuster")
