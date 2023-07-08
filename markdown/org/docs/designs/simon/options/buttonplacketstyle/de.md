@@ -1,6 +1,6 @@
----
+- - -
 title: "Button placket style"
----
+- - -
 
 ![Knopfleiste Stil](buttonplacketstyle.svg)
 
@@ -20,4 +20,4 @@ As seamless is only possible on a _cut-on_ placket, this option is ignored if yo
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_buttonplacketstyle_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_buttonplacketstyle_sample.svg "Effekt dieser Option auf das Schnittmuster")
