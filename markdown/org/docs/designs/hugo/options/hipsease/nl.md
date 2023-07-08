@@ -1,9 +1,9 @@
----
+- - -
 title: "Hips ease"
----
+- - -
 
-How much room do you want at the hips?
+Hoeveel ruimte wil je aan je heupen?
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](hugo_hipsease_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](hugo_hipsease_sample.svg "Effect van deze optie op het patroon")
