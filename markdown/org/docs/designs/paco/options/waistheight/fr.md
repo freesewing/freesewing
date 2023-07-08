@@ -1,6 +1,6 @@
----
+- - -
 title: "Waist height"
----
+- - -
 
 Contrôle la hauteur de la taille, où:
 
