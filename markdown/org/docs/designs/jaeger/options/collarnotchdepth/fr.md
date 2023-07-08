@@ -1,6 +1,6 @@
----
+- - -
 title: "Collar notch depth"
----
+- - -
 
 ![Profondeur du col cranté](collarnotchdepth.svg)
 
