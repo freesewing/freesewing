@@ -50,9 +50,9 @@ module.exports = {
   'base-content': colors.neutral['700'],
 
   // primary: The main brand color and color of the primary button
-  primary: colors.violet['700'],
+  primary: colors.fuchsia['700'],
   // primary-focus: The :hover color for the primary button
-  'primary-focus': colors.violet['800'],
+  'primary-focus': colors.indigo['800'],
   // primary-content: The text color on a primary button
   'primary-content': colors.neutral['50'],
 
@@ -60,7 +60,7 @@ module.exports = {
   secondary: colors.sky['800'],
   // secondary-focus: The :hover link color for default backgrounds. Or:
   // secondary-focus: An alternative link color for on dark backgrounds
-  'secondary-focus': colors.sky['50'],
+  'secondary-focus': colors.sky['500'],
   // secondary-content: The text color on a secondary button
   'secondary-content': colors.sky['50'],
 

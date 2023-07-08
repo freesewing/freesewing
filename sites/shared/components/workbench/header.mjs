@@ -72,6 +72,7 @@ const NavIcons = ({ setView, setDense, dense, view }) => {
         label={t('workbench:viewMenu')}
         extraClasses="hidden lg:flex text-success bg-neutral hover:bg-success hover:text-neutral"
       >
+        \\
         {dense ? (
           <RightIcon
             className={`${iconSize} group-hover:animate-[bounceright_1s_infinite] animate-[bounceright_1s_5]`}
