@@ -32,6 +32,6 @@ Voor de bezoeker wil je een stug maar dun materiaal. Je kunt het ook proberen, *
 
 <Note>
 
-Just remember. All of these are recommendations. If you want to use something different go for it!
+Vergeet het niet. Dit zijn allemaal aanbevelingen. Als je iets anders wilt gebruiken, ga dan ervoor!
 
 </Note>
