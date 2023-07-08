@@ -1,6 +1,6 @@
----
+- - -
 title: "Penelope pencil skirt: Cutting Instructions"
----
+- - -
 
 <Note>
 
@@ -27,7 +27,7 @@ Due to this, the cutting list does not specify how many back parts to cut as the
 
 </Note>
 
-**Interfacing**
+**Entoilage**
 
 - Cut **1 waistband** part on the fold.
 
