@@ -1,10 +1,10 @@
----
+- - -
 title: "Sleevecap Q3 upward spread"
----
+- - -
 
-![The upward spread in the thrid quadrant of the sleevecap](./sleevecapq3spread1.svg)
+![La propagation vers le haut dans le quadrant de la tête de manche](./sleevecapq3spread1.svg)
 
-This option controls the upward spread in the third quadrant of the sleevecap.
+Cette option permet de contrôler la propagation vers le haut dans le troisième quadrant de la tête de manche.
 
 <Tip>
 
