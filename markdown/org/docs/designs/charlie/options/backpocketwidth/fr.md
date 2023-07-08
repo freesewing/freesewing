@@ -1,8 +1,8 @@
----
-title: "Back pocket width"
----
+- - -
+titre : "Largeur de la poche arrière"
+- - -
 
-Constrols the width of the back pockets.
+Contre la largeur des poches arrières.
 
 ## Effet de cette option sur le motif
 
