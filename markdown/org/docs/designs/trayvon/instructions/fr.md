@@ -1,6 +1,6 @@
----
+- - -
 title: "Trayvon tie: Sewing Instructions"
----
+- - -
 
 <Tip>
 
@@ -25,99 +25,99 @@ C'est une bonne idée de faire des essais sur quelques morceaux de tissu avant d
 
 ### Étape 1 : Coudre le premier côté de votre queue
 
-![Sew the first side of the tie tail](step01.png)
+![Coudre la première face de la queue](step01.png)
 
-Align the lining tail (piece 6) on top of the fabric tail (piece 4), good sides together
+Alignez la queue de doublure (pièce 6) sur la queue de tissu (pièce 4), les bons côtés ensemble
 
-Shift the lining tail along a side running up the tail until the notch on the lining tail matches the notch on the fabric tail.
+Déplacez la queue de doublure le long d'un côté qui monte la queue jusqu'à ce que l'encoche sur la queue de la doublure corresponde à l'encoche sur la queue du tissu.
 
-Sew in place, starting precisely at the matched notch, along the edge. Make sure to backtack on both sides.
+Coudre en place, en commençant précisément à l'encoche correspondante, le long du bord. Assurez-vous de faire un backtack sur les deux côtés.
 
-Two notches are now fixed the same spot.
+Deux encoches sont maintenant fixées au même endroit.
 
 ### Étape 2 : Coudre le deuxième côté de votre queue
 
-![Sew the second side of your tie tail](step02.png)
+![Coudre le deuxième côté de votre queue](step02.png)
 
-Shift the fabric tail so that the second notch lines up with the notch on the lining tail (the place where your first seam started).
+Déplacez la queue du tissu de sorte que la deuxième encoche se range avec l'encoche de la queue de la doublure (l'endroit où votre première couture a commencé).
 
-This will require you to fold a bit of the tie fabric out of the way, under the seam you make in step one.
+Cela vous demandera de plier un peu le tissu de la cravate, sous la couture que vous fabriquez dans la première étape.
 
-Sew in place, starting precisely at the matched notch, making sure to get a straight angle with your seam from step 1.
+Coudre en place, en commençant précisément par l'encoche correspondante, assurez-vous d'obtenir un angle droit avec votre couture à partir de l'étape 1.
 
-Now, all three notches are fixed the same spot.
+Les trois encoches sont maintenant fixées au même endroit.
 
 ### Étape 3 : Terminer la queue
 
-![Finish the tie tail](step03.png)
+![Terminer la queue de cravate](step03.png)
 
-Fold your tie open so that the two seams you made in step 1 and 2 lie on top of each other. Take care to fold it precisely; the folded edges should make a straight angle.
+Pliez votre cravate ouverte de sorte que les deux coutures que vous avez faites à l'étape 1 et 2 se trouvent les unes sur les autres. Prenez soin de le plier avec précision; les bords pliés doivent faire un angle droit.
 
-Sew the point where the three notches and your two seams converge to the folded edge of the Fabric tip (part 4, on the left in the image).
+Coudre le point où les trois entailles et vos deux coutures convergent vers le bord plié du bout du tissu (partie 4, sur la gauche dans l'image).
 
 ### Étape 4 : Retournez la queue et inspectez votre travail
 
-![Turn the tail inside-out and inspect your work](step04.png)
+![Tournez la queue vers l'arrière et inspectez votre travail](step04.png)
 
-After you've trimmed all threads, carefully flip your tail inside-out (technically you are flipping it outside-out as it is inside out now).
+Une fois que vous avez coupé tous les fils, retournez soigneusement votre queue (techniquement vous la renversez en dehors comme elle se fait à l'intérieur).
 
-If needed, you can gently push out the tip with a ruler.
+Si nécessaire, vous pouvez pousser doucement la pointe avec une règle.
 
-Your tail should look like the picture, with a sharp point and straight edges.
+Votre queue devrait ressembler à la photo, avec une pointe pointue et des bords droit.
 
-The seam where the tie fabric meets the tie lining does not sit at the edge of the tie but it sits a bit back, staying out of sight.
+La couture où le tissu de cravate correspond à la doublure de la cravate ne se trouve pas au bord de la cravate, mais elle est assise un peu en arrière, rester en dehors de la vue.
 
-If you managed to do all of this, you can do it again for the tip of your tie.
+Si vous avez réussi à faire tout cela, vous pouvez le faire à nouveau pour la pointe de votre cravate.
 
 ### Étape 5 : coudre le premier côté de la pointe de votre cravate
 
-![Sew the first side of your tie tip](step01.png)
+![Coudre le premier côté de votre cravate](step01.png)
 
-Align the lining tip (piece 5) on top of the fabric tip (piece 3), good sides together
+Alignez la pointe de la doublure (pièce 5) sur la pointe du tissu (pièce 3), les bons côtés ensemble
 
-Shift the lining tip along a side running up the tip until the notch on the lining tip matches the notch on the fabric tip.
+Déplacez la pointe de la doublure le long d'un côté qui monte la pointe jusqu'à ce que l'encoche sur la pointe de la doublure corresponde à l'encoche sur le bout de tissu.
 
-Sew in place, starting precisely at the matched notch, along the edge. Make sure to backtack on both sides.
+Coudre en place, en commençant précisément à l'encoche correspondante, le long du bord. Assurez-vous de faire un backtack sur les deux côtés.
 
-Two notches are now fixed the same spot.
+Deux encoches sont maintenant fixées au même endroit.
 
 ### Étape 6: Coudre le deuxième côté de la pointe de votre cravate
 
-![Sew the second side of your tie tip](step02.png)
+![Coudre le deuxième côté du bout de votre cravate](step02.png)
 
-Shift the fabric tip so that the second notch lines up with the notch on the lining tip (the place where your first seam started).
+Déplacez le bout du tissu de sorte que le deuxième encoche s'aligne avec l'encoche sur la pointe de la doublure (l'endroit où votre première couture a commencé).
 
-This will require you to fold a bit of the tie fabric out of the way, under the seam you make in step five.
+Cela vous demandera de plier un peu la toile de cravate du chemin, sous la couture que vous faites à l'étape cinq.
 
-Sew in place, starting precisely at the matched notch, making sure to get a straight angle with your seam from step 5.
+Coudre en place, en commençant précisément par l'encoche correspondante, assurez-vous d'obtenir un angle droit avec votre couture à partir de l'étape 5.
 
-Now, all three notches are fixed the same spot.
+Les trois encoches sont maintenant fixées au même endroit.
 
 ### Étape 7 : Terminer le cravate
 
-![Finish the tie tip](step03.png)
+![Terminer la pointe de la cravate](step03.png)
 
-Fold your tie open so that the two seams you made in step 5 and 6 lie on top of each other. Take care to fold it precisely; the folded edges should make a straight angle.
+Pliez votre cravate ouverte de sorte que les deux coutures que vous avez faites à l'étape 5 et 6 se trouvent les unes sur les autres. Prenez soin de le plier avec précision; les bords pliés doivent faire un angle droit.
 
-Sew the point where the three notches and your two seams converge to the folded edge of the Fabric tip (part 3, on the left in the image).
+Coudre le point où les trois entailles et vos deux coutures convergent vers le bord plié du bout du tissu (partie 3, sur la gauche dans l'image).
 
 ### Étape 8 : Insérez la pointe et inspectez votre travail
 
-![Turn the tip inside-out and inspect your work](step04.png)
+![Tournez la pointe intérieure et inspectez votre travail](step04.png)
 
-After you've trimmed all threads, carefully flip your tip inside-out (technically you are flipping it outside-out as it is inside out now).
+Une fois que vous avez coupé tous les fils, retournez soigneusement votre pointe (techniquement vous la renversez hors de portée comme elle est à l'intérieur).
 
-If needed, you can gently push out the tip with a ruler.
+Si nécessaire, vous pouvez pousser doucement la pointe avec une règle.
 
-Your tip should look like the picture, with a sharp point and straight edges.
+Votre pourboire devrait ressembler à la photo, avec un point pointu et des bords droit.
 
-The seam where the tie fabric meets the tie lining does not sit at the edge of the tie but it sits a bit back, staying out of sight.
+La couture où le tissu de cravate correspond à la doublure de la cravate ne se trouve pas au bord de la cravate, mais elle est assise un peu en arrière, rester en dehors de la vue.
 
 ### Étape 9 : Rejoignez l'interfaçage de la cravate
 
-![Join the tie interfacing](step09.png)
+![Rejoignez l'interfaçage des cravates](step09.png)
 
-Join Interfacing tip (piece 1) and Interfacing tail (piece 2) together on the non-pointy side, matching the notch.
+Rejoignez la pointe Interfacing (pièce 1) et la queue Interfacing (pièce 2) sur le côté non pointu, assortie à l'encoche.
 
 > **Or don't** To be honest, I never join the interfacing. Je laisse les deux moitiés sans attache.
 > 
@@ -127,51 +127,51 @@ Join Interfacing tip (piece 1) and Interfacing tail (piece 2) together on the no
 
 ### Étape 10 : Rejoignez le tissu de cravate
 
-![Join the tie fabric](step10.png)
+![Rejoignez le tissu de cravate](step10.png)
 
 > Avec l'interfaçage cousu ensemble, la longueur de notre cravate est maintenant déterminée. Mesurez la pointe de la cravate sur le bout de la cravate et assurez-vous de joindre les pièces de tissu à la bonne longueur.
 
-Join the tip and tail fabric together on the non-pointy side.
+Reliez le bout et le tissu de queue ensemble sur le côté non pointu.
 
 ### Étape 11: Rend ta boucle cravate
 
-![Make your tie loop](step11.png)
+![Rendre votre boucle cravate](step11.png)
 
-We are going to construct the Loop (piece 7) of our tie now.
+Nous allons construire la boucle (pièce 7) de notre cravate maintenant.
 
-Fold the fabric as shown in the illustration. You need to end up with a narrow strip of fabric that has its ends tucked to the inside.
+Plier le tissu comme indiqué dans l'illustration. Vous devez finir avec une étroite bande de tissu qui a ses extrémités enfermées à l'intérieur.
 
-Make sure to have one edge a little bit shorter. This will be the back side.
+Assurez-vous d'avoir un bord un peu plus court. Ce sera le verso.
 
-While folding, reach for your iron and give it a good press so things stay in place. Also press the final loop before sewing it.
+Pendant le pliage, atteignez votre fer et donnez-lui une bonne presse pour que les choses restent en place. Appuyez également sur la boucle finale avant de la coudre.
 
 > Attention, rappelez-vous les conseils pressants que j'ai donnés plus tôt
 
-When you're happy with how you folded and pressed your loop, hand-sew along the edge with a slipstitch to keep things in place.
+Quand tu es satisfait de la façon dont tu as plié et pressé ta boucle, coudre la main le long du bord avec un point de glissement pour garder les choses en place.
 
 ### Étape 12 : Assemblez votre cravate
 
-![Assemble your tie](step12.png)
+![Assembler votre cravate](step12.png)
 
-Time to start putting things together. Place your tie on a flat surface, good side down, lining up.
+Il est temps de commencer à assembler les choses. Placez votre cravate sur une surface plate, un bon côté vers le bas, alignant vers le haut.
 
-Now take your tie interfacing, and place it in your tie with the seam allowance in the middle facing upwards. Make sure to slide it between your fabric and lining on each side, all the way to the tip.
+Maintenant, prenez votre cravate et placez-la dans votre cravate avec la marge de couture au milieu vers le haut. Assurez-vous de le faire glisser entre votre tissu et la doublure de chaque côté, jusqu'à la pointe de la souris.
 
 ### Étape 13: Pliez et appuyez sur votre cravate
 
-![Fold and press your tie](step13.png)
+![Pliez et appuyez sur votre cravate](step13.png)
 
-With your tie interfacing inserted in your tie fabric, fold over one side of the fabric over the interfacing.
+Avec l'interfaçage de votre cravate insérée dans le tissu de votre cravate, pliez sur un côté du tissu sur l'interface.
 
-You want to fold it snugly around the interfacing, but without moving the interfacing, which should stay in the middle.
+Vous voulez le plier en un clin d'oeil autour de l'interface, mais sans bouger l'interface, qui devrait rester au milieu.
 
-When you're done, press your fold. Because of the tie interfacing, you're not pressing a sharp crease here, the main point is to shape the fabric to be more eager to stay folder around the interfacing.
+Lorsque vous avez terminé, appuyez sur votre pli. En raison de l'interface de cravate, vous n'appuyez pas sur un pli pointu ici, le point principal est de façonner le tissu pour être plus désireux de rester le dossier autour de l'interface.
 
 > Comme nous ne sommes pas en train de presser un pli tranchant, mais plutôt de façonner le tissu, un fer à vapeur fonctionne le mieux.
 
-When you have completed one side, fold back the other side, and steam again.
+Une fois que vous avez terminé un côté, repliez l'autre côté, et reprenez la vapeur.
 
-Finally, fold back the top layer along the middle of your tie, and press in place. This time, you are making a sharp crease along the middle of the tie.
+Enfin, repliez la couche supérieure au milieu de votre cravate, puis appuyez sur la place. Cette fois-ci, vous faites un pli pointu au milieu de la cravate.
 
 > Pour clarifier la différence entre les deux derniers plis, J'ai inclus une ligne sombre dans l'image qui marque le bord du tissu, ou plié.
 > 
@@ -181,40 +181,40 @@ Finally, fold back the top layer along the middle of your tie, and press in plac
 
 ### Étape 14: Préparer la boucle
 
-![Prepare the loop](step14.png)
+![Préparer la boucle](step14.png)
 
-Fold your loop so the tail of your tie can pass through it with some room.
+Pliez votre boucle pour que la queue de votre cravate puisse passer à travers elle avec une certaine pièce.
 
-Mark the point where the loop ends join, and sew them together.
+Marque le point où la boucle se termine, et les coudre ensemble.
 
-Finally, press your loop open so the seam sits in the middle, and the ends point to one side.
+Enfin, appuyez sur votre boucle ouverte pour que la couture se trouve au milieu, et les extrémités pointent sur un côté.
 
 ### Étape 15 : glissez la cravate et insérez la boucle
 
-![Slip-stitch tie, and insert loop](step15.png)
+![cravate de coupe, et boucle d'insertion](step15.png)
 
-Use a slip stitch to hand sew your tie all along the length of the back.
+Utilisez un point de glissement pour coudre votre cravate tout au long de la longueur du dos.
 
 > Votre point de dérapage devrait seulement accrocher le tissu de cravate sur le dos. Refuser de le faire passer à travers l'interface des cravates.
 > 
 > Faites attention car si vous courez le point trop profond, il pourrait apparaître sur le devant, et ruiner votre cravate.
 
-Make sure to slide in your loop, somewhere around 1/5th of the tie length, starting from the tip.
+Assurez-vous de glisser dans votre boucle, quelque part autour du 1/5e de la longueur de la cravate, à partir de la pointe de la cravate.
 
-Use your slip stitch to secure the loop in place on the center seam; we'll fix the edges of the loop in the next step.
+Utilise ton point de glissement pour sécuriser la boucle en place sur la couture centrale; nous réparerons les bords de la boucle à l'étape suivante.
 
 ### Étape 16 : Sécuriser les bords de la boucle
 
-![Secure the loop edges](step16.png)
+![Sécuriser les bords de la boucle](step16.png)
 
-Hand sew the edges of the loop to your tie, so it stays in place nicely.
+Coudre les bords de la boucle à votre cravate, donc elle reste bien en place.
 
-Make sure to sew only the bottom layer of the loop, so the stitches don't show on the loop.
+Assurez-vous de ne coudre que la couche inférieure de la boucle, de sorte que les points ne s'affichent pas sur la boucle.
 
-And, once again, be careful not to run your stitches through your tie. Be shallow.
+Et, une fois de plus, faites attention à ne pas faire passer vos mailles à travers votre cravate. Soyez peu profond.
 
 ### Étape 17 : Dégarnir et nettoyer
 
-![Trim and clean up](step17.png)
+![Couper et nettoyer](step17.png)
 
-Trim any loose threads you might have.
+Ajuster tous les fils de discussion que vous pourriez avoir.
