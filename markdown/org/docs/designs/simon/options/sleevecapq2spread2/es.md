@@ -1,6 +1,6 @@
----
+- - -
 title: "Sleevecap Q2 upward spread"
----
+- - -
 
 ![La dispersión ascendente en el segundo cuadrante de la manga](./sleevecapq2spread2.svg)
 
@@ -15,4 +15,4 @@ en profundidad cómo se construye la manga y la influencia de las diferentes opc
 
 ## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_sleevecapq2spread2_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_sleevecapq2spread2_sample.svg "Efecto de esta opción en el patrón")
