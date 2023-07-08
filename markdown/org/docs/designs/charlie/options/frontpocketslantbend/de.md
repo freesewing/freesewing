@@ -1,9 +1,9 @@
----
+- - -
 title: "Front pocket slant bend"
----
+- - -
 
-Controls the radius by which we round the pocket slant into the outseam.
+Steuert den Radius, mit dem wir den Taschenschieber nach außen drehen.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_frontpocketslantbend_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](charlie_frontpocketslantbend_sample.svg "Effekt dieser Variable auf das Schnittmuster")
