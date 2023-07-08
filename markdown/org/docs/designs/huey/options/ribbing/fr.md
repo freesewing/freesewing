@@ -1,6 +1,6 @@
----
+- - -
 title: "Ribbing"
----
+- - -
 
 ![Bord côte](./ribbing.svg)
 
