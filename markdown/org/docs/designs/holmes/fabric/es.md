@@ -4,11 +4,11 @@ title: "Holmes deerstalker hat: Fabric Options"
 
 ### Tela principal
 
-For the main fabric of your hat, a thick fabric will work best to hold the shape but if you wanna go for a lighter fabric you can interface it to give it more body. Generally you want to use **wools** of coating weight but you can experiment with different weights and fabrics with the relevant interfacing.
+Para la tela principal de tu sombrero, un tejido grueso funcionará mejor para mantener la forma, pero si quieres ir por una tela más ligera puedes interactuar para darle más cuerpo. Generally you want to use **wools** of coating weight but you can experiment with different weights and fabrics with the relevant interfacing.
 
 <Note>
 
-A fun thing to try is printed cotton. Just double up the main fabric so each piece is double thickness. Then interface it with a **medium firm interfacing**.
+Una cosa divertida para probar es el algodón impreso. Simplemente doblar la tela principal para que cada pieza sea de doble espesor. Then interface it with a **medium firm interfacing**.
 
 </Note>
 
@@ -22,7 +22,7 @@ Dependiendo del espesor de su tela principal y de lo bien que mantiene su forma 
 
 <Note>
 
-If you are trying to make a more Historical Holmes you can use **Tarlatan** which is a lightweight stiffened muslin. Just make sure you use natural fibres.
+If you are trying to make a more Historical Holmes you can use **Tarlatan** which is a lightweight stiffened muslin. Simplemente asegúrese de usar fibras naturales.
 
 </Note>
 
@@ -32,6 +32,6 @@ For the bill insert you want a firm but thin material. Puede que quieras probar,
 
 <Note>
 
-Just remember. All of these are recommendations. If you want to use something different go for it!
+Recuerden. Todas ellas son recomendaciones. Si quieres usar algo diferente, ¡ve por ello!
 
 </Note>
