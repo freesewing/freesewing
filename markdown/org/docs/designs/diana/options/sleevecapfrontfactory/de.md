@@ -1,6 +1,6 @@
----
+- - -
 title: "Sleevecap front Y"
----
+- - -
 
 ![Die vertikale Position des vorderen Durchbiegungspunkts](./sleevecapfrontfactory.svg)
 
@@ -14,4 +14,4 @@ Siehe [die Armkugel verstehen](/docs/patterns/brian/options#understanding-the-sl
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](diana_sleevecapfrontfactory_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](diana_sleevecapfrontfactory_sample.svg "Effekt dieser Option auf das Schnittmuster")
