@@ -1,36 +1,36 @@
----
+- - -
 title: "Trayvon tie: Fabric Options"
----
+- - -
 
 ## Stof voor een das
 
-The ties you find in the store are typically made out of silk or some imitation silk poly. So it will come as no surprise that those are good options.
+De dassen die je in de winkel vindt worden meestal gemaakt van zijde of imitatiezijde geplakt. Het is dus niet verrassend dat dit goede opties zijn.
 
-In general, you want something with good drape so that your tie hangs nicely. Cutting your tie on bias can help here too.
+Over het algemeen wil je iets dat goed valt zodat je das mooi hangt. Je das schuin van draad knippen kan ook helpen.
 
-Personally, I like using different fabrics for ties. Things like denim or corduroy make great ties, while being a bit different from the run-of-the-mill store-bought tie.
+Ik gebruik zelf graag verschillende stoffen voor dassen. Dingen als denim of ribfluweel maken geweldige dassen, en zijn ook een beetje anders dan de gemiddelde das uit de winkel.
 
-Additionally, silk and silk imitation is slippery and tricky to work with. If this your first tie, consider an alternative fabric that is more forgiving.
+Daarbij is zijde en imitatiezijde glad en lastig om mee te werken. Als dit je eerste das ooit is, overweeg dan een alternatieve stof die zich beter gedraagt.
 
-Just make sure you pick a fabric that does not stretch or lose its shape easily. You want your tie to look sharp, not saggy.
+Zorg vooral dat je een stof kiest die niet snel uitrekt of z'n vorm verliest. Je wil dat je das er scherp uitziet, niet slapjes.
 
 ## Voering van een das
 
-The lining of the tie is the bit that is used at the tip to cover up the back. If you are not sure what I mean, look at the back of the tip of an existing tie. See that rectangular patch of fabric you can see there? That is the tie lining.
+De voering van de das is het stukje dat aan de punt gebruikt wordt om de achterkant te bedekken. Als je niet zeker weet wat ik bedoel, kijk dan naar de achterkant van de punt van een bestaande das. Zie je dat rechthoekige stukje stof daar? Dat is de voering van de das.
 
-Your tie lining will add an extra fabric inside a part of your tie. So it is important to avoid bulk. Go for something thin, even when using a thicker tie fabric.
+De voering van je das voegt een extra stof toe aan een deel van de das. Het is dus belangrijk dat dit niet te dik wordt. Kies iets duns, ook als je een zwaardere stof gebruikt.
 
-Make sure your lining drapes at least as good as your tie fabric, so that it doesn't interfere with the drape of your tie.
+Zorg dat je voering minstens even goed valt als de stof van je das, zodat ze geen invloed heeft op hoe de das valt.
 
-When in doubt, go for imitation silk. Do make sure to pick something that is a nice match, or contrast, with your tie fabric.
+Bij twijfel, ga dan voor imitatie zijde. Let wel op dat je iets kiest dat ofwel bij je buitenstof past, of er mooi mee contrasteert.
 
 ## De tussenvoering
 
-Your tie interfacing is the skeleton of your tie. It is the part that sits in the middle and that you will only see while constructing your tie.
+De tussenvoering is het skelet van je das. Het is het deel dat in het midden zit en alleen zichtbaar is terwijl je je das maakt.
 
-Tie interfacing can be notoriously hard to get. Tie interfacing can be notoriously hard to get. Tie interfacing can be notoriously hard to get. The best tie interfacing is soft, fuzzy woven lambswool, but I have yet to walk into a fabric store that carries this.
+Tussenvoering voor dassen is onwaarschijnlijk lastig te vinden. Tie interfacing can be notoriously hard to get. Tie interfacing can be notoriously hard to get. The best tie interfacing is soft, fuzzy woven lambswool, but I have yet to walk into a fabric store that carries this.
 
-While you can get by with an alternative, like some wool fabric, or flannel, I typically re-use the interfacing from an old tie.
+Hoewel je een alternatief kan zoeken, zoals een wollen stof of flanel, recycleer ik meestal de tussenvoering van een oude das.
 
 <Note>
 
