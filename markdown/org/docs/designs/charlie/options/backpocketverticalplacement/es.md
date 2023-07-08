@@ -1,11 +1,11 @@
----
+- - -
 title: "Back pocket vertical placement"
----
+- - -
 
-Controls the vertical placement of the back pockets.
+Controla la colocación vertical de los bolsillos traseros.
 
-Either closer to the waistband, or higher. Or further from the waistband, or lower.
+O bien más cerca de la cintura, o más alto. O más lejos de la cintura, o más baja.
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_backpocketverticalplacement_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](charlie_backpocketverticalplacement_sample.svg "Efecto de esta opción en el patrón")
