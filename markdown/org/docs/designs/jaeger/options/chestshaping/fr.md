@@ -1,6 +1,6 @@
----
+- - -
 title: "Chest shaping"
----
+- - -
 
 ![Courbe du col poitrine](chestshaping.svg)
 
