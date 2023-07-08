@@ -1,11 +1,11 @@
----
+- - -
 title: "Front armhole extra cutout"
----
+- - -
 
-Controls how much the front of the armhole is cut deeper into the garment than the back.
+Controla cuánto se corta más en la prenda la parte delantera del orificio que la parte trasera.
 
-Since the human shoulder is more rounded at the front of the body, the sleeve(cap) is more rounded there too, and the armhole is typically cut deeper into the front of the garment than the back. This option controls how much deeper.
+Since the human shoulder is more rounded at the front of the body, the sleeve(cap) is more rounded there too, and the armhole is typically cut deeper into the front of the garment than the back. Esta opción controla cuánto más profundo.
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_frontarmholedeeper_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](diana_frontarmholedeeper_sample.svg "Efecto de esta opción en el patrón")
