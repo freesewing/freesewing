@@ -1,8 +1,8 @@
----
+- - -
 title: "Across back factor"
----
+- - -
 
-![Across back factor](./acrossbackfactor.svg)
+![Largeur du dos](./acrossbackfactor.svg)
 
 Contrôle la largeur de votre dos en fonction de la mesure d'épaule à épaule
 
