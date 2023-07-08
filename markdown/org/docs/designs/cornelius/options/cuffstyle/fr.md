@@ -6,9 +6,9 @@ title: "Style de bracelet"
 
 Ce patron supporte trois styles de bracelet différents :
 
-- **Traditional**: A single buttoned _curved_ band with a pointed edge.
-- **Elegant**: A single buttoned _straight_ band with a pointed edge.
-- **Keystone**: A slightly curved band that is wider than the others using 3 buttons rather than 1. This one is based of off the one in the Keystone Draft this pattern is based on.
+- **Traditionnel** : Une bande _courbée_ à un seul bouton avec un bord pointu.
+- **Elégant** : Une bande _droite_ à un seul bouton avec un bord pointu.
+- **Keystone** : Une bande légèrement incurvée, plus large que les autres, utilisant 3 boutons au lieu d'un. Celui-ci est basé sur celui du projet de Keystone dont s'inspire ce modèle.
 
 ## Effet de cette option sur le motif
 
