@@ -1,8 +1,8 @@
----
+- - -
 title: "Start of the cross seam curve"
----
+- - -
 
-Controls the start of the cross seam curve.
+Contrôle le début de la courbe de couture croisée.
 
 <Note>
 
