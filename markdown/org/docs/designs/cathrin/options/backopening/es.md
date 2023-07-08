@@ -1,11 +1,11 @@
----
+- - -
 title: "Back opening"
----
+- - -
 
-![The back opening option on Cathrin](./backopening.svg)
+![La opción de volver a abrir en la Catedral](./backopening.svg)
 
-This option determines how wide the back opening of your corset will be. The back opening is where you string the corset together.
+Esta opción determina la anchura de la apertura trasera de tu corsé . La parte trasera es donde se cuerda el corsé juntos.
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_backopening_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](cathrin_backopening_sample.svg "Efecto de esta opción en el patrón")
