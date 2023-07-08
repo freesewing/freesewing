@@ -1,25 +1,25 @@
----
-title: "Size"
----
+- - -
+title: "Taille"
+- - -
 
-Controls the overall size of the handbag.
+Contrôle la taille globale du sac à main.
 
-Rather than using measurements, Hortensia's size is determined by scaling fixed values.
+Plutôt que d'utiliser des mesures, la taille d'Hortensia est déterminée par la mise à l'échelle de valeurs fixes.
 
-- 20% : Will scale these values by 0.2
-- 200% : Will scale these values by 2
+- 20% : Ces valeurs seront multipliées par 0,2
+- 200% : Ces valeurs seront multipliées par 2
 
-The two fixed values that are used the most are Width: 23cm and Height: 33cm.
+Les deux valeurs fixes qui sont les plus utilisées sont Largeur : 23 cm et Hauteur : 33 cm.
 
 <Note>
 
-So an example of this would be the default, which is 50%. This would scale the values by 0.5 resulting in a handbag that is 11.5cm (23cm x 0.5) in width and 16.5cm (33cm x 0.5) in height.
+Un exemple de cette situation serait donc le défaut, qui est de 50 %. Cela multiplierais les valeurs par 0,5 ce qui aboutirait à un sac à main de 11 cm (23 cm x 0,5) en largeur et 16,5 cm (33 cm x 0,5) en hauteur.
 
 </Note>
 
 <Tip>
 
-Turn on paperless to see the measurements of the handbag. This will help you to determine the size you want and see the effects of this option.
+Passez en mode sans papier pour voir la largeur de la poignée. Cela vous aidera à déterminer la taille que vous voulez et voir les effets de cette option.
 
 </Tip>
 
