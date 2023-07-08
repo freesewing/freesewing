@@ -1,6 +1,6 @@
----
+- - -
 title: "Bust dart angle"
----
+- - -
 
 Controls the angle by which the (side) bust dart slopes downward.
 
