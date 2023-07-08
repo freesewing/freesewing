@@ -1,8 +1,8 @@
----
-title: "Fly curve"
----
+- - -
+titre: "Courbe de la mouche"
+- - -
 
-This controls the curvature of the fly's J-seam.
+Ceci contrôle la courbure de la couture J-moule.
 
 ## Effet de cette option sur le motif
 
