@@ -1,11 +1,11 @@
----
+- - -
 title: "Back drop"
----
+- - -
 
-![The back drop option on Cathrin](./backdrop.svg)
+![De optie voor verlaging rug bij Cathrin](./backdrop.svg)
 
-This option determines how far the center back will be lowered at the bottom of your corset.
+Deze optie bepaalt hoe ver het midden van de rug verlaagd zal worden aan de onderkant van je korset.
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_backdrop_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](cathrin_backdrop_sample.svg "Effect van deze optie op het patroon")
