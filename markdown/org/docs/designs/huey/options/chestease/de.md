@@ -1,9 +1,9 @@
----
-title: "Chest ease"
----
+- - -
+title: "Bequemlichkeitszugabe Brust"
+- - -
 
-This option controls the ease at your chest.
+Diese Variable beeinflusst die Weite an der Brust.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_chestease_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](huey_chestease_sample.svg "Effekt dieser Variable auf das Schnittmuster")
