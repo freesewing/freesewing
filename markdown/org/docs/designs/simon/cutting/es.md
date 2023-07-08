@@ -1,6 +1,6 @@
----
+- - -
 title: "Simon shirt: Cutting Instructions"
----
+- - -
 
 - **Tela principal**
   - Cortar **1 frente izquierdo**
@@ -33,9 +33,9 @@ Cuando los cortes individualmente, recuerda que necesitan ser imágenes espejo u
 
 <Warning>
 
-###### Caveats
+###### Advertencia
 
-- The **front right**, **front left**, and **sleeve** have seams that should be made into flat-felled seams. Como tal, tienen permisos adicionales de costura en esas costuras. Al cortar estas piezas, **debes** incluir esta costura extra.
+ - El **delantero derecho**, el **delantero izquierdo**, y la **manga** tienen costuras que deben hacerse como doble costura. Como tal, tienen permisos adicionales de costura en esas costuras. Al cortar estas piezas, **debes** incluir esta costura extra.
 - El guardia del corte y la placa del corte no tienen posibilidad de costura. Eso es normal, simplemente cortarlos como se dibujan sobre el patrón.
 - No cortes los dardos en la pieza **atrás**. Deberían marcarlos, pero no cortarlos.
 
