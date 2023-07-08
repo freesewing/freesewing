@@ -1,5 +1,5 @@
----
-title: "Charlie chinos: Design Options"
----
+- - -
+titre : "Chino Charlie : Options de conception"
+- - -
 
 <PatternOptions pattern='charlie' />
