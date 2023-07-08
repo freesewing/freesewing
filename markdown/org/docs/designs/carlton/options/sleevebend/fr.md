@@ -1,10 +1,10 @@
----
+- - -
 titre : "Pli de manche"
----
+- - -
 
-![Sleeve bend](./sleevebend.svg)
+![Courbe de manche](./sleevebend.svg)
 
-The angle of the sleeve at the elbow.
+L'angle de la manche au coude.
 
 ## Effet de cette option sur le motif
 
