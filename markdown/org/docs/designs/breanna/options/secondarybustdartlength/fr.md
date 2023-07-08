@@ -1,8 +1,8 @@
----
+- - -
 title: "Secondary bust dart length"
----
+- - -
 
-The length of the secondary bust dart.
+La longueur de la pince poitrine secondaire.
 
 ## Effet de cette option sur le motif
 
