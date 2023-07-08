@@ -1,8 +1,8 @@
----
+- - -
 title: "Front overlap"
----
+- - -
 
-Controls how much the right and left front of the garment overlap at the center front.
+Contrôle combien l'avant droit et gauche du vêtement se chevauche à l'avant du centre.
 
 ## Effet de cette option sur le motif
 
