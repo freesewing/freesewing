@@ -1,13 +1,13 @@
----
+- - -
 title: "Titan trouser block: Sewing Instructions"
----
+- - -
 
 <Note>
 
 ###### Titan is a block, not a pattern
 
 A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Dit wordt soms ook een paspatroon genoemd, alhoewel puristen zeggen dat dit twee verschillende dingen zijn.
 
 Blocks are typically not made as-is but rather serve as a basis for other patterns so the instructions below will not go in depth about closures or finishes and are for the default Titan block.
 
@@ -15,10 +15,10 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 
 ### Step 1: Mock-up Construction
 
-- Join the outseam (the seam that runs along the side of your leg) of the front and back.
-- Join the inseam (the seam the runs along the inside of your legs) of the front and back.
-- You now have a leg. Repeat for the other leg, **making certain they are mirror images of each other**.
-- Turn one leg with the good side in, and the other with the good side out.
+- Stik de buitennaad aan (de naad die langs de zijkant van je been loopt) van het voor- en achterpand.
+- Bevestig de binnennaad (de naad die langs de binnenkant van je broekspijp) van de voor- en achterpand.
+- Je hebt nu een been. Repeat for the other leg, **making certain they are mirror images of each other**.
+- Keer de ene broekspijp met de goede kant in, en de andere met de goede kant naar buiten.
 - Now tuck the _good side out_ into the _good side in_ leg, so that they have their _good sides together_.
 - Align and sew the cross seam.
 
