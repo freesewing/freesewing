@@ -1,9 +1,9 @@
----
+- - -
 title: "Waist dart size"
----
+- - -
 
-The size of the back waist dart
+Die Größe des hinteren Abnähers an der Taille
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_waistdartsize_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](breanna_waistdartsize_sample.svg "Effekt dieser Variable auf das Schnittmuster")
