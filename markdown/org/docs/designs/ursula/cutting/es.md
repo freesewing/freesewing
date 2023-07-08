@@ -1,8 +1,8 @@
----
+- - -
 title: "Ursula undies: Cutting Instructions"
----
+- - -
 
-Ursula consists of a front, a back, and a lined gusset.
+La Ursula consiste en un frente, una espalda y una chispa revuelta.
 
 - **Tela principal**
   - Cortar **1 frente**
