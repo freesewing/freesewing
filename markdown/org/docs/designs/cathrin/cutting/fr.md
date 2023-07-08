@@ -1,12 +1,12 @@
----
-title: "Cathrin corset: Cutting Instructions"
----
+- - -
+titre : "Corset Cathrin : Instructions de coupe"
+- - -
 
-Cut 1 core fabric and 1 outer fabric of the center panel, making sure to cut on the fold.
+Coupez 1 cœur de tissu et 1 tissu extérieur du panneau central, en vous assurant de couper sur le pli.
 
-Cut 2 core and 2 outer of each side panel with _good sides together_.
+Coupez 2 cœurs et 2 extérieurs de chaque panneau latéral avec _bons côtés ensemble_.
 
-For example, for the 11-panel version of Cathrin:
+Par exemple, pour la version 11 panel de Cathrin :
 
 - Panneau 1 - Couper 1 cœur et 1 extérieur
 - Panneau 2 - Couper 2 cœurs et 2 extérieurs
@@ -15,4 +15,4 @@ For example, for the 11-panel version of Cathrin:
 - Panneau 5 - Couper 2 cœurs et 2 extérieurs
 - Panneau 6 - Couper 2 cœurs et 2 extérieurs
 
-![Pattern pieces](cathrin_cutting.png)
+![Motif de pièces](cathrin_cutting.png)
