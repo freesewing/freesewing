@@ -115,7 +115,8 @@ leading the scoreboard.
 To fully translate FreeSewing, the following types of content needs to be
 translated:
 
-**Top priority: UX Translations**  These are translations the directly impact
+**Top priority: UX Translations**   
+These are translations the directly impact
 the user experience (_UX_).  They include the content used in design, the names
 of options, translations of menus, emails, and so on.
 
@@ -123,16 +124,16 @@ This is a relatively small amount of text, and makes up less than 10% of the
 top & high priority content.  It's an effort that a motivated translator can
 complete over the course of a weekend.
 
-**High priority: Translation of Documenation**  This includes all the
-documentation on FreeSewing.org.
+**High priority: Translation of Documenation**   
+This includes all the documentation on FreeSewing.org.
 
 This is a significant amount of text that makes up more than 90% of hte top *
 high priority content.  It's an effort you should probably not take on by
 yourself, but rather tackle with a team of translators.
 
-**Low Priority: Content of blog and showcase posts**  This is
-_nice to have_ as people can use and navigate FreeSewing even when this content
-remains untranslated.
+**Low Priority: Content of blog and showcase posts**  
+This is _nice to have_ as people can use and navigate FreeSewing even when this
+content remains untranslated.
 
 Still, if you are considering translating this content, you might want to
 consider the following priorities within this categors:
