@@ -1,13 +1,13 @@
----
+- - -
 title: "Titan trouser block: Sewing Instructions"
----
+- - -
 
 <Note>
 
 ###### Titan ist ein Grundschnitt, kein Schnittmuster
 
 Ein Grundschnitt ist eine Grundform, auf der andere Schnittmuster basieren.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Sie werden manchmal auch als Schläger bezeichnet, obwohl Puristen argumentieren, dass ein Block und ein Schläger verschiedene Dinge sind.
 
 Blocks are typically not made as-is but rather serve as a basis for other patterns so the instructions below will not go in depth about closures or finishes and are for the default Titan block.
 
@@ -15,10 +15,10 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 
 ### Step 1: Mock-up Construction
 
-- Join the outseam (the seam that runs along the side of your leg) of the front and back.
-- Join the inseam (the seam the runs along the inside of your legs) of the front and back.
+- Schließen Sie sich dem Aussennaht (die Naht, die entlang der Seite des Beines läuft) der Vorder- und Rückseite ab.
+- Schließen Sie sich dem Inseam (die Naht der Pisten entlang der Innenseite Ihrer Beine) der Vorder- und Rückseite an.
 - Du hast jetzt ein Bein. Wiederhole die Schritte für das andere Bein, **und stelle dabei sicher, dass die beiden Beine Spiegelbilder voneinander sind**.
-- Turn one leg with the good side in, and the other with the good side out.
+- Drehen Sie ein Bein mit der guten Seite, die andere mit der guten Seite.
 - Now tuck the _good side out_ into the _good side in_ leg, so that they have their _good sides together_.
 - Align and sew the cross seam.
 
