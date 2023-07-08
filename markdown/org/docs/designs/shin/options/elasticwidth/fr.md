@@ -1,6 +1,6 @@
----
+- - -
 title: "Elastic width"
----
+- - -
 
 > #### ###### Pour quoi faire ?
 > 
