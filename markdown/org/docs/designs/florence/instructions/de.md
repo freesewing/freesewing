@@ -1,12 +1,12 @@
----
+- - -
 title: "Florence face mask: Sewing Instructions"
----
+- - -
 
 ### Schritt 1: Füge die Mittelnaht zusammen
 
-Join the curved seam that is center of our mask by placing the _good sides together_ and sewing them in place.
+Füge die gekrümmte Naht, die die Mitte unserer Maske bildet, zusammen, indem du die _guten Seiten_ zusammenlegst und vernähst.
 
-![Join the center seam](step1.svg)
+![Füge die Mittelnaht zusammen](step1.svg)
 
 <Note>Wiederhole diesen Schritt sowohl für den äußeren Hauptstoff als auch für den inneren Futterstoff.</Note>
 
@@ -19,15 +19,15 @@ Wenn dir das also nicht allzu viel ausmacht, kannst du es gerne überspringen.
 
 </Note>
 
-Press the seam allowance on the center seam open so the seam lies nice and flat.
+Bügel die Nahtzugabe an der Mittelnaht auf, so dass die Naht schön flach liegt.
 
-As this is a curved seam, it won't lay flat. But you can approach it with your iron from one side, then do the second half from the other side. Alternatively, you can use a tailor's ham or cushion to press.
+Da es sich um eine gekrümmte Naht handelt, wird sie nicht flach liegen. Aber du kannst dich mit deinem Bügeleisen von der einen Seite her nähern und dann die zweite Hälfte von der anderen Seite machen. Alternativ kannst du zum Bügeln ein Bügelei oder ein Kissen verwenden.
 
 <Note>Wiederhole diesen Schritt sowohl für den äußeren Hauptstoff als auch für den inneren Futterstoff.</Note>
 
 ### Schritt 3: Nähe den äußeren an den inneren Stoff und befestige die Bänder
 
-![Join the inner to the outer fabric](step3.svg)
+![Verbinde den inneren mit dem äußeren Stoff](step3.svg)
 
 Nun werden wir den inneren (Futter) an den äußeren (Haupt) Stoff nähen und die Bänder in einem Schritt anbringen.
 
@@ -43,7 +43,7 @@ Wenn du etwas Übung bekommst, wirst du feststellen, dass du dies nicht feststec
 
 </Tip>
 
-Now sew around the mask, making sure to leave one side open so we can turn the mask inside-out later.
+Nähe nun um die Maske herum und achte darauf, eine Seite offen zu lassen, damit wir die Maske später von innen nach außen drehen können.
 
 <Warning>
 
@@ -54,9 +54,9 @@ Führe sie entweder durch die Öffnung, die du auf einer Seite lässt, oder bün
 
 ### Schritt 4: Drehe die Maske von innen nach außen
 
-Actually, your mask is inside-out now, so turning it inside out will mean we get it outside-out, or regular.
+Eigentlich ist deine Maske jetzt von innen nach außen gedreht. Wenn wir sie also von innen nach außen drehen, erhalten sie das äußere nach außen, oder normal.
 
-Just reach in through the side your left open and carefully pull the mask through to turn it.
+Greife einfach durch die linke Seite hinein und ziehe die Maske vorsichtig durch, um sie zu drehen.
 
 ### Schritt 5 (optional): Die Maske bügeln
 
@@ -67,20 +67,20 @@ Wenn dir das also nicht allzu viel ausmacht, kannst du es gerne überspringen.
 
 </Note>
 
-Now that the mask is as it should be, it's time to press it. Bevor du dies tust, stelle sicher, dass du die Nahtzugabe der Seite faltest, die wir nach innen offen gelassen haben, so dass wir sie flach drücken, als ob sie genäht wäre.
+Nun, da die Maske so ist, wie sie sein sollte, ist es an der Zeit, sie zu bügeln. Bevor du dies tust, stelle sicher, dass du die Nahtzugabe der Seite faltest, die wir nach innen offen gelassen haben, so dass wir sie flach drücken, als ob sie genäht wäre.
 
 ### Schritt 6: Schließe die offene Seite der Maske und nähe an der Kante um den Rand herum
 
-![Edge-stitch around the mask](step6.svg)
+![Randstich um die Maske](step6.svg)
 
-Now it's time to close the side of our mask the we left open to turn it inside out.
+Jetzt ist es an der Zeit, die Seite unserer Maske zu schließen, die wir offen gelassen haben, um sie von innen nach außen zu drehen.
 
 Wir werden nicht nur die Öffnung verschließen, sondern auch die gesamte Maske mit Kantenstichen versehen, um unserer Maske eine zusätzliche Stabilität zu verleihen und das Futter im hinteren Bereich zu erhalten.
 
-Make sure the open side is folded neatly inside, then edge-stitch around the entire mask.
+Achte darauf, dass die offene Seite ordentlich nach innen gefaltet wird, und nähe dann um die gesamte Maske herum.
 
 ### Schritt 7: Trage deine Maske oder nähe einen ganzen Stapel
 
-That's it, you're done! You can now wear your mask.
+Das war's, du bist fertig! Du kannst jetzt deine Maske tragen.
 
-Even better, make a bunch so you can give others masks too.
+Noch besser: Mache ein paar mehr, damit du anderen auch Masken geben kannst.
