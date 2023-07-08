@@ -1,8 +1,8 @@
----
-title: "Front pocket slant bend"
----
+- - -
+titre : "Pliage en biais de la poche avant"
+- - -
 
-Controls the radius by which we round the pocket slant into the outseam.
+Contrôle le rayon par lequel on arrondit la poche enfoncée à l'extérieur.
 
 ## Effet de cette option sur le motif
 
