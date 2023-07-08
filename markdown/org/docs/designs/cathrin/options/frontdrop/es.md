@@ -1,13 +1,13 @@
----
+- - -
 title: "Front drop"
----
+- - -
 
-![The front drop option on Cathrin](./frontdrop.svg)
+![La opción de gota frontal en la Catedral](./frontdrop.svg)
 
-This option determines how far the center front will be lowered at the bottom of your corset.
+Esta opción determina hasta qué punto la parte central se reducirá en la parte inferior de su corsete.
 
 > Si se rebaja demasiado, la sesión podría convertirse en un problema.
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_frontdrop_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](cathrin_frontdrop_sample.svg "Efecto de esta opción en el patrón")
