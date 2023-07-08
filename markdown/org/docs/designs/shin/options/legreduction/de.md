@@ -1,6 +1,6 @@
----
+- - -
 title: "Leg reduction"
----
+- - -
 
 Der Betrag, um die Streckung an den obersten Beinen weiter zu reduzieren.
 
@@ -10,4 +10,4 @@ Der Betrag, um die Streckung an den obersten Beinen weiter zu reduzieren.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](shin_legreduction_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](shin_legreduction_sample.svg "Effekt dieser Variable auf das Schnittmuster")
