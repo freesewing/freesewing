@@ -34,16 +34,22 @@ translators**:
 ## Become a FreeSewing translator
 
 To gain access as a FreeSewing translator, you will need an invite.
+You can request a translator invite with the link below.
+When you do, we will send you an email with all further instructions.
 
-You can __[request a translator invite
-online](https://next.freesewing.org/translation/join)__ and we will send you an
-invite with all further instructions.
+<Link compact>
+
+###### [Request a FreeSewing translator invite](https://next.freesewing.org/translation/join)
+</Link>
 
 <Fixme compact>This link above still needs to be implemented in the new v3
 website</Fixme>
 
+<Tip>
+
 We also have [a dedicated __Translation__ channel on
 Discord](https://discord.freesewing.org) for any questions that may remain.
+</Tip>
 
 ## Adding a new language
 
@@ -51,9 +57,13 @@ We would love to make FreeSewing available in more langauges.  If you are
 interested in starting a new translation effort, that is great.
 
 We ask that you familiarize yourself with this translation guide to understand
-what it takes to add a new language.  Then if you want to start a new language,
-you can get the ball rolling by completing this online form.
+what it takes to add a new language. Then if you can submit your request to setup
+a new language with the link below.
 
+<Link compact>
+
+###### [Request to setup a new FreeSewing language](https://next.freesewing.org/translation/add-language)
+</Link>
 
 <Fixme compact>
 This link above still needs to be implemented in the new v3 website
@@ -199,8 +209,9 @@ refer to the documentation we need to ensure that those links works for all
 languages, which requires that all languages use the same structure, the same
 amount of headings, paragraphs, and so on.
 
-Sanity supports different language versions for posts, but it does not enforce any structure on them.
-A translated blog post could have more or less paragraphs, different images, you name it.
+Sanity supports different language versions for posts, but it does not enforce
+any structure on them.  A translated blog post could have more or less
+paragraphs, different images, you name it.
 
 This additional freedom is why we use Sanity for these types of content. We lik
 to encourage the non-English FreeSewing communities to make FreeSewing their
