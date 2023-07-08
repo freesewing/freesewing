@@ -1,17 +1,17 @@
----
+- - -
 title: "Back rise"
----
+- - -
 
-![The back rise option on Cathrin](./backrise.svg)
+![De optie voor rughoogte bij Cathrin](./backrise.svg)
 
-How high do you want the corset to rise at the back, relative to the underbust height?
+Hoe hoog wil je dat het korset komt in de rug, in vergelijking met de hoogte van de onderbuste?
 
-Zero means that the backline will stay horizontal at the level of your underbust. In other words, the back will be somewhat the same height as your bra strap.
+Nul houdt in dat de ruglijn horizontaal blijft, op hetzelfde niveau als de onderbuste. Met andere woorden, de rug komt ongeveer op dezelfde hoogte als je bh-band.
 
-If you increase the back rise, your corset will rise upwards at the back.
+Als je de rughoogte groter maakt zal je korset achteraan hoger komen.
 
 > As this is an underbust corset, the back rise is a style choice and won't affect the fit
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_backrise_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](cathrin_backrise_sample.svg "Effect van deze optie op het patroon")
