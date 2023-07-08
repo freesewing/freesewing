@@ -1,8 +1,8 @@
----
+- - -
 title: "Vertical ease"
----
+- - -
 
-The amount of ease to distribute along the length of the garment.
+La quantité d'aisance à répartir sur la longueur du vêtement.
 
 ## Effet de cette option sur le motif
 
