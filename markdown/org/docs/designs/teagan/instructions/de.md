@@ -1,10 +1,10 @@
----
+- - -
 title: "Teagan T-shirt: Sewing Instructions"
----
+- - -
 
 ## Schritt 1: Schließe die Schulternähte
 
-![Close the shoulder seams](step01.svg)
+![Schulternähte schließen](step01.svg)
 
 - Platzieren Sie die Vorder- und Rückseite mit [guten Seiten zusammen](/docs/sewing/good-sides-together) oben. Die Schulternaht ausrichten.
 - Servieren Sie die Schulternaht oder nähen Sie sie mit einer schmalen Zickzack-Zickzack-Nähte nach der üblichen Nahtzugabe.
@@ -15,7 +15,7 @@ Optional: In einem Drapierstrick können Sie die Schulternähte durch das Nähen
 
 ## Schritt 2: In den Ärmeln setzen
 
-![Set in sleeves](step02.svg)
+![In Ärmel setzen](step02.svg)
 
 - Platzieren Sie Ihre jetzt befestigte Vorder- und Rückseite mit der guten Seite.
 - Identifizieren Sie die Vorder- und Rückseite jeder Ihrer Ärmel. (So trennen Sie den linken Ärmel von rechts.) On your paper pattern piece, the front side of the sleeve is to the right.
@@ -42,7 +42,7 @@ Dies ist der komplexeste Schritt bei der Herstellung des Teagan T-Shirts, aber e
 - Fold your binding in half lengthwise (parallel to the longest side), and press.
 - Put your T-shirt down with the back good side up, and place your band strip on top of it, lining up the raw edges of the band with the raw edge of the neck opening.
 - Your band should start at the center back of the neck opening.
-- Now shift your binding strip 1cm beyond your starting point. This little extra will guarantee we can join the two ends later.
+- Schiebe nun das Einfassband 1cm über den Anfangspunkt hinweg. Dieser Zentimeter macht das spätere Zusammennähen der beiden Enden möglich.
 
 #### Sew band in place
 
@@ -56,20 +56,20 @@ This stretching is the trickiest part. Many online tutorials will tell you to si
   
 </Note>
 
-- Stop sewing 3 cm before the end, leaving a tail like we did at the beginning.
+- Stoppt das Nähen von 3 cm vor dem Ende, so dass ein Schwanz wie wir es zu Beginn getan haben.
 
 #### Sew band ends together
 
 ![Sew band ends](step03c.svg)
 
 Now it's time to sew the ends of our knit band together.
-- Take the end of your knit band, and stretch it along the 3 cm separating it from the start point as you would while sewing. On the band, mark where the band reached the start point, or center back. Do the same for the other end.
-- Fold your T-shirt in whatever way makes it more easy for you to place both band ends with good sides together, aligning the marks. Sew them together at the marks.
+- Take the end of your knit band, and stretch it along the 3 cm separating it from the start point as you would while sewing. On the band, mark where the band reached the start point, or center back. Tu das Gleiche für das andere Ende.
+- Fold your T-shirt in whatever way makes it more easy for you to place both band ends with good sides together, aligning the marks. Nähen Sie sie zusammen an den Marken.
  - You should now have a joined knit band.
 
 <Note>
 
-6 cm is not much, but should be enough to get both edges comfortably under your sewing machine to sew them together.
+6 cm ist nicht viel, aber sollte ausreichen, um beide Kanten bequem unter Ihrer Nähmaschine zu nähen.
 
 </Note>
 
@@ -89,86 +89,86 @@ Eine ausführlichere Anleitung zur Strickbindung findest du in den [Aaron Instuc
 
 </Tip>
 
-#### Place (the start of) your binding
+#### Platziere den Beginn deines Bandes
 
-![Place your binding](step03a.svg)
+![Platzieren Sie Ihre Bindung](step03a.svg)
 
-- Put your T-shirt down with the back good side up, and place your binding strip on top of it with the good side down (as in, good sides together). Your binding should start at the center back of the neck opening.
-- Align the long edge of your strip with the edge of your fabric so the strip lies on top of the fabric (not in the opening). Place the corner on your starting point.
-- Now shift your binding strip 1cm beyond your starting point. This little extra will guarantee we can join the two ends later.
+- Lege dein T-Shirt mit der guten Rückseite nach oben und platzieren Sie Ihren Bindestreifen mit der guten Seite nach unten (wie in guten Seiten gemeinsam). Ihre Bindung sollte an der Mitte der Halsöffnung beginnen.
+- Lege die lange Kante deines Streifens an die Kante deines Stoffes, sodass der Streife auf dem Stoff liegt (und nicht in der Öffnung). Platziere die Ecke an deinem Startpunkt.
+- Schiebe nun das Einfassband 1cm über den Anfangspunkt hinweg. Dieser Zentimeter macht das spätere Zusammennähen der beiden Enden möglich.
 
-#### Sew binding in place
+#### Nähe das Einfassband fest
 
-![Sew binding in place](step03b.svg)
+![Nähe das Einfassband fest](step03b.svg)
 
-- Place your presser foot 3 cm along the knit binding, so a 3 cm tail will be left unstitched. This will help us join the ends of the binding later. Then, sew 1.5 cm from the edge around the neck opening, stretching the binding gently as you sew.  (Note: this is not the standard seam allowance.)
-- Stop sewing 3 cm before the end, leaving a tail like we did at the beginning.
+- Legen Sie Ihren Druckerfuß 3 cm entlang der Strickbindung, so dass ein 3 cm Schwanz nicht geheftet bleibt. Dies wird uns helfen, uns später an den Enden der Bindung zu beteiligen. Dann nähen Sie 1,5 cm vom Rand um den Halsöffner und strecken Sie die Bindung sanft während Sie nähen.  (Hinweis: Dies ist nicht die Standarderlaubnis.)
+- Stoppt das Nähen von 3 cm vor dem Ende, so dass ein Schwanz wie wir es zu Beginn getan haben.
 
-#### Mark and sew binding ends
+#### Bindungsende markieren und nähen
 
-![Sew binding ends](step03c.svg)
+![Nähenbindungsende](step03c.svg)
 
-- With about 6cm left to go before we complete our circle, it’s time to sew the ends of the binding together.
-- Take one of the edges, and stretch it along the 3cm separating it from the start point as you would while sewing. On the binding, mark where the binding reached the start point. Do the same for the other end.
-- Fold your T-shirt in whatever way makes it more easy for you to place both binding ends with good sides together, aligning the marks. Sew them together at the marks.
+- Es ist an der Zeit, die Enden der Bindung zusammen zu nähen, bevor wir unseren Kreis vollenden.
+- Nehmen Sie eine der Kanten und strecken Sie sie entlang der 3cm vom Startpunkt ab, wie Sie es beim Nähen tun würden. Auf der Bindung markieren, wo die Bindung den Startpunkt erreicht hat. Tu das Gleiche für das andere Ende.
+- Durch das Falten Ihres T-Shirts ist es für Sie einfacher, beide Enden mit guten Seiten miteinander zu verbinden, indem Sie die Markierungen ausrichten. Nähen Sie sie zusammen an den Marken.
 
 <Note>
 
-6 cm is not much, but should be enough to get both edges comfortably under your sewing machine to sew them together.
+6 cm ist nicht viel, aber sollte ausreichen, um beide Kanten bequem unter Ihrer Nähmaschine zu nähen.
 
 </Note>
 
-![Finish binding](step03d.svg)
+![Bindung beenden](step03d.svg)
 
-- Now that your binding ends are joined together, it’s time to finish the last 6cm of binding. Sew it down, staying 1.5cm from the edge as you did before.
+- Nun, da Ihre Bindungsenden miteinander verbunden sind, ist es an der Zeit, die letzten 6 cm Bindung zu beenden. Nähe das Band fest, mit 1.5cm Abstand zur Kante wie bisher.
 
-#### Fold knit binding to the back and sew down
+#### Strickbinder an den Rücken falten und nach unten nähen
 
-![Sew down binding](step03e.svg)
+![Bindung abnähen](step03e.svg)
 
-- Fold your binding fabric around the fabric of your T-shirt to the back. This is how we’ll sew it down.
-- While the fabric is folded double at the front (hiding the fabric edge in the process), there’s no need for that at the back. We will merely trim back the edge later, given that knit doesn’t ravel. If we were to fold back the fabric at the back too, it would only add bulk.
-- Now you’ll sew the binding down. From the right side of your fabric, sew along the inner edge of your binding (furthest from the edge), making sure to catch the binding at the back in the process.
+- Falten Sie Ihren Bindegewebe um den Stoff Ihres T-Shirts auf den Rücken. So werden wir es einnähen.
+- Während der Stoff doppelt geklappt ist (Verstecke den Stoffrand im Prozess), ist das auf der Rückseite nicht nötig. Wir werden den Rand später einfach zurückschneiden, da der Strick nicht schwenkt. Wenn wir den Stoff auch auf der Rückseite umschlagen würden, würde es zu dick werden.
+- Jetzt werden Sie die Bindung nach unten nähen. Von der rechten Seite des Stoffes nähst du entlang der Innenkante deines Einfassbandes entlang (am weitesten von der Kante entfernt), während du darauf achtest, das Band auf der Rückseite mitzunähen.
 
 <Note>
-If you have a coverlock machine, that would be perfect for this seam.
+Wenn Sie eine Coverlock Maschine haben, wäre das perfekt für diese Naht.
 </Note>
 
-- You’ll have to, once again, stretch your binding a bit while doing this. But this time, there’s an extra caveat to look out for.
+- Dabei müssen Sie Ihre Bindung noch einmal etwas ausdehnen. Aber dieses Mal gibt es einen zusätzlichen Vorbehalt, nach dem man Ausschau halten muss.
 
 <Note>
 
-##### Beware of the uneven feed
+##### Vorsicht vor dem ungleichen Feed
 
-As your feed your binding through your sewing machine, the feed dogs will pull the bottom layer (back of your binding) forward.
+als Feed für deine Bindung durch deine Nähmaschine, die Futterhunde ziehen die untere Schicht (hinten der Bindung) vorwärts.
 
-In a perfect world, all layers will follow smoothly. But more often than not, the top layer (front of your binding) tends to lag behind a bit. This causes your binding to not neatly fold around the edge of the fabric, but make ugly wrinkles.
+In einer perfekten Welt werden alle Stofflagen gleichmäßig transportiert. In den meisten Fällen hinkt die obere Stofflage (vordere Seite deiner Einfassung) ein bisschen hinterher. Dadurch legt sich das Einfassband nicht sauber um den Stoffrand, sondern erzeugt hässliche Falten.
 
-So watch out for this, and if you see it happening, stretch the under layer a bit extra to compensate.
-On the inside of your T-shirt, trim back the knit binding just outside of your seam to finish up.
+Also achte darauf, und wenn du das siehst, strecke die Unterschicht ein bisschen extra aus, um sie zu kompensieren.
+Auf der Innenseite Ihres T-Shirts die Strickbinde direkt außerhalb der Naht zurückdrehen, um zu Ende zu kommen.
 
 </Note>
 
 ## Schritt 4: Schließe die Seitennaht und Ärmel
 
-![Close the side seams and sleeves](step04.svg)
+![Seitennaht und Ärmel schließen](step04.svg)
 
-- Fold your Teagan T-shirt double at the shoulder seams with good sides together.
-- Align the side seams and sleeves and pin them together.
-- Serge/sew the side seam and continue sewing to close the arms all the way to the sleeve hem.
-- Repeat on the other side.
+- Falten Sie Ihr Teagan T-Shirt doppelt an den Schulternähten mit guten Seiten zusammen.
+- Legen Sie die Seitennaht und die Ärmel an und fixieren Sie sie zusammen.
+- Serge/nähen Sie die Seitennaht und Nähen Sie weiter und schließen Sie die Arme bis zum Ärmelkanal.
+- Wiederholen auf der anderen Seite.
 
 ## Schritt 5: Saum und Ärmel beenden
 
-![Finish hem and sleeves](step05.svg)
+![Saum und Ärmel beenden](step05.svg)
 
-- Fold the hem upwards, to the inside, and sew it down. If you have a coverlock, use it. If not, use a twin needle or zig-zag stitch to keep the seam stretchable.
-- Repeat for the hem on each sleeve.
+- Falte den Saum nach oben, nach innen, und nähe ihn nach unten. Wenn du eine Coverlock hast, verwende sie. Wenn nicht, verwenden Sie eine Zick-Zick-Zick-Zack-Nadelstichung, um die Naht dehnbar zu halten.
+- Wiederholen Sie den Saum auf jedem Ärmel.
 
 <Note>
 
-##### Fold only once, to avoid bulk
+##### Nur einmal falten, um Masse zu vermeiden
 
-Knitwear doesn’t ravel, so you can simply fold this over once and sew it down, then neatly trim back the fabric.
+Knitwear nicht schwenken, so können Sie diese einfach einmal falten und nach unten nähen, dann sauber den Stoff zurückschneiden.
 
 </Note>
