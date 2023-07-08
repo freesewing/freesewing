@@ -1,11 +1,11 @@
----
+- - -
 title: "Crotch drop"
----
+- - -
 
 Contrôle à quel point la croche est abaissée.
 
-Lowering the crotch makes for a more casual fit.  
-A signigicantly lowered crotched can also be a style choice.
+Abaisser la crotte rend un ajustement plus décontracté.  
+Un crotché significativement baissé peut également être un choix de style.
 
 ## Effet de cette option sur le motif
 
