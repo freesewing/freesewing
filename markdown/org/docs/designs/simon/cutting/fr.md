@@ -1,6 +1,6 @@
----
+- - -
 title: "Simon shirt: Cutting Instructions"
----
+- - -
 
 - **Tissu principal**
   - Couper **1 devant gauche**
