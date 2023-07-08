@@ -1,5 +1,5 @@
 ---
-title: Designs
+title: Дизайни
 order: 300
 ---
 
