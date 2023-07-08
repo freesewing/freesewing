@@ -1,9 +1,9 @@
----
+- - -
 title: "Cathrin corset: Fabric Options"
----
+- - -
 
-Corsets must be made from fabric with no stretch at all. The fabric designed for corset making is called coutil. Although coutil is expensive, not much is needed for a corset. Some cheaper alternatives include canvas, denim and cotton ticking. However, these will stretch over time and are not suitable for any garment with a large waist reduction: they are not strong enough. They are good options for testing the pattern to see how it fits on you. For corsets made from silk and cotton and other fancy fabrics, you need to use several layers - the fabric you want to be seen, on top of a layer of coutil or other strength layer, and perhaps also a third layer made out of lining which will sit next to the body.
+Korsette müssen aus einem Stoff hergestellt werden, der gar keine Elastizität aufweist. Der Stoff, der für die Korsettherstellung entworfen wurde, nennt man Coutil. Obwohl Coutil teuer ist, wird für ein Korsett nicht viel benötigt. Einige billigere Alternativen sind Leinen, Denim und Baumwoll-Inlett. Diese werden sich jedoch über die Zeit erstrecken und eignen sich nicht für Kleidungsstücke mit einer großen Taillenreduzierung: Sie sind nicht stark genug. Sie sind gute Optionen, um das Muster zu testen, um zu sehen, wie es auf Sie passt. Für Korsetts aus Seide und Baumwolle und anderen ausgefallenen Stoffen musst du mehrere Ebenen verwenden - den Stoff, den du sehen möchtest, oberhalb einer Coutil-Schicht oder einer anderen Stärkeschicht, und vielleicht auch eine dritte Schicht aus Futter, die neben dem Körper sitzt.
 
-For the core fabric, you need a strong fabric, such as coutil, canvas, or denim.
+Für den Kernstoff benötigen Sie einen starken Stoff wie Coutil, Leinwand oder Denim.
 
-For the outer fabric, you can use most non-stretch fabrics, such as linen, cotton, or silk.
+Für den äußeren Stoff können die meisten nicht dehnbaren Stoffe, wie Leinen, Baumwolle oder Seide, verwendet werden.
