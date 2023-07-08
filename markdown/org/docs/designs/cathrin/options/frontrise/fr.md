@@ -1,10 +1,10 @@
----
-title: "Front rise"
----
+- - -
+title:"Hauteur du devant"
+- - -
 
-![The front rise option on Cathrin](./frontrise.svg)
+![L'option avant sur Cathrin](./frontrise.svg)
 
-How high do you want the corset to rise up at the center front.
+À quelle hauteur voulez-vous que le corset se lève à l'avant du centre.
 
 > Cette hausse se produit au centre du front entre vos seins. Ne le surmontez pas ou le bord de votre corset se glissera dans vos seins.
 
