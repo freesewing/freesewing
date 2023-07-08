@@ -1,6 +1,6 @@
----
+- - -
 title: "Hortensia handbag: Sewing Instructions"
----
+- - -
 
 ### (Optional) Step 1: Face the main fabric
 
@@ -78,7 +78,7 @@ It is recommended to leave the gap for turning on the side rather than the top o
 
 </Note>
 
-### Step 9: Lining
+### Schritt 9: Wenden
 
 - With _good sides together_ sew the front and back lining panels to the bottom lining panel.
 - With _good sides together_ attach the lining side panels.
@@ -87,6 +87,6 @@ It is recommended to leave the gap for turning on the side rather than the top o
 - Place the lining inside the bag _wrong sides facing_ eachother.
 - _Slipstitch_ or _Whipstitch_ the lining to the zipper panel.
 
-### Step 10: Enjoy!
+### Schritt 10: Viel Spaß mit deinem neuen Shirt!
 
-That's it! You are all done! Now go enjoy you new bag!
+Das war's! Du bist fertig! Now go enjoy you new bag!
