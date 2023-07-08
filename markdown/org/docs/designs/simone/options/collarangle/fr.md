@@ -1,6 +1,6 @@
----
+- - -
 titre : "Angle du col"
----
+- - -
 
 ![Angle du col](collarangle.svg)
 
