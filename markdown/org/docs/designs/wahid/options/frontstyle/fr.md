@@ -1,6 +1,6 @@
----
+- - -
 title: "Style d'encolure"
----
+- - -
 
 ![Style devant](frontstyle.svg)
 
