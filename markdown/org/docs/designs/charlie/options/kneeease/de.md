@@ -1,9 +1,9 @@
----
+- - -
 title: "Knee ease"
----
+- - -
 
-Controls the amount of ease at your knees, which also determines the width of the trouser legs.
+Steuert die Leichtigkeit in den Knien, die auch die Breite der Hosenbeine bestimmt.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_kneeease_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](charlie_kneeease_sample.svg "Effekt dieser Variable auf das Schnittmuster")
