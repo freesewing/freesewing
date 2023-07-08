@@ -8,6 +8,7 @@ function draftFlorentBrimInterfacing({
   macro,
   paths,
   Path,
+  store,
   part,
 }) {
   paths.hint = paths.seam.clone().attr('class', 'dashed stroke-sm')
@@ -46,16 +47,20 @@ function draftFlorentBrimInterfacing({
     if (['seam', 'inset', 'outset'].indexOf(i) === -1) delete paths[i]
   }
 
+  macro('grainline', {
+    from: points.outerMid,
+    to: points.innerMid,
+  })
+
+  store.cutlist.removeCut()
+  store.cutlist.addCut({ cut: 1, material: 'plastic' })
+
   if (complete) {
     points.title = points.innerMid.shiftFractionTowards(points.outerMidCp2, 0.35)
     macro('title', {
       at: points.title,
       nr: 5,
       title: 'brimInterfacing',
-    })
-    macro('grainline', {
-      from: points.outerMid,
-      to: points.innerMid,
     })
 
     if (paperless) {

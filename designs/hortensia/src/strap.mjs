@@ -42,6 +42,8 @@ function draftHortensiaStrap({
     .attr('data-text-class', 'center text-xs')
     .attr('class', 'lining dashed')
 
+  store.cutlist.addCut()
+
   // Complete?
   if (complete) {
     points.title = points.topMiddle.shiftFractionTowards(points.bottomMiddle, 0.25)

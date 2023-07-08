@@ -80,6 +80,9 @@ function draftHortensiaFrontpanel({
     text: 'attachment',
   })
 
+  store.cutlist.addCut()
+  store.cutlist.addCut({ material: 'lining' })
+
   // Complete?
   if (complete) {
     points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)

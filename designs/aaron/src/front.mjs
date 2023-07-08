@@ -5,6 +5,7 @@ import { dimensions } from './shared.mjs'
 export const front = {
   from: base,
   name: 'aaron.front',
+  measurements: ['hips'],
   options: {
     brianFitCollar: false,
     brianFitSleeve: false,

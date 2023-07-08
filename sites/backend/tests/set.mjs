@@ -10,7 +10,7 @@ export const setTests = async (chai, config, expect, store) => {
         neck: 420,
       },
       public: true,
-      unittest: true,
+      test: true,
       imperial: true,
     },
     key: {
@@ -22,7 +22,7 @@ export const setTests = async (chai, config, expect, store) => {
       },
       public: false,
       img: cat,
-      unittest: true,
+      test: true,
       imperial: false,
     },
   }
@@ -56,8 +56,7 @@ export const setTests = async (chai, config, expect, store) => {
             expect(res.status).to.equal(201)
             expect(res.body.result).to.equal(`success`)
             for (const [key, val] of Object.entries(data[auth])) {
-              if (!['measies', 'img', 'unittest'].includes(key))
-                expect(res.body.set[key]).to.equal(val)
+              if (!['measies', 'img', 'test'].includes(key)) expect(res.body.set[key]).to.equal(val)
             }
             store.set[auth] = res.body.set
             done()

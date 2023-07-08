@@ -111,6 +111,35 @@ Path.prototype.asPathstring = function () {
   return d
 }
 
+// Quick helper to return a drawing op as renderProps
+const opAsrenderProp = (op) => {
+  const props = { type: op.type }
+  for (const p of ['from', 'to', 'cp1', 'cp2']) {
+    if (op[p]) props[p] = op[p].asRenderProps()
+  }
+
+  return props
+}
+
+/**
+ * Returns a path as an object suitable for inclusion in renderprops
+ *
+ * @return {object} path - A plain object representing the path
+ */
+Path.prototype.asRenderProps = function () {
+  return {
+    attributes: this.attributes.asRenderProps(),
+    hidden: this.hidden,
+    name: this.name,
+    ops: this.ops.map((op) => opAsrenderProp(op)),
+    topLeft: this.topLeft,
+    bottomRight: this.bottomRight,
+    width: this.bottomRight.x - this.topLeft.x,
+    height: this.bottomRight.y - this.topLeft.y,
+    d: this.asPathstring(),
+  }
+}
+
 /**
  * Chainable way to add an attribute
  *
@@ -187,7 +216,7 @@ Path.prototype.clean = function () {
       if (!(op.cp1.sitsRoughlyOn(cur) && op.cp2.sitsRoughlyOn(cur) && op.to.sitsRoughlyOn(cur)))
         ops.push(ops)
     }
-    cur = op?.to
+    cur = op.to
   }
 
   if (ops.length < this.ops.length) this.ops = ops

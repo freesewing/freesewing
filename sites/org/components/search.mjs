@@ -10,9 +10,9 @@ import {
   connectHighlight,
   connectSearchBox,
 } from 'react-instantsearch-dom'
-import { freeSewingConfig } from 'site/freesewing.config.mjs'
+import { siteConfig } from 'site/site.config.mjs'
 
-const searchClient = algoliasearch(freeSewingConfig.algolia.app, freeSewingConfig.algolia.key)
+const searchClient = algoliasearch(siteConfig.algolia.app, siteConfig.algolia.key)
 
 const Hits = (props) => {
   // When we hit enter in the text field, we want to navigate to the result
@@ -206,7 +206,7 @@ export const Search = (props) => {
   }
 
   return (
-    <InstantSearch indexName={freeSewingConfig.algolia.index} searchClient={searchClient}>
+    <InstantSearch indexName={siteConfig.algolia.index} searchClient={searchClient}>
       <CustomSearchBox {...stateProps} />
     </InstantSearch>
   )

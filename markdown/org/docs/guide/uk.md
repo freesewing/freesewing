@@ -17,7 +17,7 @@ Reading this guide will take about 10 minutes of your time now, to save you a bu
 
 Sounds good? Then let's dive right in:
 
-<ReadMore list />
+<ReadMore />
 
 <Tip>
 

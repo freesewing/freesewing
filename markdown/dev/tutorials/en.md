@@ -5,7 +5,8 @@ order: zaa
 
 You can find a list of all FreeSewing tutorials below:
 
-<ReadMore recurse />
+## Main sections
+<ReadMore  />
 
 <Related>
 
@@ -16,3 +17,7 @@ Tutorials are lessons that take you by the hand through a series of steps to com
 For more details, refer to [How we structure our documentation](/guides/docs).
 
 </Related>
+
+## Full list
+<ReadMore recurse />
+

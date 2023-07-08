@@ -8,7 +8,7 @@ import prompts from 'prompts'
 import { oraPromise } from 'ora'
 import { execa } from 'execa'
 import axios from 'axios'
-import { fileURLToPath } from 'url'
+import { fileURLToPath, pathToFileURL } from 'url'
 
 // Current working directory
 let filename
@@ -49,8 +49,9 @@ export const checkNodeVersion = () => {
 
 // Helper method to validate the design name
 const validateDesignName = (name) => {
-  if (/^([a-z]+)$/.test(name)) return true
-  else return ' 🙈 Please use only [a-z], no spaces, no capitals, no nothing 🤷'
+  if (/^([a-z][a-z0-9_]*)$/.test(name)) return true
+  else
+    return ' 🙈 Please use only lowercase letters, digits, or underscores. Names must start with a lowercase letter. 🤷'
 }
 
 // Gets user input to figure out what to do
@@ -106,7 +107,7 @@ export const getChoices = async () => {
             await prompts({
               type: 'text',
               name: 'name',
-              message: 'What name would you like the design to have? 🏷️ ([a-z] only)',
+              message: 'What name would you like the design to have? 🏷️ ([a-z0-9_] only)',
               validate: validateDesignName,
             })
           ).name
@@ -438,7 +439,7 @@ export const createEnvironment = async (choices) => {
     shared: (await rdir(config.source.shared)).map((file) => relative(config.source.shared, file)),
   }
 
-  config.templateData = await import(config.source.templateData)
+  config.templateData = await import(pathToFileURL(config.source.templateData))
   // does this base have parts with a lot of attending config?
   config.complexParts = typeof config.templateData.parts[0] === 'object'
 

@@ -35,7 +35,7 @@ jobs:
       - name: Reconfigure
         run: node --experimental-json-modules --no-warnings ./scripts/reconfigure.mjs
       - name: Bootstrap
-        run: npx lerna bootstrap
+        run: yarn install
       - name: Commit Changes
         run: |
           git add .

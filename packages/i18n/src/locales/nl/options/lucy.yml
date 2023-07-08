@@ -1,8 +1,8 @@
 width:
-  title: Width
+  title: Breedte
   description: Width of the pocket
 length:
-  title: Length
+  title: Lengte
   description: Length (depth) of the pocket
 edge:
   title: Taper

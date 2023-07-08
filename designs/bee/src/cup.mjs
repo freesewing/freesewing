@@ -8,6 +8,7 @@ export const cup = {
     inherited: true,
   },
   after: neckTie,
+  measurements: ['bustPointToUnderbust'],
   options: {
     topDepth: { pct: 54, min: 50, max: 80, menu: 'fit' },
     bottomCupDepth: { pct: 8, min: 0, max: 20, menu: 'fit' },

@@ -1005,7 +1005,17 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "trentonTrama",
+      "name": "Trent Trama",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41126812?v=4",
+      "profile": "https://github.com/trentonTrama",
+      "contributions": [
+        "code"
+      ]
     }
   ],
-  "skipCi": true
+  "skipCi": true,
+  "commitType": "docs"
 }

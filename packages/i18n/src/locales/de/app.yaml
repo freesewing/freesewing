@@ -70,7 +70,7 @@ dolls: Puppen
 download: Herunterladen
 draft: Entwurf
 draftPattern: '{pattern} erstellen'
-testPattern: 'Test {pattern}'
+testPattern: '{pattern} testen'
 draftPatternForModel: 'Entwerfe {pattern} für {model}'
 drafts: Entwürfe
 draftSettings: Entwurfseinstellungen

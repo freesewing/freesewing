@@ -1,22 +1,53 @@
 import { log } from '../utils/log.mjs'
+import { capitalize } from '../utils/index.mjs'
 import { setPatternAvatar } from '../utils/sanity.mjs'
+import yaml from 'js-yaml'
+import { SetModel } from './set.mjs'
 
 export function PatternModel(tools) {
   this.config = tools.config
   this.prisma = tools.prisma
   this.decrypt = tools.decrypt
   this.encrypt = tools.encrypt
+  this.rbac = tools.rbac
   this.encryptedFields = ['data', 'img', 'name', 'notes', 'settings']
   this.clear = {} // For holding decrypted data
+  this.Set = new SetModel(tools)
 
   return this
 }
 
+/*
+ * Returns a list of sets for the user making the API call
+ */
+PatternModel.prototype.userPatterns = async function (uid) {
+  if (!uid) return false
+  let patterns
+  try {
+    patterns = await this.prisma.pattern.findMany({
+      where: { userId: uid },
+      include: {
+        set: true,
+        cset: true,
+      },
+    })
+  } catch (err) {
+    log.warn(`Failed to search patterns for user ${uid}: ${err}`)
+  }
+  const list = []
+  for (const pattern of patterns) list.push(this.revealPattern(pattern))
+
+  return list
+}
+
 PatternModel.prototype.guardedCreate = async function ({ body, user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.user(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (Object.keys(body).length < 2) return this.setResponse(400, 'postBodyMissing')
-  if (!body.set) return this.setResponse(400, 'setMissing')
-  if (typeof body.set !== 'number') return this.setResponse(400, 'setNotNumeric')
+  if (!body.set && !body.cset) return this.setResponse(400, 'setOrCsetMissing')
+  if (typeof body.set !== 'undefined' && typeof body.set !== 'number')
+    return this.setResponse(400, 'setNotNumeric')
+  if (typeof body.cset !== 'undefined' && typeof body.cset !== 'number')
+    return this.setResponse(400, 'csetNotNumeric')
   if (typeof body.settings !== 'object') return this.setResponse(400, 'settingsNotAnObject')
   if (body.data && typeof body.data !== 'object') return this.setResponse(400, 'dataNotAnObject')
   if (!body.design && !body.data?.design) return this.setResponse(400, 'designMissing')
@@ -25,9 +56,13 @@ PatternModel.prototype.guardedCreate = async function ({ body, user }) {
   // Prepare data
   const data = {
     design: body.design,
-    setId: body.set,
     settings: body.settings,
   }
+  if (data.settings.measurements) delete data.settings.measurements
+  if (body.set) data.setId = body.set
+  else if (body.cset) data.csetId = body.cset
+  else return this.setResponse(400, 'setOrCsetMissing')
+
   // Data (will be encrypted, so always set _some_ value)
   if (typeof body.data === 'object') data.data = body.data
   else data.data = {}
@@ -50,7 +85,7 @@ PatternModel.prototype.guardedCreate = async function ({ body, user }) {
   const img =
     this.config.use.sanity &&
     typeof body.img === 'string' &&
-    (!body.unittest || (body.unittest && this.config.use.tests?.sanity))
+    (!body.test || (body.test && this.config.use.tests?.sanity))
       ? await setPatternAvatar(this.record.id, body.img)
       : false
 
@@ -78,7 +113,13 @@ PatternModel.prototype.unguardedCreate = async function (data) {
  */
 PatternModel.prototype.read = async function (where) {
   try {
-    this.record = await this.prisma.pattern.findUnique({ where })
+    this.record = await this.prisma.pattern.findUnique({
+      where,
+      include: {
+        set: true,
+        cset: true,
+      },
+    })
   } catch (err) {
     log.warn({ err, where }, 'Could not read pattern')
   }
@@ -89,17 +130,37 @@ PatternModel.prototype.read = async function (where) {
 }
 
 /*
+ * Loads a pattern from the database but only if it's public
+ *
+ * Stores result in this.record
+ */
+PatternModel.prototype.publicRead = async function ({ params }) {
+  await this.read({ id: parseInt(params.id) })
+  if (this.record.public !== true) {
+    // Note that we return 404
+    // because we don't want to reveal that a non-public pattern exists.
+    return this.setResponse(404)
+  }
+
+  return this.setResponse(200, false, this.asPublicPattern(), true)
+}
+
+/*
  * Loads a pattern from the database based on the where clause you pass it
  * In addition prepares it for returning the pattern data
  *
  * Stores result in this.record
  */
 PatternModel.prototype.guardedRead = async function ({ params, user }) {
-  if (user.level < 1) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
+  if (typeof params.id !== 'undefined' && !Number(params.id))
+    return this.setResponse(403, 'idNotNumeric')
 
   await this.read({ id: parseInt(params.id) })
-  if (this.record.userId !== user.uid && user.level < 5) {
+  if (!this.record) return this.setResponse(404, 'notFound')
+
+  if (this.record.userId !== user.uid && !this.rbac.bughunter(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
 
@@ -116,11 +177,11 @@ PatternModel.prototype.guardedRead = async function ({ params, user }) {
  * Stores result in this.record
  */
 PatternModel.prototype.guardedClone = async function ({ params, user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   await this.read({ id: parseInt(params.id) })
-  if (this.record.userId !== user.uid && !this.record.public && user.level < 5) {
+  if (this.record.userId !== user.uid && !this.record.public && !this.rbac.support(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
 
@@ -149,6 +210,18 @@ PatternModel.prototype.reveal = async function () {
     for (const field of this.encryptedFields) {
       this.clear[field] = this.decrypt(this.record[field])
     }
+  }
+
+  // Parse JSON content
+  if (this.record?.cset) {
+    for (const lang of this.config.languages) {
+      const key = `tags${capitalize(lang)}`
+      if (this.record.cset[key]) this.record.cset[key] = JSON.parse(this.record.cset[key])
+    }
+    if (this.record.cset.measies) this.record.cset.measies = JSON.parse(this.record.cset.measies)
+  }
+  if (this.record?.set) {
+    this.record.set = this.Set.revealSet(this.record.set)
   }
 
   return this
@@ -188,6 +261,10 @@ PatternModel.prototype.unguardedUpdate = async function (data) {
     this.record = await this.prisma.pattern.update({
       where: { id: this.record.id },
       data,
+      include: {
+        set: true,
+        cset: true,
+      },
     })
   } catch (err) {
     log.warn(err, 'Could not update pattern record')
@@ -204,10 +281,10 @@ PatternModel.prototype.unguardedUpdate = async function (data) {
  * so we can't be certain it's safe
  */
 PatternModel.prototype.guardedUpdate = async function ({ params, body, user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
   await this.read({ id: parseInt(params.id) })
-  if (this.record.userId !== user.uid && user.level < 8) {
+  if (this.record.userId !== user.uid && !this.rbac.admin(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
   const data = {}
@@ -237,7 +314,7 @@ PatternModel.prototype.guardedUpdate = async function ({ params, body, user }) {
  * Removes the pattern - No questions asked
  */
 PatternModel.prototype.unguardedDelete = async function () {
-  await this.prisma.pattern.delete({ here: { id: this.record.id } })
+  await this.prisma.pattern.delete({ where: { id: this.record.id } })
   this.record = null
   this.clear = null
 
@@ -248,11 +325,11 @@ PatternModel.prototype.unguardedDelete = async function () {
  * Removes the pattern - Checks permissions
  */
 PatternModel.prototype.guardedDelete = async function ({ params, user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   await this.read({ id: parseInt(params.id) })
-  if (this.record.userId !== user.uid && user.level < 8) {
+  if (this.record.userId !== user.uid && !this.rbac.admin(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
 
@@ -272,17 +349,42 @@ PatternModel.prototype.asPattern = function () {
 }
 
 /*
+ * Helper method to decrypt data from a non-instantiated pattern
+ */
+PatternModel.prototype.revealPattern = function (pattern) {
+  const clear = {}
+  for (const field of this.encryptedFields) {
+    try {
+      clear[field] = this.decrypt(pattern[field])
+    } catch (err) {
+      //console.log(err)
+    }
+  }
+  if (pattern.set) delete pattern.set.measies
+  if (pattern.cset) delete pattern.cset.measies
+
+  return { ...pattern, ...clear }
+}
+
+/*
  * Helper method to set the response code, result, and body
  *
  * Will be used by this.sendResponse()
  */
-PatternModel.prototype.setResponse = function (status = 200, error = false, data = {}) {
+PatternModel.prototype.setResponse = function (
+  status = 200,
+  error = false,
+  data = {},
+  rawData = false
+) {
   this.response = {
     status,
-    body: {
-      result: 'success',
-      ...data,
-    },
+    body: rawData
+      ? data
+      : {
+          result: 'success',
+          ...data,
+        },
   }
   if (status > 201) {
     this.response.body.error = error
@@ -298,4 +400,26 @@ PatternModel.prototype.setResponse = function (status = 200, error = false, data
  */
 PatternModel.prototype.sendResponse = async function (res) {
   return res.status(this.response.status).send(this.response.body)
+}
+
+/*
+ * Helper method to send response as YAML
+ */
+PatternModel.prototype.sendYamlResponse = async function (res) {
+  return res.status(this.response.status).type('yaml').send(yaml.dump(this.response.body))
+}
+
+/*
+ * Returns record data fit for public publishing
+ */
+PatternModel.prototype.asPublicPattern = function () {
+  const data = {
+    author: 'FreeSewing.org',
+    type: 'pattern',
+    ...this.asPattern(),
+  }
+  delete data.userId
+  delete data.public
+
+  return data
 }

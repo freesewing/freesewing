@@ -1,5 +1,5 @@
 import { adult, doll, giant } from '@freesewing/models'
-import { getFamily, getShortName } from './config.mjs'
+import { getShortName, isUtilityDesign } from './config.mjs'
 import chai from 'chai'
 import { timingPlugin } from '@freesewing/plugin-timing'
 
@@ -15,7 +15,6 @@ const ciTimeout = 10000
  */
 export const testPatternDrafting = (Pattern, log = false) => {
   const design = getShortName(Pattern.designConfig.data.name)
-  const family = getFamily(design)
 
   // Helper method to try/catch pattern drafting
   const doesItDraftAndRender = (pattern, log = false) => {
@@ -38,7 +37,7 @@ export const testPatternDrafting = (Pattern, log = false) => {
   /*
    * Draft pattern for different models
    */
-  if (family !== 'utilities') {
+  if (!isUtilityDesign(design)) {
     describe('Draft for humans:', function () {
       this.timeout(ciTimeout)
       for (const type of ['cisFemale', 'cisMale']) {

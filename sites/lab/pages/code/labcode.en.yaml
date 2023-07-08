@@ -1,0 +1,4 @@
+monorepo: All of the FreeSewing source code is available in our monorepo on GitHub
+labrepo: In addition, this particular lab instance has additional source code hosted at
+lab: Source code specific to this lab
+fscode: "FreeSewing's source code"

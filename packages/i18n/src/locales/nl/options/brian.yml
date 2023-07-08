@@ -21,8 +21,8 @@ cuffEase:
   title: Overwijdte manchet
   description: De hoeveelheid overwijdte aan je pols.
 draftForHighBust:
-  title: Draft for high bust
-  description: Draft the pattern for the high bust measurement (if available) rather than the (full) chest. This will result in a more fitted garment for people with breasts.
+  title: Teken voor hoge buste
+  description: Teken het patroon voor de hoge bustemaat (indien beschikbaar) in plaats van de volle borstomtrek. Dit heeft een aansluitender kledingstuk als resultaat voor mensen met borsten.
 frontArmholeDeeper:
   title: Extra uitsnijding armsgat vooraan
   description: Hoeveel dieper moet het armsgat vooraan zijn uitgesneden, in vergelijking met het armsgat achteraan.

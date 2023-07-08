@@ -4,6 +4,7 @@
   "models": "Body measurements data for a range of default sizes",
   "new-design": "Initializer package for a new FreeSewing design: npx @freesewing/new-design",
   "prettier-config": "FreeSewing's shared configuration for prettier",
+  "react-components": "React components by/for FreeSewing",
   "snapseries": "A series of common sizes for elastics and other series to be used with snapped percentage options",
   "rehype-jargon": "A Rehype plugin for jargon terms",
   "rehype-highlight-lines": "A Rehype plugin to add highlighted lines to code blocks"

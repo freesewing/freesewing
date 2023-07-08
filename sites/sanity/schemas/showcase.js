@@ -1,7 +1,7 @@
 export const showcaseSchemaBuilder = (lang) => ({
   name: `showcase${lang}`,
   type: 'document',
-	title: `Showcase ${lang.toUpperCase()}`,
+  title: `Showcase ${lang.toUpperCase()}`,
   fields: [
     {
       name: 'title',
@@ -14,7 +14,7 @@ export const showcaseSchemaBuilder = (lang) => ({
       title: 'Slug',
       options: {
         source: 'title',
-      }
+      },
     },
     {
       name: 'date',
@@ -35,7 +35,7 @@ export const showcaseSchemaBuilder = (lang) => ({
       name: 'image',
       title: 'Image',
       type: 'array',
-      of: [{type: 'image'}]
+      of: [{ type: 'image' }],
     },
     {
       name: 'caption',
@@ -45,7 +45,7 @@ export const showcaseSchemaBuilder = (lang) => ({
     {
       name: 'maker',
       title: 'Maker',
-      type: 'string',
-    }
-  ]
+      type: 'number',
+    },
+  ],
 })

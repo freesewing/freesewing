@@ -7,22 +7,22 @@
 @layer components {
   /* Applied styles for common HTML tags */
   h1 {
-    @apply text-base-content text-4xl py-5 font-bold lg:text-6xl font-light;
+    @apply text-base-content text-4xl py-5 font-bold lg:text-6xl font-black;
   }
   h2 {
-    @apply text-base-content text-3xl py-4 pb-2 mb-1 font-light lg:text-4xl border-b-2 border-base-200;
+    @apply text-base-content text-3xl pt-4 pb-3 m-0 font-black lg:text-4xl;
   }
   h3 {
-    @apply text-base-content text-2xl py-3 font-light lg:text-3xl;
+    @apply text-base-content text-2xl pt-3 pb-2 m-0 font-black lg:text-3xl;
   }
   h4 {
-    @apply text-base-content text-xl py-2 font-medium lg:text-2xl;
+    @apply text-base-content text-xl pt-2 pb-1 m-0 font-black lg:text-2xl;
   }
   h5 {
-    @apply text-base-content text-lg py-1 font-medium lg:text-xl;
+    @apply text-base-content text-lg py-1 m-0 font-black lg:text-xl;
   }
   h6 {
-    @apply text-base-content text-base font-medium lg:text-lg;
+    @apply text-base-content text-base py-0 m-0 font-black lg:text-lg;
   }
   p {
     @apply text-base-content my-1 py-2 text-base leading-6;
@@ -34,6 +34,17 @@
   /* Dropdowns */
   .navdrop {
     max-height: 80vh;
+  }
+
+  /* Keep spacing after headings between p and non-p consistent */
+  h1 + p,
+  h2 + p,
+  h3 + p,
+  h4 + p,
+  h5 + p,
+  h6 + p {
+    padding-top: 0;
+    margin-top: 0;
   }
 
   /* mdx styles */
@@ -124,48 +135,64 @@
   .fs-stroke-note {
     stroke: var(--pattern-note);
   }
+  svg.freesewing.pattern rect.fabric,
+  svg.freesewing.pattern rect.stroke-fabric,
   svg.freesewing.pattern path.fabric,
   svg.freesewing.pattern path.stroke-fabric,
   svg.freesewing.pattern circle.fabric,
   svg.freesewing.pattern circle.stroke-fabric {
     @apply fs-stroke-fabric;
   }
+  svg.freesewing.pattern rect.lining,
+  svg.freesewing.pattern rect.stroke-lining,
   svg.freesewing.pattern path.lining,
   svg.freesewing.pattern path.stroke-lining,
   svg.freesewing.pattern circle.lining,
   svg.freesewing.pattern circle.stroke-lining {
     @apply fs-stroke-lining;
   }
+  svg.freesewing.pattern rect.interfacing,
+  svg.freesewing.pattern rect.stroke-interfacing,
   svg.freesewing.pattern path.interfacing,
   svg.freesewing.pattern path.stroke-interfacing,
   svg.freesewing.pattern circle.interfacing,
   svg.freesewing.pattern circle.stroke-interfacing {
     @apply fs-stroke-interfacing;
   }
+  svg.freesewing.pattern rect.canvas,
+  svg.freesewing.pattern rect.stroke-canvas,
   svg.freesewing.pattern path.canvas,
   svg.freesewing.pattern path.stroke-canvas,
   svg.freesewing.pattern circle.canvas,
   svg.freesewing.pattern circle.stroke-canvas {
     @apply fs-stroke-canvas;
   }
+  svg.freesewing.pattern rect.various,
+  svg.freesewing.pattern rect.stroke-various,
   svg.freesewing.pattern path.various,
   svg.freesewing.pattern path.stroke-various,
   svg.freesewing.pattern circle.various,
   svg.freesewing.pattern circle.stroke-various {
     @apply fs-stroke-various;
   }
+  svg.freesewing.pattern rect.mark,
+  svg.freesewing.pattern rect.stroke-mark,
   svg.freesewing.pattern path.mark,
   svg.freesewing.pattern path.stroke-mark,
   svg.freesewing.pattern circle.mark,
   svg.freesewing.pattern circle.stroke-mark {
     @apply fs-stroke-mark;
   }
+  svg.freesewing.pattern rect.contrast,
+  svg.freesewing.pattern rect.stroke-contrast,
   svg.freesewing.pattern path.contrast,
   svg.freesewing.pattern path.stroke-contrast,
   svg.freesewing.pattern circle.contrast,
   svg.freesewing.pattern circle.stroke-contrast {
     @apply fs-stroke-contrast;
   }
+  svg.freesewing.pattern rect.note,
+  svg.freesewing.pattern rect.stroke-note,
   svg.freesewing.pattern path.note,
   svg.freesewing.pattern path.stroke-note,
   svg.freesewing.pattern circle.note,
@@ -196,193 +223,61 @@
   .fs-fill-note {
     fill: var(--pattern-note);
   }
+  svg.freesewing.pattern rect.fill-fabric,
   svg.freesewing.pattern path.fill-fabric,
   svg.freesewing.pattern text.fill-fabric,
   svg.freesewing.pattern tspan.fill-fabric,
   svg.freesewing.pattern circle.fill-fabric {
     @apply fs-fill-fabric;
   }
+  svg.freesewing.pattern rect.fill-lining,
   svg.freesewing.pattern text.fill-lining,
   svg.freesewing.pattern tspan.fill-lining,
   svg.freesewing.pattern path.fill-lining,
   svg.freesewing.pattern circle.fill-lining {
     @apply fs-fill-lining;
   }
+  svg.freesewing.pattern rect.fill-interfacing,
   svg.freesewing.pattern text.fill-interfacing,
   svg.freesewing.pattern tspan.fill-interfacing,
   svg.freesewing.pattern path.fill-interfacing,
   svg.freesewing.pattern circle.fill-interfacing {
     @apply fs-fill-interfacing;
   }
+  svg.freesewing.pattern rect.fill-canvas,
   svg.freesewing.pattern text.fill-canvas,
   svg.freesewing.pattern tspan.fill-canvas,
   svg.freesewing.pattern path.fill-canvas,
   svg.freesewing.pattern circle.fill-canvas {
     @apply fs-fill-canvas;
   }
+  svg.freesewing.pattern rect.fill-various,
   svg.freesewing.pattern text.fill-various,
   svg.freesewing.pattern tspan.fill-various,
   svg.freesewing.pattern path.fill-various,
   svg.freesewing.pattern circle.fill-various {
     @apply fs-fill-various;
   }
+  svg.freesewing.pattern rect.fill-mark,
   svg.freesewing.pattern path.fill-mark,
   svg.freesewing.pattern text.fill-mark,
   svg.freesewing.pattern tspan.fill-mark,
   svg.freesewing.pattern circle.fill-mark {
     @apply fs-fill-mark;
   }
+  svg.freesewing.pattern rect.fill-contrast,
   svg.freesewing.pattern text.fill-contrast,
   svg.freesewing.pattern tspan.fill-contrast,
   svg.freesewing.pattern path.fill-contrast,
   svg.freesewing.pattern circle.fill-contrast {
     @apply fs-fill-contrast;
   }
+  svg.freesewing.pattern rect.fill-note,
   svg.freesewing.pattern text.fill-note,
   svg.freesewing.pattern tspan.fill-note,
   svg.freesewing.pattern path.fill-note,
   svg.freesewing.pattern circle.fill-note {
     @apply fs-fill-note;
-  }
-  .fs-stroke-color-0 {
-    stroke: var(--pattern-color-0);
-  }
-  .fs-stroke-color-1 {
-    stroke: var(--pattern-color-1);
-  }
-  .fs-stroke-color-2 {
-    stroke: var(--pattern-color-2);
-  }
-  .fs-stroke-color-3 {
-    stroke: var(--pattern-color-3);
-  }
-  .fs-stroke-color-4 {
-    stroke: var(--pattern-color-4);
-  }
-  .fs-stroke-color-5 {
-    stroke: var(--pattern-color-5);
-  }
-  .fs-stroke-color-6 {
-    stroke: var(--pattern-color-6);
-  }
-  .fs-stroke-color-7 {
-    stroke: var(--pattern-color-7);
-  }
-  .fs-stroke-color-8 {
-    stroke: var(--pattern-color-8);
-  }
-  .fs-stroke-color-9 {
-    stroke: var(--pattern-color-9);
-  }
-  svg.freesewing.pattern circle.stroke-color-0,
-  svg.freesewing.pattern path.stroke-color-0 {
-    @apply fs-stroke-color-0;
-  }
-  svg.freesewing.pattern circle.stroke-color-1,
-  svg.freesewing.pattern path.stroke-color-1 {
-    @apply fs-stroke-color-1;
-  }
-  svg.freesewing.pattern circle.stroke-color-2,
-  svg.freesewing.pattern path.stroke-color-2 {
-    @apply fs-stroke-color-2;
-  }
-  svg.freesewing.pattern circle.stroke-color-3,
-  svg.freesewing.pattern path.stroke-color-3 {
-    @apply fs-stroke-color-3;
-  }
-  svg.freesewing.pattern circle.stroke-color-4,
-  svg.freesewing.pattern path.stroke-color-4 {
-    @apply fs-stroke-color-4;
-  }
-  svg.freesewing.pattern circle.stroke-color-5,
-  svg.freesewing.pattern path.stroke-color-5 {
-    @apply fs-stroke-color-5;
-  }
-  svg.freesewing.pattern circle.stroke-color-6,
-  svg.freesewing.pattern path.stroke-color-6 {
-    @apply fs-stroke-color-6;
-  }
-  svg.freesewing.pattern circle.stroke-color-7,
-  svg.freesewing.pattern path.stroke-color-7 {
-    @apply fs-stroke-color-7;
-  }
-  svg.freesewing.pattern circle.stroke-color-8,
-  svg.freesewing.pattern path.stroke-color-8 {
-    @apply fs-stroke-color-8;
-  }
-  svg.freesewing.pattern circle.stroke-color-9,
-  svg.freesewing.pattern path.stroke-color-9 {
-    @apply fs-stroke-color-9;
-  }
-  .fs-fill-color-0 {
-    fill: var(--pattern-color-0);
-  }
-  .fs-fill-color-1 {
-    fill: var(--pattern-color-1);
-  }
-  .fs-fill-color-2 {
-    fill: var(--pattern-color-2);
-  }
-  .fs-fill-color-3 {
-    fill: var(--pattern-color-3);
-  }
-  .fs-fill-color-4 {
-    fill: var(--pattern-color-4);
-  }
-  .fs-fill-color-5 {
-    fill: var(--pattern-color-5);
-  }
-  .fs-fill-color-6 {
-    fill: var(--pattern-color-6);
-  }
-  .fs-fill-color-7 {
-    fill: var(--pattern-color-7);
-  }
-  .fs-fill-color-8 {
-    fill: var(--pattern-color-8);
-  }
-  .fs-fill-color-9 {
-    fill: var(--pattern-color-9);
-  }
-  svg.freesewing.pattern circle.fill-color-0,
-  svg.freesewing.pattern path.fill-color-0 {
-    @apply fs-fill-color-0;
-  }
-  svg.freesewing.pattern circle.fill-color-1,
-  svg.freesewing.pattern path.fill-color-1 {
-    @apply fs-fill-color-1;
-  }
-  svg.freesewing.pattern circle.fill-color-2,
-  svg.freesewing.pattern path.fill-color-2 {
-    @apply fs-fill-color-2;
-  }
-  svg.freesewing.pattern circle.fill-color-3,
-  svg.freesewing.pattern path.fill-color-3 {
-    @apply fs-fill-color-3;
-  }
-  svg.freesewing.pattern circle.fill-color-4,
-  svg.freesewing.pattern path.fill-color-4 {
-    @apply fs-fill-color-4;
-  }
-  svg.freesewing.pattern circle.fill-color-5,
-  svg.freesewing.pattern path.fill-color-5 {
-    @apply fs-fill-color-5;
-  }
-  svg.freesewing.pattern circle.fill-color-6,
-  svg.freesewing.pattern path.fill-color-6 {
-    @apply fs-fill-color-6;
-  }
-  svg.freesewing.pattern circle.fill-color-7,
-  svg.freesewing.pattern path.fill-color-7 {
-    @apply fs-fill-color-7;
-  }
-  svg.freesewing.pattern circle.fill-color-8,
-  svg.freesewing.pattern path.fill-color-8 {
-    @apply fs-fill-color-8;
-  }
-  svg.freesewing.pattern circle.fill-color-9,
-  svg.freesewing.pattern path.fill-color-9 {
-    @apply fs-fill-color-9;
   }
 
   .fs-fill-bg {
@@ -403,8 +298,139 @@
   .fill-opacity-50 {
     fill-opacity: 0.5;
   }
+  .pulse-fill {
+    fill: currentColor;
+    animation: pulsefill 3s infinite;
+  }
+  .pulse-stroke {
+    stroke: currentColor;
+    animation: pulsestroke 3s infinite;
+  }
+  .stroko-0 {
+    stroke-opacity: 0;
+  }
+  .stroko-5 {
+    stroke-opacity: 0.05;
+  }
+  .stroko-10 {
+    stroke-opacity: 0.1;
+  }
+  .stroko-20 {
+    stroke-opacity: 0.2;
+  }
+  .stroko-30 {
+    stroke-opacity: 0.3;
+  }
+  .stroko-40 {
+    stroke-opacity: 0.4;
+  }
+  .stroko-50 {
+    stroke-opacity: 0.5;
+  }
+  .stroko-60 {
+    stroke-opacity: 0.6;
+  }
+  .stroko-70 {
+    stroke-opacity: 0.7;
+  }
+  .stroko-80 {
+    stroke-opacity: 0.8;
+  }
+  .stroko-90 {
+    stroke-opacity: 0.9;
+  }
+  .stroko-100 {
+    stroke-opacity: 1;
+  }
+  .filo-0 {
+    fill-opacity: 0;
+  }
+  .filo-5 {
+    fill-opacity: 0.05;
+  }
+  .filo-10 {
+    fill-opacity: 0.1;
+  }
+  .filo-20 {
+    fill-opacity: 0.2;
+  }
+  .filo-30 {
+    fill-opacity: 0.3;
+  }
+  .filo-40 {
+    fill-opacity: 0.4;
+  }
+  .filo-50 {
+    fill-opacity: 0.5;
+  }
+  .filo-60 {
+    fill-opacity: 0.6;
+  }
+  .filo-70 {
+    fill-opacity: 0.7;
+  }
+  .filo-80 {
+    fill-opacity: 0.8;
+  }
+  .filo-90 {
+    fill-opacity: 0.9;
+  }
+  .filo-100 {
+    fill-opacity: 1;
+  }
+
+  /*
+   * Deal with markdown formatting in pattern logs
+   */
+  .pattern-logs p {
+    @apply p-0 m-0 inline;
+  }
+  .pattern-logs a {
+    @apply text-secondary font-medium hover:underline hover:cursor-pointer hover:text-secondary-focus;
+  }
+  .pattern-logs code {
+    @apply px-1 rounded font-bold bg-neutral bg-opacity-10 font-mono;
+  }
 }
 
+@keyframes pulsefill {
+  0% {
+    fill-opacity: 0;
+  }
+  50% {
+    fill-opacity: 0.1;
+  }
+  100% {
+    fill-opacity: 0;
+  }
+}
+@keyframes pulsestroke {
+  0% {
+    stroke-opacity: 0;
+  }
+  50% {
+    stroke-opacity: 0.3;
+  }
+  100% {
+    stroke-opacity: 0;
+  }
+}
+
+.animate-bounce-right {
+  animation: bounceright 1s infinite;
+}
+
+@keyframes bounceright {
+  0%,
+  100% {
+    transform: translateX(-12.5%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateX(12.5%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
 /* Override DaisyUI button text color */
 .btn-info {
   color: var(--btn-info-content);
@@ -561,4 +587,11 @@ input[type='range']::-moz-range-track {
 }
 .range {
   border-radius: 1rem;
+}
+
+/*
+ * Smooth scrolling
+ */
+html {
+  scroll-behavior: smooth;
 }

@@ -46,7 +46,7 @@ export function Store(methods = []) {
 
   for (const [path, method] of methods) {
     if (avoid.indexOf(path) !== -1) {
-      this.log.warning(`You cannot overwrite store.${path}()`)
+      this.log.warning(`You cannot overwrite \`store.${path}()\``)
     } else set(this, path, method)
   }
 
@@ -66,9 +66,9 @@ export function Store(methods = []) {
 Store.prototype.extend = function (methods) {
   for (const [path, method] of methods) {
     if (avoid.indexOf(path) !== -1) {
-      this.log.warning(`You cannot overwrite store.${path}()`)
+      this.log.warning(`You cannot overwrite \`store.${path}()\``)
     } else {
-      this.log.info(`Extending store with ${path}`)
+      this.log.info(`Extending store with \`${path}\``)
       set(this, path, (...args) => method(this, ...args))
     }
   }

@@ -17,7 +17,7 @@ La lecture de ce tutoriel prendra environ 10 minutes aujourd'hui, vous économis
 
 Cela vous convient ? Alors approfondissons :
 
-<ReadMore list />
+<ReadMore />
 
 <Tip>
 

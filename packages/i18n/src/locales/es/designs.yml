@@ -1,0 +1,142 @@
+---
+aaron:
+  description: Aaron es una camiseta deportiva de tirantes.
+  title: Aaron, camiseta de tirantes
+albert:
+  description: Albert es un delantal.
+  title: Albert, delantal
+bee:
+  description: Bee el sujetador de un bikini
+  title: Bee, sujetador de bikini
+bella:
+  description: Bella es un patrón báse para personas con pechos.
+  title: Bella, patrón base de torso con pechos
+benjamin:
+  description: Benjamin es un patrón de pajarita con cuatro formas a elegir.
+  title: Benjamin, pajarita
+bent:
+  description: Este patrón base con mangas de dos partes es la base de nuestros patrones de chaqueta y abrigo.
+  title: Bent, patrón base de chaqueta
+bob:
+  description: This is the bib that you can create by following our design tutorial
+  title: Bob the bib
+breanna:
+  description: Breanna es un patrón base de torso para personas con pechos.
+  title: Breanna, patrón base de torso con pechos
+brian:
+  description: Brian es un patrón base para personas sin pechos.
+  title: Brian, patrón base de torso sin pechos
+bruce:
+  description: Bruce es un bóxer cerrado cómodo y elegante.
+  title: Bruce, calzoncillos bóxer
+carlita:
+  description: 'La versión para gente con pechos de nuestro abrigo Carlton, también conocido como el abrigo de Sherlock Holmes.'
+  title: Carlita, abrigo
+carlton:
+  description: 'Para un cosplay de Sherlock Holms, o simplemente un abrigo muy bonito.'
+  title: Carlton, abrigo
+cathrin:
+  description: Cathrin es un corset por debajo del pecho o faja.
+  title: Cathrin, corset
+charlie:
+  description: Charlie es un patrón de pantalón tipo chinos.
+  title: Charlie, chinos
+cornelius:
+  description: Cornelius son pantalones cortos de ciclista basados en el método de bocetado Keystone.
+  title: Cornelius, pantalones cortos de ciclista
+diana:
+  description: Diana es un top con un escote drapeado.
+  title: Diana, top de escote drapeado
+florent:
+  description: 'Florent es una boina, redondeada, con una pequeña visera rígida en en la parte de delante.'
+  title: Florent, boina
+florence:
+  description: 'Florence es una mascarilla.'
+  title: Máscara de Florencia
+hi:
+  description: The world's friendliest shark
+  title: Hi shark plush toy
+holmes:
+  description: 'Para un cosplay de Sherlock Holmes o simplemente un sombrero bonito.'
+  title: Holmes, sombrero deerstalker o cervadora
+hortensia:
+  description: 'Hortensia es un bolso de mano.'
+  title: Hortensia, bolso de mano
+huey:
+  description: Huey es una sudadera con capucha, cremallera y bolsillos delanteros opcionales.
+  title: Huey, sudadera con capucha
+hugo:
+  description: Hugo es una sudadera con capucha y manga raglán.
+  title: Hugo, sudadera con capucha
+jaeger:
+  description: Jaeger es una chaqueta de estilo deportivo con dos botones y bolsillos de parche.
+  title: Jaeger, chaqueta
+lucy:
+  description: Lucy is a historical pocket that you can tie around your waist.
+  title: Lucy tie-on pocket
+lunetius:
+  description: Lunetius es una lacerna, una capa histórica romana
+  title: Lunetius, lacerna
+noble:
+  description: Noble es un patrón base de torso con corte de príncipe o princesa
+  title: Noble, patrón base de torso
+octoplushy:
+  description: A multi-armed companion for next-level hugs
+  title: Octoplushy the octopus
+paco:
+  description: Paco son pantalones de verano casual pero con estilo.
+  title: Paco, pantalones largos
+penelope:
+  description: Penelope es una falda de tubo una gorra de lápiz con o sin apertura en la parte de atrás.
+  title: Penelope, falda de tubo
+sandy:
+  description: Sandy es un patrón de falda de vuelo circular adaptable.
+  title: Sandy, falda de vuelo
+shin:
+  description: Shin es un bañador de tipo pantalón corto.
+  title: Shin, bañador
+simon:
+  description: Simon es un patrón de camisa altamente adaptable para personas sin pechos.
+  title: Simon, camisa
+simone:
+  description: Simone es Simón, una patrón de camisa, adaptado para gente con pechos.
+  title: Simone, camisa
+sven:
+  description: Sven es una sudadera de líneas sencillas.
+  title: Sven, sudadera
+tamiko:
+  description: Tamiko es un top cero residuos (zero-waste).
+  title: Tamiko top
+teagan:
+  description: Teagan es un patrón de camiseta entallada.
+  title: Teagan, camiseta
+theo:
+  description: Theo es un patrón de pantalones clásico.
+  title: Pantalones Theo
+tiberius:
+  description: Tiberius es una túnica romana histórica.
+  title: Tiberius, túnica
+titan:
+  description: Titán es un patrón base de pantalón sin pinzas.
+  title: Titan, patrón base de pantalón
+trayvon:
+  description: Trayvon es una corbata que no repara en gastos para un resultado profesional.
+  title: Trayvon, corbata
+unice:
+  description: Unice is a variant of Ursula; A basic, highly-customizable underwear pattern.
+  title: Unice undies
+ursula:
+  description: Ursula es un patrón básico de braguitas altamente personalizable.
+  title: Ursula, braguitas
+wahid:
+  description: Wahid es el clásico chaleco entallado.
+  title: Wahid, chaleco
+walburga:
+  description: Walburga es un tabardo o sobreveste, una prenda histórica de la Europa medieval
+  title: Walburga, tabardo
+waralee:
+  description: Waralee son pantalones envolventes.
+  title: Pantalones de Waralee
+yuri:
+  description: Yuri es una elegante sudadera tipo cárdigan sin cremallera, basado en las sudaderas Huey y Hugo
+  title: Yuri, sudadera

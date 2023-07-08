@@ -1,6 +1,12 @@
+import tlds from 'tlds/index.json' assert { type: 'json' }
 import get from 'lodash.get'
 import set from 'lodash.set'
 import orderBy from 'lodash.orderby'
+import unset from 'lodash.unset'
+
+// Method that returns a unique ID when all you need is an ID
+// but you can't be certain you have one
+export const getId = (id) => (id ? id : Date.now())
 
 // Generic rounding method
 export const round = (val, decimals = 1) =>
@@ -15,10 +21,10 @@ export const roundMm = (val, units) => {
 // Formatting for imperial values
 export const formatImperial = (neg, inch, numo = false, deno = false, format = 'html') => {
   if (format === 'html') {
-    if (numo) return `<span>${neg}${inch}"&nbsp;<sup>${numo}</sup>/<sub>${deno}</sub></span>`
-    else return `<span>${neg}${inch}"</span>`
+    if (numo) return `${neg}${inch}&nbsp;<sup>${numo}</sup>/<sub>${deno}</sub>"`
+    else return `${neg}${inch}"`
   } else if (format === 'notags') {
-    if (numo) return `${neg}${inch}" ${numo}/${deno}`
+    if (numo) return `${neg}${inch} ${numo}/${deno}"`
     else return `${neg}${inch}"`
   } else {
     if (numo) return `${neg}${inch} ${numo}/${deno}`
@@ -48,7 +54,7 @@ export const formatFraction128 = (fraction, format = 'html') => {
     rest = fraction - inches
   }
   let fraction128 = Math.round(rest * 128)
-  if (fraction128 == 0) return formatImperial(negative, inches, false, false, format)
+  if (fraction128 == 0) return formatImperial(negative, inches || fraction128, false, false, format)
 
   for (let i = 1; i < 7; i++) {
     const numoFactor = Math.pow(2, 7 - i)
@@ -92,7 +98,8 @@ export const optionType = (option) => {
   return 'constant'
 }
 
-export const capitalize = (string) => string.charAt(0).toUpperCase() + string.slice(1)
+export const capitalize = (string) =>
+  typeof string === 'string' ? string.charAt(0).toUpperCase() + string.slice(1) : ''
 
 export const strapiImage = (
   img,
@@ -142,6 +149,10 @@ export const getCrumbs = (app, slug = false) => {
   return crumbs
 }
 
+/** convert a millimeter value to a Number value in the given units */
+export const measurementAsUnits = (mmValue, units = 'metric') =>
+  mmValue / (units === 'imperial' ? 25.4 : 10)
+
 export const measurementAsMm = (value, units = 'metric') => {
   if (typeof value === 'number') return value * (units === 'imperial' ? 25.4 : 10)
 
@@ -180,15 +191,20 @@ export const optionsMenuStructure = (options) => {
   if (!options) return options
   const sorted = {}
   for (const [name, option] of Object.entries(options)) {
-    sorted[name] = { ...option, name }
+    if (typeof option === 'object') sorted[name] = { ...option, name }
   }
 
   const menu = {}
   // Fixme: One day we should sort this based on the translation
   for (const option of orderBy(sorted, ['menu', 'name'], ['asc'])) {
     if (typeof option === 'object') {
-      if (option.menu) set(menu, `${option.menu}.${option.name}`, optionType(option))
-      else if (typeof option.menu === 'undefined') {
+      const oType = optionType(option)
+      option.dflt = option.dflt || option[oType]
+      if (oType === 'pct') option.dflt /= 100
+      if (option.menu) {
+        set(menu, `${option.menu}.isGroup`, true)
+        set(menu, `${option.menu}.${option.name}`, option)
+      } else if (typeof option.menu === 'undefined') {
         console.log(
           `Warning: Option ${option.name} does not have a menu config. ` +
             'Either configure it, or set it to false to hide this option.'
@@ -205,4 +221,86 @@ export const optionsMenuStructure = (options) => {
   }
 
   return menu
+}
+
+// Helper method to handle object updates
+export const objUpdate = (obj = {}, path, val = 'unset') => {
+  if (val === 'unset') {
+    if (Array.isArray(path) && Array.isArray(path[0])) {
+      for (const [ipath, ival = 'unset'] of path) {
+        if (ival === 'unset') unset(obj, ipath)
+        else set(obj, ipath, ival)
+      }
+    } else unset(obj, path)
+  } else set(obj, path, val)
+
+  return obj
+}
+
+/** Validates an email address for correct syntax */
+export const validateEmail = (email) => {
+  /* eslint-disable */
+  const re =
+    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  /* eslint-enable */
+  return re.test(email)
+}
+
+/** Validates the top level domain (TLT) for an email address */
+export const validateTld = (email) => {
+  const tld = email.split('@').pop().split('.').pop().toLowerCase()
+  if (tlds.indexOf(tld) === -1) return tld
+  else return true
+}
+
+export const nsMerge = (...args) => {
+  const ns = new Set()
+  for (const arg of args) {
+    if (typeof arg === 'string') ns.add(arg)
+    else if (Array.isArray(arg)) {
+      for (const el of nsMerge(...arg)) ns.add(el)
+    } else console.log('Unexpected namespect type:', { arg })
+  }
+
+  return [...ns]
+}
+
+export const shortDate = (locale = 'en', timestamp = false) => {
+  const options = {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+  }
+  const ts = timestamp ? new Date(timestamp) : new Date()
+
+  return ts.toLocaleDateString(locale, options)
+}
+
+export const scrollTo = (id) => {
+  // eslint-disable-next-line no-undef
+  if (document) document.getElementById(id).scrollIntoView()
+}
+
+const structureMeasurementsAsDesign = (measurements) => ({ patternConfig: { measurements } })
+
+export const designMeasurements = (Design, measies = {}, DesignIsMeasurementsPojo = false) => {
+  if (DesignIsMeasurementsPojo) Design = structureMeasurementsAsDesign(Design)
+  const measurements = {}
+  for (const m of Design.patternConfig?.measurements || []) measurements[m] = measies[m]
+  for (const m of Design.patternConfig?.optionalMeasurements || []) measurements[m] = measies[m]
+
+  return measurements
+}
+
+export const hasRequiredMeasurements = (Design, measies = {}, DesignIsMeasurementsPojo = false) => {
+  if (DesignIsMeasurementsPojo) Design = structureMeasurementsAsDesign(Design)
+  const missing = []
+  for (const m of Design.patternConfig?.measurements || []) {
+    if (typeof measies[m] === 'undefined') missing.push(m)
+  }
+
+  return [missing.length === 0, missing]
 }

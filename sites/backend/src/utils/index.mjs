@@ -1,6 +1,11 @@
 import { website } from '../config.mjs'
 
 /*
+ * Capitalizes a string
+ */
+export const capitalize = (string) => string.charAt(0).toUpperCase() + string.slice(1)
+
+/*
  * Cleans a string (typically email) for hashing
  */
 export const clean = (string) => {

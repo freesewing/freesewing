@@ -52,6 +52,43 @@ Snippet.prototype.clone = function () {
   return clone
 }
 
+/**
+ * Helper method to scale a snippet
+ *
+ * @param {number} scale - The scale to set
+ * @param {bool} overwrite - Whether to overwrite the existing scale or not (default is true)
+ *
+ * @return {Snippet} this - The snippet instance
+ */
+Snippet.prototype.scale = function (scale, overwrite = true) {
+  return this.attr('data-scale', scale, overwrite)
+}
+
+/**
+ * Helper method to rotate a snippet
+ *
+ * @param {number} rotation - The rotation to set
+ * @param {bool} overwrite - Whether to overwrite the existing rotation or not (default is true)
+ *
+ * @return {Snippet} this - The snippet instance
+ */
+Snippet.prototype.rotate = function (rotation, overwrite = true) {
+  return this.attr('data-rotate', rotation, overwrite)
+}
+
+/**
+ * Returns a snippet as an object suitable for inclusion in renderprops
+ *
+ * @return {object} snippet - A plain object representing the snippet
+ */
+Snippet.prototype.asRenderProps = function () {
+  return {
+    def: this.def,
+    anchor: this.anchor.asRenderProps(),
+    attributes: this.attributes.asRenderProps(),
+  }
+}
+
 //////////////////////////////////////////////
 //            PRIVATE METHODS               //
 //////////////////////////////////////////////

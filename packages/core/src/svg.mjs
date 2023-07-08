@@ -40,6 +40,21 @@ export function Svg(pattern) {
 //////////////////////////////////////////////
 
 /**
+ * Returns a svg as an object suitable for inclusion in renderprops
+ *
+ * @return {object} svg - A plain object representing the svg
+ */
+Svg.prototype.asRenderProps = function () {
+  return {
+    attributes: this.attributes.asRenderProps(),
+    layout: this.layout,
+    body: this.body,
+    style: this.style,
+    defs: this.defs.asRenderProps(),
+  }
+}
+
+/**
  * Renders a drafted Pattern as SVG
  *
  * @param {Pattern} pattern - The pattern to render

@@ -1,19 +1,19 @@
 ---
 headEase:
-  title: Head ease
-  description: The amount of ease around your head.
+  title: Overwijdte hoofd
+  description: De hoeveelheid overwijdte rond je hoofd.
 lengthRatio:
   title: Lengteratio
   description: Controls the length of the crown and ear flaps
 gores:
-  title: Number of gores
+  title: Aantal panden
   description: The number of gores used to construct the crown
 visorAngle:
-  title: Visor angle
+  title: Visor hoek
   description: The arc angle used to draft the inner curve of the visor
 visorWidth:
-  title: Visor width
-  description: Controls the width of the visor
+  title: Visor breedte
+  description: Bepaalt de breedte van de visor
 earLength:
   title: Ear flap length
   description: Controls the length of the ear flaps independently from the crown pieces
@@ -24,5 +24,5 @@ buttonhole:
   title: Buttonhole guide
   description: Adds a buttonhole to the ear flap to help you draft the buttonhole ear flap variant
 visorLength:
-  title: Visor length
-  description: Controls the length of the visor
+  title: Visor lengte
+  description: Bepaalt de lengte van de visor

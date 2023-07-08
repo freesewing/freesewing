@@ -24,6 +24,7 @@ export const bib = {
     snippets,
     Snippet,
     paperless,
+    store,
     part,
   }) => {
     // Head size
@@ -178,6 +179,8 @@ export const bib = {
     log.info(['biasTapeLength', { mm: paths.seam.length() }])
     log.info(['fabricHeight', { mm: points.tipRightTopStart.dy(points.bottomLeftEnd) }])
     log.info(['fabricWidth', { mm: points.bottomLeftStart.dx(points.bottomRightEnd) }])
+
+    store.cutlist.addCut({ cut: 1 })
 
     // Complete?
     if (complete) {

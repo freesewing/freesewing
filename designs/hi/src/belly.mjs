@@ -186,6 +186,15 @@ function draftHiBelly({
       .length()
   )
 
+  points.grainlineFrom = new Point(points.belly10.x, points.belly02.y * 0.7)
+  points.grainlineTo = new Point(points.belly05.x, points.belly02.y * 0.7)
+  macro('grainline', {
+    from: points.grainlineFrom,
+    to: points.grainlineTo,
+  })
+
+  store.cutlist.addCut({ cut: 1, material: 'color2Belly' })
+
   // Complete?
   if (complete) {
     points.bellyMouthSnippet1 = paths.mouthAttachment1
@@ -261,14 +270,6 @@ function draftHiBelly({
       dy: 0,
       spaces: 3,
       repeat: 3,
-    })
-
-    points.grainlineFrom = new Point(points.belly10.x, points.belly02.y * 0.7)
-    points.grainlineTo = new Point(points.belly05.x, points.belly02.y * 0.7)
-
-    macro('grainline', {
-      from: points.grainlineFrom,
-      to: points.grainlineTo,
     })
 
     if (paperless) {

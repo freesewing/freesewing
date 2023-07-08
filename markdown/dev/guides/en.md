@@ -5,7 +5,9 @@ order: zbb
 
 You can find a list of all FreeSewing guides below:
 
-<ReadMore recurse />
+## Main sections
+
+<ReadMore />
 
 <Related>
 
@@ -19,3 +21,8 @@ guides take more time to explain in-depth what is being done and why.
 For more details, refer to [How we structure our documentation](/guides/docs).
 
 </Related>
+
+## Full list
+
+<ReadMore recurse />
+

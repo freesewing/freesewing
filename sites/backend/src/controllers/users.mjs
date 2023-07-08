@@ -29,14 +29,40 @@ UsersController.prototype.confirm = async (req, res, tools) => {
 }
 
 /*
- * Login (with username and password)
+ * Sign in (with username and password)
  *
- * This is the endpoint that provides traditional username/password login
+ * This is the endpoint that provides traditional username/password sign in
  * See: https://freesewing.dev/reference/backend/api
  */
-UsersController.prototype.login = async function (req, res, tools) {
+UsersController.prototype.signin = async function (req, res, tools) {
   const User = new UserModel(tools)
-  await User.passwordLogin(req)
+  await User.passwordSignIn(req)
+
+  return User.sendResponse(res)
+}
+
+/*
+ * Send a magic link to sign in
+ *
+ * This is the endpoint that provides sign in via magic link
+ * See: https://freesewing.dev/reference/backend/api
+ */
+UsersController.prototype.signinlink = async function (req, res, tools) {
+  const User = new UserModel(tools)
+  await User.sendSigninlink(req)
+
+  return User.sendResponse(res)
+}
+
+/*
+ * Sign in (with a sign-in link)
+ *
+ * This is the endpoint that signs in a user via a sign-in link (aka magic link)
+ * See: https://freesewing.dev/reference/backend/api
+ */
+UsersController.prototype.signinvialink = async function (req, res, tools) {
+  const User = new UserModel(tools)
+  await User.linkSignIn(req)
 
   return User.sendResponse(res)
 }

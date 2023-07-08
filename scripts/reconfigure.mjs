@@ -6,12 +6,7 @@ import chalk from 'chalk'
 import mustache from 'mustache'
 import conf from '../lerna.json' assert { type: 'json' }
 const { version } = conf
-import {
-  software as software,
-  publishedTypes as types,
-  designs,
-  plugins,
-} from '../config/software/index.mjs'
+import { software, publishedTypes as types, designs, plugins } from '../config/software/index.mjs'
 import { buildOrder } from '../config/build-order.mjs'
 import rootPackageJson from '../package.json' assert { type: 'json' }
 import { capitalize } from '../packages/core/src/index.mjs'
@@ -104,7 +99,9 @@ fs.writeFileSync(path.join(repo.path, 'CHANGELOG.md'), changelog('global'))
 // Step 5: Generate build script for published software
 log.write(chalk.blueBright('Generating buildall node script...'))
 const buildSteps = buildOrder.map((step, i) => `lerna run cibuild_step${i}`)
-const buildAllCommand = 'npm run reconfigure && ' + buildSteps.join(' && ')
+// Can we skip reconfigure?
+//const buildAllCommand = 'npm run reconfigure && ' + buildSteps.join(' && ')
+const buildAllCommand = buildSteps.join(' && ')
 const newRootPkgJson = { ...rootPackageJson }
 newRootPkgJson.scripts.buildall = buildAllCommand
 newRootPkgJson.scripts.wbuildall = buildAllCommand.replace(/cibuild/g, 'wcibuild')
@@ -466,7 +463,7 @@ function formatDate(date) {
 function validate() {
   for (const type in repo.dirs) {
     for (const dir of repo.dirs[type]) {
-      if (typeof software[dir] === 'undefined' || typeof software[dir].description !== 'string') {
+      if (typeof software?.[dir]?.description !== 'string') {
         log.write(chalk.redBright(` No description for package ${type}/${dir}` + '\n'))
         return false
       }

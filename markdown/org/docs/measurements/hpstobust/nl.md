@@ -21,10 +21,10 @@ Het punt van deze afmeting is bepalen op welke hoogte het volste deel van je bus
 
 Maar dat betekent dat je de lengte die je probeert te meten verdraait door je arm aan dezelfde kant op te tillen. Maar dat betekent dat je de lengte die je probeert te meten verdraait door je arm aan dezelfde kant op te tillen.
 Maar dat betekent dat je de lengte die je probeert te meten verdraait door je arm aan dezelfde kant op te tillen.
-You might not think there is a difference, but all is connected in the world of physiology, and
-doing this could lead to an error of ~2.5cm (~1 inch) in your measurement.  
-Simply switch your hands around, and you get a more accurate measurement.
+Je denkt misschien niet dat er een verschil is, maar alles is verbonden in de wereld van fysiologie, en
+dit doen kunnen leiden tot een fout van ~2. cm (~1 inch) in je maat.  
+Verander gewoon je handen rond, dan krijg je een nauwkeurigere meting.
 
-For best results, get a second person to take your measurements (if possible).
+Neem voor het beste resultaat een tweede persoon om uw metingen te nemen (indien mogelijk).
 
 </Tip>

@@ -56,6 +56,18 @@ macro('grainline', {
 
 ## Notes
 
+### Place outside `complete`
+
+The `grainline` macro should be placed outside of `complete` blocks
+in the part's draft method.
+
+This is because it provides information about the part's grainline,
+information that is always needed by the cutting layout regardless of
+whether `complete` details and graphics are shown on the pattern.
+
+The `grainline` macro will automatically show or hide the grainline
+indicator based on the `complete` setting.
+
 ### Removing the grainline indicator
 
 If you inherit a part with a grainline indicator and you'd like to remove it,

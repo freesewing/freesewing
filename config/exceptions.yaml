@@ -6,6 +6,7 @@ customBuild:
   - new-design
   - prettier-config
   - plugin-bundle
+  - react-components
   - rehype-jargon
   - rehype-highlight-lines
 skipTests:
@@ -49,6 +50,7 @@ packageJson:
       - templates/**/*
       - index.mjs
       - package.json
+      - data.mjs
     module: '!'
   noble:
     author: woutervdub (https://github.com/woutervdub)

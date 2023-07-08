@@ -43,34 +43,34 @@ bandTieColours:
   description: Sobre si quieres cintas de un solo color alrededor del pecho o de dos colores.
 neckTieWidth:
   title: Ancho de la cinta del cuello
-  description: Controls the width of the ties around your chest
+  description: Controla el ancho de las cintas alrededor del pecho
 neckTieLength:
   title: Longitud de la cinta del cuello
-  description: Controls the length of the ties around your chest
+  description: Controla la longitud de las cintas alrededor del pecho
 neckTieEnds:
   title: Puntas de la cinta del cuello
-  description: Whether you like straight or pointy ends on the ties around your chest
+  description: Si prefieres que las puntas de la cinta alrededor del pecho sean planas o acaben en punta
 neckTieColours:
   title: Colores de la cinta del cuello
-  description: Whether you want single color ties around your chest, or dual-coloured ones
+  description: Sobre si quieres cintas de un solo color alrededor del pecho o de dos colores.
 crossBackTies:
   title: Cintas cruzadas
   description: Whether you'd like to use the cross back tie variation of Bee
 bandLength:
   title: Band Length (Cross back ties)
-  description: Controls the length of the band around your chest for the cross back ties variation of Bee
+  description: Controla la longitud de la cinta alrededor de tu pecho para la versión de tirantes cruzados de Bee
 backDartHeight:
   title: Back dart height (Bella)
-  description: Controls the back dart height in the underlying Bella block Bee is based on
+  description: Controla la altura de la pinza trasera en el patrón base Bella, en el que se basa Bee
 armholeDepth:
   title: Armhole depth (Bella)
-  description: Controls the armhole depth in the underlying Bella block Bee is based on
+  description: Controla la profundidad de la sisa en el patron de base Bella en el que se basa Bee
 frontArmholePitchDepth:
   title: Front armhole pitch depth (Bella)
   description: Controls the front armhole pitch depth in the underlying Bella block Bee is based on
 frontShoulderWidth:
   title: Front shoulder width (Bella)
-  description: Controls the front shoulder width in the underlying Bella block Bee is based on
+  description: Controla el ancho de hombros en el patrón de base Bella en el que se basa Bee
 fullChestEaseReduction:
   title: Full chest reduction (Bella)
   description: Controls the full chest reduction in the underlying Bella block Bee is based on
