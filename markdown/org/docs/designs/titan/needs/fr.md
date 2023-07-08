@@ -1,8 +1,8 @@
----
+- - -
 title: "Titan trouser block: What You Need"
----
+- - -
 
-To make Titan, you will need the following:
+Pour faire Titan, vous aurez besoin des éléments suivants :
 
 - Fourniture de base pour la couture
 - About 1.5 meters (1.7 yards) of suitable fabric ([see Titan Fabric options](/docs/patterns/titan/fabric))
@@ -12,8 +12,8 @@ To make Titan, you will need the following:
 ###### Titan is a block, not a pattern
 
 A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Ils sont parfois aussi appelés patrons de base, bien que les puristes soutiennent qu'un bloc et un patron de base sont des choses différentes.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Les patrons de base ne sont donc généralement pas utilisés tels quels, mais plutôt pour élaborer d'autres modèles.
 
 </Note>
