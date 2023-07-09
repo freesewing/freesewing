@@ -1,9 +1,9 @@
 - - -
-title: "Belt width"
+назва: "Ширина стрічки"
 - - -
 
-Controls the width of the belt at the back.
+Регулює ширину ременя ззаду.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlton_beltwidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](carlton_beltwidth_sample.svg "Вплив цієї опції на шаблон")
