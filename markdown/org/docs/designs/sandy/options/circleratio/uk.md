@@ -1,11 +1,11 @@
 - - -
-title: "Circle ratio"
+назва: "Коефіцієнт кола"
 - - -
 
-![Circle ratio](circleratio.svg)
+![Співвідношення кіл](circleratio.svg)
 
-The percent of a circle skirt. 100% makes a full circle skirt, 50% makes a half circle skirt.
+Відсоток спідниці по колу. 100% - спідниця повного кола, 50% - спідниця півкола.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](sandy_circleratio_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](sandy_circleratio_sample.svg "Вплив цієї опції на шаблон")
