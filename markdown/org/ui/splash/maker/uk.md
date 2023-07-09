@@ -1,6 +1,6 @@
 - - -
 - - -
 
-### For makers
+### Для творців
 
-All our sewing patterns are made-to-measure & free to use, courtesy of our community
+Всі наші викрійки пошиті за індивідуальними мірками & безкоштовними для використання, завдяки нашій спільноті
