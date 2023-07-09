@@ -1,11 +1,11 @@
 - - -
-title: "Back opening"
+назва: "Задній прохід"
 - - -
 
-![The back opening option on Cathrin](./backopening.svg)
+![Варіант заднього відкривання на Cathrin](./backopening.svg)
 
-This option determines how wide the back opening of your corset will be. The back opening is where you string the corset together.
+Цей параметр визначає, наскільки широким буде задній отвір корсета. Задній отвір - це місце, де ви зав'язуєте корсет.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_backopening_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](cathrin_backopening_sample.svg "Вплив цієї опції на шаблон")
