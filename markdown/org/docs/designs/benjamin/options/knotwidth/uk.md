@@ -1,19 +1,19 @@
 - - -
-title: "Knot width"
+назва: "Ширина вузла"
 - - -
 
-![Knot width](knotwidth.svg)
+![Ширина вузла](knotwidth.svg)
 
-The knot width is the width in the middle of the bow tie, where you make the knot.
+Ширина вузла - це ширина посередині краватки-метелика, де ви робите вузол.
 
-How wide your bow tie is in the middle will influence the tie knot. Bigger works better with larger bow ties.
+Від того, наскільки широка ваша краватка-метелик посередині, залежить вузол краватки. З великими краватками-метеликами краще поєднуються більші розміри.
 
 <Note>
 
-With the Square type bow tie, this value also dictates the width of the tips
+У краватки-метелика типу "Квадрат" це значення також диктує ширину кінчиків
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_knotwidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](benjamin_knotwidth_sample.svg "Вплив цієї опції на шаблон")
