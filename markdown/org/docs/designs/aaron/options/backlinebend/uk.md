@@ -1,13 +1,13 @@
 - - -
-title: "Back armhole shape"
+назва: "Форма пройми спинки"
 - - -
 
-![The back armhole shape option on Aaron](./backlinebend.svg)
+![Варіант форми пройми спинки на моделі Aaron](./backlinebend.svg)
 
-Determines the bend of the armhole at the back. In other words, the amount the arm opening is cut-out on your back.
+Визначає вигин пройми ззаду. Іншими словами, розмір пройми на спині, на яку вирізаний отвір для рук.
 
-> Higher values bend the armhole more, resulting in a more raceback-style top.
+> Вищі значення більше вигинають пройму, в результаті чого топ виходить більш схожим на гольф.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_backlinebend_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](aaron_backlinebend_sample.svg "Вплив цієї опції на шаблон")
