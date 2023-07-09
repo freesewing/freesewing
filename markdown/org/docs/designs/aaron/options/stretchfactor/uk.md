@@ -1,15 +1,15 @@
 - - -
-title: "Stretch"
+назва: "Розтяжка"
 - - -
 
-![The stretch factor option on Aaron](./stretchfactor.svg)
+![Опція коефіцієнта розтягування на Аароні](./stretchfactor.svg)
 
-How much does your fabric stretch?  Choose 0% if your fabric does not stretch.
+Наскільки сильно розтягується ваша тканина?  Виберіть 0%, якщо ваша тканина не розтягується.
 
-> ##### This option does only impact stretch one-way (horizontal).
+> ##### Ця опція впливає лише на розтягнення в один бік (по горизонталі).
 > 
 > Four-way stretch is not really a concern for this top, but if you want you can play with the [length bonus](../lengthbonus) option.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_stretchfactor_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](aaron_stretchfactor_sample.svg "Вплив цієї опції на шаблон")
