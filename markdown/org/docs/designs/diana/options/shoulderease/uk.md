@@ -1,11 +1,11 @@
 - - -
-title: "Shoulder ease"
+назва: "Легкість у плечах"
 - - -
 
-![The shoulder ease option on Diana](./shoulderease.svg)
+![Опція полегшення плечей на Діані](./shoulderease.svg)
 
-This option controls the position of your shoulder seam.
+Ця опція контролює положення плечового шва.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_shoulderease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](diana_shoulderease_sample.svg "Вплив цієї опції на шаблон")
