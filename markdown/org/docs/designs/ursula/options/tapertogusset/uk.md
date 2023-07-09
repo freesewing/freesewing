@@ -1,9 +1,9 @@
 - - -
-title: "Taper to gusset"
+назва: "Конус до ластовиці"
 - - -
 
-Controls how much the front will curve inwards to meet the gusset.
+Контролює, наскільки сильно передня частина буде вигнута всередину, щоб з'єднатися з ластовицею.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](ursula_tapertogusset_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](ursula_tapertogusset_sample.svg "Вплив цієї опції на шаблон")
