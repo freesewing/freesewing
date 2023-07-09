@@ -1,23 +1,23 @@
 - - -
-title: "Paco pants: Fabric Options"
+"Штани Пако": "Штани Пако: Варіанти тканин"
 - - -
 
-These work best in a lighter fabric with relatively good drape.
+Найкраще вони виглядають на легкій тканині з відносно гарною драпіровкою.
 
-A light cotton, or chambray are particularly well-suited.  
-Rayon or jersey will work too, but will give it a more casual-look.
+Особливо добре підходить легка бавовна або шамбре.  
+Віскоза або джерсі також підійдуть, але нададуть йому більш повсякденного вигляду.
 
-For the opposite effect, less casual and more style, you can consider a silk blend or light wool.
+Для протилежного ефекту, менш повсякденного і більш стильного, можна розглянути шовкову суміш або легку вовну.
 
 <Tip>
 
-###### Some things to avoid
+###### Деякі речі, яких слід уникати
 
-Resist the temptation to make these in linen.
-While linen is the go-to for hot summer days, I would not recommend it for these pants
-as they come with an elasticated waist/cuffs, which means wrinkle hell.
-Use one of out other designs with a fitted waist if you want linen pants.
+Не піддавайтеся спокусі зробити їх з льону.
+Хоча лляна тканина є ідеальним варіантом для спекотних літніх днів, я б не рекомендував її для цих штанів
+, оскільки вони мають еластичну талію/манжети, що означає пекло для зморшок.
+Якщо ви хочете лляні штани, скористайтеся одним з наших інших дизайнів з приталеною талією.
 
-Also avoid picking a fabric with a lot of stretch, for it will complicate matters when you're installing the elastic.
+Також не обирайте тканину з великим розтягуванням, оскільки це ускладнить процес встановлення резинки.
 
 </Tip>
