@@ -1,5 +1,5 @@
 - - -
-title: "Bent body Block: Required Measurements"
+назва: "Блок зігнутого тіла: Необхідні виміри"
 - - -
 
 <PatternMeasurements pattern='bent' />
