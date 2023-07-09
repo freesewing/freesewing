@@ -1,18 +1,18 @@
 - - -
-title: "Sleevecap back Y"
+назва: "Втачной рукав Y"
 - - -
 
-![The vertical location of the back inflection point](./sleevecapbackfactory.svg)
+![Вертикальне розташування точки перегину спини](./sleevecapbackfactory.svg)
 
-This option controls the vertical placement of the sleevecap inflection point at the back of the sleeve.
+Цей параметр контролює вертикальне розміщення точки перегину рукава на задній частині рукава.
 
 <Tip>
 
-See [understanding the sleevecap](/docs/patterns/brian/options#understanding-the-sleevecap) for an in-depth
-look into how the sleevecap is constructed and the influence of the different options on its shape.
+Дивіться [розуміння конструкції манжета](/docs/patterns/brian/options#understanding-the-sleevecap) для детального
+розгляду того, як побудований рукав і як різні варіанти впливають на його форму.
 
 </Tip>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_sleevecapbackfactory_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](breanna_sleevecapbackfactory_sample.svg "Вплив цієї опції на шаблон")
