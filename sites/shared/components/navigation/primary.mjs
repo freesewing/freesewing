@@ -272,7 +272,7 @@ export const MainSections = () => {
               href={`/${page.s}`}
               className={`
                 flex flex-row gap-4 items-center
-                hover:bg-primary-focus hover:text-base-100 hover:cursor-pointer
+                hover:bg-primary hover:text-base-100 hover:cursor-pointer
                 p-2 px-4 rounded
                 rounded-none
               `}
