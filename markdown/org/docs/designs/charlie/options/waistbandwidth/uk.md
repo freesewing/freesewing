@@ -1,9 +1,9 @@
 - - -
-title: "Waistband width"
+Назва: "Ширина пояса"
 - - -
 
-Controls the width of the waistband.
+Регулює ширину пояса.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_waistbandwidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](charlie_waistbandwidth_sample.svg "Вплив цієї опції на шаблон")
