@@ -1,9 +1,9 @@
 - - -
-title: "Crotch Front"
+назва: "Промежини спереду"
 - - -
 
-The percentage of the seat circumference that the front crotch needs to occupy. This creates more or less space between the side seam and the front.
+Відсоток окружності сидіння, який повинна займати передня частина промежини. Це створює більше або менше простору між боковим швом і передом.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](waralee_crotchfront_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](waralee_crotchfront_sample.svg "Вплив цієї опції на шаблон")
