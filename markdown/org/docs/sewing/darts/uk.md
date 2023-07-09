@@ -1,17 +1,17 @@
 ---
-title: Darts
+title: Дартс
 ---
 
-![Bust darts on a blouse](dart.jpg)
+![Нагрудні виточки на блузці](dart.jpg)
 
-Darts are crucial in pattern design as they turn a flat, two-dimensional piece of fabric, into a three-dimensional shape.
+Виточки мають вирішальне значення в дизайні викрійок, оскільки вони перетворюють плаский, двовимірний шматок тканини на тривимірну форму.
 
-A dart is created by two lines that form a wedge, and meet each other in the dart point. When the lines are sewn together they create a permanent fold, preventing the fabric from laying flat, thereby creating a three-dimensional shape.
+Витачка створюється двома лініями, які утворюють клин і перетинаються в точці виточки. Коли лінії зшиваються разом, вони створюють постійну складку, не даючи тканині лежати рівно, створюючи таким чином тривимірну форму.
 
-Darts are used where fabric needs to cover curves in more than one direction. You don't need a dart for your legs because your fabric can follow the curvature of your legs and wrap around it. Your bum does not only curve horizontally, but also vertically. So bums and boobs are typically places where you'll find darts.
+Виточки використовуються там, де тканина повинна покривати вигини в декількох напрямках. Вам не потрібна виточка для ніг, тому що тканина може повторювати вигин ваших ніг і обертатися навколо них. Ваша сідниця вигинається не тільки горизонтально, але й вертикально. Тож бомжі та цицьки - це, як правило, місця, де ви знайдете дротики.
 
-> Wikipedia has a bit more to say on this subject: [Dart (sewing) on Wikipedia](http://en.wikipedia.org/wiki/Dart_\(sewing\))
+> Вікіпедія має трохи більше інформації на цю тему: [Виточка (шиття) у Вікіпедії](http://en.wikipedia.org/wiki/Dart_\(sewing\))
 > 
-> Entire chapters in books on sewing and pattern design are dedicated to darts. Knowing how and where to use them is not so simple. But for this website, knowing what they are is sufficient.
+> Витачкам присвячені цілі розділи в книгах з шиття та конструювання викрійок. Знати, як і де їх використовувати, не так просто. Але для цього сайту достатньо знати, що це таке.
 
-> Picture by [Tasha](http://bygumbygolly.com/2013/01/finished-1940s-simplicity-diamonds/)
+> Фото: [Таша](http://bygumbygolly.com/2013/01/finished-1940s-simplicity-diamonds/)
