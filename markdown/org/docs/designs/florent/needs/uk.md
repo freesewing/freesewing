@@ -1,11 +1,11 @@
 ---
-title: "Florent flat cap: What You Need"
+title: "Капелюшок Florent: Що вам потрібно"
 ---
 
-To make Florent, you will need the following:
+Щоб зробити Флоран, вам знадобиться наступне:
 
-- Basic sewing supplies
-- About 0.5 meters (0.6 yards) of a suitable fabric ([see Fabric options](/docs/patterns/florent/fabric/))
-- About 0.5 meters (0.6 yards) of lining fabric
-- Tape, a bit more than **head circumference** + **ease** that you used for the pattern
-- A sheet of plastic or something rigid for the brim (1 mm thick or less)
+- Основні матеріали для шиття
+- Приблизно 0,5 метра (0,6 ярдів) відповідної тканини ([див. варіанти тканини](/docs/patterns/florent/fabric/))
+- Приблизно 0,5 метра (0,6 ярда) підкладкової тканини
+- Стрічка, трохи більша за **обхвату голови** + **легкість** , яку ви використовували для викрійки
+- Лист пластику або щось жорстке для бортика (товщиною не більше 1 мм)
