@@ -1,15 +1,15 @@
 - - -
-title: "Strap length"
+назва: "Довжина ремінця"
 - - -
 
-Controls the length of the strap.
+Регулює довжину ремінця.
 
 <Tip>
 
-Turn on paperless to see the length of the strap.
+Увімкніть безпаперовий режим, щоб побачити довжину ремінця.
 
 </Tip>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](hortensia_straplength_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](hortensia_straplength_sample.svg "Вплив цієї опції на шаблон")
