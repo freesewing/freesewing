@@ -1,132 +1,132 @@
 - - -
-title: "Cornelius cycling breeches: Sewing Instructions"
+"Корнеліус велосипедні штани": "Велосипедні бриджі Cornelius: Інструкція з пошиття"
 - - -
 
-### Step 1: The Front Pockets
+### Крок 1: Передні кишені
 
-- Press under the seam allowances of the non-notched edges of the pokcet facings.
-- Matching notches, pin the wrong sides of pocket facings to right side of pocket bags, _Edgestitch_ the folded edges to the pocket bags.
-- _Baste_ the seam allowances of the notched edges of the pocket facings to the pocket bags.
-- With right sides together matching double notches sew the pocket bags to the front and then press to the wrong side.
-- Fold the pockets in half along the fold line, right sides together. Stitch the bottom of the pocket bag together.
-- Alternatively you can _French Seam_ the bottom seams of the pocket bags together if you prefer.
-- _Baste_ the top and side of the pocket bags to the front seam allowances mathcing notches.
+- Притисніть під припуски на шви не надрізаних країв покет-облицювання.
+- Сумістивши надсічки, приколіть виворітні сторони обшивок кишень до правого боку кишенькових мішків, _приметайте_ підігнуті краї до кишенькових мішків.
+- _Приметайте_ припуски на шви надсічених країв обшивок кишень до мішковин кишень.
+- Лицьовими боками до лицьових боків, сумістивши подвійні надсічки, пришийте кишеньки до лицьового боку, а потім припрасуйте на виворітний бік.
+- Складіть кишені навпіл по лінії згину лицьовими боками разом. Зшийте дно кишенькової сумки.
+- Також ви можете _французький шов_ нижні шви кишенькових сумок разом, якщо бажаєте.
+- _Приметайте_ верхню і бокові частини кишень сумки до припусків переднього шва за допомогою мітчиків.
 
 <Note>
 
-Going forward the pockets and fronts will just be referred to as the fronts.
+Надалі кишені і фронти будуть називатися просто фронтами.
 
 </Note>
 
-### Step 2: The Fly
+### Крок 2: Муха
 
-- With right sides together, from the top _Baste_ along the fly line stopping at the notch on the crotch seam.
-- From where you left off with basting, stitch the crotch seam together making sure to secure your stitches where the basting ends.
-- Press open the fly and seam.
-- Lay the fronts down wrong side up so the right sides of the fly flaps are facing you.
-- Lay zipper face up on the front flaps, with the left side of the zipper touching the seam, with the bottom of the right zipper tape on the curved flap.
-- Sew the right zipper tape to the right flap close to the zipper teeth using a zipper foot. Don't sew it to the front itself!
-- Pull the zipper to the left so the right flap is pulled over.
-- Pin the left zipper tape to the left flap.
-- Sew the left zipper tape to left flap close to the zipper teeth using a zipper foot. Don't sew it to the front itself!
-- Fold the zipper guard in half wrong sides together.
-- Lay the zipper guard on the right flap, right sides touching.
-- Sew the zipper guard to the right flap, _Finish_ the right side to your liking.
-- _Finish_ the left side of the left flap to your liking.
-- Unpick the basted part of the front seam.
-- _Topstitch_ the right flap down, away from the now unpicked seam, as far down as you can.
-- Pin/_Baste_ the zipper protector over to the right side to keep it out of the way for the next step
-- On the outside side, sew the left flap down to the left, following the curved line.
-- On the outside side, _Bar-Tack_ where you like them for reinforcement.
+- Прямими боками разом, зверху _приметайте_ вздовж лінії маху, зупинившись на надсічці в паховому шві.
+- Починаючи з того місця, де ви зупинилися на наметуванні, зшийте паховий шов разом, обов'язково закріплюючи стібки там, де закінчилося наметування.
+- Розстебніть ширинку і шов.
+- Складіть передню частину лицьовим боком догори так, щоб праві боки клапанів були звернені до вас.
+- Накладіть застібку-блискавку лицьовим боком догори на передні клапани так, щоб лівий бік застібки-блискавки торкався шва, а нижній бік правої застібки-блискавки був на вигнутому клапані.
+- Пришийте праву тасьму-блискавку до правого клапана поруч із зубцями застібки-блискавки за допомогою лапки для застібки-блискавки. Не пришивайте його до самого переду!
+- Потягніть застібку-блискавку вліво, щоб правий клапан піднявся.
+- Приколіть ліву стрічку-блискавку до лівого клапана.
+- Пришийте ліву тасьму-блискавку до лівого клапана близько до зубців застібки-блискавки за допомогою лапки для застібки-блискавки. Не пришивайте його до самого переду!
+- Складіть захисну планку блискавки навпіл виворітними боками разом.
+- Покладіть захисну тасьму-блискавку на правий клапан, торкаючись правих боків.
+- Пришийте захисну планку блискавки до правого клапана, _Обробіть_ праву сторону на свій смак.
+- _Обробіть_ ліву частину лівого клапана на свій смак.
+- Відверніть припущену частину переднього шва.
+- _Верхній стібок_ правий клапоть вниз, подалі від незастроченого шва, так далеко вниз, як тільки зможете.
+- Приколіть/_Приклейте_ захист блискавки з правого боку, щоб він не заважав на наступному кроці
+- На зовнішньому боці пришийте лівий клапан вниз до лівого боку, дотримуючись вигнутої лінії.
+- На зовнішній стороні _Bar-Tack_ там, де вам подобається, для зміцнення.
 
 <Tip>
 
-When sewing the left flap down on the outside, you may find it best to make a template to help you.
+Під час пришивання лівого клапана до зовнішньої сторони, можливо, вам краще зробити шаблон, який допоможе вам у цьому.
 
 </Tip>
 
 <Note>
 
-If you wish to orientate the fly the other way change the left to right and right to left in the steps above.  
-If wanting something more historical than omit the zipper and make a buttonhole fly instead.
+Якщо ви хочете зорієнтувати мушку в інший бік, поміняйте місцями лівий на правий і правий на лівий у наведених вище кроках.  
+Якщо ви хочете чогось більш історичного, просто застібніть блискавку і зробіть замість неї петлю для ґудзиків.
 
 </Note>
 
-### Step 3: Attaching the front to the back
+### Крок 3: Приєднання передньої частини до задньої
 
-- With right sides together sew the back pieces together along the back seam.
-- With right sides together sew the front and back together at the side seams and inner leg seam. Making sure to leave a gap below the notches at the bottom of the side seams. The gap will be referred to as the list when going forward.
+- Задні деталі зшити лицьовими боками разом уздовж заднього шва.
+- Лицьовими боками до лицьових боків зшийте перед і спинку разом по бокових швах і внутрішньому шву штанин. Переконайтеся, що ви залишили зазор нижче надсічок внизу бічних швів. Далі ми будемо називати цю прогалину списком.
 
-### Step 4: Leg bands
+### Крок 4: Бандажі для ніг
 
-Use the method of the cuff style you chose as they are different depending on which style you are using.
+Використовуйте метод, який відповідає обраному вами стилю манжети, оскільки вони відрізняються в залежності від того, який стиль ви використовуєте.
 
-#### Traditional and Elegant
+#### Традиційний та елегантний
 
-- _Finish_ the raw edges of the slits.
-- Press the seam allowances of the slits to the wrongs sides. Stitch in place.
-- Sew one of the leg band pieces to each leg right sides together, matching notches.
-- Press the bands and seam allowance down and away from leg. Trim the seam allowance to reduce bulk.
-- Press the top seam allowance to the wrong side of the remaining leg band pieces. Trim the top seam allowance.
-- With right sides together sew the remaining leg and pieces to the attached leg bands along the bottoms and sides.
-- Turn the leg bands out. Press.
-- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
-- Sew the buttonhole. The buttons will be sewn later.
+- _Обробіть_ необроблені краї прорізів.
+- Припуски швів розрізів припрасуйте до виворітного боку. Зашиваю.
+- Пришийте по одній деталі стрічки до кожної штанини з правого боку, сумістивши надсічки.
+- Притисніть стрічки і припуски шва вниз і в сторону від ноги. Обріжте припуски на шви, щоб зменшити об'єм.
+- Припуски верхнього шва припрасуйте до виворітного боку решти деталей штанин. Припуски верхнього шва обрізати.
+- Лицьовими боками до лицьових сторін пришийте решту штанин і деталі до прикріплених стрічок для штанин уздовж низу і боків.
+- Виверніть стрічки для ніг назовні. Преса.
+- _Шовним швом_ або _Хлистовим швом_ виверніть підігнутий край пояса на лицьову сторону, переконавшись, що підігнутий край закриває строчку.
+- Пришийте петлю для ґудзика. Ґудзики будуть пришиті пізніше.
 
 <Note>
 
-If you are worried about a draft you can create a triangle piece of fabric that sits behind the slits out of your pocket fabric. Attaching it before Step 3 to one of the sides of the slits.
+Якщо вас турбує протяг, ви можете зробити трикутний шматок тканини, який буде знаходитися за прорізами, з тканини вашої кишені. Прикріпіть його перед кроком 3 до однієї зі сторін прорізів.
 
 </Note>
 
-#### Keystone
+#### Наріжний камінь.
 
-- If using construct plackets for the leg slits.
-- Sew the plackets to the leg slits similar to how you would sew a sleeve cuff on a shirt.
-- Close the darts on the leg band pieces.
-- Sew one of the leg band pieces to each leg right sides together, matching notches.
-- Press the bands and seam allowance down and away from leg. Trim the seam allowance to reduce bulk.
-- Press the top seam allowance to the wrong side of the remaining leg band pieces. Trim the top seam allowance.
-- With right sides together sew the remaining leg and pieces to the attached leg bands along the bottoms and sides.
-- Turn the leg bands out. Press.
-- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
-- Sew the buttonhole. The buttons will be sewn later.
+- При використанні сконструюйте накладки для прорізів для ніг.
+- Пришийте планки до прорізів для ніг так само, як ви пришиваєте манжету рукава на сорочці.
+- Закрийте виточки на деталях штанин.
+- Пришийте по одній частині стрічки до кожної штанини з правого боку, сумістивши надсічки.
+- Притисніть стрічки і припуски шва вниз і в сторону від ноги. Обріжте припуски на шви, щоб зменшити об'єм.
+- Припуски верхнього шва припрасуйте до виворітного боку решти деталей штанин. Припуски верхнього шва обрізати.
+- Лицьовими боками до лицьових сторін пришийте решту штанин і деталі до прикріплених стрічок для штанин уздовж низу і боків.
+- Виверніть стрічки для ніг назовні. Преса.
+- _Шовним швом_ або _Хлистовим швом_ пришийте підігнутий край пояса до лицьового боку, переконавшись, що підігнутий край закриває строчку.
+- Пришийте петлю для ґудзика. Ґудзики будуть пришиті пізніше.
 
 <Note>
 
-If you are worried about a draft you will need to construct plackets for the leg slits.
+Якщо вас турбує протяг, вам потрібно зробити накладки на прорізи для ніг.
 
 </Note>
 
 <Note>
 
-**For both Keystone, Traditional and Elegant Styles**
+**Для ключових, традиційних та елегантних стилів**
 
-You can _Edgestitch_ the leg bands together like a modern waistband if you prefer.
+За бажанням ви можете зшити стрічки для ніг разом, як сучасний пояс.
 
 </Note>
 
-### Step 5: Waistband
+### Крок 5: Пояс
 
-- Face one of the waistband pieces using your preffered method.
-- Sew the faced waistband piece to the top of the legs right sides together.
-- Press the waistband and seam allowance up and away from leg. Trim the seam allowance to reduce bulk.
-- Press the bottom seam allowance to the wrong side of the remaining waistband piece. Trim the bottom seam allowance.
-- With right sides together sew the remaining waistband to the faced waistband along the top and sides.
-- Turn the waistband out. Press.
-- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
-- Sew the buttonhole. The buttons will be sewn later.
+- Лицьовою стороною до лицьової сторони випрасуйте одну з деталей пояса обраним вами способом.
+- Пришити лицьову частину пояса до верхньої частини штанин лицьовими боками до лицьового боку.
+- Припрасуйте пояс і припуски швів догори і в сторону від ноги. Обріжте припуски на шви, щоб зменшити об'єм.
+- Припуски нижнього шва припрасуйте до виворітного боку деталі пояса, що залишилася. Припуски нижнього шва обрізати.
+- Лицьовими боками разом пришити решту пояса до виворітного пояса зверху і з боків.
+- Виверніть пояс назовні. Преса.
+- _Шовним швом_ або _Хлистовим швом_ пришийте підігнутий край пояса до лицьового боку, переконавшись, що підігнутий край закриває строчку.
+- Пришийте петлю для ґудзика. Ґудзики будуть пришиті пізніше.
 
 <Note>
 
-You can _Edgestitch_ the waistband together like a modern waistband if you prefer.
+За бажанням, ви можете зшити пояс, як сучасний ремінь, якщо хочете.
 
 </Note>
 
-### Step 6: Buttons
+### Крок 6: Кнопки
 
-- Sew the waistband and leg band buttons on.
+- Пришийте ґудзики на поясі та штанинах.
 
-### Step 7: Enjoy!
+### Крок 7: Насолоджуйтесь!
 
-You're all done! Now go have a ride in your brilliant new cycling breeches!
+Ви закінчили! А тепер їдьте кататися у своїх блискучих нових велосипедних бриджах!
