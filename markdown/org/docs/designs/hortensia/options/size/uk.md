@@ -1,28 +1,28 @@
 - - -
-title: "Size"
+"Назва": "Розмір"
 - - -
 
-Controls the overall size of the handbag.
+Контролює загальний розмір сумочки.
 
-Rather than using measurements, Hortensia's size is determined by scaling fixed values.
+Замість того, щоб використовувати вимірювання, розмір Hortensia визначається шляхом масштабування фіксованих значень.
 
-- 20% : Will scale these values by 0.2
-- 200% : Will scale these values by 2
+- 20% : Масштабує ці значення на 0.2
+- 200% : Масштабує ці значення на 2
 
-The two fixed values that are used the most are Width: 23cm and Height: 33cm.
+Два фіксованих значення, які використовуються найчастіше, - це ширина: 23 см і висота: 33 см.
 
 <Note>
 
-So an example of this would be the default, which is 50%. This would scale the values by 0.5 resulting in a handbag that is 11.5cm (23cm x 0.5) in width and 16.5cm (33cm x 0.5) in height.
+Прикладом цього може бути значення за замовчуванням, яке становить 50%. Це збільшить значення на 0,5, в результаті чого сумочка матиме ширину 11,5 см (23 см х 0,5) і висоту 16,5 см (33 см х 0,5).
 
 </Note>
 
 <Tip>
 
-Turn on paperless to see the measurements of the handbag. This will help you to determine the size you want and see the effects of this option.
+Увімкніть безпаперовий режим, щоб побачити розміри сумочки. Це допоможе вам визначити потрібний розмір і побачити ефекти цього варіанту.
 
 </Tip>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](hortensia_size_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](hortensia_size_sample.svg "Вплив цієї опції на шаблон")
