@@ -1,9 +1,9 @@
 - - -
-title: "Back vent length"
+назва: "Довжина заднього вентиляційного отвору"
 - - -
 
-This controls the length of the back vent as a percentage of the skirt length.
+За допомогою цього параметра можна регулювати довжину заднього вирізу у відсотках від довжини спідниці.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_backventlength_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](penelope_backventlength_sample.svg "Вплив цієї опції на шаблон")
