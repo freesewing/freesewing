@@ -1,11 +1,11 @@
 - - -
-title: "Roll-line collar height"
+назва: "Висота коміра рулонної лінії"
 - - -
 
-![Roll line collar height](rolllinecollarheight.svg)
+![Висота коміра рулонної лінії](rolllinecollarheight.svg)
 
-The amount by which the roll line hugs the neck.
+Величина, на яку лінія рулону охоплює горловину.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_rolllinecollarheight_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_rolllinecollarheight_sample.svg "Вплив цієї опції на шаблон")
