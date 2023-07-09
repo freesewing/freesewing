@@ -1,28 +1,28 @@
 - - -
-title: "Breanna body block: Cutting Instructions"
+назва: "Боді-блок Бріанни: Інструкція з розкрою"
 - - -
 
-**Main fabric**
+**Основна тканина**
 
-- Cut **1 Front** part on the fold.
-- Cut **2 Back** parts.
-- Cut **2 Sleeve** parts, _good sides together_.
+- Виріжте **1 передню** частину на згині.
+- Виріжте **2 частини назад** .
+- Виріжте **2 частини рукава** , _лицьовими сторонами разом_.
 
-These cutting instructions are just for the default Breanna block. Adjust your cutting accordingly if you have/are making changes to the block.
+Ці інструкції з розкрою стосуються лише стандартного блоку Breanna. Якщо ви вносите зміни в блок, відрегулюйте розкрій відповідно.
 
 <Tip>
 
-If you do not have someone to help pin you into Breanna then you may find it easier to Cut 2 Front parts with seam allowance and sew the backs up when constructing so you can pin in the front.
+Якщо у вас немає нікого, хто б допоміг вам приколоти Бріанну, можливо, вам буде простіше вирізати 2 передні деталі з припусками на шви і зшити спинки під час конструювання, щоб ви могли приколоти їх спереду.
 
 </Tip>
 
 <Note>
 
-###### Breanna is a block, not a pattern
+###### Бріанна - це блок, а не візерунок
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Блок - це базова форма, на якій базуються інші візерунки.
+Іноді їх ще називають слоуперами, хоча пуристи заперечать, що блок і слоупер - це різні речі.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Блоки, як правило, не створюються як такі, а слугують основою для інших візерунків.
 
 </Note>
