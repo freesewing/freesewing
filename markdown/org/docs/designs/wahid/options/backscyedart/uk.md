@@ -1,22 +1,22 @@
 - - -
-title: "Back scye dart"
+Назва: "Дротик з жита"
 - - -
 
-![Back scye dart](backscyedart.svg)
+![Дротик для стрільби з жита ззаду](backscyedart.svg)
 
-This pattern comes with a default 0.5 cm scye dart (think armhole dart) on the back. You can increase or decrease the dart to influence the armhole.
+Ця викрійка має стандартну виточку 0,5 см на спинці (думайте про виточку для пройми). Ви можете збільшити або зменшити виточку, щоб вплинути на пройму.
 
 <Note>
 
-###### What's the point?
+###### У чому сенс?
 
-The point of this dart is to make sure the armhole lies flat against your body, rather than gape.
-Given that there is no sleeve, a gaping armhole is particularly unsightly.
+Суть цієї виточки полягає в тому, щоб переконатися, що пройма щільно прилягає до тіла, а не зяє.
+Враховуючи, що рукава немає, зяюча пройма виглядає особливо непривабливо.
 
-While this dart is used to shape the pattern, you don't have to sew the dart because it's incorporated in the shoulder seam line.
+Хоча ця виточка використовується для формування викрійки, вам не потрібно її зашивати, тому що вона вбудована в лінію плечового шва.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_backscyedart_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](wahid_backscyedart_sample.svg "Вплив цієї опції на шаблон")
