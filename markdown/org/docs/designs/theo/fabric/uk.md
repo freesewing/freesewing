@@ -1,11 +1,11 @@
 - - -
-title: "Theo trousers: Fabric Options"
+назва: "Штани Тео: Варіанти тканин"
 - - -
 
-You have a lot of options here, but keep in mind that these are classic cut trousers. In other words, do not use stretch, denim, pleather of that sort of thing. Safe bets are wool, cotton, or linen, possibly blended with some synthetic.
+У вас є багато варіантів, але майте на увазі, що це класичний крій штанів. Іншими словами, не використовуйте стрейч, джинсову тканину, шкіру і тому подібні речі. Надійні варіанти - вовна, бавовна або льон, можливо, з додаванням синтетики.
 
-For **wool**, look in the suiting section of your fabric store. If this is your first pair, some wool-poly blend is most likely going to be more budget-friendly. But don't let price alone guide you, buying some cheap whimsical fabric is the best way to come up with a shitty looking pair of trousers, and get frustrated in the process.
+Вовняні **та**шукайте в розділі костюмів у вашому магазині тканин. Якщо це ваша перша пара, то, швидше за все, більш бюджетним варіантом буде суміш вовни з поліестером. Але не дозволяйте ціні керувати вами, купуючи дешеву химерну тканину - це найкращий спосіб вигадати паскудний вигляд штанів і розчаруватися в процесі.
 
-For **cotton**, go for a heavier weight. Cotton might also be a bit easier on the beginner than wool. If unsure what to use, ask for chino in the fabric store and simply pick a colour you like.
+Для **бавовняних**, обирайте більшу вагу. Бавовна також може бути трохи легшою для початківців, ніж вовна. Якщо ви не знаєте, що використовувати, запитайте про чино в магазині тканин і просто виберіть колір, який вам подобається.
 
-Nothing beats **linen** on a hot summer day. It's fun to work with too, but it does wrinkle like a mofo, and even the most neatly made trousers look somewhat messy when made in linen. What I'm saying is, maybe not for your first pair.
+Ніщо не може зрівнятися з **лляною** у спекотний літній день. Працювати з ним теж весело, але він мнеться, і навіть найакуратніші штани виглядають дещо неохайно, коли зроблені з льону. Я хочу сказати, що, можливо, не для вашої першої пари.
