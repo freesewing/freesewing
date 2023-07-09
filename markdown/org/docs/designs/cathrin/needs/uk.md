@@ -1,19 +1,19 @@
 - - -
-title: "Cathrin corset: What You Need"
+назва: "Корсет Катрін: Що вам потрібно"
 - - -
 
-Corsets are easier to construct than they seem, however they need several specialist items and tools.
+Виготовлення корсетів простіше, ніж здається, проте для цього потрібні деякі спеціальні предмети та інструменти.
 
-You will need BONING. Historic corsets used whale bone to stiffen corsets. Modern corset makers use steel. You can get steel bones either as flat steel and spiral steel - do research, as different types of corset and different corset makers have their own preferences. Plastic bones are also a cheaper option.
+Тобі знадобляться кістки. Історичні корсети використовували китову кістку для посилення жорсткості корсетів. Сучасні виробники корсетів використовують сталь. Ви можете отримати сталеві кістки як у вигляді плоскої сталі, так і у вигляді спіральної сталі - проведіть дослідження, оскільки різні типи корсетів і різні виробники корсетів мають свої переваги. Пластикові кістки також є дешевшим варіантом.
 
-You can find a good guide to other tools at [Foundations Revealed](https://foundationsrevealed.com/).
+Ви можете знайти гарний посібник з інших інструментів на [Foundations Revealed](https://foundationsrevealed.com/).
 
-Sample supplies list:
+Приблизний список припасів:
 
-- About 0.5 meters (0.6 yards) of core fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
-- About 0.5 meters (0.6 yards) of outer fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
-- Boning
-- Grommets (size 2)
-- About 2 meters of bias tape
-- About 3 meters of lacing
-- Tools: Grommet setter, awl
+- Близько 0,5 метра (0,6 ярдів) основної тканини ([див. варіанти тканини](/docs/patterns/cathrin/fabric))
+- Близько 0,5 метра (0,6 ярдів) зовнішньої тканини ([див. варіанти тканини](/docs/patterns/cathrin/fabric))
+- Кісткова тканина
+- Втулки (розмір 2)
+- Близько 2 метрів бічної стрічки
+- Близько 3 метрів шнурівки
+- Інструменти: Монтажний інструмент для втулок, шило
