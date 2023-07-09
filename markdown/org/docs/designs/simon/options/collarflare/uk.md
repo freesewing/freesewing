@@ -1,17 +1,17 @@
 - - -
-title: "Collar flare"
+Назва: "Комір-блискавка"
 - - -
 
-![Collar flare](collarflare.svg)
+![Комір з розворотом](collarflare.svg)
 
-How much the collar flares out (at the collar edge side), rather than being straight.
+Наскільки комір розширюється (з боку краю коміра), замість того, щоб бути прямим.
 
 <Note>
 
-This influences the length of your collar tips.
+Це впливає на довжину кінчиків коміра.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarflare_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_collarflare_sample.svg "Вплив цієї опції на шаблон")
