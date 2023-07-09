@@ -1,9 +1,9 @@
 - - -
-title: "Front pocket"
+"Передня кишеня": "Передня кишеня"
 - - -
 
-Whether to include a front pocket or not
+Чи включати передню кишеню чи ні
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](waralee_frontpocket_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](waralee_frontpocket_sample.svg "Вплив цієї опції на шаблон")
