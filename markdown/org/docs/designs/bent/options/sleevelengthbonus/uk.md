@@ -1,19 +1,19 @@
 - - -
-title: "Sleeve length bonus"
+назва: "Бонус за довжину рукава"
 - - -
 
-The amount to extend the sleeve beyond the length of the sleeve in the base block.
+Кількість, на яку потрібно подовжити втулку понад довжину втулки в базовому блоці.
 
 <Note>
 
-#### This is not supposed to be zero
+#### Цей параметр не повинен дорівнювати нулю
 
-Setting this to zero will make the sleeve length the same as the base length of the Bent block,
-which is certainly too short for a coat.
-Please take note of the default value and use that as a basis to lengthen or shorten the sleeve.
+Якщо встановити його на нуль, довжина рукава буде дорівнювати базовій довжині блоку Bent,
+що, безумовно, занадто мало для пальта.
+Будь ласка, зверніть увагу на значення за замовчуванням і використовуйте його як основу для подовження або вкорочення рукава.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bent_sleevelengthbonus_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bent_sleevelengthbonus_sample.svg "Вплив цієї опції на шаблон")
