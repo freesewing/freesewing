@@ -1,26 +1,26 @@
 - - -
-title: "Button free length"
+назва: "Довжина без ґудзиків"
 - - -
 
-![Button free length](./buttonfreelength.svg)
+![Довжина без ґудзиків](./buttonfreelength.svg)
 
-How much before your waistband do you want your last button to sit?
+На якій відстані до пояса ви хочете, щоб останній ґудзик сидів?
 
 <Note>
 
-###### What's the point?
+###### У чому сенс?
 
-Having buttons below your waistband is considered by many to be an annoyance.
-They get caught up in your belt, and complicate bathroom breaks.
+Багато хто вважає, що наявність ґудзиків нижче пояса дратує.
+Вони заплутуються в поясі та ускладнюють відвідування туалету.
 
-By default, the last button sits 1cm above your waistband,
-but this option allows you to move it further upwards for that shirt you are going to wear with those high-waisted trousers.
+За замовчуванням, останній ґудзик знаходиться на 1 см вище пояса,
+але ця опція дозволяє перемістити його вище для сорочки, яку ви збираєтеся носити з брюками із завищеною талією.
 
-If you want to have buttons below your waistband, you can. You should enter a negative value here,
-making sure it's within the length bonus you have available.
+Якщо ви хочете мати ґудзики нижче пояса, ви можете це зробити. Ви повинні ввести від'ємне значення тут,
+, переконавшись, що воно не виходить за межі наявного у вас бонусу за довжину.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_buttonfreelength_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_buttonfreelength_sample.svg "Вплив цієї опції на шаблон")
