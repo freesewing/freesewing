@@ -1,9 +1,9 @@
 - - -
-title: "Gusset length"
+назва: "Довжина ластовиці"
 - - -
 
-This option controls the length of the gusset.
+Цей параметр регулює довжину ластовиці.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](ursula_gussetlength_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](ursula_gussetlength_sample.svg "Вплив цієї опції на шаблон")
