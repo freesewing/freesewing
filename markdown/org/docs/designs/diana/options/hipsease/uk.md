@@ -1,11 +1,11 @@
 - - -
-title: "Hips ease"
+назва: "Легкість стегон"
 - - -
 
-![The hips ease option on Diana](./hipsease.svg)
+![Опція полегшення стегон на Діані](./hipsease.svg)
 
-This option controls the amount of ease at the hips.
+Цей параметр регулює ступінь свободи в області стегон.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_hipsease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](diana_hipsease_sample.svg "Вплив цієї опції на шаблон")
