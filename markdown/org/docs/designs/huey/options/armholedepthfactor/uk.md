@@ -1,9 +1,9 @@
 - - -
-title: "Armhole depth factor"
+назва: "Коефіцієнт глибини пройми"
 - - -
 
-This option controls the depth of the armhole.
+Ця опція регулює глибину пройми.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_armholedepthfactor_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](huey_armholedepthfactor_sample.svg "Вплив цієї опції на шаблон")
