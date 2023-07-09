@@ -1,11 +1,11 @@
 - - -
-title: "Waist ease"
+Назва: "Легкість талії"
 - - -
 
-![The waist ease option on Diana](./waistease.svg)
+![Опція полегшення талії на Діані](./waistease.svg)
 
-This option controls the amount of ease at the waist.
+Цей параметр регулює ступінь свободи на талії.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_waistease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](diana_waistease_sample.svg "Вплив цієї опції на шаблон")
