@@ -1,9 +1,9 @@
 - - -
-title: "Collar roll"
+назва: "Комір рулонний"
 - - -
 
-Controls the amount of roll in the collar; how much the topcollar is higher than the undercollar.
+Контролює кількість валиків у комірі; наскільки верхній комір вищий за нижній.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_collarroll_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_collarroll_sample.svg "Вплив цієї опції на шаблон")
