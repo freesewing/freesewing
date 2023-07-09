@@ -1,15 +1,15 @@
 - - -
-title: "End style"
+назва: "Кінцевий стиль"
 - - -
 
-![Three different tip shapes](endstyle.svg)
+![Три різні форми наконечників](endstyle.svg)
 
 In addition to having four different bow tie styles, each style can be individualized with three different tip options:
 
-- Straight
-- Pointed
-- Round
+- Прямо.
+- Загострений
+- Круглий
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_endstyle_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](benjamin_endstyle_sample.svg "Вплив цієї опції на шаблон")
