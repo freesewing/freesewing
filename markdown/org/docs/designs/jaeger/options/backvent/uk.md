@@ -1,15 +1,15 @@
 - - -
-title: "Back vent"
+назва: "Задній вентиляційний отвір"
 - - -
 
-![Back vent](backvent.svg)
+![Задній вентиляційний отвір](backvent.svg)
 
-How do you like your back vents?
+Як вам подобаються задні вентиляційні отвори?
 
-- Two back vents (shown on the left)
-- One central back vent (shown in the middle)
-- No back vents (shown on the right)
+- Два задніх вентиляційних отвори (показані зліва)
+- Один центральний задній вентиляційний отвір (показаний посередині)
+- Немає задніх вентиляційних отворів (показано праворуч)
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_backvent_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_backvent_sample.svg "Вплив цієї опції на шаблон")
