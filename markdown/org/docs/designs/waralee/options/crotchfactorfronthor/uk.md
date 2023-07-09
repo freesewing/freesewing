@@ -1,9 +1,9 @@
 - - -
-title: "Front Crotch Factor Horizontal"
+Назва: "Горизонтальний фактор промежини спереду"
 - - -
 
-Used to move the curve of the crotch in the front horizontally
+Використовується для переміщення вигину промежини спереду по горизонталі
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](waralee_crotchfactorfronthor_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](waralee_crotchfactorfronthor_sample.svg "Вплив цієї опції на шаблон")
