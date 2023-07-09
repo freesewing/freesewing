@@ -1,23 +1,23 @@
 - - -
-title: "Cornelius cycling breeches: Cutting Instructions"
+"Корнеліус велосипедні штани": "Велосипедні бриджі Cornelius: Інструкція з крою"
 - - -
 
-### Materials
+### Матеріали
 
-- **Main fabric**
-  - Cut **2 back** parts
-  - Cut **2 front** parts
-  - Cut **2 pocket facing** parts
-  - Cut **2 waistband** parts on the fold
-  - Cut **4 leg band** parts
-  - Cut **1 zipper guard** part on the fold
-- **Lining (Pocket) fabric**
-  - Cut **2 pocket** parts
-- **Interfacing**
-  - Cut **1 waistband** part on the fold
+- **Основна тканина**
+  - Виріжте **2 задніх** частини
+  - Виріжте **2 передні** частини
+  - Виріжте **2 деталі кишені, облицьовані**
+  - Виріжте **2 частини пояса** на згині
+  - Виріжте **4 частини стрічки для ніг**
+  - Виріжте **1 захисну планку блискавки** частину на згині
+- **Підкладкова (кишенькова) тканина**
+  - Виріжте **2 деталі кишені**
+- **Взаємодія**
+  - Виріжте **1 пояс** частину на згин
 
 <Note>
 
-If your main fabric is quite lightweight and flimsy you may need to interface the leg bands with a light interfacing.
+Якщо ваша основна тканина досить легка і неміцна, можливо, вам знадобиться з'єднати стрічки для ніг легкою прокладкою.
 
 </Note>
