@@ -1,15 +1,15 @@
 - - -
-title: "Bulge"
+назва: "Опуклість"
 - - -
 
-![The bulge option on Bruce](./bulge.svg)
+![Варіант опуклості на Брюсі](./bulge.svg)
 
-How much room do you want in the front pouch?
+Скільки місця ви хочете мати в передній сумці?
 
-This option will increase the front dart, thereby creating more room in the front.
+Цей варіант збільшить передню виточку, тим самим створивши більше простору спереду.
 
-> If it's vertical room you're looking for, that's what the **rise** option does
+> Якщо вам потрібна вертикальна кімната, ось що робить опція **rise**
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bruce_bulge_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bruce_bulge_sample.svg "Вплив цієї опції на шаблон")
