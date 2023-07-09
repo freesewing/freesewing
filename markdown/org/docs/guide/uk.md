@@ -3,7 +3,7 @@ title: Перші кроки
 order: 100
 ---
 
-Hi there 👋 and welcome to freesewing.org 🙂
+Привіт 👋 і ласкаво просимо на сайт freesewing.org 🙂
 
 Reading this guide will take about 10 minutes of your time now, to save you a bunch of questions later, and make sure you get the most out of our website.
 
@@ -15,7 +15,7 @@ Reading this guide will take about 10 minutes of your time now, to save you a bu
 - Ми розглянемо [як Ви можете налаштувати свої викрійки][9] з налаштуваннями дизайну та кресленика
 - Наостанок, ми розповімо [де Ви можете отримати допомогу][10], якщо Ви застрягли.
 
-Sounds good? Then let's dive right in:
+Звучить непогано? Тоді давайте зануримося:
 
 <ReadMore />
 
