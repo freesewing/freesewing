@@ -1,20 +1,20 @@
 - - -
-title: "Cross seam bend"
+Назва: "Згин поперечного шва"
 - - -
 
-Controls the curvature of the cross seam curve.
+Контролює кривизну кривої поперечного шва.
 
 <Note>
 
-This curve has an influence on the amount of fabric at your bum.
+Ця крива впливає на кількість тканини на сідницях.
 
-People with a flatter bum will get a better fit by increasing this, as the curve will start later,
-and this there will be less fabric pooling at the bum.
+Люди з пласкою попою отримають кращу посадку, якщо збільшать цей параметр, оскільки вигин починається пізніше,
+і при цьому буде менше скупчення тканини на попі.
 
-People with a round bum might want to lower this to create a little more (horizontal) room for their behind.
+Люди з круглими сідницями можуть захотіти опустити її нижче, щоб створити трохи більше (горизонтального) простору для сідниць.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_crossseamcurvebend_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](charlie_crossseamcurvebend_sample.svg "Вплив цієї опції на шаблон")
