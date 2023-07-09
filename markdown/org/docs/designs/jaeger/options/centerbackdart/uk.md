@@ -1,11 +1,11 @@
 - - -
-title: "Center back dart"
+назва: "Дротик по центру спини"
 - - -
 
-![Center back dart](centerbackdart.svg)
+![Дротик по центру спини](centerbackdart.svg)
 
-The reduction at the center back from shoulders to neck, which accomodates for a curved upper back.
+Зменшення по центру спини від плечей до шиї, що пристосовується до вигнутої верхньої частини спини.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_centerbackdart_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_centerbackdart_sample.svg "Вплив цієї опції на шаблон")
