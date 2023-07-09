@@ -5,21 +5,6 @@ const common = {
   security: [jwt, key],
 }
 
-const local = {
-  params: {
-    id: {
-      in: 'path',
-      name: 'id',
-      required: true,
-      description: "The Set's unique ID",
-      schema: {
-        example: 666,
-        type: 'integer',
-      },
-    },
-  },
-}
-
 // Paths
 export const paths = {}
 

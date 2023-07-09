@@ -1,5 +1,4 @@
 // Dependencies
-import { siteConfig } from 'site/site.config.mjs'
 import translators from 'site/prebuild/translators.json'
 // Context
 import { LoadingContext } from 'shared/context/loading-context.mjs'
@@ -8,10 +7,8 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useState, useContext } from 'react'
-import { useTranslation } from 'next-i18next'
 // Components
 import { ChoiceButton } from 'shared/components/choice-button.mjs'
-import { I18nIcon } from 'shared/components/icons.mjs'
 import { Popout } from 'shared/components/popout.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
 
@@ -48,30 +45,12 @@ const languages = [
   'Turkish',
 ]
 
-const TeamList = ({ language, t }) => {
-  const count = Object.keys(translators[language]).length
-
-  return (
-    <>
-      {Object.keys(translators[language])
-        .sort()
-        .map((name, i) => (
-          <span key={name}>
-            <b>{name}</b>
-            {i < count - 2 ? ', ' : i < count - 1 ? ' & ' : ' '}
-          </span>
-        ))}
-    </>
-  )
-}
-
 export const SuggestLanguageForm = () => {
   // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+  const { startLoading, stopLoading } = useContext(LoadingContext)
 
   // Hooks
-  const { t } = useTranslation(ns)
-  const { account, setAccount, token } = useAccount()
+  const { token } = useAccount()
   const backend = useBackend(token)
   const toast = useToast()
 

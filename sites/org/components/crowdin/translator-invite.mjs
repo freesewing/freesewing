@@ -22,30 +22,13 @@ const languages = [
   ...siteConfig.languagesWip,
 ].sort()
 
-const TeamList = ({ language, t }) => {
-  const count = Object.keys(translators[language]).length
-
-  return (
-    <>
-      {Object.keys(translators[language])
-        .sort()
-        .map((name, i) => (
-          <span key={name}>
-            <b>{name}</b>
-            {i < count - 2 ? ', ' : i < count - 1 ? ' & ' : ' '}
-          </span>
-        ))}
-    </>
-  )
-}
-
 export const TranslatorInvite = () => {
   // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+  const { startLoading, stopLoading } = useContext(LoadingContext)
 
   // Hooks
   const { t } = useTranslation(ns)
-  const { account, setAccount, token } = useAccount()
+  const { token } = useAccount()
   const backend = useBackend(token)
   const toast = useToast()
 
@@ -97,29 +80,26 @@ export const TranslatorInvite = () => {
       <p>{t('translation:pleaseChooseTeam')}</p>
       <h5>{t('translation:whatTeam')}</h5>
       <div className="flex flex-col gap-2 lg:grid lg:grid-cols-2 gap-2 mt- mb-82">
-        {languages.map((language) => {
-          const count = Object.keys(translators[language]).length
-          return (
-            <ChoiceButton
-              noMargin
-              key={language}
-              icon={<I18nIcon />}
-              title={t('translation:languageTeam', { language: t('locales:' + language) })}
-              onClick={() => setTeam(language)}
-            >
-              <div className="text-sm flex flex-row flex-wrap gap-1">
-                {Object.keys(translators[language]).map((name, i) => (
-                  <span
-                    key={i}
-                    className="bg-secondary bg-opacity-10 rounded px-2 text-sm border border-secondary"
-                  >
-                    {name}
-                  </span>
-                ))}
-              </div>
-            </ChoiceButton>
-          )
-        })}
+        {languages.map((language) => (
+          <ChoiceButton
+            noMargin
+            key={language}
+            icon={<I18nIcon />}
+            title={t('translation:languageTeam', { language: t('locales:' + language) })}
+            onClick={() => setTeam(language)}
+          >
+            <div className="text-sm flex flex-row flex-wrap gap-1">
+              {Object.keys(translators[language]).map((name, i) => (
+                <span
+                  key={i}
+                  className="bg-secondary bg-opacity-10 rounded px-2 text-sm border border-secondary"
+                >
+                  {name}
+                </span>
+              ))}
+            </div>
+          </ChoiceButton>
+        ))}
       </div>
     </>
   )

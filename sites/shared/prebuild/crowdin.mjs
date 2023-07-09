@@ -53,7 +53,6 @@ const downloadReport = async (url) => await sendApiRequest('', false, url)
 
 export const prebuildCrowdin = async () => {
   const contributions = {}
-  const reports = []
   for (let language of languages) {
     console.log(`Loading translator contributions for ${language}`)
     contributions[language] = {}

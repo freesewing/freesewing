@@ -1,4 +1,3 @@
-import { log } from '../utils/log.mjs'
 import { UserModel } from './user.mjs'
 import { i18nUrl } from '../utils/index.mjs'
 
