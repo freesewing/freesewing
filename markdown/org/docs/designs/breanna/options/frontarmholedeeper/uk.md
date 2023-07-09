@@ -1,11 +1,11 @@
 - - -
-title: "Front armhole extra cutout"
+назва: "Додатковий виріз для передньої пройми"
 - - -
 
-Controls how much the front of the armhole is cut deeper into the garment than the back.
+Контролює, наскільки передня частина пройми врізана в одяг глибше, ніж задня.
 
-Since the human shoulder is more rounded at the front of the body, the sleeve(cap) is more rounded there too, and the armhole is typically cut deeper into the front of the garment than the back. This option controls how much deeper.
+Оскільки плече людини більш округле в передній частині тіла, рукав (шапка) також більш округлий, а пройма зазвичай вирізана глибше в передній частині одягу, ніж задній. Цей параметр визначає, наскільки глибоко занурюватися.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_frontarmholedeeper_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](breanna_frontarmholedeeper_sample.svg "Вплив цієї опції на шаблон")
