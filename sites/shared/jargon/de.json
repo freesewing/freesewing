@@ -92,12 +92,12 @@
     "description": "Siehe <a href='/docs/sewing/zig-zag-stitch/'>Zickzackstich</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
   },
   "freesewing": {
-    "term": "freesewing",
+    "term": "FreeSewing",
     "description": "<b>FreeSewing</b> ist eine Open-Source Plattform für Schnittmuster nach Maß"
   },
-  "patrons": {
-    "term": "Förderer/-innen",
-    "description": "Förderer/-innen unterstützen Freesewing finanziell. Sie sind treue Unterstützer/-innen, die für eine nachhaltige Zukunft für freesewing.org, unseren Code, unsere Schnittmuster und unsere Community sorgen."
+  "patternOptions": {
+    "term": "Schnittmusteroptionen",
+    "description": "Die <b>Schnittmusteroptionen</b> erlauben es dir, das Design des Schnittmusters anzupassen"
   },
   "msf": {
     "term": "MSF",
