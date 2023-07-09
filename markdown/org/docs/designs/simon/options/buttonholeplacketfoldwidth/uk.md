@@ -1,20 +1,20 @@
 - - -
-title: "Buttonhole placket fold width"
+Назва: "Ширина згину планки петлі"
 - - -
 
-![Buttonhole placket fold width](buttonholeplacketfoldwidth.svg)
+![Ширина згину петель кокетки](buttonholeplacketfoldwidth.svg)
 
-The width of the fold on a classic style buttonhole placket.
+Ширина складки на класичній петлиці з ґудзиками.
 
 <Note>
 
-If you have a fabric with a pattern (striped or checkers for example) you can set the fold to half the width of your repeating pattern.
-This way, your pattern will match perfectly.
+Якщо у вас тканина з візерунком (наприклад, у смужку або клітинку), ви можете встановити згин на половину ширини повторюваного візерунка.
+Таким чином, ваш візерунок буде ідеально поєднуватися.
 
-This only applies to a classic placket. So it will be ignored if you opted for a seamless buttonhole placket style.
+Це стосується лише класичної планки. Тому він буде проігнорований, якщо ви вибрали безшовну петличку з ґудзиками.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_buttonholeplacketfoldwidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_buttonholeplacketfoldwidth_sample.svg "Вплив цієї опції на шаблон")
