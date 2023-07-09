@@ -1,5 +1,5 @@
 - - -
-title: "Brian body block"
+назва: "Брайан-боді-блок"
 - - -
 
 <PatternDocs pattern='brian' />
