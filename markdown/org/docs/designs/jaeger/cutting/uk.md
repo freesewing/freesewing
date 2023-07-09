@@ -1,53 +1,53 @@
 - - -
-title: "Jaeger jacket: Cutting Instructions"
+назва: "Єгерська куртка: Інструкція з крою"
 - - -
 
-- **Main fabric**
-  - Cut **2 fronts** (part 1)
-  - Cut **2 front facings** (look for the facing/lining boundary on the front part)
-  - Cut **2 backs** (part 2)
-  - Cut **2 sides** (part 3)
-  - Cut **2 topsleeves** (part 4)
-  - Cut **2 undersleeves** (part 5)
-  - Cut **1 collar** (part 6)
-  - Cut **1 collarstand** (part 8)
-  - Cut **2 pockets** (part 9)
-  - Cut **1 chest pocket welt** (part 10)
-- **lining fabric**
-  - Cut **2 fronts** (part 1)
-  - Cut **2 front linings** (look for the facing/lining boundary on the front part, and don't forget to attach the inner pocket facing extension)
-  - Cut **2 backs** (part 2)
-  - Cut **2 sides** (part 3)
-  - Cut **2 topsleeves** (part 4) Note: Some people like to use different lining for the sleeves
-  - Cut **2 undersleeves** (part 5) Note: Some people like to use different lining for the sleeves
-  - Cut **2 chest pocket bags** (part 11)
-  - Cut **2 inner pocket welts**
-  - Cut **2 inner pocket bags** (part 13)
-- **Canvas**
-  - Cut **2 fronts** on bias (part 1) Note: Don't include seam allowance
-  - Cut **2 chest pieces** on bias. Look for the indication on the front part. Note: Don't include seam allowance
-- **Undercollar fabric**
-  - Cut **2 undercollars** (part 7)
+- **Основна тканина**
+  - Вирізати **2 фронти** (частина 1)
+  - Викроїти **2 лицьові панелі** (шукайте межу облицювання/підкладки на лицьовій частині)
+  - Вирізати **2 спинки** (частина 2)
+  - Виріжте **2 сторони** (частина 3)
+  - Викрійка **2 верхніх рукава** (частина 4)
+  - Викроїти **2 нижніх рукава** (частина 5)
+  - Крій **1 комір** (частина 6)
+  - Крій **1 підставка для коміра** (частина 8)
+  - Викрійка **2 кишені** (частина 9)
+  - Виріжте **1 шов нагрудної кишені** (частина 10)
+- **підкладкова тканина**
+  - Вирізати **2 фронти** (частина 1)
+  - Викроїти **2 передні підкладки** (шукайте межу обшивки/підкладки на передній частині, і не забудьте прикріпити подовжувач обшивки внутрішньої кишені)
+  - Вирізати **2 спинки** (частина 2)
+  - Виріжте **2 сторони** (частина 3)
+  - Викрійка **2 верхніх рукава** (частина 4) Примітка: Деякі люди люблять використовувати різну підкладку для рукавів
+  - Викрійка **2 нижніх рукава** (частина 5) Примітка: Деякі люди люблять використовувати різні підкладки для рукавів
+  - Викроїти **2 нагрудні кишенькові сумки** (частина 11)
+  - Крій **2 шви внутрішніх кишень**
+  - Викроїти **2 сумки з внутрішніми кишенями** (частина 13)
+- **Полотно**
+  - Викроїти **2 лицьові сторони** на зміщення (частина 1) Примітка: не враховувати припуски на шви
+  - Вирізаємо **2 частини грудки** по косому зрізу. Шукайте вказівки на передній частині. Примітка: Не враховуйте припуски на шви
+- **Тканина під комір**
+  - Вирізати **2 коміри** (частина 7)
 
 <Note>
 
-###### Good sides together, or precise pattern matching?
+###### Гарні сторони разом, або точна відповідність візерунку?
 
-When cutting out two, you can cut them [good sides together](/docs/sewing/good-sides-together).
-However, when working with fabric with a pattern, I prefer to cut them individually to finely control the pattern matching.
+Вирізаючи дві деталі, ви можете скласти їх [лицьовими сторонами разом] (/docs/sewing/good-sides-together).
+Однак, працюючи з тканиною з візерунком, я вважаю за краще розкроювати їх окремо, щоб точно контролювати відповідність візерунку.
 
-When you cut them individually, remember that they need to be mirror images of each other. So flip either your pattern or your fabric over when cutting the second one.
+Вирізаючи їх окремо, пам'ятайте, що вони мають бути дзеркальним відображенням одне одного. Тому під час викроювання другої частини переверніть або викрійку, або тканину.
 
 </Note>
 
 <Warning>
 
-###### Cutting caveats
+###### Застереження щодо крою
 
-- The chest piece is marked on the front.
-- Don't include seam allowance when cutting out canvas, and cut it on bias.
-- The front facing and lining is marked on the front piece. They split the front part in two along the boundary line. You can cut the front part along that line after cutting out the front from the main fabric. The inner pocket extension for the facing is printed separately, and you can tape it back in its place after cutting the pattern piece. **Do not forget to add seam allowance to both the facing and the lining for this boundary seam**.
+- Нагрудний виріб маркується спереду.
+- Під час викроювання полотна не враховуйте припуски на шви, а викроюйте його зі зміщенням.
+- На передній частині позначено лицьове облицювання та підкладку. Вони розділили передню частину навпіл по лінії розмежування. Ви можете викроїти передню частину по цій лінії після того, як викроїли передню частину з основної тканини. Подовжувач внутрішньої кишені для облицювання надрукований окремо, і ви можете приклеїти його на місце після вирізання деталі викрійки. **Не забудьте додати припуски на шви як до облицювання, так і до підкладки для цього крайового шва**.
 
-![Trace the front facing and lining from the front part](cuttingCaveat.svg)
+Викресліть лицьову обшивку і підкладку з передньої частини] (cuttingCaveat.svg)
 
 </Warning>
