@@ -10,6 +10,7 @@ import { Translators } from 'site/components/crowdin/translators.mjs'
 import { Popout } from 'shared/components/popout.mjs'
 import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
+import Link from 'next/link'
 
 // Translation namespaces used on this page
 const namespaces = [...new Set(pageNs), 'translation', 'locales']
@@ -30,7 +31,13 @@ const TranslationPage = ({ page }) => {
         <Popout tip>
           <h5>{t('translation:getInvolved')}</h5>
           <p>{t('translation:teamEffort')}</p>
-          <a href="https://freesewing.dev/guides/translation" className="btn btn-accent">
+          <Link href="/translation/join" className="btn btn-accent mr-2">
+            {t('translation:joinTheTeam')}
+          </Link>
+          <a
+            href="https://freesewing.dev/guides/translation"
+            className="btn btn-accent btn-outline"
+          >
             {t('translation:seeTranslationGuide')}
           </a>
         </Popout>
@@ -92,7 +99,13 @@ const TranslationPage = ({ page }) => {
             <br />
             {t('translation:addLanguage3')}
           </p>
-          <a href="https://freesewing.dev/guides/translation" className="btn btn-accent">
+          <Link href="/translation/suggest-language" className="btn btn-accent mr-2">
+            {t('translation:suggestLanguage')}
+          </Link>
+          <a
+            href="https://freesewing.dev/guides/translation"
+            className="btn btn-accent btn-outline"
+          >
             {t('translation:seeTranslationGuide')}
           </a>
         </Popout>

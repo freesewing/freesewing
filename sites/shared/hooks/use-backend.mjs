@@ -287,6 +287,20 @@ Backend.prototype.createIssue = async function (data) {
   return responseHandler(await api.post(`/issues`, data), 201)
 }
 
+/*
+ * Send translation invite
+ */
+Backend.prototype.sendTranslatorInvite = async function (language) {
+  return responseHandler(await api.post(`/flows/translator-invite/jwt`, { language }, this.auth))
+}
+
+/*
+ * Send language suggestion
+ */
+Backend.prototype.sendLanguageSuggestion = async function (data) {
+  return responseHandler(await api.post(`/flows/language-suggestion/jwt`, data, this.auth))
+}
+
 export function useBackend(token = false) {
   /*
    * This backend object is what we'll end up returning

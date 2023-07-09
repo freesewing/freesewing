@@ -93,6 +93,16 @@ const sitePages = (t = false, control = 99) => {
       t: t('translation'),
       s: 'translation',
       h: 1,
+      join: {
+        t: t('translation:joinATranslationTeam'),
+        s: 'translation',
+        h: 1,
+      },
+      'suggest-language': {
+        t: t('translation:suggestLanguage'),
+        s: 'translation',
+        h: 1,
+      },
     },
     sitemap: {
       t: t('sitemap'),

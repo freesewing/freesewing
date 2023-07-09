@@ -16,7 +16,7 @@ export const siteConfig = {
     dataset: 'site-content',
     apiVersion: '2023-06-17',
   },
-  languages: ['en', 'es', 'de', 'fr', 'nl'],
-  languagesWip: ['uk'],
+  languages: ['en', 'es', 'de', 'fr', 'nl', 'uk'],
+  languagesWip: [],
   site: 'FreeSewing.org',
 }

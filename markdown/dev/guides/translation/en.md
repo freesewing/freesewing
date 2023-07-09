@@ -19,16 +19,6 @@ We currently support the following five languages:
 - **es** : Spanish
 - **fr** : French
 - **nl** : Dutch
-
-## Incubator Languages
-
-For the following languages, our community has started an effort, but that
-effort has not yet reached the level of maturity that to make it a supported
-language.
-
-In other words, **these are the languages where we are most in need of extra
-translators**:
-
 - **uk** : Ukranian
 
 ## Become a FreeSewing translator
@@ -53,7 +43,7 @@ Discord](https://discord.freesewing.org) for any questions that may remain.
 
 ## Adding a new language
 
-We would love to make FreeSewing available in more langauges.  If you are
+We would love to make FreeSewing available in more langauges. If you are
 interested in starting a new translation effort, that is great.
 
 We ask that you familiarize yourself with this translation guide to understand
@@ -62,7 +52,7 @@ a new language with the link below.
 
 <Link compact>
 
-###### [Request to setup a new FreeSewing language](https://next.freesewing.org/translation/add-language)
+###### [Suggest a new FreeSewing language](https://next.freesewing.org/translation/suggest-language)
 </Link>
 
 <Fixme compact>
