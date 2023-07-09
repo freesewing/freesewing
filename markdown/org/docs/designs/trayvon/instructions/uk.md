@@ -1,220 +1,220 @@
 - - -
-title: "Trayvon tie: Sewing Instructions"
+назва: "Краватка з тройового полотна: Інструкція з пошиття"
 - - -
 
 <Tip>
 
-###### Just the tip
+###### Тільки кінчик
 
-The tip is the most sensitive part of the tie.
-If you have never made a tie before, I would advise you to make a few tie tips in scrap fabric before taking scissors and needles to your nice tie fabric.
+Кінчик - найчутливіша частина краватки.
+Якщо ви ніколи раніше не робили краватку, я б порадив вам зробити кілька краваток з обрізків тканини, перш ніж братися за ножиці та голки, щоб зробити гарну краватку з тканини.
 
-To practice tip-making, execute constructions steps 1 through 4 a couple of times until you get the hang of it.
+Щоб потренуватися у створенні чайових, виконайте кроки з 1 по 4 кілька разів, поки не наб'єте руку на цьому.
 
 </Tip>
 
 <Tip>
 
-###### Press wisely
+###### Притискайте з розумом
 
-Later in the construction steps, you will be asked to press your fabric. Please be careful that you are not using too much heat on a delicate fabric that can't handle it.
+На наступних етапах побудови вам буде запропоновано притиснути тканину. Будь ласка, будьте обережні, щоб не використовувати занадто сильне нагрівання на делікатній тканині, яка не може цього витримати.
 
-It's a good idea to try pressing some fabric scraps before you start. This will allow you to figure out what is a good heat setting for the fabric you are using.
+Перед початком роботи варто спробувати віджати кілька клаптиків тканини. Це дозволить вам з'ясувати, яке налаштування нагріву є оптимальним для тканини, яку ви використовуєте.
 
 </Tip>
 
-### Step 1: Sew the first side of your tie tail
+### Крок 1: Зшийте перший бік хвостика краватки
 
-![Sew the first side of the tie tail](step01.png)
+![Зшийте перший бік хвостика краватки](step01.png)
 
-Align the lining tail (piece 6) on top of the fabric tail (piece 4), good sides together
+Накладіть хвостик підкладки (деталь 6) на хвостик тканини (деталь 4) лицьовим боком до лицьового боку
 
-Shift the lining tail along a side running up the tail until the notch on the lining tail matches the notch on the fabric tail.
+Перемістіть хвіст підкладки вздовж сторони, що йде вгору по хвосту, так, щоб надсічка на хвості підкладки збіглася з надсічкою на хвості тканини.
 
-Sew in place, starting precisely at the matched notch, along the edge. Make sure to backtack on both sides.
+Пришийте на місці, починаючи точно з відповідного надрізу, вздовж краю. Переконайтеся, що ви прошили з обох боків.
 
-Two notches are now fixed the same spot.
+Дві насічки тепер фіксують одне й те саме місце.
 
-### Step 2: Sew the second side of your tie tail
+### Крок 2: Зшийте другу сторону хвостика краватки
 
-![Sew the second side of your tie tail](step02.png)
+![Зшийте другу сторону хвоста краватки](step02.png)
 
-Shift the fabric tail so that the second notch lines up with the notch on the lining tail (the place where your first seam started).
+Перемістіть хвостик тканини так, щоб друга надсічка збіглася з надсічкою на хвостику підкладки (місце, де починався перший шов).
 
-This will require you to fold a bit of the tie fabric out of the way, under the seam you make in step one.
+Для цього вам потрібно буде відігнути трохи тканини краватки вбік, під швом, який ви зробили на першому кроці.
 
-Sew in place, starting precisely at the matched notch, making sure to get a straight angle with your seam from step 1.
+Пришийте на місці, починаючи точно з відповідного надрізу, переконавшись, що ваш шов з кроку 1 утворює прямий кут.
 
-Now, all three notches are fixed the same spot.
+Тепер усі три насічки зафіксовані в одному місці.
 
-### Step 3: Finish the tie tail
+### Крок 3: Закінчіть хвіст краватки
 
-![Finish the tie tail](step03.png)
+![Закінчіть хвіст краватки](step03.png)
 
-Fold your tie open so that the two seams you made in step 1 and 2 lie on top of each other. Take care to fold it precisely; the folded edges should make a straight angle.
+Складіть краватку так, щоб два шви, які ви зробили на кроках 1 і 2, лежали один на одному. Складіть його акуратно; складені краї повинні утворювати прямий кут.
 
-Sew the point where the three notches and your two seams converge to the folded edge of the Fabric tip (part 4, on the left in the image).
+Пришийте місце, де сходяться три надсічки і два шви, до складеного краю тканинного наконечника (частина 4, зліва на зображенні).
 
-### Step 4: Turn the tail inside-out and inspect your work
+### Крок 4: Виверніть хвіст навиворіт і перевірте свою роботу
 
-![Turn the tail inside-out and inspect your work](step04.png)
+![Виверніть хвіст навиворіт і перевірте свою роботу](step04.png)
 
-After you've trimmed all threads, carefully flip your tail inside-out (technically you are flipping it outside-out as it is inside out now).
+Після того, як ви обрізали всі нитки, обережно переверніть хвіст навиворіт (технічно ви перевертаєте його назовні, оскільки зараз він навиворіт).
 
-If needed, you can gently push out the tip with a ruler.
+Якщо потрібно, можна акуратно виштовхнути кінчик лінійкою.
 
-Your tail should look like the picture, with a sharp point and straight edges.
+Ваш хвіст повинен виглядати, як на картинці, з гострим кінчиком і прямими краями.
 
-The seam where the tie fabric meets the tie lining does not sit at the edge of the tie but it sits a bit back, staying out of sight.
+Шов, де тканина краватки з'єднується з підкладкою, проходить не по краю краватки, а трохи ззаду, залишаючись поза увагою.
 
-If you managed to do all of this, you can do it again for the tip of your tie.
+Якщо вам вдалося зробити все це, ви можете повторити це для кінчика краватки.
 
-### Step 5: Sew the first side of your tie tip
+### Крок 5: Пришийте перший бік кінчика краватки
 
-![Sew the first side of your tie tip](step01.png)
+![Зшийте перший бік кінчика краватки](step01.png)
 
-Align the lining tip (piece 5) on top of the fabric tip (piece 3), good sides together
+Вирівняйте кінчик підкладки (деталь 5) поверх кінчика тканини (деталь 3), лицьовими сторонами разом
 
-Shift the lining tip along a side running up the tip until the notch on the lining tip matches the notch on the fabric tip.
+Перемістіть наконечник підкладки вздовж сторони, що йде вгору, доки виїмка на наконечнику підкладки не збігатиметься з виїмкою на наконечнику тканини.
 
-Sew in place, starting precisely at the matched notch, along the edge. Make sure to backtack on both sides.
+Пришийте на місці, починаючи точно з відповідного надрізу, вздовж краю. Переконайтеся, що ви прошили з обох боків.
 
-Two notches are now fixed the same spot.
+Дві насічки тепер фіксують одне й те саме місце.
 
-### Step 6: Sew the second side of your tie tip
+### Крок 6: Пришийте другу сторону кінчика краватки
 
-![Sew the second side of your tie tip](step02.png)
+![Пришийте другу сторону кінчика краватки](step02.png)
 
-Shift the fabric tip so that the second notch lines up with the notch on the lining tip (the place where your first seam started).
+Змістіть кінчик тканини так, щоб друга надсічка збіглася з надсічкою на кінчику підкладки (місце, де починався перший шов).
 
-This will require you to fold a bit of the tie fabric out of the way, under the seam you make in step five.
+Для цього вам потрібно буде відігнути трохи тканини краватки вбік, під швом, який ви зробили на п'ятому кроці.
 
-Sew in place, starting precisely at the matched notch, making sure to get a straight angle with your seam from step 5.
+Пришийте на місці, починаючи точно з відповідного надрізу, переконавшись, що ваш шов утворює прямий кут з кроком 5.
 
-Now, all three notches are fixed the same spot.
+Тепер всі три насічки зафіксовані в одному місці.
 
-### Step 7: Finish the tie tip
+### Крок 7: Обробіть кінчик краватки
 
-![Finish the tie tip](step03.png)
+![Закінчіть кінчик краватки](step03.png)
 
-Fold your tie open so that the two seams you made in step 5 and 6 lie on top of each other. Take care to fold it precisely; the folded edges should make a straight angle.
+Складіть краватку так, щоб два шви, які ви зробили на кроках 5 і 6, лежали один на одному. Складіть його акуратно; складені краї повинні утворювати прямий кут.
 
-Sew the point where the three notches and your two seams converge to the folded edge of the Fabric tip (part 3, on the left in the image).
+Пришийте місце, де сходяться три надсічки і два шви, до складеного краю тканинного наконечника (частина 3, зліва на зображенні).
 
-### Step 8: Turn the tip inside-out and inspect your work
+### Крок 8: Виверніть наконечник навиворіт і перевірте свою роботу
 
-![Turn the tip inside-out and inspect your work](step04.png)
+![Виверніть наконечник навиворіт і перевірте свою роботу](step04.png)
 
-After you've trimmed all threads, carefully flip your tip inside-out (technically you are flipping it outside-out as it is inside out now).
+Після того, як ви обрізали всі нитки, обережно переверніть кінчик навиворіт (технічно ви перевертаєте його назовні, оскільки зараз він навиворіт).
 
-If needed, you can gently push out the tip with a ruler.
+Якщо потрібно, можна акуратно виштовхнути кінчик лінійкою.
 
-Your tip should look like the picture, with a sharp point and straight edges.
+Ваш кінчик повинен виглядати як на малюнку, з гострим кінчиком і прямими краями.
 
-The seam where the tie fabric meets the tie lining does not sit at the edge of the tie but it sits a bit back, staying out of sight.
+Шов, де тканина краватки з'єднується з підкладкою, проходить не по краю краватки, а трохи ззаду, залишаючись поза увагою.
 
-### Step 9: Join the tie interfacing
+### Крок 9: З'єднайте краватку між собою
 
-![Join the tie interfacing](step09.png)
+![Приєднайте краватку до інтерфейсу](step09.png)
 
-Join Interfacing tip (piece 1) and Interfacing tail (piece 2) together on the non-pointy side, matching the notch.
+З'єднайте між собою наконечник інтерфейсу (деталь 1) і хвіст інтерфейсу (деталь 2) разом на незагостреній стороні, збігаючись з виїмкою.
 
-> **Or don't** To be honest, I never join the interfacing. I just leave both halves unattached.
+> **Або не** Чесно кажучи, я ніколи не приєднуюся до інтерфейсів. Я просто залишаю обидві половинки не з'єднаними.
 > 
-> This way, you can never get the length of your tie wrong, and you can just slide the interfacing parts over each other. In addition, it creates less bulk in the middle, and it's less work.
+> Таким чином, ви ніколи не помилитеся з довжиною краватки, і зможете просто насунути частини, що перетинаються, одна на одну. Крім того, це створює менше об'єму в середині, і це менше роботи.
 > 
-> So you can just skip this step, it's what I do.
+> Тож ви можете просто пропустити цей крок, я так і роблю.
 
-### Step 10: Join the tie fabric
+### Крок 10: З'єднайте тканину краватки
 
-![Join the tie fabric](step10.png)
+![З'єднайте тканину краватки](step10.png)
 
-> With the interfacing sewn together, the length of our tie is now determined. Measure the tie tip to tip, and make sure that you join the fabric pieces at the correct length.
+> Після того, як прокладки зшиті між собою, довжина нашої краватки визначена. Виміряйте краватку від кінчика до кінчика і переконайтеся, що ви з'єднуєте шматки тканини правильної довжини.
 
-Join the tip and tail fabric together on the non-pointy side.
+З'єднайте тканину кінчика і хвоста разом на не загостреному боці.
 
-### Step 11: Make your tie loop
+### Крок 11: Зробіть петлю для краватки
 
-![Make your tie loop](step11.png)
+![Зробіть петлю для краватки](step11.png)
 
-We are going to construct the Loop (piece 7) of our tie now.
+Тепер ми створимо петлю (деталь 7) нашої краватки.
 
-Fold the fabric as shown in the illustration. You need to end up with a narrow strip of fabric that has its ends tucked to the inside.
+Складіть тканину, як показано на малюнку. У вас повинна вийти вузька смужка тканини, кінці якої заправлені всередину.
 
-Make sure to have one edge a little bit shorter. This will be the back side.
+Переконайтеся, що один край трохи коротший. Це буде зворотний бік.
 
-While folding, reach for your iron and give it a good press so things stay in place. Also press the final loop before sewing it.
+Під час складання простягніть руку до праски і добре притисніть її, щоб речі залишалися на своїх місцях. Також притисніть останню петлю перед тим, як пришити її.
 
-> Careful when pressing, remember the pressing advice I gave earlier
+> Будьте обережні при натисканні, пам'ятайте нагальну пораду, яку я давав раніше
 
-When you're happy with how you folded and pressed your loop, hand-sew along the edge with a slipstitch to keep things in place.
+Коли ви задоволені тим, як склали і притиснули петлю, прошийте вручну по краю стьожковим швом, щоб утримати все на місці.
 
-### Step 12: Assemble your tie
+### Крок 12: Зберіть краватку
 
-![Assemble your tie](step12.png)
+![Зберіть краватку](step12.png)
 
-Time to start putting things together. Place your tie on a flat surface, good side down, lining up.
+Час починати збирати речі докупи. Покладіть краватку на рівну поверхню лицьовим боком донизу.
 
-Now take your tie interfacing, and place it in your tie with the seam allowance in the middle facing upwards. Make sure to slide it between your fabric and lining on each side, all the way to the tip.
+Тепер візьміть інтерфейс краватки і вкладіть його в краватку припуском на шов посередині догори. Переконайтеся, що ви просунули її між тканиною і підкладкою з обох боків, аж до самого кінчика.
 
-### Step 13: Fold and press your tie
+### Крок 13: Складіть і притисніть краватку
 
-![Fold and press your tie](step13.png)
+![Складіть і притисніть краватку](step13.png)
 
-With your tie interfacing inserted in your tie fabric, fold over one side of the fabric over the interfacing.
+Вставивши прокладку для краватки в тканину краватки, загніть один бік тканини над прокладкою.
 
-You want to fold it snugly around the interfacing, but without moving the interfacing, which should stay in the middle.
+Ви хочете скласти його щільно навколо інтерфейсу, але не рухаючи інтерфейс, який повинен залишатися посередині.
 
-When you're done, press your fold. Because of the tie interfacing, you're not pressing a sharp crease here, the main point is to shape the fabric to be more eager to stay folder around the interfacing.
+Закінчивши, натисніть на згин. Через те, що краватка переплітається з тканиною, тут не потрібно робити різких складок, головне - надати тканині форму, щоб вона охочіше залишалася складкою навколо перехрестя.
 
-> As we are not pressing a sharp crease here, but more shaping the fabric, a steam iron works best.
+> Оскільки тут ми не притискаємо різку складку, а більше надаємо тканині форму, найкраще підійде парова праска.
 
-When you have completed one side, fold back the other side, and steam again.
+Коли ви закінчите з одним боком, відверніть інший бік і знову відпарюйте.
 
-Finally, fold back the top layer along the middle of your tie, and press in place. This time, you are making a sharp crease along the middle of the tie.
+Нарешті, складіть верхній шар уздовж середини краватки і притисніть його на місці. Цього разу ви робите різку складку вздовж середини краватки.
 
-> To clarify the difference between the two last folds, I have included a dark line in the image that marks the edge of the fabric, or fold.
+> Щоб пояснити різницю між двома останніми складками, я включив темну лінію на зображенні, яка позначає край тканини, або складку.
 > 
-> As you can see, the first time we merely fold the fabric back, and it extends passed the center of the tie.
+> Як бачите, перший раз ми просто відгинаємо тканину назад, і вона простягається повз центр краватки.
 > 
-> The second time, we fold it back again in the middle, the place where we'll sew it in place.
+> Вдруге складаємо посередині, в тому місці, де будемо пришивати.
 
-### Step 14: Prepare the loop
+### Крок 14: Підготуйте петлю
 
-![Prepare the loop](step14.png)
+![Підготуйте петлю](step14.png)
 
-Fold your loop so the tail of your tie can pass through it with some room.
+Складіть петлю так, щоб хвіст краватки міг пройти крізь неї з деяким запасом.
 
-Mark the point where the loop ends join, and sew them together.
+Позначте місце з'єднання кінців петель і зшийте їх разом.
 
-Finally, press your loop open so the seam sits in the middle, and the ends point to one side.
+Нарешті, розправте петлю так, щоб шов був посередині, а кінці були спрямовані в один бік.
 
-### Step 15: Slip stitch tie, and insert loop
+### Крок 15: Протягніть зав'язку і вставте петлю
 
-![Slip-stitch tie, and insert loop](step15.png)
+![Зав'яжіть краватку ковзним швом і вставте петлю](step15.png)
 
-Use a slip stitch to hand sew your tie all along the length of the back.
+Пришийте краватку вручну по всій довжині спинки потайним швом.
 
-> Your slip stitch should only catch the tie fabric on the back. Refrain from running it through the tie interfacing.
+> Шов "ковзання" повинен захоплювати тканину краватки тільки з тильного боку. Утримайтеся від проходження через стяжку, що з'єднує краватку.
 > 
-> Be careful for is you run the stitch too deep, it might show on the front, and ruin your tie.
+> Будьте обережні, адже якщо ви зробите занадто глибокий стібок, він може виявитися спереду і зіпсувати краватку.
 
-Make sure to slide in your loop, somewhere around 1/5th of the tie length, starting from the tip.
+Переконайтеся, що ви просунули петлю приблизно на 1/5 довжини краватки, починаючи від кінчика.
 
-Use your slip stitch to secure the loop in place on the center seam; we'll fix the edges of the loop in the next step.
+За допомогою потайного стібка закріпіть петлю на центральному шві; ми закріпимо краї петлі на наступному кроці.
 
-### Step 16: Secure the loop edges
+### Крок 16: Закріпіть краї петлі
 
-![Secure the loop edges](step16.png)
+![Закріпіть краї петлі](step16.png)
 
-Hand sew the edges of the loop to your tie, so it stays in place nicely.
+Пришийте краї петлі до краватки вручну, щоб вона добре трималася на місці.
 
-Make sure to sew only the bottom layer of the loop, so the stitches don't show on the loop.
+Переконайтеся, що ви прошиваєте тільки нижній шар петлі, щоб стібки не були помітні на петлі.
 
-And, once again, be careful not to run your stitches through your tie. Be shallow.
+І, знову ж таки, будьте обережні, щоб не протягнути стібки через краватку. Будь неглибоким.
 
-### Step 17: Trim and clean up
+### Крок 17: Обріжте та почистіть
 
-![Trim and clean up](step17.png)
+![Обрізати та прибрати](step17.png)
 
-Trim any loose threads you might have.
+Обріжте всі вільні нитки, які можуть залишитися.
