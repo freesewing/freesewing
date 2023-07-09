@@ -1,8 +1,8 @@
 - - -
-title: "Diana draped top: Fabric Options"
+заголовок: "Топ з драпіруванням "Діана": Варіанти тканин"
 - - -
 
-This top works best in one of these two scenarios:
+Цей топ найкраще працює в одному з цих двох сценаріїв:
 
-- Use a stretch fabric, and choose minimal ease
-- Or use a non-stretch fabric with good _drape_, in which case you'll want to add more ease. Flowy fabrics can be cut on the bias for a body-hugging effect
+- Використовуйте еластичну тканину та обирайте мінімальну легкість
+- Або використовуйте нерозтяжну тканину з гарною _драпіровкою_, в такому випадку ви захочете додати більше легкості. Струмливі тканини можна кроїти з нахилом для ефекту облягання тіла
