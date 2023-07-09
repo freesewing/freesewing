@@ -1,11 +1,11 @@
 - - -
-title: "Leg stretch"
+Назва: "Розтяжка для ніг"
 - - -
 
-![The leg stretch option on Bruce](./legstretch.svg)
+![Варіант розтяжки ніг на Брюсі](./legstretch.svg)
 
-The amount of stretch at the (upper) legs.
+Кількість розтяжки на (верхніх) ногах.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bruce_legstretch_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bruce_legstretch_sample.svg "Вплив цієї опції на шаблон")
