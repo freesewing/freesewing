@@ -1,9 +1,9 @@
 - - -
-title: "Albert apron: Fabric Options"
+title: "Albert schort: Stofopties"
 - - -
 
 Een apron werkt het beste met een stof die stevig en strak geweven is en gemakkelijk schoon te maken. In addition, make sure to go for a natural fibre and in any case something that is heat-resistant.
 
-Heavy cotton, chino, canvas or denim are all excellent choices.
+Een zwaar katoen, chino, canvas of denim zijn allemaal uitstekende keuzes.
 
-When in doubt, go for raw denim (pure cotton, if it stretches it's no good).
+Als je twijfelt, ga dan voor raw denim (puur katoen, als het uitrekt is het niet goed).
