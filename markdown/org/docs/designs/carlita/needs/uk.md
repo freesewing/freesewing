@@ -1,22 +1,22 @@
 - - -
-title: "Carlita coat: What You Need"
+назва: "Пальто Карліта: Те, що вам потрібно"
 - - -
 
-To make Carlita, you will need the following:
+Щоб зробити Карліту, вам знадобиться наступне:
 
-- Basic sewing supplies
-- About 5 - 6 metres (5.5 - 6.6 yards) of a suitable main fabric ([see Carlita Fabric options](/docs/patterns/carlita/fabric/))
-- About 3.5 - 4 metres (3.8 - 4.4 yards) of lining fabric ([see Carlita Fabric options](/docs/patterns/carlita/fabric/))
-- About 0.75 - 1 metre (0.8 - 1.1 yards) of sleeve lining fabric ([see Carlita Fabric options](/docs/patterns/carlita/fabric/))
-- Light to Mediumweight hair canvas ([see Carlita Fabric options](/docs/patterns/carlita/fabric/))
-- Heavyweight hair canvas ([see Carlita Fabric options](/docs/patterns/carlita/fabric/))
-- Tailors tape
-- 6 Buttons for front closure
-- Strong thread for attaching facings
-- (Optional) Silk buttonhole twist if hand-sewing the buttonholes and buttons.
+- Основні матеріали для шиття
+- Приблизно 5 - 6 метрів (5,5 - 6,6 ярдів) відповідної основної тканини ([див. варіанти тканини Carlita](/docs/patterns/carlita/fabric/))
+- Приблизно 3,5 - 4 метри (3,8 - 4,4 ярда) підкладкової тканини ([див. варіанти тканини Carlita](/docs/patterns/carlita/fabric/))
+- Приблизно 0,75 - 1 метр (0,8 - 1,1 ярда) підкладкової тканини для рукавів ([див. варіанти тканини Carlita](/docs/patterns/carlita/fabric/))
+- Легке та середнє полотно для волосся ([див. варіанти тканини Carlita](/docs/patterns/carlita/fabric/))
+- Важке полотно з волосся ([див. варіанти тканини Carlita](/docs/patterns/carlita/fabric/))
+- Кравецька стрічка
+- 6 Кнопки для закриття спереду
+- Міцна різьба для кріплення облицювання
+- (Необов'язково) Шовкова петля для ґудзиків, якщо ви пришиваєте петлі та ґудзики вручну.
 
 <Warning>
 
-Carlita has a lot of pieces! These lengths are estimates, you may need more or less depending on your size but if in doubt add an extra 0.5 to 1 metre of fabric.
+У Карліти багато робіт! Ця довжина є приблизною, вам може знадобитися більше або менше залежно від вашого розміру, але якщо ви сумніваєтеся, додайте додаткові 0,5-1 метр тканини.
 
 </Warning>
