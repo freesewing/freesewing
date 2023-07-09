@@ -1,11 +1,11 @@
 - - -
-title: "Length bonus"
+назва: "Бонус за довжину"
 - - -
 
-![Length bonus](lengthbonus.svg)
+![Бонус за довжину](lengthbonus.svg)
 
-How much longer than the default length to make your top.
+Наскільки довшим від довжини за замовчуванням зробити ваш топ.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](tamiko_lengthbonus_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](tamiko_lengthbonus_sample.svg "Вплив цієї опції на шаблон")
