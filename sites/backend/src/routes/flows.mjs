@@ -14,4 +14,12 @@ export function flowsRoutes(tools) {
   app.post('/flows/translator-invite/key', passport.authenticate(...bsc), (req, res) =>
     Flow.sendTranslatorInvite(req, res, tools)
   )
+
+  // Send a language suggestion (to add a new language)
+  app.post('/flows/language-suggestion/jwt', passport.authenticate(...jwt), (req, res) =>
+    Flow.sendLanguageSuggestion(req, res, tools)
+  )
+  app.post('/flows/language-suggestion/key', passport.authenticate(...bsc), (req, res) =>
+    Flow.sendLanguageSuggestion(req, res, tools)
+  )
 }

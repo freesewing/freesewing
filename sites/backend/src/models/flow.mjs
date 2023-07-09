@@ -11,6 +11,9 @@ export function FlowModel(tools) {
   return this
 }
 
+/*
+ * Send a translator invite
+ */
 FlowModel.prototype.sendTranslatorInvite = async function ({ body, user }) {
   if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
   if (Object.keys(body).length < 1) return this.setResponse(400, 'postBodyMissing')
@@ -30,6 +33,32 @@ FlowModel.prototype.sendTranslatorInvite = async function ({ body, user }) {
       actionUrl: this.config.crowdin.invites[body.language],
       whyUrl: i18nUrl(body.language, `/docs/faq/email/why-transinvite`),
       supportUrl: i18nUrl(body.language, `/patrons/join`),
+    },
+  })
+
+  return this.setResponse(200, 'sent', {})
+}
+
+/*
+ * Send a language suggestion to the maintainer
+ */
+FlowModel.prototype.sendLanguageSuggestion = async function ({ body, user }) {
+  if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
+  if (Object.keys(body).length < 1) return this.setResponse(400, 'postBodyMissing')
+  if (!body.language) return this.setResponse(400, 'languageMissing')
+
+  // Load user making the call
+  await this.User.revealAuthenticatedUser(user)
+
+  // Send the invite email
+  await this.mailer.send({
+    template: 'langsuggest',
+    language: body.language,
+    to: this.config.maintainer,
+    subject: '[FreeSewing] New language suggested',
+    replacements: {
+      datadump: JSON.stringify(body, null, 2),
+      userdump: JSON.stringify(this.User.clear, null, 2),
     },
   })
 

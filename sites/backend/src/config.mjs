@@ -33,6 +33,8 @@ const crowdinProject = 'https://translate.freesewing.org/project/freesewing/'
 const baseConfig = {
   // Environment
   env: process.env.NODE_ENV || 'development',
+  // Maintainer contact
+  maintainer: 'joost@freesewing.org',
   // Feature flags
   use: {
     github: envToBool(process.env.BACKEND_ENABLE_GITHUB),

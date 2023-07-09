@@ -12,3 +12,14 @@ FlowsController.prototype.sendTranslatorInvite = async (req, res, tools) => {
 
   return Flow.sendResponse(res)
 }
+
+/*
+ * Send out an email to the maintainer to notify them of a new language suggestion
+ * See: https://freesewing.dev/reference/backend/api
+ */
+FlowsController.prototype.sendLanguageSuggestion = async (req, res, tools) => {
+  const Flow = new FlowModel(tools)
+  await Flow.sendLanguageSuggestion(req)
+
+  return Flow.sendResponse(res)
+}
