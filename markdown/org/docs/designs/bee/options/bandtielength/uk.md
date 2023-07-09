@@ -1,11 +1,11 @@
 ---
-title: "Band (chest) tie length"
+title: "Довжина бандажної (нагрудної) краватки"
 ---
 
 ***
 
-Controls the length of the tie around your chest
+Контролює довжину краватки на грудях
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_bandtielength_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bee_bandtielength_sample.svg "Вплив цієї опції на шаблон")
