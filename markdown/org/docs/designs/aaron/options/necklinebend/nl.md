@@ -1,5 +1,5 @@
 - - -
-title: "Neckline shape"
+title: "Halsvorm"
 - - -
 
 ![De optie voor de vorm van de halslijn bij Aaron](./necklinebend.svg)
