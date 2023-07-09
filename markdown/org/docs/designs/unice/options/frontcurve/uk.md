@@ -1,8 +1,8 @@
 ---
-title: "Front Curve"
+title: "Передня крива"
 ---
 
-Together with the "Front waist dip" option, this option controls how much the front waist curves (revealing more or less skin). For this option, the curve is achieved by slanting the pattern piece and allowing the fabric to conform to the body shape. (For fabric with horizontal stripes, the stripes would remain continuous but would dip around the waist.)
+Разом з опцією "Нахил талії спереду" ця опція контролює, наскільки сильно вигинається талія спереду (відкриваючи більше або менше шкіри). У цьому варіанті вигин досягається за рахунок нахилу викрійки, що дозволяє тканині прилягати до форми тіла. (На тканині з горизонтальними смужками смужки залишатимуться безперервними, але заглиблюватимуться в районі талії).
 
-When this option is used, the shape of the front pattern piece does not fully convey the shape when worn. The projected dip at the front center of the waist can be found in the info generated together with the pattern.
+При використанні цієї опції форма передньої деталі не повністю передає форму при носінні. Прогнозований залом по центру талії спереду можна знайти в інформації, згенерованій разом з викрійкою.
 
