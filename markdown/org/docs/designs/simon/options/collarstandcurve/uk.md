@@ -1,17 +1,17 @@
 - - -
-title: "Collar stand curve"
+назва: "Крива стійка коміра"
 - - -
 
-![Collarstand curve](collarstandcurve.svg)
+![Крива стійки коміра](collarstandcurve.svg)
 
-How much the collar stand curves up at the edges.
+Наскільки сильно стійка коміра вигинається по краях.
 
 <Note>
 
-You can tweak this to make sure the edges of your collar stand at the front or nicely horizontal.
+Ви можете налаштувати його так, щоб краї коміра стояли спереду або горизонтально.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarstandcurve_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_collarstandcurve_sample.svg "Вплив цієї опції на шаблон")
