@@ -1,5 +1,5 @@
 - - -
-title: "Jaeger jacket: Design Options"
+назва: "Єгерська куртка: Варіанти дизайну"
 - - -
 
 <PatternOptions pattern='jaeger' />
