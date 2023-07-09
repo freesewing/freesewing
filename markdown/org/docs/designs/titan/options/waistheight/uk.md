@@ -1,12 +1,12 @@
 - - -
-title: "Waist height"
+Назва: "Висота талії"
 - - -
 
-Controls the height of the waist, where:
+Регулює висоту талії, де:
 
-- 100% : The waist of the trousers sits at the waist line
-- 0% : The waist of the trousers sits at the hip line
+- 100% : Талія штанів сидить на лінії талії
+- 0% : Талія штанів сидить на лінії стегон
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](titan_waistheight_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](titan_waistheight_sample.svg "Вплив цієї опції на шаблон")
