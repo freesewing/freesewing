@@ -1,11 +1,11 @@
 - - -
-title: "Length bonus"
+назва: "Бонус за довжину"
 - - -
 
-This option controls how far the block extend below your hips.
+Ця опція контролює, наскільки блок опускається нижче стегон.
 
-> Note that by default this block is as long as your hip line, which is almost certainly too short for the final garment.
+> Зауважте, що за замовчуванням цей блок має довжину до лінії стегон, що майже напевно буде занадто коротким для кінцевого виробу.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bent_lengthbonus_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bent_lengthbonus_sample.svg "Вплив цієї опції на шаблон")
