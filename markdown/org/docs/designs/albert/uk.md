@@ -1,5 +1,5 @@
 - - -
-title: "Albert apron"
+назва: "Фартух Альберта"
 - - -
 
 <PatternDocs pattern='albert' />
