@@ -1,5 +1,5 @@
 - - -
-title: "Cornelius cycling breeches: Required Measurements"
+"Корнеліус велосипедні штани": "Велосипедні бриджі Cornelius: Необхідні виміри"
 - - -
 
 <PatternMeasurements pattern='cornelius' />
