@@ -1,405 +1,405 @@
 - - -
-title: "Charlie chinos: Sewing Instructions"
+назва: "Чарлі-чінос: Інструкція з пошиття"
 - - -
 
-## Step 1: Close the back dart
+## Крок 1: Закрийте задню виточку
 
-First thing we're going to do is close the waist dart on the back panel.
+Перше, що ми зробимо, це закриємо талію на задньому полотнищі.
 
-To do so, fold the back panel double with _good sides together_ making sure to match both sides of the dart on top of each other.
+Для цього складіть задню панель вдвічі лицьовими _сторонами разом,_ переконавшись, що обидві сторони виточки накладені одна на одну.
 
-Now sew the dart close, making sure to use a small stitch length, and to sew all the way to the end of the dart, even a couple of stitches off the fabric.
+Тепер зашийте виточку, використовуючи невелику довжину стібка, і прошийте до кінця виточки, навіть на кілька стібків від тканини.
 
-![Closed darts](step01.svg)
-
-<Note>
-
-Your back darts should be of equal length. Make sure to sew them precisely.
-
-</Note>
-
-## Step 2: Construct the back pockets
-
-Follow [our double welt pocket instructions](/docs/sewing/double-welt-pockets/) to create the back welt pockets.
+![Закриті дротики](step01.svg)
 
 <Note>
 
-Since these are chinos, you can/should edgestitch around the welt opening.
-It's not strictly required for welt pockets, and typically not done on classic trousers (and thus not shown in
-the instructions) but it's a very typical finish for chinos, and makes it easier to keep everything in place.
+Виточки на спині повинні бути однакової довжини. Переконайтеся, що вони рівно пришиті.
 
 </Note>
 
-### Attach the back pocket facing to the pocket bag
+## Крок 2: Конструюємо задні кишені
 
-Join the back pocket facing to the pocket bag by placing them with _good sides together_ and sewing along the longest of the non-curved seams of the facing.
-
-When you're done, press the seam allowance to the side of the pocket bag.
-
-### Attach the back pocket bag
-
-Sew the bottom of the pocket bag to the bottom welt. Press it down when done.
-
-Now align the top of the pocket bag with the waist and sew it down in the waist's seam allowance.
-
-### Close the pocket back
-
-Fold the leg panel out of the way so you can close both sides of the pocket bag.
+Дотримуйтесь [наших інструкцій по створенню кишень з подвійним швом](/docs/sewing/double-welt-pockets/) , щоб створити задні кишені з подвійним швом.
 
 <Note>
 
-Make sure to also sew the pocket welts down on the pocket bag
+Оскільки це брюки-чинос, ви можете/повинні прострочити кант навколо отвору для шва.
+Він не є обов'язковим для прорізних кишень, і зазвичай не робиться на класичних брюках (і тому не показаний в інструкції
+), але це дуже типова обробка для чінос, яка дозволяє легше тримати все на місці.
 
 </Note>
 
-You should overlock/serge the sides of the pocketbag so they don't ravel.
+### Прикріпіть задню кишеню лицьовою стороною до кишенькової сумки
+
+Пришийте обшивку задньої кишені до сумки-кишені, поклавши їх _лицьовими боками разом_ і зшивши вздовж найдовшого з незагнутих швів обшивки.
+
+Закінчивши, притисніть припуск на шов до бокової сторони кишенькової сумки.
+
+### Прикріпіть сумку до задньої кишені
+
+Пришийте дно кишенькової сумки до нижнього шва. Натисніть на нього, коли закінчите.
+
+Тепер сумістіть верхню частину кишенькової сумки з талією і пришийте її до припуску на шов талії.
+
+### Закрийте кишеню назад
+
+Відкиньте панель для ніг, щоб можна було закрити обидві сторони кишенькової сумки.
+
+<Note>
+
+Не забудьте також зшити шви кишень на сумці-кишені
+
+</Note>
+
+Щоб боки кишенькової сумки не бовталися, їх слід обробити оверлоком/строчити, щоб вони не задиралися.
 
 <Tip>
 
-If you don't have a _serger_ you can always use a zig-zag stitch instead.
+Якщо у вас немає "сергера", ви завжди можете використати зигзагоподібну строчку.
 
 </Tip>
 
-## Step 3: Overlock the front and back edges
+## Крок 3: Обробіть оверлоком передній і задній краї
 
-Before we go any further, we'll overlock/serge the edges of the front and back panels of the legs. Make sure to also catch the top of the pocket bag when doing the back panels.
+Перш ніж ми продовжимо, ми обробимо оверлоком/строчкою краї передньої та задньої панелей ніжок. Не забудьте також зачепити верх кишенькової сумки, коли будете робити задні панелі.
 
 What we want to to prevent these edges from ravelling after we've completed our trousers, and now is the best time to do so.
 
-![Overlocked leg panels](step03.svg)
+![Оверлокові панелі для ніг](step03.svg)
 
-## Step 4:  Construct the front pocket opening
+## Крок 4: Побудуйте отвір передньої кишені
 
-The front pockets are a little unusual because they have the appearance of classic slanted pockets, but are constructed on the side seam.
+Передні кишені дещо незвичні, адже вони мають вигляд класичних косих кишень, але виконані в боковому шві.
 
-### Attach the front pocket facings to the pocket bags
+### Прикріпіть обшивки передніх кишень до кишенькових сумок
 
-We have two front pocket bags, that each have two pieces of facing to attach to them.
+У нас є дві передні кишенькові сумки, кожна з яких має по два шматки облицювання, щоб прикріпити до них.
 
-Align them with _good sides together_ (\*) and sew the facing in place.
-
-<Note>
-
-(\*) With a pocket bag, it's not so obvious what the good side should be.
-
-Do you want the good side to be what you feel when you put your hand in your pocket?
-Or do you want it to be what you see when your trousers lie on the floor with their insides showing.
-
-There's no right or wrong answer here. You do you.
-
-</Note>
-
-![Pocket bags sewn to facings](step04a.svg)
-
-### Mark the pocket notch on pocket facing, and front and back leg panels
-
-There's a notch on both front and back leg panels that indicates up to what point the pocket facing should be attached to the side seam.
-
-Make sure to transfer this notch to both the (edge of the) pocket facing and the front trouser leg, since it's important we match them.
-
-![Pocket facings with notches](step04b.svg)
-
-### Pin or base the pocket to the front and back leg panel
-
-Both on the front and the back leg panel, we're going to sew the pocket facing to the side seam.
-
-However, this needs to be precise, so you really want to make sure you either pin or baste it in place.
+Вирівняйте їх _лицьовими сторонами разом_ (\*) і пришийте обшивку на місце.
 
 <Note>
 
-Start with the front, since that's the easier seam. Once you've got some practice, you can do the back
+(\*) З кишеньковою сумкою не так очевидно, якою має бути хороша сторона.
+
+Ви хочете, щоб гарною стороною було те, що ви відчуваєте, коли опускаєте руку в кишеню?
+Або ви хочете, щоб це було те, що ви бачите, коли ваші штани лежать на підлозі з вивернутими нутрощами.
+
+Тут немає правильної чи неправильної відповіді. Ти - це ти.
 
 </Note>
 
-![Pocket bags sewn to pant leg panels](step04c.svg)
+![Кишенькові мішечки пришиті до облицювання](step04a.svg)
 
-### Sew the front pocket in place
+### Розмітьте виїмку кишені на обшивці кишені, а також на передній і задній панелях ніжок
 
-Sew from the waist down right until the notch that indicates where to stop.
+На передніх і задніх панелях штанин є надсічка, яка вказує, до якої точки обшивка кишені повинна бути пришита до бокового шва.
 
-### Press the front pocket slant
+Не забудьте перенести цю надсічку на лицьовий бік кишені і на передню штанину, оскільки важливо, щоб вони збігалися.
 
-Now press the slant of the front pocket, both on the back and front panel, so that it's a sharp crease.
+![Облицювання кишень з виїмками](step04b.svg)
 
-![Pressed front pocket slant](step04d.svg)
+### Прикріпіть кишеню до передньої та задньої панелі ніжки
 
-## Step 5:  Close the outseam
+Як на передній, так і на задній частині штанин пришиваємо кишеню лицьовим боком до бокового шва.
 
-### Baste the front pockets shut
-
-I strongly advise you to baste the pocket shut/in place before sewing this seam so that you know it's precise.
-
-Closing the outseam means to place front and back panel with good sides together, and sew the outer seam. That's easy enough at the legs, but at the top we have our pocket, which complicates things.
-
-### Sew the top of the outer seam until the top notch of the pocket slant
-
-Make sure everything is neatly aligned. Then sew from the top of the waist down to the top notch (this is just over a cm or half an inch).
-
-![Outer seam sewn until top notch](step05a.svg)
-
-### Sew the bottom of the outer seam from the bottom notch of the pocket slant
-
-Now move to the bottom notch of the pocket slant, and sew from there all the way to the bottom of the legs.
-
-![Outer seam sewn from lower pocket notch down](step05b.svg)
-
-### Press the outer seam open
-
-When you're done, make sure to press the seam allowance open along the leg. Don't press the pocket, we already did that.
-
-## Step 6:  Finish the front pocket bag
-
-### Sew pocket bag close inside-out
-
-With our pocket opening constructed and outer seam closed, we should now finish the pocket bag.
-
-Pull the pocket bag out so that it dangles on the outside of the trouser leg. Then place both halves together and either use a serger to finish the edge, or sew closely to the edge.
-
-Make sure you end up at the point where the bottom part of the outer seam starts.
-
-![Pocket bag, sewn closed](step06a.svg)
-
-### Finish pocket bag edge
-
-When you're done, you can flip the pocket bag back to the inside of the trouser leg.
-
-Our pocket bag is now closed, but when we put our hand in it, you can feel the raw edge of the seam allowance. To avoid that, topstitch along the edge of the pocket bag, locking in the seam allowance.
+Однак, це має бути точно, тому вам дійсно потрібно переконатися, що ви приколюєте або приклеюєте його на місце.
 
 <Note>
-If your seam allowance is wide, you might want to trim it back first.
+
+Почніть з лицьового боку, оскільки це найпростіший шов. Після того, як ви трохи попрактикуєтесь, ви можете робити спину
+
 </Note>
 
-![Pocket bag, finished](step06b.svg)
+![Кишенькові сумки, пришиті до штанин](step04c.svg)
 
-## Step 7:  Bar-tack the pocket opening
+### Пришийте передню кишеню на місце
 
-At the place the leg down with the good side up, making sure the pocket bag lies flat and towards the front panel.
+Шийте від талії вниз до надсічки, яка вказує, де зупинитися.
 
-Now at the top and bottom of the pocket opening, place a bar-tack perpendicular to the outer seam.
+### Притисніть передню кишеню по косій лінії
 
-![Bar tacks at pocket openings](step07.svg)
+Тепер притисніть скіс передньої кишені, як на задній, так і на передній панелі, так, щоб вийшла гостра складка.
 
-## Step 8:  Close the inseam
+![Вшита передня кишеня з нахилом](step04d.svg)
 
-With our front pockets finished, close the inseam of both legs.
+## Крок 5: Зашийте виворітний шов
 
-When you're done, press open the inseam.
+### Застебніть передні кишені
 
-![Closed inseams](step08.svg)
+Я наполегливо раджу вам прострочити кишеню перед тим, як пришивати цей шов, щоб бути впевненими, що він буде точним.
 
-## Step 9:  Close the crossseam
+Закриття виворітного шва означає, що передню і задню панелі потрібно скласти лицьовими сторонами один до одного і зшити зовнішній шов. В ногах це досить легко, але вгорі у нас є кишеня, що ускладнює справу.
 
-Make sure one leg is turned with the good side out, and the other has the good side in.
+### Зшийте верхній край зовнішнього шва до верхньої надсічки косої кишені
 
-Now tuck the leg with the good side out inside the leg that has the good side in. This way, they have their good sides against each other.
+Переконайтеся, що все акуратно вирівняно. Потім прошийте від верхньої частини талії до верхньої надсічки (це трохи більше см або півдюйма).
 
-Align the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. Stop at the lowest fly notch.
+![Зовнішній шов прошитий до верхнього краю](step05a.svg)
 
-When you're done. Do it again. Always sew the cross seam twice. It's one of those best practices you ignore at your own peril.
+### Зшийте низ зовнішнього шва від нижнього зрізу косої кишені
+
+Тепер перейдіть до нижнього зрізу косої кишені і прошийте від нього до низу штанин.
+
+![Зовнішній шов прошитий від нижнього зрізу кишені донизу](step05b.svg)
+
+### Розправте зовнішній шов
+
+Закінчивши, не забудьте розпрасувати припуск на шов уздовж штанини. Не натискайте на кишеню, ми це вже робили.
+
+## Крок 6: Закінчіть передню кишеню сумки
+
+### Зшийте кишенькову сумку навиворіт
+
+Зробивши отвір кишені і закривши зовнішній шов, ми повинні закінчити роботу над сумкою-кишенею.
+
+Витягніть кишенькову сумку так, щоб вона звисала з зовнішньої сторони штанини. Потім складіть обидві половинки разом і або за допомогою сержечки обробіть край, або зшийте впритул до краю.
+
+Переконайтеся, що ви дійшли до точки, де починається нижня частина зовнішнього шва.
+
+![Кишенькова сумка, зашита](step06a.svg)
+
+### Обробіть край кишенькової сумки
+
+Коли ви закінчите, ви можете перевернути кишенькову сумку назад на внутрішню сторону штанини.
+
+Наша кишенькова сумка тепер закрита, але коли ми засовуємо в неї руку, можна відчути необроблений край припуску на шов. Щоб уникнути цього, прострочіть верхню строчку по краю кишенькової сумки, зафіксувавши припуск на шов.
+
+<Note>
+Якщо припуск на шов широкий, спочатку обріжте його назад.
+</Note>
+
+![Кишенькова сумка, готова](step06b.svg)
+
+## Крок 7: Закріпіть отвір кишені планками
+
+Покладіть ногу вниз лицьовою стороною догори, переконавшись, що кишенькова сумка лежить рівно і спрямована до передньої панелі.
+
+Тепер зверху і знизу отвору кишені прикріпіть планку-закріпку перпендикулярно до зовнішнього шва.
+
+![Закріпки для планок на кишенькових отворах](step07.svg)
+
+## Крок 8: Зашийте шов
+
+Коли передні кишені готові, закриваємо зшивання обох штанин.
+
+Закінчивши, розправте шов.
+
+![Закриті шви](step08.svg)
+
+## Крок 9: Закрийте поперечний шов
+
+Переконайтеся, що одна нога повернута гарною стороною назовні, а інша - гарною стороною всередину.
+
+Тепер заправте ногу виворітною стороною всередину ноги, яка знаходиться виворітною стороною всередину. Таким чином, вони мають свої позитивні сторони один проти одного.
+
+Вирівняйте поперечний шов, починаючи з задньої частини талії, приколіть обидві половинки разом, просуваючись до ширінки. Зупиніться на найнижчій надсічці.
+
+Коли закінчиш. Зроби ще раз. Завжди прошивайте поперечний шов двічі. Це одна з тих найкращих практик, яку ви ігноруєте на свій страх і ризик.
 
 <Tip>
 
-Take extra care to carefully align the seams where both legs have their back and front panels joined together.
-Doing so will ensure your cross seam results with a perfectly aligned _cross_ where 4 pattern parts meet each other in a single point.
+Зверніть особливу увагу на ретельне вирівнювання швів, де обидві ніжки з'єднуються задньою і передньою панелями.
+Це забезпечить вам ідеально вирівняний поперечний шов, де 4 частини деталі перетинаються в одній точці.
 
-Getting it just right is one of those things you'll end up cherishing each time you wear these.
+Правильно підібраний розмір - це одна з тих речей, які ви будете цінувати кожного разу, коли вдягатимете їх.
 
 </Tip>
 
-## Step 10: Construct the fly
+## Крок 10: Сконструюйте мушку
 
-### Close fly extension
+### Закрийте подовжувач мушки
 
-Fold the fly extension on its fold line with good sides together.
+Складіть подовжувач мушки по лінії згину лицьовими сторонами разом.
 
-Now sew along the bottom, to close the fly extension.
+Тепер прошийте по низу, щоб закрити розширення мушки.
 
-Trim back one half of the seam allowance to remove bulk before turning it good side out and pressing.
+Обріжте половину припуску на шов, щоб прибрати зайве, а потім виверніть на виворітний бік і припрасуйте.
 
-### Serge the fly extension and fly facing
+### Обробіть подовжувач мушки та облицювання мушки
 
-Serge (or zig-zag) along the open side of the fly extension. No need to serge the top as that will get caught in our waistband.
+Серпантин (або зигзаг) вздовж відкритої сторони розвороту мушки. Не потрібно застібати верхню частину, оскільки вона буде зачіпатися за пояс.
 
-while you're at it, also serge along the entirety of the fly facings J-shaped edge.
+також прострочіть по всій ширині кокетки J-подібну кромку.
 
-### Cut away the extra seam allowance on the left leg front
+### Зріжте зайвий припуск на ліву штанину спереду
 
-There's extra seam allowance that runs along the fly. We only need this on the right leg panel. Cut it away on the left panel so you're left with the regular seam allowance only.
+Додатковий припуск на шов, що проходить вздовж ширинки. Нам це потрібно тільки на правій панелі для ніг. Відріжте його на лівій панелі так, щоб залишився лише припуск на звичайний шов.
 
-### Attach the fly facing
+### Прикріпіть лицьову сторону мушки
 
-Sew the fly facing to the left front. Place them with good sides together, aligning the top.
+Мушку пришийте лицьовим боком до лівого лицьового боку. Покладіть їх добрими сторонами один до одного, вирівнявши верхню частину.
 
-### Tuck in the tip of the fly facing
+### Заправте кінчик мушки лицьовою стороною
 
-Fold the bottom of the fly facing seam allowance inwards and secure with a few stitches.
+Загніть нижній край мушки лицьовим боком всередину і закріпіть кількома стібками.
 
-### Edge stitch the fly facing to the seam alowance
+### Крайню строчку пришийте до ширинки лицьовим боком до припуску на шов
 
-Sew the fly facing to the seam allowance. Make sure to leave the front panel out of it.
+Пришийте мушку лицьовим боком до припусків на шви. Переконайтеся, що передня панель не задіяна.
 
-### Press cross seam, fly facing and the fly edge
+### Припрасуйте поперечний шов, лицьову сторону мушки і край мушки
 
-Press open the cross seam. Press the fly facing to the side.
+Розправте поперечний шов. Притисніть ширинку лицьовою стороною вбік.
 
-Then, fold over the extra seam allowance on the right front leg and press it down.
+Потім відверніть додатковий припуск на правій передній штанині і припрасуйте.
 
-### Baste the zipper to the fly extension
+### Пришийте застібку-блискавку до подовжувача мушки
 
-Place the zipper along the (slightly curved) edge of the fly extension.
+Помістіть блискавку вздовж (злегка вигнутого) краю розширювача ширинки.
 
-Now sew along the edge. No need to get close to the zipper, just sew along the edge to hold them in place.
+Тепер прошийте по краю. Не потрібно наближатися до блискавки, просто прошийте по краю, щоб утримати її на місці.
 
-### Attach zipper to the fly
+### Прикріпіть блискавку до ширінки
 
-Now place the right front leg's fly with the extra seam allowance that you folded back on top of the zip.
+Тепер прикладіть ширинку правої передньої штанини з додатковим припуском, який ви відвернули, до застібки-блискавки.
 
-Use a zipper foot edge-stitch the folded-over edge along the zipper edge.
+За допомогою лапки для застібки-блискавки прострочіть підвернутий край уздовж краю застібки-блискавки.
 
 <Tip>
 
-You might want to baste this first to make sure it is nicely parallel to the zipper. Close, but not too close.
+Можливо, ви захочете спочатку пришити її, щоб переконатися, що вона паралельна застібці-блискавці. Близько, але не надто близько.
 
 </Tip>
 
-### Sew the zipper to the fly facing
+### Пришийте застібку-блискавку до вивороту мушки
 
-Now sew the other side of the zipper to the fly facing. Make sure to align it properly so that when the trousers are closed, the zip is hidden.
+Тепер пришийте іншу сторону застібки-блискавки до лицьового боку мушки. Переконайтеся, що вирівняли її правильно, щоб коли штани закриті, застібка-блискавка була прихована.
 
-### Finish the cross seam
+### Виконайте поперечний шов
 
-Sew the last bit of the cross seam up to the highest fly notch.
+Пришийте останній шматок поперечного шва до найвищої надсічки.
 
-### Sew the J-seam of the fly
+### Зшийте J-образний шов ширінки
 
-Now topstitch the so-called J-seam of the fly. Make sure to keep the fly extension out of the way.
+Тепер прострочіть так званий J-образний шов ширинки. Переконайтеся, що подовжувач мушки не заважає.
 
-### Bar tack the bottom of the fly
+### Закріпіть нижню частину мушки
 
-Now bartack the very botton of the J-seam (the horizontal part) but this time make sure to also catch the fly extension.
+Тепер припрасуйте саму гудзик J-образного шва (горизонтальну частину), але цього разу не забудьте також прихопити подовжувач мушки.
 
-## Step 11: Attach the belt loops
+## Крок 11: Прикріпіть петлі для ременя
 
-### Construct the belt loops
+### Створіть петлі для ременя
 
 <Note>
 
-For efficiency, we will contruct one long strip of belt loop that we'll divide into 8 parts.
+Для ефективності ми сконструюємо одну довгу смужку ремінної петлі, яку розділимо на 8 частин.
 
 </Note>
 
-Cut a strip 80cm long (32 inch) and 2.8cm wide (1 1/8 inch).
+Відріжте смужку довжиною 80 см (32 дюйми) і шириною 2,8 см (1 1/8 дюйма).
 
-Serge (or zigzag) the long edge of the strip on both sides.
+Застрочіть (або зробіть зигзаг) довгий край смужки з обох боків.
 
-Fold one side inwards, and the other side over it. Then press down with your iron. The end result should be a long strip about 1cm wide.
+Складіть одну сторону всередину, а іншу - поверх неї. Потім притисніть праскою. В результаті повинна вийти довга смужка шириною близько 1 см.
 
-Now sew along the entire length of the strip, smack in the middle of it. Make sure to use a generous stitch length for this.
+Тепер прошийте по всій довжині смужки, прострочіть посередині. Переконайтеся, що ви використовуєте достатню довжину стібка для цього.
 
-Finally, cut your length belt loops strip into 8 equal parts to make 8 belt loops.
+Нарешті, розріжте смужку для поясних петель потрібної довжини на 8 рівних частин, щоб вийшло 8 поясних петель.
 
-### Attach the belt loops
+### Прикріпіть петлі для ременя
 
-We're going to divide our belt loops along the waist:
+Ділимо петлі ременя вздовж талії:
 
-- 2 at the center back, each set aside a bit from the center so there's a small gap between them.
-- 1 above the back dart on each side
-- 1 on each side more or less where the side seam would hit the waist if it went straight up
-- 1 on each side from center front. Not too close to each other so there's no room for belt buckles, but not too far either so it doesn't look weird
+- 2 по центру ззаду, кожна з них трохи відсунута від центру, щоб між ними був невеликий проміжок.
+- 1 над задньою виточкою з кожного боку
+- по 1 з кожного боку більш-менш там, де бічний шов досягав би талії, якби він йшов прямо вгору
+- По 1 з кожного боку від центру спереду. Не надто близько один до одного, щоб не було місця для пряжок, але й не надто далеко, щоб це не виглядало дивно
 
 Place the belt loop at these places with their good side down (against the good side of the fabric of your trousers, and the top aligned with the waist) Sew this down in the seam allowance of the waist, making sure that they are perpendicular to the waistband.
 
-## Step 12: Attach the waist band
+## Крок 12: Прикріпіть пояс
 
-### Assemble curved waistband
+### Зберіть вигнутий пояс
 
-If you're making a straight waistband, skip directly to attaching the waistband to the outside.
+Якщо ви робите прямий пояс, переходьте безпосередньо до пришивання пояса назовні.
 
-Place both waistbands with good sides together, and sew along the top of the waistband (the shorter edge).
+Складіть обидва пояси лицьовими сторонами разом і зшийте по верхній частині пояса (по коротшому краю).
 
-Trim the seam allowance of the inner waistband, and press all seam allowances towards the inner waistband.
+Обріжте припуски швів внутрішнього пояса і припрасуйте всі припуски швів до внутрішнього пояса.
 
-You can now treat your assembled waistband as one piece, and continue as for the straight waistband.
+Тепер ви можете розглядати зібраний пояс як єдине ціле і продовжити роботу, як з прямим поясом.
 
 <Tip>
-To make sure your inner waistband doesn't peek out, you can _understitch_.
-Sew a line of stitching on the inside waistband, close to the edge, through the inner waistband and seam-allowances (but not the outer waistband!).
+Щоб переконатися, що внутрішній пояс не визирає назовні, ви можете "підшити" його.
+Прокладіть строчку на внутрішньому поясі, ближче до краю, через внутрішній пояс і шви припусків (але не через зовнішній пояс!).
 </Tip>
 
-### Attach the waist band to the outside
+### Прикріпіть поясний ремінь назовні
 
-Place the waistband with good sides together along the waist. For the straight waistband, make sure the side with the standard seam allowance is aligned with the waist, and not the side with double seam allowance.
+Покладіть пояс виворітними сторонами разом уздовж талії. Для прямого пояса переконайтеся, що сторона зі стандартним припуском на шов суміщена з талією, а не сторона з подвійним припуском на шов.
 
-Also make sure to leave suffucient seam allowance beyond the start and end of the waistband.
+Також не забудьте залишити достатній припуск на шви за межами початку і кінця пояса.
 
-Sew along the entirety of the waist, attaching the waist band and sewing down the belt loops in one go.
+Прошийте по всій довжині талії, прикріпивши пояс і пришивши петлі для ременя за один прийом.
 
-### Press the waistband seam and fold the waistband
+### Притисніть поясний шов і складіть пояс
 
-Press the seam you just sewed, pressing the seam allowance up into the waistband.
+Притисніть шов, який ви щойно прошили, вдавлюючи припуск на шов вгору в пояс.
 
-Now fold over the waistband at the correct width and press in the crease.
+Тепер перегніть пояс на потрібну ширину і притисніть в складку.
 
-### Close the start and end of the waistband.
+### Закрийте початок і кінець пояса.
 
-At the start and end, fold the waistband over so it has its good sides together.
+На початку і в кінці складіть пояс так, щоб він був виворітними сторонами один до одного.
 
-Now sew the end shut by sewing top to bottom to just the point where the waistband seam ends.
+Тепер зашийте кінець, прошиваючи зверху вниз до місця, де закінчується шов на поясі.
 
-Trim back the seam allowance a bit so you can tuck it all into the waistband later.
+Трохи обріжте припуски на шви, щоб потім можна було заправити все це в пояс.
 
-### Baste the waistband in place
+### Закріпіть пояс на місці
 
-The waistband has extra seam allowance here, and we're going to use that to our advantage.
+Пояс має додаткові припуски на шви, і ми використаємо це на нашу користь.
 
-Fold the waistband in the fold you pressed. Then on the inside, fold the seam allowance inwards, making sure to let it run a few mm beyond the waistband seam.
+Складіть пояс у згин, який ви натиснули. Потім з внутрішньої сторони підігніть припуски шва всередину, переконавшись, що вони на кілька мм виходять за межі шва на поясі.
 
-You want to baste this in place so it stays put as you make your way around the waistband.
+Вам потрібно приклеїти його на місце, щоб він залишався на місці, коли ви будете обходити навколо пояса.
 
-At the start and end of the waistband, you'll need to tuck in some more seam allowance. Take a moment to get it right.
+На початку і в кінці пояса потрібно заправити ще трохи припусків на шви. Витратьте хвилинку, щоб зробити це правильно.
 
-### Sew the waistband close
+### Пришийте пояс щільно
 
-Now with the good side up, sew exactly in the seam that was sewn before (so called _stitch in the ditch_).
+Тепер виворітною стороною догори прошийте точно по тому шву, який був прошитий раніше (так званий _стібок у кюветі_).
 
-This will catch the back of the waistband which we've made to extend slightly further, and lock all the seam allowance inside.
+Це зафіксує задню частину пояса, яку ми зробили трохи довшою, і зафіксує всі припуски швів всередині.
 
-## Step 13: Finalize the belt loops
+## Крок 13: Завершуємо петлі для ременя
 
-### Sew the belt loops down to make them wider
+### Зшийте петлі для ременя, щоб вони стали ширшими
 
-It's best to make the belt loops a bit wider than the waistband, to accomodate wider belts.
+Краще зробити петлі для ременя трохи ширшими, ніж для пояса, щоб можна було вдягати ширші ремені.
 
-For this, let the waistband lie flat, and sew it down with a bartack 1.5cm or so (half an inch) below the waistband.
+Для цього нехай пояс лежить рівно, і пришийте його на 1,5 см (півдюйма) нижче пояса.
 
-### Fold upwards, down again, and sew down
+### Складіть вгору, знову вниз і зшийте
 
-Now fold the belt loops upwards (hiding the bartack you just did).
+Тепер складіть петлі ременя вгору (ховаючи щойно зроблену застібку).
 
-They'll extend beyond the top of the waistband. So fold the excess down again. Don't fold it over/around the waistband, but fold it double on itself.
+Вони будуть виходити за верхню частину пояса. Складіть надлишки ще раз. Не складайте його через/навколо пояса, а складіть удвічі на собі.
 
-Now do a bartack along the top of the waistband to lock the belt loop in place.
+Тепер зробіть закріпку вздовж верхньої частини пояса, щоб зафіксувати петлю пояса на місці.
 
-When you're done, carefully twist the back of the beltloop to the front and cut off the excess right next to the bartack.
+Закінчивши, обережно виверніть петлю на лицьову сторону і відріжте надлишок прямо біля спинки.
 
 <Note>
 
-Be careful not to bartack the front of your trousers to the back.
+Будьте обережні, щоб не заправити передню частину штанів в задню.
 
-Double-check you don't have any extra layers under your needle because unpicking a bartack is no joy.
+Перевірте, чи немає зайвих шарів під голкою, тому що відколупувати закріплювач не дуже приємно.
 
 </Note>
 
-## Step 14: Hem the pants
+## Крок 14: Підшийте штани
 
-Fold the hem allowance halfway up, and press. Then fold them again, and press again.
+Припуск на підгин складіть наполовину і припрасуйте. Потім знову складіть їх і натисніть ще раз.
 
-Finalize by hand and blind hem your trousers.
+Закінчіть вручну і підшийте штани потайним швом.
 
-## Step 15: Button on buttonhole
+## Крок 15: Ґудзик у петлі
 
-Create a buttonhole. Either by hand (it's worth practicing) or with a machine.
+Зробіть петлю для ґудзика. Або вручну (варто потренуватися), або за допомогою машини.
 
-Finally, attach the button.
+Нарешті, прикріпіть ґудзик.
 
-Now take a moment to appreciate all the hard work you did. We hope you'll get a lot of use out of these.
+А тепер знайдіть хвилинку, щоб оцінити всю важку роботу, яку ви виконали. Ми сподіваємося, що вони стануть вам у пригоді.
