@@ -1,13 +1,13 @@
 ---
-title: Topstitching
+title: Зшивання верхнім швом
 ---
 
-![I used plenty of topstitching in a contrasting red thread on these jeans for my godson Akki](topstitching.jpg)
+![На цих джинсах для свого хрещеника Аккі я використала багато верхніх швів контрастною червоною ниткою](topstitching.jpg)
 
-![Topstitching needles from Schmetz](topstitch-needles.jpg)
+![Голки для вишивання верху від Schmetz](topstitch-needles.jpg)
 
-Topstitching is when you sew with the good side of the fabric up and your stitches are visible on the finished garments.
+Верхня строчка - це коли ви шиєте лицьовим боком тканини догори, і ваші стібки видно на готовому одязі.
 
-While a decorative feature, topstitching can also play a role in garment construction.
+Будучи декоративним елементом, верхня строчка також може відігравати певну роль у конструкції одягу.
 
-> You can buy specific sewing needles that are optimised for topstitching
+> Ви можете придбати спеціальні швейні голки, оптимізовані для виконання верхніх строчок
