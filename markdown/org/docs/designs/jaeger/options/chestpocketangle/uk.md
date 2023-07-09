@@ -1,11 +1,11 @@
 - - -
-title: "Chest pocket angle"
+назва: "Кут нагрудної кишені"
 - - -
 
-![Chest pocket angle](chestpocketangle.svg)
+![Кут нагрудної кишені](chestpocketangle.svg)
 
-The angle under which the chest pocket is placed.
+Кут, під яким розміщується нагрудна кишеня.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_chestpocketangle_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_chestpocketangle_sample.svg "Вплив цієї опції на шаблон")
