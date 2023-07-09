@@ -1,13 +1,13 @@
 ---
-title: Knit fabric
+title: Трикотажна тканина
 ---
 
-![A piece of grey (French Terry) jersey, a knit fabric](fabric.jpg)
+![Шматок сірого трикотажу (французька махра), трикотажна тканина](fabric.jpg)
 
-Knit fabric is fabric that is knitted, rather than woven. Knit fabric typically stretches to some extent.
+Трикотаж - це тканина, яка в'яжеться, а не тчеться. Трикотаж зазвичай певною мірою розтягується.
 
-While the fabric is knitted, it does not look like knitwear, but like fabric.
+Хоча тканина трикотажна, вона виглядає не як трикотаж, а як тканина.
 
-Knit fabric is used in garments where stretch is required. Sewing them is often done with a serger to maintain the stretch in the seams.
+Трикотажне полотно використовується в одязі, де необхідна розтяжність. Їх часто зшивають сервером, щоб зберегти розтягнення швів.
 
-> Wikipedia has more to say about knits: [Knitted fabric in Wikipedia](http://en.wikipedia.org/wiki/Knitted_fabric)
+> Вікіпедія може більше розповісти про трикотаж: [Трикотаж у Вікіпедії](http://en.wikipedia.org/wiki/Knitted_fabric)
