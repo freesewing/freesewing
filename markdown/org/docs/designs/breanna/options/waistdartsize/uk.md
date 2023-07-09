@@ -1,9 +1,9 @@
 - - -
-title: "Waist dart size"
+Назва: "Розмір виточки талії"
 - - -
 
-The size of the back waist dart
+Розмір задньої талієвої виточки
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_waistdartsize_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](breanna_waistdartsize_sample.svg "Вплив цієї опції на шаблон")
