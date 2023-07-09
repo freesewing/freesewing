@@ -1,22 +1,22 @@
 - - -
-title: "Back rise"
+Назва: "Підйом на спину"
 - - -
 
-![Back rise](backrise.svg)
+![Підйом спини](backrise.svg)
 
-This raises the waist of your trousers at the back.
+Це піднімає талію штанів ззаду.
 
 <Note>
 
-This trouser pattern is based on the drafting method of Winifred Aldrich.
-One complain I often get is that the back of the trousers is too low.
-It's a valid complaint too, it is low.
+Ця викрійка штанів базується на методі креслення Вініфред Олдріч.
+Одна зі скарг, яку я часто отримую, полягає в тому, що задня частина штанів занадто низька.
+Це теж справедлива скарга, вона низька.
 
-This option allows you to mitigate that, without dramatic changes to the pattern.
-It allows you to simply raise the back of the trousers.
+Ця опція дозволяє пом'якшити цю проблему без кардинальних змін у шаблоні.
+Вона дозволяє просто підняти задню частину штанин.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](theo_backrise_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](theo_backrise_sample.svg "Вплив цієї опції на шаблон")
