@@ -1,21 +1,21 @@
 - - -
-title: "Split yoke"
+назва: "Розщеплене ярмо"
 - - -
 
-![Split yoke](splityoke.svg)
+![Роздвоєне ярмо](splityoke.svg)
 
-Do you want a split yoke?
+Ви хочете розщеплене ярмо?
 
 <Note>
 
-###### What's the point?
+###### У чому сенс?
 
-With a split yoke, only half the yoke is included on the pattern, and you'll have to cut 4 parts instead of 2, and sew them together.
+Якщо кокетка роздвоєна, на викрійці вказана лише половина кокетки, і вам доведеться викроїти 4 частини замість 2, а потім зшити їх разом.
 
-It's a bit more work, but it allows you to align the grain line differently on both halves of the yoke, an effect that some people like.
+Це трохи більше роботи, але дозволяє вирівняти лінію утоку по-різному на обох половинах пяльців, що подобається деяким людям.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_splityoke_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_splityoke_sample.svg "Вплив цієї опції на шаблон")
