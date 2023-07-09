@@ -1,8 +1,8 @@
 - - -
-title: "Albert apron: What You Need"
+назва: "Фартух Альберта: Що вам потрібно"
 - - -
 
-To make Albert, you will need the following:
+Для виготовлення Альберта вам знадобиться наступне:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 1.25 meters (1.4 yards) (depending on the length of your apron) of a suitable fabric ([see Fabric options](/docs/patterns/albert/fabric))
+- [Основні матеріали для шиття](/docs/sewing/basic-sewing-supplies)
+- Приблизно 1,25 метра (1,4 ярда) (залежно від довжини вашого фартуха) відповідної тканини ([див. варіанти тканини](/docs/patterns/albert/fabric))
