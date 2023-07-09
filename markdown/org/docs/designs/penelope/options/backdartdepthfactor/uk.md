@@ -1,9 +1,9 @@
 - - -
-title: "Back dart depth factor"
+Назва: "Коефіцієнт глибини виточки спинки"
 - - -
 
-How far down does the back dart go from the waistband. This is a factor of the Natural Waist To Seat measurement.
+Як далеко вниз спускається задня виточка від пояса. Це коефіцієнт природного обхвату талії до сидіння.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_backdartdepthfactor_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](penelope_backdartdepthfactor_sample.svg "Вплив цієї опції на шаблон")
