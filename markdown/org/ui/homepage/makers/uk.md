@@ -1,20 +1,20 @@
 - - -
 - - -
 
-#### Sewing patterns made to your measurements
+#### Викрійки для пошиття за вашими мірками
 
-All our patterns are _made-to-measure_. Not just graded up or down, but actually drafted to your exact specifications, just as you would on paper.
+Всі наші візерунки _виготовлені за індивідуальними розмірами_. Не просто оцінений вище чи нижче, а фактично складений за вашими точними специфікаціями, так само, як ви це робите на папері.
 
-#### Packed with options plus live preview
+#### Упаковано з опціями та попереднім переглядом у реальному часі
 
-FreeSewing patterns come with options that allow you to customize different aspects of the pattern. Our live preview means no surprises: what you see is what you get.
+Шаблони FreeSewing мають опції, які дозволяють вам налаштовувати різні аспекти викрійки. Наш попередній перегляд наживо означає відсутність сюрпризів: що побачите, те й отримаєте.
 
-#### Patterns you can share and adapt
+#### Шаблони, якими можна ділитися та адаптувати
 
-FreeSewing patterns often have so many options that one pattern can yield a variety of styles. You can share your patterns with others so they can get the same style, drafted to their measurements.
+Шаблони FreeSewing часто мають так багато варіантів, що з одного шаблону можна створити безліч стилів. Ви можете поділитися своїми викрійками з іншими, щоб вони могли отримати такий самий стиль, створений за їхніми мірками.
 
-#### A community of helpful people
+#### Спільнота корисних людей
 
-Questions about a pattern? Stuck on one of the steps when making your garment? No worries, help is available.
+Питання щодо шаблону? Застрягли на одному з етапів пошиття одягу? Не хвилюйтеся, допомога доступна.
 
-[Join us on Discord](https://discord.freesewing.org/) and discover what makes the FreeSewing community so great.
+[Приєднуйтесь до нас на Discord](https://discord.freesewing.org/) і дізнайтеся, що робить спільноту FreeSewing такою чудовою.
