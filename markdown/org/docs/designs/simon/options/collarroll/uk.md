@@ -1,21 +1,21 @@
 - - -
-title: "Collar roll"
+назва: "Комір рулонний"
 - - -
 
-![Collar roll](collarroll.svg)
+![Комір рулонний](collarroll.svg)
 
-How much the collar is taller than the collar stand at center back.
+Наскільки комір вищий за стійку коміра по центру спини.
 
 <Note>
 
-###### What's the point?
+###### У чому сенс?
 
-The collar starts upwards from the collar stand and then rolls over downwards. But it still needs to cover the collar stand. For that, it needs to be a bit longer.
+Комір починається від стійки коміра вгору, а потім перекидається вниз. Але він все одно повинен закривати підставку для нашийника. Для цього потрібно трохи більше часу.
 
-Increasing this does not make the collar higher (use the collar stand height for that) but rather makes it descend further down.
+Збільшення цього параметра не робить нашийник вищим (для цього використовуйте висоту стійки нашийника), а навпаки, змушує його опускатися нижче.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarroll_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_collarroll_sample.svg "Вплив цієї опції на шаблон")
