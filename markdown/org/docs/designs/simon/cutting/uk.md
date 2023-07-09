@@ -1,42 +1,42 @@
 - - -
-title: "Simon shirt: Cutting Instructions"
+назва: "Сорочка Саймона: Інструкція з крою"
 - - -
 
-- **Main fabric**
-  - Cut **1 front left**
-  - Cut **1 button placket** (only if you opted for a separate button placket)
-  - Cut **1 front right**
-  - Cut **1 buttonhole placket** (only if you opted for a separate buttonhole placket)
-  - Cut **1 back**
-  - Cut **1 collar**
-  - Cut **1 undercollar**
-  - Cut **2 yoke(s)** or **4 yokes** if you've chosen a split yoke
-  - Cut **2 sleeve(s)**
-  - Cut **2 collar stand(s)**
-  - Cut **2 sleeve placket underlap(s)**
-  - Cut **2 sleeve placket overlap(s)**
-  - Cut **4 cuff(s)**
-- **Fusible interfacing**
-  - Cut **1 collar**
-  - Cut **1 undercollar**
-  - Cut **2 collar stand(s)**
-  - Cut **2 cuff(s)**
+- **Основна тканина**
+  - Вирізати **1 спереду зліва**
+  - Розкрій **1 планка для ґудзиків** (тільки якщо ви обрали окрему планку для ґудзиків)
+  - Вирізати **1 спереду праворуч**
+  - Викроїти **1 планку для петель** (тільки якщо ви обрали окрему планку для петель).
+  - Вирізати **1 назад**
+  - Крій **1 комір**
+  - Крій **1 комір**
+  - Виріжте **2 ярма** або **4 ярма** , якщо ви вибрали роздільне ярмо
+  - Крій **2 рукава**
+  - Виріз **2 підставки для коміра**
+  - Розкрій **2 рукавів внахлест**
+  - Виріжте **нахлест 2 рукавів**нахлест 2 рукавів
+  - Виріз **4 манжети**
+- **Плавкий інтерфейс**
+  - Крій **1 комір**
+  - Крій **1 комір**
+  - Виріз **2 підставки для коміра**
+  - Виріз **2 манжети**
 
 <Note>
 
-When cutting out two, you can cut them [good sides together](/docs/sewing/good-sides-together).
-However, when working with fabric with a pattern, I prefer to cut them individually to finely control the pattern matching.
+Вирізаючи дві деталі, ви можете скласти їх [лицьовими сторонами разом] (/docs/sewing/good-sides-together).
+Однак, працюючи з тканиною з візерунком, я вважаю за краще розкроювати їх окремо, щоб точно контролювати відповідність візерунку.
 
-When you cut them individually, remember that they need to be mirror images of each other. So flip either your pattern or your fabric over when cutting the second one.
+Вирізаючи їх окремо, пам'ятайте, що вони мають бути дзеркальним відображенням одне одного. Тому під час викроювання другої частини переверніть або викрійку, або тканину.
 
 </Note>
 
 <Warning>
 
-###### Caveats
+###### Застереження
 
-- The **front right**, **front left**, and **sleeve** have seams that should be made into flat-felled seams. As such, they have extra seam allowance on those seams. When cutting out these pieces, you **must** include this extra seam allowance.
-- The cuff guard and cuff placket have no seam allowance. That is normal, just cut them out as they are drawn on the pattern.
-- Do not cut out the darts in the **back** piece. You should mark them, but not cut them out.
+- На **передній правій**, **передній лівій** та **рукаві** є шви, які повинні бути виконані у вигляді плоских швів. Тому вони мають додаткові припуски на ці шви. Вирізаючи ці частини, ви повинні врахувати цей додатковий припуск на шви.
+- Захист манжети та планка манжети не мають припусків на шви. Це нормально, просто виріжте їх так, як вони намальовані на викрійці.
+- Не вирізайте виточки на **задній** деталі. Ви повинні позначити їх, але не вирізати.
 
 </Warning>
