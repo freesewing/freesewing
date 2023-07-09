@@ -1,13 +1,13 @@
 - - -
-title: "Wahid waistcoat: Fabric Options"
+назва: "Жилет вахід: Варіанти тканин"
 - - -
 
-All suiting fabrics are a great choice for your waistcoats. Any fabric shop that's worth your business should have a suiting section. You can just walk in, ask where you can find the fabric for suits, and pick out something you like.
+Всі костюмні тканини - чудовий вибір для ваших жилетів. Будь-який магазин тканин, який вартий вашого бізнесу, повинен мати відділ костюмів. Ви можете просто зайти, запитати, де можна знайти тканину для костюмів, і вибрати те, що вам подобається.
 
-These fabrics are typically wool, but you can also be a bit more creative and go for something else.
+Ці тканини, як правило, вовняні, але ви також можете бути більш креативними і вибрати щось інше.
 
 <Note>
 
-You do need a bit of weight though. Denim is fine, some light cotton is not.
+Хоча вам потрібно трохи поправитися. Денім підійде, легка бавовна - ні.
 
 </Note>
