@@ -1,85 +1,85 @@
 - - -
-title: "Ursula undies: Sewing Instructions"
+назва: "Урсула роздягається: Інструкція з пошиття"
 - - -
 
-### Step 1: Sew the front to the first gusset piece
+### Крок 1: Пришийте передню частину до першої ластовиці
 
-Place one of the gusset pieces on the front piece, _good sides together_, so that the crotch seams are aligned. Pin or baste at the seam allowance.
+Покладіть одну з ластовиць на передню частину, _лицьовими сторонами разом_, так, щоб шви в області паху були суміщені. Приколіть або приметайте на припуски швів.
 
-![Sew the front to the first gusset piece](step01.png)
+![Пришийте передню частину до першої ластовиці](step01.png)
 
-### Step 2: Open flat
+### Крок 2: Відкриваємо квартиру
 
-Open flat. You can press if you want to, but who presses underwear?
+Відкрита квартира. Ви можете натискати, якщо хочете, але хто ж натискає нижню білизну?
 
-![Open flat](step02.png)
+![Відкрита квартира](step02.png)
 
-### Step 3: Sew the back to the first gusset piece
+### Крок 3: Пришийте спинку до першої ластовиці
 
-Place the back piece on the gusset, good sides together. Pin or baste at the seam allowance.
+Покладіть задню частину на ластовицю лицьовими боками разом. Приколіть або приметайте на припуски швів.
 
-![Sew the back to the first gusset piece](step03.png)
+![Пришийте спинку до першої деталі ластовиці](step03.png)
 
-### Step 4: Open flat
+### Крок 4: Відкриваємо квартиру
 
-Open flat.
+Відкрита квартира.
 
-![Open flat](step04.png)
+![Відкрита квартира](step04.png)
 
-## Step 5: Attach the second gusset piece
+## Крок 5: Прикріпіть другу частину ластовиці
 
-Get the front and back pieces out of the way by rolling them to the center.
+Складіть передню і задню частини, згорнувши їх до центру.
 
-Place the second gusset piece good sides together on top so that it lines up with the first gusset piece. The rolled-up front and back pieces should be sandwiched between your gusset pieces.
+Покладіть другу деталь ластовиці лицьовим боком до лицьового боку так, щоб вона була на одній лінії з першою деталлю ластовиці. Згорнуті в рулон передню і задню частини слід затиснути між шматками ластовиці.
 
-Sew the front and back gusset seams at your seam allowance using a serger or a zigzag stitch.
+Зшийте передній і задній шви ластовиці на припусках за допомогою серветки або зигзагоподібної строчки.
 
-![Attach the second gusset piece](step05.png)
+![Прикріпіть другу частину ластовиці](step05.png)
 
-## Step 6: Turn right side out
+## Крок 6: Виверніть праву сторону назовні
 
-Turn the undies right side out. All gusset seams should be enclosed.
+Виверніть труси на виворітну сторону. Всі шви ластовиці повинні бути закриті.
 
-![Turn right side out](step06.png)
+![Виверніть правою стороною назовні.](step06.png)
 
-### Step 7: Sew the side seams
+### Крок 7: Зшийте бічні шви
 
-Pin the side seams good sides together. Sew the side seams at your seam allowance using a serger or a zigzag stitch.
+Бокові шви приколіть лицьовими сторонами один до одного. Зшийте бічні шви на припусках за допомогою серветки або зигзагоподібної строчки.
 
-![Sew the side seams](step07.png)
+![Зшийте бокові шви](step07.png)
 
 <Note>
 
-Good work! Technically you could leave the edges raw since knit fabrics do not fray, but to help your undies stay up, you should probably add elastic to the legs and waist. Keep going.
+Молодець! Технічно ви можете залишити краї необробленими, оскільки трикотажні тканини не рвуться, але щоб труси залишалися на місці, вам, мабуть, варто додати еластичну стрічку на ногах і талії. Не зупиняйся.
 
 </Note>
 
-### Step 8: Prepare elastic
+### Крок 8: Готуємо гумку
 
-Overlap the edges of each piece of elastic by your seam allowance and stitch together. You should have three elastic pieces: one for the waistband and two for the legs.
+Накладіть краї кожного шматка гумки на припуски і зшийте разом. У вас повинно бути три еластичних шматки: один для пояса і два для ніг.
 
-To ensure that you stretch the elastic evenly, divide the elastic into four quarters and mark the points with pins or chalk. Do the same to the waist and leg openings, marking the quarter points.
+Щоб переконатися, що ви розтягуєте резинку рівномірно, розділіть її на чотири чверті і позначте точки шпильками або крейдою. Зробіть те ж саме з прорізами для талії і ніг, позначивши чверть точки.
 
-![Prepare elastic](step08.png)
+![Підготуйте еластичний](step08.png)
 
-![Quarter the openings](step08b.png)
+![Зменшіть отвори на чверть](step08b.png)
 
-### Step 9: Sew elastic to the outside of the garment
+### Крок 9: Пришийте резинку до зовнішньої сторони одягу
 
-Pin the elastic to the waist and leg openings on the good side of the fabric, ensuring that you line up the quarter markings. If your elastic has a decorative edge, make sure that you line up the plain edge (not the decorative edge) of the elastic to the edge of the fabric. The decorative edge should be pointing towards the garment, not away from it.
+Приколіть резинку до прорізів для талії і штанин з виворітного боку тканини, переконавшись, що вирівняли розмітку чвертей. Якщо ваша резинка має декоративний край, переконайтеся, що ви вирівняли звичайний (не декоративний) край резинки з краєм тканини. Декоративний край повинен бути спрямований до одягу, а не від нього.
 
-Sew the elastic to the garment using a zigzag stitch. You will have to stretch the elastic slightly as you sew to make it lay flat against the fabric. Avoid stretching the fabric itself.
+Пришийте резинку до одягу зигзагоподібним швом. Вам доведеться злегка розтягнути резинку під час шиття, щоб вона щільно прилягала до тканини. Уникайте розтягування самої тканини.
 
-![Sew elastic to the outside of the garment](step09.png)
+![Пришийте резинку до зовнішньої сторони виробу](step09.png)
 
-Trim away any excess fabric that causes bulk or sticks out from the elastic.
+Обріжте зайву тканину, яка створює об'єм або стирчить з гумки.
 
-### Step 10: Fold the elastic in and sew it down again
+### Крок 10: Складіть гумку всередину і знову пришийте її
 
-Fold the elastic and fabric to the inside, enclosing the raw edge of the fabric under the elastic. You should be looking at the outside of the undies, a folded edge with a bit of the elastic peeking out. Sew using a zigzag stitch.
+Складіть гумку і тканину всередину, загорнувши необроблений край тканини під гумку. Ви повинні дивитися на зовнішній бік трусів, на складений край, з якого визирає трохи еластичної стрічки. Зшийте зигзагоподібним швом.
 
-![Fold the elastic in and sew it down again](step10.png)
+![Загніть резинку всередину і знову пришийте](step10.png)
 
-Repeat these steps for each of the waist and leg openings.
+Повторіть ці кроки для кожного з прорізів для талії і ніг.
 
-You did it!
+У тебе вийшло!
