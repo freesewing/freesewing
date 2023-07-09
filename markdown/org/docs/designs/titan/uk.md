@@ -1,5 +1,5 @@
 - - -
-title: "Titan trouser block"
+назва: "Титанові штани"
 - - -
 
 <PatternDocs pattern='titan' />
