@@ -1,28 +1,28 @@
 ---
-title: How we use your account data
+title: Як ми використовуємо дані вашого облікового запису
 order: 30
 ---
 
-##### What personal data do we store?
+##### Які персональні дані ми зберігаємо?
 
-- Your E-mail address
-- Your username and password
+- Ваша адреса електронної пошти
+- Ваше ім'я користувача та пароль
 - Необов'язковими є: зображення, опис та соціальні мережі
 
-##### Why do we need it?
+##### Навіщо він нам потрібен?
 
-- To authenticate you
-- To be able to contact you when required
-- Optional: We don't need a picture or your social media accounts, but they help to build an on-line community
+- Щоб підтвердити вашу автентичність
+- Щоб мати можливість зв'язатися з вами за потреби
+- За бажанням: Нам не потрібна фотографія або ваші акаунти в соціальних мережах, але вони допомагають створити онлайн-спільноту
 
-##### How long do we keep it?
+##### Як довго ми його зберігаємо?
 
 - Ми зберігаємо дані облікового запису до 12 місяців з моменту Вашого останнього входу в обліковий запис чи до тих пір, доки Ви не видалите їх.
 
-##### Do we share it?
+##### Чи ділимося ми нею?
 
-- No, never.
+- Ні, ніколи.
 
 <Note>
-This data is stored for anybody with an account on our website.
+Ці дані зберігаються для всіх, хто має обліковий запис на нашому сайті.
 </Note>
