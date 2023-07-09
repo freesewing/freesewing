@@ -1,11 +1,11 @@
 - - -
-title: "Hood angle"
+назва: "Кут нахилу капота"
 - - -
 
-![Hood angle](./hoodangle.svg)
+![Кут нахилу витяжки](./hoodangle.svg)
 
-Controls the angle at which the hood is attached
+Контролює кут, під яким кріпиться витяжка
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_hoodangle_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](huey_hoodangle_sample.svg "Вплив цієї опції на шаблон")
