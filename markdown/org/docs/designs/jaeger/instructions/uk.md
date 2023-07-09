@@ -1,257 +1,257 @@
 - - -
-title: "Jaeger jacket: Sewing Instructions"
+назва: "Єгерська куртка: Інструкція з пошиття"
 - - -
 
 <Note>
 
-###### Jaeger documentation is under construction
+###### Документація по Jaeger знаходиться на стадії розробки
 
-This documentation is not yet finished.
+Ця документація ще не закінчена.
 
 </Note>
 
-## Construction
+## Будівництво
 
-### Close the front darts
+### Закрийте передні виточки
 
-![Close the front darts](closeFrontDarts.svg)
+![Закрийте передні виточки](closeFrontDarts.svg)
 
-#### Fold double
+#### Скласти вдвічі
 
-Fold the front double with the good sides together and pin it down so the fold is neatly in the middle of the front dart.
+Складіть передню подвійну складку лицьовими боками разом і приколіть так, щоб згин був акуратно посередині передньої виточки.
 
-#### Sew darts
+#### Зшийте виточки
 
-Sew the front dart close, taking care to have the dart stop at the correct top end. The bottom is not that important as it will be covered by the pockets. But the top end of the dart will be clearly visible, so please make sure to have it end at the same height at both sides.
+Зашийте передню виточку, стежачи за тим, щоб вона зупинилася на правильному верхньому кінці. Дно не настільки важливе, оскільки воно буде закрите кишенями. Але верхній кінець виточки буде добре видно, тому, будь ласка, переконайтеся, що вона закінчується на однаковій висоті з обох боків.
 
-#### Cut open and press
+#### Розріжте і натисніть
 
-Once the front darts are closed, cut open the dart at the back. You won't be able to cut it open all the way to the tip, but that's fine. Press open the darts where they are cut open, and press the rest to the side. Take care to only press from the back. Pressing from the front will likely mark your fabric.
+Після того, як передні виточки закриті, розріжте виточку ззаду. Ви не зможете розрізати його до самого кінчика, але це не страшно. Розпрасуйте виточки там, де вони розрізані, а решту притисніть убік. Намагайтеся натискати тільки зі зворотного боку. Натискання спереду, швидше за все, залишить на тканині сліди.
 
-### Construct the chest pocket
+### Конструюємо нагрудну кишеню
 
-![Apply fusible interfacing to the back of the chest pocket](basteChestPocket.svg)
+![Нанесіть легкоплавкий інтерфейс на задню частину нагрудної кишені](basteChestPocket.svg)
 
-#### Apply fusible interfacing
+#### Застосовуйте плавкий інтерфейс
 
-Apply a rectangular piece of light fusible interfacing around the chest pocket area so that it extends a few cm in all directions.
+Нанесіть прямокутний шматок світлого легкоплавкого інтерфейсу навколо нагрудної кишені так, щоб він виходив на кілька сантиметрів в усі боки.
 
-> ##### We're not using fusible on the entire front
+> ##### Ми не використовуємо плавкі матеріали на всій передній панелі
 > 
-> Sportcoats are typically made from somewhat heavier fabrics. That, and the fact that I prefer to use canvas rather than fusible interfacing, means that I don't interface the front with fusible.
+> Спортивні пальта, як правило, виготовляються з дещо важчих тканин. Це, а також той факт, що я віддаю перевагу використанню полотна, а не фьюзингу, означає, що я не інтерфейсую передню частину за допомогою фьюзингу.
 
-#### Baste the chest welt outline, mark top line endpoints
+#### Приметайте контур нагрудного шва, позначте кінцеві точки верхньої лінії
 
 With the fusible in place, thread a needle and baste around the chest pocket to transfer the markings to the good side of the fabric.
 
-This pocket differs from a traditional welt pocket. The welt extends above the pocket opening. This hides the pocket bag without the need for facings. The top part of the opening is also smaller than the welt, allowing you to slip-stitch it closed.
+Ця кишеня відрізняється від традиційної прорізної кишені. Шов виходить над отвором кишені. Таким чином, кишенькова сумка ховається без необхідності облицювання. Верхня частина отвору також менша за шов, що дає змогу зашити його потайним швом.
 
-On the top line of your basted welt pocket, mark 0.5cm inwards from the corners of the top line.
+На верхній лінії пришивної кишені відмітьте 0,5 см всередину від кутів верхньої лінії.
 
-> These points are notches on the front part of your pattern.
+> Ці точки - надсічки на лицьовій частині вашої викрійки.
 
-![Close the chest pocket welt](foldChestPocketWelt.svg)
+![Закрийте шов нагрудної кишені](foldChestPocketWelt.svg)
 
-#### Fold, press and sew the side seams of the welt
+#### Складіть, притисніть і зшийте бічні шви шва
 
-Fold the welt double with the good sides together, and close the sides (sew the side seams).
+Складіть виворіт вдвічі лицьовими сторонами разом і закрийте бокові сторони (зшийте бокові шви).
 
-#### Trim seam allowance, turn and press
+#### Припуски швів обрізати, відвернути і припрасувати
 
-Trim the seam allowances on the sides and especially limit the seam allowance towards the corner to avoid bulk.
+Обріжте припуски на шви з боків і особливо обмежте припуски на кути, щоб уникнути об'ємності.
 
-Turn inside out so the good side is out and press.
+Виверніть навиворіт так, щоб лицьова сторона була назовні, і притисніть.
 
-> Be careful not to overpress as you'll be pressing from the good side of the fabric.
+> Будьте обережні, щоб не натиснути занадто сильно, оскільки ви будете притискати з виворітного боку тканини.
 
-#### Baste the bottom line of the welt so you know where to sew
+#### Намітьте нижню лінію шва, щоб знати, де прошивати
 
-Baste a stitching guide at the bottom of the welt to mark the welt/seam allowance boundary. This will be the line to sew on later.
+Прикріпіть направляючу строчку внизу шва, щоб позначити межу шва і припусків на шви. Це буде лінія, по якій ми будемо прошивати пізніше.
 
-#### Sew the welt to the front
+#### Пришийте шов до лицьового боку
 
-![Attach the chest pocket welt to the front](attachChestPocketWelt.svg)
+![Прикладіть шов нагрудної кишені до переду](attachChestPocketWelt.svg)
 
-Place welt down on good side of front with the folded side downwards, and sew to bottom line. Make sure to stop and start exactly at the edge of the line you basted.
+Покладіть виворітний бік лицьовим боком до лицьового боку зігнутим боком донизу і пришийте до лінії низу. Переконайтеся, що ви зупиняєтесь і починаєте точно на краю лінії, яку ви проклали.
 
-#### Sew the chest pocket bag to the front
+#### Пришийте нагрудну кишеню сумки спереду
 
-![Attach the chest pocket bag to the front](attachChestPocketBag.svg)
+![Прикріпіть сумку для нагрудної кишені спереду](attachChestPocketBag.svg)
 
-Place the pocket bag down on the front. The front with good side up, but the pocket bag with bad side up. Make sure to have the longest side of the chest pocket bag on the highest side of the chest pocket.
+Покладіть кишенькову сумку лицьовою стороною вниз. Спереду лицьовим боком догори, а кишенькова сумка - лицьовим боком донизу. Переконайтеся, що найдовша сторона сумки для нагрудної кишені знаходиться на найвищій стороні нагрудної кишені.
 
-> Only slanted chest pockets have a higher and lower side.
+> Тільки косі нагрудні кишені мають верхню і нижню сторони.
 
-Sew this in place along the top line. Remember this should be shorter than the bottom row of stitches to attach the welt, since you marked 0.5cm inwards from the corners.
+Пришийте його на місці вздовж верхньої лінії. Пам'ятайте, що вона повинна бути коротшою, ніж нижній ряд стібків для закріплення шва, оскільки ви відмітили 0,5 см всередину від кутів.
 
-> As the pocket back is typically some slippery fabric, you probably want to pin or baste this in place prior to sewing.
+> Оскільки задня частина кишені, як правило, є слизькою тканиною, перед пришиванням її краще приколоти або закріпити шпилькою.
 
-#### Cut open chest pocket opening, turn, and press
+#### Розріжте отвір нагрудної кишені, поверніть і притисніть
 
-![Press the chest pocket](pressChestPocket.svg) Now cut open your welt in the middle of both seamlines. Don't cut to the edge, but create a trianngular shape there.
+![Натисніть на нагрудну кишеню](pressChestPocket.svg) Тепер розріжте ваш шов посередині обох швів. Не обрізайте до краю, а створіть там трикутну форму.
 
-Flip the pocket bag and welt to the backside by passing both of them through the opening you just created.
+Переверніть кишенькову сумку і пришийте до вивороту, протягнувши обидві частини через отвір, який ви щойно створили.
 
-Get everything to lay nice and flat, and press.
+Розкладіть все рівно і притисніть.
 
-Now, bring the welt only to the front and get it to lie nice and flat. Press again from the back.
+Тепер виведіть шов тільки спереду і зробіть так, щоб він лежав красиво і рівно. Натисніть ще раз ззаду.
 
-> Resist the urge to press this from the front.
+> Не піддавайтеся бажанню натиснути на нього спереду.
 
-#### Finish the chest pocket
+#### Закінчіть нагрудну кишеню
 
-![Finish the chest pocket](finishChestPocket.svg)
+![Закінчіть нагрудну кишеню](finishChestPocket.svg)
 
 On the backside, fold the pocket bag double and sew it to the pocket welt below the existing seamline of the welt.
 
-Thread a needle and hand-finish the chest pocket by sewing down the sides of the welt to the front panel (don't let your stitches show on the front).
+Протягніть голку і вручну обробіть нагрудну кишеню, пришивши бокові сторони шва до передньої панелі (не допускайте, щоб шви були видні спереду).
 
-Finally, close the pocket bag by sewing the sides. Do this by placing the front down with the good side up. Then fold over each side and sew the pocket bag. While sewing these sides, make sure to catch those triangular little pieces of the opening. This will reinforce the pocket opening.
+Нарешті, закрийте сумку-кишеню, зшивши бокові сторони. Зробіть це, поклавши лицьовою стороною донизу, а виворітною - догори. Потім складіть з обох боків і зшийте сумку-кишеню. Під час зшивання цих боковин не забудьте захопити трикутні маленькі шматочки отвору. Це зміцнить отвір кишені.
 
-Baste the chest pocket closed while we contruct the jacket.
+Зшийте нагрудну кишеню, поки ми конструюємо піджак.
 
-### Prepare the fronts
+### Підготуйте фронти
 
-![Prepare the canvas for the fronts](prepareCanvas.svg)
+![Підготуйте полотно для фасадів](prepareCanvas.svg)
 
-Cut out the front canvas piece in a light and supple canvas placed on the bias. Cut out the entire front.
+Виріжте передню частину полотна з легкого та еластичного полотна, покладеного на косуху. Виріжте всю передню частину.
 
-Cut out the front dart and close it with a zig-zag stitch, making sure not to let the canvas overlap.
+Виріжте передню виточку і закрийте її зигзагоподібною строчкою, стежачи за тим, щоб полотно не накладалося один на одного.
 
-Cut out the chest canvas piece. Align it along the roll line, and baste it in place on front canvas piece.
+Виріжте шматок полотна для грудей. Вирівняйте його вздовж лінії рулону і приклейте на передню частину полотна.
 
-> The chest piece is marked on the front part of your pattern.
+> Деталь грудей позначена на передній частині вашої викрійки.
 
-#### Baste canvas to the fronts
+#### Наклейте полотно на лицьові сторони
 
-![Pad-stitching, you love that stuff, right?](padAndTape.svg)
+![Вишивання подушечками пальців, ви ж любите цю штуку, так?](padAndTape.svg)
 
-Now baste the front canvas and chest piece to your front. Keep in mind that the canvas has no seam allowance.
+Тепер приметайте переднє полотнище і деталь грудей до лицьової сторони. Майте на увазі, що полотно не має припусків на шви.
 
-> Baste it a bit inwards from the seam line so you can fold it away when sewing these seams later.  
-> You don't want your canvas to get caught in the seams.
+> Приметайте його трохи всередину від лінії шва, щоб потім можна було відігнути, коли будете прошивати ці шви.  
+> Ви ж не хочете, щоб полотно застрягло у швах.
 
-#### Pad-stitch your lapels
+#### Зшийте лацкани подушечками пальців
 
-Time to feel like a real tailor, and pad-stitch those lapels.
+Час відчути себе справжнім кравцем і пришити лацкани.
 
 Make sure to make the stitches a bit smaller towards the lapel tip, to make sure it lies flat against the chest, curling a bit inward instead of outward.
 
 > If you're not sure how to pad-stitch the lapels, [let us know](https://discord.freesewing.org/) and we'll make an attempt to document it.
 
-#### Tape the lapel edge and roll line
+#### Заклейте скотчем край лацкана і лінію підвороту
 
-Now we are going to hand-sew tailor tape along the lapel edges of the front, and along the roll line. This will also secure the canvas to the front here and there.
+Тепер ми пришиваємо кравецьку тасьму по краях лацканів переду і по лінії рулону вручну. Це також закріпить полотно спереду тут і там.
 
-Keep in mind that:
+Майте це на увазі:
 
-- The tape along the roll line should be placed inside the roll line.
-- The tape along the roll line should be about half a centimeter shorter than the distance it spans. The slight tension this creates helps the lapel roll nicely and contour to your body.
-- The tape along the lapel edge should be placed inside the seam line
+- Стрічка вздовж лінії рулону повинна бути розміщена всередині лінії рулону.
+- Стрічка вздовж лінії рулону повинна бути приблизно на півсантиметра коротшою, ніж відстань, яку вона охоплює. Невеликий натяг, який при цьому створюється, допомагає лацкану гарно згортатися і прилягати до тіла.
+- Стрічка по краю лацкана повинна бути розміщена всередині лінії шва
 
-> ##### Don't sew through your fabric
+> ##### Не прошивайте тканину наскрізь
 > 
 > While sewing the tape to your front, avoid pushing your needle all the way through your fabric so that your stitches will show on the front.
 > 
-> At the same time, you should not secure the tape only to your canvas either. Instead, you should try to catch a few threads of your fabric on every stitch, so that the tape is secured in place, yet the stitches don't show at the front.
+> У той же час, не варто закріплювати стрічку лише на полотні. Замість цього спробуйте захопити кілька ниток вашої тканини на кожному стібку, щоб стрічка була закріплена на місці, але при цьому стібки не були помітні спереду.
 > 
-> This is less of an issue above the break point of your lapel where the fabric will be on the backside of the lapel.
+> Це менш актуально вище точки згину лацкана, де тканина буде на зворотному боці лацкана.
 
-### Close the body
+### Закрийте тіло.
 
-#### Close the side seams
+#### Зашийте бокові шви
 
-![Close the sides](closeSides.svg)
+![Закрийте боки](closeSides.svg)
 
-Place your front with the good side up, and your side on it with the good side down.  
-Align the front/side seams, pin them in place if you feel like it, and sew them togther.
+Покладіть лицьову сторону лицьовим боком догори, а виворітну сторону - лицьовим боком донизу.  
+Вирівняйте лицьовий і боковий шви, приколіть їх, якщо хочете, і зшийте разом.
 
-Place this down with the good side up, and place your back on top with the good side down.  
-Align the back/side seams, pin them in place if you feel like it, and sew them togther.
+Покладіть його вниз лицьовою стороною догори, а зверху покладіть спинку лицьовою стороною донизу.  
+Вирівняйте шви спинки і боків, за бажанням приколіть їх і зшийте разом.
 
-> Make sure the canvas does not get caught in the seam.
+> Переконайтеся, що полотно не застрягло у шві.
 
-> ##### Note for sewing vents
+> ##### Вказівки щодо вшивання вентиляційних отворів
 > 
-> If you have a double vent, this seam will contain the vent.
+> Якщо у вас подвійний вентиляційний отвір, цей шов буде містити вентиляційний отвір.
 > 
-> Sew the downward part of the side/back seam and the sideways part that forms the vent. Do not sew downwards after that.
+> Зшийте нижню частину бокового/заднього шва і бокову частину, що утворює вентиляційний отвір. Після цього не прошивайте вниз.
 
-#### Close the back seam
+#### Закрийте задній шов
 
-![Close the back seam](closeBack.svg)
+![Закрийте задній шов](closeBack.svg)
 
-Aling your two half-jackets with the good sides together, and close the back seam.
+Складіть дві половинки жакета лицьовими боками разом і закрийте задній шов.
 
 <Note>
 
-##### Note for sewing vents
+##### Примітка щодо пришивання вентиляційних отворів
 
-If you have a single vent, this seam will contain the vent.
+Якщо у вас один вентиляційний отвір, цей шов буде містити вентиляційний отвір.
 
-Sew the downward part of the back seam and the sideways part that forms the vent.
-Do not sew downwards after that.
+Зшийте нижню частину заднього шва і бічну частину, що утворює вентиляційний отвір.
+Після цього не прошивайте вниз.
 
 </Note>
 
-#### Close the shoulder seams
+#### Закрийте плечові шви
 
-![Close the shoulder seams](closeShoulders.svg)
+![Закрийте плечові шви](closeShoulders.svg)
 
-Align the shoulder seams with good sides together, and sew them together.
+Вирівняйте плечові шви лицьовими боками один до одного і зшийте їх.
 
-Make sure the canvas does not get caught in the seam.
+Переконайтеся, що полотно не застрягло у шві.
 
 <Note>
 
-##### Align the shoulder notches
+##### Вирівняйте надсічки на плечах
 
-Make sure to carefully align the shoulders based on the notches.
-Because of the different shape of the back and front panels on the neck side,
-the fabric edge looks different. So aligning those edges will not give you
-what you need.
+Ретельно вирівняйте плечі по надсічках.
+Через різну форму задньої та передньої панелей з боку горловини,
+край тканини виглядає по-різному. Тому вирівнювання цих країв не дасть вам
+того, що вам потрібно.
 
-So make sure to align the notches. It's what they're there for.
+Тому обов'язково вирівняйте насічки. Це те, для чого вони існують.
 
 </Note>
 
-### Make the collar
-In order to look real crisp, the collar should be symetrical on both sides. About 5mm difference is already visible to a collar, so the more precise you do these steps, the better.
+### Зробіть комір
+Для того, щоб виглядати по-справжньому круто, комір повинен бути симетричним з обох боків. Різниця в 5 мм вже помітна на нашийнику, тому чим точніше ви зробите ці кроки, тим краще.
 
-### Add markings to both collars
-But both collars on top of each other, baste the corners together and cut the basting. Then use a marking pencil or some chalk to mark the edges of the collar. Measure 2 times to make sure the remaining collars and the location of the corners are 100% identical on both corners ![Mark the collar Edges](collarMarkings.svg)
-
-
-#### Add interfacing or canvas to the outside collar stand and under collar
-Either use a fusable interfacing, or, if you want to be hardcore use a horsehair canvas. Stich it to the outside collor stand using the same technique as when adding canvas to the lapel. ![Add canvas to the collor](collarWithCanvas.svg)
-
-#### Sew the outside collarstand to the under collar, and add to jacket
-Make sure the outside collarstand and under collar are alligend and sew together Sew the outside collarstand+undercollar to the neckline of the jacket Give small cuts in the fabric around the neckline to give it more ease Cut the seam allowance in the corners diagonally for a better fit
-
-![make small cuts in SA around collar](collarCuts.svg)
+### Додайте маркування до обох нашийників
+Накладіть обидва коміри один на одного, зшийте кути разом і обріжте намітку. Потім за допомогою розмічального олівця або крейди позначте краї нашийника. Виміряйте 2 рази, щоб переконатися, що решта комірів і розташування кутів на 100% збігаються на обох кутах ![Розмітьте краї коміра](collarMarkings.svg)
 
 
-### Sleeves
-Sew the uppersleeve to the undersleeve untill the split
+#### Додайте прокладку або полотно до зовнішньої стійки коміра та під комір
+Або використовуйте легкоплавкий інтерфейс, або, якщо ви хочете бути жорстким, використовуйте полотно з кінського волосу. Пришийте його до зовнішньої підставки для колориту, використовуючи ту саму техніку, що й при додаванні полотна до лацкана. ![Додайте полотно до колориту](collarWithCanvas.svg)
 
-#### Create the split at the eng of the sleeve
+#### Пришийте зовнішній комір-стійку до нижнього коміра та додайте до куртки
+Переконайтеся, що зовнішня стійка коміра та підкомір суміщені та зшиті разом Пришийте зовнішню стійку коміра+підкомір до вирізу горловини куртки Зробіть невеликі надрізи в тканині навколо вирізу горловини для більшої зручності Припуски на шви в кутах обріжте по діагоналі для кращого прилягання.
 
-Sew the other side of the sleeves Turn the sleeves with the good side out Add the sleeves to the jacket
+![зробіть невеликі розрізи в СА навколо коміра](collarCuts.svg)
 
 
-### Inside pocket
+### Рукава
+Пришийте верхній рукав до нижнього до розрізу
+
+#### Створіть розріз на вході втулки
+
+Пришийте другий бік рукавів Виверніть рукава лицьовим боком назовні Додайте рукава до куртки
+
+
+### Внутрішня кишеня
 <note>
-The inside pocket is a double welt pocket. Which is the same as the front pockets but without a cover.
-Please see images at the front pockets for details
+Внутрішня кишеня - подвійна прорізна кишеня. Це те саме, що і передні кишені, але без кришки.
+Будь ласка, дивіться зображення на передніх кишенях для деталей
 </note>
 
-Locate the position of the pocket on the left inner lining with basting Add some fusible interfacting around the area Draw the pocket on the interfacing. Add the  welts to the upper and lower side of the pocket Sew the welts on the line on both sides of the pocket. Make use the welts end exactly on top of eachother. Cut the pocket entrance to about 1 or 2 cm from the end. Cut the last part diagonally so you get a fish bone fcut Turn the welts inside out, baste and press Turn the triangles inside out, baste and press Sew around the pocket to put everything in place Take the pocketbag, sew it to the lower welt and the other part to the upper welt (See: chest pocket)
+Визначте місце розташування кишені на лівій внутрішній підкладці за допомогою наметування Додайте трохи флізеліну навколо цієї ділянки Намалюйте кишеню на флізеліні. Додайте шви на верхній і нижній стороні кишені Зшийте шви по лінії з обох боків кишені. Використовуйте шви так, щоб вони знаходилися точно один над одним. Обріжте вхід в кишеню приблизно на 1-2 см від кінця. Розріжте останню частину по діагоналі, щоб вийшов зріз риб'ячої кістки Виверніть шви навиворіт, прострочіть і притисніть Виверніть трикутники навиворіт, прострочіть і притисніть Прошийте навколо кишені, щоб все було на своїх місцях Візьміть сумку-кишеню, пришийте її до нижнього шва, а іншу частину до верхнього шва (див.: нагрудна кишеня)
 
-### Lining
-Sew the lining back seam untill the split Sew the figure seams in the front parts Add the whole lining together (front, side, back) Add the from lining to the front facing. LEave about 5cm open from the bottom Close the shoulders Add the inside collar stand to the uppercollar and add to the lining jacket Make small cuts in the neckline and the corners Add upper to lower sleeves Add sleeves to lining jacket
+### Підкладка
+Зшийте підкладку ззаду до розрізу Зшийте фігурні шви в передніх частинах Складіть всю підкладку разом (перед, боковини, спинку) Складіть підкладку з лицьової сторони з лицьовою стороною. Залиште знизу відкритими приблизно 5 см Закрийте плечі Додайте внутрішню стійку коміра до верхнього коміра і додайте до підкладки жакета Зробіть невеликі розрізи у вирізі горловини і по кутах Додайте верхні рукави до нижніх Додайте рукави до підкладки жакета.
 
-### Close it up
-But the jacket + lining jackets on top of each other with the good sides. Sew around the collar and continue all the way to the front facing Turn the jacket right side out Fold the sleeves in place (make sure they are not turned!!) Add the sleeves lining to the sleeves split Make sure the collars are straight on top of each other (they allign) and add the seam allowences to each other by hand. Add in a few places front SA to lining SA by hand from the inside of the jacket Create the backsplit and manually add the lining to the main fabric Add buttonholes and buttons
+### Закривай.
+Але куртка + підкладка накладаються одна на одну гарними сторонами. Прошийте навколо коміра і продовжуйте аж до лицьового боку Виверніть куртку на виворітний бік Складіть рукави на місце (переконайтеся, що вони не вивернуті!!) Додайте підкладку рукава до розрізу рукава Переконайтеся, що коміри прямо накладені один на одного (вирівняні), і додайте припуски на шви вручну. Додайте в декількох місцях передню частину SA до підкладки SA вручну з внутрішньої сторони піджака Створіть спинку і додайте підкладку до основної тканини вручну Додайте петлі та ґудзики
 
 
 
