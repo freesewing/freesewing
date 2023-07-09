@@ -1,11 +1,11 @@
 - - -
-title: "Shoulder slope reduction"
+Назва: "Зменшення нахилу плечей"
 - - -
 
-This pattern adapts to sloped shoulder by taking the shoulder slope measurment into account.
+Ця модель адаптується до похилого плеча, враховуючи вимір нахилу плеча.
 
-However, for jackets or coats, you may want to create more room at the shoulders to allow for shoulder pads. This option lets you create extra room at the shoulders by reducing the amount the shoulders are sloped.
+Однак, для піджаків або пальт, можливо, ви захочете створити більше місця на плечах, щоб можна було вставити підплічники. Ця опція дозволяє створити додатковий простір на плечах за рахунок зменшення нахилу плечей.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bent_shoulderslopereduction_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bent_shoulderslopereduction_sample.svg "Вплив цієї опції на шаблон")
