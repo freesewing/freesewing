@@ -1,5 +1,5 @@
 ---
-title: Pattern notation guide
+title: Посібник з позначення викрійок
 order: 800
 ---
 
@@ -9,10 +9,10 @@ Hopefully our patterns are easy enough to understand, but if you come across som
 
 <Tip>
 
-##### Might vary slightly between preview and final result
+##### Може дещо відрізнятися між попереднім переглядом і кінцевим результатом
 
-For reasons that are surprisingly complex, there might be slight
-differences in fonts and colors between how a pattern looks online
-and how it looks as a downloaded PDF or SVG.
+З причин, які є напрочуд складними, можуть бути незначні
+відмінності у шрифтах і кольорах між тим, як візерунок виглядає онлайн
+і як він виглядає у завантаженому PDF або SVG-файлі.
 
 </Tip>
