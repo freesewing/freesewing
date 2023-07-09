@@ -1,5 +1,5 @@
 - - -
-title: "Wahid waistcoat: Required Measurements"
+назва: "Жилет для вахідів: Необхідні мірки"
 - - -
 
 <PatternMeasurements pattern='wahid' />
