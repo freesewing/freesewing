@@ -1,5 +1,5 @@
----
-title: "Bee bikini top"
----
+- - -
+назва: "Бджолиний топ-бікіні"
+- - -
 
 <PatternDocs pattern='bee' />
