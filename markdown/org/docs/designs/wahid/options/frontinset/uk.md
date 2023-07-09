@@ -1,20 +1,20 @@
 - - -
-title: "Front inset"
+назва: "Передня вставка"
 - - -
 
-![Front inset](frontinset.svg)
+![Передня вставка](frontinset.svg)
 
-How far do you want your waistcoat armhole to curve inwards on the front?
+Наскільки ви хочете, щоб пройма жилета була загнута всередину спереду?
 
 <Note>
 
-###### What's the point?
+###### У чому сенс?
 
-The armhole of your waistcoat can curve further inward, given that there is no sleeve attached to it.
-This influences the style of the waistcoat.
+Пройма жилета може ще більше вигинатися всередину, враховуючи, що до неї не прикріплений рукав.
+Це впливає на стиль жилета.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_frontinset_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](wahid_frontinset_sample.svg "Вплив цієї опції на шаблон")
