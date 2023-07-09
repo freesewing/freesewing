@@ -1,11 +1,11 @@
 - - -
-title: "Number of buttons"
+назва: "Кількість кнопок"
 - - -
 
-![Buttons](buttons.svg)
+![Кнопки](buttons.svg)
 
-The number of buttons on your shirt. Excluding cuff buttons, and the optional extra top button.
+Кількість ґудзиків на сорочці. За винятком ґудзиків на манжетах і додаткового верхнього ґудзика.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_buttons_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_buttons_sample.svg "Вплив цієї опції на шаблон")
