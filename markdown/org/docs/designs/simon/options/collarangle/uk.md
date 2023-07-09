@@ -1,23 +1,23 @@
 - - -
-title: "Collar angle"
+назва: "Комірний кут"
 - - -
 
-![Collar angle](collarangle.svg)
+![Кут нахилу коміра](collarangle.svg)
 
-The number of degrees between the collar edge and the grainline.
+Кількість градусів між краєм коміра і лінією дольоту.
 
 <Note>
 
-###### What's the point?
+###### У чому сенс?
 
-Together with the collar height, this is the most important factor for the style of your collar.
+Разом з висотою коміра це найважливіший фактор для стилю вашого коміра.
 
-Higher values mean a more cut-away style.
+Вищі значення означають більш укорочений стиль.
 
-In the example image, the top is 80 degrees (the default) and the bottom is 110 degrees.
+На прикладі зображення верхній кут становить 80 градусів (за замовчуванням), а нижній - 110 градусів.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarangle_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_collarangle_sample.svg "Вплив цієї опції на шаблон")
