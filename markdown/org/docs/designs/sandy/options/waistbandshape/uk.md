@@ -1,11 +1,11 @@
 - - -
-title: "Waistband shape"
+Назва: "Форма пояса"
 - - -
 
-![Waistband shape](waistbandshape.svg)
+![Форма пояса](waistbandshape.svg)
 
-The shape of the waistband. Straight makes things easier, but a rounded waistband adapts to your body if you have a fair difference between waist and hips circumferences.
+Форма пояса. Прямий пояс полегшує завдання, але закруглений пояс адаптується до вашого тіла, якщо у вас є значна різниця між обхватами талії і стегон.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](sandy_waistbandshape_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](sandy_waistbandshape_sample.svg "Вплив цієї опції на шаблон")
