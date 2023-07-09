@@ -1,11 +1,11 @@
 - - -
-title: "Wahid waistcoat: What You Need"
+назва: "Жилет вахіда: Що вам потрібно"
 - - -
 
-To make Wahid, you will need the following:
+Щоб зробити вахід, вам знадобиться наступне:
 
-- Basic sewing supplies
-- About 1 meter (1.1 yards) of a suitable fabric ([see Fabric options](/docs/patterns/wahid/fabric))
-- About 1 meter (1.1 yards) of lining fabric
-- Fusible interfacing
-- Buttons
+- Основні матеріали для шиття
+- Приблизно 1 метр (1,1 ярда) відповідної тканини ([див. варіанти тканини](/docs/patterns/wahid/fabric))
+- Приблизно 1 метр (1,1 ярда) підкладкової тканини
+- Плавкий інтерфейс
+- Кнопки
