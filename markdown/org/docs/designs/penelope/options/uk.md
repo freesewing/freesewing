@@ -1,5 +1,5 @@
 - - -
-title: "Penelope pencil skirt: Design Options"
+"Спідниця-олівець Пелагея": "Спідниця-олівець Пенелопа: Варіанти дизайну"
 - - -
 
 <PatternOptions pattern='penelope' />
