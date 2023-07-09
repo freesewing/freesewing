@@ -1,11 +1,11 @@
 - - -
-title: "Chest pocket placement"
+назва: "Розміщення нагрудної кишені"
 - - -
 
-![Chest pocket placement](chestpocketplacement.svg)
+![Розміщення нагрудної кишені](chestpocketplacement.svg)
 
-Location of the chest pocket as a proportion a quarter of your chest circumference. Higher numbers move it more to the side.
+Розташування нагрудної кишені в пропорції чверті окружності грудей. Вищі числа зміщують його більше вбік.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_chestpocketplacement_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_chestpocketplacement_sample.svg "Вплив цієї опції на шаблон")
