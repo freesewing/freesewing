@@ -1,12 +1,12 @@
 - - -
-title: "Penelope pencil skirt: What You Need"
+"Спідниця-олівець Пелагея": "Спідниця-олівець Пенелопа: Що вам потрібно"
 - - -
 
-To make Penelope, you will need the following:
+Для виготовлення Пенелопи вам знадобиться наступне:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 1 meter (1.1 yards) of a suitable main fabric ([see Penelope Fabric options](/docs/patterns/penelope/fabric))
-- An invisible or regular closed end zipper
-- Some interfacing for the waistband (if using) and maybe for the vent and hem
-- Some sort of closure for the waistband (if using)
-- (Optional) About 1 meter (1.1 yards) of suitable lining fabric ([see Penelope Fabric options](/docs/patterns/penelope/fabric))
+- [Основні матеріали для шиття](/docs/sewing/basic-sewing-supplies)
+- Приблизно 1 метр (1,1 ярда) відповідної основної тканини ([див. варіанти тканини Penelope](/docs/patterns/penelope/fabric))
+- Невидима або звичайна застібка-блискавка з закритим кінцем
+- Деякий інтерфейс для поясу (якщо використовується) і, можливо, для вентиляційного отвору та подолу
+- Застібка для пояса (якщо використовується)
+- (Необов'язково) Приблизно 1 метр (1,1 ярда) відповідної підкладкової тканини ([див. варіанти тканини Penelope](/docs/patterns/penelope/fabric))
