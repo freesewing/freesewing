@@ -1,9 +1,9 @@
 - - -
-title: "Front pockets"
+"Передні кишені": "Передні кишені"
 - - -
 
-Whether to include front pockets (on the side seam) or not.
+Чи включати передні кишені (в боковому шві) чи ні.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](paco_frontpockets_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](paco_frontpockets_sample.svg "Вплив цієї опції на шаблон")
