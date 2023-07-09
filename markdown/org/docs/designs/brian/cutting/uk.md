@@ -1,28 +1,28 @@
 - - -
-title: "Brian body block: Cutting Instructions"
+назва: "Блокування тіла Брайана: Інструкція з розкрою"
 - - -
 
-**Main fabric**
+**Основна тканина**
 
-- Cut **1 Front** part on the fold.
-- Cut **1 Back** part on the fold.
-- Cut **2 Sleeve** parts.
+- Виріжте **1 передню** частину на згині.
+- Виріжте **1 Відверніть** частину на згин.
+- Виріжте **2 частини рукава** .
 
-These cutting instructions are just for the default Brian block. Adjust your cutting accordingly if you have/are making changes to the block.
+Ці інструкції з розкрою стосуються лише стандартного блоку Брайана. Якщо ви вносите зміни в блок, відрегулюйте розкрій відповідно.
 
 <Tip>
 
-If you do not have someone to help pin you into Brian then you may find it easier to Cut 2 Front parts with seam allowance and sew the backs up when constructing so you can pin in the front.
+Якщо у вас немає нікого, хто б допоміг вам приколоти Брайана, можливо, буде простіше вирізати 2 передні частини з припусками на шви і зшити спинки під час конструювання, щоб ви могли приколоти їх спереду.
 
 </Tip>
 
 <Note>
 
-###### Brian is a block, not a pattern
+###### Брайан - це блок, а не патерн
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Блок - це базова форма, на якій базуються інші патерни.
+Іноді їх ще називають слоуперами, хоча пуристи заперечать, що блок і слоупер - це різні речі.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Блоки, як правило, не створюються як такі, а слугують основою для інших візерунків.
 
 </Note>
