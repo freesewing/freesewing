@@ -1,13 +1,13 @@
 - - -
-title: "Front drop"
+назва: "Фронтальне падіння"
 - - -
 
-![The front drop option on Cathrin](./frontdrop.svg)
+![Варіант передньої підвіски на Cathrin](./frontdrop.svg)
 
-This option determines how far the center front will be lowered at the bottom of your corset.
+Цей параметр визначає, наскільки сильно буде опущена центральна передня частина внизу корсета.
 
-> If you lower this too much, sitting might become an issue.
+> Якщо ви опустите його занадто низько, сидіння може стати проблемою.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_frontdrop_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](cathrin_frontdrop_sample.svg "Вплив цієї опції на шаблон")
