@@ -1,11 +1,11 @@
 - - -
-title: "Back pocket horizontal placement"
+назва: "Горизонтальне розміщення задньої кишені"
 - - -
 
-Controls the horizontal placement of the back pockets.
+Контролює горизонтальне розміщення задніх кишень.
 
-In other words, more towards the outseam, and this wider apart. Or more towards the center back and thus closer together.
+Іншими словами, більше до вивороту, а це ширше в сторони. Або ближче до центру і, таким чином, ближче один до одного.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_backpockethorizontalplacement_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](charlie_backpockethorizontalplacement_sample.svg "Вплив цієї опції на шаблон")
