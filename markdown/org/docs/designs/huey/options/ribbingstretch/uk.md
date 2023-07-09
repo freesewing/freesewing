@@ -1,11 +1,11 @@
 - - -
-title: "Ribbing stretch"
+Назва: "Ребриста розтяжка"
 - - -
 
-![Ribbing stretch](./ribbingstretch.svg)
+![Розтяжка ребристої стрічки](./ribbingstretch.svg)
 
-Controls the amount of stretch to foresee in the ribbing.
+Контролює величину розтягування, яку необхідно передбачити в ребрах.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_ribbingstretch_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](huey_ribbingstretch_sample.svg "Вплив цієї опції на шаблон")
