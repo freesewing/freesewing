@@ -1,9 +1,9 @@
 ---
-title: "Front waist dip"
+title: "Спереду нахил талії"
 ---
 
-Together with the "Front curve" option, this option controls how much the front waist curves (revealing more or less skin). For this option, the curve is achieved by cutting away a crescent at the waist. (For fabric with horizontal stripes, some stripes would be interrupted around the center of the waist.)
+Разом з опцією "Вигин спереду" ця опція контролює, наскільки сильно вигинається талія спереду (відкриваючи більше або менше шкіри). У цьому варіанті вигин досягається за рахунок відрізання півмісяця на талії. (Для тканини з горизонтальними смужками деякі смужки будуть перериватися по центру талії).
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](unice_frontdip_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](unice_frontdip_sample.svg "Вплив цієї опції на шаблон")
