@@ -1,5 +1,5 @@
 - - -
-title: "Simon shirt: Required Measurements"
+назва: "Сорочка Саймона: Необхідні виміри"
 - - -
 
 <PatternMeasurements pattern='simon' />
