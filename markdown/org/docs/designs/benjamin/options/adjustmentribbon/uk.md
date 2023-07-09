@@ -1,17 +1,17 @@
 - - -
-title: "Adjustment ribbon"
+Назва: "Регулювальна стрічка"
 - - -
 
-![Traditional or adjustable](adjustmentribbon.svg)
+![Традиційний або регульований](adjustmentribbon.svg)
 
-With Benjamin, you can make a traditional fixed size bow tie. And you can make one that incorporates an adjustment ribbon. These are ribbons and pieces of hardware that allow you to change the neck size of the bow tie. Very handy when you have shirts with different neck sizes, or if you have different ease in the collar for some.
+З Benjamin ви можете зробити традиційну краватку-метелика фіксованого розміру. І ви можете зробити такий, що включає в себе регулювальну стрічку. Це стрічки та фурнітура , які дозволяють змінювати розмір горловини краватки-метелика. Дуже зручно, коли у вас є сорочки з різними розмірами шиї, або якщо у деяких з них комір має різну легкість застібки.
 
 <Tip>
 
-This is a great option if you decide to make a bow tie for someone else as a gift.
+Це чудовий варіант, якщо ви вирішили зробити краватку-метелика для когось на подарунок.
 
 </Tip>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_adjustmentribbon_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](benjamin_adjustmentribbon_sample.svg "Вплив цієї опції на шаблон")
