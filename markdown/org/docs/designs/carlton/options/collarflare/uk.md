@@ -1,12 +1,12 @@
 - - -
-title: "Collar flare"
+Назва: "Комір-блискавка"
 - - -
 
-Controls the flare of the collar by altering the fall length (between the neck and the points) of the collar.
+Контролює розкльошеність коміра, змінюючи довжину спаду (між горловиною і точками) коміра.
 
-- Increase this option to increase the fall length.
-- Decrease this option to decrease the fall length.
+- Збільште цей параметр, щоб збільшити довжину падіння.
+- Зменшіть цей параметр, щоб зменшити довжину падіння.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlton_collarflare_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](carlton_collarflare_sample.svg "Вплив цієї опції на шаблон")
