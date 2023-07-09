@@ -1,5 +1,5 @@
 - - -
-title: "Carlita coat: Required Measurements"
+назва: "Пальто Карліта: Необхідні мірки"
 - - -
 
 <PatternMeasurements pattern='carlita' />
