@@ -1,5 +1,5 @@
 - - -
-title: "Theo trousers: Design Options"
+назва: "Штани Тео: Варіанти дизайну"
 - - -
 
 <PatternOptions pattern='theo' />
