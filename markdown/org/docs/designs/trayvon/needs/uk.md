@@ -1,8 +1,8 @@
 - - -
-title: "Trayvon tie: What You Need"
+назва: "Краватка з твіду: Що вам потрібно"
 - - -
 
-To make Trayvon, you will need the following:
+Щоб зробити Трейвон, вам знадобиться наступне:
 
-- Basic sewing supplies
-- Between 0.5 meters - 1.5 meters (0.6 - 1.7 yards) of a suitable fabric ([see Fabric options](/docs/patterns/trayvon/fabric)), depending on whether you're cutting on the bias, the grain, or the cross-grain.
+- Основні матеріали для шиття
+- Від 0,5 до 1,5 метра (0,6-1,7 ярда) відповідної тканини ([див. варіанти тканини](/docs/patterns/trayvon/fabric)), залежно від того, чи будете ви кроїти по нахилу, по дотичній або поперечній дотичній.
