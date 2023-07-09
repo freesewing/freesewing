@@ -1,5 +1,5 @@
 - - -
-title: "Hortensia handbag"
+"Сумочка Гортензії": "Гортензієва сумочка"
 - - -
 
 <PatternDocs pattern='hortensia' />
