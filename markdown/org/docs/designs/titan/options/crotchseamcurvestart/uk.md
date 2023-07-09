@@ -1,9 +1,9 @@
 - - -
-title: "Start of the crotch seam curve"
+"Початок кривого пахового шва": "Початок вигину пахового шва"
 - - -
 
-Controls where the crotch seam starts to curve, which influences the fit at your crotch.
+Контролює, де починається вигин пахового шва, що впливає на облягання в області паху.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](titan_crotchseamcurvestart_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](titan_crotchseamcurvestart_sample.svg "Вплив цієї опції на шаблон")
