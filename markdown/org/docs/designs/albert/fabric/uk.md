@@ -1,9 +1,9 @@
 - - -
-title: "Albert apron: Fabric Options"
+назва: "Фартух Альберта: Варіанти тканин"
 - - -
 
-An apron works best with a fabric that is sturdy, tightly woven, and easy to clean. In addition, make sure to go for a natural fibre and in any case something that is heat-resistant.
+Для фартуха найкраще підходить міцна, щільно виткана тканина, яку легко чистити. Крім того, переконайтеся, що це натуральне волокно і в будь-якому випадку щось, що є термостійким.
 
-Heavy cotton, chino, canvas or denim are all excellent choices.
+Щільна бавовна, чінос, полотно або денім - відмінний вибір.
 
-When in doubt, go for raw denim (pure cotton, if it stretches it's no good).
+Якщо ви сумніваєтеся, обирайте сирий денім (чиста бавовна, якщо вона розтягується - це недобре).
