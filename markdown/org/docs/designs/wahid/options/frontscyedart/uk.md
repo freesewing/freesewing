@@ -1,17 +1,17 @@
 - - -
-title: "Front scye dart"
+Назва: "Фронтовий дротик з жита"
 - - -
 
-This pattern comes with a default 1 cm scye dart (think armhole dart) at the front.
+Ця викрійка за замовчуванням має виточку 1 см спереду (думайте про виточку для пройми).
 
-You can increase or decrease the dart to influence the armhole.
+Ви можете збільшити або зменшити виточку, щоб вплинути на пройму.
 
-> #### What's the point?
+> #### У чому сенс?
 > 
-> The point of this dart is to make sure the armhole lies flat against your body, rather than gape. Given that there is no sleeve, a gaping armhole is particularly unsightly.
+> Суть цієї виточки полягає в тому, щоб переконатися, що пройма щільно прилягає до тіла, а не зяє. Враховуючи, що рукава немає, зяюча пройма виглядає особливо непривабливо.
 
-> While this dart is used to shape the pattern, you don't have to sew the dart because it's incorporated in the front dart.
+> Хоча ця виточка використовується для формування викрійки, вам не потрібно її зашивати, оскільки вона вбудована в передню виточку.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_frontscyedart_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](wahid_frontscyedart_sample.svg "Вплив цієї опції на шаблон")
