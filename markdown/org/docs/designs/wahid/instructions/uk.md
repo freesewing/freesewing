@@ -1,295 +1,295 @@
 - - -
-title: "Wahid waistcoat: Sewing Instructions"
+назва: "Жилет вахід: Інструкція з пошиття"
 - - -
 
-### Step 1: Fuse interfacing
+### Крок 1: Взаємодія запобіжників
 
-#### Press interfacing to pocket welts
+#### Притискання до кишенькових швів
 
-![Press interfacing to pocket welts](01a.png)
+![Притискання до кишенькових швів](01a.png)
 
-Place your pocket welt with the good side down, and your pocket interfacing on top.
+Покладіть кишеню лицьовим боком донизу, а виворітним боком догори.
 
-The interfacing is a bit shorter than the welt, so make sure to align the side that has the help line marked on it.
+Інтерфейс трохи коротший за шов, тому переконайтеся, що вирівняна сторона, на якій нанесена допоміжна лінія.
 
-For each pocket, press the interfacing piece to the bad side of the pocket welt.
+Для кожної кишені притисніть з'єднувальну деталь до виворітного боку шва кишені.
 
-#### Press interfacing to fronts
+#### Притискання преса до фасадів
 
-![Press interfacing to pocket fronts](01b.png)
+![З'єднання преса з лицьовою стороною кишені](01b.png)
 
-Place your front with the good side down, and your interfacing on top.
+Покладіть лицьову сторону лицьовим боком донизу, а інтерфейс зверху.
 
-Press the interfacing in place.
+Притисніть інтерфейс на місце.
 
-> **Take your time**
+> **Не поспішайте**
 > 
-> Don't just iron this on to get it over with, you want to really press that interfacing onto your fabric so that it fuses well.
+> Не просто пропрасуйте її, щоб покінчити з цим, вам потрібно дійсно притиснути інтерфейс до тканини, щоб він добре з'єднався з нею.
 > 
-> Place your iron down and lean on it for 10 seconds or so before you move on to the next spot to repeat the process.
+> Покладіть праску і притуліться до неї приблизно на 10 секунд, перш ніж переходити до наступного місця, щоб повторити процес.
 
-### Step 2: Join front facing and lining
+### Крок 2: З'єднайте лицьову панель і підкладку
 
-#### Sew facing to lining
+#### Пришийте лицьову сторону до підкладки
 
-![Sew facing to lining](02a.png)
+![Пришийте лицьову сторону до підкладки](02a.png)
 
-Place your front facing and lining with good sides together. Pin the edges of the facing/lining boundary in place.
+Покладіть лицьову сторону і підкладку лицьовими сторонами разом. Закріпіть краї межі між облицюванням і підкладкою на місці.
 
-Sew them together.
+Зшийте їх разом.
 
-#### Press open seam allowance
+#### Припуски шва припрасувати
 
-Press open the seam allowance between facing and lining.
+Розправте припуск на шов між облицюванням і підкладкою.
 
-### Step 3: Close all darts
+### Крок 3: Закрийте всі виточки
 
-![Close all darts](03a.png)
+![Закрийте всі виточки](03a.png)
 
-#### Close back darts
+#### Закрити задні виточки
 
-Fold your back with good sides together, and sew the back dart.
+Складіть спинку лицьовими боками разом і зшийте задню виточку.
 
-> Don't forget to do the same for the lining
+> Не забудьте зробити те ж саме для підкладки
 
-#### Close front darts
+#### Закрийте передні виточки
 
-Fold your front (and the interfacing fused to it) with good sides together, and sew the front dart.
+Складіть передню частину (і прокладку, що з'єднана з нею) лицьовими боками разом і зшийте передню виточку.
 
-### Step 4: Press all darts
+### Крок 4: Натисніть на всі виточки
 
-![Press all darts](04a.png)
+![Натисніть на всі виточки](04a.png)
 
-#### Press the front darts
+#### Притисніть передні виточки
 
-Once cut open, press the front darts open.
+Після розрізу розпрасуйте передні виточки.
 
-#### Press the back darts
+#### Запрасуйте задні виточки
 
-If you cut open the back darts, press them open. If not, press them to the side.
+Якщо ви розрізаєте задні виточки, розпрасуйте їх. Якщо ні, притисніть їх в сторону.
 
-> Don't forget to do the same for the lining
+> Не забудьте зробити те ж саме для підкладки
 
-### Step 5: Construct the pockets
+### Крок 5: Створіть кишені
 
-#### Attach the pocket bag to the pocket welt
+#### Прикріпіть кишенькову сумку до шва кишені
 
-![Attach the pocket bag to the pocket welt](05a.png)
+![Прикріпіть кишенькову сумку до шва кишені](05a.png)
 
-Place your pocket bag down with the good side up, and your pocket welt on top of it with the good side down.
+Покладіть кишенькову сумку лицьовою стороною догори, а кишеньковий шов на неї зверху лицьовою стороною донизу.
 
-Align the straight side of the bag with the side of the welt that has no interfacing, and sew them together at the standard seam allowance.
+Вирівняйте прямий бік сумки зі стороною шва, що не стикається, і зшийте їх разом зі стандартним припуском на шви.
 
-#### Press seam open
+#### Відкрийте шов притискання
 
-When you are done, press open this seam.
+Коли ви закінчите, натисніть, щоб відкрити цей шов.
 
-#### Mark where your pocket needs to go
+#### Позначте, куди має йти ваша кишеня
 
-![Mark where your pocket needs to go](05a.png)
+![Позначте, куди має йти ваша кишеня](05a.png)
 
-Your front pattern piece has a helpline on it to show where the welt pocket should go. It's two half rectangles that got joined together when you closed the dart to form the shape of your welt pocket.
+На передній частині викрійки є допоміжна лінія, яка показує, де повинна знаходитися кишеня з прорізним швом. Це два напівпрямокутники, які з'єдналися разом, коли ви закрили виточку, щоб сформувати форму кишені.
 
-If you haven't marked the four corners of that rectangle yet, you should do so now.
+Якщо ви ще не позначили чотири кути цього прямокутника, зробіть це зараз.
 
-> The pocket sits under a slight angle on your pattern. Going forward, in the illustrations, I will draw the pocket straight as that makes things easier.
+> Кишеня сидить під невеликим кутом на вашій викрійці. Надалі, на ілюстраціях я буду малювати кишеню прямою, оскільки це спрощує завдання.
 
-#### Attach pocket welt and pocket facing
+#### Пришийте кишеньковий шов і обшивку кишені
 
-![Attach pocket welt and pocket facing](05c.png) ![Attach pocket welt and pocket facing](05d.png)
+![Пришийте кишеньковий шов і обшивку кишені](05c.png) ![Пришийте кишеньковий шов і обшивку кишені](05d.png)
 
-Place your front piece down with the good side up. We're going to attach the welt to the bottom line of your pocket outline, and the facing to the top line.
+Покладіть передню частину лицьовою стороною догори. Ми пришиваємо шов до нижньої лінії контуру кишені, а лицьову сторону - до верхньої лінії.
 
-> If you've never made a welt pocket before, it can be a bit counterintuitive to attach the pocket on the outside of the garment. Pocket should be on the inside, right?
+> Якщо ви ніколи раніше не робили прорізні кишені, може здатися, що пришивання кишені на зовнішній стороні одягу може бути дещо інтуїтивно незрозумілим. Кишеня має бути зсередини, так?
 > 
-> Relax, the pocket will end up on the inside
+> Розслабтеся, кишеня опиниться всередині
 
-Both your pocket welt and your pocket facing have a help line on them. That line needs to line up with the long edges of your pocket.
+Як на шві кишені, так і на лицьовій стороні кишені є допоміжна лінія. Ця лінія має збігатися з довгими краями кишені.
 
-Place the pocket welt at the bottom, and the pocket facing on the top, both with their good side down.
+Покладіть кишеню швом донизу, а кишеню лицьовою стороною догори, лицьовим боком донизу.
 
-Carefully align their helpline on the pocket outline. They should now sit side by side, and just bump into each other at the middle of your pocket.
+Акуратно нанесіть номер телефону довіри на контур кишені. Тепер вони повинні сидіти пліч-о-пліч і просто стикатися один з одним посередині вашої кишені.
 
-Now sew along the helpline which marks the long edge of your pocket.
+Тепер прошийте вздовж допоміжної лінії, яка позначає довгий край кишені.
 
-> It is important that the lines you sew now form the long edges of a perfect rectangle. This will determine the shape of your pocket, so if you make one line longer than the other, or if they are not parallel or mis-aligned, you pocket will look bad.
+> Важливо, щоб лінії, які ви зараз прошиваєте, утворювали довгі краї ідеального прямокутника. Це визначатиме форму кишені, тому якщо ви зробите одну лінію довшою за іншу, або якщо вони не паралельні чи не співпадають, кишеня буде виглядати погано.
 
-#### Cut open the pocket
+#### Розріжте кишеню
 
-![Cut open the pocket](05c.png)
+![Розріжте кишеню](05c.png)
 
-Time to carefully cut open the pocket. Start in the middle of the pocket, and cut towards along the longest edges towards the side.
+Час акуратно розрізати кишеню. Почніть з середини кишені і розріжте вздовж найдовших країв у бік.
 
-At the edges of your pocket you need to stop cutting open the center and instead cut towards the end of your line of stitches under 45 degrees.
+По краях кишені вам потрібно припинити розрізати центр і замість цього розрізати до кінця лінії стібків під кутом 45 градусів.
 
-> This small triangle you are cutting at the end is important. Make sure to aim carefully as you should cut right up to the end of your stitches, without cutting into the stitches.
+> Цей маленький трикутник, який ви вирізаєте в кінці, дуже важливий. Уважно прицілюйтеся, оскільки ви повинні різати до кінця стібків, не розрізаючи їх.
 
-#### Press open the seam allowance
+#### Розкрийте припуск на шов
 
-![Press open the seam allowance](05c.png)
+![Розкрийте припуск на шов](05c.png)
 
-Press open the seam allowance along the long edges of your pocket.
+Розпрасуйте припуски на шви вздовж довгих країв кишені.
 
-#### Bring the pocket facing to the back and press
+#### Прикладіть кишеню лицьовою стороною до задньої сторони і натисніть
 
-![Bring the pocket facing to the back and press](05g.png)
+![Прикладіть кишеню лицьовою стороною до задньої сторони і натисніть](05g.png)
 
-Flip the pocket facing to the back side and press it down.
+Переверніть кишеню лицьовою стороною на зворотний бік і притисніть її.
 
-#### Press down the triangles at the short sides
+#### Притисніть трикутники на коротких сторонах
 
-![Press down the triangles at the short sides](05h.png)
+![Притисніть трикутники на коротких сторонах](05h.png)
 
-Move your pocket facing out of the way to reveal those little traingles at the side of your pocket.
+Переверніть кишеню лицьовою стороною назовні, щоб показати маленькі сліди збоку кишені.
 
-Fold them back making sure you to keep your pocket opening a clean rectangle, and press them down.
+Складіть їх так, щоб у кишені залишився чистий прямокутник, і притисніть.
 
-#### Bring the pocket welt to the back, fold and press
+#### Виверніть шов кишені на виворітну сторону, складіть і притисніть
 
-![Bring the pocket welt to the back, fold and press](05i.png) ![Bring the pocket welt to the back, fold and press](05j.png)
+![Виверніть шов кишені на виворітну сторону, складіть і притисніть](05i.png) ![Виверніть шов кишені на виворітну сторону, складіть і притисніть](05j.png)
 
-Flip the pocket welt with the attached pocket back tot he back side.
+Відверніть шов кишені разом з прикріпленою кишенею на виворітний бік.
 
-Fold your welt down at the point where it reaches the top of the pocket. The welt should cover the entire pocket opening.
+Загніть пояс вниз у місці, де він доходить до верхньої частини кишені. Шов повинен закривати весь отвір кишені.
 
-> The illustration shows this from the back as it's easier to see what is going on this way. However, you should check from the front to make sure your welt pocket looks good.
+> На ілюстрації це показано ззаду, оскільки так легше побачити, що відбувається. Однак варто перевірити спереду, щоб переконатися, що кишеня виглядає добре.
 
-#### Sew down the pocket triangles
+#### Пришийте трикутники кишень
 
-![Sew down the pocket triangles](05k.png)
+![Пришийте трикутники кишень](05k.png)
 
-Put your front down with the good side up and make sure the pocket facing and welt lie flat.
+Покладіть лицьовою стороною догори і переконайтеся, що кишеня і шов лежать рівно.
 
-Fold your front over vertically at the edge of your pocket to reveal that little triangle at the short side of your pocket opening.
+Складіть передню частину вертикально по краю кишені, щоб відкрити маленький трикутник на короткій стороні кишенькового отвору.
 
-Sew this triangle down by sewing right next to the fold, and pocket edge.
+Пришийте цей трикутник вниз, зшиваючи поруч зі згином і краєм кишені.
 
-#### Close the pocket bag
+#### Закрийте кишенькову сумку
 
-![Close the pocket bag](05l.png)
+![Закрийте кишенькову сумку](05l.png)
 
-Sew your pocket facing to the pocket bag to finish your pocket.
+Пришийте кишеню лицьовою стороною до кишенькової сумки, щоб закінчити кишеню.
 
-> This should go without saying, but be careful not to sew your pocket bag to the front of your waistcoat.
+> Це повинно бути само собою зрозуміло, але будьте обережні, щоб не пришити кишенькову сумку до передньої частини жилета.
 
-#### Press your completed pocket
+#### Натисніть на заповнену кишеню
 
-![Press your completed pocket](05m.png)
+![Натисніть на заповнену кишеню](05m.png)
 
-When you're done, give your pocket a good final press.
+Закінчивши, добре відіжміть кишеню.
 
-### Step 6: Center back seam
+### Крок 6: Центральний задній шов
 
-![Sew and press the center back seam](06a.png)
+![Зшийте і припрасуйте центральний задній шов](06a.png)
 
-Put your two back pieces with their good side together and sew the center back seam.
+Складіть обидві деталі спинки лицьовим боком до лицьового боку і зшийте середній задній шов.
 
-When you're done, press open this seam.
+Коли закінчите, розправте цей шов.
 
-> Don't forget to do the same for the lining
+> Не забудьте зробити те ж саме для підкладки
 
-### Step 7: Join back to fronts
+### Крок 7: З'єднайте задню частину з передньою
 
-![Join back to fronts](07a.png)
+![Приєднайте спину до фронту](07a.png)
 
-Put your back down with the good side up and put your fronts on it with the good side down. Align the side seams, pin and sew.
+Покладіть спину лицьовою стороною догори і покладіть на неї передню частину лицьовою стороною донизу. Вирівняйте бокові шви, приколіть і зшийте.
 
-When you're done, press open these seams.
+Коли закінчите, розправте ці шви.
 
-### Step 8: Join the shoulders
+### Крок 8: З'єднайте плечі
 
-![Join the shoulders](08a.png)
+![З'єднайте плечі](08a.png)
 
-Align the shoulder seams, sew them, and press open the seam allowance.
+Вирівняйте плечові шви, зшийте їх і розпрасуйте припуски на шви.
 
-> Don't forget to do the same for the lining
+> Не забудьте зробити те ж саме для підкладки
 
-### Step 9: Insert the lining
+### Крок 9: Вставте підкладку
 
-#### Slide lining into the wasitcoat
+#### Засуньте підкладку у вітровку
 
-![Slide lining into the waistcoat](09a.png)
+![Засуньте підкладку в жилет](09a.png)
 
-Place your lining in your waistcoat, good sides together. In other words, the waistcoat should have the good side in and bad side out. The lining should have the bad side in and good side out.
+Покладіть підкладку в жилет лицьовими сторонами разом. Іншими словами, жилет повинен мати гарну сторону всередину і погану сторону назовні. Підкладка повинна бути виворітною стороною всередину, а лицьовою - назовні.
 
-#### Pin lining to fabric
+#### Приколіть підкладку до тканини
 
-![Pin linng to fabric](09b.png)
+![Пришивна підкладка до тканини](09b.png)
 
-Align the lining with the fabric edge, and pin it in place.
+Вирівняйте підкладку по краю тканини і приколіть її на місці.
 
-Start at center back, and follow the neckline down the front closure. Work your way around the hem, but leave about a 15cm gap at the center back.
+Почніть від центру спинки і пройдіть по вирізу горловини до застібки спереду. Пройдіть навколо подолу, але залиште приблизно 15 см проміжку по центру ззаду.
 
-#### Sew lining to fabric
+#### Пришийте підкладку до тканини
 
-![Sew linng to fabric](09c.png)
+![Пришийте підкладку до тканини](09c.png)
 
-With your lining pinned neatly in place, sew lining and fabric together.
+Акуратно прикріпивши підкладку на місце, зшийте підкладку і тканину разом.
 
-Do not forget to leave that 15cm gap at the center back.
+Не забудьте залишити 15-сантиметровий проміжок по центру ззаду.
 
-#### Turn waistcoat and press edges
+#### Підверніть жилет і припрасуйте краї
 
-![Turn waistcoat and press edgess](09d.png)
+![Підверніть жилет і припрасуйте край](09d.png)
 
-Reach through the gap you left open at the hem, and turn your waistcoat.
+Простягніть руку крізь щілину, яку ви залишили відкритою на подолі, і виверніть жилет.
 
-Press the edges you've just sewn, making sure to roll the fabric a bit so that the lining is always hidden.
+Притисніть щойно зшиті краї, не забуваючи трохи скручувати тканину, щоб підкладка завжди була прихована.
 
-### Step 10: Finish the armholes
+### Крок 10: Закінчіть обробку пройм
 
-#### Pin back the fabric seam allowance
+#### Припуски на шви тканини приколіть назад
 
-![Pin back the fabric seam allowance](10a.png)
+![Припуски на шви тканини приколіть назад](10a.png)
 
-All along the armhole, pin back the seam allowance of your waistcoat fabric. While doing so, keep your lining out of the way.
+Уздовж пройми приколіть припуски на шви тканини жилета. При цьому тримайте підкладку подалі від дороги.
 
-#### Pin down lining
+#### Закріпіть підкладку
 
-![Pin down lining](10b.png)
+![Закріпіть підкладку](10b.png)
 
-Now fold back your lining a bit before the edge of the armhole and pin it down.
+Тепер відверніть підкладку трохи назад перед краєм пройми і приколіть її.
 
-#### Hand-sew the lining to the fabric
+#### Пришийте підкладку до тканини вручну
 
-![Hand-sew teh lining to the farbric](10c.png)
+![Пришийте підкладку до тканини вручну](10c.png)
 
-Use a slipstitch to hand-sew the lining to the fabric all along the armhole.
+За допомогою потайного стібка пришийте підкладку до тканини вздовж пройми вручну.
 
-### Step 11: Finish the hem
+### Крок 11: Закінчіть обробку подолу
 
-Remember that gap we didn't close in step 9? Time to close it.
+Пам'ятаєте ту прогалину, яку ми не закрили на 9-му кроці? Час закривати.
 
-Use a slipstitch to hand-sew the lining to the fabric and close the hem.
+Пришийте підкладку до тканини вручну і закрийте край швом "ковзання".
 
-### Step 12: Make the buttonholes
+### Крок 12: Зробіть петлі для ґудзиків
 
-![Make the buttonholes](12a.png)
+![Зробіть петлі для ґудзиків](12a.png)
 
-If you haven't done so yet, transfer the buttonhole placement from your pattern onto your fabric.
+Якщо ви цього ще не зробили, перенесіть розташування петель з викрійки на тканину.
 
-Make those buttonholes.
+Зробіть ці петлі.
 
-### Step 13: Attach the buttons
+### Крок 13: Прикріпіть кнопки
 
-![Attach the buttons](13a.png)
+![Прикріпіть ґудзики](13a.png)
 
-Pin your waistcoat closed and transfer the location of your buttonholes to the button side.
+Приколіть жилет і перенесіть розташування петель на бік ґудзиків.
 
-Sew on those buttons.
+Пришийте ці ґудзики.
 
-> You could also transfer the location of the buttons from the pattern. However, transferring the buttonholes you just made assures you that the buttons and buttonholes will line up, even if your buttonhole(s) is/are ever so slightly off.
+> Ви також можете перенести розташування кнопок з викрійки. Однак перенесення петель, які ви щойно зробили, гарантує, що ґудзики і петлі будуть вирівняні, навіть якщо петлі трохи зміщені.
 
-### Step 14: Optional: Pick-stitch the edges
+### Крок 14: Необов'язково: Обшийте краї пікантними стібками
 
-![You can optionally pick-stitch the edges of your waistcoat](14a.png)
+![За бажанням ви можете підшити краї жилета](14a.png)
 
-If you'd like, you can pick-stitch around the edges of your waistcoat.
+За бажанням, ви можете обробити краї жилета.
 
-Pick-stitching needs to be done by hand. You run a simple stitch a few mm from the edges of your waistcoat, but only let your stitches surface for a few threads. You've certainly seen it as a finish on suit jackets.
+Пришивку потрібно робити вручну. Ви виконуєте просту строчку на відстані кількох мм від країв жилета, але залишаючи стібки на поверхні лише на кілька ниток. Ви, безумовно, бачили його як обробку на піджаках костюмів.
 
-> You can pick-stitch with thread of the same colour, or use a contrasting colour if you're feeling bold.
+> Ви можете вишивати ниткою того ж кольору або використовувати контрастний колір, якщо ви відчуваєте себе сміливо.
 
-> While pick-stitching adds a distinctive look, it also locks your fabric to your lining/facing which prevents things from shifting around.
+> Крім того, що зшивання додає виразного вигляду, воно також фіксує тканину до підкладки/лицьової сторони, що запобігає зміщенню речей.
 
-After this, you probably want to iron your waistcoat.
+Після цього вам, напевно, захочеться попрасувати жилет.
