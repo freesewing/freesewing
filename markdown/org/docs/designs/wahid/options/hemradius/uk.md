@@ -1,11 +1,11 @@
 - - -
-title: "Hem radius"
+назва: "Радіус подолу"
 - - -
 
-![Hem radius](hemradius.svg)
+![Радіус подолу](hemradius.svg)
 
-Determines the radius of the hem if you opted for a rounded hem.
+Визначає радіус подолу, якщо ви вибрали закруглений поділ.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_hemradius_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](wahid_hemradius_sample.svg "Вплив цієї опції на шаблон")
