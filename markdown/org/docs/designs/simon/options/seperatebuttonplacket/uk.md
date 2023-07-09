@@ -1,11 +1,11 @@
 - - -
-title: "Seperate button placket"
+назва: "Окрема планка для ґудзиків"
 - - -
 
-![Seperate button placket](seperatebuttonplacket.svg)
+![Окрема планка для ґудзиків](seperatebuttonplacket.svg)
 
-Whether or not you want the button placket to be a seperate pattern part.
+Незалежно від того, чи хочете ви, щоб планка ґудзика була окремою деталлю викрійки.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_seperatebuttonplacket_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_seperatebuttonplacket_sample.svg "Вплив цієї опції на шаблон")
