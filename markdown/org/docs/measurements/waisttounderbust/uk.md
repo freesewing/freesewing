@@ -1,7 +1,7 @@
 ---
-title: Waist to underbust
+title: Талія до заниженого бюста
 ---
 
-The **waist to underbust** is the measurement from your waist up towards your underbust link (where your bra band sits).
+Обхват **талії до лінії грудей** - це обхват від талії до лінії грудей (там, де сидить бретелька бюстгальтера).
 
-To measure your **waist to underbust**, locate the height of both your waist and underbust, and measure the vertical distance between them. Make sure to measure at the side of your body.
+Щоб виміряти обхват талії **до обхвату грудей**, знайдіть висоту талії і обхвату грудей і виміряйте відстань між ними по вертикалі. Обов'язково вимірюйте збоку тіла.
