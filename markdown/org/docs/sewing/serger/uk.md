@@ -1,17 +1,17 @@
 ---
-title: Serger
+title: Сергер
 ---
 
-![The finished backside of a serged seam](serged-seam.jpg)
+![Готовий виворітний бік зшитого шва](serged-seam.jpg)
 
-![My serger, a Bernina 700D](serger.jpg)
+![Моя сергер, Bernina 700D](serger.jpg)
 
-A serger or overlock is a type of sewing machine that can both cut fabric and make a stretch lockstitch.
+Сергер або оверлок - це тип швейної машини, яка може як розкроювати тканину, так і виконувати розтягуючий човниковий стібок.
 
-Sergers use multiple threads and needles to not only make the seam, but also lock the fabric. They are very often used with knit or other stretchy fabrics.
+Сергери використовують кілька ниток і голок, щоб не тільки виконати шов, але й зафіксувати тканину. Їх дуже часто використовують з трикотажними або іншими еластичними тканинами.
 
-> The term overlock is more common in Europe for a serger. However, I prefer to use serger as it avoids confusion between the very similar named overlock and coverlock machines.
+> Термін "оверлок" більш поширений в Європі для позначення швейної машини. Однак я віддаю перевагу використанню сергера, оскільки це дозволяє уникнути плутанини між дуже схожими за назвою машинами оверлок і коверлок.
 > 
-> Further confusion is added by the fact that some sewing machines have an overlock stitch that mimics the role of a serger.
+> Ще більшої плутанини додає той факт, що деякі швейні машини мають оверлочну строчку, яка імітує роль сервера.
 > 
-> To steer clear of all this, I use serger to refer to the dedicated machine.
+> Щоб уникнути всього цього, я використовую термін "сергер" для позначення спеціальної машини.
