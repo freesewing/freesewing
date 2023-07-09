@@ -1,15 +1,15 @@
 ---
-title: Upper leg circumference
+title: Обхват гомілки
 ---
 
-The **upper leg circumference** is the measurement around your leg, near the top of your leg.
+Обхват гомілки **** - це вимірювання навколо ноги, біля верхньої частини ноги.
 
-You should measure this a bit below your crotch, refer to the illustration for guidance. Make sure to keep the tape measure horizontal to the floor as you measure the circumference of your leg.
+Виміряйте його трохи нижче промежини, дивіться на ілюстрацію для орієнтиру. Під час вимірювання обхвату ноги тримайте рулетку горизонтально до підлоги.
 
 <Tip>
 
-##### Be mindful of the vertical location of this measurement
+##### Пам'ятайте про вертикальне розташування цього виміру
 
-This measurements is also used as **a vertical reference** to determine the vertical space in which to draft the seat/crotch of trousers. As such, the vertical location of this measurement is important.
+Цей вимір також використовується як **вертикальний орієнтир** для визначення вертикального простору, в якому потрібно витягнути сидіння/западину штанів. Таким чином, вертикальне розташування цього вимірювання є важливим.
 
 </Tip>
