@@ -1,11 +1,11 @@
 - - -
-title: "Pocket height"
+назва: "Висота кишені"
 - - -
 
-![Pocket height](./pocketheight.svg)
+![Висота кишені](./pocketheight.svg)
 
-Controls the height of the front pocket.
+Регулювання висоти передньої кишені.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_pocketheight_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](huey_pocketheight_sample.svg "Вплив цієї опції на шаблон")
