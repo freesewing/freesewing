@@ -1,17 +1,17 @@
 - - -
-title: "Hips ease"
+назва: "Легкість стегон"
 - - -
 
-![The hips ease option on Aaron](./hipsease.svg)
+![Опція полегшення стегон на Аароні](./hipsease.svg)
 
-How much room do you want at the hips?
+Скільки місця ви хочете в стегнах?
 
-Whatever value you provide here will simply be added to your hips circumference measurement when drafting the garment.
+Будь-яке значення, яке ви вкажете тут, буде просто додано до обхвату стегон під час побудови викрійки виробу.
 
-> ##### This option also allows negative values.
+> ##### Ця опція також допускає від'ємні значення.
 > 
-> You should only use negative ease if you are using a stretch material that you want to fit tightly. Overall stretch should be configured with the stretch option.
+> Використовуйте від'ємну легкість, тільки якщо ви використовуєте еластичний матеріал, який повинен щільно прилягати до тіла. Загальне розтягування слід налаштувати за допомогою опції розтягування.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_hipsease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](aaron_hipsease_sample.svg "Вплив цієї опції на шаблон")
