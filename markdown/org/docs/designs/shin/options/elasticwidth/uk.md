@@ -1,13 +1,13 @@
 - - -
-title: "Elastic width"
+назва: "Еластична ширина"
 - - -
 
-> #### What's the point?
+> #### У чому сенс?
 > 
-> This option is closely linked to the **rise** option that determines how high your swim trunks will rise on your waist.
+> Цей параметр тісно пов'язаний з параметром **rise** , який визначає, наскільки високо підніматимуться плавки на талії.
 > 
-> However, the width of your elastic is also a factor to take into account, so that's where this option comes in.
+> Однак, ширина вашої резинки також є фактором, який слід враховувати, тож саме тут з'являється ця опція.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](shin_elasticwidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](shin_elasticwidth_sample.svg "Вплив цієї опції на шаблон")
