@@ -1,18 +1,18 @@
 - - -
-title: "Sleevecap ease"
+назва: "Легкість рукавів"
 - - -
 
-Determines the amount of sleevecap ease.
+Визначає ступінь легкості манжета рукава.
 
 <Note>
 
-The amount of sleevecap ease determines how the sleeves rolls from the shouder.
-More ease makes the sleeve curl into the seam as you see on suit jackets. Less ease makes the sleeve lie flat.
+Легкість манжета визначає, як рукав скочується з плеча.
+Для більшої зручності рукав підвертається в шов, як на піджаках, як ви бачите на костюмах. Менша легкість робить рукав плоским.
 
-For light fabric or knits, you want little to no sleevecap ease. For heavier woven fabrics, you need more sleevecap ease.
+Для легких тканин або трикотажу вам не потрібна майже ніяка легкість рукава. Для важчих тканин вам потрібна більша легкість рукава.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_sleevecapease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](breanna_sleevecapease_sample.svg "Вплив цієї опції на шаблон")
