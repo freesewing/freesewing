@@ -1,9 +1,9 @@
 - - -
-title: "Secondary bust dart"
+Назва: "Вторинна витачка для бюста"
 - - -
 
-Optionally include a secondary bust dart to distribute the shaping of the chest.
+За бажанням додайте додаткову виточку на грудях, щоб розподілити форму грудей.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_secondarybustdart_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](breanna_secondarybustdart_sample.svg "Вплив цієї опції на шаблон")
