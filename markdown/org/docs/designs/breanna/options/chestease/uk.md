@@ -1,9 +1,9 @@
 - - -
-title: "Chest ease"
+назва: "Легкість у грудях"
 - - -
 
-This option controls the ease at your chest.
+Цей параметр регулює легкість у грудях.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_chestease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](breanna_chestease_sample.svg "Вплив цієї опції на шаблон")
