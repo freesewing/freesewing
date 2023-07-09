@@ -1,5 +1,5 @@
 - - -
-title: "Bruce boxer briefs: Required Measurements"
+назва: "Труси-боксери "Брюс": Необхідні виміри"
 - - -
 
 <PatternMeasurements pattern='bruce' />
