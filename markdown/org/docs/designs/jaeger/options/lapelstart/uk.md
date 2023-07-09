@@ -1,11 +1,11 @@
 - - -
-title: "Lapel start"
+Назва: "Старт з лацкана"
 - - -
 
-![Lapel start](lapelstart.svg)
+![Початок з лацкана](lapelstart.svg)
 
-Location of the lapel break point (where the front opening starts). Lower values are closer to the waistline, higher values closer to the chestline.
+Розташування точки згину лацкана (де починається передній розріз). Нижчі значення знаходяться ближче до лінії талії, вищі - ближче до лінії грудей.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_lapelstart_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_lapelstart_sample.svg "Вплив цієї опції на шаблон")
