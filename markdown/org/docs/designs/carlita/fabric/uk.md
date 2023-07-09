@@ -1,39 +1,39 @@
 - - -
-title: "Carlita coat: Fabric Options"
+назва: "Пальто Карліта: Варіанти тканин"
 - - -
 
-### Main Fabric
+### Основна тканина
 
-You want a fabric that has a bit of body that holds its shape. Generally **Wools** of **coating weight** will be the best choice as they will provide warmth and give shape to the coat. Other fabrics of **coating weight** should also work. However if you are looking for something more lightweight you could try **Linens** and lighter **Wools**, but you may need to face these fabrics to give them more body before construction. **Fleece** is a cheaper alternate to **Wools** but may note keep as long, if you are putting the effort into properly tailoring Carlita then you are gonna want to consider buying a fabric that will last for a long period of time.
+Вам потрібна тканина, яка має трохи тіла і тримає форму. Як правило, найкращим вибором буде **вовна** з **вагою покриття** , оскільки вона забезпечить тепло і надасть форму пальто. Інші тканини з **вагою покриття** також повинні працювати. Однак, якщо ви шукаєте щось більш легке, ви можете спробувати **Білизна** і більш легкі **Вовна**, але, можливо, вам доведеться випрасувати ці тканини, щоб надати їм більшої щільності перед побудовою. **Фліс** є дешевшою альтернативою **Вовна** , але може зберігатися так само довго, якщо ви докладаєте зусиль для правильного пошиття Карліти, то вам варто подумати про придбання тканини, яка прослужить довгий період часу.
 
 <Note>
 
-Remember that this pattern is intended to be a winter coat so you need to consider warmth when choosing your fabric.
+Пам'ятайте, що ця викрійка призначена для зимового пальта, тому при виборі тканини потрібно враховувати тепло.
 
 </Note>
 
-### Linings and Pocket Bags
+### Підкладки та кишенькові сумки
 
-Lightweight **Cottons** such as **Cotton Silesia**, **Cotton Lawn** or **Glazed Cottons** should do for the body lining but you may find that you require **Silks** or similar for the sleeve linings to reduce friction and make it easier to take on and off over the arms. **Silks** can also be used for the body as well but the **Cotton** will be more durable in the long run. Pocket bags should be out of **Cotton** or something that is strong enough to hold the weight of the intended items you wish to carry in them. **Printed Cottons** are a fun thing to try but if your main fabric is quite bulky you may find they add to much weight.
+Легкі **бавовняні** , такі як **Бавовняна Сілезія**, **Бавовняна галявина** або **Глазуровані бавовняні** підійдуть для підкладки тіла, але ви можете виявити, що вам знадобиться **Шовк** або подібний матеріал для підкладки рукавів, щоб зменшити тертя і полегшити надягання та знімання через руки. **Шовкові** також можна використовувати для тіла, але бавовняні **** будуть більш довговічними в довгостроковій перспективі. Кишенькові сумки повинні бути виготовлені з **бавовни** або з іншого матеріалу, який є достатньо міцним, щоб витримати вагу предметів, які ви хочете в них переносити. **Бавовна з принтом** - цікава річ, але якщо ваша основна тканина досить об'ємна, ви можете виявити, що вона додає вам зайвої ваги.
 
 <Tip>
 
-As per usual with Linings it is really down to your prefered lining materials but if you are new to lining a coat we suggest to use the **Cotton** options for the body and pockets and use the **Silk** option for the sleeves.
+Як завжди з підкладками, все залежить від ваших уподобань, але якщо ви новачок у підкладках, ми радимо використовувати опції **Бавовна** для тіла та кишень, а для рукавів - опцію **Шовк**.
 
 </Tip>
 
-### Facings
+### Облицювання
 
-We recommend **Hair canvases**. You may be tempted to use modern interfacing but hair canvases will provide the best results. You will want a combination of different weight hair canvases such as lightweight to medium weight **Tailors Canvas** and heavyweight **Horsehair Canvas**. A common misconception is that you have to use horsehair canvas for all of it, but this is not the case and really is only needed for areas that need the most structure such as the front shoulder but are often too stiff for other parts. Tailors canvas is generally used for the majority of facing a coat.
+Рекомендуємо **Полотна для волосся**. У вас може виникнути спокуса використати сучасні інтерфейси, але полотна для волосся забезпечать найкращі результати. Вам знадобиться комбінація полотен з волосся різної ваги, наприклад, легкі та середні **Кравецькі полотна** і важкі **Полотно з кінського волосу**. Поширеною помилкою є те, що ви повинні використовувати полотно з кінського волосу для всього, але це не так, і насправді воно потрібне лише для ділянок, які потребують найбільшої структури, таких як переднє плече, але часто є занадто жорстким для інших частин. Кравецьке полотно, як правило, використовується для більшої частини лицьової частини пальто.
 
 <Tip>
 
-You can use fusible or non-fusible facings but you may find that you still need to flatline the facing and fabric pieces together with basting stitches, even after fusing for the best results.
+Ви можете використовувати плавкі або неплавкі лицювальні матеріали, але, можливо, для досягнення найкращих результатів вам все одно доведеться вирівнювати лицювальну та тканинну частини за допомогою наметочних стібків, навіть після їхнього розплавлення.
 
 </Tip>
 
 <Note>
 
-Certain hair canvases, such as **Horsehair canvas** can have stiff hairs that can poke out of the fabric so will require tape like tailors tape to prevent this from happening.
+Деякі полотна з ворсу, такі як **полотно з кінського волосу**, можуть мати жорсткі ворсинки, які можуть випирати з тканини, тому для запобігання цьому знадобиться стрічка, як кравецька, щоб запобігти цьому.
 
 </Note>
