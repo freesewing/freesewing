@@ -1,19 +1,19 @@
 - - -
-title: "Knot width"
+назва: "Ширина вузла"
 - - -
 
-![Knot width](knotwidth.svg)
+![Ширина вузла](knotwidth.svg)
 
-The knot width is the width in the middle of the tie, where you make the knot.
+Ширина вузла - це ширина посередині краватки, де ви робите вузол.
 
-How wide your tie is in the middle will influence the tie knot. Go wide for big and bulky knots, go narrow for small knots.
+Від того, наскільки широка ваша краватка посередині, залежить вузол краватки. Широкі вузли для великих та об'ємних вузлів, вузькі - для маленьких вузлів.
 
 <Note>
 
-Do not make the knot width larger than the tip width
+Не робіть ширину вузла більшою за ширину вістря
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](trayvon_knotwidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](trayvon_knotwidth_sample.svg "Вплив цієї опції на шаблон")
