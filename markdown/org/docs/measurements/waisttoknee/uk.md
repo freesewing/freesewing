@@ -1,7 +1,7 @@
 ---
-title: Waist to knee
+title: Від талії до колін
 ---
 
-The **waist to knee** is the measurement from your waist down towards your knee, measured on the side of your body.
+Обхват **талії до коліна** - це обхват від талії до коліна, виміряний збоку тіла.
 
-To measure your **waist to knee**, locate the height of both your waist and your knee, and measure the vertical distance between them. Make sure to measure at the side of your body.
+Щоб виміряти обхват **від талії до коліна**, знайдіть висоту талії і коліна та виміряйте відстань між ними по вертикалі. Обов'язково вимірюйте збоку тіла.
