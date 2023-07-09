@@ -1,11 +1,11 @@
 - - -
-title: "Length bonus"
+назва: "Бонус за довжину"
 - - -
 
-![The length bonus option on Diana](./lengthbonus.svg)
+![Опція бонусу за довжину на Діані](./lengthbonus.svg)
 
-This option controls the length of your top.
+Ця опція контролює довжину вашого топа.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_lengthbonus_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](diana_lengthbonus_sample.svg "Вплив цієї опції на шаблон")
