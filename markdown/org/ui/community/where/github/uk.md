@@ -5,4 +5,4 @@
 
 We don't only use Github for development, but also use Github issues for (lightweight) project management and discussion of feature request and bugs.
 
-It's also where you'll find the notes and agenda of our [contributor calls](/community/calls/).
+Там же ви знайдете нотатки та порядок денний наших дзвінків дописувачам [та](/community/calls/).
