@@ -1,19 +1,19 @@
 - - -
-title: "Cuff narrow button"
+назва: "Вузький ґудзик на манжеті"
 - - -
 
-![Barrel cuff narrow button](./barrelcuffnarrowbutton.svg)
+![Вузький ґудзик на манжеті ствола](./barrelcuffnarrowbutton.svg)
 
-Do you want an extra button to button up your cuff more tightly?
+Хочете додатковий ґудзик, щоб щільніше застібнути манжету?
 
-If you are wearing your shirt under a tight-fitting (at the wrist) sweater or cardigan, this button allows you to make your cuff more narrow, so it doesn't bunch up all ugly.
+Якщо ви одягаєте сорочку під облягаючий (на зап'ясті) светр або кардиган, цей ґудзик дозволяє зробити манжет більш вузьким, щоб він не збивався в кучугуру.
 
 <Note>
 
-This does only apply to barrelcuffs. So if you picked a French cuff as cuff style this will be ignored.
+Це стосується лише наручників. Тому, якщо ви вибрали французький манжет як стиль манжета, це буде проігноровано.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_barrelcuffnarrowbutton_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_barrelcuffnarrowbutton_sample.svg "Вплив цієї опції на шаблон")
