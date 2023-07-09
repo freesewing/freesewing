@@ -1,9 +1,9 @@
 - - -
-title: "Shoulder slope reduction"
+Назва: "Зменшення нахилу плечей"
 - - -
 
-Reduces the shoulder slope to create extra room for shoulder padding.
+Зменшує нахил плечей, створюючи додатковий простір для плечових накладок.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_shoulderslopereduction_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](carlita_shoulderslopereduction_sample.svg "Вплив цієї опції на шаблон")
