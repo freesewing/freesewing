@@ -1,11 +1,11 @@
 - - -
-title: "Hem style"
+назва: "Стиль подолу"
 - - -
 
-![Hem style](hemstyle.svg)
+![Стиль подолу](hemstyle.svg)
 
-Do you want a classic hemline, or a rounded hemline?
+Ви хочете класичний поділ або закруглений?
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_hemstyle_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](wahid_hemstyle_sample.svg "Вплив цієї опції на шаблон")
