@@ -1,40 +1,40 @@
 - - -
-title: "Jaeger jacket: What You Need"
+назва: "Єгерська куртка: Що вам потрібно"
 - - -
 
-To make Jaeger, you will need the following:
+Щоб зробити Єгер, вам знадобиться наступне:
 
-- About 2.5 meters (2.8 yards) of a suitable fabric (see [Fabric options](#fabric-options))
-- Lining fabric, optionally different sleeve lining fabric
-- Two larger buttons for the front, and 8 buttons for the sleeves
-- A bit of lightweight fusible interfacing for local enforcement
-- Canvas for the fronts and collar
-- Tailor's tape for the front edges
-- Some domette for interlining
-- Shoulder pads
-- Sleevehead wadding, with canvas if possible
-- Undercollar fabric
+- Близько 2,5 метрів (2,8 ярдів) відповідної тканини (див. [Варіанти тканин](#fabric-options))
+- Підкладкова тканина, за бажанням інша підкладкова тканина для рукавів
+- Дві великі кнопки спереду та 8 кнопок на рукавах
+- Трохи легкого легкоплавкого інтерфейсу для місцевого правозастосування
+- Полотно для передньої частини та коміра
+- Кравецька стрічка для передніх країв
+- Декілька дометт для підкладки
+- Плечові накладки
+- Вата для втулок, по можливості з брезентом
+- Тканина під комір
 
 <Note>
 
-###### Where to get all this stuff
+###### Де взяти все це
 
-Making Jaeger is a fun and rewarning project, but getting all the required bits
-and pieces can be challenging.
+Виготовлення "Єгера" - це цікавий і повчальний проект, але дістати всі необхідні деталі
+і частини може бути непросто.
 
-That is because this kind of project is somewhat more ambitious than the
-typical home sewing project, and as a result, your local haberdashery is
-unlikely to stock all of these things.
+Це тому, що такий проект дещо амбітніший, ніж
+типовий домашній швейний проект, і, як наслідок, ваш місцевий галантерейний
+навряд чи матиме в наявності всі ці речі.
 
-If you know where to get them, great. If not, some (quality) suppliers
-sometimes sell a **Jacket trim pack** that includes everything you need.
+Якщо ви знаєте, де їх взяти - чудово. Якщо ні, деякі (якісні) постачальники
+іноді продають **Пакет для оздоблення куртки**, який включає все необхідне.
 
-Below is a list of suppliers we are aware of where you can get this.
-We have no affiliation with these suppliers.
+Нижче наведено список відомих нам постачальників, у яких ви можете його придбати.
+Ми не пов'язані з цими постачальниками.
 
-- [B. Black & Sons](https://www.bblackandsons.com/) is based in the US
-- [Kenton Trimmings](http://kentontrimmings.co.uk/shop/) in based in the UK
+- [B. Black & Sons] (https://www.bblackandsons.com/) базується в США
+- [Kenton Trimmings] (http://kentontrimmings.co.uk/shop/) базується у Великобританії
 
-If you know of other places that carries this stuff, please let us know.
+Якщо ви знаєте інші місця, де продаються ці речі, будь ласка, дайте нам знати.
 
 </Note>
