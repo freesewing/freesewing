@@ -1,11 +1,11 @@
 - - -
-title: "Ankle/Hem elastic width"
+назва: "Ширина еластичності щиколотки/пододу"
 - - -
 
 If you're using an elasticated hem at the ankle, use this to set the width of the elastic you'll use.
 
-In other words, this will control the height of the cuff.
+Іншими словами, це дозволить контролювати висоту манжети.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](paco_ankleelastic_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](paco_ankleelastic_sample.svg "Вплив цієї опції на шаблон")
