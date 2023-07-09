@@ -27,7 +27,7 @@ export const SectionsMenu = ({ bOnly = false }) => {
             className={
               bOnly
                 ? `bg-secondary border border solid border-secondary bg-opacity-0 hover:bg-opacity-20 ${sharedClasses}`
-                : `bg-${colors[i]}-400 bg-opacity-70 hover:bg-opacity-100 ${sharedClasses}`
+                : `bg-${colors[i]} bg-opacity-70 hover:bg-opacity-100 ${sharedClasses}`
             }
             href={`/${page.s}`}
             title={page.t}
