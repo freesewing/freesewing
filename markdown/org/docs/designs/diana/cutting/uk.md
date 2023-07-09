@@ -1,7 +1,7 @@
 - - -
-title: "Diana draped top: Cutting Instructions"
+заголовок: "Драпірований топ "Діана": Інструкція з крою"
 - - -
 
-- Cut **1 back** on the fold
-- Cut **1 front** on the fold
-- Cut **2 sleeves** with _good sides together_
+- Відріжте **1 назад** на згині
+- Виріжте **1 передній** на згині
+- Виріжте **2 рукава** з _виворітними сторонами разом_
