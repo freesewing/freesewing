@@ -1,12 +1,12 @@
 - - -
-title: "Theo trousers: Sewing Instructions"
+назва: "Штани Тео: Інструкція з пошиття"
 - - -
 
 <Note>
 
-Text a bit dry for you? I try to make videos available as part of the pattern documentation.
+Текст трохи сухуватий для вас? Я намагаюся робити відео доступними як частину документації до шаблону.
 
-In this particular case, there's a lot of video material available, but it was originally recorded for a previous version of this pattern. Still, good stuff.
+У цьому конкретному випадку є багато відеоматеріалів, але спочатку вони були записані для попередньої версії цього шаблону. Але все одно добре.
 
 </Note>
 
@@ -14,767 +14,767 @@ In this particular case, there's a lot of video material available, but it was o
 
 <Note>
 
-Many of the steps below are to be repeated for both trouser legs.
+Багато з наведених нижче кроків потрібно повторити для обох штанин.
 
-That is not always mentioned because life is short and continuously writing _Do not forget to do this for both trouser legs_ gets tired really soon.
+Про це не завжди згадують, тому що життя коротке, і постійно писати _Не забудьте зробити це для обох штанин_ дуже швидко набридає.
 
 </Note>
 
-### Step 1: Baste the pleat lines
+### Крок 1: Зшийте лінії складок
 
-![Baste the pleat lines](step00.png)
+![Змастіть лінії складок](step00.png)
 
-First thing to do is to  baste over the pleat line of your trouser legs. Do it on both front and back pieces for both legs.
+Перше, що потрібно зробити, це прострочити лінію складок на штанинах. Зробіть це на передній і задній частинах для обох ніг.
 
-### Step 2: Close the back darts and press
+### Крок 2: Закрийте задні виточки і припрасуйте
 
-### Close the back darts
+### Закрийте задні виточки
 
-![Close the back darts](step01.png)
+![Закрийте задні виточки](step01.png)
 
-Fold piece 1 (back) double so that the notches of the dart on the waistband are aligned, and a sharp crease runs to the notch at the dart end. Feel free to briefly iron the crease, this will make it easier to sew the dart accurately.
+Деталь 1 (спинка) складіть удвічі так, щоб надсічки виточки на поясі були суміщені, а гостра складка переходила в надсічку на кінці виточки. Не соромтеся коротко пропрасувати складку, це полегшить акуратне вшивання виточки.
 
-Close the dart by sewing from the waistband down to the end of the dart.
+Закрийте виточку, прошиваючи від пояса вниз до кінця виточки.
 
-Use a small stitch length, and let your stitch run completely to the end (and of) the dart, then backtrack making sure to veer into the seam allowance.
+Використовуйте невелику довжину стібка і дайте стібку повністю дійти до кінця виточки, а потім зробіть зворотний хід, не забуваючи про припуски на шви.
 
-#### Press back darts to the side
+#### Відсуньте виточки вбік
 
-![Press the back darts to the side](step02.png)
+![Задні виточки притиснути збоку](step02.png)
 
-Press your back darts flat, folding the seam allowance to the side of your trousers.
+Задні виточки запрасуйте, відвернувши припуски шва на бічну сторону штанів.
 
-### Step 3: Construct the back pockets
+### Крок 3: Конструюємо задні кишені
 
-Construct the double welt pockets at the back of your trousers, including the pocket bag.
-
-<Tip>
-
-###### Double welt pockets
-
-Constructing a double welt pocket is a technique that is used is different garments.
-That is why I have branched it off into its own documentation page.
-
-There's both written documentation and a video series that shows you how to do it, so even if you've never made welt pockets before, you'll be fine.
-
-[To the welt pockets documentation](/docs/sewing/double-welt-pockets)
-
-</Tip>
-
-### Step 4: Optional: Trim your lining with pinking shears
-
-![Trim your lining with pinking shears](step04.png)
-
-If you are going to line your trousers (it's optional), you'll need to finish the edge of your lining. To do so, trim the edge of the lining with pinking shears.
-
-Note that you only need to do this for those edges of your lining that are not caught in a seam. In other words, only the bottom edge of your lining.
+Зробіть подвійні прорізні кишені на задній частині штанів, включаючи кишенькову сумку.
 
 <Tip>
 
-If you don't have pinking shears, you can apply another finish like a zig-zag stitch, or use a serger. However, pinking shears are best for this scenario because they don't add any bulk, which is important because we want to avoid the edge of the lining making a bump in your trousers.
+###### Кишені з подвійним швом
+
+Побудова кишені з подвійним швом - це техніка, яка використовується в різному одязі.
+Саме тому я виділив його на окрему сторінку документації.
+
+Існує як письмова документація, так і серія відеороликів, які показують, як це зробити, тому навіть якщо ви ніколи раніше не робили прорізні кишені, ви впораєтесь з цим завданням.
+
+[До документації про прорізні кишені](/docs/sewing/double-welt-pockets)
 
 </Tip>
 
-### Step 5: Trim pieces for front pocket slant
+### Крок 4: Необов'язково: Обріжте підкладку рожевими ножицями
 
-![Trim pieces for front pocket slant](step05.png)
+![Обріжте підкладку рожевими ножицями](step04.png)
 
-Align your front, lining and pocket bag on top of each other. Front and pocket back with their good side down, lining with the good side up.
+Якщо ви збираєтеся підкладати штани (це необов'язково), вам потрібно буде обробити край підкладки. Для цього обріжте край підкладки ножицями для розкрою.
 
-Pin them together to make sure they don't move. Do so away from the pocket slant to not hinder yourself later.
-
-Trim back the pocket bag (it should lie on top) exactly on the pocket slant line (marked on the pattern).
-
-Now trim back the front piece (it should lie on the bottom) 3cm outwards from the slant line, parallel to it.
-
-Finally, trim back your lining so that it stops 0.5 cm short of reaching the edge of your front.
+Зверніть увагу, що це потрібно зробити тільки для тих країв підкладки, які не потрапили в шов. Іншими словами, тільки нижній край вашої підкладки.
 
 <Tip>
 
-The lining is trimmed a bit shorter so that when it is folded back, it does not show. But it's really not all that important to get it exactly 0.5 cm shorter.
+Якщо у вас немає ножиць, можна застосувати іншу обробку, наприклад, зигзагоподібну строчку, або скористатися сервером. Однак ножиці для розкльошування найкраще підходять для цього сценарію, оскільки вони не додають об'єму, а це важливо, оскільки ми хочемо уникнути того, щоб край підкладки робив горбик на штанах.
 
 </Tip>
 
-### Step 6: Fold back and sew front pocket slant
+### Крок 5: Обріжте шматки для передньої косої кишені
 
-![Fold back and sew front pocket slant](step06.png)
+![Обрізки для косих передніх кишень](step05.png)
 
-Fold back your lining and front piece along the pocket slant line (and thus along the trimmed edge of the pocket bag. Pin this down and press.
+Вирівняйте передню частину, підкладку і кишеню сумки одна на одну. Перед і кишеня задньої частини лицьовим боком донизу, підкладка лицьовим боком догори.
 
-You are going to sew along the pocket slant, but make sure to flip everything over first so you can sew from the good side.
+Скріпіть їх разом, щоб вони не рухалися. Робіть це подалі від кишенькового зрізу, щоб потім не заважати собі.
 
-Topstitch a 0.5 cm from the fold, making sure to keep it parallel and not stretch your fabric.
+Відріжте кишеню-мішок (вона повинна лежати зверху) точно по лінії нахилу кишені (позначена на викрійці).
+
+Тепер обріжте передню частину (вона повинна лежати на дні) на 3 см назовні від лінії нахилу, паралельно їй.
+
+Нарешті, обріжте підкладку так, щоб вона не доходила до краю переду на 0,5 см.
 
 <Tip>
 
-This topstitching will always be on show, so make sure to match the thread color and make it pretty.
+Підкладка обрізана трохи коротше, щоб коли вона відкинута назад, її не було видно. Але насправді не так вже й важливо зробити його коротшим рівно на 0,5 см.
+
+</Tip>
+
+### Крок 6: Відверніть і пришийте передню кишеню по косій
+
+![Відверніть і пришийте передню кишеню по косій](step06.png)
+
+Складіть підкладку і передню частину уздовж лінії нахилу кишені (і, таким чином, уздовж обрізаного краю сумки-кишені). Притисніть це і натисніть.
+
+Ви будете прошивати кишеню вздовж нахилу, але не забудьте спочатку вивернути її на виворітний бік, щоб можна було прошивати з виворітного боку.
+
+Прострочіть верхню строчку на відстані 0,5 см від згину, намагаючись тримати її паралельно і не розтягувати тканину.
+
+<Tip>
+
+Ця строчка завжди буде на виду, тому не забудьте підібрати колір ниток і зробити її красивою.
 
 </Tip>
 
 <Tip>
 
-To prevent your pockets from bagging out, you can place a piece of non-stretching ribbon in between the fold. When stitching, you will also catch this ribbon, preventing the pocket to bag out.
+Щоб кишені не випирали, можна вкласти між згинами шматочок стрічки, що не розтягується. Під час зшивання ви також зачепите цю стрічку, не даючи кишені вилізти назовні.
 
 </Tip>
 
-### Step 7: Finish edge inside front pocket
+### Крок 7: Обробіть край всередині передньої кишені
 
-![Finish the edge inside the front pocket](step07.png)
+![Обробіть край всередині передньої кишені](step07.png)
 
-Fold away the main part of the front piece, so you can place the lining, pocket bag and folded edge of the front piece flat.
+Відверніть основну частину передньої деталі, щоб можна було покласти підкладку, кишеньковий мішечок і складений край передньої деталі на рівну поверхню.
 
-Zig-zag the edge of the folded-back front piece to finish it and secure it to the pocket back and lining.
+Обробіть зигзагоподібними строчками край загнутої назад передньої деталі і прикріпіть її до задньої частини кишені та підкладки.
 
-### Step 8: Press side pocket
+### Крок 8: Притисніть бокову кишеню
 
-![Press side pocket](step08.png)
+![Бічна кишеня для преси](step08.png)
 
-When you're done, place front piece, lining and pocket bag flat, and give it a good press.
+Коли ви закінчите, покладіть передню частину, підкладку і кишеню сумки на рівну поверхню і добре притисніть.
 
 <Tip>
 
-This might be a good time to remind you that every step up to this point had to be done for both legs.
+Можливо, зараз саме час нагадати вам, що кожен крок до цього моменту потрібно було робити обома ногами.
 
-It's just a friendly reminder, the next steps need to be done for both legs too.
+Це просто дружнє нагадування, що наступні кроки потрібно зробити для обох ніг.
 
 </Tip>
 
-### Step 9: Attach side piece to pocket bag
+### Крок 9: Прикріпіть бокову частину до кишенькової сумки
 
-![Attach side piece to pocket bag](step09.png)
+![Прикріпіть бічну частину до кишенькової сумки](step09.png)
 
-Place the other half of the pocket bag with the good side down, and align the side piece on it with the good side up.
+Покладіть другу половину кишенькової сумки лицьовою стороною вниз і вирівняйте бічну частину на ній лицьовою стороною вгору.
 
-Sew a zig-zag stitch along the edge of the side piece to finish it and attach it to the pocket bag.
+Прошийте зигзагоподібним швом по краю бокової частини, щоб закінчити її і прикріпіть до кишенькової сумки.
 
-### Step 10: Close the pocket bag
+### Крок 10: Закрийте кишенькову сумку
 
-![Close the pocket bag](step10.png)
+![Закрийте кишенькову сумку](step10.png)
 
-Place the front piece, lining and pocket bag with the pocket bag up.
+Покладіть передню частину, підкладку і кишеньковий мішечок кишеньковим мішечком догори.
 
-Align the second pocket bag with the attached side piece facing down.
+Вирівняйте другу кишенькову сумку прикріпленою бічною частиною донизу.
 
-Pin all pieces together making sure to stay about the bottom curve of the pocket bag.
+З'єднайте всі частини разом, не забуваючи про нижній вигин кишенькової сумки.
 
-When everything is pinned together, fold away the front piece and lining, and close the bottom curve of the pocket bag.
+Коли все буде скріплено, відверніть передню частину і підкладку, а також закрийте нижній вигин кишенькової сумки.
 
 <Tip>
 
-Sew to bottom curve of the pocket bag up until the point where it reached the side piece
+Пришийте до нижнього вигину сумки-кишені до того місця, де він досягне бокової частини
 
-You can finish the pocket bag in a number of ways, including:
+Ви можете оздобити сумку-кишеню різними способами, в тому числі:
 
-- Serge the sides together
-- Finish the edge with bias tape
-- Sew the sides together and finish the edge with a zig-zag stitch
+- Зшити бокові частини разом
+- Обробити край бейкою
+- Зшити бокові частини разом і обробити край зигзагоподібною строчкою
 
 </Tip>
 
-### Step 11: Press the front pocket
+### Крок 11: Натисніть на передню кишеню
 
-![Press the front pocket](step11.png)
+![Натисніть на передню кишеню](step11.png)
 
-Put everything flat with the front piece at the bottom, and give it a good press.
+Покладіть все плазом, передньою частиною вниз, і добре притисніть.
 
-### Step 12: Pin front pocket in place
+### Крок 12: Прикріпіть передню кишеню на місце
 
-![Pin the front pocket in place](step12.png)
+![Закріпіть передню кишеню на місці](step12.png)
 
-Pin the pocket down to the front piece along the slant and the edges of the pocket bag. This will prevent it from shifting around while we continue to work on our trousers.
+Приколіть кишеню до передньої деталі по скісному зрізу і краях кишенькової сумки. Це запобігатиме його зсуву, поки ми продовжуватимемо працювати над штанами.
 
-### Step 13: Finish the side edges
+### Крок 13: Обробіть бічні краї
 
-![Finish the side edges](step13.png)
+![Обробіть бічні краї](step13.png)
 
-Before we are going to sew the side seams, finish the side edges by serging or running a zig-zag stitch along the sides of your front and back pieces, making sure to stay within the foreseen seam allowance.
+Перед тим, як зшивати бічні шви, обробіть бічні краї, обметуючи або прокладаючи зигзагоподібну строчку вздовж боків деталей переду і спинки, не виходячи за межі передбачених припусків на шви.
 
 <Tip>
 
-Make sure to include the lining and pocket bag edges, as this will prevent things from shifting around when we sew the side seams.
+Не забудьте включити підкладку і краї сумки з кишенями, оскільки це запобіжить зміщенню речей, коли ми будемо зшивати бічні шви.
 
 </Tip>
 
-### Step 14: Sew the side seams
+### Крок 14: Зшийте бічні шви
 
-![Sew the side seams](step14.png)
+![Зшийте бокові шви](step14.png)
 
-Place the front and back of each leg on top of each other, with the good sides together.
+Покладіть передню і задню частини кожної ноги одна на одну, виворітними сторонами разом.
 
-Align the side seam, more precisely the side seam on the outside, where there is no crotch curve.
+Вирівняйте боковий шов, точніше боковий шов на зовнішній стороні, де немає вигину промежини.
 
 <Tip>
 
-You can pin the pieces together to make sure things stay in place while sewing this lengthy seam.
+Ви можете скріпити деталі шпильками, щоб переконатися, що вони залишаються на своїх місцях під час виконання цього довгого шва.
 
 </Tip>
 
-Sew the seam, starting from the waistband along the entire side of your trousers.
+Прострочіть шов, починаючи від пояса по всій довжині штанин.
 
-### Step 15: Press open seam allowance
+### Крок 15: Запрасуйте припуск на розкриття шва
 
-![Press open seam allowance](step14.png)
+![Припуски шва припрасувати](step14.png)
 
-Press open the seam allowance along the side seams. Do so from the back, and repeat from the good side of the fabric.
+Розпрасуйте припуски уздовж бічних швів. Зробіть це з вивороту і повторіть з виворітного боку тканини.
 
-Take your time, making sure to use enough heat, but not too much. Use steam or spray on water for best effect.
+Не поспішайте, використовуючи достатньо тепла, але не занадто багато. Для кращого ефекту використовуйте пару або розпилювач на воду.
 
 <Tip>
 
-A nice flat side seam looks great, so take your time to get it right.
+Гарний плоский боковий шов виглядає чудово, тому не поспішайте, щоб зробити його правильно.
 
 </Tip>
 
-### Step 16: Sew fly shield to fly piece
+### Крок 16: Пришийте захисний щиток до мушки
 
-![Sew fly shield to fly piece](step16.png)
+![Пришийте захисний щиток до мушки](step16.png)
 
-Place your fly piece on the fly shield with the good sides together, and align the edge with the biggest curve.
+Покладіть деталь мушки на мухобойку лицьовими сторонами разом і вирівняйте край по найбільшому вигину.
 
-Sew along the curved edge, taking account the standard 1cm seam allowance, to join the two pieces together.
+Зшийте вздовж вигнутого краю, враховуючи стандартний припуск на шов 1 см, щоб з'єднати дві частини разом.
 
 <Tip>
 
-If your lining has any stretch in it at all, try to stretch it out a bit while you sew the curve. This will make it easier to get the lining to lie flat without wrinkles later on.
+Якщо ваша підкладка має розтяжку, спробуйте трохи розтягнути її під час зшивання вигину. Це полегшить подальше укладання підкладки без зморшок.
 
 </Tip>
 
-### Step 17: Press the fly shield
+### Крок 17: Натисніть на захисний екран
 
-![Press the fly shield](step17.png)
+![Натисніть на мухобойку](step17.png)
 
 <Tip>
 
-Before pressing down your fly piece, make sure to roll the seam a little bit so that your trouser lining fabric sits a bit further, and the lining starts only about 2mm from the edge. This will prevent the lining from peeking out at the edge.
+Перед тим, як притиснути ширінку, переконайтеся, що ви трохи підвернули шов, щоб підкладкова тканина штанів сиділа трохи глибше, а підкладка починалася лише приблизно в 2 мм від краю. Це не дасть підкладці виглядати з краю.
 
 </Tip>
 
-After you have sewed fly piece and fly shield together, turn them inside out and press the seam you just made.
+Після того, як ви зшили мушку і щиток разом, виверніть їх навиворіт і притисніть щойно зроблений шов.
 
-### Step 18: Pin zip to right front piece
+### Крок 18: Приколіть блискавку до правої передньої частини
 
-![Pin zip to right front piece](step18.png)
+![Застібніть блискавку на правій передній частині](step18.png)
 
 <Tip>
 
-Steps 18 to 21 all lead up to a single row of stitching that will sew your zip to the front, while attaching the fly piece and fly shield in one go.
+Кроки з 18 по 21 ведуть до одного рядка строчки, який пришиває застібку-блискавку спереду, одночасно прикріплюючи застібку-блискавку і мушку за один прохід.
 
-This is the hardest seam to do in the entire construction process, so I'm taking my time to explain and illustrate this before you start sewing.
+Це найскладніший шов у всьому процесі виготовлення, тому я не поспішаю пояснювати та ілюструвати його, перш ніж ви почнете шити.
 
 </Tip>
 
-Place your front piece for the right leg with the good side up. So that lining and front pocket bag sit underneath and lie flat.
+Покладіть передню частину правої ноги лицьовим боком догори. Так, щоб підкладка і сумка з передньої кишені сиділи під нею і лежали рівно.
 
-Take your zip and open it (unzip it). Now turn it over so that it sits with the good side down. In other words, with the zipper puller down.
+Візьміть блискавку і відкрийте її (розстебніть). Тепер переверніть його так, щоб він лежав гарною стороною донизу. Іншими словами, з опущеною блискавкою.
 
-Align your zip with the crotch seam as shown in the illustration. Take the following into account:
+Вирівняйте застібку-блискавку по паховому шву, як показано на малюнку. Візьміть до уваги наступне:
 
-- The end of your zip should sit at the top of your trousers where your waistband will start. However, make sure to remember that there is seam allowance there, so don't align it with the top of the front piece, but subtract 1cm seam allowance.
-- Align the zip with the crotch seam. Do not mind the edge of the zip, as they come in different widths. Instead, make sure that you can sew next to the teeth of the zip within the seam allowance of the front piece.
+- Кінець застібки-блискавки повинен знаходитися у верхній частині штанів, де починається пояс. Однак пам'ятайте, що там є припуски на шви, тому не суміщайте його з верхом передньої деталі, а відніміть 1 см припуску на шов.
+- Вирівняйте застібку-блискавку з паховим швом. Не звертайте уваги на край блискавки, оскільки вони бувають різної ширини. Замість цього переконайтеся, що ви можете прошити поруч із зубчиками застібки-блискавки в межах припусків на шви передньої деталі.
 
-Pin the zip in place with a few pins perpendicular to your zip (as shown). In other words, don't pin along the zip, but across the zip.
+Закріпіть застібку-блискавку на місці кількома шпильками перпендикулярно до неї (як показано на малюнку). Іншими словами, приколюйте не вздовж блискавки, а впоперек.
 
 <Tip>
 
-If you're unsure about the placement of your zip, put it as close to the edge as possible. Doing so will only mean your zip is tucked away a bit further under the fly, so that it certainly is not on show.
+Якщо ви не впевнені в розташуванні застібки-блискавки, розташуйте її якомога ближче до краю. Це лише означає, що блискавка буде захована трохи далі під ширінку, так що її точно не буде видно.
 
 </Tip>
 
-### Step 19: Pin fly shield to zip
+### Крок 19: Прикріпіть мухобойку до блискавки
 
-![Pin zip to right front piece](step19.png)
+![Застібніть блискавку на правій передній частині](step19.png)
 
-Take the fly shield/fly piece that you assembled in step 16 & 17, and place it with the fabric facing downward, and the lining upward.
+Візьміть мухобойку/мухобойку, яку ви зібрали на кроці 16 & 17, і покладіть її тканиною донизу, а підкладкою догори.
 
-Flip aside the top lining layer, and align the slightly curved edge of the fabric (where it is not sewn to the lining) with the edge of the fabric of your front piece.
+Відверніть верхній шар підкладки і вирівняйте злегка загнутий край тканини (там, де він не пришитий до підкладки) з краєм тканини передньої деталі.
 
 <Tip>
 
-For clarity, what side of the fly shield that should be facing up is shown in the top part of the illustration, at a smaller scale.
+Для наочності у верхній частині ілюстрації в меншому масштабі показано, якою стороною мухобойка повинна бути звернена догори.
 
 </Tip>
 
-Pin this layer in place with a few pins perpendicular to your zip (as shown in red). Make sure you catch all layers underneath, including the zip. This way, you can remove your pins from the step before (shown in green) when done.
+Закріпіть цей шар кількома шпильками перпендикулярно до блискавки (як показано червоним кольором). Переконайтеся, що ви захопили всі шари під ним, включаючи застібку-блискавку. Таким чином, ви можете видалити шпильки з попереднього кроку (показано зеленим кольором), коли закінчите.
 
 <Tip>
 
-If you're comfortable holding all this in place, you can let the lining fall back and pin everything together as shown in the next step. That's somewhat faster, but more prone to errors as things can shift around easier.
+Якщо вам зручно тримати все це на місці, ви можете дозволити підкладці опуститися назад і скріпити все разом, як показано на наступному кроці. Це дещо швидше, але більш схильне до помилок, оскільки речі легше зміщуються.
 
 </Tip>
 
-### Step 20: Pin fly shield in place along zip
+### Крок 20: Прикріпіть захист від мушок на місце вздовж блискавки
 
-![Pin fly shield in place along zip](step20.png)
+![Закріпіть захист від мух на місці вздовж застібки-блискавки](step20.png)
 
-Let the lining fall back in place, and now pin all layers together along the zip.
+Дайте підкладці впасти на місце, а тепер скріпіть всі шари разом вздовж застібки-блискавки.
 
-When you are done, remove your earlier perpendicular pins.
+Коли закінчите, видаліть попередні перпендикулярні шпильки.
 
-### Step 21: Fold over fly shield and pin down
+### Крок 21: Складіть мухобойку і закріпіть її булавками
 
-![Fold over fly shield and pin down](step21a.png) ![Fold over fly shield and pin down](step21b.png)
+![Складіть мухобойку і закріпіть шпилькою](step21a.png) ![Складіть мухобойку і закріпіть шпилькою](step21b.png)
 
-Flip everything over so that your fly shield lies at the bottom.
+Переверніть все так, щоб ваша мухоловка лежала внизу.
 
-Fold the lining of the fly shield around the fly, front piece and fly piece, making sure to double-fold it so the raw edge is hidden inside.
+Складіть підкладку мушки навколо мушки, передньої частини і мушки, обов'язково склавши її вдвічі, щоб необроблений край був захований усередині.
 
-Pin this down, and remove your previous pins.
+Закріпіть це і видаліть попередні закріпки.
 
-### Step 22: Sew fly in place along zip
+### Крок 22: Пришийте мушку вздовж блискавки
 
-![Sew fly in place along zip](step22.png)
+![Пришийте мушку на місці вздовж застібки-блискавки](step22.png)
 
-Now you can sew along the double folded fly piece. This will fix the front, zip, fly shield and fly piece all in place.
+Тепер можна прошивати вздовж складеної вдвічі деталі мушки. Це зафіксує передню частину, застібку-блискавку, захисний екран і мушку на місці.
 
 <Tip>
 
-You will be sewing along your zip, so make sure to install your zipper foot for this.
+Ви будете шити вздовж блискавки, тому переконайтеся, що лапка для блискавки встановлена правильно.
 
 </Tip>
 
-### Step 23: Fold back fly and press
+### Крок 23: Відкиньте ширінку і натисніть
 
-![Fold back fly and press](step23.png)
+![Відкиньте назад ширінку і натисніть](step23.png)
 
-When you're done, fold back the fly so that it extends from the front piece, and give it a thorough press from the back. And a gentle press from the front.
+Закінчивши, відігніть ширинку так, щоб вона виходила з передньої частини, і ретельно притисніть її ззаду. І легке натискання спереду.
 
-### Step 24: Apply bias tape to second fly piece and press
+### Крок 24: Наклейте косую стрічку на другу частину ширинки і притисніть
 
-![Apply bias tape to the edge with the large curve of your second fly piece](step24.png)
+![Наклейте косу бейку на край з великим вигином другої деталі мушки](step24.png)
 
-Apply bias tape to the edge with the large curve of your second fly piece.
+Наклейте косу бейку на край з великим вигином другої деталі ширинки.
 
-Press the finished edge flat when you're done.
+Закінчивши, притисніть готову кромку до площини.
 
 <Tip>
 
-Bias tape is a way to finish a seam. If you are not sure what it is or how to apply it, let me know.
+Коса стрічка - це спосіб обробки шва. Якщо ви не знаєте, що це таке або як його застосовувати, дайте мені знати.
 
 </Tip>
 
-### Step 25: Pin and sew fly piece to crotch seam
+### Крок 25: Приколіть і пришийте мушку до пахового шва
 
-![Pin and sew fly piece to crotch seam](step25.png)
+![Приколіть і пришийте ширинку до пахового шва](step25.png)
 
-Place the left leg with the good side up. Place the second fly piece on top with the good side down, aligning the unfinished seam with the crotch seam.
+Покладіть ліву ногу стопою догори. Покладіть другу кокетку зверху лицьовим боком донизу, сумістивши незавершений шов зі швом паху.
 
-Pin the fly piece in place, then sew it in place along the crotch seam.
+Приколіть мушку, а потім пришийте її вздовж пахового шва.
 
 <Tip>
 
-When you sew this in place, make sure to catch the front lining.
+Коли ви пришиваєте її на місце, не забудьте прихопити передню підкладку.
 
 </Tip>
 
-Press the finished edge flat when you're done.
+Закінчивши, притисніть готову кромку до площини.
 
-### Step 26: Roll the fly piece to the back, and press the seam
+### Крок 26: Відверніть кокетку на спинку і запрасуйте шов
 
-![Roll the fly piece to the back, and press the seam](step26.png)
+![Відверніть кокетку на спинку і припрасуйте шов](step26.png)
 
-Fold the fly piece to the back. Before you press, make sure to roll the seam a bit backwards so that the front of the trousers sits a little further than the fly piece.
+Відверніть кокетку на спинку. Перед тим, як припрасовувати, обов'язково відверніть шов трохи назад, щоб передня частина штанів сиділа трохи далі, ніж ширінка.
 
-This way, the seam or fly piece will not show from the front.
+Таким чином, шов або мушка не будуть видні спереду.
 
-Give it a good press from the back.
+Добре притисніть його зі зворотного боку.
 
-### Step 27: Pin and sew zip to fly piece
+### Крок 27: Приколіть та пришийте блискавку до мушки
 
-![Place both legs on top of eachother](step27a.png) ![Pin the zip along the edge](step27b.png) ![Sew in place](step27c.png)
+![Покладіть обидві ноги одна на одну](step27a.png) ![Приколіть блискавку по краю](step27b.png) ![Пришийте на місці](step27c.png)
 
-Place the right leg down with the good side up. Place the leg on top of it with the good side down.
+Покладіть праву ногу вниз стопою догори. Покладіть ногу на неї зверху гарною стороною донизу.
 
-With the crotch seams aligned, pin the zip along the edge of the fly piece with the good side of the zip down.
+Вирівнявши пахові шви, приколіть застібку-блискавку вздовж краю пілочки лицьовим боком донизу.
 
-Make sure to pin the fly only to the fly piece. Not to any other layers underneath.
+Переконайтеся, що мушка прикріплена тільки до деталі мушки. Не до інших шарів під ним.
 
 <Tip>
 
-I find it's easier to pin the zip through all layers, and then when it's secure in place add extra pins that pin it to the fly piece only. When that's done, you can remove the pins that go through all layers.
+Я вважаю, що простіше приколоти застібку-блискавку через усі шари, а потім, коли вона надійно закріплена, додати додаткові шпильки, які прикріплюють її лише до ширінки. Коли це буде зроблено, ви можете видалити шпильки, які проходять через усі шари.
 
 </Tip>
 
-Last but not least, sew along the zip with your zipper foot to attach it to the fly piece.
+І останнє, але не менш важливе: пришийте застібку-блискавку лапкою для застібок-блискавок, щоб прикріпити її до застібки-блискавки.
 
 <Tip>
 
-When aligning the zip, make sure to take the following into account:
+Вирівнюючи застібку-блискавку, обов'язково візьміть до уваги наступне:
 
-- The zip should be placed with the good side down
-- The zip should sit a bit back from the edge of your fly piece
-- Make sure to align the top of the zip with the other zip half on the right leg
+- Застібка-блискавка повинна бути розміщена лицьовою стороною вниз
+- Застібка-блискавка повинна сидіти трохи ззаду від краю ширінки
+- Переконайтеся, що верхня частина застібки-блискавки суміщена з іншою половиною застібки-блискавки на правій штанині
 
 </Tip>
 
-### Step 28: Zig-zag the zip edge to the fly piece
+### Крок 28: Пришийте зигзагоподібний край блискавки до пілочки
 
-![Zig-zag the zip edge to the fly piece](step28.png)
+![Пришийте зигзагоподібний край застібки-блискавки до пілочки](step28.png)
 
-With the fly in place, run a zig-zag stitch along the edge of the zip to secure it to the fly piece.
+Застібнувши застібку-блискавку, прокладіть зигзагоподібну строчку вздовж краю застібки, щоб закріпити її на мушлю.
 
-### Step 29: Bar-tack both fly pieces together
+### Крок 29: Скріпіть обидві частини мушки разом
 
-![Bar-tack both fly pieces together](step29.png)
+![Закріпіть обидві частини мушки разом](step29.png)
 
-Place both fly pieces together, and move the front pieces out of the way.
+Складіть обидві частини мушки разом, а передні частини відсуньте вбік.
 
-Use a bar-tack to join them together at the bottom of the zip. Sew on both edges of the zip, and get as close to the zip as you can.
+З'єднайте їх між собою внизу застібки-блискавки. Пришийте з обох боків блискавки і розташуйте її якомога ближче до застібки-блискавки.
 
 <Tip>
 
-If your zip is too long, you can trim it below the bar-tacks.
+Якщо застібка-блискавка занадто довга, ви можете обрізати її нижче планок-фіксаторів.
 
 </Tip>
 
-### Step 30: Join crotch seam
+### Крок 30: З'єднайте паховий шов
 
-![Join crotch seam](step30a.png) ![Join crotch seam](step30b.png)
+![З'єднати паховий шов](step30a.png) ![З'єднати паховий шов](step30b.png)
 
-Place both fronts with the good sides up. They are now joined by the fly.
+Покладіть обидві сторони лицьовими сторонами догори. Тепер до них приєдналася муха.
 
-Make sure the fly is neatly tucked under, and pin together both fronts at the bottom of the fly, where you bar-tacked earlier. Make sure the pin is aligned to the fold of your front.
+Переконайтеся, що мушка акуратно заправлена під неї, і скріпіть обидві передні частини внизу мушки, там, де ви раніше прикололи планку. Переконайтеся, що шпилька вирівняна по згину переду.
 
-Fold the fronts with the good sides together, and pin them together along the crotch.
+Складіть передні частини лицьовими боками разом і скріпіть їх між собою вздовж промежини.
 
-You'll need to get the fly shields out of the way, so if you've pinned through all layers before, remove that pin now, making sure to replace it with a horizontal pin. This will tell you how far to sew.
+Вам потрібно буде прибрати мухобойки, тому, якщо ви раніше приколювали всі шари, видаліть цю шпильку зараз, обов'язково замінивши її горизонтальною шпилькою. Це підкаже вам, як далеко прошивати.
 
-Sew the crotch seam, starting at the cross-seam point, and going up to your horizontal pin.
+Зшийте паховий шов, починаючи з точки перехресного шва і піднімаючись до горизонтальної булавки.
 
 <Tip>
 
-I find this step hard to explain, and hard to illustrate. I hope it will make sense when you're looking at your fly. If not, check the video instructions.
+Мені здається, що цей крок важко пояснити і важко проілюструвати. Сподіваюся, це буде зрозуміло, коли ви подивитеся на свою ширінку. Якщо ні, перегляньте відеоінструкцію.
 
 </Tip>
 
-### Step 31: Pin fly closed and baste fly curve
+### Крок 31: Закріпіть мушку і наклейте криву мушки
 
-![Pin fly closed and baste fly curve](step31.png)
+![Закрита мушка та крива мушки для застібки](step31.png)
 
-Close the fly, and pin the fronts together making sure the fly is neatly tucked away.
+Закрийте ширінку і скріпіть передні частини разом, переконавшись, що ширінка акуратно заправлена всередину.
 
-We will be topstitching the fly curve next, and it's a good idea to baste it first.
+Далі ми будемо пришивати вигин мушки, і добре було б спочатку прострочити його.
 
-You should start a bit above your earlier bar tack, and make sure you catch only the fly shield of the left leg.
+Починати слід трохи вище попередньої штанги, і переконайтеся, що ви ловите тільки мушку лівої ноги.
 
-Curve upwards toward the edge of the fly shield, and then proceed in parallel with the zip.
+Зігніть вгору до краю мушки, а потім продовжуйте паралельно застібці-блискавці.
 
-### Step 32: Topstitch the fly curve
+### Крок 32: Застрочіть вигин мушки
 
-![Topstitch your fly curve](step32.png)
+![Застрочіть вигин ширинки](step32.png)
 
-Now topstitch your fly curve, using your basting as a guide.
+Тепер застрочіть вигин ширинки, використовуючи наметочну строчку як орієнтир.
 
-When doing so, you will be locking your front, fly piece, pocket bag and lining all together.
+Таким чином ви застібаєте передню частину, ширінку, кишеню і підкладку разом.
 
-### Step 33: Pin together the inner leg seam
+### Крок 33: Зшийте шпильками внутрішній шов штанини
 
-![Pin together the inner leg seam](step33.png)
+![Зшийте внутрішній шов штанини булавками](step33.png)
 
-Close the legs with the good sides together, and pin together the inner leg seam. Start at the cross seam point and work your way to the bottom of the legs.
+Складіть штанини виворітними сторонами разом і скріпіть шпильками внутрішній шов штанин. Почніть з точки поперечного шва і рухайтеся до низу штанин.
 
-Make sure to do this for both legs.
+Переконайтеся, що ви зробили це для обох ніг.
 
-### Step 34: Sew the inner leg seams
+### Крок 34: Зшийте внутрішні шви штанин
 
-![Sew the inner leg seams](step34.png)
+![Зшийте внутрішні шви штанин](step34.png)
 
-On both legs, sew the inner leg seams that you just pinned. Make sure to respect the seam allowance.
+На обох штанинах зшийте внутрішні шви штанин, які ви щойно прикололи. Обов'язково дотримуйтесь припусків на шви.
 
-### Step 35: Press open seam allowance of the inner leg seam
+### Крок 35: Розпрасуйте припуски внутрішнього шва штанини
 
-![Press open seam allowance of the inner leg seam](step35.png)
+![Припуски на внутрішній шов штанини розпрасуйте](step35.png)
 
-Place your leg inside-out on your ironing board, and press open the seam allowance of the inner leg seam.
+Покладіть штанину навиворіт на прасувальну дошку і розпрасуйте припуск на внутрішній шов штанини.
 
-### Step 36: Close the cross-seam
+### Крок 36: Закрийте поперечний шов
 
-![Close the cross-seam](step36.png)
+![Закрийте поперечний шов](step36.png)
 
-We are now going to close the cross-seam, from the bottom of your fly between your legs, up your bum to the center back of where you'll add the waistband later.
+Тепер ми закриваємо поперечний шов, починаючи від нижньої частини ширінки між ногами, вгору по сідницях до центру спинки, де пізніше ви додасте пояс.
 
-To do so, turn on of the legs inside out, so that that good side of the fabric is turned inside, and the bad side and lining sits on the outside.
+Для цього виверніть ніжки навиворіт так, щоб гарна сторона тканини була вивернута всередину, а погана сторона і підкладка - назовні.
 
-The other leg should not be turned inside-out, but should just have its good side on the outside.
+Інша нога не повинна бути вивернута навиворіт, а має бути просто гарною стороною назовні.
 
-Now, put the leg that has the good side out (the normal leg) into the leg that has the bad side out (the inside-out leg).
+Тепер покладіть ногу гарною стороною назовні (нормальну ногу) в ногу, яка вивернута поганою стороною (вивернуту ногу).
 
-This way, the good sides of both legs will sit against each other, and this is how you should sew the cross seam.
+Таким чином, виворітні сторони обох ніг будуть прилягати одна до одної, і саме так ви повинні зшити поперечний шов.
 
 <Tip>
 
-Be careful that your leg is not twisted inside the other leg. When in doubt, turn the inside-out leg outside-out again after you've pinned the cross-seam to make sure it's all ok.
+Слідкуйте за тим, щоб ваша нога не була закручена всередині іншої ноги. Якщо ви сумніваєтеся, виверніть виворіт назовні ще раз після того, як ви закріпили поперечний шов, щоб переконатися, що все в порядку.
 
 </Tip>
 
-Pin the cross-seam in place, and then sew it close, starting at the side of the fly, and making sure to respect the seam allowance.
+Закріпіть поперечний шов на місці, а потім зашийте його, починаючи з боку ширинки, не забуваючи про припуски на шви.
 
-When done, press the seam allowance open.
+Закінчивши, розправте припуск на шов.
 
-### Step 37: Press the leg crease in place
+### Крок 37: Притисніть складку для ніг на місце
 
-![Press the leg crease in place](step37.png)
+![Притисніть складку на нозі до місця](step37.png)
 
-Turn your trousers good side out, and carefully place one leg on your ironing board so that it lies flat and folds exactly on the crease line your basted earlier.
+Виверніть штани виворітним боком і обережно покладіть одну штанину на прасувальну дошку так, щоб вона лежала рівно і складалася точно по лінії згину, яку ви застрочили раніше.
 
-When it's looking good, press the crease lines in your leg, front a back. Repeat for the other leg.
+Коли все буде добре, притисніть лінії складок на нозі, спереду і ззаду. Повторіть для іншої ноги.
 
-Give it a firm press because you want the pleats to still be there after you wash your trousers (so you can see where to press them again).
+Сильно притисніть, тому що ви хочете, щоб складки залишилися на місці після прання (щоб ви могли бачити, де їх знову притискати).
 
 <Tip>
 
-In the industry, chemicals are applied along the crease line before it is pressed together. Some tailors use some sort of wooden hammer and anvil to bang the fibers in a permanent crease.
+У промисловості хімічні речовини наносяться вздовж лінії згину до того, як вона буде спресована. Деякі кравці використовують щось на кшталт дерев'яного молотка і ковадла, щоб збити волокна в постійну складку.
 
 </Tip>
 
-Depending on your fabric, your crease might last longer, but ultimately, you can't expect to have a crease that can withstand a few washes without being reapplied.
+Залежно від тканини, складка може триматися довше, але, зрештою, не варто очікувати, що вона витримає кілька прань без повторного запрасовування.
 
 <Tip>
 
-Maybe this goes without saying, but there's also another option: Do not press the crease. This give your trousers a more informal look.
+Можливо, це само собою зрозуміло, але є й інший варіант: Не натискайте на складку. Це надасть вашим штанам більш неформального вигляду.
 
 </Tip>
 
-### Step 38: Fuse interfacing to waistband
+### Крок 38: З'єднання запобіжника з поясом
 
-![Fuse interfacing to waistband](step38.png)
+![З'єднання запобіжника з поясом](step38.png)
 
-Fuse the waistband interfacing (Piece 3) to the waistband (Piece 4).
+З'єднайте інтерфейс пояса (Деталь 3) з поясом (Деталь 4).
 
-Align the interfacing in the middle of the waistband, and make sure to keep it nicely aligned as you fuse it in place with your iron.
+Вирівняйте інтерфейс посередині пояса і переконайтеся, що він добре вирівняний, коли ви припаюєте його до праски.
 
-### Step 39: Close waistband and waistband lining
+### Крок 39: Зшийте пояс і підкладку пояса
 
-![Close waistband and waistband lining](step39.png)
+![Закритий пояс і підкладка на поясі](step39.png)
 
-Join the waistband (Pieces 4a and 4b) by sewing both pieces good sides together.
+З'єднайте пояс (деталі 4а і 4б), зшиваючи обидві деталі лицьовими боками разом.
 
-Join the waistband lining (Pieces 5a and 5b) by sewing both pieces good sides together.
+З'єднайте підкладку пояса (деталі 5а і 5б), зшиваючи обидві деталі лицьовими боками разом.
 
-### Step 40: Sew waistband to waistband lining
+### Крок 40: Пришийте пояс до підкладки
 
-![Sew waistband to waistband lining](step40.png)
+![Пришити пояс до підкладки](step40.png)
 
-Place your waistband on the waistband lining, good sides together, so that the waistband interfacing is facing upwards.
+Покладіть пояс на підкладку пояса лицьовими сторонами один до одного так, щоб стик пояса був звернений догори.
 
-Align the edge, and pin them together.
+Вирівняйте краї і скріпіть їх разом.
 
 <Tip>
 
-We are going to sew along the edge of the interfacing, but we will sew about 3mm or 1/8 inch from the actual interfacing edge. This will prevent the lining from being visible from the front later.
+Ми будемо прошивати вздовж краю інтерфейсу, але на відстані приблизно 3 мм або 1/8 дюйма від фактичного краю інтерфейсу. Це запобіжить тому, що підкладку згодом не буде видно спереду.
 
 </Tip>
 
-On one side of the waistband, end with a curve and then go down vertically along the edge of the waistband interfacing. Check the illustration to make sure you do it on the correct side.
+З одного боку пояс закінчується вигином, а потім вертикально спускається вниз уздовж краю, що з'єднує пояси. Подивіться на ілюстрацію, щоб переконатися, що ви робите це з правильного боку.
 
-### Step 41: Roll fabric around interfacing edge and press waistband
+### Крок 41: Оберніть тканину навколо краю, що з'єднується, і притисніть пояс
 
-![Roll fabric around interfacing edge and press waistband](step41.png)
+![Оберніть тканину навколо краю, що стикується, і притисніть пояс](step41.png)
 
-Before pressing the waistband, make sure to roll over the fabric around the edge of the interfacing.
+Перед тим, як припрасовувати пояс, обов'язково прокрутіть тканину по краю переплетення.
 
-Remember that in the previous step your sewed 3mm from the interfacing edge? You need to make the fold around the edge of the interfacing so that the actual seam sits 3mm more inwards.
+Пам'ятаєте, що на попередньому кроці ви прошили 3 мм від краю, що з'єднується? Вам потрібно зробити згин по краю інтерфейсу так, щоб фактичний шов був на 3 мм більше всередину.
 
-This will make sure that our lining fabric is never on display from the front of your trousers.
+Це гарантує, що наша підкладкова тканина ніколи не буде виднітися спереду ваших штанів.
 
-### Step 42: Pin waistband to trousers
+### Крок 42: Приколіть пояс до штанів
 
-![Pin waistband to trousers](step42.png)
+![Прикріпити пояс до штанів шпилькою](step42.png)
 
-Pin the edge of your waistband (the side you did not sew the lining to) to the top of your trousers, good sides together.
+Приколіть край пояса (той бік, до якого ви не пришивали підкладку) до верхньої частини штанів лицьовими сторонами разом.
 
-Tuck the edge of your fly into the end of the waistband with the curved corner. On the other end of the waistband, it will be longer. In other words, your waistband will overlap here.
+Заправте край ширінки в кінець пояса з загнутим кутом. На іншому кінці пояса він буде довшим. Іншими словами, ваш пояс буде перекриватися тут.
 
 <Tip>
 
-Be careful to match the vertical alignment of the waistband at the zip. With the zip closed, both sides of the waistband should sit at an equal height. This is easy to miss if you don't check it.
+Будьте уважні, щоб вирівняти вертикальне положення пояса на застібці-блискавці. При застібнутій блискавці обидві сторони пояса повинні сидіти на однаковій висоті. Це легко пропустити, якщо не перевірити.
 
 </Tip>
 
-### Step 43: Sew waistband to trousers
+### Крок 43: Пришиваємо пояс до штанів
 
-![Sew waistband to trousers](step43.png)
+![Пришити пояс до штанів](step43.png)
 
-Now that the waistband is pinned to top of your trousers, sew it in place.
+Тепер, коли пояс прикріплений до верхньої частини штанів, пришийте його на місце.
 
-On the side with the curved corner, get as close to the edge as possible. On the other side, stop when you reach the edge of your fly.
+На стороні з вигнутим кутом підійдіть якомога ближче до краю. З іншого боку, зупиніться, коли дійдете до краю ширінки.
 
-### Step 44: Press waistband
+### Крок 44: Пресуємо пояс
 
-![Press waistband](step44.png)
+![Пояс для преса](step44.png)
 
-Give your newly sewn seam a good press. Do not press the seam open, instead press it towards the top (put both trousers and waistband seam allowance in the waistband).
+Добре притисніть щойно зшитий шов. Не розпрасовуйте шов, натомість запрасуйте його до верху (припуски швів штанів і пояса запрасуйте в пояс).
 
-### Step 45: Prepare the belt loops
+### Крок 45: Підготуйте петлі для ременя
 
-![Prepare the belt loops](step45.png)
+![Підготуйте петлі для ременя](step45.png)
 
-The belt loops are a part of your trousers where you can let your creativity run free. There's load of different ways to make and shape belt loops, not to mention that where you place them is also up to you.
+Петлі для ременя - це частина ваших штанів, де ви можете дати волю своїй творчості. Існує безліч різних способів зробити петлі для ременя, не кажучи вже про те, що місце, де ви їх розмістите, також залежить від вас.
 
-That being said, here's what to do to make a standard belt loop:
+З огляду на це, ось що потрібно зробити, щоб зробити стандартну петлю для ременя:
 
-Find the belt loop pattern part, a small rectangular piece of fabric. There should be 8 of them, and these will become your belt loops. For each of them, take these steps:
+Знайдіть деталь викрійки петлі для пояса - невеликий прямокутний шматок тканини. Їх має бути 8, і вони стануть вашими петлями для ременя. Для кожного з них зробіть такі кроки:
 
-- Zig-zag (or serge) along the longest edges of the rectangle
-- Fold one side back along the length, and press
-- Fold the other side back, along the length, and press
-- Hand sew along the back of the belt loop so that the folded sides stay in place, but the stitches do not show at the front
-- Give it a final good press when you're done
+- Зигзагоподібно (або серже) вздовж найдовших країв прямокутника
+- Загніть одну сторону назад по довжині і притисніть
+- Загніть іншу сторону назад, по всій довжині, і притисніть
+- Прошийте вручну вздовж задньої частини петлі ременя так, щоб складені сторони залишилися на місці, але шви не були видні спереду
+- Закінчивши, гарненько притисніть, коли закінчите
 
 <Tip>
 
-While the width of your belt loops is not all that important, it does matter to make sure they are all the same width.
+Хоча ширина петель для ременя не настільки важлива, важливо переконатися, що всі вони однакової ширини.
 
-To make it easier to have a consistent width, you can fold your belt loops around a strip of cardboard, thick paper, or plastic of the desired belt loop width.
+Щоб полегшити отримання однакової ширини, ви можете скласти петлі ременя навколо смужки картону, цупкого паперу або пластику потрібної ширини.
 
-This strip can also help you with the hand sewing. Keep it in your belt loop and it will prevent your needle from piercing through all layers and your thread won't show at the front.
+Ця смужка також може допомогти вам у ручному шитті. Тримайте її в петлі на поясі, і вона не дасть вашій голці пробити всі шари, а нитка не буде виднітися спереду.
 
 </Tip>
 
-### Step 46: Attach the belt loops: Bottom
+### Крок 46: Прикріпіть петлі для ременя: Нижня частина
 
-![Attach the bottom of the belt loops](step46.png)
+![Прикріпіть нижню частину ремінних петель](step46.png)
 
-Attach the bottom of the belt loops to your trousers. Place them about 1.5 cm below your waistband, depending on your waistband width.
+Прикріпіть нижню частину ремінних петель до штанів. Розмістіть їх приблизно на 1,5 см нижче пояса, залежно від ширини вашого пояса.
 
-Place the good side of the belt loop down on the good side of the trousers (good sides together) and secure with a bar tack or narrow zig-zag.
+Покладіть виворітну сторону петлі ременя на виворітну сторону штанів (виворітними сторонами разом) і закріпіть закріпкою або вузьким зигзагом.
 
-Then, zig zag the edge of the belt loop to the trousers.
+Потім зигзагом пришийте край петлі ременя до штанів.
 
 <Tip>
 
-It is important to get the waistband lining out of the way while doing this. Make sure to attach the belt loops only to your trousers, and not to the waistband lining.
+Важливо, щоб підкладка пояса при цьому не заважала. Переконайтеся, що петлі для ременя прикріплені тільки до штанів, а не до підкладки пояса.
 
-You have 8 belt loops, so you need to distribute them around your waistband. Have a look at an existing pair if you are uncertain how to do this.
+У вас є 8 петель для ременя, тому вам потрібно розподілити їх навколо пояса. Подивіться на існуючу пару, якщо ви не впевнені, як це зробити.
 
-Make sure to place belt hoops close to the center back, and not too close to each other at the front (for belt buckles).
+Переконайтеся, що петлі для ременів розташовані близько до центру ззаду, а спереду - не надто близько одна до одної (для пряжок).
 
 </Tip>
 
-### Step 47: Waistband facing
+### Крок 47: Обробка пояса
 
-![Waistband facing](step47.png)
+![Облицювання поясу](step47.png)
 
-The waistband facing needs to be cut out and attached to your waistband.
+Облицювання для пояса потрібно вирізати і прикріпити до пояса.
 
-This will be a lot simpler to understand if you have a look at the relevant video:
+Це буде набагато простіше зрозуміти, якщо ви подивитеся відповідне відео:
 
 @[youtube](https://www.youtube.com/embed/8dLOuOtb18U?list=PL1gv5yv3DoZOcmOJf6f0YWi522VXXv-mM)
 
-### Step 48: Trim waistband seam allowance
+### Крок 48: Обробіть припуски для швів на поясі
 
-![Trim waistband seam allowance](step48.png)
+![Припуск на обшивку пояса](step48.png)
 
-Before we finalize the waistband, we're going to trim back some of its seam allowance.
-
-<Tip>
-
-**About seam allowance grading**
-When trimming back different layers of seam allowance, always try to cut them at different lengths so that the bulk is reduced in incremental steps.
-
-The layer that lies closest to the good side of the garment should be the longest, so trim back from there.
-
-Doing so will make it less likely that the outline of the seam allowance is visible from the good side.
-
-</Tip>
-
-### Step 49: Press and baste the waistband lining
-
-![Press and baste the waistband lining](step49.png)
-
-The waistband lining will be sewn from the front of the trousers on top of the seam that joins the waistband to the trousers (so called _stitch in the ditch_).
-
-Doing so will catch the lining and secure it in place. However, since we'll be sewing this from the good side, the lining will lie beneath all other layers, and we won't see what we're doing.
-
-That is why, to make sure it all lies clean and flat, we will first press and baste the lining.
-
-The lining will extend downward from the top, and it needs to be folded back up under itself, so that it will get caught by the seam when we sew it in place later.
-
-To make sure things look pretty, the distance between the top of our waistband and the (folded back) bottom edge of our lining should be constant. You can mark an even distance from the top of your trousers, and then pin back the lining at this line. Last but not least, press that fold in your lining.
-
-When you're happy with how it looks, baste the lining in place just next to the seam joining the waistband and trousers.
+Перед тим, як завершити роботу над поясом, ми обрізаємо частину припусків на шви.
 
 <Tip>
 
-It's best to baste next to the seam, and not actually in the seam. This will make it a lot easier to remove your basting when after we've sewn in the last step.
+**Про градацію припусків на шви**
+Під час обрізання різних шарів припуску на шви завжди намагайтеся обрізати їх на різній довжині, щоб зменшувати об'єм поступово, крок за кроком.
+
+Шар, який лежить ближче до вивороту, повинен бути найдовшим, тому обрізайте його звідти.
+
+Це зменшить ймовірність того, що контур припуску на шов буде видно з виворітного боку.
 
 </Tip>
 
-### Step 50: Sew the waistband lining in place
+### Крок 49: Припрасуйте і зшийте підкладку пояса
 
-![Sew the waistband lining in place](step50.png)
+![Припрасуйте і прострочіть підкладку пояса](step49.png)
 
-After you basted the waistband lining, sew it in place from the good side, exactly in the seam between the waistband and trousers.
+Підкладка для пояса буде пришита спереду штанів поверх шва, що з'єднує пояс зі штанами (так званий _шов у кювет_).
 
-### Step 51: Attach the belt loops: Top
+Це допоможе зафіксувати підкладку і закріпити її на місці. Однак, оскільки ми будемо пришивати це з вивороту, підкладка буде лежати під усіма іншими шарами, і ми не будемо бачити, що робимо.
 
-![Attach the top of the belt loops](step51.png)
+Саме тому, щоб переконатися, що все лежить чисто і рівно, ми спочатку притиснемо і припрасуємо підкладку.
 
-With your waistband and lining properly secured, it's time to attach the top of the belt loops.
+Зверху підкладка буде виходити вниз, і її потрібно скласти під себе, щоб вона потрапила в шов, коли ми будемо пришивати її на місце.
 
-Sew them in place just as you did at the bottom. That is, use a bar tack or close zig-zag to attach them, then zig-zag over the end to secure it.
+Щоб все виглядало гарно, відстань між верхнім краєм пояса і (відігнутим назад) нижнім краєм підкладки повинна бути постійною. Ви можете відмітити рівну відстань від верху штанів, а потім приколоти підкладку на цій лінії. І останнє, але не менш важливе: запрасуйте цю складку на підкладці.
+
+Коли ви будете задоволені тим, як це виглядає, приметайте підкладку на місце поруч зі швом, що з'єднує пояс і штани.
 
 <Tip>
 
-Don't sew through the top of the belt loops. You'll have to work the foot of your sewing machine under the belt loop so you only sew the piece that is folded back.
-
-Feel free to trim back the length of your belt loops after you bar tack and before you zig-zag the end of them, as they might be too long.
+Найкраще промащувати поруч зі швом, а не в самому шві. Так буде набагато легше видалити наметочну строчку після того, як ми виконаємо останній етап вишивання.
 
 </Tip>
 
-### Step 52: Finish the edge of the legs
+### Крок 50: Пришийте підкладку до пояса
 
-![Finish the edge of the legs](step52.png)
+![Пришийте підкладку до поясу](step50.png)
 
-Before we hem the trousers, finish the raw edge of the legs with a zig-zag stitch or serger.
+Після того, як ви приметали підкладку для пояса, пришийте її з виворітного боку, точно в шов між поясом і брюками.
+
+### Крок 51: Прикріпіть петлі для ременя: Верх
+
+![Прикріпіть верхню частину ремінних петель](step51.png)
+
+Після того, як пояс і підкладка належним чином закріплені, настав час прикріпити верхню частину ремінних петель.
+
+Пришийте їх так само, як ви це зробили внизу. Тобто, прикріпіть їх за допомогою шпульки або закритого зигзага, а потім прострочіть зигзагом по краю, щоб закріпити їх.
 
 <Tip>
 
-This would also be a good time to try on your trousers and mark exactly how long you want them to be after they are hemmed.
+Не прошивайте через верхню частину ремінних петель. Лапку швейної машини потрібно просунути під петлю для ременя, щоб пришити тільки відкинутий назад шматок.
+
+Не соромтеся обрізати довжину петель пояса після закріпки планки і перед тим, як зробити зигзагоподібний кінець, оскільки вони можуть бути занадто довгими.
 
 </Tip>
 
-### Step 53: (Optional) Sew in a hem ribbon
+### Крок 52: Закінчуємо обробку країв ніжок
 
-![Optionally sew in a hem ribbon](step53.png)
+![Обробіть край ніжок](step52.png)
+
+Перед тим, як підшити штани, обробіть необроблений край штанин зигзагоподібною строчкою або сервером.
 
 <Tip>
 
-The hem ribbon is a ribbon that sits on the inside of your trouser hem. At the place your hem folds back, the fabric has to take a lot of abuse from bumping into shoes and other things.
-
-Placing a ribbon inside the hem protects your fabric to some extent, and it is a neat finish.
+Це також гарний час, щоб приміряти штани і відзначити, якої довжини ви хочете, щоб вони були після підшивання.
 
 </Tip>
 
-Mark the hemline on your trousers (good side out).
+### Крок 53: (необов'язково) Пришийте стрічку для подолу
 
-Place the ribbon as shown in the illustration making sure that it extends a few mm above the hemline. Sew it in place all the way around the leg, making sure to sew close but not on the hemline.
-
-### Step 54: Press the hem
-
-![Press the hem](step54.png)
-
-Fold back the trouser legs at the hemline, and press the hem.
+![За бажанням пришийте стрічку для подолу](step53.png)
 
 <Tip>
 
-If you've sewn in a hem ribbon, the ribbon will extend a few mm below the hem line, thereby protecting the fabric at the hem.
+Шовна стрічка - це стрічка, яка розташовується на внутрішній стороні подолу штанів. У місці, де ваш поділ загинається назад, тканині доводиться терпіти багато знущань від наштовхування на взуття та інші речі.
+
+Розміщення стрічки всередині подолу певною мірою захищає тканину і є акуратним завершенням.
 
 </Tip>
 
-### Step 55: Hem the legs
+Відмітьте на брюках лінію подолу (виворітною стороною назовні).
 
-![Hem the legs](step55.png)
+Розмістіть стрічку, як показано на ілюстрації, переконавшись, що вона виступає на кілька мм над лінією подолу. Пришийте його на місці по всій довжині штанини, переконавшись, що він закритий, але не на лінії подолу.
 
-With the hem neatly pressed, simply hand-sew the folded back part to the inside of your trousers.
+### Крок 54: Притисніть підгин
+
+![Натисніть на підгин](step54.png)
+
+Відверніть штанини на лінії подолу і припрасуйте їх.
 
 <Tip>
 
-Hemming is done by hand because it's important that the stitches don't show on the front. So when hand-sewing the hem, don't push your needle through the fabric, but just catch a few threads so your stitches don't show on the front
-
-While there are machine alternatives, they aren't as neat (blind hem stitch) or probably not accessible to the home-sewer (industrial blind hem machine).
+Якщо ви вшили стрічку для підгину, то вона простягнеться на кілька міліметрів нижче лінії підгину, захищаючи таким чином тканину в області підгину.
 
 </Tip>
 
-### Step 56: Trim, clean up, and press
+### Крок 55: Підшийте ніжки
 
-Trim any loose threads or basting that remains, and give your trousers a good final press.
+![Підшийте ніжки](step55.png)
+
+Акуратно підібгавши край, просто пришийте складену задню частину до внутрішньої сторони штанів вручну.
+
+<Tip>
+
+Підшивання робиться вручну, тому що важливо, щоб шви не були помітні спереду. Тому при ручному зшиванні не проштовхуйте голку крізь тканину, а просто захопіть кілька ниток, щоб ваші стібки не були видні спереду
+
+Хоча існують машинні альтернативи, вони не такі акуратні (сліпий шов) або, можливо, недоступні для домашньої швачки (промислова сліпа машина для зшивання).
+
+</Tip>
+
+### Крок 56: Обріжте, очистіть і пресуйте
+
+Обріжте всі вільні нитки або обрізки, що залишилися, і добре випрасуйте штани.
