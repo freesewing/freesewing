@@ -1,13 +1,13 @@
 - - -
-title: "Back rise"
+Назва: "Підйом на спину"
 - - -
 
-How much extra rise do you want at the back?
+Наскільки ви хочете збільшити підйом ззаду?
 
-This factor will raise the waist at the back of your swim trunks only.
+Цей фактор підніме талію тільки в задній частині плавок.
 
-> If you want to raise the waist overall, that's what the **rise** option does
+> Якщо ви хочете підняти талію в цілому, це можна зробити за допомогою опції **rise**
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](shin_backrise_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](shin_backrise_sample.svg "Вплив цієї опції на шаблон")
