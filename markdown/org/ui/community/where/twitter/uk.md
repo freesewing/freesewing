@@ -1,6 +1,6 @@
 - - -
 - - -
 
-Our Twitter account is [@freesewing\_org](https://twitter.com/freesewing_org). Follow us for updates on new pattern releases, makes from the community, and other news.
+Наш акаунт у Твіттері [@freesewing\_org](https://twitter.com/freesewing_org). Слідкуйте за оновленнями нових шаблонів, новинами від спільноти та іншими новинами.
 
 When posting your makes in Twitter, please mention us so we can re-tweet, and use [our hashtags](/community/hashtags/).
