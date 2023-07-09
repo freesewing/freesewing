@@ -1,11 +1,11 @@
 - - -
-title: "Waistband overlap"
+Назва: "Перекриття пояса"
 - - -
 
-![Waistband overlap](waistbandoverlap.svg)
+![Перекриття пояса](waistbandoverlap.svg)
 
-The length of the overlap between the ends of the waistband, to allow a button. 0 means no overlap, for example to place a zipper that goes all the way to the top of the waistband.
+Довжина перекриття між кінцями пояса, щоб можна було застібнути ґудзик. 0 означає відсутність перекриття, наприклад, щоб розмістити застібку-блискавку до самого верху пояса.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](sandy_waistbandoverlap_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](sandy_waistbandoverlap_sample.svg "Вплив цієї опції на шаблон")
