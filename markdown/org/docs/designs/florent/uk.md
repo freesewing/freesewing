@@ -1,5 +1,5 @@
 - - -
-title: "Florent flat cap"
+назва: "Флорентійський капелюшок"
 - - -
 
 <PatternDocs pattern='florent' />
