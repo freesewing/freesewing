@@ -1,5 +1,5 @@
 - - -
-title: "Ursula undies: Design Options"
+назва: "Урсула роздягається: Варіанти дизайну"
 - - -
 
 <PatternOptions pattern='ursula' />
