@@ -1,57 +1,57 @@
 - - -
-title: "Albert apron: Sewing Instructions"
+назва: "Фартух "Альберт": Інструкція з пошиття"
 - - -
 
-### Step 1: The Pocket
+### Крок 1: Кишеня
 
-- Along the top of the pocket fold the seam allowance to wrong side, press.
-- Then fold the top hem allowance to wrong side and press, making sure the seam allowance is tucked underneath. Pin in place if you need to.
-- Press the seam allowance of the sides and bottom to the wrong side.
-- On the right side topstich close to where the hem edge lies underneath, making sure to catch the hem and seam allowances as you sew.
-- Pin the pocket to the front using the guides.
-- _Edgestitch_ the sides and bottom of the pocket leaving the top open. Make sure to backstitch at the start and end to secure the pocket properly.
+- По верху кишені відверніть припуски шва на виворітний бік, припрасуйте.
+- Потім відверніть верхній припуск на виворітний бік і припрасуйте, переконавшись, що припуск на шов заправлений під нього. Закріпіть на місці, якщо потрібно.
+- Припуски швів боків і низу відпрасуйте на виворітний бік.
+- З правого боку прокладіть верхню строчку впритул до краю підгину, не забуваючи при цьому захоплювати припуски на підгин і шви під час шиття.
+- Приколіть кишеню спереду за допомогою напрямних.
+- _Краєобметочним швом_ боки і низ кишені, залишивши верх відкритим. Обов'язково прострочіть кишеню на початку і в кінці, щоб закріпити її належним чином.
 
 <Tip>
 
-If you have trouble catching the top hem we suggest to either _Baste_ close to the hem edge first, and use that as a guide when stitching on the right side or pin the hem edge down from the right side making sure the pins are parallel to the top edge and use them as a guide.
+Якщо у вас виникли проблеми з захопленням верхнього краю, ми рекомендуємо або спочатку пришити його близько до краю і використовувати як орієнтир при прошиванні з правого боку, або приколоти край з правого боку вниз, переконавшись, що шпильки паралельні верхньому краю, і використовувати їх як орієнтир.
 
 </Tip>
 
 <Note>
 
-There are multiple ways to sew a patch pocket so use the way you prefer if you do not like this one.  
-A fun thing you can do is embroider/stitch the pocket with the name of the person the apron is for or even a cute design. Just remember that aprons typically get dirty so don't go to overtop with it.
+Існує кілька способів пришити накладну кишеню, тому якщо вам не подобається цей спосіб, використовуйте той, який вам більше подобається.  
+Можна вишити/пришити кишеню з іменем людини, для якої призначений фартух, або навіть з милим малюнком. Просто пам'ятайте, що фартухи зазвичай брудняться, тому не переборщіть з цим.
 
 </Note>
 
-### Step 2: The Front
+### Крок 2: Передня частина
 
-- Press under the side seam allowances to the wrong side.
-- Press under the side seams to the wrong side along the hem lines making sure the seam allowances are tucked underneath.
-- On the right side topstich close to where the folded edges lie underneath, making sure to catch the hems as you sew.
-- Repeat Step 2 for the top and bottom hems.
+- Припуски бокових швів припрасуйте на виворітний бік.
+- Припрасуйте під боковими швами на виворітний бік уздовж ліній підгину, переконавшись, що припуски швів заправлені під них.
+- З правого боку прокладіть верхню строчку впритул до того місця, де підгинаються краї, не забуваючи підхоплювати підшивки під час прошивання.
+- Повторіть крок 2 для верхнього і нижнього країв.
 
 <Note>
 
-It is recommended to hem the side seams before the top and bottom seams as they are narrower.  
-The side seams are narrow hems simply being the seam allowance folded over twice.
+Рекомендується підшивати бічні шви перед верхнім і нижнім швами, оскільки вони вужчі.  
+Бічні шви - це вузькі підгибки, які просто являють собою припуски швів, складені вдвічі.
 
 </Note>
 
-### Step 3: The Straps
+### Крок 3: Ремінці
 
-- Fold one strap in half, right sides together and sew the top and side together.
-- Turn inside out through the bottom. Press.
-- Using the cross and rectangle as a guide, stitch the top of the strap to the wrong side of the front on the top left.
-- Using the cross and rectangle as a guide, stitch the bottom of the strap to the wrong side of the front at the side right.
-- Repeat Step 3 for the remaining strap attaching it at the top right and then the side left.
+- Складіть один ремінець навпіл лицьовими боками разом і зшийте верх і бік разом.
+- Вивернути навиворіт через дно. Преса.
+- Використовуючи хрест і прямокутник як орієнтир, пришийте верхню частину ремінця до виворітного боку переду вгорі ліворуч.
+- Використовуючи хрест і прямокутник як орієнтир, пришийте нижню частину ремінця до виворітного боку переду збоку праворуч.
+- Повторіть крок 3 для решти ремінця, прикріпивши його вгорі праворуч, а потім збоку ліворуч.
 
 <Note>
 
-You can make another set of straps to tie at the back if you wish to keep the apron close to body when moving.
+Ви можете зробити ще один набір лямок, щоб зав'язати їх ззаду, якщо хочете тримати фартух ближче до тіла під час руху.
 
 </Note>
 
-### Step 4: Enjoy!
+### Крок 4: Насолоджуйтесь!
 
-You're done! Now go enjoy your apron and make every stain a memory!
+Тобі кінець! А тепер насолоджуйтеся своїм фартухом і запам'ятайте кожну пляму!
