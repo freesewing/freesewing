@@ -1,13 +1,13 @@
 - - -
-title: "Neckline drop"
+Назва: "Виріз декольте"
 - - -
 
-![The neckline drop option on Aaron](./necklinedrop.svg)
+![Варіант падіння декольте на Аароні](./necklinedrop.svg)
 
-Determines how much to lower the neckline of the top beyond the default.
+Визначає, наскільки опускати виріз горловини топа від значення за замовчуванням.
 
-> Higher values lower the neckline further, resulting in more exposed skin.
+> Вищі значення ще більше опускають декольте, в результаті чого шкіра стає більш оголеною.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_necklinedrop_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](aaron_necklinedrop_sample.svg "Вплив цієї опції на шаблон")
