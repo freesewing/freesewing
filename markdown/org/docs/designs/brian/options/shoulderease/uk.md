@@ -1,13 +1,13 @@
 - - -
-title: "Shoulder ease"
+назва: "Легкість у плечах"
 - - -
 
-![Shoulder ease](./shoulderease.svg)
+![Легкість у плечах](./shoulderease.svg)
 
-Controls the amount of ease on the shoulder to shoulder measurement.
+Контролює ступінь легкості при вимірюванні від плеча до плеча.
 
-This option allows you to create some extra ease at the shoulders which shifts the shoulder seam more outwards and off the shoulder. Thereby creating extra room for extra layers of clothing underneath, or more shaped/padded shoulders.
+Цей варіант дозволяє створити додаткову легкість на плечах, що зміщує плечовий шов більше назовні і від плеча. Таким чином створюється додатковий простір для додаткових шарів одягу під ним або більш сформованих/підбитих плечей.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_shoulderease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](brian_shoulderease_sample.svg "Вплив цієї опції на шаблон")
