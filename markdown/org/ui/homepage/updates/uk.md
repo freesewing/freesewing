@@ -1,22 +1,22 @@
 - - -
 - - -
 
-## Latest updates
+## Останні оновлення
 
-##### COVID-19: Facemask pattern
+##### COVID-19: Шаблон маски для обличчя
 
-If you're looking for our facemask pattern, follow this link:
+Якщо ви шукаєте викрійку нашої маски для обличчя, перейдіть за цим посиланням:
 
-- [Face mask pattern and instructions](/blog/facemask-frenzy)
+- [Викрійка маски для обличчя та інструкція](/blog/facemask-frenzy)
 
-##### Contributor calls
+##### Заклики донорів
 
-Recently, we started organizing contributor calls. Anybody with an interest in FreeSewing is welcome to join.
+Нещодавно ми почали організовувати конкурси для дописувачів. Будь-хто, хто цікавиться вільним шиттям, може приєднатися.
 
-All calls can be joined via [Discord](https://discord.freesewing.org/). Check [the calls schedule](/community/calls/) for details on the upcoming calls.
+До всіх закликів можна приєднатися за посиланням [Discord](https://discord.freesewing.org/). Перевірте [розклад дзвінків](/community/calls/) , щоб дізнатися більше про майбутні дзвінки.
 
-##### We've moved to Discord
+##### Ми переїхали до Дискорду.
 
-We've moved our chat rooms from to Discord. Our legacy chat on Gitter is deprecated.
+Ми перенесли наші чати з Discord на Discord. Наш застарілий чат на Gitter застарілий.
 
-You can join us at https://discord.freesewing.org, or use this in-app Discord invite: https://discord.gg/YDV4GvU
+Ви можете приєднатися до нас за адресою: https://discord.freesewing.org, або скористайтеся цим запрошенням у додатку Discord: https://discord.gg/YDV4GvU.
