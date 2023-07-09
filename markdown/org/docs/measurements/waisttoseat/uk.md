@@ -1,7 +1,7 @@
 ---
-title: Waist to seat
+title: Пояс до сидіння
 ---
 
-The **waist to seat** is the measurement from your waist down towards the fullest part of your bum, measured on the side of your body.
+**обхват талії до сидіння** - це вимір від талії вниз до найповнішої частини сідниць, виміряний збоку тіла.
 
-To measure your **waist to seat**, locate the height of both your waist and seat circumference, and measure the vertical distance between them. Make sure to measure at the side of your body.
+Щоб виміряти відстань від талії **до сидіння**, знайдіть висоту вашої талії та окружності сидіння і виміряйте відстань між ними по вертикалі. Обов'язково вимірюйте збоку тіла.
