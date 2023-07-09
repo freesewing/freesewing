@@ -1,9 +1,9 @@
 - - -
-title: "Button length"
+назва: "Довжина кнопки"
 - - -
 
-Controls the length over which the buttons are spaced. In other words, the length from the top to bottom buttons.
+Керує довжиною інтервалу між кнопками. Іншими словами, довжина від верхнього до нижнього ґудзика.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_buttonlength_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_buttonlength_sample.svg "Вплив цієї опції на шаблон")
