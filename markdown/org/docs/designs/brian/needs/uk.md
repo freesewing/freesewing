@@ -1,21 +1,21 @@
 - - -
-title: "Brian body block: What You Need"
+назва: "Брайан боді-блок: Що вам потрібно"
 - - -
 
-To make Brian, you will need the following:
+Щоб зробити Брайана, вам знадобиться наступне:
 
-- Basic sewing supplies
-- About 1.25 - 1.5 metres (1.4 - 1.7 yards) of a suitable fabric ([see Brian Fabric options](/docs/patterns/brian/fabric/))
+- Основні матеріали для шиття
+- Приблизно 1,25 - 1,5 метра (1,4 - 1,7 ярдів) відповідної тканини ([див. варіанти тканини Брайана](/docs/patterns/brian/fabric/))
 
-This list is for a default Brian Block. If you have/are making changes to the block you may need to get additional items such as closures, binding etc.
+Цей список для Брайана Блока за замовчуванням. Якщо ви вносили/вносите зміни до блоку, вам можуть знадобитися додаткові елементи, такі як закриття, прив'язка тощо.
 
 <Note>
 
-###### Brian is a block, not a pattern
+###### Брайан - це блок, а не патерн
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Блок - це базова форма, на якій базуються інші патерни.
+Іноді їх ще називають слоуперами, хоча пуристи заперечать, що блок і слоупер - це різні речі.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Блоки, як правило, не створюються як такі, а слугують основою для інших візерунків.
 
 </Note>
