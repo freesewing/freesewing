@@ -1,17 +1,17 @@
 - - -
-title: "Collar bend"
+назва: "Вигин коміра"
 - - -
 
-![Collar bend](collarbend.svg)
+![Вигин коміра](collarbend.svg)
 
-How much the collar bends (on the collar stand side), rather than being straight.
+Наскільки сильно вигинається комір (з боку стійки коміра), замість того, щоб бути прямим.
 
 <Note>
 
-This influences how the collar lies against the collar stand.
+Це впливає на те, як нашийник прилягає до стійки нашийника.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarbend_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_collarbend_sample.svg "Вплив цієї опції на шаблон")
