@@ -1,5 +1,5 @@
 ---
-title: Share this pattern with others
+title: Поділіться цим шаблоном з іншими
 ---
 
-With the link above, anyone can re-create this exact same pattern adjusted to their own measurements.
+За посиланням вище будь-хто може відтворити таку саму викрійку, пристосувавши її до власних мірок.
