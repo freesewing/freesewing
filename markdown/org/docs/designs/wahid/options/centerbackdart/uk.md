@@ -1,22 +1,22 @@
 - - -
-title: "Center back dart"
+назва: "Дротик по центру спини"
 - - -
 
-![Centerback dart](centerbackdart.svg)
+![Дротик для центрального захисника](centerbackdart.svg)
 
-Since nobody has a perfectly straight back, this pattern tapers in with 0.5 cm at the center back of your neck.
+Оскільки ніхто не має ідеально прямої спини, ця модель звужується на 0,5 см по центру шиї.
 
 <Note>
 
-###### What's the point?
+###### У чому сенс?
 
-If your back slumps forward a bit, fabric tends to pool at the back of your neck. With no sleeves or collar, this causes your neckline to gape.
-This option tapers the fabric inwards at the back of your neck. It does so by 0.5 cm by default, but you can increase or decrease that value.
+Якщо ваша спина трохи нахиляється вперед, тканина збирається на потилиці. Без рукавів і коміра це призводить до того, що декольте зяє.
+Цей варіант звужує тканину всередину на потилиці. За замовчуванням він робить це на 0,5 см, але ви можете збільшити або зменшити це значення.
 
-Technically this is not a dart, but I wasn't sure how else to call it. Suggestions welcome.
+Технічно це не дротик, але я не знав, як ще його назвати. Пропозиції вітаються.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_centerbackdart_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](wahid_centerbackdart_sample.svg "Вплив цієї опції на шаблон")
