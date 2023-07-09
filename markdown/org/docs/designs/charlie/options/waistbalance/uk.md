@@ -1,15 +1,15 @@
 - - -
-title: "Waist balance"
+Назва: "Баланс талії"
 - - -
 
-Controls the distribution of fabric between front and back parts at the waist.
+Контролює розподіл тканини між передньою та задньою частинами на талії.
 
-It is somewhat in vogue to draft a larger back panel these days. Doing so shifts the side seam forward which gives the illusion of being slimmer.
+Зараз дещо модно проектувати більшу задню панель. Таким чином боковий шов зміщується вперед, що створює ілюзію стрункішої .
 
 The side effect of shifting the side seam forward is that it's easy to get into the pockets that are located on the side seam.
 
-This option allows you to control this balance.
+Ця опція дозволяє контролювати цей баланс.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_waistbalance_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](charlie_waistbalance_sample.svg "Вплив цієї опції на шаблон")
