@@ -1,5 +1,5 @@
 - - -
-title: "Bella body block: Required Measurements"
+назва: "Блок тіла Белли: Необхідні розміри"
 - - -
 
 <PatternMeasurements pattern='bella' />
