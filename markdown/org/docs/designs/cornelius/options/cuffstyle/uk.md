@@ -1,15 +1,15 @@
 ---
-title: "Cuff style"
+title: "Стиль манжета"
 ---
 
 ***
 
-This pattern supports three different cuff styles:
+Цей патерн підтримує три різні стилі манжет:
 
-- **Traditional**: A single buttoned _curved_ band with a pointed edge.
-- **Elegant**: A single buttoned _straight_ band with a pointed edge.
-- **Keystone**: A slightly curved band that is wider than the others using 3 buttons rather than 1. This one is based of off the one in the Keystone Draft this pattern is based on.
+- **Традиційний**: одна застібнута на ґудзики _вигнута_ стрічка з загостреним краєм.
+- **Елегантна**: пряма стрічка на одному ґудзику _з загостреним краєм та прямим_ .
+- **Keystone**: Трохи вигнута смуга, ширша за інші, з 3 кнопками замість 1. Цей шаблон створено на основі того, що є в проекті Keystone Draft, на якому базується цей візерунок.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](cornelius_cuffstyle_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](cornelius_cuffstyle_sample.svg "Вплив цієї опції на шаблон")
