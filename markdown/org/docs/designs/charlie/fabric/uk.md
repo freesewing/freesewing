@@ -1,13 +1,13 @@
 - - -
-title: "Charlie chinos: Fabric Options"
+назва: "Чарлі чінос: Варіанти тканин"
 - - -
 
-The obvious choice for Charlie chinos, is [chino fabric](https://en.wikipedia.org/wiki/Chino_cloth), which is a cotton twill fabric. These days it's often sold as a blend to a little bit of stretch, which is optional.
+Очевидним вибором для чінос Чарлі є тканина [](https://en.wikipedia.org/wiki/Chino_cloth), яка являє собою бавовняну саржеву тканину. У наш час його часто продають у вигляді суміші, що не є обов'язковим.
 
-But you have a lot of options here, and your choice of fabric will influence what sort of style these project.
+Але тут у вас є багато варіантів, і ваш вибір тканини вплине на те, який стиль матиме цей проект.
 
-Go for **wool** for the most classic look. Check the suiting section of your fabric store for options. If this is your first pair, some wool-poly blend is most likely going to be more budget-friendly. But don't let price alone guide you, buying some cheap whimsical fabric is the best way to come up with a shitty looking pair of trousers, and get frustrated in the process.
+Вибирайте **з вовни** для найбільш класичного вигляду. Загляньте в розділ костюмів у вашому магазині тканин, щоб знайти варіанти. Якщо це ваша перша пара, то, швидше за все, більш бюджетним варіантом буде суміш вовни з поліестером. Але не дозволяйте ціні керувати вами, купуючи дешеву химерну тканину - це найкращий спосіб вигадати паскудний вигляд штанів і розчаруватися в процесі.
 
-For **cotton**, go for a heavier weight. Cotton might also be a bit easier on the beginner than wool. If unsure what to use, ask for chino in the fabric store and simply pick a colour you like.
+Для **бавовняних**, обирайте більшу вагу. Бавовна також може бути трохи легшою для початківців, ніж вовна. Якщо ви не знаєте, що використовувати, запитайте про чино в магазині тканин і просто виберіть колір, який вам подобається.
 
-Nothing beats **linen** on a hot summer day. It's fun to work with too, but it does wrinkle like a mofo, and even the most neatly made trousers look somewhat messy when made in linen. What I'm saying is, maybe not for your first pair.
+Ніщо не може зрівнятися з **лляною** у спекотний літній день. Працювати з ним теж весело, але він мнеться, і навіть найакуратніші штани виглядають дещо неохайно, коли зроблені з льону. Я хочу сказати, що, можливо, не для вашої першої пари.
