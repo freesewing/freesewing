@@ -1,8 +1,8 @@
 ---
-title: Front armhole extra cutout
+title: Découpe supplémentaire sur l'emmanchure avant
 ---
 
-How much do you want the front armhole to be cut out deeper than the back.
+Combien voulez-vous que l’emmanchure devant soit découpée plus profondément que le dos.
 
 ## Effet de cette option sur le modèle
 
