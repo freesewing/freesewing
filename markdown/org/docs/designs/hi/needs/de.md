@@ -4,7 +4,7 @@ title: "Hi the shark: What You Need"
 
 To make Hi, you will need the following:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
+- [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
 - Etwa 1 Meter (1.1'') eines geeigneten Stoffes (oberer Körper) ([siehe Hi Stoffoptionen](/docs/patterns/hi/fabric/))
 - Etwa 0.5 cm (0.6") eines geeigneten Stoffes (Bauch) ([siehe Stoffoptionen](/docs/patterns/hi/fabric/))
 - Small piece for the mouth
