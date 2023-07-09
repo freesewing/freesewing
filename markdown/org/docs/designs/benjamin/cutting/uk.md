@@ -1,25 +1,25 @@
 - - -
-title: "Benjamin bow tie: Cutting Instructions"
+"Метелик Бенджамін": "Метелик Бенджаміна: Інструкція з крою"
 - - -
 
-Benjamin is a rather simple pattern, but your options will determine what needs to be cut out. Below are two typical layouts.
+Бенджамін - досить простий візерунок, але ваші можливості визначатимуть, що потрібно вирізати. Нижче наведено два типові макети.
 
-## Without adjustment ribbon
+## Без регулювальної стрічки
 
-- **Main fabric**
-  - Cut **4 Bow** parts
-  - Cut **2 Collar Band** parts
-- **Interfacing**
-  - Cut **4 Bow** parts
-  - Cut **2 Collar Band** parts
+- **Основна тканина**
+  - Виріжте **4 частини банта**
+  - Крій **2 деталі коміра**
+- **Взаємодія**
+  - Виріжте **4 частини банта**
+  - Крій **2 деталі коміра**
 
-## With adjustment ribbon
+## З регулювальною стрічкою
 
-- **Main fabric**
-  - Cut **1 Short Bow** part
-  - Cut **2 Medium Bow** parts
-  - Cut **1 Long Bow** part
-- **Interfacing**
-  - Cut **1 Short Bow** part
-  - Cut **2 Medium Bow** parts
-  - Cut **1 Long Bow** part
+- **Основна тканина**
+  - Зрізати **1 короткий лук** частина
+  - Виріжте **2 середні частини цибулі**
+  - Вирізати **1 довгий лук** частина
+- **Взаємодія**
+  - Зрізати **1 короткий лук** частина
+  - Виріжте **2 середні частини цибулі**
+  - Вирізати **1 довгий лук** частина
