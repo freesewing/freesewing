@@ -1,41 +1,41 @@
 - - -
-title: "Trayvon tie: Fabric Options"
+назва: "Краватка з тройону: Варіанти тканин"
 - - -
 
-## Tie fabric
+## Тканина для краватки
 
-The ties you find in the store are typically made out of silk or some imitation silk poly. So it will come as no surprise that those are good options.
+Краватки, які ви знайдете в магазині, зазвичай виготовлені з шовку або поліестеру, що імітує шовк. Тож не дивно, що це хороші варіанти.
 
-In general, you want something with good drape so that your tie hangs nicely. Cutting your tie on bias can help here too.
+Загалом, ви хочете щось з хорошою драпіровкою, щоб ваша краватка гарно висіла. Тут також може допомогти обрізання краватки на упередженнях.
 
-Personally, I like using different fabrics for ties. Things like denim or corduroy make great ties, while being a bit different from the run-of-the-mill store-bought tie.
+Особисто мені подобається використовувати різні тканини для краваток. Джинсові або вельветові матеріали - чудові краватки, але вони дещо відрізняються від звичайних краваток, куплених у магазині.
 
-Additionally, silk and silk imitation is slippery and tricky to work with. If this your first tie, consider an alternative fabric that is more forgiving.
+Крім того, шовк та імітація шовку слизькі та складні в роботі. Якщо це ваша перша краватка, розгляньте альтернативну тканину, яка буде більш поблажливою.
 
-Just make sure you pick a fabric that does not stretch or lose its shape easily. You want your tie to look sharp, not saggy.
+Просто переконайтеся, що ви вибрали тканину, яка не розтягується і не втрачає форму. Ви хочете, щоб краватка виглядала гострою, а не обвислою.
 
-## Tie lining
+## Підкладка для краватки
 
-The lining of the tie is the bit that is used at the tip to cover up the back. If you are not sure what I mean, look at the back of the tip of an existing tie. See that rectangular patch of fabric you can see there? That is the tie lining.
+Підкладка краватки - це частина, яка використовується на кінчику, щоб прикрити спинку. Якщо ви не знаєте, що я маю на увазі, подивіться на зворотній бік кінчика вже існуючої краватки. Бачите цей прямокутний клаптик тканини? Це підкладка для краватки.
 
-Your tie lining will add an extra fabric inside a part of your tie. So it is important to avoid bulk. Go for something thin, even when using a thicker tie fabric.
+Підкладка для краватки додасть додаткову тканину всередині частини краватки. Тому важливо уникати перенасиченості. Вибирайте щось тонке, навіть якщо використовуєте товстішу тканину для краватки.
 
-Make sure your lining drapes at least as good as your tie fabric, so that it doesn't interfere with the drape of your tie.
+Переконайтеся, що підкладка драпірується принаймні так само добре, як і тканина краватки, щоб вона не заважала драпіруванню краватки.
 
-When in doubt, go for imitation silk. Do make sure to pick something that is a nice match, or contrast, with your tie fabric.
+Якщо ви сумніваєтеся, обирайте імітацію шовку. Переконайтеся, що ви вибрали щось, що добре поєднується або контрастує з тканиною краватки.
 
-## Tie interfacing
+## Взаємозв'язок краваток
 
-Your tie interfacing is the skeleton of your tie. It is the part that sits in the middle and that you will only see while constructing your tie.
+Взаємозв'язок краватки - це скелет краватки. Це частина, яка знаходиться посередині, і яку ви побачите лише під час побудови краватки.
 
-Tie interfacing can be notoriously hard to get. The best tie interfacing is soft, fuzzy woven lambswool, but I have yet to walk into a fabric store that carries this.
+З'єднання краваток, як відомо, буває дуже важко отримати. Найкращий матеріал для краватки - м'яка, нечітка ткана овеча шерсть, але мені ще треба зайти в магазин тканин, де вона продається.
 
-While you can get by with an alternative, like some wool fabric, or flannel, I typically re-use the interfacing from an old tie.
+Хоча ви можете обійтися альтернативою, наприклад, вовняною тканиною або фланеллю, я зазвичай повторно використовую прокладку від старої краватки.
 
 <Note>
 
-As long as you keep your tie away from scissors and bondage fanatics, your tie interfacing will effortlessly outlast your tie. So look in your wardrobe (or the charity shop/thrift store) for that old tie with the stain on it, and take it apart to salvage the tie interfacing.
+Поки ви тримаєте краватку подалі від ножиць і фанатиків кабали, інтерфейс краватки без особливих зусиль прослужить вам довше, ніж краватка. Тож пошукайте у своєму гардеробі (або в благодійному магазині чи комісійному магазині) стару краватку з плямою і розберіть її на частини, щоб врятувати тканину, яка з'єднує краватку.
 
-As long as the tie you want to make is not wider or longer than the one you are recycling, you have your tie interfacing right there.
+Якщо краватка, яку ви хочете зробити, не ширша і не довша за ту, яку ви переробляєте, то ви зможете з'єднати краватки саме тут.
 
 </Note>
