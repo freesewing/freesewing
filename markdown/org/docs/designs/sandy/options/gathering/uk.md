@@ -1,11 +1,11 @@
 - - -
-title: "Gathering"
+назва: "Збір"
 - - -
 
-![Gathering](gathering.svg)
+![Збір](gathering.svg)
 
-The percent by which the top of the skirt is longer than the bottom of the waistband. Give a value higher than 0 to pleat the skirt.
+Відсоток, на який верхня частина спідниці довша за нижню частину пояса. Задайте значення більше 0, щоб скласти спідницю.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](sandy_gathering_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](sandy_gathering_sample.svg "Вплив цієї опції на шаблон")
