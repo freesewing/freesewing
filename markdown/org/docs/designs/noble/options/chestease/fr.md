@@ -1,10 +1,10 @@
 ---
-title: "Chest ease"
+title: "Aisance de poitrine"
 ---
 
 ***
 
-The **chest ease** option controls the amount of ease at the fullest part of your chest.
+L'option **facilité de poitrine** contrôle la quantité d'aisance à la partie la plus complète de votre poitrine.
 
 ## Effet de cette option sur le modèle
 
