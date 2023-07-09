@@ -1,9 +1,9 @@
 - - -
-title: "Chest pocket angle"
+назва: "Кут нагрудної кишені"
 - - -
 
-Controls the slant of the chest pocket.
+Контролює нахил нагрудної кишені.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlton_chestpocketangle_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](carlton_chestpocketangle_sample.svg "Вплив цієї опції на шаблон")
