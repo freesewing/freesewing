@@ -1,9 +1,9 @@
 - - -
-title: "Knee ease"
+назва: "Легкість колін"
 - - -
 
-Controls the amount of ease at your knees, which also determines the width of the trouser legs.
+Контролює ступінь свободи в колінах, що також визначає ширину штанин.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_kneeease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](charlie_kneeease_sample.svg "Вплив цієї опції на шаблон")
