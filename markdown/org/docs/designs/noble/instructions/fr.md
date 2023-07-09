@@ -7,7 +7,7 @@ title: "Noble body block: Sewing Instructions"
 ###### Noble is a block, not a pattern
 
 A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Ils sont parfois aussi appelés patrons de base, bien que les puristes soutiennent qu'un bloc et un patron de base sont des choses différentes.
 
 Blocks are typically not made as-is but rather serve as a basis for other patterns so the instructions below will not go in depth about closures or finishes and are for the default Noble block.
 
@@ -25,7 +25,7 @@ Noble is based on the Bella body block
 
 ### Armhole seam
 
-- Close the back darts.
+- Fermer les fléchettes arrière.
 
 ### Both
 
@@ -40,7 +40,7 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 
 ### Étape 2 : Essayez-le
 
-- Try it on and check the fit by pinning the back closed whilst wearing it.
+- Essayez-le et vérifiez la coupe en épinglant le dos tout en le portant.
 - Apportez les modifications nécessaires et essayez à nouveau le vêtement.
 - Répétez l'opération jusqu'à ce que vous soyez satisfait.
 
