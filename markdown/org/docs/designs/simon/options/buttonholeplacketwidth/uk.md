@@ -1,11 +1,11 @@
 - - -
-title: "Buttonhole placket width"
+назва: "Ширина планки петлі"
 - - -
 
-![Buttonhole placket width](buttonholeplacketwidth.svg)
+![Ширина планки петлі для ґудзиків](buttonholeplacketwidth.svg)
 
-The width of your buttonhole placket.
+Ширина вашої петельки для ґудзиків.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_buttonholeplacketwidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_buttonholeplacketwidth_sample.svg "Вплив цієї опції на шаблон")
