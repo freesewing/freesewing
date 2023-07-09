@@ -1,19 +1,19 @@
 - - -
-title: "Titan trouser block: What You Need"
+назва: "Титановий брючний блок: Що вам потрібно"
 - - -
 
-To make Titan, you will need the following:
+Щоб зробити Титан, вам знадобиться наступне:
 
-- Basic sewing supplies
-- About 1.5 meters (1.7 yards) of suitable fabric ([see Titan Fabric options](/docs/patterns/titan/fabric))
+- Основні матеріали для шиття
+- Приблизно 1,5 метра (1,7 ярда) відповідної тканини ([див. варіанти тканини Titan Fabric](/docs/patterns/titan/fabric))
 
 <Note>
 
-###### Titan is a block, not a pattern
+###### Титан - це блок, а не патерн
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Блок - це базова форма, на якій базуються інші патерни.
+Іноді їх ще називають слоуперами, хоча пуристи заперечать, що блок і слоупер - це різні речі.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Блоки, як правило, не створюються як такі, а слугують основою для інших візерунків.
 
 </Note>
