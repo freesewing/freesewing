@@ -1,11 +1,11 @@
 - - -
-title: "Shoulderstrap width"
+назва: "Ширина плечового ременя"
 - - -
 
-![The shoulder strap width option on Aaron](./shoulderstrapwidth.svg)
+![Вибір ширини плечового ременя на Aaron](./shoulderstrapwidth.svg)
 
-Determines the width of the shoulder straps.
+Визначає ширину плечових ременів.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_shoulderstrapwidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](aaron_shoulderstrapwidth_sample.svg "Вплив цієї опції на шаблон")
