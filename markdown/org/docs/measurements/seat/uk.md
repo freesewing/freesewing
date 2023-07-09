@@ -1,7 +1,7 @@
 ---
-title: Seat circumference
+title: Окружність сидіння
 ---
 
-The **seat circumference** is the measurement around the fullest part of your bum.
+Обхват **сидіння** - це вимір навколо найповнішої частини вашої сідниці.
 
-To measure your **seat circumference**, run the tape measure around your bum at the fullest part. Make sure to keep the tape measure horizontal while doing so. In other words, parallel to the floor.
+Щоб виміряти обхват **сидіння**, проведіть рулеткою навколо сідниць у найширшій частині. При цьому переконайтеся, що рулетка знаходиться в горизонтальному положенні. Іншими словами, паралельно підлозі.
