@@ -1,21 +1,21 @@
 - - -
-title: "Leg balance"
+назва: "Баланс ніг"
 - - -
 
-Controls the proportion between the front and back part of the legs.
+Контролює пропорцію між передньою і задньою частиною ніг.
 
-The back of the trouser legs are always wider than the front. This controls by how much.
+Задня частина штанин завжди ширша за передню. Це контролює, на скільки.
 
 <Note>
 
-Increasing this will make the front leg panel narrower.  
-This makes the wearer look more skinny.
+Збільшення цього параметра зробить передню панель ніжки вужчою.  
+Це робить власника більш худорлявим.
 
-This trick is often used in womenswear jeans
-(now you know why you can't find womenswear jeans with functional front pockets).
+Цей трюк часто використовується в жіночих джинсах
+(тепер ви знаєте, чому ви не можете знайти жіночі джинси з функціональними передніми кишенями).
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](titan_legbalance_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](titan_legbalance_sample.svg "Вплив цієї опції на шаблон")
