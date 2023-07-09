@@ -1,8 +1,8 @@
 ---
-title: The right to erasure
+title: Право на видалення
 order: 40
 ---
 
-You have the right to have your personal data erased.
+Ви маєте право на видалення ваших персональних даних.
 
-Go to [/account/remove](/account/remove/) to remove all your data.
+Перейдіть за посиланням [/account/remove](/account/remove/) , щоб видалити всі свої дані.
