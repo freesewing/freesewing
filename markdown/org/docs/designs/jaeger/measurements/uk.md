@@ -1,5 +1,5 @@
 - - -
-title: "Jaeger jacket: Required Measurements"
+назва: "Єгерська куртка: Необхідні мірки"
 - - -
 
 <PatternMeasurements pattern='jaeger' />
