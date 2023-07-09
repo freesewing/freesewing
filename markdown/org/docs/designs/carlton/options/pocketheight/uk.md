@@ -1,9 +1,9 @@
 - - -
-title: "Pocket height"
+назва: "Висота кишені"
 - - -
 
-Controls the height/depth of the pockets.
+Регулювання висоти/глибини кишень.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlton_pocketheight_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](carlton_pocketheight_sample.svg "Вплив цієї опції на шаблон")
