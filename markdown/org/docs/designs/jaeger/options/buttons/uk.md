@@ -1,9 +1,9 @@
 - - -
-title: "Number of buttons"
+назва: "Кількість кнопок"
 - - -
 
-Controls the amount of buttons.
+Контролює кількість кнопок.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_buttons_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_buttons_sample.svg "Вплив цієї опції на шаблон")
