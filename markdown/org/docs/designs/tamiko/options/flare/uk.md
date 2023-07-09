@@ -1,9 +1,9 @@
 - - -
-title: "Flare"
+назва: "Спалах"
 - - -
 
-The angle by which the garment flares out from your chest downwards.
+Кут, під яким одяг розширюється від грудей донизу.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](tamiko_flare_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](tamiko_flare_sample.svg "Вплив цієї опції на шаблон")
