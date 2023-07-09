@@ -1,11 +1,11 @@
 - - -
-title: "Chest pocket width"
+назва: "Ширина нагрудної кишені"
 - - -
 
-![Chest pocket width](chestpocketwidth.svg)
+![Ширина нагрудної кишені](chestpocketwidth.svg)
 
-The width of the chest pocket, as a factor of your chest circumference.
+Ширина нагрудної кишені, як фактор обхвату грудей.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_chestpocketwidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_chestpocketwidth_sample.svg "Вплив цієї опції на шаблон")
