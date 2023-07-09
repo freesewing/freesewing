@@ -1,9 +1,9 @@
 - - -
-title: "Hugo hoodie: What You Need"
+назва: "Худі Хьюго: Те, що тобі потрібно"
 - - -
 
-To make Hugo, you will need the following:
+Щоб зробити Гюго, вам знадобиться наступне:
 
-- Basic sewing supplies
-- About 2 meters (2.2 yards) of a suitable fabric ([see Fabric options](/docs/patterns/hugo/fabric))
-- Ribbing fabric for the hem and cuffs
+- Основні матеріали для шиття
+- Близько 2 метрів (2,2 ярда) відповідної тканини ([див. варіанти тканини](/docs/patterns/hugo/fabric))
+- Ребриста тканина для подолу та манжетів
