@@ -1,5 +1,5 @@
 ---
-title: Waist to upper leg
+title: Від талії до гомілки
 ---
 
-The **waist to upper leg** is measured from your waist down to the top of your leg. Measure it at the side of your body.
+Обхват **талії до верхньої частини ноги** вимірюється від талії до верхньої частини ноги. Виміряйте його збоку тіла.
