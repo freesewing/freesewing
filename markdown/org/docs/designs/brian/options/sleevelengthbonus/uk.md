@@ -1,11 +1,11 @@
 - - -
-title: "Sleeve length bonus"
+назва: "Бонус за довжину рукава"
 - - -
 
-![The sleeve length bonus option on Brian](./sleevelengthbonus.svg)
+![Бонусна опція довжини рукава на Брайані](./sleevelengthbonus.svg)
 
-This option controls how to lengthen the sleeves.
+Цей параметр визначає, як подовжити рукава.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_sleevelengthbonus_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](brian_sleevelengthbonus_sample.svg "Вплив цієї опції на шаблон")
