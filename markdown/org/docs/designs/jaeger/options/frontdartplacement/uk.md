@@ -1,11 +1,11 @@
 - - -
-title: "Front dart placement"
+Назва: "Розміщення передньої виточки"
 - - -
 
-![Front dart placement](frontdartplacement.svg)
+![Розміщення передньої виточки](frontdartplacement.svg)
 
-Location of the front dart as a proportion of your chest circumference. Higher numbers move it more to the side.
+Розташування передньої виточки в пропорції до обхвату грудей. Вищі числа зміщують його більше вбік.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_frontdartplacement_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_frontdartplacement_sample.svg "Вплив цієї опції на шаблон")
