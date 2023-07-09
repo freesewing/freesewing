@@ -1,18 +1,18 @@
 - - -
-title: "Brian body block: Fabric Options"
+назва: "Боді-блок Брайана: Варіанти тканин"
 - - -
 
-If you are making a default Brian to see how it fits we recommend a fabric such as **Calico (Muslin)** or a cheaper fabric that matches the drape and stretch of the fabric you intend to make a finalised version of Brian with.
+Якщо ви робите стандартний Брайан, щоб побачити, як він сидить, ми рекомендуємо таку тканину, як **Бязь (муслін)** або дешевшу тканину, яка відповідає драпіровці і розтяжності тканини, з якої ви плануєте зробити остаточну версію Брайана.
 
-You can use scraps of fabrics from your stash so don't worry about buying fabric specifically for Brian.
+Ви можете використати клаптики тканини з вашої заначки, тому не турбуйтеся про те, щоб купувати тканину спеціально для Брайана.
 
 <Note>
 
-###### Brian is a block, not a pattern
+###### Брайан - це блок, а не патерн
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Блок - це базова форма, на якій базуються інші патерни.
+Іноді їх ще називають слоуперами, хоча пуристи заперечать, що блок і слоупер - це різні речі.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Блоки, як правило, не створюються як такі, а слугують основою для інших візерунків.
 
 </Note>
