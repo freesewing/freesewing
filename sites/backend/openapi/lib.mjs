@@ -22,6 +22,7 @@ export const errors = {
   keyLevelExceedsRoleLevel:
     'The `level` field in the request body is higher than the `level` of the user creating the key. This is not allowed.',
   languageMissing: 'The `langauge` field was missing from the request body',
+  languageInvalid: 'The `langauge` field holds a value that is invalid',
   levelMissing: 'The `level` field was missing from the request body',
   levelNotNumeric: 'The `level` field in the request body was a number',
   mfaActive: 'MFA is already activated on the account',

@@ -6,6 +6,7 @@ import { passwordreset, translations as passwordresetTranslations } from './pass
 import { signup, translations as signupTranslations } from './signup/index.mjs'
 import { signupaea, translations as signupaeaTranslations } from './signup-aea/index.mjs'
 import { signupaed, translations as signupaedTranslations } from './signup-aed/index.mjs'
+import { transinvite, translations as transinviteTranslations } from './transinvite/index.mjs'
 // Shared translations
 import en from '../../../public/locales/en/shared.json' assert { type: 'json' }
 import de from '../../../public/locales/de/shared.json' assert { type: 'json' }
@@ -25,6 +26,7 @@ export const templates = {
   signup,
   'signup-aea': signupaea,
   'signup-aed': signupaed,
+  transinvite,
 }
 
 export const translations = {
@@ -36,5 +38,6 @@ export const translations = {
   signup: signupTranslations,
   'signup-aea': signupaeaTranslations,
   'signup-aed': signupaedTranslations,
+  transinvite: transinviteTranslations,
   shared: { en, de, es, fr, nl },
 }

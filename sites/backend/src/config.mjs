@@ -26,6 +26,9 @@ const envToBool = (input = 'no') => {
   return false
 }
 
+// Save ourselves some typing
+const crowdinProject = 'https://translate.freesewing.org/project/freesewing/'
+
 // Construct config object
 const baseConfig = {
   // Environment
@@ -65,6 +68,15 @@ const baseConfig = {
   github: {
     token: process.env.BACKEND_GITHUB_TOKEN,
   },
+  crowdin: {
+    invites: {
+      nl: crowdinProject + 'invite?h=' + process.env.BACKEND_CROWDIN_INVITE_NL,
+      fr: crowdinProject + 'invite?h=' + process.env.BACKEND_CROWDIN_INVITE_FR,
+      de: crowdinProject + 'invite?h=' + process.env.BACKEND_CROWDIN_INVITE_DE,
+      es: crowdinProject + 'invite?h=' + process.env.BACKEND_CROWDIN_INVITE_ES,
+      uk: crowdinProject + 'invite?h=' + process.env.BACKEND_CROWDIN_INVITE_UK,
+    },
+  },
   jwt: {
     secretOrKey: encryptionKey,
     issuer: process.env.BACKEND_JWT_ISSUER || 'freesewing.org',
@@ -72,6 +84,7 @@ const baseConfig = {
     expiresIn: process.env.BACKEND_JWT_EXPIRY || '7d',
   },
   languages: ['en', 'de', 'es', 'fr', 'nl'],
+  translations: ['de', 'es', 'fr', 'nl', 'uk'],
   measies: measurements,
   mfa: {
     service: process.env.BACKEND_MFA_SERVICE || 'FreeSewing',

@@ -126,6 +126,23 @@ UserModel.prototype.loadAuthenticatedUser = async function (user) {
 }
 
 /*
+ * Loads & reveals the user that is making the API request
+ e
+ * Stores result in this.record
+ */
+UserModel.prototype.revealAuthenticatedUser = async function (user) {
+  if (!user) return this
+  this.record = await this.prisma.user.findUnique({
+    where: { id: user.uid },
+    include: {
+      apikeys: true,
+    },
+  })
+
+  return this.reveal()
+}
+
+/*
  * Checks this.record and sets a boolean to indicate whether
  * the user exists or not
  *
