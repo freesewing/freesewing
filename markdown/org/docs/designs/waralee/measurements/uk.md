@@ -1,5 +1,5 @@
 - - -
-title: "Waralee wrap pants: Required Measurements"
+назва: "Штани з обгорткою Waralee: Необхідні виміри"
 - - -
 
 <PatternMeasurements pattern='waralee' />
