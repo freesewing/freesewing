@@ -1,9 +1,9 @@
 - - -
-title: "Bib length"
+назва: "Довжина нагрудника"
 - - -
 
-Controls the length of the _bib_ part of your apron.
+Контролює довжину _нагрудника_ частини фартуха.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](albert_biblength_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](albert_biblength_sample.svg "Вплив цієї опції на шаблон")
