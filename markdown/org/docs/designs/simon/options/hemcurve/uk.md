@@ -1,19 +1,19 @@
 - - -
-title: "Hem curve"
+Назва: "Кривий поділ"
 - - -
 
-![Hem curve](hemcurve.svg)
+![Вигин подолу](hemcurve.svg)
 
-How much do you want the hem to curve upwards?
+Наскільки сильно ви хочете, щоб поділ був загнутий вгору?
 
 <Note>
 
-- This applies only to the baseball and slashed hem styles. If you chose a straight hem, this will be ignored.
-- This value can never be more than the length bonus. If it is, it will silently be set to the length bonus value.
-- If you set this to zero, you'll get a straight hem regardless of what hem style you pick.
+- Це стосується лише фасонів бейсбол та з розрізаним подолом. Якщо ви вибрали прямий поділ, це буде проігноровано.
+- Це значення ніколи не може бути більшим за бонус за довжину. Якщо так, то він буде автоматично встановлений на значення бонусу за довжину.
+- Якщо ви встановите цей параметр на нуль, ви отримаєте прямий край, незалежно від того, який стиль ви вибрали.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_hemcurve_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_hemcurve_sample.svg "Вплив цієї опції на шаблон")
