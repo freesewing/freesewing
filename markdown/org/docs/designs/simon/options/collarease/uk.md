@@ -1,13 +1,13 @@
 - - -
-title: "Collar ease"
+назва: "Легкість коміра"
 - - -
 
-![Collar ease](collarease.svg)
+![Легкість нашийника](collarease.svg)
 
-How much ease do you want for your collar?
+Наскільки легким ви хочете бачити свій нашийник?
 
-If you feel that a collar is suffocating, you can give yourself a bit more ease and it will sit more loose around your neck. You could also lower the ease for a tighter fit.
+Якщо ви відчуваєте, що комір душить, ви можете трохи послабити його, і він буде сидіти на шиї більш вільно. Ви також можете зменшити легкість для більш щільного прилягання.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_collarease_sample.svg "Вплив цієї опції на шаблон")
