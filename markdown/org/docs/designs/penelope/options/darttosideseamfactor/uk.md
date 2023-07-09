@@ -1,9 +1,9 @@
 - - -
-title: "Dart to side seam factor"
+Назва: "Коефіцієнт переходу виточки в бічний шов"
 - - -
 
-Percentage of how much of the hip to waist reduction has to be taken in by the darts versus the side seam.
+Відсоток зменшення об'єму стегон до об'єму талії у виточках по відношенню до бокового шва.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_darttosideseamfactor_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](penelope_darttosideseamfactor_sample.svg "Вплив цієї опції на шаблон")
