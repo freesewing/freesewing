@@ -1,13 +1,13 @@
 - - -
-title: "Armhole drop"
+назва: "Капля з пройми"
 - - -
 
-![The armhole drop option on Aaron](./armholedrop.svg)
+![Опція опускання пройми на Аароні](./armholedrop.svg)
 
-How much to lower the armhole below the default amount.
+На скільки опустити пройму нижче значення за замовчуванням.
 
-> This option also allows negative values. They will, obviously, raise the armhole by said amount.
+> Ця опція також допускає від'ємні значення. Очевидно, що вони піднімуть пройму на вказану суму.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_armholedrop_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](aaron_armholedrop_sample.svg "Вплив цієї опції на шаблон")
