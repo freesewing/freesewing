@@ -1,8 +1,8 @@
 ---
-title: "Rise"
+title: "Élévation de ceinture"
 ---
 
-This options controls the height of the waist.
+Cette option contrôle la hauteur de la taille.
 
 ## Effet de cette option sur le modèle
 
