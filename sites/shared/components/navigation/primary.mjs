@@ -74,7 +74,7 @@ const currentChildren = (current) =>
 // Exported for re-use
 export const linkClasses = `
   py-1
-  text-base text-base-content sm:text-base-content
+  text-base-content sm:text-base-content
   hover:text-secondary
   sm:hover:text-secondary
 `
@@ -168,7 +168,7 @@ const SubLevel = ({ nodes = {}, active = '' }) => (
             sm:hover:border-secondary
             ${
               child.s === active
-                ? 'text-secondary border-secondary sm:text-secondary sm:border-secondary'
+                ? 'text-secondary border-accent sm:text-secondary sm:border-secondary'
                 : 'text-base-content sm:text-base-content'
             }`}
           >
@@ -272,7 +272,7 @@ export const MainSections = () => {
               href={`/${page.s}`}
               className={`
                 flex flex-row gap-4 items-center
-                hover:bg-secondary hover:bg-opacity-25 hover:cursor-pointer
+                hover:bg-primary-focus hover:text-base-100 hover:cursor-pointer
                 p-2 px-4 rounded
                 rounded-none
               `}
