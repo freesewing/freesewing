@@ -1,6 +1,6 @@
----
+- - -
 title: "Tiberius Tunica: Cutting Instructions"
----
+- - -
 
 <Tip>
 
@@ -10,9 +10,9 @@ Tiberius is just a big rectangle, so printing the pattern out is a bit of a wast
 
 </Tip>
 
-Tiberius consists of only one part, the _tunica_, that will act as a pattern for both front and back pieces.
+Tiberius besteht aus nur einem Teil, der _tunica_, welche sowohl für Vorder- als auch Rückenteil als Schnittmuster dient.
 
-- cut _2 tunicae_, _on the fold_
+- schneide _2 tunicae_, _im Stoffbruch_
 
 <Note>
 
