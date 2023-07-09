@@ -1,19 +1,19 @@
 - - -
-title: "Diana draped top: What You Need"
+заголовок: "Драпірований топ Діана: Те, що вам потрібно"
 - - -
 
-To make Diana, you will need the following:
+Щоб зробити Діану, вам знадобиться наступне:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 1.5 meters (1.7 yards) (or half of that if it's wide enough to fit the sleeves next to the body) of a suitable fabric ([see Fabric options](/docs/patterns/diana/fabric))
+- [Основні матеріали для шиття](/docs/sewing/basic-sewing-supplies)
+- Близько 1,5 метра (1,7 ярдів) (або половина, якщо вона достатньо широка, щоб рукава прилягали до тіла) відповідної тканини ([див. варіанти тканин](/docs/patterns/diana/fabric)).
 
 <Note>
 
-#### A serger/overlock is nice, but optional
+#### Сергер/оверлок - це добре, але необов'язково
 
-As with all knitwear and stretch fabrics, a serger/overlock will make your life easier.
+Як і у випадку з будь-яким трикотажем та еластичними тканинами, сергер/оверлок полегшить вам життя.
 
-If you do not have one of those, don't despair. You don't really need it.
-Because these side seams and shoulder seams won't get stretched out, you can just sew them with a regular straight stitch.
+Якщо у вас такого немає, не впадайте у відчай. Тобі це не потрібно.
+Оскільки ці бокові та плечові шви не розтягуються, ви можете зшити їх звичайною прямою строчкою.
 
 </Note>
