@@ -1,7 +1,7 @@
 ---
-title: Shoulder to wrist
+title: Від плеча до зап'ястя
 ---
 
-The **shoulder to wrist** measurement determines your sleeve length, and runs from the tip of your shoulder along the arm to your wrist.
+Вимірювання **від плеча до зап'ястя** визначає довжину рукава і проходить від кінчика плеча по руці до зап'ястя.
 
-To measure your **shoulder to wrist** measurement, place your tape measure at the tip of your shoulder, the tip or corner of the protruding bone that is located where the top of the shoulder meets the side of the arm. It is also where the top of the shoulder seam sits and the sleeve begins on a well-fitting dress shirt. Let your arm hang naturally in a slight bend, and measure along your slightly bent arm up to your wrist.
+</strong> Щоб виміряти **плеча до зап'ястя, прикладіть рулетку до кінчика плеча, кінчик або кут виступаючої кістки, який знаходиться там, де верхня частина плеча з'єднується з бічною частиною руки. Це також місце, де знаходиться верхня частина плечового шва і починається рукав на добре скроєній сорочці. Дайте руці природно звисати в легкому згині, і вимірюйте вздовж злегка зігнутої руки до зап'ястя.</p>
