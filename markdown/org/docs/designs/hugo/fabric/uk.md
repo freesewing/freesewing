@@ -1,17 +1,17 @@
 - - -
-title: "Hugo hoodie: Fabric Options"
+назва: "Худі з капюшоном Hugo: Варіанти тканин"
 - - -
 
-You may find a dedicated sweatshirt/tracksuit fabric section in your fabric store of choice. If you don't, just head for the knitwear section and look for a thicker comfortable knit fabric.
+Ви можете знайти спеціальний розділ з тканинами для світшотів та спортивних костюмів у вашому улюбленому магазині тканин. Якщо ж ні, просто вирушайте до відділу трикотажу і шукайте товстішу зручну трикотажну тканину.
 
-As far as fibers go, you can go all cotton, or opt for a poly or acryl cotton blend.
+Що стосується волокон, то ви можете вибрати повністю бавовняну тканину або суміш полі- чи акрилової бавовни.
 
-Make sure to pay attention to the inside of the fabric. Sweatshirt fabrics come in loopback and brushed back. If you want that OMG-it-feels-so-soft-on-my-skin feeling, go for brushed.
+Обов'язково зверніть увагу на виворіт тканини. Тканини для світшотів бувають з виворітною та ворсистою спинкою. Якщо ви хочете, щоб ваша шкіра була такою м'якою, як на долоні, обирайте матову.
 
 <Note>
 
-You don't have to use sweatshirt fabric. Other options are available, from fashion-forward neoprene (aka scuba) to a more eyebrow-rising choice like crushed velour (aka velvet).
+Не обов'язково використовувати тканину для світшотів. Доступні й інші варіанти, від модного неопрену (він же "акваланги") до більш епатажного вибору, як-от м'який велюр (він же оксамит).
 
-Or if you have given up on class, you could go for fleece.
+Або, якщо ви відмовилися від занять, ви можете обрати фліс.
 
 </Note>
