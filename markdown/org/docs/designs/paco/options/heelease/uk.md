@@ -1,11 +1,11 @@
 - - -
-title: "Heel ease"
+назва: "Легкість на п'ятах"
 - - -
 
-This controls the amount of ease at the instep, or heel.
+Це регулює ступінь легкості на підйомі або п'яті.
 
-Increase this to make it easier to get in and out of your pants.
+Збільште його, щоб було легше залазити і вилазити зі штанів.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](paco_heelease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](paco_heelease_sample.svg "Вплив цієї опції на шаблон")
