@@ -1,11 +1,11 @@
 - - -
-title: "Neckline drop"
+Назва: "Виріз декольте"
 - - -
 
-![Neckline drop](necklinedrop.svg)
+![Виріз декольте](necklinedrop.svg)
 
-This options allows you to lower your neckline below the default.
+Ця опція дозволяє опустити виріз нижче значення за замовчуванням.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_necklinedrop_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](wahid_necklinedrop_sample.svg "Вплив цієї опції на шаблон")
