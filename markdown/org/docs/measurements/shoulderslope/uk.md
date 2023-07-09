@@ -1,10 +1,10 @@
 ---
-title: Нахил плечей
+title: Нахил плеча
 ---
 
-The **shoulder slope** measurement is an indicator for the amount with which your shoulder slopes downward.
+**Нахил плеча** вказує на кут нахилу Вашого плеча відносно уявної горизонтальної лінії на рівні низу шиї та вимірюється в градусах.
 
-Щоб виміряти нахил плечей, потрібно визначити кут, під яким лінія плечей нахиляється вниз.
+Для зняття цієї мірки потрібно визначити кут, під яким лінія плеча нахиляється вниз.
 
 A good way to measure your shoulder slope is to take a a selfie and rotate it until your shoulder line is horizontal.
 
