@@ -1,13 +1,13 @@
 - - -
-title: "Leg reduction"
+Назва: "Скорочення ніг"
 - - -
 
-The amount to further reduce the stretch at the (upper) legs.
+На стільки, щоб ще більше зменшити розтягнення на (верхніх) ногах.
 
-> #### What's the point?
+> #### У чому сенс?
 > 
-> This option makes the legs fit more snugly than the rest of your swimming trunks to avoid gaping.
+> Цей варіант забезпечує більш щільне прилягання ніг, ніж решта плавок, щоб уникнути зяяння.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](shin_legreduction_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](shin_legreduction_sample.svg "Вплив цієї опції на шаблон")
