@@ -1,9 +1,9 @@
 - - -
-title: "Front pocket slant round"
+назва: "Передня кишеня коса кругла"
 - - -
 
-Controls how far from the end of the slant we start rounding into the outseam.
+Керує тим, як далеко від кінця скісної лінії ми починаємо заокруглення на виворітному шві.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_frontpocketslantround_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](charlie_frontpocketslantround_sample.svg "Вплив цієї опції на шаблон")
