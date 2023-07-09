@@ -1,9 +1,9 @@
 - - -
-title: "Front pocket slant bend"
+Назва: "Косий згин передньої кишені"
 - - -
 
-Controls the radius by which we round the pocket slant into the outseam.
+Керує радіусом, на який ми закруглюємо скіс кишені у виворітний шов.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_frontpocketslantbend_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](charlie_frontpocketslantbend_sample.svg "Вплив цієї опції на шаблон")
