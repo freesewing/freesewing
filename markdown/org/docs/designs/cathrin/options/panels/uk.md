@@ -1,18 +1,18 @@
 - - -
-title: "Number of panels"
+назва: "Кількість панелей"
 - - -
 
-![The panels option on Cathrin](./panels.svg)
+![Варіант панелей на Катрін](./panels.svg)
 
-This options determines how many panels will be used to make up the corset. You have the choice between:
+Ця опція визначає, скільки панелей буде використано для виготовлення корсета. У вас є вибір між ними:
 
-- 11 panels
-- 13 panels
+- 11 панелей
+- 13 панелей
 
-More panels is a bit more work, but also allows the difference between bust/waist/hips to be evened out over more darts, which may yield to better results.
+Більша кількість панелей - це трохи більше роботи, але також дозволяє вирівняти різницю між обхватом грудей/талії/стегон за допомогою більшої кількості виточок, що може дати кращі результати.
 
-> More curves = more panels
+> Більше кривих = більше панелей
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_panels_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](cathrin_panels_sample.svg "Вплив цієї опції на шаблон")
