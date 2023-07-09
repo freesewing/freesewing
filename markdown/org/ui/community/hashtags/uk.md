@@ -1,23 +1,23 @@
 ---
-title: Use of hashtags
+title: Використання хештегів
 ---
 
-On social media, use the pattern-specific tags when posting about our pattern.
+У соціальних мережах використовуйте теги, що стосуються нашого шаблону, коли публікуєте інформацію про нього.
 
-For example, for Simon use `#FreeSewingSimon`:
+Наприклад, для Simon використовуйте `#FreeSewingSimon`:
 
 <Hashtag tag='FreeSewingSimon' />
 
-For questions or help, use `#AskFreeSewing`:
+Для запитань або допомоги використовуйте `#AskFreeSewing`:
 
 <Hashtag tag='AskFreeSewing' />
 
-To show your support, or interact with the FreeSewing community in general, use `#WeAreFreeSewing`:
+Щоб висловити свою підтримку або взаємодіяти зі спільнотою FreeSewing загалом, використовуйте `#WeAreFreeSewing`:
 
 <Hashtag tag='WeAreFreeSewing' />
 
 <Tip>
 
-For extra impact, consider [including these images](/community/share/)
+Для більшого ефекту розгляньте можливість [включення цих зображень] (/community/share/)
 
 </Tip>
