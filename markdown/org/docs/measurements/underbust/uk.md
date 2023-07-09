@@ -2,8 +2,8 @@
 title: Underbust
 ---
 
-The **underbust** measurement is the circumference of your chest without taking your breasts into account.
+Вимірювання **обхвату грудей** - це обхват грудей без урахування грудей.
 
-To measure your **underbust**, wrap the tape measure around your chest just below your breasts, where your bra band sits.
+Щоб виміряти ваш **обхват**, оберніть рулетку навколо грудей трохи нижче грудей, там, де сидить бретелька бюстгальтера.
 
-If you don’t have breasts, this measurement does not apply to you. Just use your chest circumference.
+Якщо у вас немає грудей, це вимірювання вас не стосується. Просто використовуйте обхват грудей.
