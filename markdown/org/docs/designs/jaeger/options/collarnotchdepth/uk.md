@@ -1,11 +1,11 @@
 - - -
-title: "Collar notch depth"
+назва: "Глибина вирізу коміра"
 - - -
 
-![Collar notch depth](collarnotchdepth.svg)
+![Глибина вирізу на комірі](collarnotchdepth.svg)
 
-Depth of the collar notch.
+Глибина вирізу коміра.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_collarnotchdepth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_collarnotchdepth_sample.svg "Вплив цієї опції на шаблон")
