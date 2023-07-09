@@ -1,5 +1,5 @@
 - - -
-title: "Trayvon tie: Design Options"
+назва: "Краватка з тройону: Варіанти дизайну"
 - - -
 
 <PatternOptions pattern='trayvon' />
