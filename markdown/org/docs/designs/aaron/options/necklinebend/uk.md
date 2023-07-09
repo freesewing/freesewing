@@ -1,13 +1,13 @@
 - - -
-title: "Neckline shape"
+назва: "Форма декольте"
 - - -
 
-![The neckline shape option on Aaron](./necklinebend.svg)
+![Варіант форми вирізу горловини на Аароні](./necklinebend.svg)
 
-Determines the bend of the front of the neck opening.
+Визначає вигин передньої частини горловини.
 
-> Higher values bend the neck opening more, resulting in a more squarish neck opening.
+> Більш високі значення більше вигинають горловину, що призводить до більш квадратного отвору горловини.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_necklinebend_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](aaron_necklinebend_sample.svg "Вплив цієї опції на шаблон")
