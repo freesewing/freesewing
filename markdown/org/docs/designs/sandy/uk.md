@@ -1,5 +1,5 @@
 - - -
-title: "Sandy circle skirt"
+назва: "Пісочна спідниця-коло"
 - - -
 
 <PatternDocs pattern='sandy' />
