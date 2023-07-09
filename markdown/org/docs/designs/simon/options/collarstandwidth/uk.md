@@ -1,17 +1,17 @@
 - - -
-title: "Collar stand width"
+назва: "Ширина стійки коміра"
 - - -
 
-![Collarstand width](collarstandwidth.svg)
+![Ширина стійки для коміра](collarstandwidth.svg)
 
-The height of your collar stand.
+Висота стійки вашого комірця.
 
 <Note>
 
-This is the main parameter to change the overall height of your collar. This defaults to a modern relatively slim collar, but you can crank it up all the way to Karl Lagerfeld style.
+Це основний параметр для зміни загальної висоти коміра. За замовчуванням це сучасний відносно тонкий комір, але ви можете підняти його аж до стилю Карла Лагерфельда.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collarstandwidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_collarstandwidth_sample.svg "Вплив цієї опції на шаблон")
