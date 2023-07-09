@@ -1,23 +1,23 @@
 - - -
-title: "Benjamin bow tie: Fabric Options"
+"Метелик Бенджамін": "Метелик Бенджаміна: Варіанти тканин"
 - - -
 
-The bow ties you find in the store are typically make out of silk or some imitation silk poly. So it will come as no surprise that those are good options. Any type of fabric that you like the pattern or looks of can become a candidate for a bow tie. The only real limitation is that the bow tie will have to be turned inside out through a tube that is only 2cm across. With some thicker fabrics, this will be a difficult proposition.
+Краватки-метелики, які ви знайдете в магазині, зазвичай виготовлені з шовку або поліестеру, що імітує шовк. Тож не дивно, що це хороші варіанти. Будь-який тип тканини, який вам подобається візерунком або зовнішнім виглядом, може стати кандидатом на краватку-метелика. Єдиним реальним обмеженням є , що метелика доведеться вивертати навиворіт через трубку, яка має лише 2 см в діаметрі. З деякими товстими тканинами це буде складно зробити.
 
 Bow ties are more whimsical than normal ties, so having a fun pattern or loud colour is not as much of a problem as it would be with a regular tie.
 
-Silk and silk imitation is slippery and tricky to work with. This can be compensated for with a fusible interfacing.
+Шовк та імітація шовку слизькі та складні в роботі. Це можна компенсувати за допомогою легкоплавкого інтерфейсу.
 
-## Interfacing
+## Взаємодія
 
-Depending on the fabric you chose for your bow tie, you will probably need interfacing. Interfacing comes in two main types: fusible and sew-in.
+Залежно від тканини, яку ви обрали для краватки-метелика, вам, ймовірно, знадобиться інтерфейс. Інтерфейс буває двох основних типів: плавкий та вшивний.
 
-The fusible variety has some adhesive attached to one side that is activated with the heat of your iron. This attaches the interfacing to the fabric and the two can then be used as one. Fusible interfacing can be a great option if your fabric allows the heat required, and you use a quality interfacing. Some lesser quality interfacings can have the adhesive detach, and this shows as bubbles on the fabric surface later on in the life of your bow tie. Good quality interfacings and correctly following the guidelines for adhering the interfacing will not present these problems.
+У легкоплавких різновидів з одного боку прикріплений клей, який активується під дією тепла праски. Це прикріплює прокладку до тканини, після чого вони можуть бути використані як одне ціле. Плавкий проміжний шар може бути чудовим варіантом, якщо ваша тканина пропускає необхідне тепло, а ви використовуєте якісний проміжний шар. На деяких менш якісних матеріалах клей може відшаровуватися, і це проявляється у вигляді бульбашок на поверхні тканини пізніше, протягом усього терміну служби вашої краватки-метелика. Якісні інтерфейси та правильне дотримання вказівок щодо дотримання інтерфейсу не викличуть цих проблем.
 
-Sew-in interfacing is sew into place before the fabric pieces are used. You attach the interfacing to the fabric by sewing the two together inside the seam allowance. If you use a seam allowance of 6mm, you will sew the interfacing at 3mm. Anything may work as a sew-in interfacing, including an extra layer of the same fabric.
+Вшивні прокладки пришиваються перед тим, як використовувати шматки тканини. Ви прикріплюєте інтерфейс до тканини, зшиваючи їх разом всередині припусків на шви. Якщо ви використовуєте з припуском на шов 6 мм, ви прошиєте інтерфейс на 3 мм. В якості вшитого інтерфейсу може працювати що завгодно, в тому числі і додатковий шар тієї ж тканини.
 
-The key part of the interfacing is to give your bow tie the structure you like. You can have a bow tie that stands proud and crisp. Or one that droops a bit at the tips. This is all about your preference.
+Ключова частина інтерфейсу полягає в тому, щоб надати краватці-метелику ту структуру, яка вам до вподоби. Ви можете мати краватку-метелика, яка стоїть гордо і чітко. Або такий, що трохи звисає на кінчиках. Все залежить від ваших уподобань.
 
-It is good to experiment with the interfacing on a scrap piece of your fabric, specially with the fusible kind. You want to make sure you get the structure you like before committing it to your pattern pieces.
+Добре поекспериментувати з інтерфейсом на клаптику вашої тканини, особливо з , що легкоплавкий. Ви хочете переконатися, що отримали структуру, яка вам подобається, перед тим, як зафіксувати її на ваших деталях шаблону.
 
 Although the pattern calls for applying interfacing to all parts, if you have thick or stiff fabric, you may be able to only do one side, or no sides at all.
