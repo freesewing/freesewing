@@ -1,7 +1,7 @@
 - - -
-title: "Waralee wrap pants: Fabric Options"
+назва: "Штани з запахом Waralee: Варіанти тканин"
 - - -
 
-### Main Fabric
+### Основна тканина
 
-Wrap pants are a bit casual and perfect for warm weather. You can't go wrong with **linen** and **cotton** is a good option too. This is a type of wrap pants, which leaves the sides of your legs exposed at times. And as such, it is mostly worn in warmer weather, or inside. To get a good effect of the flowing of the legs, don't use very heavy materials. Good types of fabric are **linen**, and **linen blends**. These mostly have a nice drape and are cool. Heavy materials like denim are less useful so should be avoided.
+Штани з запахом - трохи повсякденні та ідеально підходять для теплої погоди. Ви не помилитеся з **лляною** і **бавовняною** теж хороший варіант. Це різновид штанів, що обтягують, які іноді залишають боки ваших ніг відкритими. Тому його носять переважно в теплу погоду або в приміщенні. Щоб отримати гарний ефект струмливості ніг, не використовуйте дуже важкі матеріали. Хорошими типами тканин є **лляні**, і **лляні суміші**. Здебільшого вони мають гарну драпіровку і прохолодні. Важкі матеріали, такі як джинсова тканина, менш корисні, тому їх слід уникати.
