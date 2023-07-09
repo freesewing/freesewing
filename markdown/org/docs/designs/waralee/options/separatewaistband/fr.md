@@ -1,7 +1,7 @@
 ---
-title: "Separate waist band"
+title: "Bande de taille séparée"
 ---
 
-This setting changes the way the waistband is constructed. Normally the waistband is just folded over, like a hem. Turning this option on will generate a separate waistband.
+Ce paramètre modifie la façon dont la ceinture est construite. Normally the waistband is just folded over, like a hem. L'activation de cette option génère une ceinture séparée.
 
-Mainly used for hiding the pockets in the waistband seam.
+Principalement utilisé pour cacher les poches dans la couture de la ceinture.
