@@ -1,19 +1,19 @@
 - - -
-title: "Leg width"
+назва: "Ширина ноги"
 - - -
 
-Controls the width of the legs.
+Регулює ширину ніжок.
 
 <Note>
 
-This pattern used to come in two variations. Theodore, and Theo, the latter having
-a slimmer cut.
+Раніше цей візерунок існував у двох варіаціях. Теодор і Тео, останній має
+стрункіший крій.
 
-Since FreeSewing v2.0 we've merged these into a single pattern and this option
-allows you to alter the leg width.
+Починаючи з FreeSewing v2.0, ми об'єднали їх в одну модель, і ця опція
+дозволяє змінювати ширину штанини.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](theo_legwidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](theo_legwidth_sample.svg "Вплив цієї опції на шаблон")
