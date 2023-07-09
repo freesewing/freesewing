@@ -1,15 +1,15 @@
 - - -
-title: "Simone shirt: Sewing Instructions"
+"Сорочка Сімони": "Сорочка Симона: Інструкція з пошиття"
 - - -
 
-### Step 1: Bust Darts
+### Крок 1: Дротики для бюста
 
-- Close the Front bust darts.
+- Закрийте виточки переду нагрудної частини.
 
-### Step 2: Follow Simon's Instructions
+### Крок 2: Дотримуйтесь інструкцій Саймона
 
 <Note>
 
-Simone is just our [Simon pattern](/designs/simon/) adapted for breasts so you can now just follow [Simon's instructions](/docs/patterns/simon/instructions) to finish your Simone :)
+Simone - це просто наша [викрійка Саймона](/designs/simon/), адаптована для грудей, тож тепер ви можете просто слідувати [інструкціям Саймона](/docs/patterns/simon/instructions), щоб закінчити свою Simone :)
 
 </Note>
