@@ -1,23 +1,23 @@
 - - -
-title: "Buttonhole placket style"
+назва: "Стиль петлиці з ґудзиками"
 - - -
 
-![Buttonhole placket style](buttonholeplacketstyle.svg)
+![Кокетка з петлями на ґудзиках](buttonholeplacketstyle.svg)
 
-Do you want classic buttonhole placket, or a seamless one (sometimes called French style)?
+Ви хочете класичну застібку на ґудзики або безшовну (іноді її називають французькою)?
 
 <Tip>
 
-Seamless is less work, and it looks great.
+Безшовний - це менше роботи, і він виглядає чудово.
 
 </Tip>
 
 <Note>
 
-As seamless is only possible on a _cut-on_ placket, this option is ignored if you choose a seperate buttonhole placket.
+Оскільки безшовний варіант можливий лише на _пришивній_ кокетці, ця опція ігнорується, якщо ви обираєте окрему кокетку з петлями.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_buttonholeplacketstyle_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_buttonholeplacketstyle_sample.svg "Вплив цієї опції на шаблон")
