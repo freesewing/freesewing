@@ -1,171 +1,171 @@
 - - -
-title: "Waralee wrap pants: Sewing Instructions"
+назва: "Штани з запахом Waralee: Інструкція з пошиття"
 - - -
 
 <Warning>
 
-##### The key to Waralee is the waist band
+##### Ключовим елементом Waralee є пояс
 
-In a way, Waralee is just a waist band with a long piece of fabric attached. The waist band needs to continue from the fabric into two strings of fabric that are used to tie the pants in the front and two in the back. These strings are not included in the pattern. Traditionally, they are of similar length. You can make longer ones for the front panel (the side that is a little shorter than the other, on the left in the illustrations below), to allow you to tie both sets in the front. I prefer this as it is easier to tie, and you don't have the bulk of the knot in the back.
+По суті, Waralee - це просто пояс з прикріпленим до нього довгим шматком тканини. Пояс потрібно продовжити з тканини в дві нитки, які використовуються для зав'язування штанів спереду і дві ззаду. Ці рядки не включені в шаблон. Традиційно вони мають однакову довжину. Ви можете зробити довші для передньої панелі (сторона, яка трохи коротша за іншу, зліва на ілюстраціях нижче), щоб можна було зав'язати обидва комплекти спереду. Я віддаю перевагу цьому варіанту, оскільки його легше зав'язувати, і основна частина вузла не припадає на спину.
 
 </Warning>
 
-### Step 1: Sew the pockets
+### Крок 1: Пришийте кишені
 
 <Note>
 
-##### Pockets are optional
+##### Кишені необов'язкові
 
-Traditionally, these types of pants do not have pockets. But I want to put my phone, keys and wallet somewhere. So I've included pockets in the pattern. You can decide for yourself if you would like them on your pants.
+Традиційно такі штани не мають кишень. Але я хочу кудись покласти телефон, ключі та гаманець. Тому я включила кишені у викрійку. Ви можете вирішити для себе, чи хочете ви бачити їх на своїх штанах.
 
-The illustrations in the next steps show the Waralee pants without pockets. Only the pocket placements from the pattern are shown, to help you orient yourself.
+На ілюстраціях у наступних кроках показані штани Waralee без кишень. На викрійці показано лише розташування кишень, щоб допомогти вам зорієнтуватися.
 
-##### If you do want pockets, make them first
+##### Якщо ви хочете кишені, зробіть їх спочатку
 
-If you're going to make the pockets, make them before putting one piece of fabric on the other. It's easier to work with the parts still separated.
+Якщо ви збираєтеся зробити кишені, зробіть їх до того, як накладати один шматок тканини на інший. Легше працювати з розділеними частинами.
 
 </Note>
 
-Both sets of pockets on Waralee are single welt pockets. These use a single piece of fabric to create a pocket opening, but are otherwise very similar to the double welt pockets shown here: [Double welt pockets](https://freesewing.org/docs/sewing/double-welt-pockets).
+Обидва набори кишень на Waralee мають одинарні прорізні кишені. Вони використовують один шматок тканини для створення кишенькового отвору, але в іншому дуже схожі на кишені з подвійним швом, показані тут: [Кишені з подвійним швом](https://freesewing.org/docs/sewing/double-welt-pockets).
 
-We'll start with the front pockets.
-- Start with all the parts, and mark the location of the pocket on the right side of the fabric.
-- Mark the pocket opening on one of the facing pieces too. This time on the wrong side of the fabric.
-- Place the facing on the fabric, right sides together. Align the corners of the pocket openings, and pin in place.
+Почнемо з передніх кишень.
+- Почніть з усіх деталей і позначте місце розташування кишені на правій стороні тканини.
+- Розмітьте отвір кишені також на одній з лицьових частин. Цього разу з виворітного боку тканини.
+- Покладіть облицювання на тканину лицьовими сторонами разом. Вирівняйте кути отворів кишень і приколіть їх.
 
-Pocket lining
-- Mark the pocket opening on your pocket lining. It should be just inside the seam allowance.
-- Align the pocket openings up on all fabric pieces, and line your pocket lining top up with the waistband. Pin or baste in place.
+Підкладка для кишень
+- Позначте отвір кишені на підкладці. Він повинен бути якраз всередині припуску на шов.
+- Вирівняйте отвори кишень на всіх клаптиках тканини і накладіть підкладку кишень зверху на пояс. Закріпіть шпилькою або змастіть пастою.
 
-Pocket opening
-- Using small stitches, sew the long sides of the pocket openings, catching fabric, facing, and pocket lining. Do not sew past the ends of the pocket opening.
-- Cut a slit directly between the two lines of stitching. Just before the end, split each end of the cut, snipping into each corner of the pocket opening (but not past). You should have a small V at each end of the cut.
-- Press the seams open.
-- Now push everything through the opening to the other side. Lay everything out nicely with the pocket opening open. Press the pocket opening.
+Відкриття кишені
+- Дрібними стібками зшийте довгі сторони отворів кишень, прихоплюючи тканину, обшивку і підкладку кишень. Не прошивайте кінці отвору кишені.
+- Зробіть розріз безпосередньо між двома лініями строчки. Перед самим кінцем розщепіть кожен кінець відрізу, просунувши його в кожен кут отвору кишені (але не повз нього). На кожному кінці розрізу має бути маленька V-подібна риска.
+- Розпрасуйте шви.
+- Тепер проштовхніть все через отвір на інший бік. Викладіть все красиво, відкривши кишеню. Натисніть на отвір кишені.
 
-Constructing the welt
-- Turn the garment over, and press the bottom edge of the pocket facing under. Later, this will yield a nice, clean edgestitch.
-- Next, flip the pocket facing up, so that it covers the pocket opening. Then, fold back just enough of the facing to exactly cover the entire pocket opening. Press, and pin in place.
+Побудова шва
+- Переверніть виріб і притисніть нижній край кишені до нижньої сторони. Пізніше це дасть гарний, чистий крайовий стібок.
+- Потім переверніть кишеню лицьовою стороною догори так, щоб вона закрила отвір кишені. Потім відігніть обшивку так, щоб вона точно закривала весь отвір кишені. Натисніть і закріпіть на місці.
 
-Sewing the pocket opening in place
-- Turn the whole thing right side up, then fold back the fabric on one short side of the pocket opening, revealing a little triangle cutout and your pocket lining.
-- Sew the short edge of the pocket opening, just outside of your markings. This should secure the V-shaped cutout bits to the lining. Once you feel confident everything will look good from the right side, restitch this line a few times to secure.
-- Press.
-- To make things nice and tidy, you'll also stitch the bottom edge of the pocket facing to the pocket lining at this point. (This is why we pressed the very edge under earlier.)
+Вшивання отвору кишені на місце
+- Виверніть виріб лицьовим боком догори, а потім відверніть тканину з одного короткого боку отвору кишені, відкриваючи невеликий трикутний виріз і підкладку кишені.
+- Зшийте короткий край отвору кишені, трохи далі від розмітки. Це повинно закріпити V-подібні вирізи на підкладці. Коли ви будете впевнені, що з правого боку все буде виглядати добре, прострочіть цю строчку ще кілька разів, щоб закріпити її.
+- Преса.
+- Щоб все виглядало охайно, на цьому етапі ви також пришиваєте нижній край кишені лицьовим боком до підкладки. (Ось чому ми притиснули самий край раніше).
 
-Finishing the pocket
-- Take your second pocket facing, and press all edges under except for one of the longer edges.
-- Lay this facing over the pocket opening, right sides together and raw edge aligned with the raw edge of the pocket lining.
-- Now, fold your pocket lining over, aligning all the edges of the pocket.
-- Pin or clip the second pocket facing to the pocket lining along the raw edges. Then flip the pocket lining back, and pin the entire edge of the facing to the pocket lining.
-- Edgestitch the facing to the pocket fabric. This will sit behind the pocket opening when everything is assembled, so that if your pocket gaps open, your fashion fabric will show in the gap.
-- Flip the pocket fabric back, aligning edges, and pin all sides of the pocket. Close the pocket as you normally do. You can use a french seam, a serger, or another method.
+Обробка кишені
+- Візьміть другу кишеню лицьовою стороною до себе і притисніть усі краї, окрім одного з довших країв.
+- Накладіть цю обшивку на отвір кишені лицьовим боком до лицьового боку і сумістіть з лицьовим боком підкладки кишені.
+- Тепер складіть підкладку кишені, вирівнявши всі краї кишені.
+- Другу кишеню приколіть шпильками або скріпіть вздовж необроблених країв лицьовим боком до підкладки кишені. Потім відверніть підкладку кишені назад і приколіть весь край обшивки до підкладки кишені.
+- Пришийте обшивку до тканини кишені. Коли все буде зібрано, вона буде знаходитися позаду отвору кишені, так що якщо ваші кишенькові прорізи відкриються, ваша модна тканина буде виднітися в прорізі.
+- Відверніть тканину кишені назад, вирівнявши краї, і приколіть з усіх боків кишені. Закрийте кишеню, як ви це зазвичай робите. Ви можете використовувати французький шов, серпянку або інший метод.
 
-Making everything clean and tidy
-- Flip the whole piece over so you're looking at the right side.
-- Fold back the main fabric, so you can see the little triangles on the short edge of the pocket opening.
-- Sew another line, now through all layers. You should be able to see the edge stitching line of the first facing. Stitch all the way to this line, which finishes the facing on the inside of the pocket. You want to be really close to the fold with this stitch line.
-- Now fold the fabric back on the long side of the pocket opening, where the pocket sides were stitches together. You'll see the initial stitch line of the pocket opening. Make sure all the layers of fabric are laying nicely, and stitch over this stitch line once again, now through all layers. This secures this side of the pocket to the garment fabric.
-- Flip over, press well, and admire your work.
+Зробити все чистим і акуратним
+- Переверніть весь шматок так, щоб ви дивилися на правий бік.
+- Відверніть основну тканину так, щоб ви могли бачити маленькі трикутники на короткому краю отвору кишені.
+- Прошийте ще одну строчку, тепер через усі шари. Ви повинні бачити лінію зшивання краю першого лицьового боку. Прострочіть до цієї лінії, яка завершує обметування внутрішньої сторони кишені. Цією лінією стібка ви хочете бути дуже близько до згину.
+- Тепер відверніть тканину назад по довгій стороні отвору кишені, де були зшиті бокові сторони кишені. Ви побачите початкову лінію стібка отвору кишені. Переконайтеся, що всі шари тканини лежать рівно, і прострочіть по цій лінії ще раз, тепер через усі шари. Це закріплює цей бік кишені на тканині одягу.
+- Переверніть, добре притисніть і милуйтеся своєю роботою.
 
 <Note>
 
-I included placements for the front pockets that will be hidden by the flaps in the front. But they will still be easily accessible to put your phone or keys in. These are single welt pockets. The ones in the front are at an angle and the ones in the back are horizontally oriented. The pocket templates should allow for enough fabric to attach the pocket to the waistband. If you want particularly deep pockets, please adjust accordingly.
+Я передбачив місця для передніх кишень, які будуть приховані клапанами спереду. Але вони все одно будуть легко доступні, щоб покласти туди телефон або ключі. Це кишені з одним швом. Ті, що спереду, розташовані під кутом, а ті, що ззаду, орієнтовані горизонтально. Шаблони кишень повинні мати достатньо тканини, щоб прикріпити кишеню до поясу. Якщо ви хочете особливо глибокі кишені, будь ласка, відрегулюйте їх відповідно.
 
 </Note>
 
-Constructing the back pockets
-- The back pockets are also single welt pockets, but the pocket opening is horizontal, rather than at an angle. This means they hew much closer to the instructions for [double welt pockets](https://freesewing.org/docs/sewing/double-welt-pockets).
-- Follow the double welt instructions, modifying the opening to have a single welt, rather than a double welt.
+Конструювання задніх кишень
+- Задні кишені також одношовні, але отвір кишені розташований горизонтально, а не під кутом. Це означає, що вони набагато ближчі до інструкцій для [кишень з подвійним швом](https://freesewing.org/docs/sewing/double-welt-pockets).
+- Дотримуйтесь інструкцій щодо подвійного шва, змінивши отвір на одинарний, а не на подвійний шов.
 
-Congratulations! Your pockets are finished!
+Вітаю! З кишенями покінчено!
 
-### Step 2: Hem the sides and bottom
+### Крок 2: Підшийте боки та низ
 
-![Hem the sides and bottom](waralee-hem-sides-and-bottom.png)
+![Підшийте боки і низ](waralee-hem-sides-and-bottom.png)
 
-- Hem the sides
-- Hem the bottom.
+- Підшийте боки
+- Підшийте низ.
 
 <Note>
 
-You can use whatever method works best for you. In the version I first made I just serged the sides, folded them back and top stitched them, then did the same for the bottom. I did this to keep the bulk of the fabric to a minimum and allow for a better drape. What you do should depend on the type of fabric you're using.
+Ви можете використовувати будь-який метод, який найкраще підходить для вас. У першій версії, яку я зробила, я просто прострочила боки, склала їх назад і зшила зверху, а потім зробила те ж саме з низом. Я зробила це, щоб звести об'єм тканини до мінімуму і забезпечити кращу драпіровку. Ваші дії повинні залежати від типу тканини, яку ви використовуєте.
 
 </Note>
 
-### Step 3: Sew the two pants parts together at the crotch
+### Крок 3: Зшийте дві частини штанів разом в області промежини
 
-![Lay the two parts on top of one another with good sides together. Sew the crotch seam](waralee-crotch-seam-no-pockets.png)
+![Покладіть обидві частини одна на одну лицьовими сторонами разом. Зшийте паховий шов](waralee-crotch-seam-no-pockets.png)
 
-Now you get to sew the two pants parts together.
+Тепер потрібно зшити дві частини штанів разом.
 
-- Lay the two pants parts on top of one another with _good sides together_ and sew the seam along the cutout.
-- _Finish_ this seam and press it.
+- Накладіть дві деталі штанів одна на одну _лицьовими сторонами разом_ і прошийте шов вздовж вирізу.
+- _Виконайте_ цей шов і припрасуйте.
 
-### Step 4: Prepare the four strings
+### Крок 4: Підготуйте чотири струни
 
-The strings are just long tubes of fabric.
+Струни - це просто довгі трубки з тканини.
 
-- Take a quarter of your waist measurement. Add that number to 40cm (17”). Add your seam allowance. This is the length of each string.
-- Cut out four strips of fabric that are that long and 5cm (2”) wide.
+- Візьміть чверть обхвату талії. Додайте це число до 40 см (17"). Додайте припуски на шви. Це довжина кожного рядка.
+- Виріжте чотири смужки тканини такої довжини і шириною 5 см (2 дюйми).
 
 <Tip>
 
-For example, if my waist circumference is 84.6cm: 84.6cm divided by 4 is 21.2cm. 21.2cm plus 40cm is 61.2cm. 61.2cm plus my seam allowance of 1cm is 62.2cm. I will cut four strips of fabric that are 62.2cm by 5cm.
+Наприклад, якщо мій обхват талії 84,6 см: 84,6 см розділити на 4 - 21,2 см. 21,2 см плюс 40 см - 61,2 см. 61,2 см плюс припуск на шви в 1 см - 62,2 см. Я вирізаю чотири смужки тканини розміром 62,2 см на 5 см.
 
 </Tip>
 
 <Note>
 
-##### You can lengthen the front ties
+##### Ви можете подовжити передні зав'язки
 
-Optionally, to make the front ties longer, extend them by your quarter waist measurement.
+За бажанням, щоб зробити передні зав'язки довшими, подовжте їх на чверть обхвату талії.
 
-When generating your pattern, one of the style options is called “Waist Band”. The strings, when folded, should have the same width as you specified for that option, 2.5cm (1") by default.
+При створенні викрійки один з варіантів стилю називається "Пояс". Складені струни повинні мати ту саму ширину, яку ви вказали для цієї опції, 2,5 см (1") за замовчуванням.
 
-The extra 40cm (17") of length is to make the knot.
+Додаткові 40 см (17") довжини потрібні для того, щоб зробити вузол.
 
-If your material is delicate or flimsy, you can add some interfacing to this to give it strength.
+Якщо ваш матеріал делікатний або крихкий, ви можете додати до нього прокладку, щоб надати йому міцності.
 
 </Note>
 
-- Fold them in half along the long side, _good sides together_.
-- Stitch the long side and one of the short sides,
-- Turn the tie right side out.
+- Складіть їх навпіл уздовж довгої сторони, _гарними сторонами разом_.
+- Зшийте довгу сторону і одну з коротких сторін,
+- Виверніть краватку правим боком назовні.
 
 <Tip>
 
-##### Turning tubes of fabric right side out can be difficult
+##### Вивернути трубочки тканини назовні може бути складно
 
-This can be made easier by taking a piece of twine longer than the strips. Lay that between the right sides, along the fold. Make sure you catch this while sewing the short side. You can use this to pull the end through the tube you've created. When you're done, you can cut it off. Having a long, skinny stick or a loop turner can help too with this.
+Це можна полегшити, взявши шматок шпагату, довший за смужки. Покладіть його між правими сторонами, вздовж згину. Переконайтеся, що ви зафіксували це під час зшивання короткого боку. За допомогою цього ви можете протягнути кінець через створену вами трубку. Коли закінчите, можете відрізати. Довга тонка палиця або токарний верстат також можуть допомогти в цьому.
 
 </Tip>
 
-### Step 5: Sew the waist band
+### Крок 5: Пришийте пояс
 
-![Lay the two parts on top of one another with good sides together. Sew the crotch seam](waralee-waist-band-no-pockets.png)
+![Покладіть обидві частини одна на одну лицьовими сторонами разом. Зшийте паховий шов](waralee-waist-band-no-pockets.png)
 
-Now it is time to sew the waist band.
+Тепер настав час пришити пояс.
 
-- If your fabric is delicate, add interfacing to the wrong side of the pants above the waist band line. (red)
-- Fold the seam allowance in, and then fold along the waist band line. (red)
-- Insert one of the strings you made in the previous step on each side.
-- Sew along the waist band line, and add some additional stitching to make sure those strings are attached well. (blue)
+- Якщо ваша тканина делікатна, додайте прокладку на виворітний бік штанів над лінією пояса. (червоний)
+- Припуски швів підверніть всередину, а потім складіть по лінії пояса. (червоний)
+- Вставте по одній нитці, яку ви зробили на попередньому кроці, з обох боків.
+- Прошийте по лінії пояса і зробіть кілька додаткових стібків, щоб переконатися, що нитки добре закріплені. (синій)
 
 <Warning>
 
-##### Secure the strings well
+##### Добре закріпіть шнурки
 
-The strings keep your pants up, so having that stitching fail will result in awkward moments.
+Шнурки утримують ваші штани, тому якщо шов не буде закріплений, це призведе до незручних моментів.
 
 </Warning>
 
-### Step 6: Wear your pants
+### Крок 6: Одягаємо штани
 
-Press your pants, and try them on!
+Притисніть штани і приміряйте їх!
 
-Hold the front side against your belly and wrap both strings around you and tie in the back (or, if you have long strings, wrap them all the way around you and tie in the front). Then hand the back side through your legs to yourself and tie the other strings in the front.
+Притисніть лицьову сторону до живота, оберніть обидві нитки навколо себе і зав'яжіть ззаду (або, якщо у вас довгі нитки, оберніть їх навколо себе і зав'яжіть спереду). Потім протягніть задню сторону через ноги до себе і зав'яжіть інші нитки спереду.
 
-Here is an article demonstrating how to tie wrap pants: [How to Tie Wrap Pants](https://www.wikihow.com/Tie-Wrap-Pants)
+Ось стаття, що демонструє, як зав'язати штани-обгортки: [Як зав'язати штани-обгортки](https://www.wikihow.com/Tie-Wrap-Pants)
 
-If you get stuck, or have additional questions, you can always reach out to [other FreeSewers](https://discord.freesewing.org/).
+Якщо ви застрягли або маєте додаткові запитання, ви завжди можете зв'язатися з [або іншими FreeSewer'ами](https://discord.freesewing.org/).
