@@ -1,18 +1,18 @@
 - - -
-title: "Cornelius cycling breeches: What You Need"
+"Корнеліус велосипедні штани": "Велосипедні бриджі Cornelius: Що вам потрібно"
 - - -
 
-To make Cornelius, you will need the following:
+Щоб зробити Корнеліуса, вам знадобиться наступне:
 
-- Basic sewing supplies
-- About 2 metres (2.2 yards) of a suitable fabric ([see Cornelius Fabric options](/docs/patterns/cornelius/fabric/))
-- About 0.5 metres (0.6 yards) of lining fabric ([see Cornelius Fabric options](/docs/patterns/cornelius/fabric/))
-- Interfacing for the waistband ([see Cornelius Fabric options](/docs/patterns/cornelius/fabric/))
-- A zip or 3 buttons for the fly
-- 3 or 7 Buttons for waistband and leg bands
+- Основні матеріали для шиття
+- Приблизно 2 метри (2,2 ярда) відповідної тканини ([див. варіанти тканини Cornelius](/docs/patterns/cornelius/fabric/))
+- Приблизно 0,5 метра (0,6 ярдів) підкладкової тканини ([див. варіанти тканини Cornelius](/docs/patterns/cornelius/fabric/))
+- Інтерфейс для поясу ([див. варіанти тканини Cornelius](/docs/patterns/cornelius/fabric/))
+- Застібка-блискавка або 3 кнопки на блискавці
+- 3 або 7 ґудзиків для пояса та штанин
 
 <Note>
 
-The number of buttons you need are dependent on the cuff style you are using. **Keystone** requires 7 in total whereas **Traditional** and **Elegant** require 3 in total. You may also want to use smaller buttons for the leg bands compared to the waistband but this is up to you.
+Кількість необхідних кнопок залежить від стилю манжети, яку ви використовуєте. Для **Keystone** потрібно 7, тоді як для **Traditional** і **Elegant** - 3. Можливо, ви також захочете використовувати менші ґудзики для штанин порівняно з поясом, але це вже на ваш розсуд.
 
 </Note>
