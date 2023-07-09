@@ -1,5 +1,5 @@
 - - -
-title: "Bent body Block"
+назва: "Блок зігнутого тіла"
 - - -
 
 <PatternDocs pattern='bent' />
