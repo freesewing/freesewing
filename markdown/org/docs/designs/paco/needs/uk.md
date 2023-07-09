@@ -1,12 +1,12 @@
 - - -
-title: "Paco pants: What You Need"
+"Штани Пако": "Штани Пако: Що вам потрібно"
 - - -
 
-To make Paco, you will need the following:
+Щоб зробити Пако, вам знадобиться наступне:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 1.25 meters (1.4 yards) (depending on your height) of a suitable fabric ([see Fabric options](/docs/patterns/paco/fabric))
-- 30cm (12") of lining for the pocket bags
-- A little bit of interfacing for the pocket welts (only needed if you opted for back pockets)
-- A drawstring and two eyelets (optional)
-- Enough wide flat elastic for your waist and cuffs
+- [Основні матеріали для шиття](/docs/sewing/basic-sewing-supplies)
+- Приблизно 1,25 метра (1,4 ярда) (залежно від вашого зросту) відповідної тканини ([див. варіанти тканини](/docs/patterns/paco/fabric))
+- 30 см (12") підкладки для кишенькових сумок
+- Невеликий інтерфейс для кишенькових швів (потрібен лише у випадку, якщо ви обрали задні кишені)
+- Шнурок та два люверси (за бажанням)
+- Достатньо широка плоска резинка для талії та манжетів
