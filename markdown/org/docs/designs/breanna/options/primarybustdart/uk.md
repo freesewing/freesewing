@@ -1,9 +1,9 @@
 - - -
-title: "Bust dart"
+Назва: "Дротик для бюста"
 - - -
 
-Where to place the primary bust dart to shape the chest.
+Де розмістити основну виточку для формування грудей.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_primarybustdart_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](breanna_primarybustdart_sample.svg "Вплив цієї опції на шаблон")
