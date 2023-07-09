@@ -73,7 +73,14 @@ const NavIcons = ({ setView, setDense, dense, view }) => {
         extraClasses="hidden lg:flex text-primary bg-neutral hover:bg-primary hover:text-neutral"
       >
         \\
-        {dense ? <RightIcon stroke={4} /> : <LeftIcon stroke={4} />}
+        {dense ? (
+          <RightIcon
+            className={`${iconSize} group-hover:animate-[bounceright_1s_infinite] animate-[bounceright_1s_5]`}
+            stroke={4}
+          />
+        ) : (
+          <LeftIcon className={`${iconSize} animate-bounce-right`} stroke={4} />
+        )}
       </NavButton>
       <NavButton
         onClick={() => setView('draft')}
