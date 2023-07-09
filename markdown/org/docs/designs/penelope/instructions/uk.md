@@ -1,130 +1,130 @@
 - - -
-title: "Penelope pencil skirt: Sewing Instructions"
+"Спідниця-олівець Пелагея": "Спідниця-олівець Пенелопа: Інструкція з пошиття"
 - - -
 
 <Note>
 
-Due to the different styles and configurations of Penelope, we will first go over some tips of the different elements that make up a pencil skirt.
+Через різні фасони і конфігурації Пенелопи, ми спочатку розглянемо деякі поради щодо різних елементів, з яких складається спідниця-олівець.
 
 </Note>
 
-## Notes and tips
+## Примітки та поради
 
-### Lining
+### Підкладка
 
-Pencil skirts are tight. This limits your movement quite a bit. More so, when you try to sit down, the skirt may try to pull itself off your waist, or, when you get back up, stay quite high on your bum. Lining the skirt will make it move a lot easier around your curves, and thereby make it easier for you to move.
+Спідниці-олівці вузькі. Це досить сильно обмежує ваші рухи. Більше того, коли ви намагаєтеся сісти, спідниця може спробувати стягнутися з талії, або, коли ви назад, залишитися досить високо на сідницях. Підкладка на спідниці дозволить їй набагато легше рухатися навколо ваших вигинів, і тим самим полегшить вам рух.
 
-Adding lining can be done by creating a slightly shorter front and back piece, that has some extra fabric in the middle. The extra fabric makes it easier for the lining to move. One inch for each of the front and back pieces is enough. You can either make a box pleat in the front and back, or add the extra fabric where the darts are. You do not need to sew darts in the lining fabric. Just a pleat at the dart position will be fine.
+Додати підкладку можна, зробивши трохи коротшу передню і задню частину, щоб трохи додаткової тканини посередині. Додаткова тканина полегшує рух підкладки . Достатньо по одному дюйму для кожної передньої і задньої частини. Ви можете або зробити коробчаті складки спереду і ззаду, або додати додаткову тканину там, де є виточки. Не потрібно вшивати виточки в підкладкову тканину. Достатньо лише складки на місці виточки .
 
-### Waistband
+### Пояс
 
-A waistband is optional on Penelope. If you omit it, there will be quite some stress on the top of the zipper. Make sure your zipper is up to the task. An invisible zipper might not be the best option then, since they can't always take that much strain.
+Пояс на Пенелопі не є обов'язковим. Якщо ви її опустите, то на верхній частині блискавки буде досить сильне напруження . Переконайтеся, що ваша застібка-блискавка справляється з цим завданням. Невидима застібка-блискавка може бути не найкращим варіантом, оскільки вона не завжди може витримати таке навантаження.
 
-### Zipper
+### Застібка-блискавка
 
-Without the zipper it will be impossible to get in and out of the skirt. So it should be at least the length from your waist to the largest part of your bum. Longer will make it easier to put the skirt on and off. Don't use one that's too long, because the part of the seam where the zipper is behaves differently than the part without it, and you want to try to make it invisible also in movement.
+Без застібки-блискавки неможливо буде влізти і вилізти зі спідниці. Тож вона повинна довжиною щонайменше від талії до найбільшої частини сідниць. Довший полегшить надягання та знімання спідниці. Не використовуйте занадто довгу, тому що частина шва, де застібка-блискавка, поводиться інакше, ніж частина без неї, і ви хочете спробувати зробити її непомітною також і в русі.
 
-Traditionally, an invisible zipper is used in a pencil skirt but a regular zipper will work just as well. You can even use a zipper that constrast your fabric if the fancy takes you. Choose what works for you and the style you're going for. Be creative (or not) it is entirely up to you! All though if your fabric is on the heavier side you might want to opt for a different closure entirely.
+Традиційно в спідниці-олівець використовується невидима застібка-блискавка, але звичайна застібка-блискавка підійде так само добре. Ви навіть можете використати блискавку, яка контрастує з тканиною, якщо вам заманеться. Обирайте те, що підходить вам і стилю, до якого ви прагнете. Бути креативним (чи ні) - це повністю залежить від вас! Хоча, якщо ваша тканина важча, можливо, ви захочете вибрати іншу застібку.
 
-### Vent
+### Вентиляційний отвір
 
-A vent in the back is optional with Penelope. It will allow you to walk a lot easier than if you make the skirt without it. The vent also influences where the zipper will be located. If you choose to have no vent, the default zipper location is on the side seam, and the back will be cut-on-fold. With the vent, there has to be a seam in the back piece, and the zipper will be located on that seam.
+Вентиляційний отвір ззаду є опціональним у моделі Penelope. Це дозволить вам ходити набагато легше , ніж якщо ви зробите спідницю без неї. Вентиляційний отвір також впливає на те, де буде розташована застібка-блискавка . Якщо ви вирішили не мати вентиляційного отвору, застібка-блискавка за замовчуванням розташовується в боковому шві , а спинка буде розрізана на згині. З вентиляційним отвором на задній частині повинен бути шов, і блискавка буде розташована на цьому шві.
 
-### Darts
+### Дартс
 
-Darts are used to compensate for the difference between your waist and seat measurements. Depending on this difference, there can be two darts, one dart, or no darts at all. More darts make for a potentially better fit. But if the amount of fabric that the dart will take in becomes too small, the number of darts will be reduced. Otherwise it would be very difficult to sew the darts, and they would probably become rather unsightly. Some of the difference will be taken in by the side seam, and if the difference is small, no darts will be included in the front and back pieces.
+Виточки використовуються для компенсації різниці між обхватами талії і сидіння. Залежно від цієї різниці, може бути дві виточки, одна виточка або взагалі без виточок. Більша кількість виточок забезпечує потенційно кращу посадку. Але якщо кількість тканини, яку буде вбирати виточка, стає занадто малою, кількість виточок зменшується. Інакше було б дуже складно зашити виточки, і вони, ймовірно, стали б досить непривабливими. Частина різниці буде врахована в боковому шві, а якщо різниця невелика, то виточки на передній і задній частинах не будуть включені.
 
-## Construction
+## Будівництво
 
 <Warning>
 
-We're not going to go into a full explanation on how to create all the individual details
-that make up a pencil skirt. These instructions assume that you know how to sew a dart, insert an invisible
-zipper, make a vent, etc. If not, there are numerous excellent articles available on the
-web, both in writen form, and on video. If you do get stuck, you can always reach out to
-[other FreeSewers](https://discord.freesewing.org/) in our discord.
+Ми не будемо детально пояснювати, як створювати всі окремі деталі
+, з яких складається спідниця-олівець. Ці інструкції припускають, що ви знаєте, як вшити виточку, вставити невидиму
+блискавку, зробити вентиляційний отвір і т.д. Якщо ні, то на сайті
+можна знайти безліч чудових статей, як у письмовому вигляді, так і на відео. Якщо ви застрягли, ви завжди можете звернутися до
+[інші FreeSewer](https://discord.freesewing.org/) у нашому дискорді.
 
 </Warning>
 
-### Step 1: Darts
+### Крок 1: Дартс
 
-- Sew all the darts.
-- Press the darts towards the back.
-  - For the back piece(s), that means you press the darts towards eachother.
-  - For the front piece, that means you press the darts towards the side seams.
+- Зшийте всі виточки.
+- Притисніть виточки до спинки.
+  - Для задньої частини це означає, що виточки притискаються одна до одної.
+  - Для передньої частини це означає, що виточки притискаються до бокових швів.
 
-### Step 2: The zipper
+### Крок 2: Застібка-блискавка
 
-- With _good sides together_, sew the seam that has the zipper leaving the top open for the zipper.
-- Insert the zipper into the seam following the procedure that is appropriate for the type of zipper you're using.
+- Склавши _лицьовими сторонами разом_, зшийте шов, що має застібку-блискавку, залишивши верхню частину відкритою для застібки-блискавки.
+- Вставте застібку-блискавку в шов, дотримуючись процедури, яка відповідає типу застібки-блискавки, яку ви використовуєте.
 
 <Note>
 
-If using a different closure, construct it during this step.
+Якщо ви використовуєте інше закриття, створіть його на цьому кроці.
 
 </Note>
 
-### Step 3: Sew the side seams
+### Крок 3: Зшийте бічні шви
 
-- With _good sides together_, sew up both the side seams.
-- With _good sides together_, if not the zipper seam, sew the centre back seam either completely or down to the vent if included.
+- Склавши _лицьовими сторонами разом_, зшийте обидва бокові шви.
+- Склавши _лицьовими сторонами разом_, якщо не застібку-блискавку, зшийте центральний шов спинки або повністю, або до вентиляційного отвору, якщо він є.
 
-### Step 4: The lining (Optional)
+### Крок 4: Підкладка (необов'язково)
 
-You can skip this step if not making a lining.
+Ви можете пропустити цей крок, якщо не робите підкладку.
 
-- Follow Step 1 - 4 to construct the lining with the following changes:
-  - Adjust the darts to compensate for the extra 'ease' in the lining pieces.
-  - Do not include the zipper but leave the opening in the zipper seam.
-- Attach the lining to the body in your prefered way. You will need to construct the vent during this and connect the lining to the zipper.
+- Виконайте кроки 1 - 4, щоб побудувати підкладку з наступними змінами:
+  - Відрегулюйте виточки, щоб компенсувати додаткову "легкість" підкладки.
+  - Не застібайте блискавку, але залиште отвір у шві застібки-блискавки.
+- Прикріпіть підкладку до тіла у зручний для вас спосіб. Під час цього вам потрібно буде зробити вентиляційний отвір і з'єднати підкладку із застібкою-блискавкою.
 
 <Note>
 
-How to distribute the extra 'ease' is up to you. You can either add it to the darts by increasing them. or you can add another dart or box pleat in the middle.
+Як розподілити додаткову "легкість" - вирішувати вам. Ви можете додати його до виточок, збільшивши їх. або можна додати ще одну виточку чи коробчату складку посередині.
 
 </Note>
 
 <Warning>
 
-If you prefer to insert the zipper with the main and lining fabric as one, you will need to omit inserting the zipper until this step.
+Якщо ви віддаєте перевагу вшиванню застібки-блискавки разом з основною і підкладковою тканиною, вам потрібно пропустити цей крок.
 
 </Warning>
 
-### Step 5: The waistband
+### Крок 5: Пояс
 
-- Face lengthwise half of the waistband.
-- Press a fold the waistband in half lengthwise.
-- With _good sides together_ sew the face half of the waistband to the top of the skirt. Part of this waistband should overhang the zipper seam.
-- Press the waistband up and away from the skirt.
-- Press the remaining waistband seam allowances to the inside of the waistband.
-- Fold and press the waistband to the inside along fold line.
-- _Stitch in the ditch_ to secure the waistband.
-- _Slipstitch_ or _Whipstitch_ the gap in the waistband that goes over the zipper seam
-- Construct your preferred choice of closure where the waistband overlaps.
+- Обличчям до половини пояса.
+- Складіть пояс навпіл уздовж.
+- Лицьовими боками _разом_ пришийте лицьову половинку пояса до верхньої частини спідниці. Частина цього пояса повинна звисати над швом застібки-блискавки.
+- Притисніть пояс до спідниці і відведіть від неї.
+- Припуски шва пришивання пояса припрасувати до внутрішньої сторони пояса.
+- Складіть і притисніть пояс до внутрішньої сторони по лінії згину.
+- _Прострочіть у кюветі_ , щоб закріпити пояс.
+- _Сліп-стіч_ або _Хлистик_ проміжок на поясі, який проходить над швом застібки-блискавки
+- Сконструюйте бажаний варіант застібки там, де пояс перекривається.
 
 <Note>
 
-Alternatively you can _Edgestitch_ the waistband in place which will admit the need to hand-stitch the gap closed but this will leave visible stitching.  
-The closure can be a button and buttonhole, snaps or simple dress hooks. It's really up to you.
+Крім того, ви можете вшити пояс на місці, що дозволить зашити розрив вручну, але при цьому залишиться видимий шов.  
+Застібка може бути на ґудзиках і петельках, застібках або простих сукняних гачках. Це дійсно залежить від вас.
 
 </Note>
 
-### Step 6: The hem and vents
+### Крок 6: Підгин і вентиляційні отвори
 
-This step is only needed if you have not lined your skirt as the hem and vents would have been taken care of in that step.
+Цей крок потрібен лише в тому випадку, якщо ви не підкладали спідницю, оскільки на цьому етапі ви вже подбали про поділ і вентиляційні отвори.
 
-- If desired, face the hem and vents.
-- Construct the vents with your preferred method
-- Press under the hem allowances of the skirt.
-- If hem is large enough and/or the fabric press under a small amount along the top, this will help to prevent farying.
-- Secure the hem in place with your preferred method. For instance you can sew from the outside or _Slipstitch_ from the inside. This comes down to how you want the finished product to look.
+- За бажанням, виверніть лицьовою стороною до подолу і вентиляційних отворів.
+- Побудуйте вентиляційні отвори за вашим бажанням
+- Припрасуйте під припуски на підгин спідниці.
+- Якщо підгин досить великий і/або тканина трохи притиснута вздовж верху, це допоможе запобігти викривленню.
+- Закріпіть кант на місці у зручний для вас спосіб. Наприклад, ви можете шити ззовні або _Slipstitch_ зсередини. Це залежить від того, як ви хочете, щоб виглядав готовий продукт.
 
 <Tip>
 
-If the seam allowances are big enough you can sew the hems as narrow hems. This is especially useful if your fabric is prone to fraying.
+Якщо припуски на шви досить великі, ви можете вшити підгини як вузькі. Це особливо корисно, якщо ваша тканина схильна до зношування.
 
 </Tip>
 
-### Step 7: Enjoy!
+### Крок 7: Насолоджуйтесь!
 
-- Now all that's left to do is to enjoy you new skirt!
+- Тепер залишилося тільки насолоджуватися новою спідницею!
