@@ -1,21 +1,21 @@
 ---
-title: Line widths and strokes
+title: Ширина ліній і штрихів
 ---
 
-Designers can, if they so choose, override the default line widths or set a specific stroke. They might do that to add additional info, like where to fold a pattern, or the outline of where a pocket would go.
+Дизайнери можуть, за бажанням, перевизначити ширину ліній за замовчуванням або задати певну товщину обведення. Вони можуть додавати додаткову інформацію, наприклад, як скласти деталь або намітити, де буде кишеня.
 
-For reference, here are the different available line widths:
+Для довідки, ось різні доступні варіанти ширини ліній:
 
 <Legend part="lineWidths">
 
-The different line widths
+Різна ширина лінії
 
 </Legend>
 
-And these are the different stroke styles:
+А це різні стилі обведення:
 
 <Legend part="lineStrokes">
 
-The different line strokes
+Різні штрихи ліній
 
 </Legend>
