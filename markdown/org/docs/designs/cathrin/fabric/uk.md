@@ -1,9 +1,9 @@
 - - -
-title: "Cathrin corset: Fabric Options"
+назва: "Корсет "Катрін": Варіанти тканин"
 - - -
 
-Corsets must be made from fabric with no stretch at all. The fabric designed for corset making is called coutil. Although coutil is expensive, not much is needed for a corset. Some cheaper alternatives include canvas, denim and cotton ticking. However, these will stretch over time and are not suitable for any garment with a large waist reduction: they are not strong enough. They are good options for testing the pattern to see how it fits on you. For corsets made from silk and cotton and other fancy fabrics, you need to use several layers - the fabric you want to be seen, on top of a layer of coutil or other strength layer, and perhaps also a third layer made out of lining which will sit next to the body.
+Корсети повинні бути виготовлені з тканини, яка зовсім не розтягується. Тканина, призначена для виготовлення корсетів, називається кутиль. Хоча кутиль коштує дорого, для корсета потрібно не так вже й багато. Деякі дешевші альтернативи включають полотно, джинсову тканину та бавовняний тик. Однак вони розтягуються з часом і не підходять для одягу з великим об'ємом талії: вони недостатньо міцні. Це хороші варіанти для тестування візерунка, щоб побачити, як він сидить на вас. Для корсетів з шовку, бавовни та інших модних тканин потрібно використовувати кілька шарів - тканину, яку ви хочете, щоб було видно, поверх шару кутилу або іншого міцного шару, і, можливо, ще й третій шар з підкладки, який буде прилягати до тіла.
 
-For the core fabric, you need a strong fabric, such as coutil, canvas, or denim.
+Для основної тканини вам знадобиться міцна тканина, така як кутиль, полотно або денім.
 
-For the outer fabric, you can use most non-stretch fabrics, such as linen, cotton, or silk.
+Для зовнішньої тканини ви можете використовувати більшість нерозтяжних тканин, таких як льон, бавовна або шовк.
