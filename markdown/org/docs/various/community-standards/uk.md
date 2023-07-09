@@ -1,25 +1,25 @@
 ---
-title: Community standards
+title: Стандарти спільноти
 ---
 
-Thank you for being part of the freesewing community. When you engage with us, or when you engage with others, please remember the following simple rules:
+Дякуємо за те, що ви є частиною спільноти фрісвінгу. Коли ви взаємодієте з нами або з іншими, будь ласка, пам'ятайте про наступні прості правила:
 
-##### Be nice
+##### Поводься чемно.
 
-We cannot accept comments that are either offensive in themselves or clearly offensive to others.
+Ми не можемо приймати коментарі, які є образливими самі по собі або явно образливими для інших.
 
 We ask you to avoid obscenities and other insulting language, to show respect for fellow users, public figures and the fundamental principles we hopefully all share.
 
 Without wanting to be exhaustive, that means no racism, xenophobia, calls to violence, discrimination based on religion, ethnic origin, gender, age, body shape, language, ….
 
-##### Don't spam
+##### Не розсилайте спам
 
 We encourage you to post comments that stick to the subject and would appreciate it if you refrain from posting advertisements (for your businesses, blogs or websites, etc).
 
-It is fine to post links to relevant information on other websites, but Spam and other off-topic items will be removed.
+Ви можете розміщувати посилання на відповідну інформацію на інших веб-сайтах, але спам та інші матеріали, що не стосуються теми, будуть видалятися.
 
-##### Don't get us in trouble
+##### Не втягуйте нас у неприємності
 
-Comments that are defamatory, unlawful or include copyright infringements are also against the rules. Impersonating other people or using fake accounts is also not done.
+Наклепницькі, незаконні або такі, що порушують авторські права, коментарі також суперечать правилам. Видавати себе за інших людей або використовувати фейкові акаунти також не дозволяється.
 
-We will delete these types of comments and may ban users who keep on disregarding these rules.
+Ми видаляємо такі коментарі і можемо забанити користувачів, які продовжують ігнорувати ці правила.
