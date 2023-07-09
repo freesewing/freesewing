@@ -1,9 +1,9 @@
 - - -
-title: "Chest pocket width"
+назва: "Ширина нагрудної кишені"
 - - -
 
-Controls the width of the chest pocket.
+Регулює ширину нагрудної кишені.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_chestpocketwidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](carlita_chestpocketwidth_sample.svg "Вплив цієї опції на шаблон")
