@@ -1,9 +1,9 @@
 - - -
-title: "Collar ease"
+назва: "Легкість коміра"
 - - -
 
-The amount of ease at your neck/collar.
+Наскільки легко у вас на шиї/комірці.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bent_collarease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bent_collarease_sample.svg "Вплив цієї опції на шаблон")
