@@ -1,11 +1,11 @@
 - - -
-title: "Height"
+назва: "Height"
 - - -
 
-![Height option](./height.svg)
+![Варіант висоти](./height.svg)
 
-Controls the height of your face mask.
+Контролює висоту маски для обличчя.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](florence_height_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](florence_height_sample.svg "Вплив цієї опції на шаблон")
