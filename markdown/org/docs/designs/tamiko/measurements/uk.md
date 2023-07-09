@@ -1,5 +1,5 @@
 - - -
-title: "Tamiko top: Required Measurements"
+назва: "Топ Таміко: Необхідні виміри"
 - - -
 
 <PatternMeasurements pattern='tamiko' />
