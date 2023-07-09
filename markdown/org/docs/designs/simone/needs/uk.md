@@ -1,11 +1,11 @@
 - - -
-title: "Simone shirt: What You Need"
+"Сорочка Сімони": "Сорочка Симона: Те, що вам потрібно"
 - - -
 
 <Note>
 
-Simone is our [Simon pattern](/designs/simon/) adapted for breasts.
+Симона - це наш [візерунок Симона] (/designs/simon/), адаптований для грудей.
 
-Please refer to [the Simon documentation](/docs/patterns/simon/).
+Будь ласка, зверніться до [документації Simon] (/docs/patterns/simon/).
 
 </Note>
