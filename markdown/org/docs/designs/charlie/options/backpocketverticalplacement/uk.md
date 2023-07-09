@@ -1,11 +1,11 @@
 - - -
-title: "Back pocket vertical placement"
+назва: "Вертикальне розміщення задньої кишені"
 - - -
 
-Controls the vertical placement of the back pockets.
+Контролює вертикальне розміщення задніх кишень.
 
-Either closer to the waistband, or higher. Or further from the waistband, or lower.
+Або ближче до пояса, або вище. Або далі від пояса, або нижче.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_backpocketverticalplacement_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](charlie_backpocketverticalplacement_sample.svg "Вплив цієї опції на шаблон")
