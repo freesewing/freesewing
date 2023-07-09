@@ -1,9 +1,9 @@
 - - -
-title: "Horizontal pocket placement"
+назва: "Горизонтальне розміщення кишень"
 - - -
 
-Controls the location of the pockets horizontally (more left or right).
+Контролює розташування кишень по горизонталі (більше ліворуч або праворуч).
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlton_pocketplacementhorizontal_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](carlton_pocketplacementhorizontal_sample.svg "Вплив цієї опції на шаблон")
