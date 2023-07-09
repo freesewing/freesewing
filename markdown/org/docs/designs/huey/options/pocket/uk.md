@@ -1,11 +1,11 @@
 - - -
-title: "Pocket"
+"Кишеня": "Кишеня"
 - - -
 
-![This option controls whether or not to include the front pouch pocket](./pocket.svg)
+![Цей параметр визначає, чи потрібно вмикати передню кишеню підсумка](./pocket.svg)
 
-Do you want front (pouch) pocket or not?
+Вам потрібна передня кишеня чи ні?
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_pocket_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](huey_pocket_sample.svg "Вплив цієї опції на шаблон")
