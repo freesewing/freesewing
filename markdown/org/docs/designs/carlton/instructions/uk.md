@@ -1,67 +1,67 @@
 - - -
-title: "Carlton coat: Sewing Instructions"
+назва: "Пальто карлтон: Інструкція з пошиття"
 - - -
 
-### Step 1: Draft and Cut the missing Lining and Facing Parts
+### Крок 1: Накресліть і виріжте відсутні деталі підкладки та облицювання
 
-Some parts for Carlton require you to draft parts from the existing parts. The following are a list of what parts you need to draft, [see Carlton Cutting](/docs/patterns/carlton/cutting/) for details on how to cut them.
+Деякі деталі для Carlton вимагають створення ескізів з існуючих деталей. Нижче наведено список деталей, які потрібно накреслити, [див. Карлтон різання](/docs/patterns/carlton/cutting/) для отримання детальної інформації про те, як їх вирізати.
 
-#### Drafting
+#### Складання проекту
 
-##### Front facing and Front lining
+##### Лицьове облицювання та лицьова підкладка
 
-- Trace off of **Front** part.
-- Cut along the green line.
-- Add seam allowance (if including) along green line to both pieces
-- The piece with the lapel is now the **Front facing** part.
-- Trim the hem allowance (if included) of the remaining piece to seam allowance length
-- The remaining piece is now the **Front lining** part.
+- Скопійовано з **Передня частина** .
+- Розріжте вздовж зеленої лінії.
+- Додайте припуски на шви (якщо вони є) вздовж зеленої лінії до обох деталей
+- Деталь з лацканом тепер є **лицьовою частиною** .
+- Обріжте припуск на підгин (якщо є) деталі, що залишилася, до довжини припусків на шви
+- Частина, що залишилася, тепер є **передньою накладкою** .
 
 <Note>
 
-The button and pocket markings are not needed for these parts so feel free not to trace them.
+Маркування ґудзиків і кишень для цих деталей не потрібне, тому можете не промальовувати їх.
 
 </Note>
 
 <Warning>
 
-Don't forget the seam allowance for these pieces when cutting if you are making these parts nett!
+Не забудьте про припуски на шви для цих деталей під час розкрою, якщо ви робите ці деталі сіткою!
 
 </Warning>
 
-##### Chest canvas
+##### Полотно на грудях
 
-- Trace off of **Front** part.
-- Cut along the orange line.
-- Discard lower piece.
-- Cut along lapel line.
-- Discard lapel piece.
-- Remove the seam allowances (if included) of the upper piece.
-- The upper piece is now the **Chest canvas** part.
+- Скопійовано з **Передня частина** .
+- Розрізати вздовж помаранчевої лінії.
+- Нижню частину викинути.
+- Розріжте по лінії лацкана.
+- Викиньте шматок лацкана.
+- Видаліть припуски на шви (якщо вони є) верхньої деталі.
+- Верхня частина - це тепер **полотно для грудей** частина.
 
-##### Front Shoulder
+##### Переднє плече
 
-- Trace off of **Front** part.
-- Draw a curve from shoulder to bottom of armhole.
-- Cut along this curve and discard the lower part.
-- The upper piece is now the **Front Shoulder** part.
+- Скопійовано з **Передня частина** .
+- Намалюйте криву від плеча до низу пройми.
+- Розріжте по цій кривій і викиньте нижню частину.
+- Тепер верхня частина - це **передня частина плеча** .
 
-##### Back shoulder
+##### Заднє плече
 
-- Trace off of **Back** part.
-- Cut along the orange line.
-- Discard lower piece.
-- Remove the seam allowamces (if included) of the upper piece.
-- The upper piece is now the **Back shoulder** part.
+- Трасування з **Назад** частина.
+- Розрізати вздовж помаранчевої лінії.
+- Нижню частину викинути.
+- Видаліть припуски на шви (якщо вони є) верхньої частини.
+- Верхня частина - це тепер **частина заднього плеча** .
 
-#### Cutting
+#### Різання
 
-- Cut all the parts above from their respective fabrics/facings. ([see Carlton Cutting](/docs/patterns/carlton/cutting/))
+- Виріжте всі деталі з відповідних тканин/фактур. ([див. Карлтон Каттінг](/docs/patterns/carlton/cutting/))
 
-### Step 2: Fix Me
+### Крок 2: Виправте мене
 
 <Fixme>
 
-Documentation for this pattern still needs to be written. In the meantime their are some preliminary instructions for ([Carlita, Carlton's Counterpart](/docs/patterns/carlita/instructions/)) that should help.
+Документацію для цього патерну ще потрібно написати. Тим часом, ось деякі попередні інструкції для ([Карліта, аналог Карлтона] (/docs/patterns/carlita/instructions/)), які повинні допомогти.
 
 </Fixme>
