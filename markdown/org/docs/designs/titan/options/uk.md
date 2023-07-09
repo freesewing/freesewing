@@ -1,5 +1,5 @@
 - - -
-title: "Titan trouser block: Design Options"
+назва: "Титановий брючний блок: Варіанти дизайну"
 - - -
 
 <PatternOptions pattern='titan' />
