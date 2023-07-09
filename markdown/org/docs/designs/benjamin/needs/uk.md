@@ -1,10 +1,10 @@
 - - -
-title: "Benjamin bow tie: What You Need"
+"Метелик Бенджамін": "Метелик Бенджаміна: Що вам потрібно"
 - - -
 
-To make Benjamin, you will need the following:
+Щоб зробити Веніаміна, вам знадобиться наступне:
 
-- Basic sewing supplies
-- About 0.5 meters (0.6 yards) of a suitable fabric ([see Fabric options](/docs/patterns/benjamin/fabric/)). Left over pieces of a recent project could work too.
-- About the same amount of interfacing
-- Optionally: Bow tie adjustment ribbon and hardware
+- Основні матеріали для шиття
+- Приблизно 0,5 метра (0,6 ярдів) відповідної тканини ([див. варіанти тканини](/docs/patterns/benjamin/fabric/)). Також можуть підійти залишки з нещодавнього проекту.
+- Приблизно стільки ж інтерфейсів
+- За бажанням: Стрічка для регулювання краватки-метелика та фурнітура
