@@ -1,9 +1,9 @@
 - - -
-title: "Front dart depth factor"
+Назва: "Коефіцієнт глибини передньої виточки"
 - - -
 
-How far down does the front dart go from the waistband. This is a factor of the natural waist To seat measurement.
+Як далеко вниз спускається передня виточка від пояса. Це коефіцієнт природного співвідношення обхвату талії до обхвату сидіння.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_frontdartdepthfactor_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](penelope_frontdartdepthfactor_sample.svg "Вплив цієї опції на шаблон")
