@@ -1,21 +1,21 @@
 - - -
-title: "Titan trouser block: Cutting Instructions"
+назва: "Титанова штанина: Інструкція з розкрою"
 - - -
 
-**Main fabric**
+**Основна тканина**
 
-- Cut **2 front** parts with _good sides together_
-- Cut **2 back** parts with _good sides together_
+- Виріжте **2 передні** частини лицьовими _сторонами разом_
+- Виріжте **2 задніх** частини лицьовими _сторонами разом_
 
-These cutting instructions are just for the default Titan block. Adjust your cutting accordingly if you have/are making changes to the block.
+Ці інструкції з різання стосуються лише стандартного блоку Titan. Якщо ви вносите зміни в блок, відрегулюйте розкрій відповідно.
 
 <Note>
 
-###### Titan is a block, not a pattern
+###### Титан - це блок, а не патерн
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Блок - це базова форма, на якій базуються інші патерни.
+Іноді їх ще називають слоуперами, хоча пуристи заперечать, що блок і слоупер - це різні речі.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Блоки, як правило, не створюються як такі, а слугують основою для інших візерунків.
 
 </Note>
