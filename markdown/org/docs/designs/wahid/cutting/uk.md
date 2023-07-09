@@ -1,27 +1,27 @@
 - - -
-title: "Wahid waistcoat: Cutting Instructions"
+назва: "Жилет вахід: Інструкція з крою"
 - - -
 
-- **Main fabric**
-  - Cut **2 front(s)** with _good sides together_
-  - Cut **2 back(s)** with _good sides together_
-  - Cut **2 front facing(s)** with _good sides together_
-  - Cut **2 pocket welt(s)** with _good sides together_
-  - Cut **2 pocket facing(s)** with _good sides together_
-- **Lining fabric**
-  - Cut **2 front lining(s)** with _good sides together_
-  - Cut **2 back(s)** with _good sides together_
-  - Cut **2 pocket bag(s)** with _good sides together_
-- **Interfacing**
-  - Cut **2 front(s)** with _good sides together_
-  - Cut **2 pocket interfacing(s)**
+- **Основна тканина**
+  - Виріжте **2 передніх** з _виворітними сторонами разом_
+  - Виріжте **2 спинки** з _виворітними сторонами разом_
+  - Виріжте **2 лицьові сторони** з _лицьовими сторонами разом_
+  - Виріжте **2 кишенькові шви** з _лицьовими сторонами разом_
+  - Виріжте **2 кишені з лицьової сторони** з _лицьовими сторонами разом_
+- **Підкладкова тканина**
+  - Виріжте **2 передні підкладки** з _лицьовими сторонами разом_
+  - Виріжте **2 спинки** з _виворітними сторонами разом_
+  - Виріжте **2 кишенькові сумки** з _виворітними сторонами разом_
+- **Взаємодія**
+  - Виріжте **2 передніх** з _виворітними сторонами разом_
+  - Крій **2 кишенькові інтерфейси**
 
 <Warning>
 
-###### Caveats
+###### Застереження
 
-- Do not cut out the **front** dart
-- Do not cut out the **back** dart
-- Watch out for the grainline on the **pocket welt** and **pocket facing**
+- Не викроюйте **передню** виточку
+- Не викроюйте **задню** виточку
+- Слідкуйте за лінією дольоту на **шовці кишені** і **обшивці кишені**.
 
 </Warning>
