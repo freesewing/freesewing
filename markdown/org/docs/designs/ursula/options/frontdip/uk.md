@@ -1,9 +1,9 @@
 - - -
-title: "Front waist dip"
+Назва: "Нахил талії спереду"
 - - -
 
-This option controls how much the front waist curves (revealing more or less skin).
+Ця опція контролює, наскільки сильно вигинається талія спереду (відкриваючи більше або менше шкіри).
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](ursula_frontdip_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](ursula_frontdip_sample.svg "Вплив цієї опції на шаблон")
