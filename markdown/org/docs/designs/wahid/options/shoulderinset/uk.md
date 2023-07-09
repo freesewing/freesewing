@@ -1,19 +1,19 @@
 - - -
-title: "Shoulder inset"
+назва: "Плечова вставка"
 - - -
 
-![Shoulder inset](shoulderinset.svg)
+![Вставка на плече](shoulderinset.svg)
 
-How far do you want your waistcoat to sit away from your shoulder on the shoulder seam? The default is 2cm.
+Як далеко ви хочете, щоб жилет сидів від плеча по плечовому шву? За замовчуванням 2 см.
 
 <Note>
 
-###### What's the point?
+###### У чому сенс?
 
-The shoulder seam of a waistcoat is typically more narrow than your shirt. This option controls how narrow it gets (on the shoulder side).
+Плечовий шов жилета зазвичай вужчий, ніж у сорочки. Цей параметр визначає, наскільки вузькою вона стає (з боку плеча).
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_shoulderinset_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](wahid_shoulderinset_sample.svg "Вплив цієї опції на шаблон")
