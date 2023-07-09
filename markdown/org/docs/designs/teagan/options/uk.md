@@ -1,5 +1,5 @@
 - - -
-title: "Teagan T-shirt: Design Options"
+назва: "Футболка Тіган: Варіанти дизайну"
 - - -
 
 <PatternOptions pattern='teagan' />
