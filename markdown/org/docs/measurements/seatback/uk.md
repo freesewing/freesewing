@@ -1,9 +1,9 @@
 ---
-title: Seat back
+title: Відкинься на спинку сидіння.
 ---
 
-The **seat back** is the back portion of your seat circumference.
+Спинка **сидіння** - це задня частина окружності вашого сидіння.
 
 To measure your **seat back**, run the tape measure around your bum at the fullest part, and check the length of the back part.
 
-Make sure to keep the tape measure horizontal while doing so. In other words, parallel to the floor.
+При цьому переконайтеся, що рулетка знаходиться в горизонтальному положенні. Іншими словами, паралельно підлозі.
