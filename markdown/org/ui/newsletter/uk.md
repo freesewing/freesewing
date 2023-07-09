@@ -1,6 +1,6 @@
 - - -
 - - -
 
-##### Subscribe to our newsletter
+##### Підпишіться на нашу розсилку
 
-Subscribe below and **once every 3 months** you'll receive an email from us with honest wholesome content. No tracking, no ads, no nonsense.
+Підпишіться нижче і **раз на 3 місяці** ви будете отримувати від нас лист з чесним та корисним контентом. Ніякого відстеження, ніякої реклами, ніякої нісенітниці.
