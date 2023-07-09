@@ -1,10 +1,10 @@
 ---
-title: "Waist ease"
+title: "Aisance à la taille"
 ---
 
 ***
 
-The **waist ease** option controls the amount of ease at your waist.
+L'option **facilitant la taille** contrôle la quantité d'aisance à votre taille.
 
 ## Effet de cette option sur le modèle
 
