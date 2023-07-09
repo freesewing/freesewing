@@ -1,21 +1,21 @@
 - - -
-title: "Breanna body block: What You Need"
+назва: "Боді-блок Бріанни: Що вам потрібно"
 - - -
 
-To make Breanna, you will need the following:
+Щоб зробити Бріанну, вам знадобиться наступне:
 
-- Basic sewing supplies
-- About 1.25 - 1.5 metres (1.4 - 1.7 yards) of a suitable fabric ([see Breanna Fabric options](/docs/patterns/Breanna/fabric/))
+- Основні матеріали для шиття
+- Приблизно 1,25 - 1,5 метра (1,4 - 1,7 ярдів) відповідної тканини ([див. варіанти тканини Breanna](/docs/patterns/Breanna/fabric/))
 
-This list is for a default Breanna Block. If you have/are making changes to the block you may need to get additional items such as closures, binding etc.
+Це список для стандартного блоку Breanna Block. Якщо ви вносили/вносите зміни до блоку, вам можуть знадобитися додаткові елементи, такі як закриття, прив'язка тощо.
 
 <Note>
 
-###### Breanna is a block, not a pattern
+###### Бріанна - це блок, а не візерунок
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Блок - це базова форма, на якій базуються інші візерунки.
+Іноді їх ще називають слоуперами, хоча пуристи заперечать, що блок і слоупер - це різні речі.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Блоки, як правило, не створюються як такі, а слугують основою для інших візерунків.
 
 </Note>
