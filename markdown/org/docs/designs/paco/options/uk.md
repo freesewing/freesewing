@@ -1,5 +1,5 @@
 - - -
-title: "Paco pants: Design Options"
+"Штани Пако": "Штани Пако: Варіанти дизайну"
 - - -
 
 <PatternOptions pattern='paco' />
