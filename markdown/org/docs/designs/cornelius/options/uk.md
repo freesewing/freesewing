@@ -1,5 +1,5 @@
 - - -
-title: "Cornelius cycling breeches: Design Options"
+"Корнеліус велосипедні штани": "Велосипедні бриджі Cornelius: Варіанти дизайну"
 - - -
 
 <PatternOptions pattern='cornelius' />
