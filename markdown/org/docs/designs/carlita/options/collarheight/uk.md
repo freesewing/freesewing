@@ -1,11 +1,11 @@
 - - -
-title: "Collar height"
+назва: "Висота коміра"
 - - -
 
-![Collar height](collarheight.svg)
+![Висота коміра](collarheight.svg)
 
-Controls the height of the collar.
+Регулює висоту нашийника.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_collarheight_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](carlita_collarheight_sample.svg "Вплив цієї опції на шаблон")
