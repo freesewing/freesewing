@@ -3,14 +3,14 @@
 
 <Note>
 
-##### There's more to the picture than meets the eye
+##### Тут більше, ніж здається на перший погляд
 
-This list of FreeSewing contributors is not exhaustive.
-It only lists contributors who opted-in to having their name disclosed on our website.
+Цей список учасників FreeSewing не є вичерпним.
+У ньому перераховані лише ті дописувачі, які дали згоду на розкриття їхніх імен на нашому сайті.
 
-###### Are you missing?
+###### Тебе не вистачає?
 
-Please [let us know on Discord]("https://discord.freesewing.org/") or
-[create an issue]("https://github.com/freesewing/freesewing/issues/new").
+Будь ласка, [повідомте нам про це на Discord] ("https://discord.freesewing.org/") або
+[створіть проблему] ("https://github.com/freesewing/freesewing/issues/new").
 
 </Note>
