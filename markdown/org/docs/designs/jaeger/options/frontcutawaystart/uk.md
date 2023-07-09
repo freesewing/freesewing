@@ -1,11 +1,11 @@
 - - -
-title: "Front cutaway start"
+назва: "Фронтальний старт"
 - - -
 
-![Front cutaway start](frontcutawaystart.svg)
+![Початок відрізання спереду](frontcutawaystart.svg)
 
-How far below the lower button does the front start to open.
+Як далеко під нижньою кнопкою починає відкриватися передня частина.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_frontcutawaystart_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_frontcutawaystart_sample.svg "Вплив цієї опції на шаблон")
