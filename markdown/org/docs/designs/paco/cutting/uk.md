@@ -1,34 +1,34 @@
 - - -
-title: "Paco pants: Cutting Instructions"
+"Штани Пако": "Штани Пако: Інструкція з крою"
 - - -
 
 <Tip>
 
-###### Cut out only what you need
+###### Виріжте тільки те, що вам потрібно
 
-Depending on the choices you made in your pattern, you may not need all parts.
-If a pattern part is not printed, it means you don't need it.
+Залежно від того, що ви вибрали у своїй викрійці, вам можуть знадобитися не всі деталі.
+Якщо деталь не надрукована, це означає, що вона вам не потрібна.
 
 </Tip>
 
-- From your main fabric:
-  - 2x **part 1**: This is the back panel. Cut these from your **main fabric** with _good sides together_
-  - 2x **part 2**: This is the front panel. Cut these from your **main fabric** with _good sides together_
-  - 2x **part 3**: This is the waistband. Cut it from your **main fabric**
-  - 2x **part 4**: This is the ankle cuff. Cut these, from your **main fabric** with _good sides together_ (not needed if your chose not to have an elasticated hem)
-  - 2x **part 7**: This is the back pocket welt. Cut 2 of these from your **main fabric** with _good sides together_
-- From your lining fabric:
-  - 2x **part 5**: This is the front pocket bag. Cut these, from your **lining fabric** _on the fold_ (not needed if you chose to not have front pockets)
-  - 2x **part 6**: This is the back pocket bag. Cut 2 of these from your **lining fabric** _on the fold_
-- From interfacing:
-  - 2x **part 8**: This is the back pocket welt interfacing. Cut 2 of these from **interfacing**
+- З твоєї основної тканини:
+  - 2x **частина 1**: Це задня панель. Виріжте їх з вашої **основної тканини** лицьовими сторонами разом __
+  - 2x **частина 2**: Це передня панель. Виріжте їх з вашої **основної тканини** лицьовими сторонами разом __
+  - 2 частина **частина 3**: Це пояс. Виріжте його з вашої **основної тканини**
+  - 2x **частина 4**: Це манжета на гомілковостопний суглоб. Виріжте їх з вашої **основної тканини** з _лицьовими сторонами разом_ (не потрібно, якщо ви вирішили не робити еластичний поділ).
+  - 2x **частина 7**: Це шов задньої кишені. Виріжте 2 таких з вашої **основної тканини** з _виворітними сторонами разом_
+- З підкладкової тканини:
+  - 2x **частина 5**: Це сумка з передньою кишенею. Виріжте їх з підкладкової тканини **** _на згині_ (не потрібні, якщо ви вирішили не мати передніх кишень).
+  - 2x **частина 6**: Це сумка з задньою кишенею. Виріжте 2 такі деталі з підкладкової тканини **** _на згині_
+- Від взаємодії:
+  - 2x **частина 8**: Це з'єднання швів задньої кишені. Виріжте 2 таких з **, з'єднавши їх з**
 
 <Warning>
 
-#### Caveats
+#### Застереження
 
-- There is no seam allowance on the interfacing
-- There is extra seam allowance on the waist band and hem
-- The waistband is a mere rectangle, so it's not fully printed to save paper
+- Немає припусків на шви на стикуванні
+- На поясі та подолі є додаткові припуски на шви
+- Пояс - це просто прямокутник, тому він надрукований не повністю, щоб заощадити папір
 
 </Warning>
