@@ -1,11 +1,11 @@
 - - -
-title: "Charlie chinos: What You Need"
+назва: "Чарлі Чінос: Те, що тобі потрібно"
 - - -
 
-To make Charlie, you will need the following:
+Щоб зробити Чарлі, вам знадобиться наступне:
 
-- Basic sewing supplies
-- About 1.5 meters (1.7 yards) of a suitable fabric ([see Fabric options](/docs/patterns/charlie/fabric))
-- About 30 centimeters (12 inches) of lining fabric (used for pocket bags)
-- Fusible interfacing for the back pockets
-- A zipper and button for the fly
+- Основні матеріали для шиття
+- Приблизно 1,5 метра (1,7 ярдів) відповідної тканини ([див. варіанти тканини](/docs/patterns/charlie/fabric))
+- Близько 30 сантиметрів (12 дюймів) підкладкової тканини (використовується для кишенькових сумок)
+- Плавкий інтерфейс для задніх кишень
+- Застібка-блискавка та ґудзик на блискавці
