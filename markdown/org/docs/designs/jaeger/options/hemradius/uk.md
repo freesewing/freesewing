@@ -1,9 +1,9 @@
 - - -
-title: "Hem radius"
+назва: "Радіус подолу"
 - - -
 
-Controls the amount by which the hem is rounded at the front bottom.
+Керує величиною заокруглення краю внизу спереду.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_hemradius_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_hemradius_sample.svg "Вплив цієї опції на шаблон")
