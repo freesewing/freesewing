@@ -1,9 +1,9 @@
 - - -
-title: "Stretch"
+назва: "Розтяжка"
 - - -
 
-The amount of overal (horizontal) stretch.
+Величина загального (горизонтального) розтягування.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](shin_stretch_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](shin_stretch_sample.svg "Вплив цієї опції на шаблон")
