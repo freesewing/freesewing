@@ -1,11 +1,11 @@
 - - -
-title: "Center front hem drop"
+назва: "Центральний передній зріз подолу"
 - - -
 
-![Center front hem drop](centerfronthemdrop.svg)
+![Центральний передній перепад подолу](centerfronthemdrop.svg)
 
-How much do you want the front of your jacket to be longer/lower than the back?
+Наскільки ви хочете, щоб передня частина вашої куртки була довшою/нижчою за задню?
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_centerfronthemdrop_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_centerfronthemdrop_sample.svg "Вплив цієї опції на шаблон")
