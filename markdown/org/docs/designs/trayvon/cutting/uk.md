@@ -1,40 +1,40 @@
 - - -
-title: "Trayvon tie: Cutting Instructions"
+назва: "Краватка з тройвону: Інструкція з розкрою"
 - - -
 
-- **Main fabric**
-  - Cut **1 tip**
-  - Cut **1 tail**
-- **Lining fabric**
-  - Cut **1 lining tip**
-  - Cut **1 lining tail**
-  - Cut **1 loop**
-- **Interfacing**
-  - Cut **1 interfacing tip**
-  - Cut **1 interfacing tail**
+- **Основна тканина**
+  - Вирізати **1 наконечник**
+  - Зрізати **1 хвіст**
+- **Підкладкова тканина**
+  - Виріз **1 наконечник для підкладки**
+  - Виріз **1 підкладковий хвіст**
+  - Зрізати **1 петлю**
+- **Взаємодія**
+  - Виріз **1 наконечник для з'єднання**
+  - Зріз **1 сполучний хвіст**
 
 <Warning>
 
-###### Caveat
+###### Застереження
 
-- There is no seam allowance on the **interfacing** parts and the **loop**
-- The **lining** **tip** and **tail** have only seam allowance at the tip
-- The **fabric** **tip** and **tail** have only seam allowance at the tip and center
+- Припуски на шви на деталях, що з'єднуються, та петлі відсутні
+- Підкладка** **кінчик** та **хвостик** мають припуски на шви лише на кінчику
+- Тканина** **кінчик** та **хвостик** мають припуски на шви лише на кінчику та по центру.
 
 </Warning>
 
 <Tip>
 
-###### Choosing your tie grain
+###### Обираємо краватку
 
-![One fabric, different grains, different ties. Don't worry about rules, make what you like](tie-grain.png)
+![Одна тканина, різні фактури, різні краватки. Не турбуйтеся про правила, робіть те, що вам подобається](tie-grain.png)
 
-This pattern does not include a grain line. The grain line is typically printed on the pattern to show you how to place your pattern on your fabric, relative to the fabric's grain.
+Цей візерунок не містить лінії домішки. Лінія дольчатості зазвичай надрукована на викрійці, щоб показати, як розмістити викрійку на тканині відносно дольчатості тканини.
 
-For a tie, how you do this is not so much a rule as it is a personal choice. As such, there is no grain line printed on the pattern. You can do what you want.
+Для краватки те, як ви це робите, не стільки правило, скільки особистий вибір. На візерунку не надруковано жодної дольової лінії. Ти можеш робити все, що хочеш.
 
-That being said, a lot of ties are cut on bias, as this results in the best drape. If you are unsure what to do, consider cutting your tie on bias.
+При цьому багато зав'язок обрізають нахилом, оскільки це забезпечує найкращу драпіровку. Якщо ви не знаєте, що робити, подумайте про те, щоб обрізати краватку на упередження.
 
-If this all sounds very confusing, might I suggest reading the help page on [Fabric grain](/docs/sewing/fabric-grain).
+Якщо все це звучить дуже заплутано, раджу прочитати сторінку довідки про [Тканина-зерно] (/docs/sewing/fabric-grain).
 
 </Tip>
