@@ -1,26 +1,26 @@
 - - -
-title: "Tamiko top: Sewing Instructions"
+назва: "Топ "Таміко": Інструкція з пошиття"
 - - -
 
-### Step 1: Finish the armhole seam
+### Крок 1: Виконайте шов пройми
 
-![Finsh the armhole seam](step03.png)
+![Обробіть шов пройми](step03.png)
 
-- Finish the armhole seam with a narrow hem.
+- Шов пройми обробіть вузьким кантом.
 
-### Step 2: Finish the top
+### Крок 2: Закінчіть верхню частину
 
-![Sew the three seamlines that are marked on your draft](step04.png)
+![Зшийте три лінії швів, які позначені на ескізі](step04.png)
 
 <Note>
 
-As your top is folded, it's a good idea to pin both halves together.
-This way, your top can't shift around while we finish it.
+Коли ваш топ складений, гарною ідеєю буде скріпити обидві половинки разом.
+Таким чином, ваш топ не зможе зміститися, поки ми закінчимо його.
 
 </Note>
 
-- Sew the three seamlines that are marked on your draft. F-H, C and I-J in the diagram, represented by lines and notches on the pattern.
+- Зшийте три лінії швів, які позначені на вашому ескізі. F-H, C і I-J на схемі, представлені лініями і насічками на викрійці.
 
-### Step 3: Enjoy!
+### Крок 3: Насолоджуйтесь!
 
-Now enjoy your new top and it's zero waste properties!
+Тепер насолоджуйтеся своїм новим топом і його безвідходними властивостями!
