@@ -1,27 +1,27 @@
 - - -
 - - -
 
-#### Curious how this works?
+#### Цікаво, як це працює?
 
-FreeSewing is written in [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript). Our [core library](https://www.npmjs.com/package/@freesewing/core) and [patterns](/patterns) are available both for [NodeJS](https://nodejs.org/) and the browser.
+FreeSewing написано на [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript). Наша [ядро бібліотеки](https://www.npmjs.com/package/@freesewing/core) та [патерни](/patterns) доступні як для [NodeJS](https://nodejs.org/) , так і для браузера.
 
 Our websites are built with [Gatsby](https://www.gatsbyjs.com/)/[React](https://reactjs.org/) and kindly hosted by [Netlify](https://www.netlify.com/).
 
-Everything runs in the browser except user data and conversion to PDF. For that, we have built a backend with [Express](https://expressjs.com/) exposing a REST API.
+Все працює в браузері, окрім даних користувача та перетворення в PDF. Для цього ми створили бекенд за допомогою [Express](https://expressjs.com/) , що відкриває REST API.
 
-Our code and markdown content is hosted by [Github](https://github.com/freesewing/). We use [Crowdin](https://crowdin.com/) for translations, search is handled by [Algolia](https://www.algolia.com/) and [Bugsnag](https://www.bugsnag.com/) does error handling for us.
+Наш код та вміст з націнкою розміщено на [Github](https://github.com/freesewing/). Для перекладів ми використовуємо [Crowdin](https://crowdin.com/) , за пошук відповідає [Algolia](https://www.algolia.com/) , а [Bugsnag](https://www.bugsnag.com/) займається обробкою помилок.
 
-We are appreciative of these and other projects/companies that allow us to stand on their shoulders.
+Ми вдячні цим та іншим проектам/компаніям, які дозволяють нам стояти на їхніх плечах.
 
-#### Learn more
+#### Дізнайтеся більше
 
-Our [developer documentation](https://freesewing.dev) is available on [freesewing.dev](https://freesewing.dev). You'll find tutorials, how-to guides, as well as our API reference documentation.
+Наша [документація для розробників](https://freesewing.dev) доступна на [freesewing.dev](https://freesewing.dev). Ви знайдете навчальні матеріали, інструкції, а також нашу довідкову документацію з API.
 
-#### Want to help out?
+#### Хочеш допомогти?
 
-Awesome ❤️  
-The fastest thing to do is [join us on Discord](https://discord.freesewing.org/) where all the other contributors hang out.
+Приголомшливо ❤️  
+Найшвидше це зробити [Приєднуйтесь до нас на Discord](https://discord.freesewing.org/) , де тусуються всі інші дописувачі.
 
-If you're not sure how you could contribute, check out [ways to contribute](https://freesewing.dev/howtos/ways-to-contribute), you'll see there's certainly something you can do to help.
+Якщо ви не знаєте, як ви можете допомогти, перегляньте [способи зробити внесок](https://freesewing.dev/howtos/ways-to-contribute), і ви побачите, що ви точно можете чимось допомогти.
 
-We also have specific documentation for [translators](https://freesewing.dev/guides/translation) and [editors](https://freesewing.dev/howtos/editors).
+Ми також маємо спеціальну документацію для перекладачів [](https://freesewing.dev/guides/translation) та редакторів [](https://freesewing.dev/howtos/editors).
