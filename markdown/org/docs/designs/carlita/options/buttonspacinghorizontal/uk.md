@@ -1,9 +1,9 @@
 - - -
-title: "Horizontal button spacing"
+назва: "Горизонтальний інтервал між кнопками"
 - - -
 
-Controls how far the double rows of front buttons are set apart.
+Дозволяє контролювати відстань між двома рядами передніх кнопок.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_buttonspacinghorizontal_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](carlita_buttonspacinghorizontal_sample.svg "Вплив цієї опції на шаблон")
