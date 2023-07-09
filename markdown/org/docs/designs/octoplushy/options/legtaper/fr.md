@@ -1,8 +1,8 @@
 ---
-title: "Leg Taper"
+title: "Cône de la jambe"
 ---
 
-This setting changes how much the legs taper from the body down to the end.
+Ce paramètre modifie l'ampleur de la réduction des jambes depuis le corps jusqu'à l'extrémité.
 
 ## Effet de cette option sur le modèle
 
