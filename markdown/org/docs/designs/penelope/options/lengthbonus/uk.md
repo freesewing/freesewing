@@ -1,9 +1,9 @@
 - - -
-title: "Length bonus"
+назва: "Бонус за довжину"
 - - -
 
-This controls the length of the skirt. Percentage of the natural waist to knee measurement.
+Це регулює довжину спідниці. Відсоток від природного обхвату талії до колін.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_lengthbonus_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](penelope_lengthbonus_sample.svg "Вплив цієї опції на шаблон")
