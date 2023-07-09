@@ -1,11 +1,11 @@
 - - -
-title: "Length bonus"
+назва: "Бонус за довжину"
 - - -
 
-![Length bonus](lengthbonus.svg)
+![Бонус за довжину](lengthbonus.svg)
 
-The amount to lengthen the body of your jacket.
+Кількість для подовження тіла вашої куртки.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_lengthbonus_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_lengthbonus_sample.svg "Вплив цієї опції на шаблон")
