@@ -1,23 +1,23 @@
 - - -
-title: "Button placket style"
+назва: "Стиль ґудзикової застібки"
 - - -
 
-![Button placket style](buttonplacketstyle.svg)
+![Планка з ґудзиками](buttonplacketstyle.svg)
 
-Do you want the button placket to be sewn in place (classic style), or folded back and held in place by the buttons (seamless style)?
+Ви хочете, щоб кокетка була пришита на місці (класичний стиль), або відкинута назад і утримується на ґудзиках (безшовний стиль)?
 
 <Tip>
 
-Seamless is less work, and it looks great.
+Безшовний - це менше роботи, і він виглядає чудово.
 
 </Tip>
 
 <Note>
 
-As seamless is only possible on a _cut-on_ placket, this option is ignored if you choose a seperate button placket.
+Оскільки безшовний варіант можливий лише для _пришивної_ планки, ця опція ігнорується, якщо ви обираєте окрему планку з ґудзиками.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_buttonplacketstyle_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_buttonplacketstyle_sample.svg "Вплив цієї опції на шаблон")
