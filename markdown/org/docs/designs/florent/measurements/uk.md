@@ -1,5 +1,5 @@
 - - -
-title: "Florent flat cap: Required Measurements"
+назва: "Флорентійський капелюшок: Необхідні виміри"
 - - -
 
 <PatternMeasurements pattern='florent' />
