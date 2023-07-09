@@ -1,9 +1,9 @@
 ---
-title: "Hungry"
+title: "Голодний."
 ---
 
-This setting determins how long it has been since your Hi has had something to eat. More hungry results in a leaner shark.
+Цей параметр визначає, скільки часу минуло відтоді, як ваш Привіт їв щось поїсти. Більш голодна акула призводить до того, що вона стає худішою.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](hi_hungry_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](hi_hungry_sample.svg "Вплив цієї опції на шаблон")
