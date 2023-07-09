@@ -1,5 +1,5 @@
 - - -
-title: "Waralee wrap pants"
+назва: "Штани-обгортки Waralee"
 - - -
 
 <PatternDocs pattern='waralee' />
