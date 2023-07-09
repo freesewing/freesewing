@@ -1,12 +1,12 @@
 - - -
-title: "Cross seam angle"
+назва: "Кут поперечного шва"
 - - -
 
-Controls the angle of cross seam curve.
+Керує кутом вигину поперечного шва.
 
-- 0% makes the cross seam draft parallel to the hem.
-- Increasing this option will draft the cross seam at that angle away from the hem.
+- 0% робить витяжку поперечного шва паралельною до підгину.
+- Збільшення цього параметра призведе до витягування поперечного шва під цим кутом від подолу.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_crossseamcurveangle_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](charlie_crossseamcurveangle_sample.svg "Вплив цієї опції на шаблон")
