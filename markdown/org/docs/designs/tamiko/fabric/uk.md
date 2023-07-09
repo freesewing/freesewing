@@ -1,7 +1,7 @@
 - - -
-title: "Tamiko top: Fabric Options"
+назва: "Топ "Таміко": Варіанти тканин"
 - - -
 
-This pattern has a lot of unfinished edges, so you need something that does not ravel. And you want to go for something with a nice drape.
+Цей візерунок має багато незавершених країв, тому вам знадобиться щось, що не бовтається. І ви хочете вибрати щось з гарною драпіровкою.
 
-Long story short, go for a knitted fabric, or some light scuba or something. No wovens.
+Коротше кажучи, обирайте трикотажну тканину, легкі акваланги або щось подібне. Ніяких тканин.
