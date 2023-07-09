@@ -1,19 +1,19 @@
 - - -
-title: "Seamless full circle"
+назва: "Безшовне повне коло"
 - - -
 
-![Seamless full circle](seamlessfullcircle.svg)
+![Безшовне повне коло](seamlessfullcircle.svg)
 
-Select 'yes' for a seamless circle, which is cut on a double fold. Since it has no openings, you'll need an elastic waistband.
+Виберіть "так" для безшовного кола, яке вирізається на подвійному згині. Оскільки вона не має отворів, вам знадобиться еластичний пояс.
 
 <Note>
 
-- This produces a full circle ignoring the _Circle percent_ option.
-- You may need to use the [gathering option](sandy/options/gathering) to increase the waist circumference to fit over your seat/hips.
-- You will need to set the [waistband overlap](sandy/options/waistbandoverlap) to 0%.
+- Це призведе до повного кола, ігноруючи опцію _Circle percent_.
+- Можливо, вам доведеться скористатися [опцією збирання] (пісочний/опції/збирання), щоб збільшити обхват талії, щоб вона помістилася на сидінні/стегнах.
+- Вам потрібно встановити [перекриття пояса](sandy/options/waistbandoverlap) на 0%.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](sandy_seamlessfullcircle_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](sandy_seamlessfullcircle_sample.svg "Вплив цієї опції на шаблон")
