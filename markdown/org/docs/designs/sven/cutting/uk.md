@@ -1,22 +1,22 @@
 - - -
-title: "Sven sweatshirt: Cutting Instructions"
+назва: "Світшот Sven: Інструкція з розкрою"
 - - -
 
-Sven is a very simply pattern, and consists of two main parts plus some strips for the neck and armhole binding.
+Свен - це дуже простий візерунок, який складається з двох основних частин, а також декількох смужок для горловини та пройм.
 
-- **Main fabric**
-  - Cut **1 back** on the fold
-  - Cut **1 front** on the fold
-  - Cut **2 sleeves** with good sides together
-- **Ribbing fabric**
-  - Cut **1 strip** for the neck opening binding
-  - Cut **2 strips**  for the cuffs
-  - Cut **1 strip**  for the hem
+- **Основна тканина**
+  - Відріжте **1 назад** на згині
+  - Виріжте **1 передній** на згині
+  - Виріжте **2 рукава** виворітними сторонами разом
+- **Ребриста тканина**
+  - Виріжте **1 смужку** для обв'язки горловини
+  - Виріжте **2 смужки**  для манжетів
+  - Виріжте **1 смужку**  для подолу
 
 <Warning>
 
-###### Caveats
+###### Застереження
 
-The ribbing parts are not included on the pattern because they're just rectangular.
+Ребристі частини не включені у викрійку, тому що вони просто прямокутні.
 
 </Warning>
