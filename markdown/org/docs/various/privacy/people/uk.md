@@ -1,29 +1,29 @@
 ---
-title: How we use your people data
+title: Як ми використовуємо дані про ваших співробітників
 order: 40
 ---
 
-##### What personal data do we store?
+##### Які персональні дані ми зберігаємо?
 
-- Body measurements
-- Whether the model has breasts or not
-- Optional: An avatar for the model
+- Заміри тіла
+- Незалежно від того, чи є у моделі груди чи ні
+- Необов'язково: Аватар для моделі
 
-##### Why do we need it?
+##### Навіщо він нам потрібен?
 
-- We need the body measurements to draft made-to-measure sewing patterns
-- We use the information about whether a model has breasts to only show relevant measurements when configuring the model
-- The model avatar only serves to help you differentiate between your different models
+- Нам потрібні мірки тіла, щоб скласти викрійки для пошиття за індивідуальними мірками
+- Ми використовуємо інформацію про те, чи є у моделі груди, щоб при налаштуванні моделі показувати тільки відповідні виміри
+- Аватар моделі слугує лише для того, щоб допомогти вам розрізняти різних моделей
 
-##### How long do we keep it?
+##### Як довго ми його зберігаємо?
 
-- We keep model data up to 12 months after your last login, or until you remove it.
+- Ми зберігаємо дані моделі до 12 місяців після вашого останнього входу в систему або поки ви не видалите їх.
 
-##### Do we share it?
+##### Чи ділимося ми нею?
 
-- We never share personal model data
-- We publish an open data set of measurements, containing fully anonymized data.
+- Ми ніколи не передаємо персональні дані моделей
+- Ми публікуємо відкритий набір вимірювань, що містить повністю анонімні дані.
 
 <Note>
-This data is stored for anybody with an account on our website which contains one or more people.
+Ці дані зберігаються для всіх, хто має обліковий запис на нашому сайті, який містить одну або більше осіб.
 </Note>
