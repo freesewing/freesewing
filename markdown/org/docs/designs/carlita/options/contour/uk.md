@@ -1,11 +1,11 @@
 - - -
-title: "Contour"
+назва: "Контур"
 - - -
 
-Controls how sharply the princess seam will correct once it's passed the fullness of your breasts.
+Контролює, наскільки різко вирівняється шов "принцеса" після того, як він пройде повз повноту ваших грудей.
 
-A high factor will smooth the curve, resulting in a less fitted coat that's easier to sew. A low factor will sharpen the curve, resulting in a more fitted coat, with a princess seam that's harder to sew.
+Високий коефіцієнт згладить криву, в результаті чого пальто буде менш приталеним і його буде легше шити. Низький коефіцієнт загострить криву, в результаті чого пальто буде більш приталеним, а шов "принцеса" буде складнішим у пошитті.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_contour_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](carlita_contour_sample.svg "Вплив цієї опції на шаблон")
