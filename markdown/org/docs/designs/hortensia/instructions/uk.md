@@ -1,92 +1,92 @@
 - - -
-title: "Hortensia handbag: Sewing Instructions"
+назва: "Сумочка Гортензія: Інструкція з пошиття"
 - - -
 
-### (Optional) Step 1: Face the main fabric
+### (Крок 1: Виворітний бік основної тканини
 
-- If needed, Interface your main fabric pieces.
+- Якщо потрібно, з'єднайте між собою основні шматки тканини.
 
-### Step 2: Sew the front and back panels to the bottom
+### Крок 2: Пришийте передню і задню панелі до дна
 
-- With _good sides together_ sew the front and back panels to the bottom panel.
-- Press the seam allowances towards the bottom panel.
-- On the outside _Edgestitch_ the seam allowance to the bottom panel.
+- Лицьовими сторонами _разом_ пришийте передню і задню панелі до нижньої панелі.
+- Притисніть припуски швів до нижньої панелі.
+- На зовнішній стороні _Едгестич_ припуск на шов до нижньої панелі.
 
-### Step 3: Create and attach straps
+### Крок 3: Створіть і прикріпіть ремінці
 
-- If needed, face your straps.
-- Fold the straps in half lengthwise with _good sides matching_.
-- Sew the raw edges together making sure to leave a gap for turning.
-- Turn inside out.
-- _Slipstich_ the opening closed.
-- Alternatively _Edgestitch_ all the edges.
-- Attach one strap to the front panel and one strap to the back panel by sewing a rectangle and a cross.
+- Якщо потрібно, поверніться обличчям до ременів.
+- Складіть лямки навпіл уздовж, щоб _гарні сторони збігалися з_.
+- Зшийте необроблені краї разом, не забувши залишити проміжок для вивертання.
+- Вивернися навиворіт.
+- _Сліпстіч_ отвір закрився.
+- Альтернативний варіант _Edgestitch_ всі краї.
+- Прикріпіть один ремінець до передньої панелі і один ремінець до задньої панелі, зшивши прямокутник і хрест.
 
 <Warning>
 
-The placement of the straps are not on the pattern and need to be determined. You may need to baste the zipper panel to the front and back panels to help figure out the placement.
+Розміщення бретелей не вказано на викрійці і його потрібно визначити. Можливо, вам доведеться пришити блискавку до передньої і задньої панелей, щоб визначитись з розташуванням.
 
 </Warning>
 
 <Note>
 
-If using bag strap webbing instead of fabric made straps do the following,
+Якщо ви використовуєте тасьму для ремінця сумки замість тканинних ремінців, зробіть наступне,
 
-- Cut the webbing to the the length of the straps with seam allowance.
-- Press under the short edge seam allowance.
-- Attach the webbing the same way as the fabric straps.
+- Відріжте тасьму за довжиною ремінців з припуском на шви.
+- Притисніть під припуском короткого краєвого шва.
+- Прикріпіть тасьму так само, як і тканинні ремені.
 
 </Note>
 
-### Step 4: The zipper
+### Крок 4: Застібка-блискавка
 
-- Insert the zipper into the zipper panel making sure that the zipper pull is on the _good side_.
+- Вставте застібку-блискавку в панель застібки-блискавки, переконавшись, що тяга застібки-блискавки знаходиться на _хорошій стороні_.
 
-### (Optional) Step 5: Construct tabs.
+### (Крок 5: Створіть вкладки.
 
-- Construct tabs the same as the straps just shorter.
-- _Baste_ the tabs _good sides together_ to the short edges of the zipper panel so the tabs face inward.
+- Робіть вкладки так само, як і ремінці, тільки коротші.
+- _Приклейте_ вкладки _лицьовими сторонами разом_ до коротких країв застібки-блискавки так, щоб вкладки були звернені всередину.
 
 <Tip>
 
-We recommend the tabs to be about a quarter length of the straps.
+Ми рекомендуємо, щоб вкладки були приблизно на чверть довжини ремінців.
 
 </Tip>
 
-### Step 6: Attach the zipper panel
+### Крок 6: Прикріпіть блискавку
 
-- With _good sides together_ sew the zipper panel to the front and pack panels. We will now refer to this as **the tube**.
+- Складіть _лицьовими сторонами разом_ пришийте панель на блискавці до лицьової сторони і упакуйте панелі. Тепер ми будемо називати це **трубкою**.
 
-### Step 7: Prep the side panels
+### Крок 7: Підготуйте бічні панелі
 
-- Press under the top seam allowance of the side panel reinforcement parts.
-- Place the side panel reinforcement parts on top of the side panels matching the raw edges.
-- _Edgestitch_ the folded edge of the reinforcement parts to the side panels.
-- _Baste_ the raw edges together.
+- Притисніть під припуском верхнього шва підсилювальні деталі бічних панелей.
+- Помістіть підсилювальні деталі бічних панелей зверху на бічні панелі, сумістивши їх з необробленими краями.
+- _Краєобметочні стібки_ складені краї підсилювальних деталей до бічних панелей.
+- _Зліпити_ необроблені краї разом.
 
-### Step 8: Attach the side panels to the tube
+### Крок 8: Прикріпіть бічні панелі до трубки
 
-- With _good sides together_ sew the side panels to the tube matching notches to the bottom and zipper panel seams.
-- If binding the edges rather than turning, sew with _wrong sides together_ instead.
-- If not binding the edges leave a gap in one of the sides for turning.
-- Turn inside out and _Slipstich_ the opening closed.
-- If sewn _wrong sides together_ bind the raw edges of the side panels.
+- За допомогою _лицьовими сторонами разом_ пришийте бокові панелі до тубуса, сумістивши надсічки з низом і швами на блискавці.
+- Якщо ви скріплюєте краї, а не вивертаєте, зшийте _виворітними сторонами разом_ замість цього.
+- Якщо ви не скріплюєте краї, залиште проміжок в одній зі сторін для вивертання.
+- Вивертаємо навиворіт і _Сліпштіхом_ отвір закриваємо.
+- Якщо зшити _виворітними сторонами разом,_ зв'яжіть необроблені краї бічних полотнищ.
 
 <Note>
 
-It is recommended to leave the gap for turning on the side rather than the top or bottom as it needs less reinforcement.
+Рекомендується залишати зазор для повороту збоку, а не зверху чи знизу, оскільки він потребує меншого підсилення.
 
 </Note>
 
-### Step 9: Lining
+### Крок 9: Підкладка
 
-- With _good sides together_ sew the front and back lining panels to the bottom lining panel.
-- With _good sides together_ attach the lining side panels.
-- Press under the top seam allowances.
-- Alernatively you can bind the top edges.
-- Place the lining inside the bag _wrong sides facing_ eachother.
-- _Slipstitch_ or _Whipstitch_ the lining to the zipper panel.
+- Лицьовими боками _разом_ пришийте передню і задню підкладкові панелі до нижньої підкладкової панелі.
+- За допомогою _лицьовими сторонами разом_ прикріпіть підкладкові бокові панелі.
+- Припрасуйте під припуски верхнього шва.
+- За бажанням ви можете зв'язати верхні краї.
+- Покладіть підкладку всередину сумки _виворітними сторонами до_ одна до одної.
+- _Шов "ковзання"_ або _Шов "хлистик"_ пришийте підкладку до панелі на блискавці.
 
-### Step 10: Enjoy!
+### Крок 10: Насолоджуйтесь!
 
-That's it! You are all done! Now go enjoy you new bag!
+Ось так! З вами покінчено! А тепер ідіть і насолоджуйтеся своєю новою сумкою!
