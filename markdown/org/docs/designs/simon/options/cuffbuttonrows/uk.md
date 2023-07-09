@@ -1,17 +1,17 @@
 - - -
-title: "Cuff button rows"
+"Ряди ґудзиків на манжетах": "Ряди ґудзиків манжет"
 - - -
 
-![Cuff button rows](cuffbuttonrows.svg)
+![Ряди ґудзиків на манжетах](cuffbuttonrows.svg)
 
-Do you want a single button on your barrelcuff, or two?
+Вам потрібна одна кнопка на наручниках чи дві?
 
 <Note>
 
-This does only apply to barrelcuffs. So if you picked a French cuff as cuff style this will be ignored.
+Це стосується лише наручників. Тому, якщо ви вибрали французький манжет як стиль манжета, це буде проігноровано.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_cuffbuttonrows_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_cuffbuttonrows_sample.svg "Вплив цієї опції на шаблон")
