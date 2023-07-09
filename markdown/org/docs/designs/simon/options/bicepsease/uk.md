@@ -1,27 +1,27 @@
 - - -
-title: "Biceps ease"
+Назва: "Легкість біцепса"
 - - -
 
-![Biceps ease](./bicepsease.svg)
+![Легкість біцепса](./bicepsease.svg)
 
-How much do you want the sleeve to be wider than your upperarm circumference?
+Наскільки ви хочете, щоб рукав був ширшим за обхват плеча?
 
 <Note>
 
-###### What's the point?
+###### У чому сенс?
 
-It's actually men with big arms who prefer a tighter fit, and thus less ease here. That's because it draws attention to their strong upper arms.
+Насправді чоловіки з великими руками віддають перевагу більш щільному приляганню, а отже, меншій легкості. Це тому, що він привертає увагу до їхніх сильних плечей.
 
-If your upper arms are more skinny, you'll want some more ease here to smooth things out a bit.
+Якщо ваші плечі більш худі, вам знадобиться трохи більше легкості, щоб трохи вирівняти їх.
 
 </Note>
 
 <Warning>
 
-We will try to respect your choice here, but out priority is to fit the sleeve in the armhole.
+Ми намагатимемося поважати ваш вибір, але наш пріоритет - щоб рукав входив в пройму.
 
 </Warning>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_bicepsease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_bicepsease_sample.svg "Вплив цієї опції на шаблон")
