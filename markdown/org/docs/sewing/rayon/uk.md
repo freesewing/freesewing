@@ -1,13 +1,13 @@
 ---
-title: Rayon
+title: Район
 ---
 
-![I use rayon for my underwear](rayon.jpg)
+![Я використовую віскозу для нижньої білизни](rayon.jpg)
 
-Rayon, sometimes referred to as viscose, is a synthetic fiber. It originates from wood pulp, but there's a lot of chemical hoops to jump through before it becomes fabric.
+Віскоза, яку іноді називають віскозою, є синтетичним волокном. Вона походить з деревної целюлози, але перед тим, як стати тканиною, вона проходить безліч хімічних обручів.
 
-As rayon is a fiber (like cotton is) the resulting fabric will depend on how it is woven. However, in general rayon is a versatile fabric that is smooth to the touch, drapes, and is somewhat slippery.
+Оскільки віскоза - це волокно (як і бавовна), отримана тканина буде залежати від способу її переплетення. Проте загалом віскоза - це універсальна тканина, яка гладенька на дотик, драпірується і є дещо слизькою.
 
-Rayon is not a good insulator of body heat. That makes it a poor choice for a winter coat, but a good choice for your summer dresses or underwear.
+Віскоза не є добрим ізолятором тепла тіла. Це робить його поганим вибором для зимового пальто, але хорошим вибором для літніх суконь або нижньої білизни.
 
-> Wikipedia has a lot to say about rayon: [Rayon on Wikipedia](http://en.wikipedia.org/wiki/Rayon)
+> Вікіпедія може багато розповісти про район: [Район у Вікіпедії](http://en.wikipedia.org/wiki/Rayon)
