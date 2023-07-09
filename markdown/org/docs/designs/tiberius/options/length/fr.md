@@ -1,8 +1,8 @@
----
+- - -
 titre : "Longueur"
----
+- - -
 
-Controls the length of the garment
+Contrôle la longueur du vêtement
 
 ## Effet de cette option sur le motif
 
