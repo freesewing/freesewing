@@ -1,9 +1,9 @@
 ---
-title: Seat back
+title: Напівобхват стегон
 ---
 
-The **seat back** is the back portion of your seat circumference.
+**Напівобхват стегон** — це задня частина Вашого обхвату стегон.
 
-To measure your **seat back**, run the tape measure around your bum at the fullest part, and check the length of the back part.
+Для зняття **напівобхвату стегон**, горизонтально виміряйте найширшу частину сідниць, починаючи з одного бокового шва, через сідниці та закінчуючи протилежним боковим швом.
 
-Make sure to keep the tape measure horizontal while doing so. In other words, parallel to the floor.
+Переконайтеся, що стрічка знаходиться в горизонтальному положенні. Іншими словами, паралельно підлозі.

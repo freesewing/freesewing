@@ -1,10 +1,10 @@
 ---
-title: "Visor angle"
+title: "Angle de la visière"
 ---
 
 ***
 
-The arc angle used to draft the inner curve of the visor
+L'angle d'arc utilisé pour tracer la courbe intérieure de la visière
 
 ## Effet de cette option sur le motif
 

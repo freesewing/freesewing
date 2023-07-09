@@ -1,6 +1,6 @@
----
-title: "Rise"
----
+- - -
+title: "Hauteur"
+- - -
 
 Cette option contrôle la hauteur de la taille.
 

@@ -1,8 +1,8 @@
----
+- - -
 title: "Horizontal pocket placement"
----
+- - -
 
-Controls the location of the pockets horizontally (more left or right).
+Contrôle l'emplacement des poches horizontalement (plus à gauche ou à droite).
 
 ## Effet de cette option sur le motif
 

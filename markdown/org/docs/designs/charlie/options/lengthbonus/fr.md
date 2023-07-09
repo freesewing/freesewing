@@ -1,8 +1,8 @@
----
+- - -
 titre : "Longueur supplémentaire"
----
+- - -
 
-Controls the length of the entire trousers, which essentially means the length of the legs.
+Contrôle la longueur du pantalon entier, ce qui signifie essentiellement la longueur des jambes.
 
 <Note>
 

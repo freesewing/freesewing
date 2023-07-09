@@ -1,11 +1,11 @@
----
+- - -
 title: "Waralee wrap pants: Cutting Instructions"
----
+- - -
 
 <Note>
 
 Waralee consists of two mirrored pieces of fabric.
-They are basically big rectangles with pieces missing.
+Sie sind im Grunde große Rechtecke mit fehlenden Stücken.
 As such, it is easier to print out the part you need to cut out and measure the rest,
 than it is to print out everything and cut the pattern the traditional way.
 
@@ -15,9 +15,9 @@ You will need to print out the pockets and pocket facings in the traditional way
 
 </Note>
 
-### Materials
+### Materialien
 
-- **Main fabric**
+- **Oberstoff**
   - Cut **2 pants** parts.
   - (Optional) Cut **2 Pocket** parts on the fold.
   - Cut **4 backPocket** parts
@@ -37,9 +37,9 @@ Da es sich dabei nur um ein paar Rechtecke handelt (mit einer geschlitzten Seite
 
 Part 2 has a negative seam allowance, since you'll be using it opposite of what you normally use the pattern parts for.
 
-If you opt for the cut-out method, use the paperless view to see all the dimensions of the pattern.
-You will need to cut a narrow strip out from what will become the front, and a small triangle and strip from what will become the back.
-And in the middle between these will be the little cut-out pattern piece.
-Make sure you measure this correctly, and you have the fabric squared before you start cutting.
+Wenn Sie sich für die Ausschnittmethode entscheiden, verwenden Sie die papierlose Ansicht um alle Abmessungen des Musters zu sehen.
+Du musst einen schmalen Streifen von der Vorderseite schneiden, und ein kleines Dreieck und Streifen von dem, was wird der Rücken.
+Und in der Mitte zwischen diesen wird das kleine Ausschnittmusterstück sein.
+Vergewissern Sie sich, dass Sie dies richtig messen und dass Sie den Stoff quadriert haben, bevor Sie mit dem Schneiden beginnen.
 
 </Tip>

@@ -1,12 +1,12 @@
----
+- - -
 title: "Sleevecap Q2 downward spread"
----
+- - -
 
 ***
 
-![The downward spread in the second quadrant of the sleevecap](./sleevecapq2spread1.svg)
+![De neerwaartse spreiding in de tweede quadrant van de mouwkop](./sleevecapq2spread1.svg)
 
-This option controls the downward spread in the second quadrant of the sleevecap.
+Deze optie controleert de neerwaartse spreiding in de tweede quadrant van de mouwkop.
 
 <Tip>
 
@@ -17,4 +17,4 @@ kijk hoe de mouwkop is opgebouwd en hoe de invloed van de verschillende opties o
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_sleevecapq2spread1_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](brian_sleevecapq2spread1_sample.svg "Effect van deze optie op het patroon")

@@ -1,8 +1,8 @@
----
+- - -
 title: "Sleevecap ease"
----
+- - -
 
-How much sleevecap ease do you want?
+Wie viel Ärmel-Leichtigkeit möchtest du?
 
 > #### Was ist der Punkt?
 > 
@@ -14,4 +14,4 @@ How much sleevecap ease do you want?
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bent_sleevecapease_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](bent_sleevecapease_sample.svg "Effekt dieser Variable auf das Schnittmuster")

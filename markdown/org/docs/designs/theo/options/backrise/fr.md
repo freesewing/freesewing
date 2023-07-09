@@ -1,6 +1,6 @@
----
-title: "Back rise"
----
+- - -
+title: "Hauteur du dos"
+- - -
 
 ![Élévation arrière](backrise.svg)
 

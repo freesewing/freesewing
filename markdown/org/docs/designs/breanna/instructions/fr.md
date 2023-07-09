@@ -1,6 +1,6 @@
----
+- - -
 titre : "Bloc de corps pour Breanna : Instructions de couture"
----
+- - -
 
 <Note>
 

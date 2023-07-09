@@ -1,9 +1,9 @@
----
+- - -
 title: "Crotch seam bend"
----
+- - -
 
-Controls the curvature of the croth seam, which influences the fit at your crotch.
+Controla la curvatura de la costura de la costra, que influye en el encaje de su cosecha.
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_crotchseamcurvebend_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](charlie_crotchseamcurvebend_sample.svg "Efecto de esta opción en el patrón")

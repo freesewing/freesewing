@@ -1,6 +1,6 @@
----
+- - -
 title: "Tamiko top: Sewing Instructions"
----
+- - -
 
 ### Étape 1 : Terminer l'emmanchure
 
@@ -21,6 +21,6 @@ Comme ça, votre top ne va pas bouger pendant que nous le finissons.
 
 - Coudre les trois lignes de couture qui sont marquées sur votre patron. F-H, C et I-J dans le diagramme, représentés par des lignes et des encoches sur le modèle.
 
-### Step 3: Enjoy!
+### Étape 3: Profitez-en!
 
 Vous pouvez maintenant enfiler votre nouveau top, qui a généré zéro déchets!

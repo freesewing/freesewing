@@ -1,13 +1,13 @@
----
+- - -
 title: "Titan trouser block: Sewing Instructions"
----
+- - -
 
 <Note>
 
 ###### Titan is a block, not a pattern
 
 A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Ils sont parfois aussi appelés patrons de base, bien que les puristes soutiennent qu'un bloc et un patron de base sont des choses différentes.
 
 Blocks are typically not made as-is but rather serve as a basis for other patterns so the instructions below will not go in depth about closures or finishes and are for the default Titan block.
 
@@ -15,10 +15,10 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 
 ### Etape 1 : Construction de la maquette
 
-- Join the outseam (the seam that runs along the side of your leg) of the front and back.
-- Join the inseam (the seam the runs along the inside of your legs) of the front and back.
-- You now have a leg. Repeat for the other leg, **making certain they are mirror images of each other**.
-- Turn one leg with the good side in, and the other with the good side out.
+- Rejoignez la couture extérieure (la couture qui coule le long du côté de votre jambe) de l'avant et de l'arrière.
+- Rejoignez la couture (la couture la couture le long de l'intérieur de vos jambes) de l'avant et de l'arrière.
+- Vous avez maintenant une jambe. Repeat for the other leg, **making certain they are mirror images of each other**.
+- Tournez une jambe avec le bon côté dedans et l'autre avec le bon côté.
 - Now tuck the _good side out_ into the _good side in_ leg, so that they have their _good sides together_.
 - Align and sew the cross seam.
 

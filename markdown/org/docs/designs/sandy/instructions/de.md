@@ -1,11 +1,11 @@
----
+- - -
 title: "Sandy circle skirt: Sewing Instructions"
----
+- - -
 
 <Warning>
 
 Due to the different styles and configurations of Sandy you may find you need to skip or re-order certain steps.
-We're not going to go into a full explanation on how to create all the individual details that make up a circle skirt. These instructions assume that you know how to sew a zipper, construct pockets, etc. If not, there are numerous excellent articles available on the web, both in writen form, and on video. If you do get stuck, you can always reach out to [other FreeSewers](https://discord.freesewing.org/) in our discord.
+We're not going to go into a full explanation on how to create all the individual details that make up a circle skirt. These instructions assume that you know how to sew a zipper, construct pockets, etc. Wenn nicht, gibt es im Web zahlreiche ausgezeichnete Artikel, sowohl in schriftlicher Form als auch auf Video. If you do get stuck, you can always reach out to [other FreeSewers](https://discord.freesewing.org/) in our discord.
 
 </Warning>
 
@@ -52,7 +52,7 @@ Du machst eine nahtlose Version.
 - _Baste_ Lining to skirt at waist.
 - Bei Bedarf Die Weite in Falten legen.
 
-## Schritt 4: Der Bund
+## Der Bund
 
 ### Verschlüsse
 
@@ -93,7 +93,7 @@ __Other closures__
 - With _good sides together_ attach the waistband to the skirt along the unpressed seam. Trim seam.
 - Press waistband and seam allowance up away from skirt.
 - Press the waistband to the inside along the fold-line/seam-line.
-- _Edgestitch_ the waistband in place.
+- Steppe den Bund knappkantig ab.
 - Alternatively you can _Slipstitch_ or _Whipstitch_ the waistband in place on the inside.
 - Cut the elastic to your waist.
 - Thread the elastic through the opening of the waistband making sure not to lose the end.
@@ -115,9 +115,9 @@ There are many ways to hem/face the bottom of a skirt, If you have a prefered me
 
 </Note>
 
-## Step 6: Enjoy!
+## Schritt 6: Viel Spaß!
 
-You are all done! Now go enjoy your wonderful new skirt and try not to get too dizzy showing off it's fullness!
+Du bist fertig! Now go enjoy your wonderful new skirt and try not to get too dizzy showing off it's fullness!
 
 <Note>
 

@@ -1,8 +1,8 @@
----
+- - -
 titre : "Facteur de profondeur d'emmanchure"
----
+- - -
 
-![The armhole depth factor on Brian](./armholedepthfactor.svg)
+![Le facteur de profondeur de l'armure sur Brian](./armholedepthfactor.svg)
 
 Cette option permet de contrôler la profondeur de l'emmanchure.
 

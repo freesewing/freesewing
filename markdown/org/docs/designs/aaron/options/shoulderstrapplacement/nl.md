@@ -1,6 +1,6 @@
----
-title: "Shoulderstrap placement"
----
+- - -
+title: "Plaatsing schouderband"
+- - -
 
 ![De optie voor de locatie van de schouderband bij Aaron](./shoulderstrapplacement.svg)
 

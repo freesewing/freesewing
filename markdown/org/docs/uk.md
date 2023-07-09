@@ -1,18 +1,18 @@
 ---
-title: Documentation
+title: Документація
 ---
 
-Welcome to the FreeSewing documentation for makers. Here you will find all the [documentation for our various designs](/docs/designs) as well as [how to take measurements](/docs/measurements/), documentation for [various sewing terms and techniques](/docs/sewing/).
+Ласкаво просимо до документації FreeSewing для розробників. Тут ви знайдете всю [документацію для наших різноманітних дизайнів](/docs/designs) як , так і [, як знімати мірки](/docs/measurements/), документацію для [різних термінів і технік шиття](/docs/sewing/).
 
-If you're new to FreeSewing, please take a moment to read the [getting started documentation](/docs/guide/).
+Якщо ви новачок у FreeSewing, будь ласка, знайдіть хвилинку, щоб прочитати документацію про початок роботи [та](/docs/guide/).
 
 <ReadMore />
 
 <Tip>
 
-If you're looking for
-developer/contributor docs, please refer to
-[FreeSewing.dev](https://freesewing.dev/) instead.
+Якщо ви шукаєте документи для розробників/контрибуторів
+, замість цього зверніться до
+[FreeSewing.dev](https://freesewing.dev/).
 
 </Tip>
 

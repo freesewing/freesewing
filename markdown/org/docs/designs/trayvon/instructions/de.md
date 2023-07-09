@@ -1,6 +1,6 @@
----
+- - -
 title: "Trayvon tie: Sewing Instructions"
----
+- - -
 
 <Tip>
 
@@ -25,99 +25,99 @@ Es ist immer eine gute Idee, dein Bügeleisen auf ein paar Stoffresten zu testen
 
 ### Schritt 1: Nähen Sie die erste Seite Ihres Krawattenschwanzes
 
-![Sew the first side of the tie tail](step01.png)
+![Nähen Sie die erste Seite des Krawatten](step01.png)
 
-Align the lining tail (piece 6) on top of the fabric tail (piece 4), good sides together
+Ausrichten des Futter Schwanzes (Teil 6) auf dem Stoff Schwanz (Teil 4), gute Seiten zusammen
 
-Shift the lining tail along a side running up the tail until the notch on the lining tail matches the notch on the fabric tail.
+Verschieben Sie den Futter-Schwanz entlang einer Seite, die den Schwanz nach oben zieht, bis die Note auf dem Futterschwanz mit der Note auf dem Stoff übereinstimmt.
 
-Sew in place, starting precisely at the matched notch, along the edge. Make sure to backtack on both sides.
+Nähen Sie am Platz, beginnend genau an der gleichnamigen Stelle, entlang der Kante. Achten Sie darauf, dass Sie auf beiden Seiten Backtack betreiben.
 
-Two notches are now fixed the same spot.
+Zwei Noten sind nun an der gleichen Stelle fixiert.
 
 ### Schritt 2: Nähen Sie die zweite Seite Ihres Krawattenschwanzes
 
-![Sew the second side of your tie tail](step02.png)
+![Nähe die zweite Seite deines Krawattenschwanzes](step02.png)
 
-Shift the fabric tail so that the second notch lines up with the notch on the lining tail (the place where your first seam started).
+Verschieben Sie den Stoff Schwanz, so dass die zweite Schicht mit der Note auf dem Futter Schwanz (dem Ort, an dem Ihre erste Naht begonnen hat).
 
-This will require you to fold a bit of the tie fabric out of the way, under the seam you make in step one.
+Dazu musst du ein bisschen aus dem Stoff herausklappen, unter der Naht, die du in Schritt eins machst.
 
-Sew in place, starting precisely at the matched notch, making sure to get a straight angle with your seam from step 1.
+Nähen Sie am Platz, beginnend genau an der passenden Note, um einen geraden Winkel mit Ihrer Naht von Schritt 1 zu erhalten.
 
-Now, all three notches are fixed the same spot.
+Jetzt sind alle drei Noten an der gleichen Stelle fixiert.
 
 ### Schritt 3: Beende den Krawatten
 
-![Finish the tie tail](step03.png)
+![Schließe den Krawatten ab](step03.png)
 
-Fold your tie open so that the two seams you made in step 1 and 2 lie on top of each other. Take care to fold it precisely; the folded edges should make a straight angle.
+Falten Sie Ihre Krawatte offen, so dass die beiden Nähte, die Sie in Schritt 1 und 2 gemacht haben, übereinander liegen. Achten Sie darauf, sie präzise zu falten; die gefalteten Kanten sollten einen geraden Winkel bilden.
 
-Sew the point where the three notches and your two seams converge to the folded edge of the Fabric tip (part 4, on the left in the image).
+Nähen Sie den Punkt, an dem sich die drei Nocken und Ihre beiden Nähte an den gefalteten Rand der Stoffspitze aneinander (Teil 4, auf der linken Seite im Bild).
 
 ### Schritt 4: Schalte den Schwanz inside-out und überprüfe deine Arbeit
 
-![Turn the tail inside-out and inspect your work](step04.png)
+![Schalte den Schwanz inside-out und überprüfe deine Arbeit](step04.png)
 
-After you've trimmed all threads, carefully flip your tail inside-out (technically you are flipping it outside-out as it is inside out now).
+Nachdem Sie alle Fäden ausgeschnitten haben, werfen Sie Ihren Schwanz nach innen sorgfältig aus (technisch gesehen wenden Sie ihn draußen aus, da er jetzt draussen ist).
 
-If needed, you can gently push out the tip with a ruler.
+Bei Bedarf können Sie den Tipp vorsichtig mit einem Lineal ausschieben.
 
-Your tail should look like the picture, with a sharp point and straight edges.
+Ihr Schwanz sollte wie das Bild aussehen, mit einem scharfen Punkt und geraden Kanten.
 
-The seam where the tie fabric meets the tie lining does not sit at the edge of the tie but it sits a bit back, staying out of sight.
+Die Naht, in der der Stoff mit dem Krawattenfutter trifft, sitzt nicht am Rand der Krawatte, sondern sitzt ein bisschen zurück aus dem Blickwinkel zu bleiben.
 
-If you managed to do all of this, you can do it again for the tip of your tie.
+Wenn Sie all dies geschafft haben, können Sie es wieder für die Spitze Ihrer Krawatte tun.
 
 ### Schritt 5: Nähen Sie die erste Seite Ihrer Krawatte
 
-![Sew the first side of your tie tip](step01.png)
+![Nähen Sie die erste Seite Ihres Krawattentipp](step01.png)
 
-Align the lining tip (piece 5) on top of the fabric tip (piece 3), good sides together
+Aussenspitze ausrichten (Teil 5) oben auf der Stoffspitze (Teil 3), gute Seiten zusammen
 
-Shift the lining tip along a side running up the tip until the notch on the lining tip matches the notch on the fabric tip.
+Verschieben Sie den Futterspitze entlang einer Seite, die den Tipp nach oben zieht, bis die Aussenspitze mit der Aussenspitze übereinstimmt.
 
-Sew in place, starting precisely at the matched notch, along the edge. Make sure to backtack on both sides.
+Nähen Sie am Platz, beginnend genau an der gleichnamigen Stelle, entlang der Kante. Achten Sie darauf, dass Sie auf beiden Seiten Backtack betreiben.
 
-Two notches are now fixed the same spot.
+Zwei Noten sind nun an der gleichen Stelle fixiert.
 
 ### Schritt 6: Nähen Sie die zweite Seite Ihres Krawattentipps
 
-![Sew the second side of your tie tip](step02.png)
+![Nähe die zweite Seite deines Krawattentipps](step02.png)
 
-Shift the fabric tip so that the second notch lines up with the notch on the lining tip (the place where your first seam started).
+Verschieben Sie die Stoffspitze so dass die zweite Stirn mit der Note auf der Aussenspitze (die Stelle, an der Ihre erste Naht begonnen hat).
 
-This will require you to fold a bit of the tie fabric out of the way, under the seam you make in step five.
+Dazu musst du ein bisschen aus dem Stoff herausklappen, unter der Naht, die du in Schritt 5 herstellst.
 
-Sew in place, starting precisely at the matched notch, making sure to get a straight angle with your seam from step 5.
+Nähen Sie am Platz, beginnend genau an der passenden Note, um einen geraden Winkel mit Ihrer Naht aus Schritt 5 zu erhalten.
 
-Now, all three notches are fixed the same spot.
+Jetzt sind alle drei Noten an der gleichen Stelle fixiert.
 
 ### Schritt 7: Beende den Krawatte Tipp
 
-![Finish the tie tip](step03.png)
+![Beende den Krawatte Tipp](step03.png)
 
-Fold your tie open so that the two seams you made in step 5 and 6 lie on top of each other. Take care to fold it precisely; the folded edges should make a straight angle.
+Falten Sie Ihre Krawatte offen, so dass die beiden Nähte, die Sie in Schritt 5 und 6 gemacht haben, übereinander liegen. Achten Sie darauf, sie präzise zu falten; die gefalteten Kanten sollten einen geraden Winkel bilden.
 
-Sew the point where the three notches and your two seams converge to the folded edge of the Fabric tip (part 3, on the left in the image).
+Nähen Sie den Punkt, an dem sich die drei Nocken und Ihre beiden Nähte an den gefalteten Rand der Stoffspitze aneinander (Teil 3, auf der linken Seite im Bild).
 
 ### Schritt 8: Schalte den Tipp inside-out und überprüfe deine Arbeit
 
-![Turn the tip inside-out and inspect your work](step04.png)
+![Schalte den Tipp inside-out und überprüfe deine Arbeit](step04.png)
 
-After you've trimmed all threads, carefully flip your tip inside-out (technically you are flipping it outside-out as it is inside out now).
+Nachdem Sie alle Fäden ausgeschnitten haben, werfen Sie vorsichtig Ihren Tipp inside-out (technisch sind Sie dabei, ihn nach außen zu kippen, da er jetzt draussen ist).
 
-If needed, you can gently push out the tip with a ruler.
+Bei Bedarf können Sie den Tipp vorsichtig mit einem Lineal ausschieben.
 
-Your tip should look like the picture, with a sharp point and straight edges.
+Ihr Tipp sollte wie das Bild aussehen, mit einem scharfen Punkt und geraden Kanten.
 
-The seam where the tie fabric meets the tie lining does not sit at the edge of the tie but it sits a bit back, staying out of sight.
+Die Naht, in der der Stoff mit dem Krawattenfutter trifft, sitzt nicht am Rand der Krawatte, sondern sitzt ein bisschen zurück aus dem Blickwinkel zu bleiben.
 
 ### Schritt 9: Join the tie interfacing
 
-![Join the tie interfacing](step09.png)
+![Schließen Sie sich der Schnür-Schnittstelle an](step09.png)
 
-Join Interfacing tip (piece 1) and Interfacing tail (piece 2) together on the non-pointy side, matching the notch.
+Schließen Sie die Schnittstellenspitze (Teil 1) und den Interfacing Schwanz (Teil 2) zusammen auf der nicht punktuellen Seite, passend zur Note.
 
 > **Or don't** To be honest, I never join the interfacing. Ich lasse nur beide Hälften ohne Anhang.
 > 
@@ -127,51 +127,51 @@ Join Interfacing tip (piece 1) and Interfacing tail (piece 2) together on the no
 
 ### Schritt 10: Schließe dich dem Stoff an
 
-![Join the tie fabric](step10.png)
+![Schließe dich dem Stoff an](step10.png)
 
 > Mit der Nähung der Schnittstelle wird nun die Länge unserer Krawatte festgelegt. Messen Sie die Krawatte zu Spitze und stellen Sie sicher, dass Sie die Stoffstücke in der richtigen Länge verbinden.
 
-Join the tip and tail fabric together on the non-pointy side.
+Schließen Sie die Spitze und den Heckstoff zusammen auf der non-pointy Seite.
 
 ### Schritt 11: Stelle deine Schlingschleife her
 
-![Make your tie loop](step11.png)
+![Machen Sie Ihre Krawatte Schleife](step11.png)
 
-We are going to construct the Loop (piece 7) of our tie now.
+Wir werden jetzt die Schleife bauen (Teil 7) unserer Krawatte.
 
-Fold the fabric as shown in the illustration. You need to end up with a narrow strip of fabric that has its ends tucked to the inside.
+Falten Sie den Stoff wie in der Illustration gezeigt. Du musst am Ende einen schmalen Stoffstreifen haben, der seine Enden an der Innenseite verklebt hat.
 
-Make sure to have one edge a little bit shorter. This will be the back side.
+Achten Sie darauf, eine Kante ein wenig kürzer zu haben. Dies wird die Rückseite sein.
 
-While folding, reach for your iron and give it a good press so things stay in place. Also press the final loop before sewing it.
+Während des falten, erreichen Sie für Ihr Eisen und geben es eine gute Presse, so dass die Dinge in Platz. Drücken Sie auch die Endschleife vor dem Nähen.
 
 > Vorsicht beim Drängen, denken Sie an den dringenden Rat, den ich vorhin gegeben habe
 
-When you're happy with how you folded and pressed your loop, hand-sew along the edge with a slipstitch to keep things in place.
+Wenn du zufrieden bist mit der Art und Weise, wie du deine Schleife geklappt und gedrückt hast, die Hand am Rand mit einem Slipstitch näht, um die Dinge an der Stelle zu halten.
 
 ### Schritt 12: Ordnen Sie Ihre Bindung an
 
-![Assemble your tie](step12.png)
+![Setze deine Krawatte](step12.png)
 
-Time to start putting things together. Place your tie on a flat surface, good side down, lining up.
+Es ist Zeit, die Dinge zusammenzustellen. Legen Sie Ihre Krawatte auf eine flache Oberfläche, gut seitlich runter, aufstellen.
 
-Now take your tie interfacing, and place it in your tie with the seam allowance in the middle facing upwards. Make sure to slide it between your fabric and lining on each side, all the way to the tip.
+Nun nehmen Sie Ihre Krawatte und legen Sie sie in Ihrer Krawatte mit der Nahtzuweisung in der Mitte nach oben. Achten Sie darauf, dass Sie ihn zwischen Ihrem Stoff und Futter auf jeder Seite gleiten, bis zur Spitze.
 
 ### Schritt 13: Fallen und drücken Sie Ihr Krawatt
 
-![Fold and press your tie](step13.png)
+![Falten und drücken Sie Ihre Krawatte](step13.png)
 
-With your tie interfacing inserted in your tie fabric, fold over one side of the fabric over the interfacing.
+Mit der in Ihrem Krawattengewebe eingesetzten Verbindung, falten Sie über eine Seite des Stoffes über die Schnittstelle.
 
-You want to fold it snugly around the interfacing, but without moving the interfacing, which should stay in the middle.
+Sie wollen ihn schräg um die Schnittstelle falten, aber ohne die Schnittstelle, die in der Mitte bleiben soll.
 
-When you're done, press your fold. Because of the tie interfacing, you're not pressing a sharp crease here, the main point is to shape the fabric to be more eager to stay folder around the interfacing.
+Wenn Sie fertig sind, drücken Sie Ihren Falten. Wegen der Krawatten-Schnittstelle drückst du hier keine scharfe Falte der Hauptpunkt ist es, den Stoff so zu formen, dass er eifriger ist, um den Ordner um die Schnittstelle zu halten.
 
 > Da wir hier keine scharfe Frechheit drücken, sondern den Stoff stärker formen, funktioniert ein Dampfeisen am besten.
 
-When you have completed one side, fold back the other side, and steam again.
+Wenn Sie die eine Seite abgeschlossen haben, klappen Sie die andere Seite, und Dampf wieder zurück.
 
-Finally, fold back the top layer along the middle of your tie, and press in place. This time, you are making a sharp crease along the middle of the tie.
+Schließlich, falten Sie die obere Ebene entlang der Mitte der Krawatte, und drücken Sie an Ort und Stelle. Dieses Mal machen Sie eine scharfe Frechheit entlang der Mitte der Krawatte.
 
 > Um den Unterschied zwischen den beiden letzten Falten zu klären, Ich habe eine dunkle Linie in das Bild eingefügt, die den Rand des Stoffes markiert.
 > 
@@ -181,40 +181,40 @@ Finally, fold back the top layer along the middle of your tie, and press in plac
 
 ### Schritt 14: Bereite die Schleife vor
 
-![Prepare the loop](step14.png)
+![Die Schleife vorbereiten](step14.png)
 
-Fold your loop so the tail of your tie can pass through it with some room.
+Falte deine Schleife so dass der Schwanz deiner Krawatte mit etwas Platz durch sie gehen kann.
 
-Mark the point where the loop ends join, and sew them together.
+Markiere den Punkt, an dem die Schleife endet, und nähe sie zusammen.
 
-Finally, press your loop open so the seam sits in the middle, and the ends point to one side.
+Drücken Sie schließlich Ihre Schleife offen, damit die Naht in der Mitte sitzt und die Enden auf eine Seite zeigen.
 
 ### Schritt 15: Steckstich und Schleife einfügen
 
-![Slip-stitch tie, and insert loop](step15.png)
+![Klebeband und Schleife einfügen](step15.png)
 
-Use a slip stitch to hand sew your tie all along the length of the back.
+Nähen Sie mit einem Rutschstich Ihren Krawatten entlang der Rückenlänge.
 
 > Ihr Rutschstich sollte nur den Stoff auf der Rückseite fangen. Refrain von der Ausführung durch die Krawatten-Schnittstelle.
 > 
 > Seien Sie vorsichtig, wenn Sie den Stich zu tief, es könnte auf der Vorderseite zeigen und zerstören Sie Ihre Krawatte.
 
-Make sure to slide in your loop, somewhere around 1/5th of the tie length, starting from the tip.
+Achten Sie darauf, dass Sie in Ihre Schleife gleiten, etwa 1/5 der Krawatte Länge, beginnend von der Spitze.
 
-Use your slip stitch to secure the loop in place on the center seam; we'll fix the edges of the loop in the next step.
+Benutzen Sie Ihren Schlaufstich um die Schleife an der Mitte zu befestigen; wir fixieren die Kanten der Schleife im nächsten Schritt.
 
 ### Schritt 16: Sichere die Schleifenkanten
 
-![Secure the loop edges](step16.png)
+![Die Schleifenkanten sichern](step16.png)
 
-Hand sew the edges of the loop to your tie, so it stays in place nicely.
+Hand nähen Sie die Kanten der Schleife an Ihre Krawatte, so dass sie an Ort und Stelle bleibt.
 
-Make sure to sew only the bottom layer of the loop, so the stitches don't show on the loop.
+Stellen Sie sicher, dass Sie nur die untere Schicht der Schleife nähen, so dass die Hefte nicht auf der Schleife angezeigt werden.
 
-And, once again, be careful not to run your stitches through your tie. Be shallow.
+Und noch einmal: Seien Sie vorsichtig und lassen Sie Ihre Nähte nicht durch Ihre Krawatte laufen. Sei flach.
 
 ### Schritt 17: Trimmen und aufräumen
 
-![Trim and clean up](step17.png)
+![Trimmen und aufräumen](step17.png)
 
-Trim any loose threads you might have.
+Schneiden Sie alle losen Threads die Sie haben könnten.

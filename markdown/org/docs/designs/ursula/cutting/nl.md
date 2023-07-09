@@ -1,8 +1,8 @@
----
+- - -
 title: "Ursula undies: Cutting Instructions"
----
+- - -
 
-Ursula consists of a front, a back, and a lined gusset.
+Ursula bestaat uit een voorpand, een achterkant en een hellende gusset.
 
 - **Buitenstof**
   - Knip **1 voorpand**

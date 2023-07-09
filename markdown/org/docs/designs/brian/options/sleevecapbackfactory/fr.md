@@ -1,10 +1,10 @@
----
-title: "Sleevecap back Y"
----
+- - -
+titre : "Retour de manchon Y"
+- - -
 
-![The vertical location of the back inflection point](./sleevecapbackfactory.svg)
+![La position verticale du point de flexion arrière](./sleevecapbackfactory.svg)
 
-This option controls the vertical placement of the sleevecap inflection point at the back of the sleeve.
+Cette option contrôle la position verticale du point de flexion du tête de manche à l'arrière de la manche.
 
 <Tip>
 

@@ -1,11 +1,11 @@
----
+- - -
 title: "Theo trousers: Fabric Options"
----
+- - -
 
-You have a lot of options here, but keep in mind that these are classic cut trousers. In other words, do not use stretch, denim, pleather of that sort of thing. Safe bets are wool, cotton, or linen, possibly blended with some synthetic.
+Hier haben Sie viele Optionen, aber beachten Sie, dass es sich um klassische Schnürhosen handelt. Mit anderen Worten, verwenden Sie nicht Stretch, Denim, Pleder dieser Art von Dingen. Sichere Wetten sind Wolle, Baumwolle oder Leinen, möglicherweise mit einigen synthetischen Mischungen.
 
-For **wool**, look in the suiting section of your fabric store. If this is your first pair, some wool-poly blend is most likely going to be more budget-friendly. But don't let price alone guide you, buying some cheap whimsical fabric is the best way to come up with a shitty looking pair of trousers, and get frustrated in the process.
+Für **Wolle**schauen Sie in den passenden Bereich Ihres Stoffes. Wenn dies Ihr erstes Paar ist, wird eine Woll-Poly-Mischung wahrscheinlich budgetfreundlicher sein. Aber lassen Sie sich nicht allein von Preis leiten Der Kauf eines billigen Whimsical Stoffes ist der beste Weg, um ein schmutziges Paar von Hosen zu finden und frustriert in diesem Prozess.
 
-For **cotton**, go for a heavier weight. Cotton might also be a bit easier on the beginner than wool. If unsure what to use, ask for chino in the fabric store and simply pick a colour you like.
+Für **Baumwolle**gehen Sie auf ein schwereres Gewicht. Baumwolle kann auch am Anfänger etwas einfacher sein als Wolle. Wenn Sie sich nicht sicher sind, was Sie verwenden sollen, fragen Sie im Stoff nach dem Chinino und wählen Sie einfach eine Farbe, die Ihnen gefällt.
 
-Nothing beats **linen** on a hot summer day. It's fun to work with too, but it does wrinkle like a mofo, and even the most neatly made trousers look somewhat messy when made in linen. What I'm saying is, maybe not for your first pair.
+Nichts schlägt **Leinen** an einem heißen Sommertag. Es macht Spaß auch mit zu arbeiten, aber es faltet wie ein Mofo, und sogar die am besten hergestellte Hose sieht etwas chaotisch aus, wenn sie in Leinen gemacht wird. Was ich sage, ist vielleicht nicht für Ihr erstes Paar.

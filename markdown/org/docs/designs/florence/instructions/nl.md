@@ -1,12 +1,12 @@
----
+- - -
 title: "Florence face mask: Sewing Instructions"
----
+- - -
 
 ### Stap 1: Sluit de midden naad
 
 Join the curved seam that is center of our mask by placing the _good sides together_ and sewing them in place.
 
-![Join the center seam](step1.svg)
+![Bevestig de middennaad](step1.svg)
 
 <Note>Herhaal deze stap voor zowel de (buiten) stof als voor de voering.</Note>
 
@@ -19,15 +19,15 @@ Dus als je daar niet te veel over doet, kan je het overslaan.
 
 </Note>
 
-Press the seam allowance on the center seam open so the seam lies nice and flat.
+Strijk de naadwaarde aan de middennaad open zodat de naad plat ligt.
 
-As this is a curved seam, it won't lay flat. But you can approach it with your iron from one side, then do the second half from the other side. Alternatively, you can use a tailor's ham or cushion to press.
+Aangezien dit een gebogen naad is, zal het niet plat liggen. Maar je kunt het wel benaderen met ijzer aan de ene kant, en dan de tweede helft aan de andere kant. Als alternatief kun je de ham van een kleermaker of kussen gebruiken voor de pers.
 
 <Note>Herhaal deze stap voor zowel de (buiten) stof als voor de voering.</Note>
 
 ### Stap 3: Stik de buitenste aan de binnenstof en bevestig lintjes
 
-![Join the inner to the outer fabric](step3.svg)
+![Bevestig de voering aan de buitenstof](step3.svg)
 
 Now we will sew the inner (lining) fabric to the outer (main) fabric, and attach the ribbons all in one step.
 
@@ -44,7 +44,7 @@ linten invoegen terwijl je een hoek nadert.
 
 </Tip>
 
-Now sew around the mask, making sure to leave one side open so we can turn the mask inside-out later.
+Stik nu rond het masker, let op dat je één kant open laat zodat we het masker binnenstebuiten kunnen draaien.
 
 <Warning>
 
@@ -56,9 +56,9 @@ de maskers van je laag om ze buiten de weg te houden.
 
 ### Step 4: Draai het masker binnenstebuiten
 
-Actually, your mask is inside-out now, so turning it inside out will mean we get it outside-out, or regular.
+Eigenlijk draaien we het buitenstebuiten, want het is momenteel binnenstebuiten.
 
-Just reach in through the side your left open and carefully pull the mask through to turn it.
+Gebruik de opening aan de zijkant om voorzichtig het hele masker door de opening te halen zodat de goede kant van de stof tevoorschijn komt.
 
 ### Stap 5 (optioneel): Druk op het masker
 
@@ -69,20 +69,20 @@ Dus als je daar niet te veel over doet, kan je het overslaan.
 
 </Note>
 
-Now that the mask is as it should be, it's time to press it. Before doing so, make sure to fold the seam allowance of the side we left open inwards, so that we press it flat as if it was sewn.
+Nu dat ons masker met de goede kant naar buiten zit is het tijd om te persen.  Before doing so, make sure to fold the seam allowance of the side we left open inwards, so that we press it flat as if it was sewn.
 
 ### Stap 6: Sluit de zijkant van het masker, en skik helemaal rondom
 
-![Edge-stitch around the mask](step6.svg)
+![Stik helemaal rondom het masker op het randje](step6.svg)
 
-Now it's time to close the side of our mask the we left open to turn it inside out.
+Nu is het tijd om de kant van ons masker te sluiten dat we openstonden om het binnen te draaien.
 
 We are not merely going to close the opening, but also edge-stitch around the entire mask to give our mask some extra stability, and keep the lining at the back.
 
-Make sure the open side is folded neatly inside, then edge-stitch around the entire mask.
+Zorg er voor dat de naadwaarde aan de opening aan de zijjant netjes naar binnen is gevouwd, stik dan helemaal rond het masker, net naast het randje.
 
 ### Stap 7: Draag je masker of maak een stelletje
 
-That's it, you're done! You can now wear your mask.
+Dat is het, je bent klaar! Je kunt nu je masker dragen.
 
-Even better, make a bunch so you can give others masks too.
+Maak nog beter, zodat je ook andere maskers kunt geven.

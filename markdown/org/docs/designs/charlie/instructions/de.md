@@ -1,16 +1,16 @@
----
+- - -
 title: "Charlie chinos: Sewing Instructions"
----
+- - -
 
 ## Schritt 1: Nähe den hinteren Abnäher
 
-First thing we're going to do is close the waist dart on the back panel.
+Als erstes werden wir den Taillendart auf der Rückseite schließen.
 
-To do so, fold the back panel double with _good sides together_ making sure to match both sides of the dart on top of each other.
+Dazu falten Sie die Rückseite doppelt mit _guten Seiten zusammen_ und stellen Sie sicher, dass beide Seiten des Darts übereinander übereinstimmen.
 
 Now sew the dart close, making sure to use a small stitch length, and to sew all the way to the end of the dart, even a couple of stitches off the fabric.
 
-![Closed darts](step01.svg)
+![Geschlossene Abnäher](step01.svg)
 
 <Note>
 
@@ -20,7 +20,7 @@ Deine hinteren Abnäher sollten dieselbe Länge haben. Achte darauf, sie präzis
 
 ## Schritt 2: Konstruiere die hinteren Taschen
 
-Follow [our double welt pocket instructions](/docs/sewing/double-welt-pockets/) to create the back welt pockets.
+Schau dir [unsere Anleitung für die Doppelpaspeltasche](/docs/sewing/double-welt-pockets/) an, um die hinteren Paspeltaschen zu erstellen.
 
 <Note>
 
@@ -34,17 +34,17 @@ the instructions) but it's a very typical finish for chinos, and makes it easier
 
 Join the back pocket facing to the pocket bag by placing them with _good sides together_ and sewing along the longest of the non-curved seams of the facing.
 
-When you're done, press the seam allowance to the side of the pocket bag.
+Wenn Sie fertig sind, drücken Sie die Naht auf die Seite der Tasche Tasche.
 
 ### Befestige die hintere Tasche
 
-Sew the bottom of the pocket bag to the bottom welt. Press it down when done.
+Nähen Sie den Untergrund der Tasche auf die untere Schweißnaht. Drücke es herunter, wenn du fertig bist.
 
-Now align the top of the pocket bag with the waist and sew it down in the waist's seam allowance.
+Nähen Sie nun die Oberseite der Tasche mit der Taille ab und nähen Sie sie in der Taille.
 
 ### Tasche zurück schließen
 
-Fold the leg panel out of the way so you can close both sides of the pocket bag.
+Schließen Sie die Beinleiste aus dem Fenster, damit Sie beide Seiten der Tasche schließen können.
 
 <Note>
 
@@ -52,7 +52,7 @@ Stelle sicher, dass du auch die Tasche nach unten schweißen kannst
 
 </Note>
 
-You should overlock/serge the sides of the pocketbag so they don't ravel.
+Du solltest die Seiten des Taschenbeutels übersperren/austreten, damit sie nicht wüllen.
 
 <Tip>
 
@@ -62,7 +62,7 @@ Wenn du keine _Overlock/Serger_ hast, kannst du stattdessen immer einen Zick-Zac
 
 ## Schritt 3: Übersperren Sie Vorder- und Rückkanten
 
-Before we go any further, we'll overlock/serge the edges of the front and back panels of the legs. Make sure to also catch the top of the pocket bag when doing the back panels.
+Bevor wir weiter gehen, werden wir die Kanten der Vorder- und Rückenplatten der Beine übersichten/verschlossen. Achten Sie darauf, dass Sie auch die Oberseite der Tasche bei der Rückseite der Tasche anfangen.
 
 What we want to to prevent these edges from ravelling after we've completed our trousers, and now is the best time to do so.
 
@@ -70,13 +70,13 @@ What we want to to prevent these edges from ravelling after we've completed our 
 
 ## Schritt 4: Erstellen Sie die Vordertasche öffnen
 
-The front pockets are a little unusual because they have the appearance of classic slanted pockets, but are constructed on the side seam.
+Die vorderen Taschen sind etwas ungewöhnlich, weil sie das Aussehen der klassischen Schlanktaschen haben, aber auf der Seitennaht konstruiert sind.
 
 ### Befestigen Sie die Fronttasche mit den Taschentaschen
 
-We have two front pocket bags, that each have two pieces of facing to attach to them.
+Wir haben zwei Taschen vor der Tasche zu befestigen, die jeweils zwei Gestelle haben.
 
-Align them with _good sides together_ (\*) and sew the facing in place.
+Legen Sie sie mit _guten Seiten zusammen_ (\*) und nähen Sie das Gesicht an der Stelle.
 
 <Note>
 
@@ -93,17 +93,17 @@ Hier gibt es keine richtige oder falsche Antwort. Sie tun das.
 
 ### Markieren Sie die Taschenlampe an der Verkleidung der Tasche und Vorder- und Rückenbeinplatten
 
-There's a notch on both front and back leg panels that indicates up to what point the pocket facing should be attached to the side seam.
+Auf den Vorder- und Rückenplatten gibt es eine Note, die bis zu dem Punkt anzeigt, an dem die Tasche an der Seitennaht befestigt werden soll.
 
-Make sure to transfer this notch to both the (edge of the) pocket facing and the front trouser leg, since it's important we match them.
+Achten Sie darauf, diese Nocke sowohl auf die (Kante) Tasche als auch auf das vorderen Hosenbein, da es wichtig ist, dass wir sie passen.
 
 ![Pocket facings with notches](step04b.svg)
 
 ### Die Tasche an der Vorder- und Rückenbeinleiste anheften oder stützen
 
-Both on the front and the back leg panel, we're going to sew the pocket facing to the side seam.
+Sowohl auf der Vorderseite als auch auf der hinteren Beinplatte werden wir die Tasche mit der Seitennaht nähen.
 
-However, this needs to be precise, so you really want to make sure you either pin or baste it in place.
+Dies muss jedoch genau sein, so dass Sie wirklich sicherstellen wollen, dass Sie ihn entweder anpinnen oder einfügen.
 
 <Note>
 
@@ -115,11 +115,11 @@ Beginnen Sie mit der Front, denn das ist die einfachere Naht. Sobald du eine Üb
 
 ### Nähen Sie die Vordertasche
 
-Sew from the waist down right until the notch that indicates where to stop.
+Nähen Sie von der Taille nach rechts bis zur Note, die anzeigt, wo Sie anhalten sollen.
 
 ### Drücken Sie die Vordertasche
 
-Now press the slant of the front pocket, both on the back and front panel, so that it's a sharp crease.
+Drücken Sie nun die Schrägheit der Vordertasche, sowohl auf der Rückseite als auch auf der Vordertafel, so dass es eine scharfe Falte ist.
 
 ![Pressed front pocket slant](step04d.svg)
 
@@ -129,41 +129,41 @@ Now press the slant of the front pocket, both on the back and front panel, so th
 
 I strongly advise you to baste the pocket shut/in place before sewing this seam so that you know it's precise.
 
-Closing the outseam means to place front and back panel with good sides together, and sew the outer seam. That's easy enough at the legs, but at the top we have our pocket, which complicates things.
+Das Schließen des Aussenseams bedeutet, die Vorder- und Rückseite mit guten Seiten zusammenzulegen und die Außennaht zu nähen. Das ist einfach genug an den Beinen, aber oben haben wir unsere Tasche, die die Dinge kompliziert.
 
 ### Nähen Sie die Oberseite der Außennaht bis in die obere Schicht der Tasche
 
-Make sure everything is neatly aligned. Then sew from the top of the waist down to the top notch (this is just over a cm or half an inch).
+Vergewissern Sie sich, dass alles sauber aufeinander abgestimmt ist. Nähen Sie dann von der Oberseite der Taille bis zur Oberstufe (dies ist etwas über einem cm oder einem halben Zoll).
 
 ![Outer seam sewn until top notch](step05a.svg)
 
 ### Nähen Sie den Boden der Außennaht von der unteren Schicht der Tasche
 
-Now move to the bottom notch of the pocket slant, and sew from there all the way to the bottom of the legs.
+Gehen Sie nun auf die untere Stufe der Taschenschlange, und nähen Sie von dort bis zum unteren Ende der Beine.
 
 ![Outer seam sewn from lower pocket notch down](step05b.svg)
 
 ### Drücke die äußere Naht geöffnet
 
-When you're done, make sure to press the seam allowance open along the leg. Don't press the pocket, we already did that.
+Wenn du fertig bist, drücke die Nahtzuweisung entlang des Beines auf. Drücken Sie nicht die Tasche, wir haben das bereits getan.
 
 ## Schritt 6: Beende die Tasche vorne
 
 ### Nähttasche nach innen
 
-With our pocket opening constructed and outer seam closed, we should now finish the pocket bag.
+Nachdem unsere Taschenöffnung gebaut und die Außennaht geschlossen ist, sollten wir nun die Tasche fertigen.
 
-Pull the pocket bag out so that it dangles on the outside of the trouser leg. Then place both halves together and either use a serger to finish the edge, or sew closely to the edge.
+Ziehen Sie die Tasche heraus, so dass sie auf der Außenseite des Hosenbeins hängt. Then place both halves together and either use a serger to finish the edge, or sew closely to the edge.
 
-Make sure you end up at the point where the bottom part of the outer seam starts.
+Stellen Sie sicher, dass Sie an dem Punkt ankommen, an dem der untere Teil der äußeren Naht beginnt.
 
 ![Pocket bag, sewn closed](step06a.svg)
 
 ### Beende Tasche Kante
 
-When you're done, you can flip the pocket bag back to the inside of the trouser leg.
+Wenn du fertig bist, kannst du die Tasche zurück zur Innenseite des Hosenbeins drehen.
 
-Our pocket bag is now closed, but when we put our hand in it, you can feel the raw edge of the seam allowance. To avoid that, topstitch along the edge of the pocket bag, locking in the seam allowance.
+Unsere Tasche ist jetzt geschlossen, aber wenn wir unsere Hand in sie stecken, können Sie die rohe Kante der Naht zu spüren. Um dies zu vermeiden, stechen Sie am Rand der Tasche entlang und verriegeln Sie in der Nahtzugabe.
 
 <Note>
 Wenn Ihre Naht breit ist, sollten Sie sie vielleicht zuerst zurückschneiden.
@@ -173,29 +173,29 @@ Wenn Ihre Naht breit ist, sollten Sie sie vielleicht zuerst zurückschneiden.
 
 ## Schritt 7: Bar-Tack die Tasche öffnen
 
-At the place the leg down with the good side up, making sure the pocket bag lies flat and towards the front panel.
+An der Stelle befindet sich das Bein mit der guten Seite nach oben, um sicherzustellen, dass die Tasche flach und in Richtung der Frontplatte liegt.
 
-Now at the top and bottom of the pocket opening, place a bar-tack perpendicular to the outer seam.
+Nun oben und unten der Taschenöffnung, legen Sie einen Bar-Tack senkrecht zur Außennaht.
 
 ![Bar tacks at pocket openings](step07.svg)
 
 ## Schritt 8: Inseam schließen
 
-With our front pockets finished, close the inseam of both legs.
+Mit unserer vorderen Tasche schließen Sie die InNaht beider Beine.
 
-When you're done, press open the inseam.
+Wenn du fertig bist, drücke die Inseam zu öffnen.
 
 ![Closed inseams](step08.svg)
 
 ## Schritt 9: Kreuzung schließen
 
-Make sure one leg is turned with the good side out, and the other has the good side in.
+Vergewissern Sie sich, dass ein Bein mit der guten Seite gedreht wird, und die andere mit der guten Seite.
 
-Now tuck the leg with the good side out inside the leg that has the good side in. This way, they have their good sides against each other.
+Now tuck the leg with the good side out inside the leg that has the good side in. Auf diese Weise haben sie ihre guten Seiten gegeneinander.
 
-Align the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. Stop at the lowest fly notch.
+Align the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. Halten Sie an der niedrigsten Flugnotch Halt.
 
-When you're done. Do it again. Always sew the cross seam twice. It's one of those best practices you ignore at your own peril.
+Wenn du fertig bist. Machen Sie es erneut. Die Kreuznaht immer zweimal nähen. Es ist eine der besten Praktiken, die Sie auf eigene Gefahr ignorieren.
 
 <Tip>
 
@@ -210,51 +210,51 @@ Richtig zu sein ist eines der Dinge, die du am Ende jedes Mal hochschätzst, wen
 
 ### Fliegenverlängerung schließen
 
-Fold the fly extension on its fold line with good sides together.
+Falten Sie die Fliegenverlängerung auf ihrer Faltlinie mit guten Seiten zusammen.
 
-Now sew along the bottom, to close the fly extension.
+Nähen Sie nun entlang der Unterseite, um die Fliegenverlängerung zu schließen.
 
-Trim back one half of the seam allowance to remove bulk before turning it good side out and pressing.
+Schneiden Sie eine Hälfte des Nahtzuges zurück, um Schüttgut zu entfernen, bevor Sie es gut seitlich ausdrehen und drücken.
 
 ### Bediene die Fliegenverlängerung und fliege nach vorne
 
-Serge (or zig-zag) along the open side of the fly extension. No need to serge the top as that will get caught in our waistband.
+Serge (oder Zick-Zack) entlang der offenen Seite der Fliegenverlängerung. Keine Notwendigkeit, die Spitze zu sergen, da die in unserer Taille gefangen werden.
 
-while you're at it, also serge along the entirety of the fly facings J-shaped edge.
+während Sie dabei sind, auch entlang der gesamten Fliegenverkleidungen J-förmige Kante.
 
 ### Ausschneiden der zusätzlichen Naht auf der Vorderseite des linken Beins
 
-There's extra seam allowance that runs along the fly. We only need this on the right leg panel. Cut it away on the left panel so you're left with the regular seam allowance only.
+Es gibt zusätzliche Nahtzustand, die entlang des Flusses verläuft. Das brauchen wir nur auf dem rechten Beinfeld. Schneiden Sie es auf der linken Leiste ab, damit Sie nur noch die reguläre Naht haben.
 
 ### Fliegenanhang anhängen
 
-Sew the fly facing to the left front. Place them with good sides together, aligning the top.
+Nähen Sie die Fliege nach links vorne. Place them with good sides together, aligning the top.
 
 ### In der Spitze der Fliegenfront stecken
 
-Fold the bottom of the fly facing seam allowance inwards and secure with a few stitches.
+Klappen Sie die Naht nach innen hin und sicher mit ein paar Nähten.
 
 ### Kantenstich die Fliege mit Blick auf die Naht
 
-Sew the fly facing to the seam allowance. Make sure to leave the front panel out of it.
+Nähen Sie den fliegenden Blick auf die Nahtzufuhr. Vergewissern Sie sich, dass Sie die Frontleiste aus der Vorderseite herauslassen.
 
 ### Drücken Sie Quernaht, Fliegenrichtung und Fliegenkante
 
-Press open the cross seam. Press the fly facing to the side.
+Drücken Sie die Kreuznaht öffnen. Drücken Sie die Fliege zur Seite.
 
-Then, fold over the extra seam allowance on the right front leg and press it down.
+Dann falten Sie über die zusätzliche Nahtmenge auf der rechten Vorderseite und drücken Sie sie nach unten.
 
 ### Füge den Reißverschluss in die Fly-Erweiterung ein
 
-Place the zipper along the (slightly curved) edge of the fly extension.
+Legen Sie den Reißverschluss am (leicht gebogenen) Rand der Fliegenverlängerung.
 
-Now sew along the edge. No need to get close to the zipper, just sew along the edge to hold them in place.
+Nähen Sie nun entlang der Kante. Es ist nicht nötig, den Reißverschluss näher zu bringen, sondern nur am Rand entlang nähen, um ihn an der Stelle zu halten.
 
 ### Reißverschluss am Hosenstall befestigen
 
-Now place the right front leg's fly with the extra seam allowance that you folded back on top of the zip.
+Platzieren Sie nun die rechte Vorderschenkel mit dem zusätzlichen Nahtzustand, den Sie auf der Zippe hinten gefaltet haben.
 
-Use a zipper foot edge-stitch the folded-over edge along the zipper edge.
+Benutzen Sie einen Reißverschluss, der Kante am Reißverschluss.
 
 <Tip>
 
@@ -264,19 +264,19 @@ Vielleicht solltest du diese zuerst einfügen, um sicher zu gehen, dass sie sch�
 
 ### Nähen Sie den Reißverschluss zur Fliege
 
-Now sew the other side of the zipper to the fly facing. Make sure to align it properly so that when the trousers are closed, the zip is hidden.
+Nähen Sie nun die andere Seite des Reißverschlusses. Make sure to align it properly so that when the trousers are closed, the zip is hidden.
 
 ### Beende die Kreuznaht
 
-Sew the last bit of the cross seam up to the highest fly notch.
+Nähen Sie das letzte Stück der Kreuznaht bis zur höchsten Fliegenpunkte.
 
 ### Nähen Sie die J-Naht der Fliege
 
-Now topstitch the so-called J-seam of the fly. Make sure to keep the fly extension out of the way.
+Jetzt die so genannte J-Naht der Fliege aufstitten. Achten Sie darauf, die Fliegenverlängerung aus dem Weg zu räumen.
 
 ### Bar tackt den unteren Rand des Fliegens
 
-Now bartack the very botton of the J-seam (the horizontal part) but this time make sure to also catch the fly extension.
+Jetzt die Flasche der J-Naht (das horizontale Teil), aber dieses Mal vergewissern Sie sich auch, die Fliegenverlängerung zu fangen.
 
 ## Schritt 11: Befestige die Gürtelschlaufen
 
@@ -290,17 +290,17 @@ Für die Effizienz werden wir einen langen Streifen Gurtschleifen in 8 Teile zer
 
 Cut a strip 80cm long (32 inch) and 2.8cm wide (1 1/8 inch).
 
-Serge (or zigzag) the long edge of the strip on both sides.
+Serge (oder Zickzag) den langen Rand des Streifens auf beiden Seiten.
 
-Fold one side inwards, and the other side over it. Then press down with your iron. The end result should be a long strip about 1cm wide.
+Falte eine Seite nach innen, und die andere Seite darüber. Drücken Sie dann mit Ihrem Eisen herunter. Das Endergebnis sollte ein langer Streifen etwa 1cm breit sein.
 
-Now sew along the entire length of the strip, smack in the middle of it. Make sure to use a generous stitch length for this.
+Nähen Sie nun entlang der gesamten Länge des Streifens, riechen Sie in der Mitte. Achten Sie darauf, dafür eine großzügige Heftlänge zu verwenden.
 
-Finally, cut your length belt loops strip into 8 equal parts to make 8 belt loops.
+Schneiden Sie schließlich Ihre Längenschleifen in 8 gleiche Teile ab, um 8 Gurtschleifen zu bilden.
 
 ### Befestige die Gürtelschlaufen
 
-We're going to divide our belt loops along the waist:
+Wir werden unsere Gürtelschleifen entlang der Taille teilen:
 
 - 2 in der Mitte hinten, die jeweils ein bisschen von der Mitte beiseite gesetzt, so dass es eine kleine Lücke zwischen ihnen.
 - 1 über dem Rückendart auf jeder Seite
@@ -313,9 +313,9 @@ Place the belt loop at these places with their good side down (against the good 
 
 ### Kurvenband anordnen
 
-If you're making a straight waistband, skip directly to attaching the waistband to the outside.
+Wenn Sie eine geradlinige Taille herstellen, springen Sie direkt an die Außenseite des Taillenbandes.
 
-Place both waistbands with good sides together, and sew along the top of the waistband (the shorter edge).
+Legen Sie beide Bänder mit guten Seiten zusammen und nähen Sie an der Spitze der Taille (die kürzere Kante).
 
 Trim the seam allowance of the inner waistband, and press all seam allowances towards the inner waistband.
 
@@ -328,41 +328,41 @@ Nähen Sie eine Linie des Nähens auf der Innenbund, in der Nähe der Kante, dur
 
 ### Taillenband an die Außenseite anhängen
 
-Place the waistband with good sides together along the waist. For the straight waistband, make sure the side with the standard seam allowance is aligned with the waist, and not the side with double seam allowance.
+Legen Sie die Taille mit guten Seiten zusammen entlang der Taille. For the straight waistband, make sure the side with the standard seam allowance is aligned with the waist, and not the side with double seam allowance.
 
-Also make sure to leave suffucient seam allowance beyond the start and end of the waistband.
+Achten Sie auch darauf, ausreichend Naht über den Anfang und das Ende der Taille zu lassen.
 
-Sew along the entirety of the waist, attaching the waist band and sewing down the belt loops in one go.
+Nähen Sie die gesamte Taille entlang und befestigen Sie das Taillenband und nähen Sie die Gürtelschleifen in einem Schritt.
 
 ### Drücke die Taille und falte die Taille
 
-Press the seam you just sewed, pressing the seam allowance up into the waistband.
+Drücken Sie die Naht, die Sie gerade genäht, drücken Sie die Naht in die Taille.
 
-Now fold over the waistband at the correct width and press in the crease.
+Nun falten Sie über den Bund in der richtigen Breite und drücken Sie in der Breche.
 
 ### Schließen Sie den Start und das Ende der Taille.
 
 At the start and end, fold the waistband over so it has its good sides together.
 
-Now sew the end shut by sewing top to bottom to just the point where the waistband seam ends.
+Nähen Sie nun das Ende mit dem Nähen von oben nach unten zu dem Punkt, an dem die Taillendicke endet.
 
-Trim back the seam allowance a bit so you can tuck it all into the waistband later.
+Schneiden Sie die Naht ein bisschen zurück, damit Sie sie später in die Taille stecken können.
 
 ### Taillenband einfügen
 
-The waistband has extra seam allowance here, and we're going to use that to our advantage.
+Das Taillenband hat hier extra Naht und wir werden das zu unserem Vorteil verwenden.
 
-Fold the waistband in the fold you pressed. Then on the inside, fold the seam allowance inwards, making sure to let it run a few mm beyond the waistband seam.
+Legen Sie die Taille in die Falte, die Sie gedrückt haben. Dann nach innen falten Sie die Nahtzuweisung nach innen und sorgen Sie dafür, dass sie ein paar mm über die Taillendicke hinaus laufen lässt.
 
-You want to baste this in place so it stays put as you make your way around the waistband.
+Du möchtest dies an Ort und Stelle platzieren, so dass es so bleibt, wie du dich um die Taille herum bewegst.
 
-At the start and end of the waistband, you'll need to tuck in some more seam allowance. Take a moment to get it right.
+Am Anfang und Ende der Taille müssen Sie noch etwas mehr Nahtzufuhr haben. Nehmen Sie sich einen Moment Zeit, um es richtig zu machen.
 
 ### Die Taille schließen
 
-Now with the good side up, sew exactly in the seam that was sewn before (so called _stitch in the ditch_).
+Nun mit der guten Seite nach oben, nähen genau in der Naht, die zuvor genäht wurde (so genannter _Stich im Graben_).
 
-This will catch the back of the waistband which we've made to extend slightly further, and lock all the seam allowance inside.
+Dies wird die Rückseite des Taillenbands, das wir gemacht haben, um etwas weiter zu verlängern, und die gesamte Nahtzuweisung im Inneren verriegeln.
 
 ## Schritt 13: Die Bandschleifen fertigstellen
 
@@ -374,11 +374,11 @@ For this, let the waistband lie flat, and sew it down with a bartack 1.5cm or so
 
 ### Nach oben, wieder unten und nach unten nähen
 
-Now fold the belt loops upwards (hiding the bartack you just did).
+Falten Sie nun die Gürtelschleifen nach oben (verstecken Sie den Bartack, den Sie gerade gemacht haben).
 
-They'll extend beyond the top of the waistband. So fold the excess down again. Don't fold it over/around the waistband, but fold it double on itself.
+Sie werden über die Oberseite der Taille hinausgehen. Also falten Sie den Überschuss wieder nach unten. Falten Sie ihn nicht über die Taille, sondern verdoppeln Sie ihn auf sich selbst.
 
-Now do a bartack along the top of the waistband to lock the belt loop in place.
+Führen Sie nun einen Bartack entlang der Oberseite der Taille, um die Gurtschleife zu verriegeln.
 
 When you're done, carefully twist the back of the beltloop to the front and cut off the excess right next to the bartack.
 
@@ -392,14 +392,14 @@ Achten Sie darauf, nicht die Vorderseite Ihrer Hose auf die Rückseite zu verdr�
 
 ## Schritt 14: Hem die Hosen
 
-Fold the hem allowance halfway up, and press. Then fold them again, and press again.
+Falten Sie die Saumerlaubnis auf halbem Weg nach oben, und drücken Sie sie. Dann falten Sie sie wieder und drücken Sie erneut.
 
-Finalize by hand and blind hem your trousers.
+Fertige mit der Hand und blinden Saum deine Hosen.
 
 ## Schritt 15: Button auf Knopfloch
 
-Create a buttonhole. Either by hand (it's worth practicing) or with a machine.
+Erstelle ein Knopfloch. Entweder von Hand (es lohnt sich zu üben) oder mit einer Maschine.
 
-Finally, attach the button.
+Schließlich, hängen Sie den Knopf.
 
-Now take a moment to appreciate all the hard work you did. We hope you'll get a lot of use out of these.
+Nehmen Sie sich jetzt einen Moment Zeit, um all die harte Arbeit zu schätzen, die Sie geleistet haben. We hope you'll get a lot of use out of these.

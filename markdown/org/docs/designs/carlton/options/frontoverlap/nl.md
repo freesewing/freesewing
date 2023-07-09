@@ -1,9 +1,9 @@
----
+- - -
 title: "Front overlap"
----
+- - -
 
-Controls how much the right and left front of the garment overlap at the center front.
+Bepaalt hoeveel de rechter- en voorkant van het kledingstuk overlappen aan de middenvoor.
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlton_frontoverlap_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](carlton_frontoverlap_sample.svg "Effect van deze optie op het patroon")

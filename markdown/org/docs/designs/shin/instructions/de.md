@@ -1,6 +1,6 @@
----
+- - -
 title: "Shin swim trunks: Sewing Instructions"
----
+- - -
 
 > ### Bilder kommen bald
 > 
@@ -8,19 +8,19 @@ title: "Shin swim trunks: Sewing Instructions"
 
 ## Schritt 1: Betrete die Rückseite
 
-Put your two backs on top of each other with the good sides together, and sew them together allong the center back seam.
+Legen Sie Ihre zwei Rücken auf einander mit den guten Seiten zusammen, und nähen Sie sie zusammen allong die Mitte hinten.
 
 ## Schritt 2: Trete den Fronten bei
 
 ### Nähen Sie die Vordernaht
 
-Put two of your fronts on top of each other with the good sides together, and sew them together allong the center front seam.
+Legen Sie zwei Ihrer Fronten zusammen mit den guten Seiten auf einander und nähen Sie sie zusammen allong die Mitte Frontnaht.
 
-Repeat with the two other fronts so you have two identical sets.
+Wiederholen Sie sich mit den beiden anderen Fronten, so dass Sie zwei identische Sets haben.
 
 ### Fronten zusammen einfügen
 
-We have 4 fronts because we'll have a double layer at the front of our swim trunks.
+Wir haben 4 Fronten, weil wir eine Doppelschicht an der Vorderseite unserer Schwimmstämme haben.
 
 Since swimwear fabric tends to be slippery, it's a good idea to baste your fronts together to make it easier to work with them in the next steps.
 
@@ -28,7 +28,7 @@ So place your fronts on top of each other, with good sides out, and sew them tog
 
 ## Schritt 3: Trete den Seiten bei
 
-Place your back down with the good side up, and place your double front layer on top. Sew fronts and back together at the side seams.
+Legen Sie den Rücken nach unten mit der guten Seite nach oben und legen Sie die doppelte Frontschicht auf oben. Nähte Fronten und zurück an den Seitennahten.
 
 ## Schritt 4: Nähen Sie die Quernähte
 
@@ -36,9 +36,9 @@ Keep your swim trunks with the good side inwards (the back at least, the front h
 
 ## Schritt 5: Stellen Sie die Ösen für die Zeichenfolge ein
 
-Mark the middle of your waistband length. Fold the waistband double, and mark the middle of the width (do not take the seam allowance into account).
+Markieren Sie die Mitte Ihrer Taillenlänge. Fold the waistband double, and mark the middle of the width (do not take the seam allowance into account).
 
-A bit to the left and right of this, you can add two eyelets to pass a drawstring through. This will avoid an embarassing situation when you go for that big dive and now suddenly find your swim trunks on your ankles.
+Ein bisschen nach links und rechts davon können Sie zwei Ösen hinzufügen, um eine Zeichenfolge durchzulassen. This will avoid an embarassing situation when you go for that big dive and now suddenly find your swim trunks on your ankles.
 
 > ### Am besten kannst du Verstärkung hinzufügen
 > 
@@ -46,27 +46,27 @@ A bit to the left and right of this, you can add two eyelets to pass a drawstrin
 
 ## Schritt 6: Bereiten Sie die elastische Vorbereitung
 
-There's no magic formula for the length of your elastic. So you wrap it around your waist and pull it tight until you get a good fit.
+Es gibt keine Zauberformel für die Länge Ihrer Elastik. So you wrap it around your waist and pull it tight until you get a good fit.
 
-Mark this length, cut the elastic, and join the two ends together.
+Markieren Sie diese Länge, schneiden Sie die elastische und verbinden Sie die beiden Enden zusammen.
 
 ## Schritt 7: Betrete die Taille
 
-Fold the waistband in half with good sides together and line of the (short) edges. Sew them together.
+Falten Sie die Taille mit guten Seiten zusammen und Linie der (kurzen) Kanten. Nähen Sie sie zusammen.
 
 ## Schritt 8: Hänge die Taille an
 
-Fold your waistband double along the length with good sides out, and place the elastic inside. Make sure to align the place where the elastic is joined with the place the waistband is joined.
+Falten Sie Ihre Taille doppelt entlang der Länge mit guten Seiten aus, und legen Sie die elastische Innenseite. Achten Sie darauf, dass Sie den Platz ausrichten, an dem die Elastik mit dem Platz verbunden ist, an dem das Taillenband verbunden ist.
 
-Align the back of your swim trunks with the place where you joined the waistband, align the edge of the waistband with the edge of the back, and pin them together. Make certain that you pin it to the bad side of the back.
+Align the back of your swim trunks with the place where you joined the waistband, align the edge of the waistband with the edge of the back, and pin them together. Vergewissern Sie sich, dass Sie es auf der schlechten Seite des Rückens befestigen.
 
 > ### Denken Sie an Ihre Ösen
 > 
 > If you've made eyelets in your waistband, double check that they are placed towards the outside, not the inside of your waistband.
 
-Find the front of the waistband (easy if there's eyelets, if not just fold it double) and align that with the front seam. Pin this in place too.
+Find the front of the waistband (easy if there's eyelets, if not just fold it double) and align that with the front seam. Pin dies auch an Platz.
 
-Now make your way around the swim trunks waist, pinning the waistband in place.
+Jetzt gehen Sie durch die Taille der Schwimmstämme, die die Taille der Taille anpinnen.
 
 Then, sew the waistband to the swim trunks, as close to the the elastic as you can, but don't sew into the elastic.
 
@@ -74,7 +74,7 @@ It's fine to not sew too close the first time around, and once your elastic is a
 
 ## Schritt 9: Hem die Beine
 
-Fold the hem upwards, and sew it down. If you have a coverlock, use it. If not, use a twin needle or zig-zag stitch to keep the seam stretchable.
+Falte den Saum nach oben und nähe ihn fest. Wenn du eine Coverlock hast, verwende sie. Wenn nicht, verwenden Sie eine Zick-Zick-Zick-Zack-Nadelstichung, um die Naht dehnbar zu halten.
 
 > ### Nur einmal falten, um Masse zu vermeiden
 > 
@@ -82,6 +82,6 @@ Fold the hem upwards, and sew it down. If you have a coverlock, use it. If not, 
 
 ## Schritt 10: Thread eine Zeichenfolge um die Taille herum
 
-Thread a drawstring through one eyelet, around the waist, and out of the other eyelet.
+Gewinde eine Zeichenfolge durch ein Auge, um die Taille, und aus dem anderen Auge.
 
-That's it, you're done 👍
+Das war's, du bist fertig 👍

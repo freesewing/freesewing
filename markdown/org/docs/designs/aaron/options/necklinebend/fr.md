@@ -1,6 +1,6 @@
----
+- - -
 titre : "Forme du décolleté"
----
+- - -
 
 ![L'option de forme d'encolure sur Aaron](./necklinebend.svg)
 

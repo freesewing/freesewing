@@ -1,11 +1,11 @@
----
+- - -
 title: "Across back factor"
----
+- - -
 
-![Across back factor](./acrossbackfactor.svg)
+![Rückenweitenverhältnis](./acrossbackfactor.svg)
 
-Controls your across back width as a factor of your shoulder to shoulder measurement
+Steuert die Rückenbreite als Faktor der Schultermessung
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlton_acrossbackfactor_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](carlton_acrossbackfactor_sample.svg "Effekt dieser Option auf das Schnittmuster")

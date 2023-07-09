@@ -1,10 +1,10 @@
----
+- - -
 titre : "aisance thoracique"
----
+- - -
 
-![The chest ease factor on Brian](./chestease.svg)
+![L'aisance poitrine pour Brian](./chestease.svg)
 
-This option controls the ease at your chest.
+Cette option contrôle l'aisance au niveau de la poitrine.
 
 ## Effet de cette option sur le motif
 

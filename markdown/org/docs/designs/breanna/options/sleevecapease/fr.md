@@ -1,8 +1,8 @@
----
-title: "Sleevecap ease"
----
+- - -
+titre : "Aisance de la tête de manche"
+- - -
 
-Determines the amount of sleevecap ease.
+Détermine la quantité de tête de manche facilement.
 
 <Note>
 

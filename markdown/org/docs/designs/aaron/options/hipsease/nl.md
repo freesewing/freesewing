@@ -1,6 +1,6 @@
----
-title: "Hips ease"
----
+- - -
+title: "Overwijdte heupen"
+- - -
 
 ![De optie voor overwijdte aan de heupen bij Aaron](./hipsease.svg)
 

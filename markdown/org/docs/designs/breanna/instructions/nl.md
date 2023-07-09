@@ -1,6 +1,6 @@
----
+- - -
 title: "Breanna body block: Sewing Instructions"
----
+- - -
 
 <Note>
 
@@ -19,7 +19,7 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 - Sluit de achterste nepen.
 - Sew the front to the backs at the shoulders good sides together.
 - Matching notches, sew the sleeves to the shoulder good sides together.
-- Sew the side seams _good sides together_.
+- Sew the side seams good sides together.
 
 <Note>
 

@@ -1,6 +1,6 @@
----
-title: "Number of buttons"
----
+- - -
+titre : "Nombre de boutons"
+- - -
 
 Contrôle la quantité de boutons.
 

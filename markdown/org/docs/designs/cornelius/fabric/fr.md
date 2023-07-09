@@ -1,33 +1,33 @@
----
-title: "Cornelius cycling breeches: Fabric Options"
----
+- - -
+titre : "Culotte cycliste Cornélius : Options de tissu"
+- - -
 
 ### Tissu principal
 
-Any **bottom (trouser) weight material** will work fine for this pattern. Generally you want to avoid anything that is over 7oz (230gsm) as this will more likely be too stiff and uncomfortable. You want something that provides a bit of warmth whilst still being able to drape such as **Corduroy** or **Medium Weight Suiting** fabrics. If you are looking for someting more historically correct, then **Medium weight wool suiting** is the way to go. **Linen** is also an option, especially if you would like something that isn't too warm.
+N'importe quel tissu lourd **pour le bas (pantalon)** conviendra parfaitement à ce modèle. En règle générale, il est préférable d'éviter les produits de plus de 230 g/m², car ils seront probablement trop rigides et inconfortables. Vous voulez quelque chose qui apporte un peu de chaleur tout en étant capable de se draper, comme les tissus en **velours côtelé ** ou **les tissus de poids moyen**. Si vous recherchez quelque chose de plus historiquement correct, les **combinaisons en laine de poids moyen** sont ce qu'il vous faut. Le **Lin** est également une option, surtout si vous souhaitez quelque chose qui ne soit pas trop chaud.
 
 <Note>
 
-Remember that this garment is intended for cycling so needs to be able to move with your legs when pedalling!
+N'oubliez pas que ce vêtement est destiné à la pratique du cyclisme et qu'il doit donc pouvoir bouger avec vos jambes lorsque vous pédalez !
 
 </Note>
 
-### Lining (Pocket) Fabric
+### Tissu de la doublure (poche)
 
-Basic **Cotton** will do the trick for the pocket bags. If you got left over cotton from another project you can easily use it up for these pockets. Remember that these are intended for cycling so you don't want anything too fancy.
+Le **coton basique ** fera l'affaire pour les sacs de poche. S'il vous reste du coton d'un autre projet, vous pouvez facilement l'utiliser pour ces poches. N'oubliez pas qu'ils sont destinés à la pratique du cyclisme et qu'il n'est donc pas nécessaire d'avoir un équipement trop sophistiqué.
 
 <Note>
 
-If you have anything you typically use for pockets in trousers that will work too.
+Si vous avez quelque chose que vous utilisez habituellement pour les poches des pantalons, cela conviendra également.
 
 </Note>
 
 ### Entoilage
 
-This pattern requires the waistband to be interfaced. We recommend using a **Hair Cloth** for the interfacing, you can either use fusible or non-fusible which ever you prefer. If you do not have access to hair cloth you can use any medium to firm interfacing you deem appropriate for waistbands.
+Ce patron exige que la ceinture soit interfacée. Pour l'entoilage, nous vous recommandons d'utiliser une **toile à cheveux**. Vous pouvez utiliser un entoilage thermocollant ou non thermocollant, selon votre préférence. Si vous n'avez pas accès à du tissu à cheveux, vous pouvez utiliser n'importe quel entoilage moyen à ferme que vous jugez approprié pour les ceintures.
 
 <Note>
 
-If your main fabric is quite light, you may need to interface your leg bands and zipper guard with a light weight interfacing.
+Si votre tissu principal est assez léger, vous devrez peut-être interfacer vos bandes de jambe et votre protection de fermeture éclair avec un entoilage léger.
 
 </Note>

@@ -1,11 +1,11 @@
----
+- - -
 title: "Back drop"
----
+- - -
 
-![The back drop option on Cathrin](./backdrop.svg)
+![Die Rückwärtsdrop-Option auf Cathrin](./backdrop.svg)
 
-This option determines how far the center back will be lowered at the bottom of your corset.
+Diese Option legt fest, wie weit die Mitte zurück unten am Korsett gesenkt wird.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_backdrop_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](cathrin_backdrop_sample.svg "Effekt dieser Option auf das Schnittmuster")

@@ -1,10 +1,10 @@
----
+- - -
 title: "Lapel reduction"
----
+- - -
 
-Controls how much the lapel tip goes inwards.
+Contrôle combien la pointe de la patte va à l'intérieur.
 
-It is common to have the edge of the lapels not be entirely straight, but rather turn inwards a bit towards the top of the lapels. This option controls by how much it does that.
+It is common to have the edge of the lapels not be entirely straight, but rather turn inwards a bit towards the top of the lapels. Cette option contrôle dans quelle mesure elle fait cela.
 
 ## Effet de cette option sur le motif
 

@@ -1,6 +1,6 @@
----
+- - -
 title: "Bent body Block: Sewing Instructions"
----
+- - -
 
 <Note>
 
@@ -49,7 +49,7 @@ If you are making adjustments you may wish to sew the seams _wrong sides togethe
 
 If you do not have someone to help with pinning alterations, you can use a dressform to pin any alterations that are hard to do on person. Just remember to try it on after to make sure it fits you.
 
-Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. Things like these are signs of where the pattern may need adjusting.
+Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. Solche Dinge sind Zeichen dafür, wo das Schnittmuster möglicherweise angepasst werden muss.
 
 Sometimes you may need to wear the mock-up for an extended amount of time to get a better sense of the fit so don't be afraid to walk around in it for a couple of hours.
 
@@ -71,7 +71,7 @@ It is all up to you! Experiment and go forth!
 ### Schritt 3: Erstelle ein Papierschnittmuster
 
 - Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
-- Now you have a pattern you can use to produce a garment.
+- Jetzt hast du ein Schnittmuster, das du verwenden kannst um Kleidungsstücke herzustellen.
 
 <Note>
 

@@ -1,8 +1,8 @@
----
+- - -
 title: "Chest pocket width"
----
+- - -
 
-Controls the width of the chest pocket.
+Contrôle la largeur de la poche de la poitrine.
 
 ## Effet de cette option sur le motif
 

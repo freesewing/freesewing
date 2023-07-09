@@ -1,6 +1,6 @@
----
+- - -
 title: "Nœud papillon Benjamin : ce dont vous avez besoin"
----
+- - -
 
 Pour réaliser Benjamin, vous aurez besoin de :
 

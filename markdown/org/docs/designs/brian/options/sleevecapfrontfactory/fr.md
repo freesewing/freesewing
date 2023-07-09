@@ -1,12 +1,12 @@
----
-title: "Sleevecap front Y"
----
+- - -
+title:"Tête de manche devant Y"
+- - -
 
 ***
 
-![The vertical location of the front inflection point](./sleevecapfrontfactory.svg)
+![La position verticale du point de flexion avant](./sleevecapfrontfactory.svg)
 
-This option controls the vertical placement of the sleevecap inflection point at the front of the sleeve.
+Cette option contrôle la position verticale du point de flexion du tête de manche à l'avant de la manche.
 
 <Tip>
 

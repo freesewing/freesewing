@@ -1,17 +1,17 @@
----
+- - -
 title: "Back rise"
----
+- - -
 
-![The back rise option on Cathrin](./backrise.svg)
+![Die Rückenaufstiegsoption auf Cathrin](./backrise.svg)
 
-How high do you want the corset to rise at the back, relative to the underbust height?
+Wie hoch soll das Korsett an der Rückseite im Verhältnis zur Unterbruchhöhe ansteigen?
 
-Zero means that the backline will stay horizontal at the level of your underbust. In other words, the back will be somewhat the same height as your bra strap.
+Null bedeutet, dass die Backline auf der Ebene des Unterbruchs horizontal bleibt. Mit anderen Worten, die Rückseite wird etwas die gleiche Höhe wie der BH haben.
 
-If you increase the back rise, your corset will rise upwards at the back.
+Wenn du den Rückenaufstieg erhöhst, wird dein Korsett auf der Rückseite nach oben steigen.
 
 > As this is an underbust corset, the back rise is a style choice and won't affect the fit
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_backrise_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](cathrin_backrise_sample.svg "Effekt dieser Option auf das Schnittmuster")

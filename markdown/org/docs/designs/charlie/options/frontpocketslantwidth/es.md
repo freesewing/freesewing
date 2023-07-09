@@ -1,11 +1,11 @@
----
+- - -
 title: "Front pocket slant width"
----
+- - -
 
-Controls the width by which the front pocket slant cuts into the front panel.
+Controla el ancho por el cual el bolsillo delantero se corta en el panel frontal.
 
-Increasing this will give a more slanted pocket.
+Incrementar esto dará un bolsillo más inclinado.
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_frontpocketslantwidth_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](charlie_frontpocketslantwidth_sample.svg "Efecto de esta opción en el patrón")

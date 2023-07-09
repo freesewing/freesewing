@@ -1,7 +1,7 @@
----
+- - -
 title: "Ursula undies: Fabric Options"
----
+- - -
 
-You need a fabric with plenty of horizontal and vertical stretch (sometimes called “four-way stretch”) for this pattern. Preferably something that is comfortable, soft, and breathable.
+Vous avez besoin d'un tissu avec de nombreuses extensions horizontales et verticales (parfois appelées « stretch à quatre sens ») pour ce motif. De préférence quelque chose qui est confortable, doux et respiré.
 
-Recommended fabrics include stretch jerseys, stretch mesh, stretch knits, or most fabrics with at least 5% spandex. For example, modal (rayon) jersey with spandex.
+Les tissus recommandés comprennent les chandails étirés, les maillages étirés, les tricots, ou la plupart des tissus avec au moins 5% de spandex. Par exemple, le maillot modal (rayon) avec spandex.

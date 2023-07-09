@@ -1,10 +1,10 @@
----
+- - -
 titre : "aisance à la taille"
----
+- - -
 
-![Waist ease](./waistease.svg)
+![Aisance à la taille](./waistease.svg)
 
-The amount of ease at your waist.
+L'ampleur d'aisance à votre taille.
 
 ## Effet de cette option sur le motif
 

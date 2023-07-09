@@ -1,6 +1,6 @@
----
+- - -
 title: "Cuff narrow button"
----
+- - -
 
 ![Klassieke manchet smalle knoop](./barrelcuffnarrowbutton.svg)
 
@@ -16,4 +16,4 @@ Dit is alleen van toepassing om de klassieke manhet. Dus als je een Franse manch
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_barrelcuffnarrowbutton_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_barrelcuffnarrowbutton_sample.svg "Effect van deze optie op het patroon")

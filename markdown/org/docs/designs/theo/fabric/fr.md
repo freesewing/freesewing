@@ -1,11 +1,11 @@
----
+- - -
 title: "Theo trousers: Fabric Options"
----
+- - -
 
-You have a lot of options here, but keep in mind that these are classic cut trousers. In other words, do not use stretch, denim, pleather of that sort of thing. Safe bets are wool, cotton, or linen, possibly blended with some synthetic.
+Vous avez beaucoup d'options ici, mais gardez à l'esprit que ce sont des pantalons de coupe classiques. En d'autres termes, n'utilisez pas étirement, denim, pleurez de ce genre de choses. Les paris sûrs sont de la laine, du coton ou du lin, éventuellement mélangés avec un peu de synthétique.
 
-For **wool**, look in the suiting section of your fabric store. If this is your first pair, some wool-poly blend is most likely going to be more budget-friendly. But don't let price alone guide you, buying some cheap whimsical fabric is the best way to come up with a shitty looking pair of trousers, and get frustrated in the process.
+Pour **laine**, regardez dans la section correspondante de votre magasin de tissus. Si c'est votre première paire, un mélange de poly à laine sera probablement plus économique. Mais ne laissez pas le prix vous guider, acheter du tissu capricieux bon marché est la meilleure façon de trouver une paire de pantalons à l'apparence coquine et de se faire frustrer dans le processus.
 
-For **cotton**, go for a heavier weight. Cotton might also be a bit easier on the beginner than wool. If unsure what to use, ask for chino in the fabric store and simply pick a colour you like.
+Pour **coton**, allez pour un poids plus lourd. Le coton pourrait aussi être un peu plus facile pour les débutants que la laine. Si vous ne savez pas quoi utiliser, demandez du porcelain dans le magasin de tissu et choisissez simplement une couleur que vous aimez.
 
-Nothing beats **linen** on a hot summer day. It's fun to work with too, but it does wrinkle like a mofo, and even the most neatly made trousers look somewhat messy when made in linen. What I'm saying is, maybe not for your first pair.
+Rien ne bat **linge de maison** lors d'une chaude journée d'été. C'est amusant de travailler avec aussi, mais il fait rider comme un mofo, et même les pantalons les plus bien faits semblent quelque peu salissants quand ils sont faits dans le lin. Ce que je dis, c'est peut-être pas pour votre première paire.

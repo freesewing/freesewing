@@ -1,8 +1,8 @@
----
+- - -
 titre : "Facteur de profondeur d'emmanchure"
----
+- - -
 
-![Armhole depth factor](./armholedepthfactor.svg)
+![Hauteur de l'emmanchure](./armholedepthfactor.svg)
 
 Cela permet de contrôler la profondeur de l'emmanchure qui, à son tour, influence la largeur de la manchette.
 

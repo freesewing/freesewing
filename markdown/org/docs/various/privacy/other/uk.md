@@ -1,27 +1,27 @@
 ---
-title: Other privacy-related topics
+title: Інші теми, пов'язані з конфіденційністю
 ---
 
-##### Full disclosure
+##### Повне розкриття інформації
 
-If we learn of a security systems breach, we will inform both you and the authorities.
+Якщо ми дізнаємося про порушення систем безпеки, ми повідомимо вас і органи влади.
 
-If you believe your personal data has been compromised, please contact joost@joost.at.
+Якщо ви вважаєте, що ваші персональні дані були скомпрометовані, будь ласка, зверніться за адресою joost@joost.at.
 
-##### Service Providers
+##### Постачальники послуг
 
-Our hosting provider manages our backend systems for us. This includes hosting, storage, and backup.
+Наш хостинг-провайдер керує нашими внутрішніми системами для нас. Це включає в себе хостинг, зберігання та резервне копіювання.
 
-While this means they process your data (in the strict sense of the word), they do not require access to information about you. Furthermore, as we encrypt profile data at rest, it is non-trivial for them to access it even if they wanted to.
+Хоча це означає, що вони обробляють ваші дані (в строгому сенсі цього слова), їм не потрібен доступ до інформації про вас. Крім того, оскільки ми шифруємо дані профілю в стані спокою, їм нетривіально отримати до них доступ, навіть якщо вони цього захочуть.
 
-##### Law enforcement
+##### Правоохоронні органи
 
-While we have no intention of sharing any of your personal data, we are not above the law.
+Хоча ми не маємо наміру ділитися вашими особистими даними, ми не стоїмо над законом.
 
-If we are required to do so by law, or if we feel that doing so would be the lesser evil, we will disclose personal data.
+Якщо ми зобов'язані це зробити за законом або якщо ми вважаємо, що це буде меншим злом, ми розкриємо персональні дані.
 
-So far, we have not received any request from law enforcement to disclose information about one of our users. We have also not disclosed any personal information for any other reason.
+Наразі ми не отримали жодного запиту від правоохоронних органів щодо розкриття інформації про жодного з наших користувачів. Ми також не розголошували жодної особистої інформації з будь-яких інших причин.
 
-##### Use by minors under the age of 16
+##### Використання неповнолітніми віком до 16 років
 
-For legal reasons, you need to be at least 16 years old to use freesewing.
+З юридичних причин, вам повинно бути не менше 16 років, щоб користуватися фрісейвінгом.

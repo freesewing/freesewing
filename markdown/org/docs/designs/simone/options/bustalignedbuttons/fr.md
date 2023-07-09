@@ -1,15 +1,15 @@
 ---
-title: "Bust-aligned buttons"
+title: "Boutons alignés sur le buste"
 ---
 
-Select an optional bust-aligned button spacing strategy.
+Sélectionnez une stratégie optionnelle d'espacement des boutons alignés sur le buste.
 
-- Even spacing
-- Split spacing
-- Disabled
+- Placement équilibré
+- Séparer l'espace
+- Désactivé
 
-By default bust-aligned button spacing is "Disabled", and center front buttons are spaced without regard to the bustline. Choosing "Even spacing" or "Split spacing" will ensure that there is a button positioned on the bustline to prevent possible gaping.
+Par défaut, l'espacement des boutons alignés sur le buste est "désactivé" et les boutons centraux sont espacés sans tenir compte de la ligne du buste. En choisissant "Espacement égal" ou "Espacement fractionné", vous vous assurez qu'un bouton est positionné sur la ligne du buste afin d'éviter une éventuelle béance.
 
-- Even spacing: Button spacing is calculated for buttons above the bustline, and this spacing is used for all buttons. The `Button free length` setting is ignored for this option. This option might cause the bottommost button to be positioned in a non-optimal location. If this occurs, you may want to experiment with adding or subtracting a button to see if it produces a better design.
-- Split spacing: Different button spacings are calculated and used for buttons above and below the bustline. Buttons above the bustline are spaced evenly. Buttons below the bustline are also spaced evenly, except for the topmost and bottommost buttons. The spacings for those buttons are shifted slightly to make the transition between the top and bottom spacings less noticeable. The `Button free length` setting is obeyed for this option. This option might cause non-optimal, visibly different spacings above and below the bustline. If this occurs, you may want to experiment with adding or subtracting a button to see if it produces a better design.
-- Disabled: Even button spacing is calculated and used, without regard to the bustline. The `Button free length` setting is obeyed for this option.
+- Espacement régulier : L'espacement des boutons est calculé pour les boutons situés au-dessus de la ligne du buste et cet espacement est utilisé pour tous les boutons. Le paramètre `Longueur libre du bouton` est ignoré pour cette option. Cette option peut entraîner le positionnement du bouton le plus bas à un endroit non optimal. Dans ce cas, vous pouvez essayer d'ajouter ou de soustraire un bouton pour voir si cela permet d'obtenir un meilleur dessin.
+- Espacement entre les deux : Différents espacements de boutons sont calculés et utilisés pour les boutons situés au-dessus et au-dessous de la ligne du buste. Les boutons au-dessus de la ligne du buste sont régulièrement espacés. Les boutons situés sous la ligne du buste sont également espacés de façon régulière, à l'exception des boutons situés en haut et en bas. L'espacement de ces boutons est légèrement décalé afin de rendre moins perceptible la transition entre l'espacement supérieur et inférieur. Le paramètre `Longueur libre du bouton` est respecté pour cette option. Cette option peut entraîner des écarts non optimaux et visiblement différents au-dessus et au-dessous de la ligne du buste. Dans ce cas, vous pouvez essayer d'ajouter ou de soustraire un bouton pour voir si cela permet d'obtenir un meilleur dessin.
+- Désactivé : Un espacement régulier entre les boutons est calculé et utilisé, sans tenir compte de la ligne du buste. Le paramètre `Longueur libre du bouton` est respecté pour cette option.

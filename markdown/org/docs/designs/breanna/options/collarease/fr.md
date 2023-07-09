@@ -1,8 +1,8 @@
----
+- - -
 titre: "Aisance du col"
----
+- - -
 
-Controls the amount of ease at your collar/neck.
+Contrôle l'aisance au niveau du col.
 
 ## Effet de cette option sur le motif
 

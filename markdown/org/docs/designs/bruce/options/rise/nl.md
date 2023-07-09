@@ -1,13 +1,13 @@
----
+- - -
 title: "Rise"
----
+- - -
 
-![The rise option on Bruce](./rise.svg)
+![De optie voor hoogte bij Bruce](./rise.svg)
 
-This option controls the overal height of the waist.
+Deze optie bepaalt de algemene hoogte van de taille.
 
 > Hoe hoger de hoogte, hoe hoger je taille.
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bruce_rise_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bruce_rise_sample.svg "Effect van deze optie op het patroon")

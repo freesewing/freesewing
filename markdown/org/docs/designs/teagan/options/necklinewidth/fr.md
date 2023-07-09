@@ -1,6 +1,6 @@
----
+- - -
 title: "Neckline width"
----
+- - -
 
 Contrôle la largeur de l'encolure.
 

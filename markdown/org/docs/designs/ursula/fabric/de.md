@@ -1,7 +1,7 @@
----
+- - -
 title: "Ursula undies: Fabric Options"
----
+- - -
 
-You need a fabric with plenty of horizontal and vertical stretch (sometimes called “four-way stretch”) for this pattern. Preferably something that is comfortable, soft, and breathable.
+Für dieses Schnittmuster braucht man einen Stoff mit viel horizontaler und vertikaler Dehnung (manchmal auch „Vierwegestretch“). Am besten etwas das komfortabel, weich und atmungsaktiv ist.
 
-Recommended fabrics include stretch jerseys, stretch mesh, stretch knits, or most fabrics with at least 5% spandex. For example, modal (rayon) jersey with spandex.
+Zu den empfohlenen Stoffen gehören Stretchjerseys, Stretch-Mesh, Stretch-Strickgewebe oder die meisten Stoffe mit mindestens 5% Spandex. Beispielsweise Modal (Rayon) Jersey mit Spandex.

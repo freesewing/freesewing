@@ -1,6 +1,6 @@
----
+- - -
 title: "Cuff drape"
----
+- - -
 
 ![Plisado del puño](cuffdrape.svg)
 
@@ -17,4 +17,4 @@ El tapón se trabajará en la taza con pliegues.
 
 ## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_cuffdrape_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_cuffdrape_sample.svg "Efecto de esta opción en el patrón")

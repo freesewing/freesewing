@@ -1,12 +1,12 @@
----
-title: "Sleevecap top Y"
----
+- - -
+title:"Tête de manche haut Y"
+- - -
 
 ***
 
-![The vertical location of the sleevecap top](./sleevecaptopfactory.svg)
+![La position verticale du haut du chapeau de manche](./sleevecaptopfactory.svg)
 
-This option controls the vertical placement of the sleevecap top.
+Cette option contrôle la position verticale du dessus du tête de manche.
 
 <Tip>
 

@@ -1,10 +1,10 @@
----
+- - -
 titre : "Longueur"
----
+- - -
 
-![Length](length.svg)
+![Longeur](length.svg)
 
-Controls the overall length of the coat.
+Contrôle la longueur globale du manteau.
 
 ## Effet de cette option sur le motif
 

@@ -1,6 +1,6 @@
----
+- - -
 title: "Brian body block: Design Options"
----
+- - -
 
 <PatternOptions pattern='brian' />
 
@@ -10,9 +10,9 @@ In version 2 of FreeSewing, the sleevecap of Brian was redesigned to be more ada
 
 ### La caja delimitadora
 
-The _bounding box_ of the sleevecap is a rectangle that is as wide as the sleeve, and as high as the sleevecap. Inside this box, we will construct our sleevecap later.
+The _bounding box_ of the sleevecap is a rectangle that is as wide as the sleeve, and as high as the sleevecap. Dentro de esta caja, construiremos nuestra manga más tarde.
 
-![The Brian sleevecap](sleevecap.svg)
+![La manga de Brian](sleevecap.svg)
 
 The image above shows a sleevecap, starting at point 1, then going up until point 4, and then down again to point 2.
 
@@ -33,9 +33,9 @@ there to fit the shoulder.
 
 The width of the sleevecap (and thus the width of the sleeve at the bottom of the armhole) is equal to the distance between points 1 and 2. That distance depends on the measurements of the model, the amount of ease, the cut of the garment and so on. For our sleevecap, all we need to know is that we start with a given width. And while that width can be influenced by other factors, we can not influence it by any of the sleevecap options.
 
-![Controlling the top of the sleevecap](sleevecaptop.svg)
+![Controlar la parte superior de la manga](sleevecaptop.svg)
 
-The height of the sleevecap is equal to the distance between points 3 and 4. The exact height is a trade-off between the measurments of the model, options, ease, sleevecap ease, and the fact that the sleeve ultimately has to fit the armhole. So the height may vary, and we don't control the exact value. But there are two options that control the shape of our sleevecap:
+La altura de la manga es igual a la distancia entre los puntos 3 y 4. The exact height is a trade-off between the measurments of the model, options, ease, sleevecap ease, and the fact that the sleeve ultimately has to fit the armhole. So the height may vary, and we don't control the exact value. Pero hay dos opciones que controlan la forma de nuestra manguera:
 
 - [Sleevecap top X](/docs/patterns/brian/options/sleevecaptopfactorx/) : Controla la colocación horizontal del punto 3 y 4
 - [Sleevecap superior Y](/docs/patterns/brian/options/sleevecaptopfactory/) : Controla la posición vertical del punto 4
@@ -44,9 +44,9 @@ In other words, point 4 can be made higher and lower and, perhaps less intutitiv
 
 ### Los puntos de inflexión
 
-![Controlling the inflection points](sleevecapinflection.svg)
+![Controlar los puntos de inflexión](sleevecapinflection.svg)
 
-With points 1, 2, 3, and 4 in place, we have a box to draw our sleevecap in. Now it's time to map out our _inflection points_. These are points 5 and 6 on our drawing, and their placement is determined by the following 4 options:
+Con los puntos 1, 2, 3 y 4 en su lugar, tenemos una caja para dibujar la manga dentro. Now it's time to map out our _inflection points_. These are points 5 and 6 on our drawing, and their placement is determined by the following 4 options:
 
 - [Mantén dormido X](/docs/patterns/brian/options/sleevecapbackfactorx) : Controla la colocación horizontal del punto 5
 - [Retroceso Y](/docs/patterns/brian/options/sleevecapbackfactory) : Controla la posición vertical del punto 5
@@ -62,11 +62,11 @@ son instrumentales en la creación de los puntos que siempre se encuentran en la
 
 ### Los puntos de ancla
 
-![Controlling the anchor points](sleevecapanchor.svg)
+![Controlar los puntos de anclaje](sleevecapanchor.svg)
 
-Ultimately, our sleevecap will be the combination of 5 curves. In addition to points 1 and 2, the four _anchor points_ that are marked in orange in our example will be the start/finish of those curves.
+En última instancia, nuestra manga será la combinación de 5 curvas. In addition to points 1 and 2, the four _anchor points_ that are marked in orange in our example will be the start/finish of those curves.
 
-The points are _offset_ perpendicular from the middle of a line between the two anchor points surrounding them. The offset for each point is controlled by these 4 options:
+The points are _offset_ perpendicular from the middle of a line between the two anchor points surrounding them. El desplazamiento para cada punto está controlado por estas 4 opciones:
 
 - [Desplazamiento Q1 de Sleevecap](/docs/patterns/brian/options/sleevecapq1offset) : Controla el perpendicular de desplazamiento a la línea desde puntos 2 a 6
 - [Desplazamiento Q2 en durmiente](/docs/patterns/brian/options/sleevecapq2offset) : Controla el perpendicular a la línea desde puntos 6 a 4
@@ -85,9 +85,9 @@ control each quarter individually.
 
 ### La propagación
 
-![Controlling the anchor points](sleevecapspread.svg)
+![Controlar los puntos de anclaje](sleevecapspread.svg)
 
-We now have all the start and end points to draw the 5 curves that will make up our sleevecaps. What we're missing are the control points (see [our info on Bézier curves](https://freesewing.dev/concepts/beziercurves) to learn more about how curves are constructed). These are determined by the so-called _spread_.
+Ahora tenemos todos los puntos de inicio y final para dibujar las 5 curvas que compondrán nuestras mangas. What we're missing are the control points (see [our info on Bézier curves](https://freesewing.dev/concepts/beziercurves) to learn more about how curves are constructed). Estos son determinados por la así llamada _difusión_.
 
 For each of the anchor points (the ones marked in orange, not points 1 and 2) there is an option to control the spread upwards, and downwards:
 
@@ -111,11 +111,11 @@ la curva se elevará por encima.
 
 ### Takeaways
 
-While the sleevecap in Brian (and all patterns that extend Brian) have a lot of options, understanding how the sleevecap is constructed can help you design the exact sleevecap shape you want. To do so:
+While the sleevecap in Brian (and all patterns that extend Brian) have a lot of options, understanding how the sleevecap is constructed can help you design the exact sleevecap shape you want. Para hacerlo:
 
 - Empezar con colocar la parte superior de tu manga
 - Luego determina los puntos de inflexión
 - A continuación, utilice el desplazamiento para controlar la inclinación de la curva
 - Por último, utilice la propagación para suavizar las cosas
 
-What's important to remember is that you're only ever controlling the shape of the sleevecap. Whatever shape you design, it will be fitted to the armhole, meaning that its size can and will be adapted to make sure the sleeve fits the armscye. However, the shape you design will always be respected.
+Lo que es importante recordar es que usted sólo controla la forma de la manga. Whatever shape you design, it will be fitted to the armhole, meaning that its size can and will be adapted to make sure the sleeve fits the armscye. Sin embargo, la forma que diseñas siempre será respetada.

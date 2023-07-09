@@ -1,10 +1,10 @@
----
-title: "Sleevecap ease"
----
+- - -
+titre : "Aisance de la tête de manche"
+- - -
 
 ***
 
-This option determines the amount of ease at the sleevecap.
+Cette option détermine la quantité d'aisance sur la tête de manche.
 
 <Note>
 

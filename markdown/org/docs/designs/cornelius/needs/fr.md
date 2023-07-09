@@ -1,18 +1,18 @@
----
-title: "Cornelius cycling breeches: What You Need"
----
+- - -
+titre : "Culotte cycliste Cornélius : Ce qu'il faut"
+- - -
 
-To make Cornelius, you will need the following:
+Pour fabriquer Cornelius, vous aurez besoin des éléments suivants :
 
 - Fourniture de base pour la couture
-- About 2 metres (2.2 yards) of a suitable fabric ([see Cornelius Fabric options](/docs/patterns/cornelius/fabric/))
-- About 0.5 metres (0.6 yards) of lining fabric ([see Cornelius Fabric options](/docs/patterns/cornelius/fabric/))
-- Interfacing for the waistband ([see Cornelius Fabric options](/docs/patterns/cornelius/fabric/))
-- A zip or 3 buttons for the fly
-- 3 or 7 Buttons for waistband and leg bands
+- Environ 2 mètres d'un tissu approprié ([voir les options de tissu Cornelius](/docs/patterns/cornelius/fabric/))
+- Environ 0,5 mètre de tissu de doublure ([voir les options de tissu Cornelius](/docs/patterns/cornelius/fabric/))
+- Entoilage pour la ceinture ([voir les options de tissu Cornelius](/docs/patterns/cornelius/fabric/))
+- Une fermeture éclair ou 3 boutons pour la braguette
+- 3 ou 7 boutons pour la ceinture et les bandes de jambe
 
 <Note>
 
-The number of buttons you need are dependent on the cuff style you are using. **Keystone** requires 7 in total whereas **Traditional** and **Elegant** require 3 in total. You may also want to use smaller buttons for the leg bands compared to the waistband but this is up to you.
+Le nombre de boutons dont vous avez besoin dépend du type de manchette que vous utilisez. **Keystone** en requiert 7 au total, tandis que **Traditional** et **Elegant** en requièrent 3 au total. Vous pouvez également utiliser des boutons plus petits pour les bandes de jambe que pour la ceinture, mais c'est à vous de décider.
 
 </Note>

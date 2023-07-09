@@ -1,12 +1,12 @@
----
-title: "Strap length"
----
+- - -
+titre : "Longueur de la sangle"
+- - -
 
-Controls the length of the strap.
+Contrôle la longueur des anses.
 
 <Tip>
 
-Turn on paperless to see the length of the strap.
+Passez en mode sans papier pour voir la longueur de la sangle.
 
 </Tip>
 

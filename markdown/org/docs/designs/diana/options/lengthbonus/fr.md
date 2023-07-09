@@ -1,6 +1,6 @@
----
+- - -
 titre : "Longueur supplémentaire"
----
+- - -
 
 ![L'option de bonus de longueur sur Diana](./lengthbonus.svg)
 

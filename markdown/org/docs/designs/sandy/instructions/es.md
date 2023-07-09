@@ -1,6 +1,6 @@
----
+- - -
 title: "Sandy circle skirt: Sewing Instructions"
----
+- - -
 
 <Warning>
 
@@ -115,7 +115,7 @@ There are many ways to hem/face the bottom of a skirt, If you have a prefered me
 
 </Note>
 
-## Step 6: Enjoy!
+## Paso 6: ¡Disfrútalo!
 
 You are all done! Now go enjoy your wonderful new skirt and try not to get too dizzy showing off it's fullness!
 

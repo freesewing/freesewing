@@ -1,15 +1,15 @@
 ---
-title: Coverlock
+title: Накладний замок.
 ---
 
-![A hem on a T-shirt, made with a coverlock machine](coverlock-hem.jpg)
+![Поділ на футболці, виконаний на машині коверлок](coverlock-hem.jpg)
 
-![The finished backside of a coverlocked seam](coverlock.jpg)
+![Готовий виворітний бік потайного шва](coverlock.jpg)
 
-![My coverlock machine, a Janome Coverpro 1000 CPX](janome-coverpro.jpg)
+![Моя коверлок-машина Janome Coverpro 1000 CPX](janome-coverpro.jpg)
 
-A coverlock is a type of sewing machine that is dedicated to do a coverlock stitch, or coverlock seam.
+Коверлок - це тип швейної машини, яка призначена для виконання човникової строчки, або шва "коверлок".
 
-A coverlock seam is used for hemming knit garments. It finishes the folded back fabric so it can't ravel and the resulting stitch can stretch along with the fabric.
+Потайний шов використовується для підшивання трикотажних виробів. Він обробляє складену назад тканину так, щоб вона не могла задиратися, а отримана строчка розтягувалася разом з тканиною.
 
-Coverlocks can be dedicated machines, or they can be integrated in an overlock/serger.
+Коверлоки можуть бути окремими машинами або інтегрованими в оверлок/розпошивальну машину.

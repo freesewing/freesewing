@@ -1,10 +1,10 @@
----
+- - -
 title: "Huey hoodie: Sewing Instructions"
----
+- - -
 
 <Note>
 
-This pattern can be sewn with or with out a overlocker/serger. If not using a overlocker or serger you will have to _Finish_ the seams.
+Ce patron peut être cousu avec ou avec une surjeteuse. If not using a overlocker or serger you will have to _Finish_ the seams.
 
 </Note>
 
@@ -31,22 +31,22 @@ If you don't wish to add a drawstring you can skip to Step 4.
   - The hole should be about 1.5-2cm from the edge of the fabric. This is to keep your seam allowance out of the way.
   - The hole should be located slightly up from the bottom of the inner curve. This is to keep it away from the front seams.
 - On the wrong side of the fabric, face where you are making the hole to stabilise the fabric.
-- Make a buttonhole at your mark either by hand or by your machine's method.
-- Alternatively construct or use eyelets at the mark.
+- Faites une boutonnière à votre marque, soit à la main, soit a la machine.
+- Vous pouvez aussi construire ou utiliser des œillets à la marque.
 
 <Tip>
 
-If you don't have or don't wish to use any interfacing you can use a scrap piece of sturdy fabric such as denim.
+Si vous n'avez pas ou ne souhaitez pas utiliser d'entoilage, vous pouvez utiliser un morceau de tissu robuste tel que le denim.
 
 </Tip>
 
 <Note>
 
-The drawstrings will be threaded after the hoodie is constructed.
+Les cordons seront enfilés après la construction du sweat à capuche.
 
 </Note>
 
-### Step 4: Prepping the hood
+### Etape 4 : Préparation de la capuche
 
 - With _good sides together_, matching sets, sew the hood pieces together along the outer curve edge.
 - With _good sides together_, matching seams, sew the inner hood to the outer hood along the inner curve edge.
@@ -78,21 +78,21 @@ A neckband can be useful to stablise and cover the neck seams but it is optional
 - _Finish_ seam if not using neckband then proceed to Step 7.
 - Press neckband down.
 - On outside _Topstitch_ neckband in place.
-- On inside, trim neckband down to topstitching.
+- À l'intérieur, coupez la bande de cou vers le bas pour le surfiler.
 
-### Step 7: Attaching the waistband
+### Étape 7 : Attacher la ceinture
 
-- Fold the waistband in half lengthwise matching wrong sides. Press.
-- With _good sides_ together sew the waistband to the bottom of the back and front.
-- Press the seam allowance up.
+- Pliez la ceinture en 2 dans le sens de la longueur envers contre envers. Repasser.
+- Avec _bons côtés_ ensemble coudre la ceinture au bas du dos et de l'avant.
+- Repassez la couture vers le haut.
 - _Topstitch_ or _Edgestitch_ waistband seam allowance to the body.
 
-### Step 8: Attching the cuffs
+### Étape 8 : Attacher les poignets
 
-- With _good sides together_ sew the short egdes of the cuffs together to create two bands.
-- Press open the seam allowances.
+- Avec _bons côtés ensemble,_ coudre cotés courts des poignets pour créer deux bandes.
+- Repasser pour ouvrir la marge de couture.
 - (Optional) _Edgestitch_ the seam allowances down.
-- Fold the cuffs in half lengthwise matching wrong sides. Press.
+- Pliez les poignets en 2 dans le sens de la longueur envers contre envers. Repasser.
 - Matching seams and raw edges, pin the cuffs to the sleeves _good sides together_.
 - Sew the cuffs to the sleeves.
 - Press the seam allowances up.
@@ -133,13 +133,13 @@ Use a safety pin to help thread the drawstring.
 
 </Tip>
 
-### Step 11: Enjoy!
+### Étape 11: Profitez-en!
 
-- That's it! Vous avez terminé ! Now go feel warm and comfy in your new hoodie!
+- Voilà! Vous avez terminé ! Now go feel warm and comfy in your new hoodie!
 
 <Note>
 
-This patterns was featured in [issue 27 of HackSpace magazine](https://hackspace.raspberrypi.org/issues/27),
-the article includes instructions too, so you may want to have a look at it.
+Ce patron a été mis en vedette dans le [numéro 27 du magazine HackSpace ](https://hackspace.raspberrypi.org/issues/27),
+l'article contient également des instructions, donc vous pouvez vouloir le consulter.
 
 </Note>

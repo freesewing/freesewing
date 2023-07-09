@@ -5,7 +5,7 @@ title: "Holmes deerstalker hat: Sewing Instructions"
 ### Paso 1: Preparando las Piezas
 
 - If needed, Interface the crown and half the ear flap pieces.
-- If not already done so, it is recommended to mark the seam lines on your fabric pieces by either a temporary marker or by thread marking. Esto es para una costura más precisa que es clave para la construcción de sombrero.
+- Si aún no lo ha hecho, se recomienda marcar las líneas de costura en las piezas de la tela mediante un marcador temporal o por rosca. Esto es para una costura más precisa que es clave para la construcción de sombrero.
 
 <Tip>
 
@@ -61,7 +61,7 @@ If you are uncertain about the length you want for you ties take 1 metre (39") o
 
 <Note>
 
-The lengths above are recommendations so feel free to go as long or as short as you like with the ties.  
+Las longitudes anteriores son recomendaciones, así que siéntete libre de ir tan largo o corto como quieras con los vínculos.  
 If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.
 
 </Note>
@@ -134,7 +134,7 @@ Una vez más, hay dos métodos para el montaje final y el revestimiento. Lea amb
 
 #### Método de Ensamblado 1
 
-- Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).
+- Centros de coincidencia y líneas de costura alinean la aleta del oído con el lado derecho de uno de los paneles que no forma parte de la costura central de la corona. Making sure the faced side is placed against the crown (if faced).
 - Sew ear flap to the crown along seam lines.
 - Repeat for the remaining ear flap on the opposite side of the crown.
 - Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.
@@ -153,7 +153,7 @@ Una vez más, hay dos métodos para el montaje final y el revestimiento. Lea amb
 
 #### Método de Ensamblaje 2
 
-- Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).
+- Centros de coincidencia y líneas de costura alinean la aleta del oído con el lado derecho de uno de los paneles que no forma parte de la costura central de la corona. Making sure the faced side is placed against the crown (if faced).
 - _Baste_ the ear flap to the crown along seam lines
 - Repeat for the remaining ear flap on the opposite side of the crown.
 - Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.
@@ -236,8 +236,8 @@ Mientras que un botón cubierto está cubierto puedes usar cualquier botón que 
 
 <Note>
 
-Remember these instructions are just guidelines so don't worry if you want to construct the hat differently.  
-The Diagrams are yet to be made for this pattern so in the mean time if you need a visual aid, watch the YouTube video that inspired this pattern:
+Recuerde que estas instrucciones son sólo directrices así que no te preocupes si quieres construir el sombrero de manera diferente.  
+Los diagramas todavía están por hacer para este patrón, así que mientras tanto si necesita ayuda visual, ver el video de YouTube que inspiró este patrón:
 
 </Note>
 

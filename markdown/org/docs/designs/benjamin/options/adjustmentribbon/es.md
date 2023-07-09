@@ -1,10 +1,10 @@
----
+- - -
 title: "Adjustment ribbon"
----
+- - -
 
-![Traditional or adjustable](adjustmentribbon.svg)
+![Tradicional o ajustable](adjustmentribbon.svg)
 
-With Benjamin, you can make a traditional fixed size bow tie. And you can make one that incorporates an adjustment ribbon. These are ribbons and pieces of hardware that allow you to change the neck size of the bow tie. Very handy when you have shirts with different neck sizes, or if you have different ease in the collar for some.
+Con Benjamin, usted puede hacer una tradicional corbata de arco de tamaño fijo. And you can make one that incorporates an adjustment ribbon. These are ribbons and pieces of hardware that allow you to change the neck size of the bow tie. Very handy when you have shirts with different neck sizes, or if you have different ease in the collar for some.
 
 <Tip>
 
@@ -14,4 +14,4 @@ Esta es una gran opción si decide hacer un empate de arco para otra persona com
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_adjustmentribbon_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](benjamin_adjustmentribbon_sample.svg "Efecto de esta opción en el patrón")

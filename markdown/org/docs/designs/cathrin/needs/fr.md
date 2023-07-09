@@ -1,17 +1,17 @@
----
-title: "Cathrin corset: What You Need"
----
+- - -
+titre : "Le corset Cathrin : Ce qu'il faut"
+- - -
 
-Corsets are easier to construct than they seem, however they need several specialist items and tools.
+Les corsets sont plus faciles à construire qu'ils ne le semblent, mais ils ont besoin de plusieurs objets et outils spécialisés.
 
-You will need BONING. Historic corsets used whale bone to stiffen corsets. Modern corset makers use steel. You can get steel bones either as flat steel and spiral steel - do research, as different types of corset and different corset makers have their own preferences. Plastic bones are also a cheaper option.
+Vous aurez besoin de BONING. Les corsets historiques utilisaient des os de baleine pour raidir les corsets. Les fabricants de corsets modernes utilisent de l'acier. Vous pouvez obtenir des os d'acier soit en acier plat ou en acier en spirale - faites des recherches, comme différents types de corset et différents fabricants de corsets ont leurs propres préférences. Les os en plastique sont également une option moins chère.
 
-You can find a good guide to other tools at [Foundations Revealed](https://foundationsrevealed.com/).
+Vous pouvez trouver un bon guide pour d'autres outils sur [Fondations Révélées](https://foundationsrevealed.com/).
 
-Sample supplies list:
+Liste d'échantillons de fournitures:
 
-- About 0.5 meters (0.6 yards) of core fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
-- About 0.5 meters (0.6 yards) of outer fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
+- Environ 0,5 mètre de tissu de base ([voir les options de tissu](/docs/patterns/cathrin/fabric))
+- Environ 0,5 mètre de tissu extérieur ([voir les options de tissu](/docs/patterns/cathrin/fabric))
 - Assaisonnement
 - Grommets (size 2)
 - Environ 2 mètres de bande de biais

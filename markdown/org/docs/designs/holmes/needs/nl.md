@@ -8,7 +8,7 @@ Om Holmes te maken heb je het volgende nodig:
 - About 0.5 metres (0.6 yards) of a suitable fabric ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
 - About 0.5 metres (0.6 yards) of lining fabric ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
 - Een star materiaal voor de bezoeker invoegen ([zie Holmes Fabrick-opties](/docs/patterns/holmes/fabric/))
-- (Optional) About 1 metre of 1" (2.5cm) crossgrain ribbon or petersham.
+- (Optioneel) Ongeveer 1 meter van 1" (2,5cm) crossgrain lint of petersham.
 - (Optioneel) 1 bedekte knop over 3/4" (2cm) - 7/8" (2,2cm)
 
 <Note>

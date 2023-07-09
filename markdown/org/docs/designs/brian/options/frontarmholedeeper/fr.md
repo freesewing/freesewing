@@ -1,8 +1,8 @@
----
-titre : "Découpe supplémentaire à l'avant de l'emmanchure"
----
+- - -
+titre : "Découpe supplémentaire à l'avant de l'emmanchure
+- - -
 
-![Front armhole extra cutout](./frontarmholedeeper.svg)
+![Découpe supplémentaire sur l'emmanchure avant](./frontarmholedeeper.svg)
 
 Contrôle la profondeur de la coupe de l'avant de l'emmanchure par rapport à celle de l'arrière du vêtement.
 

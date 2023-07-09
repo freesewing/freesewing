@@ -4,7 +4,7 @@ title: "Profondeur de tête"
 
 ***
 
-Controls the length of the crown and ear flaps
+Contrôle la longueur de la couronne et des rabats d'oreilles
 
 ## Effet de cette option sur le motif
 

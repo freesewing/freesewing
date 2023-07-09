@@ -1,11 +1,11 @@
----
-title: "Cuff ease"
----
+- - -
+title: "Bequemlichkeitszugabe Bündchen"
+- - -
 
-![The cuff ease factor on Brian](./cuffease.svg)
+![Die Manschettenleicht-Faktor auf Brian](./cuffease.svg)
 
-This option controls the ease at your wrist.
+Diese Variable beeinflusst die Weite an deinem Handgelenk.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_cuffease_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](brian_cuffease_sample.svg "Effekt dieser Option auf das Schnittmuster")

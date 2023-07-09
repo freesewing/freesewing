@@ -1,12 +1,12 @@
----
+- - -
 title: "Paco pants: Cutting Instructions"
----
+- - -
 
 <Tip>
 
-###### Cut out only what you need
+###### Corta solo lo que necesitas
 
-Depending on the choices you made in your pattern, you may not need all parts.
+Dependiendo de las opciones que hiciste en tu patrón, puede que no necesites todas las partes.
 Si no se imprime una parte de patrón, significa que no la necesita.
 
 </Tip>

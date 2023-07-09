@@ -1,52 +1,52 @@
----
+- - -
 title: "Ursula undies: Sewing Instructions"
----
+- - -
 
 ### Paso 1: Agarra la parte frontal a la primera pieza de chispa
 
-Place one of the gusset pieces on the front piece, _good sides together_, so that the crotch seams are aligned. Pin or baste at the seam allowance.
+Coloca una de las piezas de chispa en la parte delantera _lados buenos juntos_, de modo que las costuras de los croquis estén alineadas. Fijar o bastar en la costura de la costura.
 
-![Sew the front to the first gusset piece](step01.png)
+![Difundir el frente a la primera pieza de chispa](step01.png)
 
 ### Paso 2: Abrir plano
 
-Open flat. You can press if you want to, but who presses underwear?
+Abrir plano. Puedes pulsar si quieres, pero ¿quién presiona el interior?
 
-![Open flat](step02.png)
+![Abrir plano](step02.png)
 
 ### Paso 3: Pase la espalda a la primera pieza de chispa
 
-Place the back piece on the gusset, good sides together. Pin or baste at the seam allowance.
+Coloque la parte trasera en el chorro de chorro juntos. Fijar o bastar en la costura de la costura.
 
-![Sew the back to the first gusset piece](step03.png)
+![Lleva la espalda a la primera pieza de chispa](step03.png)
 
 ### Paso 4: Abrir plano
 
-Open flat.
+Abrir plano.
 
-![Open flat](step04.png)
+![Abrir plano](step04.png)
 
 ## Paso 5: Adjuntar la segunda pieza de chispa
 
-Get the front and back pieces out of the way by rolling them to the center.
+Saca las piezas delanteras y traseras haciéndolas girar hacia el centro.
 
-Place the second gusset piece good sides together on top so that it lines up with the first gusset piece. The rolled-up front and back pieces should be sandwiched between your gusset pieces.
+Coloque la segunda pieza de chispa bien juntos en la parte superior para que se alinee con la primera pieza de chispa. Las piezas enrolladas del frontal y de la parte trasera deben ser sándwicked entre tus rebanadas.
 
-Sew the front and back gusset seams at your seam allowance using a serger or a zigzag stitch.
+Ponga las costuras de la parte frontal y trasera en su franquicia de costura usando un serger o un zigzag stitch.
 
-![Attach the second gusset piece](step05.png)
+![Adjuntar la segunda pieza de chispa](step05.png)
 
 ## Paso 6: Girar a la derecha
 
-Turn the undies right side out. All gusset seams should be enclosed.
+Gire a los unidos a la derecha. Todas las costuras de gusset deben estar adjuntas.
 
-![Turn right side out](step06.png)
+![Girar a la derecha](step06.png)
 
 ### Paso 7: Aplasta las costuras del lado
 
-Pin the side seams good sides together. Sew the side seams at your seam allowance using a serger or a zigzag stitch.
+Anclar el lado costura buenos lados juntos. Ponga las costuras en su costura usando un serger o un zigzag stitch.
 
-![Sew the side seams](step07.png)
+![Difundir costuras laterales](step07.png)
 
 <Note>
 
@@ -56,30 +56,30 @@ Pin the side seams good sides together. Sew the side seams at your seam allowanc
 
 ### Paso 8: Preparar elástico
 
-Overlap the edges of each piece of elastic by your seam allowance and stitch together. You should have three elastic pieces: one for the waistband and two for the legs.
+Sobrepasa los bordes de cada pieza de elástico por su franquicia de costura y junta juntos. Deberías tener tres piezas elásticas: una para la cintura y dos para las piernas.
 
-To ensure that you stretch the elastic evenly, divide the elastic into four quarters and mark the points with pins or chalk. Do the same to the waist and leg openings, marking the quarter points.
+Para asegurar que se estire el elástico uniformemente, divida el elástico en cuatro trimestres y marque los puntos con pines o chalco. Haz lo mismo con las aberturas de cintura y piernas, marcando los puntos de cuarto.
 
-![Prepare elastic](step08.png)
+![Preparar elástico](step08.png)
 
-![Quarter the openings](step08b.png)
+![Retirar las aperturas](step08b.png)
 
 ### Paso 9: Empuñadura elástica al exterior de la ropa
 
-Pin the elastic to the waist and leg openings on the good side of the fabric, ensuring that you line up the quarter markings. If your elastic has a decorative edge, make sure that you line up the plain edge (not the decorative edge) of the elastic to the edge of the fabric. The decorative edge should be pointing towards the garment, not away from it.
+Pin el elástico a la cintura y a las aberturas de las piernas en el lado bueno del tejido, asegurando que se alinean las marcas trimestrales. Si tu elástico tiene un borde decorativo, Asegúrese de alinear el borde plano (no el borde decorativo) del elástico al borde de la tela. El borde decorativo debe estar apuntando hacia la prenda, no lejos de ella.
 
-Sew the elastic to the garment using a zigzag stitch. You will have to stretch the elastic slightly as you sew to make it lay flat against the fabric. Avoid stretching the fabric itself.
+Difunde el elástico a la prenda usando un zigzag stitch. Tendrás que estirar un poco el elástico a medida que coser para que quede plana contra la tela. Evite estirar el tejido en sí.
 
-![Sew elastic to the outside of the garment](step09.png)
+![Difunde elástico al exterior de la ropa](step09.png)
 
-Trim away any excess fabric that causes bulk or sticks out from the elastic.
+Recorta cualquier tejido sobrante que cause granel o salga de la elástica.
 
 ### Paso 10: Doblar el elástico y coser de nuevo
 
-Fold the elastic and fabric to the inside, enclosing the raw edge of the fabric under the elastic. You should be looking at the outside of the undies, a folded edge with a bit of the elastic peeking out. Sew using a zigzag stitch.
+Doblar el elástico y la tela al interior, encerrando el borde crudo de la tela bajo la elástica. Usted debería mirar el exterior de los undies, un borde plegado con un poco de la elástica mirando. Difunde usando un zigzag stitch.
 
-![Fold the elastic in and sew it down again](step10.png)
+![Doblar el elástico y coser de nuevo](step10.png)
 
-Repeat these steps for each of the waist and leg openings.
+Repita estos pasos para cada una de las aberturas de cintura y piernas.
 
-You did it!
+¡Lo ha conseguido!

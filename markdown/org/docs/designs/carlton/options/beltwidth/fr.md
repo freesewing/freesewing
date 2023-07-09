@@ -1,8 +1,8 @@
----
+- - -
 title: "Belt width"
----
+- - -
 
-Controls the width of the belt at the back.
+Contrôle la largeur de la ceinture à l'arrière.
 
 ## Effet de cette option sur le motif
 

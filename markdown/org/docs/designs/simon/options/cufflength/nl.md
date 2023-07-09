@@ -1,6 +1,6 @@
----
+- - -
 title: "Cuff length"
----
+- - -
 
 ![Lengte manchet](cufflength.svg)
 
@@ -14,4 +14,4 @@ Dit heeft geen invloed op de totale lengte van je mouw.
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_cufflength_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_cufflength_sample.svg "Effect van deze optie op het patroon")

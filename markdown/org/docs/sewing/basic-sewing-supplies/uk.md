@@ -1,18 +1,18 @@
 ---
-title: Basic sewing supplies
+title: Основні матеріали для шиття
 ---
 
-> What exactly constitutes the bare necessities for sewing is subject to debate. Some people like more tools, others say that even a sewing machine is optional as you can sew by hand.
+> Що саме є найнеобхіднішим для шиття - питання дискусійне. Комусь подобається більше інструментів, інші кажуть, що навіть швейна машинка необов'язкова, адже можна шити вручну.
 
-For the sake of clarity, when I refer to basic sewing supplies on this website, I mean the following:
+Для ясності, коли я говорю про основні матеріали для шиття на цьому сайті, я маю на увазі наступне:
 
-- Tape measure
-- Sewing machine
-  - Sewing machine needles
-  - Bobbins
-- Sewing thread
-- Fabric scissors
-- Seam ripper
-- Pins and hand sewing needles
-- Fabric marker/Pencils
-- An iron
+- Рулетка
+- Швейна машина
+  - Голки для швейних машин
+  - Шпульки
+- Швейні нитки
+- Ножиці для тканини
+- Розривач швів
+- Булавки та голки для ручного шиття
+- Маркер для тканини / Олівці
+- Праска.

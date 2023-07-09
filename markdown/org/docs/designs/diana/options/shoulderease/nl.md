@@ -1,11 +1,11 @@
----
+- - -
 title: "Shoulder ease"
----
+- - -
 
-![The shoulder ease option on Diana](./shoulderease.svg)
+![De optie voor overwijdte schouders bij Diana](./shoulderease.svg)
 
-This option controls the position of your shoulder seam.
+Deze optie bepaalt de positie van je schoudernaad.
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_shoulderease_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](diana_shoulderease_sample.svg "Effect van deze optie op het patroon")

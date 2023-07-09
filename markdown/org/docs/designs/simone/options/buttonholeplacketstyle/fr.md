@@ -1,6 +1,6 @@
----
+- - -
 title: "Buttonhole placket style"
----
+- - -
 
 ![Style de patte de boutonnage (côté boutonnières)](buttonholeplacketstyle.svg)
 

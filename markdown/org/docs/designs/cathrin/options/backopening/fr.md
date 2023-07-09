@@ -1,10 +1,10 @@
----
-title: "Back opening"
----
+- - -
+titre : "Ouverture du dos"
+- - -
 
-![The back opening option on Cathrin](./backopening.svg)
+![L'option d'ouverture du dos sur Cathrin](./backopening.svg)
 
-This option determines how wide the back opening of your corset will be. The back opening is where you string the corset together.
+Cette option détermine la largeur de l'ouverture de votre corset. L'ouverture arrière est l'endroit où vous rangez le corset ensemble.
 
 ## Effet de cette option sur le motif
 

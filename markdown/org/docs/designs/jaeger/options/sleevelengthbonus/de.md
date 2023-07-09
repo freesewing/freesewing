@@ -1,6 +1,6 @@
----
-title: "Sleeve length bonus"
----
+- - -
+title: "Längenzugabe Ärmel"
+- - -
 
 ![Ärmel Längenzugabe](sleevelengthbonus.svg)
 
@@ -18,4 +18,4 @@ Bitte beachten Sie den Standardwert und verwenden Sie dies als Grundlage, um den
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](jaeger_sleevelengthbonus_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](jaeger_sleevelengthbonus_sample.svg "Effekt dieser Option auf das Schnittmuster")

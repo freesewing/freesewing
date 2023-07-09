@@ -1,36 +1,36 @@
----
+- - -
 title: "Trayvon tie: Fabric Options"
----
+- - -
 
 ## Tie fabric
 
-The ties you find in the store are typically made out of silk or some imitation silk poly. So it will come as no surprise that those are good options.
+Die Fliegen, die du in Geschäften findest, bestehen typischerweise aus Seide oder einer Art Seidenimitation aus Polyester. Deswegen ist es wohl keine Überraschung, dass dies gute Optionen sind.
 
-In general, you want something with good drape so that your tie hangs nicely. Cutting your tie on bias can help here too.
+Im Allgemeinen wollen Sie etwas mit guter Drape, damit Ihre Krawatte schön hängt. Auch hier kann es hilfreich sein, dass Sie Ihre Krawatte auf Voreingenommenheit reduzieren.
 
-Personally, I like using different fabrics for ties. Things like denim or corduroy make great ties, while being a bit different from the run-of-the-mill store-bought tie.
+Persönlich mag ich verschiedene Stoffe für Krawatten verwenden. Dinge wie Denim oder Corduroy machen große Krawatten, während sie sich etwas von dem gewöhnlichen Shop-gekauften Krawatte unterscheiden.
 
-Additionally, silk and silk imitation is slippery and tricky to work with. If this your first tie, consider an alternative fabric that is more forgiving.
+Darüber hinaus ist Seiden- und Seiden-Nachahmung rutschig und schwierig zu bearbeiten. Wenn dies deine erste Krawatte, erwäge einen alternativen Stoff, der verzeihlicher ist.
 
-Just make sure you pick a fabric that does not stretch or lose its shape easily. You want your tie to look sharp, not saggy.
+Stellen Sie sicher, dass Sie einen Stoff auswählen, der seine Form nicht einfach verliert. Du möchtest, dass deine Krawatte scharf aussieht und nicht saggy.
 
 ## Tie Futter
 
-The lining of the tie is the bit that is used at the tip to cover up the back. If you are not sure what I mean, look at the back of the tip of an existing tie. See that rectangular patch of fabric you can see there? That is the tie lining.
+Das Futter der Krawatte ist das Bit, das an der Spitze verwendet wird, um die Rückseite zu verdecken. Wenn Sie sich nicht sicher sind, was ich meine, schauen Sie auf die Rückseite der Spitze einer bestehenden Krawatte. Sehen Sie, dass rechteckige Flecken von Stoff können Sie dort zu sehen? Das ist die Krawatte.
 
-Your tie lining will add an extra fabric inside a part of your tie. So it is important to avoid bulk. Go for something thin, even when using a thicker tie fabric.
+Dein Krawattenfutter wird einen zusätzlichen Stoff innerhalb eines Teils deiner Krawatte hinzufügen. Daher ist es wichtig, eine Menge zu vermeiden. Geh etwas dünn, auch wenn du einen dickeren Stoff verwendest.
 
-Make sure your lining drapes at least as good as your tie fabric, so that it doesn't interfere with the drape of your tie.
+Vergewissern Sie sich, dass Ihr Futter mindestens so gut ist wie Ihr Krawattengewebe, so dass es nicht in den Drape Ihrer Krawatte eingreift.
 
-When in doubt, go for imitation silk. Do make sure to pick something that is a nice match, or contrast, with your tie fabric.
+Wenn Sie Zweifel haben, gehen Sie für Imitation Seide. Achten Sie darauf, dass Sie etwas auswählen, das ein schönes Match oder Kontrast zu Ihrem Krawattengewebe ist.
 
 ## Bindungsschnittstelle
 
-Your tie interfacing is the skeleton of your tie. It is the part that sits in the middle and that you will only see while constructing your tie.
+Ihre Bindungsschnittstelle ist das Skelett Ihrer Krawatte. Es ist der Teil, der in der Mitte sitzt und den Sie nur sehen werden, wenn Sie Ihre Krawatte bauen.
 
-Tie interfacing can be notoriously hard to get. The best tie interfacing is soft, fuzzy woven lambswool, but I have yet to walk into a fabric store that carries this.
+Die Bindestriche kann bekanntermaßen schwer zu bekommen sein. Tie interfacing can be notoriously hard to get. The best tie interfacing is soft, fuzzy woven lambswool, but I have yet to walk into a fabric store that carries this.
 
-While you can get by with an alternative, like some wool fabric, or flannel, I typically re-use the interfacing from an old tie.
+Während man mit einer Alternative, wie etwa einem Wollgewebe oder Flannel, zurecht kommen kann, verwende ich die Schnittstelle von einer alten Krawatte.
 
 <Note>
 

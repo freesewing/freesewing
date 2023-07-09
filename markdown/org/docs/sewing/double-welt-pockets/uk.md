@@ -1,225 +1,225 @@
 ---
-title: Double welt pockets
+title: Кишені з подвійним швом
 ---
 
-## Video
+## Відео
 
 <YouTube id='PL1gv5yv3DoZOFSXz7yydeV1H8m6pfwstn' playlist />
 
-## Learn welts with David Page Coffin
+## Вивчайте рубці з Девідом Пейджем Коффіном
 
 The November 2015 edition of [Seamwork Magazine](https://www.seamwork.com/) has a section called [Conquering the Welt](https://www.seamwork.com/issues/2015/11/conquering-the-welt) where David Page Coffin walks you through the construction of welt pockets.
 
 David has written various books on trouser and shirt construction, teaches online sewing classes, and hosts workshops throughout the US, and abroad.
 
-David is a friend of the site, and by all measures much better at explaining this than I am.
+Девід - друг сайту, і за всіма показниками набагато краще пояснює це, ніж я.
 
-## Before you start
+## Перш ніж почати
 
-### What you need
+### Що вам потрібно
 
-To make double welt pockets, you will need:
+Для виготовлення кишень з подвійним швом вам знадобляться:
 
-- Basic sewing supplies
-- The fabric or pattern piece you want to make the pocket in
-- Two fabric strips for the welts
-- A strip of interfacing
-- Lining or other suitable fabric for the pocket bag (See fabric and colour options)
-- Facing for the pocket bag, depending on your fabric and colour options
+- Основні матеріали для шиття
+- Тканина або деталь викрійки, на якій ви хочете зробити кишеню
+- Дві тканинні смужки для швів
+- Смуга інтерфейсу
+- Підкладка або інша відповідна тканина для кишенькової сумки (див. варіанти тканин та кольорів)
+- Облицювання для кишенькової сумки, залежно від вашої тканини та кольору
 
-### Parameters
+### Параметри
 
-Two values determine the size of your double welt pocket. They are:
+Два значення визначають розмір кишені з подвійним швом. Так і є:
 
-- The pocket width: This is the width of the opening of the finalized double welt pocket
-- The welt height: This is the height of a single welt, and this half of the height of our double welt pocket
+- Ширина кишені: це ширина отвору готової кишені з подвійним швом
+- Висота шва: Це висота одинарного шва, а це половина висоти нашої кишені з подвійним швом
 
-> In the example below, I use a pocket width of 13cm and a welt height of 0.5cm
+> У прикладі нижче я використовую ширину кишені 13 см і висоту шва 0,5 см
 
-## Cutting
+## Різання
 
-### Pocket welts
+### Кишенькові шви
 
-The welts are two rectangular strips of fabric with the following measurements:
+Шви - це дві прямокутні смужки тканини з наступними розмірами:
 
-- Length: Pocket width + 4cm
-- Width: Welt height x2 + 5cm
+- Довжина: Ширина кишені + 4 см
+- Ширина: висота шва x2 + 5 см
 
-For our example:
+Для нашого прикладу:
 
-- Length: 13cm + 4cm = 17cm
-- Width: (0.5cm x 2) + 5cm = 6cm
+- Довжина: 13 см + 4 см = 17 см
+- Ширина: (0,5 см х 2) + 5 см = 6 см
 
-They will form the two narrow strips of fabric that form your double welt pocket.
+Вони утворять дві вузькі смужки тканини, які сформують вашу подвійну кишеню зі швом.
 
-> Make sure to respect the grainline when cutting the two welts
+> Під час розрізання двох швів дотримуйтесь дотичної лінії.
 
-### Pocket interfacing
+### Кишеньковий інтерфейс
 
-The pocket interfacing is a single rectangular strip of fusible interfacing with the following measurements:
+Кишеньковий інтерфейс - це одна прямокутна смужка легкоплавкого інтерфейсу з наступними розмірами:
 
-- Length: Pocket width + 4cm
-- Width: Welt height x2 + 5cm
+- Довжина: Ширина кишені + 4 см
+- Ширина: висота шва x2 + 5 см
 
-For our example:
+Для нашого прикладу:
 
-- Length: 13cm + 4cm = 17cm
-- Width: (0.5cm x 2) + 5cm = 6cm
+- Довжина: 13 см + 4 см = 17 см
+- Ширина: (0,5 см х 2) + 5 см = 6 см
 
-> You may have noticed that the interfacing is the same size as a welt
+> Можливо, ви помітили, що інтерфейс має такий самий розмір, як і рана
 
-The interfacing is used to stabilize the pocket, and will be fused to the fabric with your iron.
+Прокладка використовується для стабілізації кишені і буде припрасована до тканини за допомогою праски.
 
-### Optional: Pocket facing
+### За бажанням: Облицювання кишень
 
-The (optional) pocket facing is a single rectangular strip of fabric with the following measurements:
+Обшивка кишені (опціонально) - це одна прямокутна смужка тканини з наступними розмірами:
 
-- Length: Pocket width + 4cm
-- Width: Welt height x2 + 5cm
+- Довжина: Ширина кишені + 4 см
+- Ширина: висота шва x2 + 5 см
 
-For our example:
+Для нашого прикладу:
 
-- Length: 13cm + 4cm = 17cm
-- Width: (0.5cm x 2) + 5cm = 6cm
+- Довжина: 13 см + 4 см = 17 см
+- Ширина: (0,5 см х 2) + 5 см = 6 см
 
-> You may have noticed that the facing is the same size as a welt
+> Ви могли помітити, що облицювання має той самий розмір, що і зварювальний шов
 
-The facing is what you'll see when you peer through the opening of your pocket.
+Облицювання - це те, що ви побачите, коли зазирнете в отвір кишені.
 
-The facing is optional, if you do not use it, peering through the pocket will reveal whatever material the pocket bag is made from.
+Облицювання необов'язкове, якщо ви не використовуєте його, зазирнувши в кишеню, ви побачите матеріал, з якого виготовлена кишенькова сумка.
 
-### Pocket bag
+### Кишенькова сумка
 
-The shape of the pocket bag depends on the pattern. For simplicity, I will use a rectangular pocket bag with rounded corners at the bottom as you may find on the back pockets of trousers.
+Форма кишенькової сумки залежить від викрійки. Для простоти я буду використовувати прямокутну кишенькову сумку із закругленими кутами внизу, як ви можете побачити на задніх кишенях штанів.
 
-> There is typically a longer and shorter version of the pocket bag. This is because one side is attached to the top welt, while the other is attached to the bottom welt.
+> Зазвичай існує довша та коротша версія кишенькової сумки. Це відбувається тому, що одна сторона кріпиться до верхнього шва, а інша - до нижнього.
 
-## Construction
+## Будівництво
 
-### Step 1: Fuse interfacing in place
+### Крок 1: Встановіть інтерфейс запобіжника на місце
 
-![Fuse interfacing in place](step01.png)
+![Інтерфейс запобіжника на місці](step01.png)
 
-Fuse the pocket interfacing to the bad side of your garment, so that it covers the place where you will make the welt pocket.
+Приметайте прокладку кишені до виворітного боку одягу так, щоб вона закривала місце, де ви будете робити кишеню з прорізним швом.
 
-> Patterns typically have notches that help you determine the placement of a welt pocket
+> Викрійки зазвичай мають насічки, які допомагають визначити місце розташування прорізної кишені
 
-### Step 2: Mark the welt pocket on the good side of the fabric
+### Крок 2: Розмітьте прорізну кишеню на виворітному боці тканини
 
-![Mark the welt pocket on the good side of the fabric](step02.png)
+![Розмітьте прорізну кишеню на виворітному боці тканини](step02.png)
 
-Mark the welt pocket as follows:
+Розмітьте кишеню втачного шва наступним чином:
 
-- Mark the pocket width with the vertical lines. Let these lines extend to help you align the welts later
-- Align the center opening of the pocket with a horizontal line. Let it extend to help you align the welts later
-- Mark two horizontal lines parallel to the center line, at an offset equal to the welt height (0.5cm in our example)
+- Відзначте ширину кишені вертикальними лініями. Нехай ці лінії продовжуються, щоб згодом допомогти вам вирівняти шви
+- Вирівняйте центральний отвір кишені по горизонтальній лінії. Дайте йому розтягнутися, щоб згодом вирівняти шви
+- Проведіть дві горизонтальні лінії, паралельні центральній лінії, на відстані, що дорівнює висоті шва (0,5 см у нашому прикладі)
 
-The part of the horizontal lines parallel to the center line that fall in between the verticle lines is where we'll sew our welts in place. This is illustrated by the red lines.
+Частина горизонтальних ліній, паралельних центральній лінії, які потрапляють між вертикальними лініями, - це місце, де ми будемо зшивати наші шви. Це проілюстровано червоними лініями.
 
-### Step 3: Fold and press the welts
+### Крок 3: Складіть і притисніть шви
 
-![Fold and press the welts](step03.png)
+![Складіть і притисніть шви](step03.png)
 
-Fold the welts parallel with the long side, with the good side out.
+Складіть шви паралельно довгій стороні лицьовою стороною назовні.
 
-Don't fold them in half. Instead make one side 1cm longer than the other.
+Не складайте їх навпіл. Замість цього зробіть одну сторону на 1 см довшою за іншу.
 
-Press the fold so that it becomes a sharp crease.
+Притисніть згин так, щоб він став гострою складкою.
 
-> By offsetting the edges, the welt edge tapers off, which reduces bulk and visibility on the outside of the garment.
+> Завдяки зміщенню країв, край шва звужується, що зменшує об'єм і видимість на зовнішній стороні одягу.
 
-### Step 4: Sew welts in place
+### Крок 4: Зашийте шви на місці
 
-![Sew welts in place](step04.png)
+![Зашийте шви на місці](step04.png)
 
-> In the images above, the dashed black line is the center of the welt. The red line shows where to sew, and the green line is a seam that has already been sewn.
+> На зображеннях вище пунктирна чорна лінія - це центр рубця. Червона лінія показує, де потрібно зшивати, а зелена - це вже зшитий шов.
 
-Place the welt on the good side of your garment with the shorter folded side down, and center it horizontally.
+Покладіть шов на виворітну сторону одягу коротшою складеною стороною донизу і розташуйте його по центру по горизонталі.
 
-Align the folded side with the center of the welt pocket, and now shift it twice the Welt Height (WH) outwards.
+Вирівняйте складену сторону з центром кишені, а тепер змістіть її назовні на висоту шва вдвічі більшу, ніж висота шва (WH).
 
-In our example with a Welt Height of 0.5cm, the fold of your welt lies 1cm from the welt pocket center.
+У нашому прикладі з висотою шва 0,5 см, згин вашого шва лежить на відстані 1 см від центру кишені шва.
 
-Sew your welt in place 0.5cm (WH) from the fold, or in other words, precisely on the line you marked on your garment.
+Пришийте шов на відстані 0,5 см від згину, або, іншими словами, точно по лінії, яку ви позначили на одязі.
 
-Make sure to start and stop precisely on the vertical lines that indicate the pocket width.
+Переконайтеся, що ви починаєте і закінчуєте точно на вертикальних лініях, які вказують на ширину кишені.
 
-When you're done, sew the second welt in place. Note that this will be a bit more tricky as you'll have to fold back the first welt, and lay part of your second welt over it.
+Закінчивши, зашийте другий шов на місці. Зверніть увагу, що це буде трохи складніше, оскільки вам доведеться відгинати перший шов і накладати на нього частину другого шва.
 
-### Step 5: Cut open your pocket
+### Крок 5: Розріжте кишеню
 
-![Cut open your pocket](step05.png)
+![Розріжте кишеню](step05.png)
 
-> In the image, the red line marks how/where to cut open your pocket, and the green line shows the seams.
+> На зображенні червоною лінією позначено, як і де розрізати кишеню, а зеленою - шви.
 
-Cut open your welt pocket by cutting along the center horizontal line. Stop short of the vertical lines that mark the sides of the pocket and cut under 45 degrees to the edge of your line of stitching that holds the welts down.
+Розріжте кишеню з прорізним швом, розрізавши по центральній горизонтальній лінії. Зупиніться на вертикальних лініях, які позначають бокові сторони кишені, і обріжте під кутом 45 градусів до краю лінії строчки, яка утримує шви.
 
-> Make sure to not cut into your stitches or cut too far. Make it precise.
+> Переконайтеся, що ви не розрізаєте шви і не розрізаєте занадто глибоко. Зробіть це точно.
 
-### Step 6: Flip the welts to the other side and press
+### Крок 6: Переверніть шви на інший бік і притисніть
 
-![Flip the welts to the other side and press](step06.png)
+![Переверніть шви на інший бік і притисніть](step06.png)
 
-You have been sewing your welts to the good side of the fabric. Now, we are going to flip them to the back side, through the opening we just cut in the fabric.
+Ви пришили свої шви до вивороту тканини. Тепер ми перевертаємо їх на зворотний бік, через отвір, який ми щойно прорізали в тканині.
 
-Flip the welts to the back, and press them flat. Take your time to work the fabric into a neat rectangle before you press it down.
+Переверніть шви на зворотний бік і притисніть їх плазом. Не поспішайте складати тканину в акуратний прямокутник, перш ніж притискати її.
 
-> Make sure to press the triangular pieces of fabric (at the short edge of your opening) to the side
+> Переконайтеся, що трикутні шматки тканини (на короткому краю вашого отвору) притиснуті збоку
 
-> You're pressing several layers of fabric. Consider pressing down (or open) the layers individually before pressing them together. This will give a sharper crease, and a neater welt pocket.
+> Ви притискаєте кілька шарів тканини. Подумайте про те, щоб притиснути (або розкрити) шари окремо, перш ніж притискати їх разом. Так ви отримаєте більш чітку складку і акуратну кишеню зі швом.
 
-### Step 7: Sew the pocket opening sides to the welts
+### Крок 7: Пришийте бокові сторони отворів кишень до швів
 
-![Sew the pocket opening side to the welt on one side](step07a.png) ![And repeat on the other side](step07b.png)
+![Пришийте бік отвору кишені до шва з одного боку](step07a.png) ![І повторіть з іншого боку](step07b.png)
 
-Put your garment down with the good side up, and fold it back on the side of your welt pocket, making sure to keep your welts lying flat.
+Покладіть одяг лицьовою стороною догори і складіть його назад з боку нагрудної кишені, переконавшись, що шви лежать рівно.
 
-Sew the triangular piece of fabric from the pocket opening to the welts.
+Зшийте трикутний шматок тканини від отвору кишені до швів.
 
-> Make sure that you do not sew into the pocket opening, as this will show the stitches on the front
+> Переконайтеся, що ви не вшиваєте в отвір кишені, оскільки це покаже стібки на лицьовій стороні
 
-### Step 8: Sew the bottom pocket bag to the bottom welt
+### Крок 8: Пришийте нижню кишеню сумки до нижнього шва
 
-![Sew the bottom pocket bag to the botom welt](step08.png)
+![Пришийте нижню кишеню мішка до нижнього шва](step08.png)
 
-Fold your garment out of the way so you can sew the pocket bag to the lower welt.
+Складіть одяг так, щоб можна було пришити кишеньковий мішечок до нижнього шва.
 
-Also finish the edge of the welt with a zig-zag stitch so the welt stays flat inside the pocket.
+Також обробіть край шва зигзагоподібною строчкою, щоб шов залишався рівним всередині кишені.
 
-> The pocket bag is show in lining fabric here (green) far clarity. You can also make your pocket bags from other fabric.
+> Кишенькова сумка показана в підкладковій тканині тут (зеленого кольору) з більшою чіткістю. Ви також можете зробити кишенькові сумки з іншої тканини.
 
-### Step 9: Optional: Sew facing to top pocket bag
+### Крок 9: Необов'язково: Пришийте лицьову сторону до верхньої кишені сумки
 
-![Sew the facing to the top pocket bag](step09.png)
+![Пришийте обшивку до верхньої кишені сумки](step09.png)
 
-> This step is optional. Attach facing to the top pocket bag if that is want you want to show through the pocket opening.
+> Цей крок не є обов'язковим. Прикріпіть лицьовою стороною до верхньої кишені сумки, якщо ви хочете, щоб її було видно через отвір кишені.
 
-### Step 10: Sew the top pocket bag to the top welt
+### Крок 10: Пришийте верхню кишеню сумки до верхнього шва
 
-![Sew the top pocket bag to the top welt](step10.png)
+![Пришийте верхню кишеню сумки до верхнього шва](step10.png)
 
-Fold your garment out the way so you can sew the pocket bag to the top welt.
+Виверніть виріб так, щоб можна було пришити кишеньковий мішечок до верхнього шва.
 
-> If you applied facing to your pocket bag, make sure to place it with the facing towards the welts.
+> Якщо ви наклеїли обшивку на кишенькову сумку, обов'язково покладіть її лицьовою стороною до швів.
 
-### Step 11: Attach the welts to the pocket bag
+### Крок 11: Прикріпіть шви до кишенькової сумки
 
-![Sew one side](step11a.png) ![Sew the other side](step11b.png) ![And sew the top](step11c.png)
+![Зшийте один бік](step11a.png) ![Зшийте інший бік](step11b.png) ![І зшийте верхню частину](step11c.png)
 
-Place your garment with the good side up, and fold it back at the side of the welt pocket.
+Покладіть виріб лицьовим боком догори і складіть його збоку від прорізної кишені.
 
-Sew the triangular piece of fabric from the pocket opening to the pocket bags, much like you've sewn it to the welts earlier.
+Пришийте трикутний шматок тканини від отвору кишені до кишенькових мішків так само, як ви пришивали його до швів раніше.
 
-Fold back your garment at the top of the welt pocket.
+Загніть одяг у верхній частині прорізної кишені.
 
-Now, sew the top of the pocket opening to the pocket bag.
+Тепер пришийте верхню частину отвору кишені до сумки-кишені.
 
-### Step 12: Finish the pocket bag
+### Крок 12: Закінчіть кишенькову сумку
 
-![Now finish the pocket bag](step12.png)
+![Тепер закінчіть кишенькову сумку](step12.png)
 
-Now finish the pocket back by closing all the edges (the top edge is optional).
+Тепер зашийте кишеню назад, закривши всі краї (верхній край необов'язковий).
 
-To do so, you can apply bias tape, use a serger, or sew some other finishing stitch.
+Для цього можна застосувати косу бейку, використати серпянку або виконати іншу оздоблювальну строчку.
 
-After that, you're done!
+Після цього все готово!

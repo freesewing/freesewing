@@ -1,9 +1,9 @@
----
-title: "Sleeve length bonus"
----
+- - -
+title: "Längenzugabe Ärmel"
+- - -
 
-This option controls how long to lengthen the sleeves by.
+Diese Option legt fest, um wie viel die Ärmel verlängert werden.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_sleevelengthbonus_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](huey_sleevelengthbonus_sample.svg "Effekt dieser Variable auf das Schnittmuster")

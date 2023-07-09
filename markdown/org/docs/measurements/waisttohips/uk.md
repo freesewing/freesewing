@@ -1,5 +1,5 @@
 ---
-title: Waist to hips
+title: Від талії до кісточки таза
 ---
 
-The **waist to hips** measurement is measured from your waist down to the top of your hip bone (where your trousers sit). Measure it at the side of your body.
+Обхват **талії до стегон** вимірюється від талії до верхньої частини стегнової кістки. Виміряйте його збоку тіла.

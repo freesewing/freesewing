@@ -1,6 +1,6 @@
----
+- - -
 titre : "Longueur supplémentaire"
----
+- - -
 
 Contrôle la longueur du pantalon entier, ce qui signifie essentiellement la longueur des jambes.
 

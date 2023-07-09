@@ -1,6 +1,6 @@
----
+- - -
 title: "Sleeve placket length"
----
+- - -
 
 ![Ärmelleistenlänge](sleeveplacketlength.svg)
 
@@ -15,4 +15,4 @@ Es beeinflusst auch, wie die Dinge aussehen, wenn du die Ärmel hochrollst
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_sleeveplacketlength_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_sleeveplacketlength_sample.svg "Effekt dieser Option auf das Schnittmuster")

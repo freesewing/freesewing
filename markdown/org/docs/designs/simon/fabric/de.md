@@ -1,73 +1,73 @@
----
+- - -
 title: "Simon shirt: Fabric Options"
----
+- - -
 
-Any fabric shop that is worth your business should have a shirting section. You can just walk in, ask where you can find the shirting, and pick out something you like.
+Jeder Stoff-Shop, der Ihr Geschäft wert ist, sollte eine Shirt-Sektion haben. Du kannst einfach hingehen, fragen, wo du das Hemd findest, und etwas auswählen, was dir gefällt.
 
-Most of what you'll find there will be cotton, or a blend of cotton. But you're free to go for another fiber too.
+Die meisten von dem, was Sie finden wird Baumwolle oder eine Mischung aus Baumwolle. Aber auch für eine weitere Faser steht Ihnen nichts im Wege.
 
-When shopping online, it can be harder to get a good idea of what you're looking at. In the absence of touch, it's good to know a thing or two about the different weaves of fabrics. The weave is how the fabric was woven, and this determines not only how the fabric looks, but also how it will feel and drape.
+Wenn Sie online einkaufen, kann es schwieriger sein, eine gute Vorstellung davon zu bekommen, was Sie suchen. Da es keine Berührung gibt, ist es gut, etwas über die verschiedenen Gewebe zu wissen. Das Gewebe ist die Art und Weise, wie der Stoff gewebt wurde, und das bestimmt nicht nur das Aussehen des Stoffes, sondern auch das Anfühlen und Ziehen.
 
-Without wanting to start an encyclopedia of fabrics here, here are some terms you may come across when shopping for shirt fabric online.
+Ohne hier eine Enzyklopädie von Stoffen beginnen zu wollen, gibt es hier einige Begriffe, die Sie beim Online-Einkauf für Shirt Stoff sehen können.
 
 ## Breitstoff oder Pappin
 
-Broadcloth is the way to go for that white shirt for your job interview or wedding.
+Broad-Tuch ist der richtige Weg für ein weißes Hemd für Ihr Arbeitsgespräch oder Ihre Hochzeit.
 
-Broadcloth (frequently referred to as poplin) is a simple weave and results in a flat plain fabric that will give you that crisp formal look.
+Das Breittuch (oft als Poplin bezeichnet) ist ein einfaches Gewebe und führt zu einem flachen Stoff, das Ihnen diesen knusprigen formalen Look verleiht.
 
-It's typically a lighter fabric and in light colours can tend to be a bit transparent.
+Es ist typischerweise ein leichterer Stoff und in hellen Farben neigen dazu, ein wenig transparent zu sein.
 
 ## Twill
 
-You can recognize twill fabrics by their characteristic diagonal texture from the weave.
+Sie können die Twill Stoffen an ihrer charakteristischen diagonalen Textur aus dem Webstuhl erkennen.
 
-It drapes more easily than broadcloth, wrinkles less and when it does, is easier to iron.
+Er zieht leichter als Breittuch, faltet weniger und wenn es tut, ist es leichter zu Eisen.
 
-The flip side of the coin is that it won't give you that starchy crisp vibe that broadcloth can.
+Die Kehrseite der Münze ist, dass sie dir nicht so kräftig knusprig leuchtet wie ein Breittuch.
 
 ## Pinpoint
 
-Pinpoint is the work horse of shirt fabrics. Typically they produce a heavier and thicker . and thus more durable . fabric.
+Pinpoint ist das Arbeitstier aus Hemdenstoffen. Typically they produce a heavier and thicker . and thus more durable . fabric. und damit dauerhafter . Stoff.
 
-Pinpoint is a less formal look than broadcloth or twill, but more formal than oxford. This, combined with its durability, make it a great choice for your everyday work shirt.
+Pinpoint ist ein weniger formaler Look als Breittuch oder Twill, aber formeller als Oxford. Das macht es zusammen mit seiner Langlebigkeit zu einer idealen Wahl für Ihr tägliches Arbeitsshirt.
 
 ## Kamilie
 
-Chambray is simple weave, similar to broadcloth. It is different because it uses a much heavier yarn, and typically different colours for the weft and width.
+Chambray ist ein einfaches Web, ähnlich dem Breitstoff. Es ist anders, weil es ein viel schwereres Garn und typischerweise unterschiedliche Farben für den Weft und die Breite verwendet.
 
-The result is a much more textured fabric, both in touch as appearance where the different colours create a densely speckled two-coloured fabric.
+Das Ergebnis ist ein viel texturierterer Stoff, beide in Berührung als Optik, wo die verschiedenen Farben ein dicht gesprenkeltes zweifarbiges Gewebe bilden.
 
 ## Denim
 
-Denim needs no introduction. It's the stuff your jeans are made from.
+Denim braucht keine Einführung. Es ist das Zeug aus dem Ihre Jeans hergestellt werden.
 
-Technically a twill fabric (look for the signature diagonal texture) denim is produced in much lighter weights than the ones your jeans are made from. Those are the ones you can use for a shirt.
+Technisch gesehen wird ein Stoff (suchen Sie nach der Unterschrift diagonale Textur) Denim in viel leichteren Gewichten produziert als die, aus denen Ihre Jeans hergestellt werden. Das sind diejenigen, die Sie für ein Hemd verwenden können.
 
 ## Flanne
 
-From Curt Cobain to the hipsters at your local coffee shop, they all swear by flannel shirts.
+Von Curt Cobain über die Hipster in Ihrem lokalen Kaffeehaus schwören sie alle an Flannhemden.
 
-Warmer than any other option here, flannel comes typically in brushed cotton though you might find it with added wool for extra warmth.
+Wärmer als jede andere Option, kommt Flannel normalerweise in gebürsteter Baumwolle, obwohl man sie möglicherweise mit zusätzlicher Wolle für zusätzliche Wärme findet.
 
 ## Leinen
 
-Linen wrinkles like a mofo, but you can't beat it for safari looks.
+Leinenfalten wie ein Mofo, aber man kann sie nicht für Safari-Look schlagen.
 
-The reason you associate it with adventures in tropical climates is that linen breaths like nothing else and will keep you coolest of all.
+Der Grund, warum du es mit Abenteuern in tropischen Klimazonen assoziierst, ist, dass Leinen wie nichts anderes atmet und dich am coolsten hält.
 
 ## Thread-Anzahl
 
-A higher thread count means a smoother (and more expensive) fabric.
+Eine höhere Fadenanzahl bedeutet einen glatteren (und teureren) Stoff.
 
-Thread count is expressed in numbers, like 60s, 80s, 100s and so on to 300s and more.
+Thread-Zähler werden in Zahlen ausgedrückt, wie 60s, 80s, 100s usw. bis 300s und mehr.
 
-There's a catch though. Numbers above 100s are typically made by twisting two yarns together. Like a 160s thread count means that two 80s yarns were twisted together for the thread.
+Es gibt jedoch einen Fang. Zahlen über 100 werden typischerweise durch Verdrehen von zwei Garnen hergestellt. Wie eine Fadenzählung aus den 160er Jahren bedeutet, dass zwei achtziger Jahre Garne für den Faden verdreht wurden.
 
 ## Single Ply oder 2 Ply
 
-If a thread is made up of two yarns (see thread count above) we call that Two ply.
+Wenn ein Faden aus zwei Garnen besteht (siehe Fadenzähler oben) nennen wir das Zwei.
 
-If the yarn is made up of a single thread, it's call Single ply.
+Wenn das Garn aus einem einzigen Thread besteht, dann nennt man Single ply.
 
-You can expect two ply to last longer, and be more expensive.
+Sie können erwarten, dass zwei Ply länger halten und teurer.

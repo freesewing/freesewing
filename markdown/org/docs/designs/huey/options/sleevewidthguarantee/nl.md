@@ -1,6 +1,6 @@
----
+- - -
 title: "Sleeve width guarantee"
----
+- - -
 
 We maken eerst een arm opening en vervolgens leggen we een mouw op om die te passen.
 
@@ -12,4 +12,4 @@ Om te voorkomen dat de mouw te smal wordt, passen we alleen een deel van de mouw
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](huey_sleevewidthguarantee_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](huey_sleevewidthguarantee_sample.svg "Effect van deze optie op het patroon")

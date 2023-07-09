@@ -33,7 +33,7 @@
   },
   "goodSidesTogether": {
     "term": "goede kanten op elkaar",
-    "description": "Zie <a href='/docs/sewing/good-sides-together/'>Goede kanten op elkaar</a> in de<a href='/docs/sewing/'>Documentatie naaien</a>"
+    "description": "Zie <a href='/docs/sewing/good-sides-together/'>Goede kanten op elkaar</a> bij de <a href='/docs/sewing/'>Documentatie naaien</a>"
   },
   "onTheFold": {
     "term": "aan de stofvouw",
@@ -98,14 +98,6 @@
   "patternOptions": {
     "term": "patroon opties",
     "description": "De <b>patroon opties</b> staan je toe het ontwerp van het patroon aan te passen"
-  },
-  "draftSettings": {
-    "term": "instellingen patroontekening",
-    "description": "De <b>instellingen patroontekening</b> geven je controle over goe een patroon gegenereerd wordt"
-  },
-  "patrons": {
-    "term": "patrons",
-    "description": "Mecenassen ondersteunen FreeSewing financieel. Het zijn loyale supporters die zorgen voor een duurzame toekomst voor freesewing.org, onze code, onze patronen en onze gemeenschap."
   },
   "msf": {
     "term": "msf",

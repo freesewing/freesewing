@@ -1,7 +1,7 @@
 ---
-title: Shoulder to elbow
+title: Плече до ліктя
 ---
 
-The **shoulder to elbow** measurement runs from the tip of your shoulder down to your elbow.
+Вимірювання **від плеча до ліктя** проводиться від кінчика плеча до ліктя.
 
-To measure your **shoulder to elbow**, start at the tip of your shoulder, the tip or corner of the protruding bone that is located where the top of the shoulder meets the side of the arm. It is also where the top of the shoulder seam sits and the sleeve begins on a well-fitting dress shirt. Follow your arm down to your elbow.
+Щоб виміряти ваш **від плеча до ліктя**, почніть з кінчика плеча, кінчика або кута виступаючої кістки, який знаходиться там, де верхня частина плеча з'єднується з бічною частиною руки. Це також місце, де знаходиться верхня частина плечового шва і починається рукав на добре скроєній сорочці. Простежте за рукою до ліктя.

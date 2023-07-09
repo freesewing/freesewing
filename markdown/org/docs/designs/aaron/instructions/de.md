@@ -1,6 +1,6 @@
----
+- - -
 title: "Aaron A-Shirt: Nähanleitung"
----
+- - -
 
 ## Schritt 1: Nähte schließen
 

@@ -1,10 +1,10 @@
----
+- - -
 title: "Sleevecap Q1 downward spread"
----
+- - -
 
-![The downward spread in the first quadrant of the sleevecap](./sleevecapq1downwardspread.svg)
+![La propagation vers le bas dans le premier quadrant de la tête de manche](./sleevecapq1downwardspread.svg)
 
-This option controls the downward spread in the first quadrant of the sleevecap.
+Cette option permet de contrôler la propagation vers le bas dans le premier quadrant de la tête de manche.
 
 <Tip>
 

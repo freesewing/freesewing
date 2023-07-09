@@ -1,8 +1,8 @@
----
+- - -
 title: "Ursula undies: Cutting Instructions"
----
+- - -
 
-Ursula consists of a front, a back, and a lined gusset.
+Ursula besteht aus einem vorderen Teil, einem hinteren Teil und einem gefütterten Zwickel.
 
 - **Oberstoff**
   - Schneide **1 Vorderteil**

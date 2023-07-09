@@ -1,9 +1,9 @@
----
+- - -
 title: "Sleeve bend"
----
+- - -
 
-The angle by which the sleeve bends at the elbow.
+Der Winkel, in dem sich der Ärmel am Ellenbogen biegt.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bent_sleevebend_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](bent_sleevebend_sample.svg "Effekt dieser Variable auf das Schnittmuster")

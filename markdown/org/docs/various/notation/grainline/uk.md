@@ -1,19 +1,19 @@
 ---
-title: Grainline and cut-on-fold indicator
+title: Індикатор дольчатої лінії та зрізу на згині
 ---
 
-Grainlines — a line that indicates the _fabric grain_ — look like this:
+Лінії дольчатості - лінія, яка вказує на _волокна тканини_ - виглядають так:
 
 <Legend part="grainline">
 
-A grainline indicator
+Індикатор зернової лінії
 
 </Legend>
 
-Cut-on-fold indicators look similar, but point towards the line on which the fabric should be folded:
+Індикатори згину виглядають схоже, але вказують на лінію, по якій потрібно скласти тканину:
 
 <Legend part="cutonfold">
 
-A cut-on-fold indicator
+Індикатор розрізу на згині
 
 </Legend>

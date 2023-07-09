@@ -1,12 +1,12 @@
----
-title: "Handle width"
----
+- - -
+titre: "Largeur de la poignée"
+- - -
 
-Controls the width of the handle.
+Contrôle la largeur de l'anse.
 
 <Tip>
 
-Turn on paperless to see the width of the handle.
+Passez en mode sans papier pour voir la largeur de la poignée.
 
 </Tip>
 

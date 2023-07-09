@@ -1,8 +1,8 @@
----
+- - -
 title: "Cross seam bend"
----
+- - -
 
-Controls the curvature of the cross seam curve.
+Steuert die Krümmung der Quernahtkurve.
 
 <Note>
 
@@ -17,4 +17,4 @@ Menschen mit einem runden Bum wollen dies vielleicht senken, um ein wenig mehr (
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_crossseamcurvebend_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](charlie_crossseamcurvebend_sample.svg "Effekt dieser Variable auf das Schnittmuster")

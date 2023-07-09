@@ -1,12 +1,12 @@
----
+- - -
 title: "Charlie chinos: Sewing Instructions"
----
+- - -
 
 ## Stap 1: Sluit de neep op de rug
 
-First thing we're going to do is close the waist dart on the back panel.
+Eerst gaan we de neep van de taille op de achterkant sluiten.
 
-To do so, fold the back panel double with _good sides together_ making sure to match both sides of the dart on top of each other.
+Om dat te doen Plooi het achterpaneel dubbel met _goede kanten op elkaar,_ en zorg ervoor dat de twee kanten van de neep bovenop elkaar liggen.
 
 Now sew the dart close, making sure to use a small stitch length, and to sew all the way to the end of the dart, even a couple of stitches off the fabric.
 
@@ -20,7 +20,7 @@ Je achterste nepen moeten even lang zijn. Let op dat je ze precies stikt.
 
 ## Stap 2: Maak de achterzakken
 
-Follow [our double welt pocket instructions](/docs/sewing/double-welt-pockets/) to create the back welt pockets.
+Volg [onze instructies voor de dubbele paspelzak](/docs/sewing/double-welt-pockets/) voor het maken van de paspelzakken.
 
 <Note>
 
@@ -32,19 +32,19 @@ the instructions) but it's a very typical finish for chinos, and makes it easier
 
 ### Bevestig het beleg van de achterzak aan het zakdeel
 
-Join the back pocket facing to the pocket bag by placing them with _good sides together_ and sewing along the longest of the non-curved seams of the facing.
+Bevestig het beleg aan het zakdeel van de achterzak door ze met _goede kanten op elkaar te plaatsen_ en de langste naad van de niet-gebogen naden van het gezicht te stikken.
 
-When you're done, press the seam allowance to the side of the pocket bag.
+Strijk de naadwaarde aan de zijkant van het zakdeel als je klaar bent.
 
 ### Bevestig het achterzakdeel
 
-Sew the bottom of the pocket bag to the bottom welt. Press it down when done.
+Stik de onderkant van het zakdeel aan de onderste paspel. Strijk het omlaag als je klaar bent.
 
-Now align the top of the pocket bag with the waist and sew it down in the waist's seam allowance.
+Leg nu de bovenkant van het zakdeel gelijk met de taille en stik deze vast in de naadwaarde van de taille.
 
 ### Sluit het zakdeel
 
-Fold the leg panel out of the way so you can close both sides of the pocket bag.
+Plooi het potje uit de weg zodat je beide kanten van het zakdeel kan sluiten.
 
 <Note>
 
@@ -52,7 +52,7 @@ Stik de paspels ook vast aan het zakdeel
 
 </Note>
 
-You should overlock/serge the sides of the pocketbag so they don't ravel.
+Je zou de zijkanten van het zakdeel moeten oververgrendelen/verstoppen zodat ze niet rafelen.
 
 <Tip>
 
@@ -62,7 +62,7 @@ Als je geen _serger_ hebt, kun je in plaats daarvan een zigzagsteek gebruiken.
 
 ## Stap 3: Overlock de voor- en achterkanten
 
-Before we go any further, we'll overlock/serge the edges of the front and back panels of the legs. Make sure to also catch the top of the pocket bag when doing the back panels.
+Voordat we verder gaan, overlock je de randen van de voor- en achterpanelen van de broekspijpen en van de broekspijpen. Let op dat je ook de bovenkant van het zakdeel vastpakt wanneer je de achterpanelen opneemt.
 
 What we want to to prevent these edges from ravelling after we've completed our trousers, and now is the best time to do so.
 
@@ -70,13 +70,13 @@ What we want to to prevent these edges from ravelling after we've completed our 
 
 ## Stap 4: Maak de zakopening
 
-The front pockets are a little unusual because they have the appearance of classic slanted pockets, but are constructed on the side seam.
+De voorzakken zijn een beetje ongewoon omdat ze het uiterlijk hebben van klassieke schuine zakken, maar zijn geconstrueerd aan de zijnaad.
 
 ### Bevestig de belanden van de steekzak aan de zakdelen
 
-We have two front pocket bags, that each have two pieces of facing to attach to them.
+We hebben twee voorzakken die elk twee stukken beleg hebben om aan ze vast te bevestigen.
 
-Align them with _good sides together_ (\*) and sew the facing in place.
+Leg ze gelijk met _goede kanten op elkaar_ (\*) en stik het beleg vast.
 
 <Note>
 
@@ -93,17 +93,17 @@ Er is hier geen juist of verkeerd antwoord. Jullie doen jullie.
 
 ### Markeer het zakmerkteken op de voor- en achterste delen van de zak
 
-There's a notch on both front and back leg panels that indicates up to what point the pocket facing should be attached to the side seam.
+Er is een merkteken op zowel voor- als achterbeendelen dat aangeeft tot aan welk punt het beleg van de zak vastzit aan de zijnaad.
 
-Make sure to transfer this notch to both the (edge of the) pocket facing and the front trouser leg, since it's important we match them.
+Zorg dat je dit merkteken overmaakt naar zowel het (rand van het) zakbeleg als het voorpand broekspijp, omdat het belangrijk is dat we ze overeenkomen.
 
 ![Pocket facings with notches](step04b.svg)
 
 ### Speld of geef de zak op het voor- en achterste deel
 
-Both on the front and the back leg panel, we're going to sew the pocket facing to the side seam.
+Zowel aan het voorpand als aan het rugpand gaan we het zakbeleg stikken aan de zijnaad.
 
-However, this needs to be precise, so you really want to make sure you either pin or baste it in place.
+Dit moet echter nauwkeurig zijn, dus u wilt er zeker van zijn dat u het ergens op de juiste plaats zet of driegt.
 
 <Note>
 
@@ -115,11 +115,11 @@ Begin met de voorkant, want dat is de makkelijkste naad. Zodra je een oefening h
 
 ### Stik de voorzak vast
 
-Sew from the waist down right until the notch that indicates where to stop.
+Stik van de taille naar beneden tot het merkteken dat aangeeft waar te stoppen.
 
 ### Strijk de voorste steekzak
 
-Now press the slant of the front pocket, both on the back and front panel, so that it's a sharp crease.
+Strijk nu de schuine zak vooraan, zowel aan de achterkant als aan het voorpand, zodat het een scherpe plooi is.
 
 ![Pressed front pocket slant](step04d.svg)
 
@@ -129,41 +129,41 @@ Now press the slant of the front pocket, both on the back and front panel, so th
 
 I strongly advise you to baste the pocket shut/in place before sewing this seam so that you know it's precise.
 
-Closing the outseam means to place front and back panel with good sides together, and sew the outer seam. That's easy enough at the legs, but at the top we have our pocket, which complicates things.
+Sluit de buitennaad om de voor- en achterkant van het paneel te plaatsen met de goede kanten op elkaar, en stik de buitennaad. Dat is makkelijk genoeg aan de benen, maar aan de bovenkant hebben we onze portemonnee, wat de zaken ingewikkelder maakt.
 
 ### Stik de bovenrand van de buitenste naad tot het bovenste merkteken van de zakopening
 
-Make sure everything is neatly aligned. Then sew from the top of the waist down to the top notch (this is just over a cm or half an inch).
+Zorg ervoor dat alles netjes is afgestemd. Stik dan van de bovenkant van de taille naar het bovenste merkteken (dit is iets meer dan een halve cm of een inch).
 
 ![Outer seam sewn until top notch](step05a.svg)
 
 ### Stik de onderkant van de buitenste naad vanaf het onderste merkteken van de zakopening
 
-Now move to the bottom notch of the pocket slant, and sew from there all the way to the bottom of the legs.
+Ga nu naar het onderste merkteken van de zakopening en stik van daar helemaal naar de onderkant van de broekspijpen.
 
 ![Outer seam sewn from lower pocket notch down](step05b.svg)
 
 ### Strijk de buitenste naad open
 
-When you're done, make sure to press the seam allowance open along the leg. Don't press the pocket, we already did that.
+Let op dat je de naadwaarde langs het podium open strijkt. Strijk de zak niet, dat hebben we al gedaan.
 
 ## Stap 6: Werk het voorste zakdeel af
 
 ### Stik zakdeel dicht bij binnenzijde
 
-With our pocket opening constructed and outer seam closed, we should now finish the pocket bag.
+Als onze zakopening is geconstrueerd en de buitenste naad is gesloten, moeten we nu het zakdeel afwerken.
 
-Pull the pocket bag out so that it dangles on the outside of the trouser leg. Then place both halves together and either use a serger to finish the edge, or sew closely to the edge.
+Trek het zakdeel uit zodat het aan de buitenkant van de broekspijp gevaar loopt. Then place both halves together and either use a serger to finish the edge, or sew closely to the edge.
 
-Make sure you end up at the point where the bottom part of the outer seam starts.
+Zorg dat je eindigt op het punt waar het onderste deel van de buitenste naad begint.
 
 ![Pocket bag, sewn closed](step06a.svg)
 
 ### Werk de rand van het zakdeel af
 
-When you're done, you can flip the pocket bag back to the inside of the trouser leg.
+Wanneer je klaar bent kun je het zakdeel terug naar de binnenkant van de broekspijp omdraaien.
 
-Our pocket bag is now closed, but when we put our hand in it, you can feel the raw edge of the seam allowance. To avoid that, topstitch along the edge of the pocket bag, locking in the seam allowance.
+Ons zakdeel is nu gesloten, maar als we onze hand erin steken kan je de onafgewerkte rand van de naadwaarde voelen. Om dat te voorkomen steek je langs de rand van het zakdeel door de naadwaarde vast te leggen.
 
 <Note>
 Als je naadwaarde breed is, zou je hem eerst terug kunnen bijknippen.
@@ -173,29 +173,29 @@ Als je naadwaarde breed is, zou je hem eerst terug kunnen bijknippen.
 
 ## Stap 7: Bevestig de zakopening
 
-At the place the leg down with the good side up, making sure the pocket bag lies flat and towards the front panel.
+Op de goede kant naar beneden met de goede kant naar boven, zorg ervoor dat het zakdeel plat ligt en richting het voorpand.
 
-Now at the top and bottom of the pocket opening, place a bar-tack perpendicular to the outer seam.
+Leg nu aan de bovenkant en onderkant van de zakopening een bar-tack in de buitenste naad.
 
 ![Bar tacks at pocket openings](step07.svg)
 
 ## Stap 8: Sluit de binnennaad
 
-With our front pockets finished, close the inseam of both legs.
+Als onze voorzakken klaar zijn, sluit je de binnennaad van beide broekspijpen.
 
-When you're done, press open the inseam.
+Strijk de binnennaad open wanneer je klaar bent.
 
 ![Closed inseams](step08.svg)
 
 ## Stap 9: Sluit de kruisnaad
 
-Make sure one leg is turned with the good side out, and the other has the good side in.
+Zorg dat de ene broekspijp met de goede kant naar buiten gekeerd is, en de andere de goede kant erin heeft.
 
-Now tuck the leg with the good side out inside the leg that has the good side in. This way, they have their good sides against each other.
+Now tuck the leg with the good side out inside the leg that has the good side in. Op die manier hebben ze hun goede kanten tegen elkaar.
 
-Align the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. Stop at the lowest fly notch.
+Align the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. Stop bij de laagste gulpbel.
 
-When you're done. Do it again. Always sew the cross seam twice. It's one of those best practices you ignore at your own peril.
+Wanneer je klaar bent. Doe het opnieuw. Stik de kruisnaad altijd twee keer. Het is een van die beste praktijken die je negeert op eigen risico.
 
 <Tip>
 
@@ -210,51 +210,51 @@ Het goed doen is een van die dingen die je uiteindelijk altijd zal koesteren wan
 
 ### Sluit gulp extensie
 
-Fold the fly extension on its fold line with good sides together.
+Plooi de gulp op de geplooide lijn met de goede kanten op elkaar.
 
-Now sew along the bottom, to close the fly extension.
+Stik nu langs de onderkant, om de vlieg extensie te sluiten.
 
-Trim back one half of the seam allowance to remove bulk before turning it good side out and pressing.
+Knip de helft van de naadwaarde terug om bulk te verwijderen voordat je de goede kant naar buiten zet en strijkt.
 
 ### Serveer de vliegextensie en vlieg met beleg
 
-Serge (or zig-zag) along the open side of the fly extension. No need to serge the top as that will get caught in our waistband.
+Serge (of zigzag) langs de open kant van de vlieg extensie. Het is niet nodig om de top te verstoppen want die wordt gepakt in onze tailleband.
 
-while you're at it, also serge along the entirety of the fly facings J-shaped edge.
+wanneer je er aan toe bent, lock je ook langs het geheel van de gulpbelanden J-vormige rand.
 
 ### Knip de extra naadwaarde aan het linkervoorpand weg
 
-There's extra seam allowance that runs along the fly. We only need this on the right leg panel. Cut it away on the left panel so you're left with the regular seam allowance only.
+Er is extra naadwaarde die langs de vliegen loopt. Dat is alleen nodig aan de rechterzijde. Knip het weg op het linkerpaneel zodat je alleen de naadwaarde aan de linkerkant achterlaat.
 
 ### Bevestig het gulpbeleg
 
-Sew the fly facing to the left front. Place them with good sides together, aligning the top.
+Stik de gulp aan het voorpand. Place them with good sides together, aligning the top.
 
 ### Trek in de punt van de gulp
 
-Fold the bottom of the fly facing seam allowance inwards and secure with a few stitches.
+Plooi de onderkant van de gulp naar binnen en bevestig met een paar steken.
 
 ### Stik de gulp naar de naad door
 
-Sew the fly facing to the seam allowance. Make sure to leave the front panel out of it.
+Stik de gulp aan de naadwaarde. Zorg ervoor dat het voorpaneel er buiten blijft.
 
 ### Strijk de kruisnaad, guld en de gulpdeel
 
-Press open the cross seam. Press the fly facing to the side.
+Strijk de kruisnaad open. Strijk het gulpbeleg naar de zijkant.
 
-Then, fold over the extra seam allowance on the right front leg and press it down.
+Plooi vervolgens de extra naadwaarde aan de rechterbovenhoek om en strijk deze omlaag.
 
 ### Drieg de rits naar de gulp extensie
 
-Place the zipper along the (slightly curved) edge of the fly extension.
+Leg de rits langs de (licht gebogen) rand van de gulpextensie.
 
-Now sew along the edge. No need to get close to the zipper, just sew along the edge to hold them in place.
+Stik nu langs de rand. Je hoeft niet dicht bij de rits, stik gewoon langs de rand om ze vast te houden.
 
 ### Bevestig de rits aan de gulp
 
-Now place the right front leg's fly with the extra seam allowance that you folded back on top of the zip.
+Leg nu de rechterbroekspijp met de extra naadwaarde die je langs de rits heen geplooid hebt.
 
-Use a zipper foot edge-stitch the folded-over edge along the zipper edge.
+Gebruik een rits voet langs de rand van de rits door de geplooide rand.
 
 <Tip>
 
@@ -264,19 +264,19 @@ Misschien wil je dit eerst driegen om ervoor te zorgen dat het aardig parallel i
 
 ### Stik de rits aan de gulpbeleg
 
-Now sew the other side of the zipper to the fly facing. Make sure to align it properly so that when the trousers are closed, the zip is hidden.
+Stik nu de andere kant van de rits aan het gulpdeel. Make sure to align it properly so that when the trousers are closed, the zip is hidden.
 
 ### Werk de kruisnaad af
 
-Sew the last bit of the cross seam up to the highest fly notch.
+Stik het laatste stukje van de kruisnaad tot aan de hoogste gulpbok.
 
 ### Stik de J-naad van de gulp
 
-Now topstitch the so-called J-seam of the fly. Make sure to keep the fly extension out of the way.
+Stik nu de zogenaamde J-naad van de gulp. Zorg ervoor dat de vliegextensie buiten de weg blijft.
 
 ### Balk de onderkant van de gulp aan
 
-Now bartack the very botton of the J-seam (the horizontal part) but this time make sure to also catch the fly extension.
+Schiet nu de fles van de J-naad (het horizontale deel) maar deze keer zorg dat je ook de vlieg extensie vangt.
 
 ## Stap 11: Bevestig de riemlusjes
 
@@ -290,17 +290,17 @@ Voor de efficiëntie, zullen we een lange strook riem herhalen die we in 8 delen
 
 Cut a strip 80cm long (32 inch) and 2.8cm wide (1 1/8 inch).
 
-Serge (or zigzag) the long edge of the strip on both sides.
+Serge (of zigzag) de lange rand van de strip aan beide zijden.
 
-Fold one side inwards, and the other side over it. Then press down with your iron. The end result should be a long strip about 1cm wide.
+Plooi de ene kant naar binnen en de andere kant erover. Druk daarna neer met je ijzer. Het eindresultaat moet een lange strook van ongeveer 1 cm breed zijn.
 
-Now sew along the entire length of the strip, smack in the middle of it. Make sure to use a generous stitch length for this.
+Stik nu langs de hele strook en knik er middenin. Zorg dat je hier een genereuze stiklengte voor gebruikt.
 
-Finally, cut your length belt loops strip into 8 equal parts to make 8 belt loops.
+Knip ten slotte de lengte van de riemlusjes in 8 gelijke delen om 8 riemlusjes te maken.
 
 ### Bevestig de riemlusjes
 
-We're going to divide our belt loops along the waist:
+We gaan onze riemlusjes verdelen langs de taille:
 
 - 2 aan de middenrug, elke zet een beetje apart van het midden, dus er is een kleine opening tussen hen.
 - 1 boven de achterste neep op elke zijde
@@ -313,9 +313,9 @@ Place the belt loop at these places with their good side down (against the good 
 
 ### Montagegebogen tailleband
 
-If you're making a straight waistband, skip directly to attaching the waistband to the outside.
+Als je een rechte tailleband maakt, sla de tailleband dan direct naar buiten toe.
 
-Place both waistbands with good sides together, and sew along the top of the waistband (the shorter edge).
+Leg beide taillebanden met de goede kanten op elkaar, en stik langs de bovenkant van de tailleband (de kortere rand).
 
 Trim the seam allowance of the inner waistband, and press all seam allowances towards the inner waistband.
 
@@ -328,41 +328,41 @@ Stik een lijn van stiksel aan de binnenkant van de tailleband, dicht bij de rand
 
 ### Bevestig de tailleband aan de buitenkant
 
-Place the waistband with good sides together along the waist. For the straight waistband, make sure the side with the standard seam allowance is aligned with the waist, and not the side with double seam allowance.
+Leg de tailleband met de goede kanten op elkaar langs de taille. For the straight waistband, make sure the side with the standard seam allowance is aligned with the waist, and not the side with double seam allowance.
 
-Also make sure to leave suffucient seam allowance beyond the start and end of the waistband.
+Zorg er ook voor dat je achterliggende naadwaarde voorbij het begin en het einde van de tailleband achterlaat.
 
-Sew along the entirety of the waist, attaching the waist band and sewing down the belt loops in one go.
+Stik langs de totale taille en bevestig de tailleband en stik de riemlusjes in één keer.
 
 ### Strijk de naad van de tailleband en plooi de tailleband
 
-Press the seam you just sewed, pressing the seam allowance up into the waistband.
+Strijk de naad die net gestikt is, en strijk de naadwaarde in de tailleband.
 
-Now fold over the waistband at the correct width and press in the crease.
+Plooi nu de tailleband aan de juiste breedte en strijk in de plooi.
 
 ### Sluit het begin en einde van de tailleband.
 
 At the start and end, fold the waistband over so it has its good sides together.
 
-Now sew the end shut by sewing top to bottom to just the point where the waistband seam ends.
+Stik nu het einde door de bovenkant naar de onderkant te naaien, precies het punt waar de taillebandnaad eindigt.
 
-Trim back the seam allowance a bit so you can tuck it all into the waistband later.
+Knip de naadwaarde een beetje terug zodat je alles later in de tailleband kan stoppen.
 
 ### Drieg de tailleband vast
 
-The waistband has extra seam allowance here, and we're going to use that to our advantage.
+De tailleband heeft extra naadwaarde hier, en dat gaan we tot ons voordeel gebruiken.
 
-Fold the waistband in the fold you pressed. Then on the inside, fold the seam allowance inwards, making sure to let it run a few mm beyond the waistband seam.
+Plooi de tailleband in de plooi die je hebt ingedrukt. Plooi dan de naadwaarde naar binnen en zorg dat deze een paar mm voorbij de tailleband loopt.
 
-You want to baste this in place so it stays put as you make your way around the waistband.
+Je wilt dit op z'n plek driegen zodat het blijft terwijl je door de tailleband komt.
 
-At the start and end of the waistband, you'll need to tuck in some more seam allowance. Take a moment to get it right.
+Aan het begin en einde van de tailleband moet je wat meer naadwaarde instoppen. Neem even de tijd om het goed te doen.
 
 ### Stik de tailleband dicht
 
-Now with the good side up, sew exactly in the seam that was sewn before (so called _stitch in the ditch_).
+Nou, met de goede kant naar boven, stik precies in de naad die voor de naad was (zoal _stiksel in de naad_ genoemd).
 
-This will catch the back of the waistband which we've made to extend slightly further, and lock all the seam allowance inside.
+Dit houdt in dat de achterkant van de tailleband die we gemaakt hebben om iets verder uit te breiden, en alle naadwaarde erin vergrendelen.
 
 ## Stap 13: Voltooi de riemlusjes
 
@@ -374,11 +374,11 @@ For this, let the waistband lie flat, and sew it down with a bartack 1.5cm or so
 
 ### Plooi omhoog, neer en stik vast
 
-Now fold the belt loops upwards (hiding the bartack you just did).
+Plooi nu de riemlusjes omhoog (verbergt de duwtje die je net hebt gedaan).
 
-They'll extend beyond the top of the waistband. So fold the excess down again. Don't fold it over/around the waistband, but fold it double on itself.
+Ze zullen zich verder uitstrekken dan de top van de tailleband. Vouw de overtollige dus weer naar beneden. Vouw het niet over/rond de tailleband, maar plooi het dubbel op zichzelf.
 
-Now do a bartack along the top of the waistband to lock the belt loop in place.
+Doe nu een zak langs de bovenkant van de tailleband om de riemlus op zijn plaats te zetten.
 
 When you're done, carefully twist the back of the beltloop to the front and cut off the excess right next to the bartack.
 
@@ -392,14 +392,14 @@ Dubbel check je met geen extra lagen onder je naald omdat het geen vreugde is om
 
 ## Stap 14: Zoom de broek
 
-Fold the hem allowance halfway up, and press. Then fold them again, and press again.
+Plooi de zoomtoelage halverwege en strijk. Plooi ze daarna opnieuw en strijk opnieuw.
 
-Finalize by hand and blind hem your trousers.
+Afronden met de hand en je broek je broek blind.
 
 ## Stap 15: Knop op het knoopsgat
 
-Create a buttonhole. Either by hand (it's worth practicing) or with a machine.
+Maak een knoopsgat. Ofwel met de hand (het is de moeite waard) of met een machine.
 
-Finally, attach the button.
+Bevestig tenslotte de knop.
 
-Now take a moment to appreciate all the hard work you did. We hope you'll get a lot of use out of these.
+Neem nu even de tijd om al uw harde werk te waarderen. We hope you'll get a lot of use out of these.

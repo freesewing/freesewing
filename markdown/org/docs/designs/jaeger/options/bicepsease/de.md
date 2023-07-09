@@ -1,9 +1,9 @@
----
-title: "Biceps ease"
----
+- - -
+weitenzugabe/Bequemlichkeitszugabe Oberarm
+- - -
 
-The amount of ease at your upper arm.
+Das Maß der Bequemlichkeitszugabe/Weitenzugabe am Oberarm.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_bicepsease_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](jaeger_bicepsease_sample.svg "Effekt dieser Variable auf das Schnittmuster")

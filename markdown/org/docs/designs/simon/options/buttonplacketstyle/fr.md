@@ -1,6 +1,6 @@
----
+- - -
 title: "Button placket style"
----
+- - -
 
 ![Style de patte de boutonnage](buttonplacketstyle.svg)
 

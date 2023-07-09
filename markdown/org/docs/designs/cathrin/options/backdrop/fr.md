@@ -1,10 +1,10 @@
----
-title: "Back drop"
----
+- - -
+title: "Bas du dos"
+- - -
 
-![The back drop option on Cathrin](./backdrop.svg)
+![L'option de drop arrière sur Cathrin](./backdrop.svg)
 
-This option determines how far the center back will be lowered at the bottom of your corset.
+Cette option détermine la distance à laquelle le centre arrière sera abaissé au bas de votre corset.
 
 ## Effet de cette option sur le motif
 

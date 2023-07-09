@@ -1,6 +1,6 @@
----
+- - -
 title: "Bib width"
----
+- - -
 
 Controla el ancho de la _bis_ parte del conector.
 

@@ -1,8 +1,8 @@
----
-title: "Front pocket facing"
----
+- - -
+titre : "Poche frontale"
+- - -
 
-Controls the boundary between the front pocket facing and pocket bag.
+Contrôle la limite entre la poche avant et le sac de poche.
 
 Increase this to use more facing, which means you'll have to look deeper into the pocket to start seeing the pocket bag material.
 

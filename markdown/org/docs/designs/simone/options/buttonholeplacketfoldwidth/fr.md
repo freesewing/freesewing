@@ -1,6 +1,6 @@
----
+- - -
 title: "Buttonhole placket fold width"
----
+- - -
 
 ![Largeur du pli de la patte de boutonnage (côté boutonnières)](buttonholeplacketfoldwidth.svg)
 

@@ -1,12 +1,12 @@
----
+- - -
 title: "Hugo hoodie: Sewing Instructions"
----
+- - -
 
 <Note>
 
-###### Documentation under construction
+###### Documentatie onder constructie
 
-First the good news: There's a video series that shows how to make Hugo from start to finish.
+Eerst het goede nieuws: er is een video serie die laat zien hoe je Hugo van begin tot einde maakt.
 Scroll wat naar beneden, het staat op deze pagina.
 
 Nu het slechte nieuws: de geschreven instructies voor Hugo zijn nog niet compleet.
@@ -15,9 +15,9 @@ Nu het slechte nieuws: de geschreven instructies voor Hugo zijn nog niet complee
 
 ## Video
 
-Text a bit dry for you? I try to make videos available as part of the pattern documentation.
+Tekst een beetje te droog voor je? Ik probeer video's beschikbaar te maken als deel van de documentatie.
 
-This 6-episode series shows you how to make your hoodie start to finish:
+Deze zesdelige reeks toont je van begin tot eind hoe je de hoodie in elkaar zet:
 
 <YouTube id='PL1gv5yv3DoZOHLjisuD1JcUPTkFy_IGGO' playlist />
 
@@ -44,9 +44,9 @@ This 6-episode series shows you how to make your hoodie start to finish:
 
 ### Stap 3: Bevestig de mouwen
 
-- The side of the sleeve with the pointy edge at top is the back of the sleeve piece.  It is also marked by a double notch on the pattern.
+- De kant van de mouw met de scherpe punt bovenaan is de achterkant van de mouw.  Dit is ook aangegeven met een dubbel merkteken op het patroon.
 
-- Match good sides of the sleeve seam to good sides of the front, matching the single notch on front to single notch on the sleeve piece. Stitch the seam.  Do this for both sleeve pieces.
+- Leg de goede kanten van de mouw op de goede kant van het voorpand. Let op dat het merkteken op het voorpand overeenkomt met het merkteken op de mouw. Stik deze naad.  Herhaal voor de andere mouw.
 
 - Om de naad af te werken kan je één van deze methodes gebruiken:
 

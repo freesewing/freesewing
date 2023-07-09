@@ -1,12 +1,12 @@
----
+- - -
 title: "Hugo hoodie: Sewing Instructions"
----
+- - -
 
 <Note>
 
-###### Documentation under construction
+###### Documentación en construcción
 
-First the good news: There's a video series that shows how to make Hugo from start to finish.
+Primero las buenas noticias: Hay una serie de vídeo que muestra cómo hacer Hugo de principio a fin.
 Desplácese hacia abajo, está incrustado en esta página.
 
 Ahora las malas noticias: Las instrucciones escritas para Hugo todavía no están completas.
@@ -15,9 +15,9 @@ Ahora las malas noticias: Las instrucciones escritas para Hugo todavía no está
 
 ## Vídeo
 
-Text a bit dry for you? I try to make videos available as part of the pattern documentation.
+¿Texto un poco seco para ti? Intento que los videos estén disponibles como parte de la documentación de patrones.
 
-This 6-episode series shows you how to make your hoodie start to finish:
+Esta serie de 6 episodios muestra cómo hacer que tu sudadera comience a terminar:
 
 <YouTube id='PL1gv5yv3DoZOHLjisuD1JcUPTkFy_IGGO' playlist />
 
@@ -44,9 +44,9 @@ This 6-episode series shows you how to make your hoodie start to finish:
 
 ### Paso 3: Adjunta las Mangas
 
-- The side of the sleeve with the pointy edge at top is the back of the sleeve piece.  It is also marked by a double notch on the pattern.
+- El lado de la manga con el borde punteado en la parte superior es la parte posterior de la pieza de manga.  También está marcada por un doble grosor sobre el patrón.
 
-- Match good sides of the sleeve seam to good sides of the front, matching the single notch on front to single notch on the sleeve piece. Stitch the seam.  Do this for both sleeve pieces.
+- Haz coincidir los lados buenos de la costura de la manga con los lados buenos del frente, emparejar la nitidez simple en la parte frontal a simple en la manga. Unir la costura.  Hacer esto para ambas piezas de manga.
 
 - Para terminar la costura, puede utilizar uno de estos métodos:
 
@@ -92,7 +92,7 @@ This 6-episode series shows you how to make your hoodie start to finish:
 
 ### Step 8: Preparing a Neckband and Attaching the Hood
 
-- Cut a cross-wise strip of fabric out of your main fabric, your neck opening + 2cm (3/4 inch) long and triple your neck seam allowance wide.
+- Corta una banda de tela de sentido cruzado de tu tela principal, la abertura de su cuello + 2cm (3/4 pulgadas) largo y triplicar la costura del cuello
 - Coloca buenos lados juntos en el tubo de unión del cuello a continuación, coser una costura de 1 cm a lo largo del lado corto para hacer la unión en una banda circular.
 - A partir de la espalda, hacer frente al exterior de la capucha al lado derecho de la línea de cuello. Alinear el panel de la campana a la parte trasera del cuello.
 - Trabajando alrededor de la parte delantera, anclar el capuchón al cuello.

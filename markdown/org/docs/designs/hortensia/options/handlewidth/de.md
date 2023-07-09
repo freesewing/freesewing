@@ -1,8 +1,8 @@
----
+- - -
 title: "Handle width"
----
+- - -
 
-Controls the width of the handle.
+Steuert die Breite des Griffes.
 
 <Tip>
 
@@ -12,4 +12,4 @@ Turn on paperless to see the width of the handle.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](hortensia_handlewidth_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](hortensia_handlewidth_sample.svg "Effekt dieser Variable auf das Schnittmuster")

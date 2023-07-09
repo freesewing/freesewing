@@ -1,10 +1,10 @@
----
+- - -
 title: "Sleevecap Q2 downward spread"
----
+- - -
 
-![The downward spread in the second quadrant of the sleevecap](./sleevecapq2spread1.svg)
+![La propagation vers le bas dans le deuxième quadrant de la tête de manche](./sleevecapq2spread1.svg)
 
-This option controls the downward spread in the second quadrant of the sleevecap.
+Cette option permet de contrôler la propagation vers le bas dans le deuxième quadrant de la tête de manche.
 
 <Tip>
 

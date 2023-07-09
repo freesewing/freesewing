@@ -1,8 +1,8 @@
----
+- - -
 titre: "aisance de manche"
----
+- - -
 
-![Cuff ease](./cuffease.svg)
+![Aisance de poignet](./cuffease.svg)
 
 L'aisance au niveau du poignet.
 

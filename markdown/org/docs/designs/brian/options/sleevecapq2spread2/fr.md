@@ -1,12 +1,12 @@
----
-title: "Sleevecap Q2 upward spread"
----
+- - -
+title:"Tête de manche élévation Q2"
+- - -
 
 ***
 
-![The upward spread in the second quadrant of the sleevecap](./sleevecapq2spread2.svg)
+![La propagation vers le haut dans le deuxième quadrant de la tête de manche](./sleevecapq2spread2.svg)
 
-This option controls the upward spread in the second quadrant of the sleevecap.
+Cette option permet de contrôler la propagation vers le haut dans le deuxième quadrant de la tête de manche.
 
 <Tip>
 

@@ -1,10 +1,10 @@
----
+- - -
 titre : "Facilité d'assise"
----
+- - -
 
-![Seat ease](./seatease.svg)
+![Aisance d'assise](./seatease.svg)
 
-The amount of ease at your seat.
+La quantité d'aisance à votre siège.
 
 ## Effet de cette option sur le motif
 

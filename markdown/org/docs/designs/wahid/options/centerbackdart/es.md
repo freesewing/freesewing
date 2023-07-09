@@ -1,6 +1,6 @@
----
+- - -
 title: "Center back dart"
----
+- - -
 
 ![Centroretroceso](centerbackdart.svg)
 
@@ -21,4 +21,4 @@ Técnicamente esto no es un dardo, pero no estaba seguro de cómo llamarlo. Suge
 
 ## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](wahid_centerbackdart_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](wahid_centerbackdart_sample.svg "Efecto de esta opción en el patrón")

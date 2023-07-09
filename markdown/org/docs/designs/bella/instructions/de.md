@@ -1,6 +1,6 @@
----
+- - -
 title: "Bella body block: Sewing Instructions"
----
+- - -
 
 <Note>
 
@@ -26,6 +26,14 @@ If you are making adjustments you may wish to sew the seams _wrong sides togethe
 
 </Tip>
 
+<Note>
+
+Bella has a back dart only when it is needed, based on the measurements
+and design options.
+If the back dart is not needed then it will be omitted from the pattern.
+
+</Note>
+
 ### Schritt 2: Anprobieren
 
 - Try it on and check the fit by pinning the back closed whilst wearing it.
@@ -36,7 +44,7 @@ If you are making adjustments you may wish to sew the seams _wrong sides togethe
 
 If you do not have someone to help with pinning, you may find it easier to cut the front part in two with seam allowance rather than on a fold and sew the back seam up so that you can pin in the front when trying on.
 
-Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. Things like these are signs of where the pattern may need adjusting.
+Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. Solche Dinge sind Zeichen dafür, wo das Schnittmuster möglicherweise angepasst werden muss.
 
 Sometimes you may need to wear the mock-up for an extended amount of time to get a better sense of the fit so don't be afraid to walk around in it for a couple of hours.
 

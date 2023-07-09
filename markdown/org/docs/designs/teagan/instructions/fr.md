@@ -1,10 +1,10 @@
----
+- - -
 title: "Teagan T-shirt: Sewing Instructions"
----
+- - -
 
 ## Etape 1: Assemblez les coutures d'épaule
 
-![Close the shoulder seams](step01.svg)
+![Fermer les coutures d'épaule](step01.svg)
 
 - Placez l'avant et l'arrière les uns sur les autres avec [bons côtés ensemble](/docs/sewing/good-sides-together). Alignez les coutures des épaules.
 - Préparez les coutures des épaules ou coupez-les avec un point de zigzag étroit (~2 mm) à la couture standard.
@@ -15,7 +15,7 @@ Optionnel: Dans un tricot drapier, vous pouvez choisir de renforcer les coutures
 
 ## Étape 2 : Mettre dans les manches
 
-![Set in sleeves](step02.svg)
+![Mettre dans les manches](step02.svg)
 
 - Placez le devant et le dos maintenant fixés avec le bon côté vers le haut.
 - Identifiez les côtés avant et arrière de chacune de vos manches. (C'est ainsi que vous séparez la manche gauche de la droite.) On your paper pattern piece, the front side of the sleeve is to the right.
@@ -42,7 +42,7 @@ Il s'agit de l'étape la plus complexe dans la fabrication du T-shirt Teagan, ma
 - Fold your binding in half lengthwise (parallel to the longest side), and press.
 - Put your T-shirt down with the back good side up, and place your band strip on top of it, lining up the raw edges of the band with the raw edge of the neck opening.
 - Your band should start at the center back of the neck opening.
-- Now shift your binding strip 1cm beyond your starting point. This little extra will guarantee we can join the two ends later.
+- Décalez maintenant votre bande de biais de 1 cm avant votre point de départ. Ce petit surplus garantira que nous pourrons joindre les deux extrémités plus tard.
 
 #### Sew band in place
 
@@ -56,20 +56,20 @@ This stretching is the trickiest part. Many online tutorials will tell you to si
   
 </Note>
 
-- Stop sewing 3 cm before the end, leaving a tail like we did at the beginning.
+- Arrêtez de coudre 3 cm avant la fin, laissant une queue comme nous l'avons fait au début.
 
 #### Sew band ends together
 
 ![Sew band ends](step03c.svg)
 
 Now it's time to sew the ends of our knit band together.
-- Take the end of your knit band, and stretch it along the 3 cm separating it from the start point as you would while sewing. On the band, mark where the band reached the start point, or center back. Do the same for the other end.
-- Fold your T-shirt in whatever way makes it more easy for you to place both band ends with good sides together, aligning the marks. Sew them together at the marks.
+- Take the end of your knit band, and stretch it along the 3 cm separating it from the start point as you would while sewing. On the band, mark where the band reached the start point, or center back. Faites la même chose pour l'autre extrémité.
+- Fold your T-shirt in whatever way makes it more easy for you to place both band ends with good sides together, aligning the marks. Les coudre ensemble aux marques.
  - You should now have a joined knit band.
 
 <Note>
 
-6 cm is not much, but should be enough to get both edges comfortably under your sewing machine to sew them together.
+6 cm, ce n'est pas beaucoup, mais devrait suffire pour que les deux bords soient confortablement sous votre machine à coudre pour les coudre ensemble.
 
 </Note>
 
@@ -89,86 +89,86 @@ Un guide plus complet sur la liaison tricot peut être trouvé dans les [Instuct
 
 </Tip>
 
-#### Place (the start of) your binding
+#### Placez (le début de) votre biais
 
-![Place your binding](step03a.svg)
+![Placez votre liaison](step03a.svg)
 
-- Put your T-shirt down with the back good side up, and place your binding strip on top of it with the good side down (as in, good sides together). Your binding should start at the center back of the neck opening.
-- Align the long edge of your strip with the edge of your fabric so the strip lies on top of the fabric (not in the opening). Place the corner on your starting point.
-- Now shift your binding strip 1cm beyond your starting point. This little extra will guarantee we can join the two ends later.
+- Mettez votre T-shirt vers le bas avec le bon côté du dos vers le haut, et placez votre bande de reliure sur le dessus avec le bon côté vers le bas (comme dans les bons côtés ensemble). Votre liaison devrait commencer au centre de l'encolure de l'encolure.
+- Alignez le bord long de votre bande sur le bord de votre tissu de façon à ce que la bande repose sur le tissu (et non dans l'ouverture). Placez le coin sur votre point de départ.
+- Décalez maintenant votre bande de biais de 1 cm avant votre point de départ. Ce petit surplus garantira que nous pourrons joindre les deux extrémités plus tard.
 
-#### Sew binding in place
+#### Coudre le biais en place
 
-![Sew binding in place](step03b.svg)
+![Coudre le biais en place](step03b.svg)
 
-- Place your presser foot 3 cm along the knit binding, so a 3 cm tail will be left unstitched. This will help us join the ends of the binding later. Then, sew 1.5 cm from the edge around the neck opening, stretching the binding gently as you sew.  (Note: this is not the standard seam allowance.)
-- Stop sewing 3 cm before the end, leaving a tail like we did at the beginning.
+- Placez le pied de votre presseur 3 cm le long de la corde de fixation, de sorte qu'une queue de 3 cm sera laissée sans coutures. Cela nous aidera à nous joindre plus tard à la fin de la liaison. Ensuite cousez 1,5 cm du bord autour de l'encolure en tirant doucement la reliure au moment de la couture.  (Note: ce n'est pas l'allocation standard de couture.)
+- Arrêtez de coudre 3 cm avant la fin, laissant une queue comme nous l'avons fait au début.
 
-#### Mark and sew binding ends
+#### Marquer et coudre les extrémités de liaison
 
-![Sew binding ends](step03c.svg)
+![Coudre fin de liaison](step03c.svg)
 
-- With about 6cm left to go before we complete our circle, it’s time to sew the ends of the binding together.
-- Take one of the edges, and stretch it along the 3cm separating it from the start point as you would while sewing. On the binding, mark where the binding reached the start point. Do the same for the other end.
-- Fold your T-shirt in whatever way makes it more easy for you to place both binding ends with good sides together, aligning the marks. Sew them together at the marks.
+- Avec environ 6cm de gauche avant de terminer notre cercle, il est temps de coudre les extrémités de la liaison ensemble.
+- Prenez l'un des bords et étirez-le le le long des 3 cm en le séparant du point de départ comme vous le feriez lors de la couture. En ce qui concerne la liaison, marque où la liaison a atteint le point de départ. Faites la même chose pour l'autre extrémité.
+- Plier votre T-shirt de quelque manière que ce soit vous permet de placer plus facilement les deux extrémités de liaison avec de bons côtés, alignant les marques. Les coudre ensemble aux marques.
 
 <Note>
 
-6 cm is not much, but should be enough to get both edges comfortably under your sewing machine to sew them together.
+6 cm, ce n'est pas beaucoup, mais devrait suffire pour que les deux bords soient confortablement sous votre machine à coudre pour les coudre ensemble.
 
 </Note>
 
-![Finish binding](step03d.svg)
+![Terminer la liaison](step03d.svg)
 
-- Now that your binding ends are joined together, it’s time to finish the last 6cm of binding. Sew it down, staying 1.5cm from the edge as you did before.
+- Maintenant que vos extrémités de reliure sont réunies, il est temps de terminer les 6 dernières cm de liaison. Cousez-les en restant à 1,5cm du bord comme vous l'avez fait auparavant.
 
-#### Fold knit binding to the back and sew down
+#### Plier le tricot à l'arrière et coudre vers le bas
 
-![Sew down binding](step03e.svg)
+![Coudre la liaison](step03e.svg)
 
-- Fold your binding fabric around the fabric of your T-shirt to the back. This is how we’ll sew it down.
-- While the fabric is folded double at the front (hiding the fabric edge in the process), there’s no need for that at the back. We will merely trim back the edge later, given that knit doesn’t ravel. If we were to fold back the fabric at the back too, it would only add bulk.
-- Now you’ll sew the binding down. From the right side of your fabric, sew along the inner edge of your binding (furthest from the edge), making sure to catch the binding at the back in the process.
+- Pliez votre tissu de reliure autour du tissu de votre T-shirt au dos. C'est ainsi que nous allons le coudre.
+- Alors que le tissu est plié deux fois à l'avant (cachant le bord du tissu dans le processus), il n'y a pas besoin de cela à l'arrière. Nous allons simplement couper le bord plus tard, étant donné que le tricot ne ravira pas. Si nous devions replier le tissu à l'arrière également, cela ne ferait qu'ajouter de l'épaisseur.
+- Maintenant vous courez la liaison. Sur l'endroit de votre tissu, cousez le long du bord de votre biais (le plus loin du bord du pli), en s'assurant de bien prendre le biais de l'arrière dans la couture.
 
 <Note>
-If you have a coverlock machine, that would be perfect for this seam.
+Si vous avez une recouvreuse, ce sera parfait pour cette couture.
 </Note>
 
-- You’ll have to, once again, stretch your binding a bit while doing this. But this time, there’s an extra caveat to look out for.
+- Une fois de plus, vous devrez vous étirer un peu pendant que vous le ferez. Mais cette fois-ci, il y a une mise en garde supplémentaire à rechercher.
 
 <Note>
 
-##### Beware of the uneven feed
+##### Méfiez-vous des différences d'entraînement
 
-As your feed your binding through your sewing machine, the feed dogs will pull the bottom layer (back of your binding) forward.
+En passant votre biais sous votre machine à coudre, les griffes d'entraînement tirent davantage la couche inférieure (arrière de votre biais).
 
-In a perfect world, all layers will follow smoothly. But more often than not, the top layer (front of your binding) tends to lag behind a bit. This causes your binding to not neatly fold around the edge of the fabric, but make ugly wrinkles.
+Dans un monde parfait, toutes les épaisseurs suivent sans problème. Mais le plus souvent, la couche supérieure (face avant de votre biais) a tendance à se traîner un peu. Cela fait que votre biais ne se plie pas bien autour du bord du tissu, mais fait des plis disgracieux.
 
-So watch out for this, and if you see it happening, stretch the under layer a bit extra to compensate.
-On the inside of your T-shirt, trim back the knit binding just outside of your seam to finish up.
+Surveillez donc si cela se produit, et si vous le voyez, étirez la couche inférieure un peu plus pour compenser.
+À l'intérieur de votre tee-shirt, coupez le maillage juste à l'extérieur de votre couture pour finir.
 
 </Note>
 
 ## Étape 4 : Fermer les coutures latérales et les manches
 
-![Close the side seams and sleeves](step04.svg)
+![Fermer les coutures latérales et les manches](step04.svg)
 
-- Fold your Teagan T-shirt double at the shoulder seams with good sides together.
-- Align the side seams and sleeves and pin them together.
-- Serge/sew the side seam and continue sewing to close the arms all the way to the sleeve hem.
-- Repeat on the other side.
+- Pliez votre T-shirt Teagan double à l'épaule avec de bons côtés ensemble.
+- Alignez les coutures latérales et les manches et fixez-les ensemble.
+- Servez/coudre la couture latérale et continuer à coudre pour fermer les bras jusqu'au manche de l'ourlet.
+- Répéter de l'autre côté.
 
 ## Étape 5 : Terminer les ourlets et les manches
 
-![Finish hem and sleeves](step05.svg)
+![Terminer les ourlets et les manches](step05.svg)
 
-- Fold the hem upwards, to the inside, and sew it down. If you have a coverlock, use it. If not, use a twin needle or zig-zag stitch to keep the seam stretchable.
-- Repeat for the hem on each sleeve.
+- Repliez l'ourlet vers l'intérieur, et courez-le vers le haut. Si vous avez une recouvreuse, utilisez-la. Dans le cas contraire, utilisez une aiguille jumelle ou un point de zig-zag pour garder la couture tendue.
+- Répéter l'ourlet sur chaque manche.
 
 <Note>
 
-##### Fold only once, to avoid bulk
+##### Ne pliez qu'une seule fois, pour éviter le vrac
 
-Knitwear doesn’t ravel, so you can simply fold this over once and sew it down, then neatly trim back the fabric.
+Le maillot ne ravit pas, Vous pouvez simplement le plier une fois et le coudre, puis bien couper le tissu.
 
 </Note>

@@ -1,8 +1,8 @@
----
-title: "Front pocket slant round"
----
+- - -
+titre : "Poche avant oblique ronde"
+- - -
 
-Controls how far from the end of the slant we start rounding into the outseam.
+Contrôle à quelle distance de la fin du visage, nous commençons à arrondir jusqu'à l'extérieur.
 
 ## Effet de cette option sur le motif
 

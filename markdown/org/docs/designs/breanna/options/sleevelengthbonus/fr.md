@@ -1,8 +1,8 @@
----
+- - -
 titre : "Surlongueur de longueur de manche"
----
+- - -
 
-This option controls how to lengthen the sleeves.
+Cette option contrôle la longueur des manches.
 
 ## Effet de cette option sur le motif
 

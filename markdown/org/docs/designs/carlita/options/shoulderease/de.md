@@ -1,11 +1,11 @@
----
+- - -
 title: "Shoulder ease"
----
+- - -
 
-![Shoulder ease](./shoulderease.svg)
+![Schulter Zugabe](./shoulderease.svg)
 
-The amount of ease at your shoulders. This is an option specific to coats/overwear to allow room for garments worn under the coat.
+Die Menge an Leichtigkeit an Ihren Schultern. Dies ist eine Option speziell für Manschetten/Überwäsche, um Platz für Kleidungsstücke unter dem Mantel zu ermöglichen.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_shoulderease_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](carlita_shoulderease_sample.svg "Effekt dieser Option auf das Schnittmuster")

@@ -1,19 +1,19 @@
----
-title: "Hortensia handbag: Fabric Options"
----
+- - -
+title: "Sac à main Hortensia : Option de tissus"
+- - -
 
 ### Tissu principal
 
-The key fabric choices for Hortensia are non-stretch, durable and strong enough to hold items.
+Les meilleurs tissus pour Hortensia sont non élastiques, durables et assez solides pour contenir des objets.
 
-Your main fabric choice ultimately comes down to your personal style and what you wish to use your handbag for. Due to Hortensia having a size option it can also be enlarged and used for things such as a gym bag which does not need to be as fancy as an upmarket handbag. So you may just simply want to go with **Cottons**, **Linens** or have a little fun with **Printed Cottons**. If you want something more fancy you can try going for **Brocades** and other luxe fabrics. If you want something that will be very durable you can try **Upholstery fabrics**. You can also try **Leather** but this will be harder to sew especially if it is thick so only use it if you know what you are doing. Remember if you wish to use it all the time, favour practicality over design, as the goal should be to make it last rather than make it fancy. If you do not care about the look at all then this may be an oppurtunity to use up fabric from your stash that you otherwise would not such as that ugly fabric you can never find a use for.
+En fin de compte, votre choix de tissu principal dépend de votre style personnel et de celui que vous souhaitez utiliser pour votre sac à main. Comme Hortensia a une option de taille, il peut également être agrandi et utilisé pour des choses comme un sac de gym qui n'a pas besoin d'être aussi chic qu'un sac à main haut de gamme. Donc vous pouvez simplement utiliser du **Cotons**, du **Lin** ou amusez-vous un peu avec des **Cotons imprimés**. If you want something more fancy you can try going for **Brocades** and other luxe fabrics. If you want something that will be very durable you can try **Upholstery fabrics**. Vous pouvez également essayer le **Cuir** mais cela sera plus difficile à coudre surtout s'il est épais, donc n'utilisez le que si vous savez ce que vous faites. Rappelez-vous que si vous souhaitez l'utiliser en permanence, favorisez la praticité par rapport au design, comme le but devrait être de le faire durer, plutôt que de le rendre fantaisiste. Si vous ne vous souciez pas du tout de l'apparence, cela pourrait être une opportunité pour utiliser le tissu de votre réserve que vous n'utilisez pas d'habitude, comme ce tissu moche dont vous ne pourrez jamais trouver un usage.
 
 <Note>
 
-If you find that the fabric you want to use is a bit too thin or flimsy you can interface the pieces to give then strength.
+Si vous trouvez que le tissu que vous voulez utiliser est un peu trop mince ou souple, vous pouvez entoiler les pièces pour leur donner de la tenue.
 
 </Note>
 
-### Lining Fabric
+### Tissu de rangement
 
-On the flipside the lining does not need to be as strong and simply needs to cover the raw seams and protect the outer fabric. If you want something fancy you can go for **Silks** and **Satins** but **Cotton** linings will do just as well. Bear in mind what you intend to store in the bag. If you intend to carry a lot you should go for something less prone to tearing, if you are only using it for knick-knacks and small personal items you can get away with fancier fabrics such as silks. The lining is also an opportunity to use up any fabrics in your stash that you don't like or don't have a use for as it will be hidden in the final product and only you will know/see.
+Sur le flanc, la doublure n'a pas besoin d'être aussi solide et a simplement besoin de couvrir les coutures crues et de protéger le tissu extérieur. Si vous voulez quelque chose de fantaisie, vous pouvez aller pour de la **sois** et du **satin** mais les **doublures de coton** feront aussi l'affaire. Gardez à l'esprit ce que vous avez l'intention de ranger dans le sac. Si vous avez l'intention de transporter beaucoup de choses, vous devriez aller chercher quelque chose de moins susceptible de déchirer, Si vous ne l'utilisez que pour les tricots et les petits objets personnels, vous pouvez vous tourner vers des tissus plus fantaisistes tels que les soies. La doublure est aussi l'occasion d'utiliser tous les tissus de votre réserve que vous n'aimez pas ou que vous n'avez pas d'utilité, car ils seront cachés dans le produit final et vous serez le seul à les connaître/voir.

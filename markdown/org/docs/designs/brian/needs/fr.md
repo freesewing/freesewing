@@ -1,13 +1,13 @@
----
-title: "Brian body block: What You Need"
----
+- - -
+titre : "Le bloc de corps de Brian : Ce dont vous avez besoin"
+- - -
 
-To make Brian, you will need the following:
+Pour faire Brian, vous aurez besoin des éléments suivants :
 
 - Fourniture de base pour la couture
-- About 1.25 - 1.5 metres (1.4 - 1.7 yards) of a suitable fabric ([see Brian Fabric options](/docs/patterns/brian/fabric/))
+- Environ 1,25 - 1,5 mètres (1,4 - 1,7 yard) d'un tissu adapté ([voir les options de tissu Brian](/docs/patterns/brian/fabric/))
 
-This list is for a default Brian Block. Si vous avez apporté des modifications au bloc, vous devrez peut-être vous procurer des éléments supplémentaires tels que des fermetures, des reliures, etc.
+Cette liste concerne un bloc Brian par défaut. Si vous avez apporté des modifications au bloc, vous devrez peut-être vous procurer des éléments supplémentaires tels que des fermetures, des reliures, etc.
 
 <Note>
 

@@ -1,10 +1,10 @@
----
+- - -
 title: "Huey hoodie: Sewing Instructions"
----
+- - -
 
 <Note>
 
-This pattern can be sewn with or with out a overlocker/serger. If not using a overlocker or serger you will have to _Finish_ the seams.
+Dieses Muster kann mit oder mit einem Overlocker/Serger genäht werden. If not using a overlocker or serger you will have to _Finish_ the seams.
 
 </Note>
 
@@ -133,13 +133,13 @@ Use a safety pin to help thread the drawstring.
 
 </Tip>
 
-### Step 11: Enjoy!
+### Schritt 11: Viel Spaß mit deinem neuen Shirt!
 
-- That's it! Your all done! Now go feel warm and comfy in your new hoodie!
+- Das war's! Your all done! Now go feel warm and comfy in your new hoodie!
 
 <Note>
 
-This patterns was featured in [issue 27 of HackSpace magazine](https://hackspace.raspberrypi.org/issues/27),
-the article includes instructions too, so you may want to have a look at it.
+Dieses Muster wurde in der [Ausgabe 27 des HackSpace Magazine](https://hackspace.raspberrypi. rg/issues/27),
+der Artikel enthält auch Anweisungen, so dass Sie vielleicht einen Blick darauf werfen möchten.
 
 </Note>

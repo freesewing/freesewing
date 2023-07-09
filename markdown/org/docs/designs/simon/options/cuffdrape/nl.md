@@ -1,6 +1,6 @@
----
+- - -
 title: "Cuff drape"
----
+- - -
 
 ![Verschil mouw/manchet](cuffdrape.svg)
 
@@ -17,4 +17,4 @@ Dit verschil wordt in de manchet verwerkt met plooien.
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_cuffdrape_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_cuffdrape_sample.svg "Effect van deze optie op het patroon")

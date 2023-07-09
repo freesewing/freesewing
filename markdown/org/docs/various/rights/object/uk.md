@@ -1,14 +1,14 @@
 ---
-title: The right to object
+title: Право на заперечення
 order: 70
 ---
 
-You have the right to object to your personal data being used for scientific research.
+Ви маєте право заперечити проти використання ваших персональних даних для наукових досліджень.
 
-Go to [/account/consent](/account/consent/) and object in the **model data** section to do so.
+Для цього перейдіть на сторінку [/account/consent](/account/consent/) і заперечте в розділі **модельних даних** .
 
 <Note>
 
-The right to object is broader, but this is how it applies to freesewing.
+Право на заперечення є ширшим, але саме так воно застосовується до фрісевінгу.
 
 </Note>

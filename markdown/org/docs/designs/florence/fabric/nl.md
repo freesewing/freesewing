@@ -1,10 +1,10 @@
----
+- - -
 title: "Florence face mask: Fabric Options"
----
+- - -
 
-The goal of our mask is to stop droplets. So you want to go for something that filters those out. Then again, you need to be able to breath through your mask, so we want fabric that breathes, without letting droplets through.
+Het doel van ons masker is om droplets te stoppen. Dus u wilt iets doen dat de mensen wegjaagt. En nogmaals, je moet door je masker kunnen ademen, zodat we stof willen die adem ademt, zonder droplets door te laten gaan.
 
-In addition, we want the inside to be comfortable on our skin. So here I'd suggest a tightly woven cotton or viscose/rayon. For the outter fabric, cotton again, or a tightly woven wool.
+Bovendien willen we dat het binnenste zich comfortabel op onze huid bevindt. Dus hier zou ik een sterk geweven katoen of viscose/rayon voorstellen. Voor de buitenstof, katoen opnieuw, of een stevig geweven wol.
 
 <Note>
 

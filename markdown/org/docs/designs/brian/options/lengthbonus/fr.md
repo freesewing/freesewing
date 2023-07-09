@@ -1,8 +1,8 @@
----
+- - -
 titre : "Longueur supplémentaire"
----
+- - -
 
-![The length bonus option on Brian](./lengthbonus.svg)
+![L'option de longueur supplémentaire pour Brian](./lengthbonus.svg)
 
 Cette option permet de contrôler jusqu'à quel point le bloc se prolonge sous vos hanches.
 

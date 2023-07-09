@@ -1,11 +1,11 @@
----
+- - -
 title: "Back pocket horizontal placement"
----
+- - -
 
-Controls the horizontal placement of the back pockets.
+Bepaalt de horizontale plaatsing van de achterzakken.
 
-In other words, more towards the outseam, and this wider apart. Or more towards the center back and thus closer together.
+Met andere woorden, meer naar buiten toe, en verder uit elkaar. Of meer richting het midden achter en dus dichter bij elkaar.
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_backpockethorizontalplacement_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](charlie_backpockethorizontalplacement_sample.svg "Effect van deze optie op het patroon")

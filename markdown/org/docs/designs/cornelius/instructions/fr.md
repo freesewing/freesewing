@@ -1,132 +1,132 @@
----
-title: "Cornelius cycling breeches: Sewing Instructions"
----
+- - -
+titre : "Culotte de cycliste Cornélius : Instructions de couture"
+- - -
 
-### Step 1: The Front Pockets
+### Étape 1 : Les poches avant
 
-- Press under the seam allowances of the non-notched edges of the pokcet facings.
-- Matching notches, pin the wrong sides of pocket facings to right side of pocket bags, _Edgestitch_ the folded edges to the pocket bags.
-- _Baste_ the seam allowances of the notched edges of the pocket facings to the pocket bags.
-- With right sides together matching double notches sew the pocket bags to the front and then press to the wrong side.
-- Fold the pockets in half along the fold line, right sides together. Stitch the bottom of the pocket bag together.
-- Alternatively you can _French Seam_ the bottom seams of the pocket bags together if you prefer.
-- _Baste_ the top and side of the pocket bags to the front seam allowances mathcing notches.
+- Repassez sous les surplus de couture des bords non crantés des parements de poche.
+- En faisant correspondre les encoches, épinglez l'envers des parements de poche sur l'endroit des sacs de poche, _piquez au point d'orgue_ les bords pliés sur les sacs de poche.
+- _Coller_ les surplus de couture des bords crantés des parements de poche sur les sacs de poche.
+- Endroit contre endroit, en faisant correspondre les doubles encoches, coudre les poches sur le devant, puis repasser sur l'envers.
+- Pliez les poches en deux le long de la ligne de pliage, endroit contre endroit. Coudre le fond de la pochette ensemble.
+- Si vous préférez, vous pouvez également _coudre à la française_ les coutures inférieures des sacs de poche ensemble.
+- _Bâtissez_ le haut et le côté des sacs de poche sur les marges de couture avant en faisant correspondre les encoches.
 
 <Note>
 
-Going forward the pockets and fronts will just be referred to as the fronts.
+À l'avenir, les poches et les devants seront simplement appelés devants.
 
 </Note>
 
-### Step 2: The Fly
+### Étape 2 : La mouche
 
-- With right sides together, from the top _Baste_ along the fly line stopping at the notch on the crotch seam.
-- From where you left off with basting, stitch the crotch seam together making sure to secure your stitches where the basting ends.
-- Press open the fly and seam.
-- Lay the fronts down wrong side up so the right sides of the fly flaps are facing you.
-- Lay zipper face up on the front flaps, with the left side of the zipper touching the seam, with the bottom of the right zipper tape on the curved flap.
-- Sew the right zipper tape to the right flap close to the zipper teeth using a zipper foot. Don't sew it to the front itself!
-- Pull the zipper to the left so the right flap is pulled over.
-- Pin the left zipper tape to the left flap.
-- Sew the left zipper tape to left flap close to the zipper teeth using a zipper foot. Don't sew it to the front itself!
-- Fold the zipper guard in half wrong sides together.
-- Lay the zipper guard on the right flap, right sides touching.
-- Sew the zipper guard to the right flap, _Finish_ the right side to your liking.
-- _Finish_ the left side of the left flap to your liking.
-- Unpick the basted part of the front seam.
-- _Topstitch_ the right flap down, away from the now unpicked seam, as far down as you can.
-- Pin/_Baste_ the zipper protector over to the right side to keep it out of the way for the next step
-- On the outside side, sew the left flap down to the left, following the curved line.
+- En partant du haut, endroit contre endroit, _Batir_ le long de la ligne volante en s'arrêtant à l'encoche de la couture de l'entrejambe.
+- À partir de l'endroit où vous avez terminé le bâti, cousez la couture de l'entrejambe en veillant à fixer vos points à l'endroit où le bâti se termine.
+- Ouvrez la braguette et la couture à l'aide d'un fer à repasser.
+- Posez les devants, endroit contre endroit, de façon à ce que les côtés droits des rabats soient tournés vers vous.
+- Poser la fermeture à glissière, face vers le haut, sur les rabats avant, le côté gauche de la fermeture à glissière touchant la couture, le bas de la bande droite de la fermeture à glissière se trouvant sur le rabat incurvé.
+- Cousez la bande de fermeture à glissière droite sur le rabat droit, près des dents de la fermeture à glissière, à l'aide d'un pied pour fermeture à glissière. Ne le cousez pas sur le devant lui-même !
+- Tirez la fermeture Éclair ver la gauche pour que le rabat droit soit tiré au-dessus.
+- Épinglez le ruban de fermeture gauche sur le rabat gauche.
+- Cousez la bande de fermeture à glissière gauche sur le rabat gauche, près des dents de la fermeture à glissière, à l'aide d'un pied pour fermeture à glissière. Ne le cousez pas sur le devant lui-même !
+- Pliez le protège fermeture en deux mauvais côtés ensemble.
+- Placez le protège fermeture sur le rabat droit, en faisant toucher les côtés droits.
+- Coudre le protège fermeture sur le rabat droit, _Terminer_ le côté droit a votre convenance.
+- _Terminez_ le côté gauche du rabat gauche à votre goût.
+- Enlevez les points de bâti sur la couture avant.
+- _Surpiquer_ le rabas droit vers le bas, loin de la couture maintenant non épinglée, au plus loin que vous le pouvez.
+- Épinglez/_Bâtissez_ le protecteur à fermeture Éclair sur le côté droit pour le garder hors du passage pour l'étape suivante
+- Sur le côté extérieur, coudre le rabat de gauche vers la gauche, en suivant la ligne courbée.
 - On the outside side, _Bar-Tack_ where you like them for reinforcement.
 
 <Tip>
 
-When sewing the left flap down on the outside, you may find it best to make a template to help you.
+Lorsque vous cousez le rabat gauche sur l'extérieur, il est préférable de faire un gabarit pour vous aider.
 
 </Tip>
 
 <Note>
 
-If you wish to orientate the fly the other way change the left to right and right to left in the steps above.  
-If wanting something more historical than omit the zipper and make a buttonhole fly instead.
+Si vous voulez orienter la mouche dans l'autre sens changez la gauche par la droite dans les étapes précédentes.  
+Si vous voulez quelque chose de plus historique, omettez la fermeture à glissière et faites une braguette à boutonnière à la place.
 
 </Note>
 
-### Step 3: Attaching the front to the back
+### Étape 3 : Fixation de l'avant à l'arrière
 
-- With right sides together sew the back pieces together along the back seam.
-- With right sides together sew the front and back together at the side seams and inner leg seam. Making sure to leave a gap below the notches at the bottom of the side seams. The gap will be referred to as the list when going forward.
+- Endroit contre endroit, cousez les pièces du dos le long de la couture du dos.
+- Endroit contre endroit, coudre le devant et le dos au niveau des coutures latérales et de la couture intérieure de la jambe. Veillez à laisser un espace sous les encoches au bas des coutures latérales. L'écart sera appelé liste pour la suite.
 
-### Step 4: Leg bands
+### Étape 4 : Bandes pour les jambes
 
-Use the method of the cuff style you chose as they are different depending on which style you are using.
+Utilisez la méthode du style de manchette que vous avez choisi, car elle diffère selon le style que vous utilisez.
 
-#### Traditional and Elegant
+#### Traditionnel et élégant
 
-- _Finish_ the raw edges of the slits.
-- Press the seam allowances of the slits to the wrongs sides. Stitch in place.
-- Sew one of the leg band pieces to each leg right sides together, matching notches.
-- Press the bands and seam allowance down and away from leg. Trim the seam allowance to reduce bulk.
-- Press the top seam allowance to the wrong side of the remaining leg band pieces. Trim the top seam allowance.
-- With right sides together sew the remaining leg and pieces to the attached leg bands along the bottoms and sides.
-- Turn the leg bands out. Press.
-- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
-- Sew the buttonhole. The buttons will be sewn later.
+- _Finir_ les bords bruts des fentes.
+- Repassez les surplus de couture des fentes sur les envers. Piquez en place.
+- Coudre un des morceaux de la bande de jambe sur chaque jambe, endroit contre endroit, en faisant coïncider les encoches.
+- Repassez les bandes et le surplus de couture vers le bas et loin de la jambe. Coupez le surplus de couture pour réduire l'encombrement.
+- Repassez le surplus de couture supérieur sur l'envers des morceaux de bande de jambe restants. Découpez le surplus de couture supérieur.
+- Endroit contre endroit, coudre le reste de la jambe et des morceaux aux bandes de jambe attachées le long des bas et des côtés.
+- Tournez les bandes de jambe vers l'extérieur. Repasser.
+- _Piquez_ le bord plié de la ceinture sur le devant, en veillant à ce que le bord plié recouvre la piqûre.
+- Coudre la boutonnière. Les boutons seront cousus plus tard.
 
 <Note>
 
-If you are worried about a draft you can create a triangle piece of fabric that sits behind the slits out of your pocket fabric. Attaching it before Step 3 to one of the sides of the slits.
+Si vous êtes inquiets pour l'esquisse, vous pouvez créer un triangle de tissu dans le tissu de votre poche pour le placer derrière les fentes. Le fixer avant l'étape 3 sur l'un des côtés des fentes.
 
 </Note>
 
 #### Keystone
 
-- If using construct plackets for the leg slits.
-- Sew the plackets to the leg slits similar to how you would sew a sleeve cuff on a shirt.
-- Close the darts on the leg band pieces.
-- Sew one of the leg band pieces to each leg right sides together, matching notches.
-- Press the bands and seam allowance down and away from leg. Trim the seam allowance to reduce bulk.
-- Press the top seam allowance to the wrong side of the remaining leg band pieces. Trim the top seam allowance.
-- With right sides together sew the remaining leg and pieces to the attached leg bands along the bottoms and sides.
-- Turn the leg bands out. Press.
-- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
-- Sew the buttonhole. The buttons will be sewn later.
+- Si vous utilisez des pattes de boutonnage pour les fentes des jambes.
+- Cousez les pattes de boutonnage aux fentes des jambes, comme vous le feriez pour un revers de manche sur une chemise.
+- Fermez les pinces sur les pièces de la bande de jambe.
+- Coudre un des morceaux de la bande de jambe sur chaque jambe, endroit contre endroit, en faisant coïncider les encoches.
+- Repassez les bandes et le surplus de couture vers le bas et loin de la jambe. Coupez le surplus de couture pour réduire l'encombrement.
+- Repassez le surplus de couture supérieur sur l'envers des morceaux de bande de jambe restants. Découpez le surplus de couture supérieur.
+- Endroit contre endroit, coudre le reste de la jambe et des morceaux aux bandes de jambe attachées le long des bas et des côtés.
+- Retournez les bandes de jambe. Repasser.
+- _Piquez_ le bord plié de la ceinture sur le devant, en veillant à ce que le bord plié recouvre la piqûre.
+- Coudre la boutonnière. Les boutons seront cousus plus tard.
 
 <Note>
 
-If you are worried about a draft you will need to construct plackets for the leg slits.
+Si vous vous inquiétez pour le brouillon, vous devrez construire des pattes de boutonnage pour les fentes des jambes.
 
 </Note>
 
 <Note>
 
-**For both Keystone, Traditional and Elegant Styles**
+**Pour les styles Keystone, Traditionnel et Élégant**.
 
-You can _Edgestitch_ the leg bands together like a modern waistband if you prefer.
+Si vous préférez, vous pouvez coudre les bandes de jambe comme une ceinture moderne.
 
 </Note>
 
-### Step 5: Waistband
+### Étape 5 : Taille
 
-- Face one of the waistband pieces using your preffered method.
-- Sew the faced waistband piece to the top of the legs right sides together.
-- Press the waistband and seam allowance up and away from leg. Trim the seam allowance to reduce bulk.
-- Press the bottom seam allowance to the wrong side of the remaining waistband piece. Trim the bottom seam allowance.
-- With right sides together sew the remaining waistband to the faced waistband along the top and sides.
-- Turn the waistband out. Press.
-- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
-- Sew the buttonhole. The buttons will be sewn later.
+- Surfilez l'une des pièces de la ceinture en utilisant la méthode que vous préférez.
+- Coudre le morceau de ceinture sur le dessus des jambes, endroit contre endroit.
+- Repassez la ceinture et le surplus de couture vers le haut et loin de la jambe. Coupez le surplus de couture pour réduire le volume.
+- Repassez le surplus de couture du bas sur l'envers du morceau de ceinture restant. Découpez le surplus de couture du bas.
+- Endroit contre endroit, coudre le reste de la bande de taille à la bande de taille sur le dessus et les côtés.
+- Retournez la ceinture. Repasser.
+- _Piquez_ le bord plié de la ceinture sur le devant, en veillant à ce que le bord plié recouvre la piqûre.
+- Coudre la boutonnière. Les boutons seront cousus plus tard.
 
 <Note>
 
-You can _Edgestitch_ the waistband together like a modern waistband if you prefer.
+Si vous préférez, vous pouvez faire une surpiqûre à la taille comme pour une ceinture moderne.
 
 </Note>
 
-### Step 6: Buttons
+### Étape 6 : Boutons
 
-- Sew the waistband and leg band buttons on.
+- Coudre les boutons de la ceinture et de la bande de jambe.
 
-### Step 7: Enjoy!
+### Étape 7: Profitez-en!
 
-Vous avez terminé ! Now go have a ride in your brilliant new cycling breeches!
+Vous avez terminé ! Maintenant, allez faire un tour dans votre nouvelle culotte de cycliste !

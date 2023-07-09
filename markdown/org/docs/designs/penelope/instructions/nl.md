@@ -1,6 +1,6 @@
----
+- - -
 title: "Penelope pencil skirt: Sewing Instructions"
----
+- - -
 
 <Note>
 
@@ -12,27 +12,27 @@ Due to the different styles and configurations of Penelope, we will first go ove
 
 ### Voering
 
-Pencil skirts are tight. This limits your movement quite a bit. More so, when you try to sit down, the skirt may try to pull itself off your waist, or, when you get back up, stay quite high on your bum. Lining the skirt will make it move a lot easier around your curves, and thereby make it easier for you to move.
+Potlood rokken zijn klein. Dit beperkt je beweging een beetje. More so, when you try to sit down, the skirt may try to pull itself off your waist, or, when you get back up, stay quite high on your bum. Lining the skirt will make it move a lot easier around your curves, and thereby make it easier for you to move.
 
-Adding lining can be done by creating a slightly shorter front and back piece, that has some extra fabric in the middle. The extra fabric makes it easier for the lining to move. One inch for each of the front and back pieces is enough. You can either make a box pleat in the front and back, or add the extra fabric where the darts are. You do not need to sew darts in the lining fabric. Just a pleat at the dart position will be fine.
+Adding lining can be done by creating a slightly shorter front and back piece, that has some extra fabric in the middle. The extra fabric makes it easier for the lining to move. Eén centimeter voor elk van de voor- en achterpand is genoeg. You can either make a box pleat in the front and back, or add the extra fabric where the darts are. Je hoeft geen nepen in de voering te stikken. Just a pleat at the dart position will be fine.
 
 ### Tailleband
 
-A waistband is optional on Penelope. If you omit it, there will be quite some stress on the top of the zipper. Make sure your zipper is up to the task. An invisible zipper might not be the best option then, since they can't always take that much strain.
+Een tailleband is optioneel op Penelope. If you omit it, there will be quite some stress on the top of the zipper. Zorg ervoor dat uw rits tegen de taak is. Een onzichtbare rits is misschien niet de beste optie dan, omdat ze niet altijd zoveel druk kunnen nemen.
 
 ### Rits
 
-Without the zipper it will be impossible to get in and out of the skirt. So it should be at least the length from your waist to the largest part of your bum. Longer will make it easier to put the skirt on and off. Don't use one that's too long, because the part of the seam where the zipper is behaves differently than the part without it, and you want to try to make it invisible also in movement.
+Zonder de rits zal het onmogelijk zijn om in en uit de rok te geraken. So it should be at least the length from your waist to the largest part of your bum. Longer will make it easier to put the skirt on and off. Don't use one that's too long, because the part of the seam where the zipper is behaves differently than the part without it, and you want to try to make it invisible also in movement.
 
 Traditionally, an invisible zipper is used in a pencil skirt but a regular zipper will work just as well. You can even use a zipper that constrast your fabric if the fancy takes you. Choose what works for you and the style you're going for. Be creative (or not) it is entirely up to you! All though if your fabric is on the heavier side you might want to opt for a different closure entirely.
 
 ### Vuur
 
-A vent in the back is optional with Penelope. It will allow you to walk a lot easier than if you make the skirt without it. The vent also influences where the zipper will be located. If you choose to have no vent, the default zipper location is on the side seam, and the back will be cut-on-fold. With the vent, there has to be a seam in the back piece, and the zipper will be located on that seam.
+Een split achter is optioneel met Peneloptie. It will allow you to walk a lot easier than if you make the skirt without it. The vent also influences where the zipper will be located. If you choose to have no vent, the default zipper location is on the side seam, and the back will be cut-on-fold. With the vent, there has to be a seam in the back piece, and the zipper will be located on that seam.
 
 ### Nepen
 
-Darts are used to compensate for the difference between your waist and seat measurements. Depending on this difference, there can be two darts, one dart, or no darts at all. More darts make for a potentially better fit. But if the amount of fabric that the dart will take in becomes too small, the number of darts will be reduced. Otherwise it would be very difficult to sew the darts, and they would probably become rather unsightly. Some of the difference will be taken in by the side seam, and if the difference is small, no darts will be included in the front and back pieces.
+Nepen worden gebruikt om het verschil tussen je taille en zitvlak te compenseren. Afhankelijk van dit verschil kunnen er twee nepen zijn, één neep of helemaal geen nepen. More darts make for a potentially better fit. But if the amount of fabric that the dart will take in becomes too small, the number of darts will be reduced. Otherwise it would be very difficult to sew the darts, and they would probably become rather unsightly. Some of the difference will be taken in by the side seam, and if the difference is small, no darts will be included in the front and back pieces.
 
 ## Constructie
 
@@ -65,7 +65,7 @@ If using a different closure, construct it during this step.
 
 </Note>
 
-### Step 3: Sew the side seams
+### Stap 3: Stik de zijnaden
 
 - With _good sides together_, sew up both the side seams.
 - With _good sides together_, if not the zipper seam, sew the centre back seam either completely or down to the vent if included.

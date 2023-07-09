@@ -1,29 +1,29 @@
----
-title: "Zipper size"
----
+- - -
+title: "Taille de la fermeture éclair"
+- - -
 
-What size zipper the pattern uses to draft.
+Quelle est la taille de fermeture Éclair que l'on doit utiliser pour générer le patron.
 
-This determines how wide the zipper panel will be by inserting the zipper size into the panel.
+Cela détermine la largeur du panneau de fermeture éclair en insérant la taille de la fermeture éclair dans le panneau.
 
-The sizes are based off of the brand YKK's zippers and refers to the width of the zipper coils.
+Les tailles sont basées sur les fermetures de la marque YKK et se réfère à la largeur des fermetures à glissière.
 
-Size guide for Hortensia:
+Guide de taille pour Hortensia:
 
-| Option    | Size in Millimetres (mm) |
-| --------- | ------------------------ |
-| #Invisble | 0                        |
-| #3        | 4.8                      |
-| #4        | 5.4                      |
-| #4.5      | 5.9                      |
-| #5        | 6.2                      |
-| #6        | 7                        |
-| #8        | 8                        |
-| #10       | 10.6                     |
+| Option     | Taille en millimètres (mm) |
+| ---------- | -------------------------- |
+| #Invisible | 0                          |
+| #3         | 4,8                        |
+| #4         | 5.4                        |
+| #4,5       | 5.9                        |
+| #5         | 6.2                        |
+| #6         | 7                          |
+| #8         | 8                          |
+| #10        | 10.6                       |
 
 <Note>
 
-If in doubt, or if the size of your zipper is unavailable use the size that is slightly wider. This means you will have a wider zipper panel than needed but it is better than one that is not wide enough.
+En cas de doute, ou si la taille de votre fermeture à glissière n'est pas disponible, utilisez la taille légèrement plus grande. Cela signifie que vous aurez un panneau de fermeture à glissière plus large que nécessaire mais c'est mieux qu'un panneau qui n'est pas assez large.
 
 </Note>
 

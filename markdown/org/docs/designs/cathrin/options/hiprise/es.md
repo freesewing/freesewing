@@ -1,11 +1,11 @@
----
+- - -
 title: "Hip rise"
----
+- - -
 
-![The hip rise option on Cathrin](./hiprise.svg)
+![La opción de ascenso de cadera en la Catedral](./hiprise.svg)
 
-How high do you want to corset to rise on your hips, in comparison to the center front and center back.
+Qué tan alto quieres que el corsé se levante en tus caderas, en comparación con el frente central y la parte trasera del centro.
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_hiprise_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](cathrin_hiprise_sample.svg "Efecto de esta opción en el patrón")

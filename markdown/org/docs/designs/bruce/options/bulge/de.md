@@ -1,15 +1,15 @@
----
+- - -
 title: "Bulge"
----
+- - -
 
-![The bulge option on Bruce](./bulge.svg)
+![Die Wulge-Option auf Bruce](./bulge.svg)
 
-How much room do you want in the front pouch?
+Wie viel Platz möchten Sie im vorderen Beutel?
 
-This option will increase the front dart, thereby creating more room in the front.
+Diese Option erhöht den Frontdart und schafft so mehr Platz in der Vorderseite.
 
 > Wenn es sich um einen vertikalen Raum handelt, den Sie suchen, dann führt die Option **rise**
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bruce_bulge_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bruce_bulge_sample.svg "Effekt dieser Option auf das Schnittmuster")

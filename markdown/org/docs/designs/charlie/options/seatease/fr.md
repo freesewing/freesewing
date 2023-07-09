@@ -1,8 +1,8 @@
----
+- - -
 titre : "Facilité d'assise"
----
+- - -
 
-Controls the amount of ease at your seat/bum.
+Contrôle la quantité d'aisance à votre siège/bum.
 
 ## Effet de cette option sur le motif
 

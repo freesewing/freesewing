@@ -1,6 +1,6 @@
----
+- - -
 title: "Hortensia handbag: Sewing Instructions"
----
+- - -
 
 ### (Optional) Step 1: Face the main fabric
 
@@ -89,4 +89,4 @@ It is recommended to leave the gap for turning on the side rather than the top o
 
 ### Step 10: Enjoy!
 
-That's it! You are all done! Now go enjoy you new bag!
+Dat is het! You are all done! Now go enjoy you new bag!

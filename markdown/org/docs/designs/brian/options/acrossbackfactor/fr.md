@@ -1,8 +1,8 @@
----
-title: "Across back factor"
----
+- - -
+title:"Facteur de largeur de dos"
+- - -
 
-![The across back option on Brian](./acrossbackfactor.svg)
+![L'option de face arrière sur Brian](./acrossbackfactor.svg)
 
 Contrôle la largeur de votre dos en fonction de la mesure d'épaule à épaule
 

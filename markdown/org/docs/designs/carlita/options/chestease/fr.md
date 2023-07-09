@@ -1,8 +1,8 @@
----
+- - -
 titre : "aisance thoracique"
----
+- - -
 
-![Chest ease](./chestease.svg)
+![Aisance de poitrine](./chestease.svg)
 
 L'aisance au niveau de la poitrine.
 

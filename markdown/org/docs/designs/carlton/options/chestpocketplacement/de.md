@@ -1,9 +1,9 @@
----
+- - -
 title: "Chest pocket placement"
----
+- - -
 
-Controls the location of the chest pocket.
+Steuert den Ort der Brusttasche.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlton_chestpocketplacement_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](carlton_chestpocketplacement_sample.svg "Effekt dieser Variable auf das Schnittmuster")

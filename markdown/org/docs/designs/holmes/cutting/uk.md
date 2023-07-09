@@ -1,31 +1,31 @@
 ---
-title: "Holmes deerstalker hat: Cutting Instructions"
+title: "Капелюх оленячого переслідувача Холмса: Інструкція з крою"
 ---
 
-The **crown** pattern piece needs to be cut on the fold to create a whole piece.
+Викрійку **корони** потрібно розрізати по згину, щоб вийшла ціла деталь.
 
-### Materials
+### Матеріали
 
-- **Main fabric**
-  - Cut the amount of **crowns** you selected in the pattern options
-  - Cut **4 ear** parts or Cut **2 ear** from main and lining.
-  - Cut **4 visor** parts
-- **Lining fabric**
-  - Cut the amount of **crowns** you selected in the pattern options
-- **Visor Insert Material**
-  - Cut **2 visor inserts**. Use your visor pattern piece with no seam allowance.
+- **Основна тканина**
+  - Виріжте кількість **корон** , яку ви вибрали в опціях викрійки
+  - Виріжте **4 вушні** частини або виріжте **2 вушні** з основної та підкладкової частин.
+  - Виріжте **4 частини козирка**
+- **Підкладкова тканина**
+  - Виріжте кількість **корон** , яку ви вибрали в опціях викрійки
+- **Матеріал вставки козирка**
+  - Викроїти **2 вставки для козирка**. Використовуйте викрійку козирка без припусків на шви.
 
-### Optional Fabric Ties
+### Додаткові тканинні стяжки
 
-If you don't wish to use ribbon for your ties you can make them out of fabric. Simply cut 4 crossgrain strips of an 1" (2.5cm) or width of your choosen + seam allowances wide and sew two tubes leaving one of the short sides open for turning. Clip the corners and trim seams. Turn out an press. If desired you can _Edgestitch_ or _Topstitch_ the tubes to stop the fabric from shifting. The raw edge of the tubes can then be concealed in the ear flap seam when constructing the ear flaps.
+Якщо ви не хочете використовувати стрічку для краватки, ви можете зробити її з тканини. Просто виріжте 4 поперечні смужки шириною 1 дюйм (2,5 см) або шириною на ваш вибір + припуски на шви і зшийте дві трубки, залишивши одну з коротких сторін відкритою для вивертання. Закріпіть кути і обріжте шви. Увімкніть пресу. За бажанням ви можете _Edgestitch_ або _Topstitch_ трубочки, щоб зупинити зсув тканини. Необроблений край трубок можна потім сховати в шов вушної раковини при виготовленні вушних раковин.
 
 <Note>
 
-It is recommended to draft the pattern nett and use the pattern to trace the seam lines onto fabric and add the seam allowance on the fabric rather than the pattern. This to allow for a more precise sew which is needed for a hat. Recommended seam allowance 1/4" (6mm) on the sides of the crowns, ear flaps and outer curve of the visors. 1/2" (1.3cm) for the bottom of the crowns, ear flaps and inner curve of the visors. With these seam allowances you will not have to trim the allowances if you do not want to.
+Рекомендується накреслити сітку викрійки і використовувати її для перенесення ліній швів на тканину, а також додавати припуски на шви на тканині, а не на викрійці. Це дозволяє більш точно зшити, що є необхідним для капелюха. Рекомендований припуск на шви 1/4" (6 мм) з боків козирків, вушних клапанів і зовнішнього вигину козирків. 1/2" (1,3 см) для нижньої частини козирків, вушних клапанів і внутрішнього вигину козирків. З цими припусками на шви вам не доведеться обрізати припуски, якщо ви цього не хочете.
 
 </Note>
 <Warning>
 
-It is recommended to make a mock-up with your crown pattern first before cutting your fabrics. This is to test the length and ease of the crown piece. Make sure to cut off the bottom seam allowance before trying it on. If it is too tight who will need to re-draft the pattern with more head ease just remember the ease is split across each crown. If the peak is too high you may want to re-draft the pattern with the crown length reduced. Once re-drafted make another mock-up to check whether you are satified with the changes or not. Repeat again if you are not satisfied.
+Перед тим, як розкроїти тканину, рекомендується спочатку зробити макет коронки. Це потрібно для того, щоб перевірити довжину і легкість коронки. Не забудьте відрізати припуск на нижній шов перед тим, як приміряти. Якщо викрійка занадто туга, потрібно переробити її з більшою легкістю для голови, просто пам'ятайте, що легкість розподіляється по кожній коронці. Якщо пік занадто високий, ви можете переробити викрійку, зменшивши довжину маківки. Після переробки зробіть ще один макет, щоб перевірити, чи влаштовують вас зміни. Повторіть ще раз, якщо ви не задоволені.
 
 </Warning>

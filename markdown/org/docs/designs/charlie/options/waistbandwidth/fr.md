@@ -1,8 +1,8 @@
----
+- - -
 titre : "Largeur de la ceinture"
----
+- - -
 
-Controls the width of the waistband.
+Contrôle la largeur de la ceinture.
 
 ## Effet de cette option sur le motif
 

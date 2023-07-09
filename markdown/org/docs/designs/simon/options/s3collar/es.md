@@ -1,6 +1,6 @@
----
+- - -
 title: "Shoulder seam shift: collar side"
----
+- - -
 
 Controla la ubicación de la costura del hombro en el lado del cuello.
 
@@ -9,4 +9,4 @@ Controla la ubicación de la costura del hombro en el lado del cuello.
 
 ## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_s3collar_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_s3collar_sample.svg "Efecto de esta opción en el patrón")

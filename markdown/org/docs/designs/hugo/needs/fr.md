@@ -1,9 +1,9 @@
----
+- - -
 title: "Hugo hoodie: What You Need"
----
+- - -
 
-To make Hugo, you will need the following:
+Pour réaliser Hugo, vous aurez besoin de :
 
 - Fourniture de base pour la couture
-- About 2 meters (2.2 yards) of a suitable fabric ([see Fabric options](/docs/patterns/hugo/fabric))
+- Environ 2 mètre (2.2 yard) d'un tissu adapté ([voir Options de tissu](/docs/patterns/hugo/fabric))
 - Bord côte ou bande de jersey pour la ceinture et les poignets

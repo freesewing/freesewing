@@ -1,8 +1,8 @@
----
+- - -
 title: "Ribbing stretch"
----
+- - -
 
-![Ribbing stretch on Hugo](./ribbingstretch.svg)
+![Ribbing-Strecken auf Hugo](./ribbingstretch.svg)
 
 Mit dieser Option kannst du die Dehnung deines Bündchens anpassen.
 

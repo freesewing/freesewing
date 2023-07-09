@@ -1,8 +1,8 @@
----
-title: "Chest pocket placement"
----
+- - -
+titre : "Placement des poches de poitrine"
+- - -
 
-Controls the location of the chest pocket.
+Contrôle l'emplacement de la poche de la poitrine.
 
 ## Effet de cette option sur le motif
 

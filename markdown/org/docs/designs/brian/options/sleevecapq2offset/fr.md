@@ -1,12 +1,12 @@
----
-title: "Sleevecap Q2 offset"
----
+- - -
+title: "décalage Q2 de la tête de manche"
+- - -
 
 ***
 
-![The offset in the second quarter of the sleevecap](./sleevecapq2offset.svg)
+![Le décalage au deuxième quadant de la tête de manche](./sleevecapq2offset.svg)
 
-This option controls the offset in the second quadrant of the sleevecap.
+Cette option permet de contrôler le décalage dans le deuxième quadrant de la tête de manche.
 
 <Tip>
 

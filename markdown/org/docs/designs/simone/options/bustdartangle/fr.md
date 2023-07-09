@@ -1,8 +1,8 @@
----
+- - -
 title: "Bust dart angle"
----
+- - -
 
-Controls the angle by which the (side) bust dart slopes downward.
+Contrôle l'angle par lequel la pince poitrine (sur le côté) s'incline vers le bas.
 
 - Increase this option to angle the bust darts downwards and towards the floor
 - Decrease this option to angle the bust darts upwards and towards the armscye

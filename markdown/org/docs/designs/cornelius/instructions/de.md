@@ -1,6 +1,6 @@
----
+- - -
 title: "Cornelius cycling breeches: Sewing Instructions"
----
+- - -
 
 ### Step 1: The Front Pockets
 
@@ -127,6 +127,6 @@ You can _Edgestitch_ the waistband together like a modern waistband if you prefe
 
 - Sew the waistband and leg band buttons on.
 
-### Step 7: Enjoy!
+### Schritt 7: Viel Spaß mit deinem neuen Shirt!
 
 Sie sind fertig! Now go have a ride in your brilliant new cycling breeches!

@@ -1,11 +1,11 @@
----
+- - -
 title: "Sleeve length bonus"
----
+- - -
 
-![The sleeve length bonus option on Brian](./sleevelengthbonus.svg)
+![De optie voor mouwlengte bij Brian](./sleevelengthbonus.svg)
 
-This option controls how to lengthen the sleeves.
+Deze optie bepaalt hoe de mouwen verlengd worden.
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_sleevelengthbonus_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](brian_sleevelengthbonus_sample.svg "Effect van deze optie op het patroon")

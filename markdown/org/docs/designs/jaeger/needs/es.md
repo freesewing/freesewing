@@ -1,8 +1,8 @@
----
+- - -
 title: "Jaeger jacket: What You Need"
----
+- - -
 
-To make Jaeger, you will need the following:
+Para hacer de Jaeger, necesitarás lo siguiente:
 
 - About 2.5 meters (2.8 yards) of a suitable fabric (see [Fabric options](#fabric-options))
 - Tejido luminoso, tela de revestimiento de manga diferente opcionalmente

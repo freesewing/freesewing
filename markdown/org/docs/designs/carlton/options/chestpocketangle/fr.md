@@ -1,8 +1,8 @@
----
+- - -
 title: "Chest pocket angle"
----
+- - -
 
-Controls the slant of the chest pocket.
+Contrôle la taille de la poitrine de la poitrine.
 
 ## Effet de cette option sur le motif
 

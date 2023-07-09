@@ -1,9 +1,9 @@
----
+- - -
 title: "Jaeger jacket: Fabric Options"
----
+- - -
 
-Sportscoats are typically made from a heavier wool, often with some texture or pattern in the weave. In general, they are made in _busier_ fabrics.
+Los escudos deportivos son típicamente hechos de una lana más pesada, a menudo con alguna textura o patrón en el tejido. En general, se fabrican en _telas_ más ocupadas.
 
-Style purists will argue that sportscoats should never be made out of suiting fabric, as a sportscoat is not a suit jacket. You can tell them go feck off and do whatever you want, it's your jacket.
+Style purists will argue that sportscoats should never be made out of suiting fabric, as a sportscoat is not a suit jacket. Puedes decirles que se van a follar y hacer lo que quieras, es tu chaqueta.
 
-However, making Jaeger is going to take some time. Do yourself a favour and get something nice for the final project. (because you will be making a muslin, right?)
+Sin embargo, hacer que Jaeger vaya a tomar algún tiempo. Hazte un favor y consigue algo agradable para el proyecto final. (porque vas a hacer un musulmán, ¿verdad?)

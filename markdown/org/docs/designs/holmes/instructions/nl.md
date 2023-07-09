@@ -5,7 +5,7 @@ title: "Holmes deerstalker hat: Sewing Instructions"
 ### Stap 1: Voorbereiden van de stukjes
 
 - If needed, Interface the crown and half the ear flap pieces.
-- If not already done so, it is recommended to mark the seam lines on your fabric pieces by either a temporary marker or by thread marking. Dit is voor een preciezere naad die essentieel is voor de bouw van hoed.
+- Als dit nog niet is gedaan het wordt aangeraden om de naadlijnen op je stofdelen te markeren met een tijdelijke markering of markering van de draad. Dit is voor een preciezere naad die essentieel is voor de bouw van hoed.
 
 <Tip>
 
@@ -61,7 +61,7 @@ Als je onzeker bent over de lengte van je stropdassen duurt 1 meter (39") en kni
 
 <Note>
 
-The lengths above are recommendations so feel free to go as long or as short as you like with the ties.  
+De lengtes hierboven zijn aanbevelingen, dus voel je vrij om zo lang of zo kort te gaan als je wilt met de banden.  
 If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.
 
 </Note>
@@ -134,7 +134,7 @@ Eens te meer zijn er twee methodes voor de definitieve vergadering en de aanslui
 
 #### Montage- en inspraakmethode 1
 
-- Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).
+- Wedstrijdcentra en naadlijnen leggen de oorklappen samen met de rechterkant van een van de stukken die geen deel uitmaken van de middenkroon. Making sure the faced side is placed against the crown (if faced).
 - Sew ear flap to the crown along seam lines.
 - Repeat for the remaining ear flap on the opposite side of the crown.
 - Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.
@@ -153,7 +153,7 @@ Eens te meer zijn er twee methodes voor de definitieve vergadering en de aanslui
 
 #### Montage- en inspraakmethode 2
 
-- Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).
+- Wedstrijdcentra en naadlijnen leggen de oorklappen samen met de rechterkant van een van de stukken die geen deel uitmaken van de middenkroon. Making sure the faced side is placed against the crown (if faced).
 - _Baste_ the ear flap to the crown along seam lines
 - Repeat for the remaining ear flap on the opposite side of the crown.
 - Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.
@@ -236,8 +236,8 @@ Dat is het! Je bent allemaal klaar. Geniet nu van de wereld in je geweldige nieu
 
 <Note>
 
-Remember these instructions are just guidelines so don't worry if you want to construct the hat differently.  
-The Diagrams are yet to be made for this pattern so in the mean time if you need a visual aid, watch the YouTube video that inspired this pattern:
+Vergeet niet dat deze instructies slechts richtlijnen zijn, dus maak je geen zorgen als je de hoed anders wilt bouwen.  
+De diagrammen moeten nog gemaakt worden voor dit patroon, dus in de tussentijd als je hulp nodig hebt. bekijk de YouTube video die dit patroon inspireerde:
 
 </Note>
 

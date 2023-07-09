@@ -1,8 +1,8 @@
----
+- - -
 title: "Diana draped top: Fabric Options"
----
+- - -
 
-This top works best in one of these two scenarios:
+Este top funciona mejor en estos dos escenarios:
 
 - Use a stretch fabric, and choose minimal ease
-- Or use a non-stretch fabric with good _drape_, in which case you'll want to add more ease. Las telas con caída se pueden cortar al bies para que queden ajustadas al cuerpo
+- O usa una tela rígida con un buen _drapeado_, en cuyo caso tendrás que añadir holguras. Las telas con caída se pueden cortar al bies para que queden ajustadas al cuerpo

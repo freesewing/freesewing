@@ -1,8 +1,8 @@
 ---
-title: "Neck Width"
+title: "Largeur du cou"
 ---
 
-The width of the neck can be adjusted. This is a percentage of the head.
+La largeur du cou peut être ajustée. Il s'agit d'un pourcentage de la tête.
 
 ## Effet de cette option sur le modèle
 

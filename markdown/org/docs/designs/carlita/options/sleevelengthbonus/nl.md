@@ -1,10 +1,10 @@
----
+- - -
 title: "Sleeve length bonus"
----
+- - -
 
-![Sleevelength bonus](./sleevelengthbonus.svg)
+![Bonus mouwlengte](./sleevelengthbonus.svg)
 
-The amount to extend the sleeve beyond the length of the sleeve in the base block.
+Hoeveel langer de mouw moet worden dan de mouw van de basisvorm.
 
 <Note>
 
@@ -18,4 +18,4 @@ Let op de standaardwaarde en gebruik dat als basis om de mouw korter of langer t
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_sleevelengthbonus_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](carlita_sleevelengthbonus_sample.svg "Effect van deze optie op het patroon")

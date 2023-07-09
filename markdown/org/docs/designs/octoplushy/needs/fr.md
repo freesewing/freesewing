@@ -21,6 +21,6 @@ The amount of fabric required is also dependant on the [type of Octoplushy you a
 - The Octopus version requires about 50% more fabric than the Octoplushy version.
 - The Squid version requires about 75% more fabric than the Octoplushy version.
 
-The color of the pupils and eyes for the Squid and Octopus versions are up to you, but for clarification and simplicity the pupils will be referred to as black and the eyes will be referred to as white in the documentation.
+La couleur des pupilles et des yeux pour les versions Squid et Octopus est laissée à votre discrétion, mais pour plus de clarté et de simplicité, les pupilles seront appelées noires et les yeux seront appelés blancs dans la documentation.
 
 </Note>

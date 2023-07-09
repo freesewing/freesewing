@@ -1,6 +1,6 @@
----
+- - -
 title: "Buttonhole placket fold width"
----
+- - -
 
 ![Breedte vouw knoopsgatenpat](buttonholeplacketfoldwidth.svg)
 
@@ -17,4 +17,4 @@ Dit is alleen van toepassing op een klassiek knopenpat. Dus als je voor het naad
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_buttonholeplacketfoldwidth_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_buttonholeplacketfoldwidth_sample.svg "Effect van deze optie op het patroon")

@@ -1,5 +1,5 @@
 ---
-title: "Number of gores"
+title: "Anzahl der Keile"
 ---
 
 ***

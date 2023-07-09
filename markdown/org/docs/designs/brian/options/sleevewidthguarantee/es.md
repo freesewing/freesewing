@@ -1,15 +1,15 @@
----
+- - -
 title: "Sleeve width guarantee"
----
+- - -
 
-We first draft the arm opening, then we draft a sleeve to fit it.
+Primero elaboramos la abertura del brazo, luego preparamos una manga para encajarla.
 
-When all goes well, the sleeve fits perfectly, and this option is not relevant. However, if/when the sleeve does not perfectly fit the arm opening, we need to adapt it.
+Cuando todo va bien, la manga encaja perfectamente, y esta opción no es relevante. Sin embargo, si la manga no encaja perfectamente en la apertura de brazos, necesitamos adaptarla.
 
 Since the shape and height of the sleevecap are more important than the width, we tend to prefer adjusting the width to fit the sleevecap.
 
-To avoid the sleeve getting too narrow, we only adapt a portion of the sleeve width. This option allows you to control how much of the sleeve width is guaranteed. Increasing this option will allow us less of the width to play with to fit the sleeve. This way, the resulting sleeve will be closer to the theoretical sleeve width, and we will instead modify (more of) the sleevecap height to fit the sleeve.
+Para evitar que la manga se estreche, sólo adaptamos una porción de la anchura de la manga. Esta opción permite controlar la cantidad de anchura de la manga garantizada. Incrementar esta opción nos permitirá jugar menos de la anchura para ajustarse a la manga. This way, the resulting sleeve will be closer to the theoretical sleeve width, and we will instead modify (more of) the sleevecap height to fit the sleeve.
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_sleevewidthguarantee_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción al superponer varias variantes que tienen un valor diferente para esta opción](brian_sleevewidthguarantee_sample.svg "Efecto de esta opción en el patrón")

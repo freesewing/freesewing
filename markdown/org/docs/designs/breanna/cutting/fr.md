@@ -1,12 +1,12 @@
----
+- - -
 titre : "Bloc de corps Breanna : Instructions de coupe"
----
+- - -
 
 **Tissu principal**
 
-- Cut **1 Front** part on the fold.
+- Couper **1 partie avant** dans le pli.
 - Couper **2 parties** arrières.
-- Cut **2 Sleeve** parts, _good sides together_.
+- Couper **2 manches**, _bonnes faces ensemble_.
 
 Ces instructions de coupe ne concernent que le bloc Breanna par défaut. Ajustez votre coupe en conséquence si vous avez apporté des modifications au bloc.
 

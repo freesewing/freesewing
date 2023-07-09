@@ -1,10 +1,10 @@
----
+- - -
 titre : "Aisance d'épaule"
----
+- - -
 
-![The shoulder ease option on Diana](./shoulderease.svg)
+![L'option d'assouplissement des épaules sur Diana](./shoulderease.svg)
 
-This option controls the position of your shoulder seam.
+Cette option contrôle la position de votre couture d'épaule.
 
 ## Effet de cette option sur le motif
 
