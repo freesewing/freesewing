@@ -1,11 +1,11 @@
 - - -
-title: "Chest ease"
+назва: "Легкість у грудях"
 - - -
 
-![Chest ease](chestease.svg)
+![Легкість у грудях](chestease.svg)
 
-How much room do you want at the chest? Whatever value you provide here will simply be added to your chest circumference measurement when drafting the garment.
+Скільки місця ви хочете на грудях? Будь-яке значення, яке ви вкажете тут, буде просто додано до обхвату грудей під час побудови викрійки виробу.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](sven_chestease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](sven_chestease_sample.svg "Вплив цієї опції на шаблон")
