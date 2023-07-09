@@ -1,11 +1,11 @@
 - - -
-title: "Bow length"
+назва: "Довжина лука"
 - - -
 
-![Bow length](bowlength.svg)
+![Довжина носової частини](bowlength.svg)
 
-You can make wide bow ties, or narrow ones. This option allows you to change the horizontal size of the bows. Make them larger to be more flamboyant, or small for a more subdued style.
+Ви можете зробити широкі краватки-метелики або вузькі. Ця опція дозволяє змінювати горизонтальний розмір бантів. Зробіть їх більшими, щоб вони були більш яскравими, або меншими, щоб стиль був більш стриманим.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_bowlength_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](benjamin_bowlength_sample.svg "Вплив цієї опції на шаблон")
