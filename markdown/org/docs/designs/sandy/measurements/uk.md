@@ -1,5 +1,5 @@
 - - -
-title: "Sandy circle skirt: Required Measurements"
+"Спідниця з піщаним колом": "Пісочна спідниця-коло: Необхідні виміри"
 - - -
 
 <PatternMeasurements pattern='sandy' />
