@@ -1,11 +1,11 @@
 - - -
-title: "Shoulder slope reduction"
+Назва: "Зменшення нахилу плечей"
 - - -
 
-![Shoulder slope reduction](shoulderslopereduction.svg)
+![Зменшення нахилу укосів](shoulderslopereduction.svg)
 
-The amount by which the shoulder slope is reduced to allow for shoulder padding.
+Величина, на яку зменшується нахил плеча, щоб забезпечити підкладку під плечі.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_shoulderslopereduction_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_shoulderslopereduction_sample.svg "Вплив цієї опції на шаблон")
