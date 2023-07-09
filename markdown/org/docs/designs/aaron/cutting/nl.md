@@ -1,5 +1,5 @@
 - - -
-title: "Aaron A-Shirt: Cutting Instructions"
+titel: "Aaron A-Shirt: Knip-instructies"
 - - -
 
 - Knip **1 rugpand** aan de stofvouw
@@ -8,10 +8,10 @@ title: "Aaron A-Shirt: Cutting Instructions"
 
 <Warning>
 
-#### Caveats
+#### Valkuilen
 
-- There is no seam allowance on the armholes
-- There is no seam allowance on the neck opening
-- There is extra hem allowance at the hem
+- De openingen voor de armen hebben geen naadtoeslag
+- De opening voor de hals heeft geen naadtoeslag
+- De zoom heeft extra naadtoeslag
 
 </Warning>
