@@ -1,9 +1,9 @@
 - - -
-title: "Vertical ease"
+назва: "Вертикальна легкість"
 - - -
 
-The amount of ease to distribute along the length of the garment.
+Кількість легко розподілити по довжині виробу.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_verticalease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](breanna_verticalease_sample.svg "Вплив цієї опції на шаблон")
