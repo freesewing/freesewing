@@ -1,8 +1,8 @@
----
+- - -
 title: "Clavus location"
----
+- - -
 
-Controls the location of the clavi
+Contrôle la localisation de la bande de pourpre
 
 ## Effet de cette option sur le motif
 
