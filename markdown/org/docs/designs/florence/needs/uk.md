@@ -1,10 +1,10 @@
 ---
-title: "Florence face mask: What You Need"
+title: "Маска для обличчя \"Флоренція\": Що вам потрібно"
 ---
 
-To make a Florence face mask, you will need the following:
+Щоб зробити маску для обличчя "Флоренція", вам знадобиться наступне:
 
-- Basic sewing supplies
-- About 15 cm (6") of a suitable fabric ([see Fabric options](/docs/patterns/florence/fabric/))
-- About 15 cm (6") of lining fabric
-- About 1.6 meters (1.8 yards) of ribbon cut in 4 equal parts
+- Основні матеріали для шиття
+- Близько 15 см (6") відповідної тканини ([див. варіанти тканини](/docs/patterns/florence/fabric/))
+- Близько 15 см (6") підкладкової тканини
+- Приблизно 1,6 метра (1,8 ярда) стрічки розрізаємо на 4 рівні частини
