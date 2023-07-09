@@ -1,23 +1,23 @@
 ---
-title: "Holmes deerstalker hat: What You Need"
+title: "Капелюх оленячого переслідувача Холмса: Що вам потрібно"
 ---
 
-To make Holmes, you will need the following:
+Щоб зробити Холмса, вам знадобиться наступне:
 
-- Basic sewing supplies
-- About 0.5 metres (0.6 yards) of a suitable fabric ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
-- About 0.5 metres (0.6 yards) of lining fabric ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
-- A rigid material for the visor insert ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
-- (Optional) About 1 metre of 1" (2.5cm) crossgrain ribbon or petersham.
-- (Optional) 1 covered button about 3/4" (2cm) - 7/8" (2.2cm)
+- Основні матеріали для шиття
+- Приблизно 0,5 метра (0,6 ярдів) відповідної тканини ([див. варіанти тканини Holmes](/docs/patterns/holmes/fabric/))
+- Приблизно 0,5 метра (0,6 ярдів) підкладкової тканини ([див. варіанти тканини Holmes](/docs/patterns/holmes/fabric/))
+- Жорсткий матеріал для вставки козирка ([див. варіанти тканини Holmes](/docs/patterns/holmes/fabric/))
+- (Необов'язково) Приблизно 1 метр 1" (2,5 см) поперечно-зернистої стрічки або пітершаму.
+- (Додатково) 1 закрита кнопка приблизно 3/4" (2 см) - 7/8" (2,2 см)
 
 <Note>
 
-Depending on style the ties and buttons are optional.
+Залежно від фасону, краватки та ґудзики можуть бути необов'язковими.
 
-- If you are making Buttonhole Ear Flaps you can omit the ties.
-- If you are making Tie Ear Flaps you can omit the button.
-- Ties can also be made from fabric if you prefer ([see Holmes Cutting](/docs/patterns/holmes/cutting/))
-- You can also use different width and type ribbons for the ties if you prefer.
+- Якщо ви робите вушні клапани-петельки, ви можете не зав'язувати їх.
+- Якщо ви робите краватку-вушанку, ви можете не використовувати ґудзик.
+- Краватки також можна зробити з тканини, якщо ви бажаєте ([див. Викрійку Холмса] (/docs/patterns/holmes/cutting/))
+- Ви також можете використовувати стрічки різної ширини та типу для краваток, якщо бажаєте.
 
 </Note>
