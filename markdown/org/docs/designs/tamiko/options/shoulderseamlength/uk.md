@@ -1,9 +1,9 @@
 - - -
-title: "Shoulder seam length"
+назва: "Довжина плечового шва"
 - - -
 
-The length of the shoulder seam, as a factor of your shoulder to shoulder measurement.
+Довжина плечового шва, як фактор вашого обхвату від плеча до плеча.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](tamiko_shoulderseamlength_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](tamiko_shoulderseamlength_sample.svg "Вплив цієї опції на шаблон")
