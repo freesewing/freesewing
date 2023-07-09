@@ -41,10 +41,10 @@ Before sewing the eyebrows in half, you can stuff the eyebrows to create a more 
 
 </Note>
 
-- **Squid**
-  - With _good sides together_ sew four head parts together, from notch B to the tip of the head part A creating a semi-sphere like shape.
-  - Repeat with the remaining four head parts to create a second half.
-  - On the head (a) parts fold along the fold-line with _good sides together_.
+- **Calamar**
+  - Avec _l'endroit contre endroit_, coudre les quatre parties de la tête ensemble, de l'encoche B à la pointe de la partie de la tête A, en créant une forme de demi-sphère.
+  - Répéter l'opération avec les quatre autres parties de la tête pour créer une deuxième moitié.
+  - Sur la tête (a), les pièces se plient le long de la ligne de pliage, _endroit contre endroit_.
   - Sew the straight line that juts out and then turn the flap _good sides_ out.
   - With _good sides together_ sew the non - flap edges of the head (a) parts to the one of the head halves sewn earlier, from notch B to the tip of the head part A.
   - With _wrong side_ to _good side_ sew the pupils to the eyes and finish their sides the best you can.
@@ -52,20 +52,20 @@ Before sewing the eyebrows in half, you can stuff the eyebrows to create a more 
   - With _good sides together_ sew the two halves together, from notch B to the tip of the head part A making sure that the flaps are on the outside.
   - Turn _good sides_ out.
 
-## Step 2: The Legs
+## Étape 2 : Les jambes
 
 - **Octoplushy & Octopus**
   - With _good sides together_ sew four leg parts together, from notch D to the tip of the leg part C.
   - Repeat with the remaining four leg parts to create a second half.
   - With _good sides together_ sew the two leg halves together, from notch D to the tip of the leg part C but only one side. This other side stays open for stuffing later.
 
-- **Squid**
+- **Calamar**
   - With _good sides together_ sew four leg parts together, from notch D to the tip of the leg part C.
   - Repeat with the remaining four leg parts to create a second half.
   - With _good sides together_ sew a leg (a) part to each half so you have matching halves.
   - With _good sides together_ sew the two leg halves together, from notch D to the tip of the leg part C but only one side. This other side stays open for stuffing later.
 
-## Step 3: Final Construction
+## Étape 3 : Construction finale
 
 - With _good sides together_ match up the leg parts with the body parts.
 - Sew each leg from notch B/D down and back around to notch B/D.
@@ -84,6 +84,6 @@ Those who are more confident can do this with the needle down on their machine b
 - Stuff the plushy through the opening in the legs.
 - Hand sew the opening closed.
 
-## Step 4: Enjoy!
+## Étape 4: Profitez-en!
 
 - That's it you are all done now go explore the depths of the oceans with your new Octoplushy!
