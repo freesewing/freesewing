@@ -1,19 +1,19 @@
 - - -
-title: "Neck inset"
+назва: "Вставка на шию"
 - - -
 
-![Neck inset](neckinset.svg)
+![Вставка для шиї](neckinset.svg)
 
-How far do you want your waistcoat to sit away from your collar on your shoulder seam? The default is 2cm.
+Як далеко ви хочете, щоб жилет сидів від коміра по плечовому шву? За замовчуванням 2 см.
 
 <Note>
 
-###### What's the point?
+###### У чому сенс?
 
-The shoulder seam of a waistcoat is typically more narrow than your shirt. This option controls how narrow it gets (on the collar side).
+Плечовий шов жилета зазвичай вужчий, ніж у сорочки. Цей параметр визначає, наскільки вузьким він стає (з боку коміра).
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_neckinset_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](wahid_neckinset_sample.svg "Вплив цієї опції на шаблон")
