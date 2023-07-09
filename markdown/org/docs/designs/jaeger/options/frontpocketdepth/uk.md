@@ -1,11 +1,11 @@
 - - -
-title: "Front pocket depth"
+назва: "Глибина передньої кишені"
 - - -
 
-![Front pocket depth](frontpocketdepth.svg)
+![Глибина передньої кишені](frontpocketdepth.svg)
 
-The depth of the front pockets, as a factor of the space between your waist and hem.
+Глибина передніх кишень, як фактор простору між талією і подолом.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_frontpocketdepth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_frontpocketdepth_sample.svg "Вплив цієї опції на шаблон")
