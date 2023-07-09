@@ -1,19 +1,19 @@
 - - -
-title: "Sleevecap ease"
+назва: "Легкість рукавів"
 - - -
 
-![Sleevecap ease](./sleevecapease.svg)
+![Зручність рукавів](./sleevecapease.svg)
 
-How much sleevecap ease do you want?
+Наскільки легким ви хочете бачити рукав?
 
-> #### What's the point?
+> #### У чому сенс?
 > 
-> The amount of sleevecap ease determines how the sleeves rolls from the shouder.
+> Легкість манжета визначає, як рукав скочується з плеча.
 > 
-> More ease makes the sleeve curl into the seam as you would expect from a coat. Less ease makes the sleeve lie flatter.
+> Для більшої легкості рукав загорнутий у шов, як ви очікуєте від пальта. Менша легкість робить рукав більш плоским.
 
-> The lighter your fabric, the less sleevecap ease you want.
+> Чим легша тканина, тим менший об'єм рукава вам потрібен.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlton_sleevecapease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](carlton_sleevecapease_sample.svg "Вплив цієї опції на шаблон")
