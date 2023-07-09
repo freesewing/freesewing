@@ -1,9 +1,9 @@
 - - -
-title: "Pocket fold-over"
+назва: "Кишеньковий розкладний"
 - - -
 
-Controls the amount of main fabric that's folded over at the top of the path pockets.
+Контролює кількість основної тканини, яка підгинається у верхній частині кишень-шлейфів.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_pocketfoldover_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_pocketfoldover_sample.svg "Вплив цієї опції на шаблон")
