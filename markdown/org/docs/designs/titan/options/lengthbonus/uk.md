@@ -1,18 +1,18 @@
 - - -
-title: "Length bonus"
+назва: "Бонус за довжину"
 - - -
 
-Controls the length of the entire trousers, which essentially means the length of the legs.
+Контролює довжину всіх штанів, що по суті означає довжину ніг.
 
 <Note>
 
-Setting this to zero will make the trousers the same length as the [waist to floor](/docs/measurements/waisttofloor) measurement.
+Якщо встановити цей параметр на нуль, довжина штанів буде дорівнювати довжині [талія до підлоги] (/docs/measurements/waisttofloor).
 
-This does not mean that the trousers will hit the floor, since due to the curves of the body and the way the fabric drapes,
-the trousers will need to be longer than this to actually hit the floor.
+Це не означає, що штани впадуть на підлогу, оскільки через вигини тіла і те, як драпірується тканина,
+штани повинні бути довшими, ніж вказано, щоб дійсно впасти на підлогу.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](titan_lengthbonus_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](titan_lengthbonus_sample.svg "Вплив цієї опції на шаблон")
