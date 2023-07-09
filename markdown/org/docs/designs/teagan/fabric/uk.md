@@ -1,9 +1,9 @@
 - - -
-title: "Teagan T-shirt: Fabric Options"
+назва: "Футболка Тіган: Варіанти тканин"
 - - -
 
-The Teagan T-shirt is designed as a close-fitting tee and is best suited to knit fabrics with some stretch, such as jersey. Cotton knits are often an easy-to-sew option for those new to knits. Rayon knits generally will have a bit more drape and are more slippery to sew.
+Футболка Teagan розроблена як облягаюча футболка і найкраще підходить для трикотажних тканин з деяким розтягуванням, таких як джерсі. Бавовняний трикотаж часто є простим у пошитті варіантом для тих, хто тільки починає займатися в'язанням. Трикотаж, як правило, має трохи більше драпірування і є більш слизьким для шиття.
 
 <Tip>
-If you're new to sewing, look for a knit with a few percent spandex for stretch and recovery (snapping back after stretching). Fabric weights can also help you make your choice. T-shirts are typically made in lightweight fabric. A weight of 130-200 grams per square meter (or 4-6 ounces per square yard) is likely to be about right.
+Якщо ви новачок у шитті, шукайте трикотаж з кількома відсотками спандексу для розтягування і відновлення (повернення назад після розтягування). Зробити вибір вам також допоможуть ваги тканини. Футболки зазвичай виготовляються з легкої тканини. Вага 130-200 грамів на квадратний метр (або 4-6 унцій на квадратний ярд), ймовірно, буде приблизно правильною.
 </Tip>
