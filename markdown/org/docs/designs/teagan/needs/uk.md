@@ -1,17 +1,17 @@
 - - -
-title: "Teagan T-shirt: What You Need"
+назва: "Футболка Тіган: Те, що тобі потрібно"
 - - -
 
-To make Teagan, you will need the following:
+Щоб зробити Тіган, вам знадобиться наступне:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 1 meter (1.1 yards) of a suitable fabric ([see Fabric options](/docs/patterns/teagan/fabric))
+- [Основні матеріали для шиття](/docs/sewing/basic-sewing-supplies)
+- Приблизно 1 метр (1,1 ярда) відповідної тканини ([див. варіанти тканини](/docs/patterns/teagan/fabric))
 
 <Note>
 
-##### A serger/overlock is nice, but optional
+##### Сергер/оверлок - це добре, але необов'язково
 
-<p>As with all knitwear and stretch fabrics, a serger/overlock will make your life easier.</p>
-<p>If you do not have one of those, don’t despair. You don’t really need it. All serged seams on the Teagan T-shirt can also be sewn with a narrow zigzag stitch (~2 mm wide) on a standard sewing machine.</p>
+<p>Як і у випадку з будь-яким трикотажем та еластичними тканинами, сергер/оверлок полегшить вам життя.</p>
+<p>Якщо у вас такого немає, не впадайте у відчай. Тобі це не потрібно. Всі шви на футболці Teagan також можна прошити вузькою зигзагоподібною строчкою (~2 мм завширшки) на звичайній швейній машині.</p>
 
 </Note>
