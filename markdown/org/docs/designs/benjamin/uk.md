@@ -1,5 +1,5 @@
 - - -
-title: "Benjamin bow tie"
+назва: "Метелик Бенджаміна"
 - - -
 
 <PatternDocs pattern='benjamin' />
