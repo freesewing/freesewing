@@ -1,11 +1,11 @@
 - - -
-title: "Shoulder seam length"
+назва: "Довжина плечового шва"
 - - -
 
-![The shoulder seam length option on Diana](./shoulderseamlength.svg)
+![Варіант довжини плечового шва на Діані](./shoulderseamlength.svg)
 
-This option determines how wide the neck opening is, by controllign the length of the shoulder seam.
+Цей параметр визначає, наскільки широким буде виріз горловини, шляхом регулювання довжини плечового шва.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_shoulderseamlength_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](diana_shoulderseamlength_sample.svg "Вплив цієї опції на шаблон")
