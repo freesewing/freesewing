@@ -1,658 +1,658 @@
 - - -
-title: "Simon shirt: Sewing Instructions"
+назва: "Сорочка-символ: Інструкція з пошиття"
 - - -
 
 <Tip>
 
-##### Follow the sew-along with Kelly and Julian
+##### Слідкуйте за шиттям разом з Келлі та Джуліаном
 
-Kelly Hogaboom and Julian Collins did a Simon(e) sew-along, and they've got videos of
-all the steps.
-If you're looking to make this pattern, Kelly and Julian can guide you start to finish.
+Келлі Хогабум та Джуліан Коллінз зробили шиття з Simon(e), і у них є відео з
+усіма етапами.
+Якщо ви хочете зробити цей візерунок, Келлі та Джуліан допоможуть вам від початку до кінця.
 
-You can find all the material's on Kelly's
-site: [#simonsayssew with kelly hogaboom & julian collins](https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
+Ви можете знайти всі матеріали на сайті Келлі
+: [#simonsayssew with kelly hogaboom & julian collins] (https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
 
 </Tip>
 
-### Step 1: Fuse interfacing
+### Крок 1: Взаємодія запобіжників
 
-![Fuse cuff interfacing](1a.png) ![Fuse collar interfacing](1b.png)
+![З'єднання манжети запобіжника](1a.png) ![Взаємозв'язок між запобіжними муфтами](1b.png)
 
-#### Press interfacing to cuffs
+#### З'єднання преса з манжетами
 
-To make two cuffs, you have cut out your cuff piece four times in fabric, and twice in interfacing.
+Щоб зробити дві манжети, ви викроїли деталь манжети чотири рази по тканині і двічі по міжфактурному шву.
 
-For each cuff, press the interfacing piece to the bad side of the cuff piece.
+Для кожної манжети притисніть сполучну деталь до виворітного боку манжети.
 
-> If the inside and outside of your cuff are the same fabric, it does not matter what cuff piece you press it to.
+> Якщо внутрішня і зовнішня сторони манжети зроблені з однакової тканини, не має значення, до якої частини манжети ви її притискаєте.
 > 
-> However, a popular style detail is to have a different fabric for the inside of the cuff. In this case, make sure to press the interfacing to the piece that you want to be the outside of your cuff.
+> Однак, популярною стильовою деталлю є інша тканина для внутрішньої частини манжета. У цьому випадку обов'язково притисніть інтерфейс до тієї частини манжети, яка має бути зовнішньою стороною манжети.
 
-> Depending on what cuff you have chosen, the shape of the cuff will be different.
+> Залежно від того, яку манжету ви обрали, форма манжети буде відрізнятися.
 > 
-> In the first illustration, you can see both a round barrel cuff and a French cuff as examples.
+> На першій ілюстрації ви можете побачити як круглу манжету, так і французьку манжету в якості прикладу.
 > 
-> Going forward, the round barrel cuff will be used in the illustrations, but the process is the same for the other cuffs.
+> Надалі на ілюстраціях буде використовуватися кругла манжета, але процес аналогічний для інших манжет.
 
-#### Press interfacing to collar, undercollar and collar stand
+#### З'єднання преса з нашийником, підшийником і стійкою нашийника
 
-To make your collar, you need to cut one undercollar, one collar, and two collar stands. All of this both in fabric and interfacing.
+Щоб пошити комір, вам потрібно викроїти один підкомір, один комір і дві стійки для коміра. І все це як у тканині, так і в інтер'єрі.
 
-For each piece, press the interfacing piece to the bad side.
+Для кожної деталі притисніть сполучну деталь до виворітного боку.
 
-### Step 2: Prepare the cuffs
+### Крок 2: Підготуйте манжети
 
-#### Sew cuff together
+#### Зшийте манжету разом
 
-![Sew the cuffs together](2a.png)
+![Зшийте манжети разом](2a.png)
 
-Place both parts of your cuff (one with interfacing, one without) together with the good sides, and sew them together at the standard seam allowance.
+Складіть обидві частини манжети (одну з прокладкою, іншу без неї) лицьовими боками до лицьового боку і зшийте їх зі стандартним припуском на шви.
 
-> **Ensure you**
+> **Переконайтеся, що ви**
 > 
-> - Do not sew together the side that we will attach to the sleeve later
-> - Stop at the seam allowance distance from the edge on the sleeve side
+> - Не зшивайте сторону, яку ми прикріпимо до рукава пізніше
+> - Зупиніться на відстані припуску на шов від краю з боку рукава
 
-#### Trim seam allowance
+#### Припуск на обшивку шва
 
-![Trim the seam allowance](2b.png)
+![Обріжте припуски на шви](2b.png)
 
-Before we flip your cuff over, we need to trim back the seam allowance to remove bulk.
+Перед тим, як вивернути манжету, нам потрібно обрізати припуски на шви, щоб прибрати об'єм.
 
-#### Press back seam allowance
+#### Запрасуйте припуски шва вшивання
 
-![Press back seam allowance](2c.png)
+![Запрасуйте припуски шва вшивання](2c.png)
 
-Fold back the seam allowances on each side of the cuff where the cuff attaches to the sleeve, and press them down.
+Відверніть припуски на шви з обох боків манжети, де манжета прикріплюється до рукава, і притисніть їх донизу.
 
-> If you sewed too far along the edge earlier, you will have to unpick a few stitches.
+> Якщо ви раніше прошили занадто далеко по краю, вам доведеться розпустити кілька стібків.
 
-#### Turn cuff around and press
+#### Поверніть манжету навколо і натисніть
 
-![Turn the cuff around and press](2d.png)
+![Поверніть манжету і натисніть](2d.png)
 
-Flip your cuff with the good sides out, and give it a good press.
+Переверніть манжету лицьовою стороною назовні і добре відіжміть.
 
-> When pressing your cuffs, make sure to roll the seam a bit to the backside of the cuff to guarantee that the inner fabric of the cuff is not visible.
+> Під час притискання манжети, переконайтеся, що шов трохи загорнутий на виворітну сторону манжети, щоб гарантувати, що внутрішня тканина манжети не буде видна.
 
-You can now put your cuffs aside, we'll attach them later.
+Тепер ви можете відкласти наручники в сторону, ми прикріпимо їх пізніше.
 
-### Step 3: Prepare the collar
+### Крок 3: Підготуйте нашийник
 
-#### Sew collar and undercollar together
+#### Зшийте комір і підкомір разом
 
-![Sew collar and undercollar together](3a.png)
+![Зшийте комір і підкомір разом](3a.png)
 
-Place both collar parts with the _good sides together_, and sew them together at the standard seam allowance.
+Складіть обидві деталі коміра лицьовими боками _разом_і зшийте їх зі стандартними припусками на шви.
 
-#### Trim seam allowance
+#### Припуск на обшивку шва
 
-![Trim the seam allowance](3b.png)
+![Обріжте припуски на шви](3b.png)
 
-Before we flip your collar over, we need to trim back the seam allowance to remove bulk.
+Перед тим, як вивернути комір, потрібно обрізати припуски на шви, щоб прибрати об'єм.
 
-#### Turn collar and press
+#### Поверніть комір і притисніть
 
-![Turn the collar and press](3c.png)
+![Поверніть комір і натисніть](3c.png)
 
-Flip your collar with the good sides out, get those tips as pointy as possible, and give it a good press.
+Переверніть комір лицьовими сторонами назовні, зробіть кінчики якомога гострішими і гарненько притисніть.
 
-> When pressing your collar, remember that the undercollar is a bit more narrow.
+> Притискаючи комір, пам'ятайте, що під коміром він трохи вужчий.
 > 
-> When you align the non-sewn sides, this will cause the seam to roll towards the backside of the collar to guarantee that the inner fabric of the collar is not visible.
+> Коли ви вирівнюєте незшиті сторони, це призведе до того, що шов загорнеться на зворотний бік коміра, щоб гарантувати, що внутрішня тканина коміра не буде видна.
 
-#### Top-stitch collar
+#### Комір з верхнім швом
 
-![Top-stitch the collar](3d.png)
+![Застрочіть комір у верхній частині](3d.png)
 
-Top-stitch along the edge of the collar. This locks down the seam allowance and makes for a crisp look.
+По краю коміра виконати верхню строчку. Це фіксує припуски на шви і надає виробу чіткого вигляду.
 
-> How far you top-stitch from the edge is a style choice. It's often a bit less than the standard seam allowance. Have a look at some existing shirts to get an idea.
+> Відстань, на якій ви будете прошивати верхній стібок від краю, залежить від вашого стилю. Часто це трохи менше, ніж стандартний припуск на шов. Погляньте на деякі існуючі сорочки, щоб отримати уявлення.
 
-### Step 4: Join collar and collar stand
+### Крок 4: З'єднайте нашийник і стійку нашийника
 
-#### Place collar between collar stands and baste in place
+#### Помістіть нашийник між стійками для нашийників і закріпіть його на місці
 
-![Place collar between collar stands and baste in place](4a.png)
+![Помістіть нашийник між стійками для нашийників і закріпіть на місці](4a.png)
 
-Mark the middle point of your collar and your collar stands with a pin. The middle point of each collar stand is actually slightly off-center since one end is longer than the other. Instead, find the middle point between the two notches.
+Позначте шпилькою середню точку коміра і стійки коміра. Середня точка кожної стійки для коміра насправді трохи зміщена від центру, оскільки один кінець довший за інший. Замість цього знайдіть середню точку між двома надрізами.
 
-First place a collar stand with the good side up, then your collar with the undercollar facing up (and the non-sewn side at the top), and finally the second collar stand with the good side down.
+Спочатку покладіть підставку для коміра лицьовою стороною догори, потім ваш комір нижньою частиною догори (і незшитою стороною догори), і, нарешті, другу підставку для коміра лицьовою стороною донизу.
 
-Your collar should sit between your two collar stands, and the middles (where you placed your pin) should be aligned.
+Ваш комір повинен знаходитися між двома стійками, а середина (де ви вставили шпильку) повинна бути вирівняна.
 
-> The way things look will depend a little bit on your collar choices, but in general your collar is going to bend downward, and your collar stand will bend upward.
+> Те, як це буде виглядати, буде трохи залежати від вашого комірця, але загалом ваш комір буде згинатися донизу, а стійка коміра - догори.
 > 
-> To align this all, we are going to baste this together, rather than pin it. Your collar is an important part of your shirt, so it's worth basting this.
+> Щоб вирівняти все це, ми збираємося склеїти це разом, а не приколоти. Комір - важлива частина сорочки, тому варто приділити йому увагу.
 
-First, replace the pins marking the middle with a pin that pins all parts together.
+Спочатку замініть шпильки, що позначають середину, на шпильки, які скріплюють усі частини разом.
 
-Now, start basting from this pin and work your way to the corner of the collar, making sure to align both edges of the fabric.
+Тепер почніть приметувати від цієї шпильки і рухайтеся до кута коміра, обов'язково вирівнюючи обидва краї тканини.
 
-When you reach the corner of your collar, keep going and baste the end of both collar stands together.
+Коли ви дійдете до кута коміра, продовжуйте і зшийте кінці обох стійок коміра разом.
 
-When you've done one side, start from your pin in the middle again and do the other side. When you're done basting, you can take out the pin.
+Коли ви закінчите один бік, почніть знову від шпильки посередині і зробіть другий бік. Коли ви закінчите змащувати, можна вийняти шпильку.
 
-#### Sew your collar to the collar stands
+#### Пришийте комір до стійок коміра
 
-![Sew your collar to the collar stands](4b.png)
+![Пришийте комір до стійок коміра](4b.png)
 
-Sew along the edge of your collar stand, respecting the standard seam allowance.
+Зшийте по краю стійки коміра, дотримуючись стандартних припусків на шви.
 
-> Make sure to stop 2cm before the edge (twice the standard seam allowance) as we'll be folding the seam allowance over in the next step, and we need to leave the collar stands separated enough to slide the shirt in between them later.
+> Не забудьте зупинитися за 2 см до краю (вдвічі більше стандартного припуску на шов), оскільки на наступному кроці ми будемо підгинати припуск на шов, і нам потрібно залишити стійки коміра досить далеко один від одного, щоб згодом вставити сорочку між ними.
 
-#### Fold back and press the collar stand seam allowance
+#### Відверніть і припрасуйте припуск шва стійки коміра
 
-Fold back the seam allowance of your collar stand on the non-sewn side and press it down.
+Відверніть припуск на комір-стійку на незашитий бік і притисніть його.
 
-> In the center part, pressing down the seam allowance will be easy. But towards the tips of your collar, doing so will be tricky without pressing folds in your collar.
+> У центральній частині припуск на шов буде легко притиснути. Але в напрямку до кінчиків коміра це буде складно зробити, не притискаючи складки на комірі.
 > 
-> Press it as best as you can without making folds in your collar. We'll press this again after flipping the collar out.
+> Притисніть його якомога сильніше, не створюючи складок на комірі. Після того, як вивернемо комір, знову притискаємо його.
 
-#### Turn collar stand and press
+#### Поверніть стійку коміра і натисніть
 
-![Turn collar and press](4c.png)
+![Поверніть комір і притисніть](4c.png)
 
-Flip your collar stand with the good sides out, and give it a good press. Make sure to keep the seam allowance on the collar stand folded inwards.
+Переверніть підставку для коміра лицьовими сторонами назовні і добре притисніть. Переконайтеся, що припуски на шви на стійці коміра складені всередину.
 
-You can now put your collar aside, we'll attach it later.
+Тепер можете відкласти нашийник в сторону, ми прикріпимо його пізніше.
 
-### Step 5: Optional: Sew in your label
+### Крок 5: Необов'язково: Пришийте етикетку
 
-![Sew in your label](5.png)
+![Пришийте етикетку](5.png)
 
-Our next step is to attach the yoke. But the yoke is a great place to put your label. So if you'd like to do that, we might as well start with that.
+Наш наступний крок - прикріпити ярмо. Але ярмо - це чудове місце для того, щоб наклеїти свою етикетку. Тож якщо ви хочете це зробити, ми можемо почати з цього.
 
-Pick one yoke, and you can sew your label on it in the center (on the good side).
+Виберіть одне ярмо, і ви можете пришити етикетку до нього по центру (з виворітного боку).
 
-### Step 6: Join the yokes to the back
+### Крок 6: Приєднайте кокетки до спинки
 
-![Join the yokes to the back](6a.png) ![Press the yoke](6a.png)
+![Приєднайте хомути до задньої частини](6a.png) ![Натисніть на ярмо](6a.png)
 
-Place one yoke with the good side up. On top of that, place your back with the good side up, aligning the seam where it needs to be attached to the yoke.
+Покладіть одне ярмо лицьовою стороною догори. Зверху покладіть спину виворітною стороною догори, вирівнявши шов там, де він повинен бути прикріплений до кокетки.
 
-Finally, place your second yoke on top of the back, but with the good side down.
+Нарешті, покладіть друге ярмо зверху на спину, але лицьовою стороною вниз.
 
-Your back should now be sandwiched between the good sides of your two yokes.
+Тепер ваша спина повинна бути затиснута між хорошими сторонами двох ярмів.
 
-If that's the case, sew them in place along the back/yoke seam, making sure to respect the seam allowance.
+Якщо це так, пришийте їх на місце вздовж шва спинки/кокетки, дотримуючись припусків на шви.
 
-> If you added a label in step 1, make sure to put the yoke with your label at the bad side of your back.
+> Якщо ви додали етикетку на кроці 1, переконайтеся, що ярмо з етикеткою знаходиться на виворітній стороні спини.
 
-When you're done, don't forget to give it a good press to make the seam lie flat.
+Коли закінчите, не забудьте добре притиснути, щоб шов був рівним.
 
-### Step 7: Edge-stitch the yoke
+### Крок 7: Прострочіть кокетку по краях
 
-![Edge-stitch the yoke](7.png)
+![Прострочіть кокетку по краю](7.png)
 
-With your yokes attached to the back, we are going to edge-stitch along the seam we just made, on the yoke side.
+Прикріпивши кокетки до спинки, прострочіть їх уздовж шва, який ми щойно виконали, з боку кокетки.
 
-> Fold the inner yoke out of the way. Our edge stitching will catch the outer yoke, back and all the seam allowances, but not the inner yoke.
+> Відкиньте внутрішнє ярмо вбік. Крайня строчка прошиває зовнішню кокетку, спинку і всі припуски швів, але не внутрішню кокетку.
 
-Just sew right next to the seam joining the outer yoke to the back.
+Просто пришийте поруч зі швом, що з'єднує зовнішню кокетку зі спинкою.
 
-> Edge-stitching is like top-stitching, but right next to the seam
+> Краєобметочна строчка схожа на верхню строчку, але безпосередньо біля шва
 
-### Step 8: Close the back darts
+### Крок 8: Закриваємо задні виточки
 
-![Fold the back with good sides together to close the darts](8a.png) ![Sew the darts](8b.png) ![Press darts towards the side seams](8c.png)
+![Складіть спинку лицьовими боками разом, щоб закрити виточки](8a.png) ![Зшийте виточки](8b.png) ![Притисніть виточки до бокових швів](8c.png)
 
-> Depending on your measurements, your pattern might not have back darts at all. In that case, proceed to the next step.
+> Залежно від ваших мірок, викрійка може взагалі не мати задніх виточок. У такому випадку переходьте до наступного кроку.
 
-Your pattern may or may not have back darts. If it has them, you should close them now.
+Ваша викрійка може мати або не мати задніх виточок. Якщо вони є, вам слід закрити їх зараз.
 
-Place your back down with the good side up, and fold it back from the side seam so the fold runs from the top to the bottom of your dart.
+Покладіть спинку лицьовим боком догори і зігніть її з бокового шва так, щоб згин проходив зверху вниз від виточки.
 
-Do the same for the other dart, so that both sides are folded back.
+Зробіть те ж саме з іншою виточкою, щоб обидва боки були загнуті назад.
 
-Feel free to gently press in this crease, it will help you to neatly sew the darts.
+Не соромтеся акуратно притиснути цю складку, це допоможе вам акуратно зшити виточки.
 
-Sew across the line marking the dart to close the darts. Be careful to make sure the top and bottom of your darts are precisely where they need to be. If one dart sits higher than the other, it will look bad.
+Зшийте по лінії, що позначає виточку, щоб закрити виточку. Будьте уважні, щоб переконатися, що верхня і нижня частини виточок знаходяться саме там, де вони повинні бути. Якщо одна виточка сидить вище за іншу, це буде виглядати погано.
 
-When you're done, don't forget to give it a good press. Press the extra fabric of the dart towards the side seams.
+Коли закінчите, не забудьте гарненько віджати. Притисніть зайву тканину виточки до бокових швів.
 
-### Step 9: Prepare the button placket
+### Крок 9: Підготуйте накладку для ґудзиків
 
-> If you have chosen a grown-on placket, you can skip the first two sub-steps and skip ahead to [Fold the button placket](#fold-the-button-placket).
+> Якщо ви вибрали обтачку для дорослих, ви можете пропустити перші два підкроки і перейти до [Складіть обтачку для ґудзиків](#fold-the-button-placket).
 
-#### Sew on the button placket
+#### Пришийте планку з ґудзиками
 
-![Sew on the button placket](9a.png)
+![Пришийте планку з ґудзиками](9a.png)
 
-If you have chosen a separate button placket, sew it to the Front Right piece.
+Якщо ви вибрали окрему застібку для ґудзиків, пришийте її до передньої правої деталі.
 
-Place the Front Right (piece 1) down with the good side up, and place the Button Placket (piece 1b) on top of it with the good side down, making sure to align the seam.
+Покладіть передню праву частину (деталь 1) вниз лицьовим боком догори, а зверху накладіть на неї накладку з ґудзиками (деталь 1b) лицьовим боком донизу, вирівнявши шов.
 
-Sew it in place with the default seam allowance.
+Пришийте його на місце з припуском на шов за замовчуванням.
 
-#### Press seam allowance to placket side
+#### Припуски на пришивання шва до бічної сторони планки
 
-Place your front with the good side down, and press the seam allowance to the button placket side.
+Покладіть перед на лицьовий бік лицьовим боком донизу і припрасуйте припуски на шви до боку планки з ґудзиками.
 
-#### Fold the button placket
+#### Складіть накладку для ґудзиків
 
-![Fold the button placket](9b.png)
+![Складіть накладку для ґудзиків](9b.png)
 
-Now, fold over the button placket on the first fold line, and press this fold in place.
+Тепер перегніть планку з ґудзиками на першій лінії згину і притисніть цей згин на місці.
 
-Then, fold the placket over again, making sure to have the fabric extend just beyond the seam that joins your placket to the front.
+Потім знову складіть кокетку, переконавшись, що тканина виходить трохи за межі шва, який з'єднує кокетку з передньою частиною.
 
-When you're happy, press the folded placket.
+Коли ви задоволені, натисніть на складену пластину.
 
-#### Sew down the folded placket
+#### Пришийте складену кокетку
 
-![Sew down the folded placket](9c.png)
+![Пришийте складену кокетку](9c.png)
 
-> This is the classic approach. If you have chosen the seamless Button placket style, you don't have to do this.
+> Це класичний підхід. Якщо ви обрали безшовну застібку з ґудзиками, вам не потрібно цього робити.
 > 
-> Rather than sew the placket down, simply leave it folded. The folds will be secured in place when we attach the buttons later.
+> Замість того, щоб пришивати кокетку, просто залиште її складеною. Складки будуть закріплені на місці, коли ми пізніше прикріпимо ґудзики.
 
-From the good side of your shirt, sew down the folded placket by stitching in the ditch.
+З виворітного боку сорочки пришийте складену кокетку, проклавши стібок у кюветі.
 
-To do so, sew exactly on top of your earlier seam. Since you folded the fabric of your placket a bit past this seam, it will get caught at the back, fixing your folded placket in place, and locking the seam allowance inside.
+Для цього прошийте точно поверх попереднього шва. Оскільки ви склали тканину планки трохи за цим швом, вона зачепиться ззаду, фіксуючи складену планку на місці і закриваючи припуски шва всередині.
 
-### Step 10: Prepare the buttonhole placket
+### Крок 10: Підготуйте планку для петель
 
-> If you have chosen a grown-on placket, you can skip the first two sub-steps and skip ahead to Understanding a classic buttonhole placket.
+> Якщо ви вибрали петлю для дорослих, ви можете пропустити перші два підкроки і перейти до розділу "Розуміння класичної петлі для ґудзиків".
 
-#### Sew on the buttonhole placket
+#### Пришийте кокетку з петлями для ґудзиків
 
-![Sew on the buttonhole placket](10a.png)
+![Пришийте кокетку з петлями для ґудзиків](10a.png)
 
-If you have chosen a separate buttonhole placket, sew it to the Front Left piece.
+Якщо ви вибрали окрему планку з петлями, пришийте її до передньої лівої деталі.
 
-Place the Front Left (piece 2) down with the good side up, and place the Buttonhole Placket (piece 2b) on top of it with the good side down, making sure to align the seam.
+Покладіть ліву передню частину (деталь 2) вниз лицьовим боком догори, а зверху накладіть на неї обшивку петлі (деталь 2b) лицьовим боком донизу, вирівнявши шов.
 
-Sew it in place with the default seam allowance.
+Пришийте його на місце з припуском на шов за замовчуванням.
 
-When you're done, don't forget to give it a good press. Press the seam allowance towards the placket side.
+Коли закінчите, не забудьте гарненько віджати. Припуски шва притисніть до виворітного боку планки.
 
-#### Press seam allowance to the placket side
+#### Припуски шва притиснути до боку планки
 
-Place your front with the good side down, and press the seam allowance to the buttonhole placket side.
+Накладіть перед на лицьовий бік лицьовим боком донизу і припрасуйте припуски на петлі планки до лицьового боку.
 
-#### Understanding a classic buttonhole placket
+#### Розуміння класичної петлі для гудзиків
 
-> If you have chosen a seamless placket, you should follow the steps of the button placket, as the construction is identical.
+> Якщо ви обрали безшовну застібку, вам слід виконати кроки, як для ґудзикової застібки, оскільки конструкція ідентична.
 > 
-> The steps below are for a classic buttonhole placket.
+> Нижче наведені кроки для класичної застібки на ґудзики.
 
-![Understanding a classic buttonhole placket](10b.png)
+![Розуміння класичної петлі для гудзиків](10b.png)
 
-Your placket has a bunch of lines on it, so let's first clarify what they are:
+На вашій бейджику є кілька рядків, тож давайте спочатку розберемося, що це за рядки:
 
-- The buttonhole line has long dashes with buttonholes on it. It marks where the buttonholes should go
-- The two fold lines have long dashes and sit at an equal distance right and left of the buttonhole line
-- The two+two sew lines are dotted lines that sit at an equal distance of each fold line
+- На лінії петель нанесені довгі штрихи з петлями для ґудзиків. Він позначає, де повинні проходити петлі для ґудзиків
+- Дві лінії згину позначені довгими рисками і розташовані на однаковій відстані праворуч і ліворуч від лінії петлі
+- Лінії зшивання "два+два" - це пунктирні лінії, які розташовані на однаковій відстані від кожної лінії згину
 
-#### Trim back seam allowance
+#### Припуск на обшивку заднього шва
 
-> If you have chosen a grown-on placket, this does not apply.
+> Якщо ви обрали дорослу накладку, це не стосується.
 
-![Trim back seam allowance](10c.png)
+![Припуск на обшивку заднього шва](10c.png)
 
-The seam allowance of where you sewed your buttonhole placket to your front should fit inside your folded placket.
+Припуск на шов у місці, де ви пришили кокетку з петлями до переду, повинен входити всередину складеної кокетки.
 
-For that, trim back the seam allowance so that it doesn't extend beyond the first fold line on the placket.
+Для цього обріжте припуск на шов так, щоб він не виходив за першу лінію згину на кокетці.
 
-#### Fold the buttonhole placket
+#### Складіть кокетку для петель
 
-![Fold the buttonhole placket](10d.png) ![Fold the buttonhole placket again](10e.png)
+![Складіть кокетку для петель](10d.png) ![Знову складіть кокетку для петель](10e.png)
 
-Fold the placket on the first fold line. Press the fold in place.
+Складіть кокетку по першій лінії згину. Притисніть згин на місце.
 
-Then, fold the part you just folded again, this time on the second fold line. Press this fold in place too.
+Потім знову складіть частину, яку ви щойно склали, цього разу по другій лінії згину. Притисніть цю складку також на місце.
 
-> When your placket is folded and pressed, place a few pins along the length of your placket to keep things from shifting around
+> Коли ви склали і притиснули сумку, розмістіть кілька шпильок по всій довжині сумки, щоб вона не зміщувалася.
 
-#### Sew the buttonhole placket
+#### Зшийте кокетку з петлями
 
-![Sew on the first line](10f.png) ![Sew on the second line](10g.png)
+![Прошийте першу строчку](10f.png) ![Прошийте другий рядок](10g.png)
 
-Sew on the first sew line, closest to the edge.
+Пришийте на першій строчці, найближчій до краю.
 
-Then, flip your shirt over so that the good side is up, and your placket is up too. Then sew on the second sew line.
+Потім переверніть сорочку так, щоб лицьова сторона була зверху, а кокетка теж була зверху. Потім прошийте другу строчку.
 
-> These two lines of top-stitching will always be visible, so make sure to keep it neat
+> Ці дві лінії верхньої строчки завжди будуть помітні, тому переконайтеся, що вона акуратна
 
-#### Press the buttonhole placket
+#### Притисніть планку петельки
 
-![Press the buttonhole placket](10h.png)
+![Притисніть планку петельки](10h.png)
 
-Congratulations, you made a classic buttonhole placket.
+Вітаємо, ви зробили класичну петличку для гудзиків.
 
-Now press that baby. You know you want to.
+Тепер натисни на цю крихітку. Ти ж знаєш, що хочеш.
 
-### Step 11: Close the shoulder seams
+### Крок 11: Зашийте плечові шви
 
-> **Let's stuff a burrito**
+> **Нафаршируємо буріто.**
 > 
-> We are going to close the shoulder seams with a technique that is commonly known as the **burrito method**.
+> Ми закриємо плечові шви за допомогою техніки, яка відома під назвою **метод буріто**.
 > 
-> If you are familiar with the burrito method, you already know what to do. If not, read on for a clever way to neatly close your shirt's shoulder seams while locking all the unfinished edges out of sight.
+> Якщо ви знайомі з методом буріто, то вже знаєте, що робити. Якщо ні, то читайте далі, як акуратно закрити плечові шви сорочки, при цьому приховавши всі незавершені краї від сторонніх очей.
 
-#### Pin the fronts to the outside yoke
+#### Приколіть передню частину до зовнішньої кокетки
 
-![Pin the fronts to the outside yoke](11a.png) ![Pin the fronts to the outside yoke](11b.png)
+![Приколіть передні частини до зовнішньої кокетки](11a.png) ![Приколіть передні частини до зовнішньої кокетки](11b.png)
 
-Place your back down with the good side up, but be careful to fold the inner yoke downward (as illustrated by the dotted line.
+Покладіть спину на підлогу доброю стороною догори, але будьте обережні, щоб скласти внутрішнє ярмо донизу (як показано пунктиром).
 
-Place your fronts on your back, with the good sides down. Pin fronts to the yoke at the shoulder seam, good sides together.
+Покладіть передні частини на спину лицьовими сторонами донизу. Переди приколіть до кокетки в плечовому шві лицьовими боками разом.
 
-#### Roll, roll, roll your shirt, pin down and sew your seam
+#### Скрутіть, скрутіть, скрутіть сорочку, приколіть і зшийте шов
 
-![Roll your shift up between the yokes](11c.png)
+![Прокрутіть свою зміну між ярмами](11c.png)
 
-Roll up your back and fronts starting at the hem. Roll them into a neat sausage upwards until you can see the entire turned down yoke.
+Підверніть спинку і перед, починаючи з подолу. Скрутіть їх в акуратну ковбаску догори, поки не буде видно весь відкинутий ярмо.
 
-Now, you can flip the inner yoke over your rolled sausage to align the shoulder seams with the other yoke and fronts.
+Тепер ви можете перевернути внутрішнє плече на згорнуту ковбаску, щоб вирівняти плечові шви з іншим плечем і передньою частиною.
 
-Pin them in place, and then sew the shoulder seams, making sure to keep your sausage (or burrito stuffing) out of the way so it doesn't get caught in the seam.
+Закріпіть їх на місці, а потім зшийте плечові шви, переконавшись, що сосиска (або начинка для буріто) не потрапила в шов.
 
-![Match the notches](11e.png)
+![Зіставте насічки](11e.png)
 
-> Made sure to align the actual seam line. Due to the uneven angles at the neck opening, the fabric edge is often longer on one side than on the other.
+> Переконайтеся, що вирівняли фактичну лінію шва. Через нерівні кути біля горловини край тканини часто довший з одного боку, ніж з іншого.
 > 
-> However, the seamlines are the same length, so make sure to match them carefully using the notches.
+> Однак лінії швів мають однакову довжину, тому ретельно сумістіть їх за допомогою надсічок.
 
-#### Flip it inside out through the neck opening
+#### Виверніть його навиворіт через отвір для горловини
 
-When you've sewn both shoulder seams, reach in through the neck opening, and pull out the back and front parts to inside-out your burrito.
+Коли ви зшили обидва плечові шви, простягніть руку через отвір для горловини і витягніть задню і передню частини буріто навиворіт.
 
-#### Press the shoulder seams
+#### Запрасуйте плечові шви
 
-![Press the shoulder seams](11d.png)
+![Запрасуйте плечові шви](11d.png)
 
-You did all this work, so now make sure you make it look super sharp by giving it a good press. Make sure that the seam allowance between your yokes lies nice and flat for that.
+Ви виконали всю цю роботу, тож тепер переконайтеся, що вона виглядає надзвичайно чітко, добре відпресувавши її. Для цього переконайтеся, що припуск на шов між кокетками лежить рівно і рівно.
 
-### Step 12: Edge-stitch the shoulder seams of the yoke
+### Крок 12: Зшийте плечові шви кокетки
 
-![Edge-stitch the shoulder seams of the yoke](12.png)
+![Зшийте плечові шви кокетки](12.png)
 
-Just as we've edge-stitched the bottom seam of the yoke in Step 3, we're going to edge-stitch the yoke at the shoulder seams too.
+Так само, як ми прострочили нижній шов кокетки в кроці 3, ми також прострочимо кокетку в плечових швах.
 
-Since you've just pressed these shoulder seams, everything should lie nice and flat, and you just need to run a stitch right next to the seam.
+Оскільки ви щойно припрасували плечові шви, все повинно лежати гарно і рівно, і вам потрібно лише прокласти строчку поруч зі швом.
 
-> Make sure to edge-stitch on the yoke part, where you will catch all the seam allowance, and not on the front part.
+> Переконайтеся, що ви прокладаєте крайову строчку на частині кокетки, де ви захопите всі припуски шва, а не на передній частині.
 
-### Step 13: Construct the sleeve placket
+### Крок 13: Побудуйте обшивку рукава
 
-#### Sew in the cuff guard
+#### Вшийте захист манжети
 
-![Sew in the cuff guard](13a.png) ![Press the cuff guard](13b.png) ![Edge-stitch the cuff guard in place](13c.png)
+![Вшийте захист манжети](13a.png) ![Натисніть на захисний кожух манжети](13b.png) ![Пришийте захисну накладку манжети на місце](13c.png)
 
-- Place your sleeve with the good side down, and your cuff guard on top, also with the good side down.
-- Align the edge of your cuff guard (aka sleeve placket underlap) with the cut in your sleeve, on the side shortest to the side seam.
-- Now sew along the fold line marked on the cuff guard, closest to the edge.
+- Покладіть рукав лицьовою стороною донизу, а зверху - манжету, також лицьовою стороною донизу.
+- Вирівняйте край манжета (він же - підкладка під планку рукава) зі зрізом рукава з боку, найкоротшого до бокового шва.
+- Тепер прошийте по лінії згину, позначеній на манжеті, ближче до краю.
 
-> If during cutting out your pattern pieces you had not cut into your sleeve on the line where the sleeve placket needs to be put in, you need to do that first.
+> Якщо під час викроювання викрійки ви не розрізали рукав по лінії, де має бути вшита планка рукава, вам потрібно зробити це в першу чергу.
 
-- Fold over the cuff guard, and press down this seam.
-- Turn your sleeve over with the good side up, and bring your cuff guard through the slit in your sleeve.
-- Fold it twice on the lines so that the unfinished seam is tucked inwards.
-- Make your folds so that the upper fold sits ever so slightly further than the seam you already made.
-- Press everything down, and then edge-stitch the cuff guard in place.
+- Загніть манжету і притисніть цей шов.
+- Виверніть рукав виворітною стороною догори і просуньте манжету крізь проріз у рукаві.
+- Складіть двічі по лініях так, щоб незавершений шов був заправлений всередину.
+- Складіть складки так, щоб верхня складка сиділа трохи далі, ніж шов, який ви вже зробили.
+- Притисніть все, а потім пришийте захисну накладку манжети на місце.
 
-#### Fold and press the placket
+#### Складіть і притисніть пластину
 
-![Fold and press the placket](13d.png)
+![Складіть і притисніть пластину](13d.png)
 
-Origami time! We're going to fold the sleeve placket overlap using the marked fold lines as our guide. This will be a lot easier if you press between each fold.
+Час орігамі! Складаємо внахлест обшивку рукава, використовуючи розмічені лінії згину як орієнтир. Це буде набагато простіше, якщо натискати між кожним згином.
 
-- First, fold the outer edges of the placket inwards.
-- Next, fold the entire thing in half.
-- Then, fold down both tips into a nice pointy shape.
-- Now give it a final good press.
+- Спочатку складіть зовнішні краї пакета всередину.
+- Далі складаємо все це навпіл.
+- Потім складіть обидва кінчики в красиву загострену форму.
+- Тепер дайте йому остаточне гарне пресування.
 
-#### Pin placket in place
+#### Штифт встановлений на місце
 
-![Slide placket in position](13e.png) ![Pin placket in place](13f.png)
+![Вставте планку в потрібне положення](13e.png) ![Штифт встановлений на місце](13f.png)
 
-Place your sleeve down with the good side up. The guard we have sewn in earlier sits against the other unfinished fabric edge of where you cut into your sleeve.
+Покладіть рукав лицьовою стороною догори. Захист, який ми вшили раніше, прилягає до іншого незакінченого краю тканини в тому місці, де ви врізали рукав.
 
-Place your placket around that edge, one side above it, one underneath.
+Покладіть платівку навколо цього краю, один бік над ним, один під ним.
 
-You need to slide the placket onto your sleeve until the middle of it (the tip) aligns with the cut in your sleeve.
+Вам потрібно надягнути планку на рукав так, щоб її середина (кінчик) збіглася з розрізом на рукаві.
 
-The idea is that the placket closes up the unfinished edge, but also covers the guard of the other edge.
+Ідея полягає в тому, що планка закриває незавершений край, але також закриває захист іншого краю.
 
-When you've got it where you want it, pin the placket down.
+Коли ви встановите її там, де хочете, прикріпіть планку.
 
-#### Sew the sleeve placket
+#### Зшийте обшивку рукава
 
-![Sew the sleeve placket](13g.png)
+![Зшийте обшивку рукава](13g.png)
 
-Start at the edge of the sleeve (the bottom of the sleeve placket) and edge-stitch along the edge upwards.
+Почніть з краю рукава (нижня частина планки рукава) і прострочіть вздовж краю вгору.
 
-Go around the tip, and come down again on the other side (the fold side) until you have passed the point where your guard ends.
+Обійдіть кінчик і знову спускайтеся з іншого боку (з боку згину), поки не пройдете точку, де закінчується ваш захист.
 
-Then, sew horizontally to the other side of the placket to finish.
+Потім зшийте горизонтально з іншою стороною планки, щоб закінчити.
 
-> I have included an extra illustration here that only shows the outline of the placket. You can see that the end of the guard is caught in our stitching of the placket, and is thus neatly tucked away.
+> Я включив сюди додаткову ілюстрацію, яка показує лише контур бляхи. Ви можете бачити, що кінець захисної стрічки зачепився за нашу строчку, і таким чином акуратно захований всередину.
 
-### Step 14: Set in sleeves
+### Крок 14: Вставте рукава
 
-#### Remember, this is a flat-felled seam
+#### Пам'ятайте, що це плоский шов
 
-![Aligning the fabric for a flat-felled seam](14c.png)
+![Вирівнювання тканини для плоского шва](14c.png)
 
 > **Careful with the extra seam allowance for the flat-felled seam** There is extra seam allowance on the sleeve to allow for the creation of the flat-felled seam.
 > 
-> As such, be careful to not align the fabric edge, but align the seam so that the sleeve sits out 1cm.
+> Таким чином, будьте обережні, щоб не вирівняти край тканини, а вирівняти шов так, щоб рукав виступав на 1 см.
 
-#### Pin sleeve in place
+#### Втулка штифта встановлена на місце
 
-![Pin sleeve in place](14a.png)
+![Втулка штифта встановлена на місце](14a.png)
 
-Spread your shirt open so that both fronts and back lie flat with their good sides up.
+Розправте сорочку так, щоб передня і задня частини лежали рівними лицьовими сторонами догори.
 
-Now place your sleeve on top with the good side down, matching the top of the sleeve with the shoulder seam.
+Тепер покладіть рукав зверху лицьовим боком донизу, сумістивши верх рукава з плечовим швом.
 
-> Be careful, your sleeve is not symmetric, so be sure to have the back notch (⊗) and cuff guard on the back side, and the front notch (⊙) on the front side.
+> Будьте уважні, рукав не симетричний, тому переконайтеся, що задній зріз (⊗) і манжета знаходяться на тильній стороні, а передній зріз (⊙) - на лицьовій.
 > 
-> Also note that the back notch (⊗) on the sleeve does not have a corresponding notch on the back of the shirt. That's because it should match up with the seam where your yoke joins the back.
+> Також зверніть увагу, що виріз на рукаві (⊗) не має відповідного вирізу на спині сорочки. Це тому, що він повинен збігатися зі швом, де ваше ярмо з'єднується зі спинкою.
 
-You now need to pin the sleeve to the armhole. To do so, make sure to:
+Тепер потрібно приколоти рукав до пройми. Для цього переконайтеся, що:
 
-- Match the start and end of the sleevehead to the start and end of the armhole
-- Match the notches on the sleevehead to the notches on the back and fronts
-- Distribute the sleevecap ease between the notches as shown
+- Поєднайте початок і кінець горловини рукава з початком і кінцем пройми
+- Зіставте надсічки на головці рукава з надсічками на спинці та передній частині
+- Розподіліть легкість манжети між надрізами, як показано на малюнку
 
-#### Distribute sleevecap ease
+#### Легкість розподілу ковпачка рукава
 
-![Distribute the sleevecap ease](14b.png)
+![Розподіліть легкість рукавного ковпачка](14b.png)
 
-The default sleevecap ease for this pattern is 0.5cm. If you have sleevecap ease, you need to distribute that extra length evenly between the notches as shown.
+За замовчуванням для цієї викрійки ширина втачного рукава становить 0,5 см. Якщо у вас втачний рукав, вам потрібно рівномірно розподілити зайву довжину між надсічками, як показано на малюнку.
 
-> If you are unsure what sleevecap ease is, have a look at the [documentation for the sleevecap ease pattern option](/docs/patterns/simon/options/sleevecapease).
+> Якщо ви не знаєте, що таке "полегшення шапки рукава", перегляньте документацію [для опції "полегшення шапки рукава"](/docs/patterns/simon/options/sleevecapease).
 
-#### Sew sleeve in armhole
+#### Вшийте рукав в пройму
 
-When you've got your sleeve neatly pinned in your armhole, sew it in place. Be careful to avoid any pleats in the part between the notches where you need to ease in the sleevecap ease.
+Коли ви акуратно вставили рукав в пройму, пришийте його на місце. Будьте обережні, щоб уникнути складок на ділянці між надсічками, де вам потрібно полегшити втачку рукава.
 
-> Needless to say, but I'll say it anyway: Repeat this step for the other sleeve.
+> Це зайве, але я все одно скажу: Повторіть цей крок для іншого рукава.
 
-### Step 15: Flat-fell armhole seam
+### Крок 15: Шов пласкої пройми
 
-#### Press seam allowance to one side
+#### Припуск на шов припрасувати на один бік
 
-![Press seam allowance to once side](15a.png)
+![Припуски шва притиснути до одного боку](15a.png)
 
-Lay down your freshly sewn sleeve seam with the good side down
+Покладіть щойно зшитий шов рукава лицьовим боком донизу
 
-We are going to press the seam allowance to one side. To do so, identify the seam allowance that is wider (for the flat-felled seam).
+Припуски шва притискаємо до одного боку. Для цього визначте припуск на шов, який є ширшим (для шва в розріз).
 
-The longer seam allowance needs to lie on top of the shorter (standard seam allowance).
+Довший припуск на шов повинен лежати поверх коротшого (стандартний припуск на шов).
 
-Once you have verified that, press down the seam allowance.
+Переконавшись у цьому, притисніть припуск на шов.
 
-#### Fold under extra seam allowance
+#### Складіть під додатковим припуском на шов
 
-![Fold under extra seam allowance](15b.png)
+![Складіть під додатковим припуском на шов](15b.png)
 
-Now, fold the extra seam allowance for the flat-felled seam under the standard seam allowance.
+Тепер загніть додатковий припуск для шва впідгин під стандартний припуск шва.
 
-You can use pins to hold this in place, but it's simpler to just press it.
+Ви можете використовувати шпильки, щоб утримувати його на місці, але простіше просто натиснути на нього.
 
-> This will be relatively easy on the straight parts of the seam, but a bit more tricky at the curved sections. Take your time, and if needed you can cut into the extra seam allowance to allow it to flare open, or bend.
+> Це буде відносно легко на прямих ділянках шва, але трохи складніше на вигнутих ділянках. Не поспішайте, і якщо потрібно, ви можете обрізати додатковий припуск на шов, щоб він розгорнувся або зігнувся.
 
-#### Sew the flat-felled seam
+#### Зшийте плоский шов упідгин
 
-Now, from the bad side of the fabric, sew the seam allowance down just at the edge where it folds under the other seam allowance.
+Тепер з виворітного боку тканини зашийте припуск на шов вниз просто на тому краю, де він заходить під інший припуск на шов.
 
-Here it is important to keep an even distance from the seam of your sleeve. If you have a felling foot for your sewing machine, it will help you with that. But if not, just be careful.
+Тут важливо дотримуватися рівної відстані від шва рукава. Якщо у вас є лапка для швейної машини, вона допоможе вам у цьому. Але якщо ні, просто будьте обережні.
 
-> It is more important to keep and even distance from the sleeve seam than to sew exactly at the edge of the fold. Ideally, the fold sits at an even distance anyhow, but if it doesn't, just make sure to sew parallel to the sleeve seam. Even if that means you deviate a bit from the folded edge.
+> Важливіше дотримуватися рівномірної відстані від шва рукава, ніж прошивати точно по краю згину. В ідеалі, складка має бути розташована на рівній відстані, але якщо це не так, просто прострочіть її паралельно шву рукава. Навіть якщо це означає, що ви трохи відхилитеся від складеного краю.
 
-#### Press the flat-felled seam
+#### Притисніть плоский фальцьований шов
 
-When it's all done, press the flat-felled seam from the good side so it lies nice and flat.
+Коли все буде готово, притисніть плоский шов з виворітного боку, щоб він лежав рівно і гладко.
 
-### Step 16: Close the side/sleeve seams
+### Крок 16: Зашийте бокові шви/шви рукавів
 
-![Close the side/sleeve seams](16a.png) ![Remember, this is a flat-felled seam](16b.png)
+![Зашийте бокові шви/шви рукавів](16a.png) ![Пам'ятайте, що це плоский шов](16b.png)
 
-Place your shirt with the good sides together, and sew the side and sleeve seams to close the shirt.
+Покладіть сорочку виворітними сторонами разом і зшийте бокові та рукавні шви, щоб закрити сорочку.
 
-> There is extra seam allowance on the sleeve and front sides to allow for the creation of the flat-felled seam. As such, be careful to not align the fabric edge, but align the seam so that the extra seam allowance sits out 1cm.
+> На рукаві та передньому боці є додаткові припуски на шви для створення плоского шва. Тому будьте обережні, щоб не вирівняти край тканини, а вирівняти шов так, щоб додатковий припуск виходив назовні на 1 см.
 
-### Step 17: Flat-fell the side/sleeve seams
+### Крок 17: Запрасуйте бокові шви/шви рукавів
 
-#### Press seam allowance to one side
+#### Припуск на шов припрасувати на один бік
 
-![Press the seam allowance to one side](15a.png)
+![Притисніть припуск на шов в один бік](15a.png)
 
-We are going to press the seam allowance to one side. To do so, identify the seam allowance that is wider (for the flat-felled seam).
+Припуски шва притискаємо до одного боку. Для цього визначте припуск на шов, який є ширшим (для шва в розріз).
 
-The longer seam allowance needs to lie on top of the shorter (standard seam allowance).
+Довший припуск на шов повинен лежати поверх коротшого (стандартний припуск на шов).
 
-Once you have verified that, press down the seam allowance.
+Переконавшись у цьому, притисніть припуск на шов.
 
-#### Fold under extra seam allowance
+#### Складіть під додатковим припуском на шов
 
-![Fold under extra seam allowance](15b.png)
+![Складіть під додатковим припуском на шов](15b.png)
 
-Now, fold the extra seam allowance for the flat-felled seam under the standard seam allowance.
+Тепер загніть додатковий припуск для шва впідгин під стандартний припуск шва.
 
-You can use pins to hold this in place, but it's simpler to just press it.
+Ви можете використовувати шпильки, щоб утримувати його на місці, але простіше просто натиснути на нього.
 
-> This will be relatively easy on the straight parts of the seam, but a bit more tricky at the curved sections. Take your time, and if needed you can cut into the extra seam allowance to allow it to flare open, or bend.
+> Це буде відносно легко на прямих ділянках шва, але трохи складніше на вигнутих ділянках. Не поспішайте, і якщо потрібно, ви можете обрізати додатковий припуск на шов, щоб він розгорнувся або зігнувся.
 
-#### Sew the flat-felled seam
+#### Зшийте плоский шов упідгин
 
-Now, from the bad side of the fabric, sew the seam allowance down just at the edge where it folds under the other seam allowance.
+Тепер, з виворітного боку тканини, зашийте припуск на шов вниз просто по краю, де він заходить під інший припуск на шов.
 
-Important here is to keep an even distance from the seam of your sleeve. If you have a felling foot for your sewing machine, it will help you with that. But if not, just be careful.
+Тут важливо дотримуватися рівної відстані від шва рукава. Якщо у вас є лапка для швейної машини, вона допоможе вам у цьому. Але якщо ні, просто будьте обережні.
 
-> It is more important to keep an even distance from the sleeve seam than to sew exactly at the edge of the fold. Ideally, the fold sits at an even distance anyhow, but if it doesn't, just make sure to sew parallel to the sleeve seam. Even if that means you deviate a bit from the folded edge.
+> Важливіше дотримуватися рівної відстані від шва рукава, ніж прошивати точно по краю згину. В ідеалі, складка має бути розташована на рівній відстані, але якщо це не так, просто прострочіть її паралельно шву рукава. Навіть якщо це означає, що ви трохи відхилитеся від складеного краю.
 
-#### Press the flat-felled seam
+#### Притисніть плоский фальцьований шов
 
-When it's all done, press the flat-felled seam from the good side so it lies nice and flat.
+Коли все буде готово, притисніть плоский шов з виворітного боку, щоб він лежав рівно і гладко.
 
-### Step 18: Attach cuffs to sleeves
+### Крок 18: Прикріпіть манжети до рукавів
 
-#### Pin cuff in place
+#### Штифтована манжета на місці
 
-![Pin cuff in place](18a.png)
+![Штифтована манжета на місці](18a.png)
 
-You need to insert the sleeve between the two layers of your cuff, making sure that the good side of the fabric sits against the side of your cuff that has the interfacing applied to it.
+Вам потрібно вставити рукав між двома шарами манжети, переконавшись, що виворітна сторона тканини прилягає до тієї сторони манжети, на яку нанесений інтерфейс.
 
-You will need to pin this in place, because depending on how long your sleeve placket is, it might be hard or even impossible to get this to lie flat.
+Вам потрібно буде закріпити її на місці, тому що залежно від довжини вашого рукава, може бути важко або навіть неможливо зробити так, щоб вона лежала рівно.
 
-Also note that your sleeve edge will be longer than your cuff (how much longer depends on the sleeve drape). You need to make one or a few folds in your sleeve to accommodate for this.
+Також зверніть увагу, що край рукава буде довшим за манжету (наскільки довшим - залежить від драпірування рукава). Вам потрібно зробити одну або кілька складок на рукаві, щоб пристосувати їх для цього.
 
-> Your pattern contains helplines on the sleeve to help you place the folds.
+> Ваша викрійка містить допоміжні лінії на рукаві, які допоможуть вам розмістити складки.
 
-> Take your time to pin everything carefully in place. We are going to edge-stitch this later, so it's important that the front and back of your cuff align nicely.
+> Не поспішайте, акуратно прикріпіть все на місце. Пізніше ми прострочимо її по краю, тому важливо, щоб передня і задня частини манжети були добре вирівняні.
 
-#### Edge-stitch cuffs to sleeves
+#### Манжети для рукавів з крайовим швом
 
-![Edge-stitch cuffs to sleeves](18b.png)
+![Манжети для рукавів з крайовим швом](18b.png)
 
-Once everything is pinned in place, edge stitch along the edge of your cuff to attach it to your sleeve.
+Після того, як все закріплено, прострочіть край манжети по краю рукава, щоб прикріпити її до рукава.
 
-It's important to catch both the outer and inner layer of your cuff on the edge.
+Важливо, щоб зовнішній і внутрішній шари манжети були зачеплені за край.
 
-> Make sure to edge-stitch from the outer layer side (the good side of your sleeve) and keep it parallel with your cuff edge.
+> Обов'язково прострочіть край з боку зовнішнього шару (виворітного боку рукава) і тримайте його паралельно краю манжети.
 
-When you're done, give your cuffs a good press.
+Закінчивши, добре стисніть наручники.
 
-#### Top-stitch the cuffs
+#### Пришийте манжети зверху
 
-![Top-stitch the cuffs](18c.png)
+![Пришийте манжети зверху](18c.png)
 
-> Make sure to press your cuffs before you do this.
+> Перед цим не забудьте натиснути на наручники.
 
-Top-stitch around your cuff at a distance from the edge that is a bit less than your seam allowance. Go all the way around your cuff.
+Прострочіть манжету на відстані від краю, трохи меншій, ніж припуск на шов. Пройдися по всій довжині манжети.
 
-### Step 19: Attach the collar
+### Крок 19: Прикріпіть нашийник
 
-#### Baste collar in place
+#### Закріпіть нашийник на місці
 
-![Baste collar in place](19a.png)
+![Закріпіть нашийник на місці](19a.png)
 
-This is an important seam, so we are going to baste this in place to make sure it sits exactly right before we sew it.
+Це важливий шов, тому перед тим, як пришивати, ми намастимо його, щоб переконатися, що він сидить точно так, як треба.
 
-Start at the center back, and place the seam allowance of your back part between your two collar stands. Work your way around one side, and then do the other.
+Почніть від центру спинки і вкладіть припуск на шов спинки між двома стійками коміра. Пройдіть навколо однієї сторони, а потім перейдіть на іншу.
 
-Make sure to respect the standard seam allowance and - important - avoid any wrinkles.
+Переконайтеся, що ви дотримуєтеся стандартних припусків на шви і - що важливо - уникаєте складок.
 
-> While your collar stand is relatively straight, we are going to sew it to what is essentially a hole in your shirt.
+> Поки ваш комір стоїть відносно прямо, ми пришиємо його до того, що по суті є діркою у вашій сорочці.
 > 
-> That's a bit tricky, so take extra care at those parts that are most curved: where the back joins the fronts.
+> Це трохи складно, тому будьте особливо обережні на найбільш вигнутих ділянках: там, де спинка з'єднується з передніми частинами.
 
-#### Edge-stitch collar in place
+#### Комір з краєвим швом на місці
 
-![Edge-stitch collar in place](19b.png) ![Edge-stitch collar in place](19c.png)
+![Комір з краєвим швом на місці](19b.png) ![Комір з краєвим швом на місці](19c.png)
 
-When you're happy with how you've basted your collar in place, it's time to sew that thing down.
+Коли ви задоволені тим, як закріпили комір, настав час пришивати його.
 
-We're going to start at the center-back and sew all the way around the collar stand.
+Ми почнемо з центральної частини спинки і прошиватимемо по всьому периметру стійки коміра.
 
-#### Sew along the collar edge
+#### Зшийте по краю коміра
 
-![Sew along the collar edge](19d.png)
+![Зшийте по краю коміра](19d.png)
 
-To give more body to your collar, and firmly secure it in place we're going to sew along the top edge of the collar stand.
+Щоб надати коміру більшої об'ємності і міцно зафіксувати його на місці, ми прошиємо по верхньому краю стійки коміра.
 
-Sew about half the seam allowance from your earlier edge-stitching. Make sure to stop a few cm before the end of the collar.
+Зшийте приблизно половину припуску від попереднього кромочного шва. Обов'язково зупиніться за кілька сантиметрів до кінця коміра.
 
-> You need to stop a few cm before the end of the collar (note: the end of the collar, not the end of the collar stand) so that this seam is entirely covered when the collar is folded down.
+> Вам потрібно зупинитися за кілька см до кінця коміра (зверніть увагу: кінця коміра, а не кінця стійки коміра), щоб цей шов був повністю закритий, коли комір буде відкинутий вниз.
 
-#### Press the collar
+#### Натисніть на нашийник
 
-![Press the collar](19e.png)
+![Натисніть на нашийник](19e.png)
 
-Now that your collar is attached, give it a good press.
+Тепер, коли нашийник прикріплений, добре притисніть його.
 
-### Step 20: Hem your shirt
+### Крок 20: Підшийте сорочку
 
-![Fold over and press](20a.png) ![FOld over again, and press again](20b.png) ![Sew the hem](20c.png)
+![Переверніть і натисніть](20a.png) ![Знову виберіть і натисніть ще раз](20b.png) ![Зшийте поділ](20c.png)
 
-Time to finish the hem (that's the part you tuck in your trousers).
+Час закінчити підгин (це та частина, яку ви заправляєте в штани).
 
-Fold up half of the hem allowance and press down. Then, fold up again and press again.
+Підверніть половину припуску на підгин і притисніть. Потім знову складіть і натисніть ще раз.
 
-Now, sew along the upper edge to finish the hem.
+Тепер прошийте по верхньому краю, щоб закінчити підгин.
 
-### Step 21: Create buttonholes
+### Крок 21: Створіть петлі для ґудзиків
 
-If you haven't done so initially, mark all the places you should have buttonholes.
+Якщо ви не зробили цього спочатку, позначте всі місця, де повинні бути петлі.
 
-They sit along the front closure and at your cuffs.
+Вони сидять уздовж передньої застібки і на манжетах.
 
-When you've marked them, make buttonholes there.
+Коли ви їх розмітили, зробіть там дірочки для ґудзиків.
 
-### Step 22: Attach buttons
+### Крок 22: Прикріпіть кнопки
 
-Pin your shirt closed to transfer the place of the buttonholes to the button sides.
+Застібніть сорочку, щоб перенести місця петельок на бокові сторони ґудзиків.
 
-When you've marked where buttons should go, sew them on.
+Коли ви позначили, де мають бути ґудзики, пришийте їх.
 
-> Rather than mark the location of the buttons from the pattern, I prefer to transfer the location of the created buttonholes.
+> Замість того, щоб позначати розташування ґудзиків з викрійки, я вважаю за краще перенести розташування створених петельок.
 > 
-> This way, if a buttonhole sits a little bit out of place, the button will simply follow it.
+> Таким чином, якщо петля сидить трохи не на своєму місці, ґудзик просто слідуватиме за нею.
 
-![That's it, you're done](finished.gif)
+![Все, ти закінчив.](finished.gif)
