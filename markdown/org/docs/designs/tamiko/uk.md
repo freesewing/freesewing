@@ -1,5 +1,5 @@
 - - -
-title: "Tamiko top"
+назва: "Таміко топ"
 - - -
 
 <PatternDocs pattern='tamiko' />
