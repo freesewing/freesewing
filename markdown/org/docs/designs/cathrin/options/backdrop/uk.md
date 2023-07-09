@@ -1,11 +1,11 @@
 - - -
-title: "Back drop"
+Назва: "Back drop"
 - - -
 
-![The back drop option on Cathrin](./backdrop.svg)
+![Опція зворотного падіння на Катрін](./backdrop.svg)
 
-This option determines how far the center back will be lowered at the bottom of your corset.
+Цей параметр визначає, наскільки глибоко буде опущена центральна частина спинки внизу корсета.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_backdrop_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](cathrin_backdrop_sample.svg "Вплив цієї опції на шаблон")
