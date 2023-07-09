@@ -1,11 +1,11 @@
 - - -
-title: "Seperate buttonhole placket"
+назва: "Роздільна планка з петлями"
 - - -
 
-![Seperate buttonhole placket](seperatebuttonholeplacket.svg)
+![Окрема планка для петель](seperatebuttonholeplacket.svg)
 
-Whether or not you want the buttonhole placket to be a seperate pattern part.
+Незалежно від того, чи хочете ви, щоб планка петлі була окремою деталлю викрійки, чи ні.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_seperatebuttonholeplacket_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_seperatebuttonholeplacket_sample.svg "Вплив цієї опції на шаблон")
