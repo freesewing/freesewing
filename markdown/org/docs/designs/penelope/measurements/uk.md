@@ -1,5 +1,5 @@
 - - -
-title: "Penelope pencil skirt: Required Measurements"
+"Спідниця-олівець Пелагея": "Спідниця-олівець Пенелопа: Необхідні мірки"
 - - -
 
 <PatternMeasurements pattern='penelope' />
