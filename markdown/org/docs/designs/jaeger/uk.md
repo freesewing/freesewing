@@ -1,5 +1,5 @@
 - - -
-title: "Jaeger jacket"
+назва: "Єгерська куртка"
 - - -
 
 <PatternDocs pattern='jaeger' />
