@@ -1,6 +1,6 @@
 {
   "basting": {
-    "term": "bâtir",
+    "term": "bâti",
     "description": "Voir <a href='/docs/sewing/basting/'>Bâtir</a> dans la <a href='/docs/sewing'>documentation de Couture</a>"
   },
   "coverlock": {
@@ -44,7 +44,7 @@
     "description": "Voir <a href='/docs/sewing/hemming/'>Ourlet</a> dans la <a href='/docs/sewing'>documentation de Couture</a>"
   },
   "jersey": {
-    "term": "jersey",
+    "term": "Jersey",
     "description": "Voir <a href='/docs/sewing/jersey/'>Jersey</a> dans la <a href='/docs/sewing'>documentation de Couture</a>"
   },
   "knitBinding": {
@@ -68,7 +68,7 @@
     "description": "Voir <a href='/docs/sewing/seam-allowance/'>Marge de couture</a> dans la <a href='/docs/sewing'>documentation de Couture</a>"
   },
   "serger": {
-    "term": "surjeteuse",
+    "term": "sergeur",
     "description": "Voir <a href='/docs/sewing/serger/'>Surgeteuse</a> dans la <a href='/docs/sewing'>documentation de Couture</a>"
   },
   "slipstitch": {
@@ -95,12 +95,12 @@
     "term": "freesewing",
     "description": "<b>FreeSewing</b> est une plate-forme open source pour des patrons de couture sur-mesure"
   },
-  "patrons": {
-    "term": "mécènes",
-    "description": "Les mécènes soutiennent financièrement Freesewing. Ce sont des partisans fidèles qui assurent un avenir durable à freesewing.org, à notre code, à nos patrons et à notre communauté."
+  "patternOptions": {
+    "term": "options du patron",
+    "description": "Les <b>options de patron</b> vous permettent de personnaliser le design du patron"
   },
   "msf": {
     "term": "MSF",
-    "description": "Médecins Sans Frontières/Doctors Sans Frontières - Voir <a href='https://msf.org/'>msf.org</a>"
+    "description": "Médecins Sans Frontières/Doctors Sans Frontières - Voir <a href='https://msf.org/'>msf.org</a>"
   }
 }
