@@ -1,28 +1,28 @@
 ---
-title: How we use your subscriber data
+title: Як ми використовуємо ваші абонентські дані
 order: 20
 ---
 
-##### What personal data do we store?
+##### Які персональні дані ми зберігаємо?
 
-- Your E-mail address
+- Ваша адреса електронної пошти
 
-##### Why do we need it?
+##### Навіщо він нам потрібен?
 
-- To send you our newsletter
+- Щоб надсилати вам нашу розсилку
 
-##### How long do we keep it?
+##### Як довго ми його зберігаємо?
 
-- As long as you remain subscribed
+- Поки ви залишаєтеся підписником
 
-##### Do we share it?
+##### Чи ділимося ми нею?
 
-- No, never
+- Ні, ніколи.
 
 <Note> 
 
-This data is stored for anybody who subscribes to our newsletter.
+Ці дані зберігаються для всіх, хто підписався на нашу розсилку.
 
-For people with an account on the website who enable the newsletter subscription in their account settings, we store no additional personal data as we already have their email on file in their [account data][1].
+Для людей, які мають обліковий запис на веб-сайті та ввімкнули підписку на розсилку новин у налаштуваннях свого облікового запису, ми не зберігаємо додаткових персональних даних, оскільки ми вже маємо їхню електронну пошту у файлі [дані облікового запису][1].
 
 </Note>
