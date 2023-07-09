@@ -1,73 +1,73 @@
 - - -
-title: "Simon shirt: Fabric Options"
+назва: "Сорочка "Саймон": Варіанти тканин"
 - - -
 
-Any fabric shop that is worth your business should have a shirting section. You can just walk in, ask where you can find the shirting, and pick out something you like.
+Будь-який магазин тканин, який вартий вашого бізнесу, повинен мати відділ сорочок. Ви можете просто зайти, запитати, де можна знайти сорочки, і вибрати те, що вам подобається.
 
-Most of what you'll find there will be cotton, or a blend of cotton. But you're free to go for another fiber too.
+Більшість з того, що ви знайдете там, буде бавовною або сумішшю бавовни. Але ви також можете вибрати інше волокно.
 
-When shopping online, it can be harder to get a good idea of what you're looking at. In the absence of touch, it's good to know a thing or two about the different weaves of fabrics. The weave is how the fabric was woven, and this determines not only how the fabric looks, but also how it will feel and drape.
+Коли ви робите покупки в Інтернеті, буває складно отримати повне уявлення про те, на що ви дивитеся. За відсутності дотику корисно знати дещо про різні переплетення тканин. Переплетення - це те, як тканина була сплетена, і це визначає не тільки те, як тканина виглядає, але й те, як вона буде на дотик і драпіруватися.
 
-Without wanting to start an encyclopedia of fabrics here, here are some terms you may come across when shopping for shirt fabric online.
+Не бажаючи розпочинати тут енциклопедію тканин, ось деякі терміни, з якими ви можете зіткнутися, купуючи тканину для сорочок в Інтернеті.
 
-## Broadcloth or poplin
+## Бавовняна тканина або поплін
 
-Broadcloth is the way to go for that white shirt for your job interview or wedding.
+Суконна тканина - ідеальний варіант для білої сорочки на співбесіду чи весілля.
 
-Broadcloth (frequently referred to as poplin) is a simple weave and results in a flat plain fabric that will give you that crisp formal look.
+Бавовняна тканина (часто звана попліном) - це просте плетіння, яке дає плоску однотонну тканину, що надає вам чіткого офіційного вигляду.
 
-It's typically a lighter fabric and in light colours can tend to be a bit transparent.
+Зазвичай це легша тканина, і в світлих кольорах вона може бути трохи прозорою.
 
-## Twill
+## Саржа.
 
-You can recognize twill fabrics by their characteristic diagonal texture from the weave.
+Ви можете розпізнати саржеву тканину за характерною діагональною текстурою переплетення.
 
-It drapes more easily than broadcloth, wrinkles less and when it does, is easier to iron.
+Вона легше драпірується, ніж тканина, менше мнеться, а коли мнеться, її легше прасувати.
 
-The flip side of the coin is that it won't give you that starchy crisp vibe that broadcloth can.
+Зворотний бік медалі полягає в тому, що вона не дасть вам того крохмального хрусткого відчуття, яке може дати тканина.
 
-## Pinpoint
+## Точніше.
 
-Pinpoint is the work horse of shirt fabrics. Typically they produce a heavier and thicker . and thus more durable . fabric.
+Пінпойнт - робоча конячка сорочкових тканин. Зазвичай вони випускають більш важкі і товсті. і, таким чином, більш довговічні . тканина.
 
-Pinpoint is a less formal look than broadcloth or twill, but more formal than oxford. This, combined with its durability, make it a great choice for your everyday work shirt.
+Пінпоінт - це менш формальний вид, ніж шотландка або саржа, але більш формальний, ніж оксфорд. Це, в поєднанні з довговічністю, робить його чудовим вибором для повсякденної робочої сорочки.
 
-## Chambray
+## Шамбре.
 
-Chambray is simple weave, similar to broadcloth. It is different because it uses a much heavier yarn, and typically different colours for the weft and width.
+Шамбрей - це просте плетіння, схоже на полотно. Він відрізняється тим, що використовує набагато важчу пряжу і, як правило, різні кольори для утоку і ширини.
 
-The result is a much more textured fabric, both in touch as appearance where the different colours create a densely speckled two-coloured fabric.
+Результат - набагато більш фактурна тканина, як на дотик, так і на вигляд, де різні кольори створюють густо поцятковану двоколірну тканину.
 
-## Denim
+## Джинсовий
 
-Denim needs no introduction. It's the stuff your jeans are made from.
+Денім не потребує представлення. Це матеріал, з якого зроблені ваші джинси.
 
-Technically a twill fabric (look for the signature diagonal texture) denim is produced in much lighter weights than the ones your jeans are made from. Those are the ones you can use for a shirt.
+Технічно саржева тканина (шукайте характерну діагональну текстуру) виробляється набагато легшою, ніж та, з якої зроблені ваші джинси. Це ті, які ви можете використовувати для сорочки.
 
-## Flannel
+## Фланель
 
-From Curt Cobain to the hipsters at your local coffee shop, they all swear by flannel shirts.
+Від Курта Кобейна до хіпстерів у місцевій кав'ярні - всі вони обожнюють фланелеві сорочки.
 
-Warmer than any other option here, flannel comes typically in brushed cotton though you might find it with added wool for extra warmth.
+Фланель тепліша за будь-який інший варіант, вона зазвичай виготовляється з ворсистої бавовни, хоча ви можете знайти її з додаванням вовни для додаткового тепла.
 
-## Linen
+## Білизна
 
-Linen wrinkles like a mofo, but you can't beat it for safari looks.
+Лляна тканина зморщується, але для сафарі-образу вона неперевершена.
 
-The reason you associate it with adventures in tropical climates is that linen breaths like nothing else and will keep you coolest of all.
+Причина, чому ви асоціюєте його з пригодами в тропічному кліматі, полягає в тому, що льон дихає, як ніщо інше, і зберігає прохолоду краще за все.
 
-## Thread count
+## Номер різьби
 
-A higher thread count means a smoother (and more expensive) fabric.
+Більша кількість ниток означає більш гладку (і дорожчу) тканину.
 
-Thread count is expressed in numbers, like 60s, 80s, 100s and so on to 300s and more.
+Кількість ниток виражається в числах, наприклад, 60, 80, 100 і так далі до 300 і більше.
 
-There's a catch though. Numbers above 100s are typically made by twisting two yarns together. Like a 160s thread count means that two 80s yarns were twisted together for the thread.
+Але є один нюанс. Числа вище 100 зазвичай виготовляються шляхом переплетення двох ниток разом. Наприклад, номер нитки 160 означає, що дві нитки 80 були скручені разом для отримання нитки.
 
-## Single ply or Two ply
+## Одношаровий або двошаровий
 
-If a thread is made up of two yarns (see thread count above) we call that Two ply.
+Якщо нитка складається з двох ниток (див. кількість ниток вище), ми називаємо її двошаровою.
 
-If the yarn is made up of a single thread, it's call Single ply.
+Якщо пряжа складається з однієї нитки, вона називається одношаровою.
 
-You can expect two ply to last longer, and be more expensive.
+Ви можете очікувати, що двошарове покриття прослужить довше і коштуватиме дорожче.
