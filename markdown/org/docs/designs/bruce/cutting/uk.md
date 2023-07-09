@@ -1,20 +1,20 @@
 - - -
-title: "Bruce boxer briefs: Cutting Instructions"
+назва: "Труси-боксери "Брюс": Інструкція з розкрою"
 - - -
 
-Bruce consists of a back, and two sides, insets and fronts.
+Брюки складаються зі спинки та двох бокових частин - вставки та передньої частини.
 
-- **Main fabric**
-  - Cut **1 back** on the fold
-  - Cut **2 fronts**
-  - Cut **2 insets**
-  - Cut **2 sides**
+- **Основна тканина**
+  - Відріжте **1 назад** на згині
+  - Вирізати **2 фронти**
+  - Виріз **2 вставки**
+  - Вирізати **2 сторони**
 
 <Warning>
 
-###### Caveats
+###### Застереження
 
-- **back**: Extra hem allowance at the leg
-- **front**: Cut this **twice**
+- **спинка**: Додатковий припуск на підгин на нозі
+- **переду**: Розріжте це **двічі**.
 
 </Warning>
