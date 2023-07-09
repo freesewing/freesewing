@@ -1,8 +1,8 @@
 ---
-title: "Leg Length"
+title: "Longueur des jambes"
 ---
 
-The length of the legs can be adjusted.
+La longueur des pieds est réglable.
 
 ## Effet de cette option sur le modèle
 
