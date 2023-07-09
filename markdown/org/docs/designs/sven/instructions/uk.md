@@ -1,58 +1,58 @@
 - - -
-title: "Sven sweatshirt: Sewing Instructions"
+назва: "Світшот Sven: Інструкція з пошиття"
 - - -
 
-### Step 1: Close shoulder seams
+### Крок 1: Зшийте плечові шви
 
-- Place the back and front on top of each other with the good sides toghether.
-- Align the shoulder seam, and sew/serge it at the standard seam allowance.
-- Repeat for the other shoulder seam.
+- Покладіть спинку і передню частину один на одного лицьовими сторонами разом.
+- Вирівняйте плечовий шов і застрочіть/застрочіть його зі стандартним припуском на шов.
+- Повторіть для другого плечового шва.
 
-### Step 2: Set in the sleeves
+### Крок 2: Вставте рукава
 
-- Place your now attached front and back with the good side up.
-- Place a sleeve on top if it with the good side down
-- Align the top of the sleevecap with the shoulder seam, your sleeve should lie over your front/back extending to the other shoulder seam
-- Pin sleeve in place along the entire armhole. There's a bit of sleevecap ease, which means that the sleevehead is slightly longer than the armhole. Ease this in the top part of the sleeve head while pinning.
-- Sew/serge your pinned sleeve in place
-- Repeat for the other sleeve
+- Покладіть тепер прикріплені передню і задню частини лицьовою стороною догори.
+- Покладіть рукав зверху, якщо він виворітною стороною вниз
+- Вирівняйте верхню частину рукава з плечовим швом, рукав повинен лежати на переді/спині, продовжуючись до іншого плечового шва.
+- Приколіть рукав по всій проймі. Тут трохи полегшений рукав, що означає, що горловина рукава трохи довша за пройму. Під час приколювання послабте його у верхній частині головки рукава.
+- Пришийте/пришийте приколотий рукав на місце
+- Повторіть для іншого рукава
 
-### Step 3: Finish the neck binding
+### Крок 3: Закінчуємо обв'язку горловини
 
-- Measure the length of the neck opening
-- Cut a piece of ribbing that is this length and 6cm/2.5inch wide
-- Fold the ribbing double with the good side outward, and pin it to your neckopening starting from the back
-- The cut off side of your ribbing should align with the edge of your neck opening, while the ribbing extends over your sweatshirt
-- Pin the ribbing in place around the neck opening, starting at the back and stretching it gently as you do so
-- First, join the ribbing at center back, with good sides together. As you've been stretching the ribbing as you were pinning it, it will be too long. Simply cut that away
-- Then, sew the ribbing to the neck opening
+- Виміряйте довжину горловини
+- Відріжте шматок ребра ось такої довжини і шириною 6 см / 2,5 дюйма
+- Складіть ребра вдвічі лицьовим боком назовні і приколіть до вирізу горловини, починаючи ззаду
+- Відрізана сторона ребер повинна збігатися з краєм горловини, а ребра повинні виходити за межі світшота.
+- Закріпіть ребра на місці навколо горловини, починаючи ззаду і обережно розтягуючи їх при цьому
+- Спочатку з'єднайте ребра по центру спинки, при цьому виворітні сторони повинні бути разом. Оскільки ви розтягували ребра, коли приколювали їх, вони будуть занадто довгими. Просто відріжте це
+- Потім пришийте ребра до горловини горловини
 
-### Step 4: Close the side seams and sleeves
+### Крок 4: Зашийте бокові шви та рукави
 
-- Fold Sven double at the shoulder seams with good sides together
-- Align the side seams and sleeves and pin them together
-- Now, sew the side seam and continue sewing to close the arms all the way to the cuff
-- Repeat on the other side
+- Складіть Sven вдвічі по плечових швах лицьовими боками разом
+- Вирівняйте бокові шви та рукави і приколіть їх разом
+- Тепер зшийте боковий шов і продовжуйте шити, щоб закрити руки до самого манжета
+- Повторіть з іншого боку
 
-### Step 5: Attach the cuffs
+### Крок 5: Прикріпіть манжети
 
-- Measure the width of the sleeve at the cuff
-- Cut a piece of ribbing that is (twice this length - 2cm/1inch) and 7cm/3inch wide
-- Fold the ribbing double along the longest side, and sew together the edge so you have a continous ring
-- Turn your Sven inside-out
-- Fold the ribbing ring with the good side outwards, and slip the folded side into your inside/out Sven sleeve
-- Align the cut off side of the ribbing with the edge of the sleeve and pin it in place. The ribbing is a bit shorter, so stretch it a bit while pinning to work this into the sleeve.
-- Now, sew/serge the ribbing to the sleeve
-- Repeat for the other cuff
+- Виміряйте ширину рукава на манжеті
+- Відріжте шматок ребра довжиною (вдвічі більше цієї довжини - 2 см / 1 дюйм) і шириною 7 см / 3 дюйми
+- Складіть ребристість вдвічі вздовж найдовшої сторони і зшийте краї так, щоб вийшло суцільне кільце
+- Виверніть свій Sven навиворіт
+- Складіть ребристе кільце лицьовим боком назовні і вставте складений бік у внутрішній/зовнішній рукав Sven
+- Вирівняйте відрізану сторону ребра з краєм рукава і приколіть його на місце. Ребра трохи коротші, тому трохи розтягніть їх під час приколювання, щоб вшити в рукав.
+- Тепер пришийте/пришийте ребра до рукава
+- Повторіть для іншої манжети
 
-### Step 6: Attach the hem
+### Крок 6: Прикріпіть кант
 
-- Do for the hem as your did for the cuffs
-- Measure the width of Sven at the hem
-- Cut a piece of ribbing that 1.9 times this length and 7cm/3inch wide
-- You may need to attach different pieces if your ribbing fabric isn't wide enough
-- Fold the ribbing double along the longest side, and sew together the edge so you have a continous ring
-- Turn your Sven inside-out
-- Fold the ribbing ring with the good side outwards, and slip the folded side into your inside/out Sven body
-- Align the cut off side of the ribbing with the edge of the body and pin it in place. The ribbing is a bit shorter, so stretch it a bit while pinning to work this into the body.
-- Now, sew/serge the ribbing to the body
+- Зробіть з подолом те саме, що ви робили з манжетами
+- Виміряйте ширину Sven на подолі
+- Відріжте шматок ребра довжиною в 1,9 рази більше і шириною 7 см / 3 дюйми
+- Можливо, вам доведеться прикріпити різні шматки, якщо ваша ребриста тканина недостатньо широка
+- Складіть ребристість вдвічі вздовж найдовшої сторони і зшийте краї так, щоб вийшло суцільне кільце
+- Виверніть свій Sven навиворіт
+- Складіть ребристе кільце лицьовою стороною назовні і вставте складений бік у внутрішню/зовнішню частину корпусу Sven
+- Вирівняйте відрізану сторону ребра з краєм корпусу і приколіть його на місце. Ребра трохи коротші, тому трохи розтягніть їх під час приколювання, щоб вони увійшли в тіло.
+- Тепер пришийте/пришийте ребра до тіла
