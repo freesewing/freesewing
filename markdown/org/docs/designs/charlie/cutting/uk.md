@@ -1,33 +1,33 @@
 - - -
-title: "Charlie chinos: Cutting Instructions"
+назва: "Чарлі Чинос: Інструкція з крою"
 - - -
 
-##### From main fabric
+##### З основної тканини
 
-- Part **1**: **2 x** _with good sides together_.
-- Part **2**: **2 x** _with good sides together_.
-- Part **4**: **4 x**
-- Part **6**: **2 x**
-- Part **8**: **4 x** (2 pairs _with good sides together_)
-- Part **9**: **2 x** _with good sides together_
-- Part **10**: **1 x** on the fold
-- Part **11**: **1 x** if making a straight waistband
-- Part **11**: **2 x** _with good sides together_ if making a curved waistband
-- Part **12**: **1 x**
+- Частина **1**: **2 x** _з гарними сторонами разом_.
+- Частина **2**: **2 x** _з гарними сторонами разом_.
+- Частина **4**: **4 x**
+- Частина **6**: **2 x**
+- Частина **8**: **4 x** (2 пари _з гарними сторонами разом_)
+- Частина **9**: **2 x** _з гарними сторонами разом_
+- Частина **10**: **1 x** на згині
+- Частина **11**: **1 x** , якщо робите прямий пояс
+- Частина **11**: **2 x** _з хорошими сторонами разом_ , якщо робите вигнутий пояс
+- Частина **12**: **1 x**
 
-##### From lining (or any material suitable for pocket bags)
+##### З підкладки (або будь-якого матеріалу, придатного для кишенькових сумок)
 
-- Part **5**: **2 x**
-- Part **7**: **2 x**
+- Частина **5**: **2 x**
+- Частина **7**: **2 x**
 
-##### From fusible interfacing
+##### Від легкоплавкого з'єднання
 
-- Part **3**: **2 x**
+- Частина **3**: **2 x**
 
 <Tip>
 
-##### A dash of color perhaps?
+##### Можливо, трохи кольору?
 
-You can cut part 4 from a different color for a little contrasting detail at the back pockets
+Ви можете вирізати деталь 4 з іншого кольору, щоб додати трохи контрастних деталей на задніх кишенях
 
 </Tip>
