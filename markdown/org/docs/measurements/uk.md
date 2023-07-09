@@ -1,5 +1,5 @@
 ---
-title: Measurements
+title: Вимірювання
 order: 300
 ---
 
