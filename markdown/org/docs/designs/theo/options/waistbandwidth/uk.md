@@ -1,11 +1,11 @@
 - - -
-title: "Waistband width"
+Назва: "Ширина пояса"
 - - -
 
-![Waistband width](waistbandwidth.svg)
+![Ширина пояса](waistbandwidth.svg)
 
-The width of the waistband you want on the trousers.
+Ширина пояса, яку ви хочете на брюках.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](theo_waistbandwidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](theo_waistbandwidth_sample.svg "Вплив цієї опції на шаблон")
