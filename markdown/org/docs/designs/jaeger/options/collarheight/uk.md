@@ -1,11 +1,11 @@
 - - -
-title: "Collar height"
+назва: "Висота коміра"
 - - -
 
-![Collar height](collarheight.svg)
+![Висота коміра](collarheight.svg)
 
-This is the collar height at the back of the neck and can never be less than twice the roll line collar height.
+Це висота нашийника на потилиці, яка ніколи не може бути меншою за подвійну висоту нашийника по лінії валика.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_collarheight_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_collarheight_sample.svg "Вплив цієї опції на шаблон")
