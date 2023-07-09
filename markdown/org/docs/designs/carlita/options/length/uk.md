@@ -1,11 +1,11 @@
 - - -
-title: "Length"
+"Назва": "Довжина"
 - - -
 
-![Length](length.svg)
+![Довжина](length.svg)
 
-Controls the overall length of the coat.
+Контролює загальну довжину пальта.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_length_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](carlita_length_sample.svg "Вплив цієї опції на шаблон")
