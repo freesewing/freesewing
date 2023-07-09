@@ -1,217 +1,217 @@
 - - -
-title: "Bruce boxer briefs: Sewing Instructions"
+назва: "Труси-боксери "Брюс": Інструкція з пошиття"
 - - -
 
 <YouTube id='PL1gv5yv3DoZME1xe5fBEHd0rKPW_xNpF3' playlist />
 
-### Step 1: Join back to first side
+### Крок 1: Приєднайте назад до першої сторони
 
-![Join back to first side](step01.png)
+![Приєднайте назад до першої сторони](step01.png)
 
-Align the side of the back (piece 1) with the side (piece 3) making sure to put the good sides together. The side (piece 3) is not symmetric, so make be careful to correctly match them.
+Вирівняйте сторону спинки (деталь 1) зі стороною (деталь 3), переконавшись, що виворітні сторони складені разом. Сторона (деталь 3) не симетрична, тому будьте уважні, щоб правильно їх поєднати.
 
 <Tip>
-If you look at the part 3 (the side) with the text so you can read it, then then left side should be attached to the back,
-and the right side attached to the front & inset. The notches will also help you figure it out.
+Якщо ви подивитеся на частину 3 (збоку) з текстом так, щоб ви могли його прочитати, то ліву частину слід прикріпити до задньої частини,
+, а праву частину - до передньої частини та вставки. Насічки також допоможуть вам у цьому розібратися.
 </Tip>
 
-Serge them together, taking into account that the seam allowance is 1cm. So aim the outside needle of your serger 1cm from the edge of your fabric.
+Зшийте їх разом, враховуючи, що припуск на шов становить 1 см. Таким чином, зовнішня голка сергера повинна знаходитися на відстані 1 см від краю тканини.
 
-> If metric is not your bag, 1 cm is 3/8 inch.
+> Якщо метрична система не для вашої сумки, 1 см дорівнює 3/8 дюйма.
 
-> Some sergers have a lever to choose between flat seams, or bundled up seams. If you plan to topstitch later (see Step 6), make sure to choose flat seams.
+> Деякі сервери мають важіль для вибору між пласкими швами та швами, що об'єднуються в пучок. Якщо ви плануєте згодом обметувати верхню частину (див. Крок 6), переконайтеся, що ви вибрали плоскі шви.
 
-### Step 2: Join back to second side
+### Крок 2: Приєднайте назад до другої сторони
 
-![Join back to second side](step02.png)
+![Приєднайте назад до другої сторони](step02.png)
 
-Align the other side of the back (piece 1) with the second side (piece 3) making sure to put the good sides together. Again, because the side (piece 3) is not symmetric, be careful to correctly match them.
+Вирівняйте іншу сторону спинки (деталь 1) з другою стороною (деталь 3) , переконуючись, що виворітні сторони складені разом. Знову ж таки, оскільки сторона (деталь 3) не симетрична, будьте уважні, щоб правильно їх поєднати.
 
-Serge them together, as you did on the other side.
+З'єднайте їх разом, як ви це зробили на іншій стороні.
 
-> The back and sides are now joined together. Put them aside for a moment as we turn our attention to the other pieces.
+> Тепер задня і бокові частини з'єднані разом. Відкладіть їх на хвилинку, поки ми звернемо увагу на інші частини.
 
-### Step 3: Join first inset and fronts
+### Крок 3: З'єднайте першу вставку та фронтальні частини
 
-![Start at one end](step03-a.png) ![Continue to align the pieces as you move on](step03-b.png) ![Until you reach the other end](step03-c.png)
+![Почніть з одного кінця](step03-a.png) ![Продовжуйте вирівнювати частини, рухаючись далі](step03-b.png) ![Поки ви не досягнете іншого кінця](step03-c.png)
 
-Joining the inset (piece 4) with the fronts (piece 2) requires you to serge them together across their curvy edges.
+Щоб з'єднати вставку (деталь 4) з лицьовими частинами (деталь 2), потрібно зшити їх разом по вигнутих краях.
 
-> Remember that you have two fronts. You have to put them on top of each other and treat it as one double-layered front.
+> Пам'ятайте, що у вас два фронти. Ви повинні покласти їх один на одного і розглядати це як один двошаровий фронт.
 
-Faced with a tricky seam like this, you might reach for your pins or basting thread, but don't. Pinning or basting this will make it harder to sew.
+Зіткнувшись з таким складним швом, ви можете потягнутися за шпильками або наметочними нитками, але не варто. Закріплюючи шпильками або пришиваючи, ви ускладните процес шиття.
 
-Instead, start at the top of the curved seam, aligning the pieces as shown, and slowly serge them together a few cm.
+Замість цього почніть з верхньої частини вигнутого шва, вирівнявши деталі, як показано на малюнку, і повільно зшийте їх разом на кілька сантиметрів.
 
-As you move along, manipulate the fabric to make sure both edges stay on top of each other as you feed them through your serger.
+Під час роботи маніпулюйте тканиною, щоб переконатися, що обидва краї залишаються один над одним, коли ви пропускаєте їх через машинку.
 
-As you manipulate the fabric to get it aligned properly, it's easy to stretch one part more than the other. The notch in the curved edge can help you make sure you're keeping things even.
+Коли ви маніпулюєте тканиною, щоб вирівняти її належним чином, легко розтягнути одну частину більше, ніж іншу. Виїмка на вигнутому краї допоможе вам переконатися, що ви тримаєте все рівно.
 
-Once you've passed the notch, things will get easier. This would also be a good time to compare the remaining length of the curved seams. If one is a bit longer than the other, simply stretch the shorter one until they match up.
+Після того, як ви пройдете цей етап, все стане простіше. Це також гарний час, щоб порівняти залишкову довжину вигнутих швів. Якщо одна з них трохи довша за іншу, просто розтягніть коротшу, поки вони не зрівняються.
 
-If the difference is too big however, just leave it. It will get cut off when we do the crotchseam.
+Якщо різниця занадто велика, просто залиште її. Він буде відрізаний, коли ми будемо робити паховий шов.
 
 <Note>
 
-This is probably the hardest seam in the pattern. Take it slow, and you'll be fine.
+Це, мабуть, найскладніший шов у візерунку. Не поспішайте, і все буде добре.
 
 </Note>
 
 <Tip>
 
-###### Or enclose these seams by sandwiching them between the fronts
+###### Або закрити ці шви, вклавши їх між передніми частинами
 
-While it's a bit more work, you can enclose this seam if you baste the insets to a single one of the front pieces first,
-and then sew your front pieces together with the insets sandwiched inside.
+Хоча це трохи більше роботи, ви можете закрити цей шов, якщо спочатку пришити вставки до однієї з передніх частин,
+а потім зшити передні частини разом з вставками, вкладеними всередину.
 
-Sew the front darts separately and turn the whole thing inside out, and you have a nice seamless package area in front.
+Зшийте передні виточки окремо і виверніть все це навиворіт, і ви отримаєте гарну безшовну зону пакування спереду.
 
 </Tip>
 
-### Step 4: Join second inset and fronts
+### Крок 4: З'єднайте другу вставку і передню частину
 
-![Join second inset and fronts](step03-d.png)
+![З'єднайте другу вставку та фасади](step03-d.png)
 
-After you have joined the first inset and the fronts, continue with the second one.
+Після того, як ви з'єднали першу вставку і лицьові сторони, продовжуйте з другою.
 
-With the fronts and insets joined together, you are left with 3 parts:
+З'єднавши лицьову частину і вставки разом, у вас залишиться 3 частини:
 
-- The joined insets and fronts
-- The joined sides and back
-- The elastic
+- З'єднані вставки та фасади
+- З'єднані боки і спинка
+- Еластичний
 
-### Step 5: Close the fronts dart
+### Крок 5: Закриваємо передню виточку
 
-![Close the fronts dart](step05.png)
+![Закрийте передню виточку](step05.png)
 
-Fold the fronts double along the center fronts line, so that the tusks at the bottom line up.
+Складіть передні частини вдвічі вздовж центральної лінії переду так, щоб ікла внизу були спрямовані вгору.
 
-Serge the sides of the tusks to close the fronts dart. For best results, start at the top of the seam (where the fabric is folded) and work your way to the bottom.
+Застрочіть бічні сторони бивнів, щоб закрити виточки спереду. Для досягнення найкращих результатів починайте з верхньої частини шва (там, де тканина згинається) і рухайтеся до низу.
 
 <Tip>
 
-###### Keep that seam away from my ...
+###### Тримайте цей шов подалі від мого ...
 
-Alternatively, sew the darts on each piece individually so that both seams are folded inside.
-Arguably, not having an exposed seam in this area is more comfortable for the wearer.
+Або ж зшийте виточки на кожній деталі окремо так, щоб обидва шви були загнуті всередину.
+Можливо, відсутність відкритого шва в цій зоні є більш комфортною для власника.
 
 </Tip>
 
-### Step 6: Optional: Topstitch
+### Крок 6: Необов'язково: Верхній стібок
 
-![Boxers with (left) and without topstitching](step06.jpg)
+![Боксери з (ліворуч) і без верхньої строчки](step06.jpg)
 
 <Note>
 
-This step is optional. Topstitching adds a visual effect that emphasizes the individual pattern pieces.
-It's nice to visually break up a solid fabric, but if you're using a print, or when you're colour-blocking, you might want to not topstitch.
+Цей крок не є обов'язковим. Верхня строчка додає візуального ефекту, який підкреслює окремі частини візерунка.
+Добре візуально розбивати суцільну тканину, але якщо ви використовуєте принт або колор-блок, можливо, вам не варто робити верхню строчку.
 
 </Note>
 
-If you want to topstitch your serged seams for visual effect, you should do so now.
+Якщо ви хочете обробити шви для візуального ефекту, зробіть це зараз.
 
-If you topstitch, simply do it for every seam, making sure to do so with a flexible stitch. You can use a zig-zag stitch or twin needle if you don't have a coverlock or specific flexible stitch setting.
-
-<Tip>
-
-When topstitching the seam that closed the fronts dart, start from the bottom,
-and let the topstitching run all the way to the top, where the waistband will come.
-The seam stops halfway through (where the dart ends) but your topstitching should continue.
-
-</Tip>
-
-### Step 7: Join the first side to the fronts
-
-![Join the first side to the fronts](step07.png)
-
-Align the side edge of the first side with the edge made up of the fronts+inset (good sides together as usual) and serge them together.
-
-### Step 8: Join the second side to the fronts
-
-![Join the second side to the fronts](step08.png)
-
-Do the same for the second side.
-
-### Step 9: Optional: Topstitch
-
-![Boxers with (left) and without topstitching](step06.jpg)
-
-If you've topstitched before, make sure to do the same now for the seams you made in step 7 and 8.
-
-### Step 10: Finish the crotchseam
-
-![Finish the crotchseam](step10.png)
-
-We will now serge the arched opening in the back part to the front parts of the boxers, made up of the fronts and insets.
-
-The notches on the back piece will help you. There's the center notch, and the other two notches should match up with where the fronts and inset pieces are joined.
+Якщо ви виконуєте верхню строчку, просто виконуйте її для кожного шва, обов'язково гнучким стібком. Ви можете використовувати зигзагоподібну строчку або подвійну голку, якщо у вас немає човникового замка або спеціального налаштування гнучкої строчки.
 
 <Tip>
 
-It's easier to start in the middle point and work your way to one side. Then start from the middle again to do the other side.
-
-Take it slow, and be **very aware** of where your serger blade is cutting into.
+При обметуванні шва, що закривав передню виточку, починайте знизу,
+і прокладіть строчку до самого верху, де буде проходити пояс.
+Шов зупиняється на півдорозі (там, де закінчується виточка), але вишивання має продовжуватися.
 
 </Tip>
 
-### Step 11: Hem the first leg
+### Крок 7: Приєднайте перший бік до лицьових сторін
 
-![Hem the first leg](step11.png)
+![З'єднайте першу сторону з лицьовими сторонами](step07.png)
 
-Time to hem the legs. Hem them as you would do any other stretchy knit. Go for a flexible stitch. You can use a zig-zag stitch or twin needle if you don't have a coverlock or specific flexible stich setting.
+Вирівняйте бічний край першого боку з краєм, що складається з лицьового боку + вставки (лицьові боки разом, як зазвичай) і застрочіть їх разом.
+
+### Крок 8: Приєднайте другу сторону до лицьових сторін
+
+![Приєднайте другу сторону до лицьових сторін](step08.png)
+
+Зробіть те саме з другою стороною.
+
+### Крок 9: Необов'язковий: Верхній стібок
+
+![Боксери з (ліворуч) і без верхньої строчки](step06.jpg)
+
+Якщо ви вже виконували верхню строчку раніше, не забудьте зробити те саме зараз для швів, які ви виконали на кроках 7 і 8.
+
+### Крок 10: Обробіть паховий шов
+
+![Обробіть паховий шов](step10.png)
+
+Тепер зшиємо арочний отвір в задній частині з передніми частинами боксерів, що складаються з передньої частини і вставки.
+
+Виїмки на задній частині допоможуть вам. Ось центральний надріз, а два інших надрізи повинні збігатися з місцями з'єднання лицьової та вставної частин.
+
+<Tip>
+
+Простіше почати з середини і рухатися в один бік. Потім знову почніть з середини, щоб зробити іншу сторону.
+
+Не поспішайте і дуже уважно стежте за тим, куди ріже ваше лезо.
+
+</Tip>
+
+### Крок 11: Підшийте першу ногу
+
+![Підшийте першу ногу](step11.png)
+
+Час підшивати ноги. Підшийте їх так само, як і будь-який інший еластичний трикотаж. Використовуйте гнучкий стібок. Ви можете використовувати зигзагоподібний стібок або подвійну голку, якщо у вас немає човникового замка або спеціального налаштування гнучкого стібка.
 
 <Note>
 
-I feel that hemming is much easier when you pin things in place first.
-So fold back your hem, and pin it in place.
-Even better: pin both legs in place and only sew when you're happy with how it looks.
+Я відчуваю, що підшивати набагато легше, коли ви спочатку приколюєте речі на місце.
+Тому відверніть поділ і закріпіть його булавками.
+А ще краще: приколіть обидві ніжки і пришивайте тільки тоді, коли будете задоволені тим, як вони виглядають.
 
 </Note>
 
-### Step 12: Hem the second leg
+### Крок 12: Підшийте другу ногу
 
-![Hem the second leg](step12.png)
+![Підшийте другу ногу](step12.png)
 
-You know it makes sense.
+Ти знаєш, що це має сенс.
 
-### Step 13: Make your elastic into a loop
+### Крок 13: Зробіть з гумки петлю
 
-![Make your elastic into a loop](step13.png)
+![Зробіть з гумки петлю](step13.png)
 
-Sew both ends of your elastic together with good sides together.
+Зшийте обидва кінці гумки лицьовими боками один до одного.
 
 <Note>
 
-###### Not sure how much elastic you need?
+###### Не знаєте, скільки гумки вам потрібно?
 
-Simply wrap your elastic around your waist where it would end up sitting, and tighten it until it feels right.
-Make a mark of where the edge joins, add 2cm seam allowance, and that's your length.
+Просто оберніть резинку навколо талії в тому місці, де вона буде сидіти, і затягніть її до потрібного розміру.
+Зробіть позначку на місці з'єднання країв, додайте 2 см припуску на шви, і це буде ваша довжина.
 
 </Note>
 
-### Step 14: Attach elastic to waist
+### Крок 14: Прикріпіть резинку до талії
 
-![Attach elastic to waist](step14.png)
+![Прикріпіть гумку до талії](step14.png)
 
-Attach the elastic to the waist.
+Прикріпіть резинку до талії.
 
-Do so good sides together if you're using a flexible stitch or twin needle on a conventional sewing machine.
+Якщо ви використовуєте гнучку строчку або подвійну голку на звичайній швейній машині, зробіть це лицьовими сторонами один до одного.
 
-If you're using a coverlock, put the elastic on top of the good side of the fabric.
+Якщо ви використовуєте накладний замок, покладіть гумку на виворітний бік тканини.
 
 <Tip>
 
-The length of your elastic will probably difffer from the fabric length, as they stretch differently.
-Pinning will help you achieve an even stretch.
+Довжина вашої резинки, ймовірно, відрізнятиметься від довжини тканини, оскільки вони розтягуються по-різному.
+Булавки допоможуть вам досягти рівномірного розтягування.
 
-Divide both your elastic and boxer waistline into 4 (or 8) parts. Pin elastic and fabric together at these points.
+Розділіть еластичну та боксерську талію на 4 (або 8) частин. З'єднайте гумку і тканину разом у цих точках.
 
-While sewing, stretch elastic and fabric together between each set of pins, removing the pins as you move on.
+Під час шиття розтягуйте гумку і тканину між кожним набором шпильок, знімаючи їх по мірі просування.
 
 </Tip>
 
-### Step 15: Trim and clean up
+### Крок 15: Обріжте та почистіть
 
-![Yay! You've made it](step15.png)
+![Ура! У тебе вийшло.](step15.png)
 
-Trim any excess fabric you might have at elastic or hem, and any loose threads.
+Обріжте надлишки тканини, які можуть бути на гумці або подолі, а також вільні нитки.
