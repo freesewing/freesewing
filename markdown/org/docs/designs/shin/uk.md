@@ -1,5 +1,5 @@
 - - -
-title: "Shin swim trunks"
+назва: "Плавки для гомілок"
 - - -
 
 <PatternDocs pattern='shin' />
