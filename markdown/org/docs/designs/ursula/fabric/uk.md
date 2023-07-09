@@ -1,7 +1,7 @@
 - - -
-title: "Ursula undies: Fabric Options"
+назва: "Урсула роздягається: Варіанти тканин"
 - - -
 
-You need a fabric with plenty of horizontal and vertical stretch (sometimes called “four-way stretch”) for this pattern. Preferably something that is comfortable, soft, and breathable.
+Для цього візерунка вам знадобиться тканина з великою горизонтальною і вертикальною розтяжністю (іноді її називають "чотиристороннім розтягуванням"). Бажано щось зручне, м'яке і дихаюче.
 
-Recommended fabrics include stretch jerseys, stretch mesh, stretch knits, or most fabrics with at least 5% spandex. For example, modal (rayon) jersey with spandex.
+Рекомендовані тканини: еластичний трикотаж, еластична сітка, еластичний трикотаж або більшість тканин з вмістом спандексу не менше 5%. Наприклад, модальний (віскозний) трикотаж зі спандексом.
