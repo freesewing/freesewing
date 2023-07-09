@@ -1,28 +1,28 @@
 - - -
-title: "Hugo hoodie: Cutting Instructions"
+назва: "Худі Г'юго: Інструкція з крою"
 - - -
 
-- **Main fabric**
-  - Cut **1 front** on the fold
-  - Cut **1 back** on the fold
-  - Cut **2 sleeves**, good sides together
-  - Cut **1 pocket** on the fold
-  - Cut **2 pocket facing(s)**, good sides together
-  - Cut **4 Hood side(s)**, 2x2 good sides together
-  - Cut **2 hood center(s)**, good sides together
-  - Cut **1 neck binding**
-- **Ribbing**
-  - Cut **2 cuff(s)**
-  - Cut **1 waistband**
+- **Основна тканина**
+  - Виріжте **1 передній** на згині
+  - Відріжте **1 назад** на згині
+  - Виріжте **2 рукава**, виворітними сторонами разом
+  - Виріжте **1 кишеню** на згині
+  - Виріжте **2 кишені з лицьової сторони**, лицьовими сторонами разом
+  - Виріжте **4 Сторони капюшона**, 2х2 лицьовими сторонами разом
+  - Виріжте **2 центральні частини капюшона**, виворітні сторони разом
+  - Виріз **1 горловина для палітурки**
+- **Ребристість**
+  - Виріз **2 манжети**
+  - Крій **1 пояс**
 
 <Warning>
 
-###### Caveats
+###### Застереження
 
-- **sleeve**: There's a single notch at the front, and a double notch at the back. These notches match on the front and back parts respectively.
-- **pocket facing** and **hood**: Watch out for the grainlines on these parts
+- **рукав**: Спереду одинарний виріз, ззаду - подвійний. Ці насічки збігаються на передній і задній частинах відповідно.
+- обшивку кишень і горловину: Зверніть увагу на долеві лінії на цих частинах
 
-Because Hugo's raglan sleeve also covers a portion of the back and front,
-the sleeve is the dominant feature of your draft.
+Оскільки рукав реглан Хьюго також закриває частину спинки і переду,
+рукав є домінуючою рисою вашого ескізу.
 
 </Warning>
