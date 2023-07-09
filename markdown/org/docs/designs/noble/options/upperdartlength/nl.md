@@ -6,6 +6,6 @@ title: "Upper Dart Length"
 
 The **Upper Dart Length** controls the length of the upper dart, 100% is all teh way to the bust point.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_upperdartlength_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](noble_upperdartlength_sample.svg "Effect van deze optie op het patroon")
