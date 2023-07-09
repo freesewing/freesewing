@@ -1,11 +1,11 @@
 - - -
-title: "Ribbing height"
+назва: "Висота ребер"
 - - -
 
-![Ribbing height](ribbingheight.svg)
+![Висота ребер](ribbingheight.svg)
 
-The height of the ribbing at the hem and cuffs.
+Висота ребристості на подолі та манжетах.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_ribbingheight_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](huey_ribbingheight_sample.svg "Вплив цієї опції на шаблон")
