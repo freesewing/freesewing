@@ -1,4 +1,4 @@
 - - -
 - - -
 
-Wherever makers meet, that's where you'll find us:
+Де б не зустрічалися творці, там ви знайдете нас:
