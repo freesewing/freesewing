@@ -1,9 +1,9 @@
 - - -
-title: "Shoulder ease"
+назва: "Легкість у плечах"
 - - -
 
-The amount of ease across the shoulders. When making a coat or jacket, you want to foresee more ease so one can wear layers under the coat/jacket.
+Скільки легкості на плечах. Коли ви створюєте пальто або куртку, ви хочете передбачити більше легкості, щоб під пальто/куртку можна було носити шари .
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bent_shoulderease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bent_shoulderease_sample.svg "Вплив цієї опції на шаблон")
