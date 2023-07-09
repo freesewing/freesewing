@@ -1,8 +1,8 @@
 ---
-title: We created a Github issue for this
+title: Для цього ми створили тему на Github
 ---
 
-You can subscribe to this issue, or comment on it if you'd like to share more information.  
-Doing so requires a Github account, but they are free.
+Ви можете підписатися на цей випуск або прокоментувати його, якщо хочете поділитися додатковою інформацією.  
+Для цього потрібен акаунт на Github, але він безкоштовний.
 
-**Tip:** An active issue — one that has subscribers or comments — gets more attention.
+**Порада:** Активна тема - та, що має підписників або коментарі - привертає більше уваги.
