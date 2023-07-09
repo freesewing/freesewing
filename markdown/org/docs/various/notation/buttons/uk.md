@@ -1,19 +1,19 @@
 ---
-title: Buttons, buttonholes, and snaps
+title: Ґудзики, петлі та застібки
 ---
 
 Buttons and buttonholes may come in different sizes, but always have the same shape that represents how they look in real life:
 
 <Legend part="buttons">
 
-A button is shown on the left, and a buttonhole on the right
+Зліва показано ґудзик, а справа - петля
 
 </Legend>
 
-Snaps have a _stud_ and _socket_ part, and also look like the real thing:
+Застібки мають _шпильку_ і _гніздо_ частини, а також виглядають як справжні:
 
 <Legend part="snaps">
 
-A snap stud is shown on the left, and a snap socket on the right
+Зліва показана шпилька, а праворуч - гніздо для фіксації
 
 </Legend>
