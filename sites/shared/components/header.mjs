@@ -1,17 +1,17 @@
 import Link from 'next/link'
 
 export const colors = [
-  'rainbow-red',
-  'rainbow-orange',
-  'rainbow-yellow',
-  'rainbow-lime',
-  'rainbow-green',
-  'rainbow-teal',
-  'rainbow-cyan',
-  'rainbow-blue',
-  'rainbow-indigo',
-  'rainbow-violet',
-  'rainbow-purple',
+  'red',
+  'orange',
+  'yellow',
+  'lime',
+  'green',
+  'teal',
+  'cyan',
+  'blue',
+  'indigo',
+  'violet',
+  'purple',
 ]
 
 export const NavButton = ({
@@ -24,8 +24,8 @@ export const NavButton = ({
   active = false,
 }) => {
   const className =
-    'border-0 px-1 xl:px-4 text-base py-3 lg:py-4 text-center flex flex-col items-center 2xl:w-36 ' +
-    `hover:bg-${color} text-${color} hover:text-neutral grow lg:grow-0 relative ${extraClasses} ${
+    'border-0 px-1 xl:px-4 text-base-100 py-3 lg:py-4 text-center flex flex-col items-center 2xl:w-36 ' +
+    `bg-${color}-400 text-base-content grow lg:grow-0 relative ${extraClasses} ${
       active ? 'font-heavy' : ''
     }`
   const span = <span className="font-bold hidden lg:block">{label}</span>

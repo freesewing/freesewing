@@ -47,7 +47,7 @@ module.exports = {
   // base-300: A shade midway between dark and light
   'base-300': colors.neutral['500'],
   // base-content: The default text color for a regular page (docs and so on)
-  'base-content': colors.neutral['700'],
+  'base-content': colors.neutral['950'],
 
   // primary: The main brand color and color of the primary button
   primary: colors.fuchsia['700'],
@@ -79,6 +79,19 @@ module.exports = {
   'neutral-focus': colors.neutral['700'],
   // neutral-content: The text color on neutral backgrounds
   'neutral-content': colors.neutral['50'],
+
+  rainbow: colors.neutral['50'],
+  'rainbow-red': colors.red['400'],
+  'rainbow-orange': colors.orange['400'],
+  'rainbow-yellow': colors.yellow['400'],
+  'rainbow-lime': colors.lime['400'],
+  'rainbow-green': colors.green['400'],
+  'rainbow-teal': colors.teal['400'],
+  'rainbow-cyan': colors.cyan['400'],
+  'rainbow-blue': colors.blue['400'],
+  'rainbow-indigo': colors.indigo['400'],
+  'rainbow-violet': colors.violet['400'],
+  'rainbow-purple': colors.purple['400'],
 
   // info: Used rarely, can be another color best somewhat neutral looking
   // and should work with the default text color
