@@ -1,9 +1,9 @@
 - - -
-title: "Bruce boxer briefs: Fabric Options"
+назва: "Труси-боксери "Брюс": Варіанти тканин"
 - - -
 
-You need a stretchy fabric for this pattern. Preferable something that is comfortable and soft to the touch, while allowing the skin to breathe.
+Для цієї викрійки вам знадобиться еластична тканина. Бажано, щоб вона була зручною і м'якою на дотик, дозволяючи шкірі дихати.
 
-I personally think that nothing can beat rayon for this pattern, although you can do with some other knit too, like jersey.
+Особисто я вважаю, що ніщо не може зрівнятися з віскозою для цього візерунка, хоча ви можете використати й інший трикотаж, наприклад, джерсі.
 
-When in doubt, go for rayon.
+Якщо ви сумніваєтеся, вибирайте віскозу.
