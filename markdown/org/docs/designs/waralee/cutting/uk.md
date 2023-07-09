@@ -1,45 +1,45 @@
 - - -
-title: "Waralee wrap pants: Cutting Instructions"
+назва: "Штани-обгортки Waralee: Інструкція з крою"
 - - -
 
 <Note>
 
-Waralee consists of two mirrored pieces of fabric.
-They are basically big rectangles with pieces missing.
-As such, it is easier to print out the part you need to cut out and measure the rest,
-than it is to print out everything and cut the pattern the traditional way.
+Waralee складається з двох дзеркальних шматків тканини.
+В основному це великі прямокутники з відсутніми частинами.
+Таким чином, простіше роздрукувати частину, яку потрібно вирізати, і виміряти решту,
+ніж роздрукувати все і вирізати викрійку традиційним способом.
 
-That said, the pattern is available both ways. So you can print out the whole thing, tape all the pages together, and use that to cut out the fabric, if you prefer. But we recommend only printing the part that you need to cut out.
+При цьому шаблон доступний в обох напрямках. Тож ви можете роздрукувати все це, склеїти всі сторінки разом, а потім вирізати з них тканину, якщо бажаєте. Але ми рекомендуємо друкувати тільки ту частину, яку потрібно вирізати.
 
-You will need to print out the pockets and pocket facings in the traditional way.
+Вам потрібно буде роздрукувати кишені та обшивки кишень традиційним способом.
 
 </Note>
 
-### Materials
+### Матеріали
 
-- **Main fabric**
-  - Cut **2 pants** parts.
-  - (Optional) Cut **2 Pocket** parts on the fold.
-  - Cut **4 backPocket** parts
-  - Cut **4 frontFacing** parts
-  - Cut **4 backFacing** parts
+- **Основна тканина**
+  - Розріжте **2 штани** частини.
+  - (За бажанням) Виріжте **2 деталі кишені** на згині.
+  - Виріжте **4 деталі задньої кишені**
+  - Виріжте **4 лицьові деталі**
+  - Виріжте **4 деталі для зворотної сторони**
 
 <Note>
 
-You can cut the Pocket and backPocket parts out of a lining fabric if you prefer but this will only be needed if you deviate from the recommended main fabrics.
+За бажанням ви можете викроїти деталі кишень і задньої кишені з підкладкової тканини, але це знадобиться тільки в тому випадку, якщо ви відхилитеся від рекомендованої основної тканини.
 
 </Note>
 
 <Tip>
 
-Pattern part 2 is just for when you want to make the pants without printing everything.
-Since this is just a couple of rectangles (with a slanted side), you can just use a ruler to cut out the main part. Then you use Part 2 to cut out the crotch part. Save a tree.
+Викрійка частини 2 якраз для тих випадків, коли ви хочете зробити штани, не роздруковуючи їх повністю.
+Оскільки це всього лише пара прямокутників (з нахиленою стороною), ви можете просто за допомогою лінійки вирізати основну частину. Потім використовуйте частину 2, щоб вирізати частину промежини. Врятуй дерево.
 
-Part 2 has a negative seam allowance, since you'll be using it opposite of what you normally use the pattern parts for.
+Деталь 2 має від'ємний припуск на шов, оскільки ви будете використовувати її навпроти того, для чого ви зазвичай використовуєте деталі викрійки.
 
-If you opt for the cut-out method, use the paperless view to see all the dimensions of the pattern.
-You will need to cut a narrow strip out from what will become the front, and a small triangle and strip from what will become the back.
-And in the middle between these will be the little cut-out pattern piece.
-Make sure you measure this correctly, and you have the fabric squared before you start cutting.
+Якщо ви обираєте метод вирізання, скористайтеся режимом перегляду без паперу, щоб побачити всі розміри викрійки.
+Вам потрібно буде вирізати вузьку смужку з того, що стане передньою частиною, і невеликий трикутник і смужку з того, що стане задньою частиною.
+А посередині між ними буде маленька вирізана деталь з візерунком.
+Переконайтеся, що ви правильно виміряли і розклали тканину на квадрати, перш ніж починати кроїти.
 
 </Tip>
