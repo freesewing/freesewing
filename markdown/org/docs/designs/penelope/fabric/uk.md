@@ -1,13 +1,13 @@
 - - -
-title: "Penelope pencil skirt: Fabric Options"
+"Спідниця-олівець Пелагея": "Спідниця-олівець Пенелопа: Варіанти тканин"
 - - -
 
-### Main Fabric
+### Основна тканина
 
-A pencil skirt is a rather formal cut, and most commonly is made in a suiting material. In other words, a **fine wool**. More casual options among **medium weight** fabrics include **cotton** or **denim**.
+Спідниця-олівець - досить офіційний крій, і найчастіше виготовляється з костюмного матеріалу. Іншими словами, **тонкої вовни**. Більш повсякденні варіанти серед **середньої ваги** тканин включають **бавовняні** або **джинсові**.
 
-Using a fabric with some stretch will make it easier to get a comfortable fit and give you some more room to move about as pencil skirts fit rather tight. **Scuba** is often seen in pencil skirts as it is firm, has body but also stretchs.
+Використання тканини з деяким розтягуванням полегшить комфортну посадку і дасть вам більше простору для рухів , оскільки спідниці-олівці сидять досить щільно. **Скуба** часто можна побачити в спідницях-олівцях, оскільки вона щільна, має тіло, але при цьому тягнеться.
 
-### Lining Fabric
+### Підкладкова тканина
 
-The lining fabric needs to be light, and allow the body to slide over it easily. You also don't want something to thick as this will be constricting. **Silky** fabrics are the go to choice as they are lightweight and slippery.
+Підкладкова тканина повинна бути легкою і дозволяти тілу легко ковзати по ній. Також не варто робити щось занадто густе, оскільки воно буде стискати. **Шовковисті** тканини - найкращий вибір, оскільки вони легкі та слизькі.
