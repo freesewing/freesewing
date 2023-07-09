@@ -1,13 +1,13 @@
 - - -
-title: "Bulge"
+назва: "Опуклість"
 - - -
 
-How much room do you want in the front?
+Скільки місця ви хочете спереду?
 
-Increasing this will creating more room in the front.
+Збільшення цього параметра створить більше місця спереду.
 
-> If it's vertical room you're looking for, that's what the **rise** option does
+> Якщо вам потрібна вертикальна кімната, ось що робить опція **rise**
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](shin_bulge_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](shin_bulge_sample.svg "Вплив цієї опції на шаблон")
