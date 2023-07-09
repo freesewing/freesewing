@@ -1,88 +1,88 @@
 - - -
-title: "Florence face mask: Sewing Instructions"
+назва: "Маска для обличчя "Флоренція": Інструкція з пошиття"
 - - -
 
-### Step 1: Join center seam
+### Крок 1: З'єднайте центральний шов
 
-Join the curved seam that is center of our mask by placing the _good sides together_ and sewing them in place.
+З'єднайте вигнутий шов, який є центром нашої маски, склавши _виворітні сторони разом_ і зшивши їх на місці.
 
-![Join the center seam](step1.svg)
+![З'єднайте центральний шов](step1.svg)
 
-<Note>Repeat this step for both the outer (main) fabric, and the inner (lining) fabric.</Note>
+<Note>Повторіть цей крок як для зовнішньої (основної) тканини, так і для внутрішньої (підкладкової).</Note>
 
-### Step 2 (optional): Press the center seam
+### Крок 2 (необов'язковий): Притисніть центральний шов
 
 <Note>
 
-This step has no functional value, it will only make your mask look better.
-So if you're not too bothered about that, feel free to skip it.
+Цей крок не має жодного функціонального значення, він лише зробить вашу маску кращою.
+Тож якщо вас це не надто турбує, сміливо пропускайте його.
 
 </Note>
 
-Press the seam allowance on the center seam open so the seam lies nice and flat.
+Розправте припуск на шов на центральному шві, щоб шов лежав рівно і красиво.
 
-As this is a curved seam, it won't lay flat. But you can approach it with your iron from one side, then do the second half from the other side. Alternatively, you can use a tailor's ham or cushion to press.
+Оскільки це вигнутий шов, він не буде лежати рівно. Але ви можете підійти до неї з праскою з одного боку, а потім зробити другу половину з іншого боку. Як варіант, ви можете використовувати кравецьку п'яльця або подушку для пресування.
 
-<Note>Repeat this step for both the outer (main) fabric, and the inner (lining) fabric.</Note>
+<Note>Повторіть цей крок як для зовнішньої (основної) тканини, так і для внутрішньої (підкладкової).</Note>
 
-### Step 3: Sew the outer to the inner fabric and attach ribbons
+### Крок 3: Пришийте зовнішню тканину до внутрішньої та прикріпіть стрічки
 
-![Join the inner to the outer fabric](step3.svg)
+![З'єднайте внутрішню тканину із зовнішньою](step3.svg)
 
 Now we will sew the inner (lining) fabric to the outer (main) fabric, and attach the ribbons all in one step.
 
-- Place your lining fabric down with the good side up.
-- Then, place two ribbons on the corners of one side (right in our example) so that they peak out just a bit from the mask, but the ribbon extends inwards.
-- Now place the main fabric on top of this with the good side town. You should now have both layers of your mask on top of each other with _good sides together_ and two ribbons sandwiched between them
-- Pin through ribbons and layers to keep them in place
-- Now do the same on the other side
+- Покладіть підкладкову тканину лицьовим боком догори.
+- Потім розмістіть дві стрічки на кутах однієї сторони (в нашому прикладі - праворуч) так, щоб вони трохи виглядали з маски, але стрічка простягалася всередину.
+- Тепер покладіть основну тканину зверху на це містечко гарним боком. Тепер обидва шари маски повинні бути накладені один на одного _лицьовими сторонами один до одного_ і дві стрічки, затиснуті між ними
+- Скріпіть стрічки та шари, щоб утримати їх на місці
+- Тепер зробіть те саме з іншого боку
 
 <Tip>
 
-As you get some practice, you will find you don't need to pin this and can just insert the
-ribbons as you approach a corner.
+Коли ви трохи попрактикуєтесь, то зрозумієте, що вам не потрібно прикріплювати стрічки, а можна просто вставляти стрічки
+, коли ви наближаєтесь до повороту.
 
 </Tip>
 
-Now sew around the mask, making sure to leave one side open so we can turn the mask inside-out later.
+Тепер прошийте маску навколо, обов'язково залишивши один бік відкритим, щоб потім можна було вивернути маску навиворіт.
 
 <Warning>
 
-Be careful not to catch any of the ribbons in the seam apart from where you want them to.
-Either guide them through the opening you leave on one side, or bunch them up in between
-the masks of your layer to keep them out of the way.
+Будьте обережні, щоб не зачепити стрічки у шві не там, де потрібно.
+Або проведіть їх через отвір, який ви залишили з одного боку, або згрупуйте їх між
+масками вашого шару, щоб вони не заважали.
 
 </Warning>
 
-### Step 4: Turn the mask inside-out
+### Крок 4: Виверніть маску навиворіт
 
-Actually, your mask is inside-out now, so turning it inside out will mean we get it outside-out, or regular.
+Насправді ваша маска зараз навиворіт, тож вивернувши її навиворіт, ми отримаємо звичайну, або звичайну маску.
 
-Just reach in through the side your left open and carefully pull the mask through to turn it.
+Просто простягніть руку через лівий відкритий бік і обережно потягніть маску, щоб повернути її.
 
-### Step 5 (optional): Press the mask
+### Крок 5 (необов'язковий): Натисніть маску
 
 <Note>
 
-This step has little functional value, it will only make your mask look better.
-So if you're not too bothered about that, feel free to skip it.
+Цей крок не має особливого функціонального значення, він лише зробить вашу маску кращою.
+Тож якщо вас це не надто турбує, сміливо пропускайте його.
 
 </Note>
 
-Now that the mask is as it should be, it's time to press it. Before doing so, make sure to fold the seam allowance of the side we left open inwards, so that we press it flat as if it was sewn.
+Тепер, коли маска стала такою, якою вона має бути, настав час її притиснути. Перед цим обов'язково загніть припуск на шов сторони, яку ми залишили відкритою, всередину, щоб притиснути його так, ніби ми його зшили.
 
-### Step 6: Close open side of the mask and edge-stitch around the edge
+### Крок 6: Закрийте відкриту сторону маски і прострочіть по краю
 
-![Edge-stitch around the mask](step6.svg)
+![Краєвий шов навколо маски](step6.svg)
 
-Now it's time to close the side of our mask the we left open to turn it inside out.
+Тепер настав час закрити ту сторону маски, яку ми залишили відкритою, щоб вивернути її навиворіт.
 
 We are not merely going to close the opening, but also edge-stitch around the entire mask to give our mask some extra stability, and keep the lining at the back.
 
-Make sure the open side is folded neatly inside, then edge-stitch around the entire mask.
+Переконайтеся, що відкрита сторона акуратно загорнута всередину, а потім прострочіть краєм по всій масці.
 
-### Step 7: Wear your mask or make a bunch
+### Крок 7: Одягніть маску або зробіть пучок
 
-That's it, you're done! You can now wear your mask.
+Ось і все, ви закінчили! Тепер ви можете надіти маску.
 
-Even better, make a bunch so you can give others masks too.
+А ще краще, зробіть цілу купу, щоб можна було дарувати маски іншим.
