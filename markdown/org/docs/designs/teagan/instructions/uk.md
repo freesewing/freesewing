@@ -1,174 +1,174 @@
 - - -
-title: "Teagan T-shirt: Sewing Instructions"
+назва: "Футболка Тіган: Інструкція з пошиття"
 - - -
 
-## Step 1: Close the shoulder seams
+## Крок 1: Зшийте плечові шви
 
-![Close the shoulder seams](step01.svg)
+![Закрийте плечові шви](step01.svg)
 
-- Place the front and back on top of each other with [good sides together](/docs/sewing/good-sides-together). Align the shoulder seams.
-- Serge the shoulder seams, or stitch them with a narrow (~2 mm) zigzag stitch at the standard seam allowance.
-
-<Note>
-Optional: In a drapier knit, you may choose to reinforce the shoulder seams by stitching clear elastic along the seam on the inside. On a T-shirt, the shoulder seams support most of the weight of the garment. Reinforcing is not required, but it can keep the shoulder seams from stretching over time.
-</Note>
-
-## Step 2: Set in the sleeves
-
-![Set in sleeves](step02.svg)
-
-- Place your now attached front and back with the good side up.
-- Identify the front and back sides of each of your sleeves. (This is how you separate the left sleeve from the right.) On your paper pattern piece, the front side of the sleeve is to the right.
-- Place a sleeve on top of the front and back, with the good side down.
-- Align the top of the sleevecap with the shoulder seam. Make sure that the front and back of the sleeve are aligned with the front and back pieces of your shirt.
-- Pin sleeve in place along the entire armhole. There’s a bit of sleevecap ease, which means that the sleevehead is slightly longer than the armhole. Ease in the top part of the sleeve head while pinning.
-- Sew/serge your pinned sleeve in place.
-- Repeat for the other sleeve.
-
-## Step 3: Sew the neck finish
-
-There are two options for the neck finish on Teagan: a knit band or knit binding. Knit band is what you typically see on store-bought T-shirts, whereas knit binding is the finish you'll find on the Aaron A-Tank. Directions for both are given here.
+- Покладіть передню і задню частини один на одного [лицьовими сторонами разом](/docs/sewing/good-sides-together). Вирівняйте плечові шви.
+- Плечові шви розпрасувати або прострочити вузькою (~2 мм) зигзагоподібною строчкою зі стандартним припуском на шви.
 
 <Note>
-This is the most complex step in making the Teagan T-shirt, but it just requires a bit of practice. Don’t worry, all you need to do is make a couple of these and you’ll be a pro in no time.
+За бажанням: у драпірованому трикотажі ви можете посилити плечові шви, вшивши прозору резинку вздовж шва з внутрішньої сторони. На футболці плечові шви приймають на себе більшу частину ваги одягу. Підкріплення не є обов'язковим, але воно може вберегти плечові шви від розтягування з часом.
 </Note>
 
-### Option 1: knit band finish
+## Крок 2: Вставте рукава
 
-#### Place (the start of) your knit band
+![Комплект в рукавах](step02.svg)
 
-![Place your knit band](step03f.svg)
+- Покладіть тепер прикріплені передню і задню частини лицьовою стороною догори.
+- Визначте передню і задню сторони кожного з рукавів. (Так ви відокремлюєте лівий рукав від правого). На вашій паперовій викрійці лицьовий бік рукава знаходиться праворуч.
+- Покладіть рукав зверху на перед і спинку лицьовим боком донизу.
+- Вирівняйте верхню частину рукава з плечовим швом. Переконайтеся, що передня і задня частини рукава суміщені з передньою і задньою частинами сорочки.
+- Приколіть рукав по всій проймі. Тут трохи полегшений рукав, що означає, що горловина рукава трохи довша за пройму. Під час приколювання полегшіть верхню частину головки рукава.
+- Пришийте/застрочіть приколотий рукав на місце.
+- Повторіть для другого рукава.
 
-- Fold your binding in half lengthwise (parallel to the longest side), and press.
-- Put your T-shirt down with the back good side up, and place your band strip on top of it, lining up the raw edges of the band with the raw edge of the neck opening.
-- Your band should start at the center back of the neck opening.
-- Now shift your binding strip 1cm beyond your starting point. This little extra will guarantee we can join the two ends later.
+## Крок 3: Пришийте горловину
 
-#### Sew band in place
+У Teagan є два варіанти оздоблення горловини: трикотажна стрічка або трикотажна палітурка. Трикотажна стрічка - це те, що ви зазвичай бачите на куплених у магазині футболках, тоді як трикотажна палітурка - це обробка, яку ви знайдете на Aaron A-Tank. Схему проїзду до обох місць можна знайти тут.
 
-![Sew knit band in place](step03g.svg)
+<Note>
+Це найскладніший крок у виготовленні футболки Teagan, але він вимагає лише трохи практики. Не хвилюйтеся, все, що вам потрібно зробити - це зробити пару таких, і ви станете професіоналом в найкоротші терміни.
+</Note>
 
-- Place your presser foot 3 cm along the knit band, so a 4 cm tail will be left unstitched. This will help us join the ends together later. Then, sew around the neck opening, stretching the band gently as you sew.
+### Варіант 1: оздоблення трикотажною стрічкою
+
+#### Помістіть (початок) трикотажну стрічку
+
+![Покладіть трикотажну стрічку](step03f.svg)
+
+- Складіть палітурку навпіл уздовж (паралельно найдовшій стороні) і притисніть.
+- Покладіть футболку виворітним боком догори, а зверху накладіть на неї стрічку, сумістивши необроблені краї стрічки з необробленим краєм отвору для горловини.
+- Ваша стрічка повинна починатися по центру задньої частини горловини.
+- Тепер змістіть смужку для палітурки на 1 см від початкової точки. Ця невелика надбавка гарантує, що ми зможемо з'єднати кінці з кінцями пізніше.
+
+#### Пришийте стрічку на місце
+
+![Пришийте трикотажну стрічку на місце](step03g.svg)
+
+- Просуньте притискну лапку на 3 см уздовж трикотажної стрічки, щоб залишився непрошитий хвостик довжиною 4 см. Це допоможе нам згодом з'єднати кінці з кінцями. Потім пришийте навколо отвору для горловини, обережно розтягуючи стрічку під час шиття.
 
 <Note>
   
-This stretching is the trickiest part. Many online tutorials will tell you to simply start with a band slightly smaller than the neck opening, and stretch to fit. While an option, this does not account for differences in fabric stretch and elasticity, and can result in a floppy or puckered neck finish. Stretching to fit the neck opening by feel is something that takes a bit of practice, but is a good skill to build for better finishes long-term.
+Це розтягування - найскладніша частина. У багатьох онлайн-уроках ви можете просто почати зі стрічки трохи меншого розміру, ніж отвір для шиї, і розтягнути її до потрібного розміру. Хоча це і варіант, але він не враховує різницю в розтяжності та еластичності тканини, що може призвести до того, що горловина вийде зморшкуватою або зібганою. Розтягування на дотик, щоб підігнати виріз горловини, вимагає певної практики, але це хороший навик, який можна розвинути для кращої обробки в довгостроковій перспективі.
   
 </Note>
 
-- Stop sewing 3 cm before the end, leaving a tail like we did at the beginning.
+- За 3 см до кінця припиніть шиття, залишивши хвостик, як ми робили на початку.
 
-#### Sew band ends together
+#### Зшийте кінці стрічки разом
 
-![Sew band ends](step03c.svg)
+![Зшийте кінці стрічки](step03c.svg)
 
-Now it's time to sew the ends of our knit band together.
-- Take the end of your knit band, and stretch it along the 3 cm separating it from the start point as you would while sewing. On the band, mark where the band reached the start point, or center back. Do the same for the other end.
-- Fold your T-shirt in whatever way makes it more easy for you to place both band ends with good sides together, aligning the marks. Sew them together at the marks.
- - You should now have a joined knit band.
+Тепер настав час зшити кінці нашої трикотажної стрічки разом.
+- Візьміть кінець трикотажної стрічки і розтягніть її вздовж 3 см, що відокремлюють її від початкової точки, як під час шиття. На стрічці відмітьте місце, де стрічка досягла початкової точки, або центр назад. Зробіть те саме з іншого боку.
+- Складіть футболку так, щоб вам було легше розмістити обидва кінці стрічки лицьовими сторонами один до одного, вирівнявши мітки. Зшийте їх разом по мітках.
+ - Тепер у вас повинна вийти з'єднана трикотажна смуга.
 
 <Note>
 
-6 cm is not much, but should be enough to get both edges comfortably under your sewing machine to sew them together.
+6 см - це небагато, але цього має бути достатньо, щоб обидва краї зручно розташувати під швейною машинкою і зшити їх разом.
 
 </Note>
 
-![Finish knit band](step03h.svg)
+![Фінішна трикотажна стрічка](step03h.svg)
 
-- Now that your band ends are joined together, it’s time to finish the last 6 cm, by stretching and sewing down the band as you did for the rest.
+- Тепер, коли кінці стрічки з'єднані разом, настав час закінчити останні 6 см, розтягуючи і пришиваючи стрічку так само, як ви робили це з рештою.
 
-Hurray! You've finished the trickiest part! Optionally, you can secure the raw edges by stitching them down to the T-shirt fabric, just inside the knit band with a sig-zag or coverlock stitch. This is not required, but it is a detail that you'll see on many ready-to-wear T-shirts, and it can help your neck band lie flat.
+Ура! Ви закінчили найскладнішу частину! За бажанням ви можете закріпити необроблені краї, пришивши їх до тканини футболки, безпосередньо всередині трикотажної стрічки, швом "зигзаг" або потайним швом. Це не обов'язково, але це деталь, яку ви побачите на багатьох готових футболках, і вона може допомогти шийній стрічці лежати рівно.
 
-![Sew down knit band to secure](step03i.svg)
+![Пришийте трикотажну стрічку для фіксації](step03i.svg)
 
-### Option 2: knit binding finish
+### Варіант 2: оздоблення трикотажної палітурки
 
 <Tip>
 
-A more extensive how-to on knit binding can be found in the [Aaron Instuctions](/docs/patterns/aaron/instructions).
+Більш детальну інструкцію по в'язанню можна знайти в [Інструкції Аарона] (/docs/patterns/aaron/instructions).
 
 </Tip>
 
-#### Place (the start of) your binding
+#### Місце (початок) палітурки
 
-![Place your binding](step03a.svg)
+![Розмістіть палітурку](step03a.svg)
 
-- Put your T-shirt down with the back good side up, and place your binding strip on top of it with the good side down (as in, good sides together). Your binding should start at the center back of the neck opening.
-- Align the long edge of your strip with the edge of your fabric so the strip lies on top of the fabric (not in the opening). Place the corner on your starting point.
-- Now shift your binding strip 1cm beyond your starting point. This little extra will guarantee we can join the two ends later.
+- Покладіть футболку лицьовою стороною догори, а зверху покладіть смужку для скріплення лицьовою стороною донизу (тобто лицьовими сторонами разом). Зв'язування слід починати від центру горловини ззаду.
+- Вирівняйте довгий край смужки з краєм тканини так, щоб смужка лежала на тканині (а не в отворі). Помістіть куточок у вихідну точку.
+- Тепер змістіть смужку для палітурки на 1 см від початкової точки. Ця невелика надбавка гарантує, що ми зможемо з'єднати кінці з кінцями пізніше.
 
-#### Sew binding in place
+#### Пришийте палітурку на місце
 
-![Sew binding in place](step03b.svg)
+![Пришийте палітурку на місце](step03b.svg)
 
-- Place your presser foot 3 cm along the knit binding, so a 3 cm tail will be left unstitched. This will help us join the ends of the binding later. Then, sew 1.5 cm from the edge around the neck opening, stretching the binding gently as you sew.  (Note: this is not the standard seam allowance.)
-- Stop sewing 3 cm before the end, leaving a tail like we did at the beginning.
+- Розмістіть притискну лапку на 3 см уздовж в'язальної палітурки, таким чином, 3 см хвостик залишиться не прошитим. Це допоможе нам пізніше з'єднати кінці палітурки. Потім прошийте 1,5 см від краю навколо отвору для горловини, обережно розтягуючи палітурку під час шиття.  (Примітка: це не стандартний припуск на шов).
+- За 3 см до кінця припиніть шиття, залишивши хвостик, як ми робили на початку.
 
-#### Mark and sew binding ends
+#### Розмітьте та зшийте кінці палітурки
 
-![Sew binding ends](step03c.svg)
+![Зшийте кінці палітурки](step03c.svg)
 
-- With about 6cm left to go before we complete our circle, it’s time to sew the ends of the binding together.
-- Take one of the edges, and stretch it along the 3cm separating it from the start point as you would while sewing. On the binding, mark where the binding reached the start point. Do the same for the other end.
-- Fold your T-shirt in whatever way makes it more easy for you to place both binding ends with good sides together, aligning the marks. Sew them together at the marks.
+- Коли до завершення нашого кола залишилося близько 6 см, час зшити кінці палітурки разом.
+- Візьміть один з країв і розтягніть його на 3 см, що відокремлюють його від початкової точки, як під час шиття. На палітурці відмітьте, де палітурка досягла початкової точки. Зробіть те саме з іншого боку.
+- Складіть футболку так, щоб вам було легше покласти обидва кінці для зшивання лицьовими сторонами один до одного, сумістивши мітки. Зшийте їх разом по мітках.
 
 <Note>
 
-6 cm is not much, but should be enough to get both edges comfortably under your sewing machine to sew them together.
+6 см - це небагато, але цього має бути достатньо, щоб обидва краї зручно розташувати під швейною машинкою і зшити їх разом.
 
 </Note>
 
-![Finish binding](step03d.svg)
+![Фінішна палітурка](step03d.svg)
 
-- Now that your binding ends are joined together, it’s time to finish the last 6cm of binding. Sew it down, staying 1.5cm from the edge as you did before.
+- Тепер, коли кінці палітурки з'єднані між собою, настав час закінчити останні 6 см палітурки. Пришийте його вниз, відступивши 1,5 см від краю, як ви робили раніше.
 
-#### Fold knit binding to the back and sew down
+#### Відверніть трикотажну палітурку на виворітну сторону і пришийте
 
-![Sew down binding](step03e.svg)
+![Зшийте палітурку](step03e.svg)
 
-- Fold your binding fabric around the fabric of your T-shirt to the back. This is how we’ll sew it down.
-- While the fabric is folded double at the front (hiding the fabric edge in the process), there’s no need for that at the back. We will merely trim back the edge later, given that knit doesn’t ravel. If we were to fold back the fabric at the back too, it would only add bulk.
-- Now you’ll sew the binding down. From the right side of your fabric, sew along the inner edge of your binding (furthest from the edge), making sure to catch the binding at the back in the process.
+- Складіть палітурну тканину навколо тканини футболки на спинку. Ось так ми його пришиватимемо.
+- У той час як спереду тканина складається вдвічі (ховаючи край тканини в процесі), ззаду в цьому немає необхідності. Пізніше ми просто обріжемо край, враховуючи, що трикотаж не збивається. Якби ми склали тканину ззаду, це лише додало б об'єму.
+- Тепер ви пришиваєте палітурку. З правого боку тканини прошийте вздовж внутрішнього краю палітурки (найвіддаленішого від краю), не забуваючи при цьому захопити палітурку ззаду.
 
 <Note>
-If you have a coverlock machine, that would be perfect for this seam.
+Якщо у вас є оверлочна машина, вона ідеально підійде для цього шва.
 </Note>
 
-- You’ll have to, once again, stretch your binding a bit while doing this. But this time, there’s an extra caveat to look out for.
+- Знову ж таки, при цьому вам доведеться трохи розтягнути палітурку. Але цього разу є додаткове застереження, на яке слід звернути увагу.
 
 <Note>
 
-##### Beware of the uneven feed
+##### Остерігайтеся нерівномірної подачі
 
-As your feed your binding through your sewing machine, the feed dogs will pull the bottom layer (back of your binding) forward.
+Коли ви протягуєте палітурку через швейну машину, ниткопротягувачі тягнуть нижній шар (задній бік палітурки) вперед.
 
-In a perfect world, all layers will follow smoothly. But more often than not, the top layer (front of your binding) tends to lag behind a bit. This causes your binding to not neatly fold around the edge of the fabric, but make ugly wrinkles.
+В ідеальному світі всі шари будуть слідувати одна за одною. Але найчастіше верхній шар (передня частина палітурки) має тенденцію трохи відставати. Це призводить до того, що палітурка не акуратно складається по краю тканини, а утворює некрасиві складки.
 
-So watch out for this, and if you see it happening, stretch the under layer a bit extra to compensate.
-On the inside of your T-shirt, trim back the knit binding just outside of your seam to finish up.
+Тому слідкуйте за цим, і якщо ви бачите, що це відбувається, розтягніть нижній шар трохи більше, щоб компенсувати це.
+На внутрішній стороні футболки обріжте трикотажну в'язку трохи далі від шва, щоб завершити роботу.
 
 </Note>
 
-## Step 4: Close the side seams and sleeves
+## Крок 4: Зашийте бокові шви та рукави
 
-![Close the side seams and sleeves](step04.svg)
+![Зашийте бокові шви та рукави](step04.svg)
 
-- Fold your Teagan T-shirt double at the shoulder seams with good sides together.
-- Align the side seams and sleeves and pin them together.
-- Serge/sew the side seam and continue sewing to close the arms all the way to the sleeve hem.
-- Repeat on the other side.
+- Складіть футболку Teagan вдвічі по плечових швах лицьовими сторонами разом.
+- Вирівняйте бокові шви і рукави та приколіть їх разом.
+- Виконайте боковий шов і продовжуйте шити, щоб закрити рукава до самого низу рукава.
+- Повторіть з іншого боку.
 
-## Step 5: Finish hem and sleeves
+## Крок 5: Закінчіть обробку подолу та рукавів
 
-![Finish hem and sleeves](step05.svg)
+![Оздоблення подолу та рукавів](step05.svg)
 
-- Fold the hem upwards, to the inside, and sew it down. If you have a coverlock, use it. If not, use a twin needle or zig-zag stitch to keep the seam stretchable.
-- Repeat for the hem on each sleeve.
+- Підверніть підгин догори, всередину, і пришийте його. Якщо у вас є замок, використовуйте його. Якщо ні, використовуйте подвійну голку або зигзагоподібну строчку, щоб шов залишався еластичним.
+- Повторіть для подолу кожного рукава.
 
 <Note>
 
-##### Fold only once, to avoid bulk
+##### Складіть лише один раз, щоб уникнути об'єму
 
-Knitwear doesn’t ravel, so you can simply fold this over once and sew it down, then neatly trim back the fabric.
+Трикотаж не збивається, тому ви можете просто скласти його один раз і зшити, а потім акуратно обрізати тканину назад.
 
 </Note>
