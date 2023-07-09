@@ -1,5 +1,5 @@
 - - -
-title: "Cornelius cycling breeches"
+назва: "Велосипедні бриджі Cornelius"
 - - -
 
 <PatternDocs pattern='cornelius' />
