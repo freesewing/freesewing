@@ -1,9 +1,9 @@
 - - -
-title: "Front pocket slant depth"
+назва: "Глибина нахилу передньої кишені"
 - - -
 
-Controls the depth of the front pocket slant. In other words, it determines how wide the pocket opening is.
+Регулює глибину нахилу передньої кишені. Іншими словами, він визначає, наскільки широким буде отвір кишені.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_frontpocketslantdepth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](charlie_frontpocketslantdepth_sample.svg "Вплив цієї опції на шаблон")
