@@ -1,8 +1,8 @@
 ---
-title: undefined
+title: indéfini
 ---
 
-undefined
+indéfini
 
 ## Effet de cette option sur le modèle
 
