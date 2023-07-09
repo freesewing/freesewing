@@ -1,5 +1,5 @@
 - - -
-title: "Sven sweatshirt: Required Measurements"
+назва: "Світшот Свен: Необхідні виміри"
 - - -
 
 <PatternMeasurements pattern='sven' />
