@@ -1,5 +1,5 @@
 - - -
-title: "Bent body Block: Design Options"
+назва: "Блок з гнутого тіла: Варіанти дизайну"
 - - -
 
 <PatternOptions pattern='bent' />
