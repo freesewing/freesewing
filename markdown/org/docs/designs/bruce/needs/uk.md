@@ -1,10 +1,10 @@
 - - -
-title: "Bruce boxer briefs: What You Need"
+назва: "Труси-боксери Брюс: Що вам потрібно"
 - - -
 
-To make Bruce, you will need the following:
+Щоб зробити Брюса, вам знадобиться наступне:
 
-- Basic sewing supplies
-- About 1 meter (1.1 yards) of a suitable fabric ([see Fabric options](/docs/patterns/bruce/fabric/))
-- Enough wide (3cm (1.2 inch) or wider) elastic to fit around your waist
-- A serger, although you can survive without one
+- Основні матеріали для шиття
+- Приблизно 1 метр (1,1 ярда) відповідної тканини ([див. варіанти тканини](/docs/patterns/bruce/fabric/))
+- Достатньо широка (3 см (1,2 дюйма) або ширше) гумка, щоб облягати талію
+- Серветка, хоча ви можете вижити і без неї
