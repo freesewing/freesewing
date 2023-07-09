@@ -1,17 +1,17 @@
 - - -
-title: "Back rise"
+Назва: "Підйом на спину"
 - - -
 
-![The back rise option on Cathrin](./backrise.svg)
+![Варіант підйому спинки на Cathrin](./backrise.svg)
 
-How high do you want the corset to rise at the back, relative to the underbust height?
+Наскільки високо ви хочете, щоб корсет піднімався ззаду по відношенню до висоти нижньої частини бюста?
 
-Zero means that the backline will stay horizontal at the level of your underbust. In other words, the back will be somewhat the same height as your bra strap.
+Нуль означає, що лінія спинки залишиться горизонтальною на рівні вашого нижнього бюста. Іншими словами, спинка буде приблизно на тій же висоті, що і бретелька вашого бюстгальтера.
 
-If you increase the back rise, your corset will rise upwards at the back.
+Якщо ви збільшите підйом спинки, ваш корсет підніметься вгору ззаду.
 
-> As this is an underbust corset, the back rise is a style choice and won't affect the fit
+> Оскільки це корсет для підняття грудей, підйом спинки є вибором стилю і не впливає на посадку.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_backrise_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](cathrin_backrise_sample.svg "Вплив цієї опції на шаблон")
