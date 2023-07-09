@@ -1,20 +1,20 @@
 - - -
-title: "Ribbing stretch"
+Назва: "Ребриста розтяжка"
 - - -
 
-![Ribbing stretch on Hugo](./ribbingstretch.svg)
+![Розтяжка ребер на Hugo](./ribbingstretch.svg)
 
-This option allows you to tweak the stretch of your ribbing.
+Ця опція дозволяє налаштувати розтягнення ребер.
 
-If you choose 90% (for example) for every 10cm of ribbing, we'll only draft 9cm. This way, 9cm of ribbing will be stretched to 10cm.
+Якщо ви виберете 90% (наприклад) на кожні 10 см ребра, ми витягнемо лише 9 см. Таким чином, 9 см ребер будуть розтягнуті до 10 см.
 
 <Note>
 
-If you're not sure what to pick, best is to take the ribbing you are going to use see how much of it
-you need to stretch out to get to 10 cm with a _good_ stretch.
+Якщо ви не впевнені, що вибрати, найкраще взяти ребро, яке ви збираєтеся використовувати, і подивитися, скільки його
+потрібно розтягнути, щоб отримати 10 см при _хорошій_ розтяжці.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](hugo_ribbingstretch_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](hugo_ribbingstretch_sample.svg "Вплив цієї опції на шаблон")
