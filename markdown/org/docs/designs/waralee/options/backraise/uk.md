@@ -1,9 +1,9 @@
 - - -
-title: "Back Raise"
+назва: "Підняття спини"
 - - -
 
-This setting raises the waist in the back. Our waist does not sit horizontally, but is angled up at the back. This seting allows you to raise this in the back if you need it for a good fit.
+Це налаштування піднімає талію ззаду. Наша талія сидить не горизонтально, а під кутом ззаду. Це налаштування дозволяє вам підняти його ззаду, якщо вам потрібно, щоб він краще прилягав до тіла.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](waralee_backraise_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](waralee_backraise_sample.svg "Вплив цієї опції на шаблон")
