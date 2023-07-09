@@ -1,11 +1,11 @@
 - - -
-title: "Sleeve bend"
+назва: "Згин рукава"
 - - -
 
-![Sleeve bend](sleevebend.svg)
+![Вигин рукава](sleevebend.svg)
 
-The bend at the elbow of your sleeve.
+Згин на лікті рукава.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_sleevebend_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_sleevebend_sample.svg "Вплив цієї опції на шаблон")
