@@ -1,7 +1,7 @@
 ---
-title: How to recreate a pattern from a Github gist
+title: Як відтворити шаблон з Github gist
 ---
 
-This page allows you to recreate a pattern from a [Github gist](https://gist.github.com/).
+Ця сторінка дозволяє відтворити шаблон з [Github gist](https://gist.github.com/).
 
-To do so, simply past either the full URL to the gist, or the gist's ID (the last part of the URL).
+Для цього просто вставте або повну URL-адресу до суті, або ідентифікатор суті (остання частина URL-адреси).
