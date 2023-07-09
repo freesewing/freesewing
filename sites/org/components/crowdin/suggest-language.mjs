@@ -1,5 +1,3 @@
-// Dependencies
-import translators from 'site/prebuild/translators.json'
 // Context
 import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Hooks
