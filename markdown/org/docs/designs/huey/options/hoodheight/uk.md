@@ -1,11 +1,11 @@
 - - -
-title: "Hood height"
+назва: "Висота капюшона"
 - - -
 
-![Hood height](./hoodheight.svg)
+![Висота витяжки](./hoodheight.svg)
 
-Controls the height of the hood.
+Регулює висоту витяжки.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_hoodheight_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](huey_hoodheight_sample.svg "Вплив цієї опції на шаблон")
