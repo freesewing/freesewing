@@ -1,61 +1,61 @@
 ---
-title: Motivation
+title: Мотивація
 ---
 
 <Note>
 
-This is a personal note by Joost De Cock -- the FreeSewing maintainer -- about
-his motivations for [the FreeSewing revenue pledge](/docs/various/pledge/)
+Це особиста нотатка Йооста Де Кока (Joost De Cock), супровідника FreeSewing, про
+його мотивацію до [обіцянки щодо доходу FreeSewing] (/docs/various/pledge/).
 
 </Note>
 
-You probably assume that we ask for money to keep the servers running. But that's not exactly true.
+Ви, напевно, припускаєте, що ми просимо гроші, щоб підтримувати роботу серверів. Але це не зовсім так.
 
-I don't know if you're familiar with the phrase **noblesse oblige** but it essentially means that privilege entails responsibility.
+Не знаю, чи знайомі ви з фразою **noblesse oblige** , але вона по суті означає, що привілеї тягнуть за собою відповідальність.
 
-I am privileged, and thus I have responsibilities. I am very fortunate to have been born in Western Europe, to have a good job, and a roof over my head.
+Я маю привілеї, а отже, маю відповідальність. Мені дуже пощастило народитися в Західній Європі, мати хорошу роботу і дах над головою.
 
-Could I use the money? Yes I could.  
-Do I need the money? No I don't.
+Чи можу я скористатися грошима? Так, можу.  
+Мені потрібні гроші? Ні, не знаю.
 
-##### The value of your support
+##### Цінність вашої підтримки
 
-The main risk to FreeSewing is the same as any open source project out there: maintainer burnout.
+Основний ризик для FreeSewing такий самий, як і для будь-якого проекту з відкритим вихідним кодом: вигорання супровідника.
 
 While I no longer carry FreeSewing alone — and I can't overstate the value of the work of all contributors — that doesn't make me immune to feelings of **Why the hell am I doing this?**
 
-When you become a FreeSewing Patron, you give more than money. To me, the main value is the message you send to me and other people working on this. And that message is: **Hey, you're doing a worthwhile thing. Keep up the good work**.
+Коли ви стаєте меценатом FreeSewing, ви даєте більше, ніж гроші. Для мене головна цінність - це повідомлення, яке ви надсилаєте мені та іншим людям, які працюють над цим. І це послання таке: **"Гей, ти робиш корисну справу. Продовжуйте в тому ж дусі**.
 
-##### The value of your money
+##### Цінність ваших грошей
 
-It is not _just_ about the money. But that doesn't mean the money is not important. Much to the contrary.
+Це не _тільки_ про гроші. Але це не означає, що гроші не важливі. Швидше навпаки.
 
-Raising money by doing something I love and then passing it on to charity allows me to sleep at night.
+Заробляючи гроші, займаючись улюбленою справою, а потім передаючи їх на благодійність, я можу спокійно спати вночі.
 
-I could volunteer at a soup kitchen, or teach underprivileged children how to code. But instead I’m working on FreeSewing.
+Я міг би працювати волонтером у благодійній їдальні або навчати дітей з неблагополучних сімей програмуванню. Але замість цього я працюю над FreeSewing.
 
-Which is why all the money raised through FreeSewing goes to charity. It makes this project not only fun to do, but also socially responsible. And I need that to convince myself that yes, it's OK to spend all my time doing this, because FreeSewing is a force for good.
+Саме тому всі гроші, зібрані через FreeSewing, йдуть на благодійність. Це робить проект не тільки цікавим, але й соціально відповідальним. І мені це потрібно, щоб переконати себе, що так, це нормально - витрачати весь свій час на це, тому що FreeSewing - це сила добра.
 
-##### Charity is not sexy
+##### Благодійність - це не сексуально
 
-Here's the tricky part: People give less once they know the money goes to charity. I wish it wasn't the case, but it is.
+Ось у чому складність: Люди дають менше, коли знають, що гроші йдуть на благодійність. Хотілося б, щоб це було не так, але це так.
 
-So we're presenting [our subscription options](/community/join) like you would see on a for-profit site. It seems more intuitive this way, and also just works better.
+Тож ми представляємо [наші варіанти підписки](/community/join) так, як ви могли б побачити на комерційному сайті. Це здається більш інтуїтивно зрозумілим, а також просто краще працює.
 
-Yes, everything is free, and the money doesn't actually go to paying the server bills (because I choose to pay them out of my pocket for reasons outlined above). But that doesn't mean that these contributions are not crucial to the well-being of the project, or at the very least its maintainer (that would be me).
+Так, все безкоштовно, і гроші насправді не йдуть на оплату рахунків за сервер (тому що я вирішив оплачувати їх з власної кишені з причин, описаних вище). Але це не означає, що ці внески не мають вирішального значення для процвітання проекту або, принаймні, його супровідника (тобто мене).
 
-##### Why MSF is my charity of choice
+##### Чому MSF - моя улюблена благодійна організація
 
-There's a lot of misery in the world. As I watch the news, I often feel my faith in humanity slipping. Some of the most vulnerable people on this planet seem largely abandoned by rich countries and supra-national organisations.
+У світі багато страждань. Коли я дивлюся новини, я часто відчуваю, як моя віра в людство слабшає. Деякі з найбільш вразливих людей на нашій планеті здаються покинутими багатими країнами та наднаціональними організаціями.
 
-Yet somehow, wherever crisis strikes, there is a familiar banner flying that provides hope, and help. It's not the flag of the United Nations, nor is it the star spangled banner, or the blue and gold of the European Union.
+Але так чи інакше, де б не сталася криза, з'являється знайомий прапор, який дає надію і допомогу. Це не прапор Організації Об'єднаних Націй, не зоряний стяг, не синьо-золотий прапор Європейського Союзу.
 
-The one thing that always reminds me that humanity has not completely forsaken these people is to see the banner of Médecins Sans Frontières/Doctors Without Borders fly. Sometimes precariously, among the rubble of their bombed hospitals, but always there.
+Єдине, що завжди нагадує мені про те, що людство не покинуло цих людей, - це коли я бачу, як майорить прапор "Лікарів без кордонів". Іноді небезпечно, серед уламків їхніх розбомблених лікарень, але завжди там.
 
-I can't think of a single symbol that reminds us that not everything is lost, and there's still good people out there.
+Я не можу пригадати жодного символу, який би нагадував нам, що не все втрачено, і є ще хороші люди.
 
-It is also one of the few organisations that has the global reach to go and help there where it's needed most. We're used to them working in poverty-stricken regions, but when the COVID-19 pandemic ripped our healthcare systems to shreds, _MSF_ stepped up to the plate, deploying their teams in Western Europe, in the US, and anywhere where the need was most acute.
+Це також одна з небагатьох організацій, яка має глобальну мережу, що дозволяє їй допомагати там, де це потрібно найбільше. Ми звикли, що вони працюють у бідних регіонах, але коли пандемія COVID-19 розірвала наші системи охорони здоров'я на шматки, _MSF_ взяла на себе відповідальність, розгорнувши свої команди в Західній Європі, США та скрізь, де потреба була найгострішою.
 
-I hope that this explains the choice of Médecins Sans Frontières/Doctors Without Borders as FreeSewing's charity of choice. And I hope you will join us in making the world a little bit better.
+Я сподіваюся, що це пояснює вибір організації "Лікарі без кордонів" в якості благодійної організації для FreeSewing. І я сподіваюся, що ви приєднаєтеся до нас, щоб зробити світ трохи кращим.
 
-So I am happy to make [this pledge](/docs/various/pledge/).
+Тому я з радістю даю [цю обіцянку](/docs/various/pledge/).
