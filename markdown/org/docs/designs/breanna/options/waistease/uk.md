@@ -1,9 +1,9 @@
 - - -
-title: "Waist ease"
+Назва: "Легкість талії"
 - - -
 
-The amount of ease at the waist.
+Кількість легкості на талії.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_waistease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](breanna_waistease_sample.svg "Вплив цієї опції на шаблон")
