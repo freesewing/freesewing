@@ -1,5 +1,5 @@
 - - -
-title: "Wahid waistcoat"
+Назва: "Жилет вахіда"
 - - -
 
 <PatternDocs pattern='wahid' />
