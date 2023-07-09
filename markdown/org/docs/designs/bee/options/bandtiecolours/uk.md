@@ -1,11 +1,11 @@
 ---
-title: "Band (chest) tie length colours"
+title: "Кольори довжини краватки на поясі (нагрудної)"
 ---
 
 ***
 
-Whether you want single color tie around your chest, or dual-coloured ones
+Незалежно від того, чи хочете ви одноколірну краватку на грудях, чи двоколірну
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_bandtiecolours_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bee_bandtiecolours_sample.svg "Вплив цієї опції на шаблон")
