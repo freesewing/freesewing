@@ -1,9 +1,9 @@
 - - -
-title: "Length bonus"
+назва: "Бонус за довжину"
 - - -
 
-How much longer than the default length to make your apron.
+Наскільки довшим від стандартної довжини зробити фартух.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](albert_lengthbonus_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](albert_lengthbonus_sample.svg "Вплив цієї опції на шаблон")
