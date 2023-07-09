@@ -1,12 +1,12 @@
 - - -
-title: "Shoulder seam shift: collar side"
+назва: "Зсув плечового шва: сторона коміра"
 - - -
 
-Controls the shoulder seam location on the collar side.
+Контролює розташування плечового шва з боку коміра.
 
-- Increase this option to shift the shoulder seam forward on the collar side
-- Decrease this option to shift the shoulder seam backward on the collar side
+- Збільште цей параметр, щоб змістити плечовий шов вперед з боку коміра
+- Зменшіть цей параметр, щоб змістити плечовий шов назад з боку коміра
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bent_s3collar_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bent_s3collar_sample.svg "Вплив цієї опції на шаблон")
