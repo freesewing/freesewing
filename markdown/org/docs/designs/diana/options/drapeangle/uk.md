@@ -1,11 +1,11 @@
 - - -
-title: "Drape angle"
+Назва: "Кут нахилу драпірування"
 - - -
 
-![The drape angle option on Diana](./drapeangle.svg)
+![Варіант кута нахилу штори на Діані](./drapeangle.svg)
 
-This option controls the amount of drape of your top.
+Ця опція регулює кількість драпірування вашого топа.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_drapeangle_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](diana_drapeangle_sample.svg "Вплив цієї опції на шаблон")
