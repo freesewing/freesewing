@@ -1,17 +1,17 @@
 - - -
-title: "Collar gap"
+назва: "Комірний розрив"
 - - -
 
-![Collar gap](collargap.svg)
+![Комірний зазор](collargap.svg)
 
-Distance the collar sits apart when closed.
+Відстань, на яку сидить комір у закритому стані.
 
 <Note>
 
-This is really mostly a style choice, but a wider collar gap (together with the collar angle) can accomodate a wider tie (knot).
+Це залежить від стилю, але ширший комір (разом з кутом нахилу коміра) може вмістити ширшу краватку (вузол).
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_collargap_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_collargap_sample.svg "Вплив цієї опції на шаблон")
