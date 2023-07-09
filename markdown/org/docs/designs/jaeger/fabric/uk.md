@@ -1,9 +1,9 @@
 - - -
-title: "Jaeger jacket: Fabric Options"
+назва: "Єгерська куртка: Варіанти тканин"
 - - -
 
-Sportscoats are typically made from a heavier wool, often with some texture or pattern in the weave. In general, they are made in _busier_ fabrics.
+Спортивні пальта, як правило, виготовляються з більш важкої вовни, часто з певною текстурою або візерунком у плетінні. Здебільшого вони виконані в _більш насичених_ тканинах.
 
-Style purists will argue that sportscoats should never be made out of suiting fabric, as a sportscoat is not a suit jacket. You can tell them go feck off and do whatever you want, it's your jacket.
+Пуристи стилю заперечать, що спортивне пальто ніколи не повинно бути виготовлене з костюмної тканини, адже спортивне пальто - це не піджак від костюма. Ти можеш сказати їм, щоб вони пішли до біса і робили, що хочуть, це ж твоя куртка.
 
-However, making Jaeger is going to take some time. Do yourself a favour and get something nice for the final project. (because you will be making a muslin, right?)
+Однак, виготовлення Єгера займе деякий час. Зробіть собі послугу і придбайте щось приємне для фінального проекту. (тому що ви будете робити муслін, чи не так?)
