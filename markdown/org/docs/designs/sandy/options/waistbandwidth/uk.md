@@ -1,11 +1,11 @@
 - - -
-title: "Waistband width"
+Назва: "Ширина пояса"
 - - -
 
-![Waistband width](waistbandwidth.svg)
+![Ширина пояса](waistbandwidth.svg)
 
-The width of the waistband
+Ширина пояса
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](sandy_waistbandwidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](sandy_waistbandwidth_sample.svg "Вплив цієї опції на шаблон")
