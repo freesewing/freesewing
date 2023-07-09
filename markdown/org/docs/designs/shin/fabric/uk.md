@@ -1,11 +1,11 @@
 - - -
-title: "Shin swim trunks: Fabric Options"
+"Плавки для гомілки": "Плавки з гомілкою: Варіанти тканин"
 - - -
 
-Swim trunks should be made out of a material with stretch that is suitable for being in the water.
+Плавки повинні бути виготовлені з еластичного матеріалу, придатного для перебування у воді.
 
-Typically, this falls apart in a few categories:
+Зазвичай це розпадається на кілька категорій:
 
-- Nylon mixed with elastene, spandex, or lycra is soft and stretchy. This is what most casual swimwear is made from.
-- Polyester mixed with PBT (polybutylene terephthalate) is less soft to the touch, but resistant to chlorine and salt water. This is what a lot of competitive swimwear is made from.
-- Neoprene, also known as scuba, is heavier and less stretchy. It's the stuff scuba suits are made from.
+- Нейлон, змішаний з еластином, спандексом або лайкрою, м'який і еластичний. Це те, з чого виготовляють більшість повсякденних купальників.
+- Поліестер, змішаний з PBT (полібутилентерефталат), менш м'який на дотик, але стійкий до хлору і солоної води. Це те, з чого зроблено багато змагальних купальників.
+- Неопрен, також відомий як акваланг, важчий і менш еластичний. Це матеріал, з якого виготовляють акваланги.
