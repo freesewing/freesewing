@@ -1,24 +1,24 @@
 - - -
-title: "Shin swim trunks: Cutting Instructions"
+"Плавки для гомілок": "Плавки для гомілки: Інструкція з розкрою"
 - - -
 
-- Cut **2 backs** with good sides together
-- Cut **4 fronts** 2 x 2 with good sides together
-- Cut **1 waistband**
+- Виріжте **2 спинки** лицьовими сторонами разом
+- Виріжте **4 лицьові сторони** 2 х 2 лицьовими сторонами разом
+- Крій **1 пояс**
 
-## Caveats
+## Застереження
 
-- To save paper, the waistband is not completely printed on the pattern since it's just a long rectangle. So look for the length indicator, and cut out a rectangle of that size.
-- The hem allowance is double the standard seam allowance.
+- Для економії паперу пояс на викрійці надруковано не повністю, оскільки він являє собою довгий прямокутник. Тож знайдіть індикатор довжини і виріжте прямокутник такого розміру.
+- Припуск на підгин вдвічі перевищує стандартний припуск на шов.
 
-Shin is a very simply pattern, and consists of two main parts plus the waistband.
+Шин - це дуже проста модель, яка складається з двох основних частин плюс пояс.
 
-Below is a typical draft layout:
+Нижче наведено типовий проект макета:
 
-![A typical Shin draft](layout.svg)
+![Типовий проект Шин](layout.svg)
 
 <Tip>
 
-The [pattern notation guide][1] explains all the different markings and lines on your draft.
+У [посібнику з позначення викрійок][1] пояснюються всі різні позначення і лінії на вашому ескізі.
 
 </Tip>
