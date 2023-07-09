@@ -1,11 +1,11 @@
 - - -
-title: "Collar notch return"
+назва: "Повернення виточки коміра"
 - - -
 
-![Collar notch return](collarnotchreturn.svg)
+![Повернення вирізу коміра](collarnotchreturn.svg)
 
-Controls the length of the upper notch side. 100% = same as notch depth.
+Контролює довжину верхньої сторони надсічки. 100% = дорівнює глибині виїмки.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_collarnotchreturn_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_collarnotchreturn_sample.svg "Вплив цієї опції на шаблон")
