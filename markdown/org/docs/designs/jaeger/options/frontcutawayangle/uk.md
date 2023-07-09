@@ -1,11 +1,11 @@
 - - -
-title: "Front cutaway angle"
+Назва: "Кут переднього зрізу"
 - - -
 
-![Front cutaway angle](frontcutawayangle.svg)
+![Передній кут зрізу](frontcutawayangle.svg)
 
-The angle by which the front opens up below the lower button.
+Кут, на який відкривається передня частина під нижнім ґудзиком.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_frontcutawayangle_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_frontcutawayangle_sample.svg "Вплив цієї опції на шаблон")
