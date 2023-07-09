@@ -1,5 +1,5 @@
 - - -
-title: "Simone shirt"
+назва: "Сорочка Симона"
 - - -
 
 <PatternDocs pattern='simone' />
