@@ -1,11 +1,11 @@
 - - -
-title: "Side/Front placement"
+назва: "Бокове/Фронтальне розміщення"
 - - -
 
-![Side-front placement](sidefrontplacement.svg)
+![Розміщення збоку спереду](sidefrontplacement.svg)
 
-Location of the front/side boundary as a proportion of your chest circumference. Higher numbers make a wider side panel.
+Розташування передньої/бокової межі у відсотках до окружності грудної клітки. Більші числа роблять бічну панель ширшою.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_sidefrontplacement_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_sidefrontplacement_sample.svg "Вплив цієї опції на шаблон")
