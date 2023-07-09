@@ -1,47 +1,47 @@
 ---
-title: Privacy notice
+title: Повідомлення про конфіденційність
 ---
 
-**Last update**: 8 January 2021
+**Останнє оновлення**: 8 січня 2021 року
 
-This privacy notice describes the personal data we store. It outlines why we need the data, how long we keep it, and whether we share it with any third-parties.
+Це повідомлення про конфіденційність описує персональні дані, які ми зберігаємо. У ній зазначено, навіщо нам потрібні дані, як довго ми їх зберігаємо і чи передаємо їх третім особам.
 
-We are confident it will demonstrate our commitment to privacy.
+Ми впевнені, що це продемонструє нашу відданість принципам конфіденційності.
 
-For clarity, we've broken this up in four different types of roles:
+Для наочності ми розділили їх на чотири різні типи ролей:
 
-- For **visitors of our website**, we store **[visitor data][v]**
-- For **subscribers to our newsletter**, we store **[subscriber data][s]**
-- For **users with an account** on our website, we store **[account data][a]**
-- For **users with an account that contains people**, we store **[people data][p]**
+- Для **відвідувачів нашого веб-сайту**ми зберігаємо **[дані про відвідувачів][v]**
+- Для **передплатників нашої розсилки**ми зберігаємо **[дані передплатників][s]**
+- Для користувачів **з обліковим записом** на нашому сайті ми зберігаємо **[дані облікового запису][a]**
+- Для користувачів **з обліковим записом, який містить людей**, ми зберігаємо **[дані людей][p]**
 
-Here are the relevant sections:
+Ось відповідні розділи:
 
 <ReadMore list />
 
 <Tip>
 
-##### These roles are typically cumulative
+##### Ці ролі, як правило, є кумулятивними
 
-If you are a newsletter subscriber, you are also a visitor.
-And if you are a user with one or more models, you are also a user, and also a visitor.
+Якщо ви є підписником на розсилку, ви також є відвідувачем.
+І якщо ви користувач однієї або декількох моделей, ви також є користувачем, а також відвідувачем.
 
 </Tip>
 
-##### Data Controller and Contact information
+##### Контролер даних та контактна інформація
 
-For questions about this privacy notice, you can contact Joost De Cock at joost@joost.at.
+З питаннями щодо цього повідомлення про конфіденційність ви можете звернутися до Joost De Cock за адресою joost@joost.at.
 
-##### Changes and Updates to this Policy
+##### Зміни та оновлення цієї Політики
 
-This policy may be updated occasionally. We will indicate this in the **Last update** data at the top of this document.
+Ця політика може періодично оновлюватися. Ми вкажемо на це в даних **Останнє оновлення** у верхній частині цього документа.
 
-A more comprehensive overview of this document's history is [available on GitHub][1]
+Більш детальний огляд історії цього документу можна знайти на сайті [, а також на GitHub][1].
 
-##### See also
+##### Дивіться також
 
-- [Your rights][2]
-- [Your consent][3]
+- [Ваші права][2]
+- [Ваша згода][3]
 
 [1]: https://github.com/freesewing/markdown/commits/develop/org/docs/various/privacy
 
