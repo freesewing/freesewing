@@ -1,243 +1,243 @@
 ---
-title: "Holmes deerstalker hat: Sewing Instructions"
+title: "Капелюх оленячого переслідувача Холмса: Інструкція з пошиття"
 ---
 
-### Step 1: Prepping the Pieces
+### Крок 1: Підготовка шматочків
 
-- If needed, Interface the crown and half the ear flap pieces.
-- If not already done so, it is recommended to mark the seam lines on your fabric pieces by either a temporary marker or by thread marking. This is for a more precise sew which is key for hat construction.
+- Якщо потрібно, з'єднайте коронку і половину вушної раковини.
+- Якщо цього ще не зроблено, рекомендуємо позначити лінії швів на шматках тканини тимчасовим маркером або ниткою. Це для більш точного зшивання, що є ключовим для конструкції капелюха.
 
 <Tip>
 
-Thread marking allows for the seam line to be seen on both the right and wrong sides.
+Маркування ниток дозволяє бачити лінію шва як з правого, так і з виворітного боку.
 
 </Tip>
 
 <Note>
 
-Even if you face the crown you may not want to face the ear flaps if you want them to be less rigid when tieing down.
+Навіть якщо ви стоїте обличчям до коронки, ви можете не стояти обличчям до вушних клапанів, якщо хочете, щоб вони були менш жорсткими при прив'язуванні.
 
 </Note>
 
 <Warning>
 
-These instructions assume you have marked your seam lines. They may be harder to follower if you skip this step.
+Ці інструкції передбачають, що ви розмітили лінії швів. Якщо ви пропустите цей крок, їх може бути складніше дотримуватися.
 
 </Warning>
 
-### Step 2: The Crown
+### Крок 2: Корона
 
-- With right sides together, matching seam lines and peaks, sew two crown pieces together.
-- Press seams open. You made need to use a tailors ham for this, if you do not have one you can use flannels or towels instead.
-- (Optional) _Edgestitch_ both sides of the seam, making sure to catch the seam allowances.
-- Repeat until you have two halves. If half the number of crown pieces is an odd number you will have to sew a single piece to each half. e.g. If you have 6 crown pieces, you make two halves of 3 sewing one piece to two sewn together pieces.
-- With right sides together, matchinig seam lines and peaks, sew the two halves together. You may find it easier to handstitch the peak together due to bulk or for precision. This seam will be refered to as the "centre crown seam" going forward.
-- (Optional) _Edgestitch_ both sides of the centre crown seam, making sure to catch the seam allowances.
+- Лицьовими боками разом, сумістивши лінії швів і вершини, зшийте дві деталі корони разом.
+- Розпрасуйте шви. Для цього вам знадобиться кравецький окорок, якщо у вас його немає, ви можете використати фланелеві або рушникові серветки.
+- (Необов'язково) _Краєобметочний шов_ з обох боків шва, обов'язково захопивши припуски на шви.
+- Повторюйте, поки не отримаєте дві половинки. Якщо половина кількості частин корони непарна, вам доведеться пришити по одній частині до кожної половини. Наприклад, якщо у вас є 6 частин коронки, ви робите дві половинки з 3, пришиваючи одну частину до двох зшитих разом частин.
+- Зшийте обидві половинки лицьовими боками разом, сумістивши лінії швів і вершини, з'єднайте їх разом. Можливо, вам буде легше зшити пік вручну через об'ємність або для точності. Надалі цей шов буде називатися "центральним швом коронки".
+- (Необов'язково) _Краєобметочний шов_ з обох боків центрального вінцевого шва, не забуваючи про припуски на шви.
 
 <Note>
 
-Depending on your seam allowance you may want to trim seams as you go to reduce bulk.
+Залежно від припусків на шви, ви можете обрізати шви по ходу роботи, щоб зменшити об'єм.
 
 </Note>
 
-### Step 3: The Ear Flaps
+### Крок 3: Вушні клапани
 
-#### Ear Flaps with Ties
+#### Вушанки на зав'язках
 
-- Cut two 12" (30cm) - 16" (40cm) length of ribbon. These will be refered to as ties going forward.
-- _Baste_ a tie to the right side of an ear flap (the interfaced one if using). Repeat for other tie.
-- With right sides together, matching seam lines, sew a tie ear flap to a non-tie ear flap.
-- Clip and trim seam allowance.
-- Turn inside out and press.
-- (Optional) _Topstitch_ or _edgestitch_ the folded edge.
-- _Baste_ the raw edges together.
-- Repeat for the remaining ear flap.
+- Відріжте дві стрічки довжиною 12" (30 см) - 16" (40 см). Надалі вони будуть називатися зв'язками.
+- _Прикріпіть_ зав'язку до правого боку вушної раковини (якщо вона використовується). Повторіть для іншої краватки.
+- Лицьовими боками до лицьових боків, сумістивши лінії швів, пришийте пелерину до пелерини без краватки.
+- Закріпіть і обріжте припуски швів.
+- Виверніть навиворіт і натисніть.
+- (За бажанням) _Верхній стібок_ або _крайовий стібок_ підгинання краю.
+- _Зліпити_ необроблені краї разом.
+- Повторіть для решти вушної раковини.
 
 <Tip>
 
-If you are uncertain about the length you want for your ties take 1 metre (39") of ribbon and cut it in half. Use these halves as the ties in the instructions above. The ties are finished at the end so you can adjust the lengths then.
+Якщо ви не впевнені, якої довжини хочете краватки, візьміть 1 метр (39 дюймів) стрічки і розріжте її навпіл. Використовуйте ці половинки як зав'язки в інструкціях вище. Зав'язки закінчуються в кінці, тому ви можете відрегулювати довжину.
 
 </Tip>
 
 <Note>
 
-The lengths above are recommendations so feel free to go as long or as short as you like with the ties.  
-If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.
+Наведені вище довжини є рекомендаціями, тому не соромтеся робити краватки настільки довгими чи короткими, наскільки вам подобається.  
+Якщо бажаєте, ви можете виготовити краватки з тканини, [див. викрійку "Холмс"] (/docs/patterns/holmes/cutting/) для отримання додаткової інформації.
 
 </Note>
 
-#### Ear Flaps with Buttonholes
+#### Вушанки-вушанки з ґудзиками
 
-- Face the backs of two of the buttonholes. (This is not needed if two flaps have already been interfaced)
-- With right sides together, matching seam lines, sew two ear flap pieces together (one interfaced, one not).
-- Clip and trim seam allowance.
-- Turn inside out and press.
-- (Optional) _Topstitch_ or _Edgestitch_ the folded edge.
-- _Baste_ the raw edges together.
-- Sew the buttonhole in your prefered method.
-- Repeat for the remaining ear flap.
+- Оберніть лицьовими сторонами до себе дві петлі для ґудзиків. (Це не потрібно, якщо дві заслінки вже з'єднані між собою)
+- Лицьовими боками до лицьового боку, сумістивши лінії швів, зшийте дві частини вушної раковини разом (одна з'єднана, інша - ні).
+- Закріпіть і обріжте припуски швів.
+- Виверніть навиворіт і натисніть.
+- (За бажанням) _Topstitch_ або _Edgestitch_ згинання краю.
+- _Зліпити_ необроблені краї разом.
+- Пришийте петлю для ґудзика у зручний для вас спосіб.
+- Повторіть для решти вушної раковини.
 
 <Warning>
 
-The ear flaps will need to be long enough to go over the top of the peak so they can be done up by a button on the peak. Do not use this method if you are not using a button on the top.
+Вушні клапани повинні бути достатньо довгими, щоб виходити за верхню частину козирка, щоб їх можна було застібнути за допомогою кнопки на козирку. Не використовуйте цей метод, якщо ви не використовуєте кнопку зверху.
 
 </Warning>
 
 <Note>
 
-**For both Ear Flaps with Ties and Button Holes**
+**Для обох вушних клапанів із зав'язками та отворами для ґудзиків**
 
-It is recommended to at least _topstitch_ the ear flaps but this may not be desirable with certain patterns so has been marked as optional.
+Рекомендується принаймні "зшити" вушні клапани, але це може бути небажано для деяких моделей, тому вони позначені як необов'язкові.
 
 </Note>
 
-### Step 4: The Visors
+### Крок 4: Козирки
 
-There are two methods for constructing the visors. This is due to the different types of materials the visor inserts can be made of. Method 1 is for materials that will not be damaged by a needle or iron. Method 2 is for materials that will be damaged by a needle or iron. Read both methods to determine which is best for you to use.
+Існує два способи виготовлення козирків. Це пов'язано з різними типами матеріалів, з яких можуть бути виготовлені вставки для козирка. Спосіб 1 - для матеріалів, які не будуть пошкоджені голкою або праскою. Спосіб 2 - для матеріалів, які можуть бути пошкоджені голкою або праскою. Ознайомтеся з обома методами, щоб визначити, який з них краще використовувати.
 
-#### The Visors Method 1
+#### Метод козирків 1
 
-- Place visor insert on one visor piece inside seam lines.
-- Temporarily secure visor insert to visor with temporary _pad Stitches_. This will be refered to as "faced visor" going forward.
-- _Baste_ along the seam line of the inner curve of the faced visor, making sure not to catch the visor insert.
-- With right sides together, matching seam lines and centre fronts, sew the faced visor to another visor piece along the outer curve close to the visor insert, making sure not to catch the visor Insert.
-- Notch and trim the outer curve making sure not to clip the stitching. (You may wish to turn and check the shape before this step)
-- Turn inside out and press. Making sure that the seam allowances are on top of not under the visor insert.
-- Using the previous basting line as a guide, _baste_ the opening closed.
-- Repeat this for remaining visor pieces.
+- Помістіть вставку козирка на одну деталь козирка всередині лінії швів.
+- Тимчасово закріпіть вставку козирка до козирка за допомогою тимчасової накладки _Шви_. Надалі ми будемо називати його "фасадним козирком".
+- _Приклейте_ по лінії шва внутрішнього вигину козирка, намагаючись не зачепити вставку козирка.
+- Лицьовими боками разом, сумістивши лінії швів і центри лицьових боків, пришийте козирок з лицьового боку до іншого козирка по зовнішньому вигину впритул до вставки козирка, намагаючись не зачепити вставку козирка.
+- Надсічіть і обріжте зовнішній вигин, намагаючись не обрізати строчку. (Можливо, ви захочете перевернути і перевірити форму перед цим кроком)
+- Виверніть навиворіт і натисніть. Переконайтеся, що припуски на шви знаходяться зверху, а не під вставкою козирка.
+- Використовуючи попередню лінію проклейки як орієнтир, _проклейте_ отвір.
+- Повторіть цю процедуру для решти частин козирка.
 
 <Warning>
 
-Be careful with the heat of an iron when using certain insert materials. You do not want to melt the Visor Insert and damage both it and the fabric.
+Будьте обережні з нагріванням праски при використанні певних матеріалів для вставок. Ви ж не хочете розплавити вставку козирка і пошкодити її та тканину.
 
 </Warning>
 
 <Note>
 
-If preferred you can temporarily attach the visor insert another way that does not require hand sewing and putting a needle through the material. Just make sure it does not damage your hat fabric when removing or applying.
+За бажанням ви можете тимчасово прикріпити вставку козирка іншим способом, який не потребує ручного шиття та проколювання матеріалу голкою. Просто переконайтеся, що він не пошкоджує тканину капелюха при знятті або нанесенні.
 
 </Note>
 
-#### The Visors Method 2
+#### Метод козирків 2
 
-- With rights sides together, matching seam lines and centre fronts, sew the outer curver of two visor pieces together.
-- Notch and trim (if needed) the outer curve making sure not to clip the stitching. (You may wish to turn and check the shape before this step)
-- Turn inside out and press.
-- Insert visor insert in to sewn visor tightly so there is no gap on the outer curver and the seam allowances are all one on side of the visor insert. This will be the upper side of the visor.
-- Pin the inner curve together making sure that the outer edge is pulled tightly over the visor insert.
-- _Baste_ as close as you can to the inner curve of the visor insert, making sure you pull the fabric tightly over the outer edge as you sew.
-- Repeat for the remaining visor pieces.
+- Лицьовими боками до лицьових боків, сумістивши лінії швів і центри лицьових боків, зшийте зовнішній вигин двох деталей козирка разом.
+- Надсічіть і обріжте (якщо потрібно) зовнішній вигин, намагаючись не обрізати строчку. (Можливо, ви захочете перевернути і перевірити форму перед цим кроком)
+- Виверніть навиворіт і натисніть.
+- Вставте вставку козирка в зшитий козирок так, щоб на зовнішньому вигині не було зазору, а припуски на шви були однаковими з обох боків вставки козирка. Це буде верхня сторона козирка.
+- Скріпіть внутрішній вигин разом, переконавшись, що зовнішній край щільно натягнутий на вставку козирка.
+- _Пришийте_ якомога ближче до внутрішнього вигину вставки козирка, переконавшись, що ви щільно натягуєте тканину на зовнішній край під час шиття.
+- Повторіть для решти частин козирка.
 
-### Step 5: Assembly and Lining
+### Крок 5: Збірка та облицювання
 
-Once again there are two methods for final assembly and lining. Read both methods carefully to determine which is best for you.
+Знову ж таки, є два способи остаточного складання та облицювання. Уважно ознайомтеся з обома методами, щоб визначити, який з них найкраще підходить саме вам.
 
-#### Assembly and Lining Method 1
+#### Спосіб складання та облицювання 1
 
-- Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).
-- Sew ear flap to the crown along seam lines.
-- Repeat for the remaining ear flap on the opposite side of the crown.
-- Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.
-- Hand-baste the visor to the crown matching the visor basting lines to the crown seam lines. It easier to _baste_ the centre down first and then work from the centre out.
-- Sew the visor to the crown along seam lines. You may find it easier to permanently hand-sew the visor on rather than using a machine.
-- Repeat for the remaining visor on the opposite side of the centre crown seam.
-- Remove all pad and basting stitches.
-- Press the seam allowances inwards, making sure the stitching is not visible on the outside.
-- (Optional) Loosely _whipstitch_ the seams to the inside of the crown making sure the stitching does not show on the outside.
-- Construct lining the same way as the crown ommitting _edgestitching_.
-- Fold and Press under the bottom seam allowance of the lining. You may find you need to press under more to prevent the lining from showing. You may also find you need to _baste_ the seam allowance down.
-- Matching centre crown seams and panel seams, pin the lining into the hat wrong sides together. Placing the folded edge along the stitching lines.
-- _Slipstitch_ or _whipstitch_ the lining to the seam allowance of the hat.
-- Remove lining basting if used.
-- (Optional) _Tack_ the peak of the lining to the peak of the crown. This is to help prevent the lining from falling out.
+- Зіставлення центрів і ліній швів вирівнює вушний клапан з правою стороною однієї з панелей, яка не є частиною центрального корончатого шва. Переконайтеся, що лицьова сторона прилягає до коронки (якщо вона лицьова).
+- Пришийте вушний клапан до маківки по лініях швів.
+- Повторіть для решти вушного клаптя на протилежному боці коронки.
+- Вирівняйте центральну передню частину козирка з правою стороною центрального шва корони, переконавшись, що вставка козирка знаходиться внизу.
+- Пришийте вручну козирок до верхівки, сумістивши лінії пришивання козирка з лініями швів верхівки. Простіше _промащувати_ спочатку від центру донизу, а потім працювати від центру до країв.
+- Пришийте козирок до маківки по лініях швів. Можливо, вам буде простіше пришити козирок вручну, а не на машинці.
+- Повторіть для решти козирка з протилежного боку від центрального шва корони.
+- Видаліть усі прокладкові та наметочні стібки.
+- Припуски швів притисніть всередину, переконавшись, що зшивання не видно зовні.
+- (Необов'язково) Вільно _зшийте_ шви з внутрішньої сторони корони, переконавшись, що шви не видно ззовні.
+- Виконайте підкладку так само, як і верхівку, пропускаючи _кантові строчки_.
+- Складіть і притисніть під припуском нижнього шва підкладки. Можливо, вам доведеться притиснути підкладку сильніше, щоб її не було видно. Можливо, вам також знадобиться _запрасувати_ припуски на шви вниз.
+- Сумістивши середні шви верхівки і шви панелей, приколіть підкладку до капелюха виворітними боками разом. Покладіть підігнутий край уздовж ліній строчки.
+- _Пришийте підкладку швом "вперед голку"_ або _швом "назад голку"_ до припусків на шви капелюха.
+- Видаліть підкладкову прокладку, якщо вона використовувалася.
+- (Необов'язково) _Прикріпіть_ пік підкладки до піку верхівки. Це допоможе запобігти випаданню підкладки.
 
-#### Assembly and Lining Method 2
+#### Спосіб монтажу та облицювання 2
 
-- Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).
-- _Baste_ the ear flap to the crown along seam lines
-- Repeat for the remaining ear flap on the opposite side of the crown.
-- Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.
-- Hand-baste the visor to the crown matching the visor basting lines to the crown seam lines. It easier to _baste_ the centre down first and then work from the centre out.
-- (Optional) Machine-baste the visor to the crown along seam lines.
-- Repeat for the remaining visor on the opposite side of the centre crown seam.
-- Construct lining the same way as the crown ommitting _edgestitching_ and leaving a gap in the centre lining seam large enough to turn the hat.
-- With right sides together, matching centre crown seams, panel seams and seam lines. Sew the lining to the the crown along seam lines. If bulky you may want to trim either the lining seams or both seams.
-- Turn hat inside out, pressing lining to inside.
-- (Optional/Alternate) _Understitch_ lining.
-- Slipstitch lining opening closed.
-- (Optional/Alternate) _Topstitch_ or _Edgestitch_ along the outside of the hat, catching the lining on the inside making sure it is not peaking whilst you sew.
-- (Optional) _Tack_ the peak of the lining to the peak of the crown. This is to help prevent the lining from falling out.
+- Зіставлення центрів і ліній швів вирівнює вушний клапан з правою стороною однієї з панелей, яка не є частиною центрального корончатого шва. Переконайтеся, що лицьова сторона прилягає до коронки (якщо вона лицьова).
+- _Пришити_ вушний клапан до маківки по лініях швів
+- Повторіть для решти вушного клаптя на протилежному боці коронки.
+- Вирівняйте центральну передню частину козирка з правою стороною центрального шва корони, переконавшись, що вставка козирка знаходиться внизу.
+- Пришийте вручну козирок до верхівки, сумістивши лінії пришивання козирка з лініями швів верхівки. Простіше _промащувати_ спочатку від центру донизу, а потім працювати від центру до периферії.
+- (Необов'язково) Пришийте козирок до верхівки по лініях швів.
+- Повторіть для решти козирка з протилежного боку від центрального шва корони.
+- Виконайте підкладку так само, як і верхівку, опускаючи _крайові шви_ і залишаючи проміжок в центральному шві підкладки, достатній для того, щоб можна було повернути капелюх.
+- Складіть лицьовими боками разом, сумістивши середні шви коронки, шви панелей і лінії швів. Пришийте підкладку до верхівки по лініях швів. Якщо виріб об'ємний, ви можете обрізати шви підкладки або обидва шви.
+- Виверніть капелюх навиворіт, притиснувши підкладку всередину.
+- (Додатково/альтернативно) _Підшивання_ підкладки.
+- Отвір для підкладки закритий.
+- (За бажанням/альтернативою) _Верхній стібок_ або _Краєобметочний стібок_ вздовж зовнішньої сторони капелюха, захопивши підкладку зсередини і переконавшись, що вона не випирає, поки ви прошиваєте.
+- (Необов'язково) _Прикріпіть_ пік підкладки до піку верхівки. Це допоможе запобігти випаданню підкладки.
 
 <Note>
 
-**For both Assembly and Lining Methods**
+**Для обох методів складання та підкладки**
 
-You can attach the visors on first, just make sure the visors are under the ear flaps if there is any overlap. It is simply whether you prefer the visors to be underneath or prefer the ear flaps to be underneath like in the instructions.
+Ви можете спочатку прикріпити козирки, просто переконайтеся, що козирки знаходяться під вушними клапанами, якщо вони перекривають один одного. Просто ви хочете, щоб козирки були знизу або щоб вушні клапани були знизу, як вказано в інструкції.
 
 </Note>
 
 <Tip>
 
-**For both Assembly and Lining Methods**
+**Для обох методів складання та підкладки**
 
-If you are having trouble dealing with the curves of the visors, sew a stitching line an 1/8" (3mm) from the basting line in the seam allowance of the visor and clip to it. This should make it easier to bend the visor to shape. Just make sure to hide this stitching and the clips when attaching the lining.
+Якщо у вас виникли труднощі з вигинами козирків, прокладіть строчку на відстані 1/8" (3 мм) від лінії намітки в припуск на козирок і закріпіть її на ньому. Це має полегшити згинання козирка за формою. Просто не забудьте приховати цю строчку і кліпси, коли прикріплюватимете підкладку.
 
 </Tip>
 
 <Warning>
 
-**For both Assembly and Lining Methods**
+**Для обох методів монтажу та облицювання**
 
-Assembly and Lining instructions are written with a 6 panelled Holmes in mind. You may find the placement of visors and ear flap pieces are different for other numbered panelled Holmes. As a rule of thumb generally the centre front of the visor is always on the centre crown seam so go from there if struggling.
+Інструкції по монтажу та облицюванню написані з урахуванням 6-панельного Холмса. Ви можете помітити, що розташування козирків і вушних раковин на інших номерних панелях Holmes відрізняється. Як правило, центральна передня частина козирка завжди знаходиться на центральному шві козирка, тому, якщо вам важко, починайте відштовхуватися від неї.
 
 </Warning>
 
-### Step 6: Finishing Ties
+### Крок 6: Фінішні стяжки
 
-If you did not cut your ties down when constructing the ear flaps, now is the time to do so. If you made custom ties with fabric then you do not need to do these steps. Again read through both methods carefully and pick which is the best for you.
+Якщо ви не обрізали зав'язки під час виготовлення вушних раковин, зараз саме час це зробити. Якщо ви виготовляли краватки на замовлення з тканини, вам не потрібно робити ці кроки. Знову ж таки, уважно прочитайте обидва методи і виберіть той, який найкраще підходить для вас.
 
-#### Finishing Ties Method 1
+#### Фінішні стяжки Спосіб 1
 
-- Fold the ends of a tie in half and cut a triangle out from the corner to the fold.
-- Unfold.
-- If you are worried about the ties fraying you can use fray check or equivalent.
-- Repeat for the remaining tie.
+- Складіть кінці краватки навпіл і виріжте трикутник від кута до згину.
+- Розгорни.
+- Якщо ви боїтеся, що краватки можуть зноситися, ви можете скористатися перевіркою на знос або еквівалентним засобом.
+- Повторіть для решти краваток.
 
-#### Finishing Ties Method 2
+#### Фінішні стяжки Спосіб 2
 
-- Fold under 1/8" (3mm) and another 1/8" (3mm) on one of the ties. Pin if needed.
-- _Whipstitch_ the folded edge down to the tie
-- Repeat for the remaining tie.
+- Загніть під 1/8" (3 мм) і ще 1/8" (3 мм) на одній зі стяжок. Закріпіть, якщо потрібно.
+- _Зшийте_ підігнутий край до зав'язки
+- Повторіть для решти краваток.
 
 <Note>
 
-To determine which way you want to fold the ties, you may find it easier to tie the ear flaps up first. Generally you want the fold to be on the underside of the ties but as always it is personal preference.
+Щоб визначити, в який бік ви хочете скласти зав'язки, можливо, вам буде простіше спочатку зав'язати вушні клапани. Зазвичай ви хочете, щоб складка була на нижній стороні краватки, але, як завжди, це ваші особисті уподобання.
 
 </Note>
 
-### Step 7: Button
+### Крок 7: Кнопка
 
-Unless you are doing the Buttonhole Ear Flaps you do not have to sew a button on but it may be useful if you want to hide any misaligned seams at the crown peak.
+Якщо ви не робите вушні клапани з петелькою, вам не потрібно пришивати ґудзик, але він може бути корисним, якщо ви хочете приховати шви на маківці, що не збігаються.
 
-- Construct a covered button.
-- Attach the button via the shank to the peak of the crown doing your best to keep it in the middle of the seams.
-- Alternatively if you are not using the button with the ear flaps you can bend the shank down and _whipstitch_ the edge of the button to the crown instead so it does not move.
+- Сконструюйте закритий ґудзик.
+- Прикріпіть ґудзик за допомогою хвостовика до верхівки корони, намагаючись, щоб він знаходився посередині швів.
+- Крім того, якщо ви не використовуєте ґудзик з вушками, ви можете зігнути хвостовик вниз і _пришити_ край ґудзика до верхівки, щоб він не рухався.
 
 <Note>
 
-Whilst certainly optional, you may find that a button is what is missing from the hat to finish the look. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what is missing. If it is, attach it permanently.
-Whilst a covered button is recommeneded you can use whatever button you desire, feel free to experiment!
+Хоча це необов'язково, ви можете виявити, що ґудзик - це те, чого не вистачає капелюху для завершення образу. Тож якщо ви не впевнені, як виглядатиме цей момент, придумайте швидку кнопку і тимчасово прикріпіть її, щоб перевірити, чи це саме те, чого не вистачає. Якщо це так, прикріпіть його назавжди.
+Хоча рекомендується використовувати закриту кнопку, ви можете використовувати будь-яку кнопку, яку забажаєте, не соромтеся експериментувати!
 
 </Note>
 
-### Step 8: Enjoy your new hat!
+### Крок 8: Насолоджуйтеся своєю новою шапкою!
 
-That's it! You're all done. Now enjoy the world in your wonderful new hat whilst maybe solving a crime or two!
+Ось так! З тобою покінчено. Тепер насолоджуйтеся світом у своєму чудовому новому капелюсі, можливо, розкриваючи при цьому один-два злочини!
 
 <Note>
 
-Remember these instructions are just guidelines so don't worry if you want to construct the hat differently.  
-The Diagrams are yet to be made for this pattern so in the mean time if you need a visual aid, watch the YouTube video that inspired this pattern:
+Пам'ятайте, що ці інструкції є лише рекомендаціями, тому не хвилюйтеся, якщо ви захочете сконструювати капелюх по-іншому.  
+Діаграми для цього візерунка ще не створені, тому, якщо вам потрібна візуальна допомога, подивіться відео на YouTube, яке надихнуло вас на створення цього візерунка:
 
 </Note>
 
