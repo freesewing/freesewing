@@ -1,11 +1,11 @@
 ---
-title: Seams
+title: Шви
 ---
 
-Seams (the lines on which you sew) are indicated by a solid line. The color of the line indicates the fabric type of the pattern piece:
+Шви (лінії, по яких ви шиєте) позначені суцільною лінією. Колір лінії вказує на тип тканини деталі викрійки:
 
 <Legend part="fabricLines">
 
-Seamlines for different fabric types
+Лінії швів для різних типів тканин
 
 </Legend>
