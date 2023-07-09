@@ -1,15 +1,15 @@
 - - -
-title: "Collar ease"
+назва: "Легкість коміра"
 - - -
 
-![How much ease do you use for your collar?](collarease.svg)
+![Наскільки легко ви використовуєте комір?](collarease.svg)
 
-Using the neck circumference is one part of getting a well-fitting bow tie. The other is how much collar ease you normally use for your shirts. Together they dictate how long the bow tie becomes.
+Використання обхвату шиї - це одна з складових правильної посадки краватки-метелика. Інша справа, наскільки легкий комір ви зазвичай використовуєте для своїх сорочок. Разом вони диктують довжину краватки-метелика.
 
-> #### Not used with the adjustment ribbon option
+> #### Не використовується з опцією регулювальної стрічки
 > 
-> This option is used to make a precise fitting bow tie. When you use the adjustment ribbon, this option is not used.
+> Цей варіант використовується для виготовлення краватки-метелика з точним приляганням. Коли ви використовуєте стрічку регулювання, ця опція не використовується.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_collarease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](benjamin_collarease_sample.svg "Вплив цієї опції на шаблон")
