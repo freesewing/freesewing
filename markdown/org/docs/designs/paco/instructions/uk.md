@@ -1,348 +1,348 @@
 - - -
-title: "Paco pants: Sewing Instructions"
+"Штани Пако": "Штани пако: Інструкція з пошиття"
 - - -
 
 <Tip>
 
-##### A note on seam finishes
+##### Пам'ятка про обробку швів
 
-Before you get started, you'll want to decide on your method of seam finishing, or how you tidy
-up the raw seams along the legs of your pants to keep them from fraying. There are a lot of
-options for this. Common choices are serging the raw edges, or using French seams to encase
-the raw edges.
+Перш ніж почати, вам потрібно визначитися з методом обробки швів або з тим, як ви будете прибирати
+необроблені шви вздовж штанин, щоб запобігти їхньому розтиранню. Для цього є багато
+варіантів. Найпоширенішими варіантами є обметування необроблених країв або використання французьких швів, щоб закрити
+необроблені краї.
 
-For these instructions, we'll assume that you are using a serger for seam finishes, but we'll
-also provide alternatives. Other options for finishing seams include trimming them with pinking
-shears, stitching a zig-zag along the edge of the seam to keep it from fraying, or binding with
-bias tape.
+У цій інструкції ми припустимо, що ви використовуєте сермер для обробки швів, але ми
+також надамо альтернативні варіанти. Інші варіанти обробки швів - обрізка їх рожевими ножицями
+, прострочка зигзагом по краю шва, щоб він не обсипався, або обв'язка
+косою бейкою.
 
 </Tip>
 
-## Step 1: Construct the back pockets
+## Крок 1: Конструюємо задні кишені
 
-Are you planning to insert welt pockets in the back of your Paco pants? Is so, awesome! This is arguably the trickiest part, and we'll accomplish it first. If not, you can skip ahead to the next step, preparing the front pockets.
+Ви плануєте вшити прорізні кишені в задній частині штанів Paco? Це так круто! Це, мабуть, найскладніша частина, і ми почнемо з неї. Якщо ні, ви можете пропустити і перейти до наступного кроку - підготовки передніх кишень.
 
-Construct the welt pockets at the back of your trousers, including the pocket bag.
+Зробіть прорізні кишені на задній частині штанів, включаючи кишенькову сумку.
 
 <Tip>
 
-##### Welt pockets
+##### Прорізні кишені
 
-Constructing a welt pocket is a technique that is used is different garments. That is why it's
-branched it off into its own documentation page.
+Конструювання прорізних кишень - це техніка, яка використовується в різних видах одягу. Саме тому
+відгалузився на окрему сторінку документації.
 
-There’s both written documentation and a video series that shows you how to do it, so even if
-you’ve never made welt pockets before, you’ll be fine.
+Існує як письмова документація, так і серія відеороликів, які показують, як це зробити, тому навіть якщо
+ви ніколи раніше не робили прорізні кишені, ви впораєтесь з цим завданням.
 
-[To the welt pockets documentation](https://freesewing.org/docs/sewing/double-welt-pockets/)
+[До документації про кишені для швів](https://freesewing.org/docs/sewing/double-welt-pockets/)
 
 </Tip>
 
-## Step 2: Prepare the front pockets
+## Крок 2: Підготуйте передні кишені
 
-Your pockets are cut from a lining material, which can save on weight and bulk, but also means that you'll want to hide them a little bit inside the side seam, so the lining doesn't show. The flap along the outside seam of each leg is for just this purpose.
+Кишені вирізані з підкладкового матеріалу, що дозволяє заощадити на вазі та об'ємі, але також означає , що ви захочете заховати їх трохи всередину бокового шва, щоб підкладка не була видна. Клапан уздовж зовнішнього шва на кожній штанині призначений саме для цього.
 
-If you are using a serger, serge the curved edges of your pocket pieces. Then, serge along the long edges of the pocket flaps.
+Якщо ви використовуєте сермер, обріжте загнуті краї кишенькових деталей. Потім прострочіть уздовж довгих країв клапанів кишень.
 
-![Front pockets with serged edges](step02.svg)
+![Передні кишені з відстроченими краями](step02.svg)
 
-## Step 3: Attach pockets to pants
+## Крок 3: Прикріпіть кишені до штанів
 
-With [good sides together](https://freesewing.org/docs/sewing/good-sides-together/), line up the markings on the edge of the pocket bag with the ends of the flap along the outside seam of the front leg. Sew together. Repeat for second leg.
+Складіть [лицьовими боками разом](https://freesewing.org/docs/sewing/good-sides-together/), сумістіть мітки на краю кишені сумки з кінцями клапана вздовж зовнішнього шва передньої ніжки. Зшийте разом. Повторіть для другої ноги.
 
-![Pockets sewn to front pants](step03.svg)
+![Кишені пришиті до передніх штанів](step03.svg)
 
-Now do the same with the back legs. With good sides together, line up the markings on the edge of the pocket bag with the ends of the flap along the outside seam of the back leg. Before sewing, make sure that your left leg front and back are attached to one pocket, and your right leg front and back are attached to the other. Sew together.
+Тепер зробіть те ж саме із задніми ногами. Складіть лицьовими сторонами разом, сумістіть розмітку на краю кишені-сумки з кінцями клапана вздовж зовнішнього шва задньої штанини. Перед тим, як пришивати, переконайтеся, що ліва нога спереду і ззаду прикріплена до однієї кишені, а права нога спереду і ззаду - до іншої. Зшийте разом.
 
-Press all seams toward the pants (away from the pocket bag).
+Притисніть усі шви до штанів (від кишенькової сумки).
 
-![Pressed pockets](step03b.svg)
-
-<Note>
-
-Optional: You can understitch here, a millimeter or two in from the seam on each side of the pocket
-bag, to secure the flaps and pocket bag all together the way you pressed them.
-
-</Note>
-
-![Understitched pockets](step03c.svg)
-
-## Step 4: Prepare the side seams and pocket bag
-
-You should now have two big pieces, each with a front and back leg attached by a pocket.
-
-Take one of the pieces, and place the front and back leg good sides together. Align the outer side seam, so that the side seam of the leg pieces match up, and the pocket bag edges are aligned, with good sides together.
-
-## Step 5: Sew the side seams
-
-You'll sew two separate seams to stitch up your side seams while leaving your pockets open.
-
-Start at the top of the leg pieces. Sew along the side seam, pivoting as you reach the pocket bag. You can also shorten your stitch length here to reinforce the corner of the pocket opening. Follow the side seam, pivoting again and ending at the top of the pocket.
-
-Next, you'll close the bottom of the pocket bag and stitch the rest of the side seam. Start at the bottom edge of the pocket bag, sewing along the bottom of the pocket, then pivoting when you get to the side seam of the pants. You can use a shorter stitch length for the first few stitches on the side seam, to reinforce the bottom of the pocket opening. Sew all the way down the leg side seam.
-
-Repeat for second leg.
-
-![Sewn up side leg](step05.svg)
-
-## Step 6: Finish the side seams
-
-Finishing these seams requires a touch of delicacy, especially around the tops of the pockets.
-
-It would be difficult to finish the top part of the side seam with a serger, so we'll use a zig-zag stitch. Starting at the top of the side seam, zig-zag stitch along the raw edge of the seam allowance, pivoting around the pocket opening. Continue the zig-zag stitch up the side of the pocket, unless you've serged your pockets already (in which case you can stop when you reach the pocket).
-
-The bottom opening of the pocket is a tight corner. To finish the seam around this corner, zig-zag stitch the raw edge of the seam allowance, starting where it joins the pocket, pivoting at the corner and continuing about 5 cm (2 in.) down the side seam. You can continue finishing the side seam with a zig-zag stitch all the way down. Alternatively, you can serge the side seam, making sure to stop the line of serger stitches a little ways from the pocket.
+![Пресовані кишені](step03b.svg)
 
 <Note>
 
-Make sure to secure these serger stitches. They won't be caught in any other seams, so they risk
-unravelling if left unsecured.
+За бажанням, ви можете прострочити тут, на міліметр-два вглиб від шва з кожного боку кишені
+сумки, щоб закріпити клапани і кишеню разом так, як ви їх притиснули.
 
 </Note>
 
-Repeat for second leg.
+![Вшиті кишені](step03c.svg)
 
-![Zig-zag stitched side seams](step06.svg)
+## Крок 4: Підготуйте бічні шви та кишені сумки
 
-Press the side seams toward the front.
+Тепер у вас повинно вийти два великих шматки, кожен з яких має передню і задню ніжки, прикріплені кишенькою.
+
+Візьміть один із шматків і покладіть передню і задню ногу лицьовими сторонами разом. Вирівняйте зовнішній бічний шов так, щоб бічні шви деталей штанин збіглися, а краї кишенькової сумки були вирівняні, лицьовими сторонами разом.
+
+## Крок 5: Зшийте бічні шви
+
+Ви прошиєте два окремі шви, щоб зшити бокові шви, залишивши кишені відкритими.
+
+Почніть з верхньої частини ніжок. Зшивайте вздовж бокового шва, повертаючи, коли дійдете до кишенькової сумки. Ви також можете вкоротити довжину стібка, щоб посилити кут отвору кишені. Виконайте боковий шов, знову повертаючи і закінчуючи у верхній частині кишені.
+
+Далі ви закриваєте дно сумки-кишені і прошиваєте решту бокового шва. Почніть від нижнього краю сумки-кишені, прошиваючи по низу кишені, потім поверніть, коли дійдете до бокового шва штанів. Ви можете використовувати коротшу довжину стібка для перших кількох стібків бокового шва , щоб зміцнити дно отвору кишені. Прошийте весь бічний шов штанини.
+
+Повторіть для другої ноги.
+
+![Пришита бічна ніжка](step05.svg)
+
+## Крок 6: Обробіть бічні шви
+
+Оздоблення цих швів вимагає делікатності, особливо навколо верхніх частин кишень.
+
+Верхню частину бокового шва було б складно обробити сервером, тому ми скористаємося зигзагоподібною строчкою . Починаючи з верхньої частини бокового шва, прострочіть зигзагоподібну строчку по необробленому краю шва припуску, обертаючи навколо отвору кишені. Продовжуйте виконувати зигзагоподібну строчку вгору по боковій стороні кишені, якщо ви вже не зшили кишені (в цьому випадку ви можете зупинитися, коли дійдете до кишені).
+
+Нижній отвір кишені - щільний кут. Щоб завершити шов навколо цього кута, прострочіть зигзагоподібною строчкою необроблений край припуску на шов, починаючи з місця з'єднання з кишенею, повертаючи на куті і продовжуючи приблизно на 5 см (2 дюйми) вниз по боковому шву. Ви можете продовжити обробку бокового шва зигзагоподібною строчкою до самого низу. Крім того, ви можете прострочити боковий шов, не забувши зупинити лінію строчки трохи далі від кишені.
 
 <Note>
 
-This may feel counterintuitive, as a lot of pants suggest pressing the side seams to the back.
-However, with inseam pockets, you'll want the pockets pressed toward the front of the pants. Your
-pockets will be fighting your side seam if you press the seam to the back, so we'll press it all
-to the front. This will will result in a smoother finish.
+Обов'язково закріпіть ці серпяні стібки. Вони не потраплять в інші шви, тому ризикують
+розплутатися, якщо їх не убезпечити.
+
+</Note>
+
+Повторіть для другої ноги.
+
+![Бокові шви прострочені зигзагоподібним швом](step06.svg)
+
+Притисніть бічні шви до лицьового боку.
+
+<Note>
+
+Це може здатися інтуїтивно незрозумілим, оскільки багато штанів припускають притискання бокових швів до спинки.
+Однак, якщо ви використовуєте вшивні кишені, вам краще притиснути кишені до передньої частини штанів. Ваші
+кишені будуть боротися з боковим швом, якщо ви притиснете його до спинки, тому ми притиснемо всі
+до лицьового боку. Це призведе до більш гладкого покриття.
 
 </Note>
 
 <Note>
 
-The corners of a pocket opening are one of the most likely places to wear out or tear, especially
-if you use your pockets a lot. If you're worried about tearing at the corners of your pockets, or
-if your fabric is more delicate, you can reinforce the pocket openings with bar tacks along the seam
-line, just outside the pocket openings.
+Кути кишенькового отвору - одне з найімовірніших місць для зносу або розривів, особливо
+якщо ви часто користуєтеся кишенями. Якщо ви боїтеся, що кути кишень можуть розірватися, або
+якщо ваша тканина більш делікатна, ви можете зміцнити отвори кишень закріпками вздовж лінії шва
+, відразу за межами отворів кишень.
 
 </Note>
 
-## Step 7: Anchor pocket bag to waist
+## Крок 7: Прикріпіть кишенькову сумку до талії
 
-The pockets in Paco are anchored at the waist. This means that you can put things in your pockets without them becoming unsightly bump that’s just dangling around in your trouser leg.
+Кишені в Paco закріплені на талії. Це означає, що ви можете покласти речі в кишені без того, щоб вони перетворилися на непривабливі шишки, які просто бовтаються на штанині.
 
-To anchor each pocket, align the top of the pocket with the mark along the waistline of your pattern. Sew a line of basting stitches inside your seam allowance to hold the pocket in place.
+Щоб закріпити кожну кишеню, сумістіть верх кишені з міткою вздовж лінії талії на викрійці . Прокладіть ряд наметочних стібків всередині припуску на шов, щоб утримати кишеню на місці.
 
-![Anchored pocket bags showing basted seam](step07.svg)
+![Кишенькові сумки з якірними вставками, з відстроченим швом](step07.svg)
 
-## Step 8: Sew and finish the inseams
+## Крок 8: Зшийте та обробіть шви
 
-Align the inseams with good sides together, then sew up the inseams. Finish the seams the same way you finished the side seams. Press inseams to the back.
+Вирівняйте виворітні шви лицьовими сторонами один до одного, а потім застрочіть їх. Виконайте шви так само, як ви виконали бічні шви. Запрасуйте шви на виворітний бік.
 
-![Sewn up inseam](step08.svg)
+![Зашитий впритул](step08.svg)
 
-## Step 9: Sew and finish crotch seam
+## Крок 9: Зшийте та обробіть паховий шов
 
-To attach the individual legs, flip one leg good side out (it doesn't matter which leg), then place it inside the other leg, good sides together. You should now have what looks like just one pant leg, with wrong sides visible. Align the center front, center back, and inseams of each leg, then pin along the length of the crotch seam. Sew and finish the crotch seam.
+Щоб з'єднати окремі ніжки, виверніть одну ніжку лицьовою стороною назовні (неважливо, яку саме), а потім помістіть її всередину іншої ніжки, лицьовими сторонами разом. Тепер у вас повинно вийти те, що виглядає як одна штанина , з виворітними сторонами. Вирівняйте центр передньої частини, центр задньої частини і шви кожної штанини, потім приколіть по довжині пахового шва. Зшийте і обробіть паховий шов.
 
 <Note>
 
-If you sew from center front to center back, it's easier to keep your inseam seam allowances
-pressed to the back as they feed through the machine.
+Якщо ви шиєте від центру переду до центру спинки, легше тримати припуски на шви
+притиснутими до спинки, коли вони проходять через машину.
 
 </Note>
 
-![Crotch seam](step09.svg)
+![Паховий шов](step09.svg)
 
-## Step 10: Place eyelets for the draw string (optional)
+## Крок 10: Розмістіть вушка для шнурка (необов'язково)
 
-Mark the middle of your waistband length. Fold one of your waistband pieces double, and mark the middle of the width (do not take the seam allowance into account).
+Відзначте середину довжини вашого пояса. Складіть одну з деталей пояса вдвічі і позначте середину ширини (не враховуйте припуски на шви).
 
-A bit to the left and right of this, you can add two eyelets to pass a drawstring through. Because your Paco pants have elastic in the waistband, as well, this is a nice detail, but is not required.
+Трохи лівіше і правіше від цього місця ви можете додати два люверси для протягування шнурка. Тому що ваші штани Paco також мають резинку на поясі, це приємна деталь, але не обов'язкова.
 
 <Tip>
 
-##### It’s best to add some reinforcement
+##### Краще додати трохи підсилення
 
-If you've chosen a fabric that is slippery, drapey, or thin, you might want to add some reinforcement
-behind these eyelets. A bit of interfacing or a leftover piece of denim will do just fine.
+Якщо ви вибрали слизьку, драпіровану або тонку тканину, можливо, ви захочете додати трохи підсилення
+за цими люверсами. Трохи флізеліну або залишки джинсової тканини підійдуть якнайкраще.
 
 </Tip>
 
-![Waistband with eyelets](step10.svg)
+![Пояс з люверсами](step10.svg)
 
-## Step 11: Prepare the waist elastic
+## Крок 11: Підготуйте поясну резинку
 
-There’s no magic formula for the length of your elastic. So you wrap it around your waist and pull it tight until you get a good fit. Paco is cut to sit at the high hip, so make sure your elastic is long enough to sit comfortably at the high hip.
+Не існує магічної формули довжини вашої еластичності. Отже, ви обертаєте його навколо талії і затягуєте до тих пір, поки не отримаєте гарну посадку. Пако скроєні так, щоб сидіти на високих стегнах, тому переконайтеся, що ваша резинка має достатню довжину, щоб комфортно сидіти на високих стегнах.
 
-Mark this length, cut the elastic, and join the two ends together.
+Відмітьте цю довжину, відріжте резинку і з'єднайте два кінці разом.
 
-![Elastic joined with a series of zig-zag stitches](step11.svg)
+![Еластичне з'єднання за допомогою серії зигзагоподібних стібків](step11.svg)
 
-## Step 12: Join the waistband
+## Крок 12: Приєднайте пояс
 
-Place the two waistband pieces good sides together, and align the short edges. Sew the short edges together, then press open. These will be inside the waistband, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
+Покладіть обидві частини пояса лицьовими сторонами один до одного і вирівняйте короткі краї. Зшийте короткі краї разом, потім натисніть відкрити. Вони будуть всередині пояса, тому вам не потрібно обробляти краї цих швів, якщо тільки ваша тканина не буде особливо схильна до зношування.
 
-![Joined waistband pieces](step12.svg)
+![З'єднані частини пояса](step12.svg)
 
-Fold the waistband double along the length, with good sides out, and press. This fold will be the top of your waistband.
+Складіть пояс вдвічі по довжині лицьовими боками назовні і припрасуйте. Ця складка буде верхньою частиною вашого пояса.
 
-## Step 13: Attach the waistband
+## Крок 13: Прикріпіть пояс
 
-You have two options for attaching your waistband. One is a bit simpler, but leaves an exposed seam on the inside. The other is a bit more fiddly, but it encloses the raw edges of your fabric.
+У вас є два варіанти кріплення пояса. Один трохи простіший, але залишає відкритий шов на внутрішній стороні. Інший варіант трохи складніший, але він закриває необроблені краї тканини.
 
-### The simpler method
+### Простіший метод
 
-Keep your waistband folded double, and place the elastic inside. Make sure to align the place where the elastic is joined with the back of the waistband (opposite the eyelets).
+Тримайте пояс складеним удвічі, а гумку помістіть всередину. Переконайтеся, що місце з'єднання гумки з задньою частиною пояса (навпроти люверсів) суміщено з задньою частиною пояса (навпроти люверсів).
 
-Find the center front of your waistband (easy if there are eyelets, if not just fold it double), and align that with the center front seam of your pants. Make sure that your waistband is outside of your pants, with good sides together. Pin in place.
+Знайдіть центральну передню частину пояса (легко, якщо там є люверси, якщо їх немає, просто складіть його вдвічі), і сумістіть її з центральним переднім швом штанів. Переконайтеся, що пояс знаходиться зовні штанів, при цьому бокові сторони повинні бути добре з'єднані. Штифт на місці.
 
 <Tip>
 
-##### Mind your eyelets
+##### Зверніть увагу на петельки
 
-If you’ve made eyelets in your waistband, double check that they are placed towards the outside,
-not the inside of your waistband.
+Якщо ви зробили петельки на поясі, перевірте, щоб вони були розташовані назовні,
+а не зсередини пояса.
 
 </Tip>
 
-Next, align the center backs and pin in place, adding additional pins around the waistband as needed.
+Потім вирівняйте центральні частини спинки і приколіть, додавши додаткові шпильки навколо пояса, якщо потрібно.
 
-Sew the waistband to the pants, as close to the the elastic as you can, but don’t sew into the elastic.
+Пришийте пояс до штанів якомога ближче до резинки, але не вшивайте його в резинку.
 
-![Waistband sewn with simple method](step13.svg)
+![Пояс пришитий простим методом](step13.svg)
 
 It’s fine to not sew too close the first time around, and once your elastic is attached and encased, make a second round to sew it a bit more snugly.
 
-Remove any basting stitches from the tops of the pocket bags.
+Видаліть усі наметочні стібки з верхніх частин кишенькових мішків.
 
-Finish the seam with a serger or other method.
+Обробіть шов сервером або іншим способом.
 
-### The enclosed seam method
+### Метод закритого шва
 
-Open the waistband. You will still be able to see the fold along its length, but you will be working with each side of the waistband individually.
+Розстебніть пояс. Ви все ще зможете бачити складку по всій довжині, але працюватимете з кожною стороною пояса окремо.
 
-Find the center front of your waistband (easy if there are eyelets, if not just fold it double), and align that with the center front seam of your pants. Make sure that your waistband is outside of your pants, with good sides together. Pin in place.
+Знайдіть центральну передню частину пояса (легко, якщо там є люверси, якщо їх немає, просто складіть його вдвічі) і сумістіть її з центральним переднім швом штанів. Переконайтеся, що пояс знаходиться зовні штанів , а бокові сторони з'єднані між собою. Штифт на місці.
 
 <Tip>
 
-##### Mind your eyelets
+##### Зверніть увагу на петельки
 
-To make sure your eyelets will end up on the outside, make sure they are closer to the top of your
-waistband, above the fold, for now.
+Щоб переконатися, що петельки опиняться на зовнішній стороні, переконайтеся, що вони знаходяться ближче до верхньої частини вашого
+пояса, вище згину, поки що.
 
 </Tip>
 
-![Open waistband sewn to pants](step13b.svg)
+![Відкритий пояс, пришитий до штанів](step13b.svg)
 
-Next, align the center back of your waistband with the center back seam. Pin in place. Then, add additional pins around the waistband as needed.
+Потім сумістіть центр задньої частини пояса з центральним швом задньої частини. Штифт на місці. Потім додайте додаткові шпильки навколо пояса, якщо потрібно.
 
-Sew the waistband to the pants.
+Пришийте пояс до штанів.
 
-Press the waistband up. Press the seam allowance in on the opposite side of the waistband, maintaining the fold along the center of the waistband.
+Притисніть пояс догори. Припуски шва припрасувати з протилежного боку пояса, зберігаючи складку по центру пояса.
 
-Refold the waistband, turning half the waistband to the inside. Pin so that the seam allowance on the inside is just below the seam joining the waistband to the pants, and pin in place around the waistband. From the outside, stitch in the ditch, catching the inner waistband as you go.
+Складіть пояс, відвернувши половину пояса всередину. Приколіть так, щоб припуск на шов з внутрішньої сторони був трохи нижче шва, що з'єднує пояс зі штанами, і закріпіть на місці навколо пояса. Із зовнішнього боку прострочіть у кюветі, захоплюючи внутрішній пояс по ходу роботи.
 
 
-![Waistband sewn with enclosed seams](step13c.svg)
+![Пояс вшитий з закритими швами](step13c.svg)
 
-## Step 14: Prepare the cuff elastic
+## Крок 14: Підготуйте манжету-гумку
 
 As you did with the waistband elastic, wrap the elastic for your cuff around your ankle and pull it tight until you get a good fit.
 
-Mark this length, cut the elastic, and join the two ends together. Repeat for the other cuff elastic.
+Відмітьте цю довжину, відріжте резинку і з'єднайте два кінці разом. Повторіть для іншої манжети.
 
-![Elastic joined with zig-zag stitching](step14.svg)
+![Еластичне з'єднання зигзагоподібним швом](step14.svg)
 
-## Step 15: Join the cuffs
+## Крок 15: З'єднайте манжети
 
-Fold each cuff with good sides together, aligning the short edges. For each cuff, sew the short edges together, then press open. These will be inside the cuff, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
+Складіть кожну манжету лицьовими сторонами разом, вирівнявши короткі краї. Для кожної манжети зшийте короткі краї разом, а потім розправте. Вони будуть всередині манжети, тому вам не потрібно обробляти краї цих швів, якщо тільки ваша тканина не буде особливо схильна до зношування.
 
-![Joined cuffs](step15.svg)
+![З'єднані манжети](step15.svg)
 
-Fold each cuff double along the length, with good sides out, and press. This fold will be the bottom of your cuffs.
+Складіть кожну манжету вдвічі по довжині лицьовими боками назовні і притисніть. Ця складка буде нижньою ваших манжет.
 
-## Step 16: Attach the cuffs
+## Крок 16: Прикріпіть манжети
 
-You will attach your cuffs the same way that you attached the waistband. As with the waistband, there are two options - a simpler choice, and a choice without exposed seams on the inside.
+Манжети прикріплюються так само, як і пояс. Як і у випадку з поясом, є два варіанти - простіший вибір і вибір без відкритих швів зсередини.
 
 <Note>
 
-If your sewing machine has a detachable bed (usually removed to expose the "free arm" for sewing
-sleeve cuffs), this will make sewing the cuffs easier.
+Якщо ваша швейна машина має знімну станину (зазвичай її знімають, щоб звільнити "вільну руку" для пришивання
+манжетів рукавів), це полегшить пришивання манжетів.
 
  </Note>
 
-### The simpler method
+### Простіший метод
 
-Keep your cuffs folded double, and place the elastic inside.
+Манжети складіть удвічі, а гумку помістіть всередину.
 
-Align the seam in the cuff with the inseam of the pants. Make sure that your cuff is outside of your pants, with good sides together. Pin in place, then pin the rest of the way around the cuff.
+Вирівняйте шов на манжеті зі швом штанів. Переконайтеся, що манжета знаходиться ззовні штанів, при цьому добре прилягаючи один до одного. Приколіть на місці, а потім приколіть решту шляху навколо манжети.
 
 <Tip>
 
-##### Pinning the cuffs
+##### Приколювання манжетів
 
-The elastic will make the cuffs more difficult to pin. To make sure that your cuffs are pinned evenly
-to the pants, place your second pin on the opposite side of the leg opening from the first. You can
-stretch the elastic to make sure that everything is lined up smoothly, then place your next pins halfway
-between the first two. Continue this way, pinning halfway between other pins, until you feel confident
-there are enough.
+Еластична стрічка ускладнить приколювання манжетів. Щоб переконатися, що манжети рівномірно
+прикріплені до штанів, розмістіть другу шпильку з протилежного боку від отвору для штанин від першої. Ви можете
+розтягнути гумку, щоб переконатися, що все вирівнялося, а потім розмістити наступні шпильки на півдорозі
+між першими двома. Продовжуйте так, встромляючи шпильки на півдорозі між іншими, поки не відчуєте впевненість, що
+достатньо.
 
 </Tip>
 
-Sew the cuff to the pants opening, as close to the the elastic as you can, but don’t sew into the elastic.
+Пришийте манжету до розрізу штанів, якомога ближче до резинки, але не вшивайте її в резинку.
 
-![Cuffs sewn with simple method](step16.svg)
+![Манжети пришиті простим методом](step16.svg)
 
-Finish the seam with a serger or other method.
+Обробіть шов сервером або іншим способом.
 
-### The enclosed seam method
+### Метод закритого шва
 
-Open the cuff. You will still be able to see the fold along its length, but you will be working with each side of the cuff individually.
+Розстебни наручники. Ви все ще зможете бачити складку по всій довжині, але працюватимете з кожною стороною манжети окремо.
 
-Align the seam in the cuff with the inseam of the pants. Make sure that your cuff is outside of your pants, with good sides together. Pin in place, then pin the rest of the way around the cuff.
+Вирівняйте шов на манжеті зі швом штанів. Переконайтеся, що манжета знаходиться за межами штанів, з гарними боками разом. Приколіть на місці, а потім приколіть решту шляху навколо манжети.
 
-Sew the cuff to the pants.
+Пришийте манжету до штанів.
 
-![Sewing the open cuffs to the pants](step16b.svg)
+![Пришивання відкритих манжет до штанів](step16b.svg)
 
-Press the cuff away from the pants. Press the seam allowance in on the opposite side of the cuff, maintaining the fold along the center of the cuff.
+Відтисніть манжету від штанів. Припуски шва припрасувати з протилежного боку манжети, зберігаючи складку по центру манжети.
 
-Refold the cuff, turning half the cuff to the inside. Pin so that the seam allowance on the inside is just past the seam joining the cuff to the pants, and pin in place around the cuff. From the outside, stitch in the ditch, catching the inner cuff as you go.
+Складіть манжету, повернувши половину манжети всередину. Приколіть так, щоб припуск на шов з внутрішньої сторони знаходився відразу за швом, що з'єднує манжету зі штанами, і закріпіть на місці навколо манжети. Із зовнішнього боку прострочіть в кюветі, захоплюючи внутрішню манжету по ходу.
 
-![Cuffs sewn with enclosed seams](step16c.svg)
+![Манжети зшиті потайними швами](step16c.svg)
 
-## Step 17: Stitching the cuffs and waistband (optional)
+## Крок 17: Зшивання манжетів і пояса (необов'язково)
 
-If you have wider cuff elastic, you may want to stitch a horizontal line halfway up the cuff. This will hold your elastic in place and help keep it from folding or twisting. Make sure to stretch the elastic evenly as you sew, so that it gathers the fabric evenly. (If you sew without stretching the elastic, you risk lumpy gathers and a leg opening too narrow to get your foot through.)
+Якщо у вас широка манжета, можливо, ви захочете прошити горизонтальну лінію на половині манжети. Це утримає вашу резинку на місці і допоможе уникнути її згинання або скручування. Переконайтеся, що ви рівномірно розтягуєте еластичну під час шиття, щоб вона рівномірно збирала тканину. (Якщо ви шиєте без розтягування гумки, ви ризикуєте отримати грудки і занадто вузький отвір для ноги, через який не зможе пролізти нога).
 
 
 If you like the look, you can also sew more than one line of stitches, evenly spaced between the top and bottom of the cuff.
 
-You can do the same for the waistband.
+Так само можна зробити і з поясом.
 
-![Waistband and cuffs with decorative stitching](step17.svg)
+![Пояс і манжети з декоративною строчкою](step17.svg)
 
 <Note>
 
-If you put in eyelets for a drawstring, sew a line of stitches above the eyelets and a separate line
-below the eyelets, leaving a channel wide enough for your drawstring.
+Якщо ви вставляєте люверси для шнурка, прошийте лінію стібків над люверсами і окрему лінію
+під люверсами, залишивши канал достатньо широким для шнурка.
 
 </Note>
 
-## Step 18: Thread a draw string around the waist (optional)
+## Крок 18: Протягніть шнурок навколо талії (за бажанням)
 
 If you put eyelets in your waistband, thread a drawstring through one eyelet, around the waist, and out of the other eyelet.
 
 <Note>
 
-There are tools to make this task easier, but one that almost everyone has is a simple safety pin.
-Pin the safety pin to one end of your drawstring, then push it through the channel. The safety pin
-will be easier to maneuver through the fabric, and it will pull the drawstring along with it.
+Існують інструменти, які полегшують це завдання, але один з них, який є майже у кожного, - це звичайна шпилька.
+Прикріпіть шпильку до одного кінця шнурка, а потім просуньте її в канал. Булавці
+буде легше маневрувати в тканині, і вона буде тягнути за собою кулиску.
 
 </Note>
 
-![Paco threaded with drawstring](step18.svg)
+![Пако на нитці зі шнурком](step18.svg)
 
-## Step 19: Enjoy your Paco pants!
+## Крок 19: Насолоджуйтеся штанами Пако!
 
-You did it! Way to go!
+У тебе вийшло! Так тримати!
 
