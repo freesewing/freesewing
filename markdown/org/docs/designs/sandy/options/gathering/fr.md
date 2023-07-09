@@ -1,6 +1,6 @@
-- - -
+---
 title: "Gathering"
-- - -
+---
 
 ![Fronçage](gathering.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Draft for high bust"
-- - -
+---
 
 Kies deze optie om Teagan te tekenen naar je hoge bustemeting, in plaats van je volledige borstomtrek.
 

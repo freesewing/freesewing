@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap back X"
-- - -
+---
 
 ![L'emplacement horizontal du point de flexion arrière](./sleevecapbackfactorx.svg)
 

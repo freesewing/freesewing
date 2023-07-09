@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Corset Cathrin : Instructions de coupe"
-- - -
+---
 
 Coupez 1 cœur de tissu et 1 tissu extérieur du panneau central, en vous assurant de couper sur le pli.
 

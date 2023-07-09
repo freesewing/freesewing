@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Réduction de revers"
-- - -
+---
 
 Contrôle combien la pointe de la patte va à l'intérieur.
 

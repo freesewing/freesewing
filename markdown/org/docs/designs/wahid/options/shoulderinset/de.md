@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shoulder inset"
-- - -
+---
 
 ![Schulterversatz nach innen](shoulderinset.svg)
 

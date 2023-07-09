@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hem width"
-- - -
+---
 
 ![Saumbreite](hemwidth.svg)
 

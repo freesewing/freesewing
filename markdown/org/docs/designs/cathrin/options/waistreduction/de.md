@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waist reduction"
-- - -
+---
 
 ![Die Taillenreduzierung auf Kathrin](./waistreduction.svg)
 

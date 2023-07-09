@@ -1,6 +1,6 @@
-- - -
+---
 title: "Start of the cross seam curve"
-- - -
+---
 
 Steuert den Start der Quernahtkurve.
 

@@ -1,6 +1,6 @@
-- - -
+---
 title:"Pince milieu dos"
-- - -
+---
 
 ![Pinces milieu dos](centerbackdart.svg)
 

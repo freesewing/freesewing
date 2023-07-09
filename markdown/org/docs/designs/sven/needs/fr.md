@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sven sweatshirt: What You Need"
-- - -
+---
 
 Pour fabriquer Sven, vous aurez besoin des éléments suivants :
 

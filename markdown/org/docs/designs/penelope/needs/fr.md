@@ -1,6 +1,6 @@
-- - -
+---
 title: "Penelope pencil skirt: What You Need"
-- - -
+---
 
 Pour faire Penelope, vous aurez besoin des éléments suivants :
 

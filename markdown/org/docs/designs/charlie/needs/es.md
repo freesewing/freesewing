@@ -1,6 +1,6 @@
-- - -
+---
 title: "Charlie chinos: What You Need"
-- - -
+---
 
 Para hacer Charlie, necesitarás lo siguiente:
 

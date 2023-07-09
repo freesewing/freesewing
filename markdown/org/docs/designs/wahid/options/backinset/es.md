@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back inset"
-- - -
+---
 
 ![Inserción trasera](backinset.svg)
 

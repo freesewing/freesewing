@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front pocket depth"
-- - -
+---
 
 Bepaalt de diepte van het voorste zakdeel.
 

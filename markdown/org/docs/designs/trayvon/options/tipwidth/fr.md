@@ -1,6 +1,6 @@
-- - -
+---
 title: "Largeur des pointes"
-- - -
+---
 
 ![Largeur de la pointe](tipwidth.svg)
 

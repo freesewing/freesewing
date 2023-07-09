@@ -1,6 +1,6 @@
-- - -
+---
 title: "Seperate button placket"
-- - -
+---
 
 ![Tapeta de botones separada](seperatebuttonplacket.svg)
 

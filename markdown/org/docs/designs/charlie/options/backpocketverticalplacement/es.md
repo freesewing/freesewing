@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back pocket vertical placement"
-- - -
+---
 
 Controla la colocación vertical de los bolsillos traseros.
 

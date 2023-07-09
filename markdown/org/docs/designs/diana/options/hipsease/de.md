@@ -1,6 +1,6 @@
-- - -
+---
 title: "Weitenzugabe Hüfte"
-- - -
+---
 
 ![Die Hüfte Leichtigkeit auf Diana](./hipsease.svg)
 

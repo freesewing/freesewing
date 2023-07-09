@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front armhole extra cutout"
-- - -
+---
 
 Cuánto se corta el agujero de armadura más profundo en el frente, que la espalda.
 

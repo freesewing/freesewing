@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleeve width guarantee"
-- - -
+---
 
 We maken eerst een arm opening en vervolgens leggen we een mouw op om die te passen.
 

@@ -1,6 +1,6 @@
-- - -
+---
 titre: "Largeur de la poignée"
-- - -
+---
 
 Contrôle la largeur de l'anse.
 

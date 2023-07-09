@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shin swim trunks: Fabric Options"
-- - -
+---
 
 Los troncos de baño deben estar hechos de un material con estiramiento adecuado para estar en el agua.
 

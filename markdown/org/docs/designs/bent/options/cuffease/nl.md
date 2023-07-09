@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cuff ease"
-- - -
+---
 
 De hoeveelheid overwijdte aan je manchet/pols.
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleeve ease"
-- - -
+---
 
 Bepaalt de hoeveelheid overwijdte aan de mouw/arm.
 

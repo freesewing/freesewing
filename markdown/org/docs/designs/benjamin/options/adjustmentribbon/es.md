@@ -1,6 +1,6 @@
-- - -
+---
 title: "Adjustment ribbon"
-- - -
+---
 
 ![Tradicional o ajustable](adjustmentribbon.svg)
 

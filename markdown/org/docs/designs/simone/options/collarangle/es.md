@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar angle"
-- - -
+---
 
 ![Ángulo del pico del cuello](collarangle.svg)
 

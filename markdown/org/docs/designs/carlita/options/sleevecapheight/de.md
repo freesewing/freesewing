@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap height"
-- - -
+---
 
 Dieser Faktor steuert die Höhe der Ärmel.
 

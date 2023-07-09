@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cuff narrow button"
-- - -
+---
 
 ![Schalenmanschette schmal Taste](./barrelcuffnarrowbutton.svg)
 

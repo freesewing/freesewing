@@ -1,6 +1,6 @@
-- - -
+---
 title: "Gusset length"
-- - -
+---
 
 Deze optie bepaalt de lengte van de gusset.
 

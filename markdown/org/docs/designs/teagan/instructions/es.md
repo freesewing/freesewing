@@ -1,6 +1,6 @@
-- - -
+---
 title: "Teagan T-shirt: Sewing Instructions"
-- - -
+---
 
 ## Paso 1: Cierra las costuras del hombro
 

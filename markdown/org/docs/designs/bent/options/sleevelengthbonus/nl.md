@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleeve length bonus"
-- - -
+---
 
 Hoeveel langer de mouw moet worden dan de mouw van de basisvorm.
 

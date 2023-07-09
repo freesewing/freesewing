@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap front Y"
-- - -
+---
 
 ![De verticale locatie van het tussenpunt vooraan](./sleevecapfrontfactory.svg)
 

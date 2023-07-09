@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back rise"
-- - -
+---
 
 ![De optie voor hoogte achter bij Bruce](./backrise.svg)
 

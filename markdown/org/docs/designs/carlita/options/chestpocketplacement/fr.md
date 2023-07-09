@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Placement des poches de poitrine"
-- - -
+---
 
 Contrôle l'emplacement de la poche de la poitrine.
 

@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Aisance de la tête de manche"
-- - -
+---
 
 ![Aisance tête de manche](./sleevecapease.svg)
 

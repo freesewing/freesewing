@@ -1,6 +1,6 @@
-- - -
+---
 title: "Paco pants: Fabric Options"
-- - -
+---
 
 Deze werkt het best in een lichtere stof die redelijk goed doorvalt.
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar stand bend"
-- - -
+---
 
 ![Collarstand doblado](collarstandbend.svg)
 

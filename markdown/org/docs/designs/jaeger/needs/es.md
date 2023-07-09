@@ -1,6 +1,6 @@
-- - -
+---
 title: "Jaeger jacket: What You Need"
-- - -
+---
 
 Para hacer de Jaeger, necesitarás lo siguiente:
 

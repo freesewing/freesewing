@@ -1,6 +1,6 @@
-- - -
+---
 title:"Tête de manche devant Y"
-- - -
+---
 
 ***
 

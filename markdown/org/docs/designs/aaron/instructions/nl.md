@@ -1,6 +1,6 @@
-- - -
+---
 title: "Aaron A-Shirt: Naai-instructies"
-- - -
+---
 
 ## Stap 1: Sluit de naden
 

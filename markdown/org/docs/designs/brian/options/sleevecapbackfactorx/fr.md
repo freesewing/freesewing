@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Retour de manchon X"
-- - -
+---
 
 ![L'emplacement horizontal du point de flexion arrière](./sleevecapbackfactorx.svg)
 

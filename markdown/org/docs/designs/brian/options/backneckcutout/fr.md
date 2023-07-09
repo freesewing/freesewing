@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Découpage du cou dans le dos"
-- - -
+---
 
 ![Découpe arrière de cou](./backneckcutout.svg)
 

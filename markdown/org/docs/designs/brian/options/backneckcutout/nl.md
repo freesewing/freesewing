@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back neck cutout"
-- - -
+---
 
 ![Hals uitsnijding achteraan](./backneckcutout.svg)
 

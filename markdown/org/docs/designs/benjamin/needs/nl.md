@@ -1,6 +1,6 @@
-- - -
+---
 title: "Benjamin bow tie: What You Need"
-- - -
+---
 
 Om Benjamin te maken heb je het volgende nodig:
 

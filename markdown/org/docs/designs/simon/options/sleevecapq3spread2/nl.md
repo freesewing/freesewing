@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap Q3 downward spread"
-- - -
+---
 
 ![De neerwaartse spreiding in de derde quadrant van de mouwkop](./sleevecapq3spread2.svg)
 

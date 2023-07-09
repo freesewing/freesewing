@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shin swim trunks: Fabric Options"
-- - -
+---
 
 Les troncs de nage doivent être fabriqués à partir d'un matériau avec étirement qui convient à être dans l'eau.
 

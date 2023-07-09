@@ -1,6 +1,6 @@
-- - -
+---
 weitenzugabe/Bequemlichkeitszugabe Oberarm
-- - -
+---
 
 ![Die Beizeps-Leicht-Option auf Diana](./bicepsease.svg)
 

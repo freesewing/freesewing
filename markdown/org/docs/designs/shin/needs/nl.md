@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shin swim trunks: What You Need"
-- - -
+---
 
 Om Shin te maken heb je het volgende nodig:
 

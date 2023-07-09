@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bequemlichkeitszugabe Brust"
-- - -
+---
 
 ![Die Brustpflegeoption auf Diana](./chestease.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Tip width"
-- - -
+---
 
 ![Bow vínculos anchos y flecha](tipwidth.svg)
 

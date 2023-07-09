@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front armhole extra cutout"
-- - -
+---
 
 ![Zusätzlicher Ausschnitt am vorderen Armloch](./frontarmholedeeper.svg)
 

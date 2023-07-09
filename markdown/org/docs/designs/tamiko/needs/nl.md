@@ -1,6 +1,6 @@
-- - -
+---
 title: "Tamiko top: What You Need"
-- - -
+---
 
 Om Tamiko te maken heb je het volgende nodig:
 

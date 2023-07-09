@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chest ease"
-- - -
+---
 
 ![La opción de holgura de pecho en Diana](./chestease.svg)
 

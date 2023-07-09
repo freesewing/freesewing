@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap front X"
-- - -
+---
 
 ![La posición horizontal del punto de inflexión frontal](./sleevecapfrontfactorx.svg)
 

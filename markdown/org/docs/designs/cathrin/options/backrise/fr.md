@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hauteur du dos"
-- - -
+---
 
 ![L'option de montée arrière sur Cathrin](./backrise.svg)
 

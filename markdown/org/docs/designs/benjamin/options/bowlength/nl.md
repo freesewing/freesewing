@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bow length"
-- - -
+---
 
 ![Lengte strik](bowlength.svg)
 

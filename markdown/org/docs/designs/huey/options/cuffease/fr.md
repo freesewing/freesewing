@@ -1,6 +1,6 @@
-- - -
+---
 titre: "aisance de manche"
-- - -
+---
 
 Cette option contrôle l'aisance au niveau des poignets.
 

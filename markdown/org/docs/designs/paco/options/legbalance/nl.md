@@ -1,6 +1,6 @@
-- - -
+---
 title: "Leg balance"
-- - -
+---
 
 Bepaalt de verhouding tussen de voor- en achterkant van de broekspijpen.
 

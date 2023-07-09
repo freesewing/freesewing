@@ -1,6 +1,6 @@
-- - -
+---
 title: "Simon shirt: Fabric Options"
-- - -
+---
 
 Toute boutique en tissu qui vaut la peine à votre entreprise devrait avoir une section de chemise. Vous pouvez simplement entrer, demander où vous pouvez trouver la chemise et choisir quelque chose que vous voulez.
 

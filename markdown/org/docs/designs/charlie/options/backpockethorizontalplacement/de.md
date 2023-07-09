@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back pocket horizontal placement"
-- - -
+---
 
 Steuert die horizontale Platzierung der hinteren Taschen.
 

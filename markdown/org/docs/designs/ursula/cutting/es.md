@@ -1,6 +1,6 @@
-- - -
+---
 title: "Ursula undies: Cutting Instructions"
-- - -
+---
 
 La Ursula consiste en un frente, una espalda y una chispa revuelta.
 

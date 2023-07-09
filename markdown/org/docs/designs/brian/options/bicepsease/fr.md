@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Aisance aux biceps"
-- - -
+---
 
 ![L'aisance au biceps pour Brian](./bicepsease.svg)
 

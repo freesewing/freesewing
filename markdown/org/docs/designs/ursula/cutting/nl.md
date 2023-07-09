@@ -1,6 +1,6 @@
-- - -
+---
 title: "Ursula undies: Cutting Instructions"
-- - -
+---
 
 Ursula bestaat uit een voorpand, een achterkant en een hellende gusset.
 

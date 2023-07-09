@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hem size"
-- - -
+---
 
 Taille de l'ourlet au bas du pantalon
 

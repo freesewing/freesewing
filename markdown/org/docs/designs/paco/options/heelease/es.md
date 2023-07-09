@@ -1,6 +1,6 @@
-- - -
+---
 title: "Heel ease"
-- - -
+---
 
 Esto controla la cantidad de facilidad en su lugar, o talón.
 

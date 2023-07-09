@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap ease"
-- - -
+---
 
 Bepaalt de hoeveelheid extra ruimte in de mouwkop.
 

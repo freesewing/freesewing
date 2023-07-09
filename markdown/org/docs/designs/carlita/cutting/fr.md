@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Manteau Carlita : Instructions de coupe"
-- - -
+---
 
 <Note>
 

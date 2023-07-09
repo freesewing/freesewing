@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Chemise Simone : Instructions de coupe"
-- - -
+---
 
 <Note>
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hip rise"
-- - -
+---
 
 ![De optie voor heuphoogte bij Cathrin](./hiprise.svg)
 

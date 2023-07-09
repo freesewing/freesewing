@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Placement horizontal de la poche arrière"
-- - -
+---
 
 Contrôle la position horizontale des poches arrières.
 

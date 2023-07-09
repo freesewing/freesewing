@@ -1,6 +1,6 @@
-- - -
+---
 title: "Paco pants: Fabric Options"
-- - -
+---
 
 Diese arbeiten am besten in einem leichteren Stoff mit relativ guter Ziehung.
 

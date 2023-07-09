@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Hauteur"
-- - -
+---
 
 ![Option de hauteur](./height.svg)
 

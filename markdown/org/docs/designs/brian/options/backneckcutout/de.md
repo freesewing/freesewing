@@ -1,6 +1,6 @@
-- - -
+---
 title: "Rückenhalsausschnitt"
-- - -
+---
 
 ![Rückenhalsausschnitt](./backneckcutout.svg)
 

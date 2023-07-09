@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bruce boxer briefs: Cutting Instructions"
-- - -
+---
 
 Bruce besteht aus einer Rückseite, und jeweils zwei Seitenteilen, Einsätzen und Vorderteilen.
 

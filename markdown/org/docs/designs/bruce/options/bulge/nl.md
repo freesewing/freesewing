@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bulge"
-- - -
+---
 
 ![De optie voor kruisstuk bij Bruce](./bulge.svg)
 

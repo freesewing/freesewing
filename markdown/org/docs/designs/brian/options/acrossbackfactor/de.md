@@ -1,6 +1,6 @@
-- - -
+---
 title: "Across back factor"
-- - -
+---
 
 ![Die umgekehrte zurück Option auf Brian](./acrossbackfactor.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front dart placement"
-- - -
+---
 
 ![Emplacement des pinces devant](frontdartplacement.svg)
 

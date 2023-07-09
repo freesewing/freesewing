@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Aisance aux biceps"
-- - -
+---
 
 L'aisance au niveau de la partie supérieure du bras.
 

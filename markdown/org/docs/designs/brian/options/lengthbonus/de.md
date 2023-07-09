@@ -1,6 +1,6 @@
-- - -
+---
 title: "Längenzugabe"
-- - -
+---
 
 ![Die Längen-Bonus-Option auf Brian](./lengthbonus.svg)
 

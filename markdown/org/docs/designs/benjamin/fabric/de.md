@@ -1,6 +1,6 @@
-- - -
+---
 title: "Benjamin bow tie: Fabric Options"
-- - -
+---
 
 Die Fliegen, die du in Geschäften findest, bestehen typischerweise aus Seide oder einer Art von Seidenimitation aus Polyester. Deswegen ist es wohl keine Überraschung, dass dies gute Optionen sind. Jede Art von Stoff, der dir vom Muster oder Aussehen gefällt, kann ein Kandidat für eine Fliege werden. Die einzige wirkliche Einschränkung ist, dass die Fliege durch einen Schlauch von nur 2cm von innen nach außen gedreht werden muss. Bei einigen dickeren Stoffen wird das ein schwieriges Unterfangen.
 

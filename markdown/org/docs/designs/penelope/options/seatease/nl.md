@@ -1,6 +1,6 @@
-- - -
+---
 title: "Seat ease"
-- - -
+---
 
 Hoeveelheid overwijdte rond het breedste deel van je bum.
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Elastic width"
-- - -
+---
 
 > #### ¿Cuál es la cuestión?
 > 

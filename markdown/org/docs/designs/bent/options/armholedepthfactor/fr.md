@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Facteur de profondeur d'emmanchure"
-- - -
+---
 
 Cela permet de contrôler la profondeur de l'emmanchure qui, à son tour, influence la largeur de la manchette.
 

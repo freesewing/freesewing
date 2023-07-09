@@ -1,6 +1,6 @@
-- - -
+---
 title: "Leg balance"
-- - -
+---
 
 Steuert den Anteil zwischen Vorder- und Rückenteil der Beine.
 

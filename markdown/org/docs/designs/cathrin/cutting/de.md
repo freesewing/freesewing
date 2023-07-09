@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cathrin corset: Cutting Instructions"
-- - -
+---
 
 Schneiden Sie 1 Kernstoff und 1 äußeren Stoff der Mitteltafel und achten Sie darauf, auf der Falte geschnitten.
 

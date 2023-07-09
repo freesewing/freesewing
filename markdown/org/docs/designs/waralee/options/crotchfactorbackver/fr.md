@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back Crotch Factor Vertical"
-- - -
+---
 
 Utilisé pour déplacer la courbe de la fourche arrière verticalement
 

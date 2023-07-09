@@ -1,6 +1,6 @@
-- - -
+---
 title: "Gusset length"
-- - -
+---
 
 Esta opción controla la longitud del set de ráfagas.
 

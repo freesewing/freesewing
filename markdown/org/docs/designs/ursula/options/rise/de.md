@@ -1,6 +1,6 @@
-- - -
+---
 title: "Rise"
-- - -
+---
 
 Diese Option steuert die Höhe der Taille.
 

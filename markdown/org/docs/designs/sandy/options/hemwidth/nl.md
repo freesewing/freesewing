@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hem width"
-- - -
+---
 
 ![Breedte zoom](hemwidth.svg)
 

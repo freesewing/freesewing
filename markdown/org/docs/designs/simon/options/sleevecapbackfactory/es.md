@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap back Y"
-- - -
+---
 
 ![La posición vertical del punto de inflexión trasera](./sleevecapbackfactory.svg)
 

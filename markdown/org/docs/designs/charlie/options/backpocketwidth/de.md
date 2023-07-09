@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back pocket width"
-- - -
+---
 
 Bestätigt die Breite der hinteren Taschen.
 

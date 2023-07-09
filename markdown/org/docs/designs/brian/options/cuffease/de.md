@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bequemlichkeitszugabe Bündchen"
-- - -
+---
 
 ![Die Manschettenleicht-Faktor auf Brian](./cuffease.svg)
 

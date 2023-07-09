@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bow style"
-- - -
+---
 
 Cuatro tipos de corbatas de arco diferentes!
 

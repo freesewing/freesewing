@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap Q4 offset"
-- - -
+---
 
 ![De compensatie in het vierde kwartaal van de mouwkop](./sleevecapq4offset.svg)
 

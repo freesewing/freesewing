@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleeve ease"
-- - -
+---
 
 Controla la cantidad de facilidad en la manga o en el brazo.
 

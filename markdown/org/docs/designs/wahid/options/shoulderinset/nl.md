@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shoulder inset"
-- - -
+---
 
 ![Insnede schouder](shoulderinset.svg)
 

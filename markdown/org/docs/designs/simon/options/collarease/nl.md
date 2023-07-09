@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar ease"
-- - -
+---
 
 ![Overwijdte kraag](collarease.svg)
 

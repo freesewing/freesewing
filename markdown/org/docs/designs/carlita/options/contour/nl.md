@@ -1,6 +1,6 @@
-- - -
+---
 title: "Contour"
-- - -
+---
 
 Bepaalt hoe scherp de prinsessennaad naar binnen keert zodra ze voorbij het volste punt van de borst komt.
 

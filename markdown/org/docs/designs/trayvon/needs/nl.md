@@ -1,6 +1,6 @@
-- - -
+---
 title: "Trayvon tie: What You Need"
-- - -
+---
 
 Om Trayvon te maken heb je het volgende nodig:
 

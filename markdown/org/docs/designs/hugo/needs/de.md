@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hugo hoodie: What You Need"
-- - -
+---
 
 Um Hugo zu machen, werden Sie Folgendes benötigen:
 

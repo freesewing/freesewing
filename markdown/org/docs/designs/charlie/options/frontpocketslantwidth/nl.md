@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front pocket slant width"
-- - -
+---
 
 Bepaalt de breedte waarmee de voorste steekzak in het voorpand snijdt.
 

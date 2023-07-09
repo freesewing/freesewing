@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waist balance"
-- - -
+---
 
 Controla la distribución de la tela entre las partes delanteras y traseras en la cintura.
 

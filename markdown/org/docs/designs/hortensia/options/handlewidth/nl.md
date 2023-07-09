@@ -1,6 +1,6 @@
-- - -
+---
 title: "Handle width"
-- - -
+---
 
 Bepaalt de breedte van het handvat.
 

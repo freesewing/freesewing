@@ -1,6 +1,6 @@
-- - -
+---
 title: "Diana, das Wasserfallshirt: Was du brauchst"
-- - -
+---
 
 Um Diana zu erstellen, benötigst du Folgendes:
 

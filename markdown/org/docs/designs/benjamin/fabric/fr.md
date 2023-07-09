@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Nœud papillon Benjamin : Options de tissu"
-- - -
+---
 
 Les nœuds papillons que vous trouvez dans les magasins sont généralement en soie ou en imitation de soie. Il ne sera donc pas surprenant que ce soient de bonnes options. Any type of fabric that you like the pattern or looks of can become a candidate for a bow tie. The only real limitation is that the bow tie will have to be turned inside out through a tube that is only 2cm across. Avec des tissus plus épais, ce sera difficile.
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar ease"
-- - -
+---
 
 Bepaalt de hoeveelheid overwijdte aan je kraag/nek.
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waistband overlap"
-- - -
+---
 
 ![Superposición de la cinturilla](waistbandoverlap.svg)
 

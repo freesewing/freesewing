@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back rise"
-- - -
+---
 
 ![Die Rückenaufstiegsoption auf Cathrin](./backrise.svg)
 

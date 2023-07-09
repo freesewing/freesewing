@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Aisance d'épaule"
-- - -
+---
 
 ![L'option d'assouplissement des épaules sur Diana](./shoulderease.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Neck inset"
-- - -
+---
 
 ![Nackenauschnitt](neckinset.svg)
 

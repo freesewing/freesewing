@@ -1,6 +1,6 @@
-- - -
+---
 title:"Tête de manche haut X"
-- - -
+---
 
 ***
 

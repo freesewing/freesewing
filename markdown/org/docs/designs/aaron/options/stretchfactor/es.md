@@ -1,6 +1,6 @@
-- - -
+---
 title: "Stretch"
-- - -
+---
 
 ![La opción de factor de estiramiento en Aaron](./stretchfactor.svg)
 

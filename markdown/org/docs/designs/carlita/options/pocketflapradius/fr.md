@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Rayon du rabat de poche"
-- - -
+---
 
 ![Angle de rabat de poche](pocketflapradius.svg)
 

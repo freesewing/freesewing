@@ -1,6 +1,6 @@
-- - -
+---
 title: "Benjamin bow tie: Fabric Options"
-- - -
+---
 
 Los lazos de arco que se encuentran en la tienda son típicamente hechos de seda o algún polo de imitación de seda. Por lo tanto, no sorprenderá que se trate de buenas opciones. Any type of fabric that you like the pattern or looks of can become a candidate for a bow tie. The only real limitation is that the bow tie will have to be turned inside out through a tube that is only 2cm across. Con algunas telas más gruesas, esta será una propuesta difícil.
 

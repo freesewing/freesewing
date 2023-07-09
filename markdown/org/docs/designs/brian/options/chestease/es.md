@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chest ease"
-- - -
+---
 
 ![El factor de facilidad del cofre en Brian](./chestease.svg)
 

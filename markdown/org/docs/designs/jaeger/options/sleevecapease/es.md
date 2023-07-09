@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap ease"
-- - -
+---
 
 ![Holgura de la parte superior de la manga](sleevecapease.svg)
 

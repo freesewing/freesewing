@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleeve bend"
-- - -
+---
 
 ![Ärmelkrümmung](sleevebend.svg)
 

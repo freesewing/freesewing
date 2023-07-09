@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hood depth"
-- - -
+---
 
 ![Profundidad de capucha](./hooddepth.svg)
 

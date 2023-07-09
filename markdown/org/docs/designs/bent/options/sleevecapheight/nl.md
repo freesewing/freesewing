@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap height"
-- - -
+---
 
 Deze factor bepaalt de hoogte van de mouwkop.
 

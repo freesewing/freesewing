@@ -1,6 +1,6 @@
-- - -
+---
 title: "Wahid waistcoat: Sewing Instructions"
-- - -
+---
 
 ### Schritt 1: Sicherungsschnittstelle
 

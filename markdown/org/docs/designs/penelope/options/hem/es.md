@@ -1,6 +1,6 @@
-- - -
+---
 title: "Size of the hem"
-- - -
+---
 
 El tamaño del sombrero.
 

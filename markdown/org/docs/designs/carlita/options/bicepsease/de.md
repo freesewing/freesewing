@@ -1,6 +1,6 @@
-- - -
+---
 weitenzugabe/Bequemlichkeitszugabe Oberarm
-- - -
+---
 
 ![Bizeps Zugabe](./bicepsease.svg)
 

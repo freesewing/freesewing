@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chest ease"
-- - -
+---
 
 Bepaalt de hoeveelheid overwijdte aan je kist
 

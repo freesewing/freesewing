@@ -1,6 +1,6 @@
-- - -
+---
 title: "Ribbing"
-- - -
+---
 
 ![Bündchen](./ribbing.svg)
 

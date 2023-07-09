@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleeve length"
-- - -
+---
 
 Bepaalt de lengte van de mouwen.
 

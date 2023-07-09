@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chest shaping"
-- - -
+---
 
 ![Brustformung](chestshaping.svg)
 

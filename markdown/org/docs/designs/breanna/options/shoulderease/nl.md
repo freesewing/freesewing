@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shoulder ease"
-- - -
+---
 
 Bepaalt de hoeveelheid overwijdte op de schouder tot schouder maat.
 

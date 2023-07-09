@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Culotte cycliste Cornélius : Ce qu'il faut"
-- - -
+---
 
 Pour fabriquer Cornelius, vous aurez besoin des éléments suivants :
 

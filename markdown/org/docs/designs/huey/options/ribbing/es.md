@@ -1,6 +1,6 @@
-- - -
+---
 title: "Ribbing"
-- - -
+---
 
 ![Tejido acanalado](./ribbing.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Weitenzugabe Hüfte"
-- - -
+---
 
 ![Zugabe Hüfte](./hipsease.svg)
 

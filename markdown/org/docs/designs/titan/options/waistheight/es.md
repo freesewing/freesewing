@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waist height"
-- - -
+---
 
 Controla la altura de la cintura, donde:
 

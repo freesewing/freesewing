@@ -1,6 +1,6 @@
-- - -
+---
 title: "Jaeger jacket: Fabric Options"
-- - -
+---
 
 Sportscoats sind typischerweise aus einer schwereren Wolle gefertigt, oft mit etwas Textur oder Muster im Web. Im Allgemeinen werden sie in _Busier_ Stoffen hergestellt.
 

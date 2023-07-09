@@ -1,6 +1,6 @@
-- - -
+---
 title: "Curve"
-- - -
+---
 
 ![Kromme optie](./curve.svg)
 

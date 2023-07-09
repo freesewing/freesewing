@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Retour de manchon Y"
-- - -
+---
 
 ![La position verticale du point de flexion arrière](./sleevecapbackfactory.svg)
 

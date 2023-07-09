@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shoulderstrap width"
-- - -
+---
 
 ![Die Schultergurtbreite auf Aaron](./shoulderstrapwidth.svg)
 

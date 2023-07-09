@@ -1,6 +1,6 @@
-- - -
+---
 title: "Size of the hem"
-- - -
+---
 
 De grootte van de zoom.
 

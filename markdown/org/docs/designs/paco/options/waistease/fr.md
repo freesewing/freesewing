@@ -1,6 +1,6 @@
-- - -
+---
 titre : "aisance à la taille"
-- - -
+---
 
 Contrôle la quantité d'aisance au niveau de la taille.
 

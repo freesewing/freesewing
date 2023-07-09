@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bruce boxer briefs: What You Need"
-- - -
+---
 
 Om Bruce te maken heb je het volgende nodig:
 

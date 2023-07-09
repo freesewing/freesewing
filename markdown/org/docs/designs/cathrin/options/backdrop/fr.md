@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bas du dos"
-- - -
+---
 
 ![L'option de drop arrière sur Cathrin](./backdrop.svg)
 

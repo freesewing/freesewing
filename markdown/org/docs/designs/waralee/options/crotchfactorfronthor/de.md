@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front Crotch Factor Horizontal"
-- - -
+---
 
 Wird verwendet um die Kurve des vorderen Schritts horizontal zu verschieben
 

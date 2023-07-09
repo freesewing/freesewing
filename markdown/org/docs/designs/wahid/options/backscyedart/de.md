@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back scye dart"
-- - -
+---
 
 ![Rückwärtige Armlochabnäher](backscyedart.svg)
 

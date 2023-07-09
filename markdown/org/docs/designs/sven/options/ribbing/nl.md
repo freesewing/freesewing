@@ -1,6 +1,6 @@
-- - -
+---
 title: "Ribbing"
-- - -
+---
 
 ![Boordstof](ribbing.svg)
 

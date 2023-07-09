@@ -1,6 +1,6 @@
-- - -
+---
 title: "Draft for high bust"
-- - -
+---
 
 Choose this option to draft Teagan to your high bust measurement, rather than your full chest circumference.
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waist balance"
-- - -
+---
 
 Steuert die Verteilung des Stoffes zwischen Vorder- und Rückenteilen an der Taille.
 

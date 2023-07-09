@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cross seam bend"
-- - -
+---
 
 Steuert die Krümmung der Quernahtkurve.
 

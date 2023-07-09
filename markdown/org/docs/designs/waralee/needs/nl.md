@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waralee wrap pants: What You Need"
-- - -
+---
 
 Om Waralee te maken heb je het volgende nodig:
 

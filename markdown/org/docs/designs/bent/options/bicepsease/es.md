@@ -1,6 +1,6 @@
-- - -
+---
 title: "Biceps ease"
-- - -
+---
 
 Esta opción controla la facilidad en su brazo/biceps.
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Stretch"
-- - -
+---
 
 ![Opción de estiramiento en Bruce](./stretch.svg)
 

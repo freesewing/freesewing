@@ -1,6 +1,6 @@
-- - -
+---
 title: "Side/Front placement"
-- - -
+---
 
 ![Zij- voorpand plaatsing](sidefrontplacement.svg)
 

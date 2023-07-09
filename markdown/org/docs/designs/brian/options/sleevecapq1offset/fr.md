@@ -1,6 +1,6 @@
-- - -
+---
 titre : "décalage Q1 de la tête de manche"
-- - -
+---
 
 ***
 

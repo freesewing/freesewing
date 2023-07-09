@@ -1,6 +1,6 @@
-- - -
+---
 title: "Paco pants: Fabric Options"
-- - -
+---
 
 Estos funcionan mejor en un tejido más ligero con un drape relativamente bueno.
 

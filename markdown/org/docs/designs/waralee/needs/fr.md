@@ -1,6 +1,6 @@
-- - -
+---
 title: "Pantalon portefauille Waralee : ce dont vous avez besoin"
-- - -
+---
 
 Pour faire Waralee, vous aurez besoin des éléments suivants :
 

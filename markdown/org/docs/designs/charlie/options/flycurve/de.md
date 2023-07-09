@@ -1,6 +1,6 @@
-- - -
+---
 title: "Fly curve"
-- - -
+---
 
 Diese steuert die Krümmung der J-Naht der Fly.
 

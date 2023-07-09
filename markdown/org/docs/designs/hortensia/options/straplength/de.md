@@ -1,6 +1,6 @@
-- - -
+---
 title: "Strap length"
-- - -
+---
 
 Steuert die Riemenlänge.
 

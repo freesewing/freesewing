@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chest ease"
-- - -
+---
 
 ![De factor voor overwijdte borst bij Brian](./chestease.svg)
 

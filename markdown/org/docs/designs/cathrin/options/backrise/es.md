@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back rise"
-- - -
+---
 
 ![La opción espalda elevada en Cathrin](./backrise.svg)
 

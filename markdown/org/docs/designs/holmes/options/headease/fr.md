@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Aisance de tête"
-- - -
+---
 
 ***
 

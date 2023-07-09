@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chest ease"
-- - -
+---
 
 De hoeveelheid overwijdte aan je borst.
 

@@ -1,6 +1,6 @@
-- - -
+---
 title:"Échancrure emmanchure avant"
-- - -
+---
 
 ![Échancrure emmanchure avant](frontinset.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Teagan T-shirt: Fabric Options"
-- - -
+---
 
 La camiseta de Teagan está diseñada como un tee de montaje cercano y es más adecuada para tejer tejidos con algún estiramiento, como jersey. Los tejidos de algodón son a menudo una opción fácil de costar para los nuevos tejidos. Los tejidos de Rayon generalmente tendrán un poco más de enganche y son más deslizantes para coser.
 

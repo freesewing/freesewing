@@ -1,6 +1,6 @@
-- - -
+---
 title: "Length bonus"
-- - -
+---
 
 Cuánto más largo que la longitud por defecto para hacer su aprendiz.
 

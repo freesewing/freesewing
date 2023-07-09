@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back opening"
-- - -
+---
 
 ![Die Back-Öffnungs-Option auf Kathrin](./backopening.svg)
 

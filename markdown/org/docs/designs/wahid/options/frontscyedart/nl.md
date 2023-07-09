@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front scye dart"
-- - -
+---
 
 Dit patroon komt met een standaard neepje van 1 cm in het armsgat aan het voorpand.
 

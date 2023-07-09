@@ -1,6 +1,6 @@
-- - -
+---
 title: "Trayvon tie: Fabric Options"
-- - -
+---
 
 ## Stof voor een das
 

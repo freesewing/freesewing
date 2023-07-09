@@ -1,6 +1,6 @@
-- - -
+---
 title: "Length bonus"
-- - -
+---
 
 ![La opción de extra de longitud en Diana](./lengthbonus.svg)
 

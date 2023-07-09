@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Corset Cathrin : Instructions de couture"
-- - -
+---
 
 <Note>
 

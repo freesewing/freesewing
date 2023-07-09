@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cathrin corset: What You Need"
-- - -
+---
 
 Los corsets son más fáciles de construir de lo que parecen, pero necesitan varios elementos y herramientas especializados.
 

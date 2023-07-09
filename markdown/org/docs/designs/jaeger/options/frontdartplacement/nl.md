@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front dart placement"
-- - -
+---
 
 ![Plaatsing neep vooraan](frontdartplacement.svg)
 

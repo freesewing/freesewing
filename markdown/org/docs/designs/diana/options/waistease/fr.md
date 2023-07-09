@@ -1,6 +1,6 @@
-- - -
+---
 titre : "aisance à la taille"
-- - -
+---
 
 ![L'option d'assouplissement de la taille sur Diana](./waistease.svg)
 

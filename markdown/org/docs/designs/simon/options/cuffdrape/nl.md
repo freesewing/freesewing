@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cuff drape"
-- - -
+---
 
 ![Verschil mouw/manchet](cuffdrape.svg)
 

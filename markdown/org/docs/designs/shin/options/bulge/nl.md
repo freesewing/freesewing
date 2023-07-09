@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bulge"
-- - -
+---
 
 Hoeveel ruimte wil je vooraan?
 

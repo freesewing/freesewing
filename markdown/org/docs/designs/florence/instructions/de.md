@@ -1,6 +1,6 @@
-- - -
+---
 title: "Florence face mask: Sewing Instructions"
-- - -
+---
 
 ### Schritt 1: Füge die Mittelnaht zusammen
 

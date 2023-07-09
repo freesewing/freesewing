@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Élasticité des jambes"
-- - -
+---
 
 ![L'option élasticité des jambes pour Bruce](./legstretch.svg)
 

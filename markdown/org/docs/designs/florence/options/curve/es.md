@@ -1,6 +1,6 @@
-- - -
+---
 title: "Curve"
-- - -
+---
 
 ![Opción de curvatura](./curve.svg)
 

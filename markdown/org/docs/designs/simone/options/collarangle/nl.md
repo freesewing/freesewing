@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar angle"
-- - -
+---
 
 ![Hoek kraag](collarangle.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Largeur de la poche de poitrine"
-- - -
+---
 
 Contrôle la largeur de la poche de la poitrine.
 

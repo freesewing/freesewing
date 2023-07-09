@@ -1,6 +1,6 @@
-- - -
+---
 title: "Belt loops"
-- - -
+---
 
 Construir cuántos bucles de cinturón vamos a generar.
 

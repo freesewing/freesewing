@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front pocket facing"
-- - -
+---
 
 Bepaalt de grens tussen het beleg van de voorzak en het zakdeel.
 

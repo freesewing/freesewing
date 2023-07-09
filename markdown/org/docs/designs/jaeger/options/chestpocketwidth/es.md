@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chest pocket width"
-- - -
+---
 
 ![Ancho bolsillo del pecho](chestpocketwidth.svg)
 

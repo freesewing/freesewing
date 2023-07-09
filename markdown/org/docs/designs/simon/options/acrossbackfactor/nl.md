@@ -1,6 +1,6 @@
-- - -
+---
 title: "Across back factor"
-- - -
+---
 
 ![Rugwijdte factor](./acrossbackfactor.svg)
 

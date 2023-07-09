@@ -1,6 +1,6 @@
-- - -
+---
 title: "Aisance du col"
-- - -
+---
 
 ![Quelle aisance utilisez-vous pour votre col ?](collarease.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Armhole depth factor"
-- - -
+---
 
 ![Der Rüstungstiefenfaktor auf Brian](./armholedepthfactor.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Débardeur Aaron (A-Shirt) : Instructions de couture"
-- - -
+---
 
 ## Étape 1 : Faire les coutures d'assemblage
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Teagan T-shirt: Sewing Instructions"
-- - -
+---
 
 ## Schritt 1: Schließe die Schulternähte
 

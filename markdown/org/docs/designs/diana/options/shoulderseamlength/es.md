@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shoulder seam length"
-- - -
+---
 
 ![La opción de longitud de costura del hombro en Diana](./shoulderseamlength.svg)
 

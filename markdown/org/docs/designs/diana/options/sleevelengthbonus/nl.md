@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleeve length bonus"
-- - -
+---
 
 ![De optie voor bonus mouwlengte bij Diana](./sleevelengthbonus.svg)
 

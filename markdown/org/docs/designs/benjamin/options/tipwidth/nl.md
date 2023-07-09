@@ -1,6 +1,6 @@
-- - -
+---
 title: "Tip width"
-- - -
+---
 
 ![Brede en smalle strikken](tipwidth.svg)
 

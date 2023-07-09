@@ -1,6 +1,6 @@
-- - -
+---
 title: "Pocket location"
-- - -
+---
 
 Controla la ubicación de los bolsillos.
 

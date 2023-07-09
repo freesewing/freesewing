@@ -1,6 +1,6 @@
-- - -
+---
 title: "Wahid waistcoat: What You Need"
-- - -
+---
 
 Para hacer Wahid, necesitarás lo siguiente:
 

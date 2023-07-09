@@ -1,6 +1,6 @@
-- - -
+---
 title: "Center back dart"
-- - -
+---
 
 ![Middenrug neep](centerbackdart.svg)
 

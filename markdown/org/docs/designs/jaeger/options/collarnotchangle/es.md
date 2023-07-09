@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar notch angle"
-- - -
+---
 
 ![Ángulo de la muesca del cuello](collarnotchangle.svg)
 

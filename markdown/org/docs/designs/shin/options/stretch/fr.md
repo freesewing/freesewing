@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Élasticité"
-- - -
+---
 
 Le facteur de stretch horizontal.
 

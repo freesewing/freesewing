@@ -1,6 +1,6 @@
-- - -
+---
 title: "Theo trousers: What You Need"
-- - -
+---
 
 Para hacer Theodore, necesitarás lo siguiente:
 

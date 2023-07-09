@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar notch depth"
-- - -
+---
 
 ![Kragentiefe](collarnotchdepth.svg)
 

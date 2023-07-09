@@ -1,6 +1,6 @@
-- - -
+---
 title: "Curve"
-- - -
+---
 
 ![Krümmungs-Option](./curve.svg)
 

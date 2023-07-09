@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap front Y"
-- - -
+---
 
 ![Die vertikale Position des vorderen Durchbiegungspunkts](./sleevecapfrontfactory.svg)
 

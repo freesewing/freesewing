@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waist ease"
-- - -
+---
 
 De hoeveelheid overwijdte aan de taille.
 

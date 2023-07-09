@@ -1,6 +1,6 @@
-- - -
+---
 title: "Rise"
-- - -
+---
 
 ![Opción de ascenso en Bruce](./rise.svg)
 

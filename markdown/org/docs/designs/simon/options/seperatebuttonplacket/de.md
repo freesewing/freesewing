@@ -1,6 +1,6 @@
-- - -
+---
 title: "Seperate button placket"
-- - -
+---
 
 ![Separate Knopfleiste](seperatebuttonplacket.svg)
 

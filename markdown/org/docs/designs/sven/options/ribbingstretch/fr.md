@@ -1,6 +1,6 @@
-- - -
+---
 title: "Ribbing stretch"
-- - -
+---
 
 ![Élasticité du bord côte](ribbingstretch.svg)
 

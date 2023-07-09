@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleeve vent width"
-- - -
+---
 
 Steuert die Breite des Schloßes.
 

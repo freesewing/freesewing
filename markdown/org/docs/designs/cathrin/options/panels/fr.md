@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Nombre de panneaux"
-- - -
+---
 
 ![L'option des panneaux sur Cathrin](./panels.svg)
 

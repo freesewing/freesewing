@@ -1,6 +1,6 @@
-- - -
+---
 title: "Neck inset"
-- - -
+---
 
 ![Insnede nek](neckinset.svg)
 

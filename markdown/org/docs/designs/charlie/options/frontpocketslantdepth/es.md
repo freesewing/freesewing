@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front pocket slant depth"
-- - -
+---
 
 Controla la profundidad de la franja delantera del bolsillo. En otras palabras, determina la amplitud de la apertura del bolsillo.
 

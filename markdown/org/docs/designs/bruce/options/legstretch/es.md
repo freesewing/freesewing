@@ -1,6 +1,6 @@
-- - -
+---
 title: "Leg stretch"
-- - -
+---
 
 ![Opción de estiramiento de piernas en Bruce](./legstretch.svg)
 

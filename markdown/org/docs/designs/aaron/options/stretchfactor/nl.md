@@ -1,6 +1,6 @@
-- - -
+---
 titel: "Rek"
-- - -
+---
 
 ![De optie voor de stretch factor van Aaron](./stretchfactor.svg)
 

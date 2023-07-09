@@ -1,6 +1,6 @@
-- - -
+---
 title: "Neckline shape"
-- - -
+---
 
 ![La opción de forma de línea de cuello en Aaron](./necklinebend.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Stretch"
-- - -
+---
 
 ![Die Stretch-Faktor Option auf Aaron](./stretchfactor.svg)
 

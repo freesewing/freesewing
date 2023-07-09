@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bulge"
-- - -
+---
 
 ¿Cuánto espacio quieres en la parte delantera?
 

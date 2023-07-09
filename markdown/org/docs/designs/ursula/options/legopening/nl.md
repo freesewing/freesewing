@@ -1,6 +1,6 @@
-- - -
+---
 title: "Leg opening"
-- - -
+---
 
 Deze optie bepaalt hoe hoog de broekspijp is.
 

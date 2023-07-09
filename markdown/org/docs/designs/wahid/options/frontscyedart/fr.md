@@ -1,6 +1,6 @@
-- - -
+---
 title:"Pince de carrure avant"
-- - -
+---
 
 Ce patron est prévu avec une pince de 1 cm (pensez pince d'emmanchure) par défaut sur le devant.
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waist reduction"
-- - -
+---
 
 ![De optie voor reductie taille bij Cathrin](./waistreduction.svg)
 

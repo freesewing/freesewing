@@ -1,6 +1,6 @@
-- - -
+---
 title: "Size of the hem"
-- - -
+---
 
 La taille de l'ourlet.
 

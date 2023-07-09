@@ -1,6 +1,6 @@
-- - -
+---
 title: "Size"
-- - -
+---
 
 Bepaalt de totale grootte van de handtas.
 

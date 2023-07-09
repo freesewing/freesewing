@@ -1,6 +1,6 @@
-- - -
+---
 title: "Biceps ease"
-- - -
+---
 
 ![De factor voor biceps overwijdte bij Brian](./bicepsease.svg)
 

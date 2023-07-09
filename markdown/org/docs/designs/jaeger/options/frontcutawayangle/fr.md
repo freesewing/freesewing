@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front cutaway angle"
-- - -
+---
 
 ![Angle de coupe avant](frontcutawayangle.svg)
 

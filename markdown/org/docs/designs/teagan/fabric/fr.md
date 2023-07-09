@@ -1,6 +1,6 @@
-- - -
+---
 title: "Teagan T-shirt: Fabric Options"
-- - -
+---
 
 Le T-shirt Teagan est conçu comme un tee ajusté et est le mieux adapté pour tricoter des tissus avec quelques étirements, comme le jersey. Les tricots en coton sont souvent une option facile à coudre pour les nouveaux tricots. Les tricots de Rayon ont généralement un peu plus de draps et sont plus glissants à coudre.
 

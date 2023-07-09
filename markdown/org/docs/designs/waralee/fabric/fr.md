@@ -1,6 +1,6 @@
-- - -
+---
 titre: "Pantalon portefeuille Waralee : Option de tissus"
-- - -
+---
 
 ### Tissu principal
 

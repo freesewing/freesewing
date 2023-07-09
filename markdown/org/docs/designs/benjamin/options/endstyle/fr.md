@@ -1,6 +1,6 @@
-- - -
+---
 title: "Style des extrémités"
-- - -
+---
 
 ![Trois formes de pointe différentes](endstyle.svg)
 

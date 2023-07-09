@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waistband overlap"
-- - -
+---
 
 ![Überlappung des Taillenbundes](waistbandoverlap.svg)
 

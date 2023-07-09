@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back rise"
-- - -
+---
 
 ¿Cuánto aumento adicional quieres a la espalda?
 

@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Le bloc de corps de Brian : Ce dont vous avez besoin"
-- - -
+---
 
 Pour faire Brian, vous aurez besoin des éléments suivants :
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Teagan T-shirt: Fabric Options"
-- - -
+---
 
 Het Teagaanse T-shirt is ontworpen als een dicht passerende thee en is het meest geschikt om stoffen met wat stretch zoals jersey te jersey te maskeren. Katoenen gebreide zijn vaak een makkelijke optie om te naaien voor de nieuwe knopen. Over het algemeen hebben Rayon breien een beetje meer weg en zijn ze wat glad voor de naai.
 

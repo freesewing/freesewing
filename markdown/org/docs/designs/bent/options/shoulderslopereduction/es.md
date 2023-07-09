@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shoulder slope reduction"
-- - -
+---
 
 Este patrón se adapta al hombro inclinado teniendo en cuenta la inclinación del hombro.
 

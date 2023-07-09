@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bulge"
-- - -
+---
 
 ![Opción de balanza en Bruce](./bulge.svg)
 

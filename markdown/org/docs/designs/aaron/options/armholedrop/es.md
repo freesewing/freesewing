@@ -1,6 +1,6 @@
-- - -
+---
 title: "Armhole drop"
-- - -
+---
 
 ![La opción de soltar el acorazado en Aaron](./armholedrop.svg)
 

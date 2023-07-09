@@ -1,6 +1,6 @@
-- - -
+---
 title: "Ribbing height"
-- - -
+---
 
 ![Hoogte boord](ribbingheight.svg)
 

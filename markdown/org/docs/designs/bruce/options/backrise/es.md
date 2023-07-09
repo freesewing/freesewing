@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back rise"
-- - -
+---
 
 ![Opción de retroceso en Bruce](./backrise.svg)
 

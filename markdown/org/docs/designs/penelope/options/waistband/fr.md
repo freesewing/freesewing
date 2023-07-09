@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waist band"
-- - -
+---
 
 Ajoute une ceinture au patron.
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Stretch"
-- - -
+---
 
 Die Menge an Overal (horizontal) Strecke.
 

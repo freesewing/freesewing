@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front armhole extra cutout"
-- - -
+---
 
 ![Extra uitsnijding armsgat vooraan](./frontarmholedeeper.svg)
 

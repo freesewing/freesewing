@@ -1,6 +1,6 @@
-- - -
+---
 title: "Neckline curvature"
-- - -
+---
 
 Bepaalt de kromming van de halsopening.
 

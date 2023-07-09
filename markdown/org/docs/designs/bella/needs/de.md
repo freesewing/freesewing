@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bella body block: What You Need"
-- - -
+---
 
 Um Bella zu erstellen, benötigst du Folgendes:
 

@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Manteau Carlita : Ce qu'il faut"
-- - -
+---
 
 Pour fabriquer Carlita, vous aurez besoin des éléments suivants :
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Rayon de l'ourlet"
-- - -
+---
 
 Contrôle la quantité par laquelle l'ourlet est arrondi au fond avant.
 

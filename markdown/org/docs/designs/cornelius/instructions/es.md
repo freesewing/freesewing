@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cornelius cycling breeches: Sewing Instructions"
-- - -
+---
 
 ### Step 1: The Front Pockets
 

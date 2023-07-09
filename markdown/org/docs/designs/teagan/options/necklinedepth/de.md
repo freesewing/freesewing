@@ -1,6 +1,6 @@
-- - -
+---
 title: "Neckline depth"
-- - -
+---
 
 Steuert die Tiefe des Halsöffnens.
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shoulder seam shift: collar side"
-- - -
+---
 
 Bepaalt de locatie van de schoudernaad aan de kant van de kraag.
 

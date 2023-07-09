@@ -1,6 +1,6 @@
-- - -
+---
 title: "Wahid waistcoat: Sewing Instructions"
-- - -
+---
 
 ### Paso 1: Fusionar interfaz
 

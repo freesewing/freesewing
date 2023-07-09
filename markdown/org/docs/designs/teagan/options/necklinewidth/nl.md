@@ -1,6 +1,6 @@
-- - -
+---
 title: "Neckline width"
-- - -
+---
 
 Bepaalt hoe breed de halsopening is.
 

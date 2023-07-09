@@ -1,6 +1,6 @@
-- - -
+---
 title: "Jaeger, das Sakko: Zuschnitt"
-- - -
+---
 
 - **Oberstoff**
   - Schneide **2 Vorderteile** (Teil 1)

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sven sweatshirt: What You Need"
-- - -
+---
 
 Um Sven zu erstellen, benötigst du Folgendes:
 

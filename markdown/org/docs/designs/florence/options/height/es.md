@@ -1,6 +1,6 @@
-- - -
+---
 title: "Height"
-- - -
+---
 
 ![Opción de altura](./height.svg)
 

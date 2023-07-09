@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar stand bend"
-- - -
+---
 
 ![Kromming staander](collarstandbend.svg)
 

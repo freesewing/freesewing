@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Facteur de profondeur d'emmanchure"
-- - -
+---
 
 Cette option permet de contrôler la profondeur de l'emmanchure.
 

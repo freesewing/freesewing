@@ -1,6 +1,6 @@
-- - -
+---
 title: "Crotch drop"
-- - -
+---
 
 Steuert wie stark der Schneider gesenkt wird.
 

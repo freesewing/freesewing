@@ -1,6 +1,6 @@
-- - -
+---
 title: "Ribbing stretch"
-- - -
+---
 
 ![Bündchen-Elastizität](./ribbingstretch.svg)
 

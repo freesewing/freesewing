@@ -1,6 +1,6 @@
-- - -
+---
 title: "Leg balance"
-- - -
+---
 
 Contrôle la proportion entre la partie avant et arrière des jambes.
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Titan trouser block: What You Need"
-- - -
+---
 
 Pour faire Titan, vous aurez besoin des éléments suivants :
 

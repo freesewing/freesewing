@@ -1,6 +1,6 @@
-- - -
+---
 title: "Belt loops"
-- - -
+---
 
 Überzeugen Sie, wie viele Beltloops wir generieren.
 

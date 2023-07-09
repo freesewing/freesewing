@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cuff button rows"
-- - -
+---
 
 ![Hileras de botones en los puños](cuffbuttonrows.svg)
 

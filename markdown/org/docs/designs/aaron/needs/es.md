@@ -1,6 +1,6 @@
-- - -
+---
 title: "Aaron A-Shirt: What You Need"
-- - -
+---
 
 Para hacer Aarón necesitarás lo siguiente:
 

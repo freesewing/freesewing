@@ -1,6 +1,6 @@
-- - -
+---
 title: "Charlie chinos: Instructions de couture"
-- - -
+---
 
 ## Étape 1 : Fermer les pinces du dos
 

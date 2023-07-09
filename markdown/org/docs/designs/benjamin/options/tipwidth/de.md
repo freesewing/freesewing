@@ -1,6 +1,6 @@
-- - -
+---
 title: "Tip width"
-- - -
+---
 
 ![Fliegen breit und schmal](tipwidth.svg)
 

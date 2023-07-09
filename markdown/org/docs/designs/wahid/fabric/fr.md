@@ -1,6 +1,6 @@
-- - -
+---
 title: "Gilet Wahid : Options de tissu"
-- - -
+---
 
 Tous les tissus de costumes sont un très bon choix pour votre gilet. Toute boutique en tissu qui se respecte devrait avoir une catégorie avec du tissu pour costume. Vous pouvez simplement entrer, demander où vous pouvez trouver le tissu pour des costumes, et choisir quelque chose que vous aimez.
 

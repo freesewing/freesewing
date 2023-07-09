@@ -1,6 +1,6 @@
-- - -
+---
 title: "Rise"
-- - -
+---
 
 ![De optie voor hoogte bij Bruce](./rise.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Button placket width"
-- - -
+---
 
 ![Largeur de patte de boutonnage - côté boutons](buttonplacketwidth.svg)
 

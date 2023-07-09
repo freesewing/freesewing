@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap Q1 upward spread"
-- - -
+---
 
 ![Le décalage ascendant du premier quadrant de la tête de manche](./sleevecapq1spread2.svg)
 

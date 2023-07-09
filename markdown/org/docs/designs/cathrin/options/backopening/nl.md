@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back opening"
-- - -
+---
 
 ![De optie voor rugopening bij Cathrin](./backopening.svg)
 

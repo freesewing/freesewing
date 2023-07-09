@@ -1,6 +1,6 @@
-- - -
+---
 titre : "Hauteur des hanches"
-- - -
+---
 
 ![L'option de montée de la hanche sur Cathrin](./hiprise.svg)
 

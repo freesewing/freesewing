@@ -1,6 +1,6 @@
-- - -
+---
 title: "Charlie chinos: Fabric Options"
-- - -
+---
 
 Die offensichtliche Wahl für Charlie Chinos, ist [-Chino-Stoff](https://en.wikipedia.org/wiki/Chino_cloth), der ein Baumwoll-Tongewebe ist. Heutzutage ist es oft als Mischung zu etwas Stretch verkauft, was optional ist.
 

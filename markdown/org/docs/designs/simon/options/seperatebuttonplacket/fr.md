@@ -1,6 +1,6 @@
-- - -
+---
 title: "Seperate button placket"
-- - -
+---
 
 ![Patte de boutonnage séparée](seperatebuttonplacket.svg)
 

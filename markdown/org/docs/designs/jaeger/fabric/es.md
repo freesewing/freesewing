@@ -1,6 +1,6 @@
-- - -
+---
 title: "Jaeger jacket: Fabric Options"
-- - -
+---
 
 Los escudos deportivos son típicamente hechos de una lana más pesada, a menudo con alguna textura o patrón en el tejido. En general, se fabrican en _telas_ más ocupadas.
 

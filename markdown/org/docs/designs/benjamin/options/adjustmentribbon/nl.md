@@ -1,6 +1,6 @@
-- - -
+---
 title: "Adjustment ribbon"
-- - -
+---
 
 ![Traditioneel of aanpasbaar](adjustmentribbon.svg)
 

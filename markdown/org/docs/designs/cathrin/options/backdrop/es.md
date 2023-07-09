@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back drop"
-- - -
+---
 
 ![La opción de retroceso en la Catedral](./backdrop.svg)
 

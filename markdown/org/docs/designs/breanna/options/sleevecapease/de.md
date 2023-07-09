@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap ease"
-- - -
+---
 
 Bestimmt die Menge der Zugabe an der Armkugel.
 

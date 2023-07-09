@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front pocket slant round"
-- - -
+---
 
 Bepaalt hoe ver van het einde van de schuine lijn we beginnen met afronden in de outseam.
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back rise"
-- - -
+---
 
 Wie viel zusätzlicher Aufstieg wollen Sie zurück?
 

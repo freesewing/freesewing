@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hips ease"
-- - -
+---
 
 ![La opción de facilidad de caderas en Aaron](./hipsease.svg)
 

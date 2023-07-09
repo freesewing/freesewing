@@ -1,6 +1,6 @@
-- - -
+---
 title: "Elastic stretch"
-- - -
+---
 
 Passen Sie diese Option für mehr oder weniger dehnbare Elastik an.
 

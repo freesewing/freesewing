@@ -1,6 +1,6 @@
-- - -
+---
 title: "Length"
-- - -
+---
 
 ![Opción de longitud](./length.svg)
 

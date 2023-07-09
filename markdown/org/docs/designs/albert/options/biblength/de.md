@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bib length"
-- - -
+---
 
 Steuert die Länge des _Bib_ Teils deiner Schürze.
 

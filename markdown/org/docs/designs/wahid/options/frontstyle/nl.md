@@ -1,6 +1,6 @@
-- - -
+---
 title: "Neck opening style"
-- - -
+---
 
 ![Stijl voorpand](frontstyle.svg)
 

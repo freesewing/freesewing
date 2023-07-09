@@ -1,6 +1,6 @@
-- - -
+---
 title: "Rise"
-- - -
+---
 
 Esta opción controla la altura general de la cintura.
 

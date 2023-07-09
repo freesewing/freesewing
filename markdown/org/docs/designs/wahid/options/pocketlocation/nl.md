@@ -1,6 +1,6 @@
-- - -
+---
 title: "Pocket location"
-- - -
+---
 
 Bepaalt de locatie van de zakken.
 

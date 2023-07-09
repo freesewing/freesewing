@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar stand curve"
-- - -
+---
 
 ![Curve staander](collarstandcurve.svg)
 

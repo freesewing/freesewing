@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar stand bend"
-- - -
+---
 
 ![courbure de la courbe de la Collarstand](collarstandbend.svg)
 
