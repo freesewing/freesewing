@@ -1,20 +1,20 @@
 ---
 layout: onecol
-title: Basting
+title: Зачистка
 ---
 
-![The shape of this denim back pocket is basted before the pocket is topstitched to the garment](basting.jpg)
+![Форма цієї задньої кишені з джинсової тканини обтачкується перед тим, як кишеня пришивається до виробу](basting.jpg)
 
-Basting is temporary sewing to hold things in place.
+Пришивання - це тимчасове зшивання, щоб утримувати речі на місці.
 
-It is typically done by hand, but you can also machine baste.
+Зазвичай це робиться вручну, але ви також можете зробити це машинним способом.
 
-Examples of where basting is commonly used are:
+Приклади того, де зазвичай використовується набійка, наведені нижче:
 
-- Basting a seam in place before sewing it
-- Basting an ornament, pocket, or other part in place before attaching it
-- Basting darts or other pattern changes while fitting the garment on a model
+- Проклеюємо шов перед тим, як прошити його
+- Пришивання прикраси, кишені або іншої деталі перед тим, як прикріпити її на місце
+- Вшивання виточок або інші зміни викрійки під час примірки виробу на моделі
 
-Basting is never permanent, but merely a temporary measure to hold things in place.
+Закріплення ніколи не буває постійним, а лише тимчасовим заходом, щоб утримати речі на місці.
 
-> Basting and pinning are different techniques for similar situations
+> Наклеювання та закріплення - це різні методи для схожих ситуацій
