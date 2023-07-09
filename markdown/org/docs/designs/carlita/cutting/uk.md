@@ -1,65 +1,65 @@
 - - -
-title: "Carlita coat: Cutting Instructions"
+назва: "Пальто Карліта: Інструкція з крою"
 - - -
 
 <Note>
 
-Certain parts have to be drafted off of the existing parts. How to draft these are provided in the [instructions](/docs/patterns/carlita/instructions).
+Певні деталі доводиться викреслювати з існуючих. Як їх складати, можна знайти за посиланням [instructions](/docs/patterns/carlita/instructions).
 
 </Note>
 
-### Materials
+### Матеріали
 
-- **Main fabric**
-  - Cut **2 Front** parts
-  - Cut **2 Side** parts
-  - Cut **2 Front facing** parts
-  - Cut **2 Back** parts
-  - Cut **2 topsleeve** parts
-  - Cut **2 undersleeve** parts
-  - Cut **2 tail** parts
-  - Cut **4 belt** parts
-  - Cut **2 Collar stand** parts
-  - Cut **2 collar** parts on the fold or Cut the upper collar on the fold and the under collar on the bias
-  - Cut **2 cuffFacing** parts
-  - Cut **2 Pocket** parts
-  - Cut **4 pocketFlap** parts
-  - Cut **2 chestPocketWelt** parts
-  - Cut **2 innerPocketWelt** parts
+- **Основна тканина**
+  - Виріжте **2 передні** частини
+  - Виріжте **2 бічні** частини
+  - Вирізати **2 Лицьова частина**
+  - Виріжте **2 частини назад**
+  - Виріжте **2 частини верхнього рукава**
+  - Виріжте **2 частини нижньої частини**
+  - Виріжте **2 частини хвоста**
+  - Виріжте **4 частини ременя**
+  - Виріз **2 Підставка для коміра** деталі
+  - Скроїти **2 деталі коміра** по згину або Скроїти верхній комір по згину, а нижній комір по згину
+  - Виріжте **2 манжети Облицювання** деталей
+  - Виріжте **2 деталі кишені**
+  - Виріжте **4 кишеніЗакрийте** деталі
+  - Виріжте **2 нагрудні кишеніШов** деталі
+  - Виріжте **2 деталі внутрішньої кишені зі швом**
 
 <Note>
 
-If your main fabric is quite lightweight and flimsy you may need to interface all the parts with a lightweight interfacing.
+Якщо ваша основна тканина досить легка і крихка, можливо, вам доведеться з'єднати всі деталі легкою прокладкою.
 
 </Note>
 
-- **Lining fabric**
-  - Cut **2 Front lining** parts
-  - Cut **2 Side** parts
-  - Cut **2 Back** parts
-  - Cut **2 topsleeve** parts
-  - Cut **2 undersleeve** parts
-  - Cut **2 tail** parts
-  - Cut **2 innerPocketBag** parts
-  - Cut **1 innerPocketTab** parts
-  - Cut **2 pocketLining** parts
-  - Cut **2 chestPocketBag** parts
-- **Light to Mediumweight Hair Canvas**
-  - Cut **2 Front** parts
-  - Cut **2 Side** parts
-  - Cut **1 Collar stand** parts
-  - Cut **2 collar** parts on the bias and seam together
-  - Cut **2 cuffFacing** parts
-  - Cut **2 pocketFlap** parts
-  - Cut **2 chestPocketWelt** parts
-  - Cut **2 innerPocketWelt** parts
-- **Heavyweight Hair Canvas**
-  - Cut **2 Front shoulder** parts
-  - Cut **2 Side shoulder** parts
-  - Cut **2 Back shoulder** parts
+- **Підкладкова тканина**
+  - Виріз **2 Передня підкладка** деталі
+  - Виріжте **2 бічні** частини
+  - Виріжте **2 частини назад**
+  - Виріжте **2 частини верхнього рукава**
+  - Виріжте **2 частини нижньої частини**
+  - Виріжте **2 частини хвоста**
+  - Виріжте **2 деталі innerPocketBag**
+  - Виріжте **1 внутрішню кишенькову вкладку** частини
+  - Викрій **2 кишеніПідкладка** деталі
+  - Викроїти **2 частини нагрудної сумки**
+- **Полотно для волосся легкої та середньої ваги**
+  - Виріжте **2 передні** частини
+  - Виріжте **2 бічні** частини
+  - Виріз **1 Підставка для коміра** деталі
+  - Виріжте **2 деталі коміра** по косій лінії і зшийте разом
+  - Виріжте **2 манжети Облицювання** деталей
+  - Виріжте **2 кишеніЗакрийте** деталі
+  - Виріжте **2 нагрудні кишеніШов** деталі
+  - Виріжте **2 деталі внутрішньої кишені зі швом**
+- **Важке полотно для волосся**
+  - Викрійка **2 Передня частина плеча**
+  - Викрійка **2 Бокові плечові** деталі
+  - Викрій **2 Частини спинки та плеча**
 
 <Note>
 
-The canvas parts need to be cut nett (without seam allowances).
+Частини полотна потрібно викроїти сіткою (без припусків на шви).
 
 </Note>
