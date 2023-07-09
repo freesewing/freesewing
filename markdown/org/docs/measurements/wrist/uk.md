@@ -1,7 +1,7 @@
 ---
-title: Wrist circumference
+title: Обхват зап'ястя
 ---
 
-The **wrist circumference** measurement is the circumference of your wrist.
+Вимірювання **окружності зап'ястя** - це окружність вашого зап'ястя.
 
-To measure your **wrist circumference**, run the tape measure around your wrist, where your arm joins your hand.
+Щоб виміряти обхват зап'ястя ****, проведіть рулеткою навколо зап'ястя, де рука з'єднується з кистю.
