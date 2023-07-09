@@ -1,5 +1,5 @@
 ---
-titre: "Largeur de la mouche"
+title: "Largeur de la mouche"
 ---
 
 Contrôle la distance de la couture J-de la mouche par rapport au bord de la mouche.

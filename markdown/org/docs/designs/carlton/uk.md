@@ -1,5 +1,5 @@
 ---
-назва: "Карлтоновий плащ"
+title: "Карлтоновий плащ"
 ---
 
 <PatternDocs pattern='carlton' />

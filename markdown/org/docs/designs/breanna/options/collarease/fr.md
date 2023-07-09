@@ -1,5 +1,5 @@
 ---
-titre: "Aisance du col"
+title: "Aisance du col"
 ---
 
 Contrôle l'aisance au niveau du col.

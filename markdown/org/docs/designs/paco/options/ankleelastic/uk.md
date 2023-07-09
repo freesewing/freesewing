@@ -1,5 +1,5 @@
 ---
-назва: "Ширина еластичності щиколотки/пододу"
+title: "Ширина еластичності щиколотки/пододу"
 ---
 
 If you're using an elasticated hem at the ankle, use this to set the width of the elastic you'll use.

@@ -1,5 +1,5 @@
 ---
-titre: "Largeur de la poignée"
+title: "Largeur de la poignée"
 ---
 
 Contrôle la largeur de l'anse.

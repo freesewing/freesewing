@@ -1,5 +1,5 @@
 ---
-назва: "Світшот Sven"
+title: "Світшот Sven"
 ---
 
 <PatternDocs pattern='sven' />

@@ -1,5 +1,5 @@
 ---
-titel: "Lengtebonus"
+title: "Lengtebonus"
 ---
 
 ![De optie voor bonus lengte bij Aaron](./lengthbonus.svg)

@@ -1,5 +1,5 @@
 ---
-назва: "Штани-обгортки Waralee"
+title: "Штани-обгортки Waralee"
 ---
 
 <PatternDocs pattern='waralee' />

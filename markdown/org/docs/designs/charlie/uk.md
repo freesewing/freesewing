@@ -1,5 +1,5 @@
 ---
-назва: "Чарлі Чінос"
+title: "Чарлі Чінос"
 ---
 
 <PatternDocs pattern='charlie' />

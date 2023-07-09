@@ -1,5 +1,5 @@
 ---
-titre: "Aisance du col"
+title: "Aisance du col"
 ---
 
 Controls the amount of ease at your collar/neck.

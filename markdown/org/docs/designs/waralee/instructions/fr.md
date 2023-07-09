@@ -1,5 +1,5 @@
 ---
-titre: "Pantalon portefeuille Waralee : Instructions de couture"
+title: "Pantalon portefeuille Waralee : Instructions de couture"
 ---
 
 <Warning>

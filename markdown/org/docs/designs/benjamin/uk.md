@@ -1,5 +1,5 @@
 ---
-назва: "Метелик Бенджаміна"
+title: "Метелик Бенджаміна"
 ---
 
 <PatternDocs pattern='benjamin' />

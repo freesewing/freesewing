@@ -1,5 +1,5 @@
 ---
-назва: "Труси-боксери Bruce"
+title: "Труси-боксери Bruce"
 ---
 
 <YouTube id='PL1gv5yv3DoZME1xe5fBEHd0rKPW_xNpF3' playlist />

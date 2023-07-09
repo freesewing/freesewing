@@ -1,5 +1,5 @@
 ---
-titre: "Placement vertical de la poche"
+title: "Placement vertical de la poche"
 ---
 
 Contrôle l'emplacement des poches verticalement (plus ou moins haut).

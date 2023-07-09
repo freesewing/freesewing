@@ -1,5 +1,5 @@
 ---
-назва: "Штани з обгорткою Waralee: Необхідні виміри"
+title: "Штани з обгорткою Waralee: Необхідні виміри"
 ---
 
 <PatternMeasurements pattern='waralee' />

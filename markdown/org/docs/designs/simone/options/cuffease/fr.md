@@ -1,5 +1,5 @@
 ---
-titre: "aisance de manche"
+title: "aisance de manche"
 ---
 
 ![Aisance de poignet](cuffease.svg)

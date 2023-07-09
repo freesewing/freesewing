@@ -1,5 +1,5 @@
 ---
-titre: "aisance de manche"
+title: "aisance de manche"
 ---
 
 Cette option contrôle l'aisance au niveau des poignets.

@@ -1,5 +1,5 @@
 ---
-titre: "Aisance du col"
+title: "Aisance du col"
 ---
 
 L'aisance au niveau du cou/col.

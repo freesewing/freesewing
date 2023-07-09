@@ -1,5 +1,5 @@
 ---
-titre: "Pantalon portefeuille Waralee : Option de tissus"
+title: "Pantalon portefeuille Waralee : Option de tissus"
 ---
 
 ### Tissu principal
