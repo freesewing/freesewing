@@ -1,17 +1,17 @@
 ---
-title: Scale box
+title: Коробка для ваг
 ---
 
-The scale box allows you to verify that your pattern was printed to the correct scale:
+Масштабне поле дозволяє перевірити, чи правильно надруковано візерунок у потрібному масштабі:
 
 <Legend part="scalebox">
 
-The scale box
+Коробка з вагами
 
 </Legend>
 
 <Tip>
 
-To verify the printed size, you can first only print the page that has the scale box on it.
+Щоб перевірити друкований розмір, спочатку можна надрукувати лише ту сторінку, на якій є поле масштабування.
 
 </Tip>
