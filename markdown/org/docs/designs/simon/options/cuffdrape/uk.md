@@ -1,20 +1,20 @@
 - - -
-title: "Cuff drape"
+Назва: "Манжетна драпіровка"
 - - -
 
-![Cuff drape](cuffdrape.svg)
+![Драпірування манжета](cuffdrape.svg)
 
-How much the end of the sleeve is wider than the wrist.
+Наскільки кінець рукава ширший за зап'ястя.
 
 <Note>
 
-This changes the look of the sleeve a bit.
-More drape makes the sleeve wider and gives you a more _blousy_ effect, whereas less drape makes the sleeve more narrow.
+Це трохи змінює зовнішній вигляд рукава.
+Більша кількість драпірування робить рукав ширшим і створює ефект "блузки", в той час як менша кількість драпірування робить рукав вужчим.
 
-The drape will be worked into the cuff with pleats.
+Драпіровка буде вшита в манжету зі складками.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_cuffdrape_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_cuffdrape_sample.svg "Вплив цієї опції на шаблон")
