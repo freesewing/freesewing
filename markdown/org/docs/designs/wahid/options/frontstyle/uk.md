@@ -1,11 +1,11 @@
 - - -
-title: "Neck opening style"
+назва: "Стиль вирізу горловини"
 - - -
 
-![Front style](frontstyle.svg)
+![Стиль фасаду](frontstyle.svg)
 
-Do you want a classic straight neckline, or a curved neckline?
+Ви хочете класичний прямий виріз або вигнутий?
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_frontstyle_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](wahid_frontstyle_sample.svg "Вплив цієї опції на шаблон")
