@@ -1,11 +1,11 @@
 - - -
-title: "Front pocket slant width"
+назва: "Ширина нахилу передньої кишені"
 - - -
 
-Controls the width by which the front pocket slant cuts into the front panel.
+Дозволяє контролювати ширину, на яку передня кишеня врізається в передню панель.
 
-Increasing this will give a more slanted pocket.
+Збільшення цього параметра дасть більш похилу кишеню.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_frontpocketslantwidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](charlie_frontpocketslantwidth_sample.svg "Вплив цієї опції на шаблон")
