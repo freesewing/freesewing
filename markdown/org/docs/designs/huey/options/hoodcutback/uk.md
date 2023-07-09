@@ -1,11 +1,11 @@
 - - -
-title: "Hood cutback"
+назва: "Скорочення капюшона"
 - - -
 
-![Hood cutback](./hoodcutback.svg)
+![Скорочення капюшона](./hoodcutback.svg)
 
-Controls how much the hood opening is cut back, making the hood less deep.
+Контролює, наскільки обрізається отвір витяжки, роблячи витяжку менш глибокою.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_hoodcutback_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](huey_hoodcutback_sample.svg "Вплив цієї опції на шаблон")
