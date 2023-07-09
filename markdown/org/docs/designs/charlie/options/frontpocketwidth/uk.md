@@ -1,9 +1,9 @@
 - - -
-title: "Front pocket width"
+назва: "Ширина передньої кишені"
 - - -
 
-Controls the width of the front pocket bag. In other words, how far the pocket bag extends towards the center front of the trousers.
+Регулює ширину передньої кишені сумки. Іншими словами, наскільки кишенькова сумка простягається до центру передньої частини штанів.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_frontpocketwidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](charlie_frontpocketwidth_sample.svg "Вплив цієї опції на шаблон")
