@@ -1,9 +1,9 @@
 - - -
-title: "Simon shirt: What You Need"
+назва: "Сорочка Саймона: Що вам потрібно"
 - - -
 
-To make Simon, you will need the following:
+Щоб зробити Саймона, вам знадобиться наступне:
 
-- About 2 meters (2.2 yards) of a suitable fabric (see [Fabric options](/docs/patterns/simon/fabric/))
-- Buttons
-- Fusible interfacing for collar and cuffs (and possibly for the front placket)
+- Близько 2 метрів (2,2 ярда) відповідної тканини (див. [варіанти тканини](/docs/patterns/simon/fabric/))
+- Кнопки
+- Плавкий інтерфейс для коміра та манжетів (і, можливо, для передньої панелі)
