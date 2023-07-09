@@ -1,13 +1,13 @@
 ---
-title: "Bob the Bib: Cutting Instructions"
+title: "Слюнявчик Боб: Інструкція з розкрою"
 ---
 
-- Cut **1 bib**
+- Крій **1 нагрудник**
 
 <Warning>
 
-#### Caveats
+#### Застереження
 
-- There is no seam allowance on the bib, it will be finished with bias tape
+- На нагруднику немає припуску на шов, він буде оброблений косою бейкою
 
 </Warning>
