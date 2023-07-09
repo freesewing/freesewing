@@ -1,15 +1,15 @@
 - - -
-title: "Shin swim trunks: What You Need"
+"Плавки для гомілок": "Плавки для гомілок: Що вам потрібно"
 - - -
 
-To make Shin, you will need the following:
+Щоб зробити Шин, вам знадобиться наступне:
 
-- Basic sewing supplies
-- About 0.75 meters (0.8 yards) of a suitable fabric ([see Fabric options](/docs/patterns/shin/fabric))
-- two eyelets and a drawstring
+- Основні матеріали для шиття
+- Приблизно 0,75 метра (0,8 ярдів) відповідної тканини ([див. варіанти тканини](/docs/patterns/shin/fabric))
+- два люверси та шнурок
 
-> ## A serger/overlock is nice, but optional
+> ## Сергер/оверлок - це добре, але необов'язково
 > 
-> As with all stretch fabrics, a serger/overlock will make your life easier.
+> Як і з усіма еластичними тканинами, сергер/оверлок полегшить вам життя.
 > 
-> If you do not have one of those, don't despair. You don't really need it. You can use another technique for stretch seams, such as a zig-zag stich, twin needle, or elastic thread.
+> Якщо у вас такого немає, не впадайте у відчай. Тобі це не потрібно. Ви можете використовувати іншу техніку для розтягнутих швів, наприклад, зигзагоподібний стібок, подвійну голку або еластичну нитку.
