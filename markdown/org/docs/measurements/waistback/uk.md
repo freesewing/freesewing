@@ -1,7 +1,7 @@
 ---
-title: Waist back
+title: Талію назад.
 ---
 
-The **waist back** measurement is the back part of your waist circumference.
+Обхват **талії ззаду** - це задня частина обхвату талії.
 
-To measure your **waist back**, wrap the tape measure around the narrowest part of your waist, making sure to keep it horizontal. Then, measure the length from one side over your back to the other.
+Щоб виміряти обхват талії **спини**, оберніть рулетку навколо найвужчої частини талії, переконавшись, що вона знаходиться в горизонтальному положенні. Потім виміряйте довжину з одного боку через спину до іншого.
