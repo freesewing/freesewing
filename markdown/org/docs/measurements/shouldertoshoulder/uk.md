@@ -1,7 +1,7 @@
 ---
-title: Shoulder to shoulder
+title: Пліч-о-пліч
 ---
 
-The **shoulder to shoulder** measurement runs from the tip of your shoulder on one side across your back to the tip of your other shoulder.
+Вимірювання **від плеча до плеча** проводиться від кінчика плеча з одного боку через спину до кінчика іншого плеча.
 
-To measure your **shoulder to shoulder** find the tip of your shoulder, the tip or corner of the protruding bone that is located where the top of the shoulder meets the side of the arm. It is also where the top of the shoulder seam sits and the sleeve begins on a well-fitting dress shirt. Then, measure from there across your back to the same point at the other side.
+Щоб виміряти ваш **від плеча до плеча** знайдіть кінчик плеча, кінчик або кут виступаючої кістки, який знаходиться там, де верхня частина плеча з'єднується з бічною частиною руки. Це також місце, де знаходиться верхня частина плечового шва і починається рукав на добре скроєній сорочці. Потім виміряйте від цієї точки по спині до тієї ж точки на іншій стороні.
