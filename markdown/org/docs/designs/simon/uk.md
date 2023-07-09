@@ -1,17 +1,17 @@
 - - -
-title: "Simon shirt"
+назва: "Сорочка Саймона"
 - - -
 
 <Tip>
 
-##### Follow the sew-along with Kelly and Julian
+##### Слідкуйте за шиттям разом з Келлі та Джуліаном
 
-Kelly Hogaboom and Julian Collins did a Simon(e) sew-along, and they've got videos of
-all the steps.
-If you're looking to make this pattern, Kelly and Julian can guide you start to finish.
+Келлі Хогабум та Джуліан Коллінз зробили шиття з Simon(e), і у них є відео з
+усіма етапами.
+Якщо ви хочете зробити цей візерунок, Келлі та Джуліан допоможуть вам від початку до кінця.
 
-You can find all the material's on Kelly's
-site: [#simonsayssew with kelly hogaboom & julian collins](https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
+Ви можете знайти всі матеріали на сайті Келлі
+: [#simonsayssew with kelly hogaboom & julian collins] (https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
 
 </Tip>
 
