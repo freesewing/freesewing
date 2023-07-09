@@ -9,7 +9,7 @@ export const siteConfig = {
   },
   crowdin: {
     projectId: 356411,
-    token: '77cf8abfabef66e1275cd4ddfe0c857d45db5e51e8349877dc50a7a740d28fb573e8a4543eca616b', // Translation status (Read-only)
+    token: '3b67456aba022cda2b41b2d0ac1bfa9a16d1a24ac7126d2ffc75f1c9a6fdbe809e5bb9bdce3ad7e2',
   },
   sanity: {
     project: process.env.SANITY_PROJECT || 'hl5bw8cj',

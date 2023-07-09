@@ -6,6 +6,7 @@ import { useTranslation } from 'next-i18next'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { BareLayout as Layout } from 'site/components/layouts/bare.mjs'
 import { TranslationStatus } from 'site/components/crowdin/status.mjs'
+import { Translators } from 'site/components/crowdin/translators.mjs'
 import { Popout } from 'shared/components/popout.mjs'
 import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
@@ -34,7 +35,7 @@ const TranslationPage = ({ page }) => {
           </a>
         </Popout>
 
-        <h2>Translation Status</h2>
+        <h2 id="status">Translation Status</h2>
         <TranslationStatus />
         <b className="ml-10">Legend</b>
         <ul className="list list-inside ml-4">
@@ -51,6 +52,10 @@ const TranslationPage = ({ page }) => {
             <span>{t('translation:notTranslated')}</span>
           </li>
         </ul>
+        <br />
+
+        <h2 id="team">Translation Team</h2>
+        <Translators />
 
         <h2>Supported Languages</h2>
         <p>We currently support the following five languages:</p>
