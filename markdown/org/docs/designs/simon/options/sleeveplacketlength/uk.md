@@ -1,18 +1,18 @@
 - - -
-title: "Sleeve placket length"
+назва: "Довжина планки рукава"
 - - -
 
-![Sleeve placket length](sleeveplacketlength.svg)
+![Довжина рукава втачного рукава](sleeveplacketlength.svg)
 
-How long do you want the sleeve placket to be?
+Якої довжини ви хочете, щоб був рукав?
 
 <Note>
 
-The longer your sleeve placket is, the easier it is to get out of your shirt sleeve.
-It also influences what things will look like when you roll up your sleeves
+Чим довший рукав, тим легше його витягти з рукава сорочки.
+Це також впливає на те, як виглядатимуть речі, коли ви закочуєте рукави
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_sleeveplacketlength_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_sleeveplacketlength_sample.svg "Вплив цієї опції на шаблон")
