@@ -1,15 +1,15 @@
 - - -
-title: "Front rise"
+назва: "Фронтовий підйом"
 - - -
 
-![The front rise option on Cathrin](./frontrise.svg)
+![Варіант переднього підйому на Cathrin](./frontrise.svg)
 
-How high do you want the corset to rise up at the center front.
+Наскільки високо ви хочете, щоб корсет піднімався по центру спереду.
 
-> This rise occurs center front between your breasts. Don't overdo it or the edge of your corset will push into your breasts.
+> Цей підйом відбувається по центру спереду між грудьми. Не перестарайтеся, інакше край корсета буде тиснути на груди.
 
-> This option also allows negative values. They will cause the center front to be lowered.
+> Ця опція також допускає від'ємні значення. Вони призведуть до того, що центральний фронт опуститься.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_frontrise_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](cathrin_frontrise_sample.svg "Вплив цієї опції на шаблон")
