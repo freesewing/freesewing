@@ -1,9 +1,9 @@
 - - -
-title: "Front cutaway end"
+назва: "Передній відрізаний кінець"
 - - -
 
-Increasing this will make the front cutaway stay closer to the center front
+Збільшення цього параметра призведе до того, що передній виріз буде ближче до центральної передньої частини
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_frontcutawayend_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_frontcutawayend_sample.svg "Вплив цієї опції на шаблон")
