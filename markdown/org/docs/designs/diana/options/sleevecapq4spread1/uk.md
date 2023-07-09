@@ -1,18 +1,18 @@
 - - -
-title: "Sleevecap Q4 upward spread"
+назва: "Спред по рукавному покриттю Q4 висхідний"
 - - -
 
-![The upward spread in the fourth quadrant of the sleevecap](./sleevecapq4spread1.svg)
+![Розподіл вгору в четвертому квадранті рукава](./sleevecapq4spread1.svg)
 
-This option controls the upward spread in the fourth quadrant of the sleevecap.
+Ця опція контролює розкид вгору в четвертому квадранті ковпачка рукава.
 
 <Tip>
 
-See [understanding the sleevecap](/docs/patterns/brian/options#understanding-the-sleevecap) for an in-depth
-look into how the sleevecap is constructed and the influence of the different options on its shape.
+Дивіться [розуміння конструкції манжета](/docs/patterns/brian/options#understanding-the-sleevecap) для детального
+розгляду того, як побудований рукав і як різні варіанти впливають на його форму.
 
 </Tip>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_sleevecapq4spread1_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](diana_sleevecapq4spread1_sample.svg "Вплив цієї опції на шаблон")
