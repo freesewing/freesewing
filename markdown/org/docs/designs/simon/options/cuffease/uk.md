@@ -1,21 +1,21 @@
 - - -
-title: "Cuff ease"
+назва: "Легкість манжети"
 - - -
 
-![Cuff ease](cuffease.svg)
+![Легкість манжети](cuffease.svg)
 
-Determines how much the cuff is larger than your wrist.
+Визначає, наскільки манжета більша за зап'ястя.
 
-Change this option to give yourself more or less room at the wrist.
+Змініть цей параметр, щоб залишити собі більше або менше місця на зап'ясті.
 
 <Note>
 
-You might want more if you want the shirt cuff to fit over a bulky watch. Less room might be better if you want to wear the shirt under an overgarment like a sweater.
+Можливо, вам знадобиться більше, якщо ви хочете, щоб манжета сорочки прилягала до громіздкого годинника. Якщо ви хочете носити сорочку під верхнім одягом, наприклад, під светром, то краще мати менше вільного місця.
 
-Those wanting to wear their shirt under a sweater should also have a look at the barrelcuff narrow button option.
+Тим, хто хоче носити сорочку під светром, також варто звернути увагу на варіант з вузькими ґудзиками на манжетах.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_cuffease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_cuffease_sample.svg "Вплив цієї опції на шаблон")
