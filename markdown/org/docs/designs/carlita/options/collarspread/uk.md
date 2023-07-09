@@ -1,12 +1,12 @@
 - - -
-title: "Collar spread"
+назва: "Розширення коміра"
 - - -
 
-Controls the distance between the points of the collar.
+Контролює відстань між точками нашийника.
 
-- Increase this option to spread the collar out and towards the shoulder.
-- Decrease this option to bring the collar in towards the body.
+- Збільште цей параметр, щоб розширити комір і спрямувати його до плеча.
+- Зменшіть цей параметр, щоб наблизити комір до тіла.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_collarspread_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](carlita_collarspread_sample.svg "Вплив цієї опції на шаблон")
