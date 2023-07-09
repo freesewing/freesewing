@@ -1,9 +1,9 @@
 - - -
-title: "Zipper location"
+назва: "Розташування блискавки"
 - - -
 
-Controls the location of the zipper. Either at the back seam, or at the side seam
+Контролює розташування застібки-блискавки. Або в задньому шві, або в боковому шві
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](penelope_zipperlocation_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](penelope_zipperlocation_sample.svg "Вплив цієї опції на шаблон")
