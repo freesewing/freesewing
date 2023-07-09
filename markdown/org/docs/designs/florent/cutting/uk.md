@@ -1,22 +1,22 @@
 ---
-title: "Florent flat cap: Cutting Instructions"
+title: "Плоский ковпачок Florent: Інструкція з нарізки"
 ---
 
-Depending on how much fabric is available, you might want to cut two top and or side parts, hence the instructions on the pattern itself. Warning: The pattern includes the seam allowances on the top part so if you cut it on fold, don't include them!
+Залежно від того, скільки тканини у вас є, вам може знадобитися викроїти дві верхні та/або бокові частини, відповідно до інструкцій на самій викрійці. Увага! Викрійка включає припуски на шви на верхній частині, тому якщо ви кроїте зі згином, не враховуйте їх!
 
-The brim bottom part is inset, while the brim top part is offset so that the seam falls "underneath the brim edge". Keep that in mind when cutting the parts, and mark them accordingly, so that you don't end up with the seam on top of the brim (I don't want to force you into this design choice, I simply want to point out the difference between the parts so that you are aware of it and act accordingly).
+Нижня частина крайки вшита, а верхня зміщена так, щоб шов потрапляв "під край крайки". Пам'ятайте про це, коли вирізаєте деталі, і позначайте їх відповідним чином, щоб у вас не вийшло так, що шов буде зверху бортика (я не хочу примушувати вас до такого вибору дизайну, я просто хочу вказати вам на різницю між деталями, щоб ви знали про неї і діяли відповідно до неї).
 
-- **Main fabric**
-  - Cut **1 top** on the fold but don't include the center seam allowance, or **2 top** with the center seam allowance.
-  - Cut **1 side** on the fold, or **2 side**.
-  - Cut **1 brim top**.
-  - Cut **1 brim bottom**.
-- **Lining fabric**
-  - Cut **1 top** on the fold but don't include the seam allowance, or **2 top** with the center seam allowance.
-  - Cut **1 side** on the fold, or **2 side**.
-- **Plastic**
-  - Cut **1 brim interfacing**. Tape the pattern part to the plastic, don't cut the notches in the plastic, but you can mark it (engrave it, or with permanent marker maybe). You don't really want any sharp edge, so make sure everything is smooth and rounded a bit (especially on the pointy sides).
+- **Основна тканина**
+  - Виріжте **1 верхню частину** по згину, але не враховуючи припуски на центральний шов, або **2 верхню частину** з припусками на центральний шов.
+  - Виріжте **1 сторону** на згин, або **2 сторону**.
+  - Вирізати **1 верхній бортик**.
+  - Вирізати **1 бортик знизу**.
+- **Підкладкова тканина**
+  - Виріжте **1 верхню частину** по згину, але не враховуючи припуски на шви, або **2 верхню частину** з припуском на центральний шов.
+  - Виріжте **1 сторону** на згин, або **2 сторону**.
+- **Пластик**
+  - Вирізати **1 кромку, що стикується**. Приклейте деталь викрійки до пластику, не робіть на ньому надрізи, але ви можете позначити їх (вигравіювати, або, можливо, перманентним маркером). Вам не потрібні гострі краї, тому переконайтеся, що все гладке і трохи закруглене (особливо на гострих сторонах).
 
-A typical Florent layout looks like this:
+Типовий флорентійський макет виглядає так:
 
-![A typical Florent layout](layout.svg)
+![Типовий флорентійський макет](layout.svg)
