@@ -1,14 +1,14 @@
 - - -
-title: "Tamiko top: Cutting Instructions"
+назва: "Топ Таміко: Інструкція з розкрою"
 - - -
 
-- **Main fabric**
-  - Cut **1 Tamiko top** on the fold
+- **Основна тканина**
+  - Виріжте **1 верхню частину таміко** на згин
 
-Tamiko is a zero-waste pattern. It's a rectangle that's cut out on the fold. Not more than that. There's only one part to this top, we will simply refer to it at the **Tamiko top**. It needs to be cut on the fold along the bottom.
+Таміко - це безвідходний візерунок. Це прямокутник, вирізаний на згині. Не більше того. У цьому топі є лише одна частина, ми просто посилатимемося на неї у топі **Tamiko**. Його потрібно розрізати по згину вздовж низу.
 
 <Note>
 
-Cut out the armhole, but leave seam allowance
+Виріжте пройму, але залиште припуски на шви
 
 </Note>
