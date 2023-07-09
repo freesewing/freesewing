@@ -1,12 +1,12 @@
 - - -
-title: "Crotch drop"
+назва: "Crotch drop"
 - - -
 
-Controls by how much the crotch is lowered.
+Контролює, наскільки опускається промежина.
 
-Lowering the crotch makes for a more casual fit.  
-A signigicantly lowered crotched can also be a style choice.
+Занижена кльош створює більш невимушену посадку.  
+Значно занижена промежина також може бути вибором стилю.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](titan_crotchdrop_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](titan_crotchdrop_sample.svg "Вплив цієї опції на шаблон")
