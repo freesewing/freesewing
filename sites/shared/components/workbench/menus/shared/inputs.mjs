@@ -82,10 +82,11 @@ export const ListToggle = ({ config, changed, updateFunc, name }) => {
 
   const checked = boolConfig.dflt == false ? changed : !changed
 
+  //line 89 changes the text colour inside the checkbox
   return (
     <input
       type="checkbox"
-      className={`toggle ${changed ? 'toggle-accent' : 'toggle-secondary'}`}
+      className={`toggle ${changed ? 'text-base-content' : 'text-base-content'}`}
       checked={checked}
       onChange={doToggle}
       onClick={(evt) => evt.stopPropagation()}
@@ -118,7 +119,7 @@ export const ListInput = ({ name, config, current, updateFunc, compact = false, 
           <ChoiceButton
             key={entry}
             title={t(`${titleKey}.t`)}
-            color={entry === config.dflt ? 'primary' : 'secondary'}
+            color={entry === config.dflt ? 'primary' : 'accent'}
             active={changed ? current === entry : entry === config.dflt}
             onClick={() => handleChange(entry)}
           >
@@ -229,7 +230,7 @@ export const SliderInput = ({
             </span>
             <span
               className={`font-bold ${
-                displayVal === config.dflt ? 'text-secondary' : 'text-accent'
+                displayVal === config.dflt ? 'text-base-content' : 'text-base-content'
               }`}
             >
               <span dangerouslySetInnerHTML={{ __html: valFormatter(displayVal) + suffix }} />
@@ -329,7 +330,7 @@ export const ConstantInput = ({
       type={type}
       className={`
       input input-bordered w-full text-base-content
-      input-${changed ? 'secondary' : 'accent'}
+      input-${changed ? 'base-content' : 'base-content'}
     `}
       value={changed ? current : config.dflt}
       onChange={(evt) => updateFunc([name], evt.target.value)}

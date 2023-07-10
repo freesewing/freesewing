@@ -108,7 +108,9 @@ export const MenuItem = ({
           setOverride(!override)
         }}
       >
-        <EditIcon className={`w-6 h-6 ${override ? 'bg-base-100 text-accent rounded' : ''}`} />
+        <EditIcon
+          className={`w-6 h-6 ${override ? 'bg-base-100 text-base-content rounded' : ''}`}
+        />
       </button>
     )
   const ResetButton = ({ open, disabled = false }) => (
@@ -142,7 +144,7 @@ export const MenuItem = ({
     emoji: config.emoji,
     Icon: config.icon,
   }
-
+  //changes left border of button
   return (
     <Collapse
       color={changed ? 'accent' : 'secondary'}
@@ -253,6 +255,7 @@ export const MenuItemGroup = ({
       t,
       emoji: emojis[name] || emojis.groupDflt,
     }
+    //colour here changes button borders
     return (
       <Collapse
         bottom

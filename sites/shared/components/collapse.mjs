@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { DownIcon } from 'shared/components/icons.mjs'
 import Link from 'next/link'
-
+// line 17 changes text colour on buttons
 const OpenTitleButton = ({
   title,
   toggle,
@@ -13,7 +13,7 @@ const OpenTitleButton = ({
     role="button"
     className={`flex flex-row items-center justify-between w-full ${
       bottom ? 'rounded-b-lg' : 'rounded-t-lg'
-    }
+    } 
       bg-${color} text-${color}-content px-4 py-1 text-lg font-medium`}
     onClick={toggle}
   >
@@ -68,7 +68,7 @@ export const Collapse = ({
     <div className={`flex flex-row gap-2 my-4 items-center ${className}`}>
       <div
         className={`shadow border-solid border-l-[6px] border-r-0 border-t-0 border-b-0 border-${color} min-h-12
-            grow flex flex-row gap-4 py-1 px-4 items-center justify-start hover:cursor-pointer hover:bg-${color} hover:bg-opacity-20`}
+            grow flex flex-row gap-4 py-1 px-4 items-center justify-start hover:cursor-pointer hover:bg-${color} hover:bg-opacity-30`}
         onClick={onClick ? onClick : () => setOpen(true)}
       >
         <DownIcon /> {title}
