@@ -1,5 +1,5 @@
 ---
-titre : "Facteur de profondeur d'emmanchure"
+title: "Facteur de profondeur d'emmanchure"
 ---
 
 ![Hauteur de l'emmanchure](armholedepthfactor.svg)

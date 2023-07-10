@@ -1,5 +1,5 @@
 ---
-titre : "Chemise Simone : Instructions de coupe"
+title: "Chemise Simone : Instructions de coupe"
 ---
 
 <Note>

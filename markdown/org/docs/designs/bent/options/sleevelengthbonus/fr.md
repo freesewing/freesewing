@@ -1,5 +1,5 @@
 ---
-titre : "Surlongueur de longueur de manche"
+title: "Surlongueur de longueur de manche"
 ---
 
 La quantité pour allonger la manche au-delà de la longueur de la manche dans le bloc de base.

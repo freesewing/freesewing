@@ -1,5 +1,5 @@
 ---
-titre : "Décalage de la couture d'épaule : côté col"
+title: "Décalage de la couture d'épaule : côté col"
 ---
 
 Controls the shoulder seam location on the collar side.

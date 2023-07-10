@@ -1,5 +1,5 @@
 ---
-titre : "Aisance pour les hanches"
+title: "Aisance pour les hanches"
 ---
 
 Combien d'aisance voulez-vous pour les hanches ?

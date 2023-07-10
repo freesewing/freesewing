@@ -1,5 +1,5 @@
 ---
-titre : "Tablier Albert : Ce qu'il faut"
+title: "Tablier Albert : Ce qu'il faut"
 ---
 
 Pour réaliser Albert, vous aurez besoin de :

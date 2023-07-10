@@ -1,5 +1,5 @@
 ---
-titre : "Tablier Albert : Instructions de couture"
+title: "Tablier Albert : Instructions de couture"
 ---
 
 ### Étape 1 : La Poche

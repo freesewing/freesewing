@@ -1,5 +1,5 @@
 ---
-titre : "Surlongueur de longueur de manche"
+title: "Surlongueur de longueur de manche"
 ---
 
 This option controls how long to lengthen the sleeves by.

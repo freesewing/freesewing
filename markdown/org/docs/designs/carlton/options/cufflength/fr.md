@@ -1,5 +1,5 @@
 ---
-titre : "Longueur du poignet"
+title: "Longueur du poignet"
 ---
 
 Contrôle la longueur (hauteur si vous le souhaitez) des poignets.

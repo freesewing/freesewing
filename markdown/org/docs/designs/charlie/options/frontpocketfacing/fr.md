@@ -1,5 +1,5 @@
 ---
-titre : "Poche frontale"
+title: "Poche frontale"
 ---
 
 Contrôle la limite entre la poche avant et le sac de poche.

@@ -1,5 +1,5 @@
 ---
-title:"Facteur de largeur de dos"
+title: "Facteur de largeur de dos"
 ---
 
 ![Largeur du dos](./acrossbackfactor.svg)

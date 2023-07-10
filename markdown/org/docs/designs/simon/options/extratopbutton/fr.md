@@ -1,5 +1,5 @@
 ---
-titre : "Bouton supérieur supplémentaire"
+title: "Bouton supérieur supplémentaire"
 ---
 
 ![Bouton supérieur supplémentaire](extratopbutton.svg)

@@ -1,5 +1,5 @@
 ---
-titre : "Aisance des hanches"
+title: "Aisance des hanches"
 ---
 
 ![Aisance des hanches](hipsease.svg)

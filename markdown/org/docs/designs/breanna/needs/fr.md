@@ -1,5 +1,5 @@
 ---
-tirle: "Bloc de corps de Breanna: Ce dont tu as besoin"
+title: "Bloc de corps de Breanna: Ce dont tu as besoin"
 ---
 
 Pour préparer Breanna, vous aurez besoin des éléments suivants :

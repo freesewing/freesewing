@@ -1,5 +1,5 @@
 ---
-titre : "Hauteur"
+title: "Hauteur"
 ---
 
 ![Option de hauteur](./height.svg)

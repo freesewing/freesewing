@@ -1,5 +1,5 @@
 ---
-titre : "Haut drapé Diana : Instructions de coupe"
+title: "Haut drapé Diana : Instructions de coupe"
 ---
 
 - Couper **1 dos** au pli

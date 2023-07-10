@@ -1,5 +1,5 @@
 ---
-titre : "aisance à la taille"
+title: "aisance à la taille"
 ---
 
 ![Aisance à la taille](./waistease.svg)

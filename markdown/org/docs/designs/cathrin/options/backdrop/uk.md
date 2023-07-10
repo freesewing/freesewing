@@ -1,5 +1,5 @@
 ---
-Назва: "Back drop"
+title: "Back drop"
 ---
 
 ![Опція зворотного падіння на Катрін](./backdrop.svg)

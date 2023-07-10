@@ -1,5 +1,5 @@
 ---
-title : "Aisance thoracique"
+title: "Aisance thoracique"
 ---
 
 ![L'option d'aisance thoracique sur Aaron](./chestease.svg)

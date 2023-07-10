@@ -1,5 +1,5 @@
 ---
-titre : "Bloc corporel de Brian : Options de conception"
+title: "Bloc corporel de Brian : Options de conception"
 ---
 
 <PatternOptions pattern='brian' />

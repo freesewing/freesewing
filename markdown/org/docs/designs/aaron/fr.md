@@ -1,5 +1,5 @@
 ---
-titre : "Débardeur Aaron (A-Shirt)"
+title: "Débardeur Aaron (A-Shirt)"
 ---
 
 <PatternDocs pattern='aaron' />

@@ -1,5 +1,5 @@
 ---
-titre : "Largeur des bretelles"
+title: "Largeur des bretelles"
 ---
 
 ![L'option de largeur de bretelles sur Aaron](./shoulderstrapwidth.svg)

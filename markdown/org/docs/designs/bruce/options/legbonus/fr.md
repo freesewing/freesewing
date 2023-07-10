@@ -1,5 +1,5 @@
 ---
-titre : "Longueur supplémentaire au niveau des jambes"
+title: "Longueur supplémentaire au niveau des jambes"
 ---
 
 ![L'option bonus longueur jambe pour Bruce](./legbonus.svg)

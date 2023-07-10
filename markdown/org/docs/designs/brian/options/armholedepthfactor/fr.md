@@ -1,5 +1,5 @@
 ---
-titre : "Facteur de profondeur d'emmanchure"
+title: "Facteur de profondeur d'emmanchure"
 ---
 
 ![Le facteur de profondeur de l'armure sur Brian](./armholedepthfactor.svg)

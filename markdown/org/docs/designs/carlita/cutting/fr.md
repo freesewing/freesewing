@@ -1,5 +1,5 @@
 ---
-titre : "Manteau Carlita : Instructions de coupe"
+title: "Manteau Carlita : Instructions de coupe"
 ---
 
 <Note>

@@ -1,5 +1,5 @@
 ---
-titre : "Profondeur d'encolure"
+title: "Profondeur d'encolure"
 ---
 
 ![Profondeur d'encolure](necklinedrop.svg)

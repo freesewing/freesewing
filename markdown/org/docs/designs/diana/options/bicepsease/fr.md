@@ -1,5 +1,5 @@
 ---
-titre : "Aisance aux biceps"
+title: "Aisance aux biceps"
 ---
 
 ![L'option de facilité biceps sur Diana](./bicepsease.svg)

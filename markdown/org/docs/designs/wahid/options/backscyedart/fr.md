@@ -1,5 +1,5 @@
 ---
-title:"Pince de carrure dos"
+title: "Pince de carrure dos"
 ---
 
 ![Pince de carrure dos](backscyedart.svg)

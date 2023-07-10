@@ -1,5 +1,5 @@
 ---
-titre : "Culotte de cycliste Cornélius : Instructions de coupe"
+title: "Culotte de cycliste Cornélius : Instructions de coupe"
 ---
 
 ### Matériaux
