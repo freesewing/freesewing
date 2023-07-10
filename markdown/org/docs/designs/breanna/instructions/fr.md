@@ -1,5 +1,5 @@
 ---
-titre : "Bloc de corps pour Breanna : Instructions de couture"
+title: "Bloc de corps pour Breanna : Instructions de couture"
 ---
 
 <Note>

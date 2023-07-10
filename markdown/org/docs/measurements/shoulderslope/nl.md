@@ -8,7 +8,7 @@ Om je schouderhelling te meten moet je bepalen in welke hoek je schouderlijn naa
 
 A good way to measure your shoulder slope is to take a a selfie and rotate it until your shoulder line is horizontal.
 
-The number of degrees you had to rotate is your shoulder slope.
+De hoek waaronder je de foto hebt moeten roteren is je schouderhelling.
 
 <Note>
 

@@ -1,14 +1,14 @@
----
+- - -
 title: "Walburga Wappenrock: Sewing Instructions"
----
+- - -
 
 <Note>
 
-Walburga is a historically inspired pattern, and if you want more authenticity, handsewing is the way to go. Personally, I use a sewing machine. Sie tun das.
+Walburga is a historically inspired pattern, and if you want more authenticity, handsewing is the way to go. Ich selber verwende eine Nähmaschine. Sie tun das.
 
 </Note>
 
-### Step 1: Sew shoulder seams
+### Schritt 1: Nähen der Schulternähte
 
 - Put front and back pieces with good sides together. Sew the shoulder seams, taking care to stop at the notches for the head opening.
 
@@ -34,4 +34,4 @@ If you cut slits, there will be no seam (or hem) allowance to finish the edge th
 
 ### Step 5: That's it!
 
-You're done! You could now appliqué/embroider/otherwise attach a symbol or heraldics of your choice onto your garment.
+Fertig! You could now appliqué/embroider/otherwise attach a symbol or heraldics of your choice onto your garment.

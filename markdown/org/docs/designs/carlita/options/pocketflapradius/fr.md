@@ -1,5 +1,5 @@
 ---
-titre : "Rayon du rabat de poche"
+title: "Rayon du rabat de poche"
 ---
 
 ![Angle de rabat de poche](pocketflapradius.svg)

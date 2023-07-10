@@ -2,7 +2,7 @@
 title: "Gusset width"
 ---
 
-This options controls the width of the gusset.
+Cette option contrôle la largeur du gusset.
 
 ## Effet de cette option sur le modèle
 

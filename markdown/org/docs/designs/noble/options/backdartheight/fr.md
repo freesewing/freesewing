@@ -1,10 +1,10 @@
 ---
-title: "Back dart height"
+title: "Hauteur de la pince de dos"
 ---
 
 ***
 
-The **back dart height** option controls the height (length if you will) of the back dart.
+L'option **hauteur de la pince arrière** contrôle la hauteur (la longueur si vous voulez) de la pince arrière.
 
 ## Effet de cette option sur le modèle
 

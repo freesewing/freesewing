@@ -1,5 +1,5 @@
 ---
-titre : "Bloc de corps Breanna : Instructions de coupe"
+title: "Bloc de corps Breanna : Instructions de coupe"
 ---
 
 **Tissu principal**

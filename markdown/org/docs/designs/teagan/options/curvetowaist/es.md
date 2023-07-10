@@ -10,6 +10,6 @@ If waist measurement (plus ease) is smaller than hips (plus ease), this creates 
 This option can also be used when the waist measurement exceeds the hip measurement, but this results in a non-standard T-shirt shape which may be impossible to put on.
 </Note>
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](teagan_curvetowaist_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](teagan_curvetowaist_sample.svg "Efecto de esta opción en el patrón")

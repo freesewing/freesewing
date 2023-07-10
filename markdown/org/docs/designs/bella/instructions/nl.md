@@ -1,6 +1,6 @@
----
+- - -
 title: "Bella body block: Sewing Instructions"
----
+- - -
 
 <Note>
 
@@ -13,9 +13,9 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 
 </Note>
 
-### Step 1: Mock-up Construction
+### Stap 1: Model constructie
 
-- Close the front bust and waist darts.
+- Sluit de buste en taille nepen.
 - Sluit de achterste nepen.
 - Sew the front to the backs at the shoulders good sides together.
 - Sew the front to the backs at the side seams good sides together.

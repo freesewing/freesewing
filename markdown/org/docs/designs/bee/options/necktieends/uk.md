@@ -1,11 +1,11 @@
 ---
-title: "Neck tie ends"
+title: "Кінці краватки на шиї"
 ---
 
 ***
 
-Whether you like straight or pointy ends on the ties around your neck
+Незалежно від того, чи подобаються вам прямі або загострені кінці краваток на шиї
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_necktieends_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bee_necktieends_sample.svg "Вплив цієї опції на шаблон")

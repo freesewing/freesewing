@@ -1,5 +1,5 @@
 ---
-titre : "Hauteur de poche"
+title: "Hauteur de poche"
 ---
 
 Contrôle la hauteur/profondeur des poches.

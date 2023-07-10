@@ -2,12 +2,12 @@
 title: "Noble body block: Cutting Instructions"
 ---
 
-**Main fabric**
+**Tela principal**
 
 - Cut **1 Front Inside** part on the fold.
 - Cut **2 Front Outside** part.
 
-### Shoulder dart
+### Dardo de hombro
 
 - Cut **2 Back Inside** part.
 - Cut **2 Back Outside** part.
@@ -16,7 +16,7 @@ title: "Noble body block: Cutting Instructions"
 
 - Cut **2 Back** part.
 
-These cutting instructions are just for the default Noble block. Adjust your cutting accordingly if you have/are making changes to the block.
+These cutting instructions are just for the default Noble block. Si has hecho o estás haciendo cambios al patrón base, ajusta tu corte como corresponda.
 
 <Tip>
 
@@ -29,8 +29,8 @@ If you do not have someone to help pin you into Noble then you may find it easie
 ###### Noble is a block, not a pattern
 
 A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+A veces también se llaman trampas, aunque los puristas argumentarán que un bloque y una inclinación son cosas diferentes.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Los bloques normalmente no se hacen as-is sino que sirven como base para otros patrones.
 
 </Note>

@@ -1,5 +1,5 @@
 ---
-titre : "Réduction de la pente d'épaule"
+title: "Réduction de la pente d'épaule"
 ---
 
 Réduit la pente des épaules pour créer de l'aisance si l'on prévoit de rembourrer les épaules.

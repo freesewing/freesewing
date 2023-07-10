@@ -1,5 +1,5 @@
 ---
-title:"Échancrure emmanchure avant"
+title: "Échancrure emmanchure avant"
 ---
 
 ![Échancrure emmanchure avant](frontinset.svg)

@@ -1,10 +1,10 @@
 ---
-title: "Back pocket facing"
+title: "Fond de poche arrière"
 ---
 
 ***
 
-Controls whether or not to include facing on the back pockets
+Contrôle s'il faut inclure ou non un fond dans les poches arrière
 
 ## Effet de cette option sur le modèle
 

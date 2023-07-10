@@ -2,11 +2,11 @@
 title: Width ratio
 ---
 
-Controls the width of the bib.
+Bepaalt de breedte van het slabbetje.
 
 - Increase the percentage to widen the width of the bib.
 - Decrease the precentage to constrict the width of the bib.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bob_widthratio_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bob_widthratio_sample.svg "Effect van deze optie op het patroon")

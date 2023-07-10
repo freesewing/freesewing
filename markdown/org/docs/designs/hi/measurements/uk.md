@@ -1,7 +1,7 @@
 ---
-title: "Hi the shark: Required Measurements"
+title: "Акула \"Ку-ку!\": необхідні заміри"
 ---
 
 <Note>
-Hi does not require any measurements
+Hi не потребує жодних вимірювань
 </Note>

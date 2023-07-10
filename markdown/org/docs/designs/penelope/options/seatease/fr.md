@@ -1,5 +1,5 @@
 ---
-titre : "Facilité d'assise"
+title: "Facilité d'assise"
 ---
 
 Quantité d'aisance autour de la partie la plus complète de votre bum.

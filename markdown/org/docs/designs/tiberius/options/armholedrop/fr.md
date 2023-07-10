@@ -1,6 +1,6 @@
----
-title: "Armhole drop"
----
+- - -
+title : "Chute d'emmanchure"
+- - -
 
 Contrôle la profondeur de l'emmanchure
 

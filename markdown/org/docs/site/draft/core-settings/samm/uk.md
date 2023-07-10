@@ -1,18 +1,18 @@
 ---
-title: Seam Allowance Size
+title: Розмір припуску на шов
 ---
 
-This [Core Setting][core-settings] controls the base size of your seam allowance.  In other words, the default seam allowance will be this size. Other allowance that is intended to be wider, like hem allowance, will be a multiple of this size.
+Цей [основний параметр][core-settings] контролює базовий розмір шва припуску.  Іншими словами, припуск на шов за замовчуванням буде такого розміру. Інші припуски , які мають бути ширшими, наприклад, припуски на підгин, повинні бути кратні цього розміру.
 
 <Note>
 
-FreeSewing's core library only takes a single setting to handle seam allowance: `sa`.
-However, for convenience, we've split this up into two different settings on the website:
+Основна бібліотека FreeSewing потребує лише одного параметра для обробки припусків на шви: `sa`.
+Однак для зручності ми розділили ці параметри на два різних налаштування на сайті:
 
-- **[Include Seam Allowance](/docs/site/draft/core-settings/sabool)**: Controls whether or not to include seam allowance
-- **[Seam Allowance Size](/docs/site/draft/core-settings/samm)**: Controls how big to make the seam allowance, if it is included
+- **[Включити припуски на шви](/docs/site/draft/core-settings/sabool)**: Керує тим, чи включати припуски на шви
+- **[Seam Allowance Size](/docs/site/draft/core-settings/samm)**: Керує розміром припусків на шви, якщо вони включені
 
-The latter will only be shown if you've enabled the former.
+Останній параметр буде показано, тільки якщо ви увімкнули перший.
 
 </Note>
 [core-settings]: /docs/site/draft/core-settings/

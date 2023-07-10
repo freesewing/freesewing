@@ -1,5 +1,5 @@
 ---
-titre : "Élasticité"
+title: "Élasticité"
 ---
 
 ![L'option du taux d'élasticité sur Aaron](./stretchfactor.svg)

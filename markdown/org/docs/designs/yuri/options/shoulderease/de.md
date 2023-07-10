@@ -1,11 +1,11 @@
----
+- - -
 title: "Shoulder ease"
----
+- - -
 
 Steuert die Höhe der Leichtigkeit auf der Schulter zu Schultermessung.
 
 This option allows you to create some extra ease at the shoulders which shifts the shoulder seam more outwards and off the shoulder. Thereby creating extra room for extra layers of clothing underneath, or more shaped/padded shoulders.
 
-## Effect of this option on the pattern
+## Effekt dieser Variable auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](yuri_shoulderease_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](yuri_shoulderease_sample.svg "Effekt dieser Option auf das Schnittmuster")

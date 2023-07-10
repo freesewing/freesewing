@@ -1,5 +1,5 @@
 ---
-titre : "Hauteur des hanches"
+title: "Hauteur des hanches"
 ---
 
 ![L'option de montée de la hanche sur Cathrin](./hiprise.svg)

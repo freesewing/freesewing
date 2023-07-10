@@ -1,11 +1,11 @@
 ---
-title: "Back pocket facing"
+title: "Besatz der hinteren Tasche"
 ---
 
 ***
 
-Controls whether or not to include facing on the back pockets
+Legt fest, ob die hinteren Taschen Besatz haben sollen oder nicht
 
-## Effect of this option on the pattern
+## Effekt dieser Variable auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_backpocketfacing_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](charlie_backpocketfacing_sample.svg "Effekt dieser Option auf das Schnittmuster")

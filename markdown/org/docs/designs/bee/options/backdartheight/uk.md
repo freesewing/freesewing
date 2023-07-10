@@ -1,11 +1,9 @@
 ---
-title: "Back dart height (Bella)"
+назва: "Висота виточки на спинці (Bella)"
 ---
 
-***
+Контролює висоту задньої виточки в базовому блоці Bella, який базується на
 
-Controls the back dart height in the underlying Bella block Bee is based on
+## Вплив цієї опції на шаблон
 
-## Effect of this option on the pattern
-
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_backdartheight_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bee_backdartheight_sample.svg "Вплив цієї опції на шаблон")

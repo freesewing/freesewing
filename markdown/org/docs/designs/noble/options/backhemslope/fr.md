@@ -1,10 +1,10 @@
 ---
-title: "Back hem slope"
+title: "Pente de l'ourlet arrière"
 ---
 
 ***
 
-The **back hem slope** option controls the slope of the hem at the back.
+L'option **d'ourlet arrière** contrôle la pente de l'ourlet à l'arrière.
 
 ## Effet de cette option sur le modèle
 

@@ -1,11 +1,11 @@
 ---
-title: "Back armhole slant"
+title: "Hintere Armlochschiebung"
 ---
 
 ***
 
-The **back armhole slant** slightly rotates the armhole around the back pitch point.
+Das **Hinterarmloch schräg** dreht das Armloch leicht um den Rückenpunkt.
 
-## Effect of this option on the pattern
+## Effekt dieser Variable auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_backarmholeslant_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](noble_backarmholeslant_sample.svg "Effekt dieser Option auf das Schnittmuster")

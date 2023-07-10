@@ -1,5 +1,5 @@
 ---
-titre : "aisance thoracique"
+title: "aisance thoracique"
 ---
 
 Contrôle la quantité d'aisance de votre coffre

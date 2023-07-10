@@ -1,21 +1,21 @@
 ---
-title: "Unice undies: What you need"
+title: "Unice роздягається: Що вам потрібно"
 ---
 
-To make Unice, you will need the following:
+Щоб створити Unice, вам знадобиться наступне:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 0.7 meters (0.8 yards) of a suitable fabric (see [Fabric options](/docs/patterns/unice/fabric))
-- About 3 meters (3.3 yards) of underwear elastic, such as picot elastic or fold over elastic
+- [Основні матеріали для шиття](/docs/sewing/basic-sewing-supplies)
+- Приблизно 0,7 метра (0,8 ярдів) відповідної тканини (див. [Варіанти тканин](/docs/patterns/unice/fabric))
+- Близько 3 метрів (3,3 ярда) білизняної еластичної резинки, наприклад, еластичної резинки "піко" або еластичної резинки "фальц
 
 <Tip>
 
-##### Binding methods may affect the seam allowance
+##### Методи скріплення можуть вплинути на припуски на шви
 
-If using fold over elastic (FOE) or doing knit binding, you may wish to trim away the seam allowance at the legs and waist before cutting. If you keep the seam allowance, the finished product will have a slightly higher waist and slightly smaller leg openings.
+Якщо ви використовуєте еластичну стрічку або трикотажне скріплення, ви можете обрізати припуски на шви на ногах і талії перед розкроюванням. Якщо залишити припуски на шви, то готовий виріб матиме трохи вищу талію і трохи менші прорізи для ніг.
 
-##### A serger/overlock is nice, but optional
+##### Сергер/оверлок - це добре, але необов'язково
 
-As with all knitwear and stretch fabrics, a serger/overlock will make your life easier. If you do not have one of those, don't despair. You don't really need it. You can just sew Unice with a zigzag stitch.
+Як і у випадку з будь-яким трикотажем та еластичними тканинами, сергер/оверлок полегшить вам життя. Якщо у вас такого немає, не впадайте у відчай. Тобі це не потрібно. Ви можете просто зшити Unice зигзагоподібним швом.
 
 </Tip>

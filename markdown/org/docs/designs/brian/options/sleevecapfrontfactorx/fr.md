@@ -1,5 +1,5 @@
 ---
-title:"Tête de manche devant X"
+title: "Tête de manche devant X"
 ---
 
 ***

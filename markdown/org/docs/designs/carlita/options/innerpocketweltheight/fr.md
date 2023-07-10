@@ -1,5 +1,5 @@
 ---
-titre : "Hauteur des poches intérieures"
+title: "Hauteur des poches intérieures"
 ---
 
 Contrôle la taille des joints sur la poche intérieure.

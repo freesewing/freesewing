@@ -1,5 +1,5 @@
 ---
-titre : "aisance thoracique"
+title: "aisance thoracique"
 ---
 
 L'aisance au niveau de la poitrine.

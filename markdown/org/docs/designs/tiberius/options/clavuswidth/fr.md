@@ -1,8 +1,8 @@
----
+- - -
 title: "Clavus width"
----
+- - -
 
-Controls the width of the clavi
+Contrôle la largeur de la bande de pourpre
 
 ## Effet de cette option sur le motif
 

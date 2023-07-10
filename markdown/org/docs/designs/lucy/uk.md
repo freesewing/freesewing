@@ -1,5 +1,5 @@
 ---
-title: "Lucy tie-on pocket"
+title: "Кишеня на зав'язці Люсі"
 ---
 
 <PatternDocs pattern='lucy' />

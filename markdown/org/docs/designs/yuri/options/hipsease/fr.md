@@ -1,5 +1,5 @@
 ---
-titre : "Aisance pour les hanches"
+title: "Aisance pour les hanches"
 ---
 
 La marge d'aisance aux hanches.

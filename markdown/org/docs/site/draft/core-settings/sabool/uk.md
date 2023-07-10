@@ -1,20 +1,20 @@
 ---
-title: Include Seam Allowance
+title: Включити припуски на шви
 ---
 
-This [Core Setting][core-settings] controls whether or not to include seam allowance on your pattern.
+Цей [основний параметр][core-settings] визначає, чи потрібно включати припуск на шов у вашій деталі.
 
-By default, seam allowance is not included. To generate a pattern with seam allowance, you should enable it by changing this option to **Yes**.
+За замовчуванням припуски на шви не враховуються. Щоб згенерувати деталь з припуском на шов , увімкніть його, змінивши значення цієї опції на **Так**.
 
 <Note>
 
-FreeSewing's core library only takes a single setting to handle seam allowance: `sa`.
-However, for convenience, we've split this up into two different settings on the website:
+Основна бібліотека FreeSewing потребує лише одного параметра для обробки припусків на шви: `sa`.
+Однак для зручності ми розділили ці параметри на два різних налаштування на сайті:
 
-- **[Include Seam Allowance](/docs/site/draft/core-settings/sabool)**: Controls whether or not to include seam allowance
-- **[Seam Allowance Size](/docs/site/draft/core-settings/samm)**: Controls how big to make the seam allowance, if it is included
+- **[Включити припуски на шви](/docs/site/draft/core-settings/sabool)**: Керує тим, чи включати припуски на шви
+- **[Seam Allowance Size](/docs/site/draft/core-settings/samm)**: Керує розміром припусків на шви, якщо вони включені
 
-The latter will only be shown if you've enabled the former.
+Останній параметр буде показано, тільки якщо ви увімкнули перший.
 
 </Note>
 [core-settings]: /docs/site/draft/core-settings/

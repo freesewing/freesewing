@@ -1,5 +1,5 @@
 ---
-titre : "Longueur"
+title: "Longueur"
 ---
 
 Choose from the different length styles

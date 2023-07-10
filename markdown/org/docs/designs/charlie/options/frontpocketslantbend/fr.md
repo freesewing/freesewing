@@ -1,5 +1,5 @@
 ---
-titre : "Pliage en biais de la poche avant"
+title: "Pliage en biais de la poche avant"
 ---
 
 Contrôle le rayon par lequel on arrondit la poche enfoncée à l'extérieur.

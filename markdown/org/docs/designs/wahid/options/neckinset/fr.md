@@ -1,5 +1,5 @@
 ---
-title:"Échancrure cou"
+title: "Échancrure cou"
 ---
 
 ![Échancrure cou](neckinset.svg)

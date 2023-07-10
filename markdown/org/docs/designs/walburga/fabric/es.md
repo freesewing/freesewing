@@ -1,9 +1,9 @@
----
+- - -
 title: "Walburga Wappenrock: Fabric Options"
----
+- - -
 
-Walburga can be made out of almost any woven fabric. Historically "accurate" would be linen, wool, and, to an extent, cotton. If you care about authenticity, research this a bit. In any case, natural fibers without any stretch are the way to go.
+Walburga puede fabricarse con casi cualquier tejido. Lo "fiel" históricamente sería lino, lana y, hasta cierto punto, algodón. Si te importa la autenticidad, investiga esto un poco. En cualquier caso, las fibras naturales sin elasticidad serían adecuadas.
 
-Depending on the social status you want to portray, choose coarser or finer fabrics. Different colours are also possible.
+Dependiendo del estatus social que quieras representar, elige telas más rústicas o más finas. También son posibles diferentes colores.
 
-If you want to embroider or appliqué on your Walburga, make sure that your main fabric will support your design.
+Si quieres hacer un bordado o añadir un diseño en tu Walburga, asegúrate de que la tela aguantará tu diseño.

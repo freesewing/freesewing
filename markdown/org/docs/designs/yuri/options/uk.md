@@ -1,5 +1,5 @@
----
-title: "Yuri hoodie: Design Options"
----
+- - -
+назва: "Худі Юрія: Варіанти дизайну"
+- - -
 
 <PatternOptions pattern='yuri' />

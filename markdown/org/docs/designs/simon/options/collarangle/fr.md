@@ -1,5 +1,5 @@
 ---
-titre : "Angle du col"
+title: "Angle du col"
 ---
 
 ![Angle du col](collarangle.svg)

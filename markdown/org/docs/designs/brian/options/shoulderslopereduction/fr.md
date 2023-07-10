@@ -1,5 +1,5 @@
 ---
-titre : "Réduction de la pente d'épaule"
+title: "Réduction de la pente d'épaule"
 ---
 
 ![Réduction de la pente d'épaule](./shoulderslopereduction.svg)

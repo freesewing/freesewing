@@ -1,7 +1,7 @@
----
-title: "Ursula undies: Required Measurements"
----
+- - -
+назва: "Урсула роздягається: Необхідні виміри"
+- - -
 
 <Note>
-Ursula does not require any measurements
+Урсула не потребує жодних вимірів
 </Note>

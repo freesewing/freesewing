@@ -1,5 +1,5 @@
----
-title: "Walburga Wappenrock: Design Options"
----
+- - -
+"Вальбурґа Ваппенрок: "Вальбурга Ваппенрок: Варіанти дизайну"
+- - -
 
 <PatternOptions pattern='walburga' />

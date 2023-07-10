@@ -1,5 +1,5 @@
 ---
-titre : "Profondeur du décolleté"
+title: "Profondeur du décolleté"
 ---
 
 ![L'option de profondeur d'encolure sur Aaron](./necklinedrop.svg)

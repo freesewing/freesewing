@@ -1,5 +1,5 @@
 ---
-title:"Échancrure dos"
+title: "Échancrure dos"
 ---
 
 ![Échancrure emmanchure arrière](backinset.svg)

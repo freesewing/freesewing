@@ -1,10 +1,10 @@
 ---
-title: "Front armhole curvature"
+title: "Courbe de l'emmanchure avant"
 ---
 
 ***
 
-Controls how deep the armhole is scooped out at the front bottom
+Contrôle la profondeur du bas de l'emmanchure sur le devant
 
 ## Effet de cette option sur le modèle
 

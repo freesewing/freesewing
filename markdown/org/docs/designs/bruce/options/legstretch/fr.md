@@ -1,5 +1,5 @@
 ---
-titre : "Élasticité des jambes"
+title: "Élasticité des jambes"
 ---
 
 ![L'option élasticité des jambes pour Bruce](./legstretch.svg)
