@@ -74,7 +74,7 @@ module.exports = {
 
   // neutral: Used as the background for the footer and navigation on desktop
   // Should always be dark
-  neutral: colors.neutral['900'],
+  neutral: colors.neutral['950'],
   // neutral-focus: Typically a shade lighter than neutral
   'neutral-focus': colors.neutral['700'],
   // neutral-content: The text color on neutral backgrounds
