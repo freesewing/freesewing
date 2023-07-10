@@ -11,8 +11,8 @@ You can use scraps of fabrics from your stash so don't worry about buying fabric
 ###### Noble is a block, not a pattern
 
 A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Sie werden manchmal auch als Schläger bezeichnet, obwohl Puristen argumentieren, dass ein Block und ein Schläger verschiedene Dinge sind.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Grundschnitte werden in der Regel nicht so gemacht, wie sie sind, sondern dienen als Grundlage für andere Schnittmuster.
 
 </Note>

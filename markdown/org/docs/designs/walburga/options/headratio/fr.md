@@ -1,8 +1,8 @@
----
+- - -
 title: "Head ratio"
----
+- - -
 
-Controls the size of the head opening
+Contrôle la taille de l'ouverture de la tête
 
 ## Effet de cette option sur le motif
 

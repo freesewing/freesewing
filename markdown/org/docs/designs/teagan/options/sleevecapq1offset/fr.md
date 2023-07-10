@@ -1,6 +1,6 @@
----
-title: "Sleevecap Q1 offset"
----
+- - -
+titre : "décalage Q1 de la tête de manche"
+- - -
 
 ![Le décalage au premier trimestre du chapeau de manche](./sleevecapq1offset.svg)
 

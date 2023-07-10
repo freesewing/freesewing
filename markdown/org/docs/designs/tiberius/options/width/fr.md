@@ -1,8 +1,8 @@
----
+- - -
 title: "Width"
----
+- - -
 
-Controls the width of the garment
+Contrôle la largeur du vêtement
 
 ## Effet de cette option sur le motif
 

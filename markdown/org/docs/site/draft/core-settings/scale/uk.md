@@ -1,8 +1,8 @@
 ---
-title: Scale
+title: Масштаб
 ---
 
-The scale settings allow you to scale those parts of a pattern that do not scale with measurements. Things like logos, line widths, font sizes, and so on.
+Налаштування масштабу дають змогу масштабувати ті частини деталі, які не масштабуються разом з розмірами. Такі речі, як логотипи, ширина рядків, розміри шрифтів і так далі.
 
-This setting was added at the requests of people who like to use our patterns to make doll clothes. When generating such a small pattern, the arrowheads, titles, and so on tend to obscure much of the pattern. This setting allows you to scale them down or -- if you so wich -- scale them up.
+Це налаштування було додано на прохання людей, які люблять використовувати наші викрійки для виготовлення лялькового одягу. При створенні такого маленького візерунка стрілки, заголовки і т.д., як правило, затуляють більшу частину візерунка. Цей параметр дозволяє зменшити або, за бажанням, збільшити їхній масштаб.
 

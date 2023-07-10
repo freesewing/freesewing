@@ -1,13 +1,13 @@
 ---
-title: "Octoplushy, the plushy octopus: Fabric Options"
+title: "Octoplushy, плюшевий восьминіг: Варіанти тканин"
 ---
 
-## Main and Contrast Body Fabrics (Upper body and legs, belly and underside legs)
+## Основні та контрастні тканини тіла (верхня частина тулуба і ніг, живіт і нижня частина ніг)
 
-This plush toy is intended to have two different coloured fabrics, one for the upper body and top side of the legs, one for the belly and underside of the legs.
+Ця плюшева іграшка повинна мати дві різні кольорові тканини: одну для верхньої частини тулуба і верхньої сторони ніг, іншу для живота і нижньої сторони ніг.
 
-Octoplushy is designed for faux fur fabric, which most plush toys are made from, but you could also use polar fleece, felt, denim, corduroy, or anything moderately heavy. Lightweight or drapey fabrics may not hold Octoplushy's shape well when stuffed. Fabrics with a two-way stretch will work better than wovens, the stretch should be perpendicular to the grainline.
+Octoplushy розроблений для тканини зі штучного хутра, з якої виготовляють більшість плюшевих іграшок, але ви також можете використовувати полярний фліс, фетр, джинсову тканину, вельвет або будь-що помірно важке. Легкі або драпіровані тканини можуть погано тримати форму Octoplushy при набиванні. Тканини з двостороннім розтягуванням будуть працювати краще, ніж тканні, розтягування повинно бути перпендикулярним до лінії дольової нитки.
 
-## Stuffing
+## Начинка
 
-Since this is a plush toy, it will need to be stuffed with material. Most of the time you'll want to use polyester fiberfill (polyfill), but if you have a lot of fabric scraps, you can use shredded scrap fabric. However this may be heavier and less soft than fiberfill. It's also worth thinking about whether your Octoplushy may be at risk of getting dirty, or want to go for a swim, as not all stuffing options are washable.
+Оскільки це плюшева іграшка, її потрібно буде набити матеріалом. Здебільшого ви захочете використовувати наповнювач з поліефірного волокна (поліфіл), але якщо у вас є багато обрізків тканини, ви можете використовувати подрібнені обрізки тканини. Однак він може бути важчим і менш м'яким, ніж волокнистий наповнювач. Також варто подумати про те, чи може ваш Octoplushy забруднитися або захотіти поплавати, адже не всі варіанти наповнювачів можна прати.

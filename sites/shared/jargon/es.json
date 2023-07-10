@@ -95,9 +95,9 @@
     "term": "freesewing",
     "description": "<b>FreeSewing</b> es una plataforma de código abierto para patrones de costura hechos a medida"
   },
-  "patrons": {
-    "term": "mecenas",
-    "description": "Los mecenas apoyan a Freesewing económicamente. Son colaboradores fieles que aseguran un futuro sostenible para freesewing.org, nuestro código, nuestros patrones y nuestra comunidad."
+  "patternOptions": {
+    "term": "opciones del patrón",
+    "description": "Las <b>opciones de patrón</b> te permiten personalizar el diseño del patrón"
   },
   "msf": {
     "term": "msf",

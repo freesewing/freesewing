@@ -1,8 +1,8 @@
----
+- - -
 title: "Huey hoodie: Cutting Instructions"
----
+- - -
 
-**Main fabric**
+**Oberstoff**
 
 - Cut **2 front** parts
 - Cut **1 back** part on the fold
@@ -10,7 +10,7 @@ title: "Huey hoodie: Cutting Instructions"
 - Cut **2 pocket** parts
 - Cut **4 Hood** parts
 
-**Ribbing**
+**Bündchen**
 
 - Cut **2 cuff** parts
-- Cut **1 waistband**
+- Schneide **1 Taillenband**

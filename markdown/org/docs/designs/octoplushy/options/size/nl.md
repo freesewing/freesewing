@@ -1,9 +1,9 @@
 ---
-title: "Size"
+title: "Maat"
 ---
 
 Octoplushy can be made in different sizes. The default has a head size of about 15cm, and 25cm long legs. This is a percentage of this default length.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](octoplushy_size_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](octoplushy_size_sample.svg "Effect van deze optie op het patroon")

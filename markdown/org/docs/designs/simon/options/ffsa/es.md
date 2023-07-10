@@ -1,6 +1,6 @@
----
+- - -
 title: "Flat-felled seam allowace"
----
+- - -
 
 Controls the amount of seam allowance on flat-felled seams.
 
@@ -10,4 +10,4 @@ This option controls the amount of flat-felled seam allowance as a factor of the
 
 ## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_ffsa_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_ffsa_sample.svg "Efecto de esta opción en el patrón")

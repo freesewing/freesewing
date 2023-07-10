@@ -1,10 +1,10 @@
----
+- - -
 title: "Ear flap width"
----
+- - -
 
 ***
 
-Controls the width of the ear flaps
+Steuert die Breite der Ohrklappen
 
 ## Effekt dieser Option auf das Schnittmuster
 

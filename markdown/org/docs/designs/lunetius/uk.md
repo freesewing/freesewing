@@ -1,5 +1,5 @@
----
-title: "Lunetius Lacerna"
----
+- - -
+назва: "Лунецій Лацерна"
+- - -
 
 <PatternDocs pattern='lunetius' />

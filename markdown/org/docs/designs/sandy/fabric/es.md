@@ -1,8 +1,8 @@
----
+- - -
 title: "Sandy circle skirt: Fabric Options"
----
+- - -
 
-### Main Fabric
+### Tela principal
 
 A circle skirt is a very versatile garment and can be made from a variety of fabric. It all depends on your intended use and preferred style.
 
@@ -28,7 +28,7 @@ Need some inspo? Need some inspo? check out [Sandy's showcase](/showcase/designs
 
 </Note>
 
-### Lining Fabric
+### Tela fina
 
 Linings are optional for Sandy but you may need one if your main fabric is scratchy, sheds, hard to wash or is not nice to wear against skin. You will want to use lighter fabrics to reduce bulk such as lightweight **Cottons** and **Silks**.
 

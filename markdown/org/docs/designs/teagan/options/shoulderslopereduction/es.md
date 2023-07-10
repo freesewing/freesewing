@@ -1,9 +1,9 @@
 ---
-title: Shoulder slope reduction
+title: Reducción de caída del hombro
 ---
 
-The amount by which the shoulder slope is reduced to allow for shoulder padding.
+La cantidad en la que la caída del hombro se reduce para añadir hombreras.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](teagan_shoulderslopereduction_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción al superponer varias variantes que tienen un valor diferente para esta opción](teagan_shoulderslopereduction_sample.svg "Efecto de esta opción en el patrón")

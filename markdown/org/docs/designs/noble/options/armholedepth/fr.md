@@ -1,10 +1,10 @@
 ---
-title: "Armhole depth"
+title: "Profondeur d'emmanchure"
 ---
 
 ***
 
-The **armhole depth** option controls the depth of the armhole.
+L'option **de profondeur de blindage** contrôle la profondeur de l'armure.
 
 ## Effet de cette option sur le modèle
 

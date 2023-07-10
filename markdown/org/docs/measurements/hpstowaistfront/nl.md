@@ -4,9 +4,9 @@ title: HPS tot taille voor
 
 <Note>
 
-###### HPS: high point shoulder
+###### HPS: hoogste punt schouder
 
-The _high point shoulder_ or _HPS_ point is used as the base for several vertical measurements.
+Het *hoogste punten* of *HPS* punt wordt gebruikt als basis voor verschillende verticale metingen.
 Raadpleeg [de hps documentatie](/docs/measurements/hps/) voor informatie over hoe je dit punt kunt vinden.
 
 </Note>

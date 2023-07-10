@@ -1,11 +1,11 @@
 ---
-title: "High bust width (Bella)"
+title: "Велика ширина бюста (Bella)"
 ---
 
 ***
 
-Controls the high bust width in the underlying Bella block Bee is based on
+Контролює високу ширину бюста в базовому блоці Bella Bella базується на
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_highbustwidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bee_highbustwidth_sample.svg "Вплив цієї опції на шаблон")

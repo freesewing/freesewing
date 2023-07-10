@@ -1,6 +1,6 @@
----
+- - -
 title: "Yuri hoodie: Sewing Instructions"
----
+- - -
 
 <Note>
 
@@ -75,7 +75,7 @@ Dies ist nur eine Hemmungsmethode, wenn Sie lieber einen anderen Weg gehen.
 
 ## Schritt 7: Vorbereiten von Lining und Außenkapuze
 
-Follow this step twice, once for the outer hood and once for the lining hood.
+Folgen Sie diesem Schritt zweimal, einmal für die Außenhaube und einmal für die Verkleidungshaube.
 
 - Mit guten Seiten zusammen, nähen Sie den langen Rand des Hood-Zentrums an den äußeren Rand einer der Hood-Sides.
 - Mit guten Seiten zusammen nähen Sie den verbleibenden langen Rand des Hood-Zentrums an den äußeren Rand der anderen Hood Side.
@@ -92,7 +92,7 @@ Es wird empfohlen, die **Fertigstellungsmethode 1** für diesen Schritt zu verwe
 
 - Mit _guten Seiten zusammen_Pin die Außen- und Haltungshütten passend zu den Nähten.
 - Nähen Sie den angehefteten Rand zusammen.
-- Schneiden Sie die Nahterlaubnis auf 1cm (3/8 Zoll), wenn Ihr gewähltes Nahtgewicht größer ist und Sie nicht verwendet haben und Überlocker/Server. Otherwise _do not_ trim the seam.
+- Schneiden Sie die Nahterlaubnis auf 1cm (3/8 Zoll), wenn Ihr gewähltes Nahtgewicht größer ist und Sie nicht verwendet haben und Überlocker/Server. Ansonsten ist _nicht_ die Naht zu schneiden.
 - Drehen Sie die Kapuze gute Seiten aus und drücken Sie die Außenkante flach.
 - Auf der Außenseite der Topstitch am Rand der Kapuze entlang, ca. 1,5 - 2cm von der Kante. Vergewissern Sie sich, dass Ihre Aufstichung umschließt, aber nicht durch die Naht der äußeren Haube Kante geht. Dadurch entsteht ein dekorativer Felgen, wobei die eingeschlossene Naht die Felge ein bisschen poofy macht.
 - Mit rohen Kanten zusammen, den Boden der Kapuze. Sie können dies entweder mit einem Overlocker/Serger oder einem Ziz-Zag oder einem Übergießstich auf einer normalen Maschine tun.
@@ -149,4 +149,4 @@ If you are not using a neckband you will want to finish the seam with **Finishin
 
 ## Schritt 12: Ta-daaa
 
-Enjoy your Yuri!
+Genieße deine/n Yuri!

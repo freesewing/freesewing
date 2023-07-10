@@ -1,9 +1,9 @@
 ---
-title: "Elastic stretch"
+title: "Estiramiento elástico"
 ---
 
-Adjust this option for more or less stretchy elastic.
+Ajuste esta opción para elásticos más o menos estirados.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](unice_elasticstretch_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción al superponer varias variantes que tienen un valor diferente para esta opción](unice_elasticstretch_sample.svg "Efecto de esta opción en el patrón")

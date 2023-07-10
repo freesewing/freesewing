@@ -7,7 +7,7 @@ title: "Noble body block: Sewing Instructions"
 ###### Noble is a block, not a pattern
 
 A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Dit wordt soms ook een paspatroon genoemd, alhoewel puristen zeggen dat dit twee verschillende dingen zijn.
 
 Blocks are typically not made as-is but rather serve as a basis for other patterns so the instructions below will not go in depth about closures or finishes and are for the default Noble block.
 
@@ -25,7 +25,7 @@ Noble is based on the Bella body block
 
 ### Armhole seam
 
-- Close the back darts.
+- Sluit de achterste nepen.
 
 ### Both
 

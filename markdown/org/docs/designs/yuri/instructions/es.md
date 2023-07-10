@@ -1,6 +1,6 @@
----
+- - -
 title: "Yuri hoodie: Sewing Instructions"
----
+- - -
 
 <Note>
 
@@ -75,7 +75,7 @@ Este es sólo un método de hemming, si se prefiere otro camino a seguir.
 
 ## Paso 7: Preparar Madera Terminal y Exterior
 
-Follow this step twice, once for the outer hood and once for the lining hood.
+Siga este paso dos veces, una para el capucha exterior y otra para el capó revestido.
 
 - Con buenos lados juntos, coser el largo borde del Centro de Madera hasta el borde exterior de una de las laderas de Madera.
 - Con buenos lados juntos, coser el largo borde restante del Centro de Madera al borde exterior del otro lado de la Madera.
@@ -92,7 +92,7 @@ Se recomienda utilizar **Método de finalización 1** para este paso, independie
 
 - Con _lados buenos juntos_, enlaza el exterior y Maderas Luminosas juntas que coinciden con las costuras.
 - Dibuja juntos el borde fijado.
-- Recorta la franquicia de costura a 1cm (3/8 pulgadas) si tu franquicia de costura elegida es mayor y no has utilizado ni sobrevendedor/sarga. Otherwise _do not_ trim the seam.
+- Recorta la franquicia de costura a 1cm (3/8 pulgadas) si tu franquicia de costura elegida es mayor y no has utilizado ni sobrevendedor/sarga. De lo contrario _no cortes_ la costura.
 - Da la vuelta a los lados de la campana y presiona el borde exterior plano.
 - En el exterior Topstitch a lo largo del borde de la capa, alrededor de 1,5 - 2cm (5/8 - 3/4 pulgadas) del borde. Asegúrese de que el revestimiento se enciende pero no pasa por la costura del borde exterior de la capucha. Esto creará un rin decorativo, con la posibilidad de costura cerrada haciendo el rin un poco poofy.
 - Con bordes crudos juntos, sobrehilan el fondo del capó. Puede hacerlo con un overlocker/serger o un ziz-zag o overcast stitch en una máquina normal.
@@ -149,4 +149,4 @@ If you are not using a neckband you will want to finish the seam with **Finishin
 
 ## Paso 12: Ta-daaa
 
-Enjoy your Yuri!
+¡Disfruta de tu Yuri!

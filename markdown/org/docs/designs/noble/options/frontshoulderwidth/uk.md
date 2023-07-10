@@ -1,11 +1,11 @@
 ---
-title: "Front shoulder width"
+title: "Ширина плечей спереду"
 ---
 
 ***
 
-The **front shoulder width** option controls the width of the shoulders at the front, relative to the back.
+Параметр **ширина плечей спереду** регулює ширину плечей спереду відносно спинки.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_frontshoulderwidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](noble_frontshoulderwidth_sample.svg "Вплив цієї опції на шаблон")

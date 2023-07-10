@@ -1,5 +1,5 @@
 ---
-title: "Noble body block: Design Options"
+title: "Благородний блок для тіла: Варіанти дизайну"
 ---
 
 <PatternOptions pattern='noble' />

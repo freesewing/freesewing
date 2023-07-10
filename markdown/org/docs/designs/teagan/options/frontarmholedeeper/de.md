@@ -1,9 +1,9 @@
 ---
-title: Front armhole extra cutout
+title: Zusätzlicher Ausschnitt am vorderen Armloch
 ---
 
-How much do you want the front armhole to be cut out deeper than the back.
+Um wie viel das vordere Armloch tiefer ausgeschnitten ist als im Rücken.
 
-## Effect of this option on the pattern
+## Effekt dieser Variable auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](teagan_frontarmholedeeper_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](teagan_frontarmholedeeper_sample.svg "Effekt dieser Option auf das Schnittmuster")

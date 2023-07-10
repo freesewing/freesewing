@@ -1,5 +1,5 @@
 ---
-title: "Bob the Bib: Design Options"
+title: "Слюнявчик Боб: Варіанти дизайну"
 ---
 
 <PatternOptions pattern='bob' />

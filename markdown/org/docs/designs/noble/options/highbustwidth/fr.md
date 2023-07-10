@@ -1,10 +1,10 @@
 ---
-title: "High bust width"
+title: "Largeur du haut de poitrine"
 ---
 
 ***
 
-The **high bust width** option allows you to tweak the high bust width at the front.
+L'option **grande largeur de poitrine** vous permet de modifier la largeur de la poitrine à l'avant.
 
 ## Effet de cette option sur le modèle
 

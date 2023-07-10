@@ -1,11 +1,11 @@
 ---
-title: "Full chest ease reduction"
+title: "Verringerung der Brustumfangszugabe"
 ---
 
 ***
 
-Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area
+Ermöglicht es dir den Spielraum an der Brust zu verringern, um dort einen engeren Sitz zu ermöglichen
 
-## Effect of this option on the pattern
+## Effekt dieser Variable auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_fullchesteasereduction_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bella_fullchesteasereduction_sample.svg "Effekt dieser Option auf das Schnittmuster")

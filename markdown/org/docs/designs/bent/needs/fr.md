@@ -11,9 +11,9 @@ This list is for a default Bent Block. Si vous avez apporté des modifications a
 
 <Note>
 
-###### Bent is a block, not a pattern
+###### Bent est un bloc, pas un motif
 
-A block is a basic shape on which other patterns are based.
+Un bloc est une forme de base sur laquelle se basent d'autres motifs.
 Ils sont parfois aussi appelés patrons de base, bien que les puristes soutiennent qu'un bloc et un patron de base sont des choses différentes.
 
 Les patrons de base ne sont donc généralement pas utilisés tels quels, mais plutôt pour élaborer d'autres modèles.

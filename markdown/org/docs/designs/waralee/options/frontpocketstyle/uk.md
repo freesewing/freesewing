@@ -1,5 +1,5 @@
 ---
-title: "Front pocket style"
+title: "Стиль передньої кишені"
 ---
 
-Change the front pocket from welt pocket to one that is hidden in the front seam.
+Змініть передню кишеню з прорізної на вшивну, приховану в передньому шві.

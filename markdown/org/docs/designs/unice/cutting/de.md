@@ -4,16 +4,16 @@ title: "Unice undies: Cutting instructions"
 
 Unice consists of a front, a back, and a lined gusset.
 
-- **Main fabric**
-  - Cut **1 front**
-  - Cut **1 back**
-  - Cut **2 gusset**
+- **Oberstoff**
+  - Schneide **1 Vorderteil**
+  - Schneide **1 Rückteil**
+  - Schneide **2 Zwickel**
 
 <Note>
 
 ##### Notes
 
-- Unice is a great scrap buster. If you have fabric scraps from making a [Teagan t-shirt](/designs/teagan/) or anything from a jersey fabric that has good stretch, this is a good way to use those up.
-- You can use the same fabric for the whole garment, including the gusset lining. Some people prefer to use a cotton jersey instead to line the gusset. If you want to do that, cut **1 gusset** from your main fabric and **1 gusset** from your lining fabric.
+- Unice is a great scrap buster. Wenn du Stoffreste von einem [Teagan T-Shirt](/designs/teagan/) oder sonst irgendetwas aus einem Jersey-Stoff mit guter Dehnung hast, ist dies ist eine gute Möglichkeit, sie zu verwenden.
+- Du kannst denselben Stoff für das gesamte Kleidungsstück verwenden, inklusive dem Futter für den Zwickel. Einige Leute verwenden stattdessen lieber ein Baumwoll-Jersey, um den Zwickel zu füttern. Wenn du das möchtest, schneide **1 Zwickel** aus deinem Hauptstoff und **1 Zwickel** aus deinem Futter-Stoff.
 
 </Note>

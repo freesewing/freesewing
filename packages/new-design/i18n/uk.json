@@ -1,5 +1,5 @@
 {
-  "uthor": "Автор",
+  "author": "Автор",
   "githubRepo": "Репозиторій GitHub",
   "packageManager": "Менеджер пакунків",
   "patternName": "Назва викрійки",
@@ -17,8 +17,8 @@
   "renderInBrowser": "Натисніть нижче, щоб відобразити Вашу викрійку у браузері.",
   "weWillReRender": "Коли Ви виконаєте зміни, ми перезавантажимо зображення для Вас.",
   "youCan": "Ви можете",
-  "enterMeasurements": "Ввести вимірювання вручну",
-  "preloadMeasurements": "Завантажити набір мірок",
+  "enterMeasurements": "Ввести заміри вручну",
+  "preloadMeasurements": "Додати наявні заміри",
   "size": "Розмір",
   "noRequiredMeasurements": "Ця викрійка не потребує замірів",
   "howtoAddMeasurements": "Щоб додати бажані мірки, додайте їх у секцію <b>заміри</b> у файлі конфігурації викрійки.",

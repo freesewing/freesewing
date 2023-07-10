@@ -1,6 +1,6 @@
----
-title: "Longueur de la bande (lacets croisés dans le dos)"
----
+- - -
+titre: "Longueur de la bande (lacets croisés dans le dos)"
+- - -
 
 ***
 

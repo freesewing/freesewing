@@ -7,7 +7,7 @@ title: "Noble body block: Cutting Instructions"
 - Cut **1 Front Inside** part on the fold.
 - Cut **2 Front Outside** part.
 
-### Shoulder dart
+### Pince d'épaule
 
 - Cut **2 Back Inside** part.
 - Cut **2 Back Outside** part.
@@ -29,8 +29,8 @@ If you do not have someone to help pin you into Noble then you may find it easie
 ###### Noble is a block, not a pattern
 
 A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Ils sont parfois aussi appelés patrons de base, bien que les puristes soutiennent qu'un bloc et un patron de base sont des choses différentes.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Les patrons de base ne sont donc généralement pas utilisés tels quels, mais plutôt pour élaborer d'autres modèles.
 
 </Note>

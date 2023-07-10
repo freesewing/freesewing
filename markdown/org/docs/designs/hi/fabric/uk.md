@@ -1,17 +1,17 @@
 ---
-title: "Hi the shark: Fabric Options"
+title: "Привіт акулі: Варіанти тканин"
 ---
 
-## Main and Contrast Body Fabrics (Upper body, belly and mouth)
+## Основні та контрастні тканини тіла (верхня частина тіла, живіт і рот)
 
-This plush toy is intended to have three different coloured fabrics, one for the upper body, one for the belly, and a smaller piece for the mouth. If you don't wish to purchase additional fabric just for the mouth, it's a small enough piece that you can likely use a scrap from the upper body or belly fabric.
+Ця плюшева іграшка складається з трьох різнокольорових тканин: одна для верхньої частини тіла, одна для живота і менший шматок для рота. Якщо ви не хочете купувати додаткову тканину тільки для рота, це досить маленький шматок, і ви, ймовірно, можете використовувати обрізки тканини верхньої частини тіла або живота.
 
-Hi is designed for faux fur fabric, which most plush toys are made from, but you could also use polar fleece, felt, denim, corduroy, or anything moderately heavy. Lightweight or drapey fabrics may not hold Hi's shape well when stuffed. Fabrics with a two-way stretch will work better than wovens, the stretch should be perpendicular to the grainline.
+Hi призначена для тканини зі штучного хутра, з якої виготовляють більшість плюшевих іграшок, але ви також можете використовувати полярний фліс, фетр, джинсову тканину, вельвет або будь-що помірно важке. Легкі або драпіровані тканини можуть погано тримати форму Hi при набиванні. Тканини з двостороннім розтягуванням будуть працювати краще, ніж тканні, розтягування повинно бути перпендикулярним до лінії дольової нитки.
 
-## Teeth Fabric
+## Зубна тканина
 
-The teeth edges are left raw, so should be made from a fabric that does not unravel such as felt.
+Краї зубців залишаються необробленими, тому їх слід зробити з тканини, яка не розпускається, наприклад, фетру.
 
-## Stuffing
+## Начинка
 
-Since this is a plush toy, it will need to be stuffed with material. Most of the time you'll want to use polyester fiberfill (polyfill), but if you have a lot of fabric scraps, you can use shredded scrap fabric. However this may be heavier and less soft than fiberfill. It's also worth thinking about whether your Hi may be at risk of getting dirty, or want to go for a swim, as not all stuffing options are washable.
+Оскільки це плюшева іграшка, її потрібно буде набити матеріалом. Здебільшого ви захочете використовувати наповнювач з поліефірного волокна (поліфіл), але якщо у вас є багато обрізків тканини, ви можете використовувати подрібнені обрізки тканини. Однак він може бути важчим і менш м'яким, ніж волокнистий наповнювач. Також варто подумати про те, чи не ризикує ваш Hi забруднитися, чи не захоче він поплавати, адже не всі варіанти наповнювачів можна прати.

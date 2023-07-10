@@ -1,11 +1,11 @@
 ---
-title: "Cuff ease"
+title: "Легкість манжети"
 ---
 
 ***
 
-The amount of ease at your wrist.
+Скільки легкості на вашому зап'ясті.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_cuffease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](diana_cuffease_sample.svg "Вплив цієї опції на шаблон")

@@ -6,6 +6,6 @@ This option allows you to put in the maximum stretch that the fabric will allow 
 
 When disabled, the stretch values are used as-is.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](unice_adjuststretch_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](unice_adjuststretch_sample.svg "Effect van deze optie op het patroon")
