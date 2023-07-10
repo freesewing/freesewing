@@ -1,6 +1,6 @@
-- - -
-titre : "Aisance aux biceps"
-- - -
+---
+title: "Aisance aux biceps"
+---
 
 L'aisance en haut du bras.
 

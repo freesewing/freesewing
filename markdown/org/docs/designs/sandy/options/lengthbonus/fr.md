@@ -1,5 +1,5 @@
 ---
-titre : "Longueur supplémentaire"
+title: "Longueur supplémentaire"
 ---
 
 ![Supplément de longueur](lengthbonus.svg)

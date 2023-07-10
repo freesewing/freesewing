@@ -1,5 +1,5 @@
 ---
-title:"Aisance de poitrine"
+title: "Aisance de poitrine"
 ---
 
 ![Aisance de poitrine](chestease.svg)

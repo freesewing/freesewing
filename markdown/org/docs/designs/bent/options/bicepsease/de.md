@@ -1,5 +1,5 @@
 ---
-weitenzugabe/Bequemlichkeitszugabe Oberarm
+title: weitenzugabe/Bequemlichkeitszugabe Oberarm
 ---
 
 Diese Option steuert die Leichtigkeit an Ihrem Oberarm/Bizeppe.

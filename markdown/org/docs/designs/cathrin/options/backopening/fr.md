@@ -1,5 +1,5 @@
 ---
-titre : "Ouverture du dos"
+title: "Ouverture du dos"
 ---
 
 ![L'option d'ouverture du dos sur Cathrin](./backopening.svg)

@@ -1,5 +1,5 @@
 ---
-titre : "Placement vertical de la poche arrière"
+title: "Placement vertical de la poche arrière"
 ---
 
 Contrôle la position verticale des poches arrières.

@@ -1,8 +1,8 @@
-- - -
-titre : "Longueur supplémentaire"
-- - -
+---
+title: "Longueur supplémentaire"
+---
 
-Permet de varier la longueur du vêtement
+Allows variation of the length of the garment
 
 ## Effet de cette option sur le motif
 

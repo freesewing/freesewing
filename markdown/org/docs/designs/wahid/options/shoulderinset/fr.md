@@ -1,5 +1,5 @@
 ---
-title:"Largeur d'épaule"
+title: "Largeur d'épaule"
 ---
 
 ![Largeur d'épaule](shoulderinset.svg)

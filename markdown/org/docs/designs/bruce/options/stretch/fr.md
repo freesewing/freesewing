@@ -1,5 +1,5 @@
 ---
-titre : "Élasticité"
+title: "Élasticité"
 ---
 
 ![L'option stretch pour Bruce](./stretch.svg)

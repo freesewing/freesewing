@@ -1,5 +1,5 @@
 ---
-titre : "Hauteur de la poche thoracique"
+title: "Hauteur de la poche thoracique"
 ---
 
 Contrôle la hauteur/taille de la poche de poitrine.

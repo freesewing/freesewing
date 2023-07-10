@@ -1,5 +1,5 @@
 ---
-titre : "Manteau Carlita : Ce qu'il faut"
+title: "Manteau Carlita : Ce qu'il faut"
 ---
 
 Pour fabriquer Carlita, vous aurez besoin des éléments suivants :

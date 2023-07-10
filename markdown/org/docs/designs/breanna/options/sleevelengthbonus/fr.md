@@ -1,5 +1,5 @@
 ---
-titre : "Surlongueur de longueur de manche"
+title: "Surlongueur de longueur de manche"
 ---
 
 Cette option contrôle la longueur des manches.

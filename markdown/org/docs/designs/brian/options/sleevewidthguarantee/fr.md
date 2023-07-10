@@ -1,5 +1,5 @@
 ---
-titre : "Garantie de largeur de manche"
+title: "Garantie de largeur de manche"
 ---
 
 On commence par une ébauche de l'emmanchure, puis d'une manche qui s'y ajuste.

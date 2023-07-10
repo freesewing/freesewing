@@ -1,5 +1,5 @@
 ---
-title:"Ruban d'ajustement"
+title: "Ruban d'ajustement"
 ---
 
 ![Traditionnel ou ajustable](adjustmentribbon.svg)

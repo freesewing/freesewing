@@ -1,5 +1,5 @@
 ---
-titre : "Largeur de sangle"
+title: "Largeur de sangle"
 ---
 
 Contrôle la largeur des liens sur votre tablier.

@@ -1,8 +1,8 @@
-- - -
-titre : "Décalage de la couture d'épaule : côté col"
-- - -
+---
+title: "Décalage de la couture d'épaule : côté col"
+---
 
-Contrôle l'emplacement de la couture des épaules sur le côté du col.
+Controls the shoulder seam location on the collar side.
 
 - Augmentez cette option pour déplacer la couture de l'épaule vers l'avant sur le col
 - Diminuer cette option pour déplacer la couture de l'épaule vers l'arrière sur le col

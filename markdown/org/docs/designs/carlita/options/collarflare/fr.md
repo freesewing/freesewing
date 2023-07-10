@@ -1,5 +1,5 @@
 ---
-titre : "Col évasé"
+title: "Col évasé"
 ---
 
 Contrôle l'évasement du col en modifiant la longueur de chute (entre le cou et les pointes) du col.

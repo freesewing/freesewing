@@ -1,8 +1,8 @@
-- - -
-titre : "Longueur"
-- - -
+---
+title: "Longueur"
+---
 
-Choisit parmi les différents styles de longueur
+Choose from the different length styles
 
 ## Effet de cette option sur le motif
 
