@@ -1,6 +1,7 @@
 import orderBy from 'lodash.orderby'
 import get from 'lodash.get'
-import React, { useState } from 'react'
+import cloneDeep from 'lodash.clonedeep'
+import { useState, useMemo, createContext } from 'react'
 import { useNavigation } from 'site/hooks/use-navigation.mjs'
 import { objUpdate } from 'shared/utils.mjs'
 
@@ -11,7 +12,7 @@ const defaultNavigationContext = {
   crumbs: [],
 }
 
-export const NavigationContext = React.createContext(defaultNavigationContext)
+export const NavigationContext = createContext(defaultNavigationContext)
 
 const createCrumbs = (path, nav) =>
   path.map((crumb, i) => {
@@ -66,7 +67,18 @@ export const NavigationContextProvider = ({ children }) => {
   })
   const [extraPages, setExtraPages] = useState([])
 
-  const siteNav = useNavigation({ path: value.path, locale: value.locale }, extraPages)
+  const rawSiteNav = useNavigation({ path: value.path, locale: value.locale })
+
+  const siteNav = useMemo(() => {
+    const nav = cloneDeep(rawSiteNav)
+
+    for (const [_path, _data] of extraPages) {
+      objUpdate(nav, _path, _data)
+    }
+
+    return nav
+  }, [rawSiteNav, extraPages])
+
   const navState = buildNavState(value, siteNav)
 
   const addPages = (extra) => {

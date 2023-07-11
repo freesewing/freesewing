@@ -3,7 +3,6 @@ import orderBy from 'lodash.orderby'
 import Link from 'next/link'
 import { useContext } from 'react'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
-import { useNavigation } from 'site/hooks/use-navigation.mjs'
 
 const baseClasses =
   'text-base-content no-underline inline-block hover:text-secondary hover:underline'
@@ -43,8 +42,7 @@ export const ReadMore = ({
   pretty = false,
   ignoreControl,
 }) => {
-  const { slug } = useContext(NavigationContext)
-  const siteNav = useNavigation({ ignoreControl })
+  const { slug, siteNav } = useContext(NavigationContext)
 
   // Deal with recurse not being a number
   if (recurse && recurse !== true) {

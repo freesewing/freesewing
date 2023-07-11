@@ -103,7 +103,9 @@ export const prebuildDocs = async (site) => {
   const mdxRoot = path.resolve(...root)
 
   // Languages
-  const locales = site === 'dev' ? ['en'] : ['en', 'fr', 'es', 'nl', 'de']
+  const locales = await import(`../../${site}/site.config.mjs`).then(
+    (mod) => mod.siteConfig.languages
+  )
 
   const pages = {}
   // Loop over languages
@@ -137,9 +139,18 @@ export const prebuildDocs = async (site) => {
     }
   }
 
+  // make a prebuild docs loader folder
+  fs.mkdirSync(path.resolve('..', site, 'prebuild', 'docs-loader'), { recursive: true })
+
   // Write files with MDX paths
   let allPaths = ``
   for (const lang of locales) {
+    // write a docs loader
+    fs.writeFileSync(
+      path.resolve('..', site, 'prebuild', 'docs-loader', `${lang}.mjs`),
+      `${header}export const loader = (path) => import('orgmarkdown/docs/' + path + '/${lang}.md')`
+    )
+
     fs.writeFileSync(
       path.resolve('..', site, 'prebuild', `mdx-paths.${lang}.mjs`),
       `${header}export const mdxPaths = ${JSON.stringify(Object.keys(pages[lang]))}`
@@ -153,6 +164,5 @@ export const prebuildDocs = async (site) => {
 
 export const mdxPaths = { ${locales.join(',')} }`
   )
-
   return pages
 }

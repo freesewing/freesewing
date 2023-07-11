@@ -156,30 +156,27 @@ const sitePages = (t = false, control = 99) => {
   return pages
 }
 
-export const useNavigation = (params = {}, extra = []) => {
+export const useNavigation = (params = {}) => {
   const { locale = 'en', ignoreControl } = params
   const { t } = useTranslation(ns)
   const { account } = useAccount()
+
   const [navigation, setNavigation] = useState({})
 
   const control = ignoreControl ? undefined : account.control
-  const _sitePages = useMemo(() => sitePages(t, control), [t, control])
-
   useEffect(() => {
     import(`site/prebuild/navigation/${locale}.mjs`).then((mod) => {
       const nav = {
         ...mod.prebuildNavigation,
-        ..._sitePages,
+        ...sitePages(t, control),
       }
 
-      for (const [_path, _data] of extra) {
-        objUpdate(nav, _path, _data)
-      }
+      // Set order on docs key (from from prebuild navigation)
       nav.docs.o = 30
 
       setNavigation(nav)
     })
-  }, [locale, _sitePages])
+  }, [locale, t, control])
 
   return navigation
 }

@@ -20,6 +20,7 @@ import {
   GitHubIcon,
 } from 'shared/components/icons.mjs'
 import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
+import get from 'lodash.get'
 
 export const ns = ['sections']
 
@@ -95,7 +96,7 @@ export const isActive = (slug, active) => {
 
 const hasChildren = (page) => {
   const keys = new Set([...Object.keys(page)])
-  for (const key of ['t', 's']) keys.delete(key)
+  for (const key of ['t', 's', 'o']) keys.delete(key)
 
   return keys.size
 }
@@ -289,42 +290,32 @@ export const MainSections = () => {
   return <ul>{output}</ul>
 }
 
-const getCrumb = (index, crumbs) => crumbs[index].s.split('/').pop()
+const getCrumb = (index, crumbs) => crumbs[index].s.split('/')
 
 export const ActiveSection = () => {
   // Get navigation context
-  const { crumbs = [], nav = {}, slug } = useContext(NavigationContext)
+  const { crumbs = [], siteNav = {}, slug } = useContext(NavigationContext)
 
   // Don't bother if we don't know where we are
   if (!crumbs || !Array.isArray(crumbs) || crumbs.length < 1) return null
 
-  let slice = 1
-  let nodes = nav
+  let nodes = get(siteNav, getCrumb(0, crumbs))
   // Some sections are further trimmed
   if (crumbs[0].s === 'docs') {
-    if (crumbs.length > 1 && crumbs[1].s === 'docs/faq') {
-      slice = 2
-      nodes = nav[getCrumb(1, crumbs)]
-    } else if (crumbs.length === 2) {
-      slice = 2
-      nodes = nav[getCrumb(1, crumbs)]
-    } else if (
-      crumbs.length === 4 &&
-      crumbs[1].s === 'docs/patterns' &&
-      crumbs[3].s.split('/').pop() === 'options'
-    ) {
-      slice = 4
-      nodes = nav[getCrumb(1, crumbs)][getCrumb(2, crumbs)][getCrumb(3, crumbs)]
-    } else if (crumbs.length > 2 && crumbs[1].s === 'docs/patterns') {
-      slice = 3
-      nodes = nav[getCrumb(1, crumbs)][getCrumb(2, crumbs)]
+    // design documentation should trim to the design
+    if (crumbs.length > 2 && crumbs[1].s === 'docs/designs') {
+      nodes = get(siteNav, getCrumb(2, crumbs))
+    }
+    // trim to the top level section if we're in a section
+    else if (crumbs.length > 1) {
+      nodes = get(siteNav, getCrumb(1, crumbs))
     }
   }
 
   return (
     <div>
       <div className="pl-4 my-2">
-        <Breadcrumbs crumbs={crumbs.slice(0, slice)} />
+        <Breadcrumbs crumbs={crumbs} />
       </div>
       <div className="pr-2">
         <SubLevel hasChildren={1} nodes={nodes} active={slug} />

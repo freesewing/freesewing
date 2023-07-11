@@ -3,7 +3,7 @@ import { scrollTo } from 'shared/utils.mjs'
 
 export const ns = ['docs']
 
-const Spacer = () => <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+const Spacer = () => <>&nbsp;&nbsp;&nbsp;&nbsp;</>
 
 export const Toc = ({ toc = [], wrap = false }) => {
   const { t } = useTranslation(ns)

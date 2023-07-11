@@ -2,6 +2,8 @@ import get from 'lodash.get'
 import orderBy from 'lodash.orderby'
 import Link from 'next/link'
 import { LeftIcon, RightIcon } from 'shared/components/icons.mjs'
+import { useContext } from 'react'
+import { NavigationContext } from 'shared/context/navigation-context.mjs'
 
 // helper method to order nav entries
 const order = (obj) => orderBy(obj, ['o', 't'], ['asc', 'asc'])
@@ -11,66 +13,65 @@ const nodesOnly = (current) =>
   Object.values(order(current)).filter((entry) => typeof entry === 'object')
 
 // Helper method to get the siblings
-const siblings = (app) =>
-  app.state.slug ? nodesOnly(get(app.state.nav, app.state.slug.split('/').slice(1, -1))) : []
+const siblings = (siteNav, slug) =>
+  slug ? nodesOnly(get(siteNav, slug.split('/').slice(0, -1))) : []
 
 // Helper method to get the current parent
-const currentParent = (app) =>
-  app.state.slug ? [get(app.state.nav, app.state.slug.split('/').slice(1, -1))] : []
+const currentParent = (siteNav, slug) => (slug ? [get(siteNav, slug.split('/').slice(0, -1))] : [])
 
 // Helper method to get the next parent
-const nextParent = (app) => {
-  if (app.state.slug)
-    return app.state.slug.split('/').length < 4
-      ? nodesOnly(app.state.nav)
-      : nodesOnly(get(app.state.nav, app.state.slug.split('/').slice(1, -2)))
+const nextParent = (siteNav, slug) => {
+  if (slug)
+    return slug.split('/').length < 4
+      ? nodesOnly(siteNav)
+      : nodesOnly(get(siteNav, slug.split('/').slice(0, -2)))
 
   return []
 }
 
 // Helper method to get current node
-const current = (app) => (app.state.slug ? get(app.state.nav, app.state.slug.split('/')) : null)
+const current = (siteNav, slug) => (slug ? get(siteNav, slug.split('/')) : null)
 
-const previous = (app) => {
+const previous = (siteNav, slug) => {
   // Previous sibling (aside)
-  const aside = siblings(app)
+  const aside = siblings(siteNav, slug)
   if (aside.length > 0) {
     let next = false
     for (const node of aside.reverse()) {
       if (next) return node
-      if (node?.s && node.s === app.state.slug) next = true
+      if (node?.s && node.s === slug) next = true
     }
   }
 
   // Previous parent (up)
-  const up = currentParent(app)
+  const up = currentParent(siteNav, slug)
   if (up.length === 1) return up.pop()
 
   return false
 }
 
-const next = (app) => {
+const next = (siteNav, slug) => {
   // Next child (down)
-  const down = nodesOnly(current(app))
+  const down = nodesOnly(current(siteNav, slug))
   if (down.length > 0) return down[0]
 
   // Next sibling (aside)
-  const aside = siblings(app)
+  const aside = siblings(siteNav, slug)
   if (aside.length > 0) {
     let next = false
     for (const node of aside) {
       if (next) return node
-      if (node?.s && node.s === app.state.slug) next = true
+      if (node?.s && node.s === slug) next = true
     }
   }
 
   // Next parent (up)
-  const up = nextParent(app)
+  const up = nextParent(siteNav, slug)
   if (up.length > 0) {
     let next = false
     for (const node of up) {
       if (next) return node
-      if (node?.s && node.s === app.state.slug.slice(0, node.s.length)) next = true
+      if (node?.s && node.s === slug.slice(0, node.s.length)) next = true
     }
   }
   return false
@@ -100,14 +101,16 @@ const renderNext = (node) =>
     <span></span>
   )
 
-export const PrevNext = ({ app }) => {
+export const PrevNext = () => {
+  const { slug, siteNav } = useContext(NavigationContext)
+
   return (
-    <div className="grid grid-cols-2 gap-4 border-t mt-12 py-2">
-      {renderPrevious(previous(app))}
-      {renderNext(next(app))}
+    <div className="grid grid-cols-2 gap-4 border-t mt-12 py-2 mdx">
+      {renderPrevious(previous(siteNav, slug))}
+      {renderNext(next(siteNav, slug))}
     </div>
   )
 }
 
-//<pre>{JSON.stringify(app.state.nav, null ,2)}</pre>
-//<pre>{JSON.stringify(app.state.slug, null ,2)}</pre>
+//<pre>{JSON.stringify(siteNav, null ,2)}</pre>
+//<pre>{JSON.stringify(slug, null ,2)}</pre>

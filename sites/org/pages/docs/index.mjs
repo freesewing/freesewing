@@ -1,44 +1,29 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import fs from 'fs/promises'
+import path from 'path'
 // Hooks
 import { useState, useEffect } from 'react'
 // Components
 import { ns } from 'shared/components/wrappers/page.mjs'
 import { components } from 'shared/components/mdx/index.mjs'
-//import { TocWrapper } from 'shared/components/wrappers/toc.mjs'
-import { Loading, Page } from './[...slug].mjs'
+import DocsPage, { getStaticMdx } from './[...slug].mjs'
+import { getMdxConfig } from 'shared/config/mdx.mjs'
+import { jargon } from 'shared/jargon/index.mjs'
 
-const DocsHomePage = ({ page, slug, locale }) => {
-  // State
-  const [frontmatter, setFrontmatter] = useState({ title: 'FreeSewing.org' })
-  const [MDX, setMDX] = useState(<Loading />)
-
-  /* Load MDX dynamically */
-  useEffect(() => {
-    const loadMDX = async () => {
-      import(`../../../../markdown/org/docs/${locale}.md`).then((mod) => {
-        setFrontmatter(mod.frontmatter)
-        const Component = mod.default
-        setMDX(<Component components={components('org')} />)
-      })
-    }
-    loadMDX()
-  }, [slug, locale])
-
-  return <Page {...{ page, slug, frontmatter, MDX, locale }} />
-}
-
-export default DocsHomePage
+export default DocsPage
 
 /*
  * getStaticProps() is used to fetch data at build-time.
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticProps({ locale }) {
+  const slug = `docs`
   return {
     props: {
       ...(await serverSideTranslations('en', ['docs', ...ns])),
-      slug: 'docs',
+      code: await getStaticMdx(locale, slug, getMdxConfig({ site: 'org', jargon, slug })),
+      slug,
       locale,
       page: {
         locale,
