@@ -30,6 +30,7 @@ import { Octoplushy } from '@freesewing/octoplushy'
 import { Paco } from '@freesewing/paco'
 import { Penelope } from '@freesewing/penelope'
 import { Sandy } from '@freesewing/sandy'
+import { Shelly } from '@freesewing/shelly'
 import { Shin } from '@freesewing/shin'
 import { Simon } from '@freesewing/simon'
 import { Simone } from '@freesewing/simone'
@@ -79,6 +80,7 @@ const designs = {
   paco: Paco,
   penelope: Penelope,
   sandy: Sandy,
+  shelly: Shelly,
   shin: Shin,
   simon: Simon,
   simone: Simone,
