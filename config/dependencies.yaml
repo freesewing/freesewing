@@ -209,7 +209,7 @@ backend:
     'pino': '8.14.1'
     'qrcode': '1.5.3'
     'swagger-ui-dist': '5.1.0'
-    'swagger-ui-express': '4.6.3'
+    'swagger-ui-express': '5.0.0'
   dev:
     'chai': *chai
     'chai-http': '4.4.0'
