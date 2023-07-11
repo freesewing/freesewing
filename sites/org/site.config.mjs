@@ -1,3 +1,5 @@
+import i18nConfig from './next-i18next.config.js'
+
 export const siteConfig = {
   algolia: {
     app: 'MA0Y5A2PF0', // Application ID
@@ -16,7 +18,7 @@ export const siteConfig = {
     dataset: 'site-content',
     apiVersion: '2023-06-17',
   },
-  languages: ['en', 'es', 'de', 'fr', 'nl', 'uk'],
+  languages: i18nConfig.i18n.locales,
   languagesWip: [],
   site: 'FreeSewing.org',
 }

@@ -6,7 +6,7 @@ import yaml from 'js-yaml'
 /*
  * List of supported languages
  */
-const locales = ['en', 'es', 'de', 'fr', 'nl']
+// const locales = ['en', 'es', 'de', 'fr', 'nl']
 
 /*
  * This is where we configure what folders we should check for
@@ -133,9 +133,9 @@ export const prebuildI18n = async () => {
   const data = filesAsNamespaces(files)
   const namespaces = fixData(data)
   // Write out code-adjacent source files
-  for (const locale of locales) {
-    // Fan out into namespaces
-    for (const namespace in namespaces) {
+  // Fan out into namespaces
+  for (const namespace in namespaces) {
+    for (const locale in namespaces[namespace]) {
       writeJson(locale, namespace, namespaces[namespace][locale])
     }
   }

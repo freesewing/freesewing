@@ -31,4 +31,5 @@ config.eslint = {
 // ANALYZE=true yarn build
 if (process.env.ANALYZE) config = withBundleAnalyzer(config)(config)
 
+// console.log(config)
 export default config

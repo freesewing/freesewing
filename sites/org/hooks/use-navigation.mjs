@@ -1,9 +1,9 @@
-import { prebuildNavigation as pbn } from 'site/prebuild/navigation.mjs'
 import { useTranslation } from 'next-i18next'
 import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { designs, tags } from 'shared/config/designs.mjs'
 import { objUpdate } from 'shared/utils.mjs'
+import { useEffect, useState, useMemo } from 'react'
 
 /*
  * prebuildNavvigation[locale] holds the navigation structure based on MDX content.
@@ -95,12 +95,12 @@ const sitePages = (t = false, control = 99) => {
       h: 1,
       join: {
         t: t('translation:joinATranslationTeam'),
-        s: 'translation',
+        s: 'translation/join',
         h: 1,
       },
       'suggest-language': {
         t: t('translation:suggestLanguage'),
-        s: 'translation',
+        s: 'translation/suggest-language',
         h: 1,
       },
     },
@@ -160,17 +160,26 @@ export const useNavigation = (params = {}, extra = []) => {
   const { locale = 'en', ignoreControl } = params
   const { t } = useTranslation(ns)
   const { account } = useAccount()
+  const [navigation, setNavigation] = useState({})
 
-  const navigation = {
-    ...pbn[locale],
-    ...sitePages(t, ignoreControl ? undefined : account.control),
-  }
-  for (const [_path, _data] of extra) {
-    objUpdate(navigation, _path, _data)
-  }
+  const control = ignoreControl ? undefined : account.control
+  const _sitePages = useMemo(() => sitePages(t, control), [t, control])
 
-  // Set order on docs key (from from prebuild navigation)
-  navigation.docs.o = 30
+  useEffect(() => {
+    import(`site/prebuild/navigation/${locale}.mjs`).then((mod) => {
+      const nav = {
+        ...mod.prebuildNavigation,
+        ..._sitePages,
+      }
+
+      for (const [_path, _data] of extra) {
+        objUpdate(nav, _path, _data)
+      }
+      nav.docs.o = 30
+
+      setNavigation(nav)
+    })
+  }, [locale, _sitePages])
 
   return navigation
 }

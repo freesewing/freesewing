@@ -58,6 +58,7 @@ const feeds = {
     json('nl', 'showcase', 'JSON feed van FreeSewing.org voorbeelden'),
     rss('nl', 'showcase', 'RSS feed van FreeSewing.org voorbeelden'),
   ],
+  uk: [],
 }
 
 export const Feeds = () => {
