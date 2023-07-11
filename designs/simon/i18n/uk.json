@@ -1,0 +1,187 @@
+{
+  "t": "Simon shirt",
+  "d": "Simon is a highly adaptable shirt pattern for people without breasts.",
+  "p": {
+    "back": "Back",
+    "buttonholePlacket": "Buttonhole placket",
+    "buttonPlacket": "Button placket",
+    "collar": "Collar",
+    "collarStand": "Collar stand",
+    "cuff": "Cuff",
+    "front": "Front",
+    "frontLeft": "Front left",
+    "frontRight": "Front right",
+    "sleevePlacketOverlap": "Sleeve placket overlap",
+    "sleevePlacketUnderlap": "Sleeve placket underlap",
+    "sleeve": "Sleeve",
+    "yoke": "Yoke"
+  },
+  "s": {
+    "buttonholePlacket": "Buttonhole placket",
+    "buttonPlacket": "Button placket",
+    "collarAndUndercollar": "Collar and Undercollar",
+    "collarStand": "Collar stand",
+    "cutUndercollarSlightlySmaller": "Cut undercollar slightly smaller",
+    "frontLeft": "Front left",
+    "frontRight": "Front right",
+    "sideOfTheCollarStand": "Side of the collar stand",
+    "sleevePlacketOverlap": "Sleeve placket overlap",
+    "sleevePlacketUnderlap": "Sleeve placket underlap",
+    "yoke": "Yoke",
+    "matchHere": "Match fabric along this line"
+  },
+  "o": {
+    "backDarts": {
+      "t": "Back darts",
+      "d": "Whether or not to include back darts"
+    },
+    "backDartShaping": {
+      "t": "Back dart shaping",
+      "d": "The amount of shaping that is done by the back darts"
+    },
+    "barrelCuffNarrowButton": {
+      "t": "Cuff narrow button",
+      "d": "Whether to include a button to tie the cuffs more narrow. This option is only relevant for barrel cuffs."
+    },
+    "boxPleat": {
+      "t": "Box pleat",
+      "d": "Whether to include a box pleat at the back or not"
+    },
+    "boxPleatWidth": {
+      "t": "Box pleat width",
+      "d": "The total widh of the box pleat"
+    },
+    "boxPleatFold": {
+      "t": "Box pleat fold",
+      "d": "The amount by with the box pleat folds inwards"
+    },
+    "buttonPlacketStyle": {
+      "t": "Button placket style",
+      "d": "Style of the button placket."
+    },
+    "buttonPlacketWidth": {
+      "t": "Button placket width",
+      "d": "Width of the button placket."
+    },
+    "buttonFreeLength": {
+      "t": "Button free length",
+      "d": "How much of the bottom of the front closure to keep button-free."
+    },
+    "buttonholePlacketFoldWidth": {
+      "t": "Buttonhole placket fold width",
+      "d": "Width of the buttonhole placket fold."
+    },
+    "buttonholePlacketStyle": {
+      "t": "Buttonhole placket style",
+      "d": "Style of the buttonhole placket."
+    },
+    "buttonholePlacketWidth": {
+      "t": "Buttonhole placket width",
+      "d": "Width of the buttonhole placket."
+    },
+    "buttons": {
+      "t": "Number of buttons",
+      "d": "The number of buttons on the front closure."
+    },
+    "collarAngle": {
+      "t": "Collar angle",
+      "d": "The angle of the collar tips."
+    },
+    "collarBend": {
+      "t": "Collar bend",
+      "d": "The bend of the collar."
+    },
+    "collarFlare": {
+      "t": "Collar flare",
+      "d": "The flare of the collar tips."
+    },
+    "collarGap": {
+      "t": "Collar gap",
+      "d": "The gap between the the two collar ends."
+    },
+    "collarRoll": {
+      "t": "Collar roll",
+      "d": "The amount by which the top collar is larger than the undercollar."
+    },
+    "collarStandBend": {
+      "t": "Collar stand bend",
+      "d": "The bend of the collar stand."
+    },
+    "collarStandCurve": {
+      "t": "Collar stand curve",
+      "d": "The curve of the collar stand."
+    },
+    "collarStandWidth": {
+      "t": "Collar stand width",
+      "d": "Width of the collar stand."
+    },
+    "cuffButtonRows": {
+      "t": "Cuff button rows",
+      "d": "Whether to draft a single or double row of cuff buttons. This option is only relevant for barrel cuffs."
+    },
+    "cuffDrape": {
+      "t": "Cuff drape",
+      "d": "The amount by which the sleeve is wider than the cuff where the are joined."
+    },
+    "cuffLength": {
+      "t": "Cuff length",
+      "d": "The length of the cuffs."
+    },
+    "cuffStyle": {
+      "t": "Cuff style",
+      "d": "The style of the cuffs."
+    },
+    "extraTopButton": {
+      "t": "Extra top button",
+      "d": "Whether or not to include an extra top button on the front closure."
+    },
+    "ffsa": {
+      "t": "Flat-felled seam allowace",
+      "d": "The amount of seam allowance on flet-felled seams as a proportion of the regular seam allowance"
+    },
+    "hemCurve": {
+      "t": "Hem curve",
+      "d": "The height of the curve on a curved hem."
+    },
+    "hemStyle": {
+      "t": "Hem style",
+      "d": "The style of the shirt hem."
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at the hips."
+    },
+    "roundBack": {
+      "t": "Round back",
+      "d": "To fit a round(er) back, this adds length to the center back (at the yoke) that tapers of towards the sides."
+    },
+    "seperateButtonholePlacket": {
+      "t": "Seperate buttonhole placket",
+      "d": "Draft a separate buttonhole placket."
+    },
+    "seperateButtonPlacket": {
+      "t": "Seperate button placket",
+      "d": "Draft a separate button placket"
+    },
+    "sleevePlacketLength": {
+      "t": "Sleeve placket length",
+      "d": "The length of the sleeve placket."
+    },
+    "sleevePlacketWidth": {
+      "t": "Sleeve placket width",
+      "d": "The width of the sleeve placket."
+    },
+    "splitYoke": {
+      "t": "Split yoke",
+      "d": "Whether to draft a split or regular yoke."
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "The amount of ease at your (natural) waist."
+    },
+    "yokeHeight": {
+      "t": "Yoke height",
+      "d": "Controls the height of the yoke"
+    }
+  }
+}

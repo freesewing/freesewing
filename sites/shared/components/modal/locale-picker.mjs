@@ -10,6 +10,7 @@ import es from 'site/public/locales/es/locales.json'
 import de from 'site/public/locales/de/locales.json'
 import fr from 'site/public/locales/fr/locales.json'
 import nl from 'site/public/locales/nl/locales.json'
+import uk from 'site/public/locales/uk/locales.json'
 
 export const ns = ['locales']
 
@@ -19,6 +20,7 @@ const translations = {
   nl: nl.nl,
   de: de.de,
   fr: fr.fr,
+  uk: uk.uk,
 }
 
 export const ModalLocalePicker = ({ app, iconOnly = false, bottom = false }) => {

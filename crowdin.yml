@@ -3,10 +3,16 @@ commit_message: "[ci skip]"
 pull_request_assignees:
   - joostdecock
 files:
+  - source: /markdown/org/*/en.md
+    translation: /markdown/org/*/%two_letters_code%.md
   - source: /markdown/org/**/en.md
     translation: /markdown/org/**/%two_letters_code%.md
+  - source: /sites/org/pages/*/*.en.yaml
+    translation: /sites/org/pages/*/*.%two_letters_code%.yaml
   - source: /sites/org/pages/**/*.en.yaml
     translation: /sites/org/pages/**/*.%two_letters_code%.yaml
+  - source: /sites/org/components/*/*.en.yaml
+    translation: /sites/org/components/*/*.%two_letters_code%.yaml
   - source: /sites/org/components/**/*.en.yaml
     translation: /sites/org/components/**/*.%two_letters_code%.yaml
   - source: /sites/shared/components/**/*.en.yaml
