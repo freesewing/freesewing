@@ -1,5 +1,5 @@
----
-title: "Culotte cycliste de Cornélius : Mesures nécessaires"
----
+- - -
+titre : "Culotte cycliste de Cornélius : Mesures nécessaires"
+- - -
 
 <PatternMeasurements pattern='cornelius' />
