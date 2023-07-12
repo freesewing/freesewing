@@ -1,6 +1,6 @@
----
+- - -
 title: "Across back factor"
----
+- - -
 
 ![La opción a través de la espalda en Brian](./acrossbackfactor.svg)
 
