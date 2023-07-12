@@ -1,6 +1,6 @@
----
+- - -
 title: "Handle width"
----
+- - -
 
 Controla el ancho del asa.
 
