@@ -1,5 +1,5 @@
----
-title: "Corset Cathrin : Options de conception"
----
+- - -
+titre : "Corset Cathrin : Options de conception"
+- - -
 
 <PatternOptions pattern='cathrin' />
