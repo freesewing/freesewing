@@ -1,6 +1,6 @@
----
-title: "Aisance d'épaule"
----
+- - -
+titre : "Aisance d'épaule"
+- - -
 
 ![Aisance des épaules](./shoulderease.svg)
 
