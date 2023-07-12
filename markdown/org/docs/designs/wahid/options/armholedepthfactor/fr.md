@@ -1,6 +1,6 @@
----
-title: "Profondeur d'emmanchure"
----
+- - -
+titre : "Profondeur d'emmanchure"
+- - -
 
 Cette option contrôle la profondeur de l'emmanchure.
 
