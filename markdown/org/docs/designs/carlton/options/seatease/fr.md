@@ -1,6 +1,6 @@
----
-title: "Facilité d'assise"
----
+- - -
+titre : "Facilité d'assise"
+- - -
 
 ![Aisance d'assise](./seatease.svg)
 
