@@ -1,6 +1,6 @@
----
+- - -
 title: "Inner pocket width"
----
+- - -
 
 Steuert die Breite der inneren Tasche.
 
