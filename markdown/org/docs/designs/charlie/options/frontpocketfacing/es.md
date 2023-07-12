@@ -1,6 +1,6 @@
----
+- - -
 title: "Front pocket facing"
----
+- - -
 
 Controla el límite entre la cara delantera del bolsillo y la bolsa de bolsillo.
 
