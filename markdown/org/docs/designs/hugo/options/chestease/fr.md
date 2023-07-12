@@ -1,6 +1,6 @@
----
-title: "aisance thoracique"
----
+- - -
+titre : "aisance thoracique"
+- - -
 
 Cette option contrôle l'aisance au niveau de la poitrine.
 
