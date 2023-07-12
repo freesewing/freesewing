@@ -1,6 +1,6 @@
----
+- - -
 title: "Back neck cutout"
----
+- - -
 
 ![Cuello trasero recortado](./backneckcutout.svg)
 
