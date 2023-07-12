@@ -1,6 +1,6 @@
----
+- - -
 title: "Horizontal button spacing"
----
+- - -
 
 Bepaalt hoe ver de dubbele rijen van de frontknoppen uit elkaar liggen.
 
