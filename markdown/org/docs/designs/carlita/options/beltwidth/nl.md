@@ -1,6 +1,6 @@
----
+- - -
 title: "Belt width"
----
+- - -
 
 Bepaalt de breedte van de riem aan de achterkant.
 
