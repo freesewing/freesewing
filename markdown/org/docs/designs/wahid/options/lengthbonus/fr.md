@@ -1,6 +1,6 @@
----
-title: "Longueur supplémentaire"
----
+- - -
+titre : "Longueur supplémentaire"
+- - -
 
 ![Supplément de longueur](lengthbonus.svg)
 
