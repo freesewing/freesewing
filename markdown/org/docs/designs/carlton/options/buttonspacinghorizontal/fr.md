@@ -1,6 +1,6 @@
----
+- - -
 title: "Horizontal button spacing"
----
+- - -
 
 Contrôle la distance entre les deux rangées de boutons avant.
 
