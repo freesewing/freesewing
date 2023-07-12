@@ -1,5 +1,5 @@
----
-title: "Bloc du corps de Bella"
----
+- - -
+titre: "Bloc du corps de Bella"
+- - -
 
 <PatternDocs pattern='bella' />
