@@ -1,6 +1,6 @@
----
+- - -
 title: "Inner pocket welt height"
----
+- - -
 
 Contrôle la taille des joints sur la poche intérieure.
 
