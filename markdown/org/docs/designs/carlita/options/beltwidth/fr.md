@@ -1,6 +1,6 @@
----
-title: "Largeur de la ceinture"
----
+- - -
+titre: "Largeur de la ceinture"
+- - -
 
 Contrôle la largeur de la ceinture à l'arrière.
 
