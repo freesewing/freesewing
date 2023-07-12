@@ -1,6 +1,6 @@
----
-title: "Hauteur de la tête de manche"
----
+- - -
+titre : "Hauteur de la tête de manche"
+- - -
 
 Ce facteur contrôle la hauteur de la tête de manche.
 
