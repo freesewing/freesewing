@@ -1,5 +1,5 @@
----
-title: "Chemise Simone"
----
+- - -
+titre : "Chemise Simone"
+- - -
 
 <PatternDocs pattern='simone' />
