@@ -1,6 +1,6 @@
----
-title: "Pince de carrure avant"
----
+- - -
+title:"Pince de carrure avant"
+- - -
 
 La quantité à retirer de la pince à l'avant de l'emmanchure.
 
