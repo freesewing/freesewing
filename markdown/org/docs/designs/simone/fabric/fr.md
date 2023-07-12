@@ -1,6 +1,6 @@
----
-title: "Chemise Simone : Options de tissu"
----
+- - -
+titre : "Chemise Simone : Options de tissu"
+- - -
 
 <Note>
 
