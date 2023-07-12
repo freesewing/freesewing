@@ -1,6 +1,6 @@
----
+- - -
 title: "Across back factor"
----
+- - -
 
 Controla tu anchura trasera como un factor de tu hombro a la medición del hombro
 
