@@ -1,6 +1,6 @@
----
+- - -
 title: "Bequemlichkeitszugabe Bündchen"
----
+- - -
 
 Die Menge an Leichtigkeit am Manschetten/Handgelenk.
 
