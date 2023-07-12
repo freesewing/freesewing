@@ -1,6 +1,6 @@
----
-title: "Surlongueur de longueur de manche"
----
+- - -
+titre : "Surlongueur de longueur de manche"
+- - -
 
 ![L'option bonus longueur de manche pour Brian](./sleevelengthbonus.svg)
 
