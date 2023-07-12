@@ -1,6 +1,6 @@
----
+- - -
 title: "Shoulder ease"
----
+- - -
 
 ![Die Schulterleicht-Option auf Diana](./shoulderease.svg)
 
