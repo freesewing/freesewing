@@ -1,6 +1,6 @@
----
-title: "Courbe"
----
+- - -
+titre : "Courbe"
+- - -
 
 ![Option de courbe](./curve.svg)
 
