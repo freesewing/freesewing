@@ -1,6 +1,6 @@
----
-title: "Gilet Wahid : Instructions de coupe"
----
+- - -
+titre: "Gilet Wahid : Instructions de coupe"
+- - -
 
 ### Étape 1 : Thermocoller l'entoilage
 
