@@ -1,6 +1,6 @@
----
+- - -
 title: "Lapel reduction"
----
+- - -
 
 Bepaalt hoeveel de revers punt naar binnen gaat.
 
