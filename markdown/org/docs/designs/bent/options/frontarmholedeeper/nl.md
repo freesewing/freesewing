@@ -1,6 +1,6 @@
----
+- - -
 title: "Front armhole extra cutout"
----
+- - -
 
 Hoeveel het armsgat dieper uitgesneden aan het voorpand, dan de achterkant.
 
