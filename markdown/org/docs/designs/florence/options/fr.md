@@ -1,5 +1,5 @@
----
-title: "Masque Florence : Options de conception"
----
+- - -
+titre : "Masque Florence : Options de conception"
+- - -
 
 <PatternOptions pattern='florence' />
