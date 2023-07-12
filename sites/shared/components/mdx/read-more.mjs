@@ -4,17 +4,6 @@ import Link from 'next/link'
 import { useContext } from 'react'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
 
-const baseClasses =
-  'text-base-content no-underline inline-block hover:text-secondary hover:underline'
-const classes = [
-  `text-3xl font-bold py-2 ${baseClasses} list-disc`,
-  `text-2xl font-bold py-1 ${baseClasses}`,
-  `text-xl font-medium ${baseClasses}`,
-  `text-lg font-medium ${baseClasses}`,
-]
-
-const getClasses = (level) => classes[level] || `text-normal font-regular ${baseClasses}`
-
 // Helper method to filter out the real children
 const order = (obj) => orderBy(obj, ['o', 't'], ['asc', 'asc'])
 const currentChildren = (current) =>
@@ -34,14 +23,23 @@ const getRoot = {
   },
 }
 
-export const ReadMore = ({
-  recurse = 0,
-  root = false,
-  site = 'org',
-  level = 0,
-  pretty = false,
-  ignoreControl,
-}) => {
+/*
+ * This is a recursive function, so it needs to be lean
+ */
+const RenderTree = ({ tree }) => (
+  <ul>
+    {Object.keys(tree)
+      .filter((key) => key.length > 1)
+      .map((key, i) => (
+        <li key={i}>
+          <Link href={`/${tree[key].s}`}>{tree[key].t}</Link>
+          {Object.keys(tree[key]).length > 1 && <RenderTree tree={tree[key]} />}
+        </li>
+      ))}
+  </ul>
+)
+
+export const ReadMore = ({ recurse = 0, root = false, site = 'org', level = 0, ignoreControl }) => {
   const { slug, siteNav } = useContext(NavigationContext)
 
   // Deal with recurse not being a number
@@ -55,24 +53,5 @@ export const ReadMore = ({
 
   const tree = root === false ? getRoot[site](slug, siteNav) : getRoot[site](root, siteNav)
 
-  const list = []
-  for (const page of currentChildren(tree)) {
-    if (page.t !== 'spacer')
-      list.push(
-        <li key={page.s} className="break-all">
-          <Link href={`/${page.s}`}>
-            <span className={pretty ? getClasses(level) : ''}>{page.t}</span>
-          </Link>
-          {recurse ? (
-            <ReadMore
-              root={page.s}
-              level={level + 1}
-              {...{ recurse, site, pretty, ignoreControl }}
-            />
-          ) : null}
-        </li>
-      )
-  }
-
-  return <ul>{list}</ul>
+  return <RenderTree tree={tree} />
 }

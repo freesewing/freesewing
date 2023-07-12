@@ -1,0 +1,37 @@
+{
+  "t": "Unice undies",
+  "d": "Unice is a variant of Ursula; A basic, highly-customizable underwear pattern.",
+  "p": {
+    "back": "Back",
+    "elastic": "Elastic",
+    "front": "Front",
+    "gusset": "Gusset"
+  },
+  "s": {},
+  "o": {
+    "fabricStretchX": {
+      "t": "Fabric stretch (horizontal)",
+      "d": "Adjust this for more or less stretchy fabrics"
+    },
+    "fabricStretchY": {
+      "t": "Fabric stretch (vertical)",
+      "d": "Adjust this for more or less stretchy fabrics"
+    },
+    "adjustStretch": {
+      "t": "Adjust stretch",
+      "d": "This option allows you to put in the maximum stretch that the fabric will allow in both horizontal and vertical directions; When disabled, the stretch values are used as-is"
+    },
+    "useCrossSeam": {
+      "t": "Use crossseam",
+      "d": "When enabled, the total height of the pattern pieces combined will match the cross seam length minus the front and back rise. When disabled, the total height depends on the gusset length option."
+    },
+    "backCurve": {
+      "t": "FIXME: Back curve",
+      "d": "FIXME: Provide description"
+    },
+    "frontCurve": {
+      "t": "FIXME: Back curve",
+      "d": "FIXME: Provide description"
+    }
+  }
+}
