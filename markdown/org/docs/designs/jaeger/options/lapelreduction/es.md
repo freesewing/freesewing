@@ -1,6 +1,6 @@
----
+- - -
 title: "Lapel reduction"
----
+- - -
 
 Cuánto gira hacia adentro la punta de las solapas.
 
