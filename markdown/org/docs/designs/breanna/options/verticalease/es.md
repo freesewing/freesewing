@@ -1,6 +1,6 @@
----
+- - -
 title: "Vertical ease"
----
+- - -
 
 La cantidad de facilidad para distribuir a lo largo de la ropa.
 
