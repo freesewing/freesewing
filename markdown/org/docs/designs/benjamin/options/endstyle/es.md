@@ -1,6 +1,6 @@
----
+- - -
 title: "End style"
----
+- - -
 
 ![Tres formas de punta diferentes](endstyle.svg)
 
