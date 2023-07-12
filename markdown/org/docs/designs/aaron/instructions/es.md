@@ -1,6 +1,6 @@
----
+- - -
 title: "Aaron A-Shirt: Sewing Instructions"
----
+- - -
 
 ## Paso 1: Cerrar costuras
 
