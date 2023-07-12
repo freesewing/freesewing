@@ -1,6 +1,6 @@
----
+- - -
 title: "Shoulder slope reduction"
----
+- - -
 
 Vermindert de schouderhelling om extra ruimte te creëren voor schoudervulling.
 
