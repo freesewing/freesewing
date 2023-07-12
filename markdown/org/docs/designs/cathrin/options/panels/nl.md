@@ -1,6 +1,6 @@
----
+- - -
 title: "Number of panels"
----
+- - -
 
 ![De opties voor panelen bij Cathrin](./panels.svg)
 
