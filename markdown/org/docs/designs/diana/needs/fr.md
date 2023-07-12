@@ -1,6 +1,6 @@
----
-title: "Haut drapé Diana : Ce qu'il faut"
----
+- - -
+titre : "Haut drapé Diana : Ce qu'il faut"
+- - -
 
 Pour faire de Diana, vous aurez besoin des éléments suivants :
 
