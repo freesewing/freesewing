@@ -1,6 +1,6 @@
----
-title: "Écartement du Col"
----
+- - -
+titre : "Écartement du Col"
+- - -
 
 Contrôle la distance entre les points du col.
 
