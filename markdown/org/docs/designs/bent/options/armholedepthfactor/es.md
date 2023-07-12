@@ -1,6 +1,6 @@
----
+- - -
 title: "Armhole depth factor"
----
+- - -
 
 Controla la profundidad del agujero de armadura, que a su vez influye en el ancho de manga.
 
