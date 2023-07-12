@@ -1,6 +1,6 @@
----
+- - -
 title: "Shoulder slope reduction"
----
+- - -
 
 Dit patroon past zich aan aan de schouder af door rekening te houden met de hellingsmeting van de schouder.
 
