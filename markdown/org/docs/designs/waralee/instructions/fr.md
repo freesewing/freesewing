@@ -1,6 +1,6 @@
----
-title: "Pantalon portefeuille Waralee : Instructions de couture"
----
+- - -
+titre: "Pantalon portefeuille Waralee : Instructions de couture"
+- - -
 
 <Warning>
 
