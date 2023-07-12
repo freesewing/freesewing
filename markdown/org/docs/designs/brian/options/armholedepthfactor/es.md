@@ -1,6 +1,6 @@
----
+- - -
 title: "Armhole depth factor"
----
+- - -
 
 ![El factor de profundidad del agujero en Brian](./armholedepthfactor.svg)
 
