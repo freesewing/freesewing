@@ -1,6 +1,6 @@
----
-title: "Aisance pour les hanches"
----
+- - -
+titre : "Aisance pour les hanches"
+- - -
 
 ![Aisance des hanches](hipsease.svg)
 
