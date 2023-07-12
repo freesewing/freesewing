@@ -1,6 +1,6 @@
----
+- - -
 title: "Waistband overlap"
----
+- - -
 
 ![Chevauchement de la ceinture](waistbandoverlap.svg)
 
