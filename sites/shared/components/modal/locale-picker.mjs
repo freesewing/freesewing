@@ -23,12 +23,12 @@ const translations = {
   uk: uk.uk,
 }
 
-export const ModalLocalePicker = ({ app, iconOnly = false, bottom = false }) => {
+export const ModalLocalePicker = () => {
   const { t } = useTranslation(ns)
   const router = useRouter()
 
   return (
-    <ModalWrapper app={app}>
+    <ModalWrapper>
       <div className="grid gap-2 p-4 grid-cols-1 max-w-lg w-full">
         <h2>{t('locales:chooseYourLanguage')}</h2>
         {router.locales.map((locale) => (
