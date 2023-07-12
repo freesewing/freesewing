@@ -1,6 +1,6 @@
----
+- - -
 title: "Ribbing height"
----
+- - -
 
 La hauteur de la bande à l'ourlet du bas et aux poignets.
 
