@@ -1,6 +1,6 @@
----
+- - -
 title: "Front scye dart"
----
+- - -
 
 Die Menge, die in einem Abnäher an der Vorderseite des Armlochs entnommen werden muss.
 
