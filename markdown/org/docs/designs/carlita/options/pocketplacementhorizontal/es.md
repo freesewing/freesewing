@@ -1,6 +1,6 @@
----
+- - -
 title: "Horizontal pocket placement"
----
+- - -
 
 Controla la ubicación de los pockets horizontalmente (más izquierda o derecha).
 
