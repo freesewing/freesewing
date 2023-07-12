@@ -1,6 +1,6 @@
----
-title: "Longueur de la couture d'épaule"
----
+- - -
+titre : "Longueur de la couture d'épaule"
+- - -
 
 ![L'option de longueur de la couture d'épaule sur Diana](./shoulderseamlength.svg)
 
