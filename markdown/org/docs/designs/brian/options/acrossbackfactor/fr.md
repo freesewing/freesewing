@@ -1,6 +1,6 @@
----
-title: "Facteur de largeur de dos"
----
+- - -
+title:"Facteur de largeur de dos"
+- - -
 
 ![L'option de face arrière sur Brian](./acrossbackfactor.svg)
 
