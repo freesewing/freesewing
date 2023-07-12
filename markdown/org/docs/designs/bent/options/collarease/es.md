@@ -1,6 +1,6 @@
----
+- - -
 title: "Collar ease"
----
+- - -
 
 La cantidad de facilidad en el cuello/cuello.
 
