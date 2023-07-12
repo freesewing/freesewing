@@ -1,6 +1,6 @@
----
-title: "Bloc corporel de Bent : Instructions de couture"
----
+- - -
+titre: "Bloc corporel de Bent : Instructions de couture"
+- - -
 
 <Note>
 
