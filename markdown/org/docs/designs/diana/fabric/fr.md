@@ -1,6 +1,6 @@
----
-title: "Diana drapée top : Options de tissu"
----
+- - -
+titre : "Diana drapée top : Options de tissu"
+- - -
 
 Ce haut sera mieux dans l'un de ces deux scénarios :
 
