@@ -1,6 +1,6 @@
----
+- - -
 title: "Front drop"
----
+- - -
 
 ![La opción de gota frontal en la Catedral](./frontdrop.svg)
 
