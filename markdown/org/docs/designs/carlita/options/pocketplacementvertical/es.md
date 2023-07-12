@@ -1,6 +1,6 @@
----
+- - -
 title: "Vertical pocket placement"
----
+- - -
 
 Controla la ubicación de los pockets verticalmente (superior o inferior).
 
