@@ -1,6 +1,6 @@
----
-title: "Boxer Bruce : Ce dont tu as besoin"
----
+- - -
+titre: "Boxer Bruce : Ce dont tu as besoin"
+- - -
 
 Pour réaliser Bruce, vous aurez besoin de :
 
