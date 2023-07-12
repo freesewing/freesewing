@@ -1,6 +1,6 @@
----
+- - -
 title: "Front overlap"
----
+- - -
 
 Bepaalt hoeveel de rechter- en voorkant van het kledingstuk overlappen aan de middenvoor.
 
