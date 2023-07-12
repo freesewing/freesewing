@@ -1,6 +1,6 @@
----
-title: "Corset Cathrin : Instructions de couture"
----
+- - -
+titre : "Corset Cathrin : Instructions de couture"
+- - -
 
 <Note>
 
