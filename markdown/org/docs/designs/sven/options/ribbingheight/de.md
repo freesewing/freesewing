@@ -1,6 +1,6 @@
----
+- - -
 title: "Bündchen Breite (Höhe)"
----
+- - -
 
 ![Bündchen-Höhe](ribbingheight.svg)
 
