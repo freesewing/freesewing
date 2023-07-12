@@ -1,6 +1,6 @@
----
+- - -
 title: "Back opening"
----
+- - -
 
 ![La opción de volver a abrir en la Catedral](./backopening.svg)
 
