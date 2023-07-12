@@ -1,6 +1,6 @@
----
+- - -
 title: "Bust dart angle"
----
+- - -
 
 Controla el ángulo por el cual el (lado) dardos de polvo tiene pendiente descendente.
 
