@@ -1,6 +1,6 @@
----
+- - -
 title: "Collar ease"
----
+- - -
 
 ![Wie viel Zugabe verwendest du für deinen Kragen?](collarease.svg)
 
