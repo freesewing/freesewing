@@ -1,6 +1,6 @@
----
+- - -
 title: "Shoulder slope reduction"
----
+- - -
 
 Reduziert den Schulterhang, um zusätzlichen Platz für Schulterpolsterung zu schaffen.
 
