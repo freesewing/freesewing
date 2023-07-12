@@ -1,6 +1,6 @@
----
+- - -
 title: "Lapel reduction"
----
+- - -
 
 Controla cuánto va la punta de la lapel hacia adentro.
 
