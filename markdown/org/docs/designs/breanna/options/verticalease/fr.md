@@ -1,6 +1,6 @@
----
+- - -
 title: "Vertical ease"
----
+- - -
 
 La quantité d'aisance à répartir sur la longueur du vêtement.
 
