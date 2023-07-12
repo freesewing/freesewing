@@ -1,6 +1,6 @@
----
+- - -
 title: "Inner pocket width"
----
+- - -
 
 De breedte van de binnenzakken.
 
