@@ -1,6 +1,6 @@
----
+- - -
 title: "Seat ease"
----
+- - -
 
 ![Overwijdte zitvlak](./seatease.svg)
 
