@@ -1,6 +1,6 @@
----
-title: "Pli de manche"
----
+- - -
+titre : "Pli de manche"
+- - -
 
 ![Courbe de manche](./sleevebend.svg)
 
