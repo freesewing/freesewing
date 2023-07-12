@@ -1,6 +1,6 @@
----
+- - -
 title: "Lapel reduction"
----
+- - -
 
 Combien la pointe des revers se réduit vers l'intérieur.
 
