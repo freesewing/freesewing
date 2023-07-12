@@ -1,6 +1,6 @@
----
+- - -
 title: "Length bonus"
----
+- - -
 
 ![La opción de bonificación de longitud en Brian](./lengthbonus.svg)
 
