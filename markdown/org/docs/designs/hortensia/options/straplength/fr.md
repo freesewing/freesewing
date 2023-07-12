@@ -1,6 +1,6 @@
----
-title: "Longueur de la sangle"
----
+- - -
+titre : "Longueur de la sangle"
+- - -
 
 Contrôle la longueur des anses.
 
