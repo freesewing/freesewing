@@ -1,6 +1,6 @@
----
-title: "Aisance du col"
----
+- - -
+titre: "Aisance du col"
+- - -
 
 L'aisance au niveau du cou/col.
 
