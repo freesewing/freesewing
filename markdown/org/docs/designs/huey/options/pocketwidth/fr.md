@@ -1,6 +1,6 @@
----
+- - -
 title: "Largeur de poche"
----
+- - -
 
 ![Largeur de poche](./pocketwidth.svg)
 
