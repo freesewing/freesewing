@@ -1,6 +1,6 @@
----
+- - -
 title: "Jaeger jacket: What You Need"
----
+- - -
 
 Um Jaeger zu erstellen, benötigst du Folgendes:
 
