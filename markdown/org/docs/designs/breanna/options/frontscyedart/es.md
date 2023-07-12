@@ -1,6 +1,6 @@
----
+- - -
 title: "Front scye dart"
----
+- - -
 
 La cantidad a reducir en una pinza en el frente de la sisa.
 
