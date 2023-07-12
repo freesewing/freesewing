@@ -1,6 +1,6 @@
----
+- - -
 title: "Leg length bonus"
----
+- - -
 
 ![La opción de bonus de pierna en Bruce](./legbonus.svg)
 
