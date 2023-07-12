@@ -1,6 +1,6 @@
----
+- - -
 title: "Chest pocket width"
----
+- - -
 
 Bepaalt de breedte van de borstzak.
 
