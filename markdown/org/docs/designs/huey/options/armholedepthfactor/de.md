@@ -1,6 +1,6 @@
----
+- - -
 title: "Armhole depth factor"
----
+- - -
 
 Diese Option steuert die Tiefe des Armlochs.
 
