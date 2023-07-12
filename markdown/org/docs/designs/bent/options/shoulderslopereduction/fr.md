@@ -1,6 +1,6 @@
----
-title: "Réduction de la pente d'épaule"
----
+- - -
+titre : "Réduction de la pente d'épaule"
+- - -
 
 Ce patron s'adapte à la pente d'épaule en tenant compte de la mesure de la pente des épaules.
 
