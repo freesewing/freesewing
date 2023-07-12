@@ -1,6 +1,6 @@
----
-title: "aisance thoracique"
----
+- - -
+titre : "aisance thoracique"
+- - -
 
 ![L'aisance poitrine pour Brian](./chestease.svg)
 
