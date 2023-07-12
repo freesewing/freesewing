@@ -1,6 +1,6 @@
----
+- - -
 title: "Horizontal button spacing"
----
+- - -
 
 Controla hasta qué punto se separan las filas dobles de los botones frontales.
 
