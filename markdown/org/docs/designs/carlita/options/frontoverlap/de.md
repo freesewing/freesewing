@@ -1,6 +1,6 @@
----
+- - -
 title: "Front overlap"
----
+- - -
 
 Steuert wie sehr sich die rechte und linke Vorderseite des Kleidungsstückes an der Mitte überlappt.
 
