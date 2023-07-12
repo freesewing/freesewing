@@ -1,6 +1,6 @@
----
+- - -
 title: "Inner pocket welt height"
----
+- - -
 
 Bepaalt de afmeting van de paspels aan de binnenzak.
 
