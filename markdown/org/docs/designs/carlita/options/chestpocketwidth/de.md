@@ -1,6 +1,6 @@
----
+- - -
 title: "Chest pocket width"
----
+- - -
 
 Steuert die Breite der Brusttasche.
 
