@@ -1,6 +1,6 @@
----
+- - -
 title: "Front pocket radius"
----
+- - -
 
 Der Radius, um den die Fronttasche gerundet ist.
 
