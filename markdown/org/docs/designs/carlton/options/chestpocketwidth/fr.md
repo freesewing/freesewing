@@ -1,6 +1,6 @@
----
+- - -
 title: "Chest pocket width"
----
+- - -
 
 Contrôle la largeur de la poche de la poitrine.
 
