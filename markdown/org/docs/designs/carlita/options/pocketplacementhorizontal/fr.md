@@ -1,6 +1,6 @@
----
-title: "Placement horizontal de la poche"
----
+- - -
+titre: "Placement horizontal de la poche"
+- - -
 
 Contrôle l'emplacement des poches horizontalement (plus à gauche ou à droite).
 
