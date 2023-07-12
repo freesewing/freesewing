@@ -1,14 +1,8 @@
 import get from 'lodash.get'
-import orderBy from 'lodash.orderby'
 import Link from 'next/link'
 import { useContext } from 'react'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
 import { useNavigation } from 'site/hooks/use-navigation.mjs'
-
-// Helper method to filter out the real children
-const order = (obj) => orderBy(obj, ['o', 't'], ['asc', 'asc'])
-const currentChildren = (current) =>
-  Object.values(order(current)).filter((entry) => typeof entry === 'object')
 
 const getRoot = {
   dev: (root, nav) => {
@@ -55,5 +49,5 @@ export const ReadMore = ({ recurse = 0, root = false, site = 'org', level = 0, i
 
   const tree = root === false ? getRoot[site](slug, siteNav) : getRoot[site](root, siteNav)
 
-  return <RenderTree tree={tree} />
+  return <RenderTree {...{ tree, recurse }} />
 }
