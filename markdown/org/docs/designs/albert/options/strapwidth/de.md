@@ -1,6 +1,6 @@
----
+- - -
 title: "Strap width"
----
+- - -
 
 Steuert die Breite der Riemen der Schürze.
 
