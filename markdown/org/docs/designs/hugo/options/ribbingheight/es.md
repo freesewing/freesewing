@@ -1,6 +1,6 @@
----
+- - -
 title: "Ribbing height"
----
+- - -
 
 La altura de la costilla en la hem y los cuffs.
 
