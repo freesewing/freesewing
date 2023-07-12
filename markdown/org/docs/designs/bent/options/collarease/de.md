@@ -1,6 +1,6 @@
----
+- - -
 title: "Collar ease"
----
+- - -
 
 Die Menge an Leichtigkeit an Ihrem Hals/Kragen.
 
