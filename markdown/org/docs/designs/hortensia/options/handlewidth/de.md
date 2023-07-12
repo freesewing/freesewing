@@ -1,6 +1,6 @@
----
+- - -
 title: "Handle width"
----
+- - -
 
 Steuert die Breite des Griffes.
 
