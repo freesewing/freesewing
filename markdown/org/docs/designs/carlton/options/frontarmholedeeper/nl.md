@@ -1,6 +1,6 @@
----
+- - -
 title: "Front armhole extra cutout"
----
+- - -
 
 Bepaalt hoeveel het armsgat vooraan dieper in het kledingstuk wordt gesneden, dan de achterkant.
 
