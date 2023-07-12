@@ -1,6 +1,6 @@
----
+- - -
 title: "Längenzugabe Ärmel"
----
+- - -
 
 Der Betrag, um den Ärmel über die Länge des Ärmels im Basisblock hinaus zu verlängern.
 
