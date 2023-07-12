@@ -1,6 +1,6 @@
----
-title: "Facilité d'assise"
----
+- - -
+titre : "Facilité d'assise"
+- - -
 
 Contrôle la quantité d'aisance à votre siège/bum.
 
