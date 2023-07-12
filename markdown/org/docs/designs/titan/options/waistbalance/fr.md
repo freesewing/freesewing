@@ -1,6 +1,6 @@
----
+- - -
 title: "Waist balance"
----
+- - -
 
 Contrôle la répartition du tissu entre les parties avant et arrière à la taille.
 
