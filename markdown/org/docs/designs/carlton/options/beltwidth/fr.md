@@ -1,6 +1,6 @@
----
+- - -
 title: "Belt width"
----
+- - -
 
 Contrôle la largeur de la ceinture à l'arrière.
 
