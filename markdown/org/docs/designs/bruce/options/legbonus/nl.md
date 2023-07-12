@@ -1,6 +1,6 @@
----
+- - -
 title: "Leg length bonus"
----
+- - -
 
 ![De optie voor bonus beenlengte bij Bruce](./legbonus.svg)
 
