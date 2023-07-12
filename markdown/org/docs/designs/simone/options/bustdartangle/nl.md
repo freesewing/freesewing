@@ -1,6 +1,6 @@
----
+- - -
 title: "Bust dart angle"
----
+- - -
 
 Bepaalt de hoek waarin de busteneep vanuit de zijnaad naar beneden wijst.
 
