@@ -1,6 +1,6 @@
----
+- - -
 title: "Theo trousers: Sewing Instructions"
----
+- - -
 
 <Note>
 
