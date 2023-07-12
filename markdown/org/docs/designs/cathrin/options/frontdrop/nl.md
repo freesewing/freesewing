@@ -1,6 +1,6 @@
----
+- - -
 title: "Front drop"
----
+- - -
 
 ![De optie voor verlaging vooraan bij Cathrin](./frontdrop.svg)
 
