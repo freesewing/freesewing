@@ -1,6 +1,6 @@
----
+- - -
 title: "Vorm armsgat achter"
----
+- - -
 
 ![De vorm van het armsgat op de rug van Aaron](./backlinebend.svg)
 
