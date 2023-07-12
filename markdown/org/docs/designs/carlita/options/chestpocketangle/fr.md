@@ -1,6 +1,6 @@
----
-title: "Angle de la poche thoracique"
----
+- - -
+titre : "Angle de la poche thoracique"
+- - -
 
 Contrôle la taille de la poitrine de la poitrine.
 
