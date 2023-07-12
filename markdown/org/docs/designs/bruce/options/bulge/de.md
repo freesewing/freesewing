@@ -1,6 +1,6 @@
----
+- - -
 title: "Bulge"
----
+- - -
 
 ![Die Wulge-Option auf Bruce](./bulge.svg)
 
