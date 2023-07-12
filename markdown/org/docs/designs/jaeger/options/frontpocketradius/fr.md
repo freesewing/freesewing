@@ -1,6 +1,6 @@
----
+- - -
 title: "Front pocket radius"
----
+- - -
 
 Le rayon par lequel la poche avant est arrondie.
 
