@@ -1,6 +1,6 @@
----
+- - -
 title: "Horizontal pocket placement"
----
+- - -
 
 Steuert die Position der Taschen horizontal (mehr links oder rechts).
 
