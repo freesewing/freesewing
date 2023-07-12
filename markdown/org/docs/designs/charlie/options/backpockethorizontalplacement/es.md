@@ -1,6 +1,6 @@
----
+- - -
 title: "Back pocket horizontal placement"
----
+- - -
 
 Controla la colocación horizontal de los bolsillos traseros.
 
