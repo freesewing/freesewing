@@ -1,6 +1,6 @@
----
+- - -
 title: "Across back factor"
----
+- - -
 
 Steuert die Rückenbreite als Faktor der Schultermessung
 
