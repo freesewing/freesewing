@@ -1,6 +1,6 @@
----
-title: "Facteur de profondeur d'emmanchure"
----
+- - -
+titre : "Facteur de profondeur d'emmanchure"
+- - -
 
 ![Hauteur de l'emmanchure](./armholedepthfactor.svg)
 
