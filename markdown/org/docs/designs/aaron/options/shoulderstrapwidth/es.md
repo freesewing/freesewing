@@ -1,6 +1,6 @@
----
+- - -
 title: "Shoulderstrap width"
----
+- - -
 
 ![La opción de ancho de la correa de hombro en Aaron](./shoulderstrapwidth.svg)
 
