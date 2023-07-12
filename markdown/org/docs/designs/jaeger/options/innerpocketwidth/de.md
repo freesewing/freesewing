@@ -1,6 +1,6 @@
----
+- - -
 title: "Inner pocket width"
----
+- - -
 
 Die Breite der Innentasche.
 
