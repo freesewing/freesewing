@@ -1,6 +1,6 @@
----
+- - -
 title: "Front pocket radius"
----
+- - -
 
 El radio por el cual se redondea el bolsillo delantero.
 
