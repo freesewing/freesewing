@@ -1,6 +1,6 @@
----
+- - -
 title: "Front rise"
----
+- - -
 
 ![De optie voor hoogte vooraan bij Cathrin](./frontrise.svg)
 
