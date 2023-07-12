@@ -1,6 +1,6 @@
----
+- - -
 title: "Seat ease"
----
+- - -
 
 ![Holgura de asiento](./seatease.svg)
 
