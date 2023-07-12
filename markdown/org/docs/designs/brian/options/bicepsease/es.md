@@ -1,6 +1,6 @@
----
+- - -
 title: "Biceps ease"
----
+- - -
 
 ![El factor de facilidad de los biceps en Brian](./bicepsease.svg)
 
