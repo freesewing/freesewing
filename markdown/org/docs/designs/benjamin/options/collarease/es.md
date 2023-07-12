@@ -1,6 +1,6 @@
----
+- - -
 title: "Collar ease"
----
+- - -
 
 ![¿Cuánta facilidad usa para su cuello?](collarease.svg)
 
