@@ -1,6 +1,6 @@
----
+- - -
 title: "Number of panels"
----
+- - -
 
 ![Die Panel-Option auf Kathrin](./panels.svg)
 
