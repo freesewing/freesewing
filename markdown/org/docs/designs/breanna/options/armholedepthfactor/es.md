@@ -1,6 +1,6 @@
----
+- - -
 title: "Armhole depth factor"
----
+- - -
 
 Esta opción controla la profundidad del agujero de armadura.
 
