@@ -1,6 +1,6 @@
----
+- - -
 title: "Number of panels"
----
+- - -
 
 ![Opción de paneles en Catrin](./panels.svg)
 
