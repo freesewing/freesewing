@@ -1,6 +1,6 @@
----
+- - -
 title: "Bequemlichkeitszugabe Bündchen"
----
+- - -
 
 ![Manschette Zugabe](./cuffease.svg)
 
