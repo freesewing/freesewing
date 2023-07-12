@@ -1,6 +1,6 @@
----
-title: "Manteau Carlita : Instructions de couture"
----
+- - -
+titre : "Manteau Carlita : Instructions de couture"
+- - -
 
 ### Étape 1 : Dessiner et découper les parties manquantes de la doublure et du parement
 
