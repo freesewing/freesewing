@@ -1,6 +1,6 @@
----
-title: "Réduction du tour de taille"
----
+- - -
+titre : "Réduction du tour de taille"
+- - -
 
 ![Option de réduction de la taille sur Cathrin](./waistreduction.svg)
 
