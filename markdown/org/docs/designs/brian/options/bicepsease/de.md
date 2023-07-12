@@ -1,6 +1,6 @@
----
-title: weitenzugabe/Bequemlichkeitszugabe Oberarm
----
+- - -
+weitenzugabe/Bequemlichkeitszugabe Oberarm
+- - -
 
 ![Der Beizeps-Leichtigkeitsfaktor auf Brian](./bicepsease.svg)
 
