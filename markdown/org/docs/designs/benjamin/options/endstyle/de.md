@@ -1,6 +1,6 @@
----
+- - -
 title: "End style"
----
+- - -
 
 ![Drei verschiedene Formen für die Spitze](endstyle.svg)
 
