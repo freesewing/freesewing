@@ -1,6 +1,6 @@
----
+- - -
 title: "Front pocket facing"
----
+- - -
 
 Steuert die Grenze zwischen der Fronttasche und der Taschentasche.
 
