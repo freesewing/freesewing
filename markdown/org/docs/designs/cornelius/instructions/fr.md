@@ -1,6 +1,6 @@
----
-title: "Culotte de cycliste Cornélius : Instructions de couture"
----
+- - -
+titre : "Culotte de cycliste Cornélius : Instructions de couture"
+- - -
 
 ### Étape 1 : Les poches avant
 
