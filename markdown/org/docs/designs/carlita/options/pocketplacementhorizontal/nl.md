@@ -1,6 +1,6 @@
----
+- - -
 title: "Horizontal pocket placement"
----
+- - -
 
 Bepaalt de locatie van de zakken horizontaal (meer links of rechts).
 
