@@ -1,6 +1,6 @@
----
-title: "Longueur supplémentaire"
----
+- - -
+titre : "Longueur supplémentaire"
+- - -
 
 Ajoute une longueur supplémentaire à la cravate.
 
