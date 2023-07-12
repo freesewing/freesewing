@@ -1,5 +1,5 @@
----
----
+- - -
+- - -
 
 Abonniere den [FreeSewing YouTube-Kanal](https://youtube.com/channel/UCLAyxEL72gHvuKBpa-GmCvQ), wo es ausführliche Tutorials zu unseren Schnittmustern gibt.
 
