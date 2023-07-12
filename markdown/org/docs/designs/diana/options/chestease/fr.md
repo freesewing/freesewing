@@ -1,6 +1,6 @@
----
-title: "aisance thoracique"
----
+- - -
+titre : "aisance thoracique"
+- - -
 
 ![L'option d'assouplissement de la poitrine sur Diana](./chestease.svg)
 
