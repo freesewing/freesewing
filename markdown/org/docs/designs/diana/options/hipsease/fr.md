@@ -1,6 +1,6 @@
----
-title: "Aisance pour les hanches"
----
+- - -
+titre : "Aisance pour les hanches"
+- - -
 
 ![L'option de facilité des hanches sur Diana](./hipsease.svg)
 
