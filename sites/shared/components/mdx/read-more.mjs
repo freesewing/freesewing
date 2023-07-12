@@ -21,14 +21,16 @@ const getRoot = {
 /*
  * This is a recursive function, so it needs to be lean
  */
-const RenderTree = ({ tree }) => (
+const RenderTree = ({ tree, recurse, level = 0, depth = 0 }) => (
   <ul>
     {Object.keys(tree)
       .filter((key) => key.length > 1)
       .map((key, i) => (
         <li key={i}>
           <Link href={`/${tree[key].s}`}>{tree[key].t}</Link>
-          {Object.keys(tree[key]).length > 1 && <RenderTree tree={tree[key]} />}
+          {recurse && level < depth && Object.keys(tree[key]).length > 1 && (
+            <RenderTree tree={tree[key]} level={level} depth={depth + 1} />
+          )}
         </li>
       ))}
   </ul>
@@ -49,5 +51,5 @@ export const ReadMore = ({ recurse = 0, root = false, site = 'org', level = 0, i
 
   const tree = root === false ? getRoot[site](slug, siteNav) : getRoot[site](root, siteNav)
 
-  return <RenderTree {...{ tree, recurse }} />
+  return <RenderTree {...{ tree, recurse, level }} />
 }
