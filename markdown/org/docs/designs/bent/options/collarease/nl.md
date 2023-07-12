@@ -1,6 +1,6 @@
----
+- - -
 title: "Collar ease"
----
+- - -
 
 De hoeveelheid overwijdte aan je hals/kraag.
 
