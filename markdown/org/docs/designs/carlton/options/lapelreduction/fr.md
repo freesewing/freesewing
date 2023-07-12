@@ -1,6 +1,6 @@
----
+- - -
 title: "Lapel reduction"
----
+- - -
 
 Contrôle combien la pointe de la patte va à l'intérieur.
 
