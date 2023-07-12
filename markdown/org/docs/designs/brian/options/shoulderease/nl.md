@@ -1,6 +1,6 @@
----
+- - -
 title: "Shoulder ease"
----
+- - -
 
 ![Overwijdte schouder](./shoulderease.svg)
 
