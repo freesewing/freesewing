@@ -1,6 +1,6 @@
----
-title: "aisance de manche"
----
+- - -
+titre: "aisance de manche"
+- - -
 
 ![L'aisance aux poignets pour Brian](./cuffease.svg)
 
