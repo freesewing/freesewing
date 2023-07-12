@@ -1,6 +1,6 @@
----
+- - -
 title: "Ribbing height"
----
+- - -
 
 De hoogte van de boordstof aan de zoom en manchetten.
 
