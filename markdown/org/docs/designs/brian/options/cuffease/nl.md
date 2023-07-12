@@ -1,6 +1,6 @@
----
+- - -
 title: "Cuff ease"
----
+- - -
 
 ![De factor voor overwijdte pols bij Brian](./cuffease.svg)
 
