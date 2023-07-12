@@ -1,6 +1,6 @@
----
-title: "Bloc de corps pour Brian : Instructions de coupe"
----
+- - -
+titre: "Bloc de corps pour Brian : Instructions de coupe"
+- - -
 
 **Tissu principal**
 
