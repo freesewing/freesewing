@@ -1,6 +1,6 @@
----
-title: "Chemise Simone : Instructions de couture"
----
+- - -
+titre : "Chemise Simone : Instructions de couture"
+- - -
 
 ### Step 1: Bust Darts
 
