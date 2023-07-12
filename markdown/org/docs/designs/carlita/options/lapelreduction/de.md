@@ -1,6 +1,6 @@
----
+- - -
 title: "Lapel reduction"
----
+- - -
 
 Legt fest, wie sehr die Lappenspitze nach innen geht.
 
