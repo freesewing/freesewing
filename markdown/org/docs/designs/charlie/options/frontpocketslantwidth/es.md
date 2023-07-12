@@ -1,6 +1,6 @@
----
+- - -
 title: "Front pocket slant width"
----
+- - -
 
 Controla el ancho por el cual el bolsillo delantero se corta en el panel frontal.
 
