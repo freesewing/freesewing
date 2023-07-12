@@ -1,6 +1,6 @@
----
+- - -
 title: "Belt width"
----
+- - -
 
 Steuert die Breite des Riemens auf der Rückseite.
 
