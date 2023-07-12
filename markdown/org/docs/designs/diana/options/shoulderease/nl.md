@@ -1,6 +1,6 @@
----
+- - -
 title: "Shoulder ease"
----
+- - -
 
 ![De optie voor overwijdte schouders bij Diana](./shoulderease.svg)
 
