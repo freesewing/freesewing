@@ -1,6 +1,6 @@
----
+- - -
 title: "Sven sweatshirt: Cutting Instructions"
----
+- - -
 
 Sven ist ein sehr einfaches Muster, das aus zwei Hauptteilen und einigen Streifen für die Hals- und Armlochbindung besteht.
 
