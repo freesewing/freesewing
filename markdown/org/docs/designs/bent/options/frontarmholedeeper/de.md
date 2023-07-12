@@ -1,6 +1,6 @@
----
+- - -
 title: "Front armhole extra cutout"
----
+- - -
 
 Wie viel das Rüstungsloch tiefer an der Vorderseite ausgeschnitten ist, als der Rücken.
 
