@@ -1,6 +1,6 @@
----
+- - -
 title: "Vertical pocket placement"
----
+- - -
 
 Contrôle l'emplacement des poches verticalement (plus ou moins haut).
 
