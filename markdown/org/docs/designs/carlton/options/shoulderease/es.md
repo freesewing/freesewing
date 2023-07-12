@@ -1,6 +1,6 @@
----
+- - -
 title: "Shoulder ease"
----
+- - -
 
 ![Holgura de hombro](./shoulderease.svg)
 
