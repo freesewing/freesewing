@@ -1,6 +1,6 @@
----
+- - -
 title: "Horizontal button spacing"
----
+- - -
 
 Legt fest, wie weit die Doppelzeilen der Vordertasten voneinander getrennt sind.
 
