@@ -1,6 +1,6 @@
----
+- - -
 title: "Neckline depth"
----
+- - -
 
 Contrôle la profondeur de l'encolure.
 
