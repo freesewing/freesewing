@@ -1,6 +1,6 @@
----
+- - -
 title: "Débardeur (A-Shirt) Aaron : Instructions de coupe"
----
+- - -
 
 - Couper **1 dos** au pli
 - Couper **1 devant** au pli
