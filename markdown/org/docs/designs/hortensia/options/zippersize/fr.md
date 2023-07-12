@@ -1,6 +1,6 @@
----
+- - -
 title: "Taille de la fermeture éclair"
----
+- - -
 
 Quelle est la taille de fermeture Éclair que l'on doit utiliser pour générer le patron.
 
