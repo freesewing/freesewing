@@ -1,6 +1,6 @@
----
-title: "Aisance de tête"
----
+- - -
+titre : "Aisance de tête"
+- - -
 
 La quantité d'aisance autour de la tête.
 
