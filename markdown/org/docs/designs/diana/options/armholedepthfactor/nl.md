@@ -1,6 +1,6 @@
----
+- - -
 title: "Armhole depth factor"
----
+- - -
 
 Deze optie bepaalt de diepte van het armsgat.
 
