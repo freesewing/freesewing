@@ -1,6 +1,6 @@
----
+- - -
 title: "Taille"
----
+- - -
 
 Contrôle la taille globale du sac à main.
 
