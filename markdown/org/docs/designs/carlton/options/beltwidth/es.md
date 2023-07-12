@@ -1,6 +1,6 @@
----
+- - -
 title: "Belt width"
----
+- - -
 
 Controla el ancho de la cinta en la parte trasera.
 
