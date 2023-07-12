@@ -1,6 +1,6 @@
----
-title: "Aisance pour les hanches"
----
+- - -
+titre : "Aisance pour les hanches"
+- - -
 
 Combien d'aisance voulez-vous pour les hanches ?
 
