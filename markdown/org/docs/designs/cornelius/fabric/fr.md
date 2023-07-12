@@ -1,6 +1,6 @@
----
-title: "Culotte cycliste Cornélius : Options de tissu"
----
+- - -
+titre : "Culotte cycliste Cornélius : Options de tissu"
+- - -
 
 ### Tissu principal
 
