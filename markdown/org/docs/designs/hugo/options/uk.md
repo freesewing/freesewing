@@ -1,5 +1,5 @@
----
-title: "Худі Hugo: Варіанти дизайну"
----
+- - -
+назва: "Худі Hugo: Варіанти дизайну"
+- - -
 
 <PatternOptions pattern='hugo' />
