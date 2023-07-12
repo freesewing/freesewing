@@ -1,6 +1,6 @@
----
+- - -
 title: "Leg stretch"
----
+- - -
 
 ![Die Beine Strecken Option auf Bruce](./legstretch.svg)
 
