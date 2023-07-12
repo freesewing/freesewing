@@ -1,6 +1,6 @@
----
-title: "Pli de manche"
----
+- - -
+titre : "Pli de manche"
+- - -
 
 L'angle par lequel la manche se plie au coude.
 
