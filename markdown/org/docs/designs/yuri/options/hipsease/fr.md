@@ -1,6 +1,6 @@
----
-title: "Aisance pour les hanches"
----
+- - -
+titre : "Aisance pour les hanches"
+- - -
 
 La marge d'aisance aux hanches.
 
