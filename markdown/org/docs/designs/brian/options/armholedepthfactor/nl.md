@@ -1,6 +1,6 @@
----
+- - -
 title: "Armhole depth factor"
----
+- - -
 
 ![De factor armsgat bij Brian](./armholedepthfactor.svg)
 
