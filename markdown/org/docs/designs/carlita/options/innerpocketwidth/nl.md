@@ -1,6 +1,6 @@
----
+- - -
 title: "Inner pocket width"
----
+- - -
 
 Bepaalt de breedte van de binnenzak.
 
