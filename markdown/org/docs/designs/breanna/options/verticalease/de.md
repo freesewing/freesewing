@@ -1,6 +1,6 @@
----
+- - -
 title: "Vertical ease"
----
+- - -
 
 Die Menge an Zugabe, die über die Länge des Kleidungsstückes verteilt wird.
 
