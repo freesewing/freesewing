@@ -1,6 +1,6 @@
----
-title: "Largeur oblique de la poche avant"
----
+- - -
+titre : "Largeur oblique de la poche avant"
+- - -
 
 Contrôle la largeur par laquelle la poche avant glisse dans le panneau avant.
 
