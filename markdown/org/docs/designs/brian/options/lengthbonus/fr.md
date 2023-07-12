@@ -1,6 +1,6 @@
----
-title: "Longueur supplémentaire"
----
+- - -
+titre : "Longueur supplémentaire"
+- - -
 
 ![L'option de longueur supplémentaire pour Brian](./lengthbonus.svg)
 
