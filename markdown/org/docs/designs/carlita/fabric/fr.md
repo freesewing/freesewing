@@ -1,6 +1,6 @@
----
-title: "Manteau Carlita: Options d'étoffe"
----
+- - -
+titre: "Manteau Carlita: Options d'étoffe"
+- - -
 
 ### Tissu principal
 
