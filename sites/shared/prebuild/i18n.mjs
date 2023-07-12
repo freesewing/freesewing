@@ -58,10 +58,10 @@ const getI18nFileList = async (site) => {
     }
   }
 
+  const keep = languages.map((loc) => `.${loc}.yaml`)
+
   // Filter out the language files
-  return allFiles
-    .filter((file) => languages.map((loc) => `.${loc}.yaml`).includes(file.slice(-8)))
-    .sort()
+  return allFiles.filter((file) => keep.includes(file.slice(-8))).sort()
 }
 
 /*
