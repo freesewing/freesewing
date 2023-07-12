@@ -1,6 +1,6 @@
----
-title: "Longueur supplémentaire"
----
+- - -
+titre : "Longueur supplémentaire"
+- - -
 
 De combien vous souhaitez rallonger votre tablier.
 
