@@ -1,6 +1,6 @@
----
+- - -
 title: "Chest pocket placement"
----
+- - -
 
 Contrôle l'emplacement de la poche de la poitrine.
 
