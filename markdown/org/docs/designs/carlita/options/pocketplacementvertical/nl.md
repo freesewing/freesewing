@@ -1,6 +1,6 @@
----
+- - -
 title: "Vertical pocket placement"
----
+- - -
 
 Bepaalt de locatie van de zakken verticaal (hoger of lager).
 
