@@ -27,9 +27,12 @@ const RenderTree = ({ tree, recurse, level = 0, depth = 0 }) => (
       .map((key, i) => (
         <li key={i}>
           <Link href={`/${tree[key].s}`}>{tree[key].t}</Link>
-          {recurse && level < depth && Object.keys(tree[key]).length > 1 && (
-            <RenderTree tree={tree[key]} level={level} depth={depth + 1} />
-          )}
+          {recurse === 0
+            ? ''
+            : level < depth &&
+              Object.keys(tree[key]).length > 1 && (
+                <RenderTree tree={tree[key]} level={level} depth={depth + 1} />
+              )}
         </li>
       ))}
   </ul>

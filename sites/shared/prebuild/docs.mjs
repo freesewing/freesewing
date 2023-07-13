@@ -64,7 +64,7 @@ const mdxMetaInfo = async (file) => {
  *
  *  Exported because it's also used by the Algolia index script
  */
-export const getMdxFileList = async (folder, lang) => {
+export const getMdxFileList = async (folder, locales) => {
   let allFiles
   try {
     allFiles = await rdir(folder)
@@ -75,12 +75,18 @@ export const getMdxFileList = async (folder, lang) => {
 
   // Filter out all that's not a language-specific markdown file
   // and avoid including the 'ui' files
-  const files = []
+  const files = {}
   for (const file of allFiles) {
-    if (file.slice(-5) === `${lang}.md`) files.push(file)
+    const lang = file.slice(-5, -3)
+    if (locales.includes(lang)) {
+      files[lang] = files[lang] || []
+      files[lang].push(file)
+    }
   }
 
-  return files.sort()
+  for (const lang in files) files[lang].sort()
+
+  return files
 }
 
 /*
@@ -107,23 +113,30 @@ export const prebuildDocs = async (site) => {
     (mod) => mod.siteConfig.languages
   )
 
+  const allFiles = await getMdxFileList(mdxRoot, locales)
+
   const pages = {}
+  const sections = new Set()
   // Loop over languages
   for (const lang of locales) {
     pages[lang] = {}
     // Get list of filenames
-    const list = await getMdxFileList(mdxRoot, lang)
-
+    const list = allFiles[lang]
     // Loop over files
     for (const file of list) {
       const slug = fileToSlug(file, site, lang)
+
+      const sectionDepth = site === 'org' ? 2 : 1
+      const section = slug.split('/').slice(0, sectionDepth)
+      if (section.length === sectionDepth) sections.add(section.join('/'))
+
       const meta = await mdxMetaInfo(file)
       if (meta.data?.title) {
         pages[lang][slug] = { t: meta.data.title }
         if (meta.data.order) pages[lang][slug].o = `${meta.data.order}${meta.data.title}`
       } else {
         if (pages.en[slug]) {
-          console.log(`⚠️l Falling back to EN metadata for ${slug}`)
+          console.log(`⚠️l Falling back to EN metadata for ${lang} ${slug}`)
           pages[lang][slug] = pages.en[slug]
         } else {
           console.log(`❌ [${lang}] Failed to extract meta info from: ${slug}`)
@@ -132,37 +145,57 @@ export const prebuildDocs = async (site) => {
       }
       const intros = {}
       intros[lang] = await mdIntro(lang, site, slug)
-      //if (process.env.GENERATE_OG_IMAGES) {
-      //  // Create og image
-      //  await generateOgImage({ lang, site, slug, title: meta.data.title, intro: intros[lang] })
-      //}
+
+      if (process.env.GENERATE_OG_IMAGES) {
+        //  // Create og image
+        //  await generateOgImage({ lang, site, slug, title: meta.data.title, intro: intros[lang] })
+      }
     }
   }
-
-  // make a prebuild docs loader folder
-  fs.mkdirSync(path.resolve('..', site, 'prebuild', 'docs-loader'), { recursive: true })
 
   // Write files with MDX paths
   let allPaths = ``
   for (const lang of locales) {
-    // write a docs loader
-    fs.writeFileSync(
-      path.resolve('..', site, 'prebuild', 'docs-loader', `${lang}.mjs`),
-      `${header}export const loader = (path) => import('orgmarkdown/docs/' + path + '/${lang}.md')`
-    )
-
     fs.writeFileSync(
       path.resolve('..', site, 'prebuild', `mdx-paths.${lang}.mjs`),
       `${header}export const mdxPaths = ${JSON.stringify(Object.keys(pages[lang]))}`
     )
     allPaths += `import { mdxPaths as ${lang} } from './mdx-paths.${lang}.mjs'` + '\n'
   }
+
   // Write umbrella file
   fs.writeFileSync(
     path.resolve('..', site, 'prebuild', `mdx-paths.mjs`),
     `${allPaths}${header}
 
 export const mdxPaths = { ${locales.join(',')} }`
+  )
+
+  // Write loader file
+  const sectionLoaders = [...sections].map(
+    (s) => `case '${s.split('/').slice(-1)}':
+    return () => import(\`${site}markdown/${s}\${splitPath}/\${lang}.md\`)
+  `
+  )
+
+  fs.writeFileSync(
+    path.resolve('..', site, 'prebuild', `docs-loader.mjs`),
+    `${header}export const getLoader = (path, lang) => {
+  const split = path.split('/')
+  const section = split.shift()
+  const splitPath = (split.length ? '/' : '') + split.join('/')
+
+  switch (section) {
+  ${sectionLoaders.join('')}
+  default:
+    return () =>
+      import(
+        /* webpackExclude: /(${[...sections]
+          .map((s) => s.replace('/', '\\/'))
+          .join('|')})/ */ \`${site}markdown\${path}/\${lang}.md\`
+      )
+  }
+}`
   )
   return pages
 }

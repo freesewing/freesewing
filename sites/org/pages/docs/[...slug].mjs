@@ -1,5 +1,12 @@
 // Used in static paths
 import { mdxPaths } from 'site/prebuild/mdx-paths.en.mjs'
+import { getMdxConfig } from 'shared/config/mdx.mjs'
+import { jargon } from 'shared/jargon/index.mjs'
+import { compile, run } from '@mdx-js/mdx'
+import jsxRuntime from 'react/jsx-runtime'
+import fs from 'fs/promises'
+import path from 'path'
+// Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Hooks
 import { useState, useEffect } from 'react'
@@ -11,7 +18,6 @@ import { components } from 'shared/components/mdx/index.mjs'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { Toc } from 'shared/components/mdx/toc.mjs'
 import { PrevNext } from 'shared/components/mdx/prev-next.mjs'
-import { useDynamicDocs } from 'shared/components/dynamic-docs/org.mjs'
 
 export const Loading = () => (
   <Spinner className="w-24 h-24 color-primary animate-spin m-auto mt-8" />
@@ -55,17 +61,55 @@ export const Page = ({ page, frontmatter, slug, locale, children }) => (
   </PageWrapper>
 )
 
+export const useCompiledMdx = (MDX) => {
+  // State
+  const [frontmatter, setFrontmatter] = useState({ title: 'FreeSewing.org' })
+  const [mdxContent, setMdxContent] = useState(<Loading />)
+
+  useEffect(() => {
+    async function compileMdx() {
+      const evaled = await run(MDX, { ...jsxRuntime })
+      setMdxContent(<MdxWrapper MDX={evaled.default} site="org" />)
+      setFrontmatter(evaled.frontmatter)
+    }
+
+    compileMdx()
+  }, [setMdxContent, setFrontmatter, MDX])
+
+  return { mdxContent, frontmatter }
+}
+
 const DocsPage = ({ page, slug, locale, ...props }) => {
-  const { MDX, frontmatter } = useDynamicDocs(locale, props.docsPath)
+  const { mdxContent, frontmatter } = useCompiledMdx(props.code)
 
   return (
-    <Page {...{ page, slug, frontmatter }} locale={locale}>
-      <MdxWrapper MDX={MDX} site="org" />
+    <Page {...{ page, slug, frontmatter: frontmatter }} locale={locale}>
+      {mdxContent}
     </Page>
   )
 }
 
 export default DocsPage
+
+export const getStaticMdx = async (locale, slug, mdxConfig) => {
+  let mdxFile
+  try {
+    mdxFile = await fs.readFile(path.resolve(`../../markdown/org/${slug}/${locale}.md`), 'utf-8')
+  } catch {
+    mdxFile = await fs.readFile(path.resolve(`../../markdown/org/${slug}/en.md`), 'utf-8')
+  }
+
+  const code = await compile(mdxFile, {
+    ...mdxConfig.options,
+    outputFormat: 'function-body',
+    baseUrl: import.meta.url,
+    useDynamicImport: true,
+    development: false,
+    providerImportSource: undefined,
+  })
+
+  return code.toString()
+}
 
 /*
  * getStaticProps() is used to fetch data at build-time.
@@ -76,8 +120,8 @@ export async function getStaticProps({ locale, params }) {
 
   return {
     props: {
-      ...(await serverSideTranslations('en', ['docs', ...ns])),
-      docsPath: params.slug.join('/'),
+      ...(await serverSideTranslations(locale, ['docs', ...ns])),
+      code: await getStaticMdx(locale, slug, getMdxConfig({ site: 'org', jargon, slug })),
       slug,
       locale,
       page: {
