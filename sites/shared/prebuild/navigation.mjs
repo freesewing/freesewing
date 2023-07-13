@@ -33,6 +33,7 @@ export const prebuildNavigation = (docPages, sanityPosts, site) => {
    * s: slug without leading or trailing slash (/)
    */
   const nav = {}
+  console.log('Prebuilding navigation for', site)
   fs.mkdirSync(path.resolve('..', site, 'prebuild', `navigation`), { recursive: true })
   for (const lang in docPages) {
     const translations = loadTranslation(lang)

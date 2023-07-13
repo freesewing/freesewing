@@ -68,12 +68,16 @@ export const prebuildGitData = async (site) => {
   const pages = {}
 
   // Get list of filenames
-  const list = await getMdxFileList(mdxRoot, 'en')
+  const files = await getMdxFileList(mdxRoot, ['en'])
 
   // Loop over files
-  for (const file of list) {
-    const { lastUpdated, authors, slug } = await getGitMetadata(file, site)
-    pages[slug] = { u: lastUpdated, a: [...authors] }
+  for (const file of files['en']) {
+    try {
+      const { lastUpdated, authors, slug } = await getGitMetadata(file, site)
+      pages[slug] = { u: lastUpdated, a: [...authors] }
+    } catch (e) {
+      console.log('Something went wrong loading the git metadata for', file, e)
+    }
   }
   // Write page to disk
   const dir = path.resolve('..', site, 'prebuild')

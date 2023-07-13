@@ -1,4 +1,4 @@
-import { prebuildNavigation as pbn } from 'site/prebuild/navigation.mjs'
+import { prebuildNavigation as pbn } from 'site/prebuild/navigation/en.mjs'
 
 /*
  * prebuildNavvigation[locale] holds the navigation structure based on MDX content.
@@ -79,7 +79,7 @@ const sitePages = () => {
 
 export const useNavigation = (params = {}) => {
   const { locale = 'en' } = params
-  const nav = { ...pbn[locale], ...sitePages() }
+  const nav = { ...pbn, ...sitePages() }
   // Make top-level documentation entries appear in b-list
   for (const page of ['tutorials', 'guides', 'howtos', 'reference', 'training']) {
     nav[page].o = 1000
