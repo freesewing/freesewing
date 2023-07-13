@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useContext } from 'react'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
 import { useNavigation } from 'site/hooks/use-navigation.mjs'
+import { BulletIcon, RightIcon } from 'shared/components/icons.mjs'
 
 const getRoot = {
   dev: (root, nav) => {
@@ -22,31 +23,44 @@ const getRoot = {
  * This is a recursive function, so it needs to be lean
  */
 const RenderTree = ({ tree, recurse, depth = 1, level = 0, lead = [] }) => (
-  <ul>
+  <ul className="w-full list">
     {Object.keys(tree)
       .filter((key) => key.length > 1)
-      .map((key, i) => (
-        <li key={i}>
-          {lead}
-          <Link href={`/${tree[key].s}`}>{tree[key].t}</Link>
-          {recurse && (!depth || level < depth) && Object.keys(tree[key]).length > 1 && (
-            <RenderTree
-              tree={tree[key]}
-              {...{ recurse, depth }}
-              level={level + 1}
-              lead={[
-                ...lead,
-                <span className="text-sm pr-2" key={key}>
+      .map((key, i) => {
+        /*
+         * Does this have children?
+         */
+        const hasChildren =
+          recurse && (!depth || level < depth) && Object.keys(tree[key]).join('').length > 5
+            ? tree[key].s.replaceAll('/', '')
+            : false
+
+        /*
+         * The rotation of the chevron should in principle be possible with Tailwind's group variant modifiers
+         * However, despite my best efforts, I can't seem to make it work. So this relies on a bit of CSS.
+         * The 'summary-chevron' class is what does the trick.
+         */
+        return (
+          <li key={i} className="w-full flex flex-row items-start gap-0.5 lg:gap-1">
+            {hasChildren ? (
+              <details className={`w-full inline flex flex-row`}>
+                <summary className="hover:bg-opacity-20 bg-secondary bg-opacity-0 block w-full flex flex-row items-center gap-0.5 lg:gap-1 px-1 lg:px-2">
+                  <RightIcon className={`w-4 h-4 summary-chevron transition-all`} stroke={3} />
+                  <Link href={`/${tree[key].s}`}>{tree[key].t}</Link>
+                </summary>
+                <RenderTree tree={tree[key]} {...{ recurse, depth }} level={level + 1} />
+              </details>
+            ) : (
+              <>
+                <BulletIcon className="w-2 h-2 mt-2 mx-1 ml-2 lg:ml-3 shrink-0" fill stroke={0} />
+                <Link href={`/${tree[key].s}`} className="break-all">
                   {tree[key].t}
-                </span>,
-                <span className="text-sm pr-2" key={key + 's'}>
-                  &raquo;
-                </span>,
-              ]}
-            />
-          )}
-        </li>
-      ))}
+                </Link>
+              </>
+            )}
+          </li>
+        )
+      })}
   </ul>
 )
 
@@ -70,8 +84,6 @@ export const ReadMore = ({
   if (root === true) root = ''
 
   const tree = root === false ? getRoot[site](slug, siteNav) : getRoot[site](root, siteNav)
-
-  console.log({ tree, recurse })
 
   return <RenderTree {...{ tree, recurse, depth }} />
 }
