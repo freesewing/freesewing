@@ -140,7 +140,7 @@ react-components:
     react: '>=14'
 rehype-jargon:
   _:
-    'unist-util-visit': &unist-util-visit '4.1.2'
+    'unist-util-visit': &unist-util-visit '5.0.0'
     'hast-util-from-html': '1.0.2'
 rehype-highlight-lines:
   _:
