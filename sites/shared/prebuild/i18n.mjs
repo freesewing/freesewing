@@ -3,7 +3,7 @@ import path from 'path'
 import rdir from 'recursive-readdir'
 import yaml from 'js-yaml'
 import { fileURLToPath } from 'url'
-import languages from '../../../config/languages.json' assert { type: 'json' }
+import allLanguages from '../../../config/languages.json' assert { type: 'json' }
 import { designs } from '../i18n/designs.mjs'
 
 /*
@@ -41,7 +41,7 @@ const writeJson = async (site, locale, namespace, content) => {
  *  - site: the site folder to generate translations files for
  *
  */
-const getI18nFileList = async (site) => {
+const getI18nFileList = async (site, languages) => {
   const dirs = [...folders.shared]
   if (site === 'org') dirs.push(...folders.org)
   if (site === 'dev') dirs.push(...folders.dev)
@@ -121,7 +121,7 @@ const filesAsNamespaces = (files) => {
  *
  * - data: The raw data based on loaded YAML files
  */
-const fixData = (rawData) => {
+const fixData = (rawData, languages) => {
   const data = {}
   for (const [namespace, nsdata] of Object.entries(rawData)) {
     if (typeof nsdata.en === 'undefined') {
@@ -170,11 +170,16 @@ const patternTranslationAsNamespace = (i18n, language) => {
  */
 export const prebuildI18n = async (site) => {
   /*
+   * FreeSewing.dev is only available in English
+   */
+  const languages = site === 'dev' ? ['en'] : allLanguages
+
+  /*
    * Handle code-adjacent translations (for React components and so on)
    */
-  const files = await getI18nFileList(site)
+  const files = await getI18nFileList(site, languages)
   const data = filesAsNamespaces(files)
-  const namespaces = fixData(data)
+  const namespaces = fixData(data, languages)
   // Write out code-adjacent source files
   for (const language of languages) {
     // Fan out into namespaces
