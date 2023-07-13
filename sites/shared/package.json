@@ -55,7 +55,7 @@
     "svg-to-pdfkit": "https://github.com/eriese/SVG-to-PDFKit",
     "tlds": "1.240.0",
     "to-vfile": "8.0.0",
-    "unist-util-visit": "4.1.2",
+    "unist-util-visit": "5.0.0",
     "use-persisted-state": "0.3.3",
     "web-worker": "1.2.0"
   },
