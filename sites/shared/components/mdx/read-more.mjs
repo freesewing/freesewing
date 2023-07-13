@@ -1,13 +1,7 @@
 import get from 'lodash.get'
-import orderBy from 'lodash.orderby'
 import Link from 'next/link'
 import { useContext } from 'react'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
-
-// Helper method to filter out the real children
-const order = (obj) => orderBy(obj, ['o', 't'], ['asc', 'asc'])
-const currentChildren = (current) =>
-  Object.values(order(current)).filter((entry) => typeof entry === 'object')
 
 const getRoot = {
   dev: (root, nav) => {
@@ -26,14 +20,16 @@ const getRoot = {
 /*
  * This is a recursive function, so it needs to be lean
  */
-const RenderTree = ({ tree }) => (
+const RenderTree = ({ tree, recurse, level = 0, depth = 0 }) => (
   <ul>
     {Object.keys(tree)
       .filter((key) => key.length > 1)
       .map((key, i) => (
         <li key={i}>
           <Link href={`/${tree[key].s}`}>{tree[key].t}</Link>
-          {Object.keys(tree[key]).length > 1 && <RenderTree tree={tree[key]} />}
+          {recurse && level < depth && Object.keys(tree[key]).length > 1 && (
+            <RenderTree tree={tree[key]} level={level} depth={depth + 1} />
+          )}
         </li>
       ))}
   </ul>
@@ -53,5 +49,5 @@ export const ReadMore = ({ recurse = 0, root = false, site = 'org', level = 0, i
 
   const tree = root === false ? getRoot[site](slug, siteNav) : getRoot[site](root, siteNav)
 
-  return <RenderTree tree={tree} />
+  return <RenderTree {...{ tree, recurse, level }} />
 }
