@@ -7,9 +7,7 @@ import { useState, useEffect } from 'react'
 // Components
 import { ns } from 'shared/components/wrappers/page.mjs'
 import { components } from 'shared/components/mdx/index.mjs'
-import DocsPage, { getStaticMdx } from './[...slug].mjs'
-import { getMdxConfig } from 'shared/config/mdx.mjs'
-import { jargon } from 'shared/jargon/index.mjs'
+import DocsPage from './[...slug].mjs'
 
 export default DocsPage
 
@@ -22,7 +20,7 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations('en', ['docs', ...ns])),
-      code: await getStaticMdx(locale, slug, getMdxConfig({ site: 'org', jargon, slug })),
+      docsPath: '',
       slug,
       locale,
       page: {
