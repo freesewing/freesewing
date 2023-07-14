@@ -78,7 +78,7 @@ export const getMdxFileList = async (folder, locales) => {
   const files = {}
   for (const file of allFiles) {
     const lang = file.slice(-5, -3)
-    if (locales.includes(lang)) {
+    if (!locales || locales.includes(lang)) {
       files[lang] = files[lang] || []
       files[lang].push(file)
     }
