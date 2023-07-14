@@ -4,6 +4,8 @@ import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { designs, tags } from 'shared/config/designs.mjs'
 import { objUpdate } from 'shared/utils.mjs'
+import { orderedSlugLut } from 'shared/hooks/use-navigation-helpers.mjs'
+import { useRouter } from 'next/router'
 
 /*
  * prebuildNavvigation[locale] holds the navigation structure based on MDX content.
@@ -156,21 +158,27 @@ const sitePages = (t = false, control = 99) => {
   return pages
 }
 
-export const useNavigation = (params = {}, extra = []) => {
-  const { locale = 'en', ignoreControl } = params
+export const useNavigation = ({ ignoreControl = false }, extra = []) => {
+  // Passing in the locale is not very DRY so let's just grab it from the router
+  const { locale } = useRouter()
+  // We need translation
   const { t } = useTranslation(ns)
-  const { account } = useAccount()
+  // We need the account if we take control into account
+  const { account } = ignoreControl ? useAccount() : { account: false }
 
-  const navigation = {
+  const siteNav = {
     ...pbn[locale],
     ...sitePages(t, ignoreControl ? undefined : account.control),
   }
   for (const [_path, _data] of extra) {
-    objUpdate(navigation, _path, _data)
+    objUpdate(siteNav, _path, _data)
   }
 
-  // Set order on docs key (from from prebuild navigation)
-  navigation.docs.o = 30
+  // Set order on docs key (from from prebuild siteNav)
+  siteNav.docs.o = 30
 
-  return navigation
+  return {
+    siteNav, // Site navigation
+    slugLut: orderedSlugLut(siteNav), // Slug lookup table
+  }
 }

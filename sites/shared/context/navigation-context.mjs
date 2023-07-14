@@ -66,7 +66,7 @@ export const NavigationContextProvider = ({ children }) => {
   })
   const [extraPages, setExtraPages] = useState([])
 
-  const siteNav = useNavigation({ path: value.path, locale: value.locale }, extraPages)
+  const { siteNav } = useNavigation({ path: value.path, locale: value.locale }, extraPages)
   const navState = buildNavState(value, siteNav)
 
   const addPages = (extra) => {

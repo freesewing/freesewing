@@ -4,6 +4,7 @@ import { useContext } from 'react'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
 import { useNavigation } from 'site/hooks/use-navigation.mjs'
 import { BulletIcon, RightIcon } from 'shared/components/icons.mjs'
+import { pageHasChildren } from 'shared/utils.mjs'
 
 const getRoot = {
   dev: (root, nav) => {
@@ -31,7 +32,7 @@ const RenderTree = ({ tree, recurse, depth = 1, level = 0, lead = [] }) => (
          * Does this have children?
          */
         const hasChildren =
-          recurse && (!depth || level < depth) && Object.keys(tree[key]).join('').length > 5
+          recurse && (!depth || level < depth) && pageHasChildren(tree[key])
             ? tree[key].s.replaceAll('/', '')
             : false
 
@@ -72,7 +73,7 @@ export const ReadMore = ({
   ignoreControl,
 }) => {
   const { slug } = useContext(NavigationContext)
-  const siteNav = useNavigation({ ignoreControl })
+  const { siteNav } = useNavigation({ ignoreControl })
 
   // Deal with recurse not being a number
   if (recurse && recurse !== true) {
