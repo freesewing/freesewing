@@ -1,4 +1,5 @@
 import { prebuildNavigation as pbn } from 'site/prebuild/navigation.mjs'
+import { orderedSlugLut } from 'shared/hooks/use-navigation-helpers.mjs'
 
 /*
  * prebuildNavvigation[locale] holds the navigation structure based on MDX content.
@@ -77,15 +78,18 @@ const sitePages = () => {
   return pages
 }
 
-export const useNavigation = (params = {}) => {
-  const { locale = 'en' } = params
-  const nav = { ...pbn[locale], ...sitePages() }
+export const useNavigation = () => {
+  // Dev is EN only
+  const siteNav = { ...pbn.en, ...sitePages() }
   // Make top-level documentation entries appear in b-list
   for (const page of ['tutorials', 'guides', 'howtos', 'reference', 'training']) {
-    nav[page].o = 1000
-    nav[page].b = 1
+    siteNav[page].o = 1000
+    siteNav[page].b = 1
   }
-  nav.contact.h = 1
+  siteNav.contact.h = 1
 
-  return nav
+  return {
+    siteNav, // Site navigation
+    slugLut: orderedSlugLut(siteNav), // Slug lookup table
+  }
 }

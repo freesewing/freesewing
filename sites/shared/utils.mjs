@@ -304,3 +304,10 @@ export const hasRequiredMeasurements = (Design, measies = {}, DesignIsMeasuremen
 
   return [missing.length === 0, missing]
 }
+
+/*
+ * This expects a object from the nav tree and will filter out the know 1-char keys
+ * and then check if there are any left. If there are, those are child-pages.
+ */
+export const pageHasChildren = (page) =>
+  Object.keys(page).filter((key) => !['t', 's', 'o', 'b', 'h'].includes(key)).length > 0

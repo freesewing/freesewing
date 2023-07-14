@@ -55,10 +55,18 @@
     @apply text-secondary-focus decoration-2 decoration-current;
   }
   .mdx ul {
-    @apply pl-4 list-disc list-inside text-base-content;
+    @apply pl-0 lg:pl-4  list-disc list-inside text-base-content;
+  }
+  .mdx ol ul,
+  .mdx ul ul {
+    @apply pl-2 lg:pl-4  list-disc list-inside text-base-content;
   }
   .mdx ol {
-    @apply pl-4 list-decimal list-inside text-base-content;
+    @apply pl-0 lg:pl-4 list-decimal list-inside text-base-content;
+  }
+  .mdx ul ol,
+  .mdx ol ol {
+    @apply pl-2 lg:pl-4 list-decimal list-inside text-base-content;
   }
   .mdx code {
     @apply bg-accent bg-opacity-10 px-2 rounded text-accent;
@@ -594,4 +602,14 @@ input[type='range']::-moz-range-track {
  */
 html {
   scroll-behavior: smooth;
+}
+
+/*
+ * This should be possible with Tailwind's named groups but it does not seem to work
+ */
+details[open] > summary > svg.summary-chevron {
+  transform: rotate(90deg);
+}
+details > summary:hover > svg.summary-chevron {
+  stroke-width: 5;
 }
