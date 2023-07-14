@@ -31,6 +31,7 @@ export const authors = {
   chri5b: { id: 0, name: 'chri5b' },
   tangerineshark: { id: 0, name: 'tangerineshark' },
   'MA-TATAS': { id: 0, name: 'MA-TATAS' },
+  'Ivo Bek': { id: 0, name: 'Ivo Bek' },
 }
 
 /*
