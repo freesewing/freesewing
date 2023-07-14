@@ -128,7 +128,7 @@ export const MdxWrapper = ({
         updated={updates.u}
         {...{ locale, slug, t }}
       />
-      <PlainMdxWrapper {...{ MDX, components, children }} />
+      <PlainMdxWrapper {...{ MDX, components, children, site }} />
     </div>
   )
 }

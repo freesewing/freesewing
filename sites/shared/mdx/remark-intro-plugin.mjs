@@ -17,34 +17,27 @@ import { visit } from 'unist-util-visit'
  */
 
 // These are child types of a paragraph of which we'll extract the text
-const asText = [
-  'text',
-  'strong',
-  'emphasis',
-  'inlineCode',
-]
+const asText = ['text', 'strong', 'emphasis', 'inlineCode']
 
 // The actual plugin starts here
-export const remarkIntroPlugin = (opts={}) => {
-
-  const { intro=[] } = opts
+export const remarkIntroPlugin = (opts = {}) => {
+  const { intro = [] } = opts
 
   // Check to see whether the node has frontmatter
-  const hasFrontmatter = node => (node?.children?.[0]?.type === 'yaml')
+  const hasFrontmatter = (node) => node?.children?.[0]?.type === 'yaml'
 
   // Pulls text out of a paragraph
-  const extractIntro = node => {
+  const extractIntro = (node) => {
     const text = []
     for (const child of node.children) {
       if (asText.indexOf(child.type) !== -1) text.push(child.value)
       else if (child.type === 'link') text.push(child.children[0].value)
     }
-
-    return text.map(item => item ? item.trim() : '').join(' ')
+    return text.map((item) => (item ? item.trim().replace(/\n/g, '') : '')).join(' ')
   }
 
   // Pulls the first paragraph out of a root node
-  const extractFirstParagraph = node => {
+  const extractFirstParagraph = (node) => {
     for (const child of node.children) {
       if (child.type === 'paragraph') return extractIntro(child)
     }
@@ -62,7 +55,7 @@ export const remarkIntroPlugin = (opts={}) => {
     } else {
       node.children.unshift({
         type: 'yaml',
-        value: `intro: "${nodeIntro}"`
+        value: `intro: "${nodeIntro}"`,
       })
     }
   }
@@ -74,4 +67,3 @@ export const remarkIntroPlugin = (opts={}) => {
 
   return transform
 }
-

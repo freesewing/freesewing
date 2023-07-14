@@ -1,5 +1,5 @@
 import get from 'lodash.get'
-import { useContent } from 'react'
+import { useContext } from 'react'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
 import Link from 'next/link'
 

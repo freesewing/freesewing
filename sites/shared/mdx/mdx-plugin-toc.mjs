@@ -12,8 +12,10 @@ const nodeAsTocEntry = (node, slugger) => ({
 
 const extractToc = (node, options, slugger) => {
   const toc = []
-  for (const el of node.children.filter((node) => node.type === 'heading')) {
-    if (el.depth <= options.maxDepth) toc.push(nodeAsTocEntry(el, slugger))
+  for (const el of node.children) {
+    if (el.type === 'heading' && el.depth <= options.maxDepth && el.children[0].value) {
+      toc.push(nodeAsTocEntry(el, slugger))
+    }
   }
 
   return toc
@@ -50,9 +52,9 @@ const tocAsProperty = (toc) => ({
 })
 
 export default function mdxToc(options = {}) {
+  options = { ...defaultOptions, options }
   return (node) => {
     const slugger = new GithubSlugger()
-    options = { ...defaultOptions, options }
     const esm = node.children.filter((child) => child.type === 'mdxjsEsm')
     if (
       esm &&

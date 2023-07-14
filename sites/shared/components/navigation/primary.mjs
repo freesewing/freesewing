@@ -248,7 +248,7 @@ export const MainSections = () => {
 
     const item =
       page.t === 'spacer' ? (
-        <li key={page.s} className="opacity-10">
+        <li key={page.o + '_spacer'} className="opacity-10">
           <Spacer />
         </li>
       ) : (

@@ -4,7 +4,7 @@ import remarkFrontmatter from 'remark-frontmatter'
 import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 import remarkGfm from 'remark-gfm'
 import remarkCopyLinkedFiles from 'remark-copy-linked-files'
-//import { remarkIntroPlugin } from './remark-intro-plugin.mjs'
+import { remarkIntroPlugin } from '../mdx/remark-intro-plugin.mjs'
 import mdxPluginToc from '../mdx/mdx-plugin-toc.mjs'
 import smartypants from 'remark-smartypants'
 // Rehype plugins we want to use
@@ -24,12 +24,13 @@ const jargonTransform = (term, html) => `<details class="inline jargon-details">
   <div class="jargon-info">
   ${html}</div></details>`
 
-export const getMdxConfig = ({ site, jargon, slug }) => ({
+export const getMdxConfig = ({ site, jargon, slug, intro = [] }) => ({
   extension: /\.mdx?$/,
   options: {
     providerImportSource: '@mdx-js/react',
     format: 'mdx',
     remarkPlugins: [
+      [remarkIntroPlugin, { intro }],
       remarkFrontmatter,
       remarkMdxFrontmatter,
       remarkGfm,
@@ -42,7 +43,6 @@ export const getMdxConfig = ({ site, jargon, slug }) => ({
           staticPath: '/mdx/',
         },
       ],
-      //[remarkIntroPlugin, { intro }],
       mdxPluginToc,
     ],
     rehypePlugins: [

@@ -118,7 +118,7 @@ export const TabbedExample = ({
       tabNames.unshift('Code')
     } else {
       tabs.push(codeTab)
-      tabs.push('Code')
+      tabNames.push('Code')
     }
   }
 
