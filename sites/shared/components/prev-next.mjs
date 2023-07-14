@@ -39,7 +39,7 @@ export const PrevNext = ({ slug }) => {
   const index = slugLut.indexOf(slug)
 
   // Add 1 for the next page, unless it's the last page
-  const iNext = index === slugLut.length ? 0 : index + 1
+  const iNext = index === slugLut.length - 1 ? 0 : index + 1
 
   // Subtract 1 for the previous page, unless it's the first page
   const iPrev = index === 0 ? slugLut.length - 1 : index - 1
