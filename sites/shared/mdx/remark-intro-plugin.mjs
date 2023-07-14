@@ -33,7 +33,7 @@ export const remarkIntroPlugin = (opts = {}) => {
       if (asText.indexOf(child.type) !== -1) text.push(child.value)
       else if (child.type === 'link') text.push(child.children[0].value)
     }
-    return text.map((item) => (item ? item.trim().replace(/\n/g, '') : '')).join(' ')
+    return text.map((item) => (item ? item.replace(/\n/g, '').trim() : '')).join(' ')
   }
 
   // Pulls the first paragraph out of a root node
@@ -51,11 +51,13 @@ export const remarkIntroPlugin = (opts = {}) => {
     // Forgive me for this hack
     intro.push(nodeIntro)
     if (hasFrontmatter(node)) {
-      node.children[0].value += `\nintro: "${nodeIntro}"\n`
+      node.children[0].value += `\nintro: >
+      ${nodeIntro}\n`
     } else {
       node.children.unshift({
         type: 'yaml',
-        value: `intro: "${nodeIntro}"`,
+        value: `intro: >
+        ${nodeIntro}`,
       })
     }
   }
