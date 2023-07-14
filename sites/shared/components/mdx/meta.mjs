@@ -5,11 +5,9 @@ import { docUpdates } from 'site/prebuild/doc-updates.mjs'
 // Components
 import { PageLink } from 'shared/components/page-link.mjs'
 import { DateTime, Interval } from 'luxon'
-// Context
-import { useContext } from 'react'
 // Hooks
 import { useTranslation } from 'next-i18next'
-import { EditIcon, RightIcon } from 'shared/components/icons.mjs'
+import { EditIcon } from 'shared/components/icons.mjs'
 
 export const TimeAgo = ({ date, t }) => {
   const i = Interval.fromDateTimes(DateTime.fromISO(date), DateTime.now())
