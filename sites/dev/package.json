@@ -63,7 +63,7 @@
     "autoprefixer": "10.4.14",
     "eslint-config-next": "13.4.9",
     "js-yaml": "4.1.0",
-    "postcss": "8.4.25",
+    "postcss": "8.4.26",
     "playwright": "^1.32.3",
     "remark-extract-frontmatter": "3.2.0",
     "remark-mdx-frontmatter": "3.0.0",
