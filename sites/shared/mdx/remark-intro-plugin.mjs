@@ -31,7 +31,7 @@ export const remarkIntroPlugin = (opts = {}) => {
     const text = []
     for (const child of node.children) {
       if (asText.indexOf(child.type) !== -1) text.push(child.value)
-      else if (child.type === 'link') text.push(child.children[0].value)
+      else if (child.type === 'link' && child.children[0]) text.push(child.children[0].value)
     }
     return text.map((item) => (item ? item.replace(/\n/g, '').trim() : '')).join(' ')
   }
