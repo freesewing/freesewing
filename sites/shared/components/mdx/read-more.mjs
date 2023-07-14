@@ -23,7 +23,7 @@ const getRoot = {
 /*
  * This is a recursive function, so it needs to be lean
  */
-const RenderTree = ({ tree, recurse, depth = 1, level = 0, lead = [] }) => (
+const RenderTree = ({ tree, recurse, depth = 1, level = 0 }) => (
   <ul className="w-full list">
     {Object.keys(tree)
       .filter((key) => key.length > 1)

@@ -29,7 +29,7 @@ export const TimeAgo = ({ date, t }) => {
 
 const PersonList = ({ list }) => (
   <ul>
-    {list.map((id, i) => (
+    {list.map((id) => (
       <li key={id}>
         {allAuthors[id] ? (
           <PageLink href={`/users/${allAuthors[id].id}`} txt={allAuthors[id].name} />

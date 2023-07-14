@@ -163,8 +163,8 @@ export const useNavigation = ({ ignoreControl = false }, extra = []) => {
   const { locale } = useRouter()
   // We need translation
   const { t } = useTranslation(ns)
-  // We need the account if we take control into account
-  const { account } = ignoreControl ? useAccount() : { account: false }
+  // We need the account if we want to take control into account
+  const { account } = useAccount()
 
   const siteNav = {
     ...pbn[locale],
