@@ -19,28 +19,9 @@ import {
 import { HeaderWrapper } from 'shared/components/wrappers/header.mjs'
 import { ModalThemePicker, ns as themeNs } from 'shared/components/modal/theme-picker.mjs'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
-
 import { NavButton, NavSpacer, colors } from 'shared/components/header.mjs'
 
 export const ns = ['header', 'sections', ...themeNs]
-
-/*
- * for all developers
- * for pattern designers and coders
- * for infrastructure coders
- * for writers
- * for translators
- * how to work as a team
- * about freesewing
- *
- *
- * designers
- * contributors
- * api
- * translation
- * infra
- * content
- * */
 
 const NavIcons = ({ setModal }) => {
   const { t } = useTranslation(['header'])
