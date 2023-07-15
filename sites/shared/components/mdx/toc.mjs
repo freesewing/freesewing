@@ -23,26 +23,22 @@ export const Toc = ({ toc = [], wrap = false }) => {
   return (
     <>
       <select
-        className="block lg:hidden max-w-full select select-secondary"
+        className="block xl:hidden w-full select select-secondary"
         onChange={(evt) => scrollTo(evt.target.value)}
         defaultValue="_"
+        id="toc-select"
       >
-        <option value="_">{t('toc')}</option>
-        {toc.map((entry, i) => {
-          const space = []
-          for (let i = 1; i <= entry.level; i++) space.push(<Spacer key={i} />)
-          return (
-            <option value={entry.slug} key={i} className="whitespace-pre">
-              {space}
-              {entry.title}
-            </option>
-          )
-        })}
+        <option value="toc-select">{t('toc')}</option>
+        {toc.map((entry, i) => (
+          <option value={entry.slug} key={i} className="whitespace-pre">
+            {entry.title}
+          </option>
+        ))}
       </select>
       {wrap ? (
         <div
           className={`
-            hidden lg:block
+            hidden xl:block
             mdx mdx-toc text-base-content text-base
             sticky top-16 max-h-screen overflow-y-auto
             border-2 bg-base-200 bg-opacity-30 p-4 rounded-lg border-base-200
