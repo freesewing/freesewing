@@ -8,8 +8,14 @@ import { orderedSlugLut } from 'shared/hooks/use-navigation-helpers.mjs'
  * - home page => no navvigation shown
  * - /contact => Added below
  *
- * Note: Set 'h' to truthy to not show a top-level entry as a section
- * Note: Set 'c' to set the control level to hide things from users
+ * Remember Mc Toshi:
+ * Note: Set 'm' to truthy to show this as a main section in the side-navigation (optional)
+ * Note: Set 'c' to set the control level to hide things from users (optional)
+ * Note: Set 't' to the title
+ * Note: Set 'o' to set the order (optional)
+ * Note: Set 's' to the slug (optional insofar as it's not a real page (a spacer for the header))
+ * Note: Set 'h' to indicate this is a top-level page that should be hidden from the side-nav (like search)
+ * Note: Set 'i' when something should be included as top-level in the collapse side-navigation (optional)
  */
 
 export const ns = ['account', 'sections', 'design', 'tags']
@@ -18,60 +24,57 @@ const sitePages = () => {
   const pages = {
     // Top-level pages that are the sections menu
     api: {
+      m: 1,
       t: 'API Documentation',
-      s: 'api',
       o: 10,
+      s: 'api',
     },
     design: {
+      m: 1,
       t: 'Design Sewing Patterns',
-      s: 'design',
       o: 10,
+      s: 'design',
     },
     contribute: {
+      m: 1,
       t: 'Contribute to FreeSewing',
-      s: 'contribute',
       o: 20,
+      s: 'contribute',
     },
     i18n: {
+      m: 1,
       t: 'Help Translate FreeSewing',
-      s: 'i18n',
       o: 40,
+      s: 'i18n',
     },
     infra: {
+      m: 1,
       t: 'FreeSewing Infrastructure',
-      s: 'infra',
       o: 50,
+      s: 'infra',
     },
     about: {
+      m: 1,
       t: 'About FreeSewing',
-      s: 'about',
       o: 60,
+      s: 'about',
     },
     support: {
+      m: 1,
       t: 'Support FreeSewing',
-      s: 'support',
       o: 70,
-    },
-    spacer1: {
-      t: 'spacer',
-      o: 100,
-      b: 1,
-    },
-    spacer2: {
-      t: 'spacer',
-      o: 2000,
-      b: 1,
+      s: 'support',
     },
     search: {
       t: 'Search',
-      s: 'search',
       o: 270,
+      s: 'search',
       h: 1,
     },
     sitemap: {
       t: 'Sitemap',
-      s: 'sitemap',
       o: 270,
+      s: 'sitemap',
       h: 1,
     },
   }
@@ -81,12 +84,12 @@ const sitePages = () => {
 export const useNavigation = () => {
   // Dev is EN only
   const siteNav = { ...pbn.en, ...sitePages() }
-  // Make top-level documentation entries appear in b-list
+
+  // Make top-level documentation entries appear in i-list
   for (const page of ['tutorials', 'guides', 'howtos', 'reference', 'training']) {
     siteNav[page].o = 1000
-    siteNav[page].b = 1
+    siteNav[page].i = 1
   }
-  siteNav.contact.h = 1
 
   return {
     siteNav, // Site navigation
