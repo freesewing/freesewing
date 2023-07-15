@@ -1,16 +1,21 @@
+// Hooks
+import { useNavigation } from 'site/hooks/use-navigation.mjs'
 // Components
 import Head from 'next/head'
 import { PageWrapper } from 'shared/components/wrappers/page.mjs'
-import { DefaultLayout as Layout } from 'site/components/layouts/default.mjs'
 import { Robot } from 'shared/components/robot/index.mjs'
 import { Popout } from 'shared/components/popout.mjs'
 import { PageLink } from 'shared/components/page-link.mjs'
+import { BaseLayout, BaseLayoutLeft, BaseLayoutWide } from 'shared/components/base-layout.mjs'
+import { NavLinks, Breadcrumbs, MainSections } from 'shared/components/navigation/sitenav.mjs'
 
 const Page404 = () => {
   const title = '404: Page not found'
+  const { siteNav } = useNavigation({ ignoreControl: true })
+  const slug = '404'
 
   return (
-    <PageWrapper title={title} layout={Layout}>
+    <PageWrapper title={title}>
       <Head>
         <meta property="og:type" content="article" key="type" />
         <meta
@@ -27,25 +32,31 @@ const Page404 = () => {
         <meta property="og:locale" content="en_US" key="locale" />
         <meta property="og:site_name" content="freesewing.dev" key="site" />
       </Head>
-      <div className="flex flex-col gap-4 mt-16 lg:mt-32 text-center">
-        <h1>404: Page not found</h1>
-        <div className="m-auto max-w-3xl px-4">
-          <div className="max-w-md m-auto px-12 mb-4">
-            <Robot embed pose="fail" />
+      <BaseLayout>
+        <BaseLayoutLeft>
+          <MainSections {...{ siteNav, slug }} />
+          <NavLinks {...{ siteNav, slug }} />
+        </BaseLayoutLeft>
+        <BaseLayoutWide>
+          <div className="max-w-2xl">
+            <h1>404: Page not found</h1>
+            <div className="max-w-sm m-auto px-12 mb-4">
+              <Robot embed pose="fail" />
+            </div>
+            <h3>We could not find what you are looking for</h3>
+            <div className="text-left">
+              <Popout comment by="joost">
+                <h5>Did you arrive here from a link?</h5>
+                <p>In that case, that link is broken.</p>
+                <p>
+                  If it was one of our links, please <PageLink href="/contact" txt="let us know" />{' '}
+                  so we can fix it.
+                </p>
+              </Popout>
+            </div>
           </div>
-          <h2>We could not find what you are looking for</h2>
-          <div className="text-left">
-            <Popout comment by="joost">
-              <h5>Did you arrive here from a link?</h5>
-              <p>In that case, that link is broken.</p>
-              <p>
-                If it was one of our links, please <PageLink href="/contact" txt="let us know" /> so
-                we can fix it.
-              </p>
-            </Popout>
-          </div>
-        </div>
-      </div>
+        </BaseLayoutWide>
+      </BaseLayout>
     </PageWrapper>
   )
 }

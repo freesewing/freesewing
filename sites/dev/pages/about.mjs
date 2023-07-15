@@ -10,6 +10,12 @@ import { Popout } from 'shared/components/popout.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
 import { NavLinks, Breadcrumbs, MainSections } from 'shared/components/navigation/sitenav.mjs'
 import { FreeSewingIcon } from 'shared/components/icons.mjs'
+import {
+  BaseLayout,
+  BaseLayoutLeft,
+  BaseLayoutProse,
+  BaseLayoutRight,
+} from 'shared/components/base-layout.mjs'
 
 const ContactPage = ({ page, slug }) => {
   /*
@@ -37,12 +43,12 @@ const ContactPage = ({ page, slug }) => {
         <meta property="og:locale" content="en_US" key="locale" />
         <meta property="og:site_name" content="freesewing.dev" key="site" />
       </Head>
-      <div className="flex flex-row items-start mt-8 w-full justify-between 2xl:px-36 xl:px-12 px-4">
-        <div className="max-w-96 w-1/4 mt-8 hidden lg:block">
+      <BaseLayout>
+        <BaseLayoutLeft>
           <MainSections {...{ siteNav, slug }} />
           <NavLinks {...{ siteNav, slug }} />
-        </div>
-        <div className="grow w-full m-auto max-w-prose mt-0 mb-8">
+        </BaseLayoutLeft>
+        <BaseLayoutProse>
           <div className="w-full">
             <Breadcrumbs {...{ siteNav, slug }} />
             <h1 className="break-words searchme">{title}</h1>
@@ -142,8 +148,8 @@ const ContactPage = ({ page, slug }) => {
             </ul>
             <p>Hopefully one of those will work out for you.</p>
           </div>
-        </div>
-        <div className="w-1/4 mt-8 hidden xl:block max-w-sm">
+        </BaseLayoutProse>
+        <BaseLayoutRight>
           <FreeSewingIcon className="w-1/2" />
           <h4>Hi, my name is Skully</h4>
           <p>
@@ -169,8 +175,8 @@ const ContactPage = ({ page, slug }) => {
             <br />
             And we want you should join us.
           </p>
-        </div>
-      </div>
+        </BaseLayoutRight>
+      </BaseLayout>
     </PageWrapper>
   )
 }

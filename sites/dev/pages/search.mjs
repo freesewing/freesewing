@@ -8,6 +8,12 @@ import { Search } from 'site/components/search.mjs'
 import { Popout } from 'shared/components/popout.mjs'
 import { PageLink } from 'shared/components/page-link.mjs'
 import { NavLinks, Breadcrumbs, MainSections } from 'shared/components/navigation/sitenav.mjs'
+import {
+  BaseLayout,
+  BaseLayoutLeft,
+  BaseLayoutProse,
+  BaseLayoutRight,
+} from 'shared/components/base-layout.mjs'
 
 const SearchPage = ({ page, slug }) => {
   /*
@@ -25,21 +31,21 @@ const SearchPage = ({ page, slug }) => {
 
   return (
     <PageWrapper {...page}>
-      <div className="flex flex-row items-start mt-8 w-full justify-between 2xl:px-36 xl:px-12 px-4">
-        <div className="max-w-96 w-1/4 mt-8 hidden lg:block">
+      <BaseLayout>
+        <BaseLayoutLeft>
           <MainSections {...{ siteNav, slug }} />
           <NavLinks {...{ siteNav, slug }} />
-        </div>
-        <div className="grow w-full m-auto max-w-prose mt-0 mb-8">
+        </BaseLayoutLeft>
+        <BaseLayoutProse>
           <div className="w-full">
             <Breadcrumbs {...{ siteNav, slug }} />
             <h1 className="break-words searchme">{title}</h1>
             <div className="block xl:hidden">{tip}</div>
           </div>
           <Search />
-        </div>
-        <div className="max-w-96 w-1/4 mt-8 hidden xl:block">{tip}</div>
-      </div>
+        </BaseLayoutProse>
+        <BaseLayoutRight>{tip}</BaseLayoutRight>
+      </BaseLayout>
     </PageWrapper>
   )
 }
