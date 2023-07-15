@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { useContext } from 'react'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
 import { pageHasChildren, oneUpSlug, maxPovDepthSlug, isSlugPart } from 'shared/utils.mjs'
-import { getRoot } from 'shared/components/mdx/read-more.mjs'
 import { siteConfig } from 'site/site.config.mjs'
 import get from 'lodash.get'
 import { HomeIcon, RightIcon, BulletIcon } from 'shared/components/icons.mjs'
@@ -43,7 +42,7 @@ const SectionLink = ({ skey, tree, slug }) =>
   tree[skey].s === slug ? (
     <>
       <span className="pl-2 border-l-2 py-2 block w-full border-secondary bg-opacity-10">
-        {tree[skey].t} fixme-sectionlink-1
+        {tree[skey].t}
       </span>
       {pageHasChildren(tree[skey]) && <Section tree={tree[skey]} slug={slug} />}
     </>
@@ -53,7 +52,7 @@ const SectionLink = ({ skey, tree, slug }) =>
         href={`/${tree[skey].s}`}
         className="pl-2 border-l-2 py-2 block w-full hover:border-secondary hover:bg-secondary hover:bg-opacity-10"
       >
-        {tree[skey].t} fixme-sectionlink-2
+        {tree[skey].t}
       </Link>
       {pageHasChildren(tree[skey]) && <Section tree={tree[skey]} slug={slug} />}
     </>
@@ -62,7 +61,7 @@ const SectionLink = ({ skey, tree, slug }) =>
       href={`/${tree[skey].s}`}
       className="pl-2 border-l-2 py-2 block w-full hover:border-secondary hover:bg-secondary hover:bg-opacity-10"
     >
-      {tree[skey].t} fixme-sectionlink-3
+      {tree[skey].t}
     </Link>
   )
 
@@ -89,7 +88,7 @@ const Section = ({
                 'bg-secondary bg-opacity-10'
               }
             >
-              {page.t} fixme-section-1
+              {page.t}
             </span>
             {pageHasChildren(page) && <Section tree={page} slug={slug} />}
           </>
@@ -114,19 +113,17 @@ const MainLink = ({
 }) => {
   const classes =
     '' +
-    'break-all py-2 px-2 block w-full font-medium ' +
+    'break-all py-2 px-2 block w-full font-bold text-lg ' +
     'flex flex-row items-start gap-0.5 lg:gap-1 border-l-2'
 
   return s === slug ? (
-    <span className={`${classes} border-secondary bg-secondary bg-opacity-10`}>
-      {t} fixme-main-1
-    </span>
+    <span className={`${classes} border-secondary bg-secondary bg-opacity-10`}>{t}</span>
   ) : (
     <Link
       href={`/${s}`}
       className={`${classes} border-transparent hover:border-secondary hover:bg-secondary hover:bg-opacity-10`}
     >
-      {t} fixme-main-2
+      {t}
     </Link>
   )
 }
@@ -177,37 +174,26 @@ export const Breadcrumbs = ({ slug, siteNav }) => {
 /*
  * A React component to render sidebar navigation based on the siteNav object and current slug
  *
+ * The main sections are determined in the use-navigation hook.
+ * We always display the navigation as:
+ *   - Always show all top-level entries
+ *   - Always show all direct children of all top-level entries (this allows for better discoverability)
+ *   - If we're deeper down, only expand the active page
+ *
  * @param slug          {string}    - The slug of the current page
  * @param siteNav       {object}    - The siteNav object from the useNavigation hook
  * @param ignorecontrol {boolean}   - Whether or not to ignore the control setting of the user to hide certain things
  */
-export const NavLinks = ({ slug, siteNav, ignoreControl = false }) => {
-  /*
-   * Point of view from which we'll render the side navigation
-   * We descend only to a maximum level
-   */
-  let tree = getRoot[siteConfig.tld](maxPovDepthSlug(slug, siteConfig.tld), siteNav)
-  let hIsOk = false // hide top-level stuff
-  // If we're on a main section page, just show the entire tree
-  if (tree.m) {
-    tree = siteNav
-    hIsOk = true
-  }
-
-  /*
-   * Return navigation
-   */
-  return (
-    <ul className="w-full list mb-8 mt-3">
-      {onlyValidChildren(tree, hIsOk).map((page, i) => (
-        <li key={i} className="w-full">
-          <MainLink s={page.s} t={page.t} slug={slug} />
-          {pageHasChildren(page) && <Section {...{ tree: page, slug }} />}
-        </li>
-      ))}
-    </ul>
-  )
-}
+export const NavLinks = ({ slug, siteNav, ignoreControl = false }) => (
+  <ul className="w-full list mb-8 mt-3">
+    {onlyValidChildren(siteNav).map((page, i) => (
+      <li key={i} className="w-full">
+        <MainLink s={page.s} t={page.t} slug={slug} />
+        {pageHasChildren(page) && <Section {...{ tree: page, slug }} />}
+      </li>
+    ))}
+  </ul>
+)
 
 /*
  * A React component to render sidebar navigation for the main sections
