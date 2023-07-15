@@ -6,7 +6,7 @@ import { NavigationContext } from 'shared/context/navigation-context.mjs'
 
 export const ns = navNs
 
-export const DocsLayout = ({ children = [], pageTitle = false }) => {
+export const DefaultLayout = ({ children = [], pageTitle = false }) => {
   const { crumbs } = useContext(NavigationContext)
 
   return (
