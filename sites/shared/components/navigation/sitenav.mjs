@@ -22,7 +22,7 @@ import { icons } from 'shared/components/navigation/primary.mjs'
  */
 const onlyValidChildren = (tree, hIsOk = false) =>
   orderBy(tree, ['o', 't'], ['asc', 'asc']).filter(
-    (entry) => typeof entry === 'object' && entry.t !== 'spacer' && !entry.h && !entry.m
+    (entry) => typeof entry === 'object' && entry.t !== 'spacer' && !entry.h
   )
 
 /*
@@ -39,7 +39,7 @@ const onlyMainSections = (tree) =>
   orderBy(tree, ['o', 't'], ['asc', 'asc']).filter((entry) => entry.m)
 
 const SectionLink = ({ skey, tree, slug }) =>
-  tree[skey].s === slug ? (
+  tree[skey]._ ? null : tree[skey].s === slug ? ( // Underscore means always hide
     <>
       <span className="pl-2 border-l-2 py-2 block w-full border-secondary bg-opacity-10">
         {tree[skey].t}
@@ -189,7 +189,7 @@ export const NavLinks = ({ slug, siteNav, ignoreControl = false }) => (
     {onlyValidChildren(siteNav).map((page, i) => (
       <li key={i} className="w-full">
         <MainLink s={page.s} t={page.t} slug={slug} />
-        {pageHasChildren(page) && <Section {...{ tree: page, slug }} />}
+        {pageHasChildren(page) && !page.n && <Section {...{ tree: page, slug }} />}
       </li>
     ))}
   </ul>

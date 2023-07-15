@@ -4,7 +4,6 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { BareLayout as Layout } from 'site/components/layouts/bare.mjs'
 import { TranslationStatus } from 'site/components/crowdin/status.mjs'
 import { Translators } from 'site/components/crowdin/translators.mjs'
 import { Popout } from 'shared/components/popout.mjs'
@@ -20,26 +19,29 @@ const TranslationPage = ({ page }) => {
   const title = t('translation:translation')
 
   return (
-    <PageWrapper {...page} layout={Layout}>
-      <div className="max-w-4xl mx-auto p-4 mt-4">
-        <Breadcrumbs crumbs={[{ s: 'translation', t: title }]} title={title} />
-
-        <h1>{title}</h1>
+    <PageWrapper {...page} title={title}>
+      <div className="max-w-2xl">
         <p>{t('translation:proudlyMultilingual')}</p>
 
-        <Popout tip>
-          <h5>{t('translation:getInvolved')}</h5>
-          <p>{t('translation:teamEffort')}</p>
-          <Link href="/translation/join" className="btn btn-accent mr-2">
-            {t('translation:joinTheTeam')}
-          </Link>
-          <a
-            href="https://freesewing.dev/guides/translation"
-            className="btn btn-accent btn-outline"
-          >
-            {t('translation:seeTranslationGuide')}
-          </a>
-        </Popout>
+        <div className="max-w-2xl">
+          <Popout tip>
+            <h5>{t('translation:getInvolved')}</h5>
+            <p>{t('translation:teamEffort')}</p>
+            <p>
+              <Link href="/translation/join" className="btn btn-accent mr-2">
+                {t('translation:joinTheTeam')}
+              </Link>
+            </p>
+            <p>
+              <a
+                href="https://freesewing.dev/guides/translation"
+                className="btn btn-accent btn-outline"
+              >
+                {t('translation:seeTranslationGuide')}
+              </a>
+            </p>
+          </Popout>
+        </div>
 
         <h2 id="status">Translation Status</h2>
         <TranslationStatus />
@@ -91,23 +93,29 @@ const TranslationPage = ({ page }) => {
             <b>{t('locales:uk')}</b>
           </li>
         </ul>
-        <Popout tip>
-          <h5>{t('translation:addLanguage1')}</h5>
-          <p>
-            {t('translation:addLanguage2')}
-            <br />
-            {t('translation:addLanguage3')}
-          </p>
-          <Link href="/translation/suggest-language" className="btn btn-accent mr-2">
-            {t('translation:suggestLanguage')}
-          </Link>
-          <a
-            href="https://freesewing.dev/guides/translation"
-            className="btn btn-accent btn-outline"
-          >
-            {t('translation:seeTranslationGuide')}
-          </a>
-        </Popout>
+        <div className="max-w-3xl">
+          <Popout tip>
+            <h5>{t('translation:addLanguage1')}</h5>
+            <p>
+              {t('translation:addLanguage2')}
+              <br />
+              {t('translation:addLanguage3')}
+            </p>
+            <p>
+              <Link href="/translation/suggest-language" className="btn btn-accent mr-2">
+                {t('translation:suggestLanguage')}
+              </Link>
+            </p>
+            <p>
+              <a
+                href="https://freesewing.dev/guides/translation"
+                className="btn btn-accent btn-outline"
+              >
+                {t('translation:seeTranslationGuide')}
+              </a>
+            </p>
+          </Popout>
+        </div>
       </div>
     </PageWrapper>
   )

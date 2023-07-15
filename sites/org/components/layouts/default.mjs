@@ -1,26 +1,43 @@
+// Hooks
 import { useContext } from 'react'
-// Components
-import { AsideNavigation, ns as navNs } from 'shared/components/navigation/aside.mjs'
-import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
+import { useNavigation } from 'site/hooks/use-navigation.mjs'
+// Context
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
+// Components
+//import { AsideNavigation, ns as navNs } from 'shared/components/navigation/aside.mjs'
+//import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
+//import { NavigationContext } from 'shared/context/navigation-context.mjs'
 
-export const ns = navNs
+import { BaseLayout, BaseLayoutLeft, BaseLayoutWide } from 'shared/components/base-layout.mjs'
+import { NavLinks, Breadcrumbs, MainSections } from 'shared/components/navigation/sitenav.mjs'
 
-export const DefaultLayout = ({ children = [], pageTitle = false }) => {
-  const { crumbs } = useContext(NavigationContext)
+export const ns = [] //navNs
+
+export const DefaultLayout = ({ children = [], slug, pageTitle = false }) => {
+  const { siteNav } = useNavigation({ ignoreControl: true })
 
   return (
-    <div className="grid grid-cols-4 mx-auto justify-center place-items-stretch">
-      <AsideNavigation />
-      <section className="col-span-4 lg:col-span-3 py-8 lg:py-24 px-4 lg:pl-8 bg-base-50">
+    <BaseLayout>
+      <BaseLayoutLeft>
+        {slug ? (
+          <>
+            <MainSections {...{ siteNav, slug }} />
+            <NavLinks {...{ siteNav, slug }} />
+          </>
+        ) : (
+          <p>Slug not passed to layout</p>
+        )}
+      </BaseLayoutLeft>
+
+      <BaseLayoutWide>
         {pageTitle && (
           <div className="xl:pl-4">
-            <Breadcrumbs crumbs={crumbs} title={pageTitle} />
+            {slug && <Breadcrumbs {...{ siteNav, slug }} />}
             <h1 className="break-words">{pageTitle}</h1>
           </div>
         )}
         <div className="xl:pl-4">{children}</div>
-      </section>
-    </div>
+      </BaseLayoutWide>
+    </BaseLayout>
   )
 }

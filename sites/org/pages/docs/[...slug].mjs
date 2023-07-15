@@ -11,6 +11,7 @@ import { Spinner } from 'shared/components/spinner.mjs'
 import { components } from 'shared/components/mdx/index.mjs'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { Toc } from 'shared/components/mdx/toc.mjs'
+import { DocsLayout } from 'site/components/layouts/docs.mjs'
 
 /*
  * PLEASE READ THIS BEFORE YOU TRY TO REFACTOR THIS PAGE
@@ -61,7 +62,11 @@ const HeadInfo = ({ frontmatter, locale, slug }) => (
 )
 
 export const Page = ({ page, frontmatter, slug, locale, MDX }) => (
-  <PageWrapper {...page} title={frontmatter.title}>
+  <PageWrapper
+    {...page}
+    title={frontmatter.title}
+    layout={(props) => <DocsLayout {...props} {...{ slug, frontmatter }} />}
+  >
     <HeadInfo {...{ frontmatter, locale, slug }} />
     <div className="flex flex-row-reverse flex-wrap xl:flex-nowrap justify-end">
       {frontmatter.toc && frontmatter.toc.length > 0 && (

@@ -31,10 +31,16 @@ export const PageWrapper = (props) => {
   const pageTitle = props.t ? props.t : props.title ? props.title : null
 
   /*
+   * Slug should come from page props.path not from context
+   * which won't be available in SSR
+   */
+  const slug = path.join('/')
+
+  /*
    * Contexts
    */
   const { modalContent } = useContext(ModalContext)
-  const { setNavigation, slug } = useContext(NavigationContext)
+  const { setNavigation } = useContext(NavigationContext)
 
   /*
    * This forces a re-render upon initial bootstrap of the app
@@ -73,7 +79,7 @@ export const PageWrapper = (props) => {
   //const [search, setSearch] = useState(false)
 
   // Helper object to pass props down (keeps things DRY)
-  const childProps = { footer, header, pageTitle }
+  const childProps = { footer, header, pageTitle, slug }
 
   // Make layout prop into a (uppercase) component
   const Layout = layout

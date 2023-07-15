@@ -12,6 +12,7 @@ export const LayoutWrapper = ({
   setSearch,
   noSearch = false,
   header = false,
+  footer = true,
 }) => {
   const ChosenHeader = header ? header : Header
 
@@ -70,7 +71,7 @@ export const LayoutWrapper = ({
           <div className="fixed top-0 left-0 w-full min-h-screen bg-neutral z-20 bg-opacity-70"></div>
         </>
       )}
-      <Footer />
+      {footer && <Footer />}
     </div>
   )
 }
