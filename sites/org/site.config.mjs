@@ -21,4 +21,5 @@ export const siteConfig = {
   languages: i18nConfig.i18n.locales,
   languagesWip: [],
   site: 'FreeSewing.org',
+  tld: 'org',
 }

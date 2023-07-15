@@ -67,7 +67,7 @@ export const NavigationContextProvider = ({ children }) => {
   })
   const [extraPages, setExtraPages] = useState([])
 
-  const rawSiteNav = useNavigation({ path: value.path, locale: value.locale })
+  const { siteNav: rawSiteNav, slugLut } = useNavigation({ path: value.path, locale: value.locale })
 
   const siteNav = useMemo(() => {
     const nav = cloneDeep(rawSiteNav)
@@ -86,7 +86,7 @@ export const NavigationContextProvider = ({ children }) => {
   }
 
   return (
-    <NavigationContext.Provider value={{ ...value, ...navState }}>
+    <NavigationContext.Provider value={{ ...value, ...navState, slugLut }}>
       {children}
     </NavigationContext.Provider>
   )

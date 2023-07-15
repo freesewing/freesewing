@@ -10,7 +10,7 @@ import { Spinner } from 'shared/components/spinner.mjs'
 import { components } from 'shared/components/mdx/index.mjs'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { Toc } from 'shared/components/mdx/toc.mjs'
-import { PrevNext } from 'shared/components/mdx/prev-next.mjs'
+import { PrevNext } from 'shared/components/prev-next.mjs'
 
 export const ns = pageNs
 
@@ -71,7 +71,7 @@ export const DocsPage = ({ page, slug, locale, site, mdx }) => {
         )}
         <div>
           {mdxContent}
-          <PrevNext />
+          <PrevNext slug={slug} />
         </div>
       </div>
     </PageWrapper>

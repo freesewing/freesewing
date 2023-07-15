@@ -1,0 +1,23 @@
+---
+author: "joostdecock"
+caption: "Gardez vos vêtements faits maison propres en cuisinant avec le tablier Albert"
+date: "2020-10-17"
+image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/192f0da76422475ea9a36b7988d70f69bb89bbaf-1920x1282.jpg"
+intro: "Que feriez-vous si votre fille avait besoin d'un tablier pour l'école ?"
+title: "Nous avons un tablier maintenant : FreeSewing 2.10 vous apporte Albert, un humble patron de tablier"
+---
+
+
+Que feriez-vous si votre fille avait besoin d'un tablier pour l'école ?
+
+ - Vous rendriez-vous au magasin pour en acheter un ?
+ - Ou allumeriez-vous votre machine pour en coudre un ?
+ - Pourriez-vous vous dire _hmm, il faire un patron d'abord_ puis partager votre patron FreeSewing afin que tout le monde puisse maintenant avoir un tablier ?
+
+Parce que [c'est ce que Wouter a fait](/showcase/albert-by-wouter/), donc nous l'avons intégré dans FreeSewing v2.10, et [voilà](/designs/albert/).
+
+![Fille de Wouter portant le tablier Albert](albert.jpg)
+
+
+
+

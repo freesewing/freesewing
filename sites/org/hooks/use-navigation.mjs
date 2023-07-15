@@ -3,6 +3,8 @@ import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { designs, tags } from 'shared/config/designs.mjs'
 import { objUpdate } from 'shared/utils.mjs'
+import { orderedSlugLut } from 'shared/hooks/use-navigation-helpers.mjs'
+import { useRouter } from 'next/router'
 import { useEffect, useState, useMemo } from 'react'
 
 /*
@@ -156,9 +158,12 @@ const sitePages = (t = false, control = 99) => {
   return pages
 }
 
-export const useNavigation = (params = {}) => {
-  const { locale = 'en', ignoreControl } = params
+export const useNavigation = ({ ignoreControl = false }) => {
+  // Passing in the locale is not very DRY so let's just grab it from the router
+  const { locale } = useRouter()
+  // We need translation
   const { t } = useTranslation(ns)
+  // We need the account if we want to take control into account
   const { account } = useAccount()
 
   const [navigation, setNavigation] = useState({})
@@ -174,7 +179,10 @@ export const useNavigation = (params = {}) => {
       // Set order on docs key (from from prebuild navigation)
       nav.docs.o = 30
 
-      setNavigation(nav)
+      setNavigation({
+        siteNav: nav,
+        slugLut: orderedSlugLut(nav),
+      })
     })
   }, [locale, t, control])
 
