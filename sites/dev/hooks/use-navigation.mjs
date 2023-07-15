@@ -91,6 +91,9 @@ export const useNavigation = () => {
     siteNav[page].i = 1
   }
 
+  // Hide contact from the sitenav
+  siteNav.contact.h = 1
+
   return {
     siteNav, // Site navigation
     slugLut: orderedSlugLut(siteNav), // Slug lookup table
