@@ -1,0 +1,16 @@
+---
+maker: "Wouter.vdub"
+caption: "Très bon résultat pour une toile"
+date: "2017-12-11"
+image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f3126799846dc9ea9aecb423e7283bb715db93b4-3724x2785.jpg"
+intro: "Un test de Florent pour voir si le patron fonctionne pour les autres, par Wouter.vdub"
+title: "Un test de Florent pour voir si le patron fonctionne pour les autres, par Wouter.vdub"
+---
+
+![Photo de l'avant](https://posts.freesewing.org/uploads/florent_by_wouter_high_back_20ec93b7c1.jpg "Photo de l'avant")
+
+Wouter écrit :
+
+> Cela a été réalisé en tant que toile, et bien que la précision ait été de mise, certains aspects auraient pu être améliorés en utilisant des points à la main, au lieu de coudre à la machine.
+> 
+> De plus, le patron a été imprimé avec la marge`standard` de 1 cm, et cela a été pris dans la couture arrière après que les morceaux aient été découpés.
