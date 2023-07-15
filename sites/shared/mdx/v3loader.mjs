@@ -6,11 +6,14 @@ import { jargon } from 'shared/jargon/index.mjs'
 import { compile } from '@mdx-js/mdx'
 
 import { getMdxConfig } from 'shared/config/mdx.mjs'
+import { remarkIntroPlugin } from './remark-intro-plugin.mjs'
+import mdxPluginToc from './mdx-plugin-toc.mjs'
 
 export const mdxLoader = async (language, site, slug) => {
   let mdxFile
   const intro = []
-  const mdxConfig = getMdxConfig({ site, jargon, slug, intro })
+  const mdxConfig = getMdxConfig({ site, jargon, slug })
+  mdxConfig.options.remarkPlugins.push(mdxPluginToc, [remarkIntroPlugin, { intro }])
 
   // TODO will this work on windows?
   try {

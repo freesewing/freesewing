@@ -24,13 +24,12 @@ const jargonTransform = (term, html) => `<details class="inline jargon-details">
   <div class="jargon-info">
   ${html}</div></details>`
 
-export const getMdxConfig = ({ site, jargon, slug, intro = [] }) => ({
+export const getMdxConfig = ({ site, jargon, slug }) => ({
   extension: /\.mdx?$/,
   options: {
     providerImportSource: '@mdx-js/react',
     format: 'mdx',
     remarkPlugins: [
-      [remarkIntroPlugin, { intro }],
       remarkFrontmatter,
       remarkMdxFrontmatter,
       remarkGfm,
@@ -43,7 +42,8 @@ export const getMdxConfig = ({ site, jargon, slug, intro = [] }) => ({
           staticPath: '/mdx/',
         },
       ],
-      mdxPluginToc,
+      // [remarkIntroPlugin, { intro }],
+      // mdxPluginToc,
     ],
     rehypePlugins: [
       [rehypeJargon, { jargon, transform: jargonTransform }],

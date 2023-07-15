@@ -55,13 +55,9 @@ export default function mdxToc(options = {}) {
   options = { ...defaultOptions, options }
   return (node) => {
     const slugger = new GithubSlugger()
-    const esm = node.children.filter((child) => child.type === 'mdxjsEsm')
-    if (
-      esm &&
-      esm.length === 1 &&
-      esm[0].data?.estree?.body?.[0]?.declaration?.declarations?.[0]?.init?.properties
-    )
-      esm[0].data.estree.body[0].declaration.declarations[0].init.properties.push(
+    const esm = node.children.find((child) => child.type === 'mdxjsEsm')
+    if (esm && esm.data?.estree?.body?.[0]?.declaration?.declarations?.[0]?.init?.properties)
+      esm.data.estree.body[0].declaration.declarations[0].init.properties.push(
         tocAsProperty(extractToc(node, options, slugger))
       )
 
