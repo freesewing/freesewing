@@ -1,5 +1,5 @@
 ---
-title: "Hood depth"
+title: "Capuchon diepte"
 ---
 
 ![Capuchon diepte](./hooddepth.svg)
