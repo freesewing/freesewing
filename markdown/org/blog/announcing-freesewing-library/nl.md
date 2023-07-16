@@ -1,9 +1,9 @@
 ---
 author: "joostdecock"
-caption: "Ik drink niet, maar dit leek me gepast voor een feestpost ¯\\_(ツ)_/¯"
+caption: "Ik drink niet, maar dit leek me gepast voor een feestpost ¯\_(ツ)_/¯"
 date: "2018-08-25"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a6b5a3918ad412f7fb434413fafcc82107109d87-1920x1276.jpg"
-intro: "Precies een jaar geleden zwaaiden de deuren van FreeSewing.org open voor onze gebruikers. Op die van MakeMyPattern.com plakten we van die  -bordjes."
+intro: "Het eerste verjaardagsfeestje van FreeSewing.org, en de nieuwe FreeSewing-bibliotheek"
 title: "Het eerste verjaardagsfeestje van FreeSewing.org, en de nieuwe FreeSewing-bibliotheek"
 ---
 
@@ -52,7 +52,7 @@ Dit zit momenteel in versie 0.10 en heeft alle functies van FreeSewing core. Je 
 
 De API is rijker dan die van core. En toch heeft het een veel kleinere voetafdruk:
 
-![Vergelijking van de code tussen de nieuwe bibliotheek en (relevante delen van) de FreeSewing-core](corevsfreesewing.svg)
+![Vergelijking van de code tussen de nieuwe bibliotheek en (relevante delen van) de FreeSewing-core](https://posts.freesewing.org/uploads/corevsfreesewing_c9327c9fa3.svg)
 
 Als je nog niet zeker was: dat is goed nieuws.
 
@@ -78,5 +78,4 @@ Maar ik geloof dat als we nu investeren in een gestroomlijnde development-ervari
 Als we een paar extra patronen willen, dan is dit niet de juiste aanpak. Maar als we véél meer patronen willen, dan is het dat volgens mij wel.
 
 En ik wil veel meer patronen.
-
 
