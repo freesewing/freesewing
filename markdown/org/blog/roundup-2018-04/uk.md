@@ -1,25 +1,25 @@
 ---
 author: "joostdecock"
-caption: "Your login background for May"
+caption: "Ваша історія входу в систему за травень"
 date: "2018-04-30"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/992689c621b6b83a80706620ae5cd92262dcf4bd-1920x1273.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - April 2018: Calm before the storm"
+intro: "Це ваш щомісячний огляд новин фрітрекінгу за останні чотири тижні, а також погляд на те, що чекає на нас у наступному місяці."
+title: "Щомісячний огляд - квітень 2018: Затишшя перед бурею"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Це ваш щомісячний огляд новин фрітрекінгу за останні чотири тижні, а також погляд на те, що чекає на нас у наступному місяці.
 
-## Looking back at April
+## Озираючись на квітень
 
-Did you get them? All those emails, notifications, and popups from companies informing you that they've made some changes to their privacy policy, or the way they handle your data, and would you please agree to these changes?
+Ви їх отримали? Всі ці електронні листи, сповіщення та спливаючі вікна від компаній, які інформують вас про те, що вони внесли деякі зміни до своєї політики конфіденційності або способу обробки ваших даних, і чи погоджуєтесь ви з цими змінами?
 
-I bet you did, as did I. And with each one of them, I grow a bit more nervous as the GDPR deadline of May 25th is approaching, yet I'm not ready yet to send you one of those emails.
+Б'юся об заклад, що ви так і зробили, як і я. І з кожним з них я все більше нервую, оскільки наближається крайній термін GDPR - 25 травня, але я ще не готовий надіслати вам одного з цих листів.
 
-Our [carefully laid plans](/blog/gdpr-plan/) are but a small part of the changes we're working on, and that's why it's all taking a bit longer than expected.
+Наші [ретельно розроблені плани](/blog/gdpr-plan/) - це лише невелика частина змін, над якими ми працюємо, і саме тому все це займає трохи більше часу, ніж очікувалося.
 
-I could write a bit more about it, but I've got a ton of work to do and very little time to do it in. So if it's all the same, I think I'd rather get back to work.
+Я міг би написати про це трохи більше, але у мене дуже багато роботи і дуже мало часу. Тож, якщо це все одно, я думаю, що краще повернуся до роботи.
 
-## Looking ahead to May
+## Забігаючи наперед до травня
 
-Expect changes. A lot of changes. Nothing to worry about though 😉
+Очікуйте змін. Багато змін. Але турбуватися немає про що 😉.
 
