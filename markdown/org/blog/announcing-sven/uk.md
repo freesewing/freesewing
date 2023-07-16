@@ -1,19 +1,19 @@
 ---
 author: "joostdecock"
-caption: "A Sven made for the office. As in, kinda boring"
+caption: "Свен, зроблений для офісу. Тобто, трохи нудно"
 date: "2017-07-09"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b0c9b0cb38bce095739109946a99b6cda63e7cd9-1000x667.jpg"
-intro: "Winter caused me to design this pattern. I was cold, and needed some sweaters, so what does one do?"
-title: "Announcing the Sven Sweater; A basic sweater based on the Brian body block"
+intro: "Зима спонукала мене створити цей візерунок. Мені було холодно, і мені потрібні були светри, що ж робити?"
+title: "Анонсуємо светр Sven; базовий светр на основі боді-блоку Brian"
 ---
 
-Winter caused me to design this pattern. I was cold, and needed some sweaters, so what does one do?
+Зима спонукала мене створити цей візерунок. Мені було холодно, і мені потрібні були светри, що ж робити?
 
-Sven stayed under the radar until now because I designed it on the (then unreleased) freesewing platform, and until now I didn't have a place to show it to people.
+Досі Свен залишався поза увагою, тому що я розробив його на платформі freesewing (тоді ще не випущеній), і до цього часу мені не було де показати його людям.
 
-That's how we got here. Now about that sweater: It's a simple design based on the Brian body block. I've made three different version myself, changing the neckline and fabrics, and it really does what it needs to do very well (as in, keep me warm).
+Так ми сюди потрапили. Тепер про светр: Це простий дизайн, заснований на боді-блоці Брайана. Я сама зробила три різні версії, змінюючи виріз і тканини, і вона справді дуже добре виконує свою функцію (наприклад, зігріває мене).
 
-## Pictures or it didn't happen
+## Фотографії або цього не було
 
-Check out the [Sven showcases](/showcase/pattern/sven) for some samples.
+Погляньте на вітрини [та](/showcase/pattern/sven) , щоб побачити деякі зразки.
 
