@@ -1,5 +1,5 @@
 ---
-title: "Штани-обгортки Waralee"
+title: "Штани з запахом Варалі"
 ---
 
 <PatternDocs pattern='waralee' />
