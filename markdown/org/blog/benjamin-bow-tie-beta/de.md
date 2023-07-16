@@ -7,18 +7,17 @@ intro: "Unsere Familie an freien und opensource Schnittmustern ist wieder gewach
 title: "Das Schnittmuster für die Fliege Benjamin ist jetzt in der Beta-Version erhältlich. Und ich musste nicht einmal etwas tun."
 ---
 
-
-Unsere Familie an freien und opensource Schnittmustern ist wieder gewachsen, und das neueste Mitglied der Familie ist... [Benjamin](/patterns/benjamin).
+Our family of freesewing patterns has grown once again, and the benjamin of the family is... [Benjamin](/designs/benjamin).
 
 Benjamin ist eine Fliege, die mit einer Vielzahl von Optionen ausgestattet ist, um so ziemlich jeden Aspekt deiner Fliege einstellen zu können.
 
-Du kannst dich für eine maßgeschneiderte Fliege entscheiden oder Benjamin mit einem Einstellband entwerfen, das dir etwas Flexibilität in der Passform ermöglicht. Eine Eigenschaft, die diese Fliege zu einem großartigen handgefertigten Geschenk für die bevorstehende Weihnachtszeit macht.
+Du kannst dich für eine maßgeschneiderte Fliege entscheiden oder Benjamin mit einem Einstellband entwerfen, das dir etwas Flexibilität in der Passform ermöglicht. Something that makes this a great handmade gift for the upcoming holiday season.
 
 ## Benjamin ist vielseitiger und ausgefallener, als man denkt
 
 Hier ist die Geschichte von Benjamin, über die ich mich am meisten freue: Ich habe nichts getan.
 
-![Eine Kollektion von Fliegen von Wouter, der dieses Muster entworfen und programmiert hat](benjamins.jpg)
+![Eine Kollektion von Fliegen von Wouter, der dieses Muster entworfen und programmiert hat](https://posts.freesewing.org/uploads/bowties_4f3e05ec53.jpg)
 
 So ist es, Benjamin wurde von [Wouter van Wageningen](/users/xdpug) designed und erstellt, der sich in den letzten Monaten das Arbeiten mit FreeSewing selbst beigebracht hat:
 
@@ -32,8 +31,7 @@ Als ich Freesewing als Open-Source-Plattform veröffentlichte, hatte ich die Hof
 
 Aber ich hätte nie gedacht, dass weniger als drei Monate nach der öffentlichen Veröffentlichung von FreeSewing wir bereits das erste Schnittmuster, das aus der Community beigesteuert wird, auf FreeSewing veröffentlichen können.
 
-![Benjamin ist eine große Sache](giphy.gif)
+![Benjamin ist eine große Sache](https://posts.freesewing.org/uploads/giphy_7a40f62815.gif)
 
 Also ja, Benjamin ist ein BFD, Wouter ist ein saucooler Typ, und ich bin zuversichtlich, dass dies das erste von vielen Schnittmustern ist, die wir als Gemeinschaft allen zugänglich machen können.
-
 
