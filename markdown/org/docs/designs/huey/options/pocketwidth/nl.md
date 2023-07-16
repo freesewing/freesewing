@@ -1,5 +1,5 @@
 ---
-title: "Pocket width"
+title: "Breedte van de zak"
 ---
 
 ![Breedte van de zak](./pocketwidth.svg)
