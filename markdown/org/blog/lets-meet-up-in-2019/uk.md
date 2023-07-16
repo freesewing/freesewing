@@ -1,60 +1,60 @@
 ---
 author: "joostdecock"
-caption: "As an introvert I don't say this often, but I'd actually like to meet you guys."
+caption: "Як інтроверт, я не часто про це кажу, але я б дуже хотів з вами познайомитися."
 date: "2018-12-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8b5fdb232675b32c7c08b59ffc57e9b9da31f02f-1920x1078.jpg"
-intro: "Let's meet up in 2019! And other end-of-year musings"
-title: "Let's meet up in 2019! And other end-of-year musings"
+intro: "Зустрінемося у 2019 році! І інші роздуми наприкінці року"
+title: "Зустрінемося у 2019 році! І інші роздуми наприкінці року"
 ---
 
 
-Because nobody likes a deadline on New Year's Eve, freesewing traditionally wraps up its year on December 10th. Which means that now is the time to reflect on the past, and look forward to what lies ahead.
+Оскільки ніхто не любить дедлайнів напередодні Нового року, фріскейтинг традиційно завершує свій рік 10 грудня. А це означає, що зараз саме час поміркувати про минуле і зазирнути в майбутнє.
 
-## How do you feel about meeting up?
+## Як ви ставитеся до того, щоб зустрітися?
 
-I'll jump right in: In 2019 I would like to organize a get-together of freesewing supporters and contributors to discuss the future of the project, exchange ideas and experiences. The invitation is open to everyone, so feel free to share this post with others.
+Перейду одразу до справи: У 2019 році я хотів би організувати зустріч прихильників та учасників фріскейтингу, щоб обговорити майбутнє проекту, обмінятися ідеями та досвідом. Запрошення відкрите для всіх, тож не соромтеся поділитися цією публікацією з іншими.
 
-I can't give you any details yet. Not because I'm lazy (which I am, but that's a different story) but because I want to hear from you what you'd like to do/hear/talk about.
+Поки що я не можу розповісти вам жодних подробиць. Не тому, що я лінивий (хоча це зовсім інша історія), а тому, що я хочу почути від вас, що б ви хотіли зробити/почути/поговорити про .
 
-So if this sounds like something you'd like to attend, please share your thoughts, ideas, and suggestions. I've created [a GitHub issue for the matter](https://github.com/freesewing/meetup/issues/1) so that's a good place to leave your input. But social media is a good place too.
+Тож якщо це звучить як щось, що ви хотіли б відвідати, , будь ласка, поділіться своїми думками, ідеями та пропозиціями. Я створив [тему на GitHub з цього питання](https://github.com/freesewing/meetup/issues/1) , тож це гарне місце, де ви можете залишити свій внесок. Але соціальні мережі - це теж хороше місце.
 
-Input on what, you ask? Well, here's some questions that need answers:
+Ви запитаєте, що саме? Що ж, ось кілька запитань, які потребують відповідей:
 
- - When are we going to do this? Next week? August? The last blood moon before the reckoning?
- - Where are we going to do this? Your mom's basement? The parish hall of Oostrozebeke? London? Paris? Montreal? Mar-a-Lago?
- - Is this going to be a 2-hour thing, a Thursday afternoon, or a full weekend?
- - What are we going to talk about. What are we going to do? What would you like to see or hear?
+ - Коли ми це зробимо? Наступного тижня? У серпні? Останній кривавий місяць перед розплатою?
+ - Де ми будемо це робити? Підвал твоєї мами? Парафіяльна зала Оострозебеке? Лондон? Париж? Монреаль? Мар-а-Лаго?
+ - Це буде 2-годинний захід, у четвер після обіду чи на всі вихідні?
+ - Про що ми будемо говорити. Що ми будемо робити? Що б ви хотіли побачити або почути?
 
 
-Once again, nothing is set in stone, and I'm looking forward to hearing from you guys how we could make this memorable.
+Знову ж таки, нічого не висічено на камені, і я з нетерпінням чекаю почути від вас, як ми могли б зробити цей день незабутнім.
 
-So don't be shy, just share.
+Тож не соромтеся, діліться.
 
 ## freesewing 2.0
 
-We have done a lot of work since freesewing.org was launched (only) 16 months ago. We've added new patterns,  built a new website, and we've translated freesewing.org into 4 additional languages in order to remove knowledge of English as a barrier to using the site.
+Ми зробили багато роботи з моменту запуску freesewing.org (лише) 16 місяців тому. Ми додали нові шаблони, створили новий веб-сайт і переклали freesewing.org на 4 додаткові мови, щоб усунути знання англійської мови як бар'єр для користування сайтом.
 
-But we actually did much more this year. For the last 6 months or so, I've been working like crazy on [freesewing 2.0.](https://github.com/freesewing/freesewing). It's a complete rewrite of pretty much every aspect of the project. My reasons for doing so are simple: With the project growing as it does, the fact that I only have two hands and 24 hours in a day is quickly becoming a bottleneck. For freesewing to thrive we must make it simpler for other people to [dive in](https://developer.freesewing.org), and get involved.
+Але насправді ми зробили набагато більше цього року. Останні 6 місяців я працював як божевільний над [freesewing 2.0.](https://github.com/freesewing/freesewing). Це повне переписування майже кожного аспекту проекту. Причини цього прості: З ростом проекту той факт, що у мене є лише дві руки і 24 години на добу, швидко стає вузьким місцем, тому що я маю лише дві руки і 24 години на добу. Для процвітання фріскейтингу ми повинні зробити його простішим для інших людей, щоб вони могли [зануритися у](https://developer.freesewing.org)і долучитися до нього.
 
-As such, I have embarked on a journey to tackle technical debt, and simplify our technology stack. The first big hurdle was [rounded in August](/blog/announcing-freesewing-library) when the JavaScript port of our core platform reached feature parity. Since then, I have ported [several patterns](https://github.com/freesewing/patterns), and currently I am working on [a new backend](https://github.com/freesewing/backend) and [website](https://github.com/freesewing/website).
+Таким чином, я розпочав подорож, щоб вирішити проблему технічного боргу та спростити наш стек технологій . Перша велика перешкода була [подолана в серпні](/blog/announcing-freesewing-library) , коли порт JavaScript нашої основної платформи досяг функціонального паритету. З того часу я портував [кілька шаблонів](https://github.com/freesewing/patterns), і зараз працюю над [новим бекендом](https://github.com/freesewing/backend) і [сайту](https://github.com/freesewing/website).
 
-The new setup will be faster, more modular, and easier to extend and wrap your head around. Which is crucial for our long-term growth.
+Нове налаштування буде швидшим, більш модульним, і його буде легше розширити та адаптувати до ваших потреб. Що має вирішальне значення для нашого довгострокового зростання.
 
-Unfortunately, this is one of those scenarios where nothing works until everything works. So while you can go to [beta.freesewing.org](https://beta.freesewing.org) now and kick the tires, it's probably going to be a bit of a downer as so much is still broken, or unfinished.
+На жаль, це один з тих сценаріїв, коли нічого не працює, поки не запрацює все. Тож, хоча ви можете зайти на [beta.freesewing.org](https://beta.freesewing.org) вже зараз і приступити до роботи, це, ймовірно, буде трохи сумно, оскільки багато чого ще зламано або незавершено.
 
-So please bear with me as we continue this important behind-the-scenes work. Because while I can't tell you when it will be ready, I really feel it's something worth looking forward to.
+Тож, будь ласка, будьте терплячими, поки ми продовжуємо цю важливу закулісну роботу. Тому що, хоча я не можу сказати вам, коли він буде готовий, я дійсно відчуваю, що це те, на що варто з нетерпінням чекати.
 
-## Oh, and one more thing
+## І ще одне
 
-I'm more of a looking-forward than a looking-back kinda guy, but as I reflect on the year, it is clear to me that the most important thing we did with freesewing, was to team up with [our patrons](/community/who/patrons).
+Я більше дивлюся вперед, ніж озираюся назад, але коли я думаю про рік, мені зрозуміло, що найважливіше, що ми зробили з фріскейтингом, - це об'єднали з [наших меценатів](/community/who/patrons).
 
-Twelve months ago , [we launched our patron project](/blog/calling-all-patrons). Since then, 65 patrons — spread roughly equally among our 3 tiers of patronage — have [stepped forward to support freesewing](/patrons/join). The knock-on effects of these people making a commitment to support our work have surpassed even my most optimistic hopes.
+Дванадцять місяців тому , [ми запустили наш меценатський проект](/blog/calling-all-patrons). З того часу 65 меценатів - розподілені приблизно порівну між нашими 3 рівнями меценатства - зробили [крок назустріч, щоб підтримати фріскейтинг](/patrons/join). Ефект від того, що ці люди взяли на себе зобов'язання підтримувати нашу роботу, перевершив навіть мої найоптимістичніші сподівання.
 
-You may or may not know that I have [made a pledge](/docs/various/pledge) to donate all income from freesewing to charity. So this morning I transferred our entire revenue for the year (**3162.14 euros**) to [Médecins Sans Frontières](https://www.msf.org/) (Doctors Without Borders). Money that will go towards bringing relief to some of the most vulnerable people on this planet.
+Ви можете знати, а можете й не знати, що я [пообіцяв](/docs/various/pledge) жертвувати весь дохід від фрісліфтингу на благодійність. Тож сьогодні вранці я переказала весь наш дохід за рік (**3162,14 євро**) на рахунок [Médecins Sans Frontières](https://www.msf.org/) (Лікарі без кордонів). Гроші, які підуть на допомогу найбільш вразливим людям на нашій планеті.
 
-You made that happen, and if it brings a fraction of the joy to your heart as it does to mine, you'll understand how much your patronage means to me.
+Ви зробили це можливим, і якщо це принесе хоч частку радості вашому серцю, як і моєму, ви зрозумієте, як багато значить для мене ваша меценатська підтримка.
 
-I have, for several years now, put a lot of time and effort into freesewing. And I can honestly say that I've never worked harder on this than I am doing now. But at the same time, it has been easier than ever for me to find the motivation to do so. Every contribution, no matter how small, is like a small patch in a warm blanket of support under which freesewing can thrive.
+Я вже кілька років поспіль вкладаю багато часу і зусиль у фріспівінг. І я можу чесно сказати, що ніколи не працював над цим так старанно, як зараз. Але в той же час, мені було легше, ніж будь-коли, знайти мотивацію для цього. Кожен внесок, незалежно від того, наскільки він малий, - це як маленька латочка в теплій ковдрі підтримки , під якою може процвітати фріспівінг.
 
-So thank you for all this. And let's try to do (even) better next year.
+Тож дякую вам за все це. І давайте спробуємо зробити (ще) краще наступного року.
 
