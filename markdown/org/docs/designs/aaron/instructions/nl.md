@@ -1,5 +1,5 @@
 ---
-title: "Aaron A-Shirt: Naai-instructies"
+title: "Aaron A-Shirt: Sewing Instructions"
 ---
 
 ## Stap 1: Sluit de naden
