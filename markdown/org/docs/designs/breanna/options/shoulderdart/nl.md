@@ -1,5 +1,5 @@
 ---
-title: "Shoulder dart"
+title: "Schouder neep"
 ---
 
 Whether or not to inlude a back shoulder dart to round the back.
