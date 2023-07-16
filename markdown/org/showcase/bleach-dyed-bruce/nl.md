@@ -1,11 +1,12 @@
 ---
-maker: "unknown"
+maker: "onbekend"
 caption: "Dit is gemaakt uit zwarte t-shirtstof die geverfd werd met bleekwater. Voor het ontwerp werden woestijnplanten gebruikt."
 date: "2018-01-21"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9e8834593713a2a6e4903d53e789b430449f947a-1280x960.jpg"
 intro: "Gebleekte Bruce door Reanna"
 title: "Gebleekte Bruce door Reanna"
-designs: ["bruce"]
+designs:
+  - "bruce"
 ---
 
 ![De achterkant van de boxershort hierboven](https://posts.freesewing.org/uploads/bleach_dyed_bruce_1_back_c91de98a99.jpg "De achterkant van de boxershort hierboven")
@@ -14,11 +15,12 @@ designs: ["bruce"]
 
 ![De achterkant van een tweede](https://posts.freesewing.org/uploads/bleach_dyed_bruce_2_back_f97d0b323f.jpg "De achterkant van een tweede")
 
+
 <Note>
 
-###### See the original on Tumblr
-These were taken from [this Tumblr post](http://alderrr.tumblr.com/post/168948306776/christmas-crafting-2-pairs-of-mens-underwear)
-on [the blog](http://alderrr.tumblr.com/) of [@Alderrr](/users/Alderrr).
+###### Bekijk het origineel op Tumblr
+Deze zijn overgenomen van [deze Tumblr-post](http://alderrr.tumblr.com/post/168948306776/christmas-crafting-2-pairs-of-mens-underwear)
+op [de blog](http://alderrr.tumblr.com/) van [@Alderrr](/users/Alderrr).
 
 Ze werden hier gepost met toestemming.
 
