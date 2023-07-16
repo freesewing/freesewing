@@ -1,74 +1,74 @@
 ---
 author: "joostdecock"
-caption: "Your new login background for the month of March"
+caption: "Ваш новий фон для входу в систему на березень"
 date: "2018-02-28"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8e0079e2521a2bf71545d736a2549180902c0d50-1980x1311.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - February 2018: Core 1.7.0 with Sven, Carlton, and Carlita improvements. Plus GDRP, vim, and Jaeger"
+intro: "Це ваш щомісячний огляд новин фрітрекінгу за останні чотири тижні, а також погляд на те, що чекає на нас у наступному місяці."
+title: "Щомісячний огляд - лютий 2018: Ядро 1.7.0 з покращеннями від Sven, Carlton та Carlita. Плюс GDR, vim та Jaeger"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Це ваш щомісячний огляд новин фрітрекінгу за останні чотири тижні, а також погляд на те, що чекає на нас у наступному місяці.
 
-## Looking back at February
+## Озираючись на лютий
 
-I had this secret ambition to release a new pattern every month this year. It's only February and that plan seems to already have gone off the rails.
+У мене була таємна амбіція випускати новий візерунок щомісяця цього року. Зараз лише лютий, а цей план, здається, вже зійшов з рейок.
 
-Let's look at the things that did happen in February before we talk about what didn't.
+Перш ніж говорити про те, що відбулося в лютому, давайте подивимося на те, що відбулося, а що ні.
 
-### Core v1.7.0 is out
+### Вийшло ядро v1.7.0
 
-Earlier today, I pulled the trigger on core release 1.7.0. As usual, [the changelog](https://github.com/freesewing/core/blob/develop/CHANGELOG.md#170) has all the info, but most significant to users are [the new ribbing options in the Sven pattern](/docs/patterns/sven/options#ribbing), as well as a bunch of additional improvements to Carlton/Carlita.
+Сьогодні я випустив реліз ядра 1.7.0. Як завжди, [в журналі змін](https://github.com/freesewing/core/blob/develop/CHANGELOG.md#170) є вся інформація, але найбільш важливими для користувачів є [нові варіанти ребер у візерунку Sven](/docs/patterns/sven/options#ribbing), а також купа додаткових поліпшень Carlton/Carlita.
 
-Those Carlton/Carlita improvements are driven by the fact that myself and [Anneke](/showcase/maker/annekecaramin) have started to work on [the documentation for these patterns](/docs/patterns/carlton/). And every time we write something like *apply fusible interfacing here*, we also go back to the pattern to mark exactly where this fusible needs to go.
+Ці вдосконалення Carlton/Carlita зумовлені тим, що я та [Аннеке](/showcase/maker/annekecaramin) почали працювати над [документацією для цих шаблонів](/docs/patterns/carlton/). І кожного разу, коли ми пишемо щось на кшталт *застосовуємо плавкий інтерфейс тут*, ми також повертаємося до шаблону, щоб позначити, де саме має бути цей плавкий інтерфейс.
 
-Needless to say, that's a bunch of work. But it should help with the construction of these coat patterns, especially for those people for which this is their first time making a coat.
+Зайве казати, що це купа роботи. Але це має допомогти з побудовою цих викрійок пальто, особливо для тих людей, які вперше шиють пальто.
 
-### GDPR battle plan
+### План боротьби з GDPR
 
-I don't want to make it sound like writing a blog post is an achievement these days, but I do think [our *GDRP battle plan* blog post](/blog/gdpr-plan) is worth mentioning because these are important developments, and the workload this generates is significant.
+Я не хочу, щоб це звучало так, ніби написання посту в блозі є досягненням в наші дні, але я дійсно вважаю, що [наш *план битви з НДР* блог](/blog/gdpr-plan) варто згадати, тому що це важливі події, і навантаження, яке це створює, є значним.
 
-While nothing is set in stone yet, the post outlines our plan to tackle GDRP-compliance, something which we'll be focusing on in the next months.
+Хоча ще нічого не вирішено, у цій публікації викладено наш план щодо дотримання вимог GDRP, на якому ми зосередимось у найближчі місяці.
 
 
-### Vim snippets for freesewing core
+### Фрагменти Vim для ядра freesewing
 
-In [a blog post that is the embodiment of the term *niche*](/blog/core-vim-snippets) we announced the availability of a vim plugin that provides freesewing core specific snippets.
+У [блозі, який є втіленням терміну *ніші*](/blog/core-vim-snippets) , ми оголосили про доступність плагіна для vim, який дозволяє вільно використовувати специфічні фрагменти ядра.
 
-Essentially, IF you want to develop patterns and IF you use the vim editor, these are for you.
+По суті, якщо ви хочете розробляти шаблони і якщо ви користуєтеся редактором vim, то це для вас.
 
-Arguably, that's a lot of ifs.
+Можливо, це занадто багато "якщо".
 
-### Jaeger sneak preview
+### Попередній анонс Jaeger
 
-Meet Jaeger, the sports coat pattern that I hoped to release this month.
+Зустрічайте Jaeger, модель спортивного пальта, яку я сподівався випустити цього місяця.
 
-![Jaeger is ready, but I haven't made one yet](jaeger.png")
+![Єгер готовий, але я ще не зробив його](jaeger.png")
 
-Those of you with good memories may remember that I mentioned last month that I would perhaps release this during February. Although back then it still went by a different name.
+Ті з вас, хто має добру пам'ять, можливо, пам'ятають, що минулого місяця я згадував, що я можливо, випущу це протягом лютого. Хоча тоді він ще мав іншу назву.
 
-As I also foreshadowed last month, I did not find the time to make one. As a matter of fact, my most problematic bottle neck in designing new patterns seems to be finding the time to actually make them. Which is all the more problematic with a pattern as involved as a jacket. Truth be told, I'm still not sure where I found the time to make that Carlton coat.
+Як я і передбачав минулого місяця, я не знайшов часу , щоб зробити його. Насправді, найпроблемнішим місцем у розробці нових патернів для мене є пошук часу на їхнє створення. Що ще більш проблематично з таким складним візерунком, як піджак. Чесно кажучи, я досі не знаю, де я знайшла час, щоб пошити це пальто Карлтон.
 
-Anyway, all this to say that the pattern is ready, except that I've never made the latest version of it. And I feel like I can't release it like this.
+У будь-якому випадку, все це для того, щоб сказати, що шаблон готовий, за винятком того, що я ніколи не робив його останню версію. І я відчуваю, що не можу випустити його ось так.
 
-So, if you'd like to make a muslin of this --- or even the real thing --- let me know in the comments, and I'll make sure we'll get you a draft.
+Тож, якщо ви хочете зробити муслін з цього --- або навіть справжню річ --- дайте мені знати в коментарях , і я переконаюся, що ми зробимо для вас проект.
 
-That might also help moving this pattern release forward, for I already know I won't have much time to work on a jacket next month.
+Це також може допомогти просунути випуск викрійки вперед, бо я вже знаю, що не матиму багато часу для роботи над курткою наступного місяця.
 
-Speaking of which...
+До речі, про це...
 
-## Looking ahead to March
+## Забігаючи наперед на березень
 
-I have two weeks of holiday in March (Yay!) the largest part of which I'll be in Bangkok (more Yay!).
+У березні у мене два тижні відпустки (Ура!), більшу частину якої я проведу в Бангкоку (ще раз Ура!).
 
-That means I won't be doing much sewing next month, but there should be some quality time for me and my laptop, so I wanted to tackle one of the larger items on my mid-term todo-list.
+Це означає, що наступного місяця я не буду багато шити, але у мене має бути трохи часу для себе і мого ноутбука, , тому я вирішила взятися за один з великих пунктів у моєму середньостроковому списку справ.
 
-My initial plan was to rewrite core, you can find some details [in this ticket on the matter](https://github.com/freesewing/core/issues/236)
+Моїм початковим планом було переписати ядро, ви можете знайти деякі деталі [в цьому тікеті з цього питання](https://github.com/freesewing/core/issues/236).
 
-However, looking ahead at the months to come, the most pressing issue is that looming GDPR deadline in May which will also require a lot of work.
+Однак, якщо зазирнути в майбутні місяці, то найбільш нагальним питанням є наближення дедлайну GDPR у травні, який також вимагатиме багато роботи.
 
-So, I figured it would make more sense to tackle another thing on the todo list of lofty goals: rewrite the frontend.
+Тож я вирішив, що було б доцільніше зайнятися ще однією справою зі списку високих цілей: переписати фронтенд.
 
-Rather than add yet another pile of jQuery code to handle all the GDPR stuff, the idea is to fork the frontend and port it to [vue.js](https://vuejs.org/). For this too, [there is an open issue where you can follow its progress](https://github.com/freesewing/site/issues/311).
+Замість того, щоб додавати ще одну купу коду jQuery для обробки всіх речей GDPR, ідея полягає в тому, щоб розгалузити фронтенд і перенести його на [vue.js](https://vuejs.org/). Для цього також [є відкрита тема, де ви можете стежити за її ходом](https://github.com/freesewing/site/issues/311).
 
-Given that I have zero experience with vue.js, this should be fun. If you'd like to help out, please leave a comment.
+Враховуючи, що у мене нульовий досвід роботи з vue.js, це має бути весело. Якщо ви хочете допомогти, будь ласка, залиште коментар.
 
