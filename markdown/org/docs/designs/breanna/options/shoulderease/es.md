@@ -1,5 +1,5 @@
 ---
-title: "Shoulder ease"
+title: "Holgura de hombro"
 ---
 
 Controla la cantidad de facilidad en el hombro a medida del hombro.
