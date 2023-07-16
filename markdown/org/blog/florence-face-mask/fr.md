@@ -3,7 +3,7 @@ author: "joostdecock"
 caption: "Retenez les gouttelettes infestées de virus avec notre masque Florence"
 date: "2020-02-28"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d2235dcc38012e87ac402d43e7ae7084a7d7e9b4-1920x1272.jpg"
-intro: "La propagation du coronavirus Covid-19 semble inéluctable et malgré les meilleures tentatives du monde, la possibilité d'une pandémie mondiale devient de plus en plus réelle chaque jour. D'où la question : que peut-on faire ?"
+intro: "Nous venons de publier un patron de masque facial, en raison du coronavirus"
 title: "Nous venons de publier un patron de masque facial, en raison du coronavirus"
 ---
 
@@ -24,5 +24,4 @@ Cela ne concerne que les modalités permettant d'empêcher de se contaminer par 
 Alors quand je suis rentré chez moi, je me suis précipité pour travailler sur un patron de masque facial. Le bon sens dit que ça ne peut pas faire de mal, et peut être est ce utile. Faute de mieux, je veux un joli masque, pas une de ces horreurs qu'on voit aux informations.
 
 Prenez soin de vous.
-
 
