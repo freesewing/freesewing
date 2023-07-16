@@ -1,9 +1,5 @@
-// Dependencies
-import { useContext } from 'react'
 // Hooks
 import { useNavigation } from 'site/hooks/use-navigation.mjs'
-// Contenxt
-import { NavigationContext } from 'shared/context/navigation-context.mjs'
 // Components
 import { SectionsMenu, ns as sectionsNs } from 'site/components/navigation/sections-menu.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
@@ -14,8 +10,7 @@ import { NavLinks, Breadcrumbs } from 'shared/components/navigation/sitenav.mjs'
 
 export const ns = nsMerge(sectionsNs)
 
-export const ModalMenu = () => {
-  const { slug } = useContext(NavigationContext)
+export const ModalMenu = ({ slug }) => {
   const { siteNav } = useNavigation()
 
   return (
