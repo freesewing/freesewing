@@ -258,7 +258,7 @@ dev:
     'playwright': '^1.32.3'
     'remark-extract-frontmatter': '3.2.0'
     'remark-mdx-frontmatter': '3.0.0'
-    'tailwindcss': &tailwindcss '3.3.2'
+    'tailwindcss': &tailwindcss '3.3.3'
     'yaml-loader': '0.8.0'
 
 email:
