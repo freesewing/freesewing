@@ -1,5 +1,5 @@
 ---
-title: "Waist balance"
+title: "Taillenbilanz"
 ---
 
 Steuert die Verteilung des Stoffes zwischen Vorder- und Rückenteilen an der Taille.
