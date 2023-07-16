@@ -1,5 +1,5 @@
 ---
-title: "Cuff ease"
+title: "Overwijdte manchet"
 ---
 
 ![De factor voor overwijdte pols bij Brian](./cuffease.svg)
