@@ -1,25 +1,22 @@
 ---
 author: "joostdecock"
-caption: "Photo by Anna Doschechko [via Pexels]"
+caption: "Foto door Anna Doschechko [via Pexels]"
 date: "2022-01-24"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9c6157f73a050c291cf5441d08c3a74db6670aee-1920x1280.jpg"
-intro: "FreeSewing 2.20: Would you like it smaller? [Niet vertaald]"
-title: "FreeSewing 2.20: Would you like it smaller? [Niet vertaald]"
+intro: "FreeSewing 2.20: Wil je het kleiner?"
+title: "FreeSewing 2.20: Wil je het kleiner?"
 ---
 
-I'm happy to announce that we've released FreeSewing 2.20, which comes with a feature request that was on our roadmap: Better support for doll clothes.
-We have some passionate doll enthusiasts in our community which make sense when you consider that our patterns adapt seamlessly to all sorts of measurements, including those of dolls.
+Ik ben blij te kunnen aankondigen dat we FreeSewing 2.20 hebben uitgebracht, met een verzoek om een functie die op onze roadmap stond: Betere ondersteuning voor poppenkleertjes. We hebben een aantal gepassioneerde poppenliefhebbers in onze community, wat logisch is als je bedenkt dat onze patronen zich naadloos aanpassen aan allerlei maten, inclusief die van poppen.
 
-But there's another issue that comes up when generating these tiny patterns, that is that while the pattern itself adapts to the doll measurements, things like font sizes and arrows and logos do not.
-That causes doll patterns to look like a chaotic mess as the things that are typically taking up just a bit of space tend to overwhelm the actual pattern:
+Maar er is nog een ander probleem dat optreedt bij het genereren van deze kleine patronen, namelijk dat het patroon zelf zich wel aanpast aan de afmetingen van de pop, maar dingen als lettergroottes en pijlen en logo's niet. Dat zorgt ervoor dat poppenpatronen er chaotisch uitzien omdat de dingen die normaal gesproken maar een beetje ruimte innemen het eigenlijke patroon overweldigen:
 
-![Image showing a doll pattern with snippets and text obfuscating the pattern](https://posts.freesewing.org/uploads/pres_scale_de0edf2cd7.png "This is Aaron for a 1/10 size doll in 2.19. Not great")
+![Afbeelding van een poppenpatroon met fragmenten en tekst die het patroon versluieren](https://posts.freesewing.org/uploads/pres_scale_de0edf2cd7.png "Dit is Aaron voor een pop in 1/10-formaat in 2.19. Niet geweldig")
 
-![Image showing a doll pattern with snippets and text scaled down](https://posts.freesewing.org/uploads/post_scale_5a422f8c73.png "This is the same Aaron in 2.20. As you can see, it's much better")
+![Afbeelding van een poppenpatroon met knipsels en tekst verkleind](https://posts.freesewing.org/uploads/post_scale_5a422f8c73.png "Dit is dezelfde Aaron in 2.20. Zoals je kunt zien, is het veel beter")
 
-To make this happen, we've added [a new scale setting](/docs/guide/options/scale) that you can find under *Advanced* after enabling *Expert mode*.
-We hope those of you making doll clothes will find this useful, and as always [we look forward to hearing your feedback](https://discord.freesewing.org/).
+Om dit mogelijk te maken, hebben we [een nieuwe schaalinstelling](/docs/guide/options/scale) toegevoegd die je kunt vinden onder *Geavanceerd* na het inschakelen van *Expertmodus*. We hopen dat jullie die poppenkleertjes maken dit nuttig vinden, en zoals altijd [zijn we benieuwd naar jullie feedback](https://discord.freesewing.org/).
 
-## More in this release
+## Meer in deze uitgave
 
-2.20 also packs a bunch of changes and improvements, check the [changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md#2200-2022-01-24) for the full list.
+2.20 bevat ook een heleboel veranderingen en verbeteringen, kijk op [changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md#2200-2022-01-24) voor de volledige lijst.
