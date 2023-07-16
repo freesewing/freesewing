@@ -1,30 +1,30 @@
 ---
 author: "joostdecock"
-caption: "An example Hortensia made by the designer"
+caption: "Приклад Гортензії, зробленої дизайнером"
 date: "2021-02-13"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/01f416518b5bf8fb75dcc8ae3ab2691d5532dd65-2000x1500.jpg"
-intro: "I'm happy to announce the immeadiate availability of our latest FreeSewing pattern: the Hortensia handbag ."
-title: "Say hi to our latest pattern: The Hortensia handbag"
+intro: "Я рада повідомити про швидку доступність нашої останньої викрійки FreeSewing: сумочка Hortensia ."
+title: "Привітайтеся з нашим останнім зразком: Сумочка Hortensia"
 ---
 
 
-I'm happy to announce the immeadiate availability of our latest FreeSewing pattern: [the Hortensia handbag](/designs/hortensia/).
+Я рада повідомити, що наша остання викрійка для FreeSewing вже доступна: [сумочка Hortensia](/designs/hortensia/).
 
-Hortensia's origin story traces back to [@stoffsuchti](https://twitter.com/stoffsuchti) who wanted to create a pattern for a handbag, and was looking for somebody who could implement that design in code.
+Історія створення Гортензії бере свій початок від [@stoffsuchti](https://twitter.com/stoffsuchti) , яка хотіла створити візерунок для сумочки і шукала когось, хто міг би реалізувати цей дизайн у коді.
 
-It was [Wouter](https://github.com/woutervdub) who answered the call and implemented the pattern, making this another success story from the FreeSewing community.
+Саме [Wouter](https://github.com/woutervdub) відгукнувся на заклик і реалізував візерунок, зробивши це ще однією історією успіху від спільноти FreeSewing.
 
-## No measurements needed
+## Вимірювання не потрібні
 
-This is the first pattern on FreeSewing that does not require any measurements to make. There's some options you can choose — to control the size of the handbag for one thing — but since this is a handbag, no measurements are needed.
+Це перша викрійка на FreeSewing, яка не потребує зняття мірок. Ви можете вибрати деякі опції - наприклад, контролювати розмір сумки, але оскільки це сумочка, ніяких вимірювань не потрібно.
 
-This makes Hortensia a great project to make as a gift, since there's no need to worry about fit.
+Це робить Hortensia чудовим проектом для подарунка, оскільки не потрібно турбуватися про розмір.
 
 <Tip>
 
-##### Now show us yours
+##### А тепер покажіть нам свою
 
-If you do make a Hortensia, do [send us pictures](https://discord.freesewing.org/).
+Якщо ви виростите гортензію, надішліть нам фотографії (https://discord.freesewing.org/).
 
 </Tip>
 
