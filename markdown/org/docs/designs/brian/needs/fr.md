@@ -1,5 +1,5 @@
 ---
-title: "Le bloc de corps de Brian : Ce dont vous avez besoin"
+title: "Brian body block: What You Need"
 ---
 
 Pour faire Brian, vous aurez besoin des éléments suivants :
