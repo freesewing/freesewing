@@ -1,5 +1,5 @@
 ---
-title: "Crotch seam bend"
+title: "Buiging kruisnaad"
 ---
 
 Bepaalt de curve van de kruisnaad, die de pasvorm aan je kruis beïnvloedt.
