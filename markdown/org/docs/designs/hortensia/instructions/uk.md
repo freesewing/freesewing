@@ -1,5 +1,5 @@
 ---
-title: "Сумочка Гортензія: Інструкція з пошиття"
+title: "Hortensia handbag: Sewing Instructions"
 ---
 
 ### (Крок 1: Виворітний бік основної тканини
