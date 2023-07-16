@@ -1,5 +1,5 @@
 ---
-title: "Толстовка з капюшоном 'Г'юї': Варіанти дизайну"
+title: "Huey hoodie: Design Options"
 ---
 
 <PatternOptions pattern='huey' />
