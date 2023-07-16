@@ -1,5 +1,5 @@
 ---
-title: "Seperate buttonhole placket"
+title: "Apart knoopsgatenpat"
 ---
 
 ![Apart knoopsgatenpat](seperatebuttonholeplacket.svg)
