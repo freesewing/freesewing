@@ -1,37 +1,27 @@
 ---
 author: "joostdecock"
-caption: "Keep those virus-infesed droplets at bay with our Florence face mask"
+caption: "Hou die druppeltjes vol virussen op afstand met ons Florence mondmasker"
 date: "2020-02-28"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d2235dcc38012e87ac402d43e7ae7084a7d7e9b4-1920x1272.jpg"
-intro: "We just published a face mask pattern, because coronavirus [Niet vertaald]"
-title: "We just published a face mask pattern, because coronavirus [Niet vertaald]"
+intro: "We hebben net een gezichtsmaskerpatroon gepubliceerd, omdat het coronavirus"
+title: "We hebben net een gezichtsmaskerpatroon gepubliceerd, omdat het coronavirus"
 ---
 
 
 
-The spread of the Covid-19 coronavirus seems relentless and despite the world's best attempts, 
-the possibility of a global pandemic is getting more real every day. Which begs the question, what can we do?
+De verspreiding van het Covid-19 coronavirus lijkt meedogenloos en ondanks de beste pogingen van de wereld, wordt de mogelijkheid van een wereldwijde pandemie met de dag reëler. Wat de vraag oproept: wat kunnen we doen?
 
-Perhaps not much, but we can design patterns. So say hi to the [Florence face mask](/designs/florence/), 
-a simple pattern that allows you make your own face masks. One that you can wear all day, 
-because those medical ones aren't exactly comfortable.
+Misschien niet veel, maar we kunnen patronen ontwerpen. Zeg dus hallo aan het [Florence mondmasker](/designs/florence/), een eenvoudig patroon om je eigen mondmaskers te maken. Eentje die je de hele dag kunt dragen, want die medische zijn niet bepaald comfortabel.
 
-Whether or not a face mask actually helps is subject of debate. 
-I've been to-ing and fro-ing a bit about whether to publish a pattern for a face mask. 
-Then — earlier today — I read a [Guardian](https://www.theguardian.com/) article 
-called [Yes, it is worse than the flu: busting the coronavirus myths](https://www.theguardian.com/world/2020/feb/28/coronavirus-truth-myths-flu-covid-19-face-masks). 
-It included the following passage under the *Face masks don’t work* myth:
+Of een gezichtsmasker echt helpt, is onderwerp van discussie. Ik heb er een beetje over getwijfeld of ik een patroon voor een gezichtsmasker zou publiceren. Toen las ik - eerder vandaag - een artikel van [Guardian](https://www.theguardian.com/) met de titel [Yes, it is worse than the flu: busting the coronavirus myths](https://www.theguardian.com/world/2020/feb/28/coronavirus-truth-myths-flu-covid-19-face-masks). Het bevatte de volgende passage onder de *Gezichtsmaskers werken niet* mythe:
 
-> ###### Claim: ‘Face masks don’t work’
->
-> *Wearing a face mask is not an iron clad guarantee that you won’t get sick – viruses can also transmit through the eyes and tiny viral particles, known as aerosols, can still penetrate masks. However, masks are effective at capturing droplets, which is the main transmission route of coronavirus, and some studies have estimated a roughly five-fold protection versus no barrier. If you are likely to be in close contact with someone infected, a mask cuts the chance of the disease being passed on.*
+> ###### Claim: "Gezichtsmaskers werken niet
+> 
+> *Het dragen van een gezichtsmasker is geen waterdichte garantie dat je niet ziek wordt - virussen kunnen zich ook via de ogen verspreiden en kleine virusdeeltjes, bekend als aerosolen, kunnen nog steeds door maskers heen dringen. Maskers zijn echter wel effectief in het opvangen van druppeltjes, de belangrijkste transmissieroute van het coronavirus, en sommige onderzoeken schatten een ongeveer vijfvoudige bescherming ten opzichte van geen barrière. Als je waarschijnlijk in nauw contact komt met iemand die besmet is, verkleint een masker de kans dat de ziekte wordt doorgegeven.*
 
-This only focusses on preventing you from getting coronavirus. 
-There's also the fact that the mask can help (a bit) in keeping you from spreading it further.
-Because the way things are going right now, it looks like we should do every little thing we can to try to slow this thing down.
+Dit is alleen gericht op het voorkomen dat je het coronavirus krijgt. Er is ook het feit dat het masker (een beetje) kan helpen voorkomen dat je het verder verspreidt. Want zoals het nu gaat, lijkt het erop dat we alles moeten doen wat we kunnen om te proberen dit ding af te remmen.
 
-So when I got home, I set out to rush out a face mask pattern. Common sense says it can't hurt, and apparently there's more to it too. 
-If nothing else, I want a cute face mask, not one of the ugly ones you see on the news.
+Dus toen ik thuiskwam, ging ik snel aan de slag met een patroon voor een gezichtsmasker. Gezond verstand zegt dat het geen kwaad kan, en blijkbaar is er ook meer aan de hand. Als het niet anders kan, wil ik een leuk gezichtsmasker, niet zo'n lelijk masker dat je op het nieuws ziet.
 
-Stay safe out there.
+Blijf veilig buiten.
 
