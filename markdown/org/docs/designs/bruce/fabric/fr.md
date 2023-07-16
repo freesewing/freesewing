@@ -1,5 +1,5 @@
 ---
-title: "Boxer Bruce : Options de tissu"
+title: "Bruce boxer briefs: Fabric Options"
 ---
 
 Vous avez besoin d'un tissu extensible pour ce modèle. Préférez quelque chose de confortable et doux au toucher, et qui permette à la peau de respirer.
