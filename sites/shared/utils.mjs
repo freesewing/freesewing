@@ -281,7 +281,8 @@ export const shortDate = (locale = 'en', timestamp = false) => {
 
 export const scrollTo = (id) => {
   // eslint-disable-next-line no-undef
-  if (document) document.getElementById(id).scrollIntoView()
+  const el = document ? document.getElementById(id) : null
+  if (el) el.scrollIntoView()
 }
 
 const structureMeasurementsAsDesign = (measurements) => ({ patternConfig: { measurements } })
@@ -311,3 +312,40 @@ export const hasRequiredMeasurements = (Design, measies = {}, DesignIsMeasuremen
  */
 export const pageHasChildren = (page) =>
   Object.keys(page).filter((key) => !['t', 's', 'o', 'b', 'h'].includes(key)).length > 0
+
+/*
+ * Returns the slug of the page above this one
+ * Or the current slug if there is no higher slug
+ */
+export const oneUpSlug = (slug) => {
+  const chunks = slug.split('/')
+
+  return chunks.length > 1 ? chunks.slice(0, -1).join('/') : slug
+}
+
+/*
+ * Returns the slug at the max depth of the navigation root
+ * We don't descend too far into the navigation because it becomes harder to find your way back
+ */
+export const maxPovDepthSlug = (slug, site) => {
+  // Default depth
+  let depth = 2
+
+  // Split the slug
+  const chunks = slug.split('/')
+
+  // Some specific exceptions
+  if (site === 'org') {
+    if (chunks[0] === 'docs' && chunks[1] === 'designs') depth = 3
+  }
+
+  return chunks.length > depth ? chunks.slice(0, depth).join('/') : slug
+}
+
+/*
+ * Checks whether one slug is part of another.
+ * Typically used to see if a page is 'active' on the path to another page.
+ * Eg: the user is on page reference/api/part so reference/api is on the way to that page
+ * In that case, this will return true
+ */
+export const isSlugPart = (part, slug) => slug.slice(0, part.length) === part

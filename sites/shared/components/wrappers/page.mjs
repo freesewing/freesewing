@@ -7,12 +7,12 @@ import { useTheme } from 'shared/hooks/use-theme.mjs'
 import Head from 'next/head'
 import { SwipeWrapper } from 'shared/components/wrappers/swipes.mjs'
 import { LayoutWrapper, ns as layoutNs } from 'shared/components/wrappers/layout.mjs'
-import { DocsLayout, ns as docsNs } from 'site/components/layouts/docs.mjs'
+import { DefaultLayout, ns as defaultLayoutNs } from 'site/components/layouts/default.mjs'
 import { Feeds } from 'site/components/feeds.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
 
-export const ns = [...new Set([...layoutNs, ...docsNs])]
+export const ns = [...new Set([...layoutNs, ...defaultLayoutNs])]
 
 /* This component should wrap all page content */
 export const PageWrapper = (props) => {
@@ -20,7 +20,7 @@ export const PageWrapper = (props) => {
    * Deconstruct props
    */
   const {
-    layout = DocsLayout,
+    layout = DefaultLayout,
     footer = true,
     header = false,
     children = [],
@@ -31,10 +31,16 @@ export const PageWrapper = (props) => {
   const pageTitle = props.t ? props.t : props.title ? props.title : null
 
   /*
+   * Slug should come from page props.path not from context
+   * which won't be available in SSR
+   */
+  const slug = path.join('/')
+
+  /*
    * Contexts
    */
   const { modalContent } = useContext(ModalContext)
-  const { setNavigation, slug } = useContext(NavigationContext)
+  const { setNavigation } = useContext(NavigationContext)
 
   /*
    * This forces a re-render upon initial bootstrap of the app
@@ -73,7 +79,7 @@ export const PageWrapper = (props) => {
   //const [search, setSearch] = useState(false)
 
   // Helper object to pass props down (keeps things DRY)
-  const childProps = { footer, header, pageTitle }
+  const childProps = { footer, header, pageTitle, slug }
 
   // Make layout prop into a (uppercase) component
   const Layout = layout

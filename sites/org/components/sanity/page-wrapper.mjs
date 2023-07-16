@@ -17,10 +17,12 @@ export const SanityPageWrapper = ({
   author = {},
   page = {},
   namespaces = ['common'],
+  slug,
 }) => {
   const { t } = useTranslation(namespaces)
+  console.log({ slug })
   return (
-    <PageWrapper title={post.title} {...page}>
+    <PageWrapper title={post.title} {...page} slug={slug}>
       <Head>
         <meta property="og:type" content="article" key="type" />
         <meta property="og:description" content={post.intro || post.title} key="description" />
