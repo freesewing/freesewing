@@ -1,92 +1,92 @@
 ---
 author: "joostdecock"
-caption: "Your new login background for the month of February"
+caption: "Ваш новий фон для входу в систему на лютий"
 date: "2018-01-31"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/6fbc797ad0b3d50a8337bd2cb8401f04f63bffdd-2000x1125.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - January 2018: Inkscape DPI, version awareness, Bail, and Carlita"
+intro: "Це ваш щомісячний огляд новин фрітрекінгу за останні чотири тижні, а також погляд на те, що чекає на нас у наступному місяці."
+title: "Щомісячний огляд - січень 2018: Inkscape DPI, обізнаність про версії, Bail та Carlita"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Це ваш щомісячний огляд новин фрітрекінгу за останні чотири тижні, а також погляд на те, що чекає на нас у наступному місяці.
 
-## Looking back at January
-![More like this month](https://posts.freesewing.org/uploads/coffee_3f501d4076.gif)
+## Озираючись на січень
+![Скоріше цього місяця](https://posts.freesewing.org/uploads/coffee_3f501d4076.gif)
 
-It might be [the record-breaking depressing weather in my neck of the woods ](https://www.theguardian.com/world/2018/jan/19/aint-no-sunshine-winter-darkest-europe), but I feel like January took a lot out of me. So let's see if we have at least something to show for it.
+Можливо, це [рекордно депресивна погода в моїй місцевості ](https://www.theguardian.com/world/2018/jan/19/aint-no-sunshine-winter-darkest-europe), , але я відчуваю, що січень дуже сильно мене виснажив. Тож давайте подивимося, чи є у нас хоч щось , що ми можемо показати.
 
-### The Inkscape default units quandary
+### Проблема з одиницями виміру за замовчуванням у Inkscape
 
-At the start of the year, we rolled out core v1.3.0 to address [issue #204](https://github.com/freesewing/core/issues/204) aka the the Inkscape default units quandary.
+На початку року ми випустили core v1.3.0 для вирішення [проблеми #204](https://github.com/freesewing/core/issues/204) , також відомої як проблема з одиницями виміру Inkscape за замовчуванням.
 
-It was a bit of an unusual fix because our hand was forced due to upstream changes made by the Inkscape developers. In addition, we didn't only have to adapt our code, but also had to backport the changes to all your existing drafts.
+Це було дещо незвичне виправлення, тому що ми були змушені зробити це через зміни, внесені розробниками Inkscape. Крім того, нам довелося не лише адаптувати наш код, але й перенести зміни на в усі ваші існуючі чернетки.
 
-If you were blissfully unaware of the whole thing, we wrote a blog post about it: [Freesewing core v1.3.0 is out; Comes with fixes so good that we back-ported them to all your drafts](https://joost.freesewing.org/blog/core-v1.3.0-is-out/).
+Якщо ви щасливо не знали про це, ми написали про це статтю в блозі: [Вийшло ядро Freesewing v1.3.0; Виправлення настільки хороші, що ми перенесли їх у всі ваші чернетки](https://joost.freesewing.org/blog/core-v1.3.0-is-out/).
 
-### Version awareness
+### Поінформованість про версії
 
-We now keep track of which version of core generated your draft. We roll out fixes and improvements all the time. So the drafts you have stored in your profile might be outdated.
+Тепер ми відстежуємо, яка версія ядра згенерувала вашу чернетку. Ми постійно випускаємо виправлення та покращення . Тому чернетки, які ви зберігаєте у своєму профілі, можуть бути застарілими.
 
-You are now informed about this, both on the draft's page itself and on your list of drafts. A simple redraft will upgrade them to the latest version.
+Тепер ви будете проінформовані про це як на самій сторінці проекту, так і у вашому списку проектів. Просте редагування оновить їх до останньої версії.
 
-> ##### Long-term vision for versioning
+> ##### Довгострокове бачення версійності
 > 
-> This solution is a step up from the previous situation, but it doesn't allow for very granular version control. If you have 10 different Simon drafts stored in your profile, and we bump the core version number because we made a tweak to Carlton, all your drafts are marked as outdated, even though the changes don't impact them.
+> Це рішення є кроком вперед у порівнянні з попередньою ситуацією, але воно не дозволяє здійснювати дуже гранульований контроль версій. Якщо у вашому профілі зберігається 10 різних чернеток Simon, а ми змінили номер основної версії через те, що внесли зміни до Carlton, всі ваші чернетки будуть позначені як застарілі, навіть якщо ці зміни на них не вплинули.
 > 
-> With only a single core version number to depend on, there's no obvious way for us to keep track of what changes impact what pattern.
+> Маючи лише один номер версії ядра, ми не маємо очевидного способу відстежувати , які зміни впливають на який шаблон.
 > 
-> The long-term plan here is to have a core version number and a pattern version number. This way, a version bump in one pattern will not impact other patterns. 
+> Довгостроковий план полягає в тому, щоб мати номер основної версії та номер версії шаблону. Таким чином, зміна версії в одному шаблоні не вплине на інші шаблони. 
 > 
-> A version bump in core will still impact all patterns, but there should be far fewer core versions once we take all patterns out of core.
+> Зміна версії в ядрі все одно вплине на всі шаблони, але версій ядра має бути набагато менше після того, як ми вилучимо всі шаблони з ядра.
 > 
-> The idea is that every pattern will be in its own repository, and we'll use composer to manage them as dependencies. 
+> Ідея полягає в тому, що кожен шаблон буде у власному репозиторії, і ми будемо використовувати composer, щоб керувати ними як залежностями. 
 > 
-> But this is a long-term idea that won't be implemented until after we rewrite core. Yes, that's another long-term idea.
+> Але це довгострокова ідея, яка не буде реалізована, поки ми не перепишемо ядро. Так, це ще одна довгострокова ідея.
 
-### Bail for error handling
+### Застава за обробку помилок
 
-In the first half of the month, we tried Rollbar for error handling and reporting. While we liked the functionality it provided, we weren't too happy about the possible impact on your privacy of sending that kind of data to a third party.
+У першій половині місяця ми спробували Rollbar для обробки помилок і звітів. Хоча нам подобалася його функціональність, ми були не надто задоволені можливим впливом на вашу конфіденційність на сайті у зв'язку з надсиланням таких даних третій стороні.
 
-So, we decided to write our own poor man's rollbar called Bail. Bail is now used in our data and core backends, so when things break, we know about it.
+Тож ми вирішили написати власний ролбар для бідняків під назвою Bail. Bail тепер використовується в наших даних та основних бекендах, тому, коли щось ламається, ми знаємо про це.
 
-This effort also lead to a 2-week side-quest to write tests for our data backend. All details: [Introducing freesewing bail: A poor man's rollbar --- because privacy](/blog/introducing-bail/)
+Ці зусилля також призвели до 2-тижневого паралельного квесту з написання тестів для нашого бекенду даних. Всі деталі: [Представляємо фрісевінг заставу: Ролбар для бідняка --- тому що приватність](/blog/introducing-bail/)
 
-### Carlita is here
+### Карліта тут.
 
-A couple of days ago, we released the [Carlita Coat](/patterns/carlita), the womenswear version of our Carlton coat.
+Кілька днів тому ми випустили [пальто Карліта](/patterns/carlita), жіночу версію нашого пальта Карлтон.
 
-If you rushed out to get your hands on Carlita, it's good to know that she was released as part of core v1.6.0 and we're now at v1.6.3, and that is mostly due to fixes and tweaks in Carlton/Carlita.
+Якщо ви поспішили отримати Карліту, то знайте, що вона була випущена як частина ядра v1.6.0, а зараз ми працюємо над версією v1.6.3, і це в основному завдяки виправленням та налаштуванням у Carlton/Carlita.
 
-If you've got an earlier version of the pattern, please redraft. If you've already printed it, perhaps have a look at [the changelog](https://github.com/freesewing/core/blob/develop/CHANGELOG.md) to figure out what has changed.
+Якщо у вас є більш рання версія шаблону, будь ласка, переробіть його. Якщо ви вже роздрукували , то, можливо, подивіться [журнал змін](https://github.com/freesewing/core/blob/develop/CHANGELOG.md) , щоб зрозуміти, що змінилося.
 
-If you check the changelog, you'll also see that we started the month on core v1.2.9 and are now running core v1.6.3, so I don't think it's just an idea that it was a busy month.
+Якщо ви перевірите журнал змін, то побачите, що ми почали місяць на ядрі v1.2.9, а зараз працює на ядрі v1.6.3, так що я не думаю, що це просто ідея, що це був напружений місяць.
 
-## Looking ahead to February
+## Забігаючи наперед на лютий
 
-February is a short month so it's probably best to manage expectations. But here's what I have in mind for it:
+Лютий - короткий місяць, тому, мабуть, найкраще керувати очікуваннями. Але ось що я маю на увазі:
 
-### Carlton/Carlita documentation
+### Документація Carlton/Carlita
 
-Quite frankly, this is like pulling teeth to me, so don't expect it to be finished by the end of February, but I should at least have made some progress on the documentation for the Carlton and Carlita patterns.
+Чесно кажучи, для мене це все одно, що виривати зуби, тому не сподівайтеся, що я закінчу до кінця лютого, але я мав би принаймні трохи просунутися з документацією для візерунків Карлтон і Карліта.
 
-On a related note, the increasing popularity of this site means I'm a lot more occupied with various questions, and small issues that need my attention.
+До речі, зростаюча популярність цього сайту означає, що я набагато більше займаюся різними питаннями і дрібними проблемами, які потребують моєї уваги.
 
-All that feedback is a good thing for it is how we improve things around here. But I do notice that it is becoming increasingly difficult to dedicate a larger chunk of time to one specific thing. Which is really what you need when tackling larger tasks such as writing documentation or designing new patterns.
+Всі ці відгуки - це добре , адже саме завдяки їм ми покращуємо нашу роботу. Але я помічаю, що стає дедалі важче присвячувати більший проміжок часу одній конкретній справі. Це саме те, що вам потрібно для вирішення більших завдань, таких як написання документації або розробка нових патернів.
 
-I don't really have a solution for that, I'm just making the observation.
+У мене немає рішення для цього, я просто роблю спостереження.
 
-### Maybe a Blake Blazer release
+### Можливо, реліз Блейка Блейзера
 
-I have a jacket pattern on my drawing board that's been there since the summer (it's called the Blake Blazer). I really should just take out some time to wrap it up and publish it, but I've been reluctant to do so because I can't seem to find the time to actually make the jacket.
+У мене на креслярській дошці лежить викрійка піджака, яка висіла там ще з літа (вона називається "Блейзер Блейк"). Я дійсно повинен знайти трохи часу, щоб завершити його і опублікувати, але я неохоче це роблю, тому що я не можу знайти час, щоб дійсно зробити піджак.
 
-I've used the pattern before for [my refashioners make this year](/blog/the-refashioners-2017/), but that's not exactly a very representative example.
+Я вже використовувала цю викрійку для [моїх рефайндерів цього року](/blog/the-refashioners-2017/), , але це не зовсім дуже репрезентативний приклад.
 
-I don't think I'll find the time to make a jacket in February, but perhaps a muslin is enough to publish it in beta.
+Не думаю, що в лютому я знайду час пошити піджак, але, можливо, мусліну буде достатньо , щоб опублікувати його в бета-версії.
 
 ### FOSDEM
 
-![All details on fosdem.org](https://posts.freesewing.org/uploads/fosdem_bb321397cc.png)
+![Всі деталі на fosdem.org](https://posts.freesewing.org/uploads/fosdem_bb321397cc.png)
 
-[FOSDEM](http://fosdem.org/) --- the Free and Open Source Developers' European Meeting --- is on the first weekend of February in Brussels.
+[FOSDEM](http://fosdem.org/) --- Європейська зустріч розробників вільного та відкритого програмного забезпечення --- відбудеться у перші вихідні лютого в Брюсселі.
 
-I'm planning to be there on Sunday, so if you're attending too, let me know or come and say hi.
+Я планую бути там у неділю, тож якщо ви теж будете там, дайте мені знати або приходьте привітатися.
 
