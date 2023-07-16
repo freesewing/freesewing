@@ -1,5 +1,5 @@
 ---
-title: "Button placket width"
+title: "Knopfleiste Breite"
 ---
 
 ![Knopfleiste Breite](buttonplacketwidth.svg)
