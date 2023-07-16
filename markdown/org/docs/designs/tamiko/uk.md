@@ -1,5 +1,5 @@
 ---
-title: "Таміко топ"
+title: "Блузка Таміко"
 ---
 
 <PatternDocs pattern='tamiko' />
