@@ -14,7 +14,7 @@ title: "Noble body block: Cutting Instructions"
 
 ### Armhole dart
 
-- Cut **2 Back** part.
+- Corta **2 partes traseras**.
 
 These cutting instructions are just for the default Noble block. Si has hecho o estás haciendo cambios al patrón base, ajusta tu corte como corresponda.
 
