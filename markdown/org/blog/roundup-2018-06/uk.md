@@ -1,39 +1,39 @@
 ---
 author: "joostdecock"
-caption: "Your login background for July"
+caption: "Ваша історія входу в систему за липень"
 date: "2018-06-30"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d4f2c83df7c4bc98b2bee3159b3f042bf0c1177f-1920x1279.jpg"
-intro: "Monthly roundup - June 2018: German, Penelope, and more womenswear on the horizon"
-title: "Monthly roundup - June 2018: German, Penelope, and more womenswear on the horizon"
+intro: "Щомісячний огляд - червень 2018: Німецький, Пенелопа та ще більше жіночого одягу на горизонті"
+title: "Щомісячний огляд - червень 2018: Німецький, Пенелопа та ще більше жіночого одягу на горизонті"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Це ваш щомісячний огляд новин фрітрекінгу за останні чотири тижні, і погляд на те, що чекає на нас у наступному місяці.
 
-## Looking back at June
+## Озираючись на червень
 
-After the mad scramble in May to get the new site ready for the GDPR deadline, June has (thankfully) been a bit let hectic.
+Після божевільної боротьби у травні, щоб підготувати новий сайт до дедлайну GDPR, у червні (на щастя) був дещо спокійнішим.
 
-Not that we haven't been busy. We've resolved a few issues with the new site, and while there's a few things that still need work, the most pressing issues have been resolved.
+Не те, щоб ми не були зайняті. Ми вирішили кілька проблем з новим сайтом, , і хоча є ще кілька речей, над якими потрібно попрацювати, найбільш нагальні питання вже вирішені.
 
-We've also completed the port of the documentation, which was something that was on our todo-list for June. It's always nice to make a plan and then follow through on it.
+Ми також завершили перенесення документації, що було одним із пунктів нашого списку справ на червень. Завжди приємно скласти план, а потім слідувати йому.
 
-With the migration demanding less of our time and attention, we've turned our attention back to building our pattern repository, and just before the end of the month, we were able to publish the [Penelope Pencil Skirt](/patterns/penelope).
+Оскільки міграція забирає менше часу та уваги, ми повернулися до створення нашого сховища лекал, і перед самим кінцем місяця ми змогли опублікувати спідницю-олівець [Пенелопа](/patterns/penelope).
 
-The pattern was designed by [@woutervdub](/users/woutervdub), it's his second pattern after he previously made [Benjamin](/patterns/benjamin).
+Візерунок розробив [@woutervdub](/users/woutervdub), це його другий візерунок після того, як він раніше зробив [Benjamin](/patterns/benjamin).
 
-To make certain the release wouldn't go unnoticed, we asked freesewing's illustrator [Roy van der Hel](https://www.deviantart.com/royvdhel-art) to drew an illustration for Penelope, and as always, he nailed it.
+Щоб переконатися, що реліз не залишиться непоміченим, ми попросили ілюстратора freesewing [Роя ван дер Хела](https://www.deviantart.com/royvdhel-art) намалювати ілюстрацію для Пенелопи, і, як завжди, він впорався з завданням.
 
-![Fun fact: Roy van der Hel means: Roy from Hel, and that's his real name](penelope.jpg)
+![Цікавий факт: Рой ван дер Хель означає: Рой з Хела, і це його справжнє ім'я](penelope.jpg)
 
-Oh, and I'd almost forgot. The website is now available in German, so tell your German-speaking friends about it!
+Так, мало не забув. Веб-сайт тепер доступний німецькою мовою, тож розкажіть про нього своїм німецькомовним друзям!
 
-## Looking ahead to July
+## Забігаючи наперед на липень
 
-As you could read in the [Penelope announcement blog post](/blog/announcing-penelope) we are planning more womenswear patterns, and that's what our focus will be on in July.
+Як ви могли прочитати в анонсі блогу [Пенелопи](/blog/announcing-penelope) , ми плануємо більше моделей жіночого одягу, і саме на цьому ми зосередимося в липні.
 
-Some of those plans are more mid-term, but we should be releasing a circle skirt pattern in July designed by [@AlfaLyr](/users/alfalyr), who also provided much of the Spanish translation of the site.
+Деякі з цих планів більш середньострокові, але в липні ми маємо випустити викрійку спідниці , розроблену [@AlfaLyr](/users/alfalyr), яка також забезпечила значну частину іспанського перекладу сайту.
 
-We also started working on a basic bodice block for women, but that will probably take a while to complete.
+Ми також почали працювати над базовим блоком ліфа для жінок, але це, ймовірно, займе деякий час для завершення.
 
-Watch this space.
+Слідкуйте за цим місцем.
 
