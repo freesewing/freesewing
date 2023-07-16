@@ -1,5 +1,5 @@
 ---
-title: "Hips ease"
+title: "Holgura de cadera"
 ---
 
 ![Holgura de cadera](hipsease.svg)
