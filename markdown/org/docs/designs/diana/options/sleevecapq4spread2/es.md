@@ -1,5 +1,5 @@
 ---
-title: "Sleevecap Q4 downward spread"
+title: "Funda Q4 propagación a la baja"
 ---
 
 ![La dispersión descendente en el cuarto cuadrante de la manga](./sleevecapq4spread2.svg)
