@@ -312,4 +312,4 @@ export const hasRequiredMeasurements = (Design, measies = {}, DesignIsMeasuremen
 export const pageHasChildren = (page) =>
   Object.keys(page).filter((key) => !['t', 's', 'o', 'b', 'h', 'd'].includes(key)).length > 0
 
-export const localeSlug = (loc, slug) => (loc === 'en' ? slug : '/' + loc + slug)
+export const localeSlug = (loc, slug) => (loc === 'en' ? slug : `/${loc}${slug}`)
