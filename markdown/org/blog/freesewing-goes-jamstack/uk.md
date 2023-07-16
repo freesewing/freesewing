@@ -1,92 +1,92 @@
 ---
 author: "joostdecock"
-caption: "Picture by <a href='https://stock.tookapic.com/jenniferforjoy' target='_BLANK' rel='nofollow'>Jennifer</a>"
+caption: "Фото: <a href='https://stock.tookapic.com/jenniferforjoy' target='_BLANK' rel='nofollow'>Дженніфер</a>"
 date: "2017-06-12"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/952f714d11203d03a449895053c63963b0c02dbd-2000x1126.jpg"
-intro: "When we released freesewing core at the end of March, my focus immeadiatly shifted to building our front-end so that freesewing.org could fully replace makemypattern.com ."
-title: "We're JAMstack, we're JAMstack, we're JAMstack, we're JAMstack, we're JAMstack, we're JAMstack, we're JAMstack, and I hope you like JAMstack too"
+intro: "Коли ми випустили ядро freesewing наприкінці березня, моя увага одразу ж переключилася на створення нашого фронтенду, щоб freesewing.org міг повністю замінити makemypattern.com ."
+title: "Ми JAMstack, ми JAMstack, ми JAMstack, ми JAMstack, ми JAMstack, ми JAMstack, ми JAMstack, ми JAMstack, ми JAMstack, ми JAMstack, і я сподіваюся, що вам теж подобається JAMstack"
 ---
 
-When we released freesewing core at the end of March, my focus immeadiatly shifted to building our front-end so that [freesewing.org](/) could fully replace [makemypattern.com](https://makemypattern.com/).
+Коли ми випустили ядро freesewing наприкінці березня, моя увага одразу ж переключилася на створення нашого фронтенду, щоб [freesewing.org](/) міг повністю замінити [makemypattern.com](https://makemypattern.com/).
 
-I believe that the value of freesewing lies with the core platform and our patterns. But without a user friendly way to expose that value, it will largely go ignored.
+Я вважаю, що цінність фріскейтингу полягає в основній платформі та наших патернах. Але без зручного для користувача способу показати цю цінність, її здебільшого ігноруватимуть.
 
-So we needed a website that lets people generate patterns. Makemypattern.com &mdash; arguably the best comparison of something similar &mdash; runs on Drupal 7, and my initial idea was to run the new site on Drupal 8. I went down that path far enought to be confident I could get it to work, and hook it up to our backend. At which point I switched gears and turned my attention to what is now known as freesewing core.
+Тож нам потрібен був веб-сайт, який би дозволяв людям створювати патерни. Makemypattern.com &mdash; , мабуть, найкраще порівняння чогось подібного &mdash; працює на Drupal 7, а моя початкова ідея була запустити новий сайт на Drupal 8. Я пішов цим шляхом досить далеко, щоб бути впевненим, що зможу змусити його працювати і підключити його до нашого бекенду. Тоді я переключився і звернув увагу на те, що зараз називається фріскейтинговим ядром.
 
-Core took about 7 months to build, and a lot has changed since then. Or perhaps I have changed, I certainly learned a lot along the way. Either way, I've decided to do things different.
+На створення ядра пішло близько 7 місяців, і з того часу багато чого змінилося. Або, можливо, я змінився, я, безумовно, багато чому навчився на цьому шляху. Так чи інакше, я вирішив зробити все по-іншому.
 
-## The problem with a CMS
+## Проблема з CMS
 
-I have no beef with Drupal but the idea of managing the freesewing website through any Content Management System (CMS) does not appeal to me.
+Я не маю жодних претензій до Drupal, але ідея керувати вільно поширюваним сайтом через будь-яку систему управління контентом (CMS) мене не приваблює.
 
-One of the main reason is that so much information is stored under an opaque database layer which makes it difficult to manage. That goes for content where posts, metadata, images, and so on is all spread across tables, locations, and folders. But there's also the theme that has a bunch of stuff in it, there's the custom Drupal modules to connect to the backend, and so on and so forth.
+Однією з головних причин є те, що багато інформації зберігається під непрозорим шаром бази даних, що ускладнює управління нею. Це стосується контенту, де публікації, метадані, зображення тощо розподілені по різних таблицях, місцях і папках. Але є також тема, яка містить купу всього, є кастомні модулі Drupal для підключення до бекенду, і так далі, і так далі, і так далі.
 
-> I wanted that same approach in a website. Except, it can't be static because it has to, you know, do stuff.
+> Я хотів, щоб такий самий підхід був і на веб-сайті. За винятком того, що він не може бути статичним, тому що він повинен, знаєте, щось робити.
 
-When we were finalizing core, I built a documentation site for it based on [Jekyll](https://jekyllrb.com/). It felt like a breath of fresh air in comparison. Just a bunch of markdown files, with some SASS, images, and some JavaScript thrown in the mix, and it all compiles into a neat static website.
+Коли ми завершували роботу над ядром, я створив для нього сайт документації на основі [Jekyll](https://jekyllrb.com/). У порівнянні з ним це було як ковток свіжого повітря. Просто купа файлів розмітки, з додаванням SASS, зображень та JavaScript, і все це компілюється в акуратний статичний веб-сайт.
 
-It's easy to manage, and it integrates nicely with a GitHub-centered workflow that is going to be famliar to potential contributors.
+Ним легко керувати, і він чудово інтегрується з робочим процесом, орієнтованим на GitHub, який буде знайомий потенційним дописувачам.
 
-I wanted that same approach in a website. Except, it can't be static because it has to, you know, do stuff.
+Я хотів, щоб такий самий підхід був і на веб-сайті. За винятком того, що він не може бути статичним, тому що він повинен, знаєте, щось робити.
 
 
-## An alternative approach: JAMstack
+## Альтернативний підхід: JAMstack
 
-I first learned about JAMstack when I started looking into hosting for said core documentation site. It was initially hosted on GitHub pages which provides free hosting. They also have SSL or a custom domain name, but you can't have both. Which was kind of a deal breaker.
+Я вперше дізнався про JAMstack, коли почав шукати хостинг для згаданого сайту з основною документацією. Спочатку він був розміщений на сторінках GitHub, який надає безкоштовний хостинг. Вони також мають SSL або власне доменне ім'я, але ви не можете мати і те, і інше. Це було свого роду розривом угоди.
 
-Looking for alternatives, I stumbled onto [Netlify](https://www.netlify.com/), who do both SSL and custom domains and have a free-tier for open source projects (thanks guys). Furthermore, [this video by Netlify CEO Mathias Biilmann](https://vimeo.com/163522126) got me really excited about JAMstack.
+Шукаючи альтернативи, я натрапив на [Netlify](https://www.netlify.com/), які роблять як SSL, так і кастомні домени, і мають безкоштовний рівень для проектів з відкритим кодом (дякую, хлопці). Крім того, [це відео генерального директора Netlify Матіаса Білманна (Mathias Biilmann)](https://vimeo.com/163522126) змусило мене по-справжньому захопитися JAMstack.
 
-Unless you're familiar with JAMstack, I suggest you check out the video, but it boils down to this:
+Якщо ви не знайомі з JAMstack, я пропоную вам подивитися відео, але суть зводиться ось до чого:
 
  - **J** = JavaScript
- - **A** = APIs
- - **M** = Markup
+ - **A** = API
+ - **M** = Розмітка
 
-The idea is that you build your static site (markup) that you then make interactive with JavaScript that hooks up to one or more APIs.
+Ідея полягає в тому, що ви створюєте статичний сайт (розмітку), який потім робите інтерактивним за допомогою JavaScript, що підключається до одного або декількох API.
 
-So in our case, rather than having a straight-forward documentation site with easy-to-edit markdown and a complex CMS to handle the dymanic stuff, let's just build one simple site that is statically generated, yet uses JavaScript and APIs to do the smart stuff.
+Тож у нашому випадку, замість того, щоб створювати простий сайт документації з легкою для редагування розміткою і складною CMS для обробки динамічних речей, давайте просто створимо один простий сайт, який буде статично згенерований, але використовуватиме JavaScript і API для виконання розумних речей.
 
-## Running before you can walk
+## Біг до того, як навчишся ходити
 
-I must admit that in my enthousiasm to embrace this new approach I got a little ahead of myself. Suddenly, I was no longer building a simple site, but I was up to my eyeballs in isomorphic rendering, client-side routing, React and Redux, Node.js and ES6 transpiling.
+Мушу визнати, що у своєму ентузіазмі прийняти цей новий підхід я трохи забіг наперед. Раптом я вже не створював простий сайт, а по вуха занурився в ізоморфний рендеринг, маршрутизацію на стороні клієнта, React і Redux, Node.js і трансполювання ES6.
 
-> If you don't know what any of that means, you might get a hint of the frustration I felt as I was trying to tame all these new beasts.
+> Якщо ви не знаєте, що все це означає, то можете собі уявити, яке розчарування я відчував, намагаючись приручити всіх цих нових звірів.
 > 
-> If you do know what it all means, where were you back in April when I walked through the valley of the React of death?
+> Якщо ти знаєш, що все це означає, то де ти був у квітні, коли я йшов долиною Реакції смерті?
 
-Point is, I'm not a developer and I was in way over my head. While I was learning new things every day, I wasn't making much progress on the actual task at hand, and felt frustrated with my inability to do even the most mundane things.
+Справа в тому, що я не розробник, і це було вище моїх сил. Хоча я щодня вивчала щось нове, я не досягала значного прогресу у виконанні поточних завдань і відчувала розчарування через свою нездатність робити навіть найпростіші речі.
 
-After a month of frustration, loads of trial and seemingly even more error, I threw in the towel. Eff this newfangled shiny JavaScript all the young kids are using, I'll stick to what I know.
+Після місяця розчарувань, безлічі спроб і, здавалося б, ще більшої кількості помилок, я кинув рушник. Не зважаючи на цей новомодний блискучий JavaScript, яким користуються всі молоді люди, я буду дотримуватися того, що я знаю.
 
-Which is essentially the basics of jQuery. In other words, stuff that was pretty cool 10 years ago.
+Це, по суті, основи jQuery. Іншими словами, речі, які були досить крутими 10 років тому.
 
-## 10 year old jam is still jam right?
+## Варення, якому 10 років, все ще залишається варенням, чи не так?
 
-So here we are, freesewing.org is a site powered by the JAMstack. And you know what, it seems to do what it needs to do.
+Отже, freesewing.org - це сайт, що працює на JAMstack. І знаєте що, здається, він робить те, що має робити.
 
-We have Jekyll build out static site, and when we push to our master branch, it gets autmatically deployed to Netlify.
+Ми використовуємо Jekyll для створення статичного сайту, і коли ми переносимо його на головну гілку, він автоматично розгортається на Netlify.
 
-> Eff this newfangled shiny JavaScript all the young kids are using
+> Ефект від цього новомодного блискучого JavaScript, яким користуються всі молоді люди
 
-We have [a brand new data API](https://github.com/freesewing/data) build on [the Slim framework](https://www.slimframework.com/). It handles all user data. Things like accounts, measurements, models, and drafts, but also comments on this website and so on.
+У нас є [новий API даних](https://github.com/freesewing/data) , побудований на [фреймворку Slim](https://www.slimframework.com/). Він обробляє всі дані користувача. Такі речі, як рахунки, вимірювання, моделі та чернетки, а також коментарі на цьому веб-сайті тощо.
 
-It also talks to core for us, and every time you draft a pattern, we don't just give you the pattern, but we also run a comparison of your pattern to a range of standard sizes, which is kinda cool.
+Вона також зв'язується з ядром, і кожного разу, коли ви створюєте викрійку, ми не просто надаємо вам її, а й порівнюємо її з низкою стандартних розмірів, що дуже круто.
 
-And we have other cool stuff, like the ability to fork or redraft an existing draft.
+А ще у нас є інші круті штуки, наприклад, можливість розгалужувати або переробляти вже існуючий проект.
 
-## This is a starting point
+## Це відправна точка
 
-I hope the user experience/interface is not going to be a roadblock for people. I've made a great deal of effort to make the drafting process as intuitive as possible and I think that in comparison to our demo (or the makemypattern interface for that matter) it's a vast improvement.
+Я сподіваюся, що користувацький досвід/інтерфейс не буде перешкодою для людей. Я доклав багато зусиль, щоб зробити процес складання максимально інтуїтивно зрозумілим, і я думаю, що в порівнянні з нашою демо-версією (або інтерфейсом makemypattern, якщо вже на те пішло) це величезне покращення.
 
-Then again, I'm sure things will break left or right, or that some of you don't like the colours or whatnot.
+Знову ж таки, я впевнений, що речі будуть ламатися наліво чи направо, або що комусь із вас не сподобаються кольори чи ще щось.
 
-The point is that I set out to build something that can replace makemypattern.com so that I could tell all of you _Hey, come over and play with this new thing_.
+Справа в тому, що я поставив собі за мету створити щось, що може замінити makemypattern.com, щоб я міг розповісти всім вам _Гей, заходьте і пограйтеся з цією новою штукою_.
 
-I think if nothing else, I can do that now. And if you see room for improvement, please [join the effort](/contribute), we're only getting started.
+Думаю, якщо не більше, то зараз я можу це зробити. І якщо ви бачите можливості для покращення, будь ласка, [приєднуйтесь до зусиль](/contribute), ми тільки починаємо.
 
 
 
-<small>PS: For those of you wondering about the title of this post:</small>
+<small>PS: Для тих, хто здивувався назві цього посту:</small>
 
 <YouTube id='oFRbZJXjWIA' />
 
