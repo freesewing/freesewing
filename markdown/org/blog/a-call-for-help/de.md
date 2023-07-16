@@ -3,7 +3,7 @@ author: "joostdecock"
 caption: "Anmerkung: Dieser Beitrag ist etwas lang. Aber auf keinen Fall so lang wie dieses Buch"
 date: "2020-08-30"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1a143c96b4afc8c12d2014c5605bfd1e63d917d0-2000x1348.jpg"
-intro: "Hallo zusammen, Joost hier. Ich schreibe diesen Beitrag, um einige Probleme anzugehen, die mich in letzter Zeit beunruhigt haben. Um genau zu sein, diese Probleme:"
+intro: "Bitte helft mit dabei, FreeSewing über das hinauswachsen zu lassen, was ich alleine tun kann"
 title: "Bitte helft mit dabei, FreeSewing über das hinauswachsen zu lassen, was ich alleine tun kann"
 ---
 
@@ -163,5 +163,4 @@ In jedem Fall würde ich es begrüßen, wenn du helfen könntest, die Nachricht 
 Vielen Dank
 
 Joost
-
 
