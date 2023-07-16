@@ -1,5 +1,5 @@
 ---
-title: "Shoulder dart size"
+title: "Grootte schouder neep"
 ---
 
 The size of the back shoulder dart.
