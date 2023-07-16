@@ -1,166 +1,166 @@
 ---
 author: "joostdecock"
-caption: "Note: This post is a long read. Although nowhere near as long as this book"
+caption: "Примітка: цю статтю довго читати. Хоча й далеко не така довга, як ця книга"
 date: "2020-08-30"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1a143c96b4afc8c12d2014c5605bfd1e63d917d0-2000x1348.jpg"
-intro: "Please help grow FreeSewing beyond what I can do on my own"
-title: "Please help grow FreeSewing beyond what I can do on my own"
+intro: "Будь ласка, допоможіть розвинути FreeSewing за межі того, що я можу зробити самостійно"
+title: "Будь ласка, допоможіть розвинути FreeSewing за межі того, що я можу зробити самостійно"
 ---
 
 
-Hi everyone, Joost here. I'm writing this post to address some problems that have been worrying me lately. Specifically, these problems:
+Привіт усім, з вами Юст. Я пишу цей пост, щоб вирішити деякі проблеми, які турбують мене останнім часом. А саме ці проблеми:
 
- 1. [There is too much work for one person](#problem-1-there-is-too-much-work-for-one-person)
- 2. [I feel I'm losing track of the sewing community](#problem-2-i-feel-im-losing-track-of-the-community)
- 3. [I feel insecure about how to deal with the issue of systemic racism](#problem-3-i-feel-insecure-about-how-to-deal-with-the-issue-of-systemic-racism)
+ 1. [Занадто багато роботи для однієї людини](#problem-1-there-is-too-much-work-for-one-person)
+ 2. [Я відчуваю, що втрачаю зв'язок зі швейною спільнотою](#problem-2-i-feel-im-losing-track-of-the-community)
+ 3. [Я відчуваю невпевненість у тому, як боротися з проблемою системного расизму](#problem-3-i-feel-insecure-about-how-to-deal-with-the-issue-of-systemic-racism)
 
-The good news is that it's a relatively short list. The even better news is that all of these problems be addressed by the same solution: [Community building](#community-building).
+Хороша новина полягає в тому, що це відносно короткий список. Ще краща новина полягає в тому, що всі ці проблеми вирішуються одним і тим же рішенням: [Розбудова спільноти](#community-building).
 
-Before we get into that, let's briefly look at each problem:
+Перш ніж ми перейдемо до цього, давайте коротко розглянемо кожну проблему:
 
-## Problem 1: There is too much work for one person
+## Проблема 1: Забагато роботи для однієї людини
 
-Over the course of the last week I read [Working in public: The making and maintenance of open source software](https://www.amazon.com/dp/0578675862/) by [Nadia Eghbal](https://nadiaeghbal.com/).
+Протягом останнього тижня я прочитав [Робота на публіку: Створення та підтримка програмного забезпечення з відкритим вихідним кодом](https://www.amazon.com/dp/0578675862/) від [Надії Егбал](https://nadiaeghbal.com/).
 
-I bought it because I was hoping to find answers to some of the questions that I ask myself. Questions like “*How do other maintainers do it?*”, or “*Am I doing it wrong?*”
+Я купив її, бо сподівався знайти в ній відповіді на деякі питання, які сам собі ставлю. Питання на кшталт "*Як це роблять інші супровідники?*", або "*Я роблю це неправильно?*"
 
-In other words, I was hoping to find a fix for what I increasingly perceive as a problem: The inability to scale my own labour in line with how I'd like to scale FreeSewing, the project.
+Іншими словами, я сподівалася знайти рішення для того, що я все більше сприймаю як проблему: Неможливість масштабувати власну працю відповідно до того, як я хотіла б масштабувати FreeSewing, проект.
 
-I don't want to spoil the book, but it didn't provide any straightforward answers on how to address that problem. It turns out that the vast majority of open source maintainers are in the same boat. Most projects are run by either a single person, or a handful of people.
+Не хочу спойлерити, але в книзі не було прямих відповідей на питання, як вирішити цю проблему. Виявляється, що переважна більшість супровідників відкритого коду знаходяться в одному човні. Більшість проектів реалізуються або однією людиною, або групою людей.
 
-There's nothing wrong with that. But it does put a firm upper limit on how much projects like FreeSewing can accomplish.
+У цьому немає нічого поганого. Але це встановлює тверду верхню межу того, чого можуть досягти такі проекти, як FreeSewing.
 
-## Problem 2: I feel I'm losing track of the sewing community
+## Проблема 2: Я відчуваю, що втрачаю зв'язок зі швейною спільнотою
 
-I worry that I have been neglecting the communal aspects of FreeSewing, there are no comments or *social* aspects on the site. I've always felt it was a fool's errand to try to corral people onto your own website. Better to let them have discussions on the platforms of their choice.
+Мене турбує, що я нехтувала громадськими аспектами FreeSewing, на сайті немає коментарів або *соціальних* аспектів. Я завжди вважав, що намагатися заманити людей на власний сайт - це дурна справа. Краще дозволити їм вести дискусії на обраних ними платформах.
 
-For the sewing community, the platform of choice is often Instagram. Since I have left Instagram a year ago, I feel like I'm getting further away from the sewing community.
+Для швейної спільноти найчастіше обирають платформу Instagram. З тих пір, як я покинула Instagram рік тому, я відчуваю, що віддаляюся від швейної спільноти.
 
-My [reasons for leaving](https://joost.decock.org/post/187710847164/24-hours-from-now-i-want-to-remove-my-instagram) are as valid today as they were back then, but I wish I could connect with the sewing community in a way that works for me.
+Мої [причини покинути](https://joost.decock.org/post/187710847164/24-hours-from-now-i-want-to-remove-my-instagram) так само актуальні сьогодні, як і тоді, але я хотіла б мати можливість спілкуватися зі швейною спільнотою у спосіб, який би мені підходив.
 
-## Problem 3: I feel insecure about how to deal with the issue of systemic racism.
+## Проблема 3: Я відчуваю невпевненість у тому, як боротися з проблемою системного расизму.
 
-First things first: **Black lives matter** ✊🏾
+Про все по порядку: **Життя чорношкірих мають значення**✊🏾
 
-My insecurity stems from my environment. I am a white, middle-aged, cis-gender man who was born and raised in a country with a history drenched in the blood of people of color ([that country is Belgium](https://en.wikipedia.org/wiki/Atrocities_in_the_Congo_Free_State)). To this day, casual racism permeates all aspects of the society I live in.
+Моя невпевненість пов'язана з моїм оточенням. Я білий, середнього віку, цис-гендерний чоловік , який народився і виріс у країні, історія якої просякнута кров'ю кольорових людей ([ця країна - Бельгія](https://en.wikipedia.org/wiki/Atrocities_in_the_Congo_Free_State)). До сьогоднішнього дня невимушений расизм пронизує всі аспекти суспільства, в якому я живу.
 
-A welcoming and diverse community is a *sine qua non* for me. But I feel ill-equipped to figure out how to create one on FreeSewing.
+Привітна та різноманітна спільнота є для мене *sine qua non* . Але я відчуваю себе недостатньо підготовленою, щоб зрозуміти, як створити його на FreeSewing.
 
 ## Створення спільноти
 
-As I mentioned earlier, these things have been on my mind for a while, albeit they were a lot more fuzzy. Then earlier this month I listened to [Black makers matter with Julian Collins on the podcast Love To Sew](https://lovetosewpodcast.com/episodes/episode-156-black-makers-matter-with-julian-collins/).
+Як я вже згадував раніше, ці речі були у мене в голові вже деякий час, хоча вони були набагато більш розмитими. Потім на початку цього місяця я слухала [Чорні виробники мають значення з Джуліаном Коллінзом у подкасті Love To Sew](https://lovetosewpodcast.com/episodes/episode-156-black-makers-matter-with-julian-collins/).
 
-[Julian](https://www.instagram.com/juliancreates/) is a patron of FreeSewing (thanks Julian) and actively involved with the [Black Makers Matter](https://www.instagram.com/blkmakersmatter/) movement on Instagram. I reached out to Julian looking for help, and we had a lengthy Zoom call where we talked about his work and how he goes about organizing the community.
+[Джуліан](https://www.instagram.com/juliancreates/) є меценатом FreeSewing (дякуємо Джуліану) і бере активну участь у русі [Black Makers Matter](https://www.instagram.com/blkmakersmatter/) в Instagram. Я звернувся до Джуліана за допомогою, і ми довго розмовляли по Zoom, де говорили про його роботу і про те, як він організовує спільноту.
 
-Julian had a lot of good advice. I couldn't possibly cram it all into this post, but it sort of boils down to:
+Джуліан дав багато хороших порад. Я не зміг би втиснути все це в цей пост, але все зводиться до наступного:
 
- - Just ask people for help
- - Be clear about what kind of community you want to build
+ - Просто попросіть людей про допомогу
+ - Чітко усвідомлюйте, яку спільноту ви хочете побудувати
 
-So I am taking Julian's advice to heart, and asking for help. Before we get to that though, let's make sure we're all on the same page about the kind of community we're trying to build here.
+Тож я приймаю пораду Джуліана близько до серця і прошу про допомогу. Перш ніж ми перейдемо до цього, давайте переконаємося, що ми всі на одній сторінці щодо того, яку спільноту ми намагаємося тут побудувати.
 
-## Quick check: Are you on board with FreeSewing's values?
+## Швидка перевірка: Чи поділяєте ви цінності FreeSewing?
 
-To ensure that your values are aligned with those of FreeSewing, please take a moment to familiarize yourself with:
+Щоб переконатися, що ваші цінності збігаються з цінностями FreeSewing, будь ласка, знайдіть хвилинку, щоб ознайомитися з ними:
 
- - [Our community standards](/docs/various/community-standards/)
- - [Our code of conduct](https://freesewing.dev/contributors/code-of-conduct/)
+ - [Стандарти нашої спільноти](/docs/various/community-standards/)
+ - [Наш кодекс поведінки](https://freesewing.dev/contributors/code-of-conduct/)
  - [Куди йде наш прибуток](/docs/various/pledge/)
 
-If reading that made you happy rather than angry, we could use your help :)
+Якщо прочитане вас порадувало, а не розлютило, ми будемо раді вашій допомозі :)
 
-## Please help grow FreeSewing beyond what I can do on my own
+## Будь ласка, допоможіть розвинути FreeSewing за межі того, що я можу зробити самостійно
 
-We're starting simple: We plan to hold a Zoom/Skype/Whatever call every 2 weeks to figure it out as we go. We start the first weekend of September (next weekend). We haven't picked a time yet, for it will depend on the time zones the participants live in.
+Почнемо з простого: Ми плануємо проводити Zoom/Skype/інші дзвінки кожні 2 тижні, щоб з'ясувати, що відбувається. Починаємо в перші вихідні вересня (наступні вихідні). Ми ще не визначилися з часом, оскільки це буде залежати від часових поясів, в яких живуть учасники.
 
-If you'd like to attend, please [let us know in our chat room](https://discord.freesewing.org/).
+Якщо ви бажаєте взяти участь, будь ласка, [повідомте нам про це в нашому чаті](https://discord.freesewing.org/).
 
-### What kind of help is needed?
+### Яка допомога потрібна?
 
-Beggars can't be choosers. All help is welcome, and I certainly don't want to turn down any volunteers.
+Жебраки не можуть вибирати. Будь-яка допомога вітається, і я, звичайно, не хочу відмовляти жодному волонтеру.
 
-That being said, an overly vague call defuses the message. So I've listed/included a number of *roles* below to give you an idea of the kind of work that goes into FreeSewing. It's not meant to be an exhaustive list, but merely a starting point for a discussion.
+При цьому надто розпливчастий заклик розряджає послання. Тому я перерахувала/включила кілька *ролей* нижче, щоб дати вам уявлення про те, яка робота виконується у FreeSewing. Це не вичерпний перелік, а лише відправна точка для дискусії.
 
-The order is alphabetic.
+Порядок в алфавітному порядку.
 
-**Backend Developer**  
-You keep our backend in step with the latest frontend developments. Express is no stranger to you. Node JS is a good friend. Or maybe you'd like them to be.
+**Backend розробник**  
+Ви тримаєте наш бекенд в курсі останніх фронтенд-розробок. Експрес вам не чужий. Node JS - хороший друг. А може, ви б хотіли, щоб так і було.
 
 **Body Ambassador**  
-Maybe you're unusually short or tall. Maybe you have a bit of a pot belly or very large breasts. Maybe you have a disability that requires fit adjustments. Whatever it is, you represent a minority fitting issue, and are willing to act as an ambassador to make sure your needs are heard and understood.
+Можливо, ви незвично низькі або високі. Можливо, у вас трохи повненький живіт або дуже великі груди. Можливо, у вас є інвалідність, яка потребує корекції фігури. Що б це не було, ви представляєте інтереси меншини і готові діяти як посол, щоб переконатися, що ваші потреби почуті і зрозумілі.
 
 **Community Builder**  
-You're an extrovert extraordinaire, or you're good at faking it. You enjoy chatting with all sorts of people, and networking is just you doing you. You're like the jelly that molds a group of individuals into a cohesive community.
+Ви надзвичайний екстраверт, або ви добре вмієте прикидатися. Вам подобається спілкуватися з різними людьми, а нетворкінг - це коли ви робите те, що робите самі. Ви як желе, яке формує групу людей у згуртовану спільноту.
 
-**Database Administrator**  
-You look after our database. Other people might feel that's not important, but you know better. You're familiar with MongoDB.
+**Адміністратор бази даних**  
+Ви дбаєте про нашу базу даних. Інші люди можуть вважати, що це не важливо, але ви знаєте краще. Ви знайомі з MongoDB.
 
 **Devops Engineer**  
-Your aim is to make almost all these other roles irrelevant by automating the heck out of everything. CI and Github actions are fun for you. You like to sit back and have the robots do the work for you.
+Ваша мета - зробити майже всі інші ролі неактуальними, автоматизувавши до біса все. Дії CI та Github приносять вам задоволення. Вам подобається сидіти склавши руки, а роботи роблять роботу за вас.
 
 **Frontend Developer**  
-You improve our websites, specifically freesewing.org and freesewing.dev. Both of them are built with [Gatsby](https://www.gatsbyjs.com/), an open source framework for building frontends that is powered by [React](https://reactjs.org/). If you know these things, or would like to learn them, this is your jam.
+Ви покращуєте наші веб-сайти, зокрема freesewing.org та freesewing.dev. Обидва вони побудовані за допомогою [Gatsby](https://www.gatsbyjs.com/), фреймворку з відкритим вихідним кодом для побудови фронтендів, який працює на базі [React](https://reactjs.org/). Якщо ви знаєте ці речі або хотіли б їх вивчити, це ваш джем.
 
-**Illustrator**  
-You create illustrations to go alongside the written documentation. If you draw a bicycle from memory, it actually looks like a bicycle.
+**Ілюстратор**  
+Ви створюєте ілюстрації до письмової документації. Якщо ви малюєте велосипед по пам'яті, він дійсно виглядає як велосипед.
 
-**Inclusion & Diversity Manager**  
-You have skin in the game when it comes to inclusion and diversity. You'll help make our community welcoming and diverse. You won't be afraid to tell this pasty white dude when he's wrong.
+**Інклюзія & Менеджер з питань різноманіття**  
+Ви маєте безпосередній стосунок до питань інклюзії та різноманіття. Ви допоможете зробити нашу спільноту гостинною та різноманітною. Ви не боятиметеся сказати цьому пастозному білому чуваку, що він не правий.
 
-**Language Ambassador**  
-You represent FreeSewing in a non-English community. You can help answer questions or triage problem reports. Or you can point out where translations are missing.
+**Мовний посол**  
+Ви представляєте FreeSewing у неангломовній спільноті. Ви можете допомогти відповісти на запитання або впорядкувати повідомлення про проблеми. Або ви можете вказати, де бракує перекладу.
 
 **Pattern Ambassador**  
-You'll be responsible for a specific FreeSewing design/pattern. You'll be *the person* to ask questions about how to make that pattern. You'll make sure the documentation is not forgotten. And you can help with questions or triage problem reports to developers or designers.
+Ви будете відповідати за конкретний дизайн/викрійку FreeSewing. Ви будете *людиною, яка* ставити запитання про те, як зробити цей шаблон. Ви переконаєтеся, що документація не забута. І ви можете допомогти з питаннями або впорядкувати повідомлення про проблеми розробникам або дизайнерам.
 
-**Pattern Designer**  
-You come up with new pattern designs for FreeSewing. You might not know how to turn on a computer, but damn if you can't draft a bodice.
+**Дизайнер викрійок**  
+Ви придумуєте нові дизайни викрійок для FreeSewing. Ви можете не знати, як увімкнути комп'ютер, але чорт забирай, якщо ви не можете накреслити ліф.
 
-**Pattern Developer**  
-You program new designs for FreeSewing. You might not know how to design sewing patterns, but you're not afraid of Javascript and are happy to team up with a designer to work on a new pattern together.
+**Розробник викрійок**  
+Ви програмуєте нові викрійки для FreeSewing. Можливо, ви не вмієте створювати викрійки, але не боїтеся Javascript і з радістю об'єднаєтеся з дизайнером, щоб разом попрацювати над новою викрійкою.
 
-**Proofreader**  
-You check original English text of translations for typos and/or grammar mistakes. You propose improvements and watch over a consistent style and tone across FreeSewing's documentation and written text. You're fluent in the language you're proofreading.
+**Коректор**  
+Ви перевіряєте оригінальний англійський текст перекладів на наявність друкарських та/або граматичних помилок. Ви пропонуєте покращення та слідкуєте за єдиним стилем і тоном документації та письмових текстів FreeSewing. Ви вільно володієте мовою, яку вичитуєте.
 
-**Social Media Platform Manager**  
-You represent FreeSewing on a *platform*, where platform could be Facebook, Twitter, Instagram, Tiktok, Snapchat, Reddit &hellip;. You manage the FreeSewing account on the platform, and use it to interact with the community.
+**Менеджер платформи соціальних медіа**  
+Ви представляєте FreeSewing на *платформі*, де платформою може бути Facebook, Twitter, Instagram, Tiktok, Snapchat, Reddit &hellip;. Ви керуєте обліковим записом FreeSewing на платформі і використовуєте його для взаємодії зі спільнотою.
 
-**System Administrator**  
-You look after our servers. You install updates, make sure certificates are up-to-date, the works. Linux is where your heart lies. You secretly automated most of your work with Ansible but hey, you put the playbooks in Git so no worries.
+**Системний адміністратор**  
+Ви доглядаєте за нашими серверами. Ви встановлюєте оновлення, переконуєтесь, що сертифікати актуальні, і так далі. Linux - це те, до чого лежить ваше серце. Ви таємно автоматизували більшу частину своєї роботи за допомогою Ansible, але ж ви виклали плейбуки в Git, тож не хвилюйтеся.
 
-**Technical Writer (code)**  
-You write documentation for freesewing.dev, our developers website. You have good writing skills and familiarity with code (Javascript).
+**Технічний письменник (код)**  
+Ви пишете документацію для freesewing.dev, нашого сайту для розробників. Ви маєте хороші навички письма та знайомі з кодом (Javascript).
 
-**Technical Writer (sewing)**  
-You write documentation for freesewing.org, our makers website. You have good writing skills and familiarity with sewing.
+**Технічний письменник (шиття)**  
+Ви пишете документацію для freesewing.org, нашого сайту для мейкерів. Ви маєте хороші навички письма та знайомі з шиттям.
 
-**Translator**  
-You translate FreeSewing into one of its additional languages (French, German, Dutch, Spanish) or if you're ambitious, add a new one. You're fluent in the language you're translating to, and have a good grasp of English.
+**Перекладач**  
+Ви перекладаєте FreeSewing на одну з додаткових мов (французьку, німецьку, голландську, іспанську) або, якщо ви амбітні, додаєте нову мову. Ви вільно володієте мовою, на яку перекладаєте, і добре знаєте англійську.
 
-**UX Designer**  
-You know what UX is and are happy to point out where it sucks and how it can be made better.
+**UX-дизайнер**  
+Ви знаєте, що таке UX, і з радістю вкажете, де він відстійний і як його можна покращити.
 
-**Release Manager**  
-You pull the plug on new releases, you bundle our code, and publish new versions of our packages on NPM.
+**Менеджер релізів**  
+Ви запускаєте нові релізи, збираєте наш код і публікуєте нові версії наших пакунків на NPM.
 
-**Web Designer**  
-You know how to make things pretty, even if you're not sure how to actually make them work.  You appreciate that we don't use #000 for black.
+**Веб-дизайнер**  
+Ви знаєте, як зробити речі красивими, навіть якщо не знаєте, як вони насправді працюють.  Ви цінуєте, що ми не використовуємо #000 для позначення чорного кольору.
 
-### What's in it for me?
+### Що це дасть мені?
 
-We can't offer you money. Please [read our revenue pledge](/docs/various/pledge/) to understand why that is.
+Ми не можемо запропонувати вам грошей. Будь ласка, [прочитайте наші зобов'язання щодо доходів](/docs/various/pledge/) , щоб зрозуміти, чому це так.
 
-What we can offer is responsibility, recognition, and a stake in something that strives to be a force for good in this world.
+Ми можемо запропонувати відповідальність, визнання та зацікавленість у тому, що прагне бути силою добра у цьому світі.
 
-It can also be an excellent learning opportunity for those of you who would like to pivot to a role in web development. And for as far as my time stretches — I will gladly teach and mentor people from underprivileged communities aiming for social mobility.
+Це також може стати чудовою можливістю для навчання для тих з вас, хто хотів би взяти участь у веб-розробці. І поки вистачить часу - я з радістю буду навчати і наставляти людей з малозабезпечених верств населення, які прагнуть до соціальної мобільності.
 
-## Conclusion
+## Висновок
 
-Maybe you can help. Maybe you know somebody who can help, or for whom this would be a valuable learning experience.
+Може, ти зможеш допомогти. Можливо, ви знаєте когось, хто може допомогти, або для кого це був би цінний навчальний досвід.
 
-Either way, I'd appreciate it if you could help spread the message that I'm asking for help.
+У будь-якому випадку, я буду вдячна, якщо ви допоможете поширити інформацію про те, що я прошу про допомогу.
 
-Thank you,
+Дякую,
 
 Joost
 
