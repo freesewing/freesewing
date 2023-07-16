@@ -1,10 +1,10 @@
 ---
-title: "Sac à main Hortensia : ce dont tu as besoin"
+title: "Hortensia handbag: What You Need"
 ---
 
 Pour faire Hortensia vous aurez besoin des éléments suivants :
 
-- Matériel de couture de base
+- Fourniture de base pour la couture
 - Environ 0.5 à 2 mètres (0.6 - 2.2 yards) d'un tissu adapté ([voir Options de tissu pour Hortensia](/docs/patterns/hortensia/fabric/))
 - Environ 0.5 à 2 mètres (0.6 - 2.2 yards) d'un tissu de doublure([voir Options de tissu pour Hortensia](/docs/patterns/hortensia/fabric/))
 - A zipper shorter in length than the zipper panel and matching the [coil width](/docs/patterns/hortensia/options/zippersize/) selected
