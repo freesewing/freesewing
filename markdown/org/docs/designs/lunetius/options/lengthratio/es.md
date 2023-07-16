@@ -1,6 +1,6 @@
-- - -
-title: "Length ratio"
-- - -
+---
+title: "Ratio de longitud"
+---
 
 Controls the length of the garment
 
