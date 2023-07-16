@@ -1,5 +1,5 @@
 ---
-title: "Height"
+title: "Висота"
 ---
 
 ![Варіант висоти](./height.svg)
