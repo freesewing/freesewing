@@ -38,5 +38,3 @@ Ahora ve a hacer un montón. ¡Nuestros profesionales de la salud cuentan contig
 PD: Puedes apoyarnos [convirtiéndote en patrocinador](/patrons/join/) ❤
 </Note>
 
-
-
