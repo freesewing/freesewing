@@ -1,5 +1,5 @@
 ---
-title: "Waist balance"
+title: "Équilibre de la taille"
 ---
 
 Contrôle la répartition du tissu entre les parties avant et arrière à la taille.
@@ -12,4 +12,4 @@ Cette option vous permet de contrôler ce solde.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](paco_waistbalance_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](paco_waistbalance_sample.svg "Effet de cette option sur le motif")
