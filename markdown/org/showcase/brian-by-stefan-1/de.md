@@ -4,8 +4,9 @@ caption: "Stefan showing off his new T-shirt, which is based on the Brian Body B
 date: "2017-11-24"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0c745934ec9e842f4c842dbb43c2cbc17e0968f1-1937x1936.jpg"
 intro: "This picture originally appeared in the twitter feed of @SThanheiser ."
-title: "[auf Englisch] Stefan makes a T-shirt based on Brian 1/4"
-designs: ["brian"]
+title: "Stefan makes a T-shirt based on Brian 1/4"
+designs:
+  - "brian"
 ---
 
 
