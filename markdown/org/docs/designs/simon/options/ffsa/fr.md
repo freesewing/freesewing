@@ -1,6 +1,6 @@
-- - -
-title: "Flat-felled seam allowace"
-- - -
+---
+title: "Couture abattu à plat autorisée"
+---
 
 Controls the amount of seam allowance on flat-felled seams.
 
@@ -10,4 +10,4 @@ This option controls the amount of flat-felled seam allowance as a factor of the
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_ffsa_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_ffsa_sample.svg "Effet de cette option sur le motif")
