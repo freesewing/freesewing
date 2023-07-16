@@ -1,85 +1,60 @@
 ---
 author: "joostdecock"
-caption: "You too can wear this coat. Although you're on your own for the hat. At least for now."
-date: "2017-12-20"
+caption: "Auch Sie können diesen Mantel tragen. Was den Hut betrifft, sind Sie auf sich alleine gestellt. Auf jeden Fall bis jetzt."
+date: "20.12.2017"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/01c201b14f04bedbe2630bb3bd40d925fd6c1ce4-3500x2333.jpg"
-intro: "Announcing Carlton, aka the Sherlock Holmes coat, and the Bent Body Block [Nicht übersetzt]"
-title: "Announcing Carlton, aka the Sherlock Holmes coat, and the Bent Body Block [Nicht übersetzt]"
+intro: "Ankündigung des Carlton-Mantels, auch bekannt als Sherlock Homes Mantel, und des Bent-Grundschnitts"
+title: "Ankündigung des Carlton-Mantels, auch bekannt als Sherlock Homes Mantel, und des Bent-Grundschnitts"
 ---
 
-Good news everybody, we've got your cosplaying needs covered. That is, if you are cosplaying as Sherlock Holmes.
-Our newest pattern release, [the Carlton Coat](/patterns/carlton) is exactly what the doctor prescribed if for some weird reason
-your doctor wants you to look like everyone's favorite detective.
+Gute Nachrichten für alle, wir haben Ihre Cosplay-Bedürfnisse abgedeckt. Das heißt, wenn Sie als Sherlock Holmes auftreten. Unsere neuestes Schnittmuster ist da, [der Carlton-Mantel.](/patterns/carlton) Er ist genau das, was der Arzt verschrieben würde, wenn aus einem seltsamen Grund Ihr Arzt möchte, dass Sie wie jedermans der Lieblingsdetektive aussehen.
 
-My memory is foggy on the exact origin of this endeavor. It probably involved
-me complaining about the cold and my lack of a warm winter coat, but apart from that, I'm not too sure.
+Ich kann mich nicht mehr genau erinnern wie wir zu diesem Projekt kamen. Es hat vermutlich mit der Kälte draussen und meinem Nörgeln, dass ich keine warmen Wintermäntel habe, zu tun, aber abseits davon bin ich nicht mehr sicher.
 
-What I do remember is that at one point, 
-[Anneke](http://www.annekecaramin.com/) and myself decided that we would reverse-engineer the Sherlock Holmes coat.
-More specifically, the coat worn by Benedict Cumberbatch in the BBC series Sherlock Holmes.
+Ich erinnere mich, dass [Anneke](http://www.annekecaramin.com/) und ich irgendwann beschlossen den Sherlock Holmes Mantel zu reverseengenieren. Konkreter, genau der Mantel den Benedict Cumberbatch in der BBC-Serie Sherlock Holmes getragen hat.
 
-![That coat though](https://posts.freesewing.org/uploads/bc_f20e01a16d.jpg)
+![Aber dieser Mantel](https://posts.freesewing.org/uploads/bc_f20e01a16d.jpg)
 
-The coat is popular with cosplayers for obvious reasons, but it's also just a really nice coat, and
-other brave souls [such as Melissa](http://blog.fehrtrade.com/gallery/868/the-sherlock-coat/) have tried their hand at it.
+Der Mantel ist aus offensichtlichen Gründen bei Cosplayern beliebt, aber es ist auch ein wirklich schönes Kleidungsstück, und andere mutige Menschen wie zum Beispiel [Melissa](http://blog.fehrtrade.com/gallery/868/the-sherlock-coat/) haben sich auch schon daran versucht.
 
-I must admit that I didn't know Melissa made a similar coat until mine was finished. Furthermore, her blog post
-mentions that she used the instructions in a livejournal post that is no longer available.
+Ich muss gestehen, ich wusste nicht, dass Melissa auch so an so einem Mantel arbeitet, bis meiner fertig war. Außerdem erwähnt ihr Blogpost, dass sie die Anweisungen aus einem Livejournal-Beitrag verwendet hat, der nicht mehr verfügbar ist.
 
-Anneke and myself did no such thing and just put the pattern together based on screengrabs from the TV show.
-We're hardcore like that.
+Anneke und ich hab uns nicht an solche Anleitung gehalten. Wir haben den Schnitt anhand von Screenshot aus der Fernsehserie rekonstruiert. Wir sind diesbezüglich Hardcore.
 
-### About the coat
+### Über den Mantel
 
-Carlton is a double-breasted long overcoat in the tradition of horseback uniform coats
-where the back of the coat isn't split, but rather has wide pleats that can drape over the back of the horse. 
-Or, more realistically, fan open behind you as you walk about.
+Carlton ist ein zweireihiger Mantel in der Tradition eines Kavallerieuniformmantels, der statt eines Geschlitzes mehrere weite Falten hat, die sich über den Pferderücken ausbreiten können. Oder, realistischer, die schön hinter Ihnen herflattern, wenn Sie raschen Schrittes dahin eilen.
 
-![Front view of Carlton on yours truly](https://posts.freesewing.org/uploads/front_e1d64f3ceb.jpg)
-![Back view of Carlton on yours truly](https://posts.freesewing.org/uploads/back_05c04878c5.jpg)
+![Vorderseite des Carlton-Mantels](https://posts.freesewing.org/uploads/front_e1d64f3ceb.jpg) ![Rückseite des Carlton-Mantels](https://posts.freesewing.org/uploads/back_05c04878c5.jpg)
 
-It comes with two patch pockets on the front, two map pockets at the chest, and two inner pockets.
-Six pockets in total, so you'll have plenty of room for all your belongings.
+Er ist mit zwei Pattentaschen am Vorderteil, zwei Kartentaschen an der Brust und zwei innere Taschen. Sechs Taschen im Ganzen, so haben Sie viel Platz um all Ihre Dinge zu verstauen.
 
-![Map and patch pockets on the outside](https://posts.freesewing.org/uploads/pockets_28099d1afe.jpg)
-![Inner pockets on the inside](https://posts.freesewing.org/uploads/innerpocket_4e4e3f5119.jpg)
+![Karten- und Pattentasche auf der Aussenseite](https://posts.freesewing.org/uploads/pockets_28099d1afe.jpg) ![Innere Taschen im Futter](https://posts.freesewing.org/uploads/innerpocket_4e4e3f5119.jpg)
 
-I finished mine just in time for a trip to K&ouml;ln to visit my beloved friend and tailor 
-[Sebastian Hoofs](http://sebastian-hoofs.de/massschneider/).
-It was cold as eff over there, but the coat kept me nice and warm. Not surprising since it's made in a hefty
-wool I picked up in [Bacci in Florence](http://www.baccitessuti.it/en/index.html) over the summer, and I took
-the extra step of interlining it with French terry (I really don't like to be cold).
+Ich stellte meinen rechtzeitig fertig für meine Reise nach Köln, zu meinem guten Freund und Schneidermeister [Sebastian Hoofs](http://sebastian-hoofs.de/massschneider/). Es war sehr kalt da drüben, der Mantel hat mich aber schön warm gehalten. Dies ist nicht verwunderlich, da ich den Mantel aus einer schweren Wolltuche genäht habe, die ich im Sommer bei [ Bacci in Florenz](http://www.baccitessuti.it/en/index.html) erworben hatte. Und ich habe das Stück extra mit French Terry abgefüttert (ich hasse Kälte).
 
-![I have no affiliation with Bacci, I'm just a sucker for great fabric stores](https://posts.freesewing.org/uploads/bacci_043f91c96c.jpg)
-![You can see the terry interlining where I peeled back the sleeve lining](https://posts.freesewing.org/uploads/interlining_220e0eab71.jpg)
+![Ich werde nicht von Bacci gesponsert, ich liebe einfach gute Stoffläden](https://posts.freesewing.org/uploads/bacci_043f91c96c.jpg) ![Sie können hier das Terry-Zwischenfutter sehen, so ich das Ärmelfutter zurückgezogen habe](https://posts.freesewing.org/uploads/interlining_220e0eab71.jpg)
 
-### Burn the patriarchy to the ground through the power of pockets
+### Brennt das Patriarchat nieder mit der Macht von Taschen
 
-Ladies take note: Carlita --- a female version of Carlton --- is currently on the drawing board.
+Meine Damen bitte beachten Sie, Carlita — Die Damenvariante von Carlton — wird aktuell erstellt.
 
-Initially, the plan was to release male and female versions side by side, but adapting the coat 
-has proven to be more involved than anticipated because, well, because boobs. 
+Ursprünglich war es geplant, männliche und weibliche Version gleichzeitig zu publizieren, aber die Anpassung des Mantels für Personen mit Brüsten hat weitaus mehr Zeit in Anspruch genommen als ursprünglich gedacht.
 
-I also feel like I have to 
-keep too many plates spinning right now, so I'm hopeful that getting Carlton out the door will
-create some time/space to make Carlita follow soon(ish). Either way, I've promised Anneke that we'd
-do a female version, and [she's a freesewing Captain now](/patrons), so I intend to keep that promise.
+Ich habe das gefühlt, ich muss zur Zeit auf zu vielen Hochzeiten gleichzeitig tanzen, deswegen hoffe ich, dass ich nach dem Release von Carlton die nötige Zeit und Ruhe finde, um Carlita so bald wie möglich zu nachzureichen. Auf jeden Fall habe ich Anneke versprochen, dass es eine weibliche Version geben wird und sie ist zwischenzeitlich [ein FreeSewing Kapitän](/patrons) geworden, also sollte ich dies Versprechen einhalten.
 
-Oh, and about that title: When Carlita's ready, she will have just as many pockets as Carlton.
+Ah und diesbezüglich, Carlita wird genau so viele Taschen haben wie Carlton.
 
-## Also, this: Introducing the Bent Body Block
-We're actually releasing two patterns today. Apart from the Carlton Coat, there's also
-the [Bent Body Block](/patterns/bent).
+## Und nun weiter: darf ich vorstellen: der Grundschnitt Bent
+Wir publizieren heute als nicht bloss ein sondern gleich zwei Schnittmuster. Neben dem Mangel Carlton haben wir auch noch [den Grundschnitt Bent](/patterns/bent)fertiggestellt.
 
-Bent is a two-part sleeve variation of our [Brian Body Block](/patterns/bent). It's essentially a base 
-for coat and jacket patterns for menswear.
+Bent ist eine modifizierte Variante unseres Grundschnits [Brian](/patterns/bent) mit einem zweiteiligen Ärmel. Es ist im Wesentlichen eine Grundlage für Mäntel und Sakkos in der Herrenmode.
 
-I originally designed Bent as a base for my [refashioners 2017 zebra jacket](/blog/the-refashioners-2017/),
-so you can expect that jacket pattern to also hit the site in the coming months.
+Ich habe Bent ursprünglich als Basis für meine [Refashioners 2017 Zebrajacket](/blog/the-refashioners-2017/) entworfen, sodass Sie die Sie erwarten dürfen, dass das Jacket-Schnittmuster in den kommenden Monaten auf die Website erscheint.
 
-Carlton is also based on Bent, so we're giving you both today. 
+Auch Carlton ist auf Grundlage von Bent entworfen, so geben wir beide Schnitte heute frei.
 
-Have wonderful and happy holidays if you're into that kind of thing. And happy making!
+Ich wünsche Ihnen schöne und angenehme Festtage, falls Sie diese faiern. Und viel Freude beim Schneidern!
 
 
 
