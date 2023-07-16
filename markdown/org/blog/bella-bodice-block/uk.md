@@ -1,31 +1,31 @@
 ---
 author: "joostdecock"
-caption: "Remember when we were allowed to go outside?"
+caption: "Пам'ятаєте, коли нам дозволили виходити на вулицю?"
 date: "2021-01-17"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0faad5ded9176b4cf9e58cf5b05a939ba7670363-1920x1272.jpg"
-intro: "The Bella bodice block for womenswear"
-title: "The Bella bodice block for womenswear"
+intro: "Ліф-блок Bella для жіночого одягу"
+title: "Ліф-блок Bella для жіночого одягу"
 ---
 
 
-We've just published a new pattern on this website: [Bella, a bodice block for womenswear](/designs/bella/). It's a block with bust and waist dart, and a waist dart at the back.
+Ми щойно опублікували нову викрійку на цьому сайті: [Белла, блок ліфа для жіночого одягу](/designs/bella/). Це блок з нагрудною і талієвою виточками, а також талієвою виточкою ззаду.
 
-My goal when venturing into womenswear was to make one foundational block from which we could then spin out a range of different garments.
+Моєю метою, коли я вирішила зайнятися жіночим одягом, було створити один фундаментальний блок, з якого потім можна було б цілу низку різноманітного одягу.
 
-Which is why we have [Breanna](/designs/breanna/), which I designed from scratch. Unfortunately, it hasn't been the end-all be-all that I — perhaps naively — hoped it would be.
+Ось чому у нас є [Бріанна](/designs/breanna/), яку я розробила з нуля. На жаль, це не стало тим кінцем, на який я - можливо, наївно - сподівався.
 
-For Bella, I worked with someone from the industry to implement a design that is commonly used for commercial garment making. As such, I am curious to see how this one will pan out.
+Для Bella я працювала з представником індустрії, щоб реалізувати дизайн, який зазвичай використовується для комерційного виробництва одягу. Тому мені цікаво подивитися, що з цього вийде.
 
-My initial plan was to also make a variation with a shoulder dart at the front, to replace the bust dart, but in the end I settled for getting it released, rather than work on it longer.
+Спочатку я планувала також зробити варіацію з плечовою виточкою спереду, щоб замінити нагрудну виточку, , але зрештою я вирішила просто випустити її, а не працювати над нею довше.
 
-Which brings me to:
+До чого я веду:
 
-##### I'm taking a break from womenswear
+##### Я роблю перерву в жіночому одязі
 
-I feel like I'm expending a lot of effort here for little result. It's getting me down, and I need a win.
+Мені здається, що я витрачаю тут багато зусиль для малого результату. Це пригнічує мене, і мені потрібна перемога.
 
-I want to work on something that I can not only design, but also make and wear. Something that gives me joy, and makes me feel like I know what I'm doing.
+Я хочу працювати над чимось, що можна не лише спроектувати, але й виготовити та носити. Щось, що приносить мені радість і змушує мене відчувати, що я знаю, що роблю.
 
-So while I'll still help out people who want to design for women themselves, I am taking a break from womenswear. 
+Тож, хоча я й надалі допомагатиму людям, які самі хочуть створювати дизайн для жінок, я беру перерву в роботі над жіночим одягом. 
 
 
