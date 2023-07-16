@@ -1,5 +1,5 @@
 ---
-title: "Leg balance"
+title: "Balans been"
 ---
 
 Bepaalt de verhouding tussen de voor- en achterkant van de broekspijpen.
