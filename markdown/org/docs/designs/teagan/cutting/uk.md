@@ -1,5 +1,5 @@
 ---
-title: "Футболка Тіган: Інструкція з крою"
+title: "Teagan T-shirt: Cutting Instructions"
 ---
 
 - Відріжте 1 назад на згині.
