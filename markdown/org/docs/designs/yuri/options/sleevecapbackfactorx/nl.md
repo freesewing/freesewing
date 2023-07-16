@@ -1,6 +1,6 @@
-- - -
-title: "Sleevecap back X"
-- - -
+---
+title: "Mouwkop X achteraan"
+---
 
 ![De horizontale locatie van het tussenpunt](./sleevecapbackfactorx.svg)
 
