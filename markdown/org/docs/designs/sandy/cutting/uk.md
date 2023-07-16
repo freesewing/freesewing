@@ -1,6 +1,6 @@
-- - -
-"Спідниця з піщаним колом": "Пісочна спідниця-коло: Інструкція з крою"
-- - -
+---
+title: "Sandy circle skirt: Cutting Instructions"
+---
 
 <Note>
 
