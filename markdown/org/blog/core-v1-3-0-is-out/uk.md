@@ -1,73 +1,73 @@
 ---
 author: "joostdecock"
-caption: "Scales, how do they work?"
+caption: "Ваги, як вони працюють?"
 date: "2018-01-04"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d09252be53d33ab5b743c22f523a9ea8cbd70708-2000x1328.jpg"
-intro: "Freesewing core v1.3.0 is out; Comes with fixes so good that we back-ported them to all your drafts"
-title: "Freesewing core v1.3.0 is out; Comes with fixes so good that we back-ported them to all your drafts"
+intro: "Вийшло ядро Freesewing v1.3.0; воно містить настільки хороші виправлення, що ми перенесли їх у всі ваші чернетки"
+title: "Вийшло ядро Freesewing v1.3.0; воно містить настільки хороші виправлення, що ми перенесли їх у всі ваші чернетки"
 ---
 
-On the last day of 2017, in our [monthly roundup of all the freesewing news](/blog/roundup-2017-12/) , we wrote about the looming issue with incorrectly scaled drafts, aka [Core issue #204 - The Inkscape default units quandary](https://github.com/freesewing/core/issues/204).
+В останній день 2017 року в нашому [щомісячному огляді всіх новин фріскейтингу](/blog/roundup-2017-12/) ми писали про насувається проблему з неправильно масштабованими чернетками, також відому як [Основна проблема #204 - Проблема з одиницями за замовчуванням в Inkscape](https://github.com/freesewing/core/issues/204).
 
-I won't go over [all that](/blog/roundup-2017-12/) again, but it boils down to the fact that the [Inkscape](http://inkscape.org/) maintainers have changed Inkscape's internal DPI (dots per inch) from 90 to 96. A change that goes in effect from version 0.92 onwards.
+Я не буду повторювати [всі ці](/blog/roundup-2017-12/) , але все зводиться до того, що [супровідники](http://inkscape.org/) Inkscape змінили внутрішній DPI (точок на дюйм) Inkscape з 90 до 96. Зміна набуває чинності починаючи з версії 0.92.
 
-Left unchecked, this change would cause all freesewing patterns to be incorrectly scaled. That's because we assume 90DPI in our SVG output, and scale accordingly.
+Якщо не позначити цю зміну, всі деталі з вільними контурами будуть неправильно масштабовані. Це тому, що ми використовуємо 90DPI у вихідному SVG-файлі і масштабуємо його відповідно.
 
-![That 'oh-shit' moment when we realized the full impact of the DPI change](https://posts.freesewing.org/uploads/oh_shit_90b4969a5d.gif)
+![Той момент "охрініння", коли ми усвідомили весь вплив зміни DPI](https://posts.freesewing.org/uploads/oh_shit_90b4969a5d.gif)
 
-When the switch to 96DPI goes into effect, all patterns would be off by 6.66%. Which is really the kind of difference that is too small to notice when eyeballing a pattern, yet large enough to completely mess up your garment.
+Коли перехід на 96DPI набуде чинності, всі патерни будуть вимкнені на 6,66%. Це дійсно різниця, яка занадто мала, щоб її помітити, коли дивишся на візерунок, але достатньо , щоб повністю зіпсувати ваш одяг.
 
-The issue is also more troublesome than it would seem at the surface. First of all because we can't just switch to 96DPI as there are now two versions out there that use a different default DPI under the hood. We need a solution that works for both.
+Це питання також є більш складним, ніж може здатися на перший погляд. Перш за все тому, що ми не можемо просто перейти на 96DPI, оскільки зараз існують дві версії , які використовують різні значення DPI за замовчуванням. Нам потрібне рішення, яке підійде обом.
 
-![Screenshot of a freesewing pattern that is incorrectly scaled in the latest Inkscape release](https://posts.freesewing.org/uploads/inkscape_b96e2bb510.png)
+![Скріншот візерунка фрізінг, який неправильно масштабується в останньому випуску Inkscape](https://posts.freesewing.org/uploads/inkscape_b96e2bb510.png)
 
-Furthermore, while any fix we implement would apply to new drafts, all existing drafts generated before the fix would still be impacted.
+Крім того, хоча будь-яке виправлення, яке ми впровадимо, стосуватиметься нових проектів, всі існуючі проекти, створені до виправлення, все одно будуть піддані впливу.
 
-In other words, if you drafted a pattern last week, or a month ago, that pattern would not scale correctly in a recent version of Inkscape.  
-And since we use Inkscape in our SVG-to-PDF tool-chain, it would also be incorrectly scaled if you came here and downloaded a PDF.
+Іншими словами, якщо ви намалювали візерунок минулого тижня або місяць тому, він не буде правильно масштабуватися в новій версії Inkscape.  
+А оскільки ми використовуємо Inkscape у нашому ланцюжку інструментів для перетворення SVG у PDF, він також буде неправильно масштабований , якщо ви зайдете сюди і завантажите PDF.
 
-Clearly, something needed to be done. And fast.
+Очевидно, що треба було щось робити. І швидко.
 
-## The fix for new drafts
+## Виправлення для нових чернеток
 
-From today's release of core v1.3.0 onwards, our SVG files no longer depend on any DPI setting.
+Починаючи з сьогоднішнього випуску ядра v1.3.0, наші SVG-файли більше не залежать від налаштувань DPI.
 
-Rather than use the internal units and apply an SVG transform to scale the entire pattern, we've bolted down the units to mm and updated the SVG viewBox to apply the scaling.
+Замість того, щоб використовувати внутрішні одиниці виміру і застосовувати SVG-трансформацію для масштабування всього шаблону , ми прикрутили одиниці виміру до мм і оновили SVG viewBox, щоб застосувати масштабування.
 
-Obviously, this is how we should have done it from the start. Everyday is a school day.
+Очевидно, що так треба було робити з самого початку. Кожен день - це шкільний день.
 
-If you're worried about the use of mm in your draft (because you're used to imperial units), rest assured that those mm will stay under the hood. You won't be able to tell the difference.
+Якщо вас турбує використання мм у вашому проекті (тому що ви звикли до імперських одиниць), будьте впевнені, що ці мм залишаться під капотом. Ви не зможете відрізнити їх.
 
-## The fix for pre-existing drafts
+## Виправлення попередньо створених чернеток
 
-To avoid problems with pre-existing drafts, we needed to come up with a solution for those too.
+Щоб уникнути проблем з уже існуючими чернетками, нам потрібно було придумати рішення і для них.
 
-We essentially have two options:
+По суті, у нас є два варіанти:
 
- - Re-draft all those drafts
- - Patch them in-place without changing the draft itself
+ - Переробіть всі ці чернетки
+ - Виправте їх на місці, не змінюючи сам проект
 
-Re-drafting fixes the issue as every new draft will be handled by the latest core version that does include the fix.
+Повторне створення чернетки виправляє проблему, оскільки кожна нова чернетка буде оброблятися останньою версією ядра , яка містить виправлення.
 
-However, core also ships with regular updates, tweaks, and fixes in the patterns themselves. So by re-drafting a draft generated on a previous version of core, there's no guarantee the draft won't change.
+Однак ядро також постачається з регулярними оновленнями, твіками та виправленнями в самих шаблонах. Отже, якщо ви переробите чернетку, створену на попередній версії ядра, немає жодних гарантій, що чернетка не зміниться.
 
-In principle that change would always be an improvement. But one person's bug is another person's feature, and we do prefer not to [move your cheese](https://en.wikipedia.org/wiki/Who_Moved_My_Cheese%3F).
+В принципі, така зміна завжди буде покращенням. Але що для когось баг, то для когось особливість, і ми вважаємо за краще не [переносити ваш сир](https://en.wikipedia.org/wiki/Who_Moved_My_Cheese%3F).
 
-![Don't touch my stuff](https://posts.freesewing.org/uploads/who_moved_my_cheese_0cd51a25d6.jpg)
+![Не чіпай мої речі.](https://posts.freesewing.org/uploads/who_moved_my_cheese_0cd51a25d6.jpg)
 
-So, instead we decided to patch all drafts we have on file in-place with the new scaling code, without touching any other aspect of the draft.
+Тому замість цього ми вирішили виправити всі чернетки, які ми маємо у файлі, за допомогою нового коду масштабування, , не торкаючись жодного іншого аспекту чернетки.
 
-As you're reading this, this has already been done, and all freesewing drafts should now scale correctly. Everywhere.
+Коли ви читаєте цю статтю, це вже зроблено, і всі фріскейли тепер мають правильно масштабуватися. Скрізь.
 
-## Also: version awareness
+## Також: поінформованість про версії
 
-We've also made changes to our backend systems to store the version of freesewing core that generated your draft.
+Ми також внесли зміни в наші внутрішні системи, щоб зберігати версію ядра freesewing, з якої згенерував ваш чернетку.
 
-If since you generated your draft we've rolled out new features or fixes, you'll be notified that an update is available:
+Якщо з моменту створення чернетки ми впровадили нові функції або виправили помилки, ви отримаєте сповіщення на про те, що оновлення доступне:
 
-![If you draft is generated with an old version of freesewing core, we'll tell you about it](https://posts.freesewing.org/uploads/upgrade_dee342e3fb.png)
+![Якщо ваш проект згенеровано за допомогою старої версії ядра freesewing, ми скажемо вам про це](https://posts.freesewing.org/uploads/upgrade_dee342e3fb.png)
 
-Whether you update your draft or not is up to you. If you don't want to loose the info in your *old* draft, rather than update it in-place, you can fork it.
+Оновлювати чернетку чи ні - вирішувати вам. Якщо ви не хочете втратити інформацію у вашій *старій чернетці* , замість того, щоб оновлювати її на місці, ви можете розгалузити її.
 
 
 
