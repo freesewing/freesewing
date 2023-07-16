@@ -1,5 +1,5 @@
 - - -
-title: "Hips ease"
+title: "Overwijdte heupen"
 - - -
 
 ![Overwijdte heup](./hipsease.svg)
