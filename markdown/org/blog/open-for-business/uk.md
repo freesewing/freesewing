@@ -1,160 +1,160 @@
 ---
 author: "joostdecock"
-caption: "Open 24/7 from now onwards"
+caption: "Відтепер працюємо 24/7"
 date: "2017-08-25"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/444b63db2120d50eb52004b2017c992624bbb66e-2000x1333.jpg"
-intro: "Freesewing.org is open for business. That is, the business of giving away free sewing patterns"
-title: "Freesewing.org is open for business. That is, the business of giving away free sewing patterns"
+intro: "Freesewing.org відкритий для бізнесу. Тобто бізнес з роздачі безкоштовних викрійок для шиття"
+title: "Freesewing.org відкритий для бізнесу. Тобто бізнес з роздачі безкоштовних викрійок для шиття"
 ---
 
-When I released freesewing core back in March, I did not expect it to take another 5 months to finally have a proper front-end for it, but here we are.
+Коли я випустив ядро freesewing у березні, я не очікував, що знадобиться ще 5 місяців, щоб нарешті отримати для нього належний фронтенд, але ось ми тут.
 
-From today onwards, [freesewing.org](https://freesewing.org/) is the place to be for your made-to-measure sewing patterns.
+Відсьогодні [freesewing.org](https://freesewing.org/) - це місце, де ви зможете знайти свої викрійки для пошиття одягу за індивідуальними мірками.
 
-If you're new to freesewing, I suggest you start reading [the about page](/about/), which hopefully does a half-decent attempt at describing what this thing is.
+Якщо ви новачок у фрісвінгу, я раджу вам почати читати [сторінку про фріскейтинг](/about/), , де, сподіваюся, зроблена напівпристойна спроба описати, що це за штука.
 
-> As of today mmp will no longer allow new users to sign up and after a grace period of a few months, I will shut it down
+> З сьогоднішнього дня mmp більше не дозволить реєструватися новим користувачам, і після пільгового періоду в кілька місяців я закрию його
 
-If you do know what I'm doing here, or you saw *An open-source platform for made-to-measure sewing patterns* at the top of this page and that was enough for you to figure it out, this announcement comes after 18 months of work to reinvent my previous site, [makemypattern.com](https://makemypattern.com/).
+Якщо ви знаєте, що я тут роблю, або ви бачили *Платформу з відкритим вихідним кодом для викрійок* вгорі цієї сторінки і цього було достатньо, щоб зрозуміти, це оголошення з'явилося після 18 місяців роботи над переосмисленням мого попереднього сайту, [makemypattern.com](https://makemypattern.com/).
 
-Speaking of which, makemypattern.com has so far generated more than 6500 sewing patterns, so I think it's fair to say it's been a good run.
+До речі, makemypattern.com на сьогоднішній день згенерував понад 6500 викрійок для шиття, так що я думаю, що можна сказати, що це був хороший запуск.
 
-![Graph of the number of patterns generated on makemypattern.com](https://posts.freesewing.org/uploads/mmp_patterns_82c2056938.png)
+![Графік кількості лекал, згенерованих на makemypattern.com](https://posts.freesewing.org/uploads/mmp_patterns_82c2056938.png)
 
-But [every new beginning comes from some other beginning's end](https://www.youtube.com/watch?v=xGytDsqkQY8). So as of today mmp will no longer allow new users to sign up and after a grace period of a few months, I will shut it down.
+Але [кожен новий початок виникає з кінця якогось іншого початку](https://www.youtube.com/watch?v=xGytDsqkQY8). Тож від сьогодні mmp більше не дозволить новим користувачам реєструватися на , а після пільгового періоду в кілька місяців я закрию його.
 
-Update your bookmarks people, because [freesewing.org](https://freesewing.org/) is where it's at.
+Оновіть свої закладки, люди, , тому що [freesewing.org](https://freesewing.org/) - це те, що треба.
 
-## Everything is new or different, and hopefully better
+## Все нове або інше, і, сподіваємося, краще
 
-The idea of generating made-to-measure sewing patterns based on your measurements is the same. Apart from that, pretty much everything you see here is different.
+Ідея створення викрійок на основі ваших мірок така ж сама. Окрім цього, майже все, що ви бачите тут, відрізняється.
 
-I've written before about the choices I've made when building this frontend. The [matters of principle and ethics](/en/blog/privacy-choices/) as wel as [the technical stuff](/en/blog/freesewing-goes-jamstack/).
+Я вже писав раніше про вибір, який я зробив при створенні цього фронтенду. [питання принципів та етики](/en/blog/privacy-choices/) , а також [технічні питання](/en/blog/freesewing-goes-jamstack/).
 
-Today, I won't go into the details of how things work under the hood. Instead, I'd like to briefly highlight some of the most significant changes for the users of the site. Hopefully, that includes you.
+Сьогодні я не буду вдаватися в деталі того, як все працює під капотом. Натомість, я хотів би коротко висвітлити деякі з найбільш важливих змін для користувачів сайту. Сподіваюся, це стосується і вас.
 
-### Patterns vs drafts
+### Шаблони проти чернеток
 
-I told you earlier that mmp generated over 6500 patterns. I can also tell you that mmp has 10 patterns available.
+Я вже казав, що mmp згенерував понад 6500 шаблонів. Також можу сказати, що mmp має 10 шаблонів.
 
-So which one is it, 10 or 6500? Well, it depends on the context. Which is ambigious and confusing.
+То що ж це, 10 чи 6500? Ну, це залежить від контексту. Що неоднозначно і заплутано.
 
-Now, patterns are patterns, and drafts are drafts.  
-That is, a draft is what you generate from a pattern. It's a pattern drafted to your exact specifications.
+Отже, шаблони - це шаблони, а чернетки - це чернетки.  
+Тобто, чернетка - це те, що ви створюєте з шаблону. Це шаблон, розроблений за вашими точними специфікаціями.
 
-![An example of a draft from freesewing.org](https://posts.freesewing.org/uploads/draft_sample_7e92caf0d6.svg)
+![Приклад проекту з сайту freesewing.org](https://posts.freesewing.org/uploads/draft_sample_7e92caf0d6.svg)
 
-I hope that in using both terms consistently, it will become self-explanatory.
+Сподіваюся, що при послідовному використанні обох термінів це стане зрозумілим.
 
-So, for freesewing that means there are 12 patterns available, from which a number of drafts have been generated that you can track live on [the status page](/status).
+Отже, для фріволіте це означає, що доступні 12 шаблонів, з яких згенеровано низку проектів, які ви можете відстежувати в реальному часі на [сторінці статусу](/status).
 
-### New patterns, and blocks
+### Нові шаблони та блоки
 
-Currently, 12 patterns are available on freesewing.org. All 10 from mmp (note: some have had their name changed) plus the new [Sven Sweatshirt](/patterns/sven) and the [Brian Body Block](/patterns/brian).
+Наразі на сайті freesewing.org доступні 12 моделей. Всі 10 від mmp (примітка: деякі з них були змінені) плюс новий [світшот Свена](/patterns/sven) та [боді-блок Брайана](/patterns/brian).
 
-![An example of the Sven sweatshirt](https://posts.freesewing.org/uploads/sven_b189ad1368.jpg)
+![Приклад світшоту Sven](https://posts.freesewing.org/uploads/sven_b189ad1368.jpg)
 
-The block also existed in the mmp backend, but it wasn't available to you. So that's another change, I am making all my blocks (slopers) available.
+Блок також існував у бекенді mmp, але він був недоступний для вас. Отже, це ще одна зміна, я роблю всі свої блоки (slopers) доступними.
 
-And more is coming, I currently have 3 patterns and 1 block that I am working on. They are not ready yet, and I didn't want to delay the release for them, but I hope to have them all out before the end of the year.
+І це ще не все, наразі я маю 3 патерни та 1 блок, над якими працюю. Вони ще не готові, і я не хотів затримувати реліз для них, але я сподіваюся випустити їх до кінця року.
 
-What I'm saying is, watch this space. Or better, check the links at the bottom of this page for social media accounts to follow.
+Я хочу сказати, що слідкуйте за цим простором. А ще краще, перевірте посилання внизу цієї сторінки на акаунти в соціальних мережах, за якими можна стежити.
 
-### Better support for *les autres*
+### Краща підтримка для *les autres*
 
-I [tried](https://makemypattern.com/blog/imperial-units-have-been-spotted-and-they-might-break-things) and [failed](https://makemypattern.com/blog/imperial-units-not-worth-it) to add support for imperial units to makemypattern.com.
+Я [спробував](https://makemypattern.com/blog/imperial-units-have-been-spotted-and-they-might-break-things) і [не вдалося](https://makemypattern.com/blog/imperial-units-not-worth-it) додати підтримку імперських юнітів до makemypattern.com.
 
-This time around, both metric and imperial are fully supported. You can set your preferred units in your account settings. And in each model you can set the units seperately, just in case you happen to sew for people living in different parts of the world.
+Цього разу повністю підтримуються як метрична, так і імперіальна системи числення. Ви можете встановити бажані одиниці виміру в налаштуваннях свого облікового запису. І в кожній моделі ви можете налаштувати одиниці виміру окремо, на випадок, якщо вам доведеться шити для людей, які живуть в різних куточках світу.
 
-Speaking of different parts of the world, freesewing core fully supports different languages. You can get your pattern in a number of languages, and if yours is not listed you can help with the translation.
+Говорячи про різні частини світу, ядро freesewing повністю підтримує різні мови. Ви можете отримати свій шаблон кількома мовами, і якщо вашої мови немає в списку, ви можете допомогти з перекладом.
 
-![The yoke of Simon, in French](https://posts.freesewing.org/uploads/yoke_7555f8616c.svg)
+![Ярмо Симона, французькою мовою](https://posts.freesewing.org/uploads/yoke_7555f8616c.svg)
 
-Arguably, that is a bit of a half-measure when this site is only in English, but baby steps, right?
+Можливо, це напівзахід, коли сайт лише англійською мовою, але ж це маленькі кроки, чи не так?
 
-### Compare to catch issues early
+### Порівняйте, щоб виявити проблеми на ранній стадії
 
-One of the common pitfalls is that people take measurements the wrong way.
+Одна з найпоширеніших помилок полягає в тому, що люди неправильно проводять вимірювання.
 
-When they generate a pattern, those incorrect measurements can sometimes really mess up the pattern in a way that can be hard to spot if you are not familiar with the pattern.
+Коли вони створюють візерунок, ці неправильні виміри іноді можуть дійсно зіпсувати візерунок таким чином, що його важко помітити, якщо ви не знайомі з візерунком.
 
-One way to tackle that is with better measuring instructions, which I have added. But what I really wanted was a way to make spot issues in an easy way.
+Один із способів вирішити цю проблему - покращити інструкції з вимірювання, які я додав. Але чого я справді хотів, так це простого способу створювати точкові випуски.
 
-![These two are going to help you to take accurate measurements](https://posts.freesewing.org/uploads/standing_d66bef801a.jpg)
+![Ці два інструменти допоможуть вам зробити точні вимірювання](https://posts.freesewing.org/uploads/standing_d66bef801a.jpg)
 
-Comparing yourself to others is the fastest way to be unhappy. But in this case, there's value to a comparison.
+Порівнювати себе з іншими - найшвидший спосіб стати нещасним. Але в цьому випадку порівняння має сенс.
 
-Putting your pattern side by side with a pattern that is known to be correct can help you spot any issues that go beyond size differences.
+Помістивши вашу викрійку поруч із викрійкою, яка, як відомо, є правильною , ви зможете виявити будь-які проблеми, що виходять за межі різниці в розмірах.
 
-So, comparison is built-in. Every time you generate a draft, you get two things:
+Отже, порівняння вбудоване. Щоразу, коли ви створюєте чернетку, ви отримуєте дві речі:
 
- - Your drafted pattern
- - A comparison of your draft to a range of standard sizes
+ - Ваш проект шаблону
+ - Порівняння вашого проекту зі стандартними розмірами
 
-![An example of a draft compared to standard sizes](https://posts.freesewing.org/uploads/compare_sample_171c3eaecd.svg)
+![Приклад проекту в порівнянні зі стандартними розмірами](https://posts.freesewing.org/uploads/compare_sample_171c3eaecd.svg)
 
-It's a way to quickly eyeball your draft for any glaring issues before you start working with it.
+Це спосіб швидко переглянути чернетку на наявність будь-яких проблем, перш ніж ви почнете з нею працювати.
 
-### Paperless because trees are precious, and printers not a given
+### Безпаперові, тому що дерева цінні, а принтери не є даністю
 
-Something that I am curious to see whether it will catch on are paperless drafts.
+Мені цікаво подивитися, чи приживеться це, - це безпаперові чернетки.
 
-Apart from the obvious upside of saving paper, I hope this will allow people who don't have access to a printer to use freesewing.
+Окрім очевидної переваги економії паперу, я сподіваюся, що це дозволить людям, які не мають доступу до принтера, використовувати фрішинг.
 
-The idea is that you don't have to print your pattern. Instead, you can transfer it directly onto fabric or another medium.
+Ідея полягає в тому, що вам не потрібно друкувати викрійку. Натомість ви можете перенести його безпосередньо на тканину або інший носій.
 
-To make that possible, the pattern comes with detailed dimensions and a metric grid (or imperial grid if you're into that) that helps you transfer all the information.
+Щоб зробити це можливим, викрійка містить детальні розміри і метричну сітку (або імперську, якщо вам подобається) , яка допоможе вам перенести всю інформацію.
 
-![An example of a draft using the paperless theme](https://posts.freesewing.org/uploads/paperless_sample_def717482e.svg)
+![Приклад проєкту з використанням безпаперової теми](https://posts.freesewing.org/uploads/paperless_sample_def717482e.svg)
 
-As I said, I'm curious to see whether this will be useful to people, but I felt it was worth a try.
+Як я вже казав, мені цікаво, чи буде це корисно людям, але я відчув, що варто спробувати.
 
-### I've got your back (up)
+### Я прикрию тебе
 
-Also new is that when you draft a pattern, I will keep that draft for you, and it will remain available.
+Також новим є те, що коли ви створюєте чернетку візерунка, я зберігаю її для вас, і вона залишається доступною.
 
-![All your drafts are kept and available in your account](https://posts.freesewing.org/uploads/draft_list_7950e1609a.png)
+![Всі ваші чернетки зберігаються та доступні у вашому акаунті](https://posts.freesewing.org/uploads/draft_list_7950e1609a.png)
 
-You can come back at any time to re-download the pattern, or tweak it, redraft it, or fork it. Yes [fork it](/docs/site/fork), which is kinda cool because you can also fork patterns from other people after they've shared their draft.
+Ви можете повернутися в будь-який час, щоб завантажити шаблон повторно, змінити його, переробити або розгалузити. Так, [розгалужуйте його](/docs/site/fork), що досить круто, тому що ви також можете розгалужувати шаблони інших людей після того, як вони поділилися своїми чернетками.
 
-You can also add your own notes to your drafts (and to your models for that matter).
+Ви також можете додавати власні нотатки до своїх чернеток (і до своїх моделей, якщо вже на те пішло).
 
-### Community-driven blog and showcase
+### Блог та вітрина, керовані спільнотою
 
-Your makes deserve better than a Flickr album somewhere, so I've added showcases to the site. The idea is to have a grabbag of examples here on the site of things people have made.
+Ваші роботи заслуговують на більше, ніж альбом десь на Flickr, тому я додала вітрини на сайт. Ідея полягає в тому, щоб мати тут, на сайті, приклади того, що люди зробили.
 
-![Showcase of the Hugo hoodie by uneanneedecouture](https://posts.freesewing.org/uploads/hugo_b331b0c298.jpg)
+![Показ худі Hugo від uneanneedecouture](https://posts.freesewing.org/uploads/hugo_b331b0c298.jpg)
 
-Obviously, I can't add your work if I don't know about it, so either get in touch of make sure to use the #freesewing hashtag when posting about it.
+Очевидно, що я не можу додати вашу роботу, якщо не знаю про неї, тому або зв'яжіться з нами, або обов'язково використовуйте хештег #freesewing, коли публікуєте про неї.
 
-Speaking of posting, the freesewing blog is also open to your contributions if you feel you have something to share.
+Говорячи про публікації, блог freesewing також відкритий для ваших дописів, якщо ви відчуваєте, що вам є чим поділитися.
 
-### Badges baby
+### Значки, дитинко.
 
-This is a bit silly, but you can now unlock [badges](/docs/site/badges) on the site. I added the feature initially because I wanted to find a way to thank the people who took part in the early access program.
+Це трохи безглуздо, але тепер ви можете розблокувати [бейджики](/docs/site/badges) на сайті. Спочатку я додав цю функцію, тому що хотів знайти спосіб подякувати людям, які взяли участь у програмі раннього доступу.
 
-A while ago, I opened up an early access version of the site to those people who were interested, and I would like to thank all of you who tried out the site, reported issues, or merely gave feedback or encouragements.
+Деякий час тому я відкрив ранню версію сайту для тих, хто зацікавився, і я хотів би подякувати всім , хто спробував сайт, повідомив про проблеми або просто дав відгук чи заохочення.
 
-Those of you who took part should all get that coveted early access badge. If it's missing from [your profile](/profile), [get in touch](/contact).
+Ті з вас, хто взяв участь, повинні отримати бажаний бейдж раннього доступу. Якщо він відсутній у [вашому профілі](/profile), [зв'яжіться з](/contact).
 
-Other badges are available, including one for signing up on launch day. [The full list of badges is here](/docs/site/badges).
+Доступні й інші бейджі, в тому числі для реєстрації в день запуску. [Повний список бейджів тут](/docs/site/badges).
 
-## What happens now?
+## Що тепер буде?
 
-![Darkness, realistically](https://posts.freesewing.org/uploads/darkness_a9b72d2537.svg)
+![Темрява, насправді.](https://posts.freesewing.org/uploads/darkness_a9b72d2537.svg)
 
-Maybe it's just me, but after every major project comes to completion, I tend to slide into a black hole of *is this it?* disillusionment.
+Можливо, це тільки у мене, але після завершення кожного великого проекту я схильний скочуватися в чорну діру *це все?* розчарування.
 
-I might need a few weeks to bounce back from that, but don't let that stop you from giving me [your feedback and opinions](/contact) on the site. And if you manage to break something, you can [create an issue](https://github.com/freesewing/site/issues/new).
+Можливо, мені знадобиться кілька тижнів, щоб оговтатися від цього, але нехай це не заважає вам надсилати мені [свої відгуки та думки](/contact) на сайті. А якщо вам вдасться щось зламати, ви можете [створити проблему](https://github.com/freesewing/site/issues/new).
 
-## One last thing
-I've worked on this for about a year and a half, and especially the last 11 months or so rather intensively.
+## І останнє.
+Я працював над цим близько півтора року, а особливо останні 11 місяців досить інтенсивно.
 
-Now that it's ready, would you help me spread the news a little?
+Тепер, коли все готово, чи не могли б ви допомогти мені трохи поширити цю новину?
 
-If you could tell somebody about this or perhaps tweet or write about it, you'd do me a real favour.
+Якщо ви могли б розповісти комусь про це, або, можливо, написати про це в твіттері, ви б зробили мені велику послугу.
 
-Thank you
+Дякую.
 
 
 
