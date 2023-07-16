@@ -1,5 +1,5 @@
 ---
-title: "Start of the cross seam curve"
+title: "Start der Quernahtkurve"
 ---
 
 Steuert den Start der Quernahtkurve.
@@ -17,4 +17,4 @@ Menschen mit einem runden Bum wollen dies vielleicht senken, um ein wenig mehr (
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](charlie_crossseamcurvestart_sample.svg "Effekt dieser Variable auf das Schnittmuster")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](charlie_crossseamcurvestart_sample.svg "Effekt dieser Option auf das Schnittmuster")
