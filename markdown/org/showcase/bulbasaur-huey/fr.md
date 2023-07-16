@@ -3,17 +3,13 @@ maker: "unknown"
 caption: "Les Bulbizarres sont forts ET mignons"
 date: "2017-11-19"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d7242993d4c611f4a5d48ba63b1b9a3139a1c6cd-2000x1333.jpg"
-intro: "    "
+intro: ""
 title: "Un Hack du sweat zippé à capuche Huey en Bulbizarre"
-designs: ["huey"]
+designs:
+  - "huey"
 ---
 
-![Les Bulbizarres sont forts ET mignons](https://posts.freesewing.org/uploads/bulbasaur_huey_1_4f299d4b87.jpg "Les Bulbizarres sont forts ET mignons")
-![Les Bulbizarres sont forts ET mignons](https://posts.freesewing.org/uploads/bulbasaur_huey_2_6587c21b85.jpg "Les Bulbizarres sont forts ET mignons")
-![Les Bulbizarres sont forts ET mignons](https://posts.freesewing.org/uploads/bulbasaur_huey_3_b1f5057533.jpg "Les Bulbizarres sont forts ET mignons")
-![Les Bulbizarres sont forts ET mignons](https://posts.freesewing.org/uploads/bulbasaur_huey_4_f46df0bf35.jpg "Les Bulbizarres sont forts ET mignons")
-![Les Bulbizarres sont forts ET mignons](https://posts.freesewing.org/uploads/bulbasaur_huey_5_e95c003b27.jpg "Les Bulbizarres sont forts ET mignons")
-![Les Bulbizarres sont forts ET mignons](https://posts.freesewing.org/uploads/bulbasaur_huey_6_e82a85e020.jpg)
+![Les Bulbizarres sont forts ET mignons](https://posts.freesewing.org/uploads/bulbasaur_huey_1_4f299d4b87.jpg "Les Bulbizarres sont forts ET mignons") ![Les Bulbizarres sont forts ET mignons](https://posts.freesewing.org/uploads/bulbasaur_huey_2_6587c21b85.jpg "Les Bulbizarres sont forts ET mignons") ![Les Bulbizarres sont forts ET mignons](https://posts.freesewing.org/uploads/bulbasaur_huey_3_b1f5057533.jpg "Les Bulbizarres sont forts ET mignons") ![Les Bulbizarres sont forts ET mignons](https://posts.freesewing.org/uploads/bulbasaur_huey_4_f46df0bf35.jpg "Les Bulbizarres sont forts ET mignons") ![Les Bulbizarres sont forts ET mignons](https://posts.freesewing.org/uploads/bulbasaur_huey_5_e95c003b27.jpg "Les Bulbizarres sont forts ET mignons") ![Les Bulbizarres sont forts ET mignons](https://posts.freesewing.org/uploads/bulbasaur_huey_6_e82a85e020.jpg)
 
 <Note>
 
