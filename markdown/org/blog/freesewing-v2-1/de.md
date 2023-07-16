@@ -41,7 +41,7 @@ Obwohl wir noch nicht da sind wo wir hin wollen, haben wir bei beidem Fortschrit
 
 Neben den erweiterten Musteroptionen zeigt der Exportmodus auch die weniger verwendeten Entwurfseinstellungen wie die Möglichkeit, Sprache, Einheiten, Details, Nahtzugabe und Inhalt Ihres Entwurfs zu ändern.
 
-![Erweiterter Modus](recreate.png)
+![Erweiterter Modus](https://posts.freesewing.org/uploads/recreate_a6e2f9c4d6.png)
 
 <Note> 
 
@@ -58,15 +58,15 @@ Sie können dies im Screenshot oben sehen.
 
 ### Masse: Helfen Ihnen die Fehler in Ihren gemessenen Massen zu entdecken
 
-Wir haben ein paar Indikatoren hinzugefügt, die Ihnen helfen sollen, Fehler oder Probleme beim Massnehmen. Ihre Modelle zeigen nun eine grafische Darstellung Ihrer Körpermaße, mit der Sie Ausreißer erkennen können.
+Wir haben ein paar Indikatoren hinzugefügt, die dir dabei helfen sollen, Fehler oder Probleme beim Maßnehmen festzustellen. Ihre Modelle zeigen nun eine grafische Darstellung Ihrer Körpermaße, mit der Sie Ausreißer erkennen können.
 
-![Eine grafische Darstellung der Maße Ihres Modells](model.png)
+![Eine grafische Darstellung der Maße Ihres Modells](https://posts.freesewing.org/uploads/model_c3fa8fc50c.png)
 
 Zusätzlich zeigen wir Ihnen neben dem Istwert eine Schätzung Ihrer verschiedenen Maße (bezogen auf Ihren Halsumfang). Wenn der Unterschied größer wird, werden wir Sie darauf aufmerksam machen.
 
 Dies ist ein schwieriges Arbeitsfeld für uns. Wir möchten Ihnen helfen, die besten Ergebnisse zu erzielen, und dazu gehört auch, dass wir Ihnen helfen, Probleme beim Massnehmen zu erkennen. Auf der anderen Seite wollen wir keinesfalls annehmen, dass die Maße von einem Menschen *falsch* irgendwie falsch sein könnten.
 
-Wir sind eine extrem size-inklusive Plattform für Schnittmuster, und ein sehr hoher Anteil unserer Nutzer sind Menschen, die Schwierigkeiten haben, Kleidung oder Schnittmuster bei anderen Anbietern zu finden. Auf der einen Seite könnte es also so aussehen, als ob wir uns auf Fehler einstellen würden, indem wir Messungen mit einem Satz von mehr oder weniger *Standard*Massen vergleichen. Aber du kennst deinen Körper. Sie wissen, welche Ihrer Körpermasse vom Durchschnitt abweichen. Und dass wir darauf hinweisen, dass sie es tun, ist in gewisser Weise nur eine Bestätigung dafür, dass Sie richtig gemessen haben. Wenn andererseits etwas hervorsticht, wo Sie ziemlich durchschnittliche Masse habem, wissen Sie, dass Sie diese Messung vermutlich überprüfen sollten.
+Wir sind eine extrem größeninklusive Plattform für Schnittmuster, und ein sehr hoher Anteil unserer Nutzer sind Menschen, die Schwierigkeiten haben, Kleidung oder Schnittmuster bei anderen Anbietern zu finden. Auf der einen Seite könnte es also so aussehen, als ob wir uns auf Fehler einstellen würden, indem wir Messungen mit einem Satz von mehr oder weniger *Standard*Massen vergleichen. Aber du kennst deinen Körper. Du weißt, welches deiner Maße vom Durchschnitt abweicht. Und dass wir darauf hinweisen, dass sie es tun, ist in gewisser Weise nur eine Bestätigung dafür, dass du richtig gemessen hast. Wenn andererseits etwas hervorsticht, wo du ziemlich durchschnittliche Maße hast, weißt du, dass du diese Messung vermutlich überprüfen solltest.
 
 Last but not least, während wir versuchen, eine Anleitung für Messungen zu geben, um Fehler zu erkennen, schließen wir niemanden aus egal in welcher Größe oder Abmessung. Egal, was Sie uns an den Kopf werfen, wir werden ein Muster entwerfen, das für Sie funktioniert, oder (unsere Software wird) bei dem Versuch sterben.
 
@@ -80,7 +80,9 @@ Last but not least, während wir versuchen, eine Anleitung für Messungen zu geb
 
 Weitere Informationen finden Sie [im Changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md).
 
-We hope you enjoy this release, and please [stop by our chat room](https://discord.freesewing.org/) to share your thoughts, feedback, suggestions, or ideas. Wir freuen uns, von Ihnen zu hören 
+Wir hoffen, dass Ihnen diese Version gefällt, und laden Sie [zu einem Besuch in unserem Chatroom](https://discord.freesewing.org/) ein, um uns Ihre Gedanken, Rückmeldungen, Vorschläge oder Ideen mitzuteilen. Wir freuen uns, von Ihnen zu hören 
+
+
 
 
 
