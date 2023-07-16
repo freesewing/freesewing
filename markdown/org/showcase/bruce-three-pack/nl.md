@@ -1,13 +1,13 @@
 ---
-maker: "unknown"
+maker: "onbekend"
 caption: "Theo maakte er zo drie uit overgebleven jersey."
 date: "2018-10-18"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/305d6d6adbdad633bc2cd33b0de6f7a199a38c28-3043x2282.jpg"
 intro: "Felix maakte drie boxershorts, en schrijft:"
 title: "Een Bruce trio"
-designs: ["bruce"]
+designs:
+  - "bruce"
 ---
-
 
 Felix maakte drie boxershorts, en schrijft:
 
@@ -17,4 +17,4 @@ Felix maakte drie boxershorts, en schrijft:
 
 Hier is een foto van de achterkant:
 
-![Zicht op de achterkant](https://posts.freesewing.org/uploads/bruce_three_pack_back_6ed8c9ae38.jpg "Zicht op de achterkant")
+![Foto achterkant](https://posts.freesewing.org/uploads/bruce_three_pack_back_6ed8c9ae38.jpg "Foto achterkant")
