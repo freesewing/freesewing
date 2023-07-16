@@ -1,5 +1,5 @@
 ---
-title: "Length bonus"
+title: "Bonus de longitud"
 ---
 
 Controla la longitud de los pantalones enteros, lo que significa esencialmente la longitud de las piernas.
