@@ -1,6 +1,6 @@
-- - -
+---
 title: "Lunetius Lacerna: Sewing Instructions"
-- - -
+---
 
 <Note>
 
