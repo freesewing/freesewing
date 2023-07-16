@@ -7,7 +7,6 @@ intro: "This is your monthly roundup of the freesewing news of the last four wee
 title: "Monatliche Übersicht - April 2018: Ruhe vor dem Sturm"
 ---
 
-
 This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
 
 ## Rückblick auf April
@@ -23,5 +22,4 @@ Ich könnte ein wenig mehr darüber schreiben, aber ich habe eine Menge Arbeit z
 ## Ausblick auf den Mai
 
 Erwarten Sie Änderungen. Viele Änderungen. Nichts, worüber man sich Sorgen machen müsste.😉
-
 
