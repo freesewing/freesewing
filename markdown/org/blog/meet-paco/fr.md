@@ -3,10 +3,9 @@ author: "joostdecock"
 caption: "Paco sur votre obligé"
 date: "2020-08-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1bc82d4abb50ea1b7bda32dd64521e9ecfdd8467-2048x1536.jpg"
-intro: "Si vous prêtez attention à nos versions, vous savez qu'il y a 4 semaines, nous avons sorti notre nouveau bloc de pantalon Titan . Aujourd'hui, je suis heureux d'annoncer notre premier  patron basé sur celui-ci : le pantalon d'été Paco ."
+intro: "Découvrez Paco : notre nouveau patron unisexe pour un élégant pantalon d'été"
 title: "Découvrez Paco : notre nouveau patron unisexe pour un élégant pantalon d'été"
 ---
-
 
 Si vous prêtez attention à nos versions, vous savez qu'il y a 4 semaines, nous avons sorti notre nouveau [bloc de pantalon Titan](/designs/titan/). Aujourd'hui, je suis heureux d'annoncer notre premier *vrai* patron basé sur celui-ci : le [pantalon d'été Paco](/designs/paco).
 
@@ -23,12 +22,11 @@ Les options par défaut incluent également des poches avant sur les coutures la
 
 Celui que vous voyez dans la photo ci-dessus (disclaimer : je ne l'ai pas quitté depuis que je l'ai fait) n'est pas cousu dans une maille. Voici un aperçu du tissu tissé :
 
-![Close-up d'un tissu tissé](fabric.jpg)
+![Close-up d'un tissu tissé](https://posts.freesewing.org/uploads/fabric_46633a6dd2.jpg)
 
 La différence réside dans la coupe – qui est beaucoup plus flatteuse et plus élégante que vos pantalons de jogging classiques – et dans les poches. Oui, les poches. Parce que les poches c'est important.
 
 Les poches avant et les poches arrière (optionnelles) sont ancrées à la taille. Ce qui signifie que vous pouvez mettre des choses dans vos poches sans qu'elles ne créent des vilaines bosses qui ne font que se balader dans votre pantalon.
 
 Alors convaincu ? Allez donc en coudre et et surtout partagez les photos :)
-
 
