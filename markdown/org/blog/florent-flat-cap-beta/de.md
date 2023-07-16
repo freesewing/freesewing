@@ -3,10 +3,9 @@ author: "joostdecock"
 caption: "Quentin umgeben von unseren zukünftigen Roboter-Overlords."
 date: "2017-12-06"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ee5c11e3b29fe788dae470ab0e20396d806c4d1b-2000x1333.jpg"
-intro: "Nach der Veröffentlichung von Benjamin im letzten Monat, gibt es hier eine weitere Schnittmuster-Freigabe, um den schlanken Gentleman zu kanalisieren: die Florent Flat Cap ."
+intro: "Das Schnittmuster der Schiebermütze Florent ist jetzt in der Beta-Version erhältlich. Da ist ein weiteres Geschenk erschienen."
 title: "Das Schnittmuster der Schiebermütze Florent ist jetzt in der Beta-Version erhältlich. Da ist ein weiteres Geschenk erschienen."
 ---
-
 
 Nach der Veröffentlichung von [Benjamin](/patterns/benjamin) im letzten Monat, gibt es hier eine weitere Schnittmuster-Freigabe, um den schlanken Gentleman zu kanalisieren: die [Florent Flat Cap](/patterns/florent).
 
@@ -31,5 +30,4 @@ Dieses *warum sollten wir das Rad immer wieder neu erfinden müssen?* könnte so
 Florent benötigt nur eine Messung: den Kopfumfang. Somit ist diese Veröffentlichung genau zum richtigen Zeitpunkt erfolgt. Mit der bevorstehenden Weihnachtszeit, hier ist ein weiteres Geschenk, das Sie selbst machen können.
 
 Danke Quentin!
-
 
