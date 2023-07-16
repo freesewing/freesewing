@@ -1,5 +1,5 @@
 ---
-title: "Back pocket horizontal placement"
+title: "Colocación horizontal del bolsillo trasero"
 ---
 
 Controla la colocación horizontal de los bolsillos traseros.
