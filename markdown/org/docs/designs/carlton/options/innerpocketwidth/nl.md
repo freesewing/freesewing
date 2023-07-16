@@ -1,5 +1,5 @@
 ---
-title: "Inner pocket width"
+title: "Breedte binnenzak"
 ---
 
 Bepaalt de breedte van de binnenzak.
