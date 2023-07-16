@@ -5,6 +5,7 @@ date: "2017-11-24"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/2c7cf37e1f57ef685ee9e767ab84ceeed677f3c5-1971x1970.jpg"
 intro: "Deze foto verscheen oorspronkelijk in de Twitter feed van @SThanheiser ."
 title: "Stefan maakt een t-shirt gebaseerd op Brian 2/4"
+designs: ["brian"]
 ---
 
 

@@ -86,7 +86,7 @@ export const MdxMetaData = ({ frontmatter, locale, slug }) => {
    */
 
   return (
-    <div className="hidden lg:block mb-4">
+    <div className="hidden xl:block mb-4">
       <a
         href={`https://github.dev/freesewing/freesewing/blob/develop/markdown/${siteConfig.tld}/${slug}/en.md`}
         className="btn btn-secondary flex flex-row justify-between items-center w-full px-4"

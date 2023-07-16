@@ -11,6 +11,7 @@ import { components } from 'shared/components/mdx/index.mjs'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { Toc } from 'shared/components/mdx/toc.mjs'
 import { PrevNext } from 'shared/components/prev-next.mjs'
+import { DocsLayout } from 'site/components/layouts/docs.mjs'
 
 export const ns = pageNs
 
@@ -61,7 +62,11 @@ export const DocsPage = ({ page, slug, locale, site, mdx }) => {
   const { mdxContent, frontmatter } = useCompiledMdx(mdx, site)
 
   return (
-    <PageWrapper {...page} title={frontmatter.title}>
+    <PageWrapper
+      {...page}
+      title={frontmatter.title}
+      layout={(props) => <DocsLayout {...props} {...{ slug, frontmatter }} />}
+    >
       <HeadInfo {...{ frontmatter, locale, slug, site }} />
       <div className="flex flex-row-reverse flex-wrap xl:flex-nowrap justify-end">
         {frontmatter.toc && frontmatter.toc.length > 0 && (

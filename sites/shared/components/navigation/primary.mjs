@@ -17,6 +17,7 @@ import {
   FreeSewingIcon,
   HeartIcon,
   BulletIcon,
+  PlusIcon,
   GitHubIcon,
 } from 'shared/components/icons.mjs'
 import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
@@ -44,6 +45,7 @@ export const icons = {
   community: (className = '') => <CommunityIcon className={className} />,
   sets: (className = '') => <MeasieIcon className={className} />,
   patterns: (className = '') => <PageIcon className={className} />,
+  new: (className = '') => <PlusIcon className={className} />,
 
   // Lab
   code: (className = '') => <GitHubIcon className={className} />,

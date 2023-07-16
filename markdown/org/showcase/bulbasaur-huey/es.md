@@ -5,6 +5,7 @@ date: "2017-11-19"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d7242993d4c611f4a5d48ba63b1b9a3139a1c6cd-2000x1333.jpg"
 intro: "    "
 title: "A Bulbasaur Huey Hoodie Hack [No traducido]"
+designs: ["huey"]
 ---
 
 ![Bulbasaurs are strong AND cute](https://posts.freesewing.org/uploads/bulbasaur_huey_1_4f299d4b87.jpg "Bulbasaurs are strong AND cute")

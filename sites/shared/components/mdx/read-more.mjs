@@ -5,7 +5,7 @@ import { NavigationContext } from 'shared/context/navigation-context.mjs'
 import { BulletIcon, RightIcon } from 'shared/components/icons.mjs'
 import { pageHasChildren } from 'shared/utils.mjs'
 
-const getRoot = {
+export const getRoot = {
   dev: (root, nav) => {
     if (!root) return nav
     if (root.indexOf('/') === -1) return nav[root]

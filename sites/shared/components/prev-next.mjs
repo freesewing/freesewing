@@ -32,7 +32,7 @@ const NextPage = ({ t, s }) =>
     <span></span>
   )
 
-export const PrevNext = ({ slug }) => {
+export const PrevNext = ({ slug, noPrev = false }) => {
   // Grab site navigation and slug lookup table from the useNavigatin hook
   const { siteNav, slugLut } = useContext(NavigationContext)
 
@@ -46,12 +46,13 @@ export const PrevNext = ({ slug }) => {
   const iNext = index === slugLut.length - 1 ? 0 : index + 1
 
   // Subtract 1 for the previous page, unless it's the first page
-  const iPrev = index === 0 ? slugLut.length - 1 : index - 1
+  const iPrev = noPrev ? false : index === 0 ? slugLut.length - 1 : index - 1
+
   // Get the next page from the siteNav object
   const next = get(siteNav, slugLut[iNext].split('/'))
 
   // Get the previous page from the siteNav object
-  const prev = get(siteNav, slugLut[iPrev].split('/'))
+  const prev = noPrev ? false : get(siteNav, slugLut[iPrev].split('/'))
 
   // Return content
   return (
@@ -61,7 +62,7 @@ export const PrevNext = ({ slug }) => {
         'items-start pt-6 mt-6 border-t-2 border-solid border-r-0 border-l-0 border-b-0'
       }
     >
-      <PrevPage t={prev.t} s={prev.s} />
+      {noPrev ? <span /> : <PrevPage t={prev.t} s={prev.s} />}
       <NextPage t={next.t} s={next.s} />
     </div>
   )

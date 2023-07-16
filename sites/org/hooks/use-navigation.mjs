@@ -14,8 +14,17 @@ import { useEffect, useState, useMemo } from 'react'
  * - home page => no navvigation shown
  * - /contact => Added below
  *
- * Note: Set 'h' to truthy to not show a top-level entry as a section
- * Note: Set 'c' to set the control level to hide things from users
+ * Remember Mc_Shifton:
+ * Note: Set 'm' to truthy to show this as a main section in the side-navigation (optional)
+ * Note: Set 'c' to set the control level to hide things from users (optional)
+ * Note: Set 's' to the slug (optional insofar as it's not a real page (a spacer for the header))
+ * Note: Set '_' to never show the page in the site navigation (like the tags pages)
+ * Note: Set 'h' to indicate this is a top-level page that should be hidden from the side-nav (like search)
+ * Note: Set 'i' when something should be included as top-level in the collapse side-navigation (optional)
+ * Note: Set 'f' to add the page to the footer
+ * Note: Set 't' to the title
+ * Note: Set 'o' to set the order (optional)
+ * Note: Set 'n' to mark this as a noisy entry that should always be closed unless active (like blog)
  */
 
 export const ns = ['account', 'sections', 'design', 'tags', 'designs']
@@ -26,55 +35,59 @@ const sitePages = (t = false, control = 99) => {
   const pages = {
     // Top-level pages that are the sections menu
     designs: {
-      t: t('sections:designs'),
+      m: 1,
       s: 'designs',
-      o: 10,
+      t: t('sections:designs'),
+      n: 1,
       tags: {
-        t: t('design:tags'),
+        _: 1,
         s: 'designs/tags',
-        h: 1,
+        t: t('design:tags'),
         o: 'aaa',
       },
     },
     patterns: {
-      t: t('sections:patterns'),
+      m: 1,
       s: 'patterns',
-      o: 14,
+      t: t('sections:patterns'),
     },
     sets: {
-      t: t('sections:sets'),
+      m: 1,
       s: 'sets',
-      o: 16,
+      t: t('sections:sets'),
     },
     community: {
-      t: t('sections:community'),
+      m: 1,
       s: 'community',
-      o: 40,
+      t: t('sections:community'),
     },
     account: {
-      t: t('sections:account'),
+      m: 1,
       s: 'account',
-      o: 99,
+      t: t('sections:account'),
+      n: 1,
     },
     // Top-level pages that are not in the sections menu
     apikeys: {
-      t: t('apikeys'),
+      _: 1,
       s: 'apikeys',
       h: 1,
+      t: t('apikeys'),
     },
     curate: {
-      t: t('curate'),
       s: 'curate',
       h: 1,
+      t: t('curate'),
       sets: {
         t: t('curateSets'),
         s: 'curate/sets',
       },
     },
     new: {
-      t: t('new'),
+      m: 1,
       s: 'new',
       h: 1,
+      t: t('new'),
       pattern: {
         t: t('patternNew'),
         s: 'new/pattern',
@@ -87,14 +100,14 @@ const sitePages = (t = false, control = 99) => {
       },
     },
     profile: {
-      t: t('yourProfile'),
       s: 'profile',
       h: 1,
+      t: t('yourProfile'),
     },
     translation: {
-      t: t('translation'),
       s: 'translation',
       h: 1,
+      t: t('translation'),
       join: {
         t: t('translation:joinATranslationTeam'),
         s: 'translation/join',
@@ -107,36 +120,36 @@ const sitePages = (t = false, control = 99) => {
       },
     },
     sitemap: {
-      t: t('sitemap'),
       s: 'sitemap',
       h: 1,
+      t: t('sitemap'),
     },
 
     // Not translated, this is a developer page
     typography: {
-      t: 'Typography',
       s: 'typography',
       h: 1,
+      t: 'Typography',
     },
   }
   for (const section in conf.account.fields) {
     for (const [field, controlScore] of Object.entries(conf.account.fields[section])) {
       if (Number(control) >= controlScore)
         pages.account[field] = {
-          t: t(`account:${field}`),
           s: `account/${field}`,
+          t: t(`account:${field}`),
         }
     }
   }
   if (Number(control) >= conf.account.fields.developer.apikeys)
     pages.new.apikey = {
-      t: t('newApikey'),
       s: 'new/apikey',
+      t: t('newApikey'),
       o: 30,
     }
   pages.account.reload = {
-    t: t(`account:reload`),
     s: `account/reload`,
+    t: t(`account:reload`),
   }
   for (const design in designs) {
     // pages.designs[design] = {
@@ -144,14 +157,14 @@ const sitePages = (t = false, control = 99) => {
     //   s: `designs/${design}`,
     // }
     pages.new.pattern[design] = {
-      t: t(`account:generateANewThing`, { thing: t(`designs:${design}.t`) }),
       s: `new/${design}`,
+      t: t(`account:generateANewThing`, { thing: t(`designs:${design}.t`) }),
     }
   }
   for (const tag of tags) {
     pages.designs.tags[tag] = {
-      t: t(`tags:${tag}`),
       s: `designs/tags/${tag}`,
+      t: t(`tags:${tag}`),
     }
   }
 
@@ -174,19 +187,31 @@ export const useNavigation = ({ ignoreControl = false }) => {
   const control = ignoreControl ? undefined : account.control
   useEffect(() => {
     import(`site/prebuild/navigation/${locale}.mjs`).then((mod) => {
-      const nav = {
+      const siteNav = {
         ...mod.prebuildNavigation,
         ...sitePages(t, control),
       }
+      // Apply some tweaks
+      siteNav.blog.m = 1
+      siteNav.blog.n = 1
+      siteNav.showcase.m = 1
+      siteNav.showcase.n = 1
+      siteNav.docs.m = 1
 
-      // Set order on docs key (from from prebuild navigation)
-      nav.docs.o = 30
-      nav.blog.o = 50
-      nav.showcase.o = 20
+      // Set order on main sections
+      siteNav.designs.o = 10
+      siteNav.docs.o = 20
+      siteNav.blog.o = 30
+      siteNav.showcase.o = 40
+      siteNav.community.o = 50
+      siteNav.patterns.o = 60
+      siteNav.sets.o = 70
+      siteNav.account.o = 80
+      siteNav.new.o = 90
 
       setNavigation({
-        siteNav: nav,
-        slugLut: orderedSlugLut(nav),
+        siteNav,
+        slugLut: orderedSlugLut(siteNav),
       })
     })
   }, [locale, t, control])

@@ -9,11 +9,13 @@ import { Pattern, PatternXray } from '@freesewing/react-components'
 
 // Get code from children
 export const asText = (reactEl) => {
-  if (typeof reactEl.props.children === 'string') return reactEl.props.children
-  if (Array.isArray(reactEl.props.children)) {
-    return reactEl.props.children.map((el) => (typeof el === 'string' ? el : asText(el))).join('')
+  if (reactEl) {
+    if (typeof reactEl.props.children === 'string') return reactEl.props.children
+    if (Array.isArray(reactEl.props.children)) {
+      return reactEl.props.children.map((el) => (typeof el === 'string' ? el : asText(el))).join('')
+    }
+    if (typeof reactEl.props.children === 'object') return asText(reactEl.props.children)
   }
-  if (typeof reactEl.props.children === 'object') return asText(reactEl.props.children)
 
   return ''
 }

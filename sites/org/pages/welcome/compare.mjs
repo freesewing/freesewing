@@ -32,7 +32,7 @@ const DynamicCompare = dynamic(
 const WelcomeComparePage = ({ page }) => (
   <PageWrapper {...page} layout={BareLayout} footer={false}>
     <DynamicAuthWrapper>
-      <div className="m-auto max-w-lg text-center lg:mt-24 p-8">
+      <div className="m-auto max-w-lg text-center lg:mt-4 p-8">
         <DynamicCompare title welcome />
       </div>
     </DynamicAuthWrapper>

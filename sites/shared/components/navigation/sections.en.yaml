@@ -4,7 +4,7 @@ showcase: Showcase
 showcaseAbout: Examples and inspiration from the FreeSewing community using our designs
 docs: Documentation
 docsAbout: In-depth documenation for all our designs, our website, and much more
-account: Account
+account: Your Account
 accountAbout: Manage your account settings and preferences, and your presonal data
 designs: Designs
 designsAbout: Our library of designs that you can turn into made-to-measure patterns with a few clicks
@@ -24,12 +24,12 @@ referenceAbout: Reference holds technical descriptions of the underlying technol
 trainingAbout: Training materials are the most in-depth and strive to teach you a new skill.
 mainSections: Main sections
 currentSection: Current section
-sets: Measurements Sets
-patterns: Patterns
+sets: Your Measurements Sets
+patterns: Your Patterns
 curate: Curate
 curateSets: Curate Sets
 code: Code
 patternsAbout: Lists the patterns that you have stored in your FreeSewing account
 setsAbout: Lists the measurements sets that you have stored in your FreeSewing account
 codeAbout: Here you can find (links to) the Freesewing source code
-
+new: New...

@@ -5,8 +5,6 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { BareLayout as Layout } from 'site/components/layouts/bare.mjs'
-import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
 
 // Translation namespaces used on this page
 const namespaces = [...new Set(pageNs), 'translation', 'locales']
@@ -32,17 +30,8 @@ const SuggestLanguagePage = ({ page }) => {
   const title = t('translation:suggestLanguage')
 
   return (
-    <PageWrapper {...page} layout={Layout}>
-      <div className="max-w-4xl mx-auto p-4 mt-4">
-        <Breadcrumbs
-          crumbs={[
-            { s: 'translation', t: t('translation:translation') },
-            { s: 'translation/join', t: title },
-          ]}
-          title={title}
-        />
-
-        <h1>{title}</h1>
+    <PageWrapper {...page} title={title}>
+      <div className="max-w-2xl">
         <p>
           {t('translation:suggestIntro')}
           <br />

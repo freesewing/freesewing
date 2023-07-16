@@ -19,36 +19,21 @@ import {
 import { HeaderWrapper } from 'shared/components/wrappers/header.mjs'
 import { ModalThemePicker, ns as themeNs } from 'shared/components/modal/theme-picker.mjs'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
-
 import { NavButton, NavSpacer, colors } from 'shared/components/header.mjs'
 
 export const ns = ['header', 'sections', ...themeNs]
 
-/*
- * for all developers
- * for pattern designers and coders
- * for infrastructure coders
- * for writers
- * for translators
- * how to work as a team
- * about freesewing
- *
- *
- * designers
- * contributors
- * api
- * translation
- * infra
- * content
- * */
-
-const NavIcons = ({ setModal }) => {
+const NavIcons = ({ setModal, slug }) => {
   const { t } = useTranslation(['header'])
   const iconSize = 'h-6 w-6 lg:h-12 lg:w-12'
 
   return (
     <>
-      <NavButton onClick={() => setModal(<ModalMenu />)} label={t('header:menu')} color={colors[0]}>
+      <NavButton
+        onClick={() => setModal(<ModalMenu slug={slug} />)}
+        label={t('header:menu')}
+        color={colors[0]}
+      >
         <MenuIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
@@ -99,24 +84,29 @@ const NavIcons = ({ setModal }) => {
   )
 }
 
-export const Header = (props) => {
+export const Header = ({
+  show = true, // Whether or not to show the header
+  slug, // Slug of the current page
+}) => {
   const { setModal } = useContext(ModalContext) || {}
 
-  return (
-    <HeaderWrapper {...props}>
+  const headerIcons = <NavIcons {...{ setModal, slug }} />
+
+  return show ? (
+    <HeaderWrapper {...{ show, slug }}>
       <div className="m-auto md:px-8">
         <div className="p-0 flex flex-row gap-2 justify-between text-neutral-content items-center">
           {/* Non-mobile content */}
-          <div className="hidden lg:flex lg:px-2 flex-row items-center justify-center w-full">
-            <NavIcons setModal={setModal} />
+          <div className="hidden lg:flex lg:px-2 flex-row items-center justify-between xl:justify-center w-full">
+            {headerIcons}
           </div>
 
           {/* Mobile content */}
           <div className="flex lg:hidden flex-row items-center justify-between w-full">
-            <NavIcons setModal={setModal} />
+            {headerIcons}
           </div>
         </div>
       </div>
     </HeaderWrapper>
-  )
+  ) : null
 }
