@@ -1,5 +1,5 @@
 ---
-title: "Chinos Charlie : options de tissus"
+title: "Charlie chinos: Fabric Options"
 ---
 
 Le choix évident pour chinos Charlie, est le [tissu de chino](https://en.wikipedia.org/wiki/Chino_cloth), qui est un tissu de coton twill . De nos jours, il est souvent vendu comme un mélange extensible, ce qui est facultatif.
