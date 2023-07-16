@@ -3,7 +3,7 @@ author: "joostdecock"
 caption: "Close-up van een paardebloem op een roze achtergrond"
 date: "2019-12-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/83a131ff51bec913541a94356d1930aaa2c07f87-1920x1280.jpg"
-intro: "Wow! Wat een jaar voor FreeSewing. In augustus hebben we versie 2.0 gelanceerd, en dat was niet minder dan een complete herwerking van onze hele technology stack. De meest opvallende verandering voor onze gebruikers is dat je het patroon live ziet veranderen in je browser wanneer je opties en voorkeuren aanpast. Het is een van die dingen waarvan ik wist dat ze mogelijk moesten zijn met de webtechnologie van vandaag. Maar het zien gebeuren is op de één of andere manier nog altijd ongelooflijk voor mij."
+intro: "4109 redenen om tevreden te zijn met 2019"
 title: "4109 redenen om tevreden te zijn met 2019"
 ---
 
@@ -12,9 +12,9 @@ Wow! Wat een jaar voor FreeSewing. In augustus hebben we versie 2.0 gelanceerd, 
 
 ## Schalen is moeilijk, maar we hebben mooie vooruitgang geboekt
 
-Hoe cool onze nieuwe technology stack ook is, het is niet het belangrijkste dat we in het afgelopen jaar hebben gedaan. Ja, het is best netjes, en ja, het zou niet mogelijk geweest zijn zonder al het werk aan versie 2.0. Maar het is juist dat werk dat er het meeste toe doet. De belangrijkste reden voor het herschrijven voor versie 2.0, is dat we ons project horizontaal willen schalen. Of, simpel gezegd, om FreeSewing te laten voortgaan voorbij wat ik zelf kon dragen.
+Hoe cool onze nieuwe technology stack ook is, het is niet het belangrijkste dat we in het afgelopen jaar hebben gedaan. Ja, het is erg leuk, en ja het is alleen mogelijk door het werk dat heeft gedaan aan 2.0. Maar dat werk zelf is het belangrijkst. De belangrijkste reden voor het herschrijven voor versie 2.0, is dat we ons project horizontaal willen schalen. Of, simpel gezegd, om FreeSewing te laten voortgaan voorbij wat ik zelf kon dragen.
 
-In zekere zin is FreeSewing volwassen geworden als (software)project. We have several people making regular contributions, [an active chat room](https://discord.freesewing.org/), [a dedicated website for developer and translator documentation](https://freesewing.dev), a plethora of [packages we publish on NPM](https://www.npmjs.com/search?q=keywords:freesewing), we've contributed fixes and improvements to upstream software we depend on, and we now also have other people and teams who depend on the packages we put out.
+In zekere zin is FreeSewing volwassen geworden als (software)project. We hebben een heel aantal mensen die regelmatige bijdragen leveren, [een actieve chatroom](https://discord.freesewing.org/), [een toegewijde website voor development- en vertaaldocumentatie](https://freesewing.dev) en een waaier aan [packages die we op NPM publiceren](https://www.npmjs.com/search?q=keywords:freesewing). We hebben oplossingen en verbeteringen geïmplementeerd om de software waarvan we afhankelijk zijn, te 'upstreamen'. En er zijn nu ook andere mensen en teams die afhangen van de packages die we uitbrengen.
 
 We stellen (op dit moment) [23 patronen ter beschikking](/patterns/) en hebben 26 packages op NPM (het Node.js package-register). Sinds we versie 2.0 uitgebracht hebben, worden gemiddeld 450 mensen per maand lid. De teller staat nu op meer dan 15.000.
 
@@ -22,7 +22,7 @@ We stellen (op dit moment) [23 patronen ter beschikking](/patterns/) en hebben 2
 
 Sinds v2 zijn we ook overgeschakeld op [Crowdin](https://crowdin.com) voor [onze vertalingen](https://freesewing.dev/guides/translator/). Vertaling is misschien wel de beste manier om toegang tot ons platform te democratiseren. Ik wil graag de mensen erkennen die hebben geholpen en blijven helpen bij deze inspanningen.
 
-Dit is misschien een goed moment om te vermelden dat jij hier ook bij kan helpen. Our [documentation for translators](https://freesewing.dev/guides/translator/) is a good place to get started, or stop by [our chat room](https://discord.freesewing.org/).
+Dit is misschien een goed moment om te vermelden dat jij hier ook bij kan helpen. Onze [documentatie voor vertalers](https://freesewing.dev/guides/translator/) is een goede plek om te beginnen, of kom langs bij [onze chatroom](https://discord.freesewing.org/).
 
 ## Wat we van plan zijn voor volgend jaar
 
@@ -45,7 +45,6 @@ We zijn ook op zoek naar manieren om meer ontwerpers te betrekken bij FreeSewing
 Met dank aan onze fantastische patrons, zijn ook onze inkomsten dit jaar toegenomen. Zoals je weet – of niet weet – doneert FreeSewing 100% van alle inkomsten aan Artsen Zonder Grenzen/Médecins Sans Frontières. Vanmorgen heb ik dus de eer gehad om een cheque van 4109,38 euro uit te schrijven aan [MSF](https://www.msf.org/).
 
 Dat voelde **fantastisch**. Dus dank je wel aan [al onze patrons](/patrons) voor hun voortdurende steun. Als je graag deel zou uitmaken van deze groep van topmensen, [dan kan dat hier](/patrons/join).
-
 
 
 
