@@ -1,5 +1,5 @@
 ---
-title: "Grainline position"
+title: "Positie draadrichting"
 ---
 
 Bepaalt de positie van de draadrichting.
