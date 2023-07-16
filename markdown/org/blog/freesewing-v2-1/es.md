@@ -4,7 +4,7 @@ caption: "This post is mostly about our work on progressive disclosure. Also: Th
 date: "2019-10-06"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/52db6852590a15208dace4a16a6a1c824037e400-2000x1500.jpg"
 intro: "We've just release FreeSewing v2.1 🎉"
-title: "FreeSewing v2.1: Three new patterns, expert mode, and help with measurements [No traducido]"
+title: "FreeSewing v2.1: Three new patterns, expert mode, and help with measurements"
 ---
 
 
@@ -57,22 +57,19 @@ You can see this in the screenshot above.
 
 </Note>
 
-
 ### Measurements: Helping you spot mistakes in your measurements
 
-We've added a few indicators to help you spot mistakes or problems in your measurements. Your models will now show a graphical representation of your body measurements, which will allow you to spot any outliers.
+Hemos añadido algunos indicadores para ayudarle a detectar errores o problemas en sus mediciones. Your models will now show a graphical representation of your body measurements, which will allow you to spot any outliers.
 
 ![A graphical representation of your model's measurements](https://posts.freesewing.org/uploads/model_c3fa8fc50c.png)
 
 In addition, we are showing you an estimate of your different measurements (based on your neck circumference) next to the actual value. If the difference gets larger, we'll draw your attention to that.
 
-This is a difficult area for us to work in. We want to help you get the best results, and that includes helping you spot issues with your measurements. On the other hand, we in no way want to imply that someone's measurements are *wrong* somehow.  
+This is a difficult area for us to work in. We want to help you get the best results, and that includes helping you spot issues with your measurements. On the other hand, we in no way want to imply that someone's measurements are *wrong* somehow.
 
-We are an extremely size-inclusive pattern outlet, and a disproportionate amount of our users are people who struggle to find clothes or patterns from other outlets. So on one hand, it might seem like we're setting ourselves up for failure by comparing measurements to a set of more or less *standard* measurements. 
-But you know your body. You know which of your measurements deviate from the average. And us pointing out that they do is in a way only confirmation that you've been measuring correctly.
-On the other hand, if something jumps out where you are fairly average sized, you know to double-check those measurements.
+Somos un patrón muy incluyente de tamaño, y una cantidad desproporcionada de nuestros usuarios son personas que luchan por encontrar ropa o patrones de otras tiendas. So on one hand, it might seem like we're setting ourselves up for failure by comparing measurements to a set of more or less *standard* measurements. Pero usted conoce su cuerpo. Usted sabe cuál de sus mediciones se desviará de la media. Y señalamos que lo hacen de alguna manera sólo es una confirmación de que ha estado mediendo correctamente. Por otro lado, si algo salta hacia fuera donde tienes un tamaño bastante medio, sabes que puedes revisar esas mediciones.
 
-Last but not least, while we try to provide guidance about measurements to help spot mistakes, we never exclude anyone based on size or measurement. No matter what you throw at us, we will  draft a pattern that works for you, or (our software will) die trying.
+Por último, pero no menos importante, mientras intentamos proporcionar orientación sobre las mediciones para ayudar a detectar errores, nunca excluimos a nadie basado en el tamaño o medición. No matter what you throw at us, we will  draft a pattern that works for you, or (our software will) die trying.
 
 ## Other changes
 
