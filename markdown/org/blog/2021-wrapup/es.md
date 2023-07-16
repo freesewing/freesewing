@@ -4,7 +4,7 @@ caption: "Picture by Snapwire - Via pexels.com"
 date: "2022-01-01"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/33d380890b215e6fc9c698b57469fdd0c24acc44-3072x2304.jpg"
 intro: "I'm not going to do a whole blog post about 2021 stuff because I feel like most of us just sorta want to move on and forget about it, but if you were looking for a longer read, then here's the table of content of our latest newsletter edition that also went out today:"
-title: "2021 wrap-up: A new FreeSewing.dev and announcing our bug bounty program [No traducido]"
+title: "2021 wrap-up: A new FreeSewing.dev and announcing our bug bounty program"
 ---
 
 
@@ -38,7 +38,7 @@ This effort implemented a bunch of items from [our v3 roadmap](https://github.co
 - Move markdown content into monorepo & merge Crowdin translation projects
 - Add endpoint to backend for auto-generated open graph images
 
-Have all been implemented as a direct result or side effect of this effort. 
+Have all been implemented as a direct result or side effect of this effort.
 
 This site will also become the blueprint for an overhaul of freesewing.org, something that's on the planning for this year.
 
