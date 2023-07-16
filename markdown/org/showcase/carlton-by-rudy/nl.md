@@ -1,25 +1,26 @@
 ---
-maker: "unknown"
-caption: "The Carlton coat by Rudy"
+maker: "onbekend"
+caption: "De Carlton jas van Rudy"
 date: "2021-02-26"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4aef096adffa48aa1d8b1cb45fb2d417993eb707-613x613.jpg"
-intro: "This stylish Carlton coat was made by Rudy, who shared:"
-title: "Carlton coat by Rudy [Niet vertaald]"
-designs: ["carlton"]
+intro: "Deze stijlvolle Carlton jas is gemaakt door Rudy, die deelde:"
+title: "Carlton jas van Rudy"
+designs:
+  - "carlton"
 ---
 
-This stylish Carlton coat was made by Rudy, who shared:
+Deze stijlvolle Carlton jas is gemaakt door Rudy, die deelde:
 
-> My take on the Carlton coat. My first big sewing project and first time using a freesewing pattern. I even made my own buttons :)
+> Mijn kijk op de Carlton jas. Mijn eerste grote naaiproject en de eerste keer dat ik een freeswingpatroon gebruik. Ik heb zelfs mijn eigen knopen gemaakt :)
 
-![View of the front](https://posts.freesewing.org/uploads/carlton_by_rudy_carltonrudy2_ff73f3dc38.jpg "View of the front")
+![Zicht op de voorkant](https://posts.freesewing.org/uploads/carlton_by_rudy_carltonrudy2_ff73f3dc38.jpg "Zicht op de voorkant")
 
-![Buttoned view](https://posts.freesewing.org/uploads/carlton_by_rudy_carltonrudy3_dfe71f082f.jpg "Buttoned view")
+![Knoopweergave](https://posts.freesewing.org/uploads/carlton_by_rudy_carltonrudy3_dfe71f082f.jpg "Knoopweergave")
 
-![View of the back](https://posts.freesewing.org/uploads/carlton_by_rudy_carltonrudy4_09a14b90d7.jpg)
+![Zicht op de achterkant](https://posts.freesewing.org/uploads/carlton_by_rudy_carltonrudy4_09a14b90d7.jpg)
 
 <Note>
 
-This picture is from Rudy, [@rudy_lee21 on Instagram](https://www.instagram.com/rudy_lee21/). It is reposted here with permission.
+Deze foto is van Rudy, [@rudy_lee21 op Instagram](https://www.instagram.com/rudy_lee21/). Hij werd hier gepost met toestemming.
 
 </Note>
