@@ -7,7 +7,6 @@ intro: "Winter veranlasste mich, dieses Schnitt zu entwerfen. Mir war kalt und i
 title: "Ankündigung des Pullovers Sven; ein einfacher Pullover, der auf dem Grundschnitt von Brian basiert"
 ---
 
-
 Winter veranlasste mich, dieses Schnitt zu entwerfen. Mir war kalt und ich brauchte ein paar Pullover, also was macht man da?
 
 Sven blieb bisher unter dem Radar, weil ich es auf der (damals unveröffentlichten) Freewing-Plattform entworfen habe, und bis jetzt hatte ich keinen geeigneten Ort, um es den Leuten zu zeigen.
@@ -17,5 +16,4 @@ So sind wir hierher gekommen. Nun zu dem Pullover: Es ist ein einfaches Design, 
 ## Bilder oder es ist nicht passiert
 
 Schauen Sie sich die [Sven Gallerie](/showcase/pattern/sven) für einige Beispiele an.
-
 
