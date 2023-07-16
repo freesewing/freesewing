@@ -1,5 +1,5 @@
 ---
-title: "Front pocket depth"
+title: "Diepte zak"
 ---
 
 ![Diepte zak](frontpocketdepth.svg)
