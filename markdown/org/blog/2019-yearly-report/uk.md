@@ -1,50 +1,50 @@
 ---
 author: "joostdecock"
-caption: "Close-up of a dandelion against a pink background"
+caption: "Кульбаба крупним планом на рожевому тлі"
 date: "2019-12-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/83a131ff51bec913541a94356d1930aaa2c07f87-1920x1280.jpg"
-intro: "4109 reasons to be happy about 2019"
-title: "4109 reasons to be happy about 2019"
+intro: "4109 причин радіти 2019 року"
+title: "4109 причин радіти 2019 року"
 ---
 
 
-Wow! What a year it's been for FreeSewing. In August we released version 2.0 which was nothing less than a complete rewrite of our entire technology stack. For our users, the most obvious change is that you get to see your pattern adapt live in your browser as you tweak options and preferences. It's one of those things that I knew should be possible with the state of web technology today, yet seeing it actually happen still boggles my mind somehow.
+Ого! Який це був рік для FreeSewing. У серпні ми випустили версію 2.0, яка була нічим іншим, як повним переписуванням всього нашого технологічного стеку. Для наших користувачів найочевиднішою зміною є те, що ви зможете побачити, як ваш шаблон адаптується в реальному часі у вашому браузері, коли ви налаштовуєте параметри та налаштування. Це одна з тих речей, які, як я знав, мали б бути можливими при сучасному стані веб-технологій , але те, що це сталося насправді, все ще вражає мій розум.
 
-## Scaling is hard, but we made remarkable progress
+## Масштабування - це важко, але ми досягли значного прогресу
 
-Cool as our new technoglogy stack is, it is not the most important work we've done over the last year. Yes, it's pretty neat, and yes it's only possible because of the work done on 2.0. But that work itself is what matters most. The main reason for the 2.0 rewrite was to allow the project to scale horizontally. Or to put it bluntly, to allow FreeSewing to go where I could not carry it on my own.
+Хоч який крутий наш новий стек технологів, це не найважливіша робота, яку ми зробили за останній рік. Так, це доволі охайно, і так, це стало можливим лише завдяки роботі, виконаній над 2.0. Але сама робота - це те, що має найбільше значення. Основною причиною переписування версії 2.0 була можливість горизонтального масштабування проекту. Або, кажучи прямо, , щоб дозволити FreeSewing піти туди, куди я не змогла б донести його самотужки.
 
-In a way, FreeSewing has grown up as a (software) project. We have several people making regular contributions, [an active chat room](https://discord.freesewing.org/), [a dedicated website for developer and translator documentation](https://freesewing.dev), a plethora of [packages we publish on NPM](https://www.npmjs.com/search?q=keywords:freesewing), we've contributed fixes and improvements to upstream software we depend on, and we now also have other people and teams who depend on the packages we put out.
+У певному сенсі FreeSewing виріс як (програмний) проект. У нас є кілька людей , які роблять регулярні внески, [активний чат](https://discord.freesewing.org/), [спеціальний веб-сайт для документації розробників і перекладачів](https://freesewing.dev), безліч [пакунків, які ми публікуємо на NPM](https://www.npmjs.com/search?q=keywords:freesewing), ми внесли виправлення і покращення у програмне забезпечення, від якого залежимо, і тепер також є інші люди і команди, які залежать від пакунків, що ми випускаємо.
 
-We (currently) have [23 patterns available](/patterns/), we publish 62 packages on NPM (the Node.js package registry). Since putting out version 2.0, on average 450 people sign up every month, and our total tally currently stands above 15.000.
+У нас (наразі) доступні [23 патерни](/patterns/), ми публікуємо 62 пакунки на NPM (реєстр пакунків Node.js). З моменту виходу версії 2.0, в середньому 450 людей реєструються щомісяця, а наша загальна кількість на даний момент перевищує 15 000.
 
-## Translation has never been easier
+## Переклад ще ніколи не був таким простим
 
-Since v2, we've also switched to [Crowdin](https://crowdin.com) for [our translations](https://freesewing.dev/guides/translator/). Translation is arguably the best way to democratize access to our platform, and I'd like to give a shout-out to all people who have helped and continue to help with these efforts.
+Починаючи з версії 2, ми також перейшли на [Crowdin](https://crowdin.com) для [наших перекладів](https://freesewing.dev/guides/translator/). Переклад - це, мабуть, найкращий спосіб демократизувати доступ до нашої платформи, і я хотів би подякувати всім людям, які допомагали і продовжують допомагати в цих зусиллях.
 
-It's perhaps also a good time to point out that you too can help with this. Our [documentation for translators](https://freesewing.dev/guides/translator/) is a good place to get started, or stop by [our chat room](https://discord.freesewing.org/).
+Можливо, це також гарний час нагадати, що ви теж можете допомогти в цьому. Наша [документація для перекладачів](https://freesewing.dev/guides/translator/) є гарним місцем для початку роботи, або завітайте до [нашого чату](https://discord.freesewing.org/).
 
-## What we're planning for next year
+## Що ми плануємо на наступний рік
 
-Our next year plans roughly fall apart into two categories: improving our platform, and adding more patterns.
+Наші плани на наступний рік можна умовно поділити на дві категорії: покращення нашої платформи та додавання нових шаблонів.
 
-As the project grows, so does the amount of work required to keep everything running smoothly. We still have more performance improvements to do, as well as auxiliary tasks such as writing more tests so we can go ahead and change things with confidence, rather than risk that rolling out a new feature causes bugs down the line.
+Зі зростанням проекту зростає і обсяг роботи, необхідний для того, щоб все працювало безперебійно. Нам ще потрібно покращити продуктивність, а також допоміжні завдання, такі як написання більшої кількості тестів, щоб ми могли продовжувати змінювати речі з упевненістю, а не ризикувати, що запуск нової функції призведе до помилок у майбутньому.
 
-We also know there is a lot of room for improvement of the user experience (UX), as well as design and user interface (UI). We've been doing the best we can, but it's not really our field of expertise, and we're hoping to find more contributors who can help us in this regard.
+Ми також знаємо, що є багато можливостей для покращення користувацького досвіду (UX), як , а також дизайну та користувацького інтерфейсу (UI). Ми робимо все, що можемо, але це не зовсім наша сфера діяльності, і ми сподіваємося знайти більше дописувачів, які зможуть допомогти нам у цьому відношенні.
 
-## v2.2 will include a ladies bodice block
+## v2.2 включатиме блок жіночих ліфів
 
-But hey, you want more patterns, right? So rest assured that that's high on our todo list. We are going to apply some affirmative action towards the ladies who have so far been under-served. Not only by making existing patterns available to them (as we did recently with Simone, a ladies version of our Simon pattern) but also by developing a dedicated ladies block to develop patterns on.
+Але ж ви хочете більше візерунків, так? Тож будьте певні, що це є одним з перших пунктів у нашому списку справ . Ми збираємося застосувати певні позитивні дії щодо жінок, які до цього часу не отримували достатнього обслуговування. Не лише надаючи їм доступ до наявних патернів (як ми нещодавно зробили з Simone, жіночою версією нашого патерну Simon), а й , розробивши спеціальний жіночий блок для розробки патернів.
 
-We have earmarked this as a must-have for FreeSewing v2.2, which we hope to be able to release sometime in January.
+Ми визначили це як обов'язковий компонент для FreeSewing v2.2, який, сподіваємося, зможемо випустити десь у січні.
 
-We're also looking at ways to get more designers on board with FreeSewing. One plan on the drawing board is to offer pair-programming sessions to designers where they walk us through their vision, and we implement their design in FreeSewing. We're even thinking of live-streaming these sessions so anybody who is interested can drop by and follow along.
+Ми також шукаємо способи залучити більше дизайнерів до FreeSewing. Один з планів на дошці - запропонувати дизайнерам парні сесії з програмування , де вони розкажуть нам про своє бачення, а ми реалізуємо їхній дизайн у FreeSewing. Ми навіть думаємо про пряму трансляцію цих сесій, щоб кожен, хто зацікавлений , міг зайти і приєднатися до нас.
 
-## 'Tis the season for giving
+## Це час дарувати
 
-Thanks to our awesome patrons, revenue was up this year too. As you may or may not know, FreeSewing donates 100% of its revenue to Médecins Sans Frontières/Doctors Without Borders. So this morning, I had the great honour to write a 4109.38€ cheque to [MSF](https://www.msf.org/).
+Завдяки нашим чудовим меценатам, доходи цього року також зросли. Як ви, можливо, знаєте, FreeSewing перераховує 100% свого прибутку на рахунок організації "Лікарі без кордонів" (Médecins Sans Frontières). Тож сьогодні вранці я мав честь виписати чек на 4109,38 євро на адресу [MSF](https://www.msf.org/).
 
-That felt **real good** so thanks to [all our patrons](/patrons) for their continued support. If you'd like to join this awesome group of people, [you can do so here](/patrons/join).
+Це було **дуже приємно** , тому дякуємо [всім нашим меценатам](/patrons) за їхню постійну підтримку. Якщо ви хочете приєднатися до цієї чудової групи людей, [ви можете зробити це тут](/patrons/join).
 
 
 
