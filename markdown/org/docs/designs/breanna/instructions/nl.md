@@ -13,7 +13,7 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 
 </Note>
 
-### Step 1: Mock-up Construction
+### Stap 1: Model constructie
 
 - Sluit de voorste nepen.
 - Sluit de achterste nepen.
