@@ -1,5 +1,5 @@
 ---
-title: "Collar bend"
+title: "Kragenkrümmung"
 ---
 
 ![Kragenkrümmung](collarbend.svg)
