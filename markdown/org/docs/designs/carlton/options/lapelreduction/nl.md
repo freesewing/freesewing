@@ -1,5 +1,5 @@
 ---
-title: "Lapel reduction"
+title: "Reductie revers"
 ---
 
 Bepaalt hoeveel de revers punt naar binnen gaat.
