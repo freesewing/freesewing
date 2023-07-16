@@ -89,9 +89,10 @@ export const MdxMetaData = ({ frontmatter, locale, slug }) => {
     <div className="hidden xl:block mb-4">
       <a
         href={`https://github.dev/freesewing/freesewing/blob/develop/markdown/${siteConfig.tld}/${slug}/en.md`}
-        className="btn btn-secondary flex flex-row justify-between items-center w-full px-4"
+        className="btn btn-success flex flex-row justify-between items-center w-full px-4 bg-gradient-to-r from-primary to-accent mb-4"
       >
         <EditIcon />
+        <span>Found a mistake?</span>
         <span>{t('editThisPage')}</span>
       </a>
       <div
