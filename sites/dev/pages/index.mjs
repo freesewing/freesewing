@@ -79,13 +79,13 @@ const HomePage = ({ page }) => (
         <div className="px-4 lg:px-8 bg-gradient-to-tr from-primary to-secondary py-10 rounded-none lg:rounded-xl lg:shadow">
           <h2 className="text-accent-content mb-4">Doing what&apos;s right</h2>
           <p className="text-accent-content font-medium">
-            As an open source project, our work is gifted free of charge and try to support all our
+            As an open source project, our work and support is gifted free of charge to all our
             users.
           </p>
           <p className="text-accent-content font-medium">
             In return, we ask those who can afford it to{' '}
             <BoldLink href="https://freesewing.org/patrons/join">support us</BoldLink>. This helps
-            us to{' '}
+            us{' '}
             <BoldLink href="https://freesewing.org/docs/various/pledge">
               do what&apos;s right
             </BoldLink>
@@ -111,7 +111,7 @@ const HomePage = ({ page }) => (
             <p>
               <a
                 role="button"
-                className="btn btn-success px-12 ml-4 mb-8"
+                className="btn btn-accent hover:btn-success px-12 ml-4 mb-8"
                 href="https://freesewing.org/patrons/join"
               >
                 Become a Patron
