@@ -177,7 +177,7 @@ export const Breadcrumbs = ({ slug = false, lead = false, siteNav }) => {
             <PageLink
               href={`/${page.s}`}
               title={page.t}
-              className="text-secondary-focus font-medium pl-1"
+              className="font-medium pl-1"
               txt={page.t}
             />
           </li>
