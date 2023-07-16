@@ -1,5 +1,5 @@
 ---
-title: "Shoulder ease"
+title: "Overwijdte schouder"
 ---
 
 Bepaalt de hoeveelheid overwijdte op de schouder tot schouder maat.
