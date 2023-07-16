@@ -1,5 +1,5 @@
 ---
-title: "Center back dart"
+title: "Abnäher in der hinteren Mitte"
 ---
 
 ![Abnäher in der hinteren Mitte](centerbackdart.svg)
