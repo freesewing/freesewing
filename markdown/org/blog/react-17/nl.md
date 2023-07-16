@@ -1,98 +1,96 @@
 ---
 author: "joostdecock"
-caption: "Hat-tip to nappy.co for the picture"
+caption: "Hoed-tip naar nappy.co voor de foto"
 date: "2021-05-24"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0145547c8ba61dde1a6553dc8de318f53e27cbe5-2000x1333.jpg"
-intro: "FreeSewing 2.16 comes with React 17 and Webpack 5 [Niet vertaald]"
-title: "FreeSewing 2.16 comes with React 17 and Webpack 5 [Niet vertaald]"
+intro: "FreeSewing 2.16 wordt geleverd met React 17 en Webpack 5"
+title: "FreeSewing 2.16 wordt geleverd met React 17 en Webpack 5"
 ---
 
 
-We released FreeSewing v2.16 today. 
-To the casual observer, there's not that many changes. 
-And for users of this website, that's certainly the case.
+Vandaag hebben we FreeSewing v2.16 uitgebracht. Voor de toevallige waarnemer zijn er niet zoveel veranderingen. En voor gebruikers van deze website is dat zeker het geval.
 
-Scratch the surface however, and you'll find a lot of work went into this release.
+Kras echter over de oppervlakte en je zult zien dat er veel werk in deze release is gaan zitten.
 
-Let's look at what's been changed:
+Laten we eens kijken wat er is veranderd:
 
-## create-freesewing-pattern
+## patroon maken
 
-The biggest change is related to [create-freesewing-pattern](https://www.npmjs.com/package/create-freesewing-pattern) and the development environment it sets up for you.
+De grootste verandering heeft te maken met [create-freesewing-pattern](https://www.npmjs.com/package/create-freesewing-pattern) en de ontwikkelomgeving die het voor je opzet.
 
-We use [create-react-app](https://www.npmjs.com/package/create-react-app) (aka <abbr title='Create React App'>CRA</abbr>) under the hood, and FreeSewing 2.16 is our first release to ship with [React](https://reactjs.org/) 17, CRA 4, and [Webpack](https://webpack.js.org/) 5.
+We gebruiken [create-react-app](https://www.npmjs.com/package/create-react-app) (ook bekend als <abbr title='Create React App'>CRA</abbr>) onder de motorkap, en FreeSewing 2.16 is onze eerste uitgave die wordt geleverd met [React](https://reactjs.org/) 17, CRA 4 en [Webpack](https://webpack.js.org/) 5.
 
-That migration to CRA 4 (and its companion [react-scripts](https://www.npmjs.com/package/react-scripts) 4) is significant be because it has a whole new way of hot-reloading your application, called `FAST_REFRESH`.
+Die migratie naar CRA 4 (en het bijbehorende [react-scripts](https://www.npmjs.com/package/react-scripts) 4) is belangrijk omdat het een geheel nieuwe manier heeft om je applicatie hot-reload te laden, genaamd `FAST_REFRESH`.
 
-The downside is that it will only work for *local components* in your app. And since our development environment loads your pattern code as a (local) dependency, it does not reload when you change your pattern file.
+Het nadeel is dat het alleen werkt voor *lokale componenten* in je app. En omdat onze ontwikkelomgeving je patrooncode laadt als een (lokale) afhankelijkheid, wordt deze niet opnieuw geladen als je je patroonbestand wijzigt.
 
-To make matters worse, Webpack 5 will keep a cache in memory of the built dependencies. So even restarting the development environment won't show the changes you've made to your pattern.
+Om het nog erger te maken, houdt Webpack 5 een cache bij in het geheugen van de gebouwde afhankelijkheden. Dus zelfs het opnieuw opstarten van de ontwikkelomgeving zal de wijzigingen die je in je patroon hebt aangebracht niet laten zien.
 
-Obviously, that ain't cool. And while there's certainly ways to configure Webpack to behave as we want it to, CRA doesn't allow for that sort of customization. You can always eject the CRA configuration (or fork react-scripts) but that would create too much maintenance overhead.
+Dat is duidelijk niet cool. En hoewel er zeker manieren zijn om Webpack zo te configureren dat het zich gedraagt zoals wij dat willen, staat CRA dat soort aanpassingen niet toe. Je kunt altijd de CRA configuratie uitwerpen (of react-scripts forken) maar dat zou teveel onderhoudsoverhead veroorzaken.
 
-## The FreeSewing development environment: Now with fast refresh
+## De ontwikkelomgeving van FreeSewing: Nu met snelle verversing
 
-We want the development environment to reflect any changes you make to your code. And we'd like to use the new fast refresh feature because it's pretty great.
+We willen dat de ontwikkelomgeving alle wijzigingen weerspiegelt die je in je code aanbrengt. En we willen graag de nieuwe functie voor snel verversen gebruiken, want die is geweldig.
 
-Unlike the previous hot-reload that would just reload the page, fast refresh can dynamically update a changed React component.
+In tegenstelling tot de vorige hot-reload die de pagina gewoon opnieuw zou laden, kan snel verversen een gewijzigd React component dynamisch bijwerken.
 
-That's an important distinction because a page reload will reset the development environment to the state that's stored in local storage. That includes the most important things like measurements, but it does not include what you were looking at in the development environment, pattern configuration, and so on. So each reload you'd need a few clicks to get back to what you were doing, which was a bit of an annoyance.
+Dat is een belangrijk onderscheid omdat een pagina herladen de ontwikkelomgeving terugzet naar de staat die is opgeslagen in de lokale opslag. Dat omvat de belangrijkste dingen zoals metingen, maar niet waar je naar keek in de ontwikkelomgeving, patroonconfiguratie, enzovoort. Dus bij elke herlaadbeurt moest je een paar keer klikken om terug te gaan naar waar je mee bezig was, wat een beetje irritant was.
 
-Fast refresh has the potential to fix that, and to enable it all we need to do is import the pattern as a local component. Alas, CRA uses Webpack's `ModuleScopePlugin` which forbids importing local code from outside the `example/src` folder.
+Snel verversen heeft de potentie om dat op te lossen, en om het in te schakelen hoeven we alleen maar het patroon te importeren als een lokaal component. Helaas gebruikt CRA Webpack's `ModuleScopePlugin` die het importeren van lokale code van buiten de `example/src` map verbiedt.
 
-To sidestep that issue, running:
+Om dat probleem te omzeilen, moet je rennen:
 
 ```bash
-npx create-freesewing-pattern
-``` 
+npx creëer-vreeswijderpatroon
+```
 
-will now symlink `example/src/pattern` to the root folder of your pattern. That brings the code into the local scope, so it can be correctly loaded and fast-refreshed.
+zal nu `example/src/pattern` symlinken naar de hoofdmap van je patroon. Dat brengt de code in de lokale scope, zodat deze correct kan worden geladen en snel kan worden gerefreshed.
 
-There's another advantage to this approach: Where previously you had to run two terminals — one to build/watch the pattern code and one to build/watch the development environment — you now need to load just one because the development environment will also build/watch the pattern code.
+Er is nog een voordeel aan deze aanpak: Waar je voorheen twee terminals moest gebruiken - één om de patrooncode te bouwen/bekijken en één om de ontwikkelomgeving te bouwen/bekijken - hoef je er nu maar één te laden omdat de ontwikkelomgeving ook de patrooncode zal bouwen/bekijken.
 
-Developers rejoice 🎉
+Ontwikkelaars opgelet 🎉
 
-## Migration of react-markdown 5 to 6
+## Migratie van react-markdown 5 naar 6
 
-Another major change is [react-markdown](https://www.npmjs.com/package/react-markdown). We've already upgraded it on our websites (part of the migration to Gatsby v3 that we completed earlier this month), but we're also using it in our development environment.
+Een andere grote verandering is [react-markdown](https://www.npmjs.com/package/react-markdown). We hebben het al geüpgraded op onze websites (onderdeel van de migratie naar Gatsby v3 die we eerder deze maand hebben afgerond), maar we gebruiken het ook in onze ontwikkelomgeving.
 
-It's a relatively trivial change where the markdown content is no longer passed in as an explicit prop:
+Het is een relatief triviale verandering waarbij de markdown-inhoud niet langer wordt doorgegeven als een expliciete prop:
 
 ```jsx
 <Markdown source={`Hello, I am **Markdown**`} />
 ```
 
-But rather via the special *children* prop.
+Maar eerder via de speciale *children* prop.
 
 ```jsx
-<Markdown>Hello, I am **Markdown**</Markdown>
+<Markdown>Hallo, ik ben **Markdown**</Markdown>
 ```
 
-## Upgraded rollup plugins
+## Opgewaardeerde rollup-plugins
 
-The following rollup-plugins also had some major changes:
+De volgende rollup-plugins hebben ook enkele grote veranderingen ondergaan:
 
 - rollup-plugin-terser 6 => 7
 - @rollup/plugin-commonjs 14 => 19
 - @rollup/plugin-node-resolve 8 => 13
 
-This should not cause any issues unless perhaps you're bundling your own freesewing patterns. If you hit any snags, [let us know](https://discord.freesewing.org/).
+Dit zou geen problemen moeten opleveren, tenzij je misschien je eigen freeswing-patronen bundelt. Als je ergens tegenaan loopt, [laat het ons weten](https://discord.freesewing.org/).
 
-## Defaults for browserlist
+## Standaardinstellingen voor browserlijst
 
-We now use the recommended `defaults` setting for [browserlist](https://github.com/browserslist/browserslist) which controls browser support for cross-compilers such as [Babel](https://babeljs.io/).
+We gebruiken nu de aanbevolen `defaults` instelling voor [browserlist](https://github.com/browserslist/browserslist) die de browserondersteuning regelt voor cross-compilers zoals [Babel](https://babeljs.io/).
 
-We used to have a set of custom settings but there is no real reason for us to not stick to the defaults.
+Vroeger hadden we een set aangepaste instellingen, maar er is voor ons geen echte reden om niet vast te houden aan de standaardinstellingen.
 
-This could potentiality impact browser support for some really old browsers, but chances are this too will pass under the radar.
+Dit zou mogelijk invloed kunnen hebben op browserondersteuning voor sommige echt oude browsers, maar de kans is groot dat ook dit onder de radar blijft.
 
-## Summary
+## Samenvatting
 
-Not so much has changed in the FreeSewing code itself, but there's a bunch of changes that impact the dependencies and bundlers.
+Er is niet zoveel veranderd in de FreeSewing code zelf, maar er zijn wel een heleboel veranderingen die invloed hebben op de afhankelijkheden en bundlers.
 
-These are typically the hardest and most esoteric things about any JavaScript project.
+Dit zijn meestal de moeilijkste en meest esoterische dingen van elk JavaScript-project.
 
-If you run into any problems after upgrading to FreeSewing v2.16, please [hop onto our Discord server](https://discord.freesewing.org/) so we can help you out.
+Als je problemen ondervindt na het upgraden naar FreeSewing v2.16, ga dan naar [op onze Discord server](https://discord.freesewing.org/) zodat we je kunnen helpen.
 
-That being said, as long as you use the same version of different FreeSewing packages, you should not have any problems.
+Dat gezegd hebbende, zolang je dezelfde versie van verschillende FreeSewing pakketten gebruikt, zou je geen problemen moeten hebben.
 
