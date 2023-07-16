@@ -1,5 +1,5 @@
 ---
-title: "Bulge"
+title: "Wölbung"
 ---
 
 ![Die Wulge-Option auf Bruce](./bulge.svg)
