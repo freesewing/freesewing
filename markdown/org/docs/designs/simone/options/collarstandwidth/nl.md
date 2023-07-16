@@ -1,6 +1,6 @@
-- - -
-title: "Collar stand width"
-- - -
+---
+title: "Breedte staander"
+---
 
 ![Hoogte staander](collarstandwidth.svg)
 
