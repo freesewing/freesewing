@@ -1,5 +1,5 @@
 ---
-title: "Leg balance"
+title: "Saldo de pierna"
 ---
 
 Controla la proporción entre la parte frontal y trasera de las piernas.
