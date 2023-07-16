@@ -132,6 +132,10 @@ const MainLink = ({
  * @param siteNav {object}    - The site navigation object as returned by the useNavigation hook
  */
 export const Breadcrumbs = ({ slug, siteNav }) => {
+  if (!slug) {
+    console.log('No slug passed to Breadcrumbs')
+    return null
+  }
   // Start with the home crumb
   const crumbs = [
     <li className="inline" key={0}>
@@ -144,25 +148,27 @@ export const Breadcrumbs = ({ slug, siteNav }) => {
   const chunks = slug.split('/')
   for (let i = 1; i <= chunks.length; i++) {
     const page = get(siteNav, chunks.slice(0, i))
-    crumbs.push(
-      <li className="pl-1" key={`${i}s`}>
-        <RightIcon className="w-4 h-4 opacity-50" stroke={3} />
-      </li>,
-      i === chunks.length ? (
-        <li className="pl-1" key={i}>
-          <span className="font-medium">{page.t}</span>
-        </li>
-      ) : (
-        <li key={i}>
-          <PageLink
-            href={`/${page.s}`}
-            title={page.t}
-            className="text-secondary-focus font-medium pl-1"
-            txt={page.t}
-          />
-        </li>
+    if (page) {
+      crumbs.push(
+        <li className="pl-1" key={`${i}s`}>
+          <RightIcon className="w-4 h-4 opacity-50" stroke={3} />
+        </li>,
+        i === chunks.length ? (
+          <li className="pl-1" key={i}>
+            <span className="font-medium">{page.t}</span>
+          </li>
+        ) : (
+          <li key={i}>
+            <PageLink
+              href={`/${page.s}`}
+              title={page.t}
+              className="text-secondary-focus font-medium pl-1"
+              txt={page.t}
+            />
+          </li>
+        )
       )
-    )
+    }
   }
 
   return <ul className="flex flex-row flex-wrap items-center">{crumbs}</ul>
