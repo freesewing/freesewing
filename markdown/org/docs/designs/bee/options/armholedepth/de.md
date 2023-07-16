@@ -1,6 +1,6 @@
-- - -
-title: "Armhole depth (Bella)"
-- - -
+---
+title: "Tiefen des Armloches (Bella)"
+---
 
 ***
 
