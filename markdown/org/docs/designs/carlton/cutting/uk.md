@@ -1,6 +1,6 @@
-- - -
-назва: "Карлтоновий плащ: Інструкція з розкрою"
-- - -
+---
+title: "Carlton coat: Cutting Instructions"
+---
 
 <Note>
 
