@@ -1,6 +1,6 @@
-- - -
-title: "Length bonus"
-- - -
+---
+title: "Bonus de longitud"
+---
 
 ![Bonus de longitud](lengthbonus.svg)
 
