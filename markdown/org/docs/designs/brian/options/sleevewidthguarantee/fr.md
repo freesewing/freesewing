@@ -1,5 +1,5 @@
 ---
-title: "Garantie de largeur de manche"
+title: "Largeur des manches garantie"
 ---
 
 On commence par une ébauche de l'emmanchure, puis d'une manche qui s'y ajuste.
@@ -12,4 +12,4 @@ Mais pour éviter que la manche ne devienne trop étroite, on n'adapte la largeu
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_sleevewidthguarantee_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_sleevewidthguarantee_sample.svg "Effet de cette option sur le motif")
