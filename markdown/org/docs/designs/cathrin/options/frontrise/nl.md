@@ -1,5 +1,5 @@
 ---
-title: "Front rise"
+title: "Hoogte voorpand"
 ---
 
 ![De optie voor hoogte vooraan bij Cathrin](./frontrise.svg)
