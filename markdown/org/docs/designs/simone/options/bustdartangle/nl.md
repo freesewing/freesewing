@@ -1,5 +1,5 @@
 ---
-title: "Bust dart angle"
+title: "Hoek busteneep"
 ---
 
 Bepaalt de hoek waarin de busteneep vanuit de zijnaad naar beneden wijst.
