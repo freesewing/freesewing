@@ -1,5 +1,5 @@
 ---
-title: "Start of the cross seam curve"
+title: "Inicio de la curva de costura cruzada"
 ---
 
 Controla el inicio de la curva de costura cruzada.
