@@ -1,5 +1,5 @@
 ---
-title: "Rise"
+title: "Hoogte"
 ---
 
 Deze optie bepaalt de algemene hoogte van de taille.
