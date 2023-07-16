@@ -1,5 +1,5 @@
 ---
-title: "Флорентійська маска для обличчя: Необхідні вимірювання"
+title: "Florence face mask: Required Measurements"
 ---
 
 <PatternMeasurements pattern='florence' />
