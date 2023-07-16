@@ -1,37 +1,37 @@
 ---
 author: "joostdecock"
-caption: "If you like it, put a bow on it"
+caption: "Якщо вам подобається, прикріпіть бантик"
 date: "2017-11-14"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8b04db622ddf3bff6e2d66a5305903a0e96edd58-2000x1333.jpg"
-intro: "Our family of freesewing patterns has grown once again, and the benjamin of the family is... Benjamin ."
-title: "The Benjamin Bow Tie pattern is now available in beta. And I didn't even have to do anything."
+intro: "Наша сім'я фріволітесів знову збільшилася, і найстаршим у ній став Бенджамін... Бенджамін."
+title: "Шаблон \"Метелик Бенджаміна\" тепер доступний у бета-версії. І мені навіть не довелося нічого робити."
 ---
 
-Our family of freesewing patterns has grown once again, and the benjamin of the family is... [Benjamin](/designs/benjamin).
+Наша сім'я фріволітерок знову поповнилася, і Бенджамін у ній... [Бенджамін](/designs/benjamin).
 
-Benjamin is a bow tie that comes with a variety of options to control pretty much every aspect of your bow tie.
+Бенджамін - це краватка-метелик, яка поставляється з різноманітними опціями, що дозволяють контролювати практично кожен аспект вашої краватки-метелика.
 
-You can opt for a made-to-measure bow tie, or draft Benjamin with an adjustment ribbon to allow some flexibility in the fit. Something that makes this a great handmade gift for the upcoming holiday season.
+Ви можете обрати краватку-метелика, виготовлену за індивідуальним замовленням, або примірник "Бенджаміна" з регулювальною стрічкою, щоб забезпечити певну гнучкість у посадці. Щось, що робить це чудовим подарунком ручної роботи до наступаючого святкового сезону.
 
-## Benjamin is more special than you realize
+## Бенджамін більш особливий, ніж ви можете собі уявити
 
-Here's the thing about Benjamin that I'm most excited about: I didn't do anything.
+Ось що мене найбільше хвилює у випадку з Беньяміном: Я нічого не зробив.
 
-![A collection of bow ties from Wouter, who designed and coded this pattern](https://posts.freesewing.org/uploads/bowties_4f3e05ec53.jpg)
+![Колекція краваток-метеликів від Wouter, який розробив і закодував цей візерунок](https://posts.freesewing.org/uploads/bowties_4f3e05ec53.jpg)
 
-That's right, Benjamin was designed and coded by [Wouter Van Wageningen](/users/xdpug) who has over the last couple of months been teaching himself the ins and outs of the freesewing platform:
+Так, Бенджамін був спроектований і запрограмований [Воутером Ван Вагенінгеном](/users/xdpug) , який протягом останніх кількох місяців вивчав всі тонкощі платформи фріскейлінгу:
 
-> I had a blast making the Bow Tie pattern. I basically used it to move from the BabyBib tutorial into something that was original and not too complex (and actually useful). I wanted to get the whole process under control before venturing out into the real stuff. 
+> Я отримав величезне задоволення, створюючи візерунок "Метелик". Я в основному використовував його, щоб перейти від підручника з BabyBib до чогось більш оригінального і не надто складного (і насправді корисного). Я хотів тримати весь процес під контролем, перш ніж приступити до реальних справ. 
 > 
-> That I was able to pick things up so easily is due mostly to the great [BabyBib tutorial](https://freesewing.org/tutorials/pattern-design/) and the help you've provided [here](https://discord.freesewing.org).
+> Те, що я змогла так легко розібратися в цьому питанні, здебільшого завдяки чудовому посібнику [BabyBib](https://freesewing.org/tutorials/pattern-design/) та допомозі, яку ви надали [тут](https://discord.freesewing.org).
 
-## Who will be next to contribute a pattern?
+## Хто буде наступним, хто надасть зразок?
 
-When I released freesewing as an open source platform, I obviously hoped that others would join the effort.
+Коли я випустив freesewing як платформу з відкритим вихідним кодом, я, очевидно, сподівався, що інші долучаться до цієї справи.
 
-But I never thought that less than 3 months after the public release of freesewing, we'd have our first pattern from the freesewing community.
+Але я ніколи не думав, що менш ніж через 3 місяці після публічного релізу freesewing, , ми отримаємо перший шаблон від спільноти freesewing.
 
-![Benjamin is kind of a big deal](https://posts.freesewing.org/uploads/giphy_7a40f62815.gif)
+![Бенджамін - це дуже важливо.](https://posts.freesewing.org/uploads/giphy_7a40f62815.gif)
 
-So yeah, Benjamin is a BFD, Wouter is a badass, and I am hopeful that this will be the first of many patterns that we as a community will be able to make available to all.
+Тож так, Бенджамін - BFD, Воутер - крутий, і я сподіваюся, що це буде перший з багатьох шаблонів, які ми, як спільнота, зможемо зробити доступними для всіх.
 
