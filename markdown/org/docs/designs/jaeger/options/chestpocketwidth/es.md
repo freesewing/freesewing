@@ -1,5 +1,5 @@
 ---
-title: "Chest pocket width"
+title: "Ancho bolsillo del pecho"
 ---
 
 ![Ancho bolsillo del pecho](chestpocketwidth.svg)
