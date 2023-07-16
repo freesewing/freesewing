@@ -1,5 +1,5 @@
 ---
-title: "Bloc de corps de Bella : Instructions de coupe"
+title: "Bella body block: Cutting Instructions"
 ---
 
 **Tissu principal**
