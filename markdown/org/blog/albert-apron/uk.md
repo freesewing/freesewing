@@ -1,21 +1,21 @@
 ---
 author: "joostdecock"
-caption: "Keep those home-made clothes clean while cooking with the Albert apron"
+caption: "Зберігайте домашній одяг чистим під час приготування їжі за допомогою фартуха Albert"
 date: "2020-10-17"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/192f0da76422475ea9a36b7988d70f69bb89bbaf-1920x1282.jpg"
-intro: "What do you do if your daughter needed an apron for school?"
-title: "We haz apron now: FreeSewing 2.10 brings you Albert, a humble apron pattern"
+intro: "Що робити, якщо вашій доньці потрібен фартух для школи?"
+title: "Тепер у нас є фартух: FreeSewing 2.10 пропонує вам Альберта, скромну викрійку фартуха"
 ---
 
 
-What do you do if your daughter needed an apron for school?
+Що робити, якщо вашій доньці потрібен фартух для школи?
 
- - Would you run out to the store and buy one?
- - Would you fire up your sewing machine and make one?
- - Would you say to yourself _hmm, better make a pattern first_ and then share your FreeSewing pattern so that now everybody can have an apron?
+ - Ви б побігли в магазин і купили його?
+ - Ви б увімкнули швейну машинку і зшили його?
+ - Чи скажете ви собі _хм, краще спочатку зробити викрійку_ , а потім поділитися своєю викрійкою FreeSewing, щоб тепер кожен міг мати фартух?
 
-Because [that's what Wouter did](/showcase/albert-by-wouter/), so we wrapped it into FreeSewing v2.10, and [voila](/designs/albert/).
+Тому що [це те, що зробив Wouter](/showcase/albert-by-wouter/), тому ми його у FreeSewing v2.10, і [вуаля](/designs/albert/).
 
-![Wouter's daughter wearing the Albert apron](https://posts.freesewing.org/uploads/albert_08ccbfc95b.jpg)
+![Дочка Воутера носить фартух Альберта](https://posts.freesewing.org/uploads/albert_08ccbfc95b.jpg)
 
 
