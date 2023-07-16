@@ -1,5 +1,5 @@
 ---
-title: "Adjustment ribbon"
+title: "Cinta de ajuste"
 ---
 
 ![Tradicional o ajustable](adjustmentribbon.svg)
