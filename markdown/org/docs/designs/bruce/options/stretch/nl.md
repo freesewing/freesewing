@@ -1,5 +1,5 @@
 - - -
-title: "Stretch"
+titel: "Rek"
 - - -
 
 ![De optie voor stretch bij Bruce](./stretch.svg)
