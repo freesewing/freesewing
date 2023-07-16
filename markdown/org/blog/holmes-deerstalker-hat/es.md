@@ -3,25 +3,18 @@ author: "joostdecock"
 caption: "Screengrab from  Bernadette Banner's YouTube tutorial for this hat"
 date: "2020-02-23"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/02a03dd39c9e5317e89681482735e8e5929d7c2d-2748x1546.jpg"
-intro: "New pattern: The Holmes Deerstalker Hat [No traducido]"
-title: "New pattern: The Holmes Deerstalker Hat [No traducido]"
+intro: "New pattern: The Holmes Deerstalker Hat"
+title: "New pattern: The Holmes Deerstalker Hat"
 ---
 
 
-Earlier this week, [AlfaLyr](/users/alfalyr) wrote to us to say that she had made a pattern
-for the iconic Sherlock Holmes Deerstalker hat, based on this YouTube tutorial 
-by [Bernadette Banner](https://www.youtube.com/channel/UCSHtaUm-FjUps090S7crO4Q):
+Earlier this week, [AlfaLyr](/users/alfalyr) wrote to us to say that she had made a pattern for the iconic Sherlock Holmes Deerstalker hat, based on this YouTube tutorial by [Bernadette Banner](https://www.youtube.com/channel/UCSHtaUm-FjUps090S7crO4Q):
 
 <YouTube id='H24VBFMZJF4' />
 
-Unfortunately, we were just rounding 
-up [the rollout of v2.2 of FreeSewing](/blog/breanna-measurements-sizes-in-2-2/), and it was
-too late to squeeze in this extra pattern.
+Unfortunately, we were just rounding up [the rollout of v2.2 of FreeSewing](/blog/breanna-measurements-sizes-in-2-2/), and it was too late to squeeze in this extra pattern.
 
-But obviously we love this hat, not to mention that it is the perfect accessory for
-our [Carlton](/designs/carlton/) and [Carlita](/designs/carlita/) patterns. So here it
-is, [FreeSewing 2.3](https://github.com/freesewing/freesewing/releases/tag/v2.2.0)
-with [the new Holmes pattern](/designs/holmes/).
+But obviously we love this hat, not to mention that it is the perfect accessory for our [Carlton](/designs/carlton/) and [Carlita](/designs/carlita/) patterns. So here it is, [FreeSewing 2.3](https://github.com/freesewing/freesewing/releases/tag/v2.2.0) with [the new Holmes pattern](/designs/holmes/).
 
 Enjoy!
 
