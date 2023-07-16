@@ -1,37 +1,37 @@
 ---
 author: "joostdecock"
-caption: "Your login background for June"
+caption: "Ваша історія входу в систему за червень"
 date: "2018-05-31"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/63d370c4ad7447d762f2ed053279bc3f11c7583d-1920x1080.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - May 2018: The post-GDPR era is upon us"
+intro: "Це ваш щомісячний огляд новин фрітрекінгу за останні чотири тижні, а також погляд на те, що чекає на нас у наступному місяці."
+title: "Щомісячний огляд - травень 2018: Епоха пост-ГДПР настала"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Це ваш щомісячний огляд новин фрітрекінгу за останні чотири тижні, а також погляд на те, що чекає на нас у наступному місяці.
 
-## Looking back at May
+## Озираючись на травень
 
-Well here we are, the GPPR deadline of May 25th is getting smaller and smaller in our rear-view mirror, and we have a new website.
+Ну ось, дедлайн GPPR 25 травня стає все меншим і меншим у дзеркалі заднього виду , і у нас з'явився новий веб-сайт.
 
-Both of those things are obviously related, but you probably [already knew that](/blog/gdpr-ready).
+Обидві ці речі, очевидно, пов'язані між собою, але ви, мабуть, [вже знали, що](/blog/gdpr-ready).
 
-May has been an incredibly hectic month, with a lot of self-inflicted stress because rather than just implement the changes required for GDPR, we decided to rebuild the entire site. However, as the GDPR changes needed to be ready in time, that meant that the entire site had to be ready.
+Травень був неймовірно напруженим місяцем, з великою кількістю стресу, тому що замість того, щоб просто впровадити зміни, необхідні для GDPR, ми вирішили перебудувати весь сайт. Однак, оскільки зміни до GDPR потрібно було підготувати вчасно, це означало, що весь сайт мав бути готовим.
 
-*Ready* is obviously open to interpretation, and even though we published the site on time — with 1.5 hours to spare to be precise — there were still a few loose ends left and right.
+*Готовий* , очевидно, можна інтерпретувати по-різному, і хоча ми опублікували сайт вчасно - за 1,5 години, якщо бути точним, - все одно залишилося кілька незавершених справ направо і наліво.
 
-We've fixed a bunch of those and I'd like to thank all of you who reported issues and helped us fix them by sharing their experience.
+Ми виправили багато з них, і я хотів би подякувати всім вам, хто повідомляв про проблеми і допомагав нам виправити їх, ділячись своїм досвідом.
 
-A lot of time and effort has been invested in making the site multi-lingual, and it's been great to be able to launch with three langauges enabled. All the translators are doing great work and I hope we'll be able to turn on a few other langauges relatively soon.
+Багато часу і зусиль було витрачено на те, щоб зробити сайт багатомовним, і це було чудово мати можливість запустити його з трьома мовами. Всі перекладачі роблять чудову роботу і я сподіваюся, що ми зможемо включити ще кілька мов відносно скоро.
 
-Apart from [open issues](https://github.com/freesewing/site/issues), we also still have to port some of the documentation to the new site, which is something that we'll continue to work on in June. Speaking of which:
+Окрім відкритих питань [,](https://github.com/freesewing/site/issues), , нам також потрібно перенести частину документації на новий сайт , над чим ми продовжимо працювати в червні. До речі, про це:
 
-## Looking ahead to June
+## Забігаючи наперед на червень
 
-Don't expect any ground breaking changes in June. We're going to keep on ironing out the last kinks on the site, and continue to port the remaining documentation that's still missing from the site.
+У червні не варто очікувати якихось кардинальних змін. Ми збираємося продовжувати виправляти останні недоліки сайту і продовжувати портувати решту документації, якої все ще бракує на сайті.
 
-I can't — and won't — make any promises and expect other people to keep them, so while I can't commit to any translation work, great strides are being made in the French and Swedish translations, so that's all very exciting.
+Я не можу - і не буду - давати жодних обіцянок і очікувати, що інші люди їх виконають, тож поки я не можу взяти на себе зобов'язання щодо перекладу, у перекладах французької та шведської мов спостерігається значний прогрес, тож це все дуже захоплююче.
 
-I'm also thrilled that this translation work is turning out to be a good on-ramp for people with no prior experience as open source contributors. Not only that, but translators are now actually fixing small bugs left and right which is really terrific.
+Я також у захваті від того, що ця перекладацька робота виявляється гарним початком для людей , які не мають попереднього досвіду роботи з відкритим вихідним кодом. Мало того, перекладачі зараз фактично виправляють дрібні помилки направо і наліво, що є справді приголомшливим.
 
-Obviously there's a lot of work that remains to be done, so if you're still standing on the sidelines wondering whether this is something for you, don't be shy. [Stop by our chat room to say hello](https://discord.freesewing.org/), we don't bite ☺️
+Очевидно, що попереду ще багато роботи, тож якщо ви все ще стоїте на узбіччі і роздумуєте, чи це для вас, не соромтеся. [Заходьте в наш чат, щоб привітатися](https://discord.freesewing.org/), ми не кусаємося ☺️
 
