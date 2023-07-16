@@ -1,5 +1,5 @@
 ---
-title: "Shoulder ease"
+title: "Holgura de hombro"
 ---
 
 ![La opción de holgura de hombro en Diana](./shoulderease.svg)
