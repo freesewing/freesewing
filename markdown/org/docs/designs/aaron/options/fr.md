@@ -1,5 +1,5 @@
 ---
-title: "Débardeur Aaron (A-Shirt) : Options de conception"
+title: "Aaron A-Shirt: Design Options"
 ---
 
 <PatternOptions pattern='aaron' />
