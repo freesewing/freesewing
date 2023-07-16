@@ -1,5 +1,5 @@
 ---
-title: "Sleevecap front X"
+title: "Armkugel Vorne X"
 ---
 
 ***
