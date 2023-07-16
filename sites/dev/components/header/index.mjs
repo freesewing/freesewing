@@ -21,7 +21,7 @@ import { ModalThemePicker, ns as themeNs } from 'shared/components/modal/theme-p
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
 import { NavButton, NavSpacer, colors } from 'shared/components/header.mjs'
 
-export const ns = ['header', 'sections', ...themeNs]
+export const ns = ['common', 'header', 'sections', ...themeNs]
 
 const NavIcons = ({ setModal, slug }) => {
   const { t } = useTranslation(['header'])

@@ -24,10 +24,7 @@ export const ModalMenu = ({ slug }) => {
       `}
         >
           <div className="w-full lg:w-1/2">
-            <h3>Content per role</h3>
             <SectionsMenu />
-            <h3 className="mt-8">Search & Sitemap</h3>
-            <p>Cannot find what you are looking for?</p>
             <ChoiceLink href="/search" title="Search">
               If you cannot find what you are looking for but you know the key words, try our
               search.
@@ -38,8 +35,7 @@ export const ModalMenu = ({ slug }) => {
             </ChoiceLink>
           </div>
           <div className="w-full lg:w-1/2">
-            <h3>You are here</h3>
-            <Breadcrumbs {...{ siteNav, slug }} />
+            <Breadcrumbs {...{ siteNav, slug }} lead />
             <NavLinks {...{ siteNav, slug }} />
           </div>
         </div>
