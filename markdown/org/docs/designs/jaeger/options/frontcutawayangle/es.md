@@ -1,5 +1,5 @@
 ---
-title: "Front cutaway angle"
+title: "Ángulo de corte frontal"
 ---
 
 ![Ángulo de corte frontal](frontcutawayangle.svg)
