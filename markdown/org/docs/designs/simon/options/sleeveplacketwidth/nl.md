@@ -1,5 +1,5 @@
 ---
-title: "Sleeve placket width"
+title: "Breedte mouwsplit"
 ---
 
 ![Breedte mouwsplit](sleeveplacketwidth.svg)
