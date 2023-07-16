@@ -1,5 +1,5 @@
 ---
-title: "Jaeger, das Sakko: Zuschnitt"
+title: "Jaeger jacket: Cutting Instructions"
 ---
 
 - **Oberstoff**
