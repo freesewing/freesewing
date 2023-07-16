@@ -1,5 +1,5 @@
 ---
-title: "Taille de la fermeture éclair"
+title: "Taille du Zip"
 ---
 
 Quelle est la taille de fermeture Éclair que l'on doit utiliser pour générer le patron.
@@ -29,4 +29,4 @@ En cas de doute, ou si la taille de votre fermeture à glissière n'est pas disp
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](hortensia_zippersize_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](hortensia_zippersize_sample.svg "Effet de cette option sur le motif")
