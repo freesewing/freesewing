@@ -1,18 +1,18 @@
 ---
 author: "joostdecock"
-caption: "Photo by Karolina Grabowska from Pexels"
+caption: "Фото Кароліни Грабовської з Pexels"
 date: "2021-06-27"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/13f022fe08c08ba927a13db25c554d730ec8f912-1280x853.jpg"
-intro: "Announcing Ursula, a basic, highly-customizable underwear pattern"
-title: "Announcing Ursula, a basic, highly-customizable underwear pattern"
+intro: "Анонсуємо Ursula, базову модель нижньої білизни з можливістю швидкого налаштування"
+title: "Анонсуємо Ursula, базову модель спідньої білизни з можливістю швидкого налаштування"
 ---
 
 
-FreeSewing 2.17 is out, and it while it comes with many fixes and improvements, the biggest news is certainly a brand new pattern: [The Ursula Undies](/designs/ursula/) by US-based designer Natalia Sayang.
+Вийшло оновлення FreeSewing 2.17, яке містить багато виправлень та покращень, найбільшою новиною, безумовно, є абсолютно нова викрійка: [Ursula Undies](/designs/ursula/) від американської дизайнерки Наталії Саянґ (Natalia Sayang).
 
-![Example of a default Ursula](https://posts.freesewing.org/uploads/example_aab890ee57.jpg)
+![Приклад Урсули за замовчуванням](https://posts.freesewing.org/uploads/example_aab890ee57.jpg)
 
-The picture above is from [this showcase post](/showcase/ursula-test-pairs/) which includes several more examples of the different styles you can accomplish with this versatile pattern.
+Зображення вище взяте з [, це демонстраційний пост](/showcase/ursula-test-pairs/) , який містить ще кілька прикладів різних стилів, які можна створити за допомогою цього універсального візерунка.
 
-Ursula is a quick make, not to mention the ultimate stash-buster. We are really excited about it.
+Урсула швидко робиться, не кажучи вже про те, що вона ідеально підходить для пошуку схованок. Ми дуже раді цьому.
 
