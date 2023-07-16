@@ -1,100 +1,74 @@
 ---
 author: "joostdecock"
-caption: "Your new login background for the month of March"
+caption: "Je nieuwe inlogachtergrond voor de maand maart"
 date: "2018-02-28"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8e0079e2521a2bf71545d736a2549180902c0d50-1980x1311.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - February 2018: Core 1.7.0 with Sven, Carlton, and Carlita improvements. Plus GDRP, vim, and Jaeger [Niet vertaald]"
+intro: "Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken en een blik op wat er de komende maand in het verschiet ligt."
+title: "Maandelijkse samenvatting - februari 2018: Core 1.7.0 met Sven, Carlton en Carlita verbeteringen. Plus GDRP, vim en Jaeger"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken en een blik op wat er de komende maand in het verschiet ligt.
 
-## Looking back at February
+## Terugblik op februari
 
-I had this secret ambition to release a new pattern every month this year. 
-It's only February and that plan seems to already have gone off the rails. 
+Ik had de geheime ambitie om dit jaar elke maand een nieuw patroon uit te brengen. Het is pas februari en dat plan lijkt nu al van de baan te zijn.
 
-Let's look at the things that did happen in February before we talk about what didn't.
+Laten we eens kijken naar de dingen die wel gebeurden in februari voordat we het hebben over wat er niet gebeurde.
 
-### Core v1.7.0 is out
+### Core v1.7.0 is uit
 
-Earlier today, I pulled the trigger on core release 1.7.0. 
-As usual, [the changelog](https://github.com/freesewing/core/blob/develop/CHANGELOG.md#170)
-has all the info, but most significant to users are 
-[the new ribbing options in the Sven pattern](/docs/patterns/sven/options#ribbing), as well as 
-a bunch of additional improvements to Carlton/Carlita. 
+Eerder vandaag heb ik de trekker overgehaald van core release 1.7.0. Zoals gebruikelijk bevat [de lijst met veranderingen](https://github.com/freesewing/core/blob/develop/CHANGELOG.md#170) alle informatie, maar het belangrijkste voor gebruikers zijn [de nieuwe ribbelopties in het Sven-patroon](/docs/patterns/sven/options#ribbing)en een heleboel extra verbeteringen aan Carlton/Carlita.
 
-Those Carlton/Carlita improvements are driven by the fact that myself and [Anneke](/showcase/maker/annekecaramin)
-have started to work on [the documentation
-for these patterns](/docs/patterns/carlton/). 
-And every time we write something like *apply fusible interfacing here*, we also go back to the pattern to
-mark exactly where this fusible needs to go.
+Deze Carlton/Carlita verbeteringen worden gedreven door het feit dat ik en [Anneke](/showcase/maker/annekecaramin) zijn begonnen met het werken aan [de documentatie voor deze patronen](/docs/patterns/carlton/). En elke keer als we iets schrijven als *hier plakvlieseline aanbrengen*, gaan we ook terug naar het patroon om precies te markeren waar dit plakvlies moet komen.
 
-Needless to say, that's a bunch of work. But it should help with the construction of these coat patterns,
-especially for those people for which this is their first time making a coat.
+Onnodig te zeggen dat dat veel werk is. Maar het zou moeten helpen bij het maken van deze vachtpatronen, vooral voor mensen voor wie dit de eerste keer is dat ze een vacht maken.
 
-### GDPR battle plan
+### GDPR strijdplan
 
-I don't want to make it sound like writing a blog post is an achievement these days, but
-I do think [our *GDRP battle plan* blog post](/blog/gdpr-plan) is worth mentioning because
-these are important developments, and the workload this generates is significant.
+Ik wil het niet laten klinken alsof het schrijven van een blogpost tegenwoordig een prestatie is, maar ik vind wel dat [ons *GDRP strijdplan* blogpost](/blog/gdpr-plan) het vermelden waard is, omdat dit belangrijke ontwikkelingen zijn en de werkdruk die dit genereert aanzienlijk is.
 
-While nothing is set in stone yet, the post outlines our plan to tackle GDRP-compliance, 
-something which we'll be focusing on in the next months.
+Hoewel er nog niets vastligt, schetst het bericht ons plan om GDRP-compliance aan te pakken, iets waar we ons de komende maanden op zullen richten.
 
 
-### Vim snippets for freesewing core
+### Vim snippets voor freesewing kern
 
-In [a blog post that is the embodiment of the term *niche*](/blog/core-vim-snippets) we announced the 
-availability of a vim plugin that provides freesewing core specific snippets.
+In [een blogpost die de belichaming is van de term *niche*](/blog/core-vim-snippets) kondigden we de beschikbaarheid aan van een vim plugin die freesewing core specifieke snippets biedt.
 
-Essentially, IF you want to develop patterns and IF you use the vim editor, these are for you.
+Het komt erop neer dat ALS je patronen wilt ontwikkelen en ALS je de vim editor gebruikt, deze voor jou zijn.
 
-Arguably, that's a lot of ifs.
+Dat zijn wel erg veel mitsen.
 
-### Jaeger sneak preview
+### Jaeger voorproefje
 
-Meet Jaeger, the sports coat pattern that I hoped to release this month.
+Maak kennis met Jaeger, het patroon voor sportjassen dat ik deze maand hoopte uit te brengen.
 
-![Jaeger is ready, but I haven't made one yet](jaeger.png")
+![Jaeger is klaar, maar ik heb er nog geen gemaakt](jaeger.png")
 
-Those of you with good memories may remember that I mentioned last month that I would
-perhaps release this during February. Although back then it still went by a different name.
+Degenen onder jullie met een goed geheugen herinneren zich misschien nog dat ik vorige maand zei dat ik misschien in februari zou uitbrengen. Hoewel het toen nog een andere naam had.
 
-As I also foreshadowed last month, I did not find the time
-to make one.
-As a matter of fact, my most problematic bottle neck in designing new patterns seems to be finding the
-time to actually make them. Which is all the more problematic with a pattern as involved as a jacket.
-Truth be told, I'm still not sure where I found the time to make that Carlton coat.
+Zoals ik vorige maand ook al voorspelde, vond ik niet de tijd om er een te maken. Eigenlijk is mijn grootste probleem bij het ontwerpen van nieuwe patronen het vinden van de tijd om ze ook echt te maken. En dat is des te problematischer bij zo'n ingewikkeld patroon als een jasje. Eerlijk gezegd weet ik nog steeds niet waar ik de tijd vandaan heb gehaald om die Carlton jas te maken.
 
-Anyway, all this to say that the pattern is ready, except that I've never made the latest version of it. 
-And I feel like I can't release it like this.
+Maar goed, dit alles om te zeggen dat het patroon klaar is, behalve dat ik nog nooit de laatste versie ervan heb gemaakt. En ik heb het gevoel dat ik het zo niet kan loslaten.
 
-So, if you'd like to make a muslin of this --- or even the real thing --- let me know in the 
-comments, and I'll make sure we'll get you a draft. 
+Dus, als je hier een mousseline van wilt maken --- of zelfs het echte werk --- laat het me weten in de comments, dan zorg ik dat je een ontwerp krijgt.
 
-That might also help moving this pattern release forward, for I already know I won't have much time
-to work on a jacket next month.
+Dat zou ook kunnen helpen om deze patroonrelease vooruit te helpen, want ik weet nu al dat ik volgende maand niet veel tijd zal hebben om aan een jasje te werken.
 
-Speaking of which...
+En nu we het er toch over hebben...
 
-## Looking ahead to March
+## Vooruitkijken naar maart
 
-I have two weeks of holiday in March (Yay!) the largest part of which I'll be in Bangkok (more Yay!).
+Ik heb twee weken vakantie in maart (Yay!) waarvan ik het grootste deel in Bangkok zal zijn (nog meer Yay!).
 
-That means I won't be doing much sewing next month, but there should be some quality time for me and my laptop,
-so I wanted to tackle one of the larger items on my mid-term todo-list.
+Dat betekent dat ik volgende maand niet veel naaiwerk zal doen, maar er moet wel wat quality time zijn voor mij en mijn laptop, dus ik wilde een van de grotere punten op mijn tussentijdse todo-list aanpakken.
 
-My initial plan was to rewrite core, you can find some details 
-[in this ticket on the matter](https://github.com/freesewing/core/issues/236)
+Mijn oorspronkelijke plan was om core te herschrijven, je kunt wat details [vinden in dit ticket over de kwestie](https://github.com/freesewing/core/issues/236)
 
-However, looking ahead at the months to come, the most pressing issue is that looming GDPR deadline in May which
-will also require a lot of work.
+Vooruitkijkend naar de komende maanden is de meest urgente kwestie echter die naderende GDPR-deadline in mei, waarvoor ook veel werk zal vereisen.
 
-So, I figured it would make more sense to tackle another thing on the todo list of lofty goals: rewrite the frontend.
+Dus dacht ik dat het zinvoller zou zijn om een ander ding op de todo-lijst van verheven doelen aan te pakken: de voorkant herschrijven.
 
-Rather than add yet another pile of jQuery code to handle all the GDPR stuff, the idea is to fork the frontend 
-and port it to [vue.js](https://vuejs.org/). For this too, [there is an open issue where you can follow its progress](https://github.com/freesewing/site/issues/311).
+In plaats van nog een berg jQuery-code toe te voegen om alle GDPR-zaken af te handelen, is het idee om de voorkant te forken en te porten naar [vue.js](https://vuejs.org/). Ook hiervoor is [een open issue waar je de voortgang kunt volgen](https://github.com/freesewing/site/issues/311).
 
-Given that I have zero experience with vue.js, this should be fun. If you'd like to help out, please leave a comment.
+Aangezien ik nul ervaring heb met vue.js, moet dit leuk worden. Als je wilt helpen, laat dan een reactie achter.
 
