@@ -3,7 +3,7 @@ author: "joostdecock"
 caption: "Nahaufnahme eines Löwenzahns vor rosa Hintergrund"
 date: "2019-12-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/83a131ff51bec913541a94356d1930aaa2c07f87-1920x1280.jpg"
-intro: "Wahnsinn! Was für ein Jahr für FreeSewing. Im August haben wir die Version 2.0 veröffentlicht, was nichts Geringeres als als ein komplettes Umschreiben unseres gesamten Technologie-Stacks bedeutet hat. Die offensichtlichste Änderung für unsere Nutzer ist, dass ihr eure Schnittmuster jetzt live im Browser angepasst sehen könnt, während ihr die Einstellungen und Optionen anpasst. Das ist eines der Dinge, von denen ich wusste, dass sie mit dem heutigen Stand der Web-Technologie möglich sein sollten, aber es tatsächlich zu sehen übersteigt irgendwie meine Vorstellungskraft."
+intro: "4109 Gründe, sich über 2019 zu freuen"
 title: "4109 Gründe, sich über 2019 zu freuen"
 ---
 
@@ -12,7 +12,7 @@ Wahnsinn! Was für ein Jahr für FreeSewing. Im August haben wir die Version 2.0
 
 ## Skalierung ist schwierig, aber wir haben beachtenswerte Fortschritte gemacht
 
-So cool wie unser neuer Technologie-Stack ist, ist es nicht die wichtigste Arbeit, die wir im letzten Jahr geleistet haben. Ja, es ist ist recht ordentlich und ja, es ist nur wegen der Arbeit am 2.0 möglich. Aber es ist die Arbeit an sich, die am wichtigsten ist. Der Hauptgrund für das Umschreiben von 2.0 war es, eine vertikale Skalierung des Projekts zu ermöglichen. Oder, um es, es ganz offen auszudrücken: Um es Freesewing zu erlauben sich dorthin zu entwickeln, wo ich es nicht alleine hintragen konnte.
+So cool wie unser neuer Technologie-Stack ist, ist es nicht die wichtigste Arbeit, die wir im letzten Jahr geleistet haben. Yes, it's pretty neat, and yes it's only possible because of the work done on 2.0. But that work itself is what matters most. Der Hauptgrund für das Umschreiben von 2.0 war es, eine vertikale Skalierung des Projekts zu ermöglichen. Oder, um es, es ganz offen auszudrücken: Um es Freesewing zu erlauben sich dorthin zu entwickeln, wo ich es nicht alleine hintragen konnte.
 
 In gewisser Weise ist das (Software-)Projekt FreeSewing erwachsen geworden. Wir haben mehrere Personen, die regelmäßig etwas beitragen, [einen aktiven Chat-Room](https://discord.freesewing.org/), [eine speziell für Entwickler gedachte Website und Dokumentation für Übersetzer](https://freesewing.dev), eine Vielzahl an [Paketen, die wir auf NPM veröffentlichen](https://www.npmjs.com/search?q=keywords:freesewing), wir haben an der benötigten Upstream-Software Bugfixes und Verbesserungen gemacht, und wir haben nun auch andere Personen und Teams, die auf unsere Pakete angewiesen sind.
 
@@ -45,7 +45,6 @@ Wir suchen auch nach Möglichkeiten, mehr Designer für FreeSewing ins Boot zu h
 Dank unserer großartigen Förderer sind die Einnahmen auch in diesem Jahr gestiegen. Wie du vielleicht weißt, spendet FreeSewing 100% der Einnahmen an Ärzte ohne Grenzen/Médecins Sans Frontières. Daher hatte ich heute Morgen die große Ehre, einen Scheck über 4109,38€ auf [MSF](https://www.msf.org/) auszustellen.
 
 Das fühlte sich **wirklich gut** an, also vielen Dank an [alle unsere Förderer](/patrons) für ihre anhaltende Unterstützung. Wenn du Teil dieser großartigen Gruppe von Menschen werden möchtest, [kannst du dies hier tun](/patrons/join).
-
 
 
 
