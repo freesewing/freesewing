@@ -13,7 +13,7 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 
 </Note>
 
-### Step 1: Mock-up Construction
+### Stap 1: Model constructie
 
 - Stik de buitennaad aan (de naad die langs de zijkant van je been loopt) van het voor- en achterpand.
 - Bevestig de binnennaad (de naad die langs de binnenkant van je broekspijp) van de voor- en achterpand.
