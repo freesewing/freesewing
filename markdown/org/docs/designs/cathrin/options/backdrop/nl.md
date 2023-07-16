@@ -1,5 +1,5 @@
 ---
-title: "Back drop"
+title: "Verlaging rug"
 ---
 
 ![De optie voor verlaging rug bij Cathrin](./backdrop.svg)
