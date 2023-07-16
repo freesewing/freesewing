@@ -7,12 +7,11 @@ intro: "Das World Wide Web untergräbt immer mehr Ihre Privatsphäre. Facebook, 
 title: "Die Entscheidungen, die ich getroffen habe, um Ihre Privatsphäre zu schützen. Oder, warum Sie keine Cookies erhalten werden."
 ---
 
-
 Das World Wide Web untergräbt immer mehr Ihre Privatsphäre. Facebook, Google und eine ganze Armada an Werbenetzwerken haben ihre Browsertabs im Blick. Tracking you on the web, keeping an an eye on the sites your visiting, so that they can gather more info on you, and sell that to advertisers.
 
 Pardon my French, but I hate that shit.
 
-> Facebook, Google, and an avalanche of ad networks out there are all keeping tabs on your browser tabs
+> Facebook, Google und eine ganze Armada an Werbenetzwerken haben ihre Browsertabs im Blick
 
 Building this site from scratch has been a great opportunity to reflect on how to do things.
 
@@ -59,5 +58,4 @@ But there's one thing that wanted to keep from analytics: the referral logs. It'
 Here too, I've implemented my own bare-bones solution. If you land on this site from an external link, we'll report that referral to our own API. Which means we still get the referral info, but no tracking.
 
 Perhaps it's just vanity, but when I'm having a bad day, those referral logs make me feel better (when it's not just Russian referral spam). I might be wrong on this one, but I would wager that a lot of people who have their own blog can relate to that.
-
 
