@@ -1,31 +1,31 @@
 ---
 author: "joostdecock"
-caption: "The pattern illustration for Penelope"
+caption: "Ілюстрація візерунка для Пенелопи"
 date: "2018-06-29"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/59646d7171bb8b18df952a1c9547cd212451de79-1920x1080.jpg"
-intro: "I'm very happy to announce the immeadiate availability of the Penelope Pencil Skirt , out in beta today."
-title: "Announcing the Penelope Pencil Skirt; And our womenswear roadmap"
+intro: "Я дуже рада повідомити про швидку доступність спідниці-олівець Пенелопи, яка сьогодні вийшла в бета-версію."
+title: "Анонс спідниці-олівець Пенелопа; і наша дорожня карта жіночого одягу"
 ---
 
-I'm very happy to announce the immeadiate availability of [the Penelope Pencil Skirt](/patterns/penelope), out in beta today.
+Я дуже рада повідомити про швидку доступність [спідниці-олівця Пенелопи](/patterns/penelope), яка сьогодні вийшла в бета-версію.
 
-![A linedrawing of Penelope](linedrawing.svg)
+![Лінійний малюнок Пенелопи](linedrawing.svg)
 
-Penelope was designed by [@woutervdub](/users/woutervdub) who also signed for [benjamin](/patterns/benjamin).
+Пенелопа була розроблена [@woutervdub](/users/woutervdub) , який також підписався на [benjamin](/patterns/benjamin).
 
-## Freesewing is not (just) for menswear
+## Фріволіте - це не (тільки) для чоловічого одягу
 
-This new foray into womenswear foreshadows our plans for the second half of this year. That's right, we're going to be making more patterns for ladies.
+Цей новий набіг на жіночий одяг провіщає наші плани на другу половину цього року. Саме так, ми будемо робити більше моделей для жінок.
 
-Freesewing has a bit of a menswear reputation, since historically we've had a lot more patterns for men than for ladies. But that doesn't mean women are second-class citizens here. It's just a side-effect of how this project was historically run by a man. Can you blame a brother for designing patterns he'd like to wear himself?
+Freesewing має певну репутацію чоловічого одягу, оскільки історично у нас було набагато більше моделей для чоловіків, ніж для жінок. Але це не означає, що жінки тут є громадянами другого сорту. Це просто побічний ефект того, що цим проектом історично керував чоловік. Чи можна звинувачувати брата в тому, що він розробляє моделі одягу, які хотів би носити сам?
 
-Today, freesewing is a communal effort, and there's plenty of ladies involved. So it only make sense to make a conscious effort to do something for our sisters. And that's exactly what we'll be doing.
+Сьогодні фріспівінг - це спільна справа, і до нього долучилося багато жінок. Тому є сенс докладати свідомих зусиль, щоб зробити щось для наших сестер. І саме цим ми будемо займатися.
 
-We've got another pattern in the pipeline that is not only for women, but also by a woman. By [@AlfaLyr](/users/alfalyr) in particular, who has designed a circle skirt pattern that is going to land here real soon.
+У нас є ще одна модель у розробці, яка не тільки для жінок, але й створена жінкою. Зокрема, [@AlfaLyr](/users/alfalyr) , яка розробила викрійку спідниці по колу, що незабаром з'явиться тут.
 
-In parallel, I'll be working with [@AnnekeCaramin](/users/annekecaramin) on a female equivalent for [Brian](/patterns/brian), our basic body block on which many of our patterns are based. The idea is to make a quality bodice block for ladies that is made-to-measure and can handle the common fitting issues automatically. I'm talking about full bust adjustment, sway back, these kind of things.
+Паралельно я працюватиму з [@AnnekeCaramin](/users/annekecaramin) над жіночим еквівалентом для [Брайана](/patterns/brian), нашого базового блоку тіла, на якому базується багато наших моделей. Ідея полягає в тому, щоб зробити якісний блок ліфа для жінок, який виготовляється за індивідуальними розмірами, а може автоматично впоратися з поширеними проблемами з припасуванням. Я маю на увазі повне регулювання бюста, відкидання назад і тому подібні речі.
 
-Once we have that block, expect us to spin it into a bunch of dresses and tops.
+Як тільки ми отримаємо цей блок, чекайте, що ми перетворимо його на купу суконь і топів.
 
-And as always, if you have pattern design skills but are a bit intimidated by the platform, reach out to us to see if we can join forces to make your ideas a reality.
+І як завжди, якщо ви маєте навички дизайну патернів, але вас трохи лякає платформа, напишіть нам , щоб дізнатися, чи зможемо ми об'єднати зусилля, щоб втілити ваші ідеї в реальність.
 
