@@ -1,6 +1,6 @@
-- - -
-title: "Crotch seam angle"
-- - -
+---
+title: "Kruisnaad hoek"
+---
 
 Controls the angle of the crotch seam curve.
 
