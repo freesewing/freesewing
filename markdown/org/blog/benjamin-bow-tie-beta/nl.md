@@ -7,11 +7,11 @@ intro: "Onze familie van FreeSewing-patronen is opnieuw gegroeid. En de benjamin
 title: "Het patroon voor de Benjamin-vlinderdas is nu beschikbaar in beta. En ik heb er zelfs niets voor moeten doen."
 ---
 
-Our family of freesewing patterns has grown once again, and the benjamin of the family is... [Benjamin](/designs/benjamin).
+Onze familie van freeswingpatronen is weer gegroeid, en de Benjamin van de familie is... [Benjamin](/designs/benjamin).
 
 Benjamin is een vlinderdas met een aantal opties om zowat elk aspect van jouw vlinderdas aan te passen.
 
-Je kan kiezen voor een vlinderdas op maat, of je kan Benjamin schetsen met een aanpasbaar lint voor een meer flexibele pasvorm. Something that makes this a great handmade gift for the upcoming holiday season.
+Je kan kiezen voor een vlinderdas op maat, of je kan Benjamin schetsen met een aanpasbaar lint voor een meer flexibele pasvorm. Iets waardoor dit een geweldig handgemaakt cadeau is voor de komende feestdagen.
 
 ## Benjamin is bijzonderder dan je denkt
 
