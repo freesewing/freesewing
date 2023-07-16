@@ -1,66 +1,66 @@
 ---
 author: "joostdecock"
-caption: "This release brought to you from Bangkok"
+caption: "Цей реліз ми привезли з Бангкока"
 date: "2018-03-21"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/34ed654dcda9004e7c249b90256ad197469cc87e-1920x1277.webp"
-intro: "We've just pushed the  button on core 1.8.0. That bump in minor number is typically because we have a new pattern, but in this case, there's two reasons:"
-title: "Freesewing core 1.8: Jaeger Jacket is in, across back measurement is out"
+intro: "Ми щойно натиснули кнопку на ядрі 1.8.0. Зазвичай такий стрибок у меншій кількості відбувається через те, що у нас з'явився новий шаблон, але в цьому випадку на це є дві причини:"
+title: "Серцевина фриволіте 1.8: Жакет \"Єгер\" входить, виворітний вимір по спинці виходить"
 ---
 
 
-We've just pushed the *release* button on core 1.8.0. That bump in minor number is typically because we have a new pattern, but in this case, there's two reasons:
+Ми щойно натиснули кнопку *release* в ядрі 1.8.0. Зазвичай такий стрибок у меншій кількості відбувається через те, що у нас з'явився новий шаблон, але в цьому випадку на це є дві причини:
 
- - The [Jaeger Jacket](/patterns/jaeger) is now available
- - We've gotten rid of the *across back* measurement
+ - Єгерська куртка [](/patterns/jaeger) вже доступна
+ - Ми позбулися виміру *поперек спинки*
 
-Read on for the details.
+Читайте далі, щоб дізнатися подробиці.
 
-## Announcing the Jaeger Jacket
+## Анонс куртки "Єгер
 
-For [my refasioners entry last year](/blog/the-refashioners-2017/) I designed a jacket pattern that I intially wanted to release alongside my make. It didn't work out that way, and I asked for a bit more time to get the pattern out the door.
+Для [моєї минулорічної публікації](/blog/the-refashioners-2017/) я розробила модель куртки, яку хотіла випустити разом з моїм брендом. Це не спрацювало, і я попросила ще трохи часу, щоб винести візерунок за двері.
 
-Turns out that when I say *a bit more time* it means 6 and a half months, so please forgive me for the delay, but here it is, [the Jaeger Jacket](/designs/jaeger).
+Виявляється, коли я кажу *ще трохи часу* , то маю на увазі 6 з половиною місяців, тому прошу вибачити за затримку, але ось вона, [єгерська куртка](/designs/jaeger).
 
-![Note that in my post back then, I was talking about the Blake Blazer, but I've since renamed it because Jaeger Jacket is just cooler](https://posts.freesewing.org/uploads/jaeger_1cb91a3cd3.jpg)
-
-
-
-### Jaeger Sport Coat is not an alliteration
-
-Jaeger is a sport coat style of jacket. As in, a single-breasted jacket with a 2-button closure, and patch pockets.
-
-In other words, this is a garment that's typically worn on jeans or other trousers, and not as part of a suit.
-
-### Options galore
-
-Jaeger comes with 38 options, so you can change *a lot* about this pattern.
-
-No need to worry though, it also comes with sensible defaults, so you can just as well ignore all those choices.
-
-## The across back measurement is no more
-
-Speaking of sensible defaults, Jaeger is not the only new thing in freesewing core 1.8.0, which is out today.
-
-We've also gotten rid of the *across back* measurement.
-
-The across back measurement was cause of a great deal of confusion among our users. More often than not, when someone contacted us because their pattern looked wonky, an unrealistic across back measurement was to blame.
-
-The roots of the across back measurement go back to a time when, instead of the *shoulder to shoulder* measurement we use now, we had the *shoulder length* measurement. That one was also source of some confusion, so we phased it out in favour of the *shoulder to shoulder* measurement.
-
-The thing is that if we know the *shoulder to shoulder* measurement, we can guestimate with reasonable accuracy what the *across back* measurement will be. So, instead of asking you for it, we simply assume now.
-
-### But you're dumbing down the pattern
-
-In case the *this pattern comes with 38 options* bit above wasn't enough of a giveaway, we're pretty committed here at freesewing to give you all the knobs to tweak your drafts.
-
-Replacing a measurement with a value calculated based on another measurement may seem to go against that, but there's no need to worry. We've made sure you can still muck about with your across back.
-
-Patterns that used to require the *across back* measurement now have a new advanced option: the *across back factor*. It allows you to tweak how we calculate your across back measurement, but does make sure to keep it within boundaries that are sensible.
-
-![The across back factor option](https://posts.freesewing.org/uploads/acrossback_60791a4392.png)
+![Зверніть увагу, що в моєму пості тоді я говорив про блейзер Blake Blazer, але з тих пір я перейменував його, тому що Jaeger Jacket просто крутіший](https://posts.freesewing.org/uploads/jaeger_1cb91a3cd3.jpg)
 
 
-As such, we feel we're preventing mistakes for the casual user, without taking away power from you, the pattern option guru.
 
-Or to put it differently, you can still muck about with your across back, but by default, you don't have to worry about it anymore.
+### Спортивне пальто Jaeger - це не алітерація
+
+Jaeger - це спортивний стиль куртки. Це однобортний піджак із застібкою на 2 ґудзики та накладними кишенями.
+
+Іншими словами, це одяг, який зазвичай носять з джинсами або іншими штанами, а не як частину костюма.
+
+### Безліч варіантів
+
+Jaeger поставляється з 38 варіантами, тому ви можете змінити *багато* цього шаблону.
+
+Не хвилюйтеся, він також постачається з розумними налаштуваннями за замовчуванням, тож ви можете проігнорувати всі ці варіанти.
+
+## Поперечний розмір спинки не більше
+
+Говорячи про розумні налаштування за замовчуванням, Jaeger - не єдина новинка в ядрі freesewing 1.8.0, яке вийшло сьогодні.
+
+Ми також позбулися виміру *поперек спини* .
+
+Поперечний обхват спини викликав велику плутанину серед наших користувачів. Найчастіше, коли хтось звертався до нас через те, що їхня модель виглядала хиткою, виною тому були нереалістичні поперечні виміри спинки.
+
+Коріння поперечного виміру спини сягає корінням у часи, коли замість використовуваного зараз виміру *від плеча до плеча* ми мали вимір *довжини плеча* . Цей показник також викликав певну плутанину, тому ми поступово відмовилися від нього на користь вимірювання *плече до плеча* .
+
+Справа в тому, що якщо ми знаємо розмір *від плеча до плеча* , ми можемо з достатньою точністю припустити, яким буде розмір *впоперек спини* . Тому, замість того, щоб просити вас про це, ми просто припускаємо зараз.
+
+### Але ви затуплюєте шаблон.
+
+Якщо *цього шаблону з 38 варіантами* вище було недостатньо, ми на freesewing надаємо вам всі можливості для налаштування ваших проектів.
+
+Заміна виміру значенням, розрахованим на основі іншого виміру, може здатися, що це суперечить цьому принципу, але не варто хвилюватися. Ми подбали про те, щоб ви могли спокійно ходити з поперечною спинкою.
+
+Викрійки, які раніше вимагали вимірювання *по спинці* , тепер мають нову розширену опцію: коефіцієнт *по спинці*. Ви можете налаштувати спосіб розрахунку обхвату спини, але при цьому переконайтеся, що він не виходить за рамки розумного.
+
+![Опція поперечного коефіцієнта спинки](https://posts.freesewing.org/uploads/acrossback_60791a4392.png)
+
+
+Таким чином, ми вважаємо, що запобігаємо помилкам звичайних користувачів, не відбираючи владу у вас, гуру шаблонних опцій.
+
+Інакше кажучи, ви все ще можете бавитися з поперечною спинкою, але за замовчуванням вам більше не доведеться про це турбуватися.
 
