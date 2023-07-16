@@ -1,5 +1,5 @@
 ---
-title: "Gathering"
+title: "Fruncido"
 ---
 
 ![Fruncido](gathering.svg)
