@@ -1,5 +1,5 @@
 ---
-title: "Shoulder slope reduction"
+title: "Reductie schouderhelling"
 ---
 
 Dit patroon past zich aan aan de schouder af door rekening te houden met de hellingsmeting van de schouder.
