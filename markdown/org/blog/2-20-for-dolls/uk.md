@@ -1,22 +1,22 @@
 ---
 author: "joostdecock"
-caption: "Photo by Anna Doschechko [via Pexels]"
+caption: "Фото: Анна Дощечко [via Pexels]."
 date: "2022-01-24"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9c6157f73a050c291cf5441d08c3a74db6670aee-1920x1280.jpg"
-intro: "FreeSewing 2.20: Would you like it smaller?"
-title: "FreeSewing 2.20: Would you like it smaller?"
+intro: "FreeSewing 2.20: Хочете, щоб він був меншим?"
+title: "FreeSewing 2.20: Хочете, щоб він був меншим?"
 ---
 
-I'm happy to announce that we've released FreeSewing 2.20, which comes with a feature request that was on our roadmap: Better support for doll clothes. We have some passionate doll enthusiasts in our community which make sense when you consider that our patterns adapt seamlessly to all sorts of measurements, including those of dolls.
+Я рада повідомити, що ми випустили FreeSewing 2.20, в якому реалізовано функцію, яка була в нашій дорожній карті: Краща підтримка одягу для ляльок. У нашій спільноті є пристрасні ентузіасти ляльок, і це цілком зрозуміло, якщо врахувати, що наші викрійки легко адаптуються до всіх видів вимірів, у тому числі й до лялькових.
 
-But there's another issue that comes up when generating these tiny patterns, that is that while the pattern itself adapts to the doll measurements, things like font sizes and arrows and logos do not. That causes doll patterns to look like a chaotic mess as the things that are typically taking up just a bit of space tend to overwhelm the actual pattern:
+Але є ще одна проблема, яка виникає при створенні цих крихітних викрійок: якщо сама викрійка адаптується до розмірів ляльки, то такі речі, як розмір шрифту, стрілки та логотипи, не підлаштовуються під неї. Це призводить до того, що викрійки ляльок виглядають як хаотичний безлад, оскільки речі, які зазвичай займають зовсім небагато місця, перевантажують власне викрійку:
 
-![Image showing a doll pattern with snippets and text obfuscating the pattern](https://posts.freesewing.org/uploads/pres_scale_de0edf2cd7.png "This is Aaron for a 1/10 size doll in 2.19. Not great")
+![Зображення із зображенням викрійки ляльки з фрагментами та текстом, що затушовують викрійку](https://posts.freesewing.org/uploads/pres_scale_de0edf2cd7.png "Це Аарон для ляльки розміром 1/10 у 2.19. Не дуже.")
 
-![Image showing a doll pattern with snippets and text scaled down](https://posts.freesewing.org/uploads/post_scale_5a422f8c73.png "This is the same Aaron in 2.20. As you can see, it's much better")
+![Зображення, що демонструє викрійку ляльки зі зменшеними фрагментами та текстом](https://posts.freesewing.org/uploads/post_scale_5a422f8c73.png "Це той самий Аарон з 2.20. Як бачите, це набагато краще")
 
-To make this happen, we've added [a new scale setting](/docs/guide/options/scale) that you can find under *Advanced* after enabling *Expert mode*. We hope those of you making doll clothes will find this useful, and as always [we look forward to hearing your feedback](https://discord.freesewing.org/).
+Для цього ми додали [нове налаштування шкали](/docs/guide/options/scale) , яке можна знайти в розділі *Додатково* після ввімкнення *Експертного режиму*. Ми сподіваємося, що ті з вас, хто виготовляє ляльковий одяг, знайдуть це корисним, і, як завжди [, ми з нетерпінням чекаємо на ваші відгуки](https://discord.freesewing.org/).
 
-## More in this release
+## Більше в цьому випуску
 
-2.20 also packs a bunch of changes and improvements, check the [changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md#2200-2022-01-24) for the full list.
+2.20 також містить низку змін та покращень, повний список яких можна знайти у журналі змін [та](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md#2200-2022-01-24) .
