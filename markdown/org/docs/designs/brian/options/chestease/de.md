@@ -1,5 +1,5 @@
 ---
-title: "Bequemlichkeitszugabe Brust"
+title: "Brustumfangszugabe"
 ---
 
 ![Der Brust Leichtigkeit Faktor auf Brian](./chestease.svg)
