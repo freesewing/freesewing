@@ -1,5 +1,5 @@
 ---
-title: "Side/Front placement"
+title: "Voor/Zijkant plaatsing"
 ---
 
 ![Zij- voorpand plaatsing](sidefrontplacement.svg)
