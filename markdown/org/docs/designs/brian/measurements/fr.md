@@ -1,5 +1,5 @@
 ---
-title: "Bloc de corps de Brian : Mesures requises"
+title: "Brian body block: Required Measurements"
 ---
 
 <PatternMeasurements pattern='brian' />
