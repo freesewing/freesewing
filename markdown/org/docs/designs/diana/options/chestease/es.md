@@ -1,5 +1,5 @@
 ---
-title: "Chest ease"
+title: "Holgura de pecho"
 ---
 
 ![La opción de holgura de pecho en Diana](./chestease.svg)
