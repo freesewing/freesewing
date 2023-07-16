@@ -1,129 +1,129 @@
 ---
 author: "joostdecock"
-caption: "We are building a bedrock of loyal supporters to ensure a sustainable future for freesewing.org, our code, our patterns, and our community."
+caption: "Ми будуємо фундамент з відданих прихильників, щоб забезпечити стійке майбутнє freesewing.org, нашого коду, наших шаблонів і нашої спільноти."
 date: "2017-12-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/84e39d762790744f10fe17bcb971f99e98550299-2000x1334.jpg"
-intro: "Calling all Patrons; Join our bedrock of loyal supporters."
-title: "Calling all Patrons; Join our bedrock of loyal supporters."
+intro: "Звертаємось до всіх меценатів: приєднуйтесь до нашої опори вірних прихильників."
+title: "Звертаємось до всіх меценатів: приєднуйтесь до нашої опори вірних прихильників."
 ---
 
-Every year, on this day, I write about what happened in the previous 12 months, and look ahead at what you can expect in the year ahead.
+Щороку в цей день я пишу про те, що сталося за попередні 12 місяців, і заглядаю наперед, що можна очікувати в наступному році.
 
-This year is no different, but boy do I have a lot to talk about.
+Цей рік нічим не відрізняється, але мені є про що поговорити.
 
-## 2017: the year freesewing was born
+## 2017: рік народження фрісліфтингу
 
-While freesewing was conceived in 2016 -- that's when I started working on it -- 2017 was the year it saw the light of day.
+Хоча фріспівінг був задуманий у 2016 році - саме тоді я почав над ним працювати - 2017 рік став роком, коли він побачив світ.
 
-Freesewing core v1.0.0 [was released in March this year](/blog/announcing-freesewing/). For most people, that event passed under the radar. An open source platform for made-to-measure sewing patterns? What does this thing actually do?
+Freesewing core v1.0.0 [було випущено в березні цього року](/blog/announcing-freesewing/). Для більшості людей ця подія пройшла непоміченою. Платформа з відкритим вихідним кодом для викрійок одягу за індивідуальним замовленням? Що ця штука насправді робить?
 
-A lot, as it turns out. Something that's become more obvious since [the release of freesewing.org](/blog/open-for-business/) at the end of August.
+Дуже багато, як виявилося. Це стало більш очевидним після того, як наприкінці серпня [вийшов сайт freesewing.org](/blog/open-for-business/) .
 
-![Image from the original announcement blog post](https://posts.freesewing.org/uploads/open_e799153fa2.jpg)
+![Зображення з оригінального допису в блозі, присвяченому анонсу](https://posts.freesewing.org/uploads/open_e799153fa2.jpg)
 
-On Christmas day, it will (only) have been four months since this release. Yet in that time, we've signed up **2735 users** for whom we host **1522 drafts**, and **2359 models**.
+На Різдво виповниться (лише) чотири місяці з моменту цього релізу. Проте за цей час ми зареєстрували **2735 користувачів** , для яких ми розміщуємо **1522 проекти**та **2359 моделей**.
 
-We launched with 11 patterns, and have since added 4, bringing the current total to 15. Half of those new patterns are a community effort, which is particularly promising.
+Ми розпочали з 11 шаблонів, і з тих пір додали ще 4, , таким чином, наразі їх загальна кількість становить 15. Половина з цих нових шаблонів є результатом зусиль спільноти, особливо багатообіцяючим з яких є .
 
-Yes, it's still early days. But I think it's safe to say that the decision to reinvent makemypattern.com as an open source project was the right call.
+Так, це ще тільки початок. Але я думаю, що можна з упевненістю сказати, що рішення відновити makemypattern.com як проект з відкритим вихідним кодом було правильним.
 
-Speaking of which.
+До речі, про це.
 
-## MakeMyPattern.com is no more
-Shortly before publishing this blog post, I've pulled the plug on [makemypattern.com](https://makemypattern.com/).
+## MakeMyPattern.com більше не існує
+Незадовго до публікації цієї статті в блозі я закрив [makemypattern.com](https://makemypattern.com/).
 
-You can try to visit that link, but you'll only end up back here.
+Ви можете спробувати перейти за цим посиланням, але ви потрапите лише сюди.
 
-MakeMyPattern.com saw the light of day in 2012. It went through a number of iterations since, and today is finally superseded by freesewing.org.
+MakeMyPattern.com побачив світ у 2012 році. З тих пір він пройшов кілька ітерацій, і сьогодні нарешті був замінений сайтом freesewing.org.
 
-![Was it an M? A book? A bird? Boobs? We may never know](https://posts.freesewing.org/uploads/mmp_27886c8346.png)
+![Це була буква "М"? Книжка? Птах? Цицки? Ми можемо ніколи не дізнатися.](https://posts.freesewing.org/uploads/mmp_27886c8346.png)
 
-We had a good run, and I feel that for any project, it's a good way to go when you get cannibalized by something better that you inspired.
+У нас був хороший запуск, і я відчуваю, що для будь-якого проекту це хороший спосіб піти , коли тебе поглинає щось краще, на що ти надихнувся.
 
-## Let's talk money
-Like every year on this day, I've transferred all donations into the account of [Médecins Sans Frontières/Doctors Without Borders](http://www.msf.org/).
+## Поговоримо про гроші
+Як і щороку в цей день, я перерахувала всі пожертви на рахунок організації ["Лікарі без кордонів"](http://www.msf.org/).
 
-This year we came in at **673.14€**, so that's what I've transferred.
+Цього року ми отримали **673.14€**, тому я перерахував саме цю суму.
 
-> Why should we give you money in the first place if you're just going to give it away?
+> Навіщо нам взагалі давати вам гроші на , якщо ви збираєтеся їх просто віддати?
 
-I've also come to understand that people have a bunch of questions about this. Like *Why are you doing this?* and *Why should we give you money in the first place if you're just going to give it away?*
+Я також зрозумів, що люди мають багато запитань з цього приводу. Наприклад, *Навіщо ви це робите?* і *Чому ми повинні давати вам гроші в першу чергу, якщо ви збираєтеся їх просто роздавати?*
 
-These questions have led to some soul-searching recently. What I've learned is that it's not easy to talk about money. Nor is it easy to put in words things that you know to be right, almost instinctively.
+Ці питання нещодавно призвели до певних душевних пошуків. Я зрозуміла, що говорити про гроші нелегко. Також не легко висловити словами те, що ти знаєш, що це правильно, майже інстинктивно.
 
-But I wanted to be completely transparent about what's going on, so I made the effort to write about these things on [our pledge page](/about/pledge). And I'm copying them here verbatim:
+Але я хотів бути повністю прозорим щодо того, що відбувається, тому я доклав зусиль, щоб написати про ці речі на [нашій сторінці збору коштів](/about/pledge). І я копіюю їх тут дослівно:
 
-> ##### Noblesse oblige
+> ##### Благородство зобов'язує
 > 
-> Ви, напевно, припускаєте, що ми просимо гроші, щоб підтримувати роботу серверів. But that’s not exactly true.
+> Ви, напевно, припускаєте, що ми просимо гроші, щоб підтримувати роботу серверів. Але це не зовсім так.
 > 
-> I don’t know if you’re familiar with the phrase *noblesse oblige* but it essentially means that privilege entails responsibility.
+> Не знаю, чи знайомі ви з фразою *noblesse oblige* , але вона по суті означає, що привілеї тягнуть за собою відповідальність.
 > 
-> Я маю привілеї, а отже, маю відповідальність. I am very fortunate to have been born in Western Europe, have a good job, and a roof over my head.
+> Я маю привілеї, а отже, маю відповідальність. Мені дуже пощастило, що я народився в Західній Європі, маю хорошу роботу і дах над головою.
 > 
-> Чи можу я скористатися грошима? Yes I could.  
-> Do I need the money? No I don’t.
+> Чи можу я скористатися грошима? Так, можу.  
+> Мені потрібні гроші? Ні, не знаю.
 > 
 > ##### Цінність вашої підтримки
 > 
-> The main risk to Freesewing is the same as any open source project out there: maintainer burnout.
+> Основний ризик для Freesewing такий самий, як і для будь-якого проекту з відкритим вихідним кодом: вигорання супровідника.
 > 
-> While I no longer carry Freesewing alone — and I can’t stress enough how much I value the work of all contributors — that doesn’t make me immune to feelings of *Why the fuck am I doing this?*
+> Хоча я більше не веду Freesewing самотужки - і я не можу підкреслити, наскільки я ціную роботу всіх учасників, - це не робить мене застрахованим від почуття *Якого хріна я це роблю?*
 > 
-> When people become Patrons (or donate), they give more than money. To me, the main value is the message they send to me and other people working on this. And that message is: *Hey, you’re doing a worthwhile thing. Продовжуйте в тому ж дусі*.
+> Коли люди стають меценатами (або жертвують), вони дають більше, ніж гроші. Для мене головна цінність - це повідомлення, яке вони надсилають мені та іншим людям, які працюють над цим. І це послання таке: *"Гей, ти робиш корисну справу. Продовжуйте в тому ж дусі*.
 > 
 > ##### Цінність ваших грошей
 > 
-> It is not just about the money. But that doesn’t mean the money is not important. Швидше навпаки.
+> Справа не лише в грошах. Але це не означає, що гроші не важливі. Швидше навпаки.
 > 
 > Заробляючи гроші, займаючись улюбленою справою, а потім передаючи їх на благодійність, я можу спокійно спати вночі.
 > 
-> I could volunteer at a soup kitchen, or teach underprivileged children how to sew. But instead I’m working on Freesewing.
+> Я могла б працювати волонтером у благодійній їдальні або навчати дітей з малозабезпечених сімей шиттю. Але замість цього я працюю над Freesewing.
 > 
-> Which is why all the money raised through freesewing goes to charity. Це робить проект не тільки цікавим, але й соціально відповідальним. And I need that to convince myself that yes, it’s OK to spend all my time doing this, because at the end of the year, I get to write a check to people who need it so much more.
+> Саме тому всі гроші, зібрані за допомогою фрісліфтингу, йдуть на благодійність. Це робить проект не тільки цікавим, але й соціально відповідальним. І мені це потрібно, щоб переконати себе, що так, це нормально - витрачати весь свій час на це, тому що в кінці року я можу виписати чек людям, які потребують цього набагато більше.
 > 
 > ##### Благодійність - це не сексуально
 > 
-> Here’s the tricky part: People donate less once they know the money goes to charity in the end. I wish it wasn’t the case, but it is.
+> Ось у чому складність: Люди жертвують менше, коли знають, що гроші зрештою підуть на благодійність. Хотілося б, щоб це було не так, але це так.
 > 
-> So I’m not explicitly mentioning it on our Patrons page, which is presented like you would see on a business site.
+> Тому я не згадую про це прямо на нашій сторінці "Меценати", яка представлена так, як ви могли б побачити на бізнес-сайті.
 > 
-> Yes, everything is free, and the money doesn’t actually go to paying the server bills (because I choose to pay them out of my pocket for reasons outlined above). But that doesn’t mean that these contributions are not crucial to the well-being of the project, or at the very least its maintainer (that would be me).
+> Так, все безкоштовно, і гроші насправді не йдуть на оплату рахунків за сервер (тому що я вирішив оплачувати їх з власної кишені з причин, описаних вище). Але це не означає, що ці внески не мають вирішального значення для благополуччя проекту або, принаймні, його супровідника (тобто мене).
 
-Did you notice that in the text above I mentioned our Patrons page? That is because I've rolled out a bunch of changes today.
+Ви помітили, що в тексті вище я згадував нашу сторінку "Меценати"? Це тому, що сьогодні я впровадив низку змін.
 
-Having taken the time to reflect on the money side of things, I've realized that it's an important factor in the well-being of this project. I also believe that donations -- while motivating and appreciated -- are not the best way to go about this.
+Витративши час на роздуми про грошовий бік справи, я зрозумів , що це важливий фактор для процвітання цього проекту. Я також вважаю, що пожертви - хоча вони мотивують і цінуються - не є найкращим способом досягнення цієї мети.
 
-So, as of today, we are calling all Patrons.
+Тож від сьогодні ми закликаємо всіх меценатів.
 
-## Become a Patron of Freesewing
+## Стати меценатом Freesewing
 
-To ensure a sustainable future for freesewing.org, our code, our patterns, and our community, we need to build a bedrock of loyal supporters.  
-Patrons who support us in our core work; Developing an open source platform for made-to-measure sewing patterns.
+Щоб забезпечити стійке майбутнє freesewing.org, нашого коду, наших викрійок і нашої спільноти , нам потрібно побудувати міцний фундамент з відданих прихильників.  
+Меценатів, які підтримують нас у нашій основній роботі; розробці платформи з відкритим вихідним кодом для викрійок для пошиття одягу на замовлення.
 
-![We have three tiers of Patronage](https://posts.freesewing.org/uploads/patron_medals_2160e69d77.jpg)
+![Ми маємо три рівні меценатства](https://posts.freesewing.org/uploads/patron_medals_2160e69d77.jpg)
 
-We have different tiers of Patronage, each with their own perks. You can support us for as little as 2€, and it only takes a minute.
+У нас є різні рівні меценатства, кожен з яких має свої переваги. Ви можете підтримати нас за всього лише 2 євро, і це займе лише хвилину.
 
-> We are not changing the nature of the site. All patterns, and all our code, will remain free.
+> Ми не змінюємо характер сайту. Всі патерни і весь наш код залишаться безкоштовними.
 
-We are not changing the nature of the site. All patterns, and all our code, will remain free. What we are changing is the way we raise funds. From a system of impulsive donations to a community of caring Patrons. If you are someone who cares, then [check out what we have to offer](/patrons/join).
+Ми не змінюємо характер сайту. Всі патерни і весь наш код залишаться безкоштовними. Що ми змінюємо, так це спосіб, у який ми збираємо кошти. Від системи імпульсивних пожертв до спільноти небайдужих Меценатів. Якщо вам не байдуже, то [подивіться, що ми можемо запропонувати](/patrons/join).
 
-I sincerely believe we are doing a worthwhile thing here. If you feel that way too, then I ask you to pledge whatever you can so that we can write many more chapters in this book.
+Я щиро вірю, що ми робимо корисну справу. Якщо ви теж так вважаєте, , то я прошу вас пожертвувати все, що ви можете, щоб ми могли написати ще багато розділів у цій книзі.
 
-> ### Become a Patron today
+> ### Станьте Меценатом вже сьогодні
 > 
-> #### You can sign up for as little as 2€, and it only takes a minute.
+> #### Ви можете зареєструватися всього за 2 євро, і це займе всього хвилину.
 > 
-> [Find out more](/patrons/join)
+> [Дізнайтеся більше](/patrons/join)
 
-Thank you, and have a great year.
+Дякую, і гарного вам року.
 
 Йост
 
-<small>PS: It would be a shame if there's people out there willing to support us who don't know about this. So perhaps you could share [this image](patrons-ig.png) on social media? <i class="fa fa-arrow-down" aria-hidden="true"></i></small>
+<small>PS: Було б прикро, якби люди, які хотіли б нас підтримати, не знали про це. Тож, можливо, ви могли б поділитися [цим зображенням](patrons-ig.png) у соціальних мережах? <i class="fa fa-arrow-down" aria-hidden="true"></i></small>
 
-![Sharing is caring!](https://posts.freesewing.org/uploads/patrons_ig_45e11fe270.png)
+![Ділитися - значить піклуватися!](https://posts.freesewing.org/uploads/patrons_ig_45e11fe270.png)
 
 
 
