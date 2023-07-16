@@ -1,33 +1,33 @@
 ---
 author: "joostdecock"
-caption: "Quentin surrounded by our future robot overlords."
+caption: "Квентін в оточенні наших майбутніх роботів-начальників."
 date: "2017-12-06"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ee5c11e3b29fe788dae470ab0e20396d806c4d1b-2000x1333.jpg"
-intro: "The Florent Flat Cap pattern is now available in beta. That's another gift sorted."
-title: "The Florent Flat Cap pattern is now available in beta. That's another gift sorted."
+intro: "Шаблон Florent Flat Cap тепер доступний у бета-версії. Ще один подарунок відсортований."
+title: "Шаблон Florent Flat Cap тепер доступний у бета-версії. Ще один подарунок відсортований."
 ---
 
-After last month's release of [Benjamin](/patterns/benjamin), here's another pattern release to channel the dapper gentleman within: the [Florent Flat Cap](/patterns/florent).
+Після випуску минулого місяця [Benjamin](/patterns/benjamin), ось ще один візерунок , який підкреслить елегантність джентльмена: [Florent Flat Cap](/patterns/florent).
 
-Like Benjamin, this pattern was contributed by the freesewing community, rather than yours truly. In this case, it was [Quentin Felix](/users/ptzcb) who signed for the design.
+Як і у випадку з Бенджаміном, цей шаблон був створений спільнотою фріскейтерів, а не , покірно слухняним вам. У цьому випадку за дизайн відповідав [Квентін Фелікс](/users/ptzcb) .
 
-I asked Quentin if he wanted to write this announcement blog post himself, but he argued that it was time I did something too. He did have this to share though, on his reasons for designing this pattern in the first place:
+Я запитав Квентіна, чи не хоче він сам написати цей пост в блозі , але він сказав, що настав час і мені щось зробити. Він поділився ось цим про причини, з яких він розробив цей шаблон в першу чергу:
 
-> ##### Quentin on his reasons for designing Florent
+> ##### Квентін про причини створення Florent
 > 
-> I like wearing flat caps myself. I didn't use to, but I have a friend Florent who inspired me to wear them (now you know where the name comes from).
+> Я сам люблю носити плоскі кепки. Раніше не носив, але у мене є друг Флоран, який надихнув мене носити їх (тепер ви знаєте, звідки походить ця назва).
 > 
-> The first time I made a flat cap, it took me ages to scale the pattern to an exact fit, involving a lot of messing about with tracing paper. There's a number of patterns available online for flat caps. But they all come in one size only. 
+> Коли я вперше робив пласку кепку, мені знадобилася ціла вічність, щоб масштабувати викрійку до точного розміру, що включало в себе багато роботи з копіюванням паперу. В інтернеті можна знайти безліч викрійок для пласких кепок. Але всі вони випускаються лише в одному розмірі. 
 > 
-> I wanted to make this more accessible to people. And, while I was at it, I also drew on my experience to add some tweaks for a better fit. 
+> Я хотів зробити це більш доступним для людей. І, поки я працював над цим , я також спирався на свій досвід, щоб додати деякі зміни для кращого пристосування. 
 > 
-> For example, this design extends lower at the back of the head, which gives it better hold.
+> Наприклад, цей дизайн розширюється нижче на потилиці, що забезпечує кращу фіксацію.
 
-This *why should we always have to re-invent the wheel?* could pretty much be freesewing's slogan.
+Це *чому ми завжди повинні винаходити велосипед?* може бути гаслом фрісліфтингу.
 
-## It's the season for giving
+## Зараз час дарувати
 
-Florent requires only one measurement: the head circumference. As such, this release is perfectly timed. With the holiday season coming up, here's another gift you can make yourself.
+Флоран потребує лише одного виміру: обхват голови. Таким чином, цей реліз є дуже своєчасним. З наближенням святкового сезону, ось ще один подарунок, який ви можете зробити самі.
 
-Thanks Quentin!
+Дякую, Квентін!
 
