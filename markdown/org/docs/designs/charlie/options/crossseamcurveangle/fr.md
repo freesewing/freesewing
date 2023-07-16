@@ -1,5 +1,5 @@
 ---
-title: "Cross seam angle"
+title: "Angle de couture croisée"
 ---
 
 Controls the angle of cross seam curve.
@@ -9,4 +9,4 @@ Controls the angle of cross seam curve.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_crossseamcurveangle_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_crossseamcurveangle_sample.svg "Effet de cette option sur le motif")
