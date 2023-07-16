@@ -1,10 +1,10 @@
-- - -
-title: "Weitenzugabe Hüfte"
-- - -
+---
+title: "Zugabe Hüfte"
+---
 
 ![Zugabe Hüfte](hipsease.svg)
 
-Wie viel Platz möchten Sie an den Hüften?
+Wie viel Weite brauchst du an der Hüfte?
 
 ## Effekt dieser Option auf das Schnittmuster
 
