@@ -1,5 +1,5 @@
 ---
-title: "Shoulder slope reduction"
+title: "Reducción de caída del hombro"
 ---
 
 Este patrón se adapta al hombro inclinado teniendo en cuenta la inclinación del hombro.
