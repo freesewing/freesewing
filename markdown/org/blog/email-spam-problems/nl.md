@@ -1,138 +1,115 @@
 ---
 author: "joostdecock"
-caption: "Would you close a lane because one driver was playing their music too loud?"
+caption: "Zou je een rijstrook afsluiten omdat een bestuurder zijn muziek te hard afspeelt?"
 date: "2017-09-07"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/923cd5587c873d2662df4a804f75f8f32b5673ca-1920x1281.jpg"
-intro: "Thanks for nothing Microsoft; Email shouldn't be this hard [Niet vertaald]"
-title: "Thanks for nothing Microsoft; Email shouldn't be this hard [Niet vertaald]"
+intro: "Bedankt voor niets Microsoft; E-mail moet niet zo moeilijk zijn"
+title: "Bedankt voor niets Microsoft; E-mail moet niet zo moeilijk zijn"
 ---
 
-People with an email address from Microsoft --- think Hotmail, MSN, live.com, outlook.com and their numerous variants --- 
-are significantly less likely to sign up for this website.
+Mensen met een e-mailadres van Microsoft --- denk aan Hotmail, MSN, live.com, outlook.com en hun talloze varianten --- zullen zich beduidend minder snel aanmelden voor deze website.
 
-That's because more than 4 times out of 10, they never receive their account activation email.
+Dat komt omdat ze meer dan 4 van de 10 keer nooit de e-mail voor het activeren van hun account ontvangen.
 
-## What's going on?
+## Wat is er aan de hand?
 
-Let's first look at what's happening. Here's a relevant snippet from the logs:
+Laten we eerst eens kijken naar wat er gebeurt. Hier is een relevant fragment uit de logboeken:
 
 ````
-Failed: postmaster@mg.freesewing.org -> ********@hotmail.co.uk 'Confirm your freesewing account' 
-Server response: 550 5.7.1 Unfortunately, messages from [104.130.122.15] weren't sent. 
-Please contact your Internet service provider since part of their network is on our block list. 
+Mislukt: postmaster@mg.freesewing.org -> ********@hotmail.co.uk 'Bevestig je freesewing account' 
+Server response: 550 5.7.1 Helaas zijn de berichten van [104.130.122.15] niet verzonden. 
+Neem contact op met je internetprovider omdat een deel van hun netwerk op onze blokkadelijst staat. 
 ````
 
-What this means is that part of the MailGun network is on their block list.
-As a result, they (more on who they are later) are not delivering any messages that go out.
+Dit betekent dat een deel van het MailGun netwerk op hun blokkadelijst staat. Het resultaat is dat zij (later meer over wie dat zijn) geen berichten naar buiten brengen.
 
-[MailGun](https://www.mailgun.com/) is a popular email service for developers.
-It's used by this site to send out emails, like the account activation emails.
+[MailGun](https://www.mailgun.com/) is een populaire e-mailservice voor ontwikkelaars. Het wordt door deze site gebruikt om e-mails te versturen, zoals de activeringsmails voor accounts.
 
-Other people use this service too, and perhaps some of them, at some point, 
-delivered some spam messages through mailgun. Or it may just have been some guy with 
-a last name that tends to trigger spam filters.
+Andere mensen gebruiken deze service ook, en misschien hebben sommigen van hen op een bepaald moment wat spamberichten afgeleverd via mailgun. Of het was gewoon iemand met een achternaam die spamfilters activeert.
 
-![Some other MailGun customers. Not exactly a dodgy service is it?](https://posts.freesewing.org/uploads/mailgun_19f315d4d6.png)
+![Enkele andere MailGun klanten. Niet bepaald een onbetrouwbare service, toch?](https://posts.freesewing.org/uploads/mailgun_19f315d4d6.png)
 
-Point is, this IP address or one of its neighbours got *a bad rep*. It happens.
-But to flat-out refuse to accept any messages from this host (or an entire network of hosts)
-is the equivalent of shutting down a highway lane (or entire highway)
-because one car in that lane played its music obnoxiously loud that one time.
+Het punt is dat dit IP-adres of een van zijn buren *een slechte reputatie heeft gegeven*. Het gebeurt. Maar het botweg weigeren om berichten van deze host (of een heel netwerk van hosts) te accepteren is hetzelfde als het afsluiten van een snelwegstrook (of een hele snelweg) omdat één auto op die strook die ene keer onaangenaam hard zijn muziek afspeelde.
 
-Which brings me to our next question:
+Dat brengt me bij onze volgende vraag:
 
-## Who would do something like that?
+## Wie zou zoiets doen?
 
-Good question. Here are some numbers:
+Goede vraag. Hier zijn wat cijfers:
 
-![A graph of mail delivery since the launch of this site](https://posts.freesewing.org/uploads/emailgraph_d14d476efa.png)
+![Een grafiek van de postbezorging sinds de lancering van deze site](https://posts.freesewing.org/uploads/emailgraph_d14d476efa.png)
 
-The graph above represents emails that were sent out since the launch of this site.
-The small subsection of the graph that is red are emails that are dropped.
+De grafiek hierboven geeft e-mails weer die zijn verzonden sinds de lancering van deze site. Het kleine deel van de grafiek dat rood is, zijn e-mails die worden verwijderd.
 
-This website sends out different kinds of email:
+Deze website verstuurt verschillende soorten e-mail:
 
- - The account confirmation email
- - The *I forgot my password* emails
- - Comment reply notifications
+ - De bevestigingsmail van de account
+ - De *Ik ben mijn wachtwoord vergeten* e-mails
+ - Reacties op berichten
 
-The graph represents all email, but I'm focussing on the account confirmation emails only.
-They are the most important after all.
+De grafiek geeft alle e-mails weer, maar ik richt me alleen op de bevestigingsmails voor accounts. Zij zijn tenslotte het belangrijkst.
 
-> Apart from the 1 outlier, every message that was blocked, was blocked by Microsoft
+> Afgezien van 1 uitschieter, werd elk bericht dat werd geblokkeerd, geblokkeerd door Microsoft
 
-Here's a list of all domains that blocked legitimate activation emails to their users:
+Hier is een lijst van alle domeinen die legitieme activeringsmails naar hun gebruikers hebben geblokkeerd:
 
  - btinternet.com
  - hotmail.com
- - hotmail.co.uk
- - live.ca
+ - hotmail.nl
+ - live.nl
  - live.com
  - live.com.au
  - live.nl
  - msn.com
  - outlook.com
 
-Apart from that very first entry in the list (on which only 1 message was blocked) all of these are Microsoft domains.
+Afgezien van de allereerste vermelding in de lijst (waarop slechts 1 bericht werd geblokkeerd) zijn dit allemaal Microsoft-domeinen.
 
-Let me restate that: Apart from the 1 outlier, every message that was blocked, was blocked by Microsoft.
+Laat ik dat nog eens herhalen: Afgezien van die ene uitschieter, werd elk bericht dat werd geblokkeerd, geblokkeerd door Microsoft.
 
-## What's the impact?
+## Wat is de impact?
 
-So what sort of impact does that have on people?
+Wat voor invloed heeft dat op mensen?
 
-Well, at the time I'm writing this, there are 817 registered users, and about 80% (661) have also activated their account.
+Nou, op het moment dat ik dit schrijf, zijn er 817 geregistreerde gebruikers en ongeveer 80% (661) heeft ook zijn account geactiveerd.
 
-![A disproportionate amount of pending activations is from users with an email address managed by Microsoft](https://posts.freesewing.org/uploads/activations_06987b6065.svg)
+![Een onevenredig groot aantal hangende activeringen is afkomstig van gebruikers met een e-mailadres dat wordt beheerd door Microsoft](https://posts.freesewing.org/uploads/activations_06987b6065.svg)
 
-From those people who were able to activate their account, less than 1% (6) have an email address managed by Microsoft.
-In the group of people who did not, or were not able to, activate their account, more than half have such an address.
+Van de mensen die hun account konden activeren, heeft minder dan 1% (6) een e-mailadres dat door Microsoft wordt beheerd. In de groep mensen die hun account niet hebben geactiveerd of niet hebben kunnen activeren, heeft meer dan de helft zo'n adres.
 
-More than 40% of account confirmation emails are simply blocked by Microsoft and, based on the number of activations,
-it seems likely that even when they aren't block at the SMTP relay, they get filtered somewhere further down the line.
+Meer dan 40% van de accountbevestigingsmails worden simpelweg geblokkeerd door Microsoft en, gebaseerd op het aantal activeringen, lijkt het waarschijnlijk dat zelfs als ze niet worden geblokkeerd bij de SMTP relay, ze ergens verderop in het proces worden gefilterd.
 
-As things stand, it seems almost impossible for the average hotmail/outlook/live/MSN/... user to sign up for this site.
+Zoals het er nu voor staat, lijkt het bijna onmogelijk voor de gemiddelde hotmail/outlook/live/MSN/... gebruiker om zich aan te melden voor deze site.
 
-## What can we do about it?
+## Wat kunnen we eraan doen?
 
-I chose mailgun for a number of reasons. Not having to handle SMTP outselves simplifies the code.
-Not depending on a local SMTP deamon makes the code more portable, and MailGun has a bunch of cool features
-that allow you to do things like replying to comments via email. 
+Ik heb om een aantal redenen voor mailgun gekozen. Het niet zelf hoeven afhandelen van SMTP vereenvoudigt de code. Het niet afhankelijk zijn van een lokale SMTP deamon maakt de code draagbaarder en MailGun heeft een heleboel coole functies waarmee je dingen kunt doen zoals reageren op reacties via e-mail.
 
-Microsoft's crude methods of spam filtering don't invalidate any of those reasons.
+De grove methoden van Microsoft om spam te filteren doen niets af aan deze redenen.
 
-Using MailGun means using their SMTP relays, and being at the mercy of the reputation of that relay.
-The only way around that is to configure a dedicated relay in MailGun so that freesewing.org traffic is shielded from
-others, and we become masters of our own reputation.
+MailGun gebruiken betekent hun SMTP relays gebruiken en overgeleverd zijn aan de reputatie van die relays. De enige manier om dat te omzeilen is om een dedicated relay in MailGun te configureren zodat freesewing.org verkeer wordt afgeschermd van anderen en we meester worden over onze eigen reputatie.
 
-![$59 per month? Perhaps not](https://posts.freesewing.org/uploads/pricing_52f0e817cb.png)
+![$59 per maand? Misschien niet](https://posts.freesewing.org/uploads/pricing_52f0e817cb.png)
 
-For that priviledge, MailGun charges 59 dollar per month, which amounts to 708 dollar yearly. 
-I invite you to take a look at [the donations history](/about/pledge#donations-history), 
-and you'll understand that's not going to happen either.
+Voor dat privilege rekent MailGun 59 dollar per maand, wat neerkomt op 708 dollar per jaar. Ik nodig je uit om een kijkje te nemen op [de donatiegeschiedenis](/about/pledge#donations-history), en je zult begrijpen dat dat ook niet gaat gebeuren.
 
-I could challenge the block list, and try to get the relay unblocked.
-But that's pretty much tilting at windmills when the host is not under my control.
-Not to mention that MailGun doesn't just have that one host.
+Ik zou de blokkadelijst kunnen aanvechten en proberen het relais gedeblokkeerd te krijgen. Maar dat is nogal vechten tegen windmolens als ik geen controle heb over de host. Om nog maar te zwijgen over het feit dat MailGun niet alleen die ene host heeft.
 
-It seems that I'm running low on options and quiet frankly, I'm also running out of patience.
+Het lijkt erop dat mijn opties opraken en eerlijk gezegd heb ik ook geen geduld meer.
 
-## What I'm going to do about it
+## Wat ik eraan ga doen
 
-Microsoft is a behemoth, and I'm just a guy. I can't fight them on this.
-Unless I Titanfall their ass.
+Microsoft is een kolos en ik ben maar een jongen. Ik kan hier niet tegenin gaan. Tenzij ik ze Titanfall.
 
-![Block this, bitch](https://posts.freesewing.org/uploads/titanfall_cb5a210468.gif)
+![Blokkeer dit, trut](https://posts.freesewing.org/uploads/titanfall_cb5a210468.gif)
 
-Do you think Gmail is ever abused to send out spam? You know it is.
-Do you think they would ever block all email coming from Gmail? You know they won't.
+Denk je dat Gmail ooit wordt misbruikt om spam te versturen? Je weet dat het zo is. Denk je dat ze ooit alle e-mail van Gmail zouden blokkeren? Je weet dat ze dat niet zullen doen.
 
-So last night, I rolled out some changes to work around the issue.
-If you have a *problemtic* email address, in addition to the regular email, this site will send out 
-a second email through Gmail. 
+Gisteravond heb ik een aantal wijzigingen doorgevoerd om het probleem te omzeilen. Als je een *problemtic* e-mailadres hebt, stuurt deze site naast de gewone e-mail ook een tweede e-mail via Gmail.
 
-I'd like to see them block that.
+Ik zou graag zien dat ze dat blokkeren.
 
-> ##### Signup trouble? Help is available
-> If you are (still) having problems signing up, don't hesitate to [get in touch](/contact).
+> ##### Problemen met aanmelden? Er is hulp beschikbaar
+> 
+> Als je (nog steeds) problemen hebt met aanmelden, aarzel dan niet om contact op te nemen via [](/contact).
 
