@@ -1,5 +1,5 @@
 ---
-title: "Титанові штани"
+title: "Викрійка-основа штанів Титан"
 ---
 
 <PatternDocs pattern='titan' />
