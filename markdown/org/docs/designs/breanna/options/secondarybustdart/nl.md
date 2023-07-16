@@ -1,5 +1,5 @@
 ---
-title: "Secondary bust dart"
+title: "Secundaire bustenneep"
 ---
 
 Voeg optioneel een secundaire bustenneep toe om de vormgeving van de borst te verdelen.
