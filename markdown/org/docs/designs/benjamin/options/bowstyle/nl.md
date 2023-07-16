@@ -1,5 +1,5 @@
 ---
-title: "Bow style"
+title: "Stijl strik"
 ---
 
 Vier verschillende stijlen van vlinderdas!
