@@ -1,75 +1,75 @@
 ---
 author: "joostdecock"
-caption: "Picture you and him, in matching coats."
+caption: "Уявіть себе і його, в однакових пальто."
 date: "2018-01-26"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d0ac31adcf8e14cec377aada6c688394a15199d8-1920x1440.webp"
-intro: "This one's for the ladies --- and I'm not (just) talking about that picture of heart-throb Benedict Cumberbatch at the top of this post."
-title: "Announcing Carlita, the womenswear version of our Carlton coat."
+intro: "Цей - для жінок, і я говорю (не тільки) про фотографію Бенедикта Камбербетча, який б'ється в ритмі серця, у верхній частині цього допису."
+title: "Представляємо Карліту, жіночу версію нашого пальта Карлтон."
 ---
 
-This one's for the ladies --- and I'm not (just) talking about that picture of heart-throb Benedict Cumberbatch at the top of this post.
+Цей - для жінок, і я говорю (не тільки) про фотографію Бенедикта Камбербетча, який б'ється в ритмі серця, у верхній частині цього допису.
 
-Instead, I'm talking about the release of our latest pattern: the [Carlita Coat](/patterns/carlita) which is out in beta as of today.
+Натомість я говорю про випуск нашої останньої моделі: пальто [Carlita Coat](/patterns/carlita) , яке сьогодні вийшло в бета-версії.
 
-Carlita is --- you guessed it --- the womenswear version of our Carlton coat, which recreates the iconic Sherlock Holmes coat worn by BC on the BBC series.
+Карліта - це, як ви вже здогадалися, жіноча версія нашого пальта Карлтон, яка відтворює культовий костюм Шерлока Холмса, який носив БК у серіалі BBC.
 
-## How did we do it?
+## Як ми це зробили?
 
-For details on how this project came to be, I refer you to [the Carlton announcement post](/blog/announcing-carlton-and-bent/). Here, I'd like to focus on the specifics of how we turned this menswear pattern into a coat for ladies.
+Детальніше про те, як з'явився цей проект, можна прочитати на сайті . Я відсилаю вас до [оголошення про Карлтон](/blog/announcing-carlton-and-bent/). Тут я хотів би зосередитися на особливостях того, як ми перетворили чоловічий патерн на жіноче пальто.
 
-We wanted to stay as close to the original as possible, so all we did was make changes to address one challenge: fitting the breasts.
+Ми хотіли залишитися якомога ближчими до оригіналу, тому внесли лише зміни, щоб вирішити одну проблему: припасування грудей.
 
-### Princess, meet your seam
+### Принцесо, зустрічай свій шов
 
-We drew an extra princess seam in the front panel of the coat, through which we added shaping for the bust.
+Ми намалювали додатковий шов принцеси на передньому полотнищі пальта, через який додали форми бюсту.
 
-To be able to do that accurately, Carlita requires three extra measurements in addition to the measurements required by Carlton. Так і є:
+Щоб зробити це точно, Карліта потребує трьох додаткових вимірів на додаток до вимірів, необхідних Карлтону. Так і є:
 
- - The [high bust](/docs/measurements/#highBust)
- - The [bust span](/docs/measurements/#bustSpan)
- - The [high point shoulder to bust](/docs/measurements/#highPointShoulderToBust)
+ - Високий бюст [](/docs/measurements/#highBust)
+ - Бюст [охоплює](/docs/measurements/#bustSpan)
+ - Висока точка [плеча, щоб розірвати](/docs/measurements/#highPointShoulderToBust)
 
-We use your high bust measurements to draft the coat, and then do a full bust adjustment on the princess seam based on your (full) chest circumference, bust span and HPS to bust.
+Ми використовуємо ваші високі мірки для створення ескізу пальта, а потім робимо повну корекцію обхвату грудей за допомогою шва "принцеса" на основі ваших (повних) обхватів грудей, обхвату грудей і HPS до обхвату грудей.
 
-### All of the pockets, but we had to move some of them
+### Всі кишені, але деякі з них довелося перемістити
 
-The addition of the princess seam made the map pocket placement a bit difficult, so we've slightly moved it, and aligned it vertically, rather than slightly tilted as it is in Carlton.
+Додавання шва "принцеса" трохи ускладнило розміщення кишені для карт, тому ми трохи перемістили її і вирівняли по вертикалі, а не злегка нахилили, як у Карлтоні.
 
-This way, the pocket can be integrated in the princess seam, somewhere in the underboob region.
+Таким чином, кишеню можна інтегрувати в шов принцеси, десь в області під грудьми.
 
-### One extra option: The princess seam smooth factor
+### Одна додаткова опція: Фактор гладкості шва "Принцеса
 
-Carlita also has one extra option that Carlton doesn't have, the somewhat elaborately named [Princess seam smooth factor](/docs/patterns/carlita/options#princessSeamSmoothFactor).
+Карліта також має одну додаткову опцію, якої немає у Карлтона, дещо складно названу [Princess seam smooth factor](/docs/patterns/carlita/options#princessSeamSmoothFactor).
 
-This controls how sharply the princess seam will revert back after having added the extra volume for your chest.
+Він контролює, наскільки різко шов "принцеса" повернеться назад після того, як ви додасте додатковий об'єм грудей.
 
-A picture says more than a thousand words, so here's the option sampled on the relevant part of the pattern:
+Картинка говорить більше, ніж тисяча слів, тож ось варіант, вибраний на відповідній ділянці візерунка:
 
-![The effect of the option as shown by our sampler service](https://posts.freesewing.org/uploads/smooth_e8f395dd4a.png)
+![Ефект опції, показаний нашим сервісом семплерів](https://posts.freesewing.org/uploads/smooth_e8f395dd4a.png)
 
-As you can see, the option controls the urgency with which the princess seam reverts back to your waistline after passing the fullest point of your bust.
+Як бачите, опція контролює швидкість, з якою шов принцеси повертається до лінії талії після проходження найповнішої точки вашого бюста.
 
-A low factor will make for a more fitted coat, but also a more curvy seam that is harder to sew.
+Низький коефіцієнт дозволить отримати більш приталене пальто, але й більш криволінійний шов, який буде важче зшити.
 
-A higher smooth factor will smooth this out so it's a more sloped retreat to the downward seam. This will make the coat less fitted under your chest, and the seam easier to sew.
+Вищий коефіцієнт згладжування згладить це, і ви отримаєте більш похилий відступ до низхідного шва. Це зробить пальто менш облягаючим під грудьми, а шов буде легше зшити.
 
-## A reminder about made-to-measure patterns
+## Нагадування про лекала, виготовлені за індивідуальним замовленням
 
-This goes without saying for regular visitors to this site, but if you're new here, it's worth repeating:
+Це само собою зрозуміло для постійних відвідувачів цього сайту, але якщо ви тут вперше, варто повторити:
 
-> This coat is not drafted with a certain cup size in mind. Instead, it will adapt to your chest based on your measurements.
+> Це пальто не розраховане на певний розмір чашок. Замість цього він буде підлаштовуватися під ваші груди на основі ваших вимірів.
 
-## Ladies, we need your feedback
+## Дами, нам потрібен ваш зворотній зв'язок
 
-This is our first womenswear pattern with a fitted chest. As such, we're breaking new ground here, and I'd be interested to see how this pattern adapts to a variety of body shapes/cup sizes.
+Це наша перша модель жіночого одягу з приталеними грудьми. Таким чином, ми відкриваємо нові горизонти, і мені було б цікаво подивитися, як цей патерн адаптується до різних форм тіла/розмірів чашок.
 
-If you're planning to make this coat, or a muslin of it, please share your experience, and don't hesitate to get in touch should you run into any issues.
+Якщо ви плануєте пошити це пальто або муслін, будь ласка, поділіться своїм досвідом, і не соромтеся звертатися до нас за адресою , якщо у вас виникнуть будь-які питання.
 
 
-I plan to design more womenswear patterns, so if there are any fit issues, I'd like to know about it sooner rather than later.
+Я планую розробляти більше моделей жіночого одягу, тому якщо є якісь проблеми з посадкою, я хотіла б знати про це раніше, ніж пізніше.
 
-## Shout-out
+## Крик!
 
-Last but not least, I'd like to thank [Anneke](http://www.annekecaramin.com/) for her help throughout this project, and tolerating my countless rants about my love/hate relationship with boobs.
+І останнє, але не менш важливе: я хотів би подякувати [Аннеке](http://www.annekecaramin.com/) за її допомогу впродовж усього проекту, а також за те, що вона терпляче ставилася до моїх незліченних просторікувань про мої любов/ненависть до цицьок.
 
 
