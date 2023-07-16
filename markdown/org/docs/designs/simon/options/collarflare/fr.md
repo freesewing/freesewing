@@ -1,5 +1,5 @@
 - - -
-title: "Collar flare"
+titre : "Col évasé"
 - - -
 
 ![Évasement du col](collarflare.svg)
