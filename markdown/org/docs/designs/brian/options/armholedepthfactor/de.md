@@ -1,5 +1,5 @@
 ---
-title: "Armhole depth factor"
+title: "Tiefenfaktor des Armloches"
 ---
 
 ![Der Rüstungstiefenfaktor auf Brian](./armholedepthfactor.svg)
