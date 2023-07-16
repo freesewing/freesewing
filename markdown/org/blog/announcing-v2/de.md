@@ -44,10 +44,9 @@ Auch für Übersetzer gibt es gute Nachrichten, denn wir verwenden jetzt [Crowdi
 
 In der Softwareentwicklung ist es üblich, dass die Umgestaltung von Code gut ist, aber das Neuschreiben von Grund auf ist schlecht. Dennoch haben wir es trotzdem getan, weil wir es den Menschen erleichtern wollten, sich am Projekt zu beteiligen und Muster in Echtzeit im Browser zu generieren.
 
-Abgesehen davon ist dies eine .Null-Version, sodass Sie über das ein oder andere Problem stolpern könnten. When you do, please [let us know](https://discord.freesewing.org/) or submit an issue.
+Abgesehen davon ist dies eine .Null-Version, sodass Sie über das ein oder andere Problem stolpern könnten. Wenn ja, bitte [lassen Sie es uns wissen](https://discord.freesewing.org/) oder reichen Sie ein Issue ein.
 
 ## 🤞 Verraten Sie uns Ihre Meinung
 
 Wir würden uns über Ihr Feedback freuen. Wir sind **@freesewing\_org** auf [Twitter](https://twitter.com/freesewing_org) und [Instagram](https://instagram.com/freesewing_org) vertreten, verwenden Sie das **#freesewing** Hashtag oder [schauen Sie sich unsere Share-Seite](/share) an.
-
 
