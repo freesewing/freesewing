@@ -5,6 +5,7 @@ import { HomeIcon, RightIcon, BulletIcon } from 'shared/components/icons.mjs'
 import { PageLink } from 'shared/components/page-link.mjs'
 import orderBy from 'lodash.orderby'
 import { icons } from 'shared/components/navigation/primary.mjs'
+import { useTranslation } from 'next-i18next'
 
 /*
  * This returns only those children that are expected to show up
@@ -19,7 +20,7 @@ import { icons } from 'shared/components/navigation/primary.mjs'
  */
 const onlyValidChildren = (tree) =>
   orderBy(tree, ['o', 't'], ['asc', 'asc']).filter(
-    (entry) => typeof entry === 'object' && entry.t !== 'spacer' && !entry.h
+    (entry) => typeof entry === 'object' && entry.t !== 'spacer' && !entry.m && !entry._ && !entry.h
   )
 
 /*
@@ -131,19 +132,33 @@ const MainLink = ({
  * @param slug {string}       - The slug of the current page
  * @param siteNav {object}    - The site navigation object as returned by the useNavigation hook
  */
-export const Breadcrumbs = ({ slug, siteNav }) => {
-  if (!slug) {
+export const Breadcrumbs = ({ slug = false, lead = false, siteNav }) => {
+  const { t } = useTranslation(['common'])
+
+  if (slug === false) {
     console.log('No slug passed to Breadcrumbs')
     return null
   }
   // Start with the home crumb
-  const crumbs = [
+  const crumbs = []
+  // Do we need a lead?
+  if (lead)
+    crumbs.push(
+      <li key="lead" className="font-medium text-sm pr-2">
+        {t('youAreHere')}:
+      </li>
+    )
+  crumbs.push(
     <li className="inline" key={0}>
       <Link href="/" title="FreeSewing">
-        <HomeIcon className="w-4 h-4" />
+        <HomeIcon className="w-4 h-4" stroke={2.5} />
       </Link>
-    </li>,
-  ]
+    </li>
+  )
+
+  // Home page?
+  if (slug === '') return <ul className="flex flex-row flex-wrap items-center">{crumbs}</ul>
+
   // Then split the slug and add a crumb for each
   const chunks = slug.split('/')
   for (let i = 1; i <= chunks.length; i++) {
