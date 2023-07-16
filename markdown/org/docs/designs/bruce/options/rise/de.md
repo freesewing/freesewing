@@ -1,5 +1,5 @@
 ---
-title: "Rise"
+title: "Sitz"
 ---
 
 ![Die Aufstiegsoption auf Bruce](./rise.svg)
