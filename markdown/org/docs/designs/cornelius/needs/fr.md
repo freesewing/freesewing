@@ -1,5 +1,5 @@
 ---
-title: "Culotte cycliste Cornélius : Ce qu'il faut"
+title: "Cornelius cycling breeches: What You Need"
 ---
 
 Pour fabriquer Cornelius, vous aurez besoin des éléments suivants :
