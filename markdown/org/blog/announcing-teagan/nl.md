@@ -11,26 +11,25 @@ Een tijdje geleden vroeg iemand of we een t-shirtpatroon hadden op FreeSewing, e
 
 Daar is geen goede reden voor, het is er gewoon nooit van gekomen. Dus vandaag lanceren we versie 2.9 van FreeSewing, met ons nieuwste patroon: [het Teagan t-shirt](/designs/teagan/).
 
-![A man, seated on a purple couch and wearing a speckled grey Teagan T-Shirt.](teagan1.jpg)
+![Een man, zittend op een paarse bank en met een grijs Teagan T-shirt aan.](https://posts.freesewing.org/uploads/teagan1_2904162431.jpg)
 
 ## Voor wie is dit?
 
-Teagan is fitted T-shirt pattern with options for altering the neckline, length, and sleeves.
+Teagan is een getailleerd T-shirtpatroon met opties om de halslijn, lengte en mouwen te veranderen.
 
-Teagan is based on [our Brian block](/designs/brian/), which does not take breasts into account. That being said, this will work for people with breasts too. Since it uses the chest circumference it will simply draft a T-shirt to fit your full chest.
+Teagan is gebaseerd op [ons Brian blok](/designs/brian/), dat geen rekening houdt met borsten. Dat gezegd zijnde zal dit ook werken voor mensen met borsten. Aangezien het zich baseert op het breedste punt van je borstomtrek zal je een patroon krijgen dat daar past.
 
-We've also added an option to draft this to your high bust, which would give you a more fitted T-shirt with ease & stretch having to accomodate for your breasts.
+We hebben ook een optie toegevoegd om dit aan te passen aan je hoge buste, waardoor je een meer getailleerd T-shirt krijgt met gemak & stretch die rekening moet houden met je borsten.
 
-![A woman wearing a striped T-shirt stands in front of a weathered fence. This T-shirt is more fitted through the chest.](teagan3.jpg)
+![Een vrouw met een gestreept T-shirt staat voor een verweerd hek. Dit T-shirt is meer getailleerd bij de borst.](https://posts.freesewing.org/uploads/teagan3_8ff8115d75.jpg)
 
-## Community Updates
+## Updates voor de gemeenschap
 
-If you're thinking about sewing Teagan, but you're new to sewing or working with knits, never fear! FreeSewing has more support than ever. Chat with us on [Discord](https://discord.freesewing.org/), in a [Facebook Group](https://www.facebook.com/groups/627769821272714), or on [Reddit](https://www.reddit.com/r/freesewing/). Find us on social as @freesewing_org on [Instagram](https://www.instagram.com/freesewing_org/) and [Twitter](https://twitter.com/freesewing_org). If you're looking for tutorials, there's a new [YouTube channel](https://www.youtube.com/channel/UCLAyxEL72gHvuKBpa-GmCvQ) for that. It has a whole series on [sewing up Teagan](https://www.youtube.com/playlist?list=PLY9EmRuXR20Y7FonIHD6mX9yIpFh_emX1), as well as this amazing preview.
+Als je erover denkt om Teagan te naaien, maar je bent nieuw in het naaien of het werken met breisels, vrees dan niet! FreeSewing heeft meer ondersteuning dan ooit. Chat met ons op [Discord](https://discord.freesewing.org/), in een [Facebookgroep](https://www.facebook.com/groups/627769821272714), of op [Reddit](https://www.reddit.com/r/freesewing/). Vind ons op social als @freesewing_org op [Instagram](https://www.instagram.com/freesewing_org/) en [Twitter](https://twitter.com/freesewing_org). Als je op zoek bent naar tutorials, dan is er een nieuw [YouTube-kanaal](https://www.youtube.com/channel/UCLAyxEL72gHvuKBpa-GmCvQ) . Er staat een hele serie op over [naaide Teagan](https://www.youtube.com/playlist?list=PLY9EmRuXR20Y7FonIHD6mX9yIpFh_emX1), evenals deze geweldige preview.
 
 <YouTube id='3UGJSNxNe8I' />
 
-If all of this sounds awesome, and you want to get more involved with FreeSewing, you can check out our repositories and source code on [Github](https://github.com/freesewing/) or connect with other contributors via [Discord](https://discord.freesewing.org/). You can find announcements about upcoming contributor calls on Discord, in the announcements channel.
+Als dit allemaal geweldig klinkt en je meer betrokken wilt raken bij FreeSewing, kun je kijken op onze repositories en broncode op [Github](https://github.com/freesewing/) of maak contact met andere medewerkers via [Discord](https://discord.freesewing.org/). Je kunt aankondigingen over aankomende contributiegesprekken vinden op Discord, in het aankondigingenkanaal.
 
-And if you sew up a Teagan T-shirt, let us know what you think!
-
+En als je een Teagan T-shirt naait, laat ons dan weten wat je ervan vindt!
 
