@@ -1,164 +1,129 @@
 ---
 author: "joostdecock"
-caption: "Your new login background for the month of December"
+caption: "Je nieuwe inlogachtergrond voor de maand december"
 date: "2017-11-30"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c9c5c5e10d2ed6e9f2935b047afa76c1ddd7c834-2000x1333.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - November 2017: Benjamin, on-boarding, showcases, and our on-demand tiler [Niet vertaald]"
+intro: "Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken en een blik op wat er de komende maand in het verschiet ligt."
+title: "Maandelijkse samenvatting - november 2017: Benjamin, on-boarding, showcases en onze on-demand tegelzetter"
 ---
 
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken en een blik op wat er de komende maand in het verschiet ligt.
 
-## Looking back at November
-November has been busy around here. While lot of the work has been happening behind the scenes
--- more on that in December -- there's also a list of things that are already rolled out.
+## Terugblik op november
+Het is hier druk geweest in november. Terwijl veel van het werk achter de schermen is gebeurd -- meer daarover in december -- is er ook een lijst met dingen die al zijn uitgerold.
 
-Here's the most important changes:
+Dit zijn de belangrijkste veranderingen:
 
-### Meet Benjamin
-![Wouter showing off Benjamin](https://posts.freesewing.org/uploads/benjamin_fc9844f4bd.jpg)
-First up: a new pattern. The Benjamin Bow tie is [now available](/patterns/benjamin) in beta.
+### Ontmoet Benjamin
+![Wouter pronkt met Benjamin](https://posts.freesewing.org/uploads/benjamin_fc9844f4bd.jpg) Als eerste: een nieuw patroon. De Benjamin Strik is [nu beschikbaar](/patterns/benjamin) in bèta.
 
-![More bow ties from Wouter's personal stash](https://posts.freesewing.org/uploads/bowties_4f3e05ec53.jpg)
+![Meer vlinderdassen uit Wouter's persoonlijke voorraad](https://posts.freesewing.org/uploads/bowties_4f3e05ec53.jpg)
 
-Benjamin is a bow tie, and as I explained in [the announcement blog post](/en/blog/benjamin-bow-tie-beta/) 
-this release is kind of a big deal.
+Benjamin is een vlinderdas, en zoals ik heb uitgelegd in [de blogpost over de aankondiging](/en/blog/benjamin-bow-tie-beta/) is deze uitgave nogal wat.
 
-That's because it's the first ever pattern to have been contributed by the community.
-More specifically, it was [Wouter](/users/xdpug) who designed and programmed the pattern.
+Dat komt omdat het het allereerste patroon is dat door de community is bijgedragen. Meer specifiek was het [Wouter](/users/xdpug) die het patroon ontwierp en programmeerde.
 
-So shout-out to him for being the first person to contribute a pattern. And if you
-[hang around in the freesewing chat room](https://discord.freesewing.org/), 
-you know that he's already started working on his next pattern.
+Dus shout-out naar hem omdat hij als eerste een patroon heeft bijgedragen. En als je [rondhangt in de freeswing chatroom](https://discord.freesewing.org/), dan weet je dat hij al aan zijn volgende patroon werkt.
 
 
-### Better user on-boarding
+### Betere ingebruikname van gebruikers
 
-I've changed the sign-up flow a bit to help people discover all the options they can set in their account.
+Ik heb de aanmeldingsflow een beetje veranderd om mensen te helpen alle opties te ontdekken die ze in hun account kunnen instellen.
 
-![The welcome page guides you through your account setup](https://posts.freesewing.org/uploads/welcome_e02a39ca3b.png)
+![De welkomstpagina leidt je door de instellingen van je account](https://posts.freesewing.org/uploads/welcome_e02a39ca3b.png)
 
-The change is two-fold. First you are now auto-magically logged in
-when you click the email confirmation link for your account.
+De verandering is tweeledig. Ten eerste ben je nu automatisch ingelogd op als je op de bevestigingslink voor je account klikt.
 
-Second, we send you to the welcome page and guide you
-through a few steps to finalize your account setup. Specifically:
+Vervolgens sturen we je naar de welkomstpagina en begeleiden we je door een paar stappen om je account in te stellen. Specifiek:
 
- - Configure your units
- - Configure your username
- - Configure your profile picture
- - Configure your social media accounts
+ - Configureer je eenheden
+ - Configureer je gebruikersnaam
+ - Je profielfoto configureren
+ - Configureer je sociale media-accounts
 
-(More on that last one later in this post) 
+(Meer over dat laatste later in dit bericht)
 
-All of these settings are available in [your account](/account), but people
-frequently don't realize that.
-With the new sign-up flow, that should no longer be the case.
+Al deze instellingen zijn beschikbaar in [je account](/account), maar mensen realiseren zich dat vaak niet. Met de nieuwe aanmeldingsflow zou dat niet langer het geval moeten zijn.
 
-> ##### Hey, I never got a handy welcome page like that
-> At any time, you can go to [the welcome page](/welcome) 
-> to check or update your account settings.
+> ##### Hé, zo'n handige welkomstpagina heb ik nooit gekregen
+> 
+> Je kunt op elk moment naar [de welkomstpagina](/welcome) gaan om je accountinstellingen te controleren of bij te werken.
 
-### Mixed units warning
+### Waarschuwing voor gemengde eenheden
 
-One of the issues that drove the changes to the on-boarding of new users was the 
-issue of mixed units.
+Een van de kwesties die de veranderingen in het on-boarding van nieuwe gebruikers aanstuurde, was de kwestie van gemengde eenheden.
 
-Mixed units is when your account is configured in metric, but your model is set
-to imperial (or vice-versa).
+Gemengde eenheden is wanneer je account is geconfigureerd in metrisch, maar je model is ingesteld op op imperiaal (of omgekeerd).
 
-![An example warning when units are mixed between your account and your model](https://posts.freesewing.org/uploads/units_mismatch_warning_058d7de9b4.png)
+![Een voorbeeldwaarschuwing als eenheden worden gemengd tussen je account en je model](https://posts.freesewing.org/uploads/units_mismatch_warning_058d7de9b4.png)
 
-This is supported. If you make things for other people in other parts of the world,
-this flexibility is handy.
+Dit wordt ondersteund. Als je dingen maakt voor andere mensen in andere delen van de wereld, is deze flexibiliteit handig.
 
-But it's a rather niche scenario, and more often than not it's due to the user not 
-realizing their units are set as they are.
+Maar het is een tamelijk niche-scenario en meestal komt het doordat de gebruiker zich niet realiseert dat zijn eenheden zijn ingesteld zoals ze zijn ingesteld.
 
-So now, when you draft a pattern with mixed units, we'll show you a warning box to make
-sure that you do actually intend to use mixed units. 
+Dus nu, als je een patroon maakt met gemengde eenheden, laten we je een waarschuwingsvenster zien om er zeker van te zijn dat je wel degelijk van plan bent om gemengde eenheden te gebruiken.
 
-### Per-pattern default seam allowance
-The roll-out of Benjamin raised another issue: standard seam allowance.
+### Standaard naadtoeslag per patroon
+Het uitrollen van Benjamin bracht nog een ander probleem met zich mee: de standaard naadtoeslag.
 
-For a bow tie, the current standard seam allowance (1cm for metric, 5/8" for imperial)
-is too large. So Wouter wanted some way to change the standard seam allowance.
+Voor een vlinderdas is de huidige standaard naadtoeslag (1 cm voor metrisch, 5/8" voor imperiaal) te groot. Wouter wilde dus een manier om de standaard naadtoeslag te veranderen.
 
-![Here too, we've added a little notification to make sure you are aware](https://posts.freesewing.org/uploads/non_standard_sa_warning_e5046e98a7.png)
+![Ook hier hebben we een kleine melding toegevoegd om ervoor te zorgen dat je op de hoogte bent](https://posts.freesewing.org/uploads/non_standard_sa_warning_e5046e98a7.png)
 
-So, that's what we implemented. Going forward, patterns can set the standard seam allowance
-(for both metric and imperial). If they don't, we revert to 1cm|5/8" as before.
+Dus dat hebben we geïmplementeerd. In de toekomst kunnen patronen de standaard naadtoeslag instellen op (voor zowel metrisch als imperiaal). Als ze dat niet doen, gaan we terug naar 1cm|5/8" zoals voorheen.
 
-Note that this is only the default seam allowance. When you draft a pattern you can still 
-set the seam allowance to whatever you like.
+Merk op dat dit alleen de standaard naadtoeslag is. Als je een patroon ontwerpt, kun je nog steeds de naadtoeslag instellen op wat je maar wilt.
 
-### Social media accounts
+### Sociale media-accounts
 
-If you clicked the link to the welcome page, or if you check out the 
-settings in [your profile](/profile) you'll see that you can now enter your
-username for a few other sites:
+Als je op de link naar de welkomstpagina hebt geklikt, of als je de instellingen in [je profiel](/profile) bekijkt, zie je dat je nu je gebruikersnaam voor een paar andere sites kunt invoeren:
 
  - Twitter
  - Instagram
  - GitHub
 
-No need to worry, [your privacy is in good hands here](/blog/privacy-choices/). 
-I am not interested in collecting your data, and the only reason
-this is here is because people [asked for it](https://github.com/freesewing/site/issues/184).
+Maak je geen zorgen, [je privacy is hier in goede handen](/blog/privacy-choices/). Ik ben niet geïnteresseerd in het verzamelen van je gegevens, en de enige reden dat dit hier staat is omdat mensen [erom vroegen](https://github.com/freesewing/site/issues/184).
 
-![After Quentin added his Instagram and GitHub accounts to his settings, his comment now have links to those accounts])comments-social.png)
+Nadat Quentin zijn Instagram en GitHub accounts aan zijn instellingen heeft toegevoegd, hebben zijn reacties nu links naar die accounts])comments-social.png)
 
-Links to your social media accounts will appear on your profile page and along your comments.
+Links naar je sociale media accounts verschijnen op je profielpagina en bij je reacties.
 
-### More showcases
+### Meer vitrines
 
-We've added a bunch of new [showcases](/showcase) this month.
-Every maker that has one or more showcases here on the site has their own page
-that lists all their showcases. 
+We hebben deze maand een aantal nieuwe [showcases](/showcase) toegevoegd. Elke maker die hier op de site een of meer vitrines heeft, heeft zijn eigen pagina waarop al zijn vitrines staan.
 
-![An example of links on a maker page. In this case, Anneke](https://posts.freesewing.org/uploads/maker_links_8504a1b00d.png)
+![Een voorbeeld van links op een makerpagina. In dit geval, Anneke](https://posts.freesewing.org/uploads/maker_links_8504a1b00d.png)
 
-This month, we've updated those pages with links to the blog and/or social media
-accounts of these makers. 
-The idea is that people who feel you've made a cool thing can find out a bit more about you.
+Deze maand hebben we die pagina's bijgewerkt met links naar de blog en/of social media accounts van deze makers. Het idee is dat mensen die vinden dat je een cool ding hebt gemaakt, wat meer over je te weten kunnen komen.
 
-### Referrer policy, or why you never get any visitors from freesewing.org
+### Verwijzingsbeleid, of waarom je nooit bezoekers krijgt van freesewing.org
 
-We've rolled out the strictest referral policy: `no-referrer`. It blocks all referrer information.
+We hebben het strengste doorverwijzingsbeleid ingevoerd: `geen doorverwijzers`. Het blokkeert alle verwijzerinformatie.
 
-This means that if you run Google analytics -- or some other website statistics tool --
-on your blog or website, you won't see traffic from freesewing.org.
+Dit betekent dat als je Google analytics -- of een andere website statistieken tool -- draait op je blog of website, je geen verkeer van freesewing.org zult zien.
 
-![Our referrer policy: No](https://posts.freesewing.org/uploads/no_13049a23c3.gif)
+![Ons verwijzingsbeleid: Geen](https://posts.freesewing.org/uploads/no_13049a23c3.gif)
 
-That doesn't mean that people aren't clicking links to your blog, but we simply
-block the referrer header from being set, so Google has no idea where people come from.
+Dat betekent niet dat mensen niet op links naar je blog klikken, maar we blokkeren simpelweg om de referrer header in te stellen, zodat Google geen idee heeft waar mensen vandaan komen.
 
-Why you ask? Because privacy.
+Waarom vraag je dat? Want privacy.
 
-### On-demand tiler
-When you draft a pattern here, you can download it in a number of formats, all neatly tiled 
-so you can print them.
+### Tegelzetter op aanvraag
+Als je hier een patroon ontwerpt, kun je het downloaden in een aantal formaten, allemaal netjes getegeld zodat je ze kunt afdrukken.
 
-You can also download the SVG source code to make further changes to the patterns.
-But once you have made those changes, there's no easy way for you to get it as a printable PDF.
+Je kunt ook de SVG broncode downloaden om de patronen verder aan te passen. Maar als je die wijzigingen hebt aangebracht, is er geen gemakkelijke manier om het als een afdrukbare PDF te krijgen.
 
-![The on-demand tiler does what you'd expect](tiler.svg)
+![De tegelzetter op aanvraag doet wat je zou verwachten](tiler.svg)
 
-Well now there is. We've added [an on-demand tiler](/tools/tiler) to the site that does just that.
-Upload your SVG, pick the format of your choice, and we'll tile it for you.
+Nu wel. We hebben [een on-demand tegelzetter](/tools/tiler) aan de site toegevoegd die precies dat doet. Upload je SVG, kies het formaat van je keuze en wij betegelen het voor je.
 
-## Looking ahead to December
+## Vooruitkijken naar december
 
-I had hoped to release my winter coat pattern during November, but alas that didn't work out.
-I'm actually still making it, and when it's ready there will be a few tweaks required to the pattern
-before I can release it.
+Ik had gehoopt mijn patroon voor winterjassen in november uit te brengen, maar dat is helaas niet gelukt. Ik ben het eigenlijk nog aan het maken, en als het klaar is zullen er een paar aanpassingen nodig zijn aan het patroon voordat ik het kan uitbrengen.
 
-But that news will have to play second fiddle to our wrap up of the year
-(traditionally on December 10th here). It's not just about what happened over the last 12 months,
-we'll also be rolling out some changes to safeguard the future of this project.
+Maar dat nieuws moet ondergeschikt worden gemaakt aan onze samenvatting van het jaar (hier traditioneel op 10 december). Het gaat niet alleen om wat er de afgelopen 12 maanden is gebeurd, we zullen ook een aantal veranderingen doorvoeren om de toekomst van dit project veilig te stellen.
 
-10 more sleeps :)
+Nog 10 slaapjes :)
 
 
