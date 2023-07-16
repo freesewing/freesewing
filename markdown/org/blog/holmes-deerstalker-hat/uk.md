@@ -1,20 +1,20 @@
 ---
 author: "joostdecock"
-caption: "Screengrab from  Bernadette Banner's YouTube tutorial for this hat"
+caption: "Скріншот з YouTube-уроку Бернадетт Баннер про цей капелюх"
 date: "2020-02-23"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/02a03dd39c9e5317e89681482735e8e5929d7c2d-2748x1546.jpg"
-intro: "New pattern: The Holmes Deerstalker Hat"
-title: "New pattern: The Holmes Deerstalker Hat"
+intro: "Новий візерунок: Капелюх переслідувача оленів Холмса"
+title: "Новий візерунок: Капелюх переслідувача оленів Холмса"
 ---
 
 
-Earlier this week, [AlfaLyr](/users/alfalyr) wrote to us to say that she had made a pattern for the iconic Sherlock Holmes Deerstalker hat, based on this YouTube tutorial by [Bernadette Banner](https://www.youtube.com/channel/UCSHtaUm-FjUps090S7crO4Q):
+Раніше цього тижня [AlfaLyr](/users/alfalyr) написала нам, що вона зробила викрійку для культового капелюха Шерлока Холмса Deerstalker, взявши за основу цей YouTube-урок від [Бернадетт Баннер](https://www.youtube.com/channel/UCSHtaUm-FjUps090S7crO4Q):
 
 <YouTube id='H24VBFMZJF4' />
 
-Unfortunately, we were just rounding up [the rollout of v2.2 of FreeSewing](/blog/breanna-measurements-sizes-in-2-2/), and it was too late to squeeze in this extra pattern.
+[На жаль, ми якраз завершували запуск v2.2 FreeSewing](/blog/breanna-measurements-sizes-in-2-2/), і було запізно втиснути цю додаткову викрійку.
 
-But obviously we love this hat, not to mention that it is the perfect accessory for our [Carlton](/designs/carlton/) and [Carlita](/designs/carlita/) patterns. So here it is, [FreeSewing 2.3](https://github.com/freesewing/freesewing/releases/tag/v2.2.0) with [the new Holmes pattern](/designs/holmes/).
+Але, очевидно, ми любимо цей капелюх, не кажучи вже про те, що він є ідеальним аксесуаром для наших моделей [Carlton](/designs/carlton/) та [Carlita](/designs/carlita/) . Отже, ось він , [FreeSewing 2.3](https://github.com/freesewing/freesewing/releases/tag/v2.2.0) з [новим шаблоном Холмса](/designs/holmes/).
 
-Enjoy!
+Смачного!
 
