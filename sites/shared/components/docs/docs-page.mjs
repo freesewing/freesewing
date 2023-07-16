@@ -18,7 +18,7 @@ export const Loading = () => (
   <Spinner className="w-24 h-24 color-primary animate-spin m-auto mt-8" />
 )
 
-const HeadInfo = ({ frontmatter, locale, slug, site }) => (
+export const HeadInfo = ({ frontmatter, locale, slug, site }) => (
   <Head>
     <meta property="og:title" content={frontmatter.title} key="title" />
     <meta property="og:type" content="article" key="type" />
@@ -62,7 +62,7 @@ export const DocsPage = ({ page, slug, locale, site, mdx }) => {
 
   return (
     <PageWrapper {...page} title={frontmatter.title}>
-      <HeadInfo {...{ frontmatter, locale, slug }} />
+      <HeadInfo {...{ frontmatter, locale, slug, site }} />
       <div className="flex flex-row-reverse flex-wrap xl:flex-nowrap justify-end">
         {frontmatter.toc && frontmatter.toc.length > 0 && (
           <div className="mb-8 w-full xl:w-80 2xl:w-96 xl:pl-8 2xl:pl-16">

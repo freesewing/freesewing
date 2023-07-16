@@ -1,4 +1,3 @@
-import { SanityMdxWrapper } from './mdx-wrapper.mjs'
 import { useTranslation } from 'next-i18next'
 
 export const Author = ({ author = {} }) => {
@@ -19,7 +18,7 @@ export const Author = ({ author = {} }) => {
         <img
           className={`block w-full h-full mx-auto rounded-full`}
           src={author.image}
-          alt={author.displayname}
+          alt={author}
         />
       </div>
       <div
@@ -31,12 +30,10 @@ export const Author = ({ author = {} }) => {
         <p
           className="text-xl"
           dangerouslySetInnerHTML={{
-            __html: t('xMadeThis', { x: author.displayname }),
+            __html: t('xMadeThis', { x: author }),
           }}
         />
-        <div className="prose mdx">
-          <SanityMdxWrapper MDX={author.about} />
-        </div>
+        <div className="prose mdx">#FIXME implement author bios</div>
       </div>
     </div>
   )

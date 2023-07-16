@@ -166,7 +166,10 @@ export const useNavigation = ({ ignoreControl = false }) => {
   // We need the account if we want to take control into account
   const { account } = useAccount()
 
-  const [navigation, setNavigation] = useState({})
+  const [navigation, setNavigation] = useState({
+    siteNav: {},
+    slugLut: [],
+  })
 
   const control = ignoreControl ? undefined : account.control
   useEffect(() => {
@@ -178,6 +181,8 @@ export const useNavigation = ({ ignoreControl = false }) => {
 
       // Set order on docs key (from from prebuild navigation)
       nav.docs.o = 30
+      nav.blog.o = 50
+      nav.showcase.o = 20
 
       setNavigation({
         siteNav: nav,

@@ -310,4 +310,6 @@ export const hasRequiredMeasurements = (Design, measies = {}, DesignIsMeasuremen
  * and then check if there are any left. If there are, those are child-pages.
  */
 export const pageHasChildren = (page) =>
-  Object.keys(page).filter((key) => !['t', 's', 'o', 'b', 'h'].includes(key)).length > 0
+  Object.keys(page).filter((key) => !['t', 's', 'o', 'b', 'h', 'd'].includes(key)).length > 0
+
+export const localeSlug = (loc, slug) => (loc === 'en' ? slug : '/' + loc + slug)

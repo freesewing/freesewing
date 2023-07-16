@@ -1,6 +1,6 @@
 import { DocsPage, ns as pageNs } from 'shared/components/docs/docs-page.mjs'
 import { mdxLoader } from 'shared/mdx/v3loader.mjs'
-import { mdxPaths } from 'site/prebuild/mdx-paths.en.mjs'
+import { mdxPaths } from 'site/prebuild/docs/mdx-paths.en.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default DocsPage

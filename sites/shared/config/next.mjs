@@ -31,8 +31,8 @@ const config = ({ site, jargon = {} }) => {
     webpack: (config, options) => {
       config.optimization = {
         ...config.optimization,
-        moduleIds: 'deterministic',
-        chunkIds: 'deterministic',
+        // moduleIds: 'deterministic',
+        // chunkIds: 'deterministic',
         // splitChunks: {
         //   chunks: 'async',
         //   minSize: 20000,

@@ -51,7 +51,8 @@ const checkReportStatus = async (id) => await sendApiRequest(`reports/${id}`)
 const getReportUrl = async (id) => await sendApiRequest(`reports/${id}/download`)
 const downloadReport = async (url) => await sendApiRequest('', false, url)
 
-export const prebuildCrowdin = async () => {
+export const prebuildCrowdin = async (SITE) => {
+  if (SITE !== 'org') return
   const contributions = {}
   for (let language of languages) {
     console.log(`Loading translator contributions for ${language}`)

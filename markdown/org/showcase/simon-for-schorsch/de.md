@@ -11,5 +11,5 @@ title: "[auf Englisch] A Simon for Schorsch"
 Perhaps the most adorable Simon to date, this shirt was made for a FreeSewing user's baby frog, Schorsch.
 
 This picture was originally posted on Twitter and is reproduced here with permission.
-<!--- https://twitter.com/ne_nuudle/status/1341791252157788160 --->
+https://twitter.com/ne_nuudle/status/1341791252157788160
 

@@ -78,5 +78,8 @@ export const ReadMore = ({ recurse = 0, root = false, site = 'org', depth = 99 }
 
   const tree = root === false ? getRoot[site](slug, siteNav) : getRoot[site](root, siteNav)
 
+  console.log(tree)
+  if (!tree) return null
+
   return <RenderTree {...{ tree, recurse, depth }} />
 }

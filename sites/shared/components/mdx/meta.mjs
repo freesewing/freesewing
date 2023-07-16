@@ -9,7 +9,7 @@ import { DateTime, Interval } from 'luxon'
 import { useTranslation } from 'next-i18next'
 import { EditIcon } from 'shared/components/icons.mjs'
 
-export const TimeAgo = ({ date, t }) => {
+export const TimeAgo = /*#__PURE__*/ ({ date, t }) => {
   const i = Interval.fromDateTimes(DateTime.fromISO(date), DateTime.now())
     .toDuration(['hours', 'days', 'months', 'years'])
     .toObject()
