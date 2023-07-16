@@ -1,6 +1,6 @@
-- - -
-title: "Sleeve width guarantee"
-- - -
+---
+title: "Garantie der Ärmelbreite"
+---
 
 Wir entwerfen zuerst die Armöffnung, dann entwerfen wir einen Ärmel zu ihr passen.
 
