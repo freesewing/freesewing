@@ -1,66 +1,66 @@
 ---
 author: "joostdecock"
-caption: "Drawing by @racerxmachina, Sandy!"
+caption: "Малюнок від @racerxmachina, Сенді!"
 date: "2021-10-20"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/37c6f1c78ac0bfb539ea2b11ff32f104c34a0d6d-1666x1111.jpg"
-intro: "You may already have an idea for what you want to make for Halloween. Or maybe you have no clue. Either way, here is some inspiration to get you going."
-title: "Get your Halloween going with these inspirational costume ideas"
+intro: "Можливо, у вас вже є ідея, що ви хочете зробити на Геловін. А може, ви й гадки не маєте. У будь-якому випадку, ось вам трохи натхнення для початку роботи."
+title: "Почніть святкувати Хелловін з цих надихаючих ідей для костюмів"
 ---
 
- You may already have an idea for what you want to make for Halloween. Or maybe you have no clue. Either way, here is some inspiration to get you going.
+ Можливо, у вас вже є ідея, що ви хочете зробити на Геловін. А може, ви й гадки не маєте. У будь-якому випадку, ось вам трохи натхнення для початку роботи.
 
-### Want to go for a vintage look?
-Many of our patterns can give you a vintage-esque look without actually having to be vintage.  
-Working outwards from the bases of [Charlie](/designs/charlie) and [Simon](/designs/simon/)/[Simone](/designs/simone/), you can then use combination of [Wahid](/designs/wahid/), [Jaeger](/designs/jeager), [Carlton](/designs/carlton/)/[Carlita](/designs/carlita) for the outerwear. To complete the look, don a [Florent](/designs/florent) and a [Trayvon](/designs/trayvon) or [Benjamin](/designs/benjamin). If [Charlie](/designs/charlie/) isn’t doing it for you, maybe switch it out for a [Cornelius](/designs/cornelius/) or a floor -length quarter-circle or half-circle [Sandy Skirt](/designs/sandy/).
+### Хочете створити вінтажний образ?
+Багато з наших візерунків можуть надати вам вінтажного вигляду без необхідності бути вінтажними.  
+Відштовхуючись від основ [Charlie](/designs/charlie) і [Simon](/designs/simon/)/[Simone](/designs/simone/), ви можете використовувати комбінації [Wahid](/designs/wahid/), [Jaeger](/designs/jeager), [Carlton](/designs/carlton/)/[Carlita](/designs/carlita) для створення верхнього одягу. Щоб завершити образ, одягніть [Florent](/designs/florent) і [Trayvon](/designs/trayvon) або [Benjamin](/designs/benjamin). Якщо вам не підходить [Charlie](/designs/charlie/) , можливо, варто замінити його на [Cornelius](/designs/cornelius/) або чверть-коло чи півколо довжиною до підлоги [Sandy Skirt](/designs/sandy/).
 
-### Want to have more of Gothic look?
-First, let’s make more Romantic version of [Simon](/designs/simon/)/[Simone](/designs/simone/). You can do this by slashing and spreading the sleeve piece. There are many ways to do this and many variations, but we recommend a bishop sleeve which you can find [on SewingJulie's YouTube channel](https://www.youtube.com/watch?v=GkEZtATYZ2g&ab_channel=SewingJulie). Just remember that [Simon](/designs/simon/)([e](/designs/simone/)) has already been drafted for a cuff and has a placket. From there you can throw on a pair of [Charlies](/designs/charlie/).
+### Хочете мати більше готичного вигляду?
+Спочатку зробимо більш романтичну версію [Simon](/designs/simon/)/[Simone](/designs/simone/). Ви можете зробити це, розрізавши і розправивши частину рукава. Існує багато способів зробити це і багато варіацій, але ми рекомендуємо рукав єпископа, який ви можете знайти [на YouTube-каналі SewingJulie](https://www.youtube.com/watch?v=GkEZtATYZ2g&ab_channel=SewingJulie). Просто пам'ятайте, що [Саймон](/designs/simon/)([e](/designs/simone/)) вже був призваний на військову службу і має бляху. Звідти ви можете накинути пару [Чарлі](/designs/charlie/).
 
-For outerwear, you can either go for a [Wahid](/designs/wahid/) or [Cathrin](/designs/cathrin/) and to finish the look we recommend the square variant of [Benjamin](/designs/benjamin/). Again if [Charlie](/designs/charlie/) is not your thing you can try [Penelope](/designs/penelope/) or [Sandy](/designs/sandy/).  
+Для верхнього одягу ви можете обрати [Wahid](/designs/wahid/) або [Cathrin](/designs/cathrin/) , а для завершення образу ми рекомендуємо квадратний варіант [Benjamin](/designs/benjamin/). Знову ж таки, якщо [Чарлі](/designs/charlie/) вам не підходить, ви можете спробувати [Пенелопу](/designs/penelope/) або [Сенді](/designs/sandy/).  
 ![A drawing of a vampire-like man, wearing a poofy Simon shirt and a purple Wahid waistcoat](https://posts.freesewing.org/uploads/wahidsimonvamp_345e8bb3b0.jpg)  
-*Drawing by @racerxmachina, Sandy*
+*Малюнок від @racerxmachina, Сенді*
 
-### Or are you more of a secret agent?
-Get the suave look by making a [Jaeger](/designs/jaeger/), [Trayvon](/designs/trayvon/), and [Charlie](/designs/charlie/) and pair it with your favourite sunglasses. If the [Jaeger](/designs/jaeger/) isn’t your style, try switching it out for a [Wahid](/designs/wahid/). And if trousers don’t take your fancy, try [Penelope](/designs/penelope/) or a quarter-circle [Sandy](/designs/sandy/).
+### Чи ви більше схожі на таємного агента?
+Створіть вишуканий образ, придбавши [Jaeger](/designs/jaeger/), [Trayvon](/designs/trayvon/)та [Charlie](/designs/charlie/) і поєднайте їх з улюбленими сонцезахисними окулярами. Якщо [Jaeger](/designs/jaeger/) не ваш стиль, спробуйте замінити його на [Wahid](/designs/wahid/). А якщо штани вам не подобаються, спробуйте [Пенелопу](/designs/penelope/) або чверть кола [Сенді](/designs/sandy/).
 
-Or maybe you want to be in your combat garb. Try combining [Sven](/designs/sven/) and [Paco](/designs/paco/). Pair them with some combat boots and a belt of your choosing.
+А може, ви хочете бути в бойовій формі. Спробуйте поєднати [Свен](/designs/sven/) та [Пако](/designs/paco/). Поєднайте їх з бойовими черевиками та ременем на ваш вибір.
 
-### Maybe you are more of fantasy dweller?
-Whilst we don’t have many patterns that emulate fantasy, the [Cathrin Corset](/designs/cathrin/) is a great place to start. Combine it with a Puff-Sleeve variant of [Teagan](/designs/teagan/) and a floor-length quarter- or half-circle [Sandy](/designs/sandy/), and you are well on your way to emulating [the Cathrin cover art](/designs/cathrin/). For those of you who are feeling a little more adventurous, a little challenge for you: try combining [Cornelius](/designs/cornelius/) and [Paco](/designs/paco/) together to create satyr legs, then perhaps pair it with [Wahid](/designs/wahid/) and [Simon](/designs/simon/)/[Simone](/designs/simone/).
+### Можливо, ви більше любите фантазувати?
+Хоча у нас не так багато моделей, що імітують фантазію, корсет [Cathrin Corset](/designs/cathrin/) - чудове місце для початку. Поєднайте його з варіантом з рукавами-буфами [Teagan](/designs/teagan/) і чверть- або півколом довжиною до підлоги [Sandy](/designs/sandy/), і ви будете на шляху до наслідування [обкладинки Cathrin](/designs/cathrin/). Для тих, хто відчуває себе трохи більш авантюрним, невеликий виклик: спробуйте поєднати [Cornelius](/designs/cornelius/) і [Paco](/designs/paco/) разом, щоб створити ноги сатира, а потім, можливо, поєднати їх з [Wahid](/designs/wahid/) і [Simon](/designs/simon/)/[Simone](/designs/simone/).
 
-### Become "that suit person."
-This is a goofy outfit that can be worn to any informal party. The formal aspects of [Jaeger](/designs/jaeger/) and [Charlie](/designs/charlie/) clash beautifully with crazy patterned fabrics, which makes for a super fun Halloween outfit, which can also be worn to other parties in the future. Making a [Jaeger](/designs/jaeger/) is hard, but at least the idea is simple: find your favourite crazy fabric and use it for both pieces. You can wear a white dress shirt (or a white [Simon](/designs/simon/)) underneath. There's an option to add a [Trayvon](/designs/trayvon/) or [Benjamin](/designs/benjamin/) in a bright color as well. The possibilities are endless!
+### Станьте "тією самою людиною в костюмі".
+Це дурнувате вбрання, яке можна одягнути на будь-яку неформальну вечірку. Формальні аспекти [Jaeger](/designs/jaeger/) та [Charlie](/designs/charlie/) чудово поєднуються з божевільними візерунчастими тканинами, що створює надзвичайно веселе вбрання на Хелловін, яке можна вдягати і на інші вечірки в майбутньому. Зробити [Jaeger](/designs/jaeger/) складно, але принаймні ідея проста: знайдіть свою улюблену божевільну тканину і використовуйте її для обох виробів. Під неї можна одягнути білу сорочку (або білу [Simon](/designs/simon/)). Також є можливість додати [Trayvon](/designs/trayvon/) або [Benjamin](/designs/benjamin/) в яскравому кольорі. Можливості безмежні!
 
-### Or maybe you only want to make one or two garments for an easy-to-wear costume?
-[Huey](/designs/huey/), [Hugo](/designs/hugo/), and [Paco](/designs/paco/) are perfect bases to create simple animal hoodies and trousers that will also be comfortable to wear. There are many animals you can try so here are a few basic alterations and ideas to get your creative brain flowing.
+### А може, ви хочете зробити лише одну чи дві деталі для зручного костюма?
+[Huey](/designs/huey/), [Hugo](/designs/hugo/)та [Paco](/designs/paco/) - ідеальні основи для створення простих худі та штанів з тваринами, які також будуть зручними в носінні. Є багато тварин, яких ви можете спробувати, тож ось кілька основних змін та ідей, щоб змусити ваш творчий мозок працювати.
 
-#### Creating a back seam for Hugo and Huey
-For simple things like back spikes for dinosaurs, you may find it useful to create a back seam in [Hugo](/designs/hugo/) or [Huey](/designs/huey/). This is simply done by cutting two back pieces instead of one on the fold. Don't forget to add seam allowance along the center back! From there you would construct your additions, such as spikes, and then baste them to one of the back pieces with right sides together. Then pin the other back piece over the top, right sides together and sew. This will now count as your single back piece in the Huey and [Hugo instructions](https://freesewing.org/docs/patterns/hugo/instructions/).
+#### Створення заднього шва для Хьюго та Г'юї
+Для простих речей, таких як шипи на спині для динозаврів, вам може бути корисно створити задній шов в [Hugo](/designs/hugo/) або [Huey](/designs/huey/). Це просто робиться шляхом відрізання двох задніх частин замість однієї на згині. Не забудьте додати припуски на шви по центру спинки! Звідти ви створюєте свої доповнення, наприклад, шипи, а потім пришиваєте їх до однієї із задніх частин прямими сторонами разом. Потім приколіть другу задню частину зверху, лицьовими боками разом, і зшийте. Тепер це буде зараховано як ваш єдиний задній елемент в інструкціях Huey та [Hugo](https://freesewing.org/docs/patterns/hugo/instructions/).
 
-The same can be done with the hood center piece for [Hugo](/designs/hugo/), and [Huey](/designs/huey/)'s hood already has a center back seam so no changes are required for Huey's hood. Another thing you can do is split the hood patterns in half ear to ear if you are adding stuff like ears but you may find it easier just to hand sew these elements on.
+Те ж саме можна зробити з центральною частиною капота для [Hugo](/designs/hugo/)та [Huey](/designs/huey/)вже має центральний задній шов, тому для капота Huey не потрібно вносити ніяких змін. Ви також можете розділити викрійку капюшона навпіл від вуха до вуха, якщо ви додаєте такі елементи, як вуха, але, можливо, вам буде простіше просто пришити ці елементи вручну.
 
-For these particular costumes we recommend using fabrics that do not fray such as polar fleece for the body and larger additions, with felt being an option for the smaller add-ons.
+Для цих костюмів ми рекомендуємо використовувати тканини, які не зношуються, наприклад, полярний фліс для тіла і великих аксесуарів, а для менших аксесуарів - фетр.
 
-With these alterations in mind, let’s talk some ideas.
+Враховуючи ці зміни, давайте обговоримо деякі ідеї.
 
-#### Wings
-This might sound odd at first, but hear me out. You can add wings by making a quarter- or half-circle and inserting them into the side seams of [Huey](/designs/huey/) and [Hugo](/designs/hugo/). If you make want to make your wings more spiky, cut-out semi-circles from the curved edge of your pattern, a plate will make this a lot quicker. Experiment! There are many types of wings and many shapes for them!
-#### Bear
-Who doesn’t want a ferocious bear running around a party? Create round ears for the hood and an oval shape to go on front for the underbelly. You can make a simple small tail for the back of the hoodie.
-#### Cat
-Everybody wants to be a cat! Well not everybody, but if you want to go as one of the Halloween staples and be comfortable, this is the way to do. Add pointed triangle ears to the hood and possibly whiskers with pipe cleaners and add a long sausage tail to the back.
-#### Dinosaurs
-Add horns! Add teeth! Add spikes! The possibilities are endless! If you want to keep it simple, make the center back seam adjustment and add some spikes, then add some felt triangles to represent teeth around the brim of the hood. If you are feeling more daring, why not try to emulate a triceratops head with its horns. You can also add spots to represent dinosaur skin and even a tail if you're up for it.  
+#### Крила
+Спочатку це може здатися дивним, але вислухайте мене. Ви можете додати крила, зробивши чверть або півкола і вставивши їх в бічні шви [Huey](/designs/huey/) і [Hugo](/designs/hugo/). Якщо ви хочете зробити крила більш гострими, виріжте півкола з вигнутого краю вашої викрійки - тарілка зробить це набагато швидше. Експериментуй! Існує багато типів крил і багато форм для них!
+#### Ведмідь.
+Хто не хоче, щоб на вечірці бігав лютий ведмідь? Зробіть круглі вушка для капюшона і овальну форму спереду для нижньої частини живота. Ви можете зробити простий маленький хвіст на спині худі.
+#### Кіт.
+Кожен хоче бути котиком! Ну, не для всіх, але якщо ви хочете бути одним з основних атрибутів Хеллоуїна і почувати себе комфортно, то це саме те, що вам потрібно. Додайте загострені трикутні вуха на капюшон і, можливо, вуса за допомогою ершиків для чищення труб, а ззаду додайте довгий хвіст-ковбаску.
+#### Динозаври
+Додай роги! Додай зуби! Додайте шипів! Можливості безмежні! Якщо ви хочете, щоб все було просто, відрегулюйте центральний задній шов і додайте кілька шипів, а потім додайте трикутники з фетру, щоб зобразити зубці по краях капюшона. Якщо ви відчуваєте себе більш сміливими, чому б не спробувати імітувати голову трицератопса з рогами. Ви також можете додати плями, щоб зобразити шкіру динозавра і навіть хвіст, якщо хочете.  
 ![A drawing of a child and an adult walking hand in hand, one wearing a bat costume, the other a dragon costume](https://posts.freesewing.org/uploads/huey_paco_costumes_8a199c7572.jpg)  
-*Drawing by @racerxmachina, Sandy*
+*Малюнок @racerxmachina, Sandy*
 
-#### Dog
-Add triangle ears and a wagging tail, or if that’s not to your liking you can try floppy ears. For more variation you can add spots to denote color. Possibly, be a Cruella and make it look like a Dalmatian.
-#### Rabbit
-Go for pink, white, yellow, brown, grey, black or any other color a bunny can be! Add oval-shaped ears and a small nose. For a tail, simply gather up a circle of fur fabric around a ball of stuffing and hand sew to your hoodie.
-#### Pokemon
-Now I know what you are thinking. Why is this in the regulars? Well we thought it was best to keep all the [Hugo](/designs/hugo/) and [Huey](/designs/huey/) adaptations together. So why not be inspired by [Frankie’s Bulbasaur Huey](/showcase/bulbasaur-huey/) they made for the child and make a [Huey](/designs/huey/) or [Hugo](/designs/hugo/) inspired favourite Pokemon. You can be as elaborate as you like and make ears, bulbs, and other appendages, or you can simply use the color scheme of your favourite Pokemon and add their eyes, mouth and nose on the hood.
-#### Detective Pikachu
-A detective that might even rival Sherlock Holmes would also be amiss without their hat. Use a [Holmes](/designs/holmes/) with a beige brown herringbone fabric and dark brown ribbon. Now what about the ears? The ears?! Why yes, Pikachu’s ears! Make a two-layered oval shape with a straight bottom. You can either cut and sew the black tops on as a seam or sew them on after you've turned the yellow parts right-side-out. Sew the two yellow layers together good sides together leaving the bottom open, trim and clip the seam allowances, then turn right-side-out. Once turned, stuff and hand sew to the ear flaps of the deerstalker before they are attached to the crown. You can sew these on after final construction if easier, just remember to close the bottom as a seam with hand-sewing before attaching to ear flaps. If you’re not aiming the exact look experiment with different colors and patterns and make a unique Detective Pikachu hat just for you!
+#### Собака.
+Додайте трикутні вуха і виляючий хвіст, або, якщо вам це не до вподоби, спробуйте висячі вуха. Для більшої варіативності ви можете додати плями для позначення кольору. Можливо, бути Круеллою і зробити його схожим на далматинця.
+#### Кролик.
+Вибирайте рожевий, білий, жовтий, коричневий, сірий, чорний або будь-який інший колір кролика! Додайте вуха овальної форми і маленький носик. Для хвоста просто зберіть коло з хутряної тканини навколо кульки з набиванням і пришийте вручну до худі.
+#### Покемони.
+Тепер я знаю, про що ви думаєте. Чому це в постійних клієнтах? Ми вирішили, що найкраще тримати всі адаптації [Г'юго](/designs/hugo/) та [Г'юї](/designs/huey/) разом. Тож чому б не надихнутися [бульбасавра Х'юї Френкі](/showcase/bulbasaur-huey/) , якого вони зробили для дитини, і не зробити [Х'юї](/designs/huey/) або [Хьюго](/designs/hugo/) , натхненного улюбленим покемоном. Ви можете бути настільки вигадливими, наскільки вам подобається, і зробити вуха, цибулини та інші придатки, або ж просто використати колірну гамму ваших улюблених покемонів і додати їхні очі, рот і ніс на капюшон.
+#### Детектив Пікачу
+Детектив, який міг би конкурувати з Шерлоком Холмсом, також не обійдеться без капелюха. Використовуйте [Holmes](/designs/holmes/) з бежево-коричневою ялинковою тканиною і темно-коричневою стрічкою. А як щодо вух? Вуха?! Так, вуха Пікачу! Зробіть двошарову овальну форму з прямим дном. Ви можете або вирізати і пришити чорні верхні частини швом впритул, або пришити їх після того, як вивернете жовті частини лицьовим боком. Зшийте два жовтих шари лицьовими боками разом, залишивши низ відкритим, обріжте і закріпіть припуски швів, а потім виверніть на виворітний бік. Після вивертання набийте і пришийте вручну до вушних раковин оленя, перш ніж вони будуть прикріплені до корони. Ви можете пришити їх після остаточного виготовлення, якщо це простіше, просто не забудьте закрити низ ручним швом перед тим, як прикріпити до вушних раковин. Якщо ви не прагнете до точного вигляду, поекспериментуйте з різними кольорами та візерунками і зробіть унікальний капелюх детектива Пікачу саме для вас!
 
-> *This was a collaboration between bobgeorgethethird and lucibytes!*
+> *Це була колаборація між bobgeorgethethird та lucibytes!*
