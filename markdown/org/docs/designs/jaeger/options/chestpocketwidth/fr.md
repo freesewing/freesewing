@@ -1,5 +1,5 @@
 - - -
-title: "Chest pocket width"
+titre : "Largeur de la poche de poitrine"
 - - -
 
 ![Largeur de la poche poitrine](chestpocketwidth.svg)
