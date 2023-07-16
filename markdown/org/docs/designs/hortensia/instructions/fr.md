@@ -1,5 +1,5 @@
 ---
-title: "Sac à main Hortensia : Instructions de couture"
+title: "Hortensia handbag: Sewing Instructions"
 ---
 
 ### (Optionnel) Étape 1 : Entoiler le tissu principal
@@ -62,7 +62,7 @@ Nous recommandons que les languettes soient environ un quart de la longueur des 
 - Press under the top seam allowance of the side panel reinforcement parts.
 - Place the side panel reinforcement parts on top of the side panels matching the raw edges.
 - _Edgestitch_ the folded edge of the reinforcement parts to the side panels.
-- _Baste_ the raw edges together.
+- _Collez_ les bords bruts ensemble.
 
 ### Étape 8 : Fixer les panneaux latéraux au tube
 
