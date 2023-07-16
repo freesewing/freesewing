@@ -1,5 +1,5 @@
 ---
-title: "Sandy circle skirt"
+title: "Sandy, falda de vuelo"
 ---
 
 <PatternDocs pattern='sandy' />
