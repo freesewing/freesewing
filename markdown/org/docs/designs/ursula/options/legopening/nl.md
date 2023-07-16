@@ -1,5 +1,5 @@
 ---
-title: "Leg opening"
+title: "Been opening"
 ---
 
 Deze optie bepaalt hoe hoog de broekspijp is.
