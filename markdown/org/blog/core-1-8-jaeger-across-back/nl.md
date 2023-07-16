@@ -3,12 +3,12 @@ author: "joostdecock"
 caption: "Deze update bereikt je vanuit Bangkok"
 date: "2018-03-21"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/34ed654dcda9004e7c249b90256ad197469cc87e-1920x1277.webp"
-intro: "We've just pushed the  button on core 1.8.0. That bump in minor number is typically because we have a new pattern, but in this case, there's two reasons:"
+intro: "We hebben zojuist de knop voor core 1.8.0 ingedrukt. Die hobbel in het kleine getal is meestal omdat we een nieuw patroon hebben, maar in dit geval zijn er twee redenen:"
 title: "FreeSewing core 1.8: het Jaeger-jasje komt erbij en de 'across back'-afmeting verdwijnt"
 ---
 
 
-We've just pushed the *release* button on core 1.8.0. That bump in minor number is typically because we have a new pattern, but in this case, there's two reasons:
+We hebben zojuist op de *release* knop gedrukt voor core 1.8.0. Die hobbel in het kleine getal is meestal omdat we een nieuw patroon hebben, maar in dit geval zijn er twee redenen:
 
  - Het [Jaeger-jasje](/patterns/jaeger) is nu beschikbaar
  - We hebben de afmeting *across back* verwijderd
