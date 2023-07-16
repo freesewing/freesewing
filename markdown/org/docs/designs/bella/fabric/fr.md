@@ -1,5 +1,5 @@
 ---
-title: "Bloc du corps de Bella : Options du tissu"
+title: "Bella body block: Fabric Options"
 ---
 
 Si vous réalisez Bella par défaut pour voir comment il vous va, nous vous recommandons d'utiliser un tissu tel que le **Calico (Mouseline)** ou un tissu moins cher qui correspond au drapé et à l'élasticité du tissu avec lequel vous avez l'intention de réaliser une version finalisée de Bella.
