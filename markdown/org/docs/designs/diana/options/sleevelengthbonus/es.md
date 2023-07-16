@@ -1,5 +1,5 @@
 ---
-title: "Sleeve length bonus"
+title: "Longitud extra de manga"
 ---
 
 ![La opción de extra de longitud de manga en Diana](./sleevelengthbonus.svg)
