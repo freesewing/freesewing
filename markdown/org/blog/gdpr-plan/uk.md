@@ -1,285 +1,285 @@
 ---
 author: "joostdecock"
-caption: "This image is probably the only thing in the post you can skim diagonally"
+caption: "Це зображення, мабуть, єдине, що можна пробігти по діагоналі в цьому дописі"
 date: "2018-02-14"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/39f3d1e7320510b2dd12cc1bc2e58008263889f3-1920x1280.webp"
-intro: "The General Data Protection Regulation of the European Union: Our battle plan."
-title: "The General Data Protection Regulation of the European Union: Our battle plan."
+intro: "Загальний регламент захисту даних Європейського Союзу: Наш бойовий план."
+title: "Загальний регламент захисту даних Європейського Союзу: Наш бойовий план."
 ---
 
-This blog post is about the General Data Protection Regulation (GDPR) of the European Union (EU). While I cover the basics of GDPR, the main focus is on how it impacts freesewing.org, and what we plan to do to in the 100 days that remain before GDPR goes into force.
+Ця публікація в блозі присвячена Загальному регламенту захисту даних (GDPR) Європейського Союзу (ЄС). Хоча я висвітлюю основи GDPR, основна увага приділяється тому, як він впливає на freesewing.org, і що ми плануємо зробити за 100 днів, які залишилися до набрання чинності GDPR.
 
-This is a bit of a long read, so here's a table of contents:
+Це трохи довгий текст, тому ось зміст:
 
-## Thoughts on the EU's GDPR
+## Думки про GDPR ЄС
 
-I have a love/hate relationship with the European Union. I love what they do and what they stand for, I hate how they do it.
+У мене стосунки з Європейським Союзом - любов/ненависть. Мені подобається те, що вони роблять, і те, що вони відстоюють, але я ненавиджу те, як вони це роблять.
 
-![I totally get this dude](https://posts.freesewing.org/uploads/rage_quit_fff821e695.gif)
+![Я повністю розумію цього чувака.](https://posts.freesewing.org/uploads/rage_quit_fff821e695.gif)
 
-The GDPR is no different. It's an important piece of legislation that raises the bar for online privacy, which is great. But as I was reading up on the subject, I felt the urge to rage-quit because OMG bureaucrats.
+GDPR не є винятком. Це важливий законодавчий акт, який піднімає планку конфіденційності в Інтернеті, і це чудово. Але коли я читав про це, я відчув бажання розлютитися і звільнитися, тому що бюрократи - це ОМГ.
 
-Allow me to explain.
+Дозвольте мені пояснити.
 
-### Privacy needs protection
-For better or for worse (I believe for worse) the internet has settled into a modus operandi where you pay for *free stuff* with your personal data. Some people call it [people farming](https://ar.al/notes/we-didnt-lose-control-it-was-stolen/), and I think that's a great term.
+### Конфіденційність потребує захисту
+На краще чи на гірше (я вважаю, що на гірше), але в інтернеті встановився спосіб , коли ви платите за *безкоштовні речі* своїми особистими даними. Дехто називає це [людей, які займаються фермерством](https://ar.al/notes/we-didnt-lose-control-it-was-stolen/), і я вважаю, що це чудовий термін.
 
-The [frightful five](https://www.nytimes.com/2017/05/10/technology/techs-frightful-five-theyve-got-us.html) are vacuuming up ever more of our personal lives. Short of never going online, there seems to be precious little we can do about it.
+Страшна п'ятірка [](https://www.nytimes.com/2017/05/10/technology/techs-frightful-five-theyve-got-us.html) пилососить все більше і більше нашого особистого життя. Крім того, що ми ніколи не виходимо в Інтернет, ми мало що можемо з цим зробити.
 
-### Why the EU is the best
-This problem is too big to tackle by any of us. Who could possibly stand up to the combined power of the tech giants?
+### Чому ЄС найкращий
+Ця проблема надто велика, щоб вирішити її самотужки. Хто може протистояти об'єднаній потужності технологічних гігантів?
 
-Well, how's this for a CV:
+Ну, як вам таке резюме?
 
-  - Fined Facebook 110 million euro for misleading statements about their WhatsApp purchase
-  - Ordered Amazon to pay 250 million euro extra taxes in Luxembourg
-  - Fined Google 2.4 billion euro for abusing its dominant position in search
-  - Ordered Apple to pay 13 billion euro extra taxes in Ireland
+  - Оштрафував Facebook на 110 млн євро за неправдиві заяви про купівлю WhatsApp
+  - Зобов'язав Amazon сплатити 250 мільйонів євро додаткових податків у Люксембурзі
+  - Оштрафував Google на 2,4 млрд євро за зловживання домінуючим становищем у пошуку
+  - Зобов'язав Apple сплатити 13 мільярдів євро додаткових податків в Ірландії
 
-![We're the EU, bitch](titanfall.gif)
+![Ми - ЄС, сука.](titanfall.gif)
 
-When it comes to tech giants, the European Union is all stick/ no carrot.
+Коли справа доходить до технологічних гігантів, Європейський Союз діє за принципом "батога і пряника".
 
-The General Data Protection Regulation enforces privacy policies that respect users' rights. It applies to all EU citizens, all the time, everywhere.
+Загальний регламент про захист даних забезпечує дотримання політики конфіденційності, яка поважає права користувачів. Він поширюється на всіх громадян ЄС, завжди і всюди.
 
-Doesn't matter if you're a silicon valley juggernaut, respect the rights of the EU citizens or face the wrath of the eurocracy:
+Неважливо, чи є ви джаггернаутом Кремнієвої долини, чи поважаєте права громадян ЄС, чи стикаєтесь з гнівом єврократії:
 
-> Organizations in breach of GDPR can be fined up to 4% of annual global turnover or 20 million euro (whichever is greater)
+> Організації, які порушують GDPR, можуть бути оштрафовані на суму до 4% річного глобального обороту або 20 мільйонів євро (залежно від того, яка сума більша)
 
-Four percent of global turnover is *a very big stick*.
+Чотири відсотки світового обороту - це *дуже велика палиця*.
 
-### Why the EU is the worst
+### Чому ЄС найгірший
 
-![What I imagine a Article 29 Working Party looks like](complicated.gif)
+![Як я уявляю собі Робочу групу за Статтею 29](complicated.gif)
 
-The EU being the EU, the regulation is a mixed bag of lofty goals and ideals, watered down by lobbying groups, and further complicated by the compromise required to get 28 member states on board.
+Оскільки ЄС є ЄС, регулювання являє собою змішаний мішок високих цілей та ідеалів, розмитих лобістськими групами, і ще більше ускладнених компромісом, необхідним для того, щоб залучити 28 країн-членів до участі в ньому.
 
-The intentions are great, it's a great idea, but they are doing a terrible job at selling it --- as usual.
+Наміри чудові, це чудова ідея, але вони, як завжди, роблять жахливу роботу, щоб її продати --- як завжди.
 
-The practical implementation is in the hands of the so-called *Article 29 Working Party* which is currently keeping busy designing icons (I am [not making this up](https://www.google.be/search?q=standardised+icons+gdpr)) It will change its name to the *European Data Protection Board* come May 25th, because you wouldn't want to get too comfortable with all this jargon now, would you?
+Практична імплементація знаходиться в руках так званої *Робочої групи* статті 29, яка наразі зайнята розробкою іконок (я [не вигадую](https://www.google.be/search?q=standardised+icons+gdpr)) 25 травня вона змінить свою назву на *Європейська рада з питань захисту даних* , адже ви ж не хочете, щоб вам було надто комфортно з усією цією термінологією зараз, чи не так?
 
-## The GDPR in practice
+## GDPR на практиці
 
-If you're looking for expert advice on GDPR compliance, this is not the place for you.
+Якщо ви шукаєте експертну пораду щодо дотримання GDPR, це не те місце, де ви шукаєте.
 
 
-But if you are curious about the GDPR and what it takes for a website like freesewing.org to be compliant, read on.
+Але якщо вам цікаво, що таке GDPR і що потрібно для того, щоб веб-сайт, такий як freesewing.org , відповідав його вимогам, читайте далі.
 
 > ##### Подальше вивчення
 > 
-> If you really want to know what GDPR is, the best thing you can do is [read the damn thing](http://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX%3A32016R0679). It ain't no rocket science.
+> Якщо ви дійсно хочете знати, що таке GDPR, найкраще, що ви можете зробити, це [прочитати цю чортову річ](http://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX%3A32016R0679). Це не складна наука.
 > 
-> If legislative texts make you run for the hills, the UKs ICO has [easily one of the best guides on GDPR](https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/).
+> Якщо законодавчі тексти змушують вас бігти в гори, британська ICO має [легко один з найкращих посібників з GDPR](https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/).
 
-### Good to know
+### Приємно це чути.
 
-A few things you should know before we dive into GDPR:
+Кілька речей, які ви повинні знати, перш ніж ми зануримося в GDPR:
 
-#### There's 100 days left
+#### Залишилося 100 днів
 
-The GDPR was adopted back in 2016, but it won't grow its teeth until May 25th 2018.
+GDPR був прийнятий ще у 2016 році, але він "відростить зуби" лише 25 травня 2018 року.
 
-Until that day, you get a pass. After that day, it's for real. Which means we have 100 days left to get our house in order.
+До цього дня ви отримуєте перепустку. Після того дня все стало по-справжньому. А це означає, що у нас залишилося 100 днів, щоб навести лад у нашому домі.
 
-#### There's exemptions for SMEs
+#### Існують винятки для МСП
 
-Organizations employing fewer than 250 people are exempt from some of the more bureaucratic aspects of the GDPR, such as a bunch of documenting requirements.
+Організації, в яких працює менше 250 осіб, звільняються від деяких більш бюрократичних аспектів GDPR, таких як вимоги до документації.
 
-Essentially, while you still have to do the right thing, there's a lot less paperwork to fill out.
+По суті, хоча ви все одно повинні робити правильні речі, паперової роботи стає набагато менше.
 
-Freesewing employs zero people, so we're off the hook.
+У Freesewing працює нуль людей, тож ми зняті з гачка.
 
-#### There's extra provisions for sensitive data
+#### Існують додаткові положення для конфіденційних даних
 
-> Body measurements alone are not sensitive data
+> Самі по собі розміри тіла не є конфіденційними даними
 
-The GDPR has extra provisions for *sensitive data* such as biometric data, profiling, and a bunch of other stuff.
+GDPR містить додаткові положення щодо *чутливих даних* , таких як біометричні дані, профілювання та багато іншого.
 
-This was cause for concern because we collect body measurements, and one of our questions was whether that qualifies as biometric data.
+Це викликало занепокоєння, оскільки ми збираємо виміри тіла, і одне з наших питань полягало в тому, чи можна вважати це біометричними даними.
 
-Turns out it doesn't. Biometric data is what you can use to identify a person, like a fingerprint or iris scan. Body measurements alone are not sensitive data.
+Виявляється, що ні. Біометричні дані - це те, що можна використовувати для ідентифікації особи, наприклад, відбитки пальців або сканування райдужної оболонки ока. Самі по собі розміри тіла не є конфіденційною інформацією.
 
 
-### Collecting data through consent
+### Збір даних за згодою
 
-To collect data, you need a so-called *lawful basis for data processing*.  
-There are different types, but the one that applies to us (and to most online services) is **consent**.
+Для збору даних потрібна так звана *законна підстава для обробки даних*.  
+Існують різні типи, але той, який застосовується до нас (і до більшості онлайн-сервісів) - це **згода**.
 
-In this scenario, your legal basis for processing the data is that you've asked the person to get their data and they've freely given it to you.
+У цьому сценарії ваша правова підстава для обробки даних полягає в тому, що ви попросили особу отримати її дані , і вона добровільно надала їх вам.
 
-That is straight-forward, and makes sense. But the GDPR is really serious about making sure this consent is freely given, and not wrestled from you grudgingly.
+Це просто і зрозуміло, і має сенс. Але GDPR дійсно серйозно ставиться до того, щоб переконатися, що ця згода надається вільно, а не вибивається у вас з-під носа.
 
-To prevent companies from throwing up a big wall of legalese that people have to agree to, the GDPR outlines a number of principles this consent should adhere to. Here's a non-exhaustive list:
+Щоб запобігти створенню компаніями великої стіни юридичної термінології, з якою люди повинні погодитися, GDPR окреслює низку принципів, яких має дотримуватися ця згода. Ось неповний список:
 
- - people should have real choice and control
- - consent requires a positive opt-in, pre-ticked boxes or anything like that are not allowed
- - there should be a very clear statement explaining what people are agreeing to
- - these requests for consent must be separate from any terms & conditions
- - consent needs to be granular, you need individual consent for different things, and can't ask for blanket consent
- - it must be easy for people to redraw consent
- - consent of data processing should not be a precondition for a service
+ - люди повинні мати реальний вибір і контроль
+ - згода вимагає позитивного вибору, попередньо поставлені галочки або щось подібне не допускаються
+ - має бути дуже чітка заява, яка пояснює, на що люди погоджуються
+ - ці запити на отримання згоди повинні бути відокремлені від будь-яких умов & умов
+ - згода має бути детальною, вам потрібна індивідуальна згода на різні речі, і ви не можете просити про загальну згоду
+ - людям має бути легко переоформити згоду
+ - згода на обробку даних не повинна бути передумовою для отримання послуги
 
-Looking at that list, I can't help but feel that legislation would be a lot simpler if lawmakers could just write *don't be a dick* and call it a day.
+Дивлячись на цей список, я не можу позбутися відчуття, що законодавство було б набагато простішим, якби законодавці могли просто написати *не будь мудаком* і закінчити на цьому.
 
-#### Consent granularity
+#### Деталізація згоди
 
-Remember, we can't just get blanket consent. We need to get consent for every type of data processing we do.
+Пам'ятайте, що ми не можемо просто отримати загальну згоду. Ми повинні отримувати згоду на кожну обробку даних, яку ми здійснюємо.
 
-For freesewing.org, we have identified three different types of data processing:
+Для freesewing.org ми виділили три різні типи обробки даних:
 
- - Profile data
- - Model data
- - Patron data
+ - Дані профілю
+ - Дані моделі
+ - Дані мецената
 
-For each of these, we'll need to get consent from the user, making sure it's *real consent* as intended in the GDPR.
+Для кожного з них нам потрібно буде отримати згоду від користувача, щоб переконатися, що це *справжня згода* , як передбачено GDPR.
 
-Below is a mockup for what this could look like for each data type:
+Нижче наведено макет того, як це може виглядати для кожного типу даних:
 
-> ##### These mockups are no longer available
+> ##### Ці макети більше не доступні
 > 
-> Please note that the mockups originally included in this post are no longer available. Instead, this functionality has been implemented in the website.
+> Зверніть увагу, що макети, які спочатку були включені в цю публікацію, більше не доступні. Натомість, цей функціонал було реалізовано на веб-сайті.
 
-#### Consent timing
+#### Час надання згоди
 
-The GDPR states that you should ask for consent when the data is collected.
+GDPR стверджує, що ви повинні запитувати згоду на збір даних.
 
-With our three types of data processing, that means that consent must be asked at different times:
+З нашими трьома типами обробки даних це означає, що згоду потрібно запитувати в різний час:
 
- - **Profile data**: When signing up on the site
- - **Model data**: When creating the first model
- - **Patron data**: When becoming a patron
+ - **Дані профілю**: При реєстрації на сайті
+ - **Дані моделі**: При створенні першої моделі
+ - **Дані мецената**: Як стати меценатом
 
-This will (also) require some extra work to integrate this in the site.
+Це (також) потребуватиме додаткової роботи для інтеграції цього на сайт.
 
-### Respecting basic rights when processing data
+### Дотримання основних прав при обробці даних
 
-The EU enshrines basic rights for its citizens that should be respected when processing data.
+ЄС закріплює основні права своїх громадян, яких слід дотримуватися при обробці даних.
 
-Let's look at each of these rights and their impact on freesewing.org.
+Давайте розглянемо кожне з цих прав та їх вплив на freesewing.org.
 
 #### Право бути поінформованим
 
-> You need to be transparent about how you use personal data. Why you collect it, how you use it, and so on.
+> Ви повинні бути прозорими щодо того, як ви використовуєте персональні дані. Чому ви його збираєте, як ви його використовуєте і так далі.
 
-Informing users is something we are still working on. If anything, this blog post is part of that effort.
+Інформування користувачів - це те, над чим ми все ще працюємо. Якщо вже на те пішло, то ця публікація в блозі є частиною цих зусиль.
 
-We will need to design the individual privacy notices, but also a more overall privacy policy as well as making certain that users are informed of all their rights.
+Нам потрібно буде розробити індивідуальні повідомлення про конфіденційність, а також більш загальну політику конфіденційності, а також , щоб переконатися, що користувачі поінформовані про всі свої права.
 
-While this will require some work, I don't expect any problems here.
+Хоча це потребуватиме певної роботи, я не очікую жодних проблем.
 
 #### Право на доступ
 
-> People have the right to know their data is processed, and to access that data.
+> Люди мають право знати, що їхні дані обробляються, і мати доступ до цих даних.
 
-We are already compliant, as all data users enter on the site can also be accessed by them.
+Ми вже відповідаємо цим вимогам, оскільки всі дані, які користувачі вводять на сайті, також доступні для них.
 
 #### Право на виправлення становища
 
-> People have the right to correct their data if it's not correct.
+> Люди мають право виправляти свої дані, якщо вони не відповідають дійсності.
 
-We are already compliant, as all data users enter on the site can also be edited by them.
+Ми вже відповідаємо цим вимогам, оскільки всі дані, які користувачі вводять на сайті, також можуть бути ними відредаговані.
 
 #### Право на видалення
 
-> People have the right to have their data removed/erased.
+> Люди мають право на видалення/стирання своїх даних.
 
-We are already compliant, as users can remove their models, or entire account at any time.
+Ми вже відповідаємо цим вимогам, оскільки користувачі можуть видалити свої моделі або весь обліковий запис у будь-який час.
 
 #### Право на обмеження обробки даних
 
-This right means that users must be able to put a *freeze* on all data processing, without going as far as to delete their data.
+Це право означає, що користувачі повинні мати можливість поставити *заморозити* на будь-яку обробку даних, не вдаючись до видалення своїх даних.
 
-We do not currently offer this possibility, and will need to add this functionality to the site.
+Наразі ми не пропонуємо такої можливості, і нам потрібно буде додати цей функціонал на сайт.
 
 #### Право на перенесення даних
 
-> People not only have a right to export all their data, that export should also be in a format that makes it easy for them to take their data elsewhere.
+> Люди не лише мають право експортувати всі свої дані, але й експортувати їх у форматі, який дозволяє їм легко перенести ці дані в інше місце.
 
-We are already compliant, as we allow users to export all of their data, and make it available in different standard formats (YAML and JSON).
+Ми вже відповідаємо цим вимогам, оскільки дозволяємо користувачам експортувати всі свої дані та надаємо їх у різних стандартних форматах (YAML та JSON).
 
 #### Право на заперечення
 
-> The right to object applies specifically to:
+> Право на заперечення стосується саме:
 > 
-> - processing for public interests or by official authorities
-> - processing for direct marketing
-> - processing for science/historic research/statistics
+> - обробка в суспільних інтересах або офіційними органами влади
+> - обробка для прямого маркетингу
+> - обробка для науки/історичних досліджень/статистики
 > 
-> In these cases, people can object to this specific processing.
+> У цих випадках люди можуть заперечувати проти такої конкретної обробки.
 
-This is going to apply to us when we start publishing anonymized model data, something that's on our roadmap.
+Це стосуватиметься і нас, коли ми почнемо публікувати анонімізовані дані моделей, що є в нашій дорожній карті.
 
-The reason for publishing this data is that we want to make a dataset available of *real* body measurements, rather than the *standard* measurements that are typically used in the industry.
+Причиною публікації цих даних є те, що ми хочемо зробити доступним набір даних *реальних* розмірів тіла, а не *стандартних* розмірів, які зазвичай використовуються в індустрії.
 
-This is something we'll write about more at a later date, but essentially this falls under the *scientific research/statistics* category. And even though the data is anonimized, we still need to respect the right of users to object to this processing.
+Про це ми напишемо пізніше, але, по суті, це підпадає під категорію *наукових досліджень/статистики* . І навіть якщо дані знеособлені, ми все одно повинні поважати право користувачів заперечувати проти такої обробки.
 
-As such, we should add the possibility to object to this specific use of the data.
+Таким чином, ми повинні додати можливість заперечувати проти такого конкретного використання даних.
 
 #### Права щодо автоматизованого прийняття рішень та профілювання
 
-> People have extra rights when it comes to profiling or decisions made by AI or algorithms without human involvement.
+> Люди мають додаткові права, коли йдеться про профайлінг або рішення, прийняті ШІ чи алгоритмами без участі людини.
 
-This is not relevant in our situation.
+У нашій ситуації це не актуально.
 
-### Privacy by design
+### Конфіденційність за задумом
 
-The EU isn't content with throwing up a couple of consent questions and respecting people's rights when processing data. It also wants to make certain that your privacy is (better) protected when things go wrong.
+ЄС не задовольняється парою запитань про згоду та дотриманням прав людей при обробці даних. Він також хоче переконатися, що ваша конфіденційність буде (краще) захищена, якщо щось піде не так.
 
-That's why it advocates for *privacy by design*. While it's a concept that's hard to pin down in legislation, the purpose is clear: They want everyone to consider privacy from the very start of their project/product/business, and not as an afterthought.
+Ось чому вона виступає за *конфіденційність за дизайном*. Хоча це поняття важко визначити в законодавстві, мета зрозуміла: вони хочуть, щоб кожен зважав на конфіденційність з самого початку свого проекту/продукту/бізнесу, а не був останньою думкою.
 
-Things such as encryption (both in transit and for data at-rest), pseudonyms, and data expiry are suggested as things to keep in mind while designing.
+Такі речі, як шифрування (як при передачі, так і при зберіганні даних), псевдоніми та закінчення терміну дії даних, пропонуються як речі, про які слід пам'ятати під час проектування.
 
-Obviously, the EU is not going to come check your code to see whether you've taken privacy by design to heart. But it can (and probably will) have an influence when things to wrong.
+Очевидно, що ЄС не прийде перевіряти ваш код, щоб побачити, чи взяли ви принцип приватності за задумом близько до серця. Але вона може (і, ймовірно, буде) впливати, коли щось піде не так.
 
-Imagine two companies who have a data leak, one of them hasn't done much to safeguard the privacy of their users, whereas the other has taken *privacy by design* measures to mitigate the damage.
+</em> Уявіть собі дві компанії, в яких стався витік даних, причому одна з них не зробила нічого, щоб захистити конфіденційність своїх користувачів, тоді як інша вжила *заходів для зменшення шкоди.</p>
 
-It seems obvious that the EU is going to come down harder on the company who didn't even try.
+Очевидно, що ЄС буде жорсткіше ставитися до компаній, які навіть не намагалися.
 
-#### What we're already doing
+#### Що ми вже робимо
 
-We already do a number of things that are driven by a *privacy by design* approach. For example:
+Ми вже робимо багато речей, які базуються на підході *privacy by design* . Наприклад:
 
- - We use pseudonyms for user accounts
- - We don't share any data with any third party
- - We don't include any tracking code, or analytics
- - We don't use cookies
- - We don't have any social logins, like buttons, or other such things
- - We don't run/show any ads
- - We don't run any third-party JavaScript code
- - We use encryption on all transport
+ - Ми використовуємо псевдоніми для облікових записів користувачів
+ - Ми не передаємо дані третім особам
+ - Ми не включаємо жодного коду відстеження чи аналітики
+ - Ми не використовуємо файли cookie
+ - У нас немає ніяких соціальних логінів, кнопок чи інших подібних речей
+ - Ми не розміщуємо/показуємо жодної реклами
+ - Ми не використовуємо сторонній JavaScript код
+ - Ми використовуємо шифрування на всьому транспорті
 
-There's some more info on this in this blog post: [The choices I've made to protect your privacy. Or why you won't be getting any cookies](/blog/privacy-choices/).
+Більше інформації про це можна знайти в цій статті в блозі: [Рішення, які я прийняв, щоб захистити вашу конфіденційність. Або чому ви не отримаєте жодних файлів cookie](/blog/privacy-choices/).
 
-These already form a very good basis for a privacy conscious website. But since we'll need to make changes for GDPR anyway, we're considering other options to further raise the privacy bar. Specifically, what can we do to limit the damage to our users in case there is a data leak.
+Це вже є дуже хорошою основою для створення веб-сайту з урахуванням принципів конфіденційності. Але оскільки нам все одно доведеться вносити зміни до GDPR, ми розглядаємо інші варіанти, щоб ще більше підняти планку конфіденційності. Зокрема, що ми можемо зробити, щоб обмежити шкоду для наших користувачів у разі витоку даних.
 
-#### Restriction of data storage
+#### Обмеження зберігання даних
 
-Some of the most sensitive data we store today is the address and birthday of our higher-tier patrons.
+Деякі з найбільш конфіденційних даних, які ми зберігаємо сьогодні, - це адреси та дні народження наших високопоставлених меценатів.
 
-However, the site does not need this information to function. We only need it for administrative purposes; Sending out gifts and birthday cards to our patrons.
+Однак для функціонування сайту ця інформація не потрібна. Він потрібен нам лише для адміністративних цілей; Розсилка подарунків та листівок до дня народження нашим меценатам.
 
-As such, there's no real need to keep this data in the freesewing database. We could just as well write this information down in a notebook we keep on our coffee table.
+Таким чином, немає реальної необхідності зберігати ці дані в базі даних фрісевінгу. З таким же успіхом ми могли б записати цю інформацію в блокнот, який тримаємо на журнальному столику.
 
-So, as part of our GDPR-related changes, we will remove this information from the database, and store it offline.
+Отже, в рамках наших змін, пов'язаних з GDPR, ми видалимо цю інформацію з бази даних і будемо зберігати її в офлайн-режимі.
 
-#### Encryption of data at rest
+#### Шифрування даних у стані спокою
 
-We already encrypt all data in transit. But, we are currently considering to add encryption of data at rest.
+Ми вже шифруємо всі дані під час передачі. Але зараз ми розглядаємо можливість додати шифрування даних у стані спокою.
 
-The idea is to encrypt all data that could potentially identify a user. Such as:
+Ідея полягає в тому, щоб зашифрувати всі дані, які потенційно можуть ідентифікувати користувача. Наприклад:
 
  - Адреса електронної пошти
- - User name
- - Model names
- - Model notes
+ - Ім'я користувача
+ - Назви моделей
+ - Примітки до моделі
 
-This would add an extra layer of defense for our users' privacy in case somehow our database gets dumped.
+Це додасть додатковий рівень захисту конфіденційності наших користувачів на випадок, якщо нашу базу даних якось зламають.
 
-While this change will be non-trivial to implement and come with a performance penalty, I feel it's worth looking in to.
+Хоча ця зміна буде нетривіальною у впровадженні та супроводжуватиметься штрафними санкціями, я вважаю, що вона варта того, щоб на неї звернути увагу.
 
-## Conclusion
+## Висновок
 
-While we still have some work to do, we are already compliant with large parts of the GDPR, especially when it comes to respecting users rights:
+Хоча нам ще є над чим працювати, ми вже дотримуємося значної частини GDPR, особливо коли йдеться про дотримання прав користувачів:
 
  - Право бути поінформованим
  - Право на доступ
@@ -290,30 +290,30 @@ While we still have some work to do, we are already compliant with large parts o
  - Право на заперечення
  - Права щодо автоматизованого прийняття рішень та профілювання
 
-We are currently working on *the right to be informed* and have a plan for the changes required to respect *the right to restrict processing* and *the right to object*.
+Наразі ми працюємо над *права бути поінформованим* та маємо план змін, необхідних для дотримання *права на обмеження обробки* та *права на заперечення*.
 
-On the data collection site, we need to hammer out the details for our privacy notices. We'll also write a detailed privacy policy that bundles all the info from the different notices.
+На сайті збору даних нам потрібно вказати деталі для наших повідомлень про конфіденційність. Ми також напишемо детальну політику конфіденційності, яка об'єднає всю інформацію з різних повідомлень.
 
-We'll need to add changes to the user on-boarding to make sure notices are presented at the correct time. Not to mention that we'll need to keep track of who gave their consent for what.
+Нам потрібно буде внести зміни в систему реєстрації користувачів, щоб переконатися, що сповіщення з'являються в потрібний час. Не кажучи вже про те, що нам потрібно буде відстежувати, хто і на що дав свою згоду.
 
-### Action points
+### Плани дій
 
- - Draft privacy notices for profile/model/patron data
- - Integrate consent in user on-boarding, model creation, and patron sign-up
- - Make site functionality depend on consent
- - Provide a centralized privacy dashboard where people can review their privacy settings/consent
- - Add email notifications every time consent is changed
- - Provide a way for people to *freeze* their account
- - Provide a way for people to object to their model data being used for research and statistics
- - Write and publish an overall privacy policy
- - Encrypt sensitive data in the database
+ - Проекти повідомлень про конфіденційність для даних профілю/моделі/покровителя
+ - Інтегруйте згоду в процес реєстрації користувачів, створення моделі та реєстрації меценатів
+ - Зробіть функціонал сайту залежним від згоди
+ - Забезпечити централізовану інформаційну панель, де люди можуть переглядати свої налаштування/згоду на конфіденційність
+ - Додайте сповіщення на електронну пошту щоразу, коли ви змінюєте згоду
+ - Надайте людям можливість *заморозити* свій рахунок
+ - Надайте людям можливість заперечувати проти того, щоб їхні модельні дані використовувалися для досліджень і статистики
+ - Напишіть та опублікуйте загальну політику конфіденційності
+ - Шифрувати конфіденційні дані в базі даних
 
-Seems like we've got a lot of work ahead of us.
+Схоже, у нас попереду багато роботи.
 
-### Feedback
+### Зворотній зв'язок
 
-It is my personal opinion that the GDPR is a good thing. But I want to hear from you about the changes outlined in this blog post.
+На мою особисту думку, GDPR - це добре. Але я хочу почути від вас про зміни, описані в цьому блозі.
 
-So please reach out with your feedback and comments. It is after all your data we're talking about.
+Тож, будь ласка, залишайте свої відгуки та коментарі. Адже ми говоримо про всі ваші дані.
 
 
