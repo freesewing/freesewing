@@ -1,29 +1,29 @@
 ---
 author: "joostdecock"
-caption: "Cycling like a true gentlemen"
+caption: "Їзда на велосипеді як справжній джентльмен"
 date: "2021-03-06"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/15c72486b0c48905f9f4a916a32caa058f1b0f8a-997x857.jpg"
-intro: "Wouter is at it again, this time around he's treating us to classic cycling breeches."
-title: "These Cornelius cycling breeches are Wouter's latest gift to us all"
+intro: "Wouter знову за своє, цього разу він пригощає нас класичними велосипедними бриджами."
+title: "Ці велоштани Cornelius - останній подарунок Wouter для всіх нас"
 ---
 
 
-[Wouter](https://www.instagram.com/wouter.vdub/) is at it again, this time around he's treating us to classic cycling breeches.
+[Wouter](https://www.instagram.com/wouter.vdub/) знову за своє, цього разу він пригощає нас класичними велосипедними бриджами.
 
-He writes:
+Він пише:
 
-> When I was a child my dad would tell me stories about hiking in the mountains, something magical for a kid living in The Netherlands. He had a suitcase with his mountaineering things in it, and part of that were some 'knickerbockers', baggy trousers that reached down to your calves. 
+> Коли я був дитиною, мій тато розповідав мені історії про походи в гори, щось чарівне для дитини, яка живе в Нідерландах. У нього була валіза з альпіністськими речами, і серед них були "панталони" - мішкуваті штани, що сягали литок. 
 > 
-> When I moved to the USA in my thirties and started hiking myself, I would often reflect on those talks and felt sad that I didn't inherit those knickerbockers. Then when I discovered sewing, I decided I would make myself a pair, but no good patterns presented themselves. 
+> Коли я переїхав до США в тридцять років і сам почав ходити в походи, я часто згадував ці розмови і сумував, що не успадкував ті панталони. Потім, коли я відкрила для себе шиття, я вирішила, що зроблю собі пару, але хороших викрійок не знайшлося. 
 > 
-> This year someone on the Freesewing discord server posted a link to The 'Keystone' Systems, Practical methods of cutting, from around the turn of the century. This contained a drafting system for 'Cycling Breeches', which seemed to be close to what my father used to wear, and could be translated into a Freesewing pattern. A project was born, and I'm happy to be able to present the results to you.
+> Цього року на сервері розбіжностей Freesewing хтось розмістив посилання на "Практичні методи різання" (The 'Keystone' Systems, Practical methods of cutting), написані приблизно на рубежі століть. Він містив систему викрійки "Велосипедні бриджі", яка здавалася близькою до того, що носив мій батько, і могла б бути перекладена на викрійку для вільного крою. Проект народився, і я радий, що можу представити вам його результати.
 
-As Wouter mentioned; This pattern is based on [the Keystone drafting method](https://archive.org/details/keystonesystemsc00heck/page/n5/mode/2up). Not that it matters because as always you get it made-to-measure for you [right here on FreeSewing.org](/designs/cornelius/).
+Як згадував Воутер, цей шаблон базується на [методі розробки Keystone](https://archive.org/details/keystonesystemsc00heck/page/n5/mode/2up). Не те, щоб це мало значення, тому що, як завжди, ви отримуєте його за індивідуальними розмірами для ви [прямо тут, на FreeSewing.org](/designs/cornelius/).
 
-![Here's the man himself](https://posts.freesewing.org/uploads/wouter_9fbc821146.jpg)
+![А ось і сам чоловік](https://posts.freesewing.org/uploads/wouter_9fbc821146.jpg)
 
-Note that you don't have to cycle to wear these. All that's required is a willingness to show of those socks (or calfs).
+Зверніть увагу, що вам не обов'язково їздити на велосипеді, щоб носити їх. Все, що потрібно - це бажання показати ці шкарпетки (або литки).
 
-Cornelius is available at [/designs/cornelius/](/designs/cornelius/).
+Корнеліус доступний за посиланням [/designs/cornelius/](/designs/cornelius/).
 
 
