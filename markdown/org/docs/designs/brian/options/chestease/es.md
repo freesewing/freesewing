@@ -1,5 +1,5 @@
 ---
-title: "Chest ease"
+title: "Holgura de pecho"
 ---
 
 ![El factor de facilidad del cofre en Brian](./chestease.svg)
