@@ -1,5 +1,5 @@
 ---
-title: "Adjustment ribbon"
+title: "Aanpaslintje"
 ---
 
 ![Traditioneel of aanpasbaar](adjustmentribbon.svg)
