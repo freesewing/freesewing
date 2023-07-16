@@ -17,7 +17,7 @@ import { icons } from 'shared/components/navigation/primary.mjs'
  *
  * @params tree {object} - A navigation object as returned by useNavigation => siteNav
  */
-const onlyValidChildren = (tree, hIsOk = false) =>
+const onlyValidChildren = (tree) =>
   orderBy(tree, ['o', 't'], ['asc', 'asc']).filter(
     (entry) => typeof entry === 'object' && entry.t !== 'spacer' && !entry.h
   )
@@ -183,12 +183,14 @@ export const Breadcrumbs = ({ slug, siteNav }) => {
  */
 export const NavLinks = ({ slug, siteNav, ignoreControl = false }) => (
   <ul className="w-full list mb-8 mt-3">
-    {onlyValidChildren(siteNav).map((page, i) => (
-      <li key={i} className="w-full">
-        <MainLink s={page.s} t={page.t} slug={slug} />
-        {pageHasChildren(page) && !page.n && <Section {...{ tree: page, slug }} />}
-      </li>
-    ))}
+    {onlyValidChildren(siteNav).map((page, i) =>
+      ignoreControl || 'fixme - add ignoreControl support' ? (
+        <li key={i} className="w-full">
+          <MainLink s={page.s} t={page.t} slug={slug} />
+          {pageHasChildren(page) && !page.n && <Section {...{ tree: page, slug }} />}
+        </li>
+      ) : null
+    )}
   </ul>
 )
 
@@ -213,44 +215,29 @@ export const MainSections = ({ siteNav, slug }) => {
       </>
     )
 
-    const item =
-      page.t === 'spacer' ? (
-        <li key={page.s} className="opacity-10">
-          <Spacer />
-        </li>
-      ) : (
-        <li key={page.s}>
-          {act ? (
-            <span
-              className={`
-                  flex flex-row gap-4 items-center
-                  text-secondary-content
-                  hover:text-base-content
-                  bg-secondary
-                  p-2 px-4 rounded
-                  bg-base-200
-                  rounded-none
-                `}
-              title={page.t}
-            >
-              {txt}
-            </span>
-          ) : (
-            <Link
-              href={`/${page.s}`}
-              className={`
-                flex flex-row gap-4 items-center
-                hover:bg-secondary hover:bg-opacity-25 hover:cursor-pointer
-                p-2 px-4 rounded
-                rounded-none
-              `}
-              title={page.t}
-            >
-              {txt}
-            </Link>
-          )}
-        </li>
-      )
+    const item = (
+      <li key={page.s}>
+        {act ? (
+          <span
+            title={page.t}
+            className={`flex flex-row gap-4 items-center text-secondary-content
+              hover:text-base-content bg-secondary p-2 px-4 rounded bg-base-200 rounded-none`}
+          >
+            {txt}
+          </span>
+        ) : (
+          <Link
+            href={`/${page.s}`}
+            title={page.t}
+            className={`
+              flex flex-row gap-4 items-center hover:bg-secondary hover:bg-opacity-25
+              hover:cursor-pointer p-2 px-4 rounded rounded-none`}
+          >
+            {txt}
+          </Link>
+        )}
+      </li>
+    )
     output.push(item)
   }
 
