@@ -1,5 +1,5 @@
 ---
-title: "Height"
+title: "Hoogte"
 ---
 
 ![Hoogte optie](./height.svg)
