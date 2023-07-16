@@ -1,5 +1,5 @@
 ---
-title: "Sleevecap top X"
+title: "Funda tapa X"
 ---
 
 ![La ubicación horizontal de la parte superior de manga](./sleevecaptopfactorx.svg)
