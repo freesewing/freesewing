@@ -1,5 +1,5 @@
 ---
-title: "Hem curve"
+title: "Curva del dobladillo"
 ---
 
 ![Curva del dobladillo](hemcurve.svg)
