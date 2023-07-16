@@ -1,57 +1,57 @@
 ---
 author: "joostdecock"
-caption: "Would you close a lane because one driver was playing their music too loud?"
+caption: "Чи перекривали б ви смугу руху через те, що один водій занадто голосно вмикає музику?"
 date: "2017-09-07"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/923cd5587c873d2662df4a804f75f8f32b5673ca-1920x1281.jpg"
-intro: "Thanks for nothing Microsoft; Email shouldn't be this hard"
-title: "Thanks for nothing Microsoft; Email shouldn't be this hard"
+intro: "Дякуємо за все Microsoft; електронна пошта не повинна бути такою складною"
+title: "Дякуємо за все Microsoft; електронна пошта не повинна бути такою складною"
 ---
 
-People with an email address from Microsoft --- think Hotmail, MSN, live.com, outlook.com and their numerous variants --- are significantly less likely to sign up for this website.
+Люди з електронною адресою від Microsoft --- згадайте Hotmail, MSN, live.com, outlook.com та їхні численні варіанти --- значно рідше реєструються на цьому веб-сайті.
 
-That's because more than 4 times out of 10, they never receive their account activation email.
+Це тому, що більш ніж у 4 випадках з 10 вони ніколи не отримують електронного листа з активацією акаунта.
 
-## What's going on?
+## Що відбувається?
 
-Let's first look at what's happening. Here's a relevant snippet from the logs:
+Давайте спочатку розберемося, що відбувається. Ось відповідний фрагмент з журналу:
 
 ````
-Failed: postmaster@mg.freesewing.org -> ********@hotmail.co.uk 'Confirm your freesewing account' 
-Server response: 550 5.7.1 Unfortunately, messages from [104.130.122.15] weren't sent. 
-Please contact your Internet service provider since part of their network is on our block list. 
+Не вдалося: postmaster@mg.freesewing.org -> ********@hotmail.co.uk "Підтвердіть свій обліковий запис freesewing" 
+Відповідь сервера: 550 5.7.1 На жаль, повідомлення з адреси [104.130.122.15] не було надіслано. 
+Будь ласка, зверніться до свого інтернет-провайдера, оскільки частина його мережі знаходиться в нашому списку блокування. 
 ````
 
-What this means is that part of the MailGun network is on their block list. As a result, they (more on who they are later) are not delivering any messages that go out.
+Це означає, що частина мережі MailGun знаходиться в їхньому списку блокування. Як наслідок, вони (про те, хто вони, буде сказано пізніше) не доставляють жодних повідомлень, які виходять назовні.
 
-[MailGun](https://www.mailgun.com/) is a popular email service for developers. It's used by this site to send out emails, like the account activation emails.
+[MailGun](https://www.mailgun.com/) - популярний сервіс електронної пошти для розробників. Він використовується цим сайтом для розсилки електронних листів, наприклад, для активації акаунта.
 
-Other people use this service too, and perhaps some of them, at some point, delivered some spam messages through mailgun. Or it may just have been some guy with a last name that tends to trigger spam filters.
+Інші люди також користуються цим сервісом, і, можливо, декому з них колись надсилали спам через mailgun. Або це міг бути просто якийсь хлопець з прізвищем , яке, як правило, викликає спрацьовування спам-фільтрів.
 
-![Some other MailGun customers. Not exactly a dodgy service is it?](https://posts.freesewing.org/uploads/mailgun_19f315d4d6.png)
+![Деякі інші клієнти MailGun. Не зовсім хитра послуга, чи не так?](https://posts.freesewing.org/uploads/mailgun_19f315d4d6.png)
 
-Point is, this IP address or one of its neighbours got *a bad rep*. It happens. But to flat-out refuse to accept any messages from this host (or an entire network of hosts) is the equivalent of shutting down a highway lane (or entire highway) because one car in that lane played its music obnoxiously loud that one time.
+Справа в тому, що ця IP-адреса або один з її сусідів створив *погану репутацію*. Таке трапляється. Але навідріз відмовлятися приймати будь-які повідомлення від цього хоста (або цілої мережі хостів) - це еквівалентно перекриттю смуги руху на шосе (або цілого шосе) через те, що одна машина на цій смузі ввімкнула свою музику нестерпно голосно того разу.
 
-Which brings me to our next question:
+Що підводить мене до нашого наступного питання:
 
-## Who would do something like that?
+## Хто міг зробити щось подібне?
 
-Good question. Here are some numbers:
+Гарне питання. Ось деякі цифри:
 
-![A graph of mail delivery since the launch of this site](https://posts.freesewing.org/uploads/emailgraph_d14d476efa.png)
+![Графік доставки пошти з моменту запуску сайту](https://posts.freesewing.org/uploads/emailgraph_d14d476efa.png)
 
-The graph above represents emails that were sent out since the launch of this site. The small subsection of the graph that is red are emails that are dropped.
+На графіку вище представлені листи, які були надіслані з моменту запуску цього сайту. Невеликий підрозділ графіка, позначений червоним кольором, - це імейли, які було видалено.
 
-This website sends out different kinds of email:
+Цей веб-сайт розсилає різні види електронної пошти:
 
- - The account confirmation email
- - The *I forgot my password* emails
- - Comment reply notifications
+ - Email для підтвердження облікового запису
+ - Електронні листи *Я забув свій пароль*
+ - Сповіщення про відповідь на коментар
 
-The graph represents all email, but I'm focussing on the account confirmation emails only. They are the most important after all.
+На графіку представлено всю електронну пошту, але я зосередився лише на листах з підтвердженням акаунту. Зрештою, вони найважливіші.
 
-> Apart from the 1 outlier, every message that was blocked, was blocked by Microsoft
+> За винятком 1 винятку, кожне повідомлення, яке було заблоковано, було заблоковано компанією Microsoft
 
-Here's a list of all domains that blocked legitimate activation emails to their users:
+Ось список всіх доменів, які заблокували легітимні активаційні листи своїм користувачам:
 
  - btinternet.com
  - hotmail.com
@@ -63,53 +63,53 @@ Here's a list of all domains that blocked legitimate activation emails to their 
  - msn.com
  - outlook.com
 
-Apart from that very first entry in the list (on which only 1 message was blocked) all of these are Microsoft domains.
+За винятком найпершого запису в списку (на якому було заблоковано лише 1 повідомлення), всі ці домени належать компанії Microsoft.
 
-Let me restate that: Apart from the 1 outlier, every message that was blocked, was blocked by Microsoft.
+Дозвольте мені повторити це: За винятком 1 повідомлення, яке було заблоковано, кожне повідомлення було заблоковано компанією Майкрософт.
 
-## What's the impact?
+## Який вплив?
 
-So what sort of impact does that have on people?
+Тож який вплив це має на людей?
 
-Well, at the time I'm writing this, there are 817 registered users, and about 80% (661) have also activated their account.
+На момент написання цієї статті на сайті зареєстровано 817 користувачів, і близько 80% (661) також активували свій обліковий запис.
 
-![A disproportionate amount of pending activations is from users with an email address managed by Microsoft](https://posts.freesewing.org/uploads/activations_06987b6065.svg)
+![Непропорційно велика кількість активацій, що очікують на розгляд, надходить від користувачів з адресами електронної пошти, якими керує корпорація Майкрософт](https://posts.freesewing.org/uploads/activations_06987b6065.svg)
 
-From those people who were able to activate their account, less than 1% (6) have an email address managed by Microsoft. In the group of people who did not, or were not able to, activate their account, more than half have such an address.
+З тих людей, які змогли активувати свій обліковий запис, менше 1% (6) мають адресу електронної пошти, якою керує Microsoft. У групі людей, які не активували або не змогли активувати свій обліковий запис, більше половини мають таку адресу.
 
-More than 40% of account confirmation emails are simply blocked by Microsoft and, based on the number of activations, it seems likely that even when they aren't block at the SMTP relay, they get filtered somewhere further down the line.
+Понад 40% електронних листів з підтвердженням облікового запису просто блокуються Microsoft, і, виходячи з кількості активацій, здається ймовірним, що навіть якщо вони не блокуються на SMTP-ретрансляторі, вони фільтруються десь далі по лінії.
 
-As things stand, it seems almost impossible for the average hotmail/outlook/live/MSN/... user to sign up for this site.
+Наразі пересічному користувачеві hotmail/outlook/live/MSN/... майже неможливо зареєструватися на цьому сайті.
 
-## What can we do about it?
+## Що ми можемо з цим зробити?
 
-I chose mailgun for a number of reasons. Not having to handle SMTP outselves simplifies the code. Not depending on a local SMTP deamon makes the code more portable, and MailGun has a bunch of cool features that allow you to do things like replying to comments via email.
+Я обрав пістолет з кількох причин. Відсутність необхідності самостійно обробляти SMTP спрощує код. Відсутність залежності від локального SMTP deamon робить код більш портативним, а MailGun має купу крутих функцій , які дозволяють вам робити такі речі, як відповіді на коментарі електронною поштою.
 
-Microsoft's crude methods of spam filtering don't invalidate any of those reasons.
+Грубі методи фільтрації спаму від Microsoft не скасовують жодної з цих причин.
 
-Using MailGun means using their SMTP relays, and being at the mercy of the reputation of that relay. The only way around that is to configure a dedicated relay in MailGun so that freesewing.org traffic is shielded from others, and we become masters of our own reputation.
+Використання MailGun означає використання їхніх SMTP-ретрансляторів і залежність від репутації цього ретранслятора. Єдиний спосіб обійти це - налаштувати спеціальний ретранслятор в MailGun, щоб трафік freesewing.org був захищений від інших, і ми стали господарями власної репутації.
 
-![$59 per month? Perhaps not](https://posts.freesewing.org/uploads/pricing_52f0e817cb.png)
+![59 доларів на місяць? Можливо, ні.](https://posts.freesewing.org/uploads/pricing_52f0e817cb.png)
 
-For that priviledge, MailGun charges 59 dollar per month, which amounts to 708 dollar yearly. I invite you to take a look at [the donations history](/about/pledge#donations-history), and you'll understand that's not going to happen either.
+За цей привілей MailGun бере 59 доларів на місяць, що становить 708 доларів на рік. Запрошую вас поглянути на [історію пожертв](/about/pledge#donations-history), і ви зрозумієте, що цього теж не станеться.
 
-I could challenge the block list, and try to get the relay unblocked. But that's pretty much tilting at windmills when the host is not under my control. Not to mention that MailGun doesn't just have that one host.
+Я можу оскаржити список блокування і спробувати розблокувати реле. Але це все одно, що кидатися на вітряки, коли хост не перебуває під моїм контролем. Не кажучи вже про те, що MailGun має не лише один хост.
 
-It seems that I'm running low on options and quiet frankly, I'm also running out of patience.
+Здається, у мене закінчуються варіанти, і, чесно кажучи, у мене також закінчується терпіння.
 
-## What I'm going to do about it
+## Що я збираюся з цим робити
 
-Microsoft is a behemoth, and I'm just a guy. I can't fight them on this. Unless I Titanfall their ass.
+Microsoft - бегемот, а я просто хлопець. Я не можу боротися з ними в цьому питанні. Якщо тільки я не розтрощу їхні дупи.
 
-![Block this, bitch](https://posts.freesewing.org/uploads/titanfall_cb5a210468.gif)
+![Блокуй, суко!](https://posts.freesewing.org/uploads/titanfall_cb5a210468.gif)
 
-Do you think Gmail is ever abused to send out spam? You know it is. Do you think they would ever block all email coming from Gmail? You know they won't.
+Як ви вважаєте, чи використовують Gmail для розсилки спаму? Ти знаєш, що це так. Як ви думаєте, вони коли-небудь заблокують всю електронну пошту, що надходить з Gmail? Ти ж знаєш, що вони цього не зроблять.
 
-So last night, I rolled out some changes to work around the issue. If you have a *problemtic* email address, in addition to the regular email, this site will send out a second email through Gmail.
+Тож минулої ночі я впровадив деякі зміни, щоб вирішити цю проблему. </em> Якщо ви маєте проблемну електронну адресу *, на додаток до звичайної електронної пошти, цей сайт надішле другий лист через Gmail. </p>
 
-I'd like to see them block that.
+Я хотів би побачити, як вони це заблокують.
 
-> ##### Signup trouble? Help is available
+> ##### Проблеми з реєстрацією? Доступна довідка
 > 
-> If you are (still) having problems signing up, don't hesitate to [get in touch](/contact).
+> Якщо у вас (все ще) виникають проблеми з реєстрацією, не соромтеся звертатися за адресою [або](/contact).
 
