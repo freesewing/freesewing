@@ -1,5 +1,5 @@
 ---
-title: "Inner pocket depth"
+title: "Innentaschentiefe"
 ---
 
 How deep you would like the inner pocket to be.
@@ -9,4 +9,4 @@ How deep you would like the inner pocket to be.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](jaeger_innerpocketdepth_sample.svg "Effekt dieser Variable auf das Schnittmuster")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](jaeger_innerpocketdepth_sample.svg "Effekt dieser Option auf das Schnittmuster")
