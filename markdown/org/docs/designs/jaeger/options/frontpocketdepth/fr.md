@@ -1,5 +1,5 @@
 - - -
-title: "Front pocket depth"
+titre : "Profondeur de la poche avant"
 - - -
 
 ![Profondeur des poches avant](frontpocketdepth.svg)
