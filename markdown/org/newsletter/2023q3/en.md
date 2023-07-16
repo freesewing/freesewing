@@ -276,6 +276,3 @@ off in the end. And -- should there by any doubt about that -- I know for a
 fact that the FreeSewing community is perfectly wonderful without me around too.
 And on some of my more difficult days, probably even more so.
 
-fficult days, probably even more so.
-
-
