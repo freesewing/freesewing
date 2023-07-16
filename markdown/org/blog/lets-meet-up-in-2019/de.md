@@ -3,7 +3,7 @@ author: "joostdecock"
 caption: "Als introvertierter Mensch sage ich das nicht oft, aber ich würde Sie eigentlich gerne kennenlernen."
 date: "2018-12-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8b5fdb232675b32c7c08b59ffc57e9b9da31f02f-1920x1078.jpg"
-intro: "Da niemand einen Stichtag am Silvesterabend mag, schließt Freewing traditionell am 10. Dezember sein Jahr ab. Das bedeutet, dass es jetzt an der Zeit ist, über die Vergangenheit nachzudenken und sich auf das zu freuen, was vor uns liegt."
+intro: "Wir treffen uns im 2019! Und andere Jahresendbetrachtungen"
 title: "Wir treffen uns im 2019! Und andere Jahresendbetrachtungen"
 ---
 
@@ -57,5 +57,4 @@ You made that happen, and if it brings a fraction of the joy to your heart as it
 I have, for several years now, put a lot of time and effort into freesewing. And I can honestly say that I've never worked harder on this than I am doing now. But at the same time, it has been easier than ever for me to find the motivation to do so. Every contribution, no matter how small, is like a small patch in a warm blanket of support under which freesewing can thrive.
 
 So thank you for all this. And let's try to do (even) better next year.
-
 
