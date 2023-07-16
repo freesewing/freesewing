@@ -1,10 +1,10 @@
 ---
-title: "Bequemlichkeitszugabe Brust"
+title: "Brustumfangszugabe"
 ---
 
 ![Die Brustpflegeoption auf Diana](./chestease.svg)
 
-Diese Option steuert die Leichtigkeit an deiner Truhe.
+Diese Variable beeinflusst die Weite an der Brust.
 
 ## Effekt dieser Option auf das Schnittmuster
 
