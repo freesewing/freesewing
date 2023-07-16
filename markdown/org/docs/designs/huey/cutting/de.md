@@ -1,6 +1,6 @@
-- - -
+---
 title: "Huey hoodie: Cutting Instructions"
-- - -
+---
 
 **Oberstoff**
 
@@ -13,4 +13,4 @@ title: "Huey hoodie: Cutting Instructions"
 **Bündchen**
 
 - Cut **2 cuff** parts
-- Schneide **1 Taillenband**
+- **1 Taillenband schneiden**
