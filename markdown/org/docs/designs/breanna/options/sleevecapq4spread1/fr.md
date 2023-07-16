@@ -1,5 +1,5 @@
 ---
-title: "Sleevecap Q4 upward spread"
+title: "Tête de manche élévation Q4"
 ---
 
 ![La propagation vers le haut dans le quatrième quadrant de la tête de manche](./sleevecapq4spread1.svg)
@@ -14,4 +14,4 @@ Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_sleevecapq4spread1_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_sleevecapq4spread1_sample.svg "Effet de cette option sur le motif")
