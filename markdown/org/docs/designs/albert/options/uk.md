@@ -1,5 +1,5 @@
 ---
-title: "Фартух Альберта: Варіанти дизайну"
+title: "Albert apron: Design Options"
 ---
 
 <PatternOptions pattern='albert' />
