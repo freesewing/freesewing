@@ -1,5 +1,5 @@
 ---
-title: "Фартух 'Альберт': Інструкція з пошиття"
+title: "Albert apron: Sewing Instructions"
 ---
 
 ### Крок 1: Кишеня
