@@ -1,113 +1,113 @@
 ---
 author: "joostdecock"
-caption: "Your new login background for the month of october"
+caption: "Ваш новий фон для входу в систему на жовтень"
 date: "2017-09-30"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c6418b621228730525d835acff53c4cd6895a865-2000x1250.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - September 2017: Simon complications, email issues, and donations are up this year."
+intro: "Це ваш щомісячний огляд новин фрітрекінгу за останні чотири тижні, а також погляд на те, що чекає на нас у наступному місяці."
+title: "Щомісячний звіт - вересень 2017: Ускладнення з Саймоном, проблеми з електронною поштою та пожертви зросли цього року."
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Це ваш щомісячний огляд новин фрітрекінгу за останні чотири тижні, а також погляд на те, що чекає на нас у наступному місяці.
 
-## Looking back at september, and a bit of august
-For this first edition, I'm looking back a bit further than one month, because [this site launched at the end of August](/blog/open-for-business/), so I'm including that week in this monthly roundup.
+## Озираючись на вересень і трохи на серпень
+Для цього першого випуску я озираюся трохи далі, ніж на один місяць, тому що [цей сайт запустився наприкінці серпня](/blog/open-for-business/), тому я включаю цей тиждень у щомісячний огляд.
 
-### My name is Simon, and I'm complicated
+### Мене звуть Саймон, і я складний
 
-Since the launch, there's been [3 new path releases of freesewing core](https://github.com/freesewing/core/releases) --- you know, the thing that actually generates your sewing patterns --- and all of them were due to issues with [the Simon Shirt pattern](/patterns/simon).
+З моменту запуску було [3 нових випуски ядра freesewing](https://github.com/freesewing/core/releases) --- ви знаєте, річ, яка фактично генерує ваші викрійки --- і всі вони були пов'язані з проблемами з [викрійкою Simon Shirt](/patterns/simon).
 
-Full details are available in [the changelog](https://github.com/freesewing/core/blob/develop/CHANGELOG.md), but here's the gist of it:
-
-
- -  The seam allowance at the hem was incorrect when the lenthBonus was very low.
- -  The cut in the sleeve for the placket was too short
- -  There was a problem with the seam allowance at the buttonhole placket
- -  The sleeve length bonus was counted double
- -  The hip measurements/ease was not taken into account;  The chest measurement/ease was used instead
- -  A number option defaults were tweaked
+Повна інформація доступна в [та в журналі змін](https://github.com/freesewing/core/blob/develop/CHANGELOG.md), але ось її суть:
 
 
-Thanks to [Tatyana](/users/yrhdw) and [Stefan](/users/kczrw) for reporting these issues. You get that funky bug badge:
-
-![I really like this one](https://posts.freesewing.org/uploads/badge_found_bug_d7d0c9055a.svg)
-
-#### What's your problem Simon?
-
-That these issues surface in Simon is not a coincidence. The pattern comes with a whopping 41 options that allow you to control pretty much every aspect of your shirt.
-
-Managing all those different combinations in the code leads to a lot of complexity. And were code complexity rises, bugs appear.
-
-![If Simon was on facebook, its relationship status would certainly be *It's complicated*](https://posts.freesewing.org/uploads/complicated_d8c872358d.gif)
-
-#### Is it time for an overhaul?
-Simon is a port of the Singular Shirt pattern of MakeMyPattern.com. Back there, making a differently styled shirt would have involved copying the code over, making changes, and then maintaining two slightly different variations for all eternity.
-
-Things are better here at freesewing, where inheritance is baked in the system. So I could (and should perhaps) have a basic shirt pattern, and then branch that out into a bunch of differently styled shirt patterns.
-
- - Brian Body Block
-   - Basic shirt pattern
-     - Casual shirt pattern
-     - Formal shirt pattern
-     - Some other shirt pattern
-
-It would not only cut down on code complexity, it would arguably also be more intuitive to see a bunch of differently styled shirt patterns, rather than have only one pattern and then have 41 options to juggle.
-
-A full Simon overhaul is going to be a bit of work, but it is possible. I'd be interested to hear your thoughts on the matter.
+ -  Припуск на шов на подолі був неправильним, коли lenthBonus був дуже низьким.
+ -  Розріз рукава для планки був занадто коротким
+ -  Виникла проблема з припуском шва на планку петлі для ґудзиків
+ -  Бонус за довжину рукава нараховувався в подвійному розмірі
+ -  Обхват стегон/обхват грудей не брали до уваги; замість цього використовували обхват грудей/обхват стегон
+ -  Було змінено значення за замовчуванням деяких опцій
 
 
-## Dealing with email delivery issues
-I added a workaround for those of you who had trouble getting the registration emails. Basically, people with an email account managed by Microsoft.
+Дякуємо [Тетяні](/users/yrhdw) та [Стефану](/users/kczrw) за повідомлення про ці проблеми. Ти отримаєш цей прикольний значок з жуком:
 
-![If these guys run your inbox, then who knows what other emails you're not getting](msft.gif)
+![Мені дуже подобається цей](https://posts.freesewing.org/uploads/badge_found_bug_d7d0c9055a.svg)
 
-You can read [my blog post on the matter](/blog/email-spam-problems/) for all the details, but basically if you have one of those addresses, you should get those emails now. The only downside is that you might get them twice.
+#### У чому проблема, Саймоне?
 
-## Referrals
-When people link to your site, and visitors click that link, that's called a referral. The bloggers among you might be familiar with skimming through your Google Analytics reports to see who's been linking to you.
+Те, що ці питання з'являються в "Саймоні", не випадково. Візерунок має 41 опцію, які дозволяють вам контролювати практично кожен аспект вашої сорочки.
 
-This site does not use Google Analytics --- there's [a blog post with details on that](/blog/privacy-choices/) too --- but still captures referrals. The overview of recent referrals is available for all to see on [the status page](/status).
+Керування всіма цими різними комбінаціями в коді призводить до великої складності. А зі зростанням складності коду з'являються баги.
 
-Linking to freesewing.org is obviously a nice thing to do, so I keep an eye on the referrals, and if a site shows up that belongs to a user, you get the Ambassador badge.
+![Якби Саймон був на Facebook, його статус стосунків, безумовно, був би *Усе складно*.](https://posts.freesewing.org/uploads/complicated_d8c872358d.gif)
 
-![Linking to freesewing.org is one way to unlock the ambassasor badge](https://posts.freesewing.org/uploads/badge_ambassador_3dd1e722cc.svg)
+#### Чи настав час для капітального ремонту?
+Саймон - це порт шаблону Singular Shirt від MakeMyPattern.com. Тоді, щоб зробити сорочку іншого стилю, довелося б копіювати код, вносити зміни, а потім вічно підтримувати дві дещо відмінні варіації.
 
-It's a small way to say thank you for spreading the word about freesewing.
+У фріскейтингу справи йдуть краще, оскільки успадкування закладено в системі. Тож я міг би (і, можливо, повинен) мати базову модель сорочки, а потім розгалужити її на купу різних моделей сорочок.
 
-## Donations
-During september, we passed last year's donations amount, so it's nice to see I'll be able to [send more money to MSF](/about/pledge#donations-history) this year than in 2016.
+ - Брайан Боді Блок
+   - Базова викрійка сорочки
+     - Викрійка сорочки в стилі кежуал
+     - Формальна викрійка сорочки
+     - Інший візерунок сорочки
 
-You can always keep track of the donations on [the donations pledge page](/about/pledge#donations-history), but here's the current status:
+Це не тільки зменшить складність коду, але й, можливо, буде більш інтуїтивно зрозумілим, коли ви бачите купу різних моделей сорочок, а не один шаблон, а потім маєте 41 варіант, з якими можна жонглювати.
 
-![Ура! Better than last year](https://posts.freesewing.org/uploads/donations_68e214d133.svg)
+Повна реконструкція Саймона буде нелегкою справою, але вона можлива. Мені було б цікаво почути ваші думки з цього приводу.
 
-## More download formats
 
-I've also added additional formats to the draft download page. You now have a choice of SVG, PDF, letter-PDF, tabloid-PDF, A4-PDF, A3-PDF, A2-PDF, A1-PDF, and A0-PDF.
+## Вирішення проблем з доставкою електронної пошти
+Я додав обхідний шлях для тих, у кого виникли проблеми з отриманням реєстраційних листів. В основному, люди, які мають обліковий запис електронної пошти, керований Microsoft.
 
-## The quality control badge
-I've added the quality control badge for things like reporting (or fixing) typos, broken links, grammar, and other small improvements.
+![Якщо ці хлопці керують вашою поштовою скринькою, то хто знає, які ще листи ви не отримуєте](msft.gif)
 
-![See a typo? Let me know and you get this](https://posts.freesewing.org/uploads/badge_quality_control_6acb8c10c2.svg)
+Ви можете прочитати [мою статтю в блозі на цю тему](/blog/email-spam-problems/) , але якщо у вас є одна з цих адрес, ви маєте отримати ці листи вже зараз. Єдиний мінус - це те, що ви можете отримати їх двічі.
 
-These might not seem like an earth-shattering contribution, but they are important nevertheless.
+## Реферали
+Коли люди посилаються на ваш сайт, а відвідувачі переходять за цим посиланням, це називається рефералом. Блогери серед вас можуть бути знайомі з тим, як переглядати звіти Google Analytics, щоб побачити, хто на вас посилається.
 
-On the spectrum between endlessly toiling over the perfect content before publishing it, or getting it out fast warts and all, I lean heavily towards the latter. So I kinda count on you guys to let me know when I messed up.
+Цей сайт не використовує Google Analytics --- є [пост в блозі з деталями про це](/blog/privacy-choices/) також --- але все одно фіксує рефералів. Огляд останніх рефералів доступний для всіх на сайті [на сторінці статусу](/status).
 
-## Looking ahead to october
+Посилати на freesewing.org, очевидно, приємно, тому я стежу за рефералами, і якщо з'являється сайт, який належить користувачеві, ви отримуєте значок Посла.
 
-There are 5 patterns I am currently working on. And all of them are ready to the point where I need to make them to verify that they work as intended. First a muslin, and then the real thing.
+![Посилання на freesewing.org - один із способів розблокувати бейдж амбасадора](https://posts.freesewing.org/uploads/badge_ambassador_3dd1e722cc.svg)
 
-That's a bit of a bottleneck for me because I have a long commute, so my sewing time is typically limited to the weekends.
+Це невеликий спосіб подякувати вам за те, що ви поширюєте інформацію про фріспівінг.
 
-The only way I see to speed up the process of getting patterns released is to have people join in with the pattern testing. I don't think it's something I can ask people to do, because this is early stage testing. Not to mention that I have nothing to offer them to sweeten the deal. What am I going to give you, a free pattern?
+## Пожертви
+Протягом вересня ми перевищили минулорічну суму пожертв, тож приємно бачити, що цього року я зможу [надіслати більше грошей на рахунок MSF](/about/pledge#donations-history) , ніж у 2016 році.
 
-Still, on the off chance that some of you want to help out by making a muslin and letting me know how it went, here's what's currently on my drawing board:
+Ви завжди можете відслідковувати пожертви на сторінці [та на сторінці збору пожертв](/about/pledge#donations-history), але ось поточний статус:
 
- - A trouser block for men that should be better than Theo(dore)
- - A block for selvedge jeans for men
- - A zip-up hoodie for men
- - A wintercoat
- - A unisex leggins pattern
+![Ура! Краще, ніж минулого року](https://posts.freesewing.org/uploads/donations_68e214d133.svg)
 
-Should any of you want to make one of these as a test, [let me know](/contact), it would really help me out. 
+## Інші формати завантаження
+
+Я також додав додаткові формати на сторінку завантаження проекту. Тепер у вас є вибір між SVG, PDF, letter-PDF, tabloid-PDF, A4-PDF, A3-PDF, A2-PDF, A1-PDF та A0-PDF.
+
+## Значок контролю якості
+Я додав значок контролю якості для таких речей, як повідомлення (або виправлення) помилок, непрацюючих посилань, граматики та інших невеликих поліпшень.
+
+![Бачите помилку? Повідомте мене, і ви отримаєте це](https://posts.freesewing.org/uploads/badge_quality_control_6acb8c10c2.svg)
+
+Це може здатися не таким вже й значним внеском, але, тим не менш, він важливий.
+
+Якщо вибирати між нескінченною працею над ідеальним контентом перед публікацією та швидким виведенням його з бородавками, я схиляюся до останнього варіанту. Тож я розраховую на те, що ви дасте мені знати, коли я помилився.
+
+## Забігаючи наперед до жовтня
+
+Зараз я працюю над 5 моделями. І всі вони готові до того моменту, коли мені потрібно зробити їх, щоб переконатися, що вони працюють за призначенням. Спочатку муслін, а потім справжній.
+
+Для мене це трохи вузьке місце, тому що мені доводиться довго добиратися на роботу, тому мій час для шиття зазвичай обмежений вихідними.
+
+Єдиний спосіб прискорити процес випуску патернів, який я бачу, - це залучити людей до тестування патернів. Я не думаю, що можу просити людей про це, тому що це тестування на ранній стадії. Не кажучи вже про те, що мені нічого запропонувати їм, щоб підсолодити угоду. Що я вам дам, безкоштовний шаблон?
+
+Проте, на випадок, якщо хтось із вас захоче допомогти, зробивши муслін і повідомивши мені, як все пройшло, ось що зараз на моїй креслярській дошці:
+
+ - Чоловічий брючний блок, який має бути кращим за Theo(dore)
+ - Колодку для чоловічих джинсів з кантами
+ - Худі на блискавці для чоловіків
+ - Зимове пальто
+ - Викрійка легінсів унісекс
+
+Якщо хтось із вас захоче зробити один з них в якості тесту, [дайте мені знати](/contact), це б мені дуже допомогло. 
 
