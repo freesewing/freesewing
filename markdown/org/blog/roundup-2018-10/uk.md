@@ -1,32 +1,32 @@
 ---
 author: "joostdecock"
-caption: "Your login background for November"
+caption: "Ваша історія входу в систему за листопад"
 date: "2018-11-30"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/5be11786eaed9bba641fa66b812a3fc9f68aed1d-1920x1410.jpg"
-intro: "Monthly roundup - October 2018: Progress on beta.freesewing.org"
-title: "Monthly roundup - October 2018: Progress on beta.freesewing.org"
+intro: "Щомісячний огляд - жовтень 2018: Прогрес на beta.freesewing.org"
+title: "Щомісячний огляд - жовтень 2018: Прогрес на beta.freesewing.org"
 ---
 
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Це ваш щомісячний огляд новин фрітрекінгу за останні чотири тижні, і погляд на те, що чекає на нас у наступному місяці.
 
-## Looking back at October
+## Озираючись на жовтень
 
-Skeletons pack up their rattling chains, and your *sexy Brett Kavanaugh* costume has found a new home in the attic. This can only mean one thing: Halloween is over, here comes November.
+Скелети пакують свої брязкаючі ланцюги, а ваш *сексуальний костюм Брета Кавано* знайшов новий дім на горищі. Це може означати лише одне: Хелловін закінчився, наближається листопад.
 
-I am currently under the influence of influenza, so pardon me if I keep this short.
+Наразі я перебуваю під впливом грипу, тому вибачте, якщо я буду коротким.
 
-What I can tell you about October is that a lot of work has been done, and while it's not always obvious to somehow showcase this behind-the-scenes work, [our beta website](https://beta.freesewing.org/) is slowly starting to gain more and more features.
+Що я можу сказати про жовтень, так це те, що було зроблено багато роботи, і хоча не завжди очевидно, щоб якось продемонструвати цю закулісну роботу, [наш бета-сайт](https://beta.freesewing.org/) повільно починає набувати все більше і більше функцій.
 
-Not that we're anything close to finishing it. But you can login with your current freesewing username and password. Which means that we've successfully migrated all our data to our new backend.
+Не те, щоб ми були близькі до його завершення. Але ви можете увійти з вашим поточним логіном і паролем на freesewing . Це означає, що ми успішно перенесли всі наші дані на новий бекенд.
 
-It's baby steps, but with each passing day, and each line of code written, we get a little closer to where we want to go.
+Це маленькі кроки, але з кожним днем і кожним написаним рядком коду ми стаємо трохи ближче до того, куди хочемо потрапити.
 
-## Looking ahead to November
+## Забігаючи наперед у листопад
 
-In early December we traditionally do our yearly roundup, which means that November is kind of that last month we have to come up with something to show off.
+На початку грудня ми традиційно робимо наш річний огляд, а це означає, що листопад - це свого роду , що в останньому місяці ми повинні придумати щось, чим можна похвалитися.
 
-I've somehow made peace with the fact that things won't be nearly as ready as I'd like them to be. But on the other hand, I am still excited about all the work we are doing/have been doing, so hopefully that will shine through regardless of whether we can show you much or not.
+Я якось змирився з тим, що все не буде настільки готовим, як мені хотілося б. Але з іншого боку, я все ще в захваті від всієї роботи, яку ми робимо/робили, тому сподіваюся, що це буде видно незалежно від того, чи зможемо ми вам багато чого показати чи ні.
 
-Now if you don't mind, I'll get back to tea and tissues.
+А тепер, якщо не заперечуєте, я повернуся до чаю та серветок.
 
