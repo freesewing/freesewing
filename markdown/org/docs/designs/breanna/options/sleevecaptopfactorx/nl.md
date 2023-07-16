@@ -1,5 +1,5 @@
 ---
-title: "Sleevecap top X"
+title: "Mouwkop top X"
 ---
 
 ![De horizontale locatie van de bovenkant van de mouwkop](./sleevecaptopfactorx.svg)
