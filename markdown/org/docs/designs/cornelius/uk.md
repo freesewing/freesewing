@@ -1,5 +1,5 @@
 ---
-title: "Велосипедні бриджі Cornelius"
+title: "Бріджі для катання Корнеліус"
 ---
 
 <PatternDocs pattern='cornelius' />
