@@ -1,5 +1,5 @@
 ---
-title: "Fabric stretch"
+title: "Stof stretch"
 ---
 
 Pas deze optie aan voor meer of minder elastische stoffen.
