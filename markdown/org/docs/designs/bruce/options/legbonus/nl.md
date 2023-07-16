@@ -1,5 +1,5 @@
 ---
-title: "Leg length bonus"
+title: "Bonus beenlengte"
 ---
 
 ![De optie voor bonus beenlengte bij Bruce](./legbonus.svg)
