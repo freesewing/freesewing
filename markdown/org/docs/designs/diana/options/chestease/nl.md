@@ -1,5 +1,5 @@
 ---
-title: "Chest ease"
+title: "Overwijdte borst"
 ---
 
 ![De optie voor overwijdte borst bij Diana](./chestease.svg)
