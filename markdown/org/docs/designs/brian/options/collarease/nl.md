@@ -1,5 +1,5 @@
 ---
-title: "Collar ease"
+title: "Overwijdte kraag"
 ---
 
 ![Overwijdte kraag](./collarease.svg)
