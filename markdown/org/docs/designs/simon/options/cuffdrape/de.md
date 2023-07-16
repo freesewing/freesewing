@@ -1,5 +1,5 @@
 ---
-title: "Cuff drape"
+title: "Manschette drapieren"
 ---
 
 ![Manschette drapieren](cuffdrape.svg)
