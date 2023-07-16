@@ -1,47 +1,33 @@
 ---
 author: "joostdecock"
-caption: "Quentin surrounded by our future robot overlords."
+caption: "Quentin omringd door onze toekomstige robotoverheersers."
 date: "2017-12-06"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ee5c11e3b29fe788dae470ab0e20396d806c4d1b-2000x1333.jpg"
-intro: "The Florent Flat Cap pattern is now available in beta. That's another gift sorted. [Niet vertaald]"
-title: "The Florent Flat Cap pattern is now available in beta. That's another gift sorted. [Niet vertaald]"
+intro: "Het Florent Flat Cap patroon is nu beschikbaar in bèta. Dat is nog eens een cadeau gesorteerd."
+title: "Het Florent Flat Cap patroon is nu beschikbaar in bèta. Dat is nog eens een cadeau gesorteerd."
 ---
 
-After last month's release of [Benjamin](/patterns/benjamin), here's another pattern release
-to channel the dapper gentleman within: the [Florent Flat Cap](/patterns/florent).
+Na de release vorige maand van [Benjamin](/patterns/benjamin), is hier nog een patroonrelease om de knappe heer in je te kanaliseren: de [Florent Flat Cap](/patterns/florent).
 
-Like Benjamin, this pattern was contributed by the freesewing community, rather than
-yours truly. In this case, it was [Quentin Felix](/users/ptzcb) who signed for the design.
+Net als Benjamin is dit patroon bijgedragen door de freeswing community, in plaats van ondergetekende. In dit geval was het [Quentin Felix](/users/ptzcb) die voor het ontwerp tekende.
 
-I asked Quentin if he wanted to write this announcement blog post himself, 
-but he argued that it was time I did something too. He did have this to share
-though, on his reasons for designing this pattern in the first place:
+Ik vroeg Quentin of hij deze aankondigingsblogpost zelf wilde schrijven, maar hij vond dat het tijd werd dat ik ook iets deed. Hij had echter wel dit te delen , over zijn redenen om dit patroon in de eerste plaats te ontwerpen:
 
-> ##### Quentin on his reasons for designing Florent
->
-> I like wearing flat caps myself. I didn't use to, but I have
-> a friend Florent who inspired me to wear them (now you know where the name comes from).
->
->
-> The first time I made a flat cap, it took me ages to scale the 
-> pattern to an exact fit, involving a lot of messing about with tracing paper.
-> There's a number of patterns available online for flat caps.
-> But they all come in one size only. 
->
-> I wanted to make this more accessible to people. And, while I was at it,
-> I also drew on my experience to add some tweaks for a better fit. 
->
-> For example, this design extends lower at the back of the head, which
-> gives it better hold.
+> ##### Quentin over zijn redenen om Florent te ontwerpen
+> 
+> Ik draag zelf graag platte petten. Vroeger niet, maar ik heb een vriend Florent die me inspireerde om ze te dragen (nu weet je waar de naam vandaan komt).
+> 
+> De eerste keer dat ik een platte pet maakte, kostte het me eeuwen om het patroon precies op maat te maken, waarbij ik veel moest knoeien met overtrekpapier. Er zijn online een aantal patronen beschikbaar voor platte mutsen. Maar ze zijn er allemaal maar in één maat. 
+> 
+> Ik wilde dit toegankelijker maken voor mensen. En toen ik toch bezig was, , putte ik ook uit mijn ervaring om een paar tweaks toe te voegen voor een betere pasvorm. 
+> 
+> Dit ontwerp steekt bijvoorbeeld lager uit aan de achterkant van het hoofd, waardoor meer houvast biedt.
 
-This *why should we always have to re-invent the wheel?* could
-pretty much be freesewing's slogan.
+Dit *waarom zouden we altijd het wiel opnieuw moeten uitvinden?* zou zo ongeveer de slogan van freesewing kunnen zijn.
 
-## It's the season for giving
+## Het is het seizoen om te geven
 
-Florent requires only one measurement: the head circumference. As such,
-this release is perfectly timed. With the holiday season coming up,
-here's another gift you can make yourself.
+Florent heeft maar één meting nodig: de hoofdomtrek. Als zodanig is deze release perfect getimed. Met de feestdagen voor de deur, , is hier nog een cadeau dat je zelf kunt maken.
 
-Thanks Quentin!
+Bedankt Quentin!
 
