@@ -1,5 +1,5 @@
 ---
-title: "Fit the knee"
+title: "Ajustar la rodilla"
 ---
 
 Controla la anchura de la pernera.
