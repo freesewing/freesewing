@@ -1,5 +1,5 @@
 ---
-title: "Урсула роздягається"
+title: "Труси Урсула"
 ---
 
 <PatternDocs pattern='ursula' />
