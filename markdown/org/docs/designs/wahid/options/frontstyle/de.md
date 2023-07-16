@@ -1,5 +1,5 @@
 ---
-title: "Neck opening style"
+title: "Ausschnittstil"
 ---
 
 ![Frontstil](frontstyle.svg)
