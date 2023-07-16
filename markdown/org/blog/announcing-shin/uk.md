@@ -1,30 +1,30 @@
 ---
 author: "joostdecock"
-caption: "I guess this is what augmented reality looks like?"
+caption: "Напевно, так виглядає доповнена реальність?"
 date: "2018-09-29"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b471275001689bd4819d6d95aabc8134788dc612-1694x1129.jpg"
-intro: "A while ago I found myself in need of some new swim trunks. So I drafted a pattern and made some:"
-title: "Announcing Shin, a swim trunks pattern"
+intro: "Нещодавно я виявив, що мені потрібні нові плавки. Тож я намалювала викрійку і зробила кілька штук:"
+title: "Анонсуємо модель плавок Shin"
 ---
 
-A while ago I found myself in need of some new swim trunks. So I drafted a pattern and made some:
+Нещодавно я виявив, що мені потрібні нові плавки. Тож я намалювала викрійку і зробила кілька штук:
 
-![An early tryout of the Shin pattern](https://posts.freesewing.org/uploads/sample_0437fef846.jpg)
+![Раннє випробування візерунка Shin](https://posts.freesewing.org/uploads/sample_0437fef846.jpg)
 
-I asked if people would be interested in a pattern like this, and turns out that yes, they were.
+Я запитала, чи зацікавив би людей такий патерн, і виявилося, що так, зацікавив.
 
-So, after some more tweaking, I think this is ready for you guys, and meanwhile Roy has already provided an illustration for it too.
+Тож, після деяких доопрацювань, я думаю, що він готовий для вас, а тим часом Рой вже надав ілюстрацію до нього.
 
-![I'll be the first to admit that this guy wears it better than me](https://posts.freesewing.org/uploads/shin_0dc5fdd06d.jpg)
+![Я буду першим, хто визнає, що цей хлопець носить його краще за мене](https://posts.freesewing.org/uploads/shin_0dc5fdd06d.jpg)
 
-## Options and documentation available
+## Доступні опції та документація
 
-Shin comes with options, and they are very close to the options available for [Bruce](/designs/bruce).
+Shin поставляється з опціями, і вони дуже близькі до опцій, доступних для [Bruce](/designs/bruce).
 
-All [options are documented](/docs/patterns/shin/options), as are the [required measurements](/docs/patterns/shin/measurements), and I've also written [instructions for how to make this](/docs/patterns/shin).
+Всі [варіанти задокументовані](/docs/patterns/shin/options), , так само як і [необхідні вимірювання](/docs/patterns/shin/measurements), , і я також написав [інструкції, як зробити цей](/docs/patterns/shin).
 
-I still have to do the illustrations, but it's really not hard so you'll probably figure it out without them. Essentially, you can go and make this right now.
+Мені ще треба зробити ілюстрації, але це зовсім не складно, тож ви, мабуть, розберетеся і без них. По суті, ви можете піти і зробити це прямо зараз.
 
-Enjoy!
+Смачного!
 
 
