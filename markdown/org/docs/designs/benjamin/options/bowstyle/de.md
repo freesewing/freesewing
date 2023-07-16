@@ -1,5 +1,5 @@
 ---
-title: "Bow style"
+title: "Fliegen-Stil"
 ---
 
 Vier verschiedene Fliegen-Stile!
