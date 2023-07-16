@@ -1,75 +1,75 @@
 ---
 author: "joostdecock"
-caption: "Photo by Deeana Creates from Pexels"
+caption: "Foto door Deeana Creates van Pexels"
 date: "2020-07-12"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f04cc6c50a8e5f08f3ebd6c3d4903fb3055c9a01-1920x1280.jpg"
-intro: "We've just release FreeSewing v2.7 🎉"
-title: "FreeSewing v2.7: Titan, changes to measurements, and a long list of improvements [Niet vertaald]"
+intro: "We hebben zojuist FreeSewing v2.7 uitgebracht 🎉"
+title: "FreeSewing v2.7: Titan, veranderingen aan metingen en een lange lijst verbeteringen"
 ---
 
 
-We've just release FreeSewing v2.7 🎉
+We hebben zojuist FreeSewing v2.7 uitgebracht 🎉
 
-There's a lot of work that went into this release, and unfortunately it  also will cause some breaking changes to your existing patterns and people, but it's all for the better.
+Er is veel werk gestoken in deze release, en helaas zullen er ook wat veranderingen optreden in je bestaande patronen en mensen, maar het is allemaal ten goede.
 
-Let's have a look at what's new:
+Laten we eens kijken wat er nieuw is:
 
-## Titan trouser block
+## Titan basispatroon broek
 
-I have lost count of the number of times I have started working on a trouser block over the last couple of years. It's something that's been on my to-do list for a long time, yet despite several attempts at making it happen, I hadn't come up with something that I was happy with.
+Ik ben de tel kwijtgeraakt van het aantal keren dat ik de afgelopen jaren aan een broekenblok ben begonnen. Het is iets dat al heel lang op mijn to-do lijstje staat, maar ondanks verschillende pogingen om het te realiseren, had ik nog niet iets bedacht waar ik blij mee was.
 
-That's because designing trouser patterns is hard. Making sure things fit, while also guaranteeing that inseam, outseam, and cross seam are all the same length is no walk in the park. Especially if you want a pattern that will seamlessly adapt to different sizes and models.
+Dat komt omdat het ontwerpen van broekpatronen moeilijk is. Ervoor zorgen dat dingen passen en tegelijkertijd garanderen dat binnenbeennaden, buitenbeennaden en dwarsnaden allemaal even lang zijn, is geen sinecure. Vooral als je een patroon wilt dat zich naadloos aanpast aan verschillende maten en modellen.
 
-It would have probably lingered on my to-do list a while longer, but in February, Debra reached out to me and proposed we would come up with a pants sloper together. I love teaming up with people because it a great way to stay motivated, so over the next 4 months or so, we worked on what Debra has named [Titan](/designs/titan/), a dart-free unisex trouser block. I'd like to thank her for her patience and contributions to make Titan a success
+Het zou waarschijnlijk nog een tijdje op mijn to-do lijstje blijven staan, maar in februari nam Debra contact met me op en stelde voor om samen een broekensloper te maken. Ik houd ervan om met mensen samen te werken omdat het een geweldige manier is om gemotiveerd te blijven, dus werkten we de volgende ongeveer 4 maanden aan wat Debra [Titan](/designs/titan/)heeft genoemd, een unisex broekenblok zonder pijlen. Ik wil haar bedanken voor haar geduld en bijdragen om Titan tot een succes te maken
 
 <Note>
 
-###### Help us out: Make a Titan muslin 
+###### Help ons: Maak een Titan mousseline 
 
-A block is just that, a block or sloper. Our next steps are obviously this spin this into a number of different trouser patterns. Before we get to that though, we'd like to see how Titan performs on a variety of bodies.
+Een blok is precies dat, een blok of sloper. Onze volgende stappen zijn natuurlijk dit verwerken in een aantal verschillende broekpatronen. Maar voordat we daaraan toekomen, willen we eerst zien hoe de Titan presteert op verschillende lichamen.
 
-So if you could whip up a muslin of a made-to-measure Titan and let us know how it went, that would be wonderful.
+Dus als je een mousseline van een op maat gemaakte Titan in elkaar kunt flansen en ons kunt laten weten hoe dat ging, zou dat geweldig zijn.
 
 </Note>
 
-## Shoulder slope — again — and other changes to measurements
+## Schouderhelling - opnieuw - en andere veranderingen aan metingen
 
-We've made changes to the different measurements on the site. The roughly fall into 3 categories:
+We hebben wijzigingen aangebracht in de verschillende metingen op de site. Ze vallen grofweg in 3 categorieën uiteen:
 
- - We've made *waist* the basis for vertical measurements
- - We've changed the shoulder slope measurement
- - We've simplified the language and terms
+ - We hebben *taille* de basis gemaakt voor verticale metingen.
+ - We hebben de meting van de schouderhelling veranderd
+ - We hebben de taal en termen vereenvoudigd
 
-As a result, some vertical measurements that were not based on the waist are not gone (hips to upper leg for example). Other measurements have been renamed under the hood to make things simpler, but unless you're a developer, you don't need to worry about that.
+Hierdoor zijn sommige verticale metingen die niet op de taille waren gebaseerd niet verdwenen (van heupen naar bovenbeen bijvoorbeeld). Andere metingen zijn onder de motorkap hernoemd om het eenvoudiger te maken, maar tenzij je een ontwikkelaar bent, hoef je je daar geen zorgen over te maken.
 
-An important change is the one we made to the shoulder slope measurement. It's historically been a measurement that is hard to measure, and the changes we've made before to try to address that were in retrospect a bad idea.
+Een belangrijke wijziging is de wijziging die we hebben aangebracht in de meting van de schouderhelling. Het is van oudsher een moeilijk meetbare meting en de veranderingen die we eerder hebben doorgevoerd om dat aan te pakken waren achteraf gezien een slecht idee.
 
-We've changed it again, but this time around, shoulder slope is measured as you would expect a slope to be measured: in degrees.
+We hebben het weer veranderd, maar deze keer wordt de schouderhelling gemeten zoals je zou verwachten dat een helling wordt gemeten: in graden.
 
-This required some changes as up until now all measurements used the same units, but things should be ok now.
+Dit vereiste enkele wijzigingen omdat tot nu toe alle metingen dezelfde eenheden gebruikten, maar het zou nu goed moeten gaan.
 
-As a result of all these changes and measurements, there's two things you should know:
+Als gevolg van al deze veranderingen en metingen zijn er twee dingen die je moet weten:
 
- - The people you have in your account will have their measurements updated (when the names changed) or removed (where the measurement is no longer used, or we changed how to measure it)
- - Patterns that you have saved in your account that use some of the changed measurements will no longer work. However, we've kept them in your account so that if you want, you can extract the data, and re-draft them for the new measurements. Feel free to reach out if you need assistance with that.
+ - Van de mensen in je account worden de metingen bijgewerkt (als de namen zijn veranderd) of verwijderd (als de meting niet meer wordt gebruikt of als we de manier van meten hebben veranderd).
+ - Patronen die je hebt opgeslagen in je account en die gebruik maken van de gewijzigde afmetingen zullen niet meer werken. We hebben ze echter in je account bewaard zodat je, als je wilt, de gegevens eruit kunt halen en ze opnieuw kunt opstellen voor de nieuwe metingen. Voel je vrij om contact op te nemen als je daar hulp bij nodig hebt.
 
 <Tip>
 
-We've migrated our backend to these new measurements, but you are likely to still have some of the old stuff cached in your profile.  
-To get around this, you should probably [reload your account](/account/reload/).
+We hebben onze backend gemigreerd naar deze nieuwe metingen, maar je hebt waarschijnlijk nog wat van de oude dingen in de cache van je profiel staan.  
+Om dit te omzeilen moet je waarschijnlijk [je account opnieuw laden](/account/reload/).
 
 </Tip>
 
-## Frontend changes
+## Wijzigingen aan de voorkant
 
-We've made a few changes to the website too. 
+We hebben ook een paar veranderingen op de website aangebracht.
 
- - We've added a [pattern notation guide](/docs/various/notation/) to take the guesswork out of what those markings on your pattern mean.
- - We've added a [reload account](/account/actions/reload/) page to help you avoid issues due to cached account data
- - We've changed the styling of the different sizes when you compare a pattern, as well as included a legend showing which outline corresponds to which size.
+ - We hebben een [patroonnotatiegids](/docs/various/notation/) toegevoegd om het giswerk weg te nemen over wat die markeringen op je patroon betekenen.
+ - We hebben een [account opnieuw laden](/account/actions/reload/) pagina toegevoegd om je te helpen problemen als gevolg van in de cache opgeslagen accountgegevens te voorkomen.
+ - We hebben de styling van de verschillende maten veranderd als je een patroon vergelijkt, en we hebben ook een legenda toegevoegd die laat zien welke omtrek bij welke maat hoort.
 
 
-## And many more changes under the hood
+## En nog veel meer veranderingen onder de motorkap
 
-As I said, a lot of work went into this release. See our [monorepo changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md) for all the details.
+Zoals ik al zei, is er veel werk gestoken in deze release. Zie onze [monorepo changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md) voor alle details.
 
