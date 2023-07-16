@@ -73,4 +73,3 @@ Nous avons également apporté quelques modifications au site Web.
 
 Comme je l'ai dit, beaucoup de travail a été effectué dans cette version. Consultez notre [journal des modifications Monorepo](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md) pour tous les détails.
 
-
