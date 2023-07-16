@@ -1,12 +1,11 @@
 ---
 author: "joostdecock"
-caption: "Bild von"
+caption: "Bild von <a href='https://stock.tookapic.com/jenniferforjoy' target='_BLANK' rel='nofollow'>Jennifer</a>"
 date: "2017-06-12"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/952f714d11203d03a449895053c63963b0c02dbd-2000x1126.jpg"
-intro: "Als wir Ende März den FreeSewing Core veröffentlichten, verlagerte sich mein Fokus sofort auf den Aufbau unseres Frontends, sodass freesewing.org  makemypattern.com vollständig ersetzen konnte."
+intro: "When we released freesewing core at the end of March, my focus immeadiatly shifted to building our front-end so that freesewing.org could fully replace makemypattern.com ."
 title: "Wir sind JAMstack, wir sind JAMstack, wir sind JAMstack, wir sind JAMstack, wir sind JAMstack, wir sind JAMstack, wir sind JAMstack, wir sind JAMstack, und ich hoffe, dass du auch JAMstack magst"
 ---
-
 
 Als wir Ende März den FreeSewing Core veröffentlichten, verlagerte sich mein Fokus sofort auf den Aufbau unseres Frontends, sodass [freesewing.org](/) [makemypattern.com](https://makemypattern.com/) vollständig ersetzen konnte.
 
@@ -35,7 +34,9 @@ Ich wollte den gleichen Ansatz in einer Website. Außer, dass sie nicht statisch
 
 Ich habe zum ersten Mal von JAMstack erfahren, als ich anfing, mich mit dem Hosting für diese zentrale Dokumentationsseite zu befassen. Es wurde ursprünglich auf GitHub-Seiten gehostet, die kostenloses Hosting anbieten. Sie haben auch SSL oder einen benutzerdefinierten Domänennamen, aber Sie können nicht beides haben. Was eine Art Deal-Breaker war.
 
-Auf der Suche nach Alternativen stolperte ich über [Netlify](https://www.netlify.com/), die sowohl SSL- als auch kundenspezifische Domains betreiben und ein kostenloses Angebot für Open-Source-Projekte haben (danke Jungs). Außerdem hat mich dieses Video von Netlify CEO Mathias Biilmann sehr begeistert für JAMstack.
+Auf der Suche nach Alternativen stolperte ich über [Netlify](https://www.netlify.com/), die sowohl SSL- als auch kundenspezifische Domains betreiben und ein kostenloses Angebot für Open-Source-Projekte haben (danke Jungs). Außerdem hat mich dieses Video von Netlify CEO Mathias Biilmann
+
+ sehr begeistert für JAMstack.</p> 
 
 Sofern Sie nicht mit JAMstack vertraut sind, schlage ich vor, dass Sie sich das Video ansehen, aber es läuft darauf hinaus:
 
@@ -95,9 +96,10 @@ Der Punkt ist, dass ich mich daran gemacht habe, etwas zu bauen, das makemypatte
 
 Ich denke, das kann ich das jetzt tun. Und wenn Sie Verbesserungspotenzial sehen, nehmen Sie bitte [an der Anstrengung teil](/contribute), wir fangen gerade erst an.
 
+
+
 <small>PS: Für diejenigen von euch, die sich über den Titel dieses Beitrags Gedanken machen:</small>
 
 <YouTube id='oFRbZJXjWIA' />
-
 
 
