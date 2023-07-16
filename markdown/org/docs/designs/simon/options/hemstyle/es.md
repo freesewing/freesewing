@@ -1,5 +1,5 @@
 ---
-title: "Hem style"
+title: "Estilo del dobladillo"
 ---
 
 ![Estilo del dobladillo](hemstyle.svg)
