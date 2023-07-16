@@ -1,5 +1,5 @@
 - - -
-title: "Stretch"
+titel: "Rek"
 - - -
 
 De hoeveelheid algemene (horizontale) stretch.
