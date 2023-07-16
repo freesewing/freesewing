@@ -1,5 +1,5 @@
 ---
-title: "Sleeve width guarantee"
+title: "Gegarandeerde mouw breedte"
 ---
 
 We maken eerst een arm opening en vervolgens leggen we een mouw op om die te passen.
