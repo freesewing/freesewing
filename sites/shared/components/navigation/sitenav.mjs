@@ -179,18 +179,15 @@ export const Breadcrumbs = ({ slug, siteNav }) => {
  *
  * @param slug          {string}    - The slug of the current page
  * @param siteNav       {object}    - The siteNav object from the useNavigation hook
- * @param ignorecontrol {boolean}   - Whether or not to ignore the control setting of the user to hide certain things
  */
-export const NavLinks = ({ slug, siteNav, ignoreControl = false }) => (
+export const NavLinks = ({ slug, siteNav }) => (
   <ul className="w-full list mb-8 mt-3">
-    {onlyValidChildren(siteNav).map((page, i) =>
-      ignoreControl || 'fixme - add ignoreControl support' ? (
-        <li key={i} className="w-full">
-          <MainLink s={page.s} t={page.t} slug={slug} />
-          {pageHasChildren(page) && !page.n && <Section {...{ tree: page, slug }} />}
-        </li>
-      ) : null
-    )}
+    {onlyValidChildren(siteNav).map((page, i) => (
+      <li key={i} className="w-full">
+        <MainLink s={page.s} t={page.t} slug={slug} />
+        {pageHasChildren(page) && !page.n && <Section {...{ tree: page, slug }} />}
+      </li>
+    ))}
   </ul>
 )
 
