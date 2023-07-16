@@ -1,5 +1,5 @@
 - - -
-title: "Length bonus"
+titel: "Lengtebonus"
 - - -
 
 Hoeveel langer dan de standaard lengte is om je apen te maken.
