@@ -25,9 +25,9 @@ Een basisvorm is misschien niet het spannendste patroon om naar te kijken, maar 
 
 We hebben bijvoorbeeld een vergelijkbare basisvorm voor herenkleding genaamd [Brian](/designs/brian/). De patronen [Aaron](/designs/aaron/), [Bent](/designs/bent/), [Carlita](/designs/carlita/), [Carlton](/designs/carlton/), [Huey](/designs/huey/), [Hugo](/designs/hugo/), [Jaeger](/designs/jaeger/), [Simon](/designs/simon/), [Simone](/designs/simone/), [Sven](/designs/sven/) en [Wahid](/designs/wahid/) zijn allemaal op de een of andere manier verwant met Brian.
 
-In other words, Breanna is an important building block for us to extend our womenswear collection. But that does not mean it is not good news for you too. If you have been sewing for a while, chances are drafting your own block/sloper has perpetually been on your to-do list. Well, good news, because here is your block ready to go.
+Met andere woorden, Breanna is een belangrijke bouwsteen voor ons om onze damescollectie uit te breiden. Maar dat betekent niet dat het geen goed nieuws voor jou is. Als je al een tijdje naait op , dan is de kans groot dat het ontwerpen van je eigen blok/slopper altijd op je to-do lijstje heeft gestaan. Nou, goed nieuws, want hier is je blok klaar voor gebruik.
 
-Oh, and of course it has all the bells and whistles you can expect from us. Have a look at [the pattern options](/docs/patterns/breanna/options/) and I think you'll be positively impressed. Dit basiscorsage geeft je bijvoorbeeld de optie van 1 of 2 coupenaden op 15 mogelijke posities. Dat geeft je in totaal 120 unieke manieren om je coupenaad of -naden te plaatsen.
+Oh, en natuurlijk heeft het alle toeters en bellen die je van ons kunt verwachten. Ga maar eens kijken naar de [patroonopties](/docs/patterns/breanna/options/) voor Breanna. Ik denk dat je onder de indruk zal zijn. Dit basiscorsage geeft je bijvoorbeeld de optie van 1 of 2 coupenaden op 15 mogelijke posities. Dat geeft je in totaal 120 unieke manieren om je coupenaad of -naden te plaatsen.
 
 Breanna is al een tijdje in ontwikkeling. We zijn benieuwd naar je feedback erop. Het is echt niet veel werk om een toile te maken van een basiscorsage zoals dit. Dus als je wat tijd vrij hebt om dit patroon te testen en ons te laten weten wat je ervan vindt, dan zou dat geweldig zijn.
 
@@ -60,10 +60,10 @@ Jammer genoeg bestaat daar geen magische oplossing voor. Als je iets op maat wil
 
 Dat verhoogt de drempel voor mensen die onze site nog niet goed kennen en eens willen rondsnuffelen.
 
-> *Oooh, free patterns, nice* 😍  
-> *Wait, I have to create an account first?* 🤔  
-> *And take all these measurements?* 😬  
-> *That seems like a lot of work.*
+> *Oooh, gratis patronen, leuk* 😍  
+> *Wacht, moet ik eerst een account aanmaken?* 🤔  
+> *En al die metingen doen?* 😬  
+> *Dat lijkt me veel werk.*
 
 Begrijpelijk.
 
@@ -75,10 +75,10 @@ Patronen op maat zijn uiteraard *ons ding* en dat blijft ook zo. Maar we hopen d
 
 ### Wat zijn eigenlijk 'standaard'maten?
 
-Het lastigste aan de hele oefening met standaardmaten? Uitvissen wat nu eigenlijk 'standaard' is. We took a stab at it, and if you're curious you can [check out our sizing table here](/docs/various/sizes/).
+Het lastigste aan de hele oefening met standaardmaten? Uitvissen wat nu eigenlijk 'standaard' is. We hebben een poging gedaan, en als je nieuwsgierig bent kan je hier onze [maattabel](/docs/various/sizes/) bekijken.
 
-For menswear, our size range is 32 to 50, and they are based on a size 38 baseline that we then graded up and down.  
-For womenswear, our size range is 28 to 48, and they are based on a size 34 baseline that we then graded up and down.
+Voor herenkleding is ons maatbereik 32 tot 50, en ze zijn gebaseerd op een basismaat 38 die we vervolgens naar boven en beneden hebben ingedeeld.  
+Voor dameskleding is ons maatbereik 28 tot 48, en ze zijn gebaseerd op een basismaat 34 die we vervolgens naar boven en beneden hebben aangepast.
 
 <Note>
 
@@ -86,15 +86,15 @@ Als je niet zeker bent wat die getallen betekenen: dat is de halsomtrek in centi
 
 </Note>
 
-We hebben ons best gedaan om een inclusieve maattabel op te stellen, en dit is onze beste poging om een logisch systeem te bedenken. Hou er alsjeblieft rekening mee dat dit niet onze core business is. We've love to hear your feedback on the sizing tables, and are open to tweaks and suggestions, but at the end of the day, what we want is to give you a pattern drafted to your measurements.  
-These sizes are just a way to lure you in 🤫
+We hebben ons best gedaan om een inclusieve maattabel op te stellen, en dit is onze beste poging om een logisch systeem te bedenken. Hou er alsjeblieft rekening mee dat dit niet onze core business is. We horen graag jullie feedback over de matentabellen en staan open voor aanpassingen en suggesties, maar uiteindelijk willen we je een patroon geven dat op jouw maat is gemaakt.  
+Deze maten zijn gewoon een manier om je te lokken 🤫
 
 
 ## En ook nog: allerlei andere dingen
 
 Hup, ga een beetje rondklikken, want we hebben ook nog een heleboel andere dingen veranderd.
 
-If you bump into any problems or have questions, as always [our chat room is the place to get in touch](https://discord.freesewing.org/).
+Als je op een probleem botst of vragen hebt, kan je net als altijd terecht in onze [chatroom](https://discord.freesewing.org/).
 
 En als je het aanstaat wat we hier doen, dan is dit misschien een goed moment om je vrienden te vertellen over FreeSewing. Want nu kunnen ze komen kijken zonder een account te moeten maken.
 
