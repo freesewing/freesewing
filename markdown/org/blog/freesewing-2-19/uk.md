@@ -1,40 +1,40 @@
 ---
 author: "joostdecock"
-caption: "Like history? Then this release is going to be right up your alley."
+caption: "Як історія? Тоді цей реліз буде саме для вас."
 date: "2021-10-17"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/af326b5b6326911272ed989947e8cafe22966019-1920x1280.jpg"
-intro: "I've just pulled the release lever on version 2.19 of FreeSewing and there's a lot that went into this release. For full details, you can check out the changelog , here I'll stick to the highlights:"
-title: "FreeSewing 2.19 brings Bee, Lunetius, Tiberius, Walburga, a new plugin, and a bunch of improvements and fixes"
+intro: "Я щойно потягнув за важіль випуску версії 2.19 FreeSewing, і в цьому випуску багато чого змінилося. Повну інформацію ви можете знайти в журналі змін, а тут я розповім про основні моменти:"
+title: "FreeSewing 2.19 приносить Bee, Lunetius, Tiberius, Walburga, новий плагін та купу покращень і виправлень"
 ---
 
-I've just pulled the release lever on version 2.19 of FreeSewing and there's a lot that went into this release. For full details, you can [check out the changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md#2190-2021-10-17), here I'll stick to the highlights:
+Я щойно потягнув за важіль випуску версії 2.19 FreeSewing, і в цьому випуску багато чого змінилося. Повну інформацію ви можете знайти за посиланням [, а також переглянути журнал змін](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md#2190-2021-10-17), тут же я зупинюся на основних моментах:
 
-## Lunetius, Tiberius, and Walburga
+## Лунецій, Тіберій і Вальбурга
 
-[Lunetius](/designs/lunetius), [Tiberius](/designs/tiberius/), and [Walburga](/designs/walburga/) are three new patters from **Rika Tamaike** who is the latest addition to our growing team of designers. These are all historical pattern:
+[Lunetius](/designs/lunetius), [Tiberius](/designs/tiberius/)та [Walburga](/designs/walburga/) - три нові візерунки від **Rika Tamaike** , яка є останнім доповненням до нашої зростаючої команди дизайнерів. Це все історичні закономірності:
 
  - Лютінус – це ласерна, або історична накидка з Древнього Риму.
  - Тіберіус – це Древньоримська туніка.
  - Валбурга – це гербова накидка; елемент одягу середньовічної Європи.
 
-I'm not much of a history buff myself, so I'm looking forward to see what these will look like when people are going to start making them. What I can say for sure is that all of these are pretty straight-forward, so they should be fun to make.
+Я сам не дуже люблю історію, тому з нетерпінням чекаю, як вони виглядатимуть, коли люди почнуть їх виготовляти. Що я можу сказати напевно, так це те, що всі вони досить прості, тож їх має бути цікаво робити.
 
-## The Bee bikini
+## Бікіні "Бджілка
 
-Also new in this release is [Bee](/designs/bee/), a bikini pattern that you can pair with the [Ursula Undies pattern](/designs/ursula/). **Bobgeorgethe3rd** signed for the code, the design of the bikini was a collaboration with **PrudenceRabbit**.
+Також у цьому випуску - [Бджілка](/designs/bee/), візерунок бікіні, який можна поєднати з візерунком [Урсула трусиків](/designs/ursula/). **Bobgeorgethe3rd** розписався за код, дизайн бікіні - колаборація з **PrudenceRabbit**.
 
-I'm hoping for some people in the Southern hemisphere to make this one because I suspect it might be a while before bikini weather returns to those of use living above the equator.
+Я сподіваюся, що хтось із жителів Південної півкулі зробить цю фотографію, тому що я підозрюю, що може пройти деякий час, перш ніж погода для бікіні повернеться до тих, хто живе над екватором.
 
-This too is a fast and simple make, so go and check it out.
+Це теж швидкий і простий спосіб, тож ідіть і перевірте його.
 
-## The versionfree-svg plugin
+## Плагін versionfree-svg
 
-This is a bit more under-the-hood stuff, but we've also published [plugin-versinofree-svg](https://www.npmjs.com/package/@freesewing/plugin-versionfree-svg), a new plugin that will strip the version information from FreeSewing's SVG output.
+Це трохи більш "підкапотний" матеріал, але ми також опублікували [plugin-versinofree-svg](https://www.npmjs.com/package/@freesewing/plugin-versionfree-svg), новий плагін, який видаляє інформацію про версію з вихідних даних FreeSewing у форматі SVG.
 
-This is handy because it allows diffing between different versions. By not including the version information, you can see what (if anything) has changed between different versions of a pattern, something we use ourselved in our QA pipeline.
+Це зручно, оскільки дозволяє розрізняти різні версії. Не включаючи інформацію про версію, ви можете побачити, що (якщо щось) змінилося між різними версіями шаблону, що ми самі використовуємо в нашому конвеєрі QA.
 
-## Backported snap options from the v3 roadmap
+## Перенесені параметри прив'язок з дорожньої карти v3
 
-Speaking of under-the-hood, the [snap proposal](https://github.com/freesewing/freesewing/discussions/1331) on [our v3 roadmap](https://github.com/freesewing/freesewing/discussions/1278) was something we liked so much that we promptly backported it to v2, and it's already being used in different patterns.
+Говорячи про "підкапотне", пропозиція [оснастки](https://github.com/freesewing/freesewing/discussions/1331) на [нашої дорожньої карти v3](https://github.com/freesewing/freesewing/discussions/1278) нам так сподобалася, що ми швидко перенесли її в v2, і вона вже використовується в різних шаблонах.
 
-Have fun with the new patterns, and for feedback, questions, or suggestions, [come hang out with us on Discord](https://discord.freesewing.org).
+Насолоджуйтесь новими шаблонами, а для зворотного зв'язку, запитань чи пропозицій, [приходьте до нас на Discord](https://discord.freesewing.org).
