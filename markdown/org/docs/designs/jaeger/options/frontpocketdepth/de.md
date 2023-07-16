@@ -1,5 +1,5 @@
 ---
-title: "Front pocket depth"
+title: "Tiefe der Vordertasche"
 ---
 
 ![Tiefe der Vordertasche](frontpocketdepth.svg)
