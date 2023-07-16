@@ -1,32 +1,32 @@
 ---
 author: "joostdecock"
-caption: "Paco on yours truly"
+caption: "Пако, ваш покірний слуга."
 date: "2020-08-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1bc82d4abb50ea1b7bda32dd64521e9ecfdd8467-2048x1536.jpg"
-intro: "Meet Paco: Our new unisex pattern for stylish summer pants"
-title: "Meet Paco: Our new unisex pattern for stylish summer pants"
+intro: "Знайомтеся, Пако: Наш новий унісекс-візерунок для стильних літніх штанів"
+title: "Знайомтеся, Пако: Наш новий унісекс-візерунок для стильних літніх штанів"
 ---
 
-If you pay attention to our releases, you know that 4 weeks ago we put out our new [Titan trouser block](/designs/titan/). Today, I'm happy to announce our first *real* pattern based on it: The [Paco summer pants](/designs/paco).
+Якщо ви слідкуєте за нашими релізами, то знаєте, що 4 тижні тому ми випустили наші нові штани [Титанові штани](/designs/titan/). Сьогодні я рада представити нашу першу *справжню* викрійку на його основі: Літні штани [Paco](/designs/paco).
 
-These are decidedly unisex — in a good way — and they're also quick to make, certainly in comparison to a pair of full-blown trousers like [Theo](/designs/theo/).
+Це, безумовно, унісекс - в хорошому сенсі - і вони також швидкі у виготовленні, звичайно, в порівнянні з парою повноцінних штанів, як [Theo](/designs/theo/).
 
-Paco comes with an elasticated waist and cuffs, at least by default, for you can also choose to draft these with regular hemmed legs.
+Paco поставляється з еластичною талією та манжетами, принаймні за замовчуванням, але ви також можете вибрати їх зі звичайними підшитими штанинами.
 
-The default options also include front pockets on the side seams. If you want welt pockets in the back, you can chose that as an option. You can also remove the side seam pockets of you'd like that.
+За замовчуванням також передбачені передні кишені в бокових швах. Якщо ви хочете прорізні кишені ззаду, ви можете вибрати цю опцію. Ви також можете прибрати кишені з бокових швів, якщо хочете.
 
 
-## Are these just sweat pants?
+## Це просто спортивні штани?
 
-They could be. If you make these in a knit, than your could certainly use them as such. But no, they are not designed to be.
+Можливо. Якщо ви зробите їх в'язаними, то, безсумнівно, зможете використовувати їх як такі. Але ні, вони не призначені для цього.
 
-The ones you see in the picture above (full disclosure: I have not taken these off since I've made them) aren't knit either. Here's a close-up of the woven fabric:
+Ті, що ви бачите на фото вище (повне розкриття: я не знімала їх відтоді, як зробила), теж не в'язані. Ось великий план витканого полотна:
 
-![Close-up of a woven fabric](https://posts.freesewing.org/uploads/fabric_46633a6dd2.jpg)
+![Крупним планом ткане полотно](https://posts.freesewing.org/uploads/fabric_46633a6dd2.jpg)
 
-The difference is in the cut — which is a lot more flattering and stylish that your typical sweat pants — and the pockets. Yes, the pockets. Because pockets are important.
+Різниця полягає в крої - який набагато більш стильний і стильний, ніж у ваших звичайних спортивних штанів - і кишенях. Так, кишені. Тому що кишені важливі.
 
-Both front pockets and (optional) back pockets are anchored at the waist. Which means that you can put things in your pockets without them becoming unsightly bump that's just dangling around in your trouser leg.
+Обидві передні кишені та (за бажанням) задня кишеня закріплені на талії. Це означає, що ви можете класти речі в кишені , не боячись, що вони перетворяться на непривабливі шишки, які просто бовтатимуться на штанині.
 
-Convinced yet? Then go make some, and make sure to share your pictures :)
+Переконалися? Тоді йдіть і зробіть їх, і не забудьте поділитися своїми фотографіями :)
 
