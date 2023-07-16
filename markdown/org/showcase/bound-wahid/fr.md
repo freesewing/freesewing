@@ -5,7 +5,8 @@ date: "2018-02-05"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3d05ee5656f7aac511d95ed567dab54c6545cd88-1080x1080.jpg"
 intro: "Un gilet Wahid avec des boutonnières renforcées"
 title: "Un gilet Wahid avec des boutonnières renforcées"
-designs: ["wahid"]
+designs:
+  - "wahid"
 ---
 
 ![Side view](https://posts.freesewing.org/uploads/bound_wahid_2_8cecc34558.jpg "Side view")
