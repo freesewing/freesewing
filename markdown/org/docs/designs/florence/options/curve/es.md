@@ -1,5 +1,5 @@
 ---
-title: "Curve"
+title: "Curva"
 ---
 
 ![Opción de curvatura](./curve.svg)
