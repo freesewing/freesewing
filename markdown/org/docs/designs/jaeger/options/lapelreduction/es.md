@@ -1,5 +1,5 @@
 ---
-title: "Lapel reduction"
+title: "Reducción de la solapa"
 ---
 
 Cuánto gira hacia adentro la punta de las solapas.
