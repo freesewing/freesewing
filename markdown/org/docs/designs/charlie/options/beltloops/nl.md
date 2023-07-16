@@ -1,5 +1,5 @@
 ---
-title: "Belt loops"
+title: "Rand lussen"
 ---
 
 Stallen hoeveel bellussen we gaan genereren.
