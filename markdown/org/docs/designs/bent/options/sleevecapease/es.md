@@ -1,5 +1,5 @@
 ---
-title: "Sleevecap ease"
+title: "Holgura de la parte superior de la manga"
 ---
 
 ¿Cuánta facilidad de manga quieres?
