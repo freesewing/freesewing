@@ -1,5 +1,5 @@
 ---
-title: "Front rise"
+title: "Elevación frontal"
 ---
 
 ![La opción de ascenso frontal en la Catedral](./frontrise.svg)
