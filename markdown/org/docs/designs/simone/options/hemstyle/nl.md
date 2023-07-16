@@ -1,6 +1,6 @@
-- - -
-title: "Hem style"
-- - -
+---
+title: "Vorm zoom"
+---
 
 ![Vorm zoom](hemstyle.svg)
 
