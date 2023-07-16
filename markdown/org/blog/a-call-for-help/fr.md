@@ -3,7 +3,7 @@ author: "joostdecock"
 caption: "Note: ceci est un long message. Bien que nettement moins que ce livre"
 date: "2020-08-30"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1a143c96b4afc8c12d2014c5605bfd1e63d917d0-2000x1348.jpg"
-intro: "Salut tout le monde, c'est Joost. J'écris ce message pour aborder certains problèmes qui m'ont ennuyé ces derniers temps. Plus spécifiquement, ces problèmes :"
+intro: "Aidez à faire grandir FreeSewing au-delà de ce que je peux faire seul"
 title: "Aidez à faire grandir FreeSewing au-delà de ce que je peux faire seul"
 ---
 
@@ -73,7 +73,7 @@ En supposant que cette lecture vous ait rendu plus heureux qu'en colère, nous p
 
 Nous commençons simplement : nous prévoyons de tenir un Zoom/Skype/Autre toutes les 2 semaines pour faire le point au fur-et-à-mesure. Nous commençons le premier week-end de septembre (week-end prochain). Nous n'avons pas encore choisi d'heure, car cela dépendra des fuseaux horaires dans lesquels vivent les participants.
 
-If you'd like to attend, please [let us know in our chat room](https://discord.freesewing.org/).
+Si vous souhaitez y assister, veuillez [nous le faire savoir dans notre salon de discussion](https://discord.freesewing.org/).
 
 ### De quelle aide avons nous besoin ?
 
@@ -163,5 +163,4 @@ Quoi qu'il en soit, je vous serais reconnaissant si vous pouviez aider à faire 
 Merci,
 
 Joost
-
 
