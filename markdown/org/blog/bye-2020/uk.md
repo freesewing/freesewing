@@ -1,50 +1,50 @@
 ---
 author: "joostdecock"
-caption: "A photo by <a href='https://unsplash.com/@onevagabond'>Paulo Silva</a> shows an empty Times Square in New York during the COVID pandemic"
+caption: "На фото <a href='https://unsplash.com/@onevagabond'>Пауло Сілва</a> зображена порожня Таймс-сквер у Нью-Йорку під час пандемії COVID"
 date: "2021-01-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ffacb5c6384f250ad7cd3cb50b5ed4fdeff33ae6-1920x1280.jpg"
-intro: "Aren't we all glad 2020 is over?"
-title: "The year 2020 was something alright"
+intro: "Хіба ми всі не раді, що 2020 рік закінчився?"
+title: "2020 рік був чимось нормальним"
 ---
 
 
 
 
-Aren't we all glad 2020 is over?
+Хіба ми всі не раді, що 2020 рік закінчився?
 
-Realistically, at least some of you, or your loved ones, got caught in the absolute gut-punch that is the COVID-19 pandemic. Either indirectly through lost income or other practical concerns, or directly by battling the virus itself.
+Насправді, принаймні дехто з вас або ваших близьких потрапив під абсолютний удар, яким є пандемія COVID-19. Або опосередковано через втрачені доходи чи інші практичні проблеми, або безпосередньо через боротьбу з самим вірусом.
 
-I can only offer my sympathy, and the belief that things will get better. So hang in there, and let me briefly take your mind of things by sharing some good news against the bleak backdrop of the annus horribilis that 2020 turned out to be.
+Я можу лише висловити своє співчуття і віру в те, що все налагодиться. Тож тримайтеся, і дозвольте мені ненадовго відволікти вас від справ, поділившись деякими хорошими новинами на тлі похмурого annus horribilis, яким виявився 2020 рік.
 
-##### The face mask tsunami
+##### Маска для обличчя цунамі
 
-FreeSewing found itself — absolutely unexpected I might add — under the glaring spotlight of international media this year. A tidal wave of attention rolled over us, and while the peak lasted only a good month, the repercussions and long tail of these events have shaped our entire year.
+Цього року FreeSewing опинився - абсолютно несподівано, треба сказати - в центрі уваги міжнародних ЗМІ. Нас накрила приливна хвиля уваги, і хоча пік тривав лише добрий місяць, наслідки та довгий хвіст цих подій сформували весь наш рік.
 
-It all started in February when COVID-19 was starting to rear its ugly head in Europe and the supplies of personal protective equipment (PPE) started dwindling. It seemed that face masks were going to be a big factor in trying to slow down the spread of this disease, but they were getting harder to come by every day.
+Все почалося в лютому, коли COVID-19 почав піднімати свою потворну голову в Європі, а запаси засобів індивідуального захисту (ЗІЗ) почали скорочуватися. Здавалося, що маски для обличчя стануть важливим фактором у спробі сповільнити поширення цієї хвороби, але з кожним днем їх ставало дедалі важче дістати.
 
-So on February 28th, after some design and experimentation, we [published our face mask pattern on freesewing.org](/blog/florence-face-mask/). Three weeks later, we followed up with [a one-page PDF that people could share and adapt](/blog/facemask-frenzy/).
+Тож 28 лютого, після деякого проектування та експериментів, ми [опублікували нашу викрійку маски для обличчя на freesewing.org](/blog/florence-face-mask/). Через три тижні ми опублікували [односторінковий PDF-файл, яким люди могли поділитися та адаптувати](/blog/facemask-frenzy/).
 
-We did not really want to be in the center of this, we just wanted to help people make masks. But when [Forbes ran an editorial calling on people to help out with the healthcare workers PPE shortage](https://www.forbes.com/sites/tjmccue/2020/03/20/calling-all-people-who-sew-and-make-you-can-help-solve-2020-n95-type-mask-shortage/), we suddenly found ourselves in the middle of a gigantic spotlight. The article prominently featured FreeSewing, and linked to [our blog post](/blog/facemask-frenzy).
+Ми не хотіли бути в центрі подій, ми просто хотіли допомогти людям зробити маски. Але коли [Forbes опублікував редакційну статтю із закликом до людей допомогти у вирішенні проблеми нестачі ЗІЗ для медичних працівників](https://www.forbes.com/sites/tjmccue/2020/03/20/calling-all-people-who-sew-and-make-you-can-help-solve-2020-n95-type-mask-shortage/), ми раптом опинилися в центрі величезного прожектора. У статті згадується FreeSewing, а також дається посилання на [наш блог](/blog/facemask-frenzy).
 
-At that time, there were few patterns available for face masks, and soon enough a long list of other publications started running links to our pattern and website. When I found [the instruction video that I made for the pattern staring back at me on the website of the New York Times](https://www.nytimes.com/2020/03/31/opinion/coronavirus-n95-mask.html), it was a veritable oh-crap moment. Sure enough, in the month following the Forbes publication, a million people descended on freesewing.org.
+На той час було небагато викрійок масок для обличчя, але невдовзі довгий список інших видань почав розміщувати посилання на наші викрійки та веб-сайт. Коли я знайшов [відео з інструкціями, яке я зробив для візерунка, що дивився на мене на сайті New York Times](https://www.nytimes.com/2020/03/31/opinion/coronavirus-n95-mask.html), це був справжній момент "охрініння". Звісно, за місяць після публікації Forbes на сайт freesewing.org завітав мільйон людей.
 
-The sudden jump in visitors and users (not to mention patrons) made it clear that I am a bottleneck of the project, and so in the latter half of the year we've set out to [try and remedy that with some community building](/blog/a-call-for-help/). On one hand it's slow going, but on the other hand if I look at how vibrant the FreeSewing community is today, it almost beggars belief that we did all of this throughout 2020. We now have regular [contributor calls](/community/calls/), and [our chat rooms are never empty](https://discord.freesewing.org/).
+Раптовий стрибок відвідувачів і користувачів (не кажучи вже про меценатів) дав зрозуміти, що я є вузьким місцем проекту, і тому в другій половині року ми вирішили [спробувати виправити це за допомогою розбудови спільноти](/blog/a-call-for-help/). З одного боку, це повільно, але з іншого боку, якщо я подивлюся на те, наскільки активною є спільнота FreeSewing сьогодні, то майже не віриться, що ми зробили все це протягом 2020 року. Зараз ми регулярно [дзвінки від дописувачів](/community/calls/), і [наші чати ніколи не пустують](https://discord.freesewing.org/).
 
-I hope to continue to fade into the background and let other people carry some of the torches. Not because I don't want to work on this anymore, but because I want to grow FreeSewing beyond what I can do on my own.
+Я сподіваюся продовжувати відходити на другий план і дозволити іншим людям нести частину факелів. Не тому, що я більше не хочу над цим працювати, а тому, що я хочу розвинути Вільне Шиття за межі того, що я можу зробити сама.
 
-##### Black Lives Matter
-Since this is a look at 2020, I also want to pause and acknowledge the **Black Lives Matter** movement and the ongoing problem of systemic racism. It is an area where my background and genetic material makes me ill-equipped to take a leading role, so here too I rely on our community for guidance.
+##### Життя чорношкірих мають значення
+Оскільки це погляд у 2020 рік, я також хочу зробити паузу і відзначити рух **Black Lives Matter** та постійну проблему системного расизму. Це сфера, де мій досвід і генетичний матеріал не дозволяють мені відігравати провідну роль, тож і тут я покладаюся на нашу спільноту за порадами.
 
-We are also expanding our efforts to provide patterns that work for all body types, and I am particularly proud of how many of our users come to us because our patterns help them project the gender of their choice.
+Ми також розширюємо наші зусилля, щоб створювати моделі, які підходять для всіх типів фігур, і я особливо пишаюся тим, що багато наших користувачів звертаються до нас, тому що наші моделі допомагають їм спроектувати обраний ними гендер.
 
-##### We helped more people than ever this year
-On the practical side of things, I have extended our book year with a couple of weeks so that going forward, we will just follow the calendar years. With a couple of hours left in this year, FreeSewing's revenue for 2020 clocks in at **10.736,82 euro**. That makes 2020 and absolute bumper year, and it's more than all previous years combined (2015: € 256.65, 2016: € 473.50, 2017: € 673.14, 2018: € 3162.14, 2019: € 4109.38).
+##### Цього року ми допомогли більшій кількості людей, ніж будь-коли
+З практичної точки зору, я продовжила наш книжковий рік на кілька тижнів, тож надалі ми будемо дотримуватися календарного року. За кілька годин, що залишилися до кінця цього року, дохід FreeSewing за 2020 рік становить **10.736,82 євро**. Це робить 2020 рік абсолютним рекордсменом, і це більше, ніж усі попередні роки разом узяті (2015: 256,65 євро, 2016: 473,50 євро, 2017: 673,14 євро, 2018: 3162,14 євро, 2019: 4109,38 євро).
 
-As always, all of FreeSewing's revenue -- the entire 10.736,82 euro -- [goes to Doctors Without Borders](/docs/various/pledge/).
+Як завжди, весь дохід FreeSewing - всі 10.736,82 євро - [йде на користь організації "Лікарі без кордонів"](/docs/various/pledge/).
 
-I am truly grateful for your continued support and contributions. I feel like in a very small way, we are able to apply some balm to the hurt that seems at times omnipresent in the world.
+Я щиро вдячний за вашу постійну підтримку та внески. Я відчуваю, що в дуже маленький спосіб ми можемо нанести бальзам на біль, який часом здається всюдисущим у світі.
 
-Thank you so much, and stay safe
+Щиро дякуємо, і будьте в безпеці
 
 love  
 joost
