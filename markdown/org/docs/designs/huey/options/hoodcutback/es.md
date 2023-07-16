@@ -1,5 +1,5 @@
 ---
-title: "Hood cutback"
+title: "Recorta capucha"
 ---
 
 ![Recorta capucha](./hoodcutback.svg)
