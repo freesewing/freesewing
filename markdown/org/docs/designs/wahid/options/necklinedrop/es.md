@@ -1,5 +1,5 @@
 ---
-title: "Neckline drop"
+title: "Caída del escote"
 ---
 
 ![Caída del escote](necklinedrop.svg)
