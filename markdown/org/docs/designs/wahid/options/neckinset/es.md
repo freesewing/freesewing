@@ -1,5 +1,5 @@
 ---
-title: "Neck inset"
+title: "Inserción de cuello"
 ---
 
 ![Inserción de cuello](neckinset.svg)
