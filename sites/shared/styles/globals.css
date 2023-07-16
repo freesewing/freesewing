@@ -49,10 +49,10 @@
 
   /* mdx styles */
   .mdx a {
-    @apply text-secondary underline decoration-1;
+    @apply underline decoration-2;
   }
   .mdx a:hover {
-    @apply text-secondary-focus decoration-2 decoration-current;
+    @apply decoration-4;
   }
   .mdx ul {
     @apply pl-0 lg:pl-4  list-disc list-inside text-base-content;
@@ -69,7 +69,7 @@
     @apply pl-2 lg:pl-4 list-decimal list-inside text-base-content;
   }
   .mdx code {
-    @apply bg-accent bg-opacity-10 px-2 rounded text-accent;
+    @apply bg-neutral bg-opacity-10 px-2 rounded text-neutral font-mono font-bold;
   }
   .mdx pre code {
     @apply bg-inherit;
@@ -394,7 +394,10 @@
     @apply p-0 m-0 inline;
   }
   .pattern-logs a {
-    @apply text-secondary font-medium hover:underline hover:cursor-pointer hover:text-secondary-focus;
+    @apply underline decoration-2;
+  }
+  .pattern-logs a:hover {
+    @apply cursor-pointer decoration-4;
   }
   .pattern-logs code {
     @apply px-1 rounded font-bold bg-neutral bg-opacity-10 font-mono;
