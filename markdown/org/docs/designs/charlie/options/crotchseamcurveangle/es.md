@@ -1,5 +1,5 @@
 ---
-title: "Crotch seam angle"
+title: "Ángulo de costura cruda"
 ---
 
 Controls the angle of the crotch seam curve.
