@@ -1,5 +1,5 @@
 ---
-title: "Manteau Carlita: Options d'étoffe"
+title: "Carlita coat: Fabric Options"
 ---
 
 ### Tissu principal
@@ -28,12 +28,12 @@ Nous recommandons les **Toiles à cheveux**. Vous pourriez être tenté d'utilis
 
 <Tip>
 
-Vous pouvez utiliser des parements thermocollants ou non thermocollants, mais il se peut que vous ayez besoin d'aplanir le parement et les pièces de tissu à l'aide de points de bâti, même après le thermocollage, pour obtenir les meilleurs résultats.
+You can use fusible or non-fusible facings but you may find that you still need to flatline the facing and fabric pieces together with basting stitches, even after fusing for the best results.
 
 </Tip>
 
 <Note>
 
-Certaines toiles à poils, telles que **La toile en Poils de cheval**, peuvent avoir des poils raides qui peuvent sortir du tissu et nécessitent donc du ruban adhésif comme du ruban de tailleur pour éviter cela.
+Certain hair canvases, such as **Horsehair canvas** can have stiff hairs that can poke out of the fabric so will require tape like tailors tape to prevent this from happening.
 
 </Note>
