@@ -1,40 +1,40 @@
 ---
 author: "joostdecock"
-caption: "Dr. Dragnea from Antwerp University hospital wearing a Florence facemask"
+caption: "Доктор Драгнеа з університетської лікарні Антверпена в масці Флоренції на обличчі"
 date: "2020-03-19"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b811b79114f15aa192a1962b95083e6c55d79402-1532x1123.jpg"
-intro: "Calling all makers: Here's a 1-page PDF facemask pattern; Now go make some and help beat this thing"
-title: "Calling all makers: Here's a 1-page PDF facemask pattern; Now go make some and help beat this thing"
+intro: "Звертаюся до всіх творців: Ось 1-сторінковий шаблон маски для обличчя у форматі PDF; тепер ідіть і зробіть кілька і допоможіть перемогти цю штуку"
+title: "Звертаюся до всіх творців: Ось 1-сторінковий шаблон маски для обличчя у форматі PDF; тепер ідіть і зробіть кілька і допоможіть перемогти цю штуку"
 ---
 
 
 <Note>
 
-**TL;DR: Please make facemasks for healthcare workers**
+**TL;DR: Будь ласка, зробіть маски для медичних працівників**
 
 
- - PDF pattern for our Florence face mask:
-   - [A4 facemask pattern](/florence-facemask-freesewing.org.a4.pdf)
-   - [Letter facemask pattern](/florence-facemask-freesewing.org.letter.pdf)
- - [Instructions for the facemask pattern](/docs/patterns/florence/instructions/)
+ - Шаблон у форматі PDF для нашої маски "Флоренція":
+   - [Шаблон маски А4](/florence-facemask-freesewing.org.a4.pdf)
+   - [Літерний шаблон маски](/florence-facemask-freesewing.org.letter.pdf)
+ - [Інструкція до шаблону маски](/docs/patterns/florence/instruction/)
 
 </Note>
 
 <YouTube id='VcQ69_ANsRA' />
 
-Well that escalated quickly. We published [our Florence Face Mask pattern](/designs/florence/) at the end of last month, hoping it would be helpful. Now, [hospitals are actively reaching out to people to beg them to make fabric face masks for their staff](https://www.uza.be/mondmaskers).
+Ну, це швидко загострилося. Наприкінці минулого місяця ми опублікували [нашу викрійку маски для обличчя "Флоренція"](/designs/florence/) , сподіваючись, що вона буде корисною. Зараз лікарні [активно звертаються до людей з проханням виготовити тканинні маски для персоналу](https://www.uza.be/mondmaskers).
 
-So obviously, we want to help:
+Очевидно, що ми хочемо допомогти:
 
- - PDF pattern for our Florence face mask:
-   - [A4 facemask pattern](/florence-facemask-freesewing.org.a4.pdf)
-   - [Letter facemask pattern](/florence-facemask-freesewing.org.letter.pdf)
- - [Instructions for the facemask pattern](/docs/patterns/florence/instructions/)
+ - PDF-шаблон для нашої маски для обличчя Флоренція:
+   - [Шаблон маски для обличчя А4](/florence-facemask-freesewing.org.a4.pdf)
+   - [Літерний шаблон маски для обличчя](/florence-facemask-freesewing.org.letter.pdf)
+ - [Інструкція до викрійки маски для обличчя](/docs/patterns/florence/instructions/)
 
-No go and make a bunch. Our healthcare workers are counting on you!
+Ні, не йди і не збирай купу. Наші медики розраховують на вас!
 
 <Note>
 
-PS: You can support us by [becoming a patron](/patrons/join/) ❤️
+PS: Ви можете підтримати нас, [ставши меценатом] (/patrons/join/) ❤️
 </Note>
 
