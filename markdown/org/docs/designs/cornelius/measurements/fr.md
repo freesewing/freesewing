@@ -1,5 +1,5 @@
 ---
-title: "Culotte cycliste de Cornélius : Mesures nécessaires"
+title: "Cornelius cycling breeches: Required Measurements"
 ---
 
 <PatternMeasurements pattern='cornelius' />
