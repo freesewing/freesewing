@@ -4,9 +4,9 @@ title: Longueur épaule-taille dos
 
 <Note>
 
-###### PHE : point haut de l'épaule
+###### PHE : Point Haut de l"Epaule
 
-Le point _haut de l'épaule_ ou _PHE_ est utilisé comme base pour plusieurs mesures verticales.
+Le point _supérieur de l'épaule_ ou _PHE_ est utilisé comme base pour plusieurs mesures verticales.
 Reportez-vous à la [documentation PHE](/docs/measurements/hps/) pour savoir comment localiser ce point.
 
 </Note>
