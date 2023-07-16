@@ -1,5 +1,5 @@
-- - -
-title: "Bee bikini top"
-- - -
+---
+title: "Bee, sujetador de bikini"
+---
 
 <PatternDocs pattern='bee' />
