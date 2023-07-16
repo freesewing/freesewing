@@ -1,80 +1,80 @@
 ---
 author: "joostdecock"
-caption: "The most important change is obviously that we moved from purple to black as our signature color"
+caption: "Найважливішою зміною, очевидно, є те, що ми перейшли від фіолетового до чорного як нашого фірмового кольору"
 date: "2018-05-24"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e67a17e37a70154b3bb250ea1cb60eff2baddb55-1920x1285.jpg"
-intro: "Welcome to our new website. It's GDPR compliant, speaks 3 languages, and smells of wet paint"
-title: "Welcome to our new website. It's GDPR compliant, speaks 3 languages, and smells of wet paint"
+intro: "Ласкаво просимо на наш новий сайт. Він відповідає вимогам GDPR, розмовляє 3 мовами і пахне мокрою фарбою"
+title: "Ласкаво просимо на наш новий сайт. Він відповідає вимогам GDPR, розмовляє 3 мовами і пахне мокрою фарбою"
 ---
 
 
-Tomorrow, May 25th, the General Data Protection Regulation (GDPR) of the European Union (EU) comes into force. From that day onward, businesses that don't respect the privacy of EU citizens expose themselves to fines of up to 4% of their global annual turnover.
+Завтра, 25 травня, набуває чинності Загальний регламент про захист даних (GDPR) Європейського Союзу (ЄС). З цього дня підприємства, які не поважають приватність громадян ЄС , наражаються на штрафи у розмірі до 4% від їхнього глобального річного обороту.
 
-The date marks nothing short of a watershed moment for online privacy, as the world's most stringent data protection laws suddenly apply to half a billion people.
+Ця дата знаменує собою не що інше, як переломний момент для приватності в Інтернеті, оскільки найсуворіші у світі закони про захист даних раптово поширюються на півмільярда людей.
 
-## Your consent is now required
+## Тепер потрібна ваша згода
 
-For freesewing, the roll-out of GDPR doesn't pose a problem as such. Not only did we have a solid plan, the only thing we absolutely had to add to the site was *consent*. We are no longer allowed to process your data without your permission. Permission that we should ask for both explicitly and granularly.
+Для фрілансу впровадження GDPR не становить проблеми як такої. Мало того, що у нас був чіткий план, єдине, що нам обов'язково потрібно було додати на сайт - це *згода*. Ми більше не маємо права обробляти ваші дані без вашого дозволу. Дозвіл, про який ми повинні просити як явно, так і детально.
 
-So, we have two types of questions to ask you:
+Отже, ми хочемо поставити вам два типи запитань:
 
  - Чи даєте Ви згоду на обробку даних Вашого облікового запису?
  - Чи даєте Ви згоду на обробку даних моделі?
 
-We make the distinction because they are different things. A profile/account is required to login to the site, post comments, and so on.  
-Model data is required to generate made-to-measure sewing patterns.
+Ми робимо різницю, тому що це різні речі. Профіль/обліковий запис необхідний для входу на сайт, написання коментарів тощо.  
+Дані моделі необхідні для створення лекал для пошиття одягу за індивідуальним замовленням.
 
-You will be greeted by these questions when they are relevant (as in, when we do need to access that specific data), and you can revisit them at any time [in your account settings](/account).
+Ви побачите ці запитання, коли вони будуть актуальними (наприклад, коли нам дійсно потрібно отримати доступ до цих конкретних даних), , і ви можете переглянути їх у будь-який час [в налаштуваннях вашого облікового запису](/account).
 
-## It is our duty to inform you
+## Наш обов'язок повідомити вам
 
-Under GDPR, we must inform you about how we handle privacy issues. We have written about [our approach to privacy](/blog/privacy-choices) before, but this requires something (a bit) more formal.
+Відповідно до GDPR, ми повинні інформувати вас про те, як ми вирішуємо питання конфіденційності. Ми писали про [наш підхід до конфіденційності](/blog/privacy-choices) раніше, але це вимагає чогось (трохи) більш формального.
 
-So, we've drafted a [privacy notice](/privacy) that outlines all of these things.
+Тому ми розробили повідомлення про конфіденційність [](/privacy) , в якому виклали всі ці речі.
 
-In addition to our privacy notice, we've setup [a page that lists all of your rights](/rights), and explains how you can exercise them.
+На додаток до нашого повідомлення про конфіденційність, ми створили [сторінку, на якій перераховані всі ваші права](/rights), і пояснюється, як ви можете їх реалізувати.
 
-With these changes, we've covered your right to be informed.
+З цими змінами ми врахували ваше право на отримання інформації.
 
-## Privacy by design
+## Конфіденційність за задумом
 
-One of the more vague yet impactful requirements of GDPR is so-called *privacy-by-design*. We took the advice to heart and have made two changes inspired by this:
+Однією з найбільш розмитих, але впливових вимог GDPR є так звана *privacy-by-design*. Ми прийняли цю пораду до серця і внесли дві зміни, натхненні нею:
 
- - Encryption of data at rest
- - Termination of dormant accounts
+ - Шифрування даних у стані спокою
+ - Закриття неактивних рахунків
 
-We now encrypt your profile data at rest. In other words, our database holds your info, but it's encrypted. We only decrypt it when we need it.
+Тепер ми шифруємо дані вашого профілю в стані спокою. Іншими словами, в нашій базі даних зберігається ваша інформація, але вона зашифрована. Ми розшифровуємо його лише тоді, коли нам це потрібно.
 
-We'll also terminate accounts that have been dormant for 12 months. In other words, if you don't login on the website for 1 year, your account and all your data will be removed.
+Ми також закриваємо акаунти, які неактивні протягом 12 місяців. Іншими словами, якщо ви не входите на сайт протягом 1 року, ваш обліковий запис і всі ваші дані будуть видалені.
 
-However, for that last matter, there will be a bit of a grace period as we haven't fully implemented all the required changes yet. Which brings me to my next point:
+Однак для останнього питання буде невеликий пільговий період, оскільки ми ще не повністю впровадили всі необхідні зміни. Що підводить мене до наступного пункту:
 
-## Also new: everything else
+## Також нове: все інше
 
-These GDPR-related changes seemed like a good opportunity to re-vist some of the choices we've made, and see if there was room for improvement. That was the initial idea anyway. In the end, we complete re-wrote the website from scratch.
+Ці зміни, пов'язані з GDPR, здавалися гарною можливістю переглянути деякі з рішень, які ми вже прийняли, і подивитися, чи є можливості для вдосконалення. У всякому разі, це була початкова ідея. Зрештою, ми повністю переписали сайт з нуля.
 
-Our previous website used [Jekyll](https://jekyllrb.com/) as a static site generator, with a pile of javascript code to make add the dynamic elements to the site. While that did do the trick, there were two important downsides:
+Наш попередній сайт використовував [Jekyll](https://jekyllrb.com/) як статичний генератор сайтів, з купою коду javascript для додавання динамічних елементів на сайт. І хоча це справді спрацювало, було два важливих недоліки:
 
- - Jekyll uses the Ruby programming language. That's another programming language, another package manager, and another ecosystem that potential contributors have to wrap their heads around. We wanted to avoid that.
- - That *pile* of JavaScript code was rather literal. Maintainability was starting to become an issue, not to mention that it would be difficult for new developers to jump in and understand what's going on.
+ - Jekyll використовує мову програмування Ruby. Це інша мова програмування, інший менеджер пакунків та інша екосистема, з якою потенційним дописувачам доведеться змиритися. Ми хотіли цього уникнути.
+ - Ця *купа* JavaScript коду була досить буквальною. Супроводжуваність починала ставати проблемою, не кажучи вже про те, що новим розробникам було б складно влитися в процес і зрозуміти, що відбувається.
 
-So, to kill two birds with one stone, we rewrote the entire site using [Vue.js](https://vuejs.org/) and [Nuxt](https://nuxtjs.org/). Our entire frontend is written in JavaScript now — no more Ruby required — and due to Vue's modular nature and component-based approach, it should be a lot easier to maintain.
+Тож, щоб вбити двох зайців одним пострілом, ми переписали весь сайт, використовуючи [Vue.js](https://vuejs.org/) та [Nuxt](https://nuxtjs.org/). Весь наш фронтенд тепер написаний на JavaScript - більше не потрібен Ruby - і завдяки модульній природі Vue та компонентному підходу, має бути набагато простішим в обслуговуванні.
 
-## Internationalization, aka i18n
+## Інтернаціоналізація, також відома як i18n
 
-Obviously, as we were rewriting things, we've thrown in a couple of new features. The most obvious being that we fully support i18n (internationalization) now.
+Очевидно, що під час переписування ми додали кілька нових функцій. Найбільш очевидним є те, що ми повністю підтримуємо i18n (інтернаціоналізацію) зараз.
 
-While translation is an ongoing endeavor, we've got everything in place to support it. Starting today, freesewing is no longer exclusively available in English, but also in Dutch and Spanish.
+Хоча переклад - це постійна робота, у нас є все необхідне для його підтримки. Починаючи з сьогоднішнього дня, фрісевінг більше не доступний виключно англійською, а також голландською та іспанською мовами.
 
-I'd like to thank [@AnnekeCaramin](/users/annekecaramin) and [@AlfaLyr](/users/alfalyr), our language coordinators for Dutch and Spanish respectively, but also all other people who have helped out with translating.
+Я хотів би подякувати [@AnnekeCaramin](/users/annekecaramin) та [@AlfaLyr](/users/alfalyr), нашим мовним координаторам з голландської та іспанської мов відповідно, , а також усім іншим людям, які допомогли з перекладом.
 
-An overview of the status of the different languages is available [here](/i18n), and I'm hopeful that soon we'll be able to enable more languages.
+Огляд статусу різних мов доступний тут [, тут](/i18n), і я сподіваюся, що незабаром ми зможемо включити більше мов.
 
-## Beware the wet paint
+## Остерігайтеся мокрої фарби
 
-Arguably, this release is a bit premature. We've still have [a couple of open issue to fix](https://github.com/freesewing/site/issues), and we're missing a bunch of documentation.
+Можливо, цей реліз дещо передчасний. У нас все ще є [, кілька відкритих проблем, які потрібно виправити](https://github.com/freesewing/site/issues), , і нам не вистачає багато документації.
 
-However, since our deadline is externally imposed, we don't exactly have much choice in this. That is, if we want to be fully compliant with GDPR, and we do.
+Однак, оскільки наш дедлайн нав'язаний ззовні, ми не маємо особливого вибору в цьому питанні. Тобто, якщо ми хочемо повністю відповідати GDPR, а ми хочемо.
 
-So, please bear with us as we continue to build this website, and our platform. And don't hesitate to let us know when something goes wrong.
+Тож, будь ласка, будьте з нами, поки ми продовжуємо розвивати цей сайт і нашу платформу. І не соромтеся повідомляти нам, якщо щось піде не так.
 
