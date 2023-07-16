@@ -1,5 +1,5 @@
 ---
-title: "Waist height"
+title: "Taillehoogte"
 ---
 
 Bepaalt de hoogte van de taille, waarbij:
