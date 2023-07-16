@@ -3,7 +3,7 @@ author: "joostdecock"
 caption: "Kurze Anerkennung für nappy.co für das Bild"
 date: "2021-05-24"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0145547c8ba61dde1a6553dc8de318f53e27cbe5-2000x1333.jpg"
-intro: "Wir haben heute FreeSewing v2.16 veröffentlicht. Der oberflächliche Beobachter erkennt nicht viele Änderungen. Und für die Nutzer dieser Website ist das sicherlich der Fall."
+intro: "FreeSewing 2.16 enthält React 17 und Webpack 5"
 title: "FreeSewing 2.16 enthält React 17 und Webpack 5"
 ---
 
@@ -93,5 +93,4 @@ Dies sind typischerweise die schwierigsten und esoterischsten Dinge eines jeden 
 Wenn du nach dem Upgrade auf FreeSewing v2.16 auf irgendwelche Probleme stößt, komm in [unseren Discord-Server](https://discord.freesewing.org/), damit wir dir weiterhelfen können.
 
 Nichtsdestotrotz solltest du eigentlich keine Probleme haben, solange du die gleiche Version der verschiedenen FreeSewing-Pakete verwendest.
-
 
