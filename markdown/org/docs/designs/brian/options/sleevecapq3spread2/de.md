@@ -1,5 +1,5 @@
 ---
-title: "Sleevecap Q3 downward spread"
+title: "Armkugel Q3 Spreizung nach unten"
 ---
 
 ***
