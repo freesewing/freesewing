@@ -1,5 +1,5 @@
 - - -
-title: "Chest pocket placement"
+titre : "Placement des poches de poitrine"
 - - -
 
 ![Emplacement poche de poitrine](chestpocketplacement.svg)
