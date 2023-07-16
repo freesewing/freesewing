@@ -1,44 +1,44 @@
 ---
 author: "joostdecock"
-caption: "This purple Huey hoodie is the first of its kind. Now it's your turn"
+caption: "Це фіолетове худі Huey - перше в своєму роді. Тепер ваша черга"
 date: "2017-10-21"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3be185a211486823b678af97710274804fe86dcf-2048x2048.jpg"
-intro: "The Huey Hoodie is now available in beta. Which begs the question, what does it mean for a pattern to be in Beta?"
-title: "The Huey Hoodie is now available in beta. Which begs the question, what does it mean for a pattern to be in Beta?"
+intro: "Huey Hoodie вже доступний у бета-версії. Виникає питання, що означає, що шаблон знаходиться в бета-версії?"
+title: "Huey Hoodie вже доступний у бета-версії. Виникає питання, що означає, що шаблон знаходиться в бета-версії?"
 ---
 
-Welcome to [Huey](/patterns/huey), the youngest member in our pattern family. Huey is a zip-up hoodie with an (optional) front pouch. I've made one for myself -- the one in the picture above -- and I have yet to take it off since.
+Ласкаво просимо до [Huey](/patterns/huey), наймолодшого члена нашої родини моделей. Huey - це худі на блискавці з передньою сумкою (опціонально). Я зробив собі такий - той, що на фото вище - і з тих пір не знімав його.
 
-Meanwhile, I've been wondering why the hell I didn't design this pattern sooner. It's just that nice to wear.
+Тим часом, я все думав, якого біса я не розробив цей патерн раніше. Його просто приємно носити.
 
-## Available as of now, in beta
+## Доступно в бета-версії
 
-The pattern is available [right here](/patterns/huey), right now, but it's in beta.
+Шаблон доступний [прямо тут](/patterns/huey), прямо зараз, але він у бета-версії.
 
-To find out what that means -- and why I'm doing this -- just continue reading. But if you're itching to make this, here's is what you need to know about beta status:
+Щоб дізнатися, що це означає - і чому я це роблю - просто продовжуйте читати. Але якщо вам не терпиться зробити це, ось що вам потрібно знати про статус бета-версії:
 
- - Beta patterns lack documentation
- - Beta patterns are made by few people (so far)
+ - Бета-паттернам бракує документації
+ - Бета-патерни створюються кількома людьми (поки що)
 
-As time goes by and these issues are resolved, Huey will move from beta to core.
+З часом, коли ці проблеми будуть вирішені, Huey перейде з бета-версії в основну версію.
 
-## So why this beta business
+## Тож чому цей бета-версія бізнесу
 
-As I explained in [my round-up post of last month](/blog/roundup-2017-09/), pattern testing is a real bottleneck for me.
+Як я вже пояснював у [своєму минуломісячному огляді](/blog/roundup-2017-09/), тестування шаблонів є для мене справжнім вузьким місцем.
 
-A number of people came forward, offering to help out with testing (thank you very much for that) which lead me to consider how this would work in practice.
+Кілька людей відгукнулися і запропонували допомогти з тестуванням (за що їм велике спасибі) , що змусило мене замислитися над тим, як це буде працювати на практиці.
 
-Like, I've got Huey to point of *it works for me* and I am somewhat confident that it will work for others too. Stil, nothing replaces a real-world test so it would be nice if a couple of people could make it.
+Наприклад, у мене є Huey *, він працює для мене* , і я певною мірою впевнений, що він буде працювати і для інших. Проте, ніщо не замінить реальний тест, тому було б добре, якби кілька людей змогли прийти на нього.
 
-Rather than given the opportunity to test Huey to a handful of people who came forward, I figured I might as well open it up to everyone who feels so inclined.
+Замість того, щоб дати можливість протестувати Huey кільком людям, які зголосилися, я вирішив, що можу також відкрити його для всіх, хто відчуває таку потребу.
 
-And to indicate that this pattern isn't as road-tested as the others, I'm keeping it in the beta namespace, where it actually is developed and this will also show up on the pattern page. No changes required.
+І щоб показати, що цей шаблон не так добре протестований, як інші, я зберігаю його в бета-просторі імен, де він, власне, і розробляється , і це також буде показано на сторінці шаблону. Ніяких змін не потрібно.
 
-## Release early, release often
+## Випускайте раніше, випускайте частіше
 
-Going forward, I will release patterns as soon as I can, and work on completing the documentation while they remain in beta.
+Надалі я випускатиму шаблони, як тільки зможу, і працюватиму над завершенням документації, поки вони залишатимуться в бета-версії.
 
-I think it's a good way to go, and adheres to the *release early, release often* mantra of open source software.
+Я вважаю, що це хороший шлях, і він відповідає *випускати раніше, випускати частіше* мантрі програмного забезпечення з відкритим вихідним кодом.
 
-If you think that's a bad idea (or a very good idea), make sure to tell me about it in the comments below.
+Якщо ви вважаєте, що це погана ідея (або дуже хороша), обов'язково напишіть мені про це в коментарях нижче.
 
