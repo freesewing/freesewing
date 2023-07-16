@@ -1,5 +1,5 @@
 ---
-title: "Inner pocket depth"
+title: "Diepte binnenzak"
 ---
 
 How deep you would like the inner pocket to be.
