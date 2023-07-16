@@ -1,64 +1,64 @@
 ---
 author: "joostdecock"
-caption: "Your login background for April"
+caption: "Ваша історія входу в систему за квітень"
 date: "2018-03-31"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/637be1530f8be9387a2be4feac90b92a145b1ddd-1920x1280.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - March 2018: Parlez-vous français? Sprechen Sie Deutsch? ¿Hablas español? 你會說中文嗎？"
+intro: "Це ваш щомісячний огляд новин фрітрекінгу за останні чотири тижні, а також погляд на те, що чекає на нас у наступному місяці."
+title: "Щомісячний огляд - березень 2018: Parlez-vous français? Sprechen Sie Deutsch? Hablas español? 你會說中文嗎？"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Це ваш щомісячний огляд новин фрітрекінгу за останні чотири тижні, а також погляд на те, що чекає на нас у наступному місяці.
 
-## Looking back at March
+## Озираючись на березень
 
-As a general rule of thumb, the less you hear from me, the harder I'm working. Chances are you didn't hear from me during March at all. And yes, that's because I'm working hard.
+Як правило, чим менше ви мене чуєте, тим більше я працюю. Швидше за все, в березні ви взагалі нічого від мене не чули. І так, це тому, що я багато працюю.
 
 Ось чому:
 
-### The Jaeger Jacket is now available
+### Куртка Jaeger тепер доступна
 
-We've had the new [Jaeger Jacket](/patterns/jaeger) jacket in the pipeline for a while now. I had stalled a release because I couldn't find the time to make one, something which seems to be a general problem for pattern releases.
+Вже деякий час у нас в розробці нова куртка [Jaeger Jacket](/patterns/jaeger) . Я призупинив випуск, тому що не міг знайти час на його створення, що, здається, є загальною проблемою для випуску шаблонів.
 
-So, I asked for help and a number of people stepped up and offered to make up (a muslin of) a Jaeger jacket.
+Тож я попросив про допомогу, і кілька людей відгукнулися і запропонували пошити (муслін) єгерську куртку.
 
-That went well, so a couple of weeks ago we finally pushed out Jaeger for general availability. It's part of our core 1.8 release, and [the announcement post](/blog/core-1.8-jaeger-across-back/) has all the details.
+Все пройшло добре, тож пару тижнів тому ми нарешті витіснили Jaeger із загального доступу. Це частина нашого основного релізу 1.8, і [пост з анонсом](/blog/core-1.8-jaeger-across-back/) містить всі деталі.
 
-### The *across back* measurement is no more
+### Вимірювання *поперек спини* не більше
 
-The across back measurement was cause of a great deal of confusion among our users. More often than not, when someone contacted us because their pattern looked wonky, an unrealistic across back measurement was to blame.
+Поперечний обхват спини викликав велику плутанину серед наших користувачів. Найчастіше, коли хтось звертався до нас через те, що їхня модель виглядала хиткою, виною тому був нереалістичний поперечний обхват спинки.
 
-So, we stepped in and removed that measurement in favour of calculating it from the *shoulder to shoulder* measurement, and giving you a new *across back factor* option so you can still tweak it if you want to.
+Тож ми втрутилися і прибрали це вимірювання на користь обчислення його на основі вимірювання *плечей до плечей* , а також надали вам нову опцію *поперечного фактору спини* , щоб ви могли налаштувати його, якщо захочете.
 
-For a more detailed description, please refer to [the core 1.8 release blog post](/blog/core-1.8-jaeger-across-back/).
+Для більш детального опису, будь ласка, зверніться до [та до статті в блозі про основну версію 1.8](/blog/core-1.8-jaeger-across-back/).
 
-## Looking ahead to April
+## Забігаючи наперед на квітень
 
-### The big GDPR overhaul
+### Великий перегляд GDPR
 
-Last month we [outlined our GDPR battle plan](/blog/gdpr-plan/) and shortly afterwards I made a decision: Rather than implement all these changes in the site, I would start over from scratch.
+Минулого місяця ми [виклали наш план боротьби з GDPR](/blog/gdpr-plan/) , і незабаром після цього я прийняв рішення: Замість того, щоб впроваджувати всі ці зміни на сайті, я почну все з нуля.
 
-Or rather, I've given myself until the end of April to work on this. At which time I will need to decide whether it's possible to migrate the entire site before GDPR doomsday (May 25th) or should I abandon this effort and do what needs to be done in the current site.
-> Rather than implement all these changes in the site, I would start over from scratch.
+Точніше, я дав собі час до кінця квітня, щоб попрацювати над цим. Тоді мені потрібно буде вирішити , чи можливо перенести весь сайт до судного дня GDPR (25 травня), або ж мені слід відмовитися від цих зусиль і зробити те, що потрібно зробити на поточному сайті.
+> Замість того, щоб впроваджувати всі ці зміни на сайті, я б почав все з нуля.
 
-I like the first scenario better and have been working on it pretty much day and (part of the) night during the last couple of weeks.
+Перший сценарій мені подобається більше, і я працював над ним вдень і (частково) вночі протягом останніх кількох тижнів.
 
-I can't really show you much, but the goal is to build the new site on top of [the Nuxt framework](https://nuxtjs.org/). Doing so would allow us to drop Ruby from the freesewing technology stack, which would streamline deployment and development.
+Я не можу показати вам багато, але мета полягає в тому, щоб побудувати новий сайт поверх [на фреймворку Nuxt](https://nuxtjs.org/). Це дозволило б нам вилучити Ruby зі стеку технологій freewing, , що спростило б розгортання та розробку.
 
-My hope is also that using a modern and popular JS frontend framework will make it easier/more attractive contribute changes to the site.
+Я також сподіваюся, що використання сучасного і популярного фронтенд-фреймворку JS зробить його простішим/привабливішим внести зміни до сайту.
 
-### Translators wanted
+### Потрібні перекладачі
 
-Speaking of contributions. Since I'll be rewriting the site from scratch, I've decided to add a new challenge to the mix: i18n.
+До речі, про внески. Оскільки я буду переписувати сайт з нуля, я вирішив додати новий виклик: i18n.
 
-In case you're wondering, i18n is short for internationalisation, aka making the site available in different languages.
+Якщо вам цікаво, i18n - це скорочення від інтернаціоналізації, тобто створення сайту, доступного різними мовами.
 
-Yes, May 25th will be here soon, and yes I need more work like I need another hole in my head. But I feel it's an important project to try and make freesewing.org available to as many people as possible. And for this, we need to get rid of the language barrier.
+Так, 25 травня вже скоро, і так, мені потрібно більше роботи, як ще одна дірка в голові. Але я відчуваю, що це важливий проект, щоб спробувати зробити freesewing.org доступним для якомога більшої кількості людей. А для цього потрібно позбутися мовного бар'єру.
 
-Now I'm hopeful that I'll be able to take care of the technical aspects of making the site multi-lingual. But that won't do us any good without translations. So that's where you come in :)
+Тепер я сподіваюся, що зможу подбати про технічні аспекти створення багатомовного сайту. Але без перекладу це не принесе нам жодної користі. Тож саме тут з'являєтесь ви :)
 
-> #### If you're willing to help with the effort of translating freesewing, please [get in touch](/contact). We need your help.
+> #### Якщо ви бажаєте допомогти з перекладом фрісевінгу, будь ласка, пишіть на [або на](/contact). Нам потрібна ваша допомога.
 
-It would also help if you could spread the word a bit :)
+Було б також корисно, якби ви трохи поширили цю інформацію :)
 
 
 
