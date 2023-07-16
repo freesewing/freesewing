@@ -3,7 +3,7 @@ author: "joostdecock"
 caption: "Foto von Flo Dahm von Pexels"
 date: "2021-04-18"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9e1cca6b6de79fadbd5201bad3b9b71375a53464-1920x1442.jpg"
-intro: "Wir haben soeben FreeSewing v2.15 veröffentlicht und es kommt mit einem neuen Muster: Das Charlie Chinohosenmuster ."
+intro: "We've just published FreeSewing v2.15 and it comes with a new pattern: The Charlie Chinos trouser pattern ."
 title: "Charlie Chinos: Wer will ein paar neue Hosen?"
 ---
 
@@ -14,7 +14,8 @@ Ich habe den Überblick darüber verloren, wie lange ein Schnittmuster für Chin
 
 Hier ist ein Bild davon, aber durch den dunklen Stoff erkennt man leider nicht so viel:
 
-![Einmal Charlie von Joost](joost.jpg)
+![Einmal Charlie von Joost](https://posts.freesewing.org/uploads/joost_b8dee41025.jpg)
+
 
 Stattdessen erzähle ich dir lieber, warum ich hierüber so begeistert bin.
 
@@ -58,6 +59,5 @@ Wie immer finden sich [im Changelog](https://github.com/freesewing/freesewing/bl
  - [Charlie](/designs/charlie/) ist das erste Schnittmuster, das ein paar absolute Dimensionen während der Konfiguration anzeigt. Wir haben vor, das auf weitere Schnittmuster auszudehnen. Designer, die dieses Feature nutzen wollen, finden die neuen [raise-Methoden](https://freesewing.dev/reference/api/part/raise) in der Dokumentation.
  - Wo wir schon bei der Dokumentation sind, die Beispiele in unserer [Dokumentation für Entwickler](https://freesewing.dev/) erlaubt es dir nun, dir die Punkte und Pfade in den Beispielen per Knopfdruck anzeigen zu lassen
  - Die [part.getId()](https://freesewing.dev/reference/api/part/getid/)-Methode verwendet nun ein Präfix-Argument
-
 
 
