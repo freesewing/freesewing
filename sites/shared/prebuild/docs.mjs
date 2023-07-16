@@ -175,7 +175,11 @@ export const prebuildMdxFromFolder = async (site, allPages, folder = false) => {
 }
 
 export const prebuildDocs = async (site, nav) => {
-  const { pages, sections } = await prebuildMdxFromFolder(site, nav, 'docs')
+  const { pages, sections } = await prebuildMdxFromFolder(
+    site,
+    nav,
+    site === 'org' ? 'docs' : false
+  )
 
   // Write files with MDX paths
   fs.mkdirSync(path.resolve('..', site, 'prebuild', 'docs'), { recursive: true })

@@ -13,14 +13,20 @@ import { prebuildCrowdin } from './crowdin.mjs'
 
 const run = async () => {
   if (process.env.LINTER) return true
+  const startTime = Date.now()
   const FAST = process.env.FAST ? true : false
   const SITE = process.env.SITE || 'lab'
-  await prebuildDesigns()
+  const promises = []
+  promises.push(prebuildDesigns())
   if (['org', 'dev'].includes(SITE)) {
     if (!FAST) {
-      await prebuildGitData(SITE)
-      await prebuildCrowdin(SITE)
+      promises.push(prebuildGitData(SITE))
+      promises.push(prebuildCrowdin(SITE))
+      promises.push(prebuildContributors(SITE))
+      promises.push(prebuildPatrons(SITE))
+      promises.push(prebuildFavicon(SITE))
     }
+    promises.push(prebuildI18n(SITE))
 
     const pages = {}
     await prebuildDocs(SITE, pages)
@@ -28,33 +34,32 @@ const run = async () => {
     prebuildNavigation(SITE, pages)
     if (!FAST && process.env.GENERATE_OG_IMAGES) {
       // Create og image for the home page
-      await generateOgImage({
-        lang: 'en',
-        site: SITE,
-        slug: '',
-        title: 'FreeSewing.dev',
-      })
+      promises.push(
+        generateOgImage({
+          lang: 'en',
+          site: SITE,
+          slug: '',
+          title: 'FreeSewing.dev',
+        })
+      )
       // Create og image for the 404 page
-      await generateOgImage({
-        lang: 'en',
-        site: SITE,
-        slug: '/404',
-        intro: "There's nothing here. Only this message to say there's nothing here.",
-        title: 'Page not found',
-        lead: '404',
-      })
+      promises.push(
+        generateOgImage({
+          lang: 'en',
+          site: SITE,
+          slug: '/404',
+          intro: "There's nothing here. Only this message to say there's nothing here.",
+          title: 'Page not found',
+          lead: '404',
+        })
+      )
     }
   } else {
     await prebuildLab()
   }
 
-  await prebuildI18n(SITE)
-  if (!FAST) {
-    await prebuildContributors(SITE)
-    await prebuildPatrons(SITE)
-    await prebuildFavicon(SITE)
-  }
-  console.log()
+  await Promise.all(promises)
+  console.log(`Completed Prebuild in ${Date.now() - startTime}ms`)
 }
 
 run()

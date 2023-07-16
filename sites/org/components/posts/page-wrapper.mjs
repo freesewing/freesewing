@@ -1,4 +1,3 @@
-import { HeadInfo } from 'shared/components/docs/docs-page.mjs'
 import { PageLink } from 'shared/components/page-link.mjs'
 import { Lightbox } from 'shared/components/lightbox.mjs'
 import { ImageWrapper } from 'shared/components/wrappers/img.mjs'
@@ -6,12 +5,12 @@ import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Author } from './author.mjs'
 import { TimeAgo } from 'shared/components/mdx/meta.mjs'
 import { useTranslation } from 'next-i18next'
-import { Toc } from 'shared/components/mdx/toc.mjs'
 import { PrevNext } from 'shared/components/prev-next.mjs'
 import { useRouter } from 'next/router'
 import { Spinner } from 'shared/components/spinner.mjs'
+import { DocsLayout } from 'site/components/layouts/docs.mjs'
 
-export const ns = ['common', 'posts', ...pageNs]
+export const ns = ['common', 'posts', 'docs', ...pageNs]
 
 export const PostPageWrapper = ({ page, slug, locale, frontmatter, mdxContent }) => {
   const { t } = useTranslation(ns)
@@ -25,8 +24,11 @@ export const PostPageWrapper = ({ page, slug, locale, frontmatter, mdxContent })
   }
 
   return (
-    <PageWrapper title={frontmatter.title} {...page}>
-      <HeadInfo {...{ frontmatter, locale, slug, site: 'org' }} />
+    <PageWrapper
+      title={frontmatter.title}
+      {...page}
+      layout={(props) => <DocsLayout {...props} {...{ slug, frontmatter, noMeta: true }} />}
+    >
       <article className="mb-12 px-8 max-w-7xl">
         <div className="flex flex-row justify-between text-sm mb-1 mt-2">
           <div>
@@ -60,21 +62,13 @@ export const PostPageWrapper = ({ page, slug, locale, frontmatter, mdxContent })
             />
           </Lightbox>
         </figure>
-        <div className="flex flex-row-reverse flex-wrap xl:flex-nowrap justify-end">
-          {frontmatter.toc && frontmatter.toc.length > 0 && (
-            <div className="mb-8 w-full xl:w-80 2xl:w-96 xl:pl-8 2xl:pl-16">
-              <Toc toc={frontmatter.toc} wrap />
-            </div>
-          )}
-          <div>
-            <div className="strapi prose lg:prose-lg mb-12 m-auto">{mdxContent}</div>
-            <div className="max-w-prose text-lg lg:text-xl">
-              <Author author={frontmatter.author || frontmatter.maker} />
-            </div>
+        <div>
+          <div className="strapi prose lg:prose-lg mb-12 m-auto">{mdxContent}</div>
+          <div className="max-w-prose text-lg lg:text-xl">
+            <Author author={frontmatter.author || frontmatter.maker} />
           </div>
         </div>
       </article>
-      <PrevNext slug={slug} />
     </PageWrapper>
   )
 }

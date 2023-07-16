@@ -1,5 +1,6 @@
 // Hooks
-import { useNavigation } from 'site/hooks/use-navigation.mjs'
+import { useContext } from 'react'
+import { NavigationContext } from 'shared/context/navigation-context.mjs'
 // Components
 import Head from 'next/head'
 import {
@@ -15,8 +16,8 @@ import { PrevNext } from 'shared/components/prev-next.mjs'
 
 export const ns = [] //navNs
 
-export const DocsLayout = ({ children = [], slug, frontmatter }) => {
-  const { siteNav } = useNavigation({ ignoreControl: true })
+export const DocsLayout = ({ children = [], slug, frontmatter, noMeta }) => {
+  const { siteNav } = useContext(NavigationContext)
 
   return (
     <>
@@ -36,7 +37,7 @@ export const DocsLayout = ({ children = [], slug, frontmatter }) => {
         <meta property="og:url" content={`https://freesewing.org/${slug}`} key="url" />
         <meta property="og:locale" content="en" key="locale" />
         <meta property="og:site_name" content="freesewing.org" key="site" />
-        <title>{frontmatter.title} - FreeSewing.org</title>
+        <title>{`${frontmatter.title} - FreeSewing.org`}</title>
       </Head>
 
       <BaseLayout>
@@ -58,7 +59,7 @@ export const DocsLayout = ({ children = [], slug, frontmatter }) => {
         </BaseLayoutProse>
 
         <BaseLayoutRight>
-          <MdxMetaData frontmatter={frontmatter} slug={slug} locale="en" />
+          {!noMeta && <MdxMetaData frontmatter={frontmatter} slug={slug} locale="en" />}
           <div className="hidden xl:block">
             <Toc toc={frontmatter.toc} wrap />
           </div>
