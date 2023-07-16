@@ -3,7 +3,7 @@ author: "joostdecock"
 caption: "Radfahren wie ein wahrer Gentleman"
 date: "2021-03-06"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/15c72486b0c48905f9f4a916a32caa058f1b0f8a-997x857.jpg"
-intro: "Wouter ist wieder einmal dabei, diesmal verwöhnt er uns mit klassischen Kniebundhosen zum Radfahren."
+intro: "Wouter is at it again, this time around he's treating us to classic cycling breeches."
 title: "Diese Radfahr-Kniehosen Cornelius sind Wouters neuestes Geschenk an uns alle"
 ---
 
@@ -20,7 +20,7 @@ Er schreibt:
 
 Wie Wouter erwähnt: dises Schnittmuster basiert auf [der Entwurfsmethode nach Keystone](https://archive.org/details/keystonesystemsc00heck/page/n5/mode/2up). Das spielt aber natürlich keine Rolle, weil du es wie immer für dich maßgeschneidert bekommst, [direkt hier auf FreeSewing.org](/designs/cornelius/).
 
-![Hier ist der Herr höchstpersönlich](wouter.jpg)
+![Hier ist der Herr höchstpersönlich](https://posts.freesewing.org/uploads/wouter_9fbc821146.jpg)
 
 Beachte, dass du nicht Fahrrad fahren musst, um diese zu tragen. Du musst nur dazu bereit sein, deine Socken (oder Waden) zur Schau zu stellen.
 
