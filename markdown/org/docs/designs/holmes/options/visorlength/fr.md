@@ -1,6 +1,6 @@
-- - -
-title: "Visor length"
-- - -
+---
+title: "Longueur de la visière"
+---
 
 ***
 
