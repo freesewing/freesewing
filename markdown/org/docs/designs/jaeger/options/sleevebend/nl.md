@@ -1,5 +1,5 @@
 ---
-title: "Sleeve bend"
+title: "Mouw kromming"
 ---
 
 ![Mouw kromming](sleevebend.svg)
