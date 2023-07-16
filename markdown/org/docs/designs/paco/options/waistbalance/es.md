@@ -1,5 +1,5 @@
 ---
-title: "Waist balance"
+title: "Balance de Waist"
 ---
 
 Controla la distribución de la tela entre las partes delanteras y traseras en la cintura.
