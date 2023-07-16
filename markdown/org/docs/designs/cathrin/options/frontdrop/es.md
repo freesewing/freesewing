@@ -1,5 +1,5 @@
 ---
-title: "Front drop"
+title: "Caída frontal"
 ---
 
 ![La opción de gota frontal en la Catedral](./frontdrop.svg)
