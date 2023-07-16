@@ -61,8 +61,8 @@ Maar ik wil volkomen transparant zijn over wat er hier gebeurt, dus ik heb mijn 
 > 
 > Ik ben bevoorrecht, en dus heb ik verantwoordelijkheden. Ik heb het enorme geluk dat ik geboren ben in West-Europa, een goede job heb en een dak boven mijn hoofd.
 > 
-> Zou ik het geld kunnen gebruiken? Yes I could.  
-> Do I need the money? Nee, dat niet.
+> Zou ik het geld kunnen gebruiken? Ja, dat zou kunnen.  
+> Heb ik het geld nodig? Nee, dat niet.
 > 
 > ##### De waarde van jullie steun
 > 
@@ -98,8 +98,8 @@ Dus doen we vanaf vandaag een oproep voor Patrons.
 
 ## Word een FreeSewing-Patron
 
-To ensure a sustainable future for freesewing.org, our code, our patterns, and our community, we need to build a bedrock of loyal supporters.  
-Patrons who support us in our core work; Developing an open source platform for made-to-measure sewing patterns.
+Om een duurzame toekomst voor freesewing.org, onze code, onze patronen en onze gemeenschap te garanderen, moeten we een basis van trouwe supporters opbouwen.  
+Donateurs die ons steunen in ons kernwerk; het ontwikkelen van een open source platform voor op maat gemaakte naaipatronen.
 
 ![Er bestaan drie niveaus voor Patrons](https://posts.freesewing.org/uploads/patron_medals_2160e69d77.jpg)
 
