@@ -1,5 +1,5 @@
 ---
-title: "Waistband overlap"
+title: "Overlap Tailleband"
 ---
 
 ![Overlap Tailleband](waistbandoverlap.svg)
