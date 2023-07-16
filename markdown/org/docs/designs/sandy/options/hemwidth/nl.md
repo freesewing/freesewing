@@ -1,5 +1,5 @@
 ---
-title: "Hem width"
+title: "Breedte zoom"
 ---
 
 ![Breedte zoom](hemwidth.svg)
