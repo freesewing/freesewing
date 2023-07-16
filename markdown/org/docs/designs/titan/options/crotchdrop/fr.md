@@ -1,5 +1,5 @@
 ---
-title: "Crotch drop"
+title: "Hauteur d'enfourchure"
 ---
 
 Contrôle à quel point la croche est abaissée.
@@ -9,4 +9,4 @@ Un crotché significativement baissé peut également être un choix de style.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](titan_crotchdrop_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](titan_crotchdrop_sample.svg "Effet de cette option sur le motif")
