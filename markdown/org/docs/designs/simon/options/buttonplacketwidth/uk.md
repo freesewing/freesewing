@@ -1,5 +1,5 @@
 ---
-title: "Width of button placket"
+title: "Ширина планшета для кнопок"
 ---
 
 ![Ширина планшета для кнопок](buttonplacketwidth.svg)
