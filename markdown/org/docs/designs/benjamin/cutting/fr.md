@@ -1,5 +1,5 @@
 ---
-title: "Nœud papillon Benjamin : Instructions de coupe"
+title: "Benjamin bow tie: Cutting Instructions"
 ---
 
 Benjamin est un modèle plutôt simple, mais vos options détermineront ce qui doit être coupé. Vous trouverez ci-dessous deux schémas types.
@@ -11,7 +11,7 @@ Benjamin est un modèle plutôt simple, mais vos options détermineront ce qui d
   - Couper **2 parties de la bande de col**
 - **Entoilage**
   - Couper **4 parties de l'arc**
-  - Couper **2 parties de la bande de col**.
+  - Couper **2 parties de la bande de col**
 
 ## Avec ruban d'ajustement
 
@@ -20,6 +20,6 @@ Benjamin est un modèle plutôt simple, mais vos options détermineront ce qui d
   - Couper **2 parties de l'arc moyen**
   - Coupe **1 élément de l'arc long**
 - **Entoilage**
-  - Coupe **1 élément de l'arc court**
-  - Couper **2 éléments de l'arc moyen**
+  - Couper **1 élément d'arc court**
+  - Couper **2 parties de l'arc moyen**
   - Coupe **1 élément de l'arc long**
