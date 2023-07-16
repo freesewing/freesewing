@@ -1,44 +1,44 @@
 ---
 author: "joostdecock"
-caption: "A pink Hi and its BLÅHAJ ancestor"
+caption: "Een roze Hi en zijn BLÅHAJ voorouder"
 date: "2022-06-27"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/5b5d9171aca75dd339bf8b7359b257769aa61936-4032x3024.jpg"
-intro: "FreeSewing 2.21 adds Bob, Hi, Lucy, Noble and Unice designs"
-title: "FreeSewing 2.21 adds Bob, Hi, Lucy, Noble and Unice designs"
+intro: "FreeSewing 2.21 voegt Bob, Hi, Lucy, Noble en Unice ontwerpen toe"
+title: "FreeSewing 2.21 voegt Bob, Hi, Lucy, Noble en Unice ontwerpen toe"
 ---
 
-We've rolled out FreeSewing v2.21 today, and it's a massive update with tons of changes, improvements, and behind the scenes work. Check the CHANGELOG if you'd like get all the nitty-gritty detail. For this blog post, I'll focus on what you are probably going to be most interested in: New designs.
+We hebben vandaag FreeSewing v2.21 uitgebracht en het is een enorme update met heel veel veranderingen, verbeteringen en werk achter de schermen. Bekijk de CHANGELOG als je alle details wilt weten. In deze blogpost richt ik me op datgene waarin je waarschijnlijk het meest geïnteresseerd bent: Nieuwe ontwerpen.
 
-This release brings 5 new designs to our catalog, so let's dive right in:
+Deze release brengt 5 nieuwe ontwerpen naar onze catalogus, dus laten we er meteen in duiken:
 
-## Bob is a bib
+## Bob is een slab
 
-We've been using the construction of a Bib pattern in our [pattern design tutorial](https://freesewing.dev/tutorials/pattern-design) for years. Yet we never added the pattern to our catalog. An oversight that's been corrected now, and we now carry [Bob the bib](/designs/bob) in our collection.
+We gebruiken de opbouw van een Bib patroon al jaren in onze [patroonontwerp tutorial](https://freesewing.dev/tutorials/pattern-design) . Toch hebben we het patroon nooit aan onze catalogus toegevoegd. Een vergissing die nu is gecorrigeerd, en we hebben nu [Bob the bib](/designs/bob) in onze collectie.
 
-Perfect for babies and grown-ups who are messy eaters alike, since you can make Bob in any size.
+Perfect voor zowel baby's als volwassenen die rommelig eten, want je kunt Bob in elke maat maken.
 
-## Hi is a shark
+## Hoi is een haai
 
-It's been kinda hard to contain our excitement about this, but hear me out: A while ago rumours started swirling that IKEA would discontinue it's [BLÅHAJ](https://www.ikea.com/us/en/p/blahaj-soft-toy-shark-90373590/) stuffed shark, which is a universally beloved toy.
+Het was nogal moeilijk om onze opwinding hierover te bedwingen, maar luister goed: Een tijdje geleden gingen er geruchten dat IKEA zou stoppen met de [BLÅHAJ](https://www.ikea.com/us/en/p/blahaj-soft-toy-shark-90373590/) knuffelhaai, een universeel geliefd stuk speelgoed.
 
-The FreeSewing community wasn't just going to idly stand by while the worlds friendliest shark ran the risk of becoming extinct. A conservation effort gained momentum, and ultimately Wouter matter-of-factively dropped the first **Hi** pictures in our Discord.
+De FreeSewing gemeenschap was niet van plan om werkeloos toe te kijken hoe 's werelds vriendelijkste haai dreigde uit te sterven. Een poging tot behoud raakte in een stroomversnelling en uiteindelijk dropte Wouter zakelijk de eerste **Hi** foto's in onze Discord.
 
-Oh, and you should know that [Hi](/designs/hi)  can be made big or small. The patterns scales up to a 5m shark. What are you waiting for?
+Oh, en je moet weten dat [Hi](/designs/hi)  groot of klein gemaakt kan worden. De patronen schalen op tot een haai van 5 meter. Waar wacht je nog op?
 
-## Lucy is a tie-on pocket
+## Lucy is een bindzak
 
-We've seen a number of historical designs recently, specifically from Starf. This time around, it's SeaZeeZee who added [Lucy](/designs/lucy) which is a pattern for a tie-on pocket.
+We hebben onlangs een aantal historische ontwerpen gezien, met name van Starf. Deze keer is het SeaZeeZee die [Lucy](/designs/lucy) heeft toegevoegd, een patroon voor een bindzak.
 
-It's a quick make for cosplay, historical re-enactment, or for all those dresses that don't come with pockets.
+Het is snel gemaakt voor cosplay, historische re-enactment of voor al die jurken die geen zakken hebben.
 
-## Noble is a body block with prince(ss) seams
+## Noble is een carrosserieblok met prins(ss)naden
 
-Wouter (of Hi fame) has another contribution in this release: Noble is a princess seam body block. Blocks tend to be undervalued but they are the foundation that other designs are built on, so having a new body block with prince(ss) seams is very exciting.
+Wouter (van Hi) heeft nog een bijdrage in deze uitgave: Noble is een prinsessennaad bodyblok. Blokken worden vaak ondergewaardeerd, maar ze vormen de basis waarop andere ontwerpen worden gebouwd, dus een nieuw bodyblok met prins(ss)-naden is erg opwindend.
 
-## Unice is for undies
+## Unice is voor onderbroeken
 
-[Unice](/designs/unice) is a variant of [Ursula](/desgns/ursula), another undies pattern. It was designed by Anna who describes it as *the undies for those with significant rear estate*.
+[Unice](/designs/unice) is een variant van [Ursula](/desgns/ursula), een ander onderbroekenpatroon. Het is ontworpen door Anna, die het omschrijft als *de onderbroek voor mensen met een aanzienlijke achterstand*.
 
-It has a few changes and tweaks in comparison to Ursula, and is specifically intended to fit *any* body. So if you're rear estate mogul, try these out.
+Het heeft een paar veranderingen en aanpassingen ten opzichte van Ursula, en is speciaal bedoeld om te passen op *elk* lichaam. Dus als je een vastgoedmagnaat bent, probeer deze dan uit.
 
 
