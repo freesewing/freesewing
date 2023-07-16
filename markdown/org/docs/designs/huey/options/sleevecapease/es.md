@@ -1,5 +1,5 @@
 ---
-title: "Sleevecap ease"
+title: "Holgura de la parte superior de la manga"
 ---
 
 Determina la cantidad de facilidad de manga.
