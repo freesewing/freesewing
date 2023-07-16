@@ -1,51 +1,51 @@
 ---
 author: "joostdecock"
-caption: "Picture by Snapwire - Via pexels.com"
+caption: "Зображення Snapwire - Via pexels.com"
 date: "2022-01-01"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/33d380890b215e6fc9c698b57469fdd0c24acc44-3072x2304.jpg"
-intro: "I'm not going to do a whole blog post about 2021 stuff because I feel like most of us just sorta want to move on and forget about it, but if you were looking for a longer read, then here's the table of content of our latest newsletter edition that also went out today:"
-title: "2021 wrap-up: A new FreeSewing.dev and announcing our bug bounty program"
+intro: "Я не збираюся писати цілу статтю в блозі про 2021 рік, бо відчуваю, що більшість з нас просто хоче рухатися далі і забути про нього, але якщо ви шукаєте більш детальну інформацію, то ось зміст нашого останнього випуску ньюзлетера, який також вийшов сьогодні:"
+title: "Підсумки 2021 року: Новий FreeSewing.dev та оголошення нашої програми винагороди за виправлення помилок"
 ---
 
 
 
-I'm not going to do a whole blog post about 2021 stuff because I feel like most of us just sorta want to move on and forget about it, but if you were looking for a longer read, then here's the table of content of [our latest newsletter edition](/newsletter/2022q1/) that also went out today:
+Я не збираюся писати цілу статтю в блозі про 2021 рік, бо відчуваю, що більшість з нас просто хоче рухатися далі і забути про нього, але якщо ви шукаєте більш детальну інформацію, то ось зміст [нашого останнього випуску ньюзлетера](/newsletter/2022q1/) , який також вийшов сьогодні:
 
-- 🎉 2021 is salted and burned
-- 🧐 What our contributors have been up to in 2021
-- 🎖️ FreeSewing is now an 'all contributors' project
-- 🚧 Why version 3 has been put on hold
-- 🤓 What I've been up to in 2021
-- 🐛 FreeSewing's bug bounty program
-- ⛑️ Yearly revenue and where it went (spoiler: same as always)
-- 🤞 What I hope will happen this year
+- 2021 рік засолений і спалений
+- Чим займалися наші дописувачі у 2021 році
+- 🎖️ FreeSewing тепер є проектом "для всіх учасників
+- Чому версія 3 була призупинена
+- 🤓 Чим я займався у 2021 році
+- 🐛 Програма винагороди за виправлення помилок FreeSewing
+- ⛑️ Річний дохід і куди він пішов (спойлер: як завжди)
+- 🤞 Що, я сподіваюся, станеться цього року
 
-Here, I'd like to cherry-pick just those things that I think are exciting right now.
+Тут я хотів би виокремити лише ті речі, які, на мою думку, є цікавими зараз.
 
-## freesewing.dev has been rebuilt
+## freesewing.dev було перебудовано
 
-[The effort I started in the summer](https://freesewing.dev/blog/project-2022) came to fruition on the last day of the year as I deployed the new [freesewing.dev](https://freesewing.dev/blog/project-2022) site in production.
+[Зусилля, які я розпочав влітку](https://freesewing.dev/blog/project-2022) , увінчалися успіхом в останній день року, коли я запустив новий сайт [freesewing.dev](https://freesewing.dev/blog/project-2022) у виробництво.
 
-It's a complete redesign, and the code is now [hosted in our monorepo](https://github.com/freesewing/freesewing), which means that [our dedicated repository for freesewing.dev](https://github.com/freesewing/freesewing.dev) has now been archived.
+Це повний редизайн, і код тепер [розміщено в нашому монорепозиторії](https://github.com/freesewing/freesewing), що означає, що [наш спеціальний репозиторій для freesewing.dev](https://github.com/freesewing/freesewing.dev) тепер заархівовано.
 
-This effort implemented a bunch of items from [our v3 roadmap](https://github.com/freesewing/freesewing/discussions/1278) which has sort of grown into this long list of ideas/plans. From the top of my head:
+Ці зусилля реалізували багато пунктів з [нашої дорожньої карти v3](https://github.com/freesewing/freesewing/discussions/1278) , яка переросла в цей довгий список ідей/планів. З самого початку:
 
-- Migrate to NextJS
-- Better open graph support
-- Migrate style to TailwindCSS
-- Migrate blog posts and showcase posts to Strapi
-- Migrate newsletter to Strapi
-- Move markdown content into monorepo & merge Crowdin translation projects
-- Add endpoint to backend for auto-generated open graph images
+- Перехід на NextJS
+- Краща підтримка відкритих графів
+- Перенести стиль до TailwindCSS
+- Перенесіть дописи в блозі та вітрини до Strapi
+- Перенести розсилку на Strapi
+- Перенесіть контент зі знижками в монорепо & об'єднайте проєкти з перекладу Crowdin
+- Додайте кінцеву точку в бекенд для автоматично згенерованих зображень відкритих графіків
 
-Have all been implemented as a direct result or side effect of this effort.
+Всі вони були реалізовані як прямий результат або побічний ефект цих зусиль.
 
-This site will also become the blueprint for an overhaul of freesewing.org, something that's on the planning for this year.
+Цей сайт також стане основою для капітального ремонту freesewing.org, що заплановано на цей рік.
 
-## FreeSewing's bug bounty program
+## Програма винагороди за виправлення помилок у FreeSewing
 
-Once again, [read our newsletter](/newsletter/2022q1/) for the entire backstory, but here's the gist of it: We are now launching the FreeSewing bug bounty program:
+Знову ж таки, [читайте нашу розсилку](/newsletter/2022q1/) , щоб дізнатися всю передісторію, але ось її суть: Зараз ми запускаємо програму винагороди за баги у FreeSewing:
 
-> If you find a bug in one of our patterns, or in our core library, we will (with your permission) add you to our list of contributors, and send you a little something to say thanks.
+> Якщо ви знайдете помилку в одному з наших шаблонів або в нашій основній бібліотеці, ми (з вашого дозволу) додамо вас до нашого списку дописувачів і надішлемо вам невеликий подарунок на знак подяки.
 
-So keep your eyes peeled, and if something seems off, [let us know about it](https://discord.freesewing.org/) and we'll send you some goodies
+Тож слідкуйте за новинами, і якщо щось не так, [повідомте нам про це](https://discord.freesewing.org/) і ми надішлемо вам щось смачненьке
