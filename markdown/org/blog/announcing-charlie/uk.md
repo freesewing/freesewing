@@ -1,63 +1,63 @@
 ---
 author: "joostdecock"
-caption: "Photo by Flo Dahm from Pexels"
+caption: "Фотографія Flo Dahm з Pexels"
 date: "2021-04-18"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9e1cca6b6de79fadbd5201bad3b9b71375a53464-1920x1442.jpg"
-intro: "We've just published FreeSewing v2.15 and it comes with a new pattern: The Charlie Chinos trouser pattern ."
-title: "Charlie Chinos: who wants some new trousers?"
+intro: "Ми щойно опублікували FreeSewing v2.15 з новою викрійкою: Викрійка штанів Чарлі Чінос ."
+title: "Чарлі Чінос: хто хоче нові штани?"
 ---
 
 
-We've just published FreeSewing v2.15 and it comes with a new pattern: [The Charlie Chinos trouser pattern](/designs/charlie/).
+Ми щойно опублікували FreeSewing v2.15 з новою викрійкою: [Викрійка брюк чінос Чарлі](/designs/charlie/).
 
-I have lost track of how long a chino trouser pattern has been on my to-do list, but it's measured in years. I'm very happy I finally landed where I wanted to be.
+Я вже й не пам'ятаю, як довго викрійка брюк чиносів була в моєму списку справ, але це вимірюється роками. Я дуже щаслива, що нарешті потрапила туди, куди хотіла.
 
-I have a picture of it here, but due to the dark fabric, you can't really make out much:
+У мене є його фотографія, але через темну тканину ви не зможете багато чого розгледіти:
 
-![A pair of Charlies by Joost](https://posts.freesewing.org/uploads/joost_b8dee41025.jpg)
+![Пара Charlies від Joost](https://posts.freesewing.org/uploads/joost_b8dee41025.jpg)
 
 
-So instead, let me tell you about why I am so excited about this.
+Тож натомість дозвольте мені розповісти вам, чому я так схвильований цим.
 
-##### Based on Titan
+##### На базі Titan
 
-First up, Charlie is based on Titan, our unisex trouser block that is also the foundation for [our Paco pattern](/designs/paco/). So if you're familiar with any of those, you already know how Charlie will fit you.
+По-перше, Чарлі базується на Titan, нашому брючному блоці унісекс, який також є основою для [нашого патерну Paco](/designs/paco/). Тож якщо ви знайомі з , ви вже знаєте, як Чарлі підійде саме вам.
 
-##### More measurements, more options, better fit
+##### Більше вимірів, більше варіантів, краща посадка
 
-As a token of how much I feel this is an improvement, I've deprecated [Theo](/designs/theo/). Based on an Aldrich draft, Theo uses very few measurements, and while that worked fine for a certain set of people, it's a less versatile pattern.
+На знак того, наскільки я відчуваю, що це покращення, я знецінив [Тео](/designs/theo/). Спираючись на проект Олдріча, Тео використовує дуже мало вимірів, , і хоча для певної групи людей це чудово працює, це менш універсальний шаблон.
 
-Charlie will adapt better to differently shaped bodies, and has a hell of a lot more options that allow you to configure your trousers so you get them just as you like. In case you're wondering, Theo has 5 options, whereas Charlie has 31.
+Чарлі краще пристосовується до тіла різної форми, і має набагато більше опцій , які дозволяють вам налаштувати штани так, щоб вони були саме такими, як ви любите. Якщо вам цікаво, Тео має 5 варіантів, а Чарлі - 31.
 
-That being said, we will keep Theo available. Deprecated merely means that we've added a little warning message saying that we recommend Charlie instead.
+Тим не менш, ми будемо тримати Тео в курсі подій. Застарілий просто означає, що ми додали невелике попереджувальне повідомлення про те, що ми рекомендуємо Charlie замість нього.
 
-##### Easier to make
+##### Простіше у виготовленні
 
-Another reason to opt for Charlie rather than Theo: Charlie is easier to make. It has a more straight-forward fly and waistband construction, and the front pockets have been cleverly designed to give you the ease of construction that comes with side-seam pockets, yet the classic look of slanted pockets.
+Ще одна причина вибрати Чарлі, а не Тео: Чарлі легше зробити. Вона має більш пряму конструкцію ширінки та поясу, а передні кишені були розумно спроектовані, щоб надати вам простоту конструкції, яка притаманна кишеням у бокових швах, і водночас класичний вигляд косих кишень.
 
-Theo ranks 4 stars on our difficulty scale, and I've given Charlie 3 stars. If you were afraid of making trousers, this might be the pattern you've been waiting for.
+Тео має 4 зірки за нашою шкалою складності, а Чарлі - 3 зірки. Якщо ви боялися шити штани, можливо, це саме та викрійка, на яку ви так довго чекали.
 
-##### Real pockets
+##### Справжні кишені
 
-Charlie is a unisex pattern and the pockets are real. You have welt (aka jetted) pockets at the back, and slanted pockets at the front. In both cases, you have control over the size and depth of the pockets.
+Чарлі - це модель унісекс, а кишені справжні. Ззаду ви маєте прорізні кишені, та косі кишені спереду. В обох випадках ви можете контролювати розмір і глибину кишень.
 
-The front pockets deserve a special mention. They look like traditional slanted pockets, but are set in on the side seam. To make that possible, the back panel of the trousers wraps around the front, following the pocket slant.
+Окремої згадки заслуговують передні кишені. Вони виглядають як традиційні косі кишені, але розташовані в боковому шві. Щоб це стало можливим, задня панель штанів огинає передню, повторюючи нахил кишень.
 
-## Other 2.15 news
+## Інші новини 2.15
 
-Charlie is the main act, but there's a lot of work that went in this 2.15 release.
+Чарлі - головна дійова особа, але у версії 2.15 було зроблено багато роботи.
 
-As always, [the changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md) has all the details, but allow me to highlight some of the more noteworthy changes:
+Як завжди, [журнал змін](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md) містить всі деталі, але дозвольте мені виділити деякі з найбільш вартих уваги змін:
 
- - We have [a new bartack plugin](https://freesewing.dev/reference/plugins/bartack/)
- - The [buttons plugin](https://freesewing.dev/reference/plugins/buttons/) provides new [buttonhole-start](https://freesewing.dev/reference/snippets/buttonhole-start) and [buttonhole-end](https://freesewing.dev/reference/snippets/buttonhole-end) snippets
- - The [dimension plugin](https://freesewing.dev/reference/plugins/dimension/) provides a new [rmad macro](https://freesewing.dev/reference/macros/rmad/)
- - The [logo plugin](https://freesewing.dev/reference/plugins/logo/) now supports dark mode
- - Titan and Paco have a new `waistbandHeight` option
- - Core no longer rounds point coordinates to avoid misses when using [path.split](https://freesewing.dev/reference/api/path/split/)
- - [Bella](/designs/bella/) has a fix to the shoulder to better accommodate doll-sized clothing
- - [Charlie](/designs/charlie/) is the first pattern to list some of the absolute dimensions when configuring a pattern, but we plan to extend this to other designs We have documented [the new raise methods](https://freesewing.dev/reference/api/part/raise) for designers who want to utilize this feature.
- - Speaking of documentation, the examples in our [documentation for developers](https://freesewing.dev/) now allows you to toggle a switch to reveal the points and paths in the examples
- - The [part.getId()](https://freesewing.dev/reference/api/part/getid/) method now takes a prefix argument
+ - У нас є [новий плагін бартка](https://freesewing.dev/reference/plugins/bartack/)
+ - Плагін для кнопок [](https://freesewing.dev/reference/plugins/buttons/) надає нові фрагменти [петельки-початок](https://freesewing.dev/reference/snippets/buttonhole-start) та [петельки-кінець](https://freesewing.dev/reference/snippets/buttonhole-end)
+ - Плагін [розмірності](https://freesewing.dev/reference/plugins/dimension/) надає новий [макрос rmad](https://freesewing.dev/reference/macros/rmad/)
+ - Плагін логотипу [](https://freesewing.dev/reference/plugins/logo/) тепер підтримує темний режим
+ - Титан і Пако мають новий пояс `Висота` опція
+ - Ядро більше не округлює координати точок, щоб уникнути помилок при використанні [path.split](https://freesewing.dev/reference/api/path/split/)
+ - [Белла](/designs/bella/) має фіксатор на плечі, щоб краще пристосувати одяг до розміру ляльки
+ - [Чарлі](/designs/charlie/) - це перша модель, в якій можна перерахувати деякі абсолютні розміри при налаштуванні деталі, але ми плануємо поширити цю функцію на інші моделі Ми задокументували [нові методи підняття](https://freesewing.dev/reference/api/part/raise) для дизайнерів , які хочуть використовувати цю функцію.
+ - Говорячи про документацію, приклади в нашій [документації для розробників](https://freesewing.dev/) тепер дозволяє перемикати перемикач, щоб показати точки і шляхи в прикладах
+ - Метод [part.getId()](https://freesewing.dev/reference/api/part/getid/) тепер приймає префіксний аргумент
 
 
