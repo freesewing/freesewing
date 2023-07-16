@@ -1,5 +1,5 @@
 ---
-title: "Collar gap"
+title: "Écart du col"
 ---
 
 ![Écart du col](collargap.svg)
@@ -14,4 +14,4 @@ Il s'agit surtout d'un choix de style, mais un plus grand écart de collier (ave
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_collargap_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_collargap_sample.svg "Effet de cette option sur le motif")
