@@ -1,5 +1,5 @@
 - - -
-title: "Collar spread"
+titre : "Écartement du Col"
 - - -
 
 L'écartement du col contrôle la position des pointes du col - plus c'est grand, plus elles seront vers les épaules
