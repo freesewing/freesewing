@@ -15,7 +15,6 @@ import {
   I18nIcon,
   MeasieIcon,
   PageIcon,
-  PlusIcon,
   RssIcon,
 } from 'shared/components/icons.mjs'
 import { HeaderWrapper } from 'shared/components/wrappers/header.mjs'

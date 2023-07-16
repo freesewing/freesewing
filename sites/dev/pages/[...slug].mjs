@@ -14,7 +14,6 @@ import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { Toc } from 'shared/components/mdx/toc.mjs'
 import { MdxMetaData } from 'shared/components/mdx/meta.mjs'
 import { PrevNext } from 'shared/components/prev-next.mjs'
-import { ReadMore } from 'shared/components/mdx/read-more.mjs'
 import { NavLinks, Breadcrumbs, MainSections } from 'shared/components/navigation/sitenav.mjs'
 import {
   BaseLayout,

@@ -7,7 +7,6 @@ import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { TranslationStatus } from 'site/components/crowdin/status.mjs'
 import { Translators } from 'site/components/crowdin/translators.mjs'
 import { Popout } from 'shared/components/popout.mjs'
-import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
 import Link from 'next/link'
 
 // Translation namespaces used on this page

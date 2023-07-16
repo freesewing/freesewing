@@ -10,7 +10,7 @@ import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { nsMerge } from 'shared/utils.mjs'
 import { ChoiceLink } from 'shared/components/choice-link.mjs'
 
-import { NavLinks, Breadcrumbs, MainSections } from 'shared/components/navigation/sitenav.mjs'
+import { NavLinks, Breadcrumbs } from 'shared/components/navigation/sitenav.mjs'
 
 export const ns = nsMerge(sectionsNs)
 

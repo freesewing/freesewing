@@ -7,7 +7,7 @@ import { Robot } from 'shared/components/robot/index.mjs'
 import { Popout } from 'shared/components/popout.mjs'
 import { PageLink } from 'shared/components/page-link.mjs'
 import { BaseLayout, BaseLayoutLeft, BaseLayoutWide } from 'shared/components/base-layout.mjs'
-import { NavLinks, Breadcrumbs, MainSections } from 'shared/components/navigation/sitenav.mjs'
+import { NavLinks, MainSections } from 'shared/components/navigation/sitenav.mjs'
 
 const Page404 = () => {
   const title = '404: Page not found'
