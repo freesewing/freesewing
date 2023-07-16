@@ -3,9 +3,10 @@ maker: "unknown"
 caption: "Gus in his brown corduroys"
 date: "2017-01-17"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4addf70ac76582708c6aa4518028517d00dbaba2-1200x1600.jpg"
-intro: "This picture is from the fabricated.com blog. You should read the entire post ."
-title: "[auf Englisch] Corduroy trousers for Gus, by Fabricated"
-designs: ["theo"]
+intro: "Corduroy trousers for Gus, by Fabricated"
+title: "Corduroy trousers for Gus, by Fabricated"
+designs:
+  - "theo"
 ---
 
 
