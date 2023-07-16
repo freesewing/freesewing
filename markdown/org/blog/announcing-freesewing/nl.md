@@ -3,11 +3,11 @@ author: "joostdecock"
 caption: "Het FreeSewing-logo"
 date: "2017-03-24"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4e1f5426ee6578ef31d9c18a1de9b4beef15836b-2000x1125.jpg"
-intro: "I am are proud to announce freesewing core v1.0.0 and the accompanying documentation that describes the freesewing project in detail."
+intro: "Met trots kondig ik freesewing core v1.0.0 aan en de bijbehorende documentatie die het freesewing project in detail beschrijft."
 title: "Welkom op FreeSewing, een open-sourceplatform voor naaipatronen op maat"
 ---
 
-I am are proud to announce [freesewing core v1.0.0](https://github.com/freesewing/core) and the accompanying [documentation](/docs) that describes the freesewing project in detail.
+Met trots kondig ik [freesewing core v1.0.0](https://github.com/freesewing/core) aan en de bijbehorende [documentatie](/docs) die het freesewing project in detail beschrijft.
 
 Maar ik ben ook realistisch. Ik snap dat je wellicht geen tijd hebt om door pagina's en pagina's documentatie te waden.
 
@@ -20,16 +20,16 @@ Dat komt doordat naaipatronen &mdash; net zoals kleren in de winkel &mdash; in v
 
 Er is een andere manier om het aan te pakken, en da tis om een patroon uit te tekenen op basis van jouw maten. Zulke patronen op maat zijn veel beter, maar er kruipt veel werk in.
 
-I wanted to change that, and that effort evolved into [MakeMyPattern.com](https://makemypattern.com/).     
-I ran that site for a number of years, and it was a remarkable success. Waarschijnlijk heeft het wel geholpen dat ik alle patronen gratis weggaf.
+Ik wilde daar verandering in brengen en die poging ontwikkelde zich tot [MakeMyPattern.com](https://makemypattern.com/).     
+Ik heb die site een aantal jaren beheerd en het was een opmerkelijk succes. Waarschijnlijk heeft het wel geholpen dat ik alle patronen gratis weggaf.
 
-In the world of home sewing, it tends to require a bit of explaining why one would choose to give away their work for free. Things are different in the open source world where the idea of sharing your work with others for the benefit of all is the very thread from which communities are woven.
+In de wereld van het thuisnaaien is het vaak nodig om uit te leggen waarom iemand ervoor kiest om zijn werk gratis weg te geven. De dingen liggen anders in de open source wereld waar het idee van het delen van je werk met anderen ten voordele van iedereen de rode draad is waaruit gemeenschappen zijn geweven.
 
-While I can't magically bring the culture of open source to sewing patterns, I certainly can bring sewing patterns into the open source world.
+Hoewel ik niet op magische wijze de cultuur van open source naar naaipatronen kan brengen, kan ik wel naaipatronen in de open source wereld brengen.
 
-[Freesewing.org](https://freesewing.org/) will continue to offer what [Makemypattern.com](https://makemypattern.com/) does today: free sewing patterns drafted to your measurements. Maar daarbovenop zal je er zelf bijdrages aan kunnne leveren.
+[Freesewing.org](https://freesewing.org/) zal blijven aanbieden wat [Makemypattern.com](https://makemypattern.com/) vandaag de dag doet: gratis naaipatronen op maat. Maar daarbovenop zal je er zelf bijdrages aan kunnne leveren.
 
-Here's hoping that in the Venn diagram of the somewhat geeky and sewing, it's not just me in the middle.
+Laten we hopen dat in het Venn-diagram van de ietwat nerdige en naaiende mens niet alleen ik in het midden sta.
 
 joost
 
@@ -38,11 +38,11 @@ FreeSewing is een project van [Joost De Cock](https://github.com/joostdecock) en
 
 Petje af voor [@jakesgordon](https://github.com/jakesgordon) en [Kevin Lindsey](http://www.kevlindev.com) die me hebben toegestaan om delen van hun code te gebruiken.
 
-The early-stage enthusiasm and input of [@diggydev](https://github.com/diggydev), [@cabi](https://github.com/cabi), [@woutervdub](https://github.com/woutervdub), [@cloutiy](https://github.com/cloutiy), [@straytaoist](https://github.com/straytaoist), [@netpraxis](https://github.com/netpraxis), [@Stefan1960](https://github.com/Stefan1960),                                                             
+Het enthousiasme en de input in een vroeg stadium van [@diggydev](https://github.com/diggydev), [@cabi](https://github.com/cabi), [@woutervdub](https://github.com/woutervdub), [@cloutiy](https://github.com/cloutiy), [@straytaoist](https://github.com/straytaoist), [@netpraxis](https://github.com/netpraxis), [@Stefan1960](https://github.com/Stefan1960),                                                             
 [@brendare1](https://github.com/brendare1), [@JorisJoppe](https://github.com/JorisJoppe),                                                             
-[@JamJenkins](https://github.com/JamJenkins), and [@fightingrabbit](https://github.com/fightingrabbit) has been a great boon to this project.
+[@JamJenkins](https://github.com/JamJenkins), en [@fightingrabbit](https://github.com/fightingrabbit) is een grote steun geweest voor dit project.
 
-Thanks to [@annekecaramin](https://twitter.com/annekecaramin) for designing a logo cool enough to put on a  Tshirt.
+Met dank aan [@annekecaramin](https://twitter.com/annekecaramin) voor het ontwerpen van een logo dat cool genoeg is om op een T-shirt te zetten.
 
 Bijzondere dank aan [@scorchtorch](https://twitter.com/scorchtorch) om de beste te zijn in dat ding met harten/sla/geweien.
 
