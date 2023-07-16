@@ -1,5 +1,5 @@
 ---
-title: "Réduction du tour de taille"
+title: "Réduction de la taille"
 ---
 
 ![Option de réduction de la taille sur Cathrin](./waistreduction.svg)
@@ -8,4 +8,4 @@ La quantité que vous voulez que le corset soit plus petit que votre taille natu
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](cathrin_waistreduction_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](cathrin_waistreduction_sample.svg "Effet de cette option sur le motif")
