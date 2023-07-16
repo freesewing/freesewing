@@ -1,51 +1,51 @@
 ---
 author: "joostdecock"
-caption: "The freesewing logo"
+caption: "Логотип freesewing"
 date: "2017-03-24"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4e1f5426ee6578ef31d9c18a1de9b4beef15836b-2000x1125.jpg"
-intro: "I am are proud to announce freesewing core v1.0.0 and the accompanying documentation that describes the freesewing project in detail."
-title: "Announcing freesewing, an open source platform for made-to-measure sewing patterns"
+intro: "Я з гордістю оголошую про випуск ядра freesewing v1.0.0 та супровідної документації, яка детально описує проект freesewing."
+title: "Анонс freesewing, платформи з відкритим вихідним кодом для створення викрійок одягу за індивідуальними замовленнями"
 ---
 
-I am are proud to announce [freesewing core v1.0.0](https://github.com/freesewing/core) and the accompanying [documentation](/docs) that describes the freesewing project in detail.
+Я з гордістю представляю [ядро freesewing v1.0.0](https://github.com/freesewing/core) та супровідну [документацію](/docs) , яка детально описує проект freesewing.
 
-But I'm also realistic, and understand that you don't have time to plow through pages upon pages of documentation.
+Але я також реаліст і розумію, що у вас немає часу перелопачувати сторінки за сторінками документації.
 
-So instead, here's a story to give you the essence of freesewing in a nutshell:
+Натомість, ось історія, яка в двох словах пояснить вам суть фрісліфтингу:
 
-## The freesewing origin story
-Sewing is easy. It really is. What's hard is getting things to fit properly. That's why you use a sewing pattern. It's a blueprint for whatever it is you are making. A good pattern gives you good fit. Most patterns don't.
+## Історія виникнення фрісвінгу
+Шити легко. Так і є. Найскладніше - правильно підігнати речі по фігурі. Ось чому ви використовуєте швейну викрійку. Це план для того, що ви робите. Гарна викрійка забезпечує гарну посадку. Більшість шаблонів цього не роблять.
 
-That's because &mdash; much like clothes in the shop &mdash; patterns come in sizes. And sizes are a crude way to put people in boxes. They are made for an imaginary average person, rather than for you.
+Це тому, що &mdash; подібно до одягу в магазині &mdash; викрійки бувають різних розмірів. А розміри - це грубий спосіб розкласти людей по коробках. Вони зроблені для уявної середньостатистичної людини, а не для вас.
 
-There's another way, and that is to draft a pattern based on your measurements. These made-to-measure patterns are vastly superior, but they require a lot of work.
+Існує й інший спосіб - створити викрійку на основі ваших мірок. Ці візерунки, виготовлені за індивідуальним замовленням, набагато кращі, але вони вимагають багато роботи.
 
-I wanted to change that, and that effort evolved into [MakeMyPattern.com](https://makemypattern.com/).     
-I ran that site for a number of years, and it was a remarkable success. Probably helped by the fact that I gave away all patterns for free.
+Я хотіла це змінити, і ці зусилля переросли в [MakeMyPattern.com](https://makemypattern.com/).     
+Я керував цим сайтом кілька років, і він мав неабиякий успіх. Можливо, допомогло те, що я роздавала всі викрійки безкоштовно.
 
-In the world of home sewing, it tends to require a bit of explaining why one would choose to give away their work for free. Things are different in the open source world where the idea of sharing your work with others for the benefit of all is the very thread from which communities are woven.
+У світі домашнього шиття, як правило, потрібно трохи пояснити, чому хтось вирішив віддати свою роботу безкоштовно. У світі відкритого коду все інакше, де ідея ділитися своєю роботою з іншими на благо всіх є тією самою ниткою, з якої зіткані спільноти.
 
-While I can't magically bring the culture of open source to sewing patterns, I certainly can bring sewing patterns into the open source world.
+Хоча я не можу чарівним чином перенести культуру відкритого коду на викрійки, я, безумовно, можу перенести викрійки у світ відкритого коду.
 
-[Freesewing.org](https://freesewing.org/) will continue to offer what [Makemypattern.com](https://makemypattern.com/) does today: free sewing patterns drafted to your measurements. But additionally, it will be open to your contributions.
+[Freesewing.org](https://freesewing.org/) продовжить пропонувати те, що сьогодні робить [Makemypattern.com](https://makemypattern.com/) : безкоштовні викрійки для шиття, створені за вашими мірками. Але крім того, він буде відкритий для ваших внесків.
 
-Here's hoping that in the Venn diagram of the somewhat geeky and sewing, it's not just me in the middle.
+Сподіваюся, що на діаграмі Венна, де я трохи гік і шию, не тільки я посередині.
 
 Йост
 
-## Shout-outs
-Freesewing is a project by [Joost De Cock](https://github.com/joostdecock) and contributors.
+## Вигуки
+Freesewing - це проект [Joost De Cock](https://github.com/joostdecock) та дописувачів.
 
-Hat-tip to [@jakesgordon](https://github.com/jakesgordon) and [Kevin Lindsey](http://www.kevlindev.com) for allowing me to port some of their code.
+Подяка [@jakesgordon](https://github.com/jakesgordon) та [Кевіну Ліндсі](http://www.kevlindev.com) за те, що дозволили мені перенести частину їхнього коду.
 
-The early-stage enthusiasm and input of [@diggydev](https://github.com/diggydev), [@cabi](https://github.com/cabi), [@woutervdub](https://github.com/woutervdub), [@cloutiy](https://github.com/cloutiy), [@straytaoist](https://github.com/straytaoist), [@netpraxis](https://github.com/netpraxis), [@Stefan1960](https://github.com/Stefan1960),                                                             
+Ентузіазм та внесок на ранній стадії [@diggydev](https://github.com/diggydev), [@cabi](https://github.com/cabi), [@woutervdub](https://github.com/woutervdub), [@cloutiy](https://github.com/cloutiy), [@straytaoist](https://github.com/straytaoist), [@netpraxis](https://github.com/netpraxis), [@Stefan1960](https://github.com/Stefan1960),                                                             
 [@brendare1](https://github.com/brendare1), [@JorisJoppe](https://github.com/JorisJoppe),                                                             
-[@JamJenkins](https://github.com/JamJenkins), and [@fightingrabbit](https://github.com/fightingrabbit) has been a great boon to this project.
+[@JamJenkins](https://github.com/JamJenkins), та [@fightingrabbit](https://github.com/fightingrabbit) були великою допомогою для цього проекту.
 
-Thanks to [@annekecaramin](https://twitter.com/annekecaramin) for designing a logo cool enough to put on a  Tshirt.
+Дякуємо [@annekecaramin](https://twitter.com/annekecaramin) за розробку логотипу, досить крутого, щоб його можна було нанести на футболку.
 
-Special thanks to [@scorchtorch](https://twitter.com/scorchtorch) for being the best at that heart/salad/antlers thing.
+Особлива подяка [@scorchtorch](https://twitter.com/scorchtorch) за те, що вони найкраще знаються на сердечках/салатах/рогах.
 
-Last but not least, this project would not exist without the users, supporters, and donors of [makemypattern.com](https://makemypattern.com/).
+І останнє, але не менш важливе: цей проект не існував би без користувачів, прихильників та жертводавців [makemypattern.com](https://makemypattern.com/).
 
-Thanks guys!
+Дякую, хлопці!
