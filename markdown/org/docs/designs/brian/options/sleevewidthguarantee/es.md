@@ -1,5 +1,5 @@
 ---
-title: "Sleeve width guarantee"
+title: "Garantía de anchura de la manga"
 ---
 
 Primero elaboramos la abertura del brazo, luego preparamos una manga para encajarla.
@@ -12,4 +12,4 @@ Para evitar que la manga se estreche, sólo adaptamos una porción de la anchura
 
 ## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción al superponer varias variantes que tienen un valor diferente para esta opción](brian_sleevewidthguarantee_sample.svg "Efecto de esta opción en el patrón")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](brian_sleevewidthguarantee_sample.svg "Efecto de esta opción en el patrón")
