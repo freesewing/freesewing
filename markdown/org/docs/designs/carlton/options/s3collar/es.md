@@ -1,5 +1,5 @@
 ---
-title: "Shoulder seam shift: collar side"
+title: "Mayo de costura de hombro: lado de cuello"
 ---
 
 Controla la ubicación de la costura del hombro en el lado del cuello.
