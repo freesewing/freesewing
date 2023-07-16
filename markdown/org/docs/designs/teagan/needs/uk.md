@@ -1,10 +1,10 @@
 ---
-title: "Футболка Тіган: Те, що тобі потрібно"
+title: "Teagan T-shirt: What You Need"
 ---
 
 Щоб зробити Тіган, вам знадобиться наступне:
 
-- [Основні матеріали для шиття](/docs/sewing/basic-sewing-supplies)
+- [Базові матеріали для шиття](/docs/sewing/basic-sewing-supplies)
 - Приблизно 1 метр (1,1 ярда) відповідної тканини ([див. варіанти тканини](/docs/patterns/teagan/fabric))
 
 <Note>
