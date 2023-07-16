@@ -1,22 +1,22 @@
 ---
 author: "joostdecock"
-caption: "Did you know that Sandy was named after Olivia Newton-John's character in the move Grease?"
+caption: "Чи знали ви, що Сенді назвали на честь героїні Олівії Ньютон-Джон у фільмі \"Бріолін\"?"
 date: "2018-08-01"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/dc69133dd70791871c13267e14c24f70dc797693-1920x1280.jpg"
-intro: "Ladies and gentlemen --- because who says men can't wear skirts --- I am happy to announce the immeadiate availability of our latest freesewing pattern: the Sandy circle skirt ."
-title: "Announcing Sandy, a circle skirt designed by @AlfyLyr"
+intro: "Пані та панове - бо хто сказав, що чоловіки не можуть носити спідниці - я рада повідомити про безпосередню доступність нашої найновішої моделі фрісбі: спідниці \"Пісочне коло\"."
+title: "Анонсуємо Sandy, спідницю-коло, розроблену @AlfyLyr"
 ---
 
-Ladies and gentlemen --- because who says men can't wear skirts --- I am happy to announce the immeadiate availability of our latest freesewing pattern: [the Sandy circle skirt](/patterns/sandy).
+Пані та панове --- бо хто сказав, що чоловіки не можуть носити спідниці --- я рада повідомити про швидку доступність нашої останньої моделі: [спідниця "Пісочне коло"](/patterns/sandy).
 
-Sandy was designed by [@AlfaLyr](/users/alfalyr) who really did a stellar job. This makes it also another pattern from the freesewing community, something that I'm very excited about.
+Сенді був розроблений [@AlfaLyr](/users/alfalyr) , який дійсно зробив чудову роботу. Це також робить його ще одним шаблоном від спільноти фрісвінгу, що мене дуже тішить.
 
-## All the options
+## Всі варіанти
 
-As many patterns here at freesewing, Sandy comes with a bunch of options to allow you to customize your skirt to your wishes.
+Як і багато інших моделей на сайті freesewing, Sandy поставляється з купою опцій, які дозволять вам налаштувати спідницю відповідно до ваших побажань.
 
-There's options for how much of circle you want (half? full? Something else?), how long you want it, the shape and overlap of the waistband, whether you want pleats, how much hem, and so on.
+Ви можете вибрати, яку частину кола ви хочете (половину? повна? Щось інше?), якої довжини ви хочете, форма і нахлест пояса, чи потрібні складки, скільки подолу і так далі.
 
-I can see this becoming rather the success story.  
-So go and [treat yourself to a new skirt](/draft/sandy), and let [@AlfyLyr](/users/alfalyr) know how it works out for you.
+Я бачу, що це стає скоріше історією успіху.  
+Тож ідіть і [побалуйте себе новою спідницею](/draft/sandy), і дайте [@AlfyLyr](/users/alfalyr) знати, як це спрацює для вас.
 
