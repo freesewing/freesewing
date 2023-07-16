@@ -1,5 +1,5 @@
 ---
-title: "Collar notch return"
+title: "Kragenrückkehr"
 ---
 
 ![Kragenrückkehr](collarnotchreturn.svg)
