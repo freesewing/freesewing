@@ -1,104 +1,104 @@
 ---
 author: "joostdecock"
-caption: "This post describes what's new in version 2.2 of FreeSewing"
+caption: "Цей пост описує, що нового у версії 2.2 FreeSewing"
 date: "2020-02-22"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/356c127b8b37937b9537790d71a949c236027513-1920x1280.jpg"
-intro: "A look at what's new in FreeSewing 2.2, including Breanna, our bodice block for womenswear"
-title: "A look at what's new in FreeSewing 2.2, including Breanna, our bodice block for womenswear"
+intro: "Погляньте, що нового у FreeSewing 2.2, включаючи Breanna, наш блок ліфів для жіночого одягу"
+title: "Погляньте, що нового у FreeSewing 2.2, включаючи Breanna, наш блок ліфів для жіночого одягу"
 ---
 
-Version 2.2 of FreeSewing is here, and it has a bunch of changes and improvements big and small. The [changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md) lists all the changes, but here's what you need to know:
+Вийшла версія 2.2 FreeSewing, яка містить безліч великих і малих змін та покращень. У журналі змін [](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md) перераховані всі зміни, але ось що вам потрібно знати:
 
- - [New pattern: Breanna is a bodice block for womenswear](#new-pattern-breanna-is-a-bodice-block-for-womenswear)
- - [New/Different measurements to better suit womenswear](#newdifferent-measurements-to-better-suit-womenswear)
- - [Generate patterns in *standard* sizes (no account required)](#generate-patterns-in-standard-sizes-no-account-required)
+ - [Нова викрійка: Breanna - ліф-блок для жіночого одягу](#new-pattern-breanna-is-a-bodice-block-for-womenswear)
+ - [Нові/інші виміри для кращого припасування жіночого одягу](#newdifferent-measurements-to-better-suit-womenswear)
+ - [Створюйте шаблони у стандартних *та* розмірах (обліковий запис не потрібен)](#generate-patterns-in-standard-sizes-no-account-required)
 
-Let's have a look at what it all means:
+Давайте подивимося, що все це означає:
 
-## New pattern: Breanna is a bodice block for womenswear
+## Нова викрійка: Breanna - ліф-блок для жіночого одягу
 
 <Linedrawing pattern="breanna" />
 
-Meet [Breanna](/designs/breanna/), our bodice block for womenswear.
+Зустрічайте [Breanna](/designs/breanna/), наш ліфовий блок для жіночого одягу.
 
-A block (or sloper) may not the most exciting pattern to look at, but it plays an important role as it is the basic form which other patterns are built on.
+Блок (або слоупер), можливо, не найцікавіший шаблон, але він відіграє важливу роль, оскільки є базовою формою, на якій будуються інші шаблони.
 
-For example, we have a similar block for menswear called [Brian](/designs/brian/) and our [Aaron](/designs/aaron/), [Bent](/designs/bent/), [Carlita](/designs/carlita/), [Carlton](/designs/carlton/), [Huey](/designs/huey/), [Hugo](/designs/hugo/), [Jaeger](/designs/jaeger/), [Simon](/designs/simon/), [Simone](/designs/simone/), [Sven](/designs/sven/), and [Wahid](/designs/wahid/) patterns can all can trace their lineage back to Brain somehow.
+Наприклад, у нас є подібний блок для чоловічого одягу під назвою [Brian](/designs/brian/) і наші [Aaron](/designs/aaron/), [Bent](/designs/bent/), [Carlita](/designs/carlita/), [Carlton](/designs/carlton/), [Huey](/designs/huey/), [Hugo](/designs/hugo/), [Jaeger](/designs/jaeger/), [Simon](/designs/simon/), [Simone](/designs/simone/), [Sven](/designs/sven/), та [Wahid](/designs/wahid/) - всі вони так чи інакше можуть простежити свій родовід до Брейн.
 
-In other words, Breanna is an important building block for us to extend our womenswear collection. But that does not mean it is not good news for you too. If you have been sewing for a while, chances are drafting your own block/sloper has perpetually been on your to-do list. Well, good news, because here is your block ready to go.
+Іншими словами, Бріанна є важливим будівельним матеріалом для розширення нашої колекції жіночого одягу. Але це не означає, що це погана новина і для вас. Якщо ви вже давно шиєте для , то, швидше за все, створення власного блоку/слоупера завжди було у вашому списку справ. Що ж, гарні новини, адже ось ваш блок готовий до роботи.
 
-Oh, and of course it has all the bells and whistles you can expect from us. Have a look at [the pattern options](/docs/patterns/breanna/options/) and I think you'll be positively impressed. If nothing else, this block can accommodate 1 or 2 bust darts in 15 different places, giving you 120 unique ways to place your bust dart(s).
+І, звичайно ж, він має всі навороти, які ви можете очікувати від нас. Погляньте на [варіанти візерунків](/docs/patterns/breanna/options/) та . Думаю, ви будете позитивно вражені. Крім усього іншого, в цьому блоці можна розмістити 1 або 2 дротики для бюста в 15 різних місцях, що дає вам 120 унікальних способів розміщення дротиків для бюста.
 
-Breanna has has been a while in the making, and we'd love to get your feedback on it. Making a muslin from a block like this really isn't much work. So if you've got some time to spare to whip this one up and let us know how it went, that would be great.
+Бріанна вже давно в процесі створення, і ми хотіли б отримати ваші відгуки про неї. Виготовити муслін з такого блоку насправді не так вже й складно. Тож якщо у вас є трохи вільного часу, щоб зробити це і розповісти нам, як все пройшло, напишіть нам на . Було б чудово.
 
 
-## New/Different measurements to better suit womenswear
+## Нові/інші виміри для кращого припасування жіночого одягу
 
-Now that we're making our jouney into womenswear, we realized that the measurements we use on the site are somewhat skewed towards menswear. In addition, we had a lot of people stuggling with the shoulder slope measurement. So we decided to re-visit our measuremets, and we've made the following changes:
+Тепер, коли ми починаємо займатися жіночим одягом, ми зрозуміли, що мірки, які ми використовуємо на сайті, дещо зміщені в бік чоловічого одягу. Крім того, у нас було багато людей , які мали проблеми з вимірюванням нахилу плечей. Тому ми вирішили переглянути наші вимірювальні прилади і внесли наступні зміни:
 
-### We have a bunch of new *HPS* measurements
+### У нас є купа нових *вимірювань HPS*
 
-We've settled on the High-Point Shoulder, the so-called HPS point, as the basis for many of the vertical torso measurements. If you're not certain what/where the HPS point is, [check the HPS documentation](/docs/measurements/hps/).
+Ми зупинилися на найвищій точці плеча, так званій точці HPS, як основі для багатьох вертикальних вимірювань тулуба. Якщо ви не впевнені, де знаходиться точка HPS, [перевірте документацію HPS](/docs/measurements/hps/).
 
-### We discontinued the Center Back To Neck measurement
+### Ми припинили вимірювання від центру спини до шиї
 
-As we mentioned earlier, we use measurements from the HPS point now for vertical torso measurements. As a result, we've discontinued the old *Center back neck to waist* measurement.
+Як ми вже згадували раніше, тепер ми використовуємо вимірювання з точки HPS для вертикальних вимірювань тулуба . В результаті ми відмовилися від старого *центру спини від шиї до талії* вимірювання.
 
-Given that this measurement is now gone, you may need to add another measurement for certain patterns.
+Враховуючи, що цей вимір тепер відсутній, вам може знадобитися додати ще один вимір для певних шаблонів.
 
-### We changed the way the shoulder slope is measured
+### Ми змінили спосіб вимірювання нахилу укосу
 
-We noticed that people struggles with the way we asked them to measure [the shoulder slope measurement](/docs/measurements/shoulderslope) so we have changed how to do that.
+Ми помітили, що людям важко дається те, як ми просимо їх виміряти [ нахил плеча](/docs/measurements/shoulderslope) , тому ми змінили спосіб, як це зробити.
 
-Because the new method yields a very different number (that ultimately captures the same thing, how much your shoulder slopes downward) here too we had to go in and reset all the existing data. In other words, you'll have to re-measure your shoulder slope.
+Оскільки новий метод дає зовсім інше число (яке, зрештою, відображає ту саму річ, наскільки сильно ваше плече нахилене вниз), нам також довелося перезавантажити всі наявні дані. Іншими словами, вам доведеться повторно виміряти свій нахил плечей.
 
-## Generate patterns in *standard* sizes (no account required
+## Створюйте лекала у стандартних *та* розмірах (обліковий запис не потрібен)
 
-To get great patterns, you need good measurements, and a bunch of them. It's what we do here at FreeSewing, and most of the problems with patterns are because something goes wrong with taking measurements.
+Щоб отримати чудові викрійки, вам потрібні хороші мірки, і їх потрібно багато. Це те, чим ми займаємося у FreeSewing, і більшість проблем з викрійками виникають через те, що щось не так зі зняттям мірок.
 
-Unfortunately, there is no magic shortcut for this. If you want something made-to-measure, it's always going to start with acurate measurements.
+На жаль, для цього не існує чарівного ярлика. Якщо ви хочете щось зроблене на замовлення, завжди починає з точних вимірів.
 
-This does raise the bar for people who are new to the site, and want to kick the tires.
+Це дійсно піднімає планку для людей, які є новачками на сайті і хочуть спробувати свої сили.
 
-> *Oooh, free patterns, nice* 😍  
-> *Wait, I have to create an account first?* 🤔  
-> *And take all these measurements?* 😬  
-> *That seems like a lot of work.*
+> *Ооо, безкоштовні викрійки, приємно* 😍  
+> *Зачекайте, я маю спочатку створити акаунт?* 🤔  
+> *І зняти всі ці мірки?* 😬  
+> *Здається, це дуже багато роботи.*
 
-Fair enough.
+Справедливо.
 
-In addition, our regular visitors also asked us whether they could get to see a pattern and play around with it without first having to put in a bunch of measurements.
+Крім того, наші постійні відвідувачі також запитували нас, чи можуть вони побачити викрійку і погратися з нею без попереднього зняття мірок.
 
-So __*drumroll*__ that is no longer required. We now offer all our patterns in *standard sizes*. Not only do you not have to take measurements to try out the patterns, you don't even have to sign up or log in. No account needed, just pick a pattern, a size, and you're good to go.
+Тож __*барабанний дріб*__ , який більше не потрібен. Тепер ми пропонуємо всі наші візерунки в *стандартних розмірах*. Вам не тільки не потрібно знімати мірки, щоб приміряти лекала, вам навіть не потрібно реєструватися на сайті або входити в систему. Обліковий запис не потрібен, просто виберіть візерунок, розмір і все готово.
 
-Obvously, made-to-measure patterns is *our thing*, and we're not changing that. But we're hoping that by lowering the bar to try out our platform, more people will give FreeSewing a try.
+Очевидно, що патерни на замовлення - це *наша фішка*, і ми не збираємося цього змінювати. Але ми сподіваємося, що, знизивши планку для випробування нашої платформи, більше людей спробують FreeSewing.
 
-### What are standard sizes anyway?
+### Що таке стандартні розміри?
 
-The hardest thing about adding support for standard sizes? Figuring out what the heck standard sizes are supposed to be. We took a stab at it, and if you're curious you can [check out our sizing table here](/docs/various/sizes/).
+Що найскладніше в додаванні підтримки стандартних розмірів? З'ясовуємо, якими, в біса, мають бути стандартні розміри . Ми спробували, і якщо вам цікаво, ви можете [перевірити нашу таблицю розмірів тут](/docs/various/sizes/).
 
-For menswear, our size range is 32 to 50, and they are based on a size 38 baseline that we then graded up and down.  
-For womenswear, our size range is 28 to 48, and they are based on a size 34 baseline that we then graded up and down.
+Для чоловічого одягу наш розмірний ряд становить від 32 до 50, і він базується на базовому 38-му розмірі, який ми потім градаціювали вгору і вниз.  
+Для жіночого одягу наш розмірний ряд становить від 28 до 48, і він базується на базовому 34 розмірі, який ми потім градаціювали вгору і вниз.
 
 <Note>
 
-If you're not sure what these numbers are, they are the neck circumference in cm.
+Якщо ви не знаєте, що це за цифри, це обхват шиї в сантиметрах.
 
 </Note>
 
-While we tried to make our size ranges inclusive, and these tables are an honest attempt to come up with something that makes sense, please understand that this is not our core business. We've love to hear your feedback on the sizing tables, and are open to tweaks and suggestions, but at the end of the day, what we want is to give you a pattern drafted to your measurements.  
-These sizes are just a way to lure you in 🤫
+Хоча ми намагалися зробити наші розмірні ряди інклюзивними, і ці таблиці є чесною спробою придумати щось, що має сенс, будь ласка, зрозумійте, що це не є нашим основним бізнесом. Ми любимо чути ваші відгуки про таблиці розмірів і відкриті до змін та пропозицій, але в кінці кінців, ми хочемо надати вам викрійку, створену за вашими мірками.  
+Ці розміри - лише спосіб заманити вас до нас 🤫.
 
 
-## Also: All the other stuff
+## І ще: Все інше
 
-Now go and click around, for we've changed a bunch of other stuff too.
+А тепер ідіть і клацайте, бо ми змінили ще багато чого.
 
-If you bump into any problems or have questions, as always [our chat room is the place to get in touch](https://discord.freesewing.org/).
+Якщо у вас виникнуть проблеми або питання, як завжди [наш чат - це місце, де ви можете зв'язатися з ](https://discord.freesewing.org/).
 
-And if you happen to like what we do here, perhaps now is a good time to tell your friends about FreeSewing. After all, they can now check it out without needing to sign up.
+І якщо вам подобається те, що ми тут робимо, можливо, зараз саме час розповісти друзям про FreeSewing. Зрештою, тепер вони можуть перевірити це без необхідності реєструватися.
 
-PS: We have [a handy share page](/share/) you can use for this.
+PS: У нас є [зручна сторінка для обміну](/share/) , яку ви можете використовувати для цього.
 
 
 
