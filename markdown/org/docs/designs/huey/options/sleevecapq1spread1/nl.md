@@ -1,5 +1,5 @@
 ---
-title: "Sleevecap Q1 downward spread"
+title: "Mouwkop Q1 neerwaardse spreiding"
 ---
 
 ![De neerwaartse spreiding in de eerste quadrant van de mouwkop](./sleevecapq1downwardspread.svg)
