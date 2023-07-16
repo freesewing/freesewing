@@ -1,10 +1,10 @@
 ---
-title: "Across back factor"
+title: "Rückenweitenverhältnis"
 ---
 
 ![Rückenweitenverhältnis](acrossbackfactor.svg)
 
-Beeinflusst das Verhältnis zwischen Rücken- und Schulterweite measurement
+Steuert die Rückenbreite als Faktor der Schultermessung
 
 ## Effekt dieser Option auf das Schnittmuster
 
