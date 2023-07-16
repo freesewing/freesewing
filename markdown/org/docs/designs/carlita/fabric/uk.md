@@ -1,5 +1,5 @@
 ---
-title: "Пальто Карліта: Варіанти тканин"
+title: "Carlita coat: Fabric Options"
 ---
 
 ### Основна тканина
