@@ -1,5 +1,5 @@
 - - -
-title: "Length bonus"
+titel: "Lengtebonus"
 - - -
 
 ![Bonus lengte](lengthbonus.svg)
