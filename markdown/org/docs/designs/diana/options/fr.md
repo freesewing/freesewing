@@ -1,5 +1,5 @@
 ---
-title: "Haut drapé de Diana : Options de conception"
+title: "Diana draped top: Design Options"
 ---
 
 <PatternOptions pattern='diana' />
