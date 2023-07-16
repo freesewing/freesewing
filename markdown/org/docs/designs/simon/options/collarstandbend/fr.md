@@ -1,5 +1,5 @@
 ---
-title: "Collar stand bend"
+title: "Courbure centrale du pied de col"
 ---
 
 ![courbure de la courbe de la Collarstand](collarstandbend.svg)
@@ -8,4 +8,4 @@ Combien le collier se plie au milieu, plutôt que d'être droit. Cela influence 
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_collarstandbend_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_collarstandbend_sample.svg "Effet de cette option sur le motif")
