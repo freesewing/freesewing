@@ -1,5 +1,5 @@
 ---
-title: "Front drop"
+title: "Verlaging voorpand"
 ---
 
 ![De optie voor verlaging vooraan bij Cathrin](./frontdrop.svg)
