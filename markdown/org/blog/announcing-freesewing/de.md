@@ -3,12 +3,11 @@ author: "joostdecock"
 caption: "Das FreeSewing-Logo"
 date: "2017-03-24"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4e1f5426ee6578ef31d9c18a1de9b4beef15836b-2000x1125.jpg"
-intro: "Stolz darf ich euch die Veröffentlichung von freesewing core v1.0.0 und der zugehörigen Dokumentation , die das FreeSewing Projekt im Detail beschreibt."
+intro: "I am are proud to announce freesewing core v1.0.0 and the accompanying documentation that describes the freesewing project in detail."
 title: "Ankündigung von FreeSewing, eine Opensourceplattform für Schnittmuster auf Mass"
 ---
 
-
-Stolz darf ich euch die Veröffentlichung von [freesewing core v1.0.0](https://github.com/freesewing/core) und der zugehörigen [Dokumentation](/docs), die das FreeSewing Projekt im Detail beschreibt.
+I am are proud to announce [freesewing core v1.0.0](https://github.com/freesewing/core) and the accompanying [documentation](/docs) that describes the freesewing project in detail.
 
 Aber ich bin auch Realist und weiss, dass Sie nicht die Zeit haben, sich durch Seiten über Seiten an Dokumentation zu wühlen.
 
@@ -21,15 +20,16 @@ Dies ist &mdash; wie bei Kleidung aus dem Laden &mdash; weil Schnitte nach Grös
 
 Es gibt einen anderen Weg, nämlich den Schnitt direkt mit Ihren Massen zu konstruieren. Diese maßgeschneiderten Schnittmuster sind den Grössenschnitten weit überlegen, aber sie erfordern viel Arbeit, um sie zu erstellen.
 
-Ich wollte diesbezüglich Abhilfe schaffen und diese Anstrengungen mündeten in [MakeMyPattern.com](https://makemypattern.com/). Und diese Seite lief für einige Jahre und hatte erstaunlichen Erfolg. Vermutlich half die Tatsache, dass ich alle Schnittmuster kostenlos zur Verfügung stellte.
+I wanted to change that, and that effort evolved into [MakeMyPattern.com](https://makemypattern.com/).     
+I ran that site for a number of years, and it was a remarkable success. Vermutlich half die Tatsache, dass ich alle Schnittmuster kostenlos zur Verfügung stellte.
 
-Im Umfeld von Hobbynähern braucht es meistens etwas Erläuterung, warum jemand etwas kostenlos zur Verfügung stellt. Die Dinge stehen ganz anders in der Opensource-Welt, wo die Idee Wissen und Arbeit mit anderen zu teilen, zum Nutzen aller, die Grundlage der Communities darstellt.
+In the world of home sewing, it tends to require a bit of explaining why one would choose to give away their work for free. Things are different in the open source world where the idea of sharing your work with others for the benefit of all is the very thread from which communities are woven.
 
-Da ich die Opensource-Kultur nicht in die Welt des Nähens bringen kann, kann ich aber auf jeden Fall Schnittmuster in die Opensource-Sphären bringen.
+While I can't magically bring the culture of open source to sewing patterns, I certainly can bring sewing patterns into the open source world.
 
-[FreeSewing.org](https://freesewing.org/) wird weiterhin zur Verfügung stellen, was [Makemypattern.com](https://makemypattern.com/) heute anbieten: Kostenfreie opensource Schnittmuster, die nach Ihren individuellen Massen erstellt werden. Jedoch wird es zusätzlich offen für Ihre Mitgestaltung sein.
+[Freesewing.org](https://freesewing.org/) will continue to offer what [Makemypattern.com](https://makemypattern.com/) does today: free sewing patterns drafted to your measurements. Jedoch wird es zusätzlich offen für Ihre Mitgestaltung sein.
 
-In der Hoffnung, dass die Schnittmenge von Nähen und Geeks nicht nur mich enthält.
+Here's hoping that in the Venn diagram of the somewhat geeky and sewing, it's not just me in the middle.
 
 joost
 
@@ -38,14 +38,14 @@ Freesewing ist ein Projekt von [Joost De Cock](https://github.com/joostdecock) u
 
 Ich danke [@jakesgordon](https://github.com/jakesgordon) und [Kevin Lindsey](http://www.kevlindev.com), dass Sie mir gestatten ein Teil ihres Codes zu portieren.
 
-Die Begeisterung und der Input im Frühstadium von [@diggydev](https://github.com/diggydev), [@cabi](https://github.com/cabi), [@woutervdub](https://github.com/woutervdub), [@cloutiy](https://github.com/cloutiy), [@straytaoist](https://github.com/straytaoist), [@netpraxis](https://github.com/netpraxis), [@Stefan1960](https://github.com/Stefan1960), [@brendare1](https://github.com/brendare1), [@JorisJoppe](https://github.com/JorisJoppe), [@JamJenkins](https://github.com/JamJenkins), und [@fightingrabbit](https://github.com/fightingrabbit) war eine große Bereicherung für dieses Projekt.
+The early-stage enthusiasm and input of [@diggydev](https://github.com/diggydev), [@cabi](https://github.com/cabi), [@woutervdub](https://github.com/woutervdub), [@cloutiy](https://github.com/cloutiy), [@straytaoist](https://github.com/straytaoist), [@netpraxis](https://github.com/netpraxis), [@Stefan1960](https://github.com/Stefan1960),                                                             
+[@brendare1](https://github.com/brendare1), [@JorisJoppe](https://github.com/JorisJoppe),                                                             
+[@JamJenkins](https://github.com/JamJenkins), and [@fightingrabbit](https://github.com/fightingrabbit) has been a great boon to this project.
 
-Vielen Dank an [@annekecaramin](https://twitter.com/annekecaramin) für die Gestaltung eines Logos, das cool genug ist, um es auf ein T-Shirt zu drucken.
+Thanks to [@annekecaramin](https://twitter.com/annekecaramin) for designing a logo cool enough to put on a  Tshirt.
 
 Besonderen Dank an [@scorchtorch](https://twitter.com/scorchtorch) dafür, dass du der Beste in dieser Herz-/Salat-/Sondersituation bist.
 
 Last but not least wäre dieses Projekt ohne die Nutzer, Unterstützer und Spender von [makemypattern.com](https://makemypattern.com/) nicht möglich.
 
 Danke Leute!
-
-
