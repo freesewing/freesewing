@@ -89,7 +89,7 @@ Un guide plus complet sur la liaison tricot peut être trouvé dans les [Instuct
 
 </Tip>
 
-#### Placez (le début de) votre biais
+#### Placer (démarrer) votre biais
 
 ![Placez votre liaison](step03a.svg)
 
@@ -97,9 +97,9 @@ Un guide plus complet sur la liaison tricot peut être trouvé dans les [Instuct
 - Alignez le bord long de votre bande sur le bord de votre tissu de façon à ce que la bande repose sur le tissu (et non dans l'ouverture). Placez le coin sur votre point de départ.
 - Décalez maintenant votre bande de biais de 1 cm avant votre point de départ. Ce petit surplus garantira que nous pourrons joindre les deux extrémités plus tard.
 
-#### Coudre le biais en place
+#### Coudre le biais bien positionné
 
-![Coudre le biais en place](step03b.svg)
+![Coudre le biais bien positionné](step03b.svg)
 
 - Placez le pied de votre presseur 3 cm le long de la corde de fixation, de sorte qu'une queue de 3 cm sera laissée sans coutures. Cela nous aidera à nous joindre plus tard à la fin de la liaison. Ensuite cousez 1,5 cm du bord autour de l'encolure en tirant doucement la reliure au moment de la couture.  (Note: ce n'est pas l'allocation standard de couture.)
 - Arrêtez de coudre 3 cm avant la fin, laissant une queue comme nous l'avons fait au début.
