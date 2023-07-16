@@ -1,5 +1,5 @@
 ---
-title: "Sleevecap Q2 upward spread"
+title: "Armkugel Q2 Spreizung nach oben"
 ---
 
 ![Die Aufwärtsverteilung im zweiten Viertel der Ärmel](./sleevecapq2spread2.svg)
