@@ -1,5 +1,5 @@
 ---
-title: "Chest shaping"
+title: "Forma del pecho"
 ---
 
 ![Forma del pecho](chestshaping.svg)
