@@ -3,7 +3,7 @@ import { execSync } from 'child_process'
 
 const branchesToNeverBuild = ['i18n']
 
-export const shouldSkipBuild = (siteName, checkFolders = '../shared .') => {
+export const shouldSkipBuild = (site, checkFolders = '../shared .') => {
   const branch = process.env.VERCEL_GIT_COMMIT_REF
   const commit = process.env.VERCEL_GIT_COMMIT_SHA
   const author = process.env.VERCEL_GIT_COMMIT_AUTHOR_LOGIN
@@ -23,16 +23,32 @@ export const shouldSkipBuild = (siteName, checkFolders = '../shared .') => {
     process.exit(1)
   }
 
-  // Do not build dependabot PRs
-  if (author.toLowerCase().includes('ependabot')) {
-    console.log('🛑  Not building: Dependabot PR')
+  // Alwys build when explicitly requested
+  if (msg.includes('please-build')) {
+    console.log('✅ - Building: Commit message includes please-build')
+    process.exit(1)
+  }
+
+  // Never build the sanity site unless explicitly requested
+  if (site === 'sanity') {
+    console.log(
+      "🛑  Not building: Sanity site. You need to include 'please-build' in your commit message to build this site"
+    )
     process.exit(0)
   }
 
-  // Always build develop branch
-  if (branch === 'develop') {
-    console.log('✅ - Building: develop branch is always built')
-    process.exit(1)
+  // Never build the lab site unless explicitly requested
+  if (site === 'lab') {
+    console.log(
+      "🛑  Not building: Lab site. You need to include 'please-build' in your commit message to build this site"
+    )
+    process.exit(0)
+  }
+
+  // Do not build dependabot PRs
+  if (author.toLowerCase().includes('dependabot')) {
+    console.log('🛑  Not building: Dependabot PR')
+    process.exit(0)
   }
 
   // Do not build branches that should never be build
@@ -45,6 +61,12 @@ export const shouldSkipBuild = (siteName, checkFolders = '../shared .') => {
   if (msg.includes('skip-build')) {
     console.log('🛑  Not building: Commit message includes skip-build')
     process.exit(0)
+  }
+
+  // Always build develop branch
+  if (branch === 'develop') {
+    console.log('✅ - Building: develop branch is always built')
+    process.exit(1)
   }
 
   // Only build pull requests that made changes to the given site
@@ -78,14 +100,14 @@ export const shouldSkipBuild = (siteName, checkFolders = '../shared .') => {
         `git diff --name-only $(git merge-base develop HEAD) HEAD -- ${checkFolders}`
       ).toString()
       if (changes) {
-        console.log(`✅ - ${siteName} Pull Request - Proceed to build`)
+        console.log(`✅ - ${site} Pull Request - Proceed to build`)
         process.exit(1)
       }
     } catch (e) {
       console.log(e)
     }
 
-    console.log(`🛑 - Pull Request made no changes to ${siteName} - Do not build`)
+    console.log(`🛑 - Pull Request made no changes to ${site} - Do not build`)
     process.exit(0)
   }
 
