@@ -1,5 +1,5 @@
 ---
-title: "Neck inset"
+title: "Nackenauschnitt"
 ---
 
 ![Nackenauschnitt](neckinset.svg)
