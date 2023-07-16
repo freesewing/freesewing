@@ -349,6 +349,5 @@ export const maxPovDepthSlug = (slug, site) => {
  * In that case, this will return true
  */
 export const isSlugPart = (part, slug) => slug.slice(0, part.length) === part
-Object.keys(page).filter((key) => !['t', 's', 'o', 'b', 'h', 'd'].includes(key)).length > 0
 
 export const localeSlug = (loc, slug) => (loc === 'en' ? slug : `/${loc}${slug}`)

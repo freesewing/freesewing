@@ -74,10 +74,7 @@ export const DocsPage = ({ page, slug, locale, site, mdx }) => {
             <Toc toc={frontmatter.toc} wrap />
           </div>
         )}
-        <div>
-          {mdxContent}
-          <PrevNext slug={slug} />
-        </div>
+        <div>{mdxContent}</div>
       </div>
     </PageWrapper>
   )
