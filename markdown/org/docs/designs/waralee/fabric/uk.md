@@ -1,5 +1,5 @@
 ---
-title: "Штани з запахом Waralee: Варіанти тканин"
+title: "Waralee wrap pants: Fabric Options"
 ---
 
 ### Основна тканина
