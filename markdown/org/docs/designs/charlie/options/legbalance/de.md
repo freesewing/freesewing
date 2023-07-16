@@ -1,5 +1,5 @@
 ---
-title: "Leg balance"
+title: "Bein-Balance"
 ---
 
 Steuert den Anteil zwischen Vorder- und Rückenteil der Beine.
