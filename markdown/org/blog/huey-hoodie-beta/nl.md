@@ -1,52 +1,44 @@
 ---
 author: "joostdecock"
-caption: "This purple Huey hoodie is the first of its kind. Now it's your turn"
+caption: "Deze paarse Huey hoodie is de eerste in zijn soort. Nu is het jouw beurt"
 date: "2017-10-21"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3be185a211486823b678af97710274804fe86dcf-2048x2048.jpg"
-intro: "The Huey Hoodie is now available in beta. Which begs the question, what does it mean for a pattern to be in Beta? [Niet vertaald]"
-title: "The Huey Hoodie is now available in beta. Which begs the question, what does it mean for a pattern to be in Beta? [Niet vertaald]"
+intro: "De Huey Hoodie is nu verkrijgbaar in bèta. Wat de vraag oproept: wat betekent het voor een patroon om in Beta te zijn?"
+title: "De Huey Hoodie is nu verkrijgbaar in bèta. Wat de vraag oproept: wat betekent het voor een patroon om in Beta te zijn?"
 ---
 
-Welcome to [Huey](/patterns/huey), the youngest member in our pattern family.
-Huey is a zip-up hoodie with an (optional) front pouch. I've made one for myself -- the one in the picture above -- 
-and I have yet to take it off since.
+Welkom bij [Huey](/patterns/huey), het jongste lid in onze patronenfamilie. Huey is een hoodie met rits en een (optionele) buidelzak aan de voorkant. Ik heb er een voor mezelf gemaakt - die op de foto hierboven - en sindsdien heb ik hem nog niet afgedaan.
 
-Meanwhile, I've been wondering why the hell I didn't design this pattern sooner. 
-It's just that nice to wear.
+Ondertussen heb ik me afgevraagd waarom ik dit patroon niet eerder heb ontworpen. Het is gewoon zo fijn om te dragen.
 
-## Available as of now, in beta
+## Vanaf nu beschikbaar, in bèta
 
-The pattern is available [right here](/patterns/huey), right now, but it's in beta.
+Het patroon is beschikbaar [hier](/patterns/huey), op dit moment, maar het is nog in bèta.
 
-To find out what that means -- and why I'm doing this -- just continue reading. 
-But if you're itching to make this, here's is what you need to know about beta status:
+Om erachter te komen wat dat betekent -- en waarom ik dit doe -- lees je gewoon verder. Maar als je staat te popelen om dit te maken, is dit wat je moet weten over de bètastatus:
 
- - Beta patterns lack documentation
- - Beta patterns are made by few people (so far)
+ - Bètapatronen missen documentatie
+ - Bètapatronen worden door weinig mensen gemaakt (tot nu toe)
 
-As time goes by and these issues are resolved, Huey will move from beta to core.
+Naarmate de tijd verstrijkt en deze problemen worden opgelost, zal Huey overgaan van bèta naar kern.
 
-## So why this beta business
+## Dus waarom dit bèta-gedoe
 
-As I explained in [my round-up post of last month](/blog/roundup-2017-09/), pattern testing is a real bottleneck for me.
+Zoals ik heb uitgelegd in [mijn round-up post van vorige maand](/blog/roundup-2017-09/), is het testen van patronen een echte bottleneck voor mij.
 
-A number of people came forward, offering to help out with testing (thank you very much for that)
-which lead me to consider how this would work in practice.
+Een aantal mensen bood aan om te helpen met testen (waarvoor hartelijk dank) , waardoor ik ging nadenken over hoe dit in de praktijk zou werken.
 
-Like, I've got Huey to point of *it works for me* and I am somewhat confident that it will work for others too.
-Stil, nothing replaces a real-world test so it would be nice if a couple of people could make it.
+Zoals, ik heb Huey naar punt *het werkt voor mij* en ik heb er enig vertrouwen in dat het ook voor anderen zal werken. Toch is er niets dat een praktijktest vervangt, dus het zou leuk zijn als er een paar mensen konden komen.
 
-Rather than given the opportunity to test Huey to a handful of people who came forward, I figured I might as well
-open it up to everyone who feels so inclined.
+In plaats van de kans te geven om Huey te testen aan een handjevol mensen die zich meldden, dacht ik dat ik net zo goed open kon stellen voor iedereen die zich geroepen voelde.
 
-And to indicate that this pattern isn't as road-tested as the others, I'm keeping it in the beta namespace, where it actually is developed
-and this will also show up on the pattern page. No changes required.
+En om aan te geven dat dit patroon nog niet zo getest is als de anderen, houd ik het in de bèta namespace, waar het eigenlijk ontwikkeld is en dit zal ook te zien zijn op de patroonpagina. Geen wijzigingen nodig.
 
-## Release early, release often
+## Laat vroeg los, laat vaak los
 
-Going forward, I will release patterns as soon as I can, and work on completing the documentation while they remain in beta.
+In de toekomst zal ik zo snel mogelijk patronen uitbrengen en werken aan het voltooien van de documentatie terwijl ze in bèta blijven.
 
-I think it's a good way to go, and adheres to the *release early, release often* mantra of open source software.
+Ik denk dat het een goede manier is om te gaan, en het houdt zich aan de *release early, release often* mantra van open source software.
 
-If you think that's a bad idea (or a very good idea), make sure to tell me about it in the comments below.
+Als jij denkt dat dat een slecht idee is (of een heel goed idee), vertel het me dan hieronder in de reacties.
 
