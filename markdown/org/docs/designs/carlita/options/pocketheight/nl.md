@@ -1,5 +1,5 @@
 ---
-title: "Pocket height"
+title: "Zak hoogte"
 ---
 
 Bepaalt de hoogte/diepte van de zakken.
