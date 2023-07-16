@@ -1,6 +1,6 @@
-- - -
+---
 title: "Carlton coat: Fabric Options"
-- - -
+---
 
 ### Tela principal
 
