@@ -38,16 +38,15 @@ Pour ceux qui sont intéressés par notre code, rendez-vous sur notre nouvelle d
 
 Pour ceux qui sont intéressés dans le design de patrons, nous avons mis à jour notre [tutoriel de design de patron](https://freesewing.dev/tutorial) pour vous mettre le pied à l'étrier.
 
-Il y a aussi de bonnes nouvelles pour les traducteurs, car nous utilisons maintenant [Crowdin](https://crowdin.com/) qui permet de gérer la traduction un clin d'œil. If you'd like to help out with translation, or maybe even add a new language to FreeSewing, make sure to [get in touch](https://discord.freesewing.org/).
+Il y a aussi de bonnes nouvelles pour les traducteurs, car nous utilisons maintenant [Crowdin](https://crowdin.com/) qui permet de gérer la traduction un clin d'œil. Si vous souhaitez aider à la traduction, ou même ajouter une nouvelle langue à FreeSewing, n'hésitez pas à [nous contacter](https://discord.freesewing.org/).
 
 ## 💩 Appliquer les avertissements courants
 
 La sagesse répandue dans le développement de logiciels est que revoir du code c'est bien, mais la réécriture complète à partir de zéro c'est mal. Néanmoins, nous l'avons fait quand même parce que nous voulions faciliter l'implication des gens dans le projet. et générer des patrons en temps réel dans le navigateur.
 
-Ceci étant dit, il s'agit d'une version .zéro ; ainsi vous pouvez trébucher sur une problème ou autre. When you do, please [let us know](https://discord.freesewing.org/) or submit an issue.
+Ceci étant dit, il s'agit d'une version .zéro ; ainsi vous pouvez trébucher sur une problème ou autre. Si cela arrive, veuillez [nous le faire savoir](https://discord.freesewing.org/) ou nous soumettre un problème.
 
 ## 🤞 Faites-nous part de vos commentaires
 
 Votre avis nous intéresse. Nous sommes **@freesewing\_org** sur [Twitter](https://twitter.com/freesewing_org) et [Instagram](https://instagram.com/freesewing_org), utilisez le **#freesewing** hashtag, ou [consultez notre page de partage](/share).
-
 
