@@ -1,99 +1,73 @@
 ---
 author: "joostdecock"
-caption: "Scales, how do they work?"
+caption: "Weegschalen, hoe werken die?"
 date: "2018-01-04"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d09252be53d33ab5b743c22f523a9ea8cbd70708-2000x1328.jpg"
-intro: "Freesewing core v1.3.0 is out; Comes with fixes so good that we back-ported them to all your drafts [Niet vertaald]"
-title: "Freesewing core v1.3.0 is out; Comes with fixes so good that we back-ported them to all your drafts [Niet vertaald]"
+intro: "Freesewing core v1.3.0 is uit; komt met fixes die zo goed zijn dat we ze hebben geback-port naar al je drafts"
+title: "Freesewing core v1.3.0 is uit; komt met fixes die zo goed zijn dat we ze hebben geback-port naar al je drafts"
 ---
 
-On the last day of 2017, in our 
-[monthly roundup of all the freesewing news](/blog/roundup-2017-12/)
-, we wrote about 
-the looming issue with incorrectly scaled drafts, aka 
-[Core issue #204 - The Inkscape default units quandary](https://github.com/freesewing/core/issues/204).
+Op de laatste dag van 2017 schreven we in onze [maandelijkse roundup van al het freeswing-nieuws](/blog/roundup-2017-12/) over het dreigende probleem met onjuist geschaalde concepten, aka [Core issue #204 - The Inkscape default units quandary](https://github.com/freesewing/core/issues/204).
 
-I won't go over [all that](/blog/roundup-2017-12/) again, but it boils down to the fact that the 
-[Inkscape](http://inkscape.org/) maintainers have
-changed Inkscape's internal DPI (dots per inch) from 90 to 96. A change that goes in effect from version
-0.92 onwards.
+Ik zal het niet meer hebben over [al dat](/blog/roundup-2017-12/) , maar het komt erop neer dat de [Inkscape](http://inkscape.org/) beheerders Inkscape's interne DPI (dots per inch) hebben veranderd van 90 naar 96. Een wijziging die van kracht wordt vanaf versie 0.92.
 
-Left unchecked, this change would cause all freesewing patterns to be incorrectly scaled.
-That's because we assume 90DPI in our SVG output, and scale accordingly.
+Als deze wijziging niet is aangevinkt, worden alle vrijlooppatronen onjuist geschaald. Dat komt omdat we uitgaan van 90DPI in onze SVG-uitvoer en dienovereenkomstig schalen.
 
-![That 'oh-shit' moment when we realized the full impact of the DPI change](https://posts.freesewing.org/uploads/oh_shit_90b4969a5d.gif)
+![Dat 'oh-shit' moment waarop we ons de volledige impact van de DPI-wijziging realiseerden](https://posts.freesewing.org/uploads/oh_shit_90b4969a5d.gif)
 
-When the switch to 96DPI goes into effect, all patterns would be off by 6.66%. Which is really 
-the kind of difference that is too small to notice when eyeballing a pattern, yet large enough
-to completely mess up your garment.
+Als de overgang naar 96DPI van kracht wordt, zullen alle patronen 6,66% afwijken. Dat is echt het soort verschil dat te klein is om op te merken als je naar een patroon kijkt, maar groot genoeg om je kledingstuk compleet te verknoeien.
 
-The issue is also more troublesome than it would seem at the surface.
-First of all because we can't just switch to 96DPI as there are now two versions out there
-that use a different default DPI under the hood. We need a solution that works for both.
+Het probleem is ook lastiger dan het aan de oppervlakte lijkt. Ten eerste kunnen we niet zomaar overschakelen naar 96DPI, omdat er nu twee versies zijn die onder de motorkap een andere standaard DPI gebruiken. We hebben een oplossing nodig die voor allebei werkt.
 
-![Screenshot of a freesewing pattern that is incorrectly scaled in the latest Inkscape release](https://posts.freesewing.org/uploads/inkscape_b96e2bb510.png)
+![Screenshot van een freeswing patroon dat onjuist geschaald is in de laatste Inkscape versie](https://posts.freesewing.org/uploads/inkscape_b96e2bb510.png)
 
-Furthermore, while any fix we implement would apply to new drafts, 
-all existing drafts generated before the fix would still be impacted.
+Bovendien, terwijl elke fix die we implementeren van toepassing is op nieuwe concepten, alle bestaande concepten gegenereerd voor de fix nog steeds zou worden beïnvloed.
 
-In other words, if you drafted a pattern last week, or a month ago, that pattern would not 
-scale correctly in a recent version of Inkscape.  
-And since we use Inkscape in our SVG-to-PDF tool-chain, it would also be incorrectly scaled
-if you came here and downloaded a PDF.
+Met andere woorden, als je vorige week of een maand geleden een patroon hebt gemaakt, zou dat patroon niet correct geschaald worden in een recente versie van Inkscape.  
+En omdat we Inkscape gebruiken in onze SVG-to-PDF tool-chain, zou het ook onjuist geschaald zijn als je hier zou komen en een PDF zou downloaden.
 
-Clearly, something needed to be done. And fast.  
+Er moest duidelijk iets gebeuren. En snel.
 
-## The fix for new drafts
+## De oplossing voor nieuwe concepten
 
-From today's release of core v1.3.0 onwards, our SVG files no longer depend on any DPI setting.
+Vanaf de release van core v1.3.0 van vandaag zijn onze SVG-bestanden niet langer afhankelijk van een DPI-instelling.
 
-Rather than use the internal units and apply an SVG transform to scale the entire 
-pattern, we've bolted down the units to mm and updated the SVG viewBox to apply the scaling.
+In plaats van de interne eenheden te gebruiken en een SVG-transformatie toe te passen om het hele patroon te schalen, hebben we de eenheden vastgezet op mm en de SVG viewBox bijgewerkt om de schaling toe te passen.
 
-Obviously, this is how we should have done it from the start. Everyday is a school day.
+Het is duidelijk dat we het vanaf het begin zo hadden moeten doen. Elke dag is een schooldag.
 
-If you're worried about the use of mm in your draft (because you're used to imperial
-units), rest assured that those mm will stay under the hood. You won't be able to tell the difference.
+Als je je zorgen maakt over het gebruik van mm in je ontwerp (omdat je imperiale eenheden gewend bent), wees dan gerust dat die mm onder de motorkap blijven. Je zult het verschil niet kunnen zien.
 
-## The fix for pre-existing drafts
+## De oplossing voor al bestaande concepten
 
-To avoid problems with pre-existing drafts, we needed to come up with a solution for those too.
+Om problemen met reeds bestaande concepten te voorkomen, moesten we ook daarvoor een oplossing bedenken.
 
-We essentially have two options:
+We hebben in wezen twee opties:
 
- - Re-draft all those drafts
- - Patch them in-place without changing the draft itself
+ - Al die ontwerpen opnieuw maken
+ - Patch ze op hun plaats zonder het ontwerp zelf te veranderen
 
-Re-drafting fixes the issue as every new draft will be handled by the latest core version
-that does include the fix.
+Opnieuw opstellen lost het probleem op, omdat elk nieuw ontwerp wordt afgehandeld door de nieuwste kernversie die de fix bevat.
 
-However, core also ships with regular updates, tweaks, and fixes in the patterns themselves.
-So by re-drafting a draft generated on a previous version of core, there's no guarantee the
-draft won't change.
+Core wordt echter ook geleverd met regelmatige updates, aanpassingen en reparaties in de patronen zelf. Dus als je een concept opnieuw opstelt dat is gegenereerd op een eerdere versie van core, is er geen garantie dat het concept niet verandert.
 
-In principle that change would always be an improvement. But one person's bug is another person's 
-feature, and we do prefer not to [move your cheese](https://en.wikipedia.org/wiki/Who_Moved_My_Cheese%3F).
+In principe zou die verandering altijd een verbetering zijn. Maar de bug van de een is de feature van de ander, en we hebben liever niet dat [je kaas verplaatst naar](https://en.wikipedia.org/wiki/Who_Moved_My_Cheese%3F).
 
-![Don't touch my stuff](https://posts.freesewing.org/uploads/who_moved_my_cheese_0cd51a25d6.jpg)
+![Blijf van mijn spullen af](https://posts.freesewing.org/uploads/who_moved_my_cheese_0cd51a25d6.jpg)
 
-So, instead we decided to patch all drafts we have on file in-place with the new scaling code,
-without touching any other aspect of the draft.
+In plaats daarvan hebben we besloten om alle concepten die we in ons bestand hebben ter plekke te patchen met de nieuwe schaalcode, zonder enig ander aspect van het ontwerp aan te raken.
 
-As you're reading this, this has already been done, and all freesewing drafts should now scale correctly. 
-Everywhere.
+Op het moment dat je dit leest, is dit al gedaan en alle freesewing ontwerpen zouden nu correct moeten schalen. Overal.
 
-## Also: version awareness
+## Ook: versiebewustzijn
 
-We've also made changes to our backend systems to store the version of freesewing core that 
-generated your draft.
+We hebben ook wijzigingen aangebracht in onze backendsystemen om de versie van freesewing core op te slaan die je concept heeft gegenereerd.
 
-If since you generated your draft we've rolled out new features or fixes, you'll be notified
-that an update is available:
+Als we sinds het genereren van je concept nieuwe functies of oplossingen hebben geïntroduceerd, ontvang je een melding op dat er een update beschikbaar is:
 
-![If you draft is generated with an old version of freesewing core, we'll tell you about it](https://posts.freesewing.org/uploads/upgrade_dee342e3fb.png)
+![Als je ontwerp is gegenereerd met een oude versie van freesewing core, zullen we je daarover vertellen](https://posts.freesewing.org/uploads/upgrade_dee342e3fb.png)
 
-Whether you update your draft or not is up to you. 
-If you don't want to loose the info in your *old* draft, rather than update it in-place, you can fork it.
+Of je je ontwerp bijwerkt of niet, is aan jou. Als je de info in je *oude ontwerp* niet kwijt wilt raken, kun je het forken in plaats van het ter plekke bij te werken.
 
 
 
