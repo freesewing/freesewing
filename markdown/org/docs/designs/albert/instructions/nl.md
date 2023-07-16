@@ -1,5 +1,5 @@
 ---
-title: "Albert schort: Naai-instructies"
+title: "Albert apron: Sewing Instructions"
 ---
 
 ### Stap 1: De zak
