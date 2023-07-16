@@ -1,5 +1,5 @@
 ---
-title: "Блокування тіла Белли"
+title: "Викрійка-основа Белла"
 ---
 
 <PatternDocs pattern='bella' />
