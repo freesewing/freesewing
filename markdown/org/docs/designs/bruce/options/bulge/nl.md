@@ -1,5 +1,5 @@
 ---
-title: "Bulge"
+title: "Kruisstuk"
 ---
 
 ![De optie voor kruisstuk bij Bruce](./bulge.svg)
