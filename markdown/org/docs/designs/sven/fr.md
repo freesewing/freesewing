@@ -1,5 +1,5 @@
 ---
-title: "Sven sweatshirt"
+title: "Sweat Sven"
 ---
 
 <PatternDocs pattern='sven' />
