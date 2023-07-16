@@ -1,5 +1,5 @@
 ---
-title: "Hips ease"
+title: "Overwijdte heup"
 ---
 
 ![De optie voor overwijdte heupen van Diana](./hipsease.svg)
