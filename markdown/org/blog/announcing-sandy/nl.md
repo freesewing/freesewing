@@ -17,6 +17,6 @@ Zoals wel meer patronen hier bij FreeSewing, krijg je bij Sandy een hele hoop op
 
 Er is een optie voor hoe groot je de cirkel wil hebben (een halve? een volle? nog iets anders?), hoe lang je de rok wil, de vorm en overlapping van de tailleband, of je plooien wil, hoe diep je zoom wordt, enzovoort.
 
-I can see this becoming rather the success story.  
-So go and [treat yourself to a new skirt](/draft/sandy), and let [@AlfyLyr](/users/alfalyr) know how it works out for you.
+Ik zie dit wel een succesverhaal worden.  
+Dus ga en [trakteer jezelf op een nieuwe rok](/draft/sandy), en laat [@AlfyLyr](/users/alfalyr) weten hoe het voor je uitpakt.
 
