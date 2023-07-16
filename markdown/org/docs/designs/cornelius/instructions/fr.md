@@ -1,5 +1,5 @@
 ---
-title: "Culotte de cycliste Cornélius : Instructions de couture"
+title: "Cornelius cycling breeches: Sewing Instructions"
 ---
 
 ### Étape 1 : Les poches avant
@@ -88,7 +88,7 @@ Si vous êtes inquiets pour l'esquisse, vous pouvez créer un triangle de tissu 
 - Repassez les bandes et le surplus de couture vers le bas et loin de la jambe. Coupez le surplus de couture pour réduire l'encombrement.
 - Repassez le surplus de couture supérieur sur l'envers des morceaux de bande de jambe restants. Découpez le surplus de couture supérieur.
 - Endroit contre endroit, coudre le reste de la jambe et des morceaux aux bandes de jambe attachées le long des bas et des côtés.
-- Retournez les bandes de jambe. Repasser.
+- Tournez les bandes de jambe vers l'extérieur. Repasser.
 - _Piquez_ le bord plié de la ceinture sur le devant, en veillant à ce que le bord plié recouvre la piqûre.
 - Coudre la boutonnière. Les boutons seront cousus plus tard.
 
@@ -110,7 +110,7 @@ Si vous préférez, vous pouvez coudre les bandes de jambe comme une ceinture mo
 
 - Surfilez l'une des pièces de la ceinture en utilisant la méthode que vous préférez.
 - Coudre le morceau de ceinture sur le dessus des jambes, endroit contre endroit.
-- Repassez la ceinture et le surplus de couture vers le haut et loin de la jambe. Coupez le surplus de couture pour réduire le volume.
+- Repassez la ceinture et le surplus de couture vers le haut et loin de la jambe. Coupez le surplus de couture pour réduire l'encombrement.
 - Repassez le surplus de couture du bas sur l'envers du morceau de ceinture restant. Découpez le surplus de couture du bas.
 - Endroit contre endroit, coudre le reste de la bande de taille à la bande de taille sur le dessus et les côtés.
 - Retournez la ceinture. Repasser.
