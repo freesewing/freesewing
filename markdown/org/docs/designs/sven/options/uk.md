@@ -1,5 +1,5 @@
 ---
-title: "Світшот Sven: Варіанти дизайну"
+title: "Sven sweatshirt: Design Options"
 ---
 
 <PatternOptions pattern='sven' />
