@@ -5,6 +5,7 @@ date: "2016-08-16"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e7559ec0b220cf12bf7457c3816db1771737b30f-579x699.jpg"
 intro: "Deze foto komt uit de blogpost Unselfish Sewing - Wahid Waistcoat op rememberinggravity.wordpress.com"
 title: "Een groene Wahid gilet door Rose"
+designs: ["wahid"]
 ---
 
 

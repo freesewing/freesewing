@@ -5,6 +5,7 @@ date: "2020-10-08"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ebef91daa8acf992f814415e610a655a03278186-1200x1600.jpg"
 intro: "[auf Englisch] The first version of albert, made for his daughter, by Wouter.vdub"
 title: "[auf Englisch] The first version of albert, made for his daughter, by Wouter.vdub"
+designs: ["albert"]
 ---
 
 ![View of the front](https://posts.freesewing.org/uploads/albert_by_wouter_albert_back_846f1b89ac.jpg "View of the front")

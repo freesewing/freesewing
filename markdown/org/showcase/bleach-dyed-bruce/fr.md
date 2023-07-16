@@ -5,6 +5,7 @@ date: "2018-01-21"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9e8834593713a2a6e4903d53e789b430449f947a-1280x960.jpg"
 intro: "Bruce blanchi à la javel par Reanna"
 title: "Bruce blanchi à la javel par Reanna"
+designs: ["bruce"]
 ---
 
 ![L'arrière du modèle montré ci-dessus](https://posts.freesewing.org/uploads/bleach_dyed_bruce_1_back_c91de98a99.jpg "L'arrière du modèle montré ci-dessus")

@@ -5,6 +5,7 @@ date: "2020-07-01"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ab68d41354448f2149dcdce2cbf3b0222f58012d-2160x1080.jpg"
 intro: "You'd be forgiven to think we cut this out of a high-fashion magazine, but it's a picture from Adam who made this gorgeous Wahid for himself."
 title: "[auf Englisch] Wahid by Adam"
+designs: ["wahid"]
 ---
 
 

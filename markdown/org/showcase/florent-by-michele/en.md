@@ -5,6 +5,7 @@ date: "2017-12-12"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/210ddaa1ecb0afad4260d6c60627be34e46189d0-1280x960.jpg"
 intro: "     "
 title: "Florent by Michele Nel"
+designs: ["florent"]
 ---
 
 ![Another view](https://posts.freesewing.org/uploads/florent_by_michele_24_24a438f855.jpg "Another view")

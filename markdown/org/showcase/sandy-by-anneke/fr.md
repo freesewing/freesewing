@@ -5,6 +5,7 @@ date: "2020-10-20"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f17b554dceedcfa01572346e5032e4836deb6f52-1080x1080.jpg"
 intro: "Lisez le complément en 2018 d'Anneke sur l' article de blog à propos de sa nouvelle jupe Sandy , qui inclue la façon dont elle a ajouté des poche et une ceinture courbée."
 title: "Jupe circulaire noire et brillante d'Anneke"
+designs: ["sandy"]
 ---
 
 Lisez le complément en 2018 d'Anneke sur l' [article de blog à propos de sa nouvelle jupe Sandy](http://www.annekecaramin.com/2018/08/garbage-dragon.html), qui inclue la façon dont elle a ajouté des poche et une ceinture courbée.

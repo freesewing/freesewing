@@ -5,6 +5,7 @@ date: "2020-03-01"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/36e7302d2cbddb4d0d739d8c25e7b0c388c1fee9-2000x1500.jpg"
 intro: "Sorcha is a healthcare provider working in the Antwerp University Hospital , one of Belgium's two centres of reference for coronavirus."
 title: "Een Florence mondmasker in rood en blauw"
+designs: ["florence"]
 ---
 
 

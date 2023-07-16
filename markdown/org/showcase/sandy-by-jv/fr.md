@@ -5,6 +5,7 @@ date: "2020-10-20"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/35daf9e79d06a8a12972a1e0bd87bce6f3c92028-1536x2048.jpg"
 intro: "JV a partagé sa nouvelle robe en utilisant la jupe Sandy sur Twitter."
 title: "Robe de JV fabriquée à l'aide d'une jupe en cercle Sandy"
+designs: ["sandy"]
 ---
 
 JV a partagé sa[nouvelle robe en utilisant la jupe Sandy](https://twitter.com/RedBlaqueGolden/status/1317752221933633537) sur Twitter.

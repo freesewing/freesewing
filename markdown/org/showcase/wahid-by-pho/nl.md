@@ -5,6 +5,7 @@ date: "2021-05-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e172985d483a277509c6cbaf64fcd58ded7a95ea-521x800.jpg"
 intro: "Pho made this stellar Wahid! They shared:"
 title: "Wahid by Pho [Niet vertaald]"
+designs: ["wahid"]
 ---
 
 Pho made this stellar Wahid! They shared:
