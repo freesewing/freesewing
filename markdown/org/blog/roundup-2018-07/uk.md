@@ -1,32 +1,32 @@
 ---
 author: "joostdecock"
-caption: "Your login background for August"
+caption: "Ваша історія входу в систему за серпень"
 date: "2018-07-31"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/73ad81c28d5045aeaaebc1e182accac4f93f52eb-1920x1280.jpg"
-intro: "Monthly roundup - July 2018: French and waiting for Sandy"
-title: "Monthly roundup - July 2018: French and waiting for Sandy"
+intro: "Щомісячний огляд - липень 2018: Французька мова та очікування Сенді"
+title: "Щомісячний огляд - липень 2018: Французька мова та очікування Сенді"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Це ваш щомісячний огляд новин фрітрекінгу за останні чотири тижні, і погляд на те, що чекає на нас у наступному місяці.
 
-## Looking back at July
+## Озираючись на липень
 
-It's the summer time, and the heatwave across Europe isn't exactly helping with our productivity. What I'm saying is: I said we would have a new pattern out in July, but it's going to be late. We're still waiting for the final artwork, although I can show you the initial sketch now:
+Зараз літо, і спека, що охопила всю Європу, не надто сприяє нашій продуктивності. Я хочу сказати: я сказав, що ми випустимо новий шаблон у липні, але буде вже пізно. Ми все ще чекаємо на остаточний варіант, хоча я можу показати вам початковий ескіз вже зараз:
 
-![Meat the Sandy Circle Skirt](https://posts.freesewing.org/uploads/schets_bb8fb5c30a.png)
+![Спідниця "Піщане коло](https://posts.freesewing.org/uploads/schets_bb8fb5c30a.png)
 
-This is Sandy, it's a circle skirt pattern, and it will be out in August. Promise :)
+Це Sandy, це викрійка спідниці по колу, і вона вийде в серпні. Обіцяємо :)
 
-Apart from that, thanks to some great work of [our translators](/i18n/), we've also enabled our fifth language on the website: [French](/fr). We've seen an increase in users signing up with .fr email addresses, so that goes to show that translation really does help make the site accessible to more people.
+Крім того, завдяки чудовій роботі [наших перекладачів](/i18n/), ми також включили п'яту мову на сайті: [Французьку](/fr). Ми помітили збільшення кількості користувачів, які реєструються за допомогою адрес електронної пошти .fr, , що свідчить про те, що переклад дійсно допомагає зробити сайт доступним для більшої кількості людей.
 
-Now apart from this, I don't have much to talk about that you can see right here on the site. That doesn't mean we haven't been busy. Швидше навпаки!
+Окрім цього, мені більше нема про що розповідати, і ви можете побачити це тут, на сайті. Це не означає, що ми не працювали. Швидше навпаки!
 
-I've started porting freesewing core to node.js. It's really early days so I can't really talk about it too much, but I will do so at a later date.
+Я почав портувати ядро freesewing на node.js. Зараз дуже ранні дні, тому я не можу говорити про це занадто багато, але зроблю це пізніше.
 
-## Looking ahead to August
+## Забігаючи наперед на серпень
 
-August will bring the release of Sandy, and we'll also celebrate our first year here at freesewing.org.
+У серпні вийде Sandy, і ми також відсвяткуємо наш перший рік на freesewing.org.
 
-Perhaps that will be a good time to talk about our plans for the future :)
+Можливо, це буде гарна нагода поговорити про наші плани на майбутнє :)
 
 
