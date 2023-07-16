@@ -1,5 +1,5 @@
 ---
-title: "Велосипедні бриджі Cornelius: Варіанти дизайну"
+title: "Cornelius cycling breeches: Design Options"
 ---
 
 <PatternOptions pattern='cornelius' />
