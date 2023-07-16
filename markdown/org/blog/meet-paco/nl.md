@@ -3,10 +3,9 @@ author: "joostdecock"
 caption: "Paco op het brein achter de operatie"
 date: "2020-08-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1bc82d4abb50ea1b7bda32dd64521e9ecfdd8467-2048x1536.jpg"
-intro: "Als je ons werk wat in de gaten houdt weet je dat we 4 weken geleden ons Titan, ons nieuwe basispatroon voor een broek uitbrachten. Vandaag kan ik vol trots ons eerste  patroon met Titan als basis aankondigen: De Paco zomerbroek ."
+intro: "Hier is Paco: Ons nieuwe unisex patroon voor een stijlvolle zomerbroek"
 title: "Hier is Paco: Ons nieuwe unisex patroon voor een stijlvolle zomerbroek"
 ---
-
 
 Als je ons werk wat in de gaten houdt weet je dat we 4 weken geleden ons [Titan, ons nieuwe basispatroon voor een broek](/designs/titan/) uitbrachten. Vandaag kan ik vol trots ons eerste *echte* patroon met Titan als basis aankondigen: De [Paco zomerbroek](/designs/paco).
 
@@ -23,12 +22,11 @@ Dat kan. Als je deze in een gebreide stof maakt, kan je ze zeker zo gebruiken. M
 
 Het voorbeeld dat je hierboven ziet (in alle eerlijkheid heb ik ze nog niet uitgetrokken sinds ik ze gemaakt heb) zijn ook geen jersey. Hier is een close-up van de geweven stof:
 
-![Close-up van een geweven stof](fabric.jpg)
+![Close-up van een geweven stof](https://posts.freesewing.org/uploads/fabric_46633a6dd2.jpg)
 
 Het verschil is de pasvorm- die een stuk flatterender en stijlvoller is dan de doordeweekse joggingbroek- en de zakken. Ja, de zakken. Omdat zakken belangrijk zijn.
 
 Zowel de voorzakken en de (optionele) achterzakken zijn verankerd aan de taille. Wat wil zeggen dat je dingen in je zakken kan steken zonder dat ze een rare bult worden die wat in je broekspijp hangt te bengelen.
 
 Al overtuigd? Ga er dan een paar maken, en deel zeker je foto's :)
-
 
