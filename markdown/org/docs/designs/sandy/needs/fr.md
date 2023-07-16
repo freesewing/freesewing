@@ -1,10 +1,10 @@
-- - -
+---
 title: "Sandy circle skirt: What You Need"
-- - -
+---
 
 To make Sandy, you will need the following:
 
-- [Matériel de couture de base](/docs/sewing/basic-sewing-supplies)
+- [Fourniture de base pour la couture](/docs/sewing/basic-sewing-supplies)
 - About 2 - 6 metres (2.2 - 6.6 yards) of a suitable main fabric ([see Sandy Fabric options](/docs/patterns/sandy/fabric))
 - Quelques interfaces pour la ceinture
 - (Optional) Facing for the hem.
