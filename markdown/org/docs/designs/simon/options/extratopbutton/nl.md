@@ -1,5 +1,5 @@
 ---
-title: "Extra top button"
+title: "Extra knoop bovenaan"
 ---
 
 ![Extra knoop bovenaan](extratopbutton.svg)
