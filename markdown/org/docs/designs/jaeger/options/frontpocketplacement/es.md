@@ -1,5 +1,5 @@
 ---
-title: "Front pocket placement"
+title: "Colocación frontal del bolsillo"
 ---
 
 ![Colocación frontal del bolsillo](frontpocketplacement.svg)
