@@ -1,5 +1,5 @@
 ---
-title: "Waist band"
+title: "Cinturilla"
 ---
 
 Añade una cintura al patrón.
