@@ -1,65 +1,61 @@
 ---
 author: "joostdecock"
-caption: "Picture by <a href='https://pixabay.com/en/users/herbert2512-2929941/' target='_BLANK' rel='nofollow'>Herbert</a>"
+caption: "Foto door <a href='https://pixabay.com/en/users/herbert2512-2929941/' target='_BLANK' rel='nofollow'>Herbert</a>"
 date: "2017-06-16"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8ccbb2d5b50eb0917c6bd2befb2b098b6d667ba9-1920x1280.jpg"
-intro: "The world wide web is increasingly eroding your privacy. Facebook, Google, and an avalanche of ad networks out there are all keeping tabs on your browser tabs. Tracking you on the web, keeping an an eye on the sites your visiting, so that they can gather more info on you, and sell that to advertisers."
-title: "The choices I've made to protect your privacy. Or why you won't be getting any cookies. [Niet vertaald]"
+intro: "Het wereldwijde web tast steeds meer je privacy aan. Facebook, Google en een stortvloed aan advertentienetwerken houden allemaal je browsertabbladen in de gaten. Ze volgen je op het web, houden in de gaten welke sites je bezoekt, zodat ze meer informatie over je kunnen verzamelen en die aan adverteerders kunnen verkopen."
+title: "De keuzes die ik heb gemaakt om je privacy te beschermen. Of waarom je geen koekjes krijgt."
 ---
 
-The world wide web is increasingly eroding your privacy. Facebook, Google, and an avalanche of ad networks out there are all keeping tabs on your browser tabs. Tracking you on the web, keeping an an eye on the sites your visiting, so that they can gather more info on you, and sell that to advertisers.
+Het wereldwijde web tast steeds meer je privacy aan. Facebook, Google en een stortvloed aan advertentienetwerken houden allemaal je browsertabbladen in de gaten. Ze volgen je op het web, houden in de gaten welke sites je bezoekt, zodat ze meer informatie over je kunnen verzamelen en die aan adverteerders kunnen verkopen.
 
-Pardon my French, but I hate that shit.
+Sorry voor mijn Frans, maar ik haat die troep.
 
-> Facebook, Google, and an avalanche of ad networks out there are all keeping tabs on your browser tabs
+> Facebook, Google en een stortvloed aan advertentienetwerken houden allemaal je browsertabbladen in de gaten
 
-Building this site from scratch has been a great opportunity to reflect on how to do things. 
+Het vanaf nul opbouwen van deze site is een geweldige kans geweest om na te denken over hoe je dingen moet doen.
 
-To make sure I'm not contributing to the problem, I've made the following choices:
+Om er zeker van te zijn dat ik niet bijdraag aan het probleem, heb ik de volgende keuzes gemaakt:
 
-## Encryption everywhere
+## Overal versleuteling
 
-Let's run everything over https. That's just [common sense](https://letsencrypt.org/) in 2017. 
+Laten we alles via https laten lopen. Dat is gewoon [gezond verstand](https://letsencrypt.org/) in 2017.
 
-## No ads
+## Geen advertenties
 
-This one is another no-brainer. The number 1 tracking pest online are ad networks, and I want them nowhere near this site. 
+Ook dit is een no-brainer. De nummer 1 opsporingsplaag online zijn advertentienetwerken en ik wil dat ze niet in de buurt van deze site komen.
 
-Fortunately, that doesn't pose a problem given that we don't play by the _Give something for free, then sell people's data_ rules of the web.
+Gelukkig vormt dat geen probleem, omdat we niet spelen volgens de _Geef iets gratis en verkoop vervolgens de gegevens van mensen_ regels van het web.
 
-## No external code
+## Geen externe code
 
-This site loads no external JavaScript code. None. Which does mean I had to rethink a few things that typically require external code. 
+Deze site laadt geen externe JavaScript-code. Geen. Dat betekent wel dat ik een paar dingen moest heroverwegen waarvoor normaal gesproken externe code nodig is.
 
-There is no Facebook Like button or Twitter integration. We still have social sharing under our blog posts (hint hint) but it's the plain vanilla HTML variety that prevents tracking.
+Er is geen Facebook Like-knop of Twitter-integratie. We hebben nog steeds social sharing onder onze blogposts (hint hint), maar het is de gewone HTML-variant die tracking voorkomt.
 
-In the same category, there's no social logins. Sure a _Login with Facebook_ button is handy, but also kind of a nightmare when you consider what it does to your privacy. 
+In dezelfde categorie zijn er geen sociale logins. Natuurlijk is een knop _Inloggen met Facebook_ handig, maar ook een beetje een nachtmerrie als je bedenkt wat het met je privacy doet.
 
-For a statically generated site like this ([see this post about JAMstack for details](/blog/freesewing-goes-jamstack/)) [Disqus](https://disqus.com/) is pretty much the de facto standard for comments. But Disqus is pretty awful when it comes to tracking, so that was a big no-no to me.
+Voor een statisch gegenereerde site als deze ([zie dit bericht over JAMstack voor details](/blog/freesewing-goes-jamstack/)) [Disqus](https://disqus.com/) is zo'n beetje de de facto standaard voor commentaar. Maar Disqus is verschrikkelijk als het gaat om tracking, dus dat was een grote nee voor mij.
 
-A similar story for authentication where I considered [Auth0](https://auth0.com/). There too, I was concerned about tracking, so I decided against it.
+Een soortgelijk verhaal voor authenticatie waar ik [Auth0](https://auth0.com/)overwoog. Ook daar maakte ik me zorgen over tracking, dus besloot ik het niet te doen.
 
-I ended up just biting the bullet and implemented authentication and comments myself. Time will tell of that was a good trade-of.
+Uiteindelijk heb ik het bijltje erbij neergegooid en de authenticatie en commentaar zelf geïmplementeerd. De tijd zal leren of dat een goede ruil was.
 
-## No cookies
-We don't use any cookies. Obviously no third-party cookies, but not even cookies of our own.
+## Geen cookies
+We gebruiken geen cookies. Uiteraard geen cookies van derden, maar zelfs geen eigen cookies.
 
-Instead, we use local storage which is better because unlike cookies, it doesn't send your info on every request.
+In plaats daarvan gebruiken we lokale opslag, wat beter is omdat het, in tegenstelling tot cookies, je informatie niet bij elk verzoek verstuurt.
 
-## No analytics
-I ran [Google Analytics](https://analytics.google.com/) on [makemypattern](https://makemypattern.com/). It's powerful, but obviously a tracking nightmare. So I wasn't going to have that either.
+## Geen analyse
+Ik heb [Google Analytics](https://analytics.google.com/) uitgevoerd op [makemypattern](https://makemypattern.com/). Het is krachtig, maar duidelijk een nachtmerrie om te volgen. Dus dat was ik ook niet van plan.
 
-This issue is further complicated by the fact that this static site is hosted by [Netlify](https://www.netlify.com/). So I don't have server logs and can't run any analytics server-side.
+Dit probleem wordt verder bemoeilijkt door het feit dat deze statische site wordt gehost door [Netlify](https://www.netlify.com/). Dus ik heb geen serverlogs en kan geen analytics server-side uitvoeren.
 
-For the most part, I decided to just go without analytics. I don't need to know how many people are visiting this site. I still know how many user accounts are created, and how many patterns are generated, which should be fine indicators for the site's overall well-being.
+Voor het grootste deel heb ik besloten om het gewoon zonder analytics te doen. Ik hoef niet te weten hoeveel mensen deze site bezoeken. Ik weet nog steeds hoeveel gebruikersaccounts er worden aangemaakt en hoeveel patronen er worden gegenereerd, wat prima indicatoren zouden moeten zijn voor het algehele welzijn van de site.
 
-But there's one thing that wanted to keep from analytics: the referral logs. It's one of life's small pleasures to go through that list and discover 
-[somebody](https://www.reddit.com/r/freepatterns/comments/4zh5nr/is_there_software_to_generate_sewing_patterns/) 
-[linked](http://www.makery.uk/2016/08/the-refashioners-2016-joost/) 
-[to](https://closetcasepatterns.com/week-sewing-blogs-vol-98/)
-[you](https://opensource.com/life/16/11/free-open-sewing-patterns). 
+Maar er is één ding dat we niet wilden analyseren: de verwijzingslogboeken. Het is een van de kleine geneugten van het leven om die lijst door te nemen en te ontdekken dat [iemand](https://www.reddit.com/r/freepatterns/comments/4zh5nr/is_there_software_to_generate_sewing_patterns/) [heeft gekoppeld aan](http://www.makery.uk/2016/08/the-refashioners-2016-joost/) [jij](https://closetcasepatterns.com/week-sewing-blogs-vol-98/) [](https://opensource.com/life/16/11/free-open-sewing-patterns).
 
-Here too, I've implemented my own bare-bones solution. If you land on this site from an external link, we'll report that referral to our own API. Which means we still get the referral info, but no tracking.
+Ook hier heb ik mijn eigen kale oplossing geïmplementeerd. Als je via een externe link op deze site terechtkomt, rapporteren we die verwijzing aan onze eigen API. Dat betekent dat we nog steeds de verwijzingsinfo krijgen, maar geen tracking.
 
-Perhaps it's just vanity, but when I'm having a bad day, those referral logs make me feel better (when it's not just Russian referral spam). I might be wrong on this one, but I would wager that a lot of people who have their own blog can relate to that.
+Misschien is het gewoon ijdelheid, maar als ik een slechte dag heb, geven die verwijzingslogs me een beter gevoel (als het niet gewoon Russische verwijzingsspam is). Ik kan het mis hebben, maar ik durf te wedden dat veel mensen met een eigen blog zich hierin kunnen vinden.
 
