@@ -1,5 +1,5 @@
 ---
-title: "Collar notch return"
+title: "Revers du col cranté"
 ---
 
 ![Revers du col cranté](collarnotchreturn.svg)
@@ -8,4 +8,4 @@ Contrôle la longueur du côté supérieur de l'encoche. 100% = même que la pro
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_collarnotchreturn_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_collarnotchreturn_sample.svg "Effet de cette option sur le motif")
