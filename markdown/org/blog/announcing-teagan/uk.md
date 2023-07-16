@@ -1,35 +1,35 @@
 ---
 author: "joostdecock"
-caption: "Photo by Alex Andrews from Pexels"
+caption: "Фото Алекса Ендрюса з Pexels"
 date: "2020-09-09"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8bee0b9035162c14da54744b24539e56a8e16e27-2000x1500.jpg"
-intro: "A while ago somebody asked whether we had a T-shirt pattern on freesewing.org and it turns out, we didn't."
-title: "FreeSewing 2.9 brings our Teagan T-shirt pattern"
+intro: "Нещодавно хтось запитав, чи є у нас на freesewing.org шаблон футболки, і виявилося, що ні."
+title: "У FreeSewing 2.9 з'явився шаблон футболки Teagan"
 ---
 
-A while ago somebody asked whether we had a T-shirt pattern on freesewing.org and it turns out, we didn't.
+Нещодавно хтось запитав, чи є у нас на freesewing.org шаблон футболки, і виявилося, що ні.
 
-There's no good reason for that, we just never got around to that. So today we're rolling out version 2.9 of FreeSewing with our latest pattern: [the Teagan T-shirt](/designs/teagan/).
+Для цього немає вагомої причини, ми просто ніколи не доходили до цього. Тож сьогодні ми випускаємо версію 2.9 FreeSewing з нашим останнім шаблоном: [футболка Teagan](/designs/teagan/).
 
-![A man, seated on a purple couch and wearing a speckled grey Teagan T-Shirt.](https://posts.freesewing.org/uploads/teagan1_2904162431.jpg)
+![Чоловік, що сидить на фіолетовому дивані, одягнений у сіру в цяточку футболку Teagan.](https://posts.freesewing.org/uploads/teagan1_2904162431.jpg)
 
-## Who is this for?
+## Для кого це?
 
-Teagan is fitted T-shirt pattern with options for altering the neckline, length, and sleeves.
+Teagan - це приталена футболка з можливістю змінювати виріз горловини, довжину та рукави.
 
-Teagan is based on [our Brian block](/designs/brian/), which does not take breasts into account. That being said, this will work for people with breasts too. Since it uses the chest circumference it will simply draft a T-shirt to fit your full chest.
+Тіган базується на [нашого блоку Брайана](/designs/brian/), який не враховує груди. З іншого боку, це підійде і для людей з грудьми. Оскільки програма використовує обхват грудей, вона просто викреслює футболку, яка буде відповідати вашим повним грудям.
 
-We've also added an option to draft this to your high bust, which would give you a more fitted T-shirt with ease & stretch having to accomodate for your breasts.
+Ми також додали можливість приталити її до вашого високого бюсту, що дозволить вам отримати більш приталену футболку з легкістю & розтягування, щоб пристосувати її до ваших грудей.
 
-![A woman wearing a striped T-shirt stands in front of a weathered fence. This T-shirt is more fitted through the chest.](https://posts.freesewing.org/uploads/teagan3_8ff8115d75.jpg)
+![Жінка у смугастій футболці стоїть перед обвітреним парканом. Ця футболка більш приталена на грудях.](https://posts.freesewing.org/uploads/teagan3_8ff8115d75.jpg)
 
-## Community Updates
+## Оновлення спільноти
 
-If you're thinking about sewing Teagan, but you're new to sewing or working with knits, never fear! FreeSewing has more support than ever. Chat with us on [Discord](https://discord.freesewing.org/), in a [Facebook Group](https://www.facebook.com/groups/627769821272714), or on [Reddit](https://www.reddit.com/r/freesewing/). Find us on social as @freesewing_org on [Instagram](https://www.instagram.com/freesewing_org/) and [Twitter](https://twitter.com/freesewing_org). If you're looking for tutorials, there's a new [YouTube channel](https://www.youtube.com/channel/UCLAyxEL72gHvuKBpa-GmCvQ) for that. It has a whole series on [sewing up Teagan](https://www.youtube.com/playlist?list=PLY9EmRuXR20Y7FonIHD6mX9yIpFh_emX1), as well as this amazing preview.
+Якщо ви думаєте про те, щоб пошити Тіган, але ви новачок у шитті або роботі з трикотажем, не бійтеся! FreeSewing має більше підтримки, ніж будь-коли. Спілкуйтеся з нами на [Discord](https://discord.freesewing.org/), у групі [Facebook](https://www.facebook.com/groups/627769821272714)або на [Reddit](https://www.reddit.com/r/freesewing/). Шукайте нас у соціальних мережах як @freesewing_org на [Instagram](https://www.instagram.com/freesewing_org/) та [Twitter](https://twitter.com/freesewing_org). Якщо ви шукаєте навчальні посібники, для цього є новий [канал YouTube](https://www.youtube.com/channel/UCLAyxEL72gHvuKBpa-GmCvQ) . Тут є ціла серія про те, як [зашивають Тіган](https://www.youtube.com/playlist?list=PLY9EmRuXR20Y7FonIHD6mX9yIpFh_emX1), а також це дивовижне прев'ю.
 
 <YouTube id='3UGJSNxNe8I' />
 
-If all of this sounds awesome, and you want to get more involved with FreeSewing, you can check out our repositories and source code on [Github](https://github.com/freesewing/) or connect with other contributors via [Discord](https://discord.freesewing.org/). You can find announcements about upcoming contributor calls on Discord, in the announcements channel.
+Якщо все це звучить чудово, і ви хочете долучитися до FreeSewing, ви можете перевірити наші репозиторії та вихідний код на [Github](https://github.com/freesewing/) або зв'язатися з іншими учасниками через [Discord](https://discord.freesewing.org/). Ви можете знайти оголошення про майбутні конкурси дописувачів на Discord, в каналі оголошень.
 
-And if you sew up a Teagan T-shirt, let us know what you think!
+І якщо ви пошиєте футболку Teagan, дайте нам знати, що ви про неї думаєте!
 
