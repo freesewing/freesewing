@@ -1,5 +1,5 @@
 ---
-title: "Inner pocket welt height"
+title: "Paspel binnenzak"
 ---
 
 Controls the width of the inner pocket welts.
