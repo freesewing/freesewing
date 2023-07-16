@@ -1,6 +1,6 @@
-- - -
-title: "Front darts"
-- - -
+---
+title: "Nepen voor"
+---
 
 Whether to include front waist darts or not.
 
