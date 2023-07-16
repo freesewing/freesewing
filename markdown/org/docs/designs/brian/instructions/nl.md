@@ -13,7 +13,7 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 
 </Note>
 
-### Step 1: Mock-up Construction
+### Stap 1: Model constructie
 
 - Sew the front to the backs at the shoulders good sides together.
 - Matching notches, sew the sleeves to the shoulder good sides together.
