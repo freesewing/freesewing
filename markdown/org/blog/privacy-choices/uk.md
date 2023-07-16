@@ -1,61 +1,61 @@
 ---
 author: "joostdecock"
-caption: "Picture by <a href='https://pixabay.com/en/users/herbert2512-2929941/' target='_BLANK' rel='nofollow'>Herbert</a>"
+caption: "Фото: <a href='https://pixabay.com/en/users/herbert2512-2929941/' target='_BLANK' rel='nofollow'>Герберт</a>"
 date: "2017-06-16"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8ccbb2d5b50eb0917c6bd2befb2b098b6d667ba9-1920x1280.jpg"
-intro: "The world wide web is increasingly eroding your privacy. Facebook, Google, and an avalanche of ad networks out there are all keeping tabs on your browser tabs. Tracking you on the web, keeping an an eye on the sites your visiting, so that they can gather more info on you, and sell that to advertisers."
-title: "The choices I've made to protect your privacy. Or why you won't be getting any cookies."
+intro: "Всесвітня павутина все більше руйнує вашу приватність. Facebook, Google і лавина рекламних мереж стежать за вкладками вашого браузера. Відстеження вас в Інтернеті, стеження за сайтами, які ви відвідуєте, щоб вони могли зібрати більше інформації про вас і продати її рекламодавцям."
+title: "Вибір, який я зробив, щоб захистити вашу конфіденційність. Або чому ви не отримаєте жодного печива."
 ---
 
-The world wide web is increasingly eroding your privacy. Facebook, Google, and an avalanche of ad networks out there are all keeping tabs on your browser tabs. Tracking you on the web, keeping an an eye on the sites your visiting, so that they can gather more info on you, and sell that to advertisers.
+Всесвітня павутина все більше руйнує вашу приватність. Facebook, Google і лавина рекламних мереж стежать за вкладками вашого браузера. Відстеження вас в Інтернеті, стеження за сайтами, які ви відвідуєте, щоб вони могли зібрати більше інформації про вас і продати її рекламодавцям.
 
-Pardon my French, but I hate that shit.
+Вибачте мою французьку, але я ненавиджу це лайно.
 
-> Facebook, Google, and an avalanche of ad networks out there are all keeping tabs on your browser tabs
+> Facebook, Google і лавина рекламних мереж - всі вони стежать за вкладками вашого браузера
 
-Building this site from scratch has been a great opportunity to reflect on how to do things.
+Створення цього сайту з нуля стало чудовою можливістю поміркувати над тим, як це робити.
 
-To make sure I'm not contributing to the problem, I've made the following choices:
+Щоб переконатися, що я не сприяю вирішенню цієї проблеми, я зробив наступний вибір:
 
-## Encryption everywhere
+## Шифрування скрізь
 
-Let's run everything over https. That's just [common sense](https://letsencrypt.org/) in 2017.
+Давайте запустимо все через https. Це просто [здоровий глузд](https://letsencrypt.org/) у 2017 році.
 
-## No ads
+## Без реклами
 
-This one is another no-brainer. The number 1 tracking pest online are ad networks, and I want them nowhere near this site.
+Це ще одна безпроблемна справа. Шкідник номер 1 в Інтернеті - це рекламні мережі, і я не хочу, щоб вони були поруч із цим сайтом.
 
-Fortunately, that doesn't pose a problem given that we don't play by the _Give something for free, then sell people's data_ rules of the web.
+На щастя, це не є проблемою, оскільки ми не граємо за _Давати щось безкоштовно, а потім продавати дані людей_ правилами Інтернету.
 
-## No external code
+## Немає зовнішнього коду
 
-This site loads no external JavaScript code. None. Which does mean I had to rethink a few things that typically require external code.
+Цей сайт не завантажує зовнішній код JavaScript. Жодного. Це означає, що мені довелося переосмислити деякі речі, які зазвичай вимагають зовнішнього коду.
 
-There is no Facebook Like button or Twitter integration. We still have social sharing under our blog posts (hint hint) but it's the plain vanilla HTML variety that prevents tracking.
+Немає кнопки Facebook Like або інтеграції з Twitter. У нас все ще є соціальні мережі під публікаціями в блозі (підказка, підказка), але це звичайний ванільний HTML, який перешкоджає відстеженню.
 
-In the same category, there's no social logins. Sure a _Login with Facebook_ button is handy, but also kind of a nightmare when you consider what it does to your privacy.
+У цій же категорії немає соціальних логінів. Кнопка _"Увійти за допомогою Facebook_ ", звісно, зручна, але водночас вона викликає жах, якщо врахувати, що вона робить з вашою конфіденційністю.
 
-For a statically generated site like this ([see this post about JAMstack for details](/blog/freesewing-goes-jamstack/)) [Disqus](https://disqus.com/) is pretty much the de facto standard for comments. But Disqus is pretty awful when it comes to tracking, so that was a big no-no to me.
+Для статично згенерованого сайту на зразок цього ([див. цей пост про JAMstack для деталей](/blog/freesewing-goes-jamstack/)) [Disqus](https://disqus.com/) є стандартом де-факто для коментарів. Але Disqus досить жахливий, коли справа доходить до відстеження, тому для мене це було велике "ні".
 
-A similar story for authentication where I considered [Auth0](https://auth0.com/). There too, I was concerned about tracking, so I decided against it.
+Схожа історія з аутентифікацією, де я розглядав [Auth0](https://auth0.com/). І тут я також побоювався відстеження, тому вирішив відмовитися від нього.
 
-I ended up just biting the bullet and implemented authentication and comments myself. Time will tell of that was a good trade-of.
+Врешті-решт, я просто вирішив спробувати і впровадив автентифікацію та коментарі самостійно. Час покаже, що це був хороший обмін.
 
-## No cookies
-We don't use any cookies. Obviously no third-party cookies, but not even cookies of our own.
+## Немає файлів cookie
+Ми не використовуємо жодних файлів cookie. Очевидно, що жодних сторонніх файлів cookie, але навіть не наших власних.
 
-Instead, we use local storage which is better because unlike cookies, it doesn't send your info on every request.
+Замість цього ми використовуємо локальне сховище, яке краще, тому що, на відміну від файлів cookie, воно не надсилає вашу інформацію при кожному запиті.
 
-## No analytics
-I ran [Google Analytics](https://analytics.google.com/) on [makemypattern](https://makemypattern.com/). It's powerful, but obviously a tracking nightmare. So I wasn't going to have that either.
+## Немає аналітики
+Я запустив [Google Analytics](https://analytics.google.com/) на [makemypattern](https://makemypattern.com/). Він потужний, але, очевидно, кошмарний для відстеження. Тож і цього я не збирався мати.
 
-This issue is further complicated by the fact that this static site is hosted by [Netlify](https://www.netlify.com/). So I don't have server logs and can't run any analytics server-side.
+Це питання ускладнюється ще й тим, що цей статичний сайт розміщений на хостингу [Netlify](https://www.netlify.com/). Тому я не маю логів сервера і не можу проводити аналітику на стороні сервера.
 
-For the most part, I decided to just go without analytics. I don't need to know how many people are visiting this site. I still know how many user accounts are created, and how many patterns are generated, which should be fine indicators for the site's overall well-being.
+Здебільшого я вирішив обійтися без аналітики. Мені не потрібно знати, скільки людей відвідує цей сайт. Я все ще знаю, скільки облікових записів користувачів створюється і скільки шаблонів генерується, що повинно бути чудовими показниками загального благополуччя сайту.
 
-But there's one thing that wanted to keep from analytics: the referral logs. It's one of life's small pleasures to go through that list and discover [somebody](https://www.reddit.com/r/freepatterns/comments/4zh5nr/is_there_software_to_generate_sewing_patterns/) [linked](http://www.makery.uk/2016/08/the-refashioners-2016-joost/) [to](https://closetcasepatterns.com/week-sewing-blogs-vol-98/) [you](https://opensource.com/life/16/11/free-open-sewing-patterns).
+Але є одна річ, яку хотілося б приховати від аналітики: журнали переходів. Це одне з маленьких задоволень у житті - переглядати цей список і знаходити [когось, хто](https://www.reddit.com/r/freepatterns/comments/4zh5nr/is_there_software_to_generate_sewing_patterns/) [пов'язав](http://www.makery.uk/2016/08/the-refashioners-2016-joost/) [з](https://closetcasepatterns.com/week-sewing-blogs-vol-98/) [ви](https://opensource.com/life/16/11/free-open-sewing-patterns).
 
-Here too, I've implemented my own bare-bones solution. If you land on this site from an external link, we'll report that referral to our own API. Which means we still get the referral info, but no tracking.
+І тут я також реалізував своє власне рішення. Якщо ви перейдете на цей сайт за зовнішнім посиланням, ми повідомимо про це в наш власний API. Це означає, що ми все ще отримуємо інформацію про реферала, але не відстежуємо його.
 
-Perhaps it's just vanity, but when I'm having a bad day, those referral logs make me feel better (when it's not just Russian referral spam). I might be wrong on this one, but I would wager that a lot of people who have their own blog can relate to that.
+Можливо, це просто марнославство, але коли у мене поганий день, ці журнали рефералів допомагають мені почуватися краще (якщо це не просто російський реферальний спам). Я можу помилятися, але можу посперечатися, що багато людей, які мають власний блог, можуть мати відношення до цього.
 
