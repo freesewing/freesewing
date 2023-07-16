@@ -1,5 +1,5 @@
 ---
-title: "Sleevecap top Y"
+title: "Armkugel Oben Y"
 ---
 
 ![Die vertikale Position der Ärmelhaube](./sleevecaptopfactory.svg)
