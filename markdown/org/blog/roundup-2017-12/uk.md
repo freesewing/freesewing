@@ -1,119 +1,119 @@
 ---
 author: "joostdecock"
-caption: "Your new login background for the month of January"
+caption: "Ваш новий фон для входу в систему на січень"
 date: "2017-12-31"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7203a0f33c8c3d1cd6abdbca5c0fd85f44db3893-2000x1330.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - December 2017: Patrons, Bent, Carlton, Florent, and the looming Inkscape issue"
+intro: "Це ваш щомісячний огляд новин фрітрекінгу за останні чотири тижні, а також погляд на те, що чекає на нас у наступному місяці."
+title: "Щомісячний огляд - грудень 2017: Меценати, Бент, Карлтон, Флоран та новий випуск Inkscape"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Це ваш щомісячний огляд новин фрітрекінгу за останні чотири тижні, а також погляд на те, що чекає на нас у наступному місяці.
 
-## Looking back at December
-As you may or may not know, for freesewing the year starts on December 10th. This way, I only have to write this blog post on New Year's eve, rather than roll out a bunch of new changes.
+## Озираючись на грудень
+Як ви, можливо, знаєте, а можливо, і ні, для фрісвінгу рік починається 10 грудня. Таким чином, мені потрібно лише написати цей пост напередодні Нового року, а не впроваджувати купу нових змін.
 
-What changes? I'm glad you asked:
+Що змінюється? Я радий, що ти запитав:
 
-### We have patrons now
+### У нас з'явилися меценати
 
-This was really big news for me, and something that we had been working on behind the scenes for a good while. But 3 weeks ago, we finally unveiled our new patron system.
+Для мене це була справді велика новина, і це те, над чим ми працювали за лаштунками протягом тривалого часу. Але 3 тижні тому ми нарешті представили нашу нову меценатську систему.
 
-The [announcement blog post](/blog/calling-all-patrons/) has all the details, plus an open-hearted look at the financial side of this project. If you haven't read it yet, I recommend it.
+У блозі [, присвяченому анонсу](/blog/calling-all-patrons/) , є всі деталі, а також неупереджений погляд на фінансову сторону цього проекту. Якщо ви ще не читали, рекомендую.
 
-![Spreading the word about our new patron approach](https://posts.freesewing.org/uploads/patrons_ig_bad479bb83.png)
-
-
-The gist of it is that we are building a bedrock of loyal supporters to ensure a sustainable future for freesewing.org, our code, our patterns, and our community.
-
-These people are our Patrons, and they support us with a small monthly contribution. We have three tiers, and they all come with their own prices and perks. You can find all the info on [the patrons sign-up page](/patrons/join).
-
-We are 3 weeks in now, and so far [25 people](/patrons) have shown their support for this project by becoming a patron.
-
-Needless to say, this is truly wonderful news that we're all very excited about.
+![Розповідаємо про наш новий підхід до меценатства](https://posts.freesewing.org/uploads/patrons_ig_bad479bb83.png)
 
 
-### A logo tweak
+Суть полягає в тому, що ми будуємо фундамент з лояльних прихильників, щоб забезпечити стійке майбутнє для freesewing.org, нашого коду, наших шаблонів і нашої спільноти.
 
-The roll out of our patron system had an unforeseen side-effect: We needed to simplify the freesewing logo a bit so we could order all that swag with the logo on it.
+Ці люди є нашими Меценатами, і вони підтримують нас невеликими щомісячними внесками. У нас є три рівні, і всі вони мають свої власні ціни та переваги. Ви можете знайти всю інформацію на [сторінці реєстрації меценатів](/patrons/join).
 
-![The new logo](https://posts.freesewing.org/uploads/logo_cb4d9e16ca.svg) ![The old logo](https://posts.freesewing.org/uploads/old_logo_flag_cbfc5a5ff1.png)
+Минуло вже 3 тижні, і поки що [25 людей](/patrons) висловили свою підтримку цьому проекту, ставши його меценатами.
 
-Turns out there's a limit to the amount of detail you can get embossed into jeans rivets or buttons, or woven into labels. (that's just some of the swag our patrons get).
+Зайве казати, що це справді чудова новина, якій ми всі дуже раді.
 
-So, we've streamlined the logo a bit. It's been on the site and our social media accounts since December 10th, but we hadn't updated our auto-generated avatars yet. That's something we've managed to squeeze in in the last hours of December (and the year) so that's good too.
 
-### New patterns
+### Твіст логотипу
 
-We've had three (yes 3) pattern releases in December.
+Розгортання нашої патронної системи мало непередбачуваний побічний ефект: Нам потрібно було трохи спростити логотип freesewing , щоб ми могли замовляти всі ті речі з логотипом.
 
-[Florent](/patterns/florent) is a flat cap pattern that was contributed by [Quentin](/users/ptzcb). The [announcement blog post](/blog/florent-flat-cap-beta/) has all the details.
+![Новий логотип](https://posts.freesewing.org/uploads/logo_cb4d9e16ca.svg) ![Старий логотип](https://posts.freesewing.org/uploads/old_logo_flag_cbfc5a5ff1.png)
 
-Then later this month, we published [Carlton](/patterns/carlton) and [Bent](/patterns/bent), the block it's based on. I've worked with [Anneke](/showcase/maker/annekecaramin) to make this pattern happen, and a female version of the coat is coming. You know what, you should probably read all about it [in this blog post](/announcing-carlton-and-bent/).
+Виявляється, є межа кількості деталей, які можна витиснути на джинсових заклепках чи ґудзиках або вплести в етикетки. (це лише деякі з подарунків, які отримують наші меценати).
 
-### Model name and draft reference are now printed on every pattern part
+Отже, ми трохи спростили логотип. Він з'явився на сайті та наших акаунтах у соціальних мережах 10 грудня, але ми ще не оновили наші автоматично згенеровані аватарки. Це те, що нам вдалося втиснути в останні години грудня (і року), тож це теж добре.
 
-We got a request to add the model and draft info to the printed pattern. People who were using a given pattern for different people (imagine making a hoodie for yourself and your partner) got confused about which parts belonged to which draft.
+### Нові патерни
 
-That seemed like a good idea to us, so we've added this info to the patterns. If you have an older draft in your account, you can simply re-draft it to update it.
+У грудні ми випустили три (так-так, три) релізи шаблонів.
 
-### Data export
+[Florent](/patterns/florent) - це шаблон пласкої кепки, наданий [Квентіном](/users/ptzcb). Всі подробиці можна знайти в анонсі блогу [на сайті](/blog/florent-flat-cap-beta/) .
 
-We've grouped a few harder to find pages in a new [Tools](/tools/) entry in the account section of the menu.
+Пізніше цього місяця ми опублікували [Carlton](/patterns/carlton) та [Bent](/patterns/bent), блок, на якому він базується. Я працювала з [Аннеке](/showcase/maker/annekecaramin) , щоб створити цей візерунок, і незабаром з'явиться жіноча версія пальта. Знаєте що, вам, мабуть, варто прочитати все про це [в цій публікації в блозі](/announcing-carlton-and-bent/).
 
-It contains a link to our RSS feed of the blog, our on-demand tiler, and a link to remove your account, but none of those are new, we've just grouped them so they'd be easier to find.
+### Назва моделі та посилання на ескіз тепер друкуються на кожній деталі
 
-What is new is the ability to export all the data we have on file for you.
+Ми отримали запит на додавання інформації про модель та ескіз до друкованої викрійки. Люди, які використовували дану викрійку для різних людей (уявіть, що ви робите худі для себе і свого партнера), плуталися в тому, які частини належать до якої викрійки.
 
-This work is in preparation of the changes we'll be making next month, which brings me to:
+Нам здалося, що це гарна ідея, тож ми додали цю інформацію до шаблонів. Якщо у вашому акаунті є старіша версія , ви можете просто перезавантажити її, щоб оновити.
 
-## Looking ahead to January
+### Експорт даних
 
-There's new patterns in the pipeline, but I'm not ready to commit to a deadline for these yet, mostly because we have a bunch of other stuff on our plate. Including:
+Ми згрупували кілька сторінок, які важко знайти, в новому розділі [Інструменти](/tools/) в розділі меню облікового запису.
 
-### Open data and privacy talk
+Він містить посилання на нашу RSS-стрічку блогу, нашу плиточницю на вимогу, а також посилання на видалення вашого облікового запису , але жодна з цих посилань не є новою, ми просто згрупували їх так, щоб їх було легше знайти.
 
-We had a bit of a debate about whether or not we should publish anonymized measurements data here at freesewing.
+Новинкою є можливість експортувати всі дані, які ми зберігаємо для вас.
 
-I won't repeat everything here, but [our tweet](https://twitter.com/j__st/status/941586171158777856) and [Instagram post](https://www.instagram.com/p/Bct2jUEnuS9/) on the topic get a lot of responses.
+Ця робота є підготовкою до змін, які ми зробимо наступного місяця, до яких я і веду:
 
-A vast majority of people supports this idea, and as such we have plans to move ahead with it. However, if we do this, we want to do it right and completely in the open. So expect a blog post on the matter shortly.
+## Забігаючи наперед на січень
 
-The questions that came up as we were discussing the possibility of publishing this data tend to revolve around privacy. We are --- and remain --- committed to protecting the privacy or all our users and visitors, and have written about [the choices we have made to guarantee your privacy](/blog/privacy-choices/).
+Є нові патерни в розробці, але я ще не готовий назвати дедлайн для них, головним чином тому, що у нас є купа інших справ на тарілці. В тому числі:
 
-Thinking about these issues made us realize that we want to provide a more iron-clad guarantee than a blog post. So, we will draft and publish a privacy notice in line with the upcoming GDPR.
+### Відкриті дані та розмова про конфіденційність
 
-Don't know what GDPR is? Good. Keep reading.
+У нас була невелика дискусія про те, чи варто публікувати анонімні дані вимірювань тут, на freesewing.
 
-### GDPR compliance
+Я не буду тут все повторювати, але [наш твіт](https://twitter.com/j__st/status/941586171158777856) та [пост в Інстаграмі](https://www.instagram.com/p/Bct2jUEnuS9/) на цю тему отримують багато відгуків.
 
-The GDPR is the [General Data Protection Regulation](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) of the European Union.  It replaces the *Data Protection Directive* and is a more ambitious piece of data protection legislation.
+Переважна більшість людей підтримує цю ідею, і тому ми плануємо рухатися далі. Однак, якщо ми це робимо, ми хочемо робити це правильно і повністю відкрито. Тож незабаром очікуйте на публікацію в блозі на цю тему.
 
-The GDPR will become active in May 2018, and by that time, freesewing will be ready for it. Specifically, we will publish a privacy notice that outlines exactly what happens to your data, and we will make certain that all your rights are respected.
+Питання, які виникали під час обговорення можливості публікації цих даних, як правило, стосувалися приватності. Ми --- і залишаємося --- відданими захисту конфіденційності всіх наших користувачів і відвідувачів, і написали про [вибір, який ми зробили, щоб гарантувати вашу конфіденційність](/blog/privacy-choices/).
 
-We are still planning how exactly we will tackle this, and for the most part, these will be cosmetic changes and that won't change anything about freesewing as such.
+Обмірковуючи ці питання, ми зрозуміли, що хочемо надати більш залізну гарантію , ніж пост у блозі. Отже, ми підготуємо та опублікуємо повідомлення про конфіденційність відповідно до майбутнього GDPR.
 
-But we value your privacy, and we want to practice what we preach, so we'll be making sure to do what's right.
+Не знаєте, що таке GDPR? Добре. Читай далі.
 
-### Core issue #204 - The Inkscape default units quandary
+### Відповідність GDPR
 
-Under the heading *Important changes* the [release notes for Inkscape version 0.92](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.92#Important_changes) list:
+GDPR - це [Загальний регламент про захист даних](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) Європейського Союзу.  Він замінює *Директиву про захист даних* і є більш амбітним документом законодавства про захист даних.
 
-> The default resolution was changed from 90dpi to 96dpi, to match the CSS standard.
+GDPR набуде чинності в травні 2018 року, і до того часу фріскейтинг буде готовий до нього. Зокрема, ми опублікуємо повідомлення про конфіденційність, в якому буде точно описано, що відбувається з вашими даними, , і ми гарантуємо, що всі ваші права будуть дотримані.
 
-This seemingly trivial update to the open source SVG editor will have some profound ripple effects for freesewing.
+Ми все ще плануємо, як саме ми будемо вирішувати цю проблему, і здебільшого це будуть косметичні зміни , які нічого не змінять у фріскейтингу як такому.
 
-While it won't impact our code as such, we use Inkscape to turn the SVG patterns we generate into the PDFs that you print at home. And if now Inkscape thinks that one inch no longer holds 90, but 96 pixels, your patterns will be scaled incorrectly, which is kind of a big deal.
+Але ми цінуємо вашу конфіденційність і хочемо практикувати те, що проповідуємо, тому ми будемо стежити за тим, щоб робити все правильно.
 
-Given that we can continue to run an older build of Inkscape to do our bidding, this doesn't mean things are on fire just yet. But it's a problem we will have to tackle sooner rather than later.
+### Основна проблема #204 - Проблема з одиницями виміру Inkscape за замовчуванням
 
-That's because even when we fix it, once we start using the new Inkscape, it will still incorrectly handle the drafts that have been generated prior to the fix and that are still stored in people's profiles.   
-Needless to say, I see a lot of mucking about with the SVG viewbox in my future.
+Під заголовком *Важливі зміни* список [нотаток до випуску Inkscape версії 0.92](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.92#Important_changes) :
 
-There's other changes in the newest Inkscape too that can potentially wreak havoc. Most likely to cause a stink-up is the new way the *line-height* attribute will be handled in text. Less dramatic, but still inconvenient.
+> Роздільна здатність за замовчуванням була змінена з 90 dpi на 96 dpi, щоб відповідати стандарту CSS.
 
-While these changes add an unwelcome number of entries to our to-do list, it's worth pointing out that the Inkscape maintainers make these changes because they thing it's the right thing, and that going forward, this will be the better option.
+Це, здавалося б, тривіальне оновлення редактора SVG з відкритим вихідним кодом матиме серйозні ефекти пульсації для фріс'юзингу.
 
-So, in the same spirit, we'll make sure to follow suit.
+Хоча це не впливає на наш код як такий, ми використовуємо Inkscape для перетворення SVG-шаблонів, які ми створюємо, у PDF-файли, які ви роздруковуєте вдома. І якщо тепер Inkscape вважатиме, що в одному дюймі вміщується вже не 90, а 96 пікселів, ваші візерунки будуть неправильно масштабовані, а це досить велика проблема.
 
-But that's for next year.
+Враховуючи, що ми можемо продовжувати використовувати стару збірку Inkscape для виконання наших завдань, це ще не означає, що все йде до завершення. Але це проблема, яку нам доведеться вирішувати рано чи пізно.
+
+Це тому, що навіть коли ми це виправимо, коли ми почнемо користуватися новим Inkscape, він все одно буде неправильно обробляти чернетки , які були створені до виправлення і які все ще зберігаються в профілях людей.   
+Зайве казати, що в майбутньому я бачу багато проблем з SVG-візуалізацією в моєму майбутньому.
+
+У новій версії Inkscape є й інші зміни, які потенційно можуть спричинити хаос. Найімовірніше, це призведе до того, що новий спосіб обробки атрибуту *line-height* у тексті. Менш драматично, але все одно незручно.
+
+Хоча ці зміни додають небажану кількість пунктів до нашого списку справ, варто зазначити, що супровідники Inkscape вносять ці зміни, тому що вважають, що це правильно, і що в майбутньому це буде кращим варіантом.
+
+Тож, у тому ж дусі, ми будемо слідувати цьому прикладу.
+
+Але це вже на наступний рік.
 
